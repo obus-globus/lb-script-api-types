@@ -6,7 +6,7 @@ export class MutabilityQualifier extends Enum<MutabilityQualifier> {
     static READ_ONLY: MutabilityQualifier;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MutabilityQualifier;
-    static values(): (Object | null)[];
+    static values(): MutabilityQualifier[];
     private constructor()
     name(): "READ_ONLY" | "MUTABLE";
 }

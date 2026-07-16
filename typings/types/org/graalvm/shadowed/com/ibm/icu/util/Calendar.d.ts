@@ -66,8 +66,8 @@ export abstract class Calendar extends Object implements Serializable, Cloneable
     static YEAR: number;
     static YEAR_WOY: number;
     static ZONE_OFFSET: number;
-    static getAvailableLocales(): (Object | null)[];
-    static getAvailableULocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
+    static getAvailableULocales(): ULocale[];
     static getDateAtTimePattern(paramcal: Calendar, paramuLocale: ULocale, paramdateStyle: number): string;
     static getDateTimePattern(paramcal: Calendar, paramuLocale: ULocale, paramdateStyle: number): string;
     static getInstance(): Calendar;
@@ -76,7 +76,7 @@ export abstract class Calendar extends Object implements Serializable, Cloneable
     static getInstance(paramzone: TimeZone, paramaLocale: Locale): Calendar;
     static getInstance(paramzone: TimeZone, paramlocale: ULocale): Calendar;
     static getInstance(paramlocale: ULocale): Calendar;
-    static getKeywordValuesForLocale(paramkey: string, paramlocale: ULocale, paramcommonlyUsed: boolean): (Object | null)[];
+    static getKeywordValuesForLocale(paramkey: string, paramlocale: ULocale, paramcommonlyUsed: boolean): string[];
     static getWeekDataForRegion(paramregion: string): Calendar$WeekData;
     constructor()
     constructor(zone: TimeZone, aLocale: Locale)

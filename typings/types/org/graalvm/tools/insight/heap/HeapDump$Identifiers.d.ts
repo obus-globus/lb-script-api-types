@@ -7,7 +7,7 @@ export class HeapDump$Identifiers extends Enum<HeapDump$Identifiers> {
     static FOUR: HeapDump$Identifiers;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): HeapDump$Identifiers;
-    static values(): (Object | null)[];
+    static values(): HeapDump$Identifiers[];
     private constructor()
     sizeOf(): number;
     writeID(os: DataOutputStream, id: number): void;

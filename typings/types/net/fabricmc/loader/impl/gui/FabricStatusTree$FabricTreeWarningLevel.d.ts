@@ -9,7 +9,7 @@ export class FabricStatusTree$FabricTreeWarningLevel extends Enum<FabricStatusTr
     static getHighest(paramarg0: FabricStatusTree$FabricTreeWarningLevel, paramarg1: FabricStatusTree$FabricTreeWarningLevel): FabricStatusTree$FabricTreeWarningLevel;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FabricStatusTree$FabricTreeWarningLevel;
-    static values(): (Object | null)[];
+    static values(): FabricStatusTree$FabricTreeWarningLevel[];
     private constructor()
     lowerCaseName: string;
     isAtLeast(arg0: FabricStatusTree$FabricTreeWarningLevel): boolean;

@@ -11,7 +11,7 @@ export class MeshResultSize$SectionCategory extends Enum<MeshResultSize$SectionC
     static forSection(paramarg0: RenderSection, paramarg1: number): MeshResultSize$SectionCategory;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MeshResultSize$SectionCategory;
-    static values(): (Object | null)[];
+    static values(): MeshResultSize$SectionCategory[];
     private constructor()
     name(): "LOW" | "UNDERGROUND" | "WATER_LEVEL" | "SURFACE" | "HIGH";
 }

@@ -7,7 +7,7 @@ export class CookieHeaderNames$SameSite extends Enum<CookieHeaderNames$SameSite>
     static Strict: CookieHeaderNames$SameSite;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CookieHeaderNames$SameSite;
-    static values(): (Object | null)[];
+    static values(): CookieHeaderNames$SameSite[];
     private constructor()
     name(): "Lax" | "Strict" | "None";
 }

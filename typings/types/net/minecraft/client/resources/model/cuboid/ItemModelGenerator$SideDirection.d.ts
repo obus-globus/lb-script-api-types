@@ -9,7 +9,7 @@ export class ItemModelGenerator$SideDirection extends Enum<ItemModelGenerator$Si
     static UP: ItemModelGenerator$SideDirection;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ItemModelGenerator$SideDirection;
-    static values(): (Object | null)[];
+    static values(): ItemModelGenerator$SideDirection[];
     private constructor(direction: Direction)
     readonly direction: Direction;
     getDirection(): Direction;

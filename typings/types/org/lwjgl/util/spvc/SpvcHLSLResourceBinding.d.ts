@@ -51,7 +51,6 @@ export class SpvcHLSLResourceBinding extends Struct<SpvcHLSLResourceBinding> imp
     static nuav(paramarg0: number): SpvcHLSLResourceBindingMapping;
     static nuav(paramarg0: number, paramarg1: SpvcHLSLResourceBindingMapping): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     binding(): number;

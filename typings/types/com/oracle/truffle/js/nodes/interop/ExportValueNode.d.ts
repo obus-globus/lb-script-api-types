@@ -5,7 +5,6 @@ export abstract class ExportValueNode extends JavaScriptBaseNode {
     static create(): ExportValueNode;
     static getUncached(): ExportValueNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(value: Object): Object;
     execute(value: Object, thiz: Object, bindMemberFunctions: boolean): Object;

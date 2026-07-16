@@ -18,7 +18,7 @@ export class ReportReason extends Enum<ReportReason> {
     static getIncompatibleCategories(paramreportType: ReportType): ReportReason[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ReportReason;
-    static values(): (Object | null)[];
+    static values(): ReportReason[];
     private constructor(name: string)
     // private backendName: string;
     // private description: Component;

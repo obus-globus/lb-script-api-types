@@ -4,14 +4,9 @@ import type { VersionInterval } from '../../../../../../net/fabricmc/loader/api/
 export class VersionIntervalImpl extends Object implements VersionInterval {
     static INFINITE: VersionInterval;
     static and(paramarg0: VersionInterval[], paramarg1: VersionInterval[]): VersionInterval[];
-    static and(paramarg0: VersionInterval[], paramarg1: VersionInterval[]): VersionInterval[];
-    static and(paramarg0: VersionInterval, paramarg1: VersionInterval): VersionInterval;
     static and(paramarg0: VersionInterval, paramarg1: VersionInterval): VersionInterval;
     static not(paramarg0: VersionInterval[]): VersionInterval[];
     static not(paramarg0: VersionInterval): VersionInterval[];
-    static not(paramarg0: VersionInterval[]): VersionInterval[];
-    static not(paramarg0: VersionInterval): VersionInterval[];
-    static or(paramarg0: VersionInterval[], paramarg1: VersionInterval): VersionInterval[];
     static or(paramarg0: VersionInterval[], paramarg1: VersionInterval): VersionInterval[];
     constructor(arg0: Version, arg1: boolean, arg2: Version, arg3: boolean)
     readonly max: Version;

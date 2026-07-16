@@ -13092,7 +13092,10 @@ interface JavaTypeRegistry {
     "com.sun.jna.platform.win32.Winnetwk$RESOURCETYPE": typeof import("../types/com/sun/jna/platform/win32/Winnetwk$RESOURCETYPE").Winnetwk$RESOURCETYPE;
     "com.sun.jna.platform.win32.Winnetwk$RESOURCEUSAGE": typeof import("../types/com/sun/jna/platform/win32/Winnetwk$RESOURCEUSAGE").Winnetwk$RESOURCEUSAGE;
     "com.sun.jna.platform.win32.Winnetwk$UNIVERSAL_NAME_INFO": typeof import("../types/com/sun/jna/platform/win32/Winnetwk$UNIVERSAL_NAME_INFO").Winnetwk$UNIVERSAL_NAME_INFO;
+    "com.sun.jna.platform.win32.Winspool$JOB_INFO_1": typeof import("../types/com/sun/jna/platform/win32/Winspool$JOB_INFO_1").Winspool$JOB_INFO_1;
+    "com.sun.jna.platform.win32.Winspool$PRINTER_INFO_1": typeof import("../types/com/sun/jna/platform/win32/Winspool$PRINTER_INFO_1").Winspool$PRINTER_INFO_1;
     "com.sun.jna.platform.win32.Winspool$PRINTER_INFO_2": typeof import("../types/com/sun/jna/platform/win32/Winspool$PRINTER_INFO_2").Winspool$PRINTER_INFO_2;
+    "com.sun.jna.platform.win32.Winspool$PRINTER_INFO_4": typeof import("../types/com/sun/jna/platform/win32/Winspool$PRINTER_INFO_4").Winspool$PRINTER_INFO_4;
     "com.sun.jna.platform.win32.WinspoolUtil": typeof import("../types/com/sun/jna/platform/win32/WinspoolUtil").WinspoolUtil;
     "com.sun.jna.platform.win32.Winsvc$ChangeServiceConfig2Info": typeof import("../types/com/sun/jna/platform/win32/Winsvc$ChangeServiceConfig2Info").Winsvc$ChangeServiceConfig2Info;
     "com.sun.jna.platform.win32.Winsvc$ENUM_SERVICE_STATUS": typeof import("../types/com/sun/jna/platform/win32/Winsvc$ENUM_SERVICE_STATUS").Winsvc$ENUM_SERVICE_STATUS;
@@ -24313,6 +24316,7 @@ interface JavaTypeRegistry {
     "javax.swing.text.JTextComponent": typeof import("../types/javax/swing/text/JTextComponent").JTextComponent;
     "javax.swing.text.JTextComponent$ComposedTextCaret": typeof import("../types/javax/swing/text/JTextComponent$ComposedTextCaret").JTextComponent$ComposedTextCaret;
     "javax.swing.text.JTextComponent$DropLocation": typeof import("../types/javax/swing/text/JTextComponent$DropLocation").JTextComponent$DropLocation;
+    "javax.swing.text.JTextComponent$KeyBinding": typeof import("../types/javax/swing/text/JTextComponent$KeyBinding").JTextComponent$KeyBinding;
     "javax.swing.text.JTextComponent$MutableCaretEvent": typeof import("../types/javax/swing/text/JTextComponent$MutableCaretEvent").JTextComponent$MutableCaretEvent;
     "javax.swing.text.NavigationFilter": typeof import("../types/javax/swing/text/NavigationFilter").NavigationFilter;
     "javax.swing.text.NavigationFilter$FilterBypass": typeof import("../types/javax/swing/text/NavigationFilter$FilterBypass").NavigationFilter$FilterBypass;

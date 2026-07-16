@@ -29,7 +29,7 @@ export class ChatFormatting extends Enum<ChatFormatting> {
     static stripFormatting(paraminput: string): string;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ChatFormatting;
-    static values(): (Object | null)[];
+    static values(): ChatFormatting[];
     private constructor(code: string)
     // private code: string;
     // private toString: string;

@@ -15,7 +15,7 @@ export class ParameterizedMessage extends Object implements Message, StringBuild
     static RECURSION_SUFFIX: string;
     static countArgumentPlaceholders(parampattern: string): number;
     static deepToString(paramo: Object): string;
-    static format(parampattern: string, paramargs: (Object | null)[]): string;
+    static format(parampattern: string, paramargs: Object[]): string;
     static identityToString(paramobj: Object): string;
     constructor(pattern: string, arg: Object)
     constructor(pattern: string, arg0: Object, arg1: Object)

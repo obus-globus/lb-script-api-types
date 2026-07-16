@@ -5,7 +5,6 @@ import type { AdvancementProgress } from '../../../../../net/minecraft/advanceme
 import type { PlayerPredicate$AdvancementPredicate } from '../../../../../net/minecraft/advancements/predicates/entity/PlayerPredicate$AdvancementPredicate.d.ts'
 export class PlayerPredicate$AdvancementDonePredicate extends Record implements PlayerPredicate$AdvancementPredicate {
     static CODEC: Codec<PlayerPredicate$AdvancementDonePredicate>;
-    static CODEC: Codec<PlayerPredicate$AdvancementPredicate>;
     private constructor(state: boolean)
     // private state: boolean;
     equals(o: Object | null): boolean;

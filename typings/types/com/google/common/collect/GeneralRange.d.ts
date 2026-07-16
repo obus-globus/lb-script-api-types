@@ -3,8 +3,8 @@ import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class GeneralRange<T extends unknown> extends Object implements Serializable {
-    private constructor(comparator: (param0: Object) => boolean, hasLowerBound: boolean, lowerEndpoint: T, lowerBoundType: BoundType, hasUpperBound: boolean, upperEndpoint: T, upperBoundType: BoundType)
-    // private comparator: (param0: Object) => boolean;
+    private constructor(comparator: (param0: T, param1: T) => number, hasLowerBound: boolean, lowerEndpoint: T, lowerBoundType: BoundType, hasUpperBound: boolean, upperEndpoint: T, upperBoundType: BoundType)
+    // private comparator: (param0: T, param1: T) => number;
     // private hasLowerBound: boolean;
     // private hasUpperBound: boolean;
     // private lowerBoundType: BoundType;
@@ -12,7 +12,7 @@ export class GeneralRange<T extends unknown> extends Object implements Serializa
     // private reverse: GeneralRange<T>;
     // private upperBoundType: BoundType;
     // private upperEndpoint: T;
-    comparator(): (param0: Object) => boolean;
+    comparator(): (param0: T, param1: T) => number;
     contains(t: T): boolean;
     equals(obj: Object | null): boolean;
     getLowerBoundType(): BoundType;

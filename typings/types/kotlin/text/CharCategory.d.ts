@@ -38,7 +38,7 @@ export class CharCategory extends Enum<CharCategory> implements Serializable {
     static getEntries(): CharCategory[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CharCategory;
-    static values(): (Object | null)[];
+    static values(): CharCategory[];
     private constructor(value: number, code: string)
     readonly code: string;
     readonly value: number;

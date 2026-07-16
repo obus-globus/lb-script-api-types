@@ -6,7 +6,7 @@ export class LocaleMatcher$FavorSubtag extends Enum<LocaleMatcher$FavorSubtag> {
     static SCRIPT: LocaleMatcher$FavorSubtag;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): LocaleMatcher$FavorSubtag;
-    static values(): (Object | null)[];
+    static values(): LocaleMatcher$FavorSubtag[];
     private constructor()
     name(): "LANGUAGE" | "SCRIPT";
 }

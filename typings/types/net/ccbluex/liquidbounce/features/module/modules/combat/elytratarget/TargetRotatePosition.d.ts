@@ -14,7 +14,7 @@ export class TargetRotatePosition extends Enum<TargetRotatePosition> implements 
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TargetRotatePosition;
-    static values(): (Object | null)[];
+    static values(): TargetRotatePosition[];
     private constructor(tag: string, position: (param0: LivingEntity) => Vec3)
     readonly position: (param0: LivingEntity) => Vec3;
     readonly tag: string;

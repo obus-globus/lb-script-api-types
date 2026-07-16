@@ -6,7 +6,7 @@ export class Library$Pool extends Enum<Library$Pool> {
     static STREAMING: Library$Pool;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Library$Pool;
-    static values(): (Object | null)[];
+    static values(): Library$Pool[];
     private constructor()
     name(): "STATIC" | "STREAMING";
 }

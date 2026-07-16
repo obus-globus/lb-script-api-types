@@ -7,7 +7,6 @@ import type { PropertySetNode$LinkedPropertySetNode } from '../../../../../../co
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PropertySetNode$BooleanPropertySetNode extends PropertySetNode$LinkedPropertySetNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(property: Property, shapeCheck: PropertyCacheNode$ReceiverCheckNode)
     // private location: BooleanLocation;
     acceptsValue(value: Object): boolean;

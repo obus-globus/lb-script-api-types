@@ -8,7 +8,7 @@ export class FramedLZ4CompressorOutputStream$BlockSize extends Enum<FramedLZ4Com
     static M4: FramedLZ4CompressorOutputStream$BlockSize;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FramedLZ4CompressorOutputStream$BlockSize;
-    static values(): (Object | null)[];
+    static values(): FramedLZ4CompressorOutputStream$BlockSize[];
     private constructor(arg2: number, arg3: number)
     // private index: number;
     // private size: number;

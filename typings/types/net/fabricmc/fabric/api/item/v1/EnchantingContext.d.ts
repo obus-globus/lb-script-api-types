@@ -6,7 +6,7 @@ export class EnchantingContext extends Enum<EnchantingContext> {
     static PRIMARY: EnchantingContext;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): EnchantingContext;
-    static values(): (Object | null)[];
+    static values(): EnchantingContext[];
     private constructor()
     name(): "ACCEPTABLE" | "PRIMARY";
 }

@@ -18,7 +18,7 @@ export class Tokenizer$TokenType extends Enum<Tokenizer$TokenType> {
     static VERSION: Tokenizer$TokenType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Tokenizer$TokenType;
-    static values(): (Object | null)[];
+    static values(): Tokenizer$TokenType[];
     private constructor(arg2: string, arg3: boolean, ...arg4: Semver$SemverType[])
     character: string;
     // private supportedTypes: Semver$SemverType[];

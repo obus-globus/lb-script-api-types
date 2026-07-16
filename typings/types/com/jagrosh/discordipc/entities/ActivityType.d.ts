@@ -11,7 +11,7 @@ export class ActivityType extends Enum<ActivityType> {
     static from(paramarg0: number): ActivityType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ActivityType;
-    static values(): (Object | null)[];
+    static values(): ActivityType[];
     private constructor()
     name(): "Playing" | "Streaming" | "Listening" | "Watching" | "Custom" | "Competing";
 }

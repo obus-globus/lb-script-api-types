@@ -23,7 +23,7 @@ export class ClientChat extends Object {
     static chat(paramarg0: Component, paramarg1: Command): void;
     static chat(paramarg0: Component, paramarg1: ClientModule): void;
     static chat(paramarg0: Component, paramarg1: MessageMetadata): void;
-    static chat(paramarg0: (Object | null)[], paramarg1: MessageMetadata): void;
+    static chat(paramarg0: Component[], paramarg1: MessageMetadata): void;
     static clickablePath(paramarg0: File): MutableComponent;
     static copyable(paramarg0: MutableComponent, paramarg1: string, paramarg2: HoverEvent): MutableComponent;
     static getBypassesNameProtection(paramarg0: TextColor): boolean;

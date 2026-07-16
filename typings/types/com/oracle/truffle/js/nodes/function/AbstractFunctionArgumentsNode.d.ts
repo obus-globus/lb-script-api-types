@@ -7,7 +7,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class AbstractFunctionArgumentsNode extends JavaScriptBaseNode {
     static cloneUninitialized(paramnode: AbstractFunctionArgumentsNode | null, parammaterializedTags: Class<Tag>[]): AbstractFunctionArgumentsNode | null;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     copyUninitialized(materializedTags: Class<Tag>[]): AbstractFunctionArgumentsNode;
     executeFillObjectArray(frame: VirtualFrame, arguments: Object[], delta: number): Object[];

@@ -1,11 +1,11 @@
 import type { Comparator } from '../../../../../../../../../java/util/Comparator.d.ts'
-import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { Mode } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/Mode.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
 import type { Rotation } from '../../../../../../../../../net/ccbluex/liquidbounce/utils/aiming/data/Rotation.d.ts'
 import type { BlockPlacementTarget } from '../../../../../../../../../net/ccbluex/liquidbounce/utils/block/targetfinding/BlockPlacementTarget.d.ts'
 import type { Line } from '../../../../../../../../../net/ccbluex/liquidbounce/utils/math/geometry/Line.d.ts'
+import type { BlockPos } from '../../../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Pose } from '../../../../../../../../../net/minecraft/world/entity/Pose.d.ts'
 import type { ItemStack } from '../../../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { BlockHitResult } from '../../../../../../../../../net/minecraft/world/phys/BlockHitResult.d.ts'
@@ -22,5 +22,5 @@ export class ScaffoldTechnique extends Mode {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/techniques/ScaffoldTechnique.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/techniques/ScaffoldTechnique.kt:54}
      */
-    protected priorityComparator(predictedPos: Vec3, optimalLine: Line | null): (param0: Object) => boolean;
+    protected priorityComparator(predictedPos: Vec3, optimalLine: Line | null): (param0: BlockPos, param1: BlockPos) => number;
 }

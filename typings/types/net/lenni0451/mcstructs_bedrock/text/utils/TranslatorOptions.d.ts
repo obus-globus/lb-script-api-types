@@ -7,7 +7,7 @@ export class TranslatorOptions extends Enum<TranslatorOptions> {
     static SKIP_ARGS_TRANSLATION: TranslatorOptions;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TranslatorOptions;
-    static values(): (Object | null)[];
+    static values(): TranslatorOptions[];
     private constructor()
     name(): "SKIP_ARGS_TRANSLATION" | "REQUIRE_PERCENT" | "IGNORE_STARTING_PERCENT";
 }

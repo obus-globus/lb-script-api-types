@@ -9,7 +9,7 @@ import type { User } from '../../../../../com/jagrosh/discordipc/entities/User.d
 import type { PipeStatus } from '../../../../../com/jagrosh/discordipc/entities/pipe/PipeStatus.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class Pipe extends Object {
-    static openPipe(paramarg0: IPCClient, paramarg1: number, paramarg2: { [key: string]: Callback }, ...paramarg3: (Object | null)[]): Pipe;
+    static openPipe(paramarg0: IPCClient, paramarg1: number, paramarg2: { [key: string]: Callback }, ...paramarg3: DiscordBuild[]): Pipe;
     constructor(arg0: IPCClient, arg1: { [key: string]: Callback })
     // private build: DiscordBuild;
     // private callbacks: { [key: string]: Callback };

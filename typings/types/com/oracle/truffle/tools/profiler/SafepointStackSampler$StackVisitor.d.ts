@@ -15,7 +15,7 @@ export class SafepointStackSampler$StackVisitor extends Object implements FrameI
     // private includeAsyncStackTrace: boolean;
     // private nextFrameIndex: number;
     // private overflowed: boolean;
-    // private roots: (Object | null)[];
+    // private roots: boolean[];
     // private sourceSectionFilter: SourceSectionFilter;
     // private startTime: number;
     // private targets: CallTarget[];

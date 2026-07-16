@@ -28,7 +28,7 @@ export class DataResult$Instance extends Enum<DataResult$Instance> implements Ap
     static unbox(paramarg0: App<Applicative$Mu, K1>): Applicative<K1, Applicative$Mu>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DataResult$Instance;
-    static values(): (Object | null)[];
+    static values(): DataResult$Instance[];
     private constructor()
     ap<R extends unknown, A extends unknown>(arg0: App<DataResult$Mu, (param0: A) => R>, arg1: App<DataResult$Mu, A>): App<DataResult$Mu, R>;
     ap<R extends unknown, A extends unknown>(arg0: (param0: A) => R, arg1: App<DataResult$Mu, A>): App<DataResult$Mu, R>;

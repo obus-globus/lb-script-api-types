@@ -7,6 +7,7 @@ import type { HotbarItemSlot } from '../../../../../net/ccbluex/liquidbounce/uti
 import type { InventoryAction } from '../../../../../net/ccbluex/liquidbounce/utils/inventory/InventoryAction.d.ts'
 import type { InventoryConstraints } from '../../../../../net/ccbluex/liquidbounce/utils/inventory/InventoryConstraints.d.ts'
 import type { ItemSlot } from '../../../../../net/ccbluex/liquidbounce/utils/inventory/ItemSlot.d.ts'
+import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 /**
  * Reusable anchored hotbar swap state machine:
  * - keep the first swap as restore anchor
@@ -20,6 +21,7 @@ export class AnchoredHotbarSwapController extends Object implements EventListene
     // private anchorHotbarSlot: HotbarItemSlot | null;
     // private anchorHotbarSlotResolver: () => HotbarItemSlot;
     // private anchorSwapAction: InventoryAction | null;
+    readonly debugDisplayName: Component;
     // private inventoryConstraints: InventoryConstraints;
     // private inventorySwapHandler: EventHook<ScheduleInventoryActionEvent>;
     // private lastSwitchScheduledEvent: ScheduleInventoryActionEvent | null;
@@ -28,6 +30,7 @@ export class AnchoredHotbarSwapController extends Object implements EventListene
     // private requestedSourceSlot: ItemSlot | null;
     // private restoreDue: boolean;
     // private restoreHandler: EventHook<ScheduleInventoryActionEvent>;
+    readonly running: boolean;
     // private swapDelayProvider: () => number;
     // private tickHandler: EventHook<GameTickEvent>;
     // private waitingTicks: number;

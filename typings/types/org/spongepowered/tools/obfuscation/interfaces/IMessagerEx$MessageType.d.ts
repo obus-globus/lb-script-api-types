@@ -69,7 +69,7 @@ export class IMessagerEx$MessageType extends Enum<IMessagerEx$MessageType> {
     static setPrefix(paramarg0: string): void;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): IMessagerEx$MessageType;
-    static values(): (Object | null)[];
+    static values(): IMessagerEx$MessageType[];
     private constructor(arg2: Diagnostic$Kind)
     readonly enabled: boolean;
     readonly kind: Diagnostic$Kind;

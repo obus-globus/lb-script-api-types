@@ -4,7 +4,7 @@ import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 import type { Direction } from '../../../../../../../../net/minecraft/core/Direction.d.ts'
 import type { Vector3fc } from '../../../../../../../../org/joml/Vector3fc.d.ts'
 export class ModelQuadFacing extends Enum<ModelQuadFacing> {
-    static ALIGNED_NORMALS: (Object | null)[];
+    static ALIGNED_NORMALS: Vector3fc[];
     static ALL: number;
     static COUNT: number;
     static DIRECTIONS: number;
@@ -22,7 +22,7 @@ export class ModelQuadFacing extends Enum<ModelQuadFacing> {
     static UNASSIGNED: ModelQuadFacing;
     static UNASSIGNED_MASK: number;
     static UNASSIGNED_ORDINAL: number;
-    static VALUES: (Object | null)[];
+    static VALUES: ModelQuadFacing[];
     static bitmapHasUnassigned(paramarg0: number): boolean;
     static bitmapIsOpposingAligned(paramarg0: number): boolean;
     static fromDirection(paramarg0: Direction): ModelQuadFacing;
@@ -31,7 +31,7 @@ export class ModelQuadFacing extends Enum<ModelQuadFacing> {
     static fromPackedNormal(paramarg0: number): ModelQuadFacing;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModelQuadFacing;
-    static values(): (Object | null)[];
+    static values(): ModelQuadFacing[];
     private constructor()
     getAlignedNormal(): Vector3fc;
     getAxis(): number;

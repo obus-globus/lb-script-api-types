@@ -9,7 +9,7 @@ export class CopyActionResult extends Enum<CopyActionResult> implements Serializ
     static getEntries(): CopyActionResult[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CopyActionResult;
-    static values(): (Object | null)[];
+    static values(): CopyActionResult[];
     private constructor()
     name(): "CONTINUE" | "SKIP_SUBTREE" | "TERMINATE";
 }

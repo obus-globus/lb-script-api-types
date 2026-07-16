@@ -9,7 +9,7 @@ export class InjectionPoint$Specifier extends Enum<InjectionPoint$Specifier> {
     static ONE: InjectionPoint$Specifier;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): InjectionPoint$Specifier;
-    static values(): (Object | null)[];
+    static values(): InjectionPoint$Specifier[];
     private constructor()
     name(): "ALL" | "FIRST" | "LAST" | "ONE" | "DEFAULT";
 }

@@ -12,7 +12,7 @@ export class DayOfWeek extends Enum<DayOfWeek> {
     static getEntries(): DayOfWeek[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DayOfWeek;
-    static values(): (Object | null)[];
+    static values(): DayOfWeek[];
     private constructor()
     name(): "MONDAY" | "TUESDAY" | "WEDNESDAY" | "THURSDAY" | "FRIDAY" | "SATURDAY" | "SUNDAY";
 }

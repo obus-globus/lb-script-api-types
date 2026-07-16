@@ -8,7 +8,7 @@ export class Continuation$Pinned extends Enum<Continuation$Pinned> {
     static NATIVE: Continuation$Pinned;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Continuation$Pinned;
-    static values(): (Object | null)[];
+    static values(): Continuation$Pinned[];
     private constructor()
     name(): "NATIVE" | "MONITOR" | "CRITICAL_SECTION" | "EXCEPTION";
 }

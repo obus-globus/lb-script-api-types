@@ -9,7 +9,7 @@ export class Status extends Enum<Status> {
     static SUCCESS: Status;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Status;
-    static values(): (Object | null)[];
+    static values(): Status[];
     private constructor()
     name(): "SUCCESS" | "NOT_MODIFIED" | "NOT_FOUND" | "ERROR" | "EMPTY";
 }

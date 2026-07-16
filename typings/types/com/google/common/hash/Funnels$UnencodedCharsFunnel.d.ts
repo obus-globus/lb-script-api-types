@@ -8,7 +8,7 @@ export class Funnels$UnencodedCharsFunnel extends Enum<Funnels$UnencodedCharsFun
     static INSTANCE: Funnels$UnencodedCharsFunnel;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Funnels$UnencodedCharsFunnel;
-    static values(): (Object | null)[];
+    static values(): Funnels$UnencodedCharsFunnel[];
     private constructor()
     funnel(from: CharSequence, into: PrimitiveSink): void;
     toString(): string;

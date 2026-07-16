@@ -12,10 +12,10 @@ export abstract class Equivalence<T extends unknown> extends Object implements B
     doHash(t: T): number;
     equals(object: Object | null): boolean;
     equivalent(a: T, b: T): boolean;
-    equivalentTo(target: T): (param0: Object) => boolean;
+    equivalentTo(target: T): (param0: T) => boolean;
     hash(t: T): number;
     negate(): (param0: T, param1: T) => boolean;
-    onResultOf<F extends unknown>(function_: (param0: Object) => boolean): Equivalence<F>;
+    onResultOf<F extends unknown>(function_: (param0: F) => T): Equivalence<F>;
     or(arg0: (param0: T, param1: T) => boolean): (param0: T, param1: T) => boolean;
     pairwise<S extends T>(): Equivalence<S[]>;
     test(t: T, u: T): boolean;

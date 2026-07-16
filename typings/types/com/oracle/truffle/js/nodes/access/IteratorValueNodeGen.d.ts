@@ -10,7 +10,6 @@ export class IteratorValueNodeGen extends IteratorValueNode {
     static create(): IteratorValueNode;
     static getUncached(): IteratorValueNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private foreignObject0_cache: IteratorValueNodeGen$ForeignObject0Data;
     // private foreignObject1_importValueNode_: ImportValueNode;

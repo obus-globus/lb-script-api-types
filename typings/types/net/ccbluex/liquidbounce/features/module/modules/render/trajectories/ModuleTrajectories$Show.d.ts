@@ -14,7 +14,7 @@ export class ModuleTrajectories$Show extends Enum<ModuleTrajectories$Show> imple
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleTrajectories$Show;
-    static values(): (Object | null)[];
+    static values(): ModuleTrajectories$Show[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "ALWAYS_SHOW_BOW" | "OTHER_PLAYERS" | "ACTIVE_TRAJECTORY_ARROW" | "ACTIVE_TRAJECTORY_OTHER";

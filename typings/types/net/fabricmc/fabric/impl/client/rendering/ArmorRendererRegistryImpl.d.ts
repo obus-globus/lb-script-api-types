@@ -9,10 +9,11 @@ import type { HumanoidRenderState } from '../../../../../../net/minecraft/client
 import type { EquipmentSlot } from '../../../../../../net/minecraft/world/entity/EquipmentSlot.d.ts'
 import type { Item } from '../../../../../../net/minecraft/world/item/Item.d.ts'
 import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemStack.d.ts'
+import type { ItemLike } from '../../../../../../net/minecraft/world/level/ItemLike.d.ts'
 export class ArmorRendererRegistryImpl extends Object {
     static createArmorRenderers(paramarg0: EntityRendererProvider$Context): void;
     static get(paramarg0: Item): (param0: PoseStack, param1: SubmitNodeCollector, param2: ItemStack, param3: HumanoidRenderState, param4: EquipmentSlot, param5: number, param6: HumanoidModel<HumanoidRenderState>) => void;
-    static register(paramarg0: (param0: EntityRendererProvider$Context) => (param0: PoseStack, param1: SubmitNodeCollector, param2: ItemStack, param3: HumanoidRenderState, param4: EquipmentSlot, param5: number, param6: HumanoidModel<HumanoidRenderState>) => void, ...paramarg1: (Object | null)[]): void;
-    static register(paramarg0: (param0: PoseStack, param1: SubmitNodeCollector, param2: ItemStack, param3: HumanoidRenderState, param4: EquipmentSlot, param5: number, param6: HumanoidModel<HumanoidRenderState>) => void, ...paramarg1: (Object | null)[]): void;
+    static register(paramarg0: (param0: EntityRendererProvider$Context) => (param0: PoseStack, param1: SubmitNodeCollector, param2: ItemStack, param3: HumanoidRenderState, param4: EquipmentSlot, param5: number, param6: HumanoidModel<HumanoidRenderState>) => void, ...paramarg1: ItemLike[]): void;
+    static register(paramarg0: (param0: PoseStack, param1: SubmitNodeCollector, param2: ItemStack, param3: HumanoidRenderState, param4: EquipmentSlot, param5: number, param6: HumanoidModel<HumanoidRenderState>) => void, ...paramarg1: ItemLike[]): void;
     constructor()
 }

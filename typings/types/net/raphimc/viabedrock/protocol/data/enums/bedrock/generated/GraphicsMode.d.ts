@@ -12,7 +12,7 @@ export class GraphicsMode extends Enum<GraphicsMode> {
     static getByValue(paramarg0: number, paramarg1: GraphicsMode): GraphicsMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): GraphicsMode;
-    static values(): (Object | null)[];
+    static values(): GraphicsMode[];
     private constructor(arg2: number)
     private constructor(arg2: GraphicsMode)
     readonly value: number;

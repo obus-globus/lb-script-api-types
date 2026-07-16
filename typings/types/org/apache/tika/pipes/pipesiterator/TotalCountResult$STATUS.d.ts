@@ -8,7 +8,7 @@ export class TotalCountResult$STATUS extends Enum<TotalCountResult$STATUS> {
     static UNSUPPORTED: TotalCountResult$STATUS;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TotalCountResult$STATUS;
-    static values(): (Object | null)[];
+    static values(): TotalCountResult$STATUS[];
     private constructor()
     name(): "UNSUPPORTED" | "EXCEPTION" | "NOT_COMPLETED" | "COMPLETED";
 }

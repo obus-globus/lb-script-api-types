@@ -22,7 +22,7 @@ export class Biome$Category extends Enum<Biome$Category> {
     static THE_END: Biome$Category;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Biome$Category;
-    static values(): (Object | null)[];
+    static values(): Biome$Category[];
     private constructor(arg2: string)
     getName(): string;
     name(): "NONE" | "TAIGA" | "EXTREME_HILLS" | "JUNGLE" | "MESA" | "BADLANDS_PLATEAU" | "PLAINS" | "SAVANNA" | "ICY" | "THE_END" | "BEACH" | "FOREST" | "OCEAN" | "DESERT" | "RIVER" | "SWAMP" | "MUSHROOM" | "NETHER";

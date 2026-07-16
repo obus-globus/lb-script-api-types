@@ -25,7 +25,7 @@ export class EntitySpawnReason extends Enum<EntitySpawnReason> {
     static isSpawner(paramreason: EntitySpawnReason): boolean;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): EntitySpawnReason;
-    static values(): (Object | null)[];
+    static values(): EntitySpawnReason[];
     private constructor()
     name(): "NATURAL" | "CHUNK_GENERATION" | "SPAWNER" | "STRUCTURE" | "BREEDING" | "MOB_SUMMONED" | "JOCKEY" | "EVENT" | "CONVERSION" | "REINFORCEMENT" | "TRIGGERED" | "BUCKET" | "SPAWN_ITEM_USE" | "COMMAND" | "DISPENSER" | "PATROL" | "TRIAL_SPAWNER" | "LOAD" | "DIMENSION_TRAVEL";
 }

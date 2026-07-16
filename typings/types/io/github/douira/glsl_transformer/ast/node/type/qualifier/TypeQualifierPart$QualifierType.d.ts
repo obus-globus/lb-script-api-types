@@ -10,7 +10,7 @@ export class TypeQualifierPart$QualifierType extends Enum<TypeQualifierPart$Qual
     static STORAGE: TypeQualifierPart$QualifierType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TypeQualifierPart$QualifierType;
-    static values(): (Object | null)[];
+    static values(): TypeQualifierPart$QualifierType[];
     private constructor()
     name(): "STORAGE" | "LAYOUT" | "PRECISION" | "INTERPOLATION" | "INVARIANT" | "PRECISE";
 }

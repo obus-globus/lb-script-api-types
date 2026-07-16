@@ -26,28 +26,21 @@ export class VkPhysicalDeviceMaintenance5PropertiesKHR extends VkPhysicalDeviceM
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceMaintenance5PropertiesKHR;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceMaintenance5PropertiesKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceMaintenance5Properties;
     static create(paramarg0: number): VkPhysicalDeviceMaintenance5Properties;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceMaintenance5PropertiesKHR;
     static create(paramarg0: number): VkPhysicalDeviceMaintenance5PropertiesKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceMaintenance5Properties;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceMaintenance5PropertiesKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceMaintenance5Properties;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceMaintenance5Properties;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceMaintenance5PropertiesKHR;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceMaintenance5PropertiesKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ndepthStencilSwizzleOneSupport(paramarg0: number): number;
     static nearlyFragmentMultisampleCoverageAfterSampleCounting(paramarg0: number): number;
     static nearlyFragmentSampleMaskTestBeforeSampleCounting(paramarg0: number): number;
@@ -58,7 +51,6 @@ export class VkPhysicalDeviceMaintenance5PropertiesKHR extends VkPhysicalDeviceM
     static npolygonModePointSize(paramarg0: number): number;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

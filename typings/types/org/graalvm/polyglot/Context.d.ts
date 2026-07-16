@@ -8,9 +8,9 @@ import type { Source } from '../../../org/graalvm/polyglot/Source.d.ts'
 import type { Value } from '../../../org/graalvm/polyglot/Value.d.ts'
 import type { AbstractPolyglotImpl$AbstractContextDispatch } from '../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl$AbstractContextDispatch.d.ts'
 export class Context extends Object implements AutoCloseable {
-    static create(...parampermittedLanguages: (Object | null)[]): Context;
+    static create(...parampermittedLanguages: string[]): Context;
     static getCurrent(): Context;
-    static newBuilder(...parampermittedLanguages: (Object | null)[]): Context$Builder;
+    static newBuilder(...parampermittedLanguages: string[]): Context$Builder;
     constructor(dispatch: AbstractPolyglotImpl$AbstractContextDispatch, receiver: Object, parentContext: Context, engine: Engine)
     // private creatorContext: Context;
     // private currentAPI: Context;

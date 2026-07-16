@@ -7,7 +7,7 @@ export class TrackedWaypoint$PitchDirection extends Enum<TrackedWaypoint$PitchDi
     static UP: TrackedWaypoint$PitchDirection;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TrackedWaypoint$PitchDirection;
-    static values(): (Object | null)[];
+    static values(): TrackedWaypoint$PitchDirection[];
     private constructor()
     name(): "NONE" | "UP" | "DOWN";
 }

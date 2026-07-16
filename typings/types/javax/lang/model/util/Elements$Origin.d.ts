@@ -7,7 +7,7 @@ export class Elements$Origin extends Enum<Elements$Origin> {
     static SYNTHETIC: Elements$Origin;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Elements$Origin;
-    static values(): (Object | null)[];
+    static values(): Elements$Origin[];
     private constructor()
     isDeclared(): boolean;
     name(): "EXPLICIT" | "MANDATED" | "SYNTHETIC";

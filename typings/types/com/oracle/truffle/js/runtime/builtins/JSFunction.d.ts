@@ -59,12 +59,12 @@ export class JSFunction extends JSNonProxy {
     static TS_BUILTIN_SOURCE_NAME: TruffleString;
     static TYPE_NAME: TruffleString;
     static addRestrictedFunctionProperties(paramrealm: JSRealm, paramobj: JSDynamicObject): void;
-    static bind(paramrealm: JSRealm, paramthisFnObj: JSFunctionObject, paramthisArg: Object, paramboundArguments: (Object | null)[]): JSFunctionObject;
-    static boundFunctionCreate(paramcontext: JSContext, paramboundTargetFunction: JSFunctionObject, paramboundThis: Object, paramboundArguments: (Object | null)[], paramproto: JSDynamicObject, paramisConstructorProfile: InlinedConditionProfile, paramisAsyncProfile: InlinedConditionProfile, paramsetProtoProfile: InlinedConditionProfile, paramnode: Node): JSFunctionObject;
-    static call(paramfunctionObject: JSFunctionObject, paramthisObject: Object, paramargumentValues: (Object | null)[]): Object;
-    static call(paramjsArguments: (Object | null)[]): Object;
+    static bind(paramrealm: JSRealm, paramthisFnObj: JSFunctionObject, paramthisArg: Object, paramboundArguments: Object[]): JSFunctionObject;
+    static boundFunctionCreate(paramcontext: JSContext, paramboundTargetFunction: JSFunctionObject, paramboundThis: Object, paramboundArguments: Object[], paramproto: JSDynamicObject, paramisConstructorProfile: InlinedConditionProfile, paramisAsyncProfile: InlinedConditionProfile, paramsetProtoProfile: InlinedConditionProfile, paramnode: Node): JSFunctionObject;
+    static call(paramfunctionObject: JSFunctionObject, paramthisObject: Object, paramargumentValues: Object[]): Object;
+    static call(paramjsArguments: Object[]): Object;
     static checkProtoCycle(paramthisObj: JSDynamicObject, paramnewPrototype: JSDynamicObject): boolean;
-    static construct(paramfunctionObject: JSFunctionObject, paramargumentValues: (Object | null)[]): Object;
+    static construct(paramfunctionObject: JSFunctionObject, paramargumentValues: Object[]): Object;
     static create(paramrealm: JSRealm, paramfunctionData: JSFunctionData): JSFunctionObject;
     static create(paramrealm: JSRealm, paramfunctionData: JSFunctionData, paramenclosingFrame: MaterializedFrame): JSFunctionObject;
     static createAsyncFromSyncIteratorPrototype(paramrealm: JSRealm): JSObject;
@@ -73,7 +73,7 @@ export class JSFunction extends JSNonProxy {
     static createAsyncGeneratorFunctionConstructor(paramrealm: JSRealm): JSConstructor;
     static createAsyncGeneratorFunctionPrototype(paramrealm: JSRealm, paramconstructor: JSDynamicObject): JSObject;
     static createAsyncIteratorPrototype(paramrealm: JSRealm): JSObject;
-    static createBound(paramcontext: JSContext, paramrealm: JSRealm, paramfunctionData: JSFunctionData, paramboundTargetFunction: Object, paramboundThis: Object, paramboundArguments: (Object | null)[]): JSFunctionObject;
+    static createBound(paramcontext: JSContext, paramrealm: JSRealm, paramfunctionData: JSFunctionData, paramboundTargetFunction: Object, paramboundThis: Object, paramboundArguments: Object[]): JSFunctionObject;
     static createBoundRootNode(paramcontext: JSContext, paramconstruct: boolean, paramnewTarget: boolean): RootNode;
     static createBuiltinSourceSection(paramname: string): SourceSection;
     static createEmptyFunction(paramrealm: JSRealm): JSFunctionObject;

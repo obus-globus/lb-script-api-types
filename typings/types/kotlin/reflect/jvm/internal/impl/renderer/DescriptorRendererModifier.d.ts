@@ -22,7 +22,7 @@ export class DescriptorRendererModifier extends Enum<DescriptorRendererModifier>
     static VISIBILITY: DescriptorRendererModifier;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DescriptorRendererModifier;
-    static values(): (Object | null)[];
+    static values(): DescriptorRendererModifier[];
     private constructor(arg2: boolean)
     // private includeByDefault: boolean;
     name(): "VISIBILITY" | "MODALITY" | "OVERRIDE" | "ANNOTATIONS" | "INNER" | "MEMBER_KIND" | "DATA" | "INLINE" | "EXPECT" | "ACTUAL" | "CONST" | "LATEINIT" | "FUN" | "VALUE";

@@ -7,7 +7,7 @@ export class OptionCategory extends Enum<OptionCategory> {
     static USER: OptionCategory;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): OptionCategory;
-    static values(): (Object | null)[];
+    static values(): OptionCategory[];
     private constructor()
     name(): "USER" | "EXPERT" | "INTERNAL";
 }

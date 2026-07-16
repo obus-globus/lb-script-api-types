@@ -50,7 +50,6 @@ export class VkSurfaceCapabilities2KHR extends Struct<VkSurfaceCapabilities2KHR>
     static nsType(paramarg0: number, paramarg1: number): void;
     static nsurfaceCapabilities(paramarg0: number): VkSurfaceCapabilitiesKHR;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     close(): void;

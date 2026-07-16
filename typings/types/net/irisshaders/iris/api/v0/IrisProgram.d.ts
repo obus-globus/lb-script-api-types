@@ -25,7 +25,7 @@ export class IrisProgram extends Enum<IrisProgram> {
     static TRANSLUCENT: IrisProgram;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): IrisProgram;
-    static values(): (Object | null)[];
+    static values(): IrisProgram[];
     private constructor()
     name(): "BASIC" | "TEXTURED" | "TERRAIN" | "TERRAIN_SOLID" | "TERRAIN_CUTOUT" | "TRANSLUCENT" | "SKY_BASIC" | "SKY_TEXTURED" | "ARMOR_GLINT" | "ENTITIES" | "ENTITIES_TRANSLUCENT" | "CLOUDS" | "BLOCK" | "BLOCK_TRANSLUCENT" | "HAND" | "HAND_TRANSLUCENT" | "PARTICLES" | "PARTICLES_TRANSLUCENT" | "EMISSIVE_ENTITIES" | "BEACON_BEAM" | "LINES";
 }

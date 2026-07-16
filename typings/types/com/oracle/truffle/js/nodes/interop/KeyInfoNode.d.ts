@@ -16,7 +16,6 @@ export abstract class KeyInfoNode extends JavaScriptBaseNode {
     static WRITABLE: number;
     static WRITE_SIDE_EFFECTS: number;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doProxy(proxy: JSProxyObject, key: string, query: number, getPrototype: GetPrototypeNode, isCallable: IsCallableNode, isExtensible: IsExtensibleNode, fromJavaStringNode: TruffleString$FromJavaStringNode): boolean;
     execute(receiver: JSDynamicObject, key: string, query: number): boolean;

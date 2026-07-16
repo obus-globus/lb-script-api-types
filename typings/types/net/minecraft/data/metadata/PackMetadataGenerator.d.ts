@@ -19,7 +19,7 @@ import type { FeatureFlagSet } from '../../../../net/minecraft/world/flag/Featur
 import type { Logger } from '../../../../org/slf4j/Logger.d.ts'
 export class PackMetadataGenerator extends Object implements DataProvider {
     static FIXED_ORDER_FIELDS: (param0: string) => number;
-    static KEY_COMPARATOR: (param0: Object) => boolean;
+    static KEY_COMPARATOR: (param0: string, param1: string) => number;
     static LOGGER: Logger;
     static forFeaturePack(paramoutput: PackOutput, paramdescription: Component): PackMetadataGenerator;
     static forFeaturePack(paramoutput: PackOutput, paramdescription: Component, paramflags: FeatureFlagSet): PackMetadataGenerator;

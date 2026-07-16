@@ -10,7 +10,7 @@ export class ViaBedrockConfig$BlobCacheMode extends Enum<ViaBedrockConfig$BlobCa
     static byName(paramarg0: string): ViaBedrockConfig$BlobCacheMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ViaBedrockConfig$BlobCacheMode;
-    static values(): (Object | null)[];
+    static values(): ViaBedrockConfig$BlobCacheMode[];
     private constructor(arg2: () => BlobCacheProvider)
     // private providerSupplier: () => BlobCacheProvider;
     createProvider(): BlobCacheProvider;

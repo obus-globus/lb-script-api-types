@@ -8,7 +8,7 @@ export class StandardLineSeparator extends Enum<StandardLineSeparator> {
     static LF: StandardLineSeparator;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): StandardLineSeparator;
-    static values(): (Object | null)[];
+    static values(): StandardLineSeparator[];
     private constructor(arg2: string)
     // private lineSeparator: string;
     getBytes(arg0: Charset): number[];

@@ -6,7 +6,7 @@ import type { Locale } from '../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { FormatFactory } from '../../../../../org/apache/commons/lang3/text/FormatFactory.d.ts'
 export class ExtendedMessageFormat extends MessageFormat {
-    static format(paramarg0: string, ...paramarg1: (Object | null)[]): string;
+    static format(paramarg0: string, ...paramarg1: Object[]): string;
     constructor(arg0: string)
     constructor(arg0: string, arg1: Locale)
     constructor(arg0: string, arg1: Locale, arg2: { [key: string]: FormatFactory })

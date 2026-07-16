@@ -6,7 +6,7 @@ export class LongMath$MillerRabinTester extends Enum<LongMath$MillerRabinTester>
     static SMALL: LongMath$MillerRabinTester;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): LongMath$MillerRabinTester;
-    static values(): (Object | null)[];
+    static values(): LongMath$MillerRabinTester[];
     constructor(arg2: any)
     mulMod(a: number, b: number, m: number): number;
     // private powMod(a: number, p: number, m: number): number;

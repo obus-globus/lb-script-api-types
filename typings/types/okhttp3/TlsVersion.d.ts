@@ -13,7 +13,7 @@ export class TlsVersion extends Enum<TlsVersion> {
     static getEntries(): TlsVersion[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TlsVersion;
-    static values(): (Object | null)[];
+    static values(): TlsVersion[];
     private constructor(javaName: string)
     // private javaName: string;
     javaName(): string;

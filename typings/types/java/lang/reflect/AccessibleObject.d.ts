@@ -3,7 +3,7 @@ import type { AnnotatedElement } from '../../../java/lang/reflect/AnnotatedEleme
 import type { Annotation } from '../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class AccessibleObject extends Object implements AnnotatedElement {
-    static setAccessible(paramarg0: (Object | null)[], paramarg1: boolean): void;
+    static setAccessible(paramarg0: AccessibleObject[], paramarg1: boolean): void;
     constructor()
     canAccess(arg0: Object): boolean;
     checkAccess(arg0: Class<Object>, arg1: Class<Object>, arg2: Class<Object>, arg3: number): void;

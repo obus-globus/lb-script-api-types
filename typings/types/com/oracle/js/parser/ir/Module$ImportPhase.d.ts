@@ -7,7 +7,7 @@ export class Module$ImportPhase extends Enum<Module$ImportPhase> {
     static Source: Module$ImportPhase;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Module$ImportPhase;
-    static values(): (Object | null)[];
+    static values(): Module$ImportPhase[];
     private constructor()
     name(): "Evaluation" | "Source" | "Defer";
 }

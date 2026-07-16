@@ -10,7 +10,7 @@ export class Direction extends Enum<Direction> {
     static WEST: Direction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Direction;
-    static values(): (Object | null)[];
+    static values(): Direction[];
     private constructor()
     name(): "DOWN" | "UP" | "NORTH" | "SOUTH" | "WEST" | "EAST";
 }

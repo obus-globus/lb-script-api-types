@@ -8,7 +8,7 @@ export class ServerConfigurationNetworkAddon$RegisterState extends Enum<ServerCo
     static SENT: ServerConfigurationNetworkAddon$RegisterState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ServerConfigurationNetworkAddon$RegisterState;
-    static values(): (Object | null)[];
+    static values(): ServerConfigurationNetworkAddon$RegisterState[];
     private constructor()
     name(): "NOT_SENT" | "SENT" | "RECEIVED" | "NOT_RECEIVED";
 }

@@ -14,7 +14,7 @@ export class JSONBuiltins$JSON extends Enum<JSONBuiltins$JSON> implements Builti
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): JSONBuiltins$JSON;
-    static values(): (Object | null)[];
+    static values(): JSONBuiltins$JSON[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

@@ -4,7 +4,6 @@ import type { ToPrimitiveBaseNode } from '../../../../../../com/oracle/truffle/j
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class AsPrimitiveNode extends ToPrimitiveBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(node: Node, value: Object, hint: JSToPrimitiveNode$Hint): Object;
 }

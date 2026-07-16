@@ -7,7 +7,7 @@ export class KmVariance extends Enum<KmVariance> {
     static OUT: KmVariance;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): KmVariance;
-    static values(): (Object | null)[];
+    static values(): KmVariance[];
     private constructor()
     name(): "INVARIANT" | "IN" | "OUT";
 }

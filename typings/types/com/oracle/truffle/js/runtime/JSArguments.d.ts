@@ -3,33 +3,33 @@ import type { Completion } from '../../../../../com/oracle/truffle/js/runtime/ob
 import type { Completion$Type } from '../../../../../com/oracle/truffle/js/runtime/objects/Completion$Type.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class JSArguments extends Object {
-    static EMPTY_ARGUMENTS_ARRAY: (Object | null)[];
+    static EMPTY_ARGUMENTS_ARRAY: Object[];
     static RUNTIME_ARGUMENT_COUNT: number;
-    static arraycopy(paramsrc: (Object | null)[], paramsrcPos: number, paramdest: (Object | null)[], paramdestPos: number, paramlength: number): void;
-    static create(paramtarget: Object, paramfunction: Object, ...paramuserArguments: (Object | null)[]): (Object | null)[];
-    static createInitial(paramtarget: Object, paramfunction: Object, paramuserArgumentCount: number): (Object | null)[];
-    static createInitialWithNewTarget(paramtarget: Object, paramfunction: Object, paramnewTarget: Object, paramuserArgumentCount: number): (Object | null)[];
-    static createOneArg(paramtarget: Object, paramfunction: Object, paramuserArgument: Object): (Object | null)[];
-    static createResumeArguments(paramexecutionContext: Object, paramgeneratorOrPromiseCapability: Object, paramcompletionType: Completion$Type, paramcompletionValue: Object): (Object | null)[];
-    static createResumeArguments(paramexecutionContext: Object, paramgenerator: Object, paramcompletion: Completion): (Object | null)[];
-    static createWithNewTarget(paramtarget: Object, paramfunction: Object, paramnewTarget: Object, ...paramuserArguments: (Object | null)[]): (Object | null)[];
-    static createZeroArg(paramtarget: Object, paramfunction: Object): (Object | null)[];
-    static extractUserArguments(paramarguments: (Object | null)[]): (Object | null)[];
-    static extractUserArguments(paramarguments: (Object | null)[], paramskip: number): (Object | null)[];
-    static extractUserArguments(paramarguments: (Object | null)[], paramskip: number, paramskipEnd: number): (Object | null)[];
-    static getEnclosingFrame(paramarguments: (Object | null)[]): MaterializedFrame;
-    static getFunctionObject(paramarguments: (Object | null)[]): Object;
-    static getNewTarget(paramarguments: (Object | null)[]): Object;
-    static getResumeCompletion(paramarguments: (Object | null)[]): Completion;
-    static getResumeCompletionType(paramarguments: (Object | null)[]): Completion$Type;
-    static getResumeCompletionValue(paramarguments: (Object | null)[]): Object;
-    static getResumeExecutionContext(paramarguments: (Object | null)[]): MaterializedFrame;
-    static getResumeGeneratorOrPromiseCapability(paramarguments: (Object | null)[]): Object;
-    static getThisObject(paramarguments: (Object | null)[]): Object;
-    static getUserArgument(paramarguments: (Object | null)[], paramindex: number): Object;
-    static getUserArgumentCount(paramarguments: (Object | null)[]): number;
-    static setThisObject(paramarguments: (Object | null)[], paramvalue: Object): void;
-    static setUserArgument(paramarguments: (Object | null)[], paramindex: number, paramvalue: Object): void;
-    static setUserArguments(paramarguments: (Object | null)[], paramindex: number, paramuserArguments: (Object | null)[]): void;
+    static arraycopy(paramsrc: Object[], paramsrcPos: number, paramdest: Object[], paramdestPos: number, paramlength: number): void;
+    static create(paramtarget: Object, paramfunction: Object, ...paramuserArguments: Object[]): Object[];
+    static createInitial(paramtarget: Object, paramfunction: Object, paramuserArgumentCount: number): Object[];
+    static createInitialWithNewTarget(paramtarget: Object, paramfunction: Object, paramnewTarget: Object, paramuserArgumentCount: number): Object[];
+    static createOneArg(paramtarget: Object, paramfunction: Object, paramuserArgument: Object): Object[];
+    static createResumeArguments(paramexecutionContext: Object, paramgeneratorOrPromiseCapability: Object, paramcompletionType: Completion$Type, paramcompletionValue: Object): Object[];
+    static createResumeArguments(paramexecutionContext: Object, paramgenerator: Object, paramcompletion: Completion): Object[];
+    static createWithNewTarget(paramtarget: Object, paramfunction: Object, paramnewTarget: Object, ...paramuserArguments: Object[]): Object[];
+    static createZeroArg(paramtarget: Object, paramfunction: Object): Object[];
+    static extractUserArguments(paramarguments: Object[]): Object[];
+    static extractUserArguments(paramarguments: Object[], paramskip: number): Object[];
+    static extractUserArguments(paramarguments: Object[], paramskip: number, paramskipEnd: number): Object[];
+    static getEnclosingFrame(paramarguments: Object[]): MaterializedFrame;
+    static getFunctionObject(paramarguments: Object[]): Object;
+    static getNewTarget(paramarguments: Object[]): Object;
+    static getResumeCompletion(paramarguments: Object[]): Completion;
+    static getResumeCompletionType(paramarguments: Object[]): Completion$Type;
+    static getResumeCompletionValue(paramarguments: Object[]): Object;
+    static getResumeExecutionContext(paramarguments: Object[]): MaterializedFrame;
+    static getResumeGeneratorOrPromiseCapability(paramarguments: Object[]): Object;
+    static getThisObject(paramarguments: Object[]): Object;
+    static getUserArgument(paramarguments: Object[], paramindex: number): Object;
+    static getUserArgumentCount(paramarguments: Object[]): number;
+    static setThisObject(paramarguments: Object[], paramvalue: Object): void;
+    static setUserArgument(paramarguments: Object[], paramindex: number, paramvalue: Object): void;
+    static setUserArguments(paramarguments: Object[], paramindex: number, paramuserArguments: Object[]): void;
     private constructor()
 }

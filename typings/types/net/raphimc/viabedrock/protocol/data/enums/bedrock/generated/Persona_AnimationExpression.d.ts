@@ -10,7 +10,7 @@ export class Persona_AnimationExpression extends Enum<Persona_AnimationExpressio
     static getByValue(paramarg0: number, paramarg1: Persona_AnimationExpression): Persona_AnimationExpression;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Persona_AnimationExpression;
-    static values(): (Object | null)[];
+    static values(): Persona_AnimationExpression[];
     private constructor(arg2: number)
     private constructor(arg2: Persona_AnimationExpression)
     readonly value: number;

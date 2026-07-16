@@ -14,7 +14,7 @@ export class ModuleItemTags$MergeMode extends Enum<ModuleItemTags$MergeMode> imp
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleItemTags$MergeMode;
-    static values(): (Object | null)[];
+    static values(): ModuleItemTags$MergeMode[];
     private constructor(tag: string, merge: (param0: ItemStack[]) => ItemStack[])
     readonly merge: (param0: ItemStack[]) => ItemStack[];
     readonly tag: string;

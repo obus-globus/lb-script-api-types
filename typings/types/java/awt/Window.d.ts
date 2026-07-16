@@ -54,8 +54,8 @@ export class Window extends Container implements Accessible {
     static SOMEBITS: number;
     static TOP_ALIGNMENT: number;
     static WIDTH: number;
-    static getOwnerlessWindows(): (Object | null)[];
-    static getWindows(): (Object | null)[];
+    static getOwnerlessWindows(): Window[];
+    static getWindows(): Window[];
     constructor()
     constructor(arg0: Frame)
     constructor(arg0: GraphicsConfiguration)

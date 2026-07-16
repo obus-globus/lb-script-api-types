@@ -10,7 +10,7 @@ export class TextCodecs_v1_21_9$ObjectInfos extends Enum<TextCodecs_v1_21_9$Obje
     static forObjectInfo(paramarg0: ObjectComponent$ObjectInfo): TextCodecs_v1_21_9$ObjectInfos;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TextCodecs_v1_21_9$ObjectInfos;
-    static values(): (Object | null)[];
+    static values(): TextCodecs_v1_21_9$ObjectInfos[];
     private constructor(arg2: string, arg3: MapCodec<ObjectComponent$ObjectInfo>)
     readonly codec: MapCodec<ObjectComponent$ObjectInfo>;
     getCodec(): MapCodec<ObjectComponent$ObjectInfo>;

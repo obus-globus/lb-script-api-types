@@ -13,12 +13,10 @@ export class Multisets extends Object {
     static immutableEntry(parame: Object | null, paramn: number): Multiset$Entry<Object>;
     static intersection(parammultiset1: (Object | null)[], parammultiset2: Object[]): (Object | null)[];
     static removeOccurrences(parammultisetToModify: Object[], paramoccurrencesToRemove: Object[]): boolean;
-    static removeOccurrences(parammultisetToModify: Object[], paramoccurrencesToRemove: Object[]): boolean;
     static retainOccurrences(parammultisetToModify: Object[], parammultisetToRetain: Object[]): boolean;
     static sum(parammultiset1: (Object | null)[], parammultiset2: (Object | null)[]): (Object | null)[];
     static toMultiset(paramelementFunction: (param0: Object) => Object | null, paramcountFunction: (param0: Object) => number, parammultisetSupplier: () => Object | null): Collector<Object, Object, Object>;
     static union(parammultiset1: (Object | null)[], parammultiset2: (Object | null)[]): (Object | null)[];
-    static unmodifiableMultiset(parammultiset: (Object | null)[]): (Object | null)[];
     static unmodifiableMultiset(parammultiset: (Object | null)[]): (Object | null)[];
     static unmodifiableSortedMultiset(paramsortedMultiset: (Object | null)[]): (Object | null)[];
     private constructor()

@@ -7,7 +7,6 @@ import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PropertySetNode$JSProxyDispatcherPropertySetNode extends PropertySetNode$LinkedPropertySetNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, receiverCheckNode: PropertyCacheNode$ReceiverCheckNode, isStrict: boolean, defineProperty: boolean, attributes: number)
     // private proxySet: JSProxyPropertySetNode;
     setValue(thisObj: Object, value: Object, receiver: Object, root: PropertySetNode, guard: boolean): boolean;

@@ -14,7 +14,7 @@ export class FillCommand$Mode extends Enum<FillCommand$Mode> {
     static REPLACE: FillCommand$Mode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): FillCommand$Mode;
-    static values(): (Object | null)[];
+    static values(): FillCommand$Mode[];
     private constructor(affector: (param0: ServerLevel, param1: BlockPos) => boolean, filter: (param0: BoundingBox, param1: BlockPos, param2: BlockInput, param3: ServerLevel) => BlockInput)
     affector: (param0: ServerLevel, param1: BlockPos) => boolean;
     filter: (param0: BoundingBox, param1: BlockPos, param2: BlockInput, param3: ServerLevel) => BlockInput;

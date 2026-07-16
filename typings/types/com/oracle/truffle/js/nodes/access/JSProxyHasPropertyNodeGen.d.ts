@@ -5,7 +5,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSProxyHasPropertyNodeGen extends JSProxyHasPropertyNode {
     static create(paramcontext: JSContext): JSProxyHasPropertyNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private state_0_: number;
     // private executeAndSpecialize(arg0Value: Object, arg1Value: Object): boolean;

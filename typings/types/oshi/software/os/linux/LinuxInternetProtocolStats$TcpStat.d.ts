@@ -19,7 +19,7 @@ export class LinuxInternetProtocolStats$TcpStat extends Enum<LinuxInternetProtoc
     static RtoMin: LinuxInternetProtocolStats$TcpStat;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LinuxInternetProtocolStats$TcpStat;
-    static values(): (Object | null)[];
+    static values(): LinuxInternetProtocolStats$TcpStat[];
     private constructor()
     name(): "RtoAlgorithm" | "RtoMin" | "RtoMax" | "MaxConn" | "ActiveOpens" | "PassiveOpens" | "AttemptFails" | "EstabResets" | "CurrEstab" | "InSegs" | "OutSegs" | "RetransSegs" | "InErrs" | "OutRsts" | "InCsumErrors";
 }

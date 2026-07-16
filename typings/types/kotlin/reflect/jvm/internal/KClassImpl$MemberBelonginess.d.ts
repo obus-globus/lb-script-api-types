@@ -8,7 +8,7 @@ export class KClassImpl$MemberBelonginess extends Enum<KClassImpl$MemberBelongin
     static INHERITED: KClassImpl$MemberBelonginess;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): KClassImpl$MemberBelonginess;
-    static values(): (Object | null)[];
+    static values(): KClassImpl$MemberBelonginess[];
     private constructor()
     accept(member: CallableMemberDescriptor): boolean;
     name(): "DECLARED" | "INHERITED";

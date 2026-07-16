@@ -14,7 +14,7 @@ export class MCEF extends Enum<MCEF> {
     static mc: Minecraft;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MCEF;
-    static values(): (Object | null)[];
+    static values(): MCEF[];
     private constructor()
     LOGGER: Logger;
     readonly app: MCEFApp;

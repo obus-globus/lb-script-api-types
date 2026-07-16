@@ -7,7 +7,7 @@ export class LevelLoadingScreen$Reason extends Enum<LevelLoadingScreen$Reason> {
     static OTHER: LevelLoadingScreen$Reason;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): LevelLoadingScreen$Reason;
-    static values(): (Object | null)[];
+    static values(): LevelLoadingScreen$Reason[];
     private constructor()
     name(): "NETHER_PORTAL" | "END_PORTAL" | "OTHER";
 }

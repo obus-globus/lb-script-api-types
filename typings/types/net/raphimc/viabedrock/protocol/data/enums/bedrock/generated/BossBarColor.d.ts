@@ -16,7 +16,7 @@ export class BossBarColor extends Enum<BossBarColor> {
     static getByValue(paramarg0: number, paramarg1: BossBarColor): BossBarColor;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BossBarColor;
-    static values(): (Object | null)[];
+    static values(): BossBarColor[];
     private constructor(arg2: number)
     private constructor(arg2: BossBarColor)
     readonly value: number;

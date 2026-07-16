@@ -11,7 +11,7 @@ export class System$Logger$Level extends Enum<System$Logger$Level> {
     static WARNING: System$Logger$Level;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): System$Logger$Level;
-    static values(): (Object | null)[];
+    static values(): System$Logger$Level[];
     private constructor(arg2: number)
     readonly severity: number;
     getName(): string;

@@ -9,7 +9,7 @@ export class RTCDtlsTransportState extends Enum<RTCDtlsTransportState> {
     static NEW: RTCDtlsTransportState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RTCDtlsTransportState;
-    static values(): (Object | null)[];
+    static values(): RTCDtlsTransportState[];
     private constructor()
     name(): "NEW" | "CONNECTING" | "CONNECTED" | "CLOSED" | "FAILED";
 }

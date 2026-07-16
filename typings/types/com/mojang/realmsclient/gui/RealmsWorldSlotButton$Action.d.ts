@@ -6,7 +6,7 @@ export class RealmsWorldSlotButton$Action extends Enum<RealmsWorldSlotButton$Act
     static SWITCH_SLOT: RealmsWorldSlotButton$Action;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RealmsWorldSlotButton$Action;
-    static values(): (Object | null)[];
+    static values(): RealmsWorldSlotButton$Action[];
     private constructor()
     name(): "NOTHING" | "SWITCH_SLOT";
 }

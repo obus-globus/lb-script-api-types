@@ -22,7 +22,7 @@ import type { TypeSubstitutor } from '../../../../../../../kotlin/reflect/jvm/in
 export class TypeAliasConstructorDescriptorImpl extends FunctionDescriptorImpl implements TypeAliasConstructorDescriptor {
     static Companion: TypeAliasConstructorDescriptorImpl$Companion;
     static getSubstitutedValueParameters(paramarg0: FunctionDescriptor, paramarg1: ValueParameterDescriptor[], paramarg2: TypeSubstitutor): ValueParameterDescriptor[];
-    static getSubstitutedValueParameters(paramarg0: FunctionDescriptor, paramarg1: ValueParameterDescriptor[], paramarg2: TypeSubstitutor, paramarg3: boolean, paramarg4: boolean, paramarg5: (Object | null)[]): ValueParameterDescriptor[];
+    static getSubstitutedValueParameters(paramarg0: FunctionDescriptor, paramarg1: ValueParameterDescriptor[], paramarg2: TypeSubstitutor, paramarg3: boolean, paramarg4: boolean, paramarg5: boolean[]): ValueParameterDescriptor[];
     static toString(paramarg0: DeclarationDescriptor): string;
     constructor(arg0: StorageManager, arg1: TypeAliasDescriptor, arg2: ClassConstructorDescriptor, arg3: TypeAliasConstructorDescriptor, arg4: AnnotationDescriptor[], arg5: CallableMemberDescriptor$Kind, arg6: SourceElement, arg7: DefaultConstructorMarker)
     // private storageManager: StorageManager;

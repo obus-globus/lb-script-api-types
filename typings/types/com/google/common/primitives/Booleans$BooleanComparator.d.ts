@@ -10,29 +10,29 @@ import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class Booleans$BooleanComparator extends Enum<Booleans$BooleanComparator> implements Comparator<boolean> {
     static FALSE_FIRST: Booleans$BooleanComparator;
     static TRUE_FIRST: Booleans$BooleanComparator;
-    static comparing(paramarg0: (param0: Object) => Object | null): (param0: Object) => boolean;
-    static comparing(paramarg0: (param0: Object) => Object | null, paramarg1: (param0: Object) => boolean): (param0: Object) => boolean;
-    static comparingDouble(paramarg0: (param0: Object) => number): (param0: Object) => boolean;
-    static comparingInt(paramarg0: (param0: Object) => number): (param0: Object) => boolean;
-    static comparingLong(paramarg0: (param0: Object) => number): (param0: Object) => boolean;
-    static naturalOrder(): (param0: Object) => boolean;
-    static nullsFirst(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
-    static nullsLast(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
-    static reverseOrder(): (param0: Object) => boolean;
+    static comparing(paramarg0: (param0: Object) => Object | null): (param0: Object | null, param1: Object | null) => number;
+    static comparing(paramarg0: (param0: Object) => Object | null, paramarg1: (param0: Object, param1: Object) => number): (param0: Object | null, param1: Object | null) => number;
+    static comparingDouble(paramarg0: (param0: Object) => number): (param0: Object | null, param1: Object | null) => number;
+    static comparingInt(paramarg0: (param0: Object) => number): (param0: Object | null, param1: Object | null) => number;
+    static comparingLong(paramarg0: (param0: Object) => number): (param0: Object | null, param1: Object | null) => number;
+    static naturalOrder(): (param0: Object | null, param1: Object | null) => number;
+    static nullsFirst(paramarg0: (param0: Object, param1: Object) => number): (param0: Object | null, param1: Object | null) => number;
+    static nullsLast(paramarg0: (param0: Object, param1: Object) => number): (param0: Object | null, param1: Object | null) => number;
+    static reverseOrder(): (param0: Object | null, param1: Object | null) => number;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Booleans$BooleanComparator;
-    static values(): (Object | null)[];
+    static values(): Booleans$BooleanComparator[];
     private constructor(trueValue: number, toString: string)
     // private toString: string;
     // private trueValue: number;
     compare(a: boolean, b: boolean): number;
-    reversed(): (param0: Object) => boolean;
-    thenComparing(arg0: (param0: Object) => boolean): (param0: Object) => boolean;
-    thenComparing<U extends Comparable<U>>(arg0: (param0: boolean) => U): (param0: Object) => boolean;
-    thenComparing<U extends unknown>(arg0: (param0: boolean) => U, arg1: (param0: Object) => boolean): (param0: Object) => boolean;
-    thenComparingDouble(arg0: (param0: boolean) => number): (param0: Object) => boolean;
-    thenComparingInt(arg0: (param0: boolean) => number): (param0: Object) => boolean;
-    thenComparingLong(arg0: (param0: boolean) => number): (param0: Object) => boolean;
+    reversed(): (param0: boolean, param1: boolean) => number;
+    thenComparing(arg0: (param0: boolean, param1: boolean) => number): (param0: boolean, param1: boolean) => number;
+    thenComparing<U extends Comparable<U>>(arg0: (param0: boolean) => U): (param0: boolean, param1: boolean) => number;
+    thenComparing<U extends unknown>(arg0: (param0: boolean) => U, arg1: (param0: U, param1: U) => number): (param0: boolean, param1: boolean) => number;
+    thenComparingDouble(arg0: (param0: boolean) => number): (param0: boolean, param1: boolean) => number;
+    thenComparingInt(arg0: (param0: boolean) => number): (param0: boolean, param1: boolean) => number;
+    thenComparingLong(arg0: (param0: boolean) => number): (param0: boolean, param1: boolean) => number;
     toString(): string;
     name(): "TRUE_FIRST" | "FALSE_FIRST";
 }

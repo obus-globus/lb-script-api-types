@@ -6,7 +6,7 @@ export class AFGenericProtocolFamily extends Enum<AFGenericProtocolFamily> imple
     static GENERIC: AFGenericProtocolFamily;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AFGenericProtocolFamily;
-    static values(): (Object | null)[];
+    static values(): AFGenericProtocolFamily[];
     private constructor()
     name(): string;
     name(): "GENERIC";

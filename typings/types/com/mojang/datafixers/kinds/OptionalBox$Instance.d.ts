@@ -31,7 +31,7 @@ export class OptionalBox$Instance extends Enum<OptionalBox$Instance> implements 
     static unbox(paramarg0: App<Traversable$Mu, K1>): Traversable<K1, Traversable$Mu>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): OptionalBox$Instance;
-    static values(): (Object | null)[];
+    static values(): OptionalBox$Instance[];
     private constructor()
     ap<R extends unknown, A extends unknown>(arg0: App<OptionalBox$Mu, (param0: A) => R>, arg1: App<OptionalBox$Mu, A>): App<OptionalBox$Mu, R>;
     ap<R extends unknown, A extends unknown>(arg0: (param0: A) => R, arg1: App<OptionalBox$Mu, A>): App<OptionalBox$Mu, R>;

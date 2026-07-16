@@ -5,7 +5,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CollectionContentsPredicate } from '../../../../net/minecraft/advancements/predicates/CollectionContentsPredicate.d.ts'
 export class CollectionContentsPredicate$Multiple<T extends unknown, P extends Predicate<T>> extends Record implements CollectionContentsPredicate<T, P> {
     static codec(paramelementCodec: Codec<Object>): Codec<CollectionContentsPredicate<Object, any>>;
-    static of(parampredicates: Object | null): CollectionContentsPredicate<Object, any>;
+    static of(...parampredicates: (Object | null)[]): CollectionContentsPredicate<Object, any>;
     static of(parampredicates: (Object | null)[]): CollectionContentsPredicate<Object, any>;
     constructor(tests: P[])
     // private tests: P[];

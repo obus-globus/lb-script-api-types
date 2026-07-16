@@ -6,7 +6,7 @@ export class FramedSnappyDialect extends Enum<FramedSnappyDialect> {
     static STANDARD: FramedSnappyDialect;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FramedSnappyDialect;
-    static values(): (Object | null)[];
+    static values(): FramedSnappyDialect[];
     private constructor(arg2: boolean, arg3: boolean)
     // private checksumWithCompressedChunks: boolean;
     // private streamIdentifier: boolean;

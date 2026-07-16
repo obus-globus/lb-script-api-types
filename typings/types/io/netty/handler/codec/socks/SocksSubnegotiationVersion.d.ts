@@ -8,7 +8,7 @@ export class SocksSubnegotiationVersion extends Enum<SocksSubnegotiationVersion>
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: number): SocksSubnegotiationVersion;
     static valueOf(paramarg0: string): SocksSubnegotiationVersion;
-    static values(): (Object | null)[];
+    static values(): SocksSubnegotiationVersion[];
     private constructor(arg2: number)
     // private b: number;
     byteValue(): number;

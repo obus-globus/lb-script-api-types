@@ -10,7 +10,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class OperatorsBuiltinsFactory$CreateOverloadedOperatorsObjectNodeGen extends OperatorsBuiltins$CreateOverloadedOperatorsObjectNode {
     static create(paramcontext: JSContext): OperatorsBuiltins$CreateOverloadedOperatorsObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private cachedProto_cache: OperatorsBuiltinsFactory$CreateOverloadedOperatorsObjectNodeGen$CachedProtoData;
     // private createDefaultProto_cachedShape_: Shape;

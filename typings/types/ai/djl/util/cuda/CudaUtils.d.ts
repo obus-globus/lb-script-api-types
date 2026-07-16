@@ -8,6 +8,6 @@ export class CudaUtils extends Object {
     static getGpuCount(): number;
     static getGpuMemory(paramarg0: Device): MemoryUsage;
     static hasCuda(): boolean;
-    static main(paramarg0: (Object | null)[]): void;
+    static main(paramarg0: string[]): void;
     private constructor()
 }

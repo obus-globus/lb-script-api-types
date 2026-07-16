@@ -5,7 +5,6 @@ import type { Component } from '../../../../../net/minecraft/network/chat/Compon
 import type { InputControl } from '../../../../../net/minecraft/server/dialog/input/InputControl.d.ts'
 import type { NumberRangeInput$RangeInfo } from '../../../../../net/minecraft/server/dialog/input/NumberRangeInput$RangeInfo.d.ts'
 export class NumberRangeInput extends Record implements InputControl {
-    static MAP_CODEC: MapCodec<InputControl>;
     static MAP_CODEC: MapCodec<NumberRangeInput>;
     constructor(width: number, label: Component, labelFormat: string, rangeInfo: NumberRangeInput$RangeInfo)
     // private label: Component;

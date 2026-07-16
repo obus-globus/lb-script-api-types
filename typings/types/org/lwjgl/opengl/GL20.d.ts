@@ -4,7 +4,6 @@ import type { FloatBuffer } from '../../../java/nio/FloatBuffer.d.ts'
 import type { IntBuffer } from '../../../java/nio/IntBuffer.d.ts'
 import type { LongBuffer } from '../../../java/nio/LongBuffer.d.ts'
 import type { ShortBuffer } from '../../../java/nio/ShortBuffer.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../java/lang/CharSequence.d.ts'
 import type { PointerBuffer } from '../../../org/lwjgl/PointerBuffer.d.ts'
 import type { GL15 } from '../../../org/lwjgl/opengl/GL15.d.ts'
@@ -880,8 +879,6 @@ export class GL20 extends GL15 {
     static glBlendFunc(paramarg0: number, paramarg1: number): void;
     static glBlendFuncSeparate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): void;
     static glBufferData(paramarg0: number, paramarg1: number[], paramarg2: number): void;
-    static glBufferData(paramarg0: number, paramarg1: number[], paramarg2: number): void;
-    static glBufferData(paramarg0: number, paramarg1: number[], paramarg2: number): void;
     static glBufferData(paramarg0: number, paramarg1: ByteBuffer, paramarg2: number): void;
     static glBufferData(paramarg0: number, paramarg1: DoubleBuffer, paramarg2: number): void;
     static glBufferData(paramarg0: number, paramarg1: FloatBuffer, paramarg2: number): void;
@@ -889,10 +886,6 @@ export class GL20 extends GL15 {
     static glBufferData(paramarg0: number, paramarg1: LongBuffer, paramarg2: number): void;
     static glBufferData(paramarg0: number, paramarg1: ShortBuffer, paramarg2: number): void;
     static glBufferData(paramarg0: number, paramarg1: number, paramarg2: number): void;
-    static glBufferData(paramarg0: number, paramarg1: number[], paramarg2: number): void;
-    static glBufferData(paramarg0: number, paramarg1: number[], paramarg2: number): void;
-    static glBufferSubData(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
-    static glBufferSubData(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
     static glBufferSubData(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
     static glBufferSubData(paramarg0: number, paramarg1: number, paramarg2: ByteBuffer): void;
     static glBufferSubData(paramarg0: number, paramarg1: number, paramarg2: DoubleBuffer): void;
@@ -900,8 +893,6 @@ export class GL20 extends GL15 {
     static glBufferSubData(paramarg0: number, paramarg1: number, paramarg2: IntBuffer): void;
     static glBufferSubData(paramarg0: number, paramarg1: number, paramarg2: LongBuffer): void;
     static glBufferSubData(paramarg0: number, paramarg1: number, paramarg2: ShortBuffer): void;
-    static glBufferSubData(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
-    static glBufferSubData(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
     static glCallList(paramarg0: number): void;
     static glCallLists(paramarg0: number, paramarg1: ByteBuffer): void;
     static glCallLists(paramarg0: ByteBuffer): void;
@@ -1019,13 +1010,11 @@ export class GL20 extends GL15 {
     static glDrawElements(paramarg0: number, paramarg1: IntBuffer): void;
     static glDrawElements(paramarg0: number, paramarg1: ShortBuffer): void;
     static glDrawPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number[]): void;
-    static glDrawPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number[]): void;
     static glDrawPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: ByteBuffer): void;
     static glDrawPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: FloatBuffer): void;
     static glDrawPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: IntBuffer): void;
     static glDrawPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: ShortBuffer): void;
     static glDrawPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number): void;
-    static glDrawPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number[]): void;
     static glDrawRangeElements(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number): void;
     static glDrawRangeElements(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: ByteBuffer): void;
     static glDrawRangeElements(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: ByteBuffer): void;
@@ -1109,16 +1098,12 @@ export class GL20 extends GL15 {
     static glGetBufferPointer(paramarg0: number, paramarg1: number): number;
     static glGetBufferPointerv(paramarg0: number, paramarg1: number, paramarg2: PointerBuffer): void;
     static glGetBufferSubData(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
-    static glGetBufferSubData(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
-    static glGetBufferSubData(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
     static glGetBufferSubData(paramarg0: number, paramarg1: number, paramarg2: ByteBuffer): void;
     static glGetBufferSubData(paramarg0: number, paramarg1: number, paramarg2: DoubleBuffer): void;
     static glGetBufferSubData(paramarg0: number, paramarg1: number, paramarg2: FloatBuffer): void;
     static glGetBufferSubData(paramarg0: number, paramarg1: number, paramarg2: IntBuffer): void;
     static glGetBufferSubData(paramarg0: number, paramarg1: number, paramarg2: LongBuffer): void;
     static glGetBufferSubData(paramarg0: number, paramarg1: number, paramarg2: ShortBuffer): void;
-    static glGetBufferSubData(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
-    static glGetBufferSubData(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
     static glGetClipPlane(paramarg0: number, paramarg1: number[]): void;
     static glGetClipPlane(paramarg0: number, paramarg1: DoubleBuffer): void;
     static glGetCompressedTexImage(paramarg0: number, paramarg1: number, paramarg2: ByteBuffer): void;
@@ -1211,15 +1196,12 @@ export class GL20 extends GL15 {
     static glGetTexGeniv(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
     static glGetTexGeniv(paramarg0: number, paramarg1: number, paramarg2: IntBuffer): void;
     static glGetTexImage(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number[]): void;
-    static glGetTexImage(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number[]): void;
-    static glGetTexImage(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number[]): void;
     static glGetTexImage(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: ByteBuffer): void;
     static glGetTexImage(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: DoubleBuffer): void;
     static glGetTexImage(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: FloatBuffer): void;
     static glGetTexImage(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: IntBuffer): void;
     static glGetTexImage(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: ShortBuffer): void;
     static glGetTexImage(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number): void;
-    static glGetTexImage(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number[]): void;
     static glGetTexLevelParameterf(paramarg0: number, paramarg1: number, paramarg2: number): number;
     static glGetTexLevelParameterfv(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number[]): void;
     static glGetTexLevelParameterfv(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: FloatBuffer): void;
@@ -1272,15 +1254,12 @@ export class GL20 extends GL15 {
     static glIndexubv(paramarg0: ByteBuffer): void;
     static glInitNames(): void;
     static glInterleavedArrays(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
-    static glInterleavedArrays(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
-    static glInterleavedArrays(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
     static glInterleavedArrays(paramarg0: number, paramarg1: number, paramarg2: ByteBuffer): void;
     static glInterleavedArrays(paramarg0: number, paramarg1: number, paramarg2: DoubleBuffer): void;
     static glInterleavedArrays(paramarg0: number, paramarg1: number, paramarg2: FloatBuffer): void;
     static glInterleavedArrays(paramarg0: number, paramarg1: number, paramarg2: IntBuffer): void;
     static glInterleavedArrays(paramarg0: number, paramarg1: number, paramarg2: ShortBuffer): void;
     static glInterleavedArrays(paramarg0: number, paramarg1: number, paramarg2: number): void;
-    static glInterleavedArrays(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
     static glIsBuffer(paramarg0: number): boolean;
     static glIsEnabled(paramarg0: number): boolean;
     static glIsList(paramarg0: number): boolean;
@@ -1492,13 +1471,11 @@ export class GL20 extends GL15 {
     static glRasterPos4sv(paramarg0: number[]): void;
     static glReadBuffer(paramarg0: number): void;
     static glReadPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number[]): void;
-    static glReadPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number[]): void;
     static glReadPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: ByteBuffer): void;
     static glReadPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: FloatBuffer): void;
     static glReadPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: IntBuffer): void;
     static glReadPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: ShortBuffer): void;
     static glReadPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number): void;
-    static glReadPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number[]): void;
     static glRectd(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): void;
     static glRectdv(paramarg0: number[], paramarg1: number[]): void;
     static glRectdv(paramarg0: DoubleBuffer, paramarg1: DoubleBuffer): void;
@@ -1549,7 +1526,7 @@ export class GL20 extends GL15 {
     static glSelectBuffer(paramarg0: IntBuffer): void;
     static glShadeModel(paramarg0: number): void;
     static glShaderSource(paramarg0: number, paramarg1: CharSequence): void;
-    static glShaderSource(paramarg0: number, ...paramarg1: (Object | null)[]): void;
+    static glShaderSource(paramarg0: number, ...paramarg1: CharSequence[]): void;
     static glShaderSource(paramarg0: number, paramarg1: PointerBuffer, paramarg2: number[]): void;
     static glShaderSource(paramarg0: number, paramarg1: PointerBuffer, paramarg2: IntBuffer): void;
     static glStencilFunc(paramarg0: number, paramarg1: number, paramarg2: number): void;
@@ -1627,17 +1604,12 @@ export class GL20 extends GL15 {
     static glTexGeniv(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
     static glTexGeniv(paramarg0: number, paramarg1: number, paramarg2: IntBuffer): void;
     static glTexImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number[]): void;
-    static glTexImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number[]): void;
-    static glTexImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number[]): void;
     static glTexImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: ByteBuffer): void;
     static glTexImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: DoubleBuffer): void;
     static glTexImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: FloatBuffer): void;
     static glTexImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: IntBuffer): void;
     static glTexImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: ShortBuffer): void;
     static glTexImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number): void;
-    static glTexImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number[]): void;
-    static glTexImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number[]): void;
-    static glTexImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number[]): void;
     static glTexImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number[]): void;
     static glTexImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: ByteBuffer): void;
     static glTexImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: DoubleBuffer): void;
@@ -1645,9 +1617,6 @@ export class GL20 extends GL15 {
     static glTexImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: IntBuffer): void;
     static glTexImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: ShortBuffer): void;
     static glTexImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number): void;
-    static glTexImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number[]): void;
-    static glTexImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number[]): void;
-    static glTexImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number[]): void;
     static glTexImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number[]): void;
     static glTexImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: ByteBuffer): void;
     static glTexImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: DoubleBuffer): void;
@@ -1655,7 +1624,6 @@ export class GL20 extends GL15 {
     static glTexImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: IntBuffer): void;
     static glTexImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: ShortBuffer): void;
     static glTexImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number): void;
-    static glTexImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number[]): void;
     static glTexParameterf(paramarg0: number, paramarg1: number, paramarg2: number): void;
     static glTexParameterfv(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
     static glTexParameterfv(paramarg0: number, paramarg1: number, paramarg2: FloatBuffer): void;
@@ -1663,17 +1631,12 @@ export class GL20 extends GL15 {
     static glTexParameteriv(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
     static glTexParameteriv(paramarg0: number, paramarg1: number, paramarg2: IntBuffer): void;
     static glTexSubImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number[]): void;
-    static glTexSubImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number[]): void;
-    static glTexSubImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number[]): void;
     static glTexSubImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: ByteBuffer): void;
     static glTexSubImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: DoubleBuffer): void;
     static glTexSubImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: FloatBuffer): void;
     static glTexSubImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: IntBuffer): void;
     static glTexSubImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: ShortBuffer): void;
     static glTexSubImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number): void;
-    static glTexSubImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number[]): void;
-    static glTexSubImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number[]): void;
-    static glTexSubImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number[]): void;
     static glTexSubImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number[]): void;
     static glTexSubImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: ByteBuffer): void;
     static glTexSubImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: DoubleBuffer): void;
@@ -1681,9 +1644,6 @@ export class GL20 extends GL15 {
     static glTexSubImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: IntBuffer): void;
     static glTexSubImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: ShortBuffer): void;
     static glTexSubImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number): void;
-    static glTexSubImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number[]): void;
-    static glTexSubImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number, paramarg10: number[]): void;
-    static glTexSubImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number, paramarg10: number[]): void;
     static glTexSubImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number, paramarg10: number[]): void;
     static glTexSubImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number, paramarg10: ByteBuffer): void;
     static glTexSubImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number, paramarg10: DoubleBuffer): void;
@@ -1691,7 +1651,6 @@ export class GL20 extends GL15 {
     static glTexSubImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number, paramarg10: IntBuffer): void;
     static glTexSubImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number, paramarg10: ShortBuffer): void;
     static glTexSubImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number, paramarg10: number): void;
-    static glTexSubImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number, paramarg10: number[]): void;
     static glTranslated(paramarg0: number, paramarg1: number, paramarg2: number): void;
     static glTranslatef(paramarg0: number, paramarg1: number, paramarg2: number): void;
     static glUniform1f(paramarg0: number, paramarg1: number): void;

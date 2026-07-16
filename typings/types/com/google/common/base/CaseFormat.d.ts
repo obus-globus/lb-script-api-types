@@ -11,7 +11,7 @@ export class CaseFormat extends Enum<CaseFormat> {
     static UPPER_UNDERSCORE: CaseFormat;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CaseFormat;
-    static values(): (Object | null)[];
+    static values(): CaseFormat[];
     constructor(arg2: CharMatcher, arg3: string, arg4: CaseFormat)
     // private wordBoundary: CharMatcher;
     // private wordSeparator: string;

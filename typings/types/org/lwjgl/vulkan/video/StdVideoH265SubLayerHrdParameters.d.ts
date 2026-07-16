@@ -52,7 +52,6 @@ export class StdVideoH265SubLayerHrdParameters extends Struct<StdVideoH265SubLay
     static ncpb_size_value_minus1(paramarg0: number, paramarg1: number, paramarg2: number): void;
     static ncpb_size_value_minus1(paramarg0: number, paramarg1: IntBuffer): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     bit_rate_du_value_minus1(): IntBuffer;

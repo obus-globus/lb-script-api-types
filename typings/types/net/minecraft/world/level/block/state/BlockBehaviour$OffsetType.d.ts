@@ -7,7 +7,7 @@ export class BlockBehaviour$OffsetType extends Enum<BlockBehaviour$OffsetType> {
     static XZ: BlockBehaviour$OffsetType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): BlockBehaviour$OffsetType;
-    static values(): (Object | null)[];
+    static values(): BlockBehaviour$OffsetType[];
     private constructor()
     name(): "NONE" | "XZ" | "XYZ";
 }

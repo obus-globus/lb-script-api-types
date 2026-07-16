@@ -8,7 +8,6 @@ export class IteratorNextNodeGen extends IteratorNextNode {
     static create(): IteratorNextNode;
     static getUncached(): IteratorNextNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private isObjectNode_: IsObjectNode;
     // private methodCallNode_: JSFunctionCallNode;

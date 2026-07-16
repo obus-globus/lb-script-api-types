@@ -7,7 +7,7 @@ export class HttpContentEncoder$State extends Enum<HttpContentEncoder$State> {
     static PASS_THROUGH: HttpContentEncoder$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HttpContentEncoder$State;
-    static values(): (Object | null)[];
+    static values(): HttpContentEncoder$State[];
     private constructor()
     name(): "PASS_THROUGH" | "AWAIT_HEADERS" | "AWAIT_CONTENT";
 }

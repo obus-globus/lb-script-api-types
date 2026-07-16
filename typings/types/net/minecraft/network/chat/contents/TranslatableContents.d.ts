@@ -14,7 +14,7 @@ import type { ResolutionContext } from '../../../../../net/minecraft/network/cha
 import type { Style } from '../../../../../net/minecraft/network/chat/Style.d.ts'
 export class TranslatableContents extends Object implements ComponentMarker, ComponentContents {
     static MAP_CODEC: MapCodec<TranslatableContents>;
-    static NO_ARGS: (Object | null)[];
+    static NO_ARGS: Object[];
     static isAllowedPrimitiveArgument(paramobject: Object): boolean;
     constructor(key: string, fallback: string, args: Object[])
     readonly args: Object[];

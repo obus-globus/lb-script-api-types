@@ -6,7 +6,6 @@ export class Object2BooleanFunctions extends Object {
     static EMPTY_FUNCTION: Object2BooleanFunctions$EmptyFunction<Object>;
     static primitive(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static singleton(paramarg0: Object | null, paramarg1: boolean): (param0: Object) => boolean;
-    static singleton(paramarg0: Object | null, paramarg1: boolean): (param0: Object) => boolean;
     static synchronize(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static synchronize(paramarg0: (param0: Object) => boolean, paramarg1: Object): (param0: Object) => boolean;
     static unmodifiable(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;

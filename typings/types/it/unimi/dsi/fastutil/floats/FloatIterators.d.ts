@@ -15,14 +15,11 @@ import type { ListIterator } from '../../../../../java/util/ListIterator.d.ts'
 export class FloatIterators extends Object {
     static EMPTY_ITERATOR: FloatIterators$EmptyIterator;
     static all(paramarg0: FloatIterator, paramarg1: (param0: number) => boolean): boolean;
-    static all(paramarg0: FloatIterator, paramarg1: (param0: number) => boolean): boolean;
-    static any(paramarg0: FloatIterator, paramarg1: (param0: number) => boolean): boolean;
     static any(paramarg0: FloatIterator, paramarg1: (param0: number) => boolean): boolean;
     static asFloatIterator(paramarg0: Iterator<Object>): FloatIterator;
     static asFloatIterator(paramarg0: ListIterator<Object>): FloatListIterator;
-    static concat(...paramarg0: (Object | null)[]): FloatIterator;
-    static concat(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): FloatIterator;
-    static indexOf(paramarg0: FloatIterator, paramarg1: (param0: number) => boolean): number;
+    static concat(...paramarg0: FloatIterator[]): FloatIterator;
+    static concat(paramarg0: FloatIterator[], paramarg1: number, paramarg2: number): FloatIterator;
     static indexOf(paramarg0: FloatIterator, paramarg1: (param0: number) => boolean): number;
     static narrow(paramarg0: PrimitiveIterator$OfDouble): FloatIterator;
     static pour(paramarg0: FloatIterator, paramarg1: (Object | null)[]): number;
@@ -39,11 +36,11 @@ export class FloatIterators extends Object {
     static unwrap(paramarg0: FloatIterator, paramarg1: number[]): number;
     static unwrap(paramarg0: FloatIterator, paramarg1: number[], paramarg2: number, paramarg3: number): number;
     static unwrap(paramarg0: FloatIterator, paramarg1: (Object | null)[], paramarg2: number): number;
+    static unwrap(paramarg0: FloatIterator, paramarg1: number[][]): number;
+    static unwrap(paramarg0: FloatIterator, paramarg1: number[][], paramarg2: number, paramarg3: number): number;
     static unwrap(paramarg0: FloatIterator, paramarg1: (Object | null)[]): number;
-    static unwrap(paramarg0: FloatIterator, paramarg1: (Object | null)[], paramarg2: number, paramarg3: number): number;
-    static unwrap(paramarg0: FloatIterator, paramarg1: (Object | null)[]): number;
-    static unwrapBig(paramarg0: FloatIterator): (Object | null)[];
-    static unwrapBig(paramarg0: FloatIterator, paramarg1: number): (Object | null)[];
+    static unwrapBig(paramarg0: FloatIterator): number[][];
+    static unwrapBig(paramarg0: FloatIterator, paramarg1: number): number[][];
     static widen(paramarg0: FloatIterator): DoubleIterator;
     static wrap(paramarg0: ByteIterator): FloatIterator;
     static wrap(paramarg0: CharIterator): FloatIterator;

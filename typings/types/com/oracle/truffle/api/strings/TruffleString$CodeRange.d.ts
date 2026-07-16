@@ -9,7 +9,7 @@ export class TruffleString$CodeRange extends Enum<TruffleString$CodeRange> {
     static VALID: TruffleString$CodeRange;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TruffleString$CodeRange;
-    static values(): (Object | null)[];
+    static values(): TruffleString$CodeRange[];
     private constructor()
     isSubsetOf(other: TruffleString$CodeRange): boolean;
     isSupersetOf(other: TruffleString$CodeRange): boolean;

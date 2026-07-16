@@ -5,7 +5,7 @@ export class FeatureFlagSet extends Object {
     static MAX_CONTAINER_SIZE: number;
     static of(): FeatureFlagSet;
     static of(paramflag: FeatureFlag): FeatureFlagSet;
-    static of(paramflag: FeatureFlag, ...paramflags: (Object | null)[]): FeatureFlagSet;
+    static of(paramflag: FeatureFlag, ...paramflags: FeatureFlag[]): FeatureFlagSet;
     private constructor(universe: FeatureFlagUniverse, mask: number)
     // private mask: number;
     // private universe: FeatureFlagUniverse;

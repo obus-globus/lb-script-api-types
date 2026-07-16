@@ -15,7 +15,7 @@ export class EyeblossomBlock$Type extends Enum<EyeblossomBlock$Type> {
     static fromBoolean(paramopen: boolean): EyeblossomBlock$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): EyeblossomBlock$Type;
-    static values(): (Object | null)[];
+    static values(): EyeblossomBlock$Type[];
     private constructor(open: boolean, effect: Holder<MobEffect>, duration: number, longSwitchSound: SoundEvent, shortSwitchSound: SoundEvent, particleColor: number)
     // private effect: Holder<MobEffect>;
     // private effectDuration: number;

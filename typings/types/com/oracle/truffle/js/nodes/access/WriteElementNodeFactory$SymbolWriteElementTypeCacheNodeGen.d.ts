@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class WriteElementNodeFactory$SymbolWriteElementTypeCacheNodeGen extends WriteElementNode$SymbolWriteElementTypeCacheNode {
     static create(): WriteElementNode$SymbolWriteElementTypeCacheNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private state_0_: number;
     // private symbol1_indexToPropertyKeyNode_: JSToPropertyKeyNode;

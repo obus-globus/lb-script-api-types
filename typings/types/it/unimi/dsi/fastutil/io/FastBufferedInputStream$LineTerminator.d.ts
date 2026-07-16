@@ -7,7 +7,7 @@ export class FastBufferedInputStream$LineTerminator extends Enum<FastBufferedInp
     static LF: FastBufferedInputStream$LineTerminator;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FastBufferedInputStream$LineTerminator;
-    static values(): (Object | null)[];
+    static values(): FastBufferedInputStream$LineTerminator[];
     private constructor()
     name(): "CR" | "LF" | "CR_LF";
 }

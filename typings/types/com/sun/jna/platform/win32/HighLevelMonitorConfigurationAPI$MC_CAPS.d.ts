@@ -18,7 +18,7 @@ export class HighLevelMonitorConfigurationAPI$MC_CAPS extends Enum<HighLevelMoni
     static MC_RESTORE_FACTORY_DEFAULTS_ENABLES_MONITOR_SETTINGS: HighLevelMonitorConfigurationAPI$MC_CAPS;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HighLevelMonitorConfigurationAPI$MC_CAPS;
-    static values(): (Object | null)[];
+    static values(): HighLevelMonitorConfigurationAPI$MC_CAPS[];
     private constructor(arg2: number)
     readonly flag: number;
     getFlag(): number;

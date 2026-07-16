@@ -15,7 +15,7 @@ export class JavaBuiltins$JavaNashornCompatBuiltins$JavaNashornCompat extends En
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): JavaBuiltins$JavaNashornCompatBuiltins$JavaNashornCompat;
-    static values(): (Object | null)[];
+    static values(): JavaBuiltins$JavaNashornCompatBuiltins$JavaNashornCompat[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

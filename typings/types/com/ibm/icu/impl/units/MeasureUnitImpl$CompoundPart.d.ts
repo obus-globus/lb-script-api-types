@@ -8,7 +8,7 @@ export class MeasureUnitImpl$CompoundPart extends Enum<MeasureUnitImpl$CompoundP
     static getCompoundPartFromTrieIndex(paramarg0: number): MeasureUnitImpl$CompoundPart;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MeasureUnitImpl$CompoundPart;
-    static values(): (Object | null)[];
+    static values(): MeasureUnitImpl$CompoundPart[];
     private constructor(arg2: number)
     // private index: number;
     getTrieIndex(): number;

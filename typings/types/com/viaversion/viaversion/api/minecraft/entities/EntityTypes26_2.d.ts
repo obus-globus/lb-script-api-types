@@ -206,7 +206,7 @@ export class EntityTypes26_2 extends Enum<EntityTypes26_2> implements EntityType
     static initialize(paramarg0: Protocol<any, any, any, any>): void;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): EntityTypes26_2;
-    static values(): (Object | null)[];
+    static values(): EntityTypes26_2[];
     private constructor(arg2: EntityType)
     private constructor(arg2: EntityType, arg3: string)
     readonly id: number;

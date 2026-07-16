@@ -2,7 +2,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Number } from '../../../../java/lang/Number.d.ts'
 export class Bytes extends Object {
     static asList(...parambackingArray: number[]): number[];
-    static concat(...paramarrays: (Object | null)[]): number[];
+    static concat(...paramarrays: number[][]): number[];
     static contains(paramarray: number[], paramtarget: number): boolean;
     static ensureCapacity(paramarray: number[], paramminLength: number, parampadding: number): number[];
     static hashCode(paramvalue: number): number;

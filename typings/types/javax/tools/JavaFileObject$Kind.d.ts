@@ -8,7 +8,7 @@ export class JavaFileObject$Kind extends Enum<JavaFileObject$Kind> {
     static SOURCE: JavaFileObject$Kind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): JavaFileObject$Kind;
-    static values(): (Object | null)[];
+    static values(): JavaFileObject$Kind[];
     private constructor(arg2: string)
     extension: string;
     name(): "SOURCE" | "CLASS" | "HTML" | "OTHER";

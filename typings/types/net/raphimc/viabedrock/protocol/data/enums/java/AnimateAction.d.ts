@@ -10,7 +10,7 @@ export class AnimateAction extends Enum<AnimateAction> {
     static WAKE_UP: AnimateAction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AnimateAction;
-    static values(): (Object | null)[];
+    static values(): AnimateAction[];
     private constructor()
     name(): "SWING_MAIN_HAND" | "UNUSED" | "WAKE_UP" | "SWING_OFF_HAND" | "CRITICAL_HIT" | "MAGIC_CRITICAL_HIT";
 }

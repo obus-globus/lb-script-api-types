@@ -4,7 +4,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class IsConstructorNode extends JavaScriptBaseNode {
     static create(): IsConstructorNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     executeBoolean(operand: Object): boolean;
 }

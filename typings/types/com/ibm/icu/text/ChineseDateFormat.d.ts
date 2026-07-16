@@ -9,7 +9,6 @@ import type { ULocale } from '../../../../com/ibm/icu/util/ULocale.d.ts'
 import type { StringBuffer } from '../../../../java/lang/StringBuffer.d.ts'
 import type { FieldPosition } from '../../../../java/text/FieldPosition.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ChineseDateFormat extends SimpleDateFormat {
     static ABBR_GENERIC_TZ: string;
     static ABBR_MONTH: string;
@@ -115,8 +114,8 @@ export class ChineseDateFormat extends SimpleDateFormat {
     static YEAR_QUARTER: string;
     static YEAR_WOY_FIELD: number;
     static ZONE_SKELETONS: string[];
-    static getAvailableLocales(): (Object | null)[];
-    static getAvailableULocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
+    static getAvailableULocales(): ULocale[];
     static getDateInstance(): DateFormat;
     static getDateInstance(paramarg0: Calendar, paramarg1: number): DateFormat;
     static getDateInstance(paramarg0: Calendar, paramarg1: number, paramarg2: ULocale): DateFormat;
@@ -160,5 +159,5 @@ export class ChineseDateFormat extends SimpleDateFormat {
     subFormat(arg0: StringBuffer, arg1: string, arg2: number, arg3: number, arg4: number, arg5: DisplayContext, arg6: FieldPosition, arg7: string, arg8: Calendar): void;
     subFormat(arg0: string, arg1: number, arg2: number, arg3: FieldPosition, arg4: DateFormatSymbols, arg5: Calendar): string;
     subFormat(arg0: string, arg1: number, arg2: number, arg3: number, arg4: DisplayContext, arg5: FieldPosition, arg6: string, arg7: Calendar): string;
-    subParse(arg0: string, arg1: number, arg2: string, arg3: number, arg4: boolean, arg5: boolean, arg6: (Object | null)[], arg7: Calendar): number;
+    subParse(arg0: string, arg1: number, arg2: string, arg3: number, arg4: boolean, arg5: boolean, arg6: boolean[], arg7: Calendar): number;
 }

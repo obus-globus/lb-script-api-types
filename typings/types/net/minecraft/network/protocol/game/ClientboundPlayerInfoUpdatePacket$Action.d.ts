@@ -14,7 +14,7 @@ export class ClientboundPlayerInfoUpdatePacket$Action extends Enum<ClientboundPl
     static UPDATE_LIST_ORDER: ClientboundPlayerInfoUpdatePacket$Action;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ClientboundPlayerInfoUpdatePacket$Action;
-    static values(): (Object | null)[];
+    static values(): ClientboundPlayerInfoUpdatePacket$Action[];
     private constructor(reader: ClientboundPlayerInfoUpdatePacket$Action$Reader, writer: ClientboundPlayerInfoUpdatePacket$Action$Writer)
     // private reader: ClientboundPlayerInfoUpdatePacket$Action$Reader;
     // private writer: ClientboundPlayerInfoUpdatePacket$Action$Writer;

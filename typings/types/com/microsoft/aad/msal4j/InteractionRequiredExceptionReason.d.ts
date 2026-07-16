@@ -10,7 +10,7 @@ export class InteractionRequiredExceptionReason extends Enum<InteractionRequired
     static USER_PASSWORD_EXPIRED: InteractionRequiredExceptionReason;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): InteractionRequiredExceptionReason;
-    static values(): (Object | null)[];
+    static values(): InteractionRequiredExceptionReason[];
     private constructor(arg2: string)
     // private error: string;
     name(): "NONE" | "MESSAGE_ONLY" | "BASIC_ACTION" | "ADDITIONAL_ACTION" | "CONSENT_REQUIRED" | "USER_PASSWORD_EXPIRED";

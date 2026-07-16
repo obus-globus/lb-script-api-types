@@ -27,15 +27,15 @@ import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemS
  */
 export class ArmorComparator extends Object implements Comparator<ArmorPiece> {
     static Companion: ArmorComparator$Companion;
-    static comparing(paramarg0: (param0: Object) => Object | null): (param0: Object) => boolean;
-    static comparing(paramarg0: (param0: Object) => Object | null, paramarg1: (param0: Object) => boolean): (param0: Object) => boolean;
-    static comparingDouble(paramarg0: (param0: Object) => number): (param0: Object) => boolean;
-    static comparingInt(paramarg0: (param0: Object) => number): (param0: Object) => boolean;
-    static comparingLong(paramarg0: (param0: Object) => number): (param0: Object) => boolean;
-    static naturalOrder(): (param0: Object) => boolean;
-    static nullsFirst(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
-    static nullsLast(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
-    static reverseOrder(): (param0: Object) => boolean;
+    static comparing(paramarg0: (param0: Object) => Object | null): (param0: Object | null, param1: Object | null) => number;
+    static comparing(paramarg0: (param0: Object) => Object | null, paramarg1: (param0: Object, param1: Object) => number): (param0: Object | null, param1: Object | null) => number;
+    static comparingDouble(paramarg0: (param0: Object) => number): (param0: Object | null, param1: Object | null) => number;
+    static comparingInt(paramarg0: (param0: Object) => number): (param0: Object | null, param1: Object | null) => number;
+    static comparingLong(paramarg0: (param0: Object) => number): (param0: Object | null, param1: Object | null) => number;
+    static naturalOrder(): (param0: Object | null, param1: Object | null) => number;
+    static nullsFirst(paramarg0: (param0: Object, param1: Object) => number): (param0: Object | null, param1: Object | null) => number;
+    static nullsLast(paramarg0: (param0: Object, param1: Object) => number): (param0: Object | null, param1: Object | null) => number;
+    static reverseOrder(): (param0: Object | null, param1: Object | null) => number;
     constructor(expectedDamage: number, armorKitParametersForSlot: ArmorKitParameters, durabilityThreshold: number)
     // private armorKitParametersForSlot: ArmorKitParameters;
     // private comparator: ComparatorChain<ArmorPiece>;
@@ -55,11 +55,11 @@ export class ArmorComparator extends Object implements Comparator<ArmorPiece> {
     // private getEnchantmentThreshold(itemStack: ItemStack): number;
     // private getThresholdedDamageReduction(itemStack: ItemStack): number;
     getThresholdedEnchantmentDamageReduction(itemStack: ItemStack): number;
-    reversed(): (param0: Object) => boolean;
-    thenComparing(arg0: (param0: Object) => boolean): (param0: Object) => boolean;
-    thenComparing<U extends Comparable<U>>(arg0: (param0: ArmorPiece) => U): (param0: Object) => boolean;
-    thenComparing<U extends unknown>(arg0: (param0: ArmorPiece) => U, arg1: (param0: Object) => boolean): (param0: Object) => boolean;
-    thenComparingDouble(arg0: (param0: ArmorPiece) => number): (param0: Object) => boolean;
-    thenComparingInt(arg0: (param0: ArmorPiece) => number): (param0: Object) => boolean;
-    thenComparingLong(arg0: (param0: ArmorPiece) => number): (param0: Object) => boolean;
+    reversed(): (param0: ArmorPiece, param1: ArmorPiece) => number;
+    thenComparing(arg0: (param0: ArmorPiece, param1: ArmorPiece) => number): (param0: ArmorPiece, param1: ArmorPiece) => number;
+    thenComparing<U extends Comparable<U>>(arg0: (param0: ArmorPiece) => U): (param0: ArmorPiece, param1: ArmorPiece) => number;
+    thenComparing<U extends unknown>(arg0: (param0: ArmorPiece) => U, arg1: (param0: U, param1: U) => number): (param0: ArmorPiece, param1: ArmorPiece) => number;
+    thenComparingDouble(arg0: (param0: ArmorPiece) => number): (param0: ArmorPiece, param1: ArmorPiece) => number;
+    thenComparingInt(arg0: (param0: ArmorPiece) => number): (param0: ArmorPiece, param1: ArmorPiece) => number;
+    thenComparingLong(arg0: (param0: ArmorPiece) => number): (param0: ArmorPiece, param1: ArmorPiece) => number;
 }

@@ -14,7 +14,7 @@ export class PredictMode extends Enum<PredictMode> implements Tagged {
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PredictMode;
-    static values(): (Object | null)[];
+    static values(): PredictMode[];
     private constructor(tag: string, predict: (param0: LivingEntity, param1: Vec3, param2: number) => Vec3)
     readonly predict: (param0: LivingEntity, param1: Vec3, param2: number) => Vec3;
     readonly tag: string;

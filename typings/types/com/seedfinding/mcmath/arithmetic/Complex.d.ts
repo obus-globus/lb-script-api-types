@@ -14,8 +14,6 @@ export class Complex extends Object {
     static of(paramarg0: BigDecimal, paramarg1: BigDecimal): Complex;
     static of(paramarg0: BigInteger): Complex;
     static of(paramarg0: BigInteger, paramarg1: BigInteger): Complex;
-    static of(paramarg0: number): Complex;
-    static of(paramarg0: number, paramarg1: number): Complex;
     constructor(arg0: Real, arg1: Real)
     readonly imaginary: Real;
     readonly real: Real;

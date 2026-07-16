@@ -22,5 +22,5 @@ export class Present<T extends unknown> extends Optional<T> {
     or(supplier: () => T): T;
     orNull(): T;
     toString(): string;
-    transform<V extends unknown>(function_: (param0: Object) => boolean): Optional<V>;
+    transform<V extends unknown>(function_: (param0: T) => V): Optional<V>;
 }

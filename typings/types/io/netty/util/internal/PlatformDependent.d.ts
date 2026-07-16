@@ -45,17 +45,14 @@ export class PlatformDependent extends Object {
     static freeMemory(paramarg0: number): void;
     static getAndAddInt(paramarg0: Object, paramarg1: number, paramarg2: number): number;
     static getByte(paramarg0: number[], paramarg1: number): number;
-    static getByte(paramarg0: number[], paramarg1: number): number;
     static getByte(paramarg0: number): number;
     static getClassLoader(paramarg0: Class<Object>): ClassLoader;
     static getContextClassLoader(): ClassLoader;
-    static getInt(paramarg0: number[], paramarg1: number): number;
     static getInt(paramarg0: number[], paramarg1: number): number;
     static getInt(paramarg0: Object, paramarg1: number): number;
     static getInt(paramarg0: number): number;
     static getLong(paramarg0: number[], paramarg1: number): number;
     static getLong(paramarg0: number): number;
-    static getLong(paramarg0: number[], paramarg1: number): number;
     static getObject(paramarg0: Object, paramarg1: number): Object;
     static getShort(paramarg0: number[], paramarg1: number): number;
     static getShort(paramarg0: number): number;

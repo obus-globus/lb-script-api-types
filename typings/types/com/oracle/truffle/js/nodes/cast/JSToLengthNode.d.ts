@@ -7,7 +7,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSToLengthNode extends JavaScriptBaseNode {
     static create(): JSToLengthNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doDouble(value: number, negativeBranch: InlinedBranchProfile, tooLargeBranch: InlinedBranchProfile): number;
     doInt(value: number, negativeBranch: InlinedBranchProfile): number;

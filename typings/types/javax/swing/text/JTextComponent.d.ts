@@ -37,6 +37,7 @@ import type { Document } from '../../../javax/swing/text/Document.d.ts'
 import type { Highlighter } from '../../../javax/swing/text/Highlighter.d.ts'
 import type { JTextComponent$ComposedTextCaret } from '../../../javax/swing/text/JTextComponent$ComposedTextCaret.d.ts'
 import type { JTextComponent$DropLocation } from '../../../javax/swing/text/JTextComponent$DropLocation.d.ts'
+import type { JTextComponent$KeyBinding } from '../../../javax/swing/text/JTextComponent$KeyBinding.d.ts'
 import type { JTextComponent$MutableCaretEvent } from '../../../javax/swing/text/JTextComponent$MutableCaretEvent.d.ts'
 import type { Keymap } from '../../../javax/swing/text/Keymap.d.ts'
 import type { NavigationFilter } from '../../../javax/swing/text/NavigationFilter.d.ts'
@@ -68,7 +69,7 @@ export abstract class JTextComponent extends JComponent implements Accessible, S
     static getDefaultLocale(): Locale;
     static getKeymap(paramarg0: string): Keymap;
     static isLightweightComponent(paramarg0: Component): boolean;
-    static loadKeymap(paramarg0: Keymap, paramarg1: (Object | null)[], paramarg2: (Object | null)[]): void;
+    static loadKeymap(paramarg0: Keymap, paramarg1: JTextComponent$KeyBinding[], paramarg2: Action[]): void;
     static removeKeymap(paramarg0: string): Keymap;
     static setDefaultLocale(paramarg0: Locale): void;
     constructor()

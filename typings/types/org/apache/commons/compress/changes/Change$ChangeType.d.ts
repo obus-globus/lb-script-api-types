@@ -8,7 +8,7 @@ export class Change$ChangeType extends Enum<Change$ChangeType> {
     static MOVE: Change$ChangeType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Change$ChangeType;
-    static values(): (Object | null)[];
+    static values(): Change$ChangeType[];
     private constructor()
     name(): "DELETE" | "ADD" | "MOVE" | "DELETE_DIR";
 }

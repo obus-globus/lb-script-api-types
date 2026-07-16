@@ -14,7 +14,7 @@ export class DurationUnit extends Enum<DurationUnit> implements Serializable {
     static getEntries(): DurationUnit[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DurationUnit;
-    static values(): (Object | null)[];
+    static values(): DurationUnit[];
     private constructor(timeUnit: TimeUnit)
     // private timeUnit: TimeUnit;
     /*not mapped: */ getTimeUnit$kotlin_stdlib(): TimeUnit;

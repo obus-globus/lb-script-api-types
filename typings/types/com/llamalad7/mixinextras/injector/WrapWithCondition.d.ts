@@ -3,7 +3,6 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { At } from '../../../../org/spongepowered/asm/mixin/injection/At.d.ts'
 import type { Slice } from '../../../../org/spongepowered/asm/mixin/injection/Slice.d.ts'
 export interface WrapWithCondition extends Annotation, Object{
-    constructor(allow: number, at: At[], expect: number, method: string[], remap: boolean, require: number, slice: Slice[])
     /*not mapped: */ allow(): number;
     /*not mapped: */ at(): At[];
     /*not mapped: */ expect(): number;

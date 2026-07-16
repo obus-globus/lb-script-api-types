@@ -43,7 +43,7 @@ export class SharedTypes_Legacy_ActorDamageCause extends Enum<SharedTypes_Legacy
     static getByValue(paramarg0: number, paramarg1: SharedTypes_Legacy_ActorDamageCause): SharedTypes_Legacy_ActorDamageCause;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SharedTypes_Legacy_ActorDamageCause;
-    static values(): (Object | null)[];
+    static values(): SharedTypes_Legacy_ActorDamageCause[];
     private constructor(arg2: number)
     private constructor(arg2: SharedTypes_Legacy_ActorDamageCause)
     readonly value: number;

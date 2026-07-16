@@ -3,7 +3,7 @@ import type { Pattern$CharPredicate } from '../../../java/util/regex/Pattern$Cha
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class Pattern$BitClass extends Object implements Pattern$BmpCharPredicate {
     constructor()
-    // private bits: (Object | null)[];
+    // private bits: boolean[];
     add(arg0: number, arg1: number): Pattern$BitClass;
     and(arg0: (param0: number) => boolean): (param0: number) => boolean;
     is(arg0: number): boolean;

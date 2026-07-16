@@ -6,7 +6,6 @@ import type { JSToIndexNode } from '../../../../../com/oracle/truffle/js/nodes/c
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class ConstructorBuiltins$GetArrayBufferMaxByteLengthOption extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doGeneric(options: Object, isObjectNode: IsObjectNode, getMaxByteLengthNode: PropertyGetNode, toIndexNode: JSToIndexNode): number;
     doUndefined(options: Object): number;

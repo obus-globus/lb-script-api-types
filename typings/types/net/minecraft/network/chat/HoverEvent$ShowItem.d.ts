@@ -1,4 +1,3 @@
-import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -6,7 +5,6 @@ import type { HoverEvent } from '../../../../net/minecraft/network/chat/HoverEve
 import type { HoverEvent$Action } from '../../../../net/minecraft/network/chat/HoverEvent$Action.d.ts'
 import type { ItemStackTemplate } from '../../../../net/minecraft/world/item/ItemStackTemplate.d.ts'
 export class HoverEvent$ShowItem extends Record implements HoverEvent {
-    static CODEC: Codec<HoverEvent>;
     static CODEC: MapCodec<HoverEvent$ShowItem>;
     constructor(item: ItemStackTemplate)
     // private item: ItemStackTemplate;

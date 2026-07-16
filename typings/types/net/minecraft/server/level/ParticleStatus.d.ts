@@ -10,7 +10,7 @@ export class ParticleStatus extends Enum<ParticleStatus> {
     static MINIMAL: ParticleStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ParticleStatus;
-    static values(): (Object | null)[];
+    static values(): ParticleStatus[];
     private constructor(id: number, key: string)
     // private caption: Component;
     // private id: number;

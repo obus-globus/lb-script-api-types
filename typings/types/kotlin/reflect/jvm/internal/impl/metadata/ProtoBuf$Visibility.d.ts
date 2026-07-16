@@ -12,7 +12,7 @@ export class ProtoBuf$Visibility extends Enum<ProtoBuf$Visibility> implements In
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: number): ProtoBuf$Visibility;
     static valueOf(paramarg0: string): ProtoBuf$Visibility;
-    static values(): (Object | null)[];
+    static values(): ProtoBuf$Visibility[];
     private constructor(arg2: number, arg3: number)
     // private value: number;
     getNumber(): number;

@@ -19,11 +19,10 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class TemporalPlainTimePrototypeBuiltinsFactory$JSTemporalPlainTimeUntilSinceNodeGen extends TemporalPlainTimePrototypeBuiltins$JSTemporalPlainTimeUntilSinceNode {
     static ARGUMENTS: string;
     static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
-    static create(paramcontext: JSContext, parambuiltin: JSBuiltin, paramsign: number, paramarguments: (Object | null)[]): TemporalPlainTimePrototypeBuiltins$JSTemporalPlainTimeUntilSinceNode;
+    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
+    static create(paramcontext: JSContext, parambuiltin: JSBuiltin, paramsign: number, paramarguments: JavaScriptNode[]): TemporalPlainTimePrototypeBuiltins$JSTemporalPlainTimeUntilSinceNode;
     static createBuiltin(paramctx: JSContext, parambuiltin: JSBuiltin, paramconstruct: boolean, paramnewTarget: boolean): JSBuiltinNode;
     static findBlockScopeNode(paramnode: Node): Node;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static toTemporalRoundingMode(paramoptions: JSDynamicObject, paramfallback: TruffleString, paramequalNode: TruffleString$EqualNode, paramgetOptionNode: TemporalGetOptionNode): TemporalUtil$RoundingMode;
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;

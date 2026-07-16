@@ -9,7 +9,7 @@ export class ClassInfo$Traversal extends Enum<ClassInfo$Traversal> {
     static SUPER: ClassInfo$Traversal;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClassInfo$Traversal;
-    static values(): (Object | null)[];
+    static values(): ClassInfo$Traversal[];
     private constructor(arg2: ClassInfo$Traversal, arg3: boolean, arg4: ClassInfo$SearchType)
     // private next: ClassInfo$Traversal;
     readonly searchType: ClassInfo$SearchType;

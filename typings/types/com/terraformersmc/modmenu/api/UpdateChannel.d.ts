@@ -8,7 +8,7 @@ export class UpdateChannel extends Enum<UpdateChannel> {
     static getUserPreference(): UpdateChannel;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): UpdateChannel;
-    static values(): (Object | null)[];
+    static values(): UpdateChannel[];
     private constructor()
     name(): "ALPHA" | "BETA" | "RELEASE";
 }

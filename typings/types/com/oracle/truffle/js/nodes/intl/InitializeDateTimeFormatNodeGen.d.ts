@@ -15,7 +15,6 @@ export class InitializeDateTimeFormatNodeGen extends InitializeDateTimeFormatNod
     static create(paramcontext: JSContext, paramrequired: InitializeDateTimeFormatNode$Required, paramdefaults: InitializeDateTimeFormatNode$Defaults): InitializeDateTimeFormatNode;
     static createInitalizeDateTimeFormatNode(paramcontext: JSContext, paramrequired: InitializeDateTimeFormatNode$Required, paramdefaults: InitializeDateTimeFormatNode$Defaults): InitializeDateTimeFormatNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, required: InitializeDateTimeFormatNode$Required, defaults: InitializeDateTimeFormatNode$Defaults)
     executeInit(arg0Value: JSDateTimeFormatObject, arg1Value: Object, arg2Value: Object): JSDateTimeFormatObject;
 }

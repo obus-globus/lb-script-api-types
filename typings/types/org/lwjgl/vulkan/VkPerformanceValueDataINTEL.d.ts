@@ -44,7 +44,6 @@ export class VkPerformanceValueDataINTEL extends Struct<VkPerformanceValueDataIN
     static nvalueString(paramarg0: number, paramarg1: ByteBuffer): void;
     static nvalueStringString(paramarg0: number): string;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     close(): void;

@@ -1,7 +1,6 @@
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { IntFunction } from '../../../../../java/util/function/IntFunction.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Direction } from '../../../../../net/minecraft/core/Direction.d.ts'
 import type { ResourceKey } from '../../../../../net/minecraft/resources/ResourceKey.d.ts'
@@ -26,16 +25,16 @@ import type { BlockEntityType } from '../../../../../net/minecraft/world/level/b
 import type { BlockBehaviour$Properties } from '../../../../../net/minecraft/world/level/block/state/BlockBehaviour$Properties.d.ts'
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { StateDefinition$Builder } from '../../../../../net/minecraft/world/level/block/state/StateDefinition$Builder.d.ts'
+import type { BooleanProperty } from '../../../../../net/minecraft/world/level/block/state/properties/BooleanProperty.d.ts'
 import type { PathComputationType } from '../../../../../net/minecraft/world/level/pathfinder/PathComputationType.d.ts'
 import type { BlockHitResult } from '../../../../../net/minecraft/world/phys/BlockHitResult.d.ts'
 import type { CollisionContext } from '../../../../../net/minecraft/world/phys/shapes/CollisionContext.d.ts'
 import type { VoxelShape } from '../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 export class BrewingStandBlock extends BaseEntityBlock {
     static BLOCK_STATE_REGISTRY: BlockState[];
-    static CODEC: MapCodec<Block>;
     static CODEC: MapCodec<BrewingStandBlock>;
     static FILTERED_REGISTRIES: ResourceKey<FeatureElement[]>[];
-    static HAS_BOTTLE: (Object | null)[];
+    static HAS_BOTTLE: BooleanProperty[];
     static INDESTRUCTIBLE: number;
     static INSTANT: number;
     static UPDATE_ALL: number;
@@ -57,7 +56,7 @@ export class BrewingStandBlock extends BaseEntityBlock {
     static boxZ(paramsizeXY: number, paramminZ: number, parammaxZ: number): VoxelShape;
     static boxZ(paramsizeX: number, paramsizeY: number, paramminZ: number, parammaxZ: number): VoxelShape;
     static boxZ(paramsizeX: number, paramminY: number, parammaxY: number, paramminZ: number, parammaxZ: number): VoxelShape;
-    static boxes(paramendInclusive: number, paramvoxelShapeFactory: (param0: number) => VoxelShape): (Object | null)[];
+    static boxes(paramendInclusive: number, paramvoxelShapeFactory: (param0: number) => VoxelShape): VoxelShape[];
     static byItem(paramitem: Item): Block;
     static canSupportCenter(paramlevel: LevelReader, parambelowPos: BlockPos, paramdirection: Direction): boolean;
     static canSupportRigidBlock(paramlevel: BlockGetter, parambelow: BlockPos): boolean;

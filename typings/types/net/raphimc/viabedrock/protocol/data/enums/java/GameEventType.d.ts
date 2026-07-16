@@ -18,7 +18,7 @@ export class GameEventType extends Enum<GameEventType> {
     static WIN_GAME: GameEventType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): GameEventType;
-    static values(): (Object | null)[];
+    static values(): GameEventType[];
     private constructor()
     name(): "NO_RESPAWN_BLOCK_AVAILABLE" | "START_RAINING" | "STOP_RAINING" | "CHANGE_GAME_MODE" | "WIN_GAME" | "DEMO_EVENT" | "ARROW_HIT_PLAYER" | "RAIN_LEVEL_CHANGE" | "THUNDER_LEVEL_CHANGE" | "PUFFER_FISH_STING" | "GUARDIAN_ELDER_EFFECT" | "IMMEDIATE_RESPAWN" | "LIMITED_CRAFTING" | "LEVEL_CHUNKS_LOAD_START";
 }

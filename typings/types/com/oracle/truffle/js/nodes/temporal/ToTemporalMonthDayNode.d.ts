@@ -14,7 +14,6 @@ import type { JSTemporalPlainMonthDayObject } from '../../../../../../com/oracle
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ToTemporalMonthDayNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(item: Object, optParam: Object): JSTemporalPlainMonthDayObject;
     iso8601CalendarProfile(item: Object, options: Object, errorBranch: InlinedBranchProfile, isObjectProfile: InlinedConditionProfile, iso8601CalendarProfile: InlinedConditionProfile, isObjectNode: IsObjectNode, getOptionsObject: GetOptionsObjectNode, getTemporalCalendar: GetTemporalCalendarIdentifierWithISODefaultNode, temporalGetOptionNode: TemporalGetOptionNode, monthDayFromFieldsNode: TemporalMonthDayFromFieldsNode, toJavaString: TruffleString$ToJavaStringNode, fromJavaString: TruffleString$FromJavaStringNode, stringEqual: TruffleString$EqualNode): JSTemporalPlainMonthDayObject;

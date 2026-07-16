@@ -25,28 +25,21 @@ export class VkPhysicalDeviceDriverPropertiesKHR extends VkPhysicalDeviceDriverP
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceDriverPropertiesKHR;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceDriverPropertiesKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceDriverProperties;
     static create(paramarg0: number): VkPhysicalDeviceDriverProperties;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceDriverPropertiesKHR;
     static create(paramarg0: number): VkPhysicalDeviceDriverPropertiesKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceDriverProperties;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceDriverPropertiesKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceDriverProperties;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceDriverProperties;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceDriverPropertiesKHR;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceDriverPropertiesKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nconformanceVersion(paramarg0: number): VkConformanceVersion;
     static ndriverID(paramarg0: number): number;
     static ndriverInfo(paramarg0: number): ByteBuffer;
@@ -57,7 +50,6 @@ export class VkPhysicalDeviceDriverPropertiesKHR extends VkPhysicalDeviceDriverP
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

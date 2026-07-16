@@ -71,7 +71,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class GraalJSTranslator extends TranslatorNodeVisitor<LexicalContext, JavaScriptNode> {
     static ARGUMENTS: string;
     static DIR__: string;
-    static EMPTY_NODE_ARRAY: (Object | null)[];
+    static EMPTY_NODE_ARRAY: JavaScriptNode[];
     static FILE__: string;
     static IMPORT: string;
     static IMPORT_META: string;

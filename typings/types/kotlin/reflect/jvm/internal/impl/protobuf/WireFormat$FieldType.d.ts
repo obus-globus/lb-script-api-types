@@ -23,7 +23,7 @@ export class WireFormat$FieldType extends Enum<WireFormat$FieldType> {
     static UINT64: WireFormat$FieldType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): WireFormat$FieldType;
-    static values(): (Object | null)[];
+    static values(): WireFormat$FieldType[];
     constructor(arg2: WireFormat$JavaType, arg3: number, arg4: any)
     readonly javaType: WireFormat$JavaType;
     readonly wireType: number;

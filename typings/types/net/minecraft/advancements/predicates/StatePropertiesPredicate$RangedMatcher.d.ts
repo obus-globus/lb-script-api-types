@@ -10,9 +10,7 @@ import type { StateHolder } from '../../../../net/minecraft/world/level/block/st
 import type { Property } from '../../../../net/minecraft/world/level/block/state/properties/Property.d.ts'
 export class StatePropertiesPredicate$RangedMatcher extends Record implements StatePropertiesPredicate$ValueMatcher {
     static CODEC: Codec<StatePropertiesPredicate$RangedMatcher>;
-    static CODEC: Codec<StatePropertiesPredicate$ValueMatcher>;
     static STREAM_CODEC: StreamCodec<ByteBuf, StatePropertiesPredicate$RangedMatcher>;
-    static STREAM_CODEC: StreamCodec<ByteBuf, StatePropertiesPredicate$ValueMatcher>;
     private constructor(minValue: Optional<string>, maxValue: Optional<string>)
     // private maxValue: Optional<string>;
     // private minValue: Optional<string>;

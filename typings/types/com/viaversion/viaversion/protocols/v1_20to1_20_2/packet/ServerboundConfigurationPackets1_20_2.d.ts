@@ -14,7 +14,7 @@ export class ServerboundConfigurationPackets1_20_2 extends Enum<ServerboundConfi
     static RESOURCE_PACK: ServerboundConfigurationPackets1_20_2;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ServerboundConfigurationPackets1_20_2;
-    static values(): (Object | null)[];
+    static values(): ServerboundConfigurationPackets1_20_2[];
     private constructor()
     direction(): Direction;
     getId(): number;

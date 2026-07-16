@@ -26,7 +26,7 @@ export class AgentActionType extends Enum<AgentActionType> {
     static getByValue(paramarg0: number, paramarg1: AgentActionType): AgentActionType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AgentActionType;
-    static values(): (Object | null)[];
+    static values(): AgentActionType[];
     private constructor(arg2: number)
     private constructor(arg2: AgentActionType)
     readonly value: number;

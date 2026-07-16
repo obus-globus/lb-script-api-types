@@ -7,7 +7,7 @@ export class TimeZoneFormat$TimeType extends Enum<TimeZoneFormat$TimeType> {
     static UNKNOWN: TimeZoneFormat$TimeType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TimeZoneFormat$TimeType;
-    static values(): (Object | null)[];
+    static values(): TimeZoneFormat$TimeType[];
     private constructor()
     name(): "UNKNOWN" | "STANDARD" | "DAYLIGHT";
 }

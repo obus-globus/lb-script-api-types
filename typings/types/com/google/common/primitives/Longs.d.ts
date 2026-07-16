@@ -7,7 +7,7 @@ export class Longs extends Object {
     static MAX_POWER_OF_TWO: number;
     static asList(...parambackingArray: number[]): number[];
     static compare(parama: number, paramb: number): number;
-    static concat(...paramarrays: (Object | null)[]): number[];
+    static concat(...paramarrays: number[][]): number[];
     static constrainToRange(paramvalue: number, parammin: number, parammax: number): number;
     static contains(paramarray: number[], paramtarget: number): boolean;
     static ensureCapacity(paramarray: number[], paramminLength: number, parampadding: number): number[];
@@ -18,7 +18,7 @@ export class Longs extends Object {
     static indexOf(paramarray: number[], paramtarget: number[]): number;
     static join(paramseparator: string, ...paramarray: number[]): string;
     static lastIndexOf(paramarray: number[], paramtarget: number): number;
-    static lexicographicalComparator(): (param0: Object) => boolean;
+    static lexicographicalComparator(): (param0: number[], param1: number[]) => number;
     static max(...paramarray: number[]): number;
     static min(...paramarray: number[]): number;
     static reverse(paramarray: number[]): void;

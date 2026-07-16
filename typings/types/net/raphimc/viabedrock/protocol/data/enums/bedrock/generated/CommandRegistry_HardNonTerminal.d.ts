@@ -101,7 +101,7 @@ export class CommandRegistry_HardNonTerminal extends Enum<CommandRegistry_HardNo
     static getByValue(paramarg0: number, paramarg1: CommandRegistry_HardNonTerminal): CommandRegistry_HardNonTerminal;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CommandRegistry_HardNonTerminal;
-    static values(): (Object | null)[];
+    static values(): CommandRegistry_HardNonTerminal[];
     private constructor(arg2: number)
     private constructor(arg2: CommandRegistry_HardNonTerminal)
     readonly value: number;

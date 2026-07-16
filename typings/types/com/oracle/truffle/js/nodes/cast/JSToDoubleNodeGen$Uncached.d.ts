@@ -5,7 +5,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSToDoubleNodeGen$Uncached extends JSToDoubleNode implements UnadoptableNode {
     static create(): JSToDoubleNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     executeDouble(arg0Value: Object): number;
 }

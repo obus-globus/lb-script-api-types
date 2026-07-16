@@ -13,7 +13,7 @@ export class BiomeTemperatureCategory extends Enum<BiomeTemperatureCategory> {
     static getByValue(paramarg0: number, paramarg1: BiomeTemperatureCategory): BiomeTemperatureCategory;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BiomeTemperatureCategory;
-    static values(): (Object | null)[];
+    static values(): BiomeTemperatureCategory[];
     private constructor(arg2: number)
     private constructor(arg2: BiomeTemperatureCategory)
     readonly value: number;

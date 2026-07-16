@@ -1,4 +1,3 @@
-import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BoundedFloatFunction } from '../../../../../net/minecraft/util/BoundedFloatFunction.d.ts'
 import type { CubicSpline } from '../../../../../net/minecraft/util/CubicSpline.d.ts'
@@ -10,7 +9,6 @@ import type { DensityFunction$Visitor } from '../../../../../net/minecraft/world
 import type { DensityFunctions$Spline$Coordinate } from '../../../../../net/minecraft/world/level/levelgen/DensityFunctions$Spline$Coordinate.d.ts'
 import type { DensityFunctions$Spline$Point } from '../../../../../net/minecraft/world/level/levelgen/DensityFunctions$Spline$Point.d.ts'
 export class DensityFunctions$Spline extends Object implements DensityFunction {
-    static CODEC: Codec<DensityFunction>;
     static CODEC: KeyDispatchDataCodec<DensityFunctions$Spline>;
     constructor(spline: CubicSpline<DensityFunctions$Spline$Coordinate>)
     // private sampler: BoundedFloatFunction<DensityFunctions$Spline$Point>;

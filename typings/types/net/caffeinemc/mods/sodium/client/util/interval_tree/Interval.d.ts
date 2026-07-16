@@ -4,8 +4,8 @@ import type { Comparable } from '../../../../../../../java/lang/Comparable.d.ts'
 import type { Interval$Bounded } from '../../../../../../../net/caffeinemc/mods/sodium/client/util/interval_tree/Interval$Bounded.d.ts'
 import type { Interval$Unbounded } from '../../../../../../../net/caffeinemc/mods/sodium/client/util/interval_tree/Interval$Unbounded.d.ts'
 export abstract class Interval<T extends Comparable<T>> extends Object {
-    static sweepLeftToRight: (param0: Object) => boolean;
-    static sweepRightToLeft: (param0: Object) => boolean;
+    static sweepLeftToRight: (param0: Interval<any>, param1: Interval<any>) => number;
+    static sweepRightToLeft: (param0: Interval<any>, param1: Interval<any>) => number;
     constructor()
     constructor(arg0: T, arg1: T, arg2: Interval$Bounded)
     constructor(arg0: T, arg1: Interval$Unbounded)

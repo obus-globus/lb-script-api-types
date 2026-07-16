@@ -5,10 +5,10 @@ import type { CharSequence } from '../../../../../java/lang/CharSequence.d.ts'
 import type { Iterator } from '../../../../../java/util/Iterator.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class ReadOnlyHttpHeaders$ReadOnlyIterator extends Object implements Iterator<Map$Entry<CharSequence, CharSequence>>, Map$Entry<CharSequence, CharSequence> {
-    static comparingByKey(): (param0: Object) => boolean;
-    static comparingByKey(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
-    static comparingByValue(): (param0: Object) => boolean;
-    static comparingByValue(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
+    static comparingByKey(): (param0: Map$Entry<Object, Object>, param1: Map$Entry<Object, Object>) => number;
+    static comparingByKey(paramarg0: (param0: Object, param1: Object) => number): (param0: Map$Entry<Object, Object>, param1: Map$Entry<Object, Object>) => number;
+    static comparingByValue(): (param0: Map$Entry<Object, Object>, param1: Map$Entry<Object, Object>) => number;
+    static comparingByValue(paramarg0: (param0: Object, param1: Object) => number): (param0: Map$Entry<Object, Object>, param1: Map$Entry<Object, Object>) => number;
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
     constructor(null_: (Object | null)[], arg1: any)
     readonly key: CharSequence;

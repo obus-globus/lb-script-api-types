@@ -10,9 +10,9 @@ import type { HolesObjectArray } from '../../../../../../../com/oracle/truffle/j
 import type { JSDynamicObject } from '../../../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class HolesIntArray extends AbstractContiguousIntArray {
-    static EMPTY_OBJECT_ARRAY: (Object | null)[];
+    static EMPTY_OBJECT_ARRAY: Object[];
     static HOLE_VALUE: number;
-    static createConstantArray(paramelements: (Object | null)[]): AbstractConstantArray;
+    static createConstantArray(paramelements: Object[]): AbstractConstantArray;
     static createConstantEmptyArray(): AbstractConstantArray;
     static isHoleValue(paramvalue: number): boolean;
     static isSupportedZeroBased(paramobject: JSDynamicObject, paramindex: number): boolean;

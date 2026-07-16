@@ -16,7 +16,7 @@ export class GlobalCommonJSRequireBuiltins$GlobalRequire extends Enum<GlobalComm
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): GlobalCommonJSRequireBuiltins$GlobalRequire;
-    static values(): (Object | null)[];
+    static values(): GlobalCommonJSRequireBuiltins$GlobalRequire[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

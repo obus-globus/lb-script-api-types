@@ -6,6 +6,7 @@ import type { GameTickEvent } from '../../../../../../net/ccbluex/liquidbounce/e
 import type { PipelineEvent } from '../../../../../../net/ccbluex/liquidbounce/event/events/PipelineEvent.d.ts'
 import type { Proxy } from '../../../../../../net/ccbluex/liquidbounce/features/misc/proxy/Proxy.d.ts'
 import type { Connection } from '../../../../../../net/minecraft/network/Connection.d.ts'
+import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Logger } from '../../../../../../org/apache/logging/log4j/Logger.d.ts'
 /**
  * Proxy Manager
@@ -24,11 +25,13 @@ export class ProxyManager extends Config implements EventListener {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/ProxyManager.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/ProxyManager.kt:52}
      */
     readonly currentProxy: Proxy | null;
+    readonly debugDisplayName: Component;
     // private logger: Logger;
     // private pipelineHandler: EventHook<PipelineEvent>;
     // private proxies: Proxy[];
     /*not mapped: */ getProxies$net_ccbluex_liquidbounce(): Proxy[];
     proxy: Proxy;
+    readonly running: boolean;
     addClientConnection(connection: Connection): void;
     children(): EventListener[];
     parent(): EventListener | null;

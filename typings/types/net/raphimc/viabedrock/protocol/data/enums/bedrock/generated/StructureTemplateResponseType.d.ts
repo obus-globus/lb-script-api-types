@@ -11,7 +11,7 @@ export class StructureTemplateResponseType extends Enum<StructureTemplateRespons
     static getByValue(paramarg0: number, paramarg1: StructureTemplateResponseType): StructureTemplateResponseType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): StructureTemplateResponseType;
-    static values(): (Object | null)[];
+    static values(): StructureTemplateResponseType[];
     private constructor(arg2: number)
     private constructor(arg2: StructureTemplateResponseType)
     readonly value: number;

@@ -21,7 +21,7 @@ export class EntityDataTypes1_9 extends Enum<EntityDataTypes1_9> implements Enti
     static create(paramarg0: number, paramarg1: Type<Object>): EntityDataType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): EntityDataTypes1_9;
-    static values(): (Object | null)[];
+    static values(): EntityDataTypes1_9[];
     private constructor(arg2: Type<Object>)
     // private type: Type<Object>;
     type(): Type<Object>;

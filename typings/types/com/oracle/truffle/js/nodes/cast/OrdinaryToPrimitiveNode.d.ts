@@ -7,7 +7,6 @@ export abstract class OrdinaryToPrimitiveNode extends JavaScriptBaseNode {
     static create(): OrdinaryToPrimitiveNode;
     static isJavaArray(paramobject: Object, paraminterop: InteropLibrary): boolean;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(object: Object, hint: JSToPrimitiveNode$Hint): Object;
 }

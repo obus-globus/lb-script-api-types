@@ -11,7 +11,7 @@ export class EntityAnchorArgument$Anchor extends Enum<EntityAnchorArgument$Ancho
     static getByName(paramname: string): EntityAnchorArgument$Anchor;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): EntityAnchorArgument$Anchor;
-    static values(): (Object | null)[];
+    static values(): EntityAnchorArgument$Anchor[];
     private constructor(name: string, transform: (param0: Vec3, param1: Entity) => Vec3)
     // private name: string;
     // private transform: (param0: Vec3, param1: Entity) => Vec3;

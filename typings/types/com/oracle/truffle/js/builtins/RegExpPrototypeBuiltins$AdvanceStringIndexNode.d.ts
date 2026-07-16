@@ -3,7 +3,6 @@ import type { TruffleString } from '../../../../../com/oracle/truffle/api/string
 import type { JavaScriptBaseNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptBaseNode.d.ts'
 export abstract class RegExpPrototypeBuiltins$AdvanceStringIndexNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(node: Node, s: TruffleString, index: number, unicode: boolean): number;
 }

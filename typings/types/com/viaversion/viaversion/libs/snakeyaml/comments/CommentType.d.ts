@@ -7,7 +7,7 @@ export class CommentType extends Enum<CommentType> {
     static IN_LINE: CommentType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CommentType;
-    static values(): (Object | null)[];
+    static values(): CommentType[];
     private constructor()
     name(): "BLANK_LINE" | "BLOCK" | "IN_LINE";
 }

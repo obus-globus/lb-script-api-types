@@ -8,7 +8,7 @@ export class DisplayOptions$SubstituteHandling extends Enum<DisplayOptions$Subst
     static VALUES: DisplayOptions$SubstituteHandling[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): DisplayOptions$SubstituteHandling;
-    static values(): (Object | null)[];
+    static values(): DisplayOptions$SubstituteHandling[];
     private constructor()
     name(): "UNDEFINED" | "SUBSTITUTE" | "NO_SUBSTITUTE";
 }

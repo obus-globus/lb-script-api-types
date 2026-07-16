@@ -1,7 +1,6 @@
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Predicate } from '../../../../../java/util/function/Predicate.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Minecraft } from '../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { AbstractContainerWidget } from '../../../../../net/minecraft/client/gui/components/AbstractContainerWidget.d.ts'
@@ -75,7 +74,7 @@ export abstract class AbstractSelectionList<E extends AbstractSelectionList$Entr
     setFocused(focused: GuiEventListener): void;
     setScrollAmount(scrollAmount: number): void;
     setSelected(selected: E): void;
-    sort(comparator: (param0: Object) => boolean): void;
+    sort(comparator: (param0: E, param1: E) => number): void;
     swap(firstIndex: number, secondIndex: number): void;
     updateSize(width: number, layout: HeaderAndFooterLayout): void;
     updateSizeAndPosition(width: number, height: number, y: number): void;

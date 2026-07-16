@@ -4,7 +4,6 @@ import type { JSToIntegerAsLongNode } from '../../../../../../com/oracle/truffle
 export class ErrorStackTraceLimitNodeGen extends ErrorStackTraceLimitNode {
     static create(): ErrorStackTraceLimitNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private state_0_: number;
     // private toInteger_: JSToIntegerAsLongNode;

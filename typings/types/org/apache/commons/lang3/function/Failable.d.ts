@@ -32,8 +32,6 @@ import type { FailableSupplier } from '../../../../../org/apache/commons/lang3/f
 import type { Streams$FailableStream } from '../../../../../org/apache/commons/lang3/stream/Streams$FailableStream.d.ts'
 export class Failable extends Object {
     static accept(paramarg0: (param0: number) => void, paramarg1: number): void;
-    static accept(paramarg0: (param0: number) => void, paramarg1: number): void;
-    static accept(paramarg0: (param0: number) => void, paramarg1: number): void;
     static accept(paramarg0: (param0: Object | null) => void, paramarg1: Object | null): void;
     static accept(paramarg0: (param0: Object | null, param1: Object | null) => void, paramarg1: Object | null, paramarg2: Object | null): void;
     static apply(paramarg0: (param0: Object | null) => Object | null, paramarg1: Object | null): Object | null;
@@ -64,7 +62,7 @@ export class Failable extends Object {
     static stream(paramarg0: Stream<Object>): Streams$FailableStream<Object>;
     static test(paramarg0: (param0: Object | null) => boolean, paramarg1: Object | null): boolean;
     static test(paramarg0: (param0: Object | null, param1: Object | null) => boolean, paramarg1: Object | null, paramarg2: Object | null): boolean;
-    static tryWithResources(paramarg0: () => void, paramarg1: (param0: Throwable) => void, paramarg2: Object | null): void;
-    static tryWithResources(paramarg0: () => void, paramarg1: Object | null): void;
+    static tryWithResources(paramarg0: () => void, paramarg1: (param0: Throwable) => void, paramarg2: () => void[]): void;
+    static tryWithResources(paramarg0: () => void, paramarg1: () => void[]): void;
     private constructor()
 }

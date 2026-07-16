@@ -8,7 +8,7 @@ export class TrialSpawner$FlameParticle extends Enum<TrialSpawner$FlameParticle>
     static decode(paramdata: number): TrialSpawner$FlameParticle;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TrialSpawner$FlameParticle;
-    static values(): (Object | null)[];
+    static values(): TrialSpawner$FlameParticle[];
     private constructor(particleType: SimpleParticleType)
     particleType: SimpleParticleType;
     encode(): number;

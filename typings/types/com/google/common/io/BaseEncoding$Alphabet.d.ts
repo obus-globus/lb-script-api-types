@@ -9,7 +9,7 @@ export class BaseEncoding$Alphabet extends Object {
     // private ignoreCase: boolean;
     // private mask: number;
     // private name: string;
-    // private validPadding: (Object | null)[];
+    // private validPadding: boolean[];
     canDecode(ch: string): boolean;
     decode(ch: string): number;
     encode(bits: number): string;

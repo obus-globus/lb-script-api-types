@@ -17,7 +17,7 @@ export class ActorSwingSource extends Enum<ActorSwingSource> {
     static getByValue(paramarg0: number, paramarg1: ActorSwingSource): ActorSwingSource;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ActorSwingSource;
-    static values(): (Object | null)[];
+    static values(): ActorSwingSource[];
     private constructor(arg2: number)
     private constructor(arg2: ActorSwingSource)
     readonly value: number;

@@ -40,7 +40,6 @@ export class VkPhysicalDeviceMemoryProperties extends Struct<VkPhysicalDeviceMem
     static nmemoryTypes(paramarg0: number, paramarg1: number): VkMemoryType;
     static nmemoryTypes(paramarg0: number): (Object | null)[];
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     close(): void;

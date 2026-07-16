@@ -10,7 +10,6 @@ export class Duration extends Object implements Comparable<Duration> {
 // (invalid TS: name contains '-')     static constructor-impl(paramarg0: number): number;
 // (invalid TS: name contains '-')     static div-LRDsOJo(paramarg0: number, paramarg1: number): number;
 // (invalid TS: name contains '-')     static div-UwyO8pc(paramarg0: number, paramarg1: number): number;
-// (invalid TS: name contains '-')     static div-UwyO8pc(paramarg0: number, paramarg1: number): number;
 // (invalid TS: name contains '-')     static equals-impl(paramarg0: number, paramarg1: Object): boolean;
 // (invalid TS: name contains '-')     static equals-impl0(paramarg0: number, paramarg1: number): boolean;
 // (invalid TS: name contains '-')     static getAbsoluteValue-UwyO8pc(paramarg0: number): number;
@@ -32,7 +31,6 @@ export class Duration extends Object implements Comparable<Duration> {
 // (invalid TS: name contains '-')     static isPositive-impl(paramarg0: number): boolean;
 // (invalid TS: name contains '-')     static minus-LRDsOJo(paramarg0: number, paramarg1: number): number;
 // (invalid TS: name contains '-')     static plus-LRDsOJo(paramarg0: number, paramarg1: number): number;
-// (invalid TS: name contains '-')     static times-UwyO8pc(paramarg0: number, paramarg1: number): number;
 // (invalid TS: name contains '-')     static times-UwyO8pc(paramarg0: number, paramarg1: number): number;
 // (invalid TS: name contains '-')     static toComponents-impl(paramarg0: number, paramarg1: (param0: Object, param1: Object) => Object | null): Object | null;
 // (invalid TS: name contains '-')     static toComponents-impl(paramarg0: number, paramarg1: (param0: Object, param1: Object, param2: Object) => Object | null): Object | null;

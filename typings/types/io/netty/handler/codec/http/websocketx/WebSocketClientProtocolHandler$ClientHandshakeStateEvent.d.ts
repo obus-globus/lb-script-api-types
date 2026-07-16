@@ -7,7 +7,7 @@ export class WebSocketClientProtocolHandler$ClientHandshakeStateEvent extends En
     static HANDSHAKE_TIMEOUT: WebSocketClientProtocolHandler$ClientHandshakeStateEvent;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): WebSocketClientProtocolHandler$ClientHandshakeStateEvent;
-    static values(): (Object | null)[];
+    static values(): WebSocketClientProtocolHandler$ClientHandshakeStateEvent[];
     private constructor()
     name(): "HANDSHAKE_TIMEOUT" | "HANDSHAKE_ISSUED" | "HANDSHAKE_COMPLETE";
 }

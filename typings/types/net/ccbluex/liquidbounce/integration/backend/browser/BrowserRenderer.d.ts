@@ -11,6 +11,7 @@ import type { ScreenRenderEvent } from '../../../../../../net/ccbluex/liquidboun
 import type { BrowserTexture } from '../../../../../../net/ccbluex/liquidbounce/integration/backend/BrowserTexture.d.ts'
 import type { Browser } from '../../../../../../net/ccbluex/liquidbounce/integration/backend/browser/Browser.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
+import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
 /**
  * Renders the browser tab on the screen.
  *
@@ -21,10 +22,12 @@ import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/clien
 export class BrowserRenderer extends Object implements AutoCloseable, EventListener {
     constructor(browser: Browser)
     readonly browser: Browser;
+    readonly debugDisplayName: Component;
     // private gameRenderHandler: EventHook<GameRenderEvent>;
     // private overlayRenderHandler: EventHook<OverlayRenderEvent>;
     // private rendered: boolean;
     // private resourceReloadHandler: EventHook<ResourceReloadEvent>;
+    readonly running: boolean;
     // private screenHandler: EventHook<ScreenEvent>;
     // private screenRenderHandler: EventHook<ScreenRenderEvent>;
     // private shouldReload: boolean;

@@ -14,7 +14,7 @@ export class BackendCreationException$Reason extends Enum<BackendCreationExcepti
     static VULKAN_NO_GRAPHICS_QUEUE: BackendCreationException$Reason;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): BackendCreationException$Reason;
-    static values(): (Object | null)[];
+    static values(): BackendCreationException$Reason[];
     private constructor(key: string)
     // private displayName: string;
     displayName(): string;

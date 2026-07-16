@@ -20,7 +20,6 @@ export class LocalDateKt extends Object {
     static minus(paramarg0: LocalDate, paramarg1: number, paramarg2: DateTimeUnit$DateBased): LocalDate;
     static minus(paramarg0: LocalDate, paramarg1: DatePeriod): LocalDate;
     static minus(paramarg0: LocalDate, paramarg1: DateTimeUnit$DateBased): LocalDate;
-    static minus(paramarg0: LocalDate, paramarg1: number, paramarg2: DateTimeUnit$DateBased): LocalDate;
     static next(paramarg0: LocalDate, paramarg1: DayOfWeek): LocalDate;
     static nextOrSame(paramarg0: LocalDate, paramarg1: DayOfWeek): LocalDate;
     static plus(paramarg0: LocalDate, paramarg1: number, paramarg2: DateTimeUnit$DateBased): LocalDate;

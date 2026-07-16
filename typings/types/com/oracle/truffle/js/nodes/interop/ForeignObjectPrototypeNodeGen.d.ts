@@ -7,7 +7,6 @@ export class ForeignObjectPrototypeNodeGen extends ForeignObjectPrototypeNode {
     static create(): ForeignObjectPrototypeNode;
     static getUncached(): ForeignObjectPrototypeNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private state_0_: number;
     // private truffleObject0_cache: ForeignObjectPrototypeNodeGen$TruffleObject0Data;

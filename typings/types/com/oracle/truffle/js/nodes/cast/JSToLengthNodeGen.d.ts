@@ -5,7 +5,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSToLengthNodeGen extends JSToLengthNode {
     static create(): JSToLengthNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private object_toNumberNode_: JSToNumberNode;
     // private state_0_: number;

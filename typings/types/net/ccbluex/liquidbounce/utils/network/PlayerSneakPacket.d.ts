@@ -16,7 +16,7 @@ export class PlayerSneakPacket extends Enum<PlayerSneakPacket> implements Legacy
     static getEntries(): PlayerSneakPacket[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PlayerSneakPacket;
-    static values(): (Object | null)[];
+    static values(): PlayerSneakPacket[];
     private constructor(sneaking: boolean)
     readonly packetType: ServerboundPackets1_21_5;
     readonly protocol: Class<Protocol1_21_5To1_21_6>;

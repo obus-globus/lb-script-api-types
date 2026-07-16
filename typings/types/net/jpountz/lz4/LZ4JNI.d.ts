@@ -4,6 +4,6 @@ import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class LZ4JNI extends Enum<LZ4JNI> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LZ4JNI;
-    static values(): (Object | null)[];
+    static values(): LZ4JNI[];
     private constructor()
 }

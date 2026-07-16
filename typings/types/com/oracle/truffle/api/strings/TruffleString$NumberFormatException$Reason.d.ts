@@ -11,7 +11,7 @@ export class TruffleString$NumberFormatException$Reason extends Enum<TruffleStri
     static UNSUPPORTED_RADIX: TruffleString$NumberFormatException$Reason;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TruffleString$NumberFormatException$Reason;
-    static values(): (Object | null)[];
+    static values(): TruffleString$NumberFormatException$Reason[];
     private constructor(message: string)
     readonly message: string;
     getMessage(): string;

@@ -7,9 +7,9 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export class PaddingStackBatchifier extends Object implements Batchifier {
     static STACK: Batchifier;
     static builder(): PaddingStackBatchifier$Builder;
-    static findMaxSize(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): number;
+    static findMaxSize(paramarg0: (Object | null)[][], paramarg1: number, paramarg2: number): number;
     static fromString(paramarg0: string): Batchifier;
-    static padArrays(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number, paramarg3: NDArray, paramarg4: number): number[];
+    static padArrays(paramarg0: (Object | null)[][], paramarg1: number, paramarg2: number, paramarg3: NDArray, paramarg4: number): number[];
     constructor(arg0: PaddingStackBatchifier$Builder, arg1: any)
     // private arraysToPad: number[];
     // private dimsToPad: number[];

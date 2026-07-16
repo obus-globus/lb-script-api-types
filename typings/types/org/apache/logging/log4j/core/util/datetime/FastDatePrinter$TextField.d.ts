@@ -3,7 +3,7 @@ import type { Calendar } from '../../../../../../../java/util/Calendar.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { FastDatePrinter$Rule } from '../../../../../../../org/apache/logging/log4j/core/util/datetime/FastDatePrinter$Rule.d.ts'
 export class FastDatePrinter$TextField extends Object implements FastDatePrinter$Rule {
-    static EMPTY_ARRAY: (Object | null)[];
+    static EMPTY_ARRAY: FastDatePrinter$Rule[];
     constructor(field: number, values: string[])
     // private mField: number;
     // private mValues: string[];

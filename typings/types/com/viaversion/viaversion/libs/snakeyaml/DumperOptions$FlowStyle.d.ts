@@ -7,7 +7,7 @@ export class DumperOptions$FlowStyle extends Enum<DumperOptions$FlowStyle> {
     static FLOW: DumperOptions$FlowStyle;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DumperOptions$FlowStyle;
-    static values(): (Object | null)[];
+    static values(): DumperOptions$FlowStyle[];
     private constructor(arg2: boolean)
     // private styleBoolean: boolean;
     toString(): string;

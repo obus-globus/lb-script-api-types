@@ -8,7 +8,7 @@ export class OptionalBoolean extends Enum<OptionalBoolean> {
     static TRUE: OptionalBoolean;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): OptionalBoolean;
-    static values(): (Object | null)[];
+    static values(): OptionalBoolean[];
     private constructor()
     orElse(arg0: boolean): boolean;
     orElseGet(arg0: () => boolean): boolean;

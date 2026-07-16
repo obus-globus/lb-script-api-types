@@ -7,7 +7,7 @@ export class Logger$Level extends Enum<Logger$Level> {
     static WARNING: Logger$Level;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Logger$Level;
-    static values(): (Object | null)[];
+    static values(): Logger$Level[];
     private constructor(arg2: System$Logger$Level)
     // private level: System$Logger$Level;
     name(): "WARNING" | "DEBUG";

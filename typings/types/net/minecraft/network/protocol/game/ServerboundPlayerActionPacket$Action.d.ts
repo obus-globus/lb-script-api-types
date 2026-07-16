@@ -12,7 +12,7 @@ export class ServerboundPlayerActionPacket$Action extends Enum<ServerboundPlayer
     static SWAP_ITEM_WITH_OFFHAND: ServerboundPlayerActionPacket$Action;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ServerboundPlayerActionPacket$Action;
-    static values(): (Object | null)[];
+    static values(): ServerboundPlayerActionPacket$Action[];
     private constructor()
     name(): "START_DESTROY_BLOCK" | "ABORT_DESTROY_BLOCK" | "STOP_DESTROY_BLOCK" | "DROP_ALL_ITEMS" | "DROP_ITEM" | "RELEASE_USE_ITEM" | "SWAP_ITEM_WITH_OFFHAND" | "STAB";
 }

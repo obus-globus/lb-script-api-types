@@ -7,7 +7,7 @@ export class StructureCheckResult extends Enum<StructureCheckResult> {
     static START_PRESENT: StructureCheckResult;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): StructureCheckResult;
-    static values(): (Object | null)[];
+    static values(): StructureCheckResult[];
     private constructor()
     name(): "START_PRESENT" | "START_NOT_PRESENT" | "CHUNK_LOAD_NEEDED";
 }

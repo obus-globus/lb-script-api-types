@@ -2,6 +2,5 @@ import type { ExportLibrary } from '../../../../../com/oracle/truffle/api/librar
 import type { Annotation } from '../../../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface ExportLibrary$Repeat extends Annotation, Object{
-    constructor(...value: ExportLibrary[])
     /*not mapped: */ value(): ExportLibrary[];
 }

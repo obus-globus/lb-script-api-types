@@ -6,7 +6,7 @@ export class TransactionContext$Result extends Enum<TransactionContext$Result> {
     static COMMITTED: TransactionContext$Result;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TransactionContext$Result;
-    static values(): (Object | null)[];
+    static values(): TransactionContext$Result[];
     private constructor()
     wasAborted(): boolean;
     wasCommitted(): boolean;

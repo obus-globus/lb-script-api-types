@@ -7,7 +7,7 @@ export class SourceCacheListener$CacheType extends Enum<SourceCacheListener$Cach
     static WEAK: SourceCacheListener$CacheType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SourceCacheListener$CacheType;
-    static values(): (Object | null)[];
+    static values(): SourceCacheListener$CacheType[];
     private constructor()
     name(): "WEAK" | "STRONG" | "UNCACHED";
 }

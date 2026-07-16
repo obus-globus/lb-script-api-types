@@ -21,7 +21,7 @@ export class ConcurrentHashMap$ForEachTransformedMappingTask<K extends unknown, 
     static inForkJoinPool(): boolean;
     static invokeAll(paramarg0: (Object | null)[]): (Object | null)[];
     static invokeAll(paramarg0: ForkJoinTask<Object>, paramarg1: ForkJoinTask<Object>): void;
-    static invokeAll(paramarg0: Object | null): void;
+    static invokeAll(...paramarg0: ForkJoinTask<Object>[]): void;
     constructor(arg0: ConcurrentHashMap$BulkTask<K, V, Object>, arg1: number, arg2: number, arg3: number, arg4: ConcurrentHashMap$Node<K, V>[], arg5: (param0: K, param1: V) => U, arg6: (param0: U) => void)
     // private action: (param0: U) => void;
     // private transformer: (param0: K, param1: V) => U;

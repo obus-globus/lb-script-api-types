@@ -7,7 +7,7 @@ export class OverrideRenderingPolicy extends Enum<OverrideRenderingPolicy> {
     static RENDER_OVERRIDE: OverrideRenderingPolicy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): OverrideRenderingPolicy;
-    static values(): (Object | null)[];
+    static values(): OverrideRenderingPolicy[];
     private constructor()
     name(): "RENDER_OVERRIDE" | "RENDER_OPEN" | "RENDER_OPEN_OVERRIDE";
 }

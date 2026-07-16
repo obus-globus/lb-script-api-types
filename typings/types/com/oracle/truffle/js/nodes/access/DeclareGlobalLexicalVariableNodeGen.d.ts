@@ -8,7 +8,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 export class DeclareGlobalLexicalVariableNodeGen extends DeclareGlobalLexicalVariableNode {
     static create(paramvarName: TruffleString, paramisConst: boolean): DeclareGlobalLexicalVariableNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(varName: TruffleString, isConst: boolean)
     // private cached_cache_: PropertySetNode;
     // private state_0_: number;

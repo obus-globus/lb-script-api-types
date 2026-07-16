@@ -7,7 +7,7 @@ import type { ThrowingFunction } from '../../../../net/lenni0451/commons/uncheck
 import type { ThrowingSupplier } from '../../../../net/lenni0451/commons/unchecked/function/ThrowingSupplier.d.ts'
 export class FieldInitializer<T extends unknown> extends Object {
     static attempt(paramarg0: () => Object | null): FieldInitializer<Object>;
-    static firstOf(paramarg0: Object | null): FieldInitializer<Object>;
+    static firstOf(paramarg0: () => Object | null[]): FieldInitializer<Object>;
     static of(paramarg0: Object | null): FieldInitializer<Object>;
     private constructor(arg0: () => T)
     // private supplier: () => T;

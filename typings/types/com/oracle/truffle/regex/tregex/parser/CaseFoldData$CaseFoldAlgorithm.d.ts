@@ -12,7 +12,7 @@ export class CaseFoldData$CaseFoldAlgorithm extends Enum<CaseFoldData$CaseFoldAl
     static Unicode16Simple: CaseFoldData$CaseFoldAlgorithm;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CaseFoldData$CaseFoldAlgorithm;
-    static values(): (Object | null)[];
+    static values(): CaseFoldData$CaseFoldAlgorithm[];
     private constructor()
     name(): "Unicode16Simple" | "Unicode15Simple" | "ECMAScriptUnicode" | "PythonUnicode" | "Ruby" | "OracleDB" | "OracleDBSimple" | "OracleDBAI";
 }

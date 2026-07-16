@@ -13,7 +13,7 @@ export class ModuleTeams$ColorSource extends Enum<ModuleTeams$ColorSource> imple
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleTeams$ColorSource;
-    static values(): (Object | null)[];
+    static values(): ModuleTeams$ColorSource[];
     private constructor(tag: string, entityToColor: (param0: Entity) => number | null)
     readonly entityToColor: (param0: Entity) => number | null;
     readonly tag: string;

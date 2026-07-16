@@ -57,7 +57,7 @@ export class DatePrototypeBuiltins$DatePrototype extends Enum<DatePrototypeBuilt
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): DatePrototypeBuiltins$DatePrototype;
-    static values(): (Object | null)[];
+    static values(): DatePrototypeBuiltins$DatePrototype[];
     private constructor(length: number)
     // private isUTC: boolean;
     readonly length: number;

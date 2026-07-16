@@ -17,7 +17,6 @@ export class SlotDisplay$ItemSlotDisplay extends Record implements SlotDisplay {
     static CODEC: Codec<SlotDisplay>;
     static MAP_CODEC: MapCodec<SlotDisplay$ItemSlotDisplay>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, SlotDisplay$ItemSlotDisplay>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, SlotDisplay>;
     static TYPE: SlotDisplay$Type<SlotDisplay$ItemSlotDisplay>;
     constructor(item: Holder<Item>)
     constructor(item: Item)

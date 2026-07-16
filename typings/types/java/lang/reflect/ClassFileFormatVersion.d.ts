@@ -34,7 +34,7 @@ export class ClassFileFormatVersion extends Enum<ClassFileFormatVersion> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: Runtime$Version): ClassFileFormatVersion;
     static valueOf(paramarg0: string): ClassFileFormatVersion;
-    static values(): (Object | null)[];
+    static values(): ClassFileFormatVersion[];
     private constructor(arg2: number)
     // private major: number;
     major(): number;

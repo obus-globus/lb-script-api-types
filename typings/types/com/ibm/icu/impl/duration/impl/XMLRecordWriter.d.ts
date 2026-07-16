@@ -7,7 +7,7 @@ export class XMLRecordWriter extends Object implements RecordWriter {
     // private nameStack: string[];
     // private w: Writer;
     bool(arg0: string, arg1: boolean): void;
-    boolArray(arg0: string, arg1: (Object | null)[]): void;
+    boolArray(arg0: string, arg1: boolean[]): void;
     character(arg0: string, arg1: string): void;
     characterArray(arg0: string, arg1: string[]): void;
     close(): boolean;

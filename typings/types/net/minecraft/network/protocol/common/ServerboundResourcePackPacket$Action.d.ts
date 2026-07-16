@@ -12,7 +12,7 @@ export class ServerboundResourcePackPacket$Action extends Enum<ServerboundResour
     static SUCCESSFULLY_LOADED: ServerboundResourcePackPacket$Action;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ServerboundResourcePackPacket$Action;
-    static values(): (Object | null)[];
+    static values(): ServerboundResourcePackPacket$Action[];
     private constructor()
     isTerminal(): boolean;
     name(): "SUCCESSFULLY_LOADED" | "DECLINED" | "FAILED_DOWNLOAD" | "ACCEPTED" | "DOWNLOADED" | "INVALID_URL" | "FAILED_RELOAD" | "DISCARDED";

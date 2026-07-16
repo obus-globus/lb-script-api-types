@@ -23,7 +23,7 @@ export class BuildPlatform extends Enum<BuildPlatform> {
     static getByValue(paramarg0: number, paramarg1: BuildPlatform): BuildPlatform;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BuildPlatform;
-    static values(): (Object | null)[];
+    static values(): BuildPlatform[];
     private constructor(arg2: number)
     private constructor(arg2: BuildPlatform)
     readonly value: number;

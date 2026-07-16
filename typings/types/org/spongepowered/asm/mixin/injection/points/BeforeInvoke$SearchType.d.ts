@@ -6,7 +6,7 @@ export class BeforeInvoke$SearchType extends Enum<BeforeInvoke$SearchType> {
     static STRICT: BeforeInvoke$SearchType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BeforeInvoke$SearchType;
-    static values(): (Object | null)[];
+    static values(): BeforeInvoke$SearchType[];
     private constructor()
     name(): "STRICT" | "PERMISSIVE";
 }

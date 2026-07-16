@@ -7,7 +7,7 @@ export class GameProvider$BuiltinTransform extends Enum<GameProvider$BuiltinTran
     static WIDEN_ALL_PACKAGE_ACCESS: GameProvider$BuiltinTransform;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): GameProvider$BuiltinTransform;
-    static values(): (Object | null)[];
+    static values(): GameProvider$BuiltinTransform[];
     private constructor()
     name(): "STRIP_ENVIRONMENT" | "WIDEN_ALL_PACKAGE_ACCESS" | "CLASS_TWEAKS";
 }

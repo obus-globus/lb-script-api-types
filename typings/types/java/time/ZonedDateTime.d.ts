@@ -40,7 +40,7 @@ export class ZonedDateTime extends Object implements Serializable, ChronoZonedDa
     static ofStrict(paramarg0: LocalDateTime, paramarg1: ZoneOffset, paramarg2: ZoneId): ZonedDateTime;
     static parse(paramarg0: CharSequence): ZonedDateTime;
     static parse(paramarg0: CharSequence, paramarg1: DateTimeFormatter): ZonedDateTime;
-    static timeLineOrder(): (param0: Object) => boolean;
+    static timeLineOrder(): (param0: ChronoZonedDateTime<any>, param1: ChronoZonedDateTime<any>) => number;
     private constructor(arg0: LocalDateTime, arg1: ZoneOffset, arg2: ZoneId)
     // private dateTime: LocalDateTime;
     readonly offset: ZoneOffset;

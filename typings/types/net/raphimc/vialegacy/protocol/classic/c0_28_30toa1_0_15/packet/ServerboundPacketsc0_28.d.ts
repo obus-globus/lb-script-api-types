@@ -16,7 +16,7 @@ export class ServerboundPacketsc0_28 extends Enum<ServerboundPacketsc0_28> imple
     static getPacket(paramarg0: number): ServerboundPacketsc0_28;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ServerboundPacketsc0_28;
-    static values(): (Object | null)[];
+    static values(): ServerboundPacketsc0_28[];
     private constructor(arg2: number, arg3: (param0: UserConnection, param1: ByteBuf) => void)
     readonly id: number;
     readonly packetReader: (param0: UserConnection, param1: ByteBuf) => void;

@@ -16,7 +16,7 @@ export class AccessFlag$Location extends Enum<AccessFlag$Location> {
     static MODULE_REQUIRES: AccessFlag$Location;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AccessFlag$Location;
-    static values(): (Object | null)[];
+    static values(): AccessFlag$Location[];
     private constructor(arg2: number, arg3: Map$Entry<ClassFileFormatVersion, number>[])
     // private flagsMask: number;
     // private historicalFlagsMasks: Map$Entry<ClassFileFormatVersion, number>[];

@@ -15,7 +15,7 @@ export class ShowIn extends Enum<ShowIn> implements Tagged {
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ShowIn;
-    static values(): (Object | null)[];
+    static values(): ShowIn[];
     private constructor(tag: string, show: (param0: TitleType, param1: TitleEvent$TextContent, param2: TranslationResult$Success) => void)
     readonly show: (param0: TitleType, param1: TitleEvent$TextContent, param2: TranslationResult$Success) => void;
     readonly tag: string;

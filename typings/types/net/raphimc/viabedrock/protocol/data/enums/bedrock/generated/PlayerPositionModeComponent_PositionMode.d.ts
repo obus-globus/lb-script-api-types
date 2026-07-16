@@ -12,7 +12,7 @@ export class PlayerPositionModeComponent_PositionMode extends Enum<PlayerPositio
     static getByValue(paramarg0: number, paramarg1: PlayerPositionModeComponent_PositionMode): PlayerPositionModeComponent_PositionMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PlayerPositionModeComponent_PositionMode;
-    static values(): (Object | null)[];
+    static values(): PlayerPositionModeComponent_PositionMode[];
     private constructor(arg2: number)
     private constructor(arg2: PlayerPositionModeComponent_PositionMode)
     readonly value: number;

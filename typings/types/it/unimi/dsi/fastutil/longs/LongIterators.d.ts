@@ -16,8 +16,8 @@ export class LongIterators extends Object {
     static any(paramarg0: LongIterator, paramarg1: (param0: number) => boolean): boolean;
     static asLongIterator(paramarg0: Iterator<Object>): LongIterator;
     static asLongIterator(paramarg0: ListIterator<Object>): LongListIterator;
-    static concat(...paramarg0: (Object | null)[]): LongIterator;
-    static concat(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): LongIterator;
+    static concat(...paramarg0: LongIterator[]): LongIterator;
+    static concat(paramarg0: LongIterator[], paramarg1: number, paramarg2: number): LongIterator;
     static fromTo(paramarg0: number, paramarg1: number): LongBidirectionalIterator;
     static indexOf(paramarg0: LongIterator, paramarg1: (param0: number) => boolean): number;
     static pour(paramarg0: LongIterator, paramarg1: (Object | null)[]): number;
@@ -32,12 +32,12 @@ export class LongIterators extends Object {
     static unwrap(paramarg0: LongIterator, paramarg1: number[]): number;
     static unwrap(paramarg0: LongIterator, paramarg1: number[], paramarg2: number, paramarg3: number): number;
     static unwrap(paramarg0: LongIterator, paramarg1: (Object | null)[]): number;
-    static unwrap(paramarg0: LongIterator, paramarg1: (Object | null)[]): number;
-    static unwrap(paramarg0: LongIterator, paramarg1: (Object | null)[], paramarg2: number, paramarg3: number): number;
+    static unwrap(paramarg0: LongIterator, paramarg1: number[][]): number;
+    static unwrap(paramarg0: LongIterator, paramarg1: number[][], paramarg2: number, paramarg3: number): number;
     static unwrap(paramarg0: LongIterator): number[];
     static unwrap(paramarg0: LongIterator, paramarg1: number): number[];
-    static unwrapBig(paramarg0: LongIterator): (Object | null)[];
-    static unwrapBig(paramarg0: LongIterator, paramarg1: number): (Object | null)[];
+    static unwrapBig(paramarg0: LongIterator): number[][];
+    static unwrapBig(paramarg0: LongIterator, paramarg1: number): number[][];
     static wrap(paramarg0: ByteIterator): LongIterator;
     static wrap(paramarg0: CharIterator): LongIterator;
     static wrap(paramarg0: IntIterator): LongIterator;

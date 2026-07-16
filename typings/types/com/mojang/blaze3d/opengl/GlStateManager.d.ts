@@ -1,4 +1,6 @@
+import type { GlStateManager$BlendState } from '../../../../com/mojang/blaze3d/opengl/GlStateManager$BlendState.d.ts'
 import type { GlStateManager$DepthState } from '../../../../com/mojang/blaze3d/opengl/GlStateManager$DepthState.d.ts'
+import type { GlStateManager$TextureState } from '../../../../com/mojang/blaze3d/opengl/GlStateManager$TextureState.d.ts'
 import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
@@ -73,11 +75,11 @@ export class GlStateManager extends Object implements GlStateManagerAccessor {
     static _viewport(paramx: number, paramy: number, paramwidth: number, paramheight: number): void;
     static clearGlErrors(): void;
     static getActiveTexture(): number;
-    static getBLEND(): (Object | null)[];
+    static getBLEND(): GlStateManager$BlendState[];
     static getCOLOR_MASK(): number[];
     static getDEPTH(): GlStateManager$DepthState;
     static getFrameBuffer(paramtarget: number): number;
-    static getTEXTURES(): (Object | null)[];
+    static getTEXTURES(): GlStateManager$TextureState[];
     static glAttachShader(paramprogram: number, paramshader: number): void;
     static glBlendEquationSeparate(parammodeRgb: number, parammodeAlpha: number): void;
     static glBlendFuncSeparate(paramsrcColor: number, paramdstColor: number, paramsrcAlpha: number, paramdstAlpha: number): void;

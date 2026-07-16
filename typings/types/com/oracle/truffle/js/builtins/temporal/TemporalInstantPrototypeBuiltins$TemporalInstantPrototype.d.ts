@@ -23,7 +23,7 @@ export class TemporalInstantPrototypeBuiltins$TemporalInstantPrototype extends E
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TemporalInstantPrototypeBuiltins$TemporalInstantPrototype;
-    static values(): (Object | null)[];
+    static values(): TemporalInstantPrototypeBuiltins$TemporalInstantPrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

@@ -5,7 +5,6 @@ import type { RecordCodecBuilder$Instance } from '../../../../../../../com/mojan
 import type { Optional } from '../../../../../../../java/util/Optional.d.ts'
 import type { Function } from '../../../../../../../java/util/function/Function.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
-import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts'
 import type { Rotation } from '../../../../../../../net/minecraft/world/level/block/Rotation.d.ts'
 import type { Structure } from '../../../../../../../net/minecraft/world/level/levelgen/structure/Structure.d.ts'
 import type { Structure$GenerationContext } from '../../../../../../../net/minecraft/world/level/levelgen/structure/Structure$GenerationContext.d.ts'
@@ -14,7 +13,6 @@ import type { Structure$StructureSettings } from '../../../../../../../net/minec
 import type { StructureType } from '../../../../../../../net/minecraft/world/level/levelgen/structure/StructureType.d.ts'
 import type { StructurePiecesBuilder } from '../../../../../../../net/minecraft/world/level/levelgen/structure/pieces/StructurePiecesBuilder.d.ts'
 export class EndCityStructure extends Structure {
-    static CODEC: Codec<Holder<Structure>>;
     static CODEC: MapCodec<EndCityStructure>;
     static DIRECT_CODEC: Codec<Structure>;
     static getMeanFirstOccupiedHeight(paramcontext: Structure$GenerationContext, paramminX: number, paramsizeX: number, paramminZ: number, paramsizeZ: number): number;

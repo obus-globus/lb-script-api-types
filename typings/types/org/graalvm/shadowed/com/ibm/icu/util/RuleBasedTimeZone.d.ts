@@ -27,12 +27,12 @@ export class RuleBasedTimeZone extends BasicTimeZone {
     static countEquivalentIDs(paramid: string): number;
     static forLocaleOrDefault(paramlocale: Locale): TimeZone;
     static forULocaleOrDefault(paramlocale: ULocale): TimeZone;
-    static getAvailableIDs(): (Object | null)[];
-    static getAvailableIDs(paramrawOffset: number): (Object | null)[];
-    static getAvailableIDs(paramcountry: string): (Object | null)[];
+    static getAvailableIDs(): string[];
+    static getAvailableIDs(paramrawOffset: number): string[];
+    static getAvailableIDs(paramcountry: string): string[];
     static getAvailableIDs(paramzoneType: TimeZone$SystemTimeZoneType, paramregion: string, paramrawOffset: number): string[];
     static getCanonicalID(paramid: string): string;
-    static getCanonicalID(paramid: string, paramisSystemID: (Object | null)[]): string;
+    static getCanonicalID(paramid: string, paramisSystemID: boolean[]): string;
     static getDefault(): TimeZone;
     static getDefaultTimeZoneType(): number;
     static getEquivalentID(paramid: string, paramindex: number): string;

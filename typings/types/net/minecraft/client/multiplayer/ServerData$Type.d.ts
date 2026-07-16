@@ -7,7 +7,7 @@ export class ServerData$Type extends Enum<ServerData$Type> {
     static REALM: ServerData$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ServerData$Type;
-    static values(): (Object | null)[];
+    static values(): ServerData$Type[];
     private constructor()
     name(): "LAN" | "REALM" | "OTHER";
 }

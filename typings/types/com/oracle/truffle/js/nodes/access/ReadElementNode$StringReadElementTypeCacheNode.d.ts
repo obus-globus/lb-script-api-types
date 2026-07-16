@@ -9,7 +9,6 @@ import type { ToArrayIndexNoToPropertyKeyNode } from '../../../../../../com/orac
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ReadElementNode$StringReadElementTypeCacheNode extends ReadElementNode$ToPropertyKeyCachedReadElementTypeCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     // private substringByteIndexNode: TruffleString$SubstringByteIndexNode;
     doString(target: Object, index: Object, receiver: Object, defaultValue: Object, root: ReadElementNode, stringIndexInBounds: InlinedConditionProfile, toArrayIndexNode: ToArrayIndexNoToPropertyKeyNode, indexToPropertyKeyNode: JSToPropertyKeyNode): Object;

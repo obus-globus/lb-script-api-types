@@ -5,7 +5,6 @@ import type { X509Certificate } from '../../../../java/security/cert/X509Certifi
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class OpenSslPrivateKey extends AbstractReferenceCounted implements PrivateKey {
     static serialVersionUID: number;
-    static serialVersionUID: number;
     constructor(arg0: number)
     // private privateKeyAddress: number;
     deallocate(): void;

@@ -11,7 +11,7 @@ export class AdvancementTabType extends Enum<AdvancementTabType> {
     static RIGHT: AdvancementTabType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): AdvancementTabType;
-    static values(): (Object | null)[];
+    static values(): AdvancementTabType[];
     private constructor(selectedSprites: AdvancementTabType$Sprites, unselectedSprites: AdvancementTabType$Sprites, width: number, height: number, max: number)
     readonly height: number;
     readonly max: number;

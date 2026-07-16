@@ -10,7 +10,7 @@ export class AnnotationQualifierApplicabilityType extends Enum<AnnotationQualifi
     static VALUE_PARAMETER: AnnotationQualifierApplicabilityType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AnnotationQualifierApplicabilityType;
-    static values(): (Object | null)[];
+    static values(): AnnotationQualifierApplicabilityType[];
     private constructor(arg2: string)
     readonly javaTarget: string;
     getJavaTarget(): string;

@@ -1,3 +1,4 @@
+import type { GpuDevice } from '../../../../../../../com/mojang/blaze3d/systems/GpuDevice.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { MinecraftShortcuts } from '../../../../../../../net/ccbluex/liquidbounce/features/module/MinecraftShortcuts.d.ts'
 import type { BrowserTexture } from '../../../../../../../net/ccbluex/liquidbounce/integration/backend/BrowserTexture.d.ts'
@@ -11,16 +12,26 @@ import type { InputAcceptor } from '../../../../../../../net/ccbluex/liquidbounc
 import type { InputHandler } from '../../../../../../../net/ccbluex/liquidbounce/integration/backend/input/InputHandler.d.ts'
 import type { InputListener } from '../../../../../../../net/ccbluex/liquidbounce/integration/backend/input/InputListener.d.ts'
 import type { MCEFBrowser } from '../../../../../../../net/ccbluex/liquidbounce/mcef/cef/MCEFBrowser.d.ts'
+import type { Minecraft } from '../../../../../../../net/minecraft/client/Minecraft.d.ts'
+import type { ClientLevel } from '../../../../../../../net/minecraft/client/multiplayer/ClientLevel.d.ts'
+import type { ClientPacketListener } from '../../../../../../../net/minecraft/client/multiplayer/ClientPacketListener.d.ts'
+import type { MultiPlayerGameMode } from '../../../../../../../net/minecraft/client/multiplayer/MultiPlayerGameMode.d.ts'
+import type { LocalPlayer } from '../../../../../../../net/minecraft/client/player/LocalPlayer.d.ts'
 import type { Logger } from '../../../../../../../org/apache/logging/log4j/Logger.d.ts'
 export class CefBrowser extends Object implements MinecraftShortcuts, Browser, InputHandler {
     constructor(backend: CefBrowserBackend, url: string, viewport: BrowserViewport, settings: BrowserSettings, priority: number, inputAcceptor: InputAcceptor | null)
     // private backend: CefBrowserBackend;
     // private browserApi: MCEFBrowser;
     /*not mapped: */ getBrowserApi$net_ccbluex_liquidbounce(): MCEFBrowser;
+    readonly gpuDevice: GpuDevice;
     // private inputListener: InputListener | null;
+    readonly interaction: MultiPlayerGameMode;
     // private isInitialized: boolean;
     /*not mapped: */ isInitialized(): boolean;
     // private logger: Logger;
+    readonly mc: Minecraft;
+    readonly network: ClientPacketListener;
+    readonly player: LocalPlayer;
     priority: number;
     // private renderer: BrowserRenderer;
     readonly settings: BrowserSettings;
@@ -29,6 +40,7 @@ export class CefBrowser extends Object implements MinecraftShortcuts, Browser, I
     url: string;
     viewport: BrowserViewport;
     visible: boolean;
+    readonly world: ClientLevel;
     charTyped(codepoint: number): void;
     close(): void;
     // private comparePaintWithViewpoint(width: number, height: number): void;

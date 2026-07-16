@@ -16,7 +16,7 @@ export class SkullBlock$Types extends Enum<SkullBlock$Types> implements SkullBlo
     static ZOMBIE: SkullBlock$Types;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SkullBlock$Types;
-    static values(): (Object | null)[];
+    static values(): SkullBlock$Types[];
     private constructor(name: string)
     // private name: string;
     getSerializedName(): string;

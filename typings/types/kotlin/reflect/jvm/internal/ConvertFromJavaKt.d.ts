@@ -18,5 +18,5 @@ export class ConvertFromJavaKt extends Object {
     static isEnumValuesValueOfMethod(paramarg0: Member): boolean;
     static isMappedBuiltin(paramarg0: KClass<Object>): boolean;
     static toKType(paramarg0: Type, paramarg1: Map<TypeVariable<any>, KTypeParameter>, paramarg2: TypeNullability, paramarg3: boolean, paramarg4: boolean, paramarg5: TypeUsage): KType;
-    static toKTypeParameters(paramarg0: Object | null, paramarg1: KTypeParameterOwnerImpl): KTypeParameter[];
+    static toKTypeParameters(paramarg0: TypeVariable<any>[], paramarg1: KTypeParameterOwnerImpl): KTypeParameter[];
 }

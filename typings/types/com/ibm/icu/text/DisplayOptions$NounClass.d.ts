@@ -15,7 +15,7 @@ export class DisplayOptions$NounClass extends Enum<DisplayOptions$NounClass> {
     static fromIdentifier(paramarg0: string): DisplayOptions$NounClass;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DisplayOptions$NounClass;
-    static values(): (Object | null)[];
+    static values(): DisplayOptions$NounClass[];
     private constructor(arg2: string)
     readonly identifier: string;
     getIdentifier(): string;

@@ -13,7 +13,6 @@ export abstract class JSToNumericNode extends JavaScriptBaseNode {
     static createToNumericOperand(paramchild: JavaScriptNode): JavaScriptNode;
     static createToNumericOperand(): JSToNumericNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(toNumericOperand: boolean)
     // private toNumericOperand: boolean;
     doOverloaded(arg: JSOverloadedOperatorsObject): Object;

@@ -8,7 +8,7 @@ export class ICUResourceBundle$OpenType extends Enum<ICUResourceBundle$OpenType>
     static LOCALE_ROOT: ICUResourceBundle$OpenType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ICUResourceBundle$OpenType;
-    static values(): (Object | null)[];
+    static values(): ICUResourceBundle$OpenType[];
     private constructor()
     name(): "LOCALE_DEFAULT_ROOT" | "LOCALE_ROOT" | "LOCALE_ONLY" | "DIRECT";
 }

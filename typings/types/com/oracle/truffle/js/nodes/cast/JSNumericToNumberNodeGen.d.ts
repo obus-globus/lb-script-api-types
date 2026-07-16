@@ -5,7 +5,6 @@ import type { Number } from '../../../../../../java/lang/Number.d.ts'
 export class JSNumericToNumberNodeGen extends JSNumericToNumberNode {
     static create(): JSNumericToNumberNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private state_0_: number;
     // private executeAndSpecialize(arg0Value: Object): Number;

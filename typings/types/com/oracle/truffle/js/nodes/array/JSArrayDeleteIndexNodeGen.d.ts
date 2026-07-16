@@ -6,7 +6,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 export class JSArrayDeleteIndexNodeGen extends JSArrayDeleteIndexNode {
     static create(paramstrict: boolean): JSArrayDeleteIndexNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(strict: boolean)
     // private cached_cache: JSArrayDeleteIndexNodeGen$CachedData;
     // private state_0_: number;

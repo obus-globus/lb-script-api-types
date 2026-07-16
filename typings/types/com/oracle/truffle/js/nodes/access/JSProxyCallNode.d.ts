@@ -11,7 +11,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSProxyCallNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext, paramisNew: boolean, paramisNewTarget: boolean): JSProxyCallNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, isNew: boolean, isNewTarget: boolean)
     // private callNode: JSFunctionCallNode;
     // private callTrapNode: JSFunctionCallNode;

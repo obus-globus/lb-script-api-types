@@ -8,7 +8,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class RejectPromiseNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): RejectPromiseNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private context: JSContext;
     // private triggerPromiseReactions: TriggerPromiseReactionsNode;

@@ -11,11 +11,13 @@ import type { ServerList } from '../../../../../../../../../net/minecraft/client
 import type { ServerStatusPinger } from '../../../../../../../../../net/minecraft/client/multiplayer/ServerStatusPinger.d.ts'
 import type { LanServerDetection$LanServerDetector } from '../../../../../../../../../net/minecraft/client/server/LanServerDetection$LanServerDetector.d.ts'
 import type { LanServerDetection$LanServerList } from '../../../../../../../../../net/minecraft/client/server/LanServerDetection$LanServerList.d.ts'
+import type { Component } from '../../../../../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { MutableComponent } from '../../../../../../../../../net/minecraft/network/chat/MutableComponent.d.ts'
 export class ActiveServerList extends Object implements EventListener {
     static INSTANCE: ActiveServerList;
     // private cannotConnectText: MutableComponent;
     // private cannotResolveText: MutableComponent;
+    readonly debugDisplayName: Component;
     // private lanDetector: LanServerDetection$LanServerDetector | null;
     // private lanServerList: LanServerDetection$LanServerList;
     // private lanServers: { [key: string]: ServerData };

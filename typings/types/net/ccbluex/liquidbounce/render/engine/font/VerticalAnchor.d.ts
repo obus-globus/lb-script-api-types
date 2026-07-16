@@ -13,7 +13,7 @@ export class VerticalAnchor extends Enum<VerticalAnchor> implements Tagged {
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): VerticalAnchor;
-    static values(): (Object | null)[];
+    static values(): VerticalAnchor[];
     private constructor(tag: string)
     readonly tag: string;
     /**

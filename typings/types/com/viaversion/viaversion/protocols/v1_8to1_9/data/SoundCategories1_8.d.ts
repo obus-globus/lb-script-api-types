@@ -14,7 +14,7 @@ export class SoundCategories1_8 extends Enum<SoundCategories1_8> {
     static WEATHER: SoundCategories1_8;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SoundCategories1_8;
-    static values(): (Object | null)[];
+    static values(): SoundCategories1_8[];
     private constructor(arg2: string, arg3: number)
     readonly id: number;
     getId(): number;

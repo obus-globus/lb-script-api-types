@@ -7,7 +7,6 @@ export class InitializeRelativeTimeFormatNodeGen extends InitializeRelativeTimeF
     static create(paramcontext: JSContext): InitializeRelativeTimeFormatNode;
     static createInitalizeRelativeTimeFormatNode(paramcontext: JSContext): InitializeRelativeTimeFormatNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     executeInit(arg0Value: JSRelativeTimeFormatObject, arg1Value: Object, arg2Value: Object): JSRelativeTimeFormatObject;
 }

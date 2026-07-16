@@ -13,7 +13,6 @@ export abstract class PerformPromiseAllSettledNode extends PerformPromiseAllNode
     static create(paramcontext: JSContext): PerformPromiseAllNode;
     static create(paramcontext: JSContext): PerformPromiseAllSettledNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     createRejectElementFunction(index: number, values: SimpleArrayList<Object>, resultCapability: PromiseCapabilityRecord, remainingElementsCount: PerformPromiseCombinatorNode$BoxedInt): Object;
     createResolveElementFunction(index: number, values: SimpleArrayList<Object>, resultCapability: PromiseCapabilityRecord, remainingElementsCount: PerformPromiseCombinatorNode$BoxedInt): JSFunctionObject;

@@ -8,7 +8,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class GetTemporalCalendarIdentifierWithISODefaultNode extends JavaScriptBaseNode {
     static create(): GetTemporalCalendarIdentifierWithISODefaultNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doJSTemporalCalendarHolder(item: JSTemporalCalendarHolder): TruffleString;
     doOther(item: Object, getCalendar: PropertyGetNode, toCalendarIdentifier: ToTemporalCalendarIdentifierNode): TruffleString;

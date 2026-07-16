@@ -6,7 +6,7 @@ export class GameEventListener$DeliveryMode extends Enum<GameEventListener$Deliv
     static UNSPECIFIED: GameEventListener$DeliveryMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): GameEventListener$DeliveryMode;
-    static values(): (Object | null)[];
+    static values(): GameEventListener$DeliveryMode[];
     private constructor()
     name(): "UNSPECIFIED" | "BY_DISTANCE";
 }

@@ -51,7 +51,6 @@ import type { GLSLParser$TypeSpecifierContext } from '../../../../io/github/doui
 import type { GLSLParser$VersionStatementContext } from '../../../../io/github/douira/glsl_transformer/GLSLParser$VersionStatementContext.d.ts'
 import type { GLSLParser$WhileStatementContext } from '../../../../io/github/douira/glsl_transformer/GLSLParser$WhileStatementContext.d.ts'
 import type { ExtendedParser } from '../../../../io/github/douira/glsl_transformer/parser/ExtendedParser.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { RuleContext } from '../../../../org/antlr/v4/runtime/RuleContext.d.ts'
 import type { TokenStream } from '../../../../org/antlr/v4/runtime/TokenStream.d.ts'
 import type { Vocabulary } from '../../../../org/antlr/v4/runtime/Vocabulary.d.ts'
@@ -458,8 +457,8 @@ export class GLSLParser extends ExtendedParser {
     static XOR_ASSIGN: number;
     static _ATN: ATN;
     static _serializedATN: string;
-    static ruleNames: (Object | null)[];
-    static tokenNames: (Object | null)[];
+    static ruleNames: string[];
+    static tokenNames: string[];
     constructor(arg0: TokenStream)
     arraySpecifier(): GLSLParser$ArraySpecifierContext;
     arraySpecifierSegment(): GLSLParser$ArraySpecifierSegmentContext;

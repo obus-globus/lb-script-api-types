@@ -13,7 +13,7 @@ export class Tier extends Enum<Tier> implements Comparable<Tier> {
     static getEntries(): Tier[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Tier;
-    static values(): (Object | null)[];
+    static values(): Tier[];
     private constructor()
     readonly score: number;
     name(): "F" | "E" | "D" | "C" | "B" | "A" | "S";

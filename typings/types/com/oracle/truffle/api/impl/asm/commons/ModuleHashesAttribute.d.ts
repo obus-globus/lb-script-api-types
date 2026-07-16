@@ -3,10 +3,9 @@ import type { ByteVector } from '../../../../../../../com/oracle/truffle/api/imp
 import type { ClassReader } from '../../../../../../../com/oracle/truffle/api/impl/asm/ClassReader.d.ts'
 import type { ClassWriter } from '../../../../../../../com/oracle/truffle/api/impl/asm/ClassWriter.d.ts'
 import type { Label } from '../../../../../../../com/oracle/truffle/api/impl/asm/Label.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class ModuleHashesAttribute extends Attribute {
-    static read(paramattribute: Attribute, paramclassReader: ClassReader, paramoffset: number, paramlength: number, paramcharBuffer: string[], paramcodeAttributeOffset: number, paramlabels: (Object | null)[]): Attribute;
-    static readLabel(paramclassReader: ClassReader, parambytecodeOffset: number, paramlabels: (Object | null)[]): Label;
+    static read(paramattribute: Attribute, paramclassReader: ClassReader, paramoffset: number, paramlength: number, paramcharBuffer: string[], paramcodeAttributeOffset: number, paramlabels: Label[]): Attribute;
+    static readLabel(paramclassReader: ClassReader, parambytecodeOffset: number, paramlabels: Label[]): Label;
     static write(paramattribute: Attribute, paramclassWriter: ClassWriter, paramcode: number[], paramcodeLength: number, parammaxStack: number, parammaxLocals: number): number[];
     constructor()
     constructor(algorithm: string, modules: string[], hashes: number[][])

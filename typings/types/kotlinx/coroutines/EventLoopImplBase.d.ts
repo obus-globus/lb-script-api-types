@@ -5,7 +5,6 @@ import type { ContinuationInterceptor$Key } from '../../kotlin/coroutines/Contin
 import type { CoroutineContext } from '../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { AtomicRef } from '../../kotlinx/atomicfu/AtomicRef.d.ts'
 import type { CancellableContinuation } from '../../kotlinx/coroutines/CancellableContinuation.d.ts'
-import type { CoroutineDispatcher$Key } from '../../kotlinx/coroutines/CoroutineDispatcher$Key.d.ts'
 import type { Delay } from '../../kotlinx/coroutines/Delay.d.ts'
 import type { DisposableHandle } from '../../kotlinx/coroutines/DisposableHandle.d.ts'
 import type { EventLoopImplBase$DelayedTask } from '../../kotlinx/coroutines/EventLoopImplBase$DelayedTask.d.ts'
@@ -13,7 +12,6 @@ import type { EventLoopImplBase$DelayedTaskQueue } from '../../kotlinx/coroutine
 import type { EventLoopImplPlatform } from '../../kotlinx/coroutines/EventLoopImplPlatform.d.ts'
 export abstract class EventLoopImplBase extends EventLoopImplPlatform implements Delay {
     static Key: ContinuationInterceptor$Key;
-    static Key: CoroutineDispatcher$Key;
     static delay$suspendImpl(paramarg0: Delay, paramarg1: number, paramarg2: Continuation<Object>): Object;
     constructor()
     // private closeQueue(): void;

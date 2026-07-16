@@ -5,6 +5,8 @@ import type { WinDef$DWORD } from '../../../../../com/sun/jna/platform/win32/Win
 import type { WinNT$HANDLE } from '../../../../../com/sun/jna/platform/win32/WinNT$HANDLE.d.ts'
 import type { WinNT$HANDLEByReference } from '../../../../../com/sun/jna/platform/win32/WinNT$HANDLEByReference.d.ts'
 import type { WinNT$HRESULT } from '../../../../../com/sun/jna/platform/win32/WinNT$HRESULT.d.ts'
+import type { WinNT$SYSTEM_LOGICAL_PROCESSOR_INFORMATION } from '../../../../../com/sun/jna/platform/win32/WinNT$SYSTEM_LOGICAL_PROCESSOR_INFORMATION.d.ts'
+import type { WinNT$SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX } from '../../../../../com/sun/jna/platform/win32/WinNT$SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class Kernel32Util extends Object implements WinDef {
     static MAX_PATH: number;
@@ -14,8 +16,8 @@ export abstract class Kernel32Util extends Object implements WinDef {
     static QueryFullProcessImageName(paramarg0: number, paramarg1: number): string;
     static closeHandle(paramarg0: WinNT$HANDLE): void;
     static closeHandleRef(paramarg0: WinNT$HANDLEByReference): void;
-    static closeHandleRefs(...paramarg0: (Object | null)[]): void;
-    static closeHandles(...paramarg0: (Object | null)[]): void;
+    static closeHandleRefs(...paramarg0: WinNT$HANDLEByReference[]): void;
+    static closeHandles(...paramarg0: WinNT$HANDLE[]): void;
     static deleteFile(paramarg0: string): void;
     static expandEnvironmentStrings(paramarg0: string): string;
     static extractVolumeGUID(paramarg0: string): string;
@@ -40,12 +42,12 @@ export abstract class Kernel32Util extends Object implements WinDef {
     static getLastErrorMessage(): string;
     static getLastErrorMessage(paramarg0: number, paramarg1: number): string;
     static getLogicalDriveStrings(): string[];
-    static getLogicalProcessorInformation(): (Object | null)[];
-    static getLogicalProcessorInformationEx(paramarg0: number): (Object | null)[];
+    static getLogicalProcessorInformation(): WinNT$SYSTEM_LOGICAL_PROCESSOR_INFORMATION[];
+    static getLogicalProcessorInformationEx(paramarg0: number): WinNT$SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX[];
     static getModules(paramarg0: number): Tlhelp32$MODULEENTRY32W[];
     static getPrivateProfileInt(paramarg0: string, paramarg1: string, paramarg2: number, paramarg3: string): number;
-    static getPrivateProfileSection(paramarg0: string, paramarg1: string): (Object | null)[];
-    static getPrivateProfileSectionNames(paramarg0: string): (Object | null)[];
+    static getPrivateProfileSection(paramarg0: string, paramarg1: string): string[];
+    static getPrivateProfileSectionNames(paramarg0: string): string[];
     static getPrivateProfileString(paramarg0: string, paramarg1: string, paramarg2: string, paramarg3: string): string;
     static getProcessPriority(paramarg0: number): WinDef$DWORD;
     static getResource(paramarg0: string, paramarg1: string, paramarg2: string): number[];
@@ -64,7 +66,7 @@ export abstract class Kernel32Util extends Object implements WinDef {
     static setCurrentThreadPriority(paramarg0: number): void;
     static setProcessPriority(paramarg0: number, paramarg1: WinDef$DWORD): void;
     static setThreadPriority(paramarg0: number, paramarg1: number): void;
-    static writePrivateProfileSection(paramarg0: string, paramarg1: (Object | null)[], paramarg2: string): void;
+    static writePrivateProfileSection(paramarg0: string, paramarg1: string[], paramarg2: string): void;
     static writePrivateProfileString(paramarg0: string, paramarg1: string, paramarg2: string, paramarg3: string): void;
     constructor()
 }

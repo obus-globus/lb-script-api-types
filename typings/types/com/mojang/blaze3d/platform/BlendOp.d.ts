@@ -9,7 +9,7 @@ export class BlendOp extends Enum<BlendOp> {
     static SUBTRACT: BlendOp;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): BlendOp;
-    static values(): (Object | null)[];
+    static values(): BlendOp[];
     private constructor()
     name(): "ADD" | "SUBTRACT" | "REVERSE_SUBTRACT" | "MIN" | "MAX";
 }

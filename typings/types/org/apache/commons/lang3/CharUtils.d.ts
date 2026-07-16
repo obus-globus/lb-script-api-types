@@ -16,17 +16,10 @@ export class CharUtils extends Object {
     static isOctal(paramarg0: string): boolean;
     static toChar(paramarg0: string): string;
     static toChar(paramarg0: string, paramarg1: string): string;
-    static toChar(paramarg0: string): string;
-    static toChar(paramarg0: string, paramarg1: string): string;
-    static toCharacterObject(paramarg0: string): string;
     static toCharacterObject(paramarg0: string): string;
     static toIntValue(paramarg0: string): number;
     static toIntValue(paramarg0: string, paramarg1: number): number;
-    static toIntValue(paramarg0: string): number;
-    static toIntValue(paramarg0: string, paramarg1: number): number;
     static toString(paramarg0: string): string;
-    static toString(paramarg0: string): string;
-    static unicodeEscaped(paramarg0: string): string;
     static unicodeEscaped(paramarg0: string): string;
     constructor()
 }

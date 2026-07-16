@@ -7,7 +7,7 @@ import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { WeakReference } from '../../../../../java/lang/ref/WeakReference.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class SpecializationStatistics$EnabledNodeStatistics extends SpecializationStatistics$NodeStatistics {
-    static create(paramnode: Node, paramspecializations: (Object | null)[]): SpecializationStatistics$NodeStatistics;
+    static create(paramnode: Node, paramspecializations: string[]): SpecializationStatistics$NodeStatistics;
     constructor(node: Node, statistics: SpecializationStatistics$NodeClassStatistics)
     // private nodeRef: WeakReference<Node>;
     // private sourceSection: Object;

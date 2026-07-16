@@ -25,13 +25,13 @@ export class ClosingFuture<V extends unknown> extends Object {
     static from(paramfuture: ListenableFuture<Object>): ClosingFuture<Object>;
     static submit(paramcallable: (param0: ClosingFuture$DeferredCloser) => Object | null, paramexecutor: Executor): ClosingFuture<Object>;
     static submitAsync(paramcallable: (param0: ClosingFuture$DeferredCloser) => ClosingFuture<Object>, paramexecutor: Executor): ClosingFuture<Object>;
-    static whenAllComplete(paramfuture1: ClosingFuture<Object>, parammoreFutures: Object | null): ClosingFuture$Combiner;
+    static whenAllComplete(paramfuture1: ClosingFuture<Object>, ...parammoreFutures: ClosingFuture<Object>[]): ClosingFuture$Combiner;
     static whenAllComplete(paramfutures: ClosingFuture<Object>[]): ClosingFuture$Combiner;
     static whenAllSucceed(paramfuture1: ClosingFuture<Object>, paramfuture2: ClosingFuture<Object>, paramfuture3: ClosingFuture<Object>, paramfuture4: ClosingFuture<Object>, paramfuture5: ClosingFuture<Object>): ClosingFuture$Combiner5<Object, Object, Object, Object, Object>;
     static whenAllSucceed(paramfuture1: ClosingFuture<Object>, paramfuture2: ClosingFuture<Object>, paramfuture3: ClosingFuture<Object>, paramfuture4: ClosingFuture<Object>): ClosingFuture$Combiner4<Object, Object, Object, Object>;
     static whenAllSucceed(paramfuture1: ClosingFuture<Object>, paramfuture2: ClosingFuture<Object>, paramfuture3: ClosingFuture<Object>): ClosingFuture$Combiner3<Object, Object, Object>;
     static whenAllSucceed(paramfuture1: ClosingFuture<Object>, paramfuture2: ClosingFuture<Object>): ClosingFuture$Combiner2<Object, Object>;
-    static whenAllSucceed(paramfuture1: ClosingFuture<Object>, paramfuture2: ClosingFuture<Object>, paramfuture3: ClosingFuture<Object>, paramfuture4: ClosingFuture<Object>, paramfuture5: ClosingFuture<Object>, paramfuture6: ClosingFuture<Object>, parammoreFutures: Object | null): ClosingFuture$Combiner;
+    static whenAllSucceed(paramfuture1: ClosingFuture<Object>, paramfuture2: ClosingFuture<Object>, paramfuture3: ClosingFuture<Object>, paramfuture4: ClosingFuture<Object>, paramfuture5: ClosingFuture<Object>, paramfuture6: ClosingFuture<Object>, ...parammoreFutures: ClosingFuture<Object>[]): ClosingFuture$Combiner;
     static whenAllSucceed(paramfutures: ClosingFuture<Object>[]): ClosingFuture$Combiner;
     static withoutCloser(paramfunction: (param0: Object | null) => ListenableFuture<Object>): (param0: ClosingFuture$DeferredCloser, param1: Object | null) => ClosingFuture<Object>;
     constructor(arg0: ListenableFuture<Object>, arg1: () => V)

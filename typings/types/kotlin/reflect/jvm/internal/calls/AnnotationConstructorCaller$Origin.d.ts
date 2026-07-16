@@ -7,7 +7,7 @@ export class AnnotationConstructorCaller$Origin extends Enum<AnnotationConstruct
     static KOTLIN: AnnotationConstructorCaller$Origin;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AnnotationConstructorCaller$Origin;
-    static values(): (Object | null)[];
+    static values(): AnnotationConstructorCaller$Origin[];
     private constructor()
     name(): "JAVA" | "KOTLIN";
 }

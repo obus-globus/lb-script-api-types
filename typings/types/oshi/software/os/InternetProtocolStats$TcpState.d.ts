@@ -17,7 +17,7 @@ export class InternetProtocolStats$TcpState extends Enum<InternetProtocolStats$T
     static UNKNOWN: InternetProtocolStats$TcpState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): InternetProtocolStats$TcpState;
-    static values(): (Object | null)[];
+    static values(): InternetProtocolStats$TcpState[];
     private constructor()
     name(): "UNKNOWN" | "CLOSED" | "LISTEN" | "SYN_SENT" | "SYN_RECV" | "ESTABLISHED" | "FIN_WAIT_1" | "FIN_WAIT_2" | "CLOSE_WAIT" | "CLOSING" | "LAST_ACK" | "TIME_WAIT" | "NONE";
 }

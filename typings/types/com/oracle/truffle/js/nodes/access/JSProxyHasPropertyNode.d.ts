@@ -13,7 +13,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSProxyHasPropertyNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): JSProxyHasPropertyNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private callNode: JSFunctionCallNode;
     // private foreignObjectPrototypeNode: ForeignObjectPrototypeNode;

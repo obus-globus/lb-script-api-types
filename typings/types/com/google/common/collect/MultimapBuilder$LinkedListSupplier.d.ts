@@ -6,7 +6,7 @@ export class MultimapBuilder$LinkedListSupplier extends Enum<MultimapBuilder$Lin
     static INSTANCE: MultimapBuilder$LinkedListSupplier;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): MultimapBuilder$LinkedListSupplier;
-    static values(): (Object | null)[];
+    static values(): MultimapBuilder$LinkedListSupplier[];
     private constructor()
     get(): (Object | null)[];
     name(): "INSTANCE";

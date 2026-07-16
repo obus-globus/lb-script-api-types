@@ -24,7 +24,7 @@ export class AtomicsBuiltins$Atomics extends Enum<AtomicsBuiltins$Atomics> imple
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): AtomicsBuiltins$Atomics;
-    static values(): (Object | null)[];
+    static values(): AtomicsBuiltins$Atomics[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

@@ -12,7 +12,7 @@ export class JSErrorType extends Enum<JSErrorType> {
     static URIError: JSErrorType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): JSErrorType;
-    static values(): (Object | null)[];
+    static values(): JSErrorType[];
     private constructor()
     name(): "Error" | "EvalError" | "RangeError" | "ReferenceError" | "SyntaxError" | "TypeError" | "URIError" | "AggregateError";
 }

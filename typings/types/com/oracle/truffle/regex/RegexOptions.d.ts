@@ -35,7 +35,7 @@ export class RegexOptions extends Object {
     static IgnoreAtomicGroups: OptionKey<boolean>;
     static JAVA_JDK_VERSION_MIN: number;
     static JAVA_JDK_VERSION_NAME: string;
-    static JAVA_JDK_VERSION_OPTIONS: (Object | null)[];
+    static JAVA_JDK_VERSION_OPTIONS: string[];
     static JavaJDKVersion: OptionKey<number>;
     static MATCHING_MODE_FULLMATCH: string;
     static MATCHING_MODE_MATCH: string;

@@ -11,7 +11,7 @@ export class ServerPackManager$RemovalReason extends Enum<ServerPackManager$Remo
     static SERVER_REPLACED: ServerPackManager$RemovalReason;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ServerPackManager$RemovalReason;
-    static values(): (Object | null)[];
+    static values(): ServerPackManager$RemovalReason[];
     private constructor(serverResponse: PackLoadFeedback$FinalResult)
     // private serverResponse: PackLoadFeedback$FinalResult;
     name(): "DOWNLOAD_FAILED" | "ACTIVATION_FAILED" | "DECLINED" | "DISCARDED" | "SERVER_REMOVED" | "SERVER_REPLACED";

@@ -14,7 +14,7 @@ export class RegexOption extends Enum<RegexOption> implements Serializable, Flag
     static getEntries(): RegexOption[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RegexOption;
-    static values(): (Object | null)[];
+    static values(): RegexOption[];
     private constructor(value: number, mask: number)
     readonly mask: number;
     readonly value: number;

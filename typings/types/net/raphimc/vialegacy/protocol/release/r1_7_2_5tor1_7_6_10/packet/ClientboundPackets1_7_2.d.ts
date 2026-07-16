@@ -72,7 +72,7 @@ export class ClientboundPackets1_7_2 extends Enum<ClientboundPackets1_7_2> imple
     static UPDATE_SIGN: ClientboundPackets1_7_2;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClientboundPackets1_7_2;
-    static values(): (Object | null)[];
+    static values(): ClientboundPackets1_7_2[];
     private constructor()
     direction(): Direction;
     getId(): number;

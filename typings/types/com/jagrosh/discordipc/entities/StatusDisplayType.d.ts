@@ -8,7 +8,7 @@ export class StatusDisplayType extends Enum<StatusDisplayType> {
     static from(paramarg0: number): StatusDisplayType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): StatusDisplayType;
-    static values(): (Object | null)[];
+    static values(): StatusDisplayType[];
     private constructor()
     name(): "Name" | "State" | "Details";
 }

@@ -34,7 +34,7 @@ export class MinecraftEventing_POIBlockInteractionType extends Enum<MinecraftEve
     static getByValue(paramarg0: number, paramarg1: MinecraftEventing_POIBlockInteractionType): MinecraftEventing_POIBlockInteractionType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MinecraftEventing_POIBlockInteractionType;
-    static values(): (Object | null)[];
+    static values(): MinecraftEventing_POIBlockInteractionType[];
     private constructor(arg2: number)
     private constructor(arg2: MinecraftEventing_POIBlockInteractionType)
     readonly value: number;

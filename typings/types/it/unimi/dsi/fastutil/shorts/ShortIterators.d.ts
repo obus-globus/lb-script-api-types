@@ -13,15 +13,12 @@ import type { ListIterator } from '../../../../../java/util/ListIterator.d.ts'
 export class ShortIterators extends Object {
     static EMPTY_ITERATOR: ShortIterators$EmptyIterator;
     static all(paramarg0: ShortIterator, paramarg1: (param0: number) => boolean): boolean;
-    static all(paramarg0: ShortIterator, paramarg1: (param0: number) => boolean): boolean;
-    static any(paramarg0: ShortIterator, paramarg1: (param0: number) => boolean): boolean;
     static any(paramarg0: ShortIterator, paramarg1: (param0: number) => boolean): boolean;
     static asShortIterator(paramarg0: Iterator<Object>): ShortIterator;
     static asShortIterator(paramarg0: ListIterator<Object>): ShortListIterator;
-    static concat(...paramarg0: (Object | null)[]): ShortIterator;
-    static concat(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): ShortIterator;
+    static concat(...paramarg0: ShortIterator[]): ShortIterator;
+    static concat(paramarg0: ShortIterator[], paramarg1: number, paramarg2: number): ShortIterator;
     static fromTo(paramarg0: number, paramarg1: number): ShortListIterator;
-    static indexOf(paramarg0: ShortIterator, paramarg1: (param0: number) => boolean): number;
     static indexOf(paramarg0: ShortIterator, paramarg1: (param0: number) => boolean): number;
     static narrow(paramarg0: PrimitiveIterator$OfInt): ShortIterator;
     static pour(paramarg0: ShortIterator, paramarg1: (Object | null)[]): number;
@@ -37,12 +34,12 @@ export class ShortIterators extends Object {
     static unwrap(paramarg0: ShortIterator, paramarg1: number[]): number;
     static unwrap(paramarg0: ShortIterator, paramarg1: number[], paramarg2: number, paramarg3: number): number;
     static unwrap(paramarg0: ShortIterator, paramarg1: (Object | null)[]): number;
-    static unwrap(paramarg0: ShortIterator, paramarg1: (Object | null)[]): number;
-    static unwrap(paramarg0: ShortIterator, paramarg1: (Object | null)[], paramarg2: number, paramarg3: number): number;
+    static unwrap(paramarg0: ShortIterator, paramarg1: number[][]): number;
+    static unwrap(paramarg0: ShortIterator, paramarg1: number[][], paramarg2: number, paramarg3: number): number;
     static unwrap(paramarg0: ShortIterator): number[];
     static unwrap(paramarg0: ShortIterator, paramarg1: number): number[];
-    static unwrapBig(paramarg0: ShortIterator): (Object | null)[];
-    static unwrapBig(paramarg0: ShortIterator, paramarg1: number): (Object | null)[];
+    static unwrapBig(paramarg0: ShortIterator): number[][];
+    static unwrapBig(paramarg0: ShortIterator, paramarg1: number): number[][];
     static widen(paramarg0: ShortIterator): IntIterator;
     static wrap(paramarg0: ByteIterator): ShortIterator;
     static wrap(paramarg0: number[]): ShortListIterator;

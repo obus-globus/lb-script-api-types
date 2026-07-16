@@ -12,7 +12,7 @@ export class ModuleLiquidFiller$PlaceIn extends Enum<ModuleLiquidFiller$PlaceIn>
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleLiquidFiller$PlaceIn;
-    static values(): (Object | null)[];
+    static values(): ModuleLiquidFiller$PlaceIn[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "WATER" | "LAVA";

@@ -13,7 +13,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSGetLengthNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): JSGetLengthNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private context: JSContext;
     // private toLength: boolean;

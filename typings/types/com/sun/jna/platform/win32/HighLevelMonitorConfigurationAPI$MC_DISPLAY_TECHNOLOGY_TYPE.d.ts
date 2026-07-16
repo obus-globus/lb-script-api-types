@@ -13,7 +13,7 @@ export class HighLevelMonitorConfigurationAPI$MC_DISPLAY_TECHNOLOGY_TYPE extends
     static MC_THIN_FILM_TRANSISTOR: HighLevelMonitorConfigurationAPI$MC_DISPLAY_TECHNOLOGY_TYPE;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HighLevelMonitorConfigurationAPI$MC_DISPLAY_TECHNOLOGY_TYPE;
-    static values(): (Object | null)[];
+    static values(): HighLevelMonitorConfigurationAPI$MC_DISPLAY_TECHNOLOGY_TYPE[];
     private constructor()
     name(): "MC_SHADOW_MASK_CATHODE_RAY_TUBE" | "MC_APERTURE_GRILL_CATHODE_RAY_TUBE" | "MC_THIN_FILM_TRANSISTOR" | "MC_LIQUID_CRYSTAL_ON_SILICON" | "MC_PLASMA" | "MC_ORGANIC_LIGHT_EMITTING_DIODE" | "MC_ELECTROLUMINESCENT" | "MC_MICROELECTROMECHANICAL" | "MC_FIELD_EMISSION_DEVICE";
 }

@@ -52,7 +52,7 @@ export class JSSegmenter extends JSNonProxy implements JSConstructorFactory$With
     static ordinaryPreventExtensions(paramthisObj: JSDynamicObject, paramextraFlags: number): boolean;
     static resolvedOptions(paramcontext: JSContext, paramrealm: JSRealm, paramsegmenterObj: JSSegmenterObject): JSObject;
     static setIntegrityLevelFast(paramthisObj: JSDynamicObject, paramfreeze: boolean): boolean;
-    static setLocale(paramctx: JSContext, paramstate: JSSegmenter$InternalState, paramlocales: (Object | null)[]): void;
+    static setLocale(paramctx: JSContext, paramstate: JSSegmenter$InternalState, paramlocales: string[]): void;
     static setupInternalBreakIterator(paramstate: JSSegmenter$InternalState, paramgranularity: string): void;
     static testIntegrityLevelFast(paramobj: JSDynamicObject, paramfrozen: boolean): boolean;
     private constructor()

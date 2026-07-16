@@ -7,7 +7,7 @@ export class ServerPackManager$PackDownloadStatus extends Enum<ServerPackManager
     static REQUESTED: ServerPackManager$PackDownloadStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ServerPackManager$PackDownloadStatus;
-    static values(): (Object | null)[];
+    static values(): ServerPackManager$PackDownloadStatus[];
     private constructor()
     name(): "REQUESTED" | "PENDING" | "DONE";
 }

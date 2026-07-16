@@ -7,7 +7,7 @@ export class ListFormatter$Width extends Enum<ListFormatter$Width> {
     static WIDE: ListFormatter$Width;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ListFormatter$Width;
-    static values(): (Object | null)[];
+    static values(): ListFormatter$Width[];
     private constructor()
     name(): "WIDE" | "SHORT" | "NARROW";
 }

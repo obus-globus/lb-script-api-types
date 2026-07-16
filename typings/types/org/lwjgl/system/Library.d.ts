@@ -9,8 +9,8 @@ export class Library extends Object {
     static initialize(): void;
     static loadNative(paramarg0: Class<Object>, paramarg1: string, paramarg2: string): SharedLibrary;
     static loadNative(paramarg0: Class<Object>, paramarg1: string, paramarg2: string, paramarg3: boolean): SharedLibrary;
-    static loadNative(paramarg0: Class<Object>, paramarg1: string, paramarg2: Configuration<string>, ...paramarg3: (Object | null)[]): SharedLibrary;
-    static loadNative(paramarg0: Class<Object>, paramarg1: string, paramarg2: Configuration<string>, paramarg3: () => SharedLibrary, ...paramarg4: (Object | null)[]): SharedLibrary;
+    static loadNative(paramarg0: Class<Object>, paramarg1: string, paramarg2: Configuration<string>, ...paramarg3: string[]): SharedLibrary;
+    static loadNative(paramarg0: Class<Object>, paramarg1: string, paramarg2: Configuration<string>, paramarg3: () => SharedLibrary, ...paramarg4: string[]): SharedLibrary;
     static loadNative(paramarg0: string, paramarg1: string): SharedLibrary;
     static loadSystem(paramarg0: string, paramarg1: string): void;
     static loadSystem(paramarg0: (param0: string) => void, paramarg1: (param0: string) => void, paramarg2: Class<Object>, paramarg3: string, paramarg4: string): void;

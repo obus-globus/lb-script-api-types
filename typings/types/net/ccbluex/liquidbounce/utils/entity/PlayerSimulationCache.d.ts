@@ -5,15 +5,18 @@ import type { GameTickEvent } from '../../../../../net/ccbluex/liquidbounce/even
 import type { MovementInputEvent } from '../../../../../net/ccbluex/liquidbounce/event/events/MovementInputEvent.d.ts'
 import type { SimulatedPlayerCache } from '../../../../../net/ccbluex/liquidbounce/utils/entity/SimulatedPlayerCache.d.ts'
 import type { DirectionalInput } from '../../../../../net/ccbluex/liquidbounce/utils/movement/DirectionalInput.d.ts'
+import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Player } from '../../../../../net/minecraft/world/entity/player/Player.d.ts'
 export class PlayerSimulationCache extends Object implements EventListener {
     static INSTANCE: PlayerSimulationCache;
     // private criticalMovementHandler: EventHook<MovementInputEvent>;
+    readonly debugDisplayName: Component;
     // private gameTickHandler: EventHook<GameTickEvent>;
     // private localPlayerCache: SimulatedPlayerCache | null;
     // private modalMovementHandler: EventHook<MovementInputEvent>;
     // private movementHandler: EventHook<MovementInputEvent>;
     // private otherPlayerCache: Map<Player, SimulatedPlayerCache>;
+    readonly running: boolean;
     children(): EventListener[];
     getSimulationForLocalPlayer(): SimulatedPlayerCache;
     getSimulationForOtherPlayers(player: Player): SimulatedPlayerCache;

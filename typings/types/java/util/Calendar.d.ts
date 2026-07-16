@@ -61,7 +61,7 @@ export abstract class Calendar extends Object implements Serializable, Cloneable
     static YEAR: number;
     static ZONE_OFFSET: number;
     static getAvailableCalendarTypes(): string[];
-    static getAvailableLocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
     static getInstance(): Calendar;
     static getInstance(paramarg0: Locale): Calendar;
     static getInstance(paramarg0: TimeZone): Calendar;
@@ -72,7 +72,7 @@ export abstract class Calendar extends Object implements Serializable, Cloneable
     // private areFieldsSet: boolean;
     // private fields: number[];
     readonly firstDayOfWeek: number;
-    // private isSet: (Object | null)[];
+    // private isSet: boolean[];
     // private isTimeSet: boolean;
     readonly lenient: boolean;
     readonly minimalDaysInFirstWeek: number;

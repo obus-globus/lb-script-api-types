@@ -8,7 +8,7 @@ export class TransportItemsBetweenContainers$ContainerInteractionState extends E
     static PLACE_NO_ITEM: TransportItemsBetweenContainers$ContainerInteractionState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TransportItemsBetweenContainers$ContainerInteractionState;
-    static values(): (Object | null)[];
+    static values(): TransportItemsBetweenContainers$ContainerInteractionState[];
     private constructor()
     name(): "PICKUP_ITEM" | "PICKUP_NO_ITEM" | "PLACE_ITEM" | "PLACE_NO_ITEM";
 }

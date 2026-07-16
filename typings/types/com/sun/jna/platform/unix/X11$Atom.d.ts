@@ -4,7 +4,6 @@ import type { X11$XID } from '../../../../../com/sun/jna/platform/unix/X11$XID.d
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class X11$Atom extends X11$XID {
     static None: X11$Atom;
-    static None: X11$XID;
     static SIZE: number;
     static compare(paramarg0: IntegerType | null, paramarg1: IntegerType | null): number;
     static compare(paramarg0: number, paramarg1: number): number;

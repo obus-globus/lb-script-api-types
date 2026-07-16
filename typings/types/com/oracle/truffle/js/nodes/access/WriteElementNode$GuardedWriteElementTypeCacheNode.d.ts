@@ -4,7 +4,6 @@ import type { WriteElementNode } from '../../../../../../com/oracle/truffle/js/n
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class WriteElementNode$GuardedWriteElementTypeCacheNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     executeWithTargetAndIndexUnguarded(target: Object, index: Object, value: Object, receiver: Object, root: WriteElementNode): void;
     guard(target: Object): boolean;

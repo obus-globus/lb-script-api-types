@@ -9,7 +9,7 @@ import type { LoggerContext } from '../../../../../org/apache/logging/log4j/spi/
 import type { LoggerRegistry } from '../../../../../org/apache/logging/log4j/spi/LoggerRegistry.d.ts'
 import type { PropertiesUtil } from '../../../../../org/apache/logging/log4j/util/PropertiesUtil.d.ts'
 export class SimpleLoggerContext extends Object implements LoggerContext {
-    static EMPTY_ARRAY: (Object | null)[];
+    static EMPTY_ARRAY: LoggerContext[];
     constructor()
     // private dateTimeFormat: string;
     // private defaultLevel: Level;

@@ -5,7 +5,7 @@ export class BZip2CompressorOutputStream$Data extends Object {
     // private fmap: number[];
     // private generateMTFValues_yy: number[];
     // private heap: number[];
-    // private inUse: (Object | null)[];
+    // private inUse: boolean[];
     // private mtfFreq: number[];
     // private origPtr: number;
     // private parent: number[];
@@ -17,7 +17,7 @@ export class BZip2CompressorOutputStream$Data extends Object {
     // private sendMTFValues_fave: number[];
     // private sendMTFValues_len: number[][];
     // private sendMTFValues_rfreq: number[][];
-    // private sentMTFValues4_inUse16: (Object | null)[];
+    // private sentMTFValues4_inUse16: boolean[];
     // private sfmap: string[];
     // private unseqToSeq: number[];
     // private weight: number[];

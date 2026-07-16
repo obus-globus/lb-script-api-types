@@ -4,9 +4,9 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ASMWrapper$LabelAccess } from '../../../../net/lenni0451/reflect/wrapper/ASMWrapper$LabelAccess.d.ts'
 import type { ASMWrapper$MethodVisitorAccess } from '../../../../net/lenni0451/reflect/wrapper/ASMWrapper$MethodVisitorAccess.d.ts'
 export class ASMWrapper extends Object {
-    static create(paramarg0: number, paramarg1: string, paramarg2: string, paramarg3: string, paramarg4: (Object | null)[]): ASMWrapper;
+    static create(paramarg0: number, paramarg1: string, paramarg2: string, paramarg3: string, paramarg4: string[]): ASMWrapper;
     static desc(paramarg0: Class<Object>): string;
-    static desc(paramarg0: Object | null, paramarg1: Class<Object>): string;
+    static desc(paramarg0: Class<Object>[], paramarg1: Class<Object>): string;
     static desc(paramarg0: string): string;
     static desc(paramarg0: Method): string;
     static getLoadOpcode(paramarg0: Class<Object>): number;

@@ -18,7 +18,7 @@ export class AimMode extends Enum<AimMode> implements Tagged {
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AimMode;
-    static values(): (Object | null)[];
+    static values(): AimMode[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "CENTER" | "RANDOM" | "STABILIZED" | "NEAREST_ROTATION" | "REVERSE_YAW" | "DIAGONAL_YAW" | "ANGLE_YAW" | "EDGE_POINT";

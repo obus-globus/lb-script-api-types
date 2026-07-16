@@ -9,6 +9,7 @@ import type { LogEvent } from '../../../../../../../../org/apache/logging/log4j/
 import type { AbstractManager } from '../../../../../../../../org/apache/logging/log4j/core/appender/AbstractManager.d.ts'
 import type { ManagerFactory } from '../../../../../../../../org/apache/logging/log4j/core/appender/ManagerFactory.d.ts'
 import type { AbstractDatabaseManager } from '../../../../../../../../org/apache/logging/log4j/core/appender/db/AbstractDatabaseManager.d.ts'
+import type { ColumnMapping } from '../../../../../../../../org/apache/logging/log4j/core/appender/db/ColumnMapping.d.ts'
 import type { ColumnConfig } from '../../../../../../../../org/apache/logging/log4j/core/appender/db/jdbc/ColumnConfig.d.ts'
 import type { ConnectionSource } from '../../../../../../../../org/apache/logging/log4j/core/appender/db/jdbc/ConnectionSource.d.ts'
 import type { JdbcDatabaseManager$FactoryData } from '../../../../../../../../org/apache/logging/log4j/core/appender/db/jdbc/JdbcDatabaseManager$FactoryData.d.ts'
@@ -16,11 +17,11 @@ import type { JdbcDatabaseManager$Reconnector } from '../../../../../../../../or
 import type { JdbcDatabaseManager$ResultSetColumnMetaData } from '../../../../../../../../org/apache/logging/log4j/core/appender/db/jdbc/JdbcDatabaseManager$ResultSetColumnMetaData.d.ts'
 import type { MapMessage } from '../../../../../../../../org/apache/logging/log4j/message/MapMessage.d.ts'
 export class JdbcDatabaseManager extends AbstractDatabaseManager {
-    static getJDBCDatabaseManager(paramname: string, parambufferSize: number, paramconnectionSource: ConnectionSource, paramtableName: string, paramcolumnConfigs: (Object | null)[]): JdbcDatabaseManager;
+    static getJDBCDatabaseManager(paramname: string, parambufferSize: number, paramconnectionSource: ConnectionSource, paramtableName: string, paramcolumnConfigs: ColumnConfig[]): JdbcDatabaseManager;
     static getManager(paramname: string, paramfactory: ManagerFactory<AbstractManager, Object>, paramdata: Object | null): AbstractManager | null;
-    static getManager(paramname: string, parambufferSize: number, paramlayout: Layout<Serializable>, paramconnectionSource: ConnectionSource, paramtableName: string, paramcolumnConfigs: (Object | null)[], paramcolumnMappings: (Object | null)[]): JdbcDatabaseManager;
-    static getManager(paramname: string, parambufferSize: number, paramlayout: Layout<Serializable>, paramconnectionSource: ConnectionSource, paramtableName: string, paramcolumnConfigs: (Object | null)[], paramcolumnMappings: (Object | null)[], paramimmediateFail: boolean, paramreconnectIntervalMillis: number): JdbcDatabaseManager;
-    static getManager(paramname: string, parambufferSize: number, paramlayout: Layout<Serializable>, paramconnectionSource: ConnectionSource, paramtableName: string, paramcolumnConfigs: (Object | null)[], paramcolumnMappings: (Object | null)[], paramimmediateFail: boolean, paramreconnectIntervalMillis: number, paramtruncateStrings: boolean): JdbcDatabaseManager;
+    static getManager(paramname: string, parambufferSize: number, paramlayout: Layout<Serializable>, paramconnectionSource: ConnectionSource, paramtableName: string, paramcolumnConfigs: ColumnConfig[], paramcolumnMappings: ColumnMapping[]): JdbcDatabaseManager;
+    static getManager(paramname: string, parambufferSize: number, paramlayout: Layout<Serializable>, paramconnectionSource: ConnectionSource, paramtableName: string, paramcolumnConfigs: ColumnConfig[], paramcolumnMappings: ColumnMapping[], paramimmediateFail: boolean, paramreconnectIntervalMillis: number): JdbcDatabaseManager;
+    static getManager(paramname: string, parambufferSize: number, paramlayout: Layout<Serializable>, paramconnectionSource: ConnectionSource, paramtableName: string, paramcolumnConfigs: ColumnConfig[], paramcolumnMappings: ColumnMapping[], paramimmediateFail: boolean, paramreconnectIntervalMillis: number, paramtruncateStrings: boolean): JdbcDatabaseManager;
     static hasManager(paramname: string): boolean;
     constructor(arg0: string, arg1: string, arg2: (Object | null)[], arg3: JdbcDatabaseManager$FactoryData, arg4: any)
     // private columnConfigs: ColumnConfig[];

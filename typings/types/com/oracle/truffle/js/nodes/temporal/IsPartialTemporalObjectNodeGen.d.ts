@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class IsPartialTemporalObjectNodeGen extends IsPartialTemporalObjectNode {
     static create(): IsPartialTemporalObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private getCalendarNode_: PropertyGetNode;
     // private getTimeZoneNode_: PropertyGetNode;

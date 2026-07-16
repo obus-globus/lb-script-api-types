@@ -111,7 +111,7 @@ export class EntityTypes1_11$EntityType extends Enum<EntityTypes1_11$EntityType>
     static findById(paramarg0: number): EntityTypes1_11$EntityType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): EntityTypes1_11$EntityType;
-    static values(): (Object | null)[];
+    static values(): EntityTypes1_11$EntityType[];
     private constructor()
     private constructor(arg2: EntityTypes1_11$EntityType)
     private constructor(arg2: number, arg3: EntityTypes1_11$EntityType)

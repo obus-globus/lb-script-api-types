@@ -7,7 +7,7 @@ export class ConsoleAppender$Target extends Enum<ConsoleAppender$Target> {
     static SYSTEM_OUT: ConsoleAppender$Target;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ConsoleAppender$Target;
-    static values(): (Object | null)[];
+    static values(): ConsoleAppender$Target[];
     constructor(arg2: any)
     getCharset(property: string, defaultCharset: Charset): Charset;
     getDefaultCharset(): Charset;

@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ReadElementNodeFactory$BigIntReadElementTypeCacheNodeGen extends ReadElementNode$BigIntReadElementTypeCacheNode {
     static create(): ReadElementNode$BigIntReadElementTypeCacheNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private bigInt1_indexToPropertyKeyNode_: JSToPropertyKeyNode;
     // private state_0_: number;

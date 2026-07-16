@@ -10,7 +10,6 @@ import type { Socket } from '../../../../io/netty/channel/unix/Socket.d.ts'
 import type { File } from '../../../../java/io/File.d.ts'
 import type { InetAddress } from '../../../../java/net/InetAddress.d.ts'
 import type { NetworkInterface } from '../../../../java/net/NetworkInterface.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 export class LinuxSocket extends Socket {
     static UDS_SUN_PATH_SIZE: number;
     static from(paramarg0: File): FileDescriptor;
@@ -33,7 +32,7 @@ export class LinuxSocket extends Socket {
     static newSocketStream(paramarg0: SocketProtocolFamily): LinuxSocket;
     static newSocketStream(): Socket;
     static newVSockStream(): LinuxSocket;
-    static pipe(): (Object | null)[];
+    static pipe(): FileDescriptor[];
     static shouldUseIpv6(paramarg0: InternetProtocolFamily): boolean;
     static shouldUseIpv6(paramarg0: SocketProtocolFamily): boolean;
     constructor(arg0: number)

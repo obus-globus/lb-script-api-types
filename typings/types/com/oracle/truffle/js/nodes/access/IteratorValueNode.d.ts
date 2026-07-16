@@ -11,7 +11,6 @@ export abstract class IteratorValueNode extends JavaScriptBaseNode {
     static create(): IteratorValueNode;
     static getUncached(): IteratorValueNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     createGetValueNode(): PropertyGetNode;
     doForeignObject(obj: Object, interop: InteropLibrary, importValueNode: ImportValueNode): Object;

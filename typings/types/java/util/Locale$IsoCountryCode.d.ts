@@ -7,7 +7,7 @@ export class Locale$IsoCountryCode extends Enum<Locale$IsoCountryCode> {
     static PART3: Locale$IsoCountryCode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Locale$IsoCountryCode;
-    static values(): (Object | null)[];
+    static values(): Locale$IsoCountryCode[];
     private constructor()
     createCountryCodeSet(): string[];
     name(): "PART1_ALPHA2" | "PART1_ALPHA3" | "PART3";

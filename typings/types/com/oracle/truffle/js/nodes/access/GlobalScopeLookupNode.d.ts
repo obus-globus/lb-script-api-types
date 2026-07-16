@@ -9,7 +9,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class GlobalScopeLookupNode extends JavaScriptBaseNode {
     static create(paramvarName: TruffleString, paramwrite: boolean): GlobalScopeLookupNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(varName: TruffleString, write: boolean)
     // private varName: TruffleString;
     // private write: boolean;

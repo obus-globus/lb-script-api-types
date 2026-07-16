@@ -6,11 +6,9 @@ import type { ObjectLiteralNode$ObjectLiteralMemberNode } from '../../../../../.
 import type { JSRealm } from '../../../../../../com/oracle/truffle/js/runtime/JSRealm.d.ts'
 import type { JSObject } from '../../../../../../com/oracle/truffle/js/runtime/objects/JSObject.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ObjectLiteralNode$ObjectLiteralProtoMemberNode extends ObjectLiteralNode$ObjectLiteralMemberNode {
-    static EMPTY: (Object | null)[];
-    static cloneUninitialized(parammembers: (Object | null)[], parammaterializedTags: Class<Tag>[]): (Object | null)[];
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    static EMPTY: ObjectLiteralNode$ObjectLiteralMemberNode[];
+    static cloneUninitialized(parammembers: ObjectLiteralNode$ObjectLiteralMemberNode[], parammaterializedTags: Class<Tag>[]): ObjectLiteralNode$ObjectLiteralMemberNode[];
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(isStatic: boolean, valueNode: JavaScriptNode)
     // private valueNode: JavaScriptNode;

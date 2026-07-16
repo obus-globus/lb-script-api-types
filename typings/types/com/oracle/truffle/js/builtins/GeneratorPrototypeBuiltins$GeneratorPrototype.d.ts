@@ -13,7 +13,7 @@ export class GeneratorPrototypeBuiltins$GeneratorPrototype extends Enum<Generato
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): GeneratorPrototypeBuiltins$GeneratorPrototype;
-    static values(): (Object | null)[];
+    static values(): GeneratorPrototypeBuiltins$GeneratorPrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

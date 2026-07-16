@@ -6,7 +6,7 @@ export class CPUTracerCLI$Output extends Enum<CPUTracerCLI$Output> {
     static JSON: CPUTracerCLI$Output;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CPUTracerCLI$Output;
-    static values(): (Object | null)[];
+    static values(): CPUTracerCLI$Output[];
     private constructor()
     toString(): string;
     name(): "HISTOGRAM" | "JSON";

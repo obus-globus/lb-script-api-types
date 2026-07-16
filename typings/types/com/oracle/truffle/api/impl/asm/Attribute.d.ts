@@ -5,8 +5,8 @@ import type { Label } from '../../../../../../com/oracle/truffle/api/impl/asm/La
 import type { SymbolTable } from '../../../../../../com/oracle/truffle/api/impl/asm/SymbolTable.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class Attribute extends Object {
-    static read(paramattribute: Attribute, paramclassReader: ClassReader, paramoffset: number, paramlength: number, paramcharBuffer: string[], paramcodeAttributeOffset: number, paramlabels: (Object | null)[]): Attribute;
-    static readLabel(paramclassReader: ClassReader, parambytecodeOffset: number, paramlabels: (Object | null)[]): Label;
+    static read(paramattribute: Attribute, paramclassReader: ClassReader, paramoffset: number, paramlength: number, paramcharBuffer: string[], paramcodeAttributeOffset: number, paramlabels: Label[]): Attribute;
+    static readLabel(paramclassReader: ClassReader, parambytecodeOffset: number, paramlabels: Label[]): Label;
     static write(paramattribute: Attribute, paramclassWriter: ClassWriter, paramcode: number[], paramcodeLength: number, parammaxStack: number, parammaxLocals: number): number[];
     constructor(type: string)
     // private cachedContent: ByteVector;

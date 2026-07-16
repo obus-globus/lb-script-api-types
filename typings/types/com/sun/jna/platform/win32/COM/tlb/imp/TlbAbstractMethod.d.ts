@@ -10,12 +10,11 @@ import type { OaIdl$TYPEDESC } from '../../../../../../../../com/sun/jna/platfor
 import type { OaIdl$VARIANT_BOOL } from '../../../../../../../../com/sun/jna/platform/win32/OaIdl$VARIANT_BOOL.d.ts'
 import type { Variant } from '../../../../../../../../com/sun/jna/platform/win32/Variant.d.ts'
 import type { WTypes$VARTYPE } from '../../../../../../../../com/sun/jna/platform/win32/WTypes$VARTYPE.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 export abstract class TlbAbstractMethod extends TlbBase implements Variant {
     static CR: string;
     static CRCR: string;
-    static IDISPATCH_METHODS: (Object | null)[];
-    static IUNKNOWN_METHODS: (Object | null)[];
+    static IDISPATCH_METHODS: string[];
+    static IUNKNOWN_METHODS: string[];
     static TAB: string;
     static TABTAB: string;
     static VARIANT_FALSE: OaIdl$VARIANT_BOOL;

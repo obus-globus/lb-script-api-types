@@ -27,7 +27,7 @@ export class IOStreamAdapter<T extends unknown> extends IOBaseStreamAdapter<T, I
     static empty(): IOStream<Object>;
     static iterate(paramarg0: Object | null, paramarg1: (param0: Object | null) => Object | null): IOStream<Object>;
     static of(paramarg0: Object | null): IOStream<Object>;
-    static of(paramarg0: Object | null): IOStream<Object>;
+    static of(...paramarg0: (Object | null)[]): IOStream<Object>;
     static of(paramarg0: (Object | null)[]): IOStream<Object>;
     private constructor(arg0: Stream<T>)
     allMatch(arg0: (param0: T) => boolean): boolean;

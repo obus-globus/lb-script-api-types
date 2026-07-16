@@ -7,7 +7,6 @@ import type { JSArrayBufferObject } from '../../../../../../com/oracle/truffle/j
 export class TextDecoderBuiltinsFactory$DecodeBufferSliceNodeGen extends TextDecoderBuiltins$DecodeBufferSlice {
     static create(): TextDecoderBuiltins$DecodeBufferSlice;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private arrayBufferInterop_interop_: InteropLibrary;
     // private state_0_: number;

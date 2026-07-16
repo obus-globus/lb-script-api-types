@@ -9,7 +9,7 @@ export class Files$FilePredicate extends Enum<Files$FilePredicate> implements Pr
     static IS_FILE: Files$FilePredicate;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Files$FilePredicate;
-    static values(): (Object | null)[];
+    static values(): Files$FilePredicate[];
     constructor(arg2: LineProcessor<string[]>)
     test(input: File): boolean;
     name(): "IS_DIRECTORY" | "IS_FILE";

@@ -10,7 +10,7 @@ export class Platform$Architecture extends Enum<Platform$Architecture> {
     static X86: Platform$Architecture;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Platform$Architecture;
-    static values(): (Object | null)[];
+    static values(): Platform$Architecture[];
     private constructor(arg2: boolean)
     // private is64Bit: boolean;
     is32Bit(): boolean;

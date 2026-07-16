@@ -5,7 +5,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class DefaultNumberOptionNodeGen extends DefaultNumberOptionNode {
     static create(): DefaultNumberOptionNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private getOption_toNumberNode_: JSToNumberNode;
     // private state_0_: number;

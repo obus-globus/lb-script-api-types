@@ -7,7 +7,7 @@ export class SwingWorker$StateValue extends Enum<SwingWorker$StateValue> {
     static STARTED: SwingWorker$StateValue;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SwingWorker$StateValue;
-    static values(): (Object | null)[];
+    static values(): SwingWorker$StateValue[];
     private constructor()
     name(): "PENDING" | "STARTED" | "DONE";
 }

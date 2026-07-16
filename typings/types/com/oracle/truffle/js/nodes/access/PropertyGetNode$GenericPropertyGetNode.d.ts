@@ -10,7 +10,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PropertyGetNode$GenericPropertyGetNode extends PropertyGetNode$GetCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     // private fallbackBranch: BranchProfile;
     // private foreignGetNode: PropertyGetNode$ForeignPropertyGetNode;

@@ -16,7 +16,6 @@ import type { StreamCodec } from '../../../../../net/minecraft/network/codec/Str
 import type { FireworkExplosion } from '../../../../../net/minecraft/world/item/component/FireworkExplosion.d.ts'
 import type { Fireworks } from '../../../../../net/minecraft/world/item/component/Fireworks.d.ts'
 export class FireworksPredicate extends Record implements SingleComponentItemPredicate<Fireworks> {
-    static CODEC: Codec<Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
     static CODEC: Codec<FireworksPredicate>;
     static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<any>>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;

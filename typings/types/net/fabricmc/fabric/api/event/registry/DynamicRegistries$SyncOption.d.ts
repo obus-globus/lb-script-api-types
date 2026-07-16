@@ -5,7 +5,7 @@ export class DynamicRegistries$SyncOption extends Enum<DynamicRegistries$SyncOpt
     static SKIP_WHEN_EMPTY: DynamicRegistries$SyncOption;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DynamicRegistries$SyncOption;
-    static values(): (Object | null)[];
+    static values(): DynamicRegistries$SyncOption[];
     private constructor()
     name(): "SKIP_WHEN_EMPTY";
 }

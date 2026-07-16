@@ -14,7 +14,7 @@ export class CommandPermissionLevel extends Enum<CommandPermissionLevel> {
     static getByValue(paramarg0: number, paramarg1: CommandPermissionLevel): CommandPermissionLevel;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CommandPermissionLevel;
-    static values(): (Object | null)[];
+    static values(): CommandPermissionLevel[];
     private constructor(arg2: number)
     private constructor(arg2: CommandPermissionLevel)
     readonly value: number;

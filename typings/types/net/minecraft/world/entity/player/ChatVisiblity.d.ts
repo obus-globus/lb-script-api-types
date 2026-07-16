@@ -10,7 +10,7 @@ export class ChatVisiblity extends Enum<ChatVisiblity> {
     static SYSTEM: ChatVisiblity;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ChatVisiblity;
-    static values(): (Object | null)[];
+    static values(): ChatVisiblity[];
     private constructor(id: number, key: string)
     // private caption: Component;
     // private id: number;

@@ -7,7 +7,7 @@ export class PriorityQueues$EmptyPriorityQueue extends Object implements Priorit
     changed(): void;
     clear(): void;
     clone(): Object;
-    comparator(): (param0: Object) => boolean;
+    comparator(): (param0: Object | null, param1: Object | null) => number;
     dequeue(): Object;
     enqueue(arg0: Object): void;
     equals(arg0: Object | null): boolean;

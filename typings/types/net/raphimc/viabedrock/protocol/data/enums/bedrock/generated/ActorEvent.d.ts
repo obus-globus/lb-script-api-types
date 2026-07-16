@@ -69,7 +69,7 @@ export class ActorEvent extends Enum<ActorEvent> {
     static getByValue(paramarg0: number, paramarg1: ActorEvent): ActorEvent;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ActorEvent;
-    static values(): (Object | null)[];
+    static values(): ActorEvent[];
     private constructor(arg2: number)
     private constructor(arg2: ActorEvent)
     readonly value: number;

@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class CreateMethodPropertyNodeGen extends CreateMethodPropertyNode {
     static create(paramcontext: JSContext, paramkey: Object): CreateMethodPropertyNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, key: Object)
     // private cached_propertyCache_: PropertySetNode;
     // private state_0_: number;

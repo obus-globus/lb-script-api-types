@@ -10,7 +10,6 @@ export class JSToBooleanNodeGen$Inlined extends JSToBooleanNode implements Unado
     static create(): JSToBooleanNode;
     static getUncached(): JSToBooleanNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(target: InlineSupport$InlineTarget)
     // private foreignObject0_cache: InlineSupport$ReferenceField<JSToBooleanNodeGen$ForeignObject0Data>;
     // private state_0_: InlineSupport$StateField;

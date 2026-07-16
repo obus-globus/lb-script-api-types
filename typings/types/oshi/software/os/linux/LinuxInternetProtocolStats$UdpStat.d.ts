@@ -13,7 +13,7 @@ export class LinuxInternetProtocolStats$UdpStat extends Enum<LinuxInternetProtoc
     static SndbufErrors: LinuxInternetProtocolStats$UdpStat;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LinuxInternetProtocolStats$UdpStat;
-    static values(): (Object | null)[];
+    static values(): LinuxInternetProtocolStats$UdpStat[];
     private constructor()
     name(): "OutDatagrams" | "InDatagrams" | "NoPorts" | "InErrors" | "RcvbufErrors" | "SndbufErrors" | "InCsumErrors" | "IgnoredMulti" | "MemErrors";
 }

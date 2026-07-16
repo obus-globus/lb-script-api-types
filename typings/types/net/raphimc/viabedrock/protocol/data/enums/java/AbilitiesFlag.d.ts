@@ -8,7 +8,7 @@ export class AbilitiesFlag extends Enum<AbilitiesFlag> {
     static INVULNERABLE: AbilitiesFlag;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AbilitiesFlag;
-    static values(): (Object | null)[];
+    static values(): AbilitiesFlag[];
     private constructor()
     getBit(): number;
     name(): "INVULNERABLE" | "FLYING" | "CAN_FLY" | "INSTABUILD";

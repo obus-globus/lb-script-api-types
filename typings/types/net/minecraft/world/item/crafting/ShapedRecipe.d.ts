@@ -22,7 +22,6 @@ export class ShapedRecipe extends NormalCraftingRecipe {
     static KEY_CODEC: Codec<ResourceKey<Recipe<any>>>;
     static MAP_CODEC: MapCodec<ShapedRecipe>;
     static SERIALIZER: RecipeSerializer<ShapedRecipe>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<any>>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ShapedRecipe>;
     constructor(commonInfo: Recipe$CommonInfo, bookInfo: CraftingRecipe$CraftingBookInfo, pattern: ShapedRecipePattern, result: ItemStackTemplate)
     // private pattern: ShapedRecipePattern;

@@ -13,7 +13,7 @@ export class InputMode extends Enum<InputMode> {
     static getByValue(paramarg0: number, paramarg1: InputMode): InputMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): InputMode;
-    static values(): (Object | null)[];
+    static values(): InputMode[];
     private constructor(arg2: number)
     private constructor(arg2: InputMode)
     readonly value: number;

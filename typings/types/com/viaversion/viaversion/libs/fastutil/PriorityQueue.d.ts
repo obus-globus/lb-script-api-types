@@ -3,7 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface PriorityQueue<K extends unknown> extends Object {
     changed(): void;
     clear(): void;
-    comparator(): (param0: Object) => boolean;
+    comparator(): (param0: K, param1: K) => number;
     dequeue(): K;
     enqueue(arg0: K): void;
     first(): K;

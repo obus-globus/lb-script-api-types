@@ -14,6 +14,7 @@ export class AStarMode extends TpAuraMode implements AStarPathBuilder {
     static Companion: Tagged$Companion;
     static INSTANCE: AStarMode;
     readonly allowDiagonal: boolean;
+    readonly maxIterations: number;
     // private maximumCost: number;
     // private /*not mapped: */ getMaximumCost(): number;
     // private maximumDistance: number;
@@ -25,6 +26,7 @@ export class AStarMode extends TpAuraMode implements AStarPathBuilder {
     // private renderHandler: EventHook<WorldRenderEvent>;
     // private stickAt: number;
     // private /*not mapped: */ getStickAt(): number;
+    readonly stopRange: number;
     // private tickDistance: number;
     // private /*not mapped: */ getTickDistance(): number;
     // private tickHandler: EventHook<GameTickEvent>;

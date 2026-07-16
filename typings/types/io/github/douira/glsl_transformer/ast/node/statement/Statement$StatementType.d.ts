@@ -23,7 +23,7 @@ export class Statement$StatementType extends Enum<Statement$StatementType> {
     static WHILE_LOOP: Statement$StatementType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Statement$StatementType;
-    static values(): (Object | null)[];
+    static values(): Statement$StatementType[];
     private constructor(arg2: Statement$StatementType$StructureType)
     structureType: Statement$StatementType$StructureType;
     name(): "COMPOUND" | "DECLARATION" | "EXPRESSION" | "EMPTY" | "SELECTION" | "SWITCH" | "CASE" | "DEFAULT" | "FOR_LOOP" | "WHILE_LOOP" | "DO_WHILE_LOOP" | "CONTINUE" | "BREAK" | "RETURN" | "DISCARD" | "DEMOTE" | "IGNORE_INTERSECTION" | "TERMINATE_RAY";

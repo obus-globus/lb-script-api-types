@@ -4,7 +4,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { KClass } from '../../../../../kotlin/reflect/KClass.d.ts'
 import type { SandboxPolicy } from '../../../../../org/graalvm/polyglot/SandboxPolicy.d.ts'
 export interface TruffleInstrument$Registration extends Annotation, Object{
-    constructor(id: string, internal: boolean, internalResources: KClass<InternalResource>[], name: string, optionalResources: string[], sandbox: SandboxPolicy, services: KClass<Object>[], version: string, website: string)
     /*not mapped: */ id(): string;
     /*not mapped: */ internal(): boolean;
     /*not mapped: */ internalResources(): KClass<InternalResource>[];

@@ -10,7 +10,6 @@ export class HasPropertyCacheNode extends PropertyCacheNode<HasPropertyCacheNode
     static create(paramkey: Object, paramcontext: JSContext): HasPropertyCacheNode;
     static create(paramkey: Object, paramcontext: JSContext, paramhasOwnProperty: boolean): HasPropertyCacheNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(key: Object, context: JSContext, hasOwnProperty: boolean)
     // private cacheNode: HasPropertyCacheNode$HasCacheNode;
     // private hasOwnProperty: boolean;

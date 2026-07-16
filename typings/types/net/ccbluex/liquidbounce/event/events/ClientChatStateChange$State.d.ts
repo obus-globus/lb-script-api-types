@@ -14,7 +14,7 @@ export class ClientChatStateChange$State extends Enum<ClientChatStateChange$Stat
     static getEntries(): ClientChatStateChange$State[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClientChatStateChange$State;
-    static values(): (Object | null)[];
+    static values(): ClientChatStateChange$State[];
     private constructor()
     name(): "CONNECTING" | "CONNECTED" | "LOGGING_IN" | "LOGGED_IN" | "DISCONNECTED" | "AUTHENTICATION_FAILED";
 }

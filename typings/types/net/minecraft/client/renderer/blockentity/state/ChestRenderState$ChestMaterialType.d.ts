@@ -12,7 +12,7 @@ export class ChestRenderState$ChestMaterialType extends Enum<ChestRenderState$Ch
     static TRAPPED: ChestRenderState$ChestMaterialType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ChestRenderState$ChestMaterialType;
-    static values(): (Object | null)[];
+    static values(): ChestRenderState$ChestMaterialType[];
     private constructor()
     name(): "ENDER_CHEST" | "CHRISTMAS" | "TRAPPED" | "COPPER_UNAFFECTED" | "COPPER_EXPOSED" | "COPPER_WEATHERED" | "COPPER_OXIDIZED" | "REGULAR";
 }

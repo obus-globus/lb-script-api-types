@@ -19,7 +19,7 @@ export class ServerboundConfigurationPackets1_20_5 extends Enum<ServerboundConfi
     static SELECT_KNOWN_PACKS: ServerboundConfigurationPackets1_20_5;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ServerboundConfigurationPackets1_20_5;
-    static values(): (Object | null)[];
+    static values(): ServerboundConfigurationPackets1_20_5[];
     private constructor()
     direction(): Direction;
     getId(): number;

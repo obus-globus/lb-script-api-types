@@ -31,28 +31,21 @@ export class VkSubpassDependency2KHR extends VkSubpassDependency2 {
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkSubpassDependency2KHR;
     static calloc(paramarg0: MemoryStack): VkSubpassDependency2KHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkSubpassDependency2;
     static create(paramarg0: number): VkSubpassDependency2;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkSubpassDependency2KHR;
     static create(paramarg0: number): VkSubpassDependency2KHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkSubpassDependency2;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkSubpassDependency2KHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkSubpassDependency2;
     static malloc(paramarg0: MemoryStack): VkSubpassDependency2;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkSubpassDependency2KHR;
     static malloc(paramarg0: MemoryStack): VkSubpassDependency2KHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ndependencyFlags(paramarg0: number): number;
     static ndependencyFlags(paramarg0: number, paramarg1: number): void;
     static ndstAccessMask(paramarg0: number): number;
@@ -73,7 +66,6 @@ export class VkSubpassDependency2KHR extends VkSubpassDependency2 {
     static nsrcSubpass(paramarg0: number, paramarg1: number): void;
     static nviewOffset(paramarg0: number): number;
     static nviewOffset(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

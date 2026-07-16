@@ -11,7 +11,7 @@ export class PartyDestinationCookieIntent extends Enum<PartyDestinationCookieInt
     static getByValue(paramarg0: number, paramarg1: PartyDestinationCookieIntent): PartyDestinationCookieIntent;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PartyDestinationCookieIntent;
-    static values(): (Object | null)[];
+    static values(): PartyDestinationCookieIntent[];
     private constructor(arg2: number)
     private constructor(arg2: PartyDestinationCookieIntent)
     readonly value: number;

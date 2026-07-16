@@ -24,28 +24,21 @@ export class VkSubpassDescriptionDepthStencilResolveKHR extends VkSubpassDescrip
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkSubpassDescriptionDepthStencilResolveKHR;
     static calloc(paramarg0: MemoryStack): VkSubpassDescriptionDepthStencilResolveKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkSubpassDescriptionDepthStencilResolve;
     static create(paramarg0: number): VkSubpassDescriptionDepthStencilResolve;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkSubpassDescriptionDepthStencilResolveKHR;
     static create(paramarg0: number): VkSubpassDescriptionDepthStencilResolveKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkSubpassDescriptionDepthStencilResolve;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkSubpassDescriptionDepthStencilResolveKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkSubpassDescriptionDepthStencilResolve;
     static malloc(paramarg0: MemoryStack): VkSubpassDescriptionDepthStencilResolve;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkSubpassDescriptionDepthStencilResolveKHR;
     static malloc(paramarg0: MemoryStack): VkSubpassDescriptionDepthStencilResolveKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ndepthResolveMode(paramarg0: number): number;
     static ndepthResolveMode(paramarg0: number, paramarg1: number): void;
     static npDepthStencilResolveAttachment(paramarg0: number): VkAttachmentReference2;
@@ -56,7 +49,6 @@ export class VkSubpassDescriptionDepthStencilResolveKHR extends VkSubpassDescrip
     static nsType(paramarg0: number, paramarg1: number): void;
     static nstencilResolveMode(paramarg0: number): number;
     static nstencilResolveMode(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

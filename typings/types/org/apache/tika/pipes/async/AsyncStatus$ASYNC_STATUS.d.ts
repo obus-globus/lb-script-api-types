@@ -7,7 +7,7 @@ export class AsyncStatus$ASYNC_STATUS extends Enum<AsyncStatus$ASYNC_STATUS> {
     static STARTED: AsyncStatus$ASYNC_STATUS;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AsyncStatus$ASYNC_STATUS;
-    static values(): (Object | null)[];
+    static values(): AsyncStatus$ASYNC_STATUS[];
     private constructor()
     name(): "STARTED" | "COMPLETED" | "CRASHED";
 }

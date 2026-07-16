@@ -8,7 +8,7 @@ export class Explosion$BlockInteraction extends Enum<Explosion$BlockInteraction>
     static TRIGGER_BLOCK: Explosion$BlockInteraction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Explosion$BlockInteraction;
-    static values(): (Object | null)[];
+    static values(): Explosion$BlockInteraction[];
     private constructor(shouldAffectBlocklikeEntities: boolean)
     // private shouldAffectBlocklikeEntities: boolean;
     shouldAffectBlocklikeEntities(): boolean;

@@ -3,6 +3,7 @@ import type { ValueGroup } from '../../../../../../net/ccbluex/liquidbounce/conf
 import type { EventHook } from '../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { EventListener } from '../../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
 import type { BrowserReadyEvent } from '../../../../../../net/ccbluex/liquidbounce/event/events/BrowserReadyEvent.d.ts'
+import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
 export class GlobalBrowserSettings extends ValueGroup implements EventListener {
     static INSTANCE: GlobalBrowserSettings;
     /**
@@ -12,6 +13,7 @@ export class GlobalBrowserSettings extends ValueGroup implements EventListener {
      */
     readonly accelerated: Value<boolean> | null;
     // private browserReadyHandler: EventHook<BrowserReadyEvent>;
+    readonly debugDisplayName: Component;
     /**
      * Quality setting that controls the rendering resolution.
      * 1.0 = full resolution, 0.5 = half-resolution (better performance), etc.
@@ -22,6 +24,7 @@ export class GlobalBrowserSettings extends ValueGroup implements EventListener {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserSettings.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserSettings.kt:45}
      */
     readonly quality: number;
+    readonly running: boolean;
     children(): EventListener[];
     parent(): EventListener | null;
     unregister(): void;

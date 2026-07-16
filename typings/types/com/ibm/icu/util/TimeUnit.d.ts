@@ -247,7 +247,7 @@ export class TimeUnit extends MeasureUnit {
     static getAvailable(): MeasureUnit[];
     static getAvailableTypes(): string[];
     static internalGetInstance(paramarg0: string, paramarg1: string): MeasureUnit;
-    static values(): (Object | null)[];
+    static values(): TimeUnit[];
     constructor(arg0: string, arg1: string)
     // private index: number;
     // private readResolve(): Object;

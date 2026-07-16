@@ -10,7 +10,7 @@ export class SharedTypes_v1_21_90_CameraPreset_AudioListener extends Enum<Shared
     static getByValue(paramarg0: number, paramarg1: SharedTypes_v1_21_90_CameraPreset_AudioListener): SharedTypes_v1_21_90_CameraPreset_AudioListener;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SharedTypes_v1_21_90_CameraPreset_AudioListener;
-    static values(): (Object | null)[];
+    static values(): SharedTypes_v1_21_90_CameraPreset_AudioListener[];
     private constructor(arg2: number)
     private constructor(arg2: SharedTypes_v1_21_90_CameraPreset_AudioListener)
     readonly value: number;

@@ -14,7 +14,7 @@ export class Quadrant extends Enum<Quadrant> {
     static parseJson(paramdegrees: number): Quadrant;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Quadrant;
-    static values(): (Object | null)[];
+    static values(): Quadrant[];
     private constructor(shift: number, rotationX: OctahedralGroup, rotationY: OctahedralGroup, rotationZ: OctahedralGroup)
     rotationX: OctahedralGroup;
     rotationY: OctahedralGroup;

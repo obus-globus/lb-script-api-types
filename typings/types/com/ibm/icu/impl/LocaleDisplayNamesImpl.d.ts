@@ -12,19 +12,18 @@ import type { ULocale } from '../../../../com/ibm/icu/util/ULocale.d.ts'
 import type { StringBuilder } from '../../../../java/lang/StringBuilder.d.ts'
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 export class LocaleDisplayNamesImpl extends LocaleDisplayNames {
-    static getInstance(paramarg0: ULocale, ...paramarg1: (Object | null)[]): LocaleDisplayNames;
+    static getInstance(paramarg0: ULocale, ...paramarg1: DisplayContext[]): LocaleDisplayNames;
     static getInstance(paramarg0: ULocale, paramarg1: LocaleDisplayNames$DialectHandling): LocaleDisplayNames;
     static getInstance(paramarg0: ULocale): LocaleDisplayNames;
     static getInstance(paramarg0: Locale): LocaleDisplayNames;
-    static getInstance(paramarg0: Locale, ...paramarg1: (Object | null)[]): LocaleDisplayNames;
+    static getInstance(paramarg0: Locale, ...paramarg1: DisplayContext[]): LocaleDisplayNames;
     static haveData(paramarg0: LocaleDisplayNamesImpl$DataTableType): boolean;
     constructor(arg0: ULocale, arg1: LocaleDisplayNames$DialectHandling)
     constructor(arg0: ULocale, ...arg1: DisplayContext[])
     // private capitalization: DisplayContext;
     // private capitalizationBrkIter: BreakIterator;
-    // private capitalizationUsage: (Object | null)[];
+    // private capitalizationUsage: boolean[];
     // private currencyDisplayInfo: CurrencyData$CurrencyDisplayInfo;
     readonly dialectHandling: LocaleDisplayNames$DialectHandling;
     // private format: string;
@@ -44,7 +43,7 @@ export class LocaleDisplayNamesImpl extends LocaleDisplayNames {
     getContext(arg0: DisplayContext$Type): DisplayContext;
     getDialectHandling(): LocaleDisplayNames$DialectHandling;
     getLocale(): ULocale;
-    getUiListCompareWholeItems(arg0: ULocale[], arg1: (param0: Object) => boolean): LocaleDisplayNames$UiListItem[];
+    getUiListCompareWholeItems(arg0: ULocale[], arg1: (param0: LocaleDisplayNames$UiListItem, param1: LocaleDisplayNames$UiListItem) => number): LocaleDisplayNames$UiListItem[];
     keyDisplayName(arg0: string): string;
     // private keyDisplayName(arg0: string, arg1: boolean): string;
     keyValueDisplayName(arg0: string, arg1: string): string;

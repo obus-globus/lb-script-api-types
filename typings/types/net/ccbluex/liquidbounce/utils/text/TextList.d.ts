@@ -9,7 +9,6 @@ import type { EntitySelector } from '../../../../../net/minecraft/commands/argum
 import type { Language } from '../../../../../net/minecraft/locale/Language.d.ts'
 import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { ComponentContents } from '../../../../../net/minecraft/network/chat/ComponentContents.d.ts'
-import type { FormattedText } from '../../../../../net/minecraft/network/chat/FormattedText.d.ts'
 import type { FormattedText$ContentConsumer } from '../../../../../net/minecraft/network/chat/FormattedText$ContentConsumer.d.ts'
 import type { FormattedText$StyledContentConsumer } from '../../../../../net/minecraft/network/chat/FormattedText$StyledContentConsumer.d.ts'
 import type { MutableComponent } from '../../../../../net/minecraft/network/chat/MutableComponent.d.ts'
@@ -24,7 +23,6 @@ import type { Unit } from '../../../../../net/minecraft/util/Unit.d.ts'
 import type { ChunkPos } from '../../../../../net/minecraft/world/level/ChunkPos.d.ts'
 export class TextList extends Object implements Component {
     static EMPTY: TextList;
-    static EMPTY: FormattedText;
     static STOP_ITERATION: Optional<Unit>;
     static empty(): MutableComponent;
     static keybind(paramname: string): MutableComponent;
@@ -34,15 +32,15 @@ export class TextList extends Object implements Component {
     static object(paraminfo: ObjectInfo): MutableComponent;
     static object(paraminfo: ObjectInfo, paramfallback: Component): MutableComponent;
     static of(paramarg0: Component[]): TextList;
-    static of(...paramarg0: (Object | null)[]): TextList;
+    static of(...paramarg0: Component[]): TextList;
     static score(paramname: string, paramobjective: string): MutableComponent;
     static score(parampattern: CompilableString<EntitySelector>, paramobjective: string): MutableComponent;
     static selector(parampattern: CompilableString<EntitySelector>, paramseparator: Optional<Component>): MutableComponent;
     static translatable(paramkey: string): MutableComponent;
-    static translatable(paramkey: string, ...paramargs: (Object | null)[]): MutableComponent;
-    static translatableEscape(paramkey: string, ...paramargs: (Object | null)[]): MutableComponent;
+    static translatable(paramkey: string, ...paramargs: Object[]): MutableComponent;
+    static translatableEscape(paramkey: string, ...paramargs: Object[]): MutableComponent;
     static translatableWithFallback(paramkey: string, paramfallback: string): MutableComponent;
-    static translatableWithFallback(paramkey: string, paramfallback: string, ...paramargs: (Object | null)[]): MutableComponent;
+    static translatableWithFallback(paramkey: string, paramfallback: string, ...paramargs: Object[]): MutableComponent;
     static translationArg(parammessage: Message): Component;
     static translationArg(paramuri: URI): Component;
     static translationArg(paramdate: Date): Component;

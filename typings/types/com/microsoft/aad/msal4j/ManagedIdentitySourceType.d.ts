@@ -11,7 +11,7 @@ export class ManagedIdentitySourceType extends Enum<ManagedIdentitySourceType> {
     static SERVICE_FABRIC: ManagedIdentitySourceType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ManagedIdentitySourceType;
-    static values(): (Object | null)[];
+    static values(): ManagedIdentitySourceType[];
     private constructor()
     name(): "NONE" | "IMDS" | "APP_SERVICE" | "AZURE_ARC" | "CLOUD_SHELL" | "SERVICE_FABRIC" | "DEFAULT_TO_IMDS";
 }

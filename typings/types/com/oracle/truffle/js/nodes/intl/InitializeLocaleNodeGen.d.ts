@@ -8,7 +8,6 @@ export class InitializeLocaleNodeGen extends InitializeLocaleNode {
     static create(paramcontext: JSContext): InitializeLocaleNode;
     static createInitalizeLocaleNode(paramcontext: JSContext): InitializeLocaleNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     static stringToWeekdayValue(paramfw: string): number;
     private constructor(context: JSContext)
     // private initializeLocaleUsingObject_toStringNode_: JSToStringNode;

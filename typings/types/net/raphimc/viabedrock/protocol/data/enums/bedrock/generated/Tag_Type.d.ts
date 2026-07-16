@@ -20,7 +20,7 @@ export class Tag_Type extends Enum<Tag_Type> {
     static getByValue(paramarg0: number, paramarg1: Tag_Type): Tag_Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Tag_Type;
-    static values(): (Object | null)[];
+    static values(): Tag_Type[];
     private constructor(arg2: number)
     private constructor(arg2: Tag_Type)
     readonly value: number;

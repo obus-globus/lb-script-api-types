@@ -34,7 +34,7 @@ export class CachedDateFormat extends DateFormat {
     static WEEK_OF_YEAR_FIELD: number;
     static YEAR_FIELD: number;
     static findMillisecondStart(paramtime: number, paramformatted: string, paramformatter: DateFormat): number;
-    static getAvailableLocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
     static getDateInstance(): DateFormat;
     static getDateInstance(paramarg0: number): DateFormat;
     static getDateInstance(paramarg0: number, paramarg1: Locale): DateFormat;

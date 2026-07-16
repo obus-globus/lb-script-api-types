@@ -24,28 +24,21 @@ export class VkSemaphoreSubmitInfoKHR extends VkSemaphoreSubmitInfo {
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkSemaphoreSubmitInfoKHR;
     static calloc(paramarg0: MemoryStack): VkSemaphoreSubmitInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkSemaphoreSubmitInfo;
     static create(paramarg0: number): VkSemaphoreSubmitInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkSemaphoreSubmitInfoKHR;
     static create(paramarg0: number): VkSemaphoreSubmitInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkSemaphoreSubmitInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkSemaphoreSubmitInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkSemaphoreSubmitInfo;
     static malloc(paramarg0: MemoryStack): VkSemaphoreSubmitInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkSemaphoreSubmitInfoKHR;
     static malloc(paramarg0: MemoryStack): VkSemaphoreSubmitInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ndeviceIndex(paramarg0: number): number;
     static ndeviceIndex(paramarg0: number, paramarg1: number): void;
     static npNext(paramarg0: number): number;
@@ -58,7 +51,6 @@ export class VkSemaphoreSubmitInfoKHR extends VkSemaphoreSubmitInfo {
     static nstageMask(paramarg0: number, paramarg1: number): void;
     static nvalue(paramarg0: number): number;
     static nvalue(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

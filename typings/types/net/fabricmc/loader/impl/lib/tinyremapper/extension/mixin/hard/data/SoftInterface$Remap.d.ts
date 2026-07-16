@@ -8,7 +8,7 @@ export class SoftInterface$Remap extends Enum<SoftInterface$Remap> {
     static ONLY_PREFIX: SoftInterface$Remap;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SoftInterface$Remap;
-    static values(): (Object | null)[];
+    static values(): SoftInterface$Remap[];
     private constructor()
     name(): "NONE" | "ONLY_PREFIX" | "ALL" | "FORCE";
 }

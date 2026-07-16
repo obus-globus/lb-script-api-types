@@ -12,7 +12,7 @@ export class MinimapHudComponent$EntityValueGroup$OutOfBounds extends Enum<Minim
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MinimapHudComponent$EntityValueGroup$OutOfBounds;
-    static values(): (Object | null)[];
+    static values(): MinimapHudComponent$EntityValueGroup$OutOfBounds[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "NONE" | "ALL";

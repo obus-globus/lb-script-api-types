@@ -6,8 +6,8 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class FilteredEntryMultimap<K extends unknown, V extends unknown> extends AbstractMultimap<K, V> implements FilteredMultimap<K, V> {
-    constructor(unfiltered: Multimap<K, V>, predicate: (param0: Object) => boolean)
-    // private predicate: (param0: Object) => boolean;
+    constructor(unfiltered: Multimap<K, V>, predicate: (param0: Map$Entry<K, V>) => boolean)
+    // private predicate: (param0: Map$Entry<K, V>) => boolean;
     // private unfiltered: Multimap<K, V>;
     clear(): void;
     containsKey(key: Object): boolean;
@@ -17,10 +17,10 @@ export class FilteredEntryMultimap<K extends unknown, V extends unknown> extends
     createKeys(): K[];
     createValues(): V[];
     entryIterator(): Iterator<Map$Entry<K, V>>;
-    entryPredicate(): (param0: Object) => boolean;
+    entryPredicate(): (param0: Map$Entry<K, V>) => boolean;
     get(key: K): V[];
     removeAll(key: Object): V[];
-    removeEntriesIf(predicate: (param0: Object) => boolean): boolean;
+    removeEntriesIf(predicate: (param0: Map$Entry<K, V[]>) => boolean): boolean;
     // private satisfies(key: K, value: V): boolean;
     size(): number;
     unfiltered(): Multimap<K, V>;

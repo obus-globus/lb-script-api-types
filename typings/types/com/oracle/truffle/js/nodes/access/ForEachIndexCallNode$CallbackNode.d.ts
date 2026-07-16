@@ -3,7 +3,6 @@ import type { JavaScriptBaseNode } from '../../../../../../com/oracle/truffle/js
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ForEachIndexCallNode$CallbackNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     apply(index: number, value: Object, target: Object, callback: Object, callbackThisArg: Object, currentResult: Object): Object;
 }

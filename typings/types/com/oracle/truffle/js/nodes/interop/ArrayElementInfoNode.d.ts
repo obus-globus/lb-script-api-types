@@ -9,7 +9,6 @@ export abstract class ArrayElementInfoNode extends JavaScriptBaseNode {
     static REMOVABLE: number;
     static WRITABLE: number;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(receiver: JSArrayBase, index: number, query: number): TriState;
     executeBoolean(receiver: JSArrayBase, index: number, query: number): boolean;

@@ -1,11 +1,9 @@
 import type { AbstractByteBufAllocator } from '../../../io/netty/buffer/AbstractByteBufAllocator.d.ts'
 import type { ByteBuf } from '../../../io/netty/buffer/ByteBuf.d.ts'
-import type { ByteBufAllocator } from '../../../io/netty/buffer/ByteBufAllocator.d.ts'
 import type { ByteBufAllocatorMetric } from '../../../io/netty/buffer/ByteBufAllocatorMetric.d.ts'
 import type { ByteBufAllocatorMetricProvider } from '../../../io/netty/buffer/ByteBufAllocatorMetricProvider.d.ts'
 import type { UnpooledByteBufAllocator$UnpooledByteBufAllocatorMetric } from '../../../io/netty/buffer/UnpooledByteBufAllocator$UnpooledByteBufAllocatorMetric.d.ts'
 export class UnpooledByteBufAllocator extends AbstractByteBufAllocator implements ByteBufAllocatorMetricProvider {
-    static DEFAULT: ByteBufAllocator;
     static DEFAULT: UnpooledByteBufAllocator;
     constructor(arg0: boolean)
     constructor(arg0: boolean, arg1: boolean)

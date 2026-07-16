@@ -8,7 +8,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class WriteElementNodeFactory$WriteElementTypeCacheDispatchNodeGen extends WriteElementNode$WriteElementTypeCacheDispatchNode {
     static create(): WriteElementNode$WriteElementTypeCacheDispatchNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private isObjectNode: IsJSDynamicObjectNode;
     // private objectHandler: WriteElementNode$JSObjectWriteElementTypeCacheNode;

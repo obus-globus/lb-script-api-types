@@ -11,11 +11,11 @@ export class Iterables extends Object {
     static concat(parama: (Object | null)[], paramb: (Object | null)[]): (Object | null)[];
     static concat(parama: (Object | null)[], paramb: (Object | null)[], paramc: (Object | null)[]): (Object | null)[];
     static concat(parama: (Object | null)[], paramb: (Object | null)[], paramc: (Object | null)[], paramd: (Object | null)[]): (Object | null)[];
-    static concat(paraminputs: Object | null): (Object | null)[];
+    static concat(...paraminputs: (Object | null)[][]): (Object | null)[];
     static concat(paraminputs: (Object | null)[][]): (Object | null)[];
     static consumingIterable(paramiterable: (Object | null)[]): (Object | null)[];
     static contains(paramiterable: Object[], paramelement: Object): boolean;
-    static cycle(paramelements: Object | null): (Object | null)[];
+    static cycle(...paramelements: (Object | null)[]): (Object | null)[];
     static cycle(paramiterable: (Object | null)[]): (Object | null)[];
     static elementsEqual(paramiterable1: Object[], paramiterable2: Object[]): boolean;
     static filter(paramunfiltered: Object[], paramdesiredType: Class<Object>): (Object | null)[];
@@ -33,7 +33,7 @@ export class Iterables extends Object {
     static indexOf(paramiterable: (Object | null)[], parampredicate: (param0: Object) => boolean): number;
     static isEmpty(paramiterable: Object[]): boolean;
     static limit(paramiterable: (Object | null)[], paramlimitSize: number): (Object | null)[];
-    static mergeSorted(paramiterables: (Object | null)[][], paramcomparator: (param0: Object) => boolean): (Object | null)[];
+    static mergeSorted(paramiterables: (Object | null)[][], paramcomparator: (param0: Object, param1: Object) => number): (Object | null)[];
     static paddedPartition(paramiterable: (Object | null)[], paramsize: number): (Object | null)[][];
     static partition(paramiterable: (Object | null)[], paramsize: number): (Object | null)[][];
     static removeAll(paramremoveFrom: Object[], paramelementsToRemove: Object[]): boolean;
@@ -41,11 +41,10 @@ export class Iterables extends Object {
     static retainAll(paramremoveFrom: Object[], paramelementsToRetain: Object[]): boolean;
     static size(paramiterable: Object[]): number;
     static skip(paramiterable: (Object | null)[], paramnumberToSkip: number): (Object | null)[];
-    static toArray(paramiterable: (Object | null)[], paramtype: Class<Object>): Object | null;
+    static toArray(paramiterable: (Object | null)[], paramtype: Class<Object>): (Object | null)[];
     static toString(paramiterable: Object[]): string;
-    static transform(paramfromIterable: (Object | null)[], paramfunction: (param0: Object) => boolean): (Object | null)[];
+    static transform(paramfromIterable: (Object | null)[], paramfunction: (param0: Object) => Object | null): (Object | null)[];
     static tryFind(paramiterable: (Object | null)[], parampredicate: (param0: Object) => boolean): Optional<Object>;
-    static unmodifiableIterable(paramiterable: (Object | null)[]): (Object | null)[];
     static unmodifiableIterable(paramiterable: (Object | null)[]): (Object | null)[];
     private constructor()
 }

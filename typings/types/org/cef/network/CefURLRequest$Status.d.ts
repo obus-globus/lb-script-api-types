@@ -9,7 +9,7 @@ export class CefURLRequest$Status extends Enum<CefURLRequest$Status> {
     static UR_UNKNOWN: CefURLRequest$Status;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CefURLRequest$Status;
-    static values(): (Object | null)[];
+    static values(): CefURLRequest$Status[];
     private constructor()
     name(): "UR_UNKNOWN" | "UR_SUCCESS" | "UR_IO_PENDING" | "UR_CANCELED" | "UR_FAILED";
 }

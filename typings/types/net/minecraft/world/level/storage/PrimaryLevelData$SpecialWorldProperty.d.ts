@@ -7,7 +7,7 @@ export class PrimaryLevelData$SpecialWorldProperty extends Enum<PrimaryLevelData
     static NONE: PrimaryLevelData$SpecialWorldProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PrimaryLevelData$SpecialWorldProperty;
-    static values(): (Object | null)[];
+    static values(): PrimaryLevelData$SpecialWorldProperty[];
     private constructor()
     name(): "NONE" | "FLAT" | "DEBUG";
 }

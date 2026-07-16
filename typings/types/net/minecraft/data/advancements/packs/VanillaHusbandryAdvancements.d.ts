@@ -6,10 +6,11 @@ import type { HolderGetter } from '../../../../../net/minecraft/core/HolderGette
 import type { HolderLookup$Provider } from '../../../../../net/minecraft/core/HolderLookup$Provider.d.ts'
 import type { AdvancementSubProvider } from '../../../../../net/minecraft/data/advancements/AdvancementSubProvider.d.ts'
 import type { EntityType } from '../../../../../net/minecraft/world/entity/EntityType.d.ts'
+import type { Item } from '../../../../../net/minecraft/world/item/Item.d.ts'
 export class VanillaHusbandryAdvancements extends Object implements AdvancementSubProvider {
     static BREEDABLE_ANIMALS: EntityType<any>[];
     static INDIRECTLY_BREEDABLE_ANIMALS: EntityType<any>[];
-    static WAX_SCRAPING_TOOLS: (Object | null)[];
+    static WAX_SCRAPING_TOOLS: Item[];
     static createBreedAllAnimalsAdvancement(paramparent: AdvancementHolder, paramoutput: (param0: AdvancementHolder) => void, paramentityTypes: HolderGetter<EntityType<any>>, parambreedable: Stream<EntityType<any>>, paramindirectlyBreedable: Stream<EntityType<any>>): AdvancementHolder;
     static createPlaceholder(paramid: string): AdvancementHolder;
     constructor()

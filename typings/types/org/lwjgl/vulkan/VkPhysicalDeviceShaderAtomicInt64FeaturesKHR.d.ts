@@ -22,28 +22,21 @@ export class VkPhysicalDeviceShaderAtomicInt64FeaturesKHR extends VkPhysicalDevi
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceShaderAtomicInt64FeaturesKHR;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceShaderAtomicInt64FeaturesKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceShaderAtomicInt64Features;
     static create(paramarg0: number): VkPhysicalDeviceShaderAtomicInt64Features;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceShaderAtomicInt64FeaturesKHR;
     static create(paramarg0: number): VkPhysicalDeviceShaderAtomicInt64FeaturesKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceShaderAtomicInt64Features;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceShaderAtomicInt64FeaturesKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceShaderAtomicInt64Features;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceShaderAtomicInt64Features;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceShaderAtomicInt64FeaturesKHR;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceShaderAtomicInt64FeaturesKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
@@ -52,7 +45,6 @@ export class VkPhysicalDeviceShaderAtomicInt64FeaturesKHR extends VkPhysicalDevi
     static nshaderBufferInt64Atomics(paramarg0: number, paramarg1: number): void;
     static nshaderSharedInt64Atomics(paramarg0: number): number;
     static nshaderSharedInt64Atomics(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

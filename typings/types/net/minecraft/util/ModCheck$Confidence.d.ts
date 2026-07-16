@@ -7,7 +7,7 @@ export class ModCheck$Confidence extends Enum<ModCheck$Confidence> {
     static VERY_LIKELY: ModCheck$Confidence;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ModCheck$Confidence;
-    static values(): (Object | null)[];
+    static values(): ModCheck$Confidence[];
     private constructor(description: string, shouldReportAsModified: boolean)
     // private description: string;
     // private shouldReportAsModified: boolean;

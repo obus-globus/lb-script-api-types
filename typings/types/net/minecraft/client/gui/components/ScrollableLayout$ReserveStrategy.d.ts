@@ -6,7 +6,7 @@ export class ScrollableLayout$ReserveStrategy extends Enum<ScrollableLayout$Rese
     static RIGHT: ScrollableLayout$ReserveStrategy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ScrollableLayout$ReserveStrategy;
-    static values(): (Object | null)[];
+    static values(): ScrollableLayout$ReserveStrategy[];
     private constructor()
     name(): "RIGHT" | "BOTH";
 }

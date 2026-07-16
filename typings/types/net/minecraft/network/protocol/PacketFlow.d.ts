@@ -6,7 +6,7 @@ export class PacketFlow extends Enum<PacketFlow> {
     static SERVERBOUND: PacketFlow;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PacketFlow;
-    static values(): (Object | null)[];
+    static values(): PacketFlow[];
     private constructor(id: string)
     // private id: string;
     getOpposite(): PacketFlow;

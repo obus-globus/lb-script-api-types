@@ -7,7 +7,7 @@ export class MarkupKind extends Enum<MarkupKind> {
     static get(paramstringValue: string): MarkupKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): MarkupKind;
-    static values(): (Object | null)[];
+    static values(): MarkupKind[];
     private constructor(stringValue: string)
     readonly stringValue: string;
     getStringValue(): string;

@@ -18,14 +18,14 @@ export class TSResponse extends Object {
     static WAITING: number;
     constructor(arg0: number[])
     // private encodedTsToken: number[];
-    readonly failureInfo: (Object | null)[];
+    readonly failureInfo: boolean[];
     // private status: number;
     // private statusString: string[];
     // private tsToken: PKCS7;
     // private tstInfo: TimestampToken;
     getEncodedToken(): number[];
     getFailureCodeAsText(): string;
-    getFailureInfo(): (Object | null)[];
+    getFailureInfo(): boolean[];
     getStatusCode(): number;
     getStatusCodeAsText(): string;
     getStatusMessages(): string[];

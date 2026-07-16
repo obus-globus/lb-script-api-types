@@ -6,7 +6,7 @@ import type { Info } from '../../../com/jcraft/jorbis/Info.d.ts'
 import type { InfoMode } from '../../../com/jcraft/jorbis/InfoMode.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class Residue0 extends FuncResidue {
-    static residue_P: (Object | null)[];
+    static residue_P: FuncResidue[];
     constructor()
     free_info(arg0: Object): void;
     free_look(arg0: Object): void;

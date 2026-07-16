@@ -4,6 +4,6 @@ import type { DataGenerator } from '../../../net/minecraft/data/DataGenerator.d.
 export class Main extends Object {
     static addServerConverters(paramgenerator: DataGenerator, paraminput: Path[], paramserver: boolean, paramdev: boolean): void;
     static addServerDefinitionProviders(paramgenerator: DataGenerator, paramserver: boolean, paramreports: boolean): void;
-    static main(paramargs: (Object | null)[]): void;
+    static main(paramargs: string[]): void;
     constructor()
 }

@@ -13,7 +13,7 @@ export class ModuleProphuntESP$Tracking extends Enum<ModuleProphuntESP$Tracking>
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleProphuntESP$Tracking;
-    static values(): (Object | null)[];
+    static values(): ModuleProphuntESP$Tracking[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "FALLING_BLOCKS" | "BLOCK_UPDATES" | "CHUNK_DELTA_UPDATES";

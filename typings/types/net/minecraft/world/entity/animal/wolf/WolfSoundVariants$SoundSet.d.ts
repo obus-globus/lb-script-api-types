@@ -11,7 +11,7 @@ export class WolfSoundVariants$SoundSet extends Enum<WolfSoundVariants$SoundSet>
     static SAD: WolfSoundVariants$SoundSet;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): WolfSoundVariants$SoundSet;
-    static values(): (Object | null)[];
+    static values(): WolfSoundVariants$SoundSet[];
     private constructor(identifier: string, soundEventIdentifier: string)
     readonly identifier: string;
     readonly soundEventIdentifier: string;

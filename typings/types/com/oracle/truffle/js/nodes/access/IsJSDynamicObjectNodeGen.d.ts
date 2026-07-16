@@ -5,7 +5,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class IsJSDynamicObjectNodeGen extends IsJSDynamicObjectNode {
     static create(): IsJSDynamicObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private isObjectCached_cache: IsJSDynamicObjectNodeGen$IsObjectCachedData;
     // private state_0_: number;

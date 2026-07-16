@@ -9,7 +9,6 @@ import type { BreakIterator } from '../../../../../../org/graalvm/shadowed/com/i
 export class CreateSegmentDataObjectNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): CreateSegmentDataObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private context: JSContext;
     // private createIndexPropertyNode: CreateDataPropertyNode;

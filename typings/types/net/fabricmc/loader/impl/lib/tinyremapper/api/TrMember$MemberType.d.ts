@@ -6,7 +6,7 @@ export class TrMember$MemberType extends Enum<TrMember$MemberType> {
     static METHOD: TrMember$MemberType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TrMember$MemberType;
-    static values(): (Object | null)[];
+    static values(): TrMember$MemberType[];
     private constructor()
     name(): "METHOD" | "FIELD";
 }

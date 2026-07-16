@@ -28,28 +28,21 @@ export class VkCommandBufferInheritanceRenderingInfoKHR extends VkCommandBufferI
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkCommandBufferInheritanceRenderingInfoKHR;
     static calloc(paramarg0: MemoryStack): VkCommandBufferInheritanceRenderingInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkCommandBufferInheritanceRenderingInfo;
     static create(paramarg0: number): VkCommandBufferInheritanceRenderingInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkCommandBufferInheritanceRenderingInfoKHR;
     static create(paramarg0: number): VkCommandBufferInheritanceRenderingInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkCommandBufferInheritanceRenderingInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkCommandBufferInheritanceRenderingInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkCommandBufferInheritanceRenderingInfo;
     static malloc(paramarg0: MemoryStack): VkCommandBufferInheritanceRenderingInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkCommandBufferInheritanceRenderingInfoKHR;
     static malloc(paramarg0: MemoryStack): VkCommandBufferInheritanceRenderingInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ncolorAttachmentCount(paramarg0: number): number;
     static ncolorAttachmentCount(paramarg0: number, paramarg1: number): void;
     static ndepthAttachmentFormat(paramarg0: number): number;
@@ -68,7 +61,6 @@ export class VkCommandBufferInheritanceRenderingInfoKHR extends VkCommandBufferI
     static nstencilAttachmentFormat(paramarg0: number, paramarg1: number): void;
     static nviewMask(paramarg0: number): number;
     static nviewMask(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

@@ -15,7 +15,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class DeclareGlobalFunctionNode extends DeclareGlobalNode {
     static create(paramvarName: TruffleString, paramconfigurable: boolean): DeclareGlobalFunctionNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(varName: TruffleString, configurable: boolean)
     // private configurable: boolean;
     // private getOwnPropertyNode: JSGetOwnPropertyNode;

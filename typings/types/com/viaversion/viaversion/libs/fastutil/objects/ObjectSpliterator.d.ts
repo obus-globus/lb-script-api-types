@@ -4,7 +4,7 @@ import type { Consumer } from '../../../../../../java/util/function/Consumer.d.t
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export interface ObjectSpliterator<K extends unknown> extends Spliterator<K>, Object {
     forEachRemaining(arg0: (param0: K) => void): void;
-    getComparator(): (param0: Object) => boolean;
+    getComparator(): (param0: K, param1: K) => number;
     getExactSizeIfKnown(): number;
     hasCharacteristics(arg0: number): boolean;
     skip(arg0: number): number;

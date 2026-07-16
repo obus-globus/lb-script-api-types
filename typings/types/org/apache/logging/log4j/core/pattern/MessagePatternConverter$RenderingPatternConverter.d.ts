@@ -6,7 +6,7 @@ import type { MessagePatternConverter } from '../../../../../../org/apache/loggi
 import type { TextRenderer } from '../../../../../../org/apache/logging/log4j/core/pattern/TextRenderer.d.ts'
 export class MessagePatternConverter$RenderingPatternConverter extends MessagePatternConverter {
     static CATEGORY: string;
-    static newInstance(paramconfig: Configuration, paramoptions: (Object | null)[]): MessagePatternConverter;
+    static newInstance(paramconfig: Configuration, paramoptions: string[]): MessagePatternConverter;
     constructor(delegate: MessagePatternConverter, textRenderer: TextRenderer)
     // private delegate: MessagePatternConverter;
     // private textRenderer: TextRenderer;

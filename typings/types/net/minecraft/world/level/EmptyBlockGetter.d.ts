@@ -25,7 +25,7 @@ export class EmptyBlockGetter extends Enum<EmptyBlockGetter> implements BlockGet
     static traverseBlocks(paramfrom: Vec3, paramto: Vec3, paramcontext: Object | null, paramconsumer: (param0: Object | null, param1: BlockPos) => Object | null, parammissFactory: (param0: Object | null) => Object | null): Object | null;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): EmptyBlockGetter;
-    static values(): (Object | null)[];
+    static values(): EmptyBlockGetter[];
     private constructor()
     clip(arg0: ClipContext): BlockHitResult;
     clipWithInteractionOverride(from: Vec3, to: Vec3, pos: BlockPos, blockShape: VoxelShape, blockState: BlockState): BlockHitResult;

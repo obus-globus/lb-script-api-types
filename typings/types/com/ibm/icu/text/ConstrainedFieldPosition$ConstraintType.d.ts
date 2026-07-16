@@ -8,7 +8,7 @@ export class ConstrainedFieldPosition$ConstraintType extends Enum<ConstrainedFie
     static VALUE: ConstrainedFieldPosition$ConstraintType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ConstrainedFieldPosition$ConstraintType;
-    static values(): (Object | null)[];
+    static values(): ConstrainedFieldPosition$ConstraintType[];
     private constructor()
     name(): "NONE" | "CLASS" | "FIELD" | "VALUE";
 }

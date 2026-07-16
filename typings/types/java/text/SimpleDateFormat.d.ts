@@ -36,7 +36,7 @@ export class SimpleDateFormat extends DateFormat {
     static WEEK_OF_MONTH_FIELD: number;
     static WEEK_OF_YEAR_FIELD: number;
     static YEAR_FIELD: number;
-    static getAvailableLocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
     static getDateInstance(): DateFormat;
     static getDateInstance(paramarg0: number): DateFormat;
     static getDateInstance(paramarg0: number, paramarg1: Locale): DateFormat;
@@ -102,7 +102,7 @@ export class SimpleDateFormat extends DateFormat {
     setDateFormatSymbols(arg0: DateFormatSymbols): void;
     // private shouldObeyCount(arg0: number, arg1: number): boolean;
     // private subFormat(arg0: number, arg1: number, arg2: Format$FieldDelegate, arg3: Format$StringBuf, arg4: boolean): void;
-    // private subParse(arg0: string, arg1: number, arg2: number, arg3: number, arg4: boolean, arg5: (Object | null)[], arg6: ParsePosition, arg7: boolean, arg8: CalendarBuilder): number;
+    // private subParse(arg0: string, arg1: number, arg2: number, arg3: number, arg4: boolean, arg5: boolean[], arg6: ParsePosition, arg7: boolean, arg8: CalendarBuilder): number;
     // private subParseNumericZone(arg0: string, arg1: number, arg2: number, arg3: number, arg4: boolean, arg5: CalendarBuilder): number;
     // private subParseZoneString(arg0: string, arg1: number, arg2: CalendarBuilder): number;
     toLocalizedPattern(): string;

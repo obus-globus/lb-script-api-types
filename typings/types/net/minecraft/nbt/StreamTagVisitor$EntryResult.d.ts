@@ -8,7 +8,7 @@ export class StreamTagVisitor$EntryResult extends Enum<StreamTagVisitor$EntryRes
     static SKIP: StreamTagVisitor$EntryResult;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): StreamTagVisitor$EntryResult;
-    static values(): (Object | null)[];
+    static values(): StreamTagVisitor$EntryResult[];
     private constructor()
     name(): "ENTER" | "SKIP" | "BREAK" | "HALT";
 }

@@ -13,7 +13,7 @@ export class ModuleTeleport$GroundMode extends Enum<ModuleTeleport$GroundMode> i
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleTeleport$GroundMode;
-    static values(): (Object | null)[];
+    static values(): ModuleTeleport$GroundMode[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "TRUE" | "FALSE" | "CORRECT";

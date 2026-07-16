@@ -8,7 +8,7 @@ export class CosmeticCategory extends Enum<CosmeticCategory> {
     static getEntries(): CosmeticCategory[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CosmeticCategory;
-    static values(): (Object | null)[];
+    static values(): CosmeticCategory[];
     private constructor()
     name(): "CAPE" | "DEADMAU5_EARS" | "DINNERBONE";
 }

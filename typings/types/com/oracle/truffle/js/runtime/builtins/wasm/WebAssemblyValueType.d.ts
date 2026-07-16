@@ -13,7 +13,7 @@ export class WebAssemblyValueType extends Enum<WebAssemblyValueType> {
     static lookupType(paramtype: string): WebAssemblyValueType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): WebAssemblyValueType;
-    static values(): (Object | null)[];
+    static values(): WebAssemblyValueType[];
     private constructor(reference: boolean)
     readonly reference: boolean;
     getDefaultValue(realm: JSRealm): Object;

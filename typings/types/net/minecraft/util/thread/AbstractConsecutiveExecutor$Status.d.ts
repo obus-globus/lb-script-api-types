@@ -7,7 +7,7 @@ export class AbstractConsecutiveExecutor$Status extends Enum<AbstractConsecutive
     static SLEEPING: AbstractConsecutiveExecutor$Status;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): AbstractConsecutiveExecutor$Status;
-    static values(): (Object | null)[];
+    static values(): AbstractConsecutiveExecutor$Status[];
     private constructor()
     name(): "SLEEPING" | "RUNNING" | "CLOSED";
 }

@@ -4,6 +4,7 @@ import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../net/minecraft/core/BlockPos.d.ts'
+import type { Direction } from '../../../../net/minecraft/core/Direction.d.ts'
 import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
 import type { RegistryAccess } from '../../../../net/minecraft/core/RegistryAccess.d.ts'
 import type { ParticleOptions } from '../../../../net/minecraft/core/particles/ParticleOptions.d.ts'
@@ -47,7 +48,7 @@ import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
 import type { LevelTickAccess } from '../../../../net/minecraft/world/ticks/LevelTickAccess.d.ts'
 import type { WorldGenTickAccess } from '../../../../net/minecraft/world/ticks/WorldGenTickAccess.d.ts'
 export class WorldGenRegion extends Object implements WorldGenLevel {
-    static DIRECTIONS: (Object | null)[];
+    static DIRECTIONS: Direction[];
     constructor(level: ServerLevel, cache: StaticCache2D<GenerationChunkHolder>, generatingStep: ChunkStep, center: ChunkAccess)
     readonly biomeManager: BiomeManager;
     readonly blockTicks: WorldGenTickAccess<Block>;

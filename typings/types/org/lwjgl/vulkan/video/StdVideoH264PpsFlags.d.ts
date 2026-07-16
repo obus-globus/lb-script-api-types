@@ -47,7 +47,6 @@ export class StdVideoH264PpsFlags extends Struct<StdVideoH264PpsFlags> implement
     static nweighted_pred_flag(paramarg0: number): number;
     static nweighted_pred_flag(paramarg0: number, paramarg1: number): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     bottom_field_pic_order_in_frame_present_flag(): boolean;

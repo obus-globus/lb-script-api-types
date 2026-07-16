@@ -7,7 +7,7 @@ export class JavaTypeFlexibility extends Enum<JavaTypeFlexibility> {
     static INFLEXIBLE: JavaTypeFlexibility;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): JavaTypeFlexibility;
-    static values(): (Object | null)[];
+    static values(): JavaTypeFlexibility[];
     private constructor()
     name(): "INFLEXIBLE" | "FLEXIBLE_UPPER_BOUND" | "FLEXIBLE_LOWER_BOUND";
 }

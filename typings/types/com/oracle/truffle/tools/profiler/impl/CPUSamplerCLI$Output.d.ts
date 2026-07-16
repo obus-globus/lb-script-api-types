@@ -8,7 +8,7 @@ export class CPUSamplerCLI$Output extends Enum<CPUSamplerCLI$Output> {
     static JSON: CPUSamplerCLI$Output;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CPUSamplerCLI$Output;
-    static values(): (Object | null)[];
+    static values(): CPUSamplerCLI$Output[];
     private constructor()
     toString(): string;
     name(): "HISTOGRAM" | "CALLTREE" | "JSON" | "FLAMEGRAPH";

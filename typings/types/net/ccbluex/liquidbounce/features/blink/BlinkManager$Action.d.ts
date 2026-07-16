@@ -8,7 +8,7 @@ export class BlinkManager$Action extends Enum<BlinkManager$Action> {
     static getEntries(): BlinkManager$Action[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BlinkManager$Action;
-    static values(): (Object | null)[];
+    static values(): BlinkManager$Action[];
     private constructor(priority: number)
     readonly priority: number;
     name(): "FLUSH" | "PASS" | "QUEUE";

@@ -25,28 +25,21 @@ export class VkRenderingInputAttachmentIndexInfoKHR extends VkRenderingInputAtta
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkRenderingInputAttachmentIndexInfoKHR;
     static calloc(paramarg0: MemoryStack): VkRenderingInputAttachmentIndexInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkRenderingInputAttachmentIndexInfo;
     static create(paramarg0: number): VkRenderingInputAttachmentIndexInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkRenderingInputAttachmentIndexInfoKHR;
     static create(paramarg0: number): VkRenderingInputAttachmentIndexInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkRenderingInputAttachmentIndexInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkRenderingInputAttachmentIndexInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkRenderingInputAttachmentIndexInfo;
     static malloc(paramarg0: MemoryStack): VkRenderingInputAttachmentIndexInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkRenderingInputAttachmentIndexInfoKHR;
     static malloc(paramarg0: MemoryStack): VkRenderingInputAttachmentIndexInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ncolorAttachmentCount(paramarg0: number): number;
     static ncolorAttachmentCount(paramarg0: number, paramarg1: number): void;
     static npColorAttachmentInputIndices(paramarg0: number): IntBuffer;
@@ -59,7 +52,6 @@ export class VkRenderingInputAttachmentIndexInfoKHR extends VkRenderingInputAtta
     static npStencilInputAttachmentIndex(paramarg0: number, paramarg1: IntBuffer): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

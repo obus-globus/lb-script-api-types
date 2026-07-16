@@ -21,35 +21,27 @@ export class VkPhysicalDeviceShaderDemoteToHelperInvocationFeaturesEXT extends V
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceShaderDemoteToHelperInvocationFeaturesEXT;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceShaderDemoteToHelperInvocationFeaturesEXT;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceShaderDemoteToHelperInvocationFeatures;
     static create(paramarg0: number): VkPhysicalDeviceShaderDemoteToHelperInvocationFeatures;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceShaderDemoteToHelperInvocationFeaturesEXT;
     static create(paramarg0: number): VkPhysicalDeviceShaderDemoteToHelperInvocationFeaturesEXT;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceShaderDemoteToHelperInvocationFeatures;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceShaderDemoteToHelperInvocationFeaturesEXT;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceShaderDemoteToHelperInvocationFeatures;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceShaderDemoteToHelperInvocationFeatures;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceShaderDemoteToHelperInvocationFeaturesEXT;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceShaderDemoteToHelperInvocationFeaturesEXT;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
     static nshaderDemoteToHelperInvocation(paramarg0: number): number;
     static nshaderDemoteToHelperInvocation(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

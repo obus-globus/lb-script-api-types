@@ -32,7 +32,6 @@ export class BitSets extends Object {
     static subtract(parambs1: number[], parambs2: number[]): void;
     static toBit(paramindex: number): number;
     static toString(parambs: number[]): string;
-    static toString(parambs: number[]): string;
     static union(parambs1: number[], parambs2: number[]): void;
     static valuesToArray(parambs: number[]): number[];
     static wordIndex(parami: number): number;

@@ -10,7 +10,7 @@ export class FileSystem extends Enum<FileSystem> {
     static getCurrent(): FileSystem;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FileSystem;
-    static values(): (Object | null)[];
+    static values(): FileSystem[];
     private constructor(arg2: number, arg3: boolean, arg4: boolean, arg5: number, arg6: number, arg7: number[], arg8: string[], arg9: boolean, arg10: boolean, arg11: string)
     readonly blockSize: number;
     readonly casePreserving: boolean;

@@ -10,7 +10,7 @@ export class CefRequest$TransitionFlags extends Enum<CefRequest$TransitionFlags>
     static TT_SERVER_REDIRECT_FLAG: CefRequest$TransitionFlags;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CefRequest$TransitionFlags;
-    static values(): (Object | null)[];
+    static values(): CefRequest$TransitionFlags[];
     private constructor(arg2: number)
     // private flag: number;
     getValue(): number;

@@ -4,7 +4,6 @@ import type { JSToPrimitiveNode$Hint } from '../../../../../../com/oracle/truffl
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ToPrimitiveBaseNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doFallback(value: Object, hint: JSToPrimitiveNode$Hint, node: Node): Object;
 }

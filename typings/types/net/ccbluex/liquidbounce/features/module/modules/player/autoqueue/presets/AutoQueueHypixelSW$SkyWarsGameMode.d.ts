@@ -12,7 +12,7 @@ export class AutoQueueHypixelSW$SkyWarsGameMode extends Enum<AutoQueueHypixelSW$
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AutoQueueHypixelSW$SkyWarsGameMode;
-    static values(): (Object | null)[];
+    static values(): AutoQueueHypixelSW$SkyWarsGameMode[];
     private constructor(tag: string, joinName: string)
     readonly joinName: string;
     readonly tag: string;

@@ -8,7 +8,6 @@ import type { Identifier } from '../../../../../../../net/minecraft/resources/Id
 import type { RegistryOps$RegistryInfoLookup } from '../../../../../../../net/minecraft/resources/RegistryOps$RegistryInfoLookup.d.ts'
 import type { FeatureFlag } from '../../../../../../../net/minecraft/world/flag/FeatureFlag.d.ts'
 export class FeaturesEnabledResourceCondition extends Record implements ResourceCondition {
-    static CODEC: Codec<ResourceCondition>;
     static CODEC: MapCodec<FeaturesEnabledResourceCondition>;
     static CONDITION_CODEC: Codec<ResourceCondition>;
     static LIST_CODEC: Codec<ResourceCondition[]>;

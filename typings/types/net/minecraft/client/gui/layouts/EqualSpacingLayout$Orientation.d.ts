@@ -8,7 +8,7 @@ export class EqualSpacingLayout$Orientation extends Enum<EqualSpacingLayout$Orie
     static VERTICAL: EqualSpacingLayout$Orientation;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): EqualSpacingLayout$Orientation;
-    static values(): (Object | null)[];
+    static values(): EqualSpacingLayout$Orientation[];
     private constructor()
     // private getPrimaryLength(childContainer: EqualSpacingLayout$ChildContainer): number;
     // private getPrimaryLength(widget: LayoutElement): number;

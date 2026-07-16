@@ -15,7 +15,6 @@ import type { JSTemporalZonedDateTimeObject } from '../../../../../../com/oracle
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ToTemporalZonedDateTimeNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(value: Object, options: Object): JSTemporalZonedDateTimeObject;
     toTemporalZonedDateTime(item: Object, options: Object, errorBranch: InlinedBranchProfile, isObjectProfile: InlinedConditionProfile, isZonedDateTimeProfile: InlinedConditionProfile, isObjectNode: IsObjectNode, getOptionsObject: GetOptionsObjectNode, equalNode: TruffleString$EqualNode, getOptionNode: TemporalGetOptionNode, toTimeZoneIdentifier: ToTemporalTimeZoneIdentifierNode, getCalendarWithISODefault: GetTemporalCalendarIdentifierWithISODefaultNode, dateFromFieldsNode: TemporalCalendarDateFromFieldsNode, toJavaString: TruffleString$ToJavaStringNode, fromJavaString: TruffleString$FromJavaStringNode): JSTemporalZonedDateTimeObject;

@@ -7,7 +7,7 @@ export class StatusConfiguration$Verbosity extends Enum<StatusConfiguration$Verb
     static toVerbosity(paramvalue: string): StatusConfiguration$Verbosity;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): StatusConfiguration$Verbosity;
-    static values(): (Object | null)[];
+    static values(): StatusConfiguration$Verbosity[];
     private constructor()
     name(): "QUIET" | "VERBOSE";
 }

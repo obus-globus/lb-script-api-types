@@ -8,7 +8,7 @@ export class AclEntryType extends Enum<AclEntryType> {
     static DENY: AclEntryType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AclEntryType;
-    static values(): (Object | null)[];
+    static values(): AclEntryType[];
     private constructor()
     name(): "ALLOW" | "DENY" | "AUDIT" | "ALARM";
 }

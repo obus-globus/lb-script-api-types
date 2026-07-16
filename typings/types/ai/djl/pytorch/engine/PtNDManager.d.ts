@@ -10,7 +10,6 @@ import type { Buffer } from '../../../../java/nio/Buffer.d.ts'
 import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
 import type { Charset } from '../../../../java/nio/charset/Charset.d.ts'
 import type { AtomicLong } from '../../../../java/util/concurrent/atomic/AtomicLong.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Number } from '../../../../java/lang/Number.d.ts'
 export class PtNDManager extends BaseNDManager {
     static UID_GENERATOR: AtomicLong;
@@ -28,15 +27,15 @@ export class PtNDManager extends BaseNDManager {
     create(arg0: Shape, arg1: DataType, arg2: Device): NDArray;
     create(arg0: Buffer, arg1: Shape): NDArray;
     create(arg0: Buffer, arg1: Shape, arg2: DataType): PtNDArray;
-    create(arg0: (Object | null)[][]): NDArray;
+    create(arg0: boolean[][]): NDArray;
     create(arg0: number[][]): NDArray;
     create(arg0: string[]): NDArray;
     create(arg0: string[], arg1: Shape): NDArray;
     create(arg0: string[], arg1: Charset): NDArray;
     create(arg0: string[], arg1: Charset, arg2: Shape): NDArray;
     create(arg0: boolean): NDArray;
-    create(arg0: (Object | null)[]): NDArray;
-    create(arg0: (Object | null)[], arg1: Shape): NDArray;
+    create(arg0: boolean[]): NDArray;
+    create(arg0: boolean[], arg1: Shape): NDArray;
     create(arg0: number): NDArray;
     create(arg0: number[]): NDArray;
     create(arg0: number[], arg1: Shape): NDArray;

@@ -11,7 +11,7 @@ export class ChunkSectionLayer extends Enum<ChunkSectionLayer> {
     static byTransparency(paramtransparency: Transparency): ChunkSectionLayer;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ChunkSectionLayer;
-    static values(): (Object | null)[];
+    static values(): ChunkSectionLayer[];
     private constructor(pipeline: RenderPipeline, bufferSize: number, translucent: boolean)
     // private bufferSize: number;
     // private label: string;

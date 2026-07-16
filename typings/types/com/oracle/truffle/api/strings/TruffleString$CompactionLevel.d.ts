@@ -7,7 +7,7 @@ export class TruffleString$CompactionLevel extends Enum<TruffleString$Compaction
     static S4: TruffleString$CompactionLevel;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TruffleString$CompactionLevel;
-    static values(): (Object | null)[];
+    static values(): TruffleString$CompactionLevel[];
     private constructor(bytes: number, log2: number)
     readonly bytes: number;
     readonly log2: number;

@@ -9,7 +9,6 @@ import type { ScriptOrModule } from '../../../../../com/oracle/truffle/js/runtim
 export class ConstructorBuiltinsFactory$CreateDynamicFunctionNodeGen extends ConstructorBuiltins$CreateDynamicFunctionNode {
     static create(paramcontext: JSContext, paramgeneratorFunction: boolean, paramasyncFunction: boolean): ConstructorBuiltins$CreateDynamicFunctionNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, generatorFunction: boolean, asyncFunction: boolean)
     // private cached_cache: ConstructorBuiltinsFactory$CreateDynamicFunctionNodeGen$CachedData;
     // private state_0_: number;

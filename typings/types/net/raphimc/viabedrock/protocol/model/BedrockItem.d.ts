@@ -5,7 +5,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class BedrockItem extends Object implements Item {
     static empty(): BedrockItem;
-    static emptyArray(paramarg0: number): (Object | null)[];
+    static emptyArray(paramarg0: number): BedrockItem[];
     static isEmpty(paramarg0: Item): boolean;
     constructor(arg0: number)
     constructor(arg0: number, arg1: number, arg2: number)

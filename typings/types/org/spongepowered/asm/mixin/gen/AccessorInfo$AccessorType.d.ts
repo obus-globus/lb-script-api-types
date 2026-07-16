@@ -10,7 +10,7 @@ export class AccessorInfo$AccessorType extends Enum<AccessorInfo$AccessorType> {
     static OBJECT_FACTORY: AccessorInfo$AccessorType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AccessorInfo$AccessorType;
-    static values(): (Object | null)[];
+    static values(): AccessorInfo$AccessorType[];
     constructor(arg2: (Object | null)[], arg3: any)
     readonly expectedPrefixes: string[];
     getExpectedPrefixes(): string[];

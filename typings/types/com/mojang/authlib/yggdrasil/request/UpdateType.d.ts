@@ -6,7 +6,7 @@ export class UpdateType extends Enum<UpdateType> {
     static REMOVE: UpdateType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): UpdateType;
-    static values(): (Object | null)[];
+    static values(): UpdateType[];
     private constructor()
     name(): "ADD" | "REMOVE";
 }

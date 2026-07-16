@@ -3,7 +3,7 @@ import type { PromiseLibrary } from '../../../../../com/oracle/truffle/js/api/Pr
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class PromiseLibraryGen$Default extends LibraryExport<PromiseLibrary> {
-    static register(paramreceiverClass: Class<Object>, paramlibs: Object | null): void;
+    static register(paramreceiverClass: Class<Object>, ...paramlibs: LibraryExport<any>[]): void;
     private constructor()
     createCached(receiver: Object): PromiseLibrary;
     createUncached(receiver: Object): PromiseLibrary;

@@ -21,35 +21,27 @@ export class VkPhysicalDeviceShaderTerminateInvocationFeaturesKHR extends VkPhys
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceShaderTerminateInvocationFeaturesKHR;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceShaderTerminateInvocationFeaturesKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceShaderTerminateInvocationFeatures;
     static create(paramarg0: number): VkPhysicalDeviceShaderTerminateInvocationFeatures;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceShaderTerminateInvocationFeaturesKHR;
     static create(paramarg0: number): VkPhysicalDeviceShaderTerminateInvocationFeaturesKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceShaderTerminateInvocationFeatures;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceShaderTerminateInvocationFeaturesKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceShaderTerminateInvocationFeatures;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceShaderTerminateInvocationFeatures;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceShaderTerminateInvocationFeaturesKHR;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceShaderTerminateInvocationFeaturesKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
     static nshaderTerminateInvocation(paramarg0: number): number;
     static nshaderTerminateInvocation(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

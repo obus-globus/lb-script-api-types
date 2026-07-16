@@ -11,7 +11,7 @@ export class IPCClient$Event extends Enum<IPCClient$Event> {
     static UNKNOWN: IPCClient$Event;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): IPCClient$Event;
-    static values(): (Object | null)[];
+    static values(): IPCClient$Event[];
     private constructor(arg2: boolean)
     readonly subscribable: boolean;
     isSubscribable(): boolean;

@@ -11,7 +11,7 @@ export class TimeZoneNames$NameType extends Enum<TimeZoneNames$NameType> {
     static SHORT_STANDARD: TimeZoneNames$NameType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TimeZoneNames$NameType;
-    static values(): (Object | null)[];
+    static values(): TimeZoneNames$NameType[];
     private constructor()
     name(): "LONG_GENERIC" | "LONG_STANDARD" | "LONG_DAYLIGHT" | "SHORT_GENERIC" | "SHORT_STANDARD" | "SHORT_DAYLIGHT" | "EXEMPLAR_LOCATION";
 }

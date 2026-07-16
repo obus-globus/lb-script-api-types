@@ -9,7 +9,7 @@ export class LZ4FrameOutputStream$BLOCKSIZE extends Enum<LZ4FrameOutputStream$BL
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: number): LZ4FrameOutputStream$BLOCKSIZE;
     static valueOf(paramarg0: string): LZ4FrameOutputStream$BLOCKSIZE;
-    static values(): (Object | null)[];
+    static values(): LZ4FrameOutputStream$BLOCKSIZE[];
     private constructor(arg2: number)
     readonly indicator: number;
     getIndicator(): number;

@@ -5,7 +5,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class InternalCallNode extends JavaScriptBaseNode {
     static create(): InternalCallNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(callTarget: CallTarget, arguments: Object[]): Object;
 }

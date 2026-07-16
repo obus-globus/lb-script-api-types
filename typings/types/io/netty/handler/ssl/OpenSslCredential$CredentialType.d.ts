@@ -6,7 +6,7 @@ export class OpenSslCredential$CredentialType extends Enum<OpenSslCredential$Cre
     static X509: OpenSslCredential$CredentialType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): OpenSslCredential$CredentialType;
-    static values(): (Object | null)[];
+    static values(): OpenSslCredential$CredentialType[];
     private constructor()
     name(): "X509" | "DELEGATED";
 }

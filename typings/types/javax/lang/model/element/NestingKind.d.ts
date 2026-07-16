@@ -8,7 +8,7 @@ export class NestingKind extends Enum<NestingKind> {
     static TOP_LEVEL: NestingKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): NestingKind;
-    static values(): (Object | null)[];
+    static values(): NestingKind[];
     private constructor()
     isNested(): boolean;
     name(): "TOP_LEVEL" | "MEMBER" | "LOCAL" | "ANONYMOUS";

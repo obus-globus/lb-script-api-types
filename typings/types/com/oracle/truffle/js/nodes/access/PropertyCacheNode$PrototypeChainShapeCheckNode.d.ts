@@ -6,7 +6,6 @@ import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/
 import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
 export class PropertyCacheNode$PrototypeChainShapeCheckNode extends PropertyCacheNode$AbstractFinalPrototypeShapeCheckNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(shape: Shape, assumptions: Assumption[], prototype: JSDynamicObject, context: JSContext)
     getDepth(): number;
 }

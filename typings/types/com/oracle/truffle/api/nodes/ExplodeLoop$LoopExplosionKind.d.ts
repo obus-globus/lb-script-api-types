@@ -9,7 +9,7 @@ export class ExplodeLoop$LoopExplosionKind extends Enum<ExplodeLoop$LoopExplosio
     static MERGE_EXPLODE: ExplodeLoop$LoopExplosionKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ExplodeLoop$LoopExplosionKind;
-    static values(): (Object | null)[];
+    static values(): ExplodeLoop$LoopExplosionKind[];
     private constructor()
     name(): "FULL_UNROLL" | "FULL_UNROLL_UNTIL_RETURN" | "FULL_EXPLODE" | "FULL_EXPLODE_UNTIL_RETURN" | "MERGE_EXPLODE";
 }

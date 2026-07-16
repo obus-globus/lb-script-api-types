@@ -41,7 +41,7 @@ export class TemporalPlainDatePrototypeBuiltins$TemporalPlainDatePrototype exten
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TemporalPlainDatePrototypeBuiltins$TemporalPlainDatePrototype;
-    static values(): (Object | null)[];
+    static values(): TemporalPlainDatePrototypeBuiltins$TemporalPlainDatePrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

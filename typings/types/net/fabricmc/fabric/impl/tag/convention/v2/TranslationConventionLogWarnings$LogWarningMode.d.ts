@@ -8,7 +8,7 @@ export class TranslationConventionLogWarnings$LogWarningMode extends Enum<Transl
     static VERBOSE: TranslationConventionLogWarnings$LogWarningMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TranslationConventionLogWarnings$LogWarningMode;
-    static values(): (Object | null)[];
+    static values(): TranslationConventionLogWarnings$LogWarningMode[];
     private constructor()
     verbose(): boolean;
     name(): "SILENCED" | "SHORT" | "VERBOSE" | "FAIL";

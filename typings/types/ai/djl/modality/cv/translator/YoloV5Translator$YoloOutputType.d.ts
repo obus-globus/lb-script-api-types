@@ -7,7 +7,7 @@ export class YoloV5Translator$YoloOutputType extends Enum<YoloV5Translator$YoloO
     static DETECT: YoloV5Translator$YoloOutputType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): YoloV5Translator$YoloOutputType;
-    static values(): (Object | null)[];
+    static values(): YoloV5Translator$YoloOutputType[];
     private constructor()
     name(): "BOX" | "DETECT" | "AUTO";
 }

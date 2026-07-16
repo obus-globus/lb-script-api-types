@@ -8,7 +8,7 @@ export class StreamReadCapability extends Enum<StreamReadCapability> implements 
     static UNTYPED_SCALARS: StreamReadCapability;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): StreamReadCapability;
-    static values(): (Object | null)[];
+    static values(): StreamReadCapability[];
     private constructor(arg2: boolean)
     // private _defaultState: boolean;
     // private _mask: number;

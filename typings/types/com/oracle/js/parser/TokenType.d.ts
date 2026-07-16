@@ -151,7 +151,7 @@ export class TokenType extends Enum<TokenType> {
     static YIELD_STAR: TokenType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TokenType;
-    static values(): (Object | null)[];
+    static values(): TokenType[];
     private constructor(kind: TokenKind, name: string)
     private constructor(kind: TokenKind, name: string, precedence: number, isLeftAssociative: boolean)
     private constructor(kind: TokenKind, name: string, precedence: number, isLeftAssociative: boolean, ecmaScriptVersion: number)

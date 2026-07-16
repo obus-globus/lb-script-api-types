@@ -1,3 +1,4 @@
+import type { Gson } from '../../../../../com/google/gson/Gson.d.ts'
 import type { CancellableEvent } from '../../../../../net/ccbluex/liquidbounce/event/CancellableEvent.d.ts'
 import type { WebSocketEvent } from '../../../../../net/ccbluex/liquidbounce/integration/interop/protocol/event/WebSocketEvent.d.ts'
 /**
@@ -6,4 +7,6 @@ import type { WebSocketEvent } from '../../../../../net/ccbluex/liquidbounce/int
 export class ChatSendEvent extends CancellableEvent implements WebSocketEvent {
     constructor(message: string)
     readonly message: string;
+    readonly serializeAsync: boolean;
+    readonly serializer: Gson;
 }

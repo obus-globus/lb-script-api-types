@@ -23,7 +23,6 @@ export class FT_MM_Axis extends Struct<FT_MM_Axis> {
     static nname(paramarg0: number): ByteBuffer;
     static nnameString(paramarg0: number): string;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     create(arg0: number, arg1: ByteBuffer): FT_MM_Axis;

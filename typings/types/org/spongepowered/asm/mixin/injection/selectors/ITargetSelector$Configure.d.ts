@@ -11,7 +11,7 @@ export class ITargetSelector$Configure extends Enum<ITargetSelector$Configure> {
     static TRANSFORM: ITargetSelector$Configure;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ITargetSelector$Configure;
-    static values(): (Object | null)[];
+    static values(): ITargetSelector$Configure[];
     private constructor(arg2: number)
     // private requiredArgs: number;
     checkArgs(...arg0: string[]): void;

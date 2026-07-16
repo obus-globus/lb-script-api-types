@@ -11,7 +11,7 @@ export class SegmenterFunctionBuiltins$SegmenterFunction extends Enum<SegmenterF
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SegmenterFunctionBuiltins$SegmenterFunction;
-    static values(): (Object | null)[];
+    static values(): SegmenterFunctionBuiltins$SegmenterFunction[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

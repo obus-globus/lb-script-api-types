@@ -19,7 +19,7 @@ import type { LootTable$Builder } from '../../../../../../../net/minecraft/world
 import type { Logger } from '../../../../../../../org/slf4j/Logger.d.ts'
 export abstract class FabricEntityLootSubProvider extends EntityLootSubProvider implements FabricLootTableSubProvider {
     static FIXED_ORDER_FIELDS: (param0: string) => number;
-    static KEY_COMPARATOR: (param0: Object) => boolean;
+    static KEY_COMPARATOR: (param0: string, param1: string) => number;
     static LOGGER: Logger;
     static createSheepDispatchPool(paramtableNames: ColorCollection<ResourceKey<LootTable>>): LootPool$Builder;
     constructor(arg0: FabricPackOutput, arg1: CompletableFuture<HolderLookup$Provider>)

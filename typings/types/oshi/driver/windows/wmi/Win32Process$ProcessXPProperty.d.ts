@@ -12,7 +12,7 @@ export class Win32Process$ProcessXPProperty extends Enum<Win32Process$ProcessXPP
     static USERMODETIME: Win32Process$ProcessXPProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Win32Process$ProcessXPProperty;
-    static values(): (Object | null)[];
+    static values(): Win32Process$ProcessXPProperty[];
     private constructor()
     name(): "PROCESSID" | "NAME" | "KERNELMODETIME" | "USERMODETIME" | "THREADCOUNT" | "PAGEFILEUSAGE" | "HANDLECOUNT" | "EXECUTABLEPATH";
 }

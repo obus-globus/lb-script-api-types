@@ -8,7 +8,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class CreateRegExpNodeGen extends CreateRegExpNode {
     static create(paramcontext: JSContext): CreateRegExpNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private state_0_: number;
     execute(arg0Value: Object, arg1Value: boolean, arg2Value: JSRealm, arg3Value: JSDynamicObject, arg4Value: Object, arg5Value: boolean): JSRegExpObject;

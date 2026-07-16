@@ -12,7 +12,7 @@ export class ModuleTrueSight$Sight extends Enum<ModuleTrueSight$Sight> implement
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleTrueSight$Sight;
-    static values(): (Object | null)[];
+    static values(): ModuleTrueSight$Sight[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "BARRIERS" | "ENTITIES";

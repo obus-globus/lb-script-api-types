@@ -10,7 +10,7 @@ export class GlVersion extends Enum<GlVersion> {
     static GL_41: GlVersion;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): GlVersion;
-    static values(): (Object | null)[];
+    static values(): GlVersion[];
     private constructor()
     name(): "GL_11" | "GL_12" | "GL_30" | "GL_31" | "GL_33" | "GL_41";
 }

@@ -6,7 +6,6 @@ export class ImportValueNodeGen$Uncached extends ImportValueNode implements Unad
     static create(): ImportValueNode;
     static getUncached(): ImportValueNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     executeWithTarget(arg0Value: Object): Object;
 }

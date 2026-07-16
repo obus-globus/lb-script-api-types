@@ -8,7 +8,5 @@ export class OpenBsdSysctlUtil extends Object {
     static sysctl(paramarg0: string, paramarg1: number): number;
     static sysctl(paramarg0: number[], paramarg1: string): string;
     static sysctl(paramarg0: string, paramarg1: string): string;
-    static sysctl(paramarg0: number[], paramarg1: number): number;
-    static sysctl(paramarg0: string, paramarg1: number): number;
     private constructor()
 }

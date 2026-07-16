@@ -10,12 +10,10 @@ export class ColorARGB extends Object implements ColorU8 {
     static fromHSV(paramarg0: number, paramarg1: number, paramarg2: number): number;
     static fromHSV(paramarg0: number[]): number;
     static mulRGB(paramarg0: number, paramarg1: number): number;
-    static mulRGB(paramarg0: number, paramarg1: number): number;
     static normalizedFloatToByte(paramarg0: number): number;
     static pack(paramarg0: number, paramarg1: number, paramarg2: number): number;
     static pack(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): number;
     static toABGR(paramarg0: number): number;
-    static toABGR(paramarg0: number, paramarg1: number): number;
     static toABGR(paramarg0: number, paramarg1: number): number;
     static toHSV(paramarg0: number): number[];
     static transferAlpha(paramarg0: number, paramarg1: number): number;

@@ -1,4 +1,3 @@
-import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { KeyDispatchDataCodec } from '../../../../../net/minecraft/util/KeyDispatchDataCodec.d.ts'
@@ -8,7 +7,6 @@ import type { DensityFunction$FunctionContext } from '../../../../../net/minecra
 import type { DensityFunction$Visitor } from '../../../../../net/minecraft/world/level/levelgen/DensityFunction$Visitor.d.ts'
 import type { DensityFunctions$PureTransformer } from '../../../../../net/minecraft/world/level/levelgen/DensityFunctions$PureTransformer.d.ts'
 export class DensityFunctions$Clamp extends Record implements DensityFunctions$PureTransformer {
-    static CODEC: Codec<DensityFunction>;
     static CODEC: KeyDispatchDataCodec<DensityFunctions$Clamp>;
     constructor(input: DensityFunction, minValue: number, maxValue: number)
     // private input: DensityFunction;

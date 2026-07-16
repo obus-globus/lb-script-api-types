@@ -6,7 +6,7 @@ export class Hashing extends Object {
     static adler32(): HashFunction;
     static combineOrdered(paramhashCodes: HashCode[]): HashCode;
     static combineUnordered(paramhashCodes: HashCode[]): HashCode;
-    static concatenating(paramfirst: HashFunction, paramsecond: HashFunction, ...paramrest: (Object | null)[]): HashFunction;
+    static concatenating(paramfirst: HashFunction, paramsecond: HashFunction, ...paramrest: HashFunction[]): HashFunction;
     static concatenating(paramhashFunctions: HashFunction[]): HashFunction;
     static consistentHash(paramhashCode: HashCode, parambuckets: number): number;
     static consistentHash(paraminput: number, parambuckets: number): number;

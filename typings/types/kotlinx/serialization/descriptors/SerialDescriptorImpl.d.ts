@@ -12,8 +12,10 @@ export class SerialDescriptorImpl extends Object implements SerialDescriptor, Ca
     readonly elementAnnotations: Annotation[][];
     // private elementDescriptors: SerialDescriptor[];
     // private elementNames: string[];
-    // private elementOptionality: (Object | null)[];
+    // private elementOptionality: boolean[];
     readonly elementsCount: number;
+    /*not mapped: */ isInline(): boolean;
+    /*not mapped: */ isNullable(): boolean;
     readonly kind: SerialKind;
     // private name2Index: { [key: string]: number };
     readonly serialName: string;

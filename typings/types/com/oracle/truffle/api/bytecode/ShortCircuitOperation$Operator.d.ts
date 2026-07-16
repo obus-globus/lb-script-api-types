@@ -8,7 +8,7 @@ export class ShortCircuitOperation$Operator extends Enum<ShortCircuitOperation$O
     static OR_RETURN_VALUE: ShortCircuitOperation$Operator;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ShortCircuitOperation$Operator;
-    static values(): (Object | null)[];
+    static values(): ShortCircuitOperation$Operator[];
     private constructor()
     name(): "AND_RETURN_VALUE" | "AND_RETURN_CONVERTED" | "OR_RETURN_VALUE" | "OR_RETURN_CONVERTED";
 }

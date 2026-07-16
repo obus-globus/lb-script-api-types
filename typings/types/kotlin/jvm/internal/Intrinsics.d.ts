@@ -1,11 +1,6 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class Intrinsics extends Object {
     static areEqual(paramarg0: number, paramarg1: number): boolean;
-    static areEqual(paramarg0: number, paramarg1: number): boolean;
-    static areEqual(paramarg0: number, paramarg1: number): boolean;
-    static areEqual(paramarg0: number, paramarg1: number): boolean;
-    static areEqual(paramarg0: number, paramarg1: number): boolean;
-    static areEqual(paramarg0: number, paramarg1: number): boolean;
     static areEqual(paramarg0: Object, paramarg1: Object): boolean;
     static checkExpressionValueIsNotNull(paramarg0: Object, paramarg1: string): void;
     static checkFieldIsNotNull(paramarg0: Object, paramarg1: string): void;
@@ -19,7 +14,6 @@ export class Intrinsics extends Object {
     static checkParameterIsNotNull(paramarg0: Object, paramarg1: string): void;
     static checkReturnedValueIsNotNull(paramarg0: Object, paramarg1: string): void;
     static checkReturnedValueIsNotNull(paramarg0: Object, paramarg1: string, paramarg2: string): void;
-    static compare(paramarg0: number, paramarg1: number): number;
     static compare(paramarg0: number, paramarg1: number): number;
     static needClassReification(): void;
     static needClassReification(paramarg0: string): void;

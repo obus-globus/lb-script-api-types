@@ -21,7 +21,7 @@ export class ModuleEagle$Conditional$Condition extends Enum<ModuleEagle$Conditio
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleEagle$Conditional$Condition;
-    static values(): (Object | null)[];
+    static values(): ModuleEagle$Conditional$Condition[];
     private constructor(tag: string)
     readonly tag: string;
     and(arg0: (param0: MovementInputEvent) => boolean): (param0: MovementInputEvent) => boolean;

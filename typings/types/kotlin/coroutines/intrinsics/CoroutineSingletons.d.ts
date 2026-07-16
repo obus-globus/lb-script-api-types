@@ -9,7 +9,7 @@ export class CoroutineSingletons extends Enum<CoroutineSingletons> implements Se
     static getEntries(): CoroutineSingletons[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CoroutineSingletons;
-    static values(): (Object | null)[];
+    static values(): CoroutineSingletons[];
     private constructor()
     name(): "COROUTINE_SUSPENDED" | "UNDECIDED" | "RESUMED";
 }

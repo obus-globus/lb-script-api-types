@@ -13,7 +13,7 @@ export class InventoryMoveSprintControlFeature$SprintMode extends Enum<Inventory
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): InventoryMoveSprintControlFeature$SprintMode;
-    static values(): (Object | null)[];
+    static values(): InventoryMoveSprintControlFeature$SprintMode[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "DO_NOT_CHANGE" | "FORCE_SPRINT" | "FORCE_NO_SPRINT";

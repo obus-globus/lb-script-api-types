@@ -7,7 +7,7 @@ export class KmVersionRequirementLevel extends Enum<KmVersionRequirementLevel> {
     static WARNING: KmVersionRequirementLevel;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): KmVersionRequirementLevel;
-    static values(): (Object | null)[];
+    static values(): KmVersionRequirementLevel[];
     private constructor()
     name(): "WARNING" | "ERROR" | "HIDDEN";
 }

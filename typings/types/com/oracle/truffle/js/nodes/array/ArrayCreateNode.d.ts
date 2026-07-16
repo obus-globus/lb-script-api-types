@@ -7,7 +7,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 export abstract class ArrayCreateNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): ArrayCreateNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private context: JSContext;
     doDefault(length: number, realm: JSRealm, proto: JSDynamicObject): JSArrayObject;

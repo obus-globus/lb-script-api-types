@@ -139,7 +139,7 @@ export class LevelEvent extends Enum<LevelEvent> {
     static getByValue(paramarg0: number, paramarg1: LevelEvent): LevelEvent;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LevelEvent;
-    static values(): (Object | null)[];
+    static values(): LevelEvent[];
     private constructor(arg2: number)
     private constructor(arg2: LevelEvent)
     readonly value: number;

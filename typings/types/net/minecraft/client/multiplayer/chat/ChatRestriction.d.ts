@@ -12,7 +12,7 @@ export class ChatRestriction extends Enum<ChatRestriction> {
     static DISABLED_BY_PROFILE: ChatRestriction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ChatRestriction;
-    static values(): (Object | null)[];
+    static values(): ChatRestriction[];
     private constructor(display: Component, action: Optional<ChatRestriction$Action>)
     // private action: Optional<ChatRestriction$Action>;
     // private display: Component;

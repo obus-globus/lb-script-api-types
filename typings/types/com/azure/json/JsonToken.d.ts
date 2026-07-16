@@ -14,7 +14,7 @@ export class JsonToken extends Enum<JsonToken> {
     static STRING: JsonToken;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): JsonToken;
-    static values(): (Object | null)[];
+    static values(): JsonToken[];
     private constructor()
     name(): "START_OBJECT" | "END_OBJECT" | "START_ARRAY" | "END_ARRAY" | "FIELD_NAME" | "BOOLEAN" | "NULL" | "NUMBER" | "STRING" | "END_DOCUMENT";
 }

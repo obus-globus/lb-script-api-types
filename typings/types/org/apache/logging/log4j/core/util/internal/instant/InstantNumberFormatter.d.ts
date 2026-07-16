@@ -16,7 +16,7 @@ export class InstantNumberFormatter extends Enum<InstantNumberFormatter> impleme
     static EPOCH_SECONDS_ROUNDED: InstantNumberFormatter;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): InstantNumberFormatter;
-    static values(): (Object | null)[];
+    static values(): InstantNumberFormatter[];
     private constructor(precision: ChronoUnit, formatter: (param0: Instant, param1: StringBuilder) => void)
     // private formatter: (param0: Instant, param1: StringBuilder) => void;
     readonly precision: ChronoUnit;

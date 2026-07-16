@@ -43,7 +43,6 @@ export class GLSLIncludeCallbacks extends Struct<GLSLIncludeCallbacks> implement
     static ninclude_system(paramarg0: number): GLSLIncludeSystemFunc;
     static ninclude_system(paramarg0: number, paramarg1: (param0: number, param1: number, param2: number, param3: number) => number): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     close(): void;

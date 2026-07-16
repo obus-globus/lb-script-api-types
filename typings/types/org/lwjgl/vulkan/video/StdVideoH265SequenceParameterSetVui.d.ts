@@ -109,7 +109,6 @@ export class StdVideoH265SequenceParameterSetVui extends Struct<StdVideoH265Sequ
     static nvui_time_scale(paramarg0: number): number;
     static nvui_time_scale(paramarg0: number, paramarg1: number): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

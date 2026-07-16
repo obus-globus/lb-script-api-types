@@ -16,7 +16,6 @@ export class ApplyDecoratorsToElementDefinitionNodeGen extends ApplyDecoratorsTo
     static create(paramcontext: JSContext, parammember: ObjectLiteralNode$ObjectLiteralMemberNode): ApplyDecoratorsToElementDefinition;
     static create(paramcontext: JSContext, paramcreateDecoratorContextObjectNode: CreateDecoratorContextObjectNode): ApplyDecoratorsToElementDefinition;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, createDecoratorContextObjectNode: CreateDecoratorContextObjectNode)
     // private callNode: JSFunctionCallNode;
     // private decorateAuto_cache: ApplyDecoratorsToElementDefinitionNodeGen$DecorateAutoData;

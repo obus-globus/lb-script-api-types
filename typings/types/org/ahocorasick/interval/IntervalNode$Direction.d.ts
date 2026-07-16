@@ -6,7 +6,7 @@ export class IntervalNode$Direction extends Enum<IntervalNode$Direction> {
     static RIGHT: IntervalNode$Direction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): IntervalNode$Direction;
-    static values(): (Object | null)[];
+    static values(): IntervalNode$Direction[];
     private constructor()
     name(): "LEFT" | "RIGHT";
 }

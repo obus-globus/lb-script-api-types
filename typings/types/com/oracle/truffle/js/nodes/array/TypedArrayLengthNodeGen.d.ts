@@ -7,7 +7,6 @@ export class TypedArrayLengthNodeGen extends TypedArrayLengthNode {
     static create(): TypedArrayLengthNode;
     static inline(paramtarget: InlineSupport$InlineTarget): TypedArrayLengthNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private autoLength_getByteLengthNode__field1_: Node;
     // private state_0_: number;

@@ -19,7 +19,7 @@ export class Level extends Object implements Serializable, Comparable<Level> {
     static toLevel(paramname: string, paramdefaultLevel: Level): Level;
     static valueOf(paramenumType: Class<Object>, paramname: string): Object | null;
     static valueOf(paramname: string): Level;
-    static values(): (Object | null)[];
+    static values(): Level[];
     private constructor(name: string, intLevel: number)
     // private intLevel: number;
     // private name: string;

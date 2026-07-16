@@ -18,7 +18,7 @@ export abstract class Spliterators$AbstractSpliterator<T extends unknown> extend
     characteristics(): number;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: T) => void): void;
-    getComparator(): (param0: Object) => boolean;
+    getComparator(): (param0: T, param1: T) => number;
     getExactSizeIfKnown(): number;
     hasCharacteristics(arg0: number): boolean;
     trySplit(): Spliterator<T>;

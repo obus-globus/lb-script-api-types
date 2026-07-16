@@ -21,35 +21,27 @@ export class VkPhysicalDeviceDepthClampZeroOneFeaturesEXT extends VkPhysicalDevi
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceDepthClampZeroOneFeaturesKHR;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceDepthClampZeroOneFeaturesKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceDepthClampZeroOneFeaturesEXT;
     static create(paramarg0: number): VkPhysicalDeviceDepthClampZeroOneFeaturesEXT;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceDepthClampZeroOneFeaturesKHR;
     static create(paramarg0: number): VkPhysicalDeviceDepthClampZeroOneFeaturesKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceDepthClampZeroOneFeaturesEXT;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceDepthClampZeroOneFeaturesKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceDepthClampZeroOneFeaturesEXT;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceDepthClampZeroOneFeaturesEXT;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceDepthClampZeroOneFeaturesKHR;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceDepthClampZeroOneFeaturesKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ndepthClampZeroOne(paramarg0: number): number;
     static ndepthClampZeroOne(paramarg0: number, paramarg1: number): void;
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

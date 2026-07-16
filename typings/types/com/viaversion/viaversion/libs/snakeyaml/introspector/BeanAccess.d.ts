@@ -7,7 +7,7 @@ export class BeanAccess extends Enum<BeanAccess> {
     static PROPERTY: BeanAccess;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BeanAccess;
-    static values(): (Object | null)[];
+    static values(): BeanAccess[];
     private constructor()
     name(): "DEFAULT" | "FIELD" | "PROPERTY";
 }

@@ -14,7 +14,7 @@ export class DumpArchiveEntry$TYPE extends Enum<DumpArchiveEntry$TYPE> {
     static find(paramarg0: number): DumpArchiveEntry$TYPE;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DumpArchiveEntry$TYPE;
-    static values(): (Object | null)[];
+    static values(): DumpArchiveEntry$TYPE[];
     private constructor(arg2: number)
     // private code: number;
     name(): "WHITEOUT" | "SOCKET" | "LINK" | "FILE" | "BLKDEV" | "DIRECTORY" | "CHRDEV" | "FIFO" | "UNKNOWN";

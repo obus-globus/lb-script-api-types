@@ -8,7 +8,6 @@ import type { PropertySetNode$LinkedPropertySetNode } from '../../../../../../co
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PropertySetNode$PropertyProxySetNode extends PropertySetNode$LinkedPropertySetNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(property: Property, shapeCheck: PropertyCacheNode$AbstractShapeCheckNode, isStrict: boolean)
     // private errorBranch: BranchProfile;
     // private isStrict: boolean;

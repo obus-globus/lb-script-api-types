@@ -10,7 +10,7 @@ export class TemporalUtil$UnsignedRoundingMode extends Enum<TemporalUtil$Unsigne
     static ZERO: TemporalUtil$UnsignedRoundingMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TemporalUtil$UnsignedRoundingMode;
-    static values(): (Object | null)[];
+    static values(): TemporalUtil$UnsignedRoundingMode[];
     private constructor()
     name(): "EMPTY" | "ZERO" | "INFINITY" | "HALF_INFINITY" | "HALF_ZERO" | "HALF_EVEN";
 }

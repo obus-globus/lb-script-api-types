@@ -8,7 +8,7 @@ export class ShadowCullState extends Enum<ShadowCullState> {
     static SAFE_ZONE: ShadowCullState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ShadowCullState;
-    static values(): (Object | null)[];
+    static values(): ShadowCullState[];
     private constructor()
     name(): "DEFAULT" | "ADVANCED" | "SAFE_ZONE" | "DISTANCE";
 }

@@ -1,4 +1,3 @@
-import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { KeyDispatchDataCodec } from '../../../../../net/minecraft/util/KeyDispatchDataCodec.d.ts'
 import type { DensityFunction } from '../../../../../net/minecraft/world/level/levelgen/DensityFunction.d.ts'
@@ -8,7 +7,6 @@ import type { DensityFunction$SimpleFunction } from '../../../../../net/minecraf
 import type { DensityFunction$Visitor } from '../../../../../net/minecraft/world/level/levelgen/DensityFunction$Visitor.d.ts'
 import type { SimplexNoise } from '../../../../../net/minecraft/world/level/levelgen/synth/SimplexNoise.d.ts'
 export class DensityFunctions$EndIslandDensityFunction extends Object implements DensityFunction$SimpleFunction {
-    static CODEC: Codec<DensityFunction>;
     static CODEC: KeyDispatchDataCodec<DensityFunctions$EndIslandDensityFunction>;
     constructor(seed: number)
     // private islandNoise: SimplexNoise;

@@ -16,7 +16,4 @@ export class HexExtensionsKt extends Object {
     static toHexString(paramarg0: number, paramarg1: HexFormat): string;
     static toHexString(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: HexFormat): string;
     static toHexString(paramarg0: number[], paramarg1: HexFormat): string;
-    static toHexString(paramarg0: number, paramarg1: HexFormat): string;
-    static toHexString(paramarg0: number, paramarg1: HexFormat): string;
-    static toHexString(paramarg0: number, paramarg1: HexFormat): string;
 }

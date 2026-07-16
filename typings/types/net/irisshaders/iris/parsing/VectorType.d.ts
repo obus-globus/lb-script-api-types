@@ -1,4 +1,3 @@
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Type } from '../../../../kroppeb/stareval/function/Type.d.ts'
 import type { Type$Boolean } from '../../../../kroppeb/stareval/function/Type$Boolean.d.ts'
 import type { Type$Float } from '../../../../kroppeb/stareval/function/Type$Float.d.ts'
@@ -7,6 +6,7 @@ import type { Type$ObjectType } from '../../../../kroppeb/stareval/function/Type
 import type { Type$Primitive } from '../../../../kroppeb/stareval/function/Type$Primitive.d.ts'
 import type { TypedFunction$Parameter } from '../../../../kroppeb/stareval/function/TypedFunction$Parameter.d.ts'
 import type { UniformType } from '../../../../net/irisshaders/iris/gl/uniform/UniformType.d.ts'
+import type { VectorType$ArrayVector } from '../../../../net/irisshaders/iris/parsing/VectorType$ArrayVector.d.ts'
 import type { VectorType$JOMLVector } from '../../../../net/irisshaders/iris/parsing/VectorType$JOMLVector.d.ts'
 import type { Vector2f } from '../../../../org/joml/Vector2f.d.ts'
 import type { Vector2i } from '../../../../org/joml/Vector2i.d.ts'
@@ -15,9 +15,9 @@ import type { Vector3i } from '../../../../org/joml/Vector3i.d.ts'
 import type { Vector4f } from '../../../../org/joml/Vector4f.d.ts'
 import type { Vector4i } from '../../../../org/joml/Vector4i.d.ts'
 export abstract class VectorType extends Type$ObjectType {
-    static AllArrayVectorTypes: (Object | null)[];
-    static AllPrimitives: (Object | null)[];
-    static AllVectorTypes: (Object | null)[];
+    static AllArrayVectorTypes: VectorType$ArrayVector[];
+    static AllPrimitives: Type$Primitive[];
+    static AllVectorTypes: VectorType[];
     static B_VEC2: VectorType;
     static B_VEC3: VectorType;
     static B_VEC4: VectorType;

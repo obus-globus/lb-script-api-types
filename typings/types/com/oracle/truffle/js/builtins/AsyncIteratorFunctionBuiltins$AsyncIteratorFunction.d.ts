@@ -11,7 +11,7 @@ export class AsyncIteratorFunctionBuiltins$AsyncIteratorFunction extends Enum<As
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): AsyncIteratorFunctionBuiltins$AsyncIteratorFunction;
-    static values(): (Object | null)[];
+    static values(): AsyncIteratorFunctionBuiltins$AsyncIteratorFunction[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

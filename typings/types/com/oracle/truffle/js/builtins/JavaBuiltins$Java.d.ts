@@ -19,7 +19,7 @@ export class JavaBuiltins$Java extends Enum<JavaBuiltins$Java> implements Builti
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): JavaBuiltins$Java;
-    static values(): (Object | null)[];
+    static values(): JavaBuiltins$Java[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

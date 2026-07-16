@@ -8,7 +8,6 @@ import type { Number } from '../../../../../../java/lang/Number.d.ts'
 export class LongToIntOrDoubleNodeGen$Inlined extends LongToIntOrDoubleNode implements UnadoptableNode {
     static create(): LongToIntOrDoubleNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(target: InlineSupport$InlineTarget)
     // private state_0_: InlineSupport$StateField;
     // private toDoubleBranch_: InlinedBranchProfile;

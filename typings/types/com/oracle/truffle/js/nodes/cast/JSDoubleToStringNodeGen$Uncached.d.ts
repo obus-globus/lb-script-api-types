@@ -5,7 +5,6 @@ import type { JSDoubleToStringNode } from '../../../../../../com/oracle/truffle/
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSDoubleToStringNodeGen$Uncached extends JSDoubleToStringNode implements UnadoptableNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     executeString(arg0Value: Object): TruffleString;
     executeString(arg0Value: number): TruffleString;

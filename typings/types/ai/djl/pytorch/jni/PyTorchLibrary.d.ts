@@ -8,7 +8,7 @@ export class PyTorchLibrary extends Object {
     conj(arg0: number): number;
     contentEqual(arg0: number, arg1: number): boolean;
     iValueFromBool(arg0: boolean): number;
-    iValueFromBoolList(...arg0: (Object | null)[]): number;
+    iValueFromBoolList(...arg0: boolean[]): number;
     iValueFromDouble(arg0: number): number;
     iValueFromDoubleList(...arg0: number[]): number;
     iValueFromList(arg0: number[]): number;
@@ -34,7 +34,7 @@ export class PyTorchLibrary extends Object {
     iValueIsTensorList(arg0: number): boolean;
     iValueIsTuple(arg0: number): boolean;
     iValueToBool(arg0: number): boolean;
-    iValueToBoolList(arg0: number): (Object | null)[];
+    iValueToBoolList(arg0: number): boolean[];
     iValueToDouble(arg0: number): number;
     iValueToDoubleList(arg0: number): number[];
     iValueToIValueList(arg0: number): number[];

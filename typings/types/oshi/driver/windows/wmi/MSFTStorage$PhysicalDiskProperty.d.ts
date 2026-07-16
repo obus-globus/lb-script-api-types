@@ -7,7 +7,7 @@ export class MSFTStorage$PhysicalDiskProperty extends Enum<MSFTStorage$PhysicalD
     static PHYSICALLOCATION: MSFTStorage$PhysicalDiskProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MSFTStorage$PhysicalDiskProperty;
-    static values(): (Object | null)[];
+    static values(): MSFTStorage$PhysicalDiskProperty[];
     private constructor()
     name(): "FRIENDLYNAME" | "PHYSICALLOCATION" | "OBJECTID";
 }

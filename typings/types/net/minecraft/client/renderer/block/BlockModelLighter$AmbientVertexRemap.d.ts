@@ -12,7 +12,7 @@ export class BlockModelLighter$AmbientVertexRemap extends Enum<BlockModelLighter
     static fromFacing(paramdirection: Direction): BlockModelLighter$AmbientVertexRemap;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): BlockModelLighter$AmbientVertexRemap;
-    static values(): (Object | null)[];
+    static values(): BlockModelLighter$AmbientVertexRemap[];
     private constructor(vert0: number, vert1: number, vert2: number, vert3: number)
     // private vert0: number;
     // private vert1: number;

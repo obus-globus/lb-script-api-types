@@ -30,7 +30,7 @@ export class LoaderLibrary extends Enum<LoaderLibrary> {
     static TINY_REMAPPER: LoaderLibrary;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LoaderLibrary;
-    static values(): (Object | null)[];
+    static values(): LoaderLibrary[];
     private constructor(arg2: Class<Object>)
     private constructor(arg2: Path)
     private constructor(arg2: string, arg3: boolean)

@@ -13,7 +13,7 @@ export abstract class BinaryInput extends Object {
     asByteBuffer(len: number): ByteBuffer;
     // private ensureBufferSize(len: number): void;
     read(): number;
-    read(b: (Object | null)[], off: number, len: number): void;
+    read(b: boolean[], off: number, len: number): void;
     read(b: number[], off: number, len: number): void;
     read(b: string[], off: number, len: number): void;
     readBoolean(): boolean;

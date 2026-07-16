@@ -9,7 +9,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class WriteElementNode$ConstantArrayWriteElementCacheNode extends WriteElementNode$RecursiveCachedArrayWriteElementCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doConstantArray(target: JSDynamicObject, constantArray: AbstractConstantArray, index: number, value: Object, root: WriteElementNode, intValueBranch: InlinedBranchProfile, doubleValueBranch: InlinedBranchProfile, jsObjectValueBranch: InlinedBranchProfile, objectValueBranch: InlinedBranchProfile, inBoundsIf: InlinedConditionProfile, createWritableProfile: ScriptArray$CreateWritableProfileAccess): boolean;
 }

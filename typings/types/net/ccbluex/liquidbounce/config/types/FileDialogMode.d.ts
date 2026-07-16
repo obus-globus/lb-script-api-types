@@ -21,7 +21,7 @@ export class FileDialogMode extends Enum<FileDialogMode> {
     static getEntries(): FileDialogMode[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FileDialogMode;
-    static values(): (Object | null)[];
+    static values(): FileDialogMode[];
     private constructor(translationKey: string, fallbackTitle: string)
     // private fallbackTitle: string;
     readonly title: string;

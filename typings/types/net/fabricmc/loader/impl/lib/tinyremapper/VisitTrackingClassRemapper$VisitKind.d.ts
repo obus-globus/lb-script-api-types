@@ -19,7 +19,7 @@ export class VisitTrackingClassRemapper$VisitKind extends Enum<VisitTrackingClas
     static TYPE_ANNOTATION: VisitTrackingClassRemapper$VisitKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): VisitTrackingClassRemapper$VisitKind;
-    static values(): (Object | null)[];
+    static values(): VisitTrackingClassRemapper$VisitKind[];
     private constructor()
     name(): "INITIAL" | "SOURCE" | "MODULE" | "NEST_HOST" | "PERMITTED_SUBCLASS" | "OUTER_CLASS" | "ANNOTATION" | "TYPE_ANNOTATION" | "ATTRIBUTE" | "NEST_MEMBER" | "INNER_CLASS" | "RECORD_COMPONENT" | "FIELD" | "METHOD" | "END";
 }

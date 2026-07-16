@@ -8,7 +8,7 @@ export class TrLogger$Level extends Enum<TrLogger$Level> {
     static WARN: TrLogger$Level;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TrLogger$Level;
-    static values(): (Object | null)[];
+    static values(): TrLogger$Level[];
     private constructor()
     name(): "DEBUG" | "INFO" | "WARN" | "ERROR";
 }

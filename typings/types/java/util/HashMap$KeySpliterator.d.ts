@@ -15,7 +15,7 @@ export class HashMap$KeySpliterator<K extends unknown, V extends unknown> extend
     constructor(arg0: Map<K, V>, arg1: number, arg2: number, arg3: number, arg4: number)
     characteristics(): number;
     forEachRemaining(arg0: (param0: K) => void): void;
-    getComparator(): (param0: Object) => boolean;
+    getComparator(): (param0: K, param1: K) => number;
     getExactSizeIfKnown(): number;
     hasCharacteristics(arg0: number): boolean;
     tryAdvance(arg0: (param0: K) => void): boolean;

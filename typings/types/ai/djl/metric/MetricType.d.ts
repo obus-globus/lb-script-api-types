@@ -8,7 +8,7 @@ export class MetricType extends Enum<MetricType> {
     static of(paramarg0: string): MetricType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MetricType;
-    static values(): (Object | null)[];
+    static values(): MetricType[];
     private constructor(arg2: string)
     readonly value: string;
     getValue(): string;

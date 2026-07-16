@@ -9,7 +9,7 @@ export class Rfc1349TrafficClass extends Enum<Rfc1349TrafficClass> {
     static IPTOS_THROUGHPUT: Rfc1349TrafficClass;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Rfc1349TrafficClass;
-    static values(): (Object | null)[];
+    static values(): Rfc1349TrafficClass[];
     private constructor(trafficClass: number)
     // private trafficClass: number;
     value(): number;

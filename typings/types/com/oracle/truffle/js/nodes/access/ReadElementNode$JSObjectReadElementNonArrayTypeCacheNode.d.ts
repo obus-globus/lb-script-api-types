@@ -6,7 +6,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ReadElementNode$JSObjectReadElementNonArrayTypeCacheNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     // private getPropertyCachedNode: CachedGetPropertyNode;
     execute(targetObject: JSDynamicObject, index: Object, receiver: Object, defaultValue: Object, root: ReadElementNode): Object;

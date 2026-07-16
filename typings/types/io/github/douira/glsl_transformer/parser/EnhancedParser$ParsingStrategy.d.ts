@@ -7,7 +7,7 @@ export class EnhancedParser$ParsingStrategy extends Enum<EnhancedParser$ParsingS
     static SLL_ONLY: EnhancedParser$ParsingStrategy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): EnhancedParser$ParsingStrategy;
-    static values(): (Object | null)[];
+    static values(): EnhancedParser$ParsingStrategy[];
     private constructor()
     name(): "SLL_AND_LL_ON_ERROR" | "SLL_ONLY" | "LL_ONLY";
 }

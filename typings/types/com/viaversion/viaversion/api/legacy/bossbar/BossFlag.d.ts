@@ -7,7 +7,7 @@ export class BossFlag extends Enum<BossFlag> {
     static PLAY_BOSS_MUSIC: BossFlag;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BossFlag;
-    static values(): (Object | null)[];
+    static values(): BossFlag[];
     private constructor(arg2: number)
     readonly id: number;
     getId(): number;

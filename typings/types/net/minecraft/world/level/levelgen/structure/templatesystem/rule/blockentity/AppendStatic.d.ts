@@ -1,4 +1,3 @@
-import type { Codec } from '../../../../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { CompoundTag } from '../../../../../../../../../net/minecraft/nbt/CompoundTag.d.ts'
@@ -6,7 +5,6 @@ import type { RandomSource } from '../../../../../../../../../net/minecraft/util
 import type { RuleBlockEntityModifier } from '../../../../../../../../../net/minecraft/world/level/levelgen/structure/templatesystem/rule/blockentity/RuleBlockEntityModifier.d.ts'
 import type { RuleBlockEntityModifierType } from '../../../../../../../../../net/minecraft/world/level/levelgen/structure/templatesystem/rule/blockentity/RuleBlockEntityModifierType.d.ts'
 export class AppendStatic extends Object implements RuleBlockEntityModifier {
-    static CODEC: Codec<RuleBlockEntityModifier>;
     static CODEC: MapCodec<AppendStatic>;
     constructor(tag: CompoundTag)
     // private tag: CompoundTag;

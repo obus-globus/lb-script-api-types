@@ -3,7 +3,6 @@ import type { Annotation } from '../../../../../java/lang/annotation/Annotation.
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { KClass } from '../../../../../kotlin/reflect/KClass.d.ts'
 export interface ExportLibrary extends Annotation, Object{
-    constructor(delegateTo: string, priority: number, receiverType: KClass<Object>, transitionLimit: string, useForAOT: boolean, useForAOTPriority: number, value: KClass<Library>)
     /*not mapped: */ delegateTo(): string;
     /*not mapped: */ priority(): number;
     /*not mapped: */ receiverType(): KClass<Object>;

@@ -12,7 +12,6 @@ export class JSInteropGetIteratorNextNodeGen extends JSInteropGetIteratorNextNod
     static create(): JSInteropGetIteratorNextNode;
     static getUncached(): JSInteropGetIteratorNextNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private callNode_: JSFunctionCallNode;
     // private exportValueNode_: ExportValueNode;

@@ -6,7 +6,7 @@ export class Direction$AxisDirection extends Enum<Direction$AxisDirection> {
     static POSITIVE: Direction$AxisDirection;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Direction$AxisDirection;
-    static values(): (Object | null)[];
+    static values(): Direction$AxisDirection[];
     private constructor(step: number, name: string)
     readonly step: number;
     getName(): string;

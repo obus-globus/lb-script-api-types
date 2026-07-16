@@ -41,7 +41,7 @@ export class NumericShaper$Range extends Enum<NumericShaper$Range> {
     static VAI: NumericShaper$Range;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): NumericShaper$Range;
-    static values(): (Object | null)[];
+    static values(): NumericShaper$Range[];
     private constructor(arg2: number, arg3: number, arg4: number)
     // private base: number;
     // private end: number;

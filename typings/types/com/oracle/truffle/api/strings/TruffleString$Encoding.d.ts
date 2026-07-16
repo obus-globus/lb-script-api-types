@@ -109,7 +109,7 @@ export class TruffleString$Encoding extends Enum<TruffleString$Encoding> {
     static fromJCodingName(paramname: string): TruffleString$Encoding;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TruffleString$Encoding;
-    static values(): (Object | null)[];
+    static values(): TruffleString$Encoding[];
     private constructor(id: number, jCodingName: string, fixedWidth: boolean)
     private constructor(id: number, jCodingName: string, naturalStride: number, fixedWidth: boolean)
     // private fixedWidth: boolean;

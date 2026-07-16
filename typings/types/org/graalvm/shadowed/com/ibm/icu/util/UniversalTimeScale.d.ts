@@ -25,7 +25,6 @@ export class UniversalTimeScale extends Object {
     static UNIX_TIME: number;
     static WINDOWS_FILE_TIME: number;
     static bigDecimalFrom(paramotherTime: number, paramtimeScale: number): BigDecimal;
-    static bigDecimalFrom(paramotherTime: number, paramtimeScale: number): BigDecimal;
     static bigDecimalFrom(paramotherTime: BigDecimal, paramtimeScale: number): BigDecimal;
     static from(paramotherTime: number, paramtimeScale: number): number;
     static getTimeScaleValue(paramscale: number, paramvalue: number): number;

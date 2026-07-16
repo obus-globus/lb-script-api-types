@@ -9,7 +9,7 @@ export class TokenRole extends Enum<TokenRole> {
     static EXTENDABLE_SPACE: TokenRole;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TokenRole;
-    static values(): (Object | null)[];
+    static values(): TokenRole[];
     private constructor()
     name(): "EXACT" | "EXTENDABLE_SPACE" | "BREAKABLE_SPACE" | "COMMON_FORMATTING";
 }

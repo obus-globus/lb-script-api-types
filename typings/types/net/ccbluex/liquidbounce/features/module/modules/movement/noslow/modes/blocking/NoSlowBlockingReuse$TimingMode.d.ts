@@ -13,7 +13,7 @@ export class NoSlowBlockingReuse$TimingMode extends Enum<NoSlowBlockingReuse$Tim
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): NoSlowBlockingReuse$TimingMode;
-    static values(): (Object | null)[];
+    static values(): NoSlowBlockingReuse$TimingMode[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "PRE_POST" | "PRE_TICK" | "POST_TICK";

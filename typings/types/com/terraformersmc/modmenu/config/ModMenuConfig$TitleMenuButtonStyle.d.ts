@@ -8,7 +8,7 @@ export class ModMenuConfig$TitleMenuButtonStyle extends Enum<ModMenuConfig$Title
     static SHRINK: ModMenuConfig$TitleMenuButtonStyle;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModMenuConfig$TitleMenuButtonStyle;
-    static values(): (Object | null)[];
+    static values(): ModMenuConfig$TitleMenuButtonStyle[];
     private constructor()
     name(): "CLASSIC" | "REPLACE_REALMS" | "SHRINK" | "ICON";
 }

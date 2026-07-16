@@ -39,7 +39,6 @@ export class PS_FontInfo extends Struct<PS_FontInfo> {
     static nweight(paramarg0: number): ByteBuffer;
     static nweightString(paramarg0: number): string;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     create(arg0: number, arg1: ByteBuffer): PS_FontInfo;

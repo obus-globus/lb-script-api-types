@@ -1,6 +1,5 @@
 import type { Date } from '../../../../../../../java/util/Date.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Calendar } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/Calendar.d.ts'
 import type { Calendar$WeekData } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/Calendar$WeekData.d.ts'
 import type { ChineseCalendar } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ChineseCalendar.d.ts'
@@ -61,8 +60,8 @@ export class DangiCalendar extends ChineseCalendar {
     static YEAR: number;
     static YEAR_WOY: number;
     static ZONE_OFFSET: number;
-    static getAvailableLocales(): (Object | null)[];
-    static getAvailableULocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
+    static getAvailableULocales(): ULocale[];
     static getDateAtTimePattern(paramcal: Calendar, paramuLocale: ULocale, paramdateStyle: number): string;
     static getDateTimePattern(paramcal: Calendar, paramuLocale: ULocale, paramdateStyle: number): string;
     static getInstance(): Calendar;
@@ -71,7 +70,7 @@ export class DangiCalendar extends ChineseCalendar {
     static getInstance(paramzone: TimeZone, paramaLocale: Locale): Calendar;
     static getInstance(paramzone: TimeZone, paramlocale: ULocale): Calendar;
     static getInstance(paramlocale: ULocale): Calendar;
-    static getKeywordValuesForLocale(paramkey: string, paramlocale: ULocale, paramcommonlyUsed: boolean): (Object | null)[];
+    static getKeywordValuesForLocale(paramkey: string, paramlocale: ULocale, paramcommonlyUsed: boolean): string[];
     static getWeekDataForRegion(paramregion: string): Calendar$WeekData;
     constructor()
     constructor(date: Date)

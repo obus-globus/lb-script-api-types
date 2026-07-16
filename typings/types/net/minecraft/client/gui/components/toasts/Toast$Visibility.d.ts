@@ -8,7 +8,7 @@ export class Toast$Visibility extends Enum<Toast$Visibility> {
     static SHOW: Toast$Visibility;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Toast$Visibility;
-    static values(): (Object | null)[];
+    static values(): Toast$Visibility[];
     private constructor(soundEvent: SoundEvent)
     // private soundEvent: SoundEvent;
     playSound(manager: SoundManager): void;

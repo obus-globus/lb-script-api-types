@@ -22,7 +22,7 @@ export class StandardPlural extends Enum<StandardPlural> {
     static orOtherFromString(paramkeyword: CharSequence): StandardPlural;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): StandardPlural;
-    static values(): (Object | null)[];
+    static values(): StandardPlural[];
     private constructor(kw: string)
     readonly keyword: string;
     getKeyword(): string;

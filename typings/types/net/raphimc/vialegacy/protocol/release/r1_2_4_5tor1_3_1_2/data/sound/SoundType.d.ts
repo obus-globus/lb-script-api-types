@@ -7,7 +7,7 @@ export class SoundType extends Enum<SoundType> {
     static IDLE: SoundType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SoundType;
-    static values(): (Object | null)[];
+    static values(): SoundType[];
     private constructor()
     name(): "IDLE" | "HURT" | "DEATH";
 }

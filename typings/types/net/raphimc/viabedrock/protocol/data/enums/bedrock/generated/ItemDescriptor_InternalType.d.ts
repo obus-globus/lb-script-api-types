@@ -14,7 +14,7 @@ export class ItemDescriptor_InternalType extends Enum<ItemDescriptor_InternalTyp
     static getByValue(paramarg0: number, paramarg1: ItemDescriptor_InternalType): ItemDescriptor_InternalType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ItemDescriptor_InternalType;
-    static values(): (Object | null)[];
+    static values(): ItemDescriptor_InternalType[];
     private constructor(arg2: number)
     private constructor(arg2: ItemDescriptor_InternalType)
     readonly value: number;

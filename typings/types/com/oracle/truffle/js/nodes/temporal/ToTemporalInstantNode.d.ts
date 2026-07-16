@@ -8,7 +8,6 @@ import type { JSTemporalInstantObject } from '../../../../../../com/oracle/truff
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ToTemporalInstantNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(value: Object): JSTemporalInstantObject;
     toTemporalDateTime(item: Object, isObjectNode: IsObjectNode, toPrimitiveNode: JSToPrimitiveNode, isObjectProfile: InlinedConditionProfile, errorBranch: InlinedBranchProfile): JSTemporalInstantObject;

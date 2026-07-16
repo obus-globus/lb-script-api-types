@@ -39,8 +39,8 @@ export class Font extends Object implements Serializable {
     static TYPE1_FONT: number;
     static createFont(paramarg0: number, paramarg1: File): Font;
     static createFont(paramarg0: number, paramarg1: InputStream): Font;
-    static createFonts(paramarg0: File): (Object | null)[];
-    static createFonts(paramarg0: InputStream): (Object | null)[];
+    static createFonts(paramarg0: File): Font[];
+    static createFonts(paramarg0: InputStream): Font[];
     static decode(paramarg0: string): Font;
     static getFont(paramarg0: string): Font;
     static getFont(paramarg0: string, paramarg1: Font): Font;

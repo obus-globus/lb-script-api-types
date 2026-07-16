@@ -6,7 +6,7 @@ import type { UnitPreferences$UnitPreference } from '../../../../../../../../org
 import type { ULocale } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
 export class UnitsData extends Object {
     static getCategoryIndexOfSimpleUnit(paramsimpleUnitIndex: number): number;
-    static getSimpleUnits(): (Object | null)[];
+    static getSimpleUnits(): string[];
     constructor()
     readonly conversionRates: ConversionRates;
     readonly unitPreferences: UnitPreferences;

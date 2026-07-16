@@ -11,7 +11,7 @@ export class RegExpFunctionBuiltins$RegExpFunction extends Enum<RegExpFunctionBu
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RegExpFunctionBuiltins$RegExpFunction;
-    static values(): (Object | null)[];
+    static values(): RegExpFunctionBuiltins$RegExpFunction[];
     private constructor()
     args(): BuiltinArgumentBuilder;
     asEnum(): RegExpFunctionBuiltins$RegExpFunction;

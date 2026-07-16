@@ -13,7 +13,7 @@ export class PosixFilePermission extends Enum<PosixFilePermission> {
     static OWNER_WRITE: PosixFilePermission;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PosixFilePermission;
-    static values(): (Object | null)[];
+    static values(): PosixFilePermission[];
     private constructor()
     name(): "OWNER_READ" | "OWNER_WRITE" | "OWNER_EXECUTE" | "GROUP_READ" | "GROUP_WRITE" | "GROUP_EXECUTE" | "OTHERS_READ" | "OTHERS_WRITE" | "OTHERS_EXECUTE";
 }

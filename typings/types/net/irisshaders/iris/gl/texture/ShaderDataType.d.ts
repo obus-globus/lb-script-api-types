@@ -7,7 +7,7 @@ export class ShaderDataType extends Enum<ShaderDataType> {
     static UINT: ShaderDataType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ShaderDataType;
-    static values(): (Object | null)[];
+    static values(): ShaderDataType[];
     private constructor()
     name(): "FLOAT" | "UINT" | "INT";
 }

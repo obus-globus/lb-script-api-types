@@ -8,7 +8,6 @@ import type { JSDynamicObject } from '../../../../../com/oracle/truffle/js/runti
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class RegExpPrototypeBuiltins$JSRegExpSplitNode$SplitAccordingToSpecNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(rx: JSDynamicObject, str: TruffleString, limit: Object, constructor: Object, context: JSContext, parent: RegExpPrototypeBuiltins$JSRegExpSplitNode): JSArrayObject;
 }

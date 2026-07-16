@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ReadElementNodeFactory$BooleanReadElementTypeCacheNodeGen extends ReadElementNode$BooleanReadElementTypeCacheNode {
     static create(): ReadElementNode$BooleanReadElementTypeCacheNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private boolean1_indexToPropertyKeyNode_: JSToPropertyKeyNode;
     // private state_0_: number;

@@ -19,7 +19,7 @@ export class MovementCorrection extends Enum<MovementCorrection> implements Tagg
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MovementCorrection;
-    static values(): (Object | null)[];
+    static values(): MovementCorrection[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "OFF" | "STRICT" | "SILENT" | "CHANGE_LOOK";

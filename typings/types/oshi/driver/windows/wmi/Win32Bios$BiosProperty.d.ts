@@ -9,7 +9,7 @@ export class Win32Bios$BiosProperty extends Enum<Win32Bios$BiosProperty> {
     static VERSION: Win32Bios$BiosProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Win32Bios$BiosProperty;
-    static values(): (Object | null)[];
+    static values(): Win32Bios$BiosProperty[];
     private constructor()
     name(): "MANUFACTURER" | "NAME" | "DESCRIPTION" | "VERSION" | "RELEASEDATE";
 }

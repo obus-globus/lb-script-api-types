@@ -13,8 +13,8 @@ export class Parameters extends Object {
     static bytes(paramarg0: string, paramarg1: string): ParameterBuilder<number[]>;
     static bytesEquals(paramarg0: BigInteger, paramarg1: BigInteger): boolean;
     static equals(paramarg0: ParameterReadable, paramarg1: Object, paramarg2: Parameter<Object>): boolean;
-    static registry(paramarg0: Object | null): { [key: string]: Parameter<Object> };
-    static registry(paramarg0: { [key: string]: Parameter<Object> }, paramarg1: Object | null): { [key: string]: Parameter<Object> };
+    static registry(...paramarg0: Parameter<Object>[]): { [key: string]: Parameter<Object> };
+    static registry(paramarg0: { [key: string]: Parameter<Object> }, ...paramarg1: Parameter<Object>[]): { [key: string]: Parameter<Object> };
     static registry(paramarg0: Parameter<Object>[]): { [key: string]: Parameter<Object> };
     static replace(paramarg0: { [key: string]: Parameter<Object> }, paramarg1: Parameter<Object>): { [key: string]: Parameter<Object> };
     static rfcDate(paramarg0: string, paramarg1: string): Parameter<Date>;

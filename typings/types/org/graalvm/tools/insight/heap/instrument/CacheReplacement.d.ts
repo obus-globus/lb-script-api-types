@@ -6,7 +6,7 @@ export class CacheReplacement extends Enum<CacheReplacement> {
     static LRU: CacheReplacement;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CacheReplacement;
-    static values(): (Object | null)[];
+    static values(): CacheReplacement[];
     private constructor()
     name(): "FLUSH" | "LRU";
 }

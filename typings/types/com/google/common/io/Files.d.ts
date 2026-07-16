@@ -7,6 +7,7 @@ import type { ByteSink } from '../../../../com/google/common/io/ByteSink.d.ts'
 import type { ByteSource } from '../../../../com/google/common/io/ByteSource.d.ts'
 import type { CharSink } from '../../../../com/google/common/io/CharSink.d.ts'
 import type { CharSource } from '../../../../com/google/common/io/CharSource.d.ts'
+import type { FileWriteMode } from '../../../../com/google/common/io/FileWriteMode.d.ts'
 import type { LineProcessor } from '../../../../com/google/common/io/LineProcessor.d.ts'
 import type { BufferedReader } from '../../../../java/io/BufferedReader.d.ts'
 import type { BufferedWriter } from '../../../../java/io/BufferedWriter.d.ts'
@@ -20,9 +21,9 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 export class Files extends Object {
     static append(paramfrom: CharSequence, paramto: File, paramcharset: Charset): void;
-    static asByteSink(paramfile: File, ...parammodes: (Object | null)[]): ByteSink;
+    static asByteSink(paramfile: File, ...parammodes: FileWriteMode[]): ByteSink;
     static asByteSource(paramfile: File): ByteSource;
-    static asCharSink(paramfile: File, paramcharset: Charset, ...parammodes: (Object | null)[]): CharSink;
+    static asCharSink(paramfile: File, paramcharset: Charset, ...parammodes: FileWriteMode[]): CharSink;
     static asCharSource(paramfile: File, paramcharset: Charset): CharSource;
     static copy(paramfrom: File, paramto: File): void;
     static copy(paramfrom: File, paramto: OutputStream): void;
@@ -34,8 +35,8 @@ export class Files extends Object {
     static getFileExtension(paramfullName: string): string;
     static getNameWithoutExtension(paramfile: string): string;
     static hash(paramfile: File, paramhashFunction: HashFunction): HashCode;
-    static isDirectory(): (param0: Object) => boolean;
-    static isFile(): (param0: Object) => boolean;
+    static isDirectory(): (param0: File) => boolean;
+    static isFile(): (param0: File) => boolean;
     static map(paramfile: File): MappedByteBuffer;
     static map(paramfile: File, parammode: FileChannel$MapMode): MappedByteBuffer;
     static map(paramfile: File, parammode: FileChannel$MapMode, paramsize: number): MappedByteBuffer;

@@ -11,7 +11,7 @@ export class SyntheticBridgeException$Problem extends Enum<SyntheticBridgeExcept
     static BAD_LOAD: SyntheticBridgeException$Problem;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SyntheticBridgeException$Problem;
-    static values(): (Object | null)[];
+    static values(): SyntheticBridgeException$Problem[];
     private constructor(arg2: string)
     // private message: string;
     getMessage(arg0: string, arg1: string, arg2: number, arg3: AbstractInsnNode, arg4: AbstractInsnNode): string;

@@ -11,7 +11,7 @@ export class ValidIdentifiers$Datasubtype extends Enum<ValidIdentifiers$Datasubt
     static unknown: ValidIdentifiers$Datasubtype;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ValidIdentifiers$Datasubtype;
-    static values(): (Object | null)[];
+    static values(): ValidIdentifiers$Datasubtype[];
     private constructor()
     name(): "deprecated" | "private_use" | "regular" | "special" | "unknown" | "macroregion" | "reserved";
 }

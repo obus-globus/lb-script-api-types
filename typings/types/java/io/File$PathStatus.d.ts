@@ -6,7 +6,7 @@ export class File$PathStatus extends Enum<File$PathStatus> {
     static INVALID: File$PathStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): File$PathStatus;
-    static values(): (Object | null)[];
+    static values(): File$PathStatus[];
     private constructor()
     name(): "INVALID" | "CHECKED";
 }

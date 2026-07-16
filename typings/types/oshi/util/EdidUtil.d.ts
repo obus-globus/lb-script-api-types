@@ -3,7 +3,7 @@ export class EdidUtil extends Object {
     static getDescriptorRangeLimits(paramarg0: number[]): string;
     static getDescriptorText(paramarg0: number[]): string;
     static getDescriptorType(paramarg0: number[]): number;
-    static getDescriptors(paramarg0: number[]): (Object | null)[];
+    static getDescriptors(paramarg0: number[]): number[][];
     static getHcm(paramarg0: number[]): number;
     static getManufacturerID(paramarg0: number[]): string;
     static getModel(paramarg0: number[]): string;

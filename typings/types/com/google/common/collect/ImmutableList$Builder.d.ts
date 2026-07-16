@@ -14,7 +14,7 @@ export class ImmutableList$Builder<E extends unknown> extends ImmutableCollectio
     addAll(elements: E[]): ImmutableList$Builder<E>;
     addAll(elements: Iterator<E>): ImmutableList$Builder<E>;
     build(): E[];
-    buildSorted(comparator: (param0: Object) => boolean): E[];
+    buildSorted(comparator: (param0: E, param1: E) => number): E[];
     combine(builder: ImmutableList$Builder<E>): ImmutableList$Builder<E>;
     // private ensureRoomFor(newElements: number): void;
 }

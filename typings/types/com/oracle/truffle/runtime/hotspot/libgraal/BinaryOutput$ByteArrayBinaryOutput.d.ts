@@ -14,7 +14,7 @@ export class BinaryOutput$ByteArrayBinaryOutput extends BinaryOutput {
     // private ensureCapacity(neededCapacity: number): void;
     getArray(): number[];
     skip(numberOfBytes: number): void;
-    write(array: (Object | null)[], off: number, len: number): void;
+    write(array: boolean[], off: number, len: number): void;
     write(b: number[], off: number, len: number): void;
     write(array: string[], off: number, len: number): void;
     write(array: number[], off: number, len: number): void;

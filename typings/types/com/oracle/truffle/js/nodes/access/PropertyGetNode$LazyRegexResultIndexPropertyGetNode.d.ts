@@ -8,7 +8,6 @@ import type { TRegexUtil$InvokeGetGroupBoundariesMethodNode } from '../../../../
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PropertyGetNode$LazyRegexResultIndexPropertyGetNode extends PropertyGetNode$LinkedPropertyGetNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(property: Property, receiverCheck: PropertyCacheNode$ReceiverCheckNode)
     // private readLazyRegexResult: DynamicObjectLibrary;
     // private readStartNode: TRegexUtil$InvokeGetGroupBoundariesMethodNode;

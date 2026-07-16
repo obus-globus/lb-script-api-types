@@ -37,7 +37,7 @@ export class MixinEnvironment$Option extends Enum<MixinEnvironment$Option> {
     static TUNABLE: MixinEnvironment$Option;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MixinEnvironment$Option;
-    static values(): (Object | null)[];
+    static values(): MixinEnvironment$Option[];
     private constructor(arg2: string)
     private constructor(arg2: string, arg3: string)
     private constructor(arg2: MixinEnvironment$Option, arg3: string)

@@ -57,11 +57,11 @@ export class IOUtils extends Object {
     static byteArray(paramarg0: number): number[];
     static close(paramarg0: Closeable): void;
     static close(paramarg0: Closeable, paramarg1: (param0: IOException) => void): void;
-    static close(...paramarg0: (Object | null)[]): void;
+    static close(...paramarg0: Closeable[]): void;
     static close(paramarg0: URLConnection): void;
     static closeQuietly(paramarg0: Closeable): void;
     static closeQuietly(paramarg0: Closeable, paramarg1: (param0: Exception) => void): void;
-    static closeQuietly(...paramarg0: (Object | null)[]): void;
+    static closeQuietly(...paramarg0: Closeable[]): void;
     static closeQuietly(paramarg0: InputStream): void;
     static closeQuietly(paramarg0: OutputStream): void;
     static closeQuietly(paramarg0: Reader): void;
@@ -101,7 +101,7 @@ export class IOUtils extends Object {
     static length(paramarg0: number[]): number;
     static length(paramarg0: string[]): number;
     static length(paramarg0: CharSequence): number;
-    static length(paramarg0: (Object | null)[]): number;
+    static length(paramarg0: Object[]): number;
     static lineIterator(paramarg0: InputStream, paramarg1: string): LineIterator;
     static lineIterator(paramarg0: InputStream, paramarg1: Charset): LineIterator;
     static lineIterator(paramarg0: Reader): LineIterator;
@@ -140,7 +140,6 @@ export class IOUtils extends Object {
     static toBufferedReader(paramarg0: Reader): BufferedReader;
     static toBufferedReader(paramarg0: Reader, paramarg1: number): BufferedReader;
     static toByteArray(paramarg0: InputStream): number[];
-    static toByteArray(paramarg0: InputStream, paramarg1: number): number[];
     static toByteArray(paramarg0: InputStream, paramarg1: number): number[];
     static toByteArray(paramarg0: Reader): number[];
     static toByteArray(paramarg0: Reader, paramarg1: string): number[];

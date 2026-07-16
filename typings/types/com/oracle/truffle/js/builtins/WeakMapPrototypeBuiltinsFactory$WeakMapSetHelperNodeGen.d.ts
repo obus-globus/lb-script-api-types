@@ -6,7 +6,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class WeakMapPrototypeBuiltinsFactory$WeakMapSetHelperNodeGen extends WeakMapPrototypeBuiltins$WeakMapSetHelperNode {
     static create(): WeakMapPrototypeBuiltins$WeakMapSetHelperNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private setJSObject_invertedGetter_: DynamicObjectLibrary;
     // private setJSObject_invertedSetter_: DynamicObjectLibrary;

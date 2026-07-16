@@ -9,7 +9,7 @@ export class JsonEncoding extends Enum<JsonEncoding> {
     static UTF8: JsonEncoding;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): JsonEncoding;
-    static values(): (Object | null)[];
+    static values(): JsonEncoding[];
     private constructor(arg2: string, arg3: boolean, arg4: number)
     // private _bigEndian: boolean;
     // private _bits: number;

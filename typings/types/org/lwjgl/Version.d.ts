@@ -6,6 +6,6 @@ export class Version extends Object {
     static VERSION_MINOR: number;
     static VERSION_REVISION: number;
     static getVersion(): string;
-    static main(paramarg0: (Object | null)[]): void;
+    static main(paramarg0: string[]): void;
     private constructor()
 }

@@ -4,7 +4,7 @@ export class ObjectSortedSets extends Object {
     static EMPTY_SET: (Object | null)[];
     static emptySet(): (Object | null)[];
     static singleton(paramarg0: Object | null): (Object | null)[];
-    static singleton(paramarg0: Object | null, paramarg1: (param0: Object) => boolean): (Object | null)[];
+    static singleton(paramarg0: Object | null, paramarg1: (param0: Object, param1: Object) => number): (Object | null)[];
     static synchronize(paramarg0: (Object | null)[]): (Object | null)[];
     static synchronize(paramarg0: (Object | null)[], paramarg1: Object): (Object | null)[];
     static unmodifiable(paramarg0: (Object | null)[]): (Object | null)[];

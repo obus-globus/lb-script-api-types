@@ -8,7 +8,7 @@ export class ConfigurationState$BridgePhase extends Enum<ConfigurationState$Brid
     static REENTERING_CONFIGURATION: ConfigurationState$BridgePhase;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ConfigurationState$BridgePhase;
-    static values(): (Object | null)[];
+    static values(): ConfigurationState$BridgePhase[];
     private constructor()
     name(): "NONE" | "PROFILE_SENT" | "CONFIGURATION" | "REENTERING_CONFIGURATION";
 }

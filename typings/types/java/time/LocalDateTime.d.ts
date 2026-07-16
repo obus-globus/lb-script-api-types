@@ -44,7 +44,7 @@ export class LocalDateTime extends Object implements Serializable, ChronoLocalDa
     static ofInstant(paramarg0: Instant, paramarg1: ZoneId): LocalDateTime;
     static parse(paramarg0: CharSequence): LocalDateTime;
     static parse(paramarg0: CharSequence, paramarg1: DateTimeFormatter): LocalDateTime;
-    static timeLineOrder(): (param0: Object) => boolean;
+    static timeLineOrder(): (param0: ChronoLocalDateTime<any>, param1: ChronoLocalDateTime<any>) => number;
     private constructor(arg0: LocalDate, arg1: LocalTime)
     // private date: LocalDate;
     // private time: LocalTime;

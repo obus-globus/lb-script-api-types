@@ -7,7 +7,7 @@ export class MappedLegacyBlockItem$Type extends Enum<MappedLegacyBlockItem$Type>
     static ITEM: MappedLegacyBlockItem$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MappedLegacyBlockItem$Type;
-    static values(): (Object | null)[];
+    static values(): MappedLegacyBlockItem$Type[];
     private constructor(arg2: string)
     getName(): string;
     name(): "ITEM" | "BLOCK_ITEM" | "BLOCK";

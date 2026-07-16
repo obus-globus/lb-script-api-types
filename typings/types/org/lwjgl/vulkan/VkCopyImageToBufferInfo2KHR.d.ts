@@ -25,28 +25,21 @@ export class VkCopyImageToBufferInfo2KHR extends VkCopyImageToBufferInfo2 {
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkCopyImageToBufferInfo2KHR;
     static calloc(paramarg0: MemoryStack): VkCopyImageToBufferInfo2KHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkCopyImageToBufferInfo2;
     static create(paramarg0: number): VkCopyImageToBufferInfo2;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkCopyImageToBufferInfo2KHR;
     static create(paramarg0: number): VkCopyImageToBufferInfo2KHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkCopyImageToBufferInfo2;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkCopyImageToBufferInfo2KHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkCopyImageToBufferInfo2;
     static malloc(paramarg0: MemoryStack): VkCopyImageToBufferInfo2;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkCopyImageToBufferInfo2KHR;
     static malloc(paramarg0: MemoryStack): VkCopyImageToBufferInfo2KHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ndstBuffer(paramarg0: number): number;
     static ndstBuffer(paramarg0: number, paramarg1: number): void;
     static npNext(paramarg0: number): number;
@@ -61,7 +54,6 @@ export class VkCopyImageToBufferInfo2KHR extends VkCopyImageToBufferInfo2 {
     static nsrcImage(paramarg0: number, paramarg1: number): void;
     static nsrcImageLayout(paramarg0: number): number;
     static nsrcImageLayout(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

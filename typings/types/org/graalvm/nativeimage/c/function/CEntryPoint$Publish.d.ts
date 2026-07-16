@@ -7,7 +7,7 @@ export class CEntryPoint$Publish extends Enum<CEntryPoint$Publish> {
     static SymbolOnly: CEntryPoint$Publish;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CEntryPoint$Publish;
-    static values(): (Object | null)[];
+    static values(): CEntryPoint$Publish[];
     private constructor()
     name(): "NotPublished" | "SymbolOnly" | "SymbolAndHeader";
 }

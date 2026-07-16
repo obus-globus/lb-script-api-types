@@ -8,7 +8,7 @@ export class InternalResource$OS extends Enum<InternalResource$OS> {
     static getCurrent(): InternalResource$OS;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): InternalResource$OS;
-    static values(): (Object | null)[];
+    static values(): InternalResource$OS[];
     private constructor(id: string)
     // private id: string;
     toString(): string;

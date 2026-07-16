@@ -7,7 +7,7 @@ export class EpollIoHandler$RegistrationState extends Enum<EpollIoHandler$Regist
     static Pending: EpollIoHandler$RegistrationState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): EpollIoHandler$RegistrationState;
-    static values(): (Object | null)[];
+    static values(): EpollIoHandler$RegistrationState[];
     private constructor()
     name(): "Pending" | "Added" | "Cancelled";
 }

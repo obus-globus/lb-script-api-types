@@ -15,8 +15,8 @@ export class DecimalFormatSymbols extends Object implements Serializable, Clonea
     static CURRENCY_SPC_SURROUNDING_MATCH: number;
     static forNumberingSystem(paramlocale: Locale, paramns: NumberingSystem): DecimalFormatSymbols;
     static forNumberingSystem(paramlocale: ULocale, paramns: NumberingSystem): DecimalFormatSymbols;
-    static getAvailableLocales(): (Object | null)[];
-    static getAvailableULocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
+    static getAvailableULocales(): ULocale[];
     static getInstance(): DecimalFormatSymbols;
     static getInstance(paramlocale: Locale): DecimalFormatSymbols;
     static getInstance(paramlocale: ULocale): DecimalFormatSymbols;

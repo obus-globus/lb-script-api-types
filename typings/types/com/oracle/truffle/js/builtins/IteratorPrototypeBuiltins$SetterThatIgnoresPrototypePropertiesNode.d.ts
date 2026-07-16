@@ -11,7 +11,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class IteratorPrototypeBuiltins$SetterThatIgnoresPrototypePropertiesNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext, parampropertyKey: Object): IteratorPrototypeBuiltins$SetterThatIgnoresPrototypePropertiesNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, propertyKey: Object)
     // private context: JSContext;
     // private propertyKey: Object;

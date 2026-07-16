@@ -25,7 +25,7 @@ import type { Fetcher } from '../../../../org/apache/tika/pipes/fetcher/Fetcher.
 import type { FetcherManager } from '../../../../org/apache/tika/pipes/fetcher/FetcherManager.d.ts'
 export class PipesServer extends Object implements Runnable {
     static TIMEOUT_EXIT_CODE: number;
-    static main(paramarg0: (Object | null)[]): void;
+    static main(paramarg0: string[]): void;
     constructor(arg0: Path, arg1: InputStream, arg2: PrintStream, arg3: number, arg4: number, arg5: number)
     // private autoDetectParser: Parser;
     // private checkForTimeoutMs: number;

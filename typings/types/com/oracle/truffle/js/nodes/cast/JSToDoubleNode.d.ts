@@ -8,7 +8,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSToDoubleNode extends JavaScriptBaseNode {
     static create(): JSToDoubleNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doBigInt(value: BigInt): number;
     doForeignObject(object: Object, recursiveToDouble: JSToDoubleNode, toPrimitiveNode: JSToPrimitiveNode): number;

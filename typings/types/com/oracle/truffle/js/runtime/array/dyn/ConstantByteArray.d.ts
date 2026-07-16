@@ -12,8 +12,8 @@ import type { ZeroBasedObjectArray } from '../../../../../../../com/oracle/truff
 import type { JSDynamicObject } from '../../../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class ConstantByteArray extends AbstractConstantArray {
-    static EMPTY_OBJECT_ARRAY: (Object | null)[];
-    static createConstantArray(paramelements: (Object | null)[]): AbstractConstantArray;
+    static EMPTY_OBJECT_ARRAY: Object[];
+    static createConstantArray(paramelements: Object[]): AbstractConstantArray;
     static createConstantByteArray(): ConstantByteArray;
     static createConstantEmptyArray(): AbstractConstantArray;
     static getElementByte(paramobject: JSDynamicObject, paramindex: number): number;

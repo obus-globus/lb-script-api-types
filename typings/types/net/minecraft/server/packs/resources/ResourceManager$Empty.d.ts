@@ -16,7 +16,7 @@ export class ResourceManager$Empty extends Enum<ResourceManager$Empty> implement
     static INSTANCE: ResourceManager$Empty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ResourceManager$Empty;
-    static values(): (Object | null)[];
+    static values(): ResourceManager$Empty[];
     private constructor()
     getNamespaces(): string[];
     getResource(location: Identifier): Optional<Resource>;

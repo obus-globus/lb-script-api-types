@@ -11,7 +11,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class CreateRegExpNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): CreateRegExpNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private context: JSContext;
     // private isNamedCGNull: InteropLibrary;

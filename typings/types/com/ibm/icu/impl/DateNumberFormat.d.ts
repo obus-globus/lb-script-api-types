@@ -26,8 +26,8 @@ export class DateNumberFormat extends NumberFormat implements Cloneable {
     static PLURALCURRENCYSTYLE: number;
     static SCIENTIFICSTYLE: number;
     static STANDARDCURRENCYSTYLE: number;
-    static getAvailableLocales(): (Object | null)[];
-    static getAvailableULocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
+    static getAvailableULocales(): ULocale[];
     static getCurrencyInstance(paramarg0: ULocale): NumberFormat;
     static getCurrencyInstance(paramarg0: Locale): NumberFormat;
     static getCurrencyInstance(): NumberFormat;

@@ -8,7 +8,7 @@ export class ConversionType extends Enum<ConversionType> {
     static SPLIT_ON_DEATH: ConversionType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ConversionType;
-    static values(): (Object | null)[];
+    static values(): ConversionType[];
     private constructor(discardAfterConversion: boolean)
     // private discardAfterConversion: boolean;
     convert(from: Mob, to: Mob, params: ConversionParams): void;

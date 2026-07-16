@@ -17,7 +17,7 @@ export class ModuleTeams$Matches extends Enum<ModuleTeams$Matches> implements Pr
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleTeams$Matches;
-    static values(): (Object | null)[];
+    static values(): ModuleTeams$Matches[];
     private constructor(tag: string, testMatches: (param0: LivingEntity) => boolean)
     readonly tag: string;
     // private testMatches: (param0: LivingEntity) => boolean;

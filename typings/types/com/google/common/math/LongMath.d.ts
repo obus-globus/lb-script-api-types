@@ -17,7 +17,6 @@ export class LongMath extends Object {
     static log2(paramx: number, parammode: RoundingMode): number;
     static mean(paramx: number, paramy: number): number;
     static mod(paramx: number, paramm: number): number;
-    static mod(paramx: number, paramm: number): number;
     static pow(paramb: number, paramk: number): number;
     static roundToDouble(paramx: number, parammode: RoundingMode): number;
     static saturatedAbs(paramx: number): number;

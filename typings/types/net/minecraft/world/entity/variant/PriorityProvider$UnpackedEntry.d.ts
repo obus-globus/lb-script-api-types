@@ -3,7 +3,7 @@ import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { PriorityProvider$SelectorCondition } from '../../../../../net/minecraft/world/entity/variant/PriorityProvider$SelectorCondition.d.ts'
 export class PriorityProvider$UnpackedEntry<C extends unknown, T extends unknown> extends Record {
-    static HIGHEST_PRIORITY_FIRST: (param0: Object) => boolean;
+    static HIGHEST_PRIORITY_FIRST: (param0: PriorityProvider$UnpackedEntry<Object, Object>, param1: PriorityProvider$UnpackedEntry<Object, Object>) => number;
     constructor(entry: T, priority: number, condition: (param0: Object | null) => boolean)
     // private condition: (param0: Object | null) => boolean;
     // private entry: T;

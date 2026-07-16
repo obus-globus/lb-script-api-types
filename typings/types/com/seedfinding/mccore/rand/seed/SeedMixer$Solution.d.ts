@@ -7,7 +7,7 @@ export class SeedMixer$Solution extends Enum<SeedMixer$Solution> {
     static of(paramarg0: number): SeedMixer$Solution;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SeedMixer$Solution;
-    static values(): (Object | null)[];
+    static values(): SeedMixer$Solution[];
     private constructor()
     name(): "EVEN" | "ODD";
 }

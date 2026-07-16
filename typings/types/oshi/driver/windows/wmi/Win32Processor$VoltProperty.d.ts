@@ -6,7 +6,7 @@ export class Win32Processor$VoltProperty extends Enum<Win32Processor$VoltPropert
     static VOLTAGECAPS: Win32Processor$VoltProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Win32Processor$VoltProperty;
-    static values(): (Object | null)[];
+    static values(): Win32Processor$VoltProperty[];
     private constructor()
     name(): "CURRENTVOLTAGE" | "VOLTAGECAPS";
 }

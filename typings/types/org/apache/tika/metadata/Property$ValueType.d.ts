@@ -19,7 +19,7 @@ export class Property$ValueType extends Enum<Property$ValueType> {
     static XPATH: Property$ValueType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Property$ValueType;
-    static values(): (Object | null)[];
+    static values(): Property$ValueType[];
     private constructor()
     name(): "BOOLEAN" | "OPEN_CHOICE" | "CLOSED_CHOICE" | "DATE" | "INTEGER" | "LOCALE" | "MIME_TYPE" | "PROPER_NAME" | "RATIONAL" | "REAL" | "TEXT" | "URI" | "URL" | "XPATH" | "PROPERTY";
 }

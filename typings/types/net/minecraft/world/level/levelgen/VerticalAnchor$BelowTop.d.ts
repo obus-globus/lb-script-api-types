@@ -6,7 +6,6 @@ import type { WorldGenerationContext } from '../../../../../net/minecraft/world/
 export class VerticalAnchor$BelowTop extends Record implements VerticalAnchor {
     static BOTTOM: VerticalAnchor;
     static CODEC: Codec<VerticalAnchor$BelowTop>;
-    static CODEC: Codec<VerticalAnchor>;
     static TOP: VerticalAnchor;
     static aboveBottom(paramoffset: number): VerticalAnchor;
     static absolute(paramvalue: number): VerticalAnchor;

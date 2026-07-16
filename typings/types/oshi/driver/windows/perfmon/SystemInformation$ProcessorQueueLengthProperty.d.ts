@@ -6,7 +6,7 @@ export class SystemInformation$ProcessorQueueLengthProperty extends Enum<SystemI
     static PROCESSORQUEUELENGTH: SystemInformation$ProcessorQueueLengthProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SystemInformation$ProcessorQueueLengthProperty;
-    static values(): (Object | null)[];
+    static values(): SystemInformation$ProcessorQueueLengthProperty[];
     private constructor(arg2: string, arg3: string)
     readonly counter: string;
     readonly instance: string;

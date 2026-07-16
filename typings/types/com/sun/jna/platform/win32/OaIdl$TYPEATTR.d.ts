@@ -11,7 +11,6 @@ import type { WinDef$LCID } from '../../../../../com/sun/jna/platform/win32/WinD
 import type { WinDef$ULONG } from '../../../../../com/sun/jna/platform/win32/WinDef$ULONG.d.ts'
 import type { WinDef$WORD } from '../../../../../com/sun/jna/platform/win32/WinDef$WORD.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class OaIdl$TYPEATTR extends Structure {
     static ALIGN_DEFAULT: number;
     static ALIGN_GNUC: number;
@@ -32,11 +31,11 @@ export class OaIdl$TYPEATTR extends Structure {
     static TYPEFLAGS_FREPLACEABLE: number;
     static TYPEFLAGS_FRESTRICTED: number;
     static TYPEFLAGS_FREVERSEBIND: number;
-    static autoRead(paramarg0: (Object | null)[]): void;
-    static autoWrite(paramarg0: (Object | null)[]): void;
+    static autoRead(paramarg0: Structure[]): void;
+    static autoWrite(paramarg0: Structure[]): void;
     static createFieldsOrder(paramarg0: string): string[];
-    static createFieldsOrder(...paramarg0: (Object | null)[]): string[];
-    static createFieldsOrder(paramarg0: string[], ...paramarg1: (Object | null)[]): string[];
+    static createFieldsOrder(...paramarg0: string[]): string[];
+    static createFieldsOrder(paramarg0: string[], ...paramarg1: string[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: string[]): string[];
     static newInstance(paramarg0: Class<Structure>): Structure | null;
     static newInstance(paramarg0: Class<Structure>, paramarg1: Pointer): Structure | null;

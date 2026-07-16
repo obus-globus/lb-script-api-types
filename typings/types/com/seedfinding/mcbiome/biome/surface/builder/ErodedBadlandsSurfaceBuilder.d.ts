@@ -6,9 +6,8 @@ import type { Block } from '../../../../../../com/seedfinding/mccore/block/Block
 import type { ChunkRand } from '../../../../../../com/seedfinding/mccore/rand/ChunkRand.d.ts'
 import type { Pair } from '../../../../../../com/seedfinding/mccore/util/data/Pair.d.ts'
 import type { OctaveSimplexNoiseSampler } from '../../../../../../com/seedfinding/mcnoise/simplex/OctaveSimplexNoiseSampler.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ErodedBadlandsSurfaceBuilder extends BadlandsSurfaceBuilder {
-    static generateBands(paramarg0: number): Pair<(Object | null)[], OctaveSimplexNoiseSampler>;
+    static generateBands(paramarg0: number): Pair<Block[], OctaveSimplexNoiseSampler>;
     constructor(arg0: SurfaceConfig)
     // private yPikes: number;
     applyToColumn(arg0: BiomeSource, arg1: ChunkRand, arg2: Block[], arg3: Biome, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: Block, arg10: Block): Block[];

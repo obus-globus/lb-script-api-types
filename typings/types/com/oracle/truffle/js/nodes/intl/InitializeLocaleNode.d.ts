@@ -13,7 +13,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class InitializeLocaleNode extends JavaScriptBaseNode {
     static createInitalizeLocaleNode(paramcontext: JSContext): InitializeLocaleNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     static stringToWeekdayValue(paramfw: string): number;
     constructor(context: JSContext)
     // private coerceOptionsToObjectNode: CoerceOptionsToObjectNode;

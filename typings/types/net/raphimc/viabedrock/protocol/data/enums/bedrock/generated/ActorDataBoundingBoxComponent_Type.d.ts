@@ -11,7 +11,7 @@ export class ActorDataBoundingBoxComponent_Type extends Enum<ActorDataBoundingBo
     static getByValue(paramarg0: number, paramarg1: ActorDataBoundingBoxComponent_Type): ActorDataBoundingBoxComponent_Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ActorDataBoundingBoxComponent_Type;
-    static values(): (Object | null)[];
+    static values(): ActorDataBoundingBoxComponent_Type[];
     private constructor(arg2: number)
     private constructor(arg2: ActorDataBoundingBoxComponent_Type)
     readonly value: number;

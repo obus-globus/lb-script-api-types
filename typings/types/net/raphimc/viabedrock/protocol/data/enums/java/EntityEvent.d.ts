@@ -66,7 +66,7 @@ export class EntityEvent extends Enum<EntityEvent> {
     static getByValue(paramarg0: number, paramarg1: EntityEvent): EntityEvent;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): EntityEvent;
-    static values(): (Object | null)[];
+    static values(): EntityEvent[];
     private constructor(arg2: number)
     readonly value: number;
     getValue(): number;

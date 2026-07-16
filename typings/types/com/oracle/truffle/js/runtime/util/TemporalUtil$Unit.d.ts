@@ -14,12 +14,12 @@ export class TemporalUtil$Unit extends Enum<TemporalUtil$Unit> {
     static NANOSECOND: TemporalUtil$Unit;
     static REQUIRED: TemporalUtil$Unit;
     static SECOND: TemporalUtil$Unit;
-    static VALUES: (Object | null)[];
+    static VALUES: TemporalUtil$Unit[];
     static WEEK: TemporalUtil$Unit;
     static YEAR: TemporalUtil$Unit;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TemporalUtil$Unit;
-    static values(): (Object | null)[];
+    static values(): TemporalUtil$Unit[];
     private constructor(name: TruffleString)
     // private name: TruffleString;
     getLengthInNanoseconds(): number;

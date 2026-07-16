@@ -6,7 +6,7 @@ export class BonemealableBlock$Type extends Enum<BonemealableBlock$Type> {
     static NEIGHBOR_SPREADER: BonemealableBlock$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): BonemealableBlock$Type;
-    static values(): (Object | null)[];
+    static values(): BonemealableBlock$Type[];
     private constructor()
     name(): "NEIGHBOR_SPREADER" | "GROWER";
 }

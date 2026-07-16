@@ -9,7 +9,7 @@ import type { Instant } from '../../../../../../org/apache/logging/log4j/core/ti
 import type { InstantFormatter } from '../../../../../../org/apache/logging/log4j/core/util/internal/instant/InstantFormatter.d.ts'
 export class DatePatternConverter extends LogEventPatternConverter implements ArrayPatternConverter {
     static CATEGORY: string;
-    static newInstance(paramoptions: (Object | null)[]): DatePatternConverter;
+    static newInstance(paramoptions: string[]): DatePatternConverter;
     private constructor(options: string[])
     // private formatter: InstantFormatter;
     format(buffer: StringBuilder, ...objects: Object[]): void;

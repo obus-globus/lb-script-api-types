@@ -6,7 +6,7 @@ export class PagingFile$PagingPercentProperty extends Enum<PagingFile$PagingPerc
     static PERCENTUSAGE: PagingFile$PagingPercentProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PagingFile$PagingPercentProperty;
-    static values(): (Object | null)[];
+    static values(): PagingFile$PagingPercentProperty[];
     private constructor(arg2: string, arg3: string)
     readonly counter: string;
     readonly instance: string;

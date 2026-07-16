@@ -8,7 +8,7 @@ export class State extends Enum<State> {
     static WRITING: State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): State;
-    static values(): (Object | null)[];
+    static values(): State[];
     private constructor()
     name(): "INIT" | "WRITING" | "PAUSED" | "CLOSED";
 }

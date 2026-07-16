@@ -7,7 +7,7 @@ export class LocalCache$NullEntry extends Enum<LocalCache$NullEntry> implements 
     static INSTANCE: LocalCache$NullEntry;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): LocalCache$NullEntry;
-    static values(): (Object | null)[];
+    static values(): LocalCache$NullEntry[];
     private constructor()
     getAccessTime(): number;
     getHash(): number;

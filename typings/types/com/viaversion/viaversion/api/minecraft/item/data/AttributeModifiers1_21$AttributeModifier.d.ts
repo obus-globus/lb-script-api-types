@@ -4,8 +4,8 @@ import type { Type } from '../../../../../../../com/viaversion/viaversion/api/ty
 import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class AttributeModifiers1_21$AttributeModifier extends Record {
-    static ARRAY_TYPE1_21: Type<(Object | null)[]>;
-    static ARRAY_TYPE1_21_6: Type<(Object | null)[]>;
+    static ARRAY_TYPE1_21: Type<AttributeModifiers1_21$AttributeModifier[]>;
+    static ARRAY_TYPE1_21_6: Type<AttributeModifiers1_21$AttributeModifier[]>;
     static TYPE1_21: Type<AttributeModifiers1_21$AttributeModifier>;
     static TYPE1_21_6: Type<AttributeModifiers1_21$AttributeModifier>;
     constructor(arg0: number, arg1: AttributeModifiers1_21$ModifierData, arg2: number)

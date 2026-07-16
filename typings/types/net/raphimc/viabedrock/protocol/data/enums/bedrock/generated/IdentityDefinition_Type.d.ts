@@ -12,7 +12,7 @@ export class IdentityDefinition_Type extends Enum<IdentityDefinition_Type> {
     static getByValue(paramarg0: number, paramarg1: IdentityDefinition_Type): IdentityDefinition_Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): IdentityDefinition_Type;
-    static values(): (Object | null)[];
+    static values(): IdentityDefinition_Type[];
     private constructor(arg2: number)
     private constructor(arg2: IdentityDefinition_Type)
     readonly value: number;

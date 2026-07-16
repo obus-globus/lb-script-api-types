@@ -11,7 +11,6 @@ import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PropertyCacheNode$TraverseValuePrototypeChainCheckNode extends PropertyCacheNode$AbstractShapeCheckNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(valueClass: Class<Object>, shape: Shape, thisObj: JSDynamicObject, depth: number, jsclass: JSClass)
     // private getPrototypeNodes: GetPrototypeNode[];
     // private jsclass: (param0: JSRealm) => JSDynamicObject;

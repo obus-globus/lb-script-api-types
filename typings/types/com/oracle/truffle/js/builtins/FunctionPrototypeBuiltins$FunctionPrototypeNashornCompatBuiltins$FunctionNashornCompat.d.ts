@@ -11,7 +11,7 @@ export class FunctionPrototypeBuiltins$FunctionPrototypeNashornCompatBuiltins$Fu
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): FunctionPrototypeBuiltins$FunctionPrototypeNashornCompatBuiltins$FunctionNashornCompat;
-    static values(): (Object | null)[];
+    static values(): FunctionPrototypeBuiltins$FunctionPrototypeNashornCompatBuiltins$FunctionNashornCompat[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

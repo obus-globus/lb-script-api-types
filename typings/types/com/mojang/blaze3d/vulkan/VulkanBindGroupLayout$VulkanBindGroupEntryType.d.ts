@@ -7,7 +7,7 @@ export class VulkanBindGroupLayout$VulkanBindGroupEntryType extends Enum<VulkanB
     static UNIFORM_BUFFER: VulkanBindGroupLayout$VulkanBindGroupEntryType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): VulkanBindGroupLayout$VulkanBindGroupEntryType;
-    static values(): (Object | null)[];
+    static values(): VulkanBindGroupLayout$VulkanBindGroupEntryType[];
     private constructor()
     name(): "UNIFORM_BUFFER" | "SAMPLED_IMAGE" | "TEXEL_BUFFER";
 }

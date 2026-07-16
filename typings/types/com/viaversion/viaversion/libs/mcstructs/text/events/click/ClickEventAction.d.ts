@@ -18,7 +18,7 @@ export class ClickEventAction extends Enum<ClickEventAction> implements NamedTyp
     static byName(paramarg0: string, paramarg1: (param0: string, param1: string) => boolean): ClickEventAction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClickEventAction;
-    static values(): (Object | null)[];
+    static values(): ClickEventAction[];
     private constructor(arg2: string, arg3: boolean)
     readonly userDefinable: boolean;
     getName(): string;

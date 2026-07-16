@@ -1,8 +1,9 @@
+import type { BytecodeLocal } from '../../../../../com/oracle/truffle/api/bytecode/BytecodeLocal.d.ts'
 import type { BytecodeNode } from '../../../../../com/oracle/truffle/api/bytecode/BytecodeNode.d.ts'
 import type { VirtualFrame } from '../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class LocalRangeAccessor extends Object {
-    static constantOf(paramlocals: (Object | null)[]): LocalRangeAccessor;
+    static constantOf(paramlocals: BytecodeLocal[]): LocalRangeAccessor;
     private constructor(startOffset: number, startIndex: number, length: number)
     readonly length: number;
     // private startIndex: number;

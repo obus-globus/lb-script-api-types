@@ -22,28 +22,21 @@ export class VkSubpassFragmentDensityMapOffsetEndInfoQCOM extends VkRenderPassFr
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkSubpassFragmentDensityMapOffsetEndInfoQCOM;
     static calloc(paramarg0: MemoryStack): VkSubpassFragmentDensityMapOffsetEndInfoQCOM;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkRenderPassFragmentDensityMapOffsetEndInfoEXT;
     static create(paramarg0: number): VkRenderPassFragmentDensityMapOffsetEndInfoEXT;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkSubpassFragmentDensityMapOffsetEndInfoQCOM;
     static create(paramarg0: number): VkSubpassFragmentDensityMapOffsetEndInfoQCOM;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkRenderPassFragmentDensityMapOffsetEndInfoEXT;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkSubpassFragmentDensityMapOffsetEndInfoQCOM;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkRenderPassFragmentDensityMapOffsetEndInfoEXT;
     static malloc(paramarg0: MemoryStack): VkRenderPassFragmentDensityMapOffsetEndInfoEXT;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkSubpassFragmentDensityMapOffsetEndInfoQCOM;
     static malloc(paramarg0: MemoryStack): VkSubpassFragmentDensityMapOffsetEndInfoQCOM;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nfragmentDensityOffsetCount(paramarg0: number): number;
     static nfragmentDensityOffsetCount(paramarg0: number, paramarg1: number): void;
     static npFragmentDensityOffsets(paramarg0: number): (Object | null)[];
@@ -52,7 +45,6 @@ export class VkSubpassFragmentDensityMapOffsetEndInfoQCOM extends VkRenderPassFr
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

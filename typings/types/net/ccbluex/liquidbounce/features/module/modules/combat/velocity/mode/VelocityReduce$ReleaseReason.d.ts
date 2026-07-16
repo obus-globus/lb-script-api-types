@@ -10,7 +10,7 @@ export class VelocityReduce$ReleaseReason extends Enum<VelocityReduce$ReleaseRea
     static getEntries(): VelocityReduce$ReleaseReason[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): VelocityReduce$ReleaseReason;
-    static values(): (Object | null)[];
+    static values(): VelocityReduce$ReleaseReason[];
     private constructor(debugSuffix: string | null)
     readonly debugSuffix: string | null;
     name(): "TARGET_REACHED" | "FLAG" | "SPECTATOR" | "OUT_OF_RANGE" | "MAX_DELAY";

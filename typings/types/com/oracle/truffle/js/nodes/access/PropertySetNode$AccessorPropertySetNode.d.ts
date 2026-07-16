@@ -9,7 +9,6 @@ import type { JSFunctionCallNode } from '../../../../../../com/oracle/truffle/js
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PropertySetNode$AccessorPropertySetNode extends PropertySetNode$LinkedPropertySetNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(property: Property, receiverCheck: PropertyCacheNode$ReceiverCheckNode, isStrict: boolean)
     // private callNode: JSFunctionCallNode;
     // private isStrict: boolean;

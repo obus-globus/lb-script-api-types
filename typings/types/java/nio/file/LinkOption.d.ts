@@ -7,7 +7,7 @@ export class LinkOption extends Enum<LinkOption> implements CopyOption, OpenOpti
     static NOFOLLOW_LINKS: LinkOption;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LinkOption;
-    static values(): (Object | null)[];
+    static values(): LinkOption[];
     private constructor()
     name(): "NOFOLLOW_LINKS";
 }

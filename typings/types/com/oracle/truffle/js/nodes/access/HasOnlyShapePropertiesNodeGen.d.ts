@@ -7,7 +7,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 export class HasOnlyShapePropertiesNodeGen extends HasOnlyShapePropertiesNode {
     static create(): HasOnlyShapePropertiesNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private cached_cache: HasOnlyShapePropertiesNodeGen$CachedData;
     // private objectPrototype_context_: JSContext;

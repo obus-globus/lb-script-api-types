@@ -7,7 +7,7 @@ export class InterfaceHttpData$HttpDataType extends Enum<InterfaceHttpData$HttpD
     static InternalAttribute: InterfaceHttpData$HttpDataType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): InterfaceHttpData$HttpDataType;
-    static values(): (Object | null)[];
+    static values(): InterfaceHttpData$HttpDataType[];
     private constructor()
     name(): "Attribute" | "FileUpload" | "InternalAttribute";
 }

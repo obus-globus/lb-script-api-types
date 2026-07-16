@@ -13,7 +13,6 @@ export abstract class IsArrayNode extends JavaScriptBaseNode {
     static createIsFastArray(): IsArrayNode;
     static createIsFastOrTypedArray(): IsArrayNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(kind: IsArrayNode$Kind)
     // private kind: IsArrayNode$Kind;
     checkResult(object: Object, result: boolean): boolean;

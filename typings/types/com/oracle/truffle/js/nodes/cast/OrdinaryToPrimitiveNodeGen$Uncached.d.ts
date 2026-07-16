@@ -8,7 +8,6 @@ export class OrdinaryToPrimitiveNodeGen$Uncached extends OrdinaryToPrimitiveNode
     static create(): OrdinaryToPrimitiveNode;
     static isJavaArray(paramobject: Object, paraminterop: InteropLibrary): boolean;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     execute(arg0Value: Object, arg1Value: JSToPrimitiveNode$Hint): Object;
 }

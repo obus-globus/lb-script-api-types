@@ -7,7 +7,7 @@ export class TimeZoneGenericNames$GenericNameType extends Enum<TimeZoneGenericNa
     static SHORT: TimeZoneGenericNames$GenericNameType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TimeZoneGenericNames$GenericNameType;
-    static values(): (Object | null)[];
+    static values(): TimeZoneGenericNames$GenericNameType[];
     private constructor(...arg2: string[])
     // private _fallbackTypeOf: string[];
     isFallbackTypeOf(arg0: TimeZoneGenericNames$GenericNameType): boolean;

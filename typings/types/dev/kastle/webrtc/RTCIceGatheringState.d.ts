@@ -7,7 +7,7 @@ export class RTCIceGatheringState extends Enum<RTCIceGatheringState> {
     static NEW: RTCIceGatheringState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RTCIceGatheringState;
-    static values(): (Object | null)[];
+    static values(): RTCIceGatheringState[];
     private constructor()
     name(): "NEW" | "GATHERING" | "COMPLETE";
 }

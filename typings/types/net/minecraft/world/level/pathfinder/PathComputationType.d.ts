@@ -7,7 +7,7 @@ export class PathComputationType extends Enum<PathComputationType> {
     static WATER: PathComputationType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PathComputationType;
-    static values(): (Object | null)[];
+    static values(): PathComputationType[];
     private constructor()
     name(): "LAND" | "WATER" | "AIR";
 }

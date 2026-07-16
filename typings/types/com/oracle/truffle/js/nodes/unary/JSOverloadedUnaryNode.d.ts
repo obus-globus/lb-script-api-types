@@ -6,7 +6,6 @@ import type { JSOverloadedOperatorsObject } from '../../../../../../com/oracle/t
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSOverloadedUnaryNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(overloadedOperatorName: TruffleString)
     // private overloadedOperatorName: TruffleString;
     doCached(operand: JSOverloadedOperatorsObject, operatorCounter: number, operatorImplementation: Object, callNode: JSFunctionCallNode): Object;

@@ -7,7 +7,7 @@ export class UnbakedModel$GuiLight extends Enum<UnbakedModel$GuiLight> {
     static getByName(paramname: string): UnbakedModel$GuiLight;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): UnbakedModel$GuiLight;
-    static values(): (Object | null)[];
+    static values(): UnbakedModel$GuiLight[];
     private constructor(name: string)
     // private name: string;
     lightLikeBlock(): boolean;

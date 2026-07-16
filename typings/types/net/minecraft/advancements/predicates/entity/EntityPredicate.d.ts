@@ -13,7 +13,7 @@ export class EntityPredicate extends Object {
     static ADVANCEMENT_CODEC: Codec<ContextAwarePredicate>;
     static CODEC: Codec<EntityPredicate>;
     static createContext(paramplayer: ServerPlayer, paramentity: Entity): LootContext;
-    static wrap(...parampredicates: (Object | null)[]): ContextAwarePredicate[];
+    static wrap(...parampredicates: EntityPredicate$Builder[]): ContextAwarePredicate[];
     static wrap(paramsinglePredicate: Optional<EntityPredicate>): Optional<ContextAwarePredicate>;
     static wrap(paramsinglePredicate: EntityPredicate$Builder): ContextAwarePredicate;
     static wrap(paramsinglePredicate: EntityPredicate): ContextAwarePredicate;

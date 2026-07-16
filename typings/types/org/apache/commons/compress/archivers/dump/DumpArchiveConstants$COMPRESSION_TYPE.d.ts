@@ -9,7 +9,7 @@ export class DumpArchiveConstants$COMPRESSION_TYPE extends Enum<DumpArchiveConst
     static find(paramarg0: number): DumpArchiveConstants$COMPRESSION_TYPE;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DumpArchiveConstants$COMPRESSION_TYPE;
-    static values(): (Object | null)[];
+    static values(): DumpArchiveConstants$COMPRESSION_TYPE[];
     private constructor(arg2: number)
     // private code: number;
     name(): "UNKNOWN" | "ZLIB" | "BZLIB" | "LZO";

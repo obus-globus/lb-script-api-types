@@ -7,7 +7,7 @@ export class ExtendedItemFeatureRenderer$OutputType extends Enum<ExtendedItemFea
     static OUTLINE: ExtendedItemFeatureRenderer$OutputType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ExtendedItemFeatureRenderer$OutputType;
-    static values(): (Object | null)[];
+    static values(): ExtendedItemFeatureRenderer$OutputType[];
     private constructor()
     name(): "MAIN" | "OUTLINE" | "FOIL";
 }

@@ -8,7 +8,6 @@ export abstract class JSToOperandNode extends JavaScriptBaseNode {
     static create(paramhint: JSToPrimitiveNode$Hint): JSToOperandNode;
     static create(paramhint: JSToPrimitiveNode$Hint, paramcheckOperatorAllowed: boolean): JSToOperandNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(hint: JSToPrimitiveNode$Hint, checkOperatorAllowed: boolean)
     // private checkOperatorAllowed: boolean;
     // private hint: JSToPrimitiveNode$Hint;

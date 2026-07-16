@@ -12,7 +12,6 @@ export class GetIteratorNodeGen$Inlined extends GetIteratorNode implements Unado
     static create(): GetIteratorNode;
     static getUncached(): GetIteratorNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(target: InlineSupport$InlineTarget)
     // private getIteratorFromMethodNode_: GetIteratorFromMethodNode;
     // private getIteratorFromMethodNode__field1_: InlineSupport$ReferenceField<Node>;

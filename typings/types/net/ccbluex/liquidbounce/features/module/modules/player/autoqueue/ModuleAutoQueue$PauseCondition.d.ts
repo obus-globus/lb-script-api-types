@@ -15,7 +15,7 @@ export class ModuleAutoQueue$PauseCondition extends Enum<ModuleAutoQueue$PauseCo
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleAutoQueue$PauseCondition;
-    static values(): (Object | null)[];
+    static values(): ModuleAutoQueue$PauseCondition[];
     private constructor(tag: string)
     readonly tag: string;
     getAsBoolean(): boolean;

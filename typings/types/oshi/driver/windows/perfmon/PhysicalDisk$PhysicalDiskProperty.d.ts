@@ -12,7 +12,7 @@ export class PhysicalDisk$PhysicalDiskProperty extends Enum<PhysicalDisk$Physica
     static PERCENTDISKTIME: PhysicalDisk$PhysicalDiskProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PhysicalDisk$PhysicalDiskProperty;
-    static values(): (Object | null)[];
+    static values(): PhysicalDisk$PhysicalDiskProperty[];
     private constructor(arg2: string)
     readonly counter: string;
     getCounter(): string;

@@ -8,7 +8,7 @@ export class TeamVisibility extends Enum<TeamVisibility> {
     static NEVER: TeamVisibility;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TeamVisibility;
-    static values(): (Object | null)[];
+    static values(): TeamVisibility[];
     private constructor()
     name(): "ALWAYS" | "NEVER" | "HIDE_FOR_OTHER_TEAMS" | "HIDE_FOR_OWN_TEAM";
 }

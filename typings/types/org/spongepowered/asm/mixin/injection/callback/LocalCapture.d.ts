@@ -9,7 +9,7 @@ export class LocalCapture extends Enum<LocalCapture> {
     static PRINT: LocalCapture;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LocalCapture;
-    static values(): (Object | null)[];
+    static values(): LocalCapture[];
     private constructor()
     private constructor(arg2: boolean, arg3: boolean)
     // private captureLocals: boolean;

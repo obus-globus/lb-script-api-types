@@ -21,7 +21,7 @@ export class DisplayOptions$GrammaticalCase extends Enum<DisplayOptions$Grammati
     static fromIdentifier(paramarg0: string): DisplayOptions$GrammaticalCase;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DisplayOptions$GrammaticalCase;
-    static values(): (Object | null)[];
+    static values(): DisplayOptions$GrammaticalCase[];
     private constructor(arg2: string)
     readonly identifier: string;
     getIdentifier(): string;

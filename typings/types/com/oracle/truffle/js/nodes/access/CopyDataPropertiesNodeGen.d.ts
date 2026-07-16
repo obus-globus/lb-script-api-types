@@ -11,7 +11,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class CopyDataPropertiesNodeGen extends CopyDataPropertiesNode {
     static create(paramcontext: JSContext): CopyDataPropertiesNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private copyDataPropertiesForeign0_cache: CopyDataPropertiesNodeGen$CopyDataPropertiesForeign0Data;
     // private copyDataPropertiesForeign1_cache: CopyDataPropertiesNodeGen$CopyDataPropertiesForeign1Data;

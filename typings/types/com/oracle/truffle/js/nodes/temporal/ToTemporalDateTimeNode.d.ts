@@ -13,7 +13,6 @@ import type { JSTemporalPlainDateTimeObject } from '../../../../../../com/oracle
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ToTemporalDateTimeNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(value: Object, options: Object): JSTemporalPlainDateTimeObject;
     toTemporalDateTime(item: Object, options: Object, isObjectProfile: InlinedConditionProfile, isPlainDateTimeProfile: InlinedConditionProfile, isZonedDateTimeProfile: InlinedConditionProfile, isPlainDateProfile: InlinedConditionProfile, errorBranch: InlinedBranchProfile, isObjectNode: IsObjectNode, getOptionsNode: GetOptionsObjectNode, getTemporalCalendarNode: GetTemporalCalendarIdentifierWithISODefaultNode, getOptionNode: TemporalGetOptionNode, dateFromFieldsNode: TemporalCalendarDateFromFieldsNode, toJavaString: TruffleString$ToJavaStringNode, fromJavaString: TruffleString$FromJavaStringNode): JSTemporalPlainDateTimeObject;

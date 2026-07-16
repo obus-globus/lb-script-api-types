@@ -7,7 +7,7 @@ export class CyclicalTracker$CyclicalMode extends Enum<CyclicalTracker$CyclicalM
     static TRIANGULAR2: CyclicalTracker$CyclicalMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CyclicalTracker$CyclicalMode;
-    static values(): (Object | null)[];
+    static values(): CyclicalTracker$CyclicalMode[];
     private constructor()
     name(): "TRIANGULAR" | "TRIANGULAR2" | "EXP_RANGE";
 }

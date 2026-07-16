@@ -25,7 +25,7 @@ export class IteratorPrototypeBuiltins$IteratorPrototype extends Enum<IteratorPr
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): IteratorPrototypeBuiltins$IteratorPrototype;
-    static values(): (Object | null)[];
+    static values(): IteratorPrototypeBuiltins$IteratorPrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

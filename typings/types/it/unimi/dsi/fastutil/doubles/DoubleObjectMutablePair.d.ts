@@ -3,7 +3,7 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DoubleObjectMutablePair<V extends unknown> extends Object implements DoubleObjectPair<V>, Serializable {
-    static lexComparator(): (param0: Object) => boolean;
+    static lexComparator(): (param0: DoubleObjectPair<Object>, param1: DoubleObjectPair<Object>) => number;
     static of(paramarg0: number, paramarg1: Object | null): DoubleObjectMutablePair<Object>;
     static of(paramarg0: number, paramarg1: Object | null): DoubleObjectPair<Object>;
     constructor(arg0: number, arg1: V)

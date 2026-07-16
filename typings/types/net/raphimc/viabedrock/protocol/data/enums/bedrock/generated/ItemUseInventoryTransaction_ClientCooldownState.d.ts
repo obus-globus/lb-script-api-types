@@ -10,7 +10,7 @@ export class ItemUseInventoryTransaction_ClientCooldownState extends Enum<ItemUs
     static getByValue(paramarg0: number, paramarg1: ItemUseInventoryTransaction_ClientCooldownState): ItemUseInventoryTransaction_ClientCooldownState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ItemUseInventoryTransaction_ClientCooldownState;
-    static values(): (Object | null)[];
+    static values(): ItemUseInventoryTransaction_ClientCooldownState[];
     private constructor(arg2: number)
     private constructor(arg2: ItemUseInventoryTransaction_ClientCooldownState)
     readonly value: number;

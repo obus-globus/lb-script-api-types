@@ -9,7 +9,7 @@ export class DiagnosticSeverity extends Enum<DiagnosticSeverity> {
     static get(paramintValue: number): DiagnosticSeverity;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): DiagnosticSeverity;
-    static values(): (Object | null)[];
+    static values(): DiagnosticSeverity[];
     private constructor(intValue: number)
     readonly intValue: number;
     getIntValue(): number;

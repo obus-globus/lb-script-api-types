@@ -8,7 +8,6 @@ export class ArrayLengthNodeFactory$SetArrayLengthNodeGen extends ArrayLengthNod
     static create(paramstrict: boolean): ArrayLengthNode$SetArrayLengthNode;
     static createSetOrDelete(paramstrict: boolean): ArrayLengthNode$ArrayLengthWriteNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(strict: boolean)
     // private cached_cache: ArrayLengthNodeFactory$SetArrayLengthNodeGen$CachedData;
     // private state_0_: number;

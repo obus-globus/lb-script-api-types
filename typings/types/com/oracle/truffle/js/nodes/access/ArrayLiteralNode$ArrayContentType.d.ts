@@ -11,7 +11,7 @@ export class ArrayLiteralNode$ArrayContentType extends Enum<ArrayLiteralNode$Arr
     static Object: ArrayLiteralNode$ArrayContentType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ArrayLiteralNode$ArrayContentType;
-    static values(): (Object | null)[];
+    static values(): ArrayLiteralNode$ArrayContentType[];
     private constructor()
     name(): "Byte" | "ByteWithHoles" | "Integer" | "IntegerWithHoles" | "Double" | "DoubleWithHoles" | "Object";
 }

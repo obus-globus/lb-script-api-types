@@ -2,7 +2,7 @@ import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ArchiveEntry } from '../../../../../org/apache/commons/compress/archivers/ArchiveEntry.d.ts'
 export class Lister extends Object {
-    static main(...paramarg0: (Object | null)[]): void;
+    static main(...paramarg0: string[]): void;
     constructor()
     constructor(arg0: boolean, ...arg1: string[])
     // private args: string[];

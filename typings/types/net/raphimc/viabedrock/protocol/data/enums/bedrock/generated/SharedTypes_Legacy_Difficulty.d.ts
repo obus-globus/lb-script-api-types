@@ -13,7 +13,7 @@ export class SharedTypes_Legacy_Difficulty extends Enum<SharedTypes_Legacy_Diffi
     static getByValue(paramarg0: number, paramarg1: SharedTypes_Legacy_Difficulty): SharedTypes_Legacy_Difficulty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SharedTypes_Legacy_Difficulty;
-    static values(): (Object | null)[];
+    static values(): SharedTypes_Legacy_Difficulty[];
     private constructor(arg2: number)
     private constructor(arg2: SharedTypes_Legacy_Difficulty)
     readonly value: number;

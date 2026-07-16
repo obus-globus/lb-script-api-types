@@ -21,7 +21,7 @@ export class RelativeDateTimeFormatter$RelDateTimeDataSink$DateTimeUnit extends 
     static YEAR: RelativeDateTimeFormatter$RelDateTimeDataSink$DateTimeUnit;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RelativeDateTimeFormatter$RelDateTimeDataSink$DateTimeUnit;
-    static values(): (Object | null)[];
+    static values(): RelativeDateTimeFormatter$RelDateTimeDataSink$DateTimeUnit[];
     private constructor(relUnit: RelativeDateTimeFormatter$RelativeUnit, absUnit: RelativeDateTimeFormatter$AbsoluteUnit)
     // private absUnit: RelativeDateTimeFormatter$AbsoluteUnit;
     // private relUnit: RelativeDateTimeFormatter$RelativeUnit;

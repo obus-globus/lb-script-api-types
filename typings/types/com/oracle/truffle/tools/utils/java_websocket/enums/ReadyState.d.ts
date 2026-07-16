@@ -8,7 +8,7 @@ export class ReadyState extends Enum<ReadyState> {
     static OPEN: ReadyState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ReadyState;
-    static values(): (Object | null)[];
+    static values(): ReadyState[];
     private constructor()
     name(): "NOT_YET_CONNECTED" | "OPEN" | "CLOSING" | "CLOSED";
 }

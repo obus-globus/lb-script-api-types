@@ -7,7 +7,7 @@ export class SocksMessageType extends Enum<SocksMessageType> {
     static UNKNOWN: SocksMessageType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SocksMessageType;
-    static values(): (Object | null)[];
+    static values(): SocksMessageType[];
     private constructor()
     name(): "REQUEST" | "RESPONSE" | "UNKNOWN";
 }

@@ -10,7 +10,7 @@ export class InputConstants$Type extends Enum<InputConstants$Type> {
     static SCANCODE: InputConstants$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): InputConstants$Type;
-    static values(): (Object | null)[];
+    static values(): InputConstants$Type[];
     private constructor(defaultPrefix: string, displayTextSupplier: (param0: number, param1: string) => Component)
     // private defaultPrefix: string;
     // private displayTextSupplier: (param0: number, param1: string) => Component;

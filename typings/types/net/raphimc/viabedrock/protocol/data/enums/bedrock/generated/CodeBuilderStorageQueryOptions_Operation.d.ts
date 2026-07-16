@@ -12,7 +12,7 @@ export class CodeBuilderStorageQueryOptions_Operation extends Enum<CodeBuilderSt
     static getByValue(paramarg0: number, paramarg1: CodeBuilderStorageQueryOptions_Operation): CodeBuilderStorageQueryOptions_Operation;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CodeBuilderStorageQueryOptions_Operation;
-    static values(): (Object | null)[];
+    static values(): CodeBuilderStorageQueryOptions_Operation[];
     private constructor(arg2: number)
     private constructor(arg2: CodeBuilderStorageQueryOptions_Operation)
     readonly value: number;

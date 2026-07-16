@@ -6,7 +6,7 @@ export class TemporalUtil$Overflow extends Enum<TemporalUtil$Overflow> {
     static REJECT: TemporalUtil$Overflow;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TemporalUtil$Overflow;
-    static values(): (Object | null)[];
+    static values(): TemporalUtil$Overflow[];
     private constructor()
     name(): "CONSTRAIN" | "REJECT";
 }

@@ -5,7 +5,6 @@ import type { PropertySetNode$LinkedPropertySetNode } from '../../../../../../co
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PropertySetNode$JSAdapterPropertySetNode extends PropertySetNode$LinkedPropertySetNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(receiverCheckNode: PropertyCacheNode$ReceiverCheckNode)
     setValue(thisObj: Object, value: Object, receiver: Object, root: PropertySetNode, guard: boolean): boolean;
 }

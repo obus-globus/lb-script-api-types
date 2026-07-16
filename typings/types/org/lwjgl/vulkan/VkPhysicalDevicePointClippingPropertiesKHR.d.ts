@@ -21,34 +21,26 @@ export class VkPhysicalDevicePointClippingPropertiesKHR extends VkPhysicalDevice
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDevicePointClippingPropertiesKHR;
     static calloc(paramarg0: MemoryStack): VkPhysicalDevicePointClippingPropertiesKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDevicePointClippingProperties;
     static create(paramarg0: number): VkPhysicalDevicePointClippingProperties;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDevicePointClippingPropertiesKHR;
     static create(paramarg0: number): VkPhysicalDevicePointClippingPropertiesKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDevicePointClippingProperties;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDevicePointClippingPropertiesKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDevicePointClippingProperties;
     static malloc(paramarg0: MemoryStack): VkPhysicalDevicePointClippingProperties;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDevicePointClippingPropertiesKHR;
     static malloc(paramarg0: MemoryStack): VkPhysicalDevicePointClippingPropertiesKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static npointClippingBehavior(paramarg0: number): number;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

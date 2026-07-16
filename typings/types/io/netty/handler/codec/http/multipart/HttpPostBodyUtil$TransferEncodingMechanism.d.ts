@@ -7,7 +7,7 @@ export class HttpPostBodyUtil$TransferEncodingMechanism extends Enum<HttpPostBod
     static BIT8: HttpPostBodyUtil$TransferEncodingMechanism;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HttpPostBodyUtil$TransferEncodingMechanism;
-    static values(): (Object | null)[];
+    static values(): HttpPostBodyUtil$TransferEncodingMechanism[];
     private constructor(arg2: string)
     // private value: string;
     toString(): string;

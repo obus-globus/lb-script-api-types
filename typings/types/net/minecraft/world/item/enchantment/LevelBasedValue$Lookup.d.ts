@@ -6,7 +6,6 @@ import type { LevelBasedValue } from '../../../../../net/minecraft/world/item/en
 import type { LevelBasedValue$Constant } from '../../../../../net/minecraft/world/item/enchantment/LevelBasedValue$Constant.d.ts'
 import type { LevelBasedValue$Linear } from '../../../../../net/minecraft/world/item/enchantment/LevelBasedValue$Linear.d.ts'
 export class LevelBasedValue$Lookup extends Record implements LevelBasedValue {
-    static CODEC: Codec<LevelBasedValue>;
     static CODEC: MapCodec<LevelBasedValue$Lookup>;
     static DISPATCH_CODEC: Codec<LevelBasedValue>;
     static bootstrap(paramregistry: MapCodec<LevelBasedValue>[]): MapCodec<LevelBasedValue>;

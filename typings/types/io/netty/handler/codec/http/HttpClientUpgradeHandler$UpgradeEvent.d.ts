@@ -7,7 +7,7 @@ export class HttpClientUpgradeHandler$UpgradeEvent extends Enum<HttpClientUpgrad
     static UPGRADE_SUCCESSFUL: HttpClientUpgradeHandler$UpgradeEvent;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HttpClientUpgradeHandler$UpgradeEvent;
-    static values(): (Object | null)[];
+    static values(): HttpClientUpgradeHandler$UpgradeEvent[];
     private constructor()
     name(): "UPGRADE_ISSUED" | "UPGRADE_SUCCESSFUL" | "UPGRADE_REJECTED";
 }

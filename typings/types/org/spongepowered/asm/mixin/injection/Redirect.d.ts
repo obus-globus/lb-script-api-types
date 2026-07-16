@@ -4,7 +4,6 @@ import type { At } from '../../../../../org/spongepowered/asm/mixin/injection/At
 import type { Desc } from '../../../../../org/spongepowered/asm/mixin/injection/Desc.d.ts'
 import type { Slice } from '../../../../../org/spongepowered/asm/mixin/injection/Slice.d.ts'
 export interface Redirect extends Annotation, Object{
-    constructor(allow: number, at: At, constraints: string, expect: number, method: string[], order: number, remap: boolean, require: number, slice: Slice, target: Desc[])
     /*not mapped: */ allow(): number;
     /*not mapped: */ at(): At;
     /*not mapped: */ constraints(): string;

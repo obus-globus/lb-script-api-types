@@ -7,7 +7,6 @@ export class JSToObjectNodeGen extends JSToObjectNode {
     static create(): JSToObjectNode;
     static getUncached(): JSToObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private foreignObject0_cache: JSToObjectNodeGen$ForeignObject0Data;
     // private jSObjectCached_cache: JSToObjectNodeGen$JSObjectCachedData;

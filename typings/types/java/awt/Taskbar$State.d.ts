@@ -9,7 +9,7 @@ export class Taskbar$State extends Enum<Taskbar$State> {
     static PAUSED: Taskbar$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Taskbar$State;
-    static values(): (Object | null)[];
+    static values(): Taskbar$State[];
     private constructor()
     name(): "OFF" | "NORMAL" | "PAUSED" | "INDETERMINATE" | "ERROR";
 }

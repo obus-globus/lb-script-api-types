@@ -10,7 +10,7 @@ export class DataType$Format extends Enum<DataType$Format> {
     static UNKNOWN: DataType$Format;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DataType$Format;
-    static values(): (Object | null)[];
+    static values(): DataType$Format[];
     private constructor()
     name(): "FLOATING" | "UINT" | "INT" | "BOOLEAN" | "STRING" | "UNKNOWN";
 }

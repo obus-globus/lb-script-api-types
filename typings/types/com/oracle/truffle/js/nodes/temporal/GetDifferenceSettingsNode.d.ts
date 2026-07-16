@@ -11,7 +11,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { TemporalUtil$Unit } from '../../../../../../com/oracle/truffle/js/runtime/util/TemporalUtil$Unit.d.ts'
 export abstract class GetDifferenceSettingsNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(operation: number, options: JSDynamicObject, unitMappingOrAuto: Map<TruffleString, TemporalUtil$Unit>, unitMapping: Map<TruffleString, TemporalUtil$Unit>, fallbackSmallestUnit: TemporalUtil$Unit, smallestLargestDefaultUnit: TemporalUtil$Unit): GetDifferenceSettingsNode$GetDifferenceSettingsResult;
     getDifferenceSettings(operation: number, resolvedOptions: JSDynamicObject, unitMappingOrAuto: Map<TruffleString, TemporalUtil$Unit>, unitMapping: Map<TruffleString, TemporalUtil$Unit>, fallbackSmallestUnit: TemporalUtil$Unit, smallestLargestDefaultUnit: TemporalUtil$Unit, errorBranch: InlinedBranchProfile, getOptionNode: TemporalGetOptionNode, equalNode: TruffleString$EqualNode, getLargestUnit: GetTemporalUnitNode, getRoundingIncrementOption: GetRoundingIncrementOptionNode, getSmallestUnit: GetTemporalUnitNode): GetDifferenceSettingsNode$GetDifferenceSettingsResult;

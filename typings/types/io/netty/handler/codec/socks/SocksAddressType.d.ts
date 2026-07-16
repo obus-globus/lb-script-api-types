@@ -10,7 +10,7 @@ export class SocksAddressType extends Enum<SocksAddressType> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: number): SocksAddressType;
     static valueOf(paramarg0: string): SocksAddressType;
-    static values(): (Object | null)[];
+    static values(): SocksAddressType[];
     private constructor(arg2: number)
     // private b: number;
     byteValue(): number;

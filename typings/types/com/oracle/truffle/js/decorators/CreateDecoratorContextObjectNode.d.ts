@@ -21,7 +21,6 @@ export abstract class CreateDecoratorContextObjectNode extends JavaScriptBaseNod
     static create(paramcontext: JSContext, parammember: ObjectLiteralNode$ObjectLiteralMemberNode): CreateDecoratorContextObjectNode;
     static createForClass(paramcontext: JSContext): CreateDecoratorContextObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, isStatic: boolean, isPrivate: boolean, privateScopeNode: ScopeFrameNode, privateMemberSlotIndex: number, privateBrandSlotIndex: number, classDef: boolean)
     // private context: JSContext;
     // private createObjectNode: CreateObjectNode;

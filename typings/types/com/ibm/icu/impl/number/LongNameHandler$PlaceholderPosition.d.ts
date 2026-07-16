@@ -8,7 +8,7 @@ export class LongNameHandler$PlaceholderPosition extends Enum<LongNameHandler$Pl
     static NONE: LongNameHandler$PlaceholderPosition;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LongNameHandler$PlaceholderPosition;
-    static values(): (Object | null)[];
+    static values(): LongNameHandler$PlaceholderPosition[];
     private constructor()
     name(): "NONE" | "BEGINNING" | "MIDDLE" | "END";
 }

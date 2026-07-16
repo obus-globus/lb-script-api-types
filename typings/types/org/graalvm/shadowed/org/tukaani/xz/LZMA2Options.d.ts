@@ -23,8 +23,8 @@ export class LZMA2Options extends FilterOptions {
     static PRESET_DEFAULT: number;
     static PRESET_MAX: number;
     static PRESET_MIN: number;
-    static getDecoderMemoryUsage(paramoptions: (Object | null)[]): number;
-    static getEncoderMemoryUsage(paramoptions: (Object | null)[]): number;
+    static getDecoderMemoryUsage(paramoptions: FilterOptions[]): number;
+    static getEncoderMemoryUsage(paramoptions: FilterOptions[]): number;
     constructor()
     constructor(preset: number)
     constructor(dictSize: number, lc: number, lp: number, pb: number, mode: number, niceLen: number, mf: number, depthLimit: number)

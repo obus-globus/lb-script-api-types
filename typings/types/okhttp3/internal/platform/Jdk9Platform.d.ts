@@ -5,10 +5,8 @@ import type { X509TrustManager } from '../../../javax/net/ssl/X509TrustManager.d
 import type { Protocol } from '../../../okhttp3/Protocol.d.ts'
 import type { Jdk9Platform$Companion } from '../../../okhttp3/internal/platform/Jdk9Platform$Companion.d.ts'
 import type { Platform } from '../../../okhttp3/internal/platform/Platform.d.ts'
-import type { Platform$Companion } from '../../../okhttp3/internal/platform/Platform$Companion.d.ts'
 export class Jdk9Platform extends Platform {
     static Companion: Jdk9Platform$Companion;
-    static Companion: Platform$Companion;
     static INFO: number;
     static WARN: number;
     static get(): Platform;

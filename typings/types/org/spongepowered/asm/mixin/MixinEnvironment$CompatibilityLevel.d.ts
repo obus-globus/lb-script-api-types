@@ -29,7 +29,7 @@ export class MixinEnvironment$CompatibilityLevel extends Enum<MixinEnvironment$C
     static requiredFor(paramarg0: number): MixinEnvironment$CompatibilityLevel;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MixinEnvironment$CompatibilityLevel;
-    static values(): (Object | null)[];
+    static values(): MixinEnvironment$CompatibilityLevel[];
     constructor(arg2: number, arg3: number, arg4: number, arg5: any)
     readonly languageFeatures: number;
     // private maxCompatibleLevel: MixinEnvironment$CompatibilityLevel;

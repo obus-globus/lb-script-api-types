@@ -10,7 +10,7 @@ export class InvocationKind extends Enum<InvocationKind> implements Serializable
     static getEntries(): InvocationKind[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): InvocationKind;
-    static values(): (Object | null)[];
+    static values(): InvocationKind[];
     private constructor()
     name(): "AT_MOST_ONCE" | "AT_LEAST_ONCE" | "EXACTLY_ONCE" | "UNKNOWN";
 }

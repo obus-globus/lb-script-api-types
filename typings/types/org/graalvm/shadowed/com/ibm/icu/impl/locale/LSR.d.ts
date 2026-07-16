@@ -8,7 +8,7 @@ export class LSR extends Object {
     static EXPLICIT_SCRIPT: number;
     static IMPLICIT_LSR: number;
     static REGION_INDEX_LIMIT: number;
-    static decodeInts(paramnums: number[], paramm49: (Object | null)[]): (Object | null)[];
+    static decodeInts(paramnums: number[], paramm49: string[]): LSR[];
     static indexForRegion(paramregion: string): number;
     constructor(language: string, script: string, region: string, flags: number)
     flags: number;

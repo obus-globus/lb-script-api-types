@@ -10,7 +10,7 @@ export class User$DefaultAvatar extends Enum<User$DefaultAvatar> {
     static RED: User$DefaultAvatar;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): User$DefaultAvatar;
-    static values(): (Object | null)[];
+    static values(): User$DefaultAvatar[];
     private constructor(arg2: string)
     // private text: string;
     toString(): string;

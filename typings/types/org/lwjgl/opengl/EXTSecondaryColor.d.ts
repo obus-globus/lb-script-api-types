@@ -35,13 +35,11 @@ export class EXTSecondaryColor extends Object {
     static glSecondaryColor3usvEXT(paramarg0: ShortBuffer): void;
     static glSecondaryColor3usvEXT(paramarg0: number[]): void;
     static glSecondaryColorPointerEXT(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number[]): void;
-    static glSecondaryColorPointerEXT(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number[]): void;
     static glSecondaryColorPointerEXT(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: ByteBuffer): void;
     static glSecondaryColorPointerEXT(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: FloatBuffer): void;
     static glSecondaryColorPointerEXT(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: IntBuffer): void;
     static glSecondaryColorPointerEXT(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: ShortBuffer): void;
     static glSecondaryColorPointerEXT(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): void;
-    static glSecondaryColorPointerEXT(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number[]): void;
     static nglSecondaryColor3bvEXT(paramarg0: number): void;
     static nglSecondaryColor3dvEXT(paramarg0: number): void;
     static nglSecondaryColor3fvEXT(paramarg0: number): void;

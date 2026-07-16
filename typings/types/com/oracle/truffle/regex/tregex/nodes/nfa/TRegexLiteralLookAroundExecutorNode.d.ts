@@ -3,6 +3,7 @@ import type { TruffleString } from '../../../../../../../com/oracle/truffle/api/
 import type { TruffleString$CodeRange } from '../../../../../../../com/oracle/truffle/api/strings/TruffleString$CodeRange.d.ts'
 import type { CompilationBuffer } from '../../../../../../../com/oracle/truffle/regex/tregex/buffer/CompilationBuffer.d.ts'
 import type { CharMatcher } from '../../../../../../../com/oracle/truffle/regex/tregex/matchers/CharMatcher.d.ts'
+import type { TRegexExecutorBaseNode } from '../../../../../../../com/oracle/truffle/regex/tregex/nodes/TRegexExecutorBaseNode.d.ts'
 import type { TRegexExecutorLocals } from '../../../../../../../com/oracle/truffle/regex/tregex/nodes/TRegexExecutorLocals.d.ts'
 import type { TRegexBacktrackerSubExecutorNode } from '../../../../../../../com/oracle/truffle/regex/tregex/nodes/nfa/TRegexBacktrackerSubExecutorNode.d.ts'
 import type { LookAroundAssertion } from '../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/LookAroundAssertion.d.ts'
@@ -14,7 +15,7 @@ export class TRegexLiteralLookAroundExecutorNode extends TRegexBacktrackerSubExe
     static CONTINUE_PROBABILITY: number;
     static EXIT_PROBABILITY: number;
     static LATIN1_PROBABILITY: number;
-    static NO_SUB_EXECUTORS: (Object | null)[];
+    static NO_SUB_EXECUTORS: TRegexExecutorBaseNode[];
     static create(paramast: RegexAST, paramlookAround: LookAroundAssertion, paramcompilationBuffer: CompilationBuffer): TRegexLiteralLookAroundExecutorNode;
     static inputIncRaw(paramindex: number, paramoffset: number, paramforward: boolean): number;
     private constructor(copy: TRegexLiteralLookAroundExecutorNode)

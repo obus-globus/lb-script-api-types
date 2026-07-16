@@ -10,6 +10,7 @@ import type { MouseScrollEvent } from '../../../../../../net/ccbluex/liquidbounc
 import type { Browser } from '../../../../../../net/ccbluex/liquidbounce/integration/backend/browser/Browser.d.ts'
 import type { InputAcceptor } from '../../../../../../net/ccbluex/liquidbounce/integration/backend/input/InputAcceptor.d.ts'
 import type { InputHandler } from '../../../../../../net/ccbluex/liquidbounce/integration/backend/input/InputHandler.d.ts'
+import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
 /**
  * Handles input events for a single browser instance.
  *
@@ -21,6 +22,7 @@ export class InputListener extends Object implements AutoCloseable, EventListene
     constructor(browser: Browser, inputHandler: InputHandler, acceptor: InputAcceptor)
     readonly acceptor: InputAcceptor;
     readonly browser: Browser;
+    readonly debugDisplayName: Component;
     readonly inputHandler: InputHandler;
     // private keyboardCharHandler: EventHook<KeyboardCharEvent>;
     // private keyboardKeyHandler: EventHook<KeyboardKeyEvent>;
@@ -29,6 +31,7 @@ export class InputListener extends Object implements AutoCloseable, EventListene
     // private mouseScrollHandler: EventHook<MouseScrollEvent>;
     // private mouseX: number;
     // private mouseY: number;
+    readonly running: boolean;
     children(): EventListener[];
     close(): void;
     parent(): EventListener | null;

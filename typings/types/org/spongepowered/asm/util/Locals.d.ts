@@ -1,4 +1,5 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Type } from '../../../../org/objectweb/asm/Type.d.ts'
 import type { AbstractInsnNode } from '../../../../org/objectweb/asm/tree/AbstractInsnNode.d.ts'
 import type { ClassNode } from '../../../../org/objectweb/asm/tree/ClassNode.d.ts'
 import type { FrameNode } from '../../../../org/objectweb/asm/tree/FrameNode.d.ts'
@@ -10,12 +11,12 @@ export class Locals extends Object {
     static generateLocalVariableTable(paramarg0: ClassNode, paramarg1: MethodNode): LocalVariableNode[];
     static getFrameTypeName(paramarg0: Object): string;
     static getGeneratedLocalVariableTable(paramarg0: ClassNode, paramarg1: MethodNode): LocalVariableNode[];
-    static getInitialMethodLocals(paramarg0: MethodNode, paramarg1: ClassNode, paramarg2: number): (Object | null)[];
-    static getInitialMethodLocals(paramarg0: MethodNode, paramarg1: ClassNode, paramarg2: number, paramarg3: boolean): (Object | null)[];
+    static getInitialMethodLocals(paramarg0: MethodNode, paramarg1: ClassNode, paramarg2: number): LocalVariableNode[];
+    static getInitialMethodLocals(paramarg0: MethodNode, paramarg1: ClassNode, paramarg2: number, paramarg3: boolean): LocalVariableNode[];
     static getLocalVariableAt(paramarg0: ClassNode, paramarg1: MethodNode, paramarg2: AbstractInsnNode, paramarg3: number): LocalVariableNode;
     static getLocalVariableTable(paramarg0: ClassNode, paramarg1: MethodNode): LocalVariableNode[];
-    static getLocalsAt(paramarg0: ClassNode, paramarg1: MethodNode, paramarg2: AbstractInsnNode, paramarg3: number): (Object | null)[];
-    static getLocalsAt(paramarg0: ClassNode, paramarg1: MethodNode, paramarg2: AbstractInsnNode, paramarg3: Locals$Settings): (Object | null)[];
-    static loadLocals(paramarg0: (Object | null)[], paramarg1: AbstractInsnNode[], paramarg2: number, paramarg3: number): void;
+    static getLocalsAt(paramarg0: ClassNode, paramarg1: MethodNode, paramarg2: AbstractInsnNode, paramarg3: number): LocalVariableNode[];
+    static getLocalsAt(paramarg0: ClassNode, paramarg1: MethodNode, paramarg2: AbstractInsnNode, paramarg3: Locals$Settings): LocalVariableNode[];
+    static loadLocals(paramarg0: Type[], paramarg1: AbstractInsnNode[], paramarg2: number, paramarg3: number): void;
     private constructor()
 }

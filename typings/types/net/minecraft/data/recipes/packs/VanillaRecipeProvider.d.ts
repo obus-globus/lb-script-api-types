@@ -1,5 +1,6 @@
 import type { Stream } from '../../../../../java/util/stream/Stream.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { ItemPredicate } from '../../../../../net/minecraft/advancements/predicates/ItemPredicate.d.ts'
+import type { ItemPredicate$Builder } from '../../../../../net/minecraft/advancements/predicates/ItemPredicate$Builder.d.ts'
 import type { Criterion } from '../../../../../net/minecraft/advancements/triggers/Criterion.d.ts'
 import type { EnterBlockTrigger$TriggerInstance } from '../../../../../net/minecraft/advancements/triggers/EnterBlockTrigger$TriggerInstance.d.ts'
 import type { InventoryChangeTrigger$TriggerInstance } from '../../../../../net/minecraft/advancements/triggers/InventoryChangeTrigger$TriggerInstance.d.ts'
@@ -17,8 +18,8 @@ export class VanillaRecipeProvider extends RecipeProvider {
     static getSimpleRecipeName(paramitemLike: ItemLike): string;
     static getSmeltingRecipeName(paramproduct: ItemLike): string;
     static insideOf(paramblock: Block): Criterion<EnterBlockTrigger$TriggerInstance>;
-    static inventoryTrigger(...parampredicates: (Object | null)[]): Criterion<InventoryChangeTrigger$TriggerInstance>;
-    static inventoryTrigger(...parampredicates: (Object | null)[]): Criterion<InventoryChangeTrigger$TriggerInstance>;
+    static inventoryTrigger(...parampredicates: ItemPredicate$Builder[]): Criterion<InventoryChangeTrigger$TriggerInstance>;
+    static inventoryTrigger(...parampredicates: ItemPredicate[]): Criterion<InventoryChangeTrigger$TriggerInstance>;
     static smithingTrims(): Stream<VanillaRecipeProvider$TrimTemplate>;
     private constructor(registries: HolderLookup$Provider, output: RecipeOutput)
     buildRecipes(): void;

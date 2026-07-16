@@ -42,8 +42,8 @@ export class RakConstants extends Object {
     static IPV4_MESSAGE_SIZE: number;
     static IPV6_MESSAGE_SIZE: number;
     static LOCAL_ADDRESS: InetSocketAddress;
-    static LOCAL_IP_ADDRESSES_V4: (Object | null)[];
-    static LOCAL_IP_ADDRESSES_V6: (Object | null)[];
+    static LOCAL_IP_ADDRESSES_V4: InetSocketAddress[];
+    static LOCAL_IP_ADDRESSES_V6: InetSocketAddress[];
     static LOOPBACK_V4: InetSocketAddress;
     static LOOPBACK_V6: InetSocketAddress;
     static MAXIMUM_CONNECTION_ATTEMPTS: number;
@@ -51,7 +51,7 @@ export class RakConstants extends Object {
     static MAXIMUM_MTU_SIZE: number;
     static MAXIMUM_ORDERING_CHANNELS: number;
     static MINIMUM_MTU_SIZE: number;
-    static MTU_SIZES: (Object | null)[];
+    static MTU_SIZES: number[];
     static RAKNET_DATAGRAM_HEADER_SIZE: number;
     static RAKNET_PROTOCOL_VERSION: number;
     static SESSION_STALE_MS: number;

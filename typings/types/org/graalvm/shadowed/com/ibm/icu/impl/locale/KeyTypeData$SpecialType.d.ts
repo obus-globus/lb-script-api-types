@@ -11,7 +11,7 @@ export class KeyTypeData$SpecialType extends Enum<KeyTypeData$SpecialType> {
     static SUBDIVISION_CODE: KeyTypeData$SpecialType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): KeyTypeData$SpecialType;
-    static values(): (Object | null)[];
+    static values(): KeyTypeData$SpecialType[];
     private constructor(handler: KeyTypeData$SpecialTypeHandler)
     // private handler: KeyTypeData$SpecialTypeHandler;
     name(): "CODEPOINTS" | "REORDER_CODE" | "RG_KEY_VALUE" | "SCRIPT_CODE" | "SUBDIVISION_CODE" | "PRIVATE_USE";

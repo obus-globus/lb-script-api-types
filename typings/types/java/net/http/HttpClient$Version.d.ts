@@ -6,7 +6,7 @@ export class HttpClient$Version extends Enum<HttpClient$Version> {
     static HTTP_2: HttpClient$Version;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HttpClient$Version;
-    static values(): (Object | null)[];
+    static values(): HttpClient$Version[];
     private constructor()
     name(): "HTTP_1_1" | "HTTP_2";
 }

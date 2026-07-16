@@ -7,7 +7,7 @@ export class RakOfflineState extends Enum<RakOfflineState> {
     static HANDSHAKE_COMPLETED: RakOfflineState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RakOfflineState;
-    static values(): (Object | null)[];
+    static values(): RakOfflineState[];
     private constructor()
     name(): "HANDSHAKE_1" | "HANDSHAKE_2" | "HANDSHAKE_COMPLETED";
 }

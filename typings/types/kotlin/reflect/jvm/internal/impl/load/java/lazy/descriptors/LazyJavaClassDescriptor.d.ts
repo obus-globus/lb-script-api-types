@@ -13,7 +13,6 @@ import type { ValueClassRepresentation } from '../../../../../../../../../kotlin
 import type { Visibility } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/Visibility.d.ts'
 import type { AnnotationDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/annotations/AnnotationDescriptor.d.ts'
 import type { ClassDescriptorBase } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/impl/ClassDescriptorBase.d.ts'
-import type { ModuleAwareClassDescriptor$Companion } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/impl/ModuleAwareClassDescriptor$Companion.d.ts'
 import type { JavaResolverCache } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/components/JavaResolverCache.d.ts'
 import type { JavaClassDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/descriptors/JavaClassDescriptor.d.ts'
 import type { LazyJavaResolverContext } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/lazy/LazyJavaResolverContext.d.ts'
@@ -30,7 +29,6 @@ import type { SimpleType } from '../../../../../../../../../kotlin/reflect/jvm/i
 import type { TypeConstructor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeConstructor.d.ts'
 import type { KotlinTypeRefiner } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/types/checker/KotlinTypeRefiner.d.ts'
 export class LazyJavaClassDescriptor extends ClassDescriptorBase implements JavaClassDescriptor {
-    static Companion: ModuleAwareClassDescriptor$Companion;
     static Companion: LazyJavaClassDescriptor$Companion;
     constructor(arg0: LazyJavaResolverContext, arg1: DeclarationDescriptor, arg2: JavaClass, arg3: ClassDescriptor)
     constructor(arg0: LazyJavaResolverContext, arg1: DeclarationDescriptor, arg2: JavaClass, arg3: ClassDescriptor, arg4: number, arg5: DefaultConstructorMarker)

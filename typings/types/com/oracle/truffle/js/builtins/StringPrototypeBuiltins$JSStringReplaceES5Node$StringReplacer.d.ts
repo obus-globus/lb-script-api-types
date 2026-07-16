@@ -11,7 +11,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class StringPrototypeBuiltins$JSStringReplaceES5Node$StringReplacer extends StringPrototypeBuiltins$JSStringReplaceES5Node$Replacer<TruffleString> implements RegExpPrototypeBuiltins$ReplaceStringConsumerTRegex$ParentNode {
     static create(paramparent: StringPrototypeBuiltins$JSStringReplaceES5Node): StringPrototypeBuiltins$JSStringReplaceES5Node$StringReplacer;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(parent: StringPrototypeBuiltins$JSStringReplaceES5Node)
     // private emptyReplace: ConditionProfile;
     readonly invalidGroupNumberProfile: BranchProfile;

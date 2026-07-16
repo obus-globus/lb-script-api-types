@@ -7,7 +7,6 @@ import type { JSObject } from '../../../../../../com/oracle/truffle/js/runtime/o
 export class CreateImportMetaNodeGen extends CreateImportMetaNode {
     static create(): CreateImportMetaNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private fallback_fromJavaString_: TruffleString$FromJavaStringNode;
     // private fallback_setURINode_: CreateDataPropertyNode;

@@ -4,7 +4,6 @@ import type { EncapsulatedPacket } from '../../../../../../../org/cloudburstmc/n
 import type { RakSessionCodec } from '../../../../../../../org/cloudburstmc/netty/handler/codec/raknet/common/RakSessionCodec.d.ts'
 export class RakSessionCodecCompatible extends RakSessionCodec {
     static NAME: string;
-    static NAME: string;
     constructor(arg0: RakChannel)
     createEncapsulatedPacket(): EncapsulatedPacket;
     writePing(arg0: ChannelHandlerContext, arg1: number): void;

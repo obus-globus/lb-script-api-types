@@ -3,7 +3,7 @@ import type { PluginType } from '../../../../../../../../org/apache/logging/log4
 export class PluginManager extends Object {
     static addPackage(paramp: string): void;
     static addPackages(parampackages: string[]): void;
-    static main(paramargs: (Object | null)[]): void;
+    static main(paramargs: string[]): void;
     constructor(category: string)
     // private category: string;
     readonly plugins: { [key: string]: PluginType<Object> };

@@ -1,4 +1,6 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { ItemPredicate } from '../../../../net/minecraft/advancements/predicates/ItemPredicate.d.ts'
+import type { ItemPredicate$Builder } from '../../../../net/minecraft/advancements/predicates/ItemPredicate$Builder.d.ts'
 import type { MinMaxBounds$Ints } from '../../../../net/minecraft/advancements/predicates/MinMaxBounds$Ints.d.ts'
 import type { BredAnimalsTrigger$TriggerInstance } from '../../../../net/minecraft/advancements/triggers/BredAnimalsTrigger$TriggerInstance.d.ts'
 import type { Criterion } from '../../../../net/minecraft/advancements/triggers/Criterion.d.ts'
@@ -37,8 +39,8 @@ export abstract class RecipeProvider extends Object {
     static getSimpleRecipeName(paramitemLike: ItemLike): string;
     static getSmeltingRecipeName(paramproduct: ItemLike): string;
     static insideOf(paramblock: Block): Criterion<EnterBlockTrigger$TriggerInstance>;
-    static inventoryTrigger(...parampredicates: (Object | null)[]): Criterion<InventoryChangeTrigger$TriggerInstance>;
-    static inventoryTrigger(...parampredicates: (Object | null)[]): Criterion<InventoryChangeTrigger$TriggerInstance>;
+    static inventoryTrigger(...parampredicates: ItemPredicate$Builder[]): Criterion<InventoryChangeTrigger$TriggerInstance>;
+    static inventoryTrigger(...parampredicates: ItemPredicate[]): Criterion<InventoryChangeTrigger$TriggerInstance>;
     constructor(registries: HolderLookup$Provider, output: RecipeOutput)
     // private items: HolderGetter<Item>;
     // private output: RecipeOutput;

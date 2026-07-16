@@ -7,7 +7,6 @@ export class ForeignObjectPrototypeNodeGen$Uncached extends ForeignObjectPrototy
     static create(): ForeignObjectPrototypeNode;
     static getUncached(): ForeignObjectPrototypeNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     execute(arg0Value: Object): JSDynamicObject;
 }

@@ -19,7 +19,6 @@ export class StonecutterRecipe extends SingleItemRecipe {
     static KEY_CODEC: Codec<ResourceKey<Recipe<any>>>;
     static MAP_CODEC: MapCodec<StonecutterRecipe>;
     static SERIALIZER: RecipeSerializer<StonecutterRecipe>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<any>>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, StonecutterRecipe>;
     static simpleMapCodec(paramfactory: (param0: Recipe$CommonInfo, param1: Ingredient, param2: ItemStackTemplate) => SingleItemRecipe | null): MapCodec<SingleItemRecipe>;
     static simpleStreamCodec(paramfactory: (param0: Recipe$CommonInfo, param1: Ingredient, param2: ItemStackTemplate) => SingleItemRecipe | null): StreamCodec<RegistryFriendlyByteBuf, SingleItemRecipe>;

@@ -15,6 +15,8 @@ import type { ArmorTrimMaterial } from '../../../../../../com/viaversion/viavers
 import type { AttackRange } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/AttackRange.d.ts'
 import type { AttributeModifiers1_20_5 } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/AttributeModifiers1_20_5.d.ts'
 import type { AttributeModifiers1_21 } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/AttributeModifiers1_21.d.ts'
+import type { BannerPatternLayer } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/BannerPatternLayer.d.ts'
+import type { Bee } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/Bee.d.ts'
 import type { BlockEntityData } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/BlockEntityData.d.ts'
 import type { BlockStateProperties } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/BlockStateProperties.d.ts'
 import type { BlocksAttacks } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/BlocksAttacks.d.ts'
@@ -48,6 +50,7 @@ import type { PotionContents } from '../../../../../../com/viaversion/viaversion
 import type { ProvidesBannerPatterns } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/ProvidesBannerPatterns.d.ts'
 import type { ProvidesTrimMaterial } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/ProvidesTrimMaterial.d.ts'
 import type { Repairable } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/Repairable.d.ts'
+import type { SuspiciousStewEffect } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/SuspiciousStewEffect.d.ts'
 import type { SwingAnimation } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/SwingAnimation.d.ts'
 import type { ToolProperties } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/ToolProperties.d.ts'
 import type { TooltipDisplay } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/data/TooltipDisplay.d.ts'
@@ -73,10 +76,10 @@ export class StructuredDataKey<T extends unknown> extends Record {
     static ATTRIBUTE_MODIFIERS1_21_5: StructuredDataKey<AttributeModifiers1_21>;
     static ATTRIBUTE_MODIFIERS1_21_6: StructuredDataKey<AttributeModifiers1_21>;
     static AXOLOTL_VARIANT: StructuredDataKey<number>;
-    static BANNER_PATTERNS: StructuredDataKey<(Object | null)[]>;
+    static BANNER_PATTERNS: StructuredDataKey<BannerPatternLayer[]>;
     static BASE_COLOR: StructuredDataKey<number>;
-    static BEES1_20_5: StructuredDataKey<(Object | null)[]>;
-    static BEES1_21_9: StructuredDataKey<(Object | null)[]>;
+    static BEES1_20_5: StructuredDataKey<Bee[]>;
+    static BEES1_21_9: StructuredDataKey<Bee[]>;
     static BLOCKS_ATTACKS1_21_5: StructuredDataKey<BlocksAttacks>;
     static BLOCKS_ATTACKS26_1: StructuredDataKey<BlocksAttacks>;
     static BLOCK_ENTITY_DATA1_20_5: StructuredDataKey<Map$Entry<string, Tag>[]>;
@@ -147,7 +150,7 @@ export class StructuredDataKey<T extends unknown> extends Record {
     static LOCK1_20_5: StructuredDataKey<Tag>;
     static LOCK1_21_2: StructuredDataKey<LockCode>;
     static LODESTONE_TRACKER: StructuredDataKey<LodestoneTracker>;
-    static LORE: StructuredDataKey<(Object | null)[]>;
+    static LORE: StructuredDataKey<Tag[]>;
     static MAP_COLOR: StructuredDataKey<number>;
     static MAP_DECORATIONS: StructuredDataKey<Map$Entry<string, Tag>[]>;
     static MAP_ID: StructuredDataKey<number>;
@@ -183,7 +186,7 @@ export class StructuredDataKey<T extends unknown> extends Record {
     static SHULKER_COLOR: StructuredDataKey<number>;
     static STORED_ENCHANTMENTS1_20_5: StructuredDataKey<Enchantments>;
     static STORED_ENCHANTMENTS1_21_5: StructuredDataKey<Enchantments>;
-    static SUSPICIOUS_STEW_EFFECTS: StructuredDataKey<(Object | null)[]>;
+    static SUSPICIOUS_STEW_EFFECTS: StructuredDataKey<SuspiciousStewEffect[]>;
     static SWING_ANIMATION: StructuredDataKey<SwingAnimation>;
     static TOOL1_20_5: StructuredDataKey<ToolProperties>;
     static TOOL1_21_5: StructuredDataKey<ToolProperties>;

@@ -24,7 +24,7 @@ export class PredictionMode extends Enum<PredictionMode> {
     static resolvesToJustOneViableAlt(paramarg0: BitSet[]): number;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PredictionMode;
-    static values(): (Object | null)[];
+    static values(): PredictionMode[];
     private constructor()
     name(): "SLL" | "LL" | "LL_EXACT_AMBIG_DETECTION";
 }

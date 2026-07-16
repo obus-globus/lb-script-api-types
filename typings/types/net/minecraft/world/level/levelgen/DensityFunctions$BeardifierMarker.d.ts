@@ -10,11 +10,10 @@ import type { DensityFunction$Visitor } from '../../../../../net/minecraft/world
 import type { DensityFunctions$BeardifierOrMarker } from '../../../../../net/minecraft/world/level/levelgen/DensityFunctions$BeardifierOrMarker.d.ts'
 export class DensityFunctions$BeardifierMarker extends Enum<DensityFunctions$BeardifierMarker> implements DensityFunctions$BeardifierOrMarker {
     static CODEC: Codec<DensityFunction>;
-    static CODEC: KeyDispatchDataCodec<DensityFunction>;
     static INSTANCE: DensityFunctions$BeardifierMarker;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): DensityFunctions$BeardifierMarker;
-    static values(): (Object | null)[];
+    static values(): DensityFunctions$BeardifierMarker[];
     private constructor()
     abs(): DensityFunction;
     clamp(min: number, max: number): DensityFunction;

@@ -1,5 +1,4 @@
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { AttributeLayoutMap } from '../../../../../../org/apache/commons/compress/harmony/unpack200/AttributeLayoutMap.d.ts'
 import type { BandSet } from '../../../../../../org/apache/commons/compress/harmony/unpack200/BandSet.d.ts'
 import type { CpBands } from '../../../../../../org/apache/commons/compress/harmony/unpack200/CpBands.d.ts'
@@ -29,7 +28,7 @@ export class ClassBands extends BandSet {
     readonly codeHandlerCount: number[];
     readonly codeHandlerEndPO: number[][];
     readonly codeHandlerStartP: number[][];
-    readonly codeHasAttributes: (Object | null)[];
+    readonly codeHasAttributes: boolean[];
     readonly codeMaxNALocals: number[];
     readonly codeMaxStack: number[];
     // private cpBands: CpBands;
@@ -61,7 +60,7 @@ export class ClassBands extends BandSet {
     getCodeHandlerCount(): number[];
     getCodeHandlerEndPO(): number[][];
     getCodeHandlerStartP(): number[][];
-    getCodeHasAttributes(): (Object | null)[];
+    getCodeHasAttributes(): boolean[];
     getCodeMaxNALocals(): number[];
     getCodeMaxStack(): number[];
     getFieldAttributes(): Attribute[][][];

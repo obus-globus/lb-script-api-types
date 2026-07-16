@@ -13,12 +13,7 @@ export class CompilerDirectives extends Object {
     static blackhole(paramvalue: boolean): void;
     static blackhole(paramvalue: number): void;
     static blackhole(paramvalue: string): void;
-    static blackhole(paramvalue: number): void;
-    static blackhole(paramvalue: number): void;
-    static blackhole(paramvalue: number): void;
     static blackhole(paramvalue: Object): void;
-    static blackhole(paramvalue: number): void;
-    static blackhole(paramvalue: number): void;
     static castExact(paramobject: Object, paramclazz: Class<Object>): Object | null;
     static ensureAllocatedHere(paramobject: Object | null): Object | null;
     static ensureVirtualized(paramobject: Object): void;

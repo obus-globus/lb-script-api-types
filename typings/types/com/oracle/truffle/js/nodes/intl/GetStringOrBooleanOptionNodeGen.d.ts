@@ -8,7 +8,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class GetStringOrBooleanOptionNodeGen extends GetStringOrBooleanOptionNode {
     static create(paramcontext: JSContext, paramproperty: TruffleString, paramvalues: string[], paramtrueValue: Object, paramfalsyValue: Object, paramfallback: Object): GetStringOrBooleanOptionNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, property: TruffleString, values: string[], trueValue: Object, falsyValue: Object, fallback: Object)
     // private state_0_: number;
     // private toBooleanNode__field1_: Node;

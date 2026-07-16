@@ -8,7 +8,7 @@ export class OnErrorAction extends Enum<OnErrorAction> implements Serializable {
     static getEntries(): OnErrorAction[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): OnErrorAction;
-    static values(): (Object | null)[];
+    static values(): OnErrorAction[];
     private constructor()
     name(): "SKIP" | "TERMINATE";
 }

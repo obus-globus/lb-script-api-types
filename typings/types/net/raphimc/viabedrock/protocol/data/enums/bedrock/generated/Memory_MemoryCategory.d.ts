@@ -100,7 +100,7 @@ export class Memory_MemoryCategory extends Enum<Memory_MemoryCategory> {
     static getByValue(paramarg0: number, paramarg1: Memory_MemoryCategory): Memory_MemoryCategory;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Memory_MemoryCategory;
-    static values(): (Object | null)[];
+    static values(): Memory_MemoryCategory[];
     private constructor(arg2: number)
     private constructor(arg2: Memory_MemoryCategory)
     readonly value: number;

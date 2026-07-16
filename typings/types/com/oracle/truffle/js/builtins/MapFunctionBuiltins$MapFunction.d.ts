@@ -11,7 +11,7 @@ export class MapFunctionBuiltins$MapFunction extends Enum<MapFunctionBuiltins$Ma
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): MapFunctionBuiltins$MapFunction;
-    static values(): (Object | null)[];
+    static values(): MapFunctionBuiltins$MapFunction[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

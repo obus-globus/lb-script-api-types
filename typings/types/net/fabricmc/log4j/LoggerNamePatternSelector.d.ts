@@ -7,7 +7,7 @@ import type { PatternSelector } from '../../../org/apache/logging/log4j/core/lay
 import type { PatternFormatter } from '../../../org/apache/logging/log4j/core/pattern/PatternFormatter.d.ts'
 export class LoggerNamePatternSelector extends Object implements PatternSelector {
     static ELEMENT_TYPE: string;
-    static createSelector(paramarg0: string, paramarg1: (Object | null)[], paramarg2: boolean, paramarg3: boolean, paramarg4: boolean, paramarg5: Configuration): LoggerNamePatternSelector;
+    static createSelector(paramarg0: string, paramarg1: PatternMatch[], paramarg2: boolean, paramarg3: boolean, paramarg4: boolean, paramarg5: Configuration): LoggerNamePatternSelector;
     private constructor(arg0: string, arg1: PatternMatch[], arg2: boolean, arg3: boolean, arg4: boolean, arg5: Configuration)
     // private defaultFormatters: PatternFormatter[];
     // private formatters: LoggerNamePatternSelector$LoggerNameSelector[];

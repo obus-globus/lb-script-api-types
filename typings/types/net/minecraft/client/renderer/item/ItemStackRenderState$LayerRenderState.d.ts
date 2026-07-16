@@ -22,7 +22,7 @@ import type { Matrix4fc } from '../../../../../org/joml/Matrix4fc.d.ts'
 import type { Vector3fc } from '../../../../../org/joml/Vector3fc.d.ts'
 export class ItemStackRenderState$LayerRenderState extends Object implements FabricLayerRenderState, FabricRenderState, LayerRenderStateExtension {
     static EMPTY_TINTS: number[];
-    static NO_EXTENTS_SUPPLIER: () => (Object | null)[];
+    static NO_EXTENTS_SUPPLIER: () => Vector3fc[];
     constructor(null_: ItemStackRenderState)
     // private argumentForSpecialRendering: Object;
     readonly extents: () => Vector3fc[];

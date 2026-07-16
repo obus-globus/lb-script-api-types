@@ -6,7 +6,7 @@ export class DeserializedContainerAbiStability extends Enum<DeserializedContaine
     static UNSTABLE: DeserializedContainerAbiStability;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DeserializedContainerAbiStability;
-    static values(): (Object | null)[];
+    static values(): DeserializedContainerAbiStability[];
     private constructor()
     name(): "STABLE" | "UNSTABLE";
 }

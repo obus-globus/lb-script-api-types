@@ -12,7 +12,7 @@ export class EventState extends Enum<EventState> {
     static getEntries(): EventState[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): EventState;
-    static values(): (Object | null)[];
+    static values(): EventState[];
     private constructor(stateName: string)
     readonly stateName: string;
     name(): "PRE" | "POST";

@@ -7,7 +7,7 @@ export class DependencyOverrides$Operation extends Enum<DependencyOverrides$Oper
     static REPLACE: DependencyOverrides$Operation;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DependencyOverrides$Operation;
-    static values(): (Object | null)[];
+    static values(): DependencyOverrides$Operation[];
     private constructor(arg2: string)
     // private operator: string;
     name(): "ADD" | "REMOVE" | "REPLACE";

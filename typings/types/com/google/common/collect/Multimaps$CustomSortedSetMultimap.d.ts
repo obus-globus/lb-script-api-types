@@ -7,12 +7,12 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Multimaps$CustomSortedSetMultimap<K extends unknown, V extends unknown> extends AbstractSortedSetMultimap<K, V> {
     constructor(map: Map<K, V[]>, factory: () => V[])
     // private factory: () => V[];
-    // private valueComparator: (param0: Object) => boolean;
+    // private valueComparator: (param0: V, param1: V) => number;
     createAsMap(): Map<K, V[]>;
     createCollection(): V[];
     createCollection(key: K): V[];
     createKeySet(): K[];
     // private readObject(stream: ObjectInputStream): void;
-    valueComparator(): (param0: Object) => boolean;
+    valueComparator(): (param0: V, param1: V) => number;
     // private writeObject(stream: ObjectOutputStream): void;
 }

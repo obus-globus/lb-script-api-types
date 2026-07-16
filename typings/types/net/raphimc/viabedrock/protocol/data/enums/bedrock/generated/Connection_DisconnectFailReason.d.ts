@@ -150,7 +150,7 @@ export class Connection_DisconnectFailReason extends Enum<Connection_DisconnectF
     static getByValue(paramarg0: number, paramarg1: Connection_DisconnectFailReason): Connection_DisconnectFailReason;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Connection_DisconnectFailReason;
-    static values(): (Object | null)[];
+    static values(): Connection_DisconnectFailReason[];
     private constructor(arg2: number)
     private constructor(arg2: Connection_DisconnectFailReason)
     readonly value: number;

@@ -8,7 +8,7 @@ export class ReferenceCountedOpenSslEngine$HandshakeState extends Enum<Reference
     static STARTED_IMPLICITLY: ReferenceCountedOpenSslEngine$HandshakeState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ReferenceCountedOpenSslEngine$HandshakeState;
-    static values(): (Object | null)[];
+    static values(): ReferenceCountedOpenSslEngine$HandshakeState[];
     private constructor()
     name(): "NOT_STARTED" | "STARTED_IMPLICITLY" | "STARTED_EXPLICITLY" | "FINISHED";
 }

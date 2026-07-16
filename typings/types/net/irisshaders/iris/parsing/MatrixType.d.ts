@@ -5,13 +5,14 @@ import type { Type$Boolean } from '../../../../kroppeb/stareval/function/Type$Bo
 import type { Type$Float } from '../../../../kroppeb/stareval/function/Type$Float.d.ts'
 import type { Type$Int } from '../../../../kroppeb/stareval/function/Type$Int.d.ts'
 import type { Type$ObjectType } from '../../../../kroppeb/stareval/function/Type$ObjectType.d.ts'
+import type { Type$Primitive } from '../../../../kroppeb/stareval/function/Type$Primitive.d.ts'
 import type { TypedFunction$Parameter } from '../../../../kroppeb/stareval/function/TypedFunction$Parameter.d.ts'
 import type { UniformType } from '../../../../net/irisshaders/iris/gl/uniform/UniformType.d.ts'
 import type { Matrix2f } from '../../../../org/joml/Matrix2f.d.ts'
 import type { Matrix3f } from '../../../../org/joml/Matrix3f.d.ts'
 import type { Matrix4f } from '../../../../org/joml/Matrix4f.d.ts'
 export class MatrixType<T extends unknown> extends Type$ObjectType {
-    static AllPrimitives: (Object | null)[];
+    static AllPrimitives: Type$Primitive[];
     static Boolean: Type$Boolean;
     static BooleanParameter: TypedFunction$Parameter;
     static Float: Type$Float;

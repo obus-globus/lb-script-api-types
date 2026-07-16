@@ -6,7 +6,7 @@ export class TlsCertPolicy extends Enum<TlsCertPolicy> {
     static SECURE: TlsCertPolicy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TlsCertPolicy;
-    static values(): (Object | null)[];
+    static values(): TlsCertPolicy[];
     private constructor()
     name(): "SECURE" | "INSECURE_NO_CHECK";
 }

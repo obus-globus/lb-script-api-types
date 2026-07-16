@@ -4,7 +4,7 @@ import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/L
 import type { FormattingInfo } from '../../../../../../org/apache/logging/log4j/core/pattern/FormattingInfo.d.ts'
 import type { LogEventPatternConverter } from '../../../../../../org/apache/logging/log4j/core/pattern/LogEventPatternConverter.d.ts'
 export class PatternFormatter extends Object {
-    static EMPTY_ARRAY: (Object | null)[];
+    static EMPTY_ARRAY: PatternFormatter[];
     constructor(converter: LogEventPatternConverter, field: FormattingInfo)
     readonly converter: LogEventPatternConverter;
     // private field: FormattingInfo;

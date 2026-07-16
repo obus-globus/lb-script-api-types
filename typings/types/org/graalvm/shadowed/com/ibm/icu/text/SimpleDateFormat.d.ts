@@ -129,8 +129,8 @@ export class SimpleDateFormat extends DateFormat {
     static YEAR_QUARTER: string;
     static YEAR_WOY_FIELD: number;
     static ZONE_SKELETONS: string[];
-    static getAvailableLocales(): (Object | null)[];
-    static getAvailableULocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
+    static getAvailableULocales(): ULocale[];
     static getDateInstance(): DateFormat;
     static getDateInstance(paramstyle: number): DateFormat;
     static getDateInstance(paramstyle: number, paramaLocale: Locale): DateFormat;
@@ -234,7 +234,7 @@ export class SimpleDateFormat extends DateFormat {
     // private lowerLevel(items: Object[], i: number, level: number): boolean;
     // private matchAlphaMonthStrings(text: string, start: number, wideData: string[], shortData: string[], cal: Calendar): number;
     // private matchDayPeriodString(text: string, start: number, data: string[], dataLength: number, dayPeriod: Output<DayPeriodRules$DayPeriod>): number;
-    // private matchLiteral(text: string, pos: number, items: Object[], itemIndex: number, complete: (Object | null)[]): number;
+    // private matchLiteral(text: string, pos: number, items: Object[], itemIndex: number, complete: boolean[]): number;
     matchQuarterString(text: string, start: number, field: number, data: string[], cal: Calendar): number;
     // private matchString(text: string, start: number, field: number, data: string[], monthPattern: string, cal: Calendar): number;
     matchString(text: string, start: number, field: number, data: string[], cal: Calendar): number;
@@ -258,9 +258,9 @@ export class SimpleDateFormat extends DateFormat {
     subFormat(buf: StringBuffer, ch: string, count: number, beginOffset: number, fieldNum: number, capitalizationContext: DisplayContext, pos: FieldPosition, patternCharToOutput: string, cal: Calendar): void;
     subFormat(ch: string, count: number, beginOffset: number, pos: FieldPosition, fmtData: DateFormatSymbols, cal: Calendar): string;
     subFormat(ch: string, count: number, beginOffset: number, fieldNum: number, capitalizationContext: DisplayContext, pos: FieldPosition, patternCharToOutput: string, cal: Calendar): string;
-    subParse(text: string, start: number, ch: string, count: number, obeyCount: boolean, allowNegative: boolean, ambiguousYear: (Object | null)[], cal: Calendar): number;
-    // private subParse(text: string, start: number, ch: string, count: number, obeyCount: boolean, allowNegative: boolean, ambiguousYear: (Object | null)[], cal: Calendar, numericLeapMonthFormatter: MessageFormat, tzTimeType: Output<TimeZoneFormat$TimeType>): number;
-    // private subParse(text: string, start: number, ch: string, count: number, obeyCount: boolean, allowNegative: boolean, ambiguousYear: (Object | null)[], cal: Calendar, numericLeapMonthFormatter: MessageFormat, tzTimeType: Output<TimeZoneFormat$TimeType>, dayPeriod: Output<DayPeriodRules$DayPeriod>): number;
+    subParse(text: string, start: number, ch: string, count: number, obeyCount: boolean, allowNegative: boolean, ambiguousYear: boolean[], cal: Calendar): number;
+    // private subParse(text: string, start: number, ch: string, count: number, obeyCount: boolean, allowNegative: boolean, ambiguousYear: boolean[], cal: Calendar, numericLeapMonthFormatter: MessageFormat, tzTimeType: Output<TimeZoneFormat$TimeType>): number;
+    // private subParse(text: string, start: number, ch: string, count: number, obeyCount: boolean, allowNegative: boolean, ambiguousYear: boolean[], cal: Calendar, numericLeapMonthFormatter: MessageFormat, tzTimeType: Output<TimeZoneFormat$TimeType>, dayPeriod: Output<DayPeriodRules$DayPeriod>): number;
     toLocalizedPattern(): string;
     toPattern(): string;
     // private translatePattern(pat: string, from: string, to: string): string;

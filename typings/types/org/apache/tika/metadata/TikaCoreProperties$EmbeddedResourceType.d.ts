@@ -13,7 +13,7 @@ export class TikaCoreProperties$EmbeddedResourceType extends Enum<TikaCoreProper
     static VERSION: TikaCoreProperties$EmbeddedResourceType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TikaCoreProperties$EmbeddedResourceType;
-    static values(): (Object | null)[];
+    static values(): TikaCoreProperties$EmbeddedResourceType[];
     private constructor()
     name(): "INLINE" | "ATTACHMENT" | "MACRO" | "METADATA" | "FONT" | "THUMBNAIL" | "RENDERING" | "VERSION" | "ALTERNATE_FORMAT_CHUNK";
 }

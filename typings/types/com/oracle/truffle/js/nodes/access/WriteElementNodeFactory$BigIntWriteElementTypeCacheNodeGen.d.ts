@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class WriteElementNodeFactory$BigIntWriteElementTypeCacheNodeGen extends WriteElementNode$BigIntWriteElementTypeCacheNode {
     static create(): WriteElementNode$BigIntWriteElementTypeCacheNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private bigInt_indexToPropertyKeyNode_: JSToPropertyKeyNode;
     // private state_0_: number;

@@ -9,7 +9,7 @@ export class SoundDataEvent extends Enum<SoundDataEvent> {
     static getByValue(paramarg0: number, paramarg1: SoundDataEvent): SoundDataEvent;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SoundDataEvent;
-    static values(): (Object | null)[];
+    static values(): SoundDataEvent[];
     private constructor(arg2: number)
     private constructor(arg2: SoundDataEvent)
     readonly value: number;

@@ -1,7 +1,6 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { ResourceBundle } from '../../../../../../../java/util/ResourceBundle.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { ICUResourceBundle } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/ICUResourceBundle.d.ts'
 import type { DateFormatSymbols } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/DateFormatSymbols.d.ts'
 import type { Calendar } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/Calendar.d.ts'
@@ -16,8 +15,8 @@ export class ChineseDateFormatSymbols extends DateFormatSymbols {
     static SHORT: number;
     static STANDALONE: number;
     static WIDE: number;
-    static getAvailableLocales(): (Object | null)[];
-    static getAvailableULocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
+    static getAvailableULocales(): ULocale[];
     static getDateFormatBundle(paramcalendarClass: Class<Calendar>, paramlocale: Locale): ResourceBundle;
     static getDateFormatBundle(paramcalendarClass: Class<Calendar>, paramlocale: ULocale): ResourceBundle;
     static getDateFormatBundle(paramcal: Calendar, paramlocale: Locale): ResourceBundle;

@@ -16,7 +16,6 @@ export class SlotDisplay$OnlyWithComponent extends Record implements SlotDisplay
     static CODEC: Codec<SlotDisplay>;
     static MAP_CODEC: MapCodec<SlotDisplay$OnlyWithComponent>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, SlotDisplay$OnlyWithComponent>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, SlotDisplay>;
     static TYPE: SlotDisplay$Type<SlotDisplay$OnlyWithComponent>;
     constructor(source: SlotDisplay, component: DataComponentType<Object>)
     // private component: DataComponentType<Object>;

@@ -6,7 +6,7 @@ export class PluralRules$PluralType extends Enum<PluralRules$PluralType> {
     static ORDINAL: PluralRules$PluralType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PluralRules$PluralType;
-    static values(): (Object | null)[];
+    static values(): PluralRules$PluralType[];
     private constructor()
     name(): "CARDINAL" | "ORDINAL";
 }

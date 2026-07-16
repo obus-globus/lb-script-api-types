@@ -8,7 +8,7 @@ export class TextDocumentSyncKind extends Enum<TextDocumentSyncKind> {
     static get(paramintValue: number): TextDocumentSyncKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TextDocumentSyncKind;
-    static values(): (Object | null)[];
+    static values(): TextDocumentSyncKind[];
     private constructor(intValue: number)
     readonly intValue: number;
     getIntValue(): number;

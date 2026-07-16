@@ -9,7 +9,7 @@ export class MappedElementKind extends Enum<MappedElementKind> {
     static METHOD_VAR: MappedElementKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MappedElementKind;
-    static values(): (Object | null)[];
+    static values(): MappedElementKind[];
     private constructor(arg2: number)
     level: number;
     name(): "CLASS" | "FIELD" | "METHOD" | "METHOD_ARG" | "METHOD_VAR";

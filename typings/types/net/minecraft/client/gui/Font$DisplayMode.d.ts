@@ -7,7 +7,7 @@ export class Font$DisplayMode extends Enum<Font$DisplayMode> {
     static SEE_THROUGH: Font$DisplayMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Font$DisplayMode;
-    static values(): (Object | null)[];
+    static values(): Font$DisplayMode[];
     private constructor()
     name(): "NORMAL" | "SEE_THROUGH" | "POLYGON_OFFSET";
 }

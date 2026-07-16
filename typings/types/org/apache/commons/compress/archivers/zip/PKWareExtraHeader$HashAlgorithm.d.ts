@@ -13,7 +13,7 @@ export class PKWareExtraHeader$HashAlgorithm extends Enum<PKWareExtraHeader$Hash
     static getAlgorithmByCode(paramarg0: number): PKWareExtraHeader$HashAlgorithm;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PKWareExtraHeader$HashAlgorithm;
-    static values(): (Object | null)[];
+    static values(): PKWareExtraHeader$HashAlgorithm[];
     private constructor(arg2: number)
     readonly code: number;
     getCode(): number;

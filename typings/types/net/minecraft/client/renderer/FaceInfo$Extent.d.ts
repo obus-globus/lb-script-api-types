@@ -11,7 +11,7 @@ export class FaceInfo$Extent extends Enum<FaceInfo$Extent> {
     static MIN_Z: FaceInfo$Extent;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): FaceInfo$Extent;
-    static values(): (Object | null)[];
+    static values(): FaceInfo$Extent[];
     private constructor()
     select(minX: number, minY: number, minZ: number, maxX: number, maxY: number, maxZ: number): number;
     select(min: Vector3fc, max: Vector3fc): number;

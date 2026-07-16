@@ -13,15 +13,15 @@ export class Biome$TemperatureModifier extends Enum<Biome$TemperatureModifier> i
     static FROZEN: Biome$TemperatureModifier;
     static NONE: Biome$TemperatureModifier;
     static PRE_BUILT_MAP_THRESHOLD: number;
-    static createNameLookup(paramvalueArray: Object | null): (param0: string) => StringRepresentable | null;
-    static createNameLookup(paramvalueArray: Object | null, paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
-    static fromEnum(paramvalues: () => Object | null): StringRepresentable$EnumCodec<any>;
-    static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<any>;
-    static fromValues(paramvalues: () => Object | null): Codec<StringRepresentable>;
-    static keys(paramvalues: (Object | null)[]): Keyable;
+    static createNameLookup(paramvalueArray: (StringRepresentable | null)[]): (param0: string) => StringRepresentable | null;
+    static createNameLookup(paramvalueArray: (Object | null)[], paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
+    static fromEnum(paramvalues: () => (Object | null)[]): StringRepresentable$EnumCodec<any>;
+    static fromEnumWithMapping(paramvalues: () => (Object | null)[], paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<any>;
+    static fromValues(paramvalues: () => (StringRepresentable | null)[]): Codec<StringRepresentable>;
+    static keys(paramvalues: StringRepresentable[]): Keyable;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Biome$TemperatureModifier;
-    static values(): (Object | null)[];
+    static values(): Biome$TemperatureModifier[];
     private constructor(name: string)
     getName(): string;
     getSerializedName(): string;

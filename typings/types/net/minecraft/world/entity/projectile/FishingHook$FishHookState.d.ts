@@ -7,7 +7,7 @@ export class FishingHook$FishHookState extends Enum<FishingHook$FishHookState> {
     static HOOKED_IN_ENTITY: FishingHook$FishHookState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): FishingHook$FishHookState;
-    static values(): (Object | null)[];
+    static values(): FishingHook$FishHookState[];
     private constructor()
     name(): "FLYING" | "HOOKED_IN_ENTITY" | "BOBBING";
 }

@@ -9,7 +9,7 @@ export class AFUNIXProtocolFamily extends Enum<AFUNIXProtocolFamily> implements 
     static UNIX: AFUNIXProtocolFamily;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AFUNIXProtocolFamily;
-    static values(): (Object | null)[];
+    static values(): AFUNIXProtocolFamily[];
     private constructor()
     name(): string;
     openDatagramChannel(): AFDatagramChannel<any>;

@@ -9,7 +9,6 @@ export class ImportValueNodeGen extends ImportValueNode {
     static create(): ImportValueNode;
     static getUncached(): ImportValueNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private fallback_interop_: InteropLibrary;
     // private fromChar_fromCodePointNode_: TruffleString$FromCodePointNode;

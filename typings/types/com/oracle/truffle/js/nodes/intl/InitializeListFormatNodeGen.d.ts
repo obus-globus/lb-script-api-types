@@ -7,7 +7,6 @@ export class InitializeListFormatNodeGen extends InitializeListFormatNode {
     static create(paramcontext: JSContext): InitializeListFormatNode;
     static createInitalizeListFormatNode(paramcontext: JSContext): InitializeListFormatNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     executeInit(arg0Value: JSListFormatObject, arg1Value: Object, arg2Value: Object): JSListFormatObject;
 }

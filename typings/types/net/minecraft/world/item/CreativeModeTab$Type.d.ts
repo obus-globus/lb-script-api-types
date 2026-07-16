@@ -8,7 +8,7 @@ export class CreativeModeTab$Type extends Enum<CreativeModeTab$Type> {
     static SEARCH: CreativeModeTab$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CreativeModeTab$Type;
-    static values(): (Object | null)[];
+    static values(): CreativeModeTab$Type[];
     private constructor()
     name(): "CATEGORY" | "INVENTORY" | "HOTBAR" | "SEARCH";
 }

@@ -6,7 +6,7 @@ export class MapRewritePolicy$Mode extends Enum<MapRewritePolicy$Mode> {
     static Update: MapRewritePolicy$Mode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): MapRewritePolicy$Mode;
-    static values(): (Object | null)[];
+    static values(): MapRewritePolicy$Mode[];
     private constructor()
     name(): "Add" | "Update";
 }

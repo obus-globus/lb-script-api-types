@@ -6,7 +6,7 @@ export class FunctionCallExpression$FunctionReferenceType extends Enum<FunctionC
     static TYPE_SPECIFIER: FunctionCallExpression$FunctionReferenceType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FunctionCallExpression$FunctionReferenceType;
-    static values(): (Object | null)[];
+    static values(): FunctionCallExpression$FunctionReferenceType[];
     private constructor()
     name(): "NAME" | "TYPE_SPECIFIER";
 }

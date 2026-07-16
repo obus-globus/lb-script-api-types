@@ -10,7 +10,7 @@ export class CoroutineStart extends Enum<CoroutineStart> {
     static getEntries(): CoroutineStart[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CoroutineStart;
-    static values(): (Object | null)[];
+    static values(): CoroutineStart[];
     private constructor()
     /*not mapped: */ isLazy(): boolean;
     invoke<R extends unknown, T extends unknown>(block: (param0: R) => T, receiver: R, completion: Continuation<T>): void;

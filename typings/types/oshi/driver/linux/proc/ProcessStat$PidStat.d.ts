@@ -56,7 +56,7 @@ export class ProcessStat$PidStat extends Enum<ProcessStat$PidStat> {
     static WCHAN: ProcessStat$PidStat;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ProcessStat$PidStat;
-    static values(): (Object | null)[];
+    static values(): ProcessStat$PidStat[];
     private constructor()
     name(): "PID" | "COMM" | "STATE" | "PPID" | "PGRP" | "SESSION" | "TTY_NR" | "PTGID" | "FLAGS" | "MINFLT" | "CMINFLT" | "MAJFLT" | "CMAJFLT" | "UTIME" | "STIME" | "CUTIME" | "CSTIME" | "PRIORITY" | "NICE" | "NUM_THREADS" | "ITREALVALUE" | "STARTTIME" | "VSIZE" | "RSS" | "RSSLIM" | "STARTCODE" | "ENDCODE" | "STARTSTACK" | "KSTKESP" | "KSTKEIP" | "SIGNAL" | "BLOCKED" | "SIGIGNORE" | "SIGCATCH" | "WCHAN" | "NSWAP" | "CNSWAP" | "EXIT_SIGNAL" | "PROCESSOR" | "RT_PRIORITY" | "POLICY" | "DELAYACCT_BLKIO_TICKS" | "GUEST_TIME" | "CGUEST_TIME" | "START_DATA" | "END_DATA" | "START_BRK" | "ARG_START" | "ARG_END" | "ENV_START" | "ENV_END" | "EXIT_CODE";
 }

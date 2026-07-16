@@ -4,6 +4,7 @@ import type { TimeUnit } from '../../../../../../../java/util/concurrent/TimeUni
 import type { Lock } from '../../../../../../../java/util/concurrent/locks/Lock.d.ts'
 import type { ReadWriteLock } from '../../../../../../../java/util/concurrent/locks/ReadWriteLock.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { Appender } from '../../../../../../../org/apache/logging/log4j/core/Appender.d.ts'
 import type { Filter } from '../../../../../../../org/apache/logging/log4j/core/Filter.d.ts'
 import type { Layout } from '../../../../../../../org/apache/logging/log4j/core/Layout.d.ts'
 import type { LogEvent } from '../../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
@@ -15,7 +16,7 @@ export abstract class AbstractDatabaseAppender<T extends AbstractDatabaseManager
     static DEFAULT_STOP_TIMEOUT: number;
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
     static ELEMENT_TYPE: string;
-    static EMPTY_ARRAY: (Object | null)[];
+    static EMPTY_ARRAY: Appender[];
     static parseInt(params: string, paramdefaultValue: number): number;
     constructor(name: string, filter: Filter, ignoreExceptions: boolean, manager: T)
     constructor(name: string, filter: Filter, layout: Layout<Serializable>, ignoreExceptions: boolean, manager: T)

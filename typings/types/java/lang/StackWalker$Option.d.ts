@@ -8,7 +8,7 @@ export class StackWalker$Option extends Enum<StackWalker$Option> {
     static SHOW_REFLECT_FRAMES: StackWalker$Option;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): StackWalker$Option;
-    static values(): (Object | null)[];
+    static values(): StackWalker$Option[];
     private constructor()
     name(): "RETAIN_CLASS_REFERENCE" | "DROP_METHOD_INFO" | "SHOW_REFLECT_FRAMES" | "SHOW_HIDDEN_FRAMES";
 }

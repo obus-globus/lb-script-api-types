@@ -8,7 +8,9 @@ import type { DataResult } from '../../../com/mojang/serialization/DataResult.d.
 import type { Dynamic } from '../../../com/mojang/serialization/Dynamic.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { Runnable } from '../../../java/lang/Runnable.d.ts'
+import type { ThreadInfo } from '../../../java/lang/management/ThreadInfo.d.ts'
 import type { URI } from '../../../java/net/URI.d.ts'
+import type { CopyOption } from '../../../java/nio/file/CopyOption.d.ts'
 import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { FileSystemProvider } from '../../../java/nio/file/spi/FileSystemProvider.d.ts'
 import type { DateTimeFormatter } from '../../../java/time/format/DateTimeFormatter.d.ts'
@@ -53,7 +55,6 @@ export class Util extends Object {
     static allOf(paramcondition1: (param0: Object) => boolean, paramcondition2: (param0: Object) => boolean, paramcondition3: (param0: Object) => boolean): (param0: Object | null) => boolean;
     static allOf(paramcondition1: (param0: Object) => boolean, paramcondition2: (param0: Object) => boolean, paramcondition3: (param0: Object) => boolean, paramcondition4: (param0: Object) => boolean): (param0: Object | null) => boolean;
     static allOf(paramcondition1: (param0: Object) => boolean, paramcondition2: (param0: Object) => boolean, paramcondition3: (param0: Object) => boolean, paramcondition4: (param0: Object) => boolean, paramcondition5: (param0: Object) => boolean): (param0: Object | null) => boolean;
-    static allOf(paramconditions: Object | null): (param0: Object | null) => boolean;
     static allOfEnumExcept(paramvalue: Object | null): (Object | null)[];
     static anyOf(): (param0: Object | null) => boolean;
     static anyOf(paramconditions: (param0: Object) => boolean[]): (param0: Object | null) => boolean;
@@ -62,19 +63,18 @@ export class Util extends Object {
     static anyOf(paramcondition1: (param0: Object) => boolean, paramcondition2: (param0: Object) => boolean, paramcondition3: (param0: Object) => boolean): (param0: Object | null) => boolean;
     static anyOf(paramcondition1: (param0: Object) => boolean, paramcondition2: (param0: Object) => boolean, paramcondition3: (param0: Object) => boolean, paramcondition4: (param0: Object) => boolean): (param0: Object | null) => boolean;
     static anyOf(paramcondition1: (param0: Object) => boolean, paramcondition2: (param0: Object) => boolean, paramcondition3: (param0: Object) => boolean, paramcondition4: (param0: Object) => boolean, paramcondition5: (param0: Object) => boolean): (param0: Object | null) => boolean;
-    static anyOf(paramconditions: Object | null): (param0: Object | null) => boolean;
     static backgroundExecutor(): TracingExecutor;
     static blockUntilDone(paramtask: (param0: Executor) => Object | null, paramcompletionCheck: (param0: Object | null) => boolean): Object | null;
     static blockUntilDone(paramtask: (param0: Executor) => CompletableFuture<Object>): CompletableFuture<Object>;
     static copyAndAdd(paramelement: Object | null, paramlist: (Object | null)[]): (Object | null)[];
     static copyAndAdd(paramlist: (Object | null)[], paramelement: Object | null): (Object | null)[];
-    static copyAndAdd(paramlist: (Object | null)[], paramelements: Object | null): (Object | null)[];
+    static copyAndAdd(paramlist: (Object | null)[], ...paramelements: (Object | null)[]): (Object | null)[];
     static copyAndPut(parammap: Map<Object | null, Object | null>, paramkey: Object | null, paramvalue: Object | null): Map<Object | null, Object | null>;
     static copyBetweenDirs(paramsourceDir: Path, paramtargetDir: Path, paramsourcePath: Path): void;
     static createIndexIdentityLookup(paramvalues: (Object | null)[]): (param0: Object | null) => number;
     static createIndexLookup(paramvalues: (Object | null)[]): (param0: Object | null) => number;
     static describeError(paramerr: Throwable): string;
-    static dumpThreadInfo(): (Object | null)[];
+    static dumpThreadInfo(): ThreadInfo[];
     static fetchChoiceType(paramreference: DSL$TypeReference, paramname: string): Type<Object>;
     static findNextInIterable(paramcollection: (Object | null)[], paramcurrent: Object | null): Object | null;
     static findPreviousInIterable(paramcollection: (Object | null)[], paramcurrent: Object | null): Object | null;
@@ -87,7 +87,7 @@ export class Util extends Object {
     static getNanos(): number;
     static getPlatform(): Util$OS;
     static getPropertyName(paramkey: Property<any>, paramvalue: Object): string;
-    static getRandom(paramarray: Object | null, paramrandom: RandomSource): Object | null;
+    static getRandom(paramarray: (Object | null)[], paramrandom: RandomSource): Object | null;
     static getRandom(paramlist: (Object | null)[], paramrandom: RandomSource): Object | null;
     static getRandom(paramarray: number[], paramrandom: RandomSource): number;
     static getRandomSafe(paramlist: (Object | null)[], paramrandom: RandomSource): Optional<Object>;
@@ -98,7 +98,7 @@ export class Util extends Object {
     static isAarch64(): boolean;
     static isSymmetrical(paramwidth: number, paramheight: number, paramingredients: (Object | null)[]): boolean;
     static join(paramfirst: (Object | null)[], paramsecond: (Object | null)[]): (Object | null)[];
-    static join(paramlists: Object | null): (Object | null)[];
+    static join(...paramlists: (Object | null)[][]): (Object | null)[];
     static localizedDateFormatter(paramformatStyle: FormatStyle): DateTimeFormatter;
     static logAndPauseIfInIde(parammessage: string): void;
     static logAndPauseIfInIde(parammessage: string, paramthrowable: Throwable): void;
@@ -107,7 +107,7 @@ export class Util extends Object {
     static makeDescriptionId(paramprefix: string, paramlocation: Identifier): string;
     static makeEnumMap(paramkeyType: Class<Object>, paramfunction: (param0: Object | null) => Object | null): Map<Object | null, Object | null>;
     static mapValues(parammap: Map<Object | null, Object | null>, paramvalueMapper: (param0: Object) => Object | null): Map<Object | null, Object | null>;
-    static mapValuesLazy(parammap: Map<Object | null, Object | null>, paramvalueMapper: (param0: Object) => boolean): Map<Object | null, Object | null>;
+    static mapValuesLazy(parammap: Map<Object | null, Object | null>, paramvalueMapper: (param0: Object | null) => Object | null): Map<Object | null, Object | null>;
     static maxAllowedExecutorThreads(): number;
     static memoize(paramfunction: (param0: Object | null) => Object | null): (param0: Object | null) => Object | null;
     static memoize(paramfunction: (param0: Object | null, param1: Object | null) => Object | null): (param0: Object | null, param1: Object | null) => Object | null;
@@ -121,7 +121,7 @@ export class Util extends Object {
     static readTypedOrThrow(paramtype: Type<Object>, paramdynamic: Dynamic<Object>): Typed<Object>;
     static readTypedOrThrow(paramtype: Type<Object>, paramdynamic: Dynamic<Object>, paramacceptPartial: boolean): Typed<Object>;
     static runNamed(paramrunnable: () => void, paramname: string): void;
-    static safeMoveFile(paramfromPath: Path, paramtoPath: Path, ...paramoptions: (Object | null)[]): boolean;
+    static safeMoveFile(paramfromPath: Path, paramtoPath: Path, ...paramoptions: CopyOption[]): boolean;
     static safeReplaceFile(paramtargetPath: Path, paramnewPath: Path, parambackupPath: Path): void;
     static safeReplaceOrMoveFile(paramtargetPath: Path, paramnewPath: Path, parambackupPath: Path, paramnoRollback: boolean): boolean;
     static sanitizeName(paramvalue: string, paramisAllowedChar: (param0: string) => boolean): string;
@@ -131,7 +131,7 @@ export class Util extends Object {
     static setPause(parampauseFunction: (param0: string) => void): void;
     static setTimeSource(paramtimeSource: TimeSource$NanoTimeSource): void;
     static shuffle(paramlist: (Object | null)[], paramrandom: RandomSource): void;
-    static shuffledCopy(paramarray: Object | null, paramrandom: RandomSource): (Object | null)[];
+    static shuffledCopy(paramarray: (Object | null)[], paramrandom: RandomSource): (Object | null)[];
     static shuffledCopy(paramlist: (Object | null)[], paramrandom: RandomSource): (Object | null)[];
     static shutdownExecutors(): void;
     static shutdownTimeSource(): void;

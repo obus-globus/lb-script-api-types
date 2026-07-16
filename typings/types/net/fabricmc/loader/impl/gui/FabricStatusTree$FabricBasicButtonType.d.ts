@@ -6,7 +6,7 @@ export class FabricStatusTree$FabricBasicButtonType extends Enum<FabricStatusTre
     static CLICK_ONCE: FabricStatusTree$FabricBasicButtonType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FabricStatusTree$FabricBasicButtonType;
-    static values(): (Object | null)[];
+    static values(): FabricStatusTree$FabricBasicButtonType[];
     private constructor()
     name(): "CLICK_ONCE" | "CLICK_MANY";
 }

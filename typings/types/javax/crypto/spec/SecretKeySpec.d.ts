@@ -4,7 +4,6 @@ import type { SecretKey } from '../../../javax/crypto/SecretKey.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class SecretKeySpec extends Object implements KeySpec, SecretKey {
     static serialVersionUID: number;
-    static serialVersionUID: number;
     constructor(arg0: number[], arg1: number, arg2: number, arg3: string)
     constructor(arg0: number[], arg1: string)
     readonly algorithm: string;

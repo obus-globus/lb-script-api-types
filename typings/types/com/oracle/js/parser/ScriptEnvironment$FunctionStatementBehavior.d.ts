@@ -7,7 +7,7 @@ export class ScriptEnvironment$FunctionStatementBehavior extends Enum<ScriptEnvi
     static WARNING: ScriptEnvironment$FunctionStatementBehavior;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ScriptEnvironment$FunctionStatementBehavior;
-    static values(): (Object | null)[];
+    static values(): ScriptEnvironment$FunctionStatementBehavior[];
     private constructor()
     name(): "ACCEPT" | "WARNING" | "ERROR";
 }

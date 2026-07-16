@@ -1,5 +1,4 @@
 import type { BigInteger } from '../../../../../../../../../java/math/BigInteger.d.ts'
-import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { ILits } from '../../../../../../../../../net/fabricmc/loader/impl/lib/sat4j/minisat/core/ILits.d.ts'
 import type { WatchPb } from '../../../../../../../../../net/fabricmc/loader/impl/lib/sat4j/pb/constraints/pb/WatchPb.d.ts'
 import type { Constr } from '../../../../../../../../../net/fabricmc/loader/impl/lib/sat4j/specs/Constr.d.ts'
@@ -8,7 +7,7 @@ import type { MandatoryLiteralListener } from '../../../../../../../../../net/fa
 import type { UnitPropagationListener } from '../../../../../../../../../net/fabricmc/loader/impl/lib/sat4j/specs/UnitPropagationListener.d.ts'
 export class MaxWatchPb extends WatchPb {
     static TAUTOLOGY: Constr;
-    static normalizedMaxWatchPbNew(paramarg0: UnitPropagationListener, paramarg1: ILits, paramarg2: number[], paramarg3: (Object | null)[], paramarg4: BigInteger, paramarg5: BigInteger): MaxWatchPb;
+    static normalizedMaxWatchPbNew(paramarg0: UnitPropagationListener, paramarg1: ILits, paramarg2: number[], paramarg3: BigInteger[], paramarg4: BigInteger, paramarg5: BigInteger): MaxWatchPb;
     private constructor(arg0: ILits, arg1: number[], arg2: BigInteger[], arg3: BigInteger, arg4: BigInteger)
     // private litToCoeffs: { [key: number]: BigInteger };
     // private watchCumul: BigInteger;

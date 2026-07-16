@@ -10,7 +10,7 @@ export class HmacAlgorithms extends Enum<HmacAlgorithms> {
     static HMAC_SHA_512: HmacAlgorithms;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HmacAlgorithms;
-    static values(): (Object | null)[];
+    static values(): HmacAlgorithms[];
     private constructor(arg2: string)
     getName(): string;
     toString(): string;

@@ -6,7 +6,7 @@ export class MeasureUnitImpl$InitialCompoundPart extends Enum<MeasureUnitImpl$In
     static getInitialCompoundPartFromTrieIndex(paramtrieIndex: number): MeasureUnitImpl$InitialCompoundPart;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): MeasureUnitImpl$InitialCompoundPart;
-    static values(): (Object | null)[];
+    static values(): MeasureUnitImpl$InitialCompoundPart[];
     private constructor(powerIndex: number)
     // private index: number;
     getTrieIndex(): number;

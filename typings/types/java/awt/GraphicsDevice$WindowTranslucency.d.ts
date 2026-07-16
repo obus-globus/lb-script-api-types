@@ -7,7 +7,7 @@ export class GraphicsDevice$WindowTranslucency extends Enum<GraphicsDevice$Windo
     static TRANSLUCENT: GraphicsDevice$WindowTranslucency;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): GraphicsDevice$WindowTranslucency;
-    static values(): (Object | null)[];
+    static values(): GraphicsDevice$WindowTranslucency[];
     private constructor()
     name(): "PERPIXEL_TRANSPARENT" | "TRANSLUCENT" | "PERPIXEL_TRANSLUCENT";
 }

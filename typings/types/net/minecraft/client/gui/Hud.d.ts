@@ -32,11 +32,12 @@ import type { Player } from '../../../../net/minecraft/world/entity/player/Playe
 import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { HitResult } from '../../../../net/minecraft/world/phys/HitResult.d.ts'
 import type { Objective } from '../../../../net/minecraft/world/scores/Objective.d.ts'
+import type { PlayerScoreEntry } from '../../../../net/minecraft/world/scores/PlayerScoreEntry.d.ts'
 export class Hud extends Object implements MixinHudAccessor, HudAccessor {
     static NAUSEA_LOCATION: Identifier;
     static getHotbarSelectionTexture(): Identifier;
     static getMobEffectSprite(parameffect: Holder<MobEffect>): Identifier;
-    static getScoreboardEntryComparator(): (param0: Object) => boolean;
+    static getScoreboardEntryComparator(): (param0: PlayerScoreEntry, param1: PlayerScoreEntry) => number;
     constructor(minecraft: Minecraft)
     // private animateOverlayMessageColor: boolean;
     // private autosaveIndicatorValue: number;

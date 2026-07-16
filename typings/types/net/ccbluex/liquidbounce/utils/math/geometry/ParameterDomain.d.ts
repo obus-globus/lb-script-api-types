@@ -8,7 +8,7 @@ export class ParameterDomain extends Enum<ParameterDomain> {
     static getEntries(): ParameterDomain[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ParameterDomain;
-    static values(): (Object | null)[];
+    static values(): ParameterDomain[];
     private constructor(lowerBound: number, upperBound: number)
     lowerBound: number;
     upperBound: number;

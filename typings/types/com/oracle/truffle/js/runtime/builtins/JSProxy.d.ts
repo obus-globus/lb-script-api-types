@@ -31,13 +31,13 @@ export class JSProxy extends AbstractJSClass implements PrototypeSupplier {
     static REVOCABLE_PROXY: HiddenKey;
     static SET: TruffleString;
     static SET_PROTOTYPE_OF: TruffleString;
-    static call(paramproxyObj: JSDynamicObject, paramholder: Object, paramarguments: (Object | null)[]): Object;
+    static call(paramproxyObj: JSDynamicObject, paramholder: Object, paramarguments: Object[]): Object;
     static checkPropertyIsSettable(paramtruffleTarget: Object, paramkey: Object): boolean;
     static checkProxyDefinePropertyTrapInvariants(paramproxy: JSDynamicObject, paramkey: Object, paramdesc: PropertyDescriptor): boolean;
     static checkProxyGetTrapInvariants(paramtruffleTarget: Object, paramkey: Object, paramtrapResult: Object): void;
     static checkProxySetTrapInvariants(paramproxy: JSDynamicObject, paramkey: Object, paramvalue: Object): boolean;
     static checkTrapReturnValue(paramtrapResult: Object): Object;
-    static construct(paramproxyObj: JSDynamicObject, paramarguments: (Object | null)[]): Object;
+    static construct(paramproxyObj: JSDynamicObject, paramarguments: Object[]): Object;
     static create(paramcontext: JSContext, paramrealm: JSRealm, paramproto: JSDynamicObject, paramtarget: Object, paramhandler: JSDynamicObject): JSProxyObject;
     static create(paramcontext: JSContext, paramrealm: JSRealm, paramtarget: Object, paramhandler: JSDynamicObject): JSProxyObject;
     static createConstructor(paramrealm: JSRealm): JSConstructor;

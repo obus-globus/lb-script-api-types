@@ -37,7 +37,6 @@ export class VmaTotalStatistics extends Struct<VmaTotalStatistics> implements Na
     static nmemoryType(paramarg0: number): (Object | null)[];
     static ntotal(paramarg0: number): VmaDetailedStatistics;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     close(): void;

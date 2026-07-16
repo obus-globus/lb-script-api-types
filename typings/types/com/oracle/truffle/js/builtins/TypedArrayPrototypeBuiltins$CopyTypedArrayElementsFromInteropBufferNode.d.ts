@@ -4,7 +4,6 @@ import type { JSArrayBufferObject } from '../../../../../com/oracle/truffle/js/r
 import type { ByteBuffer } from '../../../../../java/nio/ByteBuffer.d.ts'
 export abstract class TypedArrayPrototypeBuiltins$CopyTypedArrayElementsFromInteropBufferNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(node: Node, sourceBuffer: JSArrayBufferObject, sourceByteIndex: number, targetByteBuffer: ByteBuffer, targetByteIndex: number, byteLength: number): void;
 }

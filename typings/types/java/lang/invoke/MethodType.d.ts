@@ -16,10 +16,9 @@ export class MethodType extends Object implements Serializable, Constable, TypeD
     static genericMethodType(paramarg0: number, paramarg1: boolean): MethodType;
     static methodType(paramarg0: Class<Object>): MethodType;
     static methodType(paramarg0: Class<Object>, paramarg1: Class<Object>): MethodType;
-    static methodType(paramarg0: Class<Object>, paramarg1: Class<Object>, paramarg2: Object | null): MethodType;
-    static methodType(paramarg0: Class<Object>, paramarg1: Object | null): MethodType;
-    static methodType(paramarg0: Class<Object>, paramarg1: MethodType): MethodType;
+    static methodType(paramarg0: Class<Object>, paramarg1: Class<Object>, ...paramarg2: Class<Object>[]): MethodType;
     static methodType(paramarg0: Class<Object>, paramarg1: Class<Object>[]): MethodType;
+    static methodType(paramarg0: Class<Object>, paramarg1: MethodType): MethodType;
     private constructor(arg0: Class<Object>, arg1: Class<Object>[])
     // private form: MethodTypeForm;
     // private invokers: Invokers;

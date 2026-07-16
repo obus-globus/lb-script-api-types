@@ -4,7 +4,6 @@ import type { JavaScriptBaseNode } from '../../../../../../com/oracle/truffle/js
 export abstract class JSStringToNumberNode extends JavaScriptBaseNode {
     static create(): JSStringToNumberNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(input: TruffleString): number;
 }

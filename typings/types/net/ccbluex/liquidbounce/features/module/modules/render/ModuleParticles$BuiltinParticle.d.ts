@@ -23,7 +23,7 @@ export class ModuleParticles$BuiltinParticle extends Enum<ModuleParticles$Builti
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleParticles$BuiltinParticle;
-    static values(): (Object | null)[];
+    static values(): ModuleParticles$BuiltinParticle[];
     private constructor(tag: string, fileName: string)
     readonly image: NativeImage;
     readonly tag: string;

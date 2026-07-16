@@ -2,6 +2,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { EventHook } from '../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { EventListener } from '../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
 import type { MouseButtonEvent } from '../../../../../net/ccbluex/liquidbounce/event/events/MouseButtonEvent.d.ts'
+import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 /**
  * Singleton object that tracks the state of mouse buttons and key presses.
  * It listens for mouse button events and provides utility functions to check if
@@ -11,10 +12,12 @@ import type { MouseButtonEvent } from '../../../../../net/ccbluex/liquidbounce/e
  */
 export class InputTracker extends Object implements EventListener {
     static INSTANCE: InputTracker;
+    readonly debugDisplayName: Component;
     // private handleMouseAction: EventHook<MouseButtonEvent>;
     // private keyLastPressed: { [key: string]: any };
     // private mouseLastPressed: number[];
     // private mouseStates: number[];
+    readonly running: boolean;
     children(): EventListener[];
     /**
      * Gets the time elapsed since the specified keyboard key was last pressed.

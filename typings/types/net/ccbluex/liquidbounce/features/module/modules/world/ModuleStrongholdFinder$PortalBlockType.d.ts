@@ -8,7 +8,7 @@ export class ModuleStrongholdFinder$PortalBlockType extends Enum<ModuleStronghol
     static getEntries(): ModuleStrongholdFinder$PortalBlockType[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleStrongholdFinder$PortalBlockType;
-    static values(): (Object | null)[];
+    static values(): ModuleStrongholdFinder$PortalBlockType[];
     private constructor(color: Color4b)
     readonly color: Color4b;
     name(): "Portal" | "Frame";

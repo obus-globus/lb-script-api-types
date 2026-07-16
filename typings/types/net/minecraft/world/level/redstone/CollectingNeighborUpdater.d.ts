@@ -10,7 +10,7 @@ import type { CollectingNeighborUpdater$NeighborUpdates } from '../../../../../n
 import type { NeighborUpdater } from '../../../../../net/minecraft/world/level/redstone/NeighborUpdater.d.ts'
 import type { Orientation } from '../../../../../net/minecraft/world/level/redstone/Orientation.d.ts'
 export class CollectingNeighborUpdater extends Object implements NeighborUpdater {
-    static UPDATE_ORDER: (Object | null)[];
+    static UPDATE_ORDER: Direction[];
     static executeShapeUpdate(paramlevel: LevelAccessor, paramdirection: Direction, parampos: BlockPos, paramneighborPos: BlockPos, paramneighborState: BlockState, paramupdateFlags: number, paramupdateLimit: number): void;
     static executeUpdate(paramlevel: Level, paramstate: BlockState, parampos: BlockPos, paramchangedBlock: Block, paramorientation: Orientation, parammovedByPiston: boolean): void;
     constructor(level: Level, maxChainedNeighborUpdates: number)

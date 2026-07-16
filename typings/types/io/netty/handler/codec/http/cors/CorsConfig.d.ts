@@ -8,7 +8,7 @@ import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class CorsConfig extends Object {
     static withAnyOrigin(): CorsConfig$Builder;
     static withOrigin(paramarg0: string): CorsConfig$Builder;
-    static withOrigins(...paramarg0: (Object | null)[]): CorsConfig$Builder;
+    static withOrigins(...paramarg0: string[]): CorsConfig$Builder;
     constructor(arg0: CorsConfigBuilder)
     // private allowCredentials: boolean;
     // private allowNullOrigin: boolean;

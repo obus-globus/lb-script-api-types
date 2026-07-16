@@ -575,7 +575,7 @@ export class SharedTypes_Legacy_LevelSoundEvent extends Enum<SharedTypes_Legacy_
     static getByValue(paramarg0: number, paramarg1: SharedTypes_Legacy_LevelSoundEvent): SharedTypes_Legacy_LevelSoundEvent;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SharedTypes_Legacy_LevelSoundEvent;
-    static values(): (Object | null)[];
+    static values(): SharedTypes_Legacy_LevelSoundEvent[];
     private constructor(arg2: number)
     private constructor(arg2: SharedTypes_Legacy_LevelSoundEvent)
     readonly value: number;

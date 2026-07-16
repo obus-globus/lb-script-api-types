@@ -8,7 +8,7 @@ export class ResourceOperationKind extends Enum<ResourceOperationKind> {
     static get(paramstringValue: string): ResourceOperationKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ResourceOperationKind;
-    static values(): (Object | null)[];
+    static values(): ResourceOperationKind[];
     private constructor(stringValue: string)
     readonly stringValue: string;
     getStringValue(): string;

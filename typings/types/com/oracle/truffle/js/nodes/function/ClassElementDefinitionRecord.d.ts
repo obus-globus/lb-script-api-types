@@ -2,18 +2,18 @@ import type { HiddenKey } from '../../../../../../com/oracle/truffle/api/object/
 import type { ClassElementDefinitionRecord$Kind } from '../../../../../../com/oracle/truffle/js/nodes/function/ClassElementDefinitionRecord$Kind.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ClassElementDefinitionRecord extends Object {
-    static createPrivateAccessor(paramkey: Object, paramgetter: Object, paramsetter: Object, paramdecorators: (Object | null)[]): ClassElementDefinitionRecord;
-    static createPrivateAutoAccessor(paramkey: Object, parambackingStorageKey: HiddenKey, paramvalue: Object, paramgetter: Object, paramsetter: Object, paramdecorators: (Object | null)[]): ClassElementDefinitionRecord;
-    static createPrivateField(paramkey: Object, paramvalue: Object, paramdecorators: (Object | null)[]): ClassElementDefinitionRecord;
-    static createPrivateGetter(paramkey: Object, paramgetter: Object, paramdecorators: (Object | null)[]): ClassElementDefinitionRecord;
-    static createPrivateMethod(paramkey: Object, paramvalue: Object, paramdecorators: (Object | null)[]): ClassElementDefinitionRecord;
-    static createPrivateSetter(paramkey: Object, paramsetter: Object, paramdecorators: (Object | null)[]): ClassElementDefinitionRecord;
-    static createPublicAccessor(paramkey: Object, paramgetter: Object, paramsetter: Object, paramanonymousFunctionDefinition: boolean, paramdecorators: (Object | null)[]): ClassElementDefinitionRecord;
-    static createPublicAutoAccessor(paramkey: Object, parambackingStorageKey: HiddenKey, paramvalue: Object, paramgetter: Object, paramsetter: Object, paramanonymousFunctionDefinition: boolean, paramdecorators: (Object | null)[]): ClassElementDefinitionRecord;
-    static createPublicField(paramkey: Object, paramvalue: Object, paramanonymousFunctionDefinition: boolean, paramdecorators: (Object | null)[]): ClassElementDefinitionRecord;
-    static createPublicGetter(paramkey: Object, paramgetter: Object, paramanonymousFunctionDefinition: boolean, paramdecorators: (Object | null)[]): ClassElementDefinitionRecord;
-    static createPublicMethod(paramkey: Object, paramvalue: Object, paramanonymousFunctionDefinition: boolean, paramdecorators: (Object | null)[]): ClassElementDefinitionRecord;
-    static createPublicSetter(paramkey: Object, paramsetter: Object, paramanonymousFunctionDefinition: boolean, paramdecorators: (Object | null)[]): ClassElementDefinitionRecord;
+    static createPrivateAccessor(paramkey: Object, paramgetter: Object, paramsetter: Object, paramdecorators: Object[]): ClassElementDefinitionRecord;
+    static createPrivateAutoAccessor(paramkey: Object, parambackingStorageKey: HiddenKey, paramvalue: Object, paramgetter: Object, paramsetter: Object, paramdecorators: Object[]): ClassElementDefinitionRecord;
+    static createPrivateField(paramkey: Object, paramvalue: Object, paramdecorators: Object[]): ClassElementDefinitionRecord;
+    static createPrivateGetter(paramkey: Object, paramgetter: Object, paramdecorators: Object[]): ClassElementDefinitionRecord;
+    static createPrivateMethod(paramkey: Object, paramvalue: Object, paramdecorators: Object[]): ClassElementDefinitionRecord;
+    static createPrivateSetter(paramkey: Object, paramsetter: Object, paramdecorators: Object[]): ClassElementDefinitionRecord;
+    static createPublicAccessor(paramkey: Object, paramgetter: Object, paramsetter: Object, paramanonymousFunctionDefinition: boolean, paramdecorators: Object[]): ClassElementDefinitionRecord;
+    static createPublicAutoAccessor(paramkey: Object, parambackingStorageKey: HiddenKey, paramvalue: Object, paramgetter: Object, paramsetter: Object, paramanonymousFunctionDefinition: boolean, paramdecorators: Object[]): ClassElementDefinitionRecord;
+    static createPublicField(paramkey: Object, paramvalue: Object, paramanonymousFunctionDefinition: boolean, paramdecorators: Object[]): ClassElementDefinitionRecord;
+    static createPublicGetter(paramkey: Object, paramgetter: Object, paramanonymousFunctionDefinition: boolean, paramdecorators: Object[]): ClassElementDefinitionRecord;
+    static createPublicMethod(paramkey: Object, paramvalue: Object, paramanonymousFunctionDefinition: boolean, paramdecorators: Object[]): ClassElementDefinitionRecord;
+    static createPublicSetter(paramkey: Object, paramsetter: Object, paramanonymousFunctionDefinition: boolean, paramdecorators: Object[]): ClassElementDefinitionRecord;
     static createStaticBlock(paraminitializer: Object): ClassElementDefinitionRecord;
     constructor(kind: ClassElementDefinitionRecord$Kind, key: Object, value: Object, getter: Object, setter: Object, isPrivate: boolean, anonymousFunctionDefinition: boolean, decorators: Object[])
     constructor(kind: ClassElementDefinitionRecord$Kind, key: Object, value: Object, getter: Object, setter: Object, isPrivate: boolean, anonymousFunctionDefinition: boolean, decorators: Object[], backingStorageKey: HiddenKey)

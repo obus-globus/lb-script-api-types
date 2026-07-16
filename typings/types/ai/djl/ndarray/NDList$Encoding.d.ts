@@ -7,7 +7,7 @@ export class NDList$Encoding extends Enum<NDList$Encoding> {
     static SAFETENSORS: NDList$Encoding;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): NDList$Encoding;
-    static values(): (Object | null)[];
+    static values(): NDList$Encoding[];
     private constructor()
     name(): "ND_LIST" | "NPZ" | "SAFETENSORS";
 }

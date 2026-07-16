@@ -49,7 +49,7 @@ export abstract class AbstractChestBlock<E extends BlockEntity> extends BaseEnti
     static boxZ(paramsizeXY: number, paramminZ: number, parammaxZ: number): VoxelShape;
     static boxZ(paramsizeX: number, paramsizeY: number, paramminZ: number, parammaxZ: number): VoxelShape;
     static boxZ(paramsizeX: number, paramminY: number, parammaxY: number, paramminZ: number, parammaxZ: number): VoxelShape;
-    static boxes(paramendInclusive: number, paramvoxelShapeFactory: (param0: number) => VoxelShape): (Object | null)[];
+    static boxes(paramendInclusive: number, paramvoxelShapeFactory: (param0: number) => VoxelShape): VoxelShape[];
     static byItem(paramitem: Item): Block;
     static canSupportCenter(paramlevel: LevelReader, parambelowPos: BlockPos, paramdirection: Direction): boolean;
     static canSupportRigidBlock(paramlevel: BlockGetter, parambelow: BlockPos): boolean;

@@ -10,7 +10,7 @@ export class CameraAimAssistPacketPayload_TargetMode extends Enum<CameraAimAssis
     static getByValue(paramarg0: number, paramarg1: CameraAimAssistPacketPayload_TargetMode): CameraAimAssistPacketPayload_TargetMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CameraAimAssistPacketPayload_TargetMode;
-    static values(): (Object | null)[];
+    static values(): CameraAimAssistPacketPayload_TargetMode[];
     private constructor(arg2: number)
     private constructor(arg2: CameraAimAssistPacketPayload_TargetMode)
     readonly value: number;

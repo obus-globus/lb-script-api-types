@@ -5,6 +5,8 @@ import type { SerialKind } from '../../../kotlinx/serialization/descriptors/Seri
 export class MapLikeDescriptor extends Object implements SerialDescriptor {
     protected constructor(serialName: string, keyDescriptor: SerialDescriptor, valueDescriptor: SerialDescriptor)
     readonly elementsCount: number;
+    /*not mapped: */ isInline(): boolean;
+    /*not mapped: */ isNullable(): boolean;
     readonly keyDescriptor: SerialDescriptor;
     readonly kind: SerialKind;
     readonly serialName: string;

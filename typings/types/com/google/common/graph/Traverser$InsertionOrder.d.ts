@@ -7,7 +7,7 @@ export class Traverser$InsertionOrder extends Enum<Traverser$InsertionOrder> {
     static FRONT: Traverser$InsertionOrder;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Traverser$InsertionOrder;
-    static values(): (Object | null)[];
+    static values(): Traverser$InsertionOrder[];
     constructor(arg2: Traverser<N>)
     insertInto<T extends unknown>(deque: T[], value: T): void;
     name(): "FRONT" | "BACK";

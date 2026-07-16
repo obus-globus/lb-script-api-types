@@ -7,7 +7,7 @@ export class TypeSubstitutor$VarianceConflictType extends Enum<TypeSubstitutor$V
     static OUT_IN_IN_POSITION: TypeSubstitutor$VarianceConflictType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TypeSubstitutor$VarianceConflictType;
-    static values(): (Object | null)[];
+    static values(): TypeSubstitutor$VarianceConflictType[];
     private constructor()
     name(): "NO_CONFLICT" | "IN_IN_OUT_POSITION" | "OUT_IN_IN_POSITION";
 }

@@ -10,7 +10,7 @@ export class CameraAimAssistPacketPayload_Action extends Enum<CameraAimAssistPac
     static getByValue(paramarg0: number, paramarg1: CameraAimAssistPacketPayload_Action): CameraAimAssistPacketPayload_Action;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CameraAimAssistPacketPayload_Action;
-    static values(): (Object | null)[];
+    static values(): CameraAimAssistPacketPayload_Action[];
     private constructor(arg2: number)
     private constructor(arg2: CameraAimAssistPacketPayload_Action)
     readonly value: number;

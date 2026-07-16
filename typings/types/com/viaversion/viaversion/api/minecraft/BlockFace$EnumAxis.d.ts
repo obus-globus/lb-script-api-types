@@ -7,7 +7,7 @@ export class BlockFace$EnumAxis extends Enum<BlockFace$EnumAxis> {
     static Z: BlockFace$EnumAxis;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BlockFace$EnumAxis;
-    static values(): (Object | null)[];
+    static values(): BlockFace$EnumAxis[];
     private constructor()
     name(): "X" | "Y" | "Z";
 }

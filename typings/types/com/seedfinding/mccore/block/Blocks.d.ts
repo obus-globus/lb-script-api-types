@@ -1,5 +1,6 @@
 import type { Block } from '../../../../com/seedfinding/mccore/block/Block.d.ts'
 import type { Identifier } from '../../../../com/seedfinding/mccore/util/data/Identifier.d.ts'
+import type { Pair } from '../../../../com/seedfinding/mccore/util/data/Pair.d.ts'
 import type { MCVersion } from '../../../../com/seedfinding/mccore/version/MCVersion.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Blocks extends Object {
@@ -906,6 +907,6 @@ export class Blocks extends Object {
     static YELLOW_WOOL: Block;
     static ZOMBIE_HEAD: Block;
     static ZOMBIE_WALL_HEAD: Block;
-    static register(paramarg0: MCVersion, paramarg1: Object | null, paramarg2: Object | null): Block;
+    static register(paramarg0: MCVersion, paramarg1: Pair<MCVersion, number>[], paramarg2: Pair<MCVersion, string>[]): Block;
     constructor()
 }

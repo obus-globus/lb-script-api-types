@@ -34,7 +34,6 @@ export class StdVideoH265PredictorPaletteEntries extends Struct<StdVideoH265Pred
     static nPredictorPaletteEntries(paramarg0: number, paramarg1: number, paramarg2: number): void;
     static nPredictorPaletteEntries(paramarg0: number, paramarg1: ShortBuffer): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     PredictorPaletteEntries(): ShortBuffer;

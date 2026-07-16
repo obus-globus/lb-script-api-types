@@ -19,7 +19,7 @@ export class RealmFunctionBuiltins$RealmFunction extends Enum<RealmFunctionBuilt
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RealmFunctionBuiltins$RealmFunction;
-    static values(): (Object | null)[];
+    static values(): RealmFunctionBuiltins$RealmFunction[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

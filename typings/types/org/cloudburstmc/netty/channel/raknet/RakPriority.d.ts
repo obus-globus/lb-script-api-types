@@ -8,7 +8,7 @@ export class RakPriority extends Enum<RakPriority> {
     static NORMAL: RakPriority;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RakPriority;
-    static values(): (Object | null)[];
+    static values(): RakPriority[];
     private constructor()
     name(): "IMMEDIATE" | "HIGH" | "NORMAL" | "LOW";
 }

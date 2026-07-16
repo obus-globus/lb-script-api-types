@@ -13,7 +13,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ObjectFunctionBuiltinsFactory$AssignPropertiesNodeGen extends ObjectFunctionBuiltins$AssignPropertiesNode {
     static create(paramcontext: JSContext): ObjectFunctionBuiltins$AssignPropertiesNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private copyPropertiesFromJSObject_classProfile_: JSClassProfile;
     // private copyPropertiesFromJSObject_getOwnProperty_: JSGetOwnPropertyNode;

@@ -11,7 +11,7 @@ export class TrustedSkinFlag extends Enum<TrustedSkinFlag> {
     static getByValue(paramarg0: number, paramarg1: TrustedSkinFlag): TrustedSkinFlag;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TrustedSkinFlag;
-    static values(): (Object | null)[];
+    static values(): TrustedSkinFlag[];
     private constructor(arg2: number)
     private constructor(arg2: TrustedSkinFlag)
     readonly value: number;

@@ -6,7 +6,7 @@ export class GameTypePredicate extends Record {
     static ANY: GameTypePredicate;
     static CODEC: Codec<GameTypePredicate>;
     static SURVIVAL_LIKE: GameTypePredicate;
-    static of(...paramtypes: (Object | null)[]): GameTypePredicate;
+    static of(...paramtypes: GameType[]): GameTypePredicate;
     constructor(types: GameType[])
     // private types: GameType[];
     equals(o: Object | null): boolean;

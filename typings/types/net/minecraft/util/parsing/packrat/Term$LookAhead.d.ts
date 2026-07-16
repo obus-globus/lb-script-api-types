@@ -7,7 +7,7 @@ import type { ParseState } from '../../../../../net/minecraft/util/parsing/packr
 import type { Scope } from '../../../../../net/minecraft/util/parsing/packrat/Scope.d.ts'
 import type { Term } from '../../../../../net/minecraft/util/parsing/packrat/Term.d.ts'
 export class Term$LookAhead<S extends unknown> extends Record implements Term<S> {
-    static alternative(paramterms: Object | null): Term<Object>;
+    static alternative(...paramterms: Term<Object>[]): Term<Object>;
     static cut(): Term<Object>;
     static empty(): Term<Object>;
     static fail(parammessage: Object): Term<Object>;
@@ -21,7 +21,7 @@ export class Term$LookAhead<S extends unknown> extends Record implements Term<S>
     static repeatedWithTrailingSeparator(paramelement: NamedRule<Object, Object>, paramlistName: Atom<(Object | null)[]>, paramseparator: Term<Object>, paramminRepetitions: number): Term<Object>;
     static repeatedWithoutTrailingSeparator(paramelement: NamedRule<Object, Object>, paramlistName: Atom<(Object | null)[]>, paramseparator: Term<Object>): Term<Object>;
     static repeatedWithoutTrailingSeparator(paramelement: NamedRule<Object, Object>, paramlistName: Atom<(Object | null)[]>, paramseparator: Term<Object>, paramminRepetitions: number): Term<Object>;
-    static sequence(paramterms: Object | null): Term<Object>;
+    static sequence(...paramterms: Term<Object>[]): Term<Object>;
     constructor(term: Term<S>, positive: boolean)
     // private positive: boolean;
     // private term: Term<S>;

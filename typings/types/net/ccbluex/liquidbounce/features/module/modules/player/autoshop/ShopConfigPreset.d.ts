@@ -22,7 +22,7 @@ export class ShopConfigPreset extends Enum<ShopConfigPreset> implements Tagged {
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ShopConfigPreset;
-    static values(): (Object | null)[];
+    static values(): ShopConfigPreset[];
     private constructor(tag: string, localFileName: string)
     // private localFileName: string;
     readonly tag: string;

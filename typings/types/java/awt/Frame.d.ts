@@ -13,7 +13,6 @@ import type { KeyEvent } from '../../java/awt/event/KeyEvent.d.ts'
 import type { ObjectInputStream } from '../../java/io/ObjectInputStream.d.ts'
 import type { ObjectOutputStream } from '../../java/io/ObjectOutputStream.d.ts'
 import type { AccessibleContext } from '../../javax/accessibility/AccessibleContext.d.ts'
-import type { Object } from '../../java/lang/Object.d.ts'
 export class Frame extends Window implements MenuContainer {
     static ABORT: number;
     static ALLBITS: number;
@@ -47,9 +46,9 @@ export class Frame extends Window implements MenuContainer {
     static WAIT_CURSOR: number;
     static WIDTH: number;
     static W_RESIZE_CURSOR: number;
-    static getFrames(): (Object | null)[];
-    static getOwnerlessWindows(): (Object | null)[];
-    static getWindows(): (Object | null)[];
+    static getFrames(): Frame[];
+    static getOwnerlessWindows(): Window[];
+    static getWindows(): Window[];
     constructor()
     constructor(arg0: GraphicsConfiguration)
     constructor(arg0: string)

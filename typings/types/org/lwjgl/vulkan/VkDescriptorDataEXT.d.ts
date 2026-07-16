@@ -61,7 +61,6 @@ export class VkDescriptorDataEXT extends Struct<VkDescriptorDataEXT> implements 
     static npUniformTexelBuffer(paramarg0: number): VkDescriptorAddressInfoEXT;
     static npUniformTexelBuffer(paramarg0: number, paramarg1: VkDescriptorAddressInfoEXT): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     accelerationStructure(): number;

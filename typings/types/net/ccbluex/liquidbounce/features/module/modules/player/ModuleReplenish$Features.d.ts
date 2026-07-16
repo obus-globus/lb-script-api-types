@@ -13,7 +13,7 @@ export class ModuleReplenish$Features extends Enum<ModuleReplenish$Features> imp
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleReplenish$Features;
-    static values(): (Object | null)[];
+    static values(): ModuleReplenish$Features[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "CLEANUP" | "USE_PICKUP_ALL" | "USE_SWAP";

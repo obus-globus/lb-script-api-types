@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSToIntegerOrInfinityNodeGen extends JSToIntegerOrInfinityNode {
     static create(): JSToIntegerOrInfinityNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private state_0_: number;
     // private string_stringToNumberNode_: JSStringToNumberNode;

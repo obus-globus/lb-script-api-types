@@ -8,7 +8,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ReadElementNodeFactory$Uint32ArrayReadElementCacheNodeGen extends ReadElementNode$Uint32ArrayReadElementCacheNode {
     static create(paramarrayType: TypedArray): ReadElementNode$Uint32ArrayReadElementCacheNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(arrayType: TypedArray)
     // private state_0_: number;
     // private executeAndSpecialize(arg0Value: JSDynamicObject, arg1Value: ScriptArray, arg2Value: number, arg3Value: Object, arg4Value: Object, arg5Value: JSContext): Object;

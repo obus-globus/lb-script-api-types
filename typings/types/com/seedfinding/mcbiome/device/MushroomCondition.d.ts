@@ -1,6 +1,6 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class MushroomCondition extends Object {
-    static main(paramarg0: (Object | null)[]): void;
+    static main(paramarg0: string[]): void;
     constructor(arg0: number, arg1: number, arg2: number)
     readonly lower32Bits: number;
     readonly numValidSeeds: number;

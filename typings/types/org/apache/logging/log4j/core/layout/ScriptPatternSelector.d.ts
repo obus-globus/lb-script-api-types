@@ -9,7 +9,7 @@ import type { PatternFormatter } from '../../../../../../org/apache/logging/log4
 import type { AbstractScript } from '../../../../../../org/apache/logging/log4j/core/script/AbstractScript.d.ts'
 export class ScriptPatternSelector extends Object implements LocationAware, PatternSelector {
     static ELEMENT_TYPE: string;
-    static createSelector(paramscript: AbstractScript, paramproperties: (Object | null)[], paramdefaultPattern: string, paramalwaysWriteExceptions: boolean, paramnoConsoleNoAnsi: boolean, paramconfiguration: Configuration): ScriptPatternSelector;
+    static createSelector(paramscript: AbstractScript, paramproperties: PatternMatch[], paramdefaultPattern: string, paramalwaysWriteExceptions: boolean, paramnoConsoleNoAnsi: boolean, paramconfiguration: Configuration): ScriptPatternSelector;
     static newBuilder(): ScriptPatternSelector$Builder;
     constructor(arg0: Configuration, arg1: AbstractScript, arg2: PatternMatch[], arg3: string, arg4: boolean, arg5: boolean, arg6: boolean, arg7: any)
     constructor(script: AbstractScript, properties: PatternMatch[], defaultPattern: string, alwaysWriteExceptions: boolean, disableAnsi: boolean, noConsoleNoAnsi: boolean, config: Configuration)

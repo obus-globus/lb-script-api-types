@@ -10,7 +10,7 @@ export class KVisibility extends Enum<KVisibility> implements Serializable {
     static getEntries(): KVisibility[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): KVisibility;
-    static values(): (Object | null)[];
+    static values(): KVisibility[];
     private constructor()
     name(): "PUBLIC" | "PROTECTED" | "INTERNAL" | "PRIVATE";
 }

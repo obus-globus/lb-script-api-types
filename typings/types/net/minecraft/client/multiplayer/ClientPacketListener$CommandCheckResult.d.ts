@@ -8,7 +8,7 @@ export class ClientPacketListener$CommandCheckResult extends Enum<ClientPacketLi
     static SIGNATURE_REQUIRED: ClientPacketListener$CommandCheckResult;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ClientPacketListener$CommandCheckResult;
-    static values(): (Object | null)[];
+    static values(): ClientPacketListener$CommandCheckResult[];
     private constructor()
     name(): "NO_ISSUES" | "PARSE_ERRORS" | "SIGNATURE_REQUIRED" | "PERMISSIONS_REQUIRED";
 }

@@ -19,9 +19,9 @@ export class ObjectBigArrays$ForkJoinQuickSortComp<K extends unknown> extends Re
     static inForkJoinPool(): boolean;
     static invokeAll(paramarg0: (Object | null)[]): (Object | null)[];
     static invokeAll(paramarg0: ForkJoinTask<Object>, paramarg1: ForkJoinTask<Object>): void;
-    static invokeAll(paramarg0: Object | null): void;
-    constructor(arg0: K[][], arg1: number, arg2: number, arg3: (param0: Object) => boolean)
-    // private comp: (param0: Object) => boolean;
+    static invokeAll(...paramarg0: ForkJoinTask<Object>[]): void;
+    constructor(arg0: K[][], arg1: number, arg2: number, arg3: (param0: K, param1: K) => number)
+    // private comp: (param0: K, param1: K) => number;
     // private from: number;
     // private to: number;
     // private x: K[][];

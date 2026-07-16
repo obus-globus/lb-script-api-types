@@ -6,7 +6,7 @@ export class MapTrackedObject$Type extends Enum<MapTrackedObject$Type> {
     static ENTITY: MapTrackedObject$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MapTrackedObject$Type;
-    static values(): (Object | null)[];
+    static values(): MapTrackedObject$Type[];
     private constructor()
     name(): "ENTITY" | "BLOCK";
 }

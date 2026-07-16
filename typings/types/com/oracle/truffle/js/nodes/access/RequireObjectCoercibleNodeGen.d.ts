@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class RequireObjectCoercibleNodeGen extends RequireObjectCoercibleNode {
     static create(): RequireObjectCoercibleNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private cachedJSClass_cache: RequireObjectCoercibleNodeGen$CachedJSClassData;
     // private foreignObject0_cache: RequireObjectCoercibleNodeGen$ForeignObject0Data;

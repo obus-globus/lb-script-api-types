@@ -24,28 +24,21 @@ export class VkAttachmentSampleCountInfoNV extends VkAttachmentSampleCountInfoAM
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkAttachmentSampleCountInfoNV;
     static calloc(paramarg0: MemoryStack): VkAttachmentSampleCountInfoNV;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkAttachmentSampleCountInfoAMD;
     static create(paramarg0: number): VkAttachmentSampleCountInfoAMD;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkAttachmentSampleCountInfoNV;
     static create(paramarg0: number): VkAttachmentSampleCountInfoNV;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkAttachmentSampleCountInfoAMD;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkAttachmentSampleCountInfoNV;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkAttachmentSampleCountInfoAMD;
     static malloc(paramarg0: MemoryStack): VkAttachmentSampleCountInfoAMD;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkAttachmentSampleCountInfoNV;
     static malloc(paramarg0: MemoryStack): VkAttachmentSampleCountInfoNV;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ncolorAttachmentCount(paramarg0: number): number;
     static ncolorAttachmentCount(paramarg0: number, paramarg1: number): void;
     static ndepthStencilAttachmentSamples(paramarg0: number): number;
@@ -56,7 +49,6 @@ export class VkAttachmentSampleCountInfoNV extends VkAttachmentSampleCountInfoAM
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

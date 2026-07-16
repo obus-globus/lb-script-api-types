@@ -17,7 +17,7 @@ export class DynamicBSPData extends DynamicData {
     static BYTES_PER_QUAD: number;
     static INDICES_PER_QUAD: number;
     static VERTICES_PER_QUAD: number;
-    static fromMesh(paramarg0: CombinedCameraPos, paramarg1: (Object | null)[], paramarg2: SectionPos, paramarg3: TranslucentData, paramarg4: QuadSplittingMode): DynamicBSPData;
+    static fromMesh(paramarg0: CombinedCameraPos, paramarg1: TQuad[], paramarg2: SectionPos, paramarg3: TranslucentData, paramarg4: QuadSplittingMode): DynamicBSPData;
     static quadCountToIndexBytes(paramarg0: number): number;
     static quadCountToVertexCount(paramarg0: number): number;
     static vertexCountToQuadCount(paramarg0: number): number;

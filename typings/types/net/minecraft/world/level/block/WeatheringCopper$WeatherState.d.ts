@@ -20,16 +20,16 @@ export class WeatheringCopper$WeatherState extends Enum<WeatheringCopper$Weather
     static STREAM_CODEC: StreamCodec<ByteBuf, WeatheringCopper$WeatherState>;
     static UNAFFECTED: WeatheringCopper$WeatherState;
     static WEATHERED: WeatheringCopper$WeatherState;
-    static createNameLookup(paramvalueArray: Object | null): (param0: string) => StringRepresentable | null;
-    static createNameLookup(paramvalueArray: Object | null, paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
+    static createNameLookup(paramvalueArray: (StringRepresentable | null)[]): (param0: string) => StringRepresentable | null;
+    static createNameLookup(paramvalueArray: (Object | null)[], paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
     static forEach(paramconsumer: (param0: WeatheringCopper$WeatherState) => void): void;
-    static fromEnum(paramvalues: () => Object | null): StringRepresentable$EnumCodec<any>;
-    static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<any>;
-    static fromValues(paramvalues: () => Object | null): Codec<StringRepresentable>;
-    static keys(paramvalues: (Object | null)[]): Keyable;
+    static fromEnum(paramvalues: () => (Object | null)[]): StringRepresentable$EnumCodec<any>;
+    static fromEnumWithMapping(paramvalues: () => (Object | null)[], paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<any>;
+    static fromValues(paramvalues: () => (StringRepresentable | null)[]): Codec<StringRepresentable>;
+    static keys(paramvalues: StringRepresentable[]): Keyable;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): WeatheringCopper$WeatherState;
-    static values(): (Object | null)[];
+    static values(): WeatheringCopper$WeatherState[];
     private constructor(name: string)
     // private name: string;
     getSerializedName(): string;

@@ -7,7 +7,7 @@ export class ProcessInformation$HandleCountProperty extends Enum<ProcessInformat
     static NAME: ProcessInformation$HandleCountProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ProcessInformation$HandleCountProperty;
-    static values(): (Object | null)[];
+    static values(): ProcessInformation$HandleCountProperty[];
     private constructor(arg2: string)
     readonly counter: string;
     getCounter(): string;

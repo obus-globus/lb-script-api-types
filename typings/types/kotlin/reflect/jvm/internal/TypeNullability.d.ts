@@ -8,7 +8,7 @@ export class TypeNullability extends Enum<TypeNullability> implements Serializab
     static NULLABLE: TypeNullability;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TypeNullability;
-    static values(): (Object | null)[];
+    static values(): TypeNullability[];
     private constructor()
     name(): "NOT_NULL" | "NULLABLE" | "FLEXIBLE";
 }

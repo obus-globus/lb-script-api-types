@@ -11,7 +11,7 @@ import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class CompoundWriteElementNode extends WriteElementNode {
     static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
+    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
     static create(paramtargetNode: JavaScriptNode, paramindexNode: JavaScriptNode, paramvalueNode: JavaScriptNode, paramwriteIndexNode: JSWriteFrameSlotNode, paramcontext: JSContext, paramisStrict: boolean): CompoundWriteElementNode;
     static create(paramtargetNode: JavaScriptNode, paramindexNode: JavaScriptNode, paramvalueNode: JavaScriptNode, paramcontext: JSContext, paramisStrict: boolean): WriteElementNode;
     static create(paramcontext: JSContext, paramisStrict: boolean): WriteElementNode;
@@ -19,7 +19,6 @@ export class CompoundWriteElementNode extends WriteElementNode {
     static createCachedInterop(): WriteElementNode;
     static evaluateReceiver(paramtargetNode: JavaScriptNode, paramframe: VirtualFrame, paramtargetValue: Object): Object;
     static findBlockScopeNode(paramnode: Node): Node;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;

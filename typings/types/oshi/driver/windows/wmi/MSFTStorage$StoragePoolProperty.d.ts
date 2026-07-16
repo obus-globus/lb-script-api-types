@@ -6,7 +6,7 @@ export class MSFTStorage$StoragePoolProperty extends Enum<MSFTStorage$StoragePoo
     static OBJECTID: MSFTStorage$StoragePoolProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MSFTStorage$StoragePoolProperty;
-    static values(): (Object | null)[];
+    static values(): MSFTStorage$StoragePoolProperty[];
     private constructor()
     name(): "FRIENDLYNAME" | "OBJECTID";
 }

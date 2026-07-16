@@ -13,7 +13,7 @@ export class ModuleScaffold$ScaffoldRotationValueGroup$RotationTimingMode extend
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleScaffold$ScaffoldRotationValueGroup$RotationTimingMode;
-    static values(): (Object | null)[];
+    static values(): ModuleScaffold$ScaffoldRotationValueGroup$RotationTimingMode[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "NORMAL" | "ON_TICK" | "ON_TICK_SNAP";

@@ -22,28 +22,21 @@ export class VkSemaphoreTypeCreateInfoKHR extends VkSemaphoreTypeCreateInfo {
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkSemaphoreTypeCreateInfoKHR;
     static calloc(paramarg0: MemoryStack): VkSemaphoreTypeCreateInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkSemaphoreTypeCreateInfo;
     static create(paramarg0: number): VkSemaphoreTypeCreateInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkSemaphoreTypeCreateInfoKHR;
     static create(paramarg0: number): VkSemaphoreTypeCreateInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkSemaphoreTypeCreateInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkSemaphoreTypeCreateInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkSemaphoreTypeCreateInfo;
     static malloc(paramarg0: MemoryStack): VkSemaphoreTypeCreateInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkSemaphoreTypeCreateInfoKHR;
     static malloc(paramarg0: MemoryStack): VkSemaphoreTypeCreateInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ninitialValue(paramarg0: number): number;
     static ninitialValue(paramarg0: number, paramarg1: number): void;
     static npNext(paramarg0: number): number;
@@ -52,7 +45,6 @@ export class VkSemaphoreTypeCreateInfoKHR extends VkSemaphoreTypeCreateInfo {
     static nsType(paramarg0: number, paramarg1: number): void;
     static nsemaphoreType(paramarg0: number): number;
     static nsemaphoreType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

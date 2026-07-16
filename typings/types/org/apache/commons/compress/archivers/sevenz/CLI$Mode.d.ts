@@ -7,7 +7,7 @@ export class CLI$Mode extends Enum<CLI$Mode> {
     static LIST: CLI$Mode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CLI$Mode;
-    static values(): (Object | null)[];
+    static values(): CLI$Mode[];
     constructor(arg2: string, arg3: any)
     readonly message: string;
     getMessage(): string;

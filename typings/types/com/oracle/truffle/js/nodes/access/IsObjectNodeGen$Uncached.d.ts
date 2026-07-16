@@ -6,7 +6,6 @@ export class IsObjectNodeGen$Uncached extends IsObjectNode implements Unadoptabl
     static create(): IsObjectNode;
     static getUncached(): IsObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     executeBoolean(arg0Value: Object): boolean;
 }

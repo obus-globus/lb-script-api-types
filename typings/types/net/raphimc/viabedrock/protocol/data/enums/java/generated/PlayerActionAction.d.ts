@@ -12,7 +12,7 @@ export class PlayerActionAction extends Enum<PlayerActionAction> {
     static SWAP_ITEM_WITH_OFFHAND: PlayerActionAction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PlayerActionAction;
-    static values(): (Object | null)[];
+    static values(): PlayerActionAction[];
     private constructor()
     name(): "START_DESTROY_BLOCK" | "ABORT_DESTROY_BLOCK" | "STOP_DESTROY_BLOCK" | "DROP_ALL_ITEMS" | "DROP_ITEM" | "RELEASE_USE_ITEM" | "SWAP_ITEM_WITH_OFFHAND" | "STAB";
 }

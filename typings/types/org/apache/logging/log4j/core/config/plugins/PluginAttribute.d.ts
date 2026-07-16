@@ -2,7 +2,6 @@ import type { Annotation } from '../../../../../../../java/lang/annotation/Annot
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { KClass } from '../../../../../../../kotlin/reflect/KClass.d.ts'
 export interface PluginAttribute extends Annotation, Object{
-    constructor(defaultBoolean: boolean, defaultByte: number, defaultChar: string, defaultClass: KClass<Object>, defaultDouble: number, defaultFloat: number, defaultInt: number, defaultLong: number, defaultShort: number, defaultString: string, sensitive: boolean, value: string)
     /*not mapped: */ defaultBoolean(): boolean;
     /*not mapped: */ defaultByte(): number;
     /*not mapped: */ defaultChar(): string;

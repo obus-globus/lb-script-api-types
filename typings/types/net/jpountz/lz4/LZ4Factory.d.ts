@@ -7,7 +7,7 @@ import type { LZ4UnknownSizeDecompressor } from '../../../net/jpountz/lz4/LZ4Unk
 export class LZ4Factory extends Object {
     static fastestInstance(): LZ4Factory;
     static fastestJavaInstance(): LZ4Factory;
-    static main(paramarg0: (Object | null)[]): void;
+    static main(paramarg0: string[]): void;
     static nativeInsecureInstance(): LZ4Factory;
     static nativeInstance(): LZ4Factory;
     static safeInstance(): LZ4Factory;

@@ -8,7 +8,6 @@ import type { JSObject } from '../../../../../com/oracle/truffle/js/runtime/obje
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class ArrayPrototypeBuiltins$DeleteAndSetLengthNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private context: JSContext;
     createSetLengthProperty(): PropertySetNode;

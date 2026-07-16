@@ -9,7 +9,7 @@ export class Filter$Result extends Enum<Filter$Result> {
     static toResult(paramname: string, paramdefaultResult: Filter$Result): Filter$Result;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Filter$Result;
-    static values(): (Object | null)[];
+    static values(): Filter$Result[];
     private constructor()
     name(): "ACCEPT" | "NEUTRAL" | "DENY";
 }

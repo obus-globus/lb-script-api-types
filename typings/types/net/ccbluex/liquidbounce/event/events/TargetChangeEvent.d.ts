@@ -1,3 +1,4 @@
+import type { Gson } from '../../../../../com/google/gson/Gson.d.ts'
 import type { Event } from '../../../../../net/ccbluex/liquidbounce/event/Event.d.ts'
 import type { WebSocketEvent } from '../../../../../net/ccbluex/liquidbounce/integration/interop/protocol/event/WebSocketEvent.d.ts'
 import type { PlayerData } from '../../../../../net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/PlayerData.d.ts'
@@ -6,5 +7,7 @@ import type { PlayerData } from '../../../../../net/ccbluex/liquidbounce/integra
  */
 export class TargetChangeEvent extends Event implements WebSocketEvent {
     constructor(target: PlayerData | null)
+    readonly serializeAsync: boolean;
+    readonly serializer: Gson;
     readonly target: PlayerData | null;
 }

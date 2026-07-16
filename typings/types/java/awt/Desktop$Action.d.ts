@@ -28,7 +28,7 @@ export class Desktop$Action extends Enum<Desktop$Action> {
     static PRINT: Desktop$Action;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Desktop$Action;
-    static values(): (Object | null)[];
+    static values(): Desktop$Action[];
     private constructor()
     name(): "OPEN" | "EDIT" | "PRINT" | "MAIL" | "BROWSE" | "APP_EVENT_FOREGROUND" | "APP_EVENT_HIDDEN" | "APP_EVENT_REOPENED" | "APP_EVENT_SCREEN_SLEEP" | "APP_EVENT_SYSTEM_SLEEP" | "APP_EVENT_USER_SESSION" | "APP_ABOUT" | "APP_PREFERENCES" | "APP_OPEN_FILE" | "APP_PRINT_FILE" | "APP_OPEN_URI" | "APP_QUIT_HANDLER" | "APP_QUIT_STRATEGY" | "APP_SUDDEN_TERMINATION" | "APP_REQUEST_FOREGROUND" | "APP_HELP_VIEWER" | "APP_MENU_BAR" | "BROWSE_FILE_DIR" | "MOVE_TO_TRASH";
 }

@@ -5,7 +5,6 @@ import type { JavaScriptBaseNode } from '../../../../../com/oracle/truffle/js/no
 export abstract class ObjectPrototypeBuiltins$FormatCacheNode extends JavaScriptBaseNode {
     static create(): ObjectPrototypeBuiltins$FormatCacheNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     // private equalsNode: TruffleString$EqualNode;
     doCached(name: TruffleString, cachedName: TruffleString, cachedResult: TruffleString): TruffleString;

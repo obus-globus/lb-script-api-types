@@ -15,15 +15,15 @@ export class StructurePlacement$FrequencyReductionMethod extends Enum<StructureP
     static LEGACY_TYPE_2: StructurePlacement$FrequencyReductionMethod;
     static LEGACY_TYPE_3: StructurePlacement$FrequencyReductionMethod;
     static PRE_BUILT_MAP_THRESHOLD: number;
-    static createNameLookup(paramvalueArray: Object | null): (param0: string) => StringRepresentable | null;
-    static createNameLookup(paramvalueArray: Object | null, paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
-    static fromEnum(paramvalues: () => Object | null): StringRepresentable$EnumCodec<any>;
-    static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<any>;
-    static fromValues(paramvalues: () => Object | null): Codec<StringRepresentable>;
-    static keys(paramvalues: (Object | null)[]): Keyable;
+    static createNameLookup(paramvalueArray: (StringRepresentable | null)[]): (param0: string) => StringRepresentable | null;
+    static createNameLookup(paramvalueArray: (Object | null)[], paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
+    static fromEnum(paramvalues: () => (Object | null)[]): StringRepresentable$EnumCodec<any>;
+    static fromEnumWithMapping(paramvalues: () => (Object | null)[], paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<any>;
+    static fromValues(paramvalues: () => (StringRepresentable | null)[]): Codec<StringRepresentable>;
+    static keys(paramvalues: StringRepresentable[]): Keyable;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): StructurePlacement$FrequencyReductionMethod;
-    static values(): (Object | null)[];
+    static values(): StructurePlacement$FrequencyReductionMethod[];
     private constructor(name: string, reducer: (param0: number, param1: number, param2: number, param3: number, param4: number) => boolean)
     // private name: string;
     // private reducer: (param0: number, param1: number, param2: number, param3: number, param4: number) => boolean;

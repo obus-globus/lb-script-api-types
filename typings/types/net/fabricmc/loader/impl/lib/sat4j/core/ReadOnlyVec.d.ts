@@ -26,6 +26,6 @@ export class ReadOnlyVec<T extends unknown> extends Object implements IVec<T> {
     set(arg0: number, arg1: T): void;
     shrinkTo(arg0: number): void;
     size(): number;
-    sort(arg0: (param0: Object) => boolean): void;
+    sort(arg0: (param0: T, param1: T) => number): void;
     toString(): string;
 }

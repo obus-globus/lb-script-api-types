@@ -9,7 +9,7 @@ export class RowIdLifetime extends Enum<RowIdLifetime> {
     static ROWID_VALID_TRANSACTION: RowIdLifetime;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RowIdLifetime;
-    static values(): (Object | null)[];
+    static values(): RowIdLifetime[];
     private constructor()
     name(): "ROWID_UNSUPPORTED" | "ROWID_VALID_OTHER" | "ROWID_VALID_SESSION" | "ROWID_VALID_TRANSACTION" | "ROWID_VALID_FOREVER";
 }

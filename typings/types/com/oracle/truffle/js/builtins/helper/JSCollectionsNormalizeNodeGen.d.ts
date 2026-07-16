@@ -6,7 +6,6 @@ export class JSCollectionsNormalizeNodeGen extends JSCollectionsNormalizeNode {
     static create(): JSCollectionsNormalizeNode;
     static getUncached(): JSCollectionsNormalizeNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private foreignObject0_cache: JSCollectionsNormalizeNodeGen$ForeignObject0Data;
     // private state_0_: number;

@@ -7,7 +7,7 @@ export class Base64$DecodeTableFormat extends Enum<Base64$DecodeTableFormat> {
     static URL_SAFE: Base64$DecodeTableFormat;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Base64$DecodeTableFormat;
-    static values(): (Object | null)[];
+    static values(): Base64$DecodeTableFormat[];
     private constructor()
     name(): "STANDARD" | "URL_SAFE" | "MIXED";
 }

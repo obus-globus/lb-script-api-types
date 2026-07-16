@@ -8,7 +8,7 @@ export class CentralProcessor$ProcessorCache$Type extends Enum<CentralProcessor$
     static UNIFIED: CentralProcessor$ProcessorCache$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CentralProcessor$ProcessorCache$Type;
-    static values(): (Object | null)[];
+    static values(): CentralProcessor$ProcessorCache$Type[];
     private constructor()
     toString(): string;
     name(): "UNIFIED" | "INSTRUCTION" | "DATA" | "TRACE";

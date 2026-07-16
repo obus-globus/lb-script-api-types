@@ -29,7 +29,7 @@ export class ArmorTypes1_8 extends Enum<ArmorTypes1_8> {
     static isArmor(paramarg0: string): boolean;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ArmorTypes1_8;
-    static values(): (Object | null)[];
+    static values(): ArmorTypes1_8[];
     private constructor(arg2: number, arg3: number, arg4: string)
     readonly armorPoints: number;
     readonly id: number;

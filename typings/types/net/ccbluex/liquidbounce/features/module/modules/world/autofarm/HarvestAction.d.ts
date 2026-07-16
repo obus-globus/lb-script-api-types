@@ -7,7 +7,7 @@ export class HarvestAction extends Enum<HarvestAction> {
     static getEntries(): HarvestAction[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HarvestAction;
-    static values(): (Object | null)[];
+    static values(): HarvestAction[];
     private constructor()
     name(): "BREAK" | "USE";
 }

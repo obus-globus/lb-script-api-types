@@ -11,7 +11,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class FunctionPrototypeBuiltins$CopyFunctionNameAndLengthNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): FunctionPrototypeBuiltins$CopyFunctionNameAndLengthNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private functionLengthLib: DynamicObjectLibrary;
     // private functionNameLib: DynamicObjectLibrary;

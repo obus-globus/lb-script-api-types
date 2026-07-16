@@ -5,7 +5,6 @@ import type { JSTrimWhitespaceNode } from '../../../../../../com/oracle/truffle/
 export class JSTrimWhitespaceNodeGen$Uncached extends JSTrimWhitespaceNode implements UnadoptableNode {
     static create(): JSTrimWhitespaceNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     executeString(arg0Value: TruffleString): TruffleString;
 }

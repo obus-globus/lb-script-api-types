@@ -9,7 +9,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { TemporalUtil$Overflow } from '../../../../../../com/oracle/truffle/js/runtime/util/TemporalUtil$Overflow.d.ts'
 export abstract class TemporalYearMonthFromFieldsNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(calendar: TruffleString, fields: JSDynamicObject, overflow: TemporalUtil$Overflow): JSTemporalPlainYearMonthObject;
     yearMonthFromFields(calendar: TruffleString, fields: JSDynamicObject, overflow: TemporalUtil$Overflow, toIntegerOrInfinity: JSToIntegerOrInfinityNode, setDay: PropertySetNode, errorBranch: InlinedBranchProfile): JSTemporalPlainYearMonthObject;

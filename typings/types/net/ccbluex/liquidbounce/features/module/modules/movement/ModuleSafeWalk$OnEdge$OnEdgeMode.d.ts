@@ -13,7 +13,7 @@ export class ModuleSafeWalk$OnEdge$OnEdgeMode extends Enum<ModuleSafeWalk$OnEdge
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleSafeWalk$OnEdge$OnEdgeMode;
-    static values(): (Object | null)[];
+    static values(): ModuleSafeWalk$OnEdge$OnEdgeMode[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "STOP" | "INVERT" | "CENTER";

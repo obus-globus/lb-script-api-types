@@ -40,7 +40,7 @@ export class JniUtils extends Object {
     static booleanMask(paramarg0: PtNDArray, paramarg1: PtNDArray): PtNDArray;
     static booleanMaskSet(paramarg0: PtNDArray, paramarg1: PtNDArray, paramarg2: PtNDArray): void;
     static broadcast(paramarg0: PtNDArray, paramarg1: Shape): PtNDArray;
-    static cat(paramarg0: (Object | null)[], paramarg1: number): PtNDArray;
+    static cat(paramarg0: PtNDArray[], paramarg1: number): PtNDArray;
     static ceil(paramarg0: PtNDArray): PtNDArray;
     static clip(paramarg0: PtNDArray, paramarg1: Number, paramarg2: Number): PtNDArray;
     static clone(paramarg0: PtNDArray): PtNDArray;
@@ -93,7 +93,7 @@ export class JniUtils extends Object {
     static getGradientFunctionNames(paramarg0: PtNDArray): string;
     static getItem(paramarg0: PtNDArray, paramarg1: number[], paramarg2: PtNDManager): PtNDArray;
     static getLayout(paramarg0: PtNDArray): number;
-    static getMethodNames(paramarg0: PtSymbolBlock): (Object | null)[];
+    static getMethodNames(paramarg0: PtSymbolBlock): string[];
     static getNumInteropThreads(): number;
     static getNumThreads(): number;
     static getShape(paramarg0: PtNDArray): Shape;
@@ -119,7 +119,7 @@ export class JniUtils extends Object {
     static linear(paramarg0: PtNDArray, paramarg1: PtNDArray, paramarg2: PtNDArray): PtNDArray;
     static linspace(paramarg0: PtNDManager, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: DataType, paramarg5: Device, paramarg6: SparseFormat): PtNDArray;
     static loadModule(paramarg0: PtNDManager, paramarg1: InputStream, paramarg2: boolean, paramarg3: boolean): PtSymbolBlock;
-    static loadModule(paramarg0: PtNDManager, paramarg1: Path, paramarg2: boolean, paramarg3: (Object | null)[], paramarg4: (Object | null)[], paramarg5: boolean): PtSymbolBlock;
+    static loadModule(paramarg0: PtNDManager, paramarg1: Path, paramarg2: boolean, paramarg3: string[], paramarg4: string[], paramarg5: boolean): PtSymbolBlock;
     static loadModuleHandle(paramarg0: InputStream, paramarg1: Device, paramarg2: boolean, paramarg3: boolean): number;
     static log(paramarg0: PtNDArray): PtNDArray;
     static log10(paramarg0: PtNDArray): PtNDArray;
@@ -205,7 +205,7 @@ export class JniUtils extends Object {
     static square(paramarg0: PtNDArray): PtNDArray;
     static squeeze(paramarg0: PtNDArray): PtNDArray;
     static squeeze(paramarg0: PtNDArray, paramarg1: number): PtNDArray;
-    static stack(paramarg0: (Object | null)[], paramarg1: number): PtNDArray;
+    static stack(paramarg0: PtNDArray[], paramarg1: number): PtNDArray;
     static startProfile(paramarg0: boolean, paramarg1: boolean, paramarg2: boolean): void;
     static stft(paramarg0: PtNDArray, paramarg1: number, paramarg2: number, paramarg3: PtNDArray, paramarg4: boolean, paramarg5: boolean, paramarg6: boolean): PtNDArray;
     static stopProfile(paramarg0: string): void;

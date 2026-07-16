@@ -7,7 +7,7 @@ export class AnnotationConstructorCaller$CallMode extends Enum<AnnotationConstru
     static POSITIONAL_CALL: AnnotationConstructorCaller$CallMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AnnotationConstructorCaller$CallMode;
-    static values(): (Object | null)[];
+    static values(): AnnotationConstructorCaller$CallMode[];
     private constructor()
     name(): "CALL_BY_NAME" | "POSITIONAL_CALL";
 }

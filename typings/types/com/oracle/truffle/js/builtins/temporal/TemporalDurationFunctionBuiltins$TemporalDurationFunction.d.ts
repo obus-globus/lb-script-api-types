@@ -12,7 +12,7 @@ export class TemporalDurationFunctionBuiltins$TemporalDurationFunction extends E
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TemporalDurationFunctionBuiltins$TemporalDurationFunction;
-    static values(): (Object | null)[];
+    static values(): TemporalDurationFunctionBuiltins$TemporalDurationFunction[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

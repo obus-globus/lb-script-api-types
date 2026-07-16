@@ -8,7 +8,6 @@ export class ToTemporalCalendarIdentifierNodeGen extends ToTemporalCalendarIdent
     static create(): ToTemporalCalendarIdentifierNode;
     static getUncached(): ToTemporalCalendarIdentifierNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private state_0_: number;
     // private string_fromJavaString_: TruffleString$FromJavaStringNode;

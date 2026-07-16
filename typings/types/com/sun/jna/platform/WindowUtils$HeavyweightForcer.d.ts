@@ -1,6 +1,5 @@
 import type { Rectangle } from '../../../../java/awt/Rectangle.d.ts'
 import type { Window } from '../../../../java/awt/Window.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 export class WindowUtils$HeavyweightForcer extends Window {
     static ABORT: number;
     static ALLBITS: number;
@@ -15,8 +14,8 @@ export class WindowUtils$HeavyweightForcer extends Window {
     static SOMEBITS: number;
     static TOP_ALIGNMENT: number;
     static WIDTH: number;
-    static getOwnerlessWindows(): (Object | null)[];
-    static getWindows(): (Object | null)[];
+    static getOwnerlessWindows(): Window[];
+    static getWindows(): Window[];
     constructor(arg0: Window)
     // private packed: boolean;
     getBounds(): Rectangle;

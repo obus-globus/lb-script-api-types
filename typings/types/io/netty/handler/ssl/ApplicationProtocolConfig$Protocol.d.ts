@@ -8,7 +8,7 @@ export class ApplicationProtocolConfig$Protocol extends Enum<ApplicationProtocol
     static NPN_AND_ALPN: ApplicationProtocolConfig$Protocol;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ApplicationProtocolConfig$Protocol;
-    static values(): (Object | null)[];
+    static values(): ApplicationProtocolConfig$Protocol[];
     private constructor()
     name(): "NONE" | "NPN" | "ALPN" | "NPN_AND_ALPN";
 }

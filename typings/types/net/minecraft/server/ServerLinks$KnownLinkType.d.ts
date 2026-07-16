@@ -20,7 +20,7 @@ export class ServerLinks$KnownLinkType extends Enum<ServerLinks$KnownLinkType> {
     static WEBSITE: ServerLinks$KnownLinkType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ServerLinks$KnownLinkType;
-    static values(): (Object | null)[];
+    static values(): ServerLinks$KnownLinkType[];
     private constructor(id: number, name: string)
     // private id: number;
     // private name: string;

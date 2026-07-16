@@ -12,5 +12,4 @@ export class LocalDateRangeKt extends Object {
     static randomOrNull(paramarg0: (Object | null)[], paramarg1: Random): LocalDate;
     static reversed(paramarg0: (Object | null)[]): (Object | null)[];
     static step(paramarg0: (Object | null)[], paramarg1: number, paramarg2: DateTimeUnit$DayBased): (Object | null)[];
-    static step(paramarg0: (Object | null)[], paramarg1: number, paramarg2: DateTimeUnit$DayBased): (Object | null)[];
 }

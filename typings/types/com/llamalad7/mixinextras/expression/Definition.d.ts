@@ -3,7 +3,6 @@ import type { Annotation } from '../../../../java/lang/annotation/Annotation.d.t
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { KClass } from '../../../../kotlin/reflect/KClass.d.ts'
 export interface Definition extends Annotation, Object{
-    constructor(field: string[], id: string, local: Local[], method: string[], remap: boolean, type: KClass<Object>[])
     /*not mapped: */ field(): string[];
     /*not mapped: */ id(): string;
     /*not mapped: */ local(): Local[];

@@ -14,7 +14,7 @@ export class ArrayFunctionBuiltins$ArrayFunction extends Enum<ArrayFunctionBuilt
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ArrayFunctionBuiltins$ArrayFunction;
-    static values(): (Object | null)[];
+    static values(): ArrayFunctionBuiltins$ArrayFunction[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

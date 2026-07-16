@@ -5,7 +5,7 @@ export interface IndirectPriorityQueue<K extends unknown> extends Object {
     changed(): void;
     changed(arg0: number): void;
     clear(): void;
-    comparator(): (param0: Object) => boolean;
+    comparator(): (param0: K, param1: K) => number;
     contains(arg0: number): boolean;
     dequeue(): number;
     enqueue(arg0: number): void;

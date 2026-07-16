@@ -12,7 +12,7 @@ export class NetworkIF$IfOperStatus extends Enum<NetworkIF$IfOperStatus> {
     static byValue(paramarg0: number): NetworkIF$IfOperStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): NetworkIF$IfOperStatus;
-    static values(): (Object | null)[];
+    static values(): NetworkIF$IfOperStatus[];
     private constructor(arg2: number)
     readonly value: number;
     getValue(): number;

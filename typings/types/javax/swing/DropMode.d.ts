@@ -12,7 +12,7 @@ export class DropMode extends Enum<DropMode> {
     static USE_SELECTION: DropMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DropMode;
-    static values(): (Object | null)[];
+    static values(): DropMode[];
     private constructor()
     name(): "USE_SELECTION" | "ON" | "INSERT" | "INSERT_ROWS" | "INSERT_COLS" | "ON_OR_INSERT" | "ON_OR_INSERT_ROWS" | "ON_OR_INSERT_COLS";
 }

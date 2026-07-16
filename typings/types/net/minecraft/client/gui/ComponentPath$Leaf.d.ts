@@ -6,7 +6,7 @@ import type { GuiEventListener } from '../../../../net/minecraft/client/gui/comp
 export class ComponentPath$Leaf extends Record implements ComponentPath {
     static leaf(paramcomponent: GuiEventListener): ComponentPath;
     static path(paramcontainer: ContainerEventHandler, paramchildPath: ComponentPath): ComponentPath;
-    static path(paramtarget: GuiEventListener, ...paramcontainerPath: (Object | null)[]): ComponentPath;
+    static path(paramtarget: GuiEventListener, ...paramcontainerPath: ContainerEventHandler[]): ComponentPath;
     constructor(component: GuiEventListener)
     // private component: GuiEventListener;
     applyFocus(focused: boolean): void;

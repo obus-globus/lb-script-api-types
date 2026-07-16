@@ -6,7 +6,6 @@ import type { JSFunctionCallNode$JSFunctionCacheNode } from '../../../../../../c
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSFunctionCallNode$InlinedBuiltinCallNode extends JSFunctionCallNode$JSFunctionCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(callTarget: CallTarget, builtinNode: JSBuiltinNode$Inlined)
     // private builtinNode: JSBuiltinNode$Inlined;
     // private callNode: DirectCallNode;

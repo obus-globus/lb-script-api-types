@@ -7,7 +7,7 @@ export class ClientAuth extends Enum<ClientAuth> {
     static REQUIRE: ClientAuth;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClientAuth;
-    static values(): (Object | null)[];
+    static values(): ClientAuth[];
     private constructor()
     name(): "NONE" | "OPTIONAL" | "REQUIRE";
 }

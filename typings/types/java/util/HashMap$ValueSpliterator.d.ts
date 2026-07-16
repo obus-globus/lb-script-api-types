@@ -15,7 +15,7 @@ export class HashMap$ValueSpliterator<K extends unknown, V extends unknown> exte
     constructor(arg0: Map<K, V>, arg1: number, arg2: number, arg3: number, arg4: number)
     characteristics(): number;
     forEachRemaining(arg0: (param0: V) => void): void;
-    getComparator(): (param0: Object) => boolean;
+    getComparator(): (param0: V, param1: V) => number;
     getExactSizeIfKnown(): number;
     hasCharacteristics(arg0: number): boolean;
     tryAdvance(arg0: (param0: V) => void): boolean;

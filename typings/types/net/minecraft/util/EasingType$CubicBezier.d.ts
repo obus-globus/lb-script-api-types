@@ -6,7 +6,6 @@ import type { EasingType$CubicBezierControls } from '../../../net/minecraft/util
 import type { ExtraCodecs$LateBoundIdMapper } from '../../../net/minecraft/util/ExtraCodecs$LateBoundIdMapper.d.ts'
 export class EasingType$CubicBezier extends Object implements EasingType {
     static CODEC: Codec<EasingType$CubicBezier>;
-    static CODEC: Codec<EasingType>;
     static CONSTANT: EasingType;
     static IN_BACK: EasingType;
     static IN_BOUNCE: EasingType;

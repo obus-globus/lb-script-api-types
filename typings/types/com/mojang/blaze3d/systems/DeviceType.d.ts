@@ -9,7 +9,7 @@ export class DeviceType extends Enum<DeviceType> {
     static VIRTUAL: DeviceType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): DeviceType;
-    static values(): (Object | null)[];
+    static values(): DeviceType[];
     private constructor()
     name(): "OTHER" | "INTEGRATED" | "DISCRETE" | "VIRTUAL" | "CPU";
 }

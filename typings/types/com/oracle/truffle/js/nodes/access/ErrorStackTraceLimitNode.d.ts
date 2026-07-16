@@ -6,7 +6,6 @@ import type { JSToIntegerAsLongNode } from '../../../../../../com/oracle/truffle
 export abstract class ErrorStackTraceLimitNode extends JavaScriptBaseNode {
     static create(): ErrorStackTraceLimitNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     // private getStackTraceLimit: DynamicObjectLibrary;
     doInt(isNumber: IsNumberNode, toInteger: JSToIntegerAsLongNode): number;

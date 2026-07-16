@@ -16,7 +16,7 @@ export class FreeBsdOSProcess$PsThreadColumns extends Enum<FreeBsdOSProcess$PsTh
     static TIME: FreeBsdOSProcess$PsThreadColumns;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FreeBsdOSProcess$PsThreadColumns;
-    static values(): (Object | null)[];
+    static values(): FreeBsdOSProcess$PsThreadColumns[];
     private constructor()
     name(): "TDNAME" | "LWP" | "STATE" | "ETIMES" | "SYSTIME" | "TIME" | "TDADDR" | "NIVCSW" | "NVCSW" | "MAJFLT" | "MINFLT" | "PRI";
 }

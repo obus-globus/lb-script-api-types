@@ -13,7 +13,7 @@ export class CheckSignatureAdapter$State extends Enum<CheckSignatureAdapter$Stat
     static SUPER: CheckSignatureAdapter$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CheckSignatureAdapter$State;
-    static values(): (Object | null)[];
+    static values(): CheckSignatureAdapter$State[];
     private constructor()
     name(): "EMPTY" | "FORMAL" | "BOUND" | "SUPER" | "PARAM" | "RETURN" | "SIMPLE_TYPE" | "CLASS_TYPE" | "END";
 }

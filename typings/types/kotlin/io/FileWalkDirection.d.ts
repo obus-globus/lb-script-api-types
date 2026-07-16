@@ -8,7 +8,7 @@ export class FileWalkDirection extends Enum<FileWalkDirection> implements Serial
     static getEntries(): FileWalkDirection[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FileWalkDirection;
-    static values(): (Object | null)[];
+    static values(): FileWalkDirection[];
     private constructor()
     name(): "TOP_DOWN" | "BOTTOM_UP";
 }

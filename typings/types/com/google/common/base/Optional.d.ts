@@ -22,5 +22,5 @@ export abstract class Optional<T extends unknown> extends Object implements Seri
     orNull(): T;
     toJavaUtil(): Optional_2<T>;
     toString(): string;
-    transform<V extends unknown>(function_: (param0: Object) => boolean): Optional<V>;
+    transform<V extends unknown>(function_: (param0: T) => V): Optional<V>;
 }

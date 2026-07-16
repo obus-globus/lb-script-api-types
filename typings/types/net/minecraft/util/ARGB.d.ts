@@ -10,10 +10,8 @@ export class ARGB extends Object {
     static as8BitChannel(paramvalue: number): number;
     static average(paramlhs: number, paramrhs: number): number;
     static black(paramalpha: number): number;
-    static black(paramalpha: number): number;
     static blue(paramcolor: number): number;
     static blueFloat(paramcolor: number): number;
-    static color(paramalpha: number, paramrgb: number): number;
     static color(paramalpha: number, paramrgb: number): number;
     static color(paramred: number, paramgreen: number, paramblue: number): number;
     static color(paramalpha: number, paramred: number, paramgreen: number, paramblue: number): number;
@@ -34,7 +32,6 @@ export class ARGB extends Object {
     static redFloat(paramcolor: number): number;
     static scaleRGB(paramcolor: number, paramscale: number): number;
     static scaleRGB(paramcolor: number, paramscaleR: number, paramscaleG: number, paramscaleB: number): number;
-    static scaleRGB(paramcolor: number, paramscale: number): number;
     static setBrightness(paramcolor: number, parambrightness: number): number;
     static setVector4fFromARGB32(paramdest: Vector4f, paramcolor: number): Vector4f;
     static srgbLerp(paramalpha: number, paramp0: number, paramp1: number): number;
@@ -44,7 +41,6 @@ export class ARGB extends Object {
     static transparent(paramcolor: number): number;
     static vector3fFromRGB24(paramcolor: number): Vector3f;
     static vector4fFromARGB32(paramcolor: number): Vector4f;
-    static white(paramalpha: number): number;
     static white(paramalpha: number): number;
     constructor()
 }

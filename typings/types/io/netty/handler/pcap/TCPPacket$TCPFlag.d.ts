@@ -12,7 +12,7 @@ export class TCPPacket$TCPFlag extends Enum<TCPPacket$TCPFlag> {
     static URG: TCPPacket$TCPFlag;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TCPPacket$TCPFlag;
-    static values(): (Object | null)[];
+    static values(): TCPPacket$TCPFlag[];
     private constructor(arg2: number)
     // private value: number;
     name(): "FIN" | "SYN" | "RST" | "PSH" | "ACK" | "URG" | "ECE" | "CWR";

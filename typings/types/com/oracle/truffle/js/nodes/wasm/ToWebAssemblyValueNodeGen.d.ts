@@ -9,7 +9,6 @@ export class ToWebAssemblyValueNodeGen extends ToWebAssemblyValueNode {
     static create(): ToWebAssemblyValueNode;
     static getUncached(): ToWebAssemblyValueNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private i32_toInt32Node_: JSToInt32Node;
     // private i64_toBigIntNode_: JSToBigIntNode;

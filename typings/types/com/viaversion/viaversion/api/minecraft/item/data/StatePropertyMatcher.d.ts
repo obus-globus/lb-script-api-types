@@ -4,7 +4,7 @@ import type { Either } from '../../../../../../../com/viaversion/viaversion/util
 import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class StatePropertyMatcher extends Record {
-    static ARRAY_TYPE: Type<(Object | null)[]>;
+    static ARRAY_TYPE: Type<StatePropertyMatcher[]>;
     static TYPE: Type<StatePropertyMatcher>;
     constructor(name: string, matcher: Either<string, StatePropertyMatcher$RangedMatcher>)
     // private matcher: Either<string, StatePropertyMatcher$RangedMatcher>;

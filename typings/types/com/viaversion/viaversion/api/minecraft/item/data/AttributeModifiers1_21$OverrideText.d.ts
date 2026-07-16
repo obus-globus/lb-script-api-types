@@ -4,7 +4,7 @@ import type { ByteBuf } from '../../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class AttributeModifiers1_21$OverrideText extends AttributeModifiers1_21$Display {
     static DEFAULT: AttributeModifiers1_21$Display;
-    static DISPLAY_TYPES: (Object | null)[];
+    static DISPLAY_TYPES: string[];
     static ID: number;
     constructor(arg0: Tag)
     // private component: Tag;

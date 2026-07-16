@@ -13,7 +13,6 @@ import type { JigsawJunction } from '../../../../../net/minecraft/world/level/le
 export class Beardifier extends Object implements DensityFunctions$BeardifierOrMarker {
     static BEARD_KERNEL_RADIUS: number;
     static CODEC: Codec<DensityFunction>;
-    static CODEC: KeyDispatchDataCodec<DensityFunction>;
     static EMPTY: Beardifier;
     static forStructuresInChunk(paramstructureManager: StructureManager, paramchunkPos: ChunkPos): Beardifier;
     constructor(pieces: Beardifier$Rigid[], junctions: JigsawJunction[], affectedBox: BoundingBox)

@@ -138,7 +138,7 @@ export class ActorFlags extends Enum<ActorFlags> {
     static getByValue(paramarg0: number, paramarg1: ActorFlags): ActorFlags;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ActorFlags;
-    static values(): (Object | null)[];
+    static values(): ActorFlags[];
     private constructor(arg2: number)
     private constructor(arg2: ActorFlags)
     readonly value: number;

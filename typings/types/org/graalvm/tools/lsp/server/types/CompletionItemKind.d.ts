@@ -30,7 +30,7 @@ export class CompletionItemKind extends Enum<CompletionItemKind> {
     static get(paramintValue: number): CompletionItemKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CompletionItemKind;
-    static values(): (Object | null)[];
+    static values(): CompletionItemKind[];
     private constructor(intValue: number)
     readonly intValue: number;
     getIntValue(): number;

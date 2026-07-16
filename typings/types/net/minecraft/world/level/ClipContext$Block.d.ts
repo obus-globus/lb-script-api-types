@@ -14,7 +14,7 @@ export class ClipContext$Block extends Enum<ClipContext$Block> implements ClipCo
     static VISUAL: ClipContext$Block;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ClipContext$Block;
-    static values(): (Object | null)[];
+    static values(): ClipContext$Block[];
     private constructor(getShape: ClipContext$ShapeGetter)
     // private shapeGetter: ClipContext$ShapeGetter;
     get(state: BlockState, level: BlockGetter, pos: BlockPos, context: CollisionContext): VoxelShape;

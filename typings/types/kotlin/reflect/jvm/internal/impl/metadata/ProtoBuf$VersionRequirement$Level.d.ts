@@ -9,7 +9,7 @@ export class ProtoBuf$VersionRequirement$Level extends Enum<ProtoBuf$VersionRequ
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: number): ProtoBuf$VersionRequirement$Level;
     static valueOf(paramarg0: string): ProtoBuf$VersionRequirement$Level;
-    static values(): (Object | null)[];
+    static values(): ProtoBuf$VersionRequirement$Level[];
     private constructor(arg2: number, arg3: number)
     // private value: number;
     getNumber(): number;

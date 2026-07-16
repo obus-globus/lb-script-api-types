@@ -8,7 +8,7 @@ export class TypeUtils$Equivalency extends Enum<TypeUtils$Equivalency> {
     static NOT_EQUIVALENT: TypeUtils$Equivalency;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TypeUtils$Equivalency;
-    static values(): (Object | null)[];
+    static values(): TypeUtils$Equivalency[];
     private constructor()
     name(): "NOT_EQUIVALENT" | "EQUIVALENT_BUT_RAW" | "BOUNDS_MISMATCH" | "EQUIVALENT";
 }

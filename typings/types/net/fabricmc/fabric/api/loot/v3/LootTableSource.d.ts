@@ -8,7 +8,7 @@ export class LootTableSource extends Enum<LootTableSource> {
     static VANILLA: LootTableSource;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LootTableSource;
-    static values(): (Object | null)[];
+    static values(): LootTableSource[];
     private constructor(arg2: boolean)
     readonly builtin: boolean;
     isBuiltin(): boolean;

@@ -27,7 +27,7 @@ export class ItemType extends Enum<ItemType> {
     static getEntries(): ItemType[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ItemType;
-    static values(): (Object | null)[];
+    static values(): ItemType[];
     private constructor(oneIsSufficient: boolean, allocationPriority: Priority, providedFunction: ItemFunction | null)
     /**
      * Higher priority means the item category is filled in first.

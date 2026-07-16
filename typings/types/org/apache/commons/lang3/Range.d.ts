@@ -3,13 +3,13 @@ import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Range<T extends unknown> extends Object implements Serializable {
     static between(paramarg0: Object | null, paramarg1: Object | null): Range<Object>;
-    static between(paramarg0: Object | null, paramarg1: Object | null, paramarg2: (param0: Object) => boolean): Range<Object>;
+    static between(paramarg0: Object | null, paramarg1: Object | null, paramarg2: (param0: Object | null, param1: Object | null) => number): Range<Object>;
     static is(paramarg0: Object | null): Range<Object>;
-    static is(paramarg0: Object | null, paramarg1: (param0: Object) => boolean): Range<Object>;
+    static is(paramarg0: Object | null, paramarg1: (param0: Object | null, param1: Object | null) => number): Range<Object>;
     static of(paramarg0: Object | null, paramarg1: Object | null): Range<Object>;
-    static of(paramarg0: Object | null, paramarg1: Object | null, paramarg2: (param0: Object) => boolean): Range<Object>;
-    constructor(arg0: T, arg1: T, arg2: (param0: Object) => boolean)
-    readonly comparator: (param0: Object) => boolean;
+    static of(paramarg0: Object | null, paramarg1: Object | null, paramarg2: (param0: Object | null, param1: Object | null) => number): Range<Object>;
+    constructor(arg0: T, arg1: T, arg2: (param0: T, param1: T) => number)
+    readonly comparator: (param0: T, param1: T) => number;
     // private hashCode: number;
     readonly maximum: T;
     readonly minimum: T;
@@ -19,7 +19,7 @@ export class Range<T extends unknown> extends Object implements Serializable {
     elementCompareTo(arg0: T): number;
     equals(arg0: Object | null): boolean;
     fit(arg0: T): T;
-    getComparator(): (param0: Object) => boolean;
+    getComparator(): (param0: T, param1: T) => number;
     getMaximum(): T;
     getMinimum(): T;
     hashCode(): number;

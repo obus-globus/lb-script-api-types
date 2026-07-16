@@ -12,7 +12,7 @@ export class LegacyTelemetryEventPacket_AgentResult extends Enum<LegacyTelemetry
     static getByValue(paramarg0: number, paramarg1: LegacyTelemetryEventPacket_AgentResult): LegacyTelemetryEventPacket_AgentResult;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LegacyTelemetryEventPacket_AgentResult;
-    static values(): (Object | null)[];
+    static values(): LegacyTelemetryEventPacket_AgentResult[];
     private constructor(arg2: number)
     private constructor(arg2: LegacyTelemetryEventPacket_AgentResult)
     readonly value: number;

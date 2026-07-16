@@ -20,7 +20,7 @@ export class PolyglotContextImpl$State extends Enum<PolyglotContextImpl$State> {
     static PENDING_EXIT: PolyglotContextImpl$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PolyglotContextImpl$State;
-    static values(): (Object | null)[];
+    static values(): PolyglotContextImpl$State[];
     private constructor()
     isCancelled(): boolean;
     isCancelling(): boolean;

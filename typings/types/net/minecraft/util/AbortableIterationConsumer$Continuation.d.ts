@@ -6,7 +6,7 @@ export class AbortableIterationConsumer$Continuation extends Enum<AbortableItera
     static CONTINUE: AbortableIterationConsumer$Continuation;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): AbortableIterationConsumer$Continuation;
-    static values(): (Object | null)[];
+    static values(): AbortableIterationConsumer$Continuation[];
     private constructor()
     shouldAbort(): boolean;
     name(): "CONTINUE" | "ABORT";

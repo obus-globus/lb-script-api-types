@@ -8,7 +8,7 @@ export class Constant extends Object {
     static NULL_OR_LINEBR: Constant;
     static URI_CHARS: Constant;
     private constructor(arg0: string)
-    // private contains: (Object | null)[];
+    // private contains: boolean[];
     // private content: string;
     // private noASCII: boolean;
     has(arg0: number): boolean;

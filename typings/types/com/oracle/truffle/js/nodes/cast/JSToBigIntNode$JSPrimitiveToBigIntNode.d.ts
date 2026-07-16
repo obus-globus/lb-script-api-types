@@ -4,7 +4,6 @@ import type { BigInt } from '../../../../../../com/oracle/truffle/js/runtime/Big
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSToBigIntNode$JSPrimitiveToBigIntNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     executeBigInt(node: Node, value: Object): BigInt;
 }

@@ -8,7 +8,7 @@ export class SourceCacheStatisticsListener$CacheEventType extends Enum<SourceCac
     static MISS: SourceCacheStatisticsListener$CacheEventType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SourceCacheStatisticsListener$CacheEventType;
-    static values(): (Object | null)[];
+    static values(): SourceCacheStatisticsListener$CacheEventType[];
     private constructor()
     name(): "HIT" | "MISS" | "EVICT" | "FAIL";
 }

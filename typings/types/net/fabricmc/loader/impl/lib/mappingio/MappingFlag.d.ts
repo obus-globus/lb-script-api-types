@@ -13,7 +13,7 @@ export class MappingFlag extends Enum<MappingFlag> {
     static NONE: MappingFlag[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MappingFlag;
-    static values(): (Object | null)[];
+    static values(): MappingFlag[];
     private constructor()
     name(): "NEEDS_MULTIPLE_PASSES" | "NEEDS_HEADER_METADATA" | "NEEDS_METADATA_UNIQUENESS" | "NEEDS_ELEMENT_UNIQUENESS" | "NEEDS_SRC_FIELD_DESC" | "NEEDS_SRC_METHOD_DESC" | "NEEDS_DST_FIELD_DESC" | "NEEDS_DST_METHOD_DESC";
 }

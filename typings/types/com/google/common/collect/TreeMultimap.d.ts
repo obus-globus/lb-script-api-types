@@ -7,18 +7,18 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class TreeMultimap<K extends unknown, V extends unknown> extends AbstractSortedKeySortedSetMultimap<K, V> {
     static create(): TreeMultimap<Object, Object>;
     static create(parammultimap: Multimap<Object, Object>): TreeMultimap<Object, Object>;
-    static create(paramkeyComparator: (param0: Object) => boolean, paramvalueComparator: (param0: Object) => boolean): TreeMultimap<Object, Object>;
-    constructor(keyComparator: (param0: Object) => boolean, valueComparator: (param0: Object) => boolean)
-    // private keyComparator: (param0: Object) => boolean;
-    // private valueComparator: (param0: Object) => boolean;
+    static create(paramkeyComparator: (param0: Object, param1: Object) => number, paramvalueComparator: (param0: Object, param1: Object) => number): TreeMultimap<Object, Object>;
+    constructor(keyComparator: (param0: K, param1: K) => number, valueComparator: (param0: V, param1: V) => number)
+    // private keyComparator: (param0: K, param1: K) => number;
+    // private valueComparator: (param0: V, param1: V) => number;
     asMap(): Map<K, V[]>;
     createAsMap(): Map<K, V[]>;
     createCollection(): V[];
     createCollection(key: K): V[];
     get(key: K): V[];
-    keyComparator(): (param0: Object) => boolean;
+    keyComparator(): (param0: K, param1: K) => number;
     keySet(): K[];
     // private readObject(stream: ObjectInputStream): void;
-    valueComparator(): (param0: Object) => boolean;
+    valueComparator(): (param0: V, param1: V) => number;
     // private writeObject(stream: ObjectOutputStream): void;
 }

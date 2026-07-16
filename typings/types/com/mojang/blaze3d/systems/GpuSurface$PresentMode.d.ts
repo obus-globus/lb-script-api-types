@@ -9,7 +9,7 @@ export class GpuSurface$PresentMode extends Enum<GpuSurface$PresentMode> {
     static getSupportedVsyncMode(paramsupportedModes: GpuSurface$PresentMode[], paramvsync: boolean): GpuSurface$PresentMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): GpuSurface$PresentMode;
-    static values(): (Object | null)[];
+    static values(): GpuSurface$PresentMode[];
     private constructor()
     name(): "IMMEDIATE" | "MAILBOX" | "FIFO" | "FIFO_RELAXED";
 }

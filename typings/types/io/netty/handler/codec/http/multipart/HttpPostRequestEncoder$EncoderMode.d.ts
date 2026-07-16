@@ -7,7 +7,7 @@ export class HttpPostRequestEncoder$EncoderMode extends Enum<HttpPostRequestEnco
     static RFC3986: HttpPostRequestEncoder$EncoderMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HttpPostRequestEncoder$EncoderMode;
-    static values(): (Object | null)[];
+    static values(): HttpPostRequestEncoder$EncoderMode[];
     private constructor()
     name(): "RFC1738" | "RFC3986" | "HTML5";
 }

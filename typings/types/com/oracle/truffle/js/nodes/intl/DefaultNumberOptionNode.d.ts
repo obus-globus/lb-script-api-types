@@ -7,7 +7,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class DefaultNumberOptionNode extends JavaScriptBaseNode {
     static create(): DefaultNumberOptionNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     // private createRangeError(value: number, minimum: number, maximum: number): JSException;
     executeInt(value: Object, minimum: number, maximum: number, fallback: number): number;

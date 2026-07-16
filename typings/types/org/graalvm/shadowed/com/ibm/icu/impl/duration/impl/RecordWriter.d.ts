@@ -1,7 +1,7 @@
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 export interface RecordWriter extends Object{
     bool(name: string, value: boolean): void;
-    boolArray(name: string, values: (Object | null)[]): void;
+    boolArray(name: string, values: boolean[]): void;
     character(name: string, value: string): void;
     characterArray(name: string, values: string[]): void;
     close(): boolean;

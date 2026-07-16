@@ -6,7 +6,7 @@ export class OptionStability extends Enum<OptionStability> {
     static STABLE: OptionStability;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): OptionStability;
-    static values(): (Object | null)[];
+    static values(): OptionStability[];
     private constructor()
     name(): "STABLE" | "EXPERIMENTAL";
 }

@@ -6,7 +6,7 @@ export class LittleEndianByteArray$VarHandleLittleEndianBytesMaker extends Enum<
     static INSTANCE: LittleEndianByteArray$VarHandleLittleEndianBytesMaker;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): LittleEndianByteArray$VarHandleLittleEndianBytesMaker;
-    static values(): (Object | null)[];
+    static values(): LittleEndianByteArray$VarHandleLittleEndianBytesMaker[];
     constructor(arg2: any)
     tryMakeVarHandleLittleEndianBytes(): LittleEndianByteArray$LittleEndianBytes;
     name(): "INSTANCE";

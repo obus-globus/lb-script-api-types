@@ -35,12 +35,10 @@ export class ALC11 extends ALC10 {
     static alcCaptureOpenDevice(paramarg0: CharSequence, paramarg1: number, paramarg2: number, paramarg3: number): number;
     static alcCaptureOpenDevice(paramarg0: ByteBuffer, paramarg1: number, paramarg2: number, paramarg3: number): number;
     static alcCaptureSamples(paramarg0: number, paramarg1: number[], paramarg2: number): void;
-    static alcCaptureSamples(paramarg0: number, paramarg1: number[], paramarg2: number): void;
     static alcCaptureSamples(paramarg0: number, paramarg1: ByteBuffer, paramarg2: number): void;
     static alcCaptureSamples(paramarg0: number, paramarg1: FloatBuffer, paramarg2: number): void;
     static alcCaptureSamples(paramarg0: number, paramarg1: IntBuffer, paramarg2: number): void;
     static alcCaptureSamples(paramarg0: number, paramarg1: ShortBuffer, paramarg2: number): void;
-    static alcCaptureSamples(paramarg0: number, paramarg1: number[], paramarg2: number): void;
     static alcCaptureStart(paramarg0: number): void;
     static alcCaptureStop(paramarg0: number): void;
     static alcCloseDevice(paramarg0: number): boolean;

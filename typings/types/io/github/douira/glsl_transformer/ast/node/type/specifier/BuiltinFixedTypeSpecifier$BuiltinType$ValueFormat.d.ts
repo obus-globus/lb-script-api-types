@@ -7,7 +7,7 @@ export class BuiltinFixedTypeSpecifier$BuiltinType$ValueFormat extends Enum<Buil
     static UNSIGNED_INTEGER: BuiltinFixedTypeSpecifier$BuiltinType$ValueFormat;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BuiltinFixedTypeSpecifier$BuiltinType$ValueFormat;
-    static values(): (Object | null)[];
+    static values(): BuiltinFixedTypeSpecifier$BuiltinType$ValueFormat[];
     private constructor()
     name(): "FLOATING_POINT" | "SIGNED_INTEGER" | "UNSIGNED_INTEGER";
 }

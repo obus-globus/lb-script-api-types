@@ -36,7 +36,6 @@ export class ObjCPropertyAttribute extends Struct<ObjCPropertyAttribute> impleme
     static nvalue(paramarg0: number, paramarg1: ByteBuffer): void;
     static nvalueString(paramarg0: number): string;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

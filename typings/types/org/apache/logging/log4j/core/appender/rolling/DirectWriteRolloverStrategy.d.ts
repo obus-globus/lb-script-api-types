@@ -1,5 +1,4 @@
 import type { Pattern } from '../../../../../../../java/util/regex/Pattern.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { AbstractRolloverStrategy } from '../../../../../../../org/apache/logging/log4j/core/appender/rolling/AbstractRolloverStrategy.d.ts'
 import type { DirectFileRolloverStrategy } from '../../../../../../../org/apache/logging/log4j/core/appender/rolling/DirectFileRolloverStrategy.d.ts'
 import type { DirectWriteRolloverStrategy$Builder } from '../../../../../../../org/apache/logging/log4j/core/appender/rolling/DirectWriteRolloverStrategy$Builder.d.ts'
@@ -11,7 +10,7 @@ import type { Configuration } from '../../../../../../../org/apache/logging/log4
 import type { StrSubstitutor } from '../../../../../../../org/apache/logging/log4j/core/lookup/StrSubstitutor.d.ts'
 export class DirectWriteRolloverStrategy extends AbstractRolloverStrategy implements DirectFileRolloverStrategy {
     static PATTERN_COUNTER: Pattern;
-    static createStrategy(parammaxFiles: string, paramcompressionLevelStr: string, paramcustomActions: (Object | null)[], paramstopCustomActionsOnError: boolean, paramconfig: Configuration): DirectWriteRolloverStrategy;
+    static createStrategy(parammaxFiles: string, paramcompressionLevelStr: string, paramcustomActions: Action[], paramstopCustomActionsOnError: boolean, paramconfig: Configuration): DirectWriteRolloverStrategy;
     static newBuilder(): DirectWriteRolloverStrategy$Builder;
     constructor(maxFiles: number, compressionLevel: number, strSubstitutor: StrSubstitutor, customActions: Action[], stopCustomActionsOnError: boolean)
     constructor(maxFiles: number, compressionLevel: number, strSubstitutor: StrSubstitutor, customActions: Action[], stopCustomActionsOnError: boolean, tempCompressedFilePatternString: string)

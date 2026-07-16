@@ -14,7 +14,7 @@ export class KillAuraAutoBlock$UnblockMode extends Enum<KillAuraAutoBlock$Unbloc
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): KillAuraAutoBlock$UnblockMode;
-    static values(): (Object | null)[];
+    static values(): KillAuraAutoBlock$UnblockMode[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "STOP_USING_ITEM" | "CHANGE_SLOT" | "SWAP_HAND" | "NONE";

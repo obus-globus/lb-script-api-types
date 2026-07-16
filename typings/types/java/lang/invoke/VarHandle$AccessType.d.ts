@@ -10,7 +10,7 @@ export class VarHandle$AccessType extends Enum<VarHandle$AccessType> {
     static SET: VarHandle$AccessType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): VarHandle$AccessType;
-    static values(): (Object | null)[];
+    static values(): VarHandle$AccessType[];
     private constructor(arg2: Class<Object>)
     // private isMonomorphicInReturnType: boolean;
     // private returnType: Class<Object>;

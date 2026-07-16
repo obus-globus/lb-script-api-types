@@ -5,7 +5,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSCollectionsNormalizeNode extends JavaScriptBaseNode {
     static create(): JSCollectionsNormalizeNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doForeignObject(value: Object, interop: InteropLibrary): Object;
     execute(operand: Object): Object;

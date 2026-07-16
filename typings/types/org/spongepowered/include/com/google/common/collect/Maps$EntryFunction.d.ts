@@ -8,7 +8,7 @@ export class Maps$EntryFunction extends Enum<Maps$EntryFunction> implements Func
     static VALUE: Maps$EntryFunction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Maps$EntryFunction;
-    static values(): (Object | null)[];
+    static values(): Maps$EntryFunction[];
     constructor(arg2: Maps$1)
     name(): "KEY" | "VALUE";
 }

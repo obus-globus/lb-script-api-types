@@ -5,7 +5,7 @@ export class FileVisitOption extends Enum<FileVisitOption> {
     static FOLLOW_LINKS: FileVisitOption;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FileVisitOption;
-    static values(): (Object | null)[];
+    static values(): FileVisitOption[];
     private constructor()
     name(): "FOLLOW_LINKS";
 }

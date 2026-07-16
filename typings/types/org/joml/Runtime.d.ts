@@ -7,7 +7,6 @@ export class Runtime extends Object {
     static HAS_floatToRawIntBits: boolean;
     static doubleToLongBits(paramarg0: number): number;
     static equals(paramarg0: number, paramarg1: number, paramarg2: number): boolean;
-    static equals(paramarg0: number, paramarg1: number, paramarg2: number): boolean;
     static floatToIntBits(paramarg0: number): number;
     static format(paramarg0: number, paramarg1: NumberFormat): string;
     static formatNumbers(paramarg0: string): string;

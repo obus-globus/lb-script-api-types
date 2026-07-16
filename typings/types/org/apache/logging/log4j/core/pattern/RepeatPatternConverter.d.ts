@@ -5,7 +5,7 @@ import type { Configuration } from '../../../../../../org/apache/logging/log4j/c
 import type { LogEventPatternConverter } from '../../../../../../org/apache/logging/log4j/core/pattern/LogEventPatternConverter.d.ts'
 export class RepeatPatternConverter extends LogEventPatternConverter {
     static CATEGORY: string;
-    static newInstance(paramconfig: Configuration, paramoptions: (Object | null)[]): RepeatPatternConverter;
+    static newInstance(paramconfig: Configuration, paramoptions: string[]): RepeatPatternConverter;
     private constructor(result: string)
     // private result: string;
     // private format(toAppendTo: StringBuilder): void;

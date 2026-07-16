@@ -6,7 +6,7 @@ export class Graphs$NodeVisitState extends Enum<Graphs$NodeVisitState> {
     static PENDING: Graphs$NodeVisitState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Graphs$NodeVisitState;
-    static values(): (Object | null)[];
+    static values(): Graphs$NodeVisitState[];
     private constructor()
     name(): "PENDING" | "COMPLETE";
 }

@@ -11,7 +11,7 @@ export class NumberFormatter$UnitWidth extends Enum<NumberFormatter$UnitWidth> {
     static VARIANT: NumberFormatter$UnitWidth;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): NumberFormatter$UnitWidth;
-    static values(): (Object | null)[];
+    static values(): NumberFormatter$UnitWidth[];
     private constructor()
     name(): "NARROW" | "SHORT" | "FULL_NAME" | "ISO_CODE" | "FORMAL" | "VARIANT" | "HIDDEN";
 }

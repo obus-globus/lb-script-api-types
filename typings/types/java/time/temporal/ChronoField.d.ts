@@ -41,7 +41,7 @@ export class ChronoField extends Enum<ChronoField> implements TemporalField {
     static YEAR_OF_ERA: ChronoField;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ChronoField;
-    static values(): (Object | null)[];
+    static values(): ChronoField[];
     private constructor(arg2: string, arg3: TemporalUnit, arg4: TemporalUnit, arg5: ValueRange)
     private constructor(arg2: string, arg3: TemporalUnit, arg4: TemporalUnit, arg5: ValueRange, arg6: string)
     readonly baseUnit: TemporalUnit;

@@ -33,7 +33,6 @@ export class VkDisplayModePropertiesKHR extends Struct<VkDisplayModePropertiesKH
     static ndisplayMode(paramarg0: number): number;
     static nparameters(paramarg0: number): VkDisplayModeParametersKHR;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     close(): void;

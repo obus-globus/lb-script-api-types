@@ -13,8 +13,8 @@ import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ObjectLiteralNode extends JavaScriptNode {
     static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
-    static create(paramcontext: JSContext, parammembers: (Object | null)[]): ObjectLiteralNode;
+    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
+    static create(paramcontext: JSContext, parammembers: ObjectLiteralNode$ObjectLiteralMemberNode[]): ObjectLiteralNode;
     static findBlockScopeNode(paramnode: Node): Node;
     static newAccessorMember(paramname: TruffleString, paramisStatic: boolean, paramenumerable: boolean, paramgetterNode: JavaScriptNode, paramsetterNode: JavaScriptNode): ObjectLiteralNode$ObjectLiteralMemberNode;
     static newAccessorMember(paramname: Object, paramisStatic: boolean, paramattributes: number, paramgetterNode: JavaScriptNode, paramsetterNode: JavaScriptNode): ObjectLiteralNode$ObjectLiteralMemberNode;
@@ -32,7 +32,6 @@ export class ObjectLiteralNode extends JavaScriptNode {
     static newProtoMember(paramname: TruffleString, paramisStatic: boolean, paramvalueNode: JavaScriptNode): ObjectLiteralNode$ObjectLiteralMemberNode;
     static newSpreadObjectMember(paramisStatic: boolean, paramvalueNode: JavaScriptNode): ObjectLiteralNode$ObjectLiteralMemberNode;
     static newStaticBlockMember(paramvalueNode: JavaScriptNode): ObjectLiteralNode$ObjectLiteralMemberNode;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;

@@ -9,7 +9,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ShadowRealmPrototypeBuiltinsFactory$GetWrappedValueNodeGen extends ShadowRealmPrototypeBuiltins$GetWrappedValueNode {
     static create(): ShadowRealmPrototypeBuiltins$GetWrappedValueNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private isCallable: IsCallableNode;
     // private isObject: IsObjectNode;

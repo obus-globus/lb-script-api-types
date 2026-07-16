@@ -12,7 +12,7 @@ export class PacketViolationSeverity extends Enum<PacketViolationSeverity> {
     static getByValue(paramarg0: number, paramarg1: PacketViolationSeverity): PacketViolationSeverity;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PacketViolationSeverity;
-    static values(): (Object | null)[];
+    static values(): PacketViolationSeverity[];
     private constructor(arg2: number)
     private constructor(arg2: PacketViolationSeverity)
     readonly value: number;

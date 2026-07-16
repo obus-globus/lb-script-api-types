@@ -11,7 +11,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class GetIteratorDirectNodeGen$Inlined extends GetIteratorDirectNode implements UnadoptableNode {
     static create(): GetIteratorDirectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(target: InlineSupport$InlineTarget)
     // private get1_interop_: InlineSupport$ReferenceField<InteropLibrary>;
     // private getNextMethodNode: InlineSupport$ReferenceField<PropertyGetNode>;

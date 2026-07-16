@@ -5,7 +5,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSToIndexNodeGen extends JSToIndexNode {
     static create(): JSToIndexNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private object_cache: JSToIndexNodeGen$ObjectData;
     // private state_0_: number;

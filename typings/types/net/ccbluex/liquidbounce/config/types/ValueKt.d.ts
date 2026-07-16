@@ -6,5 +6,5 @@ export class ValueKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt#L57 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt:57}
      */
-    static VALUE_NAME_ORDER: (param0: Object) => boolean;
+    static VALUE_NAME_ORDER: (param0: Object, param1: Object) => number;
 }

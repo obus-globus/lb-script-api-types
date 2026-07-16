@@ -168,7 +168,7 @@ export class ModelTemplates extends Object {
     static STAIRS_INNER: ModelTemplate;
     static STAIRS_OUTER: ModelTemplate;
     static STAIRS_STRAIGHT: ModelTemplate;
-    static STEMS: (Object | null)[];
+    static STEMS: ModelTemplate[];
     static THREE_CANDLES: ModelTemplate;
     static THREE_LAYERED_ITEM: ModelTemplate;
     static THREE_TURTLE_EGGS: ModelTemplate;

@@ -8,16 +8,16 @@ import type { Locale } from '../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class LocaleDisplayNames extends Object {
     static getInstance(paramarg0: ULocale): LocaleDisplayNames;
-    static getInstance(paramarg0: ULocale, ...paramarg1: (Object | null)[]): LocaleDisplayNames;
+    static getInstance(paramarg0: ULocale, ...paramarg1: DisplayContext[]): LocaleDisplayNames;
     static getInstance(paramarg0: ULocale, paramarg1: LocaleDisplayNames$DialectHandling): LocaleDisplayNames;
     static getInstance(paramarg0: Locale): LocaleDisplayNames;
-    static getInstance(paramarg0: Locale, ...paramarg1: (Object | null)[]): LocaleDisplayNames;
+    static getInstance(paramarg0: Locale, ...paramarg1: DisplayContext[]): LocaleDisplayNames;
     constructor()
     getContext(arg0: DisplayContext$Type): DisplayContext;
     getDialectHandling(): LocaleDisplayNames$DialectHandling;
     getLocale(): ULocale;
-    getUiList(arg0: ULocale[], arg1: boolean, arg2: (param0: Object) => boolean): LocaleDisplayNames$UiListItem[];
-    getUiListCompareWholeItems(arg0: ULocale[], arg1: (param0: Object) => boolean): LocaleDisplayNames$UiListItem[];
+    getUiList(arg0: ULocale[], arg1: boolean, arg2: (param0: Object, param1: Object) => number): LocaleDisplayNames$UiListItem[];
+    getUiListCompareWholeItems(arg0: ULocale[], arg1: (param0: LocaleDisplayNames$UiListItem, param1: LocaleDisplayNames$UiListItem) => number): LocaleDisplayNames$UiListItem[];
     keyDisplayName(arg0: string): string;
     keyValueDisplayName(arg0: string, arg1: string): string;
     languageDisplayName(arg0: string): string;

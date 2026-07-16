@@ -6,7 +6,7 @@ export class ClientboundSetPlayerTeamPacket$Action extends Enum<ClientboundSetPl
     static REMOVE: ClientboundSetPlayerTeamPacket$Action;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ClientboundSetPlayerTeamPacket$Action;
-    static values(): (Object | null)[];
+    static values(): ClientboundSetPlayerTeamPacket$Action[];
     private constructor()
     name(): "ADD" | "REMOVE";
 }

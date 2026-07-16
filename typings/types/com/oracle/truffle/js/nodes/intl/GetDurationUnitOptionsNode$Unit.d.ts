@@ -15,7 +15,7 @@ export class GetDurationUnitOptionsNode$Unit extends Enum<GetDurationUnitOptions
     static YEARS: GetDurationUnitOptionsNode$Unit;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): GetDurationUnitOptionsNode$Unit;
-    static values(): (Object | null)[];
+    static values(): GetDurationUnitOptionsNode$Unit[];
     private constructor(styleKey: TruffleString, displayKey: TruffleString)
     // private displayKey: TruffleString;
     // private styleKey: TruffleString;

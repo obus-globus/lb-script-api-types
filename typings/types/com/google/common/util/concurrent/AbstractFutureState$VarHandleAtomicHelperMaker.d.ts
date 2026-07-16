@@ -6,7 +6,7 @@ export class AbstractFutureState$VarHandleAtomicHelperMaker extends Enum<Abstrac
     static INSTANCE: AbstractFutureState$VarHandleAtomicHelperMaker;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): AbstractFutureState$VarHandleAtomicHelperMaker;
-    static values(): (Object | null)[];
+    static values(): AbstractFutureState$VarHandleAtomicHelperMaker[];
     constructor(arg2: any)
     tryMakeVarHandleAtomicHelper(): AbstractFutureState$AtomicHelper;
     name(): "INSTANCE";

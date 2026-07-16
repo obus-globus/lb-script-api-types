@@ -7,7 +7,7 @@ export class IdleState extends Enum<IdleState> {
     static WRITER_IDLE: IdleState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): IdleState;
-    static values(): (Object | null)[];
+    static values(): IdleState[];
     private constructor()
     name(): "READER_IDLE" | "WRITER_IDLE" | "ALL_IDLE";
 }

@@ -7,7 +7,7 @@ export class CameraType extends Enum<CameraType> {
     static THIRD_PERSON_FRONT: CameraType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CameraType;
-    static values(): (Object | null)[];
+    static values(): CameraType[];
     private constructor(firstPerson: boolean, mirrored: boolean)
     readonly firstPerson: boolean;
     readonly mirrored: boolean;

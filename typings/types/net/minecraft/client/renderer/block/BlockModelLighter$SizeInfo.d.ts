@@ -17,7 +17,7 @@ export class BlockModelLighter$SizeInfo extends Enum<BlockModelLighter$SizeInfo>
     static WEST: BlockModelLighter$SizeInfo;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): BlockModelLighter$SizeInfo;
-    static values(): (Object | null)[];
+    static values(): BlockModelLighter$SizeInfo[];
     private constructor(index: number)
     // private index: number;
     name(): "DOWN" | "UP" | "NORTH" | "SOUTH" | "WEST" | "EAST" | "FLIP_DOWN" | "FLIP_UP" | "FLIP_NORTH" | "FLIP_SOUTH" | "FLIP_WEST" | "FLIP_EAST";

@@ -8,7 +8,7 @@ export class AclEntryFlag extends Enum<AclEntryFlag> {
     static NO_PROPAGATE_INHERIT: AclEntryFlag;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AclEntryFlag;
-    static values(): (Object | null)[];
+    static values(): AclEntryFlag[];
     private constructor()
     name(): "FILE_INHERIT" | "DIRECTORY_INHERIT" | "NO_PROPAGATE_INHERIT" | "INHERIT_ONLY";
 }

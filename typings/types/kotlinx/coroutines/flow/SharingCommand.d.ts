@@ -8,7 +8,7 @@ export class SharingCommand extends Enum<SharingCommand> {
     static getEntries(): SharingCommand[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SharingCommand;
-    static values(): (Object | null)[];
+    static values(): SharingCommand[];
     private constructor()
     name(): "START" | "STOP" | "STOP_AND_RESET_REPLAY_CACHE";
 }

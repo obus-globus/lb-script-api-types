@@ -7,7 +7,7 @@ export class Processor$Arch extends Enum<Processor$Arch> {
     static UNKNOWN: Processor$Arch;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Processor$Arch;
-    static values(): (Object | null)[];
+    static values(): Processor$Arch[];
     private constructor(arg2: string)
     readonly label: string;
     getLabel(): string;

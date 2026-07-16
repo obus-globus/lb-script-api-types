@@ -4,7 +4,7 @@ import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/L
 import type { LogEventPatternConverter } from '../../../../../../org/apache/logging/log4j/core/pattern/LogEventPatternConverter.d.ts'
 export class ThreadPriorityPatternConverter extends LogEventPatternConverter {
     static CATEGORY: string;
-    static newInstance(paramoptions: (Object | null)[]): ThreadPriorityPatternConverter;
+    static newInstance(paramoptions: string[]): ThreadPriorityPatternConverter;
     private constructor()
     format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, toAppendTo: StringBuilder): void;

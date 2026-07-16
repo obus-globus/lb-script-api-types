@@ -40,7 +40,7 @@ export class AttributeLayout extends Object implements IMatcher {
     static CONTEXT_CODE: number;
     static CONTEXT_FIELD: number;
     static CONTEXT_METHOD: number;
-    static contextNames: (Object | null)[];
+    static contextNames: string[];
     constructor(arg0: string, arg1: number, arg2: string, arg3: number)
     constructor(arg0: string, arg1: number, arg2: string, arg3: number, arg4: boolean)
     readonly backwardsCallCount: number;

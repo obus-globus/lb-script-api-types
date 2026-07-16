@@ -8,7 +8,6 @@ export abstract class ArrayLengthNode$SetArrayLengthNode extends ArrayLengthNode
     static create(paramstrict: boolean): ArrayLengthNode$ArrayLengthWriteNode;
     static createSetOrDelete(paramstrict: boolean): ArrayLengthNode$ArrayLengthWriteNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(strict: boolean)
     // private strict: boolean;
     doCached(arrayObj: JSArrayObject, length: number, node: Node, arrayType: ScriptArray, setLengthProfile: ScriptArray$SetLengthProfileAccess): void;

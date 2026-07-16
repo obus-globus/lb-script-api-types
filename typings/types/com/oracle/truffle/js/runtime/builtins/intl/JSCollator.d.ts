@@ -27,7 +27,7 @@ export class JSCollator extends JSNonProxy implements JSConstructorFactory$WithF
     static create(paramcontext: JSContext, paramrealm: JSRealm, paramproto: JSDynamicObject): JSCollatorObject;
     static createConstructor(paramrealm: JSRealm): JSConstructor;
     static filterOwnPropertyKeys(paramownPropertyKeys: Object[], paramstrings: boolean, paramsymbols: boolean): Object[];
-    static initializeCollator(paramctx: JSContext, paramstate: JSCollator$InternalState, paramlocales: (Object | null)[], paramusage: string, paramlocaleMatcher: string, paramoptco: string, paramoptkn: boolean, paramoptkf: string, paramsensitivity: string, paramignorePunctuation: boolean): void;
+    static initializeCollator(paramctx: JSContext, paramstate: JSCollator$InternalState, paramlocales: string[], paramusage: string, paramlocaleMatcher: string, paramoptco: string, paramoptkn: boolean, paramoptkf: string, paramsensitivity: string, paramignorePunctuation: boolean): void;
     static isInstance(paramobject: JSDynamicObject, paramjsclass: JSClass): boolean;
     static isInstance(paramobject: Object, paramjsclass: JSClass): boolean;
     static isJSCollator(paramobj: Object): boolean;

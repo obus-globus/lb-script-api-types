@@ -10,7 +10,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class InitializeRelativeTimeFormatNode extends JavaScriptBaseNode {
     static createInitalizeRelativeTimeFormatNode(paramcontext: JSContext): InitializeRelativeTimeFormatNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private coerceOptionsToObjectNode: CoerceOptionsToObjectNode;
     // private context: JSContext;

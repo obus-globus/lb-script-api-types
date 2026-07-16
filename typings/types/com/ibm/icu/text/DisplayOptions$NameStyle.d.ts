@@ -8,7 +8,7 @@ export class DisplayOptions$NameStyle extends Enum<DisplayOptions$NameStyle> {
     static VALUES: DisplayOptions$NameStyle[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DisplayOptions$NameStyle;
-    static values(): (Object | null)[];
+    static values(): DisplayOptions$NameStyle[];
     private constructor()
     name(): "UNDEFINED" | "STANDARD_NAMES" | "DIALECT_NAMES";
 }

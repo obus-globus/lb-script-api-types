@@ -11,7 +11,7 @@ export class ClientboundDebugRendererPacketPayload_PayloadType extends Enum<Clie
     static getByValue(paramarg0: number, paramarg1: ClientboundDebugRendererPacketPayload_PayloadType): ClientboundDebugRendererPacketPayload_PayloadType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClientboundDebugRendererPacketPayload_PayloadType;
-    static values(): (Object | null)[];
+    static values(): ClientboundDebugRendererPacketPayload_PayloadType[];
     private constructor(arg2: number)
     private constructor(arg2: ClientboundDebugRendererPacketPayload_PayloadType)
     readonly value: number;

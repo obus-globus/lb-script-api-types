@@ -7,7 +7,6 @@ import type { RakChannel } from '../../../../../../../org/cloudburstmc/netty/cha
 import type { RakClientOnlineInitialHandler } from '../../../../../../../org/cloudburstmc/netty/handler/codec/raknet/client/RakClientOnlineInitialHandler.d.ts'
 export class RakClientOnlineInitialHandlerCompatible extends RakClientOnlineInitialHandler {
     static NAME: string;
-    static NAME: string;
     constructor(arg0: RakChannel, arg1: ChannelPromise, arg2: Promise<Object>)
     // private packetPromise: Promise<Object>;
     // private pingTime: number;

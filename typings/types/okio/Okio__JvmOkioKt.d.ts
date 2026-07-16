@@ -3,6 +3,7 @@ import type { InputStream } from '../java/io/InputStream.d.ts'
 import type { OutputStream } from '../java/io/OutputStream.d.ts'
 import type { ClassLoader } from '../java/lang/ClassLoader.d.ts'
 import type { Socket } from '../java/net/Socket.d.ts'
+import type { OpenOption } from '../java/nio/file/OpenOption.d.ts'
 import type { Path } from '../java/nio/file/Path.d.ts'
 import type { MessageDigest } from '../java/security/MessageDigest.d.ts'
 import type { Cipher } from '../javax/crypto/Cipher.d.ts'
@@ -25,15 +26,15 @@ export class Okio__JvmOkioKt extends Object {
     static hashingSink(paramarg0: Sink, paramarg1: Mac): HashingSink;
     static hashingSource(paramarg0: Source, paramarg1: MessageDigest): HashingSource;
     static hashingSource(paramarg0: Source, paramarg1: Mac): HashingSource;
-    static inMemorySocketPair(paramarg0: number): (Object | null)[];
+    static inMemorySocketPair(paramarg0: number): Socket_2[];
     static sink(paramarg0: File): Sink;
     static sink(paramarg0: File, paramarg1: boolean): Sink;
     static sink(paramarg0: OutputStream): Sink;
     static sink(paramarg0: Socket): Sink;
-    static sink(paramarg0: Path, ...paramarg1: (Object | null)[]): Sink;
+    static sink(paramarg0: Path, ...paramarg1: OpenOption[]): Sink;
     static socket(paramarg0: Socket): Socket_2;
     static source(paramarg0: File): Source;
     static source(paramarg0: InputStream): Source;
     static source(paramarg0: Socket): Source;
-    static source(paramarg0: Path, ...paramarg1: (Object | null)[]): Source;
+    static source(paramarg0: Path, ...paramarg1: OpenOption[]): Source;
 }

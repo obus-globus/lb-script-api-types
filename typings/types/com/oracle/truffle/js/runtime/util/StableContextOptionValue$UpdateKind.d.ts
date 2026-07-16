@@ -7,7 +7,7 @@ export class StableContextOptionValue$UpdateKind extends Enum<StableContextOptio
     static UPDATE: StableContextOptionValue$UpdateKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): StableContextOptionValue$UpdateKind;
-    static values(): (Object | null)[];
+    static values(): StableContextOptionValue$UpdateKind[];
     private constructor()
     name(): "INITIALIZE" | "UPDATE" | "PATCH";
 }

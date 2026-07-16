@@ -20,7 +20,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../../../java/lang/Cloneable.d.ts'
 export class MessageFormat extends UFormat implements Cloneable {
     static autoQuoteApostrophe(paramarg0: string): string;
-    static format(paramarg0: string, ...paramarg1: (Object | null)[]): string;
+    static format(paramarg0: string, ...paramarg1: Object[]): string;
     static format(paramarg0: string, paramarg1: { [key: string]: Object }): string;
     constructor(arg0: string)
     constructor(arg0: string, arg1: ULocale)

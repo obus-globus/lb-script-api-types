@@ -1,10 +1,8 @@
-import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { OptionalInt } from '../../../../../../../java/util/OptionalInt.d.ts'
 import type { FeatureSize } from '../../../../../../../net/minecraft/world/level/levelgen/feature/featuresize/FeatureSize.d.ts'
 import type { FeatureSizeType } from '../../../../../../../net/minecraft/world/level/levelgen/feature/featuresize/FeatureSizeType.d.ts'
 export class TwoLayersFeatureSize extends FeatureSize {
-    static CODEC: Codec<FeatureSize>;
     static CODEC: MapCodec<TwoLayersFeatureSize>;
     constructor(limit: number, lowerSize: number, upperSize: number)
     constructor(limit: number, lowerSize: number, upperSize: number, minClippedHeight: OptionalInt)

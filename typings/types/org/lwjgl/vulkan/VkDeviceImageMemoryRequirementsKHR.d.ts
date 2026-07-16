@@ -23,28 +23,21 @@ export class VkDeviceImageMemoryRequirementsKHR extends VkDeviceImageMemoryRequi
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkDeviceImageMemoryRequirementsKHR;
     static calloc(paramarg0: MemoryStack): VkDeviceImageMemoryRequirementsKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkDeviceImageMemoryRequirements;
     static create(paramarg0: number): VkDeviceImageMemoryRequirements;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkDeviceImageMemoryRequirementsKHR;
     static create(paramarg0: number): VkDeviceImageMemoryRequirementsKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkDeviceImageMemoryRequirements;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkDeviceImageMemoryRequirementsKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkDeviceImageMemoryRequirements;
     static malloc(paramarg0: MemoryStack): VkDeviceImageMemoryRequirements;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkDeviceImageMemoryRequirementsKHR;
     static malloc(paramarg0: MemoryStack): VkDeviceImageMemoryRequirementsKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npCreateInfo(paramarg0: number): VkImageCreateInfo;
     static npCreateInfo(paramarg0: number, paramarg1: VkImageCreateInfo): void;
     static npNext(paramarg0: number): number;
@@ -53,7 +46,6 @@ export class VkDeviceImageMemoryRequirementsKHR extends VkDeviceImageMemoryRequi
     static nplaneAspect(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

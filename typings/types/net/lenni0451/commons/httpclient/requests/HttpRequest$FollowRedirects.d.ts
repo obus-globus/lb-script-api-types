@@ -7,7 +7,7 @@ export class HttpRequest$FollowRedirects extends Enum<HttpRequest$FollowRedirect
     static NOT_SET: HttpRequest$FollowRedirects;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HttpRequest$FollowRedirects;
-    static values(): (Object | null)[];
+    static values(): HttpRequest$FollowRedirects[];
     private constructor()
     name(): "NOT_SET" | "FOLLOW" | "IGNORE";
 }

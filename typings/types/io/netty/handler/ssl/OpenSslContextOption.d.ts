@@ -7,7 +7,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class OpenSslContextOption<T extends unknown> extends SslContextOption<T> {
     static ASYNC_PRIVATE_KEY_METHOD: OpenSslContextOption<OpenSslAsyncPrivateKeyMethod>;
     static CERTIFICATE_COMPRESSION_ALGORITHMS: OpenSslContextOption<OpenSslCertificateCompressionConfig$AlgorithmConfig[]>;
-    static GROUPS: OpenSslContextOption<(Object | null)[]>;
+    static GROUPS: OpenSslContextOption<string[]>;
     static MAX_CERTIFICATE_LIST_BYTES: OpenSslContextOption<number>;
     static PRIVATE_KEY_METHOD: OpenSslContextOption<OpenSslPrivateKeyMethod>;
     static TLS_FALSE_START: OpenSslContextOption<boolean>;

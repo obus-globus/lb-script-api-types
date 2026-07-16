@@ -6,7 +6,7 @@ import type { Signature } from '../../../../sun/reflect/generics/tree/Signature.
 import type { TypeSignature } from '../../../../sun/reflect/generics/tree/TypeSignature.d.ts'
 import type { Visitor } from '../../../../sun/reflect/generics/visitor/Visitor.d.ts'
 export class MethodTypeSignature extends Object implements Signature {
-    static make(paramarg0: (Object | null)[], paramarg1: (Object | null)[], paramarg2: ReturnType, paramarg3: (Object | null)[]): MethodTypeSignature;
+    static make(paramarg0: FormalTypeParameter[], paramarg1: TypeSignature[], paramarg2: ReturnType, paramarg3: FieldTypeSignature[]): MethodTypeSignature;
     private constructor(arg0: FormalTypeParameter[], arg1: TypeSignature[], arg2: ReturnType, arg3: FieldTypeSignature[])
     readonly exceptionTypes: FieldTypeSignature[];
     // private formalTypeParams: FormalTypeParameter[];

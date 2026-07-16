@@ -5,7 +5,6 @@ import type { JSFunctionCallNode } from '../../../../../../com/oracle/truffle/js
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class InitializeInstanceElementsNode$InitializeFieldOrAccessorNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(writeNode: Node, callNode: JSFunctionCallNode, isAnonymousFunctionDefinition: boolean)
     // private callInitializersNode: JSFunctionCallNode;
     // private callNode: JSFunctionCallNode;

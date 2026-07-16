@@ -16,8 +16,8 @@ export class LogCategory extends Object {
     static RESOLUTION: LogCategory;
     static SEPARATOR: string;
     static TEST: LogCategory;
-    static create(...paramarg0: (Object | null)[]): LogCategory;
-    static createCustom(paramarg0: string, ...paramarg1: (Object | null)[]): LogCategory;
+    static create(...paramarg0: string[]): LogCategory;
+    static createCustom(paramarg0: string, ...paramarg1: string[]): LogCategory;
     private constructor(arg0: string, arg1: string[])
     context: string;
     data: Object;

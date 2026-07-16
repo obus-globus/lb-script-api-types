@@ -12,7 +12,7 @@ export class PersonName$NameField extends Enum<PersonName$NameField> {
     static forString(paramname: string): PersonName$NameField;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PersonName$NameField;
-    static values(): (Object | null)[];
+    static values(): PersonName$NameField[];
     private constructor(name: string)
     // private name: string;
     toString(): string;

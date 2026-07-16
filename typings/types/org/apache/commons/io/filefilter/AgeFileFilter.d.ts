@@ -5,10 +5,9 @@ import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { BasicFileAttributes } from '../../../../../java/nio/file/attribute/BasicFileAttributes.d.ts'
 import type { Instant } from '../../../../../java/time/Instant.d.ts'
 import type { Date } from '../../../../../java/util/Date.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { AbstractFileFilter } from '../../../../../org/apache/commons/io/filefilter/AbstractFileFilter.d.ts'
 export class AgeFileFilter extends AbstractFileFilter implements Serializable {
-    static EMPTY_STRING_ARRAY: (Object | null)[];
+    static EMPTY_STRING_ARRAY: string[];
     constructor(arg0: File)
     constructor(arg0: File, arg1: boolean)
     constructor(arg0: Instant)

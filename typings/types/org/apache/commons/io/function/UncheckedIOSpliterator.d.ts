@@ -17,7 +17,7 @@ export class UncheckedIOSpliterator<T extends unknown> extends Object implements
     characteristics(): number;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: T) => void): void;
-    getComparator(): (param0: Object) => boolean;
+    getComparator(): (param0: T, param1: T) => number;
     getExactSizeIfKnown(): number;
     hasCharacteristics(arg0: number): boolean;
     tryAdvance(arg0: (param0: T) => void): boolean;

@@ -4,7 +4,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ToWebAssemblyIndexOrSizeNodeGen extends ToWebAssemblyIndexOrSizeNode {
     static create(paramerrorMessagePrefix: string): ToWebAssemblyIndexOrSizeNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(errorMessagePrefix: string)
     // private state_0_: number;
     // private executeAndSpecialize(arg0Value: Object): number;

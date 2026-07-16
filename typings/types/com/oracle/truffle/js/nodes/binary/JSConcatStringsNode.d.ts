@@ -7,7 +7,6 @@ export abstract class JSConcatStringsNode extends JavaScriptBaseNode {
     static create(): JSConcatStringsNode;
     static create(paramstringLengthLimit: number): JSConcatStringsNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(stringLengthLimit: number)
     // private stringLengthLimit: number;
     doConcat(left: TruffleString, right: TruffleString, errorBranch: InlinedBranchProfile, concatNode: TruffleString$ConcatNode): TruffleString;

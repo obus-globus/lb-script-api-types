@@ -7,7 +7,7 @@ export class CloneCommands$Mode extends Enum<CloneCommands$Mode> {
     static NORMAL: CloneCommands$Mode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CloneCommands$Mode;
-    static values(): (Object | null)[];
+    static values(): CloneCommands$Mode[];
     private constructor(canOverlap: boolean)
     // private canOverlap: boolean;
     canOverlap(): boolean;

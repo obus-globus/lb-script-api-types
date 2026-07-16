@@ -7,7 +7,7 @@ export class InternalResource$CPUArchitecture extends Enum<InternalResource$CPUA
     static getCurrent(): InternalResource$CPUArchitecture;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): InternalResource$CPUArchitecture;
-    static values(): (Object | null)[];
+    static values(): InternalResource$CPUArchitecture[];
     private constructor(id: string)
     // private id: string;
     toString(): string;

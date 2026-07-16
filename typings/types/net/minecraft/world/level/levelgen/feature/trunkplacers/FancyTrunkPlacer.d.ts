@@ -1,4 +1,3 @@
-import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { BiConsumer } from '../../../../../../../java/util/function/BiConsumer.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
@@ -12,7 +11,6 @@ import type { FancyTrunkPlacer$FoliageCoords } from '../../../../../../../net/mi
 import type { TrunkPlacer } from '../../../../../../../net/minecraft/world/level/levelgen/feature/trunkplacers/TrunkPlacer.d.ts'
 import type { TrunkPlacerType } from '../../../../../../../net/minecraft/world/level/levelgen/feature/trunkplacers/TrunkPlacerType.d.ts'
 export class FancyTrunkPlacer extends TrunkPlacer {
-    static CODEC: Codec<TrunkPlacer>;
     static CODEC: MapCodec<FancyTrunkPlacer>;
     static MAX_HEIGHT: number;
     constructor(baseHeight: number, heightRandA: number, heightRandB: number)

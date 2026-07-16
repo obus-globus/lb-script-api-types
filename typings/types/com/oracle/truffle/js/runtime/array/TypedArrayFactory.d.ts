@@ -22,7 +22,7 @@ export class TypedArrayFactory extends Enum<TypedArrayFactory> implements Protot
     static Uint8ClampedArray: TypedArrayFactory;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TypedArrayFactory;
-    static values(): (Object | null)[];
+    static values(): TypedArrayFactory[];
     private constructor(bytesPerElement: number)
     // private arrayType: TypedArray;
     // private arrayTypeAutoLength: TypedArray;

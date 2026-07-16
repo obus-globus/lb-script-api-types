@@ -11,7 +11,7 @@ export class TextAlignment extends Enum<TextAlignment> {
     static RIGHT: TextAlignment;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TextAlignment;
-    static values(): (Object | null)[];
+    static values(): TextAlignment[];
     private constructor()
     calculateLeft(anchor: number, width: number): number;
     calculateLeft(anchor: number, font: Font, text: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean): number;

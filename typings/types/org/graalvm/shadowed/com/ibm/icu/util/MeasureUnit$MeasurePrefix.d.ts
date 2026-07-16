@@ -37,7 +37,7 @@ export class MeasureUnit$MeasurePrefix extends Enum<MeasureUnit$MeasurePrefix> {
     static ZETTA: MeasureUnit$MeasurePrefix;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): MeasureUnit$MeasurePrefix;
-    static values(): (Object | null)[];
+    static values(): MeasureUnit$MeasurePrefix[];
     private constructor(power: number, identifier: string, base: number)
     readonly base: number;
     readonly identifier: string;

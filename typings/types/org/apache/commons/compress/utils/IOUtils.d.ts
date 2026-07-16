@@ -4,9 +4,10 @@ import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../../../java/io/OutputStream.d.ts'
 import type { ByteBuffer } from '../../../../../java/nio/ByteBuffer.d.ts'
 import type { ReadableByteChannel } from '../../../../../java/nio/channels/ReadableByteChannel.d.ts'
+import type { LinkOption } from '../../../../../java/nio/file/LinkOption.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class IOUtils extends Object {
-    static EMPTY_LINK_OPTIONS: (Object | null)[];
+    static EMPTY_LINK_OPTIONS: LinkOption[];
     static closeQuietly(paramarg0: Closeable): void;
     static copy(paramarg0: InputStream, paramarg1: OutputStream): number;
     static copy(paramarg0: InputStream, paramarg1: OutputStream, paramarg2: number): number;

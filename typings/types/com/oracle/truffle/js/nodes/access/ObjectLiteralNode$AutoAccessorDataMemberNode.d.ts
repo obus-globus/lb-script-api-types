@@ -14,9 +14,8 @@ import type { JSObject } from '../../../../../../com/oracle/truffle/js/runtime/o
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ObjectLiteralNode$AutoAccessorDataMemberNode extends ObjectLiteralNode$ObjectLiteralDataMemberNode {
-    static EMPTY: (Object | null)[];
-    static cloneUninitialized(parammembers: (Object | null)[], parammaterializedTags: Class<Tag>[]): (Object | null)[];
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    static EMPTY: ObjectLiteralNode$ObjectLiteralMemberNode[];
+    static cloneUninitialized(parammembers: ObjectLiteralNode$ObjectLiteralMemberNode[], parammaterializedTags: Class<Tag>[]): ObjectLiteralNode$ObjectLiteralMemberNode[];
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(name: Object, isStatic: boolean, attributes: number, valueNode: JavaScriptNode)
     // private backingStorageMagicSetNode: PropertySetNode;

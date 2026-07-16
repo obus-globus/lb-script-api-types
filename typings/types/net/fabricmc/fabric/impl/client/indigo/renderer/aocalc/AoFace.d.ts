@@ -12,7 +12,7 @@ export class AoFace extends Enum<AoFace> {
     static WEST: AoFace;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AoFace;
-    static values(): (Object | null)[];
+    static values(): AoFace[];
     private constructor(arg2: Direction[], arg3: number[])
     // private neighbors: Direction[];
     // private vertexMap: number[];

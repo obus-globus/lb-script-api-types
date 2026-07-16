@@ -6,7 +6,7 @@ export class ConsoleUtilitiesAPI$Method extends Enum<ConsoleUtilitiesAPI$Method>
     static UNDEBUG: ConsoleUtilitiesAPI$Method;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ConsoleUtilitiesAPI$Method;
-    static values(): (Object | null)[];
+    static values(): ConsoleUtilitiesAPI$Method[];
     private constructor(method: string)
     // private method: string;
     getMethod(): string;

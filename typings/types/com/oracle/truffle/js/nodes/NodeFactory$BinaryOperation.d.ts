@@ -32,7 +32,7 @@ export class NodeFactory$BinaryOperation extends Enum<NodeFactory$BinaryOperatio
     static SUBTRACT: NodeFactory$BinaryOperation;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): NodeFactory$BinaryOperation;
-    static values(): (Object | null)[];
+    static values(): NodeFactory$BinaryOperation[];
     private constructor()
     name(): "ADD" | "DIVIDE" | "MODULO" | "MULTIPLY" | "EXPONENTIATE" | "SUBTRACT" | "EQUAL" | "GREATER_OR_EQUAL" | "GREATER" | "IDENTICAL" | "LESS_OR_EQUAL" | "LESS" | "NOT_EQUAL" | "NOT_IDENTICAL" | "BITWISE_XOR" | "BITWISE_AND" | "BITWISE_OR" | "BITWISE_LEFT_SHIFT" | "BITWISE_RIGHT_SHIFT" | "BITWISE_UNSIGNED_RIGHT_SHIFT" | "LOGICAL_AND" | "LOGICAL_OR" | "INSTANCEOF" | "IN" | "DUAL" | "NULLISH_COALESCING" | "INCREMENT" | "DECREMENT";
 }

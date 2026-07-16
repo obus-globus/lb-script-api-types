@@ -10,7 +10,6 @@ import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/
 import type { JSTypedArrayObject } from '../../../../../../com/oracle/truffle/js/runtime/builtins/JSTypedArrayObject.d.ts'
 export class ArrayBufferViewGetByteLengthNodeGen$Inlined extends ArrayBufferViewGetByteLengthNode implements UnadoptableNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(target: InlineSupport$InlineTarget)
     // private getByteLengthCached_cache: InlineSupport$ReferenceField<ArrayBufferViewGetByteLengthNodeGen$GetByteLengthCachedData>;
     // private getByteLength_typedArrayLengthNode_: TypedArrayLengthNode;

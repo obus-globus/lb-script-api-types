@@ -8,7 +8,7 @@ export class WhenToOutput extends Enum<WhenToOutput> {
     static getEntries(): WhenToOutput[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): WhenToOutput;
-    static values(): (Object | null)[];
+    static values(): WhenToOutput[];
     private constructor()
     name(): "NEVER" | "IF_NONZERO" | "ALWAYS";
 }

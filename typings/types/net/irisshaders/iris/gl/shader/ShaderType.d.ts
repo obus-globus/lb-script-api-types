@@ -10,7 +10,7 @@ export class ShaderType extends Enum<ShaderType> {
     static VERTEX: ShaderType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ShaderType;
-    static values(): (Object | null)[];
+    static values(): ShaderType[];
     private constructor(arg2: number)
     id: number;
     name(): "VERTEX" | "GEOMETRY" | "FRAGMENT" | "COMPUTE" | "TESSELATION_CONTROL" | "TESSELATION_EVAL";

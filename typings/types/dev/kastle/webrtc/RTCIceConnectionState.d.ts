@@ -11,7 +11,7 @@ export class RTCIceConnectionState extends Enum<RTCIceConnectionState> {
     static NEW: RTCIceConnectionState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RTCIceConnectionState;
-    static values(): (Object | null)[];
+    static values(): RTCIceConnectionState[];
     private constructor()
     name(): "NEW" | "CHECKING" | "CONNECTED" | "COMPLETED" | "FAILED" | "DISCONNECTED" | "CLOSED";
 }

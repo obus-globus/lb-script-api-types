@@ -14,7 +14,6 @@ export class CreateObjectNodeFactory$CreateObjectWithPrototypeNodeGen extends Cr
     static createOrdinaryWithPrototype(paramcontext: JSContext): CreateObjectNode$CreateObjectWithPrototypeNode;
     static createWithPrototype(paramcontext: JSContext, paramjsclass: JSClass): CreateObjectNode$CreateObjectWithPrototypeNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, jsclass: JSClass)
     // private cachedPrototype_cache: CreateObjectNodeFactory$CreateObjectWithPrototypeNodeGen$CachedPrototypeData;
     // private setProtoNode: DynamicObjectLibrary;

@@ -6,7 +6,7 @@ import type { PatternFormatter } from '../../../../../../org/apache/logging/log4
 import type { PatternParser } from '../../../../../../org/apache/logging/log4j/core/pattern/PatternParser.d.ts'
 export class EqualsIgnoreCaseReplacementConverter extends EqualsBaseReplacementConverter {
     static CATEGORY: string;
-    static newInstance(paramconfig: Configuration, paramoptions: (Object | null)[]): EqualsIgnoreCaseReplacementConverter;
+    static newInstance(paramconfig: Configuration, paramoptions: string[]): EqualsIgnoreCaseReplacementConverter;
     private constructor(formatters: PatternFormatter[], testString: string, substitution: string, parser: PatternParser)
     equals(other: Object | null): boolean;
     equals(str: string, buff: StringBuilder, from: number, len: number): boolean;

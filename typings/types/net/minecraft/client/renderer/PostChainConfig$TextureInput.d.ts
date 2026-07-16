@@ -4,7 +4,6 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { PostChainConfig$Input } from '../../../../net/minecraft/client/renderer/PostChainConfig$Input.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
 export class PostChainConfig$TextureInput extends Record implements PostChainConfig$Input {
-    static CODEC: Codec<PostChainConfig$Input>;
     static CODEC: Codec<PostChainConfig$TextureInput>;
     constructor(samplerName: string, location: Identifier, width: number, height: number, bilinear: boolean)
     // private bilinear: boolean;

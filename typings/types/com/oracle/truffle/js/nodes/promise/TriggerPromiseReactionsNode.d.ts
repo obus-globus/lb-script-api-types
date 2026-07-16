@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class TriggerPromiseReactionsNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): TriggerPromiseReactionsNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private context: JSContext;
     // private promiseReactionJob: PromiseReactionJobNode;

@@ -11,7 +11,6 @@ export class JSToNumericNodeGen extends JSToNumericNode {
     static createToNumericOperand(paramchild: JavaScriptNode): JavaScriptNode;
     static createToNumericOperand(): JSToNumericNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(toNumericOperand: boolean)
     // private state_0_: number;
     // private toNumberNode: JSToNumberNode;

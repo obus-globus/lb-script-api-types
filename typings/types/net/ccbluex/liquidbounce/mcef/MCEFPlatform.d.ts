@@ -11,7 +11,7 @@ export class MCEFPlatform extends Enum<MCEFPlatform> {
     static getPlatform(): MCEFPlatform;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MCEFPlatform;
-    static values(): (Object | null)[];
+    static values(): MCEFPlatform[];
     private constructor()
     getNormalizedName(): string;
     isLinux(): boolean;

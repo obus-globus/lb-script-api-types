@@ -7,7 +7,7 @@ export class OptimizedRuntimeOptions$EngineModeEnum extends Enum<OptimizedRuntim
     static THROUGHPUT: OptimizedRuntimeOptions$EngineModeEnum;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): OptimizedRuntimeOptions$EngineModeEnum;
-    static values(): (Object | null)[];
+    static values(): OptimizedRuntimeOptions$EngineModeEnum[];
     private constructor()
     toString(): string;
     name(): "DEFAULT" | "LATENCY" | "THROUGHPUT";

@@ -12,7 +12,7 @@ export class SymbolFunctionBuiltins$SymbolFunction extends Enum<SymbolFunctionBu
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SymbolFunctionBuiltins$SymbolFunction;
-    static values(): (Object | null)[];
+    static values(): SymbolFunctionBuiltins$SymbolFunction[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

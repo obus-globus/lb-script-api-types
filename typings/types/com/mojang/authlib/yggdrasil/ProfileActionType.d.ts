@@ -6,7 +6,7 @@ export class ProfileActionType extends Enum<ProfileActionType> {
     static USING_BANNED_SKIN: ProfileActionType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ProfileActionType;
-    static values(): (Object | null)[];
+    static values(): ProfileActionType[];
     private constructor()
     name(): "FORCED_NAME_CHANGE" | "USING_BANNED_SKIN";
 }

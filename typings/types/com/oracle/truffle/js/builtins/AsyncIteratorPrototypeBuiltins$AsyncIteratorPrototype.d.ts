@@ -21,7 +21,7 @@ export class AsyncIteratorPrototypeBuiltins$AsyncIteratorPrototype extends Enum<
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): AsyncIteratorPrototypeBuiltins$AsyncIteratorPrototype;
-    static values(): (Object | null)[];
+    static values(): AsyncIteratorPrototypeBuiltins$AsyncIteratorPrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

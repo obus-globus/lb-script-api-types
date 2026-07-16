@@ -453,7 +453,6 @@ export class Strings extends Object {
     static builderAppend(paramsb: TruffleStringBuilderUTF16, paramstr: TruffleString, paramstart: number, paramend: number): void;
     static builderAppend(paramsb: TruffleStringBuilderUTF16, parami: number): void;
     static builderAppend(paramsb: TruffleStringBuilderUTF16, paramstr: string): void;
-    static builderAppend(paramsb: TruffleStringBuilderUTF16, parami: number): void;
     static builderAppendLen(paramnode: TruffleStringBuilder$AppendSubstringByteIndexNode, paramsb: TruffleStringBuilderUTF16, paramstr: TruffleString, paramstart: number, paramlen: number): void;
     static builderAppendLen(paramsb: TruffleStringBuilderUTF16, paramstr: TruffleString, paramstart: number, paramlen: number): void;
     static builderCreate(): TruffleStringBuilderUTF16;
@@ -469,16 +468,16 @@ export class Strings extends Object {
     static compareTo(parama: TruffleString, paramb: TruffleString): number;
     static concat(paramnode: TruffleString$ConcatNode, params1: TruffleString, params2: TruffleString): TruffleString;
     static concat(params1: TruffleString, params2: TruffleString): TruffleString;
-    static concatAll(params: TruffleString, ...paramconcat: (Object | null)[]): TruffleString;
+    static concatAll(params: TruffleString, ...paramconcat: TruffleString[]): TruffleString;
     static constant(params: string): TruffleString;
     static contains(params: TruffleString, paramc: string): boolean;
-    static convertJavaStringArray(paramarray: (Object | null)[]): (Object | null)[];
+    static convertJavaStringArray(paramarray: string[]): TruffleString[];
     static endsWith(paramregionEqualsNode: TruffleString$RegionEqualByteIndexNode, params1: TruffleString, params2: TruffleString): boolean;
     static endsWith(params1: TruffleString, params2: TruffleString): boolean;
     static equals(paramnode: TruffleString$EqualNode, params1: TruffleString, params2: TruffleString): boolean;
     static equals(params1: TruffleString, params2: TruffleString): boolean;
     static flatten(parammaterializeNode: TruffleString$MaterializeNode, paramvalue: TruffleString): TruffleString;
-    static format(paramformatString: string, ...paramargs: (Object | null)[]): TruffleString;
+    static format(paramformatString: string, ...paramargs: Object[]): TruffleString;
     static fromBigInt(parambi: BigInt): TruffleString;
     static fromBigInt(parambi: BigInt, paramradix: number): TruffleString;
     static fromBoolean(paramb: boolean): TruffleString;
@@ -490,7 +489,7 @@ export class Strings extends Object {
     static fromInt(paramintValue: number): TruffleString;
     static fromJavaString(paramnode: TruffleString$FromJavaStringNode, paramstr: string): TruffleString;
     static fromJavaString(paramstr: string): TruffleString;
-    static fromJavaStringArray(...paramstrings: (Object | null)[]): (Object | null)[];
+    static fromJavaStringArray(...paramstrings: string[]): TruffleString[];
     static fromLong(paramnode: TruffleString$FromLongNode, paramlongValue: number): TruffleString;
     static fromLong(paramlongValue: number): TruffleString;
     static fromNumber(paramnumber: Number): TruffleString;
@@ -534,7 +533,7 @@ export class Strings extends Object {
     static regionEquals(paramregionEqualsNode: TruffleString$RegionEqualByteIndexNode, params1: TruffleString, paramoffset1: number, params2: TruffleString, paramoffset2: number, paramlength: number): boolean;
     static regionEquals(params1: TruffleString, paramoffset1: number, params2: TruffleString, paramoffset2: number, paramlength: number): boolean;
     static replace(params: TruffleString, paramsearch: TruffleString, paramreplace: TruffleString): TruffleString;
-    static split(paramcontext: JSContext, paramstr: TruffleString, paramdelimiter: TruffleString): (Object | null)[];
+    static split(paramcontext: JSContext, paramstr: TruffleString, paramdelimiter: TruffleString): TruffleString[];
     static startsWith(paramregionEqualsNode: TruffleString$RegionEqualByteIndexNode, params1: TruffleString, params2: TruffleString): boolean;
     static startsWith(paramregionEqualsNode: TruffleString$RegionEqualByteIndexNode, params1: TruffleString, params2: TruffleString, paramstartPos: number): boolean;
     static startsWith(params1: TruffleString, params2: TruffleString): boolean;

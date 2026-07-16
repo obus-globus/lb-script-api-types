@@ -13,7 +13,7 @@ export class JSTags$ControlFlowRootTag$Type extends Enum<JSTags$ControlFlowRootT
     static WhileIteration: JSTags$ControlFlowRootTag$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): JSTags$ControlFlowRootTag$Type;
-    static values(): (Object | null)[];
+    static values(): JSTags$ControlFlowRootTag$Type[];
     private constructor()
     name(): "Conditional" | "ExceptionHandler" | "ForOfIteration" | "ForAwaitOfIteration" | "ForInIteration" | "ForIteration" | "DoWhileIteration" | "WhileIteration" | "AsyncFunction";
 }

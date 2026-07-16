@@ -16,7 +16,7 @@ export class TypedArray$ElementType extends Enum<TypedArray$ElementType> {
     static Uint8Clamped: TypedArray$ElementType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TypedArray$ElementType;
-    static values(): (Object | null)[];
+    static values(): TypedArray$ElementType[];
     private constructor()
     name(): "Int8" | "Uint8" | "Uint8Clamped" | "Int16" | "Uint16" | "Int32" | "Uint32" | "BigInt64" | "BigUint64" | "Float16" | "Float32" | "Float64";
 }

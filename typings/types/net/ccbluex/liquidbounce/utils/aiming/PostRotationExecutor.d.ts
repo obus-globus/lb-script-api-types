@@ -7,6 +7,7 @@ import type { PlayerNetworkMovementTickEvent } from '../../../../../net/ccbluex/
 import type { WorldChangeEvent } from '../../../../../net/ccbluex/liquidbounce/event/events/WorldChangeEvent.d.ts'
 import type { ClientModule } from '../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
 import type { PostRotationExecutor$ModuleAction } from '../../../../../net/ccbluex/liquidbounce/utils/aiming/PostRotationExecutor$ModuleAction.d.ts'
+import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 /**
  * Executes code right after the client sent the normal movement packet or at the start of the next tick.
  *
@@ -14,11 +15,13 @@ import type { PostRotationExecutor$ModuleAction } from '../../../../../net/ccblu
  */
 export class PostRotationExecutor extends Object implements EventListener {
     static INSTANCE: PostRotationExecutor;
+    readonly debugDisplayName: Component;
     // private networkMoveHandler: EventHook<PlayerNetworkMovementTickEvent>;
     // private normalTasks: PostRotationExecutor$ModuleAction[];
     // private postMoveTasks: PostRotationExecutor$ModuleAction[];
     // private priorityAction: PostRotationExecutor$ModuleAction | null;
     // private priorityActionPostMove: boolean;
+    readonly running: boolean;
     // private tickHandler: EventHook<GameTickEvent>;
     // private worldChangeHandler: EventHook<WorldChangeEvent>;
     addTask(module: ClientModule, postMove: boolean, priority: boolean, task: () => void): void;

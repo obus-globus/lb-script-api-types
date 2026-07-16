@@ -15,7 +15,7 @@ export class ScaffoldSprintControlFeature$SprintMode extends Enum<ScaffoldSprint
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ScaffoldSprintControlFeature$SprintMode;
-    static values(): (Object | null)[];
+    static values(): ScaffoldSprintControlFeature$SprintMode[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "DO_NOT_CHANGE" | "FORCE_SPRINT" | "FORCE_NO_SPRINT" | "NO_SPRINT_ON_PLACE" | "NO_SPRINT_ON_GROUND";

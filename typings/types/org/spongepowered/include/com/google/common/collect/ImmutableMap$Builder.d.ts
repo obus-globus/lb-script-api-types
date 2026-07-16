@@ -7,7 +7,7 @@ export class ImmutableMap$Builder<K extends unknown, V extends unknown> extends 
     // private entries: ImmutableMapEntry<K, V>[];
     // private entriesUsed: boolean;
     // private size: number;
-    // private valueComparator: (param0: Object) => boolean;
+    // private valueComparator: (param0: V, param1: V) => number;
     build(): Map<K, V>;
     // private ensureCapacity(arg0: number): void;
     put(arg0: K, arg1: V): ImmutableMap$Builder<K, V>;

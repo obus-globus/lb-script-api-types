@@ -5,7 +5,6 @@ import type { PropertyGetNode } from '../../../../../../com/oracle/truffle/js/no
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class IsPartialTemporalObjectNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(object: Object): boolean;
     isPartialTemporalObject(object: Object, isObjectNode: IsObjectNode, getCalendarNode: PropertyGetNode, getTimeZoneNode: PropertyGetNode): boolean;

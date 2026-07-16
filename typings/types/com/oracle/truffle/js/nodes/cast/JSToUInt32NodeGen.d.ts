@@ -9,7 +9,6 @@ export class JSToUInt32NodeGen extends JSToUInt32Node {
     static create(): JSToUInt32Node;
     static create(paramunsignedRightShift: boolean, paramshiftValue: number): JSToUInt32Node;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(unsignedRightShift: boolean, shiftValue: number)
     // private foreignObject_cache: JSToUInt32NodeGen$ForeignObjectData;
     // private jSObject_toNumberNode_: JSToNumberNode;

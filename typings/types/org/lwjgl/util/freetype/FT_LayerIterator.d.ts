@@ -34,7 +34,6 @@ export class FT_LayerIterator extends Struct<FT_LayerIterator> implements Native
     static nnum_layers(paramarg0: number): number;
     static np(paramarg0: number, paramarg1: number): ByteBuffer;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     close(): void;

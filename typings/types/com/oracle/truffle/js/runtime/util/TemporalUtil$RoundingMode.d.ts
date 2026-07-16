@@ -14,7 +14,7 @@ export class TemporalUtil$RoundingMode extends Enum<TemporalUtil$RoundingMode> {
     static TRUNC: TemporalUtil$RoundingMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TemporalUtil$RoundingMode;
-    static values(): (Object | null)[];
+    static values(): TemporalUtil$RoundingMode[];
     private constructor()
     name(): "EMPTY" | "CEIL" | "FLOOR" | "EXPAND" | "TRUNC" | "HALF_EXPAND" | "HALF_TRUNC" | "HALF_EVEN" | "HALF_FLOOR" | "HALF_CEIL";
 }

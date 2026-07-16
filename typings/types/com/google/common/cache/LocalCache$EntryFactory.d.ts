@@ -15,7 +15,7 @@ export class LocalCache$EntryFactory extends Enum<LocalCache$EntryFactory> {
     static WEAK_WRITE: LocalCache$EntryFactory;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): LocalCache$EntryFactory;
-    static values(): (Object | null)[];
+    static values(): LocalCache$EntryFactory[];
     constructor(arg2: LocalCache$ValueReference<Object, Object>)
     copyAccessEntry<K extends unknown, V extends unknown>(original: ReferenceEntry<K, V>, newEntry: ReferenceEntry<K, V>): void;
     copyEntry<K extends unknown, V extends unknown>(segment: LocalCache$Segment<K, V>, original: ReferenceEntry<K, V>, newNext: ReferenceEntry<K, V>, key: K): ReferenceEntry<K, V>;

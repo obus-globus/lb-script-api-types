@@ -21,9 +21,9 @@ export class TranslationComponent extends TextComponent {
     static entityNbt(paramarg0: string, paramarg1: boolean, paramarg2: TextComponent, paramarg3: string): NbtComponent;
     static entityNbt(paramarg0: string, paramarg1: boolean, paramarg2: string): NbtComponent;
     static keybind(paramarg0: string): KeybindComponent;
-    static of(...paramarg0: (Object | null)[]): TextComponent;
+    static of(...paramarg0: TextComponent[]): TextComponent;
     static of(paramarg0: TextComponent[]): TextComponent;
-    static of(...paramarg0: (Object | null)[]): TextComponent;
+    static of(...paramarg0: string[]): TextComponent;
     static of(paramarg0: string): StringComponent;
     static score(paramarg0: string, paramarg1: string): ScoreComponent;
     static score(paramarg0: string, paramarg1: string, paramarg2: string): ScoreComponent;
@@ -31,7 +31,7 @@ export class TranslationComponent extends TextComponent {
     static selector(paramarg0: string, paramarg1: TextComponent): SelectorComponent;
     static storageNbt(paramarg0: string, paramarg1: boolean, paramarg2: Identifier): NbtComponent;
     static storageNbt(paramarg0: string, paramarg1: boolean, paramarg2: TextComponent, paramarg3: Identifier): NbtComponent;
-    static translation(paramarg0: string, ...paramarg1: (Object | null)[]): TranslationComponent;
+    static translation(paramarg0: string, ...paramarg1: Object[]): TranslationComponent;
     static translation(paramarg0: string, paramarg1: Object[]): TranslationComponent;
     constructor(arg0: string, ...arg1: Object[])
     constructor(arg0: string, arg1: (Object | null)[])

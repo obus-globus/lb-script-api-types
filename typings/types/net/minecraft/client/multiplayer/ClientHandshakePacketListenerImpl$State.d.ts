@@ -9,7 +9,7 @@ export class ClientHandshakePacketListenerImpl$State extends Enum<ClientHandshak
     static JOINING: ClientHandshakePacketListenerImpl$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ClientHandshakePacketListenerImpl$State;
-    static values(): (Object | null)[];
+    static values(): ClientHandshakePacketListenerImpl$State[];
     private constructor(message: Component, fromStates: ClientHandshakePacketListenerImpl$State[])
     // private fromStates: ClientHandshakePacketListenerImpl$State[];
     // private message: Component;

@@ -8,7 +8,7 @@ export class RTCPriorityType extends Enum<RTCPriorityType> {
     static VERY_LOW: RTCPriorityType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RTCPriorityType;
-    static values(): (Object | null)[];
+    static values(): RTCPriorityType[];
     private constructor()
     name(): "VERY_LOW" | "LOW" | "MEDIUM" | "HIGH";
 }

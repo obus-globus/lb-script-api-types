@@ -7,7 +7,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class PropertyCacheNode$AbstractFinalPrototypeShapeCheckNode extends PropertyCacheNode$AbstractSingleRealmShapeCheckNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(shape: Shape, assumptions: Assumption[], prototype: JSDynamicObject, context: JSContext)
     // private prototype: JSDynamicObject;
     getStore(thisObj: Object): JSDynamicObject;

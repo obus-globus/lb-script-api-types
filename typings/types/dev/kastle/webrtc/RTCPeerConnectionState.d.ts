@@ -10,7 +10,7 @@ export class RTCPeerConnectionState extends Enum<RTCPeerConnectionState> {
     static NEW: RTCPeerConnectionState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RTCPeerConnectionState;
-    static values(): (Object | null)[];
+    static values(): RTCPeerConnectionState[];
     private constructor()
     name(): "NEW" | "CONNECTING" | "CONNECTED" | "DISCONNECTED" | "FAILED" | "CLOSED";
 }

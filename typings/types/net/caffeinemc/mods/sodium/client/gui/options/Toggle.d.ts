@@ -7,7 +7,7 @@ export class Toggle extends Enum<Toggle> {
     static fromBoolean(paramarg0: boolean): Toggle;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Toggle;
-    static values(): (Object | null)[];
+    static values(): Toggle[];
     private constructor()
     toBoolean(): boolean;
     name(): "OFF" | "ON";

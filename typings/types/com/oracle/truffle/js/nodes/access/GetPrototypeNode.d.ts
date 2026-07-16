@@ -7,7 +7,6 @@ export abstract class GetPrototypeNode extends JavaScriptBaseNode {
     static create(paramobject: JavaScriptNode): JavaScriptNode;
     static create(): GetPrototypeNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(obj: JSDynamicObject): JSDynamicObject;
     execute(obj: Object): JSDynamicObject;

@@ -10,7 +10,7 @@ export class PresenceStatus extends Enum<PresenceStatus> {
     static PLAYING_SERVER: PresenceStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PresenceStatus;
-    static values(): (Object | null)[];
+    static values(): PresenceStatus[];
     private constructor()
     name(): "ONLINE" | "PLAYING_OFFLINE" | "PLAYING_REALMS" | "PLAYING_SERVER" | "PLAYING_HOSTED_SERVER" | "OFFLINE";
 }

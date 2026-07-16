@@ -11,7 +11,7 @@ export class SupportType extends Enum<SupportType> {
     static RIGID: SupportType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SupportType;
-    static values(): (Object | null)[];
+    static values(): SupportType[];
     private constructor()
     isSupporting(state: BlockState, level: BlockGetter, pos: BlockPos, direction: Direction): boolean;
     name(): "FULL" | "CENTER" | "RIGID";

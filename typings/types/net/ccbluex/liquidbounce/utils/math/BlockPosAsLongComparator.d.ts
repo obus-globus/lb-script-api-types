@@ -13,7 +13,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BlockPosAsLongComparator extends Object implements LongComparator {
     static INSTANCE: BlockPosAsLongComparator;
     static comparing(paramarg0: (param0: number) => Object | null): (param0: number, param1: number) => number;
-    static comparing(paramarg0: (param0: number) => Object | null, paramarg1: (param0: Object) => boolean): (param0: number, param1: number) => number;
+    static comparing(paramarg0: (param0: number) => Object | null, paramarg1: (param0: Object, param1: Object) => number): (param0: number, param1: number) => number;
     static comparingDouble(paramarg0: (param0: number) => number): (param0: number, param1: number) => number;
     static comparingInt(paramarg0: (param0: number) => number): (param0: number, param1: number) => number;
     static comparingLong(paramarg0: (param0: number) => number): (param0: number, param1: number) => number;
@@ -21,5 +21,4 @@ export class BlockPosAsLongComparator extends Object implements LongComparator {
     compare(k1: number, k2: number): number;
     reversed(): (param0: number, param1: number) => number;
     thenComparing(arg0: (param0: number, param1: number) => number): (param0: number, param1: number) => number;
-    thenComparing(arg0: (param0: Object) => boolean): (param0: Object) => boolean;
 }

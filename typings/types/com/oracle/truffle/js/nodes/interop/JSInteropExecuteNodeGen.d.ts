@@ -9,7 +9,6 @@ export class JSInteropExecuteNodeGen extends JSInteropExecuteNode {
     static create(): JSInteropExecuteNode;
     static getUncached(): JSInteropExecuteNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private callNode_: JSFunctionCallNode;
     // private importValueNode_: ImportValueNode;

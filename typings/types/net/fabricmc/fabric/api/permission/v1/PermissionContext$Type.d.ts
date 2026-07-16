@@ -8,7 +8,7 @@ export class PermissionContext$Type extends Enum<PermissionContext$Type> {
     static SYSTEM: PermissionContext$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PermissionContext$Type;
-    static values(): (Object | null)[];
+    static values(): PermissionContext$Type[];
     private constructor()
     name(): "PLAYER" | "ENTITY" | "SYSTEM" | "OTHER";
 }

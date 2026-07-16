@@ -4,6 +4,7 @@ import type { EventListener } from '../../../../../net/ccbluex/liquidbounce/even
 import type { GameTickEvent } from '../../../../../net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts'
 import type { SilentHotbarState } from '../../../../../net/ccbluex/liquidbounce/utils/client/SilentHotbarState.d.ts'
 import type { HotbarItemSlot } from '../../../../../net/ccbluex/liquidbounce/utils/inventory/HotbarItemSlot.d.ts'
+import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 /**
  * Manages things like {@link ModuleScaffold}'s silent mode.
  * Not thread safe, please only use this on the main-thread of minecraft
@@ -13,7 +14,9 @@ import type { HotbarItemSlot } from '../../../../../net/ccbluex/liquidbounce/uti
 export class SilentHotbar extends Object implements EventListener {
     static INSTANCE: SilentHotbar;
     readonly clientsideSlot: number;
+    readonly debugDisplayName: Component;
     // private hotbarState: SilentHotbarState | null;
+    readonly running: boolean;
     /**
      * Returns the slot that interactions would take place with
      *

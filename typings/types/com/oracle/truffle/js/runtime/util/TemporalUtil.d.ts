@@ -71,7 +71,7 @@ export class TemporalUtil extends Object {
     static SECONDS_PER_MINUTE: number;
     static SINCE: number;
     static SUBTRACT: number;
-    static TIME_LIKE_PROPERTIES: (Object | null)[];
+    static TIME_LIKE_PROPERTIES: TruffleString[];
     static UNTIL: number;
     static listAuto: TruffleString[];
     static listAutoAlwaysNeverCritical: TruffleString[];
@@ -111,7 +111,6 @@ export class TemporalUtil extends Object {
     static addDaysToZonedDateTime(paramctx: JSContext, paramrealm: JSRealm, paraminstant: JSTemporalInstantObject, paramdateTime: JSTemporalPlainDateTimeObject, paramtimeZone: TruffleString, paramdays: number): TemporalUtil$AddDaysToZonedDateTimeResult;
     static addDaysToZonedDateTime(paramctx: JSContext, paramrealm: JSRealm, paraminstant: JSTemporalInstantObject, paramdateTime: JSTemporalPlainDateTimeObject, paramtimeZone: TruffleString, paramdays: number, paramoverflow: TemporalUtil$Overflow): TemporalUtil$AddDaysToZonedDateTimeResult;
     static addISODate(paramyear: number, parammonth: number, paramday: number, paramyears: number, parammonths: number, paramweeks: number, paramdaysP: number, paramoverflow: TemporalUtil$Overflow): ISODateRecord;
-    static addISODate(paramyear: number, parammonth: number, paramday: number, paramyears: number, parammonths: number, paramweeks: number, paramdaysP: number, paramoverflow: TemporalUtil$Overflow): ISODateRecord;
     static addInstant(paramepochNanoseconds: BigInt, paramnormalizedTimeDuration: BigInt): BigInt;
     static addInstant(paramepochNanoseconds: BigInt, paramhours: number, paramminutes: number, paramseconds: number, parammilliseconds: number, parammicroseconds: number, paramnanoseconds: number): BigInt;
     static addNormalizedTimeDuration(paramone: BigInt, paramtwo: BigInt): BigInt;
@@ -121,10 +120,7 @@ export class TemporalUtil extends Object {
     static applyUnsignedRoundingMode(paramnumerator: BigInt, paramdenominator: BigInt, paramr1: number, paramr2: number, paramurm: TemporalUtil$UnsignedRoundingMode): number;
     static applyUnsignedRoundingMode(paramx: number, paramr1: number, paramr2: number, paramurm: TemporalUtil$UnsignedRoundingMode): number;
     static balanceISODate(paramyear: number, parammonth: number, paramday: number): ISODateRecord;
-    static balanceISODate(paramyear: number, parammonth: number, paramday: number): ISODateRecord;
-    static balanceISODate(paramyear: number, parammonth: number, paramday: number): ISODateRecord;
     static balanceISODateTime(paramyear: number, parammonth: number, paramday: number, paramhour: number, paramminute: number, paramsecond: number, parammillisecond: number, parammicrosecond: number, paramnanosecond: number): JSTemporalDateTimeRecord;
-    static balanceISOYearMonth(paramyear: number, parammonth: number): ISODateRecord;
     static balanceISOYearMonth(paramyear: number, parammonth: number): ISODateRecord;
     static balanceTime(paramh: number, parammin: number, paramsec: number, parammils: number, parammics: number, paramns: number): TimeRecord;
     static balanceTimeDouble(paramh: number, parammin: number, paramsec: number, parammils: number, parammics: number, paramns: number, paramnode: Node, paramerrorBranch: InlinedBranchProfile): TimeRecord;
@@ -191,7 +187,6 @@ export class TemporalUtil extends Object {
     static isValidDuration(paramyears: number, parammonths: number, paramweeks: number, paramdays: number, paramhours: number, paramminutes: number, paramseconds: number, parammilliseconds: number, parammicroseconds: number, paramnanoseconds: number): boolean;
     static isValidEpochNanoseconds(paramnanoseconds: BigInt): boolean;
     static isValidISODate(paramyear: number, parammonth: number, paramday: number): boolean;
-    static isValidISODate(paramyear: number, parammonth: number, paramday: number): boolean;
     static isValidTime(paramhours: number, paramminutes: number, paramseconds: number, parammilliseconds: number, parammicroseconds: number, paramnanoseconds: number): boolean;
     static isoDateTimeWithinLimits(paramyear: number, parammonth: number, paramday: number, paramhour: number, paramminute: number, paramsecond: number, parammillisecond: number, parammicrosecond: number, paramnanosecond: number): boolean;
     static isoDateToFields(paramctx: JSContext, paramcalendar: TruffleString, paramisoDate: ISODateRecord, paramtype: TemporalUtil$FieldsType): JSObject;
@@ -207,8 +202,6 @@ export class TemporalUtil extends Object {
     static mergeLargestUnitOption(paramctx: JSContext, paramnamesNode: EnumerableOwnPropertyNamesNode, paramoptions: JSDynamicObject, paramlargestUnit: TemporalUtil$Unit): JSObject;
     static nanosToMillis(paramnanos: BigInt): number;
     static negateTemporalRoundingMode(paramroundingMode: TemporalUtil$RoundingMode): TemporalUtil$RoundingMode;
-    static nonNegativeModulo(paramx: number, paramy: number): number;
-    static nonNegativeModulo(paramx: number, paramy: number): number;
     static nonNegativeModulo(paramx: number, paramy: number): number;
     static normalizeTimeDuration(paramhours: number, paramminutes: number, paramseconds: number, parammilliseconds: number, parammicroseconds: number, paramnanoseconds: number): BigInt;
     static normalizeTimeDurationSeconds(paramtimeDurationTotalNanoseconds: BigInt): number;

@@ -14,7 +14,7 @@ export class ListBox$Instance extends Enum<ListBox$Instance> implements Traversa
     static unbox(paramarg0: App<Traversable$Mu, K1>): Traversable<K1, Traversable$Mu>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ListBox$Instance;
-    static values(): (Object | null)[];
+    static values(): ListBox$Instance[];
     private constructor()
     flip<F extends K1, A extends unknown>(arg0: Applicative<F, any>, arg1: App<ListBox$Mu, App<F, A>>): App<F, App<ListBox$Mu, A>>;
     map<R extends unknown, T extends unknown>(arg0: (param0: T) => R, arg1: App<ListBox$Mu, T>): App<ListBox$Mu, R>;

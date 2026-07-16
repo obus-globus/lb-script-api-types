@@ -7,7 +7,7 @@ export class SnappyCompressorInputStream$State extends Enum<SnappyCompressorInpu
     static NO_BLOCK: SnappyCompressorInputStream$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SnappyCompressorInputStream$State;
-    static values(): (Object | null)[];
+    static values(): SnappyCompressorInputStream$State[];
     private constructor()
     name(): "NO_BLOCK" | "IN_LITERAL" | "IN_BACK_REFERENCE";
 }

@@ -17,7 +17,6 @@ export class FireworkStarFadeRecipe extends CustomRecipe {
     static MAP_CODEC: MapCodec<FireworkStarFadeRecipe>;
     static SERIALIZER: RecipeSerializer<FireworkStarFadeRecipe>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, FireworkStarFadeRecipe>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<any>>;
     constructor(target: Ingredient, dye: Ingredient, result: ItemStackTemplate)
     // private dye: Ingredient;
     // private result: ItemStackTemplate;

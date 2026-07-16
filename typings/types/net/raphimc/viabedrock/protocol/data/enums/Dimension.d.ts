@@ -6,10 +6,10 @@ export class Dimension extends Enum<Dimension> {
     static NETHER: Dimension;
     static OVERWORLD: Dimension;
     static getByValue(paramarg0: number): Dimension;
-    static getDimensionKeys(): (Object | null)[];
+    static getDimensionKeys(): string[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Dimension;
-    static values(): (Object | null)[];
+    static values(): Dimension[];
     private constructor(arg2: string)
     readonly key: string;
     getKey(): string;

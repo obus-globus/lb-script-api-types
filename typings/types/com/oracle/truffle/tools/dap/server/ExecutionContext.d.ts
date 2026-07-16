@@ -29,7 +29,7 @@ export class ExecutionContext extends Object {
     readonly linesStartAt1: boolean;
     readonly loadedSourcesHandler: LoadedSourcesHandler;
     readonly logger: TruffleLogger;
-    // private runPermission: (Object | null)[];
+    // private runPermission: boolean[];
     // private srcBinding: EventBinding<LoadSourceListener>;
     readonly stackFramesHandler: StackFramesHandler;
     // private thrBinding: EventBinding<ThreadsListener>;

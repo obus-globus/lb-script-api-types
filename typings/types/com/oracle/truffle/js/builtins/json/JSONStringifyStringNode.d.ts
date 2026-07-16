@@ -19,7 +19,6 @@ export abstract class JSONStringifyStringNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): JSONStringifyStringNode;
     static jsonQuote(paramstringBuilderProfile: StringBuilderProfile, paramsb: TruffleStringBuilderUTF16, paramvalueStr: TruffleString, paramreadCharNode: TruffleString$ReadCharUTF16Node, paramappendCharNode: TruffleStringBuilder$AppendCharUTF16Node, paramappendStringNode: TruffleStringBuilder$AppendStringNode, paramappendSubstringNode: TruffleStringBuilder$AppendSubstringByteIndexNode): TruffleStringBuilder;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private builderToStringNode: TruffleStringBuilder$ToStringNode;
     // private callToJSONFunction: JSFunctionCallNode;

@@ -3,7 +3,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
 export class NumberingSystem extends Object {
     static LATIN: NumberingSystem;
-    static getAvailableNames(): (Object | null)[];
+    static getAvailableNames(): string[];
     static getInstance(): NumberingSystem;
     static getInstance(paramradix_in: number, paramisAlgorithmic_in: boolean, paramdesc_in: string): NumberingSystem;
     static getInstance(paraminLocale: Locale): NumberingSystem;

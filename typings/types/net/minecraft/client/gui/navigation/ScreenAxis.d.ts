@@ -7,7 +7,7 @@ export class ScreenAxis extends Enum<ScreenAxis> {
     static VERTICAL: ScreenAxis;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ScreenAxis;
-    static values(): (Object | null)[];
+    static values(): ScreenAxis[];
     private constructor()
     getDirection(positive: boolean): ScreenDirection;
     getNegative(): ScreenDirection;

@@ -1,12 +1,9 @@
 import type { JsonDeserializer } from '../../../../../../../../../../com/google/gson/JsonDeserializer.d.ts'
 import type { Object } from '../../../../../../../../../../java/lang/Object.d.ts'
 import type { ConditionNode } from '../../../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/autoshop/serializable/conditions/ConditionNode.d.ts'
-import type { ConditionNode$Companion } from '../../../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/autoshop/serializable/conditions/ConditionNode$Companion.d.ts'
 import type { ItemConditionNode$Companion } from '../../../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/autoshop/serializable/conditions/ItemConditionNode$Companion.d.ts'
 export class ItemConditionNode extends Object implements ConditionNode {
-    static Companion: ConditionNode$Companion;
     static Companion: ItemConditionNode$Companion;
-    static Deserializer: JsonDeserializer<ConditionNode>;
     static Deserializer: JsonDeserializer<ItemConditionNode>;
     constructor(id: string, min: number, max: number)
     readonly id: string;

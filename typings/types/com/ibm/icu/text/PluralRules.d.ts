@@ -31,8 +31,8 @@ export class PluralRules extends Object implements Serializable {
     static forLocale(paramarg0: ULocale, paramarg1: PluralRules$PluralType): PluralRules;
     static forLocale(paramarg0: Locale): PluralRules;
     static forLocale(paramarg0: Locale, paramarg1: PluralRules$PluralType): PluralRules;
-    static getAvailableULocales(): (Object | null)[];
-    static getFunctionalEquivalent(paramarg0: ULocale, paramarg1: (Object | null)[]): ULocale;
+    static getAvailableULocales(): ULocale[];
+    static getFunctionalEquivalent(paramarg0: ULocale, paramarg1: boolean[]): ULocale;
     static newInternal(paramarg0: string, paramarg1: StandardPluralRanges): PluralRules;
     static parseDescription(paramarg0: string): PluralRules;
     private constructor(arg0: PluralRules$RuleList, arg1: StandardPluralRanges)

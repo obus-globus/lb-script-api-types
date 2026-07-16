@@ -1,7 +1,7 @@
 import type { InetAddress } from '../../java/net/InetAddress.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export class Inet4Address extends InetAddress {
-    static getAllByName(paramarg0: string): (Object | null)[];
+    static getAllByName(paramarg0: string): InetAddress[];
     static getByAddress(paramarg0: number[]): InetAddress;
     static getByAddress(paramarg0: string, paramarg1: number[]): InetAddress;
     static getByName(paramarg0: string): InetAddress;

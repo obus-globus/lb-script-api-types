@@ -7,7 +7,7 @@ export class Heightmap$Usage extends Enum<Heightmap$Usage> {
     static WORLDGEN: Heightmap$Usage;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Heightmap$Usage;
-    static values(): (Object | null)[];
+    static values(): Heightmap$Usage[];
     private constructor()
     name(): "WORLDGEN" | "LIVE_WORLD" | "CLIENT";
 }

@@ -5,6 +5,8 @@ import type { SerialDescriptor } from '../../../kotlinx/serialization/descriptor
 export class PrimitiveSerialDescriptor extends Object implements SerialDescriptor {
     constructor(serialName: string, kind: PrimitiveKind)
     readonly elementsCount: number;
+    /*not mapped: */ isInline(): boolean;
+    /*not mapped: */ isNullable(): boolean;
     readonly kind: PrimitiveKind;
     readonly serialName: string;
     equals(other: Object | null): boolean;

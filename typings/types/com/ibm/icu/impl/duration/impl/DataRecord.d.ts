@@ -28,7 +28,7 @@ export class DataRecord extends Object {
     // private pl: number;
     // private pluralNames: string[][];
     // private requiresDigitSeparator: boolean;
-    // private requiresSkipMarker: (Object | null)[];
+    // private requiresSkipMarker: boolean[];
     // private rqdSuffixes: string[];
     // private scopeData: DataRecord$ScopeData[];
     // private shortNames: string[];
@@ -36,7 +36,7 @@ export class DataRecord extends Object {
     // private singularNames: string[];
     // private skippedUnitMarker: string;
     // private unitSep: string[];
-    // private unitSepRequiresDP: (Object | null)[];
+    // private unitSepRequiresDP: boolean[];
     // private useMilliseconds: number;
     // private weeksAloneOnly: boolean;
     // private zero: string;

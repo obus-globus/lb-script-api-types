@@ -18,7 +18,6 @@ export class Graphs extends GraphsBridgeMethods {
     static inducedSubgraph(paramgraph: ValueGraph<Object, Object>, paramnodes: (Object | null)[]): MutableValueGraph<Object, Object>;
     static inducedSubgraph(paramgraph: Graph<Object>, paramnodes: (Object | null)[]): MutableGraph<Object>;
     static reachableNodes(paramgraph: Graph<Object>, paramnode: Object | null): (Object | null)[];
-    static reachableNodes(paramgraph: Graph<Object>, paramnode: Object | null): (Object | null)[];
     static transitiveClosure(paramgraph: Graph<Object>): Graph<Object>;
     static transitiveClosure(paramgraph: Graph<Object>): ImmutableGraph<Object>;
     static transitiveClosure(paramgraph: Graph<Object>, paramstrategy: Graphs$TransitiveClosureSelfLoopStrategy): ImmutableGraph<Object>;

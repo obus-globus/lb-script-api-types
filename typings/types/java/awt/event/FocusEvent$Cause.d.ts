@@ -15,7 +15,7 @@ export class FocusEvent$Cause extends Enum<FocusEvent$Cause> {
     static UNKNOWN: FocusEvent$Cause;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FocusEvent$Cause;
-    static values(): (Object | null)[];
+    static values(): FocusEvent$Cause[];
     private constructor()
     name(): "UNKNOWN" | "MOUSE_EVENT" | "TRAVERSAL" | "TRAVERSAL_UP" | "TRAVERSAL_DOWN" | "TRAVERSAL_FORWARD" | "TRAVERSAL_BACKWARD" | "ROLLBACK" | "UNEXPECTED" | "ACTIVATION" | "CLEAR_GLOBAL_FOCUS_OWNER";
 }

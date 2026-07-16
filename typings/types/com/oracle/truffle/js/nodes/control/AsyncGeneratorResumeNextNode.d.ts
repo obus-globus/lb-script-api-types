@@ -22,7 +22,6 @@ export class AsyncGeneratorResumeNextNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): AsyncGeneratorResumeNextNode;
     static createTailCall(paramcontext: JSContext): AsyncGeneratorResumeNextNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private abruptProf: ConditionProfile;
     // private asyncGeneratorRejectNode: AsyncGeneratorRejectNode;

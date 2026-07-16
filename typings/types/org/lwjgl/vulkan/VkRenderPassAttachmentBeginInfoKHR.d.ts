@@ -23,28 +23,21 @@ export class VkRenderPassAttachmentBeginInfoKHR extends VkRenderPassAttachmentBe
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkRenderPassAttachmentBeginInfoKHR;
     static calloc(paramarg0: MemoryStack): VkRenderPassAttachmentBeginInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkRenderPassAttachmentBeginInfo;
     static create(paramarg0: number): VkRenderPassAttachmentBeginInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkRenderPassAttachmentBeginInfoKHR;
     static create(paramarg0: number): VkRenderPassAttachmentBeginInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkRenderPassAttachmentBeginInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkRenderPassAttachmentBeginInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkRenderPassAttachmentBeginInfo;
     static malloc(paramarg0: MemoryStack): VkRenderPassAttachmentBeginInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkRenderPassAttachmentBeginInfoKHR;
     static malloc(paramarg0: MemoryStack): VkRenderPassAttachmentBeginInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nattachmentCount(paramarg0: number): number;
     static nattachmentCount(paramarg0: number, paramarg1: number): void;
     static npAttachments(paramarg0: number): LongBuffer;
@@ -53,7 +46,6 @@ export class VkRenderPassAttachmentBeginInfoKHR extends VkRenderPassAttachmentBe
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

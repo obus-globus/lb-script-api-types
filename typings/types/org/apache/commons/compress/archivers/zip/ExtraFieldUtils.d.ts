@@ -8,12 +8,12 @@ export class ExtraFieldUtils extends Object {
     static createExtraField(paramarg0: ZipShort): ZipExtraField;
     static createExtraFieldNoDefault(paramarg0: ZipShort): ZipExtraField;
     static fillExtraField(paramarg0: ZipExtraField, paramarg1: number[], paramarg2: number, paramarg3: number, paramarg4: boolean): ZipExtraField;
-    static mergeCentralDirectoryData(paramarg0: (Object | null)[]): number[];
-    static mergeLocalFileDataData(paramarg0: (Object | null)[]): number[];
-    static parse(paramarg0: number[]): (Object | null)[];
-    static parse(paramarg0: number[], paramarg1: boolean): (Object | null)[];
-    static parse(paramarg0: number[], paramarg1: boolean, paramarg2: ExtraFieldParsingBehavior): (Object | null)[];
-    static parse(paramarg0: number[], paramarg1: boolean, paramarg2: ExtraFieldUtils$UnparseableExtraField): (Object | null)[];
+    static mergeCentralDirectoryData(paramarg0: ZipExtraField[]): number[];
+    static mergeLocalFileDataData(paramarg0: ZipExtraField[]): number[];
+    static parse(paramarg0: number[]): ZipExtraField[];
+    static parse(paramarg0: number[], paramarg1: boolean): ZipExtraField[];
+    static parse(paramarg0: number[], paramarg1: boolean, paramarg2: ExtraFieldParsingBehavior): ZipExtraField[];
+    static parse(paramarg0: number[], paramarg1: boolean, paramarg2: ExtraFieldUtils$UnparseableExtraField): ZipExtraField[];
     static register(paramarg0: Class<Object>): void;
     constructor()
 }

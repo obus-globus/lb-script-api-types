@@ -5,7 +5,6 @@ import type { JSArrayBufferObject } from '../../../../../com/oracle/truffle/js/r
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class DataViewPrototypeBuiltins$DataViewGetNode$GetBufferElementNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(node: Node, buffer: JSArrayBufferObject, bufferIndex: number, littleEndian: boolean, factory: TypedArrayFactory): Object;
 }

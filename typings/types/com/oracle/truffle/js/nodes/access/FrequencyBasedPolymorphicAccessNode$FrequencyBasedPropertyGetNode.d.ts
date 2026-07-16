@@ -7,7 +7,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class FrequencyBasedPolymorphicAccessNode$FrequencyBasedPropertyGetNode extends FrequencyBasedPolymorphicAccessNode<PropertyGetNode> {
     static create(paramcontext: JSContext): FrequencyBasedPolymorphicAccessNode$FrequencyBasedPropertyGetNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(size: number)
     // private highFrequencyKeys: PropertyGetNode[];
     executeFastGet(key: Object, target: Object, receiver: Object, equalsNode: TruffleString$EqualNode): Object;

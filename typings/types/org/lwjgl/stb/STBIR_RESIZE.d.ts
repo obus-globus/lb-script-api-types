@@ -138,7 +138,6 @@ export class STBIR_RESIZE extends Struct<STBIR_RESIZE> implements NativeResource
     static nvertical_filter_support(paramarg0: number, paramarg1: PointerBuffer): void;
     static validate(paramarg0: number): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     called_alloc(): boolean;

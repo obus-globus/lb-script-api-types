@@ -6,7 +6,7 @@ export class Behavior$Status extends Enum<Behavior$Status> {
     static STOPPED: Behavior$Status;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Behavior$Status;
-    static values(): (Object | null)[];
+    static values(): Behavior$Status[];
     private constructor()
     name(): "STOPPED" | "RUNNING";
 }

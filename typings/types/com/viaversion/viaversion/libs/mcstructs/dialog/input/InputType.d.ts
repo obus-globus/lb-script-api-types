@@ -10,7 +10,7 @@ export class InputType extends Enum<InputType> implements IdentifiedType {
     static TEXT: InputType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): InputType;
-    static values(): (Object | null)[];
+    static values(): InputType[];
     private constructor(arg2: Identifier)
     readonly identifier: Identifier;
     getIdentifier(): Identifier;

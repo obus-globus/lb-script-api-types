@@ -12,11 +12,10 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ObjectFunctionBuiltinsFactory$ObjectSetIntegrityLevelNodeGen extends ObjectFunctionBuiltins$ObjectSetIntegrityLevelNode {
     static ARGUMENTS: string;
     static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
-    static create(paramcontext: JSContext, parambuiltin: JSBuiltin, paramfreeze: boolean, paramarguments: (Object | null)[]): ObjectFunctionBuiltins$ObjectSetIntegrityLevelNode;
+    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
+    static create(paramcontext: JSContext, parambuiltin: JSBuiltin, paramfreeze: boolean, paramarguments: JavaScriptNode[]): ObjectFunctionBuiltins$ObjectSetIntegrityLevelNode;
     static createBuiltin(paramctx: JSContext, parambuiltin: JSBuiltin, paramconstruct: boolean, paramnewTarget: boolean): JSBuiltinNode;
     static findBlockScopeNode(paramnode: Node): Node;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;

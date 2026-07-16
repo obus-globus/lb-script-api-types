@@ -1,4 +1,5 @@
 import type { EpollEventArray } from '../../../../io/netty/channel/epoll/EpollEventArray.d.ts'
+import type { NativeDatagramPacketArray$NativeDatagramPacket } from '../../../../io/netty/channel/epoll/NativeDatagramPacketArray$NativeDatagramPacket.d.ts'
 import type { FileDescriptor } from '../../../../io/netty/channel/unix/FileDescriptor.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Native extends Object {
@@ -22,7 +23,7 @@ export class Native extends Object {
     static newEventFd(): FileDescriptor;
     static newTimerFd(): FileDescriptor;
     static offsetofEpollData(): number;
-    static sendmmsg(paramarg0: number, paramarg1: (Object | null)[], paramarg2: number, paramarg3: number): number;
+    static sendmmsg(paramarg0: number, paramarg1: NativeDatagramPacketArray$NativeDatagramPacket[], paramarg2: number, paramarg3: number): number;
     static sizeofEpollEvent(): number;
     static splice(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number): number;
     private constructor()

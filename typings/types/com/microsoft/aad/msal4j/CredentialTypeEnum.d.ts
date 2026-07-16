@@ -7,7 +7,7 @@ export class CredentialTypeEnum extends Enum<CredentialTypeEnum> {
     static REFRESH_TOKEN: CredentialTypeEnum;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CredentialTypeEnum;
-    static values(): (Object | null)[];
+    static values(): CredentialTypeEnum[];
     private constructor(arg2: string)
     // private value: string;
     value(): string;

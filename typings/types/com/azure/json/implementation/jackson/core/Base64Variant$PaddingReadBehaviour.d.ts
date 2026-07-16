@@ -7,7 +7,7 @@ export class Base64Variant$PaddingReadBehaviour extends Enum<Base64Variant$Paddi
     static PADDING_REQUIRED: Base64Variant$PaddingReadBehaviour;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Base64Variant$PaddingReadBehaviour;
-    static values(): (Object | null)[];
+    static values(): Base64Variant$PaddingReadBehaviour[];
     private constructor()
     name(): "PADDING_FORBIDDEN" | "PADDING_REQUIRED" | "PADDING_ALLOWED";
 }

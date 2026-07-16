@@ -13,7 +13,7 @@ export class AttributeModifierOperation extends Enum<AttributeModifierOperation>
     static getByValue(paramarg0: number, paramarg1: AttributeModifierOperation): AttributeModifierOperation;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AttributeModifierOperation;
-    static values(): (Object | null)[];
+    static values(): AttributeModifierOperation[];
     private constructor(arg2: number)
     private constructor(arg2: AttributeModifierOperation)
     readonly value: number;

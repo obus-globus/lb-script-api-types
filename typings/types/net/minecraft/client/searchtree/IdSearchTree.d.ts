@@ -9,7 +9,7 @@ export class IdSearchTree<T extends unknown> extends Object implements SearchTre
     static empty(): (param0: string) => (Object | null)[];
     static plainText(paramelements: (Object | null)[], paramidGetter: (param0: Object | null) => Stream<string>): (param0: string) => (Object | null)[];
     constructor(idGetter: (param0: T) => Stream<Identifier>, contents: T[])
-    // private additionOrder: (param0: Object) => boolean;
+    // private additionOrder: (param0: T, param1: T) => number;
     // private identifierSearchTree: IdentifierSearchTree<T>;
     search(text: string): T[];
     searchIdentifier(namespace: string, path: string): T[];

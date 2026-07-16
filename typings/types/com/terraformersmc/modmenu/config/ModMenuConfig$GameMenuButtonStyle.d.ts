@@ -6,7 +6,7 @@ export class ModMenuConfig$GameMenuButtonStyle extends Enum<ModMenuConfig$GameMe
     static INSERT: ModMenuConfig$GameMenuButtonStyle;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModMenuConfig$GameMenuButtonStyle;
-    static values(): (Object | null)[];
+    static values(): ModMenuConfig$GameMenuButtonStyle[];
     private constructor()
     name(): "INSERT" | "ICON";
 }

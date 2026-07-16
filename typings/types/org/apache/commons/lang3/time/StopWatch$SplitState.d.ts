@@ -6,7 +6,7 @@ export class StopWatch$SplitState extends Enum<StopWatch$SplitState> {
     static UNSPLIT: StopWatch$SplitState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): StopWatch$SplitState;
-    static values(): (Object | null)[];
+    static values(): StopWatch$SplitState[];
     private constructor()
     name(): "SPLIT" | "UNSPLIT";
 }

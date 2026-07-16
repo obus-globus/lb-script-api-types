@@ -24,8 +24,8 @@ export class DoubleSpliterators extends Object {
     static asSpliteratorFromSorted(paramarg0: DoubleIterator, paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => number): DoubleSpliterator;
     static asSpliteratorFromSortedUnknownSize(paramarg0: DoubleIterator, paramarg1: number, paramarg2: (param0: number, param1: number) => number): DoubleSpliterator;
     static asSpliteratorUnknownSize(paramarg0: DoubleIterator, paramarg1: number): DoubleSpliterator;
-    static concat(...paramarg0: (Object | null)[]): DoubleSpliterator;
-    static concat(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): DoubleSpliterator;
+    static concat(...paramarg0: DoubleSpliterator[]): DoubleSpliterator;
+    static concat(paramarg0: DoubleSpliterator[], paramarg1: number, paramarg2: number): DoubleSpliterator;
     static onEachMatching(paramarg0: DoubleSpliterator, paramarg1: (param0: number) => boolean, paramarg2: (param0: number) => void): void;
     static singleton(paramarg0: number): DoubleSpliterator;
     static singleton(paramarg0: number, paramarg1: (param0: number, param1: number) => number): DoubleSpliterator;

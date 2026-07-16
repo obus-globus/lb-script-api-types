@@ -10,7 +10,7 @@ export class ExecutorType extends Enum<ExecutorType> {
     static URL_CONNECTION: ExecutorType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ExecutorType;
-    static values(): (Object | null)[];
+    static values(): ExecutorType[];
     constructor(arg2: ExecutorType)
     readonly available: boolean;
     init(): void;

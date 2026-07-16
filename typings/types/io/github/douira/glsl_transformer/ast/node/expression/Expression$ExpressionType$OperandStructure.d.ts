@@ -9,7 +9,7 @@ export class Expression$ExpressionType$OperandStructure extends Enum<Expression$
     static UNARY: Expression$ExpressionType$OperandStructure;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Expression$ExpressionType$OperandStructure;
-    static values(): (Object | null)[];
+    static values(): Expression$ExpressionType$OperandStructure[];
     private constructor()
     name(): "NONE" | "UNARY" | "BINARY" | "TERNARY" | "MANY";
 }

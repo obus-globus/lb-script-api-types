@@ -6,7 +6,7 @@ export class NumberFormatter$TrailingZeroDisplay extends Enum<NumberFormatter$Tr
     static HIDE_IF_WHOLE: NumberFormatter$TrailingZeroDisplay;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): NumberFormatter$TrailingZeroDisplay;
-    static values(): (Object | null)[];
+    static values(): NumberFormatter$TrailingZeroDisplay[];
     private constructor()
     name(): "AUTO" | "HIDE_IF_WHOLE";
 }

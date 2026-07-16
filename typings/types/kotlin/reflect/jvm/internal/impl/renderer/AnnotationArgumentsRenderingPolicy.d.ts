@@ -8,7 +8,7 @@ export class AnnotationArgumentsRenderingPolicy extends Enum<AnnotationArguments
     static UNLESS_EMPTY: AnnotationArgumentsRenderingPolicy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AnnotationArgumentsRenderingPolicy;
-    static values(): (Object | null)[];
+    static values(): AnnotationArgumentsRenderingPolicy[];
     constructor(arg2: boolean, arg3: boolean, arg4: number, arg5: DefaultConstructorMarker)
     readonly includeAnnotationArguments: boolean;
     readonly includeEmptyAnnotationArguments: boolean;

@@ -2,7 +2,7 @@ import type { CompositeData } from '../../../javax/management/openmbean/Composit
 import type { OpenType } from '../../../javax/management/openmbean/OpenType.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class CompositeType extends OpenType<CompositeData> {
-    static ALLOWED_CLASSNAMES: (Object | null)[];
+    static ALLOWED_CLASSNAMES: string[];
     static ALLOWED_CLASSNAMES_LIST: string[];
     constructor(arg0: string, arg1: string, arg2: string[], arg3: string[], arg4: OpenType<Object>[])
     // private myHashCode: number;

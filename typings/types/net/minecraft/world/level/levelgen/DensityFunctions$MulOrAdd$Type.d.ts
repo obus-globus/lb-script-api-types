@@ -6,7 +6,7 @@ export class DensityFunctions$MulOrAdd$Type extends Enum<DensityFunctions$MulOrA
     static MUL: DensityFunctions$MulOrAdd$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): DensityFunctions$MulOrAdd$Type;
-    static values(): (Object | null)[];
+    static values(): DensityFunctions$MulOrAdd$Type[];
     private constructor()
     name(): "MUL" | "ADD";
 }

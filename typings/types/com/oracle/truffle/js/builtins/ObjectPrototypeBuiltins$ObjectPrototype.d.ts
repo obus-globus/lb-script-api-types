@@ -20,7 +20,7 @@ export class ObjectPrototypeBuiltins$ObjectPrototype extends Enum<ObjectPrototyp
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ObjectPrototypeBuiltins$ObjectPrototype;
-    static values(): (Object | null)[];
+    static values(): ObjectPrototypeBuiltins$ObjectPrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

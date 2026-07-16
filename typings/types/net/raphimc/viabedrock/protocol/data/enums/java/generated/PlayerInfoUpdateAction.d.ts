@@ -12,7 +12,7 @@ export class PlayerInfoUpdateAction extends Enum<PlayerInfoUpdateAction> {
     static UPDATE_LIST_ORDER: PlayerInfoUpdateAction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PlayerInfoUpdateAction;
-    static values(): (Object | null)[];
+    static values(): PlayerInfoUpdateAction[];
     private constructor()
     name(): "ADD_PLAYER" | "INITIALIZE_CHAT" | "UPDATE_GAME_MODE" | "UPDATE_LISTED" | "UPDATE_LATENCY" | "UPDATE_DISPLAY_NAME" | "UPDATE_LIST_ORDER" | "UPDATE_HAT";
 }

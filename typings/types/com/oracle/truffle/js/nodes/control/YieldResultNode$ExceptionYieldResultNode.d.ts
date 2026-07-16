@@ -5,7 +5,6 @@ import type { YieldResultNode } from '../../../../../../com/oracle/truffle/js/no
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class YieldResultNode$ExceptionYieldResultNode extends YieldResultNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     cloneUninitialized(): YieldResultNode;
     generatorYield(frame: VirtualFrame, value: Object): YieldException;

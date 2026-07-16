@@ -9,7 +9,7 @@ export class Win32BaseBoard$BaseBoardProperty extends Enum<Win32BaseBoard$BaseBo
     static VERSION: Win32BaseBoard$BaseBoardProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Win32BaseBoard$BaseBoardProperty;
-    static values(): (Object | null)[];
+    static values(): Win32BaseBoard$BaseBoardProperty[];
     private constructor()
     name(): "MANUFACTURER" | "MODEL" | "PRODUCT" | "VERSION" | "SERIALNUMBER";
 }

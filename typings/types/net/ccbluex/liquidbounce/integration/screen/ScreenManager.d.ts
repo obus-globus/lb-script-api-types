@@ -14,11 +14,13 @@ import type { CustomScreenType } from '../../../../../net/ccbluex/liquidbounce/i
 import type { ScreenAcknowledgement } from '../../../../../net/ccbluex/liquidbounce/integration/screen/ScreenAcknowledgement.d.ts'
 import type { Theme } from '../../../../../net/ccbluex/liquidbounce/integration/theme/Theme.d.ts'
 import type { Screen } from '../../../../../net/minecraft/client/gui/screens/Screen.d.ts'
+import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Logger } from '../../../../../org/apache/logging/log4j/Logger.d.ts'
 export class ScreenManager extends Object implements EventListener {
     static INSTANCE: ScreenManager;
     static isClientScreen(paramarg0: Screen): boolean;
     readonly browserSettings: IntegrationBrowserSettings;
+    readonly debugDisplayName: Component;
     // private effectUpdateHandler: EventHook<GameTickEvent>;
     // private fpsLimitHandler: EventHook<FpsLimitEvent>;
     // private handleBrowserReady: EventHook<BrowserReadyEvent>;
@@ -26,6 +28,7 @@ export class ScreenManager extends Object implements EventListener {
     // private logger: Logger;
     readonly mainBrowser: Browser | null;
     /*not mapped: */ getParent$net_ccbluex_liquidbounce(): Screen;
+    readonly running: boolean;
     readonly screen: CustomScreen | null;
     readonly screenAcknowledgement: ScreenAcknowledgement;
     // private screenHandler: EventHook<ScreenEvent>;

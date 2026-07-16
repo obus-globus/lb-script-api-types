@@ -2,7 +2,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Vocabulary } from '../../../../org/antlr/v4/runtime/Vocabulary.d.ts'
 export class VocabularyImpl extends Object implements Vocabulary {
     static EMPTY_VOCABULARY: VocabularyImpl;
-    static fromTokenNames(paramarg0: (Object | null)[]): Vocabulary;
+    static fromTokenNames(paramarg0: string[]): Vocabulary;
     constructor(arg0: string[], arg1: string[])
     constructor(arg0: string[], arg1: string[], arg2: string[])
     readonly displayNames: string[];

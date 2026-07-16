@@ -13,7 +13,7 @@ export class KotlinClassHeader$Kind extends Enum<KotlinClassHeader$Kind> {
     static getById(paramarg0: number): KotlinClassHeader$Kind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): KotlinClassHeader$Kind;
-    static values(): (Object | null)[];
+    static values(): KotlinClassHeader$Kind[];
     private constructor(arg2: number)
     // private id: number;
     name(): "UNKNOWN" | "CLASS" | "FILE_FACADE" | "SYNTHETIC_CLASS" | "MULTIFILE_CLASS" | "MULTIFILE_CLASS_PART";

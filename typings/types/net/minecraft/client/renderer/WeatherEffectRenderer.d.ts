@@ -21,7 +21,7 @@ export class WeatherEffectRenderer extends Object implements AutoCloseable {
     close(): void;
     // private createRainColumnInstance(random: RandomSource, ticks: number, x: number, bottomY: number, topY: number, z: number, lightCoords: number, partialTicks: number): WeatherEffectRenderer$ColumnInstance;
     // private createSnowColumnInstance(random: RandomSource, ticks: number, x: number, bottomY: number, topY: number, z: number, lightCoords: number, partialTicks: number): WeatherEffectRenderer$ColumnInstance;
-    // private disableRainParticles(arg0: ClientLevel, arg1: Camera, arg2: number, arg3: ParticleStatus, arg4: number, arg5: (param0: (Object | null)[]) => Object): void;
+    // private disableRainParticles(arg0: ClientLevel, arg1: Camera, arg2: number, arg3: ParticleStatus, arg4: number, arg5: (param0: Object[]) => Object): void;
     extractRenderState(level: ClientLevel, partialTicks: number, cameraPos: Vec3, renderState: WeatherRenderState): void;
     render(cameraPos: Vec3, renderState: WeatherRenderState): void;
     // private render$mixinextras$wrapped$18(arg0: Vec3, arg1: WeatherRenderState): void;

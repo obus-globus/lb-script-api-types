@@ -11,7 +11,6 @@ export class JSToStringNodeGen extends JSToStringNode {
     static createUndefinedToEmpty(): JSToStringNode;
     static getUncached(): JSToStringNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     private constructor(undefinedToEmpty: boolean, symbolToString: boolean)
     // private doubleToStringNode: JSDoubleToStringNode;

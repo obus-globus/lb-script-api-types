@@ -7,7 +7,7 @@ export class KotlinRetention extends Enum<KotlinRetention> {
     static SOURCE: KotlinRetention;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): KotlinRetention;
-    static values(): (Object | null)[];
+    static values(): KotlinRetention[];
     private constructor()
     name(): "RUNTIME" | "BINARY" | "SOURCE";
 }

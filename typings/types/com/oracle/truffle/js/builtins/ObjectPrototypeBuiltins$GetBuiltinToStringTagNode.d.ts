@@ -4,7 +4,6 @@ import type { JavaScriptBaseNode } from '../../../../../com/oracle/truffle/js/no
 import type { JSObject } from '../../../../../com/oracle/truffle/js/runtime/objects/JSObject.d.ts'
 export abstract class ObjectPrototypeBuiltins$GetBuiltinToStringTagNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(object: JSObject): TruffleString;
 }

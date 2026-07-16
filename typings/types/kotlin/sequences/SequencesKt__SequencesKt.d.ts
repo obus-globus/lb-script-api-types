@@ -18,7 +18,7 @@ export class SequencesKt__SequencesKt extends SequencesKt__SequencesJVMKt {
     static iterator(paramarg0: (param0: Object, param1: Object) => Object): Iterator<Object>;
     static sequence(paramarg0: (param0: Object, param1: Object) => Object): Sequence<Object>;
     static sequenceOf(paramarg0: Object | null): Sequence<Object>;
-    static sequenceOf(paramarg0: Object | null): Sequence<Object>;
+    static sequenceOf(...paramarg0: (Object | null)[]): Sequence<Object>;
     static shuffled(paramarg0: Sequence<Object>): Sequence<Object>;
     static shuffled(paramarg0: Sequence<Object>, paramarg1: Random): Sequence<Object>;
     static unzip(paramarg0: Sequence<Pair<Object, Object>>): Pair<(Object | null)[], (Object | null)[]>;

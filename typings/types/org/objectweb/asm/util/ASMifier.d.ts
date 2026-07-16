@@ -6,11 +6,11 @@ import type { Label } from '../../../../org/objectweb/asm/Label.d.ts'
 import type { TypePath } from '../../../../org/objectweb/asm/TypePath.d.ts'
 import type { Printer } from '../../../../org/objectweb/asm/util/Printer.d.ts'
 export class ASMifier extends Printer {
-    static HANDLE_TAG: (Object | null)[];
-    static OPCODES: (Object | null)[];
-    static TYPES: (Object | null)[];
+    static HANDLE_TAG: string[];
+    static OPCODES: string[];
+    static TYPES: string[];
     static appendString(paramarg0: StringBuilder, paramarg1: string): void;
-    static main(paramarg0: (Object | null)[]): void;
+    static main(paramarg0: string[]): void;
     constructor()
     constructor(arg0: number, arg1: string, arg2: number)
     // private id: number;

@@ -8,7 +8,7 @@ export class CefKeyboardHandler$CefKeyEvent$EventType extends Enum<CefKeyboardHa
     static KEYEVENT_RAWKEYDOWN: CefKeyboardHandler$CefKeyEvent$EventType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CefKeyboardHandler$CefKeyEvent$EventType;
-    static values(): (Object | null)[];
+    static values(): CefKeyboardHandler$CefKeyEvent$EventType[];
     private constructor()
     name(): "KEYEVENT_RAWKEYDOWN" | "KEYEVENT_KEYDOWN" | "KEYEVENT_KEYUP" | "KEYEVENT_CHAR";
 }

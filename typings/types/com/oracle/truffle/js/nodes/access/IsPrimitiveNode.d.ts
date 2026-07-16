@@ -5,7 +5,6 @@ export abstract class IsPrimitiveNode extends JavaScriptBaseNode {
     static create(): IsPrimitiveNode;
     static getUncached(): IsPrimitiveNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     executeBoolean(operand: Object): boolean;
 }

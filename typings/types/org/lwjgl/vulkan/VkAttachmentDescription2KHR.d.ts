@@ -32,28 +32,21 @@ export class VkAttachmentDescription2KHR extends VkAttachmentDescription2 {
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkAttachmentDescription2KHR;
     static calloc(paramarg0: MemoryStack): VkAttachmentDescription2KHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkAttachmentDescription2;
     static create(paramarg0: number): VkAttachmentDescription2;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkAttachmentDescription2KHR;
     static create(paramarg0: number): VkAttachmentDescription2KHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkAttachmentDescription2;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkAttachmentDescription2KHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkAttachmentDescription2;
     static malloc(paramarg0: MemoryStack): VkAttachmentDescription2;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkAttachmentDescription2KHR;
     static malloc(paramarg0: MemoryStack): VkAttachmentDescription2KHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nfinalLayout(paramarg0: number): number;
     static nfinalLayout(paramarg0: number, paramarg1: number): void;
     static nflags(paramarg0: number): number;
@@ -76,7 +69,6 @@ export class VkAttachmentDescription2KHR extends VkAttachmentDescription2 {
     static nstencilStoreOp(paramarg0: number, paramarg1: number): void;
     static nstoreOp(paramarg0: number): number;
     static nstoreOp(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

@@ -6,7 +6,7 @@ export class ModelQuadWinding extends Enum<ModelQuadWinding> {
     static COUNTERCLOCKWISE: ModelQuadWinding;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModelQuadWinding;
-    static values(): (Object | null)[];
+    static values(): ModelQuadWinding[];
     private constructor(arg2: number[])
     readonly indices: number[];
     getIndices(): number[];

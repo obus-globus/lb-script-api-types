@@ -18,7 +18,7 @@ import type { Identifier } from '../../../../../../../net/minecraft/resources/Id
 import type { Logger } from '../../../../../../../org/slf4j/Logger.d.ts'
 export abstract class FabricAdvancementProvider extends Object implements DataProvider {
     static FIXED_ORDER_FIELDS: (param0: string) => number;
-    static KEY_COMPARATOR: (param0: Object) => boolean;
+    static KEY_COMPARATOR: (param0: string, param1: string) => number;
     static LOGGER: Logger;
     static createPlaceholder(paramarg0: Identifier): AdvancementHolder;
     static saveAll(paramcache: CachedOutput, paramcodec: Codec<Object>, parampathGetter: (param0: Object | null) => Path, paramcontents: Map<Object | null, Object | null>): CompletableFuture<Object>;

@@ -6,7 +6,6 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export class Pointer extends Object {
     static NULL: Pointer;
     static createConstant(paramarg0: number): Pointer;
-    static createConstant(paramarg0: number): Pointer;
     static nativeValue(paramarg0: Pointer): number;
     static nativeValue(paramarg0: Pointer, paramarg1: number): void;
     constructor()

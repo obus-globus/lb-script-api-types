@@ -6,7 +6,7 @@ export class BoundType extends Enum<BoundType> {
     static OPEN: BoundType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): BoundType;
-    static values(): (Object | null)[];
+    static values(): BoundType[];
     private constructor(inclusive: boolean)
     // private inclusive: boolean;
     name(): "OPEN" | "CLOSED";

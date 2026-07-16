@@ -11,7 +11,6 @@ import type { KClassImpl$Companion } from '../../../../kotlin/reflect/jvm/intern
 import type { KClassImpl$Data } from '../../../../kotlin/reflect/jvm/internal/KClassImpl$Data.d.ts'
 import type { KClassImpl$MemberBelonginess } from '../../../../kotlin/reflect/jvm/internal/KClassImpl$MemberBelonginess.d.ts'
 import type { KDeclarationContainerImpl } from '../../../../kotlin/reflect/jvm/internal/KDeclarationContainerImpl.d.ts'
-import type { KDeclarationContainerImpl$Companion } from '../../../../kotlin/reflect/jvm/internal/KDeclarationContainerImpl$Companion.d.ts'
 import type { KTypeParameterOwnerImpl } from '../../../../kotlin/reflect/jvm/internal/KTypeParameterOwnerImpl.d.ts'
 import type { ClassDescriptor } from '../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
 import type { ConstructorDescriptor } from '../../../../kotlin/reflect/jvm/internal/impl/descriptors/ConstructorDescriptor.d.ts'
@@ -29,7 +28,6 @@ import type { TypeConstructorMarker } from '../../../../kotlin/reflect/jvm/inter
 import type { Regex } from '../../../../kotlin/text/Regex.d.ts'
 export class KClassImpl<T extends unknown> extends KDeclarationContainerImpl implements KotlinGenericDeclaration, KClass<T>, KTypeParameterOwnerImpl, TypeConstructorMarker {
     static Companion: KClassImpl$Companion;
-    static Companion: KDeclarationContainerImpl$Companion;
     static LOCAL_PROPERTY_SIGNATURE: Regex;
     constructor(jClass: Class<T>)
     // private createSyntheticClass(classId: ClassId, moduleData: RuntimeModuleData): ClassDescriptor;

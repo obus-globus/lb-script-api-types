@@ -10,7 +10,7 @@ export class CameraAimAssistPresetsPacketOperation extends Enum<CameraAimAssistP
     static getByValue(paramarg0: number, paramarg1: CameraAimAssistPresetsPacketOperation): CameraAimAssistPresetsPacketOperation;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CameraAimAssistPresetsPacketOperation;
-    static values(): (Object | null)[];
+    static values(): CameraAimAssistPresetsPacketOperation[];
     private constructor(arg2: number)
     private constructor(arg2: CameraAimAssistPresetsPacketOperation)
     readonly value: number;

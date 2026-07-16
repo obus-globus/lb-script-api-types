@@ -8,7 +8,7 @@ export class OnErrorResult extends Enum<OnErrorResult> implements Serializable {
     static getEntries(): OnErrorResult[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): OnErrorResult;
-    static values(): (Object | null)[];
+    static values(): OnErrorResult[];
     private constructor()
     name(): "SKIP_SUBTREE" | "TERMINATE";
 }

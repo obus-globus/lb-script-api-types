@@ -41,7 +41,7 @@ export class RakChannelOption<T extends unknown> extends ChannelOption<T> {
     static RAK_METRICS: ChannelOption<RakChannelMetrics>;
     static RAK_MIN_MTU: ChannelOption<number>;
     static RAK_MTU: ChannelOption<number>;
-    static RAK_MTU_SIZES: ChannelOption<(Object | null)[]>;
+    static RAK_MTU_SIZES: ChannelOption<number[]>;
     static RAK_ORDERING_CHANNELS: ChannelOption<number>;
     static RAK_PACKET_LIMIT: ChannelOption<number>;
     static RAK_PROTOCOL_VERSION: ChannelOption<number>;

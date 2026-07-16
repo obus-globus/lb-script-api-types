@@ -9,7 +9,6 @@ export class AsyncGeneratorResumeNextNode$WithCall extends AsyncGeneratorResumeN
     static create(paramcontext: JSContext): AsyncGeneratorResumeNextNode;
     static createTailCall(paramcontext: JSContext): AsyncGeneratorResumeNextNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private callNode: InternalCallNode;
     performResumeNext(generator: JSAsyncGeneratorObject, completion: Completion): Object;

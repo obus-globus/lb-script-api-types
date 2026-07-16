@@ -12,7 +12,7 @@ export class Visibility extends Enum<Visibility> {
     static getEntries(): Visibility[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Visibility;
-    static values(): (Object | null)[];
+    static values(): Visibility[];
     private constructor(arg2: number)
     // private flag: FlagImpl;
     getFlag$org_jetbrains_kotlin_kotlin_metadata(): FlagImpl;

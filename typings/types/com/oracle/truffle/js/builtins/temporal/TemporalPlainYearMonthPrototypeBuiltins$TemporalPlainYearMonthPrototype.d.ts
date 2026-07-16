@@ -31,7 +31,7 @@ export class TemporalPlainYearMonthPrototypeBuiltins$TemporalPlainYearMonthProto
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TemporalPlainYearMonthPrototypeBuiltins$TemporalPlainYearMonthPrototype;
-    static values(): (Object | null)[];
+    static values(): TemporalPlainYearMonthPrototypeBuiltins$TemporalPlainYearMonthPrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

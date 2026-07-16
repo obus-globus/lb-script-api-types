@@ -7,7 +7,7 @@ export class UnaryExpression$Op extends Enum<UnaryExpression$Op> {
     static RETURN: UnaryExpression$Op;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): UnaryExpression$Op;
-    static values(): (Object | null)[];
+    static values(): UnaryExpression$Op[];
     private constructor()
     name(): "LOGICAL_NEGATION" | "ARITHMETICAL_NEGATION" | "RETURN";
 }

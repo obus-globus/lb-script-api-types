@@ -9,7 +9,7 @@ export class ProtocolUtilKt extends Object {
      */
     static getDefaultProtocolVersion(): ClientProtocolVersion;
     static getProtocolVersion(): ClientProtocolVersion;
-    static getProtocolVersions(): (Object | null)[];
+    static getProtocolVersions(): ClientProtocolVersion[];
     static getUsesViaFabricPlus(): boolean;
     static isBlocksAttacksExisting(): boolean;
     /**
@@ -63,5 +63,5 @@ export class ProtocolUtilKt extends Object {
     static openVfpProtocolSelection(): void;
     static selectProtocolVersion(protocolId: number): void;
     static send1_8PlayerInput(sideways: number, forward: number, jumping: boolean, sneaking: boolean): void;
-    static send1_8SignUpdate(blockPos: BlockPos, lines: (Object | null)[]): void;
+    static send1_8SignUpdate(blockPos: BlockPos, lines: string[]): void;
 }

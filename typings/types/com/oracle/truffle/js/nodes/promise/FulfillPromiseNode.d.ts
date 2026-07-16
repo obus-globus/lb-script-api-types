@@ -7,7 +7,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class FulfillPromiseNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): FulfillPromiseNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private triggerPromiseReactions: TriggerPromiseReactionsNode;
     execute(promise: JSPromiseObject, value: Object): Object;

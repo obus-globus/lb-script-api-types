@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ToTemporalDurationNodeGen extends ToTemporalDurationNode {
     static create(): ToTemporalDurationNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private state_0_: number;
     // private toTemporalDurationRecord_: ToTemporalDurationRecordNode;

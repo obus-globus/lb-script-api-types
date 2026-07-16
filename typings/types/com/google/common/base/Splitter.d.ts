@@ -10,7 +10,6 @@ export class Splitter extends Object {
     static fixedLength(paramlength: number): Splitter;
     static on(paramseparator: string): Splitter;
     static on(paramseparatorMatcher: CharMatcher): Splitter;
-    static on(paramseparator: string): Splitter;
     static on(paramseparatorPattern: Pattern): Splitter;
     static onPattern(paramseparatorPattern: string): Splitter;
     private constructor(strategy: Splitter$Strategy)

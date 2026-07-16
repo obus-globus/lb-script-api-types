@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSGetOwnPropertyNodeGen$GetPropertyProxyValueNodeGen extends JSGetOwnPropertyNode$GetPropertyProxyValueNode {
     static create(): JSGetOwnPropertyNode$GetPropertyProxyValueNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private cached_cache: JSGetOwnPropertyNodeGen$GetPropertyProxyValueNodeGen$CachedData;
     // private state_0_: number;

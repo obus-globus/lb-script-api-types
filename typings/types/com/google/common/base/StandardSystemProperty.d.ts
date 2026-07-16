@@ -32,7 +32,7 @@ export class StandardSystemProperty extends Enum<StandardSystemProperty> {
     static USER_NAME: StandardSystemProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): StandardSystemProperty;
-    static values(): (Object | null)[];
+    static values(): StandardSystemProperty[];
     private constructor(key: string)
     // private key: string;
     key(): string;

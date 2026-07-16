@@ -8,7 +8,6 @@ import type { UniformValue$Type } from '../../../../net/minecraft/client/rendere
 import type { Vector4fc } from '../../../../org/joml/Vector4fc.d.ts'
 export class UniformValue$Vec4Uniform extends Record implements UniformValue {
     static CODEC: Codec<UniformValue$Vec4Uniform>;
-    static CODEC: Codec<UniformValue>;
     constructor(value: Vector4fc)
     // private value: Vector4fc;
     addSize(calculator: Std140SizeCalculator): void;

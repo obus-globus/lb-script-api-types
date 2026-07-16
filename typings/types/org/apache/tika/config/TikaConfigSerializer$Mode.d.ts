@@ -8,7 +8,7 @@ export class TikaConfigSerializer$Mode extends Enum<TikaConfigSerializer$Mode> {
     static STATIC_FULL: TikaConfigSerializer$Mode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TikaConfigSerializer$Mode;
-    static values(): (Object | null)[];
+    static values(): TikaConfigSerializer$Mode[];
     private constructor()
     name(): "MINIMAL" | "CURRENT" | "STATIC" | "STATIC_FULL";
 }

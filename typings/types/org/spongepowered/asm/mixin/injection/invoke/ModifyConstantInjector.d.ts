@@ -8,7 +8,6 @@ import type { InjectionNodes$InjectionNode } from '../../../../../../org/spongep
 import type { Target$Extension } from '../../../../../../org/spongepowered/asm/mixin/injection/struct/Target$Extension.d.ts'
 export class ModifyConstantInjector extends RedirectInjector {
     static canCoerce(paramarg0: string, paramarg1: string): boolean;
-    static canCoerce(paramarg0: string, paramarg1: string): boolean;
     static canCoerce(paramarg0: Type, paramarg1: Type): boolean;
     constructor(arg0: InjectionInfo)
     // private checkNarrowing(arg0: AbstractInsnNode[], arg1: AbstractInsnNode, arg2: Type): void;

@@ -10,7 +10,7 @@ export class HudVisibility extends Enum<HudVisibility> {
     static getByValue(paramarg0: number, paramarg1: HudVisibility): HudVisibility;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HudVisibility;
-    static values(): (Object | null)[];
+    static values(): HudVisibility[];
     private constructor(arg2: number)
     private constructor(arg2: HudVisibility)
     readonly value: number;

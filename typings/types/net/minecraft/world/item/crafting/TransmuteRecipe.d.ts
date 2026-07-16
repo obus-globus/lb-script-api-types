@@ -24,7 +24,6 @@ export class TransmuteRecipe extends NormalCraftingRecipe {
     static MAP_CODEC: MapCodec<TransmuteRecipe>;
     static MATERIAL_COUNT_BOUNDS: Codec<MinMaxBounds$Ints>;
     static SERIALIZER: RecipeSerializer<TransmuteRecipe>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<any>>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, TransmuteRecipe>;
     static createWithOriginalComponents(paramtarget: ItemStackTemplate, paraminput: ItemStack): ItemStack;
     static createWithOriginalComponents(paramtarget: ItemStackTemplate, paraminput: ItemStack, paramextraCount: number): ItemStack;

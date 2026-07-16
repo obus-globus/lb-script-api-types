@@ -25,28 +25,21 @@ export class VkPhysicalDeviceSparseImageFormatInfo2KHR extends VkPhysicalDeviceS
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceSparseImageFormatInfo2KHR;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceSparseImageFormatInfo2KHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceSparseImageFormatInfo2;
     static create(paramarg0: number): VkPhysicalDeviceSparseImageFormatInfo2;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceSparseImageFormatInfo2KHR;
     static create(paramarg0: number): VkPhysicalDeviceSparseImageFormatInfo2KHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceSparseImageFormatInfo2;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceSparseImageFormatInfo2KHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceSparseImageFormatInfo2;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceSparseImageFormatInfo2;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceSparseImageFormatInfo2KHR;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceSparseImageFormatInfo2KHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nformat(paramarg0: number): number;
     static nformat(paramarg0: number, paramarg1: number): void;
     static npNext(paramarg0: number): number;
@@ -61,7 +54,6 @@ export class VkPhysicalDeviceSparseImageFormatInfo2KHR extends VkPhysicalDeviceS
     static ntype(paramarg0: number, paramarg1: number): void;
     static nusage(paramarg0: number): number;
     static nusage(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

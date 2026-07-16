@@ -13,7 +13,7 @@ export class RegionTelemetry extends Enum<RegionTelemetry> {
     static REGION_SOURCE_IMDS: RegionTelemetry;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RegionTelemetry;
-    static values(): (Object | null)[];
+    static values(): RegionTelemetry[];
     private constructor(arg2: number)
     // private telemetryValue: number;
     name(): "REGION_SOURCE_FAILED_AUTODETECT" | "REGION_SOURCE_CACHE" | "REGION_SOURCE_ENV_VARIABLE" | "REGION_SOURCE_IMDS" | "REGION_OUTCOME_DEVELOPER_AUTODETECT_MATCH" | "REGION_OUTCOME_DEVELOPER_AUTODETECT_FAILED" | "REGION_OUTCOME_DEVELOPER_AUTODETECT_MISMATCH" | "REGION_OUTCOME_AUTODETECT_SUCCESS" | "REGION_OUTCOME_AUTODETECT_FAILED";

@@ -13,7 +13,7 @@ export class PluralRules$Operand extends Enum<PluralRules$Operand> {
     static w: PluralRules$Operand;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PluralRules$Operand;
-    static values(): (Object | null)[];
+    static values(): PluralRules$Operand[];
     private constructor()
     name(): "n" | "i" | "f" | "t" | "v" | "w" | "e" | "c" | "j";
 }

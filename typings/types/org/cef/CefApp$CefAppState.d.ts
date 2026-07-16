@@ -11,7 +11,7 @@ export class CefApp$CefAppState extends Enum<CefApp$CefAppState> {
     static TERMINATED: CefApp$CefAppState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CefApp$CefAppState;
-    static values(): (Object | null)[];
+    static values(): CefApp$CefAppState[];
     private constructor()
     name(): "NONE" | "NEW" | "INITIALIZING" | "INITIALIZED" | "INITIALIZATION_FAILED" | "SHUTTING_DOWN" | "TERMINATED";
 }

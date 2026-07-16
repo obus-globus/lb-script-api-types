@@ -11,7 +11,7 @@ export class CefRequest$TransitionType extends Enum<CefRequest$TransitionType> {
     static TT_RELOAD: CefRequest$TransitionType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CefRequest$TransitionType;
-    static values(): (Object | null)[];
+    static values(): CefRequest$TransitionType[];
     private constructor(arg2: number)
     readonly value: number;
     addQualifier(arg0: CefRequest$TransitionFlags): void;

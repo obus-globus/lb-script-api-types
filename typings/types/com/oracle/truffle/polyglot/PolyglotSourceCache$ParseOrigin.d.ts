@@ -7,7 +7,7 @@ export class PolyglotSourceCache$ParseOrigin extends Enum<PolyglotSourceCache$Pa
     static LANGUAGE: PolyglotSourceCache$ParseOrigin;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PolyglotSourceCache$ParseOrigin;
-    static values(): (Object | null)[];
+    static values(): PolyglotSourceCache$ParseOrigin[];
     private constructor()
     name(): "LANGUAGE" | "INSTRUMENT" | "EMBEDDING";
 }

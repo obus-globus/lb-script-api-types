@@ -10,8 +10,8 @@ export abstract class TimeZone extends Object implements Serializable, Cloneable
     static SHORT: number;
     static availableIDs(): Stream<string>;
     static availableIDs(paramarg0: number): Stream<string>;
-    static getAvailableIDs(): (Object | null)[];
-    static getAvailableIDs(paramarg0: number): (Object | null)[];
+    static getAvailableIDs(): string[];
+    static getAvailableIDs(paramarg0: number): string[];
     static getDefault(): TimeZone;
     static getTimeZone(paramarg0: string): TimeZone;
     static getTimeZone(paramarg0: ZoneId): TimeZone;

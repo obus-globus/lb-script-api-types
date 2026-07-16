@@ -7,7 +7,7 @@ export class CefPdfPrintSettings$MarginType extends Enum<CefPdfPrintSettings$Mar
     static NONE: CefPdfPrintSettings$MarginType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CefPdfPrintSettings$MarginType;
-    static values(): (Object | null)[];
+    static values(): CefPdfPrintSettings$MarginType[];
     private constructor()
     name(): "DEFAULT" | "NONE" | "CUSTOM";
 }

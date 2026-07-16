@@ -5,11 +5,9 @@ import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Float2ShortSortedMaps extends Object {
     static EMPTY_MAP: { [key: string]: any };
-    static entryComparator(paramarg0: (param0: number, param1: number) => number): (param0: Object) => boolean;
+    static entryComparator(paramarg0: (param0: number, param1: number) => number): (param0: Object, param1: Object) => number;
     static fastIterable(paramarg0: { [key: string]: any }): Float2ShortMap$Entry[];
     static fastIterator(paramarg0: { [key: string]: any }): ObjectBidirectionalIterator<Float2ShortMap$Entry>;
-    static singleton(paramarg0: number, paramarg1: number): { [key: string]: any };
-    static singleton(paramarg0: number, paramarg1: number, paramarg2: (param0: number, param1: number) => number): { [key: string]: any };
     static singleton(paramarg0: number, paramarg1: number): { [key: string]: any };
     static singleton(paramarg0: number, paramarg1: number, paramarg2: (param0: number, param1: number) => number): { [key: string]: any };
     static synchronize(paramarg0: { [key: string]: any }): { [key: string]: any };

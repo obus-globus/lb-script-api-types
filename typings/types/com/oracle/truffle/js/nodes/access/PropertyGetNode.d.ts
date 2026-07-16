@@ -18,7 +18,6 @@ export class PropertyGetNode extends PropertyCacheNode<PropertyGetNode$GetCacheN
     static createGetOwn(paramkey: Object, paramcontext: JSContext): PropertyGetNode;
     static getNullNode(): PropertyGetNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(key: Object, context: JSContext, isGlobal: boolean, getOwnProperty: boolean, isMethod: boolean)
     // private cacheNode: PropertyGetNode$GetCacheNode;
     // private getOwnProperty: boolean;

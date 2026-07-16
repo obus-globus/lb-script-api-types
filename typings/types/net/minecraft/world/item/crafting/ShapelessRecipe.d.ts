@@ -20,7 +20,6 @@ export class ShapelessRecipe extends NormalCraftingRecipe {
     static KEY_CODEC: Codec<ResourceKey<Recipe<any>>>;
     static MAP_CODEC: MapCodec<ShapelessRecipe>;
     static SERIALIZER: RecipeSerializer<ShapelessRecipe>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<any>>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ShapelessRecipe>;
     constructor(commonInfo: Recipe$CommonInfo, bookInfo: CraftingRecipe$CraftingBookInfo, result: ItemStackTemplate, ingredients: Ingredient[])
     // private fabric_requiresTesting: boolean;

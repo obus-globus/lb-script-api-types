@@ -13,7 +13,7 @@ export class JSTypeofIdenticalNode$Type extends Enum<JSTypeofIdenticalNode$Type>
     static Undefined: JSTypeofIdenticalNode$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): JSTypeofIdenticalNode$Type;
-    static values(): (Object | null)[];
+    static values(): JSTypeofIdenticalNode$Type[];
     private constructor()
     name(): "Number" | "BigInt" | "String" | "Boolean" | "Object" | "Undefined" | "Function" | "Symbol" | "False";
 }

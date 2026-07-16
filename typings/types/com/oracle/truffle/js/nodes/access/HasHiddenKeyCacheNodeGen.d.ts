@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class HasHiddenKeyCacheNodeGen extends HasHiddenKeyCacheNode {
     static create(paramkey: HiddenKey): HasHiddenKeyCacheNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(key: HiddenKey)
     // private cached_cache: HasHiddenKeyCacheNodeGen$CachedData;
     // private state_0_: number;

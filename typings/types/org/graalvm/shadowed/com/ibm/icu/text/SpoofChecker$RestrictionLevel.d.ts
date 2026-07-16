@@ -10,7 +10,7 @@ export class SpoofChecker$RestrictionLevel extends Enum<SpoofChecker$Restriction
     static UNRESTRICTIVE: SpoofChecker$RestrictionLevel;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SpoofChecker$RestrictionLevel;
-    static values(): (Object | null)[];
+    static values(): SpoofChecker$RestrictionLevel[];
     private constructor()
     name(): "ASCII" | "SINGLE_SCRIPT_RESTRICTIVE" | "HIGHLY_RESTRICTIVE" | "MODERATELY_RESTRICTIVE" | "MINIMALLY_RESTRICTIVE" | "UNRESTRICTIVE";
 }

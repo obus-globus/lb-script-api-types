@@ -6,7 +6,7 @@ export class MessagePattern$ApostropheMode extends Enum<MessagePattern$Apostroph
     static DOUBLE_REQUIRED: MessagePattern$ApostropheMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): MessagePattern$ApostropheMode;
-    static values(): (Object | null)[];
+    static values(): MessagePattern$ApostropheMode[];
     private constructor()
     name(): "DOUBLE_OPTIONAL" | "DOUBLE_REQUIRED";
 }

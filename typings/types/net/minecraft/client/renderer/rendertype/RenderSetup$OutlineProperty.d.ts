@@ -7,7 +7,7 @@ export class RenderSetup$OutlineProperty extends Enum<RenderSetup$OutlinePropert
     static NONE: RenderSetup$OutlineProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RenderSetup$OutlineProperty;
-    static values(): (Object | null)[];
+    static values(): RenderSetup$OutlineProperty[];
     private constructor(name: string)
     // private name: string;
     toString(): string;

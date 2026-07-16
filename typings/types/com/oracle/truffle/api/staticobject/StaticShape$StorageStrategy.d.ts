@@ -7,7 +7,7 @@ export class StaticShape$StorageStrategy extends Enum<StaticShape$StorageStrateg
     static POD_BASED: StaticShape$StorageStrategy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): StaticShape$StorageStrategy;
-    static values(): (Object | null)[];
+    static values(): StaticShape$StorageStrategy[];
     private constructor()
     name(): "ARRAY_BASED" | "FIELD_BASED" | "POD_BASED";
 }

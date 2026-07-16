@@ -3,7 +3,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { At$Shift } from '../../../../../org/spongepowered/asm/mixin/injection/At$Shift.d.ts'
 import type { Desc } from '../../../../../org/spongepowered/asm/mixin/injection/Desc.d.ts'
 export interface At extends Annotation, Object{
-    constructor(args: string[], by: number, desc: Desc, id: string, opcode: number, ordinal: number, remap: boolean, shift: At$Shift, slice: string, target: string, unsafe: boolean, value: string)
     /*not mapped: */ args(): string[];
     /*not mapped: */ by(): number;
     /*not mapped: */ desc(): Desc;

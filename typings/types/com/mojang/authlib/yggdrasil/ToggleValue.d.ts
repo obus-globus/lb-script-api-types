@@ -6,7 +6,7 @@ export class ToggleValue extends Enum<ToggleValue> {
     static ENABLED: ToggleValue;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ToggleValue;
-    static values(): (Object | null)[];
+    static values(): ToggleValue[];
     private constructor()
     isDisabled(): boolean;
     isEnabled(): boolean;

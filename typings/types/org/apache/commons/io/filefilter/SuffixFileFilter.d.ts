@@ -3,11 +3,10 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { FileVisitResult } from '../../../../../java/nio/file/FileVisitResult.d.ts'
 import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { BasicFileAttributes } from '../../../../../java/nio/file/attribute/BasicFileAttributes.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { IOCase } from '../../../../../org/apache/commons/io/IOCase.d.ts'
 import type { AbstractFileFilter } from '../../../../../org/apache/commons/io/filefilter/AbstractFileFilter.d.ts'
 export class SuffixFileFilter extends AbstractFileFilter implements Serializable {
-    static EMPTY_STRING_ARRAY: (Object | null)[];
+    static EMPTY_STRING_ARRAY: string[];
     constructor(...arg0: string[])
     constructor(arg0: string[], arg1: IOCase)
     constructor(arg0: string)

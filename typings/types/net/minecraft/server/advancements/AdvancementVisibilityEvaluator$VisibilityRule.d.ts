@@ -7,7 +7,7 @@ export class AdvancementVisibilityEvaluator$VisibilityRule extends Enum<Advancem
     static SHOW: AdvancementVisibilityEvaluator$VisibilityRule;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): AdvancementVisibilityEvaluator$VisibilityRule;
-    static values(): (Object | null)[];
+    static values(): AdvancementVisibilityEvaluator$VisibilityRule[];
     private constructor()
     name(): "SHOW" | "HIDE" | "NO_CHANGE";
 }

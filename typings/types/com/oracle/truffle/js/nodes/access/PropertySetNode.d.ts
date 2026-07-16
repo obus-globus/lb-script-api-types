@@ -16,7 +16,6 @@ export class PropertySetNode extends PropertyCacheNode<PropertySetNode$SetCacheN
     static createImpl(paramkey: Object, paramisGlobal: boolean, paramcontext: JSContext, paramisStrict: boolean, paramsetOwnProperty: boolean, paramattributeFlags: number, paramdeclaration: boolean, paramsuperProperty: boolean): PropertySetNode;
     static createSetHidden(paramkey: HiddenKey, paramcontext: JSContext): PropertySetNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(key: Object, context: JSContext, isGlobal: boolean, isStrict: boolean, setOwnProperty: boolean, attributeFlags: number, declaration: boolean, superProperty: boolean)
     // private attributeFlags: number;
     // private cacheNode: PropertySetNode$SetCacheNode;

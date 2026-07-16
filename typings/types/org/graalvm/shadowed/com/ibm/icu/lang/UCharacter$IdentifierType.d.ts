@@ -16,7 +16,7 @@ export class UCharacter$IdentifierType extends Enum<UCharacter$IdentifierType> {
     static UNCOMMON_USE: UCharacter$IdentifierType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): UCharacter$IdentifierType;
-    static values(): (Object | null)[];
+    static values(): UCharacter$IdentifierType[];
     private constructor()
     name(): "NOT_CHARACTER" | "DEPRECATED" | "DEFAULT_IGNORABLE" | "NOT_NFKC" | "NOT_XID" | "EXCLUSION" | "OBSOLETE" | "TECHNICAL" | "UNCOMMON_USE" | "LIMITED_USE" | "INCLUSION" | "RECOMMENDED";
 }

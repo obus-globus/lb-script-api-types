@@ -7,7 +7,7 @@ export class CurrencyData$CurrencySpacingInfo$SpacingType extends Enum<CurrencyD
     static COUNT: CurrencyData$CurrencySpacingInfo$SpacingType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CurrencyData$CurrencySpacingInfo$SpacingType;
-    static values(): (Object | null)[];
+    static values(): CurrencyData$CurrencySpacingInfo$SpacingType[];
     private constructor()
     name(): "BEFORE" | "AFTER" | "COUNT";
 }

@@ -14,7 +14,6 @@ export abstract class JSToInt32Node extends JavaScriptBaseNode {
     static create(paramchild: JavaScriptNode, parambitwiseOr: boolean): JavaScriptNode;
     static create(): JSToInt32Node;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doBigInt(value: BigInt): number;
     doBoolean(value: boolean): number;

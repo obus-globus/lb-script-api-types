@@ -9,7 +9,7 @@ export class ZoneOffsetTransitionRule$TimeDefinition extends Enum<ZoneOffsetTran
     static WALL: ZoneOffsetTransitionRule$TimeDefinition;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ZoneOffsetTransitionRule$TimeDefinition;
-    static values(): (Object | null)[];
+    static values(): ZoneOffsetTransitionRule$TimeDefinition[];
     private constructor()
     createDateTime(arg0: LocalDateTime, arg1: ZoneOffset, arg2: ZoneOffset): LocalDateTime;
     name(): "UTC" | "WALL" | "STANDARD";

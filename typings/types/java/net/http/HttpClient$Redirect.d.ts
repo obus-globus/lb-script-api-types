@@ -7,7 +7,7 @@ export class HttpClient$Redirect extends Enum<HttpClient$Redirect> {
     static NORMAL: HttpClient$Redirect;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HttpClient$Redirect;
-    static values(): (Object | null)[];
+    static values(): HttpClient$Redirect[];
     private constructor()
     name(): "NEVER" | "ALWAYS" | "NORMAL";
 }

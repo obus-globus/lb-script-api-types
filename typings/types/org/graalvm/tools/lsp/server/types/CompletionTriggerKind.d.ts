@@ -8,7 +8,7 @@ export class CompletionTriggerKind extends Enum<CompletionTriggerKind> {
     static get(paramintValue: number): CompletionTriggerKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CompletionTriggerKind;
-    static values(): (Object | null)[];
+    static values(): CompletionTriggerKind[];
     private constructor(intValue: number)
     readonly intValue: number;
     getIntValue(): number;

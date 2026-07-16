@@ -9,9 +9,7 @@ import type { StateHolder } from '../../../../net/minecraft/world/level/block/st
 import type { Property } from '../../../../net/minecraft/world/level/block/state/properties/Property.d.ts'
 export class StatePropertiesPredicate$ExactMatcher extends Record implements StatePropertiesPredicate$ValueMatcher {
     static CODEC: Codec<StatePropertiesPredicate$ExactMatcher>;
-    static CODEC: Codec<StatePropertiesPredicate$ValueMatcher>;
     static STREAM_CODEC: StreamCodec<ByteBuf, StatePropertiesPredicate$ExactMatcher>;
-    static STREAM_CODEC: StreamCodec<ByteBuf, StatePropertiesPredicate$ValueMatcher>;
     private constructor(value: string)
     // private value: string;
     equals(o: Object | null): boolean;

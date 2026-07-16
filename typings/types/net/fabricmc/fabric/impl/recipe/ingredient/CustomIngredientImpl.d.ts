@@ -14,7 +14,6 @@ import type { Ingredient } from '../../../../../../net/minecraft/world/item/craf
 import type { SlotDisplay } from '../../../../../../net/minecraft/world/item/crafting/display/SlotDisplay.d.ts'
 import type { ItemLike } from '../../../../../../net/minecraft/world/level/ItemLike.d.ts'
 export class CustomIngredientImpl extends Ingredient {
-    static CODEC: Codec<Ingredient>;
     static CODEC: Codec<CustomIngredientSerializer<any>>;
     static CONTENTS_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Ingredient>;
     static NON_AIR_HOLDER_SET_CODEC: Codec<Holder<Item>[]>;
@@ -25,7 +24,7 @@ export class CustomIngredientImpl extends Ingredient {
     static of(paramstream: Stream<ItemLike>): Ingredient;
     static of(paramtag: Holder<Item>[]): Ingredient;
     static of(paramitemLike: ItemLike): Ingredient;
-    static of(...paramitems: (Object | null)[]): Ingredient;
+    static of(...paramitems: ItemLike[]): Ingredient;
     static optionalIngredientToDisplay(paramingredient: Optional<Ingredient>): SlotDisplay;
     static registerSerializer(paramarg0: CustomIngredientSerializer<any>): void;
     static testOptionalIngredient(paramingredient: Optional<Ingredient>, paramstack: ItemStack): boolean;

@@ -6,7 +6,7 @@ export class Generate$Type extends Enum<Generate$Type> {
     static EXTEND: Generate$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Generate$Type;
-    static values(): (Object | null)[];
+    static values(): Generate$Type[];
     constructor(arg2: any)
     constructor(): string;
     declaration(): string;

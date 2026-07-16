@@ -2,7 +2,7 @@ import type { StringRange$Adder } from '../../../../com/ibm/icu/impl/StringRange
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class StringRange extends Object {
-    static COMPARE_INT_ARRAYS: (param0: Object) => boolean;
+    static COMPARE_INT_ARRAYS: (param0: number[], param1: number[]) => number;
     static compact(paramarg0: string[], paramarg1: StringRange$Adder, paramarg2: boolean): void;
     static compact(paramarg0: string[], paramarg1: StringRange$Adder, paramarg2: boolean, paramarg3: boolean): void;
     static expand(paramarg0: string, paramarg1: string, paramarg2: boolean, paramarg3: string[]): string[];

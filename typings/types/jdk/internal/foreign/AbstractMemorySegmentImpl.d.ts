@@ -36,18 +36,10 @@ export class AbstractMemorySegmentImpl extends Object implements MemorySegment, 
     static copy(paramarg0: MemorySegment, paramarg1: ValueLayout, paramarg2: number, paramarg3: Object, paramarg4: number, paramarg5: number): void;
     static copy(paramarg0: MemorySegment, paramarg1: ValueLayout, paramarg2: number, paramarg3: MemorySegment, paramarg4: ValueLayout, paramarg5: number, paramarg6: number): void;
     static copy(paramarg0: MemorySegment, paramarg1: number, paramarg2: MemorySegment, paramarg3: number, paramarg4: number): void;
-    static copy(paramarg0: Object, paramarg1: number, paramarg2: MemorySegment, paramarg3: ValueLayout, paramarg4: number, paramarg5: number): void;
-    static copy(paramarg0: MemorySegment, paramarg1: ValueLayout, paramarg2: number, paramarg3: Object, paramarg4: number, paramarg5: number): void;
-    static copy(paramarg0: MemorySegment, paramarg1: ValueLayout, paramarg2: number, paramarg3: MemorySegment, paramarg4: ValueLayout, paramarg5: number, paramarg6: number): void;
     static mismatch(paramarg0: MemorySegment, paramarg1: number, paramarg2: number, paramarg3: MemorySegment, paramarg4: number, paramarg5: number): number;
     static ofAddress(paramarg0: number): MemorySegment;
     static ofArray(paramarg0: number[]): MemorySegment;
     static ofArray(paramarg0: string[]): MemorySegment;
-    static ofArray(paramarg0: number[]): MemorySegment;
-    static ofArray(paramarg0: number[]): MemorySegment;
-    static ofArray(paramarg0: number[]): MemorySegment;
-    static ofArray(paramarg0: number[]): MemorySegment;
-    static ofArray(paramarg0: number[]): MemorySegment;
     static ofBuffer(paramarg0: Buffer): MemorySegment;
     static ofBuffer(paramarg0: Buffer): AbstractMemorySegmentImpl;
     static prefixAllocator(paramarg0: MemorySegment): (param0: number, param1: number) => MemorySegment;

@@ -7,7 +7,7 @@ export class ServerPackManager$PackPromptStatus extends Enum<ServerPackManager$P
     static PENDING: ServerPackManager$PackPromptStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ServerPackManager$PackPromptStatus;
-    static values(): (Object | null)[];
+    static values(): ServerPackManager$PackPromptStatus[];
     private constructor()
     name(): "PENDING" | "ALLOWED" | "DECLINED";
 }

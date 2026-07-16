@@ -7,7 +7,7 @@ export class FixedDateFormat$FixedTimeZoneFormat extends Enum<FixedDateFormat$Fi
     static HHMM: FixedDateFormat$FixedTimeZoneFormat;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): FixedDateFormat$FixedTimeZoneFormat;
-    static values(): (Object | null)[];
+    static values(): FixedDateFormat$FixedTimeZoneFormat[];
     private constructor()
     private constructor(timeSeparatorChar: string, minutes: boolean, length: number)
     readonly length: number;

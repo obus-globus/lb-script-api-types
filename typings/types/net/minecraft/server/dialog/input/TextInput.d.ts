@@ -6,7 +6,6 @@ import type { Component } from '../../../../../net/minecraft/network/chat/Compon
 import type { InputControl } from '../../../../../net/minecraft/server/dialog/input/InputControl.d.ts'
 import type { TextInput$MultilineOptions } from '../../../../../net/minecraft/server/dialog/input/TextInput$MultilineOptions.d.ts'
 export class TextInput extends Record implements InputControl {
-    static MAP_CODEC: MapCodec<InputControl>;
     static MAP_CODEC: MapCodec<TextInput>;
     constructor(width: number, label: Component, labelVisible: boolean, initial: string, maxLength: number, multiline: Optional<TextInput$MultilineOptions>)
     // private initial: string;

@@ -8,7 +8,6 @@ import type { Identifier } from '../../../../../../../net/minecraft/resources/Id
 import type { RegistryOps$RegistryInfoLookup } from '../../../../../../../net/minecraft/resources/RegistryOps$RegistryInfoLookup.d.ts'
 import type { TagKey } from '../../../../../../../net/minecraft/tags/TagKey.d.ts'
 export class TagsPopulatedResourceCondition extends Record implements ResourceCondition {
-    static CODEC: Codec<ResourceCondition>;
     static CODEC: MapCodec<TagsPopulatedResourceCondition>;
     static CONDITION_CODEC: Codec<ResourceCondition>;
     static LIST_CODEC: Codec<ResourceCondition[]>;

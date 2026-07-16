@@ -13,7 +13,7 @@ export class PackCompatibility extends Enum<PackCompatibility> {
     static forVersion(parampackDeclaredVersions: InclusiveRange<PackFormat>, paramgameSupportedVersion: PackFormat): PackCompatibility;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PackCompatibility;
-    static values(): (Object | null)[];
+    static values(): PackCompatibility[];
     private constructor(key: string)
     readonly confirmation: Component;
     readonly description: Component;

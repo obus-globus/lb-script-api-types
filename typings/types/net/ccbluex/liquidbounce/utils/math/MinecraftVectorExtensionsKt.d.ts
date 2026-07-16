@@ -64,7 +64,6 @@ export class MinecraftVectorExtensionsKt extends Object {
     static move(vec3: Vec3, x: number, y: number, z: number): Vec3;
     static move(vec3: Vec3, other: Vec3): Vec3;
     static multiply(paramarg0: Vec3, paramarg1: number, paramarg2: number, paramarg3: number): Vec3;
-    static multiply(paramarg0: Vec3, paramarg1: number, paramarg2: number, paramarg3: number): Vec3;
     static normalizeIfNeeded(paramarg0: Vec3): Vec3;
     static normalizeIfNeeded(vec3: Vec3, tolerance: number): Vec3;
     static plus(paramarg0: BlockPos, paramarg1: Vec3i): BlockPos;

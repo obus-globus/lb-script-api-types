@@ -8,7 +8,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PerformPromiseAnyNodeGen extends PerformPromiseAnyNode {
     static create(paramcontext: JSContext): PerformPromiseAnyNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private state_0_: number;
     execute(arg0Value: IteratorRecord, arg1Value: JSDynamicObject, arg2Value: PromiseCapabilityRecord, arg3Value: Object): JSDynamicObject;

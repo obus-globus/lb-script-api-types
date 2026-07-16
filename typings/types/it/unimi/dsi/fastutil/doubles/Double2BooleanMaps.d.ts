@@ -8,7 +8,6 @@ export class Double2BooleanMaps extends Object {
     static fastIterable(paramarg0: { [key: string]: any }): Double2BooleanMap$Entry[];
     static fastIterator(paramarg0: { [key: string]: any }): ObjectIterator<Double2BooleanMap$Entry>;
     static singleton(paramarg0: number, paramarg1: boolean): { [key: string]: any };
-    static singleton(paramarg0: number, paramarg1: boolean): { [key: string]: any };
     static synchronize(paramarg0: { [key: string]: any }): { [key: string]: any };
     static synchronize(paramarg0: { [key: string]: any }, paramarg1: Object): { [key: string]: any };
     static unmodifiable(paramarg0: { [key: string]: any }): { [key: string]: any };

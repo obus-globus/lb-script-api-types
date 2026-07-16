@@ -22,7 +22,7 @@ import type { Quaternionf } from '../../../org/joml/Quaternionf.d.ts'
 import type { Vector3f } from '../../../org/joml/Vector3f.d.ts'
 import type { Vector3fc } from '../../../org/joml/Vector3fc.d.ts'
 export class Direction extends Enum<Direction> implements StringRepresentable {
-    static BY_2D_DATA: (Object | null)[];
+    static BY_2D_DATA: Direction[];
     static BY_ID: (param0: number) => Direction;
     static CODEC: StringRepresentable$EnumCodec<Direction>;
     static DOWN: Direction;
@@ -40,14 +40,14 @@ export class Direction extends Enum<Direction> implements StringRepresentable {
     static allShuffled(paramrandom: RandomSource): Direction[];
     static axisStepOrder(parammovement: Vec3): Direction$Axis[];
     static byName(paramname: string): Direction;
-    static createNameLookup(paramvalueArray: Object | null): (param0: string) => StringRepresentable | null;
-    static createNameLookup(paramvalueArray: Object | null, paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
+    static createNameLookup(paramvalueArray: (StringRepresentable | null)[]): (param0: string) => StringRepresentable | null;
+    static createNameLookup(paramvalueArray: (Object | null)[], paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
     static from2DDataValue(paramdata: number): Direction;
     static from3DDataValue(paramdata: number): Direction;
     static fromAxisAndDirection(paramaxis: Direction$Axis, paramdirection: Direction$AxisDirection): Direction;
-    static fromEnum(paramvalues: () => Object | null): StringRepresentable$EnumCodec<any>;
-    static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<any>;
-    static fromValues(paramvalues: () => Object | null): Codec<StringRepresentable>;
+    static fromEnum(paramvalues: () => (Object | null)[]): StringRepresentable$EnumCodec<any>;
+    static fromEnumWithMapping(paramvalues: () => (Object | null)[], paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<any>;
+    static fromValues(paramvalues: () => (StringRepresentable | null)[]): Codec<StringRepresentable>;
     static fromYRot(paramyRot: number): Direction;
     static get(paramaxisDirection: Direction$AxisDirection, paramaxis: Direction$Axis): Direction;
     static getApproximateNearest(paramdx: number, paramdy: number, paramdz: number): Direction;
@@ -58,13 +58,13 @@ export class Direction extends Enum<Direction> implements StringRepresentable {
     static getNearest(paramvec: Vec3i, paramorElse: Direction): Direction;
     static getRandom(paramarg0: RandomSource): Direction;
     static getYRot(paramdirection: Direction): number;
-    static keys(paramvalues: (Object | null)[]): Keyable;
-    static orderedByNearest(paramentity: Entity): (Object | null)[];
+    static keys(paramvalues: StringRepresentable[]): Keyable;
+    static orderedByNearest(paramentity: Entity): Direction[];
     static rotate(parammatrix: Matrix4fc, paramfacing: Direction): Direction;
     static stream(): Stream<Direction>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Direction;
-    static values(): (Object | null)[];
+    static values(): Direction[];
     private constructor(data3d: number, oppositeIndex: number, data2d: number, name: string, axisDirection: Direction$AxisDirection, axis: Direction$Axis, normal: Vec3i)
     readonly axis: Direction$Axis;
     readonly axisDirection: Direction$AxisDirection;

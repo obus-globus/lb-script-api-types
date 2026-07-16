@@ -8,7 +8,7 @@ export class RakState extends Enum<RakState> {
     static UNCONNECTED: RakState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RakState;
-    static values(): (Object | null)[];
+    static values(): RakState[];
     private constructor()
     name(): "UNCONNECTED" | "CONNECTED" | "DISCONNECTING" | "DISCONNECTED";
 }

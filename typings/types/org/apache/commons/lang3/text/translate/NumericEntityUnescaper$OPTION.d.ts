@@ -7,7 +7,7 @@ export class NumericEntityUnescaper$OPTION extends Enum<NumericEntityUnescaper$O
     static semiColonRequired: NumericEntityUnescaper$OPTION;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): NumericEntityUnescaper$OPTION;
-    static values(): (Object | null)[];
+    static values(): NumericEntityUnescaper$OPTION[];
     private constructor()
     name(): "semiColonRequired" | "semiColonOptional" | "errorIfNoSemiColon";
 }

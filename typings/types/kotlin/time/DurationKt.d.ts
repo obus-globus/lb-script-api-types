@@ -11,6 +11,4 @@ export class DurationKt extends Object {
     static NANOS_IN_MICROS: number;
     static NANOS_IN_MILLIS: number;
     static toDuration(paramarg0: number, paramarg1: DurationUnit): number;
-    static toDuration(paramarg0: number, paramarg1: DurationUnit): number;
-    static toDuration(paramarg0: number, paramarg1: DurationUnit): number;
 }

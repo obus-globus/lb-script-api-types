@@ -29,8 +29,8 @@ export class Multimaps extends Object {
     static filterValues(paramunfiltered: SetMultimap<Object, Object>, paramvaluePredicate: (param0: Object) => boolean): SetMultimap<Object, Object>;
     static flatteningToMultimap(paramkeyFunction: (param0: Object) => Object | null, paramvalueFunction: (param0: Object) => Stream<Object>, parammultimapSupplier: () => Object | null): Collector<Object, Object, Object>;
     static forMap(parammap: Map<Object | null, Object | null>): SetMultimap<Object, Object>;
-    static index(paramvalues: (Object | null)[], paramkeyFunction: (param0: Object) => boolean): ImmutableListMultimap<Object, Object>;
-    static index(paramvalues: Iterator<Object>, paramkeyFunction: (param0: Object) => boolean): ImmutableListMultimap<Object, Object>;
+    static index(paramvalues: (Object | null)[], paramkeyFunction: (param0: Object) => Object | null): ImmutableListMultimap<Object, Object>;
+    static index(paramvalues: Iterator<Object>, paramkeyFunction: (param0: Object) => Object | null): ImmutableListMultimap<Object, Object>;
     static invertFrom(paramsource: Multimap<Object, Object>, paramdest: Object | null): Object | null;
     static newListMultimap(parammap: Map<Object | null, (Object | null)[]>, paramfactory: () => (Object | null)[]): ListMultimap<Object, Object>;
     static newMultimap(parammap: Map<Object | null, (Object | null)[]>, paramfactory: () => (Object | null)[]): Multimap<Object, Object>;
@@ -43,8 +43,8 @@ export class Multimaps extends Object {
     static toMultimap(paramkeyFunction: (param0: Object) => Object | null, paramvalueFunction: (param0: Object) => Object | null, parammultimapSupplier: () => Object | null): Collector<Object, Object, Object>;
     static transformEntries(paramfromMap: ListMultimap<Object, Object>, paramtransformer: (param0: Object, param1: Object) => Object | null): ListMultimap<Object, Object>;
     static transformEntries(paramfromMap: Multimap<Object, Object>, paramtransformer: (param0: Object, param1: Object) => Object | null): Multimap<Object, Object>;
-    static transformValues(paramfromMultimap: ListMultimap<Object, Object>, paramfunction: (param0: Object) => boolean): ListMultimap<Object, Object>;
-    static transformValues(paramfromMultimap: Multimap<Object, Object>, paramfunction: (param0: Object) => boolean): Multimap<Object, Object>;
+    static transformValues(paramfromMultimap: ListMultimap<Object, Object>, paramfunction: (param0: Object) => Object | null): ListMultimap<Object, Object>;
+    static transformValues(paramfromMultimap: Multimap<Object, Object>, paramfunction: (param0: Object) => Object | null): Multimap<Object, Object>;
     static unmodifiableListMultimap(paramdelegate: ImmutableListMultimap<Object, Object>): ListMultimap<Object, Object>;
     static unmodifiableListMultimap(paramdelegate: ListMultimap<Object, Object>): ListMultimap<Object, Object>;
     static unmodifiableMultimap(paramdelegate: ImmutableMultimap<Object, Object>): Multimap<Object, Object>;

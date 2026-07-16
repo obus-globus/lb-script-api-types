@@ -39,28 +39,21 @@ export class VkSubpassDescription2KHR extends VkSubpassDescription2 {
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkSubpassDescription2KHR;
     static calloc(paramarg0: MemoryStack): VkSubpassDescription2KHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkSubpassDescription2;
     static create(paramarg0: number): VkSubpassDescription2;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkSubpassDescription2KHR;
     static create(paramarg0: number): VkSubpassDescription2KHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkSubpassDescription2;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkSubpassDescription2KHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkSubpassDescription2;
     static malloc(paramarg0: MemoryStack): VkSubpassDescription2;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkSubpassDescription2KHR;
     static malloc(paramarg0: MemoryStack): VkSubpassDescription2KHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ncolorAttachmentCount(paramarg0: number): number;
     static ncolorAttachmentCount(paramarg0: number, paramarg1: number): void;
     static nflags(paramarg0: number): number;
@@ -87,7 +80,6 @@ export class VkSubpassDescription2KHR extends VkSubpassDescription2 {
     static nsType(paramarg0: number, paramarg1: number): void;
     static nviewMask(paramarg0: number): number;
     static nviewMask(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

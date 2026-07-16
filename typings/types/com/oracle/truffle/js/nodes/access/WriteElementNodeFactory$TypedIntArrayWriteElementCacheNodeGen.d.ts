@@ -10,7 +10,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class WriteElementNodeFactory$TypedIntArrayWriteElementCacheNodeGen extends WriteElementNode$TypedIntArrayWriteElementCacheNode {
     static create(paramarrayType: TypedArray): WriteElementNode$TypedIntArrayWriteElementCacheNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(arrayType: TypedArray)
     // private state_0_: number;
     // private typedIntArray0_toIntNode_: JSToInt32Node;

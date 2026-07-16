@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ArrayLengthNodeFactory$ArrayLengthReadNodeGen extends ArrayLengthNode$ArrayLengthReadNode {
     static create(): ArrayLengthNode$ArrayLengthReadNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private intLength_cache: ArrayLengthNodeFactory$ArrayLengthReadNodeGen$IntLengthData;
     // private state_0_: number;

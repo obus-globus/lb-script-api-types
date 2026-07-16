@@ -8,7 +8,7 @@ export class Goal$Flag extends Enum<Goal$Flag> {
     static TARGET: Goal$Flag;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Goal$Flag;
-    static values(): (Object | null)[];
+    static values(): Goal$Flag[];
     private constructor()
     name(): "MOVE" | "LOOK" | "JUMP" | "TARGET";
 }

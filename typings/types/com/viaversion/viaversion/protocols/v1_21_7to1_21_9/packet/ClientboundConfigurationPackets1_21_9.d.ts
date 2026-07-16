@@ -29,7 +29,7 @@ export class ClientboundConfigurationPackets1_21_9 extends Enum<ClientboundConfi
     static UPDATE_TAGS: ClientboundConfigurationPackets1_21_9;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClientboundConfigurationPackets1_21_9;
-    static values(): (Object | null)[];
+    static values(): ClientboundConfigurationPackets1_21_9[];
     private constructor()
     direction(): Direction;
     getId(): number;

@@ -7,7 +7,7 @@ export class LiteralExpression$IntegerFormat extends Enum<LiteralExpression$Inte
     static OCTAL: LiteralExpression$IntegerFormat;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LiteralExpression$IntegerFormat;
-    static values(): (Object | null)[];
+    static values(): LiteralExpression$IntegerFormat[];
     private constructor(arg2: number)
     radix: number;
     name(): "DECIMAL" | "HEXADECIMAL" | "OCTAL";

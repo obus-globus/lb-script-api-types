@@ -11,7 +11,7 @@ export class ContainerInput extends Enum<ContainerInput> {
     static THROW: ContainerInput;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ContainerInput;
-    static values(): (Object | null)[];
+    static values(): ContainerInput[];
     private constructor()
     name(): "PICKUP" | "QUICK_MOVE" | "SWAP" | "CLONE" | "THROW" | "QUICK_CRAFT" | "PICKUP_ALL";
 }

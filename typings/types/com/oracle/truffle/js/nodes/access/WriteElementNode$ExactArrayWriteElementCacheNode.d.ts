@@ -6,7 +6,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class WriteElementNode$ExactArrayWriteElementCacheNode extends WriteElementNode$ArrayWriteElementCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     executeSetArray(target: JSDynamicObject, array: ScriptArray, index: number, value: Object, root: WriteElementNode): boolean;
 }

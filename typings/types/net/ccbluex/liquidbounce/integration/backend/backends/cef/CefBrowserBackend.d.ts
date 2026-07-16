@@ -9,6 +9,7 @@ import type { BrowserState } from '../../../../../../../net/ccbluex/liquidbounce
 import type { BrowserViewport } from '../../../../../../../net/ccbluex/liquidbounce/integration/backend/browser/BrowserViewport.d.ts'
 import type { InputAcceptor } from '../../../../../../../net/ccbluex/liquidbounce/integration/backend/input/InputAcceptor.d.ts'
 import type { TaskManager } from '../../../../../../../net/ccbluex/liquidbounce/integration/task/TaskManager.d.ts'
+import type { Component } from '../../../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { CefBrowser as CefBrowser_2 } from '../../../../../../../org/cef/browser/CefBrowser.d.ts'
 /**
  * Uses a modified fork of the JCEF library browser backend made for Minecraft.
@@ -26,9 +27,11 @@ export class CefBrowserBackend extends Object implements EventListener, BrowserB
     accelerationFlags: BrowserAccelerationFlags;
     browsers: CefBrowser[];
     // private cacheFolder: File;
+    readonly debugDisplayName: Component;
     /*not mapped: */ isInitialized(): boolean;
     // private librariesFolder: File;
     // private mcefFolder: File;
+    readonly running: boolean;
     // private addBrowser(browser: CefBrowser): void;
     children(): EventListener[];
     /**

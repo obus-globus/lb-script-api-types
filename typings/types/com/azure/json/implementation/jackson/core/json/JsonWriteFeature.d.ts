@@ -10,7 +10,7 @@ export class JsonWriteFeature extends Enum<JsonWriteFeature> implements FormatFe
     static WRITE_NUMBERS_AS_STRINGS: JsonWriteFeature;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): JsonWriteFeature;
-    static values(): (Object | null)[];
+    static values(): JsonWriteFeature[];
     private constructor(arg2: boolean, arg3: JsonGenerator$Feature)
     // private _defaultState: boolean;
     // private _mappedFeature: JsonGenerator$Feature;

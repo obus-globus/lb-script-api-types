@@ -10,7 +10,7 @@ export class CameraShakeAction extends Enum<CameraShakeAction> {
     static getByValue(paramarg0: number, paramarg1: CameraShakeAction): CameraShakeAction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CameraShakeAction;
-    static values(): (Object | null)[];
+    static values(): CameraShakeAction[];
     private constructor(arg2: number)
     private constructor(arg2: CameraShakeAction)
     readonly value: number;

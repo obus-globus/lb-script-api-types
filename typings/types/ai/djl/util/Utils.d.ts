@@ -9,10 +9,10 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Number } from '../../../java/lang/Number.d.ts'
 import type { Logger } from '../../../org/slf4j/Logger.d.ts'
 export class Utils extends Object {
-    static EMPTY_ARRAY: (Object | null)[];
+    static EMPTY_ARRAY: string[];
     static checkNDArrayValues(paramarg0: NDArray, paramarg1: Logger, paramarg2: string): void;
     static checkParameterValues(paramarg0: Pair<string, Parameter>[], paramarg1: boolean, paramarg2: Logger): void;
-    static contains(paramarg0: Object | null, paramarg1: Object | null): boolean;
+    static contains(paramarg0: (Object | null)[], paramarg1: Object | null): boolean;
     static deleteQuietly(paramarg0: Path): void;
     static getCacheDir(): Path;
     static getCurrentEpoch(paramarg0: Path, paramarg1: string): number;
@@ -25,7 +25,7 @@ export class Utils extends Object {
     static getenv(paramarg0: string, paramarg1: string): string;
     static getenv(): { [key: string]: string };
     static hash(paramarg0: string): string;
-    static indexOf(paramarg0: Object | null, paramarg1: Object | null): number;
+    static indexOf(paramarg0: (Object | null)[], paramarg1: Object | null): number;
     static isOfflineMode(): boolean;
     static moveQuietly(paramarg0: Path, paramarg1: Path): void;
     static openUrl(paramarg0: string): InputStream;

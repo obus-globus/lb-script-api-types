@@ -7,8 +7,8 @@ import type { Collector } from '../../../../java/util/stream/Collector.d.ts'
 import type { Collector$Characteristics } from '../../../../java/util/stream/Collector$Characteristics.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Streams$ArrayCollector<O extends unknown> extends Object implements Collector<O, O[], O[]> {
-    static of(paramarg0: () => Object | null, paramarg1: (param0: Object | null, param1: Object | null) => void, paramarg2: (param0: Object | null, param1: Object | null) => Object | null, paramarg3: (param0: Object | null) => Object | null, ...paramarg4: (Object | null)[]): Collector<Object, Object, Object>;
-    static of(paramarg0: () => Object | null, paramarg1: (param0: Object | null, param1: Object | null) => void, paramarg2: (param0: Object | null, param1: Object | null) => Object | null, ...paramarg3: (Object | null)[]): Collector<Object, Object, Object>;
+    static of(paramarg0: () => Object | null, paramarg1: (param0: Object | null, param1: Object | null) => void, paramarg2: (param0: Object | null, param1: Object | null) => Object | null, paramarg3: (param0: Object | null) => Object | null, ...paramarg4: Collector$Characteristics[]): Collector<Object, Object, Object>;
+    static of(paramarg0: () => Object | null, paramarg1: (param0: Object | null, param1: Object | null) => void, paramarg2: (param0: Object | null, param1: Object | null) => Object | null, ...paramarg3: Collector$Characteristics[]): Collector<Object, Object, Object>;
     constructor(arg0: Class<O>)
     // private elementType: Class<O>;
     accumulator(): (param0: O[], param1: O) => void;

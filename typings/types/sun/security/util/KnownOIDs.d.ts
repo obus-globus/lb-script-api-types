@@ -285,7 +285,7 @@ export class KnownOIDs extends Enum<KnownOIDs> {
     static findMatch(paramarg0: string): KnownOIDs;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): KnownOIDs;
-    static values(): (Object | null)[];
+    static values(): KnownOIDs[];
     private constructor(arg2: string)
     private constructor(arg2: string, arg3: string, ...arg4: string[])
     private constructor(arg2: string, arg3: string, arg4: boolean)

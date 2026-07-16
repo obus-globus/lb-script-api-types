@@ -14,7 +14,7 @@ export class Feature extends Enum<Feature> {
     static TRIGRAPHS: Feature;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Feature;
-    static values(): (Object | null)[];
+    static values(): Feature[];
     private constructor()
     name(): "DIGRAPHS" | "TRIGRAPHS" | "LINEMARKERS" | "CSYNTAX" | "KEEPCOMMENTS" | "KEEPALLCOMMENTS" | "DEBUG" | "OBJCSYNTAX" | "INCLUDENEXT" | "PRAGMA_ONCE";
 }

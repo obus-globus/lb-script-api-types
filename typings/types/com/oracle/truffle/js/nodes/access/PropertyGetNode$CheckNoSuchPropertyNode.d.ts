@@ -9,7 +9,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PropertyGetNode$CheckNoSuchPropertyNode extends PropertyGetNode$LinkedPropertyGetNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(key: Object, receiverCheck: PropertyCacheNode$ReceiverCheckNode, context: JSContext)
     // private callNoSuchNode: JSFunctionCallNode;
     // private context: JSContext;

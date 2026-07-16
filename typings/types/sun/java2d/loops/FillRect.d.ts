@@ -1,4 +1,5 @@
 import type { PrintStream } from '../../../java/io/PrintStream.d.ts'
+import type { Field } from '../../../java/lang/reflect/Field.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { SunGraphics2D } from '../../../sun/java2d/SunGraphics2D.d.ts'
 import type { SurfaceData } from '../../../sun/java2d/SurfaceData.d.ts'
@@ -17,7 +18,7 @@ export class FillRect extends GraphicsPrimitive {
     static locate(paramarg0: SurfaceType, paramarg1: CompositeType, paramarg2: SurfaceType): FillRect;
     static makePrimTypeID(): number;
     static makeUniqueID(paramarg0: number, paramarg1: SurfaceType, paramarg2: CompositeType, paramarg3: SurfaceType): number;
-    static simplename(paramarg0: (Object | null)[], paramarg1: Object): string;
+    static simplename(paramarg0: Field[], paramarg1: Object): string;
     static simplename(paramarg0: CompositeType): string;
     static simplename(paramarg0: SurfaceType): string;
     static tracePrimitive(paramarg0: Object): void;

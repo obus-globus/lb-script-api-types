@@ -12,7 +12,7 @@ export class PrimitiveTopology extends Enum<PrimitiveTopology> {
     static TRIANGLE_STRIP: PrimitiveTopology;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PrimitiveTopology;
-    static values(): (Object | null)[];
+    static values(): PrimitiveTopology[];
     private constructor(primitiveLength: number, primitiveStride: number, connectedPrimitives: boolean)
     connectedPrimitives: boolean;
     primitiveLength: number;

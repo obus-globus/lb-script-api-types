@@ -11,7 +11,7 @@ export class GraphicsAdapterVendor extends Enum<GraphicsAdapterVendor> {
     static fromIcdName(paramarg0: string): GraphicsAdapterVendor;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): GraphicsAdapterVendor;
-    static values(): (Object | null)[];
+    static values(): GraphicsAdapterVendor[];
     private constructor()
     name(): "NVIDIA" | "AMD" | "INTEL" | "UNKNOWN";
 }

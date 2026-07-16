@@ -7,11 +7,9 @@ import type { Name } from '../../../../../../../kotlin/reflect/jvm/internal/impl
 import type { AbstractScopeAdapter } from '../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/AbstractScopeAdapter.d.ts'
 import type { DescriptorKindFilter } from '../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/DescriptorKindFilter.d.ts'
 import type { MemberScope } from '../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope.d.ts'
-import type { MemberScope$Companion } from '../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope$Companion.d.ts'
 import type { TypeIntersectionScope$Companion } from '../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/TypeIntersectionScope$Companion.d.ts'
 import type { KotlinType } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/KotlinType.d.ts'
 export class TypeIntersectionScope extends AbstractScopeAdapter {
-    static Companion: MemberScope$Companion;
     static Companion: TypeIntersectionScope$Companion;
     static create(paramarg0: string, paramarg1: KotlinType[]): MemberScope;
     constructor(arg0: string, arg1: MemberScope, arg2: DefaultConstructorMarker)

@@ -7,7 +7,7 @@ export class ExecutionSequencer$RunningState extends Enum<ExecutionSequencer$Run
     static STARTED: ExecutionSequencer$RunningState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ExecutionSequencer$RunningState;
-    static values(): (Object | null)[];
+    static values(): ExecutionSequencer$RunningState[];
     private constructor()
     name(): "NOT_RUN" | "CANCELLED" | "STARTED";
 }

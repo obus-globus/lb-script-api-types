@@ -7,7 +7,7 @@ export class PromiseLibrary$State extends Enum<PromiseLibrary$State> {
     static REJECTED: PromiseLibrary$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PromiseLibrary$State;
-    static values(): (Object | null)[];
+    static values(): PromiseLibrary$State[];
     private constructor()
     name(): "PENDING" | "FULFILLED" | "REJECTED";
 }

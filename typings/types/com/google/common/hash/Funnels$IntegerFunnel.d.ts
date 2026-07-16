@@ -7,7 +7,7 @@ export class Funnels$IntegerFunnel extends Enum<Funnels$IntegerFunnel> implement
     static INSTANCE: Funnels$IntegerFunnel;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Funnels$IntegerFunnel;
-    static values(): (Object | null)[];
+    static values(): Funnels$IntegerFunnel[];
     private constructor()
     funnel(from: number, into: PrimitiveSink): void;
     toString(): string;

@@ -33,7 +33,7 @@ export class ServerboundPacketsb1_4 extends Enum<ServerboundPacketsb1_4> impleme
     static getPacket(paramarg0: number): ServerboundPacketsb1_4;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ServerboundPacketsb1_4;
-    static values(): (Object | null)[];
+    static values(): ServerboundPacketsb1_4[];
     private constructor(arg2: number, arg3: (param0: UserConnection, param1: ByteBuf) => void)
     readonly id: number;
     readonly packetReader: (param0: UserConnection, param1: ByteBuf) => void;

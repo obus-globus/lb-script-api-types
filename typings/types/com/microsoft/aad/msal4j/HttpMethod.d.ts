@@ -12,7 +12,7 @@ export class HttpMethod extends Enum<HttpMethod> {
     static TRACE: HttpMethod;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HttpMethod;
-    static values(): (Object | null)[];
+    static values(): HttpMethod[];
     private constructor(arg2: string)
     methodName: string;
     name(): "CONNECT" | "DELETE" | "GET" | "HEAD" | "OPTIONS" | "POST" | "PUT" | "TRACE";

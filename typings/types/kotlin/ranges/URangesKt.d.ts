@@ -38,7 +38,6 @@ export class URangesKt extends URangesKt___URangesKt {
     static lastOrNull(paramarg0: UInt[]): UInt;
     static lastOrNull(paramarg0: ULong[]): ULong;
     static random(paramarg0: (Object | null)[], paramarg1: Random): number;
-    static random(paramarg0: (Object | null)[], paramarg1: Random): number;
     static randomOrNull(paramarg0: (Object | null)[], paramarg1: Random): UInt;
     static randomOrNull(paramarg0: (Object | null)[], paramarg1: Random): ULong;
     static reversed(paramarg0: UInt[]): UInt[];

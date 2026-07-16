@@ -8,7 +8,7 @@ export class ElementOrder$Type extends Enum<ElementOrder$Type> {
     static UNORDERED: ElementOrder$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ElementOrder$Type;
-    static values(): (Object | null)[];
+    static values(): ElementOrder$Type[];
     private constructor()
     name(): "UNORDERED" | "STABLE" | "INSERTION" | "SORTED";
 }

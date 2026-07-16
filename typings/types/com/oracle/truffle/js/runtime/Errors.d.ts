@@ -36,7 +36,7 @@ export class Errors extends Object {
     static createRangeErrorBigIntMaxSizeExceeded(): JSException;
     static createRangeErrorCurrencyNotWellFormed(paramcurrencyCode: string): JSException;
     static createRangeErrorEncodingNotSupported(paramencoding: TruffleString): JSException;
-    static createRangeErrorFormat(parammessage: string, paramoriginatingNode: Node, ...paramargs: (Object | null)[]): JSException;
+    static createRangeErrorFormat(parammessage: string, paramoriginatingNode: Node, ...paramargs: Object[]): JSException;
     static createRangeErrorIndexNegative(paramoriginatingNode: Node): JSException;
     static createRangeErrorIndexTooLarge(paramoriginatingNode: Node): JSException;
     static createRangeErrorInvalidArrayLength(): JSException;
@@ -74,7 +74,7 @@ export class Errors extends Object {
     static createSyntaxError(parammessage: string, paramoriginatingNode: Node): JSException;
     static createSyntaxError(parammessage: string, paramcause: Throwable, paramoriginatingNode: Node): JSException;
     static createSyntaxError(parammessage: string, paramcause: Throwable, paramsourceLocation: SourceSection, paramisIncompleteSource: boolean): JSException;
-    static createSyntaxErrorFormat(parammessage: string, paramoriginatingNode: Node, ...paramargs: (Object | null)[]): JSException;
+    static createSyntaxErrorFormat(parammessage: string, paramoriginatingNode: Node, ...paramargs: Object[]): JSException;
     static createSyntaxErrorVariableAlreadyDeclared(paramvarName: TruffleString, paramoriginatingNode: Node): JSException;
     static createTypeError(parammessage: string): JSException;
     static createTypeError(parammessage: string, paramoriginatingNode: Node): JSException;
@@ -115,7 +115,7 @@ export class Errors extends Object {
     static createTypeErrorDetachedBuffer(): JSException;
     static createTypeErrorDisplayNamesExpected(): JSException;
     static createTypeErrorFinalizationRegistryExpected(): JSException;
-    static createTypeErrorFormat(parammessage: string, ...paramargs: (Object | null)[]): JSException;
+    static createTypeErrorFormat(parammessage: string, ...paramargs: Object[]): JSException;
     static createTypeErrorGeneratorObjectExpected(): JSException;
     static createTypeErrorGlobalObjectNotExtensible(paramoriginatingNode: Node): JSException;
     static createTypeErrorIncompatibleReceiver(parammethodName: TruffleString, paramreceiver: Object): JSException;

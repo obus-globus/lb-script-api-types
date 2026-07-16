@@ -5,8 +5,8 @@ import type { ArrayCache } from '../../../../../../org/graalvm/shadowed/org/tuka
 import type { FilterEncoder } from '../../../../../../org/graalvm/shadowed/org/tukaani/xz/FilterEncoder.d.ts'
 import type { FinishableOutputStream } from '../../../../../../org/graalvm/shadowed/org/tukaani/xz/FinishableOutputStream.d.ts'
 export abstract class FilterOptions extends Object implements Cloneable {
-    static getDecoderMemoryUsage(paramoptions: (Object | null)[]): number;
-    static getEncoderMemoryUsage(paramoptions: (Object | null)[]): number;
+    static getDecoderMemoryUsage(paramoptions: FilterOptions[]): number;
+    static getEncoderMemoryUsage(paramoptions: FilterOptions[]): number;
     constructor()
     protected clone(): Object;
     getDecoderMemoryUsage(): number;

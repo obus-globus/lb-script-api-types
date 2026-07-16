@@ -14,7 +14,7 @@ export class ModuleSurround$Features extends Enum<ModuleSurround$Features> imple
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleSurround$Features;
-    static values(): (Object | null)[];
+    static values(): ModuleSurround$Features[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "CENTER" | "EXTEND" | "NO_WASTE" | "DOWN";

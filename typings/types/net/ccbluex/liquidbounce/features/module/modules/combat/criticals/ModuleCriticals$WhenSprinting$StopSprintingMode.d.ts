@@ -14,7 +14,7 @@ export class ModuleCriticals$WhenSprinting$StopSprintingMode extends Enum<Module
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleCriticals$WhenSprinting$StopSprintingMode;
-    static values(): (Object | null)[];
+    static values(): ModuleCriticals$WhenSprinting$StopSprintingMode[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "NONE" | "LEGIT" | "ON_NETWORK" | "ON_ATTACK";

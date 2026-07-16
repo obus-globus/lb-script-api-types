@@ -16,7 +16,7 @@ export class JvmPrimitiveType extends Enum<JvmPrimitiveType> {
     static get(paramarg0: PrimitiveType): JvmPrimitiveType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): JvmPrimitiveType;
-    static values(): (Object | null)[];
+    static values(): JvmPrimitiveType[];
     private constructor(arg2: PrimitiveType, arg3: string, arg4: string, arg5: string)
     readonly desc: string;
     // private name: string;

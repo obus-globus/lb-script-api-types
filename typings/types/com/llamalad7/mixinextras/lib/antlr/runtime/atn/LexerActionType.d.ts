@@ -11,7 +11,7 @@ export class LexerActionType extends Enum<LexerActionType> {
     static SKIP: LexerActionType;
     static TYPE: LexerActionType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static values(): (Object | null)[];
+    static values(): LexerActionType[];
     private constructor()
     name(): "CHANNEL" | "CUSTOM" | "MODE" | "MORE" | "POP_MODE" | "PUSH_MODE" | "SKIP" | "TYPE";
 }

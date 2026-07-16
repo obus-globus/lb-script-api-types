@@ -1,8 +1,8 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Value } from '../../../../org/graalvm/polyglot/Value.d.ts'
 export class PolyglotExtensionsKt extends Object {
-    static asArray(value: Value): Object | null;
-    static asBooleanArray(value: Value): (Object | null)[];
+    static asArray(value: Value): (Object | null)[];
+    static asBooleanArray(value: Value): boolean[];
     static asByteArray(value: Value): number[];
     static asCharArray(value: Value): string[];
     static asDoubleArray(value: Value): number[];

@@ -6,7 +6,7 @@ export class ObjectiveCriteriaRenderType extends Enum<ObjectiveCriteriaRenderTyp
     static INTEGER: ObjectiveCriteriaRenderType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ObjectiveCriteriaRenderType;
-    static values(): (Object | null)[];
+    static values(): ObjectiveCriteriaRenderType[];
     private constructor()
     name(): "INTEGER" | "HEARTS";
 }

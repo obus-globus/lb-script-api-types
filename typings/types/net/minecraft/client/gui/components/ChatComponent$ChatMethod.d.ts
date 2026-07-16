@@ -7,7 +7,7 @@ export class ChatComponent$ChatMethod extends Enum<ChatComponent$ChatMethod> {
     static MESSAGE: ChatComponent$ChatMethod;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ChatComponent$ChatMethod;
-    static values(): (Object | null)[];
+    static values(): ChatComponent$ChatMethod[];
     private constructor(prefix: string)
     // private prefix: string;
     isDraftRestorable(draft: ChatComponent$Draft): boolean;

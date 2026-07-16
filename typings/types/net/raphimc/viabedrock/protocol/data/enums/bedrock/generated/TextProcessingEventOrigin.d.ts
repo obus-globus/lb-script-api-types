@@ -25,7 +25,7 @@ export class TextProcessingEventOrigin extends Enum<TextProcessingEventOrigin> {
     static getByValue(paramarg0: number, paramarg1: TextProcessingEventOrigin): TextProcessingEventOrigin;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TextProcessingEventOrigin;
-    static values(): (Object | null)[];
+    static values(): TextProcessingEventOrigin[];
     private constructor(arg2: number)
     private constructor(arg2: TextProcessingEventOrigin)
     readonly value: number;

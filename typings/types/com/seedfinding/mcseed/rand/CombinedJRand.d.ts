@@ -10,7 +10,6 @@ export class CombinedJRand extends JRand {
     static ofInternalSeed(paramarg0: number): JRand;
     static ofScrambledSeed(paramarg0: number): JRand;
     static shuffle(paramarg0: Object[], paramarg1: JRand): void;
-    static swap(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): void;
     static swap(paramarg0: Object[], paramarg1: number, paramarg2: number): void;
     constructor(arg0: number, arg1: number)
     constructor(arg0: number, arg1: number, arg2: boolean)

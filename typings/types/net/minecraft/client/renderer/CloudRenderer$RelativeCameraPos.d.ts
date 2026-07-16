@@ -7,7 +7,7 @@ export class CloudRenderer$RelativeCameraPos extends Enum<CloudRenderer$Relative
     static INSIDE_CLOUDS: CloudRenderer$RelativeCameraPos;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CloudRenderer$RelativeCameraPos;
-    static values(): (Object | null)[];
+    static values(): CloudRenderer$RelativeCameraPos[];
     private constructor()
     name(): "ABOVE_CLOUDS" | "INSIDE_CLOUDS" | "BELOW_CLOUDS";
 }

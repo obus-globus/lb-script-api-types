@@ -14,7 +14,7 @@ export class PolyglotBuiltins$Polyglot extends Enum<PolyglotBuiltins$Polyglot> i
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PolyglotBuiltins$Polyglot;
-    static values(): (Object | null)[];
+    static values(): PolyglotBuiltins$Polyglot[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

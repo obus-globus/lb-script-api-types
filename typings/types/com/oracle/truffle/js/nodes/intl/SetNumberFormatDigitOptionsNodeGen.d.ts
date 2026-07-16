@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class SetNumberFormatDigitOptionsNodeGen extends SetNumberFormatDigitOptionsNode {
     static create(paramcontext: JSContext): SetNumberFormatDigitOptionsNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     execute(arg0Value: JSNumberFormat$BasicInternalState, arg1Value: Object, arg2Value: number, arg3Value: number, arg4Value: boolean): Object;
 }

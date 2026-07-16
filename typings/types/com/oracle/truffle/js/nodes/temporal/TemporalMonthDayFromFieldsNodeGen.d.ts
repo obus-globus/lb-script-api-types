@@ -8,7 +8,6 @@ import type { TemporalUtil$Overflow } from '../../../../../../com/oracle/truffle
 export class TemporalMonthDayFromFieldsNodeGen extends TemporalMonthDayFromFieldsNode {
     static create(): TemporalMonthDayFromFieldsNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private state_0_: number;
     // private toIntOrInfinityNode_: JSToIntegerOrInfinityNode;

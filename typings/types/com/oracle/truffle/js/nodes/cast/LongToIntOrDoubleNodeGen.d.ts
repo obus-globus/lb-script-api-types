@@ -7,7 +7,6 @@ export class LongToIntOrDoubleNodeGen extends LongToIntOrDoubleNode {
     static getUncached(): LongToIntOrDoubleNode;
     static inline(paramtarget: InlineSupport$InlineTarget): LongToIntOrDoubleNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private state_0_: number;
     execute(arg0Value: Node, arg1Value: number): Number;

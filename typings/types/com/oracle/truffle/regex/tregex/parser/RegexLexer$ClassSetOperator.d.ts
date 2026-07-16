@@ -7,7 +7,7 @@ export class RegexLexer$ClassSetOperator extends Enum<RegexLexer$ClassSetOperato
     static Union: RegexLexer$ClassSetOperator;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RegexLexer$ClassSetOperator;
-    static values(): (Object | null)[];
+    static values(): RegexLexer$ClassSetOperator[];
     private constructor(repr: string)
     // private repr: string;
     toString(): string;

@@ -9,7 +9,7 @@ export class PositionTrackingDBClientRequestPacket_Action extends Enum<PositionT
     static getByValue(paramarg0: number, paramarg1: PositionTrackingDBClientRequestPacket_Action): PositionTrackingDBClientRequestPacket_Action;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PositionTrackingDBClientRequestPacket_Action;
-    static values(): (Object | null)[];
+    static values(): PositionTrackingDBClientRequestPacket_Action[];
     private constructor(arg2: number)
     private constructor(arg2: PositionTrackingDBClientRequestPacket_Action)
     readonly value: number;

@@ -4,6 +4,6 @@ import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class XXHashJNI extends Enum<XXHashJNI> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): XXHashJNI;
-    static values(): (Object | null)[];
+    static values(): XXHashJNI[];
     private constructor()
 }

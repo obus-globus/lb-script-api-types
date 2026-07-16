@@ -13,7 +13,7 @@ export class CommandOutputType extends Enum<CommandOutputType> {
     static getByValue(paramarg0: number, paramarg1: CommandOutputType): CommandOutputType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CommandOutputType;
-    static values(): (Object | null)[];
+    static values(): CommandOutputType[];
     private constructor(arg2: number)
     private constructor(arg2: CommandOutputType)
     readonly value: number;

@@ -4,7 +4,7 @@ import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/L
 import type { LogEventPatternConverter } from '../../../../../../org/apache/logging/log4j/core/pattern/LogEventPatternConverter.d.ts'
 export class NanoTimePatternConverter extends LogEventPatternConverter {
     static CATEGORY: string;
-    static newInstance(paramoptions: (Object | null)[]): NanoTimePatternConverter;
+    static newInstance(paramoptions: string[]): NanoTimePatternConverter;
     private constructor(options: string[])
     format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, output: StringBuilder): void;

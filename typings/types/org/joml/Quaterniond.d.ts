@@ -28,9 +28,9 @@ import type { Vector4dc } from '../../org/joml/Vector4dc.d.ts'
 import type { Vector4f } from '../../org/joml/Vector4f.d.ts'
 import type { Vector4fc } from '../../org/joml/Vector4fc.d.ts'
 export class Quaterniond extends Object implements Externalizable, Cloneable, Quaterniondc {
-    static nlerp(paramarg0: (Object | null)[], paramarg1: number[], paramarg2: Quaterniond): Quaterniondc;
-    static nlerpIterative(paramarg0: (Object | null)[], paramarg1: number[], paramarg2: number, paramarg3: Quaterniond): Quaterniond;
-    static slerp(paramarg0: (Object | null)[], paramarg1: number[], paramarg2: Quaterniond): Quaterniondc;
+    static nlerp(paramarg0: Quaterniond[], paramarg1: number[], paramarg2: Quaterniond): Quaterniondc;
+    static nlerpIterative(paramarg0: Quaterniondc[], paramarg1: number[], paramarg2: number, paramarg3: Quaterniond): Quaterniond;
+    static slerp(paramarg0: Quaterniond[], paramarg1: number[], paramarg2: Quaterniond): Quaterniondc;
     constructor()
     constructor(arg0: number, arg1: number, arg2: number, arg3: number)
     constructor(arg0: AxisAngle4d)

@@ -20,7 +20,7 @@ export class GpuFormat$ComponentType extends Enum<GpuFormat$ComponentType> {
     static UNORM_8: GpuFormat$ComponentType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): GpuFormat$ComponentType;
-    static values(): (Object | null)[];
+    static values(): GpuFormat$ComponentType[];
     private constructor(byteSize: number)
     // private byteSize: number;
     byteSize(): number;

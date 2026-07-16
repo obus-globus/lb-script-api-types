@@ -7,7 +7,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class GetTemporalCalendarIdentifierWithISODefaultNodeGen extends GetTemporalCalendarIdentifierWithISODefaultNode {
     static create(): GetTemporalCalendarIdentifierWithISODefaultNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private other_getCalendar_: PropertyGetNode;
     // private other_toCalendarIdentifier_: ToTemporalCalendarIdentifierNode;

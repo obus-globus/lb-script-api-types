@@ -8,7 +8,7 @@ export class RequiresOptIn$Level extends Enum<RequiresOptIn$Level> implements Se
     static getEntries(): RequiresOptIn$Level[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RequiresOptIn$Level;
-    static values(): (Object | null)[];
+    static values(): RequiresOptIn$Level[];
     private constructor()
     name(): "WARNING" | "ERROR";
 }

@@ -6,7 +6,7 @@ export class ExpirationPolicy extends Enum<ExpirationPolicy> {
     static CREATED: ExpirationPolicy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ExpirationPolicy;
-    static values(): (Object | null)[];
+    static values(): ExpirationPolicy[];
     private constructor()
     name(): "ACCESSED" | "CREATED";
 }

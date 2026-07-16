@@ -19,7 +19,7 @@ export class ConstantPool$Tag extends Enum<ConstantPool$Tag> {
     static UTF8: ConstantPool$Tag;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ConstantPool$Tag;
-    static values(): (Object | null)[];
+    static values(): ConstantPool$Tag[];
     private constructor(arg2: number)
     // private tagCode: number;
     name(): "UTF8" | "INTEGER" | "FLOAT" | "LONG" | "DOUBLE" | "CLASS" | "STRING" | "FIELDREF" | "METHODREF" | "INTERFACEMETHODREF" | "NAMEANDTYPE" | "METHODHANDLE" | "METHODTYPE" | "INVOKEDYNAMIC" | "INVALID";

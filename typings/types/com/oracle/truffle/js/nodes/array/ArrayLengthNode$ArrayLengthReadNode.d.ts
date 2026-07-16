@@ -7,7 +7,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ArrayLengthNode$ArrayLengthReadNode extends ArrayLengthNode {
     static create(): ArrayLengthNode$ArrayLengthReadNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doTypedArrayAutoLength(target: JSTypedArrayObject, typedArrayLengthNode: TypedArrayLengthNode): number;
     executeDouble(target: JSDynamicObject): number;

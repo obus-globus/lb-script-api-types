@@ -15,7 +15,7 @@ export class CRLReason extends Enum<CRLReason> {
     static UNUSED: CRLReason;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CRLReason;
-    static values(): (Object | null)[];
+    static values(): CRLReason[];
     private constructor()
     name(): "UNSPECIFIED" | "KEY_COMPROMISE" | "CA_COMPROMISE" | "AFFILIATION_CHANGED" | "SUPERSEDED" | "CESSATION_OF_OPERATION" | "CERTIFICATE_HOLD" | "UNUSED" | "REMOVE_FROM_CRL" | "PRIVILEGE_WITHDRAWN" | "AA_COMPROMISE";
 }

@@ -10,7 +10,6 @@ export class GetDurationUnitOptionsNodeGen extends GetDurationUnitOptionsNode {
     static LONG_SHORT_NARROW_STYLES: string[];
     static create(paramcontext: JSContext, paramunit: GetDurationUnitOptionsNode$Unit, paramstyleList: string[], paramdigitalBase: string): GetDurationUnitOptionsNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, unit: GetDurationUnitOptionsNode$Unit, styleList: string[], digitalBase: string)
     executeOptions(arg0Value: Object, arg1Value: string, arg2Value: string, arg3Value: boolean): Pair<string, string>;
 }

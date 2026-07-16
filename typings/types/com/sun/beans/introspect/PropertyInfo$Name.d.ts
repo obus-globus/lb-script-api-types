@@ -12,7 +12,7 @@ export class PropertyInfo$Name extends Enum<PropertyInfo$Name> {
     static visualUpdate: PropertyInfo$Name;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PropertyInfo$Name;
-    static values(): (Object | null)[];
+    static values(): PropertyInfo$Name[];
     private constructor()
     name(): "bound" | "expert" | "hidden" | "preferred" | "required" | "visualUpdate" | "description" | "enumerationValues";
 }

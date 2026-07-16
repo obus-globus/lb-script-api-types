@@ -20,7 +20,6 @@ import type { ClassTweaker } from '../../../../net/fabricmc/loader/impl/lib/clas
 export class FabricLoaderImpl extends FabricLoader {
     static ASM_VERSION: number;
     static CACHE_DIR_NAME: string;
-    static INSTANCE: FabricLoader;
     static INSTANCE: FabricLoaderImpl;
     static MOD_ID: string;
     static REMAPPED_JARS_DIR_NAME: string;
@@ -41,7 +40,7 @@ export class FabricLoaderImpl extends FabricLoader {
     // private provider: GameProvider;
     // private addMod(arg0: ModCandidateImpl): void;
     // private dumpModList(arg0: ModCandidateImpl[]): void;
-    // private dumpModList0(arg0: ModCandidateImpl, arg1: StringBuilder, arg2: number, arg3: (Object | null)[]): void;
+    // private dumpModList0(arg0: ModCandidateImpl, arg1: StringBuilder, arg2: number, arg3: boolean[]): void;
     dumpNonFabricMods(arg0: Path[]): void;
     // private finishModLoading(): void;
     freeze(): void;

@@ -10,8 +10,8 @@ export class TimeZoneAdapter extends TimeZone_2 implements Cloneable {
     static SHORT: number;
     static availableIDs(): Stream<string>;
     static availableIDs(paramarg0: number): Stream<string>;
-    static getAvailableIDs(): (Object | null)[];
-    static getAvailableIDs(paramarg0: number): (Object | null)[];
+    static getAvailableIDs(): string[];
+    static getAvailableIDs(paramarg0: number): string[];
     static getDefault(): TimeZone_2;
     static getTimeZone(paramarg0: string): TimeZone_2;
     static getTimeZone(paramarg0: ZoneId): TimeZone_2;

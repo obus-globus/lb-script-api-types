@@ -5,7 +5,7 @@ import type { Object } from '../../java/lang/Object.d.ts'
 export interface Spliterator$OfPrimitive<T extends unknown, T_CONS extends unknown, T_SPLITR extends Spliterator$OfPrimitive<T, T_CONS, T_SPLITR>> extends Spliterator<T>, Object {
     forEachRemaining(arg0: T_CONS): void;
     forEachRemaining(arg0: (param0: T) => void): void;
-    getComparator(): (param0: Object) => boolean;
+    getComparator(): (param0: T, param1: T) => number;
     getExactSizeIfKnown(): number;
     hasCharacteristics(arg0: number): boolean;
     tryAdvance(arg0: T_CONS): boolean;

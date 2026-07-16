@@ -47,7 +47,7 @@ export class ContainerType extends Enum<ContainerType> {
     static getByValue(paramarg0: number, paramarg1: ContainerType): ContainerType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ContainerType;
-    static values(): (Object | null)[];
+    static values(): ContainerType[];
     private constructor(arg2: number)
     private constructor(arg2: ContainerType)
     readonly value: number;

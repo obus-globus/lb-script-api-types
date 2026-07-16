@@ -6,7 +6,7 @@ export class StringTrieBuilder$Option extends Enum<StringTrieBuilder$Option> {
     static SMALL: StringTrieBuilder$Option;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): StringTrieBuilder$Option;
-    static values(): (Object | null)[];
+    static values(): StringTrieBuilder$Option[];
     private constructor()
     name(): "FAST" | "SMALL";
 }

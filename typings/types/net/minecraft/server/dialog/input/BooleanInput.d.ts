@@ -5,7 +5,6 @@ import type { Component } from '../../../../../net/minecraft/network/chat/Compon
 import type { InputControl } from '../../../../../net/minecraft/server/dialog/input/InputControl.d.ts'
 export class BooleanInput extends Record implements InputControl {
     static MAP_CODEC: MapCodec<BooleanInput>;
-    static MAP_CODEC: MapCodec<InputControl>;
     constructor(label: Component, initial: boolean, onTrue: string, onFalse: string)
     // private initial: boolean;
     // private label: Component;

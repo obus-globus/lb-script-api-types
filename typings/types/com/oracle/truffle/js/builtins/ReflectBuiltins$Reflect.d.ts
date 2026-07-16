@@ -23,7 +23,7 @@ export class ReflectBuiltins$Reflect extends Enum<ReflectBuiltins$Reflect> imple
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ReflectBuiltins$Reflect;
-    static values(): (Object | null)[];
+    static values(): ReflectBuiltins$Reflect[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

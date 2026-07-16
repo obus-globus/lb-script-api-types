@@ -38,7 +38,6 @@ export class ClientSuggestionProvider extends Object implements FabricClientComm
     static matchesSubStr(parampattern: string, paraminput: string): boolean;
     static suggest(paramvalues: (Object | null)[], parambuilder: SuggestionsBuilder, paramtoString: (param0: Object | null) => string, paramtooltip: (param0: Object | null) => Message): CompletableFuture<Suggestions>;
     static suggest(paramvalues: string[], parambuilder: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    static suggest(paramvalues: (Object | null)[], parambuilder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     static suggest(paramvalues: Stream<string>, parambuilder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     static suggest2DCoordinates(paramcurrentInput: string, paramallSuggestions: SharedSuggestionProvider$TextCoordinates[], parambuilder: SuggestionsBuilder, paramvalidator: (param0: string) => boolean): CompletableFuture<Suggestions>;
     static suggestCoordinates(paramcurrentInput: string, paramallSuggestions: SharedSuggestionProvider$TextCoordinates[], parambuilder: SuggestionsBuilder, paramvalidator: (param0: string) => boolean): CompletableFuture<Suggestions>;

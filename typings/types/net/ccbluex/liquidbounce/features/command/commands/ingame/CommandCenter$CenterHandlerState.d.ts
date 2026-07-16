@@ -7,7 +7,7 @@ export class CommandCenter$CenterHandlerState extends Enum<CommandCenter$CenterH
     static getEntries(): CommandCenter$CenterHandlerState[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CommandCenter$CenterHandlerState;
-    static values(): (Object | null)[];
+    static values(): CommandCenter$CenterHandlerState[];
     private constructor()
     name(): "INACTIVE" | "APPLY_ON_NEXT_EVENT";
 }

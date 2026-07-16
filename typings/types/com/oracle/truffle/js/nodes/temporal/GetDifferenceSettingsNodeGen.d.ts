@@ -11,7 +11,6 @@ import type { TemporalUtil$Unit } from '../../../../../../com/oracle/truffle/js/
 export class GetDifferenceSettingsNodeGen extends GetDifferenceSettingsNode {
     static create(): GetDifferenceSettingsNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private equalNode_: TruffleString$EqualNode;
     // private getLargestUnit_: GetTemporalUnitNode;

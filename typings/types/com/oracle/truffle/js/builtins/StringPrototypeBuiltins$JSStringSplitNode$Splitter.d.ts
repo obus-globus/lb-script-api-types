@@ -5,7 +5,6 @@ import type { JavaScriptBaseNode } from '../../../../../com/oracle/truffle/js/no
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class StringPrototypeBuiltins$JSStringSplitNode$Splitter<T extends unknown> extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(node: Node, input: TruffleString, limit: number, separator: T, groupCount: number, parent: StringPrototypeBuiltins$JSStringSplitNode): Object[];
 }

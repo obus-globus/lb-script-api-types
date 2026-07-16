@@ -119,8 +119,8 @@ export class RelativeDateFormat extends DateFormat {
     static YEAR_QUARTER: string;
     static YEAR_WOY_FIELD: number;
     static ZONE_SKELETONS: string[];
-    static getAvailableLocales(): (Object | null)[];
-    static getAvailableULocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
+    static getAvailableULocales(): ULocale[];
     static getDateInstance(): DateFormat;
     static getDateInstance(paramstyle: number): DateFormat;
     static getDateInstance(paramstyle: number, paramaLocale: Locale): DateFormat;

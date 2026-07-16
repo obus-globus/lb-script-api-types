@@ -7,7 +7,7 @@ export class InitializeDateTimeFormatNode$Required extends Enum<InitializeDateTi
     static TIME: InitializeDateTimeFormatNode$Required;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): InitializeDateTimeFormatNode$Required;
-    static values(): (Object | null)[];
+    static values(): InitializeDateTimeFormatNode$Required[];
     private constructor()
     name(): "DATE" | "TIME" | "ANY";
 }

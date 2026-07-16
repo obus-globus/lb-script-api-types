@@ -6,6 +6,6 @@ export class Native extends Enum<Native> {
     static load(): void;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Native;
-    static values(): (Object | null)[];
+    static values(): Native[];
     private constructor()
 }

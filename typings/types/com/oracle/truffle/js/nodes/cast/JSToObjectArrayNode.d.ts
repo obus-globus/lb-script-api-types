@@ -14,7 +14,6 @@ export abstract class JSToObjectArrayNode extends JavaScriptBaseNode {
     static create(): JSToObjectArrayNode;
     static create(paramnullOrUndefinedAsEmptyArray: boolean): JSToObjectArrayNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(nullOrUndefinedAsEmptyArray: boolean)
     // private nullOrUndefinedAsEmptyArray: boolean;
     doFallback(value: Object, arrayLengthLimit: number): Object[];

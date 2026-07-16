@@ -7,7 +7,6 @@ import type { JSDynamicObject } from '../../../../../com/oracle/truffle/js/runti
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class StringPrototypeBuiltins$CreateRegExpStringIteratorNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private createObjectNode: CreateObjectNode$CreateObjectWithPrototypeNode;
     // private setDoneNode: PropertySetNode;

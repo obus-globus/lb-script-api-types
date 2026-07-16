@@ -7,7 +7,6 @@ export class InitializeNumberFormatNodeGen extends InitializeNumberFormatNode {
     static create(paramcontext: JSContext): InitializeNumberFormatNode;
     static createInitalizeNumberFormatNode(paramcontext: JSContext): InitializeNumberFormatNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     executeInit(arg0Value: JSNumberFormatObject, arg1Value: Object, arg2Value: Object): JSNumberFormatObject;
 }

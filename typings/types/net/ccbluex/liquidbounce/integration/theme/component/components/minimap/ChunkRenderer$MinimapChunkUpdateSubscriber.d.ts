@@ -9,6 +9,7 @@ export class ChunkRenderer$MinimapChunkUpdateSubscriber extends Object implement
     static INSTANCE: ChunkRenderer$MinimapChunkUpdateSubscriber;
     // private AIR_COLOR: number;
     // private borderOffsets: Vector2i[];
+    readonly debugName: string;
     // private offsetsToCheck: Vector2i[];
     readonly shouldCallRecordBlockOnChunkUpdate: boolean;
     chunkUpdate(chunk: LevelChunk): void;

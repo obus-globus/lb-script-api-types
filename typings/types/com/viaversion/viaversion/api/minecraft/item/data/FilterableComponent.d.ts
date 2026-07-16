@@ -6,9 +6,8 @@ import type { Type } from '../../../../../../../com/viaversion/viaversion/api/ty
 import type { Int2IntFunction } from '../../../../../../../com/viaversion/viaversion/libs/fastutil/ints/Int2IntFunction.d.ts'
 import type { Copyable } from '../../../../../../../com/viaversion/viaversion/util/Copyable.d.ts'
 import type { Rewritable } from '../../../../../../../com/viaversion/viaversion/util/Rewritable.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class FilterableComponent extends Filterable<Tag> implements Copyable, Rewritable {
-    static ARRAY_TYPE: Type<(Object | null)[]>;
+    static ARRAY_TYPE: Type<FilterableComponent[]>;
     static TYPE: Type<FilterableComponent>;
     constructor(arg0: Tag, arg1: Tag)
     copy(): FilterableComponent;

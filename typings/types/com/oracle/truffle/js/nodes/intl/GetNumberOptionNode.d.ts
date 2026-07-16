@@ -8,7 +8,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class GetNumberOptionNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext, paramproperty: TruffleString): GetNumberOptionNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, property: TruffleString)
     // private defaultNumberOptionNode: DefaultNumberOptionNode;
     // private propertyGetNode: PropertyGetNode;

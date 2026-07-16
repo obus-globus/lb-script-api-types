@@ -9,7 +9,7 @@ export class Logging$Severity extends Enum<Logging$Severity> {
     static WARNING: Logging$Severity;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Logging$Severity;
-    static values(): (Object | null)[];
+    static values(): Logging$Severity[];
     private constructor()
     name(): "VERBOSE" | "INFO" | "WARNING" | "ERROR" | "NONE";
 }

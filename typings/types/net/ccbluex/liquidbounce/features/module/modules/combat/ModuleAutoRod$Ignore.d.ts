@@ -14,7 +14,7 @@ export class ModuleAutoRod$Ignore extends Enum<ModuleAutoRod$Ignore> implements 
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleAutoRod$Ignore;
-    static values(): (Object | null)[];
+    static values(): ModuleAutoRod$Ignore[];
     private constructor(tag: string)
     readonly tag: string;
     getAsBoolean(): boolean;

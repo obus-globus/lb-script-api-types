@@ -7,7 +7,7 @@ export class SharedSuggestionProvider$ElementSuggestionType extends Enum<SharedS
     static TAGS: SharedSuggestionProvider$ElementSuggestionType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SharedSuggestionProvider$ElementSuggestionType;
-    static values(): (Object | null)[];
+    static values(): SharedSuggestionProvider$ElementSuggestionType[];
     private constructor()
     shouldSuggestElements(): boolean;
     shouldSuggestTags(): boolean;

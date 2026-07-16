@@ -13,7 +13,7 @@ export class ModuleTickBase$TickBaseCall extends Enum<ModuleTickBase$TickBaseCal
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleTickBase$TickBaseCall;
-    static values(): (Object | null)[];
+    static values(): ModuleTickBase$TickBaseCall[];
     private constructor(tag: string, tick: () => void)
     readonly tag: string;
     // private tick: () => void;

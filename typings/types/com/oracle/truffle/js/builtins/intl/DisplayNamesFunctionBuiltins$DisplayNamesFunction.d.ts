@@ -11,7 +11,7 @@ export class DisplayNamesFunctionBuiltins$DisplayNamesFunction extends Enum<Disp
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): DisplayNamesFunctionBuiltins$DisplayNamesFunction;
-    static values(): (Object | null)[];
+    static values(): DisplayNamesFunctionBuiltins$DisplayNamesFunction[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

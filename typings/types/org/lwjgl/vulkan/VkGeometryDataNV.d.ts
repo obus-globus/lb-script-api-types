@@ -37,7 +37,6 @@ export class VkGeometryDataNV extends Struct<VkGeometryDataNV> implements Native
     static ntriangles(paramarg0: number): VkGeometryTrianglesNV;
     static ntriangles(paramarg0: number, paramarg1: VkGeometryTrianglesNV): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     aabbs(): VkGeometryAABBNV;

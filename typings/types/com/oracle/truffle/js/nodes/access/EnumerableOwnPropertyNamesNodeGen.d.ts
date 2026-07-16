@@ -14,7 +14,6 @@ export class EnumerableOwnPropertyNamesNodeGen extends EnumerableOwnPropertyName
     static createKeysValues(paramcontext: JSContext): EnumerableOwnPropertyNamesNode;
     static createValues(paramcontext: JSContext): EnumerableOwnPropertyNamesNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, keys: boolean, values: boolean)
     // private enumerableOwnPropertyNamesForeign0_cache: EnumerableOwnPropertyNamesNodeGen$EnumerableOwnPropertyNamesForeign0Data;
     // private enumerableOwnPropertyNamesForeign1_cache: EnumerableOwnPropertyNamesNodeGen$EnumerableOwnPropertyNamesForeign1Data;

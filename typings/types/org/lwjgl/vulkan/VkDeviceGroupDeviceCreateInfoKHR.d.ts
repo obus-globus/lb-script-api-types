@@ -23,28 +23,21 @@ export class VkDeviceGroupDeviceCreateInfoKHR extends VkDeviceGroupDeviceCreateI
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkDeviceGroupDeviceCreateInfoKHR;
     static calloc(paramarg0: MemoryStack): VkDeviceGroupDeviceCreateInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkDeviceGroupDeviceCreateInfo;
     static create(paramarg0: number): VkDeviceGroupDeviceCreateInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkDeviceGroupDeviceCreateInfoKHR;
     static create(paramarg0: number): VkDeviceGroupDeviceCreateInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkDeviceGroupDeviceCreateInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkDeviceGroupDeviceCreateInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkDeviceGroupDeviceCreateInfo;
     static malloc(paramarg0: MemoryStack): VkDeviceGroupDeviceCreateInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkDeviceGroupDeviceCreateInfoKHR;
     static malloc(paramarg0: MemoryStack): VkDeviceGroupDeviceCreateInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static npPhysicalDevices(paramarg0: number): PointerBuffer;
@@ -53,7 +46,6 @@ export class VkDeviceGroupDeviceCreateInfoKHR extends VkDeviceGroupDeviceCreateI
     static nphysicalDeviceCount(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

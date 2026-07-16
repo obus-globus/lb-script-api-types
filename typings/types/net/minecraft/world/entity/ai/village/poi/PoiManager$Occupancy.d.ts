@@ -9,7 +9,7 @@ export class PoiManager$Occupancy extends Enum<PoiManager$Occupancy> {
     static IS_OCCUPIED: PoiManager$Occupancy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PoiManager$Occupancy;
-    static values(): (Object | null)[];
+    static values(): PoiManager$Occupancy[];
     private constructor(test: (param0: PoiRecord) => boolean)
     readonly test: (param0: PoiRecord) => boolean;
     getTest(): (param0: PoiRecord) => boolean;

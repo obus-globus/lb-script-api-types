@@ -13,7 +13,7 @@ export class BossBarOverlay extends Enum<BossBarOverlay> {
     static getByValue(paramarg0: number, paramarg1: BossBarOverlay): BossBarOverlay;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BossBarOverlay;
-    static values(): (Object | null)[];
+    static values(): BossBarOverlay[];
     private constructor(arg2: number)
     private constructor(arg2: BossBarOverlay)
     readonly value: number;

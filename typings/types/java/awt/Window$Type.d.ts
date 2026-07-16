@@ -7,7 +7,7 @@ export class Window$Type extends Enum<Window$Type> {
     static UTILITY: Window$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Window$Type;
-    static values(): (Object | null)[];
+    static values(): Window$Type[];
     private constructor()
     name(): "NORMAL" | "UTILITY" | "POPUP";
 }

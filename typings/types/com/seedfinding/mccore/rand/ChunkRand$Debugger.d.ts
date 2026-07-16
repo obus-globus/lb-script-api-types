@@ -5,7 +5,7 @@ import type { JRand$Debugger } from '../../../../com/seedfinding/mcseed/rand/JRa
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ChunkRand$Debugger extends ChunkRand {
     static getInt(paramarg0: ChunkRand, paramarg1: number, paramarg2: number): number;
-    static getRandom(paramarg0: Object | null, paramarg1: ChunkRand): Object | null;
+    static getRandom(paramarg0: (Object | null)[], paramarg1: ChunkRand): Object | null;
     static nextBoolean(paramarg0: number): boolean;
     static nextDouble(paramarg0: number): number;
     static nextFloat(paramarg0: number): number;
@@ -15,7 +15,6 @@ export class ChunkRand$Debugger extends ChunkRand {
     static ofInternalSeed(paramarg0: number): JRand;
     static ofScrambledSeed(paramarg0: number): JRand;
     static shuffle(paramarg0: Object[], paramarg1: JRand): void;
-    static swap(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): void;
     static swap(paramarg0: Object[], paramarg1: number, paramarg2: number): void;
     constructor(arg0: JRand)
     debugger: JRand$Debugger;

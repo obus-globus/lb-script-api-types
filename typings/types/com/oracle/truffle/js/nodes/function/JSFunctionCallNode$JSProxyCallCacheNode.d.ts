@@ -6,7 +6,6 @@ import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSFunctionCallNode$JSProxyCallCacheNode extends JSFunctionCallNode$AbstractCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(isNew: boolean, isNewTarget: boolean, context: JSContext)
     // private proxyCallNode: DirectCallNode;
     accept(nodeVisitor: NodeVisitor): void;

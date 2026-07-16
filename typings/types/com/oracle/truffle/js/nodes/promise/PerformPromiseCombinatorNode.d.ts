@@ -9,7 +9,6 @@ import type { PromiseCapabilityRecord } from '../../../../../../com/oracle/truff
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class PerformPromiseCombinatorNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private context: JSContext;
     // private iteratorStep: IteratorStepNode;

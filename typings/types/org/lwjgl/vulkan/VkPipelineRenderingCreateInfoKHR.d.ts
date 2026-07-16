@@ -26,28 +26,21 @@ export class VkPipelineRenderingCreateInfoKHR extends VkPipelineRenderingCreateI
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPipelineRenderingCreateInfoKHR;
     static calloc(paramarg0: MemoryStack): VkPipelineRenderingCreateInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPipelineRenderingCreateInfo;
     static create(paramarg0: number): VkPipelineRenderingCreateInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPipelineRenderingCreateInfoKHR;
     static create(paramarg0: number): VkPipelineRenderingCreateInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPipelineRenderingCreateInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPipelineRenderingCreateInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPipelineRenderingCreateInfo;
     static malloc(paramarg0: MemoryStack): VkPipelineRenderingCreateInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPipelineRenderingCreateInfoKHR;
     static malloc(paramarg0: MemoryStack): VkPipelineRenderingCreateInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ncolorAttachmentCount(paramarg0: number): number;
     static ncolorAttachmentCount(paramarg0: number, paramarg1: number): void;
     static ndepthAttachmentFormat(paramarg0: number): number;
@@ -62,7 +55,6 @@ export class VkPipelineRenderingCreateInfoKHR extends VkPipelineRenderingCreateI
     static nstencilAttachmentFormat(paramarg0: number, paramarg1: number): void;
     static nviewMask(paramarg0: number): number;
     static nviewMask(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

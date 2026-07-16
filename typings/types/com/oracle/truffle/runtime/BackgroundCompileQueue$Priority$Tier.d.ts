@@ -7,7 +7,7 @@ export class BackgroundCompileQueue$Priority$Tier extends Enum<BackgroundCompile
     static LAST: BackgroundCompileQueue$Priority$Tier;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): BackgroundCompileQueue$Priority$Tier;
-    static values(): (Object | null)[];
+    static values(): BackgroundCompileQueue$Priority$Tier[];
     private constructor()
     name(): "INITIALIZATION" | "FIRST" | "LAST";
 }

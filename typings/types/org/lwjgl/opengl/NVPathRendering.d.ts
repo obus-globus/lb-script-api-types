@@ -231,12 +231,10 @@ export class NVPathRendering extends Object {
     static glPathCommandsNV(paramarg0: number, paramarg1: ByteBuffer, paramarg2: number, paramarg3: ByteBuffer): void;
     static glPathCommandsNV(paramarg0: number, paramarg1: ByteBuffer, paramarg2: number, paramarg3: FloatBuffer): void;
     static glPathCommandsNV(paramarg0: number, paramarg1: ByteBuffer, paramarg2: number, paramarg3: ShortBuffer): void;
-    static glPathCommandsNV(paramarg0: number, paramarg1: ByteBuffer, paramarg2: number, paramarg3: number[]): void;
     static glPathCoordsNV(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
     static glPathCoordsNV(paramarg0: number, paramarg1: number, paramarg2: ByteBuffer): void;
     static glPathCoordsNV(paramarg0: number, paramarg1: number, paramarg2: FloatBuffer): void;
     static glPathCoordsNV(paramarg0: number, paramarg1: number, paramarg2: ShortBuffer): void;
-    static glPathCoordsNV(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
     static glPathCoverDepthFuncNV(paramarg0: number): void;
     static glPathDashArrayNV(paramarg0: number, paramarg1: number[]): void;
     static glPathDashArrayNV(paramarg0: number, paramarg1: FloatBuffer): void;
@@ -260,12 +258,10 @@ export class NVPathRendering extends Object {
     static glPathSubCommandsNV(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: ByteBuffer, paramarg4: number, paramarg5: ByteBuffer): void;
     static glPathSubCommandsNV(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: ByteBuffer, paramarg4: number, paramarg5: FloatBuffer): void;
     static glPathSubCommandsNV(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: ByteBuffer, paramarg4: number, paramarg5: ShortBuffer): void;
-    static glPathSubCommandsNV(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: ByteBuffer, paramarg4: number, paramarg5: number[]): void;
     static glPathSubCoordsNV(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number[]): void;
     static glPathSubCoordsNV(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: ByteBuffer): void;
     static glPathSubCoordsNV(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: FloatBuffer): void;
     static glPathSubCoordsNV(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: ShortBuffer): void;
-    static glPathSubCoordsNV(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number[]): void;
     static glPathTexGenNV(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number[]): void;
     static glPathTexGenNV(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: FloatBuffer): void;
     static glPointAlongPathNV(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number[], paramarg5: number[], paramarg6: number[], paramarg7: number[]): boolean;

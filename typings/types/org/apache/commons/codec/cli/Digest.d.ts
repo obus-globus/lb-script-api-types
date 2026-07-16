@@ -2,7 +2,7 @@ import type { File } from '../../../../../java/io/File.d.ts'
 import type { MessageDigest } from '../../../../../java/security/MessageDigest.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Digest extends Object {
-    static main(paramarg0: (Object | null)[]): void;
+    static main(paramarg0: string[]): void;
     private constructor(arg0: string[])
     // private algorithm: string;
     // private args: string[];

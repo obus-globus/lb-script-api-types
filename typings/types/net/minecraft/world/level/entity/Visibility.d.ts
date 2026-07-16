@@ -9,7 +9,7 @@ export class Visibility extends Enum<Visibility> {
     static fromFullChunkStatus(paramstatus: FullChunkStatus): Visibility;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Visibility;
-    static values(): (Object | null)[];
+    static values(): Visibility[];
     private constructor(accessible: boolean, ticking: boolean)
     readonly accessible: boolean;
     readonly ticking: boolean;

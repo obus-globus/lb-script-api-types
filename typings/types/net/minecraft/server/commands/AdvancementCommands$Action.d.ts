@@ -8,7 +8,7 @@ export class AdvancementCommands$Action extends Enum<AdvancementCommands$Action>
     static REVOKE: AdvancementCommands$Action;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): AdvancementCommands$Action;
-    static values(): (Object | null)[];
+    static values(): AdvancementCommands$Action[];
     private constructor(key: string)
     // private key: string;
     getKey(): string;

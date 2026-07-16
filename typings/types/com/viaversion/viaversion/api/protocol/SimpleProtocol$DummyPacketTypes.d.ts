@@ -8,7 +8,7 @@ import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class SimpleProtocol$DummyPacketTypes extends Enum<SimpleProtocol$DummyPacketTypes> implements ClientboundPacketType, ServerboundPacketType {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SimpleProtocol$DummyPacketTypes;
-    static values(): (Object | null)[];
+    static values(): SimpleProtocol$DummyPacketTypes[];
     private constructor()
     direction(): Direction;
     getId(): number;

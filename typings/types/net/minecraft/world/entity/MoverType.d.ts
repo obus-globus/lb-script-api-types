@@ -9,7 +9,7 @@ export class MoverType extends Enum<MoverType> {
     static SHULKER_BOX: MoverType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): MoverType;
-    static values(): (Object | null)[];
+    static values(): MoverType[];
     private constructor()
     name(): "SELF" | "PLAYER" | "PISTON" | "SHULKER_BOX" | "SHULKER";
 }

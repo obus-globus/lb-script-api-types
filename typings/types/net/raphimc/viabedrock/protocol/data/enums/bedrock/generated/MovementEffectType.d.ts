@@ -11,7 +11,7 @@ export class MovementEffectType extends Enum<MovementEffectType> {
     static getByValue(paramarg0: number, paramarg1: MovementEffectType): MovementEffectType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MovementEffectType;
-    static values(): (Object | null)[];
+    static values(): MovementEffectType[];
     private constructor(arg2: number)
     private constructor(arg2: MovementEffectType)
     readonly value: number;

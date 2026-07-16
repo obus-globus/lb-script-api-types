@@ -11,7 +11,7 @@ export class FieldNamingPolicy extends Enum<FieldNamingPolicy> implements FieldN
     static UPPER_CAMEL_CASE_WITH_SPACES: FieldNamingPolicy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FieldNamingPolicy;
-    static values(): (Object | null)[];
+    static values(): FieldNamingPolicy[];
     constructor(arg2: FieldNamingPolicy)
     translateName(arg0: Field): string;
     name(): "IDENTITY" | "UPPER_CAMEL_CASE" | "UPPER_CAMEL_CASE_WITH_SPACES" | "LOWER_CASE_WITH_UNDERSCORES" | "LOWER_CASE_WITH_DASHES";

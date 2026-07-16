@@ -9,7 +9,7 @@ export class AngerLevel extends Enum<AngerLevel> {
     static byAnger(paramanger: number): AngerLevel;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): AngerLevel;
-    static values(): (Object | null)[];
+    static values(): AngerLevel[];
     private constructor(minimumAnger: number, ambientSound: SoundEvent, listeningSound: SoundEvent)
     readonly ambientSound: SoundEvent;
     readonly listeningSound: SoundEvent;

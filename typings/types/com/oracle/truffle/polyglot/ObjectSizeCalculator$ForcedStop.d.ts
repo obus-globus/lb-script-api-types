@@ -7,7 +7,7 @@ export class ObjectSizeCalculator$ForcedStop extends Enum<ObjectSizeCalculator$F
     static STOPATBYTES: ObjectSizeCalculator$ForcedStop;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ObjectSizeCalculator$ForcedStop;
-    static values(): (Object | null)[];
+    static values(): ObjectSizeCalculator$ForcedStop[];
     private constructor()
     name(): "NONE" | "STOPATBYTES" | "CANCELLATION";
 }

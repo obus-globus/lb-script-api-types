@@ -32,7 +32,7 @@ export class ItemStackRequestActionType extends Enum<ItemStackRequestActionType>
     static getByValue(paramarg0: number, paramarg1: ItemStackRequestActionType): ItemStackRequestActionType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ItemStackRequestActionType;
-    static values(): (Object | null)[];
+    static values(): ItemStackRequestActionType[];
     private constructor(arg2: number)
     private constructor(arg2: ItemStackRequestActionType)
     readonly value: number;

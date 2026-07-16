@@ -16,7 +16,7 @@ export class TropicalFishPattern$Pattern extends Enum<TropicalFishPattern$Patter
     static SUNSTREAK: TropicalFishPattern$Pattern;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TropicalFishPattern$Pattern;
-    static values(): (Object | null)[];
+    static values(): TropicalFishPattern$Pattern[];
     private constructor(arg2: string, arg3: number, arg4: number)
     // private key: string;
     // private packedId: number;

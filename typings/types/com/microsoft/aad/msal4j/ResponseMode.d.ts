@@ -7,7 +7,7 @@ export class ResponseMode extends Enum<ResponseMode> {
     static QUERY: ResponseMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ResponseMode;
-    static values(): (Object | null)[];
+    static values(): ResponseMode[];
     private constructor(arg2: string)
     // private responseMode: string;
     toString(): string;

@@ -7,7 +7,6 @@ export class JSToDoubleNodeGen extends JSToDoubleNode {
     static create(): JSToDoubleNode;
     static getUncached(): JSToDoubleNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private recursiveToDouble: JSToDoubleNode;
     // private state_0_: number;

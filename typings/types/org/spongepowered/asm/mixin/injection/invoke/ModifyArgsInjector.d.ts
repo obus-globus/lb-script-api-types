@@ -6,7 +6,6 @@ import type { InjectionInfo } from '../../../../../../org/spongepowered/asm/mixi
 import type { InjectionNodes$InjectionNode } from '../../../../../../org/spongepowered/asm/mixin/injection/struct/InjectionNodes$InjectionNode.d.ts'
 export class ModifyArgsInjector extends InvokeInjector {
     static canCoerce(paramarg0: string, paramarg1: string): boolean;
-    static canCoerce(paramarg0: string, paramarg1: string): boolean;
     static canCoerce(paramarg0: Type, paramarg1: Type): boolean;
     constructor(arg0: InjectionInfo)
     // private argsClassGenerator: ArgsClassGenerator;

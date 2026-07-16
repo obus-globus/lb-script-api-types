@@ -49,7 +49,7 @@ export class Intersectionf extends Object {
     static intersectPlaneSphere(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: Vector4f): boolean;
     static intersectPlaneSweptSphere(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number, paramarg10: number, paramarg11: Vector4f): boolean;
     static intersectPolygonRay(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: Vector2f): number;
-    static intersectPolygonRay(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: Vector2f): number;
+    static intersectPolygonRay(paramarg0: Vector2fc[], paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: Vector2f): number;
     static intersectRayAab(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number, paramarg10: number, paramarg11: number, paramarg12: Vector2f): boolean;
     static intersectRayAab(paramarg0: Vector3fc, paramarg1: Vector3fc, paramarg2: Vector3fc, paramarg3: Vector3fc, paramarg4: Vector2f): boolean;
     static intersectRayAar(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: Vector2f): number;
@@ -106,7 +106,7 @@ export class Intersectionf extends Object {
     static testPointInTriangle(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number, paramarg10: number, paramarg11: number): boolean;
     static testPointTriangle(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number): boolean;
     static testPointTriangle(paramarg0: Vector2fc, paramarg1: Vector2fc, paramarg2: Vector2fc, paramarg3: Vector2fc): boolean;
-    static testPolygonPolygon(paramarg0: (Object | null)[], paramarg1: (Object | null)[]): boolean;
+    static testPolygonPolygon(paramarg0: Vector2f[], paramarg1: Vector2f[]): boolean;
     static testRayAab(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number, paramarg10: number, paramarg11: number): boolean;
     static testRayAab(paramarg0: Vector3fc, paramarg1: Vector3fc, paramarg2: Vector3fc, paramarg3: Vector3fc): boolean;
     static testRayAar(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number): boolean;

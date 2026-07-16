@@ -9,7 +9,7 @@ export class ProjectionType extends Enum<ProjectionType> {
     static PERSPECTIVE: ProjectionType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ProjectionType;
-    static values(): (Object | null)[];
+    static values(): ProjectionType[];
     private constructor(vertexSorting: VertexSorting, layeringTransform: (param0: Matrix4f, param1: number) => void)
     // private layeringTransform: (param0: Matrix4f, param1: number) => void;
     // private vertexSorting: VertexSorting;

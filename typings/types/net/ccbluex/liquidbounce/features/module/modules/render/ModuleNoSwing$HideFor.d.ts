@@ -12,7 +12,7 @@ export class ModuleNoSwing$HideFor extends Enum<ModuleNoSwing$HideFor> implement
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleNoSwing$HideFor;
-    static values(): (Object | null)[];
+    static values(): ModuleNoSwing$HideFor[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "CLIENT" | "SERVER";

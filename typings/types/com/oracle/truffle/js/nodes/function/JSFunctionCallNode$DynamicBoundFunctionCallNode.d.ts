@@ -6,7 +6,6 @@ import type { JSFunctionData } from '../../../../../../com/oracle/truffle/js/run
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSFunctionCallNode$DynamicBoundFunctionCallNode extends JSFunctionCallNode$JSFunctionCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(isNew: boolean, isNewTarget: boolean, boundFunctionData: JSFunctionData)
     // private boundFunctionData: JSFunctionData;
     // private boundTargetCallNode: JSFunctionCallNode;

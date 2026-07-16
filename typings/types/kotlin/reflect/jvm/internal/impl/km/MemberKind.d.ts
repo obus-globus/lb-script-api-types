@@ -10,7 +10,7 @@ export class MemberKind extends Enum<MemberKind> {
     static getEntries(): MemberKind[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MemberKind;
-    static values(): (Object | null)[];
+    static values(): MemberKind[];
     private constructor(arg2: number)
     // private flag: FlagImpl;
     getFlag$org_jetbrains_kotlin_kotlin_metadata(): FlagImpl;

@@ -5,7 +5,7 @@ import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class Enums$StringConverter<T extends Enum<T>> extends Converter<string, T> implements Serializable {
-    static from(paramforwardFunction: (param0: Object) => boolean, parambackwardFunction: (param0: Object) => boolean): Converter<Object, Object>;
+    static from(paramforwardFunction: (param0: Object) => Object | null, parambackwardFunction: (param0: Object) => Object | null): Converter<Object, Object>;
     static identity(): Converter<Object, Object>;
     constructor(enumClass: Class<T>)
     // private enumClass: Class<T>;

@@ -11,7 +11,7 @@ export class ServerboundLoadingScreenPacketType extends Enum<ServerboundLoadingS
     static getByValue(paramarg0: number, paramarg1: ServerboundLoadingScreenPacketType): ServerboundLoadingScreenPacketType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ServerboundLoadingScreenPacketType;
-    static values(): (Object | null)[];
+    static values(): ServerboundLoadingScreenPacketType[];
     private constructor(arg2: number)
     private constructor(arg2: ServerboundLoadingScreenPacketType)
     readonly value: number;

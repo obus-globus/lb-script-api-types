@@ -7,7 +7,7 @@ export class LayerLightSectionStorage$SectionType extends Enum<LayerLightSection
     static LIGHT_ONLY: LayerLightSectionStorage$SectionType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): LayerLightSectionStorage$SectionType;
-    static values(): (Object | null)[];
+    static values(): LayerLightSectionStorage$SectionType[];
     private constructor(display: string)
     // private display: string;
     display(): string;

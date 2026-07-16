@@ -22,28 +22,21 @@ export class VkPipelineVertexInputDivisorStateCreateInfoKHR extends VkPipelineVe
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPipelineVertexInputDivisorStateCreateInfoKHR;
     static calloc(paramarg0: MemoryStack): VkPipelineVertexInputDivisorStateCreateInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPipelineVertexInputDivisorStateCreateInfo;
     static create(paramarg0: number): VkPipelineVertexInputDivisorStateCreateInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPipelineVertexInputDivisorStateCreateInfoKHR;
     static create(paramarg0: number): VkPipelineVertexInputDivisorStateCreateInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPipelineVertexInputDivisorStateCreateInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPipelineVertexInputDivisorStateCreateInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPipelineVertexInputDivisorStateCreateInfo;
     static malloc(paramarg0: MemoryStack): VkPipelineVertexInputDivisorStateCreateInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPipelineVertexInputDivisorStateCreateInfoKHR;
     static malloc(paramarg0: MemoryStack): VkPipelineVertexInputDivisorStateCreateInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static npVertexBindingDivisors(paramarg0: number): (Object | null)[];
@@ -52,7 +45,6 @@ export class VkPipelineVertexInputDivisorStateCreateInfoKHR extends VkPipelineVe
     static nsType(paramarg0: number, paramarg1: number): void;
     static nvertexBindingDivisorCount(paramarg0: number): number;
     static nvertexBindingDivisorCount(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

@@ -15,7 +15,6 @@ export abstract class ScopeFrameNode extends JavaScriptBaseNode {
     static getNonBlockScopeParentFrame(paramframe: Frame): Frame;
     static isBlockScopeFrame(paramframe: Frame): boolean;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     executeFrame(frame: Frame): Frame;
     isAdoptable(): boolean;

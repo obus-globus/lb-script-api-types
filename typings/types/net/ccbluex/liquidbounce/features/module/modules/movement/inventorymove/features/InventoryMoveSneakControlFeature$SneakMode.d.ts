@@ -13,7 +13,7 @@ export class InventoryMoveSneakControlFeature$SneakMode extends Enum<InventoryMo
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): InventoryMoveSneakControlFeature$SneakMode;
-    static values(): (Object | null)[];
+    static values(): InventoryMoveSneakControlFeature$SneakMode[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "DO_NOT_CHANGE" | "FORCE_SNEAK" | "FORCE_NO_SNEAK";

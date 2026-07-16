@@ -4,8 +4,8 @@ import type { TimeZoneNamesImpl$NameInfo } from '../../../../../../../org/graalv
 import type { TimeZoneNames$NameType } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/TimeZoneNames$NameType.d.ts'
 export class TimeZoneNamesImpl$ZNames extends Object {
     static NUM_NAME_TYPES: number;
-    static createMetaZoneAndPutInCache(paramcache: { [key: string]: TimeZoneNamesImpl$ZNames }, paramnames: (Object | null)[], parammzID: string): TimeZoneNamesImpl$ZNames;
-    static createTimeZoneAndPutInCache(paramcache: { [key: string]: TimeZoneNamesImpl$ZNames }, paramnames: (Object | null)[], paramtzID: string): TimeZoneNamesImpl$ZNames;
+    static createMetaZoneAndPutInCache(paramcache: { [key: string]: TimeZoneNamesImpl$ZNames }, paramnames: string[], parammzID: string): TimeZoneNamesImpl$ZNames;
+    static createTimeZoneAndPutInCache(paramcache: { [key: string]: TimeZoneNamesImpl$ZNames }, paramnames: string[], paramtzID: string): TimeZoneNamesImpl$ZNames;
     constructor(names: string[])
     // private _names: string[];
     // private didAddIntoTrie: boolean;

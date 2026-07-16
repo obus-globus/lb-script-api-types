@@ -8,7 +8,7 @@ export class PersonNameFormatter$Length extends Enum<PersonNameFormatter$Length>
     static SHORT: PersonNameFormatter$Length;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PersonNameFormatter$Length;
-    static values(): (Object | null)[];
+    static values(): PersonNameFormatter$Length[];
     private constructor()
     name(): "LONG" | "MEDIUM" | "SHORT" | "DEFAULT";
 }

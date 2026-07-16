@@ -13,7 +13,7 @@ export class UnlockedRecipesPacketPayload_PacketType extends Enum<UnlockedRecipe
     static getByValue(paramarg0: number, paramarg1: UnlockedRecipesPacketPayload_PacketType): UnlockedRecipesPacketPayload_PacketType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): UnlockedRecipesPacketPayload_PacketType;
-    static values(): (Object | null)[];
+    static values(): UnlockedRecipesPacketPayload_PacketType[];
     private constructor(arg2: number)
     private constructor(arg2: UnlockedRecipesPacketPayload_PacketType)
     readonly value: number;

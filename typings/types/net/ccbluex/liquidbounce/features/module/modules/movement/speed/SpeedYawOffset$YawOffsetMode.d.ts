@@ -13,7 +13,7 @@ export class SpeedYawOffset$YawOffsetMode extends Enum<SpeedYawOffset$YawOffsetM
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SpeedYawOffset$YawOffsetMode;
-    static values(): (Object | null)[];
+    static values(): SpeedYawOffset$YawOffsetMode[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "GROUND" | "AIR" | "CONSTANT";

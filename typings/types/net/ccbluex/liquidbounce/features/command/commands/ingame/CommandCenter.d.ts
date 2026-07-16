@@ -5,6 +5,7 @@ import type { PlayerNetworkMovementTickEvent } from '../../../../../../../net/cc
 import type { Command } from '../../../../../../../net/ccbluex/liquidbounce/features/command/Command.d.ts'
 import type { Command$Factory } from '../../../../../../../net/ccbluex/liquidbounce/features/command/Command$Factory.d.ts'
 import type { CommandCenter$CenterHandlerState } from '../../../../../../../net/ccbluex/liquidbounce/features/command/commands/ingame/CommandCenter$CenterHandlerState.d.ts'
+import type { Component } from '../../../../../../../net/minecraft/network/chat/Component.d.ts'
 /**
  * Center command
  *
@@ -14,6 +15,7 @@ import type { CommandCenter$CenterHandlerState } from '../../../../../../../net/
  */
 export class CommandCenter extends Object implements EventListener, Command$Factory {
     static INSTANCE: CommandCenter;
+    readonly debugDisplayName: Component;
     // private moveHandler: EventHook<PlayerNetworkMovementTickEvent>;
     readonly running: boolean;
     state: CommandCenter$CenterHandlerState;

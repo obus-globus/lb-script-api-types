@@ -9,7 +9,7 @@ export class PluralRules$KeywordStatus extends Enum<PluralRules$KeywordStatus> {
     static UNIQUE: PluralRules$KeywordStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PluralRules$KeywordStatus;
-    static values(): (Object | null)[];
+    static values(): PluralRules$KeywordStatus[];
     private constructor()
     name(): "INVALID" | "SUPPRESSED" | "UNIQUE" | "BOUNDED" | "UNBOUNDED";
 }

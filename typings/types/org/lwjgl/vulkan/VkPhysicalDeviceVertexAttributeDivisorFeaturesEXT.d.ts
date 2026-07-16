@@ -22,28 +22,21 @@ export class VkPhysicalDeviceVertexAttributeDivisorFeaturesEXT extends VkPhysica
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceVertexAttributeDivisorFeaturesEXT;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceVertexAttributeDivisorFeaturesEXT;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceVertexAttributeDivisorFeatures;
     static create(paramarg0: number): VkPhysicalDeviceVertexAttributeDivisorFeatures;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceVertexAttributeDivisorFeaturesEXT;
     static create(paramarg0: number): VkPhysicalDeviceVertexAttributeDivisorFeaturesEXT;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceVertexAttributeDivisorFeatures;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceVertexAttributeDivisorFeaturesEXT;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceVertexAttributeDivisorFeatures;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceVertexAttributeDivisorFeatures;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceVertexAttributeDivisorFeaturesEXT;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceVertexAttributeDivisorFeaturesEXT;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
@@ -52,7 +45,6 @@ export class VkPhysicalDeviceVertexAttributeDivisorFeaturesEXT extends VkPhysica
     static nvertexAttributeInstanceRateDivisor(paramarg0: number, paramarg1: number): void;
     static nvertexAttributeInstanceRateZeroDivisor(paramarg0: number): number;
     static nvertexAttributeInstanceRateZeroDivisor(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

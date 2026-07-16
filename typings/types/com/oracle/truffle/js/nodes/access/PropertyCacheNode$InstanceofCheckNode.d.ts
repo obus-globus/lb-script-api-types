@@ -6,7 +6,6 @@ import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PropertyCacheNode$InstanceofCheckNode extends PropertyCacheNode$ReceiverCheckNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(type: Class<Object>)
     // private type: Class<Object>;
     accept(nodeVisitor: NodeVisitor): void;

@@ -8,7 +8,7 @@ export class GameMode extends Enum<GameMode> {
     static SURVIVAL: GameMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): GameMode;
-    static values(): (Object | null)[];
+    static values(): GameMode[];
     private constructor()
     name(): "SURVIVAL" | "CREATIVE" | "ADVENTURE" | "SPECTATOR";
 }

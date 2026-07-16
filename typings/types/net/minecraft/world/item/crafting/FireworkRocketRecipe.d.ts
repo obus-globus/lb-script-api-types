@@ -17,7 +17,6 @@ export class FireworkRocketRecipe extends CustomRecipe {
     static MAP_CODEC: MapCodec<FireworkRocketRecipe>;
     static SERIALIZER: RecipeSerializer<FireworkRocketRecipe>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, FireworkRocketRecipe>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<any>>;
     constructor(shell: Ingredient, fuel: Ingredient, star: Ingredient, result: ItemStackTemplate)
     // private fuel: Ingredient;
     // private result: ItemStackTemplate;

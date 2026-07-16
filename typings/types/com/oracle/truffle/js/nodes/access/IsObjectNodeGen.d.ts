@@ -6,7 +6,6 @@ export class IsObjectNodeGen extends IsObjectNode {
     static create(): IsObjectNode;
     static getUncached(): IsObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private foreignObject0_cache: IsObjectNodeGen$ForeignObject0Data;
     // private state_0_: number;

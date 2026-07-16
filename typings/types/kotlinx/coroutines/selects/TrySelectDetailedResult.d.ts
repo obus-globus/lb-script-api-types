@@ -9,7 +9,7 @@ export class TrySelectDetailedResult extends Enum<TrySelectDetailedResult> {
     static getEntries(): TrySelectDetailedResult[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TrySelectDetailedResult;
-    static values(): (Object | null)[];
+    static values(): TrySelectDetailedResult[];
     private constructor()
     name(): "SUCCESSFUL" | "REREGISTER" | "CANCELLED" | "ALREADY_SELECTED";
 }

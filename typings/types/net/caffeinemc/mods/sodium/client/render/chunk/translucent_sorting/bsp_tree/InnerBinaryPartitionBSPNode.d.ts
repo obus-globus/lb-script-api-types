@@ -5,11 +5,12 @@ import type { BSPResult } from '../../../../../../../../../net/caffeinemc/mods/s
 import type { BSPSortState } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/translucent_sorting/bsp_tree/BSPSortState.d.ts'
 import type { InnerPartitionBSPNode } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/translucent_sorting/bsp_tree/InnerPartitionBSPNode.d.ts'
 import type { InnerPartitionBSPNode$NodeReuseData } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/translucent_sorting/bsp_tree/InnerPartitionBSPNode$NodeReuseData.d.ts'
+import type { TQuad } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/translucent_sorting/quad/TQuad.d.ts'
 import type { NativeBuffer } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/util/NativeBuffer.d.ts'
 import type { SectionPos } from '../../../../../../../../../net/minecraft/core/SectionPos.d.ts'
 import type { Vector3fc } from '../../../../../../../../../org/joml/Vector3fc.d.ts'
 export class InnerBinaryPartitionBSPNode extends InnerPartitionBSPNode {
-    static buildBSP(paramarg0: (Object | null)[], paramarg1: SectionPos, paramarg2: BSPNode, paramarg3: boolean, paramarg4: boolean, paramarg5: QuadSplittingMode): BSPResult;
+    static buildBSP(paramarg0: TQuad[], paramarg1: SectionPos, paramarg2: BSPNode, paramarg3: boolean, paramarg4: boolean, paramarg5: QuadSplittingMode): BSPResult;
     static validateQuadCount(paramarg0: number): void;
     constructor(arg0: InnerPartitionBSPNode$NodeReuseData, arg1: number, arg2: number, arg3: BSPNode, arg4: BSPNode, arg5: number[])
     constructor(arg0: InnerPartitionBSPNode$NodeReuseData, arg1: number, arg2: Vector3fc, arg3: BSPNode, arg4: BSPNode, arg5: number[])

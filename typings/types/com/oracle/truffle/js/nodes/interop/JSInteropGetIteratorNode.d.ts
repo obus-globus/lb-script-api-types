@@ -9,7 +9,6 @@ import type { JSObject } from '../../../../../../com/oracle/truffle/js/runtime/o
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSInteropGetIteratorNode extends JSInteropCallNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doDefault(receiver: JSObject, language: JavaScriptLanguage, hasIteratorCheck: boolean, iteratorPropertyGetNode: PropertyGetNode, isCallableNode: IsCallableNode, callNode: JSFunctionCallNode, nextPropertyGetNode: PropertyGetNode, exceptionBranch: InlinedBranchProfile): Object;
     execute(receiver: JSObject, language: JavaScriptLanguage, hasIteratorCheck: boolean): Object;

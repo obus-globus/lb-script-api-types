@@ -32,7 +32,6 @@ import type { CollisionContext } from '../../../../../net/minecraft/world/phys/s
 import type { VoxelShape } from '../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 export class ComposterBlock extends Block implements WorldlyContainerHolder {
     static BLOCK_STATE_REGISTRY: BlockState[];
-    static CODEC: MapCodec<Block>;
     static CODEC: MapCodec<ComposterBlock>;
     static COMPOSTABLES: { [key: string]: any };
     static FILTERED_REGISTRIES: ResourceKey<FeatureElement[]>[];
@@ -62,7 +61,7 @@ export class ComposterBlock extends Block implements WorldlyContainerHolder {
     static boxZ(paramsizeXY: number, paramminZ: number, parammaxZ: number): VoxelShape;
     static boxZ(paramsizeX: number, paramsizeY: number, paramminZ: number, parammaxZ: number): VoxelShape;
     static boxZ(paramsizeX: number, paramminY: number, parammaxY: number, paramminZ: number, parammaxZ: number): VoxelShape;
-    static boxes(paramendInclusive: number, paramvoxelShapeFactory: (param0: number) => VoxelShape): (Object | null)[];
+    static boxes(paramendInclusive: number, paramvoxelShapeFactory: (param0: number) => VoxelShape): VoxelShape[];
     static byItem(paramitem: Item): Block;
     static canSupportCenter(paramlevel: LevelReader, parambelowPos: BlockPos, paramdirection: Direction): boolean;
     static canSupportRigidBlock(paramlevel: BlockGetter, parambelow: BlockPos): boolean;

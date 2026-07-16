@@ -32,7 +32,7 @@ export abstract class JSFunctionObject$BoundOrWrapped extends JSFunctionObject {
     static PROTOTYPE: TruffleString;
     static SET_PROTO_NAME: TruffleString;
     static create(paramshape: Shape, paramproto: JSDynamicObject, paramfunctionData: JSFunctionData, paramenclosingFrame: MaterializedFrame, paramrealm: JSRealm, paramclassPrototype: Object): JSFunctionObject;
-    static createBound(paramshape: Shape, paramproto: JSDynamicObject, paramfunctionData: JSFunctionData, paramrealm: JSRealm, paramclassPrototype: Object, paramboundTargetFunction: Object, paramboundThis: Object, paramboundArguments: (Object | null)[]): JSFunctionObject;
+    static createBound(paramshape: Shape, paramproto: JSDynamicObject, paramfunctionData: JSFunctionData, paramrealm: JSRealm, paramclassPrototype: Object, paramboundTargetFunction: Object, paramboundThis: Object, paramboundArguments: Object[]): JSFunctionObject;
     static createWrapped(paramshape: Shape, paramproto: JSDynamicObject, paramfunctionData: JSFunctionData, paramrealm: JSRealm, paramboundTargetFunction: Object): JSFunctionObject;
     static defaultToString(paramobj: JSDynamicObject): TruffleString;
     static defineOwnProperty(paramobj: JSDynamicObject, paramkey: Object, paramdesc: PropertyDescriptor): boolean;
@@ -65,7 +65,7 @@ export abstract class JSFunctionObject$BoundOrWrapped extends JSFunctionObject {
     static getOrNull(paramobj: JSDynamicObject, paramkey: Object): Object;
     static getOwnProperty(paramobj: JSDynamicObject, paramkey: Object): PropertyDescriptor;
     static getOwnProperty(paramobj: JSDynamicObject, paramkey: Object, paramclassProfile: JSClassProfile): PropertyDescriptor;
-    static getPropertyArray(paramobj: JSDynamicObject): (Object | null)[];
+    static getPropertyArray(paramobj: JSDynamicObject): Property[];
     static getPropertyFlags(paramobj: JSDynamicObject, paramkey: Object): number;
     static getPrototype(paramobj: JSDynamicObject): JSDynamicObject;
     static getPrototype(paramobj: JSDynamicObject, paramjsclassProfile: JSClassProfile): JSDynamicObject;

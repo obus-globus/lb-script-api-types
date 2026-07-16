@@ -8,7 +8,7 @@ export class AdvancementWidgetType extends Enum<AdvancementWidgetType> {
     static UNOBTAINED: AdvancementWidgetType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): AdvancementWidgetType;
-    static values(): (Object | null)[];
+    static values(): AdvancementWidgetType[];
     private constructor(boxSprite: Identifier, taskFrameSprite: Identifier, challengeFrameSprite: Identifier, goalFrameSprite: Identifier)
     // private boxSprite: Identifier;
     // private challengeFrameSprite: Identifier;

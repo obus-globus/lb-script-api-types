@@ -24,28 +24,21 @@ export class VkCommandBufferSubmitInfoKHR extends VkCommandBufferSubmitInfo {
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkCommandBufferSubmitInfoKHR;
     static calloc(paramarg0: MemoryStack): VkCommandBufferSubmitInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkCommandBufferSubmitInfo;
     static create(paramarg0: number): VkCommandBufferSubmitInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkCommandBufferSubmitInfoKHR;
     static create(paramarg0: number): VkCommandBufferSubmitInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkCommandBufferSubmitInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkCommandBufferSubmitInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkCommandBufferSubmitInfo;
     static malloc(paramarg0: MemoryStack): VkCommandBufferSubmitInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkCommandBufferSubmitInfoKHR;
     static malloc(paramarg0: MemoryStack): VkCommandBufferSubmitInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ncommandBuffer(paramarg0: number): number;
     static ncommandBuffer(paramarg0: number, paramarg1: VkCommandBuffer): void;
     static ndeviceMask(paramarg0: number): number;
@@ -54,7 +47,6 @@ export class VkCommandBufferSubmitInfoKHR extends VkCommandBufferSubmitInfo {
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

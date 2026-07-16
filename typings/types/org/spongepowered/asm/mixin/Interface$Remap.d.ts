@@ -8,7 +8,7 @@ export class Interface$Remap extends Enum<Interface$Remap> {
     static ONLY_PREFIXED: Interface$Remap;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Interface$Remap;
-    static values(): (Object | null)[];
+    static values(): Interface$Remap[];
     private constructor()
     private constructor(arg2: boolean)
     // private forceRemap: boolean;

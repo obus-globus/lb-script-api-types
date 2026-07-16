@@ -10,7 +10,7 @@ export class Warning extends Enum<Warning> {
     static UNUSED_MACROS: Warning;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Warning;
-    static values(): (Object | null)[];
+    static values(): Warning[];
     private constructor()
     name(): "TRIGRAPHS" | "IMPORT" | "UNDEF" | "UNUSED_MACROS" | "ENDIF_LABELS" | "ERROR";
 }

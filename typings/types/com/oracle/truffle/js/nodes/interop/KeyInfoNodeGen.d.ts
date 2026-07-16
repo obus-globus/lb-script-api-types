@@ -18,7 +18,6 @@ export class KeyInfoNodeGen extends KeyInfoNode {
     static create(): KeyInfoNode;
     static getUncached(): KeyInfoNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private cachedOwnProperty_cache: KeyInfoNodeGen$CachedOwnPropertyData;
     // private fromJavaStringNode: TruffleString$FromJavaStringNode;

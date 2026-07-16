@@ -3,7 +3,7 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class CharBooleanMutablePair extends Object implements CharBooleanPair, Serializable {
-    static lexComparator(): (param0: Object) => boolean;
+    static lexComparator(): (param0: CharBooleanPair, param1: CharBooleanPair) => number;
     static of(paramarg0: string, paramarg1: boolean): CharBooleanMutablePair;
     static of(paramarg0: string, paramarg1: boolean): CharBooleanPair;
     constructor(arg0: string, arg1: boolean)

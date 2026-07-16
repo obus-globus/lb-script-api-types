@@ -10,7 +10,7 @@ export class Profile extends Enum<Profile> implements TokenTyped {
     static fromToken(paramarg0: Token): Profile;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Profile;
-    static values(): (Object | null)[];
+    static values(): Profile[];
     private constructor(arg2: number)
     readonly tokenType: number;
     getTokenType(): number;

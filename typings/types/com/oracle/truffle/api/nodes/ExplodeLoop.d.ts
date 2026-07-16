@@ -2,6 +2,5 @@ import type { ExplodeLoop$LoopExplosionKind } from '../../../../../com/oracle/tr
 import type { Annotation } from '../../../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface ExplodeLoop extends Annotation, Object{
-    constructor(kind: ExplodeLoop$LoopExplosionKind)
     /*not mapped: */ kind(): ExplodeLoop$LoopExplosionKind;
 }

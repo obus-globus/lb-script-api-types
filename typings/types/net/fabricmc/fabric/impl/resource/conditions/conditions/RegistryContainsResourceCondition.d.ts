@@ -8,7 +8,6 @@ import type { Identifier } from '../../../../../../../net/minecraft/resources/Id
 import type { RegistryOps$RegistryInfoLookup } from '../../../../../../../net/minecraft/resources/RegistryOps$RegistryInfoLookup.d.ts'
 import type { ResourceKey } from '../../../../../../../net/minecraft/resources/ResourceKey.d.ts'
 export class RegistryContainsResourceCondition extends Record implements ResourceCondition {
-    static CODEC: Codec<ResourceCondition>;
     static CODEC: MapCodec<RegistryContainsResourceCondition>;
     static CONDITION_CODEC: Codec<ResourceCondition>;
     static LIST_CODEC: Codec<ResourceCondition[]>;

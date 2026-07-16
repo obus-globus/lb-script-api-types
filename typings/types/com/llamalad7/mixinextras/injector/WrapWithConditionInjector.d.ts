@@ -6,7 +6,6 @@ import type { InjectionInfo } from '../../../../org/spongepowered/asm/mixin/inje
 import type { InjectionNodes$InjectionNode } from '../../../../org/spongepowered/asm/mixin/injection/struct/InjectionNodes$InjectionNode.d.ts'
 export class WrapWithConditionInjector extends Injector {
     static canCoerce(paramarg0: string, paramarg1: string): boolean;
-    static canCoerce(paramarg0: string, paramarg1: string): boolean;
     static canCoerce(paramarg0: Type, paramarg1: Type): boolean;
     constructor(arg0: InjectionInfo)
     // private checkTargetIsLogicallyVoid(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode): void;

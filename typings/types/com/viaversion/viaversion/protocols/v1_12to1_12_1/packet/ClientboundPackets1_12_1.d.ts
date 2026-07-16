@@ -87,7 +87,7 @@ export class ClientboundPackets1_12_1 extends Enum<ClientboundPackets1_12_1> imp
     static UPDATE_MOB_EFFECT: ClientboundPackets1_12_1;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClientboundPackets1_12_1;
-    static values(): (Object | null)[];
+    static values(): ClientboundPackets1_12_1[];
     private constructor()
     direction(): Direction;
     getId(): number;

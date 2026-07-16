@@ -10,6 +10,7 @@ import type { WorldChangeEvent } from '../../../../../net/ccbluex/liquidbounce/e
 import type { ClientModule } from '../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
 import type { ModuleManager$SmartBindKeyboardState } from '../../../../../net/ccbluex/liquidbounce/features/module/ModuleManager$SmartBindKeyboardState.d.ts'
 import type { ModuleManager$SmartBindMouseState } from '../../../../../net/ccbluex/liquidbounce/features/module/ModuleManager$SmartBindMouseState.d.ts'
+import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 /**
  * A fairly simple module manager
  *
@@ -18,11 +19,13 @@ import type { ModuleManager$SmartBindMouseState } from '../../../../../net/ccblu
 export class ModuleManager extends Object implements EventListener {
     static INSTANCE: ModuleManager;
     // private SMART_MOUSE_HOLD_THRESHOLD_MS: number;
+    readonly debugDisplayName: Component;
     // private handleDisconnect: EventHook<DisconnectEvent>;
     // private handleWorldChange: EventHook<WorldChangeEvent>;
     // private keyboardKeyHandler: EventHook<KeyboardKeyEvent>;
     readonly modulesConfig: Config;
     // private mouseButtonHandler: EventHook<MouseButtonEvent>;
+    readonly running: boolean;
     readonly size: number;
     // private smartKeyboardStates: Map<ClientModule, ModuleManager$SmartBindKeyboardState>;
     // private smartMouseStates: Map<ClientModule, ModuleManager$SmartBindMouseState>;

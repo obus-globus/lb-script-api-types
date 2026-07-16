@@ -30,7 +30,7 @@ export class WorldRenderingPhase extends Enum<WorldRenderingPhase> {
     static fromTerrainRenderType(paramarg0: ChunkSectionLayerGroup): WorldRenderingPhase;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): WorldRenderingPhase;
-    static values(): (Object | null)[];
+    static values(): WorldRenderingPhase[];
     private constructor()
     name(): "NONE" | "SKY" | "SUNSET" | "CUSTOM_SKY" | "SUN" | "MOON" | "STARS" | "VOID" | "TERRAIN_SOLID" | "TERRAIN_CUTOUT_MIPPED" | "TERRAIN_CUTOUT" | "ENTITIES" | "BLOCK_ENTITIES" | "DESTROY" | "OUTLINE" | "DEBUG" | "HAND_SOLID" | "TERRAIN_TRANSLUCENT" | "TRIPWIRE" | "PARTICLES" | "CLOUDS" | "RAIN_SNOW" | "WORLD_BORDER" | "HAND_TRANSLUCENT";
 }

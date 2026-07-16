@@ -6,7 +6,7 @@ export class Functions$IdentityFunction extends Enum<Functions$IdentityFunction>
     static INSTANCE: Functions$IdentityFunction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Functions$IdentityFunction;
-    static values(): (Object | null)[];
+    static values(): Functions$IdentityFunction[];
     private constructor()
     apply(o: Object): Object;
     toString(): string;

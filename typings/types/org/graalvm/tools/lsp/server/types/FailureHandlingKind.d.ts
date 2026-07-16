@@ -9,7 +9,7 @@ export class FailureHandlingKind extends Enum<FailureHandlingKind> {
     static get(paramstringValue: string): FailureHandlingKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): FailureHandlingKind;
-    static values(): (Object | null)[];
+    static values(): FailureHandlingKind[];
     private constructor(stringValue: string)
     readonly stringValue: string;
     getStringValue(): string;

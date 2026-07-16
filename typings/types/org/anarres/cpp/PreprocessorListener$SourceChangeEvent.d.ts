@@ -8,7 +8,7 @@ export class PreprocessorListener$SourceChangeEvent extends Enum<PreprocessorLis
     static SUSPEND: PreprocessorListener$SourceChangeEvent;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PreprocessorListener$SourceChangeEvent;
-    static values(): (Object | null)[];
+    static values(): PreprocessorListener$SourceChangeEvent[];
     private constructor()
     name(): "SUSPEND" | "PUSH" | "POP" | "RESUME";
 }

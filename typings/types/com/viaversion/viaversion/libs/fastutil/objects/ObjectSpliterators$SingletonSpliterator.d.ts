@@ -12,14 +12,14 @@ export class ObjectSpliterators$SingletonSpliterator<K extends unknown> extends 
     static SORTED: number;
     static SUBSIZED: number;
     constructor(arg0: K)
-    constructor(arg0: K, arg1: (param0: Object) => boolean)
-    readonly comparator: (param0: Object) => boolean;
+    constructor(arg0: K, arg1: (param0: K, param1: K) => number)
+    readonly comparator: (param0: K, param1: K) => number;
     // private consumed: boolean;
     // private element: K;
     characteristics(): number;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: K) => void): void;
-    getComparator(): (param0: Object) => boolean;
+    getComparator(): (param0: K, param1: K) => number;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: K) => void): boolean;
     trySplit(): ObjectSpliterator<K>;

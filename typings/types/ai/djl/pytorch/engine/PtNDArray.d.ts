@@ -290,7 +290,7 @@ export class PtNDArray extends NativeResource<number> implements NDArray {
     tile(arg0: number): PtNDArray;
     tile(arg0: number[]): PtNDArray;
     toArray(): Number[];
-    toBooleanArray(): (Object | null)[];
+    toBooleanArray(): boolean[];
     toByteArray(): number[];
     toByteBuffer(): ByteBuffer;
     toByteBuffer(arg0: boolean): ByteBuffer;

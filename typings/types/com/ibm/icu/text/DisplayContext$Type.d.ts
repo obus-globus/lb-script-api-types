@@ -8,7 +8,7 @@ export class DisplayContext$Type extends Enum<DisplayContext$Type> {
     static SUBSTITUTE_HANDLING: DisplayContext$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DisplayContext$Type;
-    static values(): (Object | null)[];
+    static values(): DisplayContext$Type[];
     private constructor()
     name(): "DIALECT_HANDLING" | "CAPITALIZATION" | "DISPLAY_LENGTH" | "SUBSTITUTE_HANDLING";
 }

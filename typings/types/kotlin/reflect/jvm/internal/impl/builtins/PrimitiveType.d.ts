@@ -18,7 +18,7 @@ export class PrimitiveType extends Enum<PrimitiveType> {
     static SHORT: PrimitiveType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PrimitiveType;
-    static values(): (Object | null)[];
+    static values(): PrimitiveType[];
     private constructor(arg2: string)
     // private arrayTypeFqName$delegate: Lazy<Object>;
     readonly arrayTypeName: Name;

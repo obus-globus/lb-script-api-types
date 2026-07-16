@@ -8,11 +8,10 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSTypedArraySortNodeGen extends JSTypedArraySortNode {
     static create(): JSTypedArraySortNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private cached_cache: JSTypedArraySortNodeGen$CachedData;
     // private interop: InteropLibrary;
     // private state_0_: number;
-    execute(arg0Value: JSTypedArrayObject, arg1Value: JSTypedArrayObject, arg2Value: number, arg3Value: (param0: Object) => boolean): void;
-    // private executeAndSpecialize(arg0Value: JSTypedArrayObject, arg1Value: JSTypedArrayObject, arg2Value: number, arg3Value: (param0: Object) => boolean): void;
+    execute(arg0Value: JSTypedArrayObject, arg1Value: JSTypedArrayObject, arg2Value: number, arg3Value: (param0: Object, param1: Object) => number): void;
+    // private executeAndSpecialize(arg0Value: JSTypedArrayObject, arg1Value: JSTypedArrayObject, arg2Value: number, arg3Value: (param0: Object, param1: Object) => number): void;
 }

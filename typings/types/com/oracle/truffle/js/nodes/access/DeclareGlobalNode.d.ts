@@ -9,7 +9,6 @@ import type { JSRealm } from '../../../../../../com/oracle/truffle/js/runtime/JS
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 export abstract class DeclareGlobalNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(varName: TruffleString)
     // private errorProfile: BranchProfile;
     // private hasLexicalBindingNode: HasPropertyCacheNode;

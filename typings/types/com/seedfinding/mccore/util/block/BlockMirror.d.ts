@@ -11,7 +11,7 @@ export class BlockMirror extends Enum<BlockMirror> {
     static NONE: BlockMirror;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BlockMirror;
-    static values(): (Object | null)[];
+    static values(): BlockMirror[];
     private constructor(arg2: Vec3i)
     readonly orientation: Vec3i;
     getOrientation(): Vec3i;

@@ -7,7 +7,7 @@ export class ComparatorChainKt extends Object {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/sorting/ComparatorChain.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/utils/sorting/ComparatorChain.kt:51}
      * @deprecated Use standard compareBy instead Use `compareBy(cond)`.
      */
-    static compareByCondition(cond: (param0: Object) => boolean): (param0: Object) => boolean;
+    static compareByCondition(cond: (param0: Object) => boolean): (param0: Object | null, param1: Object | null) => number;
     /**
      * false first
      *

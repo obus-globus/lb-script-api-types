@@ -13,7 +13,7 @@ export class TextureStage extends Enum<TextureStage> {
     static parse(paramarg0: string): Optional<TextureStage>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TextureStage;
-    static values(): (Object | null)[];
+    static values(): TextureStage[];
     private constructor()
     name(): "SETUP" | "BEGIN" | "SHADOWCOMP" | "PREPARE" | "GBUFFERS_AND_SHADOW" | "DEFERRED" | "COMPOSITE_AND_FINAL";
 }

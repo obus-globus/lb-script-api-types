@@ -10,7 +10,7 @@ export class ItemSlot$Type extends Enum<ItemSlot$Type> {
     static getEntries(): ItemSlot$Type[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ItemSlot$Type;
-    static values(): (Object | null)[];
+    static values(): ItemSlot$Type[];
     private constructor()
     name(): "HOTBAR" | "OFFHAND" | "ARMOR" | "INVENTORY" | "CONTAINER";
 }

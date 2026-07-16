@@ -5,7 +5,6 @@ import type { ObjectPrototypeBuiltinsFactory$FormatCacheNodeGen$CachedData } fro
 export class ObjectPrototypeBuiltinsFactory$FormatCacheNodeGen extends ObjectPrototypeBuiltins$FormatCacheNode {
     static create(): ObjectPrototypeBuiltins$FormatCacheNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private cached_cache: ObjectPrototypeBuiltinsFactory$FormatCacheNodeGen$CachedData;
     // private state_0_: number;

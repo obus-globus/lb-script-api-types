@@ -10,7 +10,7 @@ export class CoroutineScheduler$WorkerState extends Enum<CoroutineScheduler$Work
     static getEntries(): CoroutineScheduler$WorkerState[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CoroutineScheduler$WorkerState;
-    static values(): (Object | null)[];
+    static values(): CoroutineScheduler$WorkerState[];
     private constructor()
     name(): "CPU_ACQUIRED" | "BLOCKING" | "PARKING" | "DORMANT" | "TERMINATED";
 }

@@ -23,28 +23,21 @@ export class VkPhysicalDeviceMaintenance6PropertiesKHR extends VkPhysicalDeviceM
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceMaintenance6PropertiesKHR;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceMaintenance6PropertiesKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceMaintenance6Properties;
     static create(paramarg0: number): VkPhysicalDeviceMaintenance6Properties;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceMaintenance6PropertiesKHR;
     static create(paramarg0: number): VkPhysicalDeviceMaintenance6PropertiesKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceMaintenance6Properties;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceMaintenance6PropertiesKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceMaintenance6Properties;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceMaintenance6Properties;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceMaintenance6PropertiesKHR;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceMaintenance6PropertiesKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nblockTexelViewCompatibleMultipleLayers(paramarg0: number): number;
     static nfragmentShadingRateClampCombinerInputs(paramarg0: number): number;
     static nmaxCombinedImageSamplerDescriptorCount(paramarg0: number): number;
@@ -52,7 +45,6 @@ export class VkPhysicalDeviceMaintenance6PropertiesKHR extends VkPhysicalDeviceM
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

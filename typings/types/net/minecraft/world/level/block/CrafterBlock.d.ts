@@ -40,7 +40,6 @@ import type { BlockHitResult } from '../../../../../net/minecraft/world/phys/Blo
 import type { VoxelShape } from '../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 export class CrafterBlock extends BaseEntityBlock {
     static BLOCK_STATE_REGISTRY: BlockState[];
-    static CODEC: MapCodec<Block>;
     static CODEC: MapCodec<CrafterBlock>;
     static CRAFTING: BooleanProperty;
     static FILTERED_REGISTRIES: ResourceKey<FeatureElement[]>[];
@@ -66,7 +65,7 @@ export class CrafterBlock extends BaseEntityBlock {
     static boxZ(paramsizeXY: number, paramminZ: number, parammaxZ: number): VoxelShape;
     static boxZ(paramsizeX: number, paramsizeY: number, paramminZ: number, parammaxZ: number): VoxelShape;
     static boxZ(paramsizeX: number, paramminY: number, parammaxY: number, paramminZ: number, parammaxZ: number): VoxelShape;
-    static boxes(paramendInclusive: number, paramvoxelShapeFactory: (param0: number) => VoxelShape): (Object | null)[];
+    static boxes(paramendInclusive: number, paramvoxelShapeFactory: (param0: number) => VoxelShape): VoxelShape[];
     static byItem(paramitem: Item): Block;
     static canSupportCenter(paramlevel: LevelReader, parambelowPos: BlockPos, paramdirection: Direction): boolean;
     static canSupportRigidBlock(paramlevel: BlockGetter, parambelow: BlockPos): boolean;

@@ -6,7 +6,7 @@ export class ColorHandling extends Enum<ColorHandling> {
     static RESET: ColorHandling;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ColorHandling;
-    static values(): (Object | null)[];
+    static values(): ColorHandling[];
     private constructor()
     name(): "RESET" | "FORMATTING";
 }

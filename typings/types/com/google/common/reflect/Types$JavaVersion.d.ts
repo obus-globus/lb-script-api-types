@@ -10,7 +10,7 @@ export class Types$JavaVersion extends Enum<Types$JavaVersion> {
     static JAVA9: Types$JavaVersion;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Types$JavaVersion;
-    static values(): (Object | null)[];
+    static values(): Types$JavaVersion[];
     constructor(arg2: TypeVisitor)
     jdkTypeDuplicatesOwnerName(): boolean;
     newArrayType(componentType: Type): Type;

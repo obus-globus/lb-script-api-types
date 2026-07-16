@@ -23,28 +23,21 @@ export class VkDeviceGroupRenderPassBeginInfoKHR extends VkDeviceGroupRenderPass
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkDeviceGroupRenderPassBeginInfoKHR;
     static calloc(paramarg0: MemoryStack): VkDeviceGroupRenderPassBeginInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkDeviceGroupRenderPassBeginInfo;
     static create(paramarg0: number): VkDeviceGroupRenderPassBeginInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkDeviceGroupRenderPassBeginInfoKHR;
     static create(paramarg0: number): VkDeviceGroupRenderPassBeginInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkDeviceGroupRenderPassBeginInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkDeviceGroupRenderPassBeginInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkDeviceGroupRenderPassBeginInfo;
     static malloc(paramarg0: MemoryStack): VkDeviceGroupRenderPassBeginInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkDeviceGroupRenderPassBeginInfoKHR;
     static malloc(paramarg0: MemoryStack): VkDeviceGroupRenderPassBeginInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ndeviceMask(paramarg0: number): number;
     static ndeviceMask(paramarg0: number, paramarg1: number): void;
     static ndeviceRenderAreaCount(paramarg0: number): number;
@@ -55,7 +48,6 @@ export class VkDeviceGroupRenderPassBeginInfoKHR extends VkDeviceGroupRenderPass
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

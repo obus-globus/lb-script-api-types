@@ -12,7 +12,7 @@ export class ModuleAutoWeapon$ChangeOnAction extends Enum<ModuleAutoWeapon$Chang
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleAutoWeapon$ChangeOnAction;
-    static values(): (Object | null)[];
+    static values(): ModuleAutoWeapon$ChangeOnAction[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "ON_ATTACK" | "ON_TARGET";

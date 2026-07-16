@@ -6,7 +6,7 @@ import type { Info } from '../../../com/jcraft/jorbis/Info.d.ts'
 import type { InfoMode } from '../../../com/jcraft/jorbis/InfoMode.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class Floor1 extends FuncFloor {
-    static floor_P: (Object | null)[];
+    static floor_P: FuncFloor[];
     constructor()
     forward(arg0: Block, arg1: Object, arg2: number[], arg3: number[], arg4: Object): number;
     free_info(arg0: Object): void;

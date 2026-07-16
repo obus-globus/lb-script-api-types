@@ -13,15 +13,15 @@ export class BlockDirection extends Enum<BlockDirection> {
     static UP: BlockDirection;
     static WEST: BlockDirection;
     static fromString(paramarg0: string): BlockDirection;
-    static get2d(): (Object | null)[];
-    static getHorizontal(): (Object | null)[];
+    static get2d(): BlockDirection[];
+    static getHorizontal(): BlockDirection[];
     static getRandom(paramarg0: JRand): BlockDirection;
     static getShuffled(paramarg0: JRand): BlockDirection[];
     static random2D(paramarg0: JRand): BlockDirection;
     static randomHorizontal(paramarg0: JRand): BlockDirection;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BlockDirection;
-    static values(): (Object | null)[];
+    static values(): BlockDirection[];
     private constructor(arg2: BlockDirection$Axis, arg3: Vec3i)
     readonly axis: BlockDirection$Axis;
     // private vec: Vec3i;

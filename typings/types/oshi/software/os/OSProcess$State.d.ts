@@ -13,7 +13,7 @@ export class OSProcess$State extends Enum<OSProcess$State> {
     static ZOMBIE: OSProcess$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): OSProcess$State;
-    static values(): (Object | null)[];
+    static values(): OSProcess$State[];
     private constructor()
     name(): "NEW" | "RUNNING" | "SLEEPING" | "WAITING" | "ZOMBIE" | "STOPPED" | "OTHER" | "INVALID" | "SUSPENDED";
 }

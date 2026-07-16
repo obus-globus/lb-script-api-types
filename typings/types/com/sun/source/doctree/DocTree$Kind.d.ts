@@ -47,7 +47,7 @@ export class DocTree$Kind extends Enum<DocTree$Kind> {
     static VERSION: DocTree$Kind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DocTree$Kind;
-    static values(): (Object | null)[];
+    static values(): DocTree$Kind[];
     private constructor()
     private constructor(arg2: string)
     tagName: string;

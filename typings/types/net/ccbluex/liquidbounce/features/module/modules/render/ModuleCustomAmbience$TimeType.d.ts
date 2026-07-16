@@ -17,7 +17,7 @@ export class ModuleCustomAmbience$TimeType extends Enum<ModuleCustomAmbience$Tim
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleCustomAmbience$TimeType;
-    static values(): (Object | null)[];
+    static values(): ModuleCustomAmbience$TimeType[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "NO_CHANGE" | "DAWN" | "DAY" | "NOON" | "DUSK" | "NIGHT" | "MID_NIGHT";

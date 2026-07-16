@@ -8,7 +8,7 @@ export class MatchResult extends Enum<MatchResult> {
     static WEAK: MatchResult;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MatchResult;
-    static values(): (Object | null)[];
+    static values(): MatchResult[];
     private constructor()
     isAtLeast(arg0: MatchResult): boolean;
     isExactMatch(): boolean;

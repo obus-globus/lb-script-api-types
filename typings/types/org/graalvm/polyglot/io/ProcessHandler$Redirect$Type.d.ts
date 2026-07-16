@@ -7,7 +7,7 @@ export class ProcessHandler$Redirect$Type extends Enum<ProcessHandler$Redirect$T
     static STREAM: ProcessHandler$Redirect$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ProcessHandler$Redirect$Type;
-    static values(): (Object | null)[];
+    static values(): ProcessHandler$Redirect$Type[];
     private constructor()
     name(): "PIPE" | "INHERIT" | "STREAM";
 }

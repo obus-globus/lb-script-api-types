@@ -6,7 +6,7 @@ export class SocksInitResponseDecoder$State extends Enum<SocksInitResponseDecode
     static READ_PREFERRED_AUTH_TYPE: SocksInitResponseDecoder$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SocksInitResponseDecoder$State;
-    static values(): (Object | null)[];
+    static values(): SocksInitResponseDecoder$State[];
     private constructor()
     name(): "CHECK_PROTOCOL_VERSION" | "READ_PREFERRED_AUTH_TYPE";
 }

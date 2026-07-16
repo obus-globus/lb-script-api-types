@@ -10,7 +10,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class InitializeListFormatNode extends JavaScriptBaseNode {
     static createInitalizeListFormatNode(paramcontext: JSContext): InitializeListFormatNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private context: JSContext;
     // private errorBranch: BranchProfile;

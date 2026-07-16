@@ -12,7 +12,7 @@ export class ModuleAvoidHazards$AvoidMode extends Enum<ModuleAvoidHazards$AvoidM
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleAvoidHazards$AvoidMode;
-    static values(): (Object | null)[];
+    static values(): ModuleAvoidHazards$AvoidMode[];
     private constructor(tag: string, tagAliases: string[])
     readonly tag: string;
     readonly tagAliases: string[];

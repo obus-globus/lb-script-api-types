@@ -74,7 +74,7 @@ export class ServerboundPackets25w14craftmine extends Enum<ServerboundPackets25w
     static USE_ITEM_ON: ServerboundPackets25w14craftmine;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ServerboundPackets25w14craftmine;
-    static values(): (Object | null)[];
+    static values(): ServerboundPackets25w14craftmine[];
     private constructor()
     direction(): Direction;
     getId(): number;

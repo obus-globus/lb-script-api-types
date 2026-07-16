@@ -11,7 +11,7 @@ export class InputFlag extends Enum<InputFlag> {
     static SPRINT: InputFlag;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): InputFlag;
-    static values(): (Object | null)[];
+    static values(): InputFlag[];
     private constructor()
     getBit(): number;
     name(): "FORWARD" | "BACKWARD" | "LEFT" | "RIGHT" | "JUMP" | "SHIFT" | "SPRINT";

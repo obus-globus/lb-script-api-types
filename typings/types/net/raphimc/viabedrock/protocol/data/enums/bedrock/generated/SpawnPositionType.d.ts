@@ -10,7 +10,7 @@ export class SpawnPositionType extends Enum<SpawnPositionType> {
     static getByValue(paramarg0: number, paramarg1: SpawnPositionType): SpawnPositionType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SpawnPositionType;
-    static values(): (Object | null)[];
+    static values(): SpawnPositionType[];
     private constructor(arg2: number)
     private constructor(arg2: SpawnPositionType)
     readonly value: number;

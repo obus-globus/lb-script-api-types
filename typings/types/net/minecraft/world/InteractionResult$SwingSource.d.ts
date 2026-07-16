@@ -7,7 +7,7 @@ export class InteractionResult$SwingSource extends Enum<InteractionResult$SwingS
     static SERVER: InteractionResult$SwingSource;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): InteractionResult$SwingSource;
-    static values(): (Object | null)[];
+    static values(): InteractionResult$SwingSource[];
     private constructor()
     name(): "NONE" | "CLIENT" | "SERVER";
 }

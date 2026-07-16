@@ -41,7 +41,7 @@ export class DataFixTypes extends Enum<DataFixTypes> {
     static WORLD_GEN_SETTINGS: DataFixTypes;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): DataFixTypes;
-    static values(): (Object | null)[];
+    static values(): DataFixTypes[];
     private constructor(type: DSL$TypeReference)
     // private type: DSL$TypeReference;
     update<T extends unknown>(fixerUpper: DataFixer, input: Dynamic<T>, fromVersion: number, toVersion: number): Dynamic<T>;

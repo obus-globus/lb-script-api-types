@@ -3,7 +3,7 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ObjectShortMutablePair<K extends unknown> extends Object implements ObjectShortPair<K>, Serializable {
-    static lexComparator(): (param0: Object) => boolean;
+    static lexComparator(): (param0: ObjectShortPair<Object>, param1: ObjectShortPair<Object>) => number;
     static of(paramarg0: Object | null, paramarg1: number): ObjectShortMutablePair<Object>;
     static of(paramarg0: Object | null, paramarg1: number): ObjectShortPair<Object>;
     constructor(arg0: K, arg1: number)

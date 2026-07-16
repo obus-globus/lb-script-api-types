@@ -20,10 +20,10 @@ export abstract class AbstractOperatingSystem extends Object implements Operatin
     // private familyVersionInfo: () => Pair<string, OperatingSystem$OSVersionInfo>;
     readonly manufacturer: () => string;
     getBitness(): number;
-    getChildProcesses(arg0: number, arg1: (param0: OSProcess) => boolean, arg2: (param0: Object) => boolean, arg3: number): OSProcess[];
+    getChildProcesses(arg0: number, arg1: (param0: OSProcess) => boolean, arg2: (param0: OSProcess, param1: OSProcess) => number, arg3: number): OSProcess[];
     getCurrentProcess(): OSProcess;
     getCurrentThread(): OSThread;
-    getDescendantProcesses(arg0: number, arg1: (param0: OSProcess) => boolean, arg2: (param0: Object) => boolean, arg3: number): OSProcess[];
+    getDescendantProcesses(arg0: number, arg1: (param0: OSProcess) => boolean, arg2: (param0: OSProcess, param1: OSProcess) => number, arg3: number): OSProcess[];
     getDesktopWindows(arg0: boolean): OSDesktopWindow[];
     getFamily(): string;
     getFileSystem(): FileSystem;
@@ -35,7 +35,7 @@ export abstract class AbstractOperatingSystem extends Object implements Operatin
     getProcessCount(): number;
     getProcessId(): number;
     getProcesses(): OSProcess[];
-    getProcesses(arg0: (param0: OSProcess) => boolean, arg1: (param0: Object) => boolean, arg2: number): OSProcess[];
+    getProcesses(arg0: (param0: OSProcess) => boolean, arg1: (param0: OSProcess, param1: OSProcess) => number, arg2: number): OSProcess[];
     getProcesses(arg0: number[]): OSProcess[];
     getServices(): OSService[];
     getSessions(): OSSession[];

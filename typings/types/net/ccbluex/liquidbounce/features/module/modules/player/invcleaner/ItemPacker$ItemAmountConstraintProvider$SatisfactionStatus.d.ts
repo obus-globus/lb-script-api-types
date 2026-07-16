@@ -8,7 +8,7 @@ export class ItemPacker$ItemAmountConstraintProvider$SatisfactionStatus extends 
     static getEntries(): ItemPacker$ItemAmountConstraintProvider$SatisfactionStatus[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ItemPacker$ItemAmountConstraintProvider$SatisfactionStatus;
-    static values(): (Object | null)[];
+    static values(): ItemPacker$ItemAmountConstraintProvider$SatisfactionStatus[];
     private constructor()
     name(): "NOT_SATISFIED" | "SATISFIED" | "OVERSATURATED";
 }

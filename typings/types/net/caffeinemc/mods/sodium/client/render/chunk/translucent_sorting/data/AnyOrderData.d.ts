@@ -1,5 +1,4 @@
 import type { IntBuffer } from '../../../../../../../../../java/nio/IntBuffer.d.ts'
-import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { SortType } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/translucent_sorting/SortType.d.ts'
 import type { TranslucentGeometryCollector } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/translucent_sorting/TranslucentGeometryCollector.d.ts'
 import type { PresentTranslucentData } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/translucent_sorting/data/PresentTranslucentData.d.ts'
@@ -11,7 +10,7 @@ export class AnyOrderData extends PresentTranslucentData {
     static BYTES_PER_QUAD: number;
     static INDICES_PER_QUAD: number;
     static VERTICES_PER_QUAD: number;
-    static fromMesh(paramarg0: (Object | null)[], paramarg1: SectionPos): AnyOrderData;
+    static fromMesh(paramarg0: TQuad[], paramarg1: SectionPos): AnyOrderData;
     static quadCountToIndexBytes(paramarg0: number): number;
     static quadCountToVertexCount(paramarg0: number): number;
     static vertexCountToQuadCount(paramarg0: number): number;

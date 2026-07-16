@@ -7,7 +7,7 @@ export class ASTParser$ASTCacheStrategy extends Enum<ASTParser$ASTCacheStrategy>
     static NONE: ASTParser$ASTCacheStrategy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ASTParser$ASTCacheStrategy;
-    static values(): (Object | null)[];
+    static values(): ASTParser$ASTCacheStrategy[];
     private constructor()
     name(): "ALL" | "ALL_EXCLUDING_TRANSLATION_UNIT" | "NONE";
 }

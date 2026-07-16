@@ -6,7 +6,7 @@ export class BidiTransform$Mirroring extends Enum<BidiTransform$Mirroring> {
     static ON: BidiTransform$Mirroring;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): BidiTransform$Mirroring;
-    static values(): (Object | null)[];
+    static values(): BidiTransform$Mirroring[];
     private constructor()
     name(): "OFF" | "ON";
 }

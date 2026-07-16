@@ -30,7 +30,7 @@ export class RegExpPrototypeBuiltins$RegExpPrototype extends Enum<RegExpPrototyp
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RegExpPrototypeBuiltins$RegExpPrototype;
-    static values(): (Object | null)[];
+    static values(): RegExpPrototypeBuiltins$RegExpPrototype[];
     private constructor(length: number)
     private constructor(length: number, symbol: Symbol)
     readonly key: Symbol;

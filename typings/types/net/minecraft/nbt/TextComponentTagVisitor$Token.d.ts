@@ -20,7 +20,7 @@ export class TextComponentTagVisitor$Token extends Enum<TextComponentTagVisitor$
     static STRUCT_OPEN: TextComponentTagVisitor$Token;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TextComponentTagVisitor$Token;
-    static values(): (Object | null)[];
+    static values(): TextComponentTagVisitor$Token[];
     private constructor(text: string)
     text: string;
     name(): "FOLDED" | "ELEMENT_SEPARATOR" | "LIST_CLOSE" | "LIST_OPEN" | "LIST_TYPE_SEPARATOR" | "STRUCT_CLOSE" | "STRUCT_OPEN" | "NAME_VALUE_SEPARATOR" | "BYTE_SUFFIX" | "BYTE_ARRAY_PREFIX" | "SHORT_SUFFIX" | "INT_ARRAY_PREFIX" | "LONG_SUFFIX" | "LONG_ARRAY_PREFIX" | "FLOAT_SUFFIX" | "DOUBLE_SUFFIX";

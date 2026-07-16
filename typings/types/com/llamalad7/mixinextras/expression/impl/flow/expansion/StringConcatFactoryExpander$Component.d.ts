@@ -6,7 +6,7 @@ export class StringConcatFactoryExpander$Component extends Enum<StringConcatFact
     static TO_STRING: StringConcatFactoryExpander$Component;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): StringConcatFactoryExpander$Component;
-    static values(): (Object | null)[];
+    static values(): StringConcatFactoryExpander$Component[];
     private constructor()
     name(): "TO_STRING";
 }

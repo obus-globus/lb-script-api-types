@@ -15,7 +15,7 @@ import type { ConstructorRepository } from '../../../sun/reflect/generics/reposi
 export class Executable extends AccessibleObject implements GenericDeclaration, Member {
     static DECLARED: number;
     static PUBLIC: number;
-    static setAccessible(paramarg0: (Object | null)[], paramarg1: boolean): void;
+    static setAccessible(paramarg0: AccessibleObject[], paramarg1: boolean): void;
     constructor()
     readonly declaredAnnotations: Map<Class<Annotation>, Annotation>;
     // private parameterData: Executable$ParameterData;

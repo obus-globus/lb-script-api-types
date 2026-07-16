@@ -5,7 +5,7 @@ import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 import type { EventListenerSupport } from '../../../../../org/apache/commons/lang3/event/EventListenerSupport.d.ts'
 import type { FailableConsumer } from '../../../../../org/apache/commons/lang3/function/FailableConsumer.d.ts'
 export class EventListenerSupport$ProxyInvocationHandler extends Object implements InvocationHandler {
-    static invokeDefault(paramarg0: Object, paramarg1: Method, ...paramarg2: (Object | null)[]): Object;
+    static invokeDefault(paramarg0: Object, paramarg1: Method, ...paramarg2: Object[]): Object;
     constructor(null_: EventListenerSupport<Object>)
     constructor(null_: EventListenerSupport<Object>, arg1: (param0: Throwable) => void)
     // private handler: (param0: Throwable) => void;

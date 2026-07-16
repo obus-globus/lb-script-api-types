@@ -1,4 +1,3 @@
-import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Stream } from '../../../../../java/util/stream/Stream.d.ts'
@@ -10,7 +9,6 @@ import type { BiomeSource } from '../../../../../net/minecraft/world/level/biome
 import type { Climate$Sampler } from '../../../../../net/minecraft/world/level/biome/Climate$Sampler.d.ts'
 export class TheEndBiomeSource extends BiomeSource {
     static CODEC: MapCodec<TheEndBiomeSource>;
-    static CODEC: Codec<BiomeSource>;
     static create(parambiomes: HolderGetter<Biome>): TheEndBiomeSource;
     private constructor(end: Holder<Biome>, highlands: Holder<Biome>, midlands: Holder<Biome>, islands: Holder<Biome>, barrens: Holder<Biome>)
     // private barrens: Holder<Biome>;

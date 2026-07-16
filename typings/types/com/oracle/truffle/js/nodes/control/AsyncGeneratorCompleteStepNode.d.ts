@@ -9,7 +9,6 @@ import type { PromiseCapabilityRecord } from '../../../../../../com/oracle/truff
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class AsyncGeneratorCompleteStepNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private callNode: JSFunctionCallNode;
     // private createIterResultObjectNode: CreateIterResultObjectNode;

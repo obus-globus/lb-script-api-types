@@ -11,7 +11,7 @@ export class ServerAuthMovementMode extends Enum<ServerAuthMovementMode> {
     static getByValue(paramarg0: number, paramarg1: ServerAuthMovementMode): ServerAuthMovementMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ServerAuthMovementMode;
-    static values(): (Object | null)[];
+    static values(): ServerAuthMovementMode[];
     private constructor(arg2: number)
     private constructor(arg2: ServerAuthMovementMode)
     readonly value: number;

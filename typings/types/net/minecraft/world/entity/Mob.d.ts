@@ -173,7 +173,7 @@ export abstract class Mob extends LivingEntity implements NavigatingEntity, Equi
     static collideBoundingBox(paramsource: CollisionContext, parammovement: Vec3, paramboundingBox: AABB, paramlevel: Level, paramentityColliders: VoxelShape[]): Vec3;
     static createLivingAttributes(): AttributeSupplier$Builder;
     static createMobAttributes(): AttributeSupplier$Builder;
-    static createQuadLeashOffsets(paramentity: Entity, paramfrontOffset: number, paramfrontBack: number, paramleftRight: number, paramheight: number): (Object | null)[];
+    static createQuadLeashOffsets(paramentity: Entity, paramfrontOffset: number, paramfrontBack: number, paramleftRight: number, paramheight: number): Vec3[];
     static getEquipmentForSlot(paramslot: EquipmentSlot, paramtype: number): Item;
     static getInputVector(paraminput: Vec3, paramspeed: number, paramyRot: number): Vec3;
     static getViewScale(): number;

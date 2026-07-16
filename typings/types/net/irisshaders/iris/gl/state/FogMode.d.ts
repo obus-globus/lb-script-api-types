@@ -7,7 +7,7 @@ export class FogMode extends Enum<FogMode> {
     static PER_VERTEX: FogMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FogMode;
-    static values(): (Object | null)[];
+    static values(): FogMode[];
     private constructor()
     name(): "OFF" | "PER_VERTEX" | "PER_FRAGMENT";
 }

@@ -7,7 +7,6 @@ export abstract class JSIsArrayNode extends JavaScriptBaseNode {
     static createIsArray(): JSIsArrayNode;
     static createIsArrayLike(): JSIsArrayNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(jsType: boolean)
     // private jsType: boolean;
     doJSArray(object: Object): boolean;

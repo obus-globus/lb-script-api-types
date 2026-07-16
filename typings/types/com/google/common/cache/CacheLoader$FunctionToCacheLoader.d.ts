@@ -6,9 +6,9 @@ import type { Executor } from '../../../../java/util/concurrent/Executor.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class CacheLoader$FunctionToCacheLoader<K extends unknown, V extends unknown> extends CacheLoader<K, V> implements Serializable {
     static asyncReloading(paramloader: CacheLoader<Object, Object>, paramexecutor: Executor): CacheLoader<Object, Object>;
-    static from(paramfunction: (param0: Object) => boolean): CacheLoader<Object, Object>;
+    static from(paramfunction: (param0: Object | null) => Object | null): CacheLoader<Object, Object>;
     static from(paramsupplier: () => Object | null): CacheLoader<Object, Object>;
-    constructor(computingFunction: (param0: Object) => boolean)
-    // private computingFunction: (param0: Object) => boolean;
+    constructor(computingFunction: (param0: K) => V)
+    // private computingFunction: (param0: K) => V;
     load(key: K): V;
 }

@@ -9,7 +9,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSRegExpExecIntlNode$BuildGroupsObjectNode extends JavaScriptBaseNode {
     static create(): JSRegExpExecIntlNode$BuildGroupsObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doCachedGroupsFactory(regExp: JSRegExpObject, regexResult: Object, input: TruffleString, isIndices: boolean, cachedCompiledRegex: Object, cachedGroupsFactory: JSObjectFactory, isJSRegExpNode: IsJSClassNode): JSDynamicObject;
     doVaryingGroupsFactory(regExp: JSRegExpObject, regexResult: Object, input: TruffleString, isIndices: boolean): JSDynamicObject;

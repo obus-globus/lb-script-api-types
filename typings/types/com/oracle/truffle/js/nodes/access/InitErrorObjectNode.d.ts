@@ -14,7 +14,6 @@ export class InitErrorObjectNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): InitErrorObjectNode;
     static create(paramcontext: JSContext, paramdefaultColumnNumber: boolean): InitErrorObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, defaultColumnNumber: boolean)
     // private context: JSContext;
     // private defaultColumnNumber: boolean;

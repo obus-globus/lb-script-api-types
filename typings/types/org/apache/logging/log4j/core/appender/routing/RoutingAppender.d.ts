@@ -19,7 +19,7 @@ export class RoutingAppender extends AbstractAppender {
     static DEFAULT_STOP_TIMEOUT: number;
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
     static ELEMENT_TYPE: string;
-    static EMPTY_ARRAY: (Object | null)[];
+    static EMPTY_ARRAY: Appender[];
     static STATIC_VARIABLES_KEY: string;
     static createAppender(paramname: string, paramignore: string, paramroutes: Routes, paramconfig: Configuration, paramrewritePolicy: RewritePolicy, parampurgePolicy: PurgePolicy, paramfilter: Filter): RoutingAppender;
     static newBuilder(): Object | null;

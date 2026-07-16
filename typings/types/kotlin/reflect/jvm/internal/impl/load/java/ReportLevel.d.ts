@@ -9,7 +9,7 @@ export class ReportLevel extends Enum<ReportLevel> {
     static WARN: ReportLevel;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ReportLevel;
-    static values(): (Object | null)[];
+    static values(): ReportLevel[];
     private constructor(arg2: string)
     readonly description: string;
     getDescription(): string;

@@ -16,7 +16,7 @@ export class ScaffoldGodBridgeTechnique$Mode extends Enum<ScaffoldGodBridgeTechn
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ScaffoldGodBridgeTechnique$Mode;
-    static values(): (Object | null)[];
+    static values(): ScaffoldGodBridgeTechnique$Mode[];
     private constructor(tag: string, creator: () => LedgeAction)
     private constructor(tag: string, ledgeAction: LedgeAction)
     readonly creator: () => LedgeAction;

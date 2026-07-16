@@ -26,7 +26,7 @@ export class RegExpBuiltins$RegExpBuiltin extends Enum<RegExpBuiltins$RegExpBuil
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RegExpBuiltins$RegExpBuiltin;
-    static values(): (Object | null)[];
+    static values(): RegExpBuiltins$RegExpBuiltin[];
     private constructor(length: number)
     private constructor(length: number, key: TruffleString)
     readonly key: TruffleString;

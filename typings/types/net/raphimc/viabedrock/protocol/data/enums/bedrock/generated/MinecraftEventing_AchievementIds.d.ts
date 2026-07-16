@@ -81,7 +81,7 @@ export class MinecraftEventing_AchievementIds extends Enum<MinecraftEventing_Ach
     static getByValue(paramarg0: number, paramarg1: MinecraftEventing_AchievementIds): MinecraftEventing_AchievementIds;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MinecraftEventing_AchievementIds;
-    static values(): (Object | null)[];
+    static values(): MinecraftEventing_AchievementIds[];
     private constructor(arg2: number)
     private constructor(arg2: MinecraftEventing_AchievementIds)
     readonly value: number;

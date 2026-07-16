@@ -4,7 +4,6 @@ import type { JSFunctionCallNode$ForeignCallNode } from '../../../../../../com/o
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSFunctionCallNode$ForeignInstantiateNode extends JSFunctionCallNode$ForeignCallNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(skip: number, expectedArgumentCount: number)
     // private interop: InteropLibrary;
     // private skip: number;

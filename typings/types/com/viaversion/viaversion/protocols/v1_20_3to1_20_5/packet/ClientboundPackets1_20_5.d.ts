@@ -129,7 +129,7 @@ export class ClientboundPackets1_20_5 extends Enum<ClientboundPackets1_20_5> imp
     static UPDATE_TAGS: ClientboundPackets1_20_5;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClientboundPackets1_20_5;
-    static values(): (Object | null)[];
+    static values(): ClientboundPackets1_20_5[];
     private constructor()
     direction(): Direction;
     getId(): number;

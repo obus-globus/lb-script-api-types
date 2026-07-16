@@ -12,8 +12,8 @@ export class BooleanSpliterators$ArraySpliterator extends Object implements Bool
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(arg0: (Object | null)[], arg1: number, arg2: number, arg3: number)
-    // private array: (Object | null)[];
+    constructor(arg0: boolean[], arg1: number, arg2: number, arg3: number)
+    // private array: boolean[];
     // private characteristics: number;
     // private curr: number;
     // private length: number;

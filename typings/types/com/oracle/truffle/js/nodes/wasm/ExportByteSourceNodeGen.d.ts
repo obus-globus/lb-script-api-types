@@ -7,7 +7,6 @@ import type { ByteSequence } from '../../../../../../org/graalvm/polyglot/io/Byt
 export class ExportByteSourceNodeGen extends ExportByteSourceNode {
     static create(paramcontext: JSContext, paramnonByteSourceMessage: string, paramemptyByteSourceMessage: string): ExportByteSourceNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, nonByteSourceMessage: string, emptyByteSourceMessage: string)
     // private exportDataView_getByteLengthNode_: GetViewByteLengthNode;
     // private exportTypedArray_getByteLengthNode__field1_: Object;

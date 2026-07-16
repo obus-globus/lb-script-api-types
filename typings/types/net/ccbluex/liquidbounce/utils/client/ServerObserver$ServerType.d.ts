@@ -12,7 +12,7 @@ export class ServerObserver$ServerType extends Enum<ServerObserver$ServerType> i
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ServerObserver$ServerType;
-    static values(): (Object | null)[];
+    static values(): ServerObserver$ServerType[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "PREMIUM" | "CRACKED";

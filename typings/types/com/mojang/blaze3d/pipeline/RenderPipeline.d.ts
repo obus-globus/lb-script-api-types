@@ -3,6 +3,7 @@ import type { BindGroupLayout } from '../../../../com/mojang/blaze3d/pipeline/Bi
 import type { ColorTargetState } from '../../../../com/mojang/blaze3d/pipeline/ColorTargetState.d.ts'
 import type { DepthStencilState } from '../../../../com/mojang/blaze3d/pipeline/DepthStencilState.d.ts'
 import type { RenderPipeline$Builder } from '../../../../com/mojang/blaze3d/pipeline/RenderPipeline$Builder.d.ts'
+import type { RenderPipeline$Snippet } from '../../../../com/mojang/blaze3d/pipeline/RenderPipeline$Snippet.d.ts'
 import type { PolygonMode } from '../../../../com/mojang/blaze3d/platform/PolygonMode.d.ts'
 import type { VertexFormat } from '../../../../com/mojang/blaze3d/vertex/VertexFormat.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -11,7 +12,7 @@ import type { FabricRenderPipelineImpl } from '../../../../net/fabricmc/fabric/i
 import type { ShaderDefines } from '../../../../net/minecraft/client/renderer/ShaderDefines.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
 export class RenderPipeline extends Object implements FabricRenderPipeline, FabricRenderPipelineImpl {
-    static builder(...paramsnippets: (Object | null)[]): RenderPipeline$Builder;
+    static builder(...paramsnippets: RenderPipeline$Snippet[]): RenderPipeline$Builder;
     static updateSortKeySeed(): void;
     constructor(location: Identifier, vertexShader: Identifier, fragmentShader: Identifier, shaderDefines: ShaderDefines, bindGroupLayouts: BindGroupLayout[], colorTargetStates: ColorTargetState[], depthStencilState: DepthStencilState, polygonMode: PolygonMode, cull: boolean, vertexFormatPerBuffer: VertexFormat[], primitiveTopology: PrimitiveTopology, sortKey: number)
     readonly bindGroupLayouts: BindGroupLayout[];

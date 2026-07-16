@@ -7,7 +7,7 @@ export class LocalVarIncNode$Op extends Enum<LocalVarIncNode$Op> {
     static Inc: LocalVarIncNode$Op;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): LocalVarIncNode$Op;
-    static values(): (Object | null)[];
+    static values(): LocalVarIncNode$Op[];
     private constructor(op: LocalVarIncNode$LocalVarOp)
     op: LocalVarIncNode$LocalVarOp;
     name(): "Inc" | "Dec";

@@ -9,7 +9,7 @@ export class AbstractBoat$Status extends Enum<AbstractBoat$Status> {
     static UNDER_WATER: AbstractBoat$Status;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): AbstractBoat$Status;
-    static values(): (Object | null)[];
+    static values(): AbstractBoat$Status[];
     private constructor()
     name(): "IN_WATER" | "UNDER_WATER" | "UNDER_FLOWING_WATER" | "ON_LAND" | "IN_AIR";
 }

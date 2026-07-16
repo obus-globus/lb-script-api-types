@@ -21,35 +21,27 @@ export class VkPhysicalDeviceSeparateDepthStencilLayoutsFeaturesKHR extends VkPh
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceSeparateDepthStencilLayoutsFeaturesKHR;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceSeparateDepthStencilLayoutsFeaturesKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceSeparateDepthStencilLayoutsFeatures;
     static create(paramarg0: number): VkPhysicalDeviceSeparateDepthStencilLayoutsFeatures;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceSeparateDepthStencilLayoutsFeaturesKHR;
     static create(paramarg0: number): VkPhysicalDeviceSeparateDepthStencilLayoutsFeaturesKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceSeparateDepthStencilLayoutsFeatures;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceSeparateDepthStencilLayoutsFeaturesKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceSeparateDepthStencilLayoutsFeatures;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceSeparateDepthStencilLayoutsFeatures;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceSeparateDepthStencilLayoutsFeaturesKHR;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceSeparateDepthStencilLayoutsFeaturesKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
     static nseparateDepthStencilLayouts(paramarg0: number): number;
     static nseparateDepthStencilLayouts(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

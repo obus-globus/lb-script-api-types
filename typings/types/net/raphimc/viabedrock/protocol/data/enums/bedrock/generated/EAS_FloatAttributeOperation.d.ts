@@ -15,7 +15,7 @@ export class EAS_FloatAttributeOperation extends Enum<EAS_FloatAttributeOperatio
     static getByValue(paramarg0: number, paramarg1: EAS_FloatAttributeOperation): EAS_FloatAttributeOperation;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): EAS_FloatAttributeOperation;
-    static values(): (Object | null)[];
+    static values(): EAS_FloatAttributeOperation[];
     private constructor(arg2: number)
     private constructor(arg2: EAS_FloatAttributeOperation)
     readonly value: number;

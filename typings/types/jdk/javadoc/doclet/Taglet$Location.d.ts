@@ -11,7 +11,7 @@ export class Taglet$Location extends Enum<Taglet$Location> {
     static TYPE: Taglet$Location;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Taglet$Location;
-    static values(): (Object | null)[];
+    static values(): Taglet$Location[];
     private constructor()
     name(): "OVERVIEW" | "MODULE" | "PACKAGE" | "TYPE" | "CONSTRUCTOR" | "METHOD" | "FIELD";
 }

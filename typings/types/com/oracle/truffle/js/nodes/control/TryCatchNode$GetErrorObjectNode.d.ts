@@ -10,7 +10,6 @@ import type { Throwable } from '../../../../../../java/lang/Throwable.d.ts'
 export abstract class TryCatchNode$GetErrorObjectNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): TryCatchNode$GetErrorObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private context: JSContext;
     // private initErrorObjectNode: InitErrorObjectNode;

@@ -11,7 +11,7 @@ export class ItemUseOnActorInventoryTransaction_ActionType extends Enum<ItemUseO
     static getByValue(paramarg0: number, paramarg1: ItemUseOnActorInventoryTransaction_ActionType): ItemUseOnActorInventoryTransaction_ActionType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ItemUseOnActorInventoryTransaction_ActionType;
-    static values(): (Object | null)[];
+    static values(): ItemUseOnActorInventoryTransaction_ActionType[];
     private constructor(arg2: number)
     private constructor(arg2: ItemUseOnActorInventoryTransaction_ActionType)
     readonly value: number;

@@ -6,7 +6,6 @@ import type { JSObject } from '../../../../../../com/oracle/truffle/js/runtime/o
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSInteropGetIteratorNodeGen$Uncached extends JSInteropGetIteratorNode implements UnadoptableNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     execute(arg0Value: JSObject, arg1Value: JavaScriptLanguage, arg2Value: boolean): Object;
 }

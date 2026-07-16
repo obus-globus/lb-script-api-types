@@ -6,7 +6,7 @@ export class Subscription$SubscriptionType extends Enum<Subscription$Subscriptio
     static RECURRING: Subscription$SubscriptionType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Subscription$SubscriptionType;
-    static values(): (Object | null)[];
+    static values(): Subscription$SubscriptionType[];
     private constructor()
     name(): "NORMAL" | "RECURRING";
 }

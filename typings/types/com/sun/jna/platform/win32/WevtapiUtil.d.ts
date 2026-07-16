@@ -4,7 +4,7 @@ import type { Winevt$EVT_VARIANT } from '../../../../../com/sun/jna/platform/win
 import type { IntByReference } from '../../../../../com/sun/jna/ptr/IntByReference.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class WevtapiUtil extends Object {
-    static EvtFormatMessage(paramarg0: Winevt$EVT_HANDLE, paramarg1: Winevt$EVT_HANDLE, paramarg2: number, paramarg3: number, paramarg4: (Object | null)[], paramarg5: number): string;
+    static EvtFormatMessage(paramarg0: Winevt$EVT_HANDLE, paramarg1: Winevt$EVT_HANDLE, paramarg2: number, paramarg3: number, paramarg4: Winevt$EVT_VARIANT[], paramarg5: number): string;
     static EvtGetChannelConfigProperty(paramarg0: Winevt$EVT_HANDLE, paramarg1: number): Winevt$EVT_VARIANT;
     static EvtGetExtendedStatus(): string;
     static EvtGetPublisherMetadataProperty(paramarg0: Winevt$EVT_HANDLE, paramarg1: number, paramarg2: number): Memory;

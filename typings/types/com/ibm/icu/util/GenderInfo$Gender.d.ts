@@ -7,7 +7,7 @@ export class GenderInfo$Gender extends Enum<GenderInfo$Gender> {
     static OTHER: GenderInfo$Gender;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): GenderInfo$Gender;
-    static values(): (Object | null)[];
+    static values(): GenderInfo$Gender[];
     private constructor()
     name(): "MALE" | "FEMALE" | "OTHER";
 }

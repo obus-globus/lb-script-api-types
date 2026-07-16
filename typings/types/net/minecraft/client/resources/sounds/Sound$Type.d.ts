@@ -7,7 +7,7 @@ export class Sound$Type extends Enum<Sound$Type> {
     static getByName(paramname: string): Sound$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Sound$Type;
-    static values(): (Object | null)[];
+    static values(): Sound$Type[];
     private constructor(name: string)
     // private name: string;
     name(): "FILE" | "SOUND_EVENT";

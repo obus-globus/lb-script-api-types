@@ -12,7 +12,7 @@ export class VersionType extends Enum<VersionType> {
     static SPECIAL: VersionType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): VersionType;
-    static values(): (Object | null)[];
+    static values(): VersionType[];
     private constructor()
     name(): "CLASSIC" | "ALPHA_INITIAL" | "ALPHA_LATER" | "BETA_INITIAL" | "BETA_LATER" | "RELEASE_INITIAL" | "RELEASE" | "SPECIAL";
 }

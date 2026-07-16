@@ -8,7 +8,7 @@ export class MixinCoprocessor$ProcessResult extends Enum<MixinCoprocessor$Proces
     static TRANSFORMED: MixinCoprocessor$ProcessResult;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MixinCoprocessor$ProcessResult;
-    static values(): (Object | null)[];
+    static values(): MixinCoprocessor$ProcessResult[];
     private constructor(arg2: boolean, arg3: boolean)
     // private passthrough: boolean;
     // private transformed: boolean;

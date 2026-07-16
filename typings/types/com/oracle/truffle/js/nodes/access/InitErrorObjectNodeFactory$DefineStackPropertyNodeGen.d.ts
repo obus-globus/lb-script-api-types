@@ -5,7 +5,6 @@ import type { JSObject } from '../../../../../../com/oracle/truffle/js/runtime/o
 export class InitErrorObjectNodeFactory$DefineStackPropertyNodeGen extends InitErrorObjectNode$DefineStackPropertyNode {
     static create(): InitErrorObjectNode$DefineStackPropertyNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private cached0_cache: InitErrorObjectNodeFactory$DefineStackPropertyNodeGen$Cached0Data;
     // private state_0_: number;

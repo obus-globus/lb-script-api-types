@@ -5,7 +5,7 @@ export class StackWalker$ExtendedOption extends Enum<StackWalker$ExtendedOption>
     static LOCALS_AND_OPERANDS: StackWalker$ExtendedOption;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): StackWalker$ExtendedOption;
-    static values(): (Object | null)[];
+    static values(): StackWalker$ExtendedOption[];
     private constructor()
     name(): "LOCALS_AND_OPERANDS";
 }

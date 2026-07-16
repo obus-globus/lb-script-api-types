@@ -42,7 +42,7 @@ export class TokenKind extends Enum<TokenKind> {
     static TRUE: TokenKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TokenKind;
-    static values(): (Object | null)[];
+    static values(): TokenKind[];
     private constructor()
     private constructor(...arg2: TokenKind$Tag[])
     // private tags: TokenKind$Tag[];

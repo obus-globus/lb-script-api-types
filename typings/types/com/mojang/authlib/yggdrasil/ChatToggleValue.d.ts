@@ -7,7 +7,7 @@ export class ChatToggleValue extends Enum<ChatToggleValue> {
     static FRIENDS_ONLY: ChatToggleValue;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ChatToggleValue;
-    static values(): (Object | null)[];
+    static values(): ChatToggleValue[];
     private constructor()
     isDisabled(): boolean;
     isEnabled(): boolean;

@@ -7,7 +7,6 @@ import type { UniformValue } from '../../../../net/minecraft/client/renderer/Uni
 import type { UniformValue$Type } from '../../../../net/minecraft/client/renderer/UniformValue$Type.d.ts'
 export class UniformValue$IntUniform extends Record implements UniformValue {
     static CODEC: Codec<UniformValue$IntUniform>;
-    static CODEC: Codec<UniformValue>;
     constructor(value: number)
     // private value: number;
     addSize(calculator: Std140SizeCalculator): void;

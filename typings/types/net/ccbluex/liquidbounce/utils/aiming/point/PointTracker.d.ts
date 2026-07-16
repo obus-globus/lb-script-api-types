@@ -7,10 +7,12 @@ import type { PointProcessor } from '../../../../../../net/ccbluex/liquidbounce/
 import type { PointProcessorDelay } from '../../../../../../net/ccbluex/liquidbounce/utils/aiming/point/features/PointProcessorDelay.d.ts'
 import type { PointProcessorGaussian } from '../../../../../../net/ccbluex/liquidbounce/utils/aiming/point/features/PointProcessorGaussian.d.ts'
 import type { PointProcessorLazy } from '../../../../../../net/ccbluex/liquidbounce/utils/aiming/point/features/PointProcessorLazy.d.ts'
+import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class PointTracker extends ValueGroup implements EventListener {
     constructor(parent: EventListener)
+    readonly debugDisplayName: Component;
     // private delay: PointProcessorDelay;
     // private gaussian: PointProcessorGaussian;
     // private lazy: PointProcessorLazy;
@@ -18,6 +20,7 @@ export class PointTracker extends ValueGroup implements EventListener {
     // private predicateBoxParts: ExemptBoxPart[];
     // private /*not mapped: */ getPredicateBoxParts(): ExemptBoxPart[];
     // private processors: PointProcessor[];
+    readonly running: boolean;
     // private calculateDistancePercentage(point: Vec3, eyes: Vec3, bestHitVector: Vec3, worstHitVector: Vec3): number;
     children(): EventListener[];
     // private farthestAxis(value: number, min: number, max: number): number;

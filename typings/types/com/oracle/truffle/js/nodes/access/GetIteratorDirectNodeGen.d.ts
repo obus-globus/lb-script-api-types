@@ -10,7 +10,6 @@ export class GetIteratorDirectNodeGen extends GetIteratorDirectNode {
     static getUncached(): GetIteratorDirectNode;
     static inline(paramtarget: InlineSupport$InlineTarget): GetIteratorDirectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private get1_interop_: InteropLibrary;
     // private getNextMethodNode: PropertyGetNode;

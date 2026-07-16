@@ -13,7 +13,7 @@ export class Visibility extends Enum<Visibility> implements Tagged {
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Visibility;
-    static values(): (Object | null)[];
+    static values(): Visibility[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "HEADER" | "FOOTER" | "NAME_ONLY";

@@ -7,7 +7,7 @@ export class TypeCheckerState$LowerCapturedTypePolicy extends Enum<TypeCheckerSt
     static SKIP_LOWER: TypeCheckerState$LowerCapturedTypePolicy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TypeCheckerState$LowerCapturedTypePolicy;
-    static values(): (Object | null)[];
+    static values(): TypeCheckerState$LowerCapturedTypePolicy[];
     private constructor()
     name(): "CHECK_ONLY_LOWER" | "CHECK_SUBTYPE_AND_LOWER" | "SKIP_LOWER";
 }

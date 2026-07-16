@@ -15,7 +15,7 @@ export class IsoEra extends Enum<IsoEra> implements Era {
     static of(paramarg0: number): IsoEra;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): IsoEra;
-    static values(): (Object | null)[];
+    static values(): IsoEra[];
     private constructor()
     adjustInto(arg0: Temporal): Temporal;
     get(arg0: TemporalField): number;

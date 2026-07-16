@@ -11,7 +11,7 @@ export class PriorityQueues$SynchronizedPriorityQueue<K extends unknown> extends
     // private sync: Object;
     changed(): void;
     clear(): void;
-    comparator(): (param0: Object) => boolean;
+    comparator(): (param0: K, param1: K) => number;
     dequeue(): K;
     enqueue(arg0: K): void;
     equals(arg0: Object | null): boolean;

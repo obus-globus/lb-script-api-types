@@ -26,7 +26,7 @@ export class Version extends Enum<Version> implements TokenTyped {
     static fromToken(paramarg0: Token): Version;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Version;
-    static values(): (Object | null)[];
+    static values(): Version[];
     private constructor(arg2: number, arg3: number)
     private constructor(arg2: number, arg3: number, arg4: boolean)
     es: boolean;

@@ -1,4 +1,3 @@
-import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { KeyDispatchDataCodec } from '../../../../../net/minecraft/util/KeyDispatchDataCodec.d.ts'
@@ -8,7 +7,6 @@ import type { DensityFunction$FunctionContext } from '../../../../../net/minecra
 import type { DensityFunction$NoiseHolder } from '../../../../../net/minecraft/world/level/levelgen/DensityFunction$NoiseHolder.d.ts'
 import type { DensityFunction$Visitor } from '../../../../../net/minecraft/world/level/levelgen/DensityFunction$Visitor.d.ts'
 export class DensityFunctions$ShiftedNoise extends Record implements DensityFunction {
-    static CODEC: Codec<DensityFunction>;
     static CODEC: KeyDispatchDataCodec<DensityFunctions$ShiftedNoise>;
     constructor(shiftX: DensityFunction, shiftY: DensityFunction, shiftZ: DensityFunction, xzScale: number, yScale: number, noise: DensityFunction$NoiseHolder)
     // private noise: DensityFunction$NoiseHolder;

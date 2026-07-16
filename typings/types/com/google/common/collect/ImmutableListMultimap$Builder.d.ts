@@ -10,8 +10,8 @@ export class ImmutableListMultimap$Builder<K extends unknown, V extends unknown>
     build(): ImmutableListMultimap<K, V>;
     combine(other: ImmutableMultimap$Builder<K, V>): ImmutableListMultimap$Builder<K, V>;
     expectedValuesPerKey(expectedValuesPerKey: number): ImmutableListMultimap$Builder<K, V>;
-    orderKeysBy(keyComparator: (param0: Object) => boolean): ImmutableListMultimap$Builder<K, V>;
-    orderValuesBy(valueComparator: (param0: Object) => boolean): ImmutableListMultimap$Builder<K, V>;
+    orderKeysBy(keyComparator: (param0: K, param1: K) => number): ImmutableListMultimap$Builder<K, V>;
+    orderValuesBy(valueComparator: (param0: V, param1: V) => number): ImmutableListMultimap$Builder<K, V>;
     put(entry: Map$Entry<K, V>): ImmutableListMultimap$Builder<K, V>;
     put(key: K, value: V): ImmutableListMultimap$Builder<K, V>;
     putAll(key: K, ...values: V[]): ImmutableListMultimap$Builder<K, V>;

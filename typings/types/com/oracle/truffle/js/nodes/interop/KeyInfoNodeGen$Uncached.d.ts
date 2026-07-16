@@ -12,7 +12,6 @@ export class KeyInfoNodeGen$Uncached extends KeyInfoNode implements UnadoptableN
     static WRITABLE: number;
     static WRITE_SIDE_EFFECTS: number;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     execute(arg0Value: JSDynamicObject, arg1Value: string, arg2Value: number): boolean;
 }

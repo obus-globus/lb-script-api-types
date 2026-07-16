@@ -14,7 +14,7 @@ export class Uint8ArrayBuiltins$Uint8ArrayPrototype extends Enum<Uint8ArrayBuilt
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Uint8ArrayBuiltins$Uint8ArrayPrototype;
-    static values(): (Object | null)[];
+    static values(): Uint8ArrayBuiltins$Uint8ArrayPrototype[];
     private constructor(length: number)
     // private functionLength: number;
     args(): BuiltinArgumentBuilder;

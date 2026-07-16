@@ -8,7 +8,7 @@ export class StateTrackable$State extends Enum<StateTrackable$State> {
     static UNTRACKABLE: StateTrackable$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): StateTrackable$State;
-    static values(): (Object | null)[];
+    static values(): StateTrackable$State[];
     private constructor()
     name(): "IMMUTABLE" | "STABLE" | "DYNAMIC" | "UNTRACKABLE";
 }

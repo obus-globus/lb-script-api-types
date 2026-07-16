@@ -23,28 +23,21 @@ export class VkSwapchainPresentModeInfoEXT extends VkSwapchainPresentModeInfoKHR
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkSwapchainPresentModeInfoKHR;
     static calloc(paramarg0: MemoryStack): VkSwapchainPresentModeInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkSwapchainPresentModeInfoEXT;
     static create(paramarg0: number): VkSwapchainPresentModeInfoEXT;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkSwapchainPresentModeInfoKHR;
     static create(paramarg0: number): VkSwapchainPresentModeInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkSwapchainPresentModeInfoEXT;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkSwapchainPresentModeInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkSwapchainPresentModeInfoEXT;
     static malloc(paramarg0: MemoryStack): VkSwapchainPresentModeInfoEXT;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkSwapchainPresentModeInfoKHR;
     static malloc(paramarg0: MemoryStack): VkSwapchainPresentModeInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static npPresentModes(paramarg0: number): IntBuffer;
@@ -53,7 +46,6 @@ export class VkSwapchainPresentModeInfoEXT extends VkSwapchainPresentModeInfoKHR
     static nsType(paramarg0: number, paramarg1: number): void;
     static nswapchainCount(paramarg0: number): number;
     static nswapchainCount(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

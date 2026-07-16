@@ -9,7 +9,6 @@ import type { TRegexUtil$InvokeGetGroupBoundariesMethodNode } from '../../../../
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PropertyGetNode$LazyNamedCaptureGroupPropertyGetNode extends PropertyGetNode$LinkedPropertyGetNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(property: Property, receiverCheck: PropertyCacheNode$ReceiverCheckNode, groupIndices: number[])
     // private getEndNode: TRegexUtil$InvokeGetGroupBoundariesMethodNode;
     // private getStartNode: TRegexUtil$InvokeGetGroupBoundariesMethodNode;

@@ -6,7 +6,7 @@ export class ByteBufFormat extends Enum<ByteBufFormat> {
     static SIMPLE: ByteBufFormat;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ByteBufFormat;
-    static values(): (Object | null)[];
+    static values(): ByteBufFormat[];
     private constructor()
     name(): "SIMPLE" | "HEX_DUMP";
 }

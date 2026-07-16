@@ -9,10 +9,10 @@ export class PatchShaderType extends Enum<PatchShaderType> {
     static TESS_CONTROL: PatchShaderType;
     static TESS_EVAL: PatchShaderType;
     static VERTEX: PatchShaderType;
-    static fromGlShaderType(paramarg0: ShaderType): (Object | null)[];
+    static fromGlShaderType(paramarg0: ShaderType): PatchShaderType[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PatchShaderType;
-    static values(): (Object | null)[];
+    static values(): PatchShaderType[];
     private constructor(arg2: ShaderType, arg3: string)
     extension: string;
     glShaderType: ShaderType;

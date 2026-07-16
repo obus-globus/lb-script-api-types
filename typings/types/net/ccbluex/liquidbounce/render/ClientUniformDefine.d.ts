@@ -19,7 +19,7 @@ export class ClientUniformDefine extends Enum<ClientUniformDefine> {
     static getEntries(): ClientUniformDefine[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClientUniformDefine;
-    static values(): (Object | null)[];
+    static values(): ClientUniformDefine[];
     private constructor(uboName: string, size: number)
     readonly bindGroupLayout: BindGroupLayout;
     readonly size: number;

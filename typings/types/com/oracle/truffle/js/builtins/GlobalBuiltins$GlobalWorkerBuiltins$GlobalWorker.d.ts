@@ -12,7 +12,7 @@ export class GlobalBuiltins$GlobalWorkerBuiltins$GlobalWorker extends Enum<Globa
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): GlobalBuiltins$GlobalWorkerBuiltins$GlobalWorker;
-    static values(): (Object | null)[];
+    static values(): GlobalBuiltins$GlobalWorkerBuiltins$GlobalWorker[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

@@ -20,7 +20,7 @@ export class ModuleCriticals$CriticalsSelectionMode extends Enum<ModuleCriticals
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleCriticals$CriticalsSelectionMode;
-    static values(): (Object | null)[];
+    static values(): ModuleCriticals$CriticalsSelectionMode[];
     private constructor(tag: string)
     readonly tag: string;
     isCriticalHit(target: Entity): boolean;

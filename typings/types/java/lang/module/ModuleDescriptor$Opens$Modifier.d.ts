@@ -6,7 +6,7 @@ export class ModuleDescriptor$Opens$Modifier extends Enum<ModuleDescriptor$Opens
     static SYNTHETIC: ModuleDescriptor$Opens$Modifier;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleDescriptor$Opens$Modifier;
-    static values(): (Object | null)[];
+    static values(): ModuleDescriptor$Opens$Modifier[];
     private constructor(arg2: number)
     // private mask: number;
     // private mask(): number;

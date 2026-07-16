@@ -1,10 +1,15 @@
 import type { GameProfile } from '../../../../../../../../com/mojang/authlib/GameProfile.d.ts'
+import type { GpuDevice } from '../../../../../../../../com/mojang/blaze3d/systems/GpuDevice.d.ts'
 import type { Consumer } from '../../../../../../../../java/util/function/Consumer.d.ts'
 import type { Predicate } from '../../../../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { PosPoseSnapshot } from '../../../../../../../../net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/PosPoseSnapshot.d.ts'
 import type { MinecraftShortcuts } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/MinecraftShortcuts.d.ts'
+import type { Minecraft } from '../../../../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { ClientLevel } from '../../../../../../../../net/minecraft/client/multiplayer/ClientLevel.d.ts'
+import type { ClientPacketListener } from '../../../../../../../../net/minecraft/client/multiplayer/ClientPacketListener.d.ts'
+import type { MultiPlayerGameMode } from '../../../../../../../../net/minecraft/client/multiplayer/MultiPlayerGameMode.d.ts'
+import type { LocalPlayer } from '../../../../../../../../net/minecraft/client/player/LocalPlayer.d.ts'
 import type { RemotePlayer } from '../../../../../../../../net/minecraft/client/player/RemotePlayer.d.ts'
 import type { DamageSource } from '../../../../../../../../net/minecraft/world/damagesource/DamageSource.d.ts'
 import type { MobEffectInstance } from '../../../../../../../../net/minecraft/world/effect/MobEffectInstance.d.ts'
@@ -129,7 +134,13 @@ export class FakePlayer extends RemotePlayer implements MinecraftShortcuts {
     static resetForwardDirectionOfRelativePortalPosition(paramoffsets: Vec3): Vec3;
     static setViewScale(paramviewScale: number): void;
     constructor(level: ClientLevel, gameProfile: GameProfile, onRemoval: ((param0: FakePlayer) => void) | null)
+    readonly gpuDevice: GpuDevice;
+    readonly interaction: MultiPlayerGameMode;
+    readonly mc: Minecraft;
+    readonly network: ClientPacketListener;
     onRemoval: ((param0: FakePlayer) => void) | null;
+    readonly player: LocalPlayer;
+    readonly world: ClientLevel;
     /**
      * The fake player takes no knockback.
      *

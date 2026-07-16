@@ -26,7 +26,7 @@ export class StrictInteractionSource extends Enum<StrictInteractionSource> {
     static getEntries(): StrictInteractionSource[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): StrictInteractionSource;
-    static values(): (Object | null)[];
+    static values(): StrictInteractionSource[];
     private constructor()
     name(): "INTERACT" | "USE_ITEM_ON" | "USE_ITEM";
 }

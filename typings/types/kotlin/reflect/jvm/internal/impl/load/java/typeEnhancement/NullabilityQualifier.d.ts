@@ -7,7 +7,7 @@ export class NullabilityQualifier extends Enum<NullabilityQualifier> {
     static NULLABLE: NullabilityQualifier;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): NullabilityQualifier;
-    static values(): (Object | null)[];
+    static values(): NullabilityQualifier[];
     private constructor()
     name(): "FORCE_FLEXIBILITY" | "NULLABLE" | "NOT_NULL";
 }

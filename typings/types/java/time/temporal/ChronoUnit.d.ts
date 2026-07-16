@@ -23,7 +23,7 @@ export class ChronoUnit extends Enum<ChronoUnit> implements TemporalUnit {
     static YEARS: ChronoUnit;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ChronoUnit;
-    static values(): (Object | null)[];
+    static values(): ChronoUnit[];
     private constructor(arg2: string, arg3: Duration)
     readonly duration: Duration;
     // private name: string;

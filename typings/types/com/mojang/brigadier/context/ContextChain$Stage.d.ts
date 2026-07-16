@@ -6,7 +6,7 @@ export class ContextChain$Stage extends Enum<ContextChain$Stage> {
     static MODIFY: ContextChain$Stage;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ContextChain$Stage;
-    static values(): (Object | null)[];
+    static values(): ContextChain$Stage[];
     private constructor()
     name(): "MODIFY" | "EXECUTE";
 }

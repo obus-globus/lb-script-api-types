@@ -23,7 +23,7 @@ export class SerializedData$Type extends Enum<SerializedData$Type> {
     static WebAssemblyModule: SerializedData$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SerializedData$Type;
-    static values(): (Object | null)[];
+    static values(): SerializedData$Type[];
     private constructor()
     name(): "Primitive" | "Duplicate" | "Boolean" | "Number" | "BigInt" | "String" | "Date" | "RegExp" | "SharedArrayBuffer" | "ArrayBuffer" | "ArrayBufferView" | "DataView" | "Map" | "Set" | "Error" | "Array" | "Object" | "WebAssemblyMemory" | "WebAssemblyModule";
 }

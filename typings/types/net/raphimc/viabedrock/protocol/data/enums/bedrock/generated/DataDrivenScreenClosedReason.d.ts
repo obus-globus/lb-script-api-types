@@ -13,7 +13,7 @@ export class DataDrivenScreenClosedReason extends Enum<DataDrivenScreenClosedRea
     static getByValue(paramarg0: number, paramarg1: DataDrivenScreenClosedReason): DataDrivenScreenClosedReason;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DataDrivenScreenClosedReason;
-    static values(): (Object | null)[];
+    static values(): DataDrivenScreenClosedReason[];
     private constructor(arg2: number)
     private constructor(arg2: DataDrivenScreenClosedReason)
     readonly value: number;

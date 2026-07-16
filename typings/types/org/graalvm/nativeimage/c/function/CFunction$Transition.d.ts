@@ -6,7 +6,7 @@ export class CFunction$Transition extends Enum<CFunction$Transition> {
     static TO_NATIVE: CFunction$Transition;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CFunction$Transition;
-    static values(): (Object | null)[];
+    static values(): CFunction$Transition[];
     private constructor()
     name(): "TO_NATIVE" | "NO_TRANSITION";
 }

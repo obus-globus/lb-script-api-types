@@ -6,7 +6,7 @@ export class WarmUpTracker$Mode extends Enum<WarmUpTracker$Mode> {
     static LINEAR: WarmUpTracker$Mode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): WarmUpTracker$Mode;
-    static values(): (Object | null)[];
+    static values(): WarmUpTracker$Mode[];
     private constructor()
     name(): "LINEAR" | "CONSTANT";
 }

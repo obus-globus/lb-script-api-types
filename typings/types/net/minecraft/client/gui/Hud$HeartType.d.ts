@@ -11,7 +11,7 @@ export class Hud$HeartType extends Enum<Hud$HeartType> {
     static WITHERED: Hud$HeartType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Hud$HeartType;
-    static values(): (Object | null)[];
+    static values(): Hud$HeartType[];
     private constructor(full: Identifier, fullBlinking: Identifier, half: Identifier, halfBlinking: Identifier, hardcoreFull: Identifier, hardcoreFullBlinking: Identifier, hardcoreHalf: Identifier, hardcoreHalfBlinking: Identifier)
     // private full: Identifier;
     // private fullBlinking: Identifier;

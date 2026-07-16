@@ -7,7 +7,7 @@ export class FeatureSet$FeaturePresence extends Enum<FeatureSet$FeaturePresence>
     static REQUIRED: FeatureSet$FeaturePresence;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FeatureSet$FeaturePresence;
-    static values(): (Object | null)[];
+    static values(): FeatureSet$FeaturePresence[];
     private constructor()
     name(): "REQUIRED" | "OPTIONAL" | "ABSENT";
 }

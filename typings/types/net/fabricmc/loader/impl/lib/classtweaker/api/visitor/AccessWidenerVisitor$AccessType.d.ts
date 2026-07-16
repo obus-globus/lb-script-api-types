@@ -7,7 +7,7 @@ export class AccessWidenerVisitor$AccessType extends Enum<AccessWidenerVisitor$A
     static MUTABLE: AccessWidenerVisitor$AccessType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AccessWidenerVisitor$AccessType;
-    static values(): (Object | null)[];
+    static values(): AccessWidenerVisitor$AccessType[];
     private constructor(arg2: string)
     // private id: string;
     toString(): string;

@@ -18,7 +18,7 @@ export class HttpPostRequestDecoder$MultiPartStatus extends Enum<HttpPostRequest
     static PREEPILOGUE: HttpPostRequestDecoder$MultiPartStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HttpPostRequestDecoder$MultiPartStatus;
-    static values(): (Object | null)[];
+    static values(): HttpPostRequestDecoder$MultiPartStatus[];
     private constructor()
     name(): "NOTSTARTED" | "PREAMBLE" | "HEADERDELIMITER" | "DISPOSITION" | "FIELD" | "FILEUPLOAD" | "MIXEDPREAMBLE" | "MIXEDDELIMITER" | "MIXEDDISPOSITION" | "MIXEDFILEUPLOAD" | "MIXEDCLOSEDELIMITER" | "CLOSEDELIMITER" | "PREEPILOGUE" | "EPILOGUE";
 }

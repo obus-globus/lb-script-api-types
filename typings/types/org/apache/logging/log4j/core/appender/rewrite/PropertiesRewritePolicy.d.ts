@@ -4,7 +4,7 @@ import type { RewritePolicy } from '../../../../../../../org/apache/logging/log4
 import type { Configuration } from '../../../../../../../org/apache/logging/log4j/core/config/Configuration.d.ts'
 import type { Property } from '../../../../../../../org/apache/logging/log4j/core/config/Property.d.ts'
 export class PropertiesRewritePolicy extends Object implements RewritePolicy {
-    static createPolicy(paramconfig: Configuration, paramprops: (Object | null)[]): PropertiesRewritePolicy;
+    static createPolicy(paramconfig: Configuration, paramprops: Property[]): PropertiesRewritePolicy;
     private constructor(config: Configuration, props: Property[])
     // private config: Configuration;
     // private properties: Map<Property, boolean>;

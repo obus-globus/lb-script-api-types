@@ -10,7 +10,7 @@ export class ScoreboardIdentityPacketType extends Enum<ScoreboardIdentityPacketT
     static getByValue(paramarg0: number, paramarg1: ScoreboardIdentityPacketType): ScoreboardIdentityPacketType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ScoreboardIdentityPacketType;
-    static values(): (Object | null)[];
+    static values(): ScoreboardIdentityPacketType[];
     private constructor(arg2: number)
     private constructor(arg2: ScoreboardIdentityPacketType)
     readonly value: number;

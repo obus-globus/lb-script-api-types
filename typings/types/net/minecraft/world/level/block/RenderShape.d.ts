@@ -6,7 +6,7 @@ export class RenderShape extends Enum<RenderShape> {
     static MODEL: RenderShape;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RenderShape;
-    static values(): (Object | null)[];
+    static values(): RenderShape[];
     private constructor()
     name(): "INVISIBLE" | "MODEL";
 }

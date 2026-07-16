@@ -5,7 +5,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class IsCallableNodeGen$Uncached extends IsCallableNode implements UnadoptableNode {
     static create(): IsCallableNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     executeBoolean(arg0Value: Object): boolean;
 }

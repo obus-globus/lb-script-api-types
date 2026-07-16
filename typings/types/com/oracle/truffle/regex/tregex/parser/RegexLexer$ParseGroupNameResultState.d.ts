@@ -9,7 +9,7 @@ export class RegexLexer$ParseGroupNameResultState extends Enum<RegexLexer$ParseG
     static valid: RegexLexer$ParseGroupNameResultState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RegexLexer$ParseGroupNameResultState;
-    static values(): (Object | null)[];
+    static values(): RegexLexer$ParseGroupNameResultState[];
     private constructor()
     name(): "empty" | "unterminated" | "invalidStart" | "invalidRest" | "valid";
 }

@@ -20,7 +20,7 @@ export class PreprocessorCommand extends Enum<PreprocessorCommand> {
     static forText(paramarg0: string): PreprocessorCommand;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PreprocessorCommand;
-    static values(): (Object | null)[];
+    static values(): PreprocessorCommand[];
     private constructor(arg2: string)
     // private text: string;
     name(): "PP_DEFINE" | "PP_ELIF" | "PP_ELSE" | "PP_ENDIF" | "PP_ERROR" | "PP_IF" | "PP_IFDEF" | "PP_IFNDEF" | "PP_INCLUDE" | "PP_LINE" | "PP_PRAGMA" | "PP_UNDEF" | "PP_WARNING" | "PP_INCLUDE_NEXT" | "PP_IMPORT";

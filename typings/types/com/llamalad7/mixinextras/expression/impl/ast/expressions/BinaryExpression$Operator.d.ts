@@ -16,7 +16,7 @@ export class BinaryExpression$Operator extends Enum<BinaryExpression$Operator> {
     static USHR: BinaryExpression$Operator;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BinaryExpression$Operator;
-    static values(): (Object | null)[];
+    static values(): BinaryExpression$Operator[];
     private constructor(...arg2: number[])
     // private opcodes: number[];
     matches(arg0: AbstractInsnNode): boolean;

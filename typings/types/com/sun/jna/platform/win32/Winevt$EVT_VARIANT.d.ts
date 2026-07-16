@@ -9,11 +9,11 @@ export class Winevt$EVT_VARIANT extends Structure {
     static ALIGN_GNUC: number;
     static ALIGN_MSVC: number;
     static ALIGN_NONE: number;
-    static autoRead(paramarg0: (Object | null)[]): void;
-    static autoWrite(paramarg0: (Object | null)[]): void;
+    static autoRead(paramarg0: Structure[]): void;
+    static autoWrite(paramarg0: Structure[]): void;
     static createFieldsOrder(paramarg0: string): string[];
-    static createFieldsOrder(...paramarg0: (Object | null)[]): string[];
-    static createFieldsOrder(paramarg0: string[], ...paramarg1: (Object | null)[]): string[];
+    static createFieldsOrder(...paramarg0: string[]): string[];
+    static createFieldsOrder(paramarg0: string[], ...paramarg1: string[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: string[]): string[];
     static newInstance(paramarg0: Class<Structure>): Structure | null;
     static newInstance(paramarg0: Class<Structure>, paramarg1: Pointer): Structure | null;

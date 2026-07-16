@@ -17,7 +17,7 @@ export class DirectMethodHandleDesc$Kind extends Enum<DirectMethodHandleDesc$Kin
     static valueOf(paramarg0: number): DirectMethodHandleDesc$Kind;
     static valueOf(paramarg0: number, paramarg1: boolean): DirectMethodHandleDesc$Kind;
     static valueOf(paramarg0: string): DirectMethodHandleDesc$Kind;
-    static values(): (Object | null)[];
+    static values(): DirectMethodHandleDesc$Kind[];
     private constructor(arg2: number)
     private constructor(arg2: number, arg3: boolean)
     isInterface: boolean;

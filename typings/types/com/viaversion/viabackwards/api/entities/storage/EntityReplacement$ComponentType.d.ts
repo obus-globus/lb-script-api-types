@@ -8,7 +8,7 @@ export class EntityReplacement$ComponentType extends Enum<EntityReplacement$Comp
     static TAG: EntityReplacement$ComponentType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): EntityReplacement$ComponentType;
-    static values(): (Object | null)[];
+    static values(): EntityReplacement$ComponentType[];
     private constructor()
     name(): "PLAIN" | "JSON" | "TAG" | "NONE";
 }

@@ -8,7 +8,6 @@ import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSC
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class ObjectFunctionBuiltins$AssignPropertiesNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private context: JSContext;
     doObject(to: Object, from: Object, write: WriteElementNode, fromInterop: InteropLibrary, keysInterop: InteropLibrary, stringInterop: InteropLibrary, toJSType: ImportValueNode, fromJavaString: TruffleString$FromJavaStringNode): void;

@@ -7,7 +7,6 @@ export class ToTemporalCalendarIdentifierNodeGen$Uncached extends ToTemporalCale
     static create(): ToTemporalCalendarIdentifierNode;
     static getUncached(): ToTemporalCalendarIdentifierNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     executeString(arg0Value: Object): TruffleString;
 }

@@ -1,5 +1,4 @@
 import type { Optional } from '../../../../../../../java/util/Optional.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Random } from '../../../../../../../kotlin/random/Random.d.ts'
 import type { Pool } from '../../../../../../../net/ccbluex/fastutil/Pool.d.ts'
 import type { MinecraftTextProcessor$RecyclingProcessedText } from '../../../../../../../net/ccbluex/liquidbounce/render/engine/font/processor/MinecraftTextProcessor$RecyclingProcessedText.d.ts'
@@ -13,7 +12,7 @@ export class MinecraftTextProcessor extends TextProcessor<MinecraftTextProcessor
     static INSTANCE: MinecraftTextProcessor;
     static RANDOM_CHARS: number[];
     static TEXT_POOL: Pool<MinecraftTextProcessor$RecyclingProcessedText>;
-    static getHexColors(): (Object | null)[];
+    static getHexColors(): Color4b[];
     TEXT_POOL: Pool<MinecraftTextProcessor$RecyclingProcessedText>;
     // private defaultRng: Random;
     process(text: Component, defaultColor: Color4b): MinecraftTextProcessor$RecyclingProcessedText;

@@ -1,4 +1,3 @@
-import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { RandomSource } from '../../../../../../../net/minecraft/util/RandomSource.d.ts'
 import type { IntProvider } from '../../../../../../../net/minecraft/util/valueproviders/IntProvider.d.ts'
@@ -9,7 +8,6 @@ import type { FoliagePlacer$FoliageAttachment } from '../../../../../../../net/m
 import type { FoliagePlacer$FoliageSetter } from '../../../../../../../net/minecraft/world/level/levelgen/feature/foliageplacers/FoliagePlacer$FoliageSetter.d.ts'
 import type { FoliagePlacerType } from '../../../../../../../net/minecraft/world/level/levelgen/feature/foliageplacers/FoliagePlacerType.d.ts'
 export class CherryFoliagePlacer extends FoliagePlacer {
-    static CODEC: Codec<FoliagePlacer>;
     static CODEC: MapCodec<CherryFoliagePlacer>;
     constructor(radius: IntProvider, offset: IntProvider, height: IntProvider, wideBottomLayerHoleChance: number, cornerHoleChance: number, hangingLeavesChance: number, hangingLeavesExtensionChance: number)
     // private cornerHoleChance: number;

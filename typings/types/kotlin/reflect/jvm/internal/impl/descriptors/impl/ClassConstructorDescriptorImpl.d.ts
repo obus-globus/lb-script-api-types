@@ -21,7 +21,7 @@ import type { TypeSubstitutor } from '../../../../../../../kotlin/reflect/jvm/in
 export class ClassConstructorDescriptorImpl extends FunctionDescriptorImpl implements ClassConstructorDescriptor {
     static create(paramarg0: ClassDescriptor, paramarg1: AnnotationDescriptor[], paramarg2: boolean, paramarg3: SourceElement): ClassConstructorDescriptorImpl;
     static getSubstitutedValueParameters(paramarg0: FunctionDescriptor, paramarg1: ValueParameterDescriptor[], paramarg2: TypeSubstitutor): ValueParameterDescriptor[];
-    static getSubstitutedValueParameters(paramarg0: FunctionDescriptor, paramarg1: ValueParameterDescriptor[], paramarg2: TypeSubstitutor, paramarg3: boolean, paramarg4: boolean, paramarg5: (Object | null)[]): ValueParameterDescriptor[];
+    static getSubstitutedValueParameters(paramarg0: FunctionDescriptor, paramarg1: ValueParameterDescriptor[], paramarg2: TypeSubstitutor, paramarg3: boolean, paramarg4: boolean, paramarg5: boolean[]): ValueParameterDescriptor[];
     static toString(paramarg0: DeclarationDescriptor): string;
     constructor(arg0: ClassDescriptor, arg1: ConstructorDescriptor, arg2: AnnotationDescriptor[], arg3: boolean, arg4: CallableMemberDescriptor$Kind, arg5: SourceElement)
     // private isPrimary: boolean;

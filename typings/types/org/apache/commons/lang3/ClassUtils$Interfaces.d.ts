@@ -6,7 +6,7 @@ export class ClassUtils$Interfaces extends Enum<ClassUtils$Interfaces> {
     static INCLUDE: ClassUtils$Interfaces;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClassUtils$Interfaces;
-    static values(): (Object | null)[];
+    static values(): ClassUtils$Interfaces[];
     private constructor()
     name(): "INCLUDE" | "EXCLUDE";
 }

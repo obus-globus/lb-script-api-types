@@ -6,7 +6,7 @@ export class ULocale$Category extends Enum<ULocale$Category> {
     static FORMAT: ULocale$Category;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ULocale$Category;
-    static values(): (Object | null)[];
+    static values(): ULocale$Category[];
     private constructor()
     name(): "DISPLAY" | "FORMAT";
 }

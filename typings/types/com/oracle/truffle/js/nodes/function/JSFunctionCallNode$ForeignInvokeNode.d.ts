@@ -11,7 +11,6 @@ import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSFunctionCallNode$ForeignInvokeNode extends JSFunctionCallNode$ForeignExecuteNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(functionName: TruffleString, expectedArgumentCount: number)
     // private callJSFunctionNode: JSFunctionCallNode;
     // private errorBranch: BranchProfile;

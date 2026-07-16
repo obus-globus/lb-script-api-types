@@ -4,7 +4,6 @@ import type { ParsePosition } from '../../../../../java/text/ParsePosition.d.ts'
 import type { SimpleDateFormat } from '../../../../../java/text/SimpleDateFormat.d.ts'
 import type { Date } from '../../../../../java/util/Date.d.ts'
 import type { Locale } from '../../../../../java/util/Locale.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class HttpHeaderDateFormat extends SimpleDateFormat {
     static AM_PM_FIELD: number;
     static DATE_FIELD: number;
@@ -30,7 +29,7 @@ export class HttpHeaderDateFormat extends SimpleDateFormat {
     static WEEK_OF_YEAR_FIELD: number;
     static YEAR_FIELD: number;
     static get(): HttpHeaderDateFormat;
-    static getAvailableLocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
     static getDateInstance(): DateFormat;
     static getDateInstance(paramarg0: number): DateFormat;
     static getDateInstance(paramarg0: number, paramarg1: Locale): DateFormat;

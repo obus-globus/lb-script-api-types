@@ -9,7 +9,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSGetLengthNodeGen extends JSGetLengthNode {
     static create(paramcontext: JSContext): JSGetLengthNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private arrayLengthReadNode: ArrayLengthNode$ArrayLengthReadNode;
     // private getLengthForeign0_cache: JSGetLengthNodeGen$GetLengthForeign0Data;

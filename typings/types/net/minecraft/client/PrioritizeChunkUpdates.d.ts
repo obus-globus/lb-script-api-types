@@ -10,7 +10,7 @@ export class PrioritizeChunkUpdates extends Enum<PrioritizeChunkUpdates> {
     static PLAYER_AFFECTED: PrioritizeChunkUpdates;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PrioritizeChunkUpdates;
-    static values(): (Object | null)[];
+    static values(): PrioritizeChunkUpdates[];
     private constructor(id: number, key: string)
     // private caption: Component;
     // private id: number;

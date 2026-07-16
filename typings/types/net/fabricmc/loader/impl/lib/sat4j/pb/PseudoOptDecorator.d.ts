@@ -1,5 +1,4 @@
 import type { BigInteger } from '../../../../../../../java/math/BigInteger.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Number } from '../../../../../../../java/lang/Number.d.ts'
 import type { IPBSolver } from '../../../../../../../net/fabricmc/loader/impl/lib/sat4j/pb/IPBSolver.d.ts'
 import type { ObjectiveFunction } from '../../../../../../../net/fabricmc/loader/impl/lib/sat4j/pb/ObjectiveFunction.d.ts'
@@ -16,7 +15,7 @@ export class PseudoOptDecorator extends PBSolverDecorator implements IOptimizati
     objectiveValue: BigInteger;
     // private optimizationTimeout: number;
     // private prevModelBlockingClause: IVecInt;
-    // private prevfullmodel: (Object | null)[];
+    // private prevfullmodel: boolean[];
     // private previousPBConstr: IConstr;
     // private prevmodel: number[];
     // private prevmodelwithadditionalvars: number[];

@@ -12,7 +12,7 @@ export class ModuleBacktrack$Mode extends Enum<ModuleBacktrack$Mode> implements 
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleBacktrack$Mode;
-    static values(): (Object | null)[];
+    static values(): ModuleBacktrack$Mode[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "ATTACK" | "RANGE";

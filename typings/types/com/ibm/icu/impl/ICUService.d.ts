@@ -29,8 +29,8 @@ export class ICUService extends ICUNotifier {
     getDisplayName(arg0: string, arg1: ULocale): string;
     getDisplayNames(): { [key: string]: string };
     getDisplayNames(arg0: ULocale): { [key: string]: string };
-    getDisplayNames(arg0: ULocale, arg1: (param0: Object) => boolean): { [key: string]: string };
-    getDisplayNames(arg0: ULocale, arg1: (param0: Object) => boolean, arg2: string): { [key: string]: string };
+    getDisplayNames(arg0: ULocale, arg1: (param0: Object, param1: Object) => number): { [key: string]: string };
+    getDisplayNames(arg0: ULocale, arg1: (param0: Object, param1: Object) => number, arg2: string): { [key: string]: string };
     getDisplayNames(arg0: ULocale, arg1: string): { [key: string]: string };
     getKey(arg0: ICUService$Key): Object;
     getKey(arg0: ICUService$Key, arg1: string[]): Object;

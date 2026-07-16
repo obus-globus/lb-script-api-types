@@ -18,5 +18,5 @@ export abstract class MultimapBuilder$MultimapBuilderWithKeys<K0 extends unknown
     linkedHashSetValues(expectedValuesPerKey: number): MultimapBuilder$SetMultimapBuilder<K0, Object>;
     linkedListValues(): MultimapBuilder$ListMultimapBuilder<K0, Object>;
     treeSetValues(): MultimapBuilder$SortedSetMultimapBuilder<K0, Comparable<Object>>;
-    treeSetValues<V0 extends unknown>(comparator: (param0: Object) => boolean): MultimapBuilder$SortedSetMultimapBuilder<K0, V0>;
+    treeSetValues<V0 extends unknown>(comparator: (param0: V0, param1: V0) => number): MultimapBuilder$SortedSetMultimapBuilder<K0, V0>;
 }

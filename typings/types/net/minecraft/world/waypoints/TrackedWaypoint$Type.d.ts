@@ -14,7 +14,7 @@ export class TrackedWaypoint$Type extends Enum<TrackedWaypoint$Type> {
     static VEC3I: TrackedWaypoint$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TrackedWaypoint$Type;
-    static values(): (Object | null)[];
+    static values(): TrackedWaypoint$Type[];
     private constructor(constructor: (param0: Either<UUID, string>, param1: Waypoint$Icon, param2: FriendlyByteBuf) => TrackedWaypoint)
     // private constructor: (param0: Either<UUID, string>, param1: Waypoint$Icon, param2: FriendlyByteBuf) => TrackedWaypoint;
     name(): "EMPTY" | "VEC3I" | "CHUNK" | "AZIMUTH";

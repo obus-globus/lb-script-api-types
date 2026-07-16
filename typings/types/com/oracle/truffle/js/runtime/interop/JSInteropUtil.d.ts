@@ -13,8 +13,8 @@ import type { PropertyDescriptor } from '../../../../../../com/oracle/truffle/js
 import type { ByteBuffer } from '../../../../../../java/nio/ByteBuffer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSInteropUtil extends Object {
-    static call(paramfunction: Object, paramargs: (Object | null)[]): Object;
-    static construct(paramtarget: Object, paramargs: (Object | null)[]): Object;
+    static call(paramfunction: Object, paramargs: Object[]): Object;
+    static construct(paramtarget: Object, paramargs: Object[]): Object;
     static copyFromBuffer(parambuffer: JSArrayBufferObject, parambyteOffset: number, paramdestination: number[], paramdestinationOffset: number, parambyteLength: number, paraminterop: InteropLibrary): void;
     static delete(paramcontext: JSContext, paramtarget: Object, parampropertyKey: Object, paramstrict: boolean): boolean;
     static deleteArrayElement(paramtarget: Object, paramindex: number, paraminterop: InteropLibrary, paramstrict: boolean): boolean;

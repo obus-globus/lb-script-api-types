@@ -7,7 +7,7 @@ export class BlockTargetingMode extends Enum<BlockTargetingMode> {
     static getEntries(): BlockTargetingMode[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BlockTargetingMode;
-    static values(): (Object | null)[];
+    static values(): BlockTargetingMode[];
     private constructor()
     name(): "PLACE_AT_NEIGHBOR" | "REPLACE_EXISTING_BLOCK";
 }

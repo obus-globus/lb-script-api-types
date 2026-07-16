@@ -14,7 +14,7 @@ export class Theme$Origin extends Enum<Theme$Origin> implements Tagged {
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Theme$Origin;
-    static values(): (Object | null)[];
+    static values(): Theme$Origin[];
     private constructor(tag: string, external: boolean)
     readonly external: boolean;
     readonly tag: string;

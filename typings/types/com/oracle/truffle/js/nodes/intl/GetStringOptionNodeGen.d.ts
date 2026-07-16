@@ -15,7 +15,6 @@ export class GetStringOptionNodeGen extends GetStringOptionNode {
     static NARROW_SHORT_LONG_OPTION_VALUES: string[];
     static create(paramcontext: JSContext, paramproperty: TruffleString, paramvalues: string[], paramfallback: string): GetStringOptionNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, property: TruffleString, values: string[], fallback: string)
     // private state_0_: number;
     // private toJavaStringNode_: TruffleString$ToJavaStringNode;

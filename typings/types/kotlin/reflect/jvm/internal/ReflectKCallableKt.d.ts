@@ -5,7 +5,7 @@ import type { ReflectKCallable } from '../../../../kotlin/reflect/jvm/internal/R
 export class ReflectKCallableKt extends Object {
     static callAnnotationConstructor(paramarg0: ReflectKCallable<Object>, paramarg1: Map<KParameter, Object>): Object | null;
     static callDefaultMethod(paramarg0: ReflectKCallable<Object>, paramarg1: Map<KParameter, Object>, paramarg2: Continuation<Object>): Object | null;
-    static computeAbsentArguments(paramarg0: ReflectKCallable<Object>): (Object | null)[];
+    static computeAbsentArguments(paramarg0: ReflectKCallable<Object>): Object[];
     static getBoundReceiver(paramarg0: ReflectKCallable<Object>): Object;
     static isAnnotationConstructor(paramarg0: ReflectKCallable<Object>): boolean;
     static isBound(paramarg0: ReflectKCallable<Object>): boolean;

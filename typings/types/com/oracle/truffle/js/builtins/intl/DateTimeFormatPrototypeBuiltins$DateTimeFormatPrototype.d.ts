@@ -15,7 +15,7 @@ export class DateTimeFormatPrototypeBuiltins$DateTimeFormatPrototype extends Enu
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): DateTimeFormatPrototypeBuiltins$DateTimeFormatPrototype;
-    static values(): (Object | null)[];
+    static values(): DateTimeFormatPrototypeBuiltins$DateTimeFormatPrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

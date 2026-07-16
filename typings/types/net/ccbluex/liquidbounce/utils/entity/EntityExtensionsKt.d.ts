@@ -67,7 +67,7 @@ export class EntityExtensionsKt extends Object {
      */
     static getActualHealth(livingEntity: LivingEntity, fromScoreboard: boolean): number;
     static getAirTicks(paramarg0: LocalPlayer): number;
-    static getArmorItems(paramarg0: LivingEntity): (Object | null)[];
+    static getArmorItems(paramarg0: LivingEntity): ItemStack[];
     static getBoundingBoxAt(entity: Entity, pos: Vec3): AABB;
     static getBox(paramarg0: Entity): AABB;
     static getCameraDistance(paramarg0: Entity): number;
@@ -126,7 +126,7 @@ export class EntityExtensionsKt extends Object {
      */
     static getExposureToExplosion(livingEntity: LivingEntity, source: Vec3, exclude: BlockPos[], include: BlockPos, maxBlastResistance: number, entityBoundingBox: AABB): number;
     static getFeetBlockPos(localPlayer: LocalPlayer): BlockPos;
-    static getHandItems(paramarg0: LivingEntity): (Object | null)[];
+    static getHandItems(paramarg0: LivingEntity): ItemStack[];
     /**
      * Check if the attack speed is below 1 tick. If so, we have a cooldown.
      *

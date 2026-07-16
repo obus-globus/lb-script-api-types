@@ -22,7 +22,7 @@ export class PipesServer$STATUS extends Enum<PipesServer$STATUS> {
     static lookup(paramarg0: number): PipesServer$STATUS;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PipesServer$STATUS;
-    static values(): (Object | null)[];
+    static values(): PipesServer$STATUS[];
     private constructor()
     getByte(): number;
     name(): "READY" | "CALL" | "PING" | "FAILED_TO_START" | "FETCHER_NOT_FOUND" | "EMITTER_NOT_FOUND" | "FETCHER_INITIALIZATION_EXCEPTION" | "FETCH_EXCEPTION" | "PARSE_SUCCESS" | "PARSE_EXCEPTION_NO_EMIT" | "EMIT_SUCCESS" | "EMIT_SUCCESS_PARSE_EXCEPTION" | "EMIT_EXCEPTION" | "OOM" | "TIMEOUT" | "EMPTY_OUTPUT" | "INTERMEDIATE_RESULT";

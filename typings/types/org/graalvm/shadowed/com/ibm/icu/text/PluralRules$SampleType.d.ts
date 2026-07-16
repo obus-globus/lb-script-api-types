@@ -6,7 +6,7 @@ export class PluralRules$SampleType extends Enum<PluralRules$SampleType> {
     static INTEGER: PluralRules$SampleType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PluralRules$SampleType;
-    static values(): (Object | null)[];
+    static values(): PluralRules$SampleType[];
     private constructor()
     name(): "INTEGER" | "DECIMAL";
 }

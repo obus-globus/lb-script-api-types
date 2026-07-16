@@ -25,7 +25,7 @@ export class ElementKind extends Enum<ElementKind> {
     static TYPE_PARAMETER: ElementKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ElementKind;
-    static values(): (Object | null)[];
+    static values(): ElementKind[];
     private constructor()
     isClass(): boolean;
     isDeclaredType(): boolean;

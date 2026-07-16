@@ -16,7 +16,7 @@ export class Sniffer$State extends Enum<Sniffer$State> {
     static STREAM_CODEC: StreamCodec<ByteBuf, Sniffer$State>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Sniffer$State;
-    static values(): (Object | null)[];
+    static values(): Sniffer$State[];
     private constructor(id: number)
     // private id: number;
     id(): number;

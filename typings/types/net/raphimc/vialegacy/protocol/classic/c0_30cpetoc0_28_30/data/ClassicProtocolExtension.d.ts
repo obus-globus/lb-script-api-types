@@ -42,7 +42,7 @@ export class ClassicProtocolExtension extends Enum<ClassicProtocolExtension> {
     static byNameAndVersion(paramarg0: string, paramarg1: number): ClassicProtocolExtension;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClassicProtocolExtension;
-    static values(): (Object | null)[];
+    static values(): ClassicProtocolExtension[];
     private constructor(arg2: string, ...arg3: number[])
     readonly supportedVersions: (Object | null)[];
     getHighestSupportedVersion(): number;

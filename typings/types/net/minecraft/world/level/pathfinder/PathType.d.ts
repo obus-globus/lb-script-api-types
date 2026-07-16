@@ -31,7 +31,7 @@ export class PathType extends Enum<PathType> {
     static WATER_BORDER: PathType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PathType;
-    static values(): (Object | null)[];
+    static values(): PathType[];
     private constructor(defaultCost: number)
     readonly malus: number;
     getMalus(): number;

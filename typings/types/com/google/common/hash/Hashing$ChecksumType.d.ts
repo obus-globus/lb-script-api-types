@@ -10,7 +10,7 @@ export class Hashing$ChecksumType extends Enum<Hashing$ChecksumType> implements 
     static CRC_32C: Hashing$ChecksumType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Hashing$ChecksumType;
-    static values(): (Object | null)[];
+    static values(): Hashing$ChecksumType[];
     constructor(arg2: string, arg3: any)
     hashFunction: HashFunction;
     name(): "CRC_32" | "CRC_32C" | "ADLER_32";

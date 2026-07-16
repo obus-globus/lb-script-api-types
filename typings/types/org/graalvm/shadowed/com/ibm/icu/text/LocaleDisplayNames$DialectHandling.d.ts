@@ -6,7 +6,7 @@ export class LocaleDisplayNames$DialectHandling extends Enum<LocaleDisplayNames$
     static STANDARD_NAMES: LocaleDisplayNames$DialectHandling;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): LocaleDisplayNames$DialectHandling;
-    static values(): (Object | null)[];
+    static values(): LocaleDisplayNames$DialectHandling[];
     private constructor()
     name(): "STANDARD_NAMES" | "DIALECT_NAMES";
 }

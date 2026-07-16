@@ -8,7 +8,7 @@ export class TextDocumentSaveReason extends Enum<TextDocumentSaveReason> {
     static get(paramintValue: number): TextDocumentSaveReason;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TextDocumentSaveReason;
-    static values(): (Object | null)[];
+    static values(): TextDocumentSaveReason[];
     private constructor(intValue: number)
     readonly intValue: number;
     getIntValue(): number;

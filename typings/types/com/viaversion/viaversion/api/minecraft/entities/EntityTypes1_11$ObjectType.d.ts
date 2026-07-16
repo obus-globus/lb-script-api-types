@@ -41,7 +41,7 @@ export class EntityTypes1_11$ObjectType extends Enum<EntityTypes1_11$ObjectType>
     static getEntityType(paramarg0: number, paramarg1: number): EntityTypes1_11$EntityType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): EntityTypes1_11$ObjectType;
-    static values(): (Object | null)[];
+    static values(): EntityTypes1_11$ObjectType[];
     private constructor(arg2: number, arg3: EntityTypes1_11$EntityType)
     private constructor(arg2: number, arg3: number, arg4: EntityTypes1_11$EntityType)
     readonly data: number;

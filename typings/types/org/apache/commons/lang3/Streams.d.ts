@@ -6,6 +6,6 @@ import type { Streams$FailableStream } from '../../../../org/apache/commons/lang
 export class Streams extends Object {
     static stream(paramarg0: (Object | null)[]): Streams$FailableStream<Object>;
     static stream(paramarg0: Stream<Object>): Streams$FailableStream<Object>;
-    static toArray(paramarg0: Class<Object>): Collector<Object, Object, Object>;
+    static toArray(paramarg0: Class<Object>): Collector<Object, Object, (Object | null)[]>;
     constructor()
 }

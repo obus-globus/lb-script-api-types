@@ -1,8 +1,8 @@
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Font2D } from '../../sun/font/Font2D.d.ts'
 export class FontFamily extends Object {
-    static getAllFamilyNames(): (Object | null)[];
-    static getAllFontFamilies(): (Object | null)[];
+    static getAllFamilyNames(): string[];
+    static getAllFontFamilies(): FontFamily[];
     static getFamily(paramarg0: string): FontFamily;
     static getLocaleFamily(paramarg0: string): FontFamily;
     constructor(arg0: string)

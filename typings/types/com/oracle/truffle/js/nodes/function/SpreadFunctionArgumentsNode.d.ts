@@ -10,8 +10,7 @@ import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class SpreadFunctionArgumentsNode extends JSFunctionArgumentsNode {
     static cloneUninitialized(paramnode: AbstractFunctionArgumentsNode | null, parammaterializedTags: Class<Tag>[]): AbstractFunctionArgumentsNode | null;
-    static create(paramcontext: JSContext, paramargs: (Object | null)[]): AbstractFunctionArgumentsNode;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    static create(paramcontext: JSContext, paramargs: JavaScriptNode[]): AbstractFunctionArgumentsNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(args: JavaScriptNode[])
     copyUninitialized(materializedTags: Class<Tag>[]): AbstractFunctionArgumentsNode;

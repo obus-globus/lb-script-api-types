@@ -6,7 +6,7 @@ export class BytecodeTier extends Enum<BytecodeTier> {
     static UNCACHED: BytecodeTier;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): BytecodeTier;
-    static values(): (Object | null)[];
+    static values(): BytecodeTier[];
     private constructor()
     name(): "UNCACHED" | "CACHED";
 }

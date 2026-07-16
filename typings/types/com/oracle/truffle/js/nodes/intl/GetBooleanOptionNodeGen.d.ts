@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class GetBooleanOptionNodeGen extends GetBooleanOptionNode {
     static create(paramcontext: JSContext, paramproperty: TruffleString, paramfallback: boolean): GetBooleanOptionNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, property: TruffleString, fallback: boolean)
     executeValue(arg0Value: Object): boolean;
 }

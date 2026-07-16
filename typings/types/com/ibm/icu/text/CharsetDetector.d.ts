@@ -3,12 +3,12 @@ import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { Reader } from '../../../../java/io/Reader.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class CharsetDetector extends Object {
-    static getAllDetectableCharsets(): (Object | null)[];
+    static getAllDetectableCharsets(): string[];
     constructor()
     // private fByteStats: number[];
     // private fC1Bytes: boolean;
     // private fDeclaredEncoding: string;
-    // private fEnabledRecognizers: (Object | null)[];
+    // private fEnabledRecognizers: boolean[];
     // private fInputBytes: number[];
     // private fInputLen: number;
     // private fInputStream: InputStream;

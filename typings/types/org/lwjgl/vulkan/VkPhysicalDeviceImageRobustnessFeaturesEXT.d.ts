@@ -21,35 +21,27 @@ export class VkPhysicalDeviceImageRobustnessFeaturesEXT extends VkPhysicalDevice
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceImageRobustnessFeaturesEXT;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceImageRobustnessFeaturesEXT;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceImageRobustnessFeatures;
     static create(paramarg0: number): VkPhysicalDeviceImageRobustnessFeatures;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceImageRobustnessFeaturesEXT;
     static create(paramarg0: number): VkPhysicalDeviceImageRobustnessFeaturesEXT;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceImageRobustnessFeatures;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceImageRobustnessFeaturesEXT;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceImageRobustnessFeatures;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceImageRobustnessFeatures;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceImageRobustnessFeaturesEXT;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceImageRobustnessFeaturesEXT;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static nrobustImageAccess(paramarg0: number): number;
     static nrobustImageAccess(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

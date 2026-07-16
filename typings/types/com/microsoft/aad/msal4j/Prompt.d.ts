@@ -9,7 +9,7 @@ export class Prompt extends Enum<Prompt> {
     static SELECT_ACCOUNT: Prompt;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Prompt;
-    static values(): (Object | null)[];
+    static values(): Prompt[];
     private constructor(arg2: string)
     // private prompt: string;
     toString(): string;

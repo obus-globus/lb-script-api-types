@@ -9,7 +9,7 @@ export class TruffleCompilerRuntime$InlineKind extends Enum<TruffleCompilerRunti
     static INLINE: TruffleCompilerRuntime$InlineKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TruffleCompilerRuntime$InlineKind;
-    static values(): (Object | null)[];
+    static values(): TruffleCompilerRuntime$InlineKind[];
     private constructor(allowsInlining: boolean)
     // private allowsInlining: boolean;
     allowsInlining(): boolean;

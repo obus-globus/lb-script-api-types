@@ -5,7 +5,6 @@ import type { RecordCodecBuilder$Instance } from '../../../../../../../com/mojan
 import type { Optional } from '../../../../../../../java/util/Optional.d.ts'
 import type { Function } from '../../../../../../../java/util/function/Function.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
-import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts'
 import type { RandomSource } from '../../../../../../../net/minecraft/util/RandomSource.d.ts'
 import type { ChunkPos } from '../../../../../../../net/minecraft/world/level/ChunkPos.d.ts'
 import type { StructureManager } from '../../../../../../../net/minecraft/world/level/StructureManager.d.ts'
@@ -21,7 +20,6 @@ import type { StructureType } from '../../../../../../../net/minecraft/world/lev
 import type { PiecesContainer } from '../../../../../../../net/minecraft/world/level/levelgen/structure/pieces/PiecesContainer.d.ts'
 import type { StructurePiecesBuilder } from '../../../../../../../net/minecraft/world/level/levelgen/structure/pieces/StructurePiecesBuilder.d.ts'
 export class WoodlandMansionStructure extends Structure {
-    static CODEC: Codec<Holder<Structure>>;
     static CODEC: MapCodec<WoodlandMansionStructure>;
     static DIRECT_CODEC: Codec<Structure>;
     static getMeanFirstOccupiedHeight(paramcontext: Structure$GenerationContext, paramminX: number, paramsizeX: number, paramminZ: number, paramsizeZ: number): number;

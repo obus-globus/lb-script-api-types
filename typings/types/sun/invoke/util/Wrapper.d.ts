@@ -26,7 +26,7 @@ export class Wrapper extends Enum<Wrapper> {
     static isWrapperType(paramarg0: Class<Object>): boolean;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Wrapper;
-    static values(): (Object | null)[];
+    static values(): Wrapper[];
     private constructor(arg2: Class<Object>, arg3: string, arg4: Class<Object>, arg5: string, arg6: string, arg7: Object, arg8: number, arg9: number, arg10: number, arg11: ClassDesc, arg12: ClassDesc)
     // private basicClassDesc: ClassDesc;
     // private basicTypeChar: string;

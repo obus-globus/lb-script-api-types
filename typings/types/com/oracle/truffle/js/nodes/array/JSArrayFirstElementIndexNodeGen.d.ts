@@ -10,7 +10,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSArrayFirstElementIndexNodeGen extends JSArrayFirstElementIndexNode {
     static create(paramcontext: JSContext): JSArrayFirstElementIndexNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private hasPropertyNode: JSHasPropertyNode;
     // private nextElementIndexNode: JSArrayNextElementIndexNode;

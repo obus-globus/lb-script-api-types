@@ -13,7 +13,7 @@ export class ClassKind extends Enum<ClassKind> {
     static getEntries(): ClassKind[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClassKind;
-    static values(): (Object | null)[];
+    static values(): ClassKind[];
     private constructor(arg2: number)
     // private flag: FlagImpl;
     getFlag$org_jetbrains_kotlin_kotlin_metadata(): FlagImpl;

@@ -7,7 +7,7 @@ export class InputStringGenerator$State extends Enum<InputStringGenerator$State>
     static done: InputStringGenerator$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): InputStringGenerator$State;
-    static values(): (Object | null)[];
+    static values(): InputStringGenerator$State[];
     private constructor()
     name(): "advance" | "backtrack" | "done";
 }

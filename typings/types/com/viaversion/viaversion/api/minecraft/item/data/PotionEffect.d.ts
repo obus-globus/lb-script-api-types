@@ -3,7 +3,7 @@ import type { Type } from '../../../../../../../com/viaversion/viaversion/api/ty
 import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class PotionEffect extends Record {
-    static ARRAY_TYPE: Type<(Object | null)[]>;
+    static ARRAY_TYPE: Type<PotionEffect[]>;
     static TYPE: Type<PotionEffect>;
     constructor(effect: number, effectData: PotionEffectData)
     // private effect: number;

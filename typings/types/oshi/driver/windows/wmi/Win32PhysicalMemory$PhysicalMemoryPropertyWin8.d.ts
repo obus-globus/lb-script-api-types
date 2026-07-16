@@ -11,7 +11,7 @@ export class Win32PhysicalMemory$PhysicalMemoryPropertyWin8 extends Enum<Win32Ph
     static SPEED: Win32PhysicalMemory$PhysicalMemoryPropertyWin8;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Win32PhysicalMemory$PhysicalMemoryPropertyWin8;
-    static values(): (Object | null)[];
+    static values(): Win32PhysicalMemory$PhysicalMemoryPropertyWin8[];
     private constructor()
     name(): "BANKLABEL" | "CAPACITY" | "SPEED" | "MANUFACTURER" | "MEMORYTYPE" | "PARTNUMBER" | "SERIALNUMBER";
 }

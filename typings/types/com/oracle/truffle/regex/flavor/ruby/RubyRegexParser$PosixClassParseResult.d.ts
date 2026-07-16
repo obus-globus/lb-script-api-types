@@ -7,7 +7,7 @@ export class RubyRegexParser$PosixClassParseResult extends Enum<RubyRegexParser$
     static WasNestedPosixClass: RubyRegexParser$PosixClassParseResult;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RubyRegexParser$PosixClassParseResult;
-    static values(): (Object | null)[];
+    static values(): RubyRegexParser$PosixClassParseResult[];
     private constructor()
     name(): "WasNestedPosixClass" | "TryNestedClass" | "NotNestedClass";
 }

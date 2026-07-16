@@ -6,7 +6,7 @@ export class Holder$Reference$Type extends Enum<Holder$Reference$Type> {
     static STAND_ALONE: Holder$Reference$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Holder$Reference$Type;
-    static values(): (Object | null)[];
+    static values(): Holder$Reference$Type[];
     private constructor()
     name(): "STAND_ALONE" | "INTRUSIVE";
 }

@@ -8,7 +8,7 @@ export class Statement$StatementType$StructureType extends Enum<Statement$Statem
     static UNARY: Statement$StatementType$StructureType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Statement$StatementType$StructureType;
-    static values(): (Object | null)[];
+    static values(): Statement$StatementType$StructureType[];
     private constructor()
     name(): "SEMI_TERMINAL" | "TERMINAL" | "UNARY" | "MANY";
 }

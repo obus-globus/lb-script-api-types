@@ -36,7 +36,7 @@ export class UtilKt extends Object {
     static defaultPrimitiveValue(paramarg0: Type): Object;
     static deserializeToDescriptor(paramarg0: Class<Object>, paramarg1: DeserializedContainerSource, paramarg2: MessageLite | null, paramarg3: NameResolver, paramarg4: TypeTable, paramarg5: BinaryVersion, paramarg6: (param0: Object, param1: Object) => CallableDescriptor | null): CallableDescriptor | null;
     static getDeclaredFieldOrNull(paramarg0: Class<Object>, paramarg1: string): Field;
-    static getDeclaredMethodOrNull(paramarg0: Class<Object>, paramarg1: string, paramarg2: Object | null): Method;
+    static getDeclaredMethodOrNull(paramarg0: Class<Object>, paramarg1: string, ...paramarg2: Class<Object>[]): Method;
     static getInstanceReceiverParameter(paramarg0: DescriptorKCallable<Object>): ReceiverParameterDescriptor;
     static getJVM_STATIC(): FqName;
     static getStdlibClassLoader(): ClassLoader;

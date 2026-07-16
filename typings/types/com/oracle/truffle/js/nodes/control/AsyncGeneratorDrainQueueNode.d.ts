@@ -9,7 +9,6 @@ export class AsyncGeneratorDrainQueueNode extends AsyncGeneratorAwaitReturnNode 
     static create(paramcontext: JSContext): AsyncGeneratorAwaitReturnNode;
     static create(paramcontext: JSContext): AsyncGeneratorDrainQueueNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     asyncGeneratorCompleteStepAndDrainQueue(generator: JSAsyncGeneratorObject, resultType: Completion$Type, resultValue: Object): void;
     asyncGeneratorDrainQueue(generator: JSAsyncGeneratorObject, queue: AsyncGeneratorRequest[]): void;

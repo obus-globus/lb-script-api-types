@@ -7,7 +7,7 @@ export class SnbtGrammar$Base extends Enum<SnbtGrammar$Base> {
     static HEX: SnbtGrammar$Base;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SnbtGrammar$Base;
-    static values(): (Object | null)[];
+    static values(): SnbtGrammar$Base[];
     private constructor()
     name(): "BINARY" | "DECIMAL" | "HEX";
 }

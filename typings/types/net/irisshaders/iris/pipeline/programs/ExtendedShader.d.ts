@@ -6,7 +6,6 @@ import type { GpuTextureView } from '../../../../../com/mojang/blaze3d/textures/
 import type { VertexFormat } from '../../../../../com/mojang/blaze3d/vertex/VertexFormat.d.ts'
 import type { BiConsumer } from '../../../../../java/util/function/BiConsumer.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../java/lang/CharSequence.d.ts'
 import type { AlphaTest } from '../../../../../net/irisshaders/iris/gl/blending/AlphaTest.d.ts'
 import type { BlendModeOverride } from '../../../../../net/irisshaders/iris/gl/blending/BlendModeOverride.d.ts'
@@ -27,7 +26,7 @@ import type { Matrix4f } from '../../../../../org/joml/Matrix4f.d.ts'
 export class ExtendedShader extends GlProgram implements IrisProgram {
     static BUILT_IN_UNIFORMS: string[];
     static INVALID_PROGRAM: GlProgram;
-    static link(paramvertexShader: GlShaderModule, paramfragmentShader: GlShaderModule, paramvertexBindings: (Object | null)[], paramdebugLabel: string): GlProgram;
+    static link(paramvertexShader: GlShaderModule, paramfragmentShader: GlShaderModule, paramvertexBindings: VertexFormat[], paramdebugLabel: string): GlProgram;
     constructor(arg0: number, arg1: string, arg2: VertexFormat, arg3: boolean, arg4: GlFramebuffer, arg5: GlFramebuffer, arg6: BlendModeOverride, arg7: AlphaTest, arg8: (param0: DynamicLocationalUniformHolder) => void, arg9: (param0: SamplerHolder, param1: ImageHolder) => void, arg10: boolean, arg11: IrisRenderingPipeline, arg12: BufferBlendOverride[], arg13: CustomUniforms, arg14: Patch)
     // private alphaTest: number;
     // private blendModeOverride: BlendModeOverride;

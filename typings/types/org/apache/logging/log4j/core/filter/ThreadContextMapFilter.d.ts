@@ -4,10 +4,12 @@ import type { Throwable } from '../../../../../../java/lang/Throwable.d.ts'
 import type { Level } from '../../../../../../org/apache/logging/log4j/Level.d.ts'
 import type { Marker } from '../../../../../../org/apache/logging/log4j/Marker.d.ts'
 import type { ContextDataInjector } from '../../../../../../org/apache/logging/log4j/core/ContextDataInjector.d.ts'
+import type { Filter } from '../../../../../../org/apache/logging/log4j/core/Filter.d.ts'
 import type { Filter$Result } from '../../../../../../org/apache/logging/log4j/core/Filter$Result.d.ts'
 import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
 import type { Logger } from '../../../../../../org/apache/logging/log4j/core/Logger.d.ts'
 import type { MapFilter } from '../../../../../../org/apache/logging/log4j/core/filter/MapFilter.d.ts'
+import type { KeyValuePair } from '../../../../../../org/apache/logging/log4j/core/util/KeyValuePair.d.ts'
 import type { MapMessage } from '../../../../../../org/apache/logging/log4j/message/MapMessage.d.ts'
 import type { Message } from '../../../../../../org/apache/logging/log4j/message/Message.d.ts'
 import type { ReadOnlyStringMap } from '../../../../../../org/apache/logging/log4j/util/ReadOnlyStringMap.d.ts'
@@ -15,9 +17,9 @@ export class ThreadContextMapFilter extends MapFilter {
     static DEFAULT_STOP_TIMEOUT: number;
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
     static ELEMENT_TYPE: string;
-    static EMPTY_ARRAY: (Object | null)[];
-    static createFilter(parampairs: (Object | null)[], paramoper: string, parammatch: Filter$Result, parammismatch: Filter$Result): MapFilter;
-    static createFilter(parampairs: (Object | null)[], paramoper: string, parammatch: Filter$Result, parammismatch: Filter$Result): ThreadContextMapFilter;
+    static EMPTY_ARRAY: Filter[];
+    static createFilter(parampairs: KeyValuePair[], paramoper: string, parammatch: Filter$Result, parammismatch: Filter$Result): MapFilter;
+    static createFilter(parampairs: KeyValuePair[], paramoper: string, parammatch: Filter$Result, parammismatch: Filter$Result): ThreadContextMapFilter;
     constructor(pairs: { [key: string]: string[] }, oper: boolean, onMatch: Filter$Result, onMismatch: Filter$Result)
     // private injector: ContextDataInjector;
     // private key: string;

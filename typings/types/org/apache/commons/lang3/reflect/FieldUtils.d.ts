@@ -3,14 +3,14 @@ import type { Field } from '../../../../../java/lang/reflect/Field.d.ts'
 import type { Annotation } from '../../../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class FieldUtils extends Object {
-    static getAllFields(paramarg0: Class<Object>): (Object | null)[];
+    static getAllFields(paramarg0: Class<Object>): Field[];
     static getAllFieldsList(paramarg0: Class<Object>): Field[];
     static getDeclaredField(paramarg0: Class<Object>, paramarg1: string): Field;
     static getDeclaredField(paramarg0: Class<Object>, paramarg1: string, paramarg2: boolean): Field;
     static getField(paramarg0: Class<Object>, paramarg1: string): Field;
     static getField(paramarg0: Class<Object>, paramarg1: string, paramarg2: boolean): Field;
     static getFieldsListWithAnnotation(paramarg0: Class<Object>, paramarg1: Class<Annotation>): Field[];
-    static getFieldsWithAnnotation(paramarg0: Class<Object>, paramarg1: Class<Annotation>): (Object | null)[];
+    static getFieldsWithAnnotation(paramarg0: Class<Object>, paramarg1: Class<Annotation>): Field[];
     static readDeclaredField(paramarg0: Object, paramarg1: string): Object;
     static readDeclaredField(paramarg0: Object, paramarg1: string, paramarg2: boolean): Object;
     static readDeclaredStaticField(paramarg0: Class<Object>, paramarg1: string): Object;

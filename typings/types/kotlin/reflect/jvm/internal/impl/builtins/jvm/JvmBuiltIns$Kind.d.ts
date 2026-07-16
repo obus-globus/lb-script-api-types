@@ -7,7 +7,7 @@ export class JvmBuiltIns$Kind extends Enum<JvmBuiltIns$Kind> {
     static FROM_DEPENDENCIES: JvmBuiltIns$Kind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): JvmBuiltIns$Kind;
-    static values(): (Object | null)[];
+    static values(): JvmBuiltIns$Kind[];
     private constructor()
     name(): "FROM_DEPENDENCIES" | "FROM_CLASS_LOADER" | "FALLBACK";
 }

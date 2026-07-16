@@ -8,7 +8,7 @@ export class AddFriendWidget$State extends Enum<AddFriendWidget$State> {
     static SENDING: AddFriendWidget$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): AddFriendWidget$State;
-    static values(): (Object | null)[];
+    static values(): AddFriendWidget$State[];
     private constructor()
     name(): "EMPTY_INPUT" | "READY" | "SENDING" | "DISABLED";
 }

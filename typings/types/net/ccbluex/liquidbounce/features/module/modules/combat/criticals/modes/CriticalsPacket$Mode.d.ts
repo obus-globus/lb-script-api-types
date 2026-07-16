@@ -17,7 +17,7 @@ export class CriticalsPacket$Mode extends Enum<CriticalsPacket$Mode> implements 
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CriticalsPacket$Mode;
-    static values(): (Object | null)[];
+    static values(): CriticalsPacket$Mode[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "VANILLA" | "NO_CHEAT_PLUS" | "FALLING" | "LOW" | "DOWN" | "GRIM" | "BLOCKSMC";

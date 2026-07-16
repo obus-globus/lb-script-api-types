@@ -7,7 +7,7 @@ export class Completion$Type extends Enum<Completion$Type> {
     static Throw: Completion$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Completion$Type;
-    static values(): (Object | null)[];
+    static values(): Completion$Type[];
     private constructor()
     name(): "Normal" | "Return" | "Throw";
 }

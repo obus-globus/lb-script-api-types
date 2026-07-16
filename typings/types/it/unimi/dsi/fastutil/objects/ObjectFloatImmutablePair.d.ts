@@ -4,7 +4,7 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ObjectFloatImmutablePair<K extends unknown> extends Object implements ObjectFloatPair<K>, Serializable {
-    static lexComparator(): (param0: Object) => boolean;
+    static lexComparator(): (param0: ObjectFloatPair<Object>, param1: ObjectFloatPair<Object>) => number;
     static of(paramarg0: Object | null, paramarg1: number): ObjectFloatImmutablePair<Object>;
     static of(paramarg0: Object | null, paramarg1: number): ObjectFloatPair<Object>;
     constructor(arg0: K, arg1: number)

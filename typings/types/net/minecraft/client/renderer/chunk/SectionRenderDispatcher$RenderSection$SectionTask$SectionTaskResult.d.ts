@@ -6,7 +6,7 @@ export class SectionRenderDispatcher$RenderSection$SectionTask$SectionTaskResult
     static SUCCESSFUL: SectionRenderDispatcher$RenderSection$SectionTask$SectionTaskResult;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SectionRenderDispatcher$RenderSection$SectionTask$SectionTaskResult;
-    static values(): (Object | null)[];
+    static values(): SectionRenderDispatcher$RenderSection$SectionTask$SectionTaskResult[];
     private constructor()
     name(): "SUCCESSFUL" | "CANCELLED";
 }

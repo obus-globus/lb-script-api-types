@@ -3,8 +3,10 @@ import type { SerializationStrategy } from '../../../kotlinx/serialization/Seria
 import type { SerialDescriptor } from '../../../kotlinx/serialization/descriptors/SerialDescriptor.d.ts'
 import type { CompositeEncoder } from '../../../kotlinx/serialization/encoding/CompositeEncoder.d.ts'
 import type { Encoder } from '../../../kotlinx/serialization/encoding/Encoder.d.ts'
+import type { SerializersModule } from '../../../kotlinx/serialization/modules/SerializersModule.d.ts'
 export abstract class AbstractEncoder extends Object implements CompositeEncoder, Encoder {
     constructor()
+    /*not mapped: */ getSerializersModule(): SerializersModule;
     beginCollection(descriptor: SerialDescriptor, collectionSize: number): CompositeEncoder;
     beginStructure(descriptor: SerialDescriptor): CompositeEncoder;
     encodeBoolean(value: boolean): void;

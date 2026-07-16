@@ -10,8 +10,8 @@ export class PotionItemFacet$Companion extends Object {
     // private COMPARATOR: ComparatorChain<PotionItemFacet>;
     GOOD_STATUS_EFFECTS: Holder<MobEffect>[];
     // private GOOD_STATUS_EFFECT_TIER_LIST: Map<MobEffect, Tier>;
-    // private PreferAmplifier: (param0: Object) => boolean;
-    // private PreferHigherDurationPotions: (param0: Object) => boolean;
-    // private PreferHigherTierPotions: (param0: Object) => boolean;
-    // private PreferSplashPotions: (param0: Object) => boolean;
+    // private PreferAmplifier: (param0: PotionItemFacet, param1: PotionItemFacet) => number;
+    // private PreferHigherDurationPotions: (param0: PotionItemFacet, param1: PotionItemFacet) => number;
+    // private PreferHigherTierPotions: (param0: PotionItemFacet, param1: PotionItemFacet) => number;
+    // private PreferSplashPotions: (param0: PotionItemFacet, param1: PotionItemFacet) => number;
 }

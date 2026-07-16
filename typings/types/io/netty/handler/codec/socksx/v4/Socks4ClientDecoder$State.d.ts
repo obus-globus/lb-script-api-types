@@ -7,7 +7,7 @@ export class Socks4ClientDecoder$State extends Enum<Socks4ClientDecoder$State> {
     static SUCCESS: Socks4ClientDecoder$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Socks4ClientDecoder$State;
-    static values(): (Object | null)[];
+    static values(): Socks4ClientDecoder$State[];
     private constructor()
     name(): "START" | "SUCCESS" | "FAILURE";
 }

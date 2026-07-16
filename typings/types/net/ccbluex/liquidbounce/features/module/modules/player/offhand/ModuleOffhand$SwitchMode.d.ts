@@ -16,7 +16,7 @@ export class ModuleOffhand$SwitchMode extends Enum<ModuleOffhand$SwitchMode> imp
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleOffhand$SwitchMode;
-    static values(): (Object | null)[];
+    static values(): ModuleOffhand$SwitchMode[];
     private constructor(tag: string)
     readonly tag: string;
     performSwitch(from: ItemSlot): InventoryAction$Click[];

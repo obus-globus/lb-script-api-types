@@ -7,7 +7,7 @@ export class Advapi32Util$AccessCheckPermission extends Enum<Advapi32Util$Access
     static WRITE: Advapi32Util$AccessCheckPermission;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Advapi32Util$AccessCheckPermission;
-    static values(): (Object | null)[];
+    static values(): Advapi32Util$AccessCheckPermission[];
     private constructor(arg2: number)
     readonly code: number;
     getCode(): number;

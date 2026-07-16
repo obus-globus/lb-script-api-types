@@ -10,7 +10,7 @@ export class CefMenuModel$MenuItemType extends Enum<CefMenuModel$MenuItemType> {
     static MENUITEMTYPE_SUBMENU: CefMenuModel$MenuItemType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CefMenuModel$MenuItemType;
-    static values(): (Object | null)[];
+    static values(): CefMenuModel$MenuItemType[];
     private constructor()
     name(): "MENUITEMTYPE_NONE" | "MENUITEMTYPE_COMMAND" | "MENUITEMTYPE_CHECK" | "MENUITEMTYPE_RADIO" | "MENUITEMTYPE_SEPARATOR" | "MENUITEMTYPE_SUBMENU";
 }

@@ -252,7 +252,7 @@ export class SoundEffectMappings1_9 extends Enum<SoundEffectMappings1_9> {
     static getByName(paramarg0: string): SoundEffectMappings1_9;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SoundEffectMappings1_9;
-    static values(): (Object | null)[];
+    static values(): SoundEffectMappings1_9[];
     private constructor(arg2: string, arg3: string, arg4: SoundCategories1_8)
     private constructor(arg2: string, arg3: string, arg4: SoundCategories1_8, arg5: boolean)
     readonly breakSound: boolean;

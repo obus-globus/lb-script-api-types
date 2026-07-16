@@ -10,7 +10,7 @@ export class Processor$Type extends Enum<Processor$Type> {
     static X86: Processor$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Processor$Type;
-    static values(): (Object | null)[];
+    static values(): Processor$Type[];
     private constructor(arg2: string)
     readonly label: string;
     getLabel(): string;

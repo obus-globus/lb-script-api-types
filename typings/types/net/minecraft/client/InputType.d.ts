@@ -8,7 +8,7 @@ export class InputType extends Enum<InputType> {
     static NONE: InputType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): InputType;
-    static values(): (Object | null)[];
+    static values(): InputType[];
     private constructor()
     isKeyboard(): boolean;
     isMouse(): boolean;

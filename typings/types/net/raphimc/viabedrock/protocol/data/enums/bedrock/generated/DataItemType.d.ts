@@ -18,7 +18,7 @@ export class DataItemType extends Enum<DataItemType> {
     static getByValue(paramarg0: number, paramarg1: DataItemType): DataItemType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DataItemType;
-    static values(): (Object | null)[];
+    static values(): DataItemType[];
     private constructor(arg2: number)
     private constructor(arg2: DataItemType)
     readonly value: number;

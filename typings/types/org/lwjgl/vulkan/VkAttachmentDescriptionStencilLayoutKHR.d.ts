@@ -22,28 +22,21 @@ export class VkAttachmentDescriptionStencilLayoutKHR extends VkAttachmentDescrip
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkAttachmentDescriptionStencilLayoutKHR;
     static calloc(paramarg0: MemoryStack): VkAttachmentDescriptionStencilLayoutKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkAttachmentDescriptionStencilLayout;
     static create(paramarg0: number): VkAttachmentDescriptionStencilLayout;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkAttachmentDescriptionStencilLayoutKHR;
     static create(paramarg0: number): VkAttachmentDescriptionStencilLayoutKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkAttachmentDescriptionStencilLayout;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkAttachmentDescriptionStencilLayoutKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkAttachmentDescriptionStencilLayout;
     static malloc(paramarg0: MemoryStack): VkAttachmentDescriptionStencilLayout;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkAttachmentDescriptionStencilLayoutKHR;
     static malloc(paramarg0: MemoryStack): VkAttachmentDescriptionStencilLayoutKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
@@ -52,7 +45,6 @@ export class VkAttachmentDescriptionStencilLayoutKHR extends VkAttachmentDescrip
     static nstencilFinalLayout(paramarg0: number, paramarg1: number): void;
     static nstencilInitialLayout(paramarg0: number): number;
     static nstencilInitialLayout(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

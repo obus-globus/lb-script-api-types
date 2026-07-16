@@ -43,14 +43,14 @@ export class PassthroughNDManager extends Object implements NDManager {
     create(arg0: Shape, arg1: DataType, arg2: Device): NDArray;
     create(arg0: Buffer, arg1: Shape): NDArray;
     create(arg0: Buffer, arg1: Shape, arg2: DataType): NDArray;
-    create(arg0: (Object | null)[][]): NDArray;
+    create(arg0: boolean[][]): NDArray;
     create(arg0: number[][]): NDArray;
     create(arg0: string[]): NDArray;
     create(arg0: string[], arg1: Shape): NDArray;
     create(arg0: string[], arg1: Charset): NDArray;
     create(arg0: boolean): NDArray;
-    create(arg0: (Object | null)[]): NDArray;
-    create(arg0: (Object | null)[], arg1: Shape): NDArray;
+    create(arg0: boolean[]): NDArray;
+    create(arg0: boolean[], arg1: Shape): NDArray;
     create(arg0: number): NDArray;
     create(arg0: number[]): NDArray;
     create(arg0: number[], arg1: Shape): NDArray;

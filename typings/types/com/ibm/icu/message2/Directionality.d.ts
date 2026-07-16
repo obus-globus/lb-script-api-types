@@ -11,7 +11,7 @@ export class Directionality extends Enum<Directionality> {
     static of(paramarg0: Locale): Directionality;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Directionality;
-    static values(): (Object | null)[];
+    static values(): Directionality[];
     private constructor()
     name(): "UNKNOWN" | "LTR" | "RTL" | "AUTO" | "INHERIT";
 }

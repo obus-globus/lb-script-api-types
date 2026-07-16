@@ -8,7 +8,7 @@ export class JSFunction$GeneratorState extends Enum<JSFunction$GeneratorState> {
     static SuspendedYield: JSFunction$GeneratorState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): JSFunction$GeneratorState;
-    static values(): (Object | null)[];
+    static values(): JSFunction$GeneratorState[];
     private constructor()
     name(): "SuspendedStart" | "SuspendedYield" | "Executing" | "Completed";
 }

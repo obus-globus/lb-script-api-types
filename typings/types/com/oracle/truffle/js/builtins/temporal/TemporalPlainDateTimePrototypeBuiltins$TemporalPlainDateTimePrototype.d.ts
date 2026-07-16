@@ -48,7 +48,7 @@ export class TemporalPlainDateTimePrototypeBuiltins$TemporalPlainDateTimePrototy
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TemporalPlainDateTimePrototypeBuiltins$TemporalPlainDateTimePrototype;
-    static values(): (Object | null)[];
+    static values(): TemporalPlainDateTimePrototypeBuiltins$TemporalPlainDateTimePrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

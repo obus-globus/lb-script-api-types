@@ -14,7 +14,7 @@ export class ClientboundLoginPackets extends Enum<ClientboundLoginPackets> imple
     static LOGIN_FINISHED: ClientboundLoginPackets;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClientboundLoginPackets;
-    static values(): (Object | null)[];
+    static values(): ClientboundLoginPackets[];
     private constructor()
     direction(): Direction;
     getId(): number;

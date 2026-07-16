@@ -38,7 +38,7 @@ export class DoRender extends Enum<DoRender> implements Tagged {
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DoRender;
-    static values(): (Object | null)[];
+    static values(): DoRender[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "BLINDING" | "DARKNESS" | "NAUSEA" | "ARMOR" | "MOB_IN_SPAWNER" | "ENCHANT_TABLE_BOOK" | "EAT_PARTICLES" | "BLOCK_BREAK_PARTICLES" | "BLOCK_BREAK_OVERLAY" | "TITLE" | "PUMPKIN_BLUR" | "LIQUIDS_FOG" | "POWDER_SNOW_FOG" | "FLOATING_ITEMS" | "MAP_CONTENTS" | "MAP_MARKERS" | "PORTAL_OVERLAY" | "WALL_OVERLAY" | "FALLING_BLOCKS" | "BEACON_BEAMS" | "SKYLIGHT_UPDATES" | "GUI_BACKGROUND" | "SPYGLASS_OVERLAY" | "SIGN_TEXT" | "INVISIBLE_ENTITIES" | "BOSS_BARS" | "EXPLOSION_PARTICLES" | "WORLD_BORDER";

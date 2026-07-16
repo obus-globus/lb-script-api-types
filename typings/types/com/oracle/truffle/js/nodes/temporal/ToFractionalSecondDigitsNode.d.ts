@@ -8,7 +8,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ToFractionalSecondDigitsNode extends JavaScriptBaseNode {
     static AUTO: number;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(normalizedOptions: Object): number;
     toFractionalSecondDigits(normalizedOptions: Object, getFractionalSecondDigits: PropertyGetNode, toStringNode: JSToStringNode, equalNode: TruffleString$EqualNode, errorBranch: InlinedBranchProfile): number;

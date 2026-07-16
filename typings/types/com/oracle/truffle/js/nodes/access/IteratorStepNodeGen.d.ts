@@ -8,7 +8,6 @@ export class IteratorStepNodeGen extends IteratorStepNode {
     static create(): IteratorStepNode;
     static getUncached(): IteratorStepNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private iteratorCompleteNode_: IteratorCompleteNode;
     // private iteratorNextNode_: IteratorNextNode;

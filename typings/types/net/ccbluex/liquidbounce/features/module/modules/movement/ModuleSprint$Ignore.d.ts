@@ -13,7 +13,7 @@ export class ModuleSprint$Ignore extends Enum<ModuleSprint$Ignore> implements Ta
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleSprint$Ignore;
-    static values(): (Object | null)[];
+    static values(): ModuleSprint$Ignore[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "BLINDNESS" | "HUNGER" | "COLLISION";

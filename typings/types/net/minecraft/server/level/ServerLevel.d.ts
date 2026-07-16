@@ -122,7 +122,7 @@ import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
 import type { LevelTicks } from '../../../../net/minecraft/world/ticks/LevelTicks.d.ts'
 export class ServerLevel extends Level implements ServerWorldExtended, ServerLevelAccessor, ServerLevelAccessor_2, ServerLevelAccessor_3, AttachmentTargetImpl, ServerLevelCache, ServerEntityGetter, WorldGenLevel {
     static ACROSS_THE_WHOLE_WORLD: number;
-    static DIRECTIONS: (Object | null)[];
+    static DIRECTIONS: Direction[];
     static END: ResourceKey<Level>;
     static END_SPAWN_POINT: BlockPos;
     static LONG_PARTICLE_CLIP_RANGE: number;

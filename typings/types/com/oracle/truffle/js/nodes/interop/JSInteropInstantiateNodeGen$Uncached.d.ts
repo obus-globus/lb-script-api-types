@@ -5,7 +5,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSInteropInstantiateNodeGen$Uncached extends JSInteropInstantiateNode implements UnadoptableNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     execute(arg0Value: JSDynamicObject, arg1Value: Object[]): Object;
 }

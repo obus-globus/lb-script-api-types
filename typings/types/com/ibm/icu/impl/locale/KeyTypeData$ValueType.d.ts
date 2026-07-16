@@ -8,7 +8,7 @@ export class KeyTypeData$ValueType extends Enum<KeyTypeData$ValueType> {
     static single: KeyTypeData$ValueType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): KeyTypeData$ValueType;
-    static values(): (Object | null)[];
+    static values(): KeyTypeData$ValueType[];
     private constructor()
     name(): "single" | "multiple" | "incremental" | "any";
 }

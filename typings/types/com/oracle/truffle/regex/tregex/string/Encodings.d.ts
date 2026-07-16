@@ -1,7 +1,7 @@
 import type { Encodings$Encoding } from '../../../../../../com/oracle/truffle/regex/tregex/string/Encodings$Encoding.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class Encodings extends Object {
-    static ALL_NAMES: (Object | null)[];
+    static ALL_NAMES: string[];
     static ASCII: Encodings$Encoding;
     static BYTES: Encodings$Encoding;
     static LATIN_1: Encodings$Encoding;

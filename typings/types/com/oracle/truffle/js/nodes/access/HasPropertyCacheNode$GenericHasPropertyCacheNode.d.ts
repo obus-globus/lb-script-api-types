@@ -6,7 +6,6 @@ import type { JSClassProfile } from '../../../../../../com/oracle/truffle/js/run
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class HasPropertyCacheNode$GenericHasPropertyCacheNode extends HasPropertyCacheNode$HasCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     // private interop: InteropLibrary;
     // private jsclassProfile: JSClassProfile;

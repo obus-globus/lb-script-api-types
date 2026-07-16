@@ -8,7 +8,7 @@ export class FormatStyle extends Enum<FormatStyle> {
     static SHORT: FormatStyle;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FormatStyle;
-    static values(): (Object | null)[];
+    static values(): FormatStyle[];
     private constructor()
     name(): "FULL" | "LONG" | "MEDIUM" | "SHORT";
 }

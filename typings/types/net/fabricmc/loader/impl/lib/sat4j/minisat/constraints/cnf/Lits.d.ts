@@ -9,10 +9,10 @@ export class Lits extends Object implements Serializable, ILits {
     static toString(paramarg0: number): string;
     static toStringX(paramarg0: number): string;
     constructor()
-    // private falsified: (Object | null)[];
+    // private falsified: boolean[];
     readonly level: number[];
     // private maxvarid: number;
-    // private pool: (Object | null)[];
+    // private pool: boolean[];
     // private realnVars: number;
     readonly reason: Constr[];
     readonly trailPosition: number[];

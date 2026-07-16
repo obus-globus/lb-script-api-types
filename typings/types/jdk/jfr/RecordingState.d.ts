@@ -9,7 +9,7 @@ export class RecordingState extends Enum<RecordingState> {
     static STOPPED: RecordingState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RecordingState;
-    static values(): (Object | null)[];
+    static values(): RecordingState[];
     private constructor()
     name(): "NEW" | "DELAYED" | "RUNNING" | "STOPPED" | "CLOSED";
 }

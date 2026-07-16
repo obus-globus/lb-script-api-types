@@ -7,7 +7,7 @@ export class OverridingUtil$OverrideCompatibilityInfo$Result extends Enum<Overri
     static OVERRIDABLE: OverridingUtil$OverrideCompatibilityInfo$Result;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): OverridingUtil$OverrideCompatibilityInfo$Result;
-    static values(): (Object | null)[];
+    static values(): OverridingUtil$OverrideCompatibilityInfo$Result[];
     private constructor()
     name(): "OVERRIDABLE" | "INCOMPATIBLE" | "CONFLICT";
 }

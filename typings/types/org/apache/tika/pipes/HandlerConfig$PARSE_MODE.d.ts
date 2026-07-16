@@ -7,7 +7,7 @@ export class HandlerConfig$PARSE_MODE extends Enum<HandlerConfig$PARSE_MODE> {
     static parseMode(paramarg0: string): HandlerConfig$PARSE_MODE;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HandlerConfig$PARSE_MODE;
-    static values(): (Object | null)[];
+    static values(): HandlerConfig$PARSE_MODE[];
     private constructor()
     name(): "RMETA" | "CONCATENATE";
 }

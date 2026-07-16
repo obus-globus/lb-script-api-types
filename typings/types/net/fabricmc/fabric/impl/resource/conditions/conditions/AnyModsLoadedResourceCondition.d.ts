@@ -6,7 +6,6 @@ import type { ResourceCondition } from '../../../../../../../net/fabricmc/fabric
 import type { ResourceConditionType } from '../../../../../../../net/fabricmc/fabric/api/resource/conditions/v1/ResourceConditionType.d.ts'
 import type { RegistryOps$RegistryInfoLookup } from '../../../../../../../net/minecraft/resources/RegistryOps$RegistryInfoLookup.d.ts'
 export class AnyModsLoadedResourceCondition extends Record implements ResourceCondition {
-    static CODEC: Codec<ResourceCondition>;
     static CODEC: MapCodec<AnyModsLoadedResourceCondition>;
     static CONDITION_CODEC: Codec<ResourceCondition>;
     static LIST_CODEC: Codec<ResourceCondition[]>;

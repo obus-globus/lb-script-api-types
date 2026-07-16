@@ -14,7 +14,7 @@ export class MarketplaceItemType extends Enum<MarketplaceItemType> implements Ta
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MarketplaceItemType;
-    static values(): (Object | null)[];
+    static values(): MarketplaceItemType[];
     private constructor(tag: string, isListable: boolean, isSubscribable: boolean)
     // private isListable: boolean;
     /*not mapped: */ isListable(): boolean;

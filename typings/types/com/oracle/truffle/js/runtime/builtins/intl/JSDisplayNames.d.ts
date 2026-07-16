@@ -37,7 +37,7 @@ export class JSDisplayNames extends JSNonProxy implements JSConstructorFactory$W
     static ordinaryPreventExtensions(paramthisObj: JSDynamicObject, paramextraFlags: number): boolean;
     static resolvedOptions(paramcontext: JSContext, paramrealm: JSRealm, paramdisplayNamesObject: JSDisplayNamesObject): JSObject;
     static setIntegrityLevelFast(paramthisObj: JSDynamicObject, paramfreeze: boolean): boolean;
-    static setupInternalState(paramctx: JSContext, paramstate: JSDisplayNames$InternalState, paramlocales: (Object | null)[], paramoptStyle: string, paramoptType: string, paramoptFallback: string, paramoptLanguageDisplay: string): void;
+    static setupInternalState(paramctx: JSContext, paramstate: JSDisplayNames$InternalState, paramlocales: string[], paramoptStyle: string, paramoptType: string, paramoptFallback: string, paramoptLanguageDisplay: string): void;
     static testIntegrityLevelFast(paramobj: JSDynamicObject, paramfrozen: boolean): boolean;
     private constructor()
     createConstructorAndPrototype(realm: JSRealm, functionBuiltins: JSBuiltinsContainer): JSConstructor;

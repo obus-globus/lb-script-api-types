@@ -7,7 +7,6 @@ export class IteratorStepNodeGen$Uncached extends IteratorStepNode implements Un
     static create(): IteratorStepNode;
     static getUncached(): IteratorStepNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     execute(arg0Value: IteratorRecord): Object;
 }

@@ -13,7 +13,7 @@ export class VersionComparisonOperator extends Enum<VersionComparisonOperator> {
     static SAME_TO_NEXT_MINOR: VersionComparisonOperator;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): VersionComparisonOperator;
-    static values(): (Object | null)[];
+    static values(): VersionComparisonOperator[];
     constructor(arg2: string, arg3: boolean, arg4: boolean, arg5: VersionComparisonOperator)
     readonly maxInclusive: boolean;
     readonly minInclusive: boolean;

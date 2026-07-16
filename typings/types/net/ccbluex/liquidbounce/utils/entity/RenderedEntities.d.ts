@@ -7,6 +7,7 @@ import type { EventListener } from '../../../../../net/ccbluex/liquidbounce/even
 import type { GameTickEvent } from '../../../../../net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts'
 import type { PerspectiveEvent } from '../../../../../net/ccbluex/liquidbounce/event/events/PerspectiveEvent.d.ts'
 import type { WorldChangeEvent } from '../../../../../net/ccbluex/liquidbounce/event/events/WorldChangeEvent.d.ts'
+import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { LivingEntity } from '../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 /**
  * A readonly {@link Collection} containing all {@link LivingEntity} instances that meet the {@link shouldBeShown} condition.
@@ -18,6 +19,7 @@ import type { LivingEntity } from '../../../../../net/minecraft/world/entity/Liv
  */
 export class RenderedEntities extends Object implements EventListener {
     static INSTANCE: RenderedEntities;
+    readonly debugDisplayName: Component;
     // private onUpdate: Pair<EventListener, () => void>[];
     // private perspectiveChangeHandler: EventHook<PerspectiveEvent>;
     // private registry: EventListener[];

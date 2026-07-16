@@ -6,7 +6,7 @@ export class MemberReferenceTree$ReferenceMode extends Enum<MemberReferenceTree$
     static NEW: MemberReferenceTree$ReferenceMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MemberReferenceTree$ReferenceMode;
-    static values(): (Object | null)[];
+    static values(): MemberReferenceTree$ReferenceMode[];
     private constructor()
     name(): "INVOKE" | "NEW";
 }

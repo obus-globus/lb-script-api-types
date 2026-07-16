@@ -11,7 +11,6 @@ import type { JSTypedArrayObject } from '../../../../../../com/oracle/truffle/js
 import type { ByteBuffer } from '../../../../../../java/nio/ByteBuffer.d.ts'
 export abstract class TextEncoderBuiltins$UTF8EncodeIntoNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     // private getCodeRangeImpreciseNode: TruffleString$GetCodeRangeImpreciseNode;
     // private getInternalByteArrayNode: TruffleString$GetInternalByteArrayNode;

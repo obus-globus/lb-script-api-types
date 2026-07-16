@@ -3,7 +3,6 @@ import type { JavaScriptBaseNode } from '../../../../../com/oracle/truffle/js/no
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class RegExpBuiltins$GetStaticRegExpResultNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(node: Node): Object;
 }

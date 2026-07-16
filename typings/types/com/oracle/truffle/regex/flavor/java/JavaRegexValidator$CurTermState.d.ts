@@ -8,7 +8,7 @@ export class JavaRegexValidator$CurTermState extends Enum<JavaRegexValidator$Cur
     static Other: JavaRegexValidator$CurTermState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): JavaRegexValidator$CurTermState;
-    static values(): (Object | null)[];
+    static values(): JavaRegexValidator$CurTermState[];
     private constructor()
     name(): "Null" | "LookAheadAssertion" | "LookBehindAssertion" | "Other";
 }

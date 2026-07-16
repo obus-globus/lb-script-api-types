@@ -9,7 +9,7 @@ export class PatternParser$ParserState extends Enum<PatternParser$ParserState> {
     static MIN_STATE: PatternParser$ParserState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PatternParser$ParserState;
-    static values(): (Object | null)[];
+    static values(): PatternParser$ParserState[];
     private constructor()
     name(): "LITERAL_STATE" | "CONVERTER_STATE" | "DOT_STATE" | "MIN_STATE" | "MAX_STATE";
 }

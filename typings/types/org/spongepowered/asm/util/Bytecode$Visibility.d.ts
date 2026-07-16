@@ -8,7 +8,7 @@ export class Bytecode$Visibility extends Enum<Bytecode$Visibility> {
     static PUBLIC: Bytecode$Visibility;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Bytecode$Visibility;
-    static values(): (Object | null)[];
+    static values(): Bytecode$Visibility[];
     private constructor(arg2: number)
     // private access: number;
     isAtLeast(arg0: Bytecode$Visibility): boolean;

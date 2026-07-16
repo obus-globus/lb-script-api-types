@@ -7,7 +7,6 @@ export class JSToNumberNodeGen$Uncached extends JSToNumberNode implements Unadop
     static create(paramchild: JavaScriptNode): JavaScriptNode;
     static create(): JSToNumberNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     execute(arg0Value: Object): Object;
 }

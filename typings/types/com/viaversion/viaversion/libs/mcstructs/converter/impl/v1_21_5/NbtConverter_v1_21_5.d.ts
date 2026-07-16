@@ -5,7 +5,6 @@ import type { Result } from '../../../../../../../../com/viaversion/viaversion/l
 import type { SNbt } from '../../../../../../../../com/viaversion/viaversion/libs/mcstructs/snbt/SNbt.d.ts'
 import type { Map$Entry } from '../../../../../../../../java/util/Map$Entry.d.ts'
 export class NbtConverter_v1_21_5 extends NbtConverter_v1_20_3 {
-    static INSTANCE: NbtConverter_v1_20_3;
     static INSTANCE: NbtConverter_v1_21_5;
     constructor()
     constructor(arg0: SNbt<Map$Entry<string, Tag>[]>)

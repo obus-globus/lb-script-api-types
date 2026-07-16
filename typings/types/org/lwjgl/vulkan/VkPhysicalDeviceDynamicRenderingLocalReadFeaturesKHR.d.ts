@@ -21,35 +21,27 @@ export class VkPhysicalDeviceDynamicRenderingLocalReadFeaturesKHR extends VkPhys
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceDynamicRenderingLocalReadFeaturesKHR;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceDynamicRenderingLocalReadFeaturesKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceDynamicRenderingLocalReadFeatures;
     static create(paramarg0: number): VkPhysicalDeviceDynamicRenderingLocalReadFeatures;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceDynamicRenderingLocalReadFeaturesKHR;
     static create(paramarg0: number): VkPhysicalDeviceDynamicRenderingLocalReadFeaturesKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceDynamicRenderingLocalReadFeatures;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceDynamicRenderingLocalReadFeaturesKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceDynamicRenderingLocalReadFeatures;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceDynamicRenderingLocalReadFeatures;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceDynamicRenderingLocalReadFeaturesKHR;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceDynamicRenderingLocalReadFeaturesKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ndynamicRenderingLocalRead(paramarg0: number): number;
     static ndynamicRenderingLocalRead(paramarg0: number, paramarg1: number): void;
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

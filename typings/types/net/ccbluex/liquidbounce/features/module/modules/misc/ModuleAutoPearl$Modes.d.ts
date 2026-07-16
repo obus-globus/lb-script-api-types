@@ -12,7 +12,7 @@ export class ModuleAutoPearl$Modes extends Enum<ModuleAutoPearl$Modes> implement
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleAutoPearl$Modes;
-    static values(): (Object | null)[];
+    static values(): ModuleAutoPearl$Modes[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "TRIGGER" | "TARGET";

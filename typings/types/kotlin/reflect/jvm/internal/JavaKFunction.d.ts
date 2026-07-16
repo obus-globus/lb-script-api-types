@@ -21,10 +21,12 @@ export abstract class JavaKFunction extends JavaKCallable<Object> implements Fun
     /*not mapped: */ isInfix(): boolean;
     /*not mapped: */ isInline(): boolean;
     /*not mapped: */ isOperator(): boolean;
+    /*not mapped: */ isPrimaryConstructor(): boolean;
     /*not mapped: */ isVararg(): boolean;
     readonly javaTypeParameters: TypeVariable<any>[];
     readonly parameterTypes: Class<Object>[];
     readonly parameters: KParameter[];
+    /*not mapped: */ getSignature(): string;
     readonly typeParameters: KTypeParameter[];
     equals(other: Object | null): boolean;
     findJavaDeclaration(): GenericDeclaration | null;

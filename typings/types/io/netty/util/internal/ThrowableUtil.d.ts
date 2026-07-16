@@ -6,7 +6,7 @@ export class ThrowableUtil extends Object {
     static addSuppressed(paramarg0: Throwable, paramarg1: Throwable): void;
     static addSuppressed(paramarg0: Throwable, paramarg1: Throwable[]): void;
     static addSuppressedAndClear(paramarg0: Throwable, paramarg1: Throwable[]): void;
-    static getSuppressed(paramarg0: Throwable): (Object | null)[];
+    static getSuppressed(paramarg0: Throwable): Throwable[];
     static haveSuppressed(): boolean;
     static interruptAndAttachAsyncStackTrace(paramarg0: Thread, paramarg1: Throwable): void;
     static stackTraceToString(paramarg0: Throwable): string;

@@ -15,7 +15,6 @@ export abstract class JSToUInt32Node extends JavaScriptBaseNode {
     static create(): JSToUInt32Node;
     static create(paramunsignedRightShift: boolean, paramshiftValue: number): JSToUInt32Node;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(unsignedRightShift: boolean, shiftValue: number)
     // private shiftValue: number;
     // private unsignedRightShift: boolean;

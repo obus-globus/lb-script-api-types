@@ -10,7 +10,6 @@ import type { JSClassProfile } from '../../../../../../com/oracle/truffle/js/run
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class CachedGetPropertyNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private context: JSContext;
     doArrayIndex(target: JSDynamicObject, key: Object, receiver: Object, defaultValue: Object, toArrayIndexNode: ToArrayIndexNoToPropertyKeyNode, index: number, jsclassProfile: JSClassProfile): Object;

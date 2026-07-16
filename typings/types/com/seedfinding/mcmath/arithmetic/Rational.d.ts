@@ -14,7 +14,6 @@ export class Rational extends Number implements Comparable<Rational> {
     static of(paramarg0: BigInteger): Rational;
     static of(paramarg0: BigInteger, paramarg1: BigInteger): Rational;
     static of(paramarg0: BigInteger, paramarg1: number): Rational;
-    static of(paramarg0: number): Rational;
     static of(paramarg0: number, paramarg1: BigInteger): Rational;
     static of(paramarg0: number, paramarg1: number): Rational;
     constructor(arg0: BigInteger, arg1: BigInteger)

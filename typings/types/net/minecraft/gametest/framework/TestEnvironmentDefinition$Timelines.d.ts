@@ -9,7 +9,6 @@ import type { ServerLevel } from '../../../../net/minecraft/server/level/ServerL
 import type { EnvironmentAttributeSystem } from '../../../../net/minecraft/world/attribute/EnvironmentAttributeSystem.d.ts'
 import type { Timeline } from '../../../../net/minecraft/world/timeline/Timeline.d.ts'
 export class TestEnvironmentDefinition$Timelines extends Record implements TestEnvironmentDefinition<EnvironmentAttributeSystem> {
-    static CODEC: Codec<Holder<TestEnvironmentDefinition<Object>>>;
     static CODEC: MapCodec<TestEnvironmentDefinition$Timelines>;
     static DIRECT_CODEC: Codec<TestEnvironmentDefinition<Object>>;
     static activate(paramenvironment: TestEnvironmentDefinition<Object>, paramlevel: ServerLevel): TestEnvironmentDefinition$Activation<Object>;

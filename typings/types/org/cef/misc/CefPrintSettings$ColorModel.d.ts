@@ -25,7 +25,7 @@ export class CefPrintSettings$ColorModel extends Enum<CefPrintSettings$ColorMode
     static COLOR_MODEL_UNKNOWN: CefPrintSettings$ColorModel;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CefPrintSettings$ColorModel;
-    static values(): (Object | null)[];
+    static values(): CefPrintSettings$ColorModel[];
     private constructor()
     name(): "COLOR_MODEL_UNKNOWN" | "COLOR_MODEL_GRAY" | "COLOR_MODEL_COLOR" | "COLOR_MODEL_CMYK" | "COLOR_MODEL_CMY" | "COLOR_MODEL_KCMY" | "COLOR_MODEL_CMY_K" | "COLOR_MODEL_BLACK" | "COLOR_MODEL_GRAYSCALE" | "COLOR_MODEL_RGB" | "COLOR_MODEL_RGB16" | "COLOR_MODEL_RGBA" | "COLOR_MODEL_COLORMODE_COLOR" | "COLOR_MODEL_COLORMODE_MONOCHROME" | "COLOR_MODEL_HP_COLOR_COLOR" | "COLOR_MODEL_HP_COLOR_BLACK" | "COLOR_MODEL_PRINTOUTMODE_NORMAL" | "COLOR_MODEL_PRINTOUTMODE_NORMAL_GRAY" | "COLOR_MODEL_PROCESSCOLORMODEL_CMYK" | "COLOR_MODEL_PROCESSCOLORMODEL_GREYSCALE" | "COLOR_MODEL_PROCESSCOLORMODEL_RGB";
 }

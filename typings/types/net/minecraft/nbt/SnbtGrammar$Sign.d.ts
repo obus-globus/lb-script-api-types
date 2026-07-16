@@ -7,7 +7,7 @@ export class SnbtGrammar$Sign extends Enum<SnbtGrammar$Sign> {
     static PLUS: SnbtGrammar$Sign;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SnbtGrammar$Sign;
-    static values(): (Object | null)[];
+    static values(): SnbtGrammar$Sign[];
     private constructor()
     append(output: StringBuilder): void;
     name(): "PLUS" | "MINUS";

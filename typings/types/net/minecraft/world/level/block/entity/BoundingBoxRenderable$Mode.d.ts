@@ -7,7 +7,7 @@ export class BoundingBoxRenderable$Mode extends Enum<BoundingBoxRenderable$Mode>
     static NONE: BoundingBoxRenderable$Mode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): BoundingBoxRenderable$Mode;
-    static values(): (Object | null)[];
+    static values(): BoundingBoxRenderable$Mode[];
     private constructor()
     name(): "NONE" | "BOX" | "BOX_AND_INVISIBLE_BLOCKS";
 }

@@ -4,7 +4,6 @@ import type { MediaType } from '../okhttp3/MediaType.d.ts'
 import type { MultipartBody$Companion } from '../okhttp3/MultipartBody$Companion.d.ts'
 import type { MultipartBody$Part } from '../okhttp3/MultipartBody$Part.d.ts'
 import type { RequestBody } from '../okhttp3/RequestBody.d.ts'
-import type { RequestBody$Companion } from '../okhttp3/RequestBody$Companion.d.ts'
 import type { BufferedSink } from '../okio/BufferedSink.d.ts'
 import type { ByteString } from '../okio/ByteString.d.ts'
 import type { FileSystem } from '../okio/FileSystem.d.ts'
@@ -12,7 +11,6 @@ import type { Path } from '../okio/Path.d.ts'
 export class MultipartBody extends RequestBody {
     static ALTERNATIVE: MediaType;
     static Companion: MultipartBody$Companion;
-    static Companion: RequestBody$Companion;
     static DIGEST: MediaType;
     static EMPTY: RequestBody;
     static FORM: MediaType;

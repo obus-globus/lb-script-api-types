@@ -11,7 +11,6 @@ import type { SlotDisplay } from '../../../../../../net/minecraft/world/item/cra
 export class SmithingRecipeDisplay extends Record implements RecipeDisplay {
     static CODEC: Codec<RecipeDisplay>;
     static MAP_CODEC: MapCodec<SmithingRecipeDisplay>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, RecipeDisplay>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, SmithingRecipeDisplay>;
     static TYPE: RecipeDisplay$Type<SmithingRecipeDisplay>;
     constructor(template: SlotDisplay, base: SlotDisplay, addition: SlotDisplay, result: SlotDisplay, craftingStation: SlotDisplay)

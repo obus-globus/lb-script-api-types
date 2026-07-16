@@ -15,7 +15,7 @@ export class Event$ID extends Enum<Event$ID> {
     static StreamStart: Event$ID;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Event$ID;
-    static values(): (Object | null)[];
+    static values(): Event$ID[];
     private constructor()
     name(): "Alias" | "Comment" | "DocumentEnd" | "DocumentStart" | "MappingEnd" | "MappingStart" | "Scalar" | "SequenceEnd" | "SequenceStart" | "StreamEnd" | "StreamStart";
 }

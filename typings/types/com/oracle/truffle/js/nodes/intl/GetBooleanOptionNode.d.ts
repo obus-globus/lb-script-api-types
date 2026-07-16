@@ -8,7 +8,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class GetBooleanOptionNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext, paramproperty: TruffleString, paramfallback: boolean): GetBooleanOptionNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, property: TruffleString, fallback: boolean)
     // private fallback: boolean;
     // private propertyGetNode: PropertyGetNode;

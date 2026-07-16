@@ -8,7 +8,7 @@ export class CounterTrackerList$Field extends Enum<CounterTrackerList$Field> {
     static start: CounterTrackerList$Field;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CounterTrackerList$Field;
-    static values(): (Object | null)[];
+    static values(): CounterTrackerList$Field[];
     private constructor()
     name(): "start" | "size" | "offset" | "buffer";
 }

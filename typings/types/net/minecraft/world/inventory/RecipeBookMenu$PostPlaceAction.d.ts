@@ -6,7 +6,7 @@ export class RecipeBookMenu$PostPlaceAction extends Enum<RecipeBookMenu$PostPlac
     static PLACE_GHOST_RECIPE: RecipeBookMenu$PostPlaceAction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RecipeBookMenu$PostPlaceAction;
-    static values(): (Object | null)[];
+    static values(): RecipeBookMenu$PostPlaceAction[];
     private constructor()
     name(): "NOTHING" | "PLACE_GHOST_RECIPE";
 }

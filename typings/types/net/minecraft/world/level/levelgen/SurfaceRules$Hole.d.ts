@@ -12,7 +12,7 @@ export class SurfaceRules$Hole extends Enum<SurfaceRules$Hole> implements Surfac
     static bootstrap(paramregistry: MapCodec<SurfaceRules$ConditionSource>[]): MapCodec<SurfaceRules$ConditionSource>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SurfaceRules$Hole;
-    static values(): (Object | null)[];
+    static values(): SurfaceRules$Hole[];
     private constructor()
     apply(context: SurfaceRules$Context): SurfaceRules$Condition;
     codec(): MapCodec<SurfaceRules$Hole>;

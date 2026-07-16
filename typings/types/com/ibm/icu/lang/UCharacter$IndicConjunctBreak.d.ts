@@ -8,7 +8,7 @@ export class UCharacter$IndicConjunctBreak extends Enum<UCharacter$IndicConjunct
     static NONE: UCharacter$IndicConjunctBreak;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): UCharacter$IndicConjunctBreak;
-    static values(): (Object | null)[];
+    static values(): UCharacter$IndicConjunctBreak[];
     private constructor()
     name(): "NONE" | "CONSONANT" | "EXTEND" | "LINKER";
 }

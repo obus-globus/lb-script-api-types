@@ -122,7 +122,7 @@ export class Tree$Kind extends Enum<Tree$Kind> {
     static YIELD: Tree$Kind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Tree$Kind;
-    static values(): (Object | null)[];
+    static values(): Tree$Kind[];
     private constructor(arg2: Class<Tree>)
     // private associatedInterface: Class<Tree>;
     asInterface(): Class<Tree>;

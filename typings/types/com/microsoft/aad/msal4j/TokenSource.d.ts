@@ -6,7 +6,7 @@ export class TokenSource extends Enum<TokenSource> {
     static IDENTITY_PROVIDER: TokenSource;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TokenSource;
-    static values(): (Object | null)[];
+    static values(): TokenSource[];
     private constructor()
     name(): "IDENTITY_PROVIDER" | "CACHE";
 }

@@ -225,7 +225,7 @@ export class CefLoadHandler$ErrorCode extends Enum<CefLoadHandler$ErrorCode> {
     static findByCode(paramarg0: number): CefLoadHandler$ErrorCode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CefLoadHandler$ErrorCode;
-    static values(): (Object | null)[];
+    static values(): CefLoadHandler$ErrorCode[];
     private constructor(arg2: number)
     readonly code: number;
     getCode(): number;

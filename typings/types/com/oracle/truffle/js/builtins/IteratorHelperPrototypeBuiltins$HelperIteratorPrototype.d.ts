@@ -12,7 +12,7 @@ export class IteratorHelperPrototypeBuiltins$HelperIteratorPrototype extends Enu
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): IteratorHelperPrototypeBuiltins$HelperIteratorPrototype;
-    static values(): (Object | null)[];
+    static values(): IteratorHelperPrototypeBuiltins$HelperIteratorPrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

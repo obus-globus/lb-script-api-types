@@ -4,7 +4,7 @@ import type { Number } from '../../../../../../../../../java/lang/Number.d.ts'
 import type { StringSegment } from '../../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/StringSegment.d.ts'
 import type { DecimalQuantity_DualStorageBCD } from '../../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/number/DecimalQuantity_DualStorageBCD.d.ts'
 export class ParsedNumber extends Object {
-    static COMPARATOR: (param0: Object) => boolean;
+    static COMPARATOR: (param0: ParsedNumber, param1: ParsedNumber) => number;
     static FLAG_FAIL: number;
     static FLAG_HAS_DECIMAL_SEPARATOR: number;
     static FLAG_HAS_EXPONENT: number;

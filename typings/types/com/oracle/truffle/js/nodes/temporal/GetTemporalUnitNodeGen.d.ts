@@ -7,7 +7,6 @@ import type { TemporalUtil$Unit } from '../../../../../../com/oracle/truffle/js/
 export class GetTemporalUnitNodeGen extends GetTemporalUnitNode {
     static create(): GetTemporalUnitNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private getOptionNode_: TemporalGetOptionNode;
     // private state_0_: number;

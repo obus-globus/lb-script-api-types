@@ -18,7 +18,7 @@ export class Explanation$ErrorKind extends Enum<Explanation$ErrorKind> {
     static UNIQUE_ID: Explanation$ErrorKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Explanation$ErrorKind;
-    static values(): (Object | null)[];
+    static values(): Explanation$ErrorKind[];
     private constructor(arg2: boolean)
     // private isDependencyError: boolean;
     name(): "PRESELECT_HARD_DEP" | "PRESELECT_SOFT_DEP" | "PRESELECT_NEG_HARD_DEP" | "PRESELECT_FORCELOAD" | "HARD_DEP_INCOMPATIBLE_PRESELECTED" | "HARD_DEP_NO_CANDIDATE" | "HARD_DEP" | "SOFT_DEP" | "NEG_HARD_DEP" | "NESTED_FORCELOAD" | "NESTED_REQ_PARENT" | "ROOT_FORCELOAD_SINGLE" | "ROOT_FORCELOAD" | "UNIQUE_ID";

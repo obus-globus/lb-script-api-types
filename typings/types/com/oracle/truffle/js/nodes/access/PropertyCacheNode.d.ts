@@ -12,7 +12,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class PropertyCacheNode<T extends PropertyCacheNode$CacheNode<T>> extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(key: Object, context: JSContext)
     readonly context: JSContext;
     // private invalidationAssumption: Assumption;

@@ -7,7 +7,7 @@ export class MinecraftClientException$ErrorType extends Enum<MinecraftClientExce
     static SERVICE_UNAVAILABLE: MinecraftClientException$ErrorType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MinecraftClientException$ErrorType;
-    static values(): (Object | null)[];
+    static values(): MinecraftClientException$ErrorType[];
     private constructor()
     name(): "SERVICE_UNAVAILABLE" | "HTTP_ERROR" | "JSON_ERROR";
 }

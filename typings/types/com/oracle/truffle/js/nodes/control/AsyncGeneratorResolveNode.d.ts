@@ -9,7 +9,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class AsyncGeneratorResolveNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): AsyncGeneratorResolveNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private asyncGeneratorResumeNextNode: AsyncGeneratorResumeNextNode;
     // private callResolveNode: JSFunctionCallNode;

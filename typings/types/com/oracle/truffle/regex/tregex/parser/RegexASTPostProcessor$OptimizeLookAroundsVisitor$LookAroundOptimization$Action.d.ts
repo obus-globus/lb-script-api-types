@@ -7,7 +7,7 @@ export class RegexASTPostProcessor$OptimizeLookAroundsVisitor$LookAroundOptimiza
     static REPLACE: RegexASTPostProcessor$OptimizeLookAroundsVisitor$LookAroundOptimization$Action;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RegexASTPostProcessor$OptimizeLookAroundsVisitor$LookAroundOptimization$Action;
-    static values(): (Object | null)[];
+    static values(): RegexASTPostProcessor$OptimizeLookAroundsVisitor$LookAroundOptimization$Action[];
     private constructor()
     name(): "NONE" | "NO_OP" | "REPLACE";
 }

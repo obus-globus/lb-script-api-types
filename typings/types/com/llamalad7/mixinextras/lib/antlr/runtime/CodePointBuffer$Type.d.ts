@@ -6,7 +6,7 @@ export class CodePointBuffer$Type extends Enum<CodePointBuffer$Type> {
     static CHAR: CodePointBuffer$Type;
     static INT: CodePointBuffer$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static values(): (Object | null)[];
+    static values(): CodePointBuffer$Type[];
     private constructor()
     name(): "BYTE" | "CHAR" | "INT";
 }

@@ -24,7 +24,7 @@ export class MineRotationMode extends Enum<MineRotationMode> implements Tagged {
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MineRotationMode;
-    static values(): (Object | null)[];
+    static values(): MineRotationMode[];
     private constructor(tag: string)
     readonly tag: string;
     getFailProcedure(mineTarget: MineTarget): FailProcedure;

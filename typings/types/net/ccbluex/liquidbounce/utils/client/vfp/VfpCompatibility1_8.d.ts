@@ -9,7 +9,7 @@ export class VfpCompatibility1_8 extends Enum<VfpCompatibility1_8> {
     static INSTANCE: VfpCompatibility1_8;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): VfpCompatibility1_8;
-    static values(): (Object | null)[];
+    static values(): VfpCompatibility1_8[];
     private constructor()
     sendPlayerInput(arg0: number, arg1: number, arg2: boolean, arg3: boolean): void;
     sendSignUpdate(arg0: BlockPos, arg1: string[]): void;

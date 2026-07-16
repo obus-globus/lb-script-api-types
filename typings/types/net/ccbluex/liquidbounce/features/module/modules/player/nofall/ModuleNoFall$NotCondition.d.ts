@@ -13,7 +13,7 @@ export class ModuleNoFall$NotCondition extends Enum<ModuleNoFall$NotCondition> i
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleNoFall$NotCondition;
-    static values(): (Object | null)[];
+    static values(): ModuleNoFall$NotCondition[];
     private constructor(tag: string)
     readonly tag: string;
     getAsBoolean(): boolean;

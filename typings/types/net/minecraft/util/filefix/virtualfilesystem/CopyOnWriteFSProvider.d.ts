@@ -36,7 +36,7 @@ export class CopyOnWriteFSProvider extends FileSystemProvider {
     isSameFile(path: Path, path2: Path): boolean;
     move(source: Path, target: Path, ...options: CopyOption[]): void;
     newByteChannel(path: Path, options: OpenOption[], ...attrs: FileAttribute<Object>[]): SeekableByteChannel;
-    // private newChannel<C extends unknown>(path: Path, options: OpenOption[], attrs: FileAttribute<Object>[], channelFactory: (param0: Path, param1: OpenOption[], param2: Object | null) => C): C;
+    // private newChannel<C extends unknown>(path: Path, options: OpenOption[], attrs: FileAttribute<Object>[], channelFactory: (param0: Path, param1: OpenOption[], param2: FileAttribute<Object>[]) => C): C;
     newDirectoryStream(dir: Path, filter: (param0: Path) => boolean): Path[];
     newFileChannel(path: Path, options: OpenOption[], ...attrs: FileAttribute<Object>[]): FileChannel;
     newFileSystem(uri: URI, env: { [key: string]: Object | null }): FileSystem;

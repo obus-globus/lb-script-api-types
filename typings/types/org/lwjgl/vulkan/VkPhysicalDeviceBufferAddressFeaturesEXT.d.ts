@@ -23,28 +23,21 @@ export class VkPhysicalDeviceBufferAddressFeaturesEXT extends VkPhysicalDeviceBu
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceBufferDeviceAddressFeaturesEXT;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceBufferDeviceAddressFeaturesEXT;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceBufferAddressFeaturesEXT;
     static create(paramarg0: number): VkPhysicalDeviceBufferAddressFeaturesEXT;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceBufferDeviceAddressFeaturesEXT;
     static create(paramarg0: number): VkPhysicalDeviceBufferDeviceAddressFeaturesEXT;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceBufferAddressFeaturesEXT;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceBufferDeviceAddressFeaturesEXT;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceBufferAddressFeaturesEXT;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceBufferAddressFeaturesEXT;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceBufferDeviceAddressFeaturesEXT;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceBufferDeviceAddressFeaturesEXT;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nbufferDeviceAddress(paramarg0: number): number;
     static nbufferDeviceAddress(paramarg0: number, paramarg1: number): void;
     static nbufferDeviceAddressCaptureReplay(paramarg0: number): number;
@@ -55,7 +48,6 @@ export class VkPhysicalDeviceBufferAddressFeaturesEXT extends VkPhysicalDeviceBu
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

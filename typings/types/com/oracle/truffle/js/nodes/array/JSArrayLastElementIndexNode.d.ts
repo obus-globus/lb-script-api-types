@@ -11,7 +11,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSArrayLastElementIndexNode extends JSArrayElementIndexNode {
     static create(paramcontext: JSContext): JSArrayLastElementIndexNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     doObject(object: Object, length: number, isArray: boolean, hasPropertyNode: JSHasPropertyNode): number;
     doObjectViaEnumeration(object: JSDynamicObject, length: number, isArray: boolean, hasPropertyNode: JSHasPropertyNode): number;

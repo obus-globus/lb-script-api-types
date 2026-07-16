@@ -7,7 +7,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ReadElementNode$EmptyArrayReadElementCacheNode extends ReadElementNode$ArrayClassGuardCachedArrayReadElementCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doEmptyArray(target: JSDynamicObject, emptyArray: ConstantEmptyArray, index: number, receiver: Object, defaultValue: Object, context: JSContext, needGetProperty: InlinedConditionProfile): Object;
 }

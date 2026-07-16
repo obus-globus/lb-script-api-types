@@ -10,7 +10,7 @@ export class Opcode extends Enum<Opcode> {
     static TEXT: Opcode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Opcode;
-    static values(): (Object | null)[];
+    static values(): Opcode[];
     private constructor()
     name(): "CONTINUOUS" | "TEXT" | "BINARY" | "PING" | "PONG" | "CLOSING";
 }

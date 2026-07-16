@@ -9,7 +9,7 @@ export abstract class SectionedEntityMovementTracker<E extends EntityAccess> ext
     constructor(arg0: WorldSectionBox, arg1: Object)
     // private clazz: Object;
     // private maxChangeTime: number;
-    // private sectionVisible: (Object | null)[];
+    // private sectionVisible: boolean[];
     // private sectionedEntityMovementListeners: SectionedEntityMovementListener[];
     // private sectionsNotListeningTo: EntityMovementTrackerSection[];
     // private sortedSections: EntitySection<E>[];

@@ -13,7 +13,7 @@ export class NoSlowSneakingAAC5$TimingMode extends Enum<NoSlowSneakingAAC5$Timin
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): NoSlowSneakingAAC5$TimingMode;
-    static values(): (Object | null)[];
+    static values(): NoSlowSneakingAAC5$TimingMode[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "PRE_POST" | "PRE_TICK" | "POST_TICK";

@@ -25,7 +25,7 @@ export class ModDiscoverer$ModScanTask extends RecursiveTask<ModCandidateImpl> {
     static inForkJoinPool(): boolean;
     static invokeAll(paramarg0: (Object | null)[]): (Object | null)[];
     static invokeAll(paramarg0: ForkJoinTask<Object>, paramarg1: ForkJoinTask<Object>): void;
-    static invokeAll(paramarg0: Object | null): void;
+    static invokeAll(...paramarg0: ForkJoinTask<Object>[]): void;
     constructor(null_: ModDiscoverer, arg1: Path[], arg2: boolean)
     // private hash: number;
     // private is: ModDiscoverer$RewindableInputStream;

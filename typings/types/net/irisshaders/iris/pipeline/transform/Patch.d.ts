@@ -10,7 +10,7 @@ export class Patch extends Enum<Patch> {
     static VANILLA: Patch;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Patch;
-    static values(): (Object | null)[];
+    static values(): Patch[];
     private constructor()
     name(): "VANILLA" | "DH_TERRAIN" | "DH_GENERIC" | "SODIUM" | "COMPOSITE" | "COMPUTE";
 }

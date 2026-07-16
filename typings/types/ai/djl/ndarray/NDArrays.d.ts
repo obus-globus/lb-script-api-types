@@ -3,10 +3,10 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Number } from '../../../java/lang/Number.d.ts'
 export class NDArrays extends Object {
     static add(paramarg0: NDArray, paramarg1: Number): NDArray;
-    static add(...paramarg0: (Object | null)[]): NDArray;
+    static add(...paramarg0: NDArray[]): NDArray;
     static add(paramarg0: Number, paramarg1: NDArray): NDArray;
     static addi(paramarg0: NDArray, paramarg1: Number): NDArray;
-    static addi(...paramarg0: (Object | null)[]): NDArray;
+    static addi(...paramarg0: NDArray[]): NDArray;
     static addi(paramarg0: Number, paramarg1: NDArray): NDArray;
     static allClose(paramarg0: NDArray, paramarg1: NDArray): boolean;
     static allClose(paramarg0: NDArray, paramarg1: NDArray, paramarg2: number, paramarg3: number, paramarg4: boolean): boolean;
@@ -57,10 +57,10 @@ export class NDArrays extends Object {
     static modi(paramarg0: NDArray, paramarg1: Number): NDArray;
     static modi(paramarg0: Number, paramarg1: NDArray): NDArray;
     static mul(paramarg0: NDArray, paramarg1: Number): NDArray;
-    static mul(...paramarg0: (Object | null)[]): NDArray;
+    static mul(...paramarg0: NDArray[]): NDArray;
     static mul(paramarg0: Number, paramarg1: NDArray): NDArray;
     static muli(paramarg0: NDArray, paramarg1: Number): NDArray;
-    static muli(...paramarg0: (Object | null)[]): NDArray;
+    static muli(...paramarg0: NDArray[]): NDArray;
     static muli(paramarg0: Number, paramarg1: NDArray): NDArray;
     static neq(paramarg0: NDArray, paramarg1: NDArray): NDArray;
     static neq(paramarg0: NDArray, paramarg1: Number): NDArray;

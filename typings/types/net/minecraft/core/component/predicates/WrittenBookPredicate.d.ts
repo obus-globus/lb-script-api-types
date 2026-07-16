@@ -17,7 +17,6 @@ import type { StreamCodec } from '../../../../../net/minecraft/network/codec/Str
 import type { Filterable } from '../../../../../net/minecraft/server/network/Filterable.d.ts'
 import type { WrittenBookContent } from '../../../../../net/minecraft/world/item/component/WrittenBookContent.d.ts'
 export class WrittenBookPredicate extends Record implements SingleComponentItemPredicate<WrittenBookContent> {
-    static CODEC: Codec<Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
     static CODEC: Codec<WrittenBookPredicate>;
     static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<any>>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;

@@ -5,10 +5,11 @@ import type { Rectangle } from '../../java/awt/Rectangle.d.ts'
 import type { ObjectOutputStream } from '../../java/io/ObjectOutputStream.d.ts'
 import type { Locale } from '../../java/util/Locale.d.ts'
 import type { AccessibleContext } from '../../javax/accessibility/AccessibleContext.d.ts'
+import type { Action } from '../../javax/swing/Action.d.ts'
 import type { Document } from '../../javax/swing/text/Document.d.ts'
 import type { JTextComponent } from '../../javax/swing/text/JTextComponent.d.ts'
+import type { JTextComponent$KeyBinding } from '../../javax/swing/text/JTextComponent$KeyBinding.d.ts'
 import type { Keymap } from '../../javax/swing/text/Keymap.d.ts'
-import type { Object } from '../../java/lang/Object.d.ts'
 export class JTextArea extends JTextComponent {
     static ABORT: number;
     static ALLBITS: number;
@@ -34,7 +35,7 @@ export class JTextArea extends JTextComponent {
     static getDefaultLocale(): Locale;
     static getKeymap(paramarg0: string): Keymap;
     static isLightweightComponent(paramarg0: Component): boolean;
-    static loadKeymap(paramarg0: Keymap, paramarg1: (Object | null)[], paramarg2: (Object | null)[]): void;
+    static loadKeymap(paramarg0: Keymap, paramarg1: JTextComponent$KeyBinding[], paramarg2: Action[]): void;
     static removeKeymap(paramarg0: string): Keymap;
     static setDefaultLocale(paramarg0: Locale): void;
     constructor()

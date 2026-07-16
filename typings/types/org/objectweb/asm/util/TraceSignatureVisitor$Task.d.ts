@@ -7,7 +7,7 @@ export class TraceSignatureVisitor$Task extends Enum<TraceSignatureVisitor$Task>
     static END_NON_EMPTY_TYPE_ARGUMENTS: TraceSignatureVisitor$Task;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TraceSignatureVisitor$Task;
-    static values(): (Object | null)[];
+    static values(): TraceSignatureVisitor$Task[];
     private constructor()
     name(): "END_ARRAY_TYPE" | "END_EMPTY_TYPE_ARGUMENTS" | "END_NON_EMPTY_TYPE_ARGUMENTS";
 }

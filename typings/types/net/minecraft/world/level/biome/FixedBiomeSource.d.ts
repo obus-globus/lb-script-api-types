@@ -1,5 +1,4 @@
 import type { Pair } from '../../../../../com/mojang/datafixers/util/Pair.d.ts'
-import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Predicate } from '../../../../../java/util/function/Predicate.d.ts'
 import type { Stream } from '../../../../../java/util/stream/Stream.d.ts'
@@ -12,7 +11,6 @@ import type { BiomeManager$NoiseBiomeSource } from '../../../../../net/minecraft
 import type { BiomeSource } from '../../../../../net/minecraft/world/level/biome/BiomeSource.d.ts'
 import type { Climate$Sampler } from '../../../../../net/minecraft/world/level/biome/Climate$Sampler.d.ts'
 export class FixedBiomeSource extends BiomeSource implements BiomeManager$NoiseBiomeSource {
-    static CODEC: Codec<BiomeSource>;
     static CODEC: MapCodec<FixedBiomeSource>;
     constructor(biome: Holder<Biome>)
     // private biome: Holder<Biome>;

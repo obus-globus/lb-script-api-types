@@ -10,7 +10,7 @@ export class InteractionHand extends Enum<InteractionHand> {
     static STREAM_CODEC: StreamCodec<ByteBuf, InteractionHand>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): InteractionHand;
-    static values(): (Object | null)[];
+    static values(): InteractionHand[];
     private constructor(id: number)
     // private id: number;
     asEquipmentSlot(): EquipmentSlot;

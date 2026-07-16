@@ -12,8 +12,8 @@ export class ObjectIterators extends Object {
     static any(paramarg0: Iterator<Object>, paramarg1: (param0: Object) => boolean): boolean;
     static asObjectIterator(paramarg0: Iterator<Object>): ObjectIterator<Object>;
     static asObjectIterator(paramarg0: ListIterator<Object>): ObjectListIterator<Object>;
-    static concat(paramarg0: Object | null): ObjectIterator<Object>;
-    static concat(paramarg0: Object | null, paramarg1: number, paramarg2: number): ObjectIterator<Object>;
+    static concat(...paramarg0: ObjectIterator<Object>[]): ObjectIterator<Object>;
+    static concat(paramarg0: ObjectIterator<Object>[], paramarg1: number, paramarg2: number): ObjectIterator<Object>;
     static emptyIterator(): ObjectIterator<Object>;
     static indexOf(paramarg0: Iterator<Object>, paramarg1: (param0: Object) => boolean): number;
     static pour(paramarg0: Iterator<Object>, paramarg1: Object[]): number;
@@ -24,17 +24,17 @@ export class ObjectIterators extends Object {
     static unmodifiable(paramarg0: ObjectBidirectionalIterator<Object>): ObjectBidirectionalIterator<Object>;
     static unmodifiable(paramarg0: ObjectIterator<Object>): ObjectIterator<Object>;
     static unmodifiable(paramarg0: ObjectListIterator<Object>): ObjectListIterator<Object>;
-    static unwrap(paramarg0: Iterator<Object>): Object | null;
-    static unwrap(paramarg0: Iterator<Object>, paramarg1: number): Object | null;
-    static unwrap(paramarg0: Iterator<Object>, paramarg1: Object | null): number;
-    static unwrap(paramarg0: Iterator<Object>, paramarg1: Object | null, paramarg2: number, paramarg3: number): number;
+    static unwrap(paramarg0: Iterator<Object>): (Object | null)[];
+    static unwrap(paramarg0: Iterator<Object>, paramarg1: number): (Object | null)[];
+    static unwrap(paramarg0: Iterator<Object>, paramarg1: (Object | null)[]): number;
+    static unwrap(paramarg0: Iterator<Object>, paramarg1: (Object | null)[], paramarg2: number, paramarg3: number): number;
     static unwrap(paramarg0: Iterator<Object>, paramarg1: Object[], paramarg2: number): number;
-    static unwrap(paramarg0: Iterator<Object>, paramarg1: Object | null): number;
-    static unwrap(paramarg0: Iterator<Object>, paramarg1: Object | null, paramarg2: number, paramarg3: number): number;
+    static unwrap(paramarg0: Iterator<Object>, paramarg1: (Object | null)[][]): number;
+    static unwrap(paramarg0: Iterator<Object>, paramarg1: (Object | null)[][], paramarg2: number, paramarg3: number): number;
     static unwrap(paramarg0: Iterator<Object>, paramarg1: Object[]): number;
-    static unwrapBig(paramarg0: Iterator<Object>): Object | null;
-    static unwrapBig(paramarg0: Iterator<Object>, paramarg1: number): Object | null;
-    static wrap(paramarg0: Object | null): ObjectListIterator<Object>;
-    static wrap(paramarg0: Object | null, paramarg1: number, paramarg2: number): ObjectListIterator<Object>;
+    static unwrapBig(paramarg0: Iterator<Object>): (Object | null)[][];
+    static unwrapBig(paramarg0: Iterator<Object>, paramarg1: number): (Object | null)[][];
+    static wrap(paramarg0: (Object | null)[]): ObjectListIterator<Object>;
+    static wrap(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): ObjectListIterator<Object>;
     private constructor()
 }

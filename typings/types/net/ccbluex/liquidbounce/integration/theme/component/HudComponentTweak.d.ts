@@ -25,7 +25,7 @@ export class HudComponentTweak extends Enum<HudComponentTweak> implements Tagged
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HudComponentTweak;
-    static values(): (Object | null)[];
+    static values(): HudComponentTweak[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "TWEAK_HOTBAR" | "DISABLE_CROSSHAIR" | "DISABLE_SCOREBOARD" | "DISABLE_STATUS_BAR" | "DISABLE_EXP_BAR" | "DISABLE_HELD_ITEM_TOOL_TIP" | "DISABLE_OVERLAY_MESSAGE" | "DISABLE_STATUS_EFFECT_OVERLAY" | "DISABLE_LOCATOR_BAR" | "DISABLE_SUBTITLE_OVERLAY";

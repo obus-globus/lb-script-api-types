@@ -32,28 +32,21 @@ export class VkRenderingAttachmentInfoKHR extends VkRenderingAttachmentInfo {
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkRenderingAttachmentInfoKHR;
     static calloc(paramarg0: MemoryStack): VkRenderingAttachmentInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkRenderingAttachmentInfo;
     static create(paramarg0: number): VkRenderingAttachmentInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkRenderingAttachmentInfoKHR;
     static create(paramarg0: number): VkRenderingAttachmentInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkRenderingAttachmentInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkRenderingAttachmentInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkRenderingAttachmentInfo;
     static malloc(paramarg0: MemoryStack): VkRenderingAttachmentInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkRenderingAttachmentInfoKHR;
     static malloc(paramarg0: MemoryStack): VkRenderingAttachmentInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nclearValue(paramarg0: number): VkClearValue;
     static nclearValue(paramarg0: number, paramarg1: VkClearValue): void;
     static nimageLayout(paramarg0: number): number;
@@ -74,7 +67,6 @@ export class VkRenderingAttachmentInfoKHR extends VkRenderingAttachmentInfo {
     static nsType(paramarg0: number, paramarg1: number): void;
     static nstoreOp(paramarg0: number): number;
     static nstoreOp(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

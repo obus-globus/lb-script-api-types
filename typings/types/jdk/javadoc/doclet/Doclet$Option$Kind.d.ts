@@ -7,7 +7,7 @@ export class Doclet$Option$Kind extends Enum<Doclet$Option$Kind> {
     static STANDARD: Doclet$Option$Kind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Doclet$Option$Kind;
-    static values(): (Object | null)[];
+    static values(): Doclet$Option$Kind[];
     private constructor()
     name(): "EXTENDED" | "STANDARD" | "OTHER";
 }

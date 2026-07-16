@@ -7,7 +7,6 @@ import type { ImportValueNode } from '../../../../../../com/oracle/truffle/js/no
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSFunctionCallNode$ForeignCallNode extends JSFunctionCallNode$AbstractCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(expectedArgumentCount: number)
     // private exportArgumentsNode: ExportArgumentsNode;
     // private functionClassProfile: ValueProfile;

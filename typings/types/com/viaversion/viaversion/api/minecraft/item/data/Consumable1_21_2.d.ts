@@ -10,7 +10,7 @@ import type { Rewritable } from '../../../../../../../com/viaversion/viaversion/
 import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class Consumable1_21_2 extends Record implements Copyable, Rewritable {
-    static EFFECT_TYPES: Object | null;
+    static EFFECT_TYPES: Type<Object>[];
     static TYPE: Type<Consumable1_21_2>;
     constructor(consumeSeconds: number, animationType: number, sound: Holder<SoundEvent>, hasConsumeParticles: boolean, consumeEffects: Consumable1_21_2$ConsumeEffect<Object>[])
     // private animationType: number;

@@ -7,7 +7,7 @@ export class DtoaMode extends Enum<DtoaMode> {
     static SHORTEST: DtoaMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): DtoaMode;
-    static values(): (Object | null)[];
+    static values(): DtoaMode[];
     private constructor()
     name(): "SHORTEST" | "FIXED" | "PRECISION";
 }

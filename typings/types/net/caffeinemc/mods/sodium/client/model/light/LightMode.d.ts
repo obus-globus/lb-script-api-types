@@ -6,7 +6,7 @@ export class LightMode extends Enum<LightMode> {
     static SMOOTH: LightMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LightMode;
-    static values(): (Object | null)[];
+    static values(): LightMode[];
     private constructor()
     name(): "SMOOTH" | "FLAT";
 }

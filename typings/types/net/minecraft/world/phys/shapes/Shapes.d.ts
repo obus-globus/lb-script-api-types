@@ -26,7 +26,7 @@ export class Shapes extends Object {
     static joinUnoptimized(paramfirst: VoxelShape, paramsecond: VoxelShape, paramop: BooleanOp): VoxelShape;
     static mergedFaceOccludes(paramshape: VoxelShape, paramoccluder: VoxelShape, paramdirection: Direction): boolean;
     static or(paramfirst: VoxelShape, paramsecond: VoxelShape): VoxelShape;
-    static or(paramfirst: VoxelShape, ...paramtail: (Object | null)[]): VoxelShape;
+    static or(paramfirst: VoxelShape, ...paramtail: VoxelShape[]): VoxelShape;
     static rotate(paramshape: VoxelShape, paramrotation: OctahedralGroup): VoxelShape;
     static rotate(paramshape: VoxelShape, paramrotation: OctahedralGroup, paramrotationPoint: Vec3): VoxelShape;
     static rotateAll(paramnorth: VoxelShape): Map<Direction, VoxelShape>;

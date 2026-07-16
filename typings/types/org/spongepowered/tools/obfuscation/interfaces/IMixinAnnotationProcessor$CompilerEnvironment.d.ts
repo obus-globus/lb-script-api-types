@@ -9,7 +9,7 @@ export class IMixinAnnotationProcessor$CompilerEnvironment extends Enum<IMixinAn
     static detect(paramarg0: ProcessingEnvironment): IMixinAnnotationProcessor$CompilerEnvironment;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): IMixinAnnotationProcessor$CompilerEnvironment;
-    static values(): (Object | null)[];
+    static values(): IMixinAnnotationProcessor$CompilerEnvironment[];
     constructor(arg2: boolean, arg3: string, arg4: any)
     readonly friendlyName: string;
     // private isDevelopmentEnvironment: boolean;

@@ -21,35 +21,27 @@ export class VkPhysicalDeviceTextureCompressionASTCHDRFeaturesEXT extends VkPhys
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceTextureCompressionASTCHDRFeaturesEXT;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceTextureCompressionASTCHDRFeaturesEXT;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceTextureCompressionASTCHDRFeatures;
     static create(paramarg0: number): VkPhysicalDeviceTextureCompressionASTCHDRFeatures;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceTextureCompressionASTCHDRFeaturesEXT;
     static create(paramarg0: number): VkPhysicalDeviceTextureCompressionASTCHDRFeaturesEXT;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceTextureCompressionASTCHDRFeatures;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceTextureCompressionASTCHDRFeaturesEXT;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceTextureCompressionASTCHDRFeatures;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceTextureCompressionASTCHDRFeatures;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceTextureCompressionASTCHDRFeaturesEXT;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceTextureCompressionASTCHDRFeaturesEXT;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
     static ntextureCompressionASTC_HDR(paramarg0: number): number;
     static ntextureCompressionASTC_HDR(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

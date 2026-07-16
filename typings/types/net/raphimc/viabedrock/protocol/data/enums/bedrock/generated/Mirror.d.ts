@@ -12,7 +12,7 @@ export class Mirror extends Enum<Mirror> {
     static getByValue(paramarg0: number, paramarg1: Mirror): Mirror;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Mirror;
-    static values(): (Object | null)[];
+    static values(): Mirror[];
     private constructor(arg2: number)
     private constructor(arg2: Mirror)
     readonly value: number;

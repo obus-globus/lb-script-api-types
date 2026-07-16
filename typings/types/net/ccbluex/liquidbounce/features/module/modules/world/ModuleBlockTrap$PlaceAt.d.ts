@@ -12,7 +12,7 @@ export class ModuleBlockTrap$PlaceAt extends Enum<ModuleBlockTrap$PlaceAt> imple
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleBlockTrap$PlaceAt;
-    static values(): (Object | null)[];
+    static values(): ModuleBlockTrap$PlaceAt[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "LEGS" | "FLOOR";

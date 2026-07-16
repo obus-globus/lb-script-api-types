@@ -13,7 +13,7 @@ export class ControlScheme_Scheme extends Enum<ControlScheme_Scheme> {
     static getByValue(paramarg0: number, paramarg1: ControlScheme_Scheme): ControlScheme_Scheme;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ControlScheme_Scheme;
-    static values(): (Object | null)[];
+    static values(): ControlScheme_Scheme[];
     private constructor(arg2: number)
     private constructor(arg2: ControlScheme_Scheme)
     readonly value: number;

@@ -12,7 +12,7 @@ export class StructureTemplateRequestOperation extends Enum<StructureTemplateReq
     static getByValue(paramarg0: number, paramarg1: StructureTemplateRequestOperation): StructureTemplateRequestOperation;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): StructureTemplateRequestOperation;
-    static values(): (Object | null)[];
+    static values(): StructureTemplateRequestOperation[];
     private constructor(arg2: number)
     private constructor(arg2: StructureTemplateRequestOperation)
     readonly value: number;

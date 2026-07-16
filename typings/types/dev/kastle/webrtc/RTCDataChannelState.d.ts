@@ -8,7 +8,7 @@ export class RTCDataChannelState extends Enum<RTCDataChannelState> {
     static OPEN: RTCDataChannelState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RTCDataChannelState;
-    static values(): (Object | null)[];
+    static values(): RTCDataChannelState[];
     private constructor()
     name(): "CONNECTING" | "OPEN" | "CLOSING" | "CLOSED";
 }

@@ -21,7 +21,6 @@ export class DyeRecipe extends NormalCraftingRecipe {
     static MAP_CODEC: MapCodec<DyeRecipe>;
     static SERIALIZER: RecipeSerializer<DyeRecipe>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DyeRecipe>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<any>>;
     constructor(commonInfo: Recipe$CommonInfo, bookInfo: CraftingRecipe$CraftingBookInfo, target: Ingredient, dye: Ingredient, result: ItemStackTemplate)
     // private dye: Ingredient;
     // private result: ItemStackTemplate;

@@ -21,35 +21,27 @@ export class VkPhysicalDeviceShaderDrawParameterFeatures extends VkPhysicalDevic
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceShaderDrawParametersFeatures;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceShaderDrawParametersFeatures;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceShaderDrawParameterFeatures;
     static create(paramarg0: number): VkPhysicalDeviceShaderDrawParameterFeatures;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceShaderDrawParametersFeatures;
     static create(paramarg0: number): VkPhysicalDeviceShaderDrawParametersFeatures;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceShaderDrawParameterFeatures;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceShaderDrawParametersFeatures;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceShaderDrawParameterFeatures;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceShaderDrawParameterFeatures;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceShaderDrawParametersFeatures;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceShaderDrawParametersFeatures;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
     static nshaderDrawParameters(paramarg0: number): number;
     static nshaderDrawParameters(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

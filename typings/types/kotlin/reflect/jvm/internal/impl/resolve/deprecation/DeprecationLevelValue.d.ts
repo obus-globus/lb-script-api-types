@@ -7,7 +7,7 @@ export class DeprecationLevelValue extends Enum<DeprecationLevelValue> {
     static WARNING: DeprecationLevelValue;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DeprecationLevelValue;
-    static values(): (Object | null)[];
+    static values(): DeprecationLevelValue[];
     private constructor()
     name(): "WARNING" | "ERROR" | "HIDDEN";
 }

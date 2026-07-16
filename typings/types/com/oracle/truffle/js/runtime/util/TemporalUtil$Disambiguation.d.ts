@@ -8,7 +8,7 @@ export class TemporalUtil$Disambiguation extends Enum<TemporalUtil$Disambiguatio
     static REJECT: TemporalUtil$Disambiguation;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TemporalUtil$Disambiguation;
-    static values(): (Object | null)[];
+    static values(): TemporalUtil$Disambiguation[];
     private constructor()
     name(): "EARLIER" | "LATER" | "COMPATIBLE" | "REJECT";
 }

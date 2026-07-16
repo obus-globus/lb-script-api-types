@@ -10,7 +10,7 @@ export class RelativeDateTimeFormatter$Direction extends Enum<RelativeDateTimeFo
     static THIS: RelativeDateTimeFormatter$Direction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RelativeDateTimeFormatter$Direction;
-    static values(): (Object | null)[];
+    static values(): RelativeDateTimeFormatter$Direction[];
     private constructor()
     name(): "LAST_2" | "LAST" | "THIS" | "NEXT" | "NEXT_2" | "PLAIN";
 }

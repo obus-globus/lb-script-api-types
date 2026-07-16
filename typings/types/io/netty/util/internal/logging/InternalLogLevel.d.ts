@@ -9,7 +9,7 @@ export class InternalLogLevel extends Enum<InternalLogLevel> {
     static WARN: InternalLogLevel;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): InternalLogLevel;
-    static values(): (Object | null)[];
+    static values(): InternalLogLevel[];
     private constructor()
     name(): "TRACE" | "DEBUG" | "INFO" | "WARN" | "ERROR";
 }

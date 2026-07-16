@@ -8,7 +8,7 @@ export class IrisShadowProgram extends Enum<IrisShadowProgram> {
     static SHADOW_TRANSLUCENT: IrisShadowProgram;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): IrisShadowProgram;
-    static values(): (Object | null)[];
+    static values(): IrisShadowProgram[];
     private constructor()
     name(): "SHADOW" | "SHADOW_TRANSLUCENT" | "SHADOW_ENTITIES" | "SHADOW_BLOCK";
 }

@@ -10,7 +10,7 @@ export class Base64$PaddingOption extends Enum<Base64$PaddingOption> implements 
     static getEntries(): Base64$PaddingOption[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Base64$PaddingOption;
-    static values(): (Object | null)[];
+    static values(): Base64$PaddingOption[];
     private constructor()
     name(): "PRESENT" | "ABSENT" | "PRESENT_OPTIONAL" | "ABSENT_OPTIONAL";
 }

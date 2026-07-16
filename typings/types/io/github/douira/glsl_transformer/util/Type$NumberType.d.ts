@@ -10,7 +10,7 @@ export class Type$NumberType extends Enum<Type$NumberType> {
     static UNSIGNED_INTEGER: Type$NumberType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Type$NumberType;
-    static values(): (Object | null)[];
+    static values(): Type$NumberType[];
     private constructor(arg2: number, ...arg3: number[])
     readonly maxBitDepth: number;
     readonly maxDimensions: number[];

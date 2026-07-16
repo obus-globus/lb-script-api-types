@@ -17,7 +17,7 @@ export class ModuleFakeLag$FlushOn extends Enum<ModuleFakeLag$FlushOn> implement
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleFakeLag$FlushOn;
-    static values(): (Object | null)[];
+    static values(): ModuleFakeLag$FlushOn[];
     private constructor(tag: string, testPacket: (param0: Packet<any> | null) => boolean)
     readonly tag: string;
     // private testPacket: (param0: Packet<any> | null) => boolean;

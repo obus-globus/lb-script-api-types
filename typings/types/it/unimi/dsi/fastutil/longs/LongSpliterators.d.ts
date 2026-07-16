@@ -23,8 +23,8 @@ export class LongSpliterators extends Object {
     static asSpliteratorFromSorted(paramarg0: LongIterator, paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => number): LongSpliterator;
     static asSpliteratorFromSortedUnknownSize(paramarg0: LongIterator, paramarg1: number, paramarg2: (param0: number, param1: number) => number): LongSpliterator;
     static asSpliteratorUnknownSize(paramarg0: LongIterator, paramarg1: number): LongSpliterator;
-    static concat(...paramarg0: (Object | null)[]): LongSpliterator;
-    static concat(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): LongSpliterator;
+    static concat(...paramarg0: LongSpliterator[]): LongSpliterator;
+    static concat(paramarg0: LongSpliterator[], paramarg1: number, paramarg2: number): LongSpliterator;
     static fromTo(paramarg0: number, paramarg1: number): LongSpliterator;
     static onEachMatching(paramarg0: LongSpliterator, paramarg1: (param0: number) => boolean, paramarg2: (param0: number) => void): void;
     static singleton(paramarg0: number): LongSpliterator;

@@ -6,7 +6,7 @@ export class TemporalUtil$MatchBehaviour extends Enum<TemporalUtil$MatchBehaviou
     static MATCH_MINUTES: TemporalUtil$MatchBehaviour;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TemporalUtil$MatchBehaviour;
-    static values(): (Object | null)[];
+    static values(): TemporalUtil$MatchBehaviour[];
     private constructor()
     name(): "MATCH_EXACTLY" | "MATCH_MINUTES";
 }

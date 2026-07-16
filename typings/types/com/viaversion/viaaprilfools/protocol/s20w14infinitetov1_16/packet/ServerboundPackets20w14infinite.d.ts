@@ -53,7 +53,7 @@ export class ServerboundPackets20w14infinite extends Enum<ServerboundPackets20w1
     static USE_ITEM_ON: ServerboundPackets20w14infinite;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ServerboundPackets20w14infinite;
-    static values(): (Object | null)[];
+    static values(): ServerboundPackets20w14infinite[];
     private constructor()
     direction(): Direction;
     getId(): number;

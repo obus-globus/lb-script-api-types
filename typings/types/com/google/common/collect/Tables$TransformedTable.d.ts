@@ -6,9 +6,9 @@ import type { Spliterator } from '../../../../java/util/Spliterator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class Tables$TransformedTable<R extends unknown, C extends unknown, V1 extends unknown, V2 extends unknown> extends AbstractTable<R, C, V2> {
-    constructor(fromTable: Table<R, C, V1>, function_: (param0: Object) => boolean)
+    constructor(fromTable: Table<R, C, V1>, function_: (param0: V1) => V2)
     // private fromTable: Table<R, C, V1>;
-    // private function: (param0: Object) => boolean;
+    // private function: (param0: V1) => V2;
     applyToValue(cell: Table$Cell<R, C, V1>): Table$Cell<R, C, V2>;
     cellIterator(): Iterator<Table$Cell<R, C, V2>>;
     cellSpliterator(): Spliterator<Table$Cell<R, C, V2>>;

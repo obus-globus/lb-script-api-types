@@ -9,7 +9,7 @@ export class PushReaction extends Enum<PushReaction> {
     static PUSH_ONLY: PushReaction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PushReaction;
-    static values(): (Object | null)[];
+    static values(): PushReaction[];
     private constructor()
     name(): "NORMAL" | "DESTROY" | "BLOCK" | "IGNORE" | "PUSH_ONLY";
 }

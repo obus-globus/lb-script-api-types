@@ -6,7 +6,6 @@ import type { JavaScriptBaseNode } from '../../../../../com/oracle/truffle/js/no
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class StringPrototypeBuiltins$JSStringReplaceES5Node$Replacer<T extends unknown> extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(parent: StringPrototypeBuiltins$JSStringReplaceES5Node)
     // private parentNode: StringPrototypeBuiltins$JSStringReplaceES5Node;
     appendReplacementRegex(sb: TruffleStringBuilderUTF16, input: TruffleString, result: Object, groupCount: number, replaceValue: T, parent: StringPrototypeBuiltins$JSStringReplaceES5Node, tRegexCompiledRegex: Object, matchStart: number, matchEnd: number): void;

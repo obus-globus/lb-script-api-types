@@ -14,7 +14,7 @@ export class MinecraftEventing_TeleportationCause extends Enum<MinecraftEventing
     static getByValue(paramarg0: number, paramarg1: MinecraftEventing_TeleportationCause): MinecraftEventing_TeleportationCause;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MinecraftEventing_TeleportationCause;
-    static values(): (Object | null)[];
+    static values(): MinecraftEventing_TeleportationCause[];
     private constructor(arg2: number)
     private constructor(arg2: MinecraftEventing_TeleportationCause)
     readonly value: number;

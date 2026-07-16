@@ -50,7 +50,7 @@ export class Enchant_Type extends Enum<Enchant_Type> {
     static getByValue(paramarg0: number, paramarg1: Enchant_Type): Enchant_Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Enchant_Type;
-    static values(): (Object | null)[];
+    static values(): Enchant_Type[];
     private constructor(arg2: number)
     private constructor(arg2: Enchant_Type)
     readonly value: number;

@@ -26,7 +26,6 @@ export class GlobalConfig extends Object {
     static clear(): void;
     static get(paramarg0: string, paramarg1: boolean): boolean;
     static get(paramarg0: string, paramarg1: number): number;
-    static get(paramarg0: string, paramarg1: number): number;
     static get(paramarg0: string): string;
     static get(paramarg0: string, paramarg1: string): string;
     static load(paramarg0: { [key: string]: any }): void;

@@ -8,7 +8,7 @@ import type { TriggeringPolicy } from '../../../../../../../org/apache/logging/l
 export class CompositeTriggeringPolicy extends AbstractTriggeringPolicy {
     static DEFAULT_STOP_TIMEOUT: number;
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
-    static createPolicy(...paramtriggeringPolicy: (Object | null)[]): CompositeTriggeringPolicy;
+    static createPolicy(...paramtriggeringPolicy: TriggeringPolicy[]): CompositeTriggeringPolicy;
     private constructor(...triggeringPolicies: TriggeringPolicy[])
     readonly triggeringPolicies: TriggeringPolicy[];
     getTriggeringPolicies(): TriggeringPolicy[];

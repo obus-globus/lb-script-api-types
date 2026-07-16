@@ -9,7 +9,7 @@ export class ProtoBuf$VersionRequirement$VersionKind extends Enum<ProtoBuf$Versi
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: number): ProtoBuf$VersionRequirement$VersionKind;
     static valueOf(paramarg0: string): ProtoBuf$VersionRequirement$VersionKind;
-    static values(): (Object | null)[];
+    static values(): ProtoBuf$VersionRequirement$VersionKind[];
     private constructor(arg2: number, arg3: number)
     // private value: number;
     getNumber(): number;

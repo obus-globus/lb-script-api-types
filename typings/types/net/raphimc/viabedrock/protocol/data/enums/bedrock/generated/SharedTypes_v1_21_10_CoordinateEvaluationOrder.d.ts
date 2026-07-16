@@ -14,7 +14,7 @@ export class SharedTypes_v1_21_10_CoordinateEvaluationOrder extends Enum<SharedT
     static getByValue(paramarg0: number, paramarg1: SharedTypes_v1_21_10_CoordinateEvaluationOrder): SharedTypes_v1_21_10_CoordinateEvaluationOrder;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SharedTypes_v1_21_10_CoordinateEvaluationOrder;
-    static values(): (Object | null)[];
+    static values(): SharedTypes_v1_21_10_CoordinateEvaluationOrder[];
     private constructor(arg2: number)
     private constructor(arg2: SharedTypes_v1_21_10_CoordinateEvaluationOrder)
     readonly value: number;

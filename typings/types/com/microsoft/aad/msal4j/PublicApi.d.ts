@@ -17,7 +17,7 @@ export class PublicApi extends Enum<PublicApi> {
     static REMOVE_ACCOUNTS: PublicApi;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PublicApi;
-    static values(): (Object | null)[];
+    static values(): PublicApi[];
     private constructor(arg2: number)
     // private apiId: number;
     getApiId(): number;

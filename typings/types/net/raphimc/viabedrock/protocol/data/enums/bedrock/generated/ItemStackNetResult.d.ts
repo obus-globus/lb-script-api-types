@@ -76,7 +76,7 @@ export class ItemStackNetResult extends Enum<ItemStackNetResult> {
     static getByValue(paramarg0: number, paramarg1: ItemStackNetResult): ItemStackNetResult;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ItemStackNetResult;
-    static values(): (Object | null)[];
+    static values(): ItemStackNetResult[];
     private constructor(arg2: number)
     private constructor(arg2: ItemStackNetResult)
     readonly value: number;

@@ -17,7 +17,7 @@ export class GlobalBuiltins$GlobalNashornScriptingBuiltins$GlobalNashornScriptin
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): GlobalBuiltins$GlobalNashornScriptingBuiltins$GlobalNashornScripting;
-    static values(): (Object | null)[];
+    static values(): GlobalBuiltins$GlobalNashornScriptingBuiltins$GlobalNashornScripting[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

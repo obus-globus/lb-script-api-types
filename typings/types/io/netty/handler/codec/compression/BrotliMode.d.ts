@@ -7,7 +7,7 @@ export class BrotliMode extends Enum<BrotliMode> {
     static TEXT: BrotliMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BrotliMode;
-    static values(): (Object | null)[];
+    static values(): BrotliMode[];
     private constructor()
     name(): "GENERIC" | "TEXT" | "FONT";
 }

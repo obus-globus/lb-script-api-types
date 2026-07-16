@@ -10,7 +10,7 @@ export class CameraShakeType extends Enum<CameraShakeType> {
     static getByValue(paramarg0: number, paramarg1: CameraShakeType): CameraShakeType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CameraShakeType;
-    static values(): (Object | null)[];
+    static values(): CameraShakeType[];
     private constructor(arg2: number)
     private constructor(arg2: CameraShakeType)
     readonly value: number;

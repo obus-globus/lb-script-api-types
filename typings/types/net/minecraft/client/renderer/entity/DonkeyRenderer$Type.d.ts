@@ -10,7 +10,7 @@ export class DonkeyRenderer$Type extends Enum<DonkeyRenderer$Type> {
     static MULE_BABY: DonkeyRenderer$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): DonkeyRenderer$Type;
-    static values(): (Object | null)[];
+    static values(): DonkeyRenderer$Type[];
     private constructor(texture: Identifier, model: ModelLayerLocation)
     // private model: ModelLayerLocation;
     // private texture: Identifier;

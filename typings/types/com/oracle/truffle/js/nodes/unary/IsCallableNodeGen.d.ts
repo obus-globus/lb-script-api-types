@@ -7,7 +7,6 @@ export class IsCallableNodeGen extends IsCallableNode {
     static create(): IsCallableNode;
     static getUncached(): IsCallableNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private jSFunctionShape_cache: IsCallableNodeGen$JSFunctionShapeData;
     // private state_0_: number;

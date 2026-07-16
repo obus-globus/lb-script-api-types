@@ -13,7 +13,7 @@ export class SocketUtils extends Object {
     static accept(paramarg0: ServerSocketChannel): SocketChannel;
     static addressByName(paramarg0: string): InetAddress;
     static addressesFromNetworkInterface(paramarg0: NetworkInterface): Enumeration<InetAddress>;
-    static allAddressesByName(paramarg0: string): (Object | null)[];
+    static allAddressesByName(paramarg0: string): InetAddress[];
     static bind(paramarg0: Socket, paramarg1: SocketAddress): void;
     static bind(paramarg0: DatagramChannel, paramarg1: SocketAddress): void;
     static bind(paramarg0: SocketChannel, paramarg1: SocketAddress): void;

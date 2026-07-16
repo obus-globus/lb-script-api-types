@@ -40,7 +40,7 @@ export class LegacyTelemetryEventPacketPayload_Type extends Enum<LegacyTelemetry
     static getByValue(paramarg0: number, paramarg1: LegacyTelemetryEventPacketPayload_Type): LegacyTelemetryEventPacketPayload_Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LegacyTelemetryEventPacketPayload_Type;
-    static values(): (Object | null)[];
+    static values(): LegacyTelemetryEventPacketPayload_Type[];
     private constructor(arg2: number)
     private constructor(arg2: LegacyTelemetryEventPacketPayload_Type)
     readonly value: number;

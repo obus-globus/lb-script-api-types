@@ -21,35 +21,27 @@ export class VkPhysicalDeviceShaderFloatControls2FeaturesKHR extends VkPhysicalD
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceShaderFloatControls2FeaturesKHR;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceShaderFloatControls2FeaturesKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceShaderFloatControls2Features;
     static create(paramarg0: number): VkPhysicalDeviceShaderFloatControls2Features;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceShaderFloatControls2FeaturesKHR;
     static create(paramarg0: number): VkPhysicalDeviceShaderFloatControls2FeaturesKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceShaderFloatControls2Features;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceShaderFloatControls2FeaturesKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceShaderFloatControls2Features;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceShaderFloatControls2Features;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceShaderFloatControls2FeaturesKHR;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceShaderFloatControls2FeaturesKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
     static nshaderFloatControls2(paramarg0: number): number;
     static nshaderFloatControls2(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

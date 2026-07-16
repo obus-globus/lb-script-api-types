@@ -9,7 +9,7 @@ export class BossStyle extends Enum<BossStyle> {
     static SOLID: BossStyle;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BossStyle;
-    static values(): (Object | null)[];
+    static values(): BossStyle[];
     private constructor(arg2: number)
     readonly id: number;
     getId(): number;

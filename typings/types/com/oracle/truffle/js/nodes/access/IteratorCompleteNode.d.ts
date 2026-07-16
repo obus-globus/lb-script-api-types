@@ -7,7 +7,6 @@ export abstract class IteratorCompleteNode extends JavaScriptBaseNode {
     static create(): IteratorCompleteNode;
     static getUncached(): IteratorCompleteNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     createGetDoneNode(): PropertyGetNode;
     execute(iterResult: Object): boolean;

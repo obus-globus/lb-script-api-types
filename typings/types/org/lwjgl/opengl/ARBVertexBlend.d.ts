@@ -49,13 +49,11 @@ export class ARBVertexBlend extends Object {
     static GL_WEIGHT_SUM_UNITY_ARB: number;
     static glVertexBlendARB(paramarg0: number): void;
     static glWeightPointerARB(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number[]): void;
-    static glWeightPointerARB(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number[]): void;
     static glWeightPointerARB(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: ByteBuffer): void;
     static glWeightPointerARB(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: FloatBuffer): void;
     static glWeightPointerARB(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: IntBuffer): void;
     static glWeightPointerARB(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: ShortBuffer): void;
     static glWeightPointerARB(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): void;
-    static glWeightPointerARB(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number[]): void;
     static glWeightbvARB(paramarg0: ByteBuffer): void;
     static glWeightdvARB(paramarg0: number[]): void;
     static glWeightdvARB(paramarg0: DoubleBuffer): void;

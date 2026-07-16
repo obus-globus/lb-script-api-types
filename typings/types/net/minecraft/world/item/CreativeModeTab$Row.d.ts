@@ -6,7 +6,7 @@ export class CreativeModeTab$Row extends Enum<CreativeModeTab$Row> {
     static TOP: CreativeModeTab$Row;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CreativeModeTab$Row;
-    static values(): (Object | null)[];
+    static values(): CreativeModeTab$Row[];
     private constructor()
     name(): "TOP" | "BOTTOM";
 }

@@ -16,6 +16,7 @@ export class ServerObserver extends Object implements EventListener {
     static INSTANCE: ServerObserver;
     // private AVERAGE_OF: number;
     // private chronometer: Chronometer;
+    readonly debugDisplayName: Component;
     // private disconnectHandler: EventHook<DisconnectEvent>;
     readonly formattedPluginList: Component[] | null;
     // private handleServerConnect: EventHook<ServerConnectEvent>;
@@ -27,6 +28,7 @@ export class ServerObserver extends Object implements EventListener {
     // private packetObserver: EventHook<PacketEvent>;
     readonly payloadChannels: Identifier[];
     readonly plugins: string[] | null;
+    readonly running: boolean;
     readonly serverAddress: ServerAddress | null;
     readonly serverId: string | null;
     readonly serverInfo: ServerData | null;

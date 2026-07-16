@@ -5,10 +5,8 @@ import type { X509TrustManager } from '../../../javax/net/ssl/X509TrustManager.d
 import type { Protocol } from '../../../okhttp3/Protocol.d.ts'
 import type { OpenJSSEPlatform$Companion } from '../../../okhttp3/internal/platform/OpenJSSEPlatform$Companion.d.ts'
 import type { Platform } from '../../../okhttp3/internal/platform/Platform.d.ts'
-import type { Platform$Companion } from '../../../okhttp3/internal/platform/Platform$Companion.d.ts'
 export class OpenJSSEPlatform extends Platform {
     static Companion: OpenJSSEPlatform$Companion;
-    static Companion: Platform$Companion;
     static INFO: number;
     static WARN: number;
     static get(): Platform;

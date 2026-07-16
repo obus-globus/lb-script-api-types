@@ -1,8 +1,8 @@
 import type { Frame } from '../../../../../../../java/awt/Frame.d.ts'
+import type { Window } from '../../../../../../../java/awt/Window.d.ts'
 import type { WindowEvent } from '../../../../../../../java/awt/event/WindowEvent.d.ts'
 import type { WindowListener } from '../../../../../../../java/awt/event/WindowListener.d.ts'
 import type { ImageIcon } from '../../../../../../../javax/swing/ImageIcon.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { AppletLauncher } from '../../../../../../../net/fabricmc/loader/impl/game/minecraft/applet/AppletLauncher.d.ts'
 export class AppletFrame extends Frame implements WindowListener {
     static ABORT: number;
@@ -37,9 +37,9 @@ export class AppletFrame extends Frame implements WindowListener {
     static WAIT_CURSOR: number;
     static WIDTH: number;
     static W_RESIZE_CURSOR: number;
-    static getFrames(): (Object | null)[];
-    static getOwnerlessWindows(): (Object | null)[];
-    static getWindows(): (Object | null)[];
+    static getFrames(): Frame[];
+    static getOwnerlessWindows(): Window[];
+    static getWindows(): Window[];
     constructor(arg0: string, arg1: ImageIcon)
     // private applet: AppletLauncher;
     launch(arg0: string[]): void;

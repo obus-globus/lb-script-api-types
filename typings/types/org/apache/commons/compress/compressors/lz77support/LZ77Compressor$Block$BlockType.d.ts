@@ -7,7 +7,7 @@ export class LZ77Compressor$Block$BlockType extends Enum<LZ77Compressor$Block$Bl
     static LITERAL: LZ77Compressor$Block$BlockType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LZ77Compressor$Block$BlockType;
-    static values(): (Object | null)[];
+    static values(): LZ77Compressor$Block$BlockType[];
     private constructor()
     name(): "LITERAL" | "BACK_REFERENCE" | "EOD";
 }

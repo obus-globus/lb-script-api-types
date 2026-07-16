@@ -63,7 +63,7 @@ export class Native extends Object implements Version {
     static loadLibrary(paramarg0: Class<Object>, paramarg1: { [key: string]: Object }): Object | null;
     static loadLibrary(paramarg0: string, paramarg1: Class<Object>): Object | null;
     static loadLibrary(paramarg0: string, paramarg1: Class<Object>, paramarg2: { [key: string]: Object }): Object | null;
-    static main(paramarg0: (Object | null)[]): void;
+    static main(paramarg0: string[]): void;
     static malloc(paramarg0: number): number;
     static register(paramarg0: NativeLibrary): void;
     static register(paramarg0: Class<Object>, paramarg1: NativeLibrary): void;

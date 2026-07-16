@@ -6,7 +6,7 @@ export class Functions$ToStringFunction extends Enum<Functions$ToStringFunction>
     static INSTANCE: Functions$ToStringFunction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Functions$ToStringFunction;
-    static values(): (Object | null)[];
+    static values(): Functions$ToStringFunction[];
     private constructor()
     apply(arg0: Object): string;
     toString(): string;

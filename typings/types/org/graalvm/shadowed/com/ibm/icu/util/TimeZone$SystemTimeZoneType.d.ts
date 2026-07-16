@@ -7,7 +7,7 @@ export class TimeZone$SystemTimeZoneType extends Enum<TimeZone$SystemTimeZoneTyp
     static CANONICAL_LOCATION: TimeZone$SystemTimeZoneType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TimeZone$SystemTimeZoneType;
-    static values(): (Object | null)[];
+    static values(): TimeZone$SystemTimeZoneType[];
     private constructor()
     name(): "ANY" | "CANONICAL" | "CANONICAL_LOCATION";
 }

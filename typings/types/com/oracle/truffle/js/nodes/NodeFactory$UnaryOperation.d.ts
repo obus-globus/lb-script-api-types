@@ -14,7 +14,7 @@ export class NodeFactory$UnaryOperation extends Enum<NodeFactory$UnaryOperation>
     static VOID: NodeFactory$UnaryOperation;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): NodeFactory$UnaryOperation;
-    static values(): (Object | null)[];
+    static values(): NodeFactory$UnaryOperation[];
     private constructor()
     name(): "MINUS" | "PLUS" | "BITWISE_COMPLEMENT" | "NOT" | "POSTFIX_LOCAL_INCREMENT" | "PREFIX_LOCAL_INCREMENT" | "POSTFIX_LOCAL_DECREMENT" | "PREFIX_LOCAL_DECREMENT" | "TYPE_OF" | "VOID";
 }

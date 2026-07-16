@@ -6,7 +6,7 @@ import type { LogEventPatternConverter } from '../../../../../../org/apache/logg
 import type { PatternFormatter } from '../../../../../../org/apache/logging/log4j/core/pattern/PatternFormatter.d.ts'
 export class VariablesNotEmptyReplacementConverter extends LogEventPatternConverter {
     static CATEGORY: string;
-    static newInstance(paramconfig: Configuration, paramoptions: (Object | null)[]): VariablesNotEmptyReplacementConverter;
+    static newInstance(paramconfig: Configuration, paramoptions: string[]): VariablesNotEmptyReplacementConverter;
     private constructor(formatters: PatternFormatter[])
     // private formatters: PatternFormatter[];
     format(obj: Object, output: StringBuilder): void;

@@ -6,7 +6,7 @@ export class LocaleDisplayNamesImpl$DataTableType extends Enum<LocaleDisplayName
     static REGION: LocaleDisplayNamesImpl$DataTableType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LocaleDisplayNamesImpl$DataTableType;
-    static values(): (Object | null)[];
+    static values(): LocaleDisplayNamesImpl$DataTableType[];
     private constructor()
     name(): "LANG" | "REGION";
 }

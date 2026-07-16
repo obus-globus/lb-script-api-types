@@ -4,7 +4,6 @@ import type { Constant } from '../../../../../org/spongepowered/asm/mixin/inject
 import type { Desc } from '../../../../../org/spongepowered/asm/mixin/injection/Desc.d.ts'
 import type { Slice } from '../../../../../org/spongepowered/asm/mixin/injection/Slice.d.ts'
 export interface ModifyConstant extends Annotation, Object{
-    constructor(allow: number, constant: Constant[], constraints: string, expect: number, method: string[], order: number, remap: boolean, require: number, slice: Slice[], target: Desc[])
     /*not mapped: */ allow(): number;
     /*not mapped: */ constant(): Constant[];
     /*not mapped: */ constraints(): string;

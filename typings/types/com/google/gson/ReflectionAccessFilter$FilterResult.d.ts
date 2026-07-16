@@ -8,7 +8,7 @@ export class ReflectionAccessFilter$FilterResult extends Enum<ReflectionAccessFi
     static INDECISIVE: ReflectionAccessFilter$FilterResult;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ReflectionAccessFilter$FilterResult;
-    static values(): (Object | null)[];
+    static values(): ReflectionAccessFilter$FilterResult[];
     private constructor()
     name(): "ALLOW" | "INDECISIVE" | "BLOCK_INACCESSIBLE" | "BLOCK_ALL";
 }

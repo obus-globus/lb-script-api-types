@@ -8,7 +8,6 @@ import type { PropertyGetNode } from '../../../../../../com/oracle/truffle/js/no
 import type { IteratorRecord } from '../../../../../../com/oracle/truffle/js/runtime/objects/IteratorRecord.d.ts'
 export class CreateAsyncFromSyncIteratorNodeGen$Inlined extends CreateAsyncFromSyncIteratorNode implements UnadoptableNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(target: InlineSupport$InlineTarget)
     // private getNextMethodNode_: InlineSupport$ReferenceField<PropertyGetNode>;
     // private state_0_: InlineSupport$StateField;

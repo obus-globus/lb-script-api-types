@@ -4,7 +4,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ListSizeNodeGen extends ListSizeNode {
     static create(): ListSizeNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private state_0_: number;
     execute(arg0Value: (Object | null)[]): number;

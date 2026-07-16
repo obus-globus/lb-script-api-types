@@ -8,6 +8,5 @@ export class SysctlUtil extends Object {
     static sysctl(paramarg0: string, paramarg1: number, paramarg2: boolean): number;
     static sysctl(paramarg0: string, paramarg1: string): string;
     static sysctl(paramarg0: string, paramarg1: string, paramarg2: boolean): string;
-    static sysctl(paramarg0: string, paramarg1: number): number;
     private constructor()
 }

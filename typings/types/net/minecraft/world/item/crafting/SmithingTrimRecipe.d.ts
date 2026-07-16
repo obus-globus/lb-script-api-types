@@ -20,7 +20,6 @@ export class SmithingTrimRecipe extends SimpleSmithingRecipe {
     static KEY_CODEC: Codec<ResourceKey<Recipe<any>>>;
     static MAP_CODEC: MapCodec<SmithingTrimRecipe>;
     static SERIALIZER: RecipeSerializer<SmithingTrimRecipe>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<any>>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, SmithingTrimRecipe>;
     static applyTrim(parambaseItem: ItemStack, parammaterialItem: ItemStack, parampattern: Holder<TrimPattern>): ItemStack;
     constructor(commonInfo: Recipe$CommonInfo, template: Ingredient, base: Ingredient, addition: Ingredient, pattern: Holder<TrimPattern>)

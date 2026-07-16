@@ -8,7 +8,7 @@ export class Transaction$Lifecycle extends Enum<Transaction$Lifecycle> {
     static OUTER_CLOSING: Transaction$Lifecycle;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Transaction$Lifecycle;
-    static values(): (Object | null)[];
+    static values(): Transaction$Lifecycle[];
     private constructor()
     name(): "NONE" | "OPEN" | "CLOSING" | "OUTER_CLOSING";
 }

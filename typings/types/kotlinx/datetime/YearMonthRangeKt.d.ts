@@ -12,5 +12,4 @@ export class YearMonthRangeKt extends Object {
     static randomOrNull(paramarg0: (Object | null)[], paramarg1: Random): YearMonth;
     static reversed(paramarg0: (Object | null)[]): (Object | null)[];
     static step(paramarg0: (Object | null)[], paramarg1: number, paramarg2: DateTimeUnit$MonthBased): (Object | null)[];
-    static step(paramarg0: (Object | null)[], paramarg1: number, paramarg2: DateTimeUnit$MonthBased): (Object | null)[];
 }

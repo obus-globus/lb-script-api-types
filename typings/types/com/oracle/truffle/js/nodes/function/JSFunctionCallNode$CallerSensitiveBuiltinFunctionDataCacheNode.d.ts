@@ -6,7 +6,6 @@ import type { JSFunctionData } from '../../../../../../com/oracle/truffle/js/run
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSFunctionCallNode$CallerSensitiveBuiltinFunctionDataCacheNode extends JSFunctionCallNode$CallerSensitiveBuiltinCallNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(functionData: JSFunctionData, callTarget: CallTarget)
     accept(nodeVisitor: NodeVisitor): void;
     accept(function_: Object): boolean;

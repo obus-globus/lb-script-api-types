@@ -6,7 +6,7 @@ export class DumperOptions$Version extends Enum<DumperOptions$Version> {
     static V1_1: DumperOptions$Version;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DumperOptions$Version;
-    static values(): (Object | null)[];
+    static values(): DumperOptions$Version[];
     private constructor(arg2: number[])
     // private version: number[];
     getRepresentation(): string;

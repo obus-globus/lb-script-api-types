@@ -47,7 +47,6 @@ export class VkTilePropertiesQCOM extends Struct<VkTilePropertiesQCOM> implement
     static ntileSize(paramarg0: number): VkExtent3D;
     static ntileSize(paramarg0: number, paramarg1: VkExtent3D): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     apronSize(): VkExtent2D;

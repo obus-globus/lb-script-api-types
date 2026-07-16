@@ -19,7 +19,7 @@ export class PixelFormat extends Enum<PixelFormat> {
     static fromString(paramarg0: string): Optional<PixelFormat>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PixelFormat;
-    static values(): (Object | null)[];
+    static values(): PixelFormat[];
     private constructor(arg2: number, arg3: number, arg4: GlVersion, arg5: boolean)
     readonly componentCount: number;
     readonly glFormat: number;

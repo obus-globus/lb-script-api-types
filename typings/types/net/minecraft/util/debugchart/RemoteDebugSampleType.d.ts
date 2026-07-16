@@ -6,7 +6,7 @@ export class RemoteDebugSampleType extends Enum<RemoteDebugSampleType> {
     static TICK_TIME: RemoteDebugSampleType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RemoteDebugSampleType;
-    static values(): (Object | null)[];
+    static values(): RemoteDebugSampleType[];
     private constructor(subscription: DebugSubscription<Object>)
     // private subscription: DebugSubscription<Object>;
     subscription(): DebugSubscription<Object>;

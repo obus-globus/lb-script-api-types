@@ -45,7 +45,7 @@ export class TypedArrayPrototypeBuiltins$TypedArrayPrototype extends Enum<TypedA
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TypedArrayPrototypeBuiltins$TypedArrayPrototype;
-    static values(): (Object | null)[];
+    static values(): TypedArrayPrototypeBuiltins$TypedArrayPrototype[];
     private constructor(length: number)
     // private functionLength: number;
     args(): BuiltinArgumentBuilder;

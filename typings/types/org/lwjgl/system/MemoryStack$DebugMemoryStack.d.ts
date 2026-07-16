@@ -84,7 +84,7 @@ export class MemoryStack$DebugMemoryStack extends MemoryStack {
     static stackPointers(paramarg0: Pointer, paramarg1: Pointer): PointerBuffer;
     static stackPointers(paramarg0: Pointer, paramarg1: Pointer, paramarg2: Pointer): PointerBuffer;
     static stackPointers(paramarg0: Pointer, paramarg1: Pointer, paramarg2: Pointer, paramarg3: Pointer): PointerBuffer;
-    static stackPointers(...paramarg0: (Object | null)[]): PointerBuffer;
+    static stackPointers(...paramarg0: Pointer[]): PointerBuffer;
     static stackPop(): MemoryStack;
     static stackPush(): MemoryStack;
     static stackShorts(paramarg0: number): ShortBuffer;

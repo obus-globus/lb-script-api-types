@@ -9,7 +9,7 @@ export class AFSocketType extends Enum<AFSocketType> {
     static SOCK_STREAM: AFSocketType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AFSocketType;
-    static values(): (Object | null)[];
+    static values(): AFSocketType[];
     private constructor(arg2: number)
     // private id: number;
     getId(): number;

@@ -12,9 +12,9 @@ export class ChatUtil extends Object {
     static legacyToJsonString(paramarg0: string, paramarg1: (param0: TextComponent) => void, paramarg2: boolean): string;
     static removeUnusedColor(paramarg0: string, paramarg1: string): string;
     static removeUnusedColor(paramarg0: string, paramarg1: string, paramarg2: boolean): string;
-    static split(paramarg0: Tag, paramarg1: string): (Object | null)[];
+    static split(paramarg0: Tag, paramarg1: string): Tag[];
     static translate(paramarg0: string): Map$Entry<string, Tag>[];
-    static translate(paramarg0: string, ...paramarg1: (Object | null)[]): Tag;
-    static translate(paramarg0: string, ...paramarg1: (Object | null)[]): Tag;
+    static translate(paramarg0: string, ...paramarg1: Tag[]): Tag;
+    static translate(paramarg0: string, ...paramarg1: Object[]): Tag;
     constructor()
 }

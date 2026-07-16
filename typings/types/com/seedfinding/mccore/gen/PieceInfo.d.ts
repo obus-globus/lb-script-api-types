@@ -1,4 +1,5 @@
 import type { BlockPalette } from '../../../../com/seedfinding/mccore/block/BlockPalette.d.ts'
+import type { Tile } from '../../../../com/seedfinding/mccore/block/Tile.d.ts'
 import type { PieceInfo$TileView } from '../../../../com/seedfinding/mccore/gen/PieceInfo$TileView.d.ts'
 import type { NBTCompound } from '../../../../com/seedfinding/mccore/nbt/tag/NBTCompound.d.ts'
 import type { Vec3i } from '../../../../com/seedfinding/mccore/util/math/Vec3i.d.ts'
@@ -7,7 +8,7 @@ import type { MCVersion } from '../../../../com/seedfinding/mccore/version/MCVer
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class PieceInfo extends Object {
-    static TILE_SORTER: (param0: Object) => boolean;
+    static TILE_SORTER: (param0: Tile, param1: Tile) => number;
     constructor(arg0: MCVersion)
     blockEntities: Map<BPos, NBTCompound>;
     blockIDs: Map<BPos, number>;

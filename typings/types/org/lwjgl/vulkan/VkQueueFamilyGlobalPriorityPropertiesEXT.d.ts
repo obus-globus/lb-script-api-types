@@ -23,28 +23,21 @@ export class VkQueueFamilyGlobalPriorityPropertiesEXT extends VkQueueFamilyGloba
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkQueueFamilyGlobalPriorityPropertiesEXT;
     static calloc(paramarg0: MemoryStack): VkQueueFamilyGlobalPriorityPropertiesEXT;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkQueueFamilyGlobalPriorityProperties;
     static create(paramarg0: number): VkQueueFamilyGlobalPriorityProperties;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkQueueFamilyGlobalPriorityPropertiesEXT;
     static create(paramarg0: number): VkQueueFamilyGlobalPriorityPropertiesEXT;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkQueueFamilyGlobalPriorityProperties;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkQueueFamilyGlobalPriorityPropertiesEXT;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkQueueFamilyGlobalPriorityProperties;
     static malloc(paramarg0: MemoryStack): VkQueueFamilyGlobalPriorityProperties;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkQueueFamilyGlobalPriorityPropertiesEXT;
     static malloc(paramarg0: MemoryStack): VkQueueFamilyGlobalPriorityPropertiesEXT;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static npriorities(paramarg0: number, paramarg1: number): number;
@@ -52,7 +45,6 @@ export class VkQueueFamilyGlobalPriorityPropertiesEXT extends VkQueueFamilyGloba
     static npriorityCount(paramarg0: number): number;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

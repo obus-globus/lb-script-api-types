@@ -8,7 +8,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PerformPromiseThenNodeGen extends PerformPromiseThenNode {
     static create(paramcontext: JSContext): PerformPromiseThenNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private state_0_: number;
     execute(promise: JSPromiseObject, onFulfilled: Object, onRejected: Object): JSDynamicObject;

@@ -16,7 +16,7 @@ export class BitArrayVersion extends Enum<BitArrayVersion> {
     static get(paramarg0: number, paramarg1: boolean): BitArrayVersion;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BitArrayVersion;
-    static values(): (Object | null)[];
+    static values(): BitArrayVersion[];
     private constructor(arg2: number, arg3: number, arg4: BitArrayVersion)
     readonly bits: number;
     readonly entriesPerWord: number;

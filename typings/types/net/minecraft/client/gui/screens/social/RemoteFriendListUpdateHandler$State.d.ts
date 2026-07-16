@@ -12,7 +12,7 @@ export class RemoteFriendListUpdateHandler$State extends Enum<RemoteFriendListUp
     static USER_MAY_LACK_ACTIVE_PROFILE: RemoteFriendListUpdateHandler$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RemoteFriendListUpdateHandler$State;
-    static values(): (Object | null)[];
+    static values(): RemoteFriendListUpdateHandler$State[];
     private constructor()
     name(): "LOADING" | "UPGRADE_NEEDED" | "CONNECTION_ISSUE" | "USER_MAY_LACK_ACTIVE_PROFILE" | "UNAUTHORIZED" | "TEMPORARY_UNAVAILABLE" | "GENERIC_ERROR" | "SUCCESS";
 }

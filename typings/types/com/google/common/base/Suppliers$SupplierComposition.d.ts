@@ -3,8 +3,8 @@ import type { Supplier } from '../../../../com/google/common/base/Supplier.d.ts'
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Suppliers$SupplierComposition<F extends unknown, T extends unknown> extends Object implements Supplier<T>, Serializable {
-    constructor(function_: (param0: Object) => boolean, supplier: () => F)
-    // private function: (param0: Object) => boolean;
+    constructor(function_: (param0: F) => T, supplier: () => F)
+    // private function: (param0: F) => T;
     // private supplier: () => F;
     equals(obj: Object | null): boolean;
     get(): T;

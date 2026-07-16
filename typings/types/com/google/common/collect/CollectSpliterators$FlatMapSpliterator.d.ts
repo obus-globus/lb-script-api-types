@@ -24,7 +24,7 @@ export abstract class CollectSpliterators$FlatMapSpliterator<InElementT extends 
     estimateSize(): number;
     forEachRemaining(action: (param0: OutElementT) => void): void;
     forEachRemaining(arg0: (param0: OutElementT) => void): void;
-    getComparator(): (param0: Object) => boolean;
+    getComparator(): (param0: OutElementT, param1: OutElementT) => number;
     getExactSizeIfKnown(): number;
     hasCharacteristics(arg0: number): boolean;
     tryAdvance(action: (param0: OutElementT) => void): boolean;

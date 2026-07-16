@@ -4,12 +4,13 @@ import type { CompletionHandler } from '../../../java/nio/channels/CompletionHan
 import type { FileLock } from '../../../java/nio/channels/FileLock.d.ts'
 import type { OpenOption } from '../../../java/nio/file/OpenOption.d.ts'
 import type { Path } from '../../../java/nio/file/Path.d.ts'
+import type { FileAttribute } from '../../../java/nio/file/attribute/FileAttribute.d.ts'
 import type { ExecutorService } from '../../../java/util/concurrent/ExecutorService.d.ts'
 import type { Future } from '../../../java/util/concurrent/Future.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class AsynchronousFileChannel extends Object implements AsynchronousChannel {
-    static open(paramarg0: Path, ...paramarg1: (Object | null)[]): AsynchronousFileChannel;
-    static open(paramarg0: Path, paramarg1: OpenOption[], paramarg2: ExecutorService, paramarg3: Object | null): AsynchronousFileChannel;
+    static open(paramarg0: Path, ...paramarg1: OpenOption[]): AsynchronousFileChannel;
+    static open(paramarg0: Path, paramarg1: OpenOption[], paramarg2: ExecutorService, ...paramarg3: FileAttribute<Object>[]): AsynchronousFileChannel;
     constructor()
     close(): void;
     force(arg0: boolean): void;

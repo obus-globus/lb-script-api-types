@@ -5,7 +5,6 @@ import type { JSException } from '../../../../../../com/oracle/truffle/js/runtim
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSFunctionCallNode$GenericFallbackCacheNode extends JSFunctionCallNode$AbstractCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     accept(nodeVisitor: NodeVisitor): void;
     accept(function_: Object): boolean;

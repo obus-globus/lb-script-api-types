@@ -9,16 +9,16 @@ import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class PointFreeRule$AppNest extends Enum<PointFreeRule$AppNest> implements PointFreeRule {
     static INSTANCE: PointFreeRule$AppNest;
     static all(paramarg0: PointFreeRule): PointFreeRule;
-    static choice(...paramarg0: (Object | null)[]): PointFreeRule;
+    static choice(...paramarg0: PointFreeRule[]): PointFreeRule;
     static everywhere(paramarg0: PointFreeRule, paramarg1: PointFreeRule): PointFreeRule;
     static many(paramarg0: PointFreeRule): PointFreeRule;
     static nop(): PointFreeRule;
     static once(paramarg0: PointFreeRule): PointFreeRule;
     static one(paramarg0: PointFreeRule): PointFreeRule;
-    static seq(...paramarg0: (Object | null)[]): PointFreeRule;
+    static seq(...paramarg0: PointFreeRule[]): PointFreeRule;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PointFreeRule$AppNest;
-    static values(): (Object | null)[];
+    static values(): PointFreeRule$AppNest[];
     private constructor()
     // private cap<R extends unknown, X extends unknown, Y extends unknown, S extends unknown, T extends unknown, A extends unknown, B extends unknown>(arg0: ProfunctorTransformer<X, Y, Object, Object>, arg1: ProfunctorTransformer<S, T, A, B>): R;
     // private compose<A extends unknown, C extends unknown>(arg0: PointFree<(param0: Object | null) => Object | null>, arg1: PointFree<(param0: Object | null) => Object | null>): PointFree<(param0: A) => C>;

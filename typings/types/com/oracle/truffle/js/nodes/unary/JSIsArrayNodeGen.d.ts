@@ -8,7 +8,6 @@ export class JSIsArrayNodeGen extends JSIsArrayNode {
     static createIsArray(): JSIsArrayNode;
     static createIsArrayLike(): JSIsArrayNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(jsType: boolean)
     // private isArrayClass_cache: JSIsArrayNodeGen$IsArrayClassData;
     // private primitiveOrForeign_interop_: InteropLibrary;

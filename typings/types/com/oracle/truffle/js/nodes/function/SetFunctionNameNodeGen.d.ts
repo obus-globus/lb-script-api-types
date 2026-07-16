@@ -5,7 +5,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class SetFunctionNameNodeGen extends SetFunctionNameNode {
     static create(): SetFunctionNameNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private state_0_: number;
     execute(callable: Object, propertyKey: Object): void;

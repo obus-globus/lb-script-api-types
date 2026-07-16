@@ -20,7 +20,7 @@ export class SignatureAlgorithm extends Enum<SignatureAlgorithm> {
     static forSigningKey(paramarg0: Key): SignatureAlgorithm;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SignatureAlgorithm;
-    static values(): (Object | null)[];
+    static values(): SignatureAlgorithm[];
     private constructor(arg2: string, arg3: string, arg4: string, arg5: string, arg6: boolean, arg7: number, arg8: number)
     private constructor(arg2: string, arg3: string, arg4: string, arg5: string, arg6: boolean, arg7: number, arg8: number, arg9: string)
     readonly description: string;

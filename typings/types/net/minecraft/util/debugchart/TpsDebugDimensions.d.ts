@@ -8,7 +8,7 @@ export class TpsDebugDimensions extends Enum<TpsDebugDimensions> {
     static TICK_SERVER_METHOD: TpsDebugDimensions;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TpsDebugDimensions;
-    static values(): (Object | null)[];
+    static values(): TpsDebugDimensions[];
     private constructor()
     name(): "FULL_TICK" | "TICK_SERVER_METHOD" | "SCHEDULED_TASKS" | "IDLE";
 }

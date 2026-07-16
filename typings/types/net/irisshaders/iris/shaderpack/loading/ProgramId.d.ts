@@ -48,7 +48,7 @@ export class ProgramId extends Enum<ProgramId> {
     static fromAPI(paramarg0: IrisProgram): ProgramId;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ProgramId;
-    static values(): (Object | null)[];
+    static values(): ProgramId[];
     private constructor(arg2: ProgramGroup, arg3: string)
     private constructor(arg2: ProgramGroup, arg3: string, arg4: BlendModeOverride)
     private constructor(arg2: ProgramGroup, arg3: string, arg4: ProgramId)

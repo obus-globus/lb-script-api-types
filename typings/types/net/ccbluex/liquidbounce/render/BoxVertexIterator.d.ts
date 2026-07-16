@@ -10,7 +10,7 @@ export class BoxVertexIterator extends Enum<BoxVertexIterator> {
     static getEntries(): BoxVertexIterator[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BoxVertexIterator;
-    static values(): (Object | null)[];
+    static values(): BoxVertexIterator[];
     private constructor()
     /**
      * For Java and JS usage.

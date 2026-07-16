@@ -7,7 +7,7 @@ export class RealmsMainScreen$LayoutState extends Enum<RealmsMainScreen$LayoutSt
     static NO_REALMS: RealmsMainScreen$LayoutState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RealmsMainScreen$LayoutState;
-    static values(): (Object | null)[];
+    static values(): RealmsMainScreen$LayoutState[];
     private constructor()
     name(): "LOADING" | "NO_REALMS" | "LIST";
 }

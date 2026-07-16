@@ -12,8 +12,6 @@ export class Subject extends Object implements Serializable {
     static callAs(paramarg0: Subject, paramarg1: () => Object | null): Object | null;
     static current(): Subject;
     static doAs(paramarg0: Subject, paramarg1: () => Object | null): Object | null;
-    static doAs(paramarg0: Subject, paramarg1: () => Object | null): Object | null;
-    static doAsPrivileged(paramarg0: Subject, paramarg1: () => Object | null, paramarg2: AccessControlContext): Object | null;
     static doAsPrivileged(paramarg0: Subject, paramarg1: () => Object | null, paramarg2: AccessControlContext): Object | null;
     static getSubject(paramarg0: AccessControlContext): Subject;
     constructor()

@@ -23,10 +23,9 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class ArrayPrototypeBuiltins$JSArraySortNode extends ArrayPrototypeBuiltins$AbstractArraySortNode {
     static ARGUMENTS: string;
     static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
+    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
     static createBuiltin(paramctx: JSContext, parambuiltin: JSBuiltin, paramconstruct: boolean, paramnewTarget: boolean): JSBuiltinNode;
     static findBlockScopeNode(paramnode: Node): Node;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
@@ -41,8 +40,8 @@ export abstract class ArrayPrototypeBuiltins$JSArraySortNode extends ArrayProtot
     // private delete(obj: Object, i: Object): void;
     // private deleteGenericElements(obj: Object, fromIndex: number, toIndex: number): void;
     // private foreignArrayToObjectArray(thisObj: Object, len: number): Object[];
-    // private getComparator(thisObj: Object, compare: Object): (param0: Object) => boolean;
-    // private getDefaultComparator(thisObj: Object): (param0: Object) => boolean;
+    // private getComparator(thisObj: Object, compare: Object): (param0: Object, param1: Object) => number;
+    // private getDefaultComparator(thisObj: Object): (param0: Object, param1: Object) => number;
     sort(thisObj: Object, comparefn: Object, isJSObject: InlinedConditionProfile, growProfile: InlinedBranchProfile): Object;
     // private sortAndWriteBack(array: Object[], thisObj: Object, comparefn: Object): void;
     sortArray(thisObj: JSArrayObject, compare: Object, arrayToObjectArrayNode: JSArrayToDenseObjectArrayNode, arrayDeleteRangeNode: JSArrayDeleteRangeNode): JSArrayObject;

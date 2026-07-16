@@ -5,7 +5,7 @@ import type { Configuration } from '../../../../../../org/apache/logging/log4j/c
 import type { LogEventPatternConverter } from '../../../../../../org/apache/logging/log4j/core/pattern/LogEventPatternConverter.d.ts'
 export class MessagePatternConverter extends LogEventPatternConverter {
     static CATEGORY: string;
-    static newInstance(paramconfig: Configuration, paramoptions: (Object | null)[]): MessagePatternConverter;
+    static newInstance(paramconfig: Configuration, paramoptions: string[]): MessagePatternConverter;
     constructor(arg0: any)
     format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, toAppendTo: StringBuilder): void;

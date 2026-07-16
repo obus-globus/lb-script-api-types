@@ -7,7 +7,6 @@ import type { KeyValueCondition$Terms } from '../../../../../../../net/minecraft
 import type { StateDefinition } from '../../../../../../../net/minecraft/world/level/block/state/StateDefinition.d.ts'
 import type { StateHolder } from '../../../../../../../net/minecraft/world/level/block/state/StateHolder.d.ts'
 export class KeyValueCondition extends Record implements Condition {
-    static CODEC: Codec<(param0: StateDefinition<Object, any>) => (param0: Object | null) => boolean>;
     static CODEC: Codec<KeyValueCondition>;
     constructor(tests: { [key: string]: KeyValueCondition$Terms })
     // private tests: { [key: string]: KeyValueCondition$Terms };

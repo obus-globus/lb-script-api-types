@@ -1,7 +1,7 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { KeyValuePair$Builder } from '../../../../../../org/apache/logging/log4j/core/util/KeyValuePair$Builder.d.ts'
 export class KeyValuePair extends Object {
-    static EMPTY_ARRAY: (Object | null)[];
+    static EMPTY_ARRAY: KeyValuePair[];
     static newBuilder(): KeyValuePair$Builder;
     constructor(key: string, value: string)
     readonly key: string;

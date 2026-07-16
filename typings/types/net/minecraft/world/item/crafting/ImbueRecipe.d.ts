@@ -21,7 +21,6 @@ export class ImbueRecipe extends NormalCraftingRecipe {
     static MAP_CODEC: MapCodec<ImbueRecipe>;
     static SERIALIZER: RecipeSerializer<ImbueRecipe>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ImbueRecipe>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<any>>;
     constructor(commonInfo: Recipe$CommonInfo, bookInfo: CraftingRecipe$CraftingBookInfo, source: Ingredient, material: Ingredient, result: ItemStackTemplate)
     // private material: Ingredient;
     // private result: ItemStackTemplate;

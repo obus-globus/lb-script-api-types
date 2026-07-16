@@ -10,7 +10,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSToIntegerAsLongNode extends JavaScriptBaseNode {
     static create(): JSToIntegerAsLongNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doBigInt(value: BigInt): number;
     doJSObject(value: JSObject, toNumberNode: JSToNumberNode): number;

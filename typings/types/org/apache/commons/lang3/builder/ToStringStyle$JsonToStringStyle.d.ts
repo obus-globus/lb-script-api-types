@@ -14,7 +14,7 @@ export class ToStringStyle$JsonToStringStyle extends ToStringStyle {
     append(arg0: StringBuffer, arg1: string, arg2: Object, arg3: boolean): void;
     append(arg0: StringBuffer, arg1: string, arg2: Object[], arg3: boolean): void;
     append(arg0: StringBuffer, arg1: string, arg2: boolean): void;
-    append(arg0: StringBuffer, arg1: string, arg2: (Object | null)[], arg3: boolean): void;
+    append(arg0: StringBuffer, arg1: string, arg2: boolean[], arg3: boolean): void;
     append(arg0: StringBuffer, arg1: string, arg2: number): void;
     append(arg0: StringBuffer, arg1: string, arg2: number[], arg3: boolean): void;
     append(arg0: StringBuffer, arg1: string, arg2: string): void;
@@ -22,12 +22,13 @@ export class ToStringStyle$JsonToStringStyle extends ToStringStyle {
     appendDetail(arg0: StringBuffer, arg1: string, arg2: Object): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: Object[]): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: boolean): void;
-    appendDetail(arg0: StringBuffer, arg1: string, arg2: (Object | null)[]): void;
+    appendDetail(arg0: StringBuffer, arg1: string, arg2: boolean[]): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: number): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: number[]): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: string): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: string[]): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: number, arg3: Object): void;
+    appendDetail(arg0: StringBuffer, arg1: string, arg2: (Object | null)[]): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: Map<Object | null, Object | null>): void;
     appendFieldStart(arg0: StringBuffer, arg1: string): void;
     // private appendValueAsString(arg0: StringBuffer, arg1: string): void;

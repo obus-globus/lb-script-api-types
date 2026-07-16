@@ -13,11 +13,10 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class TemporalZonedDateTimePrototypeBuiltinsFactory$JSTemporalZonedDateTimeGetterNodeGen extends TemporalZonedDateTimePrototypeBuiltins$JSTemporalZonedDateTimeGetterNode {
     static ARGUMENTS: string;
     static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
-    static create(paramcontext: JSContext, parambuiltin: JSBuiltin, paramproperty: TemporalZonedDateTimePrototypeBuiltins$TemporalZonedDateTimePrototype, paramarguments: (Object | null)[]): TemporalZonedDateTimePrototypeBuiltins$JSTemporalZonedDateTimeGetterNode;
+    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
+    static create(paramcontext: JSContext, parambuiltin: JSBuiltin, paramproperty: TemporalZonedDateTimePrototypeBuiltins$TemporalZonedDateTimePrototype, paramarguments: JavaScriptNode[]): TemporalZonedDateTimePrototypeBuiltins$JSTemporalZonedDateTimeGetterNode;
     static createBuiltin(paramctx: JSContext, parambuiltin: JSBuiltin, paramconstruct: boolean, paramnewTarget: boolean): JSBuiltinNode;
     static findBlockScopeNode(paramnode: Node): Node;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;

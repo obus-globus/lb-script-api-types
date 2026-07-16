@@ -8,7 +8,7 @@ export class DefaultChannelPipeline$AddStrategy extends Enum<DefaultChannelPipel
     static ADD_LAST: DefaultChannelPipeline$AddStrategy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DefaultChannelPipeline$AddStrategy;
-    static values(): (Object | null)[];
+    static values(): DefaultChannelPipeline$AddStrategy[];
     private constructor()
     name(): "ADD_FIRST" | "ADD_LAST" | "ADD_BEFORE" | "ADD_AFTER";
 }

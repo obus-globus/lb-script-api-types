@@ -10,8 +10,8 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 export abstract class GraalJSException extends AbstractTruffleException {
     static UNLIMITED_STACK_TRACE: number;
-    static getJSStackTrace(paramoriginatingNode: Node): (Object | null)[];
-    static getJSStackTrace(paramoriginatingNode: Node, paramstackTraceLimit: number): (Object | null)[];
+    static getJSStackTrace(paramoriginatingNode: Node): GraalJSException$JSStackTraceElement[];
+    static getJSStackTrace(paramoriginatingNode: Node, paramstackTraceLimit: number): GraalJSException$JSStackTraceElement[];
     static printJSStackTrace(paramoriginatingNode: Node): void;
     constructor(message: string, node: Node, stackTraceLimit: number)
     constructor(message: string, cause: Throwable, node: Node, stackTraceLimit: number)

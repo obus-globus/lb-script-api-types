@@ -8,7 +8,7 @@ export class BodyType extends Enum<BodyType> implements IdentifiedType {
     static PLAIN_MESSAGE: BodyType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BodyType;
-    static values(): (Object | null)[];
+    static values(): BodyType[];
     private constructor(arg2: Identifier)
     readonly identifier: Identifier;
     getIdentifier(): Identifier;

@@ -11,7 +11,7 @@ export class SpellcasterIllager$IllagerSpell extends Enum<SpellcasterIllager$Ill
     static byId(paramid: number): SpellcasterIllager$IllagerSpell;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SpellcasterIllager$IllagerSpell;
-    static values(): (Object | null)[];
+    static values(): SpellcasterIllager$IllagerSpell[];
     private constructor(id: number, red: number, green: number, blue: number)
     // private id: number;
     // private spellColor: number[];

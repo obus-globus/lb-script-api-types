@@ -27,8 +27,6 @@ import type { LootTable } from '../../../../net/minecraft/world/level/storage/lo
 import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class EntityType$Builder<T extends Entity> extends Object implements FabricEntityType$Builder<T>, FabricEntityTypeImpl$Builder {
     static createLiving(paramarg0: (param0: EntityType<LivingEntity>, param1: Level) => LivingEntity | null, paramarg1: MobCategory, paramarg2: (param0: FabricEntityType$Builder$Living<LivingEntity>) => Object | null): EntityType$Builder<LivingEntity>;
-    static createLiving(paramarg0: (param0: EntityType<LivingEntity>, param1: Level) => LivingEntity | null, paramarg1: MobCategory, paramarg2: (param0: FabricEntityType$Builder$Living<LivingEntity>) => Object | null): EntityType$Builder<LivingEntity>;
-    static createMob(paramarg0: (param0: EntityType<Mob>, param1: Level) => Mob | null, paramarg1: MobCategory, paramarg2: (param0: FabricEntityType$Builder$Mob<Mob>) => Object | null): EntityType$Builder<Mob>;
     static createMob(paramarg0: (param0: EntityType<Mob>, param1: Level) => Mob | null, paramarg1: MobCategory, paramarg2: (param0: FabricEntityType$Builder$Mob<Mob>) => Object | null): EntityType$Builder<Mob>;
     static createNothing(paramcategory: MobCategory): EntityType$Builder<Entity>;
     static of(paramfactory: (param0: EntityType<Entity>, param1: Level) => Entity | null, paramcategory: MobCategory): EntityType$Builder<Entity>;

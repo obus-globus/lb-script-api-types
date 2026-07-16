@@ -34,7 +34,7 @@ export class NoteBlockInstrument extends Enum<NoteBlockInstrument> {
     static getByValue(paramarg0: number, paramarg1: NoteBlockInstrument): NoteBlockInstrument;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): NoteBlockInstrument;
-    static values(): (Object | null)[];
+    static values(): NoteBlockInstrument[];
     private constructor(arg2: number)
     private constructor(arg2: NoteBlockInstrument)
     readonly value: number;

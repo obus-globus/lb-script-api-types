@@ -6,7 +6,6 @@ import type { Calendar } from '../../../../java/util/Calendar.d.ts'
 import type { Date } from '../../../../java/util/Date.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
 import type { TimeZone as TimeZone_2 } from '../../../../java/util/TimeZone.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../../../java/lang/Cloneable.d.ts'
 export class JavaTimeZone extends TimeZone implements Cloneable {
     static GENERIC_LOCATION: number;
@@ -26,12 +25,12 @@ export class JavaTimeZone extends TimeZone implements Cloneable {
     static createTimeZone(paramarg0: string): JavaTimeZone;
     static forLocaleOrDefault(paramarg0: Locale): TimeZone;
     static forULocaleOrDefault(paramarg0: ULocale): TimeZone;
-    static getAvailableIDs(): (Object | null)[];
-    static getAvailableIDs(paramarg0: number): (Object | null)[];
-    static getAvailableIDs(paramarg0: string): (Object | null)[];
+    static getAvailableIDs(): string[];
+    static getAvailableIDs(paramarg0: number): string[];
+    static getAvailableIDs(paramarg0: string): string[];
     static getAvailableIDs(paramarg0: TimeZone$SystemTimeZoneType, paramarg1: string, paramarg2: number): string[];
     static getCanonicalID(paramarg0: string): string;
-    static getCanonicalID(paramarg0: string, paramarg1: (Object | null)[]): string;
+    static getCanonicalID(paramarg0: string, paramarg1: boolean[]): string;
     static getDefault(): TimeZone;
     static getDefaultTimeZoneType(): number;
     static getEquivalentID(paramarg0: string, paramarg1: number): string;

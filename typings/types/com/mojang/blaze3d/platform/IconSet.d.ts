@@ -9,7 +9,7 @@ export class IconSet extends Enum<IconSet> {
     static SNAPSHOT: IconSet;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): IconSet;
-    static values(): (Object | null)[];
+    static values(): IconSet[];
     private constructor(...path: string[])
     // private path: string[];
     // private getFile(resources: PackResources, fileName: string): () => InputStream;

@@ -17,7 +17,7 @@ export class ContainerID extends Enum<ContainerID> {
     static getByValue(paramarg0: number, paramarg1: ContainerID): ContainerID;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ContainerID;
-    static values(): (Object | null)[];
+    static values(): ContainerID[];
     private constructor(arg2: number)
     private constructor(arg2: ContainerID)
     readonly value: number;

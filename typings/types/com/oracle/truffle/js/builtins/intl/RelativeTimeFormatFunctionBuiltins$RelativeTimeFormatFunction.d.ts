@@ -11,7 +11,7 @@ export class RelativeTimeFormatFunctionBuiltins$RelativeTimeFormatFunction exten
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RelativeTimeFormatFunctionBuiltins$RelativeTimeFormatFunction;
-    static values(): (Object | null)[];
+    static values(): RelativeTimeFormatFunctionBuiltins$RelativeTimeFormatFunction[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

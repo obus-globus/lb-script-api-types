@@ -7,7 +7,7 @@ export class TemporalUtil$OffsetBehaviour extends Enum<TemporalUtil$OffsetBehavi
     static WALL: TemporalUtil$OffsetBehaviour;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TemporalUtil$OffsetBehaviour;
-    static values(): (Object | null)[];
+    static values(): TemporalUtil$OffsetBehaviour[];
     private constructor()
     name(): "OPTION" | "WALL" | "EXACT";
 }

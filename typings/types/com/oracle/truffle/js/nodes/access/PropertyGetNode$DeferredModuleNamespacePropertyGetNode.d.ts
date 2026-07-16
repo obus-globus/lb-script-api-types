@@ -8,7 +8,6 @@ import type { ReadImportBindingNode } from '../../../../../../com/oracle/truffle
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PropertyGetNode$DeferredModuleNamespacePropertyGetNode extends PropertyGetNode$LinkedPropertyGetNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(property: Property, receiverCheck: PropertyCacheNode$ReceiverCheckNode)
     // private evaluateDeferredBranch: BranchProfile;
     // private property: Property;

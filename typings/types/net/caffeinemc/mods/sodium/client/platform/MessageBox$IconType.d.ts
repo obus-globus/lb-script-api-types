@@ -7,7 +7,7 @@ export class MessageBox$IconType extends Enum<MessageBox$IconType> {
     static WARNING: MessageBox$IconType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MessageBox$IconType;
-    static values(): (Object | null)[];
+    static values(): MessageBox$IconType[];
     private constructor()
     name(): "INFO" | "WARNING" | "ERROR";
 }

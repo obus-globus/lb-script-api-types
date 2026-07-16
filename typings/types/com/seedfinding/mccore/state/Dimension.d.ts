@@ -9,7 +9,7 @@ export class Dimension extends Enum<Dimension> {
     static fromString(paramarg0: string): Dimension;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Dimension;
-    static values(): (Object | null)[];
+    static values(): Dimension[];
     private constructor(arg2: string, arg3: number)
     readonly id: number;
     getId(): number;

@@ -19,7 +19,7 @@ export class ToStringBuilder extends Object implements Builder<string> {
     append(arg0: Object): ToStringBuilder;
     append(arg0: Object[]): ToStringBuilder;
     append(arg0: boolean): ToStringBuilder;
-    append(arg0: (Object | null)[]): ToStringBuilder;
+    append(arg0: boolean[]): ToStringBuilder;
     append(arg0: number): ToStringBuilder;
     append(arg0: number[]): ToStringBuilder;
     append(arg0: string): ToStringBuilder;
@@ -29,8 +29,8 @@ export class ToStringBuilder extends Object implements Builder<string> {
     append(arg0: string, arg1: Object[]): ToStringBuilder;
     append(arg0: string, arg1: Object[], arg2: boolean): ToStringBuilder;
     append(arg0: string, arg1: boolean): ToStringBuilder;
-    append(arg0: string, arg1: (Object | null)[]): ToStringBuilder;
-    append(arg0: string, arg1: (Object | null)[], arg2: boolean): ToStringBuilder;
+    append(arg0: string, arg1: boolean[]): ToStringBuilder;
+    append(arg0: string, arg1: boolean[], arg2: boolean): ToStringBuilder;
     append(arg0: string, arg1: number): ToStringBuilder;
     append(arg0: string, arg1: number[]): ToStringBuilder;
     append(arg0: string, arg1: number[], arg2: boolean): ToStringBuilder;

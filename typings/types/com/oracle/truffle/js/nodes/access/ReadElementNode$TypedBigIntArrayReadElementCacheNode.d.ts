@@ -8,7 +8,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ReadElementNode$TypedBigIntArrayReadElementCacheNode extends ReadElementNode$AbstractTypedArrayReadElementCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(arrayType: TypedArray)
     doTypedBigIntArray(target: JSDynamicObject, typedArray: TypedArray$TypedBigIntArray, index: number, receiver: Object, defaultValue: Object, context: JSContext, inBounds: InlinedConditionProfile): Object;
 }

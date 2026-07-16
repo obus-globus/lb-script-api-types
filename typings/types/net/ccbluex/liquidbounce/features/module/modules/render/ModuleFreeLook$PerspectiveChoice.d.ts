@@ -13,7 +13,7 @@ export class ModuleFreeLook$PerspectiveChoice extends Enum<ModuleFreeLook$Perspe
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleFreeLook$PerspectiveChoice;
-    static values(): (Object | null)[];
+    static values(): ModuleFreeLook$PerspectiveChoice[];
     private constructor(tag: string, perspective: CameraType)
     readonly perspective: CameraType;
     readonly tag: string;

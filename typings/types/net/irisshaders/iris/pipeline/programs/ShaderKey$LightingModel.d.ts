@@ -8,7 +8,7 @@ export class ShaderKey$LightingModel extends Enum<ShaderKey$LightingModel> {
     static LIGHTMAP: ShaderKey$LightingModel;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ShaderKey$LightingModel;
-    static values(): (Object | null)[];
+    static values(): ShaderKey$LightingModel[];
     private constructor()
     name(): "FULLBRIGHT" | "LIGHTMAP" | "DIFFUSE" | "DIFFUSE_LM";
 }

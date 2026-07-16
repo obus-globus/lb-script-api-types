@@ -4,7 +4,7 @@ import type { InlineSupport$StateField } from '../../../../../com/oracle/truffle
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class InlineSupport$InlineTarget extends Object {
-    static create(paramtargetClass: Class<Object>, ...paramupdaters: (Object | null)[]): InlineSupport$InlineTarget;
+    static create(paramtargetClass: Class<Object>, ...paramupdaters: InlineSupport$InlinableField[]): InlineSupport$InlineTarget;
     constructor(targetClass: Class<Object>, updaters: InlineSupport$InlinableField[])
     readonly targetClass: Class<Object>;
     // private updaters: InlineSupport$InlinableField[];

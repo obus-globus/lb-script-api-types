@@ -9,7 +9,7 @@ export class QuadAtlas extends Enum<QuadAtlas> {
     static ofLocation(paramarg0: Identifier): QuadAtlas;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): QuadAtlas;
-    static values(): (Object | null)[];
+    static values(): QuadAtlas[];
     private constructor(arg2: Identifier, arg3: Identifier)
     readonly id: Identifier;
     readonly textureLocation: Identifier;

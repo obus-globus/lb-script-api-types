@@ -8,7 +8,7 @@ export class BytesTrie$Result extends Enum<BytesTrie$Result> {
     static NO_VALUE: BytesTrie$Result;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BytesTrie$Result;
-    static values(): (Object | null)[];
+    static values(): BytesTrie$Result[];
     private constructor()
     hasNext(): boolean;
     hasValue(): boolean;

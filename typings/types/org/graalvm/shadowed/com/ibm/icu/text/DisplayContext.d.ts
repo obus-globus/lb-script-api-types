@@ -16,7 +16,7 @@ export class DisplayContext extends Enum<DisplayContext> {
     static SUBSTITUTE: DisplayContext;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): DisplayContext;
-    static values(): (Object | null)[];
+    static values(): DisplayContext[];
     private constructor(type: DisplayContext$Type, value: number)
     // private type: DisplayContext$Type;
     // private value: number;

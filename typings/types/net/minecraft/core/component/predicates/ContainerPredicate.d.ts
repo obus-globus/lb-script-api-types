@@ -15,7 +15,6 @@ import type { StreamCodec } from '../../../../../net/minecraft/network/codec/Str
 import type { ItemInstance } from '../../../../../net/minecraft/world/item/ItemInstance.d.ts'
 import type { ItemContainerContents } from '../../../../../net/minecraft/world/item/component/ItemContainerContents.d.ts'
 export class ContainerPredicate extends Record implements SingleComponentItemPredicate<ItemContainerContents> {
-    static CODEC: Codec<Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
     static CODEC: Codec<ContainerPredicate>;
     static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<any>>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;

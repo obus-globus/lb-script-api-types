@@ -12,10 +12,8 @@ export class DoubleMath extends Object {
     static log2(paramx: number): number;
     static log2(paramx: number, parammode: RoundingMode): number;
     static mean(...paramvalues: number[]): number;
-    static mean(...paramvalues: number[]): number;
     static mean(paramvalues: Number[]): number;
     static mean(paramvalues: Iterator<Number>): number;
-    static mean(...paramvalues: number[]): number;
     static roundToBigInteger(paramx: number, parammode: RoundingMode): BigInteger;
     static roundToInt(paramx: number, parammode: RoundingMode): number;
     static roundToLong(paramx: number, parammode: RoundingMode): number;

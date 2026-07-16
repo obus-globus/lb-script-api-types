@@ -14,7 +14,6 @@ import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ReadElementNode$ForeignObjectReadElementTypeCacheNode extends ReadElementNode$GuardedReadElementTypeCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     // private foreignObjectPrototypeNode: ForeignObjectPrototypeNode;
     // private getterInterop: InteropLibrary;

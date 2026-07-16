@@ -6,7 +6,6 @@ export class ToJSValueNodeGen extends ToJSValueNode {
     static create(): ToJSValueNode;
     static getUncached(): ToJSValueNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private fallback_cache: ToJSValueNodeGen$FallbackData;
     // private state_0_: number;

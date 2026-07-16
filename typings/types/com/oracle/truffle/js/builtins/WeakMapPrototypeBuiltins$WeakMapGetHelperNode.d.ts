@@ -9,7 +9,6 @@ import type { JSObject } from '../../../../../com/oracle/truffle/js/runtime/obje
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class WeakMapPrototypeBuiltins$WeakMapGetHelperNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(thisObject: JSWeakMapObject, key: Object): Object;
     getJSObject(thisObj: JSWeakMapObject, key: JSObject, invertedGetter: DynamicObjectLibrary, hasInvertedProfile: InlinedConditionProfile): Object;

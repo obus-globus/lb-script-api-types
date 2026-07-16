@@ -10,7 +10,7 @@ export class Thread$State extends Enum<Thread$State> {
     static WAITING: Thread$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Thread$State;
-    static values(): (Object | null)[];
+    static values(): Thread$State[];
     private constructor()
     name(): "NEW" | "RUNNABLE" | "BLOCKED" | "WAITING" | "TIMED_WAITING" | "TERMINATED";
 }

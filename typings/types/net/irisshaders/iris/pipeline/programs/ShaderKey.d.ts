@@ -88,7 +88,7 @@ export class ShaderKey extends Enum<ShaderKey> {
     static findBestMatch(paramarg0: RenderPipeline, paramarg1: ProgramId): ShaderKey;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ShaderKey;
-    static values(): (Object | null)[];
+    static values(): ShaderKey[];
     private constructor(arg2: ProgramId, arg3: AlphaTest, arg4: VertexFormat, arg5: FogMode, arg6: ShaderKey$LightingModel, arg7: Patch)
     readonly alphaTest: AlphaTest;
     readonly fogMode: FogMode;

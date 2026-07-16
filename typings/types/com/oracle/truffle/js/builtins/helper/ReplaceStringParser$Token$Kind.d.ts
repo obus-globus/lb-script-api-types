@@ -10,7 +10,7 @@ export class ReplaceStringParser$Token$Kind extends Enum<ReplaceStringParser$Tok
     static namedCaptureGroup: ReplaceStringParser$Token$Kind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ReplaceStringParser$Token$Kind;
-    static values(): (Object | null)[];
+    static values(): ReplaceStringParser$Token$Kind[];
     private constructor()
     name(): "literal" | "match" | "matchHead" | "matchTail" | "captureGroup" | "namedCaptureGroup";
 }

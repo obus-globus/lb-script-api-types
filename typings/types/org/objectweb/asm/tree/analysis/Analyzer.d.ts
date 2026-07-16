@@ -260,7 +260,7 @@ export class Analyzer<V extends Value> extends Object implements Opcodes {
     constructor(arg0: Interpreter<V>)
     readonly frames: Frame<V>[];
     readonly handlers: TryCatchBlockNode[][];
-    // private inInstructionsToProcess: (Object | null)[];
+    // private inInstructionsToProcess: boolean[];
     // private insnList: AbstractInsnNode[];
     // private insnListSize: number;
     // private instructionsToProcess: number[];
@@ -275,7 +275,7 @@ export class Analyzer<V extends Value> extends Object implements Opcodes {
     getFrames(): Frame<V>[];
     getHandlers(arg0: number): TryCatchBlockNode[];
     init(arg0: string, arg1: MethodNode): void;
-    // private merge(arg0: number, arg1: Frame<V>, arg2: Frame<V>, arg3: Subroutine, arg4: (Object | null)[]): void;
+    // private merge(arg0: number, arg1: Frame<V>, arg2: Frame<V>, arg3: Subroutine, arg4: boolean[]): void;
     // private merge(arg0: number, arg1: Frame<V>, arg2: Subroutine): void;
     newControlFlowEdge(arg0: number, arg1: number): void;
     newControlFlowExceptionEdge(arg0: number, arg1: number): boolean;

@@ -11,7 +11,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class InitializeCollatorNode extends JavaScriptBaseNode {
     static createInitalizeCollatorNode(paramcontext: JSContext): InitializeCollatorNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private coerceOptionsToObjectNode: CoerceOptionsToObjectNode;
     // private context: JSContext;

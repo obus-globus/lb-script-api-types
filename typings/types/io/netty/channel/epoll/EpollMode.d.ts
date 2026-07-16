@@ -6,7 +6,7 @@ export class EpollMode extends Enum<EpollMode> {
     static LEVEL_TRIGGERED: EpollMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): EpollMode;
-    static values(): (Object | null)[];
+    static values(): EpollMode[];
     private constructor()
     name(): "EDGE_TRIGGERED" | "LEVEL_TRIGGERED";
 }

@@ -7,7 +7,7 @@ export class ApplicationProtocolConfig$SelectedListenerFailureBehavior extends E
     static FATAL_ALERT: ApplicationProtocolConfig$SelectedListenerFailureBehavior;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ApplicationProtocolConfig$SelectedListenerFailureBehavior;
-    static values(): (Object | null)[];
+    static values(): ApplicationProtocolConfig$SelectedListenerFailureBehavior[];
     private constructor()
     name(): "ACCEPT" | "FATAL_ALERT" | "CHOOSE_MY_LAST_PROTOCOL";
 }

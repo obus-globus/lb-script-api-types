@@ -7,7 +7,7 @@ export class RetentionPolicy extends Enum<RetentionPolicy> {
     static SOURCE: RetentionPolicy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RetentionPolicy;
-    static values(): (Object | null)[];
+    static values(): RetentionPolicy[];
     private constructor()
     name(): "SOURCE" | "CLASS" | "RUNTIME";
 }

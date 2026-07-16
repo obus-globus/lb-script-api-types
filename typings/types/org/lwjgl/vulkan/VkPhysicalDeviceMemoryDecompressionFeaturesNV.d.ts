@@ -21,35 +21,27 @@ export class VkPhysicalDeviceMemoryDecompressionFeaturesNV extends VkPhysicalDev
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceMemoryDecompressionFeaturesNV;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceMemoryDecompressionFeaturesNV;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceMemoryDecompressionFeaturesEXT;
     static create(paramarg0: number): VkPhysicalDeviceMemoryDecompressionFeaturesEXT;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceMemoryDecompressionFeaturesNV;
     static create(paramarg0: number): VkPhysicalDeviceMemoryDecompressionFeaturesNV;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceMemoryDecompressionFeaturesEXT;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceMemoryDecompressionFeaturesNV;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceMemoryDecompressionFeaturesEXT;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceMemoryDecompressionFeaturesEXT;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceMemoryDecompressionFeaturesNV;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceMemoryDecompressionFeaturesNV;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nmemoryDecompression(paramarg0: number): number;
     static nmemoryDecompression(paramarg0: number, paramarg1: number): void;
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

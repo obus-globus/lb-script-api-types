@@ -1,4 +1,3 @@
-import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Holder } from '../../../../../../net/minecraft/core/Holder.d.ts'
@@ -10,7 +9,6 @@ import type { BlockPredicateType } from '../../../../../../net/minecraft/world/l
 import type { StateTestingPredicate } from '../../../../../../net/minecraft/world/level/levelgen/blockpredicates/StateTestingPredicate.d.ts'
 import type { Fluid } from '../../../../../../net/minecraft/world/level/material/Fluid.d.ts'
 export class MatchingFluidsPredicate extends StateTestingPredicate {
-    static CODEC: Codec<BlockPredicate>;
     static CODEC: MapCodec<MatchingFluidsPredicate>;
     static ONLY_IN_AIR_OR_WATER_PREDICATE: BlockPredicate;
     static ONLY_IN_AIR_PREDICATE: BlockPredicate;

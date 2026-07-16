@@ -22,7 +22,7 @@ export class ObjectSpliterators$SpliteratorConcatenator<K extends unknown> exten
     // private computeCharacteristics(): number;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: K) => void): void;
-    getComparator(): (param0: Object) => boolean;
+    getComparator(): (param0: K, param1: K) => number;
     // private recomputeRemaining(): number;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: K) => void): boolean;

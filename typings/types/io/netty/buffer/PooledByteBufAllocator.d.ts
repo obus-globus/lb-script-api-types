@@ -1,6 +1,5 @@
 import type { AbstractByteBufAllocator } from '../../../io/netty/buffer/AbstractByteBufAllocator.d.ts'
 import type { ByteBuf } from '../../../io/netty/buffer/ByteBuf.d.ts'
-import type { ByteBufAllocator } from '../../../io/netty/buffer/ByteBufAllocator.d.ts'
 import type { ByteBufAllocatorMetricProvider } from '../../../io/netty/buffer/ByteBufAllocatorMetricProvider.d.ts'
 import type { PoolArena } from '../../../io/netty/buffer/PoolArena.d.ts'
 import type { PoolArenaMetric } from '../../../io/netty/buffer/PoolArenaMetric.d.ts'
@@ -10,7 +9,6 @@ import type { PooledByteBufAllocatorMetric } from '../../../io/netty/buffer/Pool
 import type { Runnable } from '../../../java/lang/Runnable.d.ts'
 import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
 export class PooledByteBufAllocator extends AbstractByteBufAllocator implements ByteBufAllocatorMetricProvider {
-    static DEFAULT: ByteBufAllocator;
     static DEFAULT: PooledByteBufAllocator;
     static defaultDisableCacheFinalizersForFastThreadLocalThreads(): boolean;
     static defaultMaxOrder(): number;

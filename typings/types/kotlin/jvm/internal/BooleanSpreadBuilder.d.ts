@@ -1,8 +1,7 @@
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { PrimitiveSpreadBuilder } from '../../../kotlin/jvm/internal/PrimitiveSpreadBuilder.d.ts'
-export class BooleanSpreadBuilder extends PrimitiveSpreadBuilder<(Object | null)[]> {
+export class BooleanSpreadBuilder extends PrimitiveSpreadBuilder<boolean[]> {
     constructor(size: number)
-    // private values: (Object | null)[];
+    // private values: boolean[];
     add(value: boolean): void;
-    toArray(): (Object | null)[];
+    toArray(): boolean[];
 }

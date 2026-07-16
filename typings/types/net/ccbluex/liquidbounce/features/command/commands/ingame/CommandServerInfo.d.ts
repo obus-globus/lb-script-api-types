@@ -3,6 +3,7 @@ import type { EventListener } from '../../../../../../../net/ccbluex/liquidbounc
 import type { Command } from '../../../../../../../net/ccbluex/liquidbounce/features/command/Command.d.ts'
 import type { Command$Factory } from '../../../../../../../net/ccbluex/liquidbounce/features/command/Command$Factory.d.ts'
 import type { CommandServerInfo$DetectionType } from '../../../../../../../net/ccbluex/liquidbounce/features/command/commands/ingame/CommandServerInfo$DetectionType.d.ts'
+import type { Component } from '../../../../../../../net/minecraft/network/chat/Component.d.ts'
 /**
  * ServerInfo Command
  *
@@ -29,6 +30,8 @@ import type { CommandServerInfo$DetectionType } from '../../../../../../../net/c
  */
 export class CommandServerInfo extends Object implements EventListener, Command$Factory {
     static INSTANCE: CommandServerInfo;
+    readonly debugDisplayName: Component;
+    readonly running: boolean;
     children(): EventListener[];
     createCommand(): Command;
     parent(): EventListener | null;

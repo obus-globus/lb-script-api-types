@@ -9,7 +9,7 @@ export class ProxyType extends Enum<ProxyType> {
     static from(paramarg0: Proxy$Type): ProxyType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ProxyType;
-    static values(): (Object | null)[];
+    static values(): ProxyType[];
     private constructor()
     name(): "HTTP" | "SOCKS4" | "SOCKS5";
 }

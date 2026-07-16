@@ -8,7 +8,7 @@ export class Bzip2BlockCompressor extends Object {
     // private block: number[];
     // private blockLength: number;
     // private blockLengthLimit: number;
-    // private blockValuesPresent: (Object | null)[];
+    // private blockValuesPresent: boolean[];
     // private bwtBlock: number[];
     // private crc: Crc32;
     // private rleCurrentValue: number;

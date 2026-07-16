@@ -8,7 +8,7 @@ export class IMapping$Type extends Enum<IMapping$Type> {
     static PACKAGE: IMapping$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): IMapping$Type;
-    static values(): (Object | null)[];
+    static values(): IMapping$Type[];
     private constructor()
     name(): "FIELD" | "METHOD" | "CLASS" | "PACKAGE";
 }

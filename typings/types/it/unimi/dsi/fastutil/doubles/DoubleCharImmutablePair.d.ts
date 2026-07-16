@@ -3,7 +3,7 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DoubleCharImmutablePair extends Object implements DoubleCharPair, Serializable {
-    static lexComparator(): (param0: Object) => boolean;
+    static lexComparator(): (param0: DoubleCharPair, param1: DoubleCharPair) => number;
     static of(paramarg0: number, paramarg1: string): DoubleCharImmutablePair;
     static of(paramarg0: number, paramarg1: string): DoubleCharPair;
     constructor(arg0: number, arg1: string)

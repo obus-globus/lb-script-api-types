@@ -6,7 +6,7 @@ export class LightLayer extends Enum<LightLayer> {
     static SKY: LightLayer;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): LightLayer;
-    static values(): (Object | null)[];
+    static values(): LightLayer[];
     private constructor()
     name(): "SKY" | "BLOCK";
 }

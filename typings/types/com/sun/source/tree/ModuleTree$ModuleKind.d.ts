@@ -6,7 +6,7 @@ export class ModuleTree$ModuleKind extends Enum<ModuleTree$ModuleKind> {
     static STRONG: ModuleTree$ModuleKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleTree$ModuleKind;
-    static values(): (Object | null)[];
+    static values(): ModuleTree$ModuleKind[];
     private constructor()
     name(): "OPEN" | "STRONG";
 }

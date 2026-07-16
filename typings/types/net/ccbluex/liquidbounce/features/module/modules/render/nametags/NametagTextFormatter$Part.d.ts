@@ -18,7 +18,7 @@ export class NametagTextFormatter$Part extends Enum<NametagTextFormatter$Part> i
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): NametagTextFormatter$Part;
-    static values(): (Object | null)[];
+    static values(): NametagTextFormatter$Part[];
     private constructor(tag: string)
     readonly tag: string;
     apply(entity: Entity): Component | null;

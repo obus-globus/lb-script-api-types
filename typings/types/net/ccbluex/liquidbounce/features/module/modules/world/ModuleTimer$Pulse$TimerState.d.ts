@@ -7,7 +7,7 @@ export class ModuleTimer$Pulse$TimerState extends Enum<ModuleTimer$Pulse$TimerSt
     static getEntries(): ModuleTimer$Pulse$TimerState[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleTimer$Pulse$TimerState;
-    static values(): (Object | null)[];
+    static values(): ModuleTimer$Pulse$TimerState[];
     private constructor()
     name(): "NORMAL_SPEED" | "BOOST_SPEED";
 }

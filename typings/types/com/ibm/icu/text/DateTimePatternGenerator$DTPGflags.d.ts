@@ -6,7 +6,7 @@ export class DateTimePatternGenerator$DTPGflags extends Enum<DateTimePatternGene
     static SKELETON_USES_CAP_J: DateTimePatternGenerator$DTPGflags;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DateTimePatternGenerator$DTPGflags;
-    static values(): (Object | null)[];
+    static values(): DateTimePatternGenerator$DTPGflags[];
     private constructor()
     name(): "FIX_FRACTIONAL_SECONDS" | "SKELETON_USES_CAP_J";
 }

@@ -7,7 +7,7 @@ export class InsnFinder$AnalyzerState extends Enum<InsnFinder$AnalyzerState> {
     static SEARCH: InsnFinder$AnalyzerState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): InsnFinder$AnalyzerState;
-    static values(): (Object | null)[];
+    static values(): InsnFinder$AnalyzerState[];
     private constructor()
     name(): "SEARCH" | "ANALYSE" | "COMPLETE";
 }

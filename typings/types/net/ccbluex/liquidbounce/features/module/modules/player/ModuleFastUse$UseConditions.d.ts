@@ -13,7 +13,7 @@ export class ModuleFastUse$UseConditions extends Enum<ModuleFastUse$UseCondition
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleFastUse$UseConditions;
-    static values(): (Object | null)[];
+    static values(): ModuleFastUse$UseConditions[];
     private constructor(tag: string, meetsConditions: () => boolean)
     readonly meetsConditions: () => boolean;
     readonly tag: string;

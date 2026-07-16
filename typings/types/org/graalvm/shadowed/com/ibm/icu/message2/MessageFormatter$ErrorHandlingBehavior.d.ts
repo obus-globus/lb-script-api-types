@@ -6,7 +6,7 @@ export class MessageFormatter$ErrorHandlingBehavior extends Enum<MessageFormatte
     static STRICT: MessageFormatter$ErrorHandlingBehavior;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): MessageFormatter$ErrorHandlingBehavior;
-    static values(): (Object | null)[];
+    static values(): MessageFormatter$ErrorHandlingBehavior[];
     private constructor()
     name(): "BEST_EFFORT" | "STRICT";
 }

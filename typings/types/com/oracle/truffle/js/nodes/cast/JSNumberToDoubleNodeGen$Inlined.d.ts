@@ -6,7 +6,6 @@ import type { JSNumberToDoubleNode } from '../../../../../../com/oracle/truffle/
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSNumberToDoubleNodeGen$Inlined extends JSNumberToDoubleNode implements UnadoptableNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(target: InlineSupport$InlineTarget)
     // private state_0_: InlineSupport$StateField;
     execute(arg0Value: Node, arg1Value: Object): number;

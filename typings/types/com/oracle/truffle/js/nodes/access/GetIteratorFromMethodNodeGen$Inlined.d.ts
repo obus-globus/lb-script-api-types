@@ -12,7 +12,6 @@ import type { IteratorRecord } from '../../../../../../com/oracle/truffle/js/run
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class GetIteratorFromMethodNodeGen$Inlined extends GetIteratorFromMethodNode implements UnadoptableNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(target: InlineSupport$InlineTarget)
     // private errorBranch_: InlinedBranchProfile;
     // private getIteratorDirectNode_: GetIteratorDirectNode;

@@ -27,7 +27,7 @@ export class MessageFormat$FormatType extends Enum<MessageFormat$FormatType> {
     static TIME: MessageFormat$FormatType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MessageFormat$FormatType;
-    static values(): (Object | null)[];
+    static values(): MessageFormat$FormatType[];
     private constructor()
     name(): "NUMBER" | "DATE" | "TIME" | "DTF_DATE" | "DTF_TIME" | "DTF_DATETIME" | "CHOICE" | "LIST" | "BASIC_ISO_DATE" | "ISO_LOCAL_DATE" | "ISO_OFFSET_DATE" | "ISO_DATE" | "ISO_LOCAL_TIME" | "ISO_OFFSET_TIME" | "ISO_TIME" | "ISO_LOCAL_DATE_TIME" | "ISO_OFFSET_DATE_TIME" | "ISO_ZONED_DATE_TIME" | "ISO_DATE_TIME" | "ISO_ORDINAL_DATE" | "ISO_WEEK_DATE" | "ISO_INSTANT" | "RFC_1123_DATE_TIME";
 }

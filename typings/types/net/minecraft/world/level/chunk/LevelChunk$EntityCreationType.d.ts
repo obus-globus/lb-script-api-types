@@ -7,7 +7,7 @@ export class LevelChunk$EntityCreationType extends Enum<LevelChunk$EntityCreatio
     static QUEUED: LevelChunk$EntityCreationType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): LevelChunk$EntityCreationType;
-    static values(): (Object | null)[];
+    static values(): LevelChunk$EntityCreationType[];
     private constructor()
     name(): "IMMEDIATE" | "QUEUED" | "CHECK";
 }

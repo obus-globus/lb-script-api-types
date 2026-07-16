@@ -5,7 +5,7 @@ import type { Function } from '../../../../../../../java/util/function/Function.
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class TextUtils extends Object {
     static iterateAll(paramarg0: TextComponent, paramarg1: (param0: TextComponent) => void): void;
-    static join(paramarg0: TextComponent, ...paramarg1: (Object | null)[]): TextComponent;
+    static join(paramarg0: TextComponent, ...paramarg1: TextComponent[]): TextComponent;
     static makeURLsClickable(paramarg0: TextComponent): TextComponent;
     static makeURLsClickable(paramarg0: TextComponent, paramarg1: boolean): TextComponent;
     static replace(paramarg0: TextComponent, paramarg1: string, paramarg2: (param0: TextComponent) => TextComponent): TextComponent;
@@ -13,6 +13,6 @@ export class TextUtils extends Object {
     static replaceRGBColors(paramarg0: TextComponent): TextComponent;
     static setTranslator(paramarg0: TextComponent, paramarg1: (param0: string) => string): void;
     static setTranslator(paramarg0: TextComponent, paramarg1: (param0: string) => string, paramarg2: (param0: string) => string): void;
-    static split(paramarg0: TextComponent, paramarg1: string, paramarg2: boolean): (Object | null)[];
+    static split(paramarg0: TextComponent, paramarg1: string, paramarg2: boolean): TextComponent[];
     constructor()
 }

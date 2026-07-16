@@ -6,7 +6,7 @@ export class CompactDecimalFormat$CompactStyle extends Enum<CompactDecimalFormat
     static SHORT: CompactDecimalFormat$CompactStyle;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CompactDecimalFormat$CompactStyle;
-    static values(): (Object | null)[];
+    static values(): CompactDecimalFormat$CompactStyle[];
     private constructor()
     name(): "SHORT" | "LONG";
 }

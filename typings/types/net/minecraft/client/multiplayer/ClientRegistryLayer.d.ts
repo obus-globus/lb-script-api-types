@@ -8,7 +8,7 @@ export class ClientRegistryLayer extends Enum<ClientRegistryLayer> {
     static createRegistryAccess(): LayeredRegistryAccess<ClientRegistryLayer>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ClientRegistryLayer;
-    static values(): (Object | null)[];
+    static values(): ClientRegistryLayer[];
     private constructor()
     name(): "STATIC" | "REMOTE";
 }

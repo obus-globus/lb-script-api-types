@@ -13,7 +13,7 @@ export class SubChunkPacket_HeightMapDataType extends Enum<SubChunkPacket_Height
     static getByValue(paramarg0: number, paramarg1: SubChunkPacket_HeightMapDataType): SubChunkPacket_HeightMapDataType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SubChunkPacket_HeightMapDataType;
-    static values(): (Object | null)[];
+    static values(): SubChunkPacket_HeightMapDataType[];
     private constructor(arg2: number)
     private constructor(arg2: SubChunkPacket_HeightMapDataType)
     readonly value: number;

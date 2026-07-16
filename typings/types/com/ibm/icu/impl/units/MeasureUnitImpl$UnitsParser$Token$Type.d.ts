@@ -12,7 +12,7 @@ export class MeasureUnitImpl$UnitsParser$Token$Type extends Enum<MeasureUnitImpl
     static TYPE_UNIT_CONSTANT: MeasureUnitImpl$UnitsParser$Token$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MeasureUnitImpl$UnitsParser$Token$Type;
-    static values(): (Object | null)[];
+    static values(): MeasureUnitImpl$UnitsParser$Token$Type[];
     private constructor()
     name(): "TYPE_UNDEFINED" | "TYPE_PREFIX" | "TYPE_COMPOUND_PART" | "TYPE_INITIAL_COMPOUND_PART" | "TYPE_POWER_PART" | "TYPE_SIMPLE_UNIT" | "TYPE_UNIT_CONSTANT" | "TYPE_ALIAS";
 }

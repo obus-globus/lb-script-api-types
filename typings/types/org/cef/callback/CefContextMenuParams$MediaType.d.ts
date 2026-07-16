@@ -10,7 +10,7 @@ export class CefContextMenuParams$MediaType extends Enum<CefContextMenuParams$Me
     static CM_MEDIATYPE_VIDEO: CefContextMenuParams$MediaType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CefContextMenuParams$MediaType;
-    static values(): (Object | null)[];
+    static values(): CefContextMenuParams$MediaType[];
     private constructor()
     name(): "CM_MEDIATYPE_NONE" | "CM_MEDIATYPE_IMAGE" | "CM_MEDIATYPE_VIDEO" | "CM_MEDIATYPE_AUDIO" | "CM_MEDIATYPE_FILE" | "CM_MEDIATYPE_PLUGIN";
 }

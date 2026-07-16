@@ -7,7 +7,6 @@ import type { PropertyGetNode$LinkedPropertyGetNode } from '../../../../../../co
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PropertyGetNode$IntPropertyGetNode extends PropertyGetNode$LinkedPropertyGetNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(property: Property, receiverCheck: PropertyCacheNode$ReceiverCheckNode)
     // private location: IntLocation;
     getValue(thisObj: Object, receiver: Object, defaultValue: Object, root: PropertyGetNode, guard: boolean): Object;

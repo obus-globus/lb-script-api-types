@@ -14,7 +14,7 @@ export class ScriptModuleDebugUtilities_ScriptDebugShapeType extends Enum<Script
     static getByValue(paramarg0: number, paramarg1: ScriptModuleDebugUtilities_ScriptDebugShapeType): ScriptModuleDebugUtilities_ScriptDebugShapeType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ScriptModuleDebugUtilities_ScriptDebugShapeType;
-    static values(): (Object | null)[];
+    static values(): ScriptModuleDebugUtilities_ScriptDebugShapeType[];
     private constructor(arg2: number)
     private constructor(arg2: ScriptModuleDebugUtilities_ScriptDebugShapeType)
     readonly value: number;

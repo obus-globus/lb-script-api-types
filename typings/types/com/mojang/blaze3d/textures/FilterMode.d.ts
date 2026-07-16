@@ -6,7 +6,7 @@ export class FilterMode extends Enum<FilterMode> {
     static NEAREST: FilterMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): FilterMode;
-    static values(): (Object | null)[];
+    static values(): FilterMode[];
     private constructor()
     name(): "NEAREST" | "LINEAR";
 }

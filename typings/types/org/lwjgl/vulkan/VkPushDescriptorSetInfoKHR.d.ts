@@ -26,28 +26,21 @@ export class VkPushDescriptorSetInfoKHR extends VkPushDescriptorSetInfo {
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPushDescriptorSetInfoKHR;
     static calloc(paramarg0: MemoryStack): VkPushDescriptorSetInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPushDescriptorSetInfo;
     static create(paramarg0: number): VkPushDescriptorSetInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPushDescriptorSetInfoKHR;
     static create(paramarg0: number): VkPushDescriptorSetInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPushDescriptorSetInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPushDescriptorSetInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPushDescriptorSetInfo;
     static malloc(paramarg0: MemoryStack): VkPushDescriptorSetInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPushDescriptorSetInfoKHR;
     static malloc(paramarg0: MemoryStack): VkPushDescriptorSetInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ndescriptorWriteCount(paramarg0: number): number;
     static ndescriptorWriteCount(paramarg0: number, paramarg1: number): void;
     static nlayout(paramarg0: number): number;
@@ -62,7 +55,6 @@ export class VkPushDescriptorSetInfoKHR extends VkPushDescriptorSetInfo {
     static nset(paramarg0: number, paramarg1: number): void;
     static nstageFlags(paramarg0: number): number;
     static nstageFlags(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

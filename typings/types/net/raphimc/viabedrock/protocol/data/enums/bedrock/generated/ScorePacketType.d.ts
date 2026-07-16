@@ -10,7 +10,7 @@ export class ScorePacketType extends Enum<ScorePacketType> {
     static getByValue(paramarg0: number, paramarg1: ScorePacketType): ScorePacketType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ScorePacketType;
-    static values(): (Object | null)[];
+    static values(): ScorePacketType[];
     private constructor(arg2: number)
     private constructor(arg2: ScorePacketType)
     readonly value: number;

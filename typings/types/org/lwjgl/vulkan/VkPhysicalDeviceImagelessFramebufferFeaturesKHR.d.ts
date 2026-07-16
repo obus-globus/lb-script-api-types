@@ -21,35 +21,27 @@ export class VkPhysicalDeviceImagelessFramebufferFeaturesKHR extends VkPhysicalD
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceImagelessFramebufferFeaturesKHR;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceImagelessFramebufferFeaturesKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceImagelessFramebufferFeatures;
     static create(paramarg0: number): VkPhysicalDeviceImagelessFramebufferFeatures;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceImagelessFramebufferFeaturesKHR;
     static create(paramarg0: number): VkPhysicalDeviceImagelessFramebufferFeaturesKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceImagelessFramebufferFeatures;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceImagelessFramebufferFeaturesKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceImagelessFramebufferFeatures;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceImagelessFramebufferFeatures;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceImagelessFramebufferFeaturesKHR;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceImagelessFramebufferFeaturesKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nimagelessFramebuffer(paramarg0: number): number;
     static nimagelessFramebuffer(paramarg0: number, paramarg1: number): void;
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

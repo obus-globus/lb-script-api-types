@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSToIntegerWithTruncationNodeGen extends JSToIntegerWithTruncationNode {
     static create(): JSToIntegerWithTruncationNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private jSOrForeignObject_toNumberNode_: JSToNumberNode;
     // private state_0_: number;

@@ -7,7 +7,7 @@ export class OreVeinifier$VeinType extends Enum<OreVeinifier$VeinType> {
     static IRON: OreVeinifier$VeinType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): OreVeinifier$VeinType;
-    static values(): (Object | null)[];
+    static values(): OreVeinifier$VeinType[];
     private constructor(ore: BlockState, rawOreBlock: BlockState, filler: BlockState, minY: number, maxY: number)
     // private filler: BlockState;
     // private maxY: number;

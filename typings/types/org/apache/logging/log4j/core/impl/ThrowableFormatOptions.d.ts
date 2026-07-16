@@ -7,7 +7,7 @@ export class ThrowableFormatOptions extends Object {
     static LOCALIZED_MESSAGE: string;
     static MESSAGE: string;
     static METHOD_NAME: string;
-    static newInstance(paramoptions: (Object | null)[]): ThrowableFormatOptions;
+    static newInstance(paramoptions: string[]): ThrowableFormatOptions;
     constructor()
     constructor(lines: number, separator: string, ignorePackages: string[], textRenderer: TextRenderer, suffix: string)
     constructor(packages: string[])

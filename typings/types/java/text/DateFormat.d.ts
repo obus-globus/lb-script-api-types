@@ -33,7 +33,7 @@ export abstract class DateFormat extends Format {
     static WEEK_OF_MONTH_FIELD: number;
     static WEEK_OF_YEAR_FIELD: number;
     static YEAR_FIELD: number;
-    static getAvailableLocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
     static getDateInstance(): DateFormat;
     static getDateInstance(paramarg0: number): DateFormat;
     static getDateInstance(paramarg0: number, paramarg1: Locale): DateFormat;

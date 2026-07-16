@@ -20,8 +20,8 @@ import type { ItemRewriter } from '../../../../../../com/viaversion/viaversion/r
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class BlockItemPacketRewriter1_20_5 extends ItemRewriter<ClientboundPacket1_20_3, ServerboundPacket1_20_5, Protocol1_20_3To1_20_5> {
-    static ATTRIBUTE_OPERATIONS: (Object | null)[];
-    static MOB_TAGS: (Object | null)[];
+    static ATTRIBUTE_OPERATIONS: string[];
+    static MOB_TAGS: string[];
     constructor(arg0: Protocol1_20_3To1_20_5)
     // private viaFabricPlus$armorMaxDamage_b1_8_1: Map<Object | null, Object | null>;
     // private viaFabricPlus$foodItems_b1_7_3: (Object | null)[];

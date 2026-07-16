@@ -4,7 +4,6 @@ import type { FloatBuffer } from '../../../java/nio/FloatBuffer.d.ts'
 import type { IntBuffer } from '../../../java/nio/IntBuffer.d.ts'
 import type { LongBuffer } from '../../../java/nio/LongBuffer.d.ts'
 import type { ShortBuffer } from '../../../java/nio/ShortBuffer.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../java/lang/CharSequence.d.ts'
 import type { PointerBuffer } from '../../../org/lwjgl/PointerBuffer.d.ts'
 import type { GL33C } from '../../../org/lwjgl/opengl/GL33C.d.ts'
@@ -940,8 +939,6 @@ export class GL40C extends GL33C {
     static glBlendFunci(paramarg0: number, paramarg1: number, paramarg2: number): void;
     static glBlitFramebuffer(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number): void;
     static glBufferData(paramarg0: number, paramarg1: number[], paramarg2: number): void;
-    static glBufferData(paramarg0: number, paramarg1: number[], paramarg2: number): void;
-    static glBufferData(paramarg0: number, paramarg1: number[], paramarg2: number): void;
     static glBufferData(paramarg0: number, paramarg1: ByteBuffer, paramarg2: number): void;
     static glBufferData(paramarg0: number, paramarg1: DoubleBuffer, paramarg2: number): void;
     static glBufferData(paramarg0: number, paramarg1: FloatBuffer, paramarg2: number): void;
@@ -949,10 +946,6 @@ export class GL40C extends GL33C {
     static glBufferData(paramarg0: number, paramarg1: LongBuffer, paramarg2: number): void;
     static glBufferData(paramarg0: number, paramarg1: ShortBuffer, paramarg2: number): void;
     static glBufferData(paramarg0: number, paramarg1: number, paramarg2: number): void;
-    static glBufferData(paramarg0: number, paramarg1: number[], paramarg2: number): void;
-    static glBufferData(paramarg0: number, paramarg1: number[], paramarg2: number): void;
-    static glBufferSubData(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
-    static glBufferSubData(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
     static glBufferSubData(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
     static glBufferSubData(paramarg0: number, paramarg1: number, paramarg2: ByteBuffer): void;
     static glBufferSubData(paramarg0: number, paramarg1: number, paramarg2: DoubleBuffer): void;
@@ -960,8 +953,6 @@ export class GL40C extends GL33C {
     static glBufferSubData(paramarg0: number, paramarg1: number, paramarg2: IntBuffer): void;
     static glBufferSubData(paramarg0: number, paramarg1: number, paramarg2: LongBuffer): void;
     static glBufferSubData(paramarg0: number, paramarg1: number, paramarg2: ShortBuffer): void;
-    static glBufferSubData(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
-    static glBufferSubData(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
     static glCheckFramebufferStatus(paramarg0: number): number;
     static glClampColor(paramarg0: number, paramarg1: number): void;
     static glClear(paramarg0: number): void;
@@ -1173,16 +1164,12 @@ export class GL40C extends GL33C {
     static glGetBufferPointer(paramarg0: number, paramarg1: number): number;
     static glGetBufferPointerv(paramarg0: number, paramarg1: number, paramarg2: PointerBuffer): void;
     static glGetBufferSubData(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
-    static glGetBufferSubData(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
-    static glGetBufferSubData(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
     static glGetBufferSubData(paramarg0: number, paramarg1: number, paramarg2: ByteBuffer): void;
     static glGetBufferSubData(paramarg0: number, paramarg1: number, paramarg2: DoubleBuffer): void;
     static glGetBufferSubData(paramarg0: number, paramarg1: number, paramarg2: FloatBuffer): void;
     static glGetBufferSubData(paramarg0: number, paramarg1: number, paramarg2: IntBuffer): void;
     static glGetBufferSubData(paramarg0: number, paramarg1: number, paramarg2: LongBuffer): void;
     static glGetBufferSubData(paramarg0: number, paramarg1: number, paramarg2: ShortBuffer): void;
-    static glGetBufferSubData(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
-    static glGetBufferSubData(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
     static glGetCompressedTexImage(paramarg0: number, paramarg1: number, paramarg2: ByteBuffer): void;
     static glGetCompressedTexImage(paramarg0: number, paramarg1: number, paramarg2: number): void;
     static glGetDouble(paramarg0: number): number;
@@ -1284,15 +1271,12 @@ export class GL40C extends GL33C {
     static glGetSynciv(paramarg0: number, paramarg1: number, paramarg2: number[], paramarg3: number[]): void;
     static glGetSynciv(paramarg0: number, paramarg1: number, paramarg2: IntBuffer, paramarg3: IntBuffer): void;
     static glGetTexImage(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number[]): void;
-    static glGetTexImage(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number[]): void;
-    static glGetTexImage(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number[]): void;
     static glGetTexImage(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: ByteBuffer): void;
     static glGetTexImage(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: DoubleBuffer): void;
     static glGetTexImage(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: FloatBuffer): void;
     static glGetTexImage(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: IntBuffer): void;
     static glGetTexImage(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: ShortBuffer): void;
     static glGetTexImage(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number): void;
-    static glGetTexImage(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number[]): void;
     static glGetTexLevelParameterf(paramarg0: number, paramarg1: number, paramarg2: number): number;
     static glGetTexLevelParameterfv(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number[]): void;
     static glGetTexLevelParameterfv(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: FloatBuffer): void;
@@ -1318,7 +1302,7 @@ export class GL40C extends GL33C {
     static glGetUniformBlockIndex(paramarg0: number, paramarg1: CharSequence): number;
     static glGetUniformBlockIndex(paramarg0: number, paramarg1: ByteBuffer): number;
     static glGetUniformIndices(paramarg0: number, paramarg1: CharSequence): number;
-    static glGetUniformIndices(paramarg0: number, paramarg1: (Object | null)[], paramarg2: IntBuffer): void;
+    static glGetUniformIndices(paramarg0: number, paramarg1: CharSequence[], paramarg2: IntBuffer): void;
     static glGetUniformIndices(paramarg0: number, paramarg1: PointerBuffer, paramarg2: number[]): void;
     static glGetUniformIndices(paramarg0: number, paramarg1: PointerBuffer, paramarg2: IntBuffer): void;
     static glGetUniformLocation(paramarg0: number, paramarg1: CharSequence): number;
@@ -1402,13 +1386,11 @@ export class GL40C extends GL33C {
     static glQueryCounter(paramarg0: number, paramarg1: number): void;
     static glReadBuffer(paramarg0: number): void;
     static glReadPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number[]): void;
-    static glReadPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number[]): void;
     static glReadPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: ByteBuffer): void;
     static glReadPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: FloatBuffer): void;
     static glReadPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: IntBuffer): void;
     static glReadPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: ShortBuffer): void;
     static glReadPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number): void;
-    static glReadPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number[]): void;
     static glRenderbufferStorage(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): void;
     static glRenderbufferStorageMultisample(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number): void;
     static glResumeTransformFeedback(): void;
@@ -1426,7 +1408,7 @@ export class GL40C extends GL33C {
     static glSamplerParameteriv(paramarg0: number, paramarg1: number, paramarg2: IntBuffer): void;
     static glScissor(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): void;
     static glShaderSource(paramarg0: number, paramarg1: CharSequence): void;
-    static glShaderSource(paramarg0: number, ...paramarg1: (Object | null)[]): void;
+    static glShaderSource(paramarg0: number, ...paramarg1: CharSequence[]): void;
     static glShaderSource(paramarg0: number, paramarg1: PointerBuffer, paramarg2: number[]): void;
     static glShaderSource(paramarg0: number, paramarg1: PointerBuffer, paramarg2: IntBuffer): void;
     static glStencilFunc(paramarg0: number, paramarg1: number, paramarg2: number): void;
@@ -1437,17 +1419,12 @@ export class GL40C extends GL33C {
     static glStencilOpSeparate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): void;
     static glTexBuffer(paramarg0: number, paramarg1: number, paramarg2: number): void;
     static glTexImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number[]): void;
-    static glTexImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number[]): void;
-    static glTexImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number[]): void;
     static glTexImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: ByteBuffer): void;
     static glTexImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: DoubleBuffer): void;
     static glTexImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: FloatBuffer): void;
     static glTexImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: IntBuffer): void;
     static glTexImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: ShortBuffer): void;
     static glTexImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number): void;
-    static glTexImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number[]): void;
-    static glTexImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number[]): void;
-    static glTexImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number[]): void;
     static glTexImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number[]): void;
     static glTexImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: ByteBuffer): void;
     static glTexImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: DoubleBuffer): void;
@@ -1455,10 +1432,7 @@ export class GL40C extends GL33C {
     static glTexImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: IntBuffer): void;
     static glTexImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: ShortBuffer): void;
     static glTexImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number): void;
-    static glTexImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number[]): void;
     static glTexImage2DMultisample(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: boolean): void;
-    static glTexImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number[]): void;
-    static glTexImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number[]): void;
     static glTexImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number[]): void;
     static glTexImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: ByteBuffer): void;
     static glTexImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: DoubleBuffer): void;
@@ -1466,7 +1440,6 @@ export class GL40C extends GL33C {
     static glTexImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: IntBuffer): void;
     static glTexImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: ShortBuffer): void;
     static glTexImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number): void;
-    static glTexImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number[]): void;
     static glTexImage3DMultisample(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: boolean): void;
     static glTexParameterIi(paramarg0: number, paramarg1: number, paramarg2: number): void;
     static glTexParameterIiv(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
@@ -1481,17 +1454,12 @@ export class GL40C extends GL33C {
     static glTexParameteriv(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
     static glTexParameteriv(paramarg0: number, paramarg1: number, paramarg2: IntBuffer): void;
     static glTexSubImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number[]): void;
-    static glTexSubImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number[]): void;
-    static glTexSubImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number[]): void;
     static glTexSubImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: ByteBuffer): void;
     static glTexSubImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: DoubleBuffer): void;
     static glTexSubImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: FloatBuffer): void;
     static glTexSubImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: IntBuffer): void;
     static glTexSubImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: ShortBuffer): void;
     static glTexSubImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number): void;
-    static glTexSubImage1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number[]): void;
-    static glTexSubImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number[]): void;
-    static glTexSubImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number[]): void;
     static glTexSubImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number[]): void;
     static glTexSubImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: ByteBuffer): void;
     static glTexSubImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: DoubleBuffer): void;
@@ -1499,9 +1467,6 @@ export class GL40C extends GL33C {
     static glTexSubImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: IntBuffer): void;
     static glTexSubImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: ShortBuffer): void;
     static glTexSubImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number): void;
-    static glTexSubImage2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number[]): void;
-    static glTexSubImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number, paramarg10: number[]): void;
-    static glTexSubImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number, paramarg10: number[]): void;
     static glTexSubImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number, paramarg10: number[]): void;
     static glTexSubImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number, paramarg10: ByteBuffer): void;
     static glTexSubImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number, paramarg10: DoubleBuffer): void;
@@ -1509,9 +1474,8 @@ export class GL40C extends GL33C {
     static glTexSubImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number, paramarg10: IntBuffer): void;
     static glTexSubImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number, paramarg10: ShortBuffer): void;
     static glTexSubImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number, paramarg10: number): void;
-    static glTexSubImage3D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number, paramarg10: number[]): void;
     static glTransformFeedbackVaryings(paramarg0: number, paramarg1: CharSequence, paramarg2: number): void;
-    static glTransformFeedbackVaryings(paramarg0: number, paramarg1: (Object | null)[], paramarg2: number): void;
+    static glTransformFeedbackVaryings(paramarg0: number, paramarg1: CharSequence[], paramarg2: number): void;
     static glTransformFeedbackVaryings(paramarg0: number, paramarg1: PointerBuffer, paramarg2: number): void;
     static glUniform1d(paramarg0: number, paramarg1: number): void;
     static glUniform1dv(paramarg0: number, paramarg1: number[]): void;

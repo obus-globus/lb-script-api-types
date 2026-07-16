@@ -20,7 +20,6 @@ import type { ByteBuffer } from '../../../../../java/nio/ByteBuffer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class TypedArrayPrototypeBuiltins$SetTypedArrayNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     // private getByteBufferInterop: InteropLibrary;
     // private interopLibrary: InteropLibrary;

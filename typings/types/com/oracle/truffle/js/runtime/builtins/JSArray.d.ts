@@ -24,9 +24,9 @@ import type { Number } from '../../../../../../java/lang/Number.d.ts'
 export class JSArray extends JSAbstractArray implements JSConstructorFactory$WithFunctionsAndSpecies, PrototypeSupplier {
     static ARRAY_PROTOTYPE_NO_ELEMENTS_INVALIDATION: string;
     static CLASS_NAME: TruffleString;
-    static DEFAULT_JSARRAY_COMPARATOR: (param0: Object) => boolean;
-    static DEFAULT_JSARRAY_DOUBLE_COMPARATOR: (param0: Object) => boolean;
-    static DEFAULT_JSARRAY_INTEGER_COMPARATOR: (param0: Object) => boolean;
+    static DEFAULT_JSARRAY_COMPARATOR: (param0: Object, param1: Object) => number;
+    static DEFAULT_JSARRAY_DOUBLE_COMPARATOR: (param0: Object, param1: Object) => number;
+    static DEFAULT_JSARRAY_INTEGER_COMPARATOR: (param0: Object, param1: Object) => number;
     static GET_SYMBOL_SPECIES_NAME: TruffleString;
     static INSTANCE: JSArray;
     static LAZY_REGEX_ORIGINAL_INPUT_ID: HiddenKey;
@@ -49,7 +49,6 @@ export class JSArray extends JSAbstractArray implements JSConstructorFactory$Wit
     static arraySetHoleCount(paramthisObj: JSDynamicObject, paramholeCount: number): void;
     static arraySetIndexOffset(paramthisObj: JSDynamicObject, paramindexOffset: number): void;
     static arraySetLength(paramthisObj: JSDynamicObject, paramlength: number): void;
-    static arraySetLength(paramthisObj: JSDynamicObject, paramlength: number): void;
     static arraySetUsedLength(paramthisObj: JSDynamicObject, paramusedLength: number): void;
     static checkProtoCycle(paramthisObj: JSDynamicObject, paramnewPrototype: JSDynamicObject): boolean;
     static create(paramcontext: JSContext, paramrealm: JSRealm, paramarrayType: DynamicArray, paramarray: Object, paramlength: number): JSArrayObject;
@@ -60,7 +59,7 @@ export class JSArray extends JSAbstractArray implements JSConstructorFactory$Wit
     static create(paramcontext: JSContext, paramrealm: JSRealm, paramproto: JSDynamicObject, paramarrayType: DynamicArray, paramarray: Object, paramlength: number, paramusedLength: number): JSArrayObject;
     static create(paramcontext: JSContext, paramrealm: JSRealm, paramproto: JSDynamicObject, paramarrayType: DynamicArray, paramarray: Object, paramlength: number, paramusedLength: number, paramindexOffset: number, paramarrayOffset: number): JSArrayObject;
     static create(paramcontext: JSContext, paramrealm: JSRealm, paramproto: JSDynamicObject, paramarrayType: DynamicArray, paramarray: Object, paramlength: number, paramusedLength: number, paramindexOffset: number, paramarrayOffset: number, paramholeCount: number): JSArrayObject;
-    static createConstant(paramcontext: JSContext, paramrealm: JSRealm, paramelements: (Object | null)[]): JSArrayObject;
+    static createConstant(paramcontext: JSContext, paramrealm: JSRealm, paramelements: Object[]): JSArrayObject;
     static createConstantByteArray(paramcontext: JSContext, paramrealm: JSRealm, parambyteArray: number[]): JSArrayObject;
     static createConstantDoubleArray(paramcontext: JSContext, paramrealm: JSRealm, paramdoubleArray: number[]): JSArrayObject;
     static createConstantEmptyArray(paramcontext: JSContext, paramrealm: JSRealm): JSArrayObject;
@@ -68,7 +67,7 @@ export class JSArray extends JSAbstractArray implements JSConstructorFactory$Wit
     static createConstantEmptyArray(paramcontext: JSContext, paramrealm: JSRealm, paramprototype: JSDynamicObject, paramsite: ArrayAllocationSite, paramcapacity: number): JSArrayObject;
     static createConstantEmptyArray(paramcontext: JSContext, paramrealm: JSRealm, paramcapacity: number): JSArrayObject;
     static createConstantIntArray(paramcontext: JSContext, paramrealm: JSRealm, paramintArray: number[]): JSArrayObject;
-    static createConstantObjectArray(paramcontext: JSContext, paramrealm: JSRealm, paramobjectArray: (Object | null)[]): JSArrayObject;
+    static createConstantObjectArray(paramcontext: JSContext, paramrealm: JSRealm, paramobjectArray: Object[]): JSArrayObject;
     static createConstructor(paramrealm: JSRealm): JSConstructor;
     static createDefaultProto(paramcontext: JSContext, paramrealm: JSRealm, paramarrayType: DynamicArray, paramarray: Object, paramsite: ArrayAllocationSite, paramlength: number, paramusedLength: number, paramindexOffset: number, paramarrayOffset: number, paramholeCount: number): JSArrayObject;
     static createEmpty(paramcontext: JSContext, paramrealm: JSRealm, paramlength: number): JSArrayObject;
@@ -83,11 +82,11 @@ export class JSArray extends JSAbstractArray implements JSConstructorFactory$Wit
     static createWithProto(paramcontext: JSContext, paramrealm: JSRealm, paramprototype: JSDynamicObject, paramarrayType: DynamicArray, paramarray: Object, paramsite: ArrayAllocationSite, paramlength: number, paramusedLength: number, paramindexOffset: number, paramarrayOffset: number, paramholeCount: number): JSArrayObject;
     static createZeroBasedDoubleArray(paramcontext: JSContext, paramrealm: JSRealm, paramproto: JSDynamicObject, paramdoubleArray: number[]): JSArrayObject;
     static createZeroBasedDoubleArray(paramcontext: JSContext, paramrealm: JSRealm, paramdoubleArray: number[]): JSArrayObject;
-    static createZeroBasedHolesObjectArray(paramcontext: JSContext, paramrealm: JSRealm, paramobjectArray: (Object | null)[], paramusedLength: number, paramarrayOffset: number, paramholeCount: number): JSArrayObject;
+    static createZeroBasedHolesObjectArray(paramcontext: JSContext, paramrealm: JSRealm, paramobjectArray: Object[], paramusedLength: number, paramarrayOffset: number, paramholeCount: number): JSArrayObject;
     static createZeroBasedIntArray(paramcontext: JSContext, paramrealm: JSRealm, paramproto: JSDynamicObject, paramintArray: number[]): JSArrayObject;
     static createZeroBasedIntArray(paramcontext: JSContext, paramrealm: JSRealm, paramintArray: number[]): JSArrayObject;
-    static createZeroBasedJSObjectArray(paramcontext: JSContext, paramrealm: JSRealm, paramobjectArray: (Object | null)[]): JSArrayObject;
-    static createZeroBasedObjectArray(paramcontext: JSContext, paramrealm: JSRealm, paramobjectArray: (Object | null)[]): JSArrayObject;
+    static createZeroBasedJSObjectArray(paramcontext: JSContext, paramrealm: JSRealm, paramobjectArray: JSDynamicObject[]): JSArrayObject;
+    static createZeroBasedObjectArray(paramcontext: JSContext, paramrealm: JSRealm, paramobjectArray: Object[]): JSArrayObject;
     static filterOwnPropertyKeys(paramownPropertyKeys: Object[], paramstrings: boolean, paramsymbols: boolean): Object[];
     static isArrayPrototype(paramobject: JSDynamicObject): boolean;
     static isInstance(paramobject: JSDynamicObject, paramjsclass: JSClass): boolean;
@@ -104,7 +103,7 @@ export class JSArray extends JSAbstractArray implements JSConstructorFactory$Wit
     static setIntegrityLevelFast(paramthisObj: JSDynamicObject, paramfreeze: boolean): boolean;
     static setLength(paramstore: JSDynamicObject, paramvalue: Object, paramoriginatingNode: Node): boolean;
     static testIntegrityLevelFast(paramobj: JSDynamicObject, paramfrozen: boolean): boolean;
-    static toArray(paramthisObj: JSDynamicObject): (Object | null)[];
+    static toArray(paramthisObj: JSDynamicObject): Object[];
     static toArrayLengthOrRangeError(paramlen: Number, paramlen32: Number, paramoriginatingNode: Node): number;
     static toArrayLengthOrRangeError(paramobj: Object, paramoriginatingNode: Node): number;
     private constructor()

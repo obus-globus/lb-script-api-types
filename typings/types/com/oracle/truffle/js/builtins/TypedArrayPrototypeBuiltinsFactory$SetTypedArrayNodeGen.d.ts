@@ -9,7 +9,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class TypedArrayPrototypeBuiltinsFactory$SetTypedArrayNodeGen extends TypedArrayPrototypeBuiltins$SetTypedArrayNode {
     static create(): TypedArrayPrototypeBuiltins$SetTypedArrayNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private fallback_getLengthNode_: JSGetLengthNode;
     // private fallback_toObjectNode_: JSToObjectNode;

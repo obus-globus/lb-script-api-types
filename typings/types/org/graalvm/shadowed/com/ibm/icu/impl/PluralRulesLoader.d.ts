@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { PluralRules } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/PluralRules.d.ts'
 import type { PluralRules$Factory } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/PluralRules$Factory.d.ts'
 import type { PluralRules$PluralType } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/PluralRules$PluralType.d.ts'
@@ -16,7 +15,7 @@ export class PluralRulesLoader extends PluralRules$Factory {
     forLocale(locale: ULocale): PluralRules;
     forLocale(locale: ULocale, type: PluralRules$PluralType): PluralRules;
     getAvailableULocales(): ULocale[];
-    getFunctionalEquivalent(locale: ULocale, isAvailable: (Object | null)[]): ULocale;
+    getFunctionalEquivalent(locale: ULocale, isAvailable: boolean[]): ULocale;
     // private getLocaleIdToRulesIdMap(type: PluralRules$PluralType): { [key: string]: string };
     getOrCreateRulesForLocale(locale: ULocale, type: PluralRules$PluralType): PluralRules;
     getPluralBundle(): UResourceBundle;

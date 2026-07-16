@@ -11,7 +11,7 @@ export class PhotoType extends Enum<PhotoType> {
     static getByValue(paramarg0: number, paramarg1: PhotoType): PhotoType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PhotoType;
-    static values(): (Object | null)[];
+    static values(): PhotoType[];
     private constructor(arg2: number)
     private constructor(arg2: PhotoType)
     readonly value: number;

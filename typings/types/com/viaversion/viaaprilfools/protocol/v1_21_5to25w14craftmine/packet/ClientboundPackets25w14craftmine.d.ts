@@ -143,7 +143,7 @@ export class ClientboundPackets25w14craftmine extends Enum<ClientboundPackets25w
     static UPDATE_UNLOCKED_EFFECTS: ClientboundPackets25w14craftmine;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClientboundPackets25w14craftmine;
-    static values(): (Object | null)[];
+    static values(): ClientboundPackets25w14craftmine[];
     private constructor()
     direction(): Direction;
     getId(): number;

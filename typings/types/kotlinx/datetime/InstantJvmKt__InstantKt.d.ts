@@ -11,6 +11,5 @@ export class InstantJvmKt__InstantKt extends Object {
     static plus(paramarg0: Instant, paramarg1: DateTimePeriod, paramarg2: TimeZone): Instant;
     static plus(paramarg0: Instant, paramarg1: DateTimeUnit, paramarg2: TimeZone): Instant;
     static plus(paramarg0: Instant, paramarg1: number, paramarg2: DateTimeUnit$TimeBased): Instant;
-    static plus(paramarg0: Instant, paramarg1: number, paramarg2: DateTimeUnit, paramarg3: TimeZone): Instant;
     static until(paramarg0: Instant, paramarg1: Instant, paramarg2: DateTimeUnit, paramarg3: TimeZone): number;
 }

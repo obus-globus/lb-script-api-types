@@ -15,7 +15,6 @@ export class SlotDisplay$DyedSlotDemo extends Record implements SlotDisplay {
     static CODEC: Codec<SlotDisplay>;
     static MAP_CODEC: MapCodec<SlotDisplay$DyedSlotDemo>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, SlotDisplay$DyedSlotDemo>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, SlotDisplay>;
     static TYPE: SlotDisplay$Type<SlotDisplay$DyedSlotDemo>;
     constructor(dye: SlotDisplay, target: SlotDisplay)
     // private dye: SlotDisplay;

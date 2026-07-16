@@ -12,7 +12,7 @@ export class ExternalEmbedder extends Object implements Embedder {
     static METADATA_COMMAND_ARGUMENTS_SERIALIZED_TOKEN: string;
     static METADATA_COMMAND_ARGUMENTS_TOKEN: string;
     static check(paramarg0: string, ...paramarg1: number[]): boolean;
-    static check(paramarg0: (Object | null)[], ...paramarg1: number[]): boolean;
+    static check(paramarg0: string[], ...paramarg1: number[]): boolean;
     constructor()
     readonly command: string[];
     readonly commandAppendOperator: string;

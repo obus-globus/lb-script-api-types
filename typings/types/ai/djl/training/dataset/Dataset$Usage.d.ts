@@ -7,7 +7,7 @@ export class Dataset$Usage extends Enum<Dataset$Usage> {
     static VALIDATION: Dataset$Usage;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Dataset$Usage;
-    static values(): (Object | null)[];
+    static values(): Dataset$Usage[];
     private constructor()
     name(): "TRAIN" | "TEST" | "VALIDATION";
 }

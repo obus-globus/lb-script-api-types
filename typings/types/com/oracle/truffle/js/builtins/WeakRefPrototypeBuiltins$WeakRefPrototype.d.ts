@@ -11,7 +11,7 @@ export class WeakRefPrototypeBuiltins$WeakRefPrototype extends Enum<WeakRefProto
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): WeakRefPrototypeBuiltins$WeakRefPrototype;
-    static values(): (Object | null)[];
+    static values(): WeakRefPrototypeBuiltins$WeakRefPrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

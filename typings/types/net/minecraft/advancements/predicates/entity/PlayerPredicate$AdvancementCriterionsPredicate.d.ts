@@ -5,7 +5,6 @@ import type { AdvancementProgress } from '../../../../../net/minecraft/advanceme
 import type { PlayerPredicate$AdvancementPredicate } from '../../../../../net/minecraft/advancements/predicates/entity/PlayerPredicate$AdvancementPredicate.d.ts'
 export class PlayerPredicate$AdvancementCriterionsPredicate extends Record implements PlayerPredicate$AdvancementPredicate {
     static CODEC: Codec<PlayerPredicate$AdvancementCriterionsPredicate>;
-    static CODEC: Codec<PlayerPredicate$AdvancementPredicate>;
     private constructor(criterions: { [key: string]: any })
     // private criterions: { [key: string]: any };
     criterions(): { [key: string]: any };

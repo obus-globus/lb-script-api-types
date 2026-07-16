@@ -22,28 +22,21 @@ export class VkMutableDescriptorTypeCreateInfoVALVE extends VkMutableDescriptorT
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkMutableDescriptorTypeCreateInfoVALVE;
     static calloc(paramarg0: MemoryStack): VkMutableDescriptorTypeCreateInfoVALVE;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkMutableDescriptorTypeCreateInfoEXT;
     static create(paramarg0: number): VkMutableDescriptorTypeCreateInfoEXT;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkMutableDescriptorTypeCreateInfoVALVE;
     static create(paramarg0: number): VkMutableDescriptorTypeCreateInfoVALVE;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkMutableDescriptorTypeCreateInfoEXT;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkMutableDescriptorTypeCreateInfoVALVE;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkMutableDescriptorTypeCreateInfoEXT;
     static malloc(paramarg0: MemoryStack): VkMutableDescriptorTypeCreateInfoEXT;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkMutableDescriptorTypeCreateInfoVALVE;
     static malloc(paramarg0: MemoryStack): VkMutableDescriptorTypeCreateInfoVALVE;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nmutableDescriptorTypeListCount(paramarg0: number): number;
     static nmutableDescriptorTypeListCount(paramarg0: number, paramarg1: number): void;
     static npMutableDescriptorTypeLists(paramarg0: number): (Object | null)[];
@@ -52,7 +45,6 @@ export class VkMutableDescriptorTypeCreateInfoVALVE extends VkMutableDescriptorT
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

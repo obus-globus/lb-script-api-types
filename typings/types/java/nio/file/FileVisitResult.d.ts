@@ -8,7 +8,7 @@ export class FileVisitResult extends Enum<FileVisitResult> {
     static TERMINATE: FileVisitResult;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FileVisitResult;
-    static values(): (Object | null)[];
+    static values(): FileVisitResult[];
     private constructor()
     name(): "CONTINUE" | "TERMINATE" | "SKIP_SUBTREE" | "SKIP_SIBLINGS";
 }

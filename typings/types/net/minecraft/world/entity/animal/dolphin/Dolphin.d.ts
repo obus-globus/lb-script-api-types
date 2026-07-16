@@ -136,7 +136,6 @@ export class Dolphin extends AgeableWaterCreature {
     static TAG_UUID: string;
     static TORSIONAL_ELASTICITY: number;
     static TOTAL_AIR_SUPPLY: number;
-    static TOTAL_AIR_SUPPLY: number;
     static UPDATE_GOAL_SELECTOR_EVERY_N_TICKS: number;
     static WATER_DRAG: number;
     static WAYPOINT_TRANSMIT_RANGE_HIDE_MODIFIER: AttributeModifier;

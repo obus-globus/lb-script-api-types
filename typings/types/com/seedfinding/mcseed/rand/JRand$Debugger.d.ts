@@ -11,7 +11,6 @@ export class JRand$Debugger extends JRand {
     static ofInternalSeed(paramarg0: number): JRand;
     static ofScrambledSeed(paramarg0: number): JRand;
     static shuffle(paramarg0: Object[], paramarg1: JRand): void;
-    static swap(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): void;
     static swap(paramarg0: Object[], paramarg1: number, paramarg2: number): void;
     constructor(arg0: JRand)
     // private delegate: JRand;

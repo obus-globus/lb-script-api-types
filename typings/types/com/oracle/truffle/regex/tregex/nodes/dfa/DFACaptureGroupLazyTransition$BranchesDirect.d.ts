@@ -4,7 +4,7 @@ import type { TRegexDFAExecutorLocals } from '../../../../../../../com/oracle/tr
 import type { TRegexDFAExecutorNode } from '../../../../../../../com/oracle/truffle/regex/tregex/nodes/dfa/TRegexDFAExecutorNode.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class DFACaptureGroupLazyTransition$BranchesDirect extends DFACaptureGroupLazyTransition$Branches {
-    static create(paramtransitions: (Object | null)[]): DFACaptureGroupLazyTransition$BranchesDirect;
+    static create(paramtransitions: DFACaptureGroupPartialTransition[]): DFACaptureGroupLazyTransition$BranchesDirect;
     constructor(transitions: DFACaptureGroupPartialTransition[])
     apply(locals: TRegexDFAExecutorLocals, executor: TRegexDFAExecutorNode): void;
     apply(locals: TRegexDFAExecutorLocals, executor: TRegexDFAExecutorNode, preFinal: boolean): void;

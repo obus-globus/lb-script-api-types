@@ -7,7 +7,7 @@ export class ClientboundCustomChatCompletionsPacket$Action extends Enum<Clientbo
     static SET: ClientboundCustomChatCompletionsPacket$Action;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ClientboundCustomChatCompletionsPacket$Action;
-    static values(): (Object | null)[];
+    static values(): ClientboundCustomChatCompletionsPacket$Action[];
     private constructor()
     name(): "ADD" | "REMOVE" | "SET";
 }

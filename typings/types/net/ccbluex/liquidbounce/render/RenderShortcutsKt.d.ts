@@ -99,7 +99,7 @@ export class RenderShortcutsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L258 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:258}
      */
-    static drawLineStrip(paramarg0: WorldRenderEnvironment, paramarg1: number, ...paramarg2: (Object | null)[]): void;
+    static drawLineStrip(paramarg0: WorldRenderEnvironment, paramarg1: number, ...paramarg2: Vec3f[]): void;
     static drawLineStrip(paramarg0: WorldRenderEnvironment, paramarg1: number, paramarg2: VertexList): void;
     /**
      * Function to draw lines using the specified {@link positions} vectors.
@@ -108,7 +108,7 @@ export class RenderShortcutsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L231 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:231}
      */
-    static drawLines(paramarg0: WorldRenderEnvironment, paramarg1: number, ...paramarg2: (Object | null)[]): void;
+    static drawLines(paramarg0: WorldRenderEnvironment, paramarg1: number, ...paramarg2: Vec3f[]): void;
     static drawLines(paramarg0: WorldRenderEnvironment, paramarg1: number, paramarg2: VertexList): void;
     /**
      * Draws lines with {@link width}.
@@ -116,7 +116,7 @@ export class RenderShortcutsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L180 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:180}
      */
-    static drawLinesWithWidth(paramarg0: WorldRenderEnvironment, paramarg1: number, paramarg2: number, ...paramarg3: (Object | null)[]): void;
+    static drawLinesWithWidth(paramarg0: WorldRenderEnvironment, paramarg1: number, paramarg2: number, ...paramarg3: Vec3f[]): void;
     static drawLinesWithWidth(paramarg0: WorldRenderEnvironment, paramarg1: number, paramarg2: number, paramarg3: VertexList): void;
     /**
      * Function to draw a flat plane on the XZ axis with an optional outline.

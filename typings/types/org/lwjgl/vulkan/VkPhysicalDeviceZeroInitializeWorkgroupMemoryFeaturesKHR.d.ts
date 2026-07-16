@@ -21,35 +21,27 @@ export class VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeaturesKHR extends Vk
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeaturesKHR;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeaturesKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures;
     static create(paramarg0: number): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeaturesKHR;
     static create(paramarg0: number): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeaturesKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeaturesKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeaturesKHR;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeaturesKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
     static nshaderZeroInitializeWorkgroupMemory(paramarg0: number): number;
     static nshaderZeroInitializeWorkgroupMemory(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

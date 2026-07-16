@@ -14,7 +14,7 @@ export class MethodHandleImpl$Intrinsic extends Enum<MethodHandleImpl$Intrinsic>
     static TRY_FINALLY: MethodHandleImpl$Intrinsic;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MethodHandleImpl$Intrinsic;
-    static values(): (Object | null)[];
+    static values(): MethodHandleImpl$Intrinsic[];
     private constructor()
     name(): "SELECT_ALTERNATIVE" | "GUARD_WITH_CATCH" | "TRY_FINALLY" | "TABLE_SWITCH" | "LOOP" | "ARRAY_LOAD" | "ARRAY_STORE" | "ARRAY_LENGTH" | "IDENTITY" | "NONE";
 }

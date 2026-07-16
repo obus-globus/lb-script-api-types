@@ -15,7 +15,7 @@ export class Direction extends Enum<Direction> {
     static getFromVerticalId(paramarg0: number, paramarg1: Direction): Direction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Direction;
-    static values(): (Object | null)[];
+    static values(): Direction[];
     private constructor(arg2: number, arg3: number, arg4: BlockFace)
     // private blockFace: BlockFace;
     // private horizontalId: number;

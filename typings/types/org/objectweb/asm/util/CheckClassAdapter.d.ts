@@ -15,7 +15,7 @@ export class CheckClassAdapter extends ClassVisitor {
     static checkClassSignature(paramarg0: string): void;
     static checkFieldSignature(paramarg0: string): void;
     static checkMethodSignature(paramarg0: string): void;
-    static main(paramarg0: (Object | null)[]): void;
+    static main(paramarg0: string[]): void;
     static verify(paramarg0: ClassReader, paramarg1: boolean, paramarg2: PrintWriter): void;
     static verify(paramarg0: ClassReader, paramarg1: ClassLoader, paramarg2: boolean, paramarg3: PrintWriter): void;
     constructor(arg0: number, arg1: ClassVisitor, arg2: boolean)

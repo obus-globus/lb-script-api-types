@@ -10,15 +10,14 @@ import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ArrayLiteralNode$DefaultArrayLiteralBaseNode extends ArrayLiteralNode {
     static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
-    static create(paramcontext: JSContext, paramelements: (Object | null)[]): ArrayLiteralNode;
-    static createByteArray(paramvalues: (Object | null)[]): number[];
-    static createDoubleArray(paramvalues: (Object | null)[]): number[];
-    static createIntArray(paramvalues: (Object | null)[]): number[];
-    static createWithSpread(paramcontext: JSContext, paramelements: (Object | null)[]): ArrayLiteralNode;
+    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
+    static create(paramcontext: JSContext, paramelements: JavaScriptNode[]): ArrayLiteralNode;
+    static createByteArray(paramvalues: Object[]): number[];
+    static createDoubleArray(paramvalues: Object[]): number[];
+    static createIntArray(paramvalues: Object[]): number[];
+    static createWithSpread(paramcontext: JSContext, paramelements: JavaScriptNode[]): ArrayLiteralNode;
     static findBlockScopeNode(paramnode: Node): Node;
-    static identifyPrimitiveContentType(paramvalues: (Object | null)[], paramcreateBytes: boolean): ArrayLiteralNode$ArrayContentType;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    static identifyPrimitiveContentType(paramvalues: Object[], paramcreateBytes: boolean): ArrayLiteralNode$ArrayContentType;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;

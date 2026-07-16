@@ -10,7 +10,7 @@ export class GpuApi extends Enum<GpuApi> {
     static VULKAN: GpuApi;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): GpuApi;
-    static values(): (Object | null)[];
+    static values(): GpuApi[];
     private constructor(arg2: number)
     // private id: number;
     getId(): number;

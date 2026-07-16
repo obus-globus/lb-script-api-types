@@ -6,10 +6,10 @@ import type { KSerializer } from '../../kotlinx/serialization/KSerializer.d.ts'
 import type { SerializersModule } from '../../kotlinx/serialization/modules/SerializersModule.d.ts'
 export class SerializersKt__SerializersKt extends Object {
     static moduleThenPolymorphic(paramarg0: SerializersModule, paramarg1: KClass<Object>): KSerializer<Object>;
-    static moduleThenPolymorphic(paramarg0: SerializersModule, paramarg1: KClass<Object>, paramarg2: Object | null): KSerializer<Object>;
+    static moduleThenPolymorphic(paramarg0: SerializersModule, paramarg1: KClass<Object>, paramarg2: KSerializer<Object>[]): KSerializer<Object>;
     static noCompiledSerializer(paramarg0: string): KSerializer<Object>;
     static noCompiledSerializer(paramarg0: SerializersModule, paramarg1: KClass<Object>): KSerializer<Object>;
-    static noCompiledSerializer(paramarg0: SerializersModule, paramarg1: KClass<Object>, paramarg2: Object | null): KSerializer<Object>;
+    static noCompiledSerializer(paramarg0: SerializersModule, paramarg1: KClass<Object>, paramarg2: KSerializer<Object>[]): KSerializer<Object>;
     static parametrizedSerializerOrNull(paramarg0: KClass<Object>, paramarg1: KSerializer<Object>[], paramarg2: () => KClassifier): KSerializer<Object>;
     static serializer(): KSerializer<Object>;
     static serializer(paramarg0: KClass<Object>): KSerializer<Object>;

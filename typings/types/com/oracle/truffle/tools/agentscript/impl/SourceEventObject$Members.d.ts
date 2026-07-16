@@ -9,7 +9,7 @@ export class SourceEventObject$Members extends Enum<SourceEventObject$Members> {
     static uri: SourceEventObject$Members;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SourceEventObject$Members;
-    static values(): (Object | null)[];
+    static values(): SourceEventObject$Members[];
     private constructor()
     name(): "characters" | "name" | "language" | "mimeType" | "uri";
 }

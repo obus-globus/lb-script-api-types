@@ -6,7 +6,7 @@ export class ModMenuCompatibility extends Enum<ModMenuCompatibility> {
     static INSTANCE: ModMenuCompatibility;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModMenuCompatibility;
-    static values(): (Object | null)[];
+    static values(): ModMenuCompatibility[];
     private constructor()
     addModUnchecked(arg0: string, arg1: Mod): void;
     removeModUnchecked(arg0: string): Mod;

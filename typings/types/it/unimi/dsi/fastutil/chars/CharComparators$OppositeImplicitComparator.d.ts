@@ -8,7 +8,7 @@ import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class CharComparators$OppositeImplicitComparator extends Object implements CharComparator, Serializable {
     static comparing(paramarg0: (param0: string) => Object | null): (param0: string, param1: string) => number;
-    static comparing(paramarg0: (param0: string) => Object | null, paramarg1: (param0: Object) => boolean): (param0: string, param1: string) => number;
+    static comparing(paramarg0: (param0: string) => Object | null, paramarg1: (param0: Object, param1: Object) => number): (param0: string, param1: string) => number;
     static comparingDouble(paramarg0: (param0: string) => number): (param0: string, param1: string) => number;
     static comparingInt(paramarg0: (param0: string) => number): (param0: string, param1: string) => number;
     static comparingLong(paramarg0: (param0: string) => number): (param0: string, param1: string) => number;
@@ -17,5 +17,4 @@ export class CharComparators$OppositeImplicitComparator extends Object implement
     // private readResolve(): Object;
     reversed(): (param0: string, param1: string) => number;
     thenComparing(arg0: (param0: string, param1: string) => number): (param0: string, param1: string) => number;
-    thenComparing(arg0: (param0: Object) => boolean): (param0: Object) => boolean;
 }

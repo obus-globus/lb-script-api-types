@@ -8,6 +8,7 @@ import type { ClientShutdownEvent } from '../../../net/ccbluex/liquidbounce/even
 import type { ClientStartEvent } from '../../../net/ccbluex/liquidbounce/event/events/ClientStartEvent.d.ts'
 import type { ScreenEvent } from '../../../net/ccbluex/liquidbounce/event/events/ScreenEvent.d.ts'
 import type { TaskManager } from '../../../net/ccbluex/liquidbounce/integration/task/TaskManager.d.ts'
+import type { Component } from '../../../net/minecraft/network/chat/Component.d.ts'
 import type { Identifier } from '../../../net/minecraft/resources/Identifier.d.ts'
 import type { Logger } from '../../../org/apache/logging/log4j/Logger.d.ts'
 /**
@@ -69,6 +70,7 @@ export class LiquidBounce extends Object implements EventListener {
     readonly clientBranch: string;
     readonly clientCommit: string;
     readonly clientVersion: string;
+    readonly debugDisplayName: Component;
     // private isInitialized: boolean;
     /*not mapped: */ isInitialized(): boolean;
     /**
@@ -77,6 +79,7 @@ export class LiquidBounce extends Object implements EventListener {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt#L154 | src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt:154}
      */
     readonly logger: Logger;
+    readonly running: boolean;
     // private screenHandler: EventHook<ScreenEvent>;
     // private shutdownHandler: EventHook<ClientShutdownEvent>;
     // private startHandler: EventHook<ClientStartEvent>;

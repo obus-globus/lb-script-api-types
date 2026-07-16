@@ -18,7 +18,7 @@ export class MessagePattern$Part$Type extends Enum<MessagePattern$Part$Type> {
     static SKIP_SYNTAX: MessagePattern$Part$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MessagePattern$Part$Type;
-    static values(): (Object | null)[];
+    static values(): MessagePattern$Part$Type[];
     private constructor()
     hasNumericValue(): boolean;
     name(): "MSG_START" | "MSG_LIMIT" | "SKIP_SYNTAX" | "INSERT_CHAR" | "REPLACE_NUMBER" | "ARG_START" | "ARG_LIMIT" | "ARG_NUMBER" | "ARG_NAME" | "ARG_TYPE" | "ARG_STYLE" | "ARG_SELECTOR" | "ARG_INT" | "ARG_DOUBLE";

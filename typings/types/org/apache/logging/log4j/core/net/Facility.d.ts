@@ -30,7 +30,7 @@ export class Facility extends Enum<Facility> {
     static toFacility(paramname: string, paramdefaultFacility: Facility): Facility;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Facility;
-    static values(): (Object | null)[];
+    static values(): Facility[];
     private constructor(code: number)
     readonly code: number;
     getCode(): number;

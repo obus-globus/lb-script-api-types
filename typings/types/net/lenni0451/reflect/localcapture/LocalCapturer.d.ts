@@ -5,7 +5,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { LocalStackFrame } from '../../../../net/lenni0451/reflect/localcapture/LocalStackFrame.d.ts'
 export class LocalCapturer extends Object {
     static forEach(paramarg0: (param0: LocalStackFrame) => void): void;
-    static getStackFrames(): (Object | null)[];
+    static getStackFrames(): LocalStackFrame[];
     static walk(paramarg0: (param0: Stream<LocalStackFrame>) => Object | null): Object | null;
     constructor()
 }

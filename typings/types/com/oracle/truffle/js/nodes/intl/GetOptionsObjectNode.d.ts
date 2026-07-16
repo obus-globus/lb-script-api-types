@@ -7,7 +7,6 @@ import type { JSObject } from '../../../../../../com/oracle/truffle/js/runtime/o
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class GetOptionsObjectNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private context: JSContext;
     execute(options: Object): Object;

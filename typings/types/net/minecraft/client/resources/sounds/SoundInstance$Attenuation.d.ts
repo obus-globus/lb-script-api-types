@@ -6,7 +6,7 @@ export class SoundInstance$Attenuation extends Enum<SoundInstance$Attenuation> {
     static NONE: SoundInstance$Attenuation;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SoundInstance$Attenuation;
-    static values(): (Object | null)[];
+    static values(): SoundInstance$Attenuation[];
     private constructor()
     name(): "NONE" | "LINEAR";
 }

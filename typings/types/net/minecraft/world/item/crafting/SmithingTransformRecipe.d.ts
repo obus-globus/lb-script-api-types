@@ -19,7 +19,6 @@ export class SmithingTransformRecipe extends SimpleSmithingRecipe {
     static KEY_CODEC: Codec<ResourceKey<Recipe<any>>>;
     static MAP_CODEC: MapCodec<SmithingTransformRecipe>;
     static SERIALIZER: RecipeSerializer<SmithingTransformRecipe>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<any>>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, SmithingTransformRecipe>;
     constructor(commonInfo: Recipe$CommonInfo, template: Optional<Ingredient>, base: Ingredient, addition: Optional<Ingredient>, result: ItemStackTemplate)
     // private addition: Optional<Ingredient>;

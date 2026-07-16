@@ -15,7 +15,7 @@ export class InventoryLeftTabPocketIndex extends Enum<InventoryLeftTabPocketInde
     static getByValue(paramarg0: number, paramarg1: InventoryLeftTabPocketIndex): InventoryLeftTabPocketIndex;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): InventoryLeftTabPocketIndex;
-    static values(): (Object | null)[];
+    static values(): InventoryLeftTabPocketIndex[];
     private constructor(arg2: number)
     private constructor(arg2: InventoryLeftTabPocketIndex)
     readonly value: number;

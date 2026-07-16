@@ -6,7 +6,7 @@ export class AsciiHeadersEncoder$SeparatorType extends Enum<AsciiHeadersEncoder$
     static COLON_SPACE: AsciiHeadersEncoder$SeparatorType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AsciiHeadersEncoder$SeparatorType;
-    static values(): (Object | null)[];
+    static values(): AsciiHeadersEncoder$SeparatorType[];
     private constructor()
     name(): "COLON" | "COLON_SPACE";
 }

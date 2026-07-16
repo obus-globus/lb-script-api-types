@@ -6,14 +6,12 @@ import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineConte
 import type { AtomicInt } from '../../../kotlinx/atomicfu/AtomicInt.d.ts'
 import type { CancellableContinuation } from '../../../kotlinx/coroutines/CancellableContinuation.d.ts'
 import type { CoroutineDispatcher } from '../../../kotlinx/coroutines/CoroutineDispatcher.d.ts'
-import type { CoroutineDispatcher$Key } from '../../../kotlinx/coroutines/CoroutineDispatcher$Key.d.ts'
 import type { Delay } from '../../../kotlinx/coroutines/Delay.d.ts'
 import type { DisposableHandle } from '../../../kotlinx/coroutines/DisposableHandle.d.ts'
 import type { LimitedDispatcher$Worker } from '../../../kotlinx/coroutines/internal/LimitedDispatcher$Worker.d.ts'
 import type { LockFreeTaskQueue } from '../../../kotlinx/coroutines/internal/LockFreeTaskQueue.d.ts'
 export class LimitedDispatcher extends CoroutineDispatcher implements Delay {
     static Key: ContinuationInterceptor$Key;
-    static Key: CoroutineDispatcher$Key;
     static delay$suspendImpl(paramarg0: Delay, paramarg1: number, paramarg2: Continuation<Object>): Object;
     constructor(dispatcher: CoroutineDispatcher, parallelism: number, name: string | null)
     delay(time: number): void;

@@ -7,7 +7,7 @@ export class PluginHandle$CompatibilityMode extends Enum<PluginHandle$Compatibil
     static NORMAL: PluginHandle$CompatibilityMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PluginHandle$CompatibilityMode;
-    static values(): (Object | null)[];
+    static values(): PluginHandle$CompatibilityMode[];
     private constructor()
     name(): "NORMAL" | "COMPATIBLE" | "FAILED";
 }

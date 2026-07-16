@@ -11,7 +11,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class GetSetRecordNodeGen extends GetSetRecordNode {
     static create(paramcontext: JSContext): GetSetRecordNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private getHasNode_: PropertyGetNode;
     // private getKeysNode_: PropertyGetNode;

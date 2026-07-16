@@ -17,7 +17,7 @@ export class ExpressionContext$Type extends Enum<ExpressionContext$Type> {
     static WRAP_WITH_CONDITION: ExpressionContext$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ExpressionContext$Type;
-    static values(): (Object | null)[];
+    static values(): ExpressionContext$Type[];
     private constructor()
     name(): "CUSTOM" | "INJECT" | "MODIFY_ARG" | "MODIFY_ARGS" | "MODIFY_CONSTANT" | "MODIFY_EXPRESSION_VALUE" | "MODIFY_RECEIVER" | "MODIFY_RETURN_VALUE" | "MODIFY_VARIABLE" | "REDIRECT" | "SLICE" | "WRAP_OPERATION" | "WRAP_WITH_CONDITION";
 }

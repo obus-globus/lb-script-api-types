@@ -10,5 +10,5 @@ export class JvmClassMappingKt extends Object {
     static getJavaPrimitiveType(paramarg0: KClass<Object>): Class<Object>;
     static getKotlinClass(paramarg0: Class<Object>): KClass<Object>;
     static getRuntimeClassOfKClassInstance(paramarg0: KClass<Object>): Class<KClass<Object>>;
-    static isArrayOf(paramarg0: (Object | null)[]): boolean;
+    static isArrayOf(paramarg0: Object[]): boolean;
 }

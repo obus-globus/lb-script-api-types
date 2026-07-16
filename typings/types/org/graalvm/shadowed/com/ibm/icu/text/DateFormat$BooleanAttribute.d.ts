@@ -9,7 +9,7 @@ export class DateFormat$BooleanAttribute extends Enum<DateFormat$BooleanAttribut
     static PARSE_PARTIAL_MATCH: DateFormat$BooleanAttribute;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): DateFormat$BooleanAttribute;
-    static values(): (Object | null)[];
+    static values(): DateFormat$BooleanAttribute[];
     private constructor()
     name(): "PARSE_ALLOW_WHITESPACE" | "PARSE_ALLOW_NUMERIC" | "PARSE_MULTIPLE_PATTERNS_FOR_MATCH" | "PARSE_PARTIAL_LITERAL_MATCH" | "PARSE_PARTIAL_MATCH";
 }

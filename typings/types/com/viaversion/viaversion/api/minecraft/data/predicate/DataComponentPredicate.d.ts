@@ -4,8 +4,8 @@ import type { Type } from '../../../../../../../com/viaversion/viaversion/api/ty
 import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class DataComponentPredicate extends Record {
-    static ARRAY_TYPE1_21_11: Type<(Object | null)[]>;
-    static ARRAY_TYPE1_21_5: Type<(Object | null)[]>;
+    static ARRAY_TYPE1_21_11: Type<DataComponentPredicate[]>;
+    static ARRAY_TYPE1_21_5: Type<DataComponentPredicate[]>;
     static TYPE1_21_11: Type<DataComponentPredicate>;
     static TYPE1_21_5: Type<DataComponentPredicate>;
     constructor(type: DataComponentPredicate$PredicateType, predicate: Tag)

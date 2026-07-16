@@ -6,7 +6,6 @@ export abstract class UnwrapPromiseNode extends JavaScriptBaseNode {
     static create(): UnwrapPromiseNode;
     static getUncached(): UnwrapPromiseNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(promise: JSPromiseObject): Object;
     execute(promise: JSPromiseObject, promiseState: number, promiseResult: Object): Object;

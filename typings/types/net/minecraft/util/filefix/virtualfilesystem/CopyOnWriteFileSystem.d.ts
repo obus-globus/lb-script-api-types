@@ -1,3 +1,4 @@
+import type { CopyOption } from '../../../../../java/nio/file/CopyOption.d.ts'
 import type { FileStore } from '../../../../../java/nio/file/FileStore.d.ts'
 import type { FileSystem } from '../../../../../java/nio/file/FileSystem.d.ts'
 import type { Path } from '../../../../../java/nio/file/Path.d.ts'
@@ -16,8 +17,8 @@ export class CopyOnWriteFileSystem extends FileSystem {
     static createDirectories(paramdirectories: Path[]): void;
     static hardLinkFiles(parammoves: FileMove[]): void;
     static moveFiles(parammoves: FileMove[]): void;
-    static moveFilesWithRetry(parammoves: FileMove[], ...paramoptions: (Object | null)[]): void;
-    static tryRevertMoves(parammoves: FileMove[], ...paramoptions: (Object | null)[]): FileMove[];
+    static moveFilesWithRetry(parammoves: FileMove[], ...paramoptions: CopyOption[]): void;
+    static tryRevertMoves(parammoves: FileMove[], ...paramoptions: CopyOption[]): FileMove[];
     private constructor(name: string, baseDirectory: Path, tmpDirectory: Path, skippedPaths: (param0: Path) => boolean)
     // private baseDirectory: Path;
     // private fileTree: DirectoryNode;

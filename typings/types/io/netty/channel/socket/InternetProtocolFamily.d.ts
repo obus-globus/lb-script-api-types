@@ -9,7 +9,7 @@ export class InternetProtocolFamily extends Enum<InternetProtocolFamily> {
     static of(paramarg0: InetAddress): InternetProtocolFamily;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): InternetProtocolFamily;
-    static values(): (Object | null)[];
+    static values(): InternetProtocolFamily[];
     private constructor(arg2: Class<InetAddress>, arg3: number)
     // private addressNumber: number;
     // private addressType: Class<InetAddress>;

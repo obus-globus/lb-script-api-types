@@ -13,7 +13,6 @@ import type { JSTemporalPlainDateObject } from '../../../../../../com/oracle/tru
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ToTemporalDateNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(value: Object): JSTemporalPlainDateObject;
     execute(value: Object, options: Object): JSTemporalPlainDateObject;

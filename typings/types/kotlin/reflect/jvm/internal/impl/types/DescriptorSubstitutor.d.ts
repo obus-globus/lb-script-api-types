@@ -5,5 +5,5 @@ import type { TypeSubstitution } from '../../../../../../kotlin/reflect/jvm/inte
 import type { TypeSubstitutor } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeSubstitutor.d.ts'
 export class DescriptorSubstitutor extends Object {
     static substituteTypeParameters(paramarg0: TypeParameterDescriptor[], paramarg1: TypeSubstitution, paramarg2: DeclarationDescriptor, paramarg3: TypeParameterDescriptor[]): TypeSubstitutor;
-    static substituteTypeParameters(paramarg0: TypeParameterDescriptor[], paramarg1: TypeSubstitution, paramarg2: DeclarationDescriptor, paramarg3: TypeParameterDescriptor[], paramarg4: (Object | null)[]): TypeSubstitutor;
+    static substituteTypeParameters(paramarg0: TypeParameterDescriptor[], paramarg1: TypeSubstitution, paramarg2: DeclarationDescriptor, paramarg3: TypeParameterDescriptor[], paramarg4: boolean[]): TypeSubstitutor;
 }

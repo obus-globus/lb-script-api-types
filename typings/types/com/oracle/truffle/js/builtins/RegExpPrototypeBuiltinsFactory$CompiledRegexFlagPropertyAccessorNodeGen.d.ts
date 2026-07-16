@@ -11,11 +11,10 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class RegExpPrototypeBuiltinsFactory$CompiledRegexFlagPropertyAccessorNodeGen extends RegExpPrototypeBuiltins$CompiledRegexFlagPropertyAccessor {
     static ARGUMENTS: string;
     static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
-    static create(paramcontext: JSContext, parambuiltin: JSBuiltin, paramflagName: string, paramarguments: (Object | null)[]): RegExpPrototypeBuiltins$CompiledRegexFlagPropertyAccessor;
+    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
+    static create(paramcontext: JSContext, parambuiltin: JSBuiltin, paramflagName: string, paramarguments: JavaScriptNode[]): RegExpPrototypeBuiltins$CompiledRegexFlagPropertyAccessor;
     static createBuiltin(paramctx: JSContext, parambuiltin: JSBuiltin, paramconstruct: boolean, paramnewTarget: boolean): JSBuiltinNode;
     static findBlockScopeNode(paramnode: Node): Node;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;

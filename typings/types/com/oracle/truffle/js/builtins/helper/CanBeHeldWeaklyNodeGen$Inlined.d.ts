@@ -6,7 +6,6 @@ import type { CanBeHeldWeaklyNode } from '../../../../../../com/oracle/truffle/j
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class CanBeHeldWeaklyNodeGen$Inlined extends CanBeHeldWeaklyNode implements UnadoptableNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(target: InlineSupport$InlineTarget)
     // private state_0_: InlineSupport$StateField;
     execute(arg0Value: Node, arg1Value: Object): boolean;

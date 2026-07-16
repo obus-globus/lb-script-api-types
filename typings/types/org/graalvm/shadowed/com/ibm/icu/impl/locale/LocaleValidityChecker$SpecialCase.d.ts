@@ -10,7 +10,7 @@ export class LocaleValidityChecker$SpecialCase extends Enum<LocaleValidityChecke
     static subdivision: LocaleValidityChecker$SpecialCase;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): LocaleValidityChecker$SpecialCase;
-    static values(): (Object | null)[];
+    static values(): LocaleValidityChecker$SpecialCase[];
     private constructor()
     name(): "normal" | "anything" | "reorder" | "codepoints" | "subdivision" | "rgKey";
 }

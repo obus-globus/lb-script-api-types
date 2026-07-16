@@ -9,7 +9,6 @@ export class JSToNumberNodeGen extends JSToNumberNode {
     static create(): JSToNumberNode;
     static getUncached(): JSToNumberNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private state_0_: number;
     // private string_stringToNumberNode_: JSStringToNumberNode;

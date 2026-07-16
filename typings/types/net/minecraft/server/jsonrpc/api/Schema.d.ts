@@ -50,8 +50,8 @@ export class Schema<T extends unknown> extends Record {
     static VERSION_SCHEMA: SchemaComponent<DiscoveryService$DiscoverInfo>;
     static arrayOf(paramitem: Schema<Object>, paramcodec: Codec<Object>): Schema<(Object | null)[]>;
     static getSchemaRegistry(): SchemaComponent<Object>[];
-    static ofEnum(paramvalues: () => Object | null): Schema<Object>;
-    static ofEnum(paramvalues: () => Object | null, paramcodec: Codec<Object>): Schema<Object>;
+    static ofEnum(paramvalues: () => (Object | null)[]): Schema<Object>;
+    static ofEnum(paramvalues: () => (Object | null)[], paramcodec: Codec<Object>): Schema<Object>;
     static ofEnum(paramenumValues: string[], paramcodec: Codec<Object>): Schema<Object>;
     static ofRef(paramref: URI, paramcodec: Codec<Object>): Schema<Object>;
     static ofType(paramtype: string, paramcodec: Codec<Object>): Schema<Object>;

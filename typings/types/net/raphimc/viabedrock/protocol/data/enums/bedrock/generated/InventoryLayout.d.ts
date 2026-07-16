@@ -12,7 +12,7 @@ export class InventoryLayout extends Enum<InventoryLayout> {
     static getByValue(paramarg0: number, paramarg1: InventoryLayout): InventoryLayout;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): InventoryLayout;
-    static values(): (Object | null)[];
+    static values(): InventoryLayout[];
     private constructor(arg2: number)
     private constructor(arg2: InventoryLayout)
     readonly value: number;

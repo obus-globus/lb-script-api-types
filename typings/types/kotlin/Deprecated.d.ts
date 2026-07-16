@@ -3,7 +3,6 @@ import type { Object } from '../java/lang/Object.d.ts'
 import type { DeprecationLevel } from '../kotlin/DeprecationLevel.d.ts'
 import type { ReplaceWith } from '../kotlin/ReplaceWith.d.ts'
 export interface Deprecated extends Annotation, Object{
-    constructor(message: string, replaceWith: ReplaceWith, level: DeprecationLevel)
     /*not mapped: */ level(): DeprecationLevel;
     /*not mapped: */ message(): string;
     /*not mapped: */ replaceWith(): ReplaceWith;

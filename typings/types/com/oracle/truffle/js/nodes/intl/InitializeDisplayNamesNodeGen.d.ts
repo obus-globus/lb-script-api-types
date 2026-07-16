@@ -7,7 +7,6 @@ export class InitializeDisplayNamesNodeGen extends InitializeDisplayNamesNode {
     static create(paramcontext: JSContext): InitializeDisplayNamesNode;
     static createInitalizeDisplayNamesNode(paramcontext: JSContext): InitializeDisplayNamesNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     executeInit(arg0Value: JSDisplayNamesObject, arg1Value: Object, arg2Value: Object): JSDisplayNamesObject;
 }

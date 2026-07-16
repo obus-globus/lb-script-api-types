@@ -8,7 +8,7 @@ export class ConstructorHead$Enforce extends Enum<ConstructorHead$Enforce> {
     static PRE_BODY: ConstructorHead$Enforce;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ConstructorHead$Enforce;
-    static values(): (Object | null)[];
+    static values(): ConstructorHead$Enforce[];
     private constructor()
     name(): "DEFAULT" | "POST_DELEGATE" | "POST_INIT" | "PRE_BODY";
 }

@@ -7,6 +7,7 @@ import type { EventHook } from '../../../../../net/ccbluex/liquidbounce/event/Ev
 import type { EventListener } from '../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
 import type { ChatSendEvent } from '../../../../../net/ccbluex/liquidbounce/event/events/ChatSendEvent.d.ts'
 import type { ClientShutdownEvent } from '../../../../../net/ccbluex/liquidbounce/event/events/ClientShutdownEvent.d.ts'
+import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 /**
  * Links minecraft with the command engine
  *
@@ -18,7 +19,9 @@ export class CommandExecutor extends Object implements EventListener {
     // private commandCoroutineScope: CoroutineScope;
     // private commandHistoryFile: File;
     // private coroutineExceptionHandler: CoroutineExceptionHandler;
+    readonly debugDisplayName: Component;
     // private isShuttingDown: boolean;
+    readonly running: boolean;
     // private shutdownHandler: EventHook<ClientShutdownEvent>;
     children(): EventListener[];
     handleExceptions(e: Throwable): void;

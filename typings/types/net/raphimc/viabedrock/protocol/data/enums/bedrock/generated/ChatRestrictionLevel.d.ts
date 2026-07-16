@@ -11,7 +11,7 @@ export class ChatRestrictionLevel extends Enum<ChatRestrictionLevel> {
     static getByValue(paramarg0: number, paramarg1: ChatRestrictionLevel): ChatRestrictionLevel;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ChatRestrictionLevel;
-    static values(): (Object | null)[];
+    static values(): ChatRestrictionLevel[];
     private constructor(arg2: number)
     private constructor(arg2: ChatRestrictionLevel)
     readonly value: number;

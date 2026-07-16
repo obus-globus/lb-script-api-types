@@ -8,7 +8,7 @@ export class JSContextOptions$UnhandledRejectionsTrackingMode extends Enum<JSCon
     static WARN: JSContextOptions$UnhandledRejectionsTrackingMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): JSContextOptions$UnhandledRejectionsTrackingMode;
-    static values(): (Object | null)[];
+    static values(): JSContextOptions$UnhandledRejectionsTrackingMode[];
     private constructor()
     toString(): string;
     name(): "NONE" | "WARN" | "THROW" | "HANDLER";

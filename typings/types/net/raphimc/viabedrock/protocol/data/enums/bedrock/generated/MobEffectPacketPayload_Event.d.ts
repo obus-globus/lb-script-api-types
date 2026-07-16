@@ -12,7 +12,7 @@ export class MobEffectPacketPayload_Event extends Enum<MobEffectPacketPayload_Ev
     static getByValue(paramarg0: number, paramarg1: MobEffectPacketPayload_Event): MobEffectPacketPayload_Event;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MobEffectPacketPayload_Event;
-    static values(): (Object | null)[];
+    static values(): MobEffectPacketPayload_Event[];
     private constructor(arg2: number)
     private constructor(arg2: MobEffectPacketPayload_Event)
     readonly value: number;

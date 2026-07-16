@@ -67,7 +67,7 @@ export class InternalTextureFormat extends Enum<InternalTextureFormat> {
     static fromString(paramarg0: string): Optional<InternalTextureFormat>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): InternalTextureFormat;
-    static values(): (Object | null)[];
+    static values(): InternalTextureFormat[];
     private constructor(arg2: number, arg3: GlVersion, arg4: PixelFormat, arg5: ShaderDataType)
     // private expectedPixelFormat: PixelFormat;
     readonly glFormat: number;

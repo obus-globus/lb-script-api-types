@@ -12,7 +12,7 @@ export class ModuleBlockTrap$DoublePlace extends Enum<ModuleBlockTrap$DoublePlac
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleBlockTrap$DoublePlace;
-    static values(): (Object | null)[];
+    static values(): ModuleBlockTrap$DoublePlace[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "ABOVE" | "BELOW";

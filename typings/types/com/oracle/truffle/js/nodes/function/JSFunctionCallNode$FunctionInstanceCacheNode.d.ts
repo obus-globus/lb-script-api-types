@@ -7,7 +7,6 @@ import type { JSFunctionObject } from '../../../../../../com/oracle/truffle/js/r
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSFunctionCallNode$FunctionInstanceCacheNode extends JSFunctionCallNode$DirectJSFunctionCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(functionObj: JSFunctionObject, callTarget: CallTarget)
     // private functionObj: JSFunctionObject;
     accept(nodeVisitor: NodeVisitor): void;

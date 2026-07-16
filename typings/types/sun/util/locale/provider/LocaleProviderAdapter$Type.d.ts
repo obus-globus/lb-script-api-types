@@ -9,7 +9,7 @@ export class LocaleProviderAdapter$Type extends Enum<LocaleProviderAdapter$Type>
     static SPI: LocaleProviderAdapter$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LocaleProviderAdapter$Type;
-    static values(): (Object | null)[];
+    static values(): LocaleProviderAdapter$Type[];
     private constructor(arg2: string)
     private constructor(arg2: string, arg3: string, arg4: string)
     // private CLASSNAME: string;

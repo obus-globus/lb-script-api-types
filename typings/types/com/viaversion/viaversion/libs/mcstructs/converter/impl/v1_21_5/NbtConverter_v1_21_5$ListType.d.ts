@@ -9,7 +9,7 @@ export class NbtConverter_v1_21_5$ListType extends Enum<NbtConverter_v1_21_5$Lis
     static MIXED_LIST: NbtConverter_v1_21_5$ListType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): NbtConverter_v1_21_5$ListType;
-    static values(): (Object | null)[];
+    static values(): NbtConverter_v1_21_5$ListType[];
     private constructor()
     name(): "BYTE" | "INT" | "LONG" | "LIST" | "MIXED_LIST";
 }

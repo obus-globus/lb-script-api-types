@@ -12,7 +12,7 @@ export class IntlBuiltins$Intl extends Enum<IntlBuiltins$Intl> implements Builti
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): IntlBuiltins$Intl;
-    static values(): (Object | null)[];
+    static values(): IntlBuiltins$Intl[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

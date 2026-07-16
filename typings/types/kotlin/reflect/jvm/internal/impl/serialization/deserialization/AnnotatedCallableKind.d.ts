@@ -8,7 +8,7 @@ export class AnnotatedCallableKind extends Enum<AnnotatedCallableKind> {
     static PROPERTY_SETTER: AnnotatedCallableKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AnnotatedCallableKind;
-    static values(): (Object | null)[];
+    static values(): AnnotatedCallableKind[];
     private constructor()
     name(): "FUNCTION" | "PROPERTY" | "PROPERTY_GETTER" | "PROPERTY_SETTER";
 }

@@ -1,4 +1,3 @@
-import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Direction } from '../../../../../../../net/minecraft/core/Direction.d.ts'
@@ -7,7 +6,6 @@ import type { TreeDecorator } from '../../../../../../../net/minecraft/world/lev
 import type { TreeDecorator$Context } from '../../../../../../../net/minecraft/world/level/levelgen/feature/treedecorators/TreeDecorator$Context.d.ts'
 import type { TreeDecoratorType } from '../../../../../../../net/minecraft/world/level/levelgen/feature/treedecorators/TreeDecoratorType.d.ts'
 export class AttachedToLeavesDecorator extends TreeDecorator {
-    static CODEC: Codec<TreeDecorator>;
     static CODEC: MapCodec<AttachedToLeavesDecorator>;
     constructor(probability: number, exclusionRadiusXZ: number, exclusionRadiusY: number, blockProvider: BlockStateProvider, requiredEmptyBlocks: number, directions: Direction[])
     // private blockProvider: BlockStateProvider;

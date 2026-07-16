@@ -12,7 +12,7 @@ export class LoadingCycleCallback$LoadingCycle extends Enum<LoadingCycleCallback
     static PRE_VIAVERSION_LOAD: LoadingCycleCallback$LoadingCycle;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LoadingCycleCallback$LoadingCycle;
-    static values(): (Object | null)[];
+    static values(): LoadingCycleCallback$LoadingCycle[];
     private constructor()
     name(): "PRE_SETTINGS_LOAD" | "POST_SETTINGS_LOAD" | "PRE_FILES_LOAD" | "POST_FILES_LOAD" | "PRE_VIAVERSION_LOAD" | "POST_VIAVERSION_LOAD" | "FINAL_LOAD" | "POST_GAME_LOAD";
 }

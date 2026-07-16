@@ -3,7 +3,7 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ObjectByteMutablePair<K extends unknown> extends Object implements ObjectBytePair<K>, Serializable {
-    static lexComparator(): (param0: Object) => boolean;
+    static lexComparator(): (param0: ObjectBytePair<Object>, param1: ObjectBytePair<Object>) => number;
     static of(paramarg0: Object | null, paramarg1: number): ObjectByteMutablePair<Object>;
     static of(paramarg0: Object | null, paramarg1: number): ObjectBytePair<Object>;
     constructor(arg0: K, arg1: number)

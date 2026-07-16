@@ -11,7 +11,7 @@ export class AsyncContextSnapshotPrototypeBuiltins$AsyncContextSnapshotPrototype
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): AsyncContextSnapshotPrototypeBuiltins$AsyncContextSnapshotPrototype;
-    static values(): (Object | null)[];
+    static values(): AsyncContextSnapshotPrototypeBuiltins$AsyncContextSnapshotPrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

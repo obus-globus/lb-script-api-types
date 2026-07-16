@@ -24,28 +24,21 @@ export class VkDeviceImageSubresourceInfoKHR extends VkDeviceImageSubresourceInf
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkDeviceImageSubresourceInfoKHR;
     static calloc(paramarg0: MemoryStack): VkDeviceImageSubresourceInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkDeviceImageSubresourceInfo;
     static create(paramarg0: number): VkDeviceImageSubresourceInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkDeviceImageSubresourceInfoKHR;
     static create(paramarg0: number): VkDeviceImageSubresourceInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkDeviceImageSubresourceInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkDeviceImageSubresourceInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkDeviceImageSubresourceInfo;
     static malloc(paramarg0: MemoryStack): VkDeviceImageSubresourceInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkDeviceImageSubresourceInfoKHR;
     static malloc(paramarg0: MemoryStack): VkDeviceImageSubresourceInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npCreateInfo(paramarg0: number): VkImageCreateInfo;
     static npCreateInfo(paramarg0: number, paramarg1: VkImageCreateInfo): void;
     static npNext(paramarg0: number): number;
@@ -54,7 +47,6 @@ export class VkDeviceImageSubresourceInfoKHR extends VkDeviceImageSubresourceInf
     static npSubresource(paramarg0: number, paramarg1: VkImageSubresource2): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

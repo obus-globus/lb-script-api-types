@@ -7,7 +7,6 @@ export class InitializeCollatorNodeGen extends InitializeCollatorNode {
     static create(paramcontext: JSContext): InitializeCollatorNode;
     static createInitalizeCollatorNode(paramcontext: JSContext): InitializeCollatorNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     executeInit(arg0Value: JSCollatorObject, arg1Value: Object, arg2Value: Object): JSCollatorObject;
 }

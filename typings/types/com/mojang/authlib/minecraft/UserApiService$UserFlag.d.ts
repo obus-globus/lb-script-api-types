@@ -13,7 +13,7 @@ export class UserApiService$UserFlag extends Enum<UserApiService$UserFlag> {
     static TELEMETRY_ENABLED: UserApiService$UserFlag;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): UserApiService$UserFlag;
-    static values(): (Object | null)[];
+    static values(): UserApiService$UserFlag[];
     private constructor()
     name(): "SERVERS_ALLOWED" | "REALMS_ALLOWED" | "CHAT_ALLOWED" | "CHAT_FRIENDS_ONLY" | "TELEMETRY_ENABLED" | "PROFANITY_FILTER_ENABLED" | "OPTIONAL_TELEMETRY_AVAILABLE" | "FRIENDS_ENABLED" | "ACCEPT_FRIEND_INVITES";
 }

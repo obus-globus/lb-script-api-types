@@ -9,7 +9,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class GetMethodNode extends JavaScriptBaseNode {
     static create(paramctx: JSContext, paramkey: Object): GetMethodNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, propertyKey: Object)
     // private cacheNode: PropertyGetNode;
     // private isCallableNode: IsCallableNode;

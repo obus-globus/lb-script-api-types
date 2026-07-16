@@ -13,7 +13,6 @@ import type { JSClassProfile } from '../../../../../../com/oracle/truffle/js/run
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ReadElementNode$JSObjectReadElementTypeCacheNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     // private fromLongNode: TruffleString$FromLongNode;
     // private isArrayNode: IsArrayNode;

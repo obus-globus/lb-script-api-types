@@ -9,7 +9,7 @@ export class Lighting$Entry extends Enum<Lighting$Entry> {
     static PLAYER_SKIN: Lighting$Entry;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Lighting$Entry;
-    static values(): (Object | null)[];
+    static values(): Lighting$Entry[];
     private constructor()
     name(): "LEVEL" | "ITEMS_FLAT" | "ITEMS_3D" | "ENTITY_IN_UI" | "PLAYER_SKIN";
 }

@@ -4,7 +4,7 @@ export class BoolLayerCache extends Object {
     constructor(arg0: number)
     // private keys: number[];
     // private mask: number;
-    // private values: (Object | null)[];
+    // private values: boolean[];
     get(arg0: number, arg1: number, arg2: number, arg3: (param0: number, param1: number, param2: number) => boolean): boolean;
     murmur64(arg0: number): number;
     uniqueHash(arg0: number, arg1: number, arg2: number): number;

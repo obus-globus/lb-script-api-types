@@ -10,7 +10,7 @@ export class StreamReadFeature extends Enum<StreamReadFeature> implements Jackso
     static STRICT_DUPLICATE_DETECTION: StreamReadFeature;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): StreamReadFeature;
-    static values(): (Object | null)[];
+    static values(): StreamReadFeature[];
     private constructor(arg2: JsonParser$Feature)
     // private _defaultState: boolean;
     // private _mappedFeature: JsonParser$Feature;

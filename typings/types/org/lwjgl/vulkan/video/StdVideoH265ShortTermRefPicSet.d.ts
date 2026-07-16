@@ -77,7 +77,6 @@ export class StdVideoH265ShortTermRefPicSet extends Struct<StdVideoH265ShortTerm
     static nused_by_curr_pic_s1_flag(paramarg0: number): number;
     static nused_by_curr_pic_s1_flag(paramarg0: number, paramarg1: number): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     abs_delta_rps_minus1(): number;

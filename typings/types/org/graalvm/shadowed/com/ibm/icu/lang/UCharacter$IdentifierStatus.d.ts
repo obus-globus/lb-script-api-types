@@ -6,7 +6,7 @@ export class UCharacter$IdentifierStatus extends Enum<UCharacter$IdentifierStatu
     static RESTRICTED: UCharacter$IdentifierStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): UCharacter$IdentifierStatus;
-    static values(): (Object | null)[];
+    static values(): UCharacter$IdentifierStatus[];
     private constructor()
     name(): "RESTRICTED" | "ALLOWED";
 }

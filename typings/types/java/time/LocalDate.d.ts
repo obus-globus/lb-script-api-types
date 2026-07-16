@@ -47,7 +47,7 @@ export class LocalDate extends Object implements Serializable, ChronoLocalDate, 
     static ofYearDay(paramarg0: number, paramarg1: number): LocalDate;
     static parse(paramarg0: CharSequence): LocalDate;
     static parse(paramarg0: CharSequence, paramarg1: DateTimeFormatter): LocalDate;
-    static timeLineOrder(): (param0: Object) => boolean;
+    static timeLineOrder(): (param0: ChronoLocalDate, param1: ChronoLocalDate) => number;
     private constructor(arg0: number, arg1: number, arg2: number)
     // private day: number;
     readonly month: number;

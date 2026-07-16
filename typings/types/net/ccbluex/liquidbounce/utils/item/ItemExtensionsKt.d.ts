@@ -22,7 +22,7 @@ export class ItemExtensionsKt extends Object {
      */
     static createItem(paramarg0: string, paramarg1: number): ItemStack;
     static createItem(paramarg0: ClientLevel, paramarg1: string): ItemStack;
-    static createSplashPotion(name: string, ...effects: (Object | null)[]): ItemStack;
+    static createSplashPotion(name: string, ...effects: MobEffectInstance[]): ItemStack;
     static getAttackDamage(paramarg0: ItemStack): number;
     static getAttackSpeed(paramarg0: ItemStack): number;
     /**

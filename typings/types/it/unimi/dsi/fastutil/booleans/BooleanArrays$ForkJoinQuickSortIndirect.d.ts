@@ -18,11 +18,11 @@ export class BooleanArrays$ForkJoinQuickSortIndirect extends RecursiveAction {
     static inForkJoinPool(): boolean;
     static invokeAll(paramarg0: (Object | null)[]): (Object | null)[];
     static invokeAll(paramarg0: ForkJoinTask<Object>, paramarg1: ForkJoinTask<Object>): void;
-    static invokeAll(paramarg0: Object | null): void;
-    constructor(arg0: number[], arg1: (Object | null)[], arg2: number, arg3: number)
+    static invokeAll(...paramarg0: ForkJoinTask<Object>[]): void;
+    constructor(arg0: number[], arg1: boolean[], arg2: number, arg3: number)
     // private from: number;
     // private perm: number[];
     // private to: number;
-    // private x: (Object | null)[];
+    // private x: boolean[];
     compute(): void;
 }

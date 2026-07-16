@@ -6,7 +6,7 @@ export class RemappableRegistry$RemapMode extends Enum<RemappableRegistry$RemapM
     static REMOTE: RemappableRegistry$RemapMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RemappableRegistry$RemapMode;
-    static values(): (Object | null)[];
+    static values(): RemappableRegistry$RemapMode[];
     private constructor()
     name(): "AUTHORITATIVE" | "REMOTE";
 }

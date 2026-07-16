@@ -6,7 +6,6 @@ import type { YieldResultNode } from '../../../../../../com/oracle/truffle/js/no
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class YieldResultNode$FrameYieldResultNode extends YieldResultNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(writeYieldValueNode: JSWriteFrameSlotNode)
     // private writeYieldValueNode: JSWriteFrameSlotNode;
     cloneUninitialized(): YieldResultNode;

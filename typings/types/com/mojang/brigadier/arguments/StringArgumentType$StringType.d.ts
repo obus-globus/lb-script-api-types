@@ -7,7 +7,7 @@ export class StringArgumentType$StringType extends Enum<StringArgumentType$Strin
     static SINGLE_WORD: StringArgumentType$StringType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): StringArgumentType$StringType;
-    static values(): (Object | null)[];
+    static values(): StringArgumentType$StringType[];
     private constructor(...arg2: string[])
     readonly examples: string[];
     getExamples(): string[];

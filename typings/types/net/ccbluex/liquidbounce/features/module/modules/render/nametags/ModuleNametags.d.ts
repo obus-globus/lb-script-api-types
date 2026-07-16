@@ -1,5 +1,4 @@
 import type { Comparator } from '../../../../../../../../java/util/Comparator.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Pool } from '../../../../../../../../net/ccbluex/fastutil/Pool.d.ts'
 import type { CurveValue } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/CurveValue.d.ts'
 import type { EventHook } from '../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
@@ -17,7 +16,7 @@ import type { EntityRenderState } from '../../../../../../../../net/minecraft/cl
  */
 export class ModuleNametags extends ClientModule {
     static INSTANCE: ModuleNametags;
-    // private NAMETAG_COMPARATOR: (param0: Object) => boolean;
+    // private NAMETAG_COMPARATOR: (param0: NametagRenderState, param1: NametagRenderState) => number;
     // private backgroundRadius: number;
     /*not mapped: */ getBackgroundRadius$net_ccbluex_liquidbounce(): number;
     // private borderWidth: number;

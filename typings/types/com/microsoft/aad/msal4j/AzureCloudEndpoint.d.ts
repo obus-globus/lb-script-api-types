@@ -8,7 +8,7 @@ export class AzureCloudEndpoint extends Enum<AzureCloudEndpoint> {
     static AzureUsGovernment: AzureCloudEndpoint;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AzureCloudEndpoint;
-    static values(): (Object | null)[];
+    static values(): AzureCloudEndpoint[];
     private constructor(arg2: string)
     endpoint: string;
     name(): "AzurePublic" | "AzureChina" | "AzureGermany" | "AzureUsGovernment";

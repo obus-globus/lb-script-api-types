@@ -31,7 +31,7 @@ export class IdF$Instance extends Enum<IdF$Instance> implements Applicative<IdF$
     static unbox(paramarg0: App<Functor$Mu, K1>): Functor<K1, Functor$Mu>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): IdF$Instance;
-    static values(): (Object | null)[];
+    static values(): IdF$Instance[];
     private constructor()
     ap<R extends unknown, A extends unknown>(arg0: App<IdF$Mu, (param0: A) => R>, arg1: App<IdF$Mu, A>): App<IdF$Mu, R>;
     ap<R extends unknown, A extends unknown>(arg0: (param0: A) => R, arg1: App<IdF$Mu, A>): App<IdF$Mu, R>;

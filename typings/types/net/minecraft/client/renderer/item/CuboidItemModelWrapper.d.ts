@@ -14,7 +14,7 @@ import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStac
 import type { Matrix4fc } from '../../../../../org/joml/Matrix4fc.d.ts'
 import type { Vector3fc } from '../../../../../org/joml/Vector3fc.d.ts'
 export class CuboidItemModelWrapper extends Object implements ItemModel {
-    static computeExtents(paramquads: BakedQuad[]): (Object | null)[];
+    static computeExtents(paramquads: BakedQuad[]): Vector3fc[];
     private constructor(tints: ItemTintSource[], quads: QuadCollection, properties: ModelRenderProperties, transformation: Matrix4fc)
     // private extents: () => Vector3fc[];
     // private properties: ModelRenderProperties;

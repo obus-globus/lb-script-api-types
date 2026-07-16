@@ -18,7 +18,7 @@ export class CollationRuleParser$Position extends Enum<CollationRuleParser$Posit
     static LAST_VARIABLE: CollationRuleParser$Position;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CollationRuleParser$Position;
-    static values(): (Object | null)[];
+    static values(): CollationRuleParser$Position[];
     private constructor()
     name(): "FIRST_TERTIARY_IGNORABLE" | "LAST_TERTIARY_IGNORABLE" | "FIRST_SECONDARY_IGNORABLE" | "LAST_SECONDARY_IGNORABLE" | "FIRST_PRIMARY_IGNORABLE" | "LAST_PRIMARY_IGNORABLE" | "FIRST_VARIABLE" | "LAST_VARIABLE" | "FIRST_REGULAR" | "LAST_REGULAR" | "FIRST_IMPLICIT" | "LAST_IMPLICIT" | "FIRST_TRAILING" | "LAST_TRAILING";
 }

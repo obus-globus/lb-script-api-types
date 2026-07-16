@@ -10,7 +10,6 @@ export class WriteElementNodeFactory$ArrayWriteElementCacheDispatchNodeGen exten
     static create(): WriteElementNode$ArrayWriteElementCacheDispatchNode;
     static inline(paramtarget: InlineSupport$InlineTarget): WriteElementNode$ArrayWriteElementCacheDispatchNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private dispatch_cache: WriteElementNodeFactory$ArrayWriteElementCacheDispatchNodeGen$DispatchData;
     // private state_0_: number;

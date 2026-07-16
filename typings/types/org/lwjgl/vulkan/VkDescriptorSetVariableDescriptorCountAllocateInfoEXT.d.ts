@@ -23,28 +23,21 @@ export class VkDescriptorSetVariableDescriptorCountAllocateInfoEXT extends VkDes
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkDescriptorSetVariableDescriptorCountAllocateInfoEXT;
     static calloc(paramarg0: MemoryStack): VkDescriptorSetVariableDescriptorCountAllocateInfoEXT;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkDescriptorSetVariableDescriptorCountAllocateInfo;
     static create(paramarg0: number): VkDescriptorSetVariableDescriptorCountAllocateInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkDescriptorSetVariableDescriptorCountAllocateInfoEXT;
     static create(paramarg0: number): VkDescriptorSetVariableDescriptorCountAllocateInfoEXT;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkDescriptorSetVariableDescriptorCountAllocateInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkDescriptorSetVariableDescriptorCountAllocateInfoEXT;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkDescriptorSetVariableDescriptorCountAllocateInfo;
     static malloc(paramarg0: MemoryStack): VkDescriptorSetVariableDescriptorCountAllocateInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkDescriptorSetVariableDescriptorCountAllocateInfoEXT;
     static malloc(paramarg0: MemoryStack): VkDescriptorSetVariableDescriptorCountAllocateInfoEXT;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ndescriptorSetCount(paramarg0: number): number;
     static ndescriptorSetCount(paramarg0: number, paramarg1: number): void;
     static npDescriptorCounts(paramarg0: number): IntBuffer;
@@ -53,7 +46,6 @@ export class VkDescriptorSetVariableDescriptorCountAllocateInfoEXT extends VkDes
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

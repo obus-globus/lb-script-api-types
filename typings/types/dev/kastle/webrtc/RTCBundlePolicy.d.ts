@@ -7,7 +7,7 @@ export class RTCBundlePolicy extends Enum<RTCBundlePolicy> {
     static MAX_COMPAT: RTCBundlePolicy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RTCBundlePolicy;
-    static values(): (Object | null)[];
+    static values(): RTCBundlePolicy[];
     private constructor()
     name(): "BALANCED" | "MAX_BUNDLE" | "MAX_COMPAT";
 }

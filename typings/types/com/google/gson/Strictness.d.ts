@@ -7,7 +7,7 @@ export class Strictness extends Enum<Strictness> {
     static STRICT: Strictness;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Strictness;
-    static values(): (Object | null)[];
+    static values(): Strictness[];
     private constructor()
     name(): "LENIENT" | "LEGACY_STRICT" | "STRICT";
 }

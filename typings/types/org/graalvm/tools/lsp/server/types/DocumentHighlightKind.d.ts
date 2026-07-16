@@ -8,7 +8,7 @@ export class DocumentHighlightKind extends Enum<DocumentHighlightKind> {
     static get(paramintValue: number): DocumentHighlightKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): DocumentHighlightKind;
-    static values(): (Object | null)[];
+    static values(): DocumentHighlightKind[];
     private constructor(intValue: number)
     readonly intValue: number;
     getIntValue(): number;

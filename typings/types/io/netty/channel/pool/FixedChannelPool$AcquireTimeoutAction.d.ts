@@ -6,7 +6,7 @@ export class FixedChannelPool$AcquireTimeoutAction extends Enum<FixedChannelPool
     static NEW: FixedChannelPool$AcquireTimeoutAction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FixedChannelPool$AcquireTimeoutAction;
-    static values(): (Object | null)[];
+    static values(): FixedChannelPool$AcquireTimeoutAction[];
     private constructor()
     name(): "NEW" | "FAIL";
 }

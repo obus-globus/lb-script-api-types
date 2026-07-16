@@ -5,7 +5,7 @@ import type { SetMultimap } from '../../../../com/google/common/collect/SetMulti
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class FilteredKeySetMultimap<K extends unknown, V extends unknown> extends FilteredKeyMultimap<K, V> implements FilteredSetMultimap<K, V> {
-    constructor(unfiltered: SetMultimap<K, V>, keyPredicate: (param0: Object) => boolean)
+    constructor(unfiltered: SetMultimap<K, V>, keyPredicate: (param0: K) => boolean)
     createEntries(): Map$Entry<K, V>[];
     entries(): Map$Entry<K, V>[];
     get(key: K): V[];

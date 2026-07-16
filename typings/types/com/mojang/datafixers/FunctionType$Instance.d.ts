@@ -34,7 +34,7 @@ export class FunctionType$Instance extends Enum<FunctionType$Instance> implement
     static unbox(paramarg0: App<TraversalP$Mu, K2>): TraversalP<K2, TraversalP$Mu>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FunctionType$Instance;
-    static values(): (Object | null)[];
+    static values(): FunctionType$Instance[];
     private constructor()
     // private cap<A extends unknown, B extends unknown, C extends unknown>(arg0: Procompose<FunctionType$Mu, FunctionType$Mu, A, B, C>): App2<FunctionType$Mu, A, B>;
     compose<A extends unknown, C extends unknown, B extends unknown>(arg0: App2<FunctionType$Mu, B, C>, arg1: () => App2<FunctionType$Mu, A, B>): App2<FunctionType$Mu, A, C>;

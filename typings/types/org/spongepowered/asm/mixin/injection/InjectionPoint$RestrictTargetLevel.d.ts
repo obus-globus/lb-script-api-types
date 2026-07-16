@@ -7,7 +7,7 @@ export class InjectionPoint$RestrictTargetLevel extends Enum<InjectionPoint$Rest
     static METHODS_ONLY: InjectionPoint$RestrictTargetLevel;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): InjectionPoint$RestrictTargetLevel;
-    static values(): (Object | null)[];
+    static values(): InjectionPoint$RestrictTargetLevel[];
     private constructor()
     name(): "METHODS_ONLY" | "CONSTRUCTORS_AFTER_DELEGATE" | "ALLOW_ALL";
 }

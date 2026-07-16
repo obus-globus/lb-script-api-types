@@ -10,7 +10,6 @@ import type { ToArrayIndexNoToPropertyKeyNodeGen$NonArrayIndex0Data } from '../.
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ToArrayIndexNoToPropertyKeyNodeGen$Inlined extends ToArrayIndexNoToPropertyKeyNode implements UnadoptableNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(target: InlineSupport$InlineTarget)
     // private convertFromString_invalidArrayIndexBranch_: InlinedBranchProfile;
     // private convertFromString_isArrayIndexBranch_: InlinedBranchProfile;

@@ -4,7 +4,7 @@ import type { Type } from '../../../../../../../com/viaversion/viaversion/api/ty
 import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class BannerPatternLayer extends Record {
-    static ARRAY_TYPE: Type<(Object | null)[]>;
+    static ARRAY_TYPE: Type<BannerPatternLayer[]>;
     static TYPE: Type<BannerPatternLayer>;
     constructor(pattern: Holder<BannerPattern>, dyeColor: number)
     // private dyeColor: number;

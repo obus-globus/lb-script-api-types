@@ -7,7 +7,7 @@ export class SpecialGenericSignatures$SpecialSignatureInfo extends Enum<SpecialG
     static ONE_COLLECTION_PARAMETER: SpecialGenericSignatures$SpecialSignatureInfo;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SpecialGenericSignatures$SpecialSignatureInfo;
-    static values(): (Object | null)[];
+    static values(): SpecialGenericSignatures$SpecialSignatureInfo[];
     private constructor(arg2: string, arg3: boolean)
     // private isObjectReplacedWithTypeParameter: boolean;
     // private valueParametersSignature: string;

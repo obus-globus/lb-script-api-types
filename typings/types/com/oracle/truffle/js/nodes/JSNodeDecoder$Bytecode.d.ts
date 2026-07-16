@@ -31,7 +31,7 @@ export class JSNodeDecoder$Bytecode extends Enum<JSNodeDecoder$Bytecode> {
     static ID_SOURCE_SECTION: JSNodeDecoder$Bytecode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): JSNodeDecoder$Bytecode;
-    static values(): (Object | null)[];
+    static values(): JSNodeDecoder$Bytecode[];
     private constructor()
     name(): "ID_NOP" | "ID_NODE" | "ID_RETURN" | "ID_LDC_INT" | "ID_LDC_LONG" | "ID_LDC_BOOLEAN" | "ID_LDC_DOUBLE" | "ID_LDC_ENUM" | "ID_LDC_STRING" | "ID_LDC_JAVA_STRING" | "ID_LDC_SINGLETON" | "ID_LDC_BIGINT" | "ID_LD_ARG" | "ID_MOV" | "ID_COLLECT_ARRAY" | "ID_COLLECT_LIST" | "ID_CALL_TARGET" | "ID_FRAME_DESCRIPTOR" | "ID_JSFRAME_SLOT" | "ID_SOURCE_SECTION" | "ID_FUNCTION_DATA" | "ID_FUNCTION_DATA_NAME_FIXUP" | "ID_JUMP_TARGET" | "ID_CALL_EXTRACTED" | "ID_CALL_EXTRACTED_LAZY" | "ID_NODE_SOURCE_SECTION_FIXUP" | "ID_NODE_TAGS_FIXUP";
 }

@@ -6,7 +6,7 @@ export class ClassInfo$SearchType extends Enum<ClassInfo$SearchType> {
     static SUPER_CLASSES_ONLY: ClassInfo$SearchType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClassInfo$SearchType;
-    static values(): (Object | null)[];
+    static values(): ClassInfo$SearchType[];
     private constructor()
     name(): "ALL_CLASSES" | "SUPER_CLASSES_ONLY";
 }

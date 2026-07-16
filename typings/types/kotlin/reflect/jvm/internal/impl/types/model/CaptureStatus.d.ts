@@ -7,7 +7,7 @@ export class CaptureStatus extends Enum<CaptureStatus> {
     static FROM_EXPRESSION: CaptureStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CaptureStatus;
-    static values(): (Object | null)[];
+    static values(): CaptureStatus[];
     private constructor()
     name(): "FOR_SUBTYPING" | "FOR_INCORPORATION" | "FROM_EXPRESSION";
 }

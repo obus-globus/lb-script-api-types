@@ -53,7 +53,7 @@ export class ServerboundPackets3D_Shareware extends Enum<ServerboundPackets3D_Sh
     static USE_ITEM_ON: ServerboundPackets3D_Shareware;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ServerboundPackets3D_Shareware;
-    static values(): (Object | null)[];
+    static values(): ServerboundPackets3D_Shareware[];
     private constructor()
     direction(): Direction;
     getId(): number;

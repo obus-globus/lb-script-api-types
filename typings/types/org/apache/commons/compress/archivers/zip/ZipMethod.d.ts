@@ -26,7 +26,7 @@ export class ZipMethod extends Enum<ZipMethod> {
     static getMethodByCode(paramarg0: number): ZipMethod;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ZipMethod;
-    static values(): (Object | null)[];
+    static values(): ZipMethod[];
     private constructor()
     private constructor(arg2: number)
     readonly code: number;

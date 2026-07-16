@@ -6,7 +6,7 @@ export class PackLoadFeedback$Update extends Enum<PackLoadFeedback$Update> {
     static DOWNLOADED: PackLoadFeedback$Update;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PackLoadFeedback$Update;
-    static values(): (Object | null)[];
+    static values(): PackLoadFeedback$Update[];
     private constructor()
     name(): "ACCEPTED" | "DOWNLOADED";
 }

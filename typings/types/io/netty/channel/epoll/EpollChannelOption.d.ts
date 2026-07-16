@@ -49,8 +49,6 @@ export class EpollChannelOption<T extends unknown> extends UnixChannelOption<T> 
     static TCP_CORK: ChannelOption<boolean>;
     static TCP_DEFER_ACCEPT: ChannelOption<number>;
     static TCP_FASTOPEN: ChannelOption<number>;
-    static TCP_FASTOPEN: ChannelOption<number>;
-    static TCP_FASTOPEN_CONNECT: ChannelOption<boolean>;
     static TCP_FASTOPEN_CONNECT: ChannelOption<boolean>;
     static TCP_KEEPCNT: ChannelOption<number>;
     static TCP_KEEPIDLE: ChannelOption<number>;

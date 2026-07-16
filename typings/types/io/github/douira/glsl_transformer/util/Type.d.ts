@@ -86,7 +86,7 @@ export class Type extends Enum<Type> implements TokenTyped {
     static ofTokenType(paramarg0: number): Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Type;
-    static values(): (Object | null)[];
+    static values(): Type[];
     private constructor(arg2: Type$NumberType, arg3: string, arg4: string)
     private constructor(arg2: number, arg3: Type$NumberType, arg4: string, arg5: string, arg6: number, ...arg7: number[])
     private constructor(arg2: number, arg3: number, arg4: Type$NumberType, arg5: string, arg6: string, arg7: number, ...arg8: number[])

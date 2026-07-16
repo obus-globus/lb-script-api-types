@@ -12,7 +12,7 @@ export class Editor_WorldType extends Enum<Editor_WorldType> {
     static getByValue(paramarg0: number, paramarg1: Editor_WorldType): Editor_WorldType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Editor_WorldType;
-    static values(): (Object | null)[];
+    static values(): Editor_WorldType[];
     private constructor(arg2: number)
     private constructor(arg2: Editor_WorldType)
     readonly value: number;

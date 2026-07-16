@@ -10,8 +10,8 @@ export class SortedLists$KeyPresentBehavior extends Enum<SortedLists$KeyPresentB
     static LAST_PRESENT: SortedLists$KeyPresentBehavior;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SortedLists$KeyPresentBehavior;
-    static values(): (Object | null)[];
+    static values(): SortedLists$KeyPresentBehavior[];
     constructor(arg2: any)
-    resultIndex<E extends unknown>(comparator: (param0: Object) => boolean, key: E, list: E[], foundIndex: number): number;
+    resultIndex<E extends unknown>(comparator: (param0: E, param1: E) => number, key: E, list: E[], foundIndex: number): number;
     name(): "ANY_PRESENT" | "LAST_PRESENT" | "FIRST_PRESENT" | "FIRST_AFTER" | "LAST_BEFORE";
 }

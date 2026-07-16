@@ -7,7 +7,7 @@ export class TinyRemapper$Direction extends Enum<TinyRemapper$Direction> {
     static UP: TinyRemapper$Direction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TinyRemapper$Direction;
-    static values(): (Object | null)[];
+    static values(): TinyRemapper$Direction[];
     private constructor()
     name(): "ANY" | "UP" | "DOWN";
 }

@@ -8,7 +8,7 @@ export class SignatureHelpTriggerKind extends Enum<SignatureHelpTriggerKind> {
     static get(paramintValue: number): SignatureHelpTriggerKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SignatureHelpTriggerKind;
-    static values(): (Object | null)[];
+    static values(): SignatureHelpTriggerKind[];
     private constructor(intValue: number)
     readonly intValue: number;
     getIntValue(): number;

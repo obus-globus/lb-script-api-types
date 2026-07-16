@@ -13,7 +13,6 @@ export class JSToPrimitiveNodeGen extends JSToPrimitiveNode {
     static create(): JSToPrimitiveNode;
     static getUncached(): JSToPrimitiveNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     static tryHostObjectToPrimitive(paramobject: Object, paramhint: JSToPrimitiveNode$Hint, paraminterop: InteropLibrary): Object;
     private constructor()
     // private asPrimitiveNode_field1_: Node;

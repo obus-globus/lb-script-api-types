@@ -9,7 +9,7 @@ export class AuthorityType extends Enum<AuthorityType> {
     static OIDC: AuthorityType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AuthorityType;
-    static values(): (Object | null)[];
+    static values(): AuthorityType[];
     private constructor()
     name(): "AAD" | "ADFS" | "B2C" | "CIAM" | "OIDC";
 }

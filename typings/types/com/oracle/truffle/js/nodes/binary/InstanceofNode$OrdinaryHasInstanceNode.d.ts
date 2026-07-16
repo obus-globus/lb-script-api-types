@@ -19,7 +19,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class InstanceofNode$OrdinaryHasInstanceNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): InstanceofNode$OrdinaryHasInstanceNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private context: JSContext;
     // private getPrototypeNode: PropertyGetNode;

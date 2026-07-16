@@ -11,7 +11,6 @@ import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PropertyGetNode$ForeignPropertyGetNode extends PropertyGetNode$LinkedPropertyGetNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(key: Object, isMethod: boolean, isGlobal: boolean, context: JSContext)
     // private context: JSContext;
     // private errorBranch: BranchProfile;

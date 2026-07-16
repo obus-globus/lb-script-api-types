@@ -12,7 +12,6 @@ export class ArrayElementInfoNodeGen extends ArrayElementInfoNode {
     static create(): ArrayElementInfoNode;
     static getUncached(): ArrayElementInfoNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private cached_cache: ArrayElementInfoNodeGen$CachedData;
     // private state_0_: number;

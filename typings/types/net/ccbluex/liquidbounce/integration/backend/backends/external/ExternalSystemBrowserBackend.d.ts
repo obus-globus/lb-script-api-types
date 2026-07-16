@@ -7,6 +7,7 @@ import type { BrowserSettings } from '../../../../../../../net/ccbluex/liquidbou
 import type { BrowserViewport } from '../../../../../../../net/ccbluex/liquidbounce/integration/backend/browser/BrowserViewport.d.ts'
 import type { InputAcceptor } from '../../../../../../../net/ccbluex/liquidbounce/integration/backend/input/InputAcceptor.d.ts'
 import type { TaskManager } from '../../../../../../../net/ccbluex/liquidbounce/integration/task/TaskManager.d.ts'
+import type { Component } from '../../../../../../../net/minecraft/network/chat/Component.d.ts'
 /**
  * Opens an external browser window.
  *
@@ -23,8 +24,10 @@ export class ExternalSystemBrowserBackend extends Object implements EventListene
     constructor()
     accelerationFlags: BrowserAccelerationFlags;
     browsers: ExternalSystemBrowser[];
+    readonly debugDisplayName: Component;
     // private isInitialized: boolean;
     /*not mapped: */ isInitialized(): boolean;
+    readonly running: boolean;
     // private addBrowser(browser: ExternalSystemBrowser): void;
     children(): EventListener[];
     createBrowser(url: string, position: BrowserViewport, settings: BrowserSettings, priority: number, inputAcceptor: InputAcceptor | null): ExternalSystemBrowser;

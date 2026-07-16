@@ -9,7 +9,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ForEachIndexCallNode$BackwardForEachIndexCallNode extends ForEachIndexCallNode {
     static create(paramcontext: JSContext, paramcallbackArgumentsNode: ForEachIndexCallNode$CallbackNode, parammaybeResultNode: ForEachIndexCallNode$MaybeResultNode, paramforward: boolean, paramcheckHasProperty: boolean): ForEachIndexCallNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, callbackArgumentsNode: ForEachIndexCallNode$CallbackNode, maybeResultNode: ForEachIndexCallNode$MaybeResultNode, checkHasProperty: boolean)
     // private previousElementIndexNode: JSArrayPreviousElementIndexNode;
     executeForEachIndexFast(target: JSDynamicObject, callback: Object, callbackThisArg: Object, fromIndex: number, length: number, initialResult: Object): Object;

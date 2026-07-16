@@ -5,10 +5,10 @@ export class PatternStringUtils$PatternSignType extends Enum<PatternStringUtils$
     static NEG: PatternStringUtils$PatternSignType;
     static POS: PatternStringUtils$PatternSignType;
     static POS_SIGN: PatternStringUtils$PatternSignType;
-    static VALUES: (Object | null)[];
+    static VALUES: PatternStringUtils$PatternSignType[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PatternStringUtils$PatternSignType;
-    static values(): (Object | null)[];
+    static values(): PatternStringUtils$PatternSignType[];
     private constructor()
     name(): "POS" | "POS_SIGN" | "NEG";
 }

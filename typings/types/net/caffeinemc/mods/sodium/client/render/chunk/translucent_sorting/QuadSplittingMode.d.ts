@@ -9,7 +9,7 @@ export class QuadSplittingMode extends Enum<QuadSplittingMode> implements TextPr
     static UNLIMITED: QuadSplittingMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): QuadSplittingMode;
-    static values(): (Object | null)[];
+    static values(): QuadSplittingMode[];
     private constructor(arg2: string, arg3: number, arg4: boolean, arg5: string)
     // private maxAmplificationFactor: number;
     // private name: Component;

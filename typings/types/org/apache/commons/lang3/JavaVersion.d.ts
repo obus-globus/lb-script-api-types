@@ -33,7 +33,7 @@ export class JavaVersion extends Enum<JavaVersion> {
     static JAVA_RECENT: JavaVersion;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): JavaVersion;
-    static values(): (Object | null)[];
+    static values(): JavaVersion[];
     private constructor(arg2: number, arg3: string)
     // private name: string;
     // private value: number;

@@ -13,7 +13,7 @@ export class Win32LogicalDisk$LogicalDiskProperty extends Enum<Win32LogicalDisk$
     static VOLUMENAME: Win32LogicalDisk$LogicalDiskProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Win32LogicalDisk$LogicalDiskProperty;
-    static values(): (Object | null)[];
+    static values(): Win32LogicalDisk$LogicalDiskProperty[];
     private constructor()
     name(): "ACCESS" | "DESCRIPTION" | "DRIVETYPE" | "FILESYSTEM" | "FREESPACE" | "NAME" | "PROVIDERNAME" | "SIZE" | "VOLUMENAME";
 }

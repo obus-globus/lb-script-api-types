@@ -15,7 +15,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSProxyPropertySetNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext, paramisStrict: boolean, paramdefineProperty: boolean, paramattributes: number): JSProxyPropertySetNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, isStrict: boolean, defineProperty: boolean, attributes: number)
     // private attributes: number;
     // private call: JSFunctionCallNode;

@@ -10,7 +10,7 @@ export class SearchRecipeBookCategory extends Enum<SearchRecipeBookCategory> imp
     static SMOKER: SearchRecipeBookCategory;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SearchRecipeBookCategory;
-    static values(): (Object | null)[];
+    static values(): SearchRecipeBookCategory[];
     private constructor(...includedCategories: RecipeBookCategory[])
     // private includedCategories: RecipeBookCategory[];
     includedCategories(): RecipeBookCategory[];

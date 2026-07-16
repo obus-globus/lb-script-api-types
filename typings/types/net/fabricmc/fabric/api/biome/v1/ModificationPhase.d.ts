@@ -8,7 +8,7 @@ export class ModificationPhase extends Enum<ModificationPhase> {
     static REPLACEMENTS: ModificationPhase;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModificationPhase;
-    static values(): (Object | null)[];
+    static values(): ModificationPhase[];
     private constructor()
     name(): "ADDITIONS" | "REMOVALS" | "REPLACEMENTS" | "POST_PROCESSING";
 }

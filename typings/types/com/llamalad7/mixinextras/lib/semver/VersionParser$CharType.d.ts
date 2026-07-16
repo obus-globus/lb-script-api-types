@@ -11,7 +11,7 @@ export class VersionParser$CharType extends Enum<VersionParser$CharType> impleme
     static LETTER: VersionParser$CharType;
     static PLUS: VersionParser$CharType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static values(): (Object | null)[];
+    static values(): VersionParser$CharType[];
     constructor(arg2: any)
     name(): "DIGIT" | "LETTER" | "DOT" | "HYPHEN" | "PLUS" | "EOI" | "ILLEGAL";
 }

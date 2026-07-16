@@ -9,7 +9,7 @@ export class UnitsData extends Object {
     static getAliases(): UnitAliases$Alias[];
     static getCategoryIndexOfSimpleUnit(paramarg0: number): number;
     static getReplacementFromAliasIndex(paramarg0: number): string;
-    static getSimpleUnits(): (Object | null)[];
+    static getSimpleUnits(): string[];
     constructor()
     readonly conversionRates: ConversionRates;
     readonly unitPreferences: UnitPreferences;

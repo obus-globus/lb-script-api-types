@@ -13,7 +13,6 @@ export class Real extends Number implements Comparable<Real> {
     static of(paramarg0: number): Real;
     static of(paramarg0: BigDecimal): Real;
     static of(paramarg0: BigInteger): Real;
-    static of(paramarg0: number): Real;
     constructor(arg0: BigDecimal)
     value: BigDecimal;
     abs(): Real;

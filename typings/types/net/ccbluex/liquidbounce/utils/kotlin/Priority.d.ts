@@ -12,7 +12,7 @@ export class Priority extends Enum<Priority> {
     static getEntries(): Priority[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Priority;
-    static values(): (Object | null)[];
+    static values(): Priority[];
     private constructor(priority: number)
     readonly priority: number;
     name(): "NOT_IMPORTANT" | "NORMAL" | "IMPORTANT_FOR_USAGE_1" | "IMPORTANT_FOR_USAGE_2" | "IMPORTANT_FOR_USAGE_3" | "IMPORTANT_FOR_PLAYER_LIFE" | "IMPORTANT_FOR_USER_SAFETY";

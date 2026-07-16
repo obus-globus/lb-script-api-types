@@ -15,9 +15,11 @@ export class PluginGeneratedSerialDescriptor extends Object implements SerialDes
     // private /*not mapped: */ getChildSerializers(): KSerializer<Object>[];
     // private classAnnotations: Annotation[] | null;
     readonly elementsCount: number;
-    // private elementsOptionality: (Object | null)[];
+    // private elementsOptionality: boolean[];
     // private generatedSerializer: GeneratedSerializer<Object> | null;
     // private indices: { [key: string]: number };
+    /*not mapped: */ isInline(): boolean;
+    /*not mapped: */ isNullable(): boolean;
     readonly kind: SerialKind;
     // private names: string[];
     // private propertiesAnnotations: (Annotation[] | null)[];

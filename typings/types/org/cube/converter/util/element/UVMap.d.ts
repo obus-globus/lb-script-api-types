@@ -4,7 +4,7 @@ import type { Direction } from '../../../../../org/cube/converter/util/element/D
 import type { Position3V } from '../../../../../org/cube/converter/util/element/Position3V.d.ts'
 import type { UVMap$UVType } from '../../../../../org/cube/converter/util/element/UVMap$UVType.d.ts'
 export class UVMap extends Object {
-    static fromBoxUV(paramarg0: Position3V, paramarg1: (Object | null)[], paramarg2: boolean): UVMap;
+    static fromBoxUV(paramarg0: Position3V, paramarg1: number[], paramarg2: boolean): UVMap;
     static fromPerfaceUV(paramarg0: JsonObject): UVMap;
     private constructor(arg0: UVMap$UVType)
     readonly uvMap: Map<Direction, number[]>;

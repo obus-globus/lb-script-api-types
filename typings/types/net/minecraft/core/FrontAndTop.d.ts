@@ -22,16 +22,16 @@ export class FrontAndTop extends Enum<FrontAndTop> implements StringRepresentabl
     static UP_SOUTH: FrontAndTop;
     static UP_WEST: FrontAndTop;
     static WEST_UP: FrontAndTop;
-    static createNameLookup(paramvalueArray: Object | null): (param0: string) => StringRepresentable | null;
-    static createNameLookup(paramvalueArray: Object | null, paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
-    static fromEnum(paramvalues: () => Object | null): StringRepresentable$EnumCodec<any>;
-    static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<any>;
+    static createNameLookup(paramvalueArray: (StringRepresentable | null)[]): (param0: string) => StringRepresentable | null;
+    static createNameLookup(paramvalueArray: (Object | null)[], paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
+    static fromEnum(paramvalues: () => (Object | null)[]): StringRepresentable$EnumCodec<any>;
+    static fromEnumWithMapping(paramvalues: () => (Object | null)[], paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<any>;
     static fromFrontAndTop(paramfront: Direction, paramtop: Direction): FrontAndTop;
-    static fromValues(paramvalues: () => Object | null): Codec<StringRepresentable>;
-    static keys(paramvalues: (Object | null)[]): Keyable;
+    static fromValues(paramvalues: () => (StringRepresentable | null)[]): Codec<StringRepresentable>;
+    static keys(paramvalues: StringRepresentable[]): Keyable;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): FrontAndTop;
-    static values(): (Object | null)[];
+    static values(): FrontAndTop[];
     private constructor(name: string, front: Direction, top: Direction)
     // private front: Direction;
     // private name: string;

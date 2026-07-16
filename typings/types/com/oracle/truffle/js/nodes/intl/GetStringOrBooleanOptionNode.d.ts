@@ -10,7 +10,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class GetStringOrBooleanOptionNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext, paramproperty: TruffleString, paramvalues: string[], paramtrueValue: Object, paramfalsyValue: Object, paramfallback: Object): GetStringOrBooleanOptionNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, property: TruffleString, values: string[], trueValue: Object, falsyValue: Object, fallback: Object)
     // private fallback: Object;
     // private falsyValue: Object;

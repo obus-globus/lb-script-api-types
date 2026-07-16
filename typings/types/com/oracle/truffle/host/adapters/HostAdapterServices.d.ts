@@ -9,7 +9,7 @@ import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 import type { Value } from '../../../../../org/graalvm/polyglot/Value.d.ts'
 export class HostAdapterServices extends Object {
     static bootstrap(paramlookup: MethodHandles$Lookup, parammethodName: string, paramtype: MethodType, paramflags: number): CallSite;
-    static concatArrays(paramfixed: (Object | null)[], paramva: Object): (Object | null)[];
+    static concatArrays(paramfixed: Object[], paramva: Object): Object[];
     static getClassOverrides(paramclassLoader: ClassLoader): Value;
     static hasMethod(paramobj: Value, paramname: string): boolean;
     static hasOwnMethod(paramobj: Value, paramname: string): boolean;

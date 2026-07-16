@@ -7,7 +7,6 @@ import type { JavaScriptBaseNode } from '../../../../../../com/oracle/truffle/js
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSDoubleToStringNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doDouble(d: number, fromLongNode: TruffleString$FromLongNode, isInt: InlinedConditionProfile, isNaN: InlinedConditionProfile, isPositiveInfinity: InlinedConditionProfile, isNegativeInfinity: InlinedConditionProfile, isZero: InlinedConditionProfile, fromJavaStringNode: TruffleString$FromJavaStringNode): TruffleString;
     executeString(operand: Object): TruffleString;

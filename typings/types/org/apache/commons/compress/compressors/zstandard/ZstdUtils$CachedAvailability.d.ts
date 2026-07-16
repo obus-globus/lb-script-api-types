@@ -7,7 +7,7 @@ export class ZstdUtils$CachedAvailability extends Enum<ZstdUtils$CachedAvailabil
     static DONT_CACHE: ZstdUtils$CachedAvailability;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ZstdUtils$CachedAvailability;
-    static values(): (Object | null)[];
+    static values(): ZstdUtils$CachedAvailability[];
     private constructor()
     name(): "DONT_CACHE" | "CACHED_AVAILABLE" | "CACHED_UNAVAILABLE";
 }

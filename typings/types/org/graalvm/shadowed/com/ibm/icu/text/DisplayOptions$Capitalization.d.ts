@@ -10,7 +10,7 @@ export class DisplayOptions$Capitalization extends Enum<DisplayOptions$Capitaliz
     static VALUES: DisplayOptions$Capitalization[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): DisplayOptions$Capitalization;
-    static values(): (Object | null)[];
+    static values(): DisplayOptions$Capitalization[];
     private constructor()
     name(): "UNDEFINED" | "BEGINNING_OF_SENTENCE" | "MIDDLE_OF_SENTENCE" | "STANDALONE" | "UI_LIST_OR_MENU";
 }

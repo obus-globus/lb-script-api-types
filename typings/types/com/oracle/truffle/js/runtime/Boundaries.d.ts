@@ -4,9 +4,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 import type { EconomicMap } from '../../../../../org/graalvm/collections/EconomicMap.d.ts'
 export class Boundaries extends Object {
-    static arraySort(paramarray: Object | null, paramcomparator: (param0: Object) => boolean): void;
-    static arraySort(paramarray: number[]): void;
-    static arraySort(paramarray: number[]): void;
+    static arraySort(paramarray: (Object | null)[], paramcomparator: (param0: Object, param1: Object) => number): void;
     static arraySort(paramarray: number[]): void;
     static byteBufferArray(parambuffer: ByteBuffer): number[];
     static byteBufferGet(paramsrc: ByteBuffer, paramsrcPos: number, paramdst: number[], paramdstPos: number, paramlength: number): void;
@@ -31,9 +29,9 @@ export class Boundaries extends Object {
     static listEditableCopy(paramlist: (Object | null)[]): (Object | null)[];
     static listGet(paramlist: (Object | null)[], paramindex: number): Object | null;
     static listSize(paramlist: (Object | null)[]): number;
-    static listToArray(paramlist: (Object | null)[]): (Object | null)[];
+    static listToArray(paramlist: (Object | null)[]): Object[];
     static listToEditable(paramlist: (Object | null)[]): (Object | null)[];
-    static listToStringArray(paramlist: string[]): (Object | null)[];
+    static listToStringArray(paramlist: string[]): string[];
     static mapContainsKey(parammap: Map<Object | null, Object | null>, paramkey: Object | null): boolean;
     static mapEntry(paramkey: Object | null, paramvalue: Object | null): Map$Entry<Object, Object>;
     static mapGet(parammap: Map<Object | null, Object | null>, paramkey: Object | null): Object | null;
@@ -42,6 +40,6 @@ export class Boundaries extends Object {
     static mapRemove(parammap: Map<Object | null, Object | null>, paramkey: Object | null): Object | null;
     static queueAdd(paramqueue: Object[], paramrequest: Object | null): void;
     static setContains(paramset: Object[], paramelement: Object): boolean;
-    static stringFormat(paramformat: string, ...paramparams: (Object | null)[]): string;
+    static stringFormat(paramformat: string, ...paramparams: Object[]): string;
     private constructor()
 }

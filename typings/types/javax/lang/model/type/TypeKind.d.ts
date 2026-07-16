@@ -26,7 +26,7 @@ export class TypeKind extends Enum<TypeKind> {
     static WILDCARD: TypeKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TypeKind;
-    static values(): (Object | null)[];
+    static values(): TypeKind[];
     private constructor()
     isPrimitive(): boolean;
     name(): "BOOLEAN" | "BYTE" | "SHORT" | "INT" | "LONG" | "CHAR" | "FLOAT" | "DOUBLE" | "VOID" | "NONE" | "NULL" | "ARRAY" | "DECLARED" | "ERROR" | "TYPEVAR" | "WILDCARD" | "PACKAGE" | "EXECUTABLE" | "OTHER" | "UNION" | "INTERSECTION" | "MODULE";

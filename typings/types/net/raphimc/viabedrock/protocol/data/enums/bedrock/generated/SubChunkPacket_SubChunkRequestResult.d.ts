@@ -15,7 +15,7 @@ export class SubChunkPacket_SubChunkRequestResult extends Enum<SubChunkPacket_Su
     static getByValue(paramarg0: number, paramarg1: SubChunkPacket_SubChunkRequestResult): SubChunkPacket_SubChunkRequestResult;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SubChunkPacket_SubChunkRequestResult;
-    static values(): (Object | null)[];
+    static values(): SubChunkPacket_SubChunkRequestResult[];
     private constructor(arg2: number)
     private constructor(arg2: SubChunkPacket_SubChunkRequestResult)
     readonly value: number;

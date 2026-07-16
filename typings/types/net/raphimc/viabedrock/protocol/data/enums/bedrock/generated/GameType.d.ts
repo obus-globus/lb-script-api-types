@@ -15,7 +15,7 @@ export class GameType extends Enum<GameType> {
     static getByValue(paramarg0: number, paramarg1: GameType): GameType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): GameType;
-    static values(): (Object | null)[];
+    static values(): GameType[];
     private constructor(arg2: number)
     private constructor(arg2: GameType)
     readonly value: number;

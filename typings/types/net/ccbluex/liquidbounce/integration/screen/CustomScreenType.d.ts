@@ -28,7 +28,7 @@ export class CustomScreenType extends Enum<CustomScreenType> {
     static recognize(screen: Screen): CustomScreenType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CustomScreenType;
-    static values(): (Object | null)[];
+    static values(): CustomScreenType[];
     private constructor(routeName: string, recognizer: (param0: Screen) => boolean, isInGame: boolean, open: () => void)
     // private isInGame: boolean;
     /*not mapped: */ isInGame(): boolean;

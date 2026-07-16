@@ -1,6 +1,5 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
 import type { Comparator } from '../../../../../../../../java/util/Comparator.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { AutoMobHeal$FoodCandidate } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/world/automobheal/AutoMobHeal$FoodCandidate.d.ts'
 import type { AutoMobHeal$HealTarget } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/world/automobheal/AutoMobHeal$HealTarget.d.ts'
 import type { AutoMobHeal$HealTarget$Companion } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/world/automobheal/AutoMobHeal$HealTarget$Companion.d.ts'
@@ -24,7 +23,7 @@ export class AutoMobHeal$HealTarget$FoodHealTarget<T extends LivingEntity> exten
     // private /*not mapped: */ getPreferNonBucketFoodAlways(): boolean;
     // private bucketPenalty(candidate: AutoMobHeal$FoodCandidate): number;
     protected findSlot(entity: T): HotbarItemSlot | null;
-    // private foodCandidateComparator(missingHealth: number): (param0: Object) => boolean;
+    // private foodCandidateComparator(missingHealth: number): (param0: AutoMobHeal$FoodCandidate, param1: AutoMobHeal$FoodCandidate) => number;
     protected foodOptions(entity: T): MobFoodOption[];
     // private healingDelta(candidate: AutoMobHeal$FoodCandidate, missingHealth: number): number;
     // private wouldWasteHealing(candidate: AutoMobHeal$FoodCandidate, missingHealth: number): boolean;

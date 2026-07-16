@@ -15,7 +15,6 @@ export class SpecializedNewObjectNodeGen extends SpecializedNewObjectNode {
     static create(paramfunctionData: JSFunctionData, paraminstanceLayout: JSOrdinary): SpecializedNewObjectNode;
     static create(paramcontext: JSContext, paramisBuiltin: boolean, paramisConstructor: boolean, paramisGenerator: boolean, paramisAsyncGenerator: boolean, paraminstanceLayout: JSNonProxy): SpecializedNewObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, isBuiltin: boolean, isConstructor: boolean, isGenerator: boolean, isAsyncGenerator: boolean, instanceLayout: JSNonProxy)
     // private cachedProto_cache: SpecializedNewObjectNodeGen$CachedProtoData;
     // private cachedShape: Shape;

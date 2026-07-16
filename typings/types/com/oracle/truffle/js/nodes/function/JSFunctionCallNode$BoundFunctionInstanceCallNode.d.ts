@@ -8,7 +8,6 @@ import type { JSFunctionObject$Bound } from '../../../../../../com/oracle/truffl
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSFunctionCallNode$BoundFunctionInstanceCallNode extends JSFunctionCallNode$JSFunctionCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(function_: JSFunctionObject$Bound, isNew: boolean, isNewTarget: boolean)
     // private addArguments: Object[];
     // private boundFunctionObj: JSFunctionObject;

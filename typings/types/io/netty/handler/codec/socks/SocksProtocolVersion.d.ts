@@ -9,7 +9,7 @@ export class SocksProtocolVersion extends Enum<SocksProtocolVersion> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: number): SocksProtocolVersion;
     static valueOf(paramarg0: string): SocksProtocolVersion;
-    static values(): (Object | null)[];
+    static values(): SocksProtocolVersion[];
     private constructor(arg2: number)
     // private b: number;
     byteValue(): number;

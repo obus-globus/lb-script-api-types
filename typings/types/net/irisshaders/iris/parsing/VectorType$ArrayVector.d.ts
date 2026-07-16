@@ -17,9 +17,9 @@ import type { Vector3i } from '../../../../org/joml/Vector3i.d.ts'
 import type { Vector4f } from '../../../../org/joml/Vector4f.d.ts'
 import type { Vector4i } from '../../../../org/joml/Vector4i.d.ts'
 export class VectorType$ArrayVector extends VectorType {
-    static AllArrayVectorTypes: (Object | null)[];
-    static AllPrimitives: (Object | null)[];
-    static AllVectorTypes: (Object | null)[];
+    static AllArrayVectorTypes: VectorType$ArrayVector[];
+    static AllPrimitives: Type$Primitive[];
+    static AllVectorTypes: VectorType[];
     static B_VEC2: VectorType;
     static B_VEC3: VectorType;
     static B_VEC4: VectorType;

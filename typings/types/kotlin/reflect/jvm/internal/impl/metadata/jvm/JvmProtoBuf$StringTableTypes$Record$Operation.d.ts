@@ -9,7 +9,7 @@ export class JvmProtoBuf$StringTableTypes$Record$Operation extends Enum<JvmProto
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: number): JvmProtoBuf$StringTableTypes$Record$Operation;
     static valueOf(paramarg0: string): JvmProtoBuf$StringTableTypes$Record$Operation;
-    static values(): (Object | null)[];
+    static values(): JvmProtoBuf$StringTableTypes$Record$Operation[];
     private constructor(arg2: number, arg3: number)
     // private value: number;
     getNumber(): number;

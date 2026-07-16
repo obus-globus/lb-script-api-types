@@ -21,7 +21,7 @@ export class BooleanModifier extends Enum<BooleanModifier> implements AttributeM
     static override(): AttributeModifier<Object, Object>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): BooleanModifier;
-    static values(): (Object | null)[];
+    static values(): BooleanModifier[];
     private constructor()
     apply(subject: boolean, argument: boolean): boolean;
     argumentCodec(type: EnvironmentAttribute<boolean>): Codec<boolean>;

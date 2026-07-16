@@ -11,7 +11,7 @@ export class BlockFace extends Enum<BlockFace> {
     static WEST: BlockFace;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BlockFace;
-    static values(): (Object | null)[];
+    static values(): BlockFace[];
     private constructor(arg2: number, arg3: number, arg4: number, arg5: BlockFace$EnumAxis)
     // private axis: BlockFace$EnumAxis;
     // private modX: number;

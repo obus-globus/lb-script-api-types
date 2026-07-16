@@ -16,7 +16,7 @@ export class SocksCmdStatus extends Enum<SocksCmdStatus> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: number): SocksCmdStatus;
     static valueOf(paramarg0: string): SocksCmdStatus;
-    static values(): (Object | null)[];
+    static values(): SocksCmdStatus[];
     private constructor(arg2: number)
     // private b: number;
     byteValue(): number;

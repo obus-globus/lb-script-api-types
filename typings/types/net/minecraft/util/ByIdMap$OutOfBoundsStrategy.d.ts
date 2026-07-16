@@ -7,7 +7,7 @@ export class ByIdMap$OutOfBoundsStrategy extends Enum<ByIdMap$OutOfBoundsStrateg
     static ZERO: ByIdMap$OutOfBoundsStrategy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ByIdMap$OutOfBoundsStrategy;
-    static values(): (Object | null)[];
+    static values(): ByIdMap$OutOfBoundsStrategy[];
     private constructor()
     name(): "ZERO" | "WRAP" | "CLAMP";
 }

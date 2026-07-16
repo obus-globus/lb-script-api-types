@@ -18,7 +18,7 @@ export class ErrorCodes extends Enum<ErrorCodes> {
     static get(paramintValue: number): ErrorCodes;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ErrorCodes;
-    static values(): (Object | null)[];
+    static values(): ErrorCodes[];
     private constructor(intValue: number)
     readonly intValue: number;
     getIntValue(): number;

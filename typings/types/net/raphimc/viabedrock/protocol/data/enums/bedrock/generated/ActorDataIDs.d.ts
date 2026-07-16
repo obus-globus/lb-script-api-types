@@ -149,7 +149,7 @@ export class ActorDataIDs extends Enum<ActorDataIDs> {
     static getByValue(paramarg0: number, paramarg1: ActorDataIDs): ActorDataIDs;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ActorDataIDs;
-    static values(): (Object | null)[];
+    static values(): ActorDataIDs[];
     private constructor(arg2: number)
     private constructor(arg2: ActorDataIDs)
     readonly value: number;

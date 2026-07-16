@@ -6,7 +6,7 @@ import type { BasicFileAttributes } from '../../../../../java/nio/file/attribute
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { IOFileFilter } from '../../../../../org/apache/commons/io/filefilter/IOFileFilter.d.ts'
 export class TrueFileFilter extends Object implements Serializable, IOFileFilter {
-    static EMPTY_STRING_ARRAY: (Object | null)[];
+    static EMPTY_STRING_ARRAY: string[];
     static INSTANCE: IOFileFilter;
     static TRUE: IOFileFilter;
     constructor()

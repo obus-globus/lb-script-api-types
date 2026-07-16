@@ -8,7 +8,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 export class DeclareGlobalVariableNodeGen extends DeclareGlobalVariableNode {
     static create(paramvarName: TruffleString, paramconfigurable: boolean): DeclareGlobalVariableNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(varName: TruffleString, configurable: boolean)
     // private cached_cache_: PropertySetNode;
     // private state_0_: number;

@@ -9,7 +9,7 @@ export class StringTokenizer extends Object implements Enumeration<Object> {
     constructor(arg0: string, arg1: string)
     constructor(arg0: string, arg1: string, arg2: boolean)
     constructor(arg0: string, arg1: string, arg2: boolean, arg3: boolean)
-    // private delims: (Object | null)[];
+    // private delims: boolean[];
     // private m_coalesceDelimiters_: boolean;
     // private m_delimiters_: string[];
     // private m_length_: number;

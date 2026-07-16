@@ -9,7 +9,6 @@ export class TestArrayNodeGen extends TestArrayNode {
     static createHasHolesOrUnused(): TestArrayNode;
     static createIsSealed(): TestArrayNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(test: TestArrayNode$Test)
     // private cached_cache: TestArrayNodeGen$CachedData;
     // private state_0_: number;

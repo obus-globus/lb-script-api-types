@@ -7,7 +7,7 @@ export class InsertTextFormat extends Enum<InsertTextFormat> {
     static get(paramintValue: number): InsertTextFormat;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): InsertTextFormat;
-    static values(): (Object | null)[];
+    static values(): InsertTextFormat[];
     private constructor(intValue: number)
     readonly intValue: number;
     getIntValue(): number;

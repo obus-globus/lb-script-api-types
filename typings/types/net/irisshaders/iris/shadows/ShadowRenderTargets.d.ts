@@ -11,13 +11,13 @@ export class ShadowRenderTargets extends Object {
     constructor(arg0: WorldRenderingPipeline, arg1: number, arg2: PackShadowDirectives)
     readonly buffersToBeCleared: (Object | null)[];
     readonly depthSourceFb: GlFramebuffer;
-    // private flipped: (Object | null)[];
+    // private flipped: boolean[];
     // private formats: InternalTextureFormat[];
     readonly fullClearRequired: boolean;
-    // private hardwareFiltered: (Object | null)[];
-    // private linearFiltered: (Object | null)[];
+    // private hardwareFiltered: boolean[];
+    // private linearFiltered: boolean[];
     // private mainDepth: GpuTexture;
-    // private mipped: (Object | null)[];
+    // private mipped: boolean[];
     // private noTranslucents: GpuTexture;
     // private noTranslucentsDestFb: GlFramebuffer;
     // private ownedFramebuffers: GlFramebuffer[];

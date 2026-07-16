@@ -8,7 +8,6 @@ export class JSToBooleanNodeGen extends JSToBooleanNode {
     static getUncached(): JSToBooleanNode;
     static inline(paramtarget: InlineSupport$InlineTarget): JSToBooleanNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private foreignObject0_cache: JSToBooleanNodeGen$ForeignObject0Data;
     // private state_0_: number;

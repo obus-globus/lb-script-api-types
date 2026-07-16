@@ -8,7 +8,7 @@ export class EquipmentSlot$Type extends Enum<EquipmentSlot$Type> {
     static SADDLE: EquipmentSlot$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): EquipmentSlot$Type;
-    static values(): (Object | null)[];
+    static values(): EquipmentSlot$Type[];
     private constructor()
     name(): "HAND" | "HUMANOID_ARMOR" | "ANIMAL_ARMOR" | "SADDLE";
 }

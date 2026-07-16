@@ -8,7 +8,7 @@ export class Padding extends Enum<Padding> {
     static getEntries(): Padding[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Padding;
-    static values(): (Object | null)[];
+    static values(): Padding[];
     private constructor()
     name(): "NONE" | "ZERO" | "SPACE";
 }

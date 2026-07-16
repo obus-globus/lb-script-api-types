@@ -8,7 +8,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSToRegExpNodeGen extends JSToRegExpNode {
     static create(paramcontext: JSContext): JSToRegExpNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private createRegExp_compileRegexNode_: CompileRegexNode;
     // private createRegExp_toStringNode_: JSToStringNode;

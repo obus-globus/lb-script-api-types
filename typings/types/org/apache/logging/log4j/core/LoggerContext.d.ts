@@ -27,7 +27,7 @@ import type { Terminable } from '../../../../../org/apache/logging/log4j/spi/Ter
 export class LoggerContext extends AbstractLifeCycle implements AutoCloseable, ConfigurationListener, LoggerContext_2, LoggerContextShutdownEnabled, Terminable {
     static DEFAULT_STOP_TIMEOUT: number;
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
-    static EMPTY_ARRAY: (Object | null)[];
+    static EMPTY_ARRAY: LoggerContext_2[];
     static PROPERTY_CONFIG: string;
     static getContext(): LoggerContext;
     static getContext(paramcurrentContext: boolean): LoggerContext;

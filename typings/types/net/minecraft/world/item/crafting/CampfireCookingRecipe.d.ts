@@ -22,7 +22,6 @@ export class CampfireCookingRecipe extends AbstractCookingRecipe {
     static MAP_CODEC: MapCodec<CampfireCookingRecipe>;
     static SERIALIZER: RecipeSerializer<CampfireCookingRecipe>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, CampfireCookingRecipe>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<any>>;
     static cookingMapCodec(paramfactory: (param0: Recipe$CommonInfo, param1: AbstractCookingRecipe$CookingBookInfo, param2: Ingredient, param3: ItemStackTemplate, param4: number, param5: number) => AbstractCookingRecipe | null, paramdefaultCookingTime: number): MapCodec<AbstractCookingRecipe>;
     static cookingStreamCodec(paramfactory: (param0: Recipe$CommonInfo, param1: AbstractCookingRecipe$CookingBookInfo, param2: Ingredient, param3: ItemStackTemplate, param4: number, param5: number) => AbstractCookingRecipe | null): StreamCodec<RegistryFriendlyByteBuf, AbstractCookingRecipe>;
     static simpleMapCodec(paramfactory: (param0: Recipe$CommonInfo, param1: Ingredient, param2: ItemStackTemplate) => SingleItemRecipe | null): MapCodec<SingleItemRecipe>;

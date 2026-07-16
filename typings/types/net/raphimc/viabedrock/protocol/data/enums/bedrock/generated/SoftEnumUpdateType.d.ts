@@ -11,7 +11,7 @@ export class SoftEnumUpdateType extends Enum<SoftEnumUpdateType> {
     static getByValue(paramarg0: number, paramarg1: SoftEnumUpdateType): SoftEnumUpdateType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SoftEnumUpdateType;
-    static values(): (Object | null)[];
+    static values(): SoftEnumUpdateType[];
     private constructor(arg2: number)
     private constructor(arg2: SoftEnumUpdateType)
     readonly value: number;

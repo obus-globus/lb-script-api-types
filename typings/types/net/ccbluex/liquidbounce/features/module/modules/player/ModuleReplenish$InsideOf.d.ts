@@ -12,7 +12,7 @@ export class ModuleReplenish$InsideOf extends Enum<ModuleReplenish$InsideOf> imp
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleReplenish$InsideOf;
-    static values(): (Object | null)[];
+    static values(): ModuleReplenish$InsideOf[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "CHESTS" | "INVENTORIES";

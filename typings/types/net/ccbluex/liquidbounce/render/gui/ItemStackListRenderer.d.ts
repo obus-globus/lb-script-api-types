@@ -7,18 +7,20 @@ import type { GuiOverlapRearranger } from '../../../../../net/ccbluex/liquidboun
 import type { ItemStackListRenderState } from '../../../../../net/ccbluex/liquidbounce/render/gui/ItemStackListRenderState.d.ts'
 import type { Font } from '../../../../../net/minecraft/client/gui/Font.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
+import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Item } from '../../../../../net/minecraft/world/item/Item.d.ts'
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { Block } from '../../../../../net/minecraft/world/level/block/Block.d.ts'
 export class ItemStackListRenderer extends Object implements EventListener {
     static INSTANCE: ItemStackListRenderer;
     static create(paramarg0: GuiGraphicsExtractor, paramarg1: ItemStack[]): ItemStackListRenderState;
-    static create(paramarg0: GuiGraphicsExtractor, paramarg1: (Object | null)[]): ItemStackListRenderState;
     static createItemStackForRendering(block: Block, count: number): ItemStack;
     // private block2Item: Map<Block, Item>;
+    readonly debugDisplayName: Component;
     // private overlapRearranger: GuiOverlapRearranger;
     // private overlayRenderHandler: EventHook<OverlayRenderEvent>;
     // private planned: ItemStackListRenderState[];
+    readonly running: boolean;
     // private textRenderer: Font;
     children(): EventListener[];
     draw(state: ItemStackListRenderState, rearrange: boolean): void;

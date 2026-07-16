@@ -24,28 +24,21 @@ export class VkCopyBufferInfo2KHR extends VkCopyBufferInfo2 {
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkCopyBufferInfo2KHR;
     static calloc(paramarg0: MemoryStack): VkCopyBufferInfo2KHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkCopyBufferInfo2;
     static create(paramarg0: number): VkCopyBufferInfo2;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkCopyBufferInfo2KHR;
     static create(paramarg0: number): VkCopyBufferInfo2KHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkCopyBufferInfo2;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkCopyBufferInfo2KHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkCopyBufferInfo2;
     static malloc(paramarg0: MemoryStack): VkCopyBufferInfo2;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkCopyBufferInfo2KHR;
     static malloc(paramarg0: MemoryStack): VkCopyBufferInfo2KHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ndstBuffer(paramarg0: number): number;
     static ndstBuffer(paramarg0: number, paramarg1: number): void;
     static npNext(paramarg0: number): number;
@@ -58,7 +51,6 @@ export class VkCopyBufferInfo2KHR extends VkCopyBufferInfo2 {
     static nsType(paramarg0: number, paramarg1: number): void;
     static nsrcBuffer(paramarg0: number): number;
     static nsrcBuffer(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

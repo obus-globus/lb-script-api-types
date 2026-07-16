@@ -21,35 +21,27 @@ export class VkAttachmentReferenceStencilLayoutKHR extends VkAttachmentReference
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkAttachmentReferenceStencilLayoutKHR;
     static calloc(paramarg0: MemoryStack): VkAttachmentReferenceStencilLayoutKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkAttachmentReferenceStencilLayout;
     static create(paramarg0: number): VkAttachmentReferenceStencilLayout;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkAttachmentReferenceStencilLayoutKHR;
     static create(paramarg0: number): VkAttachmentReferenceStencilLayoutKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkAttachmentReferenceStencilLayout;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkAttachmentReferenceStencilLayoutKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkAttachmentReferenceStencilLayout;
     static malloc(paramarg0: MemoryStack): VkAttachmentReferenceStencilLayout;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkAttachmentReferenceStencilLayoutKHR;
     static malloc(paramarg0: MemoryStack): VkAttachmentReferenceStencilLayoutKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
     static nstencilLayout(paramarg0: number): number;
     static nstencilLayout(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

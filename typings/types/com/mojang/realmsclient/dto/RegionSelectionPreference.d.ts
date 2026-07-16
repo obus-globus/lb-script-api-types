@@ -8,7 +8,7 @@ export class RegionSelectionPreference extends Enum<RegionSelectionPreference> {
     static MANUAL: RegionSelectionPreference;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RegionSelectionPreference;
-    static values(): (Object | null)[];
+    static values(): RegionSelectionPreference[];
     private constructor(id: number, translationKey: string)
     id: number;
     translationKey: string;

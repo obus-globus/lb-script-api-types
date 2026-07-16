@@ -4,7 +4,7 @@ import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/L
 import type { LogEventPatternConverter } from '../../../../../../org/apache/logging/log4j/core/pattern/LogEventPatternConverter.d.ts'
 export class UuidPatternConverter extends LogEventPatternConverter {
     static CATEGORY: string;
-    static newInstance(paramoptions: (Object | null)[]): UuidPatternConverter;
+    static newInstance(paramoptions: string[]): UuidPatternConverter;
     private constructor(isRandom: boolean)
     // private isRandom: boolean;
     format(obj: Object, output: StringBuilder): void;

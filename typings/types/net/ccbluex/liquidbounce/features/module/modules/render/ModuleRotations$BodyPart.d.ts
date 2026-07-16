@@ -12,7 +12,7 @@ export class ModuleRotations$BodyPart extends Enum<ModuleRotations$BodyPart> imp
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleRotations$BodyPart;
-    static values(): (Object | null)[];
+    static values(): ModuleRotations$BodyPart[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "HEAD" | "BODY";

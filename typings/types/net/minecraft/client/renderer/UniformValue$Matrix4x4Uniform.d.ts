@@ -8,7 +8,6 @@ import type { UniformValue$Type } from '../../../../net/minecraft/client/rendere
 import type { Matrix4fc } from '../../../../org/joml/Matrix4fc.d.ts'
 export class UniformValue$Matrix4x4Uniform extends Record implements UniformValue {
     static CODEC: Codec<UniformValue$Matrix4x4Uniform>;
-    static CODEC: Codec<UniformValue>;
     constructor(value: Matrix4fc)
     // private value: Matrix4fc;
     addSize(calculator: Std140SizeCalculator): void;

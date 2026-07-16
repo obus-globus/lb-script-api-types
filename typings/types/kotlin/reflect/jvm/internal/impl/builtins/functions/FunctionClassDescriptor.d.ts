@@ -13,7 +13,6 @@ import type { TypeParameterDescriptor } from '../../../../../../../kotlin/reflec
 import type { ValueClassRepresentation } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ValueClassRepresentation.d.ts'
 import type { AnnotationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/annotations/AnnotationDescriptor.d.ts'
 import type { AbstractClassDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/impl/AbstractClassDescriptor.d.ts'
-import type { ModuleAwareClassDescriptor$Companion } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/impl/ModuleAwareClassDescriptor$Companion.d.ts'
 import type { MemberScope } from '../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope.d.ts'
 import type { MemberScope$Empty } from '../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope$Empty.d.ts'
 import type { StorageManager } from '../../../../../../../kotlin/reflect/jvm/internal/impl/storage/StorageManager.d.ts'
@@ -22,7 +21,6 @@ import type { TypeConstructor } from '../../../../../../../kotlin/reflect/jvm/in
 import type { KotlinTypeRefiner } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/checker/KotlinTypeRefiner.d.ts'
 export class FunctionClassDescriptor extends AbstractClassDescriptor {
     static Companion: FunctionClassDescriptor$Companion;
-    static Companion: ModuleAwareClassDescriptor$Companion;
     constructor(arg0: StorageManager, arg1: PackageFragmentDescriptor, arg2: FunctionTypeKind, arg3: number)
     readonly arity: number;
     readonly containingDeclaration: PackageFragmentDescriptor;

@@ -8,7 +8,7 @@ export class CloudSetting extends Enum<CloudSetting> {
     static OFF: CloudSetting;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CloudSetting;
-    static values(): (Object | null)[];
+    static values(): CloudSetting[];
     private constructor()
     name(): "DEFAULT" | "FAST" | "FANCY" | "OFF";
 }

@@ -11,7 +11,7 @@ export class IndirectPriorityQueues$SynchronizedIndirectPriorityQueue<K extends 
     changed(): void;
     changed(arg0: number): void;
     clear(): void;
-    comparator(): (param0: Object) => boolean;
+    comparator(): (param0: K, param1: K) => number;
     contains(arg0: number): boolean;
     dequeue(): number;
     enqueue(arg0: number): void;

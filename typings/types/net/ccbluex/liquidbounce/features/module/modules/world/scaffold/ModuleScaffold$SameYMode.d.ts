@@ -15,7 +15,7 @@ export class ModuleScaffold$SameYMode extends Enum<ModuleScaffold$SameYMode> imp
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleScaffold$SameYMode;
-    static values(): (Object | null)[];
+    static values(): ModuleScaffold$SameYMode[];
     private constructor(tag: string, getTargetedBlockPos: (param0: BlockPos) => BlockPos | null)
     readonly getTargetedBlockPos: (param0: BlockPos) => BlockPos | null;
     readonly tag: string;

@@ -10,7 +10,7 @@ export class ViaBedrockUtilityInterface$PayloadType extends Enum<ViaBedrockUtili
     static SKIN_INFORMATION: ViaBedrockUtilityInterface$PayloadType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ViaBedrockUtilityInterface$PayloadType;
-    static values(): (Object | null)[];
+    static values(): ViaBedrockUtilityInterface$PayloadType[];
     private constructor()
     name(): "CONFIRM" | "MODEL_REQUEST" | "ANIMATE" | "CAPE" | "SKIN_INFORMATION" | "SKIN_DATA";
 }

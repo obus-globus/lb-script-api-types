@@ -4,7 +4,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Reflection extends Object {
     static getPackageName(paramclazz: Class<Object>): string;
     static getPackageName(paramclassFullName: string): string;
-    static initialize(paramclasses: Object | null): void;
+    static initialize(...paramclasses: Class<Object>[]): void;
     static newProxy(paraminterfaceType: Class<Object>, paramhandler: InvocationHandler): Object | null;
     private constructor()
 }

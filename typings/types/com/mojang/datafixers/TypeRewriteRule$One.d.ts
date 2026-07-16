@@ -18,7 +18,7 @@ export class TypeRewriteRule$One extends Record implements TypeRewriteRule {
     static orElse(paramarg0: TypeRewriteRule, paramarg1: TypeRewriteRule): TypeRewriteRule;
     static orElse(paramarg0: TypeRewriteRule, paramarg1: () => TypeRewriteRule): TypeRewriteRule;
     static seq(paramarg0: TypeRewriteRule, paramarg1: TypeRewriteRule): TypeRewriteRule;
-    static seq(paramarg0: TypeRewriteRule, ...paramarg1: (Object | null)[]): TypeRewriteRule;
+    static seq(paramarg0: TypeRewriteRule, ...paramarg1: TypeRewriteRule[]): TypeRewriteRule;
     static seq(paramarg0: TypeRewriteRule[]): TypeRewriteRule;
     constructor(rule: TypeRewriteRule)
     // private rule: TypeRewriteRule;

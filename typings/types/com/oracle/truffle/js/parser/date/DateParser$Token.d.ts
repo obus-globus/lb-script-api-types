@@ -11,7 +11,7 @@ export class DateParser$Token extends Enum<DateParser$Token> {
     static UNKNOWN: DateParser$Token;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): DateParser$Token;
-    static values(): (Object | null)[];
+    static values(): DateParser$Token[];
     private constructor()
     name(): "UNKNOWN" | "NUMBER" | "SEPARATOR" | "PARENTHESIS" | "NAME" | "SIGN" | "END";
 }

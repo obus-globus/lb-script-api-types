@@ -14,8 +14,8 @@ export class Knot extends FabricLauncherBase {
     static getLauncher(): FabricLauncher;
     static getProperties(): { [key: string]: Object };
     static isMixinReady(): boolean;
-    static launch(paramarg0: (Object | null)[], paramarg1: EnvType): void;
-    static main(paramarg0: (Object | null)[]): void;
+    static launch(paramarg0: string[], paramarg1: EnvType): void;
+    static main(paramarg0: string[]): void;
     static setLauncher(paramarg0: FabricLauncher): void;
     constructor(arg0: EnvType)
     // private classLoader: KnotClassLoaderInterface;

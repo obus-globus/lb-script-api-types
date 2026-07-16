@@ -6,7 +6,7 @@ export class TruffleLanguage$ExitMode extends Enum<TruffleLanguage$ExitMode> {
     static NATURAL: TruffleLanguage$ExitMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TruffleLanguage$ExitMode;
-    static values(): (Object | null)[];
+    static values(): TruffleLanguage$ExitMode[];
     private constructor()
     name(): "NATURAL" | "HARD";
 }

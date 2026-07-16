@@ -9,7 +9,7 @@ export class BlockLZ4CompressorInputStream$State extends Enum<BlockLZ4Compressor
     static NO_BLOCK: BlockLZ4CompressorInputStream$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BlockLZ4CompressorInputStream$State;
-    static values(): (Object | null)[];
+    static values(): BlockLZ4CompressorInputStream$State[];
     private constructor()
     name(): "NO_BLOCK" | "IN_LITERAL" | "LOOKING_FOR_BACK_REFERENCE" | "IN_BACK_REFERENCE" | "EOF";
 }

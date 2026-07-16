@@ -6,7 +6,7 @@ export class Segments$IterationDirection extends Enum<Segments$IterationDirectio
     static FORWARDS: Segments$IterationDirection;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Segments$IterationDirection;
-    static values(): (Object | null)[];
+    static values(): Segments$IterationDirection[];
     private constructor()
     name(): "FORWARDS" | "BACKWARDS";
 }

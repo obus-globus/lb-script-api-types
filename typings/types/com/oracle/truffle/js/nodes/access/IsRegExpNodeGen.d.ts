@@ -7,7 +7,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class IsRegExpNodeGen extends IsRegExpNode {
     static create(paramcontext: JSContext): IsRegExpNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private isObject_isJSRegExpNode_: IsJSClassNode;
     // private isObject_isObjectNode_: IsJSObjectNode;

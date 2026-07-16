@@ -14,7 +14,7 @@ export class TickPriority extends Enum<TickPriority> {
     static byValue(paramvalue: number): TickPriority;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TickPriority;
-    static values(): (Object | null)[];
+    static values(): TickPriority[];
     private constructor(value: number)
     readonly value: number;
     getValue(): number;

@@ -10,7 +10,7 @@ export class ConstDirectiveParser$Type extends Enum<ConstDirectiveParser$Type> {
     static VEC4: ConstDirectiveParser$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ConstDirectiveParser$Type;
-    static values(): (Object | null)[];
+    static values(): ConstDirectiveParser$Type[];
     private constructor()
     name(): "INT" | "FLOAT" | "VEC2" | "IVEC3" | "VEC4" | "BOOL";
 }

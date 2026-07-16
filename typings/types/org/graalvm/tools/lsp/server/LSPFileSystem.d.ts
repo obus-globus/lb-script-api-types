@@ -12,11 +12,12 @@ import type { FileAttribute } from '../../../../../java/nio/file/attribute/FileA
 import type { FileSystemProvider } from '../../../../../java/nio/file/spi/FileSystemProvider.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { FileSystem as FileSystem_2 } from '../../../../../org/graalvm/polyglot/io/FileSystem.d.ts'
+import type { FileSystem$Selector } from '../../../../../org/graalvm/polyglot/io/FileSystem$Selector.d.ts'
 import type { VirtualLanguageServerFileProvider } from '../../../../../org/graalvm/tools/lsp/server/VirtualLanguageServerFileProvider.d.ts'
 export class LSPFileSystem extends Object implements FileSystem_2 {
     static allowInternalResourceAccess(paramfileSystem: FileSystem_2): FileSystem_2;
     static allowLanguageHomeAccess(paramfileSystem: FileSystem_2): FileSystem_2;
-    static newCompositeFileSystem(paramfallbackFileSystem: FileSystem_2, ...paramdelegates: (Object | null)[]): FileSystem_2;
+    static newCompositeFileSystem(paramfallbackFileSystem: FileSystem_2, ...paramdelegates: FileSystem$Selector[]): FileSystem_2;
     static newDefaultFileSystem(): FileSystem_2;
     static newDenyIOFileSystem(): FileSystem_2;
     static newFileSystem(paramfileSystem: FileSystem): FileSystem_2;

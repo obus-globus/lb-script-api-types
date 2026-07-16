@@ -11,7 +11,7 @@ export class DepthBufferFormat extends Enum<DepthBufferFormat> {
     static fromGlEnumOrDefault(paramarg0: number): DepthBufferFormat;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DepthBufferFormat;
-    static values(): (Object | null)[];
+    static values(): DepthBufferFormat[];
     private constructor(arg2: boolean)
     readonly combinedStencil: boolean;
     getGlFormat(): number;

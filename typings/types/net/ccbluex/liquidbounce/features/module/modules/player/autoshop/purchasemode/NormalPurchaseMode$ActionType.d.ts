@@ -13,7 +13,7 @@ export class NormalPurchaseMode$ActionType extends Enum<NormalPurchaseMode$Actio
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): NormalPurchaseMode$ActionType;
-    static values(): (Object | null)[];
+    static values(): NormalPurchaseMode$ActionType[];
     private constructor(tag: string, input: ContainerInput)
     readonly input: ContainerInput;
     readonly tag: string;

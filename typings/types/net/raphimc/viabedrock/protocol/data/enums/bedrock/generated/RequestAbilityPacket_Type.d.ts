@@ -11,7 +11,7 @@ export class RequestAbilityPacket_Type extends Enum<RequestAbilityPacket_Type> {
     static getByValue(paramarg0: number, paramarg1: RequestAbilityPacket_Type): RequestAbilityPacket_Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RequestAbilityPacket_Type;
-    static values(): (Object | null)[];
+    static values(): RequestAbilityPacket_Type[];
     private constructor(arg2: number)
     private constructor(arg2: RequestAbilityPacket_Type)
     readonly value: number;

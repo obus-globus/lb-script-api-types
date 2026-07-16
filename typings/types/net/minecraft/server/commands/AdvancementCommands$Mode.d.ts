@@ -9,7 +9,7 @@ export class AdvancementCommands$Mode extends Enum<AdvancementCommands$Mode> {
     static UNTIL: AdvancementCommands$Mode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): AdvancementCommands$Mode;
-    static values(): (Object | null)[];
+    static values(): AdvancementCommands$Mode[];
     private constructor(parents: boolean, children: boolean)
     // private children: boolean;
     // private parents: boolean;

@@ -6,21 +6,21 @@ import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ObjectHeapPriorityQueue<K extends unknown> extends Object implements PriorityQueue<K>, Serializable {
     constructor()
-    constructor(arg0: (param0: Object) => boolean)
+    constructor(arg0: (param0: K, param1: K) => number)
     constructor(arg0: K[])
-    constructor(arg0: K[], arg1: (param0: Object) => boolean)
+    constructor(arg0: K[], arg1: (param0: K, param1: K) => number)
     constructor(arg0: K[], arg1: number)
-    constructor(arg0: K[], arg1: number, arg2: (param0: Object) => boolean)
+    constructor(arg0: K[], arg1: number, arg2: (param0: K, param1: K) => number)
     constructor(arg0: number)
-    constructor(arg0: number, arg1: (param0: Object) => boolean)
+    constructor(arg0: number, arg1: (param0: K, param1: K) => number)
     constructor(arg0: K[])
-    constructor(arg0: K[], arg1: (param0: Object) => boolean)
-    // private c: (param0: Object) => boolean;
+    constructor(arg0: K[], arg1: (param0: K, param1: K) => number)
+    // private c: (param0: K, param1: K) => number;
     // private heap: K[];
     // private size: number;
     changed(): void;
     clear(): void;
-    comparator(): (param0: Object) => boolean;
+    comparator(): (param0: K, param1: K) => number;
     dequeue(): K;
     enqueue(arg0: K): void;
     first(): K;

@@ -8,9 +8,8 @@ import type { JSClass } from '../../../../../../com/oracle/truffle/js/runtime/bu
 import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class IsPristineObjectNode extends JavaScriptBaseNode {
-    static create(paramjsClass: JSClass, paraminitialPrototypeShape: Shape, ...parampropertyKeys: (Object | null)[]): IsPristineObjectNode;
+    static create(paramjsClass: JSClass, paraminitialPrototypeShape: Shape, ...parampropertyKeys: Object[]): IsPristineObjectNode;
     static createRegExpExecAndMatch(paramcontext: JSContext): IsPristineObjectNode;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(jsClass: JSClass, initialPrototypeShape: Shape, ...propertyKeys: Object[])
     // private getPrototypeNode: GetPrototypeNode;

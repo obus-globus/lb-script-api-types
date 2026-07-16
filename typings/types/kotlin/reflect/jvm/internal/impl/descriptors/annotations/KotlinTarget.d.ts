@@ -55,7 +55,7 @@ export class KotlinTarget extends Enum<KotlinTarget> {
     static getEntries(): KotlinTarget[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): KotlinTarget;
-    static values(): (Object | null)[];
+    static values(): KotlinTarget[];
     constructor(arg2: string, arg3: boolean, arg4: number, arg5: DefaultConstructorMarker)
     // private description: string;
     // private isDefault: boolean;

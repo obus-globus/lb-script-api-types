@@ -130,8 +130,8 @@ export class SimpleDateFormat extends DateFormat implements Cloneable {
     static YEAR_QUARTER: string;
     static YEAR_WOY_FIELD: number;
     static ZONE_SKELETONS: string[];
-    static getAvailableLocales(): (Object | null)[];
-    static getAvailableULocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
+    static getAvailableULocales(): ULocale[];
     static getDateInstance(): DateFormat;
     static getDateInstance(paramarg0: Calendar, paramarg1: number): DateFormat;
     static getDateInstance(paramarg0: Calendar, paramarg1: number, paramarg2: ULocale): DateFormat;
@@ -235,7 +235,7 @@ export class SimpleDateFormat extends DateFormat implements Cloneable {
     // private lowerLevel(arg0: Object[], arg1: number, arg2: number): boolean;
     // private matchAlphaMonthStrings(arg0: string, arg1: number, arg2: string[], arg3: string[], arg4: Calendar): number;
     // private matchDayPeriodString(arg0: string, arg1: number, arg2: string[], arg3: number, arg4: Output<DayPeriodRules$DayPeriod>): number;
-    // private matchLiteral(arg0: string, arg1: number, arg2: Object[], arg3: number, arg4: (Object | null)[]): number;
+    // private matchLiteral(arg0: string, arg1: number, arg2: Object[], arg3: number, arg4: boolean[]): number;
     matchQuarterString(arg0: string, arg1: number, arg2: number, arg3: string[], arg4: Calendar): number;
     matchString(arg0: string, arg1: number, arg2: number, arg3: string[], arg4: Calendar): number;
     // private matchString(arg0: string, arg1: number, arg2: number, arg3: string[], arg4: string, arg5: Calendar): number;
@@ -259,9 +259,9 @@ export class SimpleDateFormat extends DateFormat implements Cloneable {
     subFormat(arg0: StringBuffer, arg1: string, arg2: number, arg3: number, arg4: number, arg5: DisplayContext, arg6: FieldPosition, arg7: string, arg8: Calendar): void;
     subFormat(arg0: string, arg1: number, arg2: number, arg3: FieldPosition, arg4: DateFormatSymbols, arg5: Calendar): string;
     subFormat(arg0: string, arg1: number, arg2: number, arg3: number, arg4: DisplayContext, arg5: FieldPosition, arg6: string, arg7: Calendar): string;
-    subParse(arg0: string, arg1: number, arg2: string, arg3: number, arg4: boolean, arg5: boolean, arg6: (Object | null)[], arg7: Calendar): number;
-    // private subParse(arg0: string, arg1: number, arg2: string, arg3: number, arg4: boolean, arg5: boolean, arg6: (Object | null)[], arg7: Calendar, arg8: MessageFormat, arg9: Output<TimeZoneFormat$TimeType>): number;
-    // private subParse(arg0: string, arg1: number, arg2: string, arg3: number, arg4: boolean, arg5: boolean, arg6: (Object | null)[], arg7: Calendar, arg8: MessageFormat, arg9: Output<TimeZoneFormat$TimeType>, arg10: Output<DayPeriodRules$DayPeriod>): number;
+    subParse(arg0: string, arg1: number, arg2: string, arg3: number, arg4: boolean, arg5: boolean, arg6: boolean[], arg7: Calendar): number;
+    // private subParse(arg0: string, arg1: number, arg2: string, arg3: number, arg4: boolean, arg5: boolean, arg6: boolean[], arg7: Calendar, arg8: MessageFormat, arg9: Output<TimeZoneFormat$TimeType>): number;
+    // private subParse(arg0: string, arg1: number, arg2: string, arg3: number, arg4: boolean, arg5: boolean, arg6: boolean[], arg7: Calendar, arg8: MessageFormat, arg9: Output<TimeZoneFormat$TimeType>, arg10: Output<DayPeriodRules$DayPeriod>): number;
     toLocalizedPattern(): string;
     toPattern(): string;
     // private translatePattern(arg0: string, arg1: string, arg2: string): string;

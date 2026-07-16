@@ -17,8 +17,8 @@ export class CharIterators extends Object {
     static any(paramarg0: CharIterator, paramarg1: (param0: number) => boolean): boolean;
     static asCharIterator(paramarg0: Iterator<Object>): CharIterator;
     static asCharIterator(paramarg0: ListIterator<Object>): CharListIterator;
-    static concat(...paramarg0: (Object | null)[]): CharIterator;
-    static concat(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): CharIterator;
+    static concat(...paramarg0: CharIterator[]): CharIterator;
+    static concat(paramarg0: CharIterator[], paramarg1: number, paramarg2: number): CharIterator;
     static fromTo(paramarg0: string, paramarg1: string): CharListIterator;
     static indexOf(paramarg0: CharIterator, paramarg1: (param0: string) => boolean): number;
     static indexOf(paramarg0: CharIterator, paramarg1: (param0: number) => boolean): number;
@@ -37,11 +37,11 @@ export class CharIterators extends Object {
     static unwrap(paramarg0: CharIterator, paramarg1: string[]): number;
     static unwrap(paramarg0: CharIterator, paramarg1: string[], paramarg2: number, paramarg3: number): number;
     static unwrap(paramarg0: CharIterator, paramarg1: (Object | null)[], paramarg2: number): number;
+    static unwrap(paramarg0: CharIterator, paramarg1: string[][]): number;
+    static unwrap(paramarg0: CharIterator, paramarg1: string[][], paramarg2: number, paramarg3: number): number;
     static unwrap(paramarg0: CharIterator, paramarg1: (Object | null)[]): number;
-    static unwrap(paramarg0: CharIterator, paramarg1: (Object | null)[], paramarg2: number, paramarg3: number): number;
-    static unwrap(paramarg0: CharIterator, paramarg1: (Object | null)[]): number;
-    static unwrapBig(paramarg0: CharIterator): (Object | null)[];
-    static unwrapBig(paramarg0: CharIterator, paramarg1: number): (Object | null)[];
+    static unwrapBig(paramarg0: CharIterator): string[][];
+    static unwrapBig(paramarg0: CharIterator, paramarg1: number): string[][];
     static widen(paramarg0: CharIterator): IntIterator;
     static wrap(paramarg0: string[]): CharListIterator;
     static wrap(paramarg0: string[], paramarg1: number, paramarg2: number): CharListIterator;

@@ -11,7 +11,7 @@ export class InsideBlockEffectType extends Enum<InsideBlockEffectType> {
     static LAVA_IGNITE: InsideBlockEffectType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): InsideBlockEffectType;
-    static values(): (Object | null)[];
+    static values(): InsideBlockEffectType[];
     private constructor(effect: (param0: Entity) => void)
     // private effect: (param0: Entity) => void;
     effect(): (param0: Entity) => void;

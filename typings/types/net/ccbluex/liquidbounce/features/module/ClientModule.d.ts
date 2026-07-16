@@ -1,3 +1,4 @@
+import type { GpuDevice } from '../../../../../com/mojang/blaze3d/systems/GpuDevice.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Value } from '../../../../../net/ccbluex/liquidbounce/config/types/Value.d.ts'
 import type { ToggleableValueGroup } from '../../../../../net/ccbluex/liquidbounce/config/types/group/ToggleableValueGroup.d.ts'
@@ -6,6 +7,11 @@ import type { MinecraftShortcuts } from '../../../../../net/ccbluex/liquidbounce
 import type { ModuleCategory } from '../../../../../net/ccbluex/liquidbounce/features/module/ModuleCategory.d.ts'
 import type { InputBind } from '../../../../../net/ccbluex/liquidbounce/utils/input/InputBind.d.ts'
 import type { InputBind$BindAction } from '../../../../../net/ccbluex/liquidbounce/utils/input/InputBind$BindAction.d.ts'
+import type { Minecraft } from '../../../../../net/minecraft/client/Minecraft.d.ts'
+import type { ClientLevel } from '../../../../../net/minecraft/client/multiplayer/ClientLevel.d.ts'
+import type { ClientPacketListener } from '../../../../../net/minecraft/client/multiplayer/ClientPacketListener.d.ts'
+import type { MultiPlayerGameMode } from '../../../../../net/minecraft/client/multiplayer/MultiPlayerGameMode.d.ts'
+import type { LocalPlayer } from '../../../../../net/minecraft/client/player/LocalPlayer.d.ts'
 import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { MutableComponent } from '../../../../../net/minecraft/network/chat/MutableComponent.d.ts'
 import type { Logger } from '../../../../../org/apache/logging/log4j/Logger.d.ts'
@@ -26,10 +32,15 @@ export class ClientModule extends ToggleableValueGroup implements EventListener,
     readonly debugDisplayName: Component;
     readonly disableActivation: boolean;
     readonly disableOnQuit: boolean;
+    readonly gpuDevice: GpuDevice;
     hidden: boolean;
+    readonly interaction: MultiPlayerGameMode;
     // private logger: Logger;
     // private /*not mapped: */ getLogger(): Logger;
+    readonly mc: Minecraft;
+    readonly network: ClientPacketListener;
     readonly notActivatable: boolean;
+    readonly player: LocalPlayer;
     /**
      * If a module is running or not is separated from the enabled state. A module can be paused even when
      * it is enabled, or it can be running when it is not enabled.
@@ -47,6 +58,7 @@ export class ClientModule extends ToggleableValueGroup implements EventListener,
     readonly settings: { [key: string]: Value<Object> };
     readonly tag: string | null;
     readonly tagValue: Value<Object> | null;
+    readonly world: ClientLevel;
     children(): EventListener[];
     /**
      * Launches an async task on {@link eventListenerScope} when module is turned on.

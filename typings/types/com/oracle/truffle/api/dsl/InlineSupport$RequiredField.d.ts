@@ -3,7 +3,6 @@ import type { Annotation } from '../../../../../java/lang/annotation/Annotation.
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { KClass } from '../../../../../kotlin/reflect/KClass.d.ts'
 export interface InlineSupport$RequiredField extends Annotation, Object{
-    constructor(bits: number, dimensions: number, type: KClass<Object>, value: KClass<InlineSupport$InlinableField>)
     /*not mapped: */ bits(): number;
     /*not mapped: */ dimensions(): number;
     /*not mapped: */ type(): KClass<Object>;

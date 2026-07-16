@@ -7,7 +7,6 @@ export class SafeUtils extends Enum<SafeUtils> {
     static checkRange(paramarg0: number[], paramarg1: number, paramarg2: number): void;
     static readByte(paramarg0: number[], paramarg1: number): number;
     static readInt(paramarg0: number[], paramarg1: number): number;
-    static readInt(paramarg0: number[], paramarg1: number): number;
     static readIntBE(paramarg0: number[], paramarg1: number): number;
     static readIntLE(paramarg0: number[], paramarg1: number): number;
     static readLongLE(paramarg0: number[], paramarg1: number): number;
@@ -15,7 +14,7 @@ export class SafeUtils extends Enum<SafeUtils> {
     static readShortLE(paramarg0: number[], paramarg1: number): number;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SafeUtils;
-    static values(): (Object | null)[];
+    static values(): SafeUtils[];
     static writeByte(paramarg0: number[], paramarg1: number, paramarg2: number): void;
     static writeInt(paramarg0: number[], paramarg1: number, paramarg2: number): void;
     static writeShort(paramarg0: number[], paramarg1: number, paramarg2: number): void;

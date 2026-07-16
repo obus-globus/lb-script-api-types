@@ -6,7 +6,7 @@ import type { CharSequence } from '../../../../../../java/lang/CharSequence.d.ts
 export class CorsConfigBuilder extends Object {
     static forAnyOrigin(): CorsConfigBuilder;
     static forOrigin(paramarg0: string): CorsConfigBuilder;
-    static forOrigins(...paramarg0: (Object | null)[]): CorsConfigBuilder;
+    static forOrigins(...paramarg0: string[]): CorsConfigBuilder;
     constructor()
     constructor(...arg0: string[])
     // private allowCredentials: boolean;

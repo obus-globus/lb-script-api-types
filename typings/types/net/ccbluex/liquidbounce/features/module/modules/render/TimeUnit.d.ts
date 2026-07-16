@@ -12,7 +12,7 @@ export class TimeUnit extends Enum<TimeUnit> implements Tagged {
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TimeUnit;
-    static values(): (Object | null)[];
+    static values(): TimeUnit[];
     private constructor(tag: string)
     readonly tag: string;
     format(ticks: number): string;

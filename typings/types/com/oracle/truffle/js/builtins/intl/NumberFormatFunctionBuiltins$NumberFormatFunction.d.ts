@@ -11,7 +11,7 @@ export class NumberFormatFunctionBuiltins$NumberFormatFunction extends Enum<Numb
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): NumberFormatFunctionBuiltins$NumberFormatFunction;
-    static values(): (Object | null)[];
+    static values(): NumberFormatFunctionBuiltins$NumberFormatFunction[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

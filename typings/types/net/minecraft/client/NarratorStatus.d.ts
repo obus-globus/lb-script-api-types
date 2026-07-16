@@ -12,7 +12,7 @@ export class NarratorStatus extends Enum<NarratorStatus> {
     static byId(paramid: number): NarratorStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): NarratorStatus;
-    static values(): (Object | null)[];
+    static values(): NarratorStatus[];
     private constructor(id: number, key: string)
     readonly id: number;
     getId(): number;

@@ -26,7 +26,7 @@ export class SerializerVersion extends Enum<SerializerVersion> {
     static V1_9: SerializerVersion;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SerializerVersion;
-    static values(): (Object | null)[];
+    static values(): SerializerVersion[];
     private constructor(arg2: TextComponentCodec, arg3: SNbt<Tag>)
     private constructor(arg2: TextComponentSerializer, arg3: SNbt<Tag>)
     // private codec: TextComponentCodec;

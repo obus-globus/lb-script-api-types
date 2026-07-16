@@ -5,7 +5,7 @@ export class WbemcliUtil$NamespaceProperty extends Enum<WbemcliUtil$NamespacePro
     static NAME: WbemcliUtil$NamespaceProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): WbemcliUtil$NamespaceProperty;
-    static values(): (Object | null)[];
+    static values(): WbemcliUtil$NamespaceProperty[];
     private constructor()
     name(): "NAME";
 }

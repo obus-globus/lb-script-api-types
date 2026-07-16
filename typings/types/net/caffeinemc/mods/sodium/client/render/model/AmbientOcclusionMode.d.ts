@@ -8,7 +8,7 @@ export class AmbientOcclusionMode extends Enum<AmbientOcclusionMode> {
     static ENABLED: AmbientOcclusionMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AmbientOcclusionMode;
-    static values(): (Object | null)[];
+    static values(): AmbientOcclusionMode[];
     private constructor()
     toTriState(): TriState;
     name(): "ENABLED" | "DEFAULT" | "DISABLED";

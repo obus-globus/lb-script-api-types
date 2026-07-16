@@ -10,7 +10,7 @@ export class TruffleCompilerRuntime$LoopExplosionKind extends Enum<TruffleCompil
     static NONE: TruffleCompilerRuntime$LoopExplosionKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TruffleCompilerRuntime$LoopExplosionKind;
-    static values(): (Object | null)[];
+    static values(): TruffleCompilerRuntime$LoopExplosionKind[];
     private constructor()
     name(): "NONE" | "FULL_UNROLL" | "FULL_UNROLL_UNTIL_RETURN" | "FULL_EXPLODE" | "FULL_EXPLODE_UNTIL_RETURN" | "MERGE_EXPLODE";
 }

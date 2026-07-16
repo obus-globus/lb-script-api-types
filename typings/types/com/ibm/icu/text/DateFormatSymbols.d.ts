@@ -20,8 +20,8 @@ export class DateFormatSymbols extends Object implements Serializable, Cloneable
     static SHORT: number;
     static STANDALONE: number;
     static WIDE: number;
-    static getAvailableLocales(): (Object | null)[];
-    static getAvailableULocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
+    static getAvailableULocales(): ULocale[];
     static getDateFormatBundle(paramarg0: Calendar, paramarg1: ULocale): ResourceBundle;
     static getDateFormatBundle(paramarg0: Calendar, paramarg1: Locale): ResourceBundle;
     static getDateFormatBundle(paramarg0: Class<Calendar>, paramarg1: ULocale): ResourceBundle;
@@ -43,7 +43,7 @@ export class DateFormatSymbols extends Object implements Serializable, Cloneable
     // private ampms: string[];
     // private ampmsNarrow: string[];
     // private ampmsWide: string[];
-    // private capitalization: Map<DateFormatSymbols$CapitalizationContextUsage, (Object | null)[]>;
+    // private capitalization: Map<DateFormatSymbols$CapitalizationContextUsage, boolean[]>;
     eraNames: string[];
     eras: string[];
     // private leapMonthPatterns: string[];

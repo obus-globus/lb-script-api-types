@@ -17,7 +17,7 @@ export class ModuleHitFX$Particle extends Enum<ModuleHitFX$Particle> implements 
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleHitFX$Particle;
-    static values(): (Object | null)[];
+    static values(): ModuleHitFX$Particle[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "BLOOD" | "FIRE" | "HEART" | "WATER" | "SMOKE" | "MAGIC" | "CRITS";

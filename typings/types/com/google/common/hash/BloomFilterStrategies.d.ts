@@ -7,7 +7,7 @@ export class BloomFilterStrategies extends Enum<BloomFilterStrategies> implement
     static MURMUR128_MITZ_64: BloomFilterStrategies;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): BloomFilterStrategies;
-    static values(): (Object | null)[];
+    static values(): BloomFilterStrategies[];
     constructor(arg2: BloomFilterStrategies)
     ordinal(): number;
     name(): "MURMUR128_MITZ_32" | "MURMUR128_MITZ_64";

@@ -10,9 +10,9 @@ export class JsonNamesMapKt extends Object {
     static getJsonEncodedNames(paramarg0: SerialDescriptor, paramarg1: Json): string[];
     static getJsonNameIndex(paramarg0: SerialDescriptor, paramarg1: Json, paramarg2: string): number;
     static getJsonNameIndexOrThrow(paramarg0: SerialDescriptor, paramarg1: Json, paramarg2: string, paramarg3: string): number;
-    static getJsonSerializationNamesKey(): DescriptorSchemaCache$Key<(Object | null)[]>;
+    static getJsonSerializationNamesKey(): DescriptorSchemaCache$Key<string[]>;
     static ignoreUnknownKeys(paramarg0: SerialDescriptor, paramarg1: Json): boolean;
     static namingStrategy(paramarg0: SerialDescriptor, paramarg1: Json): JsonNamingStrategy;
-    static serializationNamesIndices(paramarg0: SerialDescriptor, paramarg1: Json, paramarg2: JsonNamingStrategy): (Object | null)[];
+    static serializationNamesIndices(paramarg0: SerialDescriptor, paramarg1: Json, paramarg2: JsonNamingStrategy): string[];
     static tryCoerceValue(paramarg0: Json, paramarg1: SerialDescriptor, paramarg2: number, paramarg3: (param0: Object) => boolean, paramarg4: () => string, paramarg5: () => void): boolean;
 }

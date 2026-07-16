@@ -7,7 +7,7 @@ export class Collector$Characteristics extends Enum<Collector$Characteristics> {
     static UNORDERED: Collector$Characteristics;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Collector$Characteristics;
-    static values(): (Object | null)[];
+    static values(): Collector$Characteristics[];
     private constructor()
     name(): "CONCURRENT" | "UNORDERED" | "IDENTITY_FINISH";
 }

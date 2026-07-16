@@ -16,7 +16,7 @@ export class SwingMode extends Enum<SwingMode> implements Consumer<InteractionHa
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SwingMode;
-    static values(): (Object | null)[];
+    static values(): SwingMode[];
     private constructor(tag: string, serverSwing: boolean)
     readonly serverSwing: boolean;
     readonly tag: string;

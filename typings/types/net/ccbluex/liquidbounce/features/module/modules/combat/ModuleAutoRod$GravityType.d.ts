@@ -14,7 +14,7 @@ export class ModuleAutoRod$GravityType extends Enum<ModuleAutoRod$GravityType> i
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleAutoRod$GravityType;
-    static values(): (Object | null)[];
+    static values(): ModuleAutoRod$GravityType[];
     private constructor(tag: string)
     readonly tag: string;
     apply(target: LivingEntity): Rotation | null;

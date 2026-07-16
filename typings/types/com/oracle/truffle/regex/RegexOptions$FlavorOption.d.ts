@@ -10,7 +10,7 @@ export class RegexOptions$FlavorOption extends Enum<RegexOptions$FlavorOption> {
     static Ruby: RegexOptions$FlavorOption;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RegexOptions$FlavorOption;
-    static values(): (Object | null)[];
+    static values(): RegexOptions$FlavorOption[];
     private constructor()
     get(): RegexFlavor;
     name(): "ECMAScript" | "Python" | "Ruby" | "OracleDB" | "JavaUtilPattern";

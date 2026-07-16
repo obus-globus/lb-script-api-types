@@ -8,7 +8,7 @@ export class InternalResourceRoots$Root$Kind extends Enum<InternalResourceRoots$
     static VERSIONED: InternalResourceRoots$Root$Kind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): InternalResourceRoots$Root$Kind;
-    static values(): (Object | null)[];
+    static values(): InternalResourceRoots$Root$Kind[];
     private constructor()
     name(): "COMPONENT" | "RESOURCE" | "UNVERSIONED" | "VERSIONED";
 }

@@ -6,7 +6,6 @@ export class IsPrimitiveNodeGen$Uncached extends IsPrimitiveNode implements Unad
     static create(): IsPrimitiveNode;
     static getUncached(): IsPrimitiveNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     executeBoolean(arg0Value: Object): boolean;
 }

@@ -17,7 +17,6 @@ import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class EvalNode$DirectEvalNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, thisNode: JavaScriptNode, currEnv: Object, blockScopeSlot: number)
     // private blockScopeSlot: number;
     // private callNode: IndirectCallNode;

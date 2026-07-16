@@ -13,7 +13,7 @@ export class RoundingMode extends Enum<RoundingMode> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: number): RoundingMode;
     static valueOf(paramarg0: string): RoundingMode;
-    static values(): (Object | null)[];
+    static values(): RoundingMode[];
     private constructor(arg2: number)
     // private oldMode: number;
     name(): "UP" | "DOWN" | "CEILING" | "FLOOR" | "HALF_UP" | "HALF_DOWN" | "HALF_EVEN" | "UNNECESSARY";

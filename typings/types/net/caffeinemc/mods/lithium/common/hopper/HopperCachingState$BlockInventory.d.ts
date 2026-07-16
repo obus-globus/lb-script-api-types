@@ -9,7 +9,7 @@ export class HopperCachingState$BlockInventory extends Enum<HopperCachingState$B
     static UNKNOWN: HopperCachingState$BlockInventory;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HopperCachingState$BlockInventory;
-    static values(): (Object | null)[];
+    static values(): HopperCachingState$BlockInventory[];
     private constructor()
     name(): "UNKNOWN" | "BLOCK_STATE" | "BLOCK_ENTITY" | "REMOVAL_TRACKING_BLOCK_ENTITY" | "NO_BLOCK_INVENTORY";
 }

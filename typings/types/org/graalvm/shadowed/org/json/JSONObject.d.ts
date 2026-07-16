@@ -14,8 +14,8 @@ import type { JSONTokener } from '../../../../../org/graalvm/shadowed/org/json/J
 export class JSONObject extends Object {
     static NULL: Object;
     static doubleToString(paramd: number): string;
-    static getNames(paramobject: Object): (Object | null)[];
-    static getNames(paramjo: JSONObject): (Object | null)[];
+    static getNames(paramobject: Object): string[];
+    static getNames(paramjo: JSONObject): string[];
     static numberToString(paramnumber: Number): string;
     static quote(paramstring: string, paramw: Writer): Writer;
     static quote(paramstring: string): string;

@@ -13,8 +13,8 @@ export class ImmutableSetMultimap$Builder<K extends unknown, V extends unknown> 
     expectedValueCollectionSize(defaultExpectedValues: number, values: (Object | null)[]): number;
     expectedValuesPerKey(expectedValuesPerKey: number): ImmutableSetMultimap$Builder<K, V>;
     newValueCollectionBuilderWithExpectedSize(expectedSize: number): ImmutableCollection$Builder<V>;
-    orderKeysBy(keyComparator: (param0: Object) => boolean): ImmutableSetMultimap$Builder<K, V>;
-    orderValuesBy(valueComparator: (param0: Object) => boolean): ImmutableSetMultimap$Builder<K, V>;
+    orderKeysBy(keyComparator: (param0: K, param1: K) => number): ImmutableSetMultimap$Builder<K, V>;
+    orderValuesBy(valueComparator: (param0: V, param1: V) => number): ImmutableSetMultimap$Builder<K, V>;
     put(entry: Map$Entry<K, V>): ImmutableSetMultimap$Builder<K, V>;
     put(key: K, value: V): ImmutableSetMultimap$Builder<K, V>;
     putAll(key: K, ...values: V[]): ImmutableSetMultimap$Builder<K, V>;

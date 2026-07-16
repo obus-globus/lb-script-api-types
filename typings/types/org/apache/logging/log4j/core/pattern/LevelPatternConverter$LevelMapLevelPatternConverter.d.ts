@@ -5,7 +5,7 @@ import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/L
 import type { LevelPatternConverter } from '../../../../../../org/apache/logging/log4j/core/pattern/LevelPatternConverter.d.ts'
 export class LevelPatternConverter$LevelMapLevelPatternConverter extends LevelPatternConverter {
     static CATEGORY: string;
-    static newInstance(paramoptions: (Object | null)[]): LevelPatternConverter;
+    static newInstance(paramoptions: string[]): LevelPatternConverter;
     constructor(arg0: Map<Object | null, Object | null>, arg1: any)
     // private levelMap: Map<Level, string>;
     format(obj: Object, output: StringBuilder): void;

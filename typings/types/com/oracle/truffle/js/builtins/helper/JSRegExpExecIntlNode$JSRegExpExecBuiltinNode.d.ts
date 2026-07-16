@@ -22,7 +22,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSRegExpExecIntlNode$JSRegExpExecBuiltinNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): JSRegExpExecIntlNode$JSRegExpExecBuiltinNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private context: JSContext;
     // private ecmaScriptVersion: number;

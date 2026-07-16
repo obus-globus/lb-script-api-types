@@ -1,4 +1,3 @@
-import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { DebugLevelSourceAccessor } from '../../../../../net/fabricmc/fabric/mixin/registry/sync/DebugLevelSourceAccessor.d.ts'
@@ -19,7 +18,6 @@ import type { RandomState } from '../../../../../net/minecraft/world/level/level
 import type { Blender } from '../../../../../net/minecraft/world/level/levelgen/blending/Blender.d.ts'
 export class DebugLevelSource extends ChunkGenerator implements DebugLevelSourceAccessor {
     static BARRIER_HEIGHT: number;
-    static CODEC: Codec<ChunkGenerator>;
     static CODEC: MapCodec<DebugLevelSource>;
     static HEIGHT: number;
     static getBlockStateFor(paramworldX: number, paramworldZ: number): BlockState;

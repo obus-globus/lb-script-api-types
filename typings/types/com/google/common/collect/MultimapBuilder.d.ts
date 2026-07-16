@@ -10,7 +10,7 @@ export abstract class MultimapBuilder<K0 extends unknown, V0 extends unknown> ex
     static hashKeys(paramexpectedKeys: number): MultimapBuilder$MultimapBuilderWithKeys<Object>;
     static linkedHashKeys(): MultimapBuilder$MultimapBuilderWithKeys<Object>;
     static linkedHashKeys(paramexpectedKeys: number): MultimapBuilder$MultimapBuilderWithKeys<Object>;
-    static treeKeys(paramcomparator: (param0: Object) => boolean): MultimapBuilder$MultimapBuilderWithKeys<Object>;
+    static treeKeys(paramcomparator: (param0: Object | null, param1: Object | null) => number): MultimapBuilder$MultimapBuilderWithKeys<Object>;
     static treeKeys(): MultimapBuilder$MultimapBuilderWithKeys<Comparable<Object>>;
     constructor(arg0: MultimapBuilder$MultimapBuilderWithKeys<Object>)
     build<K extends K0, V extends V0>(): Multimap<K, V>;

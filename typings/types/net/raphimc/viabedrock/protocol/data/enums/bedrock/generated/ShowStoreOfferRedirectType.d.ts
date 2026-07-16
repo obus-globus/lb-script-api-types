@@ -11,7 +11,7 @@ export class ShowStoreOfferRedirectType extends Enum<ShowStoreOfferRedirectType>
     static getByValue(paramarg0: number, paramarg1: ShowStoreOfferRedirectType): ShowStoreOfferRedirectType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ShowStoreOfferRedirectType;
-    static values(): (Object | null)[];
+    static values(): ShowStoreOfferRedirectType[];
     private constructor(arg2: number)
     private constructor(arg2: ShowStoreOfferRedirectType)
     readonly value: number;

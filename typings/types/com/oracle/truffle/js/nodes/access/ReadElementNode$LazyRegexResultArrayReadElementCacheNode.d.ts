@@ -10,7 +10,6 @@ import type { TRegexUtil$InvokeGetGroupBoundariesMethodNode } from '../../../../
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ReadElementNode$LazyRegexResultArrayReadElementCacheNode extends ReadElementNode$ArrayClassGuardCachedArrayReadElementCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     // private getEndNode: TRegexUtil$InvokeGetGroupBoundariesMethodNode;
     // private getStartNode: TRegexUtil$InvokeGetGroupBoundariesMethodNode;

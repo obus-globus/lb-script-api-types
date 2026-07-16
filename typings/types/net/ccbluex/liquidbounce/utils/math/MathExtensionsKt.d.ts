@@ -2,12 +2,8 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Vector2f } from '../../../../../org/joml/Vector2f.d.ts'
 export class MathExtensionsKt extends Object {
     static ceilToInt(paramarg0: number): number;
-    static ceilToInt(paramarg0: number): number;
-    static fastCos(paramarg0: number): number;
     static fastCos(paramarg0: number): number;
     static fastSin(paramarg0: number): number;
-    static fastSin(paramarg0: number): number;
-    static floorToInt(paramarg0: number): number;
     static floorToInt(paramarg0: number): number;
     static high32(long: number): number;
     static longFrom32(high: number, low: number): number;
@@ -25,10 +21,7 @@ export class MathExtensionsKt extends Object {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MathExtensions.kt#L53 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MathExtensions.kt:53}
      */
     static roundToDecimalPlaces(paramarg0: number, paramarg1: number): number;
-    static roundToDecimalPlaces(paramarg0: number, paramarg1: number): number;
     static toDegrees(paramarg0: number): number;
-    static toDegrees(paramarg0: number): number;
-    static toRadians(paramarg0: number): number;
     static toRadians(paramarg0: number): number;
     static vector2f(float: number, other: number): Vector2f;
 }

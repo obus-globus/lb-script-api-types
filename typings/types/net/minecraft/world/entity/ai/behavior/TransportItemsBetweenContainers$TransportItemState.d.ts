@@ -7,7 +7,7 @@ export class TransportItemsBetweenContainers$TransportItemState extends Enum<Tra
     static TRAVELLING: TransportItemsBetweenContainers$TransportItemState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TransportItemsBetweenContainers$TransportItemState;
-    static values(): (Object | null)[];
+    static values(): TransportItemsBetweenContainers$TransportItemState[];
     private constructor()
     name(): "TRAVELLING" | "QUEUING" | "INTERACTING";
 }

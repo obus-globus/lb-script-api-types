@@ -5,7 +5,6 @@ import type { WebAssemblyValueType } from '../../../../../../com/oracle/truffle/
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ToWebAssemblyValueNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     anyfunc(value: Object, type: WebAssemblyValueType, errorBranch: InlinedBranchProfile): Object;
     execute(value: Object, type: WebAssemblyValueType): Object;

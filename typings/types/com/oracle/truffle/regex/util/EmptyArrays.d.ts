@@ -4,7 +4,7 @@ export class EmptyArrays extends Object {
     static CHAR: string[];
     static INT: number[];
     static LONG: number[];
-    static LONG_2D: (Object | null)[];
+    static LONG_2D: number[][];
     static SHORT: number[];
     constructor()
 }

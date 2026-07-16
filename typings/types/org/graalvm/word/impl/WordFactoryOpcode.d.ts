@@ -7,7 +7,7 @@ export class WordFactoryOpcode extends Enum<WordFactoryOpcode> {
     static ZERO: WordFactoryOpcode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): WordFactoryOpcode;
-    static values(): (Object | null)[];
+    static values(): WordFactoryOpcode[];
     private constructor()
     name(): "ZERO" | "FROM_UNSIGNED" | "FROM_SIGNED";
 }

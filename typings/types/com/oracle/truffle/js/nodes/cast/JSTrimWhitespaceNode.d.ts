@@ -8,7 +8,6 @@ import type { JavaScriptBaseNode } from '../../../../../../com/oracle/truffle/js
 export abstract class JSTrimWhitespaceNode extends JavaScriptBaseNode {
     static create(): JSTrimWhitespaceNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doString(string: TruffleString, readRawNode: TruffleString$ReadCharUTF16Node, isFastNonWhitespace: InlinedConditionProfile, isFastWhitespace: InlinedConditionProfile, substringNode: TruffleString$SubstringByteIndexNode, startsWithWhitespaceBranch: InlinedBranchProfile, endsWithWhitespaceBranch: InlinedBranchProfile, isEmpty: InlinedConditionProfile): TruffleString;
     executeString(operand: TruffleString): TruffleString;

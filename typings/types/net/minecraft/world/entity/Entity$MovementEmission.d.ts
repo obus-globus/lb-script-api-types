@@ -8,7 +8,7 @@ export class Entity$MovementEmission extends Enum<Entity$MovementEmission> {
     static SOUNDS: Entity$MovementEmission;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Entity$MovementEmission;
-    static values(): (Object | null)[];
+    static values(): Entity$MovementEmission[];
     private constructor(sounds: boolean, events: boolean)
     // private events: boolean;
     // private sounds: boolean;

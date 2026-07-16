@@ -21,7 +21,7 @@ export class BaseLocale extends Object {
     static TRADITIONAL_CHINESE: number;
     static UK: number;
     static US: number;
-    static constantBaseLocales: (Object | null)[];
+    static constantBaseLocales: BaseLocale[];
     static convertOldISOCodes(paramarg0: string): string;
     static getInstance(paramarg0: string, paramarg1: string, paramarg2: string, paramarg3: string): BaseLocale;
     private constructor(arg0: string, arg1: string, arg2: string, arg3: string)

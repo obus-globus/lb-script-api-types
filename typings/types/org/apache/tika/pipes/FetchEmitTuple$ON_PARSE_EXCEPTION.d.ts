@@ -6,7 +6,7 @@ export class FetchEmitTuple$ON_PARSE_EXCEPTION extends Enum<FetchEmitTuple$ON_PA
     static SKIP: FetchEmitTuple$ON_PARSE_EXCEPTION;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FetchEmitTuple$ON_PARSE_EXCEPTION;
-    static values(): (Object | null)[];
+    static values(): FetchEmitTuple$ON_PARSE_EXCEPTION[];
     private constructor()
     name(): "SKIP" | "EMIT";
 }

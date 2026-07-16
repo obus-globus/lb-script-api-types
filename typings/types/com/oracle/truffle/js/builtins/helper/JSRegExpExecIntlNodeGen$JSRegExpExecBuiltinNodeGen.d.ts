@@ -8,7 +8,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSRegExpExecIntlNodeGen$JSRegExpExecBuiltinNodeGen extends JSRegExpExecIntlNode$JSRegExpExecBuiltinNode {
     static create(paramcontext: JSContext): JSRegExpExecIntlNode$JSRegExpExecBuiltinNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private cached_cache: JSRegExpExecIntlNodeGen$JSRegExpExecBuiltinNodeGen$CachedData;
     // private getEnd_field1_: Node;

@@ -49,7 +49,6 @@ export class VkVideoEncodeCapabilitiesKHR extends Struct<VkVideoEncodeCapabiliti
     static nsType(paramarg0: number, paramarg1: number): void;
     static nsupportedEncodeFeedbackFlags(paramarg0: number): number;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     close(): void;

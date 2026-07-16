@@ -6,7 +6,6 @@ import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
 export class Memory extends Pointer implements Closeable {
     static NULL: Pointer;
     static createConstant(paramarg0: number): Pointer;
-    static createConstant(paramarg0: number): Pointer;
     static disposeAll(): void;
     static nativeValue(paramarg0: Pointer): number;
     static nativeValue(paramarg0: Pointer, paramarg1: number): void;

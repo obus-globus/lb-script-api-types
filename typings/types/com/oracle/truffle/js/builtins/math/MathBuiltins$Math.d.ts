@@ -47,7 +47,7 @@ export class MathBuiltins$Math extends Enum<MathBuiltins$Math> implements Builti
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): MathBuiltins$Math;
-    static values(): (Object | null)[];
+    static values(): MathBuiltins$Math[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

@@ -13,7 +13,7 @@ export class ModuleAutoBuff$Rotations$RotationTimingMode extends Enum<ModuleAuto
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleAutoBuff$Rotations$RotationTimingMode;
-    static values(): (Object | null)[];
+    static values(): ModuleAutoBuff$Rotations$RotationTimingMode[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "NORMAL" | "ON_TICK" | "ON_USE";

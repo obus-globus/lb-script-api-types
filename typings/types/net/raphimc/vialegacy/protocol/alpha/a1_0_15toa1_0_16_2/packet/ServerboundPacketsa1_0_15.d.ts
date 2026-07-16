@@ -25,7 +25,7 @@ export class ServerboundPacketsa1_0_15 extends Enum<ServerboundPacketsa1_0_15> i
     static getPacket(paramarg0: number): ServerboundPacketsa1_0_15;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ServerboundPacketsa1_0_15;
-    static values(): (Object | null)[];
+    static values(): ServerboundPacketsa1_0_15[];
     private constructor(arg2: number, arg3: (param0: UserConnection, param1: ByteBuf) => void)
     readonly id: number;
     readonly packetReader: (param0: UserConnection, param1: ByteBuf) => void;

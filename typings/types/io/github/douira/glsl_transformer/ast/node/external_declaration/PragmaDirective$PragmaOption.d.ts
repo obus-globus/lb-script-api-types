@@ -13,7 +13,7 @@ export class PragmaDirective$PragmaOption extends Enum<PragmaDirective$PragmaOpt
     static fromToken(paramarg0: Token): PragmaDirective$PragmaOption;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PragmaDirective$PragmaOption;
-    static values(): (Object | null)[];
+    static values(): PragmaDirective$PragmaOption[];
     private constructor(arg2: number)
     readonly tokenType: number;
     getTokenType(): number;

@@ -5,7 +5,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSToStringOrNumberNode extends JavaScriptBaseNode {
     static create(): JSToStringOrNumberNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doSymbol(value: Symbol): Object;
     execute(operand: Object): Object;

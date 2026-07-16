@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class HasRestrictedGlobalPropertyNodeGen extends HasRestrictedGlobalPropertyNode {
     static create(): HasRestrictedGlobalPropertyNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private globalObjectCached_cache: HasRestrictedGlobalPropertyNodeGen$GlobalObjectCachedData;
     // private state_0_: number;

@@ -10,7 +10,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSArrayToDenseObjectArrayNodeGen extends JSArrayToDenseObjectArrayNode {
     static create(): JSArrayToDenseObjectArrayNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private fromDenseArray_cache: JSArrayToDenseObjectArrayNodeGen$FromDenseArrayData;
     // private fromSparseArray_cache: JSArrayToDenseObjectArrayNodeGen$FromSparseArrayData;

@@ -6,7 +6,7 @@ export class OptionType extends Enum<OptionType> {
     static DEFINE: OptionType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): OptionType;
-    static values(): (Object | null)[];
+    static values(): OptionType[];
     private constructor()
     name(): "DEFINE" | "CONST";
 }

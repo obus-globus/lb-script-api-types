@@ -5,7 +5,6 @@ import type { TimeZone } from '../../../../com/ibm/icu/util/TimeZone.d.ts'
 import type { ULocale } from '../../../../com/ibm/icu/util/ULocale.d.ts'
 import type { Date } from '../../../../java/util/Date.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 export class CopticCalendar extends CECalendar {
     static AM: number;
     static AMSHIR: number;
@@ -76,8 +75,8 @@ export class CopticCalendar extends CECalendar {
     static ZONE_OFFSET: number;
     static ceToJD(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): number;
     static copticToJD(paramarg0: number, paramarg1: number, paramarg2: number): number;
-    static getAvailableLocales(): (Object | null)[];
-    static getAvailableULocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
+    static getAvailableULocales(): ULocale[];
     static getDateAtTimePattern(paramarg0: Calendar, paramarg1: ULocale, paramarg2: number): string;
     static getDateTimePattern(paramarg0: Calendar, paramarg1: ULocale, paramarg2: number): string;
     static getInstance(): Calendar;
@@ -86,7 +85,7 @@ export class CopticCalendar extends CECalendar {
     static getInstance(paramarg0: TimeZone, paramarg1: Locale): Calendar;
     static getInstance(paramarg0: ULocale): Calendar;
     static getInstance(paramarg0: Locale): Calendar;
-    static getKeywordValuesForLocale(paramarg0: string, paramarg1: ULocale, paramarg2: boolean): (Object | null)[];
+    static getKeywordValuesForLocale(paramarg0: string, paramarg1: ULocale, paramarg2: boolean): string[];
     static getWeekDataForRegion(paramarg0: string): Calendar$WeekData;
     static jdToCE(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
     constructor()

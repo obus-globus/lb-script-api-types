@@ -7,7 +7,7 @@ export class MemoryStatus extends Enum<MemoryStatus> {
     static VALUE_PRESENT: MemoryStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): MemoryStatus;
-    static values(): (Object | null)[];
+    static values(): MemoryStatus[];
     private constructor()
     name(): "VALUE_PRESENT" | "VALUE_ABSENT" | "REGISTERED";
 }

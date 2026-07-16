@@ -8,7 +8,7 @@ export class LevelLoadListener$Stage extends Enum<LevelLoadListener$Stage> {
     static START_SERVER: LevelLoadListener$Stage;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): LevelLoadListener$Stage;
-    static values(): (Object | null)[];
+    static values(): LevelLoadListener$Stage[];
     private constructor()
     name(): "START_SERVER" | "PREPARE_GLOBAL_SPAWN" | "LOAD_INITIAL_CHUNKS" | "LOAD_PLAYER_CHUNKS";
 }

@@ -9,7 +9,7 @@ export class ParticleRenderingSettings extends Enum<ParticleRenderingSettings> {
     static fromString(paramarg0: string): ParticleRenderingSettings;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ParticleRenderingSettings;
-    static values(): (Object | null)[];
+    static values(): ParticleRenderingSettings[];
     private constructor()
     name(): "UNSET" | "BEFORE" | "MIXED" | "AFTER";
 }

@@ -10,7 +10,7 @@ export class ExperienceCommand$Type extends Enum<ExperienceCommand$Type> {
     static POINTS: ExperienceCommand$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ExperienceCommand$Type;
-    static values(): (Object | null)[];
+    static values(): ExperienceCommand$Type[];
     private constructor(name: string, add: (param0: ServerPlayer, param1: number) => void, set: (param0: ServerPlayer, param1: number) => boolean, query: (param0: ServerPlayer) => number)
     add: (param0: ServerPlayer, param1: number) => void;
     name: string;

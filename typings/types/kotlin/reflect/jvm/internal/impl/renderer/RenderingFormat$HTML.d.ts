@@ -6,6 +6,6 @@ export class RenderingFormat$HTML extends RenderingFormat {
     static PLAIN: RenderingFormat;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RenderingFormat;
-    static values(): (Object | null)[];
+    static values(): RenderingFormat[];
     escape(arg0: string): string;
 }

@@ -15,7 +15,7 @@ export class ModuleChestStealer$Distance$StartItem extends Enum<ModuleChestSteal
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleChestStealer$Distance$StartItem;
-    static values(): (Object | null)[];
+    static values(): ModuleChestStealer$Distance$StartItem[];
     private constructor(tag: string)
     readonly tag: string;
     getStartIndex(slots: ContainerItemSlot[]): number;

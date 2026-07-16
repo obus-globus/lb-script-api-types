@@ -14,7 +14,7 @@ export class GlobalBuiltins$GlobalShellBuiltins$GlobalShell extends Enum<GlobalB
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): GlobalBuiltins$GlobalShellBuiltins$GlobalShell;
-    static values(): (Object | null)[];
+    static values(): GlobalBuiltins$GlobalShellBuiltins$GlobalShell[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

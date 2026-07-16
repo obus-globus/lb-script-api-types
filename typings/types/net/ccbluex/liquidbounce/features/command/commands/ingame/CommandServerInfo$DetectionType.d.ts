@@ -17,7 +17,7 @@ export class CommandServerInfo$DetectionType extends Enum<CommandServerInfo$Dete
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CommandServerInfo$DetectionType;
-    static values(): (Object | null)[];
+    static values(): CommandServerInfo$DetectionType[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "PLUGINS" | "HOSTING";

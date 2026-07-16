@@ -7,7 +7,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class GlobalScopeLookupNodeGen extends GlobalScopeLookupNode {
     static create(paramvarName: TruffleString, paramwrite: boolean): GlobalScopeLookupNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(varName: TruffleString, write: boolean)
     // private absent_assumption_: Assumption;
     // private cached_cache: GlobalScopeLookupNodeGen$CachedData;

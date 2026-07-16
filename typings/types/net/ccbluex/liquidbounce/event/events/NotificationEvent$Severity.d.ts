@@ -13,7 +13,7 @@ export class NotificationEvent$Severity extends Enum<NotificationEvent$Severity>
     static getEntries(): NotificationEvent$Severity[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): NotificationEvent$Severity;
-    static values(): (Object | null)[];
+    static values(): NotificationEvent$Severity[];
     private constructor()
     name(): "INFO" | "SUCCESS" | "ERROR" | "ENABLED" | "DISABLED";
 }

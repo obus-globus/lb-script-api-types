@@ -12,7 +12,7 @@ export class EquipmentSlot extends Enum<EquipmentSlot> {
     static SADDLE: EquipmentSlot;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): EquipmentSlot;
-    static values(): (Object | null)[];
+    static values(): EquipmentSlot[];
     private constructor()
     name(): "MAINHAND" | "OFFHAND" | "FEET" | "LEGS" | "CHEST" | "HEAD" | "BODY" | "SADDLE";
 }

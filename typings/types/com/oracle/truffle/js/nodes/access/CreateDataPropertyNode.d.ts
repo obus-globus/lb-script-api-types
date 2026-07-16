@@ -9,7 +9,6 @@ export abstract class CreateDataPropertyNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext, paramkey: Object): CreateDataPropertyNode;
     static createNonEnumerable(paramcontext: JSContext, paramkey: Object): CreateDataPropertyNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, key: Object, enumerable: boolean)
     // private context: JSContext;
     // private enumerable: boolean;

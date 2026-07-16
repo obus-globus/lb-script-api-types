@@ -6,7 +6,7 @@ export class PaletteType extends Enum<PaletteType> {
     static BLOCKS: PaletteType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PaletteType;
-    static values(): (Object | null)[];
+    static values(): PaletteType[];
     private constructor(arg2: number, arg3: number)
     // private highestBitsPerValue: number;
     // private size: number;

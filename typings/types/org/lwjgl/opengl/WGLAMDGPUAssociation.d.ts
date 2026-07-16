@@ -26,7 +26,6 @@ export class WGLAMDGPUAssociation extends Object {
     static wglGetGPUIDsAMD(paramarg0: number[]): number;
     static wglGetGPUIDsAMD(paramarg0: IntBuffer): number;
     static wglGetGPUInfoAMD(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number[]): number;
-    static wglGetGPUInfoAMD(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number[]): number;
     static wglGetGPUInfoAMD(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: ByteBuffer): number;
     static wglGetGPUInfoAMD(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: FloatBuffer): number;
     static wglGetGPUInfoAMD(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: IntBuffer): number;

@@ -11,7 +11,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class GetIteratorFlattenableNodeGen extends GetIteratorFlattenableNode {
     static create(paramrejectStrings: boolean, paramasync: boolean, paramcontext: JSContext): GetIteratorFlattenableNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(rejectStrings: boolean, async: boolean, context: JSContext)
     // private createAsyncFromSyncIteratorNode__field1_: Node;
     // private getAsyncIteratorMethodNode_: GetMethodNode;

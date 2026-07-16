@@ -5,7 +5,6 @@ import type { TimeZoneRule } from '../../../../com/ibm/icu/util/TimeZoneRule.d.t
 import type { TimeZoneTransition } from '../../../../com/ibm/icu/util/TimeZoneTransition.d.ts'
 import type { ULocale } from '../../../../com/ibm/icu/util/ULocale.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class BasicTimeZone extends TimeZone {
     static GENERIC_LOCATION: number;
     static GMT_ZONE: TimeZone;
@@ -23,12 +22,12 @@ export abstract class BasicTimeZone extends TimeZone {
     static countEquivalentIDs(paramarg0: string): number;
     static forLocaleOrDefault(paramarg0: Locale): TimeZone;
     static forULocaleOrDefault(paramarg0: ULocale): TimeZone;
-    static getAvailableIDs(): (Object | null)[];
-    static getAvailableIDs(paramarg0: number): (Object | null)[];
-    static getAvailableIDs(paramarg0: string): (Object | null)[];
+    static getAvailableIDs(): string[];
+    static getAvailableIDs(paramarg0: number): string[];
+    static getAvailableIDs(paramarg0: string): string[];
     static getAvailableIDs(paramarg0: TimeZone$SystemTimeZoneType, paramarg1: string, paramarg2: number): string[];
     static getCanonicalID(paramarg0: string): string;
-    static getCanonicalID(paramarg0: string, paramarg1: (Object | null)[]): string;
+    static getCanonicalID(paramarg0: string, paramarg1: boolean[]): string;
     static getDefault(): TimeZone;
     static getDefaultTimeZoneType(): number;
     static getEquivalentID(paramarg0: string, paramarg1: number): string;

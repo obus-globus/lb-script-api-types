@@ -12,7 +12,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class DefineMethodNode$FunctionCreateNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext, paramfunctionData: JSFunctionData, paramblockScopeSlot: number): DefineMethodNode$FunctionCreateNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, functionData: JSFunctionData, blockScopeSlot: number)
     // private blockScopeSlot: number;
     // private functionData: JSFunctionData;

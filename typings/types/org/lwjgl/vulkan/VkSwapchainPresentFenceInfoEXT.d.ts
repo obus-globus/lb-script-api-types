@@ -23,28 +23,21 @@ export class VkSwapchainPresentFenceInfoEXT extends VkSwapchainPresentFenceInfoK
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkSwapchainPresentFenceInfoKHR;
     static calloc(paramarg0: MemoryStack): VkSwapchainPresentFenceInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkSwapchainPresentFenceInfoEXT;
     static create(paramarg0: number): VkSwapchainPresentFenceInfoEXT;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkSwapchainPresentFenceInfoKHR;
     static create(paramarg0: number): VkSwapchainPresentFenceInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkSwapchainPresentFenceInfoEXT;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkSwapchainPresentFenceInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkSwapchainPresentFenceInfoEXT;
     static malloc(paramarg0: MemoryStack): VkSwapchainPresentFenceInfoEXT;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkSwapchainPresentFenceInfoKHR;
     static malloc(paramarg0: MemoryStack): VkSwapchainPresentFenceInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npFences(paramarg0: number): LongBuffer;
     static npFences(paramarg0: number, paramarg1: LongBuffer): void;
     static npNext(paramarg0: number): number;
@@ -53,7 +46,6 @@ export class VkSwapchainPresentFenceInfoEXT extends VkSwapchainPresentFenceInfoK
     static nsType(paramarg0: number, paramarg1: number): void;
     static nswapchainCount(paramarg0: number): number;
     static nswapchainCount(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

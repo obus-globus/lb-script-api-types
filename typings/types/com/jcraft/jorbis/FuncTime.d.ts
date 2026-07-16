@@ -5,7 +5,7 @@ import type { Info } from '../../../com/jcraft/jorbis/Info.d.ts'
 import type { InfoMode } from '../../../com/jcraft/jorbis/InfoMode.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class FuncTime extends Object {
-    static time_P: (Object | null)[];
+    static time_P: FuncTime[];
     constructor()
     free_info(arg0: Object): void;
     free_look(arg0: Object): void;

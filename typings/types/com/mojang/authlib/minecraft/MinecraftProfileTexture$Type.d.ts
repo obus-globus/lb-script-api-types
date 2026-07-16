@@ -7,7 +7,7 @@ export class MinecraftProfileTexture$Type extends Enum<MinecraftProfileTexture$T
     static SKIN: MinecraftProfileTexture$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MinecraftProfileTexture$Type;
-    static values(): (Object | null)[];
+    static values(): MinecraftProfileTexture$Type[];
     private constructor()
     name(): "SKIN" | "CAPE" | "ELYTRA";
 }

@@ -7,7 +7,7 @@ export class IncidentEdgeSet$EdgeType extends Enum<IncidentEdgeSet$EdgeType> {
     static OUTGOING: IncidentEdgeSet$EdgeType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): IncidentEdgeSet$EdgeType;
-    static values(): (Object | null)[];
+    static values(): IncidentEdgeSet$EdgeType[];
     private constructor()
     name(): "INCOMING" | "OUTGOING" | "BOTH";
 }

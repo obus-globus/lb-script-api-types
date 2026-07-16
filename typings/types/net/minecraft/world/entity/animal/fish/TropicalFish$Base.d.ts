@@ -6,7 +6,7 @@ export class TropicalFish$Base extends Enum<TropicalFish$Base> {
     static SMALL: TropicalFish$Base;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TropicalFish$Base;
-    static values(): (Object | null)[];
+    static values(): TropicalFish$Base[];
     private constructor(id: number)
     // private id: number;
     name(): "SMALL" | "LARGE";

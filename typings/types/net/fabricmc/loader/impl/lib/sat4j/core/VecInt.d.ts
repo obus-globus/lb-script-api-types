@@ -31,14 +31,14 @@ export class VecInt extends Object implements IVecInt {
     push(arg0: number): IVecInt;
     remove(arg0: number): void;
     selectionSort(arg0: number, arg1: number): void;
-    selectionSort(arg0: number, arg1: number, arg2: (param0: Object) => boolean): void;
+    selectionSort(arg0: number, arg1: number, arg2: (param0: number, param1: number) => number): void;
     set(arg0: number, arg1: number): void;
     shrink(arg0: number): void;
     size(): number;
     sort(): void;
-    sort(arg0: (param0: Object) => boolean): void;
+    sort(arg0: (param0: number, param1: number) => number): void;
     sort(arg0: number, arg1: number): void;
-    sort(arg0: number, arg1: number, arg2: (param0: Object) => boolean): void;
+    sort(arg0: number, arg1: number, arg2: (param0: number, param1: number) => number): void;
     sortUnique(): void;
     toArray(): number[];
     toString(): string;

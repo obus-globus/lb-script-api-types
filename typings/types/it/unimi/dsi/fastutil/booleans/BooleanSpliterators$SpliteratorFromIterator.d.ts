@@ -25,7 +25,7 @@ export class BooleanSpliterators$SpliteratorFromIterator extends Object implemen
     estimateSize(): number;
     forEachRemaining(arg0: (param0: boolean) => void): void;
     getComparator(): (param0: boolean, param1: boolean) => number;
-    makeForSplit(arg0: (Object | null)[], arg1: number): BooleanSpliterator;
+    makeForSplit(arg0: boolean[], arg1: number): BooleanSpliterator;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: boolean) => void): boolean;
     trySplit(): BooleanSpliterator;

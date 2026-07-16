@@ -279,7 +279,7 @@ export abstract class NDArrayAdapter extends Object implements NDArray {
     tile(arg0: number): NDArray;
     tile(arg0: number[]): NDArray;
     toArray(): Number[];
-    toBooleanArray(): (Object | null)[];
+    toBooleanArray(): boolean[];
     toByteArray(): number[];
     toByteBuffer(): ByteBuffer;
     toByteBuffer(arg0: boolean): ByteBuffer;

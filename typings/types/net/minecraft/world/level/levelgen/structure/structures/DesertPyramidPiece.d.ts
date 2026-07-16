@@ -1,5 +1,4 @@
 import type { Stream } from '../../../../../../../java/util/stream/Stream.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { CompoundTag } from '../../../../../../../net/minecraft/nbt/CompoundTag.d.ts'
 import type { RandomSource } from '../../../../../../../net/minecraft/util/RandomSource.d.ts'
@@ -21,7 +20,7 @@ export class DesertPyramidPiece extends ScatteredFeaturePiece {
     static reorient(paramlevel: BlockGetter, paramblockPos: BlockPos, paramblockState: BlockState): BlockState;
     constructor(tag: CompoundTag)
     constructor(random: RandomSource, west: number, north: number)
-    // private hasPlacedChest: (Object | null)[];
+    // private hasPlacedChest: boolean[];
     readonly potentialSuspiciousSandWorldPositions: BlockPos[];
     readonly randomCollapsedRoofPos: BlockPos;
     addAdditionalSaveData(context: StructurePieceSerializationContext, tag: CompoundTag): void;

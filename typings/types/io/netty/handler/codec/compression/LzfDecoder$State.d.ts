@@ -8,7 +8,7 @@ export class LzfDecoder$State extends Enum<LzfDecoder$State> {
     static INIT_ORIGINAL_LENGTH: LzfDecoder$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LzfDecoder$State;
-    static values(): (Object | null)[];
+    static values(): LzfDecoder$State[];
     private constructor()
     name(): "INIT_BLOCK" | "INIT_ORIGINAL_LENGTH" | "DECOMPRESS_DATA" | "CORRUPTED";
 }

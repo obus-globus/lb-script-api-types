@@ -10,7 +10,7 @@ export class CacheRefreshReason extends Enum<CacheRefreshReason> {
     static PROACTIVE_REFRESH: CacheRefreshReason;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CacheRefreshReason;
-    static values(): (Object | null)[];
+    static values(): CacheRefreshReason[];
     private constructor(arg2: number)
     // private telemetryValue: number;
     name(): "NOT_APPLICABLE" | "FORCE_REFRESH" | "CLAIMS" | "NO_CACHED_ACCESS_TOKEN" | "EXPIRED" | "PROACTIVE_REFRESH";

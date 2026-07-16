@@ -20,7 +20,6 @@ export abstract class JSHasPropertyNode extends JavaScriptBaseNode {
     static create(): JSHasPropertyNode;
     static create(paramhasOwnProperty: boolean): JSHasPropertyNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(hasOwnProperty: boolean)
     // private classProfile: JSClassProfile;
     // private hasOwnProperty: boolean;

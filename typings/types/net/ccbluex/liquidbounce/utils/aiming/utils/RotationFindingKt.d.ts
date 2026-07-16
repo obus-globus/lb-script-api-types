@@ -49,7 +49,7 @@ export class RotationFindingKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt#L274 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt:274}
      */
-    static raytraceBlockSideBoxes(side: Direction, boxes: AABB[], offset: BlockPos, eyes: Vec3, rangeSquared: number, wallsRangeSquared: number, rotationPreference: (param0: Object) => boolean, visibilityPredicate: VisibilityPredicate): RotationWithVector;
+    static raytraceBlockSideBoxes(side: Direction, boxes: AABB[], offset: BlockPos, eyes: Vec3, rangeSquared: number, wallsRangeSquared: number, rotationPreference: (param0: Rotation, param1: Rotation) => number, visibilityPredicate: VisibilityPredicate): RotationWithVector;
     /**
      * Find the best spot of a box to aim at.
      *

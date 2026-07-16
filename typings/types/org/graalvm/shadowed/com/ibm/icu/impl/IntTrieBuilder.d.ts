@@ -1,5 +1,4 @@
 import type { OutputStream } from '../../../../../../../java/io/OutputStream.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { IntTrie } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/IntTrie.d.ts'
 import type { Trie$DataManipulate } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/Trie$DataManipulate.d.ts'
 import type { TrieBuilder } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/TrieBuilder.d.ts'
@@ -17,7 +16,7 @@ export class IntTrieBuilder extends TrieBuilder {
     // private fold(manipulate: TrieBuilder$DataManipulate): void;
     // private getDataBlock(ch: number): number;
     getValue(ch: number): number;
-    getValue(ch: number, inBlockZero: (Object | null)[]): number;
+    getValue(ch: number, inBlockZero: boolean[]): number;
     serialize(os: OutputStream, reduceTo16Bits: boolean, datamanipulate: TrieBuilder$DataManipulate): number;
     serialize(datamanipulate: TrieBuilder$DataManipulate, triedatamanipulate: Trie$DataManipulate): IntTrie;
     setRange(start: number, limit: number, value: number, overwrite: boolean): boolean;

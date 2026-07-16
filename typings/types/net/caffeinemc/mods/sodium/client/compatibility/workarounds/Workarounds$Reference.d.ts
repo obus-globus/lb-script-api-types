@@ -9,7 +9,7 @@ export class Workarounds$Reference extends Enum<Workarounds$Reference> {
     static NVIDIA_THREADED_OPTIMIZATIONS_BROKEN: Workarounds$Reference;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Workarounds$Reference;
-    static values(): (Object | null)[];
+    static values(): Workarounds$Reference[];
     private constructor()
     name(): "NVIDIA_THREADED_OPTIMIZATIONS_BROKEN" | "NO_ERROR_CONTEXT_UNSUPPORTED" | "INTEL_FRAMEBUFFER_BLIT_CRASH_WHEN_UNFOCUSED" | "INTEL_DEPTH_BUFFER_COMPARISON_UNRELIABLE" | "AMD_GAME_OPTIMIZATION_BROKEN";
 }

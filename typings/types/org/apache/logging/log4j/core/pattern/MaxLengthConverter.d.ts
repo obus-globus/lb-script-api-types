@@ -6,7 +6,7 @@ import type { LogEventPatternConverter } from '../../../../../../org/apache/logg
 import type { PatternFormatter } from '../../../../../../org/apache/logging/log4j/core/pattern/PatternFormatter.d.ts'
 export class MaxLengthConverter extends LogEventPatternConverter {
     static CATEGORY: string;
-    static newInstance(paramconfig: Configuration, paramoptions: (Object | null)[]): MaxLengthConverter;
+    static newInstance(paramconfig: Configuration, paramoptions: string[]): MaxLengthConverter;
     private constructor(formatters: PatternFormatter[], maxLength: number)
     // private formatters: PatternFormatter[];
     // private maxLength: number;

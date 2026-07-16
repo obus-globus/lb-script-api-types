@@ -1,7 +1,7 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { LogManager$Record } from '../../../../../org/antlr/v4/runtime/misc/LogManager$Record.d.ts'
 export class LogManager extends Object {
-    static main(paramarg0: (Object | null)[]): void;
+    static main(paramarg0: string[]): void;
     constructor()
     // private records: LogManager$Record[];
     log(arg0: string): void;

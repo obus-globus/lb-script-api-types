@@ -48,14 +48,14 @@ export class JSRuntime extends Object {
     static arrayIndexLengthInRange(paramindexStr: TruffleString): boolean;
     static booleanToNumber(paramvalue: boolean): number;
     static booleanToString(paramvalue: boolean): TruffleString;
-    static call(paramfnObj: Object, paramholder: Object, paramarguments: (Object | null)[]): Object;
-    static call(paramfnObj: Object, paramholder: Object, paramarguments: (Object | null)[], paramencapsulatingNode: Node): Object;
+    static call(paramfnObj: Object, paramholder: Object, paramarguments: Object[]): Object;
+    static call(paramfnObj: Object, paramholder: Object, paramarguments: Object[], paramencapsulatingNode: Node): Object;
     static canonicalNumericIndexString(params: TruffleString): Object;
     static castArrayIndex(paramdoubleValue: number): number;
     static castArrayIndex(paramlongValue: number): number;
     static collectionToConsoleString(paramobj: JSDynamicObject, paramallowSideEffects: boolean, paramformat: ToDisplayStringFormat, paramname: TruffleString, parammap: JSHashMap, paramdepth: number): TruffleString;
     static comparePropertyKeys(paramkey1: Object, paramkey2: Object): number;
-    static construct(paramfnObj: Object, paramarguments: (Object | null)[]): Object;
+    static construct(paramfnObj: Object, paramarguments: Object[]): Object;
     static createArrayFromList(paramcontext: JSContext, paramrealm: JSRealm, paramlist: Object[]): JSDynamicObject;
     static createDataProperty(paramo: JSDynamicObject, paramp: Object, paramv: Object): boolean;
     static createDataProperty(paramo: JSDynamicObject, paramp: Object, paramv: Object, paramdoThrow: boolean): boolean;
@@ -75,7 +75,7 @@ export class JSRuntime extends Object {
     static equal(parama: Object, paramb: Object): boolean;
     static expectJSObject(paramto: Object, paramerrorBranch: BranchProfile): JSDynamicObject;
     static exportValue(paramvalue: Object): Object;
-    static exportValueArray(paramarr: (Object | null)[]): (Object | null)[];
+    static exportValueArray(paramarr: Object[]): Object[];
     static filterPrivateSymbols(paramlist: Object[]): Object[];
     static firstExpIndexInString(paramstr: TruffleString): number;
     static firstNonWhitespaceIndex(paramstring: TruffleString, paramcharAtNode: TruffleString$ReadCharUTF16Node): number;
@@ -90,8 +90,8 @@ export class JSRuntime extends Object {
     static fromPropertyDescriptor(paramdesc: PropertyDescriptor, paramcontext: JSContext): JSDynamicObject;
     static get(paramobj: Object, paramkey: Object): Object;
     static get(paramobj: Object, paramindex: number): Object;
-    static getArg(paramargs: (Object | null)[], parami: number, paramdefaultValue: Object): Object;
-    static getArgOrUndefined(paramargs: (Object | null)[], parami: number): Object;
+    static getArg(paramargs: Object[], parami: number, paramdefaultValue: Object): Object;
+    static getArgOrUndefined(paramargs: Object[], parami: number): Object;
     static getBufferElementDirect(parambufferAccess: ByteBufferAccess, parambuffer: ByteBuffer, paramelementType: TypedArrayFactory, paramindex: number): Object;
     static getConstructorName(paramreceiver: JSObject): TruffleString;
     static getConstructorName(paramreceiver: JSObject, paramdefaultName: TruffleString): TruffleString;
@@ -100,7 +100,6 @@ export class JSRuntime extends Object {
     static getException(paramerrorObject: Object, paramnode: Node): AbstractTruffleException;
     static getFunctionRealm(paramobj: Object, paramcurrentRealm: JSRealm): JSRealm;
     static getIterator(paramiteratedObject: Object): IteratorRecord;
-    static getOffset(paramstart: number, paramlength: number, paramnode: Node, paramprofile: InlinedConditionProfile): number;
     static getOffset(paramstart: number, paramlength: number, paramnode: Node, paramprofile: InlinedConditionProfile): number;
     static getPrimitiveConstructorName(paramprimitive: Object): TruffleString;
     static hasProperty(paramobj: Object, paramkey: Object): boolean;
@@ -154,7 +153,6 @@ export class JSRuntime extends Object {
     static isProxyAnArray(paramproxy: JSDynamicObject): boolean;
     static isRepresentableAsUnsignedInt(paramvalue: number): boolean;
     static isSafeInteger(paramvalue: number): boolean;
-    static isSafeInteger(paramvalue: number): boolean;
     static isSameValue(paramx: Object, paramy: Object): boolean;
     static isValidArrayLength(paramdoubleValue: number): boolean;
     static isValidArrayLength(paramintValue: number): boolean;
@@ -172,7 +170,7 @@ export class JSRuntime extends Object {
     static nullToUndefined(paramvalue: Object): Object;
     static numberToString(paramnumber: Number): TruffleString;
     static objectToDisplayString(paramobj: JSDynamicObject, paramallowSideEffects: boolean, paramformat: ToDisplayStringFormat, paramdepth: number, paramname: TruffleString): TruffleString;
-    static objectToDisplayString(paramobj: JSDynamicObject, paramallowSideEffects: boolean, paramformat: ToDisplayStringFormat, paramdepth: number, paramname: TruffleString, paraminternalKeys: (Object | null)[], paraminternalValues: (Object | null)[]): TruffleString;
+    static objectToDisplayString(paramobj: JSDynamicObject, paramallowSideEffects: boolean, paramformat: ToDisplayStringFormat, paramdepth: number, paramname: TruffleString, paraminternalKeys: TruffleString[], paraminternalValues: Object[]): TruffleString;
     static parseArrayIndexIsIndexRaw(paramo: Object): number;
     static parseArrayIndexRaw(paramstring: TruffleString, paramcharAtNode: TruffleString$ReadCharUTF16Node): number;
     static parseDoubleOrNaN(paraminput: TruffleString): number;
@@ -234,7 +232,6 @@ export class JSRuntime extends Object {
     static toUInt32(paramvalue: number): number;
     static toUInt32(paramnumber: Number): number;
     static toUInt32(paramvalue: Object): number;
-    static toUInt32(paramvalue: number): number;
     static toUInt32NoTruncate(paramvalue: number): number;
     static toUint32(paramvalue: number): Number;
     static trimJSWhiteSpace(paramstring: TruffleString): TruffleString;

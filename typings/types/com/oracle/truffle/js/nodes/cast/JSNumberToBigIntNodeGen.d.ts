@@ -5,7 +5,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSNumberToBigIntNodeGen extends JSNumberToBigIntNode {
     static create(): JSNumberToBigIntNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private state_0_: number;
     execute(arg0Value: Object): BigInt;

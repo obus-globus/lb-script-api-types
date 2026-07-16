@@ -9,7 +9,6 @@ export class InitFunctionNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext, paramstrictProperties: boolean, paramisConstructor: boolean, paramisBound: boolean, paramisGenerator: boolean, paramprototypeNotWritable: boolean): InitFunctionNode;
     static create(paramfunctionData: JSFunctionData): InitFunctionNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(functionData: JSFunctionData)
     constructor(functionData: JSFunctionData, context: JSContext, strictProperties: boolean, isConstructor: boolean, isBound: boolean, isGenerator: boolean, prototypeNotWritable: boolean)
     // private argumentsCallerFlags: number;

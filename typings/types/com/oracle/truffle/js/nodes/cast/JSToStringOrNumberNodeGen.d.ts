@@ -5,7 +5,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSToStringOrNumberNodeGen extends JSToStringOrNumberNode {
     static create(): JSToStringOrNumberNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private jSObject_toDoubleNode_: JSToDoubleNode;
     // private state_0_: number;

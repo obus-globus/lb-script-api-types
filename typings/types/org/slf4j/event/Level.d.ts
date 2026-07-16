@@ -10,7 +10,7 @@ export class Level extends Enum<Level> {
     static intToLevel(paramarg0: number): Level;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Level;
-    static values(): (Object | null)[];
+    static values(): Level[];
     private constructor(arg2: number, arg3: string)
     // private levelInt: number;
     // private levelStr: string;

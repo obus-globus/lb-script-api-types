@@ -17,7 +17,6 @@ export abstract class JSRegExpExecIntlNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): JSRegExpExecIntlNode;
     static createIsJSRegExpNode(): IsJSClassNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private context: JSContext;
     // private getExecNode: PropertyGetNode;

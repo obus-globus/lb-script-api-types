@@ -14,7 +14,7 @@ export class FrameSlotKind extends Enum<FrameSlotKind> {
     static fromTag(paramtag: number): FrameSlotKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): FrameSlotKind;
-    static values(): (Object | null)[];
+    static values(): FrameSlotKind[];
     private constructor()
     tag: number;
     name(): "Object" | "Long" | "Int" | "Double" | "Float" | "Boolean" | "Byte" | "Illegal" | "Static";

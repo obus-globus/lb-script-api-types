@@ -6,7 +6,7 @@ export class YggdrasilUserAuthentication$Agent extends Enum<YggdrasilUserAuthent
     static getEntries(): YggdrasilUserAuthentication$Agent[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): YggdrasilUserAuthentication$Agent;
-    static values(): (Object | null)[];
+    static values(): YggdrasilUserAuthentication$Agent[];
     private constructor(agentName: string, version: number)
     readonly agentName: string;
     readonly version: number;

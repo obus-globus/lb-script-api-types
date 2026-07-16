@@ -37,28 +37,21 @@ export class VkPhysicalDeviceFloatControlsPropertiesKHR extends VkPhysicalDevice
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceFloatControlsPropertiesKHR;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceFloatControlsPropertiesKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceFloatControlsProperties;
     static create(paramarg0: number): VkPhysicalDeviceFloatControlsProperties;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceFloatControlsPropertiesKHR;
     static create(paramarg0: number): VkPhysicalDeviceFloatControlsPropertiesKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceFloatControlsProperties;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceFloatControlsPropertiesKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceFloatControlsProperties;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceFloatControlsProperties;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceFloatControlsPropertiesKHR;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceFloatControlsPropertiesKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ndenormBehaviorIndependence(paramarg0: number): number;
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
@@ -80,7 +73,6 @@ export class VkPhysicalDeviceFloatControlsPropertiesKHR extends VkPhysicalDevice
     static nshaderSignedZeroInfNanPreserveFloat16(paramarg0: number): number;
     static nshaderSignedZeroInfNanPreserveFloat32(paramarg0: number): number;
     static nshaderSignedZeroInfNanPreserveFloat64(paramarg0: number): number;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

@@ -13,7 +13,7 @@ export class WireFormat$JavaType extends Enum<WireFormat$JavaType> {
     static STRING: WireFormat$JavaType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): WireFormat$JavaType;
-    static values(): (Object | null)[];
+    static values(): WireFormat$JavaType[];
     private constructor(arg2: Object)
     // private defaultDefault: Object;
     name(): "INT" | "LONG" | "FLOAT" | "DOUBLE" | "BOOLEAN" | "STRING" | "BYTE_STRING" | "ENUM" | "MESSAGE";

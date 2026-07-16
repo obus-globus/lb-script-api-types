@@ -10,7 +10,7 @@ export class PlayerLocationPacket_Type extends Enum<PlayerLocationPacket_Type> {
     static getByValue(paramarg0: number, paramarg1: PlayerLocationPacket_Type): PlayerLocationPacket_Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PlayerLocationPacket_Type;
-    static values(): (Object | null)[];
+    static values(): PlayerLocationPacket_Type[];
     private constructor(arg2: number)
     private constructor(arg2: PlayerLocationPacket_Type)
     readonly value: number;

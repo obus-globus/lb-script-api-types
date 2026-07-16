@@ -118,7 +118,7 @@ export class ExpressionOp extends Enum<ExpressionOp> {
     static getByValue(paramarg0: number, paramarg1: ExpressionOp): ExpressionOp;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ExpressionOp;
-    static values(): (Object | null)[];
+    static values(): ExpressionOp[];
     private constructor(arg2: number)
     private constructor(arg2: ExpressionOp)
     readonly value: number;

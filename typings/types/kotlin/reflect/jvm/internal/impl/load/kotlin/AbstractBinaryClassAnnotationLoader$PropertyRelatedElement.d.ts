@@ -7,7 +7,7 @@ export class AbstractBinaryClassAnnotationLoader$PropertyRelatedElement extends 
     static PROPERTY: AbstractBinaryClassAnnotationLoader$PropertyRelatedElement;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AbstractBinaryClassAnnotationLoader$PropertyRelatedElement;
-    static values(): (Object | null)[];
+    static values(): AbstractBinaryClassAnnotationLoader$PropertyRelatedElement[];
     private constructor()
     name(): "PROPERTY" | "BACKING_FIELD" | "DELEGATE_FIELD";
 }

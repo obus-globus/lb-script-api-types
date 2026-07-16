@@ -17,9 +17,9 @@ export abstract class BytecodeNode extends Node {
     static get(paramelement: TruffleStackTraceElement): BytecodeNode;
     static get(paramframeInstance: FrameInstance): BytecodeNode;
     static get(paramnode: Node): BytecodeNode;
-    static getLocalNames(paramframeInstance: FrameInstance): (Object | null)[];
-    static getLocalValues(paramframeInstance: FrameInstance): (Object | null)[];
-    static setLocalValues(paramframeInstance: FrameInstance, paramvalues: (Object | null)[]): boolean;
+    static getLocalNames(paramframeInstance: FrameInstance): Object[];
+    static getLocalValues(paramframeInstance: FrameInstance): Object[];
+    static setLocalValues(paramframeInstance: FrameInstance, paramvalues: Object[]): boolean;
     constructor(token: Object)
     clearLocalValueInternal(frame: Frame, localOffset: number, localIndex: number): void;
     copyLocalValues(bytecodeIndex: number, source: Frame, destination: Frame): void;

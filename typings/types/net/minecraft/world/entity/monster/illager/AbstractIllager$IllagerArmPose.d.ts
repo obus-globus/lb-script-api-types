@@ -12,7 +12,7 @@ export class AbstractIllager$IllagerArmPose extends Enum<AbstractIllager$Illager
     static SPELLCASTING: AbstractIllager$IllagerArmPose;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): AbstractIllager$IllagerArmPose;
-    static values(): (Object | null)[];
+    static values(): AbstractIllager$IllagerArmPose[];
     private constructor()
     name(): "CROSSED" | "ATTACKING" | "SPELLCASTING" | "BOW_AND_ARROW" | "CROSSBOW_HOLD" | "CROSSBOW_CHARGE" | "CELEBRATING" | "NEUTRAL";
 }

@@ -22,15 +22,15 @@ export class ItemDisplayContext extends Enum<ItemDisplayContext> implements Stri
     static PRE_BUILT_MAP_THRESHOLD: number;
     static THIRD_PERSON_LEFT_HAND: ItemDisplayContext;
     static THIRD_PERSON_RIGHT_HAND: ItemDisplayContext;
-    static createNameLookup(paramvalueArray: Object | null): (param0: string) => StringRepresentable | null;
-    static createNameLookup(paramvalueArray: Object | null, paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
-    static fromEnum(paramvalues: () => Object | null): StringRepresentable$EnumCodec<any>;
-    static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<any>;
-    static fromValues(paramvalues: () => Object | null): Codec<StringRepresentable>;
-    static keys(paramvalues: (Object | null)[]): Keyable;
+    static createNameLookup(paramvalueArray: (StringRepresentable | null)[]): (param0: string) => StringRepresentable | null;
+    static createNameLookup(paramvalueArray: (Object | null)[], paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
+    static fromEnum(paramvalues: () => (Object | null)[]): StringRepresentable$EnumCodec<any>;
+    static fromEnumWithMapping(paramvalues: () => (Object | null)[], paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<any>;
+    static fromValues(paramvalues: () => (StringRepresentable | null)[]): Codec<StringRepresentable>;
+    static keys(paramvalues: StringRepresentable[]): Keyable;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ItemDisplayContext;
-    static values(): (Object | null)[];
+    static values(): ItemDisplayContext[];
     private constructor(id: number, name: string)
     readonly id: number;
     // private name: string;

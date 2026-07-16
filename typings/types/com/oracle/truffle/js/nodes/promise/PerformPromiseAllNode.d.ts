@@ -15,7 +15,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class PerformPromiseAllNode extends PerformPromiseCombinatorNode {
     static create(paramcontext: JSContext): PerformPromiseAllNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private callResolve: JSFunctionCallNode;
     // private callThen: JSFunctionCallNode;

@@ -11,7 +11,7 @@ export class ActorLinkType extends Enum<ActorLinkType> {
     static getByValue(paramarg0: number, paramarg1: ActorLinkType): ActorLinkType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ActorLinkType;
-    static values(): (Object | null)[];
+    static values(): ActorLinkType[];
     private constructor(arg2: number)
     private constructor(arg2: ActorLinkType)
     readonly value: number;

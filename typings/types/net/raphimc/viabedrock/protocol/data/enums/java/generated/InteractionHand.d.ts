@@ -6,7 +6,7 @@ export class InteractionHand extends Enum<InteractionHand> {
     static OFF_HAND: InteractionHand;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): InteractionHand;
-    static values(): (Object | null)[];
+    static values(): InteractionHand[];
     private constructor()
     name(): "MAIN_HAND" | "OFF_HAND";
 }

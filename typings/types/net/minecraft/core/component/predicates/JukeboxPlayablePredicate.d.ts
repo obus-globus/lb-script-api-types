@@ -14,7 +14,6 @@ import type { StreamCodec } from '../../../../../net/minecraft/network/codec/Str
 import type { JukeboxPlayable } from '../../../../../net/minecraft/world/item/JukeboxPlayable.d.ts'
 import type { JukeboxSong } from '../../../../../net/minecraft/world/item/JukeboxSong.d.ts'
 export class JukeboxPlayablePredicate extends Record implements SingleComponentItemPredicate<JukeboxPlayable> {
-    static CODEC: Codec<Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
     static CODEC: Codec<JukeboxPlayablePredicate>;
     static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<any>>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;

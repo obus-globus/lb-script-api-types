@@ -6,7 +6,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { SimpleClassPath$CpEntry } from '../../../../../net/fabricmc/loader/impl/util/SimpleClassPath$CpEntry.d.ts'
 export class SimpleClassPath extends Object implements Closeable {
     constructor(arg0: Path[])
-    // private jarMarkers: (Object | null)[];
+    // private jarMarkers: boolean[];
     // private openJars: ZipFile[];
     readonly paths: Path[];
     close(): void;

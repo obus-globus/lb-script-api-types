@@ -6,7 +6,7 @@ export class LongSerializationPolicy extends Enum<LongSerializationPolicy> {
     static STRING: LongSerializationPolicy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LongSerializationPolicy;
-    static values(): (Object | null)[];
+    static values(): LongSerializationPolicy[];
     constructor(arg2: LongSerializationPolicy)
     name(): "DEFAULT" | "STRING";
 }

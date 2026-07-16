@@ -45,7 +45,7 @@ export class Bidi extends Object {
     static invertMap(paramsrcMap: number[]): number[];
     static reorderLogical(paramlevels: number[]): number[];
     static reorderVisual(paramlevels: number[]): number[];
-    static reorderVisually(paramlevels: number[], paramlevelStart: number, paramobjects: (Object | null)[], paramobjectStart: number, paramcount: number): void;
+    static reorderVisually(paramlevels: number[], paramlevelStart: number, paramobjects: Object[], paramobjectStart: number, paramcount: number): void;
     static requiresBidi(paramtext: string[], paramstart: number, paramlimit: number): boolean;
     static writeReverse(paramsrc: string, paramoptions: number): string;
     constructor()

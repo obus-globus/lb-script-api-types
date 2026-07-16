@@ -18,7 +18,7 @@ export class Modifier extends Enum<Modifier> {
     static VOLATILE: Modifier;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Modifier;
-    static values(): (Object | null)[];
+    static values(): Modifier[];
     private constructor()
     toString(): string;
     name(): "PUBLIC" | "PROTECTED" | "PRIVATE" | "ABSTRACT" | "DEFAULT" | "STATIC" | "SEALED" | "NON_SEALED" | "FINAL" | "TRANSIENT" | "VOLATILE" | "SYNCHRONIZED" | "NATIVE" | "STRICTFP";

@@ -9,7 +9,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class WriteElementNode$TypedFloatArrayWriteElementCacheNode extends WriteElementNode$AbstractTypedArrayWriteElementCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(arrayType: TypedArray)
     doTypedFloatArray(target: JSDynamicObject, typedArray: TypedArray$TypedFloatArray, index: number, value: Object, root: WriteElementNode, inBoundsIf: InlinedConditionProfile, toDouble: JSToDoubleNode): boolean;
 }

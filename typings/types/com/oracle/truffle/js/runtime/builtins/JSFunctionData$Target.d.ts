@@ -10,7 +10,7 @@ export class JSFunctionData$Target extends Enum<JSFunctionData$Target> {
     static ConstructNewTarget: JSFunctionData$Target;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): JSFunctionData$Target;
-    static values(): (Object | null)[];
+    static values(): JSFunctionData$Target[];
     private constructor(updater: AtomicReferenceFieldUpdater<JSFunctionData, CallTarget>)
     // private updater: AtomicReferenceFieldUpdater<JSFunctionData, CallTarget>;
     getUpdater(): AtomicReferenceFieldUpdater<JSFunctionData, CallTarget>;

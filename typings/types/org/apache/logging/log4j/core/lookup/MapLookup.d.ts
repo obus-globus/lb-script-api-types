@@ -4,7 +4,7 @@ import type { LookupResult } from '../../../../../../org/apache/logging/log4j/co
 import type { StrLookup } from '../../../../../../org/apache/logging/log4j/core/lookup/StrLookup.d.ts'
 export class MapLookup extends Object implements StrLookup {
     static CATEGORY: string;
-    static setMainArguments(...paramargs: (Object | null)[]): void;
+    static setMainArguments(...paramargs: string[]): void;
     constructor()
     constructor(map: { [key: string]: string })
     // private map: { [key: string]: string };

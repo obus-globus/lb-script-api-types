@@ -10,7 +10,7 @@ export class Markings extends Enum<Markings> {
     static byId(paramid: number): Markings;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Markings;
-    static values(): (Object | null)[];
+    static values(): Markings[];
     private constructor(id: number)
     readonly id: number;
     getId(): number;

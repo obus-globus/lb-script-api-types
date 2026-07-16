@@ -17,7 +17,7 @@ export class DumpArchiveEntry$PERMISSION extends Enum<DumpArchiveEntry$PERMISSIO
     static find(paramarg0: number): DumpArchiveEntry$PERMISSION[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DumpArchiveEntry$PERMISSION;
-    static values(): (Object | null)[];
+    static values(): DumpArchiveEntry$PERMISSION[];
     private constructor(arg2: number)
     // private code: number;
     name(): "SETUID" | "SETGUI" | "STICKY" | "USER_READ" | "USER_WRITE" | "USER_EXEC" | "GROUP_READ" | "GROUP_WRITE" | "GROUP_EXEC" | "WORLD_READ" | "WORLD_WRITE" | "WORLD_EXEC";

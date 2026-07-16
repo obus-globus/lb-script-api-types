@@ -3,7 +3,6 @@ import type { JavaScriptBaseNode } from '../../../../../../com/oracle/truffle/js
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ListGetNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(list: Object, index: number): Object;
 }

@@ -4,7 +4,6 @@ import type { PropertyGetNode } from '../../../../../../com/oracle/truffle/js/no
 import type { IteratorRecord } from '../../../../../../com/oracle/truffle/js/runtime/objects/IteratorRecord.d.ts'
 export abstract class CreateAsyncFromSyncIteratorNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     createAsyncFromSyncIterator(syncIteratorRecord: IteratorRecord, getNextMethodNode: PropertyGetNode): IteratorRecord;
     execute(node: Node, syncIteratorRecord: IteratorRecord): IteratorRecord;

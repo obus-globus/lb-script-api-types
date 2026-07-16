@@ -259,7 +259,7 @@ export class MinecraftPacketIds extends Enum<MinecraftPacketIds> {
     static getByValue(paramarg0: number, paramarg1: MinecraftPacketIds): MinecraftPacketIds;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MinecraftPacketIds;
-    static values(): (Object | null)[];
+    static values(): MinecraftPacketIds[];
     private constructor(arg2: number)
     private constructor(arg2: MinecraftPacketIds)
     readonly value: number;

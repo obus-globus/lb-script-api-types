@@ -1,4 +1,3 @@
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Attribute } from '../../../../org/objectweb/asm/Attribute.d.ts'
 import type { ByteVector } from '../../../../org/objectweb/asm/ByteVector.d.ts'
 import type { ClassReader } from '../../../../org/objectweb/asm/ClassReader.d.ts'
@@ -9,8 +8,8 @@ export class ModuleResolutionAttribute extends Attribute {
     static RESOLUTION_WARN_DEPRECATED: number;
     static RESOLUTION_WARN_DEPRECATED_FOR_REMOVAL: number;
     static RESOLUTION_WARN_INCUBATING: number;
-    static read(paramarg0: Attribute, paramarg1: ClassReader, paramarg2: number, paramarg3: number, paramarg4: string[], paramarg5: number, paramarg6: (Object | null)[]): Attribute;
-    static readLabel(paramarg0: ClassReader, paramarg1: number, paramarg2: (Object | null)[]): Label;
+    static read(paramarg0: Attribute, paramarg1: ClassReader, paramarg2: number, paramarg3: number, paramarg4: string[], paramarg5: number, paramarg6: Label[]): Attribute;
+    static readLabel(paramarg0: ClassReader, paramarg1: number, paramarg2: Label[]): Label;
     static write(paramarg0: Attribute, paramarg1: ClassWriter, paramarg2: number[], paramarg3: number, paramarg4: number, paramarg5: number): number[];
     constructor()
     constructor(arg0: number)

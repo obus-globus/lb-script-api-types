@@ -6,7 +6,7 @@ export class Initializer$InitializerType extends Enum<Initializer$InitializerTyp
     static NESTED: Initializer$InitializerType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Initializer$InitializerType;
-    static values(): (Object | null)[];
+    static values(): Initializer$InitializerType[];
     private constructor()
     name(): "EXPRESSION" | "NESTED";
 }

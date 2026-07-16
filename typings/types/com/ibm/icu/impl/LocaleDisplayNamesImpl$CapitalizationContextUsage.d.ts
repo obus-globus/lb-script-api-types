@@ -10,7 +10,7 @@ export class LocaleDisplayNamesImpl$CapitalizationContextUsage extends Enum<Loca
     static VARIANT: LocaleDisplayNamesImpl$CapitalizationContextUsage;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LocaleDisplayNamesImpl$CapitalizationContextUsage;
-    static values(): (Object | null)[];
+    static values(): LocaleDisplayNamesImpl$CapitalizationContextUsage[];
     private constructor()
     name(): "LANGUAGE" | "SCRIPT" | "TERRITORY" | "VARIANT" | "KEY" | "KEYVALUE";
 }

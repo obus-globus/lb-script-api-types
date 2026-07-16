@@ -5,7 +5,6 @@ import type { JSToNumberNode } from '../../../../../../com/oracle/truffle/js/nod
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSToUInt16Node extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doDouble(value: number, needPositiveInfinityBranch: InlinedBranchProfile): number;
     doGeneric(value: Object, toNumberNode: JSToNumberNode): number;

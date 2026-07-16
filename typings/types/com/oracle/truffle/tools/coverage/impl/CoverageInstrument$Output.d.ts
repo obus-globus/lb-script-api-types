@@ -8,7 +8,7 @@ export class CoverageInstrument$Output extends Enum<CoverageInstrument$Output> {
     static LCOV: CoverageInstrument$Output;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CoverageInstrument$Output;
-    static values(): (Object | null)[];
+    static values(): CoverageInstrument$Output[];
     private constructor()
     toString(): string;
     name(): "HISTOGRAM" | "DETAILED" | "JSON" | "LCOV";

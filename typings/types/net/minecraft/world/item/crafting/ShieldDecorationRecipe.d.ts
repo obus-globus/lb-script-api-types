@@ -16,7 +16,6 @@ export class ShieldDecorationRecipe extends CustomRecipe {
     static KEY_CODEC: Codec<ResourceKey<Recipe<any>>>;
     static MAP_CODEC: MapCodec<ShieldDecorationRecipe>;
     static SERIALIZER: RecipeSerializer<ShieldDecorationRecipe>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<any>>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ShieldDecorationRecipe>;
     constructor(banner: Ingredient, target: Ingredient, result: ItemStackTemplate)
     // private banner: Ingredient;

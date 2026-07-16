@@ -8,7 +8,6 @@ export class FromPropertyDescriptorNodeGen extends FromPropertyDescriptorNode {
     static create(): FromPropertyDescriptorNode;
     static getUncached(): FromPropertyDescriptorNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private putConfigurableNode_: DynamicObjectLibrary;
     // private putEnumerableNode_: DynamicObjectLibrary;

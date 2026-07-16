@@ -10,11 +10,11 @@ export class LayoutType extends Enum<LayoutType> {
     static UNKNOWN: LayoutType;
     static WIDTH: LayoutType;
     static fromValue(paramarg0: string): LayoutType;
-    static fromValue(paramarg0: string): (Object | null)[];
-    static toString(paramarg0: (Object | null)[]): string;
+    static fromValue(paramarg0: string): LayoutType[];
+    static toString(paramarg0: LayoutType[]): string;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LayoutType;
-    static values(): (Object | null)[];
+    static values(): LayoutType[];
     private constructor(arg2: string)
     readonly value: string;
     getValue(): string;

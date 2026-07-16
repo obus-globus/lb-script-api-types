@@ -4,7 +4,6 @@ import type { ReadElementNode$ArrayClassGuardCachedArrayReadElementCacheNode } f
 import type { TypedArray } from '../../../../../../com/oracle/truffle/js/runtime/array/TypedArray.d.ts'
 export abstract class ReadElementNode$AbstractTypedArrayReadElementCacheNode extends ReadElementNode$ArrayClassGuardCachedArrayReadElementCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(arrayType: TypedArray)
     // private interop: InteropLibrary;
 }

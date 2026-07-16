@@ -5,7 +5,7 @@ import type { InetAddress$InetAddressHolder } from '../../java/net/InetAddress$I
 import type { NetworkInterface } from '../../java/net/NetworkInterface.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export class InetAddress extends Object implements Serializable {
-    static getAllByName(paramarg0: string): (Object | null)[];
+    static getAllByName(paramarg0: string): InetAddress[];
     static getByAddress(paramarg0: number[]): InetAddress;
     static getByAddress(paramarg0: string, paramarg1: number[]): InetAddress;
     static getByName(paramarg0: string): InetAddress;

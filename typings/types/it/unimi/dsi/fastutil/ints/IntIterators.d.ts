@@ -15,8 +15,8 @@ export class IntIterators extends Object {
     static any(paramarg0: IntIterator, paramarg1: (param0: number) => boolean): boolean;
     static asIntIterator(paramarg0: Iterator<Object>): IntIterator;
     static asIntIterator(paramarg0: ListIterator<Object>): IntListIterator;
-    static concat(...paramarg0: (Object | null)[]): IntIterator;
-    static concat(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): IntIterator;
+    static concat(...paramarg0: IntIterator[]): IntIterator;
+    static concat(paramarg0: IntIterator[], paramarg1: number, paramarg2: number): IntIterator;
     static fromTo(paramarg0: number, paramarg1: number): IntListIterator;
     static indexOf(paramarg0: IntIterator, paramarg1: (param0: number) => boolean): number;
     static pour(paramarg0: IntIterator, paramarg1: (Object | null)[]): number;
@@ -32,11 +32,11 @@ export class IntIterators extends Object {
     static unwrap(paramarg0: IntIterator, paramarg1: (Object | null)[], paramarg2: number): number;
     static unwrap(paramarg0: IntIterator): number[];
     static unwrap(paramarg0: IntIterator, paramarg1: number): number[];
+    static unwrap(paramarg0: IntIterator, paramarg1: number[][]): number;
+    static unwrap(paramarg0: IntIterator, paramarg1: number[][], paramarg2: number, paramarg3: number): number;
     static unwrap(paramarg0: IntIterator, paramarg1: (Object | null)[]): number;
-    static unwrap(paramarg0: IntIterator, paramarg1: (Object | null)[], paramarg2: number, paramarg3: number): number;
-    static unwrap(paramarg0: IntIterator, paramarg1: (Object | null)[]): number;
-    static unwrapBig(paramarg0: IntIterator): (Object | null)[];
-    static unwrapBig(paramarg0: IntIterator, paramarg1: number): (Object | null)[];
+    static unwrapBig(paramarg0: IntIterator): number[][];
+    static unwrapBig(paramarg0: IntIterator, paramarg1: number): number[][];
     static wrap(paramarg0: ByteIterator): IntIterator;
     static wrap(paramarg0: CharIterator): IntIterator;
     static wrap(paramarg0: ShortIterator): IntIterator;

@@ -25,7 +25,7 @@ export class DyeColor extends Enum<DyeColor> {
     static getClosestDyeColor(paramarg0: number): DyeColor;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DyeColor;
-    static values(): (Object | null)[];
+    static values(): DyeColor[];
     private constructor(arg2: number)
     // private signColor: number;
     bedrockId(): number;

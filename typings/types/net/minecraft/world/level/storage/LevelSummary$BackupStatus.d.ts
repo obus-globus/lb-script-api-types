@@ -8,7 +8,7 @@ export class LevelSummary$BackupStatus extends Enum<LevelSummary$BackupStatus> {
     static UPGRADE_TO_SNAPSHOT: LevelSummary$BackupStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): LevelSummary$BackupStatus;
-    static values(): (Object | null)[];
+    static values(): LevelSummary$BackupStatus[];
     private constructor(shouldBackup: boolean, severe: boolean, translationKey: string)
     readonly severe: boolean;
     // private shouldBackup: boolean;

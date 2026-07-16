@@ -218,15 +218,15 @@ export class CustomSymbolCurrency extends Currency_2 {
     static getAvailable(paramtype: string): MeasureUnit[];
     static getAvailable(): MeasureUnit[];
     static getAvailableCurrencies(): Currency_2[];
-    static getAvailableCurrencyCodes(paramloc: Locale, paramd: Date): (Object | null)[];
-    static getAvailableCurrencyCodes(paramloc: ULocale, paramd: Date): (Object | null)[];
-    static getAvailableLocales(): (Object | null)[];
+    static getAvailableCurrencyCodes(paramloc: Locale, paramd: Date): string[];
+    static getAvailableCurrencyCodes(paramloc: ULocale, paramd: Date): string[];
+    static getAvailableLocales(): Locale[];
     static getAvailableTypes(): string[];
-    static getAvailableULocales(): (Object | null)[];
+    static getAvailableULocales(): ULocale[];
     static getInstance(paramtheISOCode: string): Currency_2;
     static getInstance(paramlocale: Locale): Currency_2;
     static getInstance(paramlocale: ULocale): Currency_2;
-    static getKeywordValuesForLocale(paramkey: string, paramlocale: ULocale, paramcommonlyUsed: boolean): (Object | null)[];
+    static getKeywordValuesForLocale(paramkey: string, paramlocale: ULocale, paramcommonlyUsed: boolean): string[];
     static getParsingTrie(paramlocale: ULocale, paramtype: number): TextTrieMap<Currency$CurrencyStringInfo>;
     static internalGetInstance(paramtype: string, paramsubType: string): MeasureUnit;
     static isAvailable(paramcode: string, paramfrom: Date, paramto: Date): boolean;
@@ -239,9 +239,9 @@ export class CustomSymbolCurrency extends Currency_2 {
     // private symbol2: string;
     equals(other: Object | null): boolean;
     getCurrencyCode(): string;
-    getName(locale: Locale, nameStyle: number, isChoiceFormat: (Object | null)[]): string;
-    getName(locale: Locale, nameStyle: number, pluralCount: string, isChoiceFormat: (Object | null)[]): string;
-    getName(locale: ULocale, nameStyle: number, isChoiceFormat: (Object | null)[]): string;
-    getName(locale: ULocale, nameStyle: number, pluralCount: string, isChoiceFormat: (Object | null)[]): string;
+    getName(locale: Locale, nameStyle: number, isChoiceFormat: boolean[]): string;
+    getName(locale: Locale, nameStyle: number, pluralCount: string, isChoiceFormat: boolean[]): string;
+    getName(locale: ULocale, nameStyle: number, isChoiceFormat: boolean[]): string;
+    getName(locale: ULocale, nameStyle: number, pluralCount: string, isChoiceFormat: boolean[]): string;
     hashCode(): number;
 }

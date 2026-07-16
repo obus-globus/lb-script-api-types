@@ -15,7 +15,7 @@ export class SoundSource extends Enum<SoundSource> {
     static WEATHER: SoundSource;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SoundSource;
-    static values(): (Object | null)[];
+    static values(): SoundSource[];
     private constructor(name: string)
     getName(): string;
     name(): "MASTER" | "MUSIC" | "RECORDS" | "WEATHER" | "BLOCKS" | "HOSTILE" | "NEUTRAL" | "PLAYERS" | "AMBIENT" | "VOICE" | "UI";

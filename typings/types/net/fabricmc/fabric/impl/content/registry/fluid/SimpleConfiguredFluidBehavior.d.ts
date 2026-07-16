@@ -13,7 +13,6 @@ import type { Fluid } from '../../../../../../../net/minecraft/world/level/mater
 import type { Vec3 } from '../../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class SimpleConfiguredFluidBehavior extends Record implements FluidBehavior {
     static WATER_LIKE: FluidBehavior;
-    static WATER_LIKE: FluidBehavior;
     static simple(): FluidBehavior$Builder;
     constructor(movementSpeed: (param0: LivingEntity) => number, movementSlowdown: FluidBehavior$Builder$MovementSlowdownFunction, gravityMultiplier: number, fallDistanceMultiplier: number, flowingPushScale: number, allowMovingDown: boolean, allowBoats: boolean, allowSwimming: boolean, makeMobsFloat: boolean, makeRiddenMobsFloat: boolean, drowning: boolean, allowSprinting: (param0: TagKey<Fluid>, param1: LivingEntity) => boolean)
     // private allowBoats: boolean;

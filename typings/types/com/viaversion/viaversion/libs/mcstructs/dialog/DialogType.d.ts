@@ -11,7 +11,7 @@ export class DialogType extends Enum<DialogType> implements IdentifiedType {
     static SERVER_LINKS: DialogType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DialogType;
-    static values(): (Object | null)[];
+    static values(): DialogType[];
     private constructor(arg2: Identifier)
     readonly identifier: Identifier;
     getIdentifier(): Identifier;

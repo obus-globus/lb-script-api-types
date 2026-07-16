@@ -10,7 +10,7 @@ export class BlockRenderType extends Enum<BlockRenderType> {
     static fromString(paramarg0: string): Optional<BlockRenderType>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BlockRenderType;
-    static values(): (Object | null)[];
+    static values(): BlockRenderType[];
     private constructor()
     name(): "SOLID" | "CUTOUT" | "CUTOUT_MIPPED" | "TRANSLUCENT";
 }

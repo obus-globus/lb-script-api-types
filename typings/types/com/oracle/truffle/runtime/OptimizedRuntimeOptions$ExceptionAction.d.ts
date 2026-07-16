@@ -9,7 +9,7 @@ export class OptimizedRuntimeOptions$ExceptionAction extends Enum<OptimizedRunti
     static Throw: OptimizedRuntimeOptions$ExceptionAction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): OptimizedRuntimeOptions$ExceptionAction;
-    static values(): (Object | null)[];
+    static values(): OptimizedRuntimeOptions$ExceptionAction[];
     private constructor()
     name(): "Silent" | "Print" | "Throw" | "Diagnose" | "ExitVM";
 }

@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class GetIteratorDirectNodeGen$Uncached extends GetIteratorDirectNode implements UnadoptableNode {
     static create(): GetIteratorDirectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     execute(arg0Value: Node, arg1Value: Object): IteratorRecord;
     execute(iterator: Object): IteratorRecord;

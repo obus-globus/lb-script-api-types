@@ -8,7 +8,7 @@ export class Win32LogicalDiskToPartition$DiskToPartitionProperty extends Enum<Wi
     static STARTINGADDRESS: Win32LogicalDiskToPartition$DiskToPartitionProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Win32LogicalDiskToPartition$DiskToPartitionProperty;
-    static values(): (Object | null)[];
+    static values(): Win32LogicalDiskToPartition$DiskToPartitionProperty[];
     private constructor()
     name(): "ANTECEDENT" | "DEPENDENT" | "ENDINGADDRESS" | "STARTINGADDRESS";
 }

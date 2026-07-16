@@ -12,11 +12,10 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ArrayPrototypeBuiltinsFactory$JSArrayIndexOfNodeGen extends ArrayPrototypeBuiltins$JSArrayIndexOfNode {
     static ARGUMENTS: string;
     static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
-    static create(paramcontext: JSContext, parambuiltin: JSBuiltin, paramisTypedArrayImplementation: boolean, paramisForward: boolean, paramarguments: (Object | null)[]): ArrayPrototypeBuiltins$JSArrayIndexOfNode;
+    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
+    static create(paramcontext: JSContext, parambuiltin: JSBuiltin, paramisTypedArrayImplementation: boolean, paramisForward: boolean, paramarguments: JavaScriptNode[]): ArrayPrototypeBuiltins$JSArrayIndexOfNode;
     static createBuiltin(paramctx: JSContext, parambuiltin: JSBuiltin, paramconstruct: boolean, paramnewTarget: boolean): JSBuiltinNode;
     static findBlockScopeNode(paramnode: Node): Node;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;

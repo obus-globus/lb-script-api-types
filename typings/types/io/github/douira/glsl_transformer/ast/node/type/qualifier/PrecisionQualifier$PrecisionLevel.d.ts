@@ -10,7 +10,7 @@ export class PrecisionQualifier$PrecisionLevel extends Enum<PrecisionQualifier$P
     static fromToken(paramarg0: Token): PrecisionQualifier$PrecisionLevel;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PrecisionQualifier$PrecisionLevel;
-    static values(): (Object | null)[];
+    static values(): PrecisionQualifier$PrecisionLevel[];
     private constructor(arg2: number)
     readonly tokenType: number;
     getTokenType(): number;

@@ -11,7 +11,7 @@ export class ServiceQuality extends Enum<ServiceQuality> {
     static byValue(paramvalue: number): ServiceQuality;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ServiceQuality;
-    static values(): (Object | null)[];
+    static values(): ServiceQuality[];
     private constructor(value: number, iconPath: string)
     readonly icon: Identifier;
     readonly value: number;

@@ -7,7 +7,7 @@ export class InstrumentationHandler$VisitOperation$Scope extends Enum<Instrument
     static ONLY_ORIGINAL: InstrumentationHandler$VisitOperation$Scope;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): InstrumentationHandler$VisitOperation$Scope;
-    static values(): (Object | null)[];
+    static values(): InstrumentationHandler$VisitOperation$Scope[];
     private constructor()
     name(): "ALL" | "ONLY_ORIGINAL" | "ONLY_MATERIALIZED";
 }

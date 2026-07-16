@@ -27,28 +27,21 @@ export class VkRenderPassMultiviewCreateInfoKHR extends VkRenderPassMultiviewCre
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkRenderPassMultiviewCreateInfoKHR;
     static calloc(paramarg0: MemoryStack): VkRenderPassMultiviewCreateInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkRenderPassMultiviewCreateInfo;
     static create(paramarg0: number): VkRenderPassMultiviewCreateInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkRenderPassMultiviewCreateInfoKHR;
     static create(paramarg0: number): VkRenderPassMultiviewCreateInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkRenderPassMultiviewCreateInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkRenderPassMultiviewCreateInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkRenderPassMultiviewCreateInfo;
     static malloc(paramarg0: MemoryStack): VkRenderPassMultiviewCreateInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkRenderPassMultiviewCreateInfoKHR;
     static malloc(paramarg0: MemoryStack): VkRenderPassMultiviewCreateInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ncorrelationMaskCount(paramarg0: number): number;
     static ncorrelationMaskCount(paramarg0: number, paramarg1: number): void;
     static ndependencyCount(paramarg0: number): number;
@@ -65,7 +58,6 @@ export class VkRenderPassMultiviewCreateInfoKHR extends VkRenderPassMultiviewCre
     static nsType(paramarg0: number, paramarg1: number): void;
     static nsubpassCount(paramarg0: number): number;
     static nsubpassCount(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

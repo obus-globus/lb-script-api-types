@@ -16,7 +16,7 @@ export class File extends Object implements Serializable, Comparable<File> {
     static separatorChar: string;
     static createTempFile(paramarg0: string, paramarg1: string): File;
     static createTempFile(paramarg0: string, paramarg1: string, paramarg2: File): File;
-    static listRoots(): (Object | null)[];
+    static listRoots(): File[];
     constructor(arg0: File, arg1: string)
     constructor(arg0: URI)
     constructor(arg0: string)

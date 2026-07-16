@@ -5,7 +5,7 @@ export class Win32Processor$ProcessorIdProperty extends Enum<Win32Processor$Proc
     static PROCESSORID: Win32Processor$ProcessorIdProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Win32Processor$ProcessorIdProperty;
-    static values(): (Object | null)[];
+    static values(): Win32Processor$ProcessorIdProperty[];
     private constructor()
     name(): "PROCESSORID";
 }

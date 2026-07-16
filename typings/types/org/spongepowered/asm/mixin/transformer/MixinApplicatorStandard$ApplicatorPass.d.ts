@@ -12,7 +12,7 @@ export class MixinApplicatorStandard$ApplicatorPass extends Enum<MixinApplicator
     static MAIN: MixinApplicatorStandard$ApplicatorPass;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MixinApplicatorStandard$ApplicatorPass;
-    static values(): (Object | null)[];
+    static values(): MixinApplicatorStandard$ApplicatorPass[];
     private constructor()
     name(): "MAIN" | "INJECT_PREPARE" | "INITIALISER_APPLY_LEGACY" | "INJECT_PREPARE_LEGACY" | "INITIALISER_APPLY" | "ACCESSOR" | "INJECT_PREINJECT" | "INJECT_APPLY";
 }

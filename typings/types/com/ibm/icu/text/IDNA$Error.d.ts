@@ -19,7 +19,7 @@ export class IDNA$Error extends Enum<IDNA$Error> {
     static TRAILING_HYPHEN: IDNA$Error;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): IDNA$Error;
-    static values(): (Object | null)[];
+    static values(): IDNA$Error[];
     private constructor()
     name(): "EMPTY_LABEL" | "LABEL_TOO_LONG" | "DOMAIN_NAME_TOO_LONG" | "LEADING_HYPHEN" | "TRAILING_HYPHEN" | "HYPHEN_3_4" | "LEADING_COMBINING_MARK" | "DISALLOWED" | "PUNYCODE" | "LABEL_HAS_DOT" | "INVALID_ACE_LABEL" | "BIDI" | "CONTEXTJ" | "CONTEXTO_PUNCTUATION" | "CONTEXTO_DIGITS";
 }

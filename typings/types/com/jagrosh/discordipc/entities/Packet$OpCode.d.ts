@@ -9,7 +9,7 @@ export class Packet$OpCode extends Enum<Packet$OpCode> {
     static PONG: Packet$OpCode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Packet$OpCode;
-    static values(): (Object | null)[];
+    static values(): Packet$OpCode[];
     private constructor()
     name(): "HANDSHAKE" | "FRAME" | "CLOSE" | "PING" | "PONG";
 }

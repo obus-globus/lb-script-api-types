@@ -15,7 +15,6 @@ export class SlotDisplay$Empty extends Object implements SlotDisplay {
     static INSTANCE: SlotDisplay$Empty;
     static MAP_CODEC: MapCodec<SlotDisplay$Empty>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, SlotDisplay$Empty>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, SlotDisplay>;
     static TYPE: SlotDisplay$Type<SlotDisplay$Empty>;
     private constructor()
     isEnabled(enabledFeatures: FeatureFlagSet): boolean;

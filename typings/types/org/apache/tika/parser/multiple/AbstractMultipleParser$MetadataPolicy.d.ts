@@ -8,7 +8,7 @@ export class AbstractMultipleParser$MetadataPolicy extends Enum<AbstractMultiple
     static LAST_WINS: AbstractMultipleParser$MetadataPolicy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AbstractMultipleParser$MetadataPolicy;
-    static values(): (Object | null)[];
+    static values(): AbstractMultipleParser$MetadataPolicy[];
     private constructor()
     name(): "DISCARD_ALL" | "FIRST_WINS" | "LAST_WINS" | "KEEP_ALL";
 }

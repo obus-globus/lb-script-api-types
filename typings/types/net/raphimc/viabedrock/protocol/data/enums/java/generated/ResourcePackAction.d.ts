@@ -12,7 +12,7 @@ export class ResourcePackAction extends Enum<ResourcePackAction> {
     static SUCCESSFULLY_LOADED: ResourcePackAction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ResourcePackAction;
-    static values(): (Object | null)[];
+    static values(): ResourcePackAction[];
     private constructor()
     name(): "SUCCESSFULLY_LOADED" | "DECLINED" | "FAILED_DOWNLOAD" | "ACCEPTED" | "DOWNLOADED" | "INVALID_URL" | "FAILED_RELOAD" | "DISCARDED";
 }

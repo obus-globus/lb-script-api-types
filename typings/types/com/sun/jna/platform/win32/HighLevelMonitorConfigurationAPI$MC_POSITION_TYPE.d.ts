@@ -6,7 +6,7 @@ export class HighLevelMonitorConfigurationAPI$MC_POSITION_TYPE extends Enum<High
     static MC_VERTICAL_POSITION: HighLevelMonitorConfigurationAPI$MC_POSITION_TYPE;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HighLevelMonitorConfigurationAPI$MC_POSITION_TYPE;
-    static values(): (Object | null)[];
+    static values(): HighLevelMonitorConfigurationAPI$MC_POSITION_TYPE[];
     private constructor()
     name(): "MC_HORIZONTAL_POSITION" | "MC_VERTICAL_POSITION";
 }

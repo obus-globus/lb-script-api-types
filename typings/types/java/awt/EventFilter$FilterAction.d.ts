@@ -7,7 +7,7 @@ export class EventFilter$FilterAction extends Enum<EventFilter$FilterAction> {
     static REJECT: EventFilter$FilterAction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): EventFilter$FilterAction;
-    static values(): (Object | null)[];
+    static values(): EventFilter$FilterAction[];
     private constructor()
     name(): "ACCEPT" | "REJECT" | "ACCEPT_IMMEDIATELY";
 }

@@ -12,7 +12,7 @@ export class Parameter$Type extends Enum<Parameter$Type> {
     static WEIGHT: Parameter$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Parameter$Type;
-    static values(): (Object | null)[];
+    static values(): Parameter$Type[];
     private constructor(arg2: Initializer)
     readonly initializer: Initializer;
     getInitializer(): Initializer;

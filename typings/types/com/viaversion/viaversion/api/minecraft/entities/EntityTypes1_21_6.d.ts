@@ -196,7 +196,7 @@ export class EntityTypes1_21_6 extends Enum<EntityTypes1_21_6> implements Entity
     static initialize(paramarg0: Protocol<any, any, any, any>): void;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): EntityTypes1_21_6;
-    static values(): (Object | null)[];
+    static values(): EntityTypes1_21_6[];
     private constructor(arg2: EntityType)
     private constructor(arg2: EntityType, arg3: string)
     readonly id: number;

@@ -8,7 +8,6 @@ export class Short2LongMaps extends Object {
     static fastIterable(paramarg0: { [key: string]: any }): Short2LongMap$Entry[];
     static fastIterator(paramarg0: { [key: string]: any }): ObjectIterator<Short2LongMap$Entry>;
     static singleton(paramarg0: number, paramarg1: number): { [key: string]: any };
-    static singleton(paramarg0: number, paramarg1: number): { [key: string]: any };
     static synchronize(paramarg0: { [key: string]: any }): { [key: string]: any };
     static synchronize(paramarg0: { [key: string]: any }, paramarg1: Object): { [key: string]: any };
     static unmodifiable(paramarg0: { [key: string]: any }): { [key: string]: any };

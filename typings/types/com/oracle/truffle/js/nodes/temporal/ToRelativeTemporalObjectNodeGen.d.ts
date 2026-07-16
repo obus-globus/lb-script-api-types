@@ -11,7 +11,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 export class ToRelativeTemporalObjectNodeGen extends ToRelativeTemporalObjectNode {
     static create(): ToRelativeTemporalObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private dateFromFieldsNode_: TemporalCalendarDateFromFieldsNode;
     // private fromJavaString_: TruffleString$FromJavaStringNode;

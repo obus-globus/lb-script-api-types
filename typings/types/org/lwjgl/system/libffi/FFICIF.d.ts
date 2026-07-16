@@ -42,7 +42,6 @@ export class FFICIF extends Struct<FFICIF> implements NativeResource {
     static nnargs(paramarg0: number): number;
     static nrtype(paramarg0: number): FFIType;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     abi(): number;

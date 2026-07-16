@@ -1,6 +1,5 @@
 import type { IntBuffer } from '../../../../../../../../../java/nio/IntBuffer.d.ts'
 import type { Supplier } from '../../../../../../../../../java/util/function/Supplier.d.ts'
-import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { CombinedCameraPos } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/translucent_sorting/data/CombinedCameraPos.d.ts'
 import type { DynamicData } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/translucent_sorting/data/DynamicData.d.ts'
 import type { DynamicSorter } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/translucent_sorting/data/DynamicSorter.d.ts'
@@ -15,7 +14,7 @@ export class DynamicTopoData extends DynamicData {
     static BYTES_PER_QUAD: number;
     static INDICES_PER_QUAD: number;
     static VERTICES_PER_QUAD: number;
-    static fromMesh(paramarg0: CombinedCameraPos, paramarg1: (Object | null)[], paramarg2: SectionPos, paramarg3: GeometryPlanes): DynamicTopoData;
+    static fromMesh(paramarg0: CombinedCameraPos, paramarg1: TQuad[], paramarg2: SectionPos, paramarg3: GeometryPlanes): DynamicTopoData;
     static quadCountToIndexBytes(paramarg0: number): number;
     static quadCountToVertexCount(paramarg0: number): number;
     static vertexCountToQuadCount(paramarg0: number): number;

@@ -17,8 +17,8 @@ export class KnotCompatibilityClassLoader extends URLClassLoader implements Knot
     static getSystemResource(paramarg0: string): URL;
     static getSystemResourceAsStream(paramarg0: string): InputStream;
     static getSystemResources(paramarg0: string): Enumeration<URL>;
-    static newInstance(paramarg0: (Object | null)[]): URLClassLoader;
-    static newInstance(paramarg0: (Object | null)[], paramarg1: ClassLoader): URLClassLoader;
+    static newInstance(paramarg0: URL[]): URLClassLoader;
+    static newInstance(paramarg0: URL[], paramarg1: ClassLoader): URLClassLoader;
     constructor(arg0: boolean, arg1: EnvType, arg2: GameProvider)
     // private delegate: KnotClassDelegate<KnotCompatibilityClassLoader>;
     addUrlFwd(arg0: URL): void;

@@ -17,7 +17,7 @@ export class ObjectSpliterators$SpliteratorWrapper<K extends unknown> extends Ob
     characteristics(): number;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: K) => void): void;
-    getComparator(): (param0: Object) => boolean;
+    getComparator(): (param0: K, param1: K) => number;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: K) => void): boolean;
     trySplit(): ObjectSpliterator<K>;

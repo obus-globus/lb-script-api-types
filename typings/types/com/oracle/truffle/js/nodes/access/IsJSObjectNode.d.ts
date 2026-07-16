@@ -5,7 +5,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class IsJSObjectNode extends JavaScriptBaseNode {
     static create(): IsJSObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     executeBoolean(obj: Object): boolean;
     isObject(object: Object, resultProfile: InlinedConditionProfile): boolean;

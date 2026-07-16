@@ -21,35 +21,27 @@ export class VkPhysicalDeviceShaderSubgroupExtendedTypesFeaturesKHR extends VkPh
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceShaderSubgroupExtendedTypesFeaturesKHR;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceShaderSubgroupExtendedTypesFeaturesKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceShaderSubgroupExtendedTypesFeatures;
     static create(paramarg0: number): VkPhysicalDeviceShaderSubgroupExtendedTypesFeatures;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceShaderSubgroupExtendedTypesFeaturesKHR;
     static create(paramarg0: number): VkPhysicalDeviceShaderSubgroupExtendedTypesFeaturesKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceShaderSubgroupExtendedTypesFeatures;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceShaderSubgroupExtendedTypesFeaturesKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceShaderSubgroupExtendedTypesFeatures;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceShaderSubgroupExtendedTypesFeatures;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceShaderSubgroupExtendedTypesFeaturesKHR;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceShaderSubgroupExtendedTypesFeaturesKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
     static nshaderSubgroupExtendedTypes(paramarg0: number): number;
     static nshaderSubgroupExtendedTypes(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

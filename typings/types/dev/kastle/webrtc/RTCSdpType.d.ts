@@ -8,7 +8,7 @@ export class RTCSdpType extends Enum<RTCSdpType> {
     static ROLLBACK: RTCSdpType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RTCSdpType;
-    static values(): (Object | null)[];
+    static values(): RTCSdpType[];
     private constructor()
     name(): "OFFER" | "PR_ANSWER" | "ANSWER" | "ROLLBACK";
 }

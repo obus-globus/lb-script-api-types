@@ -6,7 +6,7 @@ export class GramSchmidt$Phase extends Enum<GramSchmidt$Phase> {
     static ORTHONORMAL: GramSchmidt$Phase;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): GramSchmidt$Phase;
-    static values(): (Object | null)[];
+    static values(): GramSchmidt$Phase[];
     private constructor()
     name(): "ORTHOGONAL" | "ORTHONORMAL";
 }

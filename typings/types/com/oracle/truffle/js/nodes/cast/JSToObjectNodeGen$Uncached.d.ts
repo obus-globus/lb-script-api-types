@@ -6,7 +6,6 @@ export class JSToObjectNodeGen$Uncached extends JSToObjectNode implements Unadop
     static create(): JSToObjectNode;
     static getUncached(): JSToObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     execute(arg0Value: Object): Object;
 }

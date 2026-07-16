@@ -11,7 +11,7 @@ export class MeasureFormat$FormatWidth extends Enum<MeasureFormat$FormatWidth> {
     static WIDE: MeasureFormat$FormatWidth;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): MeasureFormat$FormatWidth;
-    static values(): (Object | null)[];
+    static values(): MeasureFormat$FormatWidth[];
     private constructor(listWidth: ListFormatter$Width, unitWidth: NumberFormatter$UnitWidth, currencyWidth: NumberFormatter$UnitWidth)
     // private currencyWidth: NumberFormatter$UnitWidth;
     // private listWidth: ListFormatter$Width;

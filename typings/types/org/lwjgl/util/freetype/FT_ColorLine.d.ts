@@ -21,7 +21,6 @@ export class FT_ColorLine extends Struct<FT_ColorLine> {
     static ncolor_stop_iterator(paramarg0: number): FT_ColorStopIterator;
     static nextend(paramarg0: number): number;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     color_stop_iterator(): FT_ColorStopIterator;

@@ -7,7 +7,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSProxyPropertySetNodeGen extends JSProxyPropertySetNode {
     static create(paramcontext: JSContext, paramisStrict: boolean, paramdefineProperty: boolean, paramattributes: number): JSProxyPropertySetNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, isStrict: boolean, defineProperty: boolean, attributes: number)
     // private state_0_: number;
     // private targetClassProfile_: JSClassProfile;

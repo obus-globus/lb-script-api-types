@@ -9,6 +9,7 @@ import type { HudComponent } from '../../../../../net/ccbluex/liquidbounce/integ
 export class ComponentsUpdateEvent extends Event implements WebSocketEvent {
     constructor(source: ComponentsUpdateEvent$Source, components: HudComponent[], themeId: string | null)
     readonly components: HudComponent[];
+    readonly serializeAsync: boolean;
     readonly serializer: Gson;
     readonly source: ComponentsUpdateEvent$Source;
     readonly themeId: string | null;

@@ -9,7 +9,6 @@ import type { JSFunctionObject } from '../../../../../com/oracle/truffle/js/runt
 import type { ScriptOrModule } from '../../../../../com/oracle/truffle/js/runtime/objects/ScriptOrModule.d.ts'
 export abstract class ConstructorBuiltins$CreateDynamicFunctionNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, generatorFunction: boolean, asyncFunction: boolean)
     // private asyncFunction: boolean;
     // private context: JSContext;

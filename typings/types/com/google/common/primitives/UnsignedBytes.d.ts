@@ -6,7 +6,7 @@ export class UnsignedBytes extends Object {
     static checkedCast(paramvalue: number): number;
     static compare(parama: number, paramb: number): number;
     static join(paramseparator: string, ...paramarray: number[]): string;
-    static lexicographicalComparator(): (param0: Object) => boolean;
+    static lexicographicalComparator(): (param0: number[], param1: number[]) => number;
     static max(...paramarray: number[]): number;
     static min(...paramarray: number[]): number;
     static parseUnsignedByte(paramstring: string): number;

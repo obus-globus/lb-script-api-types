@@ -23,8 +23,8 @@ export class SimpleFilteredSentenceBreakIterator extends BreakIterator {
     static WORD_NONE_LIMIT: number;
     static WORD_NUMBER: number;
     static WORD_NUMBER_LIMIT: number;
-    static getAvailableLocales(): (Object | null)[];
-    static getAvailableULocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
+    static getAvailableULocales(): ULocale[];
     static getBreakInstance(paramwhere: ULocale, paramkind: number): BreakIterator;
     static getCharacterInstance(): BreakIterator;
     static getCharacterInstance(paramwhere: Locale): BreakIterator;

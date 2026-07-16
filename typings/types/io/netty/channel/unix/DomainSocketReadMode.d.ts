@@ -6,7 +6,7 @@ export class DomainSocketReadMode extends Enum<DomainSocketReadMode> {
     static FILE_DESCRIPTORS: DomainSocketReadMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DomainSocketReadMode;
-    static values(): (Object | null)[];
+    static values(): DomainSocketReadMode[];
     private constructor()
     name(): "BYTES" | "FILE_DESCRIPTORS";
 }

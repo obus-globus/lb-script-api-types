@@ -5,9 +5,9 @@ import type { MethodHandles$Lookup } from '../../../java/lang/invoke/MethodHandl
 import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class DynamicConstantDesc<T extends unknown> extends Object implements ConstantDesc {
     static of(paramarg0: DirectMethodHandleDesc): DynamicConstantDesc<Object>;
-    static of(paramarg0: DirectMethodHandleDesc, ...paramarg1: (Object | null)[]): DynamicConstantDesc<Object>;
-    static ofCanonical(paramarg0: DirectMethodHandleDesc, paramarg1: string, paramarg2: ClassDesc, paramarg3: (Object | null)[]): ConstantDesc;
-    static ofNamed(paramarg0: DirectMethodHandleDesc, paramarg1: string, paramarg2: ClassDesc, ...paramarg3: (Object | null)[]): DynamicConstantDesc<Object>;
+    static of(paramarg0: DirectMethodHandleDesc, ...paramarg1: ConstantDesc[]): DynamicConstantDesc<Object>;
+    static ofCanonical(paramarg0: DirectMethodHandleDesc, paramarg1: string, paramarg2: ClassDesc, paramarg3: ConstantDesc[]): ConstantDesc;
+    static ofNamed(paramarg0: DirectMethodHandleDesc, paramarg1: string, paramarg2: ClassDesc, ...paramarg3: ConstantDesc[]): DynamicConstantDesc<Object>;
     constructor(arg0: DirectMethodHandleDesc, arg1: string, arg2: ClassDesc, ...arg3: ConstantDesc[])
     // private bootstrapArgs: ConstantDesc[];
     // private bootstrapMethod: DirectMethodHandleDesc;

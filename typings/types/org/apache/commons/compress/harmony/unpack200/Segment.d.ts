@@ -26,8 +26,8 @@ export class Segment extends Object {
     // private deflateHint: boolean;
     // private doPreRead: boolean;
     // private fileBands: FileBands;
-    // private fileDeflate: (Object | null)[];
-    // private fileIsClass: (Object | null)[];
+    // private fileDeflate: boolean[];
+    // private fileIsClass: boolean[];
     // private header: SegmentHeader;
     // private icBands: IcBands;
     // private internalBuffer: InputStream;

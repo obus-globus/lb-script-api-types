@@ -3,6 +3,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../../java/lang/Throwable.d.ts'
 import type { Level } from '../../../../../../org/apache/logging/log4j/Level.d.ts'
 import type { Marker } from '../../../../../../org/apache/logging/log4j/Marker.d.ts'
+import type { Filter } from '../../../../../../org/apache/logging/log4j/core/Filter.d.ts'
 import type { Filter$Result } from '../../../../../../org/apache/logging/log4j/core/Filter$Result.d.ts'
 import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
 import type { Logger } from '../../../../../../org/apache/logging/log4j/core/Logger.d.ts'
@@ -14,7 +15,7 @@ export class ScriptFilter extends AbstractFilter {
     static DEFAULT_STOP_TIMEOUT: number;
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
     static ELEMENT_TYPE: string;
-    static EMPTY_ARRAY: (Object | null)[];
+    static EMPTY_ARRAY: Filter[];
     static createFilter(paramscript: AbstractScript, parammatch: Filter$Result, parammismatch: Filter$Result, paramconfiguration: Configuration): ScriptFilter;
     private constructor(script: AbstractScript, configuration: Configuration, onMatch: Filter$Result, onMismatch: Filter$Result)
     // private configuration: Configuration;

@@ -8,7 +8,7 @@ export class Pattern$Qtype extends Enum<Pattern$Qtype> {
     static POSSESSIVE: Pattern$Qtype;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Pattern$Qtype;
-    static values(): (Object | null)[];
+    static values(): Pattern$Qtype[];
     private constructor()
     name(): "GREEDY" | "LAZY" | "POSSESSIVE" | "INDEPENDENT";
 }

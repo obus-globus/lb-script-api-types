@@ -40,7 +40,7 @@ export class JSListFormat extends JSNonProxy implements JSConstructorFactory$Wit
     static ordinaryPreventExtensions(paramthisObj: JSDynamicObject, paramextraFlags: number): boolean;
     static resolvedOptions(paramcontext: JSContext, paramrealm: JSRealm, paramlistFormatObj: JSListFormatObject): JSObject;
     static setIntegrityLevelFast(paramthisObj: JSDynamicObject, paramfreeze: boolean): boolean;
-    static setLocale(paramctx: JSContext, paramstate: JSListFormat$InternalState, paramlocales: (Object | null)[]): void;
+    static setLocale(paramctx: JSContext, paramstate: JSListFormat$InternalState, paramlocales: string[]): void;
     static setupInternalListFormatter(paramstate: JSListFormat$InternalState): void;
     static testIntegrityLevelFast(paramobj: JSDynamicObject, paramfrozen: boolean): boolean;
     private constructor()

@@ -7,12 +7,15 @@ import type { Config } from '../../../../../net/ccbluex/liquidbounce/config/type
 import type { EventListener } from '../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
 import type { AccountManagerLoginResultEvent } from '../../../../../net/ccbluex/liquidbounce/event/events/AccountManagerLoginResultEvent.d.ts'
 import type { SessionBundle } from '../../../../../net/ccbluex/liquidbounce/features/account/SessionBundle.d.ts'
+import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 export class AccountManager extends Config implements EventListener {
     static INSTANCE: AccountManager;
     readonly accounts: MinecraftAccount[];
     // private activeUrl: string | null;
+    readonly debugDisplayName: Component;
     // private initialSession: SessionBundle;
     // private loggingIn: AtomicBoolean;
+    readonly running: boolean;
     children(): EventListener[];
     favoriteAccount(id: number): void;
     generateAlteningAccount(apiToken: string): Result<AlteningAccount>;

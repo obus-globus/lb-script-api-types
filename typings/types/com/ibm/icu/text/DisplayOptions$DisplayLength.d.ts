@@ -8,7 +8,7 @@ export class DisplayOptions$DisplayLength extends Enum<DisplayOptions$DisplayLen
     static VALUES: DisplayOptions$DisplayLength[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DisplayOptions$DisplayLength;
-    static values(): (Object | null)[];
+    static values(): DisplayOptions$DisplayLength[];
     private constructor()
     name(): "UNDEFINED" | "LENGTH_FULL" | "LENGTH_SHORT";
 }

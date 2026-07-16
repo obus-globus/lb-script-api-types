@@ -13,7 +13,7 @@ export class ModuleSurround$DisableOn extends Enum<ModuleSurround$DisableOn> imp
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleSurround$DisableOn;
-    static values(): (Object | null)[];
+    static values(): ModuleSurround$DisableOn[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "Y_CHANGE" | "XZ_MOVE" | "XZ_SPEED";

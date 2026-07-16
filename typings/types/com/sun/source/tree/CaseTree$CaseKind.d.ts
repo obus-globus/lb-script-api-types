@@ -6,7 +6,7 @@ export class CaseTree$CaseKind extends Enum<CaseTree$CaseKind> {
     static STATEMENT: CaseTree$CaseKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CaseTree$CaseKind;
-    static values(): (Object | null)[];
+    static values(): CaseTree$CaseKind[];
     private constructor()
     name(): "STATEMENT" | "RULE";
 }

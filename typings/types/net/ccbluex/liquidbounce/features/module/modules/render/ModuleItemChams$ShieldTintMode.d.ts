@@ -12,7 +12,7 @@ export class ModuleItemChams$ShieldTintMode extends Enum<ModuleItemChams$ShieldT
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleItemChams$ShieldTintMode;
-    static values(): (Object | null)[];
+    static values(): ModuleItemChams$ShieldTintMode[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "OVERRIDE" | "MULTIPLY";

@@ -10,6 +10,5 @@ export class FormatUtil extends Object {
     static getUnsignedInt(paramarg0: number): number;
     static roundToInt(paramarg0: number): number;
     static toUnsignedString(paramarg0: number): string;
-    static toUnsignedString(paramarg0: number): string;
     private constructor()
 }

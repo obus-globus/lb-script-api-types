@@ -11,7 +11,6 @@ import type { InjectionNodes$InjectionNode } from '../../../../../../org/spongep
 import type { Target$Extension } from '../../../../../../org/spongepowered/asm/mixin/injection/struct/Target$Extension.d.ts'
 export class ModifyVariableInjector extends Injector {
     static canCoerce(paramarg0: string, paramarg1: string): boolean;
-    static canCoerce(paramarg0: string, paramarg1: string): boolean;
     static canCoerce(paramarg0: Type, paramarg1: Type): boolean;
     constructor(arg0: InjectionInfo, arg1: LocalVariableDiscriminator)
     // private discriminator: LocalVariableDiscriminator;

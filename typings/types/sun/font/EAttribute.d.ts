@@ -31,7 +31,7 @@ export class EAttribute extends Enum<EAttribute> {
     static forAttribute(paramarg0: AttributedCharacterIterator$Attribute): EAttribute;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): EAttribute;
-    static values(): (Object | null)[];
+    static values(): EAttribute[];
     private constructor(arg2: TextAttribute)
     // private att: TextAttribute;
     // private mask: number;

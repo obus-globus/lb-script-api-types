@@ -11,9 +11,7 @@ export class Vector4iKt extends Object {
     static distance(paramarg0: Vector4ic, paramarg1: Vector4ic): number;
     static distanceSquared(paramarg0: Vector4ic, paramarg1: Vector4ic): number;
     static div(paramarg0: Vector4ic, paramarg1: number): Vector4i;
-    static div(paramarg0: Vector4ic, paramarg1: number): Vector4i;
     static div(paramarg0: Vector4ic, paramarg1: Vector4ic): Vector4i;
-    static divAssign(paramarg0: Vector4i, paramarg1: number): void;
     static divAssign(paramarg0: Vector4i, paramarg1: number): void;
     static divAssign(paramarg0: Vector4i, paramarg1: Vector4ic): void;
     static dot(paramarg0: Vector4ic, paramarg1: Vector4ic): number;

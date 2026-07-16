@@ -16,7 +16,7 @@ export class KillAuraRequirements extends Enum<KillAuraRequirements> implements 
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): KillAuraRequirements;
-    static values(): (Object | null)[];
+    static values(): KillAuraRequirements[];
     private constructor(tag: string)
     readonly tag: string;
     getAsBoolean(): boolean;

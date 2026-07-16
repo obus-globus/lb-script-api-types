@@ -12,7 +12,7 @@ export class ModuleDamageParticles$TrackMode extends Enum<ModuleDamageParticles$
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleDamageParticles$TrackMode;
-    static values(): (Object | null)[];
+    static values(): ModuleDamageParticles$TrackMode[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "ON_TICK" | "ON_UPDATE";

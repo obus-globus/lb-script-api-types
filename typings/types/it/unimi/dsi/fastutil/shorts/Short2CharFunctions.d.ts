@@ -6,7 +6,6 @@ export class Short2CharFunctions extends Object {
     static EMPTY_FUNCTION: Short2CharFunctions$EmptyFunction;
     static primitive(paramarg0: (param0: Object) => string): (param0: number) => string;
     static singleton(paramarg0: number, paramarg1: string): (param0: number) => string;
-    static singleton(paramarg0: number, paramarg1: string): (param0: number) => string;
     static synchronize(paramarg0: (param0: number) => string): (param0: number) => string;
     static synchronize(paramarg0: (param0: number) => string, paramarg1: Object): (param0: number) => string;
     static unmodifiable(paramarg0: (param0: number) => string): (param0: number) => string;

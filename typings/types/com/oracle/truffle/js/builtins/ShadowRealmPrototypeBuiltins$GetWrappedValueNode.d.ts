@@ -10,7 +10,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class ShadowRealmPrototypeBuiltins$GetWrappedValueNode extends JavaScriptBaseNode {
     static create(): ShadowRealmPrototypeBuiltins$GetWrappedValueNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(context: JSContext, callerRealm: JSRealm, value: Object): Object;
     objectCallable(context: JSContext, callerRealm: JSRealm, value: Object, isCallable: IsCallableNode, copyNameAndLengthNode: FunctionPrototypeBuiltins$CopyFunctionNameAndLengthNode): Object;

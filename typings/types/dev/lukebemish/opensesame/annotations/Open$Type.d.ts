@@ -13,7 +13,7 @@ export class Open$Type extends Enum<Open$Type> {
     static VIRTUAL: Open$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Open$Type;
-    static values(): (Object | null)[];
+    static values(): Open$Type[];
     private constructor()
     name(): "STATIC" | "VIRTUAL" | "SPECIAL" | "GET_STATIC" | "GET_INSTANCE" | "SET_STATIC" | "SET_INSTANCE" | "CONSTRUCT" | "ARRAY";
 }

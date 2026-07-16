@@ -8,7 +8,7 @@ export class StructureBlockEntity$UpdateType extends Enum<StructureBlockEntity$U
     static UPDATE_DATA: StructureBlockEntity$UpdateType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): StructureBlockEntity$UpdateType;
-    static values(): (Object | null)[];
+    static values(): StructureBlockEntity$UpdateType[];
     private constructor()
     name(): "UPDATE_DATA" | "SAVE_AREA" | "LOAD_AREA" | "SCAN_AREA";
 }

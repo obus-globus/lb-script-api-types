@@ -8,7 +8,7 @@ export class CurrencyData$CurrencySpacingInfo$SpacingPattern extends Enum<Curren
     static SURROUNDING_MATCH: CurrencyData$CurrencySpacingInfo$SpacingPattern;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CurrencyData$CurrencySpacingInfo$SpacingPattern;
-    static values(): (Object | null)[];
+    static values(): CurrencyData$CurrencySpacingInfo$SpacingPattern[];
     private constructor()
     private constructor(value: number)
     name(): "CURRENCY_MATCH" | "SURROUNDING_MATCH" | "INSERT_BETWEEN" | "COUNT";

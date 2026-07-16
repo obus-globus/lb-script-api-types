@@ -10,7 +10,7 @@ export class RTCSignalingState extends Enum<RTCSignalingState> {
     static STABLE: RTCSignalingState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RTCSignalingState;
-    static values(): (Object | null)[];
+    static values(): RTCSignalingState[];
     private constructor()
     name(): "STABLE" | "HAVE_LOCAL_OFFER" | "HAVE_LOCAL_PR_ANSWER" | "HAVE_REMOTE_OFFER" | "HAVE_REMOTE_PR_ANSWER" | "CLOSED";
 }

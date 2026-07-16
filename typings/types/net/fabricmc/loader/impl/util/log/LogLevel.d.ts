@@ -10,7 +10,7 @@ export class LogLevel extends Enum<LogLevel> {
     static getDefault(): LogLevel;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LogLevel;
-    static values(): (Object | null)[];
+    static values(): LogLevel[];
     private constructor()
     isLessThan(arg0: LogLevel): boolean;
     name(): "ERROR" | "WARN" | "INFO" | "DEBUG" | "TRACE";

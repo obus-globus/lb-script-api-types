@@ -11,7 +11,7 @@ export class SetIteratorPrototypeBuiltins$SetIteratorPrototype extends Enum<SetI
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SetIteratorPrototypeBuiltins$SetIteratorPrototype;
-    static values(): (Object | null)[];
+    static values(): SetIteratorPrototypeBuiltins$SetIteratorPrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

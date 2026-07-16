@@ -8,7 +8,6 @@ import type { JSFunctionObject } from '../../../../../../com/oracle/truffle/js/r
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSFunctionCallNode$InlinedBuiltinFunctionInstanceCacheNode extends JSFunctionCallNode$InlinedBuiltinCallNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(functionObj: JSFunctionObject, callTarget: CallTarget, builtinNode: JSBuiltinNode$Inlined)
     // private functionObj: JSFunctionObject;
     accept(nodeVisitor: NodeVisitor): void;

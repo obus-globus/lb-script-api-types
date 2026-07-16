@@ -15,7 +15,7 @@ export class PKWareExtraHeader$EncryptionAlgorithm extends Enum<PKWareExtraHeade
     static getAlgorithmByCode(paramarg0: number): PKWareExtraHeader$EncryptionAlgorithm;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PKWareExtraHeader$EncryptionAlgorithm;
-    static values(): (Object | null)[];
+    static values(): PKWareExtraHeader$EncryptionAlgorithm[];
     private constructor(arg2: number)
     readonly code: number;
     getCode(): number;

@@ -8,7 +8,7 @@ export class ResourcePackActivationType extends Enum<ResourcePackActivationType>
     static NORMAL: ResourcePackActivationType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ResourcePackActivationType;
-    static values(): (Object | null)[];
+    static values(): ResourcePackActivationType[];
     private constructor(arg2: PackActivationType)
     // private replacement: PackActivationType;
     isEnabledByDefault(): boolean;

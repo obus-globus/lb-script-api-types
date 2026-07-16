@@ -1,10 +1,9 @@
 import type { CounterTracker } from '../../../../../../../com/oracle/truffle/regex/tregex/nodes/dfa/CounterTracker.d.ts'
 import type { CounterTrackerData$Builder } from '../../../../../../../com/oracle/truffle/regex/tregex/nodes/dfa/CounterTrackerData$Builder.d.ts'
 import type { PrimitiveIterator$OfInt } from '../../../../../../../java/util/PrimitiveIterator$OfInt.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class CounterTrackerBitSetWithOffset extends CounterTracker {
     static MAX_BITSET_SIZE: number;
-    static build(paramquantifierBounds: number[], paramtrackerSizes: number[], paramdataBuilder: CounterTrackerData$Builder, paramtrivialAlwaysReEnter: number[], paramtrivialNeverReEnter: number[], paramregressionTestMode: boolean): (Object | null)[];
+    static build(paramquantifierBounds: number[], paramtrackerSizes: number[], paramdataBuilder: CounterTrackerData$Builder, paramtrivialAlwaysReEnter: number[], paramtrivialNeverReEnter: number[], paramregressionTestMode: boolean): CounterTracker[];
     constructor(min: number, max: number, numberOfSets: number, dataBuilder: CounterTrackerData$Builder)
     // private bitsetLength: number;
     // private fixedOffset: number;

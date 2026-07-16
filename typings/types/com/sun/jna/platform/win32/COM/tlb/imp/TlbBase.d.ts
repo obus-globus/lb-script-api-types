@@ -5,8 +5,8 @@ import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 export abstract class TlbBase extends Object {
     static CR: string;
     static CRCR: string;
-    static IDISPATCH_METHODS: (Object | null)[];
-    static IUNKNOWN_METHODS: (Object | null)[];
+    static IDISPATCH_METHODS: string[];
+    static IUNKNOWN_METHODS: string[];
     static TAB: string;
     static TABTAB: string;
     constructor(arg0: number, arg1: TypeLibUtil, arg2: TypeInfoUtil)

@@ -12,7 +12,6 @@ export class FurnaceRecipeDisplay extends Record implements RecipeDisplay {
     static CODEC: Codec<RecipeDisplay>;
     static MAP_CODEC: MapCodec<FurnaceRecipeDisplay>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, FurnaceRecipeDisplay>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, RecipeDisplay>;
     static TYPE: RecipeDisplay$Type<FurnaceRecipeDisplay>;
     constructor(ingredient: SlotDisplay, fuel: SlotDisplay, result: SlotDisplay, craftingStation: SlotDisplay, duration: number, experience: number)
     // private craftingStation: SlotDisplay;

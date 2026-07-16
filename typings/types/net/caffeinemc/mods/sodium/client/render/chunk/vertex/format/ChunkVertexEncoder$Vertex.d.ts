@@ -2,7 +2,7 @@ import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { ChunkVertexExtension } from '../../../../../../../../../net/irisshaders/iris/vertices/sodium/terrain/ChunkVertexExtension.d.ts'
 export class ChunkVertexEncoder$Vertex extends Object implements ChunkVertexExtension {
     static copyVertexTo(paramarg0: ChunkVertexEncoder$Vertex, paramarg1: ChunkVertexEncoder$Vertex): void;
-    static uninitializedQuad(): (Object | null)[];
+    static uninitializedQuad(): ChunkVertexEncoder$Vertex[];
     static writeVertex(paramarg0: ChunkVertexEncoder$Vertex, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number): void;
     constructor()
     ao: number;

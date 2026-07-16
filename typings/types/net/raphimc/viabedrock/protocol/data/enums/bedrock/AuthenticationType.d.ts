@@ -7,7 +7,7 @@ export class AuthenticationType extends Enum<AuthenticationType> {
     static SelfSigned: AuthenticationType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AuthenticationType;
-    static values(): (Object | null)[];
+    static values(): AuthenticationType[];
     private constructor()
     name(): "Full" | "Guest" | "SelfSigned";
 }

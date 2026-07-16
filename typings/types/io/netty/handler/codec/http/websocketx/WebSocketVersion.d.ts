@@ -10,7 +10,7 @@ export class WebSocketVersion extends Enum<WebSocketVersion> {
     static V13: WebSocketVersion;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): WebSocketVersion;
-    static values(): (Object | null)[];
+    static values(): WebSocketVersion[];
     private constructor(arg2: AsciiString)
     // private headerValue: AsciiString;
     toAsciiString(): AsciiString;

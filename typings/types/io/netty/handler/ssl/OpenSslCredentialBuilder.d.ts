@@ -4,7 +4,7 @@ import type { PrivateKey } from '../../../../java/security/PrivateKey.d.ts'
 import type { X509Certificate } from '../../../../java/security/cert/X509Certificate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class OpenSslCredentialBuilder extends Object {
-    static forX509(paramarg0: PrivateKey, ...paramarg1: (Object | null)[]): OpenSslCredentialBuilder;
+    static forX509(paramarg0: PrivateKey, ...paramarg1: X509Certificate[]): OpenSslCredentialBuilder;
     private constructor(arg0: OpenSslPrivateKey, arg1: X509Certificate[])
     private constructor(arg0: PrivateKey, arg1: X509Certificate[])
     // private certificateChain: X509Certificate[];

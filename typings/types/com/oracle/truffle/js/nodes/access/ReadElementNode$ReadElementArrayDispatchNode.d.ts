@@ -8,7 +8,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ReadElementNode$ReadElementArrayDispatchNode extends JavaScriptBaseNode {
     static create(): ReadElementNode$ReadElementArrayDispatchNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doDispatch(target: JSDynamicObject, arrayType: ScriptArray, index: number, receiver: Object, defaultValue: Object, context: JSContext, dispatcher: ReadElementNode$ArrayReadElementCacheDispatchNode): Object;
     executeArrayGet(target: JSDynamicObject, array: ScriptArray, index: number, receiver: Object, defaultValue: Object, context: JSContext): Object;

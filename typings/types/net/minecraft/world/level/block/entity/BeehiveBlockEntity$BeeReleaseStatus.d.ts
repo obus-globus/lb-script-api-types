@@ -7,7 +7,7 @@ export class BeehiveBlockEntity$BeeReleaseStatus extends Enum<BeehiveBlockEntity
     static HONEY_DELIVERED: BeehiveBlockEntity$BeeReleaseStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): BeehiveBlockEntity$BeeReleaseStatus;
-    static values(): (Object | null)[];
+    static values(): BeehiveBlockEntity$BeeReleaseStatus[];
     private constructor()
     name(): "HONEY_DELIVERED" | "BEE_RELEASED" | "EMERGENCY";
 }

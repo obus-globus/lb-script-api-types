@@ -8,7 +8,7 @@ export class SodiumQuadAtlas extends Enum<SodiumQuadAtlas> {
     static of(paramarg0: Identifier): SodiumQuadAtlas;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SodiumQuadAtlas;
-    static values(): (Object | null)[];
+    static values(): SodiumQuadAtlas[];
     private constructor()
     name(): "BLOCK" | "ITEM";
 }

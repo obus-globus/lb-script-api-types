@@ -9,7 +9,7 @@ export class Declaration$DeclarationType extends Enum<Declaration$DeclarationTyp
     static VARIABLE: Declaration$DeclarationType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Declaration$DeclarationType;
-    static values(): (Object | null)[];
+    static values(): Declaration$DeclarationType[];
     private constructor()
     name(): "FUNCTION" | "TYPE_AND_INIT" | "PRECISION" | "INTERFACE_BLOCK" | "VARIABLE";
 }

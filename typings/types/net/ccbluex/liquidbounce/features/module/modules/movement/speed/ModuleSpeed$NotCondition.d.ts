@@ -16,7 +16,7 @@ export class ModuleSpeed$NotCondition extends Enum<ModuleSpeed$NotCondition> imp
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleSpeed$NotCondition;
-    static values(): (Object | null)[];
+    static values(): ModuleSpeed$NotCondition[];
     private constructor(tag: string, condition: () => boolean)
     readonly condition: () => boolean;
     readonly tag: string;

@@ -4,6 +4,7 @@ import type { EventListener } from '../../../../../../../../../net/ccbluex/liqui
 import type { GameTickEvent } from '../../../../../../../../../net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts'
 import type { PacketEvent } from '../../../../../../../../../net/ccbluex/liquidbounce/event/events/PacketEvent.d.ts'
 import type { WorldChangeEvent } from '../../../../../../../../../net/ccbluex/liquidbounce/event/events/WorldChangeEvent.d.ts'
+import type { Component } from '../../../../../../../../../net/minecraft/network/chat/Component.d.ts'
 /**
  * Can be implemented to handle actions after crystals got attacked.
  *
@@ -13,8 +14,10 @@ export abstract class CrystalPostAttackTracker extends Object implements EventLi
     constructor()
     // private attackedIds: { [key: string]: any };
     // private /*not mapped: */ getAttackedIds(): { [key: string]: any };
+    readonly debugDisplayName: Component;
     // private explodeListener: EventHook<PacketEvent>;
     // private repeatable: EventHook<GameTickEvent>;
+    readonly running: boolean;
     // private worldChangeHandler: EventHook<WorldChangeEvent>;
     /**
      * Show be called when the crystal aura attacks.

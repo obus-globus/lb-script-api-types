@@ -7,7 +7,7 @@ export class ItemFunction extends Enum<ItemFunction> {
     static getEntries(): ItemFunction[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ItemFunction;
-    static values(): (Object | null)[];
+    static values(): ItemFunction[];
     private constructor()
     name(): "WEAPON_LIKE" | "FOOD";
 }

@@ -4,12 +4,12 @@ import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class Object2ObjectOpenHashMap$MapEntry extends Object implements Pair<K, V>, Object2ObjectMap$Entry<K, V>, Map$Entry<K, V> {
-    static comparingByKey(): (param0: Object) => boolean;
-    static comparingByKey(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
-    static comparingByValue(): (param0: Object) => boolean;
-    static comparingByValue(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
+    static comparingByKey(): (param0: Map$Entry<Object, Object>, param1: Map$Entry<Object, Object>) => number;
+    static comparingByKey(paramarg0: (param0: Object, param1: Object) => number): (param0: Map$Entry<Object, Object>, param1: Map$Entry<Object, Object>) => number;
+    static comparingByValue(): (param0: Map$Entry<Object, Object>, param1: Map$Entry<Object, Object>) => number;
+    static comparingByValue(paramarg0: (param0: Object, param1: Object) => number): (param0: Map$Entry<Object, Object>, param1: Map$Entry<Object, Object>) => number;
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
-    static lexComparator(): (param0: Object) => boolean;
+    static lexComparator(): (param0: Pair<Object, Object>, param1: Pair<Object, Object>) => number;
     static of(paramarg0: Object | null, paramarg1: Object | null): Pair<Object, Object>;
     constructor(null_: Map<Object, Object>)
     constructor(null_: Map<Object, Object>, arg1: number)

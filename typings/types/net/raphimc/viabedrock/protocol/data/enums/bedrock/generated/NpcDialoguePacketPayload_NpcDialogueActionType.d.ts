@@ -10,7 +10,7 @@ export class NpcDialoguePacketPayload_NpcDialogueActionType extends Enum<NpcDial
     static getByValue(paramarg0: number, paramarg1: NpcDialoguePacketPayload_NpcDialogueActionType): NpcDialoguePacketPayload_NpcDialogueActionType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): NpcDialoguePacketPayload_NpcDialogueActionType;
-    static values(): (Object | null)[];
+    static values(): NpcDialoguePacketPayload_NpcDialogueActionType[];
     private constructor(arg2: number)
     private constructor(arg2: NpcDialoguePacketPayload_NpcDialogueActionType)
     readonly value: number;

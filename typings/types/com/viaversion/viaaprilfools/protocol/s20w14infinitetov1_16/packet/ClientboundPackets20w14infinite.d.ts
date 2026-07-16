@@ -100,7 +100,7 @@ export class ClientboundPackets20w14infinite extends Enum<ClientboundPackets20w1
     static UPDATE_TAGS: ClientboundPackets20w14infinite;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClientboundPackets20w14infinite;
-    static values(): (Object | null)[];
+    static values(): ClientboundPackets20w14infinite[];
     private constructor()
     direction(): Direction;
     getId(): number;

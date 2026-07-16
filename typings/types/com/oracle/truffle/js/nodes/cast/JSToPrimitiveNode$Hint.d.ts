@@ -8,7 +8,7 @@ export class JSToPrimitiveNode$Hint extends Enum<JSToPrimitiveNode$Hint> {
     static String: JSToPrimitiveNode$Hint;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): JSToPrimitiveNode$Hint;
-    static values(): (Object | null)[];
+    static values(): JSToPrimitiveNode$Hint[];
     private constructor(hintName: TruffleString)
     readonly hintName: TruffleString;
     getHintName(): TruffleString;

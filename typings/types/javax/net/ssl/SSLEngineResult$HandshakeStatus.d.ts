@@ -10,7 +10,7 @@ export class SSLEngineResult$HandshakeStatus extends Enum<SSLEngineResult$Handsh
     static NOT_HANDSHAKING: SSLEngineResult$HandshakeStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SSLEngineResult$HandshakeStatus;
-    static values(): (Object | null)[];
+    static values(): SSLEngineResult$HandshakeStatus[];
     private constructor()
     name(): "NOT_HANDSHAKING" | "FINISHED" | "NEED_TASK" | "NEED_WRAP" | "NEED_UNWRAP" | "NEED_UNWRAP_AGAIN";
 }

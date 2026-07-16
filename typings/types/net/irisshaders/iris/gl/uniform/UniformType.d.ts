@@ -14,7 +14,7 @@ export class UniformType extends Enum<UniformType> {
     static VEC4I: UniformType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): UniformType;
-    static values(): (Object | null)[];
+    static values(): UniformType[];
     private constructor()
     name(): "INT" | "FLOAT" | "MAT3" | "MAT4" | "VEC2" | "VEC2I" | "VEC3" | "VEC3I" | "VEC4" | "VEC4I";
 }

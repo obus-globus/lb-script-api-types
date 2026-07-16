@@ -23,28 +23,21 @@ export class VkPhysicalDeviceRobustness2FeaturesEXT extends VkPhysicalDeviceRobu
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceRobustness2FeaturesKHR;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceRobustness2FeaturesKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceRobustness2FeaturesEXT;
     static create(paramarg0: number): VkPhysicalDeviceRobustness2FeaturesEXT;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceRobustness2FeaturesKHR;
     static create(paramarg0: number): VkPhysicalDeviceRobustness2FeaturesKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceRobustness2FeaturesEXT;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceRobustness2FeaturesKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceRobustness2FeaturesEXT;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceRobustness2FeaturesEXT;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceRobustness2FeaturesKHR;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceRobustness2FeaturesKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nnullDescriptor(paramarg0: number): number;
     static nnullDescriptor(paramarg0: number, paramarg1: number): void;
     static npNext(paramarg0: number): number;
@@ -55,7 +48,6 @@ export class VkPhysicalDeviceRobustness2FeaturesEXT extends VkPhysicalDeviceRobu
     static nrobustImageAccess2(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

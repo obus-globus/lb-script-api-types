@@ -8,7 +8,7 @@ export class SocksResponseType extends Enum<SocksResponseType> {
     static UNKNOWN: SocksResponseType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SocksResponseType;
-    static values(): (Object | null)[];
+    static values(): SocksResponseType[];
     private constructor()
     name(): "INIT" | "AUTH" | "CMD" | "UNKNOWN";
 }

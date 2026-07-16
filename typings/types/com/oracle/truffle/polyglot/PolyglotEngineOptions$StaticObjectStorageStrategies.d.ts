@@ -7,7 +7,7 @@ export class PolyglotEngineOptions$StaticObjectStorageStrategies extends Enum<Po
     static FIELD_BASED: PolyglotEngineOptions$StaticObjectStorageStrategies;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PolyglotEngineOptions$StaticObjectStorageStrategies;
-    static values(): (Object | null)[];
+    static values(): PolyglotEngineOptions$StaticObjectStorageStrategies[];
     private constructor()
     name(): "DEFAULT" | "ARRAY_BASED" | "FIELD_BASED";
 }

@@ -7,7 +7,7 @@ export class ChestDialogStorage$Phase extends Enum<ChestDialogStorage$Phase> {
     static WAITING_FOR_RESPONSE: ChestDialogStorage$Phase;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ChestDialogStorage$Phase;
-    static values(): (Object | null)[];
+    static values(): ChestDialogStorage$Phase[];
     private constructor()
     name(): "DIALOG_VIEW" | "ANVIL_VIEW" | "WAITING_FOR_RESPONSE";
 }

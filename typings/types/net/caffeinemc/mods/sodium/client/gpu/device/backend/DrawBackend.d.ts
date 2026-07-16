@@ -8,7 +8,7 @@ export class DrawBackend extends Enum<DrawBackend> {
     static VK_MULTIDRAW: DrawBackend;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DrawBackend;
-    static values(): (Object | null)[];
+    static values(): DrawBackend[];
     private constructor()
     name(): "OPENGL" | "VK_MULTIDRAW" | "VK_INDIRECT";
 }

@@ -17,7 +17,6 @@ export class SlotDisplay$TagSlotDisplay extends Record implements SlotDisplay {
     static CODEC: Codec<SlotDisplay>;
     static MAP_CODEC: MapCodec<SlotDisplay$TagSlotDisplay>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, SlotDisplay$TagSlotDisplay>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, SlotDisplay>;
     static TYPE: SlotDisplay$Type<SlotDisplay$TagSlotDisplay>;
     constructor(tag: TagKey<Item>)
     // private tag: TagKey<Item>;

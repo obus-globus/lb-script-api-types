@@ -11,7 +11,7 @@ export class PragmaDirective$PragmaState extends Enum<PragmaDirective$PragmaStat
     static fromToken(paramarg0: Token): PragmaDirective$PragmaState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PragmaDirective$PragmaState;
-    static values(): (Object | null)[];
+    static values(): PragmaDirective$PragmaState[];
     private constructor(arg2: number)
     readonly tokenType: number;
     getTokenType(): number;

@@ -4,7 +4,6 @@ import type { ForEachIndexCallNode$MaybeResult } from '../../../../../../com/ora
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ForEachIndexCallNode$MaybeResultNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     apply(index: number, value: Object, callbackResult: Object, currentResult: Object): ForEachIndexCallNode$MaybeResult<Object>;
 }

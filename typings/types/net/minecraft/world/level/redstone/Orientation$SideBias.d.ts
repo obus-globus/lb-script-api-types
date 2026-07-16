@@ -6,7 +6,7 @@ export class Orientation$SideBias extends Enum<Orientation$SideBias> {
     static RIGHT: Orientation$SideBias;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Orientation$SideBias;
-    static values(): (Object | null)[];
+    static values(): Orientation$SideBias[];
     private constructor(name: string)
     // private name: string;
     getOpposite(): Orientation$SideBias;

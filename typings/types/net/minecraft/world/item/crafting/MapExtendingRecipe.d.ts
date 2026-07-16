@@ -18,7 +18,6 @@ export class MapExtendingRecipe extends CustomRecipe {
     static MAP_CODEC: MapCodec<MapExtendingRecipe>;
     static SERIALIZER: RecipeSerializer<MapExtendingRecipe>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, MapExtendingRecipe>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<any>>;
     constructor(map: Ingredient, material: Ingredient, result: ItemStackTemplate)
     // private map: Ingredient;
     // private material: Ingredient;

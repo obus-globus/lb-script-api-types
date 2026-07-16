@@ -8,7 +8,7 @@ export class LanguageConfidence extends Enum<LanguageConfidence> {
     static NONE: LanguageConfidence;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LanguageConfidence;
-    static values(): (Object | null)[];
+    static values(): LanguageConfidence[];
     private constructor()
     name(): "HIGH" | "MEDIUM" | "LOW" | "NONE";
 }

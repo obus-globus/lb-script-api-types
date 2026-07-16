@@ -31,28 +31,21 @@ export class VkBufferMemoryBarrier2KHR extends VkBufferMemoryBarrier2 {
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkBufferMemoryBarrier2KHR;
     static calloc(paramarg0: MemoryStack): VkBufferMemoryBarrier2KHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkBufferMemoryBarrier2;
     static create(paramarg0: number): VkBufferMemoryBarrier2;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkBufferMemoryBarrier2KHR;
     static create(paramarg0: number): VkBufferMemoryBarrier2KHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkBufferMemoryBarrier2;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkBufferMemoryBarrier2KHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkBufferMemoryBarrier2;
     static malloc(paramarg0: MemoryStack): VkBufferMemoryBarrier2;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkBufferMemoryBarrier2KHR;
     static malloc(paramarg0: MemoryStack): VkBufferMemoryBarrier2KHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nbuffer(paramarg0: number): number;
     static nbuffer(paramarg0: number, paramarg1: number): void;
     static ndstAccessMask(paramarg0: number): number;
@@ -75,7 +68,6 @@ export class VkBufferMemoryBarrier2KHR extends VkBufferMemoryBarrier2 {
     static nsrcQueueFamilyIndex(paramarg0: number, paramarg1: number): void;
     static nsrcStageMask(paramarg0: number): number;
     static nsrcStageMask(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

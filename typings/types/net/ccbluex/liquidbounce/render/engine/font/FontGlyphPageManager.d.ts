@@ -10,9 +10,11 @@ import type { GlyphIdentifier } from '../../../../../../net/ccbluex/liquidbounce
 import type { StaticGlyphPage } from '../../../../../../net/ccbluex/liquidbounce/render/engine/font/StaticGlyphPage.d.ts'
 import type { DynamicFontCacheManager } from '../../../../../../net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicFontCacheManager.d.ts'
 import type { DynamicGlyphPage } from '../../../../../../net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.d.ts'
+import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
 export class FontGlyphPageManager extends Object implements AutoCloseable, EventListener {
     constructor(baseFonts: FontFace[], fallbackFonts: FontFace[])
     // private closed: boolean;
+    readonly debugDisplayName: Component;
     // private dynamicFontManager: DynamicFontCacheManager;
     // private dynamicPage: DynamicGlyphPage;
     // private dynamicallyLoadedGlyphs: Map<GlyphIdentifier, GlyphDescriptor>;
@@ -20,6 +22,7 @@ export class FontGlyphPageManager extends Object implements AutoCloseable, Event
     // private fallbackGlyphs: Map<FontFace, GlyphDescriptor>;
     // private registeredFonts: FontFace[];
     // private renderHandler: EventHook<GameRenderEvent>;
+    readonly running: boolean;
     // private staticGlyphs: Map<FontId, { [key: string]: any }>;
     // private staticPage: StaticGlyphPage[];
     children(): EventListener[];

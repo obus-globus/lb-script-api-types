@@ -7,7 +7,7 @@ export class LSTMBreakEngine$EmbeddingType extends Enum<LSTMBreakEngine$Embeddin
     static UNKNOWN: LSTMBreakEngine$EmbeddingType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LSTMBreakEngine$EmbeddingType;
-    static values(): (Object | null)[];
+    static values(): LSTMBreakEngine$EmbeddingType[];
     private constructor()
     name(): "UNKNOWN" | "CODE_POINTS" | "GRAPHEME_CLUSTER";
 }

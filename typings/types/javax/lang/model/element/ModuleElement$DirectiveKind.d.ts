@@ -9,7 +9,7 @@ export class ModuleElement$DirectiveKind extends Enum<ModuleElement$DirectiveKin
     static USES: ModuleElement$DirectiveKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleElement$DirectiveKind;
-    static values(): (Object | null)[];
+    static values(): ModuleElement$DirectiveKind[];
     private constructor()
     name(): "REQUIRES" | "EXPORTS" | "OPENS" | "USES" | "PROVIDES";
 }

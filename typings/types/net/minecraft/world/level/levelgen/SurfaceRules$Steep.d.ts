@@ -12,7 +12,7 @@ export class SurfaceRules$Steep extends Enum<SurfaceRules$Steep> implements Surf
     static bootstrap(paramregistry: MapCodec<SurfaceRules$ConditionSource>[]): MapCodec<SurfaceRules$ConditionSource>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SurfaceRules$Steep;
-    static values(): (Object | null)[];
+    static values(): SurfaceRules$Steep[];
     private constructor()
     apply(context: SurfaceRules$Context): SurfaceRules$Condition;
     codec(): MapCodec<SurfaceRules$Steep>;

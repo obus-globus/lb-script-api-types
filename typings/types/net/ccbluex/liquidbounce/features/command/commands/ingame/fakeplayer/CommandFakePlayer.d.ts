@@ -8,6 +8,7 @@ import type { Command } from '../../../../../../../../net/ccbluex/liquidbounce/f
 import type { Command$Factory } from '../../../../../../../../net/ccbluex/liquidbounce/features/command/Command$Factory.d.ts'
 import type { FakePlayer } from '../../../../../../../../net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/FakePlayer.d.ts'
 import type { PosPoseSnapshot } from '../../../../../../../../net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/PosPoseSnapshot.d.ts'
+import type { Component } from '../../../../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { LivingEntity } from '../../../../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 /**
  * Fake Player Command
@@ -19,10 +20,12 @@ import type { LivingEntity } from '../../../../../../../../net/minecraft/world/e
 export class CommandFakePlayer extends Object implements EventListener, Command$Factory {
     static INSTANCE: CommandFakePlayer;
     // private attackHandler: EventHook<AttackEntityEvent>;
+    readonly debugDisplayName: Component;
     readonly explosionHandler: EventHook<PacketEvent>;
     // private fakePlayerId: number;
     // private fakePlayers: FakePlayer[];
     // private recording: boolean;
+    readonly running: boolean;
     // private snapshots: PosPoseSnapshot[];
     /**
      * Recordings are made in the tick event handler.

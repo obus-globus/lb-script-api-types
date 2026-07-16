@@ -7,7 +7,7 @@ export class AuthorizationResult$AuthorizationStatus extends Enum<AuthorizationR
     static UnknownError: AuthorizationResult$AuthorizationStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AuthorizationResult$AuthorizationStatus;
-    static values(): (Object | null)[];
+    static values(): AuthorizationResult$AuthorizationStatus[];
     private constructor()
     name(): "Success" | "ProtocolError" | "UnknownError";
 }

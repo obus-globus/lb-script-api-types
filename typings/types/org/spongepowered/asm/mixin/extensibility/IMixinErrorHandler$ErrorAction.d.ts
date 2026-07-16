@@ -8,7 +8,7 @@ export class IMixinErrorHandler$ErrorAction extends Enum<IMixinErrorHandler$Erro
     static WARN: IMixinErrorHandler$ErrorAction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): IMixinErrorHandler$ErrorAction;
-    static values(): (Object | null)[];
+    static values(): IMixinErrorHandler$ErrorAction[];
     private constructor(arg2: Level)
     logLevel: Level;
     name(): "NONE" | "WARN" | "ERROR";

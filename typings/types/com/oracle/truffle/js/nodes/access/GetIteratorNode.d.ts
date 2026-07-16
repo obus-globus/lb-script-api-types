@@ -7,7 +7,6 @@ export abstract class GetIteratorNode extends JavaScriptBaseNode {
     static create(): GetIteratorNode;
     static getUncached(): GetIteratorNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     createIteratorMethodNode(): GetMethodNode;
     execute(node: Node, iteratedObject: Object): IteratorRecord;

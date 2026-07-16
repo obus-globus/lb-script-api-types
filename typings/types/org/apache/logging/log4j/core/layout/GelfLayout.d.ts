@@ -12,7 +12,7 @@ import type { ListChecker } from '../../../../../../org/apache/logging/log4j/cor
 import type { KeyValuePair } from '../../../../../../org/apache/logging/log4j/core/util/KeyValuePair.d.ts'
 export class GelfLayout extends AbstractStringLayout {
     static ELEMENT_TYPE: string;
-    static createLayout(paramhost: string, paramadditionalFields: (Object | null)[], paramcompressionType: GelfLayout$CompressionType, paramcompressionThreshold: number, paramincludeStacktrace: boolean): GelfLayout;
+    static createLayout(paramhost: string, paramadditionalFields: KeyValuePair[], paramcompressionType: GelfLayout$CompressionType, paramcompressionThreshold: number, paramincludeStacktrace: boolean): GelfLayout;
     static newBuilder(): Object | null;
     constructor(host: string, additionalFields: KeyValuePair[], compressionType: GelfLayout$CompressionType, compressionThreshold: number, includeStacktrace: boolean)
     constructor(arg0: Configuration, arg1: string, arg2: KeyValuePair[], arg3: GelfLayout$CompressionType, arg4: number, arg5: boolean, arg6: boolean, arg7: boolean, arg8: boolean, arg9: boolean, arg10: boolean, arg11: ListChecker, arg12: ListChecker, arg13: PatternLayout, arg14: string, arg15: string, arg16: any)

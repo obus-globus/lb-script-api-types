@@ -1,4 +1,3 @@
-import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { RandomSource } from '../../../../../../../net/minecraft/util/RandomSource.d.ts'
@@ -12,7 +11,6 @@ import type { RuleBasedStateProvider$Builder } from '../../../../../../../net/mi
 import type { RuleBasedStateProvider$Rule } from '../../../../../../../net/minecraft/world/level/levelgen/feature/stateproviders/RuleBasedStateProvider$Rule.d.ts'
 import type { SimpleStateProvider } from '../../../../../../../net/minecraft/world/level/levelgen/feature/stateproviders/SimpleStateProvider.d.ts'
 export class RuleBasedStateProvider extends BlockStateProvider {
-    static CODEC: Codec<BlockStateProvider>;
     static CODEC: MapCodec<RuleBasedStateProvider>;
     static builder(): RuleBasedStateProvider$Builder;
     static builder(paramfallback: BlockStateProvider): RuleBasedStateProvider$Builder;

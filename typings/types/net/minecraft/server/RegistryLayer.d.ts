@@ -10,7 +10,7 @@ export class RegistryLayer extends Enum<RegistryLayer> {
     static createRegistryAccess(): LayeredRegistryAccess<RegistryLayer>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RegistryLayer;
-    static values(): (Object | null)[];
+    static values(): RegistryLayer[];
     private constructor()
     name(): "STATIC" | "WORLDGEN" | "DIMENSIONS" | "RELOADABLE";
 }

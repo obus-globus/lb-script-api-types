@@ -27,7 +27,7 @@ export class TRegexBacktrackingNFAExecutorNode extends TRegexBacktrackerSubExecu
     static CONTINUE_PROBABILITY: number;
     static EXIT_PROBABILITY: number;
     static LATIN1_PROBABILITY: number;
-    static NO_SUB_EXECUTORS: (Object | null)[];
+    static NO_SUB_EXECUTORS: TRegexExecutorBaseNode[];
     static inputIncRaw(paramindex: number, paramoffset: number, paramforward: boolean): number;
     constructor(ast: RegexAST, nfa: PureNFA, numberOfStates: number, numberOfTransitions: number, subExecutors: TRegexExecutorBaseNode[], mustAdvance: boolean, compilationBuffer: CompilationBuffer)
     // private equalsIgnoreCase: (param0: number, param1: number, param2: boolean) => boolean;

@@ -62,7 +62,7 @@ export class GregorianCalendar extends Calendar {
     static ZONE_OFFSET: number;
     static from(paramarg0: ZonedDateTime): GregorianCalendar;
     static getAvailableCalendarTypes(): string[];
-    static getAvailableLocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
     static getInstance(): Calendar;
     static getInstance(paramarg0: Locale): Calendar;
     static getInstance(paramarg0: TimeZone): Calendar;

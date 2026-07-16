@@ -7,7 +7,7 @@ export class NameType extends Enum<NameType> {
     static SEPHARDIC: NameType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): NameType;
-    static values(): (Object | null)[];
+    static values(): NameType[];
     private constructor(arg2: string)
     getName(): string;
     name(): "ASHKENAZI" | "GENERIC" | "SEPHARDIC";

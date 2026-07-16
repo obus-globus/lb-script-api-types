@@ -7,7 +7,7 @@ export class ThreadNameCachingStrategy extends Enum<ThreadNameCachingStrategy> {
     static create(): ThreadNameCachingStrategy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ThreadNameCachingStrategy;
-    static values(): (Object | null)[];
+    static values(): ThreadNameCachingStrategy[];
     constructor(arg2: ThreadNameCachingStrategy)
     getThreadName(): string;
     name(): "CACHED" | "UNCACHED";

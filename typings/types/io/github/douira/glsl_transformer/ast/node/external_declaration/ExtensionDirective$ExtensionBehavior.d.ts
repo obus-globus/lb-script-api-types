@@ -11,7 +11,7 @@ export class ExtensionDirective$ExtensionBehavior extends Enum<ExtensionDirectiv
     static fromToken(paramarg0: Token): ExtensionDirective$ExtensionBehavior;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ExtensionDirective$ExtensionBehavior;
-    static values(): (Object | null)[];
+    static values(): ExtensionDirective$ExtensionBehavior[];
     private constructor(arg2: number)
     readonly tokenType: number;
     getTokenType(): number;

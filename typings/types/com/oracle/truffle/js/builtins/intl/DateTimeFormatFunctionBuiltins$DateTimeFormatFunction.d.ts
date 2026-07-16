@@ -11,7 +11,7 @@ export class DateTimeFormatFunctionBuiltins$DateTimeFormatFunction extends Enum<
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): DateTimeFormatFunctionBuiltins$DateTimeFormatFunction;
-    static values(): (Object | null)[];
+    static values(): DateTimeFormatFunctionBuiltins$DateTimeFormatFunction[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

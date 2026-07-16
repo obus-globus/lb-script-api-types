@@ -9,7 +9,7 @@ export class FormType extends Enum<FormType> {
     static byName(paramarg0: string): FormType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FormType;
-    static values(): (Object | null)[];
+    static values(): FormType[];
     private constructor(arg2: Class<Form>, arg3: string)
     readonly type: Class<Form>;
     getName(): string;

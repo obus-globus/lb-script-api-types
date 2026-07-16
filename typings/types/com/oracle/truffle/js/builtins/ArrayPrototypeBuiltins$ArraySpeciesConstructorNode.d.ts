@@ -16,7 +16,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ArrayPrototypeBuiltins$ArraySpeciesConstructorNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext, paramisTypedArrayImplementation: boolean): ArrayPrototypeBuiltins$ArraySpeciesConstructorNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, isTypedArrayImplementation: boolean)
     // private arrayCreateNode: ArrayCreateNode;
     // private arraySpeciesEmpty: ConditionProfile;

@@ -7,7 +7,7 @@ export class CommandLine$Help$Column$Overflow extends Enum<CommandLine$Help$Colu
     static WRAP: CommandLine$Help$Column$Overflow;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CommandLine$Help$Column$Overflow;
-    static values(): (Object | null)[];
+    static values(): CommandLine$Help$Column$Overflow[];
     private constructor()
     name(): "TRUNCATE" | "SPAN" | "WRAP";
 }

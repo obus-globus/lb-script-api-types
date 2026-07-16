@@ -7,7 +7,7 @@ export class SocksCmdResponseDecoder$State extends Enum<SocksCmdResponseDecoder$
     static READ_CMD_HEADER: SocksCmdResponseDecoder$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SocksCmdResponseDecoder$State;
-    static values(): (Object | null)[];
+    static values(): SocksCmdResponseDecoder$State[];
     private constructor()
     name(): "CHECK_PROTOCOL_VERSION" | "READ_CMD_HEADER" | "READ_CMD_ADDRESS";
 }

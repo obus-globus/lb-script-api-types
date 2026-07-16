@@ -18,7 +18,7 @@ export abstract class Streams$MapWithIndexSpliterator<F extends Spliterator<Obje
     createSplit(from: F, i: number): S;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: R) => void): void;
-    getComparator(): (param0: Object) => boolean;
+    getComparator(): (param0: R, param1: R) => number;
     getExactSizeIfKnown(): number;
     hasCharacteristics(arg0: number): boolean;
     trySplit(): S;

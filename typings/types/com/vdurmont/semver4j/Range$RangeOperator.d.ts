@@ -9,7 +9,7 @@ export class Range$RangeOperator extends Enum<Range$RangeOperator> {
     static LTE: Range$RangeOperator;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Range$RangeOperator;
-    static values(): (Object | null)[];
+    static values(): Range$RangeOperator[];
     private constructor(arg2: string)
     // private s: string;
     asString(): string;

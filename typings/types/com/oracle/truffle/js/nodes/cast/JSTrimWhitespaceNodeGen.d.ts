@@ -7,7 +7,6 @@ export class JSTrimWhitespaceNodeGen extends JSTrimWhitespaceNode {
     static create(): JSTrimWhitespaceNode;
     static getUncached(): JSTrimWhitespaceNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private readRawNode: TruffleString$ReadCharUTF16Node;
     // private state_0_: number;

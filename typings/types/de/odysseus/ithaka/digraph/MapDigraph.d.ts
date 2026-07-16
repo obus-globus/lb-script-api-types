@@ -13,8 +13,8 @@ export class MapDigraph<V extends unknown> extends Object implements Digraph<V> 
     static getMapDigraphFactory(paramarg0: MapDigraph$VertexMapFactory<Object>, paramarg1: MapDigraph$EdgeMapFactory<Object>): DigraphFactory<MapDigraph<Object>>;
     constructor()
     constructor(arg0: MapDigraph$VertexMapFactory<V>, arg1: MapDigraph$EdgeMapFactory<V>)
-    constructor(arg0: (param0: Object) => boolean)
-    constructor(arg0: (param0: Object) => boolean, arg1: (param0: Object) => boolean)
+    constructor(arg0: (param0: V, param1: V) => number)
+    constructor(arg0: (param0: V, param1: V) => number, arg1: (param0: V, param1: V) => number)
     readonly edgeCount: number;
     // private edgeMapFactory: MapDigraph$EdgeMapFactory<V>;
     // private vertexMap: Map<V, { [key: string]: any }>;

@@ -11,7 +11,7 @@ export class UIProfile extends Enum<UIProfile> {
     static getByValue(paramarg0: number, paramarg1: UIProfile): UIProfile;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): UIProfile;
-    static values(): (Object | null)[];
+    static values(): UIProfile[];
     private constructor(arg2: number)
     private constructor(arg2: UIProfile)
     readonly value: number;

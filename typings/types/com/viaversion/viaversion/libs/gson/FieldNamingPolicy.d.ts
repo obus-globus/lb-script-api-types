@@ -13,7 +13,7 @@ export class FieldNamingPolicy extends Enum<FieldNamingPolicy> implements FieldN
     static UPPER_CASE_WITH_UNDERSCORES: FieldNamingPolicy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FieldNamingPolicy;
-    static values(): (Object | null)[];
+    static values(): FieldNamingPolicy[];
     constructor(arg2: FieldNamingPolicy)
     alternateNames(arg0: Field): string[];
     translateName(arg0: Field): string;

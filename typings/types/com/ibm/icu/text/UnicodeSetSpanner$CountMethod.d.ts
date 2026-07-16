@@ -6,7 +6,7 @@ export class UnicodeSetSpanner$CountMethod extends Enum<UnicodeSetSpanner$CountM
     static WHOLE_SPAN: UnicodeSetSpanner$CountMethod;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): UnicodeSetSpanner$CountMethod;
-    static values(): (Object | null)[];
+    static values(): UnicodeSetSpanner$CountMethod[];
     private constructor()
     name(): "WHOLE_SPAN" | "MIN_ELEMENTS";
 }

@@ -6,7 +6,7 @@ export class ServicesKeyType extends Enum<ServicesKeyType> {
     static PROFILE_PROPERTY: ServicesKeyType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ServicesKeyType;
-    static values(): (Object | null)[];
+    static values(): ServicesKeyType[];
     private constructor()
     name(): "PROFILE_PROPERTY" | "PROFILE_KEY";
 }

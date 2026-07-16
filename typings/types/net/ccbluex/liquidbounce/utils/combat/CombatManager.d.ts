@@ -3,6 +3,7 @@ import type { EventHook } from '../../../../../net/ccbluex/liquidbounce/event/Ev
 import type { EventListener } from '../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
 import type { AttackEntityEvent } from '../../../../../net/ccbluex/liquidbounce/event/events/AttackEntityEvent.d.ts'
 import type { GameTickEvent } from '../../../../../net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts'
+import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 /**
  * A rotation manager
  *
@@ -13,11 +14,13 @@ export class CombatManager extends Object implements EventListener {
     static PAUSE_COMBAT: number;
     PAUSE_COMBAT: number;
     readonly attackHandler: EventHook<AttackEntityEvent>;
+    readonly debugDisplayName: Component;
     duringCombat: number;
     /*not mapped: */ isInCombat(): boolean;
     // private pauseBlocking: number;
     // private pauseCombat: number;
     // private pauseRotation: number;
+    readonly running: boolean;
     readonly shouldPauseBlocking: boolean;
     readonly shouldPauseCombat: boolean;
     readonly shouldPauseRotation: boolean;

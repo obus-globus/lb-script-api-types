@@ -1,5 +1,5 @@
 import type { Comparator } from '../../../../../../../../java/util/Comparator.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
+import type { Pair } from '../../../../../../../../kotlin/Pair.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { EventHook } from '../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { CancelBlockBreakingEvent } from '../../../../../../../../net/ccbluex/liquidbounce/event/events/CancelBlockBreakingEvent.d.ts'
@@ -8,6 +8,7 @@ import type { RotationUpdateEvent } from '../../../../../../../../net/ccbluex/li
 import type { ClientModule } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
 import type { ModuleFucker$DestroyAction } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker$DestroyAction.d.ts'
 import type { ModuleFucker$DestroyerTarget } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker$DestroyerTarget.d.ts'
+import type { ModuleFucker$SurroundingInfo } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker$SurroundingInfo.d.ts'
 import type { ModuleFucker$SurroundingPath } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker$SurroundingPath.d.ts'
 import type { RotationsValueGroup } from '../../../../../../../../net/ccbluex/liquidbounce/utils/aiming/RotationsValueGroup.d.ts'
 import type { IsSelfBedMode } from '../../../../../../../../net/ccbluex/liquidbounce/utils/block/bed/IsSelfBedMode.d.ts'
@@ -28,7 +29,7 @@ export class ModuleFucker extends ClientModule {
     static INSTANCE: ModuleFucker;
     // private MAX_SURROUNDING_PATH_BLOCKS: number;
     // private RAYCAST_TARGET_EPSILON: number;
-    // private SURROUNDING_INFO_COMPARATOR: (param0: Object) => boolean;
+    // private SURROUNDING_INFO_COMPARATOR: (param0: ModuleFucker$SurroundingInfo, param1: ModuleFucker$SurroundingInfo) => number;
     // private action: ModuleFucker$DestroyAction;
     // private /*not mapped: */ getAction(): ModuleFucker$DestroyAction;
     // private /*not mapped: */ getAvailableToolSlots(): ItemSlot[];
@@ -36,7 +37,7 @@ export class ModuleFucker extends ClientModule {
     // private cancelBlockBreakingHandler: EventHook<CancelBlockBreakingEvent>;
     // private chestAsFullBlock: boolean;
     // private /*not mapped: */ getChestAsFullBlock(): boolean;
-    // private comparator: (param0: Object) => boolean;
+    // private comparator: (param0: Pair<BlockPos, BlockState>, param1: Pair<BlockPos, BlockState>) => number;
     // private currentTarget: ModuleFucker$DestroyerTarget | null;
     // private delay: number;
     // private /*not mapped: */ getDelay(): number;

@@ -3,7 +3,7 @@ import type { Serializable } from '../../../java/io/Serializable.d.ts'
 import type { Descriptor } from '../../../javax/management/Descriptor.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class OpenType<T extends unknown> extends Object implements Serializable {
-    static ALLOWED_CLASSNAMES: (Object | null)[];
+    static ALLOWED_CLASSNAMES: string[];
     static ALLOWED_CLASSNAMES_LIST: string[];
     constructor(arg0: string, arg1: string, arg2: string)
     constructor(arg0: string, arg1: string, arg2: string, arg3: boolean)

@@ -8,7 +8,7 @@ export class ClientIntent extends Enum<ClientIntent> {
     static byId(paramid: number): ClientIntent;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ClientIntent;
-    static values(): (Object | null)[];
+    static values(): ClientIntent[];
     private constructor()
     id(): number;
     name(): "STATUS" | "LOGIN" | "TRANSFER";

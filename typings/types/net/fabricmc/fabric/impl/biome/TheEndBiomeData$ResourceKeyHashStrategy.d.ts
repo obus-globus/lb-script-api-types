@@ -7,7 +7,7 @@ export class TheEndBiomeData$ResourceKeyHashStrategy extends Enum<TheEndBiomeDat
     static INSTANCE: TheEndBiomeData$ResourceKeyHashStrategy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TheEndBiomeData$ResourceKeyHashStrategy;
-    static values(): (Object | null)[];
+    static values(): TheEndBiomeData$ResourceKeyHashStrategy[];
     private constructor()
     equals(other: Object | null): boolean;
     equals(arg0: Holder<Object>, arg1: Holder<Object>): boolean;

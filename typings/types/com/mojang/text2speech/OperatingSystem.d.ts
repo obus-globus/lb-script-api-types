@@ -9,7 +9,7 @@ export class OperatingSystem extends Enum<OperatingSystem> {
     static get(): OperatingSystem;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): OperatingSystem;
-    static values(): (Object | null)[];
+    static values(): OperatingSystem[];
     private constructor(arg2: string)
     // private detectWith: string;
     name(): "LINUX" | "WINDOWS" | "MAC_OS" | "UNSUPPORTED";

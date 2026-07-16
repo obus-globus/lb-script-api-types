@@ -7,7 +7,7 @@ export class MeasureUnit$Complexity extends Enum<MeasureUnit$Complexity> {
     static SINGLE: MeasureUnit$Complexity;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MeasureUnit$Complexity;
-    static values(): (Object | null)[];
+    static values(): MeasureUnit$Complexity[];
     private constructor()
     name(): "SINGLE" | "COMPOUND" | "MIXED";
 }

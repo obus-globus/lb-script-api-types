@@ -12,7 +12,7 @@ export class GlobalBuiltins$GlobalPrintBuiltins$GlobalPrint extends Enum<GlobalB
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): GlobalBuiltins$GlobalPrintBuiltins$GlobalPrint;
-    static values(): (Object | null)[];
+    static values(): GlobalBuiltins$GlobalPrintBuiltins$GlobalPrint[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

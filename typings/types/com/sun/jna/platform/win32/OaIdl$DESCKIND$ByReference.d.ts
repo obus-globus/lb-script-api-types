@@ -3,7 +3,6 @@ import type { Structure } from '../../../../../com/sun/jna/Structure.d.ts'
 import type { Structure$ByReference } from '../../../../../com/sun/jna/Structure$ByReference.d.ts'
 import type { OaIdl$DESCKIND } from '../../../../../com/sun/jna/platform/win32/OaIdl$DESCKIND.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class OaIdl$DESCKIND$ByReference extends OaIdl$DESCKIND implements Structure$ByReference {
     static ALIGN_DEFAULT: number;
     static ALIGN_GNUC: number;
@@ -15,11 +14,11 @@ export class OaIdl$DESCKIND$ByReference extends OaIdl$DESCKIND implements Struct
     static DESCKIND_NONE: number;
     static DESCKIND_TYPECOMP: number;
     static DESCKIND_VARDESC: number;
-    static autoRead(paramarg0: (Object | null)[]): void;
-    static autoWrite(paramarg0: (Object | null)[]): void;
+    static autoRead(paramarg0: Structure[]): void;
+    static autoWrite(paramarg0: Structure[]): void;
     static createFieldsOrder(paramarg0: string): string[];
-    static createFieldsOrder(...paramarg0: (Object | null)[]): string[];
-    static createFieldsOrder(paramarg0: string[], ...paramarg1: (Object | null)[]): string[];
+    static createFieldsOrder(...paramarg0: string[]): string[];
+    static createFieldsOrder(paramarg0: string[], ...paramarg1: string[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: string[]): string[];
     static newInstance(paramarg0: Class<Structure>): Structure | null;
     static newInstance(paramarg0: Class<Structure>, paramarg1: Pointer): Structure | null;

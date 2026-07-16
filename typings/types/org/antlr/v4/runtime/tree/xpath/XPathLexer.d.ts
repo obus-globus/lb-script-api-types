@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { CharStream } from '../../../../../../org/antlr/v4/runtime/CharStream.d.ts'
 import type { Lexer } from '../../../../../../org/antlr/v4/runtime/Lexer.d.ts'
 import type { Token } from '../../../../../../org/antlr/v4/runtime/Token.d.ts'
@@ -22,9 +21,9 @@ export class XPathLexer extends Lexer {
     static TOKEN_REF: number;
     static VOCABULARY: Vocabulary;
     static WILDCARD: number;
-    static modeNames: (Object | null)[];
-    static ruleNames: (Object | null)[];
-    static tokenNames: (Object | null)[];
+    static modeNames: string[];
+    static ruleNames: string[];
+    static tokenNames: string[];
     constructor(arg0: CharStream)
     charPositionInLine: number;
     line: number;

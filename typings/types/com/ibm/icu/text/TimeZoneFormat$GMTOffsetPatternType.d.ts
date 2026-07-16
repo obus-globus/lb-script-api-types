@@ -10,7 +10,7 @@ export class TimeZoneFormat$GMTOffsetPatternType extends Enum<TimeZoneFormat$GMT
     static POSITIVE_HMS: TimeZoneFormat$GMTOffsetPatternType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TimeZoneFormat$GMTOffsetPatternType;
-    static values(): (Object | null)[];
+    static values(): TimeZoneFormat$GMTOffsetPatternType[];
     private constructor(arg2: string, arg3: string, arg4: boolean)
     // private _defaultPattern: string;
     // private _isPositive: boolean;

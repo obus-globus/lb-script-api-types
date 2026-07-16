@@ -2,7 +2,6 @@ import type { NodeCost } from '../../../../../com/oracle/truffle/api/nodes/NodeC
 import type { Annotation } from '../../../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface NodeInfo extends Annotation, Object{
-    constructor(cost: NodeCost, description: string, language: string, shortName: string)
     /*not mapped: */ cost(): NodeCost;
     /*not mapped: */ description(): string;
     /*not mapped: */ language(): string;

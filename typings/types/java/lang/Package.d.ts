@@ -9,7 +9,7 @@ import type { Annotation } from '../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export class Package extends NamedPackage implements AnnotatedElement {
     static getPackage(paramarg0: string): Package;
-    static getPackages(): (Object | null)[];
+    static getPackages(): Package[];
     constructor(arg0: string, arg1: Module)
     constructor(arg0: string, arg1: string, arg2: string, arg3: string, arg4: string, arg5: string, arg6: string, arg7: URL, arg8: ClassLoader)
     // private packageInfo: Class<Object>;

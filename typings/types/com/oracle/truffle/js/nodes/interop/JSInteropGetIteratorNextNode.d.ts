@@ -11,7 +11,6 @@ import type { IteratorRecord } from '../../../../../../com/oracle/truffle/js/run
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSInteropGetIteratorNextNode extends JSInteropCallNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doDefault(iterator: IteratorRecord, language: JavaScriptLanguage, stopValue: Object, callNode: JSFunctionCallNode, isObjectNode: IsObjectNode, iteratorCompleteNode: IteratorCompleteNode, iteratorValueNode: IteratorValueNode, exportValueNode: ExportValueNode, exceptionBranch: InlinedBranchProfile): Object;
     execute(iterator: IteratorRecord, language: JavaScriptLanguage, stopValue: Object): Object;

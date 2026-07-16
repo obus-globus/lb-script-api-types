@@ -9,7 +9,7 @@ export class ASTInjectionPoint extends Enum<ASTInjectionPoint> {
     static END: ASTInjectionPoint;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ASTInjectionPoint;
-    static values(): (Object | null)[];
+    static values(): ASTInjectionPoint[];
     private constructor()
     checkChildRelevant(arg0: Class<Object>): boolean;
     getInjectionIndex(arg0: TranslationUnit): number;

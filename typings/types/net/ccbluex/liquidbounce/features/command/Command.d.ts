@@ -1,3 +1,4 @@
+import type { GpuDevice } from '../../../../../com/mojang/blaze3d/systems/GpuDevice.d.ts'
 import type { SuggestionsBuilder } from '../../../../../com/mojang/brigadier/suggestion/SuggestionsBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Command$Handler } from '../../../../../net/ccbluex/liquidbounce/features/command/Command$Handler.d.ts'
@@ -5,6 +6,11 @@ import type { CommandManager$TokenizationResult } from '../../../../../net/ccblu
 import type { Parameter } from '../../../../../net/ccbluex/liquidbounce/features/command/Parameter.d.ts'
 import type { DebuggedOwner } from '../../../../../net/ccbluex/liquidbounce/features/misc/DebuggedOwner.d.ts'
 import type { MinecraftShortcuts } from '../../../../../net/ccbluex/liquidbounce/features/module/MinecraftShortcuts.d.ts'
+import type { Minecraft } from '../../../../../net/minecraft/client/Minecraft.d.ts'
+import type { ClientLevel } from '../../../../../net/minecraft/client/multiplayer/ClientLevel.d.ts'
+import type { ClientPacketListener } from '../../../../../net/minecraft/client/multiplayer/ClientPacketListener.d.ts'
+import type { MultiPlayerGameMode } from '../../../../../net/minecraft/client/multiplayer/MultiPlayerGameMode.d.ts'
+import type { LocalPlayer } from '../../../../../net/minecraft/client/player/LocalPlayer.d.ts'
 import type { ClickEvent } from '../../../../../net/minecraft/network/chat/ClickEvent.d.ts'
 import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { HoverEvent } from '../../../../../net/minecraft/network/chat/HoverEvent.d.ts'
@@ -15,16 +21,22 @@ export class Command extends Object implements DebuggedOwner, MinecraftShortcuts
     readonly debugDisplayName: Component;
     readonly description: MutableComponent;
     readonly executable: boolean;
+    readonly gpuDevice: GpuDevice;
     readonly handler: Command$Handler | null;
     index: number;
+    readonly interaction: MultiPlayerGameMode;
+    readonly mc: Minecraft;
     readonly name: string;
+    readonly network: ClientPacketListener;
     readonly parameters: Parameter<Object>[];
     readonly parentCommand: Command | null;
+    readonly player: LocalPlayer;
     readonly requiresIngame: boolean;
     // private subcommandMap: { [key: string]: Command };
     /*not mapped: */ getSubcommandMap$net_ccbluex_liquidbounce(): { [key: string]: Command };
     readonly subcommands: Command[];
     readonly translationBaseKey: string;
+    readonly world: ClientLevel;
     autoComplete(builder: SuggestionsBuilder, tokenizationResult: CommandManager$TokenizationResult, commandIdx: number, isNewParameter: boolean): void;
     // private getParentKeys(currentCommand: Command | null, current: string): string;
     nameAsText(): Component;

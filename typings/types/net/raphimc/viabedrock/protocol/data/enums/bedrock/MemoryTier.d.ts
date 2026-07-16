@@ -9,7 +9,7 @@ export class MemoryTier extends Enum<MemoryTier> {
     static SuperLow: MemoryTier;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MemoryTier;
-    static values(): (Object | null)[];
+    static values(): MemoryTier[];
     private constructor()
     name(): "SuperLow" | "Low" | "Mid" | "High" | "SuperHigh";
 }

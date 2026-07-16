@@ -7,7 +7,6 @@ import type { JSClassProfile } from '../../../../../../com/oracle/truffle/js/run
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ReadElementNode$ToPropertyKeyCachedReadElementTypeCacheNode extends ReadElementNode$GuardedReadElementTypeCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     // private getPropertyCachedNode: CachedGetPropertyNode;
     // private jsclassProfile: JSClassProfile;

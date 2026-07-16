@@ -104,14 +104,14 @@ export class JNIUtil extends Object {
     static SetObjectArrayElement(paramenv: JNI$JNIEnv, paramarray: JNI$JObjectArray, paramindex: number, paramvalue: JNI$JObject): void;
     static SetShortArrayRegion(paramenv: JNI$JNIEnv, paramarray: JNI$JShortArray, paramoffset: number, paramlen: number, parambuff: CShortPointer): void;
     static Throw(paramenv: JNI$JNIEnv, paramthrowable: JNI$JThrowable): void;
-    static arrayCopy(paramjniEnv: JNI$JNIEnv, paramsrc: (Object | null)[], paramsrcPos: number, paramdest: JNI$JBooleanArray, paramdestPos: number, paramlength: number): void;
+    static arrayCopy(paramjniEnv: JNI$JNIEnv, paramsrc: boolean[], paramsrcPos: number, paramdest: JNI$JBooleanArray, paramdestPos: number, paramlength: number): void;
     static arrayCopy(paramjniEnv: JNI$JNIEnv, paramsrc: number[], paramsrcPos: number, paramdest: JNI$JByteArray, paramdestPos: number, paramlength: number): void;
     static arrayCopy(paramjniEnv: JNI$JNIEnv, paramsrc: string[], paramsrcPos: number, paramdest: JNI$JCharArray, paramdestPos: number, paramlength: number): void;
     static arrayCopy(paramjniEnv: JNI$JNIEnv, paramsrc: number[], paramsrcPos: number, paramdest: JNI$JDoubleArray, paramdestPos: number, paramlength: number): void;
     static arrayCopy(paramjniEnv: JNI$JNIEnv, paramsrc: number[], paramsrcPos: number, paramdest: JNI$JFloatArray, paramdestPos: number, paramlength: number): void;
     static arrayCopy(paramjniEnv: JNI$JNIEnv, paramsrc: number[], paramsrcPos: number, paramdest: JNI$JIntArray, paramdestPos: number, paramlength: number): void;
     static arrayCopy(paramjniEnv: JNI$JNIEnv, paramsrc: number[], paramsrcPos: number, paramdest: JNI$JLongArray, paramdestPos: number, paramlength: number): void;
-    static arrayCopy(paramjniEnv: JNI$JNIEnv, paramsrc: JNI$JBooleanArray, paramsrcPos: number, paramdest: (Object | null)[], paramdestPos: number, paramlength: number): void;
+    static arrayCopy(paramjniEnv: JNI$JNIEnv, paramsrc: JNI$JBooleanArray, paramsrcPos: number, paramdest: boolean[], paramdestPos: number, paramlength: number): void;
     static arrayCopy(paramjniEnv: JNI$JNIEnv, paramsrc: JNI$JByteArray, paramsrcPos: number, paramdest: number[], paramdestPos: number, paramlength: number): void;
     static arrayCopy(paramjniEnv: JNI$JNIEnv, paramsrc: JNI$JCharArray, paramsrcPos: number, paramdest: string[], paramdestPos: number, paramlength: number): void;
     static arrayCopy(paramjniEnv: JNI$JNIEnv, paramsrc: JNI$JDoubleArray, paramsrcPos: number, paramdest: number[], paramdestPos: number, paramlength: number): void;
@@ -121,7 +121,7 @@ export class JNIUtil extends Object {
     static arrayCopy(paramjniEnv: JNI$JNIEnv, paramsrc: JNI$JShortArray, paramsrcPos: number, paramdest: number[], paramdestPos: number, paramlength: number): void;
     static arrayCopy(paramjniEnv: JNI$JNIEnv, paramsrc: number[], paramsrcPos: number, paramdest: JNI$JShortArray, paramdestPos: number, paramlength: number): void;
     static attachCurrentThread(paramvm: JNI$JavaVM, paramdaemon: boolean, paramname: string, paramthreadGroup: JNI$JObject): JNI$JNIEnv;
-    static createArray(paramenv: JNI$JNIEnv, parambooleanArray: JNI$JBooleanArray): (Object | null)[];
+    static createArray(paramenv: JNI$JNIEnv, parambooleanArray: JNI$JBooleanArray): boolean[];
     static createArray(paramenv: JNI$JNIEnv, parambyteArray: JNI$JByteArray): number[];
     static createArray(paramenv: JNI$JNIEnv, paramcharArray: JNI$JCharArray): string[];
     static createArray(paramenv: JNI$JNIEnv, paramdoubleArray: JNI$JDoubleArray): number[];
@@ -129,19 +129,19 @@ export class JNIUtil extends Object {
     static createArray(paramenv: JNI$JNIEnv, paramintArray: JNI$JIntArray): number[];
     static createArray(paramenv: JNI$JNIEnv, paramlongArray: JNI$JLongArray): number[];
     static createArray(paramenv: JNI$JNIEnv, paramshortArray: JNI$JShortArray): number[];
-    static createHSArray(paramjniEnv: JNI$JNIEnv, parama: (Object | null)[]): JNI$JBooleanArray;
+    static createHSArray(paramjniEnv: JNI$JNIEnv, parama: boolean[]): JNI$JBooleanArray;
     static createHSArray(paramjniEnv: JNI$JNIEnv, parama: number[]): JNI$JByteArray;
     static createHSArray(paramjniEnv: JNI$JNIEnv, parama: string[]): JNI$JCharArray;
     static createHSArray(paramjniEnv: JNI$JNIEnv, parama: number[]): JNI$JDoubleArray;
     static createHSArray(paramjniEnv: JNI$JNIEnv, parama: number[]): JNI$JFloatArray;
     static createHSArray(paramjniEnv: JNI$JNIEnv, parama: number[]): JNI$JIntArray;
     static createHSArray(paramjniEnv: JNI$JNIEnv, parama: number[]): JNI$JLongArray;
-    static createHSArray(paramjniEnv: JNI$JNIEnv, paramarray: (Object | null)[], paramsourcePosition: number, paramlength: number, paramcomponentTypeBinaryName: string): JNI$JObjectArray;
+    static createHSArray(paramjniEnv: JNI$JNIEnv, paramarray: Object[], paramsourcePosition: number, paramlength: number, paramcomponentTypeBinaryName: string): JNI$JObjectArray;
     static createHSArray(paramjniEnv: JNI$JNIEnv, parama: number[]): JNI$JShortArray;
     static createHSString(paramenv: JNI$JNIEnv, paramstring: string): JNI$JString;
     static createString(paramenv: JNI$JNIEnv, paramhsString: JNI$JString): string;
     static encodeFieldSignature(paramtype: Class<Object>): string;
-    static encodeMethodSignature(paramreturnType: Class<Object>, paramparameterTypes: Object | null): string;
+    static encodeMethodSignature(paramreturnType: Class<Object>, ...paramparameterTypes: Class<Object>[]): string;
     static findClass(paramenv: JNI$JNIEnv, parambinaryName: string): JNI$JClass;
     static findClass(paramenv: JNI$JNIEnv, paramclassLoader: JNI$JObject, parambinaryName: string): JNI$JClass;
     static findClass(paramenv: JNI$JNIEnv, paramclassLoader: JNI$JObject, parambinaryName: string, paramrequired: boolean): JNI$JClass;
@@ -152,7 +152,7 @@ export class JNIUtil extends Object {
     static getInternalName(paramfqn: string): string;
     static getJVMCIClassLoader(paramenv: JNI$JNIEnv): JNI$JObject;
     static getSystemClassLoader(paramenv: JNI$JNIEnv): JNI$JObject;
-    static trace(paramlevel: number, paramformat: string, ...paramargs: (Object | null)[]): void;
+    static trace(paramlevel: number, paramformat: string, ...paramargs: Object[]): void;
     static trace(paramlevel: number, paramthrowable: Throwable): void;
     static tracingAt(paramlevel: number): boolean;
     private constructor()

@@ -12,10 +12,9 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class SwitchNode extends StatementNode implements ResumableNode$WithObjectState {
     static EMPTY: Object;
     static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
-    static create(paramdeclarations: (Object | null)[], paramcaseExpressions: (Object | null)[], paramjumptable: number[], paramstatements: (Object | null)[]): SwitchNode;
+    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
+    static create(paramdeclarations: JavaScriptNode[], paramcaseExpressions: JavaScriptNode[], paramjumptable: number[], paramstatements: JavaScriptNode[]): SwitchNode;
     static findBlockScopeNode(paramnode: Node): Node;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;

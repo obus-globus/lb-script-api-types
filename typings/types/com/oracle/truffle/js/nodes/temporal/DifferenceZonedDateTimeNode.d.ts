@@ -8,7 +8,6 @@ import type { NormalizedDurationRecord } from '../../../../../../com/oracle/truf
 import type { TemporalUtil$Unit } from '../../../../../../com/oracle/truffle/js/runtime/util/TemporalUtil$Unit.d.ts'
 export abstract class DifferenceZonedDateTimeNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     differenceZonedDateTime(ns1: BigInt, ns2: BigInt, timeZone: TruffleString, calendar: TruffleString, largestUnit: TemporalUtil$Unit, startDateTime: JSTemporalPlainDateTimeObject, differenceDateNode: TemporalDifferenceDateNode): NormalizedDurationRecord;
     execute(ns1: BigInt, ns2: BigInt, timeZone: TruffleString, calendar: TruffleString, largestUnit: TemporalUtil$Unit, startDateTime: JSTemporalPlainDateTimeObject): NormalizedDurationRecord;

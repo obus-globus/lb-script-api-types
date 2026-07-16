@@ -4,11 +4,13 @@ import type { SerialDescriptor } from '../../../kotlinx/serialization/descriptor
 import type { CompositeDecoder } from '../../../kotlinx/serialization/encoding/CompositeDecoder.d.ts'
 import type { CompositeDecoder$Companion } from '../../../kotlinx/serialization/encoding/CompositeDecoder$Companion.d.ts'
 import type { Decoder } from '../../../kotlinx/serialization/encoding/Decoder.d.ts'
+import type { SerializersModule } from '../../../kotlinx/serialization/modules/SerializersModule.d.ts'
 export abstract class AbstractDecoder extends Object implements CompositeDecoder, Decoder {
     static Companion: CompositeDecoder$Companion;
     static DECODE_DONE: number;
     static UNKNOWN_NAME: number;
     constructor()
+    /*not mapped: */ getSerializersModule(): SerializersModule;
     beginStructure(descriptor: SerialDescriptor): CompositeDecoder;
     decodeBoolean(): boolean;
     decodeBooleanElement(descriptor: SerialDescriptor, index: number): boolean;

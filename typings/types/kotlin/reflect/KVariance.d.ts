@@ -9,7 +9,7 @@ export class KVariance extends Enum<KVariance> implements Serializable {
     static getEntries(): KVariance[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): KVariance;
-    static values(): (Object | null)[];
+    static values(): KVariance[];
     private constructor()
     name(): "INVARIANT" | "IN" | "OUT";
 }

@@ -9,7 +9,7 @@ export class NFAExport$StateStyle extends Enum<NFAExport$StateStyle> {
     static UN_ANCHORED_INITIAL: NFAExport$StateStyle;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): NFAExport$StateStyle;
-    static values(): (Object | null)[];
+    static values(): NFAExport$StateStyle[];
     private constructor()
     name(): "ANCHORED_INITIAL" | "UN_ANCHORED_INITIAL" | "ANCHORED_FINAL" | "UN_ANCHORED_FINAL" | "REGULAR";
 }

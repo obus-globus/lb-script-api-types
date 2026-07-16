@@ -9,7 +9,7 @@ export class RequireKotlinVersionKind extends Enum<RequireKotlinVersionKind> imp
     static getEntries(): RequireKotlinVersionKind[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RequireKotlinVersionKind;
-    static values(): (Object | null)[];
+    static values(): RequireKotlinVersionKind[];
     private constructor()
     name(): "LANGUAGE_VERSION" | "COMPILER_VERSION" | "API_VERSION";
 }

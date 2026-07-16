@@ -4,7 +4,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class IsCallableNode extends JavaScriptBaseNode {
     static create(): IsCallableNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     executeBoolean(operand: Object): boolean;
 }

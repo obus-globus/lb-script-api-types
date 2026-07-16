@@ -8,7 +8,6 @@ export class MathUtil extends Object {
     static calculateMovementDirections(paramarg0: PlayerAuthInputPacket_InputData[], paramarg1: boolean): Position2f;
     static ceil(paramarg0: number): number;
     static clamp(paramarg0: number, paramarg1: number, paramarg2: number): number;
-    static clamp(paramarg0: number, paramarg1: number, paramarg2: number): number;
     static float2Byte(paramarg0: number): number;
     static floor(paramarg0: number): number;
     static getOrFallback(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): number;

@@ -21,7 +21,7 @@ export class HudElement extends Enum<HudElement> {
     static getByValue(paramarg0: number, paramarg1: HudElement): HudElement;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HudElement;
-    static values(): (Object | null)[];
+    static values(): HudElement[];
     private constructor(arg2: number)
     private constructor(arg2: HudElement)
     readonly value: number;

@@ -4,8 +4,8 @@ import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class IntersectionIterator<T extends unknown> extends AbstractIterator<T> {
-    constructor(firstIterator: Iterator<T>, secondIterator: Iterator<T>, comparator: (param0: Object) => boolean)
-    // private comparator: (param0: Object) => boolean;
+    constructor(firstIterator: Iterator<T>, secondIterator: Iterator<T>, comparator: (param0: T, param1: T) => number)
+    // private comparator: (param0: T, param1: T) => number;
     // private firstIterator: PeekingIterator<T>;
     // private secondIterator: PeekingIterator<T>;
     computeNext(): T;

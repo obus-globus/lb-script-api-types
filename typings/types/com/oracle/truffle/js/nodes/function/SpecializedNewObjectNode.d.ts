@@ -18,7 +18,6 @@ export abstract class SpecializedNewObjectNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext, paramisBuiltin: boolean, paramisConstructor: boolean, paramisGenerator: boolean, paramisAsyncGenerator: boolean, paraminstanceLayout: JSNonProxy): SpecializedNewObjectNode;
     static create(paramfunctionData: JSFunctionData, paraminstanceLayout: JSOrdinary): SpecializedNewObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, isBuiltin: boolean, isConstructor: boolean, isGenerator: boolean, isAsyncGenerator: boolean, instanceLayout: JSNonProxy)
     // private context: JSContext;
     // private getPrototypeNode: JSTargetableNode;

@@ -7,7 +7,7 @@ export class BlockPos$TraversalNodeStatus extends Enum<BlockPos$TraversalNodeSta
     static STOP: BlockPos$TraversalNodeStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): BlockPos$TraversalNodeStatus;
-    static values(): (Object | null)[];
+    static values(): BlockPos$TraversalNodeStatus[];
     private constructor()
     name(): "ACCEPT" | "SKIP" | "STOP";
 }

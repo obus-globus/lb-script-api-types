@@ -8,7 +8,7 @@ import type { LogEventPatternConverter } from '../../../../../../org/apache/logg
 import type { PatternFormatter } from '../../../../../../org/apache/logging/log4j/core/pattern/PatternFormatter.d.ts'
 export class HighlightConverter extends LogEventPatternConverter implements AnsiConverter {
     static CATEGORY: string;
-    static newInstance(paramconfig: Configuration, paramoptions: (Object | null)[]): HighlightConverter;
+    static newInstance(paramconfig: Configuration, paramoptions: string[]): HighlightConverter;
     private constructor(patternFormatters: PatternFormatter[], levelStyles: { [key: string]: string }, noAnsi: boolean)
     // private defaultStyle: string;
     // private levelStyles: { [key: string]: string };

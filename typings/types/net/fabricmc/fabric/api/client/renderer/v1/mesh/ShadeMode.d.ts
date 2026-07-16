@@ -6,7 +6,7 @@ export class ShadeMode extends Enum<ShadeMode> {
     static VANILLA: ShadeMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ShadeMode;
-    static values(): (Object | null)[];
+    static values(): ShadeMode[];
     private constructor()
     name(): "ENHANCED" | "VANILLA";
 }

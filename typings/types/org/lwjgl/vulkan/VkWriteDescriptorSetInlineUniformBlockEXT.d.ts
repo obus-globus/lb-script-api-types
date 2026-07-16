@@ -22,28 +22,21 @@ export class VkWriteDescriptorSetInlineUniformBlockEXT extends VkWriteDescriptor
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkWriteDescriptorSetInlineUniformBlockEXT;
     static calloc(paramarg0: MemoryStack): VkWriteDescriptorSetInlineUniformBlockEXT;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkWriteDescriptorSetInlineUniformBlock;
     static create(paramarg0: number): VkWriteDescriptorSetInlineUniformBlock;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkWriteDescriptorSetInlineUniformBlockEXT;
     static create(paramarg0: number): VkWriteDescriptorSetInlineUniformBlockEXT;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkWriteDescriptorSetInlineUniformBlock;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkWriteDescriptorSetInlineUniformBlockEXT;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkWriteDescriptorSetInlineUniformBlock;
     static malloc(paramarg0: MemoryStack): VkWriteDescriptorSetInlineUniformBlock;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkWriteDescriptorSetInlineUniformBlockEXT;
     static malloc(paramarg0: MemoryStack): VkWriteDescriptorSetInlineUniformBlockEXT;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ndataSize(paramarg0: number): number;
     static ndataSize(paramarg0: number, paramarg1: number): void;
     static npData(paramarg0: number): ByteBuffer;
@@ -52,7 +45,6 @@ export class VkWriteDescriptorSetInlineUniformBlockEXT extends VkWriteDescriptor
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

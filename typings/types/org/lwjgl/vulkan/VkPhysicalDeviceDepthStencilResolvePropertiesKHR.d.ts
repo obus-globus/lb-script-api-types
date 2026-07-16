@@ -24,28 +24,21 @@ export class VkPhysicalDeviceDepthStencilResolvePropertiesKHR extends VkPhysical
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceDepthStencilResolvePropertiesKHR;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceDepthStencilResolvePropertiesKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceDepthStencilResolveProperties;
     static create(paramarg0: number): VkPhysicalDeviceDepthStencilResolveProperties;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceDepthStencilResolvePropertiesKHR;
     static create(paramarg0: number): VkPhysicalDeviceDepthStencilResolvePropertiesKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceDepthStencilResolveProperties;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceDepthStencilResolvePropertiesKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceDepthStencilResolveProperties;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceDepthStencilResolveProperties;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceDepthStencilResolvePropertiesKHR;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceDepthStencilResolvePropertiesKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nindependentResolve(paramarg0: number): number;
     static nindependentResolveNone(paramarg0: number): number;
     static npNext(paramarg0: number): number;
@@ -54,7 +47,6 @@ export class VkPhysicalDeviceDepthStencilResolvePropertiesKHR extends VkPhysical
     static nsType(paramarg0: number, paramarg1: number): void;
     static nsupportedDepthResolveModes(paramarg0: number): number;
     static nsupportedStencilResolveModes(paramarg0: number): number;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

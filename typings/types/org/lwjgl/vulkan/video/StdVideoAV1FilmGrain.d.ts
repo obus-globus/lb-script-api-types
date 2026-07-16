@@ -123,7 +123,6 @@ export class StdVideoAV1FilmGrain extends Struct<StdVideoAV1FilmGrain> implement
     static npoint_y_value(paramarg0: number, paramarg1: number, paramarg2: number): void;
     static npoint_y_value(paramarg0: number, paramarg1: ByteBuffer): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     ar_coeff_lag(): number;

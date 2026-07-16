@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSLoadNode extends JavaScriptBaseNode {
     static create(): JSLoadNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     executeLoad(source: Source, realm: JSRealm): Object;
 }

@@ -14,7 +14,7 @@ export class Severity extends Enum<Severity> {
     static getSeverity(paramlevel: Level): Severity;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Severity;
-    static values(): (Object | null)[];
+    static values(): Severity[];
     private constructor(code: number)
     readonly code: number;
     getCode(): number;

@@ -7,7 +7,7 @@ export class FriendsErrorStatus extends Enum<FriendsErrorStatus> {
     static UNKNOWN_PROFILE: FriendsErrorStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FriendsErrorStatus;
-    static values(): (Object | null)[];
+    static values(): FriendsErrorStatus[];
     private constructor()
     name(): "UNKNOWN_PROFILE" | "CANNOT_ADD_SELF" | "DUPLICATED_PROFILES";
 }

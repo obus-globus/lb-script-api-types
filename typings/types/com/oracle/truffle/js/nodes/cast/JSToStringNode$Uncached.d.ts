@@ -8,7 +8,6 @@ export class JSToStringNode$Uncached extends JSToStringNode {
     static createUndefinedToEmpty(): JSToStringNode;
     static getUncached(): JSToStringNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     executeString(operand: Object): TruffleString;
 }

@@ -8,8 +8,8 @@ export class DiskLruCache$Editor extends Object {
     // private done: boolean;
     // private entry: DiskLruCache$Entry;
     /*not mapped: */ getEntry$okhttp(): DiskLruCache$Entry;
-    // private written: (Object | null)[] | null;
-    /*not mapped: */ getWritten$okhttp(): (Object | null)[] | null;
+    // private written: boolean[] | null;
+    /*not mapped: */ getWritten$okhttp(): boolean[] | null;
     abort(): void;
     commit(): void;
     detach(): void;

@@ -1,7 +1,7 @@
 import type { CounterTrackerData$Builder } from '../../../../../../../com/oracle/truffle/regex/tregex/nodes/dfa/CounterTrackerData$Builder.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export abstract class CounterTracker extends Object {
-    static build(paramquantifierBounds: number[], paramtrackerSizes: number[], paramdataBuilder: CounterTrackerData$Builder, paramtrivialAlwaysReEnter: number[], paramtrivialNeverReEnter: number[], paramregressionTestMode: boolean): (Object | null)[];
+    static build(paramquantifierBounds: number[], paramtrackerSizes: number[], paramdataBuilder: CounterTrackerData$Builder, paramtrivialAlwaysReEnter: number[], paramtrivialNeverReEnter: number[], paramregressionTestMode: boolean): CounterTracker[];
     constructor()
     anyGeMin(sId: number, fixedData: number[], intArrays: number[][]): boolean;
     anyLtMax(sId: number, fixedData: number[], intArrays: number[][]): boolean;

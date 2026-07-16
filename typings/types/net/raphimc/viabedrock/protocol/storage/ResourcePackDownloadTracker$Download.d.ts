@@ -3,12 +3,12 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ResourcePack } from '../../../../../net/raphimc/viabedrock/api/resourcepack/ResourcePack.d.ts'
 import type { PackType } from '../../../../../net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/PackType.d.ts'
 export class ResourcePackDownloadTracker$Download extends Record {
-    constructor(hash: number[], premium: boolean, type: PackType, chunkSize: number, receivedChunks: (Object | null)[], data: number[])
+    constructor(hash: number[], premium: boolean, type: PackType, chunkSize: number, receivedChunks: boolean[], data: number[])
     // private chunkSize: number;
     // private data: number[];
     // private hash: number[];
     // private premium: boolean;
-    // private receivedChunks: (Object | null)[];
+    // private receivedChunks: boolean[];
     // private type: PackType;
     chunkSize(): number;
     data(): number[];
@@ -18,7 +18,7 @@ export class ResourcePackDownloadTracker$Download extends Record {
     hashCode(): number;
     premium(): boolean;
     processDataChunk(arg0: number, arg1: number[]): ResourcePack;
-    receivedChunks(): (Object | null)[];
+    receivedChunks(): boolean[];
     toString(): string;
     type(): PackType;
 }

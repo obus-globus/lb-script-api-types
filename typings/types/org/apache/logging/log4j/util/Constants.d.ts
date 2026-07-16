@@ -1,7 +1,7 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Constants extends Object {
     static EMPTY_BYTE_ARRAY: number[];
-    static EMPTY_OBJECT_ARRAY: (Object | null)[];
+    static EMPTY_OBJECT_ARRAY: Object[];
     static ENABLE_THREADLOCALS: boolean;
     static IS_WEB_APP: boolean;
     static JAVA_MAJOR_VERSION: number;

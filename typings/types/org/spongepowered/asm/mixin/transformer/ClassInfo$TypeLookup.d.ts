@@ -6,7 +6,7 @@ export class ClassInfo$TypeLookup extends Enum<ClassInfo$TypeLookup> {
     static ELEMENT_TYPE: ClassInfo$TypeLookup;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClassInfo$TypeLookup;
-    static values(): (Object | null)[];
+    static values(): ClassInfo$TypeLookup[];
     private constructor()
     name(): "DECLARED_TYPE" | "ELEMENT_TYPE";
 }

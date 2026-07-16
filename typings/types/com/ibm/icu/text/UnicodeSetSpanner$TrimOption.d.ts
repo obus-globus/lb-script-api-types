@@ -7,7 +7,7 @@ export class UnicodeSetSpanner$TrimOption extends Enum<UnicodeSetSpanner$TrimOpt
     static TRAILING: UnicodeSetSpanner$TrimOption;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): UnicodeSetSpanner$TrimOption;
-    static values(): (Object | null)[];
+    static values(): UnicodeSetSpanner$TrimOption[];
     private constructor()
     name(): "LEADING" | "BOTH" | "TRAILING";
 }

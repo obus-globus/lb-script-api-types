@@ -25,7 +25,6 @@ export abstract class InitializeDateTimeFormatNode extends JavaScriptBaseNode {
     static TWO_DIGIT_NUMERIC_OPTION_VALUES: string[];
     static createInitalizeDateTimeFormatNode(paramcontext: JSContext, paramrequired: InitializeDateTimeFormatNode$Required, paramdefaults: InitializeDateTimeFormatNode$Defaults): InitializeDateTimeFormatNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, required: InitializeDateTimeFormatNode$Required, defaults: InitializeDateTimeFormatNode$Defaults)
     // private coerceOptionsToObjectNode: CoerceOptionsToObjectNode;
     // private context: JSContext;

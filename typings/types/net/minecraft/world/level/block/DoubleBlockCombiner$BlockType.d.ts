@@ -7,7 +7,7 @@ export class DoubleBlockCombiner$BlockType extends Enum<DoubleBlockCombiner$Bloc
     static SINGLE: DoubleBlockCombiner$BlockType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): DoubleBlockCombiner$BlockType;
-    static values(): (Object | null)[];
+    static values(): DoubleBlockCombiner$BlockType[];
     private constructor()
     name(): "SINGLE" | "FIRST" | "SECOND";
 }

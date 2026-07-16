@@ -8,7 +8,7 @@ export class ModMenuConfig$LibraryVisibility extends Enum<ModMenuConfig$LibraryV
     static WITH_CONFIG: ModMenuConfig$LibraryVisibility;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModMenuConfig$LibraryVisibility;
-    static values(): (Object | null)[];
+    static values(): ModMenuConfig$LibraryVisibility[];
     private constructor()
     hideMod(arg0: Mod, arg1: boolean): boolean;
     isTrue(): boolean;

@@ -3,8 +3,8 @@ import type { BooleanListIterator } from '../../../../../it/unimi/dsi/fastutil/b
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BooleanIterators$ArrayIterator extends Object implements BooleanListIterator {
-    constructor(arg0: (Object | null)[], arg1: number, arg2: number)
-    // private array: (Object | null)[];
+    constructor(arg0: boolean[], arg1: number, arg2: number)
+    // private array: boolean[];
     // private curr: number;
     // private length: number;
     // private offset: number;

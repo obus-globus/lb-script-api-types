@@ -7,7 +7,7 @@ export class SoundEngine$PlayResult extends Enum<SoundEngine$PlayResult> {
     static STARTED_SILENTLY: SoundEngine$PlayResult;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SoundEngine$PlayResult;
-    static values(): (Object | null)[];
+    static values(): SoundEngine$PlayResult[];
     private constructor()
     name(): "STARTED" | "STARTED_SILENTLY" | "NOT_STARTED";
 }

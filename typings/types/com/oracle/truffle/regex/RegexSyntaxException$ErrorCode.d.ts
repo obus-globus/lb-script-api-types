@@ -19,7 +19,7 @@ export class RegexSyntaxException$ErrorCode extends Enum<RegexSyntaxException$Er
     static UnmatchedParenthesis: RegexSyntaxException$ErrorCode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RegexSyntaxException$ErrorCode;
-    static values(): (Object | null)[];
+    static values(): RegexSyntaxException$ErrorCode[];
     private constructor()
     intValue(): number;
     name(): "InvalidBackReference" | "InvalidCharacterClass" | "InvalidEscape" | "InvalidFlag" | "InvalidGroup" | "InvalidInlineFlag" | "InvalidLookbehind" | "InvalidNamedGroup" | "InvalidOption" | "InvalidQuantifier" | "InvalidSubexpressionCall" | "UnfinishedSequence" | "UnmatchedBracket" | "UnmatchedParenthesis" | "TRegexBailout";

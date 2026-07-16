@@ -7,7 +7,7 @@ export class LockBasedStorageManager$NotValue extends Enum<LockBasedStorageManag
     static RECURSION_WAS_DETECTED: LockBasedStorageManager$NotValue;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LockBasedStorageManager$NotValue;
-    static values(): (Object | null)[];
+    static values(): LockBasedStorageManager$NotValue[];
     private constructor()
     name(): "NOT_COMPUTED" | "COMPUTING" | "RECURSION_WAS_DETECTED";
 }

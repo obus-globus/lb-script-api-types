@@ -10,7 +10,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class InstanceofNodeGen$OrdinaryHasInstanceNodeGen extends InstanceofNode$OrdinaryHasInstanceNode {
     static create(paramcontext: JSContext): InstanceofNode$OrdinaryHasInstanceNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private bound_instanceofNode_: InstanceofNode;
     // private getForeignPrototypeNode: ForeignObjectPrototypeNode;

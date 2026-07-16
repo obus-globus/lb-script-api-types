@@ -13,7 +13,7 @@ export class LevelBiomeSlice extends Object {
     // private blockX: number;
     // private blockY: number;
     // private blockZ: number;
-    // private uniform: (Object | null)[];
+    // private uniform: boolean[];
     // private calculateBias(): void;
     // private calculateBias(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number): void;
     // private calculateUniform(): void;

@@ -1,7 +1,6 @@
 import type { StringBuilder } from '../../../../../../../java/lang/StringBuilder.d.ts'
 import type { Comparator } from '../../../../../../../java/util/Comparator.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CurrencyData$CurrencyDisplayInfo } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/CurrencyData$CurrencyDisplayInfo.d.ts'
 import type { LocaleDisplayNamesImpl$CapitalizationContextUsage } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/LocaleDisplayNamesImpl$CapitalizationContextUsage.d.ts'
 import type { LocaleDisplayNamesImpl$DataTable } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/LocaleDisplayNamesImpl$DataTable.d.ts'
@@ -14,17 +13,17 @@ import type { LocaleDisplayNames$DialectHandling } from '../../../../../../../or
 import type { LocaleDisplayNames$UiListItem } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/LocaleDisplayNames$UiListItem.d.ts'
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
 export class LocaleDisplayNamesImpl extends LocaleDisplayNames {
-    static getInstance(paramlocale: ULocale, ...paramcontexts: (Object | null)[]): LocaleDisplayNames;
+    static getInstance(paramlocale: ULocale, ...paramcontexts: DisplayContext[]): LocaleDisplayNames;
     static getInstance(paramlocale: ULocale, paramdialectHandling: LocaleDisplayNames$DialectHandling): LocaleDisplayNames;
     static getInstance(paramlocale: Locale): LocaleDisplayNames;
-    static getInstance(paramlocale: Locale, ...paramcontexts: (Object | null)[]): LocaleDisplayNames;
+    static getInstance(paramlocale: Locale, ...paramcontexts: DisplayContext[]): LocaleDisplayNames;
     static getInstance(paramlocale: ULocale): LocaleDisplayNames;
     static haveData(paramtype: LocaleDisplayNamesImpl$DataTableType): boolean;
     constructor(locale: ULocale, ...contexts: DisplayContext[])
     constructor(locale: ULocale, dialectHandling: LocaleDisplayNames$DialectHandling)
     // private capitalization: DisplayContext;
     // private capitalizationBrkIter: BreakIterator;
-    // private capitalizationUsage: (Object | null)[];
+    // private capitalizationUsage: boolean[];
     // private currencyDisplayInfo: CurrencyData$CurrencyDisplayInfo;
     readonly dialectHandling: LocaleDisplayNames$DialectHandling;
     // private format: string;
@@ -44,7 +43,7 @@ export class LocaleDisplayNamesImpl extends LocaleDisplayNames {
     getContext(type: DisplayContext$Type): DisplayContext;
     getDialectHandling(): LocaleDisplayNames$DialectHandling;
     getLocale(): ULocale;
-    getUiListCompareWholeItems(localeSet: ULocale[], comparator: (param0: Object) => boolean): LocaleDisplayNames$UiListItem[];
+    getUiListCompareWholeItems(localeSet: ULocale[], comparator: (param0: LocaleDisplayNames$UiListItem, param1: LocaleDisplayNames$UiListItem) => number): LocaleDisplayNames$UiListItem[];
     keyDisplayName(key: string): string;
     // private keyDisplayName(key: string, skipAdjust: boolean): string;
     keyValueDisplayName(key: string, value: string): string;

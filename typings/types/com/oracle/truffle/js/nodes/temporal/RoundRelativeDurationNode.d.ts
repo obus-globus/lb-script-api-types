@@ -13,7 +13,6 @@ import type { TemporalUtil$RoundingMode } from '../../../../../../com/oracle/tru
 import type { TemporalUtil$Unit } from '../../../../../../com/oracle/truffle/js/runtime/util/TemporalUtil$Unit.d.ts'
 export abstract class RoundRelativeDurationNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     // private bubbleRelativeDuration(sign: number, duration0: NormalizedDurationRecord, nudgedEpochNs: BigInt, dateTime: ISODateTimeRecord, calendar: TruffleString, timeZone: TruffleString, largestUnit: TemporalUtil$Unit, smallestUnit: TemporalUtil$Unit, addDateTimeNode: TemporalAddDateTimeNode, errorBranch: InlinedBranchProfile): NormalizedDurationRecord;
     execute(duration: NormalizedDurationRecord, destEpochNs: BigInt, dateTime: ISODateTimeRecord, calendar: TruffleString, timeZone: TruffleString, largestUnit: TemporalUtil$Unit, increment: number, smallestUnit: TemporalUtil$Unit, roundingMode: TemporalUtil$RoundingMode): TemporalDurationWithTotalRecord;

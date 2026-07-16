@@ -9,9 +9,8 @@ import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class SpreadFunctionArgumentsNodeGen extends SpreadFunctionArgumentsNode {
     static cloneUninitialized(paramnode: AbstractFunctionArgumentsNode | null, parammaterializedTags: Class<Tag>[]): AbstractFunctionArgumentsNode | null;
-    static create(paramcontext: JSContext, paramargs: (Object | null)[]): AbstractFunctionArgumentsNode;
-    static create(paramargs: (Object | null)[]): SpreadFunctionArgumentsNode;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    static create(paramcontext: JSContext, paramargs: JavaScriptNode[]): AbstractFunctionArgumentsNode;
+    static create(paramargs: JavaScriptNode[]): SpreadFunctionArgumentsNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(args: JavaScriptNode[])
     // private state_0_: number;

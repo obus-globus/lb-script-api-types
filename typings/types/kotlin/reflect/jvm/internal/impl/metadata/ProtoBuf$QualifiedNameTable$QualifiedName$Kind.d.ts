@@ -9,7 +9,7 @@ export class ProtoBuf$QualifiedNameTable$QualifiedName$Kind extends Enum<ProtoBu
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: number): ProtoBuf$QualifiedNameTable$QualifiedName$Kind;
     static valueOf(paramarg0: string): ProtoBuf$QualifiedNameTable$QualifiedName$Kind;
-    static values(): (Object | null)[];
+    static values(): ProtoBuf$QualifiedNameTable$QualifiedName$Kind[];
     private constructor(arg2: number, arg3: number)
     // private value: number;
     getNumber(): number;

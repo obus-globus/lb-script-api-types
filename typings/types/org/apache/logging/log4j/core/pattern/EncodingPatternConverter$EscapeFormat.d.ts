@@ -9,7 +9,7 @@ export class EncodingPatternConverter$EscapeFormat extends Enum<EncodingPatternC
     static XML: EncodingPatternConverter$EscapeFormat;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): EncodingPatternConverter$EscapeFormat;
-    static values(): (Object | null)[];
+    static values(): EncodingPatternConverter$EscapeFormat[];
     constructor(arg2: any)
     escape(toAppendTo: StringBuilder, start: number): void;
     name(): "HTML" | "JSON" | "CRLF" | "XML";

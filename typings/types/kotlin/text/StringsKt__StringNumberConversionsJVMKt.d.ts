@@ -7,9 +7,9 @@ import type { Object } from '../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../java/lang/CharSequence.d.ts'
 import type { StringsKt__StringBuilderKt } from '../../kotlin/text/StringsKt__StringBuilderKt.d.ts'
 export class StringsKt__StringNumberConversionsJVMKt extends StringsKt__StringBuilderKt {
-    static append(paramarg0: Appendable | null, ...paramarg1: (Object | null)[]): Appendable | null;
-    static append(paramarg0: StringBuilder, ...paramarg1: (Object | null)[]): StringBuilder;
-    static append(paramarg0: StringBuilder, ...paramarg1: (Object | null)[]): StringBuilder;
+    static append(paramarg0: Appendable | null, ...paramarg1: CharSequence[]): Appendable | null;
+    static append(paramarg0: StringBuilder, ...paramarg1: Object[]): StringBuilder;
+    static append(paramarg0: StringBuilder, ...paramarg1: string[]): StringBuilder;
     static appendElement(paramarg0: Appendable, paramarg1: Object | null, paramarg2: (param0: Object) => CharSequence): void;
     static appendRange(paramarg0: Appendable | null, paramarg1: CharSequence, paramarg2: number, paramarg3: number): Appendable | null;
     static appendln(paramarg0: Appendable): Appendable;

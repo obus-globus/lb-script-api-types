@@ -9,7 +9,7 @@ export class GlobalEnvironment$DeclarationKind extends Enum<GlobalEnvironment$De
     static Var: GlobalEnvironment$DeclarationKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): GlobalEnvironment$DeclarationKind;
-    static values(): (Object | null)[];
+    static values(): GlobalEnvironment$DeclarationKind[];
     private constructor(isLexical: boolean, isConst: boolean, isDeclared: boolean)
     // private isConst: boolean;
     // private isDeclared: boolean;

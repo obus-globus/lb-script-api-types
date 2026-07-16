@@ -31,8 +31,8 @@ export class RuleBasedBreakIterator extends BreakIterator {
     static WORD_NUMBER_LIMIT: number;
     static fDebugEnv: string;
     static compileRules(paramrules: string, paramruleBinary: OutputStream): void;
-    static getAvailableLocales(): (Object | null)[];
-    static getAvailableULocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
+    static getAvailableULocales(): ULocale[];
     static getBreakInstance(paramwhere: ULocale, paramkind: number): BreakIterator;
     static getCharacterInstance(): BreakIterator;
     static getCharacterInstance(paramwhere: Locale): BreakIterator;

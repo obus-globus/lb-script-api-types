@@ -32,7 +32,7 @@ export class BlockFamily$Variant extends Enum<BlockFamily$Variant> {
     static WALL_SIGN: BlockFamily$Variant;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): BlockFamily$Variant;
-    static values(): (Object | null)[];
+    static values(): BlockFamily$Variant[];
     private constructor(recipeGroup: string)
     readonly recipeGroup: string;
     getBaseVariantForCrafting(): BlockFamily$Variant;

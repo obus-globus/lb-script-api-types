@@ -28,8 +28,8 @@ export class CompactDecimalFormat extends DecimalFormat {
     static PLURALCURRENCYSTYLE: number;
     static SCIENTIFICSTYLE: number;
     static STANDARDCURRENCYSTYLE: number;
-    static getAvailableLocales(): (Object | null)[];
-    static getAvailableULocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
+    static getAvailableULocales(): ULocale[];
     static getCurrencyInstance(): NumberFormat;
     static getCurrencyInstance(paraminLocale: Locale): NumberFormat;
     static getCurrencyInstance(paraminLocale: ULocale): NumberFormat;

@@ -47,7 +47,7 @@ export class Particle1_7_6 extends Enum<Particle1_7_6> {
     static find(paramarg0: string): Particle1_7_6;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Particle1_7_6;
-    static values(): (Object | null)[];
+    static values(): Particle1_7_6[];
     private constructor(arg2: string)
     private constructor(arg2: string, arg3: number)
     extra: number;

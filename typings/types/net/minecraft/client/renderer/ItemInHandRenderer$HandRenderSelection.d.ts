@@ -9,7 +9,7 @@ export class ItemInHandRenderer$HandRenderSelection extends Enum<ItemInHandRende
     static onlyForHand(paramhand: InteractionHand): ItemInHandRenderer$HandRenderSelection;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ItemInHandRenderer$HandRenderSelection;
-    static values(): (Object | null)[];
+    static values(): ItemInHandRenderer$HandRenderSelection[];
     private constructor(renderMainHand: boolean, renderOffHand: boolean)
     renderMainHand: boolean;
     renderOffHand: boolean;

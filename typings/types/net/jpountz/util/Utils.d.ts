@@ -7,6 +7,6 @@ export class Utils extends Enum<Utils> {
     static isUnalignedAccessAllowed(): boolean;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Utils;
-    static values(): (Object | null)[];
+    static values(): Utils[];
     private constructor()
 }

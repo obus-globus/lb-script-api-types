@@ -8,7 +8,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PropertyCacheNode$ConstantObjectAssumptionShapeCheckNode extends PropertyCacheNode$AbstractSingleRealmShapeCheckNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(shape: Shape, assumptions: Assumption[], context: JSContext)
     accept(nodeVisitor: NodeVisitor): void;
     accept(thisObj: Object): boolean;

@@ -11,7 +11,7 @@ export class LabTablePacketPayload_Type extends Enum<LabTablePacketPayload_Type>
     static getByValue(paramarg0: number, paramarg1: LabTablePacketPayload_Type): LabTablePacketPayload_Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LabTablePacketPayload_Type;
-    static values(): (Object | null)[];
+    static values(): LabTablePacketPayload_Type[];
     private constructor(arg2: number)
     private constructor(arg2: LabTablePacketPayload_Type)
     readonly value: number;

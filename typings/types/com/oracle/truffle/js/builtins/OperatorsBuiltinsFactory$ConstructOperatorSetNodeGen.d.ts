@@ -6,7 +6,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class OperatorsBuiltinsFactory$ConstructOperatorSetNodeGen extends OperatorsBuiltins$ConstructOperatorSetNode {
     static create(paramcontext: JSContext): OperatorsBuiltins$ConstructOperatorSetNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     execute(arg0Value: Object, arg1Value: Object[]): OperatorSet;
 }

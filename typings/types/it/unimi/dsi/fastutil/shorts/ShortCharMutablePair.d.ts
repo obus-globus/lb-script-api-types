@@ -3,7 +3,7 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ShortCharMutablePair extends Object implements ShortCharPair, Serializable {
-    static lexComparator(): (param0: Object) => boolean;
+    static lexComparator(): (param0: ShortCharPair, param1: ShortCharPair) => number;
     static of(paramarg0: number, paramarg1: string): ShortCharMutablePair;
     static of(paramarg0: number, paramarg1: string): ShortCharPair;
     constructor(arg0: number, arg1: string)

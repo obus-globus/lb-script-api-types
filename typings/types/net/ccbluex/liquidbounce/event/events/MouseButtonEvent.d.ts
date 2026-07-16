@@ -1,3 +1,4 @@
+import type { Gson } from '../../../../../com/google/gson/Gson.d.ts'
 import type { InputConstants$Key } from '../../../../../com/mojang/blaze3d/platform/InputConstants$Key.d.ts'
 import type { Event } from '../../../../../net/ccbluex/liquidbounce/event/Event.d.ts'
 import type { WebSocketEvent } from '../../../../../net/ccbluex/liquidbounce/integration/interop/protocol/event/WebSocketEvent.d.ts'
@@ -12,4 +13,6 @@ export class MouseButtonEvent extends Event implements WebSocketEvent {
     readonly key: InputConstants$Key;
     readonly mods: number;
     readonly screen: Screen | null;
+    readonly serializeAsync: boolean;
+    readonly serializer: Gson;
 }

@@ -20,7 +20,7 @@ export class MappingFormat extends Enum<MappingFormat> {
     static XSRG_FILE: MappingFormat;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MappingFormat;
-    static values(): (Object | null)[];
+    static values(): MappingFormat[];
     private constructor(arg2: string, arg3: string, arg4: boolean, arg5: FeatureSetBuilder)
     // private features: FeatureSet;
     fileExt: string;

@@ -8,7 +8,7 @@ export class ASTParser$ParsingCacheStrategy extends Enum<ASTParser$ParsingCacheS
     static TWO_TIER: ASTParser$ParsingCacheStrategy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ASTParser$ParsingCacheStrategy;
-    static values(): (Object | null)[];
+    static values(): ASTParser$ParsingCacheStrategy[];
     private constructor()
     name(): "ALL" | "TWO_TIER" | "ALL_EXCLUDING_TRANSLATION_UNIT" | "NONE";
 }

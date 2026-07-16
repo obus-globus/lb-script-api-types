@@ -15,7 +15,7 @@ export class FileExtension extends Enum<FileExtension> {
     static lookupForFile(paramfileName: string): FileExtension;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): FileExtension;
-    static values(): (Object | null)[];
+    static values(): FileExtension[];
     constructor(arg2: string, arg3: FileExtension)
     readonly extension: string;
     createCompressAction(renameTo: string, compressedName: string, deleteSource: boolean, compressionLevel: number): Action;

@@ -9,7 +9,7 @@ export class Semver$SemverType extends Enum<Semver$SemverType> {
     static STRICT: Semver$SemverType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Semver$SemverType;
-    static values(): (Object | null)[];
+    static values(): Semver$SemverType[];
     private constructor()
     name(): "STRICT" | "LOOSE" | "NPM" | "COCOAPODS" | "IVY";
 }

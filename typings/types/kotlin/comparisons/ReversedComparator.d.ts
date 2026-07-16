@@ -6,23 +6,23 @@ import type { ToLongFunction } from '../../java/util/function/ToLongFunction.d.t
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Comparable } from '../../java/lang/Comparable.d.ts'
 export class ReversedComparator<T extends unknown> extends Object implements Comparator<T> {
-    static comparing(paramarg0: (param0: Object) => Object | null): (param0: Object) => boolean;
-    static comparing(paramarg0: (param0: Object) => Object | null, paramarg1: (param0: Object) => boolean): (param0: Object) => boolean;
-    static comparingDouble(paramarg0: (param0: Object) => number): (param0: Object) => boolean;
-    static comparingInt(paramarg0: (param0: Object) => number): (param0: Object) => boolean;
-    static comparingLong(paramarg0: (param0: Object) => number): (param0: Object) => boolean;
-    static naturalOrder(): (param0: Object) => boolean;
-    static nullsFirst(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
-    static nullsLast(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
-    static reverseOrder(): (param0: Object) => boolean;
-    constructor(comparator: (param0: Object) => boolean)
-    readonly comparator: (param0: Object) => boolean;
+    static comparing(paramarg0: (param0: Object) => Object | null): (param0: Object | null, param1: Object | null) => number;
+    static comparing(paramarg0: (param0: Object) => Object | null, paramarg1: (param0: Object, param1: Object) => number): (param0: Object | null, param1: Object | null) => number;
+    static comparingDouble(paramarg0: (param0: Object) => number): (param0: Object | null, param1: Object | null) => number;
+    static comparingInt(paramarg0: (param0: Object) => number): (param0: Object | null, param1: Object | null) => number;
+    static comparingLong(paramarg0: (param0: Object) => number): (param0: Object | null, param1: Object | null) => number;
+    static naturalOrder(): (param0: Object | null, param1: Object | null) => number;
+    static nullsFirst(paramarg0: (param0: Object, param1: Object) => number): (param0: Object | null, param1: Object | null) => number;
+    static nullsLast(paramarg0: (param0: Object, param1: Object) => number): (param0: Object | null, param1: Object | null) => number;
+    static reverseOrder(): (param0: Object | null, param1: Object | null) => number;
+    constructor(comparator: (param0: T, param1: T) => number)
+    readonly comparator: (param0: T, param1: T) => number;
     compare(a: T, b: T): number;
-    reversed(): (param0: Object) => boolean;
-    thenComparing(arg0: (param0: Object) => boolean): (param0: Object) => boolean;
-    thenComparing<U extends Comparable<U>>(arg0: (param0: T) => U): (param0: Object) => boolean;
-    thenComparing<U extends unknown>(arg0: (param0: T) => U, arg1: (param0: Object) => boolean): (param0: Object) => boolean;
-    thenComparingDouble(arg0: (param0: T) => number): (param0: Object) => boolean;
-    thenComparingInt(arg0: (param0: T) => number): (param0: Object) => boolean;
-    thenComparingLong(arg0: (param0: T) => number): (param0: Object) => boolean;
+    reversed(): (param0: T, param1: T) => number;
+    thenComparing(arg0: (param0: T, param1: T) => number): (param0: T, param1: T) => number;
+    thenComparing<U extends Comparable<U>>(arg0: (param0: T) => U): (param0: T, param1: T) => number;
+    thenComparing<U extends unknown>(arg0: (param0: T) => U, arg1: (param0: U, param1: U) => number): (param0: T, param1: T) => number;
+    thenComparingDouble(arg0: (param0: T) => number): (param0: T, param1: T) => number;
+    thenComparingInt(arg0: (param0: T) => number): (param0: T, param1: T) => number;
+    thenComparingLong(arg0: (param0: T) => number): (param0: T, param1: T) => number;
 }

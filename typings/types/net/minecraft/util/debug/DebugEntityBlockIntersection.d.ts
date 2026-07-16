@@ -10,7 +10,7 @@ export class DebugEntityBlockIntersection extends Enum<DebugEntityBlockIntersect
     static STREAM_CODEC: StreamCodec<ByteBuf, DebugEntityBlockIntersection>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): DebugEntityBlockIntersection;
-    static values(): (Object | null)[];
+    static values(): DebugEntityBlockIntersection[];
     private constructor(id: number, color: number)
     // private color: number;
     // private id: number;

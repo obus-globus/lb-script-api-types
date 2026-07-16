@@ -7,6 +7,7 @@ import type { EventListener } from '../../../../../net/ccbluex/liquidbounce/even
 import type { Command } from '../../../../../net/ccbluex/liquidbounce/features/command/Command.d.ts'
 import type { SubscribedItem } from '../../../../../net/ccbluex/liquidbounce/features/marketplace/SubscribedItem.d.ts'
 import type { Task } from '../../../../../net/ccbluex/liquidbounce/integration/task/type/Task.d.ts'
+import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Logger } from '../../../../../org/apache/logging/log4j/Logger.d.ts'
 /**
  * Marketplace manager for subscribing and updating items.
@@ -15,8 +16,10 @@ import type { Logger } from '../../../../../org/apache/logging/log4j/Logger.d.ts
  */
 export class MarketplaceManager extends Config implements EventListener {
     static INSTANCE: MarketplaceManager;
+    readonly debugDisplayName: Component;
     // private logger: Logger;
     readonly marketplaceRoot: File;
+    readonly running: boolean;
     readonly subscribedItems: SubscribedItem[];
     children(): EventListener[];
     getItem(itemId: number): SubscribedItem | null;

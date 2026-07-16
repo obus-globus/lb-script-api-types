@@ -6,7 +6,7 @@ export class NumberFormat$Style extends Enum<NumberFormat$Style> {
     static SHORT: NumberFormat$Style;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): NumberFormat$Style;
-    static values(): (Object | null)[];
+    static values(): NumberFormat$Style[];
     private constructor()
     name(): "SHORT" | "LONG";
 }

@@ -8,7 +8,7 @@ export class AgentType extends Enum<AgentType> {
     static SOURCE: AgentType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): AgentType;
-    static values(): (Object | null)[];
+    static values(): AgentType[];
     private constructor()
     name(): "SOURCE" | "ENTER" | "RETURN" | "CLOSE";
 }

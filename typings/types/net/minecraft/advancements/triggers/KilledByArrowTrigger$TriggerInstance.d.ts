@@ -5,6 +5,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ContextAwarePredicate } from '../../../../net/minecraft/advancements/predicates/ContextAwarePredicate.d.ts'
 import type { ItemPredicate } from '../../../../net/minecraft/advancements/predicates/ItemPredicate.d.ts'
 import type { MinMaxBounds$Ints } from '../../../../net/minecraft/advancements/predicates/MinMaxBounds$Ints.d.ts'
+import type { EntityPredicate$Builder } from '../../../../net/minecraft/advancements/predicates/entity/EntityPredicate$Builder.d.ts'
 import type { Criterion } from '../../../../net/minecraft/advancements/triggers/Criterion.d.ts'
 import type { SimpleCriterionTrigger$SimpleInstance } from '../../../../net/minecraft/advancements/triggers/SimpleCriterionTrigger$SimpleInstance.d.ts'
 import type { HolderGetter } from '../../../../net/minecraft/core/HolderGetter.d.ts'
@@ -15,7 +16,7 @@ import type { ValidationContextSource } from '../../../../net/minecraft/world/le
 export class KilledByArrowTrigger$TriggerInstance extends Record implements SimpleCriterionTrigger$SimpleInstance {
     static CODEC: Codec<KilledByArrowTrigger$TriggerInstance>;
     static crossbowKilled(paramitems: HolderGetter<Item>, paramuniqueEntityTypes: MinMaxBounds$Ints): Criterion<KilledByArrowTrigger$TriggerInstance>;
-    static crossbowKilled(paramitems: HolderGetter<Item>, ...paramvictims: (Object | null)[]): Criterion<KilledByArrowTrigger$TriggerInstance>;
+    static crossbowKilled(paramitems: HolderGetter<Item>, ...paramvictims: EntityPredicate$Builder[]): Criterion<KilledByArrowTrigger$TriggerInstance>;
     constructor(player: Optional<ContextAwarePredicate>, victims: ContextAwarePredicate[], uniqueEntityTypes: MinMaxBounds$Ints, firedFromWeapon: Optional<ItemPredicate>)
     // private firedFromWeapon: Optional<ItemPredicate>;
     // private player: Optional<ContextAwarePredicate>;

@@ -52,7 +52,7 @@ export class LevelChunk extends ChunkAccess implements AttachmentTargetImpl, Deb
     static NBT_ATTACHMENT_KEY: string;
     static NO_FILLED_SECTION: number;
     static create(paramminY: number, paramheight: number): LevelHeightAccessor;
-    static getOrCreateOffsetList(paramlist: (Object | null)[], paramsectionIndex: number): (Object | null)[];
+    static getOrCreateOffsetList(paramlist: (Object | null)[][], paramsectionIndex: number): (Object | null)[];
     static problemPath(parampos: ChunkPos): () => string;
     static transfer(paramarg0: AttachmentTarget, paramarg1: AttachmentTarget, paramarg2: boolean): void;
     constructor(level: ServerLevel, protoChunk: ProtoChunk, postLoad: (param0: LevelChunk) => void)

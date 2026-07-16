@@ -6,9 +6,9 @@ import type { Handle } from '../../../../org/objectweb/asm/Handle.d.ts'
 import type { Label } from '../../../../org/objectweb/asm/Label.d.ts'
 import type { TypePath } from '../../../../org/objectweb/asm/TypePath.d.ts'
 export abstract class Printer extends Object {
-    static HANDLE_TAG: (Object | null)[];
-    static OPCODES: (Object | null)[];
-    static TYPES: (Object | null)[];
+    static HANDLE_TAG: string[];
+    static OPCODES: string[];
+    static TYPES: string[];
     static appendString(paramarg0: StringBuilder, paramarg1: string): void;
     constructor(arg0: number)
     // private api: number;

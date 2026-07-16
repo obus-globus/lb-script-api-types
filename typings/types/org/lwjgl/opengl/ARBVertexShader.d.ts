@@ -107,13 +107,11 @@ export class ARBVertexShader extends Object {
     static glVertexAttrib4usvARB(paramarg0: number, paramarg1: ShortBuffer): void;
     static glVertexAttrib4usvARB(paramarg0: number, paramarg1: number[]): void;
     static glVertexAttribPointerARB(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: boolean, paramarg4: number, paramarg5: number[]): void;
-    static glVertexAttribPointerARB(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: boolean, paramarg4: number, paramarg5: number[]): void;
     static glVertexAttribPointerARB(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: boolean, paramarg4: number, paramarg5: ByteBuffer): void;
     static glVertexAttribPointerARB(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: boolean, paramarg4: number, paramarg5: FloatBuffer): void;
     static glVertexAttribPointerARB(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: boolean, paramarg4: number, paramarg5: IntBuffer): void;
     static glVertexAttribPointerARB(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: boolean, paramarg4: number, paramarg5: ShortBuffer): void;
     static glVertexAttribPointerARB(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: boolean, paramarg4: number, paramarg5: number): void;
-    static glVertexAttribPointerARB(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: boolean, paramarg4: number, paramarg5: number[]): void;
     static nglBindAttribLocationARB(paramarg0: number, paramarg1: number, paramarg2: number): void;
     static nglGetActiveAttribARB(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number): void;
     static nglGetAttribLocationARB(paramarg0: number, paramarg1: number): number;

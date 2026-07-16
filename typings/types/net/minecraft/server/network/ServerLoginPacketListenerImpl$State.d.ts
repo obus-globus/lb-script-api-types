@@ -12,7 +12,7 @@ export class ServerLoginPacketListenerImpl$State extends Enum<ServerLoginPacketL
     static WAITING_FOR_DUPE_DISCONNECT: ServerLoginPacketListenerImpl$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ServerLoginPacketListenerImpl$State;
-    static values(): (Object | null)[];
+    static values(): ServerLoginPacketListenerImpl$State[];
     private constructor()
     name(): "HELLO" | "KEY" | "AUTHENTICATING" | "NEGOTIATING" | "VERIFYING" | "WAITING_FOR_DUPE_DISCONNECT" | "PROTOCOL_SWITCHING" | "ACCEPTED";
 }

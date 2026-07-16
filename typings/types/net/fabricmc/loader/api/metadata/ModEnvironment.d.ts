@@ -8,7 +8,7 @@ export class ModEnvironment extends Enum<ModEnvironment> {
     static UNIVERSAL: ModEnvironment;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModEnvironment;
-    static values(): (Object | null)[];
+    static values(): ModEnvironment[];
     private constructor()
     matches(arg0: EnvType): boolean;
     name(): "CLIENT" | "SERVER" | "UNIVERSAL";

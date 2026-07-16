@@ -13,11 +13,10 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DataViewPrototypeBuiltinsFactory$DataViewGetterNodeGen extends DataViewPrototypeBuiltins$DataViewGetterNode {
     static ARGUMENTS: string;
     static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
-    static create(paramcontext: JSContext, parambuiltin: JSBuiltin, paramgetter: DataViewPrototypeBuiltins$DataViewPrototype, paramarguments: (Object | null)[]): DataViewPrototypeBuiltins$DataViewGetterNode;
+    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
+    static create(paramcontext: JSContext, parambuiltin: JSBuiltin, paramgetter: DataViewPrototypeBuiltins$DataViewPrototype, paramarguments: JavaScriptNode[]): DataViewPrototypeBuiltins$DataViewGetterNode;
     static createBuiltin(paramctx: JSContext, parambuiltin: JSBuiltin, paramconstruct: boolean, paramnewTarget: boolean): JSBuiltinNode;
     static findBlockScopeNode(paramnode: Node): Node;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;

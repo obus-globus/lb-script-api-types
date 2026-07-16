@@ -7,7 +7,6 @@ import type { TestEnvironmentDefinition } from '../../../../net/minecraft/gamete
 import type { TestEnvironmentDefinition$Activation } from '../../../../net/minecraft/gametest/framework/TestEnvironmentDefinition$Activation.d.ts'
 import type { ServerLevel } from '../../../../net/minecraft/server/level/ServerLevel.d.ts'
 export class TestEnvironmentDefinition$AllOf extends Record implements TestEnvironmentDefinition<TestEnvironmentDefinition$Activation<Object>[]> {
-    static CODEC: Codec<Holder<TestEnvironmentDefinition<Object>>>;
     static CODEC: MapCodec<TestEnvironmentDefinition$AllOf>;
     static DIRECT_CODEC: Codec<TestEnvironmentDefinition<Object>>;
     static activate(paramenvironment: TestEnvironmentDefinition<Object>, paramlevel: ServerLevel): TestEnvironmentDefinition$Activation<Object>;

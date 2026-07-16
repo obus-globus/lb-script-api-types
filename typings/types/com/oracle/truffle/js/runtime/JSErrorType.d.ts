@@ -16,10 +16,10 @@ export class JSErrorType extends Enum<JSErrorType> implements PrototypeSupplier 
     static SyntaxError: JSErrorType;
     static TypeError: JSErrorType;
     static URIError: JSErrorType;
-    static errorTypes(): (Object | null)[];
+    static errorTypes(): JSErrorType[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): JSErrorType;
-    static values(): (Object | null)[];
+    static values(): JSErrorType[];
     private constructor()
     getIntrinsicDefaultProto(realm: JSRealm): JSDynamicObject;
     name(): "Error" | "EvalError" | "RangeError" | "ReferenceError" | "SyntaxError" | "TypeError" | "URIError" | "AggregateError" | "CompileError" | "LinkError" | "RuntimeError";

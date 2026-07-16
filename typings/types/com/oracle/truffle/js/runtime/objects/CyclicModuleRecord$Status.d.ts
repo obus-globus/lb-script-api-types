@@ -11,7 +11,7 @@ export class CyclicModuleRecord$Status extends Enum<CyclicModuleRecord$Status> {
     static Unlinked: CyclicModuleRecord$Status;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CyclicModuleRecord$Status;
-    static values(): (Object | null)[];
+    static values(): CyclicModuleRecord$Status[];
     private constructor()
     name(): "New" | "Unlinked" | "Linking" | "Linked" | "Evaluating" | "EvaluatingAsync" | "Evaluated";
 }

@@ -13,7 +13,6 @@ import type { ByteSequence } from '../../../../../../org/graalvm/polyglot/io/Byt
 export abstract class ExportByteSourceNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext, paramnonByteSourceMessage: string, paramemptyByteSourceMessage: string): ExportByteSourceNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, nonByteSourceMessage: string, emptyByteSourceMessage: string)
     // private context: JSContext;
     // private emptyByteSourceMessage: string;

@@ -19,7 +19,7 @@ export class BanReason extends Enum<BanReason> {
     static byId(paramid: number): BanReason;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): BanReason;
-    static values(): (Object | null)[];
+    static values(): BanReason[];
     private constructor(name: string)
     // private title: Component;
     title(): Component;

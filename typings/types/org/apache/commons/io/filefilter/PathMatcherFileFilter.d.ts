@@ -3,10 +3,9 @@ import type { FileVisitResult } from '../../../../../java/nio/file/FileVisitResu
 import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { PathMatcher } from '../../../../../java/nio/file/PathMatcher.d.ts'
 import type { BasicFileAttributes } from '../../../../../java/nio/file/attribute/BasicFileAttributes.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { AbstractFileFilter } from '../../../../../org/apache/commons/io/filefilter/AbstractFileFilter.d.ts'
 export class PathMatcherFileFilter extends AbstractFileFilter {
-    static EMPTY_STRING_ARRAY: (Object | null)[];
+    static EMPTY_STRING_ARRAY: string[];
     constructor(arg0: (param0: Path) => boolean)
     // private pathMatcher: (param0: Path) => boolean;
     accept(arg0: File): boolean;

@@ -8,7 +8,7 @@ export class HostAccess$TargetMappingPrecedence extends Enum<HostAccess$TargetMa
     static LOWEST: HostAccess$TargetMappingPrecedence;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): HostAccess$TargetMappingPrecedence;
-    static values(): (Object | null)[];
+    static values(): HostAccess$TargetMappingPrecedence[];
     private constructor()
     name(): "HIGHEST" | "HIGH" | "LOW" | "LOWEST";
 }

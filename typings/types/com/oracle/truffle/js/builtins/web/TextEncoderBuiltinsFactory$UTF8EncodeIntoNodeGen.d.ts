@@ -7,7 +7,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class TextEncoderBuiltinsFactory$UTF8EncodeIntoNodeGen extends TextEncoderBuiltins$UTF8EncodeIntoNode {
     static create(): TextEncoderBuiltins$UTF8EncodeIntoNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private getTypedArrayByteLengthNode_field1_: Object;
     // private getTypedArrayByteLengthNode_field2_: Node;

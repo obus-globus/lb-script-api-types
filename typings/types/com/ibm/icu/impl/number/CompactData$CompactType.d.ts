@@ -6,7 +6,7 @@ export class CompactData$CompactType extends Enum<CompactData$CompactType> {
     static DECIMAL: CompactData$CompactType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CompactData$CompactType;
-    static values(): (Object | null)[];
+    static values(): CompactData$CompactType[];
     private constructor()
     name(): "DECIMAL" | "CURRENCY";
 }

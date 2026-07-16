@@ -14,7 +14,7 @@ export class ErrorScopeKind extends Enum<ErrorScopeKind> {
     static UNSUPPORTED_TYPE_SCOPE: ErrorScopeKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ErrorScopeKind;
-    static values(): (Object | null)[];
+    static values(): ErrorScopeKind[];
     private constructor(arg2: string)
     readonly debugMessage: string;
     getDebugMessage(): string;

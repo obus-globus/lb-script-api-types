@@ -24,7 +24,7 @@ export class Internal extends Object {
     static charsetOrUtf8(paramarg0: MediaType): Charset;
     static chooseCharset(paramarg0: MediaType): Pair<Charset, MediaType>;
     static cookieToString(paramarg0: Cookie, paramarg1: boolean): string;
-    static effectiveCipherSuites(paramarg0: ConnectionSpec, paramarg1: (Object | null)[]): (Object | null)[];
+    static effectiveCipherSuites(paramarg0: ConnectionSpec, paramarg1: string[]): string[];
     static getConnection(paramarg0: Response): RealConnection;
     static parseCookie(paramarg0: number, paramarg1: HttpUrl, paramarg2: string): Cookie;
     static taskRunnerInternal(paramarg0: OkHttpClient$Builder, paramarg1: TaskRunner): OkHttpClient$Builder;

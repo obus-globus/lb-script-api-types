@@ -12,7 +12,7 @@ export class PrintType extends Enum<PrintType> {
     static SIMPLE_ANNOTATED: PrintType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PrintType;
-    static values(): (Object | null)[];
+    static values(): PrintType[];
     private constructor(arg2: () => TokenProcessor)
     // private printerSupplier: () => TokenProcessor;
     getTokenProcessor(): TokenProcessor;

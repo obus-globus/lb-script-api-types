@@ -24,7 +24,7 @@ export class DiskStats$IoStat extends Enum<DiskStats$IoStat> {
     static WRITES_SECTOR: DiskStats$IoStat;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DiskStats$IoStat;
-    static values(): (Object | null)[];
+    static values(): DiskStats$IoStat[];
     private constructor()
     name(): "MAJOR" | "MINOR" | "NAME" | "READS" | "READS_MERGED" | "READS_SECTOR" | "READS_MS" | "WRITES" | "WRITES_MERGED" | "WRITES_SECTOR" | "WRITES_MS" | "IO_QUEUE_LENGTH" | "IO_MS" | "IO_MS_WEIGHTED" | "DISCARDS" | "DISCARDS_MERGED" | "DISCARDS_SECTOR" | "DISCARDS_MS" | "FLUSHES" | "FLUSHES_MS";
 }

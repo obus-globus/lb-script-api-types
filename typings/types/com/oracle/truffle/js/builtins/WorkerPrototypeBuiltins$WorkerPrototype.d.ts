@@ -14,7 +14,7 @@ export class WorkerPrototypeBuiltins$WorkerPrototype extends Enum<WorkerPrototyp
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): WorkerPrototypeBuiltins$WorkerPrototype;
-    static values(): (Object | null)[];
+    static values(): WorkerPrototypeBuiltins$WorkerPrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

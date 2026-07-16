@@ -15,7 +15,7 @@ export class ObjectArrayFIFOQueue<K extends unknown> extends Object implements P
     capacity(): number;
     changed(): void;
     clear(): void;
-    comparator(): (param0: Object) => boolean;
+    comparator(): (param0: K, param1: K) => number;
     dequeue(): K;
     dequeueLast(): K;
     enqueue(arg0: K): void;

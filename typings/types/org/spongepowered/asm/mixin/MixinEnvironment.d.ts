@@ -27,7 +27,7 @@ export class MixinEnvironment extends Object implements ITokenProvider {
     // private configsKey: GlobalProperties$Keys;
     // private internalTokens: { [key: string]: number };
     readonly obfuscationContext: string;
-    // private options: (Object | null)[];
+    // private options: boolean[];
     readonly phase: MixinEnvironment$Phase;
     readonly remappers: RemapperChain;
     // private service: IMixinService;

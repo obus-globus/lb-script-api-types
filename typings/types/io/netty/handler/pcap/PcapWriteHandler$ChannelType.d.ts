@@ -6,7 +6,7 @@ export class PcapWriteHandler$ChannelType extends Enum<PcapWriteHandler$ChannelT
     static UDP: PcapWriteHandler$ChannelType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PcapWriteHandler$ChannelType;
-    static values(): (Object | null)[];
+    static values(): PcapWriteHandler$ChannelType[];
     private constructor()
     name(): "TCP" | "UDP";
 }

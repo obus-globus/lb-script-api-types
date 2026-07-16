@@ -3,6 +3,7 @@ import type { Advapi32Util$AccessCheckPermission } from '../../../../../com/sun/
 import type { Advapi32Util$Account } from '../../../../../com/sun/jna/platform/win32/Advapi32Util$Account.d.ts'
 import type { Advapi32Util$EnumKey } from '../../../../../com/sun/jna/platform/win32/Advapi32Util$EnumKey.d.ts'
 import type { Advapi32Util$InfoKey } from '../../../../../com/sun/jna/platform/win32/Advapi32Util$InfoKey.d.ts'
+import type { WinNT$ACE_HEADER } from '../../../../../com/sun/jna/platform/win32/WinNT$ACE_HEADER.d.ts'
 import type { WinNT$HANDLE } from '../../../../../com/sun/jna/platform/win32/WinNT$HANDLE.d.ts'
 import type { WinNT$PSID } from '../../../../../com/sun/jna/platform/win32/WinNT$PSID.d.ts'
 import type { WinNT$SECURITY_DESCRIPTOR_RELATIVE } from '../../../../../com/sun/jna/platform/win32/WinNT$SECURITY_DESCRIPTOR_RELATIVE.d.ts'
@@ -27,13 +28,13 @@ export abstract class Advapi32Util extends Object {
     static getAccountBySid(paramarg0: string, paramarg1: WinNT$PSID): Advapi32Util$Account;
     static getAccountBySid(paramarg0: string, paramarg1: string): Advapi32Util$Account;
     static getAceSize(paramarg0: number): number;
-    static getCurrentUserGroups(): (Object | null)[];
+    static getCurrentUserGroups(): Advapi32Util$Account[];
     static getEnvironmentBlock(paramarg0: { [key: string]: string }): string;
-    static getFileSecurity(paramarg0: string, paramarg1: boolean): (Object | null)[];
+    static getFileSecurity(paramarg0: string, paramarg1: boolean): WinNT$ACE_HEADER[];
     static getFileSecurityDescriptor(paramarg0: File, paramarg1: boolean): WinNT$SECURITY_DESCRIPTOR_RELATIVE;
     static getSecurityDescriptorForObject(paramarg0: string, paramarg1: number, paramarg2: boolean): Memory;
     static getTokenAccount(paramarg0: WinNT$HANDLE): Advapi32Util$Account;
-    static getTokenGroups(paramarg0: WinNT$HANDLE): (Object | null)[];
+    static getTokenGroups(paramarg0: WinNT$HANDLE): Advapi32Util$Account[];
     static getTokenPrimaryGroup(paramarg0: WinNT$HANDLE): Advapi32Util$Account;
     static getUserName(): string;
     static isCurrentProcessElevated(): boolean;
@@ -60,15 +61,15 @@ export abstract class Advapi32Util extends Object {
     static registryGetIntValue(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: string): number;
     static registryGetIntValue(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: string, paramarg3: number): number;
     static registryGetKey(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: number): WinReg$HKEYByReference;
-    static registryGetKeys(paramarg0: WinReg$HKEY): (Object | null)[];
-    static registryGetKeys(paramarg0: WinReg$HKEY, paramarg1: string): (Object | null)[];
-    static registryGetKeys(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: number): (Object | null)[];
+    static registryGetKeys(paramarg0: WinReg$HKEY): string[];
+    static registryGetKeys(paramarg0: WinReg$HKEY, paramarg1: string): string[];
+    static registryGetKeys(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: number): string[];
     static registryGetLongValue(paramarg0: WinReg$HKEY, paramarg1: string): number;
     static registryGetLongValue(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: string): number;
     static registryGetLongValue(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: string, paramarg3: number): number;
-    static registryGetStringArray(paramarg0: WinReg$HKEY, paramarg1: string): (Object | null)[];
-    static registryGetStringArray(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: string): (Object | null)[];
-    static registryGetStringArray(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: string, paramarg3: number): (Object | null)[];
+    static registryGetStringArray(paramarg0: WinReg$HKEY, paramarg1: string): string[];
+    static registryGetStringArray(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: string): string[];
+    static registryGetStringArray(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: string, paramarg3: number): string[];
     static registryGetStringValue(paramarg0: WinReg$HKEY, paramarg1: string): string;
     static registryGetStringValue(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: string): string;
     static registryGetStringValue(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: string, paramarg3: number): string;
@@ -93,9 +94,9 @@ export abstract class Advapi32Util extends Object {
     static registrySetLongValue(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: string, paramarg3: number): void;
     static registrySetLongValue(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: string, paramarg3: number, paramarg4: number): void;
     static registrySetLongValue(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: number): void;
-    static registrySetStringArray(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: string, paramarg3: (Object | null)[]): void;
-    static registrySetStringArray(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: string, paramarg3: (Object | null)[], paramarg4: number): void;
-    static registrySetStringArray(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: (Object | null)[]): void;
+    static registrySetStringArray(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: string, paramarg3: string[]): void;
+    static registrySetStringArray(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: string, paramarg3: string[], paramarg4: number): void;
+    static registrySetStringArray(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: string[]): void;
     static registrySetStringValue(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: string): void;
     static registrySetStringValue(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: string, paramarg3: string): void;
     static registrySetStringValue(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: string, paramarg3: string, paramarg4: number): void;

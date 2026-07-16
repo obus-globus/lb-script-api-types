@@ -6,7 +6,7 @@ export class VaultState$LightLevel extends Enum<VaultState$LightLevel> {
     static LIT: VaultState$LightLevel;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): VaultState$LightLevel;
-    static values(): (Object | null)[];
+    static values(): VaultState$LightLevel[];
     private constructor(value: number)
     // private value: number;
     name(): "HALF_LIT" | "LIT";

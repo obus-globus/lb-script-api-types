@@ -5,7 +5,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 export class IsExtensibleNodeGen$Uncached extends IsExtensibleNode implements UnadoptableNode {
     static create(): IsExtensibleNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     executeBoolean(arg0Value: JSDynamicObject): boolean;
 }

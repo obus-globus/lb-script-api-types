@@ -5,6 +5,7 @@ import type { GameTickEvent } from '../../../../../net/ccbluex/liquidbounce/even
 import type { ClientModule } from '../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
 import type { RequestHandler } from '../../../../../net/ccbluex/liquidbounce/utils/client/RequestHandler.d.ts'
 import type { Priority } from '../../../../../net/ccbluex/liquidbounce/utils/kotlin/Priority.d.ts'
+import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 /**
  * Global minecraft timer
  *
@@ -12,7 +13,9 @@ import type { Priority } from '../../../../../net/ccbluex/liquidbounce/utils/kot
  */
 export class Timer extends Object implements EventListener {
     static INSTANCE: Timer;
+    readonly debugDisplayName: Component;
     // private requestHandler: RequestHandler<number>;
+    readonly running: boolean;
     // private tickHandler: EventHook<GameTickEvent>;
     /**
      * You cannot set this manually. Use {@link requestTimerSpeed} instead.

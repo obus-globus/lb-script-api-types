@@ -6,7 +6,7 @@ export class CefFocusHandler$FocusSource extends Enum<CefFocusHandler$FocusSourc
     static FOCUS_SOURCE_SYSTEM: CefFocusHandler$FocusSource;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CefFocusHandler$FocusSource;
-    static values(): (Object | null)[];
+    static values(): CefFocusHandler$FocusSource[];
     private constructor()
     name(): "FOCUS_SOURCE_NAVIGATION" | "FOCUS_SOURCE_SYSTEM";
 }

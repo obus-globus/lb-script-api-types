@@ -6,7 +6,7 @@ export class AsciiHeadersEncoder$NewlineType extends Enum<AsciiHeadersEncoder$Ne
     static LF: AsciiHeadersEncoder$NewlineType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AsciiHeadersEncoder$NewlineType;
-    static values(): (Object | null)[];
+    static values(): AsciiHeadersEncoder$NewlineType[];
     private constructor()
     name(): "LF" | "CRLF";
 }

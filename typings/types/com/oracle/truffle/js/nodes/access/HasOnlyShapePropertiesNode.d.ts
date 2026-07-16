@@ -4,7 +4,6 @@ import type { JSClass } from '../../../../../../com/oracle/truffle/js/runtime/bu
 import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
 export abstract class HasOnlyShapePropertiesNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(object: JSDynamicObject, jsclass: JSClass): boolean;
 }

@@ -11,7 +11,7 @@ export class CEntryPoint$Builtin extends Enum<CEntryPoint$Builtin> {
     static TEAR_DOWN_ISOLATE: CEntryPoint$Builtin;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CEntryPoint$Builtin;
-    static values(): (Object | null)[];
+    static values(): CEntryPoint$Builtin[];
     private constructor()
     name(): "NO_BUILTIN" | "CREATE_ISOLATE" | "ATTACH_THREAD" | "GET_CURRENT_THREAD" | "GET_ISOLATE" | "DETACH_THREAD" | "TEAR_DOWN_ISOLATE";
 }

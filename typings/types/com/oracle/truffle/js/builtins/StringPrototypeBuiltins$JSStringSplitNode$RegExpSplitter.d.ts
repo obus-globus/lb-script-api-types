@@ -6,7 +6,6 @@ import type { JSRegExpObject } from '../../../../../com/oracle/truffle/js/runtim
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class StringPrototypeBuiltins$JSStringSplitNode$RegExpSplitter extends StringPrototypeBuiltins$JSStringSplitNode$Splitter<JSRegExpObject> {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(node: Node, input: TruffleString, limit: number, regExp: JSRegExpObject, groupCount: number, parent: StringPrototypeBuiltins$JSStringSplitNode): Object[];
 }

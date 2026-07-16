@@ -6,7 +6,7 @@ export class Requirement$RequirementOperator extends Enum<Requirement$Requiremen
     static OR: Requirement$RequirementOperator;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Requirement$RequirementOperator;
-    static values(): (Object | null)[];
+    static values(): Requirement$RequirementOperator[];
     private constructor(arg2: string)
     // private s: string;
     asString(): string;

@@ -4,7 +4,7 @@ export class OceanMonumentPieces$RoomDefinition extends Object {
     constructor(roomIndex: number)
     // private claimed: boolean;
     // private connections: OceanMonumentPieces$RoomDefinition[];
-    // private hasOpening: (Object | null)[];
+    // private hasOpening: boolean[];
     // private index: number;
     // private isSource: boolean;
     // private scanIndex: number;

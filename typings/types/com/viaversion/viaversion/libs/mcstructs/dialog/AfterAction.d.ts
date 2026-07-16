@@ -8,7 +8,7 @@ export class AfterAction extends Enum<AfterAction> implements NamedType {
     static WAIT_FOR_RESPONSE: AfterAction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AfterAction;
-    static values(): (Object | null)[];
+    static values(): AfterAction[];
     private constructor(arg2: string)
     getName(): string;
     name(): "CLOSE" | "NONE" | "WAIT_FOR_RESPONSE";

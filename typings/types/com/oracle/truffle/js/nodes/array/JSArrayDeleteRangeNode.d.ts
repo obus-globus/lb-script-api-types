@@ -7,7 +7,6 @@ import type { ScriptArray } from '../../../../../../com/oracle/truffle/js/runtim
 import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
 export abstract class JSArrayDeleteRangeNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, orThrow: boolean)
     // private context: JSContext;
     // private orThrow: boolean;

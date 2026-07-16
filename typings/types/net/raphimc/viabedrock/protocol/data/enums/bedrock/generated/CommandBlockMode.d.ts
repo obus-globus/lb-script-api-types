@@ -11,7 +11,7 @@ export class CommandBlockMode extends Enum<CommandBlockMode> {
     static getByValue(paramarg0: number, paramarg1: CommandBlockMode): CommandBlockMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CommandBlockMode;
-    static values(): (Object | null)[];
+    static values(): CommandBlockMode[];
     private constructor(arg2: number)
     private constructor(arg2: CommandBlockMode)
     readonly value: number;

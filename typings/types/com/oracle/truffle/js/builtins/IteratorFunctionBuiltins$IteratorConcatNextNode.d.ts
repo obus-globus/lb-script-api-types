@@ -10,7 +10,6 @@ import type { JSIteratorHelperObject } from '../../../../../com/oracle/truffle/j
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class IteratorFunctionBuiltins$IteratorConcatNextNode extends IteratorPrototypeBuiltins$IteratorFromGeneratorNode$IteratorFromGeneratorImplNode<IteratorFunctionBuiltins$ConcatArgs> {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     copyUninitialized(): IteratorPrototypeBuiltins$IteratorFromGeneratorNode$IteratorFromGeneratorImplNode<IteratorFunctionBuiltins$ConcatArgs>;
     next(thisObj: JSIteratorHelperObject, getIteratorFromMethodNode: GetIteratorFromMethodNode, iteratorNextNode: IteratorNextNode, iteratorCompleteNode: IteratorCompleteNode, iteratorValueNode: IteratorValueNode): Object;

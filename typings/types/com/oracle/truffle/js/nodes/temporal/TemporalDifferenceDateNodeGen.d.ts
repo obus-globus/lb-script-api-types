@@ -7,7 +7,6 @@ import type { TemporalUtil$Unit } from '../../../../../../com/oracle/truffle/js/
 export class TemporalDifferenceDateNodeGen extends TemporalDifferenceDateNode {
     static create(): TemporalDifferenceDateNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private state_0_: number;
     execute(arg0Value: TruffleString, arg1Value: JSTemporalPlainDateObject, arg2Value: JSTemporalPlainDateObject, arg3Value: TemporalUtil$Unit): JSTemporalDurationObject;

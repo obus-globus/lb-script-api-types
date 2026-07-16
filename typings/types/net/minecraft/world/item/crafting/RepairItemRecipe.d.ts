@@ -15,7 +15,6 @@ export class RepairItemRecipe extends CustomRecipe {
     static KEY_CODEC: Codec<ResourceKey<Recipe<any>>>;
     static MAP_CODEC: MapCodec<RepairItemRecipe>;
     static SERIALIZER: RecipeSerializer<RepairItemRecipe>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<any>>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, RepairItemRecipe>;
     constructor()
     assemble(input: CraftingInput): ItemStack;

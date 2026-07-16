@@ -37,7 +37,7 @@ export class VarHandle$AccessMode extends Enum<VarHandle$AccessMode> {
     static valueFromMethodName(paramarg0: string): VarHandle$AccessMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): VarHandle$AccessMode;
-    static values(): (Object | null)[];
+    static values(): VarHandle$AccessMode[];
     private constructor(arg2: string, arg3: VarHandle$AccessType)
     // private at: VarHandle$AccessType;
     // private methodName: string;

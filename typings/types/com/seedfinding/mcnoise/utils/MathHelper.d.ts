@@ -1,6 +1,6 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class MathHelper extends Object {
-    static GRADIENTS: (Object | null)[];
+    static GRADIENTS: number[][];
     static dot(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: number): number;
     static floor(paramarg0: number): number;
     static grad(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): number;

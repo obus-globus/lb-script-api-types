@@ -7,7 +7,7 @@ export class Transformations$InjectionPoint extends Enum<Transformations$Injecti
     static END: Transformations$InjectionPoint;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Transformations$InjectionPoint;
-    static values(): (Object | null)[];
+    static values(): Transformations$InjectionPoint[];
     private constructor()
     name(): "DEFINES" | "BEFORE_CODE" | "END";
 }

@@ -6,7 +6,6 @@ import type { JSTemporalDurationObject } from '../../../../../../com/oracle/truf
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ToTemporalDurationNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(item: Object): JSTemporalDurationObject;
     toTemporalDuration(item: Object, toTemporalDurationRecord: ToTemporalDurationRecordNode, errorBranch: InlinedBranchProfile): JSTemporalDurationObject;

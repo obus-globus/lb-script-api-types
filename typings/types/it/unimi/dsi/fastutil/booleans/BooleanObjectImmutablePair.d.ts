@@ -4,7 +4,7 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BooleanObjectImmutablePair<V extends unknown> extends Object implements BooleanObjectPair<V>, Serializable {
-    static lexComparator(): (param0: Object) => boolean;
+    static lexComparator(): (param0: BooleanObjectPair<Object>, param1: BooleanObjectPair<Object>) => number;
     static of(paramarg0: boolean, paramarg1: Object | null): BooleanObjectImmutablePair<Object>;
     static of(paramarg0: boolean, paramarg1: Object | null): BooleanObjectPair<Object>;
     constructor(arg0: boolean, arg1: V)

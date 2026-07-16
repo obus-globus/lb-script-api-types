@@ -12,7 +12,7 @@ export class ModuleBlink$ResetAction extends Enum<ModuleBlink$ResetAction> imple
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleBlink$ResetAction;
-    static values(): (Object | null)[];
+    static values(): ModuleBlink$ResetAction[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "RESET" | "BLINK";

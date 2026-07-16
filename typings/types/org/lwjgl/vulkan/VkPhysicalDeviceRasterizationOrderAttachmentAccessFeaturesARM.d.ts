@@ -23,28 +23,21 @@ export class VkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesARM exten
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesEXT;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesEXT;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesARM;
     static create(paramarg0: number): VkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesARM;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesEXT;
     static create(paramarg0: number): VkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesEXT;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesARM;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesEXT;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesARM;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesARM;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesEXT;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesEXT;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static nrasterizationOrderColorAttachmentAccess(paramarg0: number): number;
@@ -55,7 +48,6 @@ export class VkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesARM exten
     static nrasterizationOrderStencilAttachmentAccess(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

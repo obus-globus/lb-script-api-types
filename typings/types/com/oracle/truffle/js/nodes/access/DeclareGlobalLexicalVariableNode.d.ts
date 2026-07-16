@@ -11,7 +11,6 @@ import type { Class } from '../../../../../../java/lang/Class.d.ts'
 export abstract class DeclareGlobalLexicalVariableNode extends DeclareGlobalNode {
     static create(paramvarName: TruffleString, paramisConst: boolean): DeclareGlobalLexicalVariableNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(varName: TruffleString, isConst: boolean)
     // private hasRestrictedGlobalPropertyNode: HasRestrictedGlobalPropertyNode;
     // private isConst: boolean;

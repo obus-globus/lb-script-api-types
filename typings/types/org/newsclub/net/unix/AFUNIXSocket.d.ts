@@ -1,6 +1,5 @@
 import type { FileDescriptor } from '../../../../java/io/FileDescriptor.d.ts'
 import type { SocketImplFactory } from '../../../../java/net/SocketImplFactory.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { AFSocket } from '../../../../org/newsclub/net/unix/AFSocket.d.ts'
 import type { AFSocketAddress } from '../../../../org/newsclub/net/unix/AFSocketAddress.d.ts'
 import type { AFSocketCapability } from '../../../../org/newsclub/net/unix/AFSocketCapability.d.ts'
@@ -19,7 +18,7 @@ export class AFUNIXSocket extends AFSocket<AFUNIXSocketAddress> implements AFUNI
     static getVersion(): string;
     static isRunningOnAndroid(): boolean;
     static isSupported(): boolean;
-    static main(paramarg0: (Object | null)[]): void;
+    static main(paramarg0: string[]): void;
     static newInstance(): AFUNIXSocket;
     static newStrictInstance(): AFUNIXSocket;
     static setSocketImplFactory(paramarg0: SocketImplFactory): void;

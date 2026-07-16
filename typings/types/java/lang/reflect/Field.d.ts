@@ -12,7 +12,7 @@ import type { FieldRepository } from '../../../sun/reflect/generics/repository/F
 export class Field extends AccessibleObject implements Member {
     static DECLARED: number;
     static PUBLIC: number;
-    static setAccessible(paramarg0: (Object | null)[], paramarg1: boolean): void;
+    static setAccessible(paramarg0: AccessibleObject[], paramarg1: boolean): void;
     constructor(arg0: Class<Object>, arg1: string, arg2: Class<Object>, arg3: number, arg4: boolean, arg5: number, arg6: string, arg7: number[])
     accessFlags(): AccessFlag[];
     // private acquireFieldAccessor(): FieldAccessor;

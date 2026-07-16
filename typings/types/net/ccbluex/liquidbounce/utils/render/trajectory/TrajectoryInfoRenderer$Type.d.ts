@@ -7,7 +7,7 @@ export class TrajectoryInfoRenderer$Type extends Enum<TrajectoryInfoRenderer$Typ
     static getEntries(): TrajectoryInfoRenderer$Type[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TrajectoryInfoRenderer$Type;
-    static values(): (Object | null)[];
+    static values(): TrajectoryInfoRenderer$Type[];
     private constructor()
     name(): "HYPOTHETICAL" | "REAL";
 }

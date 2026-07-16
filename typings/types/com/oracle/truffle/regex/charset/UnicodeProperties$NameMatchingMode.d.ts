@@ -7,7 +7,7 @@ export class UnicodeProperties$NameMatchingMode extends Enum<UnicodeProperties$N
     static ruby: UnicodeProperties$NameMatchingMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): UnicodeProperties$NameMatchingMode;
-    static values(): (Object | null)[];
+    static values(): UnicodeProperties$NameMatchingMode[];
     private constructor()
     normalize(name: string): string;
     name(): "exact" | "ignoreCase" | "ruby";

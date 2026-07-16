@@ -20,7 +20,6 @@ export class BigDecimal extends Number implements Comparable<BigDecimal> {
     static TWO: BigDecimal;
     static ZERO: BigDecimal;
     static valueOf(paramarg0: number): BigDecimal;
-    static valueOf(paramarg0: number): BigDecimal;
     static valueOf(paramarg0: number, paramarg1: number): BigDecimal;
     constructor(arg0: BigInteger)
     constructor(arg0: BigInteger, arg1: MathContext)

@@ -3,7 +3,6 @@ import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { IntFunction } from '../../../../../java/util/function/IntFunction.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Direction } from '../../../../../net/minecraft/core/Direction.d.ts'
 import type { Direction$Axis } from '../../../../../net/minecraft/core/Direction$Axis.d.ts'
@@ -21,7 +20,6 @@ import type { LevelAccessor } from '../../../../../net/minecraft/world/level/Lev
 import type { LevelReader } from '../../../../../net/minecraft/world/level/LevelReader.d.ts'
 import type { Block } from '../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { ChainBlock } from '../../../../../net/minecraft/world/level/block/ChainBlock.d.ts'
-import type { RotatedPillarBlock } from '../../../../../net/minecraft/world/level/block/RotatedPillarBlock.d.ts'
 import type { Rotation } from '../../../../../net/minecraft/world/level/block/Rotation.d.ts'
 import type { WeatheringCopper } from '../../../../../net/minecraft/world/level/block/WeatheringCopper.d.ts'
 import type { WeatheringCopper$WeatherState } from '../../../../../net/minecraft/world/level/block/WeatheringCopper$WeatherState.d.ts'
@@ -34,9 +32,6 @@ import type { VoxelShape } from '../../../../../net/minecraft/world/phys/shapes/
 export class WeatheringCopperChainBlock extends ChainBlock implements WeatheringCopper {
     static AXIS: EnumProperty<Direction$Axis>;
     static BLOCK_STATE_REGISTRY: BlockState[];
-    static CODEC: MapCodec<Block>;
-    static CODEC: MapCodec<ChainBlock>;
-    static CODEC: MapCodec<RotatedPillarBlock>;
     static CODEC: MapCodec<WeatheringCopperChainBlock>;
     static FILTERED_REGISTRIES: ResourceKey<FeatureElement[]>[];
     static INDESTRUCTIBLE: number;
@@ -64,7 +59,7 @@ export class WeatheringCopperChainBlock extends ChainBlock implements Weathering
     static boxZ(paramsizeXY: number, paramminZ: number, parammaxZ: number): VoxelShape;
     static boxZ(paramsizeX: number, paramsizeY: number, paramminZ: number, parammaxZ: number): VoxelShape;
     static boxZ(paramsizeX: number, paramminY: number, parammaxY: number, paramminZ: number, parammaxZ: number): VoxelShape;
-    static boxes(paramendInclusive: number, paramvoxelShapeFactory: (param0: number) => VoxelShape): (Object | null)[];
+    static boxes(paramendInclusive: number, paramvoxelShapeFactory: (param0: number) => VoxelShape): VoxelShape[];
     static byItem(paramitem: Item): Block;
     static canSupportCenter(paramlevel: LevelReader, parambelowPos: BlockPos, paramdirection: Direction): boolean;
     static canSupportRigidBlock(paramlevel: BlockGetter, parambelow: BlockPos): boolean;

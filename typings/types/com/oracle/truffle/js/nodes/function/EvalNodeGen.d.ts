@@ -14,15 +14,14 @@ import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class EvalNodeGen extends EvalNode {
     static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
-    static create(paramcontext: JSContext, paramfunctionNode: JavaScriptNode, paramargs: (Object | null)[], paramthisObject: JavaScriptNode, paramenv: Object, paramblockScopeSlot: JSFrameSlot): EvalNode;
-    static create(paramcontext: JSContext, paramfunction: JavaScriptNode, paramargs: (Object | null)[], paramthisObject: JavaScriptNode, paramenv: Object, paramblockScopeSlot: number): EvalNode;
+    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
+    static create(paramcontext: JSContext, paramfunctionNode: JavaScriptNode, paramargs: JavaScriptNode[], paramthisObject: JavaScriptNode, paramenv: Object, paramblockScopeSlot: JSFrameSlot): EvalNode;
+    static create(paramcontext: JSContext, paramfunction: JavaScriptNode, paramargs: JavaScriptNode[], paramthisObject: JavaScriptNode, paramenv: Object, paramblockScopeSlot: number): EvalNode;
     static create(paramcontext: JSContext, paramfunctionNode: JavaScriptNode, paramarguments: AbstractFunctionArgumentsNode, paramdirectEvalNode: EvalNode$DirectEvalNode): EvalNode;
     static findActiveScriptOrModule(paramcallNode: Node): ScriptOrModule;
     static findBlockScopeNode(paramnode: Node): Node;
     static findCallNode(paramrealm: JSRealm): Node;
     static formatEvalOrigin(paramcallNode: Node, paramcontext: JSContext, paramdefaultName: string): string;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;

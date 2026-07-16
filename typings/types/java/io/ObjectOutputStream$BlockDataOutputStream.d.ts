@@ -1,7 +1,6 @@
 import type { DataOutput } from '../../java/io/DataOutput.d.ts'
 import type { DataOutputStream } from '../../java/io/DataOutputStream.d.ts'
 import type { OutputStream } from '../../java/io/OutputStream.d.ts'
-import type { Object } from '../../java/lang/Object.d.ts'
 export class ObjectOutputStream$BlockDataOutputStream extends OutputStream implements DataOutput {
     static nullOutputStream(): OutputStream;
     constructor(arg0: OutputStream)
@@ -23,7 +22,7 @@ export class ObjectOutputStream$BlockDataOutputStream extends OutputStream imple
     write(arg0: number): void;
     // private writeBlockHeader(arg0: number): void;
     writeBoolean(arg0: boolean): void;
-    writeBooleans(arg0: (Object | null)[], arg1: number, arg2: number): void;
+    writeBooleans(arg0: boolean[], arg1: number, arg2: number): void;
     writeByte(arg0: number): void;
     writeBytes(arg0: string): void;
     writeBytes(arg0: string, arg1: number): void;

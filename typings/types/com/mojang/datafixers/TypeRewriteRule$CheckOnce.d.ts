@@ -18,7 +18,7 @@ export class TypeRewriteRule$CheckOnce extends Record implements TypeRewriteRule
     static orElse(paramarg0: TypeRewriteRule, paramarg1: TypeRewriteRule): TypeRewriteRule;
     static orElse(paramarg0: TypeRewriteRule, paramarg1: () => TypeRewriteRule): TypeRewriteRule;
     static seq(paramarg0: TypeRewriteRule, paramarg1: TypeRewriteRule): TypeRewriteRule;
-    static seq(paramarg0: TypeRewriteRule, ...paramarg1: (Object | null)[]): TypeRewriteRule;
+    static seq(paramarg0: TypeRewriteRule, ...paramarg1: TypeRewriteRule[]): TypeRewriteRule;
     static seq(paramarg0: TypeRewriteRule[]): TypeRewriteRule;
     constructor(rule: TypeRewriteRule, onFail: (param0: Type<Object>) => void)
     // private onFail: (param0: Type<Object>) => void;

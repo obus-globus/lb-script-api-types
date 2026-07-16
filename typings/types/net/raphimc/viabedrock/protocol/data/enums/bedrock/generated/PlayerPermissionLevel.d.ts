@@ -12,7 +12,7 @@ export class PlayerPermissionLevel extends Enum<PlayerPermissionLevel> {
     static getByValue(paramarg0: number, paramarg1: PlayerPermissionLevel): PlayerPermissionLevel;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PlayerPermissionLevel;
-    static values(): (Object | null)[];
+    static values(): PlayerPermissionLevel[];
     private constructor(arg2: number)
     private constructor(arg2: PlayerPermissionLevel)
     readonly value: number;

@@ -9,7 +9,7 @@ export class LazyThreadSafetyMode extends Enum<LazyThreadSafetyMode> implements 
     static getEntries(): LazyThreadSafetyMode[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LazyThreadSafetyMode;
-    static values(): (Object | null)[];
+    static values(): LazyThreadSafetyMode[];
     private constructor()
     name(): "SYNCHRONIZED" | "PUBLICATION" | "NONE";
 }

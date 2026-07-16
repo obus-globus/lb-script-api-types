@@ -7,7 +7,7 @@ export class NameAbbreviator$MaxElementAbbreviator$Strategy extends Enum<NameAbb
     static RETAIN: NameAbbreviator$MaxElementAbbreviator$Strategy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): NameAbbreviator$MaxElementAbbreviator$Strategy;
-    static values(): (Object | null)[];
+    static values(): NameAbbreviator$MaxElementAbbreviator$Strategy[];
     constructor(arg2: number, arg3: any)
     // private minCount: number;
     abbreviate(count: number, original: string, destination: StringBuilder): void;

@@ -5,8 +5,8 @@ import type { Diff } from '../../../../../org/apache/commons/lang3/builder/Diff.
 import type { DiffBuilder$SerializableSupplier } from '../../../../../org/apache/commons/lang3/builder/DiffBuilder$SerializableSupplier.d.ts'
 import type { Pair } from '../../../../../org/apache/commons/lang3/tuple/Pair.d.ts'
 export class DiffBuilder$SDiff<T extends unknown> extends Diff<T> {
-    static EMPTY_ARRAY: Object | null;
-    static emptyArray(): Object | null;
+    static EMPTY_ARRAY: Pair<Object, Object>[];
+    static emptyArray(): Pair<Object, Object>[];
     static of(paramarg0: Object | null, paramarg1: Object | null): Pair<Object, Object>;
     static of(paramarg0: Map$Entry<Object, Object>): Pair<Object, Object>;
     static ofNonNull(paramarg0: Object | null, paramarg1: Object | null): Pair<Object, Object>;

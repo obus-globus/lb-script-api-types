@@ -4,7 +4,7 @@ import type { Annotation } from '../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class AnnotationAccess extends Object {
     static getAnnotation(paramelement: AnnotatedElement, paramannotationType: Class<Annotation>): Annotation | null;
-    static getAnnotationTypes(paramelement: AnnotatedElement): Object | null;
+    static getAnnotationTypes(paramelement: AnnotatedElement): Class<Annotation>[];
     static isAnnotationPresent(paramelement: AnnotatedElement, paramannotationClass: Class<Annotation>): boolean;
     private constructor()
 }

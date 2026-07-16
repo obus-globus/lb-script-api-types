@@ -8,7 +8,7 @@ export class DayPeriodRules$CutoffType extends Enum<DayPeriodRules$CutoffType> {
     static FROM: DayPeriodRules$CutoffType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DayPeriodRules$CutoffType;
-    static values(): (Object | null)[];
+    static values(): DayPeriodRules$CutoffType[];
     private constructor()
     name(): "BEFORE" | "AFTER" | "FROM" | "AT";
 }

@@ -32,8 +32,8 @@ export class RuleBasedBreakIterator extends BreakIterator implements Cloneable {
     static WORD_NUMBER_LIMIT: number;
     static fDebugEnv: string;
     static compileRules(paramarg0: string, paramarg1: OutputStream): void;
-    static getAvailableLocales(): (Object | null)[];
-    static getAvailableULocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
+    static getAvailableULocales(): ULocale[];
     static getBreakInstance(paramarg0: ULocale, paramarg1: number): BreakIterator;
     static getCharacterInstance(): BreakIterator;
     static getCharacterInstance(paramarg0: ULocale): BreakIterator;

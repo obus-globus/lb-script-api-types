@@ -25,7 +25,7 @@ export class NamedInstantPattern extends Enum<NamedInstantPattern> {
     static US_MONTH_DAY_YEAR4_TIME: NamedInstantPattern;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): NamedInstantPattern;
-    static values(): (Object | null)[];
+    static values(): NamedInstantPattern[];
     private constructor(pattern: string)
     private constructor(pattern: string, legacyPattern: string)
     // private legacyPattern: string;

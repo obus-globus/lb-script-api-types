@@ -10,7 +10,7 @@ export class PipeStatus extends Enum<PipeStatus> {
     static UNINITIALIZED: PipeStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PipeStatus;
-    static values(): (Object | null)[];
+    static values(): PipeStatus[];
     private constructor()
     name(): "UNINITIALIZED" | "CONNECTING" | "CONNECTED" | "CLOSING" | "CLOSED" | "DISCONNECTED";
 }

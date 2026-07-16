@@ -7,7 +7,7 @@ export class RegistryAttribute extends Enum<RegistryAttribute> {
     static SYNCED: RegistryAttribute;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RegistryAttribute;
-    static values(): (Object | null)[];
+    static values(): RegistryAttribute[];
     private constructor()
     name(): "SYNCED" | "MODDED" | "OPTIONAL";
 }

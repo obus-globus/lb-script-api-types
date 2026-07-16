@@ -8,7 +8,7 @@ export class ModLoadCondition extends Enum<ModLoadCondition> {
     static IF_RECOMMENDED: ModLoadCondition;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModLoadCondition;
-    static values(): (Object | null)[];
+    static values(): ModLoadCondition[];
     private constructor()
     name(): "ALWAYS" | "IF_POSSIBLE" | "IF_RECOMMENDED" | "IF_NEEDED";
 }

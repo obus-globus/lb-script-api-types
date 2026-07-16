@@ -7,7 +7,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PrivateFieldAddNodeGen extends PrivateFieldAddNode {
     static create(): PrivateFieldAddNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private fieldAdd0_cache: PrivateFieldAddNodeGen$FieldAdd0Data;
     // private state_0_: number;

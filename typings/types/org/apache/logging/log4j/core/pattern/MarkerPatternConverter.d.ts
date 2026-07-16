@@ -4,7 +4,7 @@ import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/L
 import type { LogEventPatternConverter } from '../../../../../../org/apache/logging/log4j/core/pattern/LogEventPatternConverter.d.ts'
 export class MarkerPatternConverter extends LogEventPatternConverter {
     static CATEGORY: string;
-    static newInstance(paramoptions: (Object | null)[]): MarkerPatternConverter;
+    static newInstance(paramoptions: string[]): MarkerPatternConverter;
     private constructor(options: string[])
     format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, toAppendTo: StringBuilder): void;

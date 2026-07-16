@@ -7,7 +7,7 @@ export class SpearAttack$SpearStatus extends Enum<SpearAttack$SpearStatus> {
     static RETREAT: SpearAttack$SpearStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SpearAttack$SpearStatus;
-    static values(): (Object | null)[];
+    static values(): SpearAttack$SpearStatus[];
     private constructor()
     name(): "APPROACH" | "CHARGING" | "RETREAT";
 }

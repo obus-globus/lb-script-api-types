@@ -5,7 +5,6 @@ export class ShortSets extends Object {
     static from(paramarg0: number): (Object | null)[];
     static fromTo(paramarg0: number, paramarg1: number): (Object | null)[];
     static singleton(paramarg0: number): (Object | null)[];
-    static singleton(paramarg0: number): (Object | null)[];
     static synchronize(paramarg0: (Object | null)[]): (Object | null)[];
     static synchronize(paramarg0: (Object | null)[], paramarg1: Object): (Object | null)[];
     static to(paramarg0: number): (Object | null)[];

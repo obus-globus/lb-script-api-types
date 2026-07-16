@@ -8,7 +8,7 @@ export class ProcessInformation$IdleProcessorTimeProperty extends Enum<ProcessIn
     static PERCENTPROCESSORTIME: ProcessInformation$IdleProcessorTimeProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ProcessInformation$IdleProcessorTimeProperty;
-    static values(): (Object | null)[];
+    static values(): ProcessInformation$IdleProcessorTimeProperty[];
     private constructor(arg2: string)
     readonly counter: string;
     getCounter(): string;

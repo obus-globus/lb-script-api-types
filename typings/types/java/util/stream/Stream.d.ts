@@ -49,8 +49,8 @@ export interface Stream<T extends unknown> extends BaseStream<T, Stream<T>>, Obj
     mapToDouble(arg0: (param0: T) => number): DoubleStream;
     mapToInt(arg0: (param0: T) => number): IntStream;
     mapToLong(arg0: (param0: T) => number): LongStream;
-    max(arg0: (param0: Object) => boolean): Optional<T>;
-    min(arg0: (param0: Object) => boolean): Optional<T>;
+    max(arg0: (param0: T, param1: T) => number): Optional<T>;
+    min(arg0: (param0: T, param1: T) => number): Optional<T>;
     noneMatch(arg0: (param0: T) => boolean): boolean;
     peek(arg0: (param0: T) => void): Stream<T>;
     reduce(arg0: T, arg1: (param0: T, param1: Object | null) => Object | null): T;
@@ -58,7 +58,7 @@ export interface Stream<T extends unknown> extends BaseStream<T, Stream<T>>, Obj
     reduce(arg0: (param0: T, param1: Object | null) => Object | null): Optional<T>;
     skip(arg0: number): Stream<T>;
     sorted(): Stream<T>;
-    sorted(arg0: (param0: Object) => boolean): Stream<T>;
+    sorted(arg0: (param0: T, param1: T) => number): Stream<T>;
     takeWhile(arg0: (param0: T) => boolean): Stream<T>;
     toArray(): Object[];
     toArray<A extends unknown>(arg0: (param0: number) => A[]): A[];

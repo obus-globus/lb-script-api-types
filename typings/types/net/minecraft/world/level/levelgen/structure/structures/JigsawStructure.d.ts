@@ -19,7 +19,6 @@ import type { PoolAliasBinding } from '../../../../../../../net/minecraft/world/
 import type { JigsawStructure$MaxDistance } from '../../../../../../../net/minecraft/world/level/levelgen/structure/structures/JigsawStructure$MaxDistance.d.ts'
 import type { LiquidSettings } from '../../../../../../../net/minecraft/world/level/levelgen/structure/templatesystem/LiquidSettings.d.ts'
 export class JigsawStructure extends Structure {
-    static CODEC: Codec<Holder<Structure>>;
     static CODEC: MapCodec<JigsawStructure>;
     static DEFAULT_DIMENSION_PADDING: DimensionPadding;
     static DEFAULT_LIQUID_SETTINGS: LiquidSettings;

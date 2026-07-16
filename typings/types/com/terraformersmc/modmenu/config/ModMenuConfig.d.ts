@@ -8,6 +8,7 @@ import type { BooleanConfigOption } from '../../../../com/terraformersmc/modmenu
 import type { EnumConfigOption } from '../../../../com/terraformersmc/modmenu/config/option/EnumConfigOption.d.ts'
 import type { StringSetConfigOption } from '../../../../com/terraformersmc/modmenu/config/option/StringSetConfigOption.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { OptionInstance } from '../../../../net/minecraft/client/OptionInstance.d.ts'
 export class ModMenuConfig extends Object {
     static BUTTON_UPDATE_BADGE: BooleanConfigOption;
     static COMPACT_LIST: BooleanConfigOption;
@@ -38,6 +39,6 @@ export class ModMenuConfig extends Object {
     static TRANSLATE_NAMES: BooleanConfigOption;
     static UPDATE_CHANNEL: EnumConfigOption<UpdateChannel>;
     static UPDATE_CHECKER: BooleanConfigOption;
-    static asOptions(): Object | null;
+    static asOptions(): OptionInstance<Object>[];
     constructor()
 }

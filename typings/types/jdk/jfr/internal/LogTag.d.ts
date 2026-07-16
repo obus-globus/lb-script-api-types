@@ -23,7 +23,7 @@ export class LogTag extends Enum<LogTag> {
     static JFR_SYSTEM_THROTTLE: LogTag;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LogTag;
-    static values(): (Object | null)[];
+    static values(): LogTag[];
     private constructor(arg2: number)
     // private id: number;
     // private tagSetLevel: number;

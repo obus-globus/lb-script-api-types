@@ -7,7 +7,7 @@ export class CacheBuilder$NullListener extends Enum<CacheBuilder$NullListener> i
     static INSTANCE: CacheBuilder$NullListener;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CacheBuilder$NullListener;
-    static values(): (Object | null)[];
+    static values(): CacheBuilder$NullListener[];
     private constructor()
     onRemoval(notification: RemovalNotification<Object, Object>): void;
     name(): "INSTANCE";

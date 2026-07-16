@@ -7,7 +7,7 @@ export class ServerboundClientCommandPacket$Action extends Enum<ServerboundClien
     static REQUEST_STATS: ServerboundClientCommandPacket$Action;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ServerboundClientCommandPacket$Action;
-    static values(): (Object | null)[];
+    static values(): ServerboundClientCommandPacket$Action[];
     private constructor()
     name(): "PERFORM_RESPAWN" | "REQUEST_STATS" | "REQUEST_GAMERULE_VALUES";
 }

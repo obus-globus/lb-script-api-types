@@ -8,7 +8,7 @@ export class BooleanParser$Operation extends Enum<BooleanParser$Operation> {
     static OR: BooleanParser$Operation;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BooleanParser$Operation;
-    static values(): (Object | null)[];
+    static values(): BooleanParser$Operation[];
     private constructor()
     compute(arg0: boolean, arg1: boolean[]): boolean;
     name(): "AND" | "OR" | "NOT" | "OPEN";

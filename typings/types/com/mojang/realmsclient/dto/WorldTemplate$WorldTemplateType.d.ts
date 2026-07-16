@@ -9,7 +9,7 @@ export class WorldTemplate$WorldTemplateType extends Enum<WorldTemplate$WorldTem
     static WORLD_TEMPLATE: WorldTemplate$WorldTemplateType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): WorldTemplate$WorldTemplateType;
-    static values(): (Object | null)[];
+    static values(): WorldTemplate$WorldTemplateType[];
     private constructor()
     name(): "WORLD_TEMPLATE" | "MINIGAME" | "ADVENTUREMAP" | "EXPERIENCE" | "INSPIRATION";
 }

@@ -12,7 +12,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ToTemporalYearMonthNodeGen extends ToTemporalYearMonthNode {
     static create(): ToTemporalYearMonthNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private fromJavaString_: TruffleString$FromJavaStringNode;
     // private getCalendarWithISODefault_: GetTemporalCalendarIdentifierWithISODefaultNode;

@@ -6,7 +6,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ArrayPrototypeBuiltinsFactory$FlattenIntoArrayNodeGen extends ArrayPrototypeBuiltins$FlattenIntoArrayNode {
     static create(paramcontext: JSContext, paramwithMapCallback: boolean): ArrayPrototypeBuiltins$FlattenIntoArrayNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, withMapCallback: boolean)
     // private state_0_: number;
     // private toObjectNode_: JSToObjectNode;

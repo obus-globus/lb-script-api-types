@@ -8,7 +8,7 @@ import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BooleanComparators$NaturalImplicitComparator extends Object implements BooleanComparator, Serializable {
     static comparing(paramarg0: (param0: boolean) => Object | null): (param0: boolean, param1: boolean) => number;
-    static comparing(paramarg0: (param0: boolean) => Object | null, paramarg1: (param0: Object) => boolean): (param0: boolean, param1: boolean) => number;
+    static comparing(paramarg0: (param0: boolean) => Object | null, paramarg1: (param0: Object, param1: Object) => number): (param0: boolean, param1: boolean) => number;
     static comparingDouble(paramarg0: (param0: boolean) => number): (param0: boolean, param1: boolean) => number;
     static comparingInt(paramarg0: (param0: boolean) => number): (param0: boolean, param1: boolean) => number;
     static comparingLong(paramarg0: (param0: boolean) => number): (param0: boolean, param1: boolean) => number;
@@ -17,5 +17,4 @@ export class BooleanComparators$NaturalImplicitComparator extends Object impleme
     // private readResolve(): Object;
     reversed(): (param0: boolean, param1: boolean) => number;
     thenComparing(arg0: (param0: boolean, param1: boolean) => number): (param0: boolean, param1: boolean) => number;
-    thenComparing(arg0: (param0: Object) => boolean): (param0: Object) => boolean;
 }

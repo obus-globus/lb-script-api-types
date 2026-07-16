@@ -8,7 +8,7 @@ export class ResourceReloaderPhaseData$VanillaStatus extends Enum<ResourceReload
     static VANILLA: ResourceReloaderPhaseData$VanillaStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ResourceReloaderPhaseData$VanillaStatus;
-    static values(): (Object | null)[];
+    static values(): ResourceReloaderPhaseData$VanillaStatus[];
     private constructor()
     name(): "NONE" | "AFTER" | "BEFORE" | "VANILLA";
 }

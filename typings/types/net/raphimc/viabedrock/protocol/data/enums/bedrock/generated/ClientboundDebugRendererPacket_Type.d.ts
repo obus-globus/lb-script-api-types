@@ -11,7 +11,7 @@ export class ClientboundDebugRendererPacket_Type extends Enum<ClientboundDebugRe
     static getByValue(paramarg0: number, paramarg1: ClientboundDebugRendererPacket_Type): ClientboundDebugRendererPacket_Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClientboundDebugRendererPacket_Type;
-    static values(): (Object | null)[];
+    static values(): ClientboundDebugRendererPacket_Type[];
     private constructor(arg2: number)
     private constructor(arg2: ClientboundDebugRendererPacket_Type)
     readonly value: number;

@@ -5,13 +5,16 @@ import type { EventListener } from '../../../../../net/ccbluex/liquidbounce/even
 import type { GameRenderEvent } from '../../../../../net/ccbluex/liquidbounce/event/events/GameRenderEvent.d.ts'
 import type { BrowserBackend } from '../../../../../net/ccbluex/liquidbounce/integration/backend/BrowserBackend.d.ts'
 import type { TaskManager } from '../../../../../net/ccbluex/liquidbounce/integration/task/TaskManager.d.ts'
+import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Logger } from '../../../../../org/apache/logging/log4j/Logger.d.ts'
 export class BrowserBackendManager extends Object implements EventListener {
     static INSTANCE: BrowserBackendManager;
     backend: BrowserBackend | null;
+    readonly debugDisplayName: Component;
     // private gameRenderHandler: EventHook<GameRenderEvent>;
     /*not mapped: */ isInitialized(): boolean;
     // private logger: Logger;
+    readonly running: boolean;
     children(): EventListener[];
     /**
      * Causes an update of every browser by re-setting their viewport.

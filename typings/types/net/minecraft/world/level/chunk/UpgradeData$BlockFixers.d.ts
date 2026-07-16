@@ -11,12 +11,12 @@ export class UpgradeData$BlockFixers extends Enum<UpgradeData$BlockFixers> imple
     static BLACKLIST: UpgradeData$BlockFixers;
     static CHEST: UpgradeData$BlockFixers;
     static DEFAULT: UpgradeData$BlockFixers;
-    static DIRECTIONS: (Object | null)[];
+    static DIRECTIONS: Direction[];
     static LEAVES: UpgradeData$BlockFixers;
     static STEM_BLOCK: UpgradeData$BlockFixers;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): UpgradeData$BlockFixers;
-    static values(): (Object | null)[];
+    static values(): UpgradeData$BlockFixers[];
     private constructor(...blocks: Block[])
     private constructor(chunky: boolean, ...blocks: Block[])
     processChunk(level: LevelAccessor): void;

@@ -6,7 +6,6 @@ export class IsPrimitiveNodeGen extends IsPrimitiveNode {
     static create(): IsPrimitiveNode;
     static getUncached(): IsPrimitiveNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private foreignObject0_cache: IsPrimitiveNodeGen$ForeignObject0Data;
     // private state_0_: number;

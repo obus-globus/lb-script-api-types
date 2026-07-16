@@ -6,7 +6,7 @@ export class TimeZoneGenericNames$Pattern extends Enum<TimeZoneGenericNames$Patt
     static REGION_FORMAT: TimeZoneGenericNames$Pattern;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TimeZoneGenericNames$Pattern;
-    static values(): (Object | null)[];
+    static values(): TimeZoneGenericNames$Pattern[];
     private constructor(arg2: string, arg3: string)
     // private _defaultVal: string;
     // private _key: string;

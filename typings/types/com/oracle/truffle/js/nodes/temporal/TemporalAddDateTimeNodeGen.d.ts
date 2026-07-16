@@ -8,7 +8,6 @@ import type { TemporalUtil$Overflow } from '../../../../../../com/oracle/truffle
 export class TemporalAddDateTimeNodeGen extends TemporalAddDateTimeNode {
     static create(): TemporalAddDateTimeNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private addDateNode_: TemporalAddDateNode;
     // private state_0_: number;

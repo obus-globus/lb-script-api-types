@@ -1,4 +1,3 @@
-import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -8,7 +7,6 @@ import type { DensityFunction$ContextProvider } from '../../../../../net/minecra
 import type { DensityFunction$FunctionContext } from '../../../../../net/minecraft/world/level/levelgen/DensityFunction$FunctionContext.d.ts'
 import type { DensityFunction$Visitor } from '../../../../../net/minecraft/world/level/levelgen/DensityFunction$Visitor.d.ts'
 export class DensityFunctions$RangeChoice extends Record implements DensityFunction {
-    static CODEC: Codec<DensityFunction>;
     static CODEC: KeyDispatchDataCodec<DensityFunctions$RangeChoice>;
     static DATA_CODEC: MapCodec<DensityFunctions$RangeChoice>;
     private constructor(input: DensityFunction, minInclusive: number, maxExclusive: number, whenInRange: DensityFunction, whenOutOfRange: DensityFunction)

@@ -4,7 +4,6 @@ import type { ReadElementNode } from '../../../../../../com/oracle/truffle/js/no
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ReadElementNode$ReadElementTypeCacheDispatchNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     executeTypeDispatch(target: Object, index: Object, receiver: Object, defaultValue: Object, root: ReadElementNode): Object;
     executeTypeDispatch(target: Object, index: Object, receiver: Object, defaultValue: Object, root: ReadElementNode, indexIsLong: boolean): Object;

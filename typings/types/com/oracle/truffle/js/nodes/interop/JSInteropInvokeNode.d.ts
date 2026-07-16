@@ -11,7 +11,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSInteropInvokeNode extends JSInteropCallNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     createGetProperty(name: TruffleString): PropertyGetNode;
     doCached(receiver: JSDynamicObject, name: TruffleString, arguments: Object[], cachedName: TruffleString, equalNode: TruffleString$EqualNode, functionPropertyGetNode: PropertyGetNode, isCallableNode: IsCallableNode, callNode: JSFunctionCallNode, importValueNode: ImportValueNode): Object;

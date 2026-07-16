@@ -1,3 +1,4 @@
+import type { Gson } from '../../../../../com/google/gson/Gson.d.ts'
 import type { UnaryOperator } from '../../../../../java/util/function/UnaryOperator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { CancellableEvent } from '../../../../../net/ccbluex/liquidbounce/event/CancellableEvent.d.ts'
@@ -11,6 +12,8 @@ export class ChatReceiveEvent extends CancellableEvent implements WebSocketEvent
     constructor(message: string, textData: Component, type: ChatReceiveEvent$ChatType, applyChatDecoration: (param0: Component) => Object | null)
     readonly applyChatDecoration: (param0: Component) => Object | null;
     readonly message: string;
+    readonly serializeAsync: boolean;
+    readonly serializer: Gson;
     readonly textData: Component;
     readonly type: ChatReceiveEvent$ChatType;
 }

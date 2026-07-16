@@ -23,7 +23,7 @@ export class LanguageManager$ClientLanguage extends Enum<LanguageManager$ClientL
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LanguageManager$ClientLanguage;
-    static values(): (Object | null)[];
+    static values(): LanguageManager$ClientLanguage[];
     private constructor(tag: string, code: string | null)
     readonly code: string | null;
     readonly tag: string;

@@ -7,7 +7,6 @@ import type { JSDynamicObject } from '../../../../../com/oracle/truffle/js/runti
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class RegExpPrototypeBuiltins$JSRegExpReplaceNode$ReplaceAccordingToSpecNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(rx: JSDynamicObject, s: TruffleString, replaceValue: Object, functionalReplace: boolean, context: JSContext, parent: RegExpPrototypeBuiltins$JSRegExpReplaceNode): TruffleString;
 }

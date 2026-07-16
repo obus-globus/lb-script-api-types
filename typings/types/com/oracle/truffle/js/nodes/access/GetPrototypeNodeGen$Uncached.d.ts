@@ -8,7 +8,6 @@ export class GetPrototypeNodeGen$Uncached extends GetPrototypeNode implements Un
     static create(paramobject: JavaScriptNode): JavaScriptNode;
     static create(): GetPrototypeNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     execute(arg0Value: JSDynamicObject): JSDynamicObject;
     execute(arg0Value: Object): JSDynamicObject;

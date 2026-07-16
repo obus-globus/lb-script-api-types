@@ -20,7 +20,7 @@ import type { LootItemCondition$Builder } from '../../../../../../../net/minecra
 import type { Logger } from '../../../../../../../org/slf4j/Logger.d.ts'
 export abstract class FabricBlockLootSubProvider extends BlockLootSubProvider implements FabricLootTableSubProvider {
     static FIXED_ORDER_FIELDS: (param0: string) => number;
-    static KEY_COMPARATOR: (param0: Object) => boolean;
+    static KEY_COMPARATOR: (param0: string, param1: string) => number;
     static LOGGER: Logger;
     static createCandleCakeDrops(paramcandle: Block): LootTable$Builder;
     static createSelfDropDispatchTable(paramoriginal: Block, paramcondition: () => LootItemCondition, paramentry: LootPoolEntryContainer$Builder<any>): LootTable$Builder;

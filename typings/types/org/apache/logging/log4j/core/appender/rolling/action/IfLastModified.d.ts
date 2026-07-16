@@ -6,9 +6,9 @@ import type { Duration as Duration_2 } from '../../../../../../../../org/apache/
 import type { IfLastModified$Builder } from '../../../../../../../../org/apache/logging/log4j/core/appender/rolling/action/IfLastModified$Builder.d.ts'
 import type { PathCondition } from '../../../../../../../../org/apache/logging/log4j/core/appender/rolling/action/PathCondition.d.ts'
 export class IfLastModified extends Object implements PathCondition {
-    static EMPTY_ARRAY: (Object | null)[];
-    static copy(...paramsource: (Object | null)[]): (Object | null)[];
-    static createAgeCondition(paramage: Duration_2, ...parampathConditions: (Object | null)[]): IfLastModified;
+    static EMPTY_ARRAY: PathCondition[];
+    static copy(...paramsource: PathCondition[]): PathCondition[];
+    static createAgeCondition(paramage: Duration_2, ...parampathConditions: PathCondition[]): IfLastModified;
     static newBuilder(): IfLastModified$Builder;
     constructor(arg0: Duration, arg1: PathCondition[], arg2: any)
     readonly age: Duration;

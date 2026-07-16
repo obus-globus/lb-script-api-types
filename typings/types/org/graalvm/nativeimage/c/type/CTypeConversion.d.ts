@@ -16,7 +16,7 @@ export class CTypeConversion extends Object {
     static toCString(paramjavaString: CharSequence): CTypeConversion$CCharPointerHolder;
     static toCString(paramjavaString: CharSequence, paramcharset: Charset, parambuffer: CCharPointer, parambufferSize: UnsignedWord): UnsignedWord;
     static toCString(paramjavaString: CharSequence, parambuffer: CCharPointer, parambufferSize: UnsignedWord): UnsignedWord;
-    static toCStrings(paramjavaStrings: (Object | null)[]): CTypeConversion$CCharPointerPointerHolder;
+    static toCStrings(paramjavaStrings: CharSequence[]): CTypeConversion$CCharPointerPointerHolder;
     static toJavaString(paramcString: CCharPointer): string;
     static toJavaString(paramcString: CCharPointer, paramlength: UnsignedWord): string;
     static toJavaString(paramcString: CCharPointer, paramlength: UnsignedWord, paramcharset: Charset): string;

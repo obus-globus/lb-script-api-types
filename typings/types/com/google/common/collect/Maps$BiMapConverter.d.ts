@@ -3,7 +3,7 @@ import type { Function } from '../../../../com/google/common/base/Function.d.ts'
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Maps$BiMapConverter<A extends unknown, B extends unknown> extends Converter<A, B> implements Serializable {
-    static from(paramforwardFunction: (param0: Object) => boolean, parambackwardFunction: (param0: Object) => boolean): Converter<Object, Object>;
+    static from(paramforwardFunction: (param0: Object) => Object | null, parambackwardFunction: (param0: Object) => Object | null): Converter<Object, Object>;
     static identity(): Converter<Object, Object>;
     constructor(bimap: Map<A, B>)
     // private bimap: Map<A, B>;

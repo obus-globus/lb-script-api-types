@@ -15,6 +15,8 @@ import type { LevelChunk } from '../../../../../net/minecraft/world/level/chunk/
  */
 export class AbstractBlockLocationTracker<T extends unknown> extends Object implements ChunkScanner$BlockChangeSubscriber {
     protected constructor()
+    readonly debugName: string;
+    readonly shouldCallRecordBlockOnChunkUpdate: boolean;
     /**
      * Returns a {@link Sequence} providing all tracked {@link BlockPos}.
      *

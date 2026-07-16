@@ -6,7 +6,7 @@ export class ResolutionContext$LimitBehavior extends Enum<ResolutionContext$Limi
     static STOP_PROCESSING_AND_COPY_REMAINING: ResolutionContext$LimitBehavior;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ResolutionContext$LimitBehavior;
-    static values(): (Object | null)[];
+    static values(): ResolutionContext$LimitBehavior[];
     private constructor()
     name(): "DISCARD_REMAINING" | "STOP_PROCESSING_AND_COPY_REMAINING";
 }

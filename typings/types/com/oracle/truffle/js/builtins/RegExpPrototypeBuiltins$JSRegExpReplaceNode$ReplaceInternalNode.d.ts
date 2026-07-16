@@ -7,7 +7,6 @@ import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSC
 import type { JSRegExpObject } from '../../../../../com/oracle/truffle/js/runtime/builtins/JSRegExpObject.d.ts'
 export abstract class RegExpPrototypeBuiltins$JSRegExpReplaceNode$ReplaceInternalNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(rx: JSRegExpObject, s: TruffleString, replaceString: TruffleString, parsedWithNamedCG: ReplaceStringParser$Token[], parsedWithoutNamedCG: ReplaceStringParser$Token[], context: JSContext, parent: RegExpPrototypeBuiltins$JSRegExpReplaceNode): TruffleString;
 }

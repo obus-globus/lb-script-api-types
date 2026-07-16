@@ -7,7 +7,7 @@ export class JSRegexValidator$RegexStackElem extends Enum<JSRegexValidator$Regex
     static LookBehindAssertion: JSRegexValidator$RegexStackElem;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): JSRegexValidator$RegexStackElem;
-    static values(): (Object | null)[];
+    static values(): JSRegexValidator$RegexStackElem[];
     private constructor()
     name(): "Group" | "LookAheadAssertion" | "LookBehindAssertion";
 }

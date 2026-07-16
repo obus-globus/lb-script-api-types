@@ -40,28 +40,21 @@ export class VkPhysicalDeviceDescriptorIndexingFeaturesEXT extends VkPhysicalDev
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceDescriptorIndexingFeaturesEXT;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceDescriptorIndexingFeaturesEXT;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceDescriptorIndexingFeatures;
     static create(paramarg0: number): VkPhysicalDeviceDescriptorIndexingFeatures;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceDescriptorIndexingFeaturesEXT;
     static create(paramarg0: number): VkPhysicalDeviceDescriptorIndexingFeaturesEXT;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceDescriptorIndexingFeatures;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceDescriptorIndexingFeaturesEXT;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceDescriptorIndexingFeatures;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceDescriptorIndexingFeatures;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceDescriptorIndexingFeaturesEXT;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceDescriptorIndexingFeaturesEXT;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ndescriptorBindingPartiallyBound(paramarg0: number): number;
     static ndescriptorBindingPartiallyBound(paramarg0: number, paramarg1: number): void;
     static ndescriptorBindingSampledImageUpdateAfterBind(paramarg0: number): number;
@@ -106,7 +99,6 @@ export class VkPhysicalDeviceDescriptorIndexingFeaturesEXT extends VkPhysicalDev
     static nshaderUniformTexelBufferArrayDynamicIndexing(paramarg0: number, paramarg1: number): void;
     static nshaderUniformTexelBufferArrayNonUniformIndexing(paramarg0: number): number;
     static nshaderUniformTexelBufferArrayNonUniformIndexing(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

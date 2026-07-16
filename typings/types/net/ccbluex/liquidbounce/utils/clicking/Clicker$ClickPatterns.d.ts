@@ -18,7 +18,7 @@ export class Clicker$ClickPatterns extends Enum<Clicker$ClickPatterns> implement
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Clicker$ClickPatterns;
-    static values(): (Object | null)[];
+    static values(): Clicker$ClickPatterns[];
     private constructor(tag: string, pattern: ClickPattern)
     readonly pattern: ClickPattern;
     readonly tag: string;

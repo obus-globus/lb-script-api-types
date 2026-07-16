@@ -4,8 +4,8 @@ import type { AbstractConstantArray } from '../../../../../../../com/oracle/truf
 import type { AbstractConstantEmptyArray } from '../../../../../../../com/oracle/truffle/js/runtime/array/dyn/AbstractConstantEmptyArray.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class ConstantEmptyArray extends AbstractConstantEmptyArray {
-    static EMPTY_OBJECT_ARRAY: (Object | null)[];
-    static createConstantArray(paramelements: (Object | null)[]): AbstractConstantArray;
+    static EMPTY_OBJECT_ARRAY: Object[];
+    static createConstantArray(paramelements: Object[]): AbstractConstantArray;
     static createConstantEmptyArray(): AbstractConstantArray;
     static createConstantEmptyArray(): ConstantEmptyArray;
     static makeRangeList(paramrangeStart: number, paramrangeEnd: number): Object[];

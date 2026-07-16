@@ -8,7 +8,7 @@ export class UpdateMobEffectFlag extends Enum<UpdateMobEffectFlag> {
     static VISIBLE: UpdateMobEffectFlag;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): UpdateMobEffectFlag;
-    static values(): (Object | null)[];
+    static values(): UpdateMobEffectFlag[];
     private constructor()
     getBit(): number;
     name(): "AMBIENT" | "VISIBLE" | "SHOW_ICON" | "BLEND";

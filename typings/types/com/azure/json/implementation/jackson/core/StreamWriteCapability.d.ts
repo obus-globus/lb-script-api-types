@@ -7,7 +7,7 @@ export class StreamWriteCapability extends Enum<StreamWriteCapability> implement
     static CAN_WRITE_FORMATTED_NUMBERS: StreamWriteCapability;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): StreamWriteCapability;
-    static values(): (Object | null)[];
+    static values(): StreamWriteCapability[];
     private constructor(arg2: boolean)
     // private _defaultState: boolean;
     // private _mask: number;

@@ -7,7 +7,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSRegExpExecIntlNodeGen$BuildGroupsObjectNodeGen extends JSRegExpExecIntlNode$BuildGroupsObjectNode {
     static create(): JSRegExpExecIntlNode$BuildGroupsObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private cachedGroupsFactory_cache: JSRegExpExecIntlNodeGen$BuildGroupsObjectNodeGen$CachedGroupsFactoryData;
     // private state_0_: number;

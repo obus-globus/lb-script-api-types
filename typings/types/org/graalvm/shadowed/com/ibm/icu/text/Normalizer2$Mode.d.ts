@@ -8,7 +8,7 @@ export class Normalizer2$Mode extends Enum<Normalizer2$Mode> {
     static FCD: Normalizer2$Mode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Normalizer2$Mode;
-    static values(): (Object | null)[];
+    static values(): Normalizer2$Mode[];
     private constructor()
     name(): "COMPOSE" | "DECOMPOSE" | "FCD" | "COMPOSE_CONTIGUOUS";
 }

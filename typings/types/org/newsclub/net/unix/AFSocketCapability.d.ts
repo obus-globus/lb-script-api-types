@@ -19,7 +19,7 @@ export class AFSocketCapability extends Enum<AFSocketCapability> {
     static CAPABILITY_ZERO_LENGTH_SEND: AFSocketCapability;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AFSocketCapability;
-    static values(): (Object | null)[];
+    static values(): AFSocketCapability[];
     private constructor(arg2: number)
     // private bitmask: number;
     getBitmask(): number;

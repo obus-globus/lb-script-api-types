@@ -21,7 +21,7 @@ export class DelayScheduler$ScheduledForkJoinTask<T extends unknown> extends For
     static inForkJoinPool(): boolean;
     static invokeAll(paramarg0: (Object | null)[]): (Object | null)[];
     static invokeAll(paramarg0: ForkJoinTask<Object>, paramarg1: ForkJoinTask<Object>): void;
-    static invokeAll(paramarg0: Object | null): void;
+    static invokeAll(...paramarg0: ForkJoinTask<Object>[]): void;
     constructor(arg0: number, arg1: number, arg2: boolean, arg3: () => void, arg4: () => T, arg5: ForkJoinPool)
     // private callable: () => T;
     // private heapIndex: number;

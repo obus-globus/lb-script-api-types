@@ -7,7 +7,7 @@ export class ExternalOverridabilityCondition$Result extends Enum<ExternalOverrid
     static UNKNOWN: ExternalOverridabilityCondition$Result;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ExternalOverridabilityCondition$Result;
-    static values(): (Object | null)[];
+    static values(): ExternalOverridabilityCondition$Result[];
     private constructor()
     name(): "OVERRIDABLE" | "INCOMPATIBLE" | "UNKNOWN";
 }

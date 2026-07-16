@@ -9,7 +9,7 @@ export class MixinInheritanceTracker extends Enum<MixinInheritanceTracker> imple
     static INSTANCE: MixinInheritanceTracker;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MixinInheritanceTracker;
-    static values(): (Object | null)[];
+    static values(): MixinInheritanceTracker[];
     private constructor()
     // private parentMixins: { [key: string]: MixinInfo[] };
     findOverrides(arg0: string, arg1: string, arg2: string): MethodNode[];

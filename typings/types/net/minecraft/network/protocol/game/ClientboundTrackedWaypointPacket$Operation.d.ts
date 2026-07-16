@@ -15,7 +15,7 @@ export class ClientboundTrackedWaypointPacket$Operation extends Enum<Clientbound
     static UPDATE: ClientboundTrackedWaypointPacket$Operation;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ClientboundTrackedWaypointPacket$Operation;
-    static values(): (Object | null)[];
+    static values(): ClientboundTrackedWaypointPacket$Operation[];
     private constructor(action: (param0: TrackedWaypointManager, param1: TrackedWaypoint) => void)
     // private action: (param0: TrackedWaypointManager, param1: TrackedWaypoint) => void;
     name(): "TRACK" | "UNTRACK" | "UPDATE";

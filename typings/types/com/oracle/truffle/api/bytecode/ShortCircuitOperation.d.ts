@@ -3,7 +3,6 @@ import type { Annotation } from '../../../../../java/lang/annotation/Annotation.
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { KClass } from '../../../../../kotlin/reflect/KClass.d.ts'
 export interface ShortCircuitOperation extends Annotation, Object{
-    constructor(booleanConverter: KClass<Object>, javadoc: string, name: string, operator: ShortCircuitOperation$Operator)
     /*not mapped: */ booleanConverter(): KClass<Object>;
     /*not mapped: */ javadoc(): string;
     /*not mapped: */ name(): string;

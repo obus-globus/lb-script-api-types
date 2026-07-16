@@ -73,7 +73,7 @@ export class PlayerAuthInputPacket_InputData extends Enum<PlayerAuthInputPacket_
     static getByValue(paramarg0: number, paramarg1: PlayerAuthInputPacket_InputData): PlayerAuthInputPacket_InputData;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PlayerAuthInputPacket_InputData;
-    static values(): (Object | null)[];
+    static values(): PlayerAuthInputPacket_InputData[];
     private constructor(arg2: number)
     private constructor(arg2: PlayerAuthInputPacket_InputData)
     readonly value: number;

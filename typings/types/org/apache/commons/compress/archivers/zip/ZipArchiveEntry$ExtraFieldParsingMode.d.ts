@@ -13,7 +13,7 @@ export class ZipArchiveEntry$ExtraFieldParsingMode extends Enum<ZipArchiveEntry$
     static STRICT_FOR_KNOW_EXTRA_FIELDS: ZipArchiveEntry$ExtraFieldParsingMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ZipArchiveEntry$ExtraFieldParsingMode;
-    static values(): (Object | null)[];
+    static values(): ZipArchiveEntry$ExtraFieldParsingMode[];
     constructor(arg2: ExtraFieldUtils$UnparseableExtraField, arg3: ExtraFieldParsingBehavior)
     // private onUnparseableData: ExtraFieldUtils$UnparseableExtraField;
     createExtraField(arg0: ZipShort): ZipExtraField;

@@ -8,7 +8,7 @@ export class FullChunkStatus extends Enum<FullChunkStatus> {
     static INACCESSIBLE: FullChunkStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): FullChunkStatus;
-    static values(): (Object | null)[];
+    static values(): FullChunkStatus[];
     private constructor()
     isOrAfter(step: FullChunkStatus): boolean;
     name(): "INACCESSIBLE" | "FULL" | "BLOCK_TICKING" | "ENTITY_TICKING";

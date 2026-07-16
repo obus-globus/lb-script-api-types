@@ -29,7 +29,7 @@ export class FixedDateFormat$FixedFormat extends Enum<FixedDateFormat$FixedForma
     static lookup(paramnameOrPattern: string): FixedDateFormat$FixedFormat;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): FixedDateFormat$FixedFormat;
-    static values(): (Object | null)[];
+    static values(): FixedDateFormat$FixedFormat[];
     private constructor(pattern: string, datePattern: string, escapeCount: number, timeSeparator: string, timeSepLength: number, millisSeparator: string, millisSepLength: number, secondFractionDigits: number, timeZoneFormat: FixedDateFormat$FixedTimeZoneFormat)
     readonly datePattern: string;
     // private escapeCount: number;

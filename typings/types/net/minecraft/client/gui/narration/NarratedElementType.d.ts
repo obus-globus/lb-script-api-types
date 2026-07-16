@@ -8,7 +8,7 @@ export class NarratedElementType extends Enum<NarratedElementType> {
     static USAGE: NarratedElementType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): NarratedElementType;
-    static values(): (Object | null)[];
+    static values(): NarratedElementType[];
     private constructor()
     name(): "TITLE" | "POSITION" | "HINT" | "USAGE";
 }

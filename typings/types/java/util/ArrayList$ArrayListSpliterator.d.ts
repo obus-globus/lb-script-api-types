@@ -18,7 +18,7 @@ export class ArrayList$ArrayListSpliterator extends Object implements Spliterato
     characteristics(): number;
     estimateSize(): number;
     forEachRemaining<E extends unknown>(arg0: (param0: E) => void): void;
-    getComparator<E extends unknown>(): (param0: Object) => boolean;
+    getComparator<E extends unknown>(): (param0: E, param1: E) => number;
     getExactSizeIfKnown(): number;
     // private getFence(): number;
     hasCharacteristics(arg0: number): boolean;

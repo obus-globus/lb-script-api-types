@@ -6,7 +6,7 @@ export class TypeUsage extends Enum<TypeUsage> {
     static SUPERTYPE: TypeUsage;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TypeUsage;
-    static values(): (Object | null)[];
+    static values(): TypeUsage[];
     private constructor()
     name(): "SUPERTYPE" | "COMMON";
 }

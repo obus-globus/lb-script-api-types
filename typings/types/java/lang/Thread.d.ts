@@ -22,8 +22,8 @@ export class Thread extends Object implements Runnable {
     static activeCount(): number;
     static currentThread(): Thread;
     static dumpStack(): void;
-    static enumerate(paramarg0: (Object | null)[]): number;
-    static getAllStackTraces(): Map<Thread, (Object | null)[]>;
+    static enumerate(paramarg0: Thread[]): number;
+    static getAllStackTraces(): Map<Thread, StackTraceElement[]>;
     static getDefaultUncaughtExceptionHandler(): (param0: Thread, param1: Throwable) => void;
     static holdsLock(paramarg0: Object): boolean;
     static interrupted(): boolean;

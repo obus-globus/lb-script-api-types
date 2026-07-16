@@ -8,7 +8,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class IteratorCloseNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): IteratorCloseNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private getReturnNode: GetMethodNode;
     // private isObjectNode: IsObjectNode;

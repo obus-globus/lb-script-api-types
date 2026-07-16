@@ -14,7 +14,7 @@ export class TokenKind extends Enum<TokenKind> {
     static UNARY: TokenKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TokenKind;
-    static values(): (Object | null)[];
+    static values(): TokenKind[];
     private constructor()
     name(): "SPECIAL" | "UNARY" | "BINARY" | "BRACKET" | "KEYWORD" | "LITERAL" | "IR" | "FUTURE" | "FUTURESTRICT" | "CONTEXTUAL";
 }

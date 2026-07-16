@@ -7,7 +7,7 @@ export class BrotliUtils$CachedAvailability extends Enum<BrotliUtils$CachedAvail
     static DONT_CACHE: BrotliUtils$CachedAvailability;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BrotliUtils$CachedAvailability;
-    static values(): (Object | null)[];
+    static values(): BrotliUtils$CachedAvailability[];
     private constructor()
     name(): "DONT_CACHE" | "CACHED_AVAILABLE" | "CACHED_UNAVAILABLE";
 }

@@ -21,7 +21,7 @@ export class CompletableFuture$BiApply<T extends unknown, U extends unknown, V e
     static inForkJoinPool(): boolean;
     static invokeAll(paramarg0: (Object | null)[]): (Object | null)[];
     static invokeAll(paramarg0: ForkJoinTask<Object>, paramarg1: ForkJoinTask<Object>): void;
-    static invokeAll(paramarg0: Object | null): void;
+    static invokeAll(...paramarg0: ForkJoinTask<Object>[]): void;
     constructor(arg0: Executor, arg1: CompletableFuture<V>, arg2: CompletableFuture<T>, arg3: CompletableFuture<U>, arg4: (param0: T, param1: U) => V)
     // private fn: (param0: T, param1: U) => V;
     tryFire(arg0: number): CompletableFuture<V>;

@@ -11,7 +11,7 @@ export class ServerboundPlayerCommandPacket$Action extends Enum<ServerboundPlaye
     static STOP_SPRINTING: ServerboundPlayerCommandPacket$Action;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ServerboundPlayerCommandPacket$Action;
-    static values(): (Object | null)[];
+    static values(): ServerboundPlayerCommandPacket$Action[];
     private constructor()
     name(): "STOP_SLEEPING" | "START_SPRINTING" | "STOP_SPRINTING" | "START_RIDING_JUMP" | "STOP_RIDING_JUMP" | "OPEN_INVENTORY" | "START_FALL_FLYING";
 }

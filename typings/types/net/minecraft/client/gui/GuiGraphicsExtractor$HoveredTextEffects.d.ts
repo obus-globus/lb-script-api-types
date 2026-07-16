@@ -8,7 +8,7 @@ export class GuiGraphicsExtractor$HoveredTextEffects extends Enum<GuiGraphicsExt
     static notClickable(paramcanTooltip: boolean): GuiGraphicsExtractor$HoveredTextEffects;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): GuiGraphicsExtractor$HoveredTextEffects;
-    static values(): (Object | null)[];
+    static values(): GuiGraphicsExtractor$HoveredTextEffects[];
     private constructor(allowTooltip: boolean, allowCursorChanges: boolean)
     allowCursorChanges: boolean;
     allowTooltip: boolean;

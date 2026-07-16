@@ -14,9 +14,9 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Number } from '../../../../../../java/lang/Number.d.ts'
 export abstract class JSAbstractArray extends JSNonProxy {
     static ARRAY_PROTOTYPE_NO_ELEMENTS_INVALIDATION: string;
-    static DEFAULT_JSARRAY_COMPARATOR: (param0: Object) => boolean;
-    static DEFAULT_JSARRAY_DOUBLE_COMPARATOR: (param0: Object) => boolean;
-    static DEFAULT_JSARRAY_INTEGER_COMPARATOR: (param0: Object) => boolean;
+    static DEFAULT_JSARRAY_COMPARATOR: (param0: Object, param1: Object) => number;
+    static DEFAULT_JSARRAY_DOUBLE_COMPARATOR: (param0: Object, param1: Object) => number;
+    static DEFAULT_JSARRAY_INTEGER_COMPARATOR: (param0: Object, param1: Object) => number;
     static GET_SYMBOL_SPECIES_NAME: TruffleString;
     static LAZY_REGEX_ORIGINAL_INPUT_ID: HiddenKey;
     static LAZY_REGEX_RESULT_ID: HiddenKey;
@@ -37,7 +37,6 @@ export abstract class JSAbstractArray extends JSNonProxy {
     static arraySetHoleCount(paramthisObj: JSDynamicObject, paramholeCount: number): void;
     static arraySetIndexOffset(paramthisObj: JSDynamicObject, paramindexOffset: number): void;
     static arraySetLength(paramthisObj: JSDynamicObject, paramlength: number): void;
-    static arraySetLength(paramthisObj: JSDynamicObject, paramlength: number): void;
     static arraySetUsedLength(paramthisObj: JSDynamicObject, paramusedLength: number): void;
     static checkProtoCycle(paramthisObj: JSDynamicObject, paramnewPrototype: JSDynamicObject): boolean;
     static filterOwnPropertyKeys(paramownPropertyKeys: Object[], paramstrings: boolean, paramsymbols: boolean): Object[];
@@ -51,7 +50,7 @@ export abstract class JSAbstractArray extends JSNonProxy {
     static ordinaryPreventExtensions(paramthisObj: JSDynamicObject, paramextraFlags: number): boolean;
     static setIntegrityLevelFast(paramthisObj: JSDynamicObject, paramfreeze: boolean): boolean;
     static testIntegrityLevelFast(paramobj: JSDynamicObject, paramfrozen: boolean): boolean;
-    static toArray(paramthisObj: JSDynamicObject): (Object | null)[];
+    static toArray(paramthisObj: JSDynamicObject): Object[];
     static toArrayLengthOrRangeError(paramlen: Number, paramlen32: Number, paramoriginatingNode: Node): number;
     static toArrayLengthOrRangeError(paramobj: Object, paramoriginatingNode: Node): number;
     constructor()

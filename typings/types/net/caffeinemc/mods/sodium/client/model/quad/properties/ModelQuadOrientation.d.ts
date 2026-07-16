@@ -9,7 +9,7 @@ export class ModelQuadOrientation extends Enum<ModelQuadOrientation> {
     static orientByBrightness(paramarg0: number[], paramarg1: ModelQuadView): ModelQuadOrientation;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModelQuadOrientation;
-    static values(): (Object | null)[];
+    static values(): ModelQuadOrientation[];
     private constructor(arg2: number[])
     // private indices: number[];
     getVertexIndex(arg0: number): number;

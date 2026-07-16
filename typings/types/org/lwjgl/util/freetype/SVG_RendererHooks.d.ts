@@ -48,7 +48,6 @@ export class SVG_RendererHooks extends Struct<SVG_RendererHooks> implements Nati
     static nrender_svg(paramarg0: number): SVG_Lib_Render_Func;
     static nrender_svg(paramarg0: number, paramarg1: (param0: number, param1: number) => number): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

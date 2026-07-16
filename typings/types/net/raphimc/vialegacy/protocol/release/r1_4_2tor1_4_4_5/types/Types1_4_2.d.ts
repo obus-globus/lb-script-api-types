@@ -6,7 +6,7 @@ export class Types1_4_2 extends Object {
     static ENTITY_DATA: Type<EntityData>;
     static ENTITY_DATA_LIST: Type<EntityData[]>;
     static NBTLESS_ITEM: Type<Item>;
-    static NBTLESS_ITEM_ARRAY: Type<(Object | null)[]>;
+    static NBTLESS_ITEM_ARRAY: Type<Item[]>;
     static UNSIGNED_BYTE_BYTE_ARRAY: Type<number[]>;
     constructor()
 }

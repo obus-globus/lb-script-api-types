@@ -8,7 +8,7 @@ export class SignatureKind extends Enum<SignatureKind> implements Serializable {
     static PROPERTY: SignatureKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SignatureKind;
-    static values(): (Object | null)[];
+    static values(): SignatureKind[];
     private constructor()
     name(): "FUNCTION" | "PROPERTY" | "FIELD_IN_JAVA_CLASS";
 }

@@ -1,9 +1,15 @@
 import type { TextureTarget } from '../../../../../com/mojang/blaze3d/pipeline/TextureTarget.d.ts'
+import type { GpuDevice } from '../../../../../com/mojang/blaze3d/systems/GpuDevice.d.ts'
 import type { PoseStack } from '../../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { MinecraftShortcuts } from '../../../../../net/ccbluex/liquidbounce/features/module/MinecraftShortcuts.d.ts'
 import type { Atlas } from '../../../../../net/ccbluex/liquidbounce/render/gui/Atlas.d.ts'
+import type { Minecraft } from '../../../../../net/minecraft/client/Minecraft.d.ts'
+import type { ClientLevel } from '../../../../../net/minecraft/client/multiplayer/ClientLevel.d.ts'
+import type { ClientPacketListener } from '../../../../../net/minecraft/client/multiplayer/ClientPacketListener.d.ts'
+import type { MultiPlayerGameMode } from '../../../../../net/minecraft/client/multiplayer/MultiPlayerGameMode.d.ts'
+import type { LocalPlayer } from '../../../../../net/minecraft/client/player/LocalPlayer.d.ts'
 import type { Projection } from '../../../../../net/minecraft/client/renderer/Projection.d.ts'
 import type { ProjectionMatrixBuffer } from '../../../../../net/minecraft/client/renderer/ProjectionMatrixBuffer.d.ts'
 import type { SubmitNodeStorage } from '../../../../../net/minecraft/client/renderer/SubmitNodeStorage.d.ts'
@@ -20,15 +26,21 @@ export class ItemTextureRenderer extends Object implements MinecraftShortcuts {
     constructor(items: Item[], count: number, scale: number)
     readonly count: number;
     // private featureRenderDispatcher: FeatureRenderDispatcher;
+    readonly gpuDevice: GpuDevice;
+    readonly interaction: MultiPlayerGameMode;
     // private itemAtlasFramebuffer: TextureTarget;
     // private itemPixelSize: number;
     readonly items: Item[];
     // private itemsPerDimension: number;
+    readonly mc: Minecraft;
+    readonly network: ClientPacketListener;
+    readonly player: LocalPlayer;
     // private projection: Projection;
     // private projectionMatrixBuffer: ProjectionMatrixBuffer;
     readonly scale: number;
     // private submitNodeCollector: SubmitNodeStorage;
     // private textureSize: number;
+    readonly world: ClientLevel;
     // private close(): void;
     // private findBlockToItemAliases(): Map<Identifier, Identifier>;
     /**

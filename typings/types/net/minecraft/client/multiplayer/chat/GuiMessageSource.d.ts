@@ -7,7 +7,7 @@ export class GuiMessageSource extends Enum<GuiMessageSource> {
     static SYSTEM_SERVER: GuiMessageSource;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): GuiMessageSource;
-    static values(): (Object | null)[];
+    static values(): GuiMessageSource[];
     private constructor()
     name(): "PLAYER" | "SYSTEM_SERVER" | "SYSTEM_CLIENT";
 }

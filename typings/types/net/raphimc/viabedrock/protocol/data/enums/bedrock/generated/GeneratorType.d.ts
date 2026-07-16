@@ -15,7 +15,7 @@ export class GeneratorType extends Enum<GeneratorType> {
     static getByValue(paramarg0: number, paramarg1: GeneratorType): GeneratorType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): GeneratorType;
-    static values(): (Object | null)[];
+    static values(): GeneratorType[];
     private constructor(arg2: number)
     private constructor(arg2: GeneratorType)
     readonly value: number;

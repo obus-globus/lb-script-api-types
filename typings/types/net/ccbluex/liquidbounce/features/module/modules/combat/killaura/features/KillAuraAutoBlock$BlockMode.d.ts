@@ -13,7 +13,7 @@ export class KillAuraAutoBlock$BlockMode extends Enum<KillAuraAutoBlock$BlockMod
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): KillAuraAutoBlock$BlockMode;
-    static values(): (Object | null)[];
+    static values(): KillAuraAutoBlock$BlockMode[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "BASIC" | "INTERACT" | "FAKE";

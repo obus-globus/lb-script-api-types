@@ -10,7 +10,6 @@ import type { Window } from '../../java/awt/Window.d.ts'
 import type { ObjectInputStream } from '../../java/io/ObjectInputStream.d.ts'
 import type { AtomicLong } from '../../java/util/concurrent/atomic/AtomicLong.d.ts'
 import type { AccessibleContext } from '../../javax/accessibility/AccessibleContext.d.ts'
-import type { Object } from '../../java/lang/Object.d.ts'
 export class Dialog extends Window {
     static ABORT: number;
     static ALLBITS: number;
@@ -26,8 +25,8 @@ export class Dialog extends Window {
     static SOMEBITS: number;
     static TOP_ALIGNMENT: number;
     static WIDTH: number;
-    static getOwnerlessWindows(): (Object | null)[];
-    static getWindows(): (Object | null)[];
+    static getOwnerlessWindows(): Window[];
+    static getWindows(): Window[];
     constructor(arg0: Dialog)
     constructor(arg0: Dialog, arg1: string)
     constructor(arg0: Dialog, arg1: string, arg2: boolean)

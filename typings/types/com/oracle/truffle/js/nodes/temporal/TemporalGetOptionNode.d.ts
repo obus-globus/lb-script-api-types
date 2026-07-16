@@ -10,7 +10,6 @@ import type { TemporalUtil$OptionType } from '../../../../../../com/oracle/truff
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class TemporalGetOptionNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(options: Object, property: TruffleString, types: TemporalUtil$OptionType, values: (Object | null)[], fallback: Object): Object;
     getOption(options: Object, property: TruffleString, types: TemporalUtil$OptionType, values: (Object | null)[], fallback: Object, errorBranch: InlinedBranchProfile, isFallbackProfile: InlinedConditionProfile, toBooleanNode: JSToBooleanNode, toStringNode: JSToStringNode, toNumberNode: JSToNumberNode): Object;

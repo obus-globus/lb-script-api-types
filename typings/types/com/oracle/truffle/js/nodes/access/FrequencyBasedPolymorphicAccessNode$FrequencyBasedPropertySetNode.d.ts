@@ -8,7 +8,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class FrequencyBasedPolymorphicAccessNode$FrequencyBasedPropertySetNode extends FrequencyBasedPolymorphicAccessNode<PropertySetNode> {
     static create(paramcontext: JSContext, paramsetOwn: boolean, paramisStrict: boolean, paramsuperProperty: boolean): FrequencyBasedPolymorphicAccessNode$FrequencyBasedPropertySetNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(setOwn: boolean, isStrict: boolean, superProperty: boolean, size: number)
     // private highFrequencyKeys: PropertySetNode[];
     // private setOwn: boolean;

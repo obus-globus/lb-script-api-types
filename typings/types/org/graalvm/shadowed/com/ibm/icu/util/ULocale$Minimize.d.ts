@@ -6,7 +6,7 @@ export class ULocale$Minimize extends Enum<ULocale$Minimize> {
     static FAVOR_SCRIPT: ULocale$Minimize;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ULocale$Minimize;
-    static values(): (Object | null)[];
+    static values(): ULocale$Minimize[];
     private constructor()
     name(): "FAVOR_SCRIPT" | "FAVOR_REGION";
 }

@@ -32,7 +32,7 @@ export class Unit extends Enum<Unit> {
     static fromValue(paramarg0: string): Unit;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Unit;
-    static values(): (Object | null)[];
+    static values(): Unit[];
     private constructor(arg2: string)
     readonly value: string;
     getValue(): string;

@@ -1,5 +1,4 @@
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Holiday } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/Holiday.d.ts'
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
 export class HebrewHoliday extends Holiday {
@@ -27,9 +26,9 @@ export class HebrewHoliday extends Holiday {
     static YOM_HAZIKARON: HebrewHoliday;
     static YOM_KIPPUR: HebrewHoliday;
     static YOM_YERUSHALAYIM: HebrewHoliday;
-    static getHolidays(): (Object | null)[];
-    static getHolidays(paramlocale: Locale): (Object | null)[];
-    static getHolidays(paramlocale: ULocale): (Object | null)[];
+    static getHolidays(): Holiday[];
+    static getHolidays(paramlocale: Locale): Holiday[];
+    static getHolidays(paramlocale: ULocale): Holiday[];
     constructor(month: number, date: number, length: number, name: string)
     constructor(month: number, date: number, name: string)
 }

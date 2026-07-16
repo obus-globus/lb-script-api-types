@@ -7,7 +7,7 @@ export class AutoSettingsType extends Enum<AutoSettingsType> {
     static getEntries(): AutoSettingsType[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AutoSettingsType;
-    static values(): (Object | null)[];
+    static values(): AutoSettingsType[];
     private constructor(displayName: string)
     readonly displayName: string;
     name(): "RAGE" | "LEGIT";

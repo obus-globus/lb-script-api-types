@@ -19,7 +19,7 @@ export class GlobalSettingsRichPresence$RichPresencePart extends Enum<GlobalSett
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): GlobalSettingsRichPresence$RichPresencePart;
-    static values(): (Object | null)[];
+    static values(): GlobalSettingsRichPresence$RichPresencePart[];
     private constructor(tag: string)
     readonly tag: string;
     getText(): string | null;

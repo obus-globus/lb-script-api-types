@@ -1,4 +1,3 @@
-import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { BiConsumer } from '../../../../../../../java/util/function/BiConsumer.d.ts'
 import type { Function } from '../../../../../../../java/util/function/Function.d.ts'
@@ -15,7 +14,6 @@ import type { FoliagePlacer$FoliageAttachment } from '../../../../../../../net/m
 import type { TrunkPlacer } from '../../../../../../../net/minecraft/world/level/levelgen/feature/trunkplacers/TrunkPlacer.d.ts'
 import type { TrunkPlacerType } from '../../../../../../../net/minecraft/world/level/levelgen/feature/trunkplacers/TrunkPlacerType.d.ts'
 export class CherryTrunkPlacer extends TrunkPlacer {
-    static CODEC: Codec<TrunkPlacer>;
     static CODEC: MapCodec<CherryTrunkPlacer>;
     static MAX_HEIGHT: number;
     constructor(baseHeight: number, heightRandA: number, heightRandB: number, branchCount: IntProvider, branchHorizontalLength: IntProvider, branchStartOffsetFromTop: UniformInt, branchEndOffsetFromTop: IntProvider)

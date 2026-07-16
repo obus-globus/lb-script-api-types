@@ -11,7 +11,7 @@ export class TimedPickupTracker$PickupFilter extends Enum<TimedPickupTracker$Pic
     static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TimedPickupTracker$PickupFilter;
-    static values(): (Object | null)[];
+    static values(): TimedPickupTracker$PickupFilter[];
     private constructor()
     and(arg0: (param0: BlockPos) => boolean): (param0: BlockPos) => boolean;
     negate(): (param0: BlockPos) => boolean;

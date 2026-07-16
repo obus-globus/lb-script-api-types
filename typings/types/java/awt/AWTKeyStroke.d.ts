@@ -6,7 +6,6 @@ export class AWTKeyStroke extends Object implements Serializable {
     static getAWTKeyStroke(paramarg0: number, paramarg1: number): AWTKeyStroke;
     static getAWTKeyStroke(paramarg0: number, paramarg1: number, paramarg2: boolean): AWTKeyStroke;
     static getAWTKeyStroke(paramarg0: string, paramarg1: number): AWTKeyStroke;
-    static getAWTKeyStroke(paramarg0: string): AWTKeyStroke;
     static getAWTKeyStrokeForEvent(paramarg0: KeyEvent): AWTKeyStroke;
     constructor()
     constructor(arg0: string, arg1: number, arg2: number, arg3: boolean)

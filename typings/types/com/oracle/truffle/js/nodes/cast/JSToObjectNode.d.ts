@@ -11,7 +11,6 @@ export abstract class JSToObjectNode extends JavaScriptBaseNode {
     static create(): JSToObjectNode;
     static getUncached(): JSToObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doBigInt(value: BigInt): JSDynamicObject;
     doBoolean(value: boolean): JSDynamicObject;

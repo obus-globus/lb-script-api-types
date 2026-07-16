@@ -11,7 +11,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class AsyncGeneratorEnqueueNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): AsyncGeneratorEnqueueNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private asyncGeneratorResumeNextNode: AsyncGeneratorResumeNextNode;
     // private callPromiseRejectNode: JSFunctionCallNode;

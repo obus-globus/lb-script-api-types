@@ -5,7 +5,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class SetFunctionNameNode extends JavaScriptBaseNode {
     static create(): SetFunctionNameNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(callable: Object, propertyKey: Object): void;
     execute(callable: Object, propertyKey: Object, prefix: TruffleString): void;

@@ -8,7 +8,7 @@ export class PositionAssertion$Type extends Enum<PositionAssertion$Type> {
     static MATCH_END: PositionAssertion$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PositionAssertion$Type;
-    static values(): (Object | null)[];
+    static values(): PositionAssertion$Type[];
     private constructor()
     name(): "CARET" | "DOLLAR" | "MATCH_BEGIN" | "MATCH_END";
 }

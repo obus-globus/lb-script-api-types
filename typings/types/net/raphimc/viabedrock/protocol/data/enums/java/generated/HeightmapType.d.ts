@@ -10,7 +10,7 @@ export class HeightmapType extends Enum<HeightmapType> {
     static WORLD_SURFACE_WG: HeightmapType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HeightmapType;
-    static values(): (Object | null)[];
+    static values(): HeightmapType[];
     private constructor()
     name(): "WORLD_SURFACE_WG" | "WORLD_SURFACE" | "OCEAN_FLOOR_WG" | "OCEAN_FLOOR" | "MOTION_BLOCKING" | "MOTION_BLOCKING_NO_LEAVES";
 }

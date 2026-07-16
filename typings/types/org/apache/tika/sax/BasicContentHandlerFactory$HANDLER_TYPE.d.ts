@@ -9,7 +9,7 @@ export class BasicContentHandlerFactory$HANDLER_TYPE extends Enum<BasicContentHa
     static XML: BasicContentHandlerFactory$HANDLER_TYPE;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BasicContentHandlerFactory$HANDLER_TYPE;
-    static values(): (Object | null)[];
+    static values(): BasicContentHandlerFactory$HANDLER_TYPE[];
     private constructor()
     name(): "BODY" | "IGNORE" | "TEXT" | "HTML" | "XML";
 }

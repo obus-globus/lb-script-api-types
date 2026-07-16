@@ -32,7 +32,7 @@ export class LocalePrototypeBuiltins$LocalePrototype extends Enum<LocalePrototyp
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): LocalePrototypeBuiltins$LocalePrototype;
-    static values(): (Object | null)[];
+    static values(): LocalePrototypeBuiltins$LocalePrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

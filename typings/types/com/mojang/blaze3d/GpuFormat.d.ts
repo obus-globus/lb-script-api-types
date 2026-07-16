@@ -61,7 +61,7 @@ export class GpuFormat extends Enum<GpuFormat> {
     static S8_UINT: GpuFormat;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): GpuFormat;
-    static values(): (Object | null)[];
+    static values(): GpuFormat[];
     private constructor(componentType: GpuFormat$ComponentType, componentCount: number)
     // private componentCount: number;
     // private componentType: GpuFormat$ComponentType;

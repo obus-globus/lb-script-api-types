@@ -9,7 +9,7 @@ export class Diagnostic$Kind extends Enum<Diagnostic$Kind> {
     static WARNING: Diagnostic$Kind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Diagnostic$Kind;
-    static values(): (Object | null)[];
+    static values(): Diagnostic$Kind[];
     private constructor()
     name(): "ERROR" | "WARNING" | "MANDATORY_WARNING" | "NOTE" | "OTHER";
 }

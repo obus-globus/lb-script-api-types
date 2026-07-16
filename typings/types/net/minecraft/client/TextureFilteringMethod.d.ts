@@ -10,7 +10,7 @@ export class TextureFilteringMethod extends Enum<TextureFilteringMethod> {
     static RGSS: TextureFilteringMethod;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TextureFilteringMethod;
-    static values(): (Object | null)[];
+    static values(): TextureFilteringMethod[];
     private constructor(id: number, key: string)
     // private caption: Component;
     // private id: number;

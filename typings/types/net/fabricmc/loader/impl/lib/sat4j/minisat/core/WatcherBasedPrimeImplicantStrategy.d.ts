@@ -7,8 +7,8 @@ import type { Constr } from '../../../../../../../../net/fabricmc/loader/impl/li
 import type { MandatoryLiteralListener } from '../../../../../../../../net/fabricmc/loader/impl/lib/sat4j/specs/MandatoryLiteralListener.d.ts'
 export class WatcherBasedPrimeImplicantStrategy extends Object implements PrimeImplicantStrategy, MandatoryLiteralListener {
     constructor()
-    constructor(arg0: (param0: Object) => boolean)
-    // private comparator: (param0: Object) => boolean;
+    constructor(arg0: (param0: number, param1: number) => number)
+    // private comparator: (param0: number, param1: number) => number;
     // private prime: number[];
     compute(arg0: Solver<DataStructureFactory>): number[];
     // private fullModel(arg0: Solver<DataStructureFactory>): number[];

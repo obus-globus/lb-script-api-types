@@ -12,7 +12,7 @@ export class Platform extends Enum<Platform> {
     static mapLibraryNameBundled(paramarg0: string): string;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Platform;
-    static values(): (Object | null)[];
+    static values(): Platform[];
     constructor(arg2: string, arg3: string, arg4: Platform)
     // private nativePath: string;
     getName(): string;

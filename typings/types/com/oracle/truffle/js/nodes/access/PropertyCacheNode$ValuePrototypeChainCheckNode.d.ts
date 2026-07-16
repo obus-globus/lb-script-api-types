@@ -9,7 +9,6 @@ import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PropertyCacheNode$ValuePrototypeChainCheckNode extends PropertyCacheNode$AbstractFinalPrototypeShapeCheckNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(valueClass: Class<Object>, shape: Shape, assumptions: Assumption[], prototype: JSDynamicObject, context: JSContext)
     // private valueClass: Class<Object>;
     accept(nodeVisitor: NodeVisitor): void;

@@ -14,7 +14,7 @@ export class ModuleAutoClicker$AttackButton$ObjectiveType extends Enum<ModuleAut
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleAutoClicker$AttackButton$ObjectiveType;
-    static values(): (Object | null)[];
+    static values(): ModuleAutoClicker$AttackButton$ObjectiveType[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "ENEMY" | "ENTITY" | "BLOCK" | "ANY";

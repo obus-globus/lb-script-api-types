@@ -7,7 +7,7 @@ export class LMFInfo$Type extends Enum<LMFInfo$Type> {
     static INSTANTIATION: LMFInfo$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LMFInfo$Type;
-    static values(): (Object | null)[];
+    static values(): LMFInfo$Type[];
     private constructor()
     name(): "FREE_METHOD" | "BOUND_METHOD" | "INSTANTIATION";
 }

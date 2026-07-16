@@ -8,7 +8,7 @@ export class Crackiness$Level extends Enum<Crackiness$Level> {
     static NONE: Crackiness$Level;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Crackiness$Level;
-    static values(): (Object | null)[];
+    static values(): Crackiness$Level[];
     private constructor()
     name(): "NONE" | "LOW" | "MEDIUM" | "HIGH";
 }

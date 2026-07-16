@@ -9,7 +9,7 @@ export class ShaderType extends Enum<ShaderType> {
     static byLocation(paramlocation: Identifier): ShaderType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ShaderType;
-    static values(): (Object | null)[];
+    static values(): ShaderType[];
     private constructor(name: string, extension: string)
     // private extension: string;
     getName(): string;

@@ -11,7 +11,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class IsRegExpNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): IsRegExpNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private getSymbolMatchNode: PropertyGetNode;
     doIsObject(obj: JSDynamicObject, isObjectNode: IsJSObjectNode, toBooleanNode: JSToBooleanNode, isJSRegExpNode: IsJSClassNode, hasMatchSymbol: InlinedConditionProfile): boolean;

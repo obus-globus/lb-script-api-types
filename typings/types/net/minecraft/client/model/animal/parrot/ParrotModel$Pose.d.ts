@@ -9,7 +9,7 @@ export class ParrotModel$Pose extends Enum<ParrotModel$Pose> {
     static STANDING: ParrotModel$Pose;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ParrotModel$Pose;
-    static values(): (Object | null)[];
+    static values(): ParrotModel$Pose[];
     private constructor()
     name(): "FLYING" | "STANDING" | "SITTING" | "PARTY" | "ON_SHOULDER";
 }

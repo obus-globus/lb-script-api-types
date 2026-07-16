@@ -7,7 +7,7 @@ export class LittleEndianByteArray$UnsafeByteArray extends Enum<LittleEndianByte
     static UNSAFE_LITTLE_ENDIAN: LittleEndianByteArray$UnsafeByteArray;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): LittleEndianByteArray$UnsafeByteArray;
-    static values(): (Object | null)[];
+    static values(): LittleEndianByteArray$UnsafeByteArray[];
     constructor(arg2: any)
     usesFastPath(): boolean;
     name(): "UNSAFE_LITTLE_ENDIAN" | "UNSAFE_BIG_ENDIAN";

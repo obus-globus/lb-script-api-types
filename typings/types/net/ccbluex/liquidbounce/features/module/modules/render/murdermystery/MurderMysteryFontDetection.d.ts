@@ -3,7 +3,7 @@ import type { MapItemSavedData } from '../../../../../../../../net/minecraft/wor
 export class MurderMysteryFontDetection extends Object {
     static INSTANCE: MurderMysteryFontDetection;
     // private FILE_NAME: string;
-    // private LETTER_MAP: { [key: string]: (Object | null)[] };
+    // private LETTER_MAP: { [key: string]: boolean[] };
     // private extractBitmapFromMap(mapData: MapItemSavedData): number[];
     // private filterContractLine(rgb: number[]): number[];
     readContractLine(mapData: MapItemSavedData): string;

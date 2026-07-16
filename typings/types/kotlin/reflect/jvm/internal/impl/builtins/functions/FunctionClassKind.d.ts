@@ -11,7 +11,7 @@ export class FunctionClassKind extends Enum<FunctionClassKind> {
     static UNKNOWN: FunctionClassKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FunctionClassKind;
-    static values(): (Object | null)[];
+    static values(): FunctionClassKind[];
     private constructor()
     name(): "Function" | "SuspendFunction" | "KFunction" | "KSuspendFunction" | "UNKNOWN";
 }

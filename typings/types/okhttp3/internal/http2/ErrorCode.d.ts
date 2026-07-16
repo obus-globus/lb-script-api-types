@@ -21,7 +21,7 @@ export class ErrorCode extends Enum<ErrorCode> {
     static getEntries(): ErrorCode[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ErrorCode;
-    static values(): (Object | null)[];
+    static values(): ErrorCode[];
     private constructor(httpCode: number)
     readonly httpCode: number;
     name(): "NO_ERROR" | "PROTOCOL_ERROR" | "INTERNAL_ERROR" | "FLOW_CONTROL_ERROR" | "SETTINGS_TIMEOUT" | "STREAM_CLOSED" | "FRAME_SIZE_ERROR" | "REFUSED_STREAM" | "CANCEL" | "COMPRESSION_ERROR" | "CONNECT_ERROR" | "ENHANCE_YOUR_CALM" | "INADEQUATE_SECURITY" | "HTTP_1_1_REQUIRED";

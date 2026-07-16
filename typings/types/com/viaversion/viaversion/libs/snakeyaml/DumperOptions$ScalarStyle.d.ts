@@ -11,7 +11,7 @@ export class DumperOptions$ScalarStyle extends Enum<DumperOptions$ScalarStyle> {
     static createStyle(paramarg0: string): DumperOptions$ScalarStyle;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DumperOptions$ScalarStyle;
-    static values(): (Object | null)[];
+    static values(): DumperOptions$ScalarStyle[];
     private constructor(arg2: string)
     // private styleChar: string;
     getChar(): string;

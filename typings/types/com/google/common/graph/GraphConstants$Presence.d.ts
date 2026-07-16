@@ -5,7 +5,7 @@ export class GraphConstants$Presence extends Enum<GraphConstants$Presence> {
     static EDGE_EXISTS: GraphConstants$Presence;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): GraphConstants$Presence;
-    static values(): (Object | null)[];
+    static values(): GraphConstants$Presence[];
     private constructor()
     name(): "EDGE_EXISTS";
 }

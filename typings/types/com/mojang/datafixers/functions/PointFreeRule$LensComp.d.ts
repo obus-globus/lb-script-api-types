@@ -8,10 +8,10 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class PointFreeRule$LensComp extends Enum<PointFreeRule$LensComp> implements PointFreeRule$CompRewrite {
     static INSTANCE: PointFreeRule$LensComp;
-    static together(...paramarg0: (Object | null)[]): PointFreeRule$CompRewrite;
+    static together(...paramarg0: PointFreeRule$CompRewrite[]): PointFreeRule$CompRewrite;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PointFreeRule$LensComp;
-    static values(): (Object | null)[];
+    static values(): PointFreeRule$LensComp[];
     private constructor()
     // private capApp<R extends unknown, S extends unknown, T extends unknown, A extends unknown, B extends unknown>(arg0: TypedOptic<S, T, A, B>, arg1: PointFree<Object>): PointFree<R>;
     // private capComp<A extends unknown, C extends unknown>(arg0: PointFree<Object>, arg1: PointFree<Object>): PointFree<(param0: A) => C>;

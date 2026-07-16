@@ -6,7 +6,6 @@ import type { IteratorRecord } from '../../../../../../com/oracle/truffle/js/run
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSInteropGetIteratorNextNodeGen$Uncached extends JSInteropGetIteratorNextNode implements UnadoptableNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     execute(arg0Value: IteratorRecord, arg1Value: JavaScriptLanguage, arg2Value: Object): Object;
 }

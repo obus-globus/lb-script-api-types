@@ -12,13 +12,9 @@ export class ThreadUtils extends Object {
     static findThreadById(paramarg0: number, paramarg1: string): Thread;
     static findThreadById(paramarg0: number, paramarg1: ThreadGroup): Thread;
     static findThreadGroups(paramarg0: ThreadGroup, paramarg1: boolean, paramarg2: (param0: ThreadGroup) => boolean): ThreadGroup[];
-    static findThreadGroups(paramarg0: ThreadGroup, paramarg1: boolean, paramarg2: (param0: ThreadGroup) => boolean): ThreadGroup[];
-    static findThreadGroups(paramarg0: (param0: ThreadGroup) => boolean): ThreadGroup[];
     static findThreadGroups(paramarg0: (param0: ThreadGroup) => boolean): ThreadGroup[];
     static findThreadGroupsByName(paramarg0: string): ThreadGroup[];
     static findThreads(paramarg0: ThreadGroup, paramarg1: boolean, paramarg2: (param0: Thread) => boolean): Thread[];
-    static findThreads(paramarg0: ThreadGroup, paramarg1: boolean, paramarg2: (param0: Thread) => boolean): Thread[];
-    static findThreads(paramarg0: (param0: Thread) => boolean): Thread[];
     static findThreads(paramarg0: (param0: Thread) => boolean): Thread[];
     static findThreadsByName(paramarg0: string): Thread[];
     static findThreadsByName(paramarg0: string, paramarg1: string): Thread[];

@@ -7,7 +7,7 @@ export class TruffleCompilerOptionDescriptor$Type extends Enum<TruffleCompilerOp
     static USER: TruffleCompilerOptionDescriptor$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TruffleCompilerOptionDescriptor$Type;
-    static values(): (Object | null)[];
+    static values(): TruffleCompilerOptionDescriptor$Type[];
     private constructor()
     name(): "USER" | "EXPERT" | "DEBUG";
 }

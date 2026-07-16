@@ -38,7 +38,7 @@ export class MapDecoration_Type extends Enum<MapDecoration_Type> {
     static getByValue(paramarg0: number, paramarg1: MapDecoration_Type): MapDecoration_Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MapDecoration_Type;
-    static values(): (Object | null)[];
+    static values(): MapDecoration_Type[];
     private constructor(arg2: number)
     private constructor(arg2: MapDecoration_Type)
     readonly value: number;

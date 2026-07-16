@@ -4,7 +4,6 @@ import type { Spliterators$AbstractSpliterator } from '../../../../../../../../j
 import type { BiPredicate } from '../../../../../../../../java/util/function/BiPredicate.d.ts'
 import type { Consumer } from '../../../../../../../../java/util/function/Consumer.d.ts'
 import type { Predicate } from '../../../../../../../../java/util/function/Predicate.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { SortedPointOfInterest } from '../../../../../../../../net/caffeinemc/mods/lithium/common/util/tuples/SortedPointOfInterest.d.ts'
 import type { RegionBasedStorageSectionExtended } from '../../../../../../../../net/caffeinemc/mods/lithium/common/world/interests/RegionBasedStorageSectionExtended.d.ts'
 import type { NearbyPointOfInterestStream$QueuedSection } from '../../../../../../../../net/caffeinemc/mods/lithium/common/world/interests/iterator/NearbyPointOfInterestStream$QueuedSection.d.ts'
@@ -18,14 +17,14 @@ export class NearbyPointOfInterestStream extends Spliterators$AbstractSpliterato
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;
-    static NEGATIVE_Y_POINT_COMPARATOR: (param0: Object) => boolean;
+    static NEGATIVE_Y_POINT_COMPARATOR: (param0: SortedPointOfInterest, param1: SortedPointOfInterest) => number;
     static NONNULL: number;
     static ORDERED: number;
-    static POINT_COMPARATOR: (param0: Object) => boolean;
+    static POINT_COMPARATOR: (param0: SortedPointOfInterest, param1: SortedPointOfInterest) => number;
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(arg0: (param0: Holder<PoiType>) => boolean, arg1: PoiManager$Occupancy, arg2: (param0: PoiRecord) => boolean, arg3: BlockPos, arg4: number, arg5: RegionBasedStorageSectionExtended<PoiSection>, arg6: (param0: BlockPos, param1: BlockPos) => boolean, arg7: (param0: Object) => boolean)
+    constructor(arg0: (param0: Holder<PoiType>) => boolean, arg1: PoiManager$Occupancy, arg2: (param0: PoiRecord) => boolean, arg3: BlockPos, arg4: number, arg5: RegionBasedStorageSectionExtended<PoiSection>, arg6: (param0: BlockPos, param1: BlockPos) => boolean, arg7: (param0: SortedPointOfInterest, param1: SortedPointOfInterest) => number)
     // private afterSortingPredicate: (param0: PoiRecord) => boolean;
     // private chunkYMin: number;
     // private clampedOriginChunkY: number;
@@ -40,7 +39,7 @@ export class NearbyPointOfInterestStream extends Spliterators$AbstractSpliterato
     // private nextSectionDistanceSq: number;
     // private occupationStatus: PoiManager$Occupancy;
     // private origin: BlockPos;
-    // private pointComparatorWithoutInSectionOrder: (param0: Object) => boolean;
+    // private pointComparatorWithoutInSectionOrder: (param0: SortedPointOfInterest, param1: SortedPointOfInterest) => number;
     // private points: SortedPointOfInterest[];
     // private queuedPOISections: NearbyPointOfInterestStream$QueuedSection[];
     // private queuedSectionsSearched: number;

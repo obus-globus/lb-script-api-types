@@ -14,6 +14,7 @@ import type { PacketSnapshot } from '../../../../../net/ccbluex/liquidbounce/fea
 import type { BlinkEspData } from '../../../../../net/ccbluex/liquidbounce/features/blink/esp/BlinkEspData.d.ts'
 import type { BlinkEspMode } from '../../../../../net/ccbluex/liquidbounce/features/blink/esp/BlinkEspMode.d.ts'
 import type { Color4b } from '../../../../../net/ccbluex/liquidbounce/render/engine/type/Color4b.d.ts'
+import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Packet } from '../../../../../net/minecraft/network/protocol/Packet.d.ts'
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 /**
@@ -26,6 +27,7 @@ import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
  */
 export class BlinkManager extends ValueGroup implements EventListener {
     static INSTANCE: BlinkManager;
+    readonly debugDisplayName: Component;
     // private espMode: ModeValueGroup<BlinkEspMode>;
     // private flushHandler: EventHook<GameRenderTaskQueueEvent>;
     // private flushReceiveHandler: EventHook<TickPacketProcessEvent>;
@@ -36,6 +38,7 @@ export class BlinkManager extends ValueGroup implements EventListener {
     readonly packetQueue: PacketSnapshot[];
     readonly positions: Vec3[];
     // private renderHandler: EventHook<WorldRenderEvent>;
+    readonly running: boolean;
     // private worldChangeHandler: EventHook<WorldChangeEvent>;
     cancel(): void;
     children(): EventListener[];

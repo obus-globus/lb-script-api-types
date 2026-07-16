@@ -7,7 +7,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSSetLengthNodeGen extends JSSetLengthNode {
     static create(paramcontext: JSContext, paramisStrict: boolean): JSSetLengthNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, isStrict: boolean)
     // private setArrayLength_arrayLengthWriteNode_: ArrayLengthNode$ArrayLengthWriteNode;
     // private setLengthProperty: PropertySetNode;

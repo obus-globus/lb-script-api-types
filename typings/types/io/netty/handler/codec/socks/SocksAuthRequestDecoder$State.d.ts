@@ -7,7 +7,7 @@ export class SocksAuthRequestDecoder$State extends Enum<SocksAuthRequestDecoder$
     static READ_USERNAME: SocksAuthRequestDecoder$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SocksAuthRequestDecoder$State;
-    static values(): (Object | null)[];
+    static values(): SocksAuthRequestDecoder$State[];
     private constructor()
     name(): "CHECK_PROTOCOL_VERSION" | "READ_USERNAME" | "READ_PASSWORD";
 }

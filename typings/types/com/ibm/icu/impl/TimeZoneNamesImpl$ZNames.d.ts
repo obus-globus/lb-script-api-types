@@ -4,8 +4,8 @@ import type { TimeZoneNames$NameType } from '../../../../com/ibm/icu/text/TimeZo
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class TimeZoneNamesImpl$ZNames extends Object {
     static NUM_NAME_TYPES: number;
-    static createMetaZoneAndPutInCache(paramarg0: { [key: string]: TimeZoneNamesImpl$ZNames }, paramarg1: (Object | null)[], paramarg2: string): TimeZoneNamesImpl$ZNames;
-    static createTimeZoneAndPutInCache(paramarg0: { [key: string]: TimeZoneNamesImpl$ZNames }, paramarg1: (Object | null)[], paramarg2: string): TimeZoneNamesImpl$ZNames;
+    static createMetaZoneAndPutInCache(paramarg0: { [key: string]: TimeZoneNamesImpl$ZNames }, paramarg1: string[], paramarg2: string): TimeZoneNamesImpl$ZNames;
+    static createTimeZoneAndPutInCache(paramarg0: { [key: string]: TimeZoneNamesImpl$ZNames }, paramarg1: string[], paramarg2: string): TimeZoneNamesImpl$ZNames;
     constructor(arg0: string[])
     // private _names: string[];
     // private didAddIntoTrie: boolean;

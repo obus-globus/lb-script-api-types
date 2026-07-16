@@ -14,7 +14,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class AsyncGeneratorAwaitReturnNode extends AsyncGeneratorCompleteStepNode {
     static create(paramcontext: JSContext): AsyncGeneratorAwaitReturnNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private context: JSContext;
     // private getErrorObjectNode: TryCatchNode$GetErrorObjectNode;

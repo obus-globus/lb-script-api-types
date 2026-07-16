@@ -5,7 +5,6 @@ import type { TimeZone } from '../../../../com/ibm/icu/util/TimeZone.d.ts'
 import type { ULocale } from '../../../../com/ibm/icu/util/ULocale.d.ts'
 import type { Date } from '../../../../java/util/Date.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 export class JapaneseCalendar extends GregorianCalendar {
     static AD: number;
     static AM: number;
@@ -70,8 +69,8 @@ export class JapaneseCalendar extends GregorianCalendar {
     static YEAR_WOY: number;
     static ZONE_OFFSET: number;
     static enableTentativeEra(): boolean;
-    static getAvailableLocales(): (Object | null)[];
-    static getAvailableULocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
+    static getAvailableULocales(): ULocale[];
     static getDateAtTimePattern(paramarg0: Calendar, paramarg1: ULocale, paramarg2: number): string;
     static getDateTimePattern(paramarg0: Calendar, paramarg1: ULocale, paramarg2: number): string;
     static getInstance(): Calendar;
@@ -80,7 +79,7 @@ export class JapaneseCalendar extends GregorianCalendar {
     static getInstance(paramarg0: TimeZone, paramarg1: Locale): Calendar;
     static getInstance(paramarg0: ULocale): Calendar;
     static getInstance(paramarg0: Locale): Calendar;
-    static getKeywordValuesForLocale(paramarg0: string, paramarg1: ULocale, paramarg2: boolean): (Object | null)[];
+    static getKeywordValuesForLocale(paramarg0: string, paramarg1: ULocale, paramarg2: boolean): string[];
     static getWeekDataForRegion(paramarg0: string): Calendar$WeekData;
     constructor()
     constructor(arg0: TimeZone)

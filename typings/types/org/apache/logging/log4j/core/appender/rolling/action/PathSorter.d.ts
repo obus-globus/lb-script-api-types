@@ -7,11 +7,11 @@ import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../../../../../java/lang/Comparable.d.ts'
 import type { PathWithAttributes } from '../../../../../../../../org/apache/logging/log4j/core/appender/rolling/action/PathWithAttributes.d.ts'
 export interface PathSorter extends Comparator<PathWithAttributes>, Object {
-    reversed(): (param0: Object) => boolean;
-    thenComparing(arg0: (param0: Object) => boolean): (param0: Object) => boolean;
-    thenComparing<U extends Comparable<U>>(arg0: (param0: PathWithAttributes) => U): (param0: Object) => boolean;
-    thenComparing<U extends unknown>(arg0: (param0: PathWithAttributes) => U, arg1: (param0: Object) => boolean): (param0: Object) => boolean;
-    thenComparingDouble(arg0: (param0: PathWithAttributes) => number): (param0: Object) => boolean;
-    thenComparingInt(arg0: (param0: PathWithAttributes) => number): (param0: Object) => boolean;
-    thenComparingLong(arg0: (param0: PathWithAttributes) => number): (param0: Object) => boolean;
+    reversed(): (param0: PathWithAttributes, param1: PathWithAttributes) => number;
+    thenComparing(arg0: (param0: PathWithAttributes, param1: PathWithAttributes) => number): (param0: PathWithAttributes, param1: PathWithAttributes) => number;
+    thenComparing<U extends Comparable<U>>(arg0: (param0: PathWithAttributes) => U): (param0: PathWithAttributes, param1: PathWithAttributes) => number;
+    thenComparing<U extends unknown>(arg0: (param0: PathWithAttributes) => U, arg1: (param0: U, param1: U) => number): (param0: PathWithAttributes, param1: PathWithAttributes) => number;
+    thenComparingDouble(arg0: (param0: PathWithAttributes) => number): (param0: PathWithAttributes, param1: PathWithAttributes) => number;
+    thenComparingInt(arg0: (param0: PathWithAttributes) => number): (param0: PathWithAttributes, param1: PathWithAttributes) => number;
+    thenComparingLong(arg0: (param0: PathWithAttributes) => number): (param0: PathWithAttributes, param1: PathWithAttributes) => number;
 }

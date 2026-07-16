@@ -10,7 +10,6 @@ export class PerformPromiseAllSettledNodeGen extends PerformPromiseAllSettledNod
     static create(paramcontext: JSContext): PerformPromiseAllNode;
     static create(paramcontext: JSContext): PerformPromiseAllSettledNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private state_0_: number;
     execute(arg0Value: IteratorRecord, arg1Value: JSDynamicObject, arg2Value: PromiseCapabilityRecord, arg3Value: Object): JSDynamicObject;

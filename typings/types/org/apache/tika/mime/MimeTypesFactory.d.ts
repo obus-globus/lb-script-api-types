@@ -8,12 +8,12 @@ export class MimeTypesFactory extends Object {
     static CUSTOM_MIMES_SYS_PROP: string;
     static create(): MimeTypes;
     static create(paramarg0: InputStream): MimeTypes;
-    static create(...paramarg0: (Object | null)[]): MimeTypes;
+    static create(...paramarg0: InputStream[]): MimeTypes;
     static create(paramarg0: string): MimeTypes;
     static create(paramarg0: string, paramarg1: string): MimeTypes;
     static create(paramarg0: string, paramarg1: string, paramarg2: ClassLoader): MimeTypes;
     static create(paramarg0: URL): MimeTypes;
-    static create(...paramarg0: (Object | null)[]): MimeTypes;
+    static create(...paramarg0: URL[]): MimeTypes;
     static create(paramarg0: Document): MimeTypes;
     constructor()
 }

@@ -12,7 +12,6 @@ export abstract class GetDurationUnitOptionsNode extends JavaScriptBaseNode {
     static LONG_SHORT_NARROW_STYLES: string[];
     static create(paramcontext: JSContext, paramunit: GetDurationUnitOptionsNode$Unit, paramstyleList: string[], paramdigitalBase: string): GetDurationUnitOptionsNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, unit: GetDurationUnitOptionsNode$Unit, styleList: string[], digitalBase: string)
     // private digitalBase: string;
     // private errorBranch: BranchProfile;

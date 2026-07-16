@@ -7,7 +7,6 @@ export abstract class JSToPrimitiveNode extends ToPrimitiveBaseNode {
     static create(): JSToPrimitiveNode;
     static getUncached(): JSToPrimitiveNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     static tryHostObjectToPrimitive(paramobject: Object, paramhint: JSToPrimitiveNode$Hint, paraminterop: InteropLibrary): Object;
     constructor()
     execute(value: Object, hint: JSToPrimitiveNode$Hint): Object;

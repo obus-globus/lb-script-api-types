@@ -8,7 +8,6 @@ import type { JSTemporalDateTimeRecord } from '../../../../../../com/oracle/truf
 import type { TemporalUtil$Overflow } from '../../../../../../com/oracle/truffle/js/runtime/util/TemporalUtil$Overflow.d.ts'
 export abstract class TemporalAddDateTimeNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     addDateTime(year: number, month: number, day: number, hour: number, minute: number, second: number, millisecond: number, microsecond: number, nanosecond: number, calendar: TruffleString, years: number, months: number, weeks: number, days: number, normalizedTimeDuration: BigInt, overflow: TemporalUtil$Overflow, addDateNode: TemporalAddDateNode, errorBranch: InlinedBranchProfile): JSTemporalDateTimeRecord;
     execute(year: number, month: number, day: number, hour: number, minute: number, second: number, millisecond: number, microsecond: number, nanosecond: number, calendar: TruffleString, years: number, months: number, weeks: number, days: number, normalizedTimeDuration: BigInt, overflow: TemporalUtil$Overflow): JSTemporalDateTimeRecord;

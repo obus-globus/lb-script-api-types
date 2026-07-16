@@ -262,7 +262,7 @@ export class ComparisonExpression$Operator extends Enum<ComparisonExpression$Ope
     static V_PREVIEW: number;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ComparisonExpression$Operator;
-    static values(): (Object | null)[];
+    static values(): ComparisonExpression$Operator[];
     private constructor(arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number)
     private constructor(arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number)
     // private dcmp1: number;

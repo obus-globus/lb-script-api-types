@@ -12,7 +12,7 @@ export class WrapForValidIteratorPrototypeBuiltins$WrapForIterator extends Enum<
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): WrapForValidIteratorPrototypeBuiltins$WrapForIterator;
-    static values(): (Object | null)[];
+    static values(): WrapForValidIteratorPrototypeBuiltins$WrapForIterator[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

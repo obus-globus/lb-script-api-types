@@ -7,7 +7,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSInteropInstantiateNode extends JSInteropCallNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doDefault(function_: JSDynamicObject, arguments: Object[], isConstructorNode: IsConstructorNode, callNode: JSFunctionCallNode, importValueNode: ImportValueNode): Object;
     execute(function_: JSDynamicObject, args: Object[]): Object;

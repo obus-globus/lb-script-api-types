@@ -1,4 +1,3 @@
-import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
@@ -14,28 +13,27 @@ import type { BlockPredicate } from '../../../../../../net/minecraft/world/level
 import type { BlockPredicateType } from '../../../../../../net/minecraft/world/level/levelgen/blockpredicates/BlockPredicateType.d.ts'
 import type { Fluid } from '../../../../../../net/minecraft/world/level/material/Fluid.d.ts'
 export class WouldSurvivePredicate extends Object implements BlockPredicate {
-    static CODEC: Codec<BlockPredicate>;
     static CODEC: MapCodec<WouldSurvivePredicate>;
     static ONLY_IN_AIR_OR_WATER_PREDICATE: BlockPredicate;
     static ONLY_IN_AIR_PREDICATE: BlockPredicate;
     static allOf(parampredicates: BlockPredicate[]): BlockPredicate;
     static allOf(parama: BlockPredicate, paramb: BlockPredicate): BlockPredicate;
-    static allOf(...parampredicates: (Object | null)[]): BlockPredicate;
+    static allOf(...parampredicates: BlockPredicate[]): BlockPredicate;
     static alwaysTrue(): BlockPredicate;
     static anyOf(parampredicates: BlockPredicate[]): BlockPredicate;
     static anyOf(parama: BlockPredicate, paramb: BlockPredicate): BlockPredicate;
-    static anyOf(...parampredicates: (Object | null)[]): BlockPredicate;
+    static anyOf(...parampredicates: BlockPredicate[]): BlockPredicate;
     static hasSturdyFace(paramdirection: Direction): BlockPredicate;
     static hasSturdyFace(paramoffset: Vec3i, paramdirection: Direction): BlockPredicate;
     static insideWorld(paramoffset: Vec3i): BlockPredicate;
     static matchesBiomes(parambiomes: Holder<Biome>[]): BlockPredicate;
     static matchesBlocks(paramblocks: Block[]): BlockPredicate;
     static matchesBlocks(paramoffset: Vec3i, paramblocks: Block[]): BlockPredicate;
-    static matchesBlocks(paramoffset: Vec3i, ...paramblocks: (Object | null)[]): BlockPredicate;
-    static matchesBlocks(...paramblocks: (Object | null)[]): BlockPredicate;
+    static matchesBlocks(paramoffset: Vec3i, ...paramblocks: Block[]): BlockPredicate;
+    static matchesBlocks(...paramblocks: Block[]): BlockPredicate;
     static matchesFluids(paramoffset: Vec3i, paramfluids: Fluid[]): BlockPredicate;
-    static matchesFluids(paramoffset: Vec3i, ...paramfluids: (Object | null)[]): BlockPredicate;
-    static matchesFluids(...paramfluids: (Object | null)[]): BlockPredicate;
+    static matchesFluids(paramoffset: Vec3i, ...paramfluids: Fluid[]): BlockPredicate;
+    static matchesFluids(...paramfluids: Fluid[]): BlockPredicate;
     static matchesTag(paramoffset: Vec3i, paramtag: TagKey<Block>): BlockPredicate;
     static matchesTag(paramtag: TagKey<Block>): BlockPredicate;
     static noFluid(): BlockPredicate;

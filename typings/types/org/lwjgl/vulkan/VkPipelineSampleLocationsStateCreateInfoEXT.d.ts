@@ -42,7 +42,6 @@ export class VkPipelineSampleLocationsStateCreateInfoEXT extends Struct<VkPipeli
     static nsampleLocationsInfo(paramarg0: number): VkSampleLocationsInfoEXT;
     static nsampleLocationsInfo(paramarg0: number, paramarg1: VkSampleLocationsInfoEXT): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

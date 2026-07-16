@@ -19,7 +19,6 @@ export class SectionPos extends Vec3i {
     static SECTION_MAX_INDEX: number;
     static SECTION_SIZE: number;
     static STREAM_CODEC: StreamCodec<ByteBuf, SectionPos>;
-    static STREAM_CODEC: StreamCodec<ByteBuf, Vec3i>;
     static ZERO: Vec3i;
     static aroundAndAtBlockPos(paramblockX: number, paramblockY: number, paramblockZ: number, paramsectionConsumer: (param0: number) => void): void;
     static aroundAndAtBlockPos(paramblockPos: number, paramsectionConsumer: (param0: number) => void): void;

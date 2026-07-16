@@ -16,7 +16,7 @@ export class CraftingDataEntryType extends Enum<CraftingDataEntryType> {
     static getByValue(paramarg0: number, paramarg1: CraftingDataEntryType): CraftingDataEntryType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CraftingDataEntryType;
-    static values(): (Object | null)[];
+    static values(): CraftingDataEntryType[];
     private constructor(arg2: number)
     private constructor(arg2: CraftingDataEntryType)
     readonly value: number;

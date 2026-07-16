@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSToPropertyKeyNodeGen extends JSToPropertyKeyNode {
     static create(): JSToPropertyKeyNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private other_toPrimitiveNode_: JSToPrimitiveNode;
     // private other_toStringNode_: JSToStringNode;

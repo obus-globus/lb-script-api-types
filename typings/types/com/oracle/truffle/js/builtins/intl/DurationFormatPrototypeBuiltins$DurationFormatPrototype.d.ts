@@ -13,7 +13,7 @@ export class DurationFormatPrototypeBuiltins$DurationFormatPrototype extends Enu
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): DurationFormatPrototypeBuiltins$DurationFormatPrototype;
-    static values(): (Object | null)[];
+    static values(): DurationFormatPrototypeBuiltins$DurationFormatPrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

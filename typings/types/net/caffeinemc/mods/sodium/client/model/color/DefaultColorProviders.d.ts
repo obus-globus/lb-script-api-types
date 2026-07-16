@@ -4,6 +4,6 @@ import type { BlockTintSource } from '../../../../../../../net/minecraft/client/
 import type { BlockState } from '../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class DefaultColorProviders extends Object {
     static adapt(paramarg0: BlockTintSource): ColorProvider<BlockState>;
-    static adapt(paramarg0: (Object | null)[]): ColorProvider<BlockState>;
+    static adapt(paramarg0: BlockTintSource[]): ColorProvider<BlockState>;
     constructor()
 }

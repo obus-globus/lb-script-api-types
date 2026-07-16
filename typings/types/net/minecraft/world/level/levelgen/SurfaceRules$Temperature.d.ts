@@ -12,7 +12,7 @@ export class SurfaceRules$Temperature extends Enum<SurfaceRules$Temperature> imp
     static bootstrap(paramregistry: MapCodec<SurfaceRules$ConditionSource>[]): MapCodec<SurfaceRules$ConditionSource>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SurfaceRules$Temperature;
-    static values(): (Object | null)[];
+    static values(): SurfaceRules$Temperature[];
     private constructor()
     apply(context: SurfaceRules$Context): SurfaceRules$Condition;
     codec(): MapCodec<SurfaceRules$Temperature>;

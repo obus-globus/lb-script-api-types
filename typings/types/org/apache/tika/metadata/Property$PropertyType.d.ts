@@ -10,7 +10,7 @@ export class Property$PropertyType extends Enum<Property$PropertyType> {
     static STRUCTURE: Property$PropertyType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Property$PropertyType;
-    static values(): (Object | null)[];
+    static values(): Property$PropertyType[];
     private constructor()
     name(): "SIMPLE" | "STRUCTURE" | "BAG" | "SEQ" | "ALT" | "COMPOSITE";
 }

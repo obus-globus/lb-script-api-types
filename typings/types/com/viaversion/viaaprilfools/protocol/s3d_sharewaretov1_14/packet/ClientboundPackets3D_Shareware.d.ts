@@ -98,7 +98,7 @@ export class ClientboundPackets3D_Shareware extends Enum<ClientboundPackets3D_Sh
     static UPDATE_TAGS: ClientboundPackets3D_Shareware;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClientboundPackets3D_Shareware;
-    static values(): (Object | null)[];
+    static values(): ClientboundPackets3D_Shareware[];
     private constructor()
     direction(): Direction;
     getId(): number;

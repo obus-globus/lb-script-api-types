@@ -6,7 +6,7 @@ export class MessageFormatter$BidiIsolation extends Enum<MessageFormatter$BidiIs
     static NONE: MessageFormatter$BidiIsolation;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MessageFormatter$BidiIsolation;
-    static values(): (Object | null)[];
+    static values(): MessageFormatter$BidiIsolation[];
     private constructor()
     name(): "NONE" | "DEFAULT";
 }

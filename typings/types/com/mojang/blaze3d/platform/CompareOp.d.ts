@@ -12,7 +12,7 @@ export class CompareOp extends Enum<CompareOp> {
     static NOT_EQUAL: CompareOp;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CompareOp;
-    static values(): (Object | null)[];
+    static values(): CompareOp[];
     private constructor()
     name(): "ALWAYS_PASS" | "LESS_THAN" | "LESS_THAN_OR_EQUAL" | "EQUAL" | "NOT_EQUAL" | "GREATER_THAN_OR_EQUAL" | "GREATER_THAN" | "NEVER_PASS";
 }

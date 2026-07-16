@@ -11,7 +11,7 @@ export class AnimationMode extends Enum<AnimationMode> {
     static getByValue(paramarg0: number, paramarg1: AnimationMode): AnimationMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AnimationMode;
-    static values(): (Object | null)[];
+    static values(): AnimationMode[];
     private constructor(arg2: number)
     private constructor(arg2: AnimationMode)
     readonly value: number;

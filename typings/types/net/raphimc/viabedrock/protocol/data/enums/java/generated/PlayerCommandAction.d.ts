@@ -11,7 +11,7 @@ export class PlayerCommandAction extends Enum<PlayerCommandAction> {
     static STOP_SPRINTING: PlayerCommandAction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PlayerCommandAction;
-    static values(): (Object | null)[];
+    static values(): PlayerCommandAction[];
     private constructor()
     name(): "STOP_SLEEPING" | "START_SPRINTING" | "STOP_SPRINTING" | "START_RIDING_JUMP" | "STOP_RIDING_JUMP" | "OPEN_INVENTORY" | "START_FALL_FLYING";
 }

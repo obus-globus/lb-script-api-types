@@ -9,7 +9,7 @@ export class NearestSectionsFinder$NodeLocationType extends Enum<NearestSections
     static ROOT: NearestSectionsFinder$NodeLocationType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): NearestSectionsFinder$NodeLocationType;
-    static values(): (Object | null)[];
+    static values(): NearestSectionsFinder$NodeLocationType[];
     private constructor()
     name(): "CONTAINS" | "CONTAINS_END" | "PREVIOUS" | "NEXT" | "ROOT";
 }

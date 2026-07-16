@@ -12,7 +12,7 @@ export class Mod$Badge extends Enum<Mod$Badge> {
     static convert(paramarg0: string[], paramarg1: string): Mod$Badge[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Mod$Badge;
-    static values(): (Object | null)[];
+    static values(): Mod$Badge[];
     private constructor(arg2: string, arg3: number, arg4: number, arg5: string)
     readonly fillColor: number;
     // private key: string;

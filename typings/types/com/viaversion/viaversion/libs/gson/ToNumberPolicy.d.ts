@@ -11,7 +11,7 @@ export class ToNumberPolicy extends Enum<ToNumberPolicy> implements ToNumberStra
     static LONG_OR_DOUBLE: ToNumberPolicy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ToNumberPolicy;
-    static values(): (Object | null)[];
+    static values(): ToNumberPolicy[];
     constructor(arg2: ToNumberPolicy)
     readNumber(arg0: JsonReader): Number;
     name(): "DOUBLE" | "LAZILY_PARSED_NUMBER" | "LONG_OR_DOUBLE" | "BIG_DECIMAL";

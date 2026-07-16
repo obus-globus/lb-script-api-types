@@ -7,7 +7,7 @@ export class PersonNameFormatter$Usage extends Enum<PersonNameFormatter$Usage> {
     static REFERRING: PersonNameFormatter$Usage;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PersonNameFormatter$Usage;
-    static values(): (Object | null)[];
+    static values(): PersonNameFormatter$Usage[];
     private constructor()
     name(): "ADDRESSING" | "REFERRING" | "MONOGRAM";
 }

@@ -5,7 +5,6 @@ import type { HasPropertyCacheNode$LinkedHasPropertyCacheNode } from '../../../.
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class HasPropertyCacheNode$ForeignHasPropertyCacheNode extends HasPropertyCacheNode$LinkedHasPropertyCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     // private interop: InteropLibrary;
     hasProperty(thisObj: Object, root: HasPropertyCacheNode): boolean;

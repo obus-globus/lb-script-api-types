@@ -32,7 +32,7 @@ export class AccessFlag extends Enum<AccessFlag> {
     static maskToAccessFlags(paramarg0: number, paramarg1: AccessFlag$Location, paramarg2: ClassFileFormatVersion): AccessFlag[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AccessFlag;
-    static values(): (Object | null)[];
+    static values(): AccessFlag[];
     private constructor(arg2: number, arg3: boolean, arg4: AccessFlag$Location[], arg5: Map$Entry<ClassFileFormatVersion, AccessFlag$Location[]>[])
     // private historicalLocations: Map$Entry<ClassFileFormatVersion, AccessFlag$Location[]>[];
     // private locations: AccessFlag$Location[];

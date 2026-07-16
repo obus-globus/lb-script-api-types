@@ -15,7 +15,7 @@ export class NpcRequestPacket_RequestType extends Enum<NpcRequestPacket_RequestT
     static getByValue(paramarg0: number, paramarg1: NpcRequestPacket_RequestType): NpcRequestPacket_RequestType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): NpcRequestPacket_RequestType;
-    static values(): (Object | null)[];
+    static values(): NpcRequestPacket_RequestType[];
     private constructor(arg2: number)
     private constructor(arg2: NpcRequestPacket_RequestType)
     readonly value: number;

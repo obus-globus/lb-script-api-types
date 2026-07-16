@@ -5,7 +5,6 @@ import type { JSFunctionCallNode$JSFunctionCacheNode } from '../../../../../../c
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSFunctionCallNode$DirectJSFunctionCacheNode extends JSFunctionCallNode$JSFunctionCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(callTarget: CallTarget)
     constructor(callNode: DirectCallNode)
     // private callNode: DirectCallNode;

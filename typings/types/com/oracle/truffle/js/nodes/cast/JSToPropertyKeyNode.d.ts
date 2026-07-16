@@ -9,7 +9,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSToPropertyKeyNode extends JavaScriptBaseNode {
     static create(): JSToPropertyKeyNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doOther(value: Object, toPrimitiveNode: JSToPrimitiveNode, toStringNode: JSToStringNode, isSymbol: InlinedConditionProfile): Object;
     doSymbol(value: Symbol): Symbol;

@@ -7,7 +7,7 @@ export class JavaRegexValidator$RegexStackElem extends Enum<JavaRegexValidator$R
     static LookBehindAssertion: JavaRegexValidator$RegexStackElem;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): JavaRegexValidator$RegexStackElem;
-    static values(): (Object | null)[];
+    static values(): JavaRegexValidator$RegexStackElem[];
     private constructor()
     name(): "Group" | "LookAheadAssertion" | "LookBehindAssertion";
 }

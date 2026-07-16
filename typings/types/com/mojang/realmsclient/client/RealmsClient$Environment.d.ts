@@ -9,7 +9,7 @@ export class RealmsClient$Environment extends Enum<RealmsClient$Environment> {
     static byName(paramname: string): Optional<RealmsClient$Environment>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RealmsClient$Environment;
-    static values(): (Object | null)[];
+    static values(): RealmsClient$Environment[];
     private constructor(baseUrl: string, alternativeUrl: string, protocol: string)
     alternativeUrl: string;
     baseUrl: string;

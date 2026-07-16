@@ -4,7 +4,7 @@ export class BZip2CompressorInputStream$Data extends Object {
     // private base: number[][];
     // private cftab: number[];
     // private getAndMoveToFrontDecode_yy: string[];
-    // private inUse: (Object | null)[];
+    // private inUse: boolean[];
     // private limit: number[][];
     // private ll8: number[];
     // private minLens: number[];

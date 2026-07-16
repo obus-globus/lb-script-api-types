@@ -9,7 +9,7 @@ export class ClientboundStatusPackets extends Enum<ClientboundStatusPackets> imp
     static STATUS_RESPONSE: ClientboundStatusPackets;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClientboundStatusPackets;
-    static values(): (Object | null)[];
+    static values(): ClientboundStatusPackets[];
     private constructor()
     direction(): Direction;
     getId(): number;

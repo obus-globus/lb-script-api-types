@@ -10,7 +10,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSArrayPreviousElementIndexNode extends JSArrayElementIndexNode {
     static create(paramcontext: JSContext): JSArrayPreviousElementIndexNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     doWithoutHolesCached(object: JSDynamicObject, currentIndex: number, isArray: boolean, cachedArrayType: ScriptArray): number;
     doWithoutHolesUncached(object: JSDynamicObject, currentIndex: number, isArray: boolean): number;

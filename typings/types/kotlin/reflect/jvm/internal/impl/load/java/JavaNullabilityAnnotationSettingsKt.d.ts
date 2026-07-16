@@ -9,6 +9,6 @@ export class JavaNullabilityAnnotationSettingsKt extends Object {
     static getDefaultMigrationJsr305ReportLevelForGivenGlobal(paramarg0: ReportLevel): ReportLevel;
     static getDefaultReportLevelForAnnotation(paramarg0: FqName, paramarg1: KotlinVersion): ReportLevel;
     static getJSPECIFY_ANNOTATIONS_PACKAGE(): FqName;
-    static getRXJAVA3_ANNOTATIONS(): (Object | null)[];
+    static getRXJAVA3_ANNOTATIONS(): FqName[];
     static getReportLevelForAnnotation(paramarg0: FqName, paramarg1: NullabilityAnnotationStates<ReportLevel>, paramarg2: KotlinVersion): ReportLevel;
 }

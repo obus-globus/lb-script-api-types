@@ -6,7 +6,7 @@ export class Image$Flag extends Enum<Image$Flag> {
     static GRAYSCALE: Image$Flag;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Image$Flag;
-    static values(): (Object | null)[];
+    static values(): Image$Flag[];
     private constructor()
     numChannels(): number;
     name(): "GRAYSCALE" | "COLOR";

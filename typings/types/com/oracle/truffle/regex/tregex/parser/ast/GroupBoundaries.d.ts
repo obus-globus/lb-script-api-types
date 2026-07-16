@@ -6,7 +6,7 @@ import type { JsonConvertible } from '../../../../../../../com/oracle/truffle/re
 import type { JsonValue } from '../../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonValue.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class GroupBoundaries extends Object implements JsonConvertible {
-    static createCachedGroupBoundaries(): (Object | null)[];
+    static createCachedGroupBoundaries(): GroupBoundaries[];
     static getEmptyInstance(paramlanguage: RegexLanguage): GroupBoundaries;
     static getStaticInstance(paramlanguage: RegexLanguage, paramupdateIndices: number[], paramclearIndices: number[]): GroupBoundaries;
     constructor(updateIndices: number[], clearIndices: number[], firstGroup: number, lastGroup: number)

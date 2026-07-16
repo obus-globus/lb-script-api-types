@@ -11,9 +11,9 @@ import type { JSDynamicObject } from '../../../../../../../com/oracle/truffle/js
 import type { TRegexUtil$InvokeGetGroupBoundariesMethodNode } from '../../../../../../../com/oracle/truffle/js/runtime/util/TRegexUtil$InvokeGetGroupBoundariesMethodNode.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class LazyRegexResultIndicesArray extends AbstractConstantLazyArray {
-    static EMPTY_OBJECT_ARRAY: (Object | null)[];
+    static EMPTY_OBJECT_ARRAY: Object[];
     static LAZY_REGEX_RESULT_INDICES_ARRAY: LazyRegexResultIndicesArray;
-    static createConstantArray(paramelements: (Object | null)[]): AbstractConstantArray;
+    static createConstantArray(paramelements: Object[]): AbstractConstantArray;
     static createConstantEmptyArray(): AbstractConstantArray;
     static createLazyRegexResultIndicesArray(): LazyRegexResultIndicesArray;
     static getIntIndicesArray(paramcontext: JSContext, paramregexResult: Object, paramindex: number, paramnode: Node, paramgetStartNode: TRegexUtil$InvokeGetGroupBoundariesMethodNode, paramgetEndNode: TRegexUtil$InvokeGetGroupBoundariesMethodNode): Object;

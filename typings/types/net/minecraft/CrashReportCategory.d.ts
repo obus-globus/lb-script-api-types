@@ -9,7 +9,6 @@ import type { LevelHeightAccessor } from '../../net/minecraft/world/level/LevelH
 import type { BlockState } from '../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class CrashReportCategory extends Object {
     static formatLocation(paramlevelHeightAccessor: LevelHeightAccessor, paramx: number, paramy: number, paramz: number): string;
-    static formatLocation(paramlevelHeightAccessor: LevelHeightAccessor, paramx: number, paramy: number, paramz: number): string;
     static formatLocation(paramlevelHeightAccessor: LevelHeightAccessor, parampos: BlockPos): string;
     static populateBlockDetails(paramcategory: CrashReportCategory, paramlevelHeightAccessor: LevelHeightAccessor, parampos: BlockPos, paramstate: BlockState): void;
     static populateBlockLocationDetails(paramcategory: CrashReportCategory, paramlevelHeightAccessor: LevelHeightAccessor, parampos: BlockPos): CrashReportCategory;

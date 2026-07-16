@@ -22,28 +22,21 @@ export class VkFramebufferAttachmentsCreateInfoKHR extends VkFramebufferAttachme
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkFramebufferAttachmentsCreateInfoKHR;
     static calloc(paramarg0: MemoryStack): VkFramebufferAttachmentsCreateInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkFramebufferAttachmentsCreateInfo;
     static create(paramarg0: number): VkFramebufferAttachmentsCreateInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkFramebufferAttachmentsCreateInfoKHR;
     static create(paramarg0: number): VkFramebufferAttachmentsCreateInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkFramebufferAttachmentsCreateInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkFramebufferAttachmentsCreateInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkFramebufferAttachmentsCreateInfo;
     static malloc(paramarg0: MemoryStack): VkFramebufferAttachmentsCreateInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkFramebufferAttachmentsCreateInfoKHR;
     static malloc(paramarg0: MemoryStack): VkFramebufferAttachmentsCreateInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nattachmentImageInfoCount(paramarg0: number): number;
     static nattachmentImageInfoCount(paramarg0: number, paramarg1: number): void;
     static npAttachmentImageInfos(paramarg0: number): (Object | null)[];
@@ -52,7 +45,6 @@ export class VkFramebufferAttachmentsCreateInfoKHR extends VkFramebufferAttachme
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

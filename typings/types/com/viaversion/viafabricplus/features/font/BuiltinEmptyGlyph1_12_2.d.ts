@@ -9,7 +9,7 @@ export class BuiltinEmptyGlyph1_12_2 extends Enum<BuiltinEmptyGlyph1_12_2> imple
     static simple(paramadvance: number): GlyphInfo;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BuiltinEmptyGlyph1_12_2;
-    static values(): (Object | null)[];
+    static values(): BuiltinEmptyGlyph1_12_2[];
     private constructor()
     bake(arg0: GlyphStitcher): BakedSheetGlyph;
     getAdvance(bold: boolean): number;

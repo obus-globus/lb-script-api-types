@@ -11,7 +11,6 @@ import type { ModelBaker } from '../../../../../../../net/minecraft/client/resou
 import type { ResolvableModel$Resolver } from '../../../../../../../net/minecraft/client/resources/model/ResolvableModel$Resolver.d.ts'
 import type { Weighted } from '../../../../../../../net/minecraft/util/random/Weighted.d.ts'
 export class CompositeBlockStateModelImpl$Unbaked extends Record implements CompositeBlockStateModel$Unbaked {
-    static CODEC: Codec<BlockStateModel$Unbaked>;
     static CODEC: MapCodec<CompositeBlockStateModelImpl$Unbaked>;
     static ELEMENT_CODEC: Codec<Weighted<Variant>>;
     static HARDCODED_WEIGHTED_CODEC: Codec<WeightedVariants$Unbaked>;

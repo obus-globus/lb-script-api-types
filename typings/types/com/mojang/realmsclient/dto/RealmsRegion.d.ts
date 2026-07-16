@@ -29,7 +29,7 @@ export class RealmsRegion extends Enum<RealmsRegion> {
     static findByNameId(paramnameIdStr: string): RealmsRegion;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RealmsRegion;
-    static values(): (Object | null)[];
+    static values(): RealmsRegion[];
     private constructor(nameId: string, translationKey: string)
     nameId: string;
     translationKey: string;

@@ -8,7 +8,7 @@ export class AlphaCutoffParameter extends Enum<AlphaCutoffParameter> {
     static ZERO: AlphaCutoffParameter;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AlphaCutoffParameter;
-    static values(): (Object | null)[];
+    static values(): AlphaCutoffParameter[];
     private constructor()
     name(): "ZERO" | "TINY" | "HALF" | "ONE";
 }

@@ -9,10 +9,8 @@ import type { SimpleType } from '../../../../../../../../../kotlin/reflect/jvm/i
 import type { TypeParameterUpperBoundEraser } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeParameterUpperBoundEraser.d.ts'
 import type { TypeProjectionImpl } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeProjectionImpl.d.ts'
 import type { TypeSubstitution } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeSubstitution.d.ts'
-import type { TypeSubstitution$Companion } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeSubstitution$Companion.d.ts'
 export class RawSubstitution extends TypeSubstitution {
     static Companion: RawSubstitution$Companion;
-    static Companion: TypeSubstitution$Companion;
     static EMPTY: TypeSubstitution;
     constructor()
     constructor(arg0: TypeParameterUpperBoundEraser)

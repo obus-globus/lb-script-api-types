@@ -5,7 +5,7 @@ export class FileWriteMode extends Enum<FileWriteMode> {
     static APPEND: FileWriteMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): FileWriteMode;
-    static values(): (Object | null)[];
+    static values(): FileWriteMode[];
     private constructor()
     name(): "APPEND";
 }

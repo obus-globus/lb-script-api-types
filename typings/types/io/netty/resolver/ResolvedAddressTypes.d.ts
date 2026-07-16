@@ -8,7 +8,7 @@ export class ResolvedAddressTypes extends Enum<ResolvedAddressTypes> {
     static IPV6_PREFERRED: ResolvedAddressTypes;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ResolvedAddressTypes;
-    static values(): (Object | null)[];
+    static values(): ResolvedAddressTypes[];
     private constructor()
     name(): "IPV4_ONLY" | "IPV6_ONLY" | "IPV4_PREFERRED" | "IPV6_PREFERRED";
 }

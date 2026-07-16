@@ -11,7 +11,7 @@ export class LessonAction extends Enum<LessonAction> {
     static getByValue(paramarg0: number, paramarg1: LessonAction): LessonAction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LessonAction;
-    static values(): (Object | null)[];
+    static values(): LessonAction[];
     private constructor(arg2: number)
     private constructor(arg2: LessonAction)
     readonly value: number;

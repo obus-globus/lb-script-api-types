@@ -7,7 +7,7 @@ export class Dialog$ModalExclusionType extends Enum<Dialog$ModalExclusionType> {
     static TOOLKIT_EXCLUDE: Dialog$ModalExclusionType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Dialog$ModalExclusionType;
-    static values(): (Object | null)[];
+    static values(): Dialog$ModalExclusionType[];
     private constructor()
     name(): "NO_EXCLUDE" | "APPLICATION_EXCLUDE" | "TOOLKIT_EXCLUDE";
 }

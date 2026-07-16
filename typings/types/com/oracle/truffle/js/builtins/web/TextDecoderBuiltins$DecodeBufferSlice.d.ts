@@ -17,7 +17,6 @@ import type { JSArrayBufferObject$Interop } from '../../../../../../com/oracle/t
 import type { JSArrayBufferObject$Shared } from '../../../../../../com/oracle/truffle/js/runtime/builtins/JSArrayBufferObject$Shared.d.ts'
 export abstract class TextDecoderBuiltins$DecodeBufferSlice extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     // private byteLengthOfCodePointNode: TruffleString$ByteLengthOfCodePointNode;
     // private fromByteArrayNode: TruffleString$FromByteArrayNode;

@@ -7,7 +7,7 @@ export class FeatureSet$ElementCommentSupport extends Enum<FeatureSet$ElementCom
     static SHARED: FeatureSet$ElementCommentSupport;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FeatureSet$ElementCommentSupport;
-    static values(): (Object | null)[];
+    static values(): FeatureSet$ElementCommentSupport[];
     private constructor()
     name(): "NAMESPACED" | "SHARED" | "NONE";
 }

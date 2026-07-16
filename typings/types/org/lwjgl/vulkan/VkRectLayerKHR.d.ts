@@ -40,7 +40,6 @@ export class VkRectLayerKHR extends Struct<VkRectLayerKHR> implements NativeReso
     static noffset(paramarg0: number): VkOffset2D;
     static noffset(paramarg0: number, paramarg1: VkOffset2D): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     close(): void;

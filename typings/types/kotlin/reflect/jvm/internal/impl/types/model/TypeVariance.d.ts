@@ -7,7 +7,7 @@ export class TypeVariance extends Enum<TypeVariance> {
     static OUT: TypeVariance;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TypeVariance;
-    static values(): (Object | null)[];
+    static values(): TypeVariance[];
     private constructor(arg2: string)
     // private presentation: string;
     toString(): string;

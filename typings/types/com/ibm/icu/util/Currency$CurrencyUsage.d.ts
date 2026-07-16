@@ -6,7 +6,7 @@ export class Currency$CurrencyUsage extends Enum<Currency$CurrencyUsage> {
     static STANDARD: Currency$CurrencyUsage;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Currency$CurrencyUsage;
-    static values(): (Object | null)[];
+    static values(): Currency$CurrencyUsage[];
     private constructor()
     name(): "STANDARD" | "CASH";
 }

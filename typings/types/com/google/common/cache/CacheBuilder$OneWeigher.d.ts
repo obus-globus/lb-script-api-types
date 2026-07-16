@@ -6,7 +6,7 @@ export class CacheBuilder$OneWeigher extends Enum<CacheBuilder$OneWeigher> imple
     static INSTANCE: CacheBuilder$OneWeigher;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CacheBuilder$OneWeigher;
-    static values(): (Object | null)[];
+    static values(): CacheBuilder$OneWeigher[];
     private constructor()
     weigh(key: Object, value: Object): number;
     name(): "INSTANCE";

@@ -12,7 +12,7 @@ export class InventoryRightTabIndex extends Enum<InventoryRightTabIndex> {
     static getByValue(paramarg0: number, paramarg1: InventoryRightTabIndex): InventoryRightTabIndex;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): InventoryRightTabIndex;
-    static values(): (Object | null)[];
+    static values(): InventoryRightTabIndex[];
     private constructor(arg2: number)
     private constructor(arg2: InventoryRightTabIndex)
     readonly value: number;

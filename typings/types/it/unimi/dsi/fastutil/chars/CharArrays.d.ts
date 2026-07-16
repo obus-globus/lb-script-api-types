@@ -55,8 +55,8 @@ export class CharArrays extends Object {
     static radixSort(paramarg0: string[], paramarg1: string[]): void;
     static radixSort(paramarg0: string[], paramarg1: string[], paramarg2: number, paramarg3: number): void;
     static radixSort(paramarg0: string[], paramarg1: number, paramarg2: number): void;
-    static radixSort(paramarg0: (Object | null)[]): void;
-    static radixSort(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): void;
+    static radixSort(paramarg0: string[][]): void;
+    static radixSort(paramarg0: string[][], paramarg1: number, paramarg2: number): void;
     static radixSortIndirect(paramarg0: number[], paramarg1: string[], paramarg2: boolean): void;
     static radixSortIndirect(paramarg0: number[], paramarg1: string[], paramarg2: string[], paramarg3: boolean): void;
     static radixSortIndirect(paramarg0: number[], paramarg1: string[], paramarg2: string[], paramarg3: number, paramarg4: number, paramarg5: boolean): void;

@@ -10,7 +10,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class EvalNodeGen$DirectEvalNodeGen extends EvalNode$DirectEvalNode {
     static create(paramcontext: JSContext, paramthisNode: JavaScriptNode, paramcurrEnv: Object, paramblockScopeSlot: number): EvalNode$DirectEvalNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, thisNode: JavaScriptNode, currEnv: Object, blockScopeSlot: number)
     // private directEvalForeignObject0_cache: EvalNodeGen$DirectEvalNodeGen$DirectEvalForeignObject0Data;
     // private directEvalForeignObject1_switchEncoding_: TruffleString$SwitchEncodingNode;

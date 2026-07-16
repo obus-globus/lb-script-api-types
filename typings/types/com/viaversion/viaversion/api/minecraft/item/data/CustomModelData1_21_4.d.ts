@@ -5,12 +5,12 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class CustomModelData1_21_4 extends Record implements Copyable {
     static TYPE: Type<CustomModelData1_21_4>;
     static copy(paramarg0: Object | null): Object | null;
-    constructor(floats: number[], booleans: (Object | null)[], strings: string[], colors: number[])
-    // private booleans: (Object | null)[];
+    constructor(floats: number[], booleans: boolean[], strings: string[], colors: number[])
+    // private booleans: boolean[];
     // private colors: number[];
     // private floats: number[];
     // private strings: string[];
-    booleans(): (Object | null)[];
+    booleans(): boolean[];
     colors(): number[];
     copy(): CustomModelData1_21_4;
     equals(arg0: Object | null): boolean;

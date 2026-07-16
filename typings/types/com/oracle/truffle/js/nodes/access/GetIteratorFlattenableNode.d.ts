@@ -13,7 +13,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class GetIteratorFlattenableNode extends JavaScriptBaseNode {
     static create(paramrejectStrings: boolean, paramasync: boolean, paramcontext: JSContext): GetIteratorFlattenableNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(rejectStrings: boolean, async: boolean, context: JSContext)
     // private async: boolean;
     // private context: JSContext;

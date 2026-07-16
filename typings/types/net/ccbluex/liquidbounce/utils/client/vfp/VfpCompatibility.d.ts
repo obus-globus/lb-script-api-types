@@ -6,7 +6,7 @@ export class VfpCompatibility extends Enum<VfpCompatibility> {
     static INSTANCE: VfpCompatibility;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): VfpCompatibility;
-    static values(): (Object | null)[];
+    static values(): VfpCompatibility[];
     private constructor()
     isEqual1_21_4(): boolean;
     isEqual1_8(): boolean;

@@ -3,12 +3,11 @@ import type { TypeLibUtil } from '../../../../../../../../com/sun/jna/platform/w
 import type { TlbAbstractMethod } from '../../../../../../../../com/sun/jna/platform/win32/COM/tlb/imp/TlbAbstractMethod.d.ts'
 import type { OaIdl$FUNCDESC } from '../../../../../../../../com/sun/jna/platform/win32/OaIdl$FUNCDESC.d.ts'
 import type { OaIdl$VARIANT_BOOL } from '../../../../../../../../com/sun/jna/platform/win32/OaIdl$VARIANT_BOOL.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 export class TlbFunctionStub extends TlbAbstractMethod {
     static CR: string;
     static CRCR: string;
-    static IDISPATCH_METHODS: (Object | null)[];
-    static IUNKNOWN_METHODS: (Object | null)[];
+    static IDISPATCH_METHODS: string[];
+    static IUNKNOWN_METHODS: string[];
     static TAB: string;
     static TABTAB: string;
     static VARIANT_FALSE: OaIdl$VARIANT_BOOL;

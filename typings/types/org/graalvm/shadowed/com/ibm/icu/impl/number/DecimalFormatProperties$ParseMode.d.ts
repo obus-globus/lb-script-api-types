@@ -7,7 +7,7 @@ export class DecimalFormatProperties$ParseMode extends Enum<DecimalFormatPropert
     static STRICT: DecimalFormatProperties$ParseMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): DecimalFormatProperties$ParseMode;
-    static values(): (Object | null)[];
+    static values(): DecimalFormatProperties$ParseMode[];
     private constructor()
     name(): "LENIENT" | "STRICT" | "JAVA_COMPATIBILITY";
 }

@@ -11,7 +11,7 @@ export class PositionTrackingDBServerBroadcastPacketPayload_Action extends Enum<
     static getByValue(paramarg0: number, paramarg1: PositionTrackingDBServerBroadcastPacketPayload_Action): PositionTrackingDBServerBroadcastPacketPayload_Action;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PositionTrackingDBServerBroadcastPacketPayload_Action;
-    static values(): (Object | null)[];
+    static values(): PositionTrackingDBServerBroadcastPacketPayload_Action[];
     private constructor(arg2: number)
     private constructor(arg2: PositionTrackingDBServerBroadcastPacketPayload_Action)
     readonly value: number;

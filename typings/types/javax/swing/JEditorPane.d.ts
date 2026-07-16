@@ -9,12 +9,14 @@ import type { URL } from '../../java/net/URL.d.ts'
 import type { URLConnection } from '../../java/net/URLConnection.d.ts'
 import type { Locale } from '../../java/util/Locale.d.ts'
 import type { AccessibleContext } from '../../javax/accessibility/AccessibleContext.d.ts'
+import type { Action } from '../../javax/swing/Action.d.ts'
 import type { SwingWorker } from '../../javax/swing/SwingWorker.d.ts'
 import type { HyperlinkEvent } from '../../javax/swing/event/HyperlinkEvent.d.ts'
 import type { HyperlinkListener } from '../../javax/swing/event/HyperlinkListener.d.ts'
 import type { Document } from '../../javax/swing/text/Document.d.ts'
 import type { EditorKit } from '../../javax/swing/text/EditorKit.d.ts'
 import type { JTextComponent } from '../../javax/swing/text/JTextComponent.d.ts'
+import type { JTextComponent$KeyBinding } from '../../javax/swing/text/JTextComponent$KeyBinding.d.ts'
 import type { Keymap } from '../../javax/swing/text/Keymap.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export class JEditorPane extends JTextComponent {
@@ -46,7 +48,7 @@ export class JEditorPane extends JTextComponent {
     static getEditorKitClassNameForContentType(paramarg0: string): string;
     static getKeymap(paramarg0: string): Keymap;
     static isLightweightComponent(paramarg0: Component): boolean;
-    static loadKeymap(paramarg0: Keymap, paramarg1: (Object | null)[], paramarg2: (Object | null)[]): void;
+    static loadKeymap(paramarg0: Keymap, paramarg1: JTextComponent$KeyBinding[], paramarg2: Action[]): void;
     static registerEditorKitForContentType(paramarg0: string, paramarg1: string): void;
     static registerEditorKitForContentType(paramarg0: string, paramarg1: string, paramarg2: ClassLoader): void;
     static removeKeymap(paramarg0: string): Keymap;

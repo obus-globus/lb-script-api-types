@@ -11,7 +11,6 @@ import type { Number } from '../../../../../../java/lang/Number.d.ts'
 export abstract class JSToIntegerOrInfinityNode extends JavaScriptBaseNode {
     static create(): JSToIntegerOrInfinityNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doBigInt(value: BigInt): Number;
     doDouble(value: number): number;

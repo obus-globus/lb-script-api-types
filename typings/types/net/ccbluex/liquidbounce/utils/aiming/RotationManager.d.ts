@@ -13,6 +13,7 @@ import type { Rotation } from '../../../../../net/ccbluex/liquidbounce/utils/aim
 import type { RequestHandler } from '../../../../../net/ccbluex/liquidbounce/utils/client/RequestHandler.d.ts'
 import type { RestrictedSingleUseAction } from '../../../../../net/ccbluex/liquidbounce/utils/client/RestrictedSingleUseAction.d.ts'
 import type { Priority } from '../../../../../net/ccbluex/liquidbounce/utils/kotlin/Priority.d.ts'
+import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 /**
  * A rotation manager
  *
@@ -35,6 +36,7 @@ export class RotationManager extends Object implements EventListener {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt#L79 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt:79}
      */
     currentRotation: Rotation | null;
+    readonly debugDisplayName: Component;
     // private /*not mapped: */ getFakeLagging(): boolean;
     // private /*not mapped: */ getFreezing(): boolean;
     // private gameTickHandler: EventHook<GameTickEvent>;

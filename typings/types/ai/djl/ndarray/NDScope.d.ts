@@ -4,7 +4,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export class NDScope extends Object implements AutoCloseable {
     static register(paramarg0: NDArray): void;
     static unregister(paramarg0: NDArray): void;
-    static unregister(...paramarg0: (Object | null)[]): void;
+    static unregister(...paramarg0: NDArray[]): void;
     static unregister(paramarg0: (Object | null)[]): void;
     constructor()
     // private resources: Map<NDArray, NDArray>;

@@ -5,7 +5,7 @@ import type { LocationAware } from '../../../../../../org/apache/logging/log4j/c
 import type { NamePatternConverter } from '../../../../../../org/apache/logging/log4j/core/pattern/NamePatternConverter.d.ts'
 export class ClassNamePatternConverter extends NamePatternConverter implements LocationAware {
     static CATEGORY: string;
-    static newInstance(paramoptions: (Object | null)[]): ClassNamePatternConverter;
+    static newInstance(paramoptions: string[]): ClassNamePatternConverter;
     private constructor(options: string[])
     format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, toAppendTo: StringBuilder): void;

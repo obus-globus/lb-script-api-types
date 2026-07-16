@@ -20,7 +20,7 @@ export class AlternativesEntry extends CompositeEntryBase {
     static NO_CHILDREN_PROBLEM: ProblemReporter$Problem;
     static UNREACHABLE_PROBLEM: ProblemReporter$Problem;
     static alternatives(paramitems: (Object | null)[], paramprovider: (param0: Object | null) => LootPoolEntryContainer$Builder<any>): AlternativesEntry$Builder;
-    static alternatives(paramentries: Object | null): AlternativesEntry$Builder;
+    static alternatives(...paramentries: LootPoolEntryContainer$Builder<any>[]): AlternativesEntry$Builder;
     static createCodec(paramconstructor: (param0: LootPoolEntryContainer[], param1: LootItemCondition[]) => CompositeEntryBase | null): MapCodec<CompositeEntryBase>;
     constructor(children: LootPoolEntryContainer[], conditions: LootItemCondition[])
     codec(): MapCodec<AlternativesEntry>;

@@ -9,7 +9,6 @@ import type { JSArrayObject } from '../../../../../../com/oracle/truffle/js/runt
 import type { PropertyDescriptor } from '../../../../../../com/oracle/truffle/js/runtime/objects/PropertyDescriptor.d.ts'
 export class JSArrayGetOwnPropertyNodeGen$Inlined extends JSArrayGetOwnPropertyNode implements UnadoptableNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(target: InlineSupport$InlineTarget)
     // private cached_cache: InlineSupport$ReferenceField<JSArrayGetOwnPropertyNodeGen$CachedData>;
     // private state_0_: InlineSupport$StateField;

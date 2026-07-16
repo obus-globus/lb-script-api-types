@@ -11,13 +11,13 @@ import type { ZeroBasedObjectArray } from '../../../../../../../com/oracle/truff
 import type { JSDynamicObject } from '../../../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class ZeroBasedJSObjectArray extends AbstractJSObjectArray {
-    static EMPTY_OBJECT_ARRAY: (Object | null)[];
-    static createConstantArray(paramelements: (Object | null)[]): AbstractConstantArray;
+    static EMPTY_OBJECT_ARRAY: Object[];
+    static createConstantArray(paramelements: Object[]): AbstractConstantArray;
     static createConstantEmptyArray(): AbstractConstantArray;
     static createZeroBasedJSObjectArray(): ZeroBasedJSObjectArray;
     static isSupportedZeroBased(paramobject: JSDynamicObject, paramindex: number): boolean;
     static makeRangeList(paramrangeStart: number, paramrangeEnd: number): Object[];
-    static makeZeroBasedJSObjectArray(paramobject: JSDynamicObject, paramlength: number, paramusedLength: number, paramarray: Object | null, paramintegrityLevel: number): ZeroBasedJSObjectArray;
+    static makeZeroBasedJSObjectArray(paramobject: JSDynamicObject, paramlength: number, paramusedLength: number, paramarray: (Object | null)[], paramintegrityLevel: number): ZeroBasedJSObjectArray;
     static valueIsByte(paramvalue: number): boolean;
     private constructor(integrityLevel: number, cache: DynamicArray$DynamicArrayCache)
     addRangeImpl(object: JSDynamicObject, offset: number, size: number): ScriptArray;

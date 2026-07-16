@@ -9,7 +9,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class StringFunctionBuiltinsFactory$DedentTemplateStringsArrayNodeGen extends StringFunctionBuiltins$DedentTemplateStringsArrayNode {
     static create(paramcontext: JSContext): StringFunctionBuiltins$DedentTemplateStringsArrayNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private collectionsNormalize_: JSCollectionsNormalizeNode;
     // private createCodePointIterator_: TruffleString$CreateCodePointIteratorNode;

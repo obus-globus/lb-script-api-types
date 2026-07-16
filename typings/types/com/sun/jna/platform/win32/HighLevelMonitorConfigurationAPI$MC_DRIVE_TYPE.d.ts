@@ -7,7 +7,7 @@ export class HighLevelMonitorConfigurationAPI$MC_DRIVE_TYPE extends Enum<HighLev
     static MC_RED_DRIVE: HighLevelMonitorConfigurationAPI$MC_DRIVE_TYPE;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HighLevelMonitorConfigurationAPI$MC_DRIVE_TYPE;
-    static values(): (Object | null)[];
+    static values(): HighLevelMonitorConfigurationAPI$MC_DRIVE_TYPE[];
     private constructor()
     name(): "MC_RED_DRIVE" | "MC_GREEN_DRIVE" | "MC_BLUE_DRIVE";
 }

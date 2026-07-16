@@ -5,7 +5,7 @@ import type { Executor } from '../../../../java/util/concurrent/Executor.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class CacheLoader<K extends unknown, V extends unknown> extends Object {
     static asyncReloading(paramloader: CacheLoader<Object, Object>, paramexecutor: Executor): CacheLoader<Object, Object>;
-    static from(paramfunction: (param0: Object) => boolean): CacheLoader<Object, Object>;
+    static from(paramfunction: (param0: Object | null) => Object | null): CacheLoader<Object, Object>;
     static from(paramsupplier: () => Object | null): CacheLoader<Object, Object>;
     constructor()
     load(key: K): V;

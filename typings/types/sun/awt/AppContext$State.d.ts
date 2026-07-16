@@ -7,7 +7,7 @@ export class AppContext$State extends Enum<AppContext$State> {
     static VALID: AppContext$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AppContext$State;
-    static values(): (Object | null)[];
+    static values(): AppContext$State[];
     private constructor()
     name(): "VALID" | "BEING_DISPOSED" | "DISPOSED";
 }

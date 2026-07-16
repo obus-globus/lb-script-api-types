@@ -6,7 +6,7 @@ import type { VoxelShape } from '../../../../../../net/minecraft/world/phys/shap
 export class BlockBehaviour$BlockStateBase$Cache extends Object {
     private constructor(state: BlockState)
     collisionShape: VoxelShape;
-    // private faceSturdy: (Object | null)[];
+    // private faceSturdy: boolean[];
     isCollisionShapeFullBlock: boolean;
     largeCollisionShape: boolean;
     isFaceSturdy(direction: Direction, supportType: SupportType): boolean;

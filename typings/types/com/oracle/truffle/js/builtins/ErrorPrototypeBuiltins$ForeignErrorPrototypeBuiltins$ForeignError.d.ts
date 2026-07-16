@@ -14,7 +14,7 @@ export class ErrorPrototypeBuiltins$ForeignErrorPrototypeBuiltins$ForeignError e
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ErrorPrototypeBuiltins$ForeignErrorPrototypeBuiltins$ForeignError;
-    static values(): (Object | null)[];
+    static values(): ErrorPrototypeBuiltins$ForeignErrorPrototypeBuiltins$ForeignError[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

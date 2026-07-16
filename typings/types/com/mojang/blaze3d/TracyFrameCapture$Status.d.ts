@@ -7,7 +7,7 @@ export class TracyFrameCapture$Status extends Enum<TracyFrameCapture$Status> {
     static WAITING_FOR_UPLOAD: TracyFrameCapture$Status;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TracyFrameCapture$Status;
-    static values(): (Object | null)[];
+    static values(): TracyFrameCapture$Status[];
     private constructor()
     name(): "WAITING_FOR_CAPTURE" | "WAITING_FOR_COPY" | "WAITING_FOR_UPLOAD";
 }

@@ -1,3 +1,4 @@
+import type { Flushable } from '../../../../java/io/Flushable.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../../java/io/OutputStream.d.ts'
 import type { Reader } from '../../../../java/io/Reader.d.ts'
@@ -9,7 +10,7 @@ export class Streams extends Object {
     static bytes(paramarg0: InputStream, paramarg1: string): number[];
     static copy(paramarg0: InputStream, paramarg1: OutputStream, paramarg2: number[]): number;
     static copy(paramarg0: InputStream, paramarg1: OutputStream, paramarg2: number[], paramarg3: string): number;
-    static flush(...paramarg0: (Object | null)[]): void;
+    static flush(...paramarg0: Flushable[]): void;
     static of(paramarg0: number[]): InputStream;
     static of(paramarg0: CharSequence): InputStream;
     static reader(paramarg0: number[]): Reader;

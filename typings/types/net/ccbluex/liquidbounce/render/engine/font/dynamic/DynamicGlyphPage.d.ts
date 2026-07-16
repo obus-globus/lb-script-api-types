@@ -6,13 +6,11 @@ import type { DynamicAtlasAllocator } from '../../../../../../../net/ccbluex/liq
 import type { FontGlyph } from '../../../../../../../net/ccbluex/liquidbounce/render/engine/font/FontGlyph.d.ts'
 import type { GlyphIdentifier } from '../../../../../../../net/ccbluex/liquidbounce/render/engine/font/GlyphIdentifier.d.ts'
 import type { GlyphPage } from '../../../../../../../net/ccbluex/liquidbounce/render/engine/font/GlyphPage.d.ts'
-import type { GlyphPage$Companion } from '../../../../../../../net/ccbluex/liquidbounce/render/engine/font/GlyphPage$Companion.d.ts'
 import type { GlyphPage$Companion$CharacterGenerationInfo } from '../../../../../../../net/ccbluex/liquidbounce/render/engine/font/GlyphPage$Companion$CharacterGenerationInfo.d.ts'
 import type { GlyphRenderInfo } from '../../../../../../../net/ccbluex/liquidbounce/render/engine/font/GlyphRenderInfo.d.ts'
 import type { DynamicGlyphPage$Companion } from '../../../../../../../net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage$Companion.d.ts'
 import type { DynamicTexture } from '../../../../../../../net/minecraft/client/renderer/texture/DynamicTexture.d.ts'
 export class DynamicGlyphPage extends GlyphPage {
-    static Companion: GlyphPage$Companion;
     static Companion: DynamicGlyphPage$Companion;
     constructor(atlasSize: Dimension, fontHeight: number)
     // private allocator: DynamicAtlasAllocator;

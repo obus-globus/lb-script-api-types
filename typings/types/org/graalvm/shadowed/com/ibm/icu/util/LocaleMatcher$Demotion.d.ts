@@ -6,7 +6,7 @@ export class LocaleMatcher$Demotion extends Enum<LocaleMatcher$Demotion> {
     static REGION: LocaleMatcher$Demotion;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): LocaleMatcher$Demotion;
-    static values(): (Object | null)[];
+    static values(): LocaleMatcher$Demotion[];
     private constructor()
     name(): "NONE" | "REGION";
 }

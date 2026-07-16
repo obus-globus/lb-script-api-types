@@ -10,7 +10,7 @@ export class AutoSettingsStatusType extends Enum<AutoSettingsStatusType> {
     static getEntries(): AutoSettingsStatusType[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AutoSettingsStatusType;
-    static values(): (Object | null)[];
+    static values(): AutoSettingsStatusType[];
     private constructor(displayName: string, formatting: ChatFormatting)
     readonly displayName: string;
     readonly formatting: ChatFormatting;

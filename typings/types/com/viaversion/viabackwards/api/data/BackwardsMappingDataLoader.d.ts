@@ -8,7 +8,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class BackwardsMappingDataLoader extends MappingDataLoader {
     static INSTANCE: BackwardsMappingDataLoader;
-    static INSTANCE: MappingDataLoader;
     static MAPPINGS_READER: TagReader<Map$Entry<string, Tag>[]>;
     static loadGlobalIdentifiers(): void;
     constructor(arg0: Class<Object>, arg1: string)

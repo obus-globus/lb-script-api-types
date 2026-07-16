@@ -19,7 +19,7 @@ export class MeasureUnitImpl$PowerPart extends Enum<MeasureUnitImpl$PowerPart> {
     static getPowerFromTrieIndex(paramtrieIndex: number): number;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): MeasureUnitImpl$PowerPart;
-    static values(): (Object | null)[];
+    static values(): MeasureUnitImpl$PowerPart[];
     private constructor(power: number)
     // private power: number;
     getTrieIndex(): number;

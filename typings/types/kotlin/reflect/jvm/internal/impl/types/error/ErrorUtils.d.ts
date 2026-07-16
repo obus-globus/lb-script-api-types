@@ -13,9 +13,9 @@ import type { ErrorTypeConstructor } from '../../../../../../../kotlin/reflect/j
 import type { ErrorTypeKind } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/error/ErrorTypeKind.d.ts'
 export class ErrorUtils extends Object {
     static INSTANCE: ErrorUtils;
-    static createErrorScope(paramarg0: ErrorScopeKind, paramarg1: boolean, ...paramarg2: (Object | null)[]): ErrorScope;
-    static createErrorScope(paramarg0: ErrorScopeKind, ...paramarg1: (Object | null)[]): ErrorScope;
-    static createErrorType(paramarg0: ErrorTypeKind, ...paramarg1: (Object | null)[]): ErrorType;
+    static createErrorScope(paramarg0: ErrorScopeKind, paramarg1: boolean, ...paramarg2: string[]): ErrorScope;
+    static createErrorScope(paramarg0: ErrorScopeKind, ...paramarg1: string[]): ErrorScope;
+    static createErrorType(paramarg0: ErrorTypeKind, ...paramarg1: string[]): ErrorType;
     static isError(paramarg0: DeclarationDescriptor): boolean;
     static isUninferredTypeVariable(paramarg0: KotlinType): boolean;
     private constructor()

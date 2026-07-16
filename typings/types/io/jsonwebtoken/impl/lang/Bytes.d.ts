@@ -7,7 +7,7 @@ export class Bytes extends Object {
     static bitsMsg(paramarg0: number): string;
     static bytesMsg(paramarg0: number): string;
     static clear(paramarg0: number[]): void;
-    static concat(...paramarg0: (Object | null)[]): number[];
+    static concat(...paramarg0: number[][]): number[];
     static endsWith(paramarg0: number[], paramarg1: number[]): boolean;
     static increment(paramarg0: number[]): void;
     static indexOf(paramarg0: number[], paramarg1: number[]): number;
@@ -21,7 +21,6 @@ export class Bytes extends Object {
     static randomBits(paramarg0: number): number[];
     static startsWith(paramarg0: number[], paramarg1: number[]): boolean;
     static startsWith(paramarg0: number[], paramarg1: number[], paramarg2: number): boolean;
-    static toBytes(paramarg0: number): number[];
     static toBytes(paramarg0: number): number[];
     static toInt(paramarg0: number[]): number;
     static toLong(paramarg0: number[]): number;

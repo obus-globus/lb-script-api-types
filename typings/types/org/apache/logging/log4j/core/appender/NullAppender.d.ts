@@ -1,12 +1,12 @@
 import type { TimeUnit } from '../../../../../../java/util/concurrent/TimeUnit.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { Appender } from '../../../../../../org/apache/logging/log4j/core/Appender.d.ts'
 import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
 import type { AbstractAppender } from '../../../../../../org/apache/logging/log4j/core/appender/AbstractAppender.d.ts'
 export class NullAppender extends AbstractAppender {
     static DEFAULT_STOP_TIMEOUT: number;
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
     static ELEMENT_TYPE: string;
-    static EMPTY_ARRAY: (Object | null)[];
+    static EMPTY_ARRAY: Appender[];
     static PLUGIN_NAME: string;
     static createAppender(paramname: string): NullAppender;
     static parseInt(params: string, paramdefaultValue: number): number;

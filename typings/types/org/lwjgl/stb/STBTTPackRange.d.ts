@@ -51,7 +51,6 @@ export class STBTTPackRange extends Struct<STBTTPackRange> implements NativeReso
     static nv_oversample(paramarg0: number, paramarg1: number): void;
     static validate(paramarg0: number): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     array_of_unicode_codepoints(): IntBuffer;

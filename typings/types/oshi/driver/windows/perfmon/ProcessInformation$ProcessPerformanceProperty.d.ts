@@ -14,7 +14,7 @@ export class ProcessInformation$ProcessPerformanceProperty extends Enum<ProcessI
     static PRIVATEBYTES: ProcessInformation$ProcessPerformanceProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ProcessInformation$ProcessPerformanceProperty;
-    static values(): (Object | null)[];
+    static values(): ProcessInformation$ProcessPerformanceProperty[];
     private constructor(arg2: string)
     readonly counter: string;
     getCounter(): string;

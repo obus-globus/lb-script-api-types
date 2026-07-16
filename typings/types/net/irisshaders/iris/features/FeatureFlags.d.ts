@@ -22,7 +22,7 @@ export class FeatureFlags extends Enum<FeatureFlags> {
     static isInvalid(paramarg0: string): boolean;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FeatureFlags;
-    static values(): (Object | null)[];
+    static values(): FeatureFlags[];
     private constructor(arg2: () => boolean, arg3: () => boolean)
     // private hardwareRequirement: () => boolean;
     // private irisRequirement: () => boolean;

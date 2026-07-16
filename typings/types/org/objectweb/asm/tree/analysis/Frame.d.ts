@@ -22,7 +22,7 @@ export class Frame<V extends Value> extends Object {
     getStackSize(): number;
     init(arg0: Frame<V>): Frame<V>;
     initJumpTarget(arg0: number, arg1: LabelNode): void;
-    merge(arg0: Frame<V>, arg1: (Object | null)[]): boolean;
+    merge(arg0: Frame<V>, arg1: boolean[]): boolean;
     merge(arg0: Frame<V>, arg1: Interpreter<V>): boolean;
     pop(): V;
     push(arg0: V): void;

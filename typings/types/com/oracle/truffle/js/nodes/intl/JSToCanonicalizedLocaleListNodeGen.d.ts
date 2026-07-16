@@ -11,7 +11,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSToCanonicalizedLocaleListNodeGen extends JSToCanonicalizedLocaleListNode {
     static create(paramcontext: JSContext): JSToCanonicalizedLocaleListNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private equalsNode: TruffleString$EqualNode;
     // private foreignType_cache: JSToCanonicalizedLocaleListNodeGen$ForeignTypeData;

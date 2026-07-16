@@ -6,7 +6,7 @@ import type { SectionPos } from '../../../../../../../../../net/minecraft/core/S
 import type { Vector3f } from '../../../../../../../../../org/joml/Vector3f.d.ts'
 import type { Vector3fc } from '../../../../../../../../../org/joml/Vector3fc.d.ts'
 export class GeometryPlanes extends Object {
-    static fromQuadLists(paramarg0: SectionPos, paramarg1: (Object | null)[]): GeometryPlanes;
+    static fromQuadLists(paramarg0: SectionPos, paramarg1: TQuad[]): GeometryPlanes;
     constructor()
     // private alignedPlanes: NormalPlanes[];
     // private unalignedNormalScratch: Vector3f;

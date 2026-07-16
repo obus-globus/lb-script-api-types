@@ -22,8 +22,8 @@ export class PemX509Certificate extends X509Certificate implements PemEncoded {
     getEncoded(): number[];
     getExtensionValue(arg0: string): number[];
     getIssuerDN(): Principal;
-    getIssuerUniqueID(): (Object | null)[];
-    getKeyUsage(): (Object | null)[];
+    getIssuerUniqueID(): boolean[];
+    getKeyUsage(): boolean[];
     getNonCriticalExtensionOIDs(): string[];
     getNotAfter(): Date;
     getNotBefore(): Date;
@@ -34,7 +34,7 @@ export class PemX509Certificate extends X509Certificate implements PemEncoded {
     getSigAlgParams(): number[];
     getSignature(): number[];
     getSubjectDN(): Principal;
-    getSubjectUniqueID(): (Object | null)[];
+    getSubjectUniqueID(): boolean[];
     getTBSCertificate(): number[];
     getVersion(): number;
     hasUnsupportedCriticalExtension(): boolean;

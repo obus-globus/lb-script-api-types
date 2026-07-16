@@ -10,7 +10,7 @@ export class ObjectiveSortOrder extends Enum<ObjectiveSortOrder> {
     static getByValue(paramarg0: number, paramarg1: ObjectiveSortOrder): ObjectiveSortOrder;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ObjectiveSortOrder;
-    static values(): (Object | null)[];
+    static values(): ObjectiveSortOrder[];
     private constructor(arg2: number)
     private constructor(arg2: ObjectiveSortOrder)
     readonly value: number;

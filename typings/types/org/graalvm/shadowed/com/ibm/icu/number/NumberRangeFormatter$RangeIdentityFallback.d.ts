@@ -8,7 +8,7 @@ export class NumberRangeFormatter$RangeIdentityFallback extends Enum<NumberRange
     static SINGLE_VALUE: NumberRangeFormatter$RangeIdentityFallback;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): NumberRangeFormatter$RangeIdentityFallback;
-    static values(): (Object | null)[];
+    static values(): NumberRangeFormatter$RangeIdentityFallback[];
     private constructor()
     name(): "SINGLE_VALUE" | "APPROXIMATELY_OR_SINGLE_VALUE" | "APPROXIMATELY" | "RANGE";
 }

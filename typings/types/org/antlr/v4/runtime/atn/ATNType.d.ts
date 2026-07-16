@@ -6,7 +6,7 @@ export class ATNType extends Enum<ATNType> {
     static PARSER: ATNType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ATNType;
-    static values(): (Object | null)[];
+    static values(): ATNType[];
     private constructor()
     name(): "LEXER" | "PARSER";
 }

@@ -2,6 +2,7 @@ import type { Serializable } from '../../../../../../java/io/Serializable.d.ts'
 import type { Future } from '../../../../../../java/util/concurrent/Future.d.ts'
 import type { TimeUnit } from '../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { Appender } from '../../../../../../org/apache/logging/log4j/core/Appender.d.ts'
 import type { Filter } from '../../../../../../org/apache/logging/log4j/core/Filter.d.ts'
 import type { Layout } from '../../../../../../org/apache/logging/log4j/core/Layout.d.ts'
 import type { AbstractOutputStreamAppender } from '../../../../../../org/apache/logging/log4j/core/appender/AbstractOutputStreamAppender.d.ts'
@@ -13,7 +14,7 @@ export class FileAppender extends AbstractOutputStreamAppender<FileManager> {
     static DEFAULT_STOP_TIMEOUT: number;
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
     static ELEMENT_TYPE: string;
-    static EMPTY_ARRAY: (Object | null)[];
+    static EMPTY_ARRAY: Appender[];
     static PLUGIN_NAME: string;
     static createAppender(paramfileName: string, paramappend: string, paramlocking: string, paramname: string, paramimmediateFlush: string, paramignoreExceptions: string, parambufferedIo: string, parambufferSizeStr: string, paramlayout: Layout<Serializable>, paramfilter: Filter, paramadvertise: string, paramadvertiseUri: string, paramconfig: Configuration): FileAppender;
     static newBuilder(): Object | null;

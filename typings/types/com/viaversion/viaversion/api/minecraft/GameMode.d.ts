@@ -10,7 +10,7 @@ export class GameMode extends Enum<GameMode> {
     static getById(paramarg0: number): GameMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): GameMode;
-    static values(): (Object | null)[];
+    static values(): GameMode[];
     private constructor(arg2: string, arg3: number)
     // private id: number;
     // private text: string;

@@ -43,12 +43,12 @@ export class Locale extends Object implements Serializable, Cloneable {
     static filterTags(paramarg0: Locale$LanguageRange[], paramarg1: string[]): string[];
     static filterTags(paramarg0: Locale$LanguageRange[], paramarg1: string[], paramarg2: Locale$FilteringMode): string[];
     static forLanguageTag(paramarg0: string): Locale;
-    static getAvailableLocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
     static getDefault(): Locale;
     static getDefault(paramarg0: Locale$Category): Locale;
-    static getISOCountries(): (Object | null)[];
+    static getISOCountries(): string[];
     static getISOCountries(paramarg0: Locale$IsoCountryCode): string[];
-    static getISOLanguages(): (Object | null)[];
+    static getISOLanguages(): string[];
     static lookup(paramarg0: Locale$LanguageRange[], paramarg1: Locale[]): Locale;
     static lookupTag(paramarg0: Locale$LanguageRange[], paramarg1: string[]): string;
     static of(paramarg0: string): Locale;

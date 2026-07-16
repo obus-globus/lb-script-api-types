@@ -22,28 +22,21 @@ export class VkDeviceGroupBindSparseInfoKHR extends VkDeviceGroupBindSparseInfo 
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkDeviceGroupBindSparseInfoKHR;
     static calloc(paramarg0: MemoryStack): VkDeviceGroupBindSparseInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkDeviceGroupBindSparseInfo;
     static create(paramarg0: number): VkDeviceGroupBindSparseInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkDeviceGroupBindSparseInfoKHR;
     static create(paramarg0: number): VkDeviceGroupBindSparseInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkDeviceGroupBindSparseInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkDeviceGroupBindSparseInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkDeviceGroupBindSparseInfo;
     static malloc(paramarg0: MemoryStack): VkDeviceGroupBindSparseInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkDeviceGroupBindSparseInfoKHR;
     static malloc(paramarg0: MemoryStack): VkDeviceGroupBindSparseInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nmemoryDeviceIndex(paramarg0: number): number;
     static nmemoryDeviceIndex(paramarg0: number, paramarg1: number): void;
     static npNext(paramarg0: number): number;
@@ -52,7 +45,6 @@ export class VkDeviceGroupBindSparseInfoKHR extends VkDeviceGroupBindSparseInfo 
     static nresourceDeviceIndex(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

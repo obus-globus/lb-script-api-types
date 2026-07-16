@@ -7,7 +7,7 @@ export class CommandBlockEntity$Mode extends Enum<CommandBlockEntity$Mode> {
     static SEQUENCE: CommandBlockEntity$Mode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CommandBlockEntity$Mode;
-    static values(): (Object | null)[];
+    static values(): CommandBlockEntity$Mode[];
     private constructor()
     name(): "SEQUENCE" | "AUTO" | "REDSTONE";
 }

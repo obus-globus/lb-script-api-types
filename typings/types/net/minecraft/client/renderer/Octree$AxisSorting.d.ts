@@ -11,7 +11,7 @@ export class Octree$AxisSorting extends Enum<Octree$AxisSorting> {
     static getAxisSorting(paramabsXDiff: number, paramabsYDiff: number, paramabsZDiff: number): Octree$AxisSorting;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Octree$AxisSorting;
-    static values(): (Object | null)[];
+    static values(): Octree$AxisSorting[];
     private constructor(xShift: number, yShift: number, zShift: number)
     // private xShift: number;
     // private yShift: number;

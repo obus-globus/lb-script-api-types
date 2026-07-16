@@ -5,7 +5,7 @@ export class OhmSensor$ValueProperty extends Enum<OhmSensor$ValueProperty> {
     static VALUE: OhmSensor$ValueProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): OhmSensor$ValueProperty;
-    static values(): (Object | null)[];
+    static values(): OhmSensor$ValueProperty[];
     private constructor()
     name(): "VALUE";
 }

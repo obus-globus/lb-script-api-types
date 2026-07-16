@@ -10,7 +10,7 @@ export class JsonParser$NumberType extends Enum<JsonParser$NumberType> {
     static LONG: JsonParser$NumberType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): JsonParser$NumberType;
-    static values(): (Object | null)[];
+    static values(): JsonParser$NumberType[];
     private constructor()
     name(): "INT" | "LONG" | "BIG_INTEGER" | "FLOAT" | "DOUBLE" | "BIG_DECIMAL";
 }

@@ -7,7 +7,7 @@ export class MatchingMode extends Enum<MatchingMode> {
     static search: MatchingMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): MatchingMode;
-    static values(): (Object | null)[];
+    static values(): MatchingMode[];
     private constructor()
     name(): "search" | "match" | "fullmatch";
 }

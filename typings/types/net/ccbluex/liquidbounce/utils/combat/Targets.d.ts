@@ -25,7 +25,7 @@ export class Targets extends Enum<Targets> implements Tagged {
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Targets;
-    static values(): (Object | null)[];
+    static values(): Targets[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "SELF" | "PLAYERS" | "HOSTILE" | "ANGERABLE" | "WATER_CREATURE" | "PASSIVE" | "INVISIBLE" | "DEAD" | "SLEEPING" | "FRIENDS";

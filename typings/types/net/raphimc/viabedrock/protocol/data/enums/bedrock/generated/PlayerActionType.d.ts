@@ -47,7 +47,7 @@ export class PlayerActionType extends Enum<PlayerActionType> {
     static getByValue(paramarg0: number, paramarg1: PlayerActionType): PlayerActionType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PlayerActionType;
-    static values(): (Object | null)[];
+    static values(): PlayerActionType[];
     private constructor(arg2: number)
     private constructor(arg2: PlayerActionType)
     readonly value: number;

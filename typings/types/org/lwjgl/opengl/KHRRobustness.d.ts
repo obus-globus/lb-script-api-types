@@ -25,12 +25,10 @@ export class KHRRobustness extends Object {
     static glGetnUniformuiv(paramarg0: number, paramarg1: number, paramarg2: IntBuffer): void;
     static glReadnPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number[]): void;
     static glReadnPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number): void;
-    static glReadnPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number[]): void;
     static glReadnPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: ByteBuffer): void;
     static glReadnPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: FloatBuffer): void;
     static glReadnPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: IntBuffer): void;
     static glReadnPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: ShortBuffer): void;
-    static glReadnPixels(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number[]): void;
     static nglGetnUniformfv(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): void;
     static nglGetnUniformiv(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): void;
     static nglGetnUniformuiv(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): void;

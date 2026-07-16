@@ -11,7 +11,6 @@ import type { SlotDisplay } from '../../../../../../net/minecraft/world/item/cra
 export class ShapelessCraftingRecipeDisplay extends Record implements RecipeDisplay {
     static CODEC: Codec<RecipeDisplay>;
     static MAP_CODEC: MapCodec<ShapelessCraftingRecipeDisplay>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, RecipeDisplay>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ShapelessCraftingRecipeDisplay>;
     static TYPE: RecipeDisplay$Type<ShapelessCraftingRecipeDisplay>;
     constructor(ingredients: SlotDisplay[], result: SlotDisplay, craftingStation: SlotDisplay)

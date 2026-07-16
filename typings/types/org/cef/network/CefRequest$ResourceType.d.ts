@@ -25,7 +25,7 @@ export class CefRequest$ResourceType extends Enum<CefRequest$ResourceType> {
     static RT_XHR: CefRequest$ResourceType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CefRequest$ResourceType;
-    static values(): (Object | null)[];
+    static values(): CefRequest$ResourceType[];
     private constructor()
     name(): "RT_MAIN_FRAME" | "RT_SUB_FRAME" | "RT_STYLESHEET" | "RT_SCRIPT" | "RT_IMAGE" | "RT_FONT_RESOURCE" | "RT_SUB_RESOURCE" | "RT_OBJECT" | "RT_MEDIA" | "RT_WORKER" | "RT_SHARED_WORKER" | "RT_PREFETCH" | "RT_FAVICON" | "RT_XHR" | "RT_PING" | "RT_SERVICE_WORKER" | "RT_CSP_REPORT" | "RT_PLUGIN_RESOURCE" | "RT_NAVIGATION_PRELOAD_MAIN_FRAME" | "RT_NAVIGATION_PRELOAD_SUB_FRAME" | "RT_NUM_VALUES";
 }

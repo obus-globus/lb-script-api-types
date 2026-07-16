@@ -86,7 +86,7 @@ import type { LevelTickAccess } from '../../../../net/minecraft/world/ticks/Leve
 export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrackerHolder, BiomeSeedProvider, CacheSlot$Cleaner<ClientLevel>, BlockAndTintGetter {
     static ACROSS_THE_WHOLE_WORLD: number;
     static DEFAULT_QUIT_MESSAGE: Component;
-    static DIRECTIONS: (Object | null)[];
+    static DIRECTIONS: Direction[];
     static EMPTY: BlockAndTintGetter;
     static END: ResourceKey<Level>;
     static LONG_PARTICLE_CLIP_RANGE: number;

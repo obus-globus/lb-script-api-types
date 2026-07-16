@@ -7,7 +7,7 @@ export class OSService$State extends Enum<OSService$State> {
     static STOPPED: OSService$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): OSService$State;
-    static values(): (Object | null)[];
+    static values(): OSService$State[];
     private constructor()
     name(): "RUNNING" | "STOPPED" | "OTHER";
 }

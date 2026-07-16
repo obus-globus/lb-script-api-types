@@ -15,7 +15,7 @@ export class FriendsService$ResultCode extends Enum<FriendsService$ResultCode> {
     static UPGRADE_NEEDED: FriendsService$ResultCode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FriendsService$ResultCode;
-    static values(): (Object | null)[];
+    static values(): FriendsService$ResultCode[];
     private constructor()
     name(): "SUCCESS" | "ERROR" | "SERVICE_NOT_AVAILABLE" | "TOO_MANY_REQUESTS" | "FORBIDDEN" | "UPGRADE_NEEDED" | "CONNECTION_ISSUE" | "TEMPORARY_UNAVAILABLE" | "UNKNOWN_PROFILE" | "UNAUTHORIZED" | "GENERIC_ERROR";
 }

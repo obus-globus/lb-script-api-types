@@ -10,7 +10,7 @@ export class WebSocket08FrameDecoder$State extends Enum<WebSocket08FrameDecoder$
     static READING_SIZE: WebSocket08FrameDecoder$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): WebSocket08FrameDecoder$State;
-    static values(): (Object | null)[];
+    static values(): WebSocket08FrameDecoder$State[];
     private constructor()
     name(): "READING_FIRST" | "READING_SECOND" | "READING_SIZE" | "MASKING_KEY" | "PAYLOAD" | "CORRUPT";
 }

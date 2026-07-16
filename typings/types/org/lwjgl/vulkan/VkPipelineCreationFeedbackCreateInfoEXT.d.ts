@@ -24,28 +24,21 @@ export class VkPipelineCreationFeedbackCreateInfoEXT extends VkPipelineCreationF
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPipelineCreationFeedbackCreateInfoEXT;
     static calloc(paramarg0: MemoryStack): VkPipelineCreationFeedbackCreateInfoEXT;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPipelineCreationFeedbackCreateInfo;
     static create(paramarg0: number): VkPipelineCreationFeedbackCreateInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPipelineCreationFeedbackCreateInfoEXT;
     static create(paramarg0: number): VkPipelineCreationFeedbackCreateInfoEXT;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPipelineCreationFeedbackCreateInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPipelineCreationFeedbackCreateInfoEXT;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPipelineCreationFeedbackCreateInfo;
     static malloc(paramarg0: MemoryStack): VkPipelineCreationFeedbackCreateInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPipelineCreationFeedbackCreateInfoEXT;
     static malloc(paramarg0: MemoryStack): VkPipelineCreationFeedbackCreateInfoEXT;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static npPipelineCreationFeedback(paramarg0: number): VkPipelineCreationFeedback;
@@ -56,7 +49,6 @@ export class VkPipelineCreationFeedbackCreateInfoEXT extends VkPipelineCreationF
     static npipelineStageCreationFeedbackCount(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

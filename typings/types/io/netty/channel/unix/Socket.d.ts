@@ -9,7 +9,6 @@ import type { InetAddress } from '../../../../java/net/InetAddress.d.ts'
 import type { InetSocketAddress } from '../../../../java/net/InetSocketAddress.d.ts'
 import type { SocketAddress } from '../../../../java/net/SocketAddress.d.ts'
 import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Socket extends FileDescriptor {
     static UDS_SUN_PATH_SIZE: number;
     static from(paramarg0: File): FileDescriptor;
@@ -20,7 +19,7 @@ export class Socket extends FileDescriptor {
     static newSocketDomain(): Socket;
     static newSocketDomainDgram(): Socket;
     static newSocketStream(): Socket;
-    static pipe(): (Object | null)[];
+    static pipe(): FileDescriptor[];
     static shouldUseIpv6(paramarg0: InternetProtocolFamily): boolean;
     static shouldUseIpv6(paramarg0: SocketProtocolFamily): boolean;
     constructor(arg0: number)

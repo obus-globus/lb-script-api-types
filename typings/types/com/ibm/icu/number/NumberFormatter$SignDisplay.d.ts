@@ -13,7 +13,7 @@ export class NumberFormatter$SignDisplay extends Enum<NumberFormatter$SignDispla
     static NEVER: NumberFormatter$SignDisplay;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): NumberFormatter$SignDisplay;
-    static values(): (Object | null)[];
+    static values(): NumberFormatter$SignDisplay[];
     private constructor()
     name(): "AUTO" | "ALWAYS" | "NEVER" | "ACCOUNTING" | "ACCOUNTING_ALWAYS" | "EXCEPT_ZERO" | "ACCOUNTING_EXCEPT_ZERO" | "NEGATIVE" | "ACCOUNTING_NEGATIVE";
 }

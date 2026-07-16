@@ -10,7 +10,7 @@ export class ScreenDirection extends Enum<ScreenDirection> {
     static UP: ScreenDirection;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ScreenDirection;
-    static values(): (Object | null)[];
+    static values(): ScreenDirection[];
     private constructor()
     // private coordinateValueComparator: (param0: number, param1: number) => number;
     coordinateValueComparator(): (param0: number, param1: number) => number;

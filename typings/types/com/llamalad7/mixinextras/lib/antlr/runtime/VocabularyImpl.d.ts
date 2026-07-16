@@ -2,7 +2,7 @@ import type { Vocabulary } from '../../../../../../com/llamalad7/mixinextras/lib
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class VocabularyImpl extends Object implements Vocabulary {
     static EMPTY_VOCABULARY: VocabularyImpl;
-    static fromTokenNames(paramarg0: (Object | null)[]): Vocabulary;
+    static fromTokenNames(paramarg0: string[]): Vocabulary;
     constructor(arg0: string[], arg1: string[])
     constructor(arg0: string[], arg1: string[], arg2: string[])
     // private displayNames: string[];

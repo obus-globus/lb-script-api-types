@@ -27,7 +27,7 @@ export class AsyncFunctionBodyNode$AsyncFunctionRootNode extends AbstractFunctio
     static GENERATOR_OBJECT_OR_PROMISE_CAPABILITY_INDEX: number;
     static MODULE_DUMMY_FRAMEDESCRIPTOR: FrameDescriptor;
     static STACK_TRACE_INDEX: number;
-    static createAsyncContext(paramresumeTarget: CallTarget, paramgeneratorObjectOrPromiseCapability: Object, paramasyncFrame: MaterializedFrame): (Object | null)[];
+    static createAsyncContext(paramresumeTarget: CallTarget, paramgeneratorObjectOrPromiseCapability: Object, paramasyncFrame: MaterializedFrame): Object[];
     static createConstantNode(paramconstant: Object): RootNode;
     static findAsynchronousFrames(paramrootNode: JavaScriptRootNode, paramframe: Frame): TruffleStackTraceElement[];
     constructor(context: JSContext, body: JavaScriptNode, asyncResult: JSWriteFrameSlotNode, readAsyncContext: JSReadFrameSlotNode, functionSourceSection: SourceSection, functionName: TruffleString, activeScriptOrModule: ScriptOrModule)

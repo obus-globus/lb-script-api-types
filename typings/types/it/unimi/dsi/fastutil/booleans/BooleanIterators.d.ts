@@ -12,8 +12,8 @@ export class BooleanIterators extends Object {
     static any(paramarg0: BooleanIterator, paramarg1: (param0: boolean) => boolean): boolean;
     static asBooleanIterator(paramarg0: Iterator<Object>): BooleanIterator;
     static asBooleanIterator(paramarg0: ListIterator<Object>): BooleanListIterator;
-    static concat(...paramarg0: (Object | null)[]): BooleanIterator;
-    static concat(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): BooleanIterator;
+    static concat(...paramarg0: BooleanIterator[]): BooleanIterator;
+    static concat(paramarg0: BooleanIterator[], paramarg1: number, paramarg2: number): BooleanIterator;
     static indexOf(paramarg0: BooleanIterator, paramarg1: (param0: boolean) => boolean): number;
     static pour(paramarg0: BooleanIterator, paramarg1: (Object | null)[]): number;
     static pour(paramarg0: BooleanIterator, paramarg1: (Object | null)[], paramarg2: number): number;
@@ -23,17 +23,17 @@ export class BooleanIterators extends Object {
     static unmodifiable(paramarg0: BooleanBidirectionalIterator): BooleanBidirectionalIterator;
     static unmodifiable(paramarg0: BooleanIterator): BooleanIterator;
     static unmodifiable(paramarg0: BooleanListIterator): BooleanListIterator;
-    static unwrap(paramarg0: BooleanIterator): (Object | null)[];
-    static unwrap(paramarg0: BooleanIterator, paramarg1: number): (Object | null)[];
-    static unwrap(paramarg0: BooleanIterator, paramarg1: (Object | null)[]): number;
-    static unwrap(paramarg0: BooleanIterator, paramarg1: (Object | null)[], paramarg2: number, paramarg3: number): number;
+    static unwrap(paramarg0: BooleanIterator): boolean[];
+    static unwrap(paramarg0: BooleanIterator, paramarg1: number): boolean[];
+    static unwrap(paramarg0: BooleanIterator, paramarg1: boolean[]): number;
+    static unwrap(paramarg0: BooleanIterator, paramarg1: boolean[], paramarg2: number, paramarg3: number): number;
     static unwrap(paramarg0: BooleanIterator, paramarg1: (Object | null)[], paramarg2: number): number;
+    static unwrap(paramarg0: BooleanIterator, paramarg1: boolean[][]): number;
+    static unwrap(paramarg0: BooleanIterator, paramarg1: boolean[][], paramarg2: number, paramarg3: number): number;
     static unwrap(paramarg0: BooleanIterator, paramarg1: (Object | null)[]): number;
-    static unwrap(paramarg0: BooleanIterator, paramarg1: (Object | null)[], paramarg2: number, paramarg3: number): number;
-    static unwrap(paramarg0: BooleanIterator, paramarg1: (Object | null)[]): number;
-    static unwrapBig(paramarg0: BooleanIterator): (Object | null)[];
-    static unwrapBig(paramarg0: BooleanIterator, paramarg1: number): (Object | null)[];
-    static wrap(paramarg0: (Object | null)[]): BooleanListIterator;
-    static wrap(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): BooleanListIterator;
+    static unwrapBig(paramarg0: BooleanIterator): boolean[][];
+    static unwrapBig(paramarg0: BooleanIterator, paramarg1: number): boolean[][];
+    static wrap(paramarg0: boolean[]): BooleanListIterator;
+    static wrap(paramarg0: boolean[], paramarg1: number, paramarg2: number): BooleanListIterator;
     private constructor()
 }

@@ -8,7 +8,7 @@ export class Interval$Unbounded extends Enum<Interval$Unbounded> {
     static OPEN_RIGHT: Interval$Unbounded;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Interval$Unbounded;
-    static values(): (Object | null)[];
+    static values(): Interval$Unbounded[];
     private constructor()
     name(): "OPEN_LEFT" | "CLOSED_LEFT" | "OPEN_RIGHT" | "CLOSED_RIGHT";
 }

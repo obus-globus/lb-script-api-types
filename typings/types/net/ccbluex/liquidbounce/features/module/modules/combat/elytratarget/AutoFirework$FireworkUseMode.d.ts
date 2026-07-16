@@ -13,7 +13,7 @@ export class AutoFirework$FireworkUseMode extends Enum<AutoFirework$FireworkUseM
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AutoFirework$FireworkUseMode;
-    static values(): (Object | null)[];
+    static values(): AutoFirework$FireworkUseMode[];
     private constructor(tag: string)
     readonly tag: string;
     useFireworkSlot(slot: HotbarItemSlot, resetDelay: number): void;

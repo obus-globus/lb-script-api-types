@@ -8,7 +8,7 @@ export class TemporalUtil$OptionType extends Enum<TemporalUtil$OptionType> {
     static STRING: TemporalUtil$OptionType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TemporalUtil$OptionType;
-    static values(): (Object | null)[];
+    static values(): TemporalUtil$OptionType[];
     private constructor()
     allowsBoolean(): boolean;
     allowsNumber(): boolean;

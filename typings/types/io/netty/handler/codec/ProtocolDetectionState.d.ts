@@ -7,7 +7,7 @@ export class ProtocolDetectionState extends Enum<ProtocolDetectionState> {
     static NEEDS_MORE_DATA: ProtocolDetectionState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ProtocolDetectionState;
-    static values(): (Object | null)[];
+    static values(): ProtocolDetectionState[];
     private constructor()
     name(): "NEEDS_MORE_DATA" | "INVALID" | "DETECTED";
 }

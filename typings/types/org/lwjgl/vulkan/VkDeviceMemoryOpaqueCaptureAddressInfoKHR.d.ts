@@ -21,35 +21,27 @@ export class VkDeviceMemoryOpaqueCaptureAddressInfoKHR extends VkDeviceMemoryOpa
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkDeviceMemoryOpaqueCaptureAddressInfoKHR;
     static calloc(paramarg0: MemoryStack): VkDeviceMemoryOpaqueCaptureAddressInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkDeviceMemoryOpaqueCaptureAddressInfo;
     static create(paramarg0: number): VkDeviceMemoryOpaqueCaptureAddressInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkDeviceMemoryOpaqueCaptureAddressInfoKHR;
     static create(paramarg0: number): VkDeviceMemoryOpaqueCaptureAddressInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkDeviceMemoryOpaqueCaptureAddressInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkDeviceMemoryOpaqueCaptureAddressInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkDeviceMemoryOpaqueCaptureAddressInfo;
     static malloc(paramarg0: MemoryStack): VkDeviceMemoryOpaqueCaptureAddressInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkDeviceMemoryOpaqueCaptureAddressInfoKHR;
     static malloc(paramarg0: MemoryStack): VkDeviceMemoryOpaqueCaptureAddressInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nmemory(paramarg0: number): number;
     static nmemory(paramarg0: number, paramarg1: number): void;
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

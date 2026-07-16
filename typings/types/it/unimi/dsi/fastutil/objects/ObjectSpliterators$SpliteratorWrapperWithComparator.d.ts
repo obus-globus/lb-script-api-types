@@ -12,8 +12,8 @@ export class ObjectSpliterators$SpliteratorWrapperWithComparator<K extends unkno
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(arg0: Spliterator<K>, arg1: (param0: Object) => boolean)
-    readonly comparator: (param0: Object) => boolean;
-    getComparator(): (param0: Object) => boolean;
+    constructor(arg0: Spliterator<K>, arg1: (param0: K, param1: K) => number)
+    readonly comparator: (param0: K, param1: K) => number;
+    getComparator(): (param0: K, param1: K) => number;
     trySplit(): ObjectSpliterator<K>;
 }

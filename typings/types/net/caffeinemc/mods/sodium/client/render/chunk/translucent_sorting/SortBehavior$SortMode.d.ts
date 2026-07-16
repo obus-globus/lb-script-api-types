@@ -7,7 +7,7 @@ export class SortBehavior$SortMode extends Enum<SortBehavior$SortMode> {
     static STATIC: SortBehavior$SortMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SortBehavior$SortMode;
-    static values(): (Object | null)[];
+    static values(): SortBehavior$SortMode[];
     private constructor()
     name(): "NONE" | "STATIC" | "DYNAMIC";
 }

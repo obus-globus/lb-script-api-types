@@ -2,7 +2,6 @@ import type { Annotation } from '../../../../../../../java/lang/annotation/Annot
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { KClass } from '../../../../../../../kotlin/reflect/KClass.d.ts'
 export interface CommandLine$Parameters extends Annotation, Object{
-    constructor(arity: string, description: string[], hidden: boolean, index: string, paramLabel: string, split: string, type: KClass<Object>[])
     /*not mapped: */ arity(): string;
     /*not mapped: */ description(): string[];
     /*not mapped: */ hidden(): boolean;

@@ -7,7 +7,7 @@ export class UnicodeSet$ComparisonStyle extends Enum<UnicodeSet$ComparisonStyle>
     static SHORTER_FIRST: UnicodeSet$ComparisonStyle;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): UnicodeSet$ComparisonStyle;
-    static values(): (Object | null)[];
+    static values(): UnicodeSet$ComparisonStyle[];
     private constructor()
     name(): "SHORTER_FIRST" | "LEXICOGRAPHIC" | "LONGER_FIRST";
 }

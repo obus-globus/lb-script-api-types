@@ -6,7 +6,7 @@ export class FileDialogUtil$DialogType extends Enum<FileDialogUtil$DialogType> {
     static SAVE: FileDialogUtil$DialogType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FileDialogUtil$DialogType;
-    static values(): (Object | null)[];
+    static values(): FileDialogUtil$DialogType[];
     private constructor()
     name(): "SAVE" | "OPEN";
 }

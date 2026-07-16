@@ -17,7 +17,6 @@ export class BannerDuplicateRecipe extends CustomRecipe {
     static MAP_CODEC: MapCodec<BannerDuplicateRecipe>;
     static SERIALIZER: RecipeSerializer<BannerDuplicateRecipe>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, BannerDuplicateRecipe>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<any>>;
     constructor(banner: Ingredient, result: ItemStackTemplate)
     // private banner: Ingredient;
     // private result: ItemStackTemplate;

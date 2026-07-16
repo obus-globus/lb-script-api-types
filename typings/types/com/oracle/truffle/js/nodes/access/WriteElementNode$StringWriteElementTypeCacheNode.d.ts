@@ -7,7 +7,6 @@ import type { ToArrayIndexNoToPropertyKeyNode } from '../../../../../../com/orac
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class WriteElementNode$StringWriteElementTypeCacheNode extends WriteElementNode$ToPropertyKeyCachedWriteElementTypeCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doString(target: Object, index: Object, value: Object, receiver: Object, root: WriteElementNode, isImmutable: InlinedConditionProfile, toArrayIndexNode: ToArrayIndexNoToPropertyKeyNode, indexToPropertyKeyNode: JSToPropertyKeyNode): void;
     doStringIntegerIndex(target: Object, index: number, value: Object, receiver: Object, root: WriteElementNode, isImmutable: InlinedConditionProfile): void;

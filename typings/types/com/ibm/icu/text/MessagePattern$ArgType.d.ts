@@ -10,7 +10,7 @@ export class MessagePattern$ArgType extends Enum<MessagePattern$ArgType> {
     static SIMPLE: MessagePattern$ArgType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MessagePattern$ArgType;
-    static values(): (Object | null)[];
+    static values(): MessagePattern$ArgType[];
     private constructor()
     hasPluralStyle(): boolean;
     name(): "NONE" | "SIMPLE" | "CHOICE" | "PLURAL" | "SELECT" | "SELECTORDINAL";

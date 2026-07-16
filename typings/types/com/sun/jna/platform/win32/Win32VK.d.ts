@@ -265,7 +265,7 @@ export class Win32VK extends Enum<Win32VK> {
     static fromValue(paramarg0: number): Win32VK;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Win32VK;
-    static values(): (Object | null)[];
+    static values(): Win32VK[];
     private constructor(arg2: number)
     private constructor(arg2: number, arg3: number)
     code: number;

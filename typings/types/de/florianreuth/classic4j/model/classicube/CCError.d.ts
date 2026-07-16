@@ -9,7 +9,7 @@ export class CCError extends Enum<CCError> {
     static VERIFICATION: CCError;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CCError;
-    static values(): (Object | null)[];
+    static values(): CCError[];
     private constructor(arg2: string)
     description: string;
     name(): "TOKEN" | "USERNAME" | "PASSWORD" | "VERIFICATION" | "LOGIN_CODE";

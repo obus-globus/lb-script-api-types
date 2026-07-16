@@ -11,7 +11,7 @@ export class MapItemTrackedActor_Type extends Enum<MapItemTrackedActor_Type> {
     static getByValue(paramarg0: number, paramarg1: MapItemTrackedActor_Type): MapItemTrackedActor_Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MapItemTrackedActor_Type;
-    static values(): (Object | null)[];
+    static values(): MapItemTrackedActor_Type[];
     private constructor(arg2: number)
     private constructor(arg2: MapItemTrackedActor_Type)
     readonly value: number;

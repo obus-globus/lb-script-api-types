@@ -8,7 +8,7 @@ export class Native$OS extends Enum<Native$OS> {
     static WINDOWS: Native$OS;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Native$OS;
-    static values(): (Object | null)[];
+    static values(): Native$OS[];
     private constructor(arg2: string, arg3: string)
     libExtension: string;
     name: string;

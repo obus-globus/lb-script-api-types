@@ -12,7 +12,7 @@ export class WrapForValidAsyncIteratorPrototypeBuiltins$WrapForWrapForAsyncItera
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): WrapForValidAsyncIteratorPrototypeBuiltins$WrapForWrapForAsyncIterator;
-    static values(): (Object | null)[];
+    static values(): WrapForValidAsyncIteratorPrototypeBuiltins$WrapForWrapForAsyncIterator[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

@@ -7,8 +7,6 @@ export class StringUtils extends Object {
     static isEmpty(paramarg0: CharSequence): boolean;
     static joinWith(paramarg0: string, paramarg1: string[]): string;
     static leftPad(paramarg0: string, paramarg1: number, paramarg2: string): string;
-    static leftPad(paramarg0: string, paramarg1: number, paramarg2: string): string;
-    static repeat(paramarg0: string, paramarg1: number): string;
     static repeat(paramarg0: string, paramarg1: number): string;
     constructor()
 }

@@ -18,7 +18,7 @@ export class ModuleSkinDerp$DerpParts extends Enum<ModuleSkinDerp$DerpParts> imp
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleSkinDerp$DerpParts;
-    static values(): (Object | null)[];
+    static values(): ModuleSkinDerp$DerpParts[];
     private constructor(tag: string, part: PlayerModelPart)
     readonly part: PlayerModelPart;
     readonly tag: string;

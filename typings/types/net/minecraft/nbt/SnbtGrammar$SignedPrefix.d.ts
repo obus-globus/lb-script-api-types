@@ -6,7 +6,7 @@ export class SnbtGrammar$SignedPrefix extends Enum<SnbtGrammar$SignedPrefix> {
     static UNSIGNED: SnbtGrammar$SignedPrefix;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SnbtGrammar$SignedPrefix;
-    static values(): (Object | null)[];
+    static values(): SnbtGrammar$SignedPrefix[];
     private constructor()
     name(): "SIGNED" | "UNSIGNED";
 }

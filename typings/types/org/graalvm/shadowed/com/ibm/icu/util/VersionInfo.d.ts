@@ -48,7 +48,7 @@ export class VersionInfo extends Object implements Comparable<VersionInfo> {
     static getInstance(parammajor: number, paramminor: number, parammilli: number): VersionInfo;
     static getInstance(parammajor: number, paramminor: number, parammilli: number, parammicro: number): VersionInfo;
     static getInstance(paramversion: string): VersionInfo;
-    static main(paramargs: (Object | null)[]): void;
+    static main(paramargs: string[]): void;
     private constructor(compactversion: number)
     // private m_version_: number;
     compareTo(other: VersionInfo): number;

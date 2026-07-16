@@ -15,7 +15,6 @@ import type { ArmorTrim } from '../../../../../net/minecraft/world/item/equipmen
 import type { TrimMaterial } from '../../../../../net/minecraft/world/item/equipment/trim/TrimMaterial.d.ts'
 import type { TrimPattern } from '../../../../../net/minecraft/world/item/equipment/trim/TrimPattern.d.ts'
 export class TrimPredicate extends Record implements SingleComponentItemPredicate<ArmorTrim> {
-    static CODEC: Codec<Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
     static CODEC: Codec<TrimPredicate>;
     static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<any>>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;

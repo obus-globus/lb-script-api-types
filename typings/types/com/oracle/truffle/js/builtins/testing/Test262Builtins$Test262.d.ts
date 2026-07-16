@@ -21,7 +21,7 @@ export class Test262Builtins$Test262 extends Enum<Test262Builtins$Test262> imple
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Test262Builtins$Test262;
-    static values(): (Object | null)[];
+    static values(): Test262Builtins$Test262[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

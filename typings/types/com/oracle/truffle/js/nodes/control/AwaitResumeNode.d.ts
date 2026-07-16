@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class AwaitResumeNode extends JavaScriptBaseNode {
     static create(paramrejected: boolean): AwaitResumeNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(rejected: boolean)
     // private executeResumeNode: InternalCallNode;
     // private rejected: boolean;

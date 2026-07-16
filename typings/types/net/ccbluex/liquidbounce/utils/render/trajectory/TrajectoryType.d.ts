@@ -31,7 +31,7 @@ export class TrajectoryType extends Enum<TrajectoryType> implements Tagged {
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TrajectoryType;
-    static values(): (Object | null)[];
+    static values(): TrajectoryType[];
     private constructor(tag: string, initialTickBehavior: TrajectoryType$InitialTickBehavior)
     readonly initialTickBehavior: TrajectoryType$InitialTickBehavior;
     readonly requiresInitialTickCorrection: boolean;

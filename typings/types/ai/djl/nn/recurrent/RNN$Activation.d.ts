@@ -6,7 +6,7 @@ export class RNN$Activation extends Enum<RNN$Activation> {
     static TANH: RNN$Activation;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RNN$Activation;
-    static values(): (Object | null)[];
+    static values(): RNN$Activation[];
     private constructor()
     name(): "RELU" | "TANH";
 }

@@ -14,7 +14,7 @@ export class MinimapHudComponent$ExtraElement$Placement extends Enum<MinimapHudC
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MinimapHudComponent$ExtraElement$Placement;
-    static values(): (Object | null)[];
+    static values(): MinimapHudComponent$ExtraElement$Placement[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "TOP_LEFT" | "TOP_RIGHT" | "BOTTOM_LEFT" | "BOTTOM_RIGHT";

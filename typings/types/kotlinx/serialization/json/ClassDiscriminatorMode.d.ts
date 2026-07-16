@@ -8,7 +8,7 @@ export class ClassDiscriminatorMode extends Enum<ClassDiscriminatorMode> {
     static getEntries(): ClassDiscriminatorMode[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClassDiscriminatorMode;
-    static values(): (Object | null)[];
+    static values(): ClassDiscriminatorMode[];
     private constructor()
     name(): "NONE" | "ALL_JSON_OBJECTS" | "POLYMORPHIC";
 }

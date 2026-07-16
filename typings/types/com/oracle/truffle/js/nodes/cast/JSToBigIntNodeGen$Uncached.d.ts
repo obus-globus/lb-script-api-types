@@ -7,7 +7,6 @@ export class JSToBigIntNodeGen$Uncached extends JSToBigIntNode implements Unadop
     static create(): JSToBigIntNode;
     static getUncached(): JSToBigIntNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     execute(arg0Value: Object): BigInt;
 }

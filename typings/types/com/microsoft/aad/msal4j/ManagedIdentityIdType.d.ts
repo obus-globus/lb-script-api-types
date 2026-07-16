@@ -8,7 +8,7 @@ export class ManagedIdentityIdType extends Enum<ManagedIdentityIdType> {
     static SYSTEM_ASSIGNED: ManagedIdentityIdType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ManagedIdentityIdType;
-    static values(): (Object | null)[];
+    static values(): ManagedIdentityIdType[];
     private constructor()
     name(): "SYSTEM_ASSIGNED" | "CLIENT_ID" | "RESOURCE_ID" | "OBJECT_ID";
 }

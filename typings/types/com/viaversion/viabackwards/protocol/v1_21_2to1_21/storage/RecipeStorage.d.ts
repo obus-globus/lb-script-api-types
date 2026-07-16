@@ -10,7 +10,7 @@ export class RecipeStorage extends Object implements StorableObject {
     static RECIPE_BOOK_SETTINGS: number;
     constructor(arg0: Protocol1_21_2To1_21)
     // private protocol: Protocol1_21_2To1_21;
-    readonly recipeBookSettings: (Object | null)[];
+    readonly recipeBookSettings: boolean[];
     // private recipes: RecipeStorage$Recipe[];
     // private stoneCutterRecipes: RecipeStorage$StoneCutterRecipe[];
     // private tempRecipes: RecipeStorage$Recipe[];
@@ -32,5 +32,5 @@ export class RecipeStorage extends Object implements StorableObject {
     // private rewriteItemId(arg0: number): number;
     sendRecipes(arg0: UserConnection): void;
     // private sendUnlockedRecipes(arg0: UserConnection, arg1: RecipeStorage$Recipe[]): void;
-    setRecipeBookSettings(arg0: (Object | null)[]): void;
+    setRecipeBookSettings(arg0: boolean[]): void;
 }

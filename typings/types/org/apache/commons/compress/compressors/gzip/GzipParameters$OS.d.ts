@@ -20,7 +20,7 @@ export class GzipParameters$OS extends Enum<GzipParameters$OS> {
     static from(paramarg0: number): GzipParameters$OS;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): GzipParameters$OS;
-    static values(): (Object | null)[];
+    static values(): GzipParameters$OS[];
     private constructor(arg2: number)
     // private type: number;
     type(): number;

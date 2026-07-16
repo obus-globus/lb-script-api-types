@@ -5,7 +5,6 @@ import type { PropertyCacheNode$ReceiverCheckNode } from '../../../../../../com/
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class HasPropertyCacheNode$JSAdapterHasPropertyCacheNode extends HasPropertyCacheNode$LinkedHasPropertyCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(key: Object, receiverCheckNode: PropertyCacheNode$ReceiverCheckNode)
     hasProperty(thisObj: Object, root: HasPropertyCacheNode): boolean;
 }

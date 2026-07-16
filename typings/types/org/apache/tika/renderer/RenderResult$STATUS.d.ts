@@ -7,7 +7,7 @@ export class RenderResult$STATUS extends Enum<RenderResult$STATUS> {
     static TIMEOUT: RenderResult$STATUS;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RenderResult$STATUS;
-    static values(): (Object | null)[];
+    static values(): RenderResult$STATUS[];
     private constructor()
     name(): "SUCCESS" | "EXCEPTION" | "TIMEOUT";
 }

@@ -6,7 +6,7 @@ export class CacheValue$Strength extends Enum<CacheValue$Strength> {
     static STRONG: CacheValue$Strength;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CacheValue$Strength;
-    static values(): (Object | null)[];
+    static values(): CacheValue$Strength[];
     private constructor()
     name(): "STRONG" | "SOFT";
 }

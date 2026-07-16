@@ -6,7 +6,7 @@ export class EnvType extends Enum<EnvType> {
     static SERVER: EnvType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): EnvType;
-    static values(): (Object | null)[];
+    static values(): EnvType[];
     private constructor()
     name(): "CLIENT" | "SERVER";
 }

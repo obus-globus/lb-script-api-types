@@ -6,7 +6,6 @@ export abstract class JSToBooleanNode extends JavaScriptBaseNode {
     static create(): JSToBooleanNode;
     static getUncached(): JSToBooleanNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doForeignObject(value: Object, interop: InteropLibrary): boolean;
     executeBoolean(node: Node, value: Object): boolean;

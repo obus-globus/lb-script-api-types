@@ -8,7 +8,6 @@ export class ToFractionalSecondDigitsNodeGen extends ToFractionalSecondDigitsNod
     static AUTO: number;
     static create(): ToFractionalSecondDigitsNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private equalNode_: TruffleString$EqualNode;
     // private getFractionalSecondDigits_: PropertyGetNode;

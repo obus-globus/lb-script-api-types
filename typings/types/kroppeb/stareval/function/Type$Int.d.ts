@@ -8,7 +8,7 @@ import type { Type$Primitive } from '../../../kroppeb/stareval/function/Type$Pri
 import type { TypedFunction$Parameter } from '../../../kroppeb/stareval/function/TypedFunction$Parameter.d.ts'
 import type { UniformType } from '../../../net/irisshaders/iris/gl/uniform/UniformType.d.ts'
 export class Type$Int extends Type$Primitive {
-    static AllPrimitives: (Object | null)[];
+    static AllPrimitives: Type$Primitive[];
     static Boolean: Type$Boolean;
     static BooleanParameter: TypedFunction$Parameter;
     static Float: Type$Float;

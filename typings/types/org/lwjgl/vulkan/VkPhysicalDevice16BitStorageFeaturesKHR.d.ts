@@ -24,28 +24,21 @@ export class VkPhysicalDevice16BitStorageFeaturesKHR extends VkPhysicalDevice16B
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDevice16BitStorageFeaturesKHR;
     static calloc(paramarg0: MemoryStack): VkPhysicalDevice16BitStorageFeaturesKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDevice16BitStorageFeatures;
     static create(paramarg0: number): VkPhysicalDevice16BitStorageFeatures;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDevice16BitStorageFeaturesKHR;
     static create(paramarg0: number): VkPhysicalDevice16BitStorageFeaturesKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDevice16BitStorageFeatures;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDevice16BitStorageFeaturesKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDevice16BitStorageFeatures;
     static malloc(paramarg0: MemoryStack): VkPhysicalDevice16BitStorageFeatures;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDevice16BitStorageFeaturesKHR;
     static malloc(paramarg0: MemoryStack): VkPhysicalDevice16BitStorageFeaturesKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
@@ -58,7 +51,6 @@ export class VkPhysicalDevice16BitStorageFeaturesKHR extends VkPhysicalDevice16B
     static nstoragePushConstant16(paramarg0: number, paramarg1: number): void;
     static nuniformAndStorageBuffer16BitAccess(paramarg0: number): number;
     static nuniformAndStorageBuffer16BitAccess(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

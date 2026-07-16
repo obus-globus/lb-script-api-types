@@ -7,7 +7,7 @@ export class TimerQuery$Status extends Enum<TimerQuery$Status> {
     static STARTED: TimerQuery$Status;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TimerQuery$Status;
-    static values(): (Object | null)[];
+    static values(): TimerQuery$Status[];
     private constructor()
     name(): "NOT_RECORDING" | "STARTED" | "AWAITING_VALUES";
 }

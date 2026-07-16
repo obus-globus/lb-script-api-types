@@ -8,7 +8,7 @@ export class CrystalAuraDamageOptions$RequestingSubmodule extends Enum<CrystalAu
     static getEntries(): CrystalAuraDamageOptions$RequestingSubmodule[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CrystalAuraDamageOptions$RequestingSubmodule;
-    static values(): (Object | null)[];
+    static values(): CrystalAuraDamageOptions$RequestingSubmodule[];
     private constructor(basePlace: boolean)
     readonly basePlace: boolean;
     name(): "PLACE" | "DESTROY" | "BASE_PLACE";

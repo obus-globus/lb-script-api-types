@@ -5,7 +5,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class IsJSObjectNodeGen extends IsJSObjectNode {
     static create(): IsJSObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private isObjectCached_cache: IsJSObjectNodeGen$IsObjectCachedData;
     // private state_0_: number;

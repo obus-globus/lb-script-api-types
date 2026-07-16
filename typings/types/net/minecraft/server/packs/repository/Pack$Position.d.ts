@@ -8,7 +8,7 @@ export class Pack$Position extends Enum<Pack$Position> {
     static TOP: Pack$Position;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Pack$Position;
-    static values(): (Object | null)[];
+    static values(): Pack$Position[];
     private constructor()
     insert<T extends unknown>(list: T[], value: T, converter: (param0: T) => PackSelectionConfig, reverse: boolean): number;
     opposite(): Pack$Position;

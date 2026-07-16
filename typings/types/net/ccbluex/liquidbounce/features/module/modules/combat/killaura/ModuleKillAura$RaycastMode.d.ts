@@ -13,7 +13,7 @@ export class ModuleKillAura$RaycastMode extends Enum<ModuleKillAura$RaycastMode>
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleKillAura$RaycastMode;
-    static values(): (Object | null)[];
+    static values(): ModuleKillAura$RaycastMode[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "TRACE_NONE" | "TRACE_ONLYENEMY" | "TRACE_ALL";

@@ -6,7 +6,6 @@ import type { Comparable } from '../../../../../java/lang/Comparable.d.ts'
 import type { Number } from '../../../../../java/lang/Number.d.ts'
 export class SafeInteger extends Number implements TruffleObject, Comparable<SafeInteger> {
     static valueOf(paramvalue: number): SafeInteger;
-    static valueOf(paramvalue: number): SafeInteger;
     private constructor(value: number)
     // private value: number;
     addExact(other: SafeInteger): SafeInteger;

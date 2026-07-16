@@ -82,7 +82,7 @@ export class ClientboundPackets1_6_1 extends Enum<ClientboundPackets1_6_1> imple
     static getPacket(paramarg0: number): ClientboundPackets1_6_1;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClientboundPackets1_6_1;
-    static values(): (Object | null)[];
+    static values(): ClientboundPackets1_6_1[];
     private constructor(arg2: number, arg3: (param0: UserConnection, param1: ByteBuf) => void)
     readonly id: number;
     readonly packetReader: (param0: UserConnection, param1: ByteBuf) => void;

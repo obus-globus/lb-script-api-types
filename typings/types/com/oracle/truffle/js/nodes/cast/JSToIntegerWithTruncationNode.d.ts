@@ -11,7 +11,6 @@ import type { Number } from '../../../../../../java/lang/Number.d.ts'
 export abstract class JSToIntegerWithTruncationNode extends JavaScriptBaseNode {
     static create(): JSToIntegerWithTruncationNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     // private errorBranch: BranchProfile;
     // private isDoubleProfile: BranchProfile;

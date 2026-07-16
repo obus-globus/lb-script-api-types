@@ -13,7 +13,6 @@ export abstract class CreateObjectNode$CreateObjectWithPrototypeNode extends Cre
     static createOrdinaryWithPrototype(paramcontext: JSContext): CreateObjectNode$CreateObjectWithPrototypeNode;
     static createWithPrototype(paramcontext: JSContext, paramjsclass: JSClass): CreateObjectNode$CreateObjectWithPrototypeNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, jsclass: JSClass)
     // private jsclass: JSClass;
     // private protoFlagsNode: DynamicObjectLibrary;

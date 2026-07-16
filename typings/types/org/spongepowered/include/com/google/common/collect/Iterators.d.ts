@@ -9,13 +9,13 @@ export class Iterators extends Object {
     static contains(paramarg0: Iterator<Object>, paramarg1: Object): boolean;
     static elementsEqual(paramarg0: Iterator<Object>, paramarg1: Iterator<Object>): boolean;
     static filter(paramarg0: Iterator<Object>, paramarg1: (param0: Object) => boolean): UnmodifiableIterator<Object>;
-    static forArray(paramarg0: Object | null): UnmodifiableIterator<Object>;
+    static forArray(...paramarg0: (Object | null)[]): UnmodifiableIterator<Object>;
     static getNext(paramarg0: Iterator<Object>, paramarg1: Object | null): Object | null;
     static indexOf(paramarg0: Iterator<Object>, paramarg1: (param0: Object) => boolean): number;
     static removeAll(paramarg0: Iterator<Object>, paramarg1: Object[]): boolean;
     static removeIf(paramarg0: Iterator<Object>, paramarg1: (param0: Object) => boolean): boolean;
     static singletonIterator(paramarg0: Object | null): UnmodifiableIterator<Object>;
     static toString(paramarg0: Iterator<Object>): string;
-    static transform(paramarg0: Iterator<Object>, paramarg1: (param0: Object) => boolean): Iterator<Object>;
+    static transform(paramarg0: Iterator<Object>, paramarg1: (param0: Object) => Object | null): Iterator<Object>;
     static unmodifiableIterator(paramarg0: Iterator<Object>): UnmodifiableIterator<Object>;
 }

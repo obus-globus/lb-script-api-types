@@ -8,6 +8,7 @@ import type { TargetRotatePosition } from '../../../../../../../../net/ccbluex/l
 import type { RotationTarget } from '../../../../../../../../net/ccbluex/liquidbounce/utils/aiming/RotationTarget.d.ts'
 import type { Rotation } from '../../../../../../../../net/ccbluex/liquidbounce/utils/aiming/data/Rotation.d.ts'
 import type { RotationProcessor } from '../../../../../../../../net/ccbluex/liquidbounce/utils/aiming/features/processors/RotationProcessor.d.ts'
+import type { Component } from '../../../../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { LivingEntity } from '../../../../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 import type { Vec3 } from '../../../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class ElytraRotationProcessor extends ValueGroup implements EventListener, RotationProcessor {
@@ -16,6 +17,7 @@ export class ElytraRotationProcessor extends ValueGroup implements EventListener
     // private /*not mapped: */ getAutoDistance(): boolean;
     // private /*not mapped: */ getBasePitchSpeed(): number;
     // private /*not mapped: */ getBaseYawSpeed(): number;
+    readonly debugDisplayName: Component;
     // private ignoreKillAura: boolean;
     /*not mapped: */ getIgnoreKillAura$net_ccbluex_liquidbounce(): boolean;
     // private look: boolean;

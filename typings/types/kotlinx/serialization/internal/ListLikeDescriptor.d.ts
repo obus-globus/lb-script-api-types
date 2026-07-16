@@ -6,7 +6,10 @@ export class ListLikeDescriptor extends Object implements SerialDescriptor {
     protected constructor(elementDescriptor: SerialDescriptor)
     readonly elementDescriptor: SerialDescriptor;
     readonly elementsCount: number;
+    /*not mapped: */ isInline(): boolean;
+    /*not mapped: */ isNullable(): boolean;
     readonly kind: SerialKind;
+    /*not mapped: */ getSerialName(): string;
     equals(other: Object | null): boolean;
     getElementAnnotations(index: number): Annotation[];
     getElementDescriptor(index: number): SerialDescriptor;

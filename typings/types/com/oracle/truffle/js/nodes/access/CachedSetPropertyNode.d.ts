@@ -14,7 +14,6 @@ import type { JSClassProfile } from '../../../../../../com/oracle/truffle/js/run
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class CachedSetPropertyNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, strict: boolean, setOwn: boolean, superProperty: boolean)
     // private context: JSContext;
     // private setOwn: boolean;

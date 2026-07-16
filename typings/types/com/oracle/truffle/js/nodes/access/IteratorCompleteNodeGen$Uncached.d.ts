@@ -6,7 +6,6 @@ export class IteratorCompleteNodeGen$Uncached extends IteratorCompleteNode imple
     static create(): IteratorCompleteNode;
     static getUncached(): IteratorCompleteNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     execute(arg0Value: Object): boolean;
 }

@@ -3,7 +3,7 @@ import type { Type } from '../../../../../../../com/viaversion/viaversion/api/ty
 import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class AttributeModifiers1_20_5$AttributeModifier extends Record {
-    static ARRAY_TYPE: Type<(Object | null)[]>;
+    static ARRAY_TYPE: Type<AttributeModifiers1_20_5$AttributeModifier[]>;
     static TYPE: Type<AttributeModifiers1_20_5$AttributeModifier>;
     constructor(attribute: number, modifier: AttributeModifiers1_20_5$ModifierData, slotType: number)
     // private attribute: number;

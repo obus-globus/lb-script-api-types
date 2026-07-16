@@ -11,7 +11,7 @@ export class ProcessStat$PidStatM extends Enum<ProcessStat$PidStatM> {
     static TEXT: ProcessStat$PidStatM;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ProcessStat$PidStatM;
-    static values(): (Object | null)[];
+    static values(): ProcessStat$PidStatM[];
     private constructor()
     name(): "SIZE" | "RESIDENT" | "SHARED" | "TEXT" | "LIB" | "DATA" | "DT";
 }

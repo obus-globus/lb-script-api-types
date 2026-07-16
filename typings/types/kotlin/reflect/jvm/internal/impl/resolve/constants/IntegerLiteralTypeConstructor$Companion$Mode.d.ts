@@ -6,7 +6,7 @@ export class IntegerLiteralTypeConstructor$Companion$Mode extends Enum<IntegerLi
     static INTERSECTION_TYPE: IntegerLiteralTypeConstructor$Companion$Mode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): IntegerLiteralTypeConstructor$Companion$Mode;
-    static values(): (Object | null)[];
+    static values(): IntegerLiteralTypeConstructor$Companion$Mode[];
     private constructor()
     name(): "COMMON_SUPER_TYPE" | "INTERSECTION_TYPE";
 }

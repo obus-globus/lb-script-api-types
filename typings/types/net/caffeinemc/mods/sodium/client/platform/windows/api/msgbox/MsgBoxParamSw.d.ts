@@ -24,7 +24,6 @@ export class MsgBoxParamSw extends Struct<MsgBoxParamSw> {
     static SIZEOF: number;
     static allocate(paramarg0: MemoryStack): MsgBoxParamSw;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     private constructor(arg0: number, arg1: ByteBuffer)
     create(arg0: number, arg1: ByteBuffer): MsgBoxParamSw;
     setCallback(arg0: (param0: number) => void): void;

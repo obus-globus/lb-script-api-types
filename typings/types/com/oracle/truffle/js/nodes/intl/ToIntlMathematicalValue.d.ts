@@ -9,7 +9,6 @@ import type { Number } from '../../../../../../java/lang/Number.d.ts'
 export abstract class ToIntlMathematicalValue extends JavaScriptBaseNode {
     static create(parampartOfRange: boolean): ToIntlMathematicalValue;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(partOfRange: boolean)
     // private partOfRange: boolean;
     doBigInt(value: BigInt): Number;

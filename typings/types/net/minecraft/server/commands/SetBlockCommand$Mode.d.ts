@@ -6,7 +6,7 @@ export class SetBlockCommand$Mode extends Enum<SetBlockCommand$Mode> {
     static REPLACE: SetBlockCommand$Mode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SetBlockCommand$Mode;
-    static values(): (Object | null)[];
+    static values(): SetBlockCommand$Mode[];
     private constructor()
     name(): "REPLACE" | "DESTROY";
 }

@@ -5,7 +5,6 @@ import type { Desc } from '../../../../../org/spongepowered/asm/mixin/injection/
 import type { Slice } from '../../../../../org/spongepowered/asm/mixin/injection/Slice.d.ts'
 import type { LocalCapture } from '../../../../../org/spongepowered/asm/mixin/injection/callback/LocalCapture.d.ts'
 export interface Inject extends Annotation, Object{
-    constructor(allow: number, at: At[], cancellable: boolean, constraints: string, expect: number, id: string, locals: LocalCapture, method: string[], order: number, remap: boolean, require: number, slice: Slice[], target: Desc[])
     /*not mapped: */ allow(): number;
     /*not mapped: */ at(): At[];
     /*not mapped: */ cancellable(): boolean;

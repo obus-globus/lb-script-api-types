@@ -6,7 +6,7 @@ export class TextFieldHelper$CursorStep extends Enum<TextFieldHelper$CursorStep>
     static WORD: TextFieldHelper$CursorStep;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TextFieldHelper$CursorStep;
-    static values(): (Object | null)[];
+    static values(): TextFieldHelper$CursorStep[];
     private constructor()
     name(): "CHARACTER" | "WORD";
 }

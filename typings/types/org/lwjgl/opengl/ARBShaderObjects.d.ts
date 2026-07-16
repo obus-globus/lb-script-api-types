@@ -75,7 +75,7 @@ export class ARBShaderObjects extends Object {
     static glGetUniformivARB(paramarg0: number, paramarg1: number, paramarg2: IntBuffer): void;
     static glLinkProgramARB(paramarg0: number): void;
     static glShaderSourceARB(paramarg0: number, paramarg1: CharSequence): void;
-    static glShaderSourceARB(paramarg0: number, ...paramarg1: (Object | null)[]): void;
+    static glShaderSourceARB(paramarg0: number, ...paramarg1: CharSequence[]): void;
     static glShaderSourceARB(paramarg0: number, paramarg1: PointerBuffer, paramarg2: number[]): void;
     static glShaderSourceARB(paramarg0: number, paramarg1: PointerBuffer, paramarg2: IntBuffer): void;
     static glUniform1fARB(paramarg0: number, paramarg1: number): void;

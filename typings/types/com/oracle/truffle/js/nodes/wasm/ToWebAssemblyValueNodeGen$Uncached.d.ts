@@ -5,7 +5,6 @@ import type { WebAssemblyValueType } from '../../../../../../com/oracle/truffle/
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ToWebAssemblyValueNodeGen$Uncached extends ToWebAssemblyValueNode implements UnadoptableNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     execute(arg0Value: Object, arg1Value: WebAssemblyValueType): Object;
 }

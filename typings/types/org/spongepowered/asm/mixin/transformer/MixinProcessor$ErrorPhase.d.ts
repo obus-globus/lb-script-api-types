@@ -13,7 +13,7 @@ export class MixinProcessor$ErrorPhase extends Enum<MixinProcessor$ErrorPhase> {
     static PREPARE: MixinProcessor$ErrorPhase;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MixinProcessor$ErrorPhase;
-    static values(): (Object | null)[];
+    static values(): MixinProcessor$ErrorPhase[];
     constructor(arg2: MixinConfig$IListener)
     // private text: string;
     getContext(arg0: IMixinInfo, arg1: string): string;

@@ -7,7 +7,7 @@ export class PowerSource$CapacityUnits extends Enum<PowerSource$CapacityUnits> {
     static RELATIVE: PowerSource$CapacityUnits;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PowerSource$CapacityUnits;
-    static values(): (Object | null)[];
+    static values(): PowerSource$CapacityUnits[];
     private constructor()
     name(): "MWH" | "MAH" | "RELATIVE";
 }

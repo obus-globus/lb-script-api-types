@@ -8,7 +8,7 @@ export class Future$State extends Enum<Future$State> {
     static SUCCESS: Future$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Future$State;
-    static values(): (Object | null)[];
+    static values(): Future$State[];
     private constructor()
     name(): "RUNNING" | "SUCCESS" | "FAILED" | "CANCELLED";
 }

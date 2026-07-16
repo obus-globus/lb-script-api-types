@@ -6,7 +6,7 @@ export class FollowPlayerRiddenEntityGoal$FollowEntityGoal extends Enum<FollowPl
     static GO_TO_ENTITY: FollowPlayerRiddenEntityGoal$FollowEntityGoal;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): FollowPlayerRiddenEntityGoal$FollowEntityGoal;
-    static values(): (Object | null)[];
+    static values(): FollowPlayerRiddenEntityGoal$FollowEntityGoal[];
     private constructor()
     name(): "GO_TO_ENTITY" | "GO_IN_ENTITY_DIRECTION";
 }

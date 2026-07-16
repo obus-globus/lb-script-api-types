@@ -9,7 +9,6 @@ import type { Symbol } from '../../../../../../com/oracle/truffle/js/runtime/Sym
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSToIntegerWithoutRoundingNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doBigInt(value: BigInt): number;
     doDoubleInfinite(value: number, errorBranch: InlinedBranchProfile): number;

@@ -8,7 +8,7 @@ export class AoConfig extends Enum<AoConfig> {
     static VANILLA: AoConfig;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AoConfig;
-    static values(): (Object | null)[];
+    static values(): AoConfig[];
     private constructor()
     name(): "VANILLA" | "ENHANCED" | "EMULATE" | "HYBRID";
 }

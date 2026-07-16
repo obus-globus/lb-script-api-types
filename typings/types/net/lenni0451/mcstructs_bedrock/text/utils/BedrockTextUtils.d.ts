@@ -5,7 +5,7 @@ import type { BedrockTextUtils$LegacyStyle } from '../../../../../net/lenni0451/
 export class BedrockTextUtils extends Object {
     static getStyleAt(paramarg0: string, paramarg1: number): BedrockTextUtils$LegacyStyle;
     static getStyleAt(paramarg0: string, paramarg1: number, paramarg2: (param0: string) => BedrockTextFormatting): BedrockTextUtils$LegacyStyle;
-    static split(paramarg0: string, paramarg1: string): (Object | null)[];
-    static split(paramarg0: string, paramarg1: string, paramarg2: (param0: string) => BedrockTextFormatting): (Object | null)[];
+    static split(paramarg0: string, paramarg1: string): string[];
+    static split(paramarg0: string, paramarg1: string, paramarg2: (param0: string) => BedrockTextFormatting): string[];
     constructor()
 }

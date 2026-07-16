@@ -50,28 +50,21 @@ export class VkPhysicalDeviceShaderIntegerDotProductPropertiesKHR extends VkPhys
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceShaderIntegerDotProductPropertiesKHR;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceShaderIntegerDotProductPropertiesKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceShaderIntegerDotProductProperties;
     static create(paramarg0: number): VkPhysicalDeviceShaderIntegerDotProductProperties;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceShaderIntegerDotProductPropertiesKHR;
     static create(paramarg0: number): VkPhysicalDeviceShaderIntegerDotProductPropertiesKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceShaderIntegerDotProductProperties;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceShaderIntegerDotProductPropertiesKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceShaderIntegerDotProductProperties;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceShaderIntegerDotProductProperties;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceShaderIntegerDotProductPropertiesKHR;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceShaderIntegerDotProductPropertiesKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nintegerDotProduct16BitMixedSignednessAccelerated(paramarg0: number): number;
     static nintegerDotProduct16BitSignedAccelerated(paramarg0: number): number;
     static nintegerDotProduct16BitUnsignedAccelerated(paramarg0: number): number;
@@ -106,7 +99,6 @@ export class VkPhysicalDeviceShaderIntegerDotProductPropertiesKHR extends VkPhys
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

@@ -6,7 +6,7 @@ export class LightClassOriginKind extends Enum<LightClassOriginKind> {
     static SOURCE: LightClassOriginKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LightClassOriginKind;
-    static values(): (Object | null)[];
+    static values(): LightClassOriginKind[];
     private constructor()
     name(): "SOURCE" | "BINARY";
 }

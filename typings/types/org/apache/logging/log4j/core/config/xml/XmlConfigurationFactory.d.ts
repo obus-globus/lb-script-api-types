@@ -1,7 +1,6 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { ClassLoader } from '../../../../../../../java/lang/ClassLoader.d.ts'
 import type { URI } from '../../../../../../../java/net/URI.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { LoggerContext } from '../../../../../../../org/apache/logging/log4j/core/LoggerContext.d.ts'
 import type { Configuration } from '../../../../../../../org/apache/logging/log4j/core/config/Configuration.d.ts'
 import type { ConfigurationFactory } from '../../../../../../../org/apache/logging/log4j/core/config/ConfigurationFactory.d.ts'
@@ -17,7 +16,7 @@ export class XmlConfigurationFactory extends ConfigurationFactory {
     static CONFIGURATION_FILE_PROPERTY: string;
     static LOG4J1_CONFIGURATION_FILE_PROPERTY: string;
     static LOG4J1_EXPERIMENTAL: string;
-    static SUFFIXES: (Object | null)[];
+    static SUFFIXES: string[];
     static authorizationProvider(paramprops: PropertiesUtil): AuthorizationProvider;
     static getAuthorizationProvider(): AuthorizationProvider;
     static getInstance(): ConfigurationFactory;

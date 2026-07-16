@@ -9,7 +9,7 @@ export class FCDIterCollationIterator$State extends Enum<FCDIterCollationIterato
     static ITER_IN_FCD_SEGMENT: FCDIterCollationIterator$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): FCDIterCollationIterator$State;
-    static values(): (Object | null)[];
+    static values(): FCDIterCollationIterator$State[];
     private constructor()
     name(): "ITER_CHECK_FWD" | "ITER_CHECK_BWD" | "ITER_IN_FCD_SEGMENT" | "IN_NORM_ITER_AT_LIMIT" | "IN_NORM_ITER_AT_START";
 }

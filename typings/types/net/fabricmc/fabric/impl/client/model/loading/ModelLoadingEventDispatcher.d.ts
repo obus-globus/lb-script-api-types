@@ -32,10 +32,10 @@ export class ModelLoadingEventDispatcher extends Object {
     // private onLoadModifierContext: ModelLoadingEventDispatcher$OnLoadModifierContext;
     // private pluginContext: ModelLoadingPluginContextImpl;
     getExtraModels(): Map<ExtraModelKey<Object>, UnbakedExtraModel<Object>>;
-    modifyBlockModel(arg0: BlockStateModel$UnbakedRoot, arg1: BlockState, arg2: ModelBaker, arg3: (param0: (Object | null)[]) => BlockStateModel): BlockStateModel;
+    modifyBlockModel(arg0: BlockStateModel$UnbakedRoot, arg1: BlockState, arg2: ModelBaker, arg3: (param0: Object[]) => BlockStateModel): BlockStateModel;
     // private modifyBlockModelOnLoad(arg0: BlockState, arg1: BlockStateModel$UnbakedRoot): BlockStateModel$UnbakedRoot;
     modifyBlockModelsOnLoad(arg0: BlockStateModelLoader$LoadedModels): BlockStateModelLoader$LoadedModels;
-    modifyItemModel(arg0: ItemModel$Unbaked, arg1: Identifier, arg2: ItemModel$BakingContext, arg3: Matrix4fc, arg4: (param0: (Object | null)[]) => ItemModel): ItemModel;
+    modifyItemModel(arg0: ItemModel$Unbaked, arg1: Identifier, arg2: ItemModel$BakingContext, arg3: Matrix4fc, arg4: (param0: Object[]) => ItemModel): ItemModel;
     // private modifyModelOnLoad(arg0: Identifier, arg1: UnbakedModel): UnbakedModel;
     modifyModelsOnLoad(arg0: Map<Identifier, UnbakedModel>): Map<Identifier, UnbakedModel>;
     // private putResolvedBlockStates(arg0: Map<BlockState, BlockStateModel$UnbakedRoot>): void;

@@ -5,7 +5,6 @@ import type { JSTypedArrayObject } from '../../../../../../com/oracle/truffle/js
 export abstract class TypedArrayLengthNode extends JavaScriptBaseNode {
     static create(): TypedArrayLengthNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(node: Node, typedArrayObj: JSTypedArrayObject, context: JSContext): number;
 }

@@ -10,7 +10,7 @@ export class Service$State extends Enum<Service$State> {
     static TERMINATED: Service$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Service$State;
-    static values(): (Object | null)[];
+    static values(): Service$State[];
     private constructor()
     name(): "NEW" | "STARTING" | "RUNNING" | "STOPPING" | "TERMINATED" | "FAILED";
 }

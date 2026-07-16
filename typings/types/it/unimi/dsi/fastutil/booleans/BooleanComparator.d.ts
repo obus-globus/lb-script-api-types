@@ -8,12 +8,10 @@ import type { Comparable } from '../../../../../java/lang/Comparable.d.ts'
 export interface BooleanComparator extends Comparator<boolean>, Object {
     compare(arg0: boolean, arg1: boolean): number;
     reversed(): (param0: boolean, param1: boolean) => number;
-    reversed(): (param0: Object) => boolean;
     thenComparing(arg0: (param0: boolean, param1: boolean) => number): (param0: boolean, param1: boolean) => number;
-    thenComparing(arg0: (param0: Object) => boolean): (param0: Object) => boolean;
-    thenComparing<U extends Comparable<U>>(arg0: (param0: boolean) => U): (param0: Object) => boolean;
-    thenComparing<U extends unknown>(arg0: (param0: boolean) => U, arg1: (param0: Object) => boolean): (param0: Object) => boolean;
-    thenComparingDouble(arg0: (param0: boolean) => number): (param0: Object) => boolean;
-    thenComparingInt(arg0: (param0: boolean) => number): (param0: Object) => boolean;
-    thenComparingLong(arg0: (param0: boolean) => number): (param0: Object) => boolean;
+    thenComparing<U extends Comparable<U>>(arg0: (param0: boolean) => U): (param0: boolean, param1: boolean) => number;
+    thenComparing<U extends unknown>(arg0: (param0: boolean) => U, arg1: (param0: U, param1: U) => number): (param0: boolean, param1: boolean) => number;
+    thenComparingDouble(arg0: (param0: boolean) => number): (param0: boolean, param1: boolean) => number;
+    thenComparingInt(arg0: (param0: boolean) => number): (param0: boolean, param1: boolean) => number;
+    thenComparingLong(arg0: (param0: boolean) => number): (param0: boolean, param1: boolean) => number;
 }

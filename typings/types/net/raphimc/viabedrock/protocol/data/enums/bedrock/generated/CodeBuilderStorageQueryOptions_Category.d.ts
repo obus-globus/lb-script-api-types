@@ -11,7 +11,7 @@ export class CodeBuilderStorageQueryOptions_Category extends Enum<CodeBuilderSto
     static getByValue(paramarg0: number, paramarg1: CodeBuilderStorageQueryOptions_Category): CodeBuilderStorageQueryOptions_Category;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CodeBuilderStorageQueryOptions_Category;
-    static values(): (Object | null)[];
+    static values(): CodeBuilderStorageQueryOptions_Category[];
     private constructor(arg2: number)
     private constructor(arg2: CodeBuilderStorageQueryOptions_Category)
     readonly value: number;

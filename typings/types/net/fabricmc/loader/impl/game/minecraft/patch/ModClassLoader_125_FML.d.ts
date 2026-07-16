@@ -4,15 +4,14 @@ import type { ClassLoader } from '../../../../../../../java/lang/ClassLoader.d.t
 import type { URL } from '../../../../../../../java/net/URL.d.ts'
 import type { URLClassLoader } from '../../../../../../../java/net/URLClassLoader.d.ts'
 import type { Enumeration } from '../../../../../../../java/util/Enumeration.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class ModClassLoader_125_FML extends URLClassLoader {
     static getPlatformClassLoader(): ClassLoader;
     static getSystemClassLoader(): ClassLoader;
     static getSystemResource(paramarg0: string): URL;
     static getSystemResourceAsStream(paramarg0: string): InputStream;
     static getSystemResources(paramarg0: string): Enumeration<URL>;
-    static newInstance(paramarg0: (Object | null)[]): URLClassLoader;
-    static newInstance(paramarg0: (Object | null)[], paramarg1: ClassLoader): URLClassLoader;
+    static newInstance(paramarg0: URL[]): URLClassLoader;
+    static newInstance(paramarg0: URL[], paramarg1: ClassLoader): URLClassLoader;
     constructor()
     // private localUrls: URL[];
     addFile(arg0: File): void;

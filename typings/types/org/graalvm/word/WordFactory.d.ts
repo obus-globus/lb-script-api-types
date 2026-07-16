@@ -7,8 +7,6 @@ export class WordFactory extends Object {
     static nullPointer(): PointerBase | null;
     static pointer(paramval: number): PointerBase | null;
     static signed(paramval: number): SignedWord | null;
-    static signed(paramval: number): SignedWord | null;
-    static unsigned(paramval: number): UnsignedWord | null;
     static unsigned(paramval: number): UnsignedWord | null;
     static zero(): WordBase | null;
     private constructor()

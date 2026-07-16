@@ -13,7 +13,7 @@ export class SuppressedBy extends Enum<SuppressedBy> {
     static VISIBILITY: SuppressedBy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SuppressedBy;
-    static values(): (Object | null)[];
+    static values(): SuppressedBy[];
     private constructor(arg2: string)
     readonly token: string;
     getToken(): string;

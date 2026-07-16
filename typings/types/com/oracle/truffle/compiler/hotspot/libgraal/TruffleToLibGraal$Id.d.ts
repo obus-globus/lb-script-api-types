@@ -31,7 +31,7 @@ export class TruffleToLibGraal$Id extends Enum<TruffleToLibGraal$Id> {
     static ValidateCompilerOption: TruffleToLibGraal$Id;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TruffleToLibGraal$Id;
-    static values(): (Object | null)[];
+    static values(): TruffleToLibGraal$Id[];
     private constructor()
     getMethodName(): string;
     name(): "DoCompile" | "GetCompilerConfigurationFactoryName" | "GetCompilerVersion" | "GetDataPatchesCount" | "GetExceptionHandlersCount" | "GetInfopoints" | "GetInfopointsCount" | "GetMarksCount" | "GetNodeCount" | "GetNodeTypes" | "GetSuppliedString" | "GetCompilationId" | "GetTargetCodeSize" | "GetTotalFrameSize" | "InitializeIsolate" | "InitializeCompiler" | "RegisterRuntime" | "ListCompilerOptions" | "CompilerOptionExists" | "ValidateCompilerOption" | "InitializeRuntime" | "InstallTruffleCallBoundaryMethod" | "InstallTruffleReservedOopMethod" | "NewCompiler" | "PendingTransferToInterpreterOffset" | "PurgePartialEvaluationCaches" | "Shutdown";

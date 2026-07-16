@@ -7,7 +7,7 @@ export class KmEffectInvocationKind extends Enum<KmEffectInvocationKind> {
     static EXACTLY_ONCE: KmEffectInvocationKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): KmEffectInvocationKind;
-    static values(): (Object | null)[];
+    static values(): KmEffectInvocationKind[];
     private constructor()
     name(): "AT_MOST_ONCE" | "EXACTLY_ONCE" | "AT_LEAST_ONCE";
 }

@@ -14,7 +14,7 @@ export class CodeBuilderExecutionState_CodeStatus extends Enum<CodeBuilderExecut
     static getByValue(paramarg0: number, paramarg1: CodeBuilderExecutionState_CodeStatus): CodeBuilderExecutionState_CodeStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CodeBuilderExecutionState_CodeStatus;
-    static values(): (Object | null)[];
+    static values(): CodeBuilderExecutionState_CodeStatus[];
     private constructor(arg2: number)
     private constructor(arg2: CodeBuilderExecutionState_CodeStatus)
     readonly value: number;

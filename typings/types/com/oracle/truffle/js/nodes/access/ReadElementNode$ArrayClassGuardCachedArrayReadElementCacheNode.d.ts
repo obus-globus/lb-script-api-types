@@ -7,7 +7,6 @@ import type { JSClassProfile } from '../../../../../../com/oracle/truffle/js/run
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ReadElementNode$ArrayClassGuardCachedArrayReadElementCacheNode extends ReadElementNode$ArrayReadElementCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     // private outOfBoundsClassProfile: JSClassProfile;
     readOutOfBounds(target: JSDynamicObject, index: number, receiver: Object, defaultValue: Object, context: JSContext, needGetProperty: InlinedConditionProfile): Object;

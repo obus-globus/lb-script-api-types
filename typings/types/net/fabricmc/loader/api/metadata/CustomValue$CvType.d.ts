@@ -10,7 +10,7 @@ export class CustomValue$CvType extends Enum<CustomValue$CvType> {
     static STRING: CustomValue$CvType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CustomValue$CvType;
-    static values(): (Object | null)[];
+    static values(): CustomValue$CvType[];
     private constructor()
     name(): "OBJECT" | "ARRAY" | "STRING" | "NUMBER" | "BOOLEAN" | "NULL";
 }

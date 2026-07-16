@@ -7,7 +7,6 @@ import type { JSArrayObject } from '../../../../../com/oracle/truffle/js/runtime
 import type { JSRegExpObject } from '../../../../../com/oracle/truffle/js/runtime/builtins/JSRegExpObject.d.ts'
 export abstract class RegExpPrototypeBuiltins$JSRegExpSplitNode$SplitInternalNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(rx: JSRegExpObject, str: TruffleString, lim: number, context: JSContext, parent: RegExpPrototypeBuiltins$JSRegExpSplitNode): JSArrayObject;
 }

@@ -82,7 +82,7 @@ export class BlockExtensionsKt extends Object {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L659 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:659}
      */
     static getPotentialSecondBedBlock(bedBlock: BedBlock, state: BlockState, pos: BlockPos): BlockPos;
-    static getSortedSphere(blockPos: BlockPos, radius: number): (Object | null)[];
+    static getSortedSphere(blockPos: BlockPos, radius: number): BlockPos[];
     static getState(paramarg0: BlockPos): BlockState;
 // (invalid TS: name contains '-')     static getState-deprecated(paramarg0: BlockPos): BlockState;
     static getStateOrEmpty(paramarg0: BlockPos): BlockState;
@@ -165,6 +165,6 @@ export class BlockExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L273 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:273}
      */
-    static searchLayer(blockPos: BlockPos, layers: number, ...directions: (Object | null)[]): Sequence<IntLongPair>;
+    static searchLayer(blockPos: BlockPos, layers: number, ...directions: Direction[]): Sequence<IntLongPair>;
     static toBlockPos(vec3i: Vec3i): BlockPos;
 }

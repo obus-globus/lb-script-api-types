@@ -8,7 +8,7 @@ export class CompositePass extends Enum<CompositePass> {
     static PREPARE: CompositePass;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CompositePass;
-    static values(): (Object | null)[];
+    static values(): CompositePass[];
     private constructor()
     name(): "BEGIN" | "PREPARE" | "DEFERRED" | "COMPOSITE";
 }

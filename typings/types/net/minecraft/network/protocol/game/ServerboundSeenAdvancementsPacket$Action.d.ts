@@ -6,7 +6,7 @@ export class ServerboundSeenAdvancementsPacket$Action extends Enum<ServerboundSe
     static OPENED_TAB: ServerboundSeenAdvancementsPacket$Action;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ServerboundSeenAdvancementsPacket$Action;
-    static values(): (Object | null)[];
+    static values(): ServerboundSeenAdvancementsPacket$Action[];
     private constructor()
     name(): "OPENED_TAB" | "CLOSED_SCREEN";
 }

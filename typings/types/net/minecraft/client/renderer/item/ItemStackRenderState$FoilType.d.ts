@@ -7,7 +7,7 @@ export class ItemStackRenderState$FoilType extends Enum<ItemStackRenderState$Foi
     static STANDARD: ItemStackRenderState$FoilType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ItemStackRenderState$FoilType;
-    static values(): (Object | null)[];
+    static values(): ItemStackRenderState$FoilType[];
     private constructor()
     name(): "NONE" | "STANDARD" | "SPECIAL";
 }

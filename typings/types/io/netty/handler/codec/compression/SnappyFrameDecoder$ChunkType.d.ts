@@ -9,7 +9,7 @@ export class SnappyFrameDecoder$ChunkType extends Enum<SnappyFrameDecoder$ChunkT
     static UNCOMPRESSED_DATA: SnappyFrameDecoder$ChunkType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SnappyFrameDecoder$ChunkType;
-    static values(): (Object | null)[];
+    static values(): SnappyFrameDecoder$ChunkType[];
     private constructor()
     name(): "STREAM_IDENTIFIER" | "COMPRESSED_DATA" | "UNCOMPRESSED_DATA" | "RESERVED_UNSKIPPABLE" | "RESERVED_SKIPPABLE";
 }

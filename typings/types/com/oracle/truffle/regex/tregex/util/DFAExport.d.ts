@@ -4,6 +4,6 @@ import type { DFAStateNode } from '../../../../../../com/oracle/truffle/regex/tr
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class DFAExport extends Object {
     static exportDot(paramdfaGenerator: DFAGenerator, parampath: TruffleFile, paramshortLabels: boolean): void;
-    static exportUnitTest(paramentry: DFAStateNode, paramstates: (Object | null)[]): void;
+    static exportUnitTest(paramentry: DFAStateNode, paramstates: DFAStateNode[]): void;
     constructor()
 }

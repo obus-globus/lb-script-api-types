@@ -5,9 +5,6 @@ export class CompilerAsserts extends Object {
     static neverPartOfCompilation(parammessage: string): void;
     static partialEvaluationConstant(paramvalue: boolean): void;
     static partialEvaluationConstant(paramvalue: number): void;
-    static partialEvaluationConstant(paramvalue: number): void;
-    static partialEvaluationConstant(paramvalue: number): void;
     static partialEvaluationConstant(paramvalue: Object): void;
-    static partialEvaluationConstant(paramvalue: number): void;
     private constructor()
 }

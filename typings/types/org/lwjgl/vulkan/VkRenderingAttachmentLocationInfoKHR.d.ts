@@ -23,28 +23,21 @@ export class VkRenderingAttachmentLocationInfoKHR extends VkRenderingAttachmentL
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkRenderingAttachmentLocationInfoKHR;
     static calloc(paramarg0: MemoryStack): VkRenderingAttachmentLocationInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkRenderingAttachmentLocationInfo;
     static create(paramarg0: number): VkRenderingAttachmentLocationInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkRenderingAttachmentLocationInfoKHR;
     static create(paramarg0: number): VkRenderingAttachmentLocationInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkRenderingAttachmentLocationInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkRenderingAttachmentLocationInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkRenderingAttachmentLocationInfo;
     static malloc(paramarg0: MemoryStack): VkRenderingAttachmentLocationInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkRenderingAttachmentLocationInfoKHR;
     static malloc(paramarg0: MemoryStack): VkRenderingAttachmentLocationInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ncolorAttachmentCount(paramarg0: number): number;
     static ncolorAttachmentCount(paramarg0: number, paramarg1: number): void;
     static npColorAttachmentLocations(paramarg0: number): IntBuffer;
@@ -53,7 +46,6 @@ export class VkRenderingAttachmentLocationInfoKHR extends VkRenderingAttachmentL
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

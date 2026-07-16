@@ -5,7 +5,6 @@ import type { JavaScriptBaseNode } from '../../../../../../com/oracle/truffle/js
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ToJSValueNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     convert(value: Object, isFuncLib: InteropLibrary, funcTypeLib: InteropLibrary, asTStringLib: InteropLibrary, switchEncoding: TruffleString$SwitchEncodingNode): Object;
     execute(value: Object): Object;

@@ -12,7 +12,6 @@ export class JSInteropInvokeNodeGen extends JSInteropInvokeNode {
     static create(): JSInteropInvokeNode;
     static getUncached(): JSInteropInvokeNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private cached_cache: JSInteropInvokeNodeGen$CachedData;
     // private callNode: JSFunctionCallNode;

@@ -8,7 +8,6 @@ export class IteratorValueNodeGen$Uncached extends IteratorValueNode implements 
     static create(): IteratorValueNode;
     static getUncached(): IteratorValueNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     execute(arg0Value: Object): Object;
 }

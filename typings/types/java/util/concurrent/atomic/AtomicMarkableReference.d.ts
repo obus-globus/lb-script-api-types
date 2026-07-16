@@ -6,7 +6,7 @@ export class AtomicMarkableReference<V extends unknown> extends Object {
     attemptMark(arg0: V, arg1: boolean): boolean;
     // private casPair(arg0: AtomicMarkableReference$Pair<V>, arg1: AtomicMarkableReference$Pair<V>): boolean;
     compareAndSet(arg0: V, arg1: V, arg2: boolean, arg3: boolean): boolean;
-    get(arg0: (Object | null)[]): V;
+    get(arg0: boolean[]): V;
     getReference(): V;
     isMarked(): boolean;
     set(arg0: V, arg1: boolean): void;

@@ -11,7 +11,7 @@ import type { ParsePosition } from '../../java/text/ParsePosition.d.ts'
 import type { Locale } from '../../java/util/Locale.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export class MessageFormat extends Format {
-    static format(paramarg0: string, ...paramarg1: (Object | null)[]): string;
+    static format(paramarg0: string, ...paramarg1: Object[]): string;
     constructor(arg0: string)
     constructor(arg0: string, arg1: Locale)
     // private argumentNumbers: number[];

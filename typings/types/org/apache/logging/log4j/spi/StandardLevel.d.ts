@@ -13,7 +13,7 @@ export class StandardLevel extends Enum<StandardLevel> {
     static getStandardLevel(paramintLevel: number): StandardLevel;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): StandardLevel;
-    static values(): (Object | null)[];
+    static values(): StandardLevel[];
     private constructor(val: number)
     // private intLevel: number;
     intLevel(): number;

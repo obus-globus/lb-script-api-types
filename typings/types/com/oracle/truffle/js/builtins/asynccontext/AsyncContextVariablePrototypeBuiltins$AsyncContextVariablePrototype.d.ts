@@ -13,7 +13,7 @@ export class AsyncContextVariablePrototypeBuiltins$AsyncContextVariablePrototype
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): AsyncContextVariablePrototypeBuiltins$AsyncContextVariablePrototype;
-    static values(): (Object | null)[];
+    static values(): AsyncContextVariablePrototypeBuiltins$AsyncContextVariablePrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

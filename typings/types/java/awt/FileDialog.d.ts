@@ -1,10 +1,10 @@
 import type { Dialog } from '../../java/awt/Dialog.d.ts'
 import type { Dialog$ModalityType } from '../../java/awt/Dialog$ModalityType.d.ts'
 import type { Frame } from '../../java/awt/Frame.d.ts'
+import type { Window } from '../../java/awt/Window.d.ts'
 import type { File } from '../../java/io/File.d.ts'
 import type { FilenameFilter } from '../../java/io/FilenameFilter.d.ts'
 import type { ObjectInputStream } from '../../java/io/ObjectInputStream.d.ts'
-import type { Object } from '../../java/lang/Object.d.ts'
 export class FileDialog extends Dialog {
     static ABORT: number;
     static ALLBITS: number;
@@ -22,8 +22,8 @@ export class FileDialog extends Dialog {
     static SOMEBITS: number;
     static TOP_ALIGNMENT: number;
     static WIDTH: number;
-    static getOwnerlessWindows(): (Object | null)[];
-    static getWindows(): (Object | null)[];
+    static getOwnerlessWindows(): Window[];
+    static getWindows(): Window[];
     constructor(arg0: Dialog)
     constructor(arg0: Dialog, arg1: string)
     constructor(arg0: Dialog, arg1: string, arg2: number)

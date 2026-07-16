@@ -11,7 +11,7 @@ export class GlobalSettingsRichPresence$PresenceAsset extends Enum<GlobalSetting
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): GlobalSettingsRichPresence$PresenceAsset;
-    static values(): (Object | null)[];
+    static values(): GlobalSettingsRichPresence$PresenceAsset[];
     private constructor(tag: string, assetValue: string | null)
     readonly assetValue: string | null;
     readonly tag: string;

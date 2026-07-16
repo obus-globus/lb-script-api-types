@@ -15,7 +15,7 @@ export class NodeUtil extends Object {
     static collectNodeChildren(paramnode: Node): { [key: string]: Node };
     static collectNodeProperties(paramnode: Node): { [key: string]: Object };
     static collectNodes(paramparent: Node, paramchild: Node): Node[];
-    static concat(paramfirst: Object | null, paramsecond: Object | null): Object | null;
+    static concat(paramfirst: (Object | null)[], paramsecond: (Object | null)[]): (Object | null)[];
     static countNodes(paramroot: Node): number;
     static countNodes(paramroot: Node, paramfilter: NodeUtil$NodeCountFilter): number;
     static findAllNodeInstances(paramroot: Node, paramclazz: Class<Object>): (Object | null)[];

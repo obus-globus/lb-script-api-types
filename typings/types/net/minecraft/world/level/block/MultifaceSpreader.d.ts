@@ -9,9 +9,10 @@ import type { MultifaceBlock } from '../../../../../net/minecraft/world/level/bl
 import type { MultifaceSpreader$SpreadConfig } from '../../../../../net/minecraft/world/level/block/MultifaceSpreader$SpreadConfig.d.ts'
 import type { MultifaceSpreader$SpreadPos } from '../../../../../net/minecraft/world/level/block/MultifaceSpreader$SpreadPos.d.ts'
 import type { MultifaceSpreader$SpreadPredicate } from '../../../../../net/minecraft/world/level/block/MultifaceSpreader$SpreadPredicate.d.ts'
+import type { MultifaceSpreader$SpreadType } from '../../../../../net/minecraft/world/level/block/MultifaceSpreader$SpreadType.d.ts'
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class MultifaceSpreader extends Object {
-    static DEFAULT_SPREAD_ORDER: (Object | null)[];
+    static DEFAULT_SPREAD_ORDER: MultifaceSpreader$SpreadType[];
     constructor(multifaceBlock: MultifaceBlock)
     constructor(config: MultifaceSpreader$SpreadConfig)
     // private config: MultifaceSpreader$SpreadConfig;

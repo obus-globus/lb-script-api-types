@@ -4,25 +4,22 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { HotbarItemSlot$Companion } from '../../../../../net/ccbluex/liquidbounce/utils/inventory/HotbarItemSlot$Companion.d.ts'
 import type { ItemSlot } from '../../../../../net/ccbluex/liquidbounce/utils/inventory/ItemSlot.d.ts'
-import type { ItemSlot$Companion } from '../../../../../net/ccbluex/liquidbounce/utils/inventory/ItemSlot$Companion.d.ts'
 import type { ItemSlot$Type } from '../../../../../net/ccbluex/liquidbounce/utils/inventory/ItemSlot$Type.d.ts'
 import type { AbstractContainerScreen } from '../../../../../net/minecraft/client/gui/screens/inventory/AbstractContainerScreen.d.ts'
 import type { InteractionHand } from '../../../../../net/minecraft/world/InteractionHand.d.ts'
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class HotbarItemSlot extends Enum<HotbarItemSlot> implements ItemSlot {
     static Companion: HotbarItemSlot$Companion;
-    static Companion: ItemSlot$Companion;
     static OFFHAND: HotbarItemSlot;
-    static PREFER_FEWER_ITEM: (param0: Object) => boolean;
-    static PREFER_MORE_ITEM: (param0: Object) => boolean;
+    static PREFER_FEWER_ITEM: (param0: Object, param1: Object) => number;
+    static PREFER_MORE_ITEM: (param0: Object, param1: Object) => number;
     /**
      * Distance order:
      * current hand -> offhand -> other slots
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt#L253 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt:253}
      */
-    static PREFER_NEARBY: (param0: Object) => boolean;
-    static PREFER_NEARBY: (param0: Object) => boolean;
+    static PREFER_NEARBY: (param0: HotbarItemSlot, param1: HotbarItemSlot) => number;
     static SLOT_0: HotbarItemSlot;
     static SLOT_1: HotbarItemSlot;
     static SLOT_2: HotbarItemSlot;
@@ -42,7 +39,7 @@ export class HotbarItemSlot extends Enum<HotbarItemSlot> implements ItemSlot {
     static of(paramarg0: number): HotbarItemSlot;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HotbarItemSlot;
-    static values(): (Object | null)[];
+    static values(): HotbarItemSlot[];
     private constructor(hotbarIndex: number | null)
     readonly canBeSwapTarget: boolean;
     /**

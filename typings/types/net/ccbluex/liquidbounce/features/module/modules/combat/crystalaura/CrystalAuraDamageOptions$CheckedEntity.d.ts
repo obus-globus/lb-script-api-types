@@ -13,7 +13,7 @@ export class CrystalAuraDamageOptions$CheckedEntity extends Enum<CrystalAuraDama
     static getEntries(): CrystalAuraDamageOptions$CheckedEntity[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CrystalAuraDamageOptions$CheckedEntity;
-    static values(): (Object | null)[];
+    static values(): CrystalAuraDamageOptions$CheckedEntity[];
     private constructor()
     getDamage(entity: LivingEntity, requestingSubmodule: CrystalAuraDamageOptions$RequestingSubmodule, crystal: Vec3, maxBlastResistance: number | null, include: BlockPos | null): DamageProvider;
     name(): "SELF" | "TARGET" | "OTHER";

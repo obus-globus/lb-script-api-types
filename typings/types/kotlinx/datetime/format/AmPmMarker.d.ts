@@ -7,7 +7,7 @@ export class AmPmMarker extends Enum<AmPmMarker> {
     static getEntries(): AmPmMarker[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AmPmMarker;
-    static values(): (Object | null)[];
+    static values(): AmPmMarker[];
     private constructor()
     name(): "AM" | "PM";
 }

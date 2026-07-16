@@ -7,7 +7,7 @@ export class FullscreenMode extends Enum<FullscreenMode> {
     static OFF: FullscreenMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FullscreenMode;
-    static values(): (Object | null)[];
+    static values(): FullscreenMode[];
     private constructor()
     name(): "OFF" | "EXCLUSIVE" | "BORDERLESS";
 }

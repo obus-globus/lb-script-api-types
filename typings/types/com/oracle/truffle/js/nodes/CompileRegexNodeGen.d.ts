@@ -8,7 +8,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class CompileRegexNodeGen extends CompileRegexNode {
     static create(paramcontext: JSContext): CompileRegexNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private equalsNode: TruffleString$EqualNode;
     // private equalsNode2: TruffleString$EqualNode;

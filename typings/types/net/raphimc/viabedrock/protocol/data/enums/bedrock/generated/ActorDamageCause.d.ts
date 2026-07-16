@@ -43,7 +43,7 @@ export class ActorDamageCause extends Enum<ActorDamageCause> {
     static getByValue(paramarg0: number, paramarg1: ActorDamageCause): ActorDamageCause;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ActorDamageCause;
-    static values(): (Object | null)[];
+    static values(): ActorDamageCause[];
     private constructor(arg2: number)
     private constructor(arg2: ActorDamageCause)
     readonly value: number;

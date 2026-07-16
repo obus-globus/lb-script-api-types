@@ -1,8 +1,10 @@
 import type { Comparator } from '../../../../../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
+import type { ItemFacet } from '../../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/items/ItemFacet.d.ts'
+import type { ItemStackHolder } from '../../../../../../../../../net/ccbluex/liquidbounce/utils/item/ItemStackHolder.d.ts'
 export class ItemFacet$Companion extends Object {
-    // private PREFER_BETTER_DURABILITY: (param0: Object) => boolean;
-    // private PREFER_ENCHANTABLE: (param0: Object) => boolean;
-    // private PREFER_ITEMS_IN_HOTBAR: (param0: Object) => boolean;
-    // private STABILIZE_COMPARISON: (param0: Object) => boolean;
+    // private PREFER_BETTER_DURABILITY: (param0: ItemStackHolder, param1: ItemStackHolder) => number;
+    // private PREFER_ENCHANTABLE: (param0: ItemStackHolder, param1: ItemStackHolder) => number;
+    // private PREFER_ITEMS_IN_HOTBAR: (param0: ItemFacet, param1: ItemFacet) => number;
+    // private STABILIZE_COMPARISON: (param0: ItemStackHolder, param1: ItemStackHolder) => number;
 }

@@ -3,7 +3,6 @@ import type { DurationUnit } from '../../kotlin/time/DurationUnit.d.ts'
 import type { DurationUnitKt__DurationUnitKt } from '../../kotlin/time/DurationUnitKt__DurationUnitKt.d.ts'
 export class DurationUnitKt extends DurationUnitKt__DurationUnitKt {
     static convertDurationUnit(paramarg0: number, paramarg1: DurationUnit, paramarg2: DurationUnit): number;
-    static convertDurationUnit(paramarg0: number, paramarg1: DurationUnit, paramarg2: DurationUnit): number;
     static convertDurationUnitOverflow(paramarg0: number, paramarg1: DurationUnit, paramarg2: DurationUnit): number;
     static convertDurationUnitToMilliseconds(paramarg0: number, paramarg1: DurationUnit): number;
     static shortName(paramarg0: DurationUnit): string;

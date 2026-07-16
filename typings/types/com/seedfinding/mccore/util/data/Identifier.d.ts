@@ -1,6 +1,6 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Identifier extends Object {
-    static split(paramarg0: string): (Object | null)[];
+    static split(paramarg0: string): string[];
     constructor(arg0: string[])
     constructor(arg0: string)
     constructor(arg0: string, arg1: string)

@@ -10,7 +10,7 @@ export class Modality extends Enum<Modality> {
     static getEntries(): Modality[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Modality;
-    static values(): (Object | null)[];
+    static values(): Modality[];
     private constructor(arg2: number)
     // private flag: FlagImpl;
     getFlag$org_jetbrains_kotlin_kotlin_metadata(): FlagImpl;

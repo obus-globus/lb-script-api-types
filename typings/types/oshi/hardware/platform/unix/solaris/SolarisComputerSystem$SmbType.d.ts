@@ -7,7 +7,7 @@ export class SolarisComputerSystem$SmbType extends Enum<SolarisComputerSystem$Sm
     static SMB_TYPE_SYSTEM: SolarisComputerSystem$SmbType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SolarisComputerSystem$SmbType;
-    static values(): (Object | null)[];
+    static values(): SolarisComputerSystem$SmbType[];
     private constructor()
     name(): "SMB_TYPE_BIOS" | "SMB_TYPE_SYSTEM" | "SMB_TYPE_BASEBOARD";
 }

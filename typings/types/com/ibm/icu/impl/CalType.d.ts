@@ -22,7 +22,7 @@ export class CalType extends Enum<CalType> {
     static ROC: CalType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CalType;
-    static values(): (Object | null)[];
+    static values(): CalType[];
     private constructor(arg2: string)
     id: string;
     getId(): string;

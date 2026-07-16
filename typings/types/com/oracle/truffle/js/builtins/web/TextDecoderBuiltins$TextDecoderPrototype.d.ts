@@ -15,7 +15,7 @@ export class TextDecoderBuiltins$TextDecoderPrototype extends Enum<TextDecoderBu
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TextDecoderBuiltins$TextDecoderPrototype;
-    static values(): (Object | null)[];
+    static values(): TextDecoderBuiltins$TextDecoderPrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

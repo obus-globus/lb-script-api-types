@@ -7,7 +7,7 @@ export class PackActivationType extends Enum<PackActivationType> {
     static NORMAL: PackActivationType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PackActivationType;
-    static values(): (Object | null)[];
+    static values(): PackActivationType[];
     private constructor()
     isEnabledByDefault(): boolean;
     name(): "NORMAL" | "DEFAULT_ENABLED" | "ALWAYS_ENABLED";

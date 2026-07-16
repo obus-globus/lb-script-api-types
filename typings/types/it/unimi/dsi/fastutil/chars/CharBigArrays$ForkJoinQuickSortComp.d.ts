@@ -19,7 +19,7 @@ export class CharBigArrays$ForkJoinQuickSortComp extends RecursiveAction {
     static inForkJoinPool(): boolean;
     static invokeAll(paramarg0: (Object | null)[]): (Object | null)[];
     static invokeAll(paramarg0: ForkJoinTask<Object>, paramarg1: ForkJoinTask<Object>): void;
-    static invokeAll(paramarg0: Object | null): void;
+    static invokeAll(...paramarg0: ForkJoinTask<Object>[]): void;
     constructor(arg0: string[][], arg1: number, arg2: number, arg3: (param0: string, param1: string) => number)
     // private comp: (param0: string, param1: string) => number;
     // private from: number;

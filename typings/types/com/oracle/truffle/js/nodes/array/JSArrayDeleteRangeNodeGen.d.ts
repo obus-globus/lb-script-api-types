@@ -10,7 +10,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 export class JSArrayDeleteRangeNodeGen extends JSArrayDeleteRangeNode {
     static create(paramcontext: JSContext, paramorThrow: boolean): JSArrayDeleteRangeNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, orThrow: boolean)
     // private deletePropertyNode: DeletePropertyNode;
     // private denseArray_cache: JSArrayDeleteRangeNodeGen$DenseArrayData;

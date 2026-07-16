@@ -7,7 +7,7 @@ export class TinyRemapper$LinkedMethodPropagation extends Enum<TinyRemapper$Link
     static ENABLED: TinyRemapper$LinkedMethodPropagation;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TinyRemapper$LinkedMethodPropagation;
-    static values(): (Object | null)[];
+    static values(): TinyRemapper$LinkedMethodPropagation[];
     private constructor()
     name(): "DISABLED" | "ENABLED" | "COMPATIBLE";
 }

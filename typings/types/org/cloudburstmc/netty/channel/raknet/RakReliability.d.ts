@@ -15,7 +15,7 @@ export class RakReliability extends Enum<RakReliability> {
     static fromId(paramarg0: number): RakReliability;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RakReliability;
-    static values(): (Object | null)[];
+    static values(): RakReliability[];
     private constructor(arg2: boolean, arg3: boolean, arg4: boolean, arg5: boolean)
     readonly ordered: boolean;
     readonly reliable: boolean;

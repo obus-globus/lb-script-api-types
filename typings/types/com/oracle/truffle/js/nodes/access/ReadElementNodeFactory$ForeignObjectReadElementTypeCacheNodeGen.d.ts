@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ReadElementNodeFactory$ForeignObjectReadElementTypeCacheNodeGen extends ReadElementNode$ForeignObjectReadElementTypeCacheNode {
     static create(): ReadElementNode$ForeignObjectReadElementTypeCacheNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private classProfile__field1_: Class<Object>;
     // private state_0_: number;

@@ -7,7 +7,7 @@ export class TestArrayNode$Test extends Enum<TestArrayNode$Test> {
     static IsSealed: TestArrayNode$Test;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TestArrayNode$Test;
-    static values(): (Object | null)[];
+    static values(): TestArrayNode$Test[];
     private constructor()
     name(): "HasHoles" | "HasHolesOrUnused" | "IsSealed";
 }

@@ -7,7 +7,7 @@ export class Funnels$ByteArrayFunnel extends Enum<Funnels$ByteArrayFunnel> imple
     static INSTANCE: Funnels$ByteArrayFunnel;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Funnels$ByteArrayFunnel;
-    static values(): (Object | null)[];
+    static values(): Funnels$ByteArrayFunnel[];
     private constructor()
     funnel(from: number[], into: PrimitiveSink): void;
     toString(): string;

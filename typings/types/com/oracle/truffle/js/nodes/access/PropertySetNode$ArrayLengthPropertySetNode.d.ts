@@ -9,7 +9,6 @@ import type { JSArrayObject } from '../../../../../../com/oracle/truffle/js/runt
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PropertySetNode$ArrayLengthPropertySetNode extends PropertySetNode$LinkedPropertySetNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(property: Property, shapeCheck: PropertyCacheNode$AbstractShapeCheckNode, isStrict: boolean)
     // private arrayLengthWrite: ArrayLengthNode$ArrayLengthWriteNode;
     // private errorBranch: BranchProfile;

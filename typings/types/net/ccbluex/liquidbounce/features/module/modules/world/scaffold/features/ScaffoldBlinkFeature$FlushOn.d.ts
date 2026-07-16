@@ -20,7 +20,7 @@ export class ScaffoldBlinkFeature$FlushOn extends Enum<ScaffoldBlinkFeature$Flus
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ScaffoldBlinkFeature$FlushOn;
-    static values(): (Object | null)[];
+    static values(): ScaffoldBlinkFeature$FlushOn[];
     private constructor(tag: string, cond: (param0: Packet<any> | null) => boolean)
     // private cond: (param0: Packet<any> | null) => boolean;
     readonly tag: string;

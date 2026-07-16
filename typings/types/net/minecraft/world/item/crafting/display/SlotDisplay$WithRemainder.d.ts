@@ -15,7 +15,6 @@ export class SlotDisplay$WithRemainder extends Record implements SlotDisplay {
     static CODEC: Codec<SlotDisplay>;
     static MAP_CODEC: MapCodec<SlotDisplay$WithRemainder>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, SlotDisplay$WithRemainder>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, SlotDisplay>;
     static TYPE: SlotDisplay$Type<SlotDisplay$WithRemainder>;
     constructor(input: SlotDisplay, remainder: SlotDisplay)
     // private input: SlotDisplay;

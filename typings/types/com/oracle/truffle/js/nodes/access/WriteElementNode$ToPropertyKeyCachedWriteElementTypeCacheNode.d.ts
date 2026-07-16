@@ -3,7 +3,6 @@ import type { WriteElementNode$GuardedWriteElementTypeCacheNode } from '../../..
 import type { JSClassProfile } from '../../../../../../com/oracle/truffle/js/runtime/util/JSClassProfile.d.ts'
 export abstract class WriteElementNode$ToPropertyKeyCachedWriteElementTypeCacheNode extends WriteElementNode$GuardedWriteElementTypeCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     // private classProfile: JSClassProfile;
 }

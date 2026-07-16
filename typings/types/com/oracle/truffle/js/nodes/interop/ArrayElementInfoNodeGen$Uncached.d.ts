@@ -10,7 +10,6 @@ export class ArrayElementInfoNodeGen$Uncached extends ArrayElementInfoNode imple
     static REMOVABLE: number;
     static WRITABLE: number;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     execute(arg0Value: JSArrayBase, arg1Value: number, arg2Value: number): TriState;
 }

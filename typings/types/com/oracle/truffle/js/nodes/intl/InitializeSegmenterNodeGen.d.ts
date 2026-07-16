@@ -7,7 +7,6 @@ export class InitializeSegmenterNodeGen extends InitializeSegmenterNode {
     static create(paramcontext: JSContext): InitializeSegmenterNode;
     static createInitalizeSegmenterNode(paramcontext: JSContext): InitializeSegmenterNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     executeInit(arg0Value: JSSegmenterObject, arg1Value: Object, arg2Value: Object): JSSegmenterObject;
 }

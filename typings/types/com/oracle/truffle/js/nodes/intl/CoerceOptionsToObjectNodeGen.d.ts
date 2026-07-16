@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class CoerceOptionsToObjectNodeGen extends CoerceOptionsToObjectNode {
     static create(paramcontext: JSContext): CoerceOptionsToObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private fromOtherThanUndefined_toObjectNode_: JSToObjectNode;
     // private state_0_: number;

@@ -12,7 +12,7 @@ export class BlockModelGenerators$PlantType extends Enum<BlockModelGenerators$Pl
     static TINTED: BlockModelGenerators$PlantType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): BlockModelGenerators$PlantType;
-    static values(): (Object | null)[];
+    static values(): BlockModelGenerators$PlantType[];
     private constructor(blockTemplate: ModelTemplate, flowerPotTemplate: ModelTemplate, isEmissive: boolean)
     // private blockTemplate: ModelTemplate;
     // private flowerPotTemplate: ModelTemplate;

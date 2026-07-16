@@ -1,8 +1,14 @@
 import type { JsonObject } from '../../../../../../../../../com/google/gson/JsonObject.d.ts'
+import type { GpuDevice } from '../../../../../../../../../com/mojang/blaze3d/systems/GpuDevice.d.ts'
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { ClosedFloatingPointRange } from '../../../../../../../../../kotlin/ranges/ClosedFloatingPointRange.d.ts'
 import type { MinecraftShortcuts } from '../../../../../../../../../net/ccbluex/liquidbounce/features/module/MinecraftShortcuts.d.ts'
 import type { RangeValueGroup } from '../../../../../../../../../net/ccbluex/liquidbounce/utils/range/RangeValueGroup.d.ts'
+import type { Minecraft } from '../../../../../../../../../net/minecraft/client/Minecraft.d.ts'
+import type { ClientLevel } from '../../../../../../../../../net/minecraft/client/multiplayer/ClientLevel.d.ts'
+import type { ClientPacketListener } from '../../../../../../../../../net/minecraft/client/multiplayer/ClientPacketListener.d.ts'
+import type { MultiPlayerGameMode } from '../../../../../../../../../net/minecraft/client/multiplayer/MultiPlayerGameMode.d.ts'
+import type { LocalPlayer } from '../../../../../../../../../net/minecraft/client/player/LocalPlayer.d.ts'
 /**
  * Allows adjusting your attack range and scan range.
  *
@@ -11,9 +17,15 @@ import type { RangeValueGroup } from '../../../../../../../../../net/ccbluex/liq
 export class KillAuraRange extends RangeValueGroup implements MinecraftShortcuts {
     static INSTANCE: KillAuraRange;
     // private currentScanRangeAddition: number;
+    readonly gpuDevice: GpuDevice;
+    readonly interaction: MultiPlayerGameMode;
+    readonly mc: Minecraft;
+    readonly network: ClientPacketListener;
+    readonly player: LocalPlayer;
     /*not mapped: */ getScanRange$net_ccbluex_liquidbounce(): number;
     // private scanRangeIncrease: ClosedFloatingPointRange<number>;
     // private /*not mapped: */ getScanRangeIncrease(): ClosedFloatingPointRange<number>;
+    readonly world: ClientLevel;
     /**
      * Migrates the old values from the config.
      *

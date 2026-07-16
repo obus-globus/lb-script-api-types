@@ -4,6 +4,7 @@ import type { Continuation } from '../../../../../../kotlin/coroutines/Continuat
 import type { ClientAccount } from '../../../../../../net/ccbluex/liquidbounce/api/models/auth/ClientAccount.d.ts'
 import type { OAuthSession } from '../../../../../../net/ccbluex/liquidbounce/api/models/auth/OAuthSession.d.ts'
 import type { EventListener } from '../../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
+import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
 /**
  * OAuth client for handling the authentication flow
  *
@@ -13,6 +14,8 @@ export class OAuthClient extends Object implements EventListener {
     static INSTANCE: OAuthClient;
     // private SUCCESS_HTML: string;
     // private authCodeContinuation: Continuation<string> | null;
+    readonly debugDisplayName: Component;
+    readonly running: boolean;
     // private serverPort: number | null;
     // private buildAuthUrl(codeChallenge: string, state: string, redirectUri: string): string;
     children(): EventListener[];

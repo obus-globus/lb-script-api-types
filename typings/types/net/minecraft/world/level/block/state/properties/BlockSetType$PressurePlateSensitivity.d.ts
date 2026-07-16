@@ -6,7 +6,7 @@ export class BlockSetType$PressurePlateSensitivity extends Enum<BlockSetType$Pre
     static MOBS: BlockSetType$PressurePlateSensitivity;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): BlockSetType$PressurePlateSensitivity;
-    static values(): (Object | null)[];
+    static values(): BlockSetType$PressurePlateSensitivity[];
     private constructor()
     name(): "EVERYTHING" | "MOBS";
 }

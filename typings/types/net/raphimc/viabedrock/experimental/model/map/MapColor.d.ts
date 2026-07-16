@@ -253,7 +253,7 @@ export class MapColor extends Enum<MapColor> {
     static COLOR_99: MapColor;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MapColor;
-    static values(): (Object | null)[];
+    static values(): MapColor[];
     private constructor(arg2: number, arg3: number, arg4: number)
     // private value: number;
     getColor(): Color;

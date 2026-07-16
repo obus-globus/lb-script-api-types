@@ -13,7 +13,7 @@ export class ClientboundTextureShiftPacketPayload_Action extends Enum<Clientboun
     static getByValue(paramarg0: number, paramarg1: ClientboundTextureShiftPacketPayload_Action): ClientboundTextureShiftPacketPayload_Action;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClientboundTextureShiftPacketPayload_Action;
-    static values(): (Object | null)[];
+    static values(): ClientboundTextureShiftPacketPayload_Action[];
     private constructor(arg2: number)
     private constructor(arg2: ClientboundTextureShiftPacketPayload_Action)
     readonly value: number;

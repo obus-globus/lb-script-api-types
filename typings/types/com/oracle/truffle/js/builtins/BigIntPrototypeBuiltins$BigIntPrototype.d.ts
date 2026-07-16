@@ -13,7 +13,7 @@ export class BigIntPrototypeBuiltins$BigIntPrototype extends Enum<BigIntPrototyp
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): BigIntPrototypeBuiltins$BigIntPrototype;
-    static values(): (Object | null)[];
+    static values(): BigIntPrototypeBuiltins$BigIntPrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

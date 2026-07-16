@@ -9,7 +9,7 @@ export class SimpleDateFormat$ContextValue extends Enum<SimpleDateFormat$Context
     static UNKNOWN: SimpleDateFormat$ContextValue;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SimpleDateFormat$ContextValue;
-    static values(): (Object | null)[];
+    static values(): SimpleDateFormat$ContextValue[];
     private constructor()
     name(): "UNKNOWN" | "CAPITALIZATION_FOR_MIDDLE_OF_SENTENCE" | "CAPITALIZATION_FOR_BEGINNING_OF_SENTENCE" | "CAPITALIZATION_FOR_UI_LIST_OR_MENU" | "CAPITALIZATION_FOR_STANDALONE";
 }

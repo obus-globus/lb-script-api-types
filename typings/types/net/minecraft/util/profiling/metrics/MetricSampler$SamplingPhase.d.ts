@@ -6,7 +6,7 @@ export class MetricSampler$SamplingPhase extends Enum<MetricSampler$SamplingPhas
     static EXTRACT: MetricSampler$SamplingPhase;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): MetricSampler$SamplingPhase;
-    static values(): (Object | null)[];
+    static values(): MetricSampler$SamplingPhase[];
     private constructor()
     name(): "EXTRACT" | "END_TICK";
 }

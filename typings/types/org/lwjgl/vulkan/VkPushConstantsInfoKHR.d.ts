@@ -27,28 +27,21 @@ export class VkPushConstantsInfoKHR extends VkPushConstantsInfo {
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPushConstantsInfoKHR;
     static calloc(paramarg0: MemoryStack): VkPushConstantsInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPushConstantsInfo;
     static create(paramarg0: number): VkPushConstantsInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPushConstantsInfoKHR;
     static create(paramarg0: number): VkPushConstantsInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPushConstantsInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPushConstantsInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPushConstantsInfo;
     static malloc(paramarg0: MemoryStack): VkPushConstantsInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPushConstantsInfoKHR;
     static malloc(paramarg0: MemoryStack): VkPushConstantsInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nlayout(paramarg0: number): number;
     static nlayout(paramarg0: number, paramarg1: number): void;
     static noffset(paramarg0: number): number;
@@ -63,7 +56,6 @@ export class VkPushConstantsInfoKHR extends VkPushConstantsInfo {
     static nsize(paramarg0: number, paramarg1: number): void;
     static nstageFlags(paramarg0: number): number;
     static nstageFlags(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

@@ -6,7 +6,6 @@ import type { FloatBuffer } from '../../../java/nio/FloatBuffer.d.ts'
 import type { IntBuffer } from '../../../java/nio/IntBuffer.d.ts'
 import type { LongBuffer } from '../../../java/nio/LongBuffer.d.ts'
 import type { ShortBuffer } from '../../../java/nio/ShortBuffer.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../java/lang/CharSequence.d.ts'
 import type { CLongBuffer } from '../../../org/lwjgl/CLongBuffer.d.ts'
 import type { PointerBuffer } from '../../../org/lwjgl/PointerBuffer.d.ts'
@@ -87,7 +86,7 @@ export class MemoryStack extends Pointer$Default implements AutoCloseable {
     static stackPointers(paramarg0: Pointer, paramarg1: Pointer): PointerBuffer;
     static stackPointers(paramarg0: Pointer, paramarg1: Pointer, paramarg2: Pointer): PointerBuffer;
     static stackPointers(paramarg0: Pointer, paramarg1: Pointer, paramarg2: Pointer, paramarg3: Pointer): PointerBuffer;
-    static stackPointers(...paramarg0: (Object | null)[]): PointerBuffer;
+    static stackPointers(...paramarg0: Pointer[]): PointerBuffer;
     static stackPop(): MemoryStack;
     static stackPush(): MemoryStack;
     static stackShorts(paramarg0: number): ShortBuffer;

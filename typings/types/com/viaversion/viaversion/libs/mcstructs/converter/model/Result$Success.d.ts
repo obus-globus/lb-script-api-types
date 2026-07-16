@@ -1,5 +1,6 @@
 import type { CodecException } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/model/CodecException.d.ts'
 import type { Result } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/model/Result.d.ts'
+import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { Function } from '../../../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../../../java/lang/Throwable.d.ts'
@@ -8,8 +9,8 @@ export class Result$Success<T extends unknown> extends Object implements Result<
     static error(paramarg0: Throwable): Result<Object>;
     static mergeErrors(paramarg0: string, paramarg1: Result<Object>[]): Result<Object>;
     static success(paramarg0: Object | null): Result<Object>;
-    static unexpected(paramarg0: Object, paramarg1: Object | null): Result<Object>;
-    static unexpected(paramarg0: Object, ...paramarg1: (Object | null)[]): Result<Object>;
+    static unexpected(paramarg0: Object, ...paramarg1: Class<Object>[]): Result<Object>;
+    static unexpected(paramarg0: Object, ...paramarg1: string[]): Result<Object>;
     constructor(arg0: Object, arg1: any)
     // private result: T;
     canEqual(arg0: Object): boolean;

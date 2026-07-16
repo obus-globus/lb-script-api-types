@@ -8,11 +8,11 @@ import type { VarHandle$VarHandleDesc$Kind } from '../../../java/lang/invoke/Var
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class VarHandle$VarHandleDesc extends DynamicConstantDesc<VarHandle> {
     static of(paramarg0: DirectMethodHandleDesc): DynamicConstantDesc<Object>;
-    static of(paramarg0: DirectMethodHandleDesc, ...paramarg1: (Object | null)[]): DynamicConstantDesc<Object>;
+    static of(paramarg0: DirectMethodHandleDesc, ...paramarg1: ConstantDesc[]): DynamicConstantDesc<Object>;
     static ofArray(paramarg0: ClassDesc): VarHandle$VarHandleDesc;
-    static ofCanonical(paramarg0: DirectMethodHandleDesc, paramarg1: string, paramarg2: ClassDesc, paramarg3: (Object | null)[]): ConstantDesc;
+    static ofCanonical(paramarg0: DirectMethodHandleDesc, paramarg1: string, paramarg2: ClassDesc, paramarg3: ConstantDesc[]): ConstantDesc;
     static ofField(paramarg0: ClassDesc, paramarg1: string, paramarg2: ClassDesc): VarHandle$VarHandleDesc;
-    static ofNamed(paramarg0: DirectMethodHandleDesc, paramarg1: string, paramarg2: ClassDesc, ...paramarg3: (Object | null)[]): DynamicConstantDesc<Object>;
+    static ofNamed(paramarg0: DirectMethodHandleDesc, paramarg1: string, paramarg2: ClassDesc, ...paramarg3: ConstantDesc[]): DynamicConstantDesc<Object>;
     static ofStaticField(paramarg0: ClassDesc, paramarg1: string, paramarg2: ClassDesc): VarHandle$VarHandleDesc;
     private constructor(arg0: VarHandle$VarHandleDesc$Kind, arg1: string, arg2: ClassDesc, arg3: ClassDesc)
     // private declaringClass: ClassDesc;

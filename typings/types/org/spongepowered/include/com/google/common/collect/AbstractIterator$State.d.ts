@@ -8,7 +8,7 @@ export class AbstractIterator$State extends Enum<AbstractIterator$State> {
     static READY: AbstractIterator$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AbstractIterator$State;
-    static values(): (Object | null)[];
+    static values(): AbstractIterator$State[];
     private constructor()
     name(): "READY" | "NOT_READY" | "DONE" | "FAILED";
 }

@@ -6,7 +6,7 @@ export class Expression$ExpressionType$Associativity extends Enum<Expression$Exp
     static RTL: Expression$ExpressionType$Associativity;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Expression$ExpressionType$Associativity;
-    static values(): (Object | null)[];
+    static values(): Expression$ExpressionType$Associativity[];
     private constructor()
     name(): "LTR" | "RTL";
 }

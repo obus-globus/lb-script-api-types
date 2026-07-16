@@ -12,7 +12,7 @@ export class CentralProcessor$TickType extends Enum<CentralProcessor$TickType> {
     static USER: CentralProcessor$TickType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CentralProcessor$TickType;
-    static values(): (Object | null)[];
+    static values(): CentralProcessor$TickType[];
     private constructor(arg2: number)
     readonly index: number;
     getIndex(): number;

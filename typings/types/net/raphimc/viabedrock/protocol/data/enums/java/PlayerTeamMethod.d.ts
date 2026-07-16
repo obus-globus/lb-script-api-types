@@ -9,7 +9,7 @@ export class PlayerTeamMethod extends Enum<PlayerTeamMethod> {
     static REMOVE: PlayerTeamMethod;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PlayerTeamMethod;
-    static values(): (Object | null)[];
+    static values(): PlayerTeamMethod[];
     private constructor()
     name(): "ADD" | "REMOVE" | "CHANGE" | "JOIN" | "LEAVE";
 }

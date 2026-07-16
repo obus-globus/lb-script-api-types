@@ -27,28 +27,21 @@ export class VkDeviceGroupSubmitInfoKHR extends VkDeviceGroupSubmitInfo {
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkDeviceGroupSubmitInfoKHR;
     static calloc(paramarg0: MemoryStack): VkDeviceGroupSubmitInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkDeviceGroupSubmitInfo;
     static create(paramarg0: number): VkDeviceGroupSubmitInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkDeviceGroupSubmitInfoKHR;
     static create(paramarg0: number): VkDeviceGroupSubmitInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkDeviceGroupSubmitInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkDeviceGroupSubmitInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkDeviceGroupSubmitInfo;
     static malloc(paramarg0: MemoryStack): VkDeviceGroupSubmitInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkDeviceGroupSubmitInfoKHR;
     static malloc(paramarg0: MemoryStack): VkDeviceGroupSubmitInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ncommandBufferCount(paramarg0: number): number;
     static ncommandBufferCount(paramarg0: number, paramarg1: number): void;
     static npCommandBufferDeviceMasks(paramarg0: number): IntBuffer;
@@ -65,7 +58,6 @@ export class VkDeviceGroupSubmitInfoKHR extends VkDeviceGroupSubmitInfo {
     static nsignalSemaphoreCount(paramarg0: number, paramarg1: number): void;
     static nwaitSemaphoreCount(paramarg0: number): number;
     static nwaitSemaphoreCount(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

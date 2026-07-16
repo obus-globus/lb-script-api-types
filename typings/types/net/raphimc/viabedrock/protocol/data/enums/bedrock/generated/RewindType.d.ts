@@ -10,7 +10,7 @@ export class RewindType extends Enum<RewindType> {
     static getByValue(paramarg0: number, paramarg1: RewindType): RewindType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RewindType;
-    static values(): (Object | null)[];
+    static values(): RewindType[];
     private constructor(arg2: number)
     private constructor(arg2: RewindType)
     readonly value: number;

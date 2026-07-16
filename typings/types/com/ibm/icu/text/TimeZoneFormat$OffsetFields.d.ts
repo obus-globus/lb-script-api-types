@@ -7,7 +7,7 @@ export class TimeZoneFormat$OffsetFields extends Enum<TimeZoneFormat$OffsetField
     static HMS: TimeZoneFormat$OffsetFields;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TimeZoneFormat$OffsetFields;
-    static values(): (Object | null)[];
+    static values(): TimeZoneFormat$OffsetFields[];
     private constructor()
     name(): "H" | "HM" | "HMS";
 }

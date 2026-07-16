@@ -26,28 +26,21 @@ export class VkHostImageLayoutTransitionInfoEXT extends VkHostImageLayoutTransit
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkHostImageLayoutTransitionInfoEXT;
     static calloc(paramarg0: MemoryStack): VkHostImageLayoutTransitionInfoEXT;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkHostImageLayoutTransitionInfo;
     static create(paramarg0: number): VkHostImageLayoutTransitionInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkHostImageLayoutTransitionInfoEXT;
     static create(paramarg0: number): VkHostImageLayoutTransitionInfoEXT;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkHostImageLayoutTransitionInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkHostImageLayoutTransitionInfoEXT;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkHostImageLayoutTransitionInfo;
     static malloc(paramarg0: MemoryStack): VkHostImageLayoutTransitionInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkHostImageLayoutTransitionInfoEXT;
     static malloc(paramarg0: MemoryStack): VkHostImageLayoutTransitionInfoEXT;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nimage(paramarg0: number): number;
     static nimage(paramarg0: number, paramarg1: number): void;
     static nnewLayout(paramarg0: number): number;
@@ -60,7 +53,6 @@ export class VkHostImageLayoutTransitionInfoEXT extends VkHostImageLayoutTransit
     static nsType(paramarg0: number, paramarg1: number): void;
     static nsubresourceRange(paramarg0: number): VkImageSubresourceRange;
     static nsubresourceRange(paramarg0: number, paramarg1: VkImageSubresourceRange): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

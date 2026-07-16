@@ -29,7 +29,6 @@ export class FT_Var_Axis extends Struct<FT_Var_Axis> {
     static nstrid(paramarg0: number): number;
     static ntag(paramarg0: number): number;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     create(arg0: number, arg1: ByteBuffer): FT_Var_Axis;

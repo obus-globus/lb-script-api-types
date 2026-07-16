@@ -2,6 +2,5 @@ import type { NodeChild } from '../../../../../com/oracle/truffle/api/dsl/NodeCh
 import type { Annotation } from '../../../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface NodeChildren extends Annotation, Object{
-    constructor(...value: NodeChild[])
     /*not mapped: */ value(): NodeChild[];
 }

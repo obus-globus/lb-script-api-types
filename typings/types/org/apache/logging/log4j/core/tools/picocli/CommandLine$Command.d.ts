@@ -2,7 +2,6 @@ import type { Annotation } from '../../../../../../../java/lang/annotation/Annot
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { KClass } from '../../../../../../../kotlin/reflect/KClass.d.ts'
 export interface CommandLine$Command extends Annotation, Object{
-    constructor(abbreviateSynopsis: boolean, commandListHeading: string, customSynopsis: string[], description: string[], descriptionHeading: string, footer: string[], footerHeading: string, header: string[], headerHeading: string, name: string, optionListHeading: string, parameterListHeading: string, requiredOptionMarker: string, separator: string, showDefaultValues: boolean, sortOptions: boolean, subcommands: KClass<Object>[], synopsisHeading: string, version: string[])
     /*not mapped: */ abbreviateSynopsis(): boolean;
     /*not mapped: */ commandListHeading(): string;
     /*not mapped: */ customSynopsis(): string[];

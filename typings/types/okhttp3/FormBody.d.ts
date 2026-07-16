@@ -3,14 +3,12 @@ import type { FileDescriptor } from '../java/io/FileDescriptor.d.ts'
 import type { FormBody$Companion } from '../okhttp3/FormBody$Companion.d.ts'
 import type { MediaType } from '../okhttp3/MediaType.d.ts'
 import type { RequestBody } from '../okhttp3/RequestBody.d.ts'
-import type { RequestBody$Companion } from '../okhttp3/RequestBody$Companion.d.ts'
 import type { BufferedSink } from '../okio/BufferedSink.d.ts'
 import type { ByteString } from '../okio/ByteString.d.ts'
 import type { FileSystem } from '../okio/FileSystem.d.ts'
 import type { Path } from '../okio/Path.d.ts'
 export class FormBody extends RequestBody {
     static Companion: FormBody$Companion;
-    static Companion: RequestBody$Companion;
     static EMPTY: RequestBody;
     static create(paramarg0: number[]): RequestBody;
     static create(paramarg0: number[], paramarg1: MediaType): RequestBody;

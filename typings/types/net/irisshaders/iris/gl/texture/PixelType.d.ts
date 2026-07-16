@@ -29,7 +29,7 @@ export class PixelType extends Enum<PixelType> {
     static fromString(paramarg0: string): Optional<PixelType>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PixelType;
-    static values(): (Object | null)[];
+    static values(): PixelType[];
     private constructor(arg2: number, arg3: number, arg4: GlVersion)
     readonly byteSize: number;
     readonly glFormat: number;

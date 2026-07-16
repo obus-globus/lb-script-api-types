@@ -7,9 +7,8 @@ export class TriState extends Enum<TriState> {
     static UNDEFINED: TriState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramb: boolean): TriState;
-    static valueOf(paramb: boolean): TriState;
     static valueOf(paramname: string): TriState;
-    static values(): (Object | null)[];
+    static values(): TriState[];
     private constructor()
     name(): "TRUE" | "FALSE" | "UNDEFINED";
 }

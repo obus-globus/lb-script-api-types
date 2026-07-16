@@ -8,7 +8,6 @@ import type { JSArrayObject } from '../../../../../../com/oracle/truffle/js/runt
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSArrayToDenseObjectArrayNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doUncached(array: JSArrayObject, arrayType: ScriptArray, length: number, nextElementIndexNode: JSArrayNextElementIndexNode, readNode: ReadElementNode, growProfile: InlinedBranchProfile): Object[];
     executeObjectArray(array: JSArrayObject, arrayType: ScriptArray, length: number): Object[];

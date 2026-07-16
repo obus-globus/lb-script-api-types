@@ -10,7 +10,7 @@ export class Semver$VersionDiff extends Enum<Semver$VersionDiff> {
     static SUFFIX: Semver$VersionDiff;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Semver$VersionDiff;
-    static values(): (Object | null)[];
+    static values(): Semver$VersionDiff[];
     private constructor()
     name(): "NONE" | "MAJOR" | "MINOR" | "PATCH" | "SUFFIX" | "BUILD";
 }

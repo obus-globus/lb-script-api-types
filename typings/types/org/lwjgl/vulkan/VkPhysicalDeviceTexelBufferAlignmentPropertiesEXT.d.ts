@@ -24,28 +24,21 @@ export class VkPhysicalDeviceTexelBufferAlignmentPropertiesEXT extends VkPhysica
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceTexelBufferAlignmentPropertiesEXT;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceTexelBufferAlignmentPropertiesEXT;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceTexelBufferAlignmentProperties;
     static create(paramarg0: number): VkPhysicalDeviceTexelBufferAlignmentProperties;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceTexelBufferAlignmentPropertiesEXT;
     static create(paramarg0: number): VkPhysicalDeviceTexelBufferAlignmentPropertiesEXT;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceTexelBufferAlignmentProperties;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceTexelBufferAlignmentPropertiesEXT;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceTexelBufferAlignmentProperties;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceTexelBufferAlignmentProperties;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceTexelBufferAlignmentPropertiesEXT;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceTexelBufferAlignmentPropertiesEXT;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
@@ -54,7 +47,6 @@ export class VkPhysicalDeviceTexelBufferAlignmentPropertiesEXT extends VkPhysica
     static nstorageTexelBufferOffsetSingleTexelAlignment(paramarg0: number): number;
     static nuniformTexelBufferOffsetAlignmentBytes(paramarg0: number): number;
     static nuniformTexelBufferOffsetSingleTexelAlignment(paramarg0: number): number;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

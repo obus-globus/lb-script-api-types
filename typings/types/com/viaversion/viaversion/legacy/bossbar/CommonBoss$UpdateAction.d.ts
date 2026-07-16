@@ -10,7 +10,7 @@ export class CommonBoss$UpdateAction extends Enum<CommonBoss$UpdateAction> {
     static UPDATE_TITLE: CommonBoss$UpdateAction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CommonBoss$UpdateAction;
-    static values(): (Object | null)[];
+    static values(): CommonBoss$UpdateAction[];
     private constructor(arg2: number)
     readonly id: number;
     getId(): number;

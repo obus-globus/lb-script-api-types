@@ -3,7 +3,6 @@ import type { TruffleString } from '../../../../../../com/oracle/truffle/api/str
 import type { JavaScriptBaseNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptBaseNode.d.ts'
 export abstract class JSStringToNumberNoTrimNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     executeNoTrim(input: TruffleString): number;
 }

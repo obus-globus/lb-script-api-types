@@ -7,7 +7,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { TemporalUtil$Unit } from '../../../../../../com/oracle/truffle/js/runtime/util/TemporalUtil$Unit.d.ts'
 export abstract class GetTemporalUnitNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(normalizedOptions: JSDynamicObject, key: TruffleString, unitMapping: Map<TruffleString, TemporalUtil$Unit>, defaultValue: TemporalUtil$Unit): TemporalUtil$Unit;
     getUnit(normalizedOptions: JSDynamicObject, key: TruffleString, unitMapping: Map<TruffleString, TemporalUtil$Unit>, defaultValue: TemporalUtil$Unit, errorBranch: InlinedBranchProfile, getOptionNode: TemporalGetOptionNode): TemporalUtil$Unit;

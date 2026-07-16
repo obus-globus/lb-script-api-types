@@ -10,7 +10,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PerformPromiseRaceNode extends PerformPromiseCombinatorNode {
     static create(paramcontext: JSContext): PerformPromiseRaceNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private callResolve: JSFunctionCallNode;
     // private callThen: JSFunctionCallNode;

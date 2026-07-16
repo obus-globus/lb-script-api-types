@@ -17,7 +17,7 @@ export class TypeRewriteRule$IfSame<B extends unknown> extends Object implements
     static orElse(paramarg0: TypeRewriteRule, paramarg1: TypeRewriteRule): TypeRewriteRule;
     static orElse(paramarg0: TypeRewriteRule, paramarg1: () => TypeRewriteRule): TypeRewriteRule;
     static seq(paramarg0: TypeRewriteRule, paramarg1: TypeRewriteRule): TypeRewriteRule;
-    static seq(paramarg0: TypeRewriteRule, ...paramarg1: (Object | null)[]): TypeRewriteRule;
+    static seq(paramarg0: TypeRewriteRule, ...paramarg1: TypeRewriteRule[]): TypeRewriteRule;
     static seq(paramarg0: TypeRewriteRule[]): TypeRewriteRule;
     constructor(arg0: Type<B>, arg1: RewriteResult<B, Object>)
     // private hashCode: number;

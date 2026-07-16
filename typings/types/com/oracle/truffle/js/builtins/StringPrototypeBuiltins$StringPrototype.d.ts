@@ -59,7 +59,7 @@ export class StringPrototypeBuiltins$StringPrototype extends Enum<StringPrototyp
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): StringPrototypeBuiltins$StringPrototype;
-    static values(): (Object | null)[];
+    static values(): StringPrototypeBuiltins$StringPrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

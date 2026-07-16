@@ -11,7 +11,6 @@ export class IsArrayNodeGen extends IsArrayNode {
     static createIsFastArray(): IsArrayNode;
     static createIsFastOrTypedArray(): IsArrayNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(kind: IsArrayNode$Kind)
     // private jSFastArrayShape_cache: IsArrayNodeGen$JSFastArrayShapeData;
     // private otherCached_cache: IsArrayNodeGen$OtherCachedData;

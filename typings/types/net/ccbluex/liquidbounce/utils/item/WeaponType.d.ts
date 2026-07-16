@@ -24,7 +24,7 @@ export class WeaponType extends Enum<WeaponType> implements Predicate<ItemStack>
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): WeaponType;
-    static values(): (Object | null)[];
+    static values(): WeaponType[];
     private constructor(tag: string, predicate: (param0: ItemStack) => boolean)
     // private predicate: (param0: ItemStack) => boolean;
     readonly tag: string;

@@ -7,7 +7,6 @@ export class ToTemporalTimeZoneIdentifierNodeGen extends ToTemporalTimeZoneIdent
     static create(): ToTemporalTimeZoneIdentifierNode;
     static getUncached(): ToTemporalTimeZoneIdentifierNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private isObjectNode_: IsObjectNode;
     // private state_0_: number;

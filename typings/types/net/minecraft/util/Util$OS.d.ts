@@ -12,7 +12,7 @@ export class Util$OS extends Enum<Util$OS> {
     static WINDOWS: Util$OS;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Util$OS;
-    static values(): (Object | null)[];
+    static values(): Util$OS[];
     private constructor(telemetryName: string)
     // private telemetryName: string;
     getOpenUriArguments(uri: URI): string[];

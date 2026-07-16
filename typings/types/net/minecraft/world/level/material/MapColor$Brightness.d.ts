@@ -9,7 +9,7 @@ export class MapColor$Brightness extends Enum<MapColor$Brightness> {
     static byId(paramid: number): MapColor$Brightness;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): MapColor$Brightness;
-    static values(): (Object | null)[];
+    static values(): MapColor$Brightness[];
     private constructor(id: number, modifier: number)
     id: number;
     modifier: number;

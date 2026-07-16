@@ -15,7 +15,7 @@ export class TextCodecs_v26_1$ComponentType extends Enum<TextCodecs_v26_1$Compon
     static forComponent(paramarg0: TextComponent): TextCodecs_v26_1$ComponentType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TextCodecs_v26_1$ComponentType;
-    static values(): (Object | null)[];
+    static values(): TextCodecs_v26_1$ComponentType[];
     private constructor(arg2: string, arg3: MapCodec<TextComponent>)
     readonly codec: MapCodec<TextComponent>;
     getCodec(): MapCodec<TextComponent>;

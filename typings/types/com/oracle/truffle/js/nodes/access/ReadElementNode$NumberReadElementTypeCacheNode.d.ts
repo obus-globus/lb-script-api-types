@@ -6,7 +6,6 @@ import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ReadElementNode$NumberReadElementTypeCacheNode extends ReadElementNode$ToPropertyKeyCachedReadElementTypeCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(stringClass: Class<Object>)
     // private numberClass: Class<Object>;
     doNumber(target: Object, index: Object, receiver: Object, defaultValue: Object, root: ReadElementNode, indexToPropertyKeyNode: JSToPropertyKeyNode): Object;

@@ -25,28 +25,21 @@ export class VkSemaphoreWaitInfoKHR extends VkSemaphoreWaitInfo {
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkSemaphoreWaitInfoKHR;
     static calloc(paramarg0: MemoryStack): VkSemaphoreWaitInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkSemaphoreWaitInfo;
     static create(paramarg0: number): VkSemaphoreWaitInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkSemaphoreWaitInfoKHR;
     static create(paramarg0: number): VkSemaphoreWaitInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkSemaphoreWaitInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkSemaphoreWaitInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkSemaphoreWaitInfo;
     static malloc(paramarg0: MemoryStack): VkSemaphoreWaitInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkSemaphoreWaitInfoKHR;
     static malloc(paramarg0: MemoryStack): VkSemaphoreWaitInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nflags(paramarg0: number): number;
     static nflags(paramarg0: number, paramarg1: number): void;
     static npNext(paramarg0: number): number;
@@ -59,7 +52,6 @@ export class VkSemaphoreWaitInfoKHR extends VkSemaphoreWaitInfo {
     static nsType(paramarg0: number, paramarg1: number): void;
     static nsemaphoreCount(paramarg0: number): number;
     static nsemaphoreCount(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

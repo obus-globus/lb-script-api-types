@@ -4,7 +4,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class FileDescriptor extends Object {
     static from(paramarg0: File): FileDescriptor;
     static from(paramarg0: string): FileDescriptor;
-    static pipe(): (Object | null)[];
+    static pipe(): FileDescriptor[];
     constructor(arg0: number)
     // private fd: number;
     // private state: number;

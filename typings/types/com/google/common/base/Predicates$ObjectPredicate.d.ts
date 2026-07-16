@@ -9,9 +9,9 @@ export class Predicates$ObjectPredicate extends Enum<Predicates$ObjectPredicate>
     static NOT_NULL: Predicates$ObjectPredicate;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Predicates$ObjectPredicate;
-    static values(): (Object | null)[];
+    static values(): Predicates$ObjectPredicate[];
     constructor(arg2: any)
     test(input: Object): boolean;
-    withNarrowedType<T extends unknown>(): (param0: Object) => boolean;
+    withNarrowedType<T extends unknown>(): (param0: T) => boolean;
     name(): "ALWAYS_TRUE" | "ALWAYS_FALSE" | "IS_NULL" | "NOT_NULL";
 }

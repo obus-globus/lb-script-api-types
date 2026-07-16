@@ -8,7 +8,7 @@ export class ShulkerBoxBlockEntity$AnimationStatus extends Enum<ShulkerBoxBlockE
     static OPENING: ShulkerBoxBlockEntity$AnimationStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ShulkerBoxBlockEntity$AnimationStatus;
-    static values(): (Object | null)[];
+    static values(): ShulkerBoxBlockEntity$AnimationStatus[];
     private constructor()
     name(): "CLOSED" | "OPENING" | "OPENED" | "CLOSING";
 }

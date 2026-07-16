@@ -8,7 +8,7 @@ export class TruffleJSONParser$Mode extends Enum<TruffleJSONParser$Mode> {
     static WithoutReviver: TruffleJSONParser$Mode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TruffleJSONParser$Mode;
-    static values(): (Object | null)[];
+    static values(): TruffleJSONParser$Mode[];
     private constructor()
     name(): "RawJSON" | "WithoutReviver" | "WithReviver" | "WithReviverAndSource";
 }

@@ -5,8 +5,8 @@ import type { LogEventPatternConverter } from '../../../../../../org/apache/logg
 import type { MapMessage$MapFormat } from '../../../../../../org/apache/logging/log4j/message/MapMessage$MapFormat.d.ts'
 export class MapPatternConverter extends LogEventPatternConverter {
     static CATEGORY: string;
-    static newInstance(paramoptions: (Object | null)[]): MapPatternConverter;
-    static newInstance(paramoptions: (Object | null)[], paramformat: MapMessage$MapFormat): MapPatternConverter;
+    static newInstance(paramoptions: string[]): MapPatternConverter;
+    static newInstance(paramoptions: string[], paramformat: MapMessage$MapFormat): MapPatternConverter;
     private constructor(options: string[], ...format: string[])
     // private format: string[];
     // private key: string;

@@ -13,7 +13,7 @@ export class ModuleAutoAccount$MessageSource extends Enum<ModuleAutoAccount$Mess
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleAutoAccount$MessageSource;
-    static values(): (Object | null)[];
+    static values(): ModuleAutoAccount$MessageSource[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "CHAT" | "TITLE" | "SUBTITLE";

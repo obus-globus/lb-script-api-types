@@ -7,7 +7,7 @@ export class EmbeddedChannel$State extends Enum<EmbeddedChannel$State> {
     static OPEN: EmbeddedChannel$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): EmbeddedChannel$State;
-    static values(): (Object | null)[];
+    static values(): EmbeddedChannel$State[];
     private constructor()
     name(): "OPEN" | "ACTIVE" | "CLOSED";
 }

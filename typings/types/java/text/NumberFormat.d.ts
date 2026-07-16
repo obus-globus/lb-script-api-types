@@ -14,7 +14,7 @@ import type { Number } from '../../java/lang/Number.d.ts'
 export abstract class NumberFormat extends Format {
     static FRACTION_FIELD: number;
     static INTEGER_FIELD: number;
-    static getAvailableLocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
     static getCompactNumberInstance(): NumberFormat;
     static getCompactNumberInstance(paramarg0: Locale, paramarg1: NumberFormat$Style): NumberFormat;
     static getCurrencyInstance(): NumberFormat;

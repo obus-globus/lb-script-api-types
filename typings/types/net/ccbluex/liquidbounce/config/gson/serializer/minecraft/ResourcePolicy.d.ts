@@ -11,7 +11,7 @@ export class ResourcePolicy extends Enum<ResourcePolicy> {
     static getEntries(): ResourcePolicy[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ResourcePolicy;
-    static values(): (Object | null)[];
+    static values(): ResourcePolicy[];
     private constructor(policyName: string)
     readonly policyName: string;
     toMinecraftPolicy(): ServerData$ServerPackStatus;

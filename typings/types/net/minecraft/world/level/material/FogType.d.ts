@@ -9,7 +9,7 @@ export class FogType extends Enum<FogType> {
     static WATER: FogType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): FogType;
-    static values(): (Object | null)[];
+    static values(): FogType[];
     private constructor()
     name(): "LAVA" | "WATER" | "POWDER_SNOW" | "ATMOSPHERIC" | "NONE";
 }

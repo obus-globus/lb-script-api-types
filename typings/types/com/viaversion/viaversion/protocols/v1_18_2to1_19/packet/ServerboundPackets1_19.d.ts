@@ -57,7 +57,7 @@ export class ServerboundPackets1_19 extends Enum<ServerboundPackets1_19> impleme
     static USE_ITEM_ON: ServerboundPackets1_19;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ServerboundPackets1_19;
-    static values(): (Object | null)[];
+    static values(): ServerboundPackets1_19[];
     private constructor()
     direction(): Direction;
     getId(): number;

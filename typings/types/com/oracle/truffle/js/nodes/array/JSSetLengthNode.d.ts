@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSSetLengthNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext, paramstrict: boolean): JSSetLengthNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, isStrict: boolean)
     // private context: JSContext;
     // private isStrict: boolean;

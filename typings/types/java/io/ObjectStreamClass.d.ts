@@ -12,7 +12,7 @@ import type { Constructor } from '../../java/lang/reflect/Constructor.d.ts'
 import type { Method } from '../../java/lang/reflect/Method.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export class ObjectStreamClass extends Object implements Serializable {
-    static NO_FIELDS: (Object | null)[];
+    static NO_FIELDS: ObjectStreamField[];
     static lookup(paramarg0: Class<Object>): ObjectStreamClass;
     static lookupAny(paramarg0: Class<Object>): ObjectStreamClass;
     constructor()

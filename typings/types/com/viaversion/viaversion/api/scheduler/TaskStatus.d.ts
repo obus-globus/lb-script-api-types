@@ -7,7 +7,7 @@ export class TaskStatus extends Enum<TaskStatus> {
     static STOPPED: TaskStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TaskStatus;
-    static values(): (Object | null)[];
+    static values(): TaskStatus[];
     private constructor()
     name(): "SCHEDULED" | "RUNNING" | "STOPPED";
 }

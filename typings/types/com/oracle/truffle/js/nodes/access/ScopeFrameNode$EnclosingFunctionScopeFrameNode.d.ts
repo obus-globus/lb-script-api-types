@@ -15,7 +15,6 @@ export class ScopeFrameNode$EnclosingFunctionScopeFrameNode extends ScopeFrameNo
     static getNonBlockScopeParentFrame(paramframe: Frame): Frame;
     static isBlockScopeFrame(paramframe: Frame): boolean;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(frameLevel: number, scopeLevel: number)
     // private frameLevel: number;
     // private scopeLevel: number;

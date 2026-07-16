@@ -10,7 +10,7 @@ export class ProtoBuf$MemberKind extends Enum<ProtoBuf$MemberKind> implements In
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: number): ProtoBuf$MemberKind;
     static valueOf(paramarg0: string): ProtoBuf$MemberKind;
-    static values(): (Object | null)[];
+    static values(): ProtoBuf$MemberKind[];
     private constructor(arg2: number, arg3: number)
     // private value: number;
     getNumber(): number;

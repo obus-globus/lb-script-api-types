@@ -7,7 +7,7 @@ export class EncodeDefault$Mode extends Enum<EncodeDefault$Mode> {
     static getEntries(): EncodeDefault$Mode[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): EncodeDefault$Mode;
-    static values(): (Object | null)[];
+    static values(): EncodeDefault$Mode[];
     private constructor()
     name(): "ALWAYS" | "NEVER";
 }

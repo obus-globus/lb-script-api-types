@@ -11,8 +11,8 @@ export class _HeadersCommonKt extends Object {
     static commonEquals(paramarg0: Pair<string, string>[], paramarg1: Object): boolean;
     static commonGet(paramarg0: Headers$Builder, paramarg1: string): string;
     static commonHashCode(paramarg0: Pair<string, string>[]): number;
-    static commonHeadersGet(paramarg0: (Object | null)[], paramarg1: string): string;
-    static commonHeadersOf(...paramarg0: (Object | null)[]): Pair<string, string>[];
+    static commonHeadersGet(paramarg0: string[], paramarg1: string): string;
+    static commonHeadersOf(...paramarg0: string[]): Pair<string, string>[];
     static commonIterator(paramarg0: Pair<string, string>[]): Iterator<Pair<string, string>>;
     static commonName(paramarg0: Pair<string, string>[], paramarg1: number): string;
     static commonNewBuilder(paramarg0: Pair<string, string>[]): Headers$Builder;

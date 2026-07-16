@@ -7,7 +7,7 @@ export class ParameterNameRenderingPolicy extends Enum<ParameterNameRenderingPol
     static ONLY_NON_SYNTHESIZED: ParameterNameRenderingPolicy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ParameterNameRenderingPolicy;
-    static values(): (Object | null)[];
+    static values(): ParameterNameRenderingPolicy[];
     private constructor()
     name(): "ALL" | "ONLY_NON_SYNTHESIZED" | "NONE";
 }

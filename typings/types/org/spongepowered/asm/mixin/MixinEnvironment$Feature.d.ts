@@ -9,7 +9,7 @@ export class MixinEnvironment$Feature extends Enum<MixinEnvironment$Feature> {
     static isActive(paramarg0: string): boolean;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MixinEnvironment$Feature;
-    static values(): (Object | null)[];
+    static values(): MixinEnvironment$Feature[];
     constructor(arg2: any)
     readonly enabled: boolean;
     isAvailable(): boolean;

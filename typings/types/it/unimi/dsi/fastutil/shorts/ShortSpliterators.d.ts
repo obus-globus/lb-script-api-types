@@ -24,11 +24,10 @@ export class ShortSpliterators extends Object {
     static asSpliteratorFromSorted(paramarg0: ShortIterator, paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => number): ShortSpliterator;
     static asSpliteratorFromSortedUnknownSize(paramarg0: ShortIterator, paramarg1: number, paramarg2: (param0: number, param1: number) => number): ShortSpliterator;
     static asSpliteratorUnknownSize(paramarg0: ShortIterator, paramarg1: number): ShortSpliterator;
-    static concat(...paramarg0: (Object | null)[]): ShortSpliterator;
-    static concat(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): ShortSpliterator;
+    static concat(...paramarg0: ShortSpliterator[]): ShortSpliterator;
+    static concat(paramarg0: ShortSpliterator[], paramarg1: number, paramarg2: number): ShortSpliterator;
     static fromTo(paramarg0: number, paramarg1: number): ShortSpliterator;
     static narrow(paramarg0: Spliterator$OfInt): ShortSpliterator;
-    static onEachMatching(paramarg0: ShortSpliterator, paramarg1: (param0: number) => boolean, paramarg2: (param0: number) => void): void;
     static onEachMatching(paramarg0: ShortSpliterator, paramarg1: (param0: number) => boolean, paramarg2: (param0: number) => void): void;
     static singleton(paramarg0: number): ShortSpliterator;
     static singleton(paramarg0: number, paramarg1: (param0: number, param1: number) => number): ShortSpliterator;

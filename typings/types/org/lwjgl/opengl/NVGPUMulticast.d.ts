@@ -14,14 +14,11 @@ export class NVGPUMulticast extends Object {
     static glMulticastBarrierNV(): void;
     static glMulticastBlitFramebufferNV(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number, paramarg10: number, paramarg11: number): void;
     static glMulticastBufferSubDataNV(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number[]): void;
-    static glMulticastBufferSubDataNV(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number[]): void;
-    static glMulticastBufferSubDataNV(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number[]): void;
     static glMulticastBufferSubDataNV(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: ByteBuffer): void;
     static glMulticastBufferSubDataNV(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: DoubleBuffer): void;
     static glMulticastBufferSubDataNV(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: FloatBuffer): void;
     static glMulticastBufferSubDataNV(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: IntBuffer): void;
     static glMulticastBufferSubDataNV(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: ShortBuffer): void;
-    static glMulticastBufferSubDataNV(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number[]): void;
     static glMulticastCopyBufferSubDataNV(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number): void;
     static glMulticastCopyImageSubDataNV(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number, paramarg8: number, paramarg9: number, paramarg10: number, paramarg11: number, paramarg12: number, paramarg13: number, paramarg14: number, paramarg15: number, paramarg16: number): void;
     static glMulticastFramebufferSampleLocationsfvNV(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number[]): void;

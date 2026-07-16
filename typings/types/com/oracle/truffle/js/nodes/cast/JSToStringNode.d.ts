@@ -13,7 +13,6 @@ export abstract class JSToStringNode extends JavaScriptBaseNode {
     static createUndefinedToEmpty(): JSToStringNode;
     static getUncached(): JSToStringNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     constructor(undefinedToEmpty: boolean, symbolToString: boolean)
     // private symbolToString: boolean;

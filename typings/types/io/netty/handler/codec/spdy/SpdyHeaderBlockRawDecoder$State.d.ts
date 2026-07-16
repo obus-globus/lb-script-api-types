@@ -13,7 +13,7 @@ export class SpdyHeaderBlockRawDecoder$State extends Enum<SpdyHeaderBlockRawDeco
     static SKIP_VALUE: SpdyHeaderBlockRawDecoder$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SpdyHeaderBlockRawDecoder$State;
-    static values(): (Object | null)[];
+    static values(): SpdyHeaderBlockRawDecoder$State[];
     private constructor()
     name(): "READ_NUM_HEADERS" | "READ_NAME_LENGTH" | "READ_NAME" | "SKIP_NAME" | "READ_VALUE_LENGTH" | "READ_VALUE" | "SKIP_VALUE" | "END_HEADER_BLOCK" | "ERROR";
 }

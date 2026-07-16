@@ -10,7 +10,7 @@ export class ServerData$ServerPackStatus extends Enum<ServerData$ServerPackStatu
     static PROMPT: ServerData$ServerPackStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ServerData$ServerPackStatus;
-    static values(): (Object | null)[];
+    static values(): ServerData$ServerPackStatus[];
     private constructor(name: string)
     getName(): Component;
     name(): "ENABLED" | "DISABLED" | "PROMPT";

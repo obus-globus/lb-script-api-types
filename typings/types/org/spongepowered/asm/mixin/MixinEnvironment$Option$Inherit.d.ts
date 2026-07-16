@@ -8,7 +8,7 @@ export class MixinEnvironment$Option$Inherit extends Enum<MixinEnvironment$Optio
     static INHERIT: MixinEnvironment$Option$Inherit;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MixinEnvironment$Option$Inherit;
-    static values(): (Object | null)[];
+    static values(): MixinEnvironment$Option$Inherit[];
     private constructor()
     name(): "INHERIT" | "ALLOW_OVERRIDE" | "INDEPENDENT" | "ALWAYS_FALSE";
 }

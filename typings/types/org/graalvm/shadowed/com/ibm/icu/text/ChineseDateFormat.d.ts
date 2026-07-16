@@ -1,7 +1,6 @@
 import type { StringBuffer } from '../../../../../../../java/lang/StringBuffer.d.ts'
 import type { FieldPosition } from '../../../../../../../java/text/FieldPosition.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { DateFormat } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/DateFormat.d.ts'
 import type { DateFormat$Field } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/DateFormat$Field.d.ts'
 import type { DateFormatSymbols } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/DateFormatSymbols.d.ts'
@@ -115,8 +114,8 @@ export class ChineseDateFormat extends SimpleDateFormat {
     static YEAR_QUARTER: string;
     static YEAR_WOY_FIELD: number;
     static ZONE_SKELETONS: string[];
-    static getAvailableLocales(): (Object | null)[];
-    static getAvailableULocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
+    static getAvailableULocales(): ULocale[];
     static getDateInstance(): DateFormat;
     static getDateInstance(paramstyle: number): DateFormat;
     static getDateInstance(paramstyle: number, paramaLocale: Locale): DateFormat;
@@ -160,5 +159,5 @@ export class ChineseDateFormat extends SimpleDateFormat {
     subFormat(buf: StringBuffer, ch: string, count: number, beginOffset: number, fieldNum: number, capitalizationContext: DisplayContext, pos: FieldPosition, patternCharToOutput: string, cal: Calendar): void;
     subFormat(ch: string, count: number, beginOffset: number, pos: FieldPosition, fmtData: DateFormatSymbols, cal: Calendar): string;
     subFormat(ch: string, count: number, beginOffset: number, fieldNum: number, capitalizationContext: DisplayContext, pos: FieldPosition, patternCharToOutput: string, cal: Calendar): string;
-    subParse(text: string, start: number, ch: string, count: number, obeyCount: boolean, allowNegative: boolean, ambiguousYear: (Object | null)[], cal: Calendar): number;
+    subParse(text: string, start: number, ch: string, count: number, obeyCount: boolean, allowNegative: boolean, ambiguousYear: boolean[], cal: Calendar): number;
 }

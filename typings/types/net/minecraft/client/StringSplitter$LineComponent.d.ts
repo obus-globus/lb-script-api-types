@@ -9,7 +9,7 @@ export class StringSplitter$LineComponent extends Object implements FormattedTex
     static EMPTY: FormattedText;
     static STOP_ITERATION: Optional<Unit>;
     static composite(paramparts: FormattedText[]): FormattedText;
-    static composite(...paramparts: (Object | null)[]): FormattedText;
+    static composite(...paramparts: FormattedText[]): FormattedText;
     static of(paramtext: string): FormattedText;
     static of(paramtext: string, paramstyle: Style): FormattedText;
     constructor(contents: string, style: Style)

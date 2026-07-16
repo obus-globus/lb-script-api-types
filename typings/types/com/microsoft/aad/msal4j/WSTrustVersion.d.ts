@@ -7,7 +7,7 @@ export class WSTrustVersion extends Enum<WSTrustVersion> {
     static WSTRUST2005: WSTrustVersion;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): WSTrustVersion;
-    static values(): (Object | null)[];
+    static values(): WSTrustVersion[];
     private constructor(arg2: string, arg3: string)
     // private responseSecurityTokenPath: string;
     // private responseTokenTypePath: string;

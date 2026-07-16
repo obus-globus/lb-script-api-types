@@ -24,28 +24,21 @@ export class VkPhysicalDeviceSubgroupSizeControlPropertiesEXT extends VkPhysical
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceSubgroupSizeControlPropertiesEXT;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceSubgroupSizeControlPropertiesEXT;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceSubgroupSizeControlProperties;
     static create(paramarg0: number): VkPhysicalDeviceSubgroupSizeControlProperties;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceSubgroupSizeControlPropertiesEXT;
     static create(paramarg0: number): VkPhysicalDeviceSubgroupSizeControlPropertiesEXT;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceSubgroupSizeControlProperties;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceSubgroupSizeControlPropertiesEXT;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceSubgroupSizeControlProperties;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceSubgroupSizeControlProperties;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceSubgroupSizeControlPropertiesEXT;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceSubgroupSizeControlPropertiesEXT;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nmaxComputeWorkgroupSubgroups(paramarg0: number): number;
     static nmaxSubgroupSize(paramarg0: number): number;
     static nminSubgroupSize(paramarg0: number): number;
@@ -54,7 +47,6 @@ export class VkPhysicalDeviceSubgroupSizeControlPropertiesEXT extends VkPhysical
     static nrequiredSubgroupSizeStages(paramarg0: number): number;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

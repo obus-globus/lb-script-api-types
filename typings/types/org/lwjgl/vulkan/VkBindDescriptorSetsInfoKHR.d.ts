@@ -30,28 +30,21 @@ export class VkBindDescriptorSetsInfoKHR extends VkBindDescriptorSetsInfo {
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkBindDescriptorSetsInfoKHR;
     static calloc(paramarg0: MemoryStack): VkBindDescriptorSetsInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkBindDescriptorSetsInfo;
     static create(paramarg0: number): VkBindDescriptorSetsInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkBindDescriptorSetsInfoKHR;
     static create(paramarg0: number): VkBindDescriptorSetsInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkBindDescriptorSetsInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkBindDescriptorSetsInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkBindDescriptorSetsInfo;
     static malloc(paramarg0: MemoryStack): VkBindDescriptorSetsInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkBindDescriptorSetsInfoKHR;
     static malloc(paramarg0: MemoryStack): VkBindDescriptorSetsInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ndescriptorSetCount(paramarg0: number): number;
     static ndescriptorSetCount(paramarg0: number, paramarg1: number): void;
     static ndynamicOffsetCount(paramarg0: number): number;
@@ -70,7 +63,6 @@ export class VkBindDescriptorSetsInfoKHR extends VkBindDescriptorSetsInfo {
     static nsType(paramarg0: number, paramarg1: number): void;
     static nstageFlags(paramarg0: number): number;
     static nstageFlags(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

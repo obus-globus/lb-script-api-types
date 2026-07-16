@@ -10,7 +10,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class DefineMethodNodeFactory$FunctionCreateNodeGen extends DefineMethodNode$FunctionCreateNode {
     static create(paramcontext: JSContext, paramfunctionData: JSFunctionData, paramblockScopeSlot: number): DefineMethodNode$FunctionCreateNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, functionData: JSFunctionData, blockScopeSlot: number)
     // private cached_cache: DefineMethodNodeFactory$FunctionCreateNodeGen$CachedData;
     // private multiContext_factory_: JSFunctionFactory;

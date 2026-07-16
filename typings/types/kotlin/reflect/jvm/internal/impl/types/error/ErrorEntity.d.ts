@@ -11,7 +11,7 @@ export class ErrorEntity extends Enum<ErrorEntity> {
     static PARENT_OF_ERROR_SCOPE: ErrorEntity;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ErrorEntity;
-    static values(): (Object | null)[];
+    static values(): ErrorEntity[];
     private constructor(arg2: string)
     readonly debugText: string;
     getDebugText(): string;

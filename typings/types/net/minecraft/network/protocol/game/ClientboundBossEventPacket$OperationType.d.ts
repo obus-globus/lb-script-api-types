@@ -13,7 +13,7 @@ export class ClientboundBossEventPacket$OperationType extends Enum<ClientboundBo
     static UPDATE_STYLE: ClientboundBossEventPacket$OperationType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ClientboundBossEventPacket$OperationType;
-    static values(): (Object | null)[];
+    static values(): ClientboundBossEventPacket$OperationType[];
     private constructor(reader: (param0: RegistryFriendlyByteBuf) => ClientboundBossEventPacket$Operation)
     // private reader: (param0: RegistryFriendlyByteBuf) => ClientboundBossEventPacket$Operation;
     name(): "ADD" | "REMOVE" | "UPDATE_PROGRESS" | "UPDATE_NAME" | "UPDATE_STYLE" | "UPDATE_PROPERTIES";

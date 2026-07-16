@@ -13,7 +13,6 @@ import type { JSTemporalPlainYearMonthObject } from '../../../../../../com/oracl
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ToTemporalYearMonthNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(value: Object, options: Object): JSTemporalPlainYearMonthObject;
     toTemporalYearMonth(item: Object, optionsParam: Object, isObjectProfile: InlinedConditionProfile, getOptionsObject: GetOptionsObjectNode, errorBranch: InlinedBranchProfile, isObjectNode: IsObjectNode, getOptionNode: TemporalGetOptionNode, getCalendarWithISODefault: GetTemporalCalendarIdentifierWithISODefaultNode, yearMonthFromFieldsNode: TemporalYearMonthFromFieldsNode, toJavaString: TruffleString$ToJavaStringNode, fromJavaString: TruffleString$FromJavaStringNode): JSTemporalPlainYearMonthObject;

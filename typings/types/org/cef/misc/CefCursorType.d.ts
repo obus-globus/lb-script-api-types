@@ -49,7 +49,7 @@ export class CefCursorType extends Enum<CefCursorType> {
     static fromId(paramarg0: number): CefCursorType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CefCursorType;
-    static values(): (Object | null)[];
+    static values(): CefCursorType[];
     private constructor(arg2: number)
     glfwId: number;
     name(): "POINTER" | "CROSS" | "HAND" | "IBEAM" | "WAIT" | "HELP" | "EAST_RESIZE" | "NORTH_RESIZE" | "NORTH_EAST_RESIZE" | "NORTH_WEST_RESIZE" | "SOUTH_RESIZE" | "SOUTH_EAST_RESIZE" | "SOUTH_WEST_RESIZE" | "WEST_RESIZE" | "NORTH_SOUTH_RESIZE" | "EAST_WEST_RESIZE" | "NORTH_EAST_SOUTH_WEST_RESIZE" | "NORTH_WEST_SOUTH_EAST_RESIZE" | "COLUMN_RESIZE" | "ROW_RESIZE" | "MIDDLE_PANNING" | "EAST_PANNING" | "NORTH_PANNING" | "NORTH_EAST_PANNING" | "NORTH_WEST_PANNING" | "SOUTH_PANNING" | "SOUTH_EAST_PANNING" | "SOUTH_WEST_PANNING" | "WEST_PANNING" | "MOVE" | "VERTICAL_IBEAM" | "CELL" | "CONTEXT_MENU" | "ALIAS" | "PROGRESS" | "NO_DROP" | "COPY" | "NONE" | "NOT_ALLOWED" | "ZOOM_IN" | "ZOOM_OUT" | "GRAB" | "GRABBING" | "CUSTOM";

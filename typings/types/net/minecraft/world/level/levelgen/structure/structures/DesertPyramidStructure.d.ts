@@ -3,7 +3,6 @@ import type { MapCodec } from '../../../../../../../com/mojang/serialization/Map
 import type { RecordCodecBuilder } from '../../../../../../../com/mojang/serialization/codecs/RecordCodecBuilder.d.ts'
 import type { RecordCodecBuilder$Instance } from '../../../../../../../com/mojang/serialization/codecs/RecordCodecBuilder$Instance.d.ts'
 import type { Function } from '../../../../../../../java/util/function/Function.d.ts'
-import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts'
 import type { RandomSource } from '../../../../../../../net/minecraft/util/RandomSource.d.ts'
 import type { ChunkPos } from '../../../../../../../net/minecraft/world/level/ChunkPos.d.ts'
 import type { StructureManager } from '../../../../../../../net/minecraft/world/level/StructureManager.d.ts'
@@ -17,7 +16,6 @@ import type { Structure$StructureSettings } from '../../../../../../../net/minec
 import type { StructureType } from '../../../../../../../net/minecraft/world/level/levelgen/structure/StructureType.d.ts'
 import type { PiecesContainer } from '../../../../../../../net/minecraft/world/level/levelgen/structure/pieces/PiecesContainer.d.ts'
 export class DesertPyramidStructure extends SinglePieceStructure {
-    static CODEC: Codec<Holder<Structure>>;
     static CODEC: MapCodec<DesertPyramidStructure>;
     static DIRECT_CODEC: Codec<Structure>;
     static getMeanFirstOccupiedHeight(paramcontext: Structure$GenerationContext, paramminX: number, paramsizeX: number, paramminZ: number, paramsizeZ: number): number;

@@ -20,7 +20,7 @@ export abstract class CompletableFuture$BiCompletion<T extends unknown, U extend
     static inForkJoinPool(): boolean;
     static invokeAll(paramarg0: (Object | null)[]): (Object | null)[];
     static invokeAll(paramarg0: ForkJoinTask<Object>, paramarg1: ForkJoinTask<Object>): void;
-    static invokeAll(paramarg0: Object | null): void;
+    static invokeAll(...paramarg0: ForkJoinTask<Object>[]): void;
     constructor(arg0: Executor, arg1: CompletableFuture<V>, arg2: CompletableFuture<T>, arg3: CompletableFuture<U>)
     // private snd: CompletableFuture<U>;
 }

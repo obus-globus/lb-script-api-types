@@ -22,7 +22,7 @@ export class MapPrototypeBuiltins$MapPrototype extends Enum<MapPrototypeBuiltins
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): MapPrototypeBuiltins$MapPrototype;
-    static values(): (Object | null)[];
+    static values(): MapPrototypeBuiltins$MapPrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

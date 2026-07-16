@@ -32,7 +32,7 @@ export class DebugBuiltins$Debug extends Enum<DebugBuiltins$Debug> implements Bu
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): DebugBuiltins$Debug;
-    static values(): (Object | null)[];
+    static values(): DebugBuiltins$Debug[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

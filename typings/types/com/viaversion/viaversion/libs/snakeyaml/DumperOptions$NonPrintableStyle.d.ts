@@ -6,7 +6,7 @@ export class DumperOptions$NonPrintableStyle extends Enum<DumperOptions$NonPrint
     static ESCAPE: DumperOptions$NonPrintableStyle;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DumperOptions$NonPrintableStyle;
-    static values(): (Object | null)[];
+    static values(): DumperOptions$NonPrintableStyle[];
     private constructor()
     name(): "BINARY" | "ESCAPE";
 }

@@ -8,7 +8,7 @@ export class PersonNameFormatter$DisplayOrder extends Enum<PersonNameFormatter$D
     static SORTING: PersonNameFormatter$DisplayOrder;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PersonNameFormatter$DisplayOrder;
-    static values(): (Object | null)[];
+    static values(): PersonNameFormatter$DisplayOrder[];
     private constructor()
     name(): "DEFAULT" | "SORTING" | "FORCE_GIVEN_FIRST" | "FORCE_SURNAME_FIRST";
 }

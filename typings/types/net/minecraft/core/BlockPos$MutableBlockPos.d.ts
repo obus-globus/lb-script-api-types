@@ -21,14 +21,11 @@ import type { AABB } from '../../../net/minecraft/world/phys/AABB.d.ts'
 import type { Vec3 } from '../../../net/minecraft/world/phys/Vec3.d.ts'
 export class BlockPos$MutableBlockPos extends BlockPos {
     static CODEC: Codec<BlockPos>;
-    static CODEC: Codec<Vec3i>;
     static MAX_HORIZONTAL_COORDINATE: number;
     static PACKED_HORIZONTAL_LENGTH: number;
     static PACKED_Y_LENGTH: number;
     static STREAM_CODEC: StreamCodec<ByteBuf, BlockPos>;
-    static STREAM_CODEC: StreamCodec<ByteBuf, Vec3i>;
     static ZERO: BlockPos;
-    static ZERO: Vec3i;
     static asLong(paramx: number, paramy: number, paramz: number): number;
     static betweenClosed(paramminX: number, paramminY: number, paramminZ: number, parammaxX: number, parammaxY: number, parammaxZ: number): BlockPos[];
     static betweenClosed(parama: BlockPos, paramb: BlockPos): BlockPos[];

@@ -10,7 +10,7 @@ export class FabricCreativeGuiComponents$Type extends Enum<FabricCreativeGuiComp
     static PREVIOUS: FabricCreativeGuiComponents$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FabricCreativeGuiComponents$Type;
-    static values(): (Object | null)[];
+    static values(): FabricCreativeGuiComponents$Type[];
     private constructor(arg2: Component, arg3: (param0: CreativeModeInventoryScreen) => void, arg4: (param0: CreativeModeInventoryScreen) => boolean)
     // private clickConsumer: (param0: CreativeModeInventoryScreen) => void;
     // private component: Component;

@@ -12,9 +12,9 @@ import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStac
  */
 export class VirtualItemSlot extends Object implements ItemSlot {
     static Companion: ItemSlot$Companion;
-    static PREFER_FEWER_ITEM: (param0: Object) => boolean;
-    static PREFER_MORE_ITEM: (param0: Object) => boolean;
-    static PREFER_NEARBY: (param0: Object) => boolean;
+    static PREFER_FEWER_ITEM: (param0: Object, param1: Object) => number;
+    static PREFER_MORE_ITEM: (param0: Object, param1: Object) => number;
+    static PREFER_NEARBY: (param0: ItemSlot, param1: ItemSlot) => number;
     constructor(itemStack: ItemStack, slotType: ItemSlot$Type, id: number)
     readonly id: number;
     readonly itemStack: ItemStack;

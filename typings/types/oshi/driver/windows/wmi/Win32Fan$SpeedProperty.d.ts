@@ -5,7 +5,7 @@ export class Win32Fan$SpeedProperty extends Enum<Win32Fan$SpeedProperty> {
     static DESIREDSPEED: Win32Fan$SpeedProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Win32Fan$SpeedProperty;
-    static values(): (Object | null)[];
+    static values(): Win32Fan$SpeedProperty[];
     private constructor()
     name(): "DESIREDSPEED";
 }

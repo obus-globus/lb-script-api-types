@@ -56,7 +56,7 @@ export class LambdaForm$Kind extends Enum<LambdaForm$Kind> {
     static VOLATILE_FIELD_ACCESS_Z: LambdaForm$Kind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LambdaForm$Kind;
-    static values(): (Object | null)[];
+    static values(): LambdaForm$Kind[];
     private constructor(arg2: string)
     private constructor(arg2: string, arg3: string)
     // private defaultLambdaName: string;

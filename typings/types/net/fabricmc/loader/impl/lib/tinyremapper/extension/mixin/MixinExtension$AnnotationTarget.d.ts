@@ -6,7 +6,7 @@ export class MixinExtension$AnnotationTarget extends Enum<MixinExtension$Annotat
     static SOFT: MixinExtension$AnnotationTarget;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MixinExtension$AnnotationTarget;
-    static values(): (Object | null)[];
+    static values(): MixinExtension$AnnotationTarget[];
     private constructor()
     name(): "SOFT" | "HARD";
 }

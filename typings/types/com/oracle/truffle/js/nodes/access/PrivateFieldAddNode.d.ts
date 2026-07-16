@@ -7,7 +7,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class PrivateFieldAddNode extends JavaScriptBaseNode {
     static create(): PrivateFieldAddNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doFallback(target: Object, key: Object, value: Object): void;
     doFieldAdd(target: JSObject, key: HiddenKey, value: Object, access: DynamicObjectLibrary): void;

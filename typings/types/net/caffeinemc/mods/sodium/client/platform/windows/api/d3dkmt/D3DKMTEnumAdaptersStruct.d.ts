@@ -12,7 +12,6 @@ export class D3DKMTEnumAdaptersStruct extends Struct<D3DKMTEnumAdaptersStruct> {
     static POINTER_SIZE: number;
     static calloc(paramarg0: MemoryStack): D3DKMTEnumAdaptersStruct;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     private constructor(arg0: number, arg1: ByteBuffer)
     create(arg0: number, arg1: ByteBuffer): D3DKMTEnumAdaptersStruct;
     getAdapters(): (Object | null)[];

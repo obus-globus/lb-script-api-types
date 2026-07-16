@@ -8,7 +8,7 @@ export class Initialiser$InjectionMode extends Enum<Initialiser$InjectionMode> {
     static ofEnvironment(paramarg0: MixinEnvironment): Initialiser$InjectionMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Initialiser$InjectionMode;
-    static values(): (Object | null)[];
+    static values(): Initialiser$InjectionMode[];
     private constructor()
     name(): "DEFAULT" | "SAFE";
 }

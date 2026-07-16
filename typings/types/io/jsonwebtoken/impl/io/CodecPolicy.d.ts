@@ -6,7 +6,7 @@ export class CodecPolicy extends Enum<CodecPolicy> {
     static STRICT: CodecPolicy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CodecPolicy;
-    static values(): (Object | null)[];
+    static values(): CodecPolicy[];
     private constructor()
     name(): "STRICT" | "LENIENT";
 }

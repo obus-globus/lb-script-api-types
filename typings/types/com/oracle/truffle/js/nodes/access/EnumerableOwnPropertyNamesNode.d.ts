@@ -20,7 +20,6 @@ export abstract class EnumerableOwnPropertyNamesNode extends JavaScriptBaseNode 
     static createKeysValues(paramcontext: JSContext): EnumerableOwnPropertyNamesNode;
     static createValues(paramcontext: JSContext): EnumerableOwnPropertyNamesNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, keys: boolean, values: boolean)
     // private context: JSContext;
     // private getOwnPropertyNode: JSGetOwnPropertyNode;

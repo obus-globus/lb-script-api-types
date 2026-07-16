@@ -6,7 +6,7 @@ export class CaseLabelStatement$CaseLabelType extends Enum<CaseLabelStatement$Ca
     static DEFAULT: CaseLabelStatement$CaseLabelType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CaseLabelStatement$CaseLabelType;
-    static values(): (Object | null)[];
+    static values(): CaseLabelStatement$CaseLabelType[];
     private constructor()
     name(): "CASE" | "DEFAULT";
 }

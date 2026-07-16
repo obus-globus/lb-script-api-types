@@ -24,7 +24,6 @@ export class AsyncIteratorPrototypeBuiltins$AsyncIteratorAwaitNode<T extends Asy
     static createGen(paramcontext: JSContext, paramkey: JSContext$BuiltinFunctionKey, paramcreate: (param0: JSContext) => JSFunctionData, paramcloseOnAbrupt: boolean): AsyncIteratorPrototypeBuiltins$AsyncIteratorAwaitNode<AsyncIteratorPrototypeBuiltins$AsyncIteratorAwaitNode$AsyncIteratorArgs>;
     static createGeneratorYield(paramcontext: JSContext): AsyncIteratorPrototypeBuiltins$AsyncIteratorAwaitNode<AsyncIteratorPrototypeBuiltins$AsyncIteratorAwaitNode$AsyncIteratorArgs>;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, thenKey: JSContext$BuiltinFunctionKey, thenCreate: (param0: JSContext) => JSFunctionData, catchKey: JSContext$BuiltinFunctionKey, catchCreate: (param0: JSContext) => JSFunctionData)
     // private callNode: JSFunctionCallNode;
     // private catchCreate: (param0: JSContext) => JSFunctionData;

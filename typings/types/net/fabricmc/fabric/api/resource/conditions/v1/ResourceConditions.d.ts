@@ -3,23 +3,25 @@ import type { ResourceCondition } from '../../../../../../../net/fabricmc/fabric
 import type { ResourceConditionType } from '../../../../../../../net/fabricmc/fabric/api/resource/conditions/v1/ResourceConditionType.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { ResourceKey } from '../../../../../../../net/minecraft/resources/ResourceKey.d.ts'
+import type { TagKey } from '../../../../../../../net/minecraft/tags/TagKey.d.ts'
+import type { FeatureFlag } from '../../../../../../../net/minecraft/world/flag/FeatureFlag.d.ts'
 export class ResourceConditions extends Object {
     static CONDITIONS_KEY: string;
     static OVERLAYS_KEY: string;
-    static allModsLoaded(...paramarg0: (Object | null)[]): ResourceCondition;
+    static allModsLoaded(...paramarg0: string[]): ResourceCondition;
     static alwaysFalse(): ResourceCondition;
     static alwaysTrue(): ResourceCondition;
-    static and(...paramarg0: (Object | null)[]): ResourceCondition;
-    static anyModsLoaded(...paramarg0: (Object | null)[]): ResourceCondition;
-    static featuresEnabled(...paramarg0: (Object | null)[]): ResourceCondition;
-    static featuresEnabled(...paramarg0: (Object | null)[]): ResourceCondition;
+    static and(...paramarg0: ResourceCondition[]): ResourceCondition;
+    static anyModsLoaded(...paramarg0: string[]): ResourceCondition;
+    static featuresEnabled(...paramarg0: Identifier[]): ResourceCondition;
+    static featuresEnabled(...paramarg0: FeatureFlag[]): ResourceCondition;
     static getConditionType(paramarg0: Identifier): ResourceConditionType<any>;
     static not(paramarg0: ResourceCondition): ResourceCondition;
-    static or(...paramarg0: (Object | null)[]): ResourceCondition;
+    static or(...paramarg0: ResourceCondition[]): ResourceCondition;
     static register(paramarg0: ResourceConditionType<any>): void;
-    static registryContains(paramarg0: ResourceKey<(Object | null)[]>, ...paramarg1: (Object | null)[]): ResourceCondition;
-    static registryContains(paramarg0: Object | null): ResourceCondition;
-    static tagsPopulated(paramarg0: ResourceKey<(Object | null)[]>, paramarg1: Object | null): ResourceCondition;
-    static tagsPopulated(paramarg0: Object | null): ResourceCondition;
+    static registryContains(paramarg0: ResourceKey<(Object | null)[]>, ...paramarg1: Identifier[]): ResourceCondition;
+    static registryContains(...paramarg0: ResourceKey<Object>[]): ResourceCondition;
+    static tagsPopulated(paramarg0: ResourceKey<(Object | null)[]>, ...paramarg1: TagKey<Object>[]): ResourceCondition;
+    static tagsPopulated(...paramarg0: TagKey<Object>[]): ResourceCondition;
     private constructor()
 }

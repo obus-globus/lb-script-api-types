@@ -21,35 +21,27 @@ export class VkDeviceQueueGlobalPriorityCreateInfoKHR extends VkDeviceQueueGloba
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkDeviceQueueGlobalPriorityCreateInfoKHR;
     static calloc(paramarg0: MemoryStack): VkDeviceQueueGlobalPriorityCreateInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkDeviceQueueGlobalPriorityCreateInfo;
     static create(paramarg0: number): VkDeviceQueueGlobalPriorityCreateInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkDeviceQueueGlobalPriorityCreateInfoKHR;
     static create(paramarg0: number): VkDeviceQueueGlobalPriorityCreateInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkDeviceQueueGlobalPriorityCreateInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkDeviceQueueGlobalPriorityCreateInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkDeviceQueueGlobalPriorityCreateInfo;
     static malloc(paramarg0: MemoryStack): VkDeviceQueueGlobalPriorityCreateInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkDeviceQueueGlobalPriorityCreateInfoKHR;
     static malloc(paramarg0: MemoryStack): VkDeviceQueueGlobalPriorityCreateInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nglobalPriority(paramarg0: number): number;
     static nglobalPriority(paramarg0: number, paramarg1: number): void;
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

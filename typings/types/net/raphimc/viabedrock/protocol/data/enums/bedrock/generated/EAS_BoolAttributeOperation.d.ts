@@ -16,7 +16,7 @@ export class EAS_BoolAttributeOperation extends Enum<EAS_BoolAttributeOperation>
     static getByValue(paramarg0: number, paramarg1: EAS_BoolAttributeOperation): EAS_BoolAttributeOperation;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): EAS_BoolAttributeOperation;
-    static values(): (Object | null)[];
+    static values(): EAS_BoolAttributeOperation[];
     private constructor(arg2: number)
     private constructor(arg2: EAS_BoolAttributeOperation)
     readonly value: number;

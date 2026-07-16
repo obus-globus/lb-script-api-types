@@ -2,6 +2,5 @@ import type { TruffleToLibGraal$Id } from '../../../../../../com/oracle/truffle/
 import type { Annotation } from '../../../../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export interface TruffleToLibGraal extends Annotation, Object{
-    constructor(value: TruffleToLibGraal$Id)
     /*not mapped: */ value(): TruffleToLibGraal$Id;
 }

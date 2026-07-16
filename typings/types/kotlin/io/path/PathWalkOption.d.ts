@@ -9,7 +9,7 @@ export class PathWalkOption extends Enum<PathWalkOption> implements Serializable
     static getEntries(): PathWalkOption[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PathWalkOption;
-    static values(): (Object | null)[];
+    static values(): PathWalkOption[];
     private constructor()
     name(): "INCLUDE_DIRECTORIES" | "BREADTH_FIRST" | "FOLLOW_LINKS";
 }

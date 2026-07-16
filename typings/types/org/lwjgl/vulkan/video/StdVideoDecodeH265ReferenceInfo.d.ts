@@ -36,7 +36,6 @@ export class StdVideoDecodeH265ReferenceInfo extends Struct<StdVideoDecodeH265Re
     static nflags(paramarg0: number): StdVideoDecodeH265ReferenceInfoFlags;
     static nflags(paramarg0: number, paramarg1: StdVideoDecodeH265ReferenceInfoFlags): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     PicOrderCntVal(): number;

@@ -29,28 +29,21 @@ export class VkImageResolve2KHR extends VkImageResolve2 {
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkImageResolve2KHR;
     static calloc(paramarg0: MemoryStack): VkImageResolve2KHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkImageResolve2;
     static create(paramarg0: number): VkImageResolve2;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkImageResolve2KHR;
     static create(paramarg0: number): VkImageResolve2KHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkImageResolve2;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkImageResolve2KHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkImageResolve2;
     static malloc(paramarg0: MemoryStack): VkImageResolve2;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkImageResolve2KHR;
     static malloc(paramarg0: MemoryStack): VkImageResolve2KHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ndstOffset(paramarg0: number): VkOffset3D;
     static ndstOffset(paramarg0: number, paramarg1: VkOffset3D): void;
     static ndstSubresource(paramarg0: number): VkImageSubresourceLayers;
@@ -65,7 +58,6 @@ export class VkImageResolve2KHR extends VkImageResolve2 {
     static nsrcOffset(paramarg0: number, paramarg1: VkOffset3D): void;
     static nsrcSubresource(paramarg0: number): VkImageSubresourceLayers;
     static nsrcSubresource(paramarg0: number, paramarg1: VkImageSubresourceLayers): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

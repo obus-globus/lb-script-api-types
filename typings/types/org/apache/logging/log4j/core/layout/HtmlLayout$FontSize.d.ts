@@ -14,7 +14,7 @@ export class HtmlLayout$FontSize extends Enum<HtmlLayout$FontSize> {
     static getFontSize(paramsize: string): HtmlLayout$FontSize;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): HtmlLayout$FontSize;
-    static values(): (Object | null)[];
+    static values(): HtmlLayout$FontSize[];
     private constructor(size: string)
     // private size: string;
     getFontSize(): string;

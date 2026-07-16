@@ -7,7 +7,7 @@ export class GuiRenderState$TraverseRange extends Enum<GuiRenderState$TraverseRa
     static BEFORE_BLUR: GuiRenderState$TraverseRange;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): GuiRenderState$TraverseRange;
-    static values(): (Object | null)[];
+    static values(): GuiRenderState$TraverseRange[];
     private constructor()
     name(): "ALL" | "BEFORE_BLUR" | "AFTER_BLUR";
 }

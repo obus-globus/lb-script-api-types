@@ -13,7 +13,7 @@ export abstract class AbstractFilter extends AbstractLifeCycle implements Filter
     static DEFAULT_STOP_TIMEOUT: number;
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
     static ELEMENT_TYPE: string;
-    static EMPTY_ARRAY: (Object | null)[];
+    static EMPTY_ARRAY: Filter[];
     constructor()
     constructor(onMatch: Filter$Result, onMismatch: Filter$Result)
     readonly onMatch: Filter$Result;

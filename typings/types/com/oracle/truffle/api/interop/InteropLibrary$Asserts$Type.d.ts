@@ -13,7 +13,7 @@ export class InteropLibrary$Asserts$Type extends Enum<InteropLibrary$Asserts$Typ
     static STRING: InteropLibrary$Asserts$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): InteropLibrary$Asserts$Type;
-    static values(): (Object | null)[];
+    static values(): InteropLibrary$Asserts$Type[];
     private constructor()
     name(): "NULL" | "BOOLEAN" | "DATE_TIME_ZONE" | "DURATION" | "STRING" | "NUMBER" | "POINTER" | "META_OBJECT" | "ITERATOR";
 }

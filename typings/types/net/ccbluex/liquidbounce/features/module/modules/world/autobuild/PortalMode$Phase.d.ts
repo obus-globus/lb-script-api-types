@@ -7,7 +7,7 @@ export class PortalMode$Phase extends Enum<PortalMode$Phase> {
     static getEntries(): PortalMode$Phase[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PortalMode$Phase;
-    static values(): (Object | null)[];
+    static values(): PortalMode$Phase[];
     private constructor()
     name(): "BUILD" | "IGNITE";
 }

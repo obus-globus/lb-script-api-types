@@ -5,7 +5,7 @@ export class TokenKind$Tag extends Enum<TokenKind$Tag> {
     static HAS_VALUE: TokenKind$Tag;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TokenKind$Tag;
-    static values(): (Object | null)[];
+    static values(): TokenKind$Tag[];
     private constructor()
     name(): "HAS_VALUE";
 }

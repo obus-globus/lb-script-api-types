@@ -5,7 +5,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class PropertyCacheNode$CacheNode<T extends PropertyCacheNode$CacheNode<T>> extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(receiverCheck: PropertyCacheNode$ReceiverCheckNode)
     constructor(receiverCheck: PropertyCacheNode$ReceiverCheckNode, specializationFlags: number)
     // private receiverCheck: PropertyCacheNode$ReceiverCheckNode;

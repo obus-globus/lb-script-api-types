@@ -10,7 +10,7 @@ export class GateBehavior$RunningPolicy extends Enum<GateBehavior$RunningPolicy>
     static TRY_ALL: GateBehavior$RunningPolicy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): GateBehavior$RunningPolicy;
-    static values(): (Object | null)[];
+    static values(): GateBehavior$RunningPolicy[];
     private constructor()
     apply<E extends LivingEntity>(behaviors: Stream<BehaviorControl<E>>, level: ServerLevel, body: E, timestamp: number): void;
     name(): "RUN_ONE" | "TRY_ALL";

@@ -15,7 +15,7 @@ export class JSFrameUtil extends Object {
     static castMaterializedFrame(paramframe: Object): MaterializedFrame;
     static findOptionalFrameSlotIndex(paramframeDescriptor: FrameDescriptor, paramidentifier: Object): OptionalInt;
     static findRequiredFrameSlotIndex(paramframeDescriptor: FrameDescriptor, paramidentifier: Object): number;
-    static getArgumentsArray(paramframe: Frame): (Object | null)[];
+    static getArgumentsArray(paramframe: Frame): Object[];
     static getFlags(paramdesc: FrameDescriptor, paramindex: number): number;
     static getFlags(paramframeSlot: JSFrameSlot): number;
     static getFlagsFromInfo(paraminfo: Object): number;

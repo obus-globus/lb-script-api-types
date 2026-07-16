@@ -7,7 +7,7 @@ export class InvertableSetOptionState$Limitation extends Enum<InvertableSetOptio
     static SINGLE: InvertableSetOptionState$Limitation;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): InvertableSetOptionState$Limitation;
-    static values(): (Object | null)[];
+    static values(): InvertableSetOptionState$Limitation[];
     private constructor()
     name(): "NONE" | "SINGLE" | "MULTIPLE";
 }

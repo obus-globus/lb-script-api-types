@@ -8,7 +8,7 @@ export class ServerboundHandshakePackets extends Enum<ServerboundHandshakePacket
     static CLIENT_INTENTION: ServerboundHandshakePackets;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ServerboundHandshakePackets;
-    static values(): (Object | null)[];
+    static values(): ServerboundHandshakePackets[];
     private constructor()
     direction(): Direction;
     getId(): number;

@@ -9,7 +9,7 @@ export class ProcessBuilder$Redirect$Type extends Enum<ProcessBuilder$Redirect$T
     static WRITE: ProcessBuilder$Redirect$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ProcessBuilder$Redirect$Type;
-    static values(): (Object | null)[];
+    static values(): ProcessBuilder$Redirect$Type[];
     private constructor()
     name(): "PIPE" | "INHERIT" | "READ" | "WRITE" | "APPEND";
 }

@@ -11,12 +11,12 @@ import type { CommandLine$Interpreter } from '../../../../../../../org/apache/lo
 import type { CommandLine$Tracer } from '../../../../../../../org/apache/logging/log4j/core/tools/picocli/CommandLine$Tracer.d.ts'
 export class CommandLine extends Object {
     static VERSION: string;
-    static call(paramcallable: Object | null, paramout: PrintStream, ...paramargs: (Object | null)[]): Object | null;
-    static call(paramcallable: Object | null, paramout: PrintStream, paramansi: CommandLine$Help$Ansi, ...paramargs: (Object | null)[]): Object | null;
-    static populateCommand(paramcommand: Object | null, ...paramargs: (Object | null)[]): Object | null;
+    static call(paramcallable: Object | null, paramout: PrintStream, ...paramargs: string[]): Object | null;
+    static call(paramcallable: Object | null, paramout: PrintStream, paramansi: CommandLine$Help$Ansi, ...paramargs: string[]): Object | null;
+    static populateCommand(paramcommand: Object | null, ...paramargs: string[]): Object | null;
     static printHelpIfRequested(paramparsedCommands: CommandLine[], paramout: PrintStream, paramansi: CommandLine$Help$Ansi): boolean;
-    static run(paramrunnable: (() => void) | null, paramout: PrintStream, ...paramargs: (Object | null)[]): void;
-    static run(paramrunnable: (() => void) | null, paramout: PrintStream, paramansi: CommandLine$Help$Ansi, ...paramargs: (Object | null)[]): void;
+    static run(paramrunnable: (() => void) | null, paramout: PrintStream, ...paramargs: string[]): void;
+    static run(paramrunnable: (() => void) | null, paramout: PrintStream, paramansi: CommandLine$Help$Ansi, ...paramargs: string[]): void;
     static usage(paramcommand: Object, paramout: PrintStream): void;
     static usage(paramcommand: Object, paramout: PrintStream, paramansi: CommandLine$Help$Ansi): void;
     static usage(paramcommand: Object, paramout: PrintStream, paramcolorScheme: CommandLine$Help$ColorScheme): void;

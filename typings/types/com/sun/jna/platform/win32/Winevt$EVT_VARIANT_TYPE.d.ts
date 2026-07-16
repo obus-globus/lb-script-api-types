@@ -28,7 +28,7 @@ export class Winevt$EVT_VARIANT_TYPE extends Enum<Winevt$EVT_VARIANT_TYPE> {
     static EvtVarTypeUInt64: Winevt$EVT_VARIANT_TYPE;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Winevt$EVT_VARIANT_TYPE;
-    static values(): (Object | null)[];
+    static values(): Winevt$EVT_VARIANT_TYPE[];
     private constructor(arg2: string)
     readonly field: string;
     getArrField(): string;

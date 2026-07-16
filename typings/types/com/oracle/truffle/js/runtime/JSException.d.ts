@@ -3,6 +3,7 @@ import type { InteropLibrary } from '../../../../../com/oracle/truffle/api/inter
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { SourceSection } from '../../../../../com/oracle/truffle/api/source/SourceSection.d.ts'
 import type { GraalJSException } from '../../../../../com/oracle/truffle/js/runtime/GraalJSException.d.ts'
+import type { GraalJSException$JSStackTraceElement } from '../../../../../com/oracle/truffle/js/runtime/GraalJSException$JSStackTraceElement.d.ts'
 import type { JSErrorType } from '../../../../../com/oracle/truffle/js/runtime/JSErrorType.d.ts'
 import type { JSRealm } from '../../../../../com/oracle/truffle/js/runtime/JSRealm.d.ts'
 import type { JSDynamicObject } from '../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
@@ -21,8 +22,8 @@ export class JSException extends GraalJSException {
     static createCapture(paramtype: JSErrorType, parammessage: string, paramexceptionObj: JSObject, paramrealm: JSRealm): JSException;
     static createCapture(paramtype: JSErrorType, parammessage: string, paramexceptionObj: JSObject, paramrealm: JSRealm, paramstackTraceLimit: number, paramskipFramesUpTo: JSDynamicObject, paramcustomSkip: boolean): JSException;
     static ensureInitialized(): void;
-    static getJSStackTrace(paramoriginatingNode: Node): (Object | null)[];
-    static getJSStackTrace(paramoriginatingNode: Node, paramstackTraceLimit: number): (Object | null)[];
+    static getJSStackTrace(paramoriginatingNode: Node): GraalJSException$JSStackTraceElement[];
+    static getJSStackTrace(paramoriginatingNode: Node, paramstackTraceLimit: number): GraalJSException$JSStackTraceElement[];
     static getStackTraceLimit(paramrealm: JSRealm): number;
     static printJSStackTrace(paramoriginatingNode: Node): void;
     private constructor(type: JSErrorType, message: string, originatingNode: Node, exceptionObj: JSObject, realm: JSRealm, stackTraceLimit: number)

@@ -4,7 +4,6 @@ import type { InputStream } from '../../java/io/InputStream.d.ts'
 import type { ObjectInputStream } from '../../java/io/ObjectInputStream.d.ts'
 import type { ObjectInputStream$PeekInputStream } from '../../java/io/ObjectInputStream$PeekInputStream.d.ts'
 import type { StringBuilder } from '../../java/lang/StringBuilder.d.ts'
-import type { Object } from '../../java/lang/Object.d.ts'
 export class ObjectInputStream$BlockDataInputStream extends InputStream implements DataInput {
     static nullInputStream(): InputStream;
     constructor(null_: ObjectInputStream, arg1: InputStream)
@@ -30,7 +29,7 @@ export class ObjectInputStream$BlockDataInputStream extends InputStream implemen
     read(arg0: number[], arg1: number, arg2: number, arg3: boolean): number;
     // private readBlockHeader(arg0: boolean): number;
     readBoolean(): boolean;
-    readBooleans(arg0: (Object | null)[], arg1: number, arg2: number): void;
+    readBooleans(arg0: boolean[], arg1: number, arg2: number): void;
     readByte(): number;
     readChar(): string;
     readChars(arg0: string[], arg1: number, arg2: number): void;

@@ -29,8 +29,8 @@ export class AccumulatorPathVisitor extends CountingPathVisitor {
     getDirList(): Path[];
     getFileList(): Path[];
     hashCode(): number;
-    relativizeDirectories(arg0: Path, arg1: boolean, arg2: (param0: Object) => boolean): Path[];
-    relativizeFiles(arg0: Path, arg1: boolean, arg2: (param0: Object) => boolean): Path[];
+    relativizeDirectories(arg0: Path, arg1: boolean, arg2: (param0: Path, param1: Path) => number): Path[];
+    relativizeFiles(arg0: Path, arg1: boolean, arg2: (param0: Path, param1: Path) => number): Path[];
     updateDirCounter(arg0: Path, arg1: IOException): void;
     updateFileCounters(arg0: Path, arg1: BasicFileAttributes): void;
 }

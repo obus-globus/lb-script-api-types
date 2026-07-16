@@ -20,7 +20,7 @@ export class TypeKind extends Enum<TypeKind> {
     static fromNewarrayCode(paramarg0: number): TypeKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TypeKind;
-    static values(): (Object | null)[];
+    static values(): TypeKind[];
     private constructor(arg2: number, arg3: number)
     // private newarrayCode: number;
     // private slots: number;

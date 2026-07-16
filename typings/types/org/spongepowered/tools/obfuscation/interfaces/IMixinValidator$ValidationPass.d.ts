@@ -7,7 +7,7 @@ export class IMixinValidator$ValidationPass extends Enum<IMixinValidator$Validat
     static LATE: IMixinValidator$ValidationPass;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): IMixinValidator$ValidationPass;
-    static values(): (Object | null)[];
+    static values(): IMixinValidator$ValidationPass[];
     private constructor()
     name(): "EARLY" | "LATE" | "FINAL";
 }

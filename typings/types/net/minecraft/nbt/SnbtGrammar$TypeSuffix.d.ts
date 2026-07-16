@@ -10,7 +10,7 @@ export class SnbtGrammar$TypeSuffix extends Enum<SnbtGrammar$TypeSuffix> {
     static SHORT: SnbtGrammar$TypeSuffix;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SnbtGrammar$TypeSuffix;
-    static values(): (Object | null)[];
+    static values(): SnbtGrammar$TypeSuffix[];
     private constructor()
     name(): "FLOAT" | "DOUBLE" | "BYTE" | "SHORT" | "INT" | "LONG";
 }

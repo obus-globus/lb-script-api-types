@@ -9,7 +9,7 @@ export class JavaMethodDescriptor$ParameterNamesStatus extends Enum<JavaMethodDe
     static get(paramarg0: boolean, paramarg1: boolean): JavaMethodDescriptor$ParameterNamesStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): JavaMethodDescriptor$ParameterNamesStatus;
-    static values(): (Object | null)[];
+    static values(): JavaMethodDescriptor$ParameterNamesStatus[];
     private constructor(arg2: boolean, arg3: boolean)
     isStable: boolean;
     isSynthesized: boolean;

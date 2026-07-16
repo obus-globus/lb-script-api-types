@@ -13,7 +13,7 @@ export class InteractPacket_Action extends Enum<InteractPacket_Action> {
     static getByValue(paramarg0: number, paramarg1: InteractPacket_Action): InteractPacket_Action;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): InteractPacket_Action;
-    static values(): (Object | null)[];
+    static values(): InteractPacket_Action[];
     private constructor(arg2: number)
     private constructor(arg2: InteractPacket_Action)
     readonly value: number;

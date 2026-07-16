@@ -23,28 +23,21 @@ export class VkSwapchainPresentScalingCreateInfoEXT extends VkSwapchainPresentSc
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkSwapchainPresentScalingCreateInfoKHR;
     static calloc(paramarg0: MemoryStack): VkSwapchainPresentScalingCreateInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkSwapchainPresentScalingCreateInfoEXT;
     static create(paramarg0: number): VkSwapchainPresentScalingCreateInfoEXT;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkSwapchainPresentScalingCreateInfoKHR;
     static create(paramarg0: number): VkSwapchainPresentScalingCreateInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkSwapchainPresentScalingCreateInfoEXT;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkSwapchainPresentScalingCreateInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkSwapchainPresentScalingCreateInfoEXT;
     static malloc(paramarg0: MemoryStack): VkSwapchainPresentScalingCreateInfoEXT;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkSwapchainPresentScalingCreateInfoKHR;
     static malloc(paramarg0: MemoryStack): VkSwapchainPresentScalingCreateInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static npresentGravityX(paramarg0: number): number;
@@ -55,7 +48,6 @@ export class VkSwapchainPresentScalingCreateInfoEXT extends VkSwapchainPresentSc
     static nsType(paramarg0: number, paramarg1: number): void;
     static nscalingBehavior(paramarg0: number): number;
     static nscalingBehavior(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

@@ -11,7 +11,7 @@ export class ListFormatFunctionBuiltins$ListFormatFunction extends Enum<ListForm
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ListFormatFunctionBuiltins$ListFormatFunction;
-    static values(): (Object | null)[];
+    static values(): ListFormatFunctionBuiltins$ListFormatFunction[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

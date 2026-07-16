@@ -10,7 +10,7 @@ export class MultifaceSpreader$SpreadType extends Enum<MultifaceSpreader$SpreadT
     static WRAP_AROUND: MultifaceSpreader$SpreadType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): MultifaceSpreader$SpreadType;
-    static values(): (Object | null)[];
+    static values(): MultifaceSpreader$SpreadType[];
     private constructor()
     getSpreadPos(pos: BlockPos, spreadDirection: Direction, fromFace: Direction): MultifaceSpreader$SpreadPos;
     name(): "SAME_POSITION" | "SAME_PLANE" | "WRAP_AROUND";

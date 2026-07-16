@@ -10,7 +10,7 @@ export class ClipContext$Fluid extends Enum<ClipContext$Fluid> {
     static WATER: ClipContext$Fluid;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ClipContext$Fluid;
-    static values(): (Object | null)[];
+    static values(): ClipContext$Fluid[];
     private constructor(canPick: (param0: FluidState) => boolean)
     // private canPick: (param0: FluidState) => boolean;
     canPick(fluidState: FluidState): boolean;

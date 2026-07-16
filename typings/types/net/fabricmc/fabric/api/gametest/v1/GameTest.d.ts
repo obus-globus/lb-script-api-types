@@ -2,7 +2,6 @@ import type { Annotation } from '../../../../../../java/lang/annotation/Annotati
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Rotation } from '../../../../../../net/minecraft/world/level/block/Rotation.d.ts'
 export interface GameTest extends Annotation, Object{
-    constructor(environment: string, manualOnly: boolean, maxAttempts: number, maxTicks: number, padding: number, required: boolean, requiredSuccesses: number, rotation: Rotation, setupTicks: number, skyAccess: boolean, structure: string)
     /*not mapped: */ environment(): string;
     /*not mapped: */ manualOnly(): boolean;
     /*not mapped: */ maxAttempts(): number;

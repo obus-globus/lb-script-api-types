@@ -10,7 +10,7 @@ export class ViaBedrockConfig$PackCacheMode extends Enum<ViaBedrockConfig$PackCa
     static byName(paramarg0: string): ViaBedrockConfig$PackCacheMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ViaBedrockConfig$PackCacheMode;
-    static values(): (Object | null)[];
+    static values(): ViaBedrockConfig$PackCacheMode[];
     private constructor(arg2: () => ResourcePackProvider)
     // private providerSupplier: () => ResourcePackProvider;
     createProvider(): ResourcePackProvider;

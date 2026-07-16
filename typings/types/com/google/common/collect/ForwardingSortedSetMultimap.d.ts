@@ -8,5 +8,5 @@ export abstract class ForwardingSortedSetMultimap<K extends unknown, V extends u
     get(key: K): V[];
     removeAll(key: Object): V[];
     replaceValues(key: K, values: V[]): V[];
-    valueComparator(): (param0: Object) => boolean;
+    valueComparator(): (param0: V, param1: V) => number;
 }

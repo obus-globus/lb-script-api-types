@@ -10,7 +10,6 @@ export class VersionFixedFileInfoStruct extends Struct<VersionFixedFileInfoStruc
     static POINTER_SIZE: number;
     static from(paramarg0: number): VersionFixedFileInfoStruct;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     private constructor(arg0: number, arg1: ByteBuffer)
     create(arg0: number, arg1: ByteBuffer): VersionFixedFileInfoStruct;
     getFileVersionLeastSignificantBits(): number;

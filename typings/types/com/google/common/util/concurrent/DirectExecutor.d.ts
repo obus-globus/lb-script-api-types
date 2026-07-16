@@ -7,7 +7,7 @@ export class DirectExecutor extends Enum<DirectExecutor> implements Executor {
     static INSTANCE: DirectExecutor;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): DirectExecutor;
-    static values(): (Object | null)[];
+    static values(): DirectExecutor[];
     private constructor()
     execute(command: () => void): void;
     toString(): string;

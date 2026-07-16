@@ -20,7 +20,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class OperatorsBuiltins$ConstructOperatorSetNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): OperatorsBuiltins$ConstructOperatorSetNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private classNameToStringNode: JSToStringNode;
     // private context: JSContext;

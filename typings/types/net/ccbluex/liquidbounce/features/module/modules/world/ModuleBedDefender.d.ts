@@ -1,5 +1,4 @@
 import type { Comparator } from '../../../../../../../java/util/Comparator.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { ModeValueGroup } from '../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { RotationUpdateEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/RotationUpdateEvent.d.ts'
@@ -11,7 +10,7 @@ export class ModuleBedDefender extends ClientModule {
     static INSTANCE: ModuleBedDefender;
     // private allowChests: boolean;
     // private /*not mapped: */ getAllowChests(): boolean;
-    // private blockSlotComparator: (param0: Object) => boolean;
+    // private blockSlotComparator: (param0: HotbarItemSlot, param1: HotbarItemSlot) => number;
     // private isSelfBedMode: ModeValueGroup<IsSelfBedMode>;
     // private maxLayers: number;
     // private /*not mapped: */ getMaxLayers(): number;

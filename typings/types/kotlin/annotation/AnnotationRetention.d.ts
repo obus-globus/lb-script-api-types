@@ -9,7 +9,7 @@ export class AnnotationRetention extends Enum<AnnotationRetention> implements Se
     static getEntries(): AnnotationRetention[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AnnotationRetention;
-    static values(): (Object | null)[];
+    static values(): AnnotationRetention[];
     private constructor()
     name(): "SOURCE" | "BINARY" | "RUNTIME";
 }

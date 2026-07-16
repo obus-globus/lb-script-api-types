@@ -14,7 +14,7 @@ export class Taskbar$Feature extends Enum<Taskbar$Feature> {
     static USER_ATTENTION_WINDOW: Taskbar$Feature;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Taskbar$Feature;
-    static values(): (Object | null)[];
+    static values(): Taskbar$Feature[];
     private constructor()
     name(): "ICON_BADGE_TEXT" | "ICON_BADGE_NUMBER" | "ICON_BADGE_IMAGE_WINDOW" | "ICON_IMAGE" | "MENU" | "PROGRESS_STATE_WINDOW" | "PROGRESS_VALUE" | "PROGRESS_VALUE_WINDOW" | "USER_ATTENTION" | "USER_ATTENTION_WINDOW";
 }

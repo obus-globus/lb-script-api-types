@@ -10,7 +10,7 @@ export class BlockPosOffsets extends Enum<BlockPosOffsets> {
     static getEntries(): BlockPosOffsets[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BlockPosOffsets;
-    static values(): (Object | null)[];
+    static values(): BlockPosOffsets[];
     private constructor(offsets: BlockPos[])
     readonly offsets: BlockPos[];
     containsOffset(x: number, y: number, z: number): boolean;

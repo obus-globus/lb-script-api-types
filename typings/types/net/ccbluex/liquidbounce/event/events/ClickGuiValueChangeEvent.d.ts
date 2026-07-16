@@ -1,3 +1,4 @@
+import type { Gson } from '../../../../../com/google/gson/Gson.d.ts'
 import type { ValueGroup } from '../../../../../net/ccbluex/liquidbounce/config/types/group/ValueGroup.d.ts'
 import type { Event } from '../../../../../net/ccbluex/liquidbounce/event/Event.d.ts'
 import type { WebSocketEvent } from '../../../../../net/ccbluex/liquidbounce/integration/interop/protocol/event/WebSocketEvent.d.ts'
@@ -7,4 +8,6 @@ import type { WebSocketEvent } from '../../../../../net/ccbluex/liquidbounce/int
 export class ClickGuiValueChangeEvent extends Event implements WebSocketEvent {
     constructor(configurable: ValueGroup)
     readonly configurable: ValueGroup;
+    readonly serializeAsync: boolean;
+    readonly serializer: Gson;
 }

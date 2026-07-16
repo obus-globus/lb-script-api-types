@@ -6,8 +6,8 @@ import type { CompoundTag } from '../../../../../../../net/minecraft/nbt/Compoun
 import type { ItemStack } from '../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { Ingredient } from '../../../../../../../net/minecraft/world/item/crafting/Ingredient.d.ts'
 export class DefaultCustomIngredients extends Object {
-    static all(...paramarg0: (Object | null)[]): Ingredient;
-    static any(...paramarg0: (Object | null)[]): Ingredient;
+    static all(...paramarg0: Ingredient[]): Ingredient;
+    static any(...paramarg0: Ingredient[]): Ingredient;
     static components(paramarg0: ItemStack): Ingredient;
     static components(paramarg0: Ingredient, paramarg1: (param0: DataComponentPatch$Builder) => Object | null): Ingredient;
     static components(paramarg0: Ingredient, paramarg1: DataComponentPatch): Ingredient;

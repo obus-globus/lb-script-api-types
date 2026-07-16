@@ -6,7 +6,7 @@ export class NumberFormatter$RoundingPriority extends Enum<NumberFormatter$Round
     static STRICT: NumberFormatter$RoundingPriority;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): NumberFormatter$RoundingPriority;
-    static values(): (Object | null)[];
+    static values(): NumberFormatter$RoundingPriority[];
     private constructor()
     name(): "RELAXED" | "STRICT";
 }

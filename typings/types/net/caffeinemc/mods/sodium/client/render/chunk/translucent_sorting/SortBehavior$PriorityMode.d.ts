@@ -7,7 +7,7 @@ export class SortBehavior$PriorityMode extends Enum<SortBehavior$PriorityMode> {
     static NONE: SortBehavior$PriorityMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SortBehavior$PriorityMode;
-    static values(): (Object | null)[];
+    static values(): SortBehavior$PriorityMode[];
     private constructor()
     name(): "NONE" | "NEARBY" | "ALL";
 }

@@ -10,7 +10,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class DeclareGlobalFunctionNodeGen extends DeclareGlobalFunctionNode {
     static create(paramvarName: TruffleString, paramconfigurable: boolean): DeclareGlobalFunctionNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(varName: TruffleString, configurable: boolean)
     // private cached_cache_: PropertySetNode;
     // private state_0_: number;

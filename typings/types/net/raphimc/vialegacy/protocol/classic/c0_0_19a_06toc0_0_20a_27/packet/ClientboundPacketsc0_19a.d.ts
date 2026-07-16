@@ -26,7 +26,7 @@ export class ClientboundPacketsc0_19a extends Enum<ClientboundPacketsc0_19a> imp
     static getPacket(paramarg0: number): ClientboundPacketsc0_19a;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClientboundPacketsc0_19a;
-    static values(): (Object | null)[];
+    static values(): ClientboundPacketsc0_19a[];
     private constructor(arg2: number, arg3: (param0: UserConnection, param1: ByteBuf) => void)
     readonly id: number;
     readonly packetReader: (param0: UserConnection, param1: ByteBuf) => void;

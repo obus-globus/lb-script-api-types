@@ -9,7 +9,7 @@ export class CommandLine$Help$Ansi extends Enum<CommandLine$Help$Ansi> {
     static ON: CommandLine$Help$Ansi;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CommandLine$Help$Ansi;
-    static values(): (Object | null)[];
+    static values(): CommandLine$Help$Ansi[];
     private constructor()
     apply(plainText: string, styles: CommandLine$Help$Ansi$IStyle[]): CommandLine$Help$Ansi$Text;
     enabled(): boolean;

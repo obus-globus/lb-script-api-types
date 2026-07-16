@@ -7,7 +7,7 @@ export class Breakpoint$Kind extends Enum<Breakpoint$Kind> {
     static SOURCE_LOCATION: Breakpoint$Kind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Breakpoint$Kind;
-    static values(): (Object | null)[];
+    static values(): Breakpoint$Kind[];
     private constructor()
     name(): "HALT_INSTRUCTION" | "SOURCE_LOCATION" | "EXCEPTION";
 }

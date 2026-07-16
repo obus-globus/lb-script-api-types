@@ -19,7 +19,7 @@ import type { ResourceKey } from '../../../../../../../net/minecraft/resources/R
 import type { Logger } from '../../../../../../../org/slf4j/Logger.d.ts'
 export abstract class FabricCodecDataProvider<T extends unknown> extends Object implements DataProvider {
     static FIXED_ORDER_FIELDS: (param0: string) => number;
-    static KEY_COMPARATOR: (param0: Object) => boolean;
+    static KEY_COMPARATOR: (param0: string, param1: string) => number;
     static LOGGER: Logger;
     static saveAll(paramcache: CachedOutput, paramcodec: Codec<Object>, parampathGetter: (param0: Object | null) => Path, paramcontents: Map<Object | null, Object | null>): CompletableFuture<Object>;
     static saveAll(paramcache: CachedOutput, paramserializer: (param0: Object | null) => JsonElement, parampathGetter: (param0: Object | null) => Path, paramcontents: Map<Object | null, Object | null>): CompletableFuture<Object>;

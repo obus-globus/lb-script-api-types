@@ -5,11 +5,11 @@ export class RubyFlags$Mode extends Enum<RubyFlags$Mode> {
     static Ascii: RubyFlags$Mode;
     static Default: RubyFlags$Mode;
     static Unicode: RubyFlags$Mode;
-    static VALUES: (Object | null)[];
+    static VALUES: RubyFlags$Mode[];
     static fromFlagChar(paramch: number): RubyFlags$Mode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RubyFlags$Mode;
-    static values(): (Object | null)[];
+    static values(): RubyFlags$Mode[];
     private constructor()
     name(): "Ascii" | "Default" | "Unicode";
 }

@@ -1,4 +1,3 @@
-import type { Codec } from '../../../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Record } from '../../../../../../../../java/lang/Record.d.ts'
 import type { BiConsumer } from '../../../../../../../../java/util/function/BiConsumer.d.ts'
@@ -12,7 +11,6 @@ import type { PoolAliasBinding } from '../../../../../../../../net/minecraft/wor
 import type { RandomGroupPoolAlias } from '../../../../../../../../net/minecraft/world/level/levelgen/structure/pools/alias/RandomGroupPoolAlias.d.ts'
 import type { RandomPoolAlias } from '../../../../../../../../net/minecraft/world/level/levelgen/structure/pools/alias/RandomPoolAlias.d.ts'
 export class DirectPoolAlias extends Record implements PoolAliasBinding {
-    static CODEC: Codec<PoolAliasBinding>;
     static CODEC: MapCodec<DirectPoolAlias>;
     static direct(paramid: string, paramtarget: string): DirectPoolAlias;
     static direct(paramalias: ResourceKey<StructureTemplatePool>, paramtarget: ResourceKey<StructureTemplatePool>): DirectPoolAlias;

@@ -7,7 +7,7 @@ export class MessagePatternUtil$MessageContentsNode$Type extends Enum<MessagePat
     static TEXT: MessagePatternUtil$MessageContentsNode$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): MessagePatternUtil$MessageContentsNode$Type;
-    static values(): (Object | null)[];
+    static values(): MessagePatternUtil$MessageContentsNode$Type[];
     private constructor()
     name(): "TEXT" | "ARG" | "REPLACE_NUMBER";
 }

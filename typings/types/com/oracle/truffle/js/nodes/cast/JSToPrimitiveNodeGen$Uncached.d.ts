@@ -8,7 +8,6 @@ export class JSToPrimitiveNodeGen$Uncached extends JSToPrimitiveNode implements 
     static create(): JSToPrimitiveNode;
     static getUncached(): JSToPrimitiveNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     static tryHostObjectToPrimitive(paramobject: Object, paramhint: JSToPrimitiveNode$Hint, paraminterop: InteropLibrary): Object;
     private constructor()
     execute(arg0Value: Object, arg1Value: JSToPrimitiveNode$Hint): Object;

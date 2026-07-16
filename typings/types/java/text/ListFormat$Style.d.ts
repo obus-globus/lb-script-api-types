@@ -7,7 +7,7 @@ export class ListFormat$Style extends Enum<ListFormat$Style> {
     static SHORT: ListFormat$Style;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ListFormat$Style;
-    static values(): (Object | null)[];
+    static values(): ListFormat$Style[];
     private constructor()
     name(): "FULL" | "SHORT" | "NARROW";
 }

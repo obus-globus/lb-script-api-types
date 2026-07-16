@@ -22,7 +22,7 @@ export class PipesResult$STATUS extends Enum<PipesResult$STATUS> {
     static UNSPECIFIED_CRASH: PipesResult$STATUS;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PipesResult$STATUS;
-    static values(): (Object | null)[];
+    static values(): PipesResult$STATUS[];
     private constructor()
     name(): "CLIENT_UNAVAILABLE_WITHIN_MS" | "FETCHER_INITIALIZATION_EXCEPTION" | "FETCH_EXCEPTION" | "EMPTY_OUTPUT" | "PARSE_EXCEPTION_NO_EMIT" | "PARSE_EXCEPTION_EMIT" | "PARSE_SUCCESS" | "PARSE_SUCCESS_WITH_EXCEPTION" | "OOM" | "TIMEOUT" | "UNSPECIFIED_CRASH" | "NO_EMITTER_FOUND" | "EMIT_SUCCESS" | "EMIT_SUCCESS_PARSE_EXCEPTION" | "EMIT_EXCEPTION" | "INTERRUPTED_EXCEPTION" | "NO_FETCHER_FOUND" | "INTERMEDIATE_RESULT";
 }

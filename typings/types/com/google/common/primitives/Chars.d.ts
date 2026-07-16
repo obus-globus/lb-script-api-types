@@ -5,7 +5,7 @@ export class Chars extends Object {
     static asList(...parambackingArray: string[]): string[];
     static checkedCast(paramvalue: number): string;
     static compare(parama: string, paramb: string): number;
-    static concat(...paramarrays: (Object | null)[]): string[];
+    static concat(...paramarrays: string[][]): string[];
     static constrainToRange(paramvalue: string, parammin: string, parammax: string): string;
     static contains(paramarray: string[], paramtarget: string): boolean;
     static ensureCapacity(paramarray: string[], paramminLength: number, parampadding: number): string[];
@@ -16,7 +16,7 @@ export class Chars extends Object {
     static indexOf(paramarray: string[], paramtarget: string[]): number;
     static join(paramseparator: string, ...paramarray: string[]): string;
     static lastIndexOf(paramarray: string[], paramtarget: string): number;
-    static lexicographicalComparator(): (param0: Object) => boolean;
+    static lexicographicalComparator(): (param0: string[], param1: string[]) => number;
     static max(...paramarray: string[]): string;
     static min(...paramarray: string[]): string;
     static reverse(paramarray: string[]): void;

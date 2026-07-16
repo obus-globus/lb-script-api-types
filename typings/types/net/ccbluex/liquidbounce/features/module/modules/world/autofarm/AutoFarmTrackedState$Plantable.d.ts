@@ -18,7 +18,7 @@ export class AutoFarmTrackedState$Plantable extends Enum<AutoFarmTrackedState$Pl
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AutoFarmTrackedState$Plantable;
-    static values(): (Object | null)[];
+    static values(): AutoFarmTrackedState$Plantable[];
     private constructor(tag: string, items: Item[])
     readonly items: Item[];
     readonly tag: string;

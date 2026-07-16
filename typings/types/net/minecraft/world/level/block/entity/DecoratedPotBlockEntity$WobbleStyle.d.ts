@@ -6,7 +6,7 @@ export class DecoratedPotBlockEntity$WobbleStyle extends Enum<DecoratedPotBlockE
     static POSITIVE: DecoratedPotBlockEntity$WobbleStyle;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): DecoratedPotBlockEntity$WobbleStyle;
-    static values(): (Object | null)[];
+    static values(): DecoratedPotBlockEntity$WobbleStyle[];
     private constructor(duration: number)
     duration: number;
     name(): "POSITIVE" | "NEGATIVE";

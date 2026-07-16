@@ -81,10 +81,10 @@ export class Configuration<T extends unknown> extends Object {
     static STACK_SIZE: Configuration<number>;
     static VULKAN_EXPLICIT_INIT: Configuration<boolean>;
     static VULKAN_LIBRARY_NAME: Configuration<string>;
-    static EGL_LIBRARY_NAME_DEFAULTS(): (Object | null)[];
-    static OPENGLES_LIBRARY_NAME_DEFAULTS(): (Object | null)[];
-    static OPENGL_LIBRARY_NAME_DEFAULTS(): (Object | null)[];
-    static OPENGL_OSMESA_LIBRARY_NAME_DEFAULTS(): (Object | null)[];
+    static EGL_LIBRARY_NAME_DEFAULTS(): string[];
+    static OPENGLES_LIBRARY_NAME_DEFAULTS(): string[];
+    static OPENGL_LIBRARY_NAME_DEFAULTS(): string[];
+    static OPENGL_OSMESA_LIBRARY_NAME_DEFAULTS(): string[];
     constructor(arg0: string, arg1: Configuration$StateInit<T>)
     readonly property: string;
     // private state: T;

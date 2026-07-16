@@ -9,7 +9,7 @@ export class Annotations$Type extends Enum<Annotations$Type> {
     static UNKNOWN: Annotations$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Annotations$Type;
-    static values(): (Object | null)[];
+    static values(): Annotations$Type[];
     private constructor()
     name(): "PARAMETER" | "FACTORY" | "PLUGIN" | "CONSTRAINT_OR_VISITOR" | "UNKNOWN";
 }

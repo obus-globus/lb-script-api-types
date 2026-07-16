@@ -6,7 +6,7 @@ export class NumberFormatter$DecimalSeparatorDisplay extends Enum<NumberFormatte
     static AUTO: NumberFormatter$DecimalSeparatorDisplay;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): NumberFormatter$DecimalSeparatorDisplay;
-    static values(): (Object | null)[];
+    static values(): NumberFormatter$DecimalSeparatorDisplay[];
     private constructor()
     name(): "AUTO" | "ALWAYS";
 }

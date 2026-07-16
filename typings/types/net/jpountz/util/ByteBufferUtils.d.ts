@@ -16,7 +16,7 @@ export class ByteBufferUtils extends Enum<ByteBufferUtils> {
     static readShortLE(paramarg0: ByteBuffer, paramarg1: number): number;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ByteBufferUtils;
-    static values(): (Object | null)[];
+    static values(): ByteBufferUtils[];
     static writeByte(paramarg0: ByteBuffer, paramarg1: number, paramarg2: number): void;
     static writeInt(paramarg0: ByteBuffer, paramarg1: number, paramarg2: number): void;
     static writeLong(paramarg0: ByteBuffer, paramarg1: number, paramarg2: number): void;

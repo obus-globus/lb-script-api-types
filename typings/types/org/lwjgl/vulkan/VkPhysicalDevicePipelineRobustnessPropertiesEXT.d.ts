@@ -24,28 +24,21 @@ export class VkPhysicalDevicePipelineRobustnessPropertiesEXT extends VkPhysicalD
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDevicePipelineRobustnessPropertiesEXT;
     static calloc(paramarg0: MemoryStack): VkPhysicalDevicePipelineRobustnessPropertiesEXT;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDevicePipelineRobustnessProperties;
     static create(paramarg0: number): VkPhysicalDevicePipelineRobustnessProperties;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDevicePipelineRobustnessPropertiesEXT;
     static create(paramarg0: number): VkPhysicalDevicePipelineRobustnessPropertiesEXT;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDevicePipelineRobustnessProperties;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDevicePipelineRobustnessPropertiesEXT;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDevicePipelineRobustnessProperties;
     static malloc(paramarg0: MemoryStack): VkPhysicalDevicePipelineRobustnessProperties;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDevicePipelineRobustnessPropertiesEXT;
     static malloc(paramarg0: MemoryStack): VkPhysicalDevicePipelineRobustnessPropertiesEXT;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ndefaultRobustnessImages(paramarg0: number): number;
     static ndefaultRobustnessStorageBuffers(paramarg0: number): number;
     static ndefaultRobustnessUniformBuffers(paramarg0: number): number;
@@ -54,7 +47,6 @@ export class VkPhysicalDevicePipelineRobustnessPropertiesEXT extends VkPhysicalD
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

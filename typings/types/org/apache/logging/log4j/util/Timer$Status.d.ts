@@ -7,7 +7,7 @@ export class Timer$Status extends Enum<Timer$Status> {
     static Stopped: Timer$Status;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Timer$Status;
-    static values(): (Object | null)[];
+    static values(): Timer$Status[];
     private constructor()
     name(): "Started" | "Stopped" | "Paused";
 }

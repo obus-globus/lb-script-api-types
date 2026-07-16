@@ -8,7 +8,6 @@ export abstract class JSToBigIntNode extends JavaScriptBaseNode {
     static create(): JSToBigIntNode;
     static getUncached(): JSToBigIntNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doOther(value: Object, toPrimitiveNode: JSToPrimitiveNode, primitiveToBigInt: JSToBigIntNode$JSPrimitiveToBigIntNode): BigInt;
     execute(value: Object): BigInt;

@@ -8,7 +8,7 @@ export class Environment extends Enum<Environment> {
     static getEnvironmentById(paramarg0: number): Environment;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Environment;
-    static values(): (Object | null)[];
+    static values(): Environment[];
     private constructor(arg2: number)
     // private id: number;
     id(): number;

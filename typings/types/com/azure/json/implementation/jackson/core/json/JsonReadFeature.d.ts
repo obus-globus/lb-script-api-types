@@ -17,7 +17,7 @@ export class JsonReadFeature extends Enum<JsonReadFeature> implements FormatFeat
     static ALLOW_YAML_COMMENTS: JsonReadFeature;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): JsonReadFeature;
-    static values(): (Object | null)[];
+    static values(): JsonReadFeature[];
     private constructor(arg2: boolean, arg3: JsonParser$Feature)
     // private _defaultState: boolean;
     // private _mappedFeature: JsonParser$Feature;

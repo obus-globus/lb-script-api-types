@@ -10,7 +10,7 @@ import type { PathVisitor } from '../../../../../org/apache/commons/io/file/Path
 import type { IOFileFilter } from '../../../../../org/apache/commons/io/filefilter/IOFileFilter.d.ts'
 import type { IOSupplier } from '../../../../../org/apache/commons/io/function/IOSupplier.d.ts'
 export abstract class AbstractFileFilter extends Object implements PathVisitor, IOFileFilter {
-    static EMPTY_STRING_ARRAY: (Object | null)[];
+    static EMPTY_STRING_ARRAY: string[];
     constructor()
     constructor(arg0: FileVisitResult, arg1: FileVisitResult)
     // private onAccept: FileVisitResult;

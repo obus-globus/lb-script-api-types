@@ -32,7 +32,7 @@ export class ExtensionLanguageMapping extends Enum<ExtensionLanguageMapping> {
     static getByLanguage(paramlanguage: string): ExtensionLanguageMapping[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ExtensionLanguageMapping;
-    static values(): (Object | null)[];
+    static values(): ExtensionLanguageMapping[];
     private constructor(extension: string, language: string)
     readonly extension: string;
     readonly language: string;

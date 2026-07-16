@@ -6,7 +6,7 @@ export class LanguageAdapter$MissingSuperclassBehavior extends Enum<LanguageAdap
     static RETURN_NULL: LanguageAdapter$MissingSuperclassBehavior;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LanguageAdapter$MissingSuperclassBehavior;
-    static values(): (Object | null)[];
+    static values(): LanguageAdapter$MissingSuperclassBehavior[];
     private constructor()
     name(): "RETURN_NULL" | "CRASH";
 }

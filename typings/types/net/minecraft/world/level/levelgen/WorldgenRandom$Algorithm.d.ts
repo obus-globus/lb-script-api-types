@@ -8,7 +8,7 @@ export class WorldgenRandom$Algorithm extends Enum<WorldgenRandom$Algorithm> {
     static XOROSHIRO: WorldgenRandom$Algorithm;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): WorldgenRandom$Algorithm;
-    static values(): (Object | null)[];
+    static values(): WorldgenRandom$Algorithm[];
     private constructor(constructor: (param0: number) => RandomSource)
     // private constructor: (param0: number) => RandomSource;
     newInstance(seed: number): RandomSource;

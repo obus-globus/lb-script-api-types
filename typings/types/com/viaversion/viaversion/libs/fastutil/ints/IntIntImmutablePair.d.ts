@@ -3,7 +3,7 @@ import type { Serializable } from '../../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class IntIntImmutablePair extends Object implements IntIntPair, Serializable {
-    static lexComparator(): (param0: Object) => boolean;
+    static lexComparator(): (param0: IntIntPair, param1: IntIntPair) => number;
     static of(paramarg0: number, paramarg1: number): IntIntImmutablePair;
     static of(paramarg0: number, paramarg1: number): IntIntPair;
     constructor(arg0: number, arg1: number)

@@ -8,7 +8,7 @@ export class FoldingRangeKind extends Enum<FoldingRangeKind> {
     static get(paramstringValue: string): FoldingRangeKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): FoldingRangeKind;
-    static values(): (Object | null)[];
+    static values(): FoldingRangeKind[];
     private constructor(stringValue: string)
     readonly stringValue: string;
     getStringValue(): string;

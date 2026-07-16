@@ -12,7 +12,7 @@ export class SpecialGlyphs extends Enum<SpecialGlyphs> implements GlyphInfo {
     static simple(paramadvance: number): GlyphInfo;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SpecialGlyphs;
-    static values(): (Object | null)[];
+    static values(): SpecialGlyphs[];
     private constructor(image: () => NativeImage)
     // private image: NativeImage;
     bake(stitcher: GlyphStitcher): BakedSheetGlyph;

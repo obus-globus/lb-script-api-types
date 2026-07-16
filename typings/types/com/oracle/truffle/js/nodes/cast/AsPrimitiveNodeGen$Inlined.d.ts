@@ -9,7 +9,6 @@ import type { JSToPrimitiveNode$Hint } from '../../../../../../com/oracle/truffl
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class AsPrimitiveNodeGen$Inlined extends AsPrimitiveNode implements UnadoptableNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(target: InlineSupport$InlineTarget)
     // private foreignObject_cache: InlineSupport$ReferenceField<AsPrimitiveNodeGen$ForeignObjectData>;
     // private state_0_: InlineSupport$StateField;

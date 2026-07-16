@@ -6,7 +6,7 @@ import type { Info } from '../../../com/jcraft/jorbis/Info.d.ts'
 import type { InfoMode } from '../../../com/jcraft/jorbis/InfoMode.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class Mapping0 extends FuncMapping {
-    static mapping_P: (Object | null)[];
+    static mapping_P: FuncMapping[];
     constructor()
     // private floormemo: Object[];
     // private nonzero: number[];

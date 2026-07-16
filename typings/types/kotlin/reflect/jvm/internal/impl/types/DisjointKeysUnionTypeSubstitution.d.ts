@@ -4,11 +4,9 @@ import type { DisjointKeysUnionTypeSubstitution$Companion } from '../../../../..
 import type { KotlinType } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/KotlinType.d.ts'
 import type { TypeProjection } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeProjection.d.ts'
 import type { TypeSubstitution } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeSubstitution.d.ts'
-import type { TypeSubstitution$Companion } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeSubstitution$Companion.d.ts'
 import type { Variance } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/Variance.d.ts'
 export class DisjointKeysUnionTypeSubstitution extends TypeSubstitution {
     static Companion: DisjointKeysUnionTypeSubstitution$Companion;
-    static Companion: TypeSubstitution$Companion;
     static EMPTY: TypeSubstitution;
     static create(paramarg0: TypeSubstitution, paramarg1: TypeSubstitution): TypeSubstitution;
     constructor(arg0: TypeSubstitution, arg1: TypeSubstitution, arg2: DefaultConstructorMarker)

@@ -14,7 +14,7 @@ export class SymmetricGroup3 extends Enum<SymmetricGroup3> {
     static P321: SymmetricGroup3;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SymmetricGroup3;
-    static values(): (Object | null)[];
+    static values(): SymmetricGroup3[];
     private constructor(p0: number, p1: number, p2: number)
     // private p0: number;
     // private p1: number;

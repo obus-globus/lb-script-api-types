@@ -13,7 +13,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class CopyDataPropertiesNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): CopyDataPropertiesNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private context: JSContext;
     copyDataPropertiesForeign(target: JSDynamicObject, from: Object, excludedKeys: Object[], withExcludedKeys: boolean, excludedValues: Object[], withExcludedValues: boolean, objInterop: InteropLibrary, iteratorInterop: InteropLibrary, arrayInterop: InteropLibrary, stringInterop: InteropLibrary, importValue: ImportValueNode, toString: JSToStringNode, equalsNode: TruffleString$EqualNode, sameValueNode: JSIdenticalNode, switchEncodingNode: TruffleString$SwitchEncodingNode, toJavaStringNode: TruffleString$ToJavaStringNode): JSDynamicObject;

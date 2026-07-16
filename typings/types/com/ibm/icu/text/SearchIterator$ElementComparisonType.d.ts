@@ -7,7 +7,7 @@ export class SearchIterator$ElementComparisonType extends Enum<SearchIterator$El
     static STANDARD_ELEMENT_COMPARISON: SearchIterator$ElementComparisonType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SearchIterator$ElementComparisonType;
-    static values(): (Object | null)[];
+    static values(): SearchIterator$ElementComparisonType[];
     private constructor()
     name(): "STANDARD_ELEMENT_COMPARISON" | "PATTERN_BASE_WEIGHT_IS_WILDCARD" | "ANY_BASE_WEIGHT_IS_WILDCARD";
 }

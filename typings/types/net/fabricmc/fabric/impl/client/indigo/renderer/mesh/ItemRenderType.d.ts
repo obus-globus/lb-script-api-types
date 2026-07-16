@@ -9,7 +9,7 @@ export class ItemRenderType extends Enum<ItemRenderType> {
     static TRANSLUCENT_BLOCK: ItemRenderType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ItemRenderType;
-    static values(): (Object | null)[];
+    static values(): ItemRenderType[];
     private constructor(arg2: RenderType)
     // private renderType: RenderType;
     name(): "CUTOUT" | "TRANSLUCENT" | "CUTOUT_BLOCK" | "TRANSLUCENT_BLOCK";

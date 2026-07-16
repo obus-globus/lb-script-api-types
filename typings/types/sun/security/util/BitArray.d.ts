@@ -1,6 +1,6 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class BitArray extends Object {
-    constructor(arg0: (Object | null)[])
+    constructor(arg0: boolean[])
     constructor(arg0: number)
     constructor(arg0: number, arg1: number[])
     constructor(arg0: number, arg1: number[], arg2: number)
@@ -12,7 +12,7 @@ export class BitArray extends Object {
     hashCode(): number;
     length(): number;
     set(arg0: number, arg1: boolean): void;
-    toBooleanArray(): (Object | null)[];
+    toBooleanArray(): boolean[];
     toByteArray(): number[];
     toString(): string;
     truncate(): BitArray;

@@ -7,7 +7,6 @@ export class GetIteratorNodeGen$Uncached extends GetIteratorNode implements Unad
     static create(): GetIteratorNode;
     static getUncached(): GetIteratorNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     execute(arg0Value: Node, arg1Value: Object): IteratorRecord;
 }

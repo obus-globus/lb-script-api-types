@@ -8,7 +8,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PropertyGetNode$FinalBooleanPropertyGetNode extends PropertyGetNode$AbstractFinalPropertyGetNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(property: Property, shapeCheck: PropertyCacheNode$AbstractShapeCheckNode, value: boolean, expectedObj: JSDynamicObject)
     // private finalValue: boolean;
     // private location: BooleanLocation;

@@ -7,7 +7,7 @@ export class ResourceLoadStateTracker$ReloadReason extends Enum<ResourceLoadStat
     static UNKNOWN: ResourceLoadStateTracker$ReloadReason;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ResourceLoadStateTracker$ReloadReason;
-    static values(): (Object | null)[];
+    static values(): ResourceLoadStateTracker$ReloadReason[];
     private constructor(name: string)
     // private name: string;
     name(): "INITIAL" | "MANUAL" | "UNKNOWN";

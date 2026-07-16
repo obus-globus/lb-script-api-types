@@ -3,7 +3,7 @@ import type { DynamicObjectLibrary } from '../../../../../com/oracle/truffle/api
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DynamicObjectLibraryGen$Default extends LibraryExport<DynamicObjectLibrary> {
-    static register(paramreceiverClass: Class<Object>, paramlibs: Object | null): void;
+    static register(paramreceiverClass: Class<Object>, ...paramlibs: LibraryExport<any>[]): void;
     private constructor()
     createCached(receiver: Object): DynamicObjectLibrary;
     createUncached(receiver: Object): DynamicObjectLibrary;

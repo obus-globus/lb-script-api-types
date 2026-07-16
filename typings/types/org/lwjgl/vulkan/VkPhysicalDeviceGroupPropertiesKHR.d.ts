@@ -24,28 +24,21 @@ export class VkPhysicalDeviceGroupPropertiesKHR extends VkPhysicalDeviceGroupPro
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceGroupPropertiesKHR;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceGroupPropertiesKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceGroupProperties;
     static create(paramarg0: number): VkPhysicalDeviceGroupProperties;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceGroupPropertiesKHR;
     static create(paramarg0: number): VkPhysicalDeviceGroupPropertiesKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceGroupProperties;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceGroupPropertiesKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceGroupProperties;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceGroupProperties;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceGroupPropertiesKHR;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceGroupPropertiesKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static nphysicalDeviceCount(paramarg0: number): number;
@@ -54,7 +47,6 @@ export class VkPhysicalDeviceGroupPropertiesKHR extends VkPhysicalDeviceGroupPro
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
     static nsubsetAllocation(paramarg0: number): number;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

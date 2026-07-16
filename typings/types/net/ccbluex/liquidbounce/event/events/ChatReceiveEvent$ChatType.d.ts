@@ -16,7 +16,7 @@ export class ChatReceiveEvent$ChatType extends Enum<ChatReceiveEvent$ChatType> i
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ChatReceiveEvent$ChatType;
-    static values(): (Object | null)[];
+    static values(): ChatReceiveEvent$ChatType[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "CHAT_MESSAGE" | "DISGUISED_CHAT_MESSAGE" | "GAME_MESSAGE";

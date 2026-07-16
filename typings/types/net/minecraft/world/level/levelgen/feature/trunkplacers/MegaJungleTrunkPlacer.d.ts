@@ -1,4 +1,3 @@
-import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { BiConsumer } from '../../../../../../../java/util/function/BiConsumer.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
@@ -8,11 +7,8 @@ import type { BlockState } from '../../../../../../../net/minecraft/world/level/
 import type { TreeConfiguration } from '../../../../../../../net/minecraft/world/level/levelgen/feature/configurations/TreeConfiguration.d.ts'
 import type { FoliagePlacer$FoliageAttachment } from '../../../../../../../net/minecraft/world/level/levelgen/feature/foliageplacers/FoliagePlacer$FoliageAttachment.d.ts'
 import type { GiantTrunkPlacer } from '../../../../../../../net/minecraft/world/level/levelgen/feature/trunkplacers/GiantTrunkPlacer.d.ts'
-import type { TrunkPlacer } from '../../../../../../../net/minecraft/world/level/levelgen/feature/trunkplacers/TrunkPlacer.d.ts'
 import type { TrunkPlacerType } from '../../../../../../../net/minecraft/world/level/levelgen/feature/trunkplacers/TrunkPlacerType.d.ts'
 export class MegaJungleTrunkPlacer extends GiantTrunkPlacer {
-    static CODEC: Codec<TrunkPlacer>;
-    static CODEC: MapCodec<GiantTrunkPlacer>;
     static CODEC: MapCodec<MegaJungleTrunkPlacer>;
     static MAX_HEIGHT: number;
     constructor(baseHeight: number, heightRandA: number, heightRandB: number)

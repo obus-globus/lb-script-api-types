@@ -5,5 +5,5 @@ export class BlockData extends Object {
     constructor()
     // private connectData: { [key: string]: any };
     connectsTo(arg0: number, arg1: BlockFace, arg2: boolean): boolean;
-    put(arg0: number, arg1: (Object | null)[]): void;
+    put(arg0: number, arg1: boolean[]): void;
 }

@@ -5,7 +5,6 @@ export abstract class ArrayLengthNode$ArrayLengthWriteNode extends ArrayLengthNo
     static create(paramstrict: boolean): ArrayLengthNode$ArrayLengthWriteNode;
     static createSetOrDelete(paramstrict: boolean): ArrayLengthNode$ArrayLengthWriteNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     executeVoid(array: JSArrayObject, length: number): void;
 }

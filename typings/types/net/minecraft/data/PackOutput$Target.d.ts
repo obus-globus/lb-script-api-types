@@ -7,7 +7,7 @@ export class PackOutput$Target extends Enum<PackOutput$Target> {
     static RESOURCE_PACK: PackOutput$Target;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PackOutput$Target;
-    static values(): (Object | null)[];
+    static values(): PackOutput$Target[];
     private constructor(directory: string)
     // private directory: string;
     name(): "DATA_PACK" | "RESOURCE_PACK" | "REPORTS";

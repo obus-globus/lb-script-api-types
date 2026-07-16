@@ -10,7 +10,7 @@ export class RealmsServer$Compatibility extends Enum<RealmsServer$Compatibility>
     static UNVERIFIABLE: RealmsServer$Compatibility;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RealmsServer$Compatibility;
-    static values(): (Object | null)[];
+    static values(): RealmsServer$Compatibility[];
     private constructor()
     isCompatible(): boolean;
     needsDowngrade(): boolean;

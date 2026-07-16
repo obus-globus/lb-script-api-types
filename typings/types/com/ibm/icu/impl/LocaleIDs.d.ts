@@ -4,8 +4,8 @@ export class LocaleIDs extends Object {
     static getCurrentLanguageID(paramarg0: string): string;
     static getISO3Country(paramarg0: string): string;
     static getISO3Language(paramarg0: string): string;
-    static getISOCountries(): (Object | null)[];
-    static getISOLanguages(): (Object | null)[];
+    static getISOCountries(): string[];
+    static getISOLanguages(): string[];
     static threeToTwoLetterLanguage(paramarg0: string): string;
     static threeToTwoLetterRegion(paramarg0: string): string;
     constructor()

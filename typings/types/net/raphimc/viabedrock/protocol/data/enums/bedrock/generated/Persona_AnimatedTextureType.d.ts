@@ -11,7 +11,7 @@ export class Persona_AnimatedTextureType extends Enum<Persona_AnimatedTextureTyp
     static getByValue(paramarg0: number, paramarg1: Persona_AnimatedTextureType): Persona_AnimatedTextureType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Persona_AnimatedTextureType;
-    static values(): (Object | null)[];
+    static values(): Persona_AnimatedTextureType[];
     private constructor(arg2: number)
     private constructor(arg2: Persona_AnimatedTextureType)
     readonly value: number;

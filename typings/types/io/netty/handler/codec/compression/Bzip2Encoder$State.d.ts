@@ -8,7 +8,7 @@ export class Bzip2Encoder$State extends Enum<Bzip2Encoder$State> {
     static WRITE_DATA: Bzip2Encoder$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Bzip2Encoder$State;
-    static values(): (Object | null)[];
+    static values(): Bzip2Encoder$State[];
     private constructor()
     name(): "INIT" | "INIT_BLOCK" | "WRITE_DATA" | "CLOSE_BLOCK";
 }

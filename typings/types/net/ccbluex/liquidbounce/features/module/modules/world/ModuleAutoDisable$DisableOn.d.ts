@@ -14,7 +14,7 @@ export class ModuleAutoDisable$DisableOn extends Enum<ModuleAutoDisable$DisableO
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleAutoDisable$DisableOn;
-    static values(): (Object | null)[];
+    static values(): ModuleAutoDisable$DisableOn[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "FLAG" | "DEATH" | "WORLD_CHANGE" | "DISCONNECT";

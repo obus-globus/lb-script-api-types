@@ -12,7 +12,7 @@ export class CommandParameterOption extends Enum<CommandParameterOption> {
     static getByValue(paramarg0: number, paramarg1: CommandParameterOption): CommandParameterOption;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CommandParameterOption;
-    static values(): (Object | null)[];
+    static values(): CommandParameterOption[];
     private constructor(arg2: number)
     private constructor(arg2: CommandParameterOption)
     readonly value: number;

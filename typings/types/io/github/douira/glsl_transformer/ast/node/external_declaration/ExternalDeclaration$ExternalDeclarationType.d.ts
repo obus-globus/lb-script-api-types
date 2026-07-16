@@ -12,7 +12,7 @@ export class ExternalDeclaration$ExternalDeclarationType extends Enum<ExternalDe
     static PRAGMA_DIRECTIVE: ExternalDeclaration$ExternalDeclarationType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ExternalDeclaration$ExternalDeclarationType;
-    static values(): (Object | null)[];
+    static values(): ExternalDeclaration$ExternalDeclarationType[];
     private constructor()
     name(): "FUNCTION_DEFINITION" | "DECLARATION" | "PRAGMA_DIRECTIVE" | "EXTENSION_DIRECTIVE" | "CUSTOM_DIRECTIVE" | "INCLUDE_DIRECTIVE" | "LAYOUT_DEFAULTS" | "EMPTY_DECLARATION";
 }

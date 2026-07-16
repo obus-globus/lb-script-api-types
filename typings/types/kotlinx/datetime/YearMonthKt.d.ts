@@ -12,12 +12,10 @@ export class YearMonthKt extends Object {
     static getProlepticMonth(paramarg0: YearMonth): number;
     static getYearMonth(paramarg0: LocalDate): YearMonth;
     static minus(paramarg0: YearMonth, paramarg1: number, paramarg2: DateTimeUnit$MonthBased): YearMonth;
-    static minus(paramarg0: YearMonth, paramarg1: number, paramarg2: DateTimeUnit$MonthBased): YearMonth;
     static minusMonth(paramarg0: YearMonth): YearMonth;
     static minusYear(paramarg0: YearMonth): YearMonth;
     static monthsUntil(paramarg0: YearMonth, paramarg1: YearMonth): number;
     static onDay(paramarg0: YearMonth, paramarg1: number): LocalDate;
-    static plus(paramarg0: YearMonth, paramarg1: number, paramarg2: DateTimeUnit$MonthBased): YearMonth;
     static plus(paramarg0: YearMonth, paramarg1: number, paramarg2: DateTimeUnit$MonthBased): YearMonth;
     static plusMonth(paramarg0: YearMonth): YearMonth;
     static plusYear(paramarg0: YearMonth): YearMonth;

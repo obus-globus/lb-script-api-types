@@ -17,7 +17,7 @@ export class ModuleSuperKnockback$Conditions extends Enum<ModuleSuperKnockback$C
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleSuperKnockback$Conditions;
-    static values(): (Object | null)[];
+    static values(): ModuleSuperKnockback$Conditions[];
     private constructor(tag: string, testCondition: (param0: Entity) => boolean)
     readonly tag: string;
     // private testCondition: (param0: Entity) => boolean;

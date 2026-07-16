@@ -2,6 +2,6 @@ import type { QMatrix } from '../../../../com/seedfinding/mcmath/component/matri
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class GramSchmidt extends Object {
     static apply(paramarg0: QMatrix): QMatrix;
-    static main(paramarg0: (Object | null)[]): void;
+    static main(paramarg0: string[]): void;
     constructor()
 }

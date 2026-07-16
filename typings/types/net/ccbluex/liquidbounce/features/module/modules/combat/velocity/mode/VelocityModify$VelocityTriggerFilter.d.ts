@@ -14,7 +14,7 @@ export class VelocityModify$VelocityTriggerFilter extends Enum<VelocityModify$Ve
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): VelocityModify$VelocityTriggerFilter;
-    static values(): (Object | null)[];
+    static values(): VelocityModify$VelocityTriggerFilter[];
     private constructor(tag: string, condition: () => boolean)
     readonly condition: () => boolean;
     readonly tag: string;

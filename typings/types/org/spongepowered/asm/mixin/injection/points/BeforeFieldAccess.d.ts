@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { AbstractInsnNode } from '../../../../../../org/objectweb/asm/tree/AbstractInsnNode.d.ts'
 import type { AnnotationNode } from '../../../../../../org/objectweb/asm/tree/AnnotationNode.d.ts'
 import type { FieldInsnNode } from '../../../../../../org/objectweb/asm/tree/FieldInsnNode.d.ts'
@@ -16,10 +15,10 @@ export class BeforeFieldAccess extends BeforeInvoke {
     static DEFAULT_ALLOWED_SHIFT_BY: number;
     static MAX_ALLOWED_SHIFT_BY: number;
     static after(paramarg0: InjectionPoint): InjectionPoint;
-    static and(...paramarg0: (Object | null)[]): InjectionPoint;
+    static and(...paramarg0: InjectionPoint[]): InjectionPoint;
     static before(paramarg0: InjectionPoint): InjectionPoint;
     static findArrayNode(paramarg0: AbstractInsnNode[], paramarg1: FieldInsnNode, paramarg2: number, paramarg3: number): AbstractInsnNode;
-    static or(...paramarg0: (Object | null)[]): InjectionPoint;
+    static or(...paramarg0: InjectionPoint[]): InjectionPoint;
     static parse(paramarg0: IInjectionPointContext, paramarg1: AnnotationNode[]): InjectionPoint[];
     static parse(paramarg0: IMixinContext, paramarg1: MethodNode, paramarg2: AnnotationNode, paramarg3: AnnotationNode[]): InjectionPoint[];
     static parse(paramarg0: IInjectionPointContext, paramarg1: string, paramarg2: At$Shift, paramarg3: number, paramarg4: string[], paramarg5: string, paramarg6: string, paramarg7: number, paramarg8: number, paramarg9: string, paramarg10: number): InjectionPoint;

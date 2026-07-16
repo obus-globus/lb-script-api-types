@@ -6,7 +6,7 @@ export class BidiTransform$Order extends Enum<BidiTransform$Order> {
     static VISUAL: BidiTransform$Order;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BidiTransform$Order;
-    static values(): (Object | null)[];
+    static values(): BidiTransform$Order[];
     private constructor()
     name(): "LOGICAL" | "VISUAL";
 }

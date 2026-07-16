@@ -7,7 +7,7 @@ export class PolyglotLoggers$ImmutableLogRecord$FormatKind extends Enum<Polyglot
     static RAW: PolyglotLoggers$ImmutableLogRecord$FormatKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PolyglotLoggers$ImmutableLogRecord$FormatKind;
-    static values(): (Object | null)[];
+    static values(): PolyglotLoggers$ImmutableLogRecord$FormatKind[];
     private constructor()
     name(): "RAW" | "NO_LEVEL" | "DEFAULT";
 }

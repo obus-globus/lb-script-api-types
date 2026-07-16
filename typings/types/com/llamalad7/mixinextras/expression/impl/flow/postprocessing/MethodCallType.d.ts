@@ -8,7 +8,7 @@ export class MethodCallType extends Enum<MethodCallType> {
     static SUPER: MethodCallType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MethodCallType;
-    static values(): (Object | null)[];
+    static values(): MethodCallType[];
     private constructor()
     matches(arg0: FlowValue): boolean;
     name(): "NORMAL" | "SUPER" | "STATIC";

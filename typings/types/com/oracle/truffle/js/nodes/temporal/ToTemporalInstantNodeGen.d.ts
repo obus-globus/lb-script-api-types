@@ -7,7 +7,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ToTemporalInstantNodeGen extends ToTemporalInstantNode {
     static create(): ToTemporalInstantNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private isObjectNode_: IsObjectNode;
     // private state_0_: number;

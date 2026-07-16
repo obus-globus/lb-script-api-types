@@ -9,7 +9,7 @@ export class FramerateLimitTracker$FramerateThrottleReason extends Enum<Framerat
     static WINDOW_ICONIFIED: FramerateLimitTracker$FramerateThrottleReason;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): FramerateLimitTracker$FramerateThrottleReason;
-    static values(): (Object | null)[];
+    static values(): FramerateLimitTracker$FramerateThrottleReason[];
     private constructor()
     name(): "NONE" | "WINDOW_ICONIFIED" | "LONG_AFK" | "SHORT_AFK" | "OUT_OF_LEVEL_MENU";
 }

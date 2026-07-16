@@ -9,7 +9,7 @@ export class MapMakerInternalMap$Strength extends Enum<MapMakerInternalMap$Stren
     static WEAK: MapMakerInternalMap$Strength;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): MapMakerInternalMap$Strength;
-    static values(): (Object | null)[];
+    static values(): MapMakerInternalMap$Strength[];
     constructor(arg2: MapMakerInternalMap$WeakValueReference<Object, Object, MapMakerInternalMap$DummyInternalEntry>)
     defaultEquivalence(): Equivalence<Object>;
     name(): "STRONG" | "WEAK";

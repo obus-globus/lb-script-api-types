@@ -5,7 +5,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class GetMethodNodeGen extends GetMethodNode {
     static create(paramcontext: JSContext, parampropertyKey: Object): GetMethodNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, propertyKey: Object)
     // private state_0_: number;
     executeWithTarget(arg0Value: Object): Object;

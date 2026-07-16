@@ -99,7 +99,7 @@ import type { ScheduledTick } from '../../../../net/minecraft/world/ticks/Schedu
 import type { TickPriority } from '../../../../net/minecraft/world/ticks/TickPriority.d.ts'
 export abstract class Level extends Object implements AutoCloseable, ChunkRandomSource, LithiumData, BlockEntityGetter, LevelAccessor, MixinLevelInvoker, AttachmentTarget, GlobalAttachmentsProvider, AttachmentTargetImpl, LoadedChunksCache, LevelAccessor_2, LevelHeightAccessor {
     static ACROSS_THE_WHOLE_WORLD: number;
-    static DIRECTIONS: (Object | null)[];
+    static DIRECTIONS: Direction[];
     static END: ResourceKey<Level>;
     static LONG_PARTICLE_CLIP_RANGE: number;
     static MAX_BRIGHTNESS: number;

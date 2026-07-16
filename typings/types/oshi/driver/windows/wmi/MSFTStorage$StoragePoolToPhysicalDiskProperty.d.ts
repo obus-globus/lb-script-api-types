@@ -6,7 +6,7 @@ export class MSFTStorage$StoragePoolToPhysicalDiskProperty extends Enum<MSFTStor
     static STORAGEPOOL: MSFTStorage$StoragePoolToPhysicalDiskProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MSFTStorage$StoragePoolToPhysicalDiskProperty;
-    static values(): (Object | null)[];
+    static values(): MSFTStorage$StoragePoolToPhysicalDiskProperty[];
     private constructor()
     name(): "STORAGEPOOL" | "PHYSICALDISK";
 }

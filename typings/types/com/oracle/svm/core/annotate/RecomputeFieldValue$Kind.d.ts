@@ -18,7 +18,7 @@ export class RecomputeFieldValue$Kind extends Enum<RecomputeFieldValue$Kind> {
     static TranslateFieldOffset: RecomputeFieldValue$Kind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RecomputeFieldValue$Kind;
-    static values(): (Object | null)[];
+    static values(): RecomputeFieldValue$Kind[];
     private constructor()
     name(): "None" | "Reset" | "NewInstance" | "NewInstanceWhenNotNull" | "FromAlias" | "FieldOffset" | "StaticFieldBase" | "ArrayBaseOffset" | "ArrayIndexScale" | "ArrayIndexShift" | "AtomicFieldUpdaterOffset" | "TranslateFieldOffset" | "Manual" | "Custom";
 }

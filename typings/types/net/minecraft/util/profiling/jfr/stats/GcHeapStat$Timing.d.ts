@@ -6,7 +6,7 @@ export class GcHeapStat$Timing extends Enum<GcHeapStat$Timing> {
     static BEFORE_GC: GcHeapStat$Timing;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): GcHeapStat$Timing;
-    static values(): (Object | null)[];
+    static values(): GcHeapStat$Timing[];
     private constructor()
     name(): "BEFORE_GC" | "AFTER_GC";
 }

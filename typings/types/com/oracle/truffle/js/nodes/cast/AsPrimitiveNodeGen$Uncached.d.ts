@@ -5,7 +5,6 @@ import type { JSToPrimitiveNode$Hint } from '../../../../../../com/oracle/truffl
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class AsPrimitiveNodeGen$Uncached extends AsPrimitiveNode implements UnadoptableNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     execute(arg0Value: Node, arg1Value: Object, arg2Value: JSToPrimitiveNode$Hint): Object;
 }

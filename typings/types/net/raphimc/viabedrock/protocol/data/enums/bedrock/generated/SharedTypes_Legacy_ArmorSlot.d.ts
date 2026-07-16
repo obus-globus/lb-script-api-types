@@ -13,7 +13,7 @@ export class SharedTypes_Legacy_ArmorSlot extends Enum<SharedTypes_Legacy_ArmorS
     static getByValue(paramarg0: number, paramarg1: SharedTypes_Legacy_ArmorSlot): SharedTypes_Legacy_ArmorSlot;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SharedTypes_Legacy_ArmorSlot;
-    static values(): (Object | null)[];
+    static values(): SharedTypes_Legacy_ArmorSlot[];
     private constructor(arg2: number)
     private constructor(arg2: SharedTypes_Legacy_ArmorSlot)
     readonly value: number;

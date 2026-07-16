@@ -17,7 +17,7 @@ export class BlendModeFunction extends Enum<BlendModeFunction> {
     static fromString(paramarg0: string): Optional<BlendModeFunction>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BlendModeFunction;
-    static values(): (Object | null)[];
+    static values(): BlendModeFunction[];
     private constructor(arg2: number)
     readonly glId: number;
     getGlId(): number;

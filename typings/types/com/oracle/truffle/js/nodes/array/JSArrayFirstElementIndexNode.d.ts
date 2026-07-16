@@ -11,7 +11,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSArrayFirstElementIndexNode extends JSArrayElementIndexNode {
     static create(paramcontext: JSContext): JSArrayFirstElementIndexNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     doObject(object: Object, length: number, isArray: boolean, hasPropertyNode: JSHasPropertyNode): number;
     doWithHolesCached(object: JSDynamicObject, length: number, isArray: boolean, cachedArrayType: ScriptArray, node: Node, nextElementIndexNode: JSArrayNextElementIndexNode, isZero: InlinedConditionProfile): number;

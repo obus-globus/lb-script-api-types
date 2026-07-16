@@ -10,7 +10,6 @@ export class BitSet extends Object implements Serializable, Cloneable {
     static valueOf(paramarg0: number[]): BitSet;
     static valueOf(paramarg0: ByteBuffer): BitSet;
     static valueOf(paramarg0: LongBuffer): BitSet;
-    static valueOf(paramarg0: number[]): BitSet;
     constructor()
     constructor(arg0: number)
     // private sizeIsSticky: boolean;

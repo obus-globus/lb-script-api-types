@@ -23,7 +23,7 @@ export class BiomeCategories extends Enum<BiomeCategories> {
     static UNDERGROUND: BiomeCategories;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BiomeCategories;
-    static values(): (Object | null)[];
+    static values(): BiomeCategories[];
     private constructor()
     name(): "NONE" | "TAIGA" | "EXTREME_HILLS" | "JUNGLE" | "MESA" | "PLAINS" | "SAVANNA" | "ICY" | "THE_END" | "BEACH" | "FOREST" | "OCEAN" | "DESERT" | "RIVER" | "SWAMP" | "MUSHROOM" | "NETHER" | "MOUNTAIN" | "UNDERGROUND";
 }

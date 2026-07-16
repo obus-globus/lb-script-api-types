@@ -8,7 +8,7 @@ export class SourceElement extends Enum<SourceElement> {
     static STATEMENT: SourceElement;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SourceElement;
-    static values(): (Object | null)[];
+    static values(): SourceElement[];
     private constructor(tag: Class<Tag>)
     // private tag: Class<Tag>;
     getTag(): Class<Tag>;

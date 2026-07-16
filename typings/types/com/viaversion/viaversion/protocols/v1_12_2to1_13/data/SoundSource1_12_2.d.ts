@@ -16,7 +16,7 @@ export class SoundSource1_12_2 extends Enum<SoundSource1_12_2> {
     static findBySource(paramarg0: string): Optional<SoundSource1_12_2>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SoundSource1_12_2;
-    static values(): (Object | null)[];
+    static values(): SoundSource1_12_2[];
     private constructor(arg2: string, arg3: number)
     readonly id: number;
     getId(): number;

@@ -6,7 +6,7 @@ export class WorldSelectionList$EntryType extends Enum<WorldSelectionList$EntryT
     static UPLOAD_WORLD: WorldSelectionList$EntryType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): WorldSelectionList$EntryType;
-    static values(): (Object | null)[];
+    static values(): WorldSelectionList$EntryType[];
     private constructor()
     name(): "SINGLEPLAYER" | "UPLOAD_WORLD";
 }

@@ -8,7 +8,6 @@ export class Object2IntMaps extends Object {
     static fastIterable(paramarg0: { [key: string]: any }): Object2IntMap$Entry<Object>[];
     static fastIterator(paramarg0: { [key: string]: any }): ObjectIterator<Object2IntMap$Entry<Object>>;
     static singleton(paramarg0: Object | null, paramarg1: number): { [key: string]: any };
-    static singleton(paramarg0: Object | null, paramarg1: number): { [key: string]: any };
     static synchronize(paramarg0: { [key: string]: any }): { [key: string]: any };
     static synchronize(paramarg0: { [key: string]: any }, paramarg1: Object): { [key: string]: any };
     static unmodifiable(paramarg0: { [key: string]: any }): { [key: string]: any };

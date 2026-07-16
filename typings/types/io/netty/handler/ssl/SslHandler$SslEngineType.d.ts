@@ -14,7 +14,7 @@ export class SslHandler$SslEngineType extends Enum<SslHandler$SslEngineType> {
     static TCNATIVE: SslHandler$SslEngineType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SslHandler$SslEngineType;
-    static values(): (Object | null)[];
+    static values(): SslHandler$SslEngineType[];
     constructor(arg2: boolean, arg3: ByteToMessageDecoder$Cumulator, arg4: SslHandlerCoalescingBufferQueue)
     // private cumulator: ByteToMessageDecoder$Cumulator;
     // private wantsDirectBuffer: boolean;

@@ -8,7 +8,7 @@ export class Axolotl$AxolotlAnimationState extends Enum<Axolotl$AxolotlAnimation
     static PLAYING_DEAD: Axolotl$AxolotlAnimationState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Axolotl$AxolotlAnimationState;
-    static values(): (Object | null)[];
+    static values(): Axolotl$AxolotlAnimationState[];
     private constructor()
     name(): "PLAYING_DEAD" | "IN_WATER" | "ON_GROUND" | "IN_AIR";
 }

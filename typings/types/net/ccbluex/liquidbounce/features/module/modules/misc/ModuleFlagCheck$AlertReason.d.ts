@@ -8,7 +8,7 @@ export class ModuleFlagCheck$AlertReason extends Enum<ModuleFlagCheck$AlertReaso
     static getEntries(): ModuleFlagCheck$AlertReason[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleFlagCheck$AlertReason;
-    static values(): (Object | null)[];
+    static values(): ModuleFlagCheck$AlertReason[];
     private constructor(key: string)
     readonly key: string;
     name(): "INVALID" | "FORCEROTATE" | "LAGBACK";

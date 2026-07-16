@@ -24,7 +24,7 @@ export class MolangVersion extends Enum<MolangVersion> {
     static getByValue(paramarg0: number, paramarg1: MolangVersion): MolangVersion;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MolangVersion;
-    static values(): (Object | null)[];
+    static values(): MolangVersion[];
     private constructor(arg2: number)
     private constructor(arg2: MolangVersion)
     readonly value: number;

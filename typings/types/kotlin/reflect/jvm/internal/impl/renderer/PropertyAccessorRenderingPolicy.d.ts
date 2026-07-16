@@ -7,7 +7,7 @@ export class PropertyAccessorRenderingPolicy extends Enum<PropertyAccessorRender
     static PRETTY: PropertyAccessorRenderingPolicy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PropertyAccessorRenderingPolicy;
-    static values(): (Object | null)[];
+    static values(): PropertyAccessorRenderingPolicy[];
     private constructor()
     name(): "PRETTY" | "DEBUG" | "NONE";
 }

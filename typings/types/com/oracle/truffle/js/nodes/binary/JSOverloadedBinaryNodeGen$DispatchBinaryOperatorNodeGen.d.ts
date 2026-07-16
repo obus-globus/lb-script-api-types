@@ -13,7 +13,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSOverloadedBinaryNodeGen$DispatchBinaryOperatorNodeGen extends JSOverloadedBinaryNode$DispatchBinaryOperatorNode {
     static create(paramoverloadedOperatorName: TruffleString): JSOverloadedBinaryNode$DispatchBinaryOperatorNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(overloadedOperatorName: TruffleString)
     // private bigIntOverloaded_cache: JSOverloadedBinaryNodeGen$DispatchBinaryOperatorNodeGen$BigIntOverloadedData;
     // private generic_callNode_: JSFunctionCallNode;

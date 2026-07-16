@@ -7,7 +7,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ReadElementNodeFactory$NumberReadElementTypeCacheNodeGen extends ReadElementNode$NumberReadElementTypeCacheNode {
     static create(paramstringClass: Class<Object>): ReadElementNode$NumberReadElementTypeCacheNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(stringClass: Class<Object>)
     // private number1_indexToPropertyKeyNode_: JSToPropertyKeyNode;
     // private state_0_: number;

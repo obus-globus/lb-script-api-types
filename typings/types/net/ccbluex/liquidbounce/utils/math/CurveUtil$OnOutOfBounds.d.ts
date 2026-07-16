@@ -13,7 +13,7 @@ export class CurveUtil$OnOutOfBounds extends Enum<CurveUtil$OnOutOfBounds> imple
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CurveUtil$OnOutOfBounds;
-    static values(): (Object | null)[];
+    static values(): CurveUtil$OnOutOfBounds[];
     private constructor(tag: string)
     readonly tag: string;
     resolveOutOfBoundsY(data: Vector2fc[], xPos: number, isLeftSide: boolean): number;

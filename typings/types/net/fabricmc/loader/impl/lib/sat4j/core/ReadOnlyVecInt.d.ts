@@ -29,7 +29,7 @@ export class ReadOnlyVecInt extends Object implements IVecInt {
     shrink(arg0: number): void;
     size(): number;
     sort(): void;
-    sort(arg0: (param0: Object) => boolean): void;
+    sort(arg0: (param0: number, param1: number) => number): void;
     sortUnique(): void;
     toArray(): number[];
     toString(): string;

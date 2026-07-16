@@ -7,7 +7,7 @@ export class TickerMode extends Enum<TickerMode> {
     static getEntries(): TickerMode[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TickerMode;
-    static values(): (Object | null)[];
+    static values(): TickerMode[];
     private constructor()
     name(): "FIXED_PERIOD" | "FIXED_DELAY";
 }

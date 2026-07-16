@@ -7,7 +7,7 @@ export class PersistentEntitySectionManager$ChunkLoadStatus extends Enum<Persist
     static PENDING: PersistentEntitySectionManager$ChunkLoadStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PersistentEntitySectionManager$ChunkLoadStatus;
-    static values(): (Object | null)[];
+    static values(): PersistentEntitySectionManager$ChunkLoadStatus[];
     private constructor()
     name(): "FRESH" | "PENDING" | "LOADED";
 }

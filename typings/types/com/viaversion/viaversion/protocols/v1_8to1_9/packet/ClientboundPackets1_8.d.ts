@@ -81,7 +81,7 @@ export class ClientboundPackets1_8 extends Enum<ClientboundPackets1_8> implement
     static UPDATE_SIGN: ClientboundPackets1_8;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClientboundPackets1_8;
-    static values(): (Object | null)[];
+    static values(): ClientboundPackets1_8[];
     private constructor()
     direction(): Direction;
     getId(): number;

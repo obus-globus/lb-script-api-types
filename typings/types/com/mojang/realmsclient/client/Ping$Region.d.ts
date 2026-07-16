@@ -12,7 +12,7 @@ export class Ping$Region extends Enum<Ping$Region> {
     static US_WEST_2: Ping$Region;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Ping$Region;
-    static values(): (Object | null)[];
+    static values(): Ping$Region[];
     private constructor(name: string, endpoint: string)
     // private endpoint: string;
     // private name: string;

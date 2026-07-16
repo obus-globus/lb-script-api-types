@@ -6,7 +6,7 @@ export class StatementExpression$Op extends Enum<StatementExpression$Op> {
     static CONTINUE: StatementExpression$Op;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): StatementExpression$Op;
-    static values(): (Object | null)[];
+    static values(): StatementExpression$Op[];
     private constructor()
     name(): "BREAK" | "CONTINUE";
 }

@@ -13,7 +13,7 @@ export class ModuleNoSlowBreak$When extends Enum<ModuleNoSlowBreak$When> impleme
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleNoSlowBreak$When;
-    static values(): (Object | null)[];
+    static values(): ModuleNoSlowBreak$When[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "MINING_FATIGUE" | "ON_AIR" | "UNDERWATER";

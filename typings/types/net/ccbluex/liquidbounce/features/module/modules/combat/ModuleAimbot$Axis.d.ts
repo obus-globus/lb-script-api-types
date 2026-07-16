@@ -12,7 +12,7 @@ export class ModuleAimbot$Axis extends Enum<ModuleAimbot$Axis> implements Tagged
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleAimbot$Axis;
-    static values(): (Object | null)[];
+    static values(): ModuleAimbot$Axis[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "HORIZONTAL" | "VERTICAL";

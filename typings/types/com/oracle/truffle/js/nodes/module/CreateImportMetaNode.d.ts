@@ -5,7 +5,6 @@ import type { JSObject } from '../../../../../../com/oracle/truffle/js/runtime/o
 export abstract class CreateImportMetaNode extends JavaScriptBaseNode {
     static create(): CreateImportMetaNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(module: JSModuleRecord): JSObject;
 }

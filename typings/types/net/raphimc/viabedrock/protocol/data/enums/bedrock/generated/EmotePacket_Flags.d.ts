@@ -10,7 +10,7 @@ export class EmotePacket_Flags extends Enum<EmotePacket_Flags> {
     static getByValue(paramarg0: number, paramarg1: EmotePacket_Flags): EmotePacket_Flags;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): EmotePacket_Flags;
-    static values(): (Object | null)[];
+    static values(): EmotePacket_Flags[];
     private constructor(arg2: number)
     private constructor(arg2: EmotePacket_Flags)
     readonly value: number;

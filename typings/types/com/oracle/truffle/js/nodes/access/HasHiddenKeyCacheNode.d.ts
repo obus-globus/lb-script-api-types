@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class HasHiddenKeyCacheNode extends JavaScriptBaseNode {
     static create(paramkey: HiddenKey): HasHiddenKeyCacheNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(key: HiddenKey)
     // private key: HiddenKey;
     doUncached(object: JSDynamicObject): boolean;

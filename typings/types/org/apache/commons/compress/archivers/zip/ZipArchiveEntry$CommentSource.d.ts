@@ -6,7 +6,7 @@ export class ZipArchiveEntry$CommentSource extends Enum<ZipArchiveEntry$CommentS
     static UNICODE_EXTRA_FIELD: ZipArchiveEntry$CommentSource;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ZipArchiveEntry$CommentSource;
-    static values(): (Object | null)[];
+    static values(): ZipArchiveEntry$CommentSource[];
     private constructor()
     name(): "COMMENT" | "UNICODE_EXTRA_FIELD";
 }

@@ -3,7 +3,6 @@ import type { PluralRules$Factory } from '../../../../com/ibm/icu/text/PluralRul
 import type { PluralRules$PluralType } from '../../../../com/ibm/icu/text/PluralRules$PluralType.d.ts'
 import type { ULocale } from '../../../../com/ibm/icu/util/ULocale.d.ts'
 import type { UResourceBundle } from '../../../../com/ibm/icu/util/UResourceBundle.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 export class PluralRulesLoader extends PluralRules$Factory {
     static loader: PluralRulesLoader;
     static getDefaultFactory(): PluralRulesLoader;
@@ -16,7 +15,7 @@ export class PluralRulesLoader extends PluralRules$Factory {
     forLocale(arg0: ULocale): PluralRules;
     forLocale(arg0: ULocale, arg1: PluralRules$PluralType): PluralRules;
     getAvailableULocales(): ULocale[];
-    getFunctionalEquivalent(arg0: ULocale, arg1: (Object | null)[]): ULocale;
+    getFunctionalEquivalent(arg0: ULocale, arg1: boolean[]): ULocale;
     // private getLocaleIdToRulesIdMap(arg0: PluralRules$PluralType): { [key: string]: string };
     getOrCreateRulesForLocale(arg0: ULocale, arg1: PluralRules$PluralType): PluralRules;
     getPluralBundle(): UResourceBundle;

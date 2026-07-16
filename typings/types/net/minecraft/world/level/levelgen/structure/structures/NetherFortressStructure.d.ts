@@ -4,7 +4,6 @@ import type { RecordCodecBuilder } from '../../../../../../../com/mojang/seriali
 import type { RecordCodecBuilder$Instance } from '../../../../../../../com/mojang/serialization/codecs/RecordCodecBuilder$Instance.d.ts'
 import type { Optional } from '../../../../../../../java/util/Optional.d.ts'
 import type { Function } from '../../../../../../../java/util/function/Function.d.ts'
-import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts'
 import type { WeightedList } from '../../../../../../../net/minecraft/util/random/WeightedList.d.ts'
 import type { MobSpawnSettings$SpawnerData } from '../../../../../../../net/minecraft/world/level/biome/MobSpawnSettings$SpawnerData.d.ts'
 import type { Structure } from '../../../../../../../net/minecraft/world/level/levelgen/structure/Structure.d.ts'
@@ -13,7 +12,6 @@ import type { Structure$GenerationStub } from '../../../../../../../net/minecraf
 import type { Structure$StructureSettings } from '../../../../../../../net/minecraft/world/level/levelgen/structure/Structure$StructureSettings.d.ts'
 import type { StructureType } from '../../../../../../../net/minecraft/world/level/levelgen/structure/StructureType.d.ts'
 export class NetherFortressStructure extends Structure {
-    static CODEC: Codec<Holder<Structure>>;
     static CODEC: MapCodec<NetherFortressStructure>;
     static DIRECT_CODEC: Codec<Structure>;
     static FORTRESS_ENEMIES: WeightedList<MobSpawnSettings$SpawnerData>;

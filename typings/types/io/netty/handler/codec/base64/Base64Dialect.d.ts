@@ -7,7 +7,7 @@ export class Base64Dialect extends Enum<Base64Dialect> {
     static URL_SAFE: Base64Dialect;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Base64Dialect;
-    static values(): (Object | null)[];
+    static values(): Base64Dialect[];
     private constructor(arg2: number[], arg3: number[], arg4: boolean)
     // private alphabet: number[];
     // private breakLinesByDefault: boolean;

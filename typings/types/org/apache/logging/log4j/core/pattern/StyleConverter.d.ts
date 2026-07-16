@@ -7,7 +7,7 @@ import type { LogEventPatternConverter } from '../../../../../../org/apache/logg
 import type { PatternFormatter } from '../../../../../../org/apache/logging/log4j/core/pattern/PatternFormatter.d.ts'
 export class StyleConverter extends LogEventPatternConverter implements AnsiConverter {
     static CATEGORY: string;
-    static newInstance(paramconfig: Configuration, paramoptions: (Object | null)[]): StyleConverter;
+    static newInstance(paramconfig: Configuration, paramoptions: string[]): StyleConverter;
     private constructor(patternFormatters: PatternFormatter[], style: string, noAnsi: boolean)
     // private defaultStyle: string;
     // private noAnsi: boolean;

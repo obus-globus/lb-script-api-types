@@ -12,7 +12,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PropertyGetNode$FinalAccessorPropertyGetNode extends PropertyGetNode$AbstractFinalPropertyGetNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(property: Property, shapeCheck: PropertyCacheNode$AbstractShapeCheckNode, finalAccessor: Accessor, expectedObj: JSDynamicObject)
     // private callNode: JSFunctionCallNode;
     // private finalAccessorRef: TruffleWeakReference<Accessor>;

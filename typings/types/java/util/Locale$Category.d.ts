@@ -6,7 +6,7 @@ export class Locale$Category extends Enum<Locale$Category> {
     static FORMAT: Locale$Category;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Locale$Category;
-    static values(): (Object | null)[];
+    static values(): Locale$Category[];
     private constructor(arg2: string, arg3: string, arg4: string, arg5: string, arg6: string)
     // private countryKey: string;
     // private extensionsKey: string;

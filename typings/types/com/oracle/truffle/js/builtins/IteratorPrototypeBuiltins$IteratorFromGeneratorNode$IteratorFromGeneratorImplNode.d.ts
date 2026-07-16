@@ -12,7 +12,6 @@ import type { IteratorRecord } from '../../../../../com/oracle/truffle/js/runtim
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class IteratorPrototypeBuiltins$IteratorFromGeneratorNode$IteratorFromGeneratorImplNode<T extends IteratorPrototypeBuiltins$IteratorArgs> extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private context: JSContext;
     // private createIterResultObjectNode: CreateIterResultObjectNode;

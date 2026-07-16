@@ -8,7 +8,7 @@ export class IslamicCalendar$CalculationType extends Enum<IslamicCalendar$Calcul
     static ISLAMIC_UMALQURA: IslamicCalendar$CalculationType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): IslamicCalendar$CalculationType;
-    static values(): (Object | null)[];
+    static values(): IslamicCalendar$CalculationType[];
     private constructor(arg2: string)
     // private bcpType: string;
     bcpType(): string;

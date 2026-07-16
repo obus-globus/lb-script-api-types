@@ -14,7 +14,6 @@ export class FluidVariantImpl extends Object implements FluidVariant {
     static of(paramarg0: Fluid): FluidVariant;
     static of(paramarg0: Fluid, paramarg1: DataComponentPatch): FluidVariant;
     static of(paramarg0: Holder<Fluid>, paramarg1: DataComponentPatch): FluidVariant;
-    static of(paramarg0: Fluid, paramarg1: DataComponentPatch): FluidVariant;
     constructor(arg0: Fluid, arg1: DataComponentPatch)
     // private componentMap: TypedDataComponent<Object>[];
     readonly components: DataComponentPatch;

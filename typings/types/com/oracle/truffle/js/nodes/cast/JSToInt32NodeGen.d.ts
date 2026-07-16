@@ -11,7 +11,6 @@ export class JSToInt32NodeGen extends JSToInt32Node {
     static create(): JSToInt32Node;
     static getUncached(): JSToInt32Node;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private foreignObject_cache: JSToInt32NodeGen$ForeignObjectData;
     // private jSObject_toDoubleNode_: JSToDoubleNode;

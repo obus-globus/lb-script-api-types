@@ -20,7 +20,7 @@ export class BinaryExpression$Op extends Enum<BinaryExpression$Op> {
     static SUB: BinaryExpression$Op;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BinaryExpression$Op;
-    static values(): (Object | null)[];
+    static values(): BinaryExpression$Op[];
     private constructor(arg2: number)
     // private precedence: number;
     precedence(): number;

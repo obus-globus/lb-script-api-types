@@ -6,7 +6,7 @@ export class Win32Process$CommandLineProperty extends Enum<Win32Process$CommandL
     static PROCESSID: Win32Process$CommandLineProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Win32Process$CommandLineProperty;
-    static values(): (Object | null)[];
+    static values(): Win32Process$CommandLineProperty[];
     private constructor()
     name(): "PROCESSID" | "COMMANDLINE";
 }

@@ -6,7 +6,7 @@ export class DebugValue$HashEntryValue$EntryKind extends Enum<DebugValue$HashEnt
     static VALUE: DebugValue$HashEntryValue$EntryKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): DebugValue$HashEntryValue$EntryKind;
-    static values(): (Object | null)[];
+    static values(): DebugValue$HashEntryValue$EntryKind[];
     private constructor()
     name(): "KEY" | "VALUE";
 }

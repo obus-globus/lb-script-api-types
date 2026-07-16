@@ -11,12 +11,14 @@ import type { Block } from '../../../../net/minecraft/world/level/block/Block.d.
 import type { Property } from '../../../../net/minecraft/world/level/block/state/properties/Property.d.ts'
 import type { LootContext } from '../../../../net/minecraft/world/level/storage/loot/LootContext.d.ts'
 import type { ValidationContextSource } from '../../../../net/minecraft/world/level/storage/loot/ValidationContextSource.d.ts'
+import type { LootItemCondition } from '../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
+import type { LootItemCondition$Builder } from '../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder.d.ts'
 export class ItemUsedOnLocationTrigger$TriggerInstance extends Record implements SimpleCriterionTrigger$SimpleInstance {
     static CODEC: Codec<ItemUsedOnLocationTrigger$TriggerInstance>;
     static allayDropItemOnBlock(paramlocation: LocationPredicate$Builder, paramitem: ItemPredicate$Builder): Criterion<ItemUsedOnLocationTrigger$TriggerInstance>;
     static itemUsedOnBlock(paramlocation: LocationPredicate$Builder, paramitem: ItemPredicate$Builder): Criterion<ItemUsedOnLocationTrigger$TriggerInstance>;
     static placedBlock(paramblock: Block): Criterion<ItemUsedOnLocationTrigger$TriggerInstance>;
-    static placedBlock(...paramconditions: (Object | null)[]): Criterion<ItemUsedOnLocationTrigger$TriggerInstance>;
+    static placedBlock(paramconditions: () => LootItemCondition[]): Criterion<ItemUsedOnLocationTrigger$TriggerInstance>;
     static placedBlockWithProperties(paramblock: Block, paramproperties: Property<any>, parampropertyValue: Object | null): Criterion<ItemUsedOnLocationTrigger$TriggerInstance>;
     static placedBlockWithProperties(paramblock: Block, paramproperty: Property<any>, parampropertyValue: string): Criterion<ItemUsedOnLocationTrigger$TriggerInstance>;
     static placedBlockWithProperties(paramblock: Block, paramproperty: Property<boolean>, parampropertyValue: boolean): Criterion<ItemUsedOnLocationTrigger$TriggerInstance>;

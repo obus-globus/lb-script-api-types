@@ -10,7 +10,7 @@ export class UnsignedArrayType extends Enum<UnsignedArrayType> {
     static USHORTARRAY: UnsignedArrayType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): UnsignedArrayType;
-    static values(): (Object | null)[];
+    static values(): UnsignedArrayType[];
     private constructor(arg2: ClassId)
     // private classId: ClassId;
     readonly typeName: Name;

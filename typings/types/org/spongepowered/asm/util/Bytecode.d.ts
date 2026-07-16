@@ -1,4 +1,5 @@
 import type { OutputStream } from '../../../../java/io/OutputStream.d.ts'
+import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Type } from '../../../../org/objectweb/asm/Type.d.ts'
 import type { AbstractInsnNode } from '../../../../org/objectweb/asm/tree/AbstractInsnNode.d.ts'
@@ -26,23 +27,23 @@ export class Bytecode extends Object {
     static findDelegateInit(paramarg0: MethodNode, paramarg1: string, paramarg2: string): Bytecode$DelegateInitialiser;
     static findInsn(paramarg0: MethodNode, paramarg1: number): AbstractInsnNode;
     static findMethod(paramarg0: ClassNode, paramarg1: string, paramarg2: string): MethodNode;
-    static generateDescriptor(paramarg0: Object, ...paramarg1: (Object | null)[]): string;
-    static generateDescriptor(paramarg0: Type, ...paramarg1: (Object | null)[]): string;
-    static getArgsSize(paramarg0: (Object | null)[]): number;
-    static getArgsSize(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): number;
+    static generateDescriptor(paramarg0: Object, ...paramarg1: Object[]): string;
+    static generateDescriptor(paramarg0: Type, ...paramarg1: Type[]): string;
+    static getArgsSize(paramarg0: Type[]): number;
+    static getArgsSize(paramarg0: Type[], paramarg1: number, paramarg2: number): number;
     static getBoxingType(paramarg0: Type): string;
     static getConstant(paramarg0: AbstractInsnNode): Object;
     static getConstantType(paramarg0: AbstractInsnNode): Type;
-    static getDescriptor(paramarg0: Type, ...paramarg1: (Object | null)[]): string;
-    static getDescriptor(...paramarg0: (Object | null)[]): string;
-    static getFirstNonArgLocalIndex(paramarg0: (Object | null)[], paramarg1: boolean): number;
+    static getDescriptor(paramarg0: Type, ...paramarg1: Type[]): string;
+    static getDescriptor(...paramarg0: Type[]): string;
+    static getFirstNonArgLocalIndex(paramarg0: Type[], paramarg1: boolean): number;
     static getFirstNonArgLocalIndex(paramarg0: MethodNode): number;
     static getMaxLineNumber(paramarg0: ClassNode, paramarg1: number, paramarg2: number): number;
     static getOpcodeName(paramarg0: number): string;
     static getOpcodeName(paramarg0: AbstractInsnNode): string;
     static getSimpleName(paramarg0: string): string;
     static getSimpleName(paramarg0: Type): string;
-    static getTypes(paramarg0: Object | null): (Object | null)[];
+    static getTypes(...paramarg0: Class<Object>[]): Type[];
     static getUnboxingMethod(paramarg0: Type): string;
     static getVisibility(paramarg0: FieldNode): Bytecode$Visibility;
     static getVisibility(paramarg0: MethodNode): Bytecode$Visibility;
@@ -55,9 +56,9 @@ export class Bytecode extends Object {
     static isStatic(paramarg0: FieldNode): boolean;
     static isStatic(paramarg0: MethodNode): boolean;
     static isVirtual(paramarg0: MethodNode): boolean;
-    static loadArgs(paramarg0: (Object | null)[], paramarg1: AbstractInsnNode[], paramarg2: number): void;
-    static loadArgs(paramarg0: (Object | null)[], paramarg1: AbstractInsnNode[], paramarg2: number, paramarg3: number): void;
-    static loadArgs(paramarg0: (Object | null)[], paramarg1: AbstractInsnNode[], paramarg2: number, paramarg3: number, paramarg4: (Object | null)[]): void;
+    static loadArgs(paramarg0: Type[], paramarg1: AbstractInsnNode[], paramarg2: number): void;
+    static loadArgs(paramarg0: Type[], paramarg1: AbstractInsnNode[], paramarg2: number, paramarg3: number): void;
+    static loadArgs(paramarg0: Type[], paramarg1: AbstractInsnNode[], paramarg2: number, paramarg3: number, paramarg4: Type[]): void;
     static loadIntConstant(paramarg0: number): AbstractInsnNode;
     static merge(paramarg0: ClassNode, paramarg1: ClassNode): void;
     static methodHasLineNumbers(paramarg0: MethodNode): boolean;

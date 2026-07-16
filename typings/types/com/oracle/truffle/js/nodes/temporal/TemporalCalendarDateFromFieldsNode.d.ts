@@ -8,7 +8,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { TemporalUtil$Overflow } from '../../../../../../com/oracle/truffle/js/runtime/util/TemporalUtil$Overflow.d.ts'
 export abstract class TemporalCalendarDateFromFieldsNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     calendarDateFromFields(calendar: TruffleString, fields: JSDynamicObject, overflow: TemporalUtil$Overflow, toIntegerOrInfinity: JSToIntegerOrInfinityNode, errorBranch: InlinedBranchProfile): JSTemporalPlainDateObject;
     execute(calendar: TruffleString, fields: JSDynamicObject, overflow: TemporalUtil$Overflow): JSTemporalPlainDateObject;

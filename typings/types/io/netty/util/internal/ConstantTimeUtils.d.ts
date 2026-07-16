@@ -4,6 +4,5 @@ export class ConstantTimeUtils extends Object {
     static equalsConstantTime(paramarg0: number[], paramarg1: number, paramarg2: number[], paramarg3: number, paramarg4: number): number;
     static equalsConstantTime(paramarg0: number, paramarg1: number): number;
     static equalsConstantTime(paramarg0: CharSequence, paramarg1: CharSequence): number;
-    static equalsConstantTime(paramarg0: number, paramarg1: number): number;
     private constructor()
 }

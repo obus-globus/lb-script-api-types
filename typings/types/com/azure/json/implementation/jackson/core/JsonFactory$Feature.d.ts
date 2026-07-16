@@ -10,7 +10,7 @@ export class JsonFactory$Feature extends Enum<JsonFactory$Feature> implements Ja
     static collectDefaults(): number;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): JsonFactory$Feature;
-    static values(): (Object | null)[];
+    static values(): JsonFactory$Feature[];
     private constructor(arg2: boolean)
     // private _defaultState: boolean;
     enabledByDefault(): boolean;

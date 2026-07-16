@@ -6,7 +6,7 @@ export class PacketBound extends Enum<PacketBound> {
     static REMOVED_AT_MAX: PacketBound;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PacketBound;
-    static values(): (Object | null)[];
+    static values(): PacketBound[];
     private constructor()
     name(): "ADDED_AT_MIN" | "REMOVED_AT_MAX";
 }

@@ -15,7 +15,7 @@ export class Protocol extends Enum<Protocol> {
     static getEntries(): Protocol[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Protocol;
-    static values(): (Object | null)[];
+    static values(): Protocol[];
     private constructor(protocol: string)
     // private protocol: string;
     toString(): string;

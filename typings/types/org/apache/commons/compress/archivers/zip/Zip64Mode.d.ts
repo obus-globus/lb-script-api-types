@@ -8,7 +8,7 @@ export class Zip64Mode extends Enum<Zip64Mode> {
     static Never: Zip64Mode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Zip64Mode;
-    static values(): (Object | null)[];
+    static values(): Zip64Mode[];
     private constructor()
     name(): "Always" | "Never" | "AsNeeded" | "AlwaysWithCompatibility";
 }

@@ -2,7 +2,6 @@ import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 import type { Tagged } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged.d.ts'
-import type { Tagged$Companion } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
 import type { HitFXRegistry$Companion } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/render/hitfx/HitFXRegistry$Companion.d.ts'
 import type { SoundEvent } from '../../../../../../../../net/minecraft/sounds/SoundEvent.d.ts'
 export class HitFXRegistry extends Enum<HitFXRegistry> implements Tagged {
@@ -10,7 +9,6 @@ export class HitFXRegistry extends Enum<HitFXRegistry> implements Tagged {
     static BOYKISSER: HitFXRegistry;
     static BRING: HitFXRegistry;
     static CLICK: HitFXRegistry;
-    static Companion: Tagged$Companion;
     static Companion: HitFXRegistry$Companion;
     static GLASS: HitFXRegistry;
     static HIT: HitFXRegistry;
@@ -30,7 +28,7 @@ export class HitFXRegistry extends Enum<HitFXRegistry> implements Tagged {
     static registerAll(): void;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HitFXRegistry;
-    static values(): (Object | null)[];
+    static values(): HitFXRegistry[];
     private constructor(tag: string, vanillaSounds: SoundEvent[], customSoundIds: string[])
     // private customSoundIds: string[];
     readonly sounds: SoundEvent[];

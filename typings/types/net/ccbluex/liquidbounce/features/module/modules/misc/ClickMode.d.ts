@@ -12,7 +12,7 @@ export class ClickMode extends Enum<ClickMode> implements Tagged {
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClickMode;
-    static values(): (Object | null)[];
+    static values(): ClickMode[];
     private constructor(tag: string, action: ClickAction)
     readonly action: ClickAction;
     readonly tag: string;

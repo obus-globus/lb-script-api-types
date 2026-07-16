@@ -7,7 +7,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ReadElementNodeFactory$ReadElementArrayDispatchNodeGen extends ReadElementNode$ReadElementArrayDispatchNode {
     static create(): ReadElementNode$ReadElementArrayDispatchNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private dispatcher__field1_: Node;
     // private state_0_: number;

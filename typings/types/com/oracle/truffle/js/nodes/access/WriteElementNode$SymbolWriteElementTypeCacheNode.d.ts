@@ -5,7 +5,6 @@ import type { JSToPropertyKeyNode } from '../../../../../../com/oracle/truffle/j
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class WriteElementNode$SymbolWriteElementTypeCacheNode extends WriteElementNode$ToPropertyKeyCachedWriteElementTypeCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doSymbol(target: Object, index: Object, value: Object, receiver: Object, root: WriteElementNode, indexToPropertyKeyNode: JSToPropertyKeyNode): void;
     doSymbol(target: Object, index: number, value: Object, receiver: Object, root: WriteElementNode): void;

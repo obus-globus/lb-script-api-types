@@ -6,7 +6,7 @@ export class RTCRtcpMuxPolicy extends Enum<RTCRtcpMuxPolicy> {
     static REQUIRE: RTCRtcpMuxPolicy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RTCRtcpMuxPolicy;
-    static values(): (Object | null)[];
+    static values(): RTCRtcpMuxPolicy[];
     private constructor()
     name(): "NEGOTIATE" | "REQUIRE";
 }

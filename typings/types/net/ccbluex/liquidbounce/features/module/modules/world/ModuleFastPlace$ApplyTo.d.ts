@@ -14,7 +14,7 @@ export class ModuleFastPlace$ApplyTo extends Enum<ModuleFastPlace$ApplyTo> imple
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleFastPlace$ApplyTo;
-    static values(): (Object | null)[];
+    static values(): ModuleFastPlace$ApplyTo[];
     private constructor(tag: string, condition: (param0: Item) => boolean)
     readonly condition: (param0: Item) => boolean;
     readonly tag: string;

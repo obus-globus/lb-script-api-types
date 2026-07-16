@@ -9,7 +9,7 @@ export class MicrosoftAccount$AuthMethod extends Enum<MicrosoftAccount$AuthMetho
     static getEntries(): MicrosoftAccount$AuthMethod[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MicrosoftAccount$AuthMethod;
-    static values(): (Object | null)[];
+    static values(): MicrosoftAccount$AuthMethod[];
     private constructor(clientId: string, redirectUri: string, scope: string, rpsTicketRule: string)
     readonly clientId: string;
     readonly redirectUri: string;

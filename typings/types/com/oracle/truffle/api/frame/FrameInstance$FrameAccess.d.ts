@@ -7,7 +7,7 @@ export class FrameInstance$FrameAccess extends Enum<FrameInstance$FrameAccess> {
     static READ_WRITE: FrameInstance$FrameAccess;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): FrameInstance$FrameAccess;
-    static values(): (Object | null)[];
+    static values(): FrameInstance$FrameAccess[];
     private constructor()
     name(): "READ_ONLY" | "READ_WRITE" | "MATERIALIZE";
 }

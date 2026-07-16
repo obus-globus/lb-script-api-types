@@ -14,7 +14,7 @@ export class SerializedAbilitiesData_SerializedAbilitiesLayer extends Enum<Seria
     static getByValue(paramarg0: number, paramarg1: SerializedAbilitiesData_SerializedAbilitiesLayer): SerializedAbilitiesData_SerializedAbilitiesLayer;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SerializedAbilitiesData_SerializedAbilitiesLayer;
-    static values(): (Object | null)[];
+    static values(): SerializedAbilitiesData_SerializedAbilitiesLayer[];
     private constructor(arg2: number)
     private constructor(arg2: SerializedAbilitiesData_SerializedAbilitiesLayer)
     readonly value: number;

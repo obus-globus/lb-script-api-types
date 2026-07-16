@@ -7,7 +7,7 @@ export class Variance extends Enum<Variance> {
     static OUT_VARIANCE: Variance;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Variance;
-    static values(): (Object | null)[];
+    static values(): Variance[];
     private constructor(arg2: string, arg3: boolean, arg4: boolean, arg5: number)
     // private allowsInPosition: boolean;
     readonly allowsOutPosition: boolean;

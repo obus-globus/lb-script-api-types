@@ -8,8 +8,8 @@ import type { Object } from '../java/lang/Object.d.ts'
 import type { Throwable } from '../java/lang/Throwable.d.ts'
 import type { Call } from '../retrofit2/Call.d.ts'
 export class CompletableFutureCallAdapterFactory$CallCancelCompletableFuture<T extends unknown> extends CompletableFuture<T> {
-    static allOf(paramarg0: Object | null): CompletableFuture<void>;
-    static anyOf(paramarg0: Object | null): CompletableFuture<Object>;
+    static allOf(...paramarg0: CompletableFuture<Object>[]): CompletableFuture<void>;
+    static anyOf(...paramarg0: CompletableFuture<Object>[]): CompletableFuture<Object>;
     static completedFuture(paramarg0: Object | null): CompletableFuture<Object>;
     static completedStage(paramarg0: Object | null): CompletionStage<Object>;
     static delayedExecutor(paramarg0: number, paramarg1: TimeUnit): Executor;

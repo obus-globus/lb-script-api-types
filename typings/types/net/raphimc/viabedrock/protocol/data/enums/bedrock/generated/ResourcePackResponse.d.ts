@@ -12,7 +12,7 @@ export class ResourcePackResponse extends Enum<ResourcePackResponse> {
     static getByValue(paramarg0: number, paramarg1: ResourcePackResponse): ResourcePackResponse;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ResourcePackResponse;
-    static values(): (Object | null)[];
+    static values(): ResourcePackResponse[];
     private constructor(arg2: number)
     private constructor(arg2: ResourcePackResponse)
     readonly value: number;

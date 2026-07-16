@@ -6,7 +6,7 @@ export abstract class AbstractAssumption extends Object implements Assumption {
     static create(): Assumption;
     static create(paramname: string): Assumption;
     static isValidAssumption(paramassumption: Assumption): boolean;
-    static isValidAssumption(paramassumptions: (Object | null)[]): boolean;
+    static isValidAssumption(paramassumptions: Assumption[]): boolean;
     constructor(name: Object)
     // private isValid: boolean;
     readonly name: Object;

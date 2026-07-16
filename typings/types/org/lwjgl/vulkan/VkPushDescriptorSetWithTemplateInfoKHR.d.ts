@@ -25,28 +25,21 @@ export class VkPushDescriptorSetWithTemplateInfoKHR extends VkPushDescriptorSetW
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPushDescriptorSetWithTemplateInfoKHR;
     static calloc(paramarg0: MemoryStack): VkPushDescriptorSetWithTemplateInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPushDescriptorSetWithTemplateInfo;
     static create(paramarg0: number): VkPushDescriptorSetWithTemplateInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPushDescriptorSetWithTemplateInfoKHR;
     static create(paramarg0: number): VkPushDescriptorSetWithTemplateInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPushDescriptorSetWithTemplateInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPushDescriptorSetWithTemplateInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPushDescriptorSetWithTemplateInfo;
     static malloc(paramarg0: MemoryStack): VkPushDescriptorSetWithTemplateInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPushDescriptorSetWithTemplateInfoKHR;
     static malloc(paramarg0: MemoryStack): VkPushDescriptorSetWithTemplateInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ndescriptorUpdateTemplate(paramarg0: number): number;
     static ndescriptorUpdateTemplate(paramarg0: number, paramarg1: number): void;
     static nlayout(paramarg0: number): number;
@@ -59,7 +52,6 @@ export class VkPushDescriptorSetWithTemplateInfoKHR extends VkPushDescriptorSetW
     static nsType(paramarg0: number, paramarg1: number): void;
     static nset(paramarg0: number): number;
     static nset(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

@@ -14,7 +14,7 @@ export class CreativeItemCategory extends Enum<CreativeItemCategory> {
     static getByValue(paramarg0: number, paramarg1: CreativeItemCategory): CreativeItemCategory;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CreativeItemCategory;
-    static values(): (Object | null)[];
+    static values(): CreativeItemCategory[];
     private constructor(arg2: number)
     private constructor(arg2: CreativeItemCategory)
     readonly value: number;

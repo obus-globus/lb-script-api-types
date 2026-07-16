@@ -7,7 +7,6 @@ import type { JSTemporalPlainDateTimeObject } from '../../../../../../com/oracle
 import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
 export abstract class TemporalAddZonedDateTimeNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     addZonedDateTime(epochNanoseconds: BigInt, timeZone: TruffleString, calendar: TruffleString, years: number, months: number, weeks: number, days: number, norm: BigInt, precalculatedPlainDateTime: JSTemporalPlainDateTimeObject, options: JSDynamicObject, errorBranch: InlinedBranchProfile): BigInt;
     execute(epochNanoseconds: BigInt, timeZone: TruffleString, calendar: TruffleString, years: number, months: number, weeks: number, days: number, norm: BigInt, precalculatedPlainDateTime: JSTemporalPlainDateTimeObject): BigInt;

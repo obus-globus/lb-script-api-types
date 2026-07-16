@@ -4,9 +4,9 @@ import type { ToIntFunction } from '../../../../java/util/function/ToIntFunction
 import type { Stream } from '../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class EnumUtils extends Object {
-    static generateBitVector(paramarg0: Class<Object>, paramarg1: Object | null): number;
+    static generateBitVector(paramarg0: Class<Object>, ...paramarg1: (Object | null)[]): number;
     static generateBitVector(paramarg0: Class<Object>, paramarg1: (Object | null)[]): number;
-    static generateBitVectors(paramarg0: Class<Object>, paramarg1: Object | null): number[];
+    static generateBitVectors(paramarg0: Class<Object>, ...paramarg1: (Object | null)[]): number[];
     static generateBitVectors(paramarg0: Class<Object>, paramarg1: (Object | null)[]): number[];
     static getEnum(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static getEnum(paramarg0: Class<Object>, paramarg1: string, paramarg2: Object | null): Object | null;

@@ -7,7 +7,7 @@ export class RealmsServer$State extends Enum<RealmsServer$State> {
     static UNINITIALIZED: RealmsServer$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RealmsServer$State;
-    static values(): (Object | null)[];
+    static values(): RealmsServer$State[];
     private constructor()
     name(): "CLOSED" | "OPEN" | "UNINITIALIZED";
 }

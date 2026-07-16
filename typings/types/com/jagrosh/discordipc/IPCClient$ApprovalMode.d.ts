@@ -6,7 +6,7 @@ export class IPCClient$ApprovalMode extends Enum<IPCClient$ApprovalMode> {
     static DENY: IPCClient$ApprovalMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): IPCClient$ApprovalMode;
-    static values(): (Object | null)[];
+    static values(): IPCClient$ApprovalMode[];
     private constructor()
     name(): "ACCEPT" | "DENY";
 }

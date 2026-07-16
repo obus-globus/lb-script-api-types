@@ -10,7 +10,7 @@ export class SocksCmdType extends Enum<SocksCmdType> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: number): SocksCmdType;
     static valueOf(paramarg0: string): SocksCmdType;
-    static values(): (Object | null)[];
+    static values(): SocksCmdType[];
     private constructor(arg2: number)
     // private b: number;
     byteValue(): number;

@@ -15,7 +15,7 @@ export class ExternalParser extends Object implements Parser {
     static INPUT_FILE_TOKEN: string;
     static OUTPUT_FILE_TOKEN: string;
     static check(paramarg0: string, ...paramarg1: number[]): boolean;
-    static check(paramarg0: (Object | null)[], ...paramarg1: number[]): boolean;
+    static check(paramarg0: string[], ...paramarg1: number[]): boolean;
     constructor()
     readonly command: string[];
     readonly ignoredLineConsumer: ExternalParser$LineConsumer;

@@ -7,7 +7,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSProxyCallNodeGen extends JSProxyCallNode {
     static create(paramcontext: JSContext, paramisNew: boolean, paramisNewTarget: boolean): JSProxyCallNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, isNew: boolean, isNewTarget: boolean)
     // private call_isCallable_: IsCallableNode;
     // private construct_isConstructor_: IsConstructorNode;

@@ -11,7 +11,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class StringPrototypeBuiltins$JSStringReplaceES5Node$FunctionReplacer extends StringPrototypeBuiltins$JSStringReplaceES5Node$Replacer<JSFunctionObject> {
     static create(paramparent: StringPrototypeBuiltins$JSStringReplaceES5Node): StringPrototypeBuiltins$JSStringReplaceES5Node$FunctionReplacer;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(parent: StringPrototypeBuiltins$JSStringReplaceES5Node)
     // private functionCallNode: JSFunctionCallNode;
     // private toStringNode: JSToStringNode;

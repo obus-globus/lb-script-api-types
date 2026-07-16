@@ -22,28 +22,21 @@ export class VkRenderPassInputAttachmentAspectCreateInfoKHR extends VkRenderPass
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkRenderPassInputAttachmentAspectCreateInfoKHR;
     static calloc(paramarg0: MemoryStack): VkRenderPassInputAttachmentAspectCreateInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkRenderPassInputAttachmentAspectCreateInfo;
     static create(paramarg0: number): VkRenderPassInputAttachmentAspectCreateInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkRenderPassInputAttachmentAspectCreateInfoKHR;
     static create(paramarg0: number): VkRenderPassInputAttachmentAspectCreateInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkRenderPassInputAttachmentAspectCreateInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkRenderPassInputAttachmentAspectCreateInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkRenderPassInputAttachmentAspectCreateInfo;
     static malloc(paramarg0: MemoryStack): VkRenderPassInputAttachmentAspectCreateInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkRenderPassInputAttachmentAspectCreateInfoKHR;
     static malloc(paramarg0: MemoryStack): VkRenderPassInputAttachmentAspectCreateInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static naspectReferenceCount(paramarg0: number): number;
     static naspectReferenceCount(paramarg0: number, paramarg1: number): void;
     static npAspectReferences(paramarg0: number): (Object | null)[];
@@ -52,7 +45,6 @@ export class VkRenderPassInputAttachmentAspectCreateInfoKHR extends VkRenderPass
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

@@ -9,7 +9,7 @@ export class MixinInfo$Variant extends Enum<MixinInfo$Variant> {
     static STANDARD: MixinInfo$Variant;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MixinInfo$Variant;
-    static values(): (Object | null)[];
+    static values(): MixinInfo$Variant[];
     private constructor()
     name(): "STANDARD" | "INTERFACE" | "ACCESSOR" | "PROXY" | "ENUM_EXTENSION";
 }

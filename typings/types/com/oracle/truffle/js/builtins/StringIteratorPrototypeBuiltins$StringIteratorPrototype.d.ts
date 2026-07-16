@@ -11,7 +11,7 @@ export class StringIteratorPrototypeBuiltins$StringIteratorPrototype extends Enu
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): StringIteratorPrototypeBuiltins$StringIteratorPrototype;
-    static values(): (Object | null)[];
+    static values(): StringIteratorPrototypeBuiltins$StringIteratorPrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

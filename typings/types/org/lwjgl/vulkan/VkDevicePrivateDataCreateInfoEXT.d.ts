@@ -21,35 +21,27 @@ export class VkDevicePrivateDataCreateInfoEXT extends VkDevicePrivateDataCreateI
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkDevicePrivateDataCreateInfoEXT;
     static calloc(paramarg0: MemoryStack): VkDevicePrivateDataCreateInfoEXT;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkDevicePrivateDataCreateInfo;
     static create(paramarg0: number): VkDevicePrivateDataCreateInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkDevicePrivateDataCreateInfoEXT;
     static create(paramarg0: number): VkDevicePrivateDataCreateInfoEXT;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkDevicePrivateDataCreateInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkDevicePrivateDataCreateInfoEXT;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkDevicePrivateDataCreateInfo;
     static malloc(paramarg0: MemoryStack): VkDevicePrivateDataCreateInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkDevicePrivateDataCreateInfoEXT;
     static malloc(paramarg0: MemoryStack): VkDevicePrivateDataCreateInfoEXT;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static nprivateDataSlotRequestCount(paramarg0: number): number;
     static nprivateDataSlotRequestCount(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

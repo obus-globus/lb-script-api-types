@@ -15,7 +15,7 @@ export class Rotation extends Enum<Rotation> {
     static getByValue(paramarg0: number, paramarg1: Rotation): Rotation;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Rotation;
-    static values(): (Object | null)[];
+    static values(): Rotation[];
     private constructor(arg2: number)
     private constructor(arg2: Rotation)
     readonly value: number;

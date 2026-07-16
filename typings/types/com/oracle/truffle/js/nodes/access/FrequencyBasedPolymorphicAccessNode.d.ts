@@ -5,7 +5,6 @@ import type { PropertyCacheNode } from '../../../../../../com/oracle/truffle/js/
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class FrequencyBasedPolymorphicAccessNode<T extends PropertyCacheNode<any>> extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(size: number)
     // private hitsDistributionMap: Map<Object, FrequencyBasedPolymorphicAccessNode$HitsCount>;
     // private maxHitsPerKey: number;

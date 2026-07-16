@@ -10,7 +10,7 @@ export class PiglinArmPose extends Enum<PiglinArmPose> {
     static DEFAULT: PiglinArmPose;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PiglinArmPose;
-    static values(): (Object | null)[];
+    static values(): PiglinArmPose[];
     private constructor()
     name(): "ATTACKING_WITH_MELEE_WEAPON" | "CROSSBOW_HOLD" | "CROSSBOW_CHARGE" | "ADMIRING_ITEM" | "DANCING" | "DEFAULT";
 }

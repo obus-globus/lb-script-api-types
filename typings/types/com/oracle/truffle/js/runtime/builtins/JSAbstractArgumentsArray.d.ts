@@ -16,9 +16,9 @@ export abstract class JSAbstractArgumentsArray extends JSAbstractArray {
     static ARRAY_PROTOTYPE_NO_ELEMENTS_INVALIDATION: string;
     static CALLEE: TruffleString;
     static CALLER: TruffleString;
-    static DEFAULT_JSARRAY_COMPARATOR: (param0: Object) => boolean;
-    static DEFAULT_JSARRAY_DOUBLE_COMPARATOR: (param0: Object) => boolean;
-    static DEFAULT_JSARRAY_INTEGER_COMPARATOR: (param0: Object) => boolean;
+    static DEFAULT_JSARRAY_COMPARATOR: (param0: Object, param1: Object) => number;
+    static DEFAULT_JSARRAY_DOUBLE_COMPARATOR: (param0: Object, param1: Object) => number;
+    static DEFAULT_JSARRAY_INTEGER_COMPARATOR: (param0: Object, param1: Object) => number;
     static GET_SYMBOL_SPECIES_NAME: TruffleString;
     static LAZY_REGEX_ORIGINAL_INPUT_ID: HiddenKey;
     static LAZY_REGEX_RESULT_ID: HiddenKey;
@@ -39,7 +39,6 @@ export abstract class JSAbstractArgumentsArray extends JSAbstractArray {
     static arraySetHoleCount(paramthisObj: JSDynamicObject, paramholeCount: number): void;
     static arraySetIndexOffset(paramthisObj: JSDynamicObject, paramindexOffset: number): void;
     static arraySetLength(paramthisObj: JSDynamicObject, paramlength: number): void;
-    static arraySetLength(paramthisObj: JSDynamicObject, paramlength: number): void;
     static arraySetUsedLength(paramthisObj: JSDynamicObject, paramusedLength: number): void;
     static checkProtoCycle(paramthisObj: JSDynamicObject, paramnewPrototype: JSDynamicObject): boolean;
     static disconnectIndex(paramargumentsArray: JSDynamicObject, paramindex: number, paramoldValue: Object): void;
@@ -58,7 +57,7 @@ export abstract class JSAbstractArgumentsArray extends JSAbstractArray {
     static setDisconnectedIndexValue(paramargumentsArray: JSDynamicObject, paramindex: number, paramvalue: Object): Object;
     static setIntegrityLevelFast(paramthisObj: JSDynamicObject, paramfreeze: boolean): boolean;
     static testIntegrityLevelFast(paramobj: JSDynamicObject, paramfrozen: boolean): boolean;
-    static toArray(paramthisObj: JSDynamicObject): (Object | null)[];
+    static toArray(paramthisObj: JSDynamicObject): Object[];
     static toArrayLengthOrRangeError(paramlen: Number, paramlen32: Number, paramoriginatingNode: Node): number;
     static toArrayLengthOrRangeError(paramobj: Object, paramoriginatingNode: Node): number;
     static wasIndexDisconnected(paramargumentsArray: JSDynamicObject, paramindex: number): boolean;

@@ -8,8 +8,6 @@ export class ImmutableIntArray extends Object implements Serializable {
     static builder(): ImmutableIntArray$Builder;
     static builder(paraminitialCapacity: number): ImmutableIntArray$Builder;
     static copyOf(paramvalues: number[]): ImmutableIntArray;
-    static copyOf(paramvalues: number[]): ImmutableIntArray;
-    static copyOf(paramvalues: number[]): ImmutableIntArray;
     static copyOf(paramstream: IntStream): ImmutableIntArray;
     static of(): ImmutableIntArray;
     static of(parame0: number): ImmutableIntArray;

@@ -6,7 +6,7 @@ export class PackType extends Enum<PackType> {
     static SERVER_DATA: PackType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PackType;
-    static values(): (Object | null)[];
+    static values(): PackType[];
     private constructor(directory: string)
     readonly directory: string;
     getDirectory(): string;

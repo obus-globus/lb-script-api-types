@@ -7,7 +7,7 @@ export class RealmsClient$CompatibleVersionResponse extends Enum<RealmsClient$Co
     static OUTDATED: RealmsClient$CompatibleVersionResponse;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RealmsClient$CompatibleVersionResponse;
-    static values(): (Object | null)[];
+    static values(): RealmsClient$CompatibleVersionResponse[];
     private constructor()
     name(): "COMPATIBLE" | "OUTDATED" | "OTHER";
 }

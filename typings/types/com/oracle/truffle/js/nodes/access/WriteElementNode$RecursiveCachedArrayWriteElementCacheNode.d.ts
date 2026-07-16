@@ -7,7 +7,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class WriteElementNode$RecursiveCachedArrayWriteElementCacheNode extends WriteElementNode$ArrayWriteElementCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     // private recursiveWrite: WriteElementNode$ArrayWriteElementCacheDispatchNode;
     // private executeRecursive(targetObject: JSDynamicObject, array: ScriptArray, index: number, value: Object, root: WriteElementNode): boolean;

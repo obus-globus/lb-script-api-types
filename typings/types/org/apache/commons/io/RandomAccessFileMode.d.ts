@@ -1,6 +1,7 @@
 import type { File } from '../../../../java/io/File.d.ts'
 import type { RandomAccessFile } from '../../../../java/io/RandomAccessFile.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
+import type { OpenOption } from '../../../../java/nio/file/OpenOption.d.ts'
 import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
@@ -14,9 +15,9 @@ export class RandomAccessFileMode extends Enum<RandomAccessFileMode> {
     static READ_WRITE_SYNC_CONTENT: RandomAccessFileMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RandomAccessFileMode;
-    static valueOf(...paramarg0: (Object | null)[]): RandomAccessFileMode;
+    static valueOf(...paramarg0: OpenOption[]): RandomAccessFileMode;
     static valueOfMode(paramarg0: string): RandomAccessFileMode;
-    static values(): (Object | null)[];
+    static values(): RandomAccessFileMode[];
     private constructor(arg2: string, arg3: number)
     // private level: number;
     readonly mode: string;

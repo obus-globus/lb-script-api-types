@@ -19,7 +19,6 @@ export abstract class JSGetOwnPropertyNode extends JavaScriptBaseNode {
     static create(paramneedValue: boolean): JSGetOwnPropertyNode;
     static create(paramneedValue: boolean, paramneedEnumerability: boolean, paramneedConfigurability: boolean, paramneedWritability: boolean, paramallowCaching: boolean): JSGetOwnPropertyNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(needValue: boolean, needEnumerability: boolean, needConfigurability: boolean, needWritability: boolean, allowCaching: boolean)
     // private allowCaching: boolean;
     // private getPropertyProxyValueNode: JSGetOwnPropertyNode$GetPropertyProxyValueNode;

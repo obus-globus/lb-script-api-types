@@ -41,7 +41,7 @@ export class ServerboundPackets1_5_2 extends Enum<ServerboundPackets1_5_2> imple
     static getPacket(paramarg0: number): ServerboundPackets1_5_2;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ServerboundPackets1_5_2;
-    static values(): (Object | null)[];
+    static values(): ServerboundPackets1_5_2[];
     private constructor(arg2: number, arg3: (param0: UserConnection, param1: ByteBuf) => void)
     readonly id: number;
     readonly packetReader: (param0: UserConnection, param1: ByteBuf) => void;

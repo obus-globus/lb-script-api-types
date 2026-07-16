@@ -9,8 +9,6 @@ export class Vector2iKt extends Object {
     static distance(paramarg0: Vector2ic, paramarg1: Vector2ic): number;
     static distanceSquared(paramarg0: Vector2ic, paramarg1: Vector2ic): number;
     static div(paramarg0: Vector2ic, paramarg1: number): Vector2i;
-    static div(paramarg0: Vector2ic, paramarg1: number): Vector2i;
-    static divAssign(paramarg0: Vector2i, paramarg1: number): void;
     static divAssign(paramarg0: Vector2i, paramarg1: number): void;
     static getVector2i(paramarg0: ByteBuffer): Vector2i;
     static getVector2i(paramarg0: ByteBuffer, paramarg1: number): Vector2i;

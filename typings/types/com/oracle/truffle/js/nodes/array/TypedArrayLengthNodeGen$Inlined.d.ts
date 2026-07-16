@@ -10,7 +10,6 @@ import type { JSTypedArrayObject } from '../../../../../../com/oracle/truffle/js
 export class TypedArrayLengthNodeGen$Inlined extends TypedArrayLengthNode implements UnadoptableNode {
     static create(): TypedArrayLengthNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(target: InlineSupport$InlineTarget)
     // private autoLength_getByteLengthNode_: ArrayBufferByteLengthNode;
     // private autoLength_getByteLengthNode__field1_: InlineSupport$ReferenceField<Node>;

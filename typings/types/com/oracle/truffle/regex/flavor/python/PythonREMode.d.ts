@@ -8,7 +8,7 @@ export class PythonREMode extends Enum<PythonREMode> {
     static fromEncoding(paramencoding: Encodings$Encoding): PythonREMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PythonREMode;
-    static values(): (Object | null)[];
+    static values(): PythonREMode[];
     private constructor()
     name(): "Str" | "Bytes";
 }

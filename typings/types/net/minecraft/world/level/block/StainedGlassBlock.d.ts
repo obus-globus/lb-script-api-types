@@ -1,7 +1,6 @@
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { IntFunction } from '../../../../../java/util/function/IntFunction.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Direction } from '../../../../../net/minecraft/core/Direction.d.ts'
 import type { ResourceKey } from '../../../../../net/minecraft/resources/ResourceKey.d.ts'
@@ -18,7 +17,6 @@ import type { LevelAccessor } from '../../../../../net/minecraft/world/level/Lev
 import type { LevelReader } from '../../../../../net/minecraft/world/level/LevelReader.d.ts'
 import type { BeaconBeamBlock } from '../../../../../net/minecraft/world/level/block/BeaconBeamBlock.d.ts'
 import type { Block } from '../../../../../net/minecraft/world/level/block/Block.d.ts'
-import type { HalfTransparentBlock } from '../../../../../net/minecraft/world/level/block/HalfTransparentBlock.d.ts'
 import type { TransparentBlock } from '../../../../../net/minecraft/world/level/block/TransparentBlock.d.ts'
 import type { BlockEntity } from '../../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
 import type { BlockBehaviour$Properties } from '../../../../../net/minecraft/world/level/block/state/BlockBehaviour$Properties.d.ts'
@@ -26,10 +24,7 @@ import type { BlockState } from '../../../../../net/minecraft/world/level/block/
 import type { VoxelShape } from '../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 export class StainedGlassBlock extends TransparentBlock implements BeaconBeamBlock {
     static BLOCK_STATE_REGISTRY: BlockState[];
-    static CODEC: MapCodec<Block>;
-    static CODEC: MapCodec<HalfTransparentBlock>;
     static CODEC: MapCodec<StainedGlassBlock>;
-    static CODEC: MapCodec<TransparentBlock>;
     static FILTERED_REGISTRIES: ResourceKey<FeatureElement[]>[];
     static INDESTRUCTIBLE: number;
     static INSTANT: number;
@@ -52,7 +47,7 @@ export class StainedGlassBlock extends TransparentBlock implements BeaconBeamBlo
     static boxZ(paramsizeXY: number, paramminZ: number, parammaxZ: number): VoxelShape;
     static boxZ(paramsizeX: number, paramsizeY: number, paramminZ: number, parammaxZ: number): VoxelShape;
     static boxZ(paramsizeX: number, paramminY: number, parammaxY: number, paramminZ: number, parammaxZ: number): VoxelShape;
-    static boxes(paramendInclusive: number, paramvoxelShapeFactory: (param0: number) => VoxelShape): (Object | null)[];
+    static boxes(paramendInclusive: number, paramvoxelShapeFactory: (param0: number) => VoxelShape): VoxelShape[];
     static byItem(paramitem: Item): Block;
     static canSupportCenter(paramlevel: LevelReader, parambelowPos: BlockPos, paramdirection: Direction): boolean;
     static canSupportRigidBlock(paramlevel: BlockGetter, parambelow: BlockPos): boolean;

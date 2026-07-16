@@ -11,6 +11,6 @@ export class Blocks extends Object {
     static batchFlattenBlock(paramarg0: number): Block;
     static describe(paramarg0: Block, paramarg1: string, paramarg2: number): string;
     static identityBlock(): Block;
-    static onesBlock(paramarg0: Pair<DataType, Shape>[], paramarg1: (Object | null)[]): Block;
+    static onesBlock(paramarg0: Pair<DataType, Shape>[], paramarg1: string[]): Block;
     private constructor()
 }

@@ -26,7 +26,6 @@ export class UniversalTimeScale extends Object {
     static WINDOWS_FILE_TIME: number;
     static bigDecimalFrom(paramarg0: BigDecimal, paramarg1: number): BigDecimal;
     static bigDecimalFrom(paramarg0: number, paramarg1: number): BigDecimal;
-    static bigDecimalFrom(paramarg0: number, paramarg1: number): BigDecimal;
     static from(paramarg0: number, paramarg1: number): number;
     static getTimeScaleValue(paramarg0: number, paramarg1: number): number;
     static toBigDecimal(paramarg0: BigDecimal, paramarg1: number): BigDecimal;

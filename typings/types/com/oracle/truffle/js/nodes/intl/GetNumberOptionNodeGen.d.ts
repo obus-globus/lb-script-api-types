@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class GetNumberOptionNodeGen extends GetNumberOptionNode {
     static create(paramcontext: JSContext, paramproperty: TruffleString): GetNumberOptionNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, property: TruffleString)
     executeInt(arg0Value: Object, arg1Value: number, arg2Value: number, arg3Value: number): number;
 }

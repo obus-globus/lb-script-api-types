@@ -32,7 +32,7 @@ export class BoxExtensionsKt extends Object {
      */
     static getNearestPoint(aABB: AABB, from: Position): Vec3;
     static getNearestPointOnSide(aABB: AABB, from: Vec3, side: Direction): Vec3;
-    static getVertices(paramarg0: AABB): (Object | null)[];
+    static getVertices(paramarg0: AABB): Vec3[];
     /**
      * Tests if the infinite line resulting from {@link start} and the point {@link p} will intersect this box.
      *

@@ -4,6 +4,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../../java/lang/Throwable.d.ts'
 import type { Level } from '../../../../../../org/apache/logging/log4j/Level.d.ts'
 import type { Marker } from '../../../../../../org/apache/logging/log4j/Marker.d.ts'
+import type { Filter } from '../../../../../../org/apache/logging/log4j/core/Filter.d.ts'
 import type { Filter$Result } from '../../../../../../org/apache/logging/log4j/core/Filter$Result.d.ts'
 import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
 import type { Logger } from '../../../../../../org/apache/logging/log4j/core/Logger.d.ts'
@@ -13,8 +14,8 @@ export class RegexFilter extends AbstractFilter {
     static DEFAULT_STOP_TIMEOUT: number;
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
     static ELEMENT_TYPE: string;
-    static EMPTY_ARRAY: (Object | null)[];
-    static createFilter(paramregex: string, parampatternFlags: (Object | null)[], paramuseRawMsg: boolean, parammatch: Filter$Result, parammismatch: Filter$Result): RegexFilter;
+    static EMPTY_ARRAY: Filter[];
+    static createFilter(paramregex: string, parampatternFlags: string[], paramuseRawMsg: boolean, parammatch: Filter$Result, parammismatch: Filter$Result): RegexFilter;
     private constructor(raw: boolean, pattern: Pattern, onMatch: Filter$Result, onMismatch: Filter$Result)
     // private pattern: Pattern;
     // private useRawMessage: boolean;

@@ -28,28 +28,21 @@ export class VkCopyMemoryToImageIndirectCommandNV extends VkCopyMemoryToImageInd
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkCopyMemoryToImageIndirectCommandNV;
     static calloc(paramarg0: MemoryStack): VkCopyMemoryToImageIndirectCommandNV;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkCopyMemoryToImageIndirectCommandKHR;
     static create(paramarg0: number): VkCopyMemoryToImageIndirectCommandKHR;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkCopyMemoryToImageIndirectCommandNV;
     static create(paramarg0: number): VkCopyMemoryToImageIndirectCommandNV;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkCopyMemoryToImageIndirectCommandKHR;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkCopyMemoryToImageIndirectCommandNV;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkCopyMemoryToImageIndirectCommandKHR;
     static malloc(paramarg0: MemoryStack): VkCopyMemoryToImageIndirectCommandKHR;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkCopyMemoryToImageIndirectCommandNV;
     static malloc(paramarg0: MemoryStack): VkCopyMemoryToImageIndirectCommandNV;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nbufferImageHeight(paramarg0: number): number;
     static nbufferImageHeight(paramarg0: number, paramarg1: number): void;
     static nbufferRowLength(paramarg0: number): number;
@@ -62,7 +55,6 @@ export class VkCopyMemoryToImageIndirectCommandNV extends VkCopyMemoryToImageInd
     static nimageSubresource(paramarg0: number, paramarg1: VkImageSubresourceLayers): void;
     static nsrcAddress(paramarg0: number): number;
     static nsrcAddress(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

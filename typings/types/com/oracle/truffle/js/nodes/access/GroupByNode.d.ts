@@ -4,7 +4,6 @@ import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class GroupByNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, toPropertyKeyCoercion: boolean)
     // private context: JSContext;
     // private toPropertyKeyCoercion: boolean;

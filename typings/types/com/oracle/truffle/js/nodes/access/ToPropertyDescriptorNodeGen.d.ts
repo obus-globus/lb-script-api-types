@@ -8,7 +8,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ToPropertyDescriptorNodeGen extends ToPropertyDescriptorNode {
     static create(paramcontext: JSContext): ToPropertyDescriptorNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private default_isCallable_: IsCallableNode;
     // private default_toBooleanNode__field1_: Node;

@@ -19,7 +19,7 @@ export class MixinExtrasVersion extends Enum<MixinExtrasVersion> {
     static V0_5_4: MixinExtrasVersion;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MixinExtrasVersion;
-    static values(): (Object | null)[];
+    static values(): MixinExtrasVersion[];
     private constructor(arg2: string, arg3: number)
     // private prettyName: string;
     readonly semver: Version;

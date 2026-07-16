@@ -3,14 +3,14 @@ import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ObjectHeapSemiIndirectPriorityQueue<K extends unknown> extends Object implements IndirectPriorityQueue<K> {
     constructor(arg0: K[])
-    constructor(arg0: K[], arg1: (param0: Object) => boolean)
+    constructor(arg0: K[], arg1: (param0: K, param1: K) => number)
     constructor(arg0: K[], arg1: number)
-    constructor(arg0: K[], arg1: number, arg2: (param0: Object) => boolean)
+    constructor(arg0: K[], arg1: number, arg2: (param0: K, param1: K) => number)
     constructor(arg0: K[], arg1: number[])
-    constructor(arg0: K[], arg1: number[], arg2: (param0: Object) => boolean)
+    constructor(arg0: K[], arg1: number[], arg2: (param0: K, param1: K) => number)
     constructor(arg0: K[], arg1: number[], arg2: number)
-    constructor(arg0: K[], arg1: number[], arg2: number, arg3: (param0: Object) => boolean)
-    // private c: (param0: Object) => boolean;
+    constructor(arg0: K[], arg1: number[], arg2: number, arg3: (param0: K, param1: K) => number)
+    // private c: (param0: K, param1: K) => number;
     // private heap: number[];
     // private refArray: K[];
     // private size: number;
@@ -18,7 +18,7 @@ export class ObjectHeapSemiIndirectPriorityQueue<K extends unknown> extends Obje
     changed(): void;
     changed(arg0: number): void;
     clear(): void;
-    comparator(): (param0: Object) => boolean;
+    comparator(): (param0: K, param1: K) => number;
     contains(arg0: number): boolean;
     dequeue(): number;
     enqueue(arg0: number): void;

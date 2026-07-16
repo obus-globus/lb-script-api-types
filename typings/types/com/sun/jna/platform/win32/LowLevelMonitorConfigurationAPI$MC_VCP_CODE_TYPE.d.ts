@@ -6,7 +6,7 @@ export class LowLevelMonitorConfigurationAPI$MC_VCP_CODE_TYPE extends Enum<LowLe
     static MC_SET_PARAMETER: LowLevelMonitorConfigurationAPI$MC_VCP_CODE_TYPE;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LowLevelMonitorConfigurationAPI$MC_VCP_CODE_TYPE;
-    static values(): (Object | null)[];
+    static values(): LowLevelMonitorConfigurationAPI$MC_VCP_CODE_TYPE[];
     private constructor()
     name(): "MC_MOMENTARY" | "MC_SET_PARAMETER";
 }

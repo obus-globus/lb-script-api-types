@@ -8,7 +8,6 @@ import type { JSObjectFactory } from '../../../../../com/oracle/truffle/js/runti
 import type { JSDynamicObject } from '../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
 export abstract class JSConstructTypedArrayNode$IntegerIndexedObjectCreateNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, factory: TypedArrayFactory)
     // private context: JSContext;
     // private factory: TypedArrayFactory;

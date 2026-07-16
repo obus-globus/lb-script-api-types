@@ -13,7 +13,7 @@ export class WebAssemblyBuiltins$WebAssembly extends Enum<WebAssemblyBuiltins$We
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): WebAssemblyBuiltins$WebAssembly;
-    static values(): (Object | null)[];
+    static values(): WebAssemblyBuiltins$WebAssembly[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

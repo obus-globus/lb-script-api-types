@@ -7,7 +7,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSRegExpExecIntlNodeGen$JSRegExpExecIntlIgnoreLastIndexNodeGen extends JSRegExpExecIntlNode$JSRegExpExecIntlIgnoreLastIndexNode {
     static create(paramcontext: JSContext, paramdoStaticResultUpdate: boolean): JSRegExpExecIntlNode$JSRegExpExecIntlIgnoreLastIndexNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, doStaticResultUpdate: boolean)
     // private cached_cache: JSRegExpExecIntlNodeGen$JSRegExpExecIntlIgnoreLastIndexNodeGen$CachedData;
     // private invokeExec_field1_: Node;

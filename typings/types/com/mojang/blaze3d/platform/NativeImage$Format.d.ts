@@ -8,7 +8,7 @@ export class NativeImage$Format extends Enum<NativeImage$Format> {
     static RGBA: NativeImage$Format;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): NativeImage$Format;
-    static values(): (Object | null)[];
+    static values(): NativeImage$Format[];
     private constructor(components: number, hasRed: boolean, hasGreen: boolean, hasBlue: boolean, hasLuminance: boolean, hasAlpha: boolean, redOffset: number, greenOffset: number, blueOffset: number, luminanceOffset: number, alphaOffset: number, supportedByStb: boolean)
     // private alphaOffset: number;
     // private blueOffset: number;

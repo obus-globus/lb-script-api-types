@@ -9,7 +9,7 @@ export class YggdrasilEnvironment extends Enum<YggdrasilEnvironment> {
     static fromString(paramarg0: string): Optional<Environment>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): YggdrasilEnvironment;
-    static values(): (Object | null)[];
+    static values(): YggdrasilEnvironment[];
     private constructor(arg2: string, arg3: string, arg4: string)
     readonly environment: Environment;
     getEnvironment(): Environment;

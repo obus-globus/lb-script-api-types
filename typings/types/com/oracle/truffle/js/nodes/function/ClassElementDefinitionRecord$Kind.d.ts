@@ -11,7 +11,7 @@ export class ClassElementDefinitionRecord$Kind extends Enum<ClassElementDefiniti
     static StaticBlock: ClassElementDefinitionRecord$Kind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ClassElementDefinitionRecord$Kind;
-    static values(): (Object | null)[];
+    static values(): ClassElementDefinitionRecord$Kind[];
     private constructor()
     name(): "Method" | "Field" | "Getter" | "Setter" | "AutoAccessor" | "AccessorPair" | "StaticBlock";
 }

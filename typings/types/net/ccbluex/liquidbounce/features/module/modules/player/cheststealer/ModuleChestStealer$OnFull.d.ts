@@ -12,7 +12,7 @@ export class ModuleChestStealer$OnFull extends Enum<ModuleChestStealer$OnFull> i
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleChestStealer$OnFull;
-    static values(): (Object | null)[];
+    static values(): ModuleChestStealer$OnFull[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "NONE" | "THROW";

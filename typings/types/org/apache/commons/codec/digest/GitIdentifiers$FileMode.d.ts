@@ -9,7 +9,7 @@ export class GitIdentifiers$FileMode extends Enum<GitIdentifiers$FileMode> {
     static SYMBOLIC_LINK: GitIdentifiers$FileMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): GitIdentifiers$FileMode;
-    static values(): (Object | null)[];
+    static values(): GitIdentifiers$FileMode[];
     private constructor(arg2: number[])
     // private modeBytes: number[];
     name(): "DIRECTORY" | "EXECUTABLE" | "GIT_LINK" | "REGULAR" | "SYMBOLIC_LINK";

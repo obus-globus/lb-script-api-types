@@ -17,8 +17,8 @@ export class AsyncAppender extends AbstractAppender {
     static DEFAULT_STOP_TIMEOUT: number;
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
     static ELEMENT_TYPE: string;
-    static EMPTY_ARRAY: (Object | null)[];
-    static createAppender(paramappenderRefs: (Object | null)[], paramerrorRef: string, paramblocking: boolean, paramshutdownTimeout: number, paramsize: number, paramname: string, paramincludeLocation: boolean, paramfilter: Filter, paramconfig: Configuration, paramignoreExceptions: boolean): AsyncAppender;
+    static EMPTY_ARRAY: Appender[];
+    static createAppender(paramappenderRefs: AppenderRef[], paramerrorRef: string, paramblocking: boolean, paramshutdownTimeout: number, paramsize: number, paramname: string, paramincludeLocation: boolean, paramfilter: Filter, paramconfig: Configuration, paramignoreExceptions: boolean): AsyncAppender;
     static newBuilder(): AsyncAppender$Builder<any>;
     static parseInt(params: string, paramdefaultValue: number): number;
     constructor(arg0: string, arg1: Filter, arg2: AppenderRef[], arg3: string, arg4: number, arg5: boolean, arg6: boolean, arg7: number, arg8: Configuration, arg9: boolean, arg10: BlockingQueueFactory<Object>, arg11: Property[], arg12: any)

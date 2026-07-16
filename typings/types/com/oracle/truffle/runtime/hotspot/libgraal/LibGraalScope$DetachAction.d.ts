@@ -7,7 +7,7 @@ export class LibGraalScope$DetachAction extends Enum<LibGraalScope$DetachAction>
     static DETACH_RUNTIME_AND_RELEASE: LibGraalScope$DetachAction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): LibGraalScope$DetachAction;
-    static values(): (Object | null)[];
+    static values(): LibGraalScope$DetachAction[];
     private constructor()
     name(): "DETACH" | "DETACH_RUNTIME" | "DETACH_RUNTIME_AND_RELEASE";
 }

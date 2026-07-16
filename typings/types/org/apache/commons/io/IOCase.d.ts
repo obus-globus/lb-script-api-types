@@ -10,7 +10,7 @@ export class IOCase extends Enum<IOCase> {
     static value(paramarg0: IOCase, paramarg1: IOCase): IOCase;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): IOCase;
-    static values(): (Object | null)[];
+    static values(): IOCase[];
     private constructor(arg2: string, arg3: boolean)
     // private sensitive: boolean;
     checkCompareTo(arg0: string, arg1: string): number;

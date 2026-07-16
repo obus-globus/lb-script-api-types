@@ -8,7 +8,6 @@ export class JSToInt32NodeGen$Uncached extends JSToInt32Node implements Unadopta
     static create(paramchild: JavaScriptNode, parambitwiseOr: boolean): JavaScriptNode;
     static create(): JSToInt32Node;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     executeInt(arg0Value: Object): number;
 }

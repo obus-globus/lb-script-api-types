@@ -21,7 +21,7 @@ export class StatsScreen$ItemStatisticsList extends ContainerObjectSelectionList
     constructor(null_: StatsScreen, minecraft: Minecraft)
     // private blockColumns: Stat<Block>[][];
     // private itemColumns: Stat<Item>[][];
-    // private itemStatSorter: (param0: Object) => boolean;
+    // private itemStatSorter: (param0: StatsScreen$ItemStatisticsList$ItemRow, param1: StatsScreen$ItemStatisticsList$ItemRow) => number;
     // private sortColumn: Stat<Object>[];
     // private sortOrder: number;
     extractListBackground(graphics: GuiGraphicsExtractor): void;
@@ -32,5 +32,5 @@ export class StatsScreen$ItemStatisticsList extends ContainerObjectSelectionList
     // private getItemRows(): StatsScreen$ItemStatisticsList$ItemRow[];
     getRowWidth(): number;
     sortByColumn(column: Stat<Object>[]): void;
-    sortItems(comparator: (param0: Object) => boolean): void;
+    sortItems(comparator: (param0: StatsScreen$ItemStatisticsList$ItemRow, param1: StatsScreen$ItemStatisticsList$ItemRow) => number): void;
 }

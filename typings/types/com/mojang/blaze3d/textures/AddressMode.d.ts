@@ -6,7 +6,7 @@ export class AddressMode extends Enum<AddressMode> {
     static REPEAT: AddressMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): AddressMode;
-    static values(): (Object | null)[];
+    static values(): AddressMode[];
     private constructor()
     name(): "REPEAT" | "CLAMP_TO_EDGE";
 }

@@ -56,7 +56,7 @@ export class CurrentCmdVersion extends Enum<CurrentCmdVersion> {
     static getByValue(paramarg0: number, paramarg1: CurrentCmdVersion): CurrentCmdVersion;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CurrentCmdVersion;
-    static values(): (Object | null)[];
+    static values(): CurrentCmdVersion[];
     private constructor(arg2: number)
     private constructor(arg2: CurrentCmdVersion)
     readonly value: number;

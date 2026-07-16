@@ -8,7 +8,6 @@ import type { TemporalUtil$RoundingMode } from '../../../../../../com/oracle/tru
 import type { TemporalUtil$Unit } from '../../../../../../com/oracle/truffle/js/runtime/util/TemporalUtil$Unit.d.ts'
 export abstract class DifferenceZonedDateTimeWithRoundingNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(ns1: BigInt, ns2: BigInt, calendar: TruffleString, timeZone: TruffleString, precalculatedPlainDateTime: JSTemporalPlainDateTimeObject, largestUnit: TemporalUtil$Unit, roundingIncrement: number, smallestUnit: TemporalUtil$Unit, roundingMode: TemporalUtil$RoundingMode): TemporalDurationWithTotalRecord;
 }

@@ -26,7 +26,7 @@ export class StringMatchMode extends Enum<StringMatchMode> implements BiPredicat
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): StringMatchMode;
-    static values(): (Object | null)[];
+    static values(): StringMatchMode[];
     private constructor(tag: string)
     readonly tag: string;
     and(arg0: (param0: string, param1: string) => boolean): (param0: string, param1: string) => boolean;

@@ -7,7 +7,7 @@ export class UnaryComparisonExpander$Component extends Enum<UnaryComparisonExpan
     static JUMP: UnaryComparisonExpander$Component;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): UnaryComparisonExpander$Component;
-    static values(): (Object | null)[];
+    static values(): UnaryComparisonExpander$Component[];
     private constructor()
     name(): "CST" | "JUMP";
 }

@@ -21,7 +21,6 @@ export class AMDPerformanceMonitor extends Object {
     static glGetPerfMonitorCounterDataAMD(paramarg0: number, paramarg1: number, paramarg2: number[], paramarg3: number[]): void;
     static glGetPerfMonitorCounterDataAMD(paramarg0: number, paramarg1: number, paramarg2: IntBuffer, paramarg3: IntBuffer): void;
     static glGetPerfMonitorCounterInfoAMD(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number[]): void;
-    static glGetPerfMonitorCounterInfoAMD(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number[]): void;
     static glGetPerfMonitorCounterInfoAMD(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: ByteBuffer): void;
     static glGetPerfMonitorCounterInfoAMD(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: FloatBuffer): void;
     static glGetPerfMonitorCounterInfoAMD(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: IntBuffer): void;

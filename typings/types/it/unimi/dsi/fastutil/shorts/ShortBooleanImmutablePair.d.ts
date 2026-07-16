@@ -3,7 +3,7 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ShortBooleanImmutablePair extends Object implements ShortBooleanPair, Serializable {
-    static lexComparator(): (param0: Object) => boolean;
+    static lexComparator(): (param0: ShortBooleanPair, param1: ShortBooleanPair) => number;
     static of(paramarg0: number, paramarg1: boolean): ShortBooleanImmutablePair;
     static of(paramarg0: number, paramarg1: boolean): ShortBooleanPair;
     constructor(arg0: number, arg1: boolean)

@@ -13,7 +13,7 @@ export class RecipeCategory extends Enum<RecipeCategory> {
     static TRANSPORTATION: RecipeCategory;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RecipeCategory;
-    static values(): (Object | null)[];
+    static values(): RecipeCategory[];
     private constructor(recipeFolderName: string)
     // private recipeFolderName: string;
     getFolderName(): string;

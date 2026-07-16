@@ -9,7 +9,7 @@ export class TypeToken$TypeFilter extends Enum<TypeToken$TypeFilter> implements 
     static INTERFACE_ONLY: TypeToken$TypeFilter;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TypeToken$TypeFilter;
-    static values(): (Object | null)[];
+    static values(): TypeToken$TypeFilter[];
     constructor(arg2: Invokable$MethodInvokable<T>)
     test(input: TypeToken<Object>): boolean;
     name(): "IGNORE_TYPE_VARIABLE_OR_WILDCARD" | "INTERFACE_ONLY";

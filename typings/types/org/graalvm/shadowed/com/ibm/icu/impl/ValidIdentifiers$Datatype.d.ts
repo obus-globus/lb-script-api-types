@@ -15,7 +15,7 @@ export class ValidIdentifiers$Datatype extends Enum<ValidIdentifiers$Datatype> {
     static x: ValidIdentifiers$Datatype;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ValidIdentifiers$Datatype;
-    static values(): (Object | null)[];
+    static values(): ValidIdentifiers$Datatype[];
     private constructor()
     name(): "currency" | "language" | "region" | "script" | "subdivision" | "unit" | "variant" | "u" | "t" | "x" | "illegal";
 }

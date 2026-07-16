@@ -9,7 +9,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PropertyGetNodeFactory$GetPropertyFromJSObjectNodeGen extends PropertyGetNode$GetPropertyFromJSObjectNode {
     static create(paramroot: PropertyGetNode): PropertyGetNode$GetPropertyFromJSObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(root: PropertyGetNode)
     // private jSObjectCached_cache: PropertyGetNodeFactory$GetPropertyFromJSObjectNodeGen$JSObjectCachedData;
     // private required_classProfile_: JSClassProfile;

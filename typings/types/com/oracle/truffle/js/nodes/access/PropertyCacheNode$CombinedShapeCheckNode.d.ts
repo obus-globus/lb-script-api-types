@@ -6,7 +6,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PropertyCacheNode$CombinedShapeCheckNode extends PropertyCacheNode$ReceiverCheckNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(shape1: Shape, shape2: Shape)
     // private shape1: Shape;
     // private shape2: Shape;

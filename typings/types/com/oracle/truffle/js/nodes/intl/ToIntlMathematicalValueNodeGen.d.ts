@@ -6,7 +6,6 @@ import type { Number } from '../../../../../../java/lang/Number.d.ts'
 export class ToIntlMathematicalValueNodeGen extends ToIntlMathematicalValue {
     static create(parampartOfRange: boolean): ToIntlMathematicalValue;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(partOfRange: boolean)
     // private generic_cache: ToIntlMathematicalValueNodeGen$GenericData;
     // private state_0_: number;

@@ -10,7 +10,7 @@ export class ClassKind extends Enum<ClassKind> {
     static OBJECT: ClassKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClassKind;
-    static values(): (Object | null)[];
+    static values(): ClassKind[];
     private constructor(arg2: string)
     // private codeRepresentation: string;
     isSingleton(): boolean;

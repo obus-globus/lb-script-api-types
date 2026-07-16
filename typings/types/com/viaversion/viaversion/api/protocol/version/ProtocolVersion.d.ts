@@ -79,7 +79,7 @@ export class ProtocolVersion extends Object implements Comparable<ProtocolVersio
     betweenExclusive(arg0: ProtocolVersion, arg1: ProtocolVersion): boolean;
     betweenInclusive(arg0: ProtocolVersion, arg1: ProtocolVersion): boolean;
     compareTo(arg0: ProtocolVersion): number;
-    customComparator(): (param0: Object) => boolean;
+    customComparator(): (param0: ProtocolVersion, param1: ProtocolVersion) => number;
     equalTo(arg0: ProtocolVersion): boolean;
     equals(arg0: Object | null): boolean;
     getFullSnapshotVersion(): number;

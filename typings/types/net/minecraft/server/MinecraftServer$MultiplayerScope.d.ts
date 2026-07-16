@@ -7,7 +7,7 @@ export class MinecraftServer$MultiplayerScope extends Enum<MinecraftServer$Multi
     static OFF: MinecraftServer$MultiplayerScope;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): MinecraftServer$MultiplayerScope;
-    static values(): (Object | null)[];
+    static values(): MinecraftServer$MultiplayerScope[];
     private constructor(key: string)
     readonly tooltip: Component;
     // private translatable: Component;

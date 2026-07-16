@@ -2,8 +2,8 @@ import type { Predicate } from '../../../../com/google/common/base/Predicate.d.t
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Predicates$NotPredicate<T extends unknown> extends Object implements Predicate<T>, Serializable {
-    constructor(predicate: (param0: Object) => boolean)
-    // private predicate: (param0: Object) => boolean;
+    constructor(predicate: (param0: T) => boolean)
+    // private predicate: (param0: T) => boolean;
     apply(t: T): boolean;
     equals(obj: Object | null): boolean;
     hashCode(): number;

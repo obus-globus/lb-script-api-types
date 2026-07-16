@@ -10,7 +10,7 @@ export class ClassSetContents$Kind extends Enum<ClassSetContents$Kind> {
     static Strings: ClassSetContents$Kind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ClassSetContents$Kind;
-    static values(): (Object | null)[];
+    static values(): ClassSetContents$Kind[];
     private constructor()
     name(): "Character" | "Class" | "Strings" | "Range" | "POSIXCollationElement" | "POSIXCollationEquivalenceClass";
 }

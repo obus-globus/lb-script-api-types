@@ -10,7 +10,7 @@ export class Persona_ArmSize_Type extends Enum<Persona_ArmSize_Type> {
     static getByValue(paramarg0: number, paramarg1: Persona_ArmSize_Type): Persona_ArmSize_Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Persona_ArmSize_Type;
-    static values(): (Object | null)[];
+    static values(): Persona_ArmSize_Type[];
     private constructor(arg2: number)
     private constructor(arg2: Persona_ArmSize_Type)
     readonly value: number;

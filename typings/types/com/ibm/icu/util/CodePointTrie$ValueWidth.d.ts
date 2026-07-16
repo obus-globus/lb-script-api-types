@@ -7,7 +7,7 @@ export class CodePointTrie$ValueWidth extends Enum<CodePointTrie$ValueWidth> {
     static BITS_8: CodePointTrie$ValueWidth;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CodePointTrie$ValueWidth;
-    static values(): (Object | null)[];
+    static values(): CodePointTrie$ValueWidth[];
     private constructor()
     name(): "BITS_16" | "BITS_32" | "BITS_8";
 }

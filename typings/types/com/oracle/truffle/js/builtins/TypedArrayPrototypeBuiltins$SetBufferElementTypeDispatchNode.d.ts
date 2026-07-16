@@ -6,7 +6,6 @@ import type { ByteBuffer } from '../../../../../java/nio/ByteBuffer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class TypedArrayPrototypeBuiltins$SetBufferElementTypeDispatchNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(node: Node, buffer: JSArrayBufferObject, bufferIndex: number, littleEndian: boolean, value: Object, factory: TypedArrayFactory, targetByteBuffer: ByteBuffer): void;
 }

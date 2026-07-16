@@ -6,7 +6,6 @@ import type { Logger } from '../../../../../java/util/logging/Logger.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class VAFMappingDataLoader extends MappingDataLoader {
     static INSTANCE: VAFMappingDataLoader;
-    static INSTANCE: MappingDataLoader;
     static MAPPINGS_READER: TagReader<Map$Entry<string, Tag>[]>;
     static loadGlobalIdentifiers(): void;
     constructor()

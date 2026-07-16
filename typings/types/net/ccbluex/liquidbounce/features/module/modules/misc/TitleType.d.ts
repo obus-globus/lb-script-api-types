@@ -13,7 +13,7 @@ export class TitleType extends Enum<TitleType> implements Tagged {
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TitleType;
-    static values(): (Object | null)[];
+    static values(): TitleType[];
     private constructor(tag: string, setText: (param0: Component) => void)
     /**
      * Doesn't use {@link Gui.setTitle} and {@link Gui.setSubtitle} because

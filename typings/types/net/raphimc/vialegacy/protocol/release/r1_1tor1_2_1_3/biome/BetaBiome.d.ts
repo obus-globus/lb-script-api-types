@@ -18,7 +18,7 @@ export class BetaBiome extends Enum<BetaBiome> {
     static getBiome(paramarg0: number, paramarg1: number): BetaBiome;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BetaBiome;
-    static values(): (Object | null)[];
+    static values(): BetaBiome[];
     private constructor()
     name(): "RAINFOREST" | "SWAMPLAND" | "SEASONAL_FOREST" | "FOREST" | "SAVANNA" | "SHRUBLAND" | "TAIGA" | "DESERT" | "PLAINS" | "ICE_DESERT" | "TUNDRA" | "HELL" | "SKY";
 }

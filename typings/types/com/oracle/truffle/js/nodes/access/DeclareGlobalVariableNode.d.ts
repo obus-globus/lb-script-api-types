@@ -13,7 +13,6 @@ import type { Class } from '../../../../../../java/lang/Class.d.ts'
 export abstract class DeclareGlobalVariableNode extends DeclareGlobalNode {
     static create(paramvarName: TruffleString, paramconfigurable: boolean): DeclareGlobalVariableNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(varName: TruffleString, configurable: boolean)
     // private configurable: boolean;
     // private hasOwnPropertyNode: HasPropertyCacheNode;

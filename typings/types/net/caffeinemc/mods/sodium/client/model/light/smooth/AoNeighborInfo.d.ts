@@ -12,7 +12,7 @@ export class AoNeighborInfo extends Enum<AoNeighborInfo> {
     static get(paramarg0: Direction): AoNeighborInfo;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AoNeighborInfo;
-    static values(): (Object | null)[];
+    static values(): AoNeighborInfo[];
     private constructor(arg2: Direction[], arg3: number)
     faces: Direction[];
     strength: number;

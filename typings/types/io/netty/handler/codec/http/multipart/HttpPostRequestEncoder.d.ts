@@ -40,7 +40,7 @@ export class HttpPostRequestEncoder extends Object implements ChunkedInput<HttpC
     addBodyAttribute(arg0: string, arg1: string): void;
     addBodyFileUpload(arg0: string, arg1: File, arg2: string, arg3: boolean): void;
     addBodyFileUpload(arg0: string, arg1: string, arg2: File, arg3: string, arg4: boolean): void;
-    addBodyFileUploads(arg0: string, arg1: File[], arg2: string[], arg3: (Object | null)[]): void;
+    addBodyFileUploads(arg0: string, arg1: File[], arg2: string[], arg3: boolean[]): void;
     addBodyHttpData(arg0: InterfaceHttpData): void;
     // private calculateRemainingSize(): number;
     cleanFiles(): void;

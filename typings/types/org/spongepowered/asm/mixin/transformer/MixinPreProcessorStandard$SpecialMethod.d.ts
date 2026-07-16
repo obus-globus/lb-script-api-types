@@ -10,7 +10,7 @@ export class MixinPreProcessorStandard$SpecialMethod extends Enum<MixinPreProces
     static SHADOW: MixinPreProcessorStandard$SpecialMethod;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MixinPreProcessorStandard$SpecialMethod;
-    static values(): (Object | null)[];
+    static values(): MixinPreProcessorStandard$SpecialMethod[];
     private constructor(arg2: boolean)
     private constructor(arg2: boolean, arg3: Class<Annotation>)
     // private annotation: Class<Annotation>;

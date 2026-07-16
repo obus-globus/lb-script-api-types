@@ -6,7 +6,6 @@ import type { JSDataViewObject } from '../../../../../../com/oracle/truffle/js/r
 export abstract class GetViewByteLengthNode extends JavaScriptBaseNode {
     static create(): GetViewByteLengthNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doAutoLength(dataView: JSDataViewObject, context: JSContext, getByteLengthNode: ArrayBufferByteLengthNode): number;
     execute(typedArrayObj: JSDataViewObject, context: JSContext): number;

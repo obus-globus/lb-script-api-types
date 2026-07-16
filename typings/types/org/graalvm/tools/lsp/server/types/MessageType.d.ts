@@ -9,7 +9,7 @@ export class MessageType extends Enum<MessageType> {
     static get(paramintValue: number): MessageType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): MessageType;
-    static values(): (Object | null)[];
+    static values(): MessageType[];
     private constructor(intValue: number)
     readonly intValue: number;
     getIntValue(): number;

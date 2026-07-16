@@ -14,7 +14,7 @@ export class ModuleBetterChat$Features extends Enum<ModuleBetterChat$Features> i
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleBetterChat$Features;
-    static values(): (Object | null)[];
+    static values(): ModuleBetterChat$Features[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "INFINITE" | "ANTI_CLEAR" | "KEEP_AFTER_DEATH" | "FORCE_UNICODE_CHAT";

@@ -20,12 +20,10 @@ import type { ExchangeCodec$Carrier } from '../../../okhttp3/internal/http/Excha
 import type { RealInterceptorChain } from '../../../okhttp3/internal/http/RealInterceptorChain.d.ts'
 import type { Http2Connection } from '../../../okhttp3/internal/http2/Http2Connection.d.ts'
 import type { Http2Connection$Listener } from '../../../okhttp3/internal/http2/Http2Connection$Listener.d.ts'
-import type { Http2Connection$Listener$Companion } from '../../../okhttp3/internal/http2/Http2Connection$Listener$Companion.d.ts'
 import type { Http2Stream } from '../../../okhttp3/internal/http2/Http2Stream.d.ts'
 import type { Settings } from '../../../okhttp3/internal/http2/Settings.d.ts'
 export class RealConnection extends Http2Connection$Listener implements Connection, Lockable, ExchangeCodec$Carrier {
     static Companion: RealConnection$Companion;
-    static Companion: Http2Connection$Listener$Companion;
     static IDLE_CONNECTION_HEALTHY_NS: number;
     static REFUSE_INCOMING_STREAMS: Http2Connection$Listener;
     constructor(taskRunner: TaskRunner, connectionPool: RealConnectionPool, route: Route, rawSocket: Socket, javaNetSocket: Socket, handshake: Handshake | null, protocol: Protocol, socket: BufferedSocket, pingIntervalMillis: number, connectionListener: ConnectionListener)

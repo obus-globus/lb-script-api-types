@@ -6,7 +6,7 @@ export class CompletionItemTag extends Enum<CompletionItemTag> {
     static get(paramintValue: number): CompletionItemTag;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CompletionItemTag;
-    static values(): (Object | null)[];
+    static values(): CompletionItemTag[];
     private constructor(intValue: number)
     readonly intValue: number;
     getIntValue(): number;

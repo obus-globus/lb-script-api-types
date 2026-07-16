@@ -8,7 +8,7 @@ export class ModuleManager$SmartBindKeyboardState extends Enum<ModuleManager$Sma
     static getEntries(): ModuleManager$SmartBindKeyboardState[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleManager$SmartBindKeyboardState;
-    static values(): (Object | null)[];
+    static values(): ModuleManager$SmartBindKeyboardState[];
     private constructor()
     name(): "PENDING_ENABLED" | "PENDING_DISABLED" | "HOLDING";
 }

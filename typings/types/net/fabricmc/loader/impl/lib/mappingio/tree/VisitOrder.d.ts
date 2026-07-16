@@ -8,11 +8,11 @@ import type { MappingTreeView$MethodVarMappingView } from '../../../../../../../
 export class VisitOrder extends Object {
     static createByInputOrder(): VisitOrder;
     private constructor()
-    // private classComparator: (param0: Object) => boolean;
-    // private fieldComparator: (param0: Object) => boolean;
-    // private methodArgComparator: (param0: Object) => boolean;
-    // private methodComparator: (param0: Object) => boolean;
-    // private methodVarComparator: (param0: Object) => boolean;
+    // private classComparator: (param0: MappingTreeView$ClassMappingView, param1: MappingTreeView$ClassMappingView) => number;
+    // private fieldComparator: (param0: MappingTreeView$FieldMappingView, param1: MappingTreeView$FieldMappingView) => number;
+    // private methodArgComparator: (param0: MappingTreeView$MethodArgMappingView, param1: MappingTreeView$MethodArgMappingView) => number;
+    // private methodComparator: (param0: MappingTreeView$MethodMappingView, param1: MappingTreeView$MethodMappingView) => number;
+    // private methodVarComparator: (param0: MappingTreeView$MethodVarMappingView, param1: MappingTreeView$MethodVarMappingView) => number;
     readonly methodVarsFirst: boolean;
     readonly methodsFirst: boolean;
     isMethodVarsFirst(): boolean;

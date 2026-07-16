@@ -11,7 +11,7 @@ export class TypeInfo$SUBTYPE extends Enum<TypeInfo$SUBTYPE> {
     static SET: TypeInfo$SUBTYPE;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TypeInfo$SUBTYPE;
-    static values(): (Object | null)[];
+    static values(): TypeInfo$SUBTYPE[];
     private constructor(id: string)
     // private id: string;
     getId(): string;

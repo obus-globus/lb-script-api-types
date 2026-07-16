@@ -5,7 +5,6 @@ import type { StringPrototypeBuiltins$JSStringSplitNode$Splitter } from '../../.
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class StringPrototypeBuiltins$JSStringSplitNode$StringSplitter extends StringPrototypeBuiltins$JSStringSplitNode$Splitter<TruffleString> {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(node: Node, input: TruffleString, limit: number, separator: TruffleString, groupCount: number, parent: StringPrototypeBuiltins$JSStringSplitNode): Object[];
 }

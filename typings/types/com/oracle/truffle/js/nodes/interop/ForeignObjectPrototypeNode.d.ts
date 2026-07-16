@@ -7,7 +7,6 @@ export abstract class ForeignObjectPrototypeNode extends JavaScriptBaseNode {
     static create(): ForeignObjectPrototypeNode;
     static getUncached(): ForeignObjectPrototypeNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doTruffleObject(truffleObject: Object, interop: InteropLibrary): JSDynamicObject;
     execute(truffleObject: Object): JSDynamicObject;

@@ -7,7 +7,7 @@ export class IntentTiming extends Enum<IntentTiming> {
     static getEntries(): IntentTiming[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): IntentTiming;
-    static values(): (Object | null)[];
+    static values(): IntentTiming[];
     private constructor()
     name(): "INSTANT" | "NEXT_PROPITIOUS_MOMENT";
 }

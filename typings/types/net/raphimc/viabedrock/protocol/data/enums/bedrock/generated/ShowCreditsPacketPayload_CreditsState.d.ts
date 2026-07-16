@@ -10,7 +10,7 @@ export class ShowCreditsPacketPayload_CreditsState extends Enum<ShowCreditsPacke
     static getByValue(paramarg0: number, paramarg1: ShowCreditsPacketPayload_CreditsState): ShowCreditsPacketPayload_CreditsState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ShowCreditsPacketPayload_CreditsState;
-    static values(): (Object | null)[];
+    static values(): ShowCreditsPacketPayload_CreditsState[];
     private constructor(arg2: number)
     private constructor(arg2: ShowCreditsPacketPayload_CreditsState)
     readonly value: number;

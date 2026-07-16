@@ -13,7 +13,7 @@ export class PolyglotFunctionProxyHandler extends Object implements PolyglotWrap
     static equalsProxy(paramwrapper: PolyglotWrapper, paramother: Object): boolean;
     static getHostProxy(paramv: Object): PolyglotWrapper;
     static hashCode(paramcontext: Object, paramreceiver: Object): number;
-    static invokeDefault(paramarg0: Object, paramarg1: Method, ...paramarg2: (Object | null)[]): Object;
+    static invokeDefault(paramarg0: Object, paramarg1: Method, ...paramarg2: Object[]): Object;
     static isHostProxy(paramv: Object): boolean;
     static isInstance(paramv: Object): boolean;
     static toString(paramthisObj: PolyglotWrapper): string;

@@ -12,7 +12,6 @@ export class JSHasPropertyNodeGen extends JSHasPropertyNode {
     static create(): JSHasPropertyNode;
     static create(paramhasOwnProperty: boolean): JSHasPropertyNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(hasOwnProperty: boolean)
     // private arrayLongCached_cache: JSHasPropertyNodeGen$ArrayLongCachedData;
     // private arrayStringCached_cache: JSHasPropertyNodeGen$ArrayStringCachedData;

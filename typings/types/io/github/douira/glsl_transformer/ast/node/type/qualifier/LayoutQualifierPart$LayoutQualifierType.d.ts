@@ -6,7 +6,7 @@ export class LayoutQualifierPart$LayoutQualifierType extends Enum<LayoutQualifie
     static SHARED: LayoutQualifierPart$LayoutQualifierType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LayoutQualifierPart$LayoutQualifierType;
-    static values(): (Object | null)[];
+    static values(): LayoutQualifierPart$LayoutQualifierType[];
     private constructor()
     name(): "NAMED" | "SHARED";
 }

@@ -18,10 +18,10 @@ export class JavaImporter extends JSNonProxy implements JSConstructorFactory$Def
     static CLASS_NAME: TruffleString;
     static GET_SYMBOL_SPECIES_NAME: TruffleString;
     static checkProtoCycle(paramthisObj: JSDynamicObject, paramnewPrototype: JSDynamicObject): boolean;
-    static create(paramcontext: JSContext, paramrealm: JSRealm, paramvalue: (Object | null)[]): JavaImporterObject;
+    static create(paramcontext: JSContext, paramrealm: JSRealm, paramvalue: Object[]): JavaImporterObject;
     static createConstructor(paramrealm: JSRealm): JSConstructor;
     static filterOwnPropertyKeys(paramownPropertyKeys: Object[], paramstrings: boolean, paramsymbols: boolean): Object[];
-    static getImports(paramimporter: JSDynamicObject): (Object | null)[];
+    static getImports(paramimporter: JSDynamicObject): Object[];
     static instance(): JavaImporter;
     static isInstance(paramobject: JSDynamicObject, paramjsclass: JSClass): boolean;
     static isInstance(paramobject: Object, paramjsclass: JSClass): boolean;

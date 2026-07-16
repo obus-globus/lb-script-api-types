@@ -9,7 +9,7 @@ export class SparseFormat extends Enum<SparseFormat> {
     static fromValue(paramarg0: number): SparseFormat;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SparseFormat;
-    static values(): (Object | null)[];
+    static values(): SparseFormat[];
     private constructor(arg2: string, arg3: number)
     readonly type: string;
     readonly value: number;

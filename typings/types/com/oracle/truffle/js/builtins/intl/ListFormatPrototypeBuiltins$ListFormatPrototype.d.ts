@@ -13,7 +13,7 @@ export class ListFormatPrototypeBuiltins$ListFormatPrototype extends Enum<ListFo
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ListFormatPrototypeBuiltins$ListFormatPrototype;
-    static values(): (Object | null)[];
+    static values(): ListFormatPrototypeBuiltins$ListFormatPrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

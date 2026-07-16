@@ -7,7 +7,7 @@ export class ObjectInputFilter$Status extends Enum<ObjectInputFilter$Status> {
     static UNDECIDED: ObjectInputFilter$Status;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ObjectInputFilter$Status;
-    static values(): (Object | null)[];
+    static values(): ObjectInputFilter$Status[];
     private constructor()
     name(): "UNDECIDED" | "ALLOWED" | "REJECTED";
 }

@@ -9,7 +9,7 @@ export class JsonWriteState extends Enum<JsonWriteState> {
     static ROOT: JsonWriteState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): JsonWriteState;
-    static values(): (Object | null)[];
+    static values(): JsonWriteState[];
     private constructor()
     name(): "ROOT" | "OBJECT" | "ARRAY" | "FIELD" | "COMPLETED";
 }

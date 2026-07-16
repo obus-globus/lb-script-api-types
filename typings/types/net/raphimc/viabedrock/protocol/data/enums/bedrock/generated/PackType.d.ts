@@ -17,7 +17,7 @@ export class PackType extends Enum<PackType> {
     static getByValue(paramarg0: number, paramarg1: PackType): PackType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PackType;
-    static values(): (Object | null)[];
+    static values(): PackType[];
     private constructor(arg2: number)
     private constructor(arg2: PackType)
     readonly value: number;

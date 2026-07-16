@@ -7,7 +7,7 @@ export class InjectionPoint$ShiftByViolationBehaviour extends Enum<InjectionPoin
     static WARN: InjectionPoint$ShiftByViolationBehaviour;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): InjectionPoint$ShiftByViolationBehaviour;
-    static values(): (Object | null)[];
+    static values(): InjectionPoint$ShiftByViolationBehaviour[];
     private constructor()
     name(): "IGNORE" | "WARN" | "ERROR";
 }

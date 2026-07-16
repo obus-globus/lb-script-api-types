@@ -9,7 +9,7 @@ export class JvmBuiltInsCustomizer$JDKMemberStatus extends Enum<JvmBuiltInsCusto
     static VISIBLE: JvmBuiltInsCustomizer$JDKMemberStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): JvmBuiltInsCustomizer$JDKMemberStatus;
-    static values(): (Object | null)[];
+    static values(): JvmBuiltInsCustomizer$JDKMemberStatus[];
     private constructor()
     name(): "HIDDEN" | "VISIBLE" | "DEPRECATED_LIST_METHODS" | "NOT_CONSIDERED" | "DROP";
 }

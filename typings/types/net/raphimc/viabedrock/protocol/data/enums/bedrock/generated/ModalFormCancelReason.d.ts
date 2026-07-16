@@ -10,7 +10,7 @@ export class ModalFormCancelReason extends Enum<ModalFormCancelReason> {
     static getByValue(paramarg0: number, paramarg1: ModalFormCancelReason): ModalFormCancelReason;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModalFormCancelReason;
-    static values(): (Object | null)[];
+    static values(): ModalFormCancelReason[];
     private constructor(arg2: number)
     private constructor(arg2: ModalFormCancelReason)
     readonly value: number;

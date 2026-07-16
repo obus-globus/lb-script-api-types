@@ -5,7 +5,6 @@ export class ExportValueNodeGen extends ExportValueNode {
     static create(): ExportValueNode;
     static getUncached(): ExportValueNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private state_0_: number;
     execute(value: Object): Object;

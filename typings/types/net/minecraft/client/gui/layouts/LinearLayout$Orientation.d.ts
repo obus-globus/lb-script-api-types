@@ -9,7 +9,7 @@ export class LinearLayout$Orientation extends Enum<LinearLayout$Orientation> {
     static VERTICAL: LinearLayout$Orientation;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): LinearLayout$Orientation;
-    static values(): (Object | null)[];
+    static values(): LinearLayout$Orientation[];
     private constructor()
     addChild<T extends LayoutElement>(gridLayout: GridLayout, child: T, index: number, cellSettings: LayoutSettings): T;
     // private setSpacing(gridLayout: GridLayout, spacing: number): void;

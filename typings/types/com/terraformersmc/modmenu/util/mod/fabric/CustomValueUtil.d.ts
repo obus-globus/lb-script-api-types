@@ -8,7 +8,7 @@ export class CustomValueUtil extends Object {
     static getBoolean(paramarg0: string, paramarg1: ModMetadata): Optional<boolean>;
     static getString(paramarg0: string, paramarg1: Map$Entry<string, CustomValue>[]): Optional<string>;
     static getString(paramarg0: string, paramarg1: ModMetadata): Optional<string>;
-    static getStringArray(paramarg0: string, paramarg1: Map$Entry<string, CustomValue>[]): Optional<(Object | null)[]>;
+    static getStringArray(paramarg0: string, paramarg1: Map$Entry<string, CustomValue>[]): Optional<string[]>;
     static getStringMap(paramarg0: string, paramarg1: Map$Entry<string, CustomValue>[]): Optional<{ [key: string]: string }>;
     static getStringSet(paramarg0: string, paramarg1: Map$Entry<string, CustomValue>[]): Optional<string[]>;
     static getStringSet(paramarg0: string, paramarg1: ModMetadata): Optional<string[]>;

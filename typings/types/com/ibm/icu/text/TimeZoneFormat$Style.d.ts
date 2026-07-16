@@ -24,7 +24,7 @@ export class TimeZoneFormat$Style extends Enum<TimeZoneFormat$Style> {
     static ZONE_ID_SHORT: TimeZoneFormat$Style;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TimeZoneFormat$Style;
-    static values(): (Object | null)[];
+    static values(): TimeZoneFormat$Style[];
     private constructor(arg2: number)
     // private flag: number;
     name(): "GENERIC_LOCATION" | "GENERIC_LONG" | "GENERIC_SHORT" | "SPECIFIC_LONG" | "SPECIFIC_SHORT" | "LOCALIZED_GMT" | "LOCALIZED_GMT_SHORT" | "ISO_BASIC_SHORT" | "ISO_BASIC_LOCAL_SHORT" | "ISO_BASIC_FIXED" | "ISO_BASIC_LOCAL_FIXED" | "ISO_BASIC_FULL" | "ISO_BASIC_LOCAL_FULL" | "ISO_EXTENDED_FIXED" | "ISO_EXTENDED_LOCAL_FIXED" | "ISO_EXTENDED_FULL" | "ISO_EXTENDED_LOCAL_FULL" | "ZONE_ID" | "ZONE_ID_SHORT" | "EXEMPLAR_LOCATION";

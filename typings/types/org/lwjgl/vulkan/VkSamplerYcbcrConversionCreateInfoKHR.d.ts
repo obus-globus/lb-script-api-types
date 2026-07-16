@@ -32,28 +32,21 @@ export class VkSamplerYcbcrConversionCreateInfoKHR extends VkSamplerYcbcrConvers
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkSamplerYcbcrConversionCreateInfoKHR;
     static calloc(paramarg0: MemoryStack): VkSamplerYcbcrConversionCreateInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkSamplerYcbcrConversionCreateInfo;
     static create(paramarg0: number): VkSamplerYcbcrConversionCreateInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkSamplerYcbcrConversionCreateInfoKHR;
     static create(paramarg0: number): VkSamplerYcbcrConversionCreateInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkSamplerYcbcrConversionCreateInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkSamplerYcbcrConversionCreateInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkSamplerYcbcrConversionCreateInfo;
     static malloc(paramarg0: MemoryStack): VkSamplerYcbcrConversionCreateInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkSamplerYcbcrConversionCreateInfoKHR;
     static malloc(paramarg0: MemoryStack): VkSamplerYcbcrConversionCreateInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nchromaFilter(paramarg0: number): number;
     static nchromaFilter(paramarg0: number, paramarg1: number): void;
     static ncomponents(paramarg0: number): VkComponentMapping;
@@ -74,7 +67,6 @@ export class VkSamplerYcbcrConversionCreateInfoKHR extends VkSamplerYcbcrConvers
     static nycbcrModel(paramarg0: number, paramarg1: number): void;
     static nycbcrRange(paramarg0: number): number;
     static nycbcrRange(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

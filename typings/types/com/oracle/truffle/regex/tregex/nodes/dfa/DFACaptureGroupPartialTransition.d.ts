@@ -8,12 +8,12 @@ import type { JsonValue } from '../../../../../../../com/oracle/truffle/regex/tr
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class DFACaptureGroupPartialTransition extends Object implements JsonConvertible {
     static EMPTY: number[];
-    static EMPTY_INDEX_OPS: (Object | null)[];
-    static EMPTY_LAST_GROUP_UPDATES: (Object | null)[];
+    static EMPTY_INDEX_OPS: DFACaptureGroupPartialTransition$IndexOperation[];
+    static EMPTY_LAST_GROUP_UPDATES: DFACaptureGroupPartialTransition$LastGroupUpdate[];
     static FINAL_STATE_RESULT_INDEX: number;
-    static create(paramdfaGen: DFAGenerator, paramreorderSwaps: number[], paramarrayCopies: number[], paramindexUpdates: (Object | null)[], paramindexClears: (Object | null)[], paramlastGroupUpdates: (Object | null)[], parampreReorderFinalStateResultIndex: number): DFACaptureGroupPartialTransition;
+    static create(paramdfaGen: DFAGenerator, paramreorderSwaps: number[], paramarrayCopies: number[], paramindexUpdates: DFACaptureGroupPartialTransition$IndexOperation[], paramindexClears: DFACaptureGroupPartialTransition$IndexOperation[], paramlastGroupUpdates: DFACaptureGroupPartialTransition$LastGroupUpdate[], parampreReorderFinalStateResultIndex: number): DFACaptureGroupPartialTransition;
     static getEmptyInstance(): DFACaptureGroupPartialTransition;
-    static intersect(paramtransitions: (Object | null)[]): DFACaptureGroupPartialTransition;
+    static intersect(paramtransitions: DFACaptureGroupPartialTransition[]): DFACaptureGroupPartialTransition;
     private constructor(id: number, reorderSwaps: number[], arrayCopies: number[], indexUpdates: DFACaptureGroupPartialTransition$IndexOperation[], indexClears: DFACaptureGroupPartialTransition$IndexOperation[], lastGroupUpdates: DFACaptureGroupPartialTransition$LastGroupUpdate[], preReorderFinalStateResultIndex: number)
     readonly arrayCopies: number[];
     readonly id: number;

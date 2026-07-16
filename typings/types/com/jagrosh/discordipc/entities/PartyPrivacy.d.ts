@@ -7,7 +7,7 @@ export class PartyPrivacy extends Enum<PartyPrivacy> {
     static from(paramarg0: number): PartyPrivacy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PartyPrivacy;
-    static values(): (Object | null)[];
+    static values(): PartyPrivacy[];
     private constructor()
     name(): "Private" | "Public";
 }

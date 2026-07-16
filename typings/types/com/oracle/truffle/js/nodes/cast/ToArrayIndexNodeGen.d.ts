@@ -10,7 +10,6 @@ export class ToArrayIndexNodeGen extends ToArrayIndexNode {
     static create(paramconvertStringToIndex: boolean): ToArrayIndexNode;
     static createNoStringToIndex(): ToArrayIndexNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(convertStringToIndex: boolean)
     // private convertFromString_stringReadNode_: TruffleString$ReadCharUTF16Node;
     // private interopArrayIndex0_cache: ToArrayIndexNodeGen$InteropArrayIndex0Data;

@@ -6,7 +6,7 @@ export class KeyTypeData$KeyInfoType extends Enum<KeyTypeData$KeyInfoType> {
     static valueType: KeyTypeData$KeyInfoType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): KeyTypeData$KeyInfoType;
-    static values(): (Object | null)[];
+    static values(): KeyTypeData$KeyInfoType[];
     private constructor()
     name(): "deprecated" | "valueType";
 }

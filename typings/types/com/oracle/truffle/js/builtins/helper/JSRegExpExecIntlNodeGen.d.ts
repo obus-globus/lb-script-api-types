@@ -9,7 +9,6 @@ export class JSRegExpExecIntlNodeGen extends JSRegExpExecIntlNode {
     static create(paramcontext: JSContext): JSRegExpExecIntlNode;
     static createIsJSRegExpNode(): IsJSClassNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private regExp_builtinExec_: JSRegExpExecIntlNode$JSRegExpExecBuiltinNode;
     // private state_0_: number;

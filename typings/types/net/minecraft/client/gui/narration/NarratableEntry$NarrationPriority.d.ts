@@ -7,7 +7,7 @@ export class NarratableEntry$NarrationPriority extends Enum<NarratableEntry$Narr
     static NONE: NarratableEntry$NarrationPriority;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): NarratableEntry$NarrationPriority;
-    static values(): (Object | null)[];
+    static values(): NarratableEntry$NarrationPriority[];
     private constructor()
     isTerminal(): boolean;
     name(): "NONE" | "HOVERED" | "FOCUSED";

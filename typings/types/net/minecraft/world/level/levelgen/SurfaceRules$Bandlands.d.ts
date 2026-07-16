@@ -12,7 +12,7 @@ export class SurfaceRules$Bandlands extends Enum<SurfaceRules$Bandlands> impleme
     static bootstrap(paramregistry: MapCodec<SurfaceRules$RuleSource>[]): MapCodec<SurfaceRules$RuleSource>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SurfaceRules$Bandlands;
-    static values(): (Object | null)[];
+    static values(): SurfaceRules$Bandlands[];
     private constructor()
     apply(context: SurfaceRules$Context): SurfaceRules$SurfaceRule;
     codec(): MapCodec<SurfaceRules$Bandlands>;

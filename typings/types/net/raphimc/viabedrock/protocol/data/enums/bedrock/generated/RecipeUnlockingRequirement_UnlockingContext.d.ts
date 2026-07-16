@@ -12,7 +12,7 @@ export class RecipeUnlockingRequirement_UnlockingContext extends Enum<RecipeUnlo
     static getByValue(paramarg0: number, paramarg1: RecipeUnlockingRequirement_UnlockingContext): RecipeUnlockingRequirement_UnlockingContext;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RecipeUnlockingRequirement_UnlockingContext;
-    static values(): (Object | null)[];
+    static values(): RecipeUnlockingRequirement_UnlockingContext[];
     private constructor(arg2: number)
     private constructor(arg2: RecipeUnlockingRequirement_UnlockingContext)
     readonly value: number;

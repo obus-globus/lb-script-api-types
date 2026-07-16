@@ -17,7 +17,6 @@ export class DecoratedPotRecipe extends CustomRecipe {
     static MAP_CODEC: MapCodec<DecoratedPotRecipe>;
     static SERIALIZER: RecipeSerializer<DecoratedPotRecipe>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DecoratedPotRecipe>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<any>>;
     constructor(wallPattern: Ingredient, result: ItemStackTemplate)
     constructor(backPattern: Ingredient, leftPattern: Ingredient, rightPattern: Ingredient, frontPattern: Ingredient, result: ItemStackTemplate)
     // private backPattern: Ingredient;

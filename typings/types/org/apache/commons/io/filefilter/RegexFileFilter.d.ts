@@ -5,11 +5,10 @@ import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { BasicFileAttributes } from '../../../../../java/nio/file/attribute/BasicFileAttributes.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Pattern } from '../../../../../java/util/regex/Pattern.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { IOCase } from '../../../../../org/apache/commons/io/IOCase.d.ts'
 import type { AbstractFileFilter } from '../../../../../org/apache/commons/io/filefilter/AbstractFileFilter.d.ts'
 export class RegexFileFilter extends AbstractFileFilter implements Serializable {
-    static EMPTY_STRING_ARRAY: (Object | null)[];
+    static EMPTY_STRING_ARRAY: string[];
     constructor(arg0: Pattern)
     constructor(arg0: Pattern, arg1: (param0: Path) => string)
     constructor(arg0: string)

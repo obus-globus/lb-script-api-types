@@ -7,7 +7,7 @@ export class SharedQuadIndexBuffer$IndexFormat extends Enum<SharedQuadIndexBuffe
     static INTEGER: SharedQuadIndexBuffer$IndexFormat;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SharedQuadIndexBuffer$IndexFormat;
-    static values(): (Object | null)[];
+    static values(): SharedQuadIndexBuffer$IndexFormat[];
     private constructor(arg2: IndexType, arg3: number)
     readonly format: IndexType;
     readonly maxElementCount: number;

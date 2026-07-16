@@ -22,7 +22,7 @@ export class OpenBsdOperatingSystem$PsKeywords extends Enum<OpenBsdOperatingSyst
     static VSZ: OpenBsdOperatingSystem$PsKeywords;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): OpenBsdOperatingSystem$PsKeywords;
-    static values(): (Object | null)[];
+    static values(): OpenBsdOperatingSystem$PsKeywords[];
     private constructor()
     name(): "STATE" | "PID" | "PPID" | "USER" | "UID" | "GROUP" | "GID" | "PRI" | "VSZ" | "RSS" | "ETIME" | "CPUTIME" | "COMM" | "MAJFLT" | "MINFLT" | "NVCSW" | "NIVCSW" | "ARGS";
 }

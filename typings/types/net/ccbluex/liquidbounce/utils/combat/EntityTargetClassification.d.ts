@@ -8,7 +8,7 @@ export class EntityTargetClassification extends Enum<EntityTargetClassification>
     static getEntries(): EntityTargetClassification[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): EntityTargetClassification;
-    static values(): (Object | null)[];
+    static values(): EntityTargetClassification[];
     private constructor()
     name(): "TARGET" | "INTERESTING" | "IGNORED";
 }

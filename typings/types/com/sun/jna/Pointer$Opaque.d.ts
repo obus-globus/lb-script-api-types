@@ -4,7 +4,6 @@ import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
 export class Pointer$Opaque extends Pointer {
     static NULL: Pointer;
     static createConstant(paramarg0: number): Pointer;
-    static createConstant(paramarg0: number): Pointer;
     static nativeValue(paramarg0: Pointer): number;
     static nativeValue(paramarg0: Pointer, paramarg1: number): void;
     constructor(arg0: number, arg1: any)

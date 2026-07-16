@@ -35,14 +35,14 @@ export class ICUResourceBundle extends UResourceBundle {
     static createBundle(paramarg0: string, paramarg1: string, paramarg2: ClassLoader): ICUResourceBundle;
     static getAvailableLocaleNameSet(): string[];
     static getAvailableLocaleNameSet(paramarg0: string, paramarg1: ClassLoader): string[];
-    static getAvailableLocales(): (Object | null)[];
-    static getAvailableLocales(paramarg0: ULocale$AvailableType): (Object | null)[];
-    static getAvailableLocales(paramarg0: string, paramarg1: ClassLoader): (Object | null)[];
-    static getAvailableLocales(paramarg0: string, paramarg1: ClassLoader, paramarg2: ULocale$AvailableType): (Object | null)[];
-    static getAvailableULocales(): (Object | null)[];
-    static getAvailableULocales(paramarg0: ULocale$AvailableType): (Object | null)[];
-    static getAvailableULocales(paramarg0: string, paramarg1: ClassLoader): (Object | null)[];
-    static getAvailableULocales(paramarg0: string, paramarg1: ClassLoader, paramarg2: ULocale$AvailableType): (Object | null)[];
+    static getAvailableLocales(): Locale[];
+    static getAvailableLocales(paramarg0: ULocale$AvailableType): Locale[];
+    static getAvailableLocales(paramarg0: string, paramarg1: ClassLoader): Locale[];
+    static getAvailableLocales(paramarg0: string, paramarg1: ClassLoader, paramarg2: ULocale$AvailableType): Locale[];
+    static getAvailableULocales(): ULocale[];
+    static getAvailableULocales(paramarg0: ULocale$AvailableType): ULocale[];
+    static getAvailableULocales(paramarg0: string, paramarg1: ClassLoader): ULocale[];
+    static getAvailableULocales(paramarg0: string, paramarg1: ClassLoader, paramarg2: ULocale$AvailableType): ULocale[];
     static getBundle(paramarg0: string): ResourceBundle;
     static getBundle(paramarg0: string, paramarg1: Locale): ResourceBundle;
     static getBundle(paramarg0: string, paramarg1: Locale, paramarg2: ResourceBundle$Control): ResourceBundle;
@@ -64,9 +64,9 @@ export class ICUResourceBundle extends UResourceBundle {
     static getBundleInstance(paramarg0: string, paramarg1: Locale, paramarg2: ClassLoader): UResourceBundle;
     static getFullLocaleNameSet(): string[];
     static getFullLocaleNameSet(paramarg0: string, paramarg1: ClassLoader): string[];
-    static getFunctionalEquivalent(paramarg0: string, paramarg1: ClassLoader, paramarg2: string, paramarg3: string, paramarg4: ULocale, paramarg5: (Object | null)[], paramarg6: boolean): ULocale;
-    static getKeywordValues(paramarg0: string, paramarg1: string): (Object | null)[];
-    static getLocaleList(paramarg0: (Object | null)[]): (Object | null)[];
+    static getFunctionalEquivalent(paramarg0: string, paramarg1: ClassLoader, paramarg2: string, paramarg3: string, paramarg4: ULocale, paramarg5: boolean[], paramarg6: boolean): ULocale;
+    static getKeywordValues(paramarg0: string, paramarg1: string): string[];
+    static getLocaleList(paramarg0: ULocale[]): Locale[];
     static getParentLocaleID(paramarg0: string, paramarg1: string, paramarg2: ICUResourceBundle$OpenType): string;
     constructor(arg0: ICUResourceBundle, arg1: string)
     constructor(arg0: ICUResourceBundle$WholeBundle)

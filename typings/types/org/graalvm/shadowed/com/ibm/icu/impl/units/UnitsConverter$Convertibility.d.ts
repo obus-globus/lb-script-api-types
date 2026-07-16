@@ -7,7 +7,7 @@ export class UnitsConverter$Convertibility extends Enum<UnitsConverter$Convertib
     static UNCONVERTIBLE: UnitsConverter$Convertibility;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): UnitsConverter$Convertibility;
-    static values(): (Object | null)[];
+    static values(): UnitsConverter$Convertibility[];
     private constructor()
     name(): "CONVERTIBLE" | "RECIPROCAL" | "UNCONVERTIBLE";
 }

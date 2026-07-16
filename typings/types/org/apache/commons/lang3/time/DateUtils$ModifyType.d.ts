@@ -7,7 +7,7 @@ export class DateUtils$ModifyType extends Enum<DateUtils$ModifyType> {
     static TRUNCATE: DateUtils$ModifyType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DateUtils$ModifyType;
-    static values(): (Object | null)[];
+    static values(): DateUtils$ModifyType[];
     private constructor()
     name(): "TRUNCATE" | "ROUND" | "CEILING";
 }

@@ -11,7 +11,7 @@ export class TextureType extends Enum<TextureType> {
     static fromString(paramarg0: string): Optional<TextureType>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TextureType;
-    static values(): (Object | null)[];
+    static values(): TextureType[];
     private constructor(arg2: number)
     readonly glType: number;
     apply(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: ByteBuffer): void;

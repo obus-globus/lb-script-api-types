@@ -17,7 +17,6 @@ export class HttpUtil extends Object {
     static getCharsetAsString(paramarg0: HttpMessage): CharSequence;
     static getContentLength(paramarg0: HttpMessage, paramarg1: number): number;
     static getContentLength(paramarg0: HttpMessage): number;
-    static getContentLength(paramarg0: HttpMessage, paramarg1: number): number;
     static getMimeType(paramarg0: HttpMessage): CharSequence;
     static getMimeType(paramarg0: CharSequence): CharSequence;
     static is100ContinueExpected(paramarg0: HttpMessage): boolean;

@@ -8,7 +8,7 @@ export class Environment extends Enum<Environment> {
     static from(paramserver: MinecraftServer): Environment;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Environment;
-    static values(): (Object | null)[];
+    static values(): Environment[];
     private constructor(description: string)
     readonly description: string;
     getDescription(): string;

@@ -6,7 +6,7 @@ export class JDKSupport$Edge extends Enum<JDKSupport$Edge> {
     static USES: JDKSupport$Edge;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): JDKSupport$Edge;
-    static values(): (Object | null)[];
+    static values(): JDKSupport$Edge[];
     private constructor()
     name(): "READS" | "USES";
 }

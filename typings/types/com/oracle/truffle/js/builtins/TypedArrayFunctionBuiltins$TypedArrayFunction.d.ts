@@ -12,7 +12,7 @@ export class TypedArrayFunctionBuiltins$TypedArrayFunction extends Enum<TypedArr
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TypedArrayFunctionBuiltins$TypedArrayFunction;
-    static values(): (Object | null)[];
+    static values(): TypedArrayFunctionBuiltins$TypedArrayFunction[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

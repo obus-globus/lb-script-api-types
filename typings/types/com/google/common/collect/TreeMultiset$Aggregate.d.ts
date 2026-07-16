@@ -8,7 +8,7 @@ export class TreeMultiset$Aggregate extends Enum<TreeMultiset$Aggregate> {
     static SIZE: TreeMultiset$Aggregate;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TreeMultiset$Aggregate;
-    static values(): (Object | null)[];
+    static values(): TreeMultiset$Aggregate[];
     constructor(arg2: Multisets$AbstractEntry<E>)
     nodeAggregate(node: TreeMultiset$AvlNode<Object>): number;
     treeAggregate(root: TreeMultiset$AvlNode<Object>): number;

@@ -14,7 +14,7 @@ export class PlayerFilter$Filter extends Enum<PlayerFilter$Filter> implements Ta
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PlayerFilter$Filter;
-    static values(): (Object | null)[];
+    static values(): PlayerFilter$Filter[];
     private constructor(tag: string, matches: (param0: PlayerInfo, param1: Regex) => boolean)
     readonly matches: (param0: PlayerInfo, param1: Regex) => boolean;
     readonly tag: string;

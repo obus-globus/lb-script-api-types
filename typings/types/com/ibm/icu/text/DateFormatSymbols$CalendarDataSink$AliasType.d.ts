@@ -8,7 +8,7 @@ export class DateFormatSymbols$CalendarDataSink$AliasType extends Enum<DateForma
     static SAME_CALENDAR: DateFormatSymbols$CalendarDataSink$AliasType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DateFormatSymbols$CalendarDataSink$AliasType;
-    static values(): (Object | null)[];
+    static values(): DateFormatSymbols$CalendarDataSink$AliasType[];
     private constructor()
     name(): "SAME_CALENDAR" | "DIFFERENT_CALENDAR" | "GREGORIAN" | "NONE";
 }

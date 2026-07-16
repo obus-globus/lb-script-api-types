@@ -60,7 +60,6 @@ export class IOURing extends Struct<IOURing> implements NativeResource {
     static nsq(paramarg0: number): IOURingSQ;
     static nsq(paramarg0: number, paramarg1: IOURingSQ): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

@@ -21,7 +21,7 @@ export class GlobalBuiltins$Global extends Enum<GlobalBuiltins$Global> implement
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): GlobalBuiltins$Global;
-    static values(): (Object | null)[];
+    static values(): GlobalBuiltins$Global[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

@@ -7,7 +7,7 @@ export class GuiMessageTag$Icon extends Enum<GuiMessageTag$Icon> {
     static CHAT_MODIFIED: GuiMessageTag$Icon;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): GuiMessageTag$Icon;
-    static values(): (Object | null)[];
+    static values(): GuiMessageTag$Icon[];
     private constructor(sprite: Identifier, width: number, height: number)
     height: number;
     sprite: Identifier;

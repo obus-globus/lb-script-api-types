@@ -23,35 +23,27 @@ export class VkPhysicalDeviceExternalSemaphoreInfoKHR extends VkPhysicalDeviceEx
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceExternalSemaphoreInfoKHR;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceExternalSemaphoreInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceExternalSemaphoreInfo;
     static create(paramarg0: number): VkPhysicalDeviceExternalSemaphoreInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceExternalSemaphoreInfoKHR;
     static create(paramarg0: number): VkPhysicalDeviceExternalSemaphoreInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceExternalSemaphoreInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceExternalSemaphoreInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceExternalSemaphoreInfo;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceExternalSemaphoreInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceExternalSemaphoreInfoKHR;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceExternalSemaphoreInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nhandleType(paramarg0: number): number;
     static nhandleType(paramarg0: number, paramarg1: number): void;
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

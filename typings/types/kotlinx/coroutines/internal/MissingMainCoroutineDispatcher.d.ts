@@ -6,13 +6,11 @@ import type { ContinuationInterceptor$Key } from '../../../kotlin/coroutines/Con
 import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { CancellableContinuation } from '../../../kotlinx/coroutines/CancellableContinuation.d.ts'
 import type { CoroutineDispatcher } from '../../../kotlinx/coroutines/CoroutineDispatcher.d.ts'
-import type { CoroutineDispatcher$Key } from '../../../kotlinx/coroutines/CoroutineDispatcher$Key.d.ts'
 import type { Delay } from '../../../kotlinx/coroutines/Delay.d.ts'
 import type { DisposableHandle } from '../../../kotlinx/coroutines/DisposableHandle.d.ts'
 import type { MainCoroutineDispatcher } from '../../../kotlinx/coroutines/MainCoroutineDispatcher.d.ts'
 export class MissingMainCoroutineDispatcher extends MainCoroutineDispatcher implements Delay {
     static Key: ContinuationInterceptor$Key;
-    static Key: CoroutineDispatcher$Key;
     static delay$suspendImpl(paramarg0: Delay, paramarg1: number, paramarg2: Continuation<Object>): Object;
     constructor(cause: Throwable | null, errorHint: string | null)
     // private cause: Throwable | null;

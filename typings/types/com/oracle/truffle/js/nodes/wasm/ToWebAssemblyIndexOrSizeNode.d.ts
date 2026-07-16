@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ToWebAssemblyIndexOrSizeNode extends JavaScriptBaseNode {
     static create(paramerrorMessagePrefix: string): ToWebAssemblyIndexOrSizeNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(errorMessagePrefix: string)
     // private errorBranch: BranchProfile;
     // private errorMessagePrefix: string;

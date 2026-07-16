@@ -6,7 +6,7 @@ export class XavierInitializer$RandomType extends Enum<XavierInitializer$RandomT
     static UNIFORM: XavierInitializer$RandomType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): XavierInitializer$RandomType;
-    static values(): (Object | null)[];
+    static values(): XavierInitializer$RandomType[];
     private constructor()
     name(): "UNIFORM" | "GAUSSIAN";
 }

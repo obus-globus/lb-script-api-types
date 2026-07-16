@@ -7,7 +7,7 @@ export class IOWorker$Priority extends Enum<IOWorker$Priority> {
     static SHUTDOWN: IOWorker$Priority;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): IOWorker$Priority;
-    static values(): (Object | null)[];
+    static values(): IOWorker$Priority[];
     private constructor()
     name(): "FOREGROUND" | "BACKGROUND" | "SHUTDOWN";
 }

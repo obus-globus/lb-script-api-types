@@ -18,7 +18,7 @@ export class ScriptModuleMinecraft_ScriptPrimitiveShapeType extends Enum<ScriptM
     static getByValue(paramarg0: number, paramarg1: ScriptModuleMinecraft_ScriptPrimitiveShapeType): ScriptModuleMinecraft_ScriptPrimitiveShapeType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ScriptModuleMinecraft_ScriptPrimitiveShapeType;
-    static values(): (Object | null)[];
+    static values(): ScriptModuleMinecraft_ScriptPrimitiveShapeType[];
     private constructor(arg2: number)
     private constructor(arg2: ScriptModuleMinecraft_ScriptPrimitiveShapeType)
     readonly value: number;

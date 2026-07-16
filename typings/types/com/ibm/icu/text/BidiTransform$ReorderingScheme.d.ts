@@ -22,7 +22,7 @@ export class BidiTransform$ReorderingScheme extends Enum<BidiTransform$Reorderin
     static VIS_RTL_TO_VIS_RTL: BidiTransform$ReorderingScheme;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BidiTransform$ReorderingScheme;
-    static values(): (Object | null)[];
+    static values(): BidiTransform$ReorderingScheme[];
     private constructor()
     doTransform(arg0: BidiTransform): void;
     matches(arg0: number, arg1: BidiTransform$Order, arg2: number, arg3: BidiTransform$Order): boolean;

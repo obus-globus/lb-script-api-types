@@ -38,7 +38,6 @@ export class BDF_Property extends Struct<BDF_Property> implements NativeResource
     static nu_cardinal(paramarg0: number): number;
     static nu_integer(paramarg0: number): number;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     close(): void;

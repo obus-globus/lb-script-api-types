@@ -7,7 +7,7 @@ export class Commands$CommandSelection extends Enum<Commands$CommandSelection> {
     static INTEGRATED: Commands$CommandSelection;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Commands$CommandSelection;
-    static values(): (Object | null)[];
+    static values(): Commands$CommandSelection[];
     private constructor(includeIntegrated: boolean, includeDedicated: boolean)
     includeDedicated: boolean;
     includeIntegrated: boolean;

@@ -9,7 +9,7 @@ export class NumberFormatter$GroupingStrategy extends Enum<NumberFormatter$Group
     static THOUSANDS: NumberFormatter$GroupingStrategy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): NumberFormatter$GroupingStrategy;
-    static values(): (Object | null)[];
+    static values(): NumberFormatter$GroupingStrategy[];
     private constructor()
     name(): "OFF" | "MIN2" | "AUTO" | "ON_ALIGNED" | "THOUSANDS";
 }

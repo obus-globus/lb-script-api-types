@@ -6,8 +6,8 @@ import type { IVec } from '../../../../../../../../../net/fabricmc/loader/impl/l
 import type { IVecInt } from '../../../../../../../../../net/fabricmc/loader/impl/lib/sat4j/specs/IVecInt.d.ts'
 export abstract class Pseudos extends Object {
     static niceCheckedParameters(paramarg0: IVecInt, paramarg1: IVec<BigInteger>, paramarg2: boolean, paramarg3: BigInteger, paramarg4: ILits): IDataStructurePB;
-    static niceCheckedParametersForCompetition(paramarg0: number[], paramarg1: (Object | null)[], paramarg2: boolean, paramarg3: BigInteger): BigInteger;
+    static niceCheckedParametersForCompetition(paramarg0: number[], paramarg1: BigInteger[], paramarg2: boolean, paramarg3: BigInteger): BigInteger;
     static niceParameters(paramarg0: IVecInt, paramarg1: IVec<BigInteger>, paramarg2: boolean, paramarg3: BigInteger, paramarg4: ILits): IDataStructurePB;
-    static niceParametersForCompetition(paramarg0: number[], paramarg1: (Object | null)[], paramarg2: boolean, paramarg3: BigInteger): BigInteger;
+    static niceParametersForCompetition(paramarg0: number[], paramarg1: BigInteger[], paramarg2: boolean, paramarg3: BigInteger): BigInteger;
     constructor()
 }

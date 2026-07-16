@@ -7,7 +7,7 @@ export class ListFormatter$Type extends Enum<ListFormatter$Type> {
     static UNITS: ListFormatter$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ListFormatter$Type;
-    static values(): (Object | null)[];
+    static values(): ListFormatter$Type[];
     private constructor()
     name(): "AND" | "OR" | "UNITS";
 }

@@ -12,7 +12,7 @@ export class Continuation$PreemptStatus extends Enum<Continuation$PreemptStatus>
     static TRANSIENT_FAIL_PINNED_NATIVE: Continuation$PreemptStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Continuation$PreemptStatus;
-    static values(): (Object | null)[];
+    static values(): Continuation$PreemptStatus[];
     private constructor(arg2: Continuation$Pinned)
     // private pinned: Continuation$Pinned;
     pinned(): Continuation$Pinned;

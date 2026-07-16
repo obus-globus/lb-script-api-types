@@ -5,7 +5,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class IsConstructorNodeGen$Uncached extends IsConstructorNode implements UnadoptableNode {
     static create(): IsConstructorNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     executeBoolean(arg0Value: Object): boolean;
 }

@@ -8,7 +8,7 @@ export class UnicodeSet$SpanCondition extends Enum<UnicodeSet$SpanCondition> {
     static SIMPLE: UnicodeSet$SpanCondition;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): UnicodeSet$SpanCondition;
-    static values(): (Object | null)[];
+    static values(): UnicodeSet$SpanCondition[];
     private constructor()
     name(): "NOT_CONTAINED" | "CONTAINED" | "SIMPLE" | "CONDITION_COUNT";
 }

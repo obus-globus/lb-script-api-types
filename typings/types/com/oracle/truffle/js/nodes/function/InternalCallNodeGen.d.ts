@@ -7,7 +7,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class InternalCallNodeGen extends InternalCallNode {
     static create(): InternalCallNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private directCall_cache: InternalCallNodeGen$DirectCallData;
     // private indirectCall_indirectCallNode_: IndirectCallNode;

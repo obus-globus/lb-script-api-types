@@ -19,7 +19,7 @@ export class RelativeDateTimeFormatter$RelativeUnit extends Enum<RelativeDateTim
     static YEARS: RelativeDateTimeFormatter$RelativeUnit;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RelativeDateTimeFormatter$RelativeUnit;
-    static values(): (Object | null)[];
+    static values(): RelativeDateTimeFormatter$RelativeUnit[];
     private constructor()
     name(): "SECONDS" | "MINUTES" | "HOURS" | "DAYS" | "WEEKS" | "MONTHS" | "YEARS" | "QUARTERS" | "SUNDAYS" | "MONDAYS" | "TUESDAYS" | "WEDNESDAYS" | "THURSDAYS" | "FRIDAYS" | "SATURDAYS";
 }

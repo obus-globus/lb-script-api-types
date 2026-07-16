@@ -16,11 +16,12 @@ export class RecursiveToStringStyle extends ToStringStyle {
     appendDetail(arg0: StringBuffer, arg1: string, arg2: Object): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: Object[]): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: boolean): void;
-    appendDetail(arg0: StringBuffer, arg1: string, arg2: (Object | null)[]): void;
+    appendDetail(arg0: StringBuffer, arg1: string, arg2: boolean[]): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: number): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: number[]): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: string): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: string[]): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: number, arg3: Object): void;
+    appendDetail(arg0: StringBuffer, arg1: string, arg2: (Object | null)[]): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: Map<Object | null, Object | null>): void;
 }

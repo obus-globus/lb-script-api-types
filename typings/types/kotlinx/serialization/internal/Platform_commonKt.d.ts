@@ -11,7 +11,7 @@ export class Platform_commonKt extends Object {
     static cast(paramarg0: DeserializationStrategy<Object>): DeserializationStrategy<Object>;
     static cast(paramarg0: KSerializer<Object>): KSerializer<Object>;
     static cast(paramarg0: SerializationStrategy<Object>): SerializationStrategy<Object>;
-    static compactArray(paramarg0: SerialDescriptor[]): (Object | null)[];
+    static compactArray(paramarg0: SerialDescriptor[]): SerialDescriptor[];
     static elementsHashCodeBy(paramarg0: (Object | null)[], paramarg1: (param0: Object) => Object | null): number;
     static kclass(paramarg0: KType): KClass<Object>;
     static notRegisteredMessage(paramarg0: string): string;

@@ -9,7 +9,7 @@ export class JSFunction$AsyncGeneratorState extends Enum<JSFunction$AsyncGenerat
     static SuspendedYield: JSFunction$AsyncGeneratorState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): JSFunction$AsyncGeneratorState;
-    static values(): (Object | null)[];
+    static values(): JSFunction$AsyncGeneratorState[];
     private constructor()
     name(): "SuspendedStart" | "SuspendedYield" | "Executing" | "AwaitingReturn" | "Completed";
 }

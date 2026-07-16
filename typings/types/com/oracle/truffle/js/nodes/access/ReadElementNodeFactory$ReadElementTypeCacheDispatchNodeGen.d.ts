@@ -9,7 +9,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ReadElementNodeFactory$ReadElementTypeCacheDispatchNodeGen extends ReadElementNode$ReadElementTypeCacheDispatchNode {
     static create(): ReadElementNode$ReadElementTypeCacheDispatchNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private isObjectNode: IsJSDynamicObjectNode;
     // private objectHandler: ReadElementNode$JSObjectReadElementTypeCacheNode;

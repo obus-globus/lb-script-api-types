@@ -7,7 +7,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ConstructorBuiltinsFactory$GetArrayBufferMaxByteLengthOptionNodeGen extends ConstructorBuiltins$GetArrayBufferMaxByteLengthOption {
     static create(): ConstructorBuiltins$GetArrayBufferMaxByteLengthOption;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private generic_getMaxByteLengthNode_: PropertyGetNode;
     // private generic_isObjectNode_: IsObjectNode;

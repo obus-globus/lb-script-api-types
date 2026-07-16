@@ -10,6 +10,7 @@ import type { BedrockDataPalette } from '../../../../../net/raphimc/viabedrock/a
 import type { BedrockChunkSection } from '../../../../../net/raphimc/viabedrock/api/chunk/section/BedrockChunkSection.d.ts'
 import type { BlockChangeEntry } from '../../../../../net/raphimc/viabedrock/protocol/model/BlockChangeEntry.d.ts'
 import type { BlockProperties } from '../../../../../net/raphimc/viabedrock/protocol/model/BlockProperties.d.ts'
+import type { CommandData } from '../../../../../net/raphimc/viabedrock/protocol/model/CommandData.d.ts'
 import type { CommandOriginData } from '../../../../../net/raphimc/viabedrock/protocol/model/CommandOriginData.d.ts'
 import type { EducationUriResource } from '../../../../../net/raphimc/viabedrock/protocol/model/EducationUriResource.d.ts'
 import type { EntityLink } from '../../../../../net/raphimc/viabedrock/protocol/model/EntityLink.d.ts'
@@ -35,34 +36,34 @@ import type { VarLongType } from '../../../../../net/raphimc/viabedrock/protocol
 export class BedrockTypes extends Object {
     static ASCII_STRING: Type<string>;
     static BLOCK_CHANGE_ENTRY: Type<BlockChangeEntry>;
-    static BLOCK_CHANGE_ENTRY_ARRAY: Type<(Object | null)[]>;
+    static BLOCK_CHANGE_ENTRY_ARRAY: Type<BlockChangeEntry[]>;
     static BLOCK_POSITION: Type<BlockPosition>;
     static BLOCK_PROPERTIES: Type<BlockProperties>;
-    static BLOCK_PROPERTIES_ARRAY: Type<(Object | null)[]>;
+    static BLOCK_PROPERTIES_ARRAY: Type<BlockProperties[]>;
     static BYTE_ARRAY: Type<number[]>;
     static CHUNK_SECTION: Type<BedrockChunkSection>;
-    static COMMAND_DATA_ARRAY: Type<(Object | null)[]>;
+    static COMMAND_DATA_ARRAY: Type<CommandData[]>;
     static COMMAND_ORIGIN_DATA: Type<CommandOriginData>;
     static COMPOUND_TAG_VALUE: Type<Tag>;
     static DATA_PALETTE: Type<BedrockDataPalette>;
     static EDUCATION_URI_RESOURCE: Type<EducationUriResource>;
     static ENTITY_DATA: Type<EntityData>;
-    static ENTITY_DATA_ARRAY: Type<(Object | null)[]>;
+    static ENTITY_DATA_ARRAY: Type<EntityData[]>;
     static ENTITY_LINK: Type<EntityLink>;
-    static ENTITY_LINK_ARRAY: Type<(Object | null)[]>;
+    static ENTITY_LINK_ARRAY: Type<EntityLink[]>;
     static ENTITY_PROPERTIES: Type<EntityProperties>;
     static EXPERIMENT: Type<Experiment>;
-    static EXPERIMENT_ARRAY: Type<(Object | null)[]>;
+    static EXPERIMENT_ARRAY: Type<Experiment[]>;
     static FLOAT_LE: FloatLEType;
     static FULL_CONTAINER_NAME: Type<FullContainerName>;
-    static FULL_CONTAINER_NAME_ARRAY: Type<(Object | null)[]>;
+    static FULL_CONTAINER_NAME_ARRAY: Type<FullContainerName[]>;
     static GAME_RULE: Type<GameRule>;
-    static GAME_RULE_ARRAY: Type<(Object | null)[]>;
+    static GAME_RULE_ARRAY: Type<GameRule[]>;
     static IMAGE: Type<BufferedImage>;
     static INT_LE: IntLEType;
     static ITEM_ENTRY: Type<ItemEntry>;
-    static ITEM_ENTRY_ARRAY: Type<(Object | null)[]>;
-    static LONG_ARRAY: Type<(Object | null)[]>;
+    static ITEM_ENTRY_ARRAY: Type<ItemEntry[]>;
+    static LONG_ARRAY: Type<number[]>;
     static LONG_LE: LongLEType;
     static NETWORK_TAG: Type<Tag>;
     static OPTIONAL_FULL_CONTAINER_NAME: Type<FullContainerName>;
@@ -74,10 +75,10 @@ export class BedrockTypes extends Object {
     static POSITION_3F: Type<Position3f>;
     static RUNTIME_DATA_PALETTE: Type<BedrockDataPalette>;
     static SHORT_LE: ShortLEType;
-    static SHORT_LE_STRING_ARRAY: Type<(Object | null)[]>;
+    static SHORT_LE_STRING_ARRAY: Type<string[]>;
     static SKIN: Type<SkinData>;
     static STRING: Type<string>;
-    static STRING_ARRAY: Type<(Object | null)[]>;
+    static STRING_ARRAY: Type<string[]>;
     static SUB_CHUNK_OFFSET: Type<BlockPosition>;
     static TAG_LE: Type<Tag>;
     static UNSIGNED_INT_LE: UnsignedIntLEType;
@@ -87,12 +88,12 @@ export class BedrockTypes extends Object {
     static UNSIGNED_VAR_INT: UnsignedVarIntType;
     static UNSIGNED_VAR_LONG: UnsignedVarLongType;
     static UTF8_STRING: Type<string>;
-    static UTF8_STRING_ARRAY: Type<(Object | null)[]>;
+    static UTF8_STRING_ARRAY: Type<string[]>;
     static UUID: Type<UUID>;
-    static UUID_ARRAY: Type<(Object | null)[]>;
+    static UUID_ARRAY: Type<UUID[]>;
     static VAR_INT: VarIntType;
     static VAR_INT_GAME_RULE: Type<GameRule>;
-    static VAR_INT_GAME_RULE_ARRAY: Type<(Object | null)[]>;
+    static VAR_INT_GAME_RULE_ARRAY: Type<GameRule[]>;
     static VAR_LONG: VarLongType;
     constructor()
 }

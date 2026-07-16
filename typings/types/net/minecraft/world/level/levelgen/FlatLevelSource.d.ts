@@ -1,4 +1,3 @@
-import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
@@ -17,7 +16,6 @@ import type { Blender } from '../../../../../net/minecraft/world/level/levelgen/
 import type { FlatLevelGeneratorSettings } from '../../../../../net/minecraft/world/level/levelgen/flat/FlatLevelGeneratorSettings.d.ts'
 import type { StructureSet } from '../../../../../net/minecraft/world/level/levelgen/structure/StructureSet.d.ts'
 export class FlatLevelSource extends ChunkGenerator {
-    static CODEC: Codec<ChunkGenerator>;
     static CODEC: MapCodec<FlatLevelSource>;
     constructor(generatorSettings: FlatLevelGeneratorSettings)
     // private settings: FlatLevelGeneratorSettings;

@@ -16,11 +16,11 @@ import type { ExtensionRegistryLite } from '../../../../../../../../kotlin/refle
 export class JvmProtoBufUtil extends Object {
     static INSTANCE: JvmProtoBufUtil;
     static isMovedFromInterfaceCompanion(paramarg0: ProtoBuf$Property): boolean;
-    static readClassDataFrom(paramarg0: number[], paramarg1: (Object | null)[]): Pair<JvmNameResolver, ProtoBuf$Class>;
-    static readClassDataFrom(paramarg0: (Object | null)[], paramarg1: (Object | null)[]): Pair<JvmNameResolver, ProtoBuf$Class>;
-    static readFunctionDataFrom(paramarg0: (Object | null)[], paramarg1: (Object | null)[]): Pair<JvmNameResolver, ProtoBuf$Function>;
-    static readPackageDataFrom(paramarg0: number[], paramarg1: (Object | null)[]): Pair<JvmNameResolver, ProtoBuf$Package>;
-    static readPackageDataFrom(paramarg0: (Object | null)[], paramarg1: (Object | null)[]): Pair<JvmNameResolver, ProtoBuf$Package>;
+    static readClassDataFrom(paramarg0: number[], paramarg1: string[]): Pair<JvmNameResolver, ProtoBuf$Class>;
+    static readClassDataFrom(paramarg0: string[], paramarg1: string[]): Pair<JvmNameResolver, ProtoBuf$Class>;
+    static readFunctionDataFrom(paramarg0: string[], paramarg1: string[]): Pair<JvmNameResolver, ProtoBuf$Function>;
+    static readPackageDataFrom(paramarg0: number[], paramarg1: string[]): Pair<JvmNameResolver, ProtoBuf$Package>;
+    static readPackageDataFrom(paramarg0: string[], paramarg1: string[]): Pair<JvmNameResolver, ProtoBuf$Package>;
     private constructor()
     getEXTENSION_REGISTRY(): ExtensionRegistryLite;
     getJvmConstructorSignature(arg0: ProtoBuf$Constructor, arg1: NameResolver, arg2: TypeTable): JvmMemberSignature$Method;

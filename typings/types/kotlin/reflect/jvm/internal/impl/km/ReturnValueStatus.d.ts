@@ -8,7 +8,7 @@ export class ReturnValueStatus extends Enum<ReturnValueStatus> {
     static getEntries(): ReturnValueStatus[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ReturnValueStatus;
-    static values(): (Object | null)[];
+    static values(): ReturnValueStatus[];
     private constructor()
     name(): "UNSPECIFIED" | "MUST_USE" | "EXPLICITLY_IGNORABLE";
 }

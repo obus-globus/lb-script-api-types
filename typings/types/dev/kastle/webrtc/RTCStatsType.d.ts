@@ -23,7 +23,7 @@ export class RTCStatsType extends Enum<RTCStatsType> {
     static TRANSPORT: RTCStatsType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RTCStatsType;
-    static values(): (Object | null)[];
+    static values(): RTCStatsType[];
     private constructor()
     name(): "CODEC" | "INBOUND_RTP" | "OUTBOUND_RTP" | "REMOTE_INBOUND_RTP" | "REMOTE_OUTBOUND_RTP" | "MEDIA_SOURCE" | "CSRC" | "PEER_CONNECTION" | "DATA_CHANNEL" | "STREAM" | "TRACK" | "SENDER" | "RECEIVER" | "TRANSPORT" | "CANDIDATE_PAIR" | "LOCAL_CANDIDATE" | "REMOTE_CANDIDATE" | "CERTIFICATE" | "ICE_SERVER";
 }

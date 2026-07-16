@@ -22,7 +22,7 @@ export class CustomAntiBotMode$CustomConditions extends Enum<CustomAntiBotMode$C
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CustomAntiBotMode$CustomConditions;
-    static values(): (Object | null)[];
+    static values(): CustomAntiBotMode$CustomConditions[];
     private constructor(tag: string, isBot: AntiBotPredicate)
     // private isBot: AntiBotPredicate;
     readonly tag: string;

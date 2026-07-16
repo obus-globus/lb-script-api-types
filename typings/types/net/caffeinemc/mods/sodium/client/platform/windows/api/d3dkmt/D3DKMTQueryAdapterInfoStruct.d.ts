@@ -12,7 +12,6 @@ export class D3DKMTQueryAdapterInfoStruct extends Struct<D3DKMTAdapterInfoStruct
     static POINTER_SIZE: number;
     static malloc(paramarg0: MemoryStack): D3DKMTQueryAdapterInfoStruct;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     private constructor(arg0: number, arg1: ByteBuffer)
     create(arg0: number, arg1: ByteBuffer): D3DKMTAdapterInfoStruct;
     setAdapterHandle(arg0: number): void;

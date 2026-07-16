@@ -23,7 +23,7 @@ import type { Number } from '../../java/lang/Number.d.ts'
 export class DecimalFormat extends NumberFormat {
     static FRACTION_FIELD: number;
     static INTEGER_FIELD: number;
-    static getAvailableLocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
     static getCompactNumberInstance(): NumberFormat;
     static getCompactNumberInstance(paramarg0: Locale, paramarg1: NumberFormat$Style): NumberFormat;
     static getCurrencyInstance(): NumberFormat;
@@ -160,8 +160,8 @@ export class DecimalFormat extends NumberFormat {
     // private shiftDecimalAt(arg0: number, arg1: number): number;
     // private subformat(arg0: Format$StringBuf, arg1: Format$FieldDelegate, arg2: boolean, arg3: boolean, arg4: number, arg5: number, arg6: number, arg7: number): Format$StringBuf;
     subformatNumber(arg0: Format$StringBuf, arg1: Format$FieldDelegate, arg2: boolean, arg3: boolean, arg4: number, arg5: number, arg6: number, arg7: number): void;
-    // private subparse(arg0: string, arg1: ParsePosition, arg2: string, arg3: string, arg4: DigitList, arg5: boolean, arg6: (Object | null)[]): boolean;
-    subparseNumber(arg0: string, arg1: number, arg2: DigitList, arg3: boolean, arg4: boolean, arg5: (Object | null)[]): DecimalFormat$NumericPosition;
+    // private subparse(arg0: string, arg1: ParsePosition, arg2: string, arg3: string, arg4: DigitList, arg5: boolean, arg6: boolean[]): boolean;
+    subparseNumber(arg0: string, arg1: number, arg2: DigitList, arg3: boolean, arg4: boolean, arg5: boolean[]): DecimalFormat$NumericPosition;
     toLocalizedPattern(): string;
     toPattern(): string;
     // private toPattern(arg0: boolean): string;

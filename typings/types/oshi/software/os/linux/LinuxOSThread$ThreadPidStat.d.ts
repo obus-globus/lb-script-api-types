@@ -15,7 +15,7 @@ export class LinuxOSThread$ThreadPidStat extends Enum<LinuxOSThread$ThreadPidSta
     static VSZ: LinuxOSThread$ThreadPidStat;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LinuxOSThread$ThreadPidStat;
-    static values(): (Object | null)[];
+    static values(): LinuxOSThread$ThreadPidStat[];
     private constructor(arg2: number)
     readonly order: number;
     getOrder(): number;

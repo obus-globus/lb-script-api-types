@@ -28,9 +28,9 @@ import type { Uuid } from '../../../kotlin/uuid/Uuid.d.ts'
 import type { Uuid$Companion } from '../../../kotlin/uuid/Uuid$Companion.d.ts'
 import type { KSerializer } from '../../../kotlinx/serialization/KSerializer.d.ts'
 export class BuiltinSerializersKt extends Object {
-    static ArraySerializer(paramarg0: KClass<Object>, paramarg1: KSerializer<Object>): KSerializer<Object>;
-    static ArraySerializer(paramarg0: KSerializer<Object>): KSerializer<Object>;
-    static BooleanArraySerializer(): KSerializer<(Object | null)[]>;
+    static ArraySerializer(paramarg0: KClass<Object>, paramarg1: KSerializer<Object>): KSerializer<(Object | null)[]>;
+    static ArraySerializer(paramarg0: KSerializer<Object>): KSerializer<(Object | null)[]>;
+    static BooleanArraySerializer(): KSerializer<boolean[]>;
     static ByteArraySerializer(): KSerializer<number[]>;
     static CharArraySerializer(): KSerializer<string[]>;
     static DoubleArraySerializer(): KSerializer<number[]>;

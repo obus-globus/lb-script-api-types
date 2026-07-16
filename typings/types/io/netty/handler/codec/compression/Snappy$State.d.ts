@@ -8,7 +8,7 @@ export class Snappy$State extends Enum<Snappy$State> {
     static READING_TAG: Snappy$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Snappy$State;
-    static values(): (Object | null)[];
+    static values(): Snappy$State[];
     private constructor()
     name(): "READING_PREAMBLE" | "READING_TAG" | "READING_LITERAL" | "READING_COPY";
 }

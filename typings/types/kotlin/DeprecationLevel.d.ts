@@ -9,7 +9,7 @@ export class DeprecationLevel extends Enum<DeprecationLevel> implements Serializ
     static getEntries(): DeprecationLevel[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DeprecationLevel;
-    static values(): (Object | null)[];
+    static values(): DeprecationLevel[];
     private constructor()
     name(): "WARNING" | "ERROR" | "HIDDEN";
 }

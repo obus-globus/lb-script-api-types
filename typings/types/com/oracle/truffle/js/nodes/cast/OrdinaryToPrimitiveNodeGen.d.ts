@@ -14,7 +14,6 @@ export class OrdinaryToPrimitiveNodeGen extends OrdinaryToPrimitiveNode {
     static getUncached(): OrdinaryToPrimitiveNode;
     static isJavaArray(paramobject: Object, paraminterop: InteropLibrary): boolean;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private callToStringNode: JSFunctionCallNode;
     // private callValueOfNode: JSFunctionCallNode;

@@ -7,15 +7,13 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class Sets extends Object {
     static cartesianProduct(paramsets: (Object | null)[][]): (Object | null)[][];
-    static cartesianProduct(paramsets: Object | null): (Object | null)[][];
+    static cartesianProduct(...paramsets: (Object | null)[][]): (Object | null)[][];
     static combinations(paramset: (Object | null)[], paramsize: number): (Object | null)[][];
     static complementOf(paramcollection: (Object | null)[]): (Object | null)[];
     static complementOf(paramcollection: (Object | null)[], paramtype: Class<Object>): (Object | null)[];
     static difference(paramset1: (Object | null)[], paramset2: Object[]): (Object | null)[];
     static filter(paramunfiltered: (Object | null)[], parampredicate: (param0: Object) => boolean): (Object | null)[];
-    static filter(paramunfiltered: (Object | null)[], parampredicate: (param0: Object) => boolean): (Object | null)[];
-    static filter(paramunfiltered: (Object | null)[], parampredicate: (param0: Object) => boolean): (Object | null)[];
-    static immutableEnumSet(paramanElement: Object | null, paramotherElements: Object | null): (Object | null)[];
+    static immutableEnumSet(paramanElement: Object | null, ...paramotherElements: (Object | null)[]): (Object | null)[];
     static immutableEnumSet(paramelements: (Object | null)[]): (Object | null)[];
     static intersection(paramset1: (Object | null)[], paramset2: Object[]): (Object | null)[];
     static newConcurrentHashSet(): (Object | null)[];
@@ -24,7 +22,7 @@ export class Sets extends Object {
     static newCopyOnWriteArraySet(paramelements: (Object | null)[]): (Object | null)[];
     static newEnumSet(paramiterable: (Object | null)[], paramelementType: Class<Object>): (Object | null)[];
     static newHashSet(): (Object | null)[];
-    static newHashSet(paramelements: Object | null): (Object | null)[];
+    static newHashSet(...paramelements: (Object | null)[]): (Object | null)[];
     static newHashSet(paramelements: (Object | null)[]): (Object | null)[];
     static newHashSet(paramelements: Iterator<Object>): (Object | null)[];
     static newHashSetWithExpectedSize(paramexpectedSize: number): (Object | null)[];
@@ -35,7 +33,7 @@ export class Sets extends Object {
     static newSetFromMap(parammap: Map<Object | null, boolean>): (Object | null)[];
     static newTreeSet(): (Object | null)[];
     static newTreeSet(paramelements: (Object | null)[]): (Object | null)[];
-    static newTreeSet(paramcomparator: (param0: Object) => boolean): (Object | null)[];
+    static newTreeSet(paramcomparator: (param0: Object, param1: Object) => number): (Object | null)[];
     static powerSet(paramset: (Object | null)[]): (Object | null)[][];
     static subSet(paramset: (Object | null)[], paramrange: Range<any>): (Object | null)[];
     static symmetricDifference(paramset1: (Object | null)[], paramset2: (Object | null)[]): (Object | null)[];

@@ -7,7 +7,7 @@ export class UResourceBundle$RootType extends Enum<UResourceBundle$RootType> {
     static MISSING: UResourceBundle$RootType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): UResourceBundle$RootType;
-    static values(): (Object | null)[];
+    static values(): UResourceBundle$RootType[];
     private constructor()
     name(): "MISSING" | "ICU" | "JAVA";
 }

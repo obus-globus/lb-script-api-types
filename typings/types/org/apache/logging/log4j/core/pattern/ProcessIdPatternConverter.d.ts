@@ -4,8 +4,8 @@ import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/L
 import type { LogEventPatternConverter } from '../../../../../../org/apache/logging/log4j/core/pattern/LogEventPatternConverter.d.ts'
 export class ProcessIdPatternConverter extends LogEventPatternConverter {
     static CATEGORY: string;
-    static main(paramargs: (Object | null)[]): void;
-    static newInstance(paramoptions: (Object | null)[]): ProcessIdPatternConverter;
+    static main(paramargs: string[]): void;
+    static newInstance(paramoptions: string[]): ProcessIdPatternConverter;
     private constructor(...options: string[])
     // private pid: string;
     format(obj: Object, output: StringBuilder): void;

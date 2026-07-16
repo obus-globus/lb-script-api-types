@@ -5,6 +5,7 @@ import type { EventHook } from '../../../../../net/ccbluex/liquidbounce/event/Ev
 import type { EventListener } from '../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
 import type { KeyboardKeyEvent } from '../../../../../net/ccbluex/liquidbounce/event/events/KeyboardKeyEvent.d.ts'
 import type { Chronometer } from '../../../../../net/ccbluex/liquidbounce/utils/client/Chronometer.d.ts'
+import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 /**
  * Hides client appearance
  *
@@ -14,12 +15,14 @@ import type { Chronometer } from '../../../../../net/ccbluex/liquidbounce/utils/
  */
 export class HideAppearance extends Object implements EventListener {
     static INSTANCE: HideAppearance;
+    readonly debugDisplayName: Component;
     // private isDestructed: boolean;
     /*not mapped: */ isDestructed(): boolean;
     // private isHidingNow: boolean;
     /*not mapped: */ isHidingNow(): boolean;
     // private keyHandler: EventHook<KeyboardKeyEvent>;
     // private modContainersToHide: { [key: string]: Mod | null };
+    readonly running: boolean;
     // private shiftChronometer: Chronometer;
     children(): EventListener[];
     /**

@@ -1,6 +1,7 @@
 import type { GlShaderModule } from '../../../../com/mojang/blaze3d/opengl/GlShaderModule.d.ts'
 import type { Uniform } from '../../../../com/mojang/blaze3d/opengl/Uniform.d.ts'
 import type { BindGroupLayout } from '../../../../com/mojang/blaze3d/pipeline/BindGroupLayout.d.ts'
+import type { VertexFormat } from '../../../../com/mojang/blaze3d/vertex/VertexFormat.d.ts'
 import type { AutoCloseable } from '../../../../java/lang/AutoCloseable.d.ts'
 import type { MethodHandle } from '../../../../java/lang/invoke/MethodHandle.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -9,7 +10,7 @@ import type { CallbackInfo } from '../../../../org/spongepowered/asm/mixin/injec
 export class GlProgram extends Object implements AutoCloseable, ShaderInstanceInterface {
     static BUILT_IN_UNIFORMS: string[];
     static INVALID_PROGRAM: GlProgram;
-    static link(paramvertexShader: GlShaderModule, paramfragmentShader: GlShaderModule, paramvertexBindings: (Object | null)[], paramdebugLabel: string): GlProgram;
+    static link(paramvertexShader: GlShaderModule, paramfragmentShader: GlShaderModule, paramvertexBindings: VertexFormat[], paramdebugLabel: string): GlProgram;
     constructor(programId: number, debugLabel: string)
     readonly debugLabel: string;
     readonly programId: number;

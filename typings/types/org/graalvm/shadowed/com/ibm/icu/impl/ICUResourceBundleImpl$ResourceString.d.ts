@@ -3,7 +3,6 @@ import type { Module } from '../../../../../../../java/lang/Module.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { ResourceBundle } from '../../../../../../../java/util/ResourceBundle.d.ts'
 import type { ResourceBundle$Control } from '../../../../../../../java/util/ResourceBundle$Control.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { ICUResourceBundle } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/ICUResourceBundle.d.ts'
 import type { ICUResourceBundle$OpenType } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/ICUResourceBundle$OpenType.d.ts'
 import type { ICUResourceBundleImpl } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/ICUResourceBundleImpl.d.ts'
@@ -31,14 +30,14 @@ export class ICUResourceBundleImpl$ResourceString extends ICUResourceBundleImpl 
     static createBundle(parambaseName: string, paramlocaleID: string, paramroot: ClassLoader): ICUResourceBundle;
     static getAvailableLocaleNameSet(): string[];
     static getAvailableLocaleNameSet(parambundlePrefix: string, paramloader: ClassLoader): string[];
-    static getAvailableLocales(): (Object | null)[];
-    static getAvailableLocales(parambaseName: string, paramloader: ClassLoader): (Object | null)[];
-    static getAvailableLocales(parambaseName: string, paramloader: ClassLoader, paramtype: ULocale$AvailableType): (Object | null)[];
-    static getAvailableLocales(paramtype: ULocale$AvailableType): (Object | null)[];
-    static getAvailableULocales(): (Object | null)[];
-    static getAvailableULocales(parambaseName: string, paramloader: ClassLoader): (Object | null)[];
-    static getAvailableULocales(parambaseName: string, paramloader: ClassLoader, paramtype: ULocale$AvailableType): (Object | null)[];
-    static getAvailableULocales(paramtype: ULocale$AvailableType): (Object | null)[];
+    static getAvailableLocales(): Locale[];
+    static getAvailableLocales(parambaseName: string, paramloader: ClassLoader): Locale[];
+    static getAvailableLocales(parambaseName: string, paramloader: ClassLoader, paramtype: ULocale$AvailableType): Locale[];
+    static getAvailableLocales(paramtype: ULocale$AvailableType): Locale[];
+    static getAvailableULocales(): ULocale[];
+    static getAvailableULocales(parambaseName: string, paramloader: ClassLoader): ULocale[];
+    static getAvailableULocales(parambaseName: string, paramloader: ClassLoader, paramtype: ULocale$AvailableType): ULocale[];
+    static getAvailableULocales(paramtype: ULocale$AvailableType): ULocale[];
     static getBundle(paramarg0: string): ResourceBundle;
     static getBundle(paramarg0: string, paramarg1: Locale): ResourceBundle;
     static getBundle(paramarg0: string, paramarg1: Locale, paramarg2: ResourceBundle$Control): ResourceBundle;
@@ -60,9 +59,9 @@ export class ICUResourceBundleImpl$ResourceString extends ICUResourceBundleImpl 
     static getBundleInstance(paramlocale: ULocale): UResourceBundle;
     static getFullLocaleNameSet(): string[];
     static getFullLocaleNameSet(parambundlePrefix: string, paramloader: ClassLoader): string[];
-    static getFunctionalEquivalent(parambaseName: string, paramloader: ClassLoader, paramresName: string, paramkeyword: string, paramlocID: ULocale, paramisAvailable: (Object | null)[], paramomitDefault: boolean): ULocale;
-    static getKeywordValues(parambaseName: string, paramkeyword: string): (Object | null)[];
-    static getLocaleList(paramulocales: (Object | null)[]): (Object | null)[];
+    static getFunctionalEquivalent(parambaseName: string, paramloader: ClassLoader, paramresName: string, paramkeyword: string, paramlocID: ULocale, paramisAvailable: boolean[], paramomitDefault: boolean): ULocale;
+    static getKeywordValues(parambaseName: string, paramkeyword: string): string[];
+    static getLocaleList(paramulocales: ULocale[]): Locale[];
     static getParentLocaleID(paramname: string, paramorigName: string, paramopenType: ICUResourceBundle$OpenType): string;
     constructor(container: ICUResourceBundleImpl, key: string, resource: number)
     // private value: string;

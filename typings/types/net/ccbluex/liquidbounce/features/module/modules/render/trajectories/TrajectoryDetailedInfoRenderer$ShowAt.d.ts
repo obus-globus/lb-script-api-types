@@ -16,7 +16,7 @@ export class TrajectoryDetailedInfoRenderer$ShowAt extends Enum<TrajectoryDetail
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TrajectoryDetailedInfoRenderer$ShowAt;
-    static values(): (Object | null)[];
+    static values(): TrajectoryDetailedInfoRenderer$ShowAt[];
     private constructor(tag: string)
     readonly tag: string;
     apply(renderer: TrajectoryInfoRenderer, result: TrajectoryInfoRenderer$SimulationResult): Vec3;

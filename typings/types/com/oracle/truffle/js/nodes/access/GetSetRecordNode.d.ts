@@ -13,7 +13,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class GetSetRecordNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): GetSetRecordNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private context: JSContext;
     execute(obj: Object): SetRecord;

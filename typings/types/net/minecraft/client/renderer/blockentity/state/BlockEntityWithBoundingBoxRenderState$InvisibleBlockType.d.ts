@@ -8,7 +8,7 @@ export class BlockEntityWithBoundingBoxRenderState$InvisibleBlockType extends En
     static STRUCTURE_VOID: BlockEntityWithBoundingBoxRenderState$InvisibleBlockType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): BlockEntityWithBoundingBoxRenderState$InvisibleBlockType;
-    static values(): (Object | null)[];
+    static values(): BlockEntityWithBoundingBoxRenderState$InvisibleBlockType[];
     private constructor()
     name(): "AIR" | "BARRIER" | "LIGHT" | "STRUCTURE_VOID";
 }

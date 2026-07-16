@@ -14,7 +14,7 @@ export class SneakHeights extends Enum<SneakHeights> implements Tagged {
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SneakHeights;
-    static values(): (Object | null)[];
+    static values(): SneakHeights[];
     private constructor(tag: string, dimensions: EntityDimensions)
     readonly dimensions: EntityDimensions;
     readonly tag: string;

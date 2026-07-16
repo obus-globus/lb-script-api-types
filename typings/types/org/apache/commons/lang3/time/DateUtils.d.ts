@@ -48,10 +48,10 @@ export class DateUtils extends Object {
     static iterator(paramarg0: Object, paramarg1: number): Iterator<Object>;
     static iterator(paramarg0: Calendar, paramarg1: number): Iterator<Calendar>;
     static iterator(paramarg0: Date, paramarg1: number): Iterator<Calendar>;
-    static parseDate(paramarg0: string, ...paramarg1: (Object | null)[]): Date;
-    static parseDate(paramarg0: string, paramarg1: Locale, ...paramarg2: (Object | null)[]): Date;
-    static parseDateStrictly(paramarg0: string, ...paramarg1: (Object | null)[]): Date;
-    static parseDateStrictly(paramarg0: string, paramarg1: Locale, ...paramarg2: (Object | null)[]): Date;
+    static parseDate(paramarg0: string, ...paramarg1: string[]): Date;
+    static parseDate(paramarg0: string, paramarg1: Locale, ...paramarg2: string[]): Date;
+    static parseDateStrictly(paramarg0: string, ...paramarg1: string[]): Date;
+    static parseDateStrictly(paramarg0: string, paramarg1: Locale, ...paramarg2: string[]): Date;
     static round(paramarg0: Calendar, paramarg1: number): Calendar;
     static round(paramarg0: Object, paramarg1: number): Date;
     static round(paramarg0: Date, paramarg1: number): Date;

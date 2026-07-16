@@ -8,7 +8,7 @@ export class Component$BaselineResizeBehavior extends Enum<Component$BaselineRes
     static OTHER: Component$BaselineResizeBehavior;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Component$BaselineResizeBehavior;
-    static values(): (Object | null)[];
+    static values(): Component$BaselineResizeBehavior[];
     private constructor()
     name(): "CONSTANT_ASCENT" | "CONSTANT_DESCENT" | "CENTER_OFFSET" | "OTHER";
 }

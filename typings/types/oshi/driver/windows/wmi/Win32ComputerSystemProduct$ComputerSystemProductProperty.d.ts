@@ -6,7 +6,7 @@ export class Win32ComputerSystemProduct$ComputerSystemProductProperty extends En
     static UUID: Win32ComputerSystemProduct$ComputerSystemProductProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Win32ComputerSystemProduct$ComputerSystemProductProperty;
-    static values(): (Object | null)[];
+    static values(): Win32ComputerSystemProduct$ComputerSystemProductProperty[];
     private constructor()
     name(): "IDENTIFYINGNUMBER" | "UUID";
 }

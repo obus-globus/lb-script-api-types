@@ -10,7 +10,7 @@ export class KParameter$Kind extends Enum<KParameter$Kind> implements Serializab
     static getEntries(): KParameter$Kind[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): KParameter$Kind;
-    static values(): (Object | null)[];
+    static values(): KParameter$Kind[];
     private constructor()
     name(): "INSTANCE" | "CONTEXT" | "EXTENSION_RECEIVER" | "VALUE";
 }

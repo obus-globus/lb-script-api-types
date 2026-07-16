@@ -7,7 +7,7 @@ export class IInsnListEx$SpecialNodeType extends Enum<IInsnListEx$SpecialNodeTyp
     static INITIALISER_INJECTION_POINT: IInsnListEx$SpecialNodeType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): IInsnListEx$SpecialNodeType;
-    static values(): (Object | null)[];
+    static values(): IInsnListEx$SpecialNodeType[];
     private constructor()
     name(): "DELEGATE_CTOR" | "INITIALISER_INJECTION_POINT" | "CTOR_BODY";
 }

@@ -9,7 +9,7 @@ export class Win32OperatingSystem$OSVersionProperty extends Enum<Win32OperatingS
     static VERSION: Win32OperatingSystem$OSVersionProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Win32OperatingSystem$OSVersionProperty;
-    static values(): (Object | null)[];
+    static values(): Win32OperatingSystem$OSVersionProperty[];
     private constructor()
     name(): "VERSION" | "PRODUCTTYPE" | "BUILDNUMBER" | "CSDVERSION" | "SUITEMASK";
 }

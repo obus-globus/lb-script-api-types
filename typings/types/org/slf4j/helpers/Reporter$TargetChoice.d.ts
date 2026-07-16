@@ -6,7 +6,7 @@ export class Reporter$TargetChoice extends Enum<Reporter$TargetChoice> {
     static Stdout: Reporter$TargetChoice;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Reporter$TargetChoice;
-    static values(): (Object | null)[];
+    static values(): Reporter$TargetChoice[];
     private constructor()
     name(): "Stderr" | "Stdout";
 }

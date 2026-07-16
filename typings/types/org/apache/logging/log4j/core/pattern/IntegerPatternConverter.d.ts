@@ -4,7 +4,7 @@ import type { AbstractPatternConverter } from '../../../../../../org/apache/logg
 import type { ArrayPatternConverter } from '../../../../../../org/apache/logging/log4j/core/pattern/ArrayPatternConverter.d.ts'
 export class IntegerPatternConverter extends AbstractPatternConverter implements ArrayPatternConverter {
     static CATEGORY: string;
-    static newInstance(paramoptions: (Object | null)[]): IntegerPatternConverter;
+    static newInstance(paramoptions: string[]): IntegerPatternConverter;
     private constructor()
     format(toAppendTo: StringBuilder, ...objects: Object[]): void;
     format(obj: Object, toAppendTo: StringBuilder): void;

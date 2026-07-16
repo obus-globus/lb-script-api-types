@@ -26,7 +26,7 @@ export class CheckScreenTitleValueGroup$ContainerTitle extends Enum<CheckScreenT
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CheckScreenTitleValueGroup$ContainerTitle;
-    static values(): (Object | null)[];
+    static values(): CheckScreenTitleValueGroup$ContainerTitle[];
     private constructor(tag: string, ...translatableKeys: string[])
     readonly tag: string;
     // private translatableKeys: string[];

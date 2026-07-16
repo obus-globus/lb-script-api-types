@@ -13,7 +13,6 @@ import type { ToTemporalTimeZoneIdentifierNode } from '../../../../../../com/ora
 import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
 export abstract class ToRelativeTemporalObjectNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     // private getOffsetNode: PropertyGetNode;
     // private getRelativeToNode: PropertyGetNode;

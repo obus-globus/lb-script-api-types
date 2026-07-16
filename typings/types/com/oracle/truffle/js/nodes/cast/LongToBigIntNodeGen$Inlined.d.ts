@@ -6,7 +6,6 @@ import type { LongToBigIntNode } from '../../../../../../com/oracle/truffle/js/n
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class LongToBigIntNodeGen$Inlined extends LongToBigIntNode implements UnadoptableNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(target: InlineSupport$InlineTarget)
     // private state_0_: InlineSupport$StateField;
     execute(arg0Value: Node, arg1Value: Object): Object;

@@ -4,7 +4,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 export abstract class IsExtensibleNode extends JavaScriptBaseNode {
     static create(): IsExtensibleNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     executeBoolean(obj: JSDynamicObject): boolean;
 }

@@ -11,7 +11,7 @@ export class RegExpStringIteratorPrototypeBuiltins$RegExpStringIteratorPrototype
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RegExpStringIteratorPrototypeBuiltins$RegExpStringIteratorPrototype;
-    static values(): (Object | null)[];
+    static values(): RegExpStringIteratorPrototypeBuiltins$RegExpStringIteratorPrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

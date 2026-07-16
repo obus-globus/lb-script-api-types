@@ -12,7 +12,7 @@ export class RolloverFrequency extends Enum<RolloverFrequency> {
     static WEEKLY: RolloverFrequency;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RolloverFrequency;
-    static values(): (Object | null)[];
+    static values(): RolloverFrequency[];
     private constructor()
     name(): "ANNUALLY" | "MONTHLY" | "WEEKLY" | "DAILY" | "HOURLY" | "EVERY_MINUTE" | "EVERY_SECOND" | "EVERY_MILLISECOND";
 }

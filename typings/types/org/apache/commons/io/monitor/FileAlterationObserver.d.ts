@@ -17,7 +17,7 @@ export class FileAlterationObserver extends Object implements Serializable {
     constructor(arg0: string, arg1: (param0: File) => boolean, arg2: IOCase)
     constructor(arg0: FileAlterationObserver$Builder, arg1: any)
     constructor(arg0: FileEntry, arg1: (param0: File) => boolean, arg2: IOCase)
-    // private comparator: (param0: Object) => boolean;
+    // private comparator: (param0: File, param1: File) => number;
     readonly fileFilter: (param0: File) => boolean;
     readonly listeners: FileAlterationListener[];
     // private rootEntry: FileEntry;
@@ -29,7 +29,7 @@ export class FileAlterationObserver extends Object implements Serializable {
     // private fireOnChange(arg0: FileEntry, arg1: File): void;
     // private fireOnCreate(arg0: FileEntry): void;
     // private fireOnDelete(arg0: FileEntry): void;
-    getComparator(): (param0: Object) => boolean;
+    getComparator(): (param0: File, param1: File) => number;
     getDirectory(): File;
     getFileFilter(): (param0: File) => boolean;
     getListeners(): FileAlterationListener[];

@@ -8,7 +8,6 @@ export class CreateDataPropertyNodeGen extends CreateDataPropertyNode {
     static create(paramcontext: JSContext, paramkey: Object, paramenumerable: boolean): CreateDataPropertyNode;
     static createNonEnumerable(paramcontext: JSContext, paramkey: Object): CreateDataPropertyNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, key: Object, enumerable: boolean)
     // private cached_propertyCache_: PropertySetNode;
     // private state_0_: number;

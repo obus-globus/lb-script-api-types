@@ -14,7 +14,7 @@ export class FailProcedure extends Enum<FailProcedure> {
     static getEntries(): FailProcedure[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FailProcedure;
-    static values(): (Object | null)[];
+    static values(): FailProcedure[];
     private constructor()
     /**
      * `true` when the actual logic should not be executed.

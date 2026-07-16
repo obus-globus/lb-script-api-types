@@ -15,7 +15,7 @@ export class ShlObj$KNOWN_FOLDER_FLAG extends Enum<ShlObj$KNOWN_FOLDER_FLAG> {
     static SIMPLE_IDLIST: ShlObj$KNOWN_FOLDER_FLAG;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ShlObj$KNOWN_FOLDER_FLAG;
-    static values(): (Object | null)[];
+    static values(): ShlObj$KNOWN_FOLDER_FLAG[];
     private constructor(arg2: number)
     readonly flag: number;
     getFlag(): number;

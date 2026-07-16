@@ -9,7 +9,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSLoadNodeGen extends JSLoadNode {
     static create(): JSLoadNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private cachedLoad_cache: JSLoadNodeGen$CachedLoadData;
     // private importValue: ImportValueNode;

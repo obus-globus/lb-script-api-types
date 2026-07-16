@@ -5,7 +5,7 @@ export class Win32Processor$BitnessProperty extends Enum<Win32Processor$BitnessP
     static ADDRESSWIDTH: Win32Processor$BitnessProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Win32Processor$BitnessProperty;
-    static values(): (Object | null)[];
+    static values(): Win32Processor$BitnessProperty[];
     private constructor()
     name(): "ADDRESSWIDTH";
 }

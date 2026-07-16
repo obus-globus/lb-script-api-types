@@ -1,4 +1,3 @@
-import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Optional } from '../../../../../../../java/util/Optional.d.ts'
 import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts'
@@ -10,7 +9,6 @@ import type { StructurePlacement$ExclusionZone } from '../../../../../../../net/
 import type { StructurePlacement$FrequencyReductionMethod } from '../../../../../../../net/minecraft/world/level/levelgen/structure/placement/StructurePlacement$FrequencyReductionMethod.d.ts'
 import type { StructurePlacementType } from '../../../../../../../net/minecraft/world/level/levelgen/structure/placement/StructurePlacementType.d.ts'
 export class ConcentricRingsStructurePlacement extends StructurePlacement {
-    static CODEC: Codec<StructurePlacement>;
     static CODEC: MapCodec<ConcentricRingsStructurePlacement>;
     constructor(distance: number, spread: number, count: number, preferredBiomes: Holder<Biome>[])
     constructor(locateOffset: Vec3i, frequencyReductionMethod: StructurePlacement$FrequencyReductionMethod, frequency: number, salt: number, exclusionZone: Optional<StructurePlacement$ExclusionZone>, distance: number, spread: number, count: number, preferredBiomes: Holder<Biome>[])

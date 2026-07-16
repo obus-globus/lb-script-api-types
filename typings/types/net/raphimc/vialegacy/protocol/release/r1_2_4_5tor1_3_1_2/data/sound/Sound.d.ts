@@ -67,7 +67,7 @@ export class Sound extends Enum<Sound> {
     static RANDOM_FUSE: Sound;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Sound;
-    static values(): (Object | null)[];
+    static values(): Sound[];
     private constructor(arg2: string)
     readonly soundName: string;
     getSoundName(): string;

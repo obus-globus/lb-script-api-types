@@ -7,7 +7,7 @@ export class EnumType$Fallback extends Enum<EnumType$Fallback> {
     static ZERO: EnumType$Fallback;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): EnumType$Fallback;
-    static values(): (Object | null)[];
+    static values(): EnumType$Fallback[];
     private constructor()
     name(): "ZERO" | "WRAP" | "CLAMP";
 }

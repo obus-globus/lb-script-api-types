@@ -31,7 +31,7 @@ export class SymbolKind extends Enum<SymbolKind> {
     static get(paramintValue: number): SymbolKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SymbolKind;
-    static values(): (Object | null)[];
+    static values(): SymbolKind[];
     private constructor(intValue: number)
     readonly intValue: number;
     getIntValue(): number;

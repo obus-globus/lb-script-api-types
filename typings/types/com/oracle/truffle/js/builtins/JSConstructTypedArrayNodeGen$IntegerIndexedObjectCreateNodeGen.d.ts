@@ -9,7 +9,6 @@ import type { JSDynamicObject } from '../../../../../com/oracle/truffle/js/runti
 export class JSConstructTypedArrayNodeGen$IntegerIndexedObjectCreateNodeGen extends JSConstructTypedArrayNode$IntegerIndexedObjectCreateNode {
     static create(paramcontext: JSContext, paramfactory: TypedArrayFactory): JSConstructTypedArrayNode$IntegerIndexedObjectCreateNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, factory: TypedArrayFactory)
     // private cachedProto_cache: JSConstructTypedArrayNodeGen$IntegerIndexedObjectCreateNodeGen$CachedProtoData;
     // private state_0_: number;

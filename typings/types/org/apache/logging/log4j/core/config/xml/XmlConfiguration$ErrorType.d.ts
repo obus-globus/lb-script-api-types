@@ -5,7 +5,7 @@ export class XmlConfiguration$ErrorType extends Enum<XmlConfiguration$ErrorType>
     static CLASS_NOT_FOUND: XmlConfiguration$ErrorType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): XmlConfiguration$ErrorType;
-    static values(): (Object | null)[];
+    static values(): XmlConfiguration$ErrorType[];
     private constructor()
     name(): "CLASS_NOT_FOUND";
 }

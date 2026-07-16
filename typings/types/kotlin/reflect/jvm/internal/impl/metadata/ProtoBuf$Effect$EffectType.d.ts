@@ -10,7 +10,7 @@ export class ProtoBuf$Effect$EffectType extends Enum<ProtoBuf$Effect$EffectType>
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: number): ProtoBuf$Effect$EffectType;
     static valueOf(paramarg0: string): ProtoBuf$Effect$EffectType;
-    static values(): (Object | null)[];
+    static values(): ProtoBuf$Effect$EffectType[];
     private constructor(arg2: number, arg3: number)
     // private value: number;
     getNumber(): number;

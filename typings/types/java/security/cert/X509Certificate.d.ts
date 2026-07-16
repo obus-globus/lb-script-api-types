@@ -17,9 +17,9 @@ export abstract class X509Certificate extends Certificate implements DEREncodabl
     getExtendedKeyUsage(): string[];
     getIssuerAlternativeNames(): (Object | null)[][];
     getIssuerDN(): Principal;
-    getIssuerUniqueID(): (Object | null)[];
+    getIssuerUniqueID(): boolean[];
     getIssuerX500Principal(): X500Principal;
-    getKeyUsage(): (Object | null)[];
+    getKeyUsage(): boolean[];
     getNotAfter(): Date;
     getNotBefore(): Date;
     getSerialNumber(): BigInteger;
@@ -29,7 +29,7 @@ export abstract class X509Certificate extends Certificate implements DEREncodabl
     getSignature(): number[];
     getSubjectAlternativeNames(): (Object | null)[][];
     getSubjectDN(): Principal;
-    getSubjectUniqueID(): (Object | null)[];
+    getSubjectUniqueID(): boolean[];
     getSubjectX500Principal(): X500Principal;
     getTBSCertificate(): number[];
     getVersion(): number;

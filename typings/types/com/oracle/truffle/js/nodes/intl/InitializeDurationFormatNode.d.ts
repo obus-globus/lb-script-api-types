@@ -12,7 +12,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class InitializeDurationFormatNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): InitializeDurationFormatNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private canonicalizedLocaleList: JSToCanonicalizedLocaleListNode;
     // private errorBranch: BranchProfile;

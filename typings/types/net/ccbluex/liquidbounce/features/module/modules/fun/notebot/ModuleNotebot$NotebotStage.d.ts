@@ -9,7 +9,7 @@ export class ModuleNotebot$NotebotStage extends Enum<ModuleNotebot$NotebotStage>
     static getEntries(): ModuleNotebot$NotebotStage[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleNotebot$NotebotStage;
-    static values(): (Object | null)[];
+    static values(): ModuleNotebot$NotebotStage[];
     private constructor(stageStartDelay: () => number, blockColor: () => Color4b, blockOutlineColor: () => Color4b)
     readonly blockColor: () => Color4b;
     readonly blockOutlineColor: () => Color4b;

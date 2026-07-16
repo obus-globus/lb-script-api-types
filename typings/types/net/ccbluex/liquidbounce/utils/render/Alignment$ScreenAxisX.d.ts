@@ -14,7 +14,7 @@ export class Alignment$ScreenAxisX extends Enum<Alignment$ScreenAxisX> implement
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Alignment$ScreenAxisX;
-    static values(): (Object | null)[];
+    static values(): Alignment$ScreenAxisX[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "LEFT" | "CENTER" | "CENTER_TRANSLATED" | "RIGHT";

@@ -1,7 +1,6 @@
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { IntFunction } from '../../../../../java/util/function/IntFunction.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Direction } from '../../../../../net/minecraft/core/Direction.d.ts'
 import type { ResourceKey } from '../../../../../net/minecraft/resources/ResourceKey.d.ts'
@@ -17,7 +16,6 @@ import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 import type { LevelAccessor } from '../../../../../net/minecraft/world/level/LevelAccessor.d.ts'
 import type { LevelReader } from '../../../../../net/minecraft/world/level/LevelReader.d.ts'
 import type { Block } from '../../../../../net/minecraft/world/level/block/Block.d.ts'
-import type { MultifaceBlock } from '../../../../../net/minecraft/world/level/block/MultifaceBlock.d.ts'
 import type { MultifaceSpreadeableBlock } from '../../../../../net/minecraft/world/level/block/MultifaceSpreadeableBlock.d.ts'
 import type { MultifaceSpreader } from '../../../../../net/minecraft/world/level/block/MultifaceSpreader.d.ts'
 import type { SculkBehaviour } from '../../../../../net/minecraft/world/level/block/SculkBehaviour.d.ts'
@@ -30,8 +28,6 @@ import type { BooleanProperty } from '../../../../../net/minecraft/world/level/b
 import type { VoxelShape } from '../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 export class SculkVeinBlock extends MultifaceSpreadeableBlock implements SculkBehaviour {
     static BLOCK_STATE_REGISTRY: BlockState[];
-    static CODEC: MapCodec<Block>;
-    static CODEC: MapCodec<MultifaceBlock>;
     static CODEC: MapCodec<SculkVeinBlock>;
     static DEFAULT: SculkBehaviour;
     static FILTERED_REGISTRIES: ResourceKey<FeatureElement[]>[];
@@ -58,7 +54,7 @@ export class SculkVeinBlock extends MultifaceSpreadeableBlock implements SculkBe
     static boxZ(paramsizeXY: number, paramminZ: number, parammaxZ: number): VoxelShape;
     static boxZ(paramsizeX: number, paramsizeY: number, paramminZ: number, parammaxZ: number): VoxelShape;
     static boxZ(paramsizeX: number, paramminY: number, parammaxY: number, paramminZ: number, parammaxZ: number): VoxelShape;
-    static boxes(paramendInclusive: number, paramvoxelShapeFactory: (param0: number) => VoxelShape): (Object | null)[];
+    static boxes(paramendInclusive: number, paramvoxelShapeFactory: (param0: number) => VoxelShape): VoxelShape[];
     static byItem(paramitem: Item): Block;
     static canAttachTo(paramlevel: BlockGetter, parampos: BlockPos, paramdirectionTowardsNeighbour: Direction): boolean;
     static canAttachTo(paramlevel: BlockGetter, paramdirectionTowardsNeighbour: Direction, paramneighbourPos: BlockPos, paramneighbourState: BlockState): boolean;

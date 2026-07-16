@@ -4,7 +4,7 @@ import type { Object } from '../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../java/lang/Cloneable.d.ts'
 export abstract class BreakIterator extends Object implements Cloneable {
     static DONE: number;
-    static getAvailableLocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
     static getCharacterInstance(): BreakIterator;
     static getCharacterInstance(paramarg0: Locale): BreakIterator;
     static getLineInstance(): BreakIterator;

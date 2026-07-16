@@ -13,13 +13,12 @@ import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class EvalNode extends JavaScriptNode {
     static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
-    static create(paramcontext: JSContext, paramfunctionNode: JavaScriptNode, paramargs: (Object | null)[], paramthisObject: JavaScriptNode, paramenv: Object, paramblockScopeSlot: JSFrameSlot): EvalNode;
+    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
+    static create(paramcontext: JSContext, paramfunctionNode: JavaScriptNode, paramargs: JavaScriptNode[], paramthisObject: JavaScriptNode, paramenv: Object, paramblockScopeSlot: JSFrameSlot): EvalNode;
     static findActiveScriptOrModule(paramcallNode: Node): ScriptOrModule;
     static findBlockScopeNode(paramnode: Node): Node;
     static findCallNode(paramrealm: JSRealm): Node;
     static formatEvalOrigin(paramcallNode: Node, paramcontext: JSContext, paramdefaultName: string): string;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;

@@ -8,7 +8,6 @@ export class JSDoubleToStringNodeGen extends JSDoubleToStringNode {
     static create(): JSDoubleToStringNode;
     static getUncached(): JSDoubleToStringNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private double_fromJavaStringNode_: TruffleString$FromJavaStringNode;
     // private fromLongNode: TruffleString$FromLongNode;

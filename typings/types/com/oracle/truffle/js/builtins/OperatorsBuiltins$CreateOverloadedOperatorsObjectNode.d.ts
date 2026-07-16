@@ -11,7 +11,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class OperatorsBuiltins$CreateOverloadedOperatorsObjectNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): OperatorsBuiltins$CreateOverloadedOperatorsObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private context: JSContext;
     createDefaultProto(prototype: Object, operatorSet: OperatorSet, cachedShape: Shape): JSOverloadedOperatorsObject;

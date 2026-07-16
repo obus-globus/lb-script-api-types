@@ -24,28 +24,21 @@ export class VkReleaseSwapchainImagesInfoEXT extends VkReleaseSwapchainImagesInf
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkReleaseSwapchainImagesInfoKHR;
     static calloc(paramarg0: MemoryStack): VkReleaseSwapchainImagesInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkReleaseSwapchainImagesInfoEXT;
     static create(paramarg0: number): VkReleaseSwapchainImagesInfoEXT;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkReleaseSwapchainImagesInfoKHR;
     static create(paramarg0: number): VkReleaseSwapchainImagesInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkReleaseSwapchainImagesInfoEXT;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkReleaseSwapchainImagesInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkReleaseSwapchainImagesInfoEXT;
     static malloc(paramarg0: MemoryStack): VkReleaseSwapchainImagesInfoEXT;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkReleaseSwapchainImagesInfoKHR;
     static malloc(paramarg0: MemoryStack): VkReleaseSwapchainImagesInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nimageIndexCount(paramarg0: number): number;
     static nimageIndexCount(paramarg0: number, paramarg1: number): void;
     static npImageIndices(paramarg0: number): IntBuffer;
@@ -56,7 +49,6 @@ export class VkReleaseSwapchainImagesInfoEXT extends VkReleaseSwapchainImagesInf
     static nsType(paramarg0: number, paramarg1: number): void;
     static nswapchain(paramarg0: number): number;
     static nswapchain(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

@@ -26,28 +26,21 @@ export class VkPhysicalDeviceLineRasterizationFeaturesEXT extends VkPhysicalDevi
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceLineRasterizationFeaturesEXT;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceLineRasterizationFeaturesEXT;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceLineRasterizationFeatures;
     static create(paramarg0: number): VkPhysicalDeviceLineRasterizationFeatures;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceLineRasterizationFeaturesEXT;
     static create(paramarg0: number): VkPhysicalDeviceLineRasterizationFeaturesEXT;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceLineRasterizationFeatures;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceLineRasterizationFeaturesEXT;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceLineRasterizationFeatures;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceLineRasterizationFeatures;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceLineRasterizationFeaturesEXT;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceLineRasterizationFeaturesEXT;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nbresenhamLines(paramarg0: number): number;
     static nbresenhamLines(paramarg0: number, paramarg1: number): void;
     static npNext(paramarg0: number): number;
@@ -64,7 +57,6 @@ export class VkPhysicalDeviceLineRasterizationFeaturesEXT extends VkPhysicalDevi
     static nstippledRectangularLines(paramarg0: number, paramarg1: number): void;
     static nstippledSmoothLines(paramarg0: number): number;
     static nstippledSmoothLines(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

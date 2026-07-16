@@ -7,7 +7,7 @@ export class State extends Enum<State> {
     static MIDDLE: State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): State;
-    static values(): (Object | null)[];
+    static values(): State[];
     private constructor()
     name(): "BEGINNING" | "MIDDLE" | "AFTER_DOT";
 }

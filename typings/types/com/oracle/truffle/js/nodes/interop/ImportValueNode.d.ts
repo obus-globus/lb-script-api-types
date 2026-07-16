@@ -5,7 +5,6 @@ export abstract class ImportValueNode extends JavaScriptBaseNode {
     static create(): ImportValueNode;
     static getUncached(): ImportValueNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     executeWithTarget(target: Object): Object;
 }

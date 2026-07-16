@@ -23,28 +23,21 @@ export class VkImageFormatListCreateInfoKHR extends VkImageFormatListCreateInfo 
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkImageFormatListCreateInfoKHR;
     static calloc(paramarg0: MemoryStack): VkImageFormatListCreateInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkImageFormatListCreateInfo;
     static create(paramarg0: number): VkImageFormatListCreateInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkImageFormatListCreateInfoKHR;
     static create(paramarg0: number): VkImageFormatListCreateInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkImageFormatListCreateInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkImageFormatListCreateInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkImageFormatListCreateInfo;
     static malloc(paramarg0: MemoryStack): VkImageFormatListCreateInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkImageFormatListCreateInfoKHR;
     static malloc(paramarg0: MemoryStack): VkImageFormatListCreateInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static npViewFormats(paramarg0: number): IntBuffer;
@@ -53,7 +46,6 @@ export class VkImageFormatListCreateInfoKHR extends VkImageFormatListCreateInfo 
     static nsType(paramarg0: number, paramarg1: number): void;
     static nviewFormatCount(paramarg0: number): number;
     static nviewFormatCount(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

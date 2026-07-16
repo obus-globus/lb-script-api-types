@@ -10,7 +10,7 @@ export class BasicTimeZone$LocalOption extends Enum<BasicTimeZone$LocalOption> {
     static STANDARD_LATTER: BasicTimeZone$LocalOption;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BasicTimeZone$LocalOption;
-    static values(): (Object | null)[];
+    static values(): BasicTimeZone$LocalOption[];
     private constructor(arg2: number)
     // private flagVal: number;
     name(): "FORMER" | "LATTER" | "STANDARD_FORMER" | "STANDARD_LATTER" | "DAYLIGHT_FORMER" | "DAYLIGHT_LATTER";

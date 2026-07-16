@@ -16,8 +16,6 @@ export class LocalDateJvmKt extends Object {
     static plus(paramarg0: LocalDate, paramarg1: number, paramarg2: DateTimeUnit$DateBased): LocalDate;
     static plus(paramarg0: LocalDate, paramarg1: DatePeriod): LocalDate;
     static plus(paramarg0: LocalDate, paramarg1: DateTimeUnit$DateBased): LocalDate;
-    static plus(paramarg0: LocalDate, paramarg1: number, paramarg2: DateTimeUnit$DateBased): LocalDate;
-    static until(paramarg0: LocalDate, paramarg1: LocalDate, paramarg2: DateTimeUnit$DateBased): number;
     static until(paramarg0: LocalDate, paramarg1: LocalDate, paramarg2: DateTimeUnit$DateBased): number;
     static yearsUntil(paramarg0: LocalDate, paramarg1: LocalDate): number;
 }

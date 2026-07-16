@@ -12,7 +12,7 @@ export class ChunkPalettedStorageFix$Direction extends Enum<ChunkPalettedStorage
     static WEST: ChunkPalettedStorageFix$Direction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ChunkPalettedStorageFix$Direction;
-    static values(): (Object | null)[];
+    static values(): ChunkPalettedStorageFix$Direction[];
     private constructor(axisDirection: ChunkPalettedStorageFix$Direction$AxisDirection, axis: ChunkPalettedStorageFix$Direction$Axis)
     readonly axis: ChunkPalettedStorageFix$Direction$Axis;
     readonly axisDirection: ChunkPalettedStorageFix$Direction$AxisDirection;

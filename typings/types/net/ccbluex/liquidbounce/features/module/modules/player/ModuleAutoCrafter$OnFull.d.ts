@@ -14,7 +14,7 @@ export class ModuleAutoCrafter$OnFull extends Enum<ModuleAutoCrafter$OnFull> imp
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleAutoCrafter$OnFull;
-    static values(): (Object | null)[];
+    static values(): ModuleAutoCrafter$OnFull[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "DISABLE" | "CLOSE_SCREEN" | "WAIT" | "THROW";

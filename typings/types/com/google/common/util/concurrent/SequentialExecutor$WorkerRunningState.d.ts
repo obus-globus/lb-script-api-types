@@ -8,7 +8,7 @@ export class SequentialExecutor$WorkerRunningState extends Enum<SequentialExecut
     static RUNNING: SequentialExecutor$WorkerRunningState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SequentialExecutor$WorkerRunningState;
-    static values(): (Object | null)[];
+    static values(): SequentialExecutor$WorkerRunningState[];
     private constructor()
     name(): "IDLE" | "QUEUING" | "QUEUED" | "RUNNING";
 }

@@ -14,7 +14,7 @@ export class ServerboundTestInstanceBlockActionPacket$Action extends Enum<Server
     static STREAM_CODEC: StreamCodec<ByteBuf, ServerboundTestInstanceBlockActionPacket$Action>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ServerboundTestInstanceBlockActionPacket$Action;
-    static values(): (Object | null)[];
+    static values(): ServerboundTestInstanceBlockActionPacket$Action[];
     private constructor(id: number)
     // private id: number;
     name(): "INIT" | "QUERY" | "SET" | "RESET" | "SAVE" | "EXPORT" | "RUN";

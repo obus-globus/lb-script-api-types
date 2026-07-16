@@ -5,7 +5,6 @@ export class HttpChunkLineValidatingByteProcessor$Match extends BitSet {
     static valueOf(paramarg0: number[]): BitSet;
     static valueOf(paramarg0: ByteBuffer): BitSet;
     static valueOf(paramarg0: LongBuffer): BitSet;
-    static valueOf(paramarg0: number[]): BitSet;
     constructor(arg0: number)
     // private then: number;
     chars(arg0: string): HttpChunkLineValidatingByteProcessor$Match;

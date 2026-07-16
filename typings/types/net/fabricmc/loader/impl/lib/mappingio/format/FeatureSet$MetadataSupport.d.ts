@@ -7,7 +7,7 @@ export class FeatureSet$MetadataSupport extends Enum<FeatureSet$MetadataSupport>
     static NONE: FeatureSet$MetadataSupport;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FeatureSet$MetadataSupport;
-    static values(): (Object | null)[];
+    static values(): FeatureSet$MetadataSupport[];
     private constructor()
     name(): "NONE" | "FIXED" | "ARBITRARY";
 }

@@ -6,7 +6,7 @@ export class AutoDivisionStrategy extends Enum<AutoDivisionStrategy> {
     static ENABLED: AutoDivisionStrategy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AutoDivisionStrategy;
-    static values(): (Object | null)[];
+    static values(): AutoDivisionStrategy[];
     constructor(arg2: AutoDivisionStrategy)
     toString(): string;
     name(): "DISABLED" | "ENABLED";

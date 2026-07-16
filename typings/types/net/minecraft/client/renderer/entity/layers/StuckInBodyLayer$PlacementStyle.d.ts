@@ -6,7 +6,7 @@ export class StuckInBodyLayer$PlacementStyle extends Enum<StuckInBodyLayer$Place
     static ON_SURFACE: StuckInBodyLayer$PlacementStyle;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): StuckInBodyLayer$PlacementStyle;
-    static values(): (Object | null)[];
+    static values(): StuckInBodyLayer$PlacementStyle[];
     private constructor()
     name(): "IN_CUBE" | "ON_SURFACE";
 }

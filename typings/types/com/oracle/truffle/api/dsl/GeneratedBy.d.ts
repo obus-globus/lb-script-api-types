@@ -2,7 +2,6 @@ import type { Annotation } from '../../../../../java/lang/annotation/Annotation.
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { KClass } from '../../../../../kotlin/reflect/KClass.d.ts'
 export interface GeneratedBy extends Annotation, Object{
-    constructor(methodName: string, value: KClass<Object>)
     /*not mapped: */ methodName(): string;
     /*not mapped: */ value(): KClass<Object>;
 }

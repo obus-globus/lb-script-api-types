@@ -6,6 +6,6 @@ export class BannerPatterns1_20_5 extends Object {
     static fullIdToCompact(paramarg0: string): string;
     static idToKey(paramarg0: number): string;
     static keyToId(paramarg0: string): number;
-    static keys(): (Object | null)[];
+    static keys(): string[];
     constructor()
 }

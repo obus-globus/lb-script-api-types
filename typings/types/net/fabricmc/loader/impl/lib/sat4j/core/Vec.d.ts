@@ -25,11 +25,11 @@ export class Vec<T extends unknown> extends Object implements IVec<T> {
     push(arg0: T): IVec<T>;
     remove(arg0: T): void;
     removeFromLast(arg0: T): void;
-    selectionSort(arg0: number, arg1: number, arg2: (param0: Object) => boolean): void;
+    selectionSort(arg0: number, arg1: number, arg2: (param0: T, param1: T) => number): void;
     set(arg0: number, arg1: T): void;
     shrinkTo(arg0: number): void;
     size(): number;
-    sort(arg0: (param0: Object) => boolean): void;
-    sort(arg0: number, arg1: number, arg2: (param0: Object) => boolean): void;
+    sort(arg0: (param0: T, param1: T) => number): void;
+    sort(arg0: number, arg1: number, arg2: (param0: T, param1: T) => number): void;
     toString(): string;
 }

@@ -30,7 +30,7 @@ export class Token$Kind extends Enum<Token$Kind> {
     static z: Token$Kind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Token$Kind;
-    static values(): (Object | null)[];
+    static values(): Token$Kind[];
     private constructor()
     name(): "A" | "Z" | "z" | "caret" | "dollar" | "linebreak" | "wordBoundary" | "nonWordBoundary" | "backReference" | "quantifier" | "alternation" | "captureGroupBegin" | "nonCaptureGroupBegin" | "atomicGroupBegin" | "lookAheadAssertionBegin" | "lookBehindAssertionBegin" | "groupEnd" | "literalChar" | "literalString" | "charClass" | "charClassBegin" | "charClassAtom" | "charClassEnd" | "classSet" | "inlineFlags" | "conditionalBackreference";
 }

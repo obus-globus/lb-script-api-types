@@ -18,7 +18,6 @@ export class ArrayExtensionsKt extends Object {
     static mapString(paramarg0: string, paramarg1: (param0: Object) => string): string;
     static proportionOfValue(closedFloatingPointRange: ClosedFloatingPointRange<number>, value: number): number;
     static random(paramarg0: ClosedFloatingPointRange<number>): number;
-    static random(paramarg0: ClosedFloatingPointRange<number>): number;
     static range(paramarg0: number[], paramarg1: number[], paramarg2: number[], paramarg3: (param0: Object, param1: Object, param2: Object) => void): void;
     static range(iterable1: number[], iterable2: number[], operation: (param0: Object, param1: Object) => void): void;
     static range(paramarg0: { first: number; last: number; step: number }, paramarg1: { first: number; last: number; step: number }, paramarg2: { first: number; last: number; step: number }, paramarg3: (param0: Object, param1: Object, param2: Object) => void): void;
@@ -31,7 +30,7 @@ export class ArrayExtensionsKt extends Object {
     static sortedInsert(mutableList: (Object | null)[], item: Object | null, selector: (param0: Object) => Object | null): void;
     static subList(list: (Object | null)[], fromIndex: number): (Object | null)[];
     static toDouble(closedFloatingPointRange: ClosedFloatingPointRange<number>): ClosedFloatingPointRange<number>;
-    static toTypedArray(stream: Stream<Object>): Object | null;
+    static toTypedArray(stream: Stream<Object>): (Object | null)[];
     static unaryMinus(closedFloatingPointRange: ClosedFloatingPointRange<number>): ClosedFloatingPointRange<number>;
     static valueAtProportion(closedFloatingPointRange: ClosedFloatingPointRange<number>, proportion: number): number;
 }

@@ -9,7 +9,6 @@ import type { JSTemporalPlainTimeObject } from '../../../../../../com/oracle/tru
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ToTemporalTimeNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(item: Object, options: Object): JSTemporalPlainTimeObject;
     toTemporalTime(item: Object, options: Object, isObjectNode: IsObjectNode, getOptionsObjectNode: GetOptionsObjectNode, getOptionNode: TemporalGetOptionNode, isObjectProfile: InlinedConditionProfile, isPlainDateTimeProfile: InlinedConditionProfile, isZonedDateTimeProfile: InlinedConditionProfile, isPlainTimeProfile: InlinedConditionProfile, errorBranch: InlinedBranchProfile): JSTemporalPlainTimeObject;

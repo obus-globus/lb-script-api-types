@@ -10,7 +10,6 @@ import type { TemporalUtil$Unit } from '../../../../../../com/oracle/truffle/js/
 export class DifferencePlainDateTimeWithRoundingNodeGen extends DifferencePlainDateTimeWithRoundingNode {
     static create(): DifferencePlainDateTimeWithRoundingNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private differenceISODateTime_: DifferenceISODateTimeNode;
     // private roundRelativeDuration_: RoundRelativeDurationNode;

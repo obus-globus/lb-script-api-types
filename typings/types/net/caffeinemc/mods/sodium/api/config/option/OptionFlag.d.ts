@@ -10,7 +10,7 @@ export class OptionFlag extends Enum<OptionFlag> {
     static REQUIRES_VIDEOMODE_RELOAD: OptionFlag;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): OptionFlag;
-    static values(): (Object | null)[];
+    static values(): OptionFlag[];
     private constructor()
     readonly id: Identifier;
     getId(): Identifier;

@@ -6,7 +6,7 @@ export class LambdaExpressionTree$BodyKind extends Enum<LambdaExpressionTree$Bod
     static STATEMENT: LambdaExpressionTree$BodyKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LambdaExpressionTree$BodyKind;
-    static values(): (Object | null)[];
+    static values(): LambdaExpressionTree$BodyKind[];
     private constructor()
     name(): "EXPRESSION" | "STATEMENT";
 }

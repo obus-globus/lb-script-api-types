@@ -6,7 +6,7 @@ export class Win32DiskDriveToDiskPartition$DriveToPartitionProperty extends Enum
     static DEPENDENT: Win32DiskDriveToDiskPartition$DriveToPartitionProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Win32DiskDriveToDiskPartition$DriveToPartitionProperty;
-    static values(): (Object | null)[];
+    static values(): Win32DiskDriveToDiskPartition$DriveToPartitionProperty[];
     private constructor()
     name(): "ANTECEDENT" | "DEPENDENT";
 }

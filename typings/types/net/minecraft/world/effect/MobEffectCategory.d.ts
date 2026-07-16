@@ -8,7 +8,7 @@ export class MobEffectCategory extends Enum<MobEffectCategory> {
     static NEUTRAL: MobEffectCategory;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): MobEffectCategory;
-    static values(): (Object | null)[];
+    static values(): MobEffectCategory[];
     private constructor(tooltipFormatting: ChatFormatting)
     readonly tooltipFormatting: ChatFormatting;
     getTooltipFormatting(): ChatFormatting;

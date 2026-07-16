@@ -27,7 +27,6 @@ export class CreateDecoratorContextObjectNodeGen extends CreateDecoratorContextO
     static create(paramcontext: JSContext, paramisStatic: boolean, paramisPrivate: boolean, paramprivateScopeNode: ScopeFrameNode, paramprivateMemberSlotIndex: number, paramprivateBrandSlotIndex: number, paramclassDef: boolean): CreateDecoratorContextObjectNode;
     static createForClass(paramcontext: JSContext): CreateDecoratorContextObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, isStatic: boolean, isPrivate: boolean, privateScopeNode: ScopeFrameNode, privateMemberSlotIndex: number, privateBrandSlotIndex: number, classDef: boolean)
     // private privateAutoAccessor_cache: CreateDecoratorContextObjectNodeGen$PrivateAutoAccessorData;
     // private privateField_cache: CreateDecoratorContextObjectNodeGen$PrivateFieldData;

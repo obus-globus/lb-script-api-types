@@ -7,7 +7,6 @@ export class JSStringToNumberNodeGen extends JSStringToNumberNode {
     static create(): JSStringToNumberNode;
     static getUncached(): JSStringToNumberNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private state_0_: number;
     // private stringToNumberNode_: JSStringToNumberNoTrimNode;

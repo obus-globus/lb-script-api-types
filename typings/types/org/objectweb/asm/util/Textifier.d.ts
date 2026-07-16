@@ -12,14 +12,14 @@ export class Textifier extends Printer {
     static FIELD_DESCRIPTOR: number;
     static FIELD_SIGNATURE: number;
     static HANDLE_DESCRIPTOR: number;
-    static HANDLE_TAG: (Object | null)[];
+    static HANDLE_TAG: string[];
     static INTERNAL_NAME: number;
     static METHOD_DESCRIPTOR: number;
     static METHOD_SIGNATURE: number;
-    static OPCODES: (Object | null)[];
-    static TYPES: (Object | null)[];
+    static OPCODES: string[];
+    static TYPES: string[];
     static appendString(paramarg0: StringBuilder, paramarg1: string): void;
-    static main(paramarg0: (Object | null)[]): void;
+    static main(paramarg0: string[]): void;
     constructor()
     constructor(arg0: number)
     // private access: number;

@@ -12,7 +12,7 @@ export class Instruction$Argument$Kind extends Enum<Instruction$Argument$Kind> {
     static TAG_NODE: Instruction$Argument$Kind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Instruction$Argument$Kind;
-    static values(): (Object | null)[];
+    static values(): Instruction$Argument$Kind[];
     private constructor()
     name(): "CONSTANT" | "BYTECODE_INDEX" | "INTEGER" | "LOCAL_OFFSET" | "LOCAL_INDEX" | "NODE_PROFILE" | "BRANCH_PROFILE" | "TAG_NODE";
 }

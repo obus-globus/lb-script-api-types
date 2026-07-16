@@ -13,18 +13,17 @@ import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSFunctionCallNode extends JavaScriptNode implements JavaScriptFunctionCallNode {
     static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
+    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
     static create(paramisNew: boolean): JSFunctionCallNode;
     static create(paramisNew: boolean, paramisNewTarget: boolean): JSFunctionCallNode;
     static createCall(): JSFunctionCallNode;
-    static createCall(paramfunction: JavaScriptNode, paramtarget: JavaScriptNode, paramarguments: (Object | null)[], paramisNew: boolean, paramisNewTarget: boolean): JSFunctionCallNode;
-    static createInvoke(paramtargetFunction: JSTargetableNode, paramarguments: (Object | null)[], paramisNew: boolean, paramisNewTarget: boolean): JSFunctionCallNode;
+    static createCall(paramfunction: JavaScriptNode, paramtarget: JavaScriptNode, paramarguments: JavaScriptNode[], paramisNew: boolean, paramisNewTarget: boolean): JSFunctionCallNode;
+    static createInvoke(paramtargetFunction: JSTargetableNode, paramarguments: JavaScriptNode[], paramisNew: boolean, paramisNewTarget: boolean): JSFunctionCallNode;
     static createNew(): JSFunctionCallNode;
     static createNewTarget(): JSFunctionCallNode;
     static findBlockScopeNode(paramnode: Node): Node;
     static getUncachedCall(): JSFunctionCallNode;
     static getUncachedNew(): JSFunctionCallNode;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;

@@ -9,7 +9,6 @@ export class JSInteropInstantiateNodeGen extends JSInteropInstantiateNode {
     static create(): JSInteropInstantiateNode;
     static getUncached(): JSInteropInstantiateNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private callNode_: JSFunctionCallNode;
     // private importValueNode_: ImportValueNode;

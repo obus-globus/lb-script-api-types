@@ -8,7 +8,7 @@ export class OsUtils$OperatingSystem extends Enum<OsUtils$OperatingSystem> {
     static WIN: OsUtils$OperatingSystem;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): OsUtils$OperatingSystem;
-    static values(): (Object | null)[];
+    static values(): OsUtils$OperatingSystem[];
     private constructor()
     name(): "WIN" | "MAC" | "LINUX" | "UNKNOWN";
 }

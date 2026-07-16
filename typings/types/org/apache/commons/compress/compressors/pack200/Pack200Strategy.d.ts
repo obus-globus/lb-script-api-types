@@ -7,7 +7,7 @@ export class Pack200Strategy extends Enum<Pack200Strategy> {
     static TEMP_FILE: Pack200Strategy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Pack200Strategy;
-    static values(): (Object | null)[];
+    static values(): Pack200Strategy[];
     constructor(arg2: Pack200Strategy)
     newStreamBridge(): AbstractStreamBridge;
     name(): "IN_MEMORY" | "TEMP_FILE";

@@ -7,7 +7,7 @@ export class MemoryInformation$PageSwapProperty extends Enum<MemoryInformation$P
     static PAGESOUTPUTPERSEC: MemoryInformation$PageSwapProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MemoryInformation$PageSwapProperty;
-    static values(): (Object | null)[];
+    static values(): MemoryInformation$PageSwapProperty[];
     private constructor(arg2: string, arg3: string)
     readonly counter: string;
     readonly instance: string;

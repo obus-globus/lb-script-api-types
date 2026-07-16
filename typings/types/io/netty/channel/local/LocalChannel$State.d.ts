@@ -8,7 +8,7 @@ export class LocalChannel$State extends Enum<LocalChannel$State> {
     static OPEN: LocalChannel$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LocalChannel$State;
-    static values(): (Object | null)[];
+    static values(): LocalChannel$State[];
     private constructor()
     name(): "OPEN" | "BOUND" | "CONNECTED" | "CLOSED";
 }

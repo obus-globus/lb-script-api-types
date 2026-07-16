@@ -7,7 +7,7 @@ export class Nls$Capitalization extends Enum<Nls$Capitalization> {
     static Title: Nls$Capitalization;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Nls$Capitalization;
-    static values(): (Object | null)[];
+    static values(): Nls$Capitalization[];
     private constructor()
     name(): "NotSpecified" | "Title" | "Sentence";
 }

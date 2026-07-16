@@ -14,7 +14,7 @@ export class RakDisconnectReason extends Enum<RakDisconnectReason> {
     static TIMED_OUT: RakDisconnectReason;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RakDisconnectReason;
-    static values(): (Object | null)[];
+    static values(): RakDisconnectReason[];
     private constructor()
     name(): "CLOSED_BY_REMOTE_PEER" | "SHUTTING_DOWN" | "DISCONNECTED" | "TIMED_OUT" | "CONNECTION_REQUEST_FAILED" | "ALREADY_CONNECTED" | "NO_FREE_INCOMING_CONNECTIONS" | "INCOMPATIBLE_PROTOCOL_VERSION" | "IP_RECENTLY_CONNECTED" | "BAD_PACKET";
 }

@@ -6,12 +6,13 @@ import type { ByteSink } from '../../../../../../../org/spongepowered/include/co
 import type { ByteSource } from '../../../../../../../org/spongepowered/include/com/google/common/io/ByteSource.d.ts'
 import type { CharSink } from '../../../../../../../org/spongepowered/include/com/google/common/io/CharSink.d.ts'
 import type { CharSource } from '../../../../../../../org/spongepowered/include/com/google/common/io/CharSource.d.ts'
+import type { FileWriteMode } from '../../../../../../../org/spongepowered/include/com/google/common/io/FileWriteMode.d.ts'
 import type { LineProcessor } from '../../../../../../../org/spongepowered/include/com/google/common/io/LineProcessor.d.ts'
 export class Files extends Object {
     static append(paramarg0: CharSequence, paramarg1: File, paramarg2: Charset): void;
-    static asByteSink(paramarg0: File, ...paramarg1: (Object | null)[]): ByteSink;
+    static asByteSink(paramarg0: File, ...paramarg1: FileWriteMode[]): ByteSink;
     static asByteSource(paramarg0: File): ByteSource;
-    static asCharSink(paramarg0: File, paramarg1: Charset, ...paramarg2: (Object | null)[]): CharSink;
+    static asCharSink(paramarg0: File, paramarg1: Charset, ...paramarg2: FileWriteMode[]): CharSink;
     static asCharSource(paramarg0: File, paramarg1: Charset): CharSource;
     static readLines(paramarg0: File, paramarg1: Charset, paramarg2: LineProcessor<Object>): Object | null;
     static readLines(paramarg0: File, paramarg1: Charset): string[];

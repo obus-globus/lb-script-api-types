@@ -12,7 +12,6 @@ export class JSToObjectArrayNodeGen extends JSToObjectArrayNode {
     static create(): JSToObjectArrayNode;
     static create(paramnullOrUndefinedAsEmptyArray: boolean): JSToObjectArrayNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(nullOrUndefinedAsEmptyArray: boolean)
     // private foreignObject0_cache: JSToObjectArrayNodeGen$ForeignObject0Data;
     // private foreignObject1_foreignConvertNode_: ImportValueNode;

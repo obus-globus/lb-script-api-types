@@ -8,7 +8,7 @@ export class GenderInfo$ListGenderStyle extends Enum<GenderInfo$ListGenderStyle>
     static fromName(paramname: string): GenderInfo$ListGenderStyle;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): GenderInfo$ListGenderStyle;
-    static values(): (Object | null)[];
+    static values(): GenderInfo$ListGenderStyle[];
     private constructor()
     name(): "NEUTRAL" | "MIXED_NEUTRAL" | "MALE_TAINTS";
 }

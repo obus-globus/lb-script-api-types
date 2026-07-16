@@ -7,7 +7,7 @@ export class ELFAnalyser$ArmAeabiAttributesTag$ParameterType extends Enum<ELFAna
     static ULEB128: ELFAnalyser$ArmAeabiAttributesTag$ParameterType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ELFAnalyser$ArmAeabiAttributesTag$ParameterType;
-    static values(): (Object | null)[];
+    static values(): ELFAnalyser$ArmAeabiAttributesTag$ParameterType[];
     private constructor()
     name(): "UINT32" | "NTBS" | "ULEB128";
 }

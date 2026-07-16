@@ -13,23 +13,23 @@ import type { StringRepresentable$EnumCodec } from '../../../net/minecraft/util/
 export class Direction$Axis extends Enum<Direction$Axis> implements Predicate<Direction>, StringRepresentable {
     static CODEC: StringRepresentable$EnumCodec<Direction$Axis>;
     static PRE_BUILT_MAP_THRESHOLD: number;
-    static VALUES: (Object | null)[];
+    static VALUES: Direction$Axis[];
     static X: Direction$Axis;
     static Y: Direction$Axis;
     static Z: Direction$Axis;
     static byName(paramname: string): Direction$Axis;
-    static createNameLookup(paramvalueArray: Object | null): (param0: string) => StringRepresentable | null;
-    static createNameLookup(paramvalueArray: Object | null, paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
-    static fromEnum(paramvalues: () => Object | null): StringRepresentable$EnumCodec<any>;
-    static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<any>;
-    static fromValues(paramvalues: () => Object | null): Codec<StringRepresentable>;
+    static createNameLookup(paramvalueArray: (StringRepresentable | null)[]): (param0: string) => StringRepresentable | null;
+    static createNameLookup(paramvalueArray: (Object | null)[], paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
+    static fromEnum(paramvalues: () => (Object | null)[]): StringRepresentable$EnumCodec<any>;
+    static fromEnumWithMapping(paramvalues: () => (Object | null)[], paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<any>;
+    static fromValues(paramvalues: () => (StringRepresentable | null)[]): Codec<StringRepresentable>;
     static getRandom(paramrandom: RandomSource): Direction$Axis;
     static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
-    static keys(paramvalues: (Object | null)[]): Keyable;
+    static keys(paramvalues: StringRepresentable[]): Keyable;
     static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Direction$Axis;
-    static values(): (Object | null)[];
+    static values(): Direction$Axis[];
     private constructor(name: string)
     and(arg0: (param0: Direction) => boolean): (param0: Direction) => boolean;
     choose(x: boolean, y: boolean, z: boolean): boolean;

@@ -7,6 +7,8 @@ import type { OutputStream } from '../../../../java/io/OutputStream.d.ts'
 import type { BigInteger } from '../../../../java/math/BigInteger.d.ts'
 import type { URL } from '../../../../java/net/URL.d.ts'
 import type { Charset } from '../../../../java/nio/charset/Charset.d.ts'
+import type { CopyOption } from '../../../../java/nio/file/CopyOption.d.ts'
+import type { LinkOption } from '../../../../java/nio/file/LinkOption.d.ts'
 import type { FileTime } from '../../../../java/nio/file/attribute/FileTime.d.ts'
 import type { Instant } from '../../../../java/time/Instant.d.ts'
 import type { LocalTime } from '../../../../java/time/LocalTime.d.ts'
@@ -26,7 +28,7 @@ import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 import type { LineIterator } from '../../../../org/apache/commons/io/LineIterator.d.ts'
 import type { IOFileFilter } from '../../../../org/apache/commons/io/filefilter/IOFileFilter.d.ts'
 export class FileUtils extends Object {
-    static EMPTY_FILE_ARRAY: (Object | null)[];
+    static EMPTY_FILE_ARRAY: File[];
     static ONE_EB: number;
     static ONE_EB_BI: BigInteger;
     static ONE_GB: number;
@@ -49,18 +51,18 @@ export class FileUtils extends Object {
     static cleanDirectory(paramarg0: File): void;
     static contentEquals(paramarg0: File, paramarg1: File): boolean;
     static contentEqualsIgnoreEOL(paramarg0: File, paramarg1: File, paramarg2: string): boolean;
-    static convertFileCollectionToFileArray(paramarg0: File[]): (Object | null)[];
+    static convertFileCollectionToFileArray(paramarg0: File[]): File[];
     static copyDirectory(paramarg0: File, paramarg1: File): void;
     static copyDirectory(paramarg0: File, paramarg1: File, paramarg2: boolean): void;
     static copyDirectory(paramarg0: File, paramarg1: File, paramarg2: (param0: File) => boolean): void;
     static copyDirectory(paramarg0: File, paramarg1: File, paramarg2: (param0: File) => boolean, paramarg3: boolean): void;
-    static copyDirectory(paramarg0: File, paramarg1: File, paramarg2: (param0: File) => boolean, paramarg3: boolean, ...paramarg4: (Object | null)[]): void;
+    static copyDirectory(paramarg0: File, paramarg1: File, paramarg2: (param0: File) => boolean, paramarg3: boolean, ...paramarg4: CopyOption[]): void;
     static copyDirectoryToDirectory(paramarg0: File, paramarg1: File): void;
     static copyFile(paramarg0: File, paramarg1: OutputStream): number;
     static copyFile(paramarg0: File, paramarg1: File): void;
     static copyFile(paramarg0: File, paramarg1: File, paramarg2: boolean): void;
-    static copyFile(paramarg0: File, paramarg1: File, paramarg2: boolean, ...paramarg3: (Object | null)[]): void;
-    static copyFile(paramarg0: File, paramarg1: File, ...paramarg2: (Object | null)[]): void;
+    static copyFile(paramarg0: File, paramarg1: File, paramarg2: boolean, ...paramarg3: CopyOption[]): void;
+    static copyFile(paramarg0: File, paramarg1: File, ...paramarg2: CopyOption[]): void;
     static copyFileToDirectory(paramarg0: File, paramarg1: File): void;
     static copyFileToDirectory(paramarg0: File, paramarg1: File, paramarg2: boolean): void;
     static copyInputStreamToFile(paramarg0: InputStream, paramarg1: File): void;
@@ -79,13 +81,13 @@ export class FileUtils extends Object {
     static forceDeleteOnExit(paramarg0: File): void;
     static forceMkdir(paramarg0: File): void;
     static forceMkdirParent(paramarg0: File): void;
-    static getFile(paramarg0: File, ...paramarg1: (Object | null)[]): File;
-    static getFile(...paramarg0: (Object | null)[]): File;
+    static getFile(paramarg0: File, ...paramarg1: string[]): File;
+    static getFile(...paramarg0: string[]): File;
     static getTempDirectory(): File;
     static getTempDirectoryPath(): string;
     static getUserDirectory(): File;
     static getUserDirectoryPath(): string;
-    static isDirectory(paramarg0: File, ...paramarg1: (Object | null)[]): boolean;
+    static isDirectory(paramarg0: File, ...paramarg1: LinkOption[]): boolean;
     static isEmptyDirectory(paramarg0: File): boolean;
     static isFileNewer(paramarg0: File, paramarg1: File): boolean;
     static isFileNewer(paramarg0: File, paramarg1: FileTime): boolean;
@@ -111,9 +113,9 @@ export class FileUtils extends Object {
     static isFileOlder(paramarg0: File, paramarg1: ChronoZonedDateTime<any>): boolean;
     static isFileOlder(paramarg0: File, paramarg1: Date): boolean;
     static isFileOlder(paramarg0: File, paramarg1: number): boolean;
-    static isRegularFile(paramarg0: File, ...paramarg1: (Object | null)[]): boolean;
+    static isRegularFile(paramarg0: File, ...paramarg1: LinkOption[]): boolean;
     static isSymlink(paramarg0: File): boolean;
-    static iterateFiles(paramarg0: File, paramarg1: (Object | null)[], paramarg2: boolean): Iterator<File>;
+    static iterateFiles(paramarg0: File, paramarg1: string[], paramarg2: boolean): Iterator<File>;
     static iterateFiles(paramarg0: File, paramarg1: IOFileFilter, paramarg2: IOFileFilter): Iterator<File>;
     static iterateFilesAndDirs(paramarg0: File, paramarg1: IOFileFilter, paramarg2: IOFileFilter): Iterator<File>;
     static lastModified(paramarg0: File): number;
@@ -121,13 +123,13 @@ export class FileUtils extends Object {
     static lastModifiedUnchecked(paramarg0: File): number;
     static lineIterator(paramarg0: File): LineIterator;
     static lineIterator(paramarg0: File, paramarg1: string): LineIterator;
-    static listFiles(paramarg0: File, paramarg1: (Object | null)[], paramarg2: boolean): File[];
+    static listFiles(paramarg0: File, paramarg1: string[], paramarg2: boolean): File[];
     static listFiles(paramarg0: File, paramarg1: IOFileFilter, paramarg2: IOFileFilter): File[];
     static listFilesAndDirs(paramarg0: File, paramarg1: IOFileFilter, paramarg2: IOFileFilter): File[];
     static moveDirectory(paramarg0: File, paramarg1: File): void;
     static moveDirectoryToDirectory(paramarg0: File, paramarg1: File, paramarg2: boolean): void;
     static moveFile(paramarg0: File, paramarg1: File): void;
-    static moveFile(paramarg0: File, paramarg1: File, ...paramarg2: (Object | null)[]): void;
+    static moveFile(paramarg0: File, paramarg1: File, ...paramarg2: CopyOption[]): void;
     static moveFileToDirectory(paramarg0: File, paramarg1: File, paramarg2: boolean): void;
     static moveToDirectory(paramarg0: File, paramarg1: File, paramarg2: boolean): void;
     static newOutputStream(paramarg0: File, paramarg1: boolean): OutputStream;
@@ -145,10 +147,10 @@ export class FileUtils extends Object {
     static sizeOfAsBigInteger(paramarg0: File): BigInteger;
     static sizeOfDirectory(paramarg0: File): number;
     static sizeOfDirectoryAsBigInteger(paramarg0: File): BigInteger;
-    static streamFiles(paramarg0: File, paramarg1: boolean, ...paramarg2: (Object | null)[]): Stream<File>;
+    static streamFiles(paramarg0: File, paramarg1: boolean, ...paramarg2: string[]): Stream<File>;
     static toFile(paramarg0: URL): File;
-    static toFiles(...paramarg0: (Object | null)[]): (Object | null)[];
-    static toURLs(...paramarg0: (Object | null)[]): (Object | null)[];
+    static toFiles(...paramarg0: URL[]): File[];
+    static toURLs(...paramarg0: File[]): URL[];
     static touch(paramarg0: File): void;
     static waitFor(paramarg0: File, paramarg1: number): boolean;
     static write(paramarg0: File, paramarg1: CharSequence): void;

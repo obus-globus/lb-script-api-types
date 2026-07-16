@@ -7,9 +7,9 @@ import type { AbstractContainerScreen } from '../../../../../net/minecraft/clien
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class ContainerItemSlot extends Object implements ItemSlot {
     static Companion: ItemSlot$Companion;
-    static PREFER_FEWER_ITEM: (param0: Object) => boolean;
-    static PREFER_MORE_ITEM: (param0: Object) => boolean;
-    static PREFER_NEARBY: (param0: Object) => boolean;
+    static PREFER_FEWER_ITEM: (param0: Object, param1: Object) => number;
+    static PREFER_MORE_ITEM: (param0: Object, param1: Object) => number;
+    static PREFER_NEARBY: (param0: ItemSlot, param1: ItemSlot) => number;
     constructor(slotInContainer: number)
     readonly itemStack: ItemStack;
     readonly slotInContainer: number;

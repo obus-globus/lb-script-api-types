@@ -8,7 +8,7 @@ export class CrossbowAttack$CrossbowState extends Enum<CrossbowAttack$CrossbowSt
     static UNCHARGED: CrossbowAttack$CrossbowState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CrossbowAttack$CrossbowState;
-    static values(): (Object | null)[];
+    static values(): CrossbowAttack$CrossbowState[];
     private constructor()
     name(): "UNCHARGED" | "CHARGING" | "CHARGED" | "READY_TO_ATTACK";
 }

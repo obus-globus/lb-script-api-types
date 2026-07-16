@@ -12,7 +12,7 @@ export class ClientboundMapItemDataPacket_Type extends Enum<ClientboundMapItemDa
     static getByValue(paramarg0: number, paramarg1: ClientboundMapItemDataPacket_Type): ClientboundMapItemDataPacket_Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClientboundMapItemDataPacket_Type;
-    static values(): (Object | null)[];
+    static values(): ClientboundMapItemDataPacket_Type[];
     private constructor(arg2: number)
     private constructor(arg2: ClientboundMapItemDataPacket_Type)
     readonly value: number;

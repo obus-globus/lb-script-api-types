@@ -4,7 +4,6 @@ import type { IteratorRecord } from '../../../../../../com/oracle/truffle/js/run
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class GetIteratorFromMethodNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(node: Node, iteratedObject: Object, method: Object): IteratorRecord;
 }

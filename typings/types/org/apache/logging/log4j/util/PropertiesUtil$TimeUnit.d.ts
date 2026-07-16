@@ -12,7 +12,7 @@ export class PropertiesUtil$TimeUnit extends Enum<PropertiesUtil$TimeUnit> {
     static SECONDS: PropertiesUtil$TimeUnit;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PropertiesUtil$TimeUnit;
-    static values(): (Object | null)[];
+    static values(): PropertiesUtil$TimeUnit[];
     private constructor(descriptions: string[], timeUnit: TemporalUnit)
     // private descriptions: string[];
     // private timeUnit: TemporalUnit;

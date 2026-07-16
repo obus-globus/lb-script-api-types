@@ -23,11 +23,10 @@ export class ByteSpliterators extends Object {
     static asSpliteratorFromSorted(paramarg0: ByteIterator, paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => number): ByteSpliterator;
     static asSpliteratorFromSortedUnknownSize(paramarg0: ByteIterator, paramarg1: number, paramarg2: (param0: number, param1: number) => number): ByteSpliterator;
     static asSpliteratorUnknownSize(paramarg0: ByteIterator, paramarg1: number): ByteSpliterator;
-    static concat(...paramarg0: (Object | null)[]): ByteSpliterator;
-    static concat(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): ByteSpliterator;
+    static concat(...paramarg0: ByteSpliterator[]): ByteSpliterator;
+    static concat(paramarg0: ByteSpliterator[], paramarg1: number, paramarg2: number): ByteSpliterator;
     static fromTo(paramarg0: number, paramarg1: number): ByteSpliterator;
     static narrow(paramarg0: Spliterator$OfInt): ByteSpliterator;
-    static onEachMatching(paramarg0: ByteSpliterator, paramarg1: (param0: number) => boolean, paramarg2: (param0: number) => void): void;
     static onEachMatching(paramarg0: ByteSpliterator, paramarg1: (param0: number) => boolean, paramarg2: (param0: number) => void): void;
     static singleton(paramarg0: number): ByteSpliterator;
     static singleton(paramarg0: number, paramarg1: (param0: number, param1: number) => number): ByteSpliterator;

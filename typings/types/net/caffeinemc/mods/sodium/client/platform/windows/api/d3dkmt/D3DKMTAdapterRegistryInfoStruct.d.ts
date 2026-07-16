@@ -11,7 +11,6 @@ export class D3DKMTAdapterRegistryInfoStruct extends Struct<D3DKMTAdapterRegistr
     static POINTER_SIZE: number;
     static calloc(paramarg0: MemoryStack): D3DKMTAdapterRegistryInfoStruct;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     private constructor(arg0: number, arg1: ByteBuffer)
     create(arg0: number, arg1: ByteBuffer): D3DKMTAdapterRegistryInfoStruct;
     getAdapterString(): string;

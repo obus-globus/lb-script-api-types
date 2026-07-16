@@ -6,7 +6,6 @@ import type { PropertySetNode$LinkedPropertySetNode } from '../../../../../../co
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PropertySetNode$ReadOnlyPropertySetNode extends PropertySetNode$LinkedPropertySetNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(receiverCheck: PropertyCacheNode$ReceiverCheckNode, isStrict: boolean)
     constructor(receiverCheck: PropertyCacheNode$ReceiverCheckNode, isStrict: boolean, property: Property)
     // private isStrict: boolean;

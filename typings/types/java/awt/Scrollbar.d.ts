@@ -18,14 +18,12 @@ export class Scrollbar extends Component implements Adjustable, Accessible {
     static FRAMEBITS: number;
     static HEIGHT: number;
     static HORIZONTAL: number;
-    static HORIZONTAL: number;
     static LEFT_ALIGNMENT: number;
     static NO_ORIENTATION: number;
     static PROPERTIES: number;
     static RIGHT_ALIGNMENT: number;
     static SOMEBITS: number;
     static TOP_ALIGNMENT: number;
-    static VERTICAL: number;
     static VERTICAL: number;
     static WIDTH: number;
     constructor()

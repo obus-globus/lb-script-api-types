@@ -166,7 +166,7 @@ export class ActorType extends Enum<ActorType> {
     static getByValue(paramarg0: number, paramarg1: ActorType): ActorType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ActorType;
-    static values(): (Object | null)[];
+    static values(): ActorType[];
     private constructor(arg2: number)
     private constructor(arg2: ActorType)
     readonly value: number;

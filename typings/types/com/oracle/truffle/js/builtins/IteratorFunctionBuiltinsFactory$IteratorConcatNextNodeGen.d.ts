@@ -9,7 +9,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class IteratorFunctionBuiltinsFactory$IteratorConcatNextNodeGen extends IteratorFunctionBuiltins$IteratorConcatNextNode {
     static create(paramcontext: JSContext): IteratorFunctionBuiltins$IteratorConcatNextNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private next_getIteratorFromMethodNode__field1_: Node;
     // private next_getIteratorFromMethodNode__field2_: Node;

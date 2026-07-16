@@ -8,7 +8,7 @@ export class LSTMBreakEngine$LSTMClass extends Enum<LSTMBreakEngine$LSTMClass> {
     static SINGLE: LSTMBreakEngine$LSTMClass;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LSTMBreakEngine$LSTMClass;
-    static values(): (Object | null)[];
+    static values(): LSTMBreakEngine$LSTMClass[];
     private constructor()
     name(): "BEGIN" | "INSIDE" | "END" | "SINGLE";
 }

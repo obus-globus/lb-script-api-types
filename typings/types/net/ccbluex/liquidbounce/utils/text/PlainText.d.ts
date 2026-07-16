@@ -13,7 +13,6 @@ import type { NbtPathArgument$NbtPath } from '../../../../../net/minecraft/comma
 import type { EntitySelector } from '../../../../../net/minecraft/commands/arguments/selector/EntitySelector.d.ts'
 import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { ComponentContents } from '../../../../../net/minecraft/network/chat/ComponentContents.d.ts'
-import type { FormattedText } from '../../../../../net/minecraft/network/chat/FormattedText.d.ts'
 import type { FormattedText$ContentConsumer } from '../../../../../net/minecraft/network/chat/FormattedText$ContentConsumer.d.ts'
 import type { FormattedText$StyledContentConsumer } from '../../../../../net/minecraft/network/chat/FormattedText$StyledContentConsumer.d.ts'
 import type { MutableComponent } from '../../../../../net/minecraft/network/chat/MutableComponent.d.ts'
@@ -30,8 +29,6 @@ import type { Unit } from '../../../../../net/minecraft/util/Unit.d.ts'
 import type { ChunkPos } from '../../../../../net/minecraft/world/level/ChunkPos.d.ts'
 export class PlainText extends Record implements CharSequence, Component, FormattedCharSequence {
     static EMPTY: PlainText;
-    static EMPTY: FormattedText;
-    static EMPTY: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     static NEW_LINE: PlainText;
     static SPACE: PlainText;
     static STOP_ITERATION: Optional<Unit>;
@@ -43,7 +40,6 @@ export class PlainText extends Record implements CharSequence, Component, Format
     static composite(paramparts: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[]): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     static composite(parampart: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     static composite(paramfirst: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean, paramsecond: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
-    static composite(...paramparts: (Object | null)[]): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     static decorateOutput(paramoutput: (param0: number, param1: Style, param2: number) => boolean, parammodifier: (param0: number) => number): (param0: number, param1: Style, param2: number) => boolean;
     static empty(): PlainText;
     static empty(): MutableComponent;
@@ -66,10 +62,10 @@ export class PlainText extends Record implements CharSequence, Component, Format
     static score(parampattern: CompilableString<EntitySelector>, paramobjective: string): MutableComponent;
     static selector(parampattern: CompilableString<EntitySelector>, paramseparator: Optional<Component>): MutableComponent;
     static translatable(paramkey: string): MutableComponent;
-    static translatable(paramkey: string, ...paramargs: (Object | null)[]): MutableComponent;
-    static translatableEscape(paramkey: string, ...paramargs: (Object | null)[]): MutableComponent;
+    static translatable(paramkey: string, ...paramargs: Object[]): MutableComponent;
+    static translatableEscape(paramkey: string, ...paramargs: Object[]): MutableComponent;
     static translatableWithFallback(paramkey: string, paramfallback: string): MutableComponent;
-    static translatableWithFallback(paramkey: string, paramfallback: string, ...paramargs: (Object | null)[]): MutableComponent;
+    static translatableWithFallback(paramkey: string, paramfallback: string, ...paramargs: Object[]): MutableComponent;
     static translationArg(parammessage: Message): Component;
     static translationArg(paramuri: URI): Component;
     static translationArg(paramdate: Date): Component;

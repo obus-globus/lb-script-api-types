@@ -1,4 +1,3 @@
-import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Stream } from '../../../../../../java/util/stream/Stream.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
@@ -9,7 +8,6 @@ import type { PlacementContext } from '../../../../../../net/minecraft/world/lev
 import type { PlacementModifier } from '../../../../../../net/minecraft/world/level/levelgen/placement/PlacementModifier.d.ts'
 import type { PlacementModifierType } from '../../../../../../net/minecraft/world/level/levelgen/placement/PlacementModifierType.d.ts'
 export class HeightRangePlacement extends PlacementModifier {
-    static CODEC: Codec<PlacementModifier>;
     static CODEC: MapCodec<HeightRangePlacement>;
     static of(paramheight: HeightProvider): HeightRangePlacement;
     static triangle(paramminInclusive: VerticalAnchor, parammaxInclusive: VerticalAnchor): HeightRangePlacement;

@@ -1,6 +1,5 @@
 import type { Date } from '../../../../../../../java/util/Date.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { TimeZone } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/TimeZone.d.ts'
 import type { TimeZone$SystemTimeZoneType } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/TimeZone$SystemTimeZoneType.d.ts'
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
@@ -21,12 +20,12 @@ export class TimeZone$ConstantZone extends TimeZone {
     static countEquivalentIDs(paramid: string): number;
     static forLocaleOrDefault(paramlocale: Locale): TimeZone;
     static forULocaleOrDefault(paramlocale: ULocale): TimeZone;
-    static getAvailableIDs(): (Object | null)[];
-    static getAvailableIDs(paramrawOffset: number): (Object | null)[];
-    static getAvailableIDs(paramcountry: string): (Object | null)[];
+    static getAvailableIDs(): string[];
+    static getAvailableIDs(paramrawOffset: number): string[];
+    static getAvailableIDs(paramcountry: string): string[];
     static getAvailableIDs(paramzoneType: TimeZone$SystemTimeZoneType, paramregion: string, paramrawOffset: number): string[];
     static getCanonicalID(paramid: string): string;
-    static getCanonicalID(paramid: string, paramisSystemID: (Object | null)[]): string;
+    static getCanonicalID(paramid: string, paramisSystemID: boolean[]): string;
     static getDefault(): TimeZone;
     static getDefaultTimeZoneType(): number;
     static getEquivalentID(paramid: string, paramindex: number): string;

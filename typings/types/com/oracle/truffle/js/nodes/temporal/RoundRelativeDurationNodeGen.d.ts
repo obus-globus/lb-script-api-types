@@ -12,7 +12,6 @@ import type { TemporalUtil$Unit } from '../../../../../../com/oracle/truffle/js/
 export class RoundRelativeDurationNodeGen extends RoundRelativeDurationNode {
     static create(): RoundRelativeDurationNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private addDateTimeNode_: TemporalAddDateTimeNode;
     // private differenceDateNode_: TemporalDifferenceDateNode;

@@ -24,12 +24,10 @@ export class SOFTLoopback extends Object {
     static alcLoopbackOpenDeviceSOFT(paramarg0: CharSequence): number;
     static alcLoopbackOpenDeviceSOFT(paramarg0: ByteBuffer): number;
     static alcRenderSamplesSOFT(paramarg0: number, paramarg1: number[], paramarg2: number): void;
-    static alcRenderSamplesSOFT(paramarg0: number, paramarg1: number[], paramarg2: number): void;
     static alcRenderSamplesSOFT(paramarg0: number, paramarg1: ByteBuffer, paramarg2: number): void;
     static alcRenderSamplesSOFT(paramarg0: number, paramarg1: FloatBuffer, paramarg2: number): void;
     static alcRenderSamplesSOFT(paramarg0: number, paramarg1: IntBuffer, paramarg2: number): void;
     static alcRenderSamplesSOFT(paramarg0: number, paramarg1: ShortBuffer, paramarg2: number): void;
-    static alcRenderSamplesSOFT(paramarg0: number, paramarg1: number[], paramarg2: number): void;
     static nalcLoopbackOpenDeviceSOFT(paramarg0: number): number;
     static nalcRenderSamplesSOFT(paramarg0: number, paramarg1: number, paramarg2: number): void;
     constructor()

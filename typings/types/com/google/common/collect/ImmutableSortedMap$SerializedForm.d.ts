@@ -4,6 +4,6 @@ import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ImmutableSortedMap$SerializedForm<K extends unknown, V extends unknown> extends ImmutableMap$SerializedForm<K, V> {
     constructor(sortedMap: Map<K, V>)
-    // private comparator: (param0: Object) => boolean;
+    // private comparator: (param0: K, param1: K) => number;
     makeBuilder(size: number): ImmutableSortedMap$Builder<K, V>;
 }

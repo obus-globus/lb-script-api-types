@@ -6,7 +6,7 @@ export class PositionSourceType extends Enum<PositionSourceType> {
     static ENTITY: PositionSourceType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PositionSourceType;
-    static values(): (Object | null)[];
+    static values(): PositionSourceType[];
     private constructor()
     name(): "BLOCK" | "ENTITY";
 }

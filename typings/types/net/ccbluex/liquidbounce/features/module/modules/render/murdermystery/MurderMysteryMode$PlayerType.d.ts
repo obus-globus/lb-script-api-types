@@ -9,7 +9,7 @@ export class MurderMysteryMode$PlayerType extends Enum<MurderMysteryMode$PlayerT
     static getEntries(): MurderMysteryMode$PlayerType[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MurderMysteryMode$PlayerType;
-    static values(): (Object | null)[];
+    static values(): MurderMysteryMode$PlayerType[];
     private constructor(prefix: Component | null)
     readonly prefix: Component | null;
     name(): "NEUTRAL" | "DETECTIVE_LIKE" | "MURDERER";

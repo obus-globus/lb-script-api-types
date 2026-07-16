@@ -18,7 +18,7 @@ export class EntityDataIndex1_5_2 extends Enum<EntityDataIndex1_5_2> {
     static searchIndex(paramarg0: EntityTypes1_8$EntityType, paramarg1: number): EntityDataIndex1_5_2;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): EntityDataIndex1_5_2;
-    static values(): (Object | null)[];
+    static values(): EntityDataIndex1_5_2[];
     private constructor(arg2: EntityTypes1_8$EntityType, arg3: number, arg4: EntityDataTypes1_6_4, arg5: number, arg6: EntityDataTypes1_6_4)
     private constructor(arg2: EntityTypes1_8$EntityType, arg3: number, arg4: EntityDataTypes1_6_4, arg5: EntityDataTypes1_6_4)
     readonly entityType: EntityTypes1_8$EntityType;

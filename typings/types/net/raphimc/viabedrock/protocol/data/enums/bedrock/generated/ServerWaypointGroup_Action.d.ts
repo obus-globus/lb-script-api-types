@@ -12,7 +12,7 @@ export class ServerWaypointGroup_Action extends Enum<ServerWaypointGroup_Action>
     static getByValue(paramarg0: number, paramarg1: ServerWaypointGroup_Action): ServerWaypointGroup_Action;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ServerWaypointGroup_Action;
-    static values(): (Object | null)[];
+    static values(): ServerWaypointGroup_Action[];
     private constructor(arg2: number)
     private constructor(arg2: ServerWaypointGroup_Action)
     readonly value: number;

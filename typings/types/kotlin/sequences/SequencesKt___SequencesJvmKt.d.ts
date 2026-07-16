@@ -23,20 +23,18 @@ export class SequencesKt___SequencesJvmKt extends SequencesKt__SequencesKt {
     static iterator(paramarg0: (param0: Object, param1: Object) => Object): Iterator<Object>;
     static max(paramarg0: Sequence<Object>): Comparable<Object>;
     static max(paramarg0: Sequence<Object>): number;
-    static max(paramarg0: Sequence<Object>): number;
     static maxBy(paramarg0: Sequence<Object>, paramarg1: (param0: Object) => Object | null): Object | null;
-    static maxWith(paramarg0: Sequence<Object>, paramarg1: (param0: Object) => boolean): Object;
+    static maxWith(paramarg0: Sequence<Object>, paramarg1: (param0: Object | null, param1: Object | null) => number): Object;
     static min(paramarg0: Sequence<Object>): Comparable<Object>;
     static min(paramarg0: Sequence<Object>): number;
-    static min(paramarg0: Sequence<Object>): number;
     static minBy(paramarg0: Sequence<Object>, paramarg1: (param0: Object) => Object | null): Object | null;
-    static minWith(paramarg0: Sequence<Object>, paramarg1: (param0: Object) => boolean): Object;
+    static minWith(paramarg0: Sequence<Object>, paramarg1: (param0: Object | null, param1: Object | null) => number): Object;
     static sequence(paramarg0: (param0: Object, param1: Object) => Object): Sequence<Object>;
     static sequenceOf(paramarg0: Object | null): Sequence<Object>;
-    static sequenceOf(paramarg0: Object | null): Sequence<Object>;
+    static sequenceOf(...paramarg0: (Object | null)[]): Sequence<Object>;
     static shuffled(paramarg0: Sequence<Object>): Sequence<Object>;
     static shuffled(paramarg0: Sequence<Object>, paramarg1: Random): Sequence<Object>;
     static toSortedSet(paramarg0: Sequence<Object>): (Object | null)[];
-    static toSortedSet(paramarg0: Sequence<Object>, paramarg1: (param0: Object) => boolean): (Object | null)[];
+    static toSortedSet(paramarg0: Sequence<Object>, paramarg1: (param0: Object, param1: Object) => number): (Object | null)[];
     static unzip(paramarg0: Sequence<Pair<Object, Object>>): Pair<(Object | null)[], (Object | null)[]>;
 }

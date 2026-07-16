@@ -12,7 +12,7 @@ export class ServerboundLoginPackets extends Enum<ServerboundLoginPackets> imple
     static LOGIN_ACKNOWLEDGED: ServerboundLoginPackets;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ServerboundLoginPackets;
-    static values(): (Object | null)[];
+    static values(): ServerboundLoginPackets[];
     private constructor()
     direction(): Direction;
     getId(): number;

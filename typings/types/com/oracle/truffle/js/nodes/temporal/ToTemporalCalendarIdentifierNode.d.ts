@@ -9,7 +9,6 @@ export abstract class ToTemporalCalendarIdentifierNode extends JavaScriptBaseNod
     static create(): ToTemporalCalendarIdentifierNode;
     static getUncached(): ToTemporalCalendarIdentifierNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doJSTemporalCalendarHolder(temporalCalendarLike: JSTemporalCalendarHolder): TruffleString;
     doOther(temporalCalendarLike: Object): TruffleString;

@@ -27,7 +27,7 @@ export class Token$ID extends Enum<Token$ID> {
     static Whitespace: Token$ID;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Token$ID;
-    static values(): (Object | null)[];
+    static values(): Token$ID[];
     private constructor(arg2: string)
     // private description: string;
     toString(): string;

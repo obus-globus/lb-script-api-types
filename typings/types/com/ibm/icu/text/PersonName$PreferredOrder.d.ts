@@ -7,7 +7,7 @@ export class PersonName$PreferredOrder extends Enum<PersonName$PreferredOrder> {
     static SURNAME_FIRST: PersonName$PreferredOrder;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PersonName$PreferredOrder;
-    static values(): (Object | null)[];
+    static values(): PersonName$PreferredOrder[];
     private constructor()
     name(): "DEFAULT" | "GIVEN_FIRST" | "SURNAME_FIRST";
 }

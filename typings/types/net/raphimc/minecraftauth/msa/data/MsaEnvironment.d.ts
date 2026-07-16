@@ -7,7 +7,7 @@ export class MsaEnvironment extends Enum<MsaEnvironment> {
     static MICROSOFT_ONLINE_CONSUMERS: MsaEnvironment;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MsaEnvironment;
-    static values(): (Object | null)[];
+    static values(): MsaEnvironment[];
     private constructor(arg2: string, arg3: string, arg4: string, arg5: string, arg6: string)
     readonly authorizePath: string;
     readonly baseUrl: string;

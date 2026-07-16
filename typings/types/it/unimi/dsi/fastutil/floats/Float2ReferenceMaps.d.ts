@@ -9,7 +9,6 @@ export class Float2ReferenceMaps extends Object {
     static fastIterable(paramarg0: { [key: string]: any }): Float2ReferenceMap$Entry<Object>[];
     static fastIterator(paramarg0: { [key: string]: any }): ObjectIterator<Float2ReferenceMap$Entry<Object>>;
     static singleton(paramarg0: number, paramarg1: Object | null): { [key: string]: any };
-    static singleton(paramarg0: number, paramarg1: Object | null): { [key: string]: any };
     static synchronize(paramarg0: { [key: string]: any }): { [key: string]: any };
     static synchronize(paramarg0: { [key: string]: any }, paramarg1: Object): { [key: string]: any };
     static unmodifiable(paramarg0: { [key: string]: any }): { [key: string]: any };

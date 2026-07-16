@@ -7,7 +7,7 @@ export class ReferenceCountUpdater$UpdaterType extends Enum<ReferenceCountUpdate
     static VarHandle: ReferenceCountUpdater$UpdaterType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ReferenceCountUpdater$UpdaterType;
-    static values(): (Object | null)[];
+    static values(): ReferenceCountUpdater$UpdaterType[];
     private constructor()
     name(): "Unsafe" | "VarHandle" | "Atomic";
 }

@@ -10,13 +10,12 @@ import type { Comparator } from '../../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSTypedArraySortNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
-    doCached(fromArray: JSTypedArrayObject, toArray: JSTypedArrayObject, length: number, comparator: (param0: Object) => boolean, fromType: TypedArray, toType: TypedArray, comparatorIsNull: boolean, cachedFromType: TypedArray, cachedToType: TypedArray, cachedComparatorIsNull: boolean, interop: InteropLibrary): void;
-    doUncached(fromArray: JSTypedArrayObject, toArray: JSTypedArrayObject, length: number, comparator: (param0: Object) => boolean, fromType: TypedArray, toType: TypedArray, comparatorIsNull: boolean, interop: InteropLibrary): void;
-    execute(fromArray: JSTypedArrayObject, toArray: JSTypedArrayObject, length: number, comparator: (param0: Object) => boolean): void;
+    doCached(fromArray: JSTypedArrayObject, toArray: JSTypedArrayObject, length: number, comparator: (param0: Object, param1: Object) => number, fromType: TypedArray, toType: TypedArray, comparatorIsNull: boolean, cachedFromType: TypedArray, cachedToType: TypedArray, cachedComparatorIsNull: boolean, interop: InteropLibrary): void;
+    doUncached(fromArray: JSTypedArrayObject, toArray: JSTypedArrayObject, length: number, comparator: (param0: Object, param1: Object) => number, fromType: TypedArray, toType: TypedArray, comparatorIsNull: boolean, interop: InteropLibrary): void;
+    execute(fromArray: JSTypedArrayObject, toArray: JSTypedArrayObject, length: number, comparator: (param0: Object, param1: Object) => number): void;
     // private isTypedArrayOutOfBounds(toArray: JSTypedArrayObject): boolean;
-    // private sortBigInt64Array(fromArray: JSTypedArrayObject, toArray: JSTypedArrayObject, length: number, comparator: (param0: Object) => boolean, fromType: TypedArray$TypedBigIntArray, toType: TypedArray$TypedBigIntArray, interop: InteropLibrary): void;
-    // private sortFloatArray(fromArray: JSTypedArrayObject, toArray: JSTypedArrayObject, length: number, comparator: (param0: Object) => boolean, fromType: TypedArray$TypedFloatArray, toType: TypedArray$TypedFloatArray, interop: InteropLibrary): void;
-    // private sortIntArray(fromArray: JSTypedArrayObject, toArray: JSTypedArrayObject, length: number, comparator: (param0: Object) => boolean, fromType: TypedArray$TypedIntArray, toType: TypedArray$TypedIntArray, interop: InteropLibrary): void;
+    // private sortBigInt64Array(fromArray: JSTypedArrayObject, toArray: JSTypedArrayObject, length: number, comparator: (param0: Object, param1: Object) => number, fromType: TypedArray$TypedBigIntArray, toType: TypedArray$TypedBigIntArray, interop: InteropLibrary): void;
+    // private sortFloatArray(fromArray: JSTypedArrayObject, toArray: JSTypedArrayObject, length: number, comparator: (param0: Object, param1: Object) => number, fromType: TypedArray$TypedFloatArray, toType: TypedArray$TypedFloatArray, interop: InteropLibrary): void;
+    // private sortIntArray(fromArray: JSTypedArrayObject, toArray: JSTypedArrayObject, length: number, comparator: (param0: Object, param1: Object) => number, fromType: TypedArray$TypedIntArray, toType: TypedArray$TypedIntArray, interop: InteropLibrary): void;
 }

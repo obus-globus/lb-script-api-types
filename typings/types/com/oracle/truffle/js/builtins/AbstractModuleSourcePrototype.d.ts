@@ -14,7 +14,7 @@ export class AbstractModuleSourcePrototype extends Enum<AbstractModuleSourceProt
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): AbstractModuleSourcePrototype;
-    static values(): (Object | null)[];
+    static values(): AbstractModuleSourcePrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

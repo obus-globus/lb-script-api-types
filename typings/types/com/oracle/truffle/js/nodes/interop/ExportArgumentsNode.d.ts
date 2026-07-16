@@ -4,7 +4,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ExportArgumentsNode extends JavaScriptBaseNode {
     static create(paramexpectedLength: number): ExportArgumentsNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     export(extractedUserArguments: Object[]): Object[];
 }

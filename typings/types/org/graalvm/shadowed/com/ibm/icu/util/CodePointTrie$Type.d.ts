@@ -6,7 +6,7 @@ export class CodePointTrie$Type extends Enum<CodePointTrie$Type> {
     static SMALL: CodePointTrie$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CodePointTrie$Type;
-    static values(): (Object | null)[];
+    static values(): CodePointTrie$Type[];
     private constructor()
     name(): "FAST" | "SMALL";
 }

@@ -19,7 +19,7 @@ export abstract class ForkJoinTask$InterruptibleTask<T extends unknown> extends 
     static inForkJoinPool(): boolean;
     static invokeAll(paramarg0: (Object | null)[]): (Object | null)[];
     static invokeAll(paramarg0: ForkJoinTask<Object>, paramarg1: ForkJoinTask<Object>): void;
-    static invokeAll(paramarg0: Object | null): void;
+    static invokeAll(...paramarg0: ForkJoinTask<Object>[]): void;
     constructor()
     // private runner: Thread;
     adaptee(): Object;

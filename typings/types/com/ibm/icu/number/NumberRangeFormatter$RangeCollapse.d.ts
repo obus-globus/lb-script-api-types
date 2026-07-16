@@ -8,7 +8,7 @@ export class NumberRangeFormatter$RangeCollapse extends Enum<NumberRangeFormatte
     static UNIT: NumberRangeFormatter$RangeCollapse;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): NumberRangeFormatter$RangeCollapse;
-    static values(): (Object | null)[];
+    static values(): NumberRangeFormatter$RangeCollapse[];
     private constructor()
     name(): "AUTO" | "NONE" | "UNIT" | "ALL";
 }

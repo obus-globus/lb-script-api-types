@@ -8,7 +8,7 @@ export class SandboxPolicy extends Enum<SandboxPolicy> {
     static UNTRUSTED: SandboxPolicy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SandboxPolicy;
-    static values(): (Object | null)[];
+    static values(): SandboxPolicy[];
     private constructor()
     isStricterOrEqual(other: SandboxPolicy): boolean;
     isStricterThan(other: SandboxPolicy): boolean;

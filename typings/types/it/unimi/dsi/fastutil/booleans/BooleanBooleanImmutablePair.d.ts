@@ -3,7 +3,7 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BooleanBooleanImmutablePair extends Object implements BooleanBooleanPair, Serializable {
-    static lexComparator(): (param0: Object) => boolean;
+    static lexComparator(): (param0: BooleanBooleanPair, param1: BooleanBooleanPair) => number;
     static of(paramarg0: boolean, paramarg1: boolean): BooleanBooleanImmutablePair;
     static of(paramarg0: boolean, paramarg1: boolean): BooleanBooleanPair;
     constructor(arg0: boolean, arg1: boolean)

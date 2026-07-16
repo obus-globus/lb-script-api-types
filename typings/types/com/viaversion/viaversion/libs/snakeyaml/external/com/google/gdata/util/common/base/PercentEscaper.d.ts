@@ -1,6 +1,5 @@
 import type { UnicodeEscaper } from '../../../../../../../../../../../../com/viaversion/viaversion/libs/snakeyaml/external/com/google/gdata/util/common/base/UnicodeEscaper.d.ts'
 import type { Appendable } from '../../../../../../../../../../../../java/lang/Appendable.d.ts'
-import type { Object } from '../../../../../../../../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../../../../../../../../java/lang/CharSequence.d.ts'
 export class PercentEscaper extends UnicodeEscaper {
     static SAFECHARS_URLENCODER: string;
@@ -8,7 +7,7 @@ export class PercentEscaper extends UnicodeEscaper {
     static SAFEQUERYSTRINGCHARS_URLENCODER: string;
     constructor(arg0: string, arg1: boolean)
     // private plusForSpace: boolean;
-    // private safeOctets: (Object | null)[];
+    // private safeOctets: boolean[];
     escape(arg0: Appendable): Appendable;
     escape(arg0: number): string[];
     escape(arg0: string): string;

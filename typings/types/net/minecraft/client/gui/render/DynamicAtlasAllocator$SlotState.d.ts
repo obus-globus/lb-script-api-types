@@ -7,7 +7,7 @@ export class DynamicAtlasAllocator$SlotState extends Enum<DynamicAtlasAllocator$
     static STALE: DynamicAtlasAllocator$SlotState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): DynamicAtlasAllocator$SlotState;
-    static values(): (Object | null)[];
+    static values(): DynamicAtlasAllocator$SlotState[];
     private constructor()
     name(): "EMPTY" | "STALE" | "READY";
 }

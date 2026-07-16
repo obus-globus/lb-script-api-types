@@ -7,7 +7,7 @@ export class RecipeCollection$CraftableStatus extends Enum<RecipeCollection$Craf
     static NOT_CRAFTABLE: RecipeCollection$CraftableStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RecipeCollection$CraftableStatus;
-    static values(): (Object | null)[];
+    static values(): RecipeCollection$CraftableStatus[];
     private constructor()
     name(): "ANY" | "CRAFTABLE" | "NOT_CRAFTABLE";
 }

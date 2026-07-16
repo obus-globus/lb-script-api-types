@@ -14,7 +14,7 @@ export class ModuleTargetStrafe$Requirements extends Enum<ModuleTargetStrafe$Req
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleTargetStrafe$Requirements;
-    static values(): (Object | null)[];
+    static values(): ModuleTargetStrafe$Requirements[];
     private constructor(tag: string, meets: () => boolean)
     readonly meets: () => boolean;
     readonly tag: string;

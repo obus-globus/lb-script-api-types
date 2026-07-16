@@ -11,7 +11,7 @@ export class Region$RegionType extends Enum<Region$RegionType> {
     static WORLD: Region$RegionType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Region$RegionType;
-    static values(): (Object | null)[];
+    static values(): Region$RegionType[];
     private constructor()
     name(): "UNKNOWN" | "TERRITORY" | "WORLD" | "CONTINENT" | "SUBCONTINENT" | "GROUPING" | "DEPRECATED";
 }

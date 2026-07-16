@@ -6,7 +6,7 @@ export class HTTPContentType extends Enum<HTTPContentType> {
     static ApplicationURLEncoded: HTTPContentType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HTTPContentType;
-    static values(): (Object | null)[];
+    static values(): HTTPContentType[];
     private constructor(arg2: string)
     contentType: string;
     name(): "ApplicationURLEncoded" | "ApplicationJSON";

@@ -1,5 +1,4 @@
 import type { Pattern } from '../../../../../../../java/util/regex/Pattern.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { AbstractRolloverStrategy } from '../../../../../../../org/apache/logging/log4j/core/appender/rolling/AbstractRolloverStrategy.d.ts'
 import type { DefaultRolloverStrategy$Builder } from '../../../../../../../org/apache/logging/log4j/core/appender/rolling/DefaultRolloverStrategy$Builder.d.ts'
 import type { PatternProcessor } from '../../../../../../../org/apache/logging/log4j/core/appender/rolling/PatternProcessor.d.ts'
@@ -10,7 +9,7 @@ import type { Configuration } from '../../../../../../../org/apache/logging/log4
 import type { StrSubstitutor } from '../../../../../../../org/apache/logging/log4j/core/lookup/StrSubstitutor.d.ts'
 export class DefaultRolloverStrategy extends AbstractRolloverStrategy {
     static PATTERN_COUNTER: Pattern;
-    static createStrategy(parammax: string, parammin: string, paramfileIndex: string, paramcompressionLevelStr: string, paramcustomActions: (Object | null)[], paramstopCustomActionsOnError: boolean, paramconfig: Configuration): DefaultRolloverStrategy;
+    static createStrategy(parammax: string, parammin: string, paramfileIndex: string, paramcompressionLevelStr: string, paramcustomActions: Action[], paramstopCustomActionsOnError: boolean, paramconfig: Configuration): DefaultRolloverStrategy;
     static newBuilder(): DefaultRolloverStrategy$Builder;
     constructor(minIndex: number, maxIndex: number, useMax: boolean, compressionLevel: number, strSubstitutor: StrSubstitutor, customActions: Action[], stopCustomActionsOnError: boolean)
     constructor(minIndex: number, maxIndex: number, useMax: boolean, compressionLevel: number, strSubstitutor: StrSubstitutor, customActions: Action[], stopCustomActionsOnError: boolean, tempCompressedFilePatternString: string)

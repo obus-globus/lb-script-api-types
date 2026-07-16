@@ -21,7 +21,6 @@ export class BookCloningRecipe extends CustomRecipe {
     static MAP_CODEC: MapCodec<BookCloningRecipe>;
     static SERIALIZER: RecipeSerializer<BookCloningRecipe>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, BookCloningRecipe>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<any>>;
     constructor(source: Ingredient, material: Ingredient, allowedGenerations: MinMaxBounds$Ints, result: ItemStackTemplate)
     // private allowedGenerations: MinMaxBounds$Ints;
     // private material: Ingredient;

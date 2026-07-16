@@ -1,6 +1,7 @@
 import type { Serializable } from '../../../../../../../java/io/Serializable.d.ts'
 import type { TimeUnit } from '../../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { Appender } from '../../../../../../../org/apache/logging/log4j/core/Appender.d.ts'
 import type { Filter } from '../../../../../../../org/apache/logging/log4j/core/Filter.d.ts'
 import type { Layout } from '../../../../../../../org/apache/logging/log4j/core/Layout.d.ts'
 import type { AbstractDatabaseAppender } from '../../../../../../../org/apache/logging/log4j/core/appender/db/AbstractDatabaseAppender.d.ts'
@@ -12,7 +13,7 @@ export class NoSqlAppender extends AbstractDatabaseAppender<NoSqlDatabaseManager
     static DEFAULT_STOP_TIMEOUT: number;
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
     static ELEMENT_TYPE: string;
-    static EMPTY_ARRAY: (Object | null)[];
+    static EMPTY_ARRAY: Appender[];
     static createAppender(paramname: string, paramignore: string, paramfilter: Filter, parambufferSize: string, paramprovider: NoSqlProvider<any>): NoSqlAppender;
     static newBuilder(): Object | null;
     static parseInt(params: string, paramdefaultValue: number): number;

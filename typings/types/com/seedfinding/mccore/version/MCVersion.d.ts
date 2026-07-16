@@ -148,7 +148,7 @@ export class MCVersion extends Enum<MCVersion> {
     static oldest(): MCVersion;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MCVersion;
-    static values(): (Object | null)[];
+    static values(): MCVersion[];
     private constructor(arg2: string, arg3: number, arg4: number)
     name: string;
     readonly release: number;

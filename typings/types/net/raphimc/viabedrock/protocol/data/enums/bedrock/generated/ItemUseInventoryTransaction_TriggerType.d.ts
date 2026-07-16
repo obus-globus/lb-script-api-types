@@ -11,7 +11,7 @@ export class ItemUseInventoryTransaction_TriggerType extends Enum<ItemUseInvento
     static getByValue(paramarg0: number, paramarg1: ItemUseInventoryTransaction_TriggerType): ItemUseInventoryTransaction_TriggerType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ItemUseInventoryTransaction_TriggerType;
-    static values(): (Object | null)[];
+    static values(): ItemUseInventoryTransaction_TriggerType[];
     private constructor(arg2: number)
     private constructor(arg2: ItemUseInventoryTransaction_TriggerType)
     readonly value: number;

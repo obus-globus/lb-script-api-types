@@ -6,7 +6,6 @@ export class ExportValueNodeGen$Uncached extends ExportValueNode implements Unad
     static create(): ExportValueNode;
     static getUncached(): ExportValueNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     execute(value: Object): Object;
     execute(arg0Value: Object, arg1Value: Object, arg2Value: boolean): Object;

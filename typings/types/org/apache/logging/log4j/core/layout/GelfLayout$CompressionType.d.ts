@@ -9,7 +9,7 @@ export class GelfLayout$CompressionType extends Enum<GelfLayout$CompressionType>
     static ZLIB: GelfLayout$CompressionType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): GelfLayout$CompressionType;
-    static values(): (Object | null)[];
+    static values(): GelfLayout$CompressionType[];
     constructor(arg2: any)
     createDeflaterOutputStream(os: OutputStream): DeflaterOutputStream;
     name(): "GZIP" | "ZLIB" | "OFF";

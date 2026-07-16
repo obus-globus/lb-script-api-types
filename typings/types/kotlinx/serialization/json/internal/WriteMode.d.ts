@@ -9,7 +9,7 @@ export class WriteMode extends Enum<WriteMode> {
     static getEntries(): WriteMode[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): WriteMode;
-    static values(): (Object | null)[];
+    static values(): WriteMode[];
     private constructor(begin: string, end: string)
     begin: string;
     end: string;

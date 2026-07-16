@@ -25,28 +25,21 @@ export class VkPhysicalDeviceToolPropertiesEXT extends VkPhysicalDeviceToolPrope
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceToolPropertiesEXT;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceToolPropertiesEXT;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceToolProperties;
     static create(paramarg0: number): VkPhysicalDeviceToolProperties;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceToolPropertiesEXT;
     static create(paramarg0: number): VkPhysicalDeviceToolPropertiesEXT;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceToolProperties;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceToolPropertiesEXT;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceToolProperties;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceToolProperties;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceToolPropertiesEXT;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceToolPropertiesEXT;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ndescription(paramarg0: number): ByteBuffer;
     static ndescriptionString(paramarg0: number): string;
     static nlayer(paramarg0: number): ByteBuffer;
@@ -60,7 +53,6 @@ export class VkPhysicalDeviceToolPropertiesEXT extends VkPhysicalDeviceToolPrope
     static nsType(paramarg0: number, paramarg1: number): void;
     static nversion(paramarg0: number): ByteBuffer;
     static nversionString(paramarg0: number): string;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

@@ -8,7 +8,7 @@ export class MixinAgent extends Object implements IHotSwap {
     static ERROR_BYTECODE: number[];
     static agentmain(paramarg0: string, paramarg1: Instrumentation): void;
     static init(paramarg0: Instrumentation): void;
-    static log(paramarg0: Level, paramarg1: string, ...paramarg2: (Object | null)[]): void;
+    static log(paramarg0: Level, paramarg1: string, ...paramarg2: Object[]): void;
     static premain(paramarg0: string, paramarg1: Instrumentation): void;
     constructor(arg0: IMixinTransformer)
     // private classTransformer: IMixinTransformer;

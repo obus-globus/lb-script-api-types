@@ -33,7 +33,7 @@ import type { TickContainerAccess } from '../../../../../net/minecraft/world/tic
 export class ProtoChunk extends ChunkAccess {
     static NBT_ATTACHMENT_KEY: string;
     static NO_FILLED_SECTION: number;
-    static getOrCreateOffsetList(paramlist: (Object | null)[], paramsectionIndex: number): (Object | null)[];
+    static getOrCreateOffsetList(paramlist: (Object | null)[][], paramsectionIndex: number): (Object | null)[];
     static packOffsetCoordinates(parampos: BlockPos): number;
     static problemPath(parampos: ChunkPos): () => string;
     static unpackOffsetCoordinates(parampackedData: number, paramsectionY: number, paramchunkPos: ChunkPos): BlockPos;

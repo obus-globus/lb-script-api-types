@@ -13,7 +13,7 @@ export class SVGSamplerOutput$GraphColorMap extends Enum<SVGSamplerOutput$GraphC
     static YELLOW: SVGSamplerOutput$GraphColorMap;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SVGSamplerOutput$GraphColorMap;
-    static values(): (Object | null)[];
+    static values(): SVGSamplerOutput$GraphColorMap[];
     private constructor()
     name(): "FLAME" | "AQUA" | "ORANGE" | "GREEN" | "RED" | "YELLOW" | "PURPLE" | "BLUE" | "GRAY";
 }

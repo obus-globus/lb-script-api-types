@@ -6,7 +6,6 @@ import type { Component } from '../../../../../net/minecraft/network/chat/Compon
 import type { InputControl } from '../../../../../net/minecraft/server/dialog/input/InputControl.d.ts'
 import type { SingleOptionInput$Entry } from '../../../../../net/minecraft/server/dialog/input/SingleOptionInput$Entry.d.ts'
 export class SingleOptionInput extends Record implements InputControl {
-    static MAP_CODEC: MapCodec<InputControl>;
     static MAP_CODEC: MapCodec<SingleOptionInput>;
     constructor(width: number, entries: SingleOptionInput$Entry[], label: Component, labelVisible: boolean)
     // private entries: SingleOptionInput$Entry[];

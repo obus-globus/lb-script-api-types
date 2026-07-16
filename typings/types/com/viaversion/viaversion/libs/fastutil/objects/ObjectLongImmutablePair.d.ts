@@ -4,7 +4,7 @@ import type { Serializable } from '../../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ObjectLongImmutablePair<K extends unknown> extends Object implements ObjectLongPair<K>, Serializable {
-    static lexComparator(): (param0: Object) => boolean;
+    static lexComparator(): (param0: ObjectLongPair<Object>, param1: ObjectLongPair<Object>) => number;
     static of(paramarg0: Object | null, paramarg1: number): ObjectLongImmutablePair<Object>;
     static of(paramarg0: Object | null, paramarg1: number): ObjectLongPair<Object>;
     constructor(arg0: K, arg1: number)

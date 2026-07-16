@@ -8,7 +8,7 @@ export class KmEffectType extends Enum<KmEffectType> {
     static RETURNS_RESULT_OF: KmEffectType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): KmEffectType;
-    static values(): (Object | null)[];
+    static values(): KmEffectType[];
     private constructor()
     name(): "RETURNS_CONSTANT" | "CALLS" | "RETURNS_NOT_NULL" | "RETURNS_RESULT_OF";
 }

@@ -11,7 +11,7 @@ export class CycleDetectingLockFactory$Policies extends Enum<CycleDetectingLockF
     static WARN: CycleDetectingLockFactory$Policies;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CycleDetectingLockFactory$Policies;
-    static values(): (Object | null)[];
+    static values(): CycleDetectingLockFactory$Policies[];
     constructor(arg2: ThreadLocal<CycleDetectingLockFactory$LockGraphNode[]>)
     handlePotentialDeadlock(exception: CycleDetectingLockFactory$PotentialDeadlockException): void;
     name(): "THROW" | "WARN" | "DISABLED";

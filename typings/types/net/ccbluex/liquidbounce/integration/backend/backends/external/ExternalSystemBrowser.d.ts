@@ -1,3 +1,4 @@
+import type { GpuDevice } from '../../../../../../../com/mojang/blaze3d/systems/GpuDevice.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { MinecraftShortcuts } from '../../../../../../../net/ccbluex/liquidbounce/features/module/MinecraftShortcuts.d.ts'
 import type { BrowserTexture } from '../../../../../../../net/ccbluex/liquidbounce/integration/backend/BrowserTexture.d.ts'
@@ -6,11 +7,21 @@ import type { Browser } from '../../../../../../../net/ccbluex/liquidbounce/inte
 import type { BrowserSettings } from '../../../../../../../net/ccbluex/liquidbounce/integration/backend/browser/BrowserSettings.d.ts'
 import type { BrowserState } from '../../../../../../../net/ccbluex/liquidbounce/integration/backend/browser/BrowserState.d.ts'
 import type { BrowserViewport } from '../../../../../../../net/ccbluex/liquidbounce/integration/backend/browser/BrowserViewport.d.ts'
+import type { Minecraft } from '../../../../../../../net/minecraft/client/Minecraft.d.ts'
+import type { ClientLevel } from '../../../../../../../net/minecraft/client/multiplayer/ClientLevel.d.ts'
+import type { ClientPacketListener } from '../../../../../../../net/minecraft/client/multiplayer/ClientPacketListener.d.ts'
+import type { MultiPlayerGameMode } from '../../../../../../../net/minecraft/client/multiplayer/MultiPlayerGameMode.d.ts'
+import type { LocalPlayer } from '../../../../../../../net/minecraft/client/player/LocalPlayer.d.ts'
 export class ExternalSystemBrowser extends Object implements MinecraftShortcuts, Browser {
     constructor(backend: ExternalSystemBrowserBackend, url: string, viewport: BrowserViewport, settings: BrowserSettings, priority: number)
     // private backend: ExternalSystemBrowserBackend;
+    readonly gpuDevice: GpuDevice;
+    readonly interaction: MultiPlayerGameMode;
     // private isInitialized: boolean;
     /*not mapped: */ isInitialized(): boolean;
+    readonly mc: Minecraft;
+    readonly network: ClientPacketListener;
+    readonly player: LocalPlayer;
     priority: number;
     readonly settings: BrowserSettings;
     readonly state: BrowserState;
@@ -18,6 +29,7 @@ export class ExternalSystemBrowser extends Object implements MinecraftShortcuts,
     url: string;
     viewport: BrowserViewport;
     visible: boolean;
+    readonly world: ClientLevel;
     close(): void;
     forceReload(): void;
     goBack(): void;

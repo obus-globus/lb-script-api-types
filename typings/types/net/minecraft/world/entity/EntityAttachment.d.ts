@@ -10,7 +10,7 @@ export class EntityAttachment extends Enum<EntityAttachment> {
     static WARDEN_CHEST: EntityAttachment;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): EntityAttachment;
-    static values(): (Object | null)[];
+    static values(): EntityAttachment[];
     private constructor(fallback: EntityAttachment$Fallback)
     // private fallback: EntityAttachment$Fallback;
     createFallbackPoints(width: number, height: number): Vec3[];

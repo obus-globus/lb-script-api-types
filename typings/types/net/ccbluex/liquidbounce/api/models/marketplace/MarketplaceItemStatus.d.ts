@@ -10,7 +10,7 @@ export class MarketplaceItemStatus extends Enum<MarketplaceItemStatus> {
     static getEntries(): MarketplaceItemStatus[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MarketplaceItemStatus;
-    static values(): (Object | null)[];
+    static values(): MarketplaceItemStatus[];
     private constructor()
     name(): "ACTIVE" | "INACTIVE" | "PENDING" | "REJECTED" | "DELETED";
 }

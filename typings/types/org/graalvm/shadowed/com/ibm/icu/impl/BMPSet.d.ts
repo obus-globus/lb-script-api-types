@@ -7,7 +7,7 @@ export class BMPSet extends Object {
     constructor(parentList: number[], parentListLength: number)
     constructor(otherBMPSet: BMPSet, newParentList: number[], newParentListLength: number)
     // private bmpBlockBits: number[];
-    // private latin1Contains: (Object | null)[];
+    // private latin1Contains: boolean[];
     // private list: number[];
     // private list4kStarts: number[];
     // private listLength: number;

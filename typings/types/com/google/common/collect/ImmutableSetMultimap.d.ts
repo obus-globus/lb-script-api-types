@@ -34,7 +34,7 @@ export class ImmutableSetMultimap<K extends unknown, V extends unknown> extends 
     static of(paramk1: Object | null, paramv1: Object | null, paramk2: Object | null, paramv2: Object | null, paramk3: Object | null, paramv3: Object | null, paramk4: Object | null, paramv4: Object | null): ImmutableSetMultimap<Object, Object>;
     static of(paramk1: Object | null, paramv1: Object | null, paramk2: Object | null, paramv2: Object | null, paramk3: Object | null, paramv3: Object | null, paramk4: Object | null, paramv4: Object | null, paramk5: Object | null, paramv5: Object | null): ImmutableSetMultimap<Object, Object>;
     static toImmutableSetMultimap(paramkeyFunction: (param0: Object) => Object | null, paramvalueFunction: (param0: Object) => Object | null): Collector<Object, Object, ImmutableSetMultimap<Object, Object>>;
-    constructor(map: Map<K, V[]>, size: number, valueComparator: (param0: Object) => boolean)
+    constructor(map: Map<K, V[]>, size: number, valueComparator: (param0: V, param1: V) => number)
     // private deserializationReplacement: ImmutableSetMultimap<Object, Object>;
     // private emptySet: V[];
     // private entries: Map$Entry<K, V>[];
@@ -47,6 +47,6 @@ export class ImmutableSetMultimap<K extends unknown, V extends unknown> extends 
     // private readResolve(): Object;
     removeAll(key: Object): V[];
     replaceValues(key: K, values: V[]): V[];
-    // private valueComparator(): (param0: Object) => boolean;
+    // private valueComparator(): (param0: V, param1: V) => number;
     // private writeObject(stream: ObjectOutputStream): void;
 }

@@ -7,7 +7,7 @@ export class EnchantmentSource extends Enum<EnchantmentSource> {
     static VANILLA: EnchantmentSource;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): EnchantmentSource;
-    static values(): (Object | null)[];
+    static values(): EnchantmentSource[];
     private constructor(arg2: boolean)
     readonly builtin: boolean;
     isBuiltin(): boolean;

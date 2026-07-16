@@ -5,10 +5,8 @@ import type { X509TrustManager } from '../../../javax/net/ssl/X509TrustManager.d
 import type { Protocol } from '../../../okhttp3/Protocol.d.ts'
 import type { BouncyCastlePlatform$Companion } from '../../../okhttp3/internal/platform/BouncyCastlePlatform$Companion.d.ts'
 import type { Platform } from '../../../okhttp3/internal/platform/Platform.d.ts'
-import type { Platform$Companion } from '../../../okhttp3/internal/platform/Platform$Companion.d.ts'
 export class BouncyCastlePlatform extends Platform {
     static Companion: BouncyCastlePlatform$Companion;
-    static Companion: Platform$Companion;
     static INFO: number;
     static WARN: number;
     static get(): Platform;

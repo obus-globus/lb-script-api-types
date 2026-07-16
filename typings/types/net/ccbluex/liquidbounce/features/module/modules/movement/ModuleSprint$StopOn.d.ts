@@ -14,7 +14,7 @@ export class ModuleSprint$StopOn extends Enum<ModuleSprint$StopOn> implements Ta
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleSprint$StopOn;
-    static values(): (Object | null)[];
+    static values(): ModuleSprint$StopOn[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "GROUND" | "AIR" | "SNEAKING" | "USING_ITEM";

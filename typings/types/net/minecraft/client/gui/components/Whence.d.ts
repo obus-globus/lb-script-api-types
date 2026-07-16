@@ -7,7 +7,7 @@ export class Whence extends Enum<Whence> {
     static RELATIVE: Whence;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Whence;
-    static values(): (Object | null)[];
+    static values(): Whence[];
     private constructor()
     name(): "ABSOLUTE" | "RELATIVE" | "END";
 }

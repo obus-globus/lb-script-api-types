@@ -23,8 +23,8 @@ export class CharMatcher$ForPredicate extends CharMatcher {
     static noneOf(paramsequence: CharSequence): CharMatcher;
     static singleWidth(): CharMatcher;
     static whitespace(): CharMatcher;
-    constructor(predicate: (param0: Object) => boolean)
-    // private predicate: (param0: Object) => boolean;
+    constructor(predicate: (param0: string) => boolean)
+    // private predicate: (param0: string) => boolean;
     matches(c: string): boolean;
     toString(): string;
 }

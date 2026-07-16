@@ -3,8 +3,10 @@ import type { Matcher } from '../../java/util/regex/Matcher.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../java/lang/CharSequence.d.ts'
 import type { MatchResult as MatchResult_2 } from '../../kotlin/text/MatchResult.d.ts'
+import type { MatchResult$Destructured } from '../../kotlin/text/MatchResult$Destructured.d.ts'
 export class MatcherMatchResult extends Object implements MatchResult_2 {
     constructor(matcher: Matcher, input: CharSequence)
+    readonly destructured: MatchResult$Destructured;
     readonly groupValues: string[];
     // private groupValues_: string[] | null;
     readonly groups: (Object | null)[];

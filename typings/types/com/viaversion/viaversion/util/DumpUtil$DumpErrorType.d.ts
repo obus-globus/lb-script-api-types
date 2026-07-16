@@ -7,7 +7,7 @@ export class DumpUtil$DumpErrorType extends Enum<DumpUtil$DumpErrorType> {
     static RATE_LIMITED: DumpUtil$DumpErrorType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DumpUtil$DumpErrorType;
-    static values(): (Object | null)[];
+    static values(): DumpUtil$DumpErrorType[];
     private constructor(arg2: string)
     // private message: string;
     message(): string;

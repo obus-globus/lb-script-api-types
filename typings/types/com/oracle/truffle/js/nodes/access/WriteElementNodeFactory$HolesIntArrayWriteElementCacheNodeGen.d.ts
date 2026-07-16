@@ -7,7 +7,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class WriteElementNodeFactory$HolesIntArrayWriteElementCacheNodeGen extends WriteElementNode$HolesIntArrayWriteElementCacheNode {
     static create(): WriteElementNode$HolesIntArrayWriteElementCacheNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private state_0_: number;
     // private state_1_: number;

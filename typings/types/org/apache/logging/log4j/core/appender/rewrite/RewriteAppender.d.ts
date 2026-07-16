@@ -1,5 +1,5 @@
 import type { TimeUnit } from '../../../../../../../java/util/concurrent/TimeUnit.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { Appender } from '../../../../../../../org/apache/logging/log4j/core/Appender.d.ts'
 import type { Filter } from '../../../../../../../org/apache/logging/log4j/core/Filter.d.ts'
 import type { LogEvent } from '../../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
 import type { AbstractAppender } from '../../../../../../../org/apache/logging/log4j/core/appender/AbstractAppender.d.ts'
@@ -12,8 +12,8 @@ export class RewriteAppender extends AbstractAppender {
     static DEFAULT_STOP_TIMEOUT: number;
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
     static ELEMENT_TYPE: string;
-    static EMPTY_ARRAY: (Object | null)[];
-    static createAppender(paramname: string, paramignore: string, paramappenderRefs: (Object | null)[], paramconfig: Configuration, paramrewritePolicy: RewritePolicy, paramfilter: Filter): RewriteAppender;
+    static EMPTY_ARRAY: Appender[];
+    static createAppender(paramname: string, paramignore: string, paramappenderRefs: AppenderRef[], paramconfig: Configuration, paramrewritePolicy: RewritePolicy, paramfilter: Filter): RewriteAppender;
     static parseInt(params: string, paramdefaultValue: number): number;
     private constructor(name: string, filter: Filter, ignoreExceptions: boolean, appenderRefs: AppenderRef[], rewritePolicy: RewritePolicy, config: Configuration, properties: Property[])
     // private appenderRefs: AppenderRef[];

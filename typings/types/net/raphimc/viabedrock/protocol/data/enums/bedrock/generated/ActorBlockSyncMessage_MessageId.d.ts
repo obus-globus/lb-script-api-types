@@ -11,7 +11,7 @@ export class ActorBlockSyncMessage_MessageId extends Enum<ActorBlockSyncMessage_
     static getByValue(paramarg0: number, paramarg1: ActorBlockSyncMessage_MessageId): ActorBlockSyncMessage_MessageId;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ActorBlockSyncMessage_MessageId;
-    static values(): (Object | null)[];
+    static values(): ActorBlockSyncMessage_MessageId[];
     private constructor(arg2: number)
     private constructor(arg2: ActorBlockSyncMessage_MessageId)
     readonly value: number;

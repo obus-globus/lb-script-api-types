@@ -9,7 +9,7 @@ export class ThreadLocalHandshake$ActivationResult extends Enum<ThreadLocalHands
     static TERMINATED: ThreadLocalHandshake$ActivationResult;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ThreadLocalHandshake$ActivationResult;
-    static values(): (Object | null)[];
+    static values(): ThreadLocalHandshake$ActivationResult[];
     private constructor()
     name(): "ACTIVE" | "PROCESSED" | "TERMINATED" | "ACTIVATED" | "REACTIVATED";
 }

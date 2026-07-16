@@ -12,7 +12,7 @@ export class ModuleElytraFly$Instant extends Enum<ModuleElytraFly$Instant> imple
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleElytraFly$Instant;
-    static values(): (Object | null)[];
+    static values(): ModuleElytraFly$Instant[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "START" | "STOP";

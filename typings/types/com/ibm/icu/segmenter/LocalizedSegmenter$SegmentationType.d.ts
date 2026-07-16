@@ -8,7 +8,7 @@ export class LocalizedSegmenter$SegmentationType extends Enum<LocalizedSegmenter
     static WORD: LocalizedSegmenter$SegmentationType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LocalizedSegmenter$SegmentationType;
-    static values(): (Object | null)[];
+    static values(): LocalizedSegmenter$SegmentationType[];
     private constructor()
     name(): "GRAPHEME_CLUSTER" | "WORD" | "LINE" | "SENTENCE";
 }

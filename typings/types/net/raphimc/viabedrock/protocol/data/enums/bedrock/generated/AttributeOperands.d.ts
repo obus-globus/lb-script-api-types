@@ -12,7 +12,7 @@ export class AttributeOperands extends Enum<AttributeOperands> {
     static getByValue(paramarg0: number, paramarg1: AttributeOperands): AttributeOperands;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AttributeOperands;
-    static values(): (Object | null)[];
+    static values(): AttributeOperands[];
     private constructor(arg2: number)
     private constructor(arg2: AttributeOperands)
     readonly value: number;

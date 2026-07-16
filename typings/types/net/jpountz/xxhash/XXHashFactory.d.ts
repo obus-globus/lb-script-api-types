@@ -8,7 +8,7 @@ import type { XXHash64 } from '../../../net/jpountz/xxhash/XXHash64.d.ts'
 export class XXHashFactory extends Object {
     static fastestInstance(): XXHashFactory;
     static fastestJavaInstance(): XXHashFactory;
-    static main(paramarg0: (Object | null)[]): void;
+    static main(paramarg0: string[]): void;
     static nativeInstance(): XXHashFactory;
     static safeInstance(): XXHashFactory;
     static unsafeInstance(): XXHashFactory;

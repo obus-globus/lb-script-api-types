@@ -10,9 +10,9 @@ import type { Shape } from '../../../../../com/oracle/truffle/api/object/Shape.d
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class DynamicObjectLibraryImpl extends Object {
     static getDynamicType(paramobject: DynamicObject, paramcachedShape: Shape): Object;
-    static getKeyArray(paramobject: DynamicObject, paramcachedShape: Shape): (Object | null)[];
+    static getKeyArray(paramobject: DynamicObject, paramcachedShape: Shape): Object[];
     static getProperty(paramobject: DynamicObject, paramkey: Object, paramcachedShape: Shape, paramkeyCache: DynamicObjectLibraryImpl$KeyCacheNode): Property;
-    static getPropertyArray(paramobject: DynamicObject, paramcachedShape: Shape): (Object | null)[];
+    static getPropertyArray(paramobject: DynamicObject, paramcachedShape: Shape): Property[];
     static getShapeFlags(paramobject: DynamicObject, paramcachedShape: Shape): number;
     static isShared(paramobject: DynamicObject, paramcachedShape: Shape): boolean;
     static markShared(paramobject: DynamicObject, paramnode: Node, paramcachedShape: Shape, paramsetCache: DynamicObjectLibraryImpl$MakeSharedNode): void;

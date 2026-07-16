@@ -8,7 +8,7 @@ export class CefDialogHandler$FileDialogMode extends Enum<CefDialogHandler$FileD
     static FILE_DIALOG_SAVE: CefDialogHandler$FileDialogMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CefDialogHandler$FileDialogMode;
-    static values(): (Object | null)[];
+    static values(): CefDialogHandler$FileDialogMode[];
     private constructor()
     name(): "FILE_DIALOG_OPEN" | "FILE_DIALOG_OPEN_MULTIPLE" | "FILE_DIALOG_OPEN_FOLDER" | "FILE_DIALOG_SAVE";
 }

@@ -10,12 +10,11 @@ import type { ExpressionParser$NameWithDimsContext } from '../../../../../../com
 import type { ExpressionParser$NonEmptyArgumentsContext } from '../../../../../../com/llamalad7/mixinextras/lib/grammar/expressions/ExpressionParser$NonEmptyArgumentsContext.d.ts'
 import type { ExpressionParser$RootContext } from '../../../../../../com/llamalad7/mixinextras/lib/grammar/expressions/ExpressionParser$RootContext.d.ts'
 import type { ExpressionParser$StatementContext } from '../../../../../../com/llamalad7/mixinextras/lib/grammar/expressions/ExpressionParser$StatementContext.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ExpressionParser extends Parser {
     static VOCABULARY: Vocabulary;
     static _ATN: ATN;
-    static ruleNames: (Object | null)[];
-    static tokenNames: (Object | null)[];
+    static ruleNames: string[];
+    static tokenNames: string[];
     constructor(arg0: TokenStream)
     arguments(): ExpressionParser$ArgumentsContext;
     // private expression(arg0: number): ExpressionParser$ExpressionContext;

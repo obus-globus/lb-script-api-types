@@ -15,7 +15,7 @@ export class ModuleCustomAmbience$WeatherType extends Enum<ModuleCustomAmbience$
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleCustomAmbience$WeatherType;
-    static values(): (Object | null)[];
+    static values(): ModuleCustomAmbience$WeatherType[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "NO_CHANGE" | "SUNNY" | "RAINY" | "SNOWY" | "THUNDER";

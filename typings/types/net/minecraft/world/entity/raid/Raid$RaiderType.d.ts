@@ -11,7 +11,7 @@ export class Raid$RaiderType extends Enum<Raid$RaiderType> {
     static WITCH: Raid$RaiderType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Raid$RaiderType;
-    static values(): (Object | null)[];
+    static values(): Raid$RaiderType[];
     private constructor(entityType: EntityType<Raider>, spawnsPerWaveBeforeBonus: number[])
     // private entityType: EntityType<Raider>;
     // private spawnsPerWaveBeforeBonus: number[];

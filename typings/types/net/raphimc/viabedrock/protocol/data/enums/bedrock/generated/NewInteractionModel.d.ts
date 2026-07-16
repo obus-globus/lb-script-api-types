@@ -11,7 +11,7 @@ export class NewInteractionModel extends Enum<NewInteractionModel> {
     static getByValue(paramarg0: number, paramarg1: NewInteractionModel): NewInteractionModel;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): NewInteractionModel;
-    static values(): (Object | null)[];
+    static values(): NewInteractionModel[];
     private constructor(arg2: number)
     private constructor(arg2: NewInteractionModel)
     readonly value: number;

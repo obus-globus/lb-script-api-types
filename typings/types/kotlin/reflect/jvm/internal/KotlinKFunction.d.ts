@@ -28,6 +28,7 @@ export abstract class KotlinKFunction extends KotlinKCallable<Object> implements
     readonly container: KDeclarationContainerImpl;
     // private /*not mapped: */ getContextParameters(): KmValueParameter[];
     // private /*not mapped: */ getExtensionReceiverType(): KmType | null;
+    /*not mapped: */ isPrimaryConstructor(): boolean;
     // private /*not mapped: */ getJvmSignature(): JvmMethodSignature;
     readonly overridden: ReflectKFunction[];
     readonly parameters: KParameter[];

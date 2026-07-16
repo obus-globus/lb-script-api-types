@@ -5,7 +5,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ReadElementNodeFactory$JSObjectReadElementTypeCacheNodeGen extends ReadElementNode$JSObjectReadElementTypeCacheNode {
     static create(): ReadElementNode$JSObjectReadElementTypeCacheNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private arrayDispatch_field1_: Node;
     // private state_0_: number;

@@ -26,7 +26,7 @@ export class Month extends Enum<Month> implements TemporalAccessor, TemporalAdju
     static of(paramarg0: number): Month;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Month;
-    static values(): (Object | null)[];
+    static values(): Month[];
     private constructor()
     adjustInto(arg0: Temporal): Temporal;
     firstDayOfYear(arg0: boolean): number;

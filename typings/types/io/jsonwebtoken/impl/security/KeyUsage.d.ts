@@ -2,7 +2,7 @@ import type { X509Certificate } from '../../../../java/security/cert/X509Certifi
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class KeyUsage extends Object {
     constructor(arg0: X509Certificate)
-    // private is: (Object | null)[];
+    // private is: boolean[];
     isCRLSign(): boolean;
     isDataEncipherment(): boolean;
     isDecipherOnly(): boolean;

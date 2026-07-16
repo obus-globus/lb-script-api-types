@@ -7,7 +7,7 @@ export abstract class AbstractNetwork<N extends unknown, E extends unknown> exte
     constructor()
     adjacentEdges(edge: E): E[];
     asGraph(): Graph<N>;
-    // private connectedPredicate(nodePresent: N, nodeToCheck: N): (param0: Object) => boolean;
+    // private connectedPredicate(nodePresent: N, nodeToCheck: N): (param0: E) => boolean;
     degree(node: N): number;
     edgeConnecting(nodeU: N, nodeV: N): Optional<E>;
     edgeConnecting(endpoints: N[]): Optional<E>;

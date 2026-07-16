@@ -8,7 +8,7 @@ export class ClosedCaptionDirection extends Enum<ClosedCaptionDirection> {
     static getEntries(): ClosedCaptionDirection[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClosedCaptionDirection;
-    static values(): (Object | null)[];
+    static values(): ClosedCaptionDirection[];
     private constructor()
     name(): "NONE" | "LEFT" | "RIGHT";
 }

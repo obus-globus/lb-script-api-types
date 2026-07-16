@@ -13,7 +13,7 @@ export class MetricCategory extends Enum<MetricCategory> {
     static TICK_LOOP: MetricCategory;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): MetricCategory;
-    static values(): (Object | null)[];
+    static values(): MetricCategory[];
     private constructor(description: string)
     readonly description: string;
     getDescription(): string;

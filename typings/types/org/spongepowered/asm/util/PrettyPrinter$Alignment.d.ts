@@ -6,7 +6,7 @@ export class PrettyPrinter$Alignment extends Enum<PrettyPrinter$Alignment> {
     static RIGHT: PrettyPrinter$Alignment;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PrettyPrinter$Alignment;
-    static values(): (Object | null)[];
+    static values(): PrettyPrinter$Alignment[];
     private constructor()
     name(): "LEFT" | "RIGHT";
 }

@@ -9,7 +9,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ArrayPrototypeBuiltinsFactory$DeleteAndSetLengthNodeGen extends ArrayPrototypeBuiltins$DeleteAndSetLengthNode {
     static create(paramcontext: JSContext): ArrayPrototypeBuiltins$DeleteAndSetLengthNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private deletePropertyNode: DeletePropertyNode;
     // private foreignArray_arrays_: InteropLibrary;

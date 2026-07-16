@@ -15,6 +15,6 @@ export class MessageDigestAlgorithms extends Object {
     static SHA_512: string;
     static SHA_512_224: string;
     static SHA_512_256: string;
-    static values(): (Object | null)[];
+    static values(): string[];
     private constructor()
 }

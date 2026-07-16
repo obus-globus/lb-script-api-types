@@ -10,9 +10,9 @@ export class GsonTypes extends Object {
     static equals(paramarg0: Type, paramarg1: Type): boolean;
     static getArrayComponentType(paramarg0: Type): Type;
     static getCollectionElementType(paramarg0: Type, paramarg1: Class<Object>): Type;
-    static getMapKeyAndValueTypes(paramarg0: Type, paramarg1: Class<Object>): (Object | null)[];
+    static getMapKeyAndValueTypes(paramarg0: Type, paramarg1: Class<Object>): Type[];
     static getRawType(paramarg0: Type): Class<Object>;
-    static newParameterizedTypeWithOwner(paramarg0: Type, paramarg1: Class<Object>, ...paramarg2: (Object | null)[]): ParameterizedType;
+    static newParameterizedTypeWithOwner(paramarg0: Type, paramarg1: Class<Object>, ...paramarg2: Type[]): ParameterizedType;
     static requiresOwnerType(paramarg0: Type): boolean;
     static resolve(paramarg0: Type, paramarg1: Class<Object>, paramarg2: Type): Type;
     static subtypeOf(paramarg0: Type): WildcardType;

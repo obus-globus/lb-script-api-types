@@ -29,7 +29,6 @@ export class TextExtensionsKt extends Object {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt:55}
      */
     static asText(paramarg0: Component[]): Component;
-    static asText(paramarg0: (Object | null)[]): Component;
     static asText(paramarg0: string): MutableComponent;
     static asTextContent(string: string): ComponentContents;
     static buildText(builderAction: (param0: Object) => void): Component;
@@ -78,7 +77,7 @@ export class TextExtensionsKt extends Object {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt#L306 | src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt:306}
      */
     static textLoadingBar(percent: number, progress: ColoredChar, remaining: ColoredChar, length: number): Component;
-    static textOf(...parts: (Object | null)[]): Component;
+    static textOf(...parts: Component[]): Component;
     static toLowerCamelCase(string: string): string;
     static toText(formattedCharSequence: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean): Component;
     static toTranslatedString(translatableContents: TranslatableContents): string;

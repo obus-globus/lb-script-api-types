@@ -8,6 +8,7 @@ import type { Clicker$Companion } from '../../../../../net/ccbluex/liquidbounce/
 import type { ItemCooldown } from '../../../../../net/ccbluex/liquidbounce/utils/clicking/ItemCooldown.d.ts'
 import type { RollingClickArray } from '../../../../../net/ccbluex/liquidbounce/utils/clicking/RollingClickArray.d.ts'
 import type { KeyMapping } from '../../../../../net/minecraft/client/KeyMapping.d.ts'
+import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 /**
  * An attack scheduler
  *
@@ -32,6 +33,7 @@ export class Clicker<T extends EventListener> extends ValueGroup implements Even
     // private clickArray: RollingClickArray;
     // private cps: { start: number; endInclusive: number; step: number };
     // private /*not mapped: */ getCps(): { start: number; endInclusive: number; step: number };
+    readonly debugDisplayName: Component;
     // private gameHandler: EventHook<GameTickEvent>;
     /*not mapped: */ isClickTick(): boolean;
     readonly itemCooldown: ItemCooldown | null;
@@ -39,6 +41,7 @@ export class Clicker<T extends EventListener> extends ValueGroup implements Even
     // private /*not mapped: */ getPassesAttackCooldown(): boolean;
     // private pattern: Clicker$ClickPatterns;
     // private /*not mapped: */ getPattern(): Clicker$ClickPatterns;
+    readonly running: boolean;
     readonly ticksSinceLastClick: number;
     readonly ticksUntilClick: number;
     /**

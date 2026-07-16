@@ -10,7 +10,7 @@ export class InterpolationQualifier$InterpolationType extends Enum<Interpolation
     static fromToken(paramarg0: Token): InterpolationQualifier$InterpolationType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): InterpolationQualifier$InterpolationType;
-    static values(): (Object | null)[];
+    static values(): InterpolationQualifier$InterpolationType[];
     private constructor(arg2: number)
     readonly tokenType: number;
     getTokenType(): number;

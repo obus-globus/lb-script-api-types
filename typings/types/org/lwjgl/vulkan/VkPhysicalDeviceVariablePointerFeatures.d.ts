@@ -22,28 +22,21 @@ export class VkPhysicalDeviceVariablePointerFeatures extends VkPhysicalDeviceVar
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceVariablePointersFeatures;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceVariablePointersFeatures;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceVariablePointerFeatures;
     static create(paramarg0: number): VkPhysicalDeviceVariablePointerFeatures;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceVariablePointersFeatures;
     static create(paramarg0: number): VkPhysicalDeviceVariablePointersFeatures;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceVariablePointerFeatures;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceVariablePointersFeatures;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceVariablePointerFeatures;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceVariablePointerFeatures;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceVariablePointersFeatures;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceVariablePointersFeatures;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
@@ -52,7 +45,6 @@ export class VkPhysicalDeviceVariablePointerFeatures extends VkPhysicalDeviceVar
     static nvariablePointers(paramarg0: number, paramarg1: number): void;
     static nvariablePointersStorageBuffer(paramarg0: number): number;
     static nvariablePointersStorageBuffer(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

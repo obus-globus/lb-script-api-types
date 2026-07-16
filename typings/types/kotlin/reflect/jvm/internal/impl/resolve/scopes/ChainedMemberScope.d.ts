@@ -9,10 +9,8 @@ import type { Name } from '../../../../../../../kotlin/reflect/jvm/internal/impl
 import type { ChainedMemberScope$Companion } from '../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/ChainedMemberScope$Companion.d.ts'
 import type { DescriptorKindFilter } from '../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/DescriptorKindFilter.d.ts'
 import type { MemberScope } from '../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope.d.ts'
-import type { MemberScope$Companion } from '../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope$Companion.d.ts'
 export class ChainedMemberScope extends Object implements MemberScope {
     static Companion: ChainedMemberScope$Companion;
-    static Companion: MemberScope$Companion;
     constructor(arg0: string, arg1: MemberScope[], arg2: DefaultConstructorMarker)
     // private debugName: string;
     // private scopes: MemberScope[];

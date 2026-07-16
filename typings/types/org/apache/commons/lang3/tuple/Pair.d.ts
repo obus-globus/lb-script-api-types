@@ -7,13 +7,13 @@ import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 import type { FailableBiConsumer } from '../../../../../org/apache/commons/lang3/function/FailableBiConsumer.d.ts'
 import type { FailableBiFunction } from '../../../../../org/apache/commons/lang3/function/FailableBiFunction.d.ts'
 export abstract class Pair<L extends unknown, R extends unknown> extends Object implements Serializable, Comparable<Pair<L, R>>, Map$Entry<L, R> {
-    static EMPTY_ARRAY: Object | null;
-    static comparingByKey(): (param0: Object) => boolean;
-    static comparingByKey(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
-    static comparingByValue(): (param0: Object) => boolean;
-    static comparingByValue(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
+    static EMPTY_ARRAY: Pair<Object, Object>[];
+    static comparingByKey(): (param0: Map$Entry<Object, Object>, param1: Map$Entry<Object, Object>) => number;
+    static comparingByKey(paramarg0: (param0: Object, param1: Object) => number): (param0: Map$Entry<Object, Object>, param1: Map$Entry<Object, Object>) => number;
+    static comparingByValue(): (param0: Map$Entry<Object, Object>, param1: Map$Entry<Object, Object>) => number;
+    static comparingByValue(paramarg0: (param0: Object, param1: Object) => number): (param0: Map$Entry<Object, Object>, param1: Map$Entry<Object, Object>) => number;
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
-    static emptyArray(): Object | null;
+    static emptyArray(): Pair<Object, Object>[];
     static of(paramarg0: Object | null, paramarg1: Object | null): Pair<Object, Object>;
     static of(paramarg0: Map$Entry<Object, Object>): Pair<Object, Object>;
     static ofNonNull(paramarg0: Object | null, paramarg1: Object | null): Pair<Object, Object>;

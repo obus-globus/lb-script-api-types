@@ -8,7 +8,7 @@ export class ModMenuConfig$ModCountLocation extends Enum<ModMenuConfig$ModCountL
     static TITLE_SCREEN_AND_MODS_BUTTON: ModMenuConfig$ModCountLocation;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModMenuConfig$ModCountLocation;
-    static values(): (Object | null)[];
+    static values(): ModMenuConfig$ModCountLocation[];
     private constructor(arg2: boolean, arg3: boolean)
     // private modsButton: boolean;
     // private titleScreen: boolean;

@@ -7,7 +7,7 @@ export class TypeComponentPosition extends Enum<TypeComponentPosition> {
     static INFLEXIBLE: TypeComponentPosition;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TypeComponentPosition;
-    static values(): (Object | null)[];
+    static values(): TypeComponentPosition[];
     private constructor()
     name(): "FLEXIBLE_LOWER" | "FLEXIBLE_UPPER" | "INFLEXIBLE";
 }

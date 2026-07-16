@@ -39,7 +39,6 @@ export class StdVideoDecodeH265PictureInfoFlags extends Struct<StdVideoDecodeH26
     static nshort_term_ref_pic_set_sps_flag(paramarg0: number): number;
     static nshort_term_ref_pic_set_sps_flag(paramarg0: number, paramarg1: number): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     IdrPicFlag(): boolean;

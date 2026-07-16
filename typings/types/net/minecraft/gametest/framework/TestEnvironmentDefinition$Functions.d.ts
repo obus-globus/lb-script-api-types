@@ -3,14 +3,12 @@ import type { MapCodec } from '../../../../com/mojang/serialization/MapCodec.d.t
 import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
 import type { TestEnvironmentDefinition } from '../../../../net/minecraft/gametest/framework/TestEnvironmentDefinition.d.ts'
 import type { TestEnvironmentDefinition$Activation } from '../../../../net/minecraft/gametest/framework/TestEnvironmentDefinition$Activation.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
 import type { ServerLevel } from '../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { Unit } from '../../../../net/minecraft/util/Unit.d.ts'
 export class TestEnvironmentDefinition$Functions extends Record implements TestEnvironmentDefinition<Unit> {
-    static CODEC: Codec<Holder<TestEnvironmentDefinition<Object>>>;
     static CODEC: MapCodec<TestEnvironmentDefinition$Functions>;
     static DIRECT_CODEC: Codec<TestEnvironmentDefinition<Object>>;
     static activate(paramenvironment: TestEnvironmentDefinition<Object>, paramlevel: ServerLevel): TestEnvironmentDefinition$Activation<Object>;

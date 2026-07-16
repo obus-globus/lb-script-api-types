@@ -14,7 +14,7 @@ export class CryptoPrimitive extends Enum<CryptoPrimitive> {
     static STREAM_CIPHER: CryptoPrimitive;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CryptoPrimitive;
-    static values(): (Object | null)[];
+    static values(): CryptoPrimitive[];
     private constructor()
     name(): "MESSAGE_DIGEST" | "SECURE_RANDOM" | "BLOCK_CIPHER" | "STREAM_CIPHER" | "MAC" | "KEY_WRAP" | "PUBLIC_KEY_ENCRYPTION" | "SIGNATURE" | "KEY_ENCAPSULATION" | "KEY_AGREEMENT";
 }

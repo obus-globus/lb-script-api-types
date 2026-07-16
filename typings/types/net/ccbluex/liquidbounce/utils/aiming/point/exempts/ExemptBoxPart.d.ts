@@ -16,7 +16,7 @@ export class ExemptBoxPart extends Enum<ExemptBoxPart> implements Tagged, Exempt
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ExemptBoxPart;
-    static values(): (Object | null)[];
+    static values(): ExemptBoxPart[];
     private constructor(tag: string)
     readonly tag: string;
     /**

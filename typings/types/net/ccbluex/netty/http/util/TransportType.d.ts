@@ -11,7 +11,7 @@ export class TransportType extends Enum<TransportType> {
     static getEntries(): TransportType[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TransportType;
-    static values(): (Object | null)[];
+    static values(): TransportType[];
     private constructor(serverChannelFactory: ChannelFactory<ServerChannel>)
     readonly ioHandlerFactory: IoHandlerFactory;
     /*not mapped: */ isAvailable(): boolean;

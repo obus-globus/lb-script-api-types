@@ -6,8 +6,8 @@ export class UnsignedBytes$ArraysCompareUnsignedComparatorMaker extends Enum<Uns
     static INSTANCE: UnsignedBytes$ArraysCompareUnsignedComparatorMaker;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): UnsignedBytes$ArraysCompareUnsignedComparatorMaker;
-    static values(): (Object | null)[];
+    static values(): UnsignedBytes$ArraysCompareUnsignedComparatorMaker[];
     constructor(arg2: any)
-    tryMakeArraysCompareUnsignedComparator(): (param0: Object) => boolean;
+    tryMakeArraysCompareUnsignedComparator(): (param0: number[], param1: number[]) => number;
     name(): "INSTANCE";
 }

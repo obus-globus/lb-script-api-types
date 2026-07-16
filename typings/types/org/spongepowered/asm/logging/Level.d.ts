@@ -10,7 +10,7 @@ export class Level extends Enum<Level> {
     static WARN: Level;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Level;
-    static values(): (Object | null)[];
+    static values(): Level[];
     private constructor()
     name(): "FATAL" | "ERROR" | "WARN" | "INFO" | "DEBUG" | "TRACE";
 }

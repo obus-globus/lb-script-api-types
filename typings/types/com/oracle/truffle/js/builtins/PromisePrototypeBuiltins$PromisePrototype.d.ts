@@ -13,7 +13,7 @@ export class PromisePrototypeBuiltins$PromisePrototype extends Enum<PromiseProto
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PromisePrototypeBuiltins$PromisePrototype;
-    static values(): (Object | null)[];
+    static values(): PromisePrototypeBuiltins$PromisePrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

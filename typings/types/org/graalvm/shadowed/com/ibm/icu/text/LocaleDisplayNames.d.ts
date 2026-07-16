@@ -8,16 +8,16 @@ import type { LocaleDisplayNames$UiListItem } from '../../../../../../../org/gra
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
 export abstract class LocaleDisplayNames extends Object {
     static getInstance(paramlocale: Locale): LocaleDisplayNames;
-    static getInstance(paramlocale: Locale, ...paramcontexts: (Object | null)[]): LocaleDisplayNames;
+    static getInstance(paramlocale: Locale, ...paramcontexts: DisplayContext[]): LocaleDisplayNames;
     static getInstance(paramlocale: ULocale): LocaleDisplayNames;
-    static getInstance(paramlocale: ULocale, ...paramcontexts: (Object | null)[]): LocaleDisplayNames;
+    static getInstance(paramlocale: ULocale, ...paramcontexts: DisplayContext[]): LocaleDisplayNames;
     static getInstance(paramlocale: ULocale, paramdialectHandling: LocaleDisplayNames$DialectHandling): LocaleDisplayNames;
     constructor()
     getContext(type: DisplayContext$Type): DisplayContext;
     getDialectHandling(): LocaleDisplayNames$DialectHandling;
     getLocale(): ULocale;
-    getUiList(localeSet: ULocale[], inSelf: boolean, collator: (param0: Object) => boolean): LocaleDisplayNames$UiListItem[];
-    getUiListCompareWholeItems(localeSet: ULocale[], comparator: (param0: Object) => boolean): LocaleDisplayNames$UiListItem[];
+    getUiList(localeSet: ULocale[], inSelf: boolean, collator: (param0: Object, param1: Object) => number): LocaleDisplayNames$UiListItem[];
+    getUiListCompareWholeItems(localeSet: ULocale[], comparator: (param0: LocaleDisplayNames$UiListItem, param1: LocaleDisplayNames$UiListItem) => number): LocaleDisplayNames$UiListItem[];
     keyDisplayName(key: string): string;
     keyValueDisplayName(key: string, value: string): string;
     languageDisplayName(lang: string): string;

@@ -9,7 +9,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class WriteElementNode$HolesIntArrayWriteElementCacheNode extends WriteElementNode$RecursiveCachedArrayWriteElementCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     // private containsHoles(target: JSDynamicObject, holesIntArray: HolesIntArray, index: number, hasExplicitHolesIf: InlinedConditionProfile): boolean;
     doHolesIntArray(target: JSDynamicObject, holesIntArray: HolesIntArray, index: number, value: Object, root: WriteElementNode, intValueBranch: InlinedBranchProfile, doubleValueBranch: InlinedBranchProfile, objectValueBranch: InlinedBranchProfile, inBoundsFastIf: InlinedConditionProfile, inBoundsIf: InlinedConditionProfile, containsHolesIf: InlinedConditionProfile, inBoundsFastHoleIf: InlinedConditionProfile, supportedContainsHolesIf: InlinedConditionProfile, supportedNotContainsHolesIf: InlinedConditionProfile, hasExplicitHolesIf: InlinedConditionProfile, needPrototypeBranch: InlinedBranchProfile, setSupportedProfile: AbstractWritableArray$SetSupportedProfileAccess): boolean;

@@ -6,7 +6,7 @@ export class StringWidget$TextOverflow extends Enum<StringWidget$TextOverflow> {
     static SCROLLING: StringWidget$TextOverflow;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): StringWidget$TextOverflow;
-    static values(): (Object | null)[];
+    static values(): StringWidget$TextOverflow[];
     private constructor()
     name(): "CLAMPED" | "SCROLLING";
 }

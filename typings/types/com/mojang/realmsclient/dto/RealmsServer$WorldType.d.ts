@@ -11,7 +11,7 @@ export class RealmsServer$WorldType extends Enum<RealmsServer$WorldType> {
     static UNKNOWN: RealmsServer$WorldType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RealmsServer$WorldType;
-    static values(): (Object | null)[];
+    static values(): RealmsServer$WorldType[];
     private constructor(translationKey: string)
     readonly displayName: Component;
     getDisplayName(): Component;

@@ -7,7 +7,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../java/lang/CharSequence.d.ts'
 export abstract class JavaScriptBaseNode extends Node {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     copy(): JavaScriptBaseNode;
     getJSContext(): JSContext;

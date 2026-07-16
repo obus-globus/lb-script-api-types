@@ -13,7 +13,7 @@ export class TutorialToast$Icons extends Enum<TutorialToast$Icons> {
     static WOODEN_PLANKS: TutorialToast$Icons;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TutorialToast$Icons;
-    static values(): (Object | null)[];
+    static values(): TutorialToast$Icons[];
     private constructor(sprite: Identifier)
     // private sprite: Identifier;
     extractRenderState(graphics: GuiGraphicsExtractor, x: number, y: number): void;

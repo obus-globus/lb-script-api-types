@@ -8,7 +8,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ToTemporalTimeZoneIdentifierNode extends JavaScriptBaseNode {
     static getUncached(): ToTemporalTimeZoneIdentifierNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(temporalTimeZoneLike: Object): TruffleString;
     toTemporalTimeZoneIdentifier(temporalTimeZoneLike: Object, isObjectNode: IsObjectNode, errorBranch: InlinedBranchProfile, isObjectProfile: InlinedConditionProfile, isTimeZoneProfile: InlinedConditionProfile): TruffleString;

@@ -17,7 +17,7 @@ export class Fields extends Object {
     static getByte(paramarg0: Object, paramarg1: Field): number;
     static getChar(paramarg0: Object, paramarg1: Field): string;
     static getDeclaredField(paramarg0: Class<Object>, paramarg1: string): Field;
-    static getDeclaredFields(paramarg0: Class<Object>): (Object | null)[];
+    static getDeclaredFields(paramarg0: Class<Object>): Field[];
     static getDouble(paramarg0: Object, paramarg1: Field): number;
     static getFloat(paramarg0: Object, paramarg1: Field): number;
     static getInt(paramarg0: Object, paramarg1: Field): number;

@@ -11,7 +11,7 @@ export class MapPostProcessing extends Enum<MapPostProcessing> {
     static STREAM_CODEC: StreamCodec<ByteBuf, MapPostProcessing>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): MapPostProcessing;
-    static values(): (Object | null)[];
+    static values(): MapPostProcessing[];
     private constructor(id: number)
     // private id: number;
     id(): number;

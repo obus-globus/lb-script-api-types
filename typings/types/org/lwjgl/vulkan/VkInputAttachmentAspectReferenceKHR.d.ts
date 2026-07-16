@@ -21,35 +21,27 @@ export class VkInputAttachmentAspectReferenceKHR extends VkInputAttachmentAspect
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkInputAttachmentAspectReferenceKHR;
     static calloc(paramarg0: MemoryStack): VkInputAttachmentAspectReferenceKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkInputAttachmentAspectReference;
     static create(paramarg0: number): VkInputAttachmentAspectReference;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkInputAttachmentAspectReferenceKHR;
     static create(paramarg0: number): VkInputAttachmentAspectReferenceKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkInputAttachmentAspectReference;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkInputAttachmentAspectReferenceKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkInputAttachmentAspectReference;
     static malloc(paramarg0: MemoryStack): VkInputAttachmentAspectReference;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkInputAttachmentAspectReferenceKHR;
     static malloc(paramarg0: MemoryStack): VkInputAttachmentAspectReferenceKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static naspectMask(paramarg0: number): number;
     static naspectMask(paramarg0: number, paramarg1: number): void;
     static ninputAttachmentIndex(paramarg0: number): number;
     static ninputAttachmentIndex(paramarg0: number, paramarg1: number): void;
     static nsubpass(paramarg0: number): number;
     static nsubpass(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

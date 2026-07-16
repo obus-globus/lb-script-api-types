@@ -7,7 +7,7 @@ export class Dialog$AfterAction extends Enum<Dialog$AfterAction> {
     static WAIT_FOR_RESPONSE: Dialog$AfterAction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Dialog$AfterAction;
-    static values(): (Object | null)[];
+    static values(): Dialog$AfterAction[];
     private constructor()
     name(): "CLOSE" | "NONE" | "WAIT_FOR_RESPONSE";
 }

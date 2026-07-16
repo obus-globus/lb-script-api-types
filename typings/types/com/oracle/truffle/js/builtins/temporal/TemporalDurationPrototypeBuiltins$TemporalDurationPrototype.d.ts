@@ -33,7 +33,7 @@ export class TemporalDurationPrototypeBuiltins$TemporalDurationPrototype extends
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TemporalDurationPrototypeBuiltins$TemporalDurationPrototype;
-    static values(): (Object | null)[];
+    static values(): TemporalDurationPrototypeBuiltins$TemporalDurationPrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

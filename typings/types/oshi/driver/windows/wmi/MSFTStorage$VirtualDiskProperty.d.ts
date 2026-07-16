@@ -6,7 +6,7 @@ export class MSFTStorage$VirtualDiskProperty extends Enum<MSFTStorage$VirtualDis
     static OBJECTID: MSFTStorage$VirtualDiskProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MSFTStorage$VirtualDiskProperty;
-    static values(): (Object | null)[];
+    static values(): MSFTStorage$VirtualDiskProperty[];
     private constructor()
     name(): "FRIENDLYNAME" | "OBJECTID";
 }

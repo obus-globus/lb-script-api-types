@@ -7,8 +7,8 @@ import type { AbstractDoubleArray } from '../../../../../../../com/oracle/truffl
 import type { JSDynamicObject } from '../../../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export abstract class AbstractContiguousDoubleArray extends AbstractDoubleArray {
-    static EMPTY_OBJECT_ARRAY: (Object | null)[];
-    static createConstantArray(paramelements: (Object | null)[]): AbstractConstantArray;
+    static EMPTY_OBJECT_ARRAY: Object[];
+    static createConstantArray(paramelements: Object[]): AbstractConstantArray;
     static createConstantEmptyArray(): AbstractConstantArray;
     static isSupportedZeroBased(paramobject: JSDynamicObject, paramindex: number): boolean;
     static makeRangeList(paramrangeStart: number, paramrangeEnd: number): Object[];

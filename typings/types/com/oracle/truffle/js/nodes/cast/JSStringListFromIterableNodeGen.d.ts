@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSStringListFromIterableNodeGen extends JSStringListFromIterableNode {
     static create(paramcontext: JSContext): JSStringListFromIterableNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private state_0_: number;
     // private toArray_cache: JSStringListFromIterableNodeGen$ToArrayData;

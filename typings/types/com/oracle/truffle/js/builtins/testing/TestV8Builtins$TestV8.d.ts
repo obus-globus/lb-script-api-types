@@ -36,7 +36,7 @@ export class TestV8Builtins$TestV8 extends Enum<TestV8Builtins$TestV8> implement
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TestV8Builtins$TestV8;
-    static values(): (Object | null)[];
+    static values(): TestV8Builtins$TestV8[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

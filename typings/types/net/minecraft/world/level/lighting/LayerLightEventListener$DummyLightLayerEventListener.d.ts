@@ -10,7 +10,7 @@ export class LayerLightEventListener$DummyLightLayerEventListener extends Enum<L
     static INSTANCE: LayerLightEventListener$DummyLightLayerEventListener;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): LayerLightEventListener$DummyLightLayerEventListener;
-    static values(): (Object | null)[];
+    static values(): LayerLightEventListener$DummyLightLayerEventListener[];
     private constructor()
     checkBlock(pos: BlockPos): void;
     getDataLayerData(pos: SectionPos): DataLayer;

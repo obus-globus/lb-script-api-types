@@ -2,7 +2,7 @@ import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nod
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class BuiltinArgumentBuilder extends Object {
-    static EMPTY_NODE_ARRAY: (Object | null)[];
+    static EMPTY_NODE_ARRAY: JavaScriptNode[];
     static builder(): BuiltinArgumentBuilder;
     constructor()
     // private fixedArgumentCount: number;

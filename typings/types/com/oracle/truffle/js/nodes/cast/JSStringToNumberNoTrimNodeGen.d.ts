@@ -7,7 +7,6 @@ export class JSStringToNumberNoTrimNodeGen extends JSStringToNumberNoTrimNode {
     static create(): JSStringToNumberNoTrimNode;
     static getUncached(): JSStringToNumberNoTrimNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private infinity_regionEqualsNode_: TruffleString$RegionEqualByteIndexNode;
     // private readChar: TruffleString$ReadCharUTF16Node;

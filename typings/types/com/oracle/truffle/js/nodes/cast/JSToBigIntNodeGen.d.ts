@@ -7,7 +7,6 @@ export class JSToBigIntNodeGen extends JSToBigIntNode {
     static create(): JSToBigIntNode;
     static getUncached(): JSToBigIntNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private other_toPrimitiveNode_: JSToPrimitiveNode;
     // private state_0_: number;

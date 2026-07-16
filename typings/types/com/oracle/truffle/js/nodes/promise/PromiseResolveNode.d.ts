@@ -10,7 +10,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PromiseResolveNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): PromiseResolveNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private callResolve: JSFunctionCallNode;
     // private getConstructor: PropertyGetNode;

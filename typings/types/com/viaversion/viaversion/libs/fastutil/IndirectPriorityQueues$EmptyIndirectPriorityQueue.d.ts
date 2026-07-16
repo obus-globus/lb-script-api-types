@@ -7,7 +7,7 @@ export class IndirectPriorityQueues$EmptyIndirectPriorityQueue extends Object im
     changed(): void;
     changed(arg0: number): void;
     clear(): void;
-    comparator(): (param0: Object) => boolean;
+    comparator(): (param0: Object | null, param1: Object | null) => number;
     contains(arg0: number): boolean;
     dequeue(): number;
     enqueue(arg0: number): void;

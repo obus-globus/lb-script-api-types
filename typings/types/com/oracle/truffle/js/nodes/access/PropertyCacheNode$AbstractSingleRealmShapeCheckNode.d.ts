@@ -5,7 +5,6 @@ import type { PropertyCacheNode$AbstractShapeCheckNode } from '../../../../../..
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
 export abstract class PropertyCacheNode$AbstractSingleRealmShapeCheckNode extends PropertyCacheNode$AbstractShapeCheckNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(shape: Shape, assumptions: Assumption[], context: JSContext)
     // private assumptions: Assumption[];
     isValid(): boolean;

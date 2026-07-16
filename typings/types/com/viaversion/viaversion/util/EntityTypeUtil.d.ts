@@ -3,9 +3,9 @@ import type { Protocol } from '../../../../com/viaversion/viaversion/api/protoco
 import type { EntityTypeUtil$EntityIdSetter } from '../../../../com/viaversion/viaversion/util/EntityTypeUtil$EntityIdSetter.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class EntityTypeUtil extends Object {
-    static createSizedArray(paramarg0: (Object | null)[]): (Object | null)[];
-    static getTypeFromId(paramarg0: (Object | null)[], paramarg1: number, paramarg2: EntityType): EntityType;
-    static initialize(paramarg0: Object | null, paramarg1: (Object | null)[], paramarg2: Protocol<any, any, any, any>, paramarg3: (param0: EntityType | null, param1: number) => void): void;
-    static toOrderedArray(paramarg0: (Object | null)[]): (Object | null)[];
+    static createSizedArray(paramarg0: EntityType[]): EntityType[];
+    static getTypeFromId(paramarg0: EntityType[], paramarg1: number, paramarg2: EntityType): EntityType;
+    static initialize(paramarg0: (EntityType | null)[], paramarg1: EntityType[], paramarg2: Protocol<any, any, any, any>, paramarg3: (param0: EntityType | null, param1: number) => void): void;
+    static toOrderedArray(paramarg0: EntityType[]): EntityType[];
     constructor()
 }

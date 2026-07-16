@@ -84,13 +84,11 @@ export class ARBImaging extends Object {
     static glColorSubTable(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: ByteBuffer): void;
     static glColorSubTable(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number): void;
     static glColorTable(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number[]): void;
-    static glColorTable(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number[]): void;
     static glColorTable(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: ByteBuffer): void;
     static glColorTable(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: FloatBuffer): void;
     static glColorTable(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: IntBuffer): void;
     static glColorTable(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: ShortBuffer): void;
     static glColorTable(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number): void;
-    static glColorTable(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number[]): void;
     static glColorTableParameterfv(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
     static glColorTableParameterfv(paramarg0: number, paramarg1: number, paramarg2: FloatBuffer): void;
     static glColorTableParameteriv(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
@@ -110,13 +108,11 @@ export class ARBImaging extends Object {
     static glCopyConvolutionFilter1D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number): void;
     static glCopyConvolutionFilter2D(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number): void;
     static glGetColorTable(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number[]): void;
-    static glGetColorTable(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number[]): void;
     static glGetColorTable(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: ByteBuffer): void;
     static glGetColorTable(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: FloatBuffer): void;
     static glGetColorTable(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: IntBuffer): void;
     static glGetColorTable(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: ShortBuffer): void;
     static glGetColorTable(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): void;
-    static glGetColorTable(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number[]): void;
     static glGetColorTableParameterf(paramarg0: number, paramarg1: number): number;
     static glGetColorTableParameterfv(paramarg0: number, paramarg1: number, paramarg2: number[]): void;
     static glGetColorTableParameterfv(paramarg0: number, paramarg1: number, paramarg2: FloatBuffer): void;

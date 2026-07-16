@@ -6,7 +6,7 @@ export class HighLevelMonitorConfigurationAPI$MC_SIZE_TYPE extends Enum<HighLeve
     static MC_WIDTH: HighLevelMonitorConfigurationAPI$MC_SIZE_TYPE;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HighLevelMonitorConfigurationAPI$MC_SIZE_TYPE;
-    static values(): (Object | null)[];
+    static values(): HighLevelMonitorConfigurationAPI$MC_SIZE_TYPE[];
     private constructor()
     name(): "MC_WIDTH" | "MC_HEIGHT";
 }

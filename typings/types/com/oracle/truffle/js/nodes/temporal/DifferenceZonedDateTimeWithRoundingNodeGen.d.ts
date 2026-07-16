@@ -11,7 +11,6 @@ import type { TemporalUtil$Unit } from '../../../../../../com/oracle/truffle/js/
 export class DifferenceZonedDateTimeWithRoundingNodeGen extends DifferenceZonedDateTimeWithRoundingNode {
     static create(): DifferenceZonedDateTimeWithRoundingNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private differenceZonedDateTime_: DifferenceZonedDateTimeNode;
     // private roundRelativeDuration_: RoundRelativeDurationNode;

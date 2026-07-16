@@ -7,7 +7,7 @@ export class Socks5PasswordAuthRequestDecoder$State extends Enum<Socks5PasswordA
     static SUCCESS: Socks5PasswordAuthRequestDecoder$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Socks5PasswordAuthRequestDecoder$State;
-    static values(): (Object | null)[];
+    static values(): Socks5PasswordAuthRequestDecoder$State[];
     private constructor()
     name(): "INIT" | "SUCCESS" | "FAILURE";
 }

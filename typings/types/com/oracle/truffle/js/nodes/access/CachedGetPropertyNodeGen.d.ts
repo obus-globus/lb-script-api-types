@@ -12,7 +12,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class CachedGetPropertyNodeGen extends CachedGetPropertyNode {
     static create(paramcontext: JSContext): CachedGetPropertyNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private arrayIndex_cache: CachedGetPropertyNodeGen$ArrayIndexData;
     // private cachedKey_cache: CachedGetPropertyNodeGen$CachedKeyData;

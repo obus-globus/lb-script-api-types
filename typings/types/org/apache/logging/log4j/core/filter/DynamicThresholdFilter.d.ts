@@ -4,17 +4,19 @@ import type { Throwable } from '../../../../../../java/lang/Throwable.d.ts'
 import type { Level } from '../../../../../../org/apache/logging/log4j/Level.d.ts'
 import type { Marker } from '../../../../../../org/apache/logging/log4j/Marker.d.ts'
 import type { ContextDataInjector } from '../../../../../../org/apache/logging/log4j/core/ContextDataInjector.d.ts'
+import type { Filter } from '../../../../../../org/apache/logging/log4j/core/Filter.d.ts'
 import type { Filter$Result } from '../../../../../../org/apache/logging/log4j/core/Filter$Result.d.ts'
 import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
 import type { Logger } from '../../../../../../org/apache/logging/log4j/core/Logger.d.ts'
 import type { AbstractFilter } from '../../../../../../org/apache/logging/log4j/core/filter/AbstractFilter.d.ts'
+import type { KeyValuePair } from '../../../../../../org/apache/logging/log4j/core/util/KeyValuePair.d.ts'
 import type { Message } from '../../../../../../org/apache/logging/log4j/message/Message.d.ts'
 export class DynamicThresholdFilter extends AbstractFilter {
     static DEFAULT_STOP_TIMEOUT: number;
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
     static ELEMENT_TYPE: string;
-    static EMPTY_ARRAY: (Object | null)[];
-    static createFilter(paramkey: string, parampairs: (Object | null)[], paramdefaultThreshold: Level, paramonMatch: Filter$Result, paramonMismatch: Filter$Result): DynamicThresholdFilter;
+    static EMPTY_ARRAY: Filter[];
+    static createFilter(paramkey: string, parampairs: KeyValuePair[], paramdefaultThreshold: Level, paramonMatch: Filter$Result, paramonMismatch: Filter$Result): DynamicThresholdFilter;
     private constructor(key: string, pairs: { [key: string]: Level }, defaultLevel: Level, onMatch: Filter$Result, onMismatch: Filter$Result)
     // private defaultThreshold: Level;
     // private injector: ContextDataInjector;

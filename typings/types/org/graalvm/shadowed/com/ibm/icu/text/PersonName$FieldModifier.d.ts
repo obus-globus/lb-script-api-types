@@ -15,7 +15,7 @@ export class PersonName$FieldModifier extends Enum<PersonName$FieldModifier> {
     static forString(paramname: string): PersonName$FieldModifier;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PersonName$FieldModifier;
-    static values(): (Object | null)[];
+    static values(): PersonName$FieldModifier[];
     private constructor(name: string)
     // private name: string;
     toString(): string;

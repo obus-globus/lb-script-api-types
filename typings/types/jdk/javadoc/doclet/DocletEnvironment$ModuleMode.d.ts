@@ -6,7 +6,7 @@ export class DocletEnvironment$ModuleMode extends Enum<DocletEnvironment$ModuleM
     static API: DocletEnvironment$ModuleMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DocletEnvironment$ModuleMode;
-    static values(): (Object | null)[];
+    static values(): DocletEnvironment$ModuleMode[];
     private constructor()
     name(): "API" | "ALL";
 }

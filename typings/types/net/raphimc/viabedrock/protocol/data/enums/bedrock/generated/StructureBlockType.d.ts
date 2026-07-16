@@ -14,7 +14,7 @@ export class StructureBlockType extends Enum<StructureBlockType> {
     static getByValue(paramarg0: number, paramarg1: StructureBlockType): StructureBlockType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): StructureBlockType;
-    static values(): (Object | null)[];
+    static values(): StructureBlockType[];
     private constructor(arg2: number)
     private constructor(arg2: StructureBlockType)
     readonly value: number;

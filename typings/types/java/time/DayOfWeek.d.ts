@@ -21,7 +21,7 @@ export class DayOfWeek extends Enum<DayOfWeek> implements TemporalAccessor, Temp
     static of(paramarg0: number): DayOfWeek;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DayOfWeek;
-    static values(): (Object | null)[];
+    static values(): DayOfWeek[];
     private constructor()
     adjustInto(arg0: Temporal): Temporal;
     get(arg0: TemporalField): number;

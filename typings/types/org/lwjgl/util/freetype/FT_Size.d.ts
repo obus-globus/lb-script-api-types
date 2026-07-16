@@ -45,7 +45,6 @@ export class FT_Size extends Struct<FT_Size> implements NativeResource {
     static nmetrics(paramarg0: number): FT_Size_Metrics;
     static nmetrics(paramarg0: number, paramarg1: FT_Size_Metrics): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

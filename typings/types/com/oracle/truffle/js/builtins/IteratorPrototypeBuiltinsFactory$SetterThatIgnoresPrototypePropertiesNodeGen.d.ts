@@ -9,7 +9,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class IteratorPrototypeBuiltinsFactory$SetterThatIgnoresPrototypePropertiesNodeGen extends IteratorPrototypeBuiltins$SetterThatIgnoresPrototypePropertiesNode {
     static create(paramcontext: JSContext, parampropertyKey: Object): IteratorPrototypeBuiltins$SetterThatIgnoresPrototypePropertiesNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, propertyKey: Object)
     // private createConstructorPropertyNode_: CreateDataPropertyNode;
     // private hasOwnConstructorPropertyNode_: HasPropertyCacheNode;

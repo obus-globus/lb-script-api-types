@@ -8,7 +8,7 @@ export class TemporalUtil$ShowCalendar extends Enum<TemporalUtil$ShowCalendar> {
     static NEVER: TemporalUtil$ShowCalendar;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TemporalUtil$ShowCalendar;
-    static values(): (Object | null)[];
+    static values(): TemporalUtil$ShowCalendar[];
     private constructor()
     name(): "AUTO" | "ALWAYS" | "NEVER" | "CRITICAL";
 }

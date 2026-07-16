@@ -18,7 +18,7 @@ export class PlayStatus extends Enum<PlayStatus> {
     static getByValue(paramarg0: number, paramarg1: PlayStatus): PlayStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PlayStatus;
-    static values(): (Object | null)[];
+    static values(): PlayStatus[];
     private constructor(arg2: number)
     private constructor(arg2: PlayStatus)
     readonly value: number;

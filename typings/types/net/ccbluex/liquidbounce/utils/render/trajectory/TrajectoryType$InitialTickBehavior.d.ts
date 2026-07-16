@@ -7,7 +7,7 @@ export class TrajectoryType$InitialTickBehavior extends Enum<TrajectoryType$Init
     static getEntries(): TrajectoryType$InitialTickBehavior[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TrajectoryType$InitialTickBehavior;
-    static values(): (Object | null)[];
+    static values(): TrajectoryType$InitialTickBehavior[];
     private constructor()
     name(): "NONE" | "APPLY_VELOCITY_ONLY_BEFORE_FIRST_MOVE";
 }

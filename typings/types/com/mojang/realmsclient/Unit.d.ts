@@ -12,7 +12,7 @@ export class Unit extends Enum<Unit> {
     static humanReadable(parambytes: number, paramunit: Unit): string;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Unit;
-    static values(): (Object | null)[];
+    static values(): Unit[];
     private constructor()
     name(): "B" | "KB" | "MB" | "GB";
 }

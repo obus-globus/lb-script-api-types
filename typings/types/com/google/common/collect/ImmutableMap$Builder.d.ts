@@ -7,7 +7,7 @@ export class ImmutableMap$Builder<K extends unknown, V extends unknown> extends 
     // private entries: Map$Entry<K, V>[];
     // private entriesUsed: boolean;
     // private size: number;
-    // private valueComparator: (param0: Object) => boolean;
+    // private valueComparator: (param0: V, param1: V) => number;
     build(): Map<K, V>;
     // private build(throwIfDuplicateKeys: boolean): Map<K, V>;
     buildJdkBacked(): Map<K, V>;
@@ -15,7 +15,7 @@ export class ImmutableMap$Builder<K extends unknown, V extends unknown> extends 
     buildOrThrow(): Map<K, V>;
     combine(other: ImmutableMap$Builder<K, V>): ImmutableMap$Builder<K, V>;
     // private ensureCapacity(minCapacity: number): void;
-    orderEntriesByValue(valueComparator: (param0: Object) => boolean): ImmutableMap$Builder<K, V>;
+    orderEntriesByValue(valueComparator: (param0: V, param1: V) => number): ImmutableMap$Builder<K, V>;
     put(entry: Map$Entry<K, V>): ImmutableMap$Builder<K, V>;
     put(key: K, value: V): ImmutableMap$Builder<K, V>;
     putAll(map: Map<K, V>): ImmutableMap$Builder<K, V>;

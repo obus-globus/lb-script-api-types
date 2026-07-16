@@ -7,10 +7,10 @@ export class MapMessage$MapFormat extends Enum<MapMessage$MapFormat> {
     static JSON: MapMessage$MapFormat;
     static XML: MapMessage$MapFormat;
     static lookupIgnoreCase(paramformat: string): MapMessage$MapFormat;
-    static names(): (Object | null)[];
+    static names(): string[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): MapMessage$MapFormat;
-    static values(): (Object | null)[];
+    static values(): MapMessage$MapFormat[];
     private constructor()
     name(): "XML" | "JSON" | "JAVA" | "JAVA_UNQUOTED";
 }

@@ -7,7 +7,7 @@ export class ExternalOverridabilityCondition$Contract extends Enum<ExternalOverr
     static SUCCESS_ONLY: ExternalOverridabilityCondition$Contract;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ExternalOverridabilityCondition$Contract;
-    static values(): (Object | null)[];
+    static values(): ExternalOverridabilityCondition$Contract[];
     private constructor()
     name(): "CONFLICTS_ONLY" | "SUCCESS_ONLY" | "BOTH";
 }

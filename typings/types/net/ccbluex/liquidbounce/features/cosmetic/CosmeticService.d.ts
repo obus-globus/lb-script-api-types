@@ -9,6 +9,7 @@ import type { EventListener } from '../../../../../net/ccbluex/liquidbounce/even
 import type { DisconnectEvent } from '../../../../../net/ccbluex/liquidbounce/event/events/DisconnectEvent.d.ts'
 import type { SessionEvent } from '../../../../../net/ccbluex/liquidbounce/event/events/SessionEvent.d.ts'
 import type { Chronometer } from '../../../../../net/ccbluex/liquidbounce/utils/client/Chronometer.d.ts'
+import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Logger } from '../../../../../org/apache/logging/log4j/Logger.d.ts'
 /**
  * A more reliable, safer and stress reduced cosmetics service
@@ -29,9 +30,11 @@ export class CosmeticService extends ValueGroup implements EventListener {
     /*not mapped: */ getCarriers$net_ccbluex_liquidbounce(): string[];
     // private carriersCosmetics: Map<UUID, Cosmetic[]>;
     /*not mapped: */ getCarriersCosmetics$net_ccbluex_liquidbounce(): Map<UUID, Cosmetic[]>;
+    readonly debugDisplayName: Component;
     // private disconnectHandler: EventHook<DisconnectEvent>;
     // private lastUpdate: Chronometer;
     // private logger: Logger;
+    readonly running: boolean;
     // private sessionHandler: EventHook<SessionEvent>;
     // private task: Job | null;
     children(): EventListener[];

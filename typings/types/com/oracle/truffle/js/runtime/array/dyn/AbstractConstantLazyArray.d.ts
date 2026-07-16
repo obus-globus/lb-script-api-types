@@ -8,8 +8,8 @@ import type { AbstractWritableArray } from '../../../../../../../com/oracle/truf
 import type { JSDynamicObject } from '../../../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export abstract class AbstractConstantLazyArray extends AbstractConstantArray {
-    static EMPTY_OBJECT_ARRAY: (Object | null)[];
-    static createConstantArray(paramelements: (Object | null)[]): AbstractConstantArray;
+    static EMPTY_OBJECT_ARRAY: Object[];
+    static createConstantArray(paramelements: Object[]): AbstractConstantArray;
     static createConstantEmptyArray(): AbstractConstantArray;
     static makeRangeList(paramrangeStart: number, paramrangeEnd: number): Object[];
     static valueIsByte(paramvalue: number): boolean;

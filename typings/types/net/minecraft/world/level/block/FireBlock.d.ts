@@ -1,7 +1,6 @@
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { IntFunction } from '../../../../../java/util/function/IntFunction.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { FlammableBlockRegistry$Entry } from '../../../../../net/fabricmc/fabric/api/registry/FlammableBlockRegistry$Entry.d.ts'
 import type { FireBlockHooks } from '../../../../../net/fabricmc/fabric/impl/content/registry/FireBlockHooks.d.ts'
 import type { FlammableBlockRegistryImpl } from '../../../../../net/fabricmc/fabric/impl/content/registry/FlammableBlockRegistryImpl.d.ts'
@@ -34,7 +33,6 @@ import type { VoxelShape } from '../../../../../net/minecraft/world/phys/shapes/
 export class FireBlock extends BaseFireBlock implements FireBlockHooks {
     static AGE: IntegerProperty;
     static BLOCK_STATE_REGISTRY: BlockState[];
-    static CODEC: MapCodec<Block>;
     static CODEC: MapCodec<FireBlock>;
     static EAST: BooleanProperty;
     static FILTERED_REGISTRIES: ResourceKey<FeatureElement[]>[];
@@ -66,7 +64,7 @@ export class FireBlock extends BaseFireBlock implements FireBlockHooks {
     static boxZ(paramsizeXY: number, paramminZ: number, parammaxZ: number): VoxelShape;
     static boxZ(paramsizeX: number, paramsizeY: number, paramminZ: number, parammaxZ: number): VoxelShape;
     static boxZ(paramsizeX: number, paramminY: number, parammaxY: number, paramminZ: number, parammaxZ: number): VoxelShape;
-    static boxes(paramendInclusive: number, paramvoxelShapeFactory: (param0: number) => VoxelShape): (Object | null)[];
+    static boxes(paramendInclusive: number, paramvoxelShapeFactory: (param0: number) => VoxelShape): VoxelShape[];
     static byItem(paramitem: Item): Block;
     static canBePlacedAt(paramlevel: Level, parampos: BlockPos, paramforwardDirection: Direction): boolean;
     static canSupportCenter(paramlevel: LevelReader, parambelowPos: BlockPos, paramdirection: Direction): boolean;

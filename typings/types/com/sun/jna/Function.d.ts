@@ -12,7 +12,6 @@ export class Function extends Pointer {
     static THROW_LAST_ERROR: number;
     static USE_VARARGS: number;
     static createConstant(paramarg0: number): Pointer;
-    static createConstant(paramarg0: number): Pointer;
     static getFunction(paramarg0: Pointer): Function;
     static getFunction(paramarg0: Pointer, paramarg1: number): Function;
     static getFunction(paramarg0: Pointer, paramarg1: number, paramarg2: string): Function;

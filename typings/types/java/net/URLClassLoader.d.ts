@@ -21,8 +21,8 @@ export class URLClassLoader extends SecureClassLoader implements Closeable {
     static getSystemResource(paramarg0: string): URL;
     static getSystemResourceAsStream(paramarg0: string): InputStream;
     static getSystemResources(paramarg0: string): Enumeration<URL>;
-    static newInstance(paramarg0: (Object | null)[]): URLClassLoader;
-    static newInstance(paramarg0: (Object | null)[], paramarg1: ClassLoader): URLClassLoader;
+    static newInstance(paramarg0: URL[]): URLClassLoader;
+    static newInstance(paramarg0: URL[], paramarg1: ClassLoader): URLClassLoader;
     constructor(arg0: URL[])
     constructor(arg0: URL[], arg1: ClassLoader)
     constructor(arg0: URL[], arg1: ClassLoader, arg2: URLStreamHandlerFactory)

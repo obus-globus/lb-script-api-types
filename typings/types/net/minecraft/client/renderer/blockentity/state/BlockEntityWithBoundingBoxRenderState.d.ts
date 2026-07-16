@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BlockEntityRenderState } from '../../../../../../net/minecraft/client/renderer/blockentity/state/BlockEntityRenderState.d.ts'
 import type { BlockEntityWithBoundingBoxRenderState$InvisibleBlockType } from '../../../../../../net/minecraft/client/renderer/blockentity/state/BlockEntityWithBoundingBoxRenderState$InvisibleBlockType.d.ts'
 import type { ModelFeatureRenderer$CrumblingOverlay } from '../../../../../../net/minecraft/client/renderer/feature/ModelFeatureRenderer$CrumblingOverlay.d.ts'
@@ -12,5 +11,5 @@ export class BlockEntityWithBoundingBoxRenderState extends BlockEntityRenderStat
     invisibleBlocks: BlockEntityWithBoundingBoxRenderState$InvisibleBlockType[];
     isVisible: boolean;
     mode: BoundingBoxRenderable$Mode;
-    structureVoids: (Object | null)[];
+    structureVoids: boolean[];
 }

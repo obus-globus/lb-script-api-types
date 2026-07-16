@@ -11,7 +11,7 @@ export class LockIconButton$Icon extends Enum<LockIconButton$Icon> {
     static UNLOCKED_HOVER: LockIconButton$Icon;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): LockIconButton$Icon;
-    static values(): (Object | null)[];
+    static values(): LockIconButton$Icon[];
     private constructor(sprite: Identifier)
     // private sprite: Identifier;
     name(): "LOCKED" | "LOCKED_HOVER" | "LOCKED_DISABLED" | "UNLOCKED" | "UNLOCKED_HOVER" | "UNLOCKED_DISABLED";

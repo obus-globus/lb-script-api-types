@@ -6,7 +6,7 @@ export class ChickenSoundVariants$SoundSet extends Enum<ChickenSoundVariants$Sou
     static PICKY: ChickenSoundVariants$SoundSet;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ChickenSoundVariants$SoundSet;
-    static values(): (Object | null)[];
+    static values(): ChickenSoundVariants$SoundSet[];
     private constructor(identifier: string, soundEventIdentifier: string)
     readonly identifier: string;
     readonly soundEventIdentifier: string;

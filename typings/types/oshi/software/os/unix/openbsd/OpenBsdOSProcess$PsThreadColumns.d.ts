@@ -14,7 +14,7 @@ export class OpenBsdOSProcess$PsThreadColumns extends Enum<OpenBsdOSProcess$PsTh
     static TID: OpenBsdOSProcess$PsThreadColumns;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): OpenBsdOSProcess$PsThreadColumns;
-    static values(): (Object | null)[];
+    static values(): OpenBsdOSProcess$PsThreadColumns[];
     private constructor()
     name(): "TID" | "STATE" | "ETIME" | "CPUTIME" | "NIVCSW" | "NVCSW" | "MAJFLT" | "MINFLT" | "PRI" | "ARGS";
 }

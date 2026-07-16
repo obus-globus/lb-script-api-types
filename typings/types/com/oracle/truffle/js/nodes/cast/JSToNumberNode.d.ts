@@ -13,7 +13,6 @@ export abstract class JSToNumberNode extends JavaScriptBaseNode {
     static create(paramchild: JavaScriptNode): JavaScriptNode;
     static create(): JSToNumberNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doBigInt(value: BigInt): Number;
     doJSObject(value: JSObject, toPrimitiveNode: JSToPrimitiveNode, toNumberNode: JSToNumberNode): Number;

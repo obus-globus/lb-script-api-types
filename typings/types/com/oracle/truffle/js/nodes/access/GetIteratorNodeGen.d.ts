@@ -9,7 +9,6 @@ export class GetIteratorNodeGen extends GetIteratorNode {
     static getUncached(): GetIteratorNode;
     static inline(paramtarget: InlineSupport$InlineTarget): GetIteratorNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private getIteratorFromMethodNode__field1_: Node;
     // private getIteratorFromMethodNode__field2_: Node;

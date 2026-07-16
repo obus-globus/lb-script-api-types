@@ -28,7 +28,6 @@ export class Vector4f extends Object implements Externalizable, Cloneable, Vecto
     static distanceSquared(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number, paramarg7: number): number;
     static length(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): number;
     static lengthSquared(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): number;
-    static lengthSquared(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): number;
     constructor()
     constructor(arg0: ByteBuffer)
     constructor(arg0: FloatBuffer)

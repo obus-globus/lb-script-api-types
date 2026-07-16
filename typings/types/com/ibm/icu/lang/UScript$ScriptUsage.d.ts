@@ -10,7 +10,7 @@ export class UScript$ScriptUsage extends Enum<UScript$ScriptUsage> {
     static UNKNOWN: UScript$ScriptUsage;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): UScript$ScriptUsage;
-    static values(): (Object | null)[];
+    static values(): UScript$ScriptUsage[];
     private constructor()
     name(): "NOT_ENCODED" | "UNKNOWN" | "EXCLUDED" | "LIMITED_USE" | "ASPIRATIONAL" | "RECOMMENDED";
 }

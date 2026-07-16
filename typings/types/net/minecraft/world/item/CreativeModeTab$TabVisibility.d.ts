@@ -7,7 +7,7 @@ export class CreativeModeTab$TabVisibility extends Enum<CreativeModeTab$TabVisib
     static SEARCH_TAB_ONLY: CreativeModeTab$TabVisibility;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CreativeModeTab$TabVisibility;
-    static values(): (Object | null)[];
+    static values(): CreativeModeTab$TabVisibility[];
     private constructor()
     name(): "PARENT_AND_SEARCH_TABS" | "PARENT_TAB_ONLY" | "SEARCH_TAB_ONLY";
 }

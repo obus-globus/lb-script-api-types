@@ -19,7 +19,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class ApplyDecoratorsToElementDefinition extends JavaScriptBaseNode {
     static create(paramcontext: JSContext, parammember: ObjectLiteralNode$ObjectLiteralMemberNode): ApplyDecoratorsToElementDefinition;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, createDecoratorContextObjectNode: CreateDecoratorContextObjectNode)
     // private context: JSContext;
     // private createDecoratorContextNode: CreateDecoratorContextObjectNode;

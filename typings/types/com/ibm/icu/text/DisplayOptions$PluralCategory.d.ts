@@ -13,7 +13,7 @@ export class DisplayOptions$PluralCategory extends Enum<DisplayOptions$PluralCat
     static fromIdentifier(paramarg0: string): DisplayOptions$PluralCategory;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DisplayOptions$PluralCategory;
-    static values(): (Object | null)[];
+    static values(): DisplayOptions$PluralCategory[];
     private constructor(arg2: string)
     readonly identifier: string;
     getIdentifier(): string;

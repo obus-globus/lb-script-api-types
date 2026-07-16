@@ -13,7 +13,7 @@ export class ModuleSprint$SprintMode extends Enum<ModuleSprint$SprintMode> imple
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleSprint$SprintMode;
-    static values(): (Object | null)[];
+    static values(): ModuleSprint$SprintMode[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "LEGIT" | "OMNIDIRECTIONAL" | "OMNIROTATIONAL";

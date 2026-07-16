@@ -11,7 +11,7 @@ export class MLEBuiltins$MLE extends Enum<MLEBuiltins$MLE> implements BuiltinEnu
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): MLEBuiltins$MLE;
-    static values(): (Object | null)[];
+    static values(): MLEBuiltins$MLE[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

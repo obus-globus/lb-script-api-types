@@ -21,7 +21,6 @@ export class FlowKt extends Object {
     static DEFAULT_CONCURRENCY_PROPERTY_NAME: string;
     static all(paramarg0: Flow<Object>, paramarg1: (param0: Object, param1: Object) => Object, paramarg2: Continuation<Object>): Object;
     static any(paramarg0: Flow<Object>, paramarg1: (param0: Object, param1: Object) => Object, paramarg2: Continuation<Object>): Object;
-    static asFlow(paramarg0: Object | null): Flow<Object>;
     static asFlow(paramarg0: (Object | null)[]): Flow<Object>;
     static asFlow(paramarg0: Iterator<Object>): Flow<Object>;
     static asFlow(paramarg0: () => Object | null): Flow<Object>;
@@ -30,8 +29,6 @@ export class FlowKt extends Object {
     static asFlow(paramarg0: SharedFlow<Object>): Flow<Object>;
     static asFlow(paramarg0: number[]): Flow<number>;
     static asFlow(paramarg0: { start: number; endInclusive: number; step: number }): Flow<number>;
-    static asFlow(paramarg0: { start: number; endInclusive: number; step: number }): Flow<number>;
-    static asFlow(paramarg0: number[]): Flow<number>;
     static asSharedFlow(paramarg0: MutableSharedFlow<Object>): SharedFlow<Object>;
     static asStateFlow(paramarg0: MutableStateFlow<Object>): StateFlow<Object>;
     static associate(paramarg0: Flow<Object>, paramarg1: (param0: Object, param1: Object) => Object, paramarg2: Continuation<Object>): Object;
@@ -58,7 +55,6 @@ export class FlowKt extends Object {
     static collectLatest(paramarg0: SharedFlow<Object>, paramarg1: (param0: Object, param1: Object) => Object, paramarg2: Continuation<Object>): Object;
     static collectWhile(paramarg0: Flow<Object>, paramarg1: (param0: Object, param1: Object) => Object, paramarg2: Continuation<Object>): Object;
     static combine(paramarg0: Flow<Object>[], paramarg1: (param0: Object, param1: Object) => Object): Flow<Object>;
-    static combine(paramarg0: Object | null, paramarg1: (param0: Object, param1: Object) => Object): Flow<Object>;
     static combine(paramarg0: Flow<Object>, paramarg1: Flow<Object>, paramarg2: (param0: Object, param1: Object, param2: Object) => Object): Flow<Object>;
     static combine(paramarg0: Flow<Object>, paramarg1: Flow<Object>, paramarg2: Flow<Object>, paramarg3: (param0: Object, param1: Object, param2: Object, param3: Object) => Object): Flow<Object>;
     static combine(paramarg0: Flow<Object>, paramarg1: Flow<Object>, paramarg2: Flow<Object>, paramarg3: Flow<Object>, paramarg4: (param0: Object, param1: Object, param2: Object, param3: Object, param4: Object) => Object): Flow<Object>;
@@ -68,7 +64,6 @@ export class FlowKt extends Object {
     static combineLatest(paramarg0: Flow<Object>, paramarg1: Flow<Object>, paramarg2: Flow<Object>, paramarg3: Flow<Object>, paramarg4: (param0: Object, param1: Object, param2: Object, param3: Object, param4: Object) => Object): Flow<Object>;
     static combineLatest(paramarg0: Flow<Object>, paramarg1: Flow<Object>, paramarg2: Flow<Object>, paramarg3: Flow<Object>, paramarg4: Flow<Object>, paramarg5: (param0: Object, param1: Object, param2: Object, param3: Object, param4: Object, param5: Object) => Object): Flow<Object>;
     static combineTransform(paramarg0: Flow<Object>[], paramarg1: (param0: Object, param1: Object, param2: Object) => Object): Flow<Object>;
-    static combineTransform(paramarg0: Object | null, paramarg1: (param0: Object, param1: Object, param2: Object) => Object): Flow<Object>;
     static combineTransform(paramarg0: Flow<Object>, paramarg1: Flow<Object>, paramarg2: (param0: Object, param1: Object, param2: Object, param3: Object) => Object): Flow<Object>;
     static combineTransform(paramarg0: Flow<Object>, paramarg1: Flow<Object>, paramarg2: Flow<Object>, paramarg3: (param0: Object, param1: Object, param2: Object, param3: Object, param4: Object) => Object): Flow<Object>;
     static combineTransform(paramarg0: Flow<Object>, paramarg1: Flow<Object>, paramarg2: Flow<Object>, paramarg3: Flow<Object>, paramarg4: (param0: Object, param1: Object, param2: Object, param3: Object, param4: Object, param5: Object) => Object): Flow<Object>;
@@ -117,7 +112,7 @@ export class FlowKt extends Object {
     static flowCombine(paramarg0: Flow<Object>, paramarg1: Flow<Object>, paramarg2: (param0: Object, param1: Object, param2: Object) => Object): Flow<Object>;
     static flowCombineTransform(paramarg0: Flow<Object>, paramarg1: Flow<Object>, paramarg2: (param0: Object, param1: Object, param2: Object, param3: Object) => Object): Flow<Object>;
     static flowOf(paramarg0: Object | null): Flow<Object>;
-    static flowOf(paramarg0: Object | null): Flow<Object>;
+    static flowOf(...paramarg0: (Object | null)[]): Flow<Object>;
     static flowOn(paramarg0: Flow<Object>, paramarg1: CoroutineContext): Flow<Object>;
     static fold(paramarg0: Flow<Object>, paramarg1: Object | null, paramarg2: (param0: Object, param1: Object, param2: Object) => Object, paramarg3: Continuation<Object>): Object;
     static forEach(paramarg0: Flow<Object>, paramarg1: (param0: Object, param1: Object) => Object): void;
@@ -133,7 +128,7 @@ export class FlowKt extends Object {
     static mapLatest(paramarg0: Flow<Object>, paramarg1: (param0: Object, param1: Object) => Object): Flow<Object>;
     static mapNotNull(paramarg0: Flow<Object>, paramarg1: (param0: Object, param1: Object) => Object): Flow<Object>;
     static merge(paramarg0: Flow<Object>[]): Flow<Object>;
-    static merge(paramarg0: Object | null): Flow<Object>;
+    static merge(...paramarg0: Flow<Object>[]): Flow<Object>;
     static merge(paramarg0: Flow<Flow<Object>>): Flow<Object>;
     static noImpl(): void;
     static none(paramarg0: Flow<Object>, paramarg1: (param0: Object, param1: Object) => Object, paramarg2: Continuation<Object>): Object;

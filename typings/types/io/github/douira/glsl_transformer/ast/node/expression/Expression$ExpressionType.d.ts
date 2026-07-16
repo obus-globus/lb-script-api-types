@@ -53,7 +53,7 @@ export class Expression$ExpressionType extends Enum<Expression$ExpressionType> {
     static SUBTRACTION_ASSIGNMENT: Expression$ExpressionType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Expression$ExpressionType;
-    static values(): (Object | null)[];
+    static values(): Expression$ExpressionType[];
     private constructor(arg2: Expression$ExpressionType$OperandStructure)
     private constructor(arg2: Expression$ExpressionType$OperandStructure, arg3: number)
     private constructor(arg2: Expression$ExpressionType$OperandStructure, arg3: number, arg4: Expression$ExpressionType$Associativity)

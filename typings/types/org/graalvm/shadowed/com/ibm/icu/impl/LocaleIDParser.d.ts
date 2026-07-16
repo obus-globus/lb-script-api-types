@@ -19,7 +19,7 @@ export class LocaleIDParser extends Object {
     defaultKeywordValue(keywordName: string, value: string): void;
     getBaseName(): string;
     getCountry(): string;
-    // private getKeyComparator(): (param0: Object) => boolean;
+    // private getKeyComparator(): (param0: string, param1: string) => number;
     // private getKeyword(): string;
     getKeywordMap(): { [key: string]: string };
     getKeywordValue(keywordName: string): string;

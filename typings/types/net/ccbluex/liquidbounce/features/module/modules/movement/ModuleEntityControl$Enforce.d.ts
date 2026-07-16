@@ -12,7 +12,7 @@ export class ModuleEntityControl$Enforce extends Enum<ModuleEntityControl$Enforc
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleEntityControl$Enforce;
-    static values(): (Object | null)[];
+    static values(): ModuleEntityControl$Enforce[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "SADDLED" | "JUMP_STRENGTH";

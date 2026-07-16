@@ -6,7 +6,7 @@ export class Trie2$ValueWidth extends Enum<Trie2$ValueWidth> {
     static BITS_32: Trie2$ValueWidth;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Trie2$ValueWidth;
-    static values(): (Object | null)[];
+    static values(): Trie2$ValueWidth[];
     private constructor()
     name(): "BITS_16" | "BITS_32";
 }

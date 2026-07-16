@@ -7,7 +7,7 @@ export class Socks5CommandResponseDecoder$State extends Enum<Socks5CommandRespon
     static SUCCESS: Socks5CommandResponseDecoder$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Socks5CommandResponseDecoder$State;
-    static values(): (Object | null)[];
+    static values(): Socks5CommandResponseDecoder$State[];
     private constructor()
     name(): "INIT" | "SUCCESS" | "FAILURE";
 }

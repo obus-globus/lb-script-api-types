@@ -1,7 +1,6 @@
 import type { DateFormat } from '../../../../../java/text/DateFormat.d.ts'
 import type { SimpleDateFormat } from '../../../../../java/text/SimpleDateFormat.d.ts'
 import type { Locale } from '../../../../../java/util/Locale.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class HttpHeaderDateFormat$HttpHeaderDateFormatObsolete1 extends SimpleDateFormat {
     static AM_PM_FIELD: number;
     static DATE_FIELD: number;
@@ -26,7 +25,7 @@ export class HttpHeaderDateFormat$HttpHeaderDateFormatObsolete1 extends SimpleDa
     static WEEK_OF_MONTH_FIELD: number;
     static WEEK_OF_YEAR_FIELD: number;
     static YEAR_FIELD: number;
-    static getAvailableLocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
     static getDateInstance(): DateFormat;
     static getDateInstance(paramarg0: number): DateFormat;
     static getDateInstance(paramarg0: number, paramarg1: Locale): DateFormat;

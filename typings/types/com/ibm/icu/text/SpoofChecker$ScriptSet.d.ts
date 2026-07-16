@@ -6,7 +6,6 @@ export class SpoofChecker$ScriptSet extends BitSet {
     static valueOf(paramarg0: number[]): BitSet;
     static valueOf(paramarg0: ByteBuffer): BitSet;
     static valueOf(paramarg0: LongBuffer): BitSet;
-    static valueOf(paramarg0: number[]): BitSet;
     constructor()
     and(arg0: BitSet): void;
     and(arg0: number): void;

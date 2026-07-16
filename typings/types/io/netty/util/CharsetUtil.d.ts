@@ -18,6 +18,6 @@ export class CharsetUtil extends Object {
     static encoder(paramarg0: Charset, paramarg1: CodingErrorAction, paramarg2: CodingErrorAction): CharsetEncoder;
     static getDecoder(paramarg0: Charset): CharsetDecoder;
     static getEncoder(paramarg0: Charset): CharsetEncoder;
-    static values(): (Object | null)[];
+    static values(): Charset[];
     private constructor()
 }

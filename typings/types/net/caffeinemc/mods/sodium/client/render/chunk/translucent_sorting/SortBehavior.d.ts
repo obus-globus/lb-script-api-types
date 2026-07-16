@@ -14,7 +14,7 @@ export class SortBehavior extends Enum<SortBehavior> {
     static STATIC: SortBehavior;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SortBehavior;
-    static values(): (Object | null)[];
+    static values(): SortBehavior[];
     private constructor(arg2: string, arg3: SortBehavior$PriorityMode, arg4: DeferMode)
     private constructor(arg2: string, arg3: SortBehavior$SortMode)
     private constructor(arg2: string, arg3: SortBehavior$SortMode, arg4: SortBehavior$PriorityMode, arg5: DeferMode)

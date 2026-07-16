@@ -7,8 +7,8 @@ import type { FinishableOutputStream } from '../../../../../../org/graalvm/shado
 export class DeltaOptions extends FilterOptions {
     static DISTANCE_MAX: number;
     static DISTANCE_MIN: number;
-    static getDecoderMemoryUsage(paramoptions: (Object | null)[]): number;
-    static getEncoderMemoryUsage(paramoptions: (Object | null)[]): number;
+    static getDecoderMemoryUsage(paramoptions: FilterOptions[]): number;
+    static getEncoderMemoryUsage(paramoptions: FilterOptions[]): number;
     constructor()
     constructor(distance: number)
     readonly distance: number;

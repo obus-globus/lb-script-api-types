@@ -8,7 +8,7 @@ export class At$Shift extends Enum<At$Shift> {
     static NONE: At$Shift;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): At$Shift;
-    static values(): (Object | null)[];
+    static values(): At$Shift[];
     private constructor()
     name(): "NONE" | "BEFORE" | "AFTER" | "BY";
 }

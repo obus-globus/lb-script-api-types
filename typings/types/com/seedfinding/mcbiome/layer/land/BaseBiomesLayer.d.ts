@@ -1,13 +1,13 @@
+import type { Biome } from '../../../../../com/seedfinding/mcbiome/biome/Biome.d.ts'
 import type { IntBiomeLayer } from '../../../../../com/seedfinding/mcbiome/layer/IntBiomeLayer.d.ts'
 import type { MCVersion } from '../../../../../com/seedfinding/mccore/version/MCVersion.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BaseBiomesLayer extends IntBiomeLayer {
-    static COOL_BIOMES: (Object | null)[];
-    static DRY_BIOMES: (Object | null)[];
-    static OLD_BIOMES: (Object | null)[];
-    static OLD_BIOMES_DEFAULT_1_1: (Object | null)[];
-    static SNOWY_BIOMES: (Object | null)[];
-    static TEMPERATE_BIOMES: (Object | null)[];
+    static COOL_BIOMES: Biome[];
+    static DRY_BIOMES: Biome[];
+    static OLD_BIOMES: Biome[];
+    static OLD_BIOMES_DEFAULT_1_1: Biome[];
+    static SNOWY_BIOMES: Biome[];
+    static TEMPERATE_BIOMES: Biome[];
     static getLayerSeed(paramarg0: number, paramarg1: number): number;
     static getLocalSeed(paramarg0: number, paramarg1: number, paramarg2: number): number;
     static getLocalSeed(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): number;

@@ -10,7 +10,7 @@ export class ElementNode$NodeType extends Enum<ElementNode$NodeType> {
     static UNDEFINED: ElementNode$NodeType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ElementNode$NodeType;
-    static values(): (Object | null)[];
+    static values(): ElementNode$NodeType[];
     private constructor(arg2: boolean, arg3: boolean, arg4: boolean)
     hasField: boolean;
     hasInsn: boolean;

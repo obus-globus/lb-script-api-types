@@ -10,7 +10,7 @@ export class ProtoBuf$Type$Argument$Projection extends Enum<ProtoBuf$Type$Argume
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: number): ProtoBuf$Type$Argument$Projection;
     static valueOf(paramarg0: string): ProtoBuf$Type$Argument$Projection;
-    static values(): (Object | null)[];
+    static values(): ProtoBuf$Type$Argument$Projection[];
     private constructor(arg2: number, arg3: number)
     // private value: number;
     getNumber(): number;

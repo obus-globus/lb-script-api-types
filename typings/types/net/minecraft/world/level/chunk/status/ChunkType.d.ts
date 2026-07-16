@@ -6,7 +6,7 @@ export class ChunkType extends Enum<ChunkType> {
     static PROTOCHUNK: ChunkType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ChunkType;
-    static values(): (Object | null)[];
+    static values(): ChunkType[];
     private constructor()
     name(): "PROTOCHUNK" | "LEVELCHUNK";
 }

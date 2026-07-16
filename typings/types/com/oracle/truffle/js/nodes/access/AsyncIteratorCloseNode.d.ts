@@ -15,7 +15,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class AsyncIteratorCloseNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): AsyncIteratorCloseNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private callNode: JSFunctionCallNode;
     // private context: JSContext;

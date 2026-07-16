@@ -9,7 +9,7 @@ export class ServerData$State extends Enum<ServerData$State> {
     static UNREACHABLE: ServerData$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ServerData$State;
-    static values(): (Object | null)[];
+    static values(): ServerData$State[];
     private constructor()
     name(): "INITIAL" | "PINGING" | "UNREACHABLE" | "INCOMPATIBLE" | "SUCCESSFUL";
 }

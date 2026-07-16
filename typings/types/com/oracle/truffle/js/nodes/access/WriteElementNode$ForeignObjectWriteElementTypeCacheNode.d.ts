@@ -12,7 +12,6 @@ import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class WriteElementNode$ForeignObjectWriteElementTypeCacheNode extends WriteElementNode$GuardedWriteElementTypeCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     // private exportValue: ExportValueNode;
     // private interop: InteropLibrary;

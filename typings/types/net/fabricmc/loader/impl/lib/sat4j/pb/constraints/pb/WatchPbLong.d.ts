@@ -11,14 +11,14 @@ import type { Propagatable } from '../../../../../../../../../net/fabricmc/loade
 import type { UnitPropagationListener } from '../../../../../../../../../net/fabricmc/loader/impl/lib/sat4j/specs/UnitPropagationListener.d.ts'
 export abstract class WatchPbLong extends Object implements Serializable, Undoable, Constr, Propagatable {
     static TAUTOLOGY: Constr;
-    static toLong(paramarg0: (Object | null)[]): number[];
+    static toLong(paramarg0: BigInteger[]): number[];
     constructor()
     constructor(arg0: number[], arg1: BigInteger[], arg2: BigInteger, arg3: BigInteger)
     activity: number;
     // private coefs: number[];
     // private degree: number;
     // private learnt: boolean;
-    // private levelBased: (param0: Object) => boolean;
+    // private levelBased: (param0: number, param1: number) => number;
     // private lits: number[];
     // private sumcoefs: number;
     // private voc: ILits;

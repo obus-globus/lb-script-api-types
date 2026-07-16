@@ -12,7 +12,7 @@ export class SegmenterPrototypeBuiltins$SegmenterPrototype extends Enum<Segmente
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SegmenterPrototypeBuiltins$SegmenterPrototype;
-    static values(): (Object | null)[];
+    static values(): SegmenterPrototypeBuiltins$SegmenterPrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

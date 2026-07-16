@@ -7,7 +7,7 @@ export class StreamingTranslator$Support extends Enum<StreamingTranslator$Suppor
     static ITERATIVE: StreamingTranslator$Support;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): StreamingTranslator$Support;
-    static values(): (Object | null)[];
+    static values(): StreamingTranslator$Support[];
     private constructor(arg2: boolean, arg3: boolean)
     // private async: boolean;
     // private iterative: boolean;

@@ -9,7 +9,7 @@ export class DeferMode extends Enum<DeferMode> implements TextProvider {
     static ZERO_FRAMES: DeferMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DeferMode;
-    static values(): (Object | null)[];
+    static values(): DeferMode[];
     private constructor(arg2: string)
     // private name: Component;
     allowsUnlimitedUploadDuration(): boolean;

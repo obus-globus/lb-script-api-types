@@ -22,7 +22,7 @@ export class ModuleFreeCam$CancelOn extends Enum<ModuleFreeCam$CancelOn> impleme
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleFreeCam$CancelOn;
-    static values(): (Object | null)[];
+    static values(): ModuleFreeCam$CancelOn[];
     private constructor(tag: string, trigger: ModuleFreeCam$CancelTrigger<Event>)
     readonly tag: string;
     // private trigger: ModuleFreeCam$CancelTrigger<Event>;

@@ -7,7 +7,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class AsyncGeneratorRejectNode extends JavaScriptBaseNode {
     static create(): AsyncGeneratorRejectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     // private asyncGeneratorResumeNextNode: AsyncGeneratorResumeNextNode;
     // private callRejectNode: JSFunctionCallNode;

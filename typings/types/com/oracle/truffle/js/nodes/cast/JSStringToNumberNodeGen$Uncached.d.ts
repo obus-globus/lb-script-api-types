@@ -5,7 +5,6 @@ import type { JSStringToNumberNode } from '../../../../../../com/oracle/truffle/
 export class JSStringToNumberNodeGen$Uncached extends JSStringToNumberNode implements UnadoptableNode {
     static create(): JSStringToNumberNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     execute(arg0Value: TruffleString): number;
 }

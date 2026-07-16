@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class GetRoundingIncrementOptionNodeGen extends GetRoundingIncrementOptionNode {
     static create(): GetRoundingIncrementOptionNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private getRoundingIncrement_: PropertyGetNode;
     // private state_0_: number;

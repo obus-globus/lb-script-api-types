@@ -43,7 +43,6 @@ export class FT_Size_Request extends Struct<FT_Size_Request> implements NativeRe
     static nwidth(paramarg0: number): number;
     static nwidth(paramarg0: number, paramarg1: number): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     close(): void;

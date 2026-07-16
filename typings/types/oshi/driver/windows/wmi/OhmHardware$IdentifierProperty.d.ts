@@ -5,7 +5,7 @@ export class OhmHardware$IdentifierProperty extends Enum<OhmHardware$IdentifierP
     static IDENTIFIER: OhmHardware$IdentifierProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): OhmHardware$IdentifierProperty;
-    static values(): (Object | null)[];
+    static values(): OhmHardware$IdentifierProperty[];
     private constructor()
     name(): "IDENTIFIER";
 }

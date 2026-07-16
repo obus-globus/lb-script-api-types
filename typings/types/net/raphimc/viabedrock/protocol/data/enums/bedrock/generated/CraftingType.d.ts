@@ -10,7 +10,7 @@ export class CraftingType extends Enum<CraftingType> {
     static getByValue(paramarg0: number, paramarg1: CraftingType): CraftingType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CraftingType;
-    static values(): (Object | null)[];
+    static values(): CraftingType[];
     private constructor(arg2: number)
     private constructor(arg2: CraftingType)
     readonly value: number;

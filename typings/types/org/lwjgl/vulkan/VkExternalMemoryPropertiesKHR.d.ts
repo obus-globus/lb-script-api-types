@@ -17,15 +17,12 @@ export class VkExternalMemoryPropertiesKHR extends VkExternalMemoryProperties {
     static create(paramarg0: number): VkExternalMemoryProperties;
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(paramarg0: number): VkExternalMemoryPropertiesKHR;
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkExternalMemoryProperties;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkExternalMemoryPropertiesKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static ncompatibleHandleTypes(paramarg0: number): number;
     static nexportFromImportedHandleTypes(paramarg0: number): number;
     static nexternalMemoryFeatures(paramarg0: number): number;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

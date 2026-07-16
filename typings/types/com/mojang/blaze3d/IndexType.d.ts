@@ -7,7 +7,7 @@ export class IndexType extends Enum<IndexType> {
     static least(paramlength: number): IndexType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): IndexType;
-    static values(): (Object | null)[];
+    static values(): IndexType[];
     private constructor(bytes: number)
     bytes: number;
     name(): "SHORT" | "INT";

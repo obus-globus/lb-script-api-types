@@ -12,7 +12,7 @@ import type { LocaleResources$ResourceReference } from '../../../../sun/util/loc
 import type { ResourceBundleBasedAdapter } from '../../../../sun/util/locale/provider/ResourceBundleBasedAdapter.d.ts'
 import type { LocaleData } from '../../../../sun/util/resources/LocaleData.d.ts'
 export class LocaleResources extends Object {
-    static trace(paramarg0: string, ...paramarg1: (Object | null)[]): void;
+    static trace(paramarg0: string, ...paramarg1: Object[]): void;
     constructor(arg0: ResourceBundleBasedAdapter, arg1: Locale)
     // private CPattern: string;
     // private cache: { [key: string]: LocaleResources$ResourceReference };

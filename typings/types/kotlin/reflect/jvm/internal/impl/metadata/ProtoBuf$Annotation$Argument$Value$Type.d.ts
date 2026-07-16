@@ -19,7 +19,7 @@ export class ProtoBuf$Annotation$Argument$Value$Type extends Enum<ProtoBuf$Annot
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: number): ProtoBuf$Annotation$Argument$Value$Type;
     static valueOf(paramarg0: string): ProtoBuf$Annotation$Argument$Value$Type;
-    static values(): (Object | null)[];
+    static values(): ProtoBuf$Annotation$Argument$Value$Type[];
     private constructor(arg2: number, arg3: number)
     // private value: number;
     getNumber(): number;

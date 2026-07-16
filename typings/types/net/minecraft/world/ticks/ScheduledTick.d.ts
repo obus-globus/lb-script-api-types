@@ -6,8 +6,8 @@ import type { BlockPos } from '../../../../net/minecraft/core/BlockPos.d.ts'
 import type { SavedTick } from '../../../../net/minecraft/world/ticks/SavedTick.d.ts'
 import type { TickPriority } from '../../../../net/minecraft/world/ticks/TickPriority.d.ts'
 export class ScheduledTick<T extends unknown> extends Record {
-    static DRAIN_ORDER: (param0: Object) => boolean;
-    static INTRA_TICK_DRAIN_ORDER: (param0: Object) => boolean;
+    static DRAIN_ORDER: (param0: ScheduledTick<Object>, param1: ScheduledTick<Object>) => number;
+    static INTRA_TICK_DRAIN_ORDER: (param0: ScheduledTick<Object>, param1: ScheduledTick<Object>) => number;
     static UNIQUE_TICK_HASH: Hash$Strategy<ScheduledTick<Object>>;
     static probe(paramtype: Object | null, parampos: BlockPos): ScheduledTick<Object>;
     constructor(type: T, pos: BlockPos, triggerTick: number, subTickOrder: number)

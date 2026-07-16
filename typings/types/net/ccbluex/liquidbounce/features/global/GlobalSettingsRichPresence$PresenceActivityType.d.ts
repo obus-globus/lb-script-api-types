@@ -15,7 +15,7 @@ export class GlobalSettingsRichPresence$PresenceActivityType extends Enum<Global
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): GlobalSettingsRichPresence$PresenceActivityType;
-    static values(): (Object | null)[];
+    static values(): GlobalSettingsRichPresence$PresenceActivityType[];
     private constructor(tag: string, activityType: ActivityType)
     readonly activityType: ActivityType;
     readonly tag: string;

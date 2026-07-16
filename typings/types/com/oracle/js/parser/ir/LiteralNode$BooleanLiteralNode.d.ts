@@ -9,9 +9,8 @@ import type { Number } from '../../../../../java/lang/Number.d.ts'
 export class LiteralNode$BooleanLiteralNode extends LiteralNode$PrimitiveLiteralNode<boolean> {
     static newInstance(paramtoken: number, paramvalue: TruffleString): LiteralNode$PrimitiveLiteralNode<TruffleString>;
     static newInstance(paramtoken: number, paramfinish: number, paramvalue: Lexer$LexerToken): LiteralNode<Lexer$LexerToken>;
-    static newInstance(paramtoken: number, paramfinish: number, paramvalue: (Object | null)[]): LiteralNode<(Object | null)[]>;
-    static newInstance(paramtoken: number, paramfinish: number, paramvalue: Expression[]): LiteralNode<(Object | null)[]>;
-    static newInstance(paramtoken: number, paramfinish: number, paramvalue: Expression[], paramhasSpread: boolean, paramhasTrailingComma: boolean): LiteralNode<(Object | null)[]>;
+    static newInstance(paramtoken: number, paramfinish: number, paramvalue: Expression[]): LiteralNode<Expression[]>;
+    static newInstance(paramtoken: number, paramfinish: number, paramvalue: Expression[], paramhasSpread: boolean, paramhasTrailingComma: boolean): LiteralNode<Expression[]>;
     static newInstance(paramtoken: number, paramfinish: number, paramvalue: boolean): LiteralNode<boolean>;
     static newInstance(paramtoken: number, paramfinish: number, paramvalue: Number): LiteralNode<Number>;
     static newInstance(paramtoken: number, paramfinish: number, paramvalue: Number, paramtoStringConverter: (param0: Number) => TruffleString): LiteralNode<Number>;

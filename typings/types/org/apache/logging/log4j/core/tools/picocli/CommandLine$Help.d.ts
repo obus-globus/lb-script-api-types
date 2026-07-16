@@ -14,11 +14,11 @@ export class CommandLine$Help extends Object {
     static createMinimalOptionRenderer(): CommandLine$Help$IOptionRenderer;
     static createMinimalParamLabelRenderer(): CommandLine$Help$IParamLabelRenderer;
     static createMinimalParameterRenderer(): CommandLine$Help$IParameterRenderer;
-    static createShortOptionArityAndNameComparator(): (param0: Object) => boolean;
-    static createShortOptionNameComparator(): (param0: Object) => boolean;
+    static createShortOptionArityAndNameComparator(): (param0: Field, param1: Field) => number;
+    static createShortOptionNameComparator(): (param0: Field, param1: Field) => number;
     static defaultColorScheme(paramansi: CommandLine$Help$Ansi): CommandLine$Help$ColorScheme;
-    static join(paramansi: CommandLine$Help$Ansi, paramvalues: (Object | null)[], paramsb: StringBuilder, ...paramparams: (Object | null)[]): StringBuilder;
-    static shortestFirst(): (param0: Object) => boolean;
+    static join(paramansi: CommandLine$Help$Ansi, paramvalues: string[], paramsb: StringBuilder, ...paramparams: Object[]): StringBuilder;
+    static shortestFirst(): (param0: string, param1: string) => number;
     constructor(command: Object)
     constructor(command: Object, ansi: CommandLine$Help$Ansi)
     constructor(command: Object, colorScheme: CommandLine$Help$ColorScheme)
@@ -48,14 +48,14 @@ export class CommandLine$Help extends Object {
     customSynopsis(...params: Object[]): string;
     description(...params: Object[]): string;
     descriptionHeading(...params: Object[]): string;
-    detailedSynopsis(optionSort: (param0: Object) => boolean, clusterBooleanOptions: boolean): string;
-    detailedSynopsis(synopsisHeadingLength: number, optionSort: (param0: Object) => boolean, clusterBooleanOptions: boolean): string;
+    detailedSynopsis(optionSort: (param0: Field, param1: Field) => number, clusterBooleanOptions: boolean): string;
+    detailedSynopsis(synopsisHeadingLength: number, optionSort: (param0: Field, param1: Field) => number, clusterBooleanOptions: boolean): string;
     footer(...params: Object[]): string;
     footerHeading(...params: Object[]): string;
     header(...params: Object[]): string;
     headerHeading(...params: Object[]): string;
     optionList(): string;
-    optionList(layout: CommandLine$Help$Layout, optionSort: (param0: Object) => boolean, valueLabelRenderer: CommandLine$Help$IParamLabelRenderer): string;
+    optionList(layout: CommandLine$Help$Layout, optionSort: (param0: Field, param1: Field) => number, valueLabelRenderer: CommandLine$Help$IParamLabelRenderer): string;
     optionListHeading(...params: Object[]): string;
     parameterList(): string;
     parameterList(layout: CommandLine$Help$Layout, paramLabelRenderer: CommandLine$Help$IParamLabelRenderer): string;

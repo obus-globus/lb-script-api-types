@@ -47,7 +47,7 @@ export class SharedTypes_Legacy_ContainerType extends Enum<SharedTypes_Legacy_Co
     static getByValue(paramarg0: number, paramarg1: SharedTypes_Legacy_ContainerType): SharedTypes_Legacy_ContainerType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SharedTypes_Legacy_ContainerType;
-    static values(): (Object | null)[];
+    static values(): SharedTypes_Legacy_ContainerType[];
     private constructor(arg2: number)
     private constructor(arg2: SharedTypes_Legacy_ContainerType)
     readonly value: number;

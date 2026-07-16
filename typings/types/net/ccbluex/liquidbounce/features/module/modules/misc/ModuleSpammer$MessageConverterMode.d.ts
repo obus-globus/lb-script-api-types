@@ -14,7 +14,7 @@ export class ModuleSpammer$MessageConverterMode extends Enum<ModuleSpammer$Messa
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleSpammer$MessageConverterMode;
-    static values(): (Object | null)[];
+    static values(): ModuleSpammer$MessageConverterMode[];
     private constructor(tag: string, convert: (param0: string) => string)
     readonly convert: (param0: string) => string;
     readonly tag: string;

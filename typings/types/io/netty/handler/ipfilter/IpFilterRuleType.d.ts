@@ -6,7 +6,7 @@ export class IpFilterRuleType extends Enum<IpFilterRuleType> {
     static REJECT: IpFilterRuleType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): IpFilterRuleType;
-    static values(): (Object | null)[];
+    static values(): IpFilterRuleType[];
     private constructor()
     name(): "ACCEPT" | "REJECT";
 }

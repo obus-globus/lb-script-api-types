@@ -13,8 +13,8 @@ export class MediaType extends Object implements Serializable, Comparable<MediaT
     static audio(paramarg0: string): MediaType;
     static image(paramarg0: string): MediaType;
     static parse(paramarg0: string): MediaType;
-    static set(...paramarg0: (Object | null)[]): MediaType[];
-    static set(...paramarg0: (Object | null)[]): MediaType[];
+    static set(...paramarg0: string[]): MediaType[];
+    static set(...paramarg0: MediaType[]): MediaType[];
     static text(paramarg0: string): MediaType;
     static video(paramarg0: string): MediaType;
     constructor(arg0: string, arg1: string)

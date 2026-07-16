@@ -8,7 +8,7 @@ export class Hud$ContextualInfo extends Enum<Hud$ContextualInfo> {
     static LOCATOR: Hud$ContextualInfo;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Hud$ContextualInfo;
-    static values(): (Object | null)[];
+    static values(): Hud$ContextualInfo[];
     private constructor()
     name(): "EMPTY" | "EXPERIENCE" | "LOCATOR" | "JUMPABLE_VEHICLE";
 }

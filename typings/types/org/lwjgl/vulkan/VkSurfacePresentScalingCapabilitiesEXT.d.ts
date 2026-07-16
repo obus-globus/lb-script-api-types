@@ -27,28 +27,21 @@ export class VkSurfacePresentScalingCapabilitiesEXT extends VkSurfacePresentScal
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkSurfacePresentScalingCapabilitiesKHR;
     static calloc(paramarg0: MemoryStack): VkSurfacePresentScalingCapabilitiesKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkSurfacePresentScalingCapabilitiesEXT;
     static create(paramarg0: number): VkSurfacePresentScalingCapabilitiesEXT;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkSurfacePresentScalingCapabilitiesKHR;
     static create(paramarg0: number): VkSurfacePresentScalingCapabilitiesKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkSurfacePresentScalingCapabilitiesEXT;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkSurfacePresentScalingCapabilitiesKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkSurfacePresentScalingCapabilitiesEXT;
     static malloc(paramarg0: MemoryStack): VkSurfacePresentScalingCapabilitiesEXT;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkSurfacePresentScalingCapabilitiesKHR;
     static malloc(paramarg0: MemoryStack): VkSurfacePresentScalingCapabilitiesKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nmaxScaledImageExtent(paramarg0: number): VkExtent2D;
     static nmaxScaledImageExtent(paramarg0: number, paramarg1: VkExtent2D): void;
     static nminScaledImageExtent(paramarg0: number): VkExtent2D;
@@ -63,7 +56,6 @@ export class VkSurfacePresentScalingCapabilitiesEXT extends VkSurfacePresentScal
     static nsupportedPresentGravityY(paramarg0: number, paramarg1: number): void;
     static nsupportedPresentScaling(paramarg0: number): number;
     static nsupportedPresentScaling(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

@@ -9,7 +9,7 @@ export class Win32VideoController$VideoControllerProperty extends Enum<Win32Vide
     static PNPDEVICEID: Win32VideoController$VideoControllerProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Win32VideoController$VideoControllerProperty;
-    static values(): (Object | null)[];
+    static values(): Win32VideoController$VideoControllerProperty[];
     private constructor()
     name(): "ADAPTERCOMPATIBILITY" | "ADAPTERRAM" | "DRIVERVERSION" | "NAME" | "PNPDEVICEID";
 }

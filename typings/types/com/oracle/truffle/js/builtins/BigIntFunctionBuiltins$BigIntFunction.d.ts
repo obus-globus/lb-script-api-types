@@ -12,7 +12,7 @@ export class BigIntFunctionBuiltins$BigIntFunction extends Enum<BigIntFunctionBu
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): BigIntFunctionBuiltins$BigIntFunction;
-    static values(): (Object | null)[];
+    static values(): BigIntFunctionBuiltins$BigIntFunction[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

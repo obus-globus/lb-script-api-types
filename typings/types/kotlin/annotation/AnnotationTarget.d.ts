@@ -21,7 +21,7 @@ export class AnnotationTarget extends Enum<AnnotationTarget> implements Serializ
     static getEntries(): AnnotationTarget[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AnnotationTarget;
-    static values(): (Object | null)[];
+    static values(): AnnotationTarget[];
     private constructor()
     name(): "CLASS" | "ANNOTATION_CLASS" | "TYPE_PARAMETER" | "PROPERTY" | "FIELD" | "LOCAL_VARIABLE" | "VALUE_PARAMETER" | "CONSTRUCTOR" | "FUNCTION" | "PROPERTY_GETTER" | "PROPERTY_SETTER" | "TYPE" | "EXPRESSION" | "FILE" | "TYPEALIAS";
 }

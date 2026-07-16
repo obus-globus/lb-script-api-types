@@ -8,7 +8,7 @@ export class BufferOverflow extends Enum<BufferOverflow> {
     static getEntries(): BufferOverflow[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BufferOverflow;
-    static values(): (Object | null)[];
+    static values(): BufferOverflow[];
     private constructor()
     name(): "SUSPEND" | "DROP_OLDEST" | "DROP_LATEST";
 }

@@ -8,7 +8,7 @@ export class NodeClassImpl$NodeFieldKind extends Enum<NodeClassImpl$NodeFieldKin
     static DATA: NodeClassImpl$NodeFieldKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): NodeClassImpl$NodeFieldKind;
-    static values(): (Object | null)[];
+    static values(): NodeClassImpl$NodeFieldKind[];
     private constructor()
     name(): "CHILD" | "CHILDREN" | "CLONEABLE" | "DATA";
 }

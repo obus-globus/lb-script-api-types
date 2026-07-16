@@ -9,7 +9,6 @@ import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/
 import type { JSArrayBufferObject } from '../../../../../../com/oracle/truffle/js/runtime/builtins/JSArrayBufferObject.d.ts'
 export class ArrayBufferByteLengthNodeGen$Inlined extends ArrayBufferByteLengthNode implements UnadoptableNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(target: InlineSupport$InlineTarget)
     // private interopArrayBuffer_interop_: InlineSupport$ReferenceField<InteropLibrary>;
     // private state_0_: InlineSupport$StateField;

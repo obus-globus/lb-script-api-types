@@ -24,28 +24,21 @@ export class VkPipelineRobustnessCreateInfoEXT extends VkPipelineRobustnessCreat
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPipelineRobustnessCreateInfoEXT;
     static calloc(paramarg0: MemoryStack): VkPipelineRobustnessCreateInfoEXT;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPipelineRobustnessCreateInfo;
     static create(paramarg0: number): VkPipelineRobustnessCreateInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPipelineRobustnessCreateInfoEXT;
     static create(paramarg0: number): VkPipelineRobustnessCreateInfoEXT;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPipelineRobustnessCreateInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPipelineRobustnessCreateInfoEXT;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPipelineRobustnessCreateInfo;
     static malloc(paramarg0: MemoryStack): VkPipelineRobustnessCreateInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPipelineRobustnessCreateInfoEXT;
     static malloc(paramarg0: MemoryStack): VkPipelineRobustnessCreateInfoEXT;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nimages(paramarg0: number): number;
     static nimages(paramarg0: number, paramarg1: number): void;
     static npNext(paramarg0: number): number;
@@ -58,7 +51,6 @@ export class VkPipelineRobustnessCreateInfoEXT extends VkPipelineRobustnessCreat
     static nuniformBuffers(paramarg0: number, paramarg1: number): void;
     static nvertexInputs(paramarg0: number): number;
     static nvertexInputs(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

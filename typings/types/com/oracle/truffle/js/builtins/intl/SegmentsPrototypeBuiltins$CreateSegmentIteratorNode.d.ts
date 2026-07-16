@@ -7,7 +7,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class SegmentsPrototypeBuiltins$CreateSegmentIteratorNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): SegmentsPrototypeBuiltins$CreateSegmentIteratorNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private context: JSContext;
     execute(segmenter: JSSegmenterObject, value: TruffleString): Object;

@@ -2,6 +2,7 @@ import type { ModeValueGroup } from '../../../../net/ccbluex/liquidbounce/config
 import type { ValueGroup } from '../../../../net/ccbluex/liquidbounce/config/types/group/ValueGroup.d.ts'
 import type { TwoDimensionalRegressionModel } from '../../../../net/ccbluex/liquidbounce/deeplearn/models/TwoDimensionalRegressionModel.d.ts'
 import type { EventListener } from '../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
+import type { Component } from '../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Logger } from '../../../../org/apache/logging/log4j/Logger.d.ts'
 export class ModelManager extends ValueGroup implements EventListener {
     static INSTANCE: ModelManager;
@@ -17,8 +18,10 @@ export class ModelManager extends ValueGroup implements EventListener {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt:42}
      */
     readonly combatModels: string[];
+    readonly debugDisplayName: Component;
     // private logger: Logger;
     readonly models: ModeValueGroup<TwoDimensionalRegressionModel>;
+    readonly running: boolean;
     children(): EventListener[];
     /**
      * Load models from the models folder. This only has to be triggered

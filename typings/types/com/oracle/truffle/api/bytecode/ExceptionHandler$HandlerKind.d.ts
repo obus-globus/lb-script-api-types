@@ -7,7 +7,7 @@ export class ExceptionHandler$HandlerKind extends Enum<ExceptionHandler$HandlerK
     static TAG: ExceptionHandler$HandlerKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ExceptionHandler$HandlerKind;
-    static values(): (Object | null)[];
+    static values(): ExceptionHandler$HandlerKind[];
     private constructor()
     name(): "CUSTOM" | "TAG" | "EPILOG";
 }

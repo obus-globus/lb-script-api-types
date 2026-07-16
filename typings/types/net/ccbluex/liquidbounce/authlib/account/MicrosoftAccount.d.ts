@@ -4,11 +4,9 @@ import type { Pair } from '../../../../../kotlin/Pair.d.ts'
 import type { MicrosoftAccount$AuthMethod } from '../../../../../net/ccbluex/liquidbounce/authlib/account/MicrosoftAccount$AuthMethod.d.ts'
 import type { MicrosoftAccount$Companion } from '../../../../../net/ccbluex/liquidbounce/authlib/account/MicrosoftAccount$Companion.d.ts'
 import type { MinecraftAccount } from '../../../../../net/ccbluex/liquidbounce/authlib/account/MinecraftAccount.d.ts'
-import type { MinecraftAccount$Companion } from '../../../../../net/ccbluex/liquidbounce/authlib/account/MinecraftAccount$Companion.d.ts'
 import type { Session } from '../../../../../net/ccbluex/liquidbounce/authlib/compat/Session.d.ts'
 export class MicrosoftAccount extends MinecraftAccount {
     static Companion: MicrosoftAccount$Companion;
-    static Companion: MinecraftAccount$Companion;
     static MC_AUTH_DATA: string;
     static MC_AUTH_URL: string;
     static MC_PROFILE_URL: string;

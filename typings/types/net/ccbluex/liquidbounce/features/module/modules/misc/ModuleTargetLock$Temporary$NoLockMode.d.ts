@@ -12,7 +12,7 @@ export class ModuleTargetLock$Temporary$NoLockMode extends Enum<ModuleTargetLock
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleTargetLock$Temporary$NoLockMode;
-    static values(): (Object | null)[];
+    static values(): ModuleTargetLock$Temporary$NoLockMode[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "ALLOW_ALL" | "ALLOW_NONE";

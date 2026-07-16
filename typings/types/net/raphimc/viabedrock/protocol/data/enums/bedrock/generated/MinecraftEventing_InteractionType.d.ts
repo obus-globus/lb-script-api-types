@@ -25,7 +25,7 @@ export class MinecraftEventing_InteractionType extends Enum<MinecraftEventing_In
     static getByValue(paramarg0: number, paramarg1: MinecraftEventing_InteractionType): MinecraftEventing_InteractionType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MinecraftEventing_InteractionType;
-    static values(): (Object | null)[];
+    static values(): MinecraftEventing_InteractionType[];
     private constructor(arg2: number)
     private constructor(arg2: MinecraftEventing_InteractionType)
     readonly value: number;

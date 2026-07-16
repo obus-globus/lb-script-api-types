@@ -35,7 +35,7 @@ export abstract class ToStringStyle extends Object implements Serializable {
     append(arg0: StringBuffer, arg1: string, arg2: Object, arg3: boolean): void;
     append(arg0: StringBuffer, arg1: string, arg2: Object[], arg3: boolean): void;
     append(arg0: StringBuffer, arg1: string, arg2: boolean): void;
-    append(arg0: StringBuffer, arg1: string, arg2: (Object | null)[], arg3: boolean): void;
+    append(arg0: StringBuffer, arg1: string, arg2: boolean[], arg3: boolean): void;
     append(arg0: StringBuffer, arg1: string, arg2: number): void;
     append(arg0: StringBuffer, arg1: string, arg2: number[], arg3: boolean): void;
     append(arg0: StringBuffer, arg1: string, arg2: string): void;
@@ -47,12 +47,13 @@ export abstract class ToStringStyle extends Object implements Serializable {
     appendDetail(arg0: StringBuffer, arg1: string, arg2: Object): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: Object[]): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: boolean): void;
-    appendDetail(arg0: StringBuffer, arg1: string, arg2: (Object | null)[]): void;
+    appendDetail(arg0: StringBuffer, arg1: string, arg2: boolean[]): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: number): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: number[]): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: string): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: string[]): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: number, arg3: Object): void;
+    appendDetail(arg0: StringBuffer, arg1: string, arg2: (Object | null)[]): void;
     appendDetail(arg0: StringBuffer, arg1: string, arg2: Map<Object | null, Object | null>): void;
     appendEnd(arg0: StringBuffer, arg1: Object): void;
     appendFieldEnd(arg0: StringBuffer, arg1: string): void;
@@ -64,7 +65,7 @@ export abstract class ToStringStyle extends Object implements Serializable {
     appendStart(arg0: StringBuffer, arg1: Object): void;
     appendSummary(arg0: StringBuffer, arg1: string, arg2: Object): void;
     appendSummary(arg0: StringBuffer, arg1: string, arg2: Object[]): void;
-    appendSummary(arg0: StringBuffer, arg1: string, arg2: (Object | null)[]): void;
+    appendSummary(arg0: StringBuffer, arg1: string, arg2: boolean[]): void;
     appendSummary(arg0: StringBuffer, arg1: string, arg2: number[]): void;
     appendSummary(arg0: StringBuffer, arg1: string, arg2: string[]): void;
     appendSummarySize(arg0: StringBuffer, arg1: string, arg2: number): void;

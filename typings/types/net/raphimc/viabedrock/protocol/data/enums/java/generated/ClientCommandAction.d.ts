@@ -7,7 +7,7 @@ export class ClientCommandAction extends Enum<ClientCommandAction> {
     static REQUEST_STATS: ClientCommandAction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClientCommandAction;
-    static values(): (Object | null)[];
+    static values(): ClientCommandAction[];
     private constructor()
     name(): "PERFORM_RESPAWN" | "REQUEST_STATS" | "REQUEST_GAMERULE_VALUES";
 }

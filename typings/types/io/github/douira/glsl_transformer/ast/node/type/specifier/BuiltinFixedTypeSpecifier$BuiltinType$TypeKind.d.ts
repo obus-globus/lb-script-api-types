@@ -9,7 +9,7 @@ export class BuiltinFixedTypeSpecifier$BuiltinType$TypeKind extends Enum<Builtin
     static VOID: BuiltinFixedTypeSpecifier$BuiltinType$TypeKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BuiltinFixedTypeSpecifier$BuiltinType$TypeKind;
-    static values(): (Object | null)[];
+    static values(): BuiltinFixedTypeSpecifier$BuiltinType$TypeKind[];
     private constructor()
     name(): "VOID" | "ATOMIC_UINT" | "SAMPLER" | "IMAGE" | "ACCELERATION_STRUCTURE";
 }

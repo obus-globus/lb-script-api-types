@@ -6,7 +6,7 @@ export class UnaryExpression$Operator extends Enum<UnaryExpression$Operator> {
     static MINUS: UnaryExpression$Operator;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): UnaryExpression$Operator;
-    static values(): (Object | null)[];
+    static values(): UnaryExpression$Operator[];
     private constructor()
     name(): "MINUS" | "BITWISE_NOT";
 }

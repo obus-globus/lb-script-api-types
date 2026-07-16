@@ -5,7 +5,7 @@ import type { LocationAware } from '../../../../../../org/apache/logging/log4j/c
 import type { LogEventPatternConverter } from '../../../../../../org/apache/logging/log4j/core/pattern/LogEventPatternConverter.d.ts'
 export class LineLocationPatternConverter extends LogEventPatternConverter implements LocationAware {
     static CATEGORY: string;
-    static newInstance(paramoptions: (Object | null)[]): LineLocationPatternConverter;
+    static newInstance(paramoptions: string[]): LineLocationPatternConverter;
     private constructor()
     format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, output: StringBuilder): void;

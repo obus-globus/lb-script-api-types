@@ -92,7 +92,6 @@ export class EXTGPUShader4 extends Object {
     static glVertexAttribIPointerEXT(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: IntBuffer): void;
     static glVertexAttribIPointerEXT(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: ShortBuffer): void;
     static glVertexAttribIPointerEXT(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number): void;
-    static glVertexAttribIPointerEXT(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number[]): void;
     static nglBindFragDataLocationEXT(paramarg0: number, paramarg1: number, paramarg2: number): void;
     static nglGetFragDataLocationEXT(paramarg0: number, paramarg1: number): number;
     static nglGetUniformuivEXT(paramarg0: number, paramarg1: number, paramarg2: number): void;

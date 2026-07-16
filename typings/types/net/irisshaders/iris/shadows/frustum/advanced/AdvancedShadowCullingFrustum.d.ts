@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Viewport } from '../../../../../../net/caffeinemc/mods/sodium/client/render/viewport/Viewport.d.ts'
 import type { ViewportProvider } from '../../../../../../net/caffeinemc/mods/sodium/client/render/viewport/ViewportProvider.d.ts'
 import type { Frustum } from '../../../../../../net/caffeinemc/mods/sodium/client/render/viewport/frustum/Frustum.d.ts'
@@ -24,9 +23,9 @@ export class AdvancedShadowCullingFrustum extends Frustum_2 implements ViewportP
     x: number;
     y: number;
     z: number;
-    // private addBackPlanes(arg0: BaseClippingPlanes): (Object | null)[];
+    // private addBackPlanes(arg0: BaseClippingPlanes): boolean[];
     // private addEdgePlane(arg0: Vector4f, arg1: Vector4f): void;
-    // private addEdgePlanes(arg0: BaseClippingPlanes, arg1: (Object | null)[]): void;
+    // private addEdgePlanes(arg0: BaseClippingPlanes, arg1: boolean[]): void;
     // private addPlane(arg0: number[]): void;
     canDetermineInvisible(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): boolean;
     checkCornerVisibility(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): number;

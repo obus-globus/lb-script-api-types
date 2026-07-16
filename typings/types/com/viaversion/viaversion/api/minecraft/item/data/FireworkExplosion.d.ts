@@ -3,8 +3,8 @@ import type { Copyable } from '../../../../../../../com/viaversion/viaversion/ut
 import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class FireworkExplosion extends Record implements Copyable {
-    static ARRAY_TYPE: Type<(Object | null)[]>;
-    static SHAPES: (Object | null)[];
+    static ARRAY_TYPE: Type<FireworkExplosion[]>;
+    static SHAPES: string[];
     static TYPE: Type<FireworkExplosion>;
     static copy(paramarg0: Object | null): Object | null;
     constructor(shape: number, colors: number[], fadeColors: number[], hasTrail: boolean, hasTwinkle: boolean)

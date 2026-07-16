@@ -106,10 +106,8 @@ export class SulfurCube extends AbstractCubeMob implements Bucketable, Shearable
     static MAX_NATURAL_SIZE: number;
     static MAX_PICKUP_LOOT_CHANCE: number;
     static MAX_SIZE: number;
-    static MAX_SIZE: number;
     static MAX_WEARING_ARMOR_CHANCE: number;
     static MIN_MOVEMENT_DISTANCE: number;
-    static MIN_SIZE: number;
     static MIN_SIZE: number;
     static NBT_ATTACHMENT_KEY: string;
     static PICKUP_TIMER_DURATION: number;

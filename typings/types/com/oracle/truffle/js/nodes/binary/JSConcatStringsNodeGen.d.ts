@@ -6,7 +6,6 @@ export class JSConcatStringsNodeGen extends JSConcatStringsNode {
     static create(): JSConcatStringsNode;
     static create(paramstringLengthLimit: number): JSConcatStringsNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(stringLengthLimit: number)
     // private concatNode_: TruffleString$ConcatNode;
     // private state_0_: number;

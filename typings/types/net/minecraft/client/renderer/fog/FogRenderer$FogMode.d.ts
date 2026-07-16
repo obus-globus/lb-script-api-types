@@ -6,7 +6,7 @@ export class FogRenderer$FogMode extends Enum<FogRenderer$FogMode> {
     static WORLD: FogRenderer$FogMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): FogRenderer$FogMode;
-    static values(): (Object | null)[];
+    static values(): FogRenderer$FogMode[];
     private constructor()
     name(): "NONE" | "WORLD";
 }

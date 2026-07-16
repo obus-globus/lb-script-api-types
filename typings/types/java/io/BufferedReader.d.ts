@@ -1,7 +1,6 @@
 import type { Reader } from '../../java/io/Reader.d.ts'
 import type { CharBuffer } from '../../java/nio/CharBuffer.d.ts'
 import type { Stream } from '../../java/util/stream/Stream.d.ts'
-import type { Object } from '../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../java/lang/CharSequence.d.ts'
 export class BufferedReader extends Reader {
     static nullReader(): Reader;
@@ -28,7 +27,7 @@ export class BufferedReader extends Reader {
     read(arg0: string[], arg1: number, arg2: number): number;
     // private read1(arg0: string[], arg1: number, arg2: number): number;
     readLine(): string;
-    readLine(arg0: boolean, arg1: (Object | null)[]): string;
+    readLine(arg0: boolean, arg1: boolean[]): string;
     ready(): boolean;
     reset(): void;
     skip(arg0: number): number;

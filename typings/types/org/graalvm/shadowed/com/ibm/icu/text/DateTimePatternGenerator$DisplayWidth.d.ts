@@ -7,7 +7,7 @@ export class DateTimePatternGenerator$DisplayWidth extends Enum<DateTimePatternG
     static WIDE: DateTimePatternGenerator$DisplayWidth;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): DateTimePatternGenerator$DisplayWidth;
-    static values(): (Object | null)[];
+    static values(): DateTimePatternGenerator$DisplayWidth[];
     private constructor(cldrKey: string)
     // private cldrKey: string;
     // private cldrKey(): string;

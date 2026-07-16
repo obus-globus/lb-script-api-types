@@ -32,7 +32,6 @@ export class VkPresentStageTimeEXT extends Struct<VkPresentStageTimeEXT> impleme
     static nstage(paramarg0: number): number;
     static ntime(paramarg0: number): number;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     close(): void;

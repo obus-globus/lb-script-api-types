@@ -16,7 +16,7 @@ export class ModuleAntiAFK$RandomInteraction$Interaction extends Enum<ModuleAnti
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleAntiAFK$RandomInteraction$Interaction;
-    static values(): (Object | null)[];
+    static values(): ModuleAntiAFK$RandomInteraction$Interaction[];
     private constructor(tag: string, perform: () => void)
     readonly perform: () => void;
     readonly tag: string;

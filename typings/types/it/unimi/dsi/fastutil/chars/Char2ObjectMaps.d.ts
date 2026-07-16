@@ -9,7 +9,6 @@ export class Char2ObjectMaps extends Object {
     static fastIterable(paramarg0: { [key: string]: any }): Char2ObjectMap$Entry<Object>[];
     static fastIterator(paramarg0: { [key: string]: any }): ObjectIterator<Char2ObjectMap$Entry<Object>>;
     static singleton(paramarg0: string, paramarg1: Object | null): { [key: string]: any };
-    static singleton(paramarg0: string, paramarg1: Object | null): { [key: string]: any };
     static synchronize(paramarg0: { [key: string]: any }): { [key: string]: any };
     static synchronize(paramarg0: { [key: string]: any }, paramarg1: Object): { [key: string]: any };
     static unmodifiable(paramarg0: { [key: string]: any }): { [key: string]: any };

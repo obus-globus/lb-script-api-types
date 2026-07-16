@@ -10,7 +10,7 @@ export class DiscordBuild extends Enum<DiscordBuild> {
     static from(paramarg0: string): DiscordBuild;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DiscordBuild;
-    static values(): (Object | null)[];
+    static values(): DiscordBuild[];
     private constructor()
     private constructor(arg2: string)
     // private endpoint: string;

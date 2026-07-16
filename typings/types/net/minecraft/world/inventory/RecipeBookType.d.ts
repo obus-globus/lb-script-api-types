@@ -8,7 +8,7 @@ export class RecipeBookType extends Enum<RecipeBookType> {
     static SMOKER: RecipeBookType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RecipeBookType;
-    static values(): (Object | null)[];
+    static values(): RecipeBookType[];
     private constructor()
     name(): "CRAFTING" | "FURNACE" | "BLAST_FURNACE" | "SMOKER";
 }

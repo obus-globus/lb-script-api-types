@@ -59,7 +59,7 @@ export class ARBUniformBufferObject extends Object {
     static glGetUniformBlockIndex(paramarg0: number, paramarg1: CharSequence): number;
     static glGetUniformBlockIndex(paramarg0: number, paramarg1: ByteBuffer): number;
     static glGetUniformIndices(paramarg0: number, paramarg1: CharSequence): number;
-    static glGetUniformIndices(paramarg0: number, paramarg1: (Object | null)[], paramarg2: IntBuffer): void;
+    static glGetUniformIndices(paramarg0: number, paramarg1: CharSequence[], paramarg2: IntBuffer): void;
     static glGetUniformIndices(paramarg0: number, paramarg1: PointerBuffer, paramarg2: number[]): void;
     static glGetUniformIndices(paramarg0: number, paramarg1: PointerBuffer, paramarg2: IntBuffer): void;
     static glUniformBlockBinding(paramarg0: number, paramarg1: number, paramarg2: number): void;

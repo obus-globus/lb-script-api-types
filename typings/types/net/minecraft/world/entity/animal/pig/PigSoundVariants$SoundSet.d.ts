@@ -7,7 +7,7 @@ export class PigSoundVariants$SoundSet extends Enum<PigSoundVariants$SoundSet> {
     static MINI: PigSoundVariants$SoundSet;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PigSoundVariants$SoundSet;
-    static values(): (Object | null)[];
+    static values(): PigSoundVariants$SoundSet[];
     private constructor(identifier: string, soundEventIdentifier: string)
     readonly identifier: string;
     readonly soundEventIdentifier: string;

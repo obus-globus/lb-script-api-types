@@ -6,7 +6,6 @@ import type { Throwable } from '../../../../../../java/lang/Throwable.d.ts'
 export class TryCatchNodeFactory$GetErrorObjectNodeGen extends TryCatchNode$GetErrorObjectNode {
     static create(paramcontext: JSContext): TryCatchNode$GetErrorObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private state_0_: number;
     execute(arg0Value: Throwable): Object;

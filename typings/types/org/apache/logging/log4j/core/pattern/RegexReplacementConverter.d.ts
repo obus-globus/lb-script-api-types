@@ -7,7 +7,7 @@ import type { LogEventPatternConverter } from '../../../../../../org/apache/logg
 import type { PatternFormatter } from '../../../../../../org/apache/logging/log4j/core/pattern/PatternFormatter.d.ts'
 export class RegexReplacementConverter extends LogEventPatternConverter {
     static CATEGORY: string;
-    static newInstance(paramconfig: Configuration, paramoptions: (Object | null)[]): RegexReplacementConverter;
+    static newInstance(paramconfig: Configuration, paramoptions: string[]): RegexReplacementConverter;
     private constructor(formatters: PatternFormatter[], pattern: Pattern, substitution: string)
     // private formatters: PatternFormatter[];
     // private pattern: Pattern;

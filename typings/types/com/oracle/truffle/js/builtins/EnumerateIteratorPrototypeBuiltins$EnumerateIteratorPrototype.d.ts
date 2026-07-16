@@ -11,7 +11,7 @@ export class EnumerateIteratorPrototypeBuiltins$EnumerateIteratorPrototype exten
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): EnumerateIteratorPrototypeBuiltins$EnumerateIteratorPrototype;
-    static values(): (Object | null)[];
+    static values(): EnumerateIteratorPrototypeBuiltins$EnumerateIteratorPrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

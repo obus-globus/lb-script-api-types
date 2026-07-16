@@ -7,7 +7,7 @@ export class SignatureState extends Enum<SignatureState> {
     static UNSIGNED: SignatureState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SignatureState;
-    static values(): (Object | null)[];
+    static values(): SignatureState[];
     private constructor()
     name(): "UNSIGNED" | "INVALID" | "SIGNED";
 }

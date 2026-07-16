@@ -12,7 +12,6 @@ export abstract class ToArrayIndexNode extends JavaScriptBaseNode {
     static create(): ToArrayIndexNode;
     static createNoStringToIndex(): ToArrayIndexNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(convertStringToIndex: boolean)
     // private convertStringToIndex: boolean;
     convertFromString(index: TruffleString, startsWithDigitBranch: InlinedConditionProfile, isArrayIndexBranch: InlinedBranchProfile, stringReadNode: TruffleString$ReadCharUTF16Node): Object;

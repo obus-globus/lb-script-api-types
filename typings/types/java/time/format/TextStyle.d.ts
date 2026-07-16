@@ -10,7 +10,7 @@ export class TextStyle extends Enum<TextStyle> {
     static SHORT_STANDALONE: TextStyle;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TextStyle;
-    static values(): (Object | null)[];
+    static values(): TextStyle[];
     private constructor(arg2: number, arg3: number)
     // private calendarStyle: number;
     // private zoneNameStyleIndex: number;

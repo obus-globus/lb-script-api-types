@@ -6,7 +6,7 @@ export class Win32ComputerSystem$ComputerSystemProperty extends Enum<Win32Comput
     static MODEL: Win32ComputerSystem$ComputerSystemProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Win32ComputerSystem$ComputerSystemProperty;
-    static values(): (Object | null)[];
+    static values(): Win32ComputerSystem$ComputerSystemProperty[];
     private constructor()
     name(): "MANUFACTURER" | "MODEL";
 }

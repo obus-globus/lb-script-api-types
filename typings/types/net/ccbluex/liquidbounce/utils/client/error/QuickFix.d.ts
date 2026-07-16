@@ -14,7 +14,7 @@ export class QuickFix extends Enum<QuickFix> {
     static getEntries(): QuickFix[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): QuickFix;
-    static values(): (Object | null)[];
+    static values(): QuickFix[];
     private constructor(description: string, testError: (param0: Throwable) => boolean, whatYouNeed: Instructions | null, whatToDo: Instructions | null)
     readonly description: string;
     readonly messages: { [key: string]: Instructions | null };

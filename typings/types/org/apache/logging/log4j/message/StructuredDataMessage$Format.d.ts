@@ -6,7 +6,7 @@ export class StructuredDataMessage$Format extends Enum<StructuredDataMessage$For
     static XML: StructuredDataMessage$Format;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): StructuredDataMessage$Format;
-    static values(): (Object | null)[];
+    static values(): StructuredDataMessage$Format[];
     private constructor()
     name(): "XML" | "FULL";
 }

@@ -35,7 +35,7 @@ export class Persona_PieceType extends Enum<Persona_PieceType> {
     static getByValue(paramarg0: number, paramarg1: Persona_PieceType): Persona_PieceType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Persona_PieceType;
-    static values(): (Object | null)[];
+    static values(): Persona_PieceType[];
     private constructor(arg2: number)
     private constructor(arg2: Persona_PieceType)
     readonly value: number;

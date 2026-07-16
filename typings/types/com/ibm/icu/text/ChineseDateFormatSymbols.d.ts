@@ -5,7 +5,6 @@ import type { ULocale } from '../../../../com/ibm/icu/util/ULocale.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
 import type { ResourceBundle } from '../../../../java/util/ResourceBundle.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ChineseDateFormatSymbols extends DateFormatSymbols {
     static ABBREVIATED: number;
     static DT_CONTEXT_COUNT: number;
@@ -16,8 +15,8 @@ export class ChineseDateFormatSymbols extends DateFormatSymbols {
     static SHORT: number;
     static STANDALONE: number;
     static WIDE: number;
-    static getAvailableLocales(): (Object | null)[];
-    static getAvailableULocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
+    static getAvailableULocales(): ULocale[];
     static getDateFormatBundle(paramarg0: Calendar, paramarg1: ULocale): ResourceBundle;
     static getDateFormatBundle(paramarg0: Calendar, paramarg1: Locale): ResourceBundle;
     static getDateFormatBundle(paramarg0: Class<Calendar>, paramarg1: ULocale): ResourceBundle;

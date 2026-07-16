@@ -10,7 +10,7 @@ export class WorldCreationUiState$SelectedGameMode extends Enum<WorldCreationUiS
     static SURVIVAL: WorldCreationUiState$SelectedGameMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): WorldCreationUiState$SelectedGameMode;
-    static values(): (Object | null)[];
+    static values(): WorldCreationUiState$SelectedGameMode[];
     private constructor(name: string, gameType: GameType)
     displayName: Component;
     gameType: GameType;

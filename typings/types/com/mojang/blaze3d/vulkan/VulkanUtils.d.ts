@@ -10,10 +10,7 @@ export class VulkanUtils extends Object {
     static crashIfFailure(paramdevice: VulkanDevice, paramresult: number, parammessage: string): void;
     static formatCheckpoints(paramqueueCheckpoints: CheckpointExtension$QueueCheckpoints[]): string;
     static hasAllBits(parambitfield: number, parambitmask: number): boolean;
-    static hasAllBits(parambitfield: number, parambitmask: number): boolean;
     static hasAnyBit(parambitfield: number, parambitmask: number): boolean;
-    static hasAnyBit(parambitfield: number, parambitmask: number): boolean;
-    static hasNoBit(parambitfield: number, parambitmask: number): boolean;
     static hasNoBit(parambitfield: number, parambitmask: number): boolean;
     static pipelineStageToString(parampipelineStage: number): string;
     static putArgb(paramvkClearColor: VkClearColorValue, paramargb: Vector4fc): VkClearColorValue;

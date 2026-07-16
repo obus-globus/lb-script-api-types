@@ -5,7 +5,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 export abstract class JSArrayDeleteIndexNode extends JavaScriptBaseNode {
     static create(paramstrict: boolean): JSArrayDeleteIndexNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(strict: boolean)
     // private strict: boolean;
     doCached(array: JSDynamicObject, arrayType: ScriptArray, index: number, cachedArrayType: ScriptArray): boolean;

@@ -21,7 +21,6 @@ export class SmokingRecipe extends AbstractCookingRecipe {
     static KEY_CODEC: Codec<ResourceKey<Recipe<any>>>;
     static MAP_CODEC: MapCodec<SmokingRecipe>;
     static SERIALIZER: RecipeSerializer<SmokingRecipe>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<any>>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, SmokingRecipe>;
     static cookingMapCodec(paramfactory: (param0: Recipe$CommonInfo, param1: AbstractCookingRecipe$CookingBookInfo, param2: Ingredient, param3: ItemStackTemplate, param4: number, param5: number) => AbstractCookingRecipe | null, paramdefaultCookingTime: number): MapCodec<AbstractCookingRecipe>;
     static cookingStreamCodec(paramfactory: (param0: Recipe$CommonInfo, param1: AbstractCookingRecipe$CookingBookInfo, param2: Ingredient, param3: ItemStackTemplate, param4: number, param5: number) => AbstractCookingRecipe | null): StreamCodec<RegistryFriendlyByteBuf, AbstractCookingRecipe>;

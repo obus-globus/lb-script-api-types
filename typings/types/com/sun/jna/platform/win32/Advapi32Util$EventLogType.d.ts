@@ -9,7 +9,7 @@ export class Advapi32Util$EventLogType extends Enum<Advapi32Util$EventLogType> {
     static Warning: Advapi32Util$EventLogType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Advapi32Util$EventLogType;
-    static values(): (Object | null)[];
+    static values(): Advapi32Util$EventLogType[];
     private constructor()
     name(): "Error" | "Warning" | "Informational" | "AuditSuccess" | "AuditFailure";
 }

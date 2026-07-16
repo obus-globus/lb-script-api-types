@@ -60,7 +60,7 @@ export class JSTemporalPlainYearMonthObject extends JSTemporalCalendarHolder {
     static getOrNull(paramobj: JSDynamicObject, paramkey: Object): Object;
     static getOwnProperty(paramobj: JSDynamicObject, paramkey: Object): PropertyDescriptor;
     static getOwnProperty(paramobj: JSDynamicObject, paramkey: Object, paramclassProfile: JSClassProfile): PropertyDescriptor;
-    static getPropertyArray(paramobj: JSDynamicObject): (Object | null)[];
+    static getPropertyArray(paramobj: JSDynamicObject): Property[];
     static getPropertyFlags(paramobj: JSDynamicObject, paramkey: Object): number;
     static getPrototype(paramobj: JSDynamicObject): JSDynamicObject;
     static getPrototype(paramobj: JSDynamicObject, paramjsclassProfile: JSClassProfile): JSDynamicObject;

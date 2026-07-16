@@ -34,7 +34,7 @@ export class EXTTransformFeedback extends Object {
     static glGetTransformFeedbackVaryingEXT(paramarg0: number, paramarg1: number, paramarg2: number[], paramarg3: number[], paramarg4: number[], paramarg5: ByteBuffer): void;
     static glGetTransformFeedbackVaryingEXT(paramarg0: number, paramarg1: number, paramarg2: IntBuffer, paramarg3: IntBuffer, paramarg4: IntBuffer, paramarg5: ByteBuffer): void;
     static glTransformFeedbackVaryingsEXT(paramarg0: number, paramarg1: CharSequence, paramarg2: number): void;
-    static glTransformFeedbackVaryingsEXT(paramarg0: number, paramarg1: (Object | null)[], paramarg2: number): void;
+    static glTransformFeedbackVaryingsEXT(paramarg0: number, paramarg1: CharSequence[], paramarg2: number): void;
     static glTransformFeedbackVaryingsEXT(paramarg0: number, paramarg1: PointerBuffer, paramarg2: number): void;
     static nglGetBooleanIndexedvEXT(paramarg0: number, paramarg1: number, paramarg2: number): void;
     static nglGetIntegerIndexedvEXT(paramarg0: number, paramarg1: number, paramarg2: number): void;

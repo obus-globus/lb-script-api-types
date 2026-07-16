@@ -26,7 +26,7 @@ export class DataType extends Enum<DataType> {
     static fromSafetensors(paramarg0: string): DataType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DataType;
-    static values(): (Object | null)[];
+    static values(): DataType[];
     private constructor(arg2: DataType$Format, arg3: number)
     readonly format: DataType$Format;
     readonly numOfBytes: number;

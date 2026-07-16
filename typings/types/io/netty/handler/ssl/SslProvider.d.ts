@@ -12,7 +12,7 @@ export class SslProvider extends Enum<SslProvider> {
     static isTlsv13Supported(paramarg0: SslProvider, paramarg1: { [key: string]: any }): boolean;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SslProvider;
-    static values(): (Object | null)[];
+    static values(): SslProvider[];
     private constructor()
     name(): "JDK" | "OPENSSL" | "OPENSSL_REFCNT";
 }

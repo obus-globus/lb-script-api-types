@@ -5,7 +5,7 @@ export class WordUtils extends Object {
     static capitalize(paramarg0: string, ...paramarg1: string[]): string;
     static capitalizeFully(paramarg0: string): string;
     static capitalizeFully(paramarg0: string, ...paramarg1: string[]): string;
-    static containsAllWords(paramarg0: CharSequence, ...paramarg1: (Object | null)[]): boolean;
+    static containsAllWords(paramarg0: CharSequence, ...paramarg1: CharSequence[]): boolean;
     static initials(paramarg0: string): string;
     static initials(paramarg0: string, ...paramarg1: string[]): string;
     static swapCase(paramarg0: string): string;

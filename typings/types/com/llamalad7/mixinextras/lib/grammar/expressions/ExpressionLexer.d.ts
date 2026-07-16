@@ -3,14 +3,13 @@ import type { Lexer } from '../../../../../../com/llamalad7/mixinextras/lib/antl
 import type { RuleContext } from '../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/RuleContext.d.ts'
 import type { Vocabulary } from '../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/Vocabulary.d.ts'
 import type { ATN } from '../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/atn/ATN.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ExpressionLexer extends Lexer {
     static VOCABULARY: Vocabulary;
     static _ATN: ATN;
-    static channelNames: (Object | null)[];
-    static modeNames: (Object | null)[];
-    static ruleNames: (Object | null)[];
-    static tokenNames: (Object | null)[];
+    static channelNames: string[];
+    static modeNames: string[];
+    static ruleNames: string[];
+    static tokenNames: string[];
     constructor(arg0: CharStream)
     // private IntLit_action(arg0: RuleContext, arg1: number): void;
     // private StringLit_action(arg0: RuleContext, arg1: number): void;

@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class GetOptionsObjectNodeGen extends GetOptionsObjectNode {
     static create(paramcontext: JSContext): GetOptionsObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private fromOther_isObjectNode_: IsObjectNode;
     // private state_0_: number;

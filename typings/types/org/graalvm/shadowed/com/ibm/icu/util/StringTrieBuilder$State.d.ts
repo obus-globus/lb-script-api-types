@@ -8,7 +8,7 @@ export class StringTrieBuilder$State extends Enum<StringTrieBuilder$State> {
     static BUILT: StringTrieBuilder$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): StringTrieBuilder$State;
-    static values(): (Object | null)[];
+    static values(): StringTrieBuilder$State[];
     private constructor()
     name(): "ADDING" | "BUILDING_FAST" | "BUILDING_SMALL" | "BUILT";
 }

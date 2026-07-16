@@ -7,7 +7,7 @@ export class FocusableTextWidget$BackgroundFill extends Enum<FocusableTextWidget
     static ON_FOCUS: FocusableTextWidget$BackgroundFill;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): FocusableTextWidget$BackgroundFill;
-    static values(): (Object | null)[];
+    static values(): FocusableTextWidget$BackgroundFill[];
     private constructor()
     name(): "ALWAYS" | "ON_FOCUS" | "NEVER";
 }

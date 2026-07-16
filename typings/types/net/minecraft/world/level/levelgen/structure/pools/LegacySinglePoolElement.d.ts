@@ -1,5 +1,4 @@
 import type { Either } from '../../../../../../../com/mojang/datafixers/util/Either.d.ts'
-import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Optional } from '../../../../../../../java/util/Optional.d.ts'
 import type { Function } from '../../../../../../../java/util/function/Function.d.ts'
@@ -20,9 +19,7 @@ import type { StructurePlaceSettings } from '../../../../../../../net/minecraft/
 import type { StructureProcessorList } from '../../../../../../../net/minecraft/world/level/levelgen/structure/templatesystem/StructureProcessorList.d.ts'
 import type { StructureTemplate } from '../../../../../../../net/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplate.d.ts'
 export class LegacySinglePoolElement extends SinglePoolElement {
-    static CODEC: Codec<StructurePoolElement>;
     static CODEC: MapCodec<LegacySinglePoolElement>;
-    static CODEC: MapCodec<SinglePoolElement>;
     static empty(): (param0: StructureTemplatePool$Projection) => EmptyPoolElement;
     static feature(paramfeature: Holder<PlacedFeature>): (param0: StructureTemplatePool$Projection) => FeaturePoolElement;
     static legacy(paramlocation: string): (param0: StructureTemplatePool$Projection) => LegacySinglePoolElement;

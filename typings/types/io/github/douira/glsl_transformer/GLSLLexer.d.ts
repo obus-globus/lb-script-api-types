@@ -1,5 +1,4 @@
 import type { VersionedGLSLLexer } from '../../../../io/github/douira/glsl_transformer/parser/VersionedGLSLLexer.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharStream } from '../../../../org/antlr/v4/runtime/CharStream.d.ts'
 import type { RuleContext } from '../../../../org/antlr/v4/runtime/RuleContext.d.ts'
 import type { Vocabulary } from '../../../../org/antlr/v4/runtime/Vocabulary.d.ts'
@@ -370,10 +369,10 @@ export class GLSLLexer extends VersionedGLSLLexer {
     static XOR_ASSIGN: number;
     static _ATN: ATN;
     static _serializedATN: string;
-    static channelNames: (Object | null)[];
-    static modeNames: (Object | null)[];
-    static ruleNames: (Object | null)[];
-    static tokenNames: (Object | null)[];
+    static channelNames: string[];
+    static modeNames: string[];
+    static ruleNames: string[];
+    static tokenNames: string[];
     constructor(arg0: CharStream)
     // private ATOMIC_UINT_sempred(arg0: RuleContext, arg1: number): boolean;
     // private COHERENT_sempred(arg0: RuleContext, arg1: number): boolean;

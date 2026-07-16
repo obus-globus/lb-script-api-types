@@ -7,7 +7,7 @@ import type { Rewritable } from '../../../../../../../com/viaversion/viaversion/
 import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class ToolRule extends Record implements Rewritable {
-    static ARRAY_TYPE: Type<(Object | null)[]>;
+    static ARRAY_TYPE: Type<ToolRule[]>;
     static TYPE: Type<ToolRule>;
     constructor(blocks: HolderSet, speed: number, correctForDrops: boolean)
     // private blocks: HolderSet;

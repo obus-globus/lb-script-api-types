@@ -9,7 +9,7 @@ export class ProtoBuf$TypeParameter$Variance extends Enum<ProtoBuf$TypeParameter
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: number): ProtoBuf$TypeParameter$Variance;
     static valueOf(paramarg0: string): ProtoBuf$TypeParameter$Variance;
-    static values(): (Object | null)[];
+    static values(): ProtoBuf$TypeParameter$Variance[];
     private constructor(arg2: number, arg3: number)
     // private value: number;
     getNumber(): number;

@@ -8,7 +8,7 @@ export class SocksRequestType extends Enum<SocksRequestType> {
     static UNKNOWN: SocksRequestType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SocksRequestType;
-    static values(): (Object | null)[];
+    static values(): SocksRequestType[];
     private constructor()
     name(): "INIT" | "AUTH" | "CMD" | "UNKNOWN";
 }

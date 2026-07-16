@@ -13,7 +13,7 @@ export class KillAuraRotationsValueGroup$KillAuraRotationTiming extends Enum<Kil
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): KillAuraRotationsValueGroup$KillAuraRotationTiming;
-    static values(): (Object | null)[];
+    static values(): KillAuraRotationsValueGroup$KillAuraRotationTiming[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "NORMAL" | "SNAP" | "ON_TICK";

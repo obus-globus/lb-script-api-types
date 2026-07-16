@@ -7,7 +7,7 @@ export class Protocol extends Enum<Protocol> {
     static UDP: Protocol;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Protocol;
-    static values(): (Object | null)[];
+    static values(): Protocol[];
     private constructor()
     isEqual(name: string): boolean;
     name(): "TCP" | "SSL" | "UDP";

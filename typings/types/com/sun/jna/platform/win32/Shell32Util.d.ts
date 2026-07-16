@@ -3,7 +3,7 @@ import type { WinDef$DWORD } from '../../../../../com/sun/jna/platform/win32/Win
 import type { WinDef$HWND } from '../../../../../com/sun/jna/platform/win32/WinDef$HWND.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class Shell32Util extends Object {
-    static CommandLineToArgv(paramarg0: string): (Object | null)[];
+    static CommandLineToArgv(paramarg0: string): string[];
     static getFolderPath(paramarg0: WinDef$HWND, paramarg1: number, paramarg2: WinDef$DWORD): string;
     static getFolderPath(paramarg0: number): string;
     static getKnownFolderPath(paramarg0: Guid$GUID): string;

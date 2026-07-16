@@ -5,6 +5,8 @@ import type { SerialKind } from '../../../kotlinx/serialization/descriptors/Seri
 export class NothingSerialDescriptor extends Object implements SerialDescriptor {
     static INSTANCE: NothingSerialDescriptor;
     readonly elementsCount: number;
+    /*not mapped: */ isInline(): boolean;
+    /*not mapped: */ isNullable(): boolean;
     readonly kind: SerialKind;
     readonly serialName: string;
     equals(other: Object | null): boolean;

@@ -18,7 +18,7 @@ export class ConcurrentHashMap$KeySpliterator<K extends unknown, V extends unkno
     characteristics(): number;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: K) => void): void;
-    getComparator(): (param0: Object) => boolean;
+    getComparator(): (param0: K, param1: K) => number;
     getExactSizeIfKnown(): number;
     hasCharacteristics(arg0: number): boolean;
     tryAdvance(arg0: (param0: K) => void): boolean;

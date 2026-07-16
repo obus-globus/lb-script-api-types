@@ -8,7 +8,6 @@ import type { JSClassProfile } from '../../../../../../com/oracle/truffle/js/run
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PropertySetNode$GenericPropertySetNode extends PropertySetNode$SetCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     // private foreignSetNode: PropertySetNode$ForeignPropertySetNode;
     // private isForeignObject: ConditionProfile;

@@ -10,7 +10,7 @@ export class BossEventOperationType extends Enum<BossEventOperationType> {
     static UPDATE_STYLE: BossEventOperationType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BossEventOperationType;
-    static values(): (Object | null)[];
+    static values(): BossEventOperationType[];
     private constructor()
     name(): "ADD" | "REMOVE" | "UPDATE_PROGRESS" | "UPDATE_NAME" | "UPDATE_STYLE" | "UPDATE_PROPERTIES";
 }

@@ -10,7 +10,7 @@ export class SocksAuthScheme extends Enum<SocksAuthScheme> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: number): SocksAuthScheme;
     static valueOf(paramarg0: string): SocksAuthScheme;
-    static values(): (Object | null)[];
+    static values(): SocksAuthScheme[];
     private constructor(arg2: number)
     // private b: number;
     byteValue(): number;

@@ -16,7 +16,7 @@ import type { FluidState } from '../../../../../net/minecraft/world/level/materi
 export class EmptyLevelChunk extends LevelChunk {
     static NBT_ATTACHMENT_KEY: string;
     static NO_FILLED_SECTION: number;
-    static getOrCreateOffsetList(paramlist: (Object | null)[], paramsectionIndex: number): (Object | null)[];
+    static getOrCreateOffsetList(paramlist: (Object | null)[][], paramsectionIndex: number): (Object | null)[];
     static problemPath(parampos: ChunkPos): () => string;
     constructor(level: Level, pos: ChunkPos, biome: Holder<Biome>)
     // private biome: Holder<Biome>;

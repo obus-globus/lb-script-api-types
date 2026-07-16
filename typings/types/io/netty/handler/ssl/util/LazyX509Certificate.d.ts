@@ -18,9 +18,9 @@ export class LazyX509Certificate extends X509Certificate {
     getExtensionValue(arg0: string): number[];
     getIssuerAlternativeNames(): (Object | null)[][];
     getIssuerDN(): Principal;
-    getIssuerUniqueID(): (Object | null)[];
+    getIssuerUniqueID(): boolean[];
     getIssuerX500Principal(): X500Principal;
-    getKeyUsage(): (Object | null)[];
+    getKeyUsage(): boolean[];
     getNonCriticalExtensionOIDs(): string[];
     getNotAfter(): Date;
     getNotBefore(): Date;
@@ -32,7 +32,7 @@ export class LazyX509Certificate extends X509Certificate {
     getSignature(): number[];
     getSubjectAlternativeNames(): (Object | null)[][];
     getSubjectDN(): Principal;
-    getSubjectUniqueID(): (Object | null)[];
+    getSubjectUniqueID(): boolean[];
     getSubjectX500Principal(): X500Principal;
     getTBSCertificate(): number[];
     getVersion(): number;

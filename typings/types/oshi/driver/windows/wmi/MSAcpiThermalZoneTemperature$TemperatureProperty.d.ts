@@ -5,7 +5,7 @@ export class MSAcpiThermalZoneTemperature$TemperatureProperty extends Enum<MSAcp
     static CURRENTTEMPERATURE: MSAcpiThermalZoneTemperature$TemperatureProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MSAcpiThermalZoneTemperature$TemperatureProperty;
-    static values(): (Object | null)[];
+    static values(): MSAcpiThermalZoneTemperature$TemperatureProperty[];
     private constructor()
     name(): "CURRENTTEMPERATURE";
 }

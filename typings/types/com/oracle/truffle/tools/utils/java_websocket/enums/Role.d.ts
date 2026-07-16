@@ -6,7 +6,7 @@ export class Role extends Enum<Role> {
     static SERVER: Role;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Role;
-    static values(): (Object | null)[];
+    static values(): Role[];
     private constructor()
     name(): "CLIENT" | "SERVER";
 }

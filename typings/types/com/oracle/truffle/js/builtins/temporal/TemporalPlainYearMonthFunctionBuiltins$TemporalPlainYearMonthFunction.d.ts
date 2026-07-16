@@ -12,7 +12,7 @@ export class TemporalPlainYearMonthFunctionBuiltins$TemporalPlainYearMonthFuncti
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TemporalPlainYearMonthFunctionBuiltins$TemporalPlainYearMonthFunction;
-    static values(): (Object | null)[];
+    static values(): TemporalPlainYearMonthFunctionBuiltins$TemporalPlainYearMonthFunction[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

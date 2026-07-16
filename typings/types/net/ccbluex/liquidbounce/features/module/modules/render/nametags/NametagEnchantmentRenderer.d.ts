@@ -1,5 +1,4 @@
 import type { Comparator } from '../../../../../../../../java/util/Comparator.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { ToggleableValueGroup } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ToggleableValueGroup.d.ts'
 import type { EnchantmentInfo } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/render/nametags/EnchantmentInfo.d.ts'
 import type { NametagEnchantmentRenderer$EnchantCell } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/render/nametags/NametagEnchantmentRenderer$EnchantCell.d.ts'
@@ -18,7 +17,7 @@ export class NametagEnchantmentRenderer extends ToggleableValueGroup {
     // private LABEL_VERTICAL_GAP: number;
     // private backgroundRadius: number;
     // private /*not mapped: */ getBackgroundRadius(): number;
-    // private enchantmentInfoComparator: (param0: Object) => boolean;
+    // private enchantmentInfoComparator: (param0: EnchantmentInfo, param1: EnchantmentInfo) => number;
     // private /*not mapped: */ getLabelBackgroundRadius(): number;
     // private /*not mapped: */ getLabelTextScale(): number;
     // private maxCountPerItem: number;

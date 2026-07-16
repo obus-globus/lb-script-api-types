@@ -17,7 +17,7 @@ export class SharedMemorySync extends Object {
     static doVolatilePutBigInt(paramtarget: JSTypedArrayObject, paramindex: number, paramvalue: BigInt, paramtypedArray: TypedArray$TypedBigIntArray): void;
     static getWaiterList(paramcontext: JSContext, paramtarget: JSDynamicObject, paramindexPos: number): (Object | null)[];
     static removeWaiter(paramwl: (Object | null)[], paramw: JSAgentWaiterList$WaiterRecord): void;
-    static removeWaiters(paramwl: (Object | null)[], paramcount: number): (Object | null)[];
+    static removeWaiters(paramwl: (Object | null)[], paramcount: number): JSAgentWaiterList$WaiterRecord[];
     static suspendAgent(paramagent: JSAgent, paramwl: (Object | null)[], paramwaiterRecord: JSAgentWaiterList$WaiterRecord): boolean;
     static wakeWaiters(paramwl: (Object | null)[]): void;
     private constructor()

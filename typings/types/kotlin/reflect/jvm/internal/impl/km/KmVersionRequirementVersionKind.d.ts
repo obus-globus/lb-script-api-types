@@ -8,7 +8,7 @@ export class KmVersionRequirementVersionKind extends Enum<KmVersionRequirementVe
     static UNKNOWN: KmVersionRequirementVersionKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): KmVersionRequirementVersionKind;
-    static values(): (Object | null)[];
+    static values(): KmVersionRequirementVersionKind[];
     private constructor()
     name(): "LANGUAGE_VERSION" | "COMPILER_VERSION" | "API_VERSION" | "UNKNOWN";
 }

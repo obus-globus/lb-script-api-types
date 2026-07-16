@@ -8,7 +8,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ToTemporalPartialDurationRecordNodeGen extends ToTemporalPartialDurationRecordNode {
     static create(): ToTemporalPartialDurationRecordNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private getDays_: PropertyGetNode;
     // private getHours_: PropertyGetNode;

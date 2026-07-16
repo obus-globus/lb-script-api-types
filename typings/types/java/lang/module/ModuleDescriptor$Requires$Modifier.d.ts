@@ -8,7 +8,7 @@ export class ModuleDescriptor$Requires$Modifier extends Enum<ModuleDescriptor$Re
     static TRANSITIVE: ModuleDescriptor$Requires$Modifier;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleDescriptor$Requires$Modifier;
-    static values(): (Object | null)[];
+    static values(): ModuleDescriptor$Requires$Modifier[];
     private constructor(arg2: number)
     // private mask: number;
     // private mask(): number;

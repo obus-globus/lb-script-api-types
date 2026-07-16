@@ -11,7 +11,7 @@ export class TokenChannel extends Enum<TokenChannel> {
     static getTokenChannel(paramarg0: Token): TokenChannel;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TokenChannel;
-    static values(): (Object | null)[];
+    static values(): TokenChannel[];
     private constructor()
     name(): "DEFAULT" | "HIDDEN" | "WHITESPACE" | "COMMENTS" | "PREPROCESSOR";
 }

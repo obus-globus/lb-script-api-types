@@ -17,7 +17,7 @@ export class NumberSkeletonImpl$ParseState extends Enum<NumberSkeletonImpl$Parse
     static STATE_UNIT_USAGE: NumberSkeletonImpl$ParseState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): NumberSkeletonImpl$ParseState;
-    static values(): (Object | null)[];
+    static values(): NumberSkeletonImpl$ParseState[];
     private constructor()
     name(): "STATE_NULL" | "STATE_SCIENTIFIC" | "STATE_FRACTION_PRECISION" | "STATE_PRECISION" | "STATE_INCREMENT_PRECISION" | "STATE_MEASURE_UNIT" | "STATE_PER_MEASURE_UNIT" | "STATE_IDENTIFIER_UNIT" | "STATE_UNIT_USAGE" | "STATE_CURRENCY_UNIT" | "STATE_INTEGER_WIDTH" | "STATE_NUMBERING_SYSTEM" | "STATE_SCALE";
 }

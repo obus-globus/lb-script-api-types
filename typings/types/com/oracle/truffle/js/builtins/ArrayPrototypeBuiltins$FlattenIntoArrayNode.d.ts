@@ -7,7 +7,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class ArrayPrototypeBuiltins$FlattenIntoArrayNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext, paramwithCallback: boolean): ArrayPrototypeBuiltins$FlattenIntoArrayNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, withMapCallback: boolean)
     // private forEachIndexNode: ForEachIndexCallNode;
     executeLong(target: Object, source: Object, sourceLen: number, start: number, depth: number, callback: Object, thisArg: Object): number;

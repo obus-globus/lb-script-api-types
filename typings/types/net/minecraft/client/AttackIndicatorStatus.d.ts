@@ -10,7 +10,7 @@ export class AttackIndicatorStatus extends Enum<AttackIndicatorStatus> {
     static OFF: AttackIndicatorStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): AttackIndicatorStatus;
-    static values(): (Object | null)[];
+    static values(): AttackIndicatorStatus[];
     private constructor(id: number, key: string)
     // private caption: Component;
     // private id: number;

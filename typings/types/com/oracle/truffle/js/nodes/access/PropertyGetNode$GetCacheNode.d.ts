@@ -5,7 +5,6 @@ import type { PropertyGetNode } from '../../../../../../com/oracle/truffle/js/no
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class PropertyGetNode$GetCacheNode extends PropertyCacheNode$CacheNode<PropertyGetNode$GetCacheNode> {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(receiverCheck: PropertyCacheNode$ReceiverCheckNode)
     constructor(receiverCheck: PropertyCacheNode$ReceiverCheckNode, specializationFlags: number)
     // private next: PropertyGetNode$GetCacheNode;

@@ -7,7 +7,7 @@ export class RenderingFormat extends Enum<RenderingFormat> {
     static PLAIN: RenderingFormat;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RenderingFormat;
-    static values(): (Object | null)[];
+    static values(): RenderingFormat[];
     constructor(arg2: DefaultConstructorMarker)
     escape(arg0: string): string;
     name(): "PLAIN" | "HTML";

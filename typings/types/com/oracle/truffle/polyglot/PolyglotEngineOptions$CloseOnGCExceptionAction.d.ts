@@ -7,7 +7,7 @@ export class PolyglotEngineOptions$CloseOnGCExceptionAction extends Enum<Polyglo
     static Throw: PolyglotEngineOptions$CloseOnGCExceptionAction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PolyglotEngineOptions$CloseOnGCExceptionAction;
-    static values(): (Object | null)[];
+    static values(): PolyglotEngineOptions$CloseOnGCExceptionAction[];
     private constructor()
     name(): "Ignore" | "Print" | "Throw";
 }

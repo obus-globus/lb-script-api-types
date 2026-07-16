@@ -4,7 +4,6 @@ import type { At } from '../../../../../org/spongepowered/asm/mixin/injection/At
 import type { Constant } from '../../../../../org/spongepowered/asm/mixin/injection/Constant.d.ts'
 import type { Slice } from '../../../../../org/spongepowered/asm/mixin/injection/Slice.d.ts'
 export interface WrapOperation extends Annotation, Object{
-    constructor(allow: number, at: At[], constant: Constant[], expect: number, method: string[], order: number, remap: boolean, require: number, slice: Slice[])
     /*not mapped: */ allow(): number;
     /*not mapped: */ at(): At[];
     /*not mapped: */ constant(): Constant[];

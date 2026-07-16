@@ -36,7 +36,6 @@ export class VkIndirectExecutionSetInfoEXT extends Struct<VkIndirectExecutionSet
     static npShaderInfo(paramarg0: number): VkIndirectExecutionSetShaderInfoEXT;
     static npShaderInfo(paramarg0: number, paramarg1: VkIndirectExecutionSetShaderInfoEXT): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     close(): void;

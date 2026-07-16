@@ -6,7 +6,7 @@ export class LocaleMatcher$Direction extends Enum<LocaleMatcher$Direction> {
     static WITH_ONE_WAY: LocaleMatcher$Direction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): LocaleMatcher$Direction;
-    static values(): (Object | null)[];
+    static values(): LocaleMatcher$Direction[];
     private constructor()
     name(): "WITH_ONE_WAY" | "ONLY_TWO_WAY";
 }

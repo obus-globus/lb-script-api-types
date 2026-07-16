@@ -17,7 +17,7 @@ export class ClientPlayMode extends Enum<ClientPlayMode> {
     static getByValue(paramarg0: number, paramarg1: ClientPlayMode): ClientPlayMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ClientPlayMode;
-    static values(): (Object | null)[];
+    static values(): ClientPlayMode[];
     private constructor(arg2: number)
     private constructor(arg2: ClientPlayMode)
     readonly value: number;

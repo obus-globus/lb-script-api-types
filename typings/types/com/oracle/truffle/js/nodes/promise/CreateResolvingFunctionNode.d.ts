@@ -9,7 +9,6 @@ import type { Pair } from '../../../../../../com/oracle/truffle/js/runtime/util/
 export class CreateResolvingFunctionNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): CreateResolvingFunctionNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private context: JSContext;
     // private setAlreadyResolvedNode: PropertySetNode;

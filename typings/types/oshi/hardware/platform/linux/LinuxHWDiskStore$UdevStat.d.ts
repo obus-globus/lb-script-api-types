@@ -10,7 +10,7 @@ export class LinuxHWDiskStore$UdevStat extends Enum<LinuxHWDiskStore$UdevStat> {
     static WRITE_BYTES: LinuxHWDiskStore$UdevStat;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LinuxHWDiskStore$UdevStat;
-    static values(): (Object | null)[];
+    static values(): LinuxHWDiskStore$UdevStat[];
     private constructor(arg2: number)
     readonly order: number;
     getOrder(): number;

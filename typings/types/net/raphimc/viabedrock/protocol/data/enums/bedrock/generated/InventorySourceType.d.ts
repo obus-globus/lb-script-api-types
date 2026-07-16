@@ -13,7 +13,7 @@ export class InventorySourceType extends Enum<InventorySourceType> {
     static getByValue(paramarg0: number, paramarg1: InventorySourceType): InventorySourceType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): InventorySourceType;
-    static values(): (Object | null)[];
+    static values(): InventorySourceType[];
     private constructor(arg2: number)
     private constructor(arg2: InventorySourceType)
     readonly value: number;

@@ -11,8 +11,8 @@ import type { AbstractObjectArray } from '../../../../../../../com/oracle/truffl
 import type { JSDynamicObject } from '../../../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class ConstantEmptyPrototypeArray extends AbstractConstantEmptyArray {
-    static EMPTY_OBJECT_ARRAY: (Object | null)[];
-    static createConstantArray(paramelements: (Object | null)[]): AbstractConstantArray;
+    static EMPTY_OBJECT_ARRAY: Object[];
+    static createConstantArray(paramelements: Object[]): AbstractConstantArray;
     static createConstantEmptyArray(): AbstractConstantArray;
     static createConstantEmptyPrototypeArray(): AbstractConstantArray;
     static makeRangeList(paramrangeStart: number, paramrangeEnd: number): Object[];

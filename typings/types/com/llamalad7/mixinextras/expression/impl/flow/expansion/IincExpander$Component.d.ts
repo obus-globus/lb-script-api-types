@@ -9,7 +9,7 @@ export class IincExpander$Component extends Enum<IincExpander$Component> impleme
     static STORE: IincExpander$Component;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): IincExpander$Component;
-    static values(): (Object | null)[];
+    static values(): IincExpander$Component[];
     private constructor()
     name(): "LOAD" | "CST" | "ADD" | "STORE";
 }

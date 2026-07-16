@@ -13,7 +13,7 @@ export abstract class BinaryOutput extends Object {
     // private ensureBufferSize(headerSize: number, dataSize: number): void;
     getPosition(): number;
     skip(numberOfBytes: number): void;
-    write(array: (Object | null)[], off: number, len: number): void;
+    write(array: boolean[], off: number, len: number): void;
     write(array: number[], off: number, len: number): void;
     write(array: string[], off: number, len: number): void;
     write(b: number): void;

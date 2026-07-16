@@ -1,6 +1,5 @@
 import type { Serializable } from '../../../../../../java/io/Serializable.d.ts'
 import type { TimeUnit } from '../../../../../../java/util/concurrent/TimeUnit.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../../java/lang/Throwable.d.ts'
 import type { Appender } from '../../../../../../org/apache/logging/log4j/core/Appender.d.ts'
 import type { ErrorHandler } from '../../../../../../org/apache/logging/log4j/core/ErrorHandler.d.ts'
@@ -14,7 +13,7 @@ export abstract class AbstractAppender extends AbstractFilterable implements App
     static DEFAULT_STOP_TIMEOUT: number;
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
     static ELEMENT_TYPE: string;
-    static EMPTY_ARRAY: (Object | null)[];
+    static EMPTY_ARRAY: Appender[];
     static parseInt(params: string, paramdefaultValue: number): number;
     constructor(name: string, filter: Filter, layout: Layout<Serializable>)
     constructor(name: string, filter: Filter, layout: Layout<Serializable>, ignoreExceptions: boolean)

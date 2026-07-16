@@ -7,7 +7,7 @@ export class HitResult$Type extends Enum<HitResult$Type> {
     static MISS: HitResult$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): HitResult$Type;
-    static values(): (Object | null)[];
+    static values(): HitResult$Type[];
     private constructor()
     name(): "MISS" | "BLOCK" | "ENTITY";
 }

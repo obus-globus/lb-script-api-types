@@ -13,7 +13,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ToTemporalMonthDayNodeGen extends ToTemporalMonthDayNode {
     static create(): ToTemporalMonthDayNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private fromJavaString_: TruffleString$FromJavaStringNode;
     // private getOptionsObject_: GetOptionsObjectNode;

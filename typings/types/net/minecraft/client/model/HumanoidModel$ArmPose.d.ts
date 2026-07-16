@@ -19,7 +19,7 @@ export class HumanoidModel$ArmPose extends Enum<HumanoidModel$ArmPose> {
     static TOOT_HORN: HumanoidModel$ArmPose;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): HumanoidModel$ArmPose;
-    static values(): (Object | null)[];
+    static values(): HumanoidModel$ArmPose[];
     private constructor(twoHanded: boolean, affectsOffhandPose: boolean)
     // private affectsOffhandPose: boolean;
     readonly twoHanded: boolean;

@@ -28,7 +28,7 @@ export class CharDirectionality extends Enum<CharDirectionality> implements Seri
     static getEntries(): CharDirectionality[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CharDirectionality;
-    static values(): (Object | null)[];
+    static values(): CharDirectionality[];
     private constructor(value: number)
     readonly value: number;
     name(): "UNDEFINED" | "LEFT_TO_RIGHT" | "RIGHT_TO_LEFT" | "RIGHT_TO_LEFT_ARABIC" | "EUROPEAN_NUMBER" | "EUROPEAN_NUMBER_SEPARATOR" | "EUROPEAN_NUMBER_TERMINATOR" | "ARABIC_NUMBER" | "COMMON_NUMBER_SEPARATOR" | "NONSPACING_MARK" | "BOUNDARY_NEUTRAL" | "PARAGRAPH_SEPARATOR" | "SEGMENT_SEPARATOR" | "WHITESPACE" | "OTHER_NEUTRALS" | "LEFT_TO_RIGHT_EMBEDDING" | "LEFT_TO_RIGHT_OVERRIDE" | "RIGHT_TO_LEFT_EMBEDDING" | "RIGHT_TO_LEFT_OVERRIDE" | "POP_DIRECTIONAL_FORMAT";

@@ -8,7 +8,7 @@ export class CefPrintSettings$DuplexMode extends Enum<CefPrintSettings$DuplexMod
     static DUPLEX_MODE_UNKNOWN: CefPrintSettings$DuplexMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CefPrintSettings$DuplexMode;
-    static values(): (Object | null)[];
+    static values(): CefPrintSettings$DuplexMode[];
     private constructor()
     name(): "DUPLEX_MODE_UNKNOWN" | "DUPLEX_MODE_SIMPLEX" | "DUPLEX_MODE_LONG_EDGE" | "DUPLEX_MODE_SHORT_EDGE";
 }

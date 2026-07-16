@@ -13,7 +13,7 @@ export class BookEditAction extends Enum<BookEditAction> {
     static getByValue(paramarg0: number, paramarg1: BookEditAction): BookEditAction;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BookEditAction;
-    static values(): (Object | null)[];
+    static values(): BookEditAction[];
     private constructor(arg2: number)
     private constructor(arg2: BookEditAction)
     readonly value: number;

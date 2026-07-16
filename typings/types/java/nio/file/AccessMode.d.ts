@@ -7,7 +7,7 @@ export class AccessMode extends Enum<AccessMode> {
     static WRITE: AccessMode;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AccessMode;
-    static values(): (Object | null)[];
+    static values(): AccessMode[];
     private constructor()
     name(): "READ" | "WRITE" | "EXECUTE";
 }

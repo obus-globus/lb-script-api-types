@@ -11,7 +11,7 @@ export class ProgramArrayId extends Enum<ProgramArrayId> {
     static ShadowComposite: ProgramArrayId;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ProgramArrayId;
-    static values(): (Object | null)[];
+    static values(): ProgramArrayId[];
     private constructor(arg2: ProgramGroup, arg3: number)
     readonly group: ProgramGroup;
     readonly numPrograms: number;

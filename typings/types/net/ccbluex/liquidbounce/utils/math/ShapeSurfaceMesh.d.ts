@@ -9,8 +9,8 @@ import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 import type { Shapes$DoubleLineConsumer } from '../../../../../net/minecraft/world/phys/shapes/Shapes$DoubleLineConsumer.d.ts'
 export class ShapeSurfaceMesh extends Object {
     static Companion: ShapeSurfaceMesh$Companion;
-    constructor(xs: number[], ys: number[], zs: number[], occupancy: (Object | null)[])
-    // private occupancy: (Object | null)[];
+    constructor(xs: number[], ys: number[], zs: number[], occupancy: boolean[])
+    // private occupancy: boolean[];
     // private xSize: number;
     // private xs: number[];
     // private ySize: number;

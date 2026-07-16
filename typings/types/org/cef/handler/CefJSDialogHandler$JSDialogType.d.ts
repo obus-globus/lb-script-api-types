@@ -7,7 +7,7 @@ export class CefJSDialogHandler$JSDialogType extends Enum<CefJSDialogHandler$JSD
     static JSDIALOGTYPE_PROMPT: CefJSDialogHandler$JSDialogType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CefJSDialogHandler$JSDialogType;
-    static values(): (Object | null)[];
+    static values(): CefJSDialogHandler$JSDialogType[];
     private constructor()
     name(): "JSDIALOGTYPE_ALERT" | "JSDIALOGTYPE_CONFIRM" | "JSDIALOGTYPE_PROMPT";
 }

@@ -1,5 +1,4 @@
 import type { BigInteger } from '../../../../../../../../java/math/BigInteger.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { AbstractPBDataStructureFactory } from '../../../../../../../../net/fabricmc/loader/impl/lib/sat4j/pb/constraints/AbstractPBDataStructureFactory.d.ts'
 import type { AbstractPBDataStructureFactory$INormalizer } from '../../../../../../../../net/fabricmc/loader/impl/lib/sat4j/pb/constraints/AbstractPBDataStructureFactory$INormalizer.d.ts'
 import type { ICardConstructor } from '../../../../../../../../net/fabricmc/loader/impl/lib/sat4j/pb/constraints/ICardConstructor.d.ts'
@@ -10,7 +9,7 @@ import type { IVecInt } from '../../../../../../../../net/fabricmc/loader/impl/l
 export abstract class AbstractPBClauseCardConstrDataStructure extends AbstractPBDataStructureFactory {
     static FOR_COMPETITION: AbstractPBDataStructureFactory$INormalizer;
     static NO_COMPETITION: AbstractPBDataStructureFactory$INormalizer;
-    static sumOfCoefficients(paramarg0: (Object | null)[]): BigInteger;
+    static sumOfCoefficients(paramarg0: BigInteger[]): BigInteger;
     constructor(arg0: IClauseConstructor, arg1: ICardConstructor, arg2: IPBConstructor)
     // private icardc: ICardConstructor;
     // private iclausec: IClauseConstructor;

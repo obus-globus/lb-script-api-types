@@ -15,7 +15,7 @@ export class JsonGenerator$Feature extends Enum<JsonGenerator$Feature> {
     static collectDefaults(): number;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): JsonGenerator$Feature;
-    static values(): (Object | null)[];
+    static values(): JsonGenerator$Feature[];
     private constructor(arg2: boolean)
     // private _defaultState: boolean;
     // private _mask: number;

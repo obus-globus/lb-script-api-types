@@ -6,7 +6,6 @@ import type { SimpleArrayList } from '../../../../../../com/oracle/truffle/js/ru
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class IterableToListNodeGen$Uncached extends IterableToListNode implements UnadoptableNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     execute(arg0Value: IteratorRecord): SimpleArrayList<Object>;
 }

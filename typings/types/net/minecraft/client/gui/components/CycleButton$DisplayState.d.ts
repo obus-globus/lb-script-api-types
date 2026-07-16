@@ -7,7 +7,7 @@ export class CycleButton$DisplayState extends Enum<CycleButton$DisplayState> {
     static VALUE: CycleButton$DisplayState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CycleButton$DisplayState;
-    static values(): (Object | null)[];
+    static values(): CycleButton$DisplayState[];
     private constructor()
     name(): "NAME_AND_VALUE" | "VALUE" | "HIDE";
 }

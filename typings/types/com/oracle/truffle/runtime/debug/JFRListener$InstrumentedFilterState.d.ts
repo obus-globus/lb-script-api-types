@@ -7,7 +7,7 @@ export class JFRListener$InstrumentedFilterState extends Enum<JFRListener$Instru
     static NEW: JFRListener$InstrumentedFilterState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): JFRListener$InstrumentedFilterState;
-    static values(): (Object | null)[];
+    static values(): JFRListener$InstrumentedFilterState[];
     private constructor()
     name(): "NEW" | "ACTIVE" | "INACTIVE";
 }

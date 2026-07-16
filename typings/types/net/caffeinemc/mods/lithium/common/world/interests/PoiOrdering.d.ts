@@ -5,6 +5,6 @@ import type { PoiManager } from '../../../../../../../net/minecraft/world/entity
 export interface PoiOrdering extends Object {
     checkOrderOrThrow(arg0: BlockPos, arg1: PoiManager, arg2: BlockPos[]): void;
     compare(arg0: BlockPos, arg1: PoiManager, arg2: BlockPos, arg3: BlockPos): number;
-    getAsComparator(arg0: BlockPos, arg1: PoiManager): (param0: Object) => boolean;
+    getAsComparator(arg0: BlockPos, arg1: PoiManager): (param0: BlockPos, param1: BlockPos) => number;
     isOrdered(arg0: BlockPos, arg1: PoiManager, arg2: BlockPos[]): boolean;
 }

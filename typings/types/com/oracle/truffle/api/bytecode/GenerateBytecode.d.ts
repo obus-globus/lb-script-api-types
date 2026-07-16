@@ -3,7 +3,6 @@ import type { Annotation } from '../../../../../java/lang/annotation/Annotation.
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { KClass } from '../../../../../kotlin/reflect/KClass.d.ts'
 export interface GenerateBytecode extends Annotation, Object{
-    constructor(additionalAssertions: boolean, allowUnsafe: boolean, boxingEliminationTypes: KClass<Object>[], defaultLocalValue: string, defaultUncachedThreshold: string, enableBlockScoping: boolean, enableBytecodeDebugListener: boolean, enableMaterializedLocalAccesses: boolean, enableQuickening: boolean, enableRootBodyTagging: boolean, enableRootTagging: boolean, enableSerialization: boolean, enableSpecializationIntrospection: boolean, enableTagInstrumentation: boolean, enableUncachedInterpreter: boolean, enableYield: boolean, languageClass: KClass<TruffleLanguage<Object>>, storeBytecodeIndexInFrame: boolean, tagTreeNodeLibrary: KClass<Object>, variadicStackLimit: string)
     /*not mapped: */ additionalAssertions(): boolean;
     /*not mapped: */ allowUnsafe(): boolean;
     /*not mapped: */ boxingEliminationTypes(): KClass<Object>[];

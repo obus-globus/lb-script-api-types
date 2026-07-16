@@ -6,7 +6,7 @@ import type { Supplier } from '../../../../../org/apache/logging/log4j/util/Supp
 export class LambdaUtil extends Object {
     static get(paramsupplier: () => Object): Object;
     static get(paramsupplier: () => Message): Message;
-    static getAll(paramsuppliers: Object | null): (Object | null)[];
+    static getAll(paramsuppliers: () => Object[]): Object[];
     static getMessage(paramsupplier: () => Object, parammessageFactory: MessageFactory): Message;
     private constructor()
 }

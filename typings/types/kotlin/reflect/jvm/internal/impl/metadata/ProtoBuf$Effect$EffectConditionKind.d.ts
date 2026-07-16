@@ -9,7 +9,7 @@ export class ProtoBuf$Effect$EffectConditionKind extends Enum<ProtoBuf$Effect$Ef
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: number): ProtoBuf$Effect$EffectConditionKind;
     static valueOf(paramarg0: string): ProtoBuf$Effect$EffectConditionKind;
-    static values(): (Object | null)[];
+    static values(): ProtoBuf$Effect$EffectConditionKind[];
     private constructor(arg2: number, arg3: number)
     // private value: number;
     getNumber(): number;

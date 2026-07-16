@@ -6,7 +6,7 @@ export class Authenticator$RequestorType extends Enum<Authenticator$RequestorTyp
     static SERVER: Authenticator$RequestorType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Authenticator$RequestorType;
-    static values(): (Object | null)[];
+    static values(): Authenticator$RequestorType[];
     private constructor()
     name(): "PROXY" | "SERVER";
 }

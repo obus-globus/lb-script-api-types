@@ -13,7 +13,7 @@ export class ModuleAnimations$EquipOffset$Ignores extends Enum<ModuleAnimations$
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleAnimations$EquipOffset$Ignores;
-    static values(): (Object | null)[];
+    static values(): ModuleAnimations$EquipOffset$Ignores[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "BLOCKING" | "PLACE" | "AMOUNT";

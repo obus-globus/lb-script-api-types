@@ -9,7 +9,6 @@ export class JSFunctionOneArgumentNode extends AbstractFunctionArgumentsNode {
     static cloneUninitialized(paramnode: AbstractFunctionArgumentsNode | null, parammaterializedTags: Class<Tag>[]): AbstractFunctionArgumentsNode | null;
     static create(paramchild: JavaScriptNode): AbstractFunctionArgumentsNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(child: JavaScriptNode)
     // private child: JavaScriptNode;
     copyUninitialized(materializedTags: Class<Tag>[]): AbstractFunctionArgumentsNode;

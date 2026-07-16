@@ -3,9 +3,9 @@ import type { BasicFileAttributes } from '../../../../../../../../java/nio/file/
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { PathCondition } from '../../../../../../../../org/apache/logging/log4j/core/appender/rolling/action/PathCondition.d.ts'
 export class IfAny extends Object implements PathCondition {
-    static EMPTY_ARRAY: (Object | null)[];
-    static copy(...paramsource: (Object | null)[]): (Object | null)[];
-    static createOrCondition(...paramcomponents: (Object | null)[]): IfAny;
+    static EMPTY_ARRAY: PathCondition[];
+    static copy(...paramsource: PathCondition[]): PathCondition[];
+    static createOrCondition(...paramcomponents: PathCondition[]): IfAny;
     private constructor(...filters: PathCondition[])
     // private components: PathCondition[];
     accept(baseDir: Path, relativePath: Path, attrs: BasicFileAttributes): boolean;

@@ -11,7 +11,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class SetNumberFormatDigitOptionsNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): SetNumberFormatDigitOptionsNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private errorBranch: BranchProfile;
     // private getMaxFracDigitsOption: PropertyGetNode;

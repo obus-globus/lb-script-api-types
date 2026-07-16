@@ -17,8 +17,8 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class AtomicsBuiltinsFactory$AtomicsComputeNodeGen extends AtomicsBuiltins$AtomicsComputeNode {
     static ARGUMENTS: string;
     static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
-    static create(paramcontext: JSContext, parambuiltin: JSBuiltin, paramintOperator: (param0: number, param1: number) => number, parambigIntOperator: (param0: BigInt, param1: BigInt) => BigInt, paramarguments: (Object | null)[]): AtomicsBuiltins$AtomicsComputeNode;
+    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
+    static create(paramcontext: JSContext, parambuiltin: JSBuiltin, paramintOperator: (param0: number, param1: number) => number, parambigIntOperator: (param0: BigInt, param1: BigInt) => BigInt, paramarguments: JavaScriptNode[]): AtomicsBuiltins$AtomicsComputeNode;
     static createBuiltin(paramctx: JSContext, parambuiltin: JSBuiltin, paramconstruct: boolean, paramnewTarget: boolean): JSBuiltinNode;
     static findBlockScopeNode(paramnode: Node): Node;
     static isDirectBigInt64Array(paramta: TypedArray): boolean;
@@ -31,7 +31,6 @@ export class AtomicsBuiltinsFactory$AtomicsComputeNodeGen extends AtomicsBuiltin
     static isDirectUint8Array(paramta: TypedArray): boolean;
     static isInt32SharedBufferView(paramobject: JSTypedArrayObject): boolean;
     static isSharedBufferView(paramobject: JSTypedArrayObject): boolean;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;

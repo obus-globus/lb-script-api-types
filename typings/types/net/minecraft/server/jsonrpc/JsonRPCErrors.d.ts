@@ -11,7 +11,7 @@ export class JsonRPCErrors extends Enum<JsonRPCErrors> {
     static PARSE_ERROR: JsonRPCErrors;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): JsonRPCErrors;
-    static values(): (Object | null)[];
+    static values(): JsonRPCErrors[];
     private constructor(errorCode: number, message: string)
     // private errorCode: number;
     // private message: string;

@@ -7,7 +7,7 @@ export class ServerPackManager$ActivationStatus extends Enum<ServerPackManager$A
     static PENDING: ServerPackManager$ActivationStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ServerPackManager$ActivationStatus;
-    static values(): (Object | null)[];
+    static values(): ServerPackManager$ActivationStatus[];
     private constructor()
     name(): "INACTIVE" | "PENDING" | "ACTIVE";
 }

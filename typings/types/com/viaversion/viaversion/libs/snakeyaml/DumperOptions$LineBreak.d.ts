@@ -8,7 +8,7 @@ export class DumperOptions$LineBreak extends Enum<DumperOptions$LineBreak> {
     static getPlatformLineBreak(): DumperOptions$LineBreak;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DumperOptions$LineBreak;
-    static values(): (Object | null)[];
+    static values(): DumperOptions$LineBreak[];
     private constructor(arg2: string)
     // private lineBreak: string;
     getString(): string;

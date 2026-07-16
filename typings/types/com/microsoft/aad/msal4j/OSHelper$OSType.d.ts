@@ -7,7 +7,7 @@ export class OSHelper$OSType extends Enum<OSHelper$OSType> {
     static WINDOWS: OSHelper$OSType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): OSHelper$OSType;
-    static values(): (Object | null)[];
+    static values(): OSHelper$OSType[];
     private constructor()
     name(): "MAC" | "WINDOWS" | "LINUX";
 }

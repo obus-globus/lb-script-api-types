@@ -16,7 +16,7 @@ export class ThreadInformation$ThreadPerformanceProperty extends Enum<ThreadInfo
     static THREADWAITREASON: ThreadInformation$ThreadPerformanceProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ThreadInformation$ThreadPerformanceProperty;
-    static values(): (Object | null)[];
+    static values(): ThreadInformation$ThreadPerformanceProperty[];
     private constructor(arg2: string)
     readonly counter: string;
     getCounter(): string;

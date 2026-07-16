@@ -7,7 +7,7 @@ export class ReportType extends Enum<ReportType> {
     static USERNAME: ReportType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ReportType;
-    static values(): (Object | null)[];
+    static values(): ReportType[];
     private constructor(name: string)
     // private backendName: string;
     backendName(): string;

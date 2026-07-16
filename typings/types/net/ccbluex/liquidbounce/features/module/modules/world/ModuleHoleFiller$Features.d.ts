@@ -15,7 +15,7 @@ export class ModuleHoleFiller$Features extends Enum<ModuleHoleFiller$Features> i
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleHoleFiller$Features;
-    static values(): (Object | null)[];
+    static values(): ModuleHoleFiller$Features[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "SMART" | "PREVENT_SELF_FILL" | "ONLY_WHEN_SELF_IN_HOLE" | "CHECK_MOVEMENT" | "ONLY_ONE_BY_ONE";

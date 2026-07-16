@@ -13,7 +13,7 @@ export class ComplexInventoryTransaction_Type extends Enum<ComplexInventoryTrans
     static getByValue(paramarg0: number, paramarg1: ComplexInventoryTransaction_Type): ComplexInventoryTransaction_Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ComplexInventoryTransaction_Type;
-    static values(): (Object | null)[];
+    static values(): ComplexInventoryTransaction_Type[];
     private constructor(arg2: number)
     private constructor(arg2: ComplexInventoryTransaction_Type)
     readonly value: number;

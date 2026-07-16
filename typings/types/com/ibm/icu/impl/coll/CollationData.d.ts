@@ -6,7 +6,7 @@ export class CollationData extends Object {
     base: CollationData;
     // private ce32s: number[];
     // private ces: number[];
-    compressibleBytes: (Object | null)[];
+    compressibleBytes: boolean[];
     // private contexts: string;
     fastLatinTable: string[];
     // private fastLatinTableHeader: string[];

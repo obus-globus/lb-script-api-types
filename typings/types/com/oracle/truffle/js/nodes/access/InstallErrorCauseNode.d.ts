@@ -9,7 +9,6 @@ import type { JSObject } from '../../../../../../com/oracle/truffle/js/runtime/o
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class InstallErrorCauseNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private createNonEnumerableDataPropertyNode: CreateDataPropertyNode;
     // private getPropertyNode: PropertyGetNode;

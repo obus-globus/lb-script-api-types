@@ -8,9 +8,8 @@ import type { JSToPropertyKeyNode } from '../../../../../../com/oracle/truffle/j
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ObjectLiteralNode$ComputedAutoAccessorDataMemberNode extends ObjectLiteralNode$AutoAccessorDataMemberNode {
-    static EMPTY: (Object | null)[];
-    static cloneUninitialized(parammembers: (Object | null)[], parammaterializedTags: Class<Tag>[]): (Object | null)[];
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
+    static EMPTY: ObjectLiteralNode$ObjectLiteralMemberNode[];
+    static cloneUninitialized(parammembers: ObjectLiteralNode$ObjectLiteralMemberNode[], parammaterializedTags: Class<Tag>[]): ObjectLiteralNode$ObjectLiteralMemberNode[];
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(keyNode: JavaScriptNode, isStatic: boolean, attributes: number, valueNode: JavaScriptNode)
     // private keyNode: JavaScriptNode;

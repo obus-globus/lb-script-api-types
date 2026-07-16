@@ -17,7 +17,6 @@ export class SlotDisplay$SmithingTrimDemoSlotDisplay extends Record implements S
     static CODEC: Codec<SlotDisplay>;
     static MAP_CODEC: MapCodec<SlotDisplay$SmithingTrimDemoSlotDisplay>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, SlotDisplay$SmithingTrimDemoSlotDisplay>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, SlotDisplay>;
     static TYPE: SlotDisplay$Type<SlotDisplay$SmithingTrimDemoSlotDisplay>;
     constructor(base: SlotDisplay, material: SlotDisplay, pattern: Holder<TrimPattern>)
     // private base: SlotDisplay;

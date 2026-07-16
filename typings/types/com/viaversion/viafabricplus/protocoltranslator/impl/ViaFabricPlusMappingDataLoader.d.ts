@@ -8,7 +8,6 @@ import type { Block } from '../../../../../net/minecraft/world/level/block/Block
 export class ViaFabricPlusMappingDataLoader extends MappingDataLoader {
     static BLOCK_MATERIALS: { [key: string]: Map<ProtocolVersion, string> };
     static INSTANCE: ViaFabricPlusMappingDataLoader;
-    static INSTANCE: MappingDataLoader;
     static MAPPINGS_READER: TagReader<Map$Entry<string, Tag>[]>;
     static MATERIALS: { [key: string]: ViaFabricPlusMappingDataLoader$Material };
     static getBlockMaterial(paramarg0: Block): string;

@@ -9,7 +9,7 @@ export class RealmsAvailability$Type extends Enum<RealmsAvailability$Type> {
     static UNEXPECTED_ERROR: RealmsAvailability$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RealmsAvailability$Type;
-    static values(): (Object | null)[];
+    static values(): RealmsAvailability$Type[];
     private constructor()
     name(): "SUCCESS" | "INCOMPATIBLE_CLIENT" | "NEEDS_PARENTAL_CONSENT" | "AUTHENTICATION_ERROR" | "UNEXPECTED_ERROR";
 }

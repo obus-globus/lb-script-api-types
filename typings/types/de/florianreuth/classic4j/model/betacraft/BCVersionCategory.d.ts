@@ -10,7 +10,7 @@ export class BCVersionCategory extends Enum<BCVersionCategory> {
     static RELEASE: BCVersionCategory;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BCVersionCategory;
-    static values(): (Object | null)[];
+    static values(): BCVersionCategory[];
     private constructor()
     name(): "RELEASE" | "CLASSIC" | "INDEV" | "INFDEV" | "ALPHA" | "BETA";
 }

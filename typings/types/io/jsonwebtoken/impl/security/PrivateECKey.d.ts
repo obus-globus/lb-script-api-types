@@ -5,7 +5,6 @@ import type { ECParameterSpec } from '../../../../java/security/spec/ECParameter
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class PrivateECKey extends Object implements KeySupplier<PrivateKey>, PrivateKey, ECKey {
     static serialVersionUID: number;
-    static serialVersionUID: number;
     constructor(arg0: PrivateKey, arg1: ECParameterSpec)
     readonly params: ECParameterSpec;
     // private privateKey: PrivateKey;

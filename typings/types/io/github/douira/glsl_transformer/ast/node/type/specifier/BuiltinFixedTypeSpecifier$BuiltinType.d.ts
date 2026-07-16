@@ -85,7 +85,7 @@ export class BuiltinFixedTypeSpecifier$BuiltinType extends Enum<BuiltinFixedType
     static fromToken(paramarg0: Token): BuiltinFixedTypeSpecifier$BuiltinType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BuiltinFixedTypeSpecifier$BuiltinType;
-    static values(): (Object | null)[];
+    static values(): BuiltinFixedTypeSpecifier$BuiltinType[];
     private constructor(arg2: number, arg3: BuiltinFixedTypeSpecifier$BuiltinType$TypeKind)
     private constructor(arg2: number, arg3: BuiltinFixedTypeSpecifier$BuiltinType$TypeKind, arg4: BuiltinFixedTypeSpecifier$BuiltinType$ValueFormat)
     kind: BuiltinFixedTypeSpecifier$BuiltinType$TypeKind;

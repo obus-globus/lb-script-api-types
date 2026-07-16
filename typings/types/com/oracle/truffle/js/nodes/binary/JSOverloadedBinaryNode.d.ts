@@ -18,7 +18,6 @@ export abstract class JSOverloadedBinaryNode extends JavaScriptBaseNode {
     static createHintString(paramoverloadedOperatorName: TruffleString): JSOverloadedBinaryNode;
     static createNumeric(paramoverloadedOperatorName: TruffleString): JSOverloadedBinaryNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(overloadedOperatorName: TruffleString, numeric: boolean, hint: JSToPrimitiveNode$Hint, leftToRight: boolean)
     // private hint: JSToPrimitiveNode$Hint;
     // private leftToRight: boolean;

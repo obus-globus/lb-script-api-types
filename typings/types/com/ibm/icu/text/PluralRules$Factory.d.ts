@@ -9,6 +9,6 @@ export abstract class PluralRules$Factory extends Object {
     forLocale(arg0: ULocale): PluralRules;
     forLocale(arg0: ULocale, arg1: PluralRules$PluralType): PluralRules;
     getAvailableULocales(): ULocale[];
-    getFunctionalEquivalent(arg0: ULocale, arg1: (Object | null)[]): ULocale;
+    getFunctionalEquivalent(arg0: ULocale, arg1: boolean[]): ULocale;
     hasOverride(arg0: ULocale): boolean;
 }

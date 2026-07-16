@@ -3,6 +3,7 @@ import type { Property } from '../../../../../../com/oracle/truffle/api/object/P
 import type { Shape } from '../../../../../../com/oracle/truffle/api/object/Shape.d.ts'
 import type { TruffleString } from '../../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
 import type { GraalJSException } from '../../../../../../com/oracle/truffle/js/runtime/GraalJSException.d.ts'
+import type { GraalJSException$JSStackTraceElement } from '../../../../../../com/oracle/truffle/js/runtime/GraalJSException$JSStackTraceElement.d.ts'
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
 import type { JSErrorType } from '../../../../../../com/oracle/truffle/js/runtime/JSErrorType.d.ts'
 import type { JSException } from '../../../../../../com/oracle/truffle/js/runtime/JSException.d.ts'
@@ -64,7 +65,7 @@ export class JSError extends JSNonProxy {
     static ordinaryOwnPropertyKeys(paramthisObj: JSDynamicObject): Object[];
     static ordinaryPreventExtensions(paramthisObj: JSDynamicObject, paramextraFlags: number): boolean;
     static prepareStack(paramrealm: JSRealm, paramerrorObj: JSDynamicObject, paramexception: GraalJSException): Object;
-    static prepareStackNoCallback(paramrealm: JSRealm, paramerrorObj: JSDynamicObject, paramjsStackTrace: (Object | null)[]): Object;
+    static prepareStackNoCallback(paramrealm: JSRealm, paramerrorObj: JSDynamicObject, paramjsStackTrace: GraalJSException$JSStackTraceElement[]): Object;
     static setColumnNumber(paramcontext: JSContext, paramerrorObj: JSDynamicObject, paramcolumnNumber: Object): void;
     static setException(paramrealm: JSRealm, paramerrorObj: JSErrorObject, paramexception: GraalJSException, paramdefaultColumnNumber: boolean): JSDynamicObject;
     static setIntegrityLevelFast(paramthisObj: JSDynamicObject, paramfreeze: boolean): boolean;

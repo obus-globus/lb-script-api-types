@@ -6,7 +6,7 @@ export class NpmCompatibleESModuleLoader$Format extends Enum<NpmCompatibleESModu
     static ESM: NpmCompatibleESModuleLoader$Format;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): NpmCompatibleESModuleLoader$Format;
-    static values(): (Object | null)[];
+    static values(): NpmCompatibleESModuleLoader$Format[];
     private constructor()
     name(): "CommonJS" | "ESM";
 }

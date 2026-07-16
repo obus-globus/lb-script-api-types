@@ -23,35 +23,27 @@ export class VkImageMemoryRequirementsInfo2KHR extends VkImageMemoryRequirements
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkImageMemoryRequirementsInfo2KHR;
     static calloc(paramarg0: MemoryStack): VkImageMemoryRequirementsInfo2KHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkImageMemoryRequirementsInfo2;
     static create(paramarg0: number): VkImageMemoryRequirementsInfo2;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkImageMemoryRequirementsInfo2KHR;
     static create(paramarg0: number): VkImageMemoryRequirementsInfo2KHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkImageMemoryRequirementsInfo2;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkImageMemoryRequirementsInfo2KHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkImageMemoryRequirementsInfo2;
     static malloc(paramarg0: MemoryStack): VkImageMemoryRequirementsInfo2;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkImageMemoryRequirementsInfo2KHR;
     static malloc(paramarg0: MemoryStack): VkImageMemoryRequirementsInfo2KHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nimage(paramarg0: number): number;
     static nimage(paramarg0: number, paramarg1: number): void;
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

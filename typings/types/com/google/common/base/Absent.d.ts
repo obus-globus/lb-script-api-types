@@ -22,5 +22,5 @@ export class Absent<T extends unknown> extends Optional<T> {
     orNull(): T;
     // private readResolve(): Object;
     toString(): string;
-    transform<V extends unknown>(function_: (param0: Object) => boolean): Optional<V>;
+    transform<V extends unknown>(function_: (param0: T) => V): Optional<V>;
 }

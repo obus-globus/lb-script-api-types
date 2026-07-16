@@ -6,7 +6,7 @@ export class RTCDtxStatus extends Enum<RTCDtxStatus> {
     static ENABLED: RTCDtxStatus;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RTCDtxStatus;
-    static values(): (Object | null)[];
+    static values(): RTCDtxStatus[];
     private constructor()
     name(): "DISABLED" | "ENABLED";
 }

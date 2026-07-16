@@ -9,7 +9,7 @@ export class OS$OSType extends Enum<OS$OSType> {
     static OSWindows: OS$OSType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): OS$OSType;
-    static values(): (Object | null)[];
+    static values(): OS$OSType[];
     private constructor()
     name(): "OSUndefined" | "OSLinux" | "OSWindows" | "OSMacintosh" | "OSUnknown";
 }

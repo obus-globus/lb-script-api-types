@@ -7,7 +7,7 @@ export class Suppliers$SupplierFunctionImpl extends Enum<Suppliers$SupplierFunct
     static INSTANCE: Suppliers$SupplierFunctionImpl;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Suppliers$SupplierFunctionImpl;
-    static values(): (Object | null)[];
+    static values(): Suppliers$SupplierFunctionImpl[];
     private constructor()
     apply(input: () => Object): Object;
     toString(): string;

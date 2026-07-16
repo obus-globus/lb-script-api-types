@@ -7,7 +7,6 @@ import type { JSOverloadedOperatorsObject } from '../../../../../../com/oracle/t
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSOverloadedBinaryNode$DispatchBinaryOperatorNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(overloadedOperatorName: TruffleString)
     // private overloadedOperatorName: TruffleString;
     doBigIntOverloaded(left: BigInt, right: JSOverloadedOperatorsObject, rightOperatorCounter: number, operatorImplementation: Object, callNode: JSFunctionCallNode): Object;

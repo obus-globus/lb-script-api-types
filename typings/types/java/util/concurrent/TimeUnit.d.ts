@@ -15,7 +15,7 @@ export class TimeUnit extends Enum<TimeUnit> {
     static of(paramarg0: ChronoUnit): TimeUnit;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TimeUnit;
-    static values(): (Object | null)[];
+    static values(): TimeUnit[];
     private constructor(arg2: number)
     // private maxMicros: number;
     // private maxMillis: number;

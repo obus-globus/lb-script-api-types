@@ -1,9 +1,10 @@
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { BSPNode } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/translucent_sorting/bsp_tree/BSPNode.d.ts'
+import type { TQuad } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/translucent_sorting/quad/TQuad.d.ts'
 import type { GeometryPlanes } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/translucent_sorting/trigger/GeometryPlanes.d.ts'
 import type { SectionPos } from '../../../../../../../../../net/minecraft/core/SectionPos.d.ts'
 export class BSPResult extends GeometryPlanes {
-    static fromQuadLists(paramarg0: SectionPos, paramarg1: (Object | null)[]): GeometryPlanes;
+    static fromQuadLists(paramarg0: SectionPos, paramarg1: TQuad[]): GeometryPlanes;
     constructor()
     readonly rootNode: BSPNode;
     readonly updatedQuadsList: (Object | null)[];

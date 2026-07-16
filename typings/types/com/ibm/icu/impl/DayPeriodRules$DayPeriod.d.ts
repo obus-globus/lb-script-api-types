@@ -14,10 +14,10 @@ export class DayPeriodRules$DayPeriod extends Enum<DayPeriodRules$DayPeriod> {
     static NIGHT2: DayPeriodRules$DayPeriod;
     static NOON: DayPeriodRules$DayPeriod;
     static PM: DayPeriodRules$DayPeriod;
-    static VALUES: (Object | null)[];
+    static VALUES: DayPeriodRules$DayPeriod[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): DayPeriodRules$DayPeriod;
-    static values(): (Object | null)[];
+    static values(): DayPeriodRules$DayPeriod[];
     private constructor()
     name(): "MIDNIGHT" | "NOON" | "MORNING1" | "AFTERNOON1" | "EVENING1" | "NIGHT1" | "MORNING2" | "AFTERNOON2" | "EVENING2" | "NIGHT2" | "AM" | "PM";
 }

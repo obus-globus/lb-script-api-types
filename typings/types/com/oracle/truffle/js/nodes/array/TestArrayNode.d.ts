@@ -8,7 +8,6 @@ export abstract class TestArrayNode extends JavaScriptBaseNode {
     static createHasHolesOrUnused(): TestArrayNode;
     static createIsSealed(): TestArrayNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(test: TestArrayNode$Test)
     // private test: TestArrayNode$Test;
     doCached(target: JSDynamicObject, arrayType: ScriptArray): boolean;

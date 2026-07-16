@@ -11,7 +11,7 @@ import type { ThrowableRenderer } from '../../../../../../org/apache/logging/log
 import type { ThrowableStackTraceRendererFactory } from '../../../../../../org/apache/logging/log4j/core/pattern/ThrowableStackTraceRendererFactory.d.ts'
 export class ThrowablePatternConverter extends LogEventPatternConverter {
     static CATEGORY: string;
-    static newInstance(paramconfig: Configuration, paramoptions: (Object | null)[]): ThrowablePatternConverter;
+    static newInstance(paramconfig: Configuration, paramoptions: string[]): ThrowablePatternConverter;
     constructor(name: string, style: string, options: string[])
     constructor(name: string, style: string, options: string[], config: Configuration)
     constructor(name: string, style: string, options: string[], config: Configuration, propertyRendererFactory: ThrowablePropertyRendererFactory, stackTraceRendererFactory: ThrowableStackTraceRendererFactory)

@@ -12,7 +12,7 @@ export class ModuleChestStealer$ItemMoveMode extends Enum<ModuleChestStealer$Ite
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleChestStealer$ItemMoveMode;
-    static values(): (Object | null)[];
+    static values(): ModuleChestStealer$ItemMoveMode[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "QUICK_MOVE" | "DRAG_AND_DROP";

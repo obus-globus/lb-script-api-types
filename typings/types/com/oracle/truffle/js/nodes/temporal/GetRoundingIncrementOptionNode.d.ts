@@ -6,7 +6,6 @@ import type { JSToDoubleNode } from '../../../../../../com/oracle/truffle/js/nod
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class GetRoundingIncrementOptionNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(options: Object): number;
     toTemporalRoundingIncrement(options: Object, getRoundingIncrement: PropertyGetNode, toDouble: JSToDoubleNode, errorBranch: InlinedBranchProfile): number;

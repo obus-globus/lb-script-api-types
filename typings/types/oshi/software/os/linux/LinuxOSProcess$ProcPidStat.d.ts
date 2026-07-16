@@ -14,7 +14,7 @@ export class LinuxOSProcess$ProcPidStat extends Enum<LinuxOSProcess$ProcPidStat>
     static VSZ: LinuxOSProcess$ProcPidStat;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LinuxOSProcess$ProcPidStat;
-    static values(): (Object | null)[];
+    static values(): LinuxOSProcess$ProcPidStat[];
     private constructor(arg2: number)
     readonly order: number;
     getOrder(): number;

@@ -8,7 +8,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class CreateIterResultObjectNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): CreateIterResultObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private createDonePropertyNode: CreateDataPropertyNode;
     // private createObjectNode: CreateObjectNode;

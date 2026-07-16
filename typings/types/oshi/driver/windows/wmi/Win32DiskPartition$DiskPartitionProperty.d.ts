@@ -11,7 +11,7 @@ export class Win32DiskPartition$DiskPartitionProperty extends Enum<Win32DiskPart
     static TYPE: Win32DiskPartition$DiskPartitionProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Win32DiskPartition$DiskPartitionProperty;
-    static values(): (Object | null)[];
+    static values(): Win32DiskPartition$DiskPartitionProperty[];
     private constructor()
     name(): "INDEX" | "DESCRIPTION" | "DEVICEID" | "DISKINDEX" | "NAME" | "SIZE" | "TYPE";
 }

@@ -24,28 +24,21 @@ export class VkDescriptorUpdateTemplateEntryKHR extends VkDescriptorUpdateTempla
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkDescriptorUpdateTemplateEntryKHR;
     static calloc(paramarg0: MemoryStack): VkDescriptorUpdateTemplateEntryKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkDescriptorUpdateTemplateEntry;
     static create(paramarg0: number): VkDescriptorUpdateTemplateEntry;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkDescriptorUpdateTemplateEntryKHR;
     static create(paramarg0: number): VkDescriptorUpdateTemplateEntryKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkDescriptorUpdateTemplateEntry;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkDescriptorUpdateTemplateEntryKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkDescriptorUpdateTemplateEntry;
     static malloc(paramarg0: MemoryStack): VkDescriptorUpdateTemplateEntry;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkDescriptorUpdateTemplateEntryKHR;
     static malloc(paramarg0: MemoryStack): VkDescriptorUpdateTemplateEntryKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ndescriptorCount(paramarg0: number): number;
     static ndescriptorCount(paramarg0: number, paramarg1: number): void;
     static ndescriptorType(paramarg0: number): number;
@@ -58,7 +51,6 @@ export class VkDescriptorUpdateTemplateEntryKHR extends VkDescriptorUpdateTempla
     static noffset(paramarg0: number, paramarg1: number): void;
     static nstride(paramarg0: number): number;
     static nstride(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

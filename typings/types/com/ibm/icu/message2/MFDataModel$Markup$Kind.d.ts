@@ -7,7 +7,7 @@ export class MFDataModel$Markup$Kind extends Enum<MFDataModel$Markup$Kind> {
     static STANDALONE: MFDataModel$Markup$Kind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): MFDataModel$Markup$Kind;
-    static values(): (Object | null)[];
+    static values(): MFDataModel$Markup$Kind[];
     private constructor()
     name(): "OPEN" | "CLOSE" | "STANDALONE";
 }

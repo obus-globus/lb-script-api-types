@@ -26,28 +26,21 @@ export class VkCopyImageInfo2KHR extends VkCopyImageInfo2 {
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkCopyImageInfo2KHR;
     static calloc(paramarg0: MemoryStack): VkCopyImageInfo2KHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkCopyImageInfo2;
     static create(paramarg0: number): VkCopyImageInfo2;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkCopyImageInfo2KHR;
     static create(paramarg0: number): VkCopyImageInfo2KHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkCopyImageInfo2;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkCopyImageInfo2KHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkCopyImageInfo2;
     static malloc(paramarg0: MemoryStack): VkCopyImageInfo2;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkCopyImageInfo2KHR;
     static malloc(paramarg0: MemoryStack): VkCopyImageInfo2KHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ndstImage(paramarg0: number): number;
     static ndstImage(paramarg0: number, paramarg1: number): void;
     static ndstImageLayout(paramarg0: number): number;
@@ -64,7 +57,6 @@ export class VkCopyImageInfo2KHR extends VkCopyImageInfo2 {
     static nsrcImage(paramarg0: number, paramarg1: number): void;
     static nsrcImageLayout(paramarg0: number): number;
     static nsrcImageLayout(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

@@ -17,7 +17,7 @@ export class TransitionGuard$Kind extends Enum<TransitionGuard$Kind> {
     static updateRecursiveBackrefPointer: TransitionGuard$Kind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TransitionGuard$Kind;
-    static values(): (Object | null)[];
+    static values(): TransitionGuard$Kind[];
     private constructor()
     name(): "countInc" | "countSet1" | "countSetMinInc" | "countLtMin" | "countGeMin" | "countLtMax" | "enterZeroWidth" | "exitZeroWidth" | "escapeZeroWidth" | "updateCG" | "updateRecursiveBackrefPointer" | "checkGroupMatched" | "checkGroupNotMatched";
 }

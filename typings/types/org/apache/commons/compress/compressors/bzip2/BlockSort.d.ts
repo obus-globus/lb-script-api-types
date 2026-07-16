@@ -5,7 +5,7 @@ export class BlockSort extends Object {
     // private eclass: number[];
     // private firstAttempt: boolean;
     // private ftab: number[];
-    // private mainSort_bigDone: (Object | null)[];
+    // private mainSort_bigDone: boolean[];
     // private mainSort_copy: number[];
     // private mainSort_runningOrder: number[];
     // private quadrant: string[];

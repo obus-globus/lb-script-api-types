@@ -4,7 +4,6 @@ import type { JSArrayObject } from '../../../../../../com/oracle/truffle/js/runt
 import type { PropertyDescriptor } from '../../../../../../com/oracle/truffle/js/runtime/objects/PropertyDescriptor.d.ts'
 export abstract class JSArrayGetOwnPropertyNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(node: Node, target: JSArrayObject, index: number, needValue: boolean, needEnumerability: boolean, needConfigurability: boolean, needWritability: boolean): PropertyDescriptor;
 }

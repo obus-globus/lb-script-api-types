@@ -6,7 +6,6 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { KClass } from '../../../../kotlin/reflect/KClass.d.ts'
 import type { SandboxPolicy } from '../../../../org/graalvm/polyglot/SandboxPolicy.d.ts'
 export interface TruffleLanguage$Registration extends Annotation, Object{
-    constructor(byteMimeTypes: string[], characterMimeTypes: string[], contextPolicy: TruffleLanguage$ContextPolicy, defaultMimeType: string, dependentLanguages: string[], fileTypeDetectors: KClass<TruffleFile$FileTypeDetector>[], id: string, implementationName: string, interactive: boolean, internal: boolean, internalResources: KClass<InternalResource>[], name: string, needsAllEncodings: boolean, optionalResources: string[], sandbox: SandboxPolicy, services: KClass<Object>[], version: string, website: string)
     /*not mapped: */ byteMimeTypes(): string[];
     /*not mapped: */ characterMimeTypes(): string[];
     /*not mapped: */ contextPolicy(): TruffleLanguage$ContextPolicy;

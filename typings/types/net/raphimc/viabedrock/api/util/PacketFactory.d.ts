@@ -21,7 +21,7 @@ export class PacketFactory extends Object {
     static sendJavaBlockUpdate(paramarg0: UserConnection, paramarg1: BlockPosition, paramarg2: number): void;
     static sendJavaContainerClose(paramarg0: UserConnection, paramarg1: number): void;
     static sendJavaContainerSetContent(paramarg0: UserConnection, paramarg1: Container): void;
-    static sendJavaCustomChatCompletions(paramarg0: UserConnection, paramarg1: CustomChatCompletionsAction, paramarg2: (Object | null)[]): void;
+    static sendJavaCustomChatCompletions(paramarg0: UserConnection, paramarg1: CustomChatCompletionsAction, paramarg2: string[]): void;
     static sendJavaEntityEvent(paramarg0: UserConnection, paramarg1: Entity, paramarg2: EntityEvent): void;
     static sendJavaGameEvent(paramarg0: UserConnection, paramarg1: GameEventType, paramarg2: number): void;
     static sendJavaLevelParticles(paramarg0: UserConnection, paramarg1: Position3f, paramarg2: BedrockMappingData$JavaParticle): void;

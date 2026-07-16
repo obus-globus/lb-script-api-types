@@ -14,7 +14,7 @@ export class GlobalSettingsRichPresence$PresenceStatusDisplayType extends Enum<G
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): GlobalSettingsRichPresence$PresenceStatusDisplayType;
-    static values(): (Object | null)[];
+    static values(): GlobalSettingsRichPresence$PresenceStatusDisplayType[];
     private constructor(tag: string, statusDisplayType: StatusDisplayType)
     readonly statusDisplayType: StatusDisplayType;
     readonly tag: string;

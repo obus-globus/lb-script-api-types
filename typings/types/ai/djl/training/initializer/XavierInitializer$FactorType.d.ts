@@ -7,7 +7,7 @@ export class XavierInitializer$FactorType extends Enum<XavierInitializer$FactorT
     static OUT: XavierInitializer$FactorType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): XavierInitializer$FactorType;
-    static values(): (Object | null)[];
+    static values(): XavierInitializer$FactorType[];
     private constructor()
     name(): "AVG" | "IN" | "OUT";
 }

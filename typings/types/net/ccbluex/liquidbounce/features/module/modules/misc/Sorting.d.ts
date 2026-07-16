@@ -4,6 +4,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 import type { Tagged } from '../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged.d.ts'
 import type { Tagged$Companion } from '../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
+import type { PlayerInfo } from '../../../../../../../net/minecraft/client/multiplayer/PlayerInfo.d.ts'
 export class Sorting extends Enum<Sorting> implements Tagged {
     static ALPHABETICAL: Sorting;
     static Companion: Tagged$Companion;
@@ -18,9 +19,9 @@ export class Sorting extends Enum<Sorting> implements Tagged {
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Sorting;
-    static values(): (Object | null)[];
-    private constructor(tag: string, comparator: ((param0: Object) => boolean) | null)
-    readonly comparator: ((param0: Object) => boolean) | null;
+    static values(): Sorting[];
+    private constructor(tag: string, comparator: ((param0: PlayerInfo, param1: PlayerInfo) => number) | null)
+    readonly comparator: ((param0: PlayerInfo, param1: PlayerInfo) => number) | null;
     readonly tag: string;
     name(): "VANILLA" | "PING" | "LENGTH" | "SCORE_LENGTH" | "ALPHABETICAL" | "REVERSE_ALPHABETICAL" | "NONE";
 }

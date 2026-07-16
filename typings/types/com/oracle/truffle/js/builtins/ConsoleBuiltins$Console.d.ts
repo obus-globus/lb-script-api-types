@@ -26,7 +26,7 @@ export class ConsoleBuiltins$Console extends Enum<ConsoleBuiltins$Console> imple
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ConsoleBuiltins$Console;
-    static values(): (Object | null)[];
+    static values(): ConsoleBuiltins$Console[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

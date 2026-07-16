@@ -9,7 +9,7 @@ export class Constants extends Object {
     static BMP_WITHOUT_LATIN1_WITHOUT_SURROGATES: (Object | null)[];
     static BMP_WITHOUT_SURROGATES: (Object | null)[];
     static BYTE_RANGE: (Object | null)[];
-    static CONSTANT_CODE_POINT_SETS: (Object | null)[];
+    static CONSTANT_CODE_POINT_SETS: (Object | null)[][];
     static DIGITS: (Object | null)[];
     static DOT: (Object | null)[];
     static DOT_ALL: (Object | null)[];

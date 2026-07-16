@@ -12,7 +12,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class CachedSetPropertyNodeGen extends CachedSetPropertyNode {
     static create(paramcontext: JSContext, paramstrict: boolean, paramsetOwn: boolean, paramsuperProperty: boolean): CachedSetPropertyNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, strict: boolean, setOwn: boolean, superProperty: boolean)
     // private arrayIndex_cache: CachedSetPropertyNodeGen$ArrayIndexData;
     // private cachedKey_cache: CachedSetPropertyNodeGen$CachedKeyData;

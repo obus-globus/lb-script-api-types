@@ -2,10 +2,9 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 import type { Pair } from '../../../../../org/apache/commons/lang3/tuple/Pair.d.ts'
 export class ImmutablePair<L extends unknown, R extends unknown> extends Pair<L, R> {
-    static EMPTY_ARRAY: Object | null;
-    static EMPTY_ARRAY: Object | null;
-    static emptyArray(): Object | null;
-    static emptyArray(): Object | null;
+    static EMPTY_ARRAY: ImmutablePair<Object, Object>[];
+    static emptyArray(): ImmutablePair<Object, Object>[];
+    static emptyArray(): Pair<Object, Object>[];
     static left(paramarg0: Object | null): Pair<Object, Object>;
     static nullPair(): ImmutablePair<Object, Object>;
     static of(paramarg0: Object | null, paramarg1: Object | null): ImmutablePair<Object, Object>;

@@ -16,7 +16,7 @@ export class ModuleOffhand$Mode extends Enum<ModuleOffhand$Mode> {
     static getEntries(): ModuleOffhand$Mode[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleOffhand$Mode;
-    static values(): (Object | null)[];
+    static values(): ModuleOffhand$Mode[];
     private constructor(modeName: string, item: ((param0: ItemStack) => boolean) | null, fallBackItem: ((param0: ItemStack) => boolean) | null)
     private constructor(modeName: string, item: Item, fallBackItem: Item | null)
     // private fallBackItem: ((param0: ItemStack) => boolean) | null;

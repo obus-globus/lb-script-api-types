@@ -16,7 +16,6 @@ export class NewPromiseCapabilityNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext): NewPromiseCapabilityNode;
     static createDefault(paramrealm: JSRealm): PromiseCapabilityRecord;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
     // private context: JSContext;
     // private errorBranch: BranchProfile;

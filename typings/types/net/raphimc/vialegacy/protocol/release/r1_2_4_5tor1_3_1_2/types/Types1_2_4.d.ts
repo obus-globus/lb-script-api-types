@@ -5,6 +5,6 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class Types1_2_4 extends Object {
     static CHUNK: Type<Chunk>;
     static NBT_ITEM: Type<Item>;
-    static NBT_ITEM_ARRAY: Type<(Object | null)[]>;
+    static NBT_ITEM_ARRAY: Type<Item[]>;
     constructor()
 }

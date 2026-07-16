@@ -10,7 +10,7 @@ export class SortType extends Enum<SortType> {
     static STATIC_TOPO: SortType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SortType;
-    static values(): (Object | null)[];
+    static values(): SortType[];
     private constructor(arg2: boolean, arg3: boolean)
     allowSliceReordering: boolean;
     needsDirectionMixing: boolean;

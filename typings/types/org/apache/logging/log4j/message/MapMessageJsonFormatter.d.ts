@@ -5,6 +5,6 @@ export class MapMessageJsonFormatter extends Enum<MapMessageJsonFormatter> {
     static MAX_DEPTH: number;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): MapMessageJsonFormatter;
-    static values(): (Object | null)[];
+    static values(): MapMessageJsonFormatter[];
     private constructor()
 }

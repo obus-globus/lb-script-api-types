@@ -12,7 +12,7 @@ export class ModuleAimbot$IgnoreOpened extends Enum<ModuleAimbot$IgnoreOpened> i
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleAimbot$IgnoreOpened;
-    static values(): (Object | null)[];
+    static values(): ModuleAimbot$IgnoreOpened[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "SCREEN" | "CONTAINER";

@@ -16,7 +16,7 @@ export abstract class DataTransferer extends Object {
     static adaptFlavorMap(paramarg0: FlavorMap): FlavorTable;
     static getInstance(): DataTransferer;
     static keysToLongArray(paramarg0: { [key: number]: Object }): number[];
-    static setToSortedDataFlavorArray(paramarg0: DataFlavor[]): (Object | null)[];
+    static setToSortedDataFlavorArray(paramarg0: DataFlavor[]): DataFlavor[];
     constructor()
     // private castToFile(arg0: Object): File;
     // private castToFiles(arg0: (Object | null)[]): string[];

@@ -7,7 +7,7 @@ export class TextFormatting$Type extends Enum<TextFormatting$Type> {
     static RGB: TextFormatting$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TextFormatting$Type;
-    static values(): (Object | null)[];
+    static values(): TextFormatting$Type[];
     private constructor()
     name(): "COLOR" | "FORMATTING" | "RGB";
 }

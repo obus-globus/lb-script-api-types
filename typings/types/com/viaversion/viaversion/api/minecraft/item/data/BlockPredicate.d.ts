@@ -12,7 +12,7 @@ import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../../java/util/Map$Entry.d.ts'
 export class BlockPredicate extends Record implements Copyable, Rewritable {
-    static ARRAY_TYPE1_20_5: Type<(Object | null)[]>;
+    static ARRAY_TYPE1_20_5: Type<BlockPredicate[]>;
     static TYPE1_20_5: Type<BlockPredicate>;
     constructor(arg0: HolderSet, arg1: StatePropertyMatcher[], arg2: Map$Entry<string, Tag>[])
     constructor(holderSet: HolderSet, propertyMatchers: StatePropertyMatcher[], tag: Map$Entry<string, Tag>[], dataMatchers: DataComponentMatchers)

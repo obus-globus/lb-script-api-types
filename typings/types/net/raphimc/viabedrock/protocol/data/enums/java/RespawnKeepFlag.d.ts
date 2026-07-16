@@ -6,7 +6,7 @@ export class RespawnKeepFlag extends Enum<RespawnKeepFlag> {
     static ENTITY_DATA: RespawnKeepFlag;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RespawnKeepFlag;
-    static values(): (Object | null)[];
+    static values(): RespawnKeepFlag[];
     private constructor()
     getBit(): number;
     name(): "ATTRIBUTE_MODIFIERS" | "ENTITY_DATA";

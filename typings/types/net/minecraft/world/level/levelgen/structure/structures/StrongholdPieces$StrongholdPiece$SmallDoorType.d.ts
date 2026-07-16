@@ -10,7 +10,7 @@ export class StrongholdPieces$StrongholdPiece$SmallDoorType extends Enum<Strongh
     static WOOD_DOOR: StrongholdPieces$StrongholdPiece$SmallDoorType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): StrongholdPieces$StrongholdPiece$SmallDoorType;
-    static values(): (Object | null)[];
+    static values(): StrongholdPieces$StrongholdPiece$SmallDoorType[];
     private constructor()
     name(): "OPENING" | "WOOD_DOOR" | "GRATES" | "IRON_DOOR";
 }

@@ -3,6 +3,5 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { KClass } from '../../../../kotlin/reflect/KClass.d.ts'
 import type { CContext$Directives } from '../../../../org/graalvm/nativeimage/c/CContext$Directives.d.ts'
 export interface CContext extends Annotation, Object{
-    constructor(value: KClass<CContext$Directives>)
     /*not mapped: */ value(): KClass<CContext$Directives>;
 }

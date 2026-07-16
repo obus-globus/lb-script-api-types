@@ -10,7 +10,7 @@ export class UndeadHorseRenderer$Type extends Enum<UndeadHorseRenderer$Type> {
     static ZOMBIE_BABY: UndeadHorseRenderer$Type;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): UndeadHorseRenderer$Type;
-    static values(): (Object | null)[];
+    static values(): UndeadHorseRenderer$Type[];
     private constructor(texture: Identifier, model: ModelLayerLocation)
     // private model: ModelLayerLocation;
     // private texture: Identifier;

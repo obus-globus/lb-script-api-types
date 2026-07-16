@@ -13,7 +13,7 @@ export class AnimatePacket_Action extends Enum<AnimatePacket_Action> {
     static getByValue(paramarg0: number, paramarg1: AnimatePacket_Action): AnimatePacket_Action;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AnimatePacket_Action;
-    static values(): (Object | null)[];
+    static values(): AnimatePacket_Action[];
     private constructor(arg2: number)
     private constructor(arg2: AnimatePacket_Action)
     readonly value: number;

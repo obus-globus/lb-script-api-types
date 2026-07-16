@@ -7,7 +7,7 @@ export class ModelIndex extends Enum<ModelIndex> {
     static kUWStart: ModelIndex;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ModelIndex;
-    static values(): (Object | null)[];
+    static values(): ModelIndex[];
     private constructor(value: number)
     readonly value: number;
     getValue(): number;

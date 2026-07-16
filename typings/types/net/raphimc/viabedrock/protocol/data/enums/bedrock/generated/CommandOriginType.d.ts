@@ -24,7 +24,7 @@ export class CommandOriginType extends Enum<CommandOriginType> {
     static getByValue(paramarg0: number, paramarg1: CommandOriginType): CommandOriginType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CommandOriginType;
-    static values(): (Object | null)[];
+    static values(): CommandOriginType[];
     private constructor(arg2: number)
     private constructor(arg2: CommandOriginType)
     readonly value: number;

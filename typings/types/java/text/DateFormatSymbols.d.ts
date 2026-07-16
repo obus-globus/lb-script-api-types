@@ -4,7 +4,7 @@ import type { Locale } from '../../java/util/Locale.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../java/lang/Cloneable.d.ts'
 export class DateFormatSymbols extends Object implements Serializable, Cloneable {
-    static getAvailableLocales(): (Object | null)[];
+    static getAvailableLocales(): Locale[];
     static getInstance(): DateFormatSymbols;
     static getInstance(paramarg0: Locale): DateFormatSymbols;
     constructor()

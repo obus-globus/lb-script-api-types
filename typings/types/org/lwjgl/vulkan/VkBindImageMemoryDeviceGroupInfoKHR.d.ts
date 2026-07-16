@@ -25,28 +25,21 @@ export class VkBindImageMemoryDeviceGroupInfoKHR extends VkBindImageMemoryDevice
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkBindImageMemoryDeviceGroupInfoKHR;
     static calloc(paramarg0: MemoryStack): VkBindImageMemoryDeviceGroupInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkBindImageMemoryDeviceGroupInfo;
     static create(paramarg0: number): VkBindImageMemoryDeviceGroupInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkBindImageMemoryDeviceGroupInfoKHR;
     static create(paramarg0: number): VkBindImageMemoryDeviceGroupInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkBindImageMemoryDeviceGroupInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkBindImageMemoryDeviceGroupInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkBindImageMemoryDeviceGroupInfo;
     static malloc(paramarg0: MemoryStack): VkBindImageMemoryDeviceGroupInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkBindImageMemoryDeviceGroupInfoKHR;
     static malloc(paramarg0: MemoryStack): VkBindImageMemoryDeviceGroupInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ndeviceIndexCount(paramarg0: number): number;
     static ndeviceIndexCount(paramarg0: number, paramarg1: number): void;
     static npDeviceIndices(paramarg0: number): IntBuffer;
@@ -59,7 +52,6 @@ export class VkBindImageMemoryDeviceGroupInfoKHR extends VkBindImageMemoryDevice
     static nsType(paramarg0: number, paramarg1: number): void;
     static nsplitInstanceBindRegionCount(paramarg0: number): number;
     static nsplitInstanceBindRegionCount(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

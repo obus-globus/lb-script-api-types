@@ -8,7 +8,6 @@ import type { JSArrayObject } from '../../../../../../com/oracle/truffle/js/runt
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PropertyGetNode$ArrayLengthPropertyGetNode extends PropertyGetNode$LinkedPropertyGetNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(property: Property, receiverCheck: PropertyCacheNode$ReceiverCheckNode)
     // private arrayLengthRead: ArrayLengthNode$ArrayLengthReadNode;
     // private longLength: boolean;

@@ -60,7 +60,7 @@ export class GraphicsOverrideParameterType extends Enum<GraphicsOverrideParamete
     static getByValue(paramarg0: number, paramarg1: GraphicsOverrideParameterType): GraphicsOverrideParameterType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): GraphicsOverrideParameterType;
-    static values(): (Object | null)[];
+    static values(): GraphicsOverrideParameterType[];
     private constructor(arg2: number)
     private constructor(arg2: GraphicsOverrideParameterType)
     readonly value: number;

@@ -9,7 +9,7 @@ export class RotationType extends Enum<RotationType> {
     static PRE_1_21_6: RotationType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RotationType;
-    static values(): (Object | null)[];
+    static values(): RotationType[];
     private constructor()
     name(): "PRE_1_21_6" | "HACKY_PRE_1_21_6" | "POST_1_21_6" | "HACKY_POST_1_21_6" | "POST_1_21_11";
 }

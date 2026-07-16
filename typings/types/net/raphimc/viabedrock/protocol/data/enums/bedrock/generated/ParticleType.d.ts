@@ -110,7 +110,7 @@ export class ParticleType extends Enum<ParticleType> {
     static getByValue(paramarg0: number, paramarg1: ParticleType): ParticleType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ParticleType;
-    static values(): (Object | null)[];
+    static values(): ParticleType[];
     private constructor(arg2: number)
     private constructor(arg2: ParticleType)
     readonly value: number;

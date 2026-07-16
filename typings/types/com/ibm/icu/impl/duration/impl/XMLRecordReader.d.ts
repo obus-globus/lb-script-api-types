@@ -9,7 +9,7 @@ export class XMLRecordReader extends Object implements RecordReader {
     // private tag: string;
     // private advance(): void;
     bool(arg0: string): boolean;
-    boolArray(arg0: string): (Object | null)[];
+    boolArray(arg0: string): boolean[];
     character(arg0: string): string;
     characterArray(arg0: string): string[];
     close(): boolean;

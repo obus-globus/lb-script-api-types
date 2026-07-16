@@ -12,7 +12,7 @@ export class JdkZlibDecoder$GzipState extends Enum<JdkZlibDecoder$GzipState> {
     static XLEN_READ: JdkZlibDecoder$GzipState;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): JdkZlibDecoder$GzipState;
-    static values(): (Object | null)[];
+    static values(): JdkZlibDecoder$GzipState[];
     private constructor()
     name(): "HEADER_START" | "HEADER_END" | "FLG_READ" | "XLEN_READ" | "SKIP_FNAME" | "SKIP_COMMENT" | "PROCESS_FHCRC" | "FOOTER_START";
 }

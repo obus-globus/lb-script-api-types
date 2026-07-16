@@ -28,28 +28,21 @@ export class VkFramebufferAttachmentImageInfoKHR extends VkFramebufferAttachment
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkFramebufferAttachmentImageInfoKHR;
     static calloc(paramarg0: MemoryStack): VkFramebufferAttachmentImageInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkFramebufferAttachmentImageInfo;
     static create(paramarg0: number): VkFramebufferAttachmentImageInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkFramebufferAttachmentImageInfoKHR;
     static create(paramarg0: number): VkFramebufferAttachmentImageInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkFramebufferAttachmentImageInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkFramebufferAttachmentImageInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkFramebufferAttachmentImageInfo;
     static malloc(paramarg0: MemoryStack): VkFramebufferAttachmentImageInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkFramebufferAttachmentImageInfoKHR;
     static malloc(paramarg0: MemoryStack): VkFramebufferAttachmentImageInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nflags(paramarg0: number): number;
     static nflags(paramarg0: number, paramarg1: number): void;
     static nheight(paramarg0: number): number;
@@ -68,7 +61,6 @@ export class VkFramebufferAttachmentImageInfoKHR extends VkFramebufferAttachment
     static nviewFormatCount(paramarg0: number, paramarg1: number): void;
     static nwidth(paramarg0: number): number;
     static nwidth(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

@@ -10,7 +10,7 @@ export class ModDependency$Kind extends Enum<ModDependency$Kind> {
     static parse(paramarg0: string): ModDependency$Kind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModDependency$Kind;
-    static values(): (Object | null)[];
+    static values(): ModDependency$Kind[];
     private constructor(arg2: string, arg3: boolean, arg4: boolean)
     readonly key: string;
     readonly positive: boolean;

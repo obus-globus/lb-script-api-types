@@ -35,28 +35,21 @@ export class VkRenderPassCreateInfo2KHR extends VkRenderPassCreateInfo2 {
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkRenderPassCreateInfo2KHR;
     static calloc(paramarg0: MemoryStack): VkRenderPassCreateInfo2KHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkRenderPassCreateInfo2;
     static create(paramarg0: number): VkRenderPassCreateInfo2;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkRenderPassCreateInfo2KHR;
     static create(paramarg0: number): VkRenderPassCreateInfo2KHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkRenderPassCreateInfo2;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkRenderPassCreateInfo2KHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkRenderPassCreateInfo2;
     static malloc(paramarg0: MemoryStack): VkRenderPassCreateInfo2;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkRenderPassCreateInfo2KHR;
     static malloc(paramarg0: MemoryStack): VkRenderPassCreateInfo2KHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nattachmentCount(paramarg0: number): number;
     static nattachmentCount(paramarg0: number, paramarg1: number): void;
     static ncorrelatedViewMaskCount(paramarg0: number): number;
@@ -79,7 +72,6 @@ export class VkRenderPassCreateInfo2KHR extends VkRenderPassCreateInfo2 {
     static nsType(paramarg0: number, paramarg1: number): void;
     static nsubpassCount(paramarg0: number): number;
     static nsubpassCount(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number): void;
     constructor(arg0: ByteBuffer)

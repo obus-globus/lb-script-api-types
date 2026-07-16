@@ -7,7 +7,6 @@ import type { ReadImportBindingNode } from '../../../../../../com/oracle/truffle
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class HasPropertyCacheNode$ModuleNamespaceHasOwnPropertyNode extends HasPropertyCacheNode$LinkedHasPropertyCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(receiverCheck: PropertyCacheNode$ReceiverCheckNode, property: Property)
     // private property: Property;
     // private readBindingNode: ReadImportBindingNode;

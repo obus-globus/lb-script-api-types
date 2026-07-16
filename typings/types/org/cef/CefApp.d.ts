@@ -1,6 +1,5 @@
 import type { Runnable } from '../../java/lang/Runnable.d.ts'
 import type { Timer } from '../../javax/swing/Timer.d.ts'
-import type { Object } from '../../java/lang/Object.d.ts'
 import type { CefApp$CefAppState } from '../../org/cef/CefApp$CefAppState.d.ts'
 import type { CefApp$CefVersion } from '../../org/cef/CefApp$CefVersion.d.ts'
 import type { CefClient } from '../../org/cef/CefClient.d.ts'
@@ -11,11 +10,11 @@ import type { CefAppHandlerAdapter } from '../../org/cef/handler/CefAppHandlerAd
 export class CefApp extends CefAppHandlerAdapter {
     static addAppHandler(paramarg0: CefAppHandler): void;
     static getInstance(): CefApp;
-    static getInstance(paramarg0: (Object | null)[]): CefApp;
-    static getInstance(paramarg0: (Object | null)[], paramarg1: CefSettings): CefApp;
+    static getInstance(paramarg0: string[]): CefApp;
+    static getInstance(paramarg0: string[], paramarg1: CefSettings): CefApp;
     static getInstance(paramarg0: CefSettings): CefApp;
     static getState(): CefApp$CefAppState;
-    static startup(paramarg0: (Object | null)[]): boolean;
+    static startup(paramarg0: string[]): boolean;
     private constructor(arg0: string[], arg1: CefSettings)
     // private clients_: CefClient[];
     macOSTerminationRequestRunnable: () => void;

@@ -12,7 +12,7 @@ export class SurfaceRules$AbovePreliminarySurface extends Enum<SurfaceRules$Abov
     static bootstrap(paramregistry: MapCodec<SurfaceRules$ConditionSource>[]): MapCodec<SurfaceRules$ConditionSource>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SurfaceRules$AbovePreliminarySurface;
-    static values(): (Object | null)[];
+    static values(): SurfaceRules$AbovePreliminarySurface[];
     private constructor()
     apply(context: SurfaceRules$Context): SurfaceRules$Condition;
     codec(): MapCodec<SurfaceRules$AbovePreliminarySurface>;

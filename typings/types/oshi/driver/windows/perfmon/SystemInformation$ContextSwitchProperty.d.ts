@@ -6,7 +6,7 @@ export class SystemInformation$ContextSwitchProperty extends Enum<SystemInformat
     static CONTEXTSWITCHESPERSEC: SystemInformation$ContextSwitchProperty;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SystemInformation$ContextSwitchProperty;
-    static values(): (Object | null)[];
+    static values(): SystemInformation$ContextSwitchProperty[];
     private constructor(arg2: string, arg3: string)
     readonly counter: string;
     readonly instance: string;

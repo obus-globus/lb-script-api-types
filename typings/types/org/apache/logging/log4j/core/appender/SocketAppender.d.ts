@@ -2,6 +2,7 @@ import type { Serializable } from '../../../../../../java/io/Serializable.d.ts'
 import type { Future } from '../../../../../../java/util/concurrent/Future.d.ts'
 import type { TimeUnit } from '../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { Appender } from '../../../../../../org/apache/logging/log4j/core/Appender.d.ts'
 import type { Filter } from '../../../../../../org/apache/logging/log4j/core/Filter.d.ts'
 import type { Layout } from '../../../../../../org/apache/logging/log4j/core/Layout.d.ts'
 import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
@@ -17,7 +18,7 @@ export class SocketAppender extends AbstractOutputStreamAppender<AbstractSocketM
     static DEFAULT_STOP_TIMEOUT: number;
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
     static ELEMENT_TYPE: string;
-    static EMPTY_ARRAY: (Object | null)[];
+    static EMPTY_ARRAY: Appender[];
     static createAppender(paramhost: string, paramport: number, paramprotocol: Protocol, paramsslConfig: SslConfiguration, paramconnectTimeoutMillis: number, paramreconnectDelayMillis: number, paramimmediateFail: boolean, paramname: string, paramimmediateFlush: boolean, paramignoreExceptions: boolean, paramlayout: Layout<Serializable>, paramfilter: Filter, paramadvertise: boolean, paramconfiguration: Configuration): SocketAppender;
     static createAppender(paramhost: string, paramportNum: string, paramprotocolIn: string, paramsslConfig: SslConfiguration, paramconnectTimeoutMillis: number, paramdelayMillis: string, paramimmediateFail: string, paramname: string, paramimmediateFlush: string, paramignore: string, paramlayout: Layout<Serializable>, paramfilter: Filter, paramadvertise: string, paramconfig: Configuration): SocketAppender;
     static newBuilder(): SocketAppender$Builder;

@@ -13,7 +13,7 @@ export class FaceInfo extends Enum<FaceInfo> {
     static fromFacing(paramdirection: Direction): FaceInfo;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): FaceInfo;
-    static values(): (Object | null)[];
+    static values(): FaceInfo[];
     private constructor(...infos: FaceInfo$VertexInfo[])
     // private infos: FaceInfo$VertexInfo[];
     getVertexInfo(index: number): FaceInfo$VertexInfo;

@@ -11,7 +11,7 @@ export class TestScreenshotComparisonAlgorithms$Exact extends Enum<TestScreensho
     static meanSquaredDifference(paramarg0: number): TestScreenshotComparisonAlgorithm;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TestScreenshotComparisonAlgorithms$Exact;
-    static values(): (Object | null)[];
+    static values(): TestScreenshotComparisonAlgorithms$Exact[];
     private constructor()
     findColor(arg0: TestScreenshotComparisonAlgorithm$RawImage<number[]>, arg1: TestScreenshotComparisonAlgorithm$RawImage<number[]>): Vector2i;
     findGrayscale(arg0: TestScreenshotComparisonAlgorithm$RawImage<number[]>, arg1: TestScreenshotComparisonAlgorithm$RawImage<number[]>): Vector2i;

@@ -45,7 +45,7 @@ export class BedrockTextFormatting extends Enum<BedrockTextFormatting> {
     static getClosestFormattingColor(paramarg0: number): BedrockTextFormatting;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BedrockTextFormatting;
-    static values(): (Object | null)[];
+    static values(): BedrockTextFormatting[];
     private constructor(arg2: string, arg3: string)
     private constructor(arg2: string, arg3: string, arg4: number)
     readonly code: string;

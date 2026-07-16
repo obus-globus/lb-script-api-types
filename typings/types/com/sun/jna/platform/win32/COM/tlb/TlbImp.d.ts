@@ -24,7 +24,7 @@ export class TlbImp extends Object implements TlbConst {
     static TYPELIB_MINOR_VERSION_SHELL: string;
     static TYPELIB_MINOR_VERSION_WORD: string;
     static logInfo(paramarg0: string): void;
-    static main(paramarg0: (Object | null)[]): void;
+    static main(paramarg0: string[]): void;
     constructor(arg0: string[])
     // private cmdlineArgs: { [key: string]: any };
     // private comRootDir: File;

@@ -11,8 +11,6 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class BloomFilter<T extends unknown> extends Object implements Predicate<T>, Serializable {
     static create(paramfunnel: Funnel<Object>, paramexpectedInsertions: number): BloomFilter<Object>;
     static create(paramfunnel: Funnel<Object>, paramexpectedInsertions: number, paramfpp: number): BloomFilter<Object>;
-    static create(paramfunnel: Funnel<Object>, paramexpectedInsertions: number): BloomFilter<Object>;
-    static create(paramfunnel: Funnel<Object>, paramexpectedInsertions: number, paramfpp: number): BloomFilter<Object>;
     static readFrom(paramin: InputStream, paramfunnel: Funnel<Object>): BloomFilter<Object>;
     static toBloomFilter(paramfunnel: Funnel<Object>, paramexpectedInsertions: number): Collector<Object, Object, BloomFilter<Object>>;
     static toBloomFilter(paramfunnel: Funnel<Object>, paramexpectedInsertions: number, paramfpp: number): Collector<Object, Object, BloomFilter<Object>>;

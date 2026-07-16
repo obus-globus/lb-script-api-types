@@ -11,7 +11,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 export class DefineMethodNode extends JavaScriptBaseNode {
     static create(paramcontext: JSContext, paramfunctionExpressionNode: JSFunctionExpressionNode, paramblockScopeSlot: number): DefineMethodNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, functionData: JSFunctionData, blockScopeSlot: number)
     // private functionCreateNode: DefineMethodNode$FunctionCreateNode;
     readonly functionData: JSFunctionData;

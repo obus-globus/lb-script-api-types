@@ -10,7 +10,7 @@ export class Unit extends Enum<Unit> {
     static STREAM_CODEC: StreamCodec<ByteBuf, Unit>;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Unit;
-    static values(): (Object | null)[];
+    static values(): Unit[];
     private constructor()
     name(): "INSTANCE";
 }

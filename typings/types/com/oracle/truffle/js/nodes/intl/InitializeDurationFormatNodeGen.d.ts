@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class InitializeDurationFormatNodeGen extends InitializeDurationFormatNode {
     static create(paramcontext: JSContext): InitializeDurationFormatNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     executeInit(arg0Value: JSDurationFormatObject, arg1Value: Object, arg2Value: Object): JSDurationFormatObject;
 }

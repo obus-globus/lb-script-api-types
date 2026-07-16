@@ -8,7 +8,7 @@ export class ExceptionType extends Enum<ExceptionType> {
     static RUNTIME_ERROR: ExceptionType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ExceptionType;
-    static values(): (Object | null)[];
+    static values(): ExceptionType[];
     private constructor()
     name(): "EXIT" | "INTERRUPT" | "RUNTIME_ERROR" | "PARSE_ERROR";
 }

@@ -7,7 +7,7 @@ export class GameTestTicker$State extends Enum<GameTestTicker$State> {
     static RUNNING: GameTestTicker$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): GameTestTicker$State;
-    static values(): (Object | null)[];
+    static values(): GameTestTicker$State[];
     private constructor()
     name(): "IDLE" | "RUNNING" | "HALTING";
 }

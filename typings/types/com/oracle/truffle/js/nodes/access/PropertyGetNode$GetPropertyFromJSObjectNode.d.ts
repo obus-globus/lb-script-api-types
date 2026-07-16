@@ -11,7 +11,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class PropertyGetNode$GetPropertyFromJSObjectNode extends JavaScriptBaseNode {
     static create(paramroot: PropertyGetNode): PropertyGetNode$GetPropertyFromJSObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(root: PropertyGetNode)
     // private fallbackBranch: BranchProfile;
     // private isRequired: boolean;

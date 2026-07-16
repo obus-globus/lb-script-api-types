@@ -8,7 +8,7 @@ export class FileChangeType extends Enum<FileChangeType> {
     static get(paramintValue: number): FileChangeType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): FileChangeType;
-    static values(): (Object | null)[];
+    static values(): FileChangeType[];
     private constructor(intValue: number)
     readonly intValue: number;
     getIntValue(): number;

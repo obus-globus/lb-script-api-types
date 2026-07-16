@@ -6,6 +6,5 @@ export class BsdSysctlUtil extends Object {
     static sysctl(paramarg0: string): Memory;
     static sysctl(paramarg0: string, paramarg1: number): number;
     static sysctl(paramarg0: string, paramarg1: string): string;
-    static sysctl(paramarg0: string, paramarg1: number): number;
     private constructor()
 }

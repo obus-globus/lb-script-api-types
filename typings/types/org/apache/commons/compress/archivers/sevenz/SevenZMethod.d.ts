@@ -18,7 +18,7 @@ export class SevenZMethod extends Enum<SevenZMethod> {
     static LZMA2: SevenZMethod;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SevenZMethod;
-    static values(): (Object | null)[];
+    static values(): SevenZMethod[];
     private constructor(arg2: number[])
     // private id: number[];
     getId(): number[];

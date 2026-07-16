@@ -20,6 +20,7 @@ import type { PlacementRenderer } from '../../../../../../net/ccbluex/liquidboun
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { BlockPos$MutableBlockPos } from '../../../../../../net/minecraft/core/BlockPos$MutableBlockPos.d.ts'
 import type { Direction } from '../../../../../../net/minecraft/core/Direction.d.ts'
+import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { BlockHitResult } from '../../../../../../net/minecraft/world/phys/BlockHitResult.d.ts'
 export class BlockPlacer extends ValueGroup implements EventListener {
@@ -42,6 +43,7 @@ export class BlockPlacer extends ValueGroup implements EventListener {
     readonly constructFailResult: boolean;
     readonly cooldown: { start: number; endInclusive: number; step: number };
     readonly crystalDestroyer: CrystalDestroyFeature;
+    readonly debugDisplayName: Component;
     readonly ignoreOpenInventory: boolean;
     readonly ignoreUsingItem: boolean;
     // private ignores: BlockPlacer$Ignore[];
@@ -59,6 +61,7 @@ export class BlockPlacer extends ValueGroup implements EventListener {
     ranAction: boolean;
     readonly range: number;
     readonly rotationMode: ModeValueGroup<BlockPlacerRotationMode>;
+    readonly running: boolean;
     readonly slotFinder: (param0: BlockPos | null) => HotbarItemSlot | null;
     readonly slotResetDelay: { start: number; endInclusive: number; step: number };
     // private sneak: { start: number; endInclusive: number; step: number };

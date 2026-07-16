@@ -8,7 +8,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class GetIteratorDirectNode extends JavaScriptBaseNode {
     static create(): GetIteratorDirectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     createGetNextNode(): PropertyGetNode;
     execute(node: Node, iterator: Object): IteratorRecord;

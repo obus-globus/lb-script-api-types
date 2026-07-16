@@ -9,7 +9,7 @@ export class ComparatorUpdatePattern extends Enum<ComparatorUpdatePattern> {
     static UPDATE_DECREMENT_UPDATE_INCREMENT_UPDATE: ComparatorUpdatePattern;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ComparatorUpdatePattern;
-    static values(): (Object | null)[];
+    static values(): ComparatorUpdatePattern[];
     private constructor()
     apply(arg0: BlockEntity, arg1: (Object | null)[]): void;
     isChainable(): boolean;

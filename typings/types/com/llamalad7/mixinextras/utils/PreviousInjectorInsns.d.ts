@@ -9,7 +9,7 @@ export class PreviousInjectorInsns extends Enum<PreviousInjectorInsns> {
     static DYNAMIC_INSTANCEOF_REDIRECT: PreviousInjectorInsns;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PreviousInjectorInsns;
-    static values(): (Object | null)[];
+    static values(): PreviousInjectorInsns[];
     constructor(arg2: string, arg3: PreviousInjectorInsns)
     // private description: string;
     getLast(arg0: AbstractInsnNode): AbstractInsnNode;

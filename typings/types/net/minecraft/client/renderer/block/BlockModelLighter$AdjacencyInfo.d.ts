@@ -13,7 +13,7 @@ export class BlockModelLighter$AdjacencyInfo extends Enum<BlockModelLighter$Adja
     static fromFacing(paramdirection: Direction): BlockModelLighter$AdjacencyInfo;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): BlockModelLighter$AdjacencyInfo;
-    static values(): (Object | null)[];
+    static values(): BlockModelLighter$AdjacencyInfo[];
     private constructor(corners: Direction[], shadeWeight: number, doNonCubicWeight: boolean, vert0Weights: BlockModelLighter$SizeInfo[], vert1Weights: BlockModelLighter$SizeInfo[], vert2Weights: BlockModelLighter$SizeInfo[], vert3Weights: BlockModelLighter$SizeInfo[])
     // private corners: Direction[];
     // private doNonCubicWeight: boolean;

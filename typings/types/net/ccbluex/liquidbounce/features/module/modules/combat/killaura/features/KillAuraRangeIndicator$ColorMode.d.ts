@@ -13,7 +13,7 @@ export class KillAuraRangeIndicator$ColorMode extends Enum<KillAuraRangeIndicato
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): KillAuraRangeIndicator$ColorMode;
-    static values(): (Object | null)[];
+    static values(): KillAuraRangeIndicator$ColorMode[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "STATIC" | "RAINBOW" | "DISTANCE";

@@ -14,13 +14,9 @@ import type { Identifier } from '../../../../../../net/minecraft/resources/Ident
 import type { MinecraftServer } from '../../../../../../net/minecraft/server/MinecraftServer.d.ts'
 export class PacketContextImpl extends Object implements PacketContext {
     static CONNECTION: PacketContext$Key<Connection>;
-    static CONNECTION: PacketContext$ReadKey<Connection>;
     static GAME_PROFILE: PacketContext$Key<GameProfile>;
-    static GAME_PROFILE: PacketContext$ReadKey<GameProfile>;
     static REGISTRY_ACCESS: PacketContext$Key<RegistryAccess>;
-    static REGISTRY_ACCESS: PacketContext$ReadKey<RegistryAccess>;
     static SERVER_INSTANCE: PacketContext$Key<MinecraftServer>;
-    static SERVER_INSTANCE: PacketContext$ReadKey<MinecraftServer>;
     static VALUE: ScopedValue<PacketContext>;
     static get(): PacketContext;
     static key(paramarg0: Identifier): PacketContext$Key<Object>;

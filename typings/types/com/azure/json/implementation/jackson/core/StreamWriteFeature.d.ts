@@ -12,7 +12,7 @@ export class StreamWriteFeature extends Enum<StreamWriteFeature> implements Jack
     static WRITE_BIGDECIMAL_AS_PLAIN: StreamWriteFeature;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): StreamWriteFeature;
-    static values(): (Object | null)[];
+    static values(): StreamWriteFeature[];
     private constructor(arg2: JsonGenerator$Feature)
     // private _defaultState: boolean;
     // private _mappedFeature: JsonGenerator$Feature;

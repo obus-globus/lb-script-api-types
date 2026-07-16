@@ -7,7 +7,6 @@ export class IsExtensibleNodeGen extends IsExtensibleNode {
     static create(): IsExtensibleNode;
     static getUncached(): IsExtensibleNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private cachedJSNonProxyClass_cache: IsExtensibleNodeGen$CachedJSNonProxyClassData;
     // private cachedShape_cache: IsExtensibleNodeGen$CachedShapeData;

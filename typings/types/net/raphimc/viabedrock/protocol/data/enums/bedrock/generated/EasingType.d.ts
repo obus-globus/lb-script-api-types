@@ -40,7 +40,7 @@ export class EasingType extends Enum<EasingType> {
     static getByValue(paramarg0: number, paramarg1: EasingType): EasingType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): EasingType;
-    static values(): (Object | null)[];
+    static values(): EasingType[];
     private constructor(arg2: number)
     private constructor(arg2: EasingType)
     readonly value: number;

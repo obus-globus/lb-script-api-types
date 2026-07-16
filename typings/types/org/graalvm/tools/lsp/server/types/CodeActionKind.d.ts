@@ -14,7 +14,7 @@ export class CodeActionKind extends Enum<CodeActionKind> {
     static get(paramstringValue: string): CodeActionKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CodeActionKind;
-    static values(): (Object | null)[];
+    static values(): CodeActionKind[];
     private constructor(stringValue: string)
     readonly stringValue: string;
     getStringValue(): string;

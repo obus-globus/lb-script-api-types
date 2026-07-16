@@ -14,7 +14,7 @@ export class HighLevelMonitorConfigurationAPI$MC_SUPPORTED_COLOR_TEMPERATURE ext
     static MC_SUPPORTED_COLOR_TEMPERATURE_NONE: HighLevelMonitorConfigurationAPI$MC_SUPPORTED_COLOR_TEMPERATURE;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HighLevelMonitorConfigurationAPI$MC_SUPPORTED_COLOR_TEMPERATURE;
-    static values(): (Object | null)[];
+    static values(): HighLevelMonitorConfigurationAPI$MC_SUPPORTED_COLOR_TEMPERATURE[];
     private constructor(arg2: number)
     readonly flag: number;
     getFlag(): number;

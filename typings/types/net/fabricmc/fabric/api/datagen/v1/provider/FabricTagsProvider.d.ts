@@ -13,7 +13,7 @@ import type { TagKey } from '../../../../../../../net/minecraft/tags/TagKey.d.ts
 import type { Logger } from '../../../../../../../org/slf4j/Logger.d.ts'
 export abstract class FabricTagsProvider<T extends unknown> extends TagsProvider<T> {
     static FIXED_ORDER_FIELDS: (param0: string) => number;
-    static KEY_COMPARATOR: (param0: Object) => boolean;
+    static KEY_COMPARATOR: (param0: string, param1: string) => number;
     static LOGGER: Logger;
     constructor(arg0: FabricPackOutput, arg1: ResourceKey<T[]>, arg2: CompletableFuture<HolderLookup$Provider>)
     readonly aliasGroupBuilders: Map<Identifier, FabricTagsProvider$AliasGroupBuilder>;

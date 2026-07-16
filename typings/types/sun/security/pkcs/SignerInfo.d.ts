@@ -14,7 +14,7 @@ import type { AlgorithmId } from '../../../sun/security/x509/AlgorithmId.d.ts'
 import type { X500Name } from '../../../sun/security/x509/X500Name.d.ts'
 export class SignerInfo extends Object implements DerEncoder {
     static makeSigAlg(paramarg0: AlgorithmId, paramarg1: AlgorithmId): string;
-    static verifyAlgorithms(paramarg0: (Object | null)[], paramarg1: JarConstraintsParameters, paramarg2: string): string[];
+    static verifyAlgorithms(paramarg0: SignerInfo[], paramarg1: JarConstraintsParameters, paramarg2: string): string[];
     constructor(arg0: DerInputStream)
     constructor(arg0: DerInputStream, arg1: boolean)
     constructor(arg0: X500Name, arg1: BigInteger, arg2: AlgorithmId, arg3: PKCS9Attributes, arg4: AlgorithmId, arg5: number[], arg6: PKCS9Attributes)

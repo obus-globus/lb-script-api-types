@@ -9,7 +9,6 @@ export class IterableToListNodeGen extends IterableToListNode {
     static create(): IterableToListNode;
     static getUncached(): IterableToListNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private getIteratorValueNode_: IteratorValueNode;
     // private iteratorStepNode_: IteratorStepNode;

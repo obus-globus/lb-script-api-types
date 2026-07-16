@@ -17,7 +17,7 @@ export class SetTitlePacket_TitleType extends Enum<SetTitlePacket_TitleType> {
     static getByValue(paramarg0: number, paramarg1: SetTitlePacket_TitleType): SetTitlePacket_TitleType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SetTitlePacket_TitleType;
-    static values(): (Object | null)[];
+    static values(): SetTitlePacket_TitleType[];
     private constructor(arg2: number)
     private constructor(arg2: SetTitlePacket_TitleType)
     readonly value: number;

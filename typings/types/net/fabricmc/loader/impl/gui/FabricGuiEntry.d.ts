@@ -6,7 +6,7 @@ export class FabricGuiEntry extends Object {
     static displayCriticalError(paramarg0: Throwable, paramarg1: boolean): void;
     static displayError(paramarg0: string, paramarg1: Throwable, paramarg2: boolean): void;
     static displayError(paramarg0: string, paramarg1: Throwable, paramarg2: (param0: FabricStatusTree) => void, paramarg3: boolean): void;
-    static main(paramarg0: (Object | null)[]): void;
+    static main(paramarg0: string[]): void;
     static open(paramarg0: FabricStatusTree): void;
     constructor()
 }

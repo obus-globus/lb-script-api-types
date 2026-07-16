@@ -5,7 +5,7 @@ import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class SpecializationStatistics$UncachedNodeStatistics extends SpecializationStatistics$NodeStatistics {
-    static create(paramnode: Node, paramspecializations: (Object | null)[]): SpecializationStatistics$NodeStatistics;
+    static create(paramnode: Node, paramspecializations: string[]): SpecializationStatistics$NodeStatistics;
     constructor(node: Node, specializations: string[])
     // private node: Node;
     // private specializationNames: string[];

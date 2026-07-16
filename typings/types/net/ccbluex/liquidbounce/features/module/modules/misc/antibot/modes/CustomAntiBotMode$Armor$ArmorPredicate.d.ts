@@ -30,7 +30,7 @@ export class CustomAntiBotMode$Armor$ArmorPredicate extends Enum<CustomAntiBotMo
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CustomAntiBotMode$Armor$ArmorPredicate;
-    static values(): (Object | null)[];
+    static values(): CustomAntiBotMode$Armor$ArmorPredicate[];
     private constructor(tag: string, predicate: (param0: ItemStack) => boolean)
     private constructor(choiceName: string, ...items: Item[])
     private constructor(choiceName: string, tag: TagKey<Item>)

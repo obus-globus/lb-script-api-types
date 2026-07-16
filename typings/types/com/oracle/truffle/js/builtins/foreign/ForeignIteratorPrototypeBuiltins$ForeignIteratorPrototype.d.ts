@@ -11,7 +11,7 @@ export class ForeignIteratorPrototypeBuiltins$ForeignIteratorPrototype extends E
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ForeignIteratorPrototypeBuiltins$ForeignIteratorPrototype;
-    static values(): (Object | null)[];
+    static values(): ForeignIteratorPrototypeBuiltins$ForeignIteratorPrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

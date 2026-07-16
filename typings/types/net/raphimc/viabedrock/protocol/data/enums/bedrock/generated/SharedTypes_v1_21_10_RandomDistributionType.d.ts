@@ -15,7 +15,7 @@ export class SharedTypes_v1_21_10_RandomDistributionType extends Enum<SharedType
     static getByValue(paramarg0: number, paramarg1: SharedTypes_v1_21_10_RandomDistributionType): SharedTypes_v1_21_10_RandomDistributionType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SharedTypes_v1_21_10_RandomDistributionType;
-    static values(): (Object | null)[];
+    static values(): SharedTypes_v1_21_10_RandomDistributionType[];
     private constructor(arg2: number)
     private constructor(arg2: SharedTypes_v1_21_10_RandomDistributionType)
     readonly value: number;

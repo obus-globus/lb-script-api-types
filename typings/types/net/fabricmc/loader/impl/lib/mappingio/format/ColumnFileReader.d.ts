@@ -13,10 +13,10 @@ export class ColumnFileReader extends Object implements Closeable {
     // private indentationChar: string;
     readonly lineNumber: number;
     // private markIdx: number;
-    // private markedBofs: (Object | null)[];
+    // private markedBofs: boolean[];
     // private markedBufferPositions: number[];
-    // private markedEofs: (Object | null)[];
-    // private markedEols: (Object | null)[];
+    // private markedEofs: boolean[];
+    // private markedEols: boolean[];
     // private markedLineNumbers: number[];
     // private reader: Reader;
     close(): void;

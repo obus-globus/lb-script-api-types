@@ -9,7 +9,7 @@ export class CommandLine$TraceLevel extends Enum<CommandLine$TraceLevel> {
     static WARN: CommandLine$TraceLevel;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CommandLine$TraceLevel;
-    static values(): (Object | null)[];
+    static values(): CommandLine$TraceLevel[];
     private constructor()
     isEnabled(other: CommandLine$TraceLevel): boolean;
     // private prefix(msg: string): string;

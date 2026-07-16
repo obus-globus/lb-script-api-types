@@ -11,12 +11,8 @@ export class SoundTypeBuilderImpl$RegistrationBuilderImpl extends Object impleme
     static DEFAULT_VOLUME: number;
     static DEFAULT_WEIGHT: number;
     static create(paramarg0: SoundTypeBuilder$RegistrationType, paramarg1: Identifier): SoundTypeBuilder$RegistrationBuilder;
-    static create(paramarg0: SoundTypeBuilder$RegistrationType, paramarg1: Identifier): SoundTypeBuilder$RegistrationBuilder;
     static ofEvent(paramarg0: Holder<SoundEvent>): SoundTypeBuilder$RegistrationBuilder;
     static ofEvent(paramarg0: SoundEvent): SoundTypeBuilder$RegistrationBuilder;
-    static ofEvent(paramarg0: Holder<SoundEvent>): SoundTypeBuilder$RegistrationBuilder;
-    static ofEvent(paramarg0: SoundEvent): SoundTypeBuilder$RegistrationBuilder;
-    static ofFile(paramarg0: Identifier): SoundTypeBuilder$RegistrationBuilder;
     static ofFile(paramarg0: Identifier): SoundTypeBuilder$RegistrationBuilder;
     private constructor(arg0: SoundTypeBuilder$RegistrationType, arg1: Identifier)
     // private attenuationDistance: number;

@@ -9,7 +9,7 @@ export class PackLoadFeedback$FinalResult extends Enum<PackLoadFeedback$FinalRes
     static DOWNLOAD_FAILED: PackLoadFeedback$FinalResult;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PackLoadFeedback$FinalResult;
-    static values(): (Object | null)[];
+    static values(): PackLoadFeedback$FinalResult[];
     private constructor()
     name(): "DECLINED" | "APPLIED" | "DISCARDED" | "DOWNLOAD_FAILED" | "ACTIVATION_FAILED";
 }

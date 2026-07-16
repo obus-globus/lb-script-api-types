@@ -13,7 +13,7 @@ export class ModuleAutoDodge$Ignore extends Enum<ModuleAutoDodge$Ignore> impleme
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleAutoDodge$Ignore;
-    static values(): (Object | null)[];
+    static values(): ModuleAutoDodge$Ignore[];
     private constructor(tag: string)
     readonly tag: string;
     name(): "OPEN_INVENTORY" | "USING_ITEM" | "USING_SCAFFOLD";

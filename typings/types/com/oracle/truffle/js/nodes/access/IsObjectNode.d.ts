@@ -5,7 +5,6 @@ export abstract class IsObjectNode extends JavaScriptBaseNode {
     static create(): IsObjectNode;
     static getUncached(): IsObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     executeBoolean(operand: Object): boolean;
 }

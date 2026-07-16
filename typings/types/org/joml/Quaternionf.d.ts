@@ -32,9 +32,9 @@ import type { Vector4dc } from '../../org/joml/Vector4dc.d.ts'
 import type { Vector4f } from '../../org/joml/Vector4f.d.ts'
 import type { Vector4fc } from '../../org/joml/Vector4fc.d.ts'
 export class Quaternionf extends Object implements Externalizable, Cloneable, Quaternionfc {
-    static nlerp(paramarg0: (Object | null)[], paramarg1: number[], paramarg2: Quaternionf): Quaternionfc;
-    static nlerpIterative(paramarg0: (Object | null)[], paramarg1: number[], paramarg2: number, paramarg3: Quaternionf): Quaternionfc;
-    static slerp(paramarg0: (Object | null)[], paramarg1: number[], paramarg2: Quaternionf): Quaternionfc;
+    static nlerp(paramarg0: Quaternionfc[], paramarg1: number[], paramarg2: Quaternionf): Quaternionfc;
+    static nlerpIterative(paramarg0: Quaternionf[], paramarg1: number[], paramarg2: number, paramarg3: Quaternionf): Quaternionfc;
+    static slerp(paramarg0: Quaternionf[], paramarg1: number[], paramarg2: Quaternionf): Quaternionfc;
     constructor()
     constructor(arg0: number, arg1: number, arg2: number, arg3: number)
     constructor(arg0: number, arg1: number, arg2: number, arg3: number)

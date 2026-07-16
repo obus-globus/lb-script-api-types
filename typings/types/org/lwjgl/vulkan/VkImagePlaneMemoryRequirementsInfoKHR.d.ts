@@ -21,35 +21,27 @@ export class VkImagePlaneMemoryRequirementsInfoKHR extends VkImagePlaneMemoryReq
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkImagePlaneMemoryRequirementsInfoKHR;
     static calloc(paramarg0: MemoryStack): VkImagePlaneMemoryRequirementsInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkImagePlaneMemoryRequirementsInfo;
     static create(paramarg0: number): VkImagePlaneMemoryRequirementsInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkImagePlaneMemoryRequirementsInfoKHR;
     static create(paramarg0: number): VkImagePlaneMemoryRequirementsInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkImagePlaneMemoryRequirementsInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkImagePlaneMemoryRequirementsInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkImagePlaneMemoryRequirementsInfo;
     static malloc(paramarg0: MemoryStack): VkImagePlaneMemoryRequirementsInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkImagePlaneMemoryRequirementsInfoKHR;
     static malloc(paramarg0: MemoryStack): VkImagePlaneMemoryRequirementsInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static nplaneAspect(paramarg0: number): number;
     static nplaneAspect(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

@@ -9,7 +9,7 @@ export class AccountType extends Enum<AccountType> {
     static getEntries(): AccountType[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AccountType;
-    static values(): (Object | null)[];
+    static values(): AccountType[];
     private constructor(commonName: string, canJoinOnline: boolean)
     readonly canJoinOnline: boolean;
     readonly commonName: string;

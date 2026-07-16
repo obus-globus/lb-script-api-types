@@ -25,28 +25,21 @@ export class VkPhysicalDeviceExternalBufferInfoKHR extends VkPhysicalDeviceExter
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceExternalBufferInfoKHR;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceExternalBufferInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceExternalBufferInfo;
     static create(paramarg0: number): VkPhysicalDeviceExternalBufferInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceExternalBufferInfoKHR;
     static create(paramarg0: number): VkPhysicalDeviceExternalBufferInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceExternalBufferInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceExternalBufferInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceExternalBufferInfo;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceExternalBufferInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceExternalBufferInfoKHR;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceExternalBufferInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nflags(paramarg0: number): number;
     static nflags(paramarg0: number, paramarg1: number): void;
     static nhandleType(paramarg0: number): number;
@@ -57,7 +50,6 @@ export class VkPhysicalDeviceExternalBufferInfoKHR extends VkPhysicalDeviceExter
     static nsType(paramarg0: number, paramarg1: number): void;
     static nusage(paramarg0: number): number;
     static nusage(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

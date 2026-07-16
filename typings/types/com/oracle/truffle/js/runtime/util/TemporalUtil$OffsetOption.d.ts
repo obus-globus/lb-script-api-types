@@ -8,7 +8,7 @@ export class TemporalUtil$OffsetOption extends Enum<TemporalUtil$OffsetOption> {
     static USE: TemporalUtil$OffsetOption;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TemporalUtil$OffsetOption;
-    static values(): (Object | null)[];
+    static values(): TemporalUtil$OffsetOption[];
     private constructor()
     name(): "USE" | "IGNORE" | "PREFER" | "REJECT";
 }

@@ -6,7 +6,7 @@ export class Elements$DocCommentKind extends Enum<Elements$DocCommentKind> {
     static TRADITIONAL: Elements$DocCommentKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Elements$DocCommentKind;
-    static values(): (Object | null)[];
+    static values(): Elements$DocCommentKind[];
     private constructor()
     name(): "END_OF_LINE" | "TRADITIONAL";
 }

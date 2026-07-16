@@ -17,7 +17,7 @@ export class ForkServer extends Object implements Runnable {
     static PING: number;
     static READY: number;
     static RESOURCE: number;
-    static main(paramarg0: (Object | null)[]): void;
+    static main(paramarg0: string[]): void;
     constructor(arg0: InputStream, arg1: OutputStream, arg2: number, arg3: number, arg4: number)
     // private active: boolean;
     // private classLoader: ClassLoader;

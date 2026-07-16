@@ -10,7 +10,7 @@ export class AbstractArrow$Pickup extends Enum<AbstractArrow$Pickup> {
     static byOrdinal(paramordinal: number): AbstractArrow$Pickup;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): AbstractArrow$Pickup;
-    static values(): (Object | null)[];
+    static values(): AbstractArrow$Pickup[];
     private constructor()
     name(): "DISALLOWED" | "ALLOWED" | "CREATIVE_ONLY";
 }

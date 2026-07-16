@@ -7,7 +7,7 @@ export class PersonNameFormatter$Formality extends Enum<PersonNameFormatter$Form
     static INFORMAL: PersonNameFormatter$Formality;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PersonNameFormatter$Formality;
-    static values(): (Object | null)[];
+    static values(): PersonNameFormatter$Formality[];
     private constructor()
     name(): "FORMAL" | "INFORMAL" | "DEFAULT";
 }

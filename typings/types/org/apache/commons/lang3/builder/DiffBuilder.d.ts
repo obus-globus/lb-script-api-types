@@ -20,7 +20,7 @@ export class DiffBuilder<T extends unknown> extends Object implements Builder<Di
     append(arg0: string, arg1: Object, arg2: Object): DiffBuilder<T>;
     append(arg0: string, arg1: Object[], arg2: Object[]): DiffBuilder<T>;
     append(arg0: string, arg1: boolean, arg2: boolean): DiffBuilder<T>;
-    append(arg0: string, arg1: (Object | null)[], arg2: (Object | null)[]): DiffBuilder<T>;
+    append(arg0: string, arg1: boolean[], arg2: boolean[]): DiffBuilder<T>;
     append(arg0: string, arg1: number, arg2: number): DiffBuilder<T>;
     append(arg0: string, arg1: number[], arg2: number[]): DiffBuilder<T>;
     append(arg0: string, arg1: string, arg2: string): DiffBuilder<T>;

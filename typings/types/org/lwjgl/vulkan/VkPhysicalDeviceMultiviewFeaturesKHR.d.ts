@@ -23,28 +23,21 @@ export class VkPhysicalDeviceMultiviewFeaturesKHR extends VkPhysicalDeviceMultiv
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkPhysicalDeviceMultiviewFeaturesKHR;
     static calloc(paramarg0: MemoryStack): VkPhysicalDeviceMultiviewFeaturesKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkPhysicalDeviceMultiviewFeatures;
     static create(paramarg0: number): VkPhysicalDeviceMultiviewFeatures;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkPhysicalDeviceMultiviewFeaturesKHR;
     static create(paramarg0: number): VkPhysicalDeviceMultiviewFeaturesKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceMultiviewFeatures;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkPhysicalDeviceMultiviewFeaturesKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkPhysicalDeviceMultiviewFeatures;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceMultiviewFeatures;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkPhysicalDeviceMultiviewFeaturesKHR;
     static malloc(paramarg0: MemoryStack): VkPhysicalDeviceMultiviewFeaturesKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nmultiview(paramarg0: number): number;
     static nmultiview(paramarg0: number, paramarg1: number): void;
     static nmultiviewGeometryShader(paramarg0: number): number;
@@ -55,7 +48,6 @@ export class VkPhysicalDeviceMultiviewFeaturesKHR extends VkPhysicalDeviceMultiv
     static npNext(paramarg0: number, paramarg1: number): void;
     static nsType(paramarg0: number): number;
     static nsType(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

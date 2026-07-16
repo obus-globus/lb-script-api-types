@@ -7,7 +7,7 @@ export class RelativeDateTimeFormatter$Style extends Enum<RelativeDateTimeFormat
     static SHORT: RelativeDateTimeFormatter$Style;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): RelativeDateTimeFormatter$Style;
-    static values(): (Object | null)[];
+    static values(): RelativeDateTimeFormatter$Style[];
     private constructor()
     name(): "LONG" | "SHORT" | "NARROW";
 }

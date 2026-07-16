@@ -93,7 +93,7 @@ export class ServerboundBedrockPackets extends Enum<ServerboundBedrockPackets> i
     static getPacket(paramarg0: number): ServerboundBedrockPackets;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ServerboundBedrockPackets;
-    static values(): (Object | null)[];
+    static values(): ServerboundBedrockPackets[];
     private constructor(arg2: number)
     readonly id: number;
     direction(): Direction;

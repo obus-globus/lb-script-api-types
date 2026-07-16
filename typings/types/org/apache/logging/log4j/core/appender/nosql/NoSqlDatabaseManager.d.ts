@@ -15,7 +15,7 @@ import type { MapMessage } from '../../../../../../../org/apache/logging/log4j/m
 export class NoSqlDatabaseManager<W extends unknown> extends AbstractDatabaseManager {
     static getManager(paramname: string, paramfactory: ManagerFactory<AbstractManager, Object>, paramdata: Object | null): AbstractManager | null;
     static getNoSqlDatabaseManager(paramname: string, parambufferSize: number, paramprovider: NoSqlProvider<any>): NoSqlDatabaseManager<Object>;
-    static getNoSqlDatabaseManager(paramname: string, parambufferSize: number, paramprovider: NoSqlProvider<any>, paramadditionalFields: (Object | null)[], paramconfiguration: Configuration): NoSqlDatabaseManager<Object>;
+    static getNoSqlDatabaseManager(paramname: string, parambufferSize: number, paramprovider: NoSqlProvider<any>, paramadditionalFields: KeyValuePair[], paramconfiguration: Configuration): NoSqlDatabaseManager<Object>;
     static hasManager(paramname: string): boolean;
     constructor(arg0: string, arg1: number, arg2: NoSqlProvider<NoSqlConnection<Object, any>>, arg3: KeyValuePair[], arg4: Configuration, arg5: any)
     // private additionalFields: KeyValuePair[];

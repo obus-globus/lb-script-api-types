@@ -13,7 +13,7 @@ export class AsyncGeneratorPrototypeBuiltins$AsyncGeneratorPrototype extends Enu
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): AsyncGeneratorPrototypeBuiltins$AsyncGeneratorPrototype;
-    static values(): (Object | null)[];
+    static values(): AsyncGeneratorPrototypeBuiltins$AsyncGeneratorPrototype[];
     private constructor(length: number)
     readonly length: number;
     args(): BuiltinArgumentBuilder;

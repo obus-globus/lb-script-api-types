@@ -23,7 +23,7 @@ export class ModuleAvoidHazards$Avoid extends Enum<ModuleAvoidHazards$Avoid> imp
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleAvoidHazards$Avoid;
-    static values(): (Object | null)[];
+    static values(): ModuleAvoidHazards$Avoid[];
     private constructor(tag: string, fullCube: boolean, test: (param0: Block, param1: FluidState, param2: BlockPos) => boolean)
     readonly fullCube: boolean;
     readonly tag: string;

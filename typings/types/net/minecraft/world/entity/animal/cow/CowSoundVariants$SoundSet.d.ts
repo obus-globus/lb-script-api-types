@@ -6,7 +6,7 @@ export class CowSoundVariants$SoundSet extends Enum<CowSoundVariants$SoundSet> {
     static MOODY: CowSoundVariants$SoundSet;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CowSoundVariants$SoundSet;
-    static values(): (Object | null)[];
+    static values(): CowSoundVariants$SoundSet[];
     private constructor(identifier: string, soundEventIdentifier: string)
     readonly identifier: string;
     readonly soundEventIdentifier: string;

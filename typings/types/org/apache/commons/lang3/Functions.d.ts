@@ -43,7 +43,7 @@ export class Functions extends Object {
     static stream(paramarg0: Stream<Object>): Streams$FailableStream<Object>;
     static test(paramarg0: (param0: Object | null) => boolean, paramarg1: Object | null): boolean;
     static test(paramarg0: (param0: Object | null, param1: Object | null) => boolean, paramarg1: Object | null, paramarg2: Object | null): boolean;
-    static tryWithResources(paramarg0: () => void, paramarg1: (param0: Throwable) => void, paramarg2: Object | null): void;
-    static tryWithResources(paramarg0: () => void, paramarg1: Object | null): void;
+    static tryWithResources(paramarg0: () => void, paramarg1: (param0: Throwable) => void, paramarg2: () => void[]): void;
+    static tryWithResources(paramarg0: () => void, paramarg1: () => void[]): void;
     constructor()
 }

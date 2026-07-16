@@ -9,7 +9,7 @@ export class Entity$RemovalReason extends Enum<Entity$RemovalReason> {
     static UNLOADED_WITH_PLAYER: Entity$RemovalReason;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Entity$RemovalReason;
-    static values(): (Object | null)[];
+    static values(): Entity$RemovalReason[];
     private constructor(destroy: boolean, save: boolean)
     // private destroy: boolean;
     // private save: boolean;

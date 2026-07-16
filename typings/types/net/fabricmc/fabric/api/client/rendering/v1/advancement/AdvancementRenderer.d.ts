@@ -5,9 +5,10 @@ import type { AdvancementRenderContext$Icon } from '../../../../../../../../net/
 import type { AdvancementRenderer$BackgroundRenderer } from '../../../../../../../../net/fabricmc/fabric/api/client/rendering/v1/advancement/AdvancementRenderer$BackgroundRenderer.d.ts'
 import type { AdvancementRenderer$FrameRenderer } from '../../../../../../../../net/fabricmc/fabric/api/client/rendering/v1/advancement/AdvancementRenderer$FrameRenderer.d.ts'
 import type { AdvancementRenderer$IconRenderer } from '../../../../../../../../net/fabricmc/fabric/api/client/rendering/v1/advancement/AdvancementRenderer$IconRenderer.d.ts'
+import type { Identifier } from '../../../../../../../../net/minecraft/resources/Identifier.d.ts'
 export class AdvancementRenderer extends Object {
-    static registerBackground(paramarg0: (param0: AdvancementRenderContext$Background) => void, ...paramarg1: (Object | null)[]): void;
-    static registerFrame(paramarg0: (param0: AdvancementRenderContext$Frame) => void, ...paramarg1: (Object | null)[]): void;
-    static registerIcon(paramarg0: (param0: AdvancementRenderContext$Icon) => void, ...paramarg1: (Object | null)[]): void;
+    static registerBackground(paramarg0: (param0: AdvancementRenderContext$Background) => void, ...paramarg1: Identifier[]): void;
+    static registerFrame(paramarg0: (param0: AdvancementRenderContext$Frame) => void, ...paramarg1: Identifier[]): void;
+    static registerIcon(paramarg0: (param0: AdvancementRenderContext$Icon) => void, ...paramarg1: Identifier[]): void;
     private constructor()
 }

@@ -1,5 +1,6 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { StringBuilder } from '../../../java/lang/StringBuilder.d.ts'
+import type { AccessibleObject } from '../../../java/lang/reflect/AccessibleObject.d.ts'
 import type { AnnotatedType } from '../../../java/lang/reflect/AnnotatedType.d.ts'
 import type { Executable } from '../../../java/lang/reflect/Executable.d.ts'
 import type { Type } from '../../../java/lang/reflect/Type.d.ts'
@@ -12,7 +13,7 @@ import type { ConstructorRepository } from '../../../sun/reflect/generics/reposi
 export class Constructor<T extends unknown> extends Executable {
     static DECLARED: number;
     static PUBLIC: number;
-    static setAccessible(paramarg0: (Object | null)[], paramarg1: boolean): void;
+    static setAccessible(paramarg0: AccessibleObject[], paramarg1: boolean): void;
     constructor(arg0: Class<T>, arg1: Class<Object>[], arg2: Class<Object>[], arg3: number, arg4: number, arg5: string, arg6: number[], arg7: number[])
     // private acquireConstructorAccessor(): ConstructorAccessor;
     checkCanSetAccessible(arg0: Class<Object>): void;

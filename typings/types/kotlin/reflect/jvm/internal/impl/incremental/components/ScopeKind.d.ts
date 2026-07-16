@@ -6,7 +6,7 @@ export class ScopeKind extends Enum<ScopeKind> {
     static PACKAGE: ScopeKind;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ScopeKind;
-    static values(): (Object | null)[];
+    static values(): ScopeKind[];
     private constructor()
     name(): "PACKAGE" | "CLASSIFIER";
 }

@@ -35,28 +35,21 @@ export class VkImageMemoryBarrier2KHR extends VkImageMemoryBarrier2 {
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkImageMemoryBarrier2KHR;
     static calloc(paramarg0: MemoryStack): VkImageMemoryBarrier2KHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkImageMemoryBarrier2;
     static create(paramarg0: number): VkImageMemoryBarrier2;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkImageMemoryBarrier2KHR;
     static create(paramarg0: number): VkImageMemoryBarrier2KHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkImageMemoryBarrier2;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkImageMemoryBarrier2KHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkImageMemoryBarrier2;
     static malloc(paramarg0: MemoryStack): VkImageMemoryBarrier2;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkImageMemoryBarrier2KHR;
     static malloc(paramarg0: MemoryStack): VkImageMemoryBarrier2KHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static ndstAccessMask(paramarg0: number): number;
     static ndstAccessMask(paramarg0: number, paramarg1: number): void;
     static ndstQueueFamilyIndex(paramarg0: number): number;
@@ -81,7 +74,6 @@ export class VkImageMemoryBarrier2KHR extends VkImageMemoryBarrier2 {
     static nsrcStageMask(paramarg0: number, paramarg1: number): void;
     static nsubresourceRange(paramarg0: number): VkImageSubresourceRange;
     static nsubresourceRange(paramarg0: number, paramarg1: VkImageSubresourceRange): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

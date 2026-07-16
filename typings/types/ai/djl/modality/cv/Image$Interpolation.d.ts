@@ -8,7 +8,7 @@ export class Image$Interpolation extends Enum<Image$Interpolation> {
     static NEAREST: Image$Interpolation;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Image$Interpolation;
-    static values(): (Object | null)[];
+    static values(): Image$Interpolation[];
     private constructor()
     name(): "NEAREST" | "BILINEAR" | "AREA" | "BICUBIC";
 }

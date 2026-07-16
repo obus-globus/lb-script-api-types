@@ -6,7 +6,6 @@ import type { JSObject } from '../../../../../com/oracle/truffle/js/runtime/obje
 export class ObjectPrototypeBuiltinsFactory$GetBuiltinToStringTagNodeGen extends ObjectPrototypeBuiltins$GetBuiltinToStringTagNode {
     static create(): ObjectPrototypeBuiltins$GetBuiltinToStringTagNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private cached_cache: ObjectPrototypeBuiltinsFactory$GetBuiltinToStringTagNodeGen$CachedData;
     // private state_0_: number;

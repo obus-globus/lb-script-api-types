@@ -7,7 +7,7 @@ export class SocialInteractionsScreen$Page extends Enum<SocialInteractionsScreen
     static HIDDEN: SocialInteractionsScreen$Page;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SocialInteractionsScreen$Page;
-    static values(): (Object | null)[];
+    static values(): SocialInteractionsScreen$Page[];
     private constructor()
     name(): "ALL" | "HIDDEN" | "BLOCKED";
 }

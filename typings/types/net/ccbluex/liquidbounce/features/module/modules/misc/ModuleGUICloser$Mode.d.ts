@@ -15,7 +15,7 @@ export class ModuleGUICloser$Mode extends Enum<ModuleGUICloser$Mode> implements 
     static of(paramarg0: string): Tagged;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ModuleGUICloser$Mode;
-    static values(): (Object | null)[];
+    static values(): ModuleGUICloser$Mode[];
     private constructor(tag: string)
     readonly tag: string;
     and(arg0: (param0: Regex, param1: Component) => boolean): (param0: Regex, param1: Component) => boolean;

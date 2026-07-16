@@ -12,11 +12,11 @@ export abstract class TypedArray$AbstractUint32Array extends TypedArray$TypedInt
     static BUFFER_TYPE_DIRECT: number;
     static BUFFER_TYPE_INTEROP: number;
     static BUFFER_TYPE_SHARED: number;
-    static EMPTY_OBJECT_ARRAY: (Object | null)[];
-    static createConstantArray(paramelements: (Object | null)[]): AbstractConstantArray;
+    static EMPTY_OBJECT_ARRAY: Object[];
+    static createConstantArray(paramelements: Object[]): AbstractConstantArray;
     static createConstantEmptyArray(): AbstractConstantArray;
-    static factories(): (Object | null)[];
-    static factories(paramcontext: JSContext): (Object | null)[];
+    static factories(): TypedArrayFactory[];
+    static factories(paramcontext: JSContext): TypedArrayFactory[];
     static getBufferFromTypedArray(paramtypedArray: JSDynamicObject): JSArrayBufferObject;
     static makeRangeList(paramrangeStart: number, paramrangeEnd: number): Object[];
     static valueIsByte(paramvalue: number): boolean;

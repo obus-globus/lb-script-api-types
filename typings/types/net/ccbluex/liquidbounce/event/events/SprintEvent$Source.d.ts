@@ -11,7 +11,7 @@ export class SprintEvent$Source extends Enum<SprintEvent$Source> {
     static getEntries(): SprintEvent$Source[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SprintEvent$Source;
-    static values(): (Object | null)[];
+    static values(): SprintEvent$Source[];
     private constructor()
     name(): "INPUT" | "MOVEMENT_TICK" | "NETWORK";
 }

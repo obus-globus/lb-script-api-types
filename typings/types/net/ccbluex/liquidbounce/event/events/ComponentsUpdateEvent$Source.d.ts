@@ -7,7 +7,7 @@ export class ComponentsUpdateEvent$Source extends Enum<ComponentsUpdateEvent$Sou
     static getEntries(): ComponentsUpdateEvent$Source[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ComponentsUpdateEvent$Source;
-    static values(): (Object | null)[];
+    static values(): ComponentsUpdateEvent$Source[];
     private constructor()
     name(): "NATIVE" | "THEME";
 }

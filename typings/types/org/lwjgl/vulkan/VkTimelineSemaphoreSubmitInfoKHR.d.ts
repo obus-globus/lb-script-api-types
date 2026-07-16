@@ -25,28 +25,21 @@ export class VkTimelineSemaphoreSubmitInfoKHR extends VkTimelineSemaphoreSubmitI
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkTimelineSemaphoreSubmitInfoKHR;
     static calloc(paramarg0: MemoryStack): VkTimelineSemaphoreSubmitInfoKHR;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkTimelineSemaphoreSubmitInfo;
     static create(paramarg0: number): VkTimelineSemaphoreSubmitInfo;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkTimelineSemaphoreSubmitInfoKHR;
     static create(paramarg0: number): VkTimelineSemaphoreSubmitInfoKHR;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkTimelineSemaphoreSubmitInfo;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkTimelineSemaphoreSubmitInfoKHR;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkTimelineSemaphoreSubmitInfo;
     static malloc(paramarg0: MemoryStack): VkTimelineSemaphoreSubmitInfo;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkTimelineSemaphoreSubmitInfoKHR;
     static malloc(paramarg0: MemoryStack): VkTimelineSemaphoreSubmitInfoKHR;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static npNext(paramarg0: number): number;
     static npNext(paramarg0: number, paramarg1: number): void;
     static npSignalSemaphoreValues(paramarg0: number): LongBuffer;
@@ -59,7 +52,6 @@ export class VkTimelineSemaphoreSubmitInfoKHR extends VkTimelineSemaphoreSubmitI
     static nsignalSemaphoreValueCount(paramarg0: number, paramarg1: number): void;
     static nwaitSemaphoreValueCount(paramarg0: number): number;
     static nwaitSemaphoreValueCount(paramarg0: number, paramarg1: number): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

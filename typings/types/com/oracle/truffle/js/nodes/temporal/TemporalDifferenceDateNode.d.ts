@@ -7,7 +7,6 @@ import type { JSTemporalPlainDateObject } from '../../../../../../com/oracle/tru
 import type { TemporalUtil$Unit } from '../../../../../../com/oracle/truffle/js/runtime/util/TemporalUtil$Unit.d.ts'
 export abstract class TemporalDifferenceDateNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     differenceDate(calendar: TruffleString, one: JSTemporalPlainDateObject, two: JSTemporalPlainDateObject, largestUnit: TemporalUtil$Unit, errorBranch: InlinedBranchProfile): JSTemporalDurationObject;
     execute(calendar: TruffleString, one: JSTemporalPlainDateObject, two: JSTemporalPlainDateObject, largestUnit: TemporalUtil$Unit): JSTemporalDurationObject;

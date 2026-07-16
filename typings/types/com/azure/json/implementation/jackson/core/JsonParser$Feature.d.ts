@@ -20,7 +20,7 @@ export class JsonParser$Feature extends Enum<JsonParser$Feature> {
     static collectDefaults(): number;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): JsonParser$Feature;
-    static values(): (Object | null)[];
+    static values(): JsonParser$Feature[];
     private constructor(arg2: boolean)
     // private _defaultState: boolean;
     // private _mask: number;

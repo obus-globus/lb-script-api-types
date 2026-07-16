@@ -23,7 +23,6 @@ export class GsonExtensionKt extends Object {
     static set(paramarg0: JsonObject, paramarg1: string, paramarg2: string): void;
     static set(paramarg0: JsonObject, paramarg1: string, paramarg2: JsonElement): void;
     static set(paramarg0: JsonObject, paramarg1: string, paramarg2: Number): void;
-    static set(paramarg0: JsonObject, paramarg1: string, paramarg2: string): void;
     static string(paramarg0: JsonElement[], paramarg1: number): string;
     static string(paramarg0: JsonObject, paramarg1: string): string;
     static toJsonString(paramarg0: JsonElement, paramarg1: boolean): string;

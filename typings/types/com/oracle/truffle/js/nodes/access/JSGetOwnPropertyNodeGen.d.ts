@@ -11,7 +11,6 @@ export class JSGetOwnPropertyNodeGen extends JSGetOwnPropertyNode {
     static create(paramneedValue: boolean): JSGetOwnPropertyNode;
     static create(paramneedValue: boolean, paramneedEnumerability: boolean, paramneedConfigurability: boolean, paramneedWritability: boolean, paramallowCaching: boolean): JSGetOwnPropertyNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(needValue: boolean, needEnumerability: boolean, needConfigurability: boolean, needWritability: boolean, allowCaching: boolean)
     // private array_arrayGetOwnProperty__field1_: Object;
     // private array_toArrayIndexNode_: ToArrayIndexNode;

@@ -7,7 +7,7 @@ export class ApplicationProtocolConfig$SelectorFailureBehavior extends Enum<Appl
     static NO_ADVERTISE: ApplicationProtocolConfig$SelectorFailureBehavior;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ApplicationProtocolConfig$SelectorFailureBehavior;
-    static values(): (Object | null)[];
+    static values(): ApplicationProtocolConfig$SelectorFailureBehavior[];
     private constructor()
     name(): "FATAL_ALERT" | "NO_ADVERTISE" | "CHOOSE_MY_LAST_PROTOCOL";
 }

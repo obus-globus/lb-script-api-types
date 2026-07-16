@@ -10,7 +10,6 @@ export class GetPrototypeNodeGen extends GetPrototypeNode {
     static create(): GetPrototypeNode;
     static getUncached(): GetPrototypeNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private cachedShape_cache: GetPrototypeNodeGen$CachedShapeData;
     // private proxy_jsclassProfile_: JSClassProfile;

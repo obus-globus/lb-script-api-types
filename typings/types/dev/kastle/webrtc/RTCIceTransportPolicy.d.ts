@@ -8,7 +8,7 @@ export class RTCIceTransportPolicy extends Enum<RTCIceTransportPolicy> {
     static RELAY: RTCIceTransportPolicy;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RTCIceTransportPolicy;
-    static values(): (Object | null)[];
+    static values(): RTCIceTransportPolicy[];
     private constructor()
     name(): "NONE" | "RELAY" | "NO_HOST" | "ALL";
 }

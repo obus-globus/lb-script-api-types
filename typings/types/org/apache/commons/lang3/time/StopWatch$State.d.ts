@@ -8,7 +8,7 @@ export class StopWatch$State extends Enum<StopWatch$State> {
     static UNSTARTED: StopWatch$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): StopWatch$State;
-    static values(): (Object | null)[];
+    static values(): StopWatch$State[];
     constructor(arg2: any)
     isStarted(): boolean;
     isStopped(): boolean;

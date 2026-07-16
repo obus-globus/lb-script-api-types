@@ -14,7 +14,7 @@ export class ProgramGroup extends Enum<ProgramGroup> {
     static ShadowComposite: ProgramGroup;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ProgramGroup;
-    static values(): (Object | null)[];
+    static values(): ProgramGroup[];
     private constructor(arg2: string)
     readonly baseName: string;
     getBaseName(): string;

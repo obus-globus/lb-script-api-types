@@ -8,7 +8,6 @@ import type { JSTemporalDurationRecord } from '../../../../../../com/oracle/truf
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ToTemporalPartialDurationRecordNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     execute(temporalDurationLike: Object, defaults: JSTemporalDurationRecord): JSTemporalDurationRecord;
     toTemporalPartialDurationRecord(temporalDurationLike: Object, defaults: JSTemporalDurationRecord, isObjectNode: IsObjectNode, errorBranch: InlinedBranchProfile, toIntegerIfIntegral: JSToIntegerWithoutRoundingNode, getDays: PropertyGetNode, getHours: PropertyGetNode, getMicroseconds: PropertyGetNode, getMilliseconds: PropertyGetNode, getMinutes: PropertyGetNode, getMonths: PropertyGetNode, getNanoseconds: PropertyGetNode, getSeconds: PropertyGetNode, getWeeks: PropertyGetNode, getYears: PropertyGetNode): JSTemporalDurationRecord;

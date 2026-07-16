@@ -7,7 +7,7 @@ export class TemporalUtil$FieldsType extends Enum<TemporalUtil$FieldsType> {
     static YEAR_MONTH: TemporalUtil$FieldsType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TemporalUtil$FieldsType;
-    static values(): (Object | null)[];
+    static values(): TemporalUtil$FieldsType[];
     private constructor()
     name(): "DATE" | "YEAR_MONTH" | "MONTH_DAY";
 }

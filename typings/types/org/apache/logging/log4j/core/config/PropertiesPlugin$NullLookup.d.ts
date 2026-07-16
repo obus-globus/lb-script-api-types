@@ -9,7 +9,7 @@ export class PropertiesPlugin$NullLookup extends Enum<PropertiesPlugin$NullLooku
     static INSTANCE: PropertiesPlugin$NullLookup;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): PropertiesPlugin$NullLookup;
-    static values(): (Object | null)[];
+    static values(): PropertiesPlugin$NullLookup[];
     private constructor()
     evaluate(key: string): LookupResult;
     evaluate(event: LogEvent, key: string): LookupResult;

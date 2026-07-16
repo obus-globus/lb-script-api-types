@@ -3,7 +3,6 @@ import type { Annotation } from '../../../../../java/lang/annotation/Annotation.
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { KClass } from '../../../../../kotlin/reflect/KClass.d.ts'
 export interface GenerateLibrary extends Annotation, Object{
-    constructor(assertions: KClass<Library>, defaultExportLookupEnabled: boolean, dynamicDispatchEnabled: boolean, pushEncapsulatingNode: boolean, receiverType: KClass<Object>)
     /*not mapped: */ assertions(): KClass<Library>;
     /*not mapped: */ defaultExportLookupEnabled(): boolean;
     /*not mapped: */ dynamicDispatchEnabled(): boolean;

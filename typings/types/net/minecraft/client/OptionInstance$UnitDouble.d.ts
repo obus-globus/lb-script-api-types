@@ -17,7 +17,7 @@ export class OptionInstance$UnitDouble extends Enum<OptionInstance$UnitDouble> i
     static INSTANCE: OptionInstance$UnitDouble;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): OptionInstance$UnitDouble;
-    static values(): (Object | null)[];
+    static values(): OptionInstance$UnitDouble[];
     private constructor()
     applyValueImmediately(): boolean;
     codec(): Codec<number>;

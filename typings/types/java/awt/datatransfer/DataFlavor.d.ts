@@ -20,7 +20,7 @@ export class DataFlavor extends Object implements Externalizable, Cloneable {
     static selectionHtmlFlavor: DataFlavor;
     static stringFlavor: DataFlavor;
     static getTextPlainUnicodeFlavor(): DataFlavor;
-    static selectBestTextFlavor(paramarg0: (Object | null)[]): DataFlavor;
+    static selectBestTextFlavor(paramarg0: DataFlavor[]): DataFlavor;
     constructor()
     constructor(arg0: Class<Object>, arg1: string)
     constructor(arg0: string)

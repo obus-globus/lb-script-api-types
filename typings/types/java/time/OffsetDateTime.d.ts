@@ -38,7 +38,7 @@ export class OffsetDateTime extends Object implements Serializable, Temporal, Te
     static ofInstant(paramarg0: Instant, paramarg1: ZoneId): OffsetDateTime;
     static parse(paramarg0: CharSequence): OffsetDateTime;
     static parse(paramarg0: CharSequence, paramarg1: DateTimeFormatter): OffsetDateTime;
-    static timeLineOrder(): (param0: Object) => boolean;
+    static timeLineOrder(): (param0: OffsetDateTime, param1: OffsetDateTime) => number;
     private constructor(arg0: LocalDateTime, arg1: ZoneOffset)
     // private dateTime: LocalDateTime;
     readonly offset: ZoneOffset;

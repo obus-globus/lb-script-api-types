@@ -8,7 +8,7 @@ export class SSLEngineResult$Status extends Enum<SSLEngineResult$Status> {
     static OK: SSLEngineResult$Status;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SSLEngineResult$Status;
-    static values(): (Object | null)[];
+    static values(): SSLEngineResult$Status[];
     private constructor()
     name(): "BUFFER_UNDERFLOW" | "BUFFER_OVERFLOW" | "OK" | "CLOSED";
 }

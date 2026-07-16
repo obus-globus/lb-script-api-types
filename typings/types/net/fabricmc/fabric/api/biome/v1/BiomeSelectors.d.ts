@@ -8,14 +8,14 @@ import type { Biome } from '../../../../../../net/minecraft/world/level/biome/Bi
 export class BiomeSelectors extends Object {
     static all(): (param0: BiomeSelectionContext) => boolean;
     static excludeByKey(paramarg0: ResourceKey<Biome>[]): (param0: BiomeSelectionContext) => boolean;
-    static excludeByKey(paramarg0: Object | null): (param0: BiomeSelectionContext) => boolean;
+    static excludeByKey(...paramarg0: ResourceKey<Biome>[]): (param0: BiomeSelectionContext) => boolean;
     static foundInOverworld(): (param0: BiomeSelectionContext) => boolean;
     static foundInTheEnd(): (param0: BiomeSelectionContext) => boolean;
     static foundInTheNether(): (param0: BiomeSelectionContext) => boolean;
     static includeByKey(paramarg0: ResourceKey<Biome>[]): (param0: BiomeSelectionContext) => boolean;
-    static includeByKey(paramarg0: Object | null): (param0: BiomeSelectionContext) => boolean;
+    static includeByKey(...paramarg0: ResourceKey<Biome>[]): (param0: BiomeSelectionContext) => boolean;
     static spawnsOneOf(paramarg0: EntityType<any>[]): (param0: BiomeSelectionContext) => boolean;
-    static spawnsOneOf(paramarg0: Object | null): (param0: BiomeSelectionContext) => boolean;
+    static spawnsOneOf(...paramarg0: EntityType<any>[]): (param0: BiomeSelectionContext) => boolean;
     static tag(paramarg0: TagKey<Biome>): (param0: BiomeSelectionContext) => boolean;
     static vanilla(): (param0: BiomeSelectionContext) => boolean;
     private constructor()

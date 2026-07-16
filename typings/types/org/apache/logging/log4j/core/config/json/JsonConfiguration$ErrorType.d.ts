@@ -5,7 +5,7 @@ export class JsonConfiguration$ErrorType extends Enum<JsonConfiguration$ErrorTyp
     static CLASS_NOT_FOUND: JsonConfiguration$ErrorType;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): JsonConfiguration$ErrorType;
-    static values(): (Object | null)[];
+    static values(): JsonConfiguration$ErrorType[];
     private constructor()
     name(): "CLASS_NOT_FOUND";
 }

@@ -4,7 +4,7 @@ import type { PersonName } from '../../../../../com/ibm/icu/text/PersonName.d.ts
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class PersonNamePattern extends Object {
-    static makePatterns(paramarg0: (Object | null)[], paramarg1: PersonNameFormatterImpl): (Object | null)[];
+    static makePatterns(paramarg0: string[], paramarg1: PersonNameFormatterImpl): PersonNamePattern[];
     private constructor(arg0: string, arg1: PersonNameFormatterImpl)
     // private patternElements: PersonNamePattern$Element[];
     // private patternText: string;

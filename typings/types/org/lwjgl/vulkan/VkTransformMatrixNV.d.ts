@@ -20,33 +20,25 @@ export class VkTransformMatrixNV extends VkTransformMatrixKHR {
     static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static calloc(): VkTransformMatrixNV;
     static calloc(paramarg0: MemoryStack): VkTransformMatrixNV;
-    static calloc(paramarg0: number): (Object | null)[];
-    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static create(): VkTransformMatrixKHR;
     static create(paramarg0: number): VkTransformMatrixKHR;
     static create(paramarg0: number): (Object | null)[];
     static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static create(): VkTransformMatrixNV;
     static create(paramarg0: number): VkTransformMatrixNV;
-    static create(paramarg0: number): (Object | null)[];
-    static create(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkTransformMatrixKHR;
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static createSafe(paramarg0: number): VkTransformMatrixNV;
-    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static malloc(): VkTransformMatrixKHR;
     static malloc(paramarg0: MemoryStack): VkTransformMatrixKHR;
     static malloc(paramarg0: number): (Object | null)[];
     static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static malloc(): VkTransformMatrixNV;
     static malloc(paramarg0: MemoryStack): VkTransformMatrixNV;
-    static malloc(paramarg0: number): (Object | null)[];
-    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
     static nmatrix(paramarg0: number, paramarg1: number): number;
     static nmatrix(paramarg0: number): FloatBuffer;
     static nmatrix(paramarg0: number, paramarg1: number, paramarg2: number): void;
     static nmatrix(paramarg0: number, paramarg1: FloatBuffer): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)

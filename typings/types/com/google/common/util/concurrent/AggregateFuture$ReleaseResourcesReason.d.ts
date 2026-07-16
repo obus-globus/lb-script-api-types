@@ -6,7 +6,7 @@ export class AggregateFuture$ReleaseResourcesReason extends Enum<AggregateFuture
     static OUTPUT_FUTURE_DONE: AggregateFuture$ReleaseResourcesReason;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): AggregateFuture$ReleaseResourcesReason;
-    static values(): (Object | null)[];
+    static values(): AggregateFuture$ReleaseResourcesReason[];
     private constructor()
     name(): "OUTPUT_FUTURE_DONE" | "ALL_INPUT_FUTURES_PROCESSED";
 }

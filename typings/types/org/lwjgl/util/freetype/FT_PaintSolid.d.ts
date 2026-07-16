@@ -19,7 +19,6 @@ export class FT_PaintSolid extends Struct<FT_PaintSolid> {
     static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
     static ncolor(paramarg0: number): FT_ColorIndex;
     static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
-    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
     constructor(arg0: ByteBuffer)
     constructor(arg0: number, arg1: ByteBuffer)
     color(): FT_ColorIndex;
