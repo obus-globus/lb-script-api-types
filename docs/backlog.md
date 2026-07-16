@@ -64,18 +64,18 @@ W3 = deeper design, W4 = infra.
 
 ### Wave 2 - script-API surface
 
-- **[ ] A6 - `registerCommand` typed as raw Graal `Value`.** The only usable
+- **[x] A6 - `registerCommand` typed as raw Graal `Value`.** Fixed 2026-07-16 (apply-wave2.py: ScriptCommandObject). The only usable
   call shape (`{name, aliases, parameters[{name,required,vararg,
   getCompletions,validate}], subcommands, onExecute, hub}` per
   `ScriptCommandBuilder.kt:33-118`) does not typecheck - core feature needs
   `as any`. Fix: hand-written `ScriptCommandObject` interface + overload.
   _Layer: augmentation._
-- **[ ] A7 - `ScriptMode.on` has no typed overloads.** Runtime hooks the same
+- **[x] A7 - `ScriptMode.on` has no typed overloads.** Fixed 2026-07-16 (ts-defgen generates ScriptMode.augmentation; T-10b strips base on()). Runtime hooks the same
   122-event table as ScriptModule (`ScriptMode.kt:84-90`) but the d.ts keeps
   `on(eventName: string, handler: Value)`; `mode.on("enable", () => {})` is a
   type error. Mirror the ScriptModule augmentation. _Layer: augmentation +
   ts-generator overlay tooling._
-- **[ ] A8 - hot Minecraft/Gui nullability.** 11 script-facing members typed
+- **[x] A8 - hot Minecraft/Gui nullability.** Fixed 2026-07-16 (apply-wave2.py curated `| null` list; setScreen(Screen|null)). 11 script-facing members typed
   non-null but null without a world - `Minecraft.d.ts`: `player`, `level`,
   `hitResult`, `gameMode`, `crosshairPickEntity`, `getCameraEntity()`,
   `getConnection()`, `getCurrentServer()`, `getSingleplayerServer()`;
@@ -84,16 +84,16 @@ W3 = deeper design, W4 = infra.
   `Screen | null` (LB calls `setScreen(null)`, `ModuleSleepWalker.kt:37`).
   Declaration merging cannot re-type properties - needs a curated post-patch
   list. _Layer: post-patch._
-- **[ ] A9 - AsyncUtil promise typing.** `ticks`/`conditional`/`request`
+- **[x] A9 - AsyncUtil promise typing.** Fixed 2026-07-16 (Promise<T> returns + completableFutureToPromise). `ticks`/`conditional`/`request`
   return opaque `Value`; `await` yields `Value`, not `void`/`boolean`/
   `Response` (README shows usable results). Retype as `Promise<T>`.
   _Layer: augmentation/post-patch._
-- **[ ] A10 - `.class` missing on Java class handles.** GraalJS exposes
+- **[x] A10 - `.class` missing on Java class handles.** Fixed 2026-07-16 (JavaClassBinding `.class`). NOTE: `Java.type()` registry-typed handles still lack it (deferred). GraalJS exposes
   `.class` on every `Java.type` handle and class-value binding; types don't
   (`Tweak.class` -> TS2339, cascades into `ArrayReflect.newInstance`). Add
   `readonly class: Class<T>` to `JavaClassBinding<T>` (ambient.d.ts:101) and
   the registry handle type. _Layer: ambient/augmentation._
-- **[ ] A11 - assorted missing surface.**
+- **[~] A11 - assorted missing surface.** Fixed 2026-07-16: authors string|string[], require/console, localStorage extra members, completableFutureToPromise. DEFERRED: @JvmOverloads instance overloads (generator, see A17/wave3); ThemeManager.getTheme resolved -> not dropped, it's the A15 property/getter dual-surface (`.theme` works).
   `AsyncUtil.completableFutureToPromise` (`@JvmName`'d extension on the
   declaring class is dropped; present in runtime-bindings.json:1184);
   `@JvmOverloads` synthetic overloads dropped on instance methods
