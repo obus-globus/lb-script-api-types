@@ -19,6 +19,161 @@ Legend: `[x]` done / `[~]` partial / `[ ]` not started.
 
 ---
 
+## 2026-07-16 audit (A-series) - wrong/missing types found by the 3-agent sweep
+
+Three independent audits against v0.38.1011 (LB 650f694b6): LB-source drift,
+generated-output pattern sweep, and real-script consumer simulation. Every item
+below was empirically verified (source + emitted d.ts + scoped tsc probes).
+Grouped into fix waves; W1 = generator quick wins, W2 = script-API surface,
+W3 = deeper design, W4 = infra.
+
+### Wave 1 - generator quick wins
+
+- **[ ] A1 - Comparator SAM mis-detected (wave 1).** `findSingleAbstractMethod`
+  picks the first abstract method; `java.util.Comparator` redeclares
+  `equals(Object)` abstract, which wins over `compare(T,T)` - every comparator
+  renders `(param0: Object) => boolean` instead of `(a, b) => number`.
+  ~5-6k affected signatures (`Stream.sorted`, `Comparator.reversed`, LB's
+  `asComparator`). Fix: exclude public-Object-method signatures per JLS 9.8.
+  _Layer: generator._
+- **[ ] A2 - reflection-path array erasure (wave 1).** `javaTypeToKotlinType`
+  has no `GenericArrayType` case (falls to `Any?` - >=350 sites, e.g.
+  `Lists.newArrayList(paramelements: Object | null)`, also kills the `...`
+  rest-param rendering); reference-array `Class` (`String[].class`) pads to
+  `(Object | null)[]` instead of recursing into `componentType`
+  (`Main.main(paramargs)`); `BooleanArray` missing from `arrayFromKType`'s
+  primitive table (`asBooleanArray(): (Object | null)[]`). Instance
+  (kotlin-reflect) path is correct - statics/SAM path only. _Layer: generator._
+- **[ ] A3 - interface default properties never injected (wave 1).** The B-fix
+  transitive closure exists for interface default *methods* (`functionsOf`) but
+  `propertiesOf` reads only `declaredMemberProperties`, so implementers lack
+  interface-default properties: `ChatSendEvent` misses `WebSocketEvent`'s
+  `serializer`/`serializeAsync`, `ChatType` misses `Tagged.tagAliases`. This is
+  the mechanism behind **51 of the 54 baselined surface TS2420s** - real
+  runtime members that error in scripts. _Layer: generator._
+- **[ ] A4 - static-method duplicate emission (wave 1).** `staticMethodsOf` has
+  no `emittedSignatures` dedup (unlike `functionsOf`): 12,693 identical
+  duplicate static-method lines across 5,448 files (int/long overloads both
+  collapsing to `number`). Plus 706 files with duplicate static *fields*
+  (inherited public constants re-listed next to shadowing redeclarations - the
+  real TS2300 debt). _Layer: generator._
+- **[ ] A5 - `constructor()` emitted inside interfaces (wave 1).**
+  `generateInterface` calls `constructorsOf` unconditionally; annotation
+  types get interface constructors (629 files; the TS7010/TS1093 baseline
+  codes). Fix: skip for `isInterface`. _Layer: generator._
+
+### Wave 2 - script-API surface
+
+- **[ ] A6 - `registerCommand` typed as raw Graal `Value`.** The only usable
+  call shape (`{name, aliases, parameters[{name,required,vararg,
+  getCompletions,validate}], subcommands, onExecute, hub}` per
+  `ScriptCommandBuilder.kt:33-118`) does not typecheck - core feature needs
+  `as any`. Fix: hand-written `ScriptCommandObject` interface + overload.
+  _Layer: augmentation._
+- **[ ] A7 - `ScriptMode.on` has no typed overloads.** Runtime hooks the same
+  122-event table as ScriptModule (`ScriptMode.kt:84-90`) but the d.ts keeps
+  `on(eventName: string, handler: Value)`; `mode.on("enable", () => {})` is a
+  type error. Mirror the ScriptModule augmentation. _Layer: augmentation +
+  ts-generator overlay tooling._
+- **[ ] A8 - hot Minecraft/Gui nullability.** 11 script-facing members typed
+  non-null but null without a world - `Minecraft.d.ts`: `player`, `level`,
+  `hitResult`, `gameMode`, `crosshairPickEntity`, `getCameraEntity()`,
+  `getConnection()`, `getCurrentServer()`, `getSingleplayerServer()`;
+  `Gui.d.ts`: `screen()`, `overlay()`. LB's own source null-checks all of them
+  (`MinecraftExtensions.kt:46-73`). Also `Gui.setScreen(screen)` must accept
+  `Screen | null` (LB calls `setScreen(null)`, `ModuleSleepWalker.kt:37`).
+  Declaration merging cannot re-type properties - needs a curated post-patch
+  list. _Layer: post-patch._
+- **[ ] A9 - AsyncUtil promise typing.** `ticks`/`conditional`/`request`
+  return opaque `Value`; `await` yields `Value`, not `void`/`boolean`/
+  `Response` (README shows usable results). Retype as `Promise<T>`.
+  _Layer: augmentation/post-patch._
+- **[ ] A10 - `.class` missing on Java class handles.** GraalJS exposes
+  `.class` on every `Java.type` handle and class-value binding; types don't
+  (`Tweak.class` -> TS2339, cascades into `ArrayReflect.newInstance`). Add
+  `readonly class: Class<T>` to `JavaClassBinding<T>` (ambient.d.ts:101) and
+  the registry handle type. _Layer: ambient/augmentation._
+- **[ ] A11 - assorted missing surface.**
+  `AsyncUtil.completableFutureToPromise` (`@JvmName`'d extension on the
+  declaring class is dropped; present in runtime-bindings.json:1184);
+  `@JvmOverloads` synthetic overloads dropped on instance methods
+  (`Primitives.int("5")`, `Color4b.toHexString()` - statics handled
+  correctly); `registerScript` `authors` should be `string | string[]`
+  (`PolyglotScript.kt:198-204`); `require`/`console` globals missing from
+  ambient (commonjs-require + js.console are on); `localStorage` facade
+  missing `compute`/`computeIfAbsent`/`merge`/`entrySet`/`keySet`/`forEach`/
+  `replace`; `ThemeManager.getTheme()` possibly dropped (live-verified script
+  calls it; NEEDS a source check against `ThemeManager.kt` before fixing).
+  _Layers: generator / ambient / augmentation._
+
+### Wave 3 - deeper design
+
+- **[ ] A12 - statics lose Kotlin nullability wholesale.** `staticMethodsOf`
+  resolves via java.lang.reflect, never Kotlin metadata: verified
+  `WorldToScreen.calculateScreenPos` returns `Vec3f?` in Kotlin, emitted
+  non-null (instance dual is correct). Also 12 return-nullability-
+  contradictory overload pairs in 10 hot LB utils (W19 re-emission keys on
+  params only). _Layer: generator._
+- **[ ] A13 - Map renderings don't match GraalJS reality.** JS-global
+  `Map<K,V>` (5,345 refs, no import - names a real-but-wrong runtime type),
+  `{ [key: string]: any }` fastutil fallback (8,429), and string/number index
+  signatures all misrepresent a host `java.util.Map` (`get/put/containsKey`
+  methods, no bracket indexing, no `set/delete`). Consider a structural
+  `JavaMap<K,V>` ambient type. _Layer: generator design._
+- **[ ] A14 - skipped collection classes lose their statics.**
+  `shouldIgnoreSuperclass` classes (`ImmutableList`, `List`, `TreeMap`...)
+  get no module, so `ImmutableList.of/copyOf/builder`, `List.of` are untyped
+  for `Java.type` users. Emit statics-only modules. _Layer: generator._
+- **[ ] A15 - Nashorn dual surface half-typed.** Kotlin classes emit
+  property-only (`Client.getEventManager()` errors though runtime + own KDoc
+  support it); Java classes emit method-only (`mc.connection` untyped).
+  Either emit both forms or document the convention prominently.
+  _Layer: generator design._
+- **[ ] A16 - ambient global collisions in non-module scripts.**
+  `const Vec3d = Java.type(...)` at top level of a non-module script collides
+  with the ambient global (TS2451) - bites two shipped example scripts; the
+  Yarn alias set (Vec3d/MathHelper/Hand/RotationAxis) doubles the trap for
+  zero coverage. Consider dropping the aliases + documenting `export {}`.
+  _Layer: ambient + docs._
+- **[ ] A17 - misc emission nits.** `ChatReceiveEvent.applyChatDecoration`
+  should be `(Component) => Component` (UnaryOperator erasure);
+  `TagEntityEvent.color` property shadowed by the `color(col, priority)`
+  method; suspend fns emitted as plain `(): void` (misleading - JS callers
+  need a Continuation); static generics dead code
+  (`filterIsInstance<KTypeParameter>` over KTypes, statics erase to Object);
+  interface statics wrongly merged into implementing classes; enum
+  `values(): (Object | null)[]` / `valueOf(Class<Object>, string)` could be
+  precisely typed; 4 residual anonymous-class dangling refs
+  (`ExecutionSequencer$1` x2, `Maps$1`, `BestCandidateSampling$1`,
+  `BoundMethodHandle$Specializer`). _Layer: generator._
+
+### Wave 4 - infra / docs
+
+- **[ ] A18 - canary blind spot.** `package-canary.sh` compiles only
+  `ambient` + `registry-lb`; `ambient-full.d.ts` is compiled by NOTHING
+  (not even parsed - its two `/// <reference>` paths are unchecked);
+  `registry-full` is syntax/import-checked but never type-checked as a
+  consumer entry. Add a second canary pass. _Layer: tools._
+- **[ ] A19 - check-drift.sh not wired into CI** (no callers anywhere) and
+  `tools/script-runner/` is gitignored so fresh clones silently pass. Add as
+  informational check-regen step. _Layer: CI._
+- **[ ] A20 - check-regen never stages `docs/notes/`** so
+  events-doc-report.md rots on main between local regens (the `git add`
+  lists in check-regen.yml omit it). _Layer: CI._
+- **[ ] A21 - stale divergent copies** of `ts-defgen.js` / `post-patches.sh` /
+  `apply-enhancements.sh` inside the generator submodule (ScriptHelper-era;
+  its P-1 regex predates T-1 and partially applies). Delete or mark
+  superseded; also `generator/ENHANCEMENTS.md` I-01/I-02 describe the
+  retired mod/ScriptHelper flow as current. _Layer: generator repo._
+- **[ ] A22 - `__smoke/run*.mjs` are broken relics** (resolve TypeScript from
+  pre-split monorepo paths); delete or repoint. _Layer: tools._
+- **[ ] A23 - README says collections expose the Java surface**
+  (`list.get(0)`, `list.size()`) but the generator emits JS arrays - the
+  actual (nicer) behavior is `players[0]`, `.length`, `for..of`. Fix the
+  paragraph. _Layer: docs._
+
+---
+
 ## Keystone - #12b: parameter signature data
 
 > The single highest-ROI change. **Names landed; type substitution still open.**
