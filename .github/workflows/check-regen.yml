@@ -41,6 +41,14 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+          # Do NOT leave the workflow token in .git/config: this job bind-mounts
+          # the workspace (including .git/) into the regen container, which runs
+          # UPSTREAM LiquidBounce gradle code at the freshly-bumped (unreviewed)
+          # tip. With persisted credentials, a malicious upstream commit could
+          # read the token and use this workflow's contents:write to push to
+          # main / dispatch the npm publish. Push steps authenticate explicitly
+          # (git-push-auth) instead.
+          persist-credentials: false
 
       # 1. Resolve the upstream build: commit SHA + mod_version + minecraft_version,
       #    straight from the remote (no full clone needed).
@@ -153,18 +161,21 @@ jobs:
         continue-on-error: true
         run: |
           mkdir -p gradle-cache
+          # `|| rc=$?` keeps the default `bash -e` step shell from aborting on a
+          # regen failure before the chown below runs (a bare `rc=$?` after the
+          # command never executes under -e when the command fails).
+          rc=0
           docker run --rm --shm-size=1g \
             -e HOME=/work \
             -e SKIP_GATES=1 \
             -v "$PWD":/work \
             -v "$PWD/gradle-cache":/cache/gradle \
-            lb-regen:ci
-          rc=$?
+            lb-regen:ci || rc=$?
           # Always reclaim ownership of the container-written tree (root-owned),
           # even if the regen failed - later steps (cache save, gate, git add) and
           # the actions/cache post-step must be able to read/write it.
           sudo chown -R "$(id -u):$(id -g)" . || true
-          exit $rc
+          exit "$rc"
 
       - name: Upload regen-output artifact
         if: steps.branch.outputs.exists == 'false'
@@ -255,7 +266,11 @@ jobs:
           OLD_MC="$(git show origin/main:typings/package.json | node -p "JSON.parse(require('fs').readFileSync(0)).liquidbounce.minecraft")"
           MC_SAME=false; [ "$NEW_MC" = "$OLD_MC" ] && MC_SAME=true
           AUTO=false
+          # steps.regen.outcome guards the tail of the regen script itself: the
+          # step is continue-on-error, and a crash AFTER promote (e.g. a stamp
+          # script) leaves changed, gate-passing typings/ that must not auto-ship.
           if [ "${{ vars.AUTO_RELEASE }}" = "true" ] \
+             && [ "${{ steps.regen.outcome }}" = "success" ] \
              && [ "${{ steps.gate.outputs.gate }}" = "pass" ] \
              && [ "${{ steps.canary.outputs.canary }}" = "pass" ] \
              && [ "${{ steps.sanity.outputs.sanity }}" = "pass" ] \
@@ -266,7 +281,7 @@ jobs:
           echo "auto=$AUTO" >> "$GITHUB_OUTPUT"
           {
             echo "### Decision"
-            echo "- gate: \`${{ steps.gate.outputs.gate }}\` | canary: \`${{ steps.canary.outputs.canary }}\` | sanity: \`${{ steps.sanity.outputs.sanity }}\` | gentest: \`${{ steps.gentest.outputs.gentest }}\` | mc-unchanged: \`$MC_SAME\` (was \`$OLD_MC\`, now \`$NEW_MC\`)"
+            echo "- regen: \`${{ steps.regen.outcome }}\` | gate: \`${{ steps.gate.outputs.gate }}\` | canary: \`${{ steps.canary.outputs.canary }}\` | sanity: \`${{ steps.sanity.outputs.sanity }}\` | gentest: \`${{ steps.gentest.outputs.gentest }}\` | mc-unchanged: \`$MC_SAME\` (was \`$OLD_MC\`, now \`$NEW_MC\`)"
             echo "- AUTO_RELEASE var: \`${{ vars.AUTO_RELEASE }}\`"
             echo "- **auto-release: $AUTO**"
           } >> "$GITHUB_STEP_SUMMARY"
@@ -289,6 +304,10 @@ jobs:
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
           git config user.name  "obus-globus"
           git config user.email "254700516+obus-globus@users.noreply.github.com"
+          # git-push-auth: checkout runs with persist-credentials:false (the
+          # regen container must never see the token), so authenticate the push
+          # here, after all container steps are done.
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           # The version is already final: stamp-version.mjs (run during regen)
           # encodes <lb-major>.<lb-minor>.<lb-patch*1000 + scriptBuild>, where the
           # scriptBuild is the next free build for this LB patch derived from the
@@ -311,6 +330,7 @@ jobs:
       - name: Push review branch
         if: steps.branch.outputs.exists == 'false' && steps.decide.outputs.auto != 'true' && steps.decide.outputs.changed == 'true'
         env:
+          GH_TOKEN: ${{ github.token }}
           LB_VER: ${{ steps.lb.outputs.ver }}
           LB_MC: ${{ steps.lb.outputs.mc }}
           LB_SHORT: ${{ steps.lb.outputs.short }}
@@ -325,6 +345,9 @@ jobs:
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
           git config user.name  "obus-globus"
           git config user.email "254700516+obus-globus@users.noreply.github.com"
+          # git-push-auth: see the auto-release step - checkout persists no
+          # credentials, so the push authenticates explicitly here.
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           # GITHUB_TOKEN cannot push a branch whose .github/workflows/* differ
           # from the default branch (it can't hold the `workflows` scope). If main
           # advanced its workflow files after this run checked out (e.g. a
