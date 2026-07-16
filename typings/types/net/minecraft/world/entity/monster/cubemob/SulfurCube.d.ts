@@ -213,7 +213,7 @@ export class SulfurCube extends AbstractCubeMob implements Bucketable, Shearable
     canHoldItem(itemStack: ItemStack): boolean;
     canPickUpLoot(): boolean;
     canUseSlot(slot: EquipmentSlot): boolean;
-    collectEquipmentChanges(lastEquipmentItems: { [key in EquipmentSlot]: ItemStack }): { [key in EquipmentSlot]: ItemStack };
+    collectEquipmentChanges(lastEquipmentItems: Map<EquipmentSlot, ItemStack>): Map<EquipmentSlot, ItemStack>;
     customServerAiStep(level: ServerLevel): void;
     defineSynchedData(entityData: SynchedEntityData$Builder): void;
     doPush(entity: Entity): void;

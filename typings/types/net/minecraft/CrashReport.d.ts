@@ -12,7 +12,7 @@ export class CrashReport extends Object {
     constructor(title: string, t: Throwable)
     readonly details: CrashReportCategory[];
     readonly exception: Throwable;
-    readonly saveFile: Path[];
+    readonly saveFile: Path;
     readonly systemReport: SystemReport;
     readonly title: string;
     // private trackingStackTrace: boolean;
@@ -25,9 +25,9 @@ export class CrashReport extends Object {
     getExceptionMessage(): string;
     getFriendlyReport(reportType: ReportType): string;
     getFriendlyReport(reportType: ReportType, extraComments: string[]): string;
-    getSaveFile(): Path[];
+    getSaveFile(): Path;
     getSystemReport(): SystemReport;
     getTitle(): string;
-    saveToFile(file: Path[], reportType: ReportType): boolean;
-    saveToFile(saveFile: Path[], reportType: ReportType, extraComments: string[]): boolean;
+    saveToFile(file: Path, reportType: ReportType): boolean;
+    saveToFile(saveFile: Path, reportType: ReportType, extraComments: string[]): boolean;
 }

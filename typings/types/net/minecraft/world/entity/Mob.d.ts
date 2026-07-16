@@ -197,7 +197,7 @@ export abstract class Mob extends LivingEntity implements NavigatingEntity, Equi
     readonly lootTableSeed: number;
     moveControl: MoveControl<Mob>;
     navigation: PathNavigation;
-    // private pathfindingMalus: { [key in PathType]: number };
+    // private pathfindingMalus: Map<PathType, number>;
     readonly persistenceRequired: boolean;
     // private registeredNavigation: PathNavigation;
     readonly sensing: Sensing;
@@ -252,10 +252,10 @@ export abstract class Mob extends LivingEntity implements NavigatingEntity, Equi
     enchantSpawnedArmor(level: ServerLevelAccessor, random: RandomSource, slot: EquipmentSlot, difficulty: DifficultyInstance): void;
     // private enchantSpawnedEquipment(level: ServerLevelAccessor, slot: EquipmentSlot, random: RandomSource, chance: number, difficulty: DifficultyInstance): void;
     enchantSpawnedWeapon(level: ServerLevelAccessor, random: RandomSource, difficulty: DifficultyInstance): void;
-    equip(lootTable: ResourceKey<LootTable>, lootParams: LootParams, optionalLootTableSeed: number, dropChances: { [key in EquipmentSlot]: number }): void;
-    equip(lootTable: ResourceKey<LootTable>, lootParams: LootParams, dropChances: { [key in EquipmentSlot]: number }): void;
+    equip(lootTable: ResourceKey<LootTable>, lootParams: LootParams, optionalLootTableSeed: number, dropChances: Map<EquipmentSlot, number>): void;
+    equip(lootTable: ResourceKey<LootTable>, lootParams: LootParams, dropChances: Map<EquipmentSlot, number>): void;
     equip(equipment: EquipmentTable, lootParams: LootParams): void;
-    equip(lootTable: ResourceKey<LootTable>, dropChances: { [key in EquipmentSlot]: number }): void;
+    equip(lootTable: ResourceKey<LootTable>, dropChances: Map<EquipmentSlot, number>): void;
     equip(equipment: EquipmentTable): void;
     equipItemIfPossible(level: ServerLevel, itemStack: ItemStack): ItemStack;
     finalizeSpawn(level: ServerLevelAccessor, difficulty: DifficultyInstance, spawnReason: EntitySpawnReason, groupData: SpawnGroupData): SpawnGroupData;

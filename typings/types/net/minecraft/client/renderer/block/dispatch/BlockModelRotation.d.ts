@@ -10,8 +10,8 @@ export class BlockModelRotation extends Object implements ModelState {
     static NO_TRANSFORM: Matrix4fc;
     static get(paramgroup: OctahedralGroup): BlockModelRotation;
     private constructor(orientation: OctahedralGroup)
-    // private faceMapping: { [key in Direction]: Matrix4fc };
-    // private inverseFaceMapping: { [key in Direction]: Matrix4fc };
+    // private faceMapping: Map<Direction, Matrix4fc>;
+    // private inverseFaceMapping: Map<Direction, Matrix4fc>;
     // private orientation: OctahedralGroup;
     // private transformation: Transformation;
     // private withUvLock: BlockModelRotation$WithUvLock;

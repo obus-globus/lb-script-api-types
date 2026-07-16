@@ -3,5 +3,5 @@ import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { BasicFileAttributes } from '../../../../../java/nio/file/attribute/BasicFileAttributes.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface PathFilter extends Object{
-    accept(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
+    accept(arg0: Path, arg1: BasicFileAttributes): FileVisitResult;
 }

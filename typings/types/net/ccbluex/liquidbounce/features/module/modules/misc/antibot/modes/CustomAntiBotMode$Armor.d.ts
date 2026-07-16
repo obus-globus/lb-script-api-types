@@ -8,6 +8,6 @@ export class CustomAntiBotMode$Armor extends ToggleableValueGroup {
     // private BASE: CustomAntiBotMode$Armor$ArmorPredicate[];
     // private CHESTPLATE: CustomAntiBotMode$Armor$ArmorPredicate[];
     // private HELMET: CustomAntiBotMode$Armor$ArmorPredicate[];
-    // private values: { [key in EquipmentSlot]: MultiChoiceListValue<CustomAntiBotMode$Armor$ArmorPredicate> };
+    // private values: Map<EquipmentSlot, MultiChoiceListValue<CustomAntiBotMode$Armor$ArmorPredicate>>;
     isValid(entity: Player): boolean;
 }

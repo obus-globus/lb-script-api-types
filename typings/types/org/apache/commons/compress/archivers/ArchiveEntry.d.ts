@@ -6,5 +6,5 @@ export interface ArchiveEntry extends Object{
     getName(): string;
     getSize(): number;
     isDirectory(): boolean;
-    resolveIn(arg0: Path[]): Path[];
+    resolveIn(arg0: Path): Path;
 }

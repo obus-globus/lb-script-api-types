@@ -8,8 +8,8 @@ export class FileEqualsFileFilter extends AbstractFileFilter {
     static EMPTY_STRING_ARRAY: (Object | null)[];
     constructor(arg0: File)
     // private file: File;
-    // private path: Path[];
+    // private path: Path;
     accept(arg0: File): boolean;
     accept(arg0: File, arg1: string): boolean;
-    accept(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
+    accept(arg0: Path, arg1: BasicFileAttributes): FileVisitResult;
 }

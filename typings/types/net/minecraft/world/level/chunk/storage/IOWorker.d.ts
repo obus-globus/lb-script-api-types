@@ -17,7 +17,7 @@ import type { RegionFileStorage } from '../../../../../../net/minecraft/world/le
 import type { RegionStorageInfo } from '../../../../../../net/minecraft/world/level/chunk/storage/RegionStorageInfo.d.ts'
 export class IOWorker extends Object implements AutoCloseable, ChunkScanAccess {
     static STORE_EMPTY: () => CompoundTag;
-    constructor(info: RegionStorageInfo, dir: Path[], sync: boolean)
+    constructor(info: RegionStorageInfo, dir: Path, sync: boolean)
     // private consecutiveExecutor: PriorityConsecutiveExecutor;
     // private pendingWrites: Map<ChunkPos, IOWorker$PendingStore>;
     // private regionCacheForBlender: { [key: string]: any };

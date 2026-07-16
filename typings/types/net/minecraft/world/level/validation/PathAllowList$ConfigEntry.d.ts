@@ -7,13 +7,13 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { PathAllowList$EntryType } from '../../../../../net/minecraft/world/level/validation/PathAllowList$EntryType.d.ts'
 export class PathAllowList$ConfigEntry extends Record {
     static parse(paramdefinition: string): Optional<PathAllowList$ConfigEntry>;
-    constructor(type: (param0: FileSystem, param1: string) => (param0: Path[][]) => boolean, pattern: string)
+    constructor(type: (param0: FileSystem, param1: string) => (param0: Path) => boolean, pattern: string)
     // private pattern: string;
-    // private type: (param0: FileSystem, param1: string) => (param0: Path[][]) => boolean;
-    compile(fileSystem: FileSystem): (param0: Path[][]) => boolean;
+    // private type: (param0: FileSystem, param1: string) => (param0: Path) => boolean;
+    compile(fileSystem: FileSystem): (param0: Path) => boolean;
     equals(o: Object | null): boolean;
     hashCode(): number;
     pattern(): string;
     toString(): string;
-    type(): (param0: FileSystem, param1: string) => (param0: Path[][]) => boolean;
+    type(): (param0: FileSystem, param1: string) => (param0: Path) => boolean;
 }

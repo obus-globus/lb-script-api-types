@@ -10,10 +10,10 @@ import type { RelativeDateTimeFormatter$Style } from '../../../../../../../org/g
 export class RelativeDateTimeFormatter$RelDateTimeDataSink extends UResource$Sink {
     constructor()
     // private pastFutureIndex: number;
-    // private qualitativeUnitMap: { [key in RelativeDateTimeFormatter$Style]: { [key in RelativeDateTimeFormatter$AbsoluteUnit]: { [key in RelativeDateTimeFormatter$Direction]: string } } };
+    // private qualitativeUnitMap: Map<RelativeDateTimeFormatter$Style, Map<RelativeDateTimeFormatter$AbsoluteUnit, Map<RelativeDateTimeFormatter$Direction, string>>>;
     // private sb: StringBuilder;
     // private style: RelativeDateTimeFormatter$Style;
-    // private styleRelUnitPatterns: { [key in RelativeDateTimeFormatter$Style]: { [key in RelativeDateTimeFormatter$RelativeUnit]: string[][] } };
+    // private styleRelUnitPatterns: Map<RelativeDateTimeFormatter$Style, Map<RelativeDateTimeFormatter$RelativeUnit, string[][]>>;
     // private unit: RelativeDateTimeFormatter$RelDateTimeDataSink$DateTimeUnit;
     consumeTableRelative(key: UResource$Key, value: UResource$Value): void;
     consumeTableRelativeTime(key: UResource$Key, value: UResource$Value): void;

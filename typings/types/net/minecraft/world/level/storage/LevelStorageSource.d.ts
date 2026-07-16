@@ -23,24 +23,24 @@ import type { DirectoryValidator } from '../../../../../net/minecraft/world/leve
 export class LevelStorageSource extends Object {
     static ALLOWED_SYMLINKS_CONFIG_NAME: string;
     static TAG_DATA: string;
-    static createDefault(parampath: Path[][]): LevelStorageSource;
+    static createDefault(parampath: Path): LevelStorageSource;
     static getLevelDataAndDimensions(paramworldAccess: LevelStorageSource$LevelStorageAccess, paramlevelDataTag: Dynamic<Object>, paramdataConfiguration: WorldDataConfiguration, paramdatapackDimensions: LevelStem[], paramregistryAccess: HolderLookup$Provider): LevelDataAndDimensions;
     static getPackConfig(paramlevelDataTag: Dynamic<Object>, parampackRepository: PackRepository, paramsafeMode: boolean): WorldLoader$PackConfig;
-    static parseValidator(paramconfigPath: Path[][]): DirectoryValidator;
+    static parseValidator(paramconfigPath: Path): DirectoryValidator;
     static readDataConfig(paramlevelData: Dynamic<Object>): WorldDataConfiguration;
     static readExistingSavedData(paramaccess: LevelStorageSource$LevelStorageAccess, paramregistryAccess: HolderLookup$Provider, paramsavedDataType: SavedDataType<SavedData>): DataResult<SavedData>;
-    static writeGameRules(paramworldData: WorldData, paramworldFolder: Path[][], paramgameRules: GameRules): void;
-    static writeWorldGenSettings(paramregistryAccess: RegistryAccess, paramworldFolder: Path[][], paramworldGenSettings: WorldGenSettings): void;
-    constructor(baseDir: Path[], backupDir: Path[], worldDirValidator: DirectoryValidator, fixerUpper: DataFixer)
-    // private backupDir: Path[];
-    readonly baseDir: Path[];
+    static writeGameRules(paramworldData: WorldData, paramworldFolder: Path, paramgameRules: GameRules): void;
+    static writeWorldGenSettings(paramregistryAccess: RegistryAccess, paramworldFolder: Path, paramworldGenSettings: WorldGenSettings): void;
+    constructor(baseDir: Path, backupDir: Path, worldDirValidator: DirectoryValidator, fixerUpper: DataFixer)
+    // private backupDir: Path;
+    readonly baseDir: Path;
     // private fixerUpper: DataFixer;
     readonly worldDirValidator: DirectoryValidator;
     createAccess(levelId: string): LevelStorageSource$LevelStorageAccess;
     findLevelCandidates(): LevelStorageSource$LevelDirectory[];
-    getBackupPath(): Path[];
-    getBaseDir(): Path[];
-    getLevelPath(levelId: string): Path[];
+    getBackupPath(): Path;
+    getBaseDir(): Path;
+    getLevelPath(levelId: string): Path;
     getName(): string;
     // private getStorageVersion(): number;
     getWorldDirValidator(): DirectoryValidator;

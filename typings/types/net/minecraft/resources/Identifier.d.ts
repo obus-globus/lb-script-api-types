@@ -38,7 +38,7 @@ export class Identifier extends Object implements Comparable<Identifier> {
     getNamespace(): string;
     getPath(): string;
     hashCode(): number;
-    resolveAgainst(root: Path[]): Path[];
+    resolveAgainst(root: Path): Path;
     toDebugFileName(): string;
     toLanguageKey(): string;
     toLanguageKey(prefix: string): string;

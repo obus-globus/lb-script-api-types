@@ -35,7 +35,7 @@ export class DebugScreenEntries extends Object implements DebugScreenEntriesAcce
     static PLAYER_POSITION: Identifier;
     static PLAYER_SECTION_POSITION: Identifier;
     static POST_EFFECT: Identifier;
-    static PROFILES: { [key in DebugScreenProfile]: Map<Identifier, DebugScreenEntryStatus> };
+    static PROFILES: Map<DebugScreenProfile, Map<Identifier, DebugScreenEntryStatus>>;
     static SIMPLE_PERFORMANCE_IMPACTORS: Identifier;
     static SOUND_CACHE: Identifier;
     static SOUND_MOOD: Identifier;

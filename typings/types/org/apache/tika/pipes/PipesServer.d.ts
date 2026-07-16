@@ -26,7 +26,7 @@ import type { FetcherManager } from '../../../../org/apache/tika/pipes/fetcher/F
 export class PipesServer extends Object implements Runnable {
     static TIMEOUT_EXIT_CODE: number;
     static main(paramarg0: (Object | null)[]): void;
-    constructor(arg0: Path[], arg1: InputStream, arg2: PrintStream, arg3: number, arg4: number, arg5: number)
+    constructor(arg0: Path, arg1: InputStream, arg2: PrintStream, arg3: number, arg4: number, arg5: number)
     // private autoDetectParser: Parser;
     // private checkForTimeoutMs: number;
     // private detector: Detector;
@@ -43,7 +43,7 @@ export class PipesServer extends Object implements Runnable {
     // private serverWaitTimeoutMillis: number;
     // private since: number;
     // private tikaConfig: TikaConfig;
-    // private tikaConfigPath: Path[];
+    // private tikaConfigPath: Path;
     // private _preParse(arg0: FetchEmitTuple, arg1: TikaInputStream, arg2: Metadata, arg3: ParseContext): void;
     // private actuallyParse(arg0: FetchEmitTuple): void;
     // private emit(arg0: string, arg1: EmitKey, arg2: boolean, arg3: PipesServer$MetadataListAndEmbeddedBytes, arg4: string, arg5: ParseContext): void;

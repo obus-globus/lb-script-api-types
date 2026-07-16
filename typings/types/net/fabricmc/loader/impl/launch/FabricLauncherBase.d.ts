@@ -16,7 +16,7 @@ export abstract class FabricLauncherBase extends Object implements FabricLaunche
     constructor()
     getEntrypoint(): string;
     getEnvironmentType(): EnvType;
-    getManifest(arg0: Path[]): Manifest;
+    getManifest(arg0: Path): Manifest;
     getMappingConfiguration(): MappingConfiguration;
     getResourceAsStream(arg0: string): InputStream;
     getTargetClassLoader(): ClassLoader;

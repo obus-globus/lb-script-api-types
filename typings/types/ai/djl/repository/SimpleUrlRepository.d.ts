@@ -13,7 +13,7 @@ export class SimpleUrlRepository extends AbstractRepository {
     // private metadata: Metadata;
     // private modelName: string;
     // private resolved: boolean;
-    download(arg0: Path[], arg1: URI, arg2: Artifact$Item, arg3: Progress): void;
+    download(arg0: Path, arg1: URI, arg2: Artifact$Item, arg3: Progress): void;
     // private getContentLength(): number;
     // private getMetadata(): Metadata;
     getResources(): MRL[];

@@ -35,5 +35,5 @@ export class PolyglotEngineDispatch extends AbstractPolyglotImpl$AbstractEngineD
     requirePublicLanguage(oreceiver: Object, id: string): Object;
     setEngineAPIReference(oreceiver: Object, engine: Reference<Engine>): void;
     shutdown(engine: Object): void;
-    storeCache(engineReceiver: Object, targetFile: Path[], cancelledWord: number): boolean;
+    storeCache(engineReceiver: Object, targetFile: Path, cancelledWord: number): boolean;
 }

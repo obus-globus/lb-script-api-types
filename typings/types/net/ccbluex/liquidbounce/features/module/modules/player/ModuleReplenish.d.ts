@@ -35,7 +35,7 @@ export class ModuleReplenish extends ClientModule {
     // private /*not mapped: */ getReplenishEmpty(): boolean;
     readonly running: boolean;
     // private screenHandler: EventHook<ScreenEvent>;
-    // private trackedHotbarItems: { [key in HotbarItemSlot]: ItemAndComponents };
+    // private trackedHotbarItems: Map<HotbarItemSlot, ItemAndComponents>;
     // private worldChangeHandler: EventHook<WorldChangeEvent>;
     // private clear(): void;
     onEnabled(): void;

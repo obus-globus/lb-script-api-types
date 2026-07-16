@@ -18,7 +18,7 @@ export class PrefixFileFilter extends AbstractFileFilter implements Serializable
     // private prefixes: string[];
     accept(arg0: File): boolean;
     accept(arg0: File, arg1: string): boolean;
-    accept(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
+    accept(arg0: Path, arg1: BasicFileAttributes): FileVisitResult;
     // private accept(arg0: string): boolean;
     toString(): string;
 }

@@ -12,7 +12,7 @@ export class ServerPackManager$ServerPackData extends Object {
     // private downloadStatus: ServerPackManager$PackDownloadStatus;
     // private hash: HashCode;
     // private id: UUID;
-    // private path: Path[];
+    // private path: Path;
     // private promptAccepted: boolean;
     // private removalReason: ServerPackManager$RemovalReason;
     // private url: URL;

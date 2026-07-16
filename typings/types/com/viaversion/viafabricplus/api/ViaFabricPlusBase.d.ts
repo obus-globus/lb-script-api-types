@@ -25,7 +25,7 @@ export interface ViaFabricPlusBase extends Object{
     enchantmentExists(arg0: ResourceKey<Enchantment>, arg1: ProtocolVersion): boolean;
     getImplVersion(): string;
     getMaxChatLength(arg0: ProtocolVersion): number;
-    getPath(): Path[];
+    getPath(): Path;
     getPlayNetworkUserConnection(): UserConnection;
     getServerVersion(arg0: ServerData): ProtocolVersion;
     getSettingGroup(arg0: string): SettingGroup;

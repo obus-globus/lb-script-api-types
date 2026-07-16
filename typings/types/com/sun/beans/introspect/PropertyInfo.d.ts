@@ -7,7 +7,7 @@ export class PropertyInfo extends Object {
     static get(paramarg0: Class<Object>): { [key: string]: PropertyInfo };
     private constructor()
     readonly indexed: PropertyInfo;
-    // private map: { [key in PropertyInfo$Name]: Object };
+    // private map: Map<PropertyInfo$Name, Object>;
     // private read: MethodInfo;
     // private readList: MethodInfo[];
     // private type: Class<Object>;

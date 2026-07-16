@@ -48,7 +48,7 @@ export class RecordingInput extends Object implements DataInput, AutoCloseable {
     readUnsignedByte(): number;
     readUnsignedShort(): number;
     require(arg0: number, arg1: string): void;
-    setFile(arg0: Path[]): void;
+    setFile(arg0: Path): void;
     setStreamed(): void;
     setValidSize(arg0: number): void;
     size(): number;

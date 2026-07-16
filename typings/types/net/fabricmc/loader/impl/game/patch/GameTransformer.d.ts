@@ -10,7 +10,7 @@ export class GameTransformer extends Object {
     // private patchedClasses: { [key: string]: number[] };
     // private patches: GamePatch[];
     // private addPatchedClass(arg0: ClassNode): void;
-    locateEntrypoints(arg0: FabricLauncher, arg1: Path[][]): void;
+    locateEntrypoints(arg0: FabricLauncher, arg1: Path[]): void;
     // private readClassNode(arg0: SimpleClassPath, arg1: string): ClassNode;
     transform(arg0: string): number[];
 }

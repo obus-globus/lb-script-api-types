@@ -20,7 +20,7 @@ export class PipesConfigBase extends ConfigBase {
     readonly staleFetcherDelaySeconds: number;
     readonly staleFetcherTimeoutSeconds: number;
     readonly startupTimeoutMillis: number;
-    readonly tikaConfig: Path[];
+    readonly tikaConfig: Path;
     readonly timeoutMillis: number;
     getForkedJvmArgs(): string[];
     getJavaPath(): string;
@@ -32,7 +32,7 @@ export class PipesConfigBase extends ConfigBase {
     getStaleFetcherDelaySeconds(): number;
     getStaleFetcherTimeoutSeconds(): number;
     getStartupTimeoutMillis(): number;
-    getTikaConfig(): Path[];
+    getTikaConfig(): Path;
     getTimeoutMillis(): number;
     setForkedJvmArgs(arg0: string[]): void;
     setJavaPath(arg0: string): void;
@@ -44,7 +44,7 @@ export class PipesConfigBase extends ConfigBase {
     setStaleFetcherDelaySeconds(arg0: number): void;
     setStaleFetcherTimeoutSeconds(arg0: number): void;
     setStartupTimeoutMillis(arg0: number): void;
-    setTikaConfig(arg0: Path[]): void;
+    setTikaConfig(arg0: Path): void;
     setTikaConfig(arg0: string): void;
     setTimeoutMillis(arg0: number): void;
 }

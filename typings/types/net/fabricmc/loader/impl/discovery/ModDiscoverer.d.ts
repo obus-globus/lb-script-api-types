@@ -16,10 +16,10 @@ export class ModDiscoverer extends Object {
     // private envType: EnvType;
     // private jijDedupMap: { [key: number]: ModDiscoverer$ModScanTask };
     // private nestedModInitDatas: ModDiscoverer$NestedModInitData[];
-    readonly nonFabricMods: Path[][];
+    readonly nonFabricMods: Path[];
     // private versionOverrides: VersionOverrides;
     addCandidateFinder(arg0: (param0: ModCandidateFinder$ModCandidateConsumer) => void): void;
     // private createJavaMod(): ModCandidateImpl;
     discoverMods(arg0: FabricLoaderImpl, arg1: { [key: string]: ModCandidateImpl[] }): ModCandidateImpl[];
-    getNonFabricMods(): Path[][];
+    getNonFabricMods(): Path[];
 }

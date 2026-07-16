@@ -14,7 +14,7 @@ import type { Item } from '../../../../../../../net/minecraft/world/item/Item.d.
 import type { Enchantment } from '../../../../../../../net/minecraft/world/item/enchantment/Enchantment.d.ts'
 import type { Block } from '../../../../../../../net/minecraft/world/level/block/Block.d.ts'
 export interface FabricLanguageProvider$TranslationBuilder extends Object{
-    add(arg0: Path[]): void;
+    add(arg0: Path): void;
     add(arg0: string, arg1: string): void;
     add(arg0: Holder<Attribute>, arg1: string): void;
     add(arg0: Identifier, arg1: string): void;

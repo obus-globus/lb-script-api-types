@@ -5,7 +5,7 @@ import type { ChunkSectionLayer } from '../../../../net/minecraft/client/rendere
 export class SectionBufferBuilderPack extends Object implements AutoCloseable {
     static TOTAL_BUFFERS_SIZE: number;
     constructor()
-    // private buffers: { [key in ChunkSectionLayer]: ByteBufferBuilder };
+    // private buffers: Map<ChunkSectionLayer, ByteBufferBuilder>;
     buffer(layer: ChunkSectionLayer): ByteBufferBuilder;
     clearAll(): void;
     close(): void;

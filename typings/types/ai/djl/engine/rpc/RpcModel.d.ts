@@ -6,7 +6,7 @@ export class RpcModel extends BaseModel {
     constructor(arg0: string)
     load(arg0: InputStream): void;
     load(arg0: InputStream, arg1: { [key: string]: Object | null }): void;
-    load(arg0: Path[]): void;
-    load(arg0: Path[], arg1: string): void;
-    load(arg0: Path[], arg1: string, arg2: { [key: string]: Object | null }): void;
+    load(arg0: Path): void;
+    load(arg0: Path, arg1: string): void;
+    load(arg0: Path, arg1: string, arg2: { [key: string]: Object | null }): void;
 }

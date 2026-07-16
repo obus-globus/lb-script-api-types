@@ -8,7 +8,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { User } from '../../../../../net/minecraft/client/User.d.ts'
 export class RealmsWorldUpload extends Object {
     static UPLOAD_RETRIES: number;
-    constructor(worldFolder: Path[], realmsSlot: RealmsSlot, user: User, realmId: number, statusCallback: RealmsWorldUploadStatusTracker)
+    constructor(worldFolder: Path, realmsSlot: RealmsSlot, user: User, realmId: number, statusCallback: RealmsWorldUploadStatusTracker)
     // private cancelled: boolean;
     // private client: RealmsClient;
     // private realmId: number;
@@ -16,7 +16,7 @@ export class RealmsWorldUpload extends Object {
     // private statusCallback: RealmsWorldUploadStatusTracker;
     // private uploadTask: CompletableFuture<Object>;
     // private user: User;
-    // private worldFolder: Path[];
+    // private worldFolder: Path;
     cancel(): void;
     packAndUpload(): CompletableFuture<Object>;
     // private requestUploadInfoWithRetries(): UploadInfo;

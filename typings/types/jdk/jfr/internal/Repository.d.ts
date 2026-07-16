@@ -5,14 +5,14 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export class Repository extends Object {
     static getRepository(): Repository;
     private constructor()
-    readonly baseLocation: Path[];
+    readonly baseLocation: Path;
     // private chunkFilename: ChunkFilename;
-    // private cleanupDirectories: Path[][];
-    // private repository: Path[];
+    // private cleanupDirectories: Path[];
+    // private repository: Path;
     clear(): void;
     ensureRepository(): void;
-    getBaseLocation(): Path[];
-    getRepositoryPath(): Path[];
+    getBaseLocation(): Path;
+    getRepositoryPath(): Path;
     newChunk(): RepositoryChunk;
-    setBasePath(arg0: Path[]): void;
+    setBasePath(arg0: Path): void;
 }

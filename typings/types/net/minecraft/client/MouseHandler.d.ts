@@ -50,7 +50,7 @@ export class MouseHandler extends Object implements IMouseKeyboardHandlers, Mous
     isRightPressed(): boolean;
     liquidbounce$setPosition(arg0: number, arg1: number): void;
     // private onButton(handle: number, rawButtonInfo: MouseButtonInfo, action: number): void;
-    // private onDrop(handle: number, files: Path[][], failedCount: number): void;
+    // private onDrop(handle: number, files: Path[], failedCount: number): void;
     // private onMove(handle: number, xpos: number, ypos: number): void;
     // private onScroll(handle: number, xoffset: number, yoffset: number): void;
     releaseMouse(): void;

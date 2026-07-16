@@ -10,7 +10,7 @@ export class ShaderPrinter$ProgramPrintBuilder extends Object {
     // private addItem(arg0: string, arg1: string): void;
     addJson(arg0: string): ShaderPrinter$ProgramPrintBuilder;
     addSource(arg0: PatchShaderType, arg1: string): ShaderPrinter$ProgramPrintBuilder;
-    addSources(arg0: { [key in PatchShaderType]: string }): ShaderPrinter$ProgramPrintBuilder;
+    addSources(arg0: Map<PatchShaderType, string>): ShaderPrinter$ProgramPrintBuilder;
     print(): void;
     setName(arg0: string): ShaderPrinter$ProgramPrintBuilder;
 }

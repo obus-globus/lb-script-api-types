@@ -15,5 +15,5 @@ export class EmptyProfileResults extends Object implements ProfileResults {
     getStartTimeTicks(): number;
     getTickDuration(): number;
     getTimes(path: string): ResultField[];
-    saveResults(file: Path[]): boolean;
+    saveResults(file: Path): boolean;
 }

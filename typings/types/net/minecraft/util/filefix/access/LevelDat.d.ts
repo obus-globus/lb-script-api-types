@@ -5,7 +5,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Tag } from '../../../../../net/minecraft/nbt/Tag.d.ts'
 import type { CompressedNbt } from '../../../../../net/minecraft/util/filefix/access/CompressedNbt.d.ts'
 export class LevelDat extends CompressedNbt {
-    constructor(path: Path[], targetVersion: number)
+    constructor(path: Path, targetVersion: number)
     // private targetVersion: number;
     read(): Optional<Dynamic<Tag>>;
     write<T extends unknown>(data: Dynamic<T>): void;

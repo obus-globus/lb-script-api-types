@@ -8,5 +8,5 @@ export class ScriptCondition extends Object {
     constructor(script: AbstractScript, configuration: Configuration)
     // private configuration: Configuration;
     // private script: AbstractScript;
-    selectFilesToDelete(basePath: Path[], candidates: PathWithAttributes[]): PathWithAttributes[];
+    selectFilesToDelete(basePath: Path, candidates: PathWithAttributes[]): PathWithAttributes[];
 }

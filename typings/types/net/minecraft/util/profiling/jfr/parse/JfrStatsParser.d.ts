@@ -17,7 +17,7 @@ import type { StructureGenStat } from '../../../../../../net/minecraft/util/prof
 import type { ThreadAllocationStat } from '../../../../../../net/minecraft/util/profiling/jfr/stats/ThreadAllocationStat.d.ts'
 import type { TickTimeStat } from '../../../../../../net/minecraft/util/profiling/jfr/stats/TickTimeStat.d.ts'
 export class JfrStatsParser extends Object {
-    static parse(parampath: Path[][]): JfrStatsResult;
+    static parse(parampath: Path): JfrStatsResult;
     private constructor(events: Stream<RecordedEvent>)
     // private chunkGenStats: ChunkGenStat[];
     // private cpuLoadStat: CpuLoadStat[];

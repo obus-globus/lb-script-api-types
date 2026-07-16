@@ -13,7 +13,7 @@ export class ServerPacksSource extends BuiltInPackSource {
     static CORE_PACK_INFO: KnownPack;
     static TESTS_ID: string;
     static VANILLA_ID: string;
-    static createPackRepository(paramdatapackDir: Path[][], paramvalidator: DirectoryValidator): PackRepository;
+    static createPackRepository(paramdatapackDir: Path, paramvalidator: DirectoryValidator): PackRepository;
     static createPackRepository(paramlevelSourceAccess: LevelStorageSource$LevelStorageAccess): PackRepository;
     static createVanillaPackSource(): VanillaPackResources;
     static createVanillaTrustedRepository(): PackRepository;

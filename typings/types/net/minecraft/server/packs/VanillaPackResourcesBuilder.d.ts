@@ -11,17 +11,17 @@ export class VanillaPackResourcesBuilder extends Object {
     constructor()
     // private metadata: ResourceMetadata;
     // private namespaces: string[];
-    // private pathsForType: { [key in PackType]: Path[][] };
-    // private rootPaths: Path[][];
+    // private pathsForType: Map<PackType, Path[]>;
+    // private rootPaths: Path[];
     applyDevelopmentConfig(): VanillaPackResourcesBuilder;
     build(location: PackLocationInfo): VanillaPackResources;
     exposeNamespace(...namespaces: string[]): VanillaPackResourcesBuilder;
-    pushAssetPath(packType: PackType, path: Path[]): VanillaPackResourcesBuilder;
+    pushAssetPath(packType: PackType, path: Path): VanillaPackResourcesBuilder;
     pushClasspathResources(packType: PackType, source: Class<Object>): VanillaPackResourcesBuilder;
     pushJarResources(): VanillaPackResourcesBuilder;
-    // private pushPathForType(packType: PackType, path: Path[]): void;
-    // private pushRootPath(path: Path[]): void;
-    pushUniversalPath(path: Path[]): VanillaPackResourcesBuilder;
+    // private pushPathForType(packType: PackType, path: Path): void;
+    // private pushRootPath(path: Path): void;
+    pushUniversalPath(path: Path): VanillaPackResourcesBuilder;
     setMetadata(metadata: ResourceMetadata): VanillaPackResourcesBuilder;
-    // private validateDirPath(path: Path[]): boolean;
+    // private validateDirPath(path: Path): boolean;
 }

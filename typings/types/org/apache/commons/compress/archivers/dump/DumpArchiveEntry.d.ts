@@ -63,7 +63,7 @@ export class DumpArchiveEntry extends Object implements ArchiveEntry {
     isFile(): boolean;
     isSocket(): boolean;
     isSparseRecord(arg0: number): boolean;
-    resolveIn(arg0: Path[]): Path[];
+    resolveIn(arg0: Path): Path;
     setAccessTime(arg0: Date): void;
     setCreationTime(arg0: Date): void;
     setDeleted(arg0: boolean): void;

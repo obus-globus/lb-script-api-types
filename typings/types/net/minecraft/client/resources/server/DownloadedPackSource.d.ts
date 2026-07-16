@@ -25,7 +25,7 @@ import type { PackSource } from '../../../../../net/minecraft/server/packs/repos
 import type { RepositorySource } from '../../../../../net/minecraft/server/packs/repository/RepositorySource.d.ts'
 import type { HttpUtil$DownloadProgressListener } from '../../../../../net/minecraft/util/HttpUtil$DownloadProgressListener.d.ts'
 export class DownloadedPackSource extends Object implements AutoCloseable {
-    constructor(minecraft: Minecraft, packCache: Path[], user: GameConfig$UserData)
+    constructor(minecraft: Minecraft, packCache: Path, user: GameConfig$UserData)
     // private downloadQueue: DownloadQueue;
     // private manager: ServerPackManager;
     // private minecraft: Minecraft;
@@ -50,7 +50,7 @@ export class DownloadedPackSource extends Object implements AutoCloseable {
     onReloadSuccess(): void;
     popAll(): void;
     popPack(id: UUID): void;
-    pushLocalPack(id: UUID, path: Path[]): void;
+    pushLocalPack(id: UUID, path: Path): void;
     pushPack(id: UUID, url: URL, hash: string): void;
     rejectServerPacks(): void;
     // private startReload(callbacks: PackReloadConfig$Callbacks): void;

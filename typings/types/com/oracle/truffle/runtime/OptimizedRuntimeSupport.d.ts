@@ -62,7 +62,7 @@ export class OptimizedRuntimeSupport extends Accessor$RuntimeSupport {
     onEnginePatch(runtimeData: Object, runtimeOptions: OptionValues, loggerFactory: (param0: string) => TruffleLogger, sandboxPolicy: SandboxPolicy): void;
     onLoopCount(source: Node, count: number): void;
     onOSRNodeReplaced(osrNode: BytecodeOSRNode, oldNode: Node, newNode: Node, reason: CharSequence): void;
-    onStoreCache(runtimeData: Object, targetPath: Path[], cancelledWord: number): boolean;
+    onStoreCache(runtimeData: Object, targetPath: Path, cancelledWord: number): boolean;
     pollBytecodeOSRBackEdge(osrNode: BytecodeOSRNode): boolean;
     pollBytecodeOSRBackEdge(osrNode: BytecodeOSRNode, loopCountIncrement: number): boolean;
     reportPolymorphicSpecialize(source: Node): void;

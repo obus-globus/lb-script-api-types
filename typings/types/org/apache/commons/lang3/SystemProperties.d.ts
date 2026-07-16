@@ -372,7 +372,7 @@ export class SystemProperties extends Object {
     static getOsArch(): string;
     static getOsName(): string;
     static getOsVersion(): string;
-    static getPath(paramarg0: string, paramarg1: () => Path[][]): Path[][];
+    static getPath(paramarg0: string, paramarg1: () => Path): Path;
     static getPathSeparator(): string;
     static getProperty(paramarg0: string): string;
     static getSocksProxyHost(): string;

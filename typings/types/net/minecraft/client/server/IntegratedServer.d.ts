@@ -74,7 +74,7 @@ export class IntegratedServer extends MinecraftServer {
     getPort(): number;
     getRateLimitPacketsPerSecond(): number;
     getScaledTrackingDistance(baseRange: number): number;
-    getServerDirectory(): Path[];
+    getServerDirectory(): Path;
     getTickTimeLogger(): LocalSampleLogger;
     halt(wait: boolean): void;
     initServer(): boolean;

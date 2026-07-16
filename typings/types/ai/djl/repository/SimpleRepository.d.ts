@@ -7,18 +7,18 @@ import type { Progress } from '../../../ai/djl/util/Progress.d.ts'
 import type { URI } from '../../../java/net/URI.d.ts'
 import type { Path } from '../../../java/nio/file/Path.d.ts'
 export class SimpleRepository extends AbstractRepository {
-    constructor(arg0: string, arg1: URI, arg2: Path[])
+    constructor(arg0: string, arg1: URI, arg2: Path)
     // private artifactId: string;
     // private isRemote: boolean;
     // private metadata: Metadata;
     // private modelName: string;
-    // private path: Path[];
+    // private path: Path;
     // private resolved: boolean;
-    download(arg0: Path[], arg1: URI, arg2: Artifact$Item, arg3: Progress): void;
+    download(arg0: Path, arg1: URI, arg2: Artifact$Item, arg3: Progress): void;
     getBaseUri(): URI;
-    getCacheDirectory(): Path[];
+    getCacheDirectory(): Path;
     // private getMetadata(): Metadata;
-    getResourceDirectory(arg0: Artifact): Path[];
+    getResourceDirectory(arg0: Artifact): Path;
     getResources(): MRL[];
     isRemote(): boolean;
     locate(arg0: MRL): Metadata;

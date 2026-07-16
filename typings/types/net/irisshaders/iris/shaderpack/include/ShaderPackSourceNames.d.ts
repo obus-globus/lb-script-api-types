@@ -4,6 +4,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { AbsolutePackPath } from '../../../../../net/irisshaders/iris/shaderpack/include/AbsolutePackPath.d.ts'
 export class ShaderPackSourceNames extends Object {
     static POTENTIAL_STARTS: string[];
-    static findPresentSources(paramarg0: ImmutableList$Builder<AbsolutePackPath>, paramarg1: Path[][], paramarg2: AbsolutePackPath, paramarg3: string[]): boolean;
+    static findPresentSources(paramarg0: ImmutableList$Builder<AbsolutePackPath>, paramarg1: Path, paramarg2: AbsolutePackPath, paramarg3: string[]): boolean;
     constructor()
 }

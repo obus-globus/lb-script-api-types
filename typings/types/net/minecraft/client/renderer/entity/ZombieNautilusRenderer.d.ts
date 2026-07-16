@@ -13,7 +13,7 @@ export class ZombieNautilusRenderer extends MobRenderer<ZombieNautilus, Nautilus
     static NAMETAG_SCALE: number;
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
-    // private models: { [key in ZombieNautilusVariant$ModelType]: NautilusModel };
+    // private models: Map<ZombieNautilusVariant$ModelType, NautilusModel>;
     createRenderState(): NautilusRenderState;
     createRenderState(entity: ZombieNautilus, partialTicks: number): NautilusRenderState;
     extractRenderState(entity: ZombieNautilus, state: NautilusRenderState, partialTicks: number): void;

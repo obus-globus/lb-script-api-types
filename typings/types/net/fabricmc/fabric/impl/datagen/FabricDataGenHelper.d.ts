@@ -6,7 +6,7 @@ export class FabricDataGenHelper extends Object {
     static addConditions(paramarg0: JsonObject, ...paramarg1: (Object | null)[]): void;
     static addConditions(paramarg0: Object, paramarg1: (Object | null)[]): void;
     static consumeConditions(paramarg0: Object): (Object | null)[];
-    static deleteDirectory(paramarg0: Path[][]): void;
+    static deleteDirectory(paramarg0: Path): void;
     static run(): void;
     private constructor()
 }

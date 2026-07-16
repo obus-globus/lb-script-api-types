@@ -11,21 +11,21 @@ export class LibClassifier<L extends Enum<L> & LibClassifier$LibraryType> extend
     constructor(arg0: Class<L>, arg1: EnvType, arg2: GameProvider)
     // private libs: L[];
     // private localPaths: Map<L, string>;
-    // private origins: Map<L, Path[]>;
-    readonly systemLibraries: Path[][];
-    readonly unmatchedOrigins: Path[][];
-    // private addLibrary(arg0: L, arg1: Path[], arg2: string): void;
+    // private origins: Map<L, Path>;
+    readonly systemLibraries: Path[];
+    readonly unmatchedOrigins: Path[];
+    // private addLibrary(arg0: L, arg1: Path, arg2: string): void;
     getClassName(arg0: L): string;
     getLocalPath(arg0: L): string;
-    getOrigin(arg0: L): Path[];
-    getSystemLibraries(): Path[][];
-    getUnmatchedOrigins(): Path[][];
+    getOrigin(arg0: L): Path;
+    getSystemLibraries(): Path[];
+    getUnmatchedOrigins(): Path[];
     has(arg0: L): boolean;
-    is(arg0: Path[], ...arg1: L[]): boolean;
+    is(arg0: Path, ...arg1: L[]): boolean;
     process(arg0: URL): void;
+    process(arg0: Path, ...arg1: L[]): void;
+    // private process(arg0: Path, arg1: L[]): void;
     process(arg0: Path[], ...arg1: L[]): void;
-    // private process(arg0: Path[], arg1: L[]): void;
-    process(arg0: Path[][], ...arg1: L[]): void;
     // private processManifestClassPath(arg0: LoaderLibrary, arg1: EnvType, arg2: boolean): void;
-    remove(arg0: Path[]): boolean;
+    remove(arg0: Path): boolean;
 }

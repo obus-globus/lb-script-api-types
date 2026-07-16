@@ -6,14 +6,14 @@ import type { EquipmentSlot } from '../../../../../../net/minecraft/world/entity
 export class ArmorKitParameters extends Object {
     static Companion: ArmorKitParameters$Companion;
 // (invalid TS: name contains '-')     static box-impl(paramarg0: Map<Object | null, Object | null>): ArmorKitParameters;
-// (invalid TS: name contains '-')     static equals-impl(paramarg0: { [key in EquipmentSlot]: ArmorParameter }, paramarg1: Object): boolean;
-// (invalid TS: name contains '-')     static equals-impl0(paramarg0: { [key in EquipmentSlot]: ArmorParameter }, paramarg1: { [key in EquipmentSlot]: ArmorParameter }): boolean;
-// (invalid TS: name contains '-')     static getParametersForSlot-impl(paramarg0: { [key in EquipmentSlot]: ArmorParameter }, paramarg1: EquipmentSlot): ArmorParameter;
-// (invalid TS: name contains '-')     static getParametersForSlots-2jqCzd0(paramarg0: { [key in EquipmentSlot]: ArmorPiece }): { [key in EquipmentSlot]: ArmorParameter };
-// (invalid TS: name contains '-')     static hashCode-impl(paramarg0: { [key in EquipmentSlot]: ArmorParameter }): number;
-// (invalid TS: name contains '-')     static toString-impl(paramarg0: { [key in EquipmentSlot]: ArmorParameter }): string;
-    private constructor(slots: { [key in EquipmentSlot]: ArmorParameter })
-    // private slots: { [key in EquipmentSlot]: ArmorParameter };
+// (invalid TS: name contains '-')     static equals-impl(paramarg0: Map<EquipmentSlot, ArmorParameter>, paramarg1: Object): boolean;
+// (invalid TS: name contains '-')     static equals-impl0(paramarg0: Map<EquipmentSlot, ArmorParameter>, paramarg1: Map<EquipmentSlot, ArmorParameter>): boolean;
+// (invalid TS: name contains '-')     static getParametersForSlot-impl(paramarg0: Map<EquipmentSlot, ArmorParameter>, paramarg1: EquipmentSlot): ArmorParameter;
+// (invalid TS: name contains '-')     static getParametersForSlots-2jqCzd0(paramarg0: Map<EquipmentSlot, ArmorPiece>): Map<EquipmentSlot, ArmorParameter>;
+// (invalid TS: name contains '-')     static hashCode-impl(paramarg0: Map<EquipmentSlot, ArmorParameter>): number;
+// (invalid TS: name contains '-')     static toString-impl(paramarg0: Map<EquipmentSlot, ArmorParameter>): string;
+    private constructor(slots: Map<EquipmentSlot, ArmorParameter>)
+    // private slots: Map<EquipmentSlot, ArmorParameter>;
     equals(other: Object | null): boolean;
     getParametersForSlot(slotType: EquipmentSlot): ArmorParameter;
     hashCode(): number;

@@ -24,7 +24,7 @@ export class XMLReaderUtils extends Object implements Serializable {
     static buildDOM(paramarg0: InputStream, paramarg1: ParseContext): Document;
     static buildDOM(paramarg0: Reader, paramarg1: ParseContext): Document;
     static buildDOM(paramarg0: string): Document;
-    static buildDOM(paramarg0: Path[][]): Document;
+    static buildDOM(paramarg0: Path): Document;
     static getAttrValue(paramarg0: string, paramarg1: Attributes): string;
     static getDocumentBuilder(): DocumentBuilder;
     static getDocumentBuilder(paramarg0: ParseContext): DocumentBuilder;

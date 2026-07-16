@@ -12,5 +12,5 @@ export class PacketRegistryKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PacketRegistry.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PacketRegistry.kt:35}
      */
-    static getPacketRegistry(): { [key in PacketFlow]: Identifier[] };
+    static getPacketRegistry(): Map<PacketFlow, Identifier[]>;
 }

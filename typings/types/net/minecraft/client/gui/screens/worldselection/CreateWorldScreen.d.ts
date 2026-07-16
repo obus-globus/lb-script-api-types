@@ -37,23 +37,23 @@ export class CreateWorldScreen extends Screen {
     static INWORLD_HEADER_SEPARATOR: Identifier;
     static MENU_BACKGROUND: Identifier;
     static TAB_HEADER_BACKGROUND: Identifier;
-    static createFromExisting(paramminecraft: Minecraft, paramonClose: () => void, paramlevelSettings: LevelSettings, paramworldCreationContext: WorldCreationContext, paramnewDataPackDir: Path[][]): CreateWorldScreen;
-    static createTempDataPackDirFromExistingWorld(paramsourcePackDir: Path[][], paramminecraft: Minecraft): Path[][];
+    static createFromExisting(paramminecraft: Minecraft, paramonClose: () => void, paramlevelSettings: LevelSettings, paramworldCreationContext: WorldCreationContext, paramnewDataPackDir: Path): CreateWorldScreen;
+    static createTempDataPackDirFromExistingWorld(paramsourcePackDir: Path, paramminecraft: Minecraft): Path;
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
     static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     static openFresh(paramminecraft: Minecraft, paramonClose: () => void): void;
-    static openFresh(paramminecraft: Minecraft, paramonClose: () => void, paramcreateWorld: (param0: CreateWorldScreen, param1: LayeredRegistryAccess<RegistryLayer>, param2: LevelDataAndDimensions$WorldDataAndGenSettings, param3: Optional<GameRules>, param4: Path[][]) => boolean): void;
+    static openFresh(paramminecraft: Minecraft, paramonClose: () => void, paramcreateWorld: (param0: CreateWorldScreen, param1: LayeredRegistryAccess<RegistryLayer>, param2: LevelDataAndDimensions$WorldDataAndGenSettings, param3: Optional<GameRules>, param4: Path) => boolean): void;
     static testWorld(paramminecraft: Minecraft, paramonClose: () => void): void;
-    private constructor(minecraft: Minecraft, onClose: () => void, settings: WorldCreationContext, preset: Optional<ResourceKey<WorldPreset>>, seed: OptionalLong, createWorldCallback: (param0: CreateWorldScreen, param1: LayeredRegistryAccess<RegistryLayer>, param2: LevelDataAndDimensions$WorldDataAndGenSettings, param3: Optional<GameRules>, param4: Path[][]) => boolean)
-    // private createWorldCallback: (param0: CreateWorldScreen, param1: LayeredRegistryAccess<RegistryLayer>, param2: LevelDataAndDimensions$WorldDataAndGenSettings, param3: Optional<GameRules>, param4: Path[][]) => boolean;
+    private constructor(minecraft: Minecraft, onClose: () => void, settings: WorldCreationContext, preset: Optional<ResourceKey<WorldPreset>>, seed: OptionalLong, createWorldCallback: (param0: CreateWorldScreen, param1: LayeredRegistryAccess<RegistryLayer>, param2: LevelDataAndDimensions$WorldDataAndGenSettings, param3: Optional<GameRules>, param4: Path) => boolean)
+    // private createWorldCallback: (param0: CreateWorldScreen, param1: LayeredRegistryAccess<RegistryLayer>, param2: LevelDataAndDimensions$WorldDataAndGenSettings, param3: Optional<GameRules>, param4: Path) => boolean;
     // private layout: HeaderAndFooterLayout;
     // private onClose: () => void;
     // private packValidator: DirectoryValidator;
     // private recreated: boolean;
     // private tabManager: TabManager;
     // private tabNavigationBar: MenuTabBar;
-    // private tempDataPackDir: Path[];
+    // private tempDataPackDir: Path;
     // private tempDataPackRepository: PackRepository;
     readonly uiState: WorldCreationUiState;
     // private applyNewPackConfig(packRepository: PackRepository, newConfig: WorldDataConfiguration, onAbort: (param0: WorldDataConfiguration) => void): void;
@@ -63,8 +63,8 @@ export class CreateWorldScreen extends Screen {
     extractMenuBackground(graphics: GuiGraphicsExtractor): void;
     extractMenuBackground(graphics: GuiGraphicsExtractor, x: number, y: number, width: number, height: number): void;
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
-    // private getDataPackSelectionSettings(dataConfiguration: WorldDataConfiguration): Pair<Path[], PackRepository>;
-    // private getOrCreateTempDataPackDir(): Path[];
+    // private getDataPackSelectionSettings(dataConfiguration: WorldDataConfiguration): Pair<Path, PackRepository>;
+    // private getOrCreateTempDataPackDir(): Path;
     getUiState(): WorldCreationUiState;
     init(): void;
     init(width: number, height: number): void;

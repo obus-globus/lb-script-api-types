@@ -31,7 +31,7 @@ export class FileManager extends OutputStreamManager {
     // private isLocking: boolean;
     createOutputStream(): OutputStream;
     createParentDir(file: File): void;
-    defineAttributeView(path: Path[]): void;
+    defineAttributeView(path: Path): void;
     getBufferSize(): number;
     getContentFormat(): { [key: string]: string };
     getFileGroup(): string;

@@ -30,7 +30,7 @@ export abstract class BaseConstructor extends Object {
     // private typeTags: Map<Tag, Class<Object>>;
     readonly warnOnDuplicateKeys: boolean;
     readonly wrappedToRootException: boolean;
-    // private yamlClassConstructors: { [key in NodeId]: Construct };
+    // private yamlClassConstructors: Map<NodeId, Construct>;
     // private yamlConstructors: Map<Tag, Construct>;
     // private yamlMultiConstructors: { [key: string]: Construct };
     addTypeDescription(arg0: TypeDescription): TypeDescription;

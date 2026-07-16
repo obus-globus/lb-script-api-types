@@ -19,5 +19,5 @@ export class ArjArchiveEntry extends Object implements ArchiveEntry {
     hashCode(): number;
     isDirectory(): boolean;
     isHostOsUnix(): boolean;
-    resolveIn(arg0: Path[]): Path[];
+    resolveIn(arg0: Path): Path;
 }

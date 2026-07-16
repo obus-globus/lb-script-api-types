@@ -8,5 +8,5 @@ export class NotebotScanner extends Object implements MinecraftShortcuts {
     static INSTANCE: NotebotScanner;
     // private calculateRequirements(songData: SongData): { [key: string]: any };
     scanBlocksAndCheckRequirements(songData: SongData): NotebotScanner$BlocksAndRequirements;
-    // private scanSurroundingNoteBlocks(songData: SongData): { [key in NoteBlockInstrument]: NoteBlockTracker[] };
+    // private scanSurroundingNoteBlocks(songData: SongData): Map<NoteBlockInstrument, NoteBlockTracker[]>;
 }

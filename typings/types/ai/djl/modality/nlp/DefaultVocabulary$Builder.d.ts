@@ -14,7 +14,7 @@ export class DefaultVocabulary$Builder extends Object {
     addAll(arg0: string[][]): DefaultVocabulary$Builder;
     addFromCustomizedFile(arg0: URL, arg1: (param0: URL) => string[]): DefaultVocabulary$Builder;
     addFromTextFile(arg0: URL): DefaultVocabulary$Builder;
-    addFromTextFile(arg0: Path[]): DefaultVocabulary$Builder;
+    addFromTextFile(arg0: Path): DefaultVocabulary$Builder;
     build(): DefaultVocabulary;
     optMaxTokens(arg0: number): DefaultVocabulary$Builder;
     optMinFrequency(arg0: number): DefaultVocabulary$Builder;

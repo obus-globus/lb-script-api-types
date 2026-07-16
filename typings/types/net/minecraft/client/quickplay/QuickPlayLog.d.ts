@@ -6,7 +6,7 @@ import type { QuickPlayLog$Type } from '../../../../net/minecraft/client/quickpl
 export class QuickPlayLog extends Object {
     static of(parampath: string): QuickPlayLog;
     private constructor(quickPlayPath: string)
-    // private path: Path[];
+    // private path: Path;
     // private worldData: QuickPlayLog$QuickPlayWorld;
     log(minecraft: Minecraft): void;
     setWorldData(type: QuickPlayLog$Type, id: string, name: string): void;

@@ -14,7 +14,7 @@ export class PathProperties extends Enum<PathProperties> {
     static values(): (Object | null)[];
     constructor(arg2: string, arg3: PathProperties)
     // private messageKey: string;
-    accept(arg0: Path[]): boolean;
+    accept(arg0: Path): boolean;
     getMessageKey(): string;
     name(): "FILE_EXISTING" | "DIRECTORY_EXISTING" | "NOT_EXISTING" | "FILE_OVERWRITABLE" | "READABLE" | "WRITABLE";
 }

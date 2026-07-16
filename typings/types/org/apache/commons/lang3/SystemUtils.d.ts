@@ -133,13 +133,13 @@ export class SystemUtils extends Object {
     static getEnvironmentVariable(paramarg0: string, paramarg1: string): string;
     static getHostName(): string;
     static getJavaHome(): File;
-    static getJavaHomePath(): Path[][];
+    static getJavaHomePath(): Path;
     static getJavaIoTmpDir(): File;
-    static getJavaIoTmpDirPath(): Path[][];
+    static getJavaIoTmpDirPath(): Path;
     static getUserDir(): File;
-    static getUserDirPath(): Path[][];
+    static getUserDirPath(): Path;
     static getUserHome(): File;
-    static getUserHomePath(): Path[][];
+    static getUserHomePath(): Path;
     static getUserName(): string;
     static getUserName(paramarg0: string): string;
     static isJavaAwtHeadless(): boolean;

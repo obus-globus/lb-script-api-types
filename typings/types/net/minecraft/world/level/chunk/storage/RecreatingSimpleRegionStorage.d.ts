@@ -10,8 +10,8 @@ import type { RegionStorageInfo } from '../../../../../../net/minecraft/world/le
 import type { SimpleRegionStorage } from '../../../../../../net/minecraft/world/level/chunk/storage/SimpleRegionStorage.d.ts'
 export class RecreatingSimpleRegionStorage extends SimpleRegionStorage {
     static injectDatafixingContext(paramchunkTag: CompoundTag, paramcontextTag: CompoundTag): void;
-    constructor(readInfo: RegionStorageInfo, readFolder: Path[], writeInfo: RegionStorageInfo, writeFolder: Path[], fixerUpper: DataFixer, syncWrites: boolean, dataFixType: DataFixTypes)
-    // private writeFolder: Path[];
+    constructor(readInfo: RegionStorageInfo, readFolder: Path, writeInfo: RegionStorageInfo, writeFolder: Path, fixerUpper: DataFixer, syncWrites: boolean, dataFixType: DataFixTypes)
+    // private writeFolder: Path;
     // private writeWorker: IOWorker;
     close(): void;
     write(pos: ChunkPos, supplier: () => CompoundTag): CompletableFuture<void>;

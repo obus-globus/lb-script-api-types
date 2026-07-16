@@ -7,6 +7,6 @@ import type { Parameters } from '../../../../../../net/irisshaders/iris/pipeline
 export class CompatibilityTransformer extends Object {
     static transformEach(paramarg0: ASTParser, paramarg1: TranslationUnit, paramarg2: Root, paramarg3: Parameters): void;
     static transformFragmentCore(paramarg0: ASTParser, paramarg1: TranslationUnit, paramarg2: Root, paramarg3: Parameters): void;
-    static transformGrouped(paramarg0: ASTParser, paramarg1: { [key in PatchShaderType]: TranslationUnit }, paramarg2: Parameters): void;
+    static transformGrouped(paramarg0: ASTParser, paramarg1: Map<PatchShaderType, TranslationUnit>, paramarg2: Parameters): void;
     constructor()
 }

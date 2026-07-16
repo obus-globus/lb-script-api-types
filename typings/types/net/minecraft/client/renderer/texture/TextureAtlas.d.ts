@@ -42,7 +42,7 @@ export class TextureAtlas extends AbstractTexture implements ExtendedTextureAtla
     close(): void;
     // private createTexture(newWidth: number, newHeight: number, newMipLevel: number): void;
     cycleAnimationFrames(): void;
-    dumpContents(selfId: Identifier, dir: Path[]): void;
+    dumpContents(selfId: Identifier, dir: Path): void;
     getHeight(): number;
     getMaxLevel(): number;
     getOrCreatePBRHolder(): PBRAtlasHolder;

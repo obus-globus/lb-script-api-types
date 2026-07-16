@@ -16,7 +16,7 @@ export class ChunkSectionImpl extends Object implements ChunkSection {
     readonly fluidCount: number;
     readonly light: ChunkSectionLight;
     readonly nonAirBlocksCount: number;
-    // private palettes: { [key in PaletteType]: DataPalette };
+    // private palettes: Map<PaletteType, DataPalette>;
     addPalette(arg0: PaletteType, arg1: DataPalette): void;
     getFluidCount(): number;
     getLight(): ChunkSectionLight;

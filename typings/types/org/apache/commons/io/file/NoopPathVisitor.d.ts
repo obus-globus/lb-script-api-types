@@ -6,5 +6,5 @@ import type { IOBiFunction } from '../../../../../org/apache/commons/io/function
 export class NoopPathVisitor extends SimplePathVisitor {
     static INSTANCE: NoopPathVisitor;
     constructor()
-    constructor(arg0: (param0: Path[], param1: IOException) => FileVisitResult)
+    constructor(arg0: (param0: Path, param1: IOException) => FileVisitResult)
 }

@@ -5,8 +5,8 @@ import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class EntityAttachments extends Object {
     static builder(): EntityAttachments$Builder;
     static createDefault(paramwidth: number, paramheight: number): EntityAttachments;
-    private constructor(attachments: { [key in EntityAttachment]: Vec3[] })
-    // private attachments: { [key in EntityAttachment]: Vec3[] };
+    private constructor(attachments: Map<EntityAttachment, Vec3[]>)
+    // private attachments: Map<EntityAttachment, Vec3[]>;
     get(attachment: EntityAttachment, index: number, rotY: number): Vec3;
     getAverage(attachment: EntityAttachment): Vec3;
     getClamped(attachment: EntityAttachment, index: number, rotY: number): Vec3;

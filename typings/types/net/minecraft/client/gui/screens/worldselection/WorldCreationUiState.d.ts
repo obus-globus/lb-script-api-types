@@ -14,7 +14,7 @@ import type { WorldDataConfiguration } from '../../../../../../net/minecraft/wor
 import type { GameRules } from '../../../../../../net/minecraft/world/level/gamerules/GameRules.d.ts'
 import type { WorldPreset } from '../../../../../../net/minecraft/world/level/levelgen/presets/WorldPreset.d.ts'
 export class WorldCreationUiState extends Object {
-    constructor(savesFolder: Path[], settings: WorldCreationContext, preset: Optional<ResourceKey<WorldPreset>>, seed: OptionalLong)
+    constructor(savesFolder: Path, settings: WorldCreationContext, preset: Optional<ResourceKey<WorldPreset>>, seed: OptionalLong)
     readonly allowCommands: boolean;
     readonly altPresetList: WorldCreationUiState$WorldTypeEntry[];
     readonly bonusChest: boolean;
@@ -25,7 +25,7 @@ export class WorldCreationUiState extends Object {
     // private listeners: (param0: WorldCreationUiState) => void[];
     readonly name: string;
     readonly normalPresetList: WorldCreationUiState$WorldTypeEntry[];
-    // private savesFolder: Path[];
+    // private savesFolder: Path;
     readonly seed: string;
     readonly settings: WorldCreationContext;
     readonly targetFolder: string;

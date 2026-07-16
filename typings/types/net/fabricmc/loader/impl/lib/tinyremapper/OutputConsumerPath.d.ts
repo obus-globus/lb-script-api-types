@@ -10,17 +10,17 @@ import type { NonClassCopyMode } from '../../../../../../net/fabricmc/loader/imp
 import type { OutputConsumerPath$ResourceRemapper } from '../../../../../../net/fabricmc/loader/impl/lib/tinyremapper/OutputConsumerPath$ResourceRemapper.d.ts'
 import type { TinyRemapper } from '../../../../../../net/fabricmc/loader/impl/lib/tinyremapper/TinyRemapper.d.ts'
 export class OutputConsumerPath extends Object implements Closeable, BiConsumer<string, number[]> {
-    constructor(arg0: Path[], arg1: boolean, arg2: boolean, arg3: (param0: Object) => boolean, arg4: SimpleFileVisitor<Path[]>)
+    constructor(arg0: Path, arg1: boolean, arg2: boolean, arg3: (param0: Object) => boolean, arg4: SimpleFileVisitor<Path>)
     // private classNameFilter: (param0: string) => boolean;
     // private closed: boolean;
-    // private dstDir: Path[];
+    // private dstDir: Path;
     // private fsToClose: FileSystemReference;
     // private isJarFs: boolean;
     // private lock: Lock;
     accept(arg0: string, arg1: number[]): void;
-    addNonClassFiles(arg0: Path[], arg1: NonClassCopyMode, arg2: TinyRemapper): void;
-    addNonClassFiles(arg0: Path[], arg1: TinyRemapper, arg2: boolean, arg3: OutputConsumerPath$ResourceRemapper[]): void;
-    addNonClassFiles(arg0: Path[], arg1: TinyRemapper, arg2: OutputConsumerPath$ResourceRemapper[]): void;
+    addNonClassFiles(arg0: Path, arg1: NonClassCopyMode, arg2: TinyRemapper): void;
+    addNonClassFiles(arg0: Path, arg1: TinyRemapper, arg2: boolean, arg3: OutputConsumerPath$ResourceRemapper[]): void;
+    addNonClassFiles(arg0: Path, arg1: TinyRemapper, arg2: OutputConsumerPath$ResourceRemapper[]): void;
     andThen(arg0: (param0: string, param1: number[]) => void): (param0: string, param1: number[]) => void;
     close(): void;
 }

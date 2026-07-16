@@ -12,7 +12,7 @@ export class DigestUtils extends Object {
     static digest(paramarg0: MessageDigest, paramarg1: InputStream): number[];
     static digest(paramarg0: MessageDigest, paramarg1: RandomAccessFile): number[];
     static digest(paramarg0: MessageDigest, paramarg1: ByteBuffer): number[];
-    static digest(paramarg0: MessageDigest, paramarg1: Path[][], ...paramarg2: (Object | null)[]): number[];
+    static digest(paramarg0: MessageDigest, paramarg1: Path, ...paramarg2: (Object | null)[]): number[];
     static getDigest(paramarg0: string): MessageDigest;
     static getDigest(paramarg0: string, paramarg1: MessageDigest): MessageDigest;
     static getMd2Digest(): MessageDigest;
@@ -127,7 +127,7 @@ export class DigestUtils extends Object {
     static updateDigest(paramarg0: MessageDigest, paramarg1: RandomAccessFile): MessageDigest;
     static updateDigest(paramarg0: MessageDigest, paramarg1: string): MessageDigest;
     static updateDigest(paramarg0: MessageDigest, paramarg1: ByteBuffer): MessageDigest;
-    static updateDigest(paramarg0: MessageDigest, paramarg1: Path[][], ...paramarg2: (Object | null)[]): MessageDigest;
+    static updateDigest(paramarg0: MessageDigest, paramarg1: Path, ...paramarg2: (Object | null)[]): MessageDigest;
     constructor()
     constructor(arg0: MessageDigest)
     constructor(arg0: string)
@@ -135,13 +135,13 @@ export class DigestUtils extends Object {
     digest(arg0: File): number[];
     digest(arg0: InputStream): number[];
     digest(arg0: ByteBuffer): number[];
-    digest(arg0: Path[], ...arg1: OpenOption[]): number[];
+    digest(arg0: Path, ...arg1: OpenOption[]): number[];
     digest(arg0: number[]): number[];
     digest(arg0: string): number[];
     digestAsHex(arg0: File): string;
     digestAsHex(arg0: InputStream): string;
     digestAsHex(arg0: ByteBuffer): string;
-    digestAsHex(arg0: Path[], ...arg1: OpenOption[]): string;
+    digestAsHex(arg0: Path, ...arg1: OpenOption[]): string;
     digestAsHex(arg0: number[]): string;
     digestAsHex(arg0: string): string;
     getMessageDigest(): MessageDigest;

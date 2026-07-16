@@ -31,7 +31,7 @@ export class BlockLZ4CompressorOutputStream extends CompressorOutputStream<Outpu
     // private recordLiteral(arg0: number[]): void;
     // private rewriteLastPairs(): void;
     write(arg0: File): number;
-    write(arg0: Path[]): number;
+    write(arg0: Path): number;
     write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;

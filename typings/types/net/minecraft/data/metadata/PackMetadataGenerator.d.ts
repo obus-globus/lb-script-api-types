@@ -23,12 +23,12 @@ export class PackMetadataGenerator extends Object implements DataProvider {
     static LOGGER: Logger;
     static forFeaturePack(paramoutput: PackOutput, paramdescription: Component): PackMetadataGenerator;
     static forFeaturePack(paramoutput: PackOutput, paramdescription: Component, paramflags: FeatureFlagSet): PackMetadataGenerator;
-    static saveAll(paramcache: CachedOutput, paramcodec: Codec<Object>, parampathGetter: (param0: Object | null) => Path[][], paramcontents: Map<Object | null, Object | null>): CompletableFuture<Object>;
-    static saveAll(paramcache: CachedOutput, paramserializer: (param0: Object | null) => JsonElement, parampathGetter: (param0: Object | null) => Path[][], paramcontents: Map<Object | null, Object | null>): CompletableFuture<Object>;
+    static saveAll(paramcache: CachedOutput, paramcodec: Codec<Object>, parampathGetter: (param0: Object | null) => Path, paramcontents: Map<Object | null, Object | null>): CompletableFuture<Object>;
+    static saveAll(paramcache: CachedOutput, paramserializer: (param0: Object | null) => JsonElement, parampathGetter: (param0: Object | null) => Path, paramcontents: Map<Object | null, Object | null>): CompletableFuture<Object>;
     static saveAll(paramcache: CachedOutput, paramcodec: Codec<Object>, parampathProvider: PackOutput$PathProvider, paramentries: Map<Identifier, Object | null>): CompletableFuture<Object>;
-    static saveStable(paramcache: CachedOutput, paramcodec: Codec<Object>, paramvalue: Object | null, parampath: Path[][]): CompletableFuture<Object>;
-    static saveStable(paramcache: CachedOutput, paramregistries: HolderLookup$Provider, paramcodec: Codec<Object>, paramvalue: Object | null, parampath: Path[][]): CompletableFuture<Object>;
-    static saveStable(paramcache: CachedOutput, paramroot: JsonElement, parampath: Path[][]): CompletableFuture<Object>;
+    static saveStable(paramcache: CachedOutput, paramcodec: Codec<Object>, paramvalue: Object | null, parampath: Path): CompletableFuture<Object>;
+    static saveStable(paramcache: CachedOutput, paramregistries: HolderLookup$Provider, paramcodec: Codec<Object>, paramvalue: Object | null, parampath: Path): CompletableFuture<Object>;
+    static saveStable(paramcache: CachedOutput, paramroot: JsonElement, parampath: Path): CompletableFuture<Object>;
     constructor(output: PackOutput)
     // private elements: { [key: string]: () => JsonElement };
     // private output: PackOutput;

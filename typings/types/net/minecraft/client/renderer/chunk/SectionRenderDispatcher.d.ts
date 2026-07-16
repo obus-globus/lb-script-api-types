@@ -21,7 +21,7 @@ export class SectionRenderDispatcher extends Object {
     constructor(executor: TracingExecutor, renderBuffers: RenderBuffers, sectionCompiler: SectionCompiler, onSectionMeshUpdate: (param0: SectionRenderDispatcher$RenderSection) => void)
     // private bufferPool: SectionBufferBuilderPool;
     readonly cameraPosition: AtomicReference<Vec3>;
-    // private chunkUberBuffers: { [key in ChunkSectionLayer]: SectionRenderDispatcher$SectionUberBuffers };
+    // private chunkUberBuffers: Map<ChunkSectionLayer, SectionRenderDispatcher$SectionUberBuffers>;
     // private closed: boolean;
     // private copyLock: ReentrantLock;
     // private executor: TracingExecutor;

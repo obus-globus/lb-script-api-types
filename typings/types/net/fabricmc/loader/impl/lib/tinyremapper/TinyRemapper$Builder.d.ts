@@ -13,7 +13,7 @@ import type { TinyRemapper$StateProcessor } from '../../../../../../net/fabricmc
 import type { TrLogger } from '../../../../../../net/fabricmc/loader/impl/lib/tinyremapper/api/TrLogger.d.ts'
 import type { Remapper } from '../../../../../../org/objectweb/asm/commons/Remapper.d.ts'
 export class TinyRemapper$Builder extends Object {
-    constructor(arg0: TrLogger, arg1: SimpleFileVisitor<Path[]>)
+    constructor(arg0: TrLogger, arg1: SimpleFileVisitor<Path>)
     // private analyzeVisitors: TinyRemapper$AnalyzeVisitorProvider[];
     // private checkPackageAccess: boolean;
     // private disableLocalVariableTracking: boolean;

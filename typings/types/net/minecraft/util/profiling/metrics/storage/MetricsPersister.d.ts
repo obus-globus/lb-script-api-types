@@ -7,13 +7,13 @@ import type { RecordedDeviation } from '../../../../../../net/minecraft/util/pro
 export class MetricsPersister extends Object {
     static DEVIATIONS_DIR_NAME: string;
     static METRICS_DIR_NAME: string;
-    static PROFILING_RESULTS_DIR: Path[][];
+    static PROFILING_RESULTS_DIR: Path;
     static PROFILING_RESULT_FILENAME: string;
     constructor(rootFolderName: string)
     // private rootFolderName: string;
-    // private saveCategory(category: MetricCategory, samplers: MetricSampler[], dir: Path[]): void;
-    // private saveDeviations(deviationsBySampler: Map<MetricSampler, RecordedDeviation[]>, directory: Path[]): void;
-    // private saveMetrics(samplers: MetricSampler[], dir: Path[]): void;
-    // private saveProfilingTaskExecutionResult(results: ProfileResults, directory: Path[]): void;
-    saveReports(samplers: MetricSampler[], deviationsBySampler: Map<MetricSampler, RecordedDeviation[]>, profilerResults: ProfileResults): Path[];
+    // private saveCategory(category: MetricCategory, samplers: MetricSampler[], dir: Path): void;
+    // private saveDeviations(deviationsBySampler: Map<MetricSampler, RecordedDeviation[]>, directory: Path): void;
+    // private saveMetrics(samplers: MetricSampler[], dir: Path): void;
+    // private saveProfilingTaskExecutionResult(results: ProfileResults, directory: Path): void;
+    saveReports(samplers: MetricSampler[], deviationsBySampler: Map<MetricSampler, RecordedDeviation[]>, profilerResults: ProfileResults): Path;
 }

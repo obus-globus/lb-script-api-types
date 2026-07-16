@@ -7,5 +7,5 @@ export class KotlinBuiltIns$Primitives extends Object {
     constructor(arg0: Map<Object | null, Object | null>, arg1: Map<Object | null, Object | null>, arg2: Map<Object | null, Object | null>, arg3: () => PackageViewDescriptor[])
     kotlinArrayTypeToPrimitiveKotlinType: Map<SimpleType, SimpleType>;
     primitiveKotlinTypeToKotlinArrayType: Map<KotlinType, SimpleType>;
-    primitiveTypeToArrayKotlinType: { [key in PrimitiveType]: SimpleType };
+    primitiveTypeToArrayKotlinType: Map<PrimitiveType, SimpleType>;
 }

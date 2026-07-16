@@ -30,12 +30,12 @@ export class PackSelectionScreen extends Screen {
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
     static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
-    constructor(repository: PackRepository, output: (param0: PackRepository) => void, packDir: Path[], title: Component)
+    constructor(repository: PackRepository, output: (param0: PackRepository) => void, packDir: Path, title: Component)
     // private availablePackList: TransferableSelectionList;
     // private doneButton: Button;
     // private layout: HeaderAndFooterLayout;
     // private model: PackSelectionModel;
-    // private packDir: Path[];
+    // private packDir: Path;
     // private packIcons: { [key: string]: Identifier };
     // private search: EditBox;
     // private selectedPackList: TransferableSelectionList;
@@ -48,7 +48,7 @@ export class PackSelectionScreen extends Screen {
     init(width: number, height: number): void;
     // private loadPackIcon(textureManager: TextureManager, pack: Pack): Identifier;
     onClose(): void;
-    onFilesDrop(files: Path[][]): void;
+    onFilesDrop(files: Path[]): void;
     // private populateLists(transferredEntry: PackSelectionModel$EntryBase): void;
     // private reload(): void;
     repositionElements(): void;

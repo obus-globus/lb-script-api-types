@@ -18,6 +18,6 @@ export class SectionCompiler extends Object {
     // private cutoutLeaves: boolean;
     // private fluidModelSet: FluidStateModelSet;
     compile(sectionPos: SectionPos, region: RenderSectionRegion, vertexSorting: VertexSorting, builders: SectionBufferBuilderPack): SectionCompiler$Results;
-    // private getOrBeginLayer(startedLayers: { [key in ChunkSectionLayer]: BufferBuilder }, buffers: SectionBufferBuilderPack, layer: ChunkSectionLayer): BufferBuilder;
+    // private getOrBeginLayer(startedLayers: Map<ChunkSectionLayer, BufferBuilder>, buffers: SectionBufferBuilderPack, layer: ChunkSectionLayer): BufferBuilder;
     // private handleBlockEntity<E extends BlockEntity>(results: SectionCompiler$Results, blockEntity: E): void;
 }

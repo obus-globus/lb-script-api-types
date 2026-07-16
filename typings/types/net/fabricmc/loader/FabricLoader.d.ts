@@ -11,18 +11,18 @@ export abstract class FabricLoader extends Object implements FabricLoader_2 {
     static INSTANCE: FabricLoader;
     static getInstance(): FabricLoader_2;
     constructor()
-    getConfigDir(): Path[];
+    getConfigDir(): Path;
     getConfigDirectory(): File;
     getEntrypoints<T extends unknown>(arg0: string, arg1: Class<T>): T[];
     getEnvironmentType(): EnvType;
-    getGameDir(): Path[];
+    getGameDir(): Path;
     getGameDirectory(): File;
     getGameInstance(): Object;
     getMappingResolver(): MappingResolver;
     getModContainers(): ModContainer[];
     getMods(): ModContainer[];
     getModsDirectory(): File;
-    getModsDirectory0(): Path[];
+    getModsDirectory0(): Path;
     getObjectShare(): ObjectShare;
     getRawGameVersion(): string;
     isDevelopmentEnvironment(): boolean;

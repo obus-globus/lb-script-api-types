@@ -10,7 +10,7 @@ export class RpcRepository extends AbstractRepository {
     constructor(arg0: string, arg1: URI)
     // private artifactId: string;
     // private modelName: string;
-    download(arg0: Path[], arg1: URI, arg2: Artifact$Item, arg3: Progress): void;
+    download(arg0: Path, arg1: URI, arg2: Artifact$Item, arg3: Progress): void;
     // private getMetadata(): Metadata;
     getResources(): MRL[];
     isRemote(): boolean;

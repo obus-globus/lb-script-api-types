@@ -26,7 +26,7 @@ export class TikaConfig extends Object {
     static getDefaultConfig(): TikaConfig;
     static getMaxJsonStringFieldLength(): number;
     static mustNotBeEmpty(paramarg0: string, paramarg1: string): void;
-    static mustNotBeEmpty(paramarg0: string, paramarg1: Path[][]): void;
+    static mustNotBeEmpty(paramarg0: string, paramarg1: Path): void;
     constructor()
     constructor(arg0: File)
     constructor(arg0: File, arg1: ServiceLoader)
@@ -35,8 +35,8 @@ export class TikaConfig extends Object {
     constructor(arg0: URL)
     constructor(arg0: URL, arg1: ClassLoader)
     constructor(arg0: URL, arg1: ServiceLoader)
-    constructor(arg0: Path[])
-    constructor(arg0: Path[], arg1: ServiceLoader)
+    constructor(arg0: Path)
+    constructor(arg0: Path, arg1: ServiceLoader)
     constructor(arg0: string)
     constructor(arg0: Document)
     constructor(arg0: Document, arg1: ServiceLoader)

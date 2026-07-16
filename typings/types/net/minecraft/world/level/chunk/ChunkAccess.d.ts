@@ -66,7 +66,7 @@ export abstract class ChunkAccess extends Object implements AttachmentTarget, At
     // private chunkPos: ChunkPos;
     // private dataAttachments: Map<Object, Object>;
     // private deferredSyncedAttachments: (Object | null)[];
-    readonly heightmaps: { [key in Heightmap$Types]: Heightmap };
+    readonly heightmaps: Map<Heightmap$Types, Heightmap>;
     readonly inhabitedTime: number;
     // private isLightCorrect: boolean;
     // private levelHeightAccessor: LevelHeightAccessor;

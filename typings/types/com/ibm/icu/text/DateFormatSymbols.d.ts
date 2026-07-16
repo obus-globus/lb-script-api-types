@@ -43,7 +43,7 @@ export class DateFormatSymbols extends Object implements Serializable, Cloneable
     // private ampms: string[];
     // private ampmsNarrow: string[];
     // private ampmsWide: string[];
-    // private capitalization: { [key in DateFormatSymbols$CapitalizationContextUsage]: (Object | null)[] };
+    // private capitalization: Map<DateFormatSymbols$CapitalizationContextUsage, (Object | null)[]>;
     eraNames: string[];
     eras: string[];
     // private leapMonthPatterns: string[];

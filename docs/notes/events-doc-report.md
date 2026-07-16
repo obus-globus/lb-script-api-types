@@ -7,9 +7,9 @@ Inputs: `augmentations/ScriptModule.augmentation.d.ts` (the authoritative `on(ev
 ## Summary
 
 ```
-total events scriptable:  121
-  documented:             4 (3.3%)
-  undocumented:           117
+total events scriptable:  122
+  documented:             121 (99.2%)
+  undocumented:           1
 ```
 
 ## Undocumented events
@@ -17,134 +17,135 @@ total events scriptable:  121
 Each entry below is a Phase-A candidate: writing a KDoc on the Kotlin source (or adding a curated entry in `tools/regen/post-patches.sh`) makes the documentation appear in IDE hover for `script.on("<name>", ...)`.
 
 ```
-  "accountManagerAddition"        AccountManagerAdditionResultEvent  typings/types/net/ccbluex/liquidbounce/event/events/AccountManagerAdditionResultEvent.d.ts
-  "accountManagerLogin"           AccountManagerLoginResultEvent     typings/types/net/ccbluex/liquidbounce/event/events/AccountManagerLoginResultEvent.d.ts
-  "accountManagerMessage"         AccountManagerMessageEvent         typings/types/net/ccbluex/liquidbounce/event/events/AccountManagerMessageEvent.d.ts
-  "accountManagerRemoval"         AccountManagerRemovalResultEvent   typings/types/net/ccbluex/liquidbounce/event/events/AccountManagerRemovalResultEvent.d.ts
-  "allowAutoJump"                 AllowAutoJumpEvent                 typings/types/net/ccbluex/liquidbounce/event/events/AllowAutoJumpEvent.d.ts
-  "attack"                        AttackEntityEvent                  typings/types/net/ccbluex/liquidbounce/event/events/AttackEntityEvent.d.ts
-  "bedStateChange"                BedStateChangeEvent                typings/types/net/ccbluex/liquidbounce/event/events/BedStateChangeEvent.d.ts
-  "blockAttack"                   BlockAttackEvent                   typings/types/net/ccbluex/liquidbounce/event/events/BlockAttackEvent.d.ts
-  "blockBreakingProgress"         BlockBreakingProgressEvent         typings/types/net/ccbluex/liquidbounce/event/events/BlockBreakingProgressEvent.d.ts
-  "blockChange"                   BlockChangeEvent                   typings/types/net/ccbluex/liquidbounce/event/events/BlockChangeEvent.d.ts
-  "blockCountChange"              BlockCountChangeEvent              typings/types/net/ccbluex/liquidbounce/event/events/BlockCountChangeEvent.d.ts
-  "blockShape"                    BlockShapeEvent                    typings/types/net/ccbluex/liquidbounce/event/events/BlockShapeEvent.d.ts
-  "blockSlipperinessMultiplier"   BlockSlipperinessMultiplierEvent   typings/types/net/ccbluex/liquidbounce/event/events/BlockSlipperinessMultiplierEvent.d.ts
-  "blockVelocityMultiplier"       BlockVelocityMultiplierEvent       typings/types/net/ccbluex/liquidbounce/event/events/BlockVelocityMultiplierEvent.d.ts
-  "browserReady"                  BrowserReadyEvent                  typings/types/net/ccbluex/liquidbounce/event/events/BrowserReadyEvent.d.ts
-  "browserUrlChange"              BrowserUrlChangeEvent              typings/types/net/ccbluex/liquidbounce/event/events/BrowserUrlChangeEvent.d.ts
-  "cancelBlockBreaking"           CancelBlockBreakingEvent           typings/types/net/ccbluex/liquidbounce/event/events/CancelBlockBreakingEvent.d.ts
-  "chatReceive"                   ChatReceiveEvent                   typings/types/net/ccbluex/liquidbounce/event/events/ChatReceiveEvent.d.ts
-  "chatSend"                      ChatSendEvent                      typings/types/net/ccbluex/liquidbounce/event/events/ChatSendEvent.d.ts
-  "chunkDeltaUpdate"              ChunkDeltaUpdateEvent              typings/types/net/ccbluex/liquidbounce/event/events/ChunkDeltaUpdateEvent.d.ts
-  "chunkLoad"                     ChunkLoadEvent                     typings/types/net/ccbluex/liquidbounce/event/events/ChunkLoadEvent.d.ts
-  "chunkUnload"                   ChunkUnloadEvent                   typings/types/net/ccbluex/liquidbounce/event/events/ChunkUnloadEvent.d.ts
-  "clearTitle"                    TitleEvent$Clear                   typings/types/net/ccbluex/liquidbounce/event/events/TitleEvent$Clear.d.ts
-  "clickGuiScaleChange"           ClickGuiScaleChangeEvent           typings/types/net/ccbluex/liquidbounce/event/events/ClickGuiScaleChangeEvent.d.ts
-  "clickGuiValueChange"           ClickGuiValueChangeEvent           typings/types/net/ccbluex/liquidbounce/event/events/ClickGuiValueChangeEvent.d.ts
-  "clientChatError"               ClientChatErrorEvent               typings/types/net/ccbluex/liquidbounce/event/events/ClientChatErrorEvent.d.ts
-  "clientChatJwtToken"            ClientChatJwtTokenEvent            typings/types/net/ccbluex/liquidbounce/event/events/ClientChatJwtTokenEvent.d.ts
-  "clientChatMessage"             ClientChatMessageEvent             typings/types/net/ccbluex/liquidbounce/event/events/ClientChatMessageEvent.d.ts
-  "clientChatStateChange"         ClientChatStateChange              typings/types/net/ccbluex/liquidbounce/event/events/ClientChatStateChange.d.ts
-  "clientLanguageChanged"         ClientLanguageChangedEvent         typings/types/net/ccbluex/liquidbounce/event/events/ClientLanguageChangedEvent.d.ts
-  "clientPlayerData"              ClientPlayerDataEvent              typings/types/net/ccbluex/liquidbounce/event/events/ClientPlayerDataEvent.d.ts
-  "clientPlayerEffect"            ClientPlayerEffectEvent            typings/types/net/ccbluex/liquidbounce/event/events/ClientPlayerEffectEvent.d.ts
-  "clientPlayerInventory"         ClientPlayerInventoryEvent         typings/types/net/ccbluex/liquidbounce/event/events/ClientPlayerInventoryEvent.d.ts
-  "clientShutdown"                ClientShutdownEvent                typings/types/net/ccbluex/liquidbounce/event/events/ClientShutdownEvent.d.ts
-  "clientStart"                   ClientStartEvent                   typings/types/net/ccbluex/liquidbounce/event/events/ClientStartEvent.d.ts
-  "componentsUpdate"              ComponentsUpdateEvent              typings/types/net/ccbluex/liquidbounce/event/events/ComponentsUpdateEvent.d.ts
-  "death"                         DeathEvent                         typings/types/net/ccbluex/liquidbounce/event/events/DeathEvent.d.ts
-  "disconnect"                    DisconnectEvent                    typings/types/net/ccbluex/liquidbounce/event/events/DisconnectEvent.d.ts
-  "entityEquipmentChange"         EntityEquipmentChangeEvent         typings/types/net/ccbluex/liquidbounce/event/events/EntityEquipmentChangeEvent.d.ts
-  "entityHealthUpdate"            EntityHealthUpdateEvent            typings/types/net/ccbluex/liquidbounce/event/events/EntityHealthUpdateEvent.d.ts
-  "entityMargin"                  EntityMarginEvent                  typings/types/net/ccbluex/liquidbounce/event/events/EntityMarginEvent.d.ts
-  "fluidPush"                     FluidPushEvent                     typings/types/net/ccbluex/liquidbounce/event/events/FluidPushEvent.d.ts
-  "fps"                           FpsChangeEvent                     typings/types/net/ccbluex/liquidbounce/event/events/FpsChangeEvent.d.ts
-  "fpsLimit"                      FpsLimitEvent                      typings/types/net/ccbluex/liquidbounce/event/events/FpsLimitEvent.d.ts
-  "frameBufferResize"             FramebufferResizeEvent             typings/types/net/ccbluex/liquidbounce/event/events/FramebufferResizeEvent.d.ts
-  "gameModeChange"                GameModeChangeEvent                typings/types/net/ccbluex/liquidbounce/event/events/GameModeChangeEvent.d.ts
-  "gameRender"                    GameRenderEvent                    typings/types/net/ccbluex/liquidbounce/event/events/GameRenderEvent.d.ts
-  "gameTick"                      GameTickEvent                      typings/types/net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts
-  "healthUpdate"                  HealthUpdateEvent                  typings/types/net/ccbluex/liquidbounce/event/events/HealthUpdateEvent.d.ts
-  "inputHandle"                   InputHandleEvent                   typings/types/net/ccbluex/liquidbounce/event/events/InputHandleEvent.d.ts
-  "itemLoreQuery"                 ItemLoreQueryEvent                 typings/types/net/ccbluex/liquidbounce/event/events/ItemLoreQueryEvent.d.ts
-  "key"                           KeyEvent                           typings/types/net/ccbluex/liquidbounce/event/events/KeyEvent.d.ts
-  "keybindChange"                 KeybindChangeEvent                 typings/types/net/ccbluex/liquidbounce/event/events/KeybindChangeEvent.d.ts
-  "keybindIsPressed"              KeybindIsPressedEvent              typings/types/net/ccbluex/liquidbounce/event/events/KeybindIsPressedEvent.d.ts
-  "keyboardChar"                  KeyboardCharEvent                  typings/types/net/ccbluex/liquidbounce/event/events/KeyboardCharEvent.d.ts
-  "keyboardKey"                   KeyboardKeyEvent                   typings/types/net/ccbluex/liquidbounce/event/events/KeyboardKeyEvent.d.ts
-  "moduleActivation"              ModuleActivationEvent              typings/types/net/ccbluex/liquidbounce/event/events/ModuleActivationEvent.d.ts
-  "moduleToggle"                  ModuleToggleEvent                  typings/types/net/ccbluex/liquidbounce/event/events/ModuleToggleEvent.d.ts
-  "mouseButton"                   MouseButtonEvent                   typings/types/net/ccbluex/liquidbounce/event/events/MouseButtonEvent.d.ts
-  "mouseCursor"                   MouseCursorEvent                   typings/types/net/ccbluex/liquidbounce/event/events/MouseCursorEvent.d.ts
-  "mouseRotation"                 MouseRotationEvent                 typings/types/net/ccbluex/liquidbounce/event/events/MouseRotationEvent.d.ts
-  "mouseScroll"                   MouseScrollEvent                   typings/types/net/ccbluex/liquidbounce/event/events/MouseScrollEvent.d.ts
-  "mouseScrollInHotbar"           MouseScrollInHotbarEvent           typings/types/net/ccbluex/liquidbounce/event/events/MouseScrollInHotbarEvent.d.ts
-  "movementInput"                 MovementInputEvent                 typings/types/net/ccbluex/liquidbounce/event/events/MovementInputEvent.d.ts
-  "notification"                  NotificationEvent                  typings/types/net/ccbluex/liquidbounce/event/events/NotificationEvent.d.ts
-  "overlayMessage"                OverlayMessageEvent                typings/types/net/ccbluex/liquidbounce/event/events/OverlayMessageEvent.d.ts
-  "overlayRender"                 OverlayRenderEvent                 typings/types/net/ccbluex/liquidbounce/event/events/OverlayRenderEvent.d.ts
-  "packet"                        PacketEvent                        typings/types/net/ccbluex/liquidbounce/event/events/PacketEvent.d.ts
-  "perspective"                   PerspectiveEvent                   typings/types/net/ccbluex/liquidbounce/event/events/PerspectiveEvent.d.ts
-  "pipeline"                      PipelineEvent                      typings/types/net/ccbluex/liquidbounce/event/events/PipelineEvent.d.ts
-  "playerAfterJump"               PlayerAfterJumpEvent               typings/types/net/ccbluex/liquidbounce/event/events/PlayerAfterJumpEvent.d.ts
-  "playerFluidCollisionCheck"     PlayerFluidCollisionCheckEvent     typings/types/net/ccbluex/liquidbounce/event/events/PlayerFluidCollisionCheckEvent.d.ts
-  "playerInteractedItem"          PlayerInteractedItemEvent          typings/types/net/ccbluex/liquidbounce/event/events/PlayerInteractedItemEvent.d.ts
-  "playerJump"                    PlayerJumpEvent                    typings/types/net/ccbluex/liquidbounce/event/events/PlayerJumpEvent.d.ts
-  "playerMove"                    PlayerMoveEvent                    typings/types/net/ccbluex/liquidbounce/event/events/PlayerMoveEvent.d.ts
-  "playerMovementTick"            PlayerMovementTickEvent            typings/types/net/ccbluex/liquidbounce/event/events/PlayerMovementTickEvent.d.ts
-  "playerNetworkMovementTick"     PlayerNetworkMovementTickEvent     typings/types/net/ccbluex/liquidbounce/event/events/PlayerNetworkMovementTickEvent.d.ts
-  "playerPostTick"                PlayerPostTickEvent                typings/types/net/ccbluex/liquidbounce/event/events/PlayerPostTickEvent.d.ts
-  "playerPushOut"                 PlayerPushOutEvent                 typings/types/net/ccbluex/liquidbounce/event/events/PlayerPushOutEvent.d.ts
-  "playerSafeWalk"                PlayerSafeWalkEvent                typings/types/net/ccbluex/liquidbounce/event/events/PlayerSafeWalkEvent.d.ts
-  "playerSneakMultiplier"         PlayerSneakMultiplier              typings/types/net/ccbluex/liquidbounce/event/events/PlayerSneakMultiplier.d.ts
-  "playerStep"                    PlayerStepEvent                    typings/types/net/ccbluex/liquidbounce/event/events/PlayerStepEvent.d.ts
-  "playerStepSuccess"             PlayerStepSuccessEvent             typings/types/net/ccbluex/liquidbounce/event/events/PlayerStepSuccessEvent.d.ts
-  "playerStrafe"                  PlayerVelocityStrafe               typings/types/net/ccbluex/liquidbounce/event/events/PlayerVelocityStrafe.d.ts
-  "playerStride"                  PlayerStrideEvent                  typings/types/net/ccbluex/liquidbounce/event/events/PlayerStrideEvent.d.ts
-  "playerTick"                    PlayerTickEvent                    typings/types/net/ccbluex/liquidbounce/event/events/PlayerTickEvent.d.ts
-  "playerUseMultiplier"           PlayerUseMultiplier                typings/types/net/ccbluex/liquidbounce/event/events/PlayerUseMultiplier.d.ts
-  "proxyCheckResult"              ProxyCheckResultEvent              typings/types/net/ccbluex/liquidbounce/event/events/ProxyCheckResultEvent.d.ts
-  "queuePacket"                   BlinkPacketEvent                   typings/types/net/ccbluex/liquidbounce/event/events/BlinkPacketEvent.d.ts
-  "refreshArrayList"              RefreshArrayListEvent              typings/types/net/ccbluex/liquidbounce/event/events/RefreshArrayListEvent.d.ts
-  "resourceReload"                ResourceReloadEvent                typings/types/net/ccbluex/liquidbounce/event/events/ResourceReloadEvent.d.ts
-  "rotationUpdate"                RotationUpdateEvent                typings/types/net/ccbluex/liquidbounce/event/events/RotationUpdateEvent.d.ts
-  "scaleFactorChange"             ScaleFactorChangeEvent             typings/types/net/ccbluex/liquidbounce/event/events/ScaleFactorChangeEvent.d.ts
-  "scheduleInventoryAction"       ScheduleInventoryActionEvent       typings/types/net/ccbluex/liquidbounce/event/events/ScheduleInventoryActionEvent.d.ts
-  "screen"                        ScreenEvent                        typings/types/net/ccbluex/liquidbounce/event/events/ScreenEvent.d.ts
-  "screenRender"                  ScreenRenderEvent                  typings/types/net/ccbluex/liquidbounce/event/events/ScreenRenderEvent.d.ts
-  "selectHotbarSlotSilently"      SelectHotbarSlotSilentlyEvent      typings/types/net/ccbluex/liquidbounce/event/events/SelectHotbarSlotSilentlyEvent.d.ts
-  "serverConnect"                 ServerConnectEvent                 typings/types/net/ccbluex/liquidbounce/event/events/ServerConnectEvent.d.ts
-  "serverPinged"                  ServerPingedEvent                  typings/types/net/ccbluex/liquidbounce/event/events/ServerPingedEvent.d.ts
-  "spaceSeperatedNamesChange"     SpaceSeperatedNamesChangeEvent     typings/types/net/ccbluex/liquidbounce/event/events/SpaceSeperatedNamesChangeEvent.d.ts
-  "sprint"                        SprintEvent                        typings/types/net/ccbluex/liquidbounce/event/events/SprintEvent.d.ts
-  "subtitle"                      TitleEvent$Subtitle                typings/types/net/ccbluex/liquidbounce/event/events/TitleEvent$Subtitle.d.ts
-  "tagEntityEvent"                TagEntityEvent                     typings/types/net/ccbluex/liquidbounce/event/events/TagEntityEvent.d.ts
-  "targetChange"                  TargetChangeEvent                  typings/types/net/ccbluex/liquidbounce/event/events/TargetChangeEvent.d.ts
-  "themeColorChange"              ThemeColorChangeEvent              typings/types/net/ccbluex/liquidbounce/event/events/ThemeColorChangeEvent.d.ts
-  "tickPacketProcess"             TickPacketProcessEvent             typings/types/net/ccbluex/liquidbounce/event/events/TickPacketProcessEvent.d.ts
-  "title"                         TitleEvent$Title                   typings/types/net/ccbluex/liquidbounce/event/events/TitleEvent$Title.d.ts
-  "titleFade"                     TitleEvent$Fade                    typings/types/net/ccbluex/liquidbounce/event/events/TitleEvent$Fade.d.ts
-  "useCooldown"                   UseCooldownEvent                   typings/types/net/ccbluex/liquidbounce/event/events/UseCooldownEvent.d.ts
-  "userLoggedIn"                  UserLoggedInEvent                  typings/types/net/ccbluex/liquidbounce/event/events/UserLoggedInEvent.d.ts
-  "userLoggedOut"                 UserLoggedOutEvent                 typings/types/net/ccbluex/liquidbounce/event/events/UserLoggedOutEvent.d.ts
-  "valueChanged"                  ValueChangedEvent                  typings/types/net/ccbluex/liquidbounce/event/events/ValueChangedEvent.d.ts
-  "virtualScreen"                 VirtualScreenEvent                 typings/types/net/ccbluex/liquidbounce/event/events/VirtualScreenEvent.d.ts
-  "windowResize"                  WindowResizeEvent                  typings/types/net/ccbluex/liquidbounce/event/events/WindowResizeEvent.d.ts
-  "worldChange"                   WorldChangeEvent                   typings/types/net/ccbluex/liquidbounce/event/events/WorldChangeEvent.d.ts
-  "worldEntityRemove"             WorldEntityRemoveEvent             typings/types/net/ccbluex/liquidbounce/event/events/WorldEntityRemoveEvent.d.ts
-  "worldRender"                   WorldRenderEvent                   typings/types/net/ccbluex/liquidbounce/event/events/WorldRenderEvent.d.ts
+  "closedCaptions"   ClosedCaptionsEvent  typings/types/net/ccbluex/liquidbounce/event/events/ClosedCaptionsEvent.d.ts
 ```
 
 ## Documented events
 
-<details><summary>4 events with TSDoc</summary>
+<details><summary>121 events with TSDoc</summary>
 
 ```
+  "accountManagerAddition"  ->  AccountManagerAdditionResultEvent
+  "accountManagerLogin"  ->  AccountManagerLoginResultEvent
+  "accountManagerMessage"  ->  AccountManagerMessageEvent
+  "accountManagerRemoval"  ->  AccountManagerRemovalResultEvent
+  "allowAutoJump"  ->  AllowAutoJumpEvent
+  "attack"  ->  AttackEntityEvent
+  "bedStateChange"  ->  BedStateChangeEvent
+  "blockAttack"  ->  BlockAttackEvent
+  "blockBreakingProgress"  ->  BlockBreakingProgressEvent
+  "blockChange"  ->  BlockChangeEvent
+  "blockCountChange"  ->  BlockCountChangeEvent
+  "blockShape"  ->  BlockShapeEvent
+  "blockSlipperinessMultiplier"  ->  BlockSlipperinessMultiplierEvent
+  "blockVelocityMultiplier"  ->  BlockVelocityMultiplierEvent
+  "browserReady"  ->  BrowserReadyEvent
+  "browserUrlChange"  ->  BrowserUrlChangeEvent
+  "cancelBlockBreaking"  ->  CancelBlockBreakingEvent
+  "chatReceive"  ->  ChatReceiveEvent
+  "chatSend"  ->  ChatSendEvent
+  "chunkDeltaUpdate"  ->  ChunkDeltaUpdateEvent
+  "chunkLoad"  ->  ChunkLoadEvent
+  "chunkUnload"  ->  ChunkUnloadEvent
+  "clearTitle"  ->  TitleEvent$Clear
+  "clickGuiScaleChange"  ->  ClickGuiScaleChangeEvent
+  "clickGuiValueChange"  ->  ClickGuiValueChangeEvent
+  "clientChatError"  ->  ClientChatErrorEvent
+  "clientChatJwtToken"  ->  ClientChatJwtTokenEvent
+  "clientChatMessage"  ->  ClientChatMessageEvent
+  "clientChatStateChange"  ->  ClientChatStateChange
+  "clientLanguageChanged"  ->  ClientLanguageChangedEvent
+  "clientPlayerData"  ->  ClientPlayerDataEvent
+  "clientPlayerEffect"  ->  ClientPlayerEffectEvent
+  "clientPlayerInventory"  ->  ClientPlayerInventoryEvent
+  "clientShutdown"  ->  ClientShutdownEvent
+  "clientStart"  ->  ClientStartEvent
+  "componentsUpdate"  ->  ComponentsUpdateEvent
+  "death"  ->  DeathEvent
+  "disconnect"  ->  DisconnectEvent
   "drawOutlines"  ->  DrawOutlinesEvent
+  "entityEquipmentChange"  ->  EntityEquipmentChangeEvent
+  "entityHealthUpdate"  ->  EntityHealthUpdateEvent
+  "entityMargin"  ->  EntityMarginEvent
+  "fluidPush"  ->  FluidPushEvent
+  "fps"  ->  FpsChangeEvent
+  "fpsLimit"  ->  FpsLimitEvent
+  "frameBufferResize"  ->  FramebufferResizeEvent
+  "gameModeChange"  ->  GameModeChangeEvent
+  "gameRender"  ->  GameRenderEvent
   "gameRenderTaskQueue"  ->  GameRenderTaskQueueEvent
+  "gameTick"  ->  GameTickEvent
+  "healthUpdate"  ->  HealthUpdateEvent
+  "inputHandle"  ->  InputHandleEvent
+  "itemLoreQuery"  ->  ItemLoreQueryEvent
+  "key"  ->  KeyEvent
+  "keybindChange"  ->  KeybindChangeEvent
+  "keybindIsPressed"  ->  KeybindIsPressedEvent
+  "keyboardChar"  ->  KeyboardCharEvent
+  "keyboardKey"  ->  KeyboardKeyEvent
+  "moduleActivation"  ->  ModuleActivationEvent
+  "moduleToggle"  ->  ModuleToggleEvent
+  "mouseButton"  ->  MouseButtonEvent
+  "mouseCursor"  ->  MouseCursorEvent
+  "mouseRotation"  ->  MouseRotationEvent
+  "mouseScroll"  ->  MouseScrollEvent
+  "mouseScrollInHotbar"  ->  MouseScrollInHotbarEvent
+  "movementInput"  ->  MovementInputEvent
+  "notification"  ->  NotificationEvent
+  "overlayMessage"  ->  OverlayMessageEvent
+  "overlayRender"  ->  OverlayRenderEvent
+  "packet"  ->  PacketEvent
+  "perspective"  ->  PerspectiveEvent
+  "pipeline"  ->  PipelineEvent
+  "playerAfterJump"  ->  PlayerAfterJumpEvent
+  "playerFluidCollisionCheck"  ->  PlayerFluidCollisionCheckEvent
+  "playerInteractedItem"  ->  PlayerInteractedItemEvent
   "playerInteractItem"  ->  PlayerInteractItemEvent
+  "playerJump"  ->  PlayerJumpEvent
+  "playerMove"  ->  PlayerMoveEvent
+  "playerMovementTick"  ->  PlayerMovementTickEvent
+  "playerNetworkMovementTick"  ->  PlayerNetworkMovementTickEvent
+  "playerPostTick"  ->  PlayerPostTickEvent
+  "playerPushOut"  ->  PlayerPushOutEvent
+  "playerSafeWalk"  ->  PlayerSafeWalkEvent
+  "playerSneakMultiplier"  ->  PlayerSneakMultiplier
+  "playerStep"  ->  PlayerStepEvent
+  "playerStepSuccess"  ->  PlayerStepSuccessEvent
+  "playerStrafe"  ->  PlayerVelocityStrafe
+  "playerStride"  ->  PlayerStrideEvent
+  "playerTick"  ->  PlayerTickEvent
+  "playerUseMultiplier"  ->  PlayerUseMultiplier
+  "proxyCheckResult"  ->  ProxyCheckResultEvent
+  "queuePacket"  ->  BlinkPacketEvent
+  "refreshArrayList"  ->  RefreshArrayListEvent
+  "resourceReload"  ->  ResourceReloadEvent
+  "rotationUpdate"  ->  RotationUpdateEvent
+  "scaleFactorChange"  ->  ScaleFactorChangeEvent
+  "scheduleInventoryAction"  ->  ScheduleInventoryActionEvent
+  "screen"  ->  ScreenEvent
+  "screenRender"  ->  ScreenRenderEvent
+  "selectHotbarSlotSilently"  ->  SelectHotbarSlotSilentlyEvent
+  "serverConnect"  ->  ServerConnectEvent
+  "serverPinged"  ->  ServerPingedEvent
   "session"  ->  SessionEvent
+  "spaceSeperatedNamesChange"  ->  SpaceSeperatedNamesChangeEvent
+  "sprint"  ->  SprintEvent
+  "subtitle"  ->  TitleEvent$Subtitle
+  "tagEntityEvent"  ->  TagEntityEvent
+  "targetChange"  ->  TargetChangeEvent
+  "themeColorChange"  ->  ThemeColorChangeEvent
+  "tickPacketProcess"  ->  TickPacketProcessEvent
+  "title"  ->  TitleEvent$Title
+  "titleFade"  ->  TitleEvent$Fade
+  "useCooldown"  ->  UseCooldownEvent
+  "userLoggedIn"  ->  UserLoggedInEvent
+  "userLoggedOut"  ->  UserLoggedOutEvent
+  "valueChanged"  ->  ValueChangedEvent
+  "virtualScreen"  ->  VirtualScreenEvent
+  "windowResize"  ->  WindowResizeEvent
+  "worldChange"  ->  WorldChangeEvent
+  "worldEntityRemove"  ->  WorldEntityRemoveEvent
+  "worldRender"  ->  WorldRenderEvent
 ```
 
 </details>

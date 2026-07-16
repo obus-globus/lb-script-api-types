@@ -31,7 +31,7 @@ export class DimensionType extends Record implements DimensionTypeAccessor, Dime
     static WAY_ABOVE_MAX_Y: number;
     static WAY_BELOW_MIN_Y: number;
     static Y_SIZE: number;
-    static getStorageFolder(paramname: ResourceKey<Level>, parambaseFolder: Path[][]): Path[][];
+    static getStorageFolder(paramname: ResourceKey<Level>, parambaseFolder: Path): Path;
     static getTeleportationScale(paramlastDimensionType: DimensionType, paramnewDimensionType: DimensionType): number;
     constructor(hasFixedTime: boolean, hasSkyLight: boolean, hasCeiling: boolean, hasEnderDragonFight: boolean, coordinateScale: number, minY: number, height: number, logicalHeight: number, infiniburn: Holder<Block>[], ambientLight: number, monsterSettings: DimensionType$MonsterSettings, skybox: DimensionType$Skybox, cardinalLightType: CardinalLighting$Type, attributes: EnvironmentAttributeMap, timelines: Holder<Timeline>[], defaultClock: Optional<Holder<WorldClock>>)
     // private attributes: EnvironmentAttributeMap;

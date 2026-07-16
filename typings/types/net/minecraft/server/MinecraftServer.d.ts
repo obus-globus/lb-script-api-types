@@ -162,7 +162,7 @@ export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
     readonly motd: string;
     // private nextTickTimeNanos: number;
     // private notificationManager: NotificationManager;
-    // private onMetricsRecordingFinished: (param0: Path[]) => void;
+    // private onMetricsRecordingFinished: (param0: Path) => void;
     // private onMetricsRecordingStopped: (param0: ProfileResults) => void;
     // private onlineMode: boolean;
     // private originalKnownPacks: (Object | null)[];
@@ -231,12 +231,12 @@ export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
     createTextFilterForPlayer(player: ServerPlayer): TextFilter;
     debugSubscribers(): ServerDebugSubscribers;
     doRunTask(task: TickTask): void;
-    // private dumpClasspath(path: Path[]): void;
-    // private dumpGameRules(path: Path[]): void;
-    // private dumpMiscStats(path: Path[]): void;
-    // private dumpNativeModules(path: Path[]): void;
-    dumpServerProperties(path: Path[]): void;
-    // private dumpThreads(path: Path[]): void;
+    // private dumpClasspath(path: Path): void;
+    // private dumpGameRules(path: Path): void;
+    // private dumpMiscStats(path: Path): void;
+    // private dumpNativeModules(path: Path): void;
+    dumpServerProperties(path: Path): void;
+    // private dumpThreads(path: Path): void;
     endMetricsRecordingTick(): void;
     enforceGameTypeForPlayers(gameType: GameType): number;
     enforceSecureProfile(): boolean;
@@ -268,7 +268,7 @@ export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
     getCustomBossEvents(): CustomBossEvents;
     getDataStorage(): SavedDataStorage;
     getDefaultGameType(): GameType;
-    getFile(name: string): Path[];
+    getFile(name: string): Path;
     getFixerUpper(): DataFixer;
     getForcedGameType(): GameType;
     getFunctionCompilationPermissions(): PermissionSet;
@@ -305,7 +305,7 @@ export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
     getScheduledEvents(): TimerQueue<MinecraftServer>;
     getScoreboard(): ServerScoreboard;
     getServerActivityMonitor(): ServerActivityMonitor;
-    getServerDirectory(): Path[];
+    getServerDirectory(): Path;
     getServerModName(): string;
     getServerResourcePack(): Optional<MinecraftServer$ServerResourcePackInfo>;
     getServerVersion(): string;
@@ -319,8 +319,8 @@ export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
     getWeatherData(): WeatherData;
     getWorldData(): WorldData;
     getWorldGenSettings(): WorldGenSettings;
-    getWorldPath(resource: LevelResource): Path[];
-    getWorldScreenshotFile(): Optional<Path[]>;
+    getWorldPath(resource: LevelResource): Path;
+    getWorldScreenshotFile(): Optional<Path>;
     globalAttachments(): GlobalAttachments;
     halt(wait: boolean): void;
     handleCustomClickAction(id: Identifier, payload: Optional<Tag>): void;
@@ -384,7 +384,7 @@ export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
     reportPacketHandlingException(throwable: Throwable, packetType: PacketType<any>): void;
     runServer(): void;
     saveAllChunks(silent: boolean, flush: boolean, force: boolean): boolean;
-    // private saveDebugReport(output: Path[]): void;
+    // private saveDebugReport(output: Path): void;
     saveEverything(silent: boolean, flush: boolean, force: boolean): boolean;
     scheduleExecutables(): boolean;
     selectLevelLoadFocusPos(): GlobalPos;
@@ -416,7 +416,7 @@ export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
     shouldRconBroadcast(): boolean;
     shouldRun(task: TickTask): boolean;
     // private startMeasuringTaskExecutionTime(): void;
-    startRecordingMetrics(onStopped: (param0: ProfileResults) => void, onFinished: (param0: Path[]) => void): void;
+    startRecordingMetrics(onStopped: (param0: ProfileResults) => void, onFinished: (param0: Path) => void): void;
     startTimeProfiler(): void;
     stopRecordingMetrics(): void;
     stopServer(): void;

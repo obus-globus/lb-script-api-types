@@ -27,7 +27,7 @@ export class SerializableChunkData extends Record {
     static copyOf(paramlevel: ServerLevel, paramchunk: ChunkAccess): SerializableChunkData;
     static getChunkStatusFromTag(paramtag: CompoundTag): ChunkStatus;
     static parse(paramlevelHeight: LevelHeightAccessor, paramcontainerFactory: PalettedContainerFactory, paramchunkData: CompoundTag): SerializableChunkData;
-    constructor(containerFactory: PalettedContainerFactory, chunkPos: ChunkPos, minSectionY: number, lastUpdateTime: number, inhabitedTime: number, chunkStatus: ChunkStatus, blendingData: BlendingData$Packed, belowZeroRetrogen: BelowZeroRetrogen, upgradeData: UpgradeData, carvingMask: number[], heightmaps: { [key in Heightmap$Types]: number[] }, packedTicks: ChunkAccess$PackedTicks, postProcessingSections: (Object | null)[][], lightCorrect: boolean, sectionData: SerializableChunkData$SectionData[], entities: CompoundTag[], blockEntities: CompoundTag[], structureData: CompoundTag)
+    constructor(containerFactory: PalettedContainerFactory, chunkPos: ChunkPos, minSectionY: number, lastUpdateTime: number, inhabitedTime: number, chunkStatus: ChunkStatus, blendingData: BlendingData$Packed, belowZeroRetrogen: BelowZeroRetrogen, upgradeData: UpgradeData, carvingMask: number[], heightmaps: Map<Heightmap$Types, number[]>, packedTicks: ChunkAccess$PackedTicks, postProcessingSections: (Object | null)[][], lightCorrect: boolean, sectionData: SerializableChunkData$SectionData[], entities: CompoundTag[], blockEntities: CompoundTag[], structureData: CompoundTag)
     // private attachmentNbtData: CompoundTag;
     // private belowZeroRetrogen: BelowZeroRetrogen;
     // private blendingData: BlendingData$Packed;
@@ -37,7 +37,7 @@ export class SerializableChunkData extends Record {
     // private chunkStatus: ChunkStatus;
     // private containerFactory: PalettedContainerFactory;
     // private entities: CompoundTag[];
-    // private heightmaps: { [key in Heightmap$Types]: number[] };
+    // private heightmaps: Map<Heightmap$Types, number[]>;
     // private inhabitedTime: number;
     // private lastUpdateTime: number;
     // private lightCorrect: boolean;
@@ -57,7 +57,7 @@ export class SerializableChunkData extends Record {
     entities(): CompoundTag[];
     equals(o: Object | null): boolean;
     hashCode(): number;
-    heightmaps(): { [key in Heightmap$Types]: number[] };
+    heightmaps(): Map<Heightmap$Types, number[]>;
     inhabitedTime(): number;
     lastUpdateTime(): number;
     lightCorrect(): boolean;

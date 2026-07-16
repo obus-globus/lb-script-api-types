@@ -8,7 +8,7 @@ export class IfAny extends Object implements PathCondition {
     static createOrCondition(...paramcomponents: (Object | null)[]): IfAny;
     private constructor(...filters: PathCondition[])
     // private components: PathCondition[];
-    accept(baseDir: Path[], relativePath: Path[], attrs: BasicFileAttributes): boolean;
+    accept(baseDir: Path, relativePath: Path, attrs: BasicFileAttributes): boolean;
     beforeFileTreeWalk(): void;
     getDeleteFilters(): PathCondition[];
     toString(): string;

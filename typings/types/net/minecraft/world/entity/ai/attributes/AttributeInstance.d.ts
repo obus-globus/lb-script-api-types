@@ -13,7 +13,7 @@ export class AttributeInstance extends Object {
     // private cachedValue: number;
     // private dirty: boolean;
     // private modifierById: Map<Identifier, AttributeModifier>;
-    // private modifiersByOperation: { [key in AttributeModifier$Operation]: Map<Identifier, AttributeModifier> };
+    // private modifiersByOperation: Map<AttributeModifier$Operation, Map<Identifier, AttributeModifier>>;
     // private onDirty: (param0: AttributeInstance) => void;
     readonly permanentModifiers: Map<Identifier, AttributeModifier>;
     // private addModifier(modifier: AttributeModifier): void;

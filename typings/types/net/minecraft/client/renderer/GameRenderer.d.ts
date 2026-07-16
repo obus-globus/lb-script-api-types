@@ -133,7 +133,7 @@ export class GameRenderer extends Object implements AutoCloseable, GameRendererS
     shouldRenderBlockOutlineA(): boolean;
     sodium$getFogParameters(): FogParameters;
     sodium$getProjectionMatrix(): Matrix4fc;
-    // private takeAutoScreenshot(screenshotFile: Path[]): void;
+    // private takeAutoScreenshot(screenshotFile: Path): void;
     tick(): void;
     togglePostEffect(): void;
     // private tryTakeScreenshotIfNeeded(): void;

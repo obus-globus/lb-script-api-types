@@ -5,8 +5,8 @@ import type { Metadata } from '../../../ai/djl/repository/Metadata.d.ts'
 import type { URI } from '../../../java/net/URI.d.ts'
 import type { Path } from '../../../java/nio/file/Path.d.ts'
 export class LocalRepository extends AbstractRepository {
-    constructor(arg0: string, arg1: URI, arg2: Path[])
-    // private path: Path[];
+    constructor(arg0: string, arg1: URI, arg2: Path)
+    // private path: Path;
     getResources(): MRL[];
     isRemote(): boolean;
     locate(arg0: MRL): Metadata;

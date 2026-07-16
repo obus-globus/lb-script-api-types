@@ -10,7 +10,7 @@ export class ClickEvent$OpenFile extends Record implements ClickEvent {
     static CODEC: Codec<ClickEvent>;
     static CODEC: MapCodec<ClickEvent$OpenFile>;
     constructor(file: File)
-    constructor(path: Path[])
+    constructor(path: Path)
     constructor(path: string)
     // private path: string;
     action(): ClickEvent$Action;

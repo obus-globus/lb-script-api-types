@@ -16,14 +16,14 @@ import type { ServerAdvancementManager } from '../../../net/minecraft/server/Ser
 import type { ServerPlayer } from '../../../net/minecraft/server/level/ServerPlayer.d.ts'
 import type { PlayerList } from '../../../net/minecraft/server/players/PlayerList.d.ts'
 export class PlayerAdvancements extends Object {
-    constructor(dataFixer: DataFixer, playerList: PlayerList, manager: ServerAdvancementManager, playerSavePath: Path[], player: ServerPlayer)
+    constructor(dataFixer: DataFixer, playerList: PlayerList, manager: ServerAdvancementManager, playerSavePath: Path, player: ServerPlayer)
     // private activeTriggers: Map<CriterionTrigger<any>, Map<PlayerAdvancements$TriggerInstanceKey, CriterionTriggerInstance>>;
     // private codec: Codec<PlayerAdvancements$Data>;
     // private isFirstPacket: boolean;
     // private lastSelectedTab: AdvancementHolder;
     readonly player: ServerPlayer;
     // private playerList: PlayerList;
-    // private playerSavePath: Path[];
+    // private playerSavePath: Path;
     // private progress: Map<AdvancementHolder, AdvancementProgress>;
     // private progressChanged: AdvancementHolder[];
     // private rootsToUpdate: AdvancementNode[];

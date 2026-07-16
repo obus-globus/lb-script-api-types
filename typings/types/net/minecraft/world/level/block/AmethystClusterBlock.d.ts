@@ -93,7 +93,7 @@ export class AmethystClusterBlock extends AmethystBlock implements SimpleWaterlo
     static updateOrDestroy(paramblockState: BlockState, paramnewState: BlockState, paramlevel: LevelAccessor, paramblockPos: BlockPos, paramupdateFlags: number, paramupdateLimit: number): void;
     constructor(height: number, width: number, props: BlockBehaviour$Properties)
     // private height: number;
-    // private shapes: { [key in Direction]: VoxelShape };
+    // private shapes: Map<Direction, VoxelShape>;
     // private width: number;
     canPlaceLiquid(user: LivingEntity, level: BlockGetter, pos: BlockPos, state: BlockState, type: Fluid): boolean;
     canSurvive(state: BlockState, level: LevelReader, pos: BlockPos): boolean;

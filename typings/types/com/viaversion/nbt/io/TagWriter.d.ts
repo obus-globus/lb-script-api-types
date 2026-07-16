@@ -9,5 +9,5 @@ export class TagWriter extends Object {
     named(): TagWriter;
     write(arg0: DataOutput, arg1: Tag): void;
     write(arg0: OutputStream, arg1: Tag): void;
-    write(arg0: Path[], arg1: Tag, arg2: boolean): void;
+    write(arg0: Path, arg1: Tag, arg2: boolean): void;
 }

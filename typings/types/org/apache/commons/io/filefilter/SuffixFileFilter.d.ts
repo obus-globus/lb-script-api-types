@@ -18,7 +18,7 @@ export class SuffixFileFilter extends AbstractFileFilter implements Serializable
     // private suffixes: string[];
     accept(arg0: File): boolean;
     accept(arg0: File, arg1: string): boolean;
-    accept(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
+    accept(arg0: Path, arg1: BasicFileAttributes): FileVisitResult;
     // private accept(arg0: string): boolean;
     toString(): string;
 }

@@ -14,11 +14,11 @@ import type { Block } from '../../../../../../../../net/minecraft/world/level/bl
 import type { StructureTemplate } from '../../../../../../../../net/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplate.d.ts'
 import type { TemplateSource } from '../../../../../../../../net/minecraft/world/level/levelgen/structure/templatesystem/loader/TemplateSource.d.ts'
 export class DirectoryTemplateSource extends TemplateSource {
-    constructor(fixerUpper: DataFixer, blockLookup: HolderGetter<Block>, sourceDir: Path[], fileToIdConverter: FileToIdConverter, loadAsText: boolean)
-    constructor(fixerUpper: DataFixer, blockLookup: HolderGetter<Block>, sourceDir: Path[], packType: PackType, fileToIdConverter: FileToIdConverter, loadAsText: boolean)
+    constructor(fixerUpper: DataFixer, blockLookup: HolderGetter<Block>, sourceDir: Path, fileToIdConverter: FileToIdConverter, loadAsText: boolean)
+    constructor(fixerUpper: DataFixer, blockLookup: HolderGetter<Block>, sourceDir: Path, packType: PackType, fileToIdConverter: FileToIdConverter, loadAsText: boolean)
     // private fileToIdConverter: FileToIdConverter;
     // private loadAsText: boolean;
-    // private sourceDir: Path[];
+    // private sourceDir: Path;
     list(): Stream<Identifier>;
     load(id: Identifier): Optional<StructureTemplate>;
     load(opener: () => InputStream, asText: boolean, onError: (param0: Throwable) => void): Optional<StructureTemplate>;

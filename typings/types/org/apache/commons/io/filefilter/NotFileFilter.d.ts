@@ -12,7 +12,7 @@ export class NotFileFilter extends AbstractFileFilter implements Serializable {
     // private filter: IOFileFilter;
     accept(arg0: File): boolean;
     accept(arg0: File, arg1: string): boolean;
-    accept(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
+    accept(arg0: Path, arg1: BasicFileAttributes): FileVisitResult;
     // private not(arg0: FileVisitResult): FileVisitResult;
     toString(): string;
 }

@@ -5,7 +5,7 @@ import type { ProgramSet } from '../../../../../net/irisshaders/iris/shaderpack/
 import type { ProgramSource } from '../../../../../net/irisshaders/iris/shaderpack/programs/ProgramSource.d.ts'
 export class ProgramFallbackResolver extends Object {
     constructor(arg0: ProgramSet)
-    // private cache: { [key in ProgramId]: ProgramSource };
+    // private cache: Map<ProgramId, ProgramSource>;
     // private programs: ProgramSet;
     has(arg0: ProgramId): boolean;
     resolve(arg0: ProgramId): Optional<ProgramSource>;

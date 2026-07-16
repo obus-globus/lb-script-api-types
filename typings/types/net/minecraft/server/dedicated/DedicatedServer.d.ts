@@ -75,7 +75,7 @@ export class DedicatedServer extends MinecraftServer implements ServerInterface 
     allowFlight(): boolean;
     convertOldUsers(): boolean;
     createTextFilterForPlayer(player: ServerPlayer): TextFilter;
-    dumpServerProperties(path: Path[]): void;
+    dumpServerProperties(path: Path): void;
     endMetricsRecordingTick(): void;
     enforceSecureProfile(): boolean;
     entityBroadcastRangePercentage(): number;

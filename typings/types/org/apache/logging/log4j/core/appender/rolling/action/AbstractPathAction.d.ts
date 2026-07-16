@@ -11,10 +11,10 @@ export abstract class AbstractPathAction extends AbstractAction {
     readonly options: FileVisitOption[];
     readonly pathConditions: PathCondition[];
     // private subst: StrSubstitutor;
-    createFileVisitor(visitorBaseDir: Path[], conditions: PathCondition[]): FileVisitor<Path[]>;
+    createFileVisitor(visitorBaseDir: Path, conditions: PathCondition[]): FileVisitor<Path>;
     execute(): boolean;
-    execute(visitor: FileVisitor<Path[]>): boolean;
-    getBasePath(): Path[];
+    execute(visitor: FileVisitor<Path>): boolean;
+    getBasePath(): Path;
     getBasePathString(): string;
     getMaxDepth(): number;
     getOptions(): FileVisitOption[];

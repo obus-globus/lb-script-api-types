@@ -9,7 +9,7 @@ import type { ChunkPos } from '../../../../../net/minecraft/world/level/ChunkPos
 import type { RegionStorageInfo } from '../../../../../net/minecraft/world/level/chunk/storage/RegionStorageInfo.d.ts'
 import type { SimpleRegionStorage } from '../../../../../net/minecraft/world/level/chunk/storage/SimpleRegionStorage.d.ts'
 export class ChunkNbt extends Object implements AutoCloseable {
-    constructor(info: RegionStorageInfo, path: Path[], type: DataFixTypes, targetVersion: number)
+    constructor(info: RegionStorageInfo, path: Path, type: DataFixTypes, targetVersion: number)
     // private storage: SimpleRegionStorage;
     // private targetVersion: number;
     close(): void;

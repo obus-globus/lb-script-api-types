@@ -57,13 +57,13 @@ export class HmacUtils extends Object {
     hmac(arg0: File): number[];
     hmac(arg0: InputStream): number[];
     hmac(arg0: ByteBuffer): number[];
-    hmac(arg0: Path[]): number[];
+    hmac(arg0: Path): number[];
     hmac(arg0: number[]): number[];
     hmac(arg0: string): number[];
     hmacHex(arg0: File): string;
     hmacHex(arg0: InputStream): string;
     hmacHex(arg0: ByteBuffer): string;
-    hmacHex(arg0: Path[]): string;
+    hmacHex(arg0: Path): string;
     hmacHex(arg0: number[]): string;
     hmacHex(arg0: string): string;
 }

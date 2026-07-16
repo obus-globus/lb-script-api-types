@@ -12,18 +12,18 @@ import type { ResourceMetadata } from '../../../../net/minecraft/server/packs/re
 export class PathPackResources extends AbstractPackResources {
     static METADATA_EXTENSION: string;
     static PACK_META: string;
-    static getNamespaces(paramrootDir: Path[][]): string[];
-    static getResource(paramtopDir: Path[][], paramlocation: Identifier): () => InputStream;
-    static listPath(paramnamespace: string, paramtopDir: Path[][], paramdecomposedPrefixPath: string[], paramoutput: (param0: Object | null, param1: Object | null) => void): void;
-    static listResources(paramtopPath: Path[][], paramnamespace: string, paramdirectory: string, paramoutput: (param0: Object | null, param1: Object | null) => void): void;
+    static getNamespaces(paramrootDir: Path): string[];
+    static getResource(paramtopDir: Path, paramlocation: Identifier): () => InputStream;
+    static listPath(paramnamespace: string, paramtopDir: Path, paramdecomposedPrefixPath: string[], paramoutput: (param0: Object | null, param1: Object | null) => void): void;
+    static listResources(paramtopPath: Path, paramnamespace: string, paramdirectory: string, paramoutput: (param0: Object | null, param1: Object | null) => void): void;
     static loadMetadata(parampackResources: PackResources): ResourceMetadata;
-    static validatePath(parampath: Path[][]): boolean;
-    constructor(location: PackLocationInfo, root: Path[])
-    // private root: Path[];
+    static validatePath(parampath: Path): boolean;
+    constructor(location: PackLocationInfo, root: Path)
+    // private root: Path;
     close(): void;
     getNamespaces(type: PackType): string[];
     getResource(type: PackType, location: Identifier): () => InputStream;
     getRootResource(...path: string[]): () => InputStream;
     listResources(type: PackType, namespace: string, directory: string, output: (param0: Object | null, param1: Object | null) => void): void;
-    // private topPackDir(type: PackType): Path[];
+    // private topPackDir(type: PackType): Path;
 }

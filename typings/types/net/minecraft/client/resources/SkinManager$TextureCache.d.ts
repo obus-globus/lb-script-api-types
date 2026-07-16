@@ -7,8 +7,8 @@ import type { SkinManager } from '../../../../net/minecraft/client/resources/Ski
 import type { ClientAsset$Texture } from '../../../../net/minecraft/core/ClientAsset$Texture.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
 export class SkinManager$TextureCache extends Object {
-    private constructor(null_: SkinManager, root: Path[], type: MinecraftProfileTexture$Type)
-    // private root: Path[];
+    private constructor(null_: SkinManager, root: Path, type: MinecraftProfileTexture$Type)
+    // private root: Path;
     // private textures: { [key: string]: CompletableFuture<ClientAsset$Texture> };
     // private type: MinecraftProfileTexture$Type;
     getOrLoad(texture: MinecraftProfileTexture): CompletableFuture<ClientAsset$Texture>;

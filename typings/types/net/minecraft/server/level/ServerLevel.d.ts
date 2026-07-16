@@ -335,7 +335,7 @@ export class ServerLevel extends Level implements ServerWorldExtended, ServerLev
     resetWeatherCycle(): void;
     // private runBlockEvents(): void;
     save(progressListener: ProgressListener, flush: boolean, noSave: boolean): void;
-    saveDebugReport(rootDir: Path[]): void;
+    saveDebugReport(rootDir: Path): void;
     // private saveLevelData(sync: boolean): void;
     sectionsToVillage(pos: SectionPos): number;
     sendBlockUpdated(pos: BlockPos, old: BlockState, current: BlockState, updateFlags: number): void;

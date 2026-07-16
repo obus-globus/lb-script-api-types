@@ -44,7 +44,7 @@ export class MossyCarpetBlock extends Block implements BonemealableBlock {
     static INDESTRUCTIBLE: number;
     static INSTANT: number;
     static NORTH: EnumProperty<WallSide>;
-    static PROPERTY_BY_DIRECTION: { [key in Direction]: EnumProperty<WallSide> };
+    static PROPERTY_BY_DIRECTION: Map<Direction, EnumProperty<WallSide>>;
     static SOUTH: EnumProperty<WallSide>;
     static UPDATE_ALL: number;
     static UPDATE_ALL_IMMEDIATE: number;

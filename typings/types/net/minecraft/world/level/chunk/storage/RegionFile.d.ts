@@ -13,14 +13,14 @@ import type { RegionFile$CommitOp } from '../../../../../../net/minecraft/world/
 import type { RegionFileVersion } from '../../../../../../net/minecraft/world/level/chunk/storage/RegionFileVersion.d.ts'
 import type { RegionStorageInfo } from '../../../../../../net/minecraft/world/level/chunk/storage/RegionStorageInfo.d.ts'
 export class RegionFile extends Object implements AutoCloseable {
-    constructor(info: RegionStorageInfo, path: Path[], externalFileDir: Path[], sync: boolean)
-    constructor(info: RegionStorageInfo, path: Path[], externalFileDir: Path[], version: RegionFileVersion, sync: boolean)
-    // private externalFileDir: Path[];
+    constructor(info: RegionStorageInfo, path: Path, externalFileDir: Path, sync: boolean)
+    constructor(info: RegionStorageInfo, path: Path, externalFileDir: Path, version: RegionFileVersion, sync: boolean)
+    // private externalFileDir: Path;
     // private file: FileChannel;
     // private header: ByteBuffer;
     // private info: RegionStorageInfo;
     // private offsets: IntBuffer;
-    readonly path: Path[];
+    readonly path: Path;
     // private timestamps: IntBuffer;
     // private usedSectors: RegionBitmap;
     // private version: RegionFileVersion;
@@ -33,13 +33,13 @@ export class RegionFile extends Object implements AutoCloseable {
     flush(): void;
     getChunkDataInputStream(pos: ChunkPos): DataInputStream;
     getChunkDataOutputStream(pos: ChunkPos): DataOutputStream;
-    // private getExternalChunkPath(pos: ChunkPos): Path[];
+    // private getExternalChunkPath(pos: ChunkPos): Path;
     // private getOffset(pos: ChunkPos): number;
-    getPath(): Path[];
+    getPath(): Path;
     hasChunk(pos: ChunkPos): boolean;
     // private packSectorOffset(index: number, size: number): number;
     // private padToFullSector(): void;
     write(pos: ChunkPos, data: ByteBuffer): void;
     // private writeHeader(): void;
-    // private writeToExternalFile(path: Path[], data: ByteBuffer): RegionFile$CommitOp;
+    // private writeToExternalFile(path: Path, data: ByteBuffer): RegionFile$CommitOp;
 }

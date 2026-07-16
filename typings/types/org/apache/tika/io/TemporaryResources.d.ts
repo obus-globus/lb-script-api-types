@@ -7,15 +7,15 @@ import type { Metadata } from '../../../../org/apache/tika/metadata/Metadata.d.t
 export class TemporaryResources extends Object implements Closeable {
     constructor()
     // private resources: Closeable[];
-    // private tempFileDir: Path[];
+    // private tempFileDir: Path;
     addResource(arg0: Closeable): void;
     close(): void;
-    createTempFile(): Path[];
-    createTempFile(arg0: string): Path[];
-    createTempFile(arg0: Metadata): Path[];
+    createTempFile(): Path;
+    createTempFile(arg0: string): Path;
+    createTempFile(arg0: Metadata): Path;
     createTemporaryFile(): File;
     dispose(): void;
     getResource<T extends Closeable>(arg0: Class<T>): T;
     setTemporaryFileDirectory(arg0: File): void;
-    setTemporaryFileDirectory(arg0: Path[]): void;
+    setTemporaryFileDirectory(arg0: Path): void;
 }

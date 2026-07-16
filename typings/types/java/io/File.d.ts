@@ -21,7 +21,7 @@ export class File extends Object implements Serializable, Comparable<File> {
     constructor(arg0: URI)
     constructor(arg0: string)
     constructor(arg0: string, arg1: string)
-    // private filePath: Path[];
+    // private filePath: Path;
     readonly path: string;
     // private prefixLength: number;
     // private status: File$PathStatus;
@@ -72,7 +72,7 @@ export class File extends Object implements Serializable, Comparable<File> {
     setReadable(arg0: boolean, arg1: boolean): boolean;
     setWritable(arg0: boolean): boolean;
     setWritable(arg0: boolean, arg1: boolean): boolean;
-    toPath(): Path[];
+    toPath(): Path;
     toString(): string;
     toURI(): URI;
     toURL(): URL;

@@ -92,7 +92,7 @@ export class HopperBlock extends BaseEntityBlock implements ShapeUpdateHandlingB
     static updateOrDestroy(paramblockState: BlockState, paramnewState: BlockState, paramlevel: LevelAccessor, paramblockPos: BlockPos, paramupdateFlags: number): void;
     static updateOrDestroy(paramblockState: BlockState, paramnewState: BlockState, paramlevel: LevelAccessor, paramblockPos: BlockPos, paramupdateFlags: number, paramupdateLimit: number): void;
     constructor(properties: BlockBehaviour$Properties)
-    // private interactionShapes: { [key in Direction]: VoxelShape };
+    // private interactionShapes: Map<Direction, VoxelShape>;
     // private shapes: (param0: BlockState) => VoxelShape;
     // private viaFabricPlus$requireOriginalShape: boolean;
     affectNeighborsAfterRemoval(state: BlockState, level: ServerLevel, pos: BlockPos, movedByPiston: boolean): void;

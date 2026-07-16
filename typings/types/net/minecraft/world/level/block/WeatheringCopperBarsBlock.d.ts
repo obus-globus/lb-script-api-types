@@ -39,7 +39,7 @@ export class WeatheringCopperBarsBlock extends IronBarsBlock implements Weatheri
     static NEXT_BY_BLOCK: () => Map<Block, Block>;
     static NORTH: BooleanProperty;
     static PREVIOUS_BY_BLOCK: () => Map<Block, Block>;
-    static PROPERTY_BY_DIRECTION: { [key in Direction]: BooleanProperty };
+    static PROPERTY_BY_DIRECTION: Map<Direction, BooleanProperty>;
     static SCAN_DISTANCE: number;
     static SOUTH: BooleanProperty;
     static UPDATE_ALL: number;

@@ -5,7 +5,7 @@ import type { EquipmentClientInfo$LayerType } from '../../../../../net/minecraft
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 export class EquipmentClientInfo$Builder extends Object {
     private constructor()
-    // private layersByType: { [key in EquipmentClientInfo$LayerType]: EquipmentClientInfo$Layer[] };
+    // private layersByType: Map<EquipmentClientInfo$LayerType, EquipmentClientInfo$Layer[]>;
     addHumanoidLayers(textureId: Identifier): EquipmentClientInfo$Builder;
     addHumanoidLayers(textureId: Identifier, dyeable: boolean): EquipmentClientInfo$Builder;
     addLayers(type: EquipmentClientInfo$LayerType, ...layers: EquipmentClientInfo$Layer[]): EquipmentClientInfo$Builder;

@@ -13,14 +13,14 @@ import type { FileSystemFetcherConfig } from '../../../../../../org/apache/tika/
 export class FileSystemFetcher extends AbstractFetcher implements Initializable {
     constructor()
     constructor(arg0: FileSystemFetcherConfig)
-    readonly basePath: Path[];
+    readonly basePath: Path;
     readonly extractFileSystemMetadata: boolean;
     checkInitialization(arg0: InitializableProblemHandler): void;
     fetch(arg0: string, arg1: Metadata, arg2: ParseContext): InputStream;
-    getBasePath(): Path[];
+    getBasePath(): Path;
     initialize(arg0: { [key: string]: Param<Object> }): void;
     setBasePath(arg0: string): void;
     setExtractFileSystemMetadata(arg0: boolean): void;
-    // private updateFileSystemMetadata(arg0: Path[], arg1: Metadata): void;
+    // private updateFileSystemMetadata(arg0: Path, arg1: Metadata): void;
     // private updateFileTime(arg0: Property, arg1: FileTime, arg2: Metadata): void;
 }

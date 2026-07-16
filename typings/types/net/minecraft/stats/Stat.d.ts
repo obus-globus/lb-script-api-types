@@ -16,12 +16,12 @@ export class Stat<T extends unknown> extends ObjectiveCriteria {
     static EXPERIENCE: ObjectiveCriteria;
     static FOOD: ObjectiveCriteria;
     static HEALTH: ObjectiveCriteria;
-    static KILLED_BY_TEAM: { [key in TeamColor]: ObjectiveCriteria };
+    static KILLED_BY_TEAM: Map<TeamColor, ObjectiveCriteria>;
     static KILL_COUNT_ALL: ObjectiveCriteria;
     static KILL_COUNT_PLAYERS: ObjectiveCriteria;
     static LEVEL: ObjectiveCriteria;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Stat<Object>>;
-    static TEAM_KILL: { [key in TeamColor]: ObjectiveCriteria };
+    static TEAM_KILL: Map<TeamColor, ObjectiveCriteria>;
     static TRIGGER: ObjectiveCriteria;
     static buildName(paramtype: Stat<Object>[], paramvalue: Object | null): string;
     static byName(paramname: string): Optional<ObjectiveCriteria>;

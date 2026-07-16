@@ -13,7 +13,7 @@ export class IfLastModified extends Object implements PathCondition {
     constructor(arg0: Duration, arg1: PathCondition[], arg2: any)
     readonly age: Duration;
     readonly nestedConditions: PathCondition[];
-    accept(basePath: Path[], relativePath: Path[], attrs: BasicFileAttributes): boolean;
+    accept(basePath: Path, relativePath: Path, attrs: BasicFileAttributes): boolean;
     beforeFileTreeWalk(): void;
     getAge(): Duration_2;
     getNestedConditions(): PathCondition[];

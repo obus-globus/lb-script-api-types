@@ -6,8 +6,8 @@ import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d
 import type { LootParams } from '../../../../net/minecraft/world/level/storage/loot/LootParams.d.ts'
 import type { LootTable } from '../../../../net/minecraft/world/level/storage/loot/LootTable.d.ts'
 export interface EquipmentUser extends Object{
-    equip(lootTable: ResourceKey<LootTable>, lootParams: LootParams, optionalLootTableSeed: number, dropChances: { [key in EquipmentSlot]: number }): void;
-    equip(lootTable: ResourceKey<LootTable>, lootParams: LootParams, dropChances: { [key in EquipmentSlot]: number }): void;
+    equip(lootTable: ResourceKey<LootTable>, lootParams: LootParams, optionalLootTableSeed: number, dropChances: Map<EquipmentSlot, number>): void;
+    equip(lootTable: ResourceKey<LootTable>, lootParams: LootParams, dropChances: Map<EquipmentSlot, number>): void;
     equip(equipment: EquipmentTable, lootParams: LootParams): void;
     getItemBySlot(slot: EquipmentSlot): ItemStack;
     resolveSlot(toEquip: ItemStack, alreadyInsertedIntoSlots: EquipmentSlot[]): EquipmentSlot;

@@ -43,7 +43,7 @@ export abstract class FlowingFluid extends Fluid {
     getSlopeFindDistance(level: LevelReader): number;
     getSource(): Fluid;
     getSource(falling: boolean): FluidState;
-    getSpread(level: ServerLevel, pos: BlockPos, state: BlockState): { [key in Direction]: FluidState };
+    getSpread(level: ServerLevel, pos: BlockPos, state: BlockState): Map<Direction, FluidState>;
     getSpreadDelay(level: Level, pos: BlockPos, oldFluidState: FluidState, newFluidState: FluidState): number;
     // private isHoleBelow(arg0: LevelReader, arg1: { [key: string]: any }, arg2: number, arg3: BlockPos, arg4: BlockState): boolean;
     isSolidFace(level: BlockGetter, pos: BlockPos, direction: Direction): boolean;

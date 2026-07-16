@@ -19,11 +19,11 @@ export class FireworkStarRecipe extends CustomRecipe {
     static SERIALIZER: RecipeSerializer<FireworkStarRecipe>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, FireworkStarRecipe>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<any>>;
-    constructor(shapes: { [key in FireworkExplosion$Shape]: Ingredient }, trail: Ingredient, twinkle: Ingredient, fuel: Ingredient, dye: Ingredient, result: ItemStackTemplate)
+    constructor(shapes: Map<FireworkExplosion$Shape, Ingredient>, trail: Ingredient, twinkle: Ingredient, fuel: Ingredient, dye: Ingredient, result: ItemStackTemplate)
     // private dye: Ingredient;
     // private fuel: Ingredient;
     // private result: ItemStackTemplate;
-    // private shapes: { [key in FireworkExplosion$Shape]: Ingredient };
+    // private shapes: Map<FireworkExplosion$Shape, Ingredient>;
     // private trail: Ingredient;
     // private twinkle: Ingredient;
     assemble(input: CraftingInput): ItemStack;

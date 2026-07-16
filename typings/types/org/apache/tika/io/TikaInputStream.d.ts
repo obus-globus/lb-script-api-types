@@ -23,9 +23,9 @@ export class TikaInputStream extends TaggedInputStream {
     static get(paramarg0: URI, paramarg1: Metadata): TikaInputStream;
     static get(paramarg0: URL): TikaInputStream;
     static get(paramarg0: URL, paramarg1: Metadata): TikaInputStream;
-    static get(paramarg0: Path[][]): TikaInputStream;
-    static get(paramarg0: Path[][], paramarg1: Metadata): TikaInputStream;
-    static get(paramarg0: Path[][], paramarg1: Metadata, paramarg2: TemporaryResources): TikaInputStream;
+    static get(paramarg0: Path): TikaInputStream;
+    static get(paramarg0: Path, paramarg1: Metadata): TikaInputStream;
+    static get(paramarg0: Path, paramarg1: Metadata, paramarg2: TemporaryResources): TikaInputStream;
     static get(paramarg0: Blob): TikaInputStream;
     static get(paramarg0: Blob, paramarg1: Metadata): TikaInputStream;
     static get(paramarg0: InputStreamFactory): TikaInputStream;
@@ -34,13 +34,13 @@ export class TikaInputStream extends TaggedInputStream {
     static nullInputStream(): InputStream;
     private constructor(arg0: File)
     private constructor(arg0: InputStream, arg1: TemporaryResources, arg2: number, arg3: string)
-    private constructor(arg0: Path[])
-    private constructor(arg0: Path[], arg1: TemporaryResources, arg2: number)
+    private constructor(arg0: Path)
+    private constructor(arg0: Path, arg1: TemporaryResources, arg2: number)
     // private consecutiveEOFs: number;
     readonly length: number;
     // private mark: number;
     readonly openContainer: Object;
-    readonly path: Path[];
+    readonly path: Path;
     readonly position: number;
     // private skipBuffer: number[];
     // private streamFactory: InputStreamFactory;
@@ -54,8 +54,8 @@ export class TikaInputStream extends TaggedInputStream {
     getInputStreamFactory(): InputStreamFactory;
     getLength(): number;
     getOpenContainer(): Object;
-    getPath(): Path[];
-    getPath(arg0: number): Path[];
+    getPath(): Path;
+    getPath(arg0: number): Path;
     getPosition(): number;
     hasFile(): boolean;
     hasInputStreamFactory(): boolean;

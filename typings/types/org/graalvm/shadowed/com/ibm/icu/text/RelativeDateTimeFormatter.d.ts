@@ -22,16 +22,16 @@ export class RelativeDateTimeFormatter extends Object {
     static getInstance(paramlocale: ULocale): RelativeDateTimeFormatter;
     static getInstance(paramlocale: ULocale, paramnf: NumberFormat): RelativeDateTimeFormatter;
     static getInstance(paramlocale: ULocale, paramnf: NumberFormat, paramstyle: RelativeDateTimeFormatter$Style, paramcapitalizationContext: DisplayContext): RelativeDateTimeFormatter;
-    private constructor(qualitativeUnitMap: { [key in RelativeDateTimeFormatter$Style]: { [key in RelativeDateTimeFormatter$AbsoluteUnit]: { [key in RelativeDateTimeFormatter$Direction]: string } } }, patternMap: { [key in RelativeDateTimeFormatter$Style]: { [key in RelativeDateTimeFormatter$RelativeUnit]: string[][] } }, combinedDateAndTime: string, pluralRules: PluralRules, numberFormat: NumberFormat, style: RelativeDateTimeFormatter$Style, capitalizationContext: DisplayContext, breakIterator: BreakIterator, locale: ULocale)
+    private constructor(qualitativeUnitMap: Map<RelativeDateTimeFormatter$Style, Map<RelativeDateTimeFormatter$AbsoluteUnit, Map<RelativeDateTimeFormatter$Direction, string>>>, patternMap: Map<RelativeDateTimeFormatter$Style, Map<RelativeDateTimeFormatter$RelativeUnit, string[][]>>, combinedDateAndTime: string, pluralRules: PluralRules, numberFormat: NumberFormat, style: RelativeDateTimeFormatter$Style, capitalizationContext: DisplayContext, breakIterator: BreakIterator, locale: ULocale)
     // private breakIterator: BreakIterator;
     readonly capitalizationContext: DisplayContext;
     // private combinedDateAndTime: string;
     // private dateFormatSymbols: DateFormatSymbols;
     // private locale: ULocale;
     readonly numberFormat: NumberFormat;
-    // private patternMap: { [key in RelativeDateTimeFormatter$Style]: { [key in RelativeDateTimeFormatter$RelativeUnit]: string[][] } };
+    // private patternMap: Map<RelativeDateTimeFormatter$Style, Map<RelativeDateTimeFormatter$RelativeUnit, string[][]>>;
     // private pluralRules: PluralRules;
-    // private qualitativeUnitMap: { [key in RelativeDateTimeFormatter$Style]: { [key in RelativeDateTimeFormatter$AbsoluteUnit]: { [key in RelativeDateTimeFormatter$Direction]: string } } };
+    // private qualitativeUnitMap: Map<RelativeDateTimeFormatter$Style, Map<RelativeDateTimeFormatter$AbsoluteUnit, Map<RelativeDateTimeFormatter$Direction, string>>>;
     // private style: RelativeDateTimeFormatter$Style;
     // private styleToDateFormatSymbolsWidth: number[];
     // private adjustForContext(originalFormattedString: string): string;

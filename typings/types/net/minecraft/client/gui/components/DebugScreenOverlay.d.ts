@@ -27,7 +27,7 @@ export class DebugScreenOverlay extends Object {
     // private pingChart: PingDebugChart;
     readonly pingLogger: LocalSampleLogger;
     readonly profilerPieChart: ProfilerPieChart;
-    // private remoteSupportingLoggers: { [key in RemoteDebugSampleType]: LocalSampleLogger };
+    // private remoteSupportingLoggers: Map<RemoteDebugSampleType, LocalSampleLogger>;
     // private renderFpsCharts: boolean;
     // private renderLightmapTexture: boolean;
     // private renderNetworkCharts: boolean;

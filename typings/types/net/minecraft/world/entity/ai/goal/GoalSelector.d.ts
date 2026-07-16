@@ -7,7 +7,7 @@ export class GoalSelector extends Object {
     constructor()
     readonly availableGoals: WrappedGoal[];
     // private disabledFlags: Goal$Flag[];
-    // private lockedFlags: { [key in Goal$Flag]: WrappedGoal };
+    // private lockedFlags: Map<Goal$Flag, WrappedGoal>;
     addGoal(prio: number, goal: Goal): void;
     disableControlFlag(flag: Goal$Flag): void;
     enableControlFlag(flag: Goal$Flag): void;

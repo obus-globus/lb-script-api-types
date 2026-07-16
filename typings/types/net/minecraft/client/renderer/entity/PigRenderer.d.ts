@@ -14,7 +14,7 @@ export class PigRenderer extends MobRenderer<Pig, PigRenderState, PigModel> {
     static NAMETAG_SCALE: number;
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
-    // private models: { [key in PigVariant$ModelType]: AdultAndBabyModelPair<PigModel> };
+    // private models: Map<PigVariant$ModelType, AdultAndBabyModelPair<PigModel>>;
     createRenderState(): PigRenderState;
     createRenderState(entity: Pig, partialTicks: number): PigRenderState;
     extractRenderState(entity: Pig, state: PigRenderState, partialTicks: number): void;

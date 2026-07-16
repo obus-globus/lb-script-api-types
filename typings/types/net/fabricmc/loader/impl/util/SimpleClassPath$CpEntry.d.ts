@@ -8,7 +8,7 @@ export class SimpleClassPath$CpEntry extends Object {
     // private instance: Object;
     readonly subPath: string;
     getInputStream(): InputStream;
-    getOrigin(): Path[];
+    getOrigin(): Path;
     getSubPath(): string;
     toString(): string;
 }

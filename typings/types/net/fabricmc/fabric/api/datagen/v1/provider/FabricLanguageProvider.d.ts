@@ -18,19 +18,19 @@ export abstract class FabricLanguageProvider extends Object implements DataProvi
     static FIXED_ORDER_FIELDS: (param0: string) => number;
     static KEY_COMPARATOR: (param0: Object) => boolean;
     static LOGGER: Logger;
-    static saveAll(paramcache: CachedOutput, paramcodec: Codec<Object>, parampathGetter: (param0: Object | null) => Path[][], paramcontents: Map<Object | null, Object | null>): CompletableFuture<Object>;
-    static saveAll(paramcache: CachedOutput, paramserializer: (param0: Object | null) => JsonElement, parampathGetter: (param0: Object | null) => Path[][], paramcontents: Map<Object | null, Object | null>): CompletableFuture<Object>;
+    static saveAll(paramcache: CachedOutput, paramcodec: Codec<Object>, parampathGetter: (param0: Object | null) => Path, paramcontents: Map<Object | null, Object | null>): CompletableFuture<Object>;
+    static saveAll(paramcache: CachedOutput, paramserializer: (param0: Object | null) => JsonElement, parampathGetter: (param0: Object | null) => Path, paramcontents: Map<Object | null, Object | null>): CompletableFuture<Object>;
     static saveAll(paramcache: CachedOutput, paramcodec: Codec<Object>, parampathProvider: PackOutput$PathProvider, paramentries: Map<Identifier, Object | null>): CompletableFuture<Object>;
-    static saveStable(paramcache: CachedOutput, paramcodec: Codec<Object>, paramvalue: Object | null, parampath: Path[][]): CompletableFuture<Object>;
-    static saveStable(paramcache: CachedOutput, paramregistries: HolderLookup$Provider, paramcodec: Codec<Object>, paramvalue: Object | null, parampath: Path[][]): CompletableFuture<Object>;
-    static saveStable(paramcache: CachedOutput, paramroot: JsonElement, parampath: Path[][]): CompletableFuture<Object>;
+    static saveStable(paramcache: CachedOutput, paramcodec: Codec<Object>, paramvalue: Object | null, parampath: Path): CompletableFuture<Object>;
+    static saveStable(paramcache: CachedOutput, paramregistries: HolderLookup$Provider, paramcodec: Codec<Object>, paramvalue: Object | null, parampath: Path): CompletableFuture<Object>;
+    static saveStable(paramcache: CachedOutput, paramroot: JsonElement, parampath: Path): CompletableFuture<Object>;
     constructor(arg0: FabricPackOutput, arg1: CompletableFuture<HolderLookup$Provider>)
     constructor(arg0: FabricPackOutput, arg1: string, arg2: CompletableFuture<HolderLookup$Provider>)
     // private languageCode: string;
     // private packOutput: FabricPackOutput;
     // private registryLookup: CompletableFuture<HolderLookup$Provider>;
     generateTranslations(arg0: HolderLookup$Provider, arg1: (param0: string, param1: string) => void): void;
-    getLangFilePath(arg0: string): Path[];
+    getLangFilePath(arg0: string): Path;
     getName(): string;
     run(arg0: CachedOutput): CompletableFuture<Object>;
 }

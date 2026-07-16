@@ -23,12 +23,12 @@ import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class TransportItemsBetweenContainers extends Behavior<PathfinderMob> {
     static DEFAULT_DURATION: number;
     static TARGET_INTERACTION_TIME: number;
-    constructor(speedModifier: number, sourceBlockType: (param0: BlockState) => boolean, destinationBlockType: (param0: BlockState) => boolean, horizontalSearchDistance: number, verticalSearchDistance: number, onTargetInteractionActions: { [key in TransportItemsBetweenContainers$ContainerInteractionState]: (param0: Object | null, param1: Object | null, param2: Object | null) => void }, onStartTravelling: (param0: PathfinderMob) => void, shouldQueueForTarget: (param0: TransportItemsBetweenContainers$TransportItemTarget) => boolean)
+    constructor(speedModifier: number, sourceBlockType: (param0: BlockState) => boolean, destinationBlockType: (param0: BlockState) => boolean, horizontalSearchDistance: number, verticalSearchDistance: number, onTargetInteractionActions: Map<TransportItemsBetweenContainers$ContainerInteractionState, (param0: Object | null, param1: Object | null, param2: Object | null) => void>, onStartTravelling: (param0: PathfinderMob) => void, shouldQueueForTarget: (param0: TransportItemsBetweenContainers$TransportItemTarget) => boolean)
     // private destinationBlockType: (param0: BlockState) => boolean;
     // private horizontalSearchDistance: number;
     // private interactionState: TransportItemsBetweenContainers$ContainerInteractionState;
     // private onStartTravelling: (param0: PathfinderMob) => void;
-    // private onTargetInteractionActions: { [key in TransportItemsBetweenContainers$ContainerInteractionState]: (param0: Object | null, param1: Object | null, param2: Object | null) => void };
+    // private onTargetInteractionActions: Map<TransportItemsBetweenContainers$ContainerInteractionState, (param0: Object | null, param1: Object | null, param2: Object | null) => void>;
     // private shouldQueueForTarget: (param0: TransportItemsBetweenContainers$TransportItemTarget) => boolean;
     // private sourceBlockType: (param0: BlockState) => boolean;
     // private speedModifier: number;

@@ -10,7 +10,7 @@ export class IfAccumulatedFileCount extends Object implements PathCondition {
     // private count: number;
     readonly nestedConditions: PathCondition[];
     // private threshold: number;
-    accept(basePath: Path[], relativePath: Path[], attrs: BasicFileAttributes): boolean;
+    accept(basePath: Path, relativePath: Path, attrs: BasicFileAttributes): boolean;
     beforeFileTreeWalk(): void;
     getNestedConditions(): PathCondition[];
     getThresholdCount(): number;

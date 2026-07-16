@@ -7,8 +7,8 @@ import type { TotalCountResult } from '../../../../../../org/apache/tika/pipes/p
 import type { TotalCountResult$STATUS } from '../../../../../../org/apache/tika/pipes/pipesiterator/TotalCountResult$STATUS.d.ts'
 import type { TotalCounter } from '../../../../../../org/apache/tika/pipes/pipesiterator/TotalCounter.d.ts'
 export class FileSystemPipesIterator$FileCountWorker extends Object implements Closeable, TotalCounter {
-    constructor(arg0: Path[])
-    // private basePath: Path[];
+    constructor(arg0: Path)
+    // private basePath: Path;
     // private finalResult: TotalCountResult;
     // private status: TotalCountResult$STATUS;
     readonly totalCount: AtomicLong;

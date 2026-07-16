@@ -17,7 +17,7 @@ export class Util$OS extends Enum<Util$OS> {
     // private telemetryName: string;
     getOpenUriArguments(uri: URI): string[];
     openFile(file: File): void;
-    openPath(path: Path[]): void;
+    openPath(path: Path): void;
     openUri(uri: URI): void;
     openUri(uri: string): void;
     telemetryName(): string;

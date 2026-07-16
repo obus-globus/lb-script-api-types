@@ -8,12 +8,12 @@ import type { Scoreboard$PackedScore } from '../../../../net/minecraft/world/sco
 export class ScoreboardSaveData$Packed extends Record {
     static CODEC: Codec<ScoreboardSaveData$Packed>;
     static EMPTY: ScoreboardSaveData$Packed;
-    constructor(objectives: Objective$Packed[], scores: Scoreboard$PackedScore[], displaySlots: { [key in DisplaySlot]: string }, teams: PlayerTeam$Packed[])
-    // private displaySlots: { [key in DisplaySlot]: string };
+    constructor(objectives: Objective$Packed[], scores: Scoreboard$PackedScore[], displaySlots: Map<DisplaySlot, string>, teams: PlayerTeam$Packed[])
+    // private displaySlots: Map<DisplaySlot, string>;
     // private objectives: Objective$Packed[];
     // private scores: Scoreboard$PackedScore[];
     // private teams: PlayerTeam$Packed[];
-    displaySlots(): { [key in DisplaySlot]: string };
+    displaySlots(): Map<DisplaySlot, string>;
     equals(o: Object | null): boolean;
     hashCode(): number;
     objectives(): Objective$Packed[];

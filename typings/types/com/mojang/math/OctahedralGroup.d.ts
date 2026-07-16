@@ -87,7 +87,7 @@ export class OctahedralGroup extends Enum<OctahedralGroup> implements StringRepr
     // private invertZ: boolean;
     // private name: string;
     // private permutation: SymmetricGroup3;
-    // private rotatedDirections: { [key in Direction]: Direction };
+    // private rotatedDirections: Map<Direction, Direction>;
     // private transformation: Matrix3fc;
     compose(that: OctahedralGroup): OctahedralGroup;
     getSerializedName(): string;

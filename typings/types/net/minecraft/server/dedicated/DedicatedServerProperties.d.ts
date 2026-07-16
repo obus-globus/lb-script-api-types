@@ -15,8 +15,8 @@ export class DedicatedServerProperties extends Settings<DedicatedServerPropertie
     static MANAGEMENT_SERVER_TLS_KEYSTORE_KEY: string;
     static MANAGEMENT_SERVER_TLS_KEYSTORE_PASSWORD_KEY: string;
     static deserializePermission(paramvalue: string): LevelBasedPermissionSet;
-    static fromFile(paramfile: Path[][]): DedicatedServerProperties;
-    static loadFromFile(paramfile: Path[][]): { [key: string]: any };
+    static fromFile(paramfile: Path): DedicatedServerProperties;
+    static loadFromFile(paramfile: Path): { [key: string]: any };
     static serializePermission(parampermission: LevelBasedPermissionSet): string;
     constructor(settings: { [key: string]: any })
     acceptsTransfers: Settings$MutableValue<Object>;

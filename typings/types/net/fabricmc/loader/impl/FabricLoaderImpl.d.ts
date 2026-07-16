@@ -28,10 +28,10 @@ export class FabricLoaderImpl extends FabricLoader {
     constructor(arg0: any)
     // private adapterMap: { [key: string]: LanguageAdapter };
     readonly classTweaker: ClassTweaker;
-    readonly configDir: Path[];
+    readonly configDir: Path;
     // private entrypointStorage: EntrypointStorage;
     // private frozen: boolean;
-    readonly gameDir: Path[];
+    readonly gameDir: Path;
     readonly gameInstance: Object;
     readonly mappingResolver: MappingResolver;
     // private modCandidates: ModCandidateImpl[];
@@ -42,17 +42,17 @@ export class FabricLoaderImpl extends FabricLoader {
     // private addMod(arg0: ModCandidateImpl): void;
     // private dumpModList(arg0: ModCandidateImpl[]): void;
     // private dumpModList0(arg0: ModCandidateImpl, arg1: StringBuilder, arg2: number, arg3: (Object | null)[]): void;
-    dumpNonFabricMods(arg0: Path[][]): void;
+    dumpNonFabricMods(arg0: Path[]): void;
     // private finishModLoading(): void;
     freeze(): void;
     getAllMods(): ModContainer[];
     getClassTweaker(): ClassTweaker;
-    getConfigDir(): Path[];
+    getConfigDir(): Path;
     getConfigDirectory(): File;
     getEntrypointContainers<T extends unknown>(arg0: string, arg1: Class<T>): EntrypointContainer<T>[];
     getEntrypoints<T extends unknown>(arg0: string, arg1: Class<T>): T[];
     getEnvironmentType(): EnvType;
-    getGameDir(): Path[];
+    getGameDir(): Path;
     getGameDirectory(): File;
     getGameInstance(): Object;
     getGameProvider(): GameProvider;
@@ -60,7 +60,7 @@ export class FabricLoaderImpl extends FabricLoader {
     getMappingResolver(): MappingResolver;
     getModCandidate(arg0: string): ModCandidateImpl;
     getModContainer(arg0: string): Optional<ModContainer>;
-    getModsDirectory0(): Path[];
+    getModsDirectory0(): Path;
     getModsInternal(): ModContainerImpl[];
     getObjectShare(): ObjectShare;
     getRawGameVersion(): string;
@@ -70,8 +70,8 @@ export class FabricLoaderImpl extends FabricLoader {
     isModLoaded(arg0: string): boolean;
     load(): void;
     loadClassTweakers(): void;
-    prepareModInit(arg0: Path[], arg1: Object): void;
-    // private setGameDir(arg0: Path[]): void;
+    prepareModInit(arg0: Path, arg1: Object): void;
+    // private setGameDir(arg0: Path): void;
     setGameInstance(arg0: Object): void;
     setGameProvider(arg0: GameProvider): void;
     // private setup(): void;

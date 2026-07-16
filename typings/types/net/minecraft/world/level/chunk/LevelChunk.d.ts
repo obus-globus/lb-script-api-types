@@ -137,7 +137,7 @@ export class LevelChunk extends ChunkAccess implements AttachmentTargetImpl, Deb
     // private removeGameEventListener<T extends BlockEntity>(blockEntity: T, level: ServerLevel): void;
     // private removeGameEventListenerRegistry(sectionY: number): void;
     replaceBiomes(buffer: FriendlyByteBuf): void;
-    replaceWithPacketData(buffer: FriendlyByteBuf, heightmaps: { [key in Heightmap$Types]: number[] }, blockEntities: (param0: (param0: BlockPos, param1: BlockEntityType<any>, param2: CompoundTag) => void) => void): void;
+    replaceWithPacketData(buffer: FriendlyByteBuf, heightmaps: Map<Heightmap$Types, number[]>, blockEntities: (param0: (param0: BlockPos, param1: BlockEntityType<any>, param2: CompoundTag) => void) => void): void;
     runPostLoad(): void;
     setBlockEntity(blockEntity: BlockEntity): void;
     setBlockState(pos: BlockPos, state: BlockState): BlockState;

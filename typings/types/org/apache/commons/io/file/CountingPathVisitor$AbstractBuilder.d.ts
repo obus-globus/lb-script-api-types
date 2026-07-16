@@ -8,16 +8,16 @@ import type { PathFilter } from '../../../../../org/apache/commons/io/file/PathF
 import type { SimplePathVisitor$AbstractBuilder } from '../../../../../org/apache/commons/io/file/SimplePathVisitor$AbstractBuilder.d.ts'
 export abstract class CountingPathVisitor$AbstractBuilder<T extends unknown, B extends CountingPathVisitor$AbstractBuilder<T, B>> extends SimplePathVisitor$AbstractBuilder<T, B> {
     constructor()
-    // private directoryFilter: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult;
-    // private directoryPostTransformer: (param0: Path[]) => Object | null;
-    // private fileFilter: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult;
+    // private directoryFilter: (param0: Path, param1: BasicFileAttributes) => FileVisitResult;
+    // private directoryPostTransformer: (param0: Path) => Object | null;
+    // private fileFilter: (param0: Path, param1: BasicFileAttributes) => FileVisitResult;
     // private pathCounters: Counters$PathCounters;
-    getDirectoryFilter(): (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult;
-    getDirectoryPostTransformer(): (param0: Path[]) => Object | null;
-    getFileFilter(): (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult;
+    getDirectoryFilter(): (param0: Path, param1: BasicFileAttributes) => FileVisitResult;
+    getDirectoryPostTransformer(): (param0: Path) => Object | null;
+    getFileFilter(): (param0: Path, param1: BasicFileAttributes) => FileVisitResult;
     getPathCounters(): Counters$PathCounters;
-    setDirectoryFilter(arg0: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult): B;
-    setDirectoryPostTransformer(arg0: (param0: Path[]) => Object | null): B;
-    setFileFilter(arg0: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult): B;
+    setDirectoryFilter(arg0: (param0: Path, param1: BasicFileAttributes) => FileVisitResult): B;
+    setDirectoryPostTransformer(arg0: (param0: Path) => Object | null): B;
+    setFileFilter(arg0: (param0: Path, param1: BasicFileAttributes) => FileVisitResult): B;
     setPathCounters(arg0: Counters$PathCounters): B;
 }

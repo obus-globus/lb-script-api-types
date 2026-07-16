@@ -12,7 +12,7 @@ export class SkinTextureDownloader extends Object {
     // private mainThreadExecutor: Executor;
     // private proxy: Proxy;
     // private textureManager: TextureManager;
-    downloadAndRegisterSkin(textureId: Identifier, localCopy: Path[], url: string, processLegacySkin: boolean): CompletableFuture<ClientAsset$Texture>;
-    // private downloadSkin(localCopy: Path[], url: string): NativeImage;
+    downloadAndRegisterSkin(textureId: Identifier, localCopy: Path, url: string, processLegacySkin: boolean): CompletableFuture<ClientAsset$Texture>;
+    // private downloadSkin(localCopy: Path, url: string): NativeImage;
     // private registerTextureInManager(textureId: ClientAsset$Texture, contents: NativeImage): CompletableFuture<ClientAsset$Texture>;
 }

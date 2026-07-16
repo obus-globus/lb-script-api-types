@@ -12,7 +12,7 @@ export class DynamicTexture extends AbstractTexture implements Dumpable {
     close(): void;
     // private createTexture(label: () => string): void;
     // private createTexture(label: string): void;
-    dumpContents(selfId: Identifier, dir: Path[]): void;
+    dumpContents(selfId: Identifier, dir: Path): void;
     getPixels(): NativeImage;
     setPixels(pixels: NativeImage): void;
     upload(): void;

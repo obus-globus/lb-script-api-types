@@ -11,7 +11,7 @@ export class PipesConfig extends PipesConfigBase {
     static DEFAULT_STARTUP_TIMEOUT_MILLIS: number;
     static DEFAULT_TIMEOUT_MILLIS: number;
     static load(paramarg0: InputStream): PipesConfig;
-    static load(paramarg0: Path[][]): PipesConfig;
+    static load(paramarg0: Path): PipesConfig;
     private constructor()
     readonly maxWaitForClientMillis: number;
     getMaxWaitForClientMillis(): number;

@@ -4,8 +4,8 @@ import type { FontOption } from '../../../../../net/minecraft/client/gui/font/Fo
 export class FontOption$Filter extends Object {
     static ALWAYS_PASS: FontOption$Filter;
     static CODEC: Codec<FontOption$Filter>;
-    constructor(values: { [key in FontOption]: boolean })
-    // private values: { [key in FontOption]: boolean };
+    constructor(values: Map<FontOption, boolean>)
+    // private values: Map<FontOption, boolean>;
     apply(options: FontOption[]): boolean;
     merge(other: FontOption$Filter): FontOption$Filter;
 }

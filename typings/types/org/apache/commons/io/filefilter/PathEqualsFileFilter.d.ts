@@ -6,9 +6,9 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { AbstractFileFilter } from '../../../../../org/apache/commons/io/filefilter/AbstractFileFilter.d.ts'
 export class PathEqualsFileFilter extends AbstractFileFilter {
     static EMPTY_STRING_ARRAY: (Object | null)[];
-    constructor(arg0: Path[])
-    // private path: Path[];
+    constructor(arg0: Path)
+    // private path: Path;
     accept(arg0: File): boolean;
     accept(arg0: File, arg1: string): boolean;
-    accept(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
+    accept(arg0: Path, arg1: BasicFileAttributes): FileVisitResult;
 }

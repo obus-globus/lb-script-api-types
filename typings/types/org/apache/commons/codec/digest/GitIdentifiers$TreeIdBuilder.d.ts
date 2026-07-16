@@ -17,5 +17,5 @@ export class GitIdentifiers$TreeIdBuilder extends Object implements Supplier<num
     // private addFile(arg0: GitIdentifiers$FileMode, arg1: string, arg2: () => number[]): void;
     addSymbolicLink(arg0: string, arg1: string): void;
     get(): number[];
-    // private populate(arg0: Path[]): GitIdentifiers$TreeIdBuilder;
+    // private populate(arg0: Path): GitIdentifiers$TreeIdBuilder;
 }

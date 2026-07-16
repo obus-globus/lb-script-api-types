@@ -12,10 +12,10 @@ export class CleaningPathVisitor extends CountingPathVisitor {
     constructor(arg0: Counters$PathCounters, arg1: DeleteOption[], ...arg2: string[])
     // private overrideReadOnly: boolean;
     // private skip: string[];
-    // private accept(arg0: Path[]): boolean;
-    accept(arg0: Path[], arg1: BasicFileAttributes): boolean;
+    // private accept(arg0: Path): boolean;
+    accept(arg0: Path, arg1: BasicFileAttributes): boolean;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
-    preVisitDirectory(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
-    visitFile(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
+    preVisitDirectory(arg0: Path, arg1: BasicFileAttributes): FileVisitResult;
+    visitFile(arg0: Path, arg1: BasicFileAttributes): FileVisitResult;
 }

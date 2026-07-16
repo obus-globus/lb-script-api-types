@@ -14,10 +14,10 @@ import type { DataFixTypes } from '../../../../../net/minecraft/util/datafix/Dat
 import type { SavedData } from '../../../../../net/minecraft/world/level/saveddata/SavedData.d.ts'
 import type { SavedDataType } from '../../../../../net/minecraft/world/level/saveddata/SavedDataType.d.ts'
 export class SavedDataStorage extends Object implements AutoCloseable {
-    constructor(dataFolder: Path[], fixerUpper: DataFixer, registries: HolderLookup$Provider)
+    constructor(dataFolder: Path, fixerUpper: DataFixer, registries: HolderLookup$Provider)
     // private cache: Map<SavedDataType<any>, Optional<SavedData>>;
     // private closed: boolean;
-    // private dataFolder: Path[];
+    // private dataFolder: Path;
     // private fixerUpper: DataFixer;
     // private pendingWriteFuture: CompletableFuture<Object>;
     // private registries: HolderLookup$Provider;
@@ -26,10 +26,10 @@ export class SavedDataStorage extends Object implements AutoCloseable {
     computeIfAbsent<T extends SavedData>(type: SavedDataType<T>): T;
     // private encodeUnchecked<T extends SavedData>(type: SavedDataType<T>, data: SavedData, ops: RegistryOps<Tag>): CompoundTag;
     get<T extends SavedData>(type: SavedDataType<T>): T;
-    // private getDataFile(id: Identifier): Path[];
+    // private getDataFile(id: Identifier): Path;
     // private isGzip(inputStream: PushbackInputStream): boolean;
     // private readSavedData<T extends SavedData>(type: SavedDataType<T>): T;
-    readTagFromDisk(dataFile: Path[], type: DataFixTypes, newVersion: number): CompoundTag;
+    readTagFromDisk(dataFile: Path, type: DataFixTypes, newVersion: number): CompoundTag;
     saveAndJoin(): void;
     scheduleSave(): CompletableFuture<Object>;
     set<T extends SavedData>(type: SavedDataType<T>, data: T): void;

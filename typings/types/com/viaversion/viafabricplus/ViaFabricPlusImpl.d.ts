@@ -29,7 +29,7 @@ export class ViaFabricPlusImpl extends Object implements ViaFabricPlusBase {
     readonly implVersion: string;
     // private loadingFuture: CompletableFuture<void>;
     readonly logger: Logger;
-    readonly path: Path[];
+    readonly path: Path;
     readonly version: string;
     addSettingGroup(arg0: SettingGroup): void;
     apiVersion(): number;
@@ -39,7 +39,7 @@ export class ViaFabricPlusImpl extends Object implements ViaFabricPlusBase {
     getImplVersion(): string;
     getLogger(): Logger;
     getMaxChatLength(arg0: ProtocolVersion): number;
-    getPath(): Path[];
+    getPath(): Path;
     getPlayNetworkUserConnection(): UserConnection;
     getServerVersion(arg0: ServerData): ProtocolVersion;
     getSettingGroup(arg0: string): SettingGroup;

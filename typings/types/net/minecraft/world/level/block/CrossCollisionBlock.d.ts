@@ -40,7 +40,7 @@ export abstract class CrossCollisionBlock extends Block implements ICrossCollisi
     static INDESTRUCTIBLE: number;
     static INSTANT: number;
     static NORTH: BooleanProperty;
-    static PROPERTY_BY_DIRECTION: { [key in Direction]: BooleanProperty };
+    static PROPERTY_BY_DIRECTION: Map<Direction, BooleanProperty>;
     static SOUTH: BooleanProperty;
     static UPDATE_ALL: number;
     static UPDATE_ALL_IMMEDIATE: number;

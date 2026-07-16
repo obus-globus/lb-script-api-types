@@ -33,7 +33,7 @@ export class Context$Builder extends Object {
     // private allowNativeAccess: boolean;
     // private allowValueSharing: boolean;
     // private arguments: { [key: string]: string[] };
-    // private currentWorkingDirectory: Path[];
+    // private currentWorkingDirectory: Path;
     // private customFileSystem: FileSystem;
     // private customLogHandler: Object;
     // private environment: { [key: string]: string };
@@ -73,7 +73,7 @@ export class Context$Builder extends Object {
     apply(action: (param0: Context$Builder) => void): Context$Builder;
     arguments(language: string, args: string[]): Context$Builder;
     build(): Context;
-    currentWorkingDirectory(workingDirectory: Path[]): Context$Builder;
+    currentWorkingDirectory(workingDirectory: Path): Context$Builder;
     engine(engine: Engine): Context$Builder;
     environment(name: string, value: string): Context$Builder;
     environment(env: { [key: string]: string }): Context$Builder;

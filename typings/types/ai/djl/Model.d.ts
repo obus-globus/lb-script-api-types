@@ -25,7 +25,7 @@ export interface Model extends AutoCloseable, Object {
     getArtifactNames(): string[];
     getBlock(): Block;
     getDataType(): DataType;
-    getModelPath(): Path[];
+    getModelPath(): Path;
     getNDManager(): NDManager;
     getName(): string;
     getProperties(): { [key: string]: string };
@@ -34,15 +34,15 @@ export interface Model extends AutoCloseable, Object {
     intProperty(arg0: string, arg1: number): number;
     load(arg0: InputStream): void;
     load(arg0: InputStream, arg1: { [key: string]: Object | null }): void;
-    load(arg0: Path[]): void;
-    load(arg0: Path[], arg1: string): void;
-    load(arg0: Path[], arg1: string, arg2: { [key: string]: Object | null }): void;
+    load(arg0: Path): void;
+    load(arg0: Path, arg1: string): void;
+    load(arg0: Path, arg1: string, arg2: { [key: string]: Object | null }): void;
     longProperty(arg0: string, arg1: number): number;
     newPredictor<I extends unknown, O extends unknown>(arg0: Translator<I, O>): Predictor<I, O>;
     newPredictor<I extends unknown, O extends unknown>(arg0: Translator<I, O>, arg1: Device): Predictor<I, O>;
     newTrainer(arg0: TrainingConfig): Trainer;
     quantize(): void;
-    save(arg0: Path[], arg1: string): void;
+    save(arg0: Path, arg1: string): void;
     setBlock(arg0: Block): void;
     setDataType(arg0: DataType): void;
     setProperty(arg0: string, arg1: string): void;

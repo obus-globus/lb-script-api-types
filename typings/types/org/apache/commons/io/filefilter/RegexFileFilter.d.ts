@@ -11,14 +11,14 @@ import type { AbstractFileFilter } from '../../../../../org/apache/commons/io/fi
 export class RegexFileFilter extends AbstractFileFilter implements Serializable {
     static EMPTY_STRING_ARRAY: (Object | null)[];
     constructor(arg0: Pattern)
-    constructor(arg0: Pattern, arg1: (param0: Path[]) => string)
+    constructor(arg0: Pattern, arg1: (param0: Path) => string)
     constructor(arg0: string)
     constructor(arg0: string, arg1: number)
     constructor(arg0: string, arg1: IOCase)
-    // private pathToString: (param0: Path[]) => string;
+    // private pathToString: (param0: Path) => string;
     // private pattern: Pattern;
     accept(arg0: File): boolean;
     accept(arg0: File, arg1: string): boolean;
-    accept(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
+    accept(arg0: Path, arg1: BasicFileAttributes): FileVisitResult;
     toString(): string;
 }

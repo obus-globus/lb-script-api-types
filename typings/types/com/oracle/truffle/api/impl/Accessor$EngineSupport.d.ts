@@ -139,7 +139,7 @@ export abstract class Accessor$EngineSupport extends Accessor$Support {
     getEngineLogHandler(polyglotEngineImpl: Object): AbstractPolyglotImpl$LogHandler;
     getEngineOptionValues(polyglotEngine: Object): OptionValues;
     getEngineOut(engine: Object): DispatchOutputStream;
-    getEngineResource(polyglotEngine: Object, resourceId: string): Path[];
+    getEngineResource(polyglotEngine: Object, resourceId: string): Path;
     getEngineSandboxPolicy(polyglotInstrument: Object): SandboxPolicy;
     getEnvForInstrument(language: LanguageInfo): TruffleLanguage$Env;
     getEnvForInstrument(languageId: string, mimeType: string): TruffleLanguage$Env;

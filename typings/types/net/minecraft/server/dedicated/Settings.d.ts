@@ -5,7 +5,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { RegistryAccess } from '../../../../net/minecraft/core/RegistryAccess.d.ts'
 import type { Settings$MutableValue } from '../../../../net/minecraft/server/dedicated/Settings$MutableValue.d.ts'
 export abstract class Settings<T extends Settings<T>> extends Object {
-    static loadFromFile(paramfile: Path[][]): { [key: string]: any };
+    static loadFromFile(paramfile: Path): { [key: string]: any };
     constructor(properties: { [key: string]: any })
     // private properties: { [key: string]: any };
     cloneProperties(): { [key: string]: any };
@@ -26,5 +26,5 @@ export abstract class Settings<T extends Settings<T>> extends Object {
     getMutable(key: string, defaultValue: string): Settings$MutableValue<Object>;
     // private getStringRaw(key: string): string;
     reload(registryAccess: RegistryAccess, properties: { [key: string]: any }): T;
-    store(output: Path[]): void;
+    store(output: Path): void;
 }

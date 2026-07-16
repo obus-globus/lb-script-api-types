@@ -18,9 +18,9 @@ export class Orientation extends Object {
     readonly sideBias: Orientation$SideBias;
     readonly up: Direction;
     // private verticalNeighbors: Direction[];
-    // private withFront: { [key in Direction]: Orientation };
-    // private withSideBias: { [key in Orientation$SideBias]: Orientation };
-    // private withUp: { [key in Direction]: Orientation };
+    // private withFront: Map<Direction, Orientation>;
+    // private withSideBias: Map<Orientation$SideBias, Orientation>;
+    // private withUp: Map<Direction, Orientation>;
     getDirections(): Direction[];
     getFront(): Direction;
     getHorizontalDirections(): Direction[];

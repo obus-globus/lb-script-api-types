@@ -56,5 +56,5 @@ export class NativeImage extends Object implements AutoCloseable, NativeImageAcc
     untrack(): void;
     writeToChannel(output: WritableByteChannel): boolean;
     writeToFile(file: File): void;
-    writeToFile(file: Path[]): void;
+    writeToFile(file: Path): void;
 }

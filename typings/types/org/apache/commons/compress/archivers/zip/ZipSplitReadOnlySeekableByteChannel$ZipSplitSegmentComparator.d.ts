@@ -7,7 +7,7 @@ import type { ToIntFunction } from '../../../../../../java/util/function/ToIntFu
 import type { ToLongFunction } from '../../../../../../java/util/function/ToLongFunction.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../../../java/lang/Comparable.d.ts'
-export class ZipSplitReadOnlySeekableByteChannel$ZipSplitSegmentComparator extends Object implements Serializable, Comparator<Path[]> {
+export class ZipSplitReadOnlySeekableByteChannel$ZipSplitSegmentComparator extends Object implements Serializable, Comparator<Path> {
     static comparing(paramarg0: (param0: Object) => Object | null): (param0: Object) => boolean;
     static comparing(paramarg0: (param0: Object) => Object | null, paramarg1: (param0: Object) => boolean): (param0: Object) => boolean;
     static comparingDouble(paramarg0: (param0: Object) => number): (param0: Object) => boolean;
@@ -18,12 +18,12 @@ export class ZipSplitReadOnlySeekableByteChannel$ZipSplitSegmentComparator exten
     static nullsLast(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static reverseOrder(): (param0: Object) => boolean;
     constructor(arg0: any)
-    compare(arg0: Path[], arg1: Path[]): number;
+    compare(arg0: Path, arg1: Path): number;
     reversed(): (param0: Object) => boolean;
     thenComparing(arg0: (param0: Object) => boolean): (param0: Object) => boolean;
-    thenComparing<U extends Comparable<U>>(arg0: (param0: Path[]) => U): (param0: Object) => boolean;
-    thenComparing<U extends unknown>(arg0: (param0: Path[]) => U, arg1: (param0: Object) => boolean): (param0: Object) => boolean;
-    thenComparingDouble(arg0: (param0: Path[]) => number): (param0: Object) => boolean;
-    thenComparingInt(arg0: (param0: Path[]) => number): (param0: Object) => boolean;
-    thenComparingLong(arg0: (param0: Path[]) => number): (param0: Object) => boolean;
+    thenComparing<U extends Comparable<U>>(arg0: (param0: Path) => U): (param0: Object) => boolean;
+    thenComparing<U extends unknown>(arg0: (param0: Path) => U, arg1: (param0: Object) => boolean): (param0: Object) => boolean;
+    thenComparingDouble(arg0: (param0: Path) => number): (param0: Object) => boolean;
+    thenComparingInt(arg0: (param0: Path) => number): (param0: Object) => boolean;
+    thenComparingLong(arg0: (param0: Path) => number): (param0: Object) => boolean;
 }

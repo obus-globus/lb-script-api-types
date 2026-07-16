@@ -16,5 +16,5 @@ export class RUnpackExtractor extends ParsingEmbeddedDocumentExtractor {
     parseEmbedded(arg0: InputStream, arg1: ContentHandler, arg2: Metadata, arg3: boolean): void;
     // private parseWithBytes(arg0: TikaInputStream, arg1: ContentHandler, arg2: Metadata): void;
     setEmbeddedBytesSelector(arg0: EmbeddedBytesSelector): void;
-    // private storeEmbeddedBytes(arg0: Path[], arg1: Metadata): void;
+    // private storeEmbeddedBytes(arg0: Path, arg1: Metadata): void;
 }

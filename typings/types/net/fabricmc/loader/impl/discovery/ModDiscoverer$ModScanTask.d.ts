@@ -26,16 +26,16 @@ export class ModDiscoverer$ModScanTask extends RecursiveTask<ModCandidateImpl> {
     static invokeAll(paramarg0: (Object | null)[]): (Object | null)[];
     static invokeAll(paramarg0: ForkJoinTask<Object>, paramarg1: ForkJoinTask<Object>): void;
     static invokeAll(paramarg0: Object | null): void;
-    constructor(null_: ModDiscoverer, arg1: Path[][], arg2: boolean)
+    constructor(null_: ModDiscoverer, arg1: Path[], arg2: boolean)
     // private hash: number;
     // private is: ModDiscoverer$RewindableInputStream;
     // private localPath: string;
     // private parentPaths: string[];
-    // private paths: Path[][];
+    // private paths: Path[];
     // private requiresRemap: boolean;
     compute(): ModCandidateImpl;
-    // private computeDir(arg0: Path[]): ModCandidateImpl;
-    // private computeJarFile(arg0: Path[]): ModCandidateImpl;
+    // private computeDir(arg0: Path): ModCandidateImpl;
+    // private computeJarFile(arg0: Path): ModCandidateImpl;
     // private computeJarStream(): ModCandidateImpl;
     // private computeNestedMods(arg0: ModDiscoverer$ZipEntrySource): ModDiscoverer$ModScanTask[];
     // private parseMetadata(arg0: InputStream, arg1: string): LoaderModMetadata;

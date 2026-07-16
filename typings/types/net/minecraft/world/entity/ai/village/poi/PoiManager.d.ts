@@ -34,7 +34,7 @@ import type { SectionStorage } from '../../../../../../../net/minecraft/world/le
 export class PoiManager extends SectionStorage<PoiSection, PoiSection$Packed> implements PointOfInterestStorageExtended, RegionBasedStorageSectionExtended<Object> {
     static MAX_VILLAGE_DISTANCE: number;
     static VILLAGE_SECTION_SIZE: number;
-    constructor(info: RegionStorageInfo, folder: Path[], fixerUpper: DataFixer, sync: boolean, registryAccess: RegistryAccess, errorReporter: ChunkIOErrorReporter, levelHeightAccessor: LevelHeightAccessor)
+    constructor(info: RegionStorageInfo, folder: Path, fixerUpper: DataFixer, sync: boolean, registryAccess: RegistryAccess, errorReporter: ChunkIOErrorReporter, levelHeightAccessor: LevelHeightAccessor)
     // private distanceTracker: PoiManager$DistanceTracker;
     // private loadedChunks: (Object | null)[];
     // private preloadRadius: number;

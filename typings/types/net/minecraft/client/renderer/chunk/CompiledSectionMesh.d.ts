@@ -13,12 +13,12 @@ export class CompiledSectionMesh extends Object implements SectionMesh {
     static EMPTY: SectionMesh;
     static UNCOMPILED: SectionMesh;
     constructor(translucencyPointOfView: TranslucencyPointOfView, results: SectionCompiler$Results)
-    // private draws: { [key in ChunkSectionLayer]: SectionMesh$SectionDraw };
-    readonly indexBufferUploaded: { [key in ChunkSectionLayer]: AtomicBoolean };
+    // private draws: Map<ChunkSectionLayer, SectionMesh$SectionDraw>;
+    readonly indexBufferUploaded: Map<ChunkSectionLayer, AtomicBoolean>;
     readonly renderableBlockEntities: BlockEntity[];
     readonly translucencyPointOfView: TranslucencyPointOfView;
     readonly transparencyState: MeshData$SortState;
-    readonly vertexBufferUploaded: { [key in ChunkSectionLayer]: AtomicBoolean };
+    readonly vertexBufferUploaded: Map<ChunkSectionLayer, AtomicBoolean>;
     // private visibilitySet: VisibilitySet;
     close(): void;
     facesCanSeeEachother(direction1: Direction, direction2: Direction): boolean;

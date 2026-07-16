@@ -18,13 +18,13 @@ export class ArArchiveOutputStream extends ArchiveOutputStream<ArArchiveEntry> {
     close(): void;
     closeArchiveEntry(): void;
     createArchiveEntry(arg0: File, arg1: string): ArArchiveEntry;
-    createArchiveEntry(arg0: Path[], arg1: string, ...arg2: LinkOption[]): ArArchiveEntry;
+    createArchiveEntry(arg0: Path, arg1: string, ...arg2: LinkOption[]): ArArchiveEntry;
     finish(): void;
     // private pad(arg0: number, arg1: number, arg2: string): number;
     putArchiveEntry(arg0: ArArchiveEntry): void;
     setLongFileMode(arg0: number): void;
     write(arg0: File): number;
-    write(arg0: Path[]): number;
+    write(arg0: Path): number;
     write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;

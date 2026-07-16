@@ -49,7 +49,7 @@ export class ModuleInventoryCleaner extends ClientModule {
     // private /*not mapped: */ getSlotItem8(): ItemSortChoice;
     // private slotItem9: ItemSortChoice;
     // private /*not mapped: */ getSlotItem9(): ItemSortChoice;
-    // private buildSlotTargetMap(): { [key in HotbarItemSlot]: ItemSortChoice };
+    // private buildSlotTargetMap(): Map<HotbarItemSlot, ItemSortChoice>;
     // private processHotbarSwaps(event: ScheduleInventoryActionEvent, cleanupPlan: InventoryCleanupPlan): boolean;
     // private processItemDisposal(event: ScheduleInventoryActionEvent, cleanupPlan: InventoryCleanupPlan, currentInventorySlots: ItemSlot[]): boolean;
     // private processStackMerging(event: ScheduleInventoryActionEvent, cleanupPlan: InventoryCleanupPlan): boolean;

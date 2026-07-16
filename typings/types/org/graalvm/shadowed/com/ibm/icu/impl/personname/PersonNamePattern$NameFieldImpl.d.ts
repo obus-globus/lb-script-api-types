@@ -8,7 +8,7 @@ import type { PersonName$NameField } from '../../../../../../../../org/graalvm/s
 export class PersonNamePattern$NameFieldImpl extends Object implements PersonNamePattern$Element {
     constructor(fieldNameAndModifiers: string, formatterImpl: PersonNameFormatterImpl)
     // private fieldID: PersonName$NameField;
-    // private modifiers: { [key in PersonName$FieldModifier]: FieldModifierImpl };
+    // private modifiers: Map<PersonName$FieldModifier, FieldModifierImpl>;
     format(name: PersonName): string;
     isLiteral(): boolean;
     isPopulated(name: PersonName): boolean;

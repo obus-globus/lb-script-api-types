@@ -26,7 +26,7 @@ export class ServerPackManager extends Object {
     // private onDownload(data: ServerPackManager$ServerPackData[], result: DownloadQueue$BatchResult): void;
     popAll(): void;
     popPack(id: UUID): void;
-    pushLocalPack(id: UUID, path: Path[]): void;
+    pushLocalPack(id: UUID, path: Path): void;
     // private pushNewPack(id: UUID, pack: ServerPackManager$ServerPackData): void;
     pushPack(id: UUID, url: URL, hash: HashCode): void;
     // private registerForUpdate(): void;

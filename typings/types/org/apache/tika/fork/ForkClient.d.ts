@@ -11,8 +11,8 @@ import type { ParserFactoryFactory } from '../../../../org/apache/tika/fork/Pars
 import type { TimeoutLimits } from '../../../../org/apache/tika/fork/TimeoutLimits.d.ts'
 export class ForkClient extends Object {
     constructor(arg0: ClassLoader, arg1: Object, arg2: string[], arg3: TimeoutLimits)
-    constructor(arg0: Path[], arg1: ParserFactoryFactory, arg2: ClassLoader, arg3: string[], arg4: TimeoutLimits)
-    constructor(arg0: Path[], arg1: ParserFactoryFactory, arg2: string[], arg3: TimeoutLimits)
+    constructor(arg0: Path, arg1: ParserFactoryFactory, arg2: ClassLoader, arg3: string[], arg4: TimeoutLimits)
+    constructor(arg0: Path, arg1: ParserFactoryFactory, arg2: string[], arg3: TimeoutLimits)
     readonly filesProcessed: number;
     readonly id: number;
     // private input: DataInputStream;

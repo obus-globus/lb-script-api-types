@@ -25,5 +25,5 @@ export interface JvmProfiler extends Object {
     onStructureGenerate(sourceChunkPos: ChunkPos, dimension: ResourceKey<Level>, structure: Holder<Structure>): (param0: boolean) => void;
     onWorldLoadedStarted(): (param0: boolean) => void;
     start(environment: Environment): boolean;
-    stop(): Path[];
+    stop(): Path;
 }

@@ -10,5 +10,5 @@ export interface ProfileResults extends Object{
     getStartTimeTicks(): number;
     getTickDuration(): number;
     getTimes(path: string): ResultField[];
-    saveResults(file: Path[]): boolean;
+    saveResults(file: Path): boolean;
 }

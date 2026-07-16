@@ -4,7 +4,7 @@ import type { LevelSummary } from '../../../../../net/minecraft/world/level/stor
 export class LevelSummary$CorruptedLevelSummary extends LevelSummary {
     static PLAY_WORLD: Component;
     static UPGRADE_AND_PLAY_WORLD: Component;
-    constructor(levelId: string, icon: Path[], lastPlayed: number)
+    constructor(levelId: string, icon: Path, lastPlayed: number)
     readonly lastPlayed: number;
     canEdit(): boolean;
     canRecreate(): boolean;

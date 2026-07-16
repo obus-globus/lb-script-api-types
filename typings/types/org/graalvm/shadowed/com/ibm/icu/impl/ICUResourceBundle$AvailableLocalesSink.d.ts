@@ -4,7 +4,7 @@ import type { UResource$Value } from '../../../../../../../org/graalvm/shadowed/
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
 import type { ULocale$AvailableType } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale$AvailableType.d.ts'
 export class ICUResourceBundle$AvailableLocalesSink extends UResource$Sink {
-    constructor(output: { [key in ULocale$AvailableType]: ULocale[] })
-    // private output: { [key in ULocale$AvailableType]: ULocale[] };
+    constructor(output: Map<ULocale$AvailableType, ULocale[]>)
+    // private output: Map<ULocale$AvailableType, ULocale[]>;
     put(key: UResource$Key, value: UResource$Value, noFallback: boolean): void;
 }

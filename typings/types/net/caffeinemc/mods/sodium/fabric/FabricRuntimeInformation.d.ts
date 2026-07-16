@@ -5,8 +5,8 @@ export class FabricRuntimeInformation extends Object implements PlatformRuntimeI
     static INSTANCE: PlatformRuntimeInformation;
     static getInstance(): PlatformRuntimeInformation;
     constructor()
-    getConfigDirectory(): Path[];
-    getGameDirectory(): Path[];
+    getConfigDirectory(): Path;
+    getGameDirectory(): Path;
     isDevelopmentEnvironment(): boolean;
     isModInLoadingList(arg0: string): boolean;
     platformHasEarlyLoadingScreen(): boolean;

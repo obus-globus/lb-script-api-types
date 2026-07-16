@@ -36,7 +36,7 @@ export class ShaderProperties extends Object {
     readonly conditionallyEnabledPrograms: { [key: string]: string };
     // private customTexAmount: number;
     readonly customTexturePatching: Map<Tri<string, TextureType, TextureStage>, string>;
-    readonly customTextures: { [key in TextureStage]: { [key: string]: TextureDefinition } };
+    readonly customTextures: Map<TextureStage, { [key: string]: TextureDefinition }>;
     readonly customUniforms: CustomUniforms$Builder;
     // private dhCloudSetting: CloudSetting;
     readonly dhShadowEnabled: OptionalBoolean;
@@ -100,7 +100,7 @@ export class ShaderProperties extends Object {
     getConcurrentCompute(): OptionalBoolean;
     getConditionallyEnabledPrograms(): { [key: string]: string };
     getCustomTexturePatching(): Map<Tri<string, TextureType, TextureStage>, string>;
-    getCustomTextures(): { [key in TextureStage]: { [key: string]: TextureDefinition } };
+    getCustomTextures(): Map<TextureStage, { [key: string]: TextureDefinition }>;
     getCustomUniforms(): CustomUniforms$Builder;
     getDHCloudSetting(): CloudSetting;
     getDhShadowEnabled(): OptionalBoolean;

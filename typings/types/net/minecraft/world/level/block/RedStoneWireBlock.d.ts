@@ -45,7 +45,7 @@ export class RedStoneWireBlock extends Block {
     static INSTANT: number;
     static NORTH: EnumProperty<RedstoneSide>;
     static POWER: IntegerProperty;
-    static PROPERTY_BY_DIRECTION: { [key in Direction]: EnumProperty<RedstoneSide> };
+    static PROPERTY_BY_DIRECTION: Map<Direction, EnumProperty<RedstoneSide>>;
     static SOUTH: EnumProperty<RedstoneSide>;
     static UPDATE_ALL: number;
     static UPDATE_ALL_IMMEDIATE: number;

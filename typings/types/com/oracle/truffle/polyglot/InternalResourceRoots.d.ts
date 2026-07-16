@@ -7,7 +7,7 @@ export class InternalResourceRoots extends Object {
     private constructor()
     // private roots: InternalResourceRoots$Root[];
     // private ensureInitialized(): void;
-    findInternalResource(hostPath: Path[]): InternalResourceCache;
-    findRoot(hostPath: Path[]): InternalResourceRoots$Root;
+    findInternalResource(hostPath: Path): InternalResourceCache;
+    findRoot(hostPath: Path): InternalResourceRoots$Root;
     patch(engine: PolyglotEngineImpl): boolean;
 }

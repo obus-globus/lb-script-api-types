@@ -9,7 +9,7 @@ import type { Action } from '../../../../../net/minecraft/server/dialog/action/A
 import type { Action$ValueGetter } from '../../../../../net/minecraft/server/dialog/action/Action$ValueGetter.d.ts'
 export class StaticAction extends Record implements Action {
     static CODEC: Codec<Action>;
-    static WRAPPED_CODECS: { [key in ClickEvent$Action]: MapCodec<StaticAction> };
+    static WRAPPED_CODECS: Map<ClickEvent$Action, MapCodec<StaticAction>>;
     constructor(value: ClickEvent)
     // private value: ClickEvent;
     codec(): MapCodec<StaticAction>;

@@ -8,5 +8,5 @@ export class AbstractOrigin$URIOrigin extends AbstractOrigin<URI, AbstractOrigin
     constructor(arg0: URI)
     getFile(): File;
     getInputStream(...arg0: OpenOption[]): InputStream;
-    getPath(): Path[];
+    getPath(): Path;
 }

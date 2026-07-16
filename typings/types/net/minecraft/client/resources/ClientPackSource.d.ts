@@ -13,11 +13,11 @@ export class ClientPackSource extends BuiltInPackSource {
     static HIGH_CONTRAST_PACK: string;
     static TESTS_ID: string;
     static VANILLA_ID: string;
-    constructor(externalAssetSource: Path[], validator: DirectoryValidator)
-    // private externalAssetDir: Path[];
+    constructor(externalAssetSource: Path, validator: DirectoryValidator)
+    // private externalAssetDir: Path;
     createBuiltinPack(id: string, resources: Pack$ResourcesSupplier, name: Component): Pack;
     createVanillaPack(resources: PackResources): Pack;
-    // private findExplodedAssetPacks(externalAssetSource: Path[]): Path[];
+    // private findExplodedAssetPacks(externalAssetSource: Path): Path;
     getPackTitle(id: string): Component;
     populatePackList(discoveredPacks: (param0: string, param1: (param0: string) => Pack) => void): void;
 }

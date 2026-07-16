@@ -12,7 +12,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export class ServingTranslatorFactory extends Object implements TranslatorFactory {
     constructor()
     // private detectTranslatorFactory(arg0: { [key: string]: Object | null }): string;
-    // private findTranslator(arg0: Path[], arg1: string): ServingTranslator;
+    // private findTranslator(arg0: Path, arg1: string): ServingTranslator;
     // private getServingTranslator(arg0: string, arg1: Model, arg2: { [key: string]: Object | null }): Translator<Input, Output>;
     getSupportedTypes(): Pair<Type, Type>[];
     isSupported(arg0: Class<Object>, arg1: Class<Object>): boolean;

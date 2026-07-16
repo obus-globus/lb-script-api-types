@@ -19,7 +19,7 @@ export class FramedSnappyCompressorOutputStream extends CompressorOutputStream<O
     finish(): void;
     // private flushBuffer(): void;
     write(arg0: File): number;
-    write(arg0: Path[]): number;
+    write(arg0: Path): number;
     write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;

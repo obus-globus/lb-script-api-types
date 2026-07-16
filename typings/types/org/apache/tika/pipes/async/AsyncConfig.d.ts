@@ -10,7 +10,7 @@ export class AsyncConfig extends PipesConfigBase {
     static DEFAULT_STALE_FETCHER_TIMEOUT_SECONDS: number;
     static DEFAULT_STARTUP_TIMEOUT_MILLIS: number;
     static DEFAULT_TIMEOUT_MILLIS: number;
-    static load(paramarg0: Path[][]): AsyncConfig;
+    static load(paramarg0: Path): AsyncConfig;
     constructor()
     readonly emitIntermediateResults: boolean;
     readonly emitMaxEstimatedBytes: number;

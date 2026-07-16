@@ -8,7 +8,7 @@ import type { DataGenerator$PackGenerator } from '../../../../../../net/minecraf
 import type { DataGenerator$Uncached } from '../../../../../../net/minecraft/data/DataGenerator$Uncached.d.ts'
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
 export class FabricDataGenerator extends DataGenerator$Uncached {
-    constructor(arg0: Path[], arg1: ModContainer, arg2: boolean, arg3: CompletableFuture<HolderLookup$Provider>)
+    constructor(arg0: Path, arg1: ModContainer, arg2: boolean, arg3: CompletableFuture<HolderLookup$Provider>)
     // private fabricOutput: FabricPackOutput;
     readonly modContainer: ModContainer;
     // private registriesFuture: CompletableFuture<HolderLookup$Provider>;

@@ -15,15 +15,15 @@ export class DeferredFileOutputStream extends ThresholdingOutputStream {
     constructor(arg0: DeferredFileOutputStream$Builder, arg1: any)
     // private closed: boolean;
     // private currentOutputStream: OutputStream;
-    // private directory: Path[];
+    // private directory: Path;
     // private memoryOutputStream: ByteArrayOutputStream;
-    // private outputPath: Path[];
+    // private outputPath: Path;
     // private prefix: string;
     // private suffix: string;
     close(): void;
     getData(): number[];
     getFile(): File;
-    getPath(): Path[];
+    getPath(): Path;
     getStream(): OutputStream;
     isInMemory(): boolean;
     thresholdReached(): void;

@@ -12,6 +12,6 @@ export class SymbolicLinkFileFilter extends AbstractFileFilter implements Serial
     constructor(arg0: FileVisitResult, arg1: FileVisitResult)
     accept(arg0: File): boolean;
     accept(arg0: File, arg1: string): boolean;
-    accept(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
-    isSymbolicLink(arg0: Path[]): boolean;
+    accept(arg0: Path, arg1: BasicFileAttributes): FileVisitResult;
+    isSymbolicLink(arg0: Path): boolean;
 }

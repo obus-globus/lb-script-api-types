@@ -27,7 +27,7 @@ export class ExternalParser extends Object implements Initializable, Parser {
     checkInitialization(arg0: InitializableProblemHandler): void;
     getOutputParser(): Parser;
     getSupportedTypes(arg0: ParseContext): MediaType[];
-    // private handleOutput(arg0: FileProcessResult, arg1: Path[], arg2: XHTMLContentHandler, arg3: Metadata, arg4: ParseContext): void;
+    // private handleOutput(arg0: FileProcessResult, arg1: Path, arg2: XHTMLContentHandler, arg3: Metadata, arg4: ParseContext): void;
     initialize(arg0: { [key: string]: Param<Object> }): void;
     parse(arg0: InputStream, arg1: ContentHandler, arg2: Metadata, arg3: ParseContext): void;
     setCommandLine(arg0: string[]): void;

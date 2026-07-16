@@ -100,8 +100,8 @@ export abstract class BaseNDManager extends Object implements NDManager {
     linspace(arg0: number, arg1: number, arg2: number): NDArray;
     linspace(arg0: number, arg1: number, arg2: number, arg3: boolean): NDArray;
     linspace(arg0: number, arg1: number, arg2: number, arg3: boolean, arg4: Device): NDArray;
-    load(arg0: Path[]): (Object | null)[];
-    load(arg0: Path[], arg1: Device): (Object | null)[];
+    load(arg0: Path): (Object | null)[];
+    load(arg0: Path, arg1: Device): (Object | null)[];
     newSubManager(): NDManager;
     newSubManager(arg0: Device): NDManager;
     ones(arg0: Shape): NDArray;

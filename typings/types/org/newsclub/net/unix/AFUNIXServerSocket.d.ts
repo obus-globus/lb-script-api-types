@@ -9,7 +9,7 @@ import type { AFUNIXSocket } from '../../../../org/newsclub/net/unix/AFUNIXSocke
 import type { AFUNIXSocketAddress } from '../../../../org/newsclub/net/unix/AFUNIXSocketAddress.d.ts'
 export class AFUNIXServerSocket extends AFServerSocket<AFUNIXSocketAddress> {
     static bindOn(paramarg0: File, paramarg1: boolean): AFUNIXServerSocket;
-    static bindOn(paramarg0: Path[][], paramarg1: boolean): AFUNIXServerSocket;
+    static bindOn(paramarg0: Path, paramarg1: boolean): AFUNIXServerSocket;
     static bindOn(paramarg0: AFUNIXSocketAddress): AFUNIXServerSocket;
     static bindOn(paramarg0: AFUNIXSocketAddress, paramarg1: boolean): AFUNIXServerSocket;
     static forceBindOn(paramarg0: AFUNIXSocketAddress): AFUNIXServerSocket;

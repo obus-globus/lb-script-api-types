@@ -8,8 +8,8 @@ import type { RegionFile } from '../../../../../../net/minecraft/world/level/chu
 import type { RegionStorageInfo } from '../../../../../../net/minecraft/world/level/chunk/storage/RegionStorageInfo.d.ts'
 export class RegionFileStorage extends Object implements AutoCloseable {
     static ANVIL_EXTENSION: string;
-    constructor(info: RegionStorageInfo, folder: Path[], sync: boolean)
-    // private folder: Path[];
+    constructor(info: RegionStorageInfo, folder: Path, sync: boolean)
+    // private folder: Path;
     // private info: RegionStorageInfo;
     // private regionCache: { [key: string]: any };
     // private sync: boolean;

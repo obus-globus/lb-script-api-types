@@ -3,13 +3,13 @@ import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
 export class IrisConfig extends Object {
-    constructor(arg0: Path[], arg1: Path[])
+    constructor(arg0: Path, arg1: Path)
     // private allowUnknownShaders: boolean;
     // private disableUpdateMessage: boolean;
     // private enableDebugOptions: boolean;
     // private enableShaders: boolean;
-    // private excludedPath: Path[];
-    // private propertiesPath: Path[];
+    // private excludedPath: Path;
+    // private propertiesPath: Path;
     readonly shaderPackName: string;
     // private shadersToSkip: Identifier[];
     areDebugOptionsEnabled(): boolean;

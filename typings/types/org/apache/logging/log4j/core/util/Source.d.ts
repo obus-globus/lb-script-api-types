@@ -9,7 +9,7 @@ export class Source extends Object {
     constructor(uri: URI)
     constructor(uri: URI, ignored: number)
     constructor(url: URL)
-    constructor(path: Path[])
+    constructor(path: Path)
     constructor(source: ConfigurationSource)
     readonly file: File;
     readonly location: string;
@@ -17,7 +17,7 @@ export class Source extends Object {
     equals(obj: Object | null): boolean;
     getFile(): File;
     getLocation(): string;
-    getPath(): Path[];
+    getPath(): Path;
     getURI(): URI;
     getURL(): URL;
     hashCode(): number;

@@ -10,12 +10,12 @@ import type { PackSource } from '../../../../../net/minecraft/server/packs/repos
 import type { RepositorySource } from '../../../../../net/minecraft/server/packs/repository/RepositorySource.d.ts'
 import type { DirectoryValidator } from '../../../../../net/minecraft/world/level/validation/DirectoryValidator.d.ts'
 export class FolderRepositorySource extends Object implements RepositorySource {
-    static discoverPacks(paramfolder: Path[][], paramvalidator: DirectoryValidator, paramresult: (param0: Path[][], param1: Pack$ResourcesSupplier) => void): void;
-    constructor(folder: Path[], packType: PackType, packSource: PackSource, validator: DirectoryValidator)
-    // private folder: Path[];
+    static discoverPacks(paramfolder: Path, paramvalidator: DirectoryValidator, paramresult: (param0: Path, param1: Pack$ResourcesSupplier) => void): void;
+    constructor(folder: Path, packType: PackType, packSource: PackSource, validator: DirectoryValidator)
+    // private folder: Path;
     packSource: PackSource;
     // private packType: PackType;
     // private validator: DirectoryValidator;
-    // private createDiscoveredFilePackInfo(content: Path[]): PackLocationInfo;
+    // private createDiscoveredFilePackInfo(content: Path): PackLocationInfo;
     loadPacks(result: (param0: Pack) => void): void;
 }

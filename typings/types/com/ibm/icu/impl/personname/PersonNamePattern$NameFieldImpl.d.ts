@@ -8,7 +8,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class PersonNamePattern$NameFieldImpl extends Object implements PersonNamePattern$Element {
     constructor(arg0: string, arg1: PersonNameFormatterImpl)
     // private fieldID: PersonName$NameField;
-    // private modifiers: { [key in PersonName$FieldModifier]: FieldModifierImpl };
+    // private modifiers: Map<PersonName$FieldModifier, FieldModifierImpl>;
     format(arg0: PersonName): string;
     isLiteral(): boolean;
     isPopulated(arg0: PersonName): boolean;

@@ -35,5 +35,5 @@ export abstract class AbstractPolyglotImpl$AbstractEngineDispatch extends Abstra
     requirePublicLanguage(receiver: Object, id: string): Object;
     setEngineAPIReference(receiver: Object, key: Reference<Engine>): void;
     shutdown(engine: Object): void;
-    storeCache(engineReceiver: Object, targetFile: Path[], cancelledWord: number): boolean;
+    storeCache(engineReceiver: Object, targetFile: Path, cancelledWord: number): boolean;
 }

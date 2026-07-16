@@ -9,6 +9,6 @@ export class ViaBedrockUtilityInterface extends Object {
     static CONFIRM_CHANNEL: string;
     static confirmPresence(paramarg0: UserConnection): void;
     static sendSkin(paramarg0: UserConnection, paramarg1: UUID, paramarg2: SkinData): void;
-    static spawnCustomEntity(paramarg0: UserConnection, paramarg1: UUID, paramarg2: string, paramarg3: { [key in ActorDataIDs]: EntityData }): void;
+    static spawnCustomEntity(paramarg0: UserConnection, paramarg1: UUID, paramarg2: string, paramarg3: Map<ActorDataIDs, EntityData>): void;
     constructor()
 }

@@ -6,7 +6,7 @@ import type { BlockRenderType } from '../../../../net/irisshaders/iris/shaderpac
 import type { NamespacedId } from '../../../../net/irisshaders/iris/shaderpack/materialmap/NamespacedId.d.ts'
 import type { ShaderPackOptions } from '../../../../net/irisshaders/iris/shaderpack/option/ShaderPackOptions.d.ts'
 export class IdMap extends Object {
-    constructor(arg0: Path[], arg1: ShaderPackOptions, arg2: StringPair[])
+    constructor(arg0: Path, arg1: ShaderPackOptions, arg2: StringPair[])
     // private blockPropertiesMap: { [key: string]: any };
     readonly blockRenderTypeMap: Map<NamespacedId, BlockRenderType>;
     // private blockTagMap: { [key: string]: any };

@@ -13,7 +13,7 @@ import type { TrMember$MemberType } from '../../../../../../net/fabricmc/loader/
 import type { TrMethod } from '../../../../../../net/fabricmc/loader/impl/lib/tinyremapper/api/TrMethod.d.ts'
 export class ClassInstance extends Object implements TrClass {
     static getMrjName(paramarg0: string, paramarg1: number): string;
-    constructor(arg0: TinyRemapper, arg1: boolean, arg2: InputTag[], arg3: Path[], arg4: number[])
+    constructor(arg0: TinyRemapper, arg1: boolean, arg2: InputTag[], arg3: Path, arg4: number[])
     readonly access: number;
     // private children: ClassInstance[];
     readonly classVersion: number;
@@ -29,7 +29,7 @@ export class ClassInstance extends Object implements TrClass {
     // private parents: ClassInstance[];
     // private resolvedMembers: { [key: string]: MemberInstance };
     // private signature: string;
-    // private srcPath: Path[];
+    // private srcPath: Path;
     readonly superName: string;
     // private tr: TinyRemapper;
     addInputTags(arg0: InputTag[]): void;

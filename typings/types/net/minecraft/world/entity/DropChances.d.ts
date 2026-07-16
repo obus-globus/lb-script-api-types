@@ -8,9 +8,9 @@ export class DropChances extends Record {
     static DEFAULT_EQUIPMENT_DROP_CHANCE: number;
     static PRESERVE_ITEM_DROP_CHANCE: number;
     static PRESERVE_ITEM_DROP_CHANCE_THRESHOLD: number;
-    constructor(byEquipment: { [key in EquipmentSlot]: number })
-    // private byEquipment: { [key in EquipmentSlot]: number };
-    byEquipment(): { [key in EquipmentSlot]: number };
+    constructor(byEquipment: Map<EquipmentSlot, number>)
+    // private byEquipment: Map<EquipmentSlot, number>;
+    byEquipment(): Map<EquipmentSlot, number>;
     byEquipment(slot: EquipmentSlot): number;
     equals(o: Object | null): boolean;
     hashCode(): number;

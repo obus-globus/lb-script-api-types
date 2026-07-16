@@ -20,7 +20,7 @@ import type { ObjectiveCriteria$RenderType } from '../../../../net/minecraft/wor
 export class Scoreboard extends Object {
     static HIDDEN_SCORE_PREFIX: string;
     constructor()
-    // private displayObjectives: { [key in DisplaySlot]: Objective };
+    // private displayObjectives: Map<DisplaySlot, Objective>;
     // private objectivesByCriteria: Map<ObjectiveCriteria, Objective[]>;
     // private objectivesByName: { [key: string]: Objective };
     // private playerScores: { [key: string]: PlayerScores };
@@ -59,7 +59,7 @@ export class Scoreboard extends Object {
     onTeamAdded(team: PlayerTeam): void;
     onTeamChanged(team: PlayerTeam): void;
     onTeamRemoved(team: PlayerTeam): void;
-    packDisplaySlots(): { [key in DisplaySlot]: string };
+    packDisplaySlots(): Map<DisplaySlot, string>;
     packObjectives(): Objective$Packed[];
     packPlayerScores(): Scoreboard$PackedScore[];
     packPlayerTeams(): PlayerTeam$Packed[];

@@ -10,7 +10,7 @@ export class RegexMove extends Record implements FileFixOperation {
     // private fromPattern: Pattern;
     // private toReplacement: string;
     equals(o: Object | null): boolean;
-    fix(baseDirectory: Path[], upgradeProgress: UpgradeProgress): void;
+    fix(baseDirectory: Path, upgradeProgress: UpgradeProgress): void;
     fromPattern(): Pattern;
     hashCode(): number;
     toReplacement(): string;

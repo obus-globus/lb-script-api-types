@@ -24,7 +24,7 @@ export abstract class AbstractOriginSupplier<T extends unknown, B extends Abstra
     setInputStream(arg0: InputStream): B;
     setOrigin(arg0: AbstractOrigin<Object, any>): B;
     setOutputStream(arg0: OutputStream): B;
-    setPath(arg0: Path[]): B;
+    setPath(arg0: Path): B;
     setPath(arg0: string): B;
     setRandomAccessFile(arg0: RandomAccessFile): B;
     setRandomAccessFile(arg0: IORandomAccessFile): B;

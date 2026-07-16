@@ -15,7 +15,7 @@ export class WorldSelectionList$WorldListEntry extends WorldSelectionList$Entry 
     static CONTENT_PADDING: number;
     constructor(null_: WorldSelectionList, list: WorldSelectionList, summary: LevelSummary)
     // private icon: FaviconTexture;
-    // private iconFile: Path[];
+    // private iconFile: Path;
     // private idAndLastPlayedText: StringWidget;
     // private infoText: StringWidget;
     // private list: WorldSelectionList;

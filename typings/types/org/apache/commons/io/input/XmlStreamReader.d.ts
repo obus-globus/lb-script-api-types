@@ -24,7 +24,7 @@ export class XmlStreamReader extends Reader {
     constructor(arg0: InputStream, arg1: string, arg2: boolean, arg3: string)
     constructor(arg0: URL)
     constructor(arg0: URLConnection, arg1: string)
-    constructor(arg0: Path[])
+    constructor(arg0: Path)
     readonly defaultEncoding: string;
     readonly encoding: string;
     // private reader: Reader;

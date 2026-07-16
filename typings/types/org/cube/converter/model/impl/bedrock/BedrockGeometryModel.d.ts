@@ -12,6 +12,6 @@ export class BedrockGeometryModel extends GeneralModel {
     compile(): JsonObject;
     getIdentifier(): string;
     toJavaItemModel(arg0: string, arg1: RotationType): JavaItemModel;
-    toJavaItemModel(arg0: { [key in Direction]: string }, arg1: RotationType): JavaItemModel;
+    toJavaItemModel(arg0: Map<Direction, string>, arg1: RotationType): JavaItemModel;
     toJavaMultiItemModel(arg0: string): JavaItemModel[];
 }

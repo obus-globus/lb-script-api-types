@@ -25,7 +25,7 @@ export class Tika extends Object {
     detect(arg0: InputStream, arg1: string): string;
     detect(arg0: InputStream, arg1: Metadata): string;
     detect(arg0: URL): string;
-    detect(arg0: Path[]): string;
+    detect(arg0: Path): string;
     detect(arg0: number[]): string;
     detect(arg0: number[], arg1: string): string;
     detect(arg0: string): string;
@@ -38,14 +38,14 @@ export class Tika extends Object {
     parse(arg0: InputStream): Reader;
     parse(arg0: InputStream, arg1: Metadata): Reader;
     parse(arg0: URL): Reader;
-    parse(arg0: Path[]): Reader;
-    parse(arg0: Path[], arg1: Metadata): Reader;
+    parse(arg0: Path): Reader;
+    parse(arg0: Path, arg1: Metadata): Reader;
     parseToString(arg0: File): string;
     parseToString(arg0: InputStream): string;
     parseToString(arg0: InputStream, arg1: Metadata): string;
     parseToString(arg0: InputStream, arg1: Metadata, arg2: number): string;
     parseToString(arg0: URL): string;
-    parseToString(arg0: Path[]): string;
+    parseToString(arg0: Path): string;
     setMaxStringLength(arg0: number): void;
     toString(): string;
     translate(arg0: string, arg1: string): string;

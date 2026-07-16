@@ -14,7 +14,7 @@ export class ChickenRenderer extends MobRenderer<Chicken, ChickenRenderState, Ch
     static NAMETAG_SCALE: number;
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
-    // private models: { [key in ChickenVariant$ModelType]: AdultAndBabyModelPair<ChickenModel> };
+    // private models: Map<ChickenVariant$ModelType, AdultAndBabyModelPair<ChickenModel>>;
     createRenderState(): ChickenRenderState;
     createRenderState(entity: Chicken, partialTicks: number): ChickenRenderState;
     extractRenderState(entity: Chicken, state: ChickenRenderState, partialTicks: number): void;

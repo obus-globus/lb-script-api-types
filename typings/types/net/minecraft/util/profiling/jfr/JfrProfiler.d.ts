@@ -49,5 +49,5 @@ export class JfrProfiler extends Object implements JvmProfiler {
     // private setupSummaryListener(): void;
     // private start(configurationFile: Reader, environment: Environment): boolean;
     start(environment: Environment): boolean;
-    stop(): Path[];
+    stop(): Path;
 }

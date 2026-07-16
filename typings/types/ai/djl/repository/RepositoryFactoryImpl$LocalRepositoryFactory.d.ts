@@ -6,6 +6,6 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export class RepositoryFactoryImpl$LocalRepositoryFactory extends Object implements RepositoryFactory {
     constructor(arg0: any)
     getSupportedScheme(): string[];
-    // private isLocalRepository(arg0: Path[], arg1: Path[]): boolean;
+    // private isLocalRepository(arg0: Path, arg1: Path): boolean;
     newInstance(arg0: string, arg1: URI): Repository;
 }

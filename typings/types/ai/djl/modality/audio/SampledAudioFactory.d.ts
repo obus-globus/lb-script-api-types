@@ -7,7 +7,7 @@ export class SampledAudioFactory extends AudioFactory {
     static newInstance(): AudioFactory;
     constructor()
     // private bytesToFloats(arg0: number[], arg1: boolean): number[];
-    fromFile(arg0: Path[]): Audio;
+    fromFile(arg0: Path): Audio;
     fromInputStream(arg0: InputStream): Audio;
     // private read(arg0: AudioInputStream): number[];
     setChannels(arg0: number): AudioFactory;

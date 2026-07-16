@@ -5,8 +5,8 @@ import type { ContainerHandleVirtual } from '../../../../../../org/spongepowered
 export class ContainerHandleModLauncher extends ContainerHandleVirtual {
     constructor(arg0: string)
     addResource(arg0: Object): void;
-    addResource(arg0: string, arg1: Path[]): void;
-    addResource(arg0: Map$Entry<string, Path[]>): void;
+    addResource(arg0: string, arg1: Path): void;
+    addResource(arg0: Map$Entry<string, Path>): void;
     addResources(arg0: (Object | null)[]): void;
     toString(): string;
 }

@@ -9,7 +9,7 @@ export class Archive extends Object {
     constructor(arg0: string, arg1: string)
     // private closeStreams: boolean;
     readonly deflateHint: boolean;
-    // private inputPath: Path[];
+    // private inputPath: Path;
     // private inputSize: number;
     // private inputStream: BoundedInputStream;
     readonly logFile: FileOutputStream;

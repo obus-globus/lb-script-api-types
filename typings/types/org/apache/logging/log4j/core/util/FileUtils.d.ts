@@ -5,7 +5,7 @@ import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { PosixFilePermission } from '../../../../../../java/nio/file/attribute/PosixFilePermission.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class FileUtils extends Object {
-    static defineFilePosixAttributeView(parampath: Path[][], paramfilePermissions: PosixFilePermission[], paramfileOwner: string, paramfileGroup: string): void;
+    static defineFilePosixAttributeView(parampath: Path, paramfilePermissions: PosixFilePermission[], paramfileOwner: string, paramfileGroup: string): void;
     static fileFromUri(paramuri: URI): File;
     static getFileExtension(paramfile: File): string;
     static isFile(paramurl: URL): boolean;

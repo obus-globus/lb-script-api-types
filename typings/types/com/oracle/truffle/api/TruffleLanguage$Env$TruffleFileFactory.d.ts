@@ -8,5 +8,5 @@ export abstract class TruffleLanguage$Env$TruffleFileFactory<P extends unknown> 
     private constructor()
     andThen<V extends unknown>(arg0: (param0: TruffleFile) => V): (param0: P, param1: TruffleFile$FileSystemContext) => V;
     apply(p: P, fileSystemContext: TruffleFile$FileSystemContext): TruffleFile;
-    parsePath(p: P, fileSystemContext: TruffleFile$FileSystemContext): Path[];
+    parsePath(p: P, fileSystemContext: TruffleFile$FileSystemContext): Path;
 }

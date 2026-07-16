@@ -6,8 +6,8 @@ import type { PointerBase } from '../../../../org/graalvm/word/PointerBase.d.ts'
 export interface ProcessPropertiesSupport extends Object{
     destroy(processID: number): boolean;
     destroyForcibly(processID: number): boolean;
-    exec(executable: Path[], args: string[]): void;
-    exec(executable: Path[], args: string[], env: { [key: string]: string }): void;
+    exec(executable: Path, args: string[]): void;
+    exec(executable: Path, args: string[], env: { [key: string]: string }): void;
     getArgumentVectorBlockSize(): number;
     getArgumentVectorProgramName(): string;
     getExecutableName(): string;

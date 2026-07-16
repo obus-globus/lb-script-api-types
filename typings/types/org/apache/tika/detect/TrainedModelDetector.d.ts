@@ -15,7 +15,7 @@ export abstract class TrainedModelDetector extends Object implements Detector {
     loadDefaultModels(arg0: File): void;
     loadDefaultModels(arg0: InputStream): void;
     loadDefaultModels(arg0: ClassLoader): void;
-    loadDefaultModels(arg0: Path[]): void;
+    loadDefaultModels(arg0: Path): void;
     readByteFrequencies(arg0: InputStream): number[];
     registerModels(arg0: MediaType, arg1: TrainedModel): void;
     // private writeHisto(arg0: number[]): void;

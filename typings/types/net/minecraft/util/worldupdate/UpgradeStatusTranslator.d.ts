@@ -5,6 +5,6 @@ import type { UpgradeProgress } from '../../../../net/minecraft/util/worldupdate
 import type { UpgradeStatusTranslator$Messages } from '../../../../net/minecraft/util/worldupdate/UpgradeStatusTranslator$Messages.d.ts'
 export class UpgradeStatusTranslator extends Object {
     constructor()
-    // private messages: { [key in DataFixTypes]: UpgradeStatusTranslator$Messages };
+    // private messages: Map<DataFixTypes, UpgradeStatusTranslator$Messages>;
     translate(upgradeProgress: UpgradeProgress): Component;
 }

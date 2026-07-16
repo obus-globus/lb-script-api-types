@@ -17,7 +17,7 @@ export class StructureTemplateManager extends Object {
     static RESOURCE_TEXT_STRUCTURE_LISTER: FileToIdConverter;
     static STRUCTURE_DIRECTORY_NAME: string;
     static WORLD_STRUCTURE_LISTER: FileToIdConverter;
-    static save(paramfile: Path[][], paramstructureTemplate: StructureTemplate, paramasText: boolean): boolean;
+    static save(paramfile: Path, paramstructureTemplate: StructureTemplate, paramasText: boolean): boolean;
     constructor(resourceManager: ResourceManager, storage: LevelStorageSource$LevelStorageAccess, fixerUpper: DataFixer, blockLookup: HolderGetter<Block>)
     // private resourceManagerSource: ResourceManagerTemplateSource;
     // private sources: TemplateSource[];

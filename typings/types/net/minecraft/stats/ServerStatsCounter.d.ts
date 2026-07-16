@@ -8,9 +8,9 @@ import type { Stat } from '../../../net/minecraft/stats/Stat.d.ts'
 import type { StatsCounter } from '../../../net/minecraft/stats/StatsCounter.d.ts'
 import type { Player } from '../../../net/minecraft/world/entity/player/Player.d.ts'
 export class ServerStatsCounter extends StatsCounter {
-    constructor(server: MinecraftServer, file: Path[])
+    constructor(server: MinecraftServer, file: Path)
     // private dirty: Stat<Object>[];
-    // private file: Path[];
+    // private file: Path;
     // private getDirty(): Stat<Object>[];
     markAllDirty(): void;
     parse(fixerUpper: DataFixer, element: JsonElement): void;

@@ -178,7 +178,7 @@ export class PolyglotEngineImpl extends Object implements PolyglotImpl$VMObject 
     initializeMultiContext(): void;
     isSharingEnabled(config: PolyglotContextConfig): boolean;
     isStoreEngine(): boolean;
-    languageHomes(): { [key: string]: Path[] };
+    languageHomes(): { [key: string]: Path };
     leave(prev: Object[], context: PolyglotContextImpl): void;
     // private leaveBoundary(prev: Object[], context: PolyglotContextImpl): void;
     leaveCached(prev: Object[], context: PolyglotContextImpl): void;
@@ -204,7 +204,7 @@ export class PolyglotEngineImpl extends Object implements PolyglotImpl$VMObject 
     restoreStore(result: PolyglotEngineImpl$FinalizationResult): void;
     setAsynchronousStackDepth(polyglotInstrument: PolyglotInstrument, depth: number): void;
     setEngineAPIReference(engineAPI: Reference<Engine>): void;
-    storeCache(targetPath: Path[], cancelledWord: number): boolean;
+    storeCache(targetPath: Path, cancelledWord: number): boolean;
     // private throwNotInstalled(id: string, allLanguages: string[]): RuntimeException;
     // private validateSandbox(): void;
     validateVirtualThreadCreation(): void;

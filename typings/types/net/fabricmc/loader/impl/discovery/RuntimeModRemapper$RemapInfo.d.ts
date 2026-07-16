@@ -7,8 +7,8 @@ export class RuntimeModRemapper$RemapInfo extends Object {
     // private classTweaker: number[];
     // private classTweakerPath: string;
     // private inputIsTemp: boolean;
-    // private inputPath: Path[];
+    // private inputPath: Path;
     // private outputConsumerPath: OutputConsumerPath;
-    // private outputPath: Path[];
+    // private outputPath: Path;
     // private tag: InputTag;
 }

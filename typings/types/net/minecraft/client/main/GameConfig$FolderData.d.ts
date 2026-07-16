@@ -7,5 +7,5 @@ export class GameConfig$FolderData extends Object {
     assetIndex: string;
     gameDirectory: File;
     resourcePackDirectory: File;
-    getExternalAssetSource(): Path[];
+    getExternalAssetSource(): Path;
 }

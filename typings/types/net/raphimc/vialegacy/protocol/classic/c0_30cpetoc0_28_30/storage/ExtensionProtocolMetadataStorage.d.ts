@@ -6,7 +6,7 @@ export class ExtensionProtocolMetadataStorage extends Object implements IExtensi
     constructor()
     readonly extensionCount: number;
     readonly receivedExtensions: number;
-    // private serverExtensions: { [key in ClassicProtocolExtension]: number };
+    // private serverExtensions: Map<ClassicProtocolExtension, number>;
     readonly serverSoftwareName: string;
     addServerExtension(arg0: ClassicProtocolExtension, arg1: number): void;
     getExtensionCount(): number;

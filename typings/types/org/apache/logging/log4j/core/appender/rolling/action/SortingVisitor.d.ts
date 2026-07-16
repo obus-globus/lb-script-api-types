@@ -5,11 +5,11 @@ import type { SimpleFileVisitor } from '../../../../../../../../java/nio/file/Si
 import type { BasicFileAttributes } from '../../../../../../../../java/nio/file/attribute/BasicFileAttributes.d.ts'
 import type { PathSorter } from '../../../../../../../../org/apache/logging/log4j/core/appender/rolling/action/PathSorter.d.ts'
 import type { PathWithAttributes } from '../../../../../../../../org/apache/logging/log4j/core/appender/rolling/action/PathWithAttributes.d.ts'
-export class SortingVisitor extends SimpleFileVisitor<Path[]> {
+export class SortingVisitor extends SimpleFileVisitor<Path> {
     constructor(sorter: PathSorter)
     // private collected: PathWithAttributes[];
     // private sorter: PathSorter;
     getSortedPaths(): PathWithAttributes[];
-    visitFile(path: Path[], attrs: BasicFileAttributes): FileVisitResult;
-    visitFileFailed(file: Path[], ioException: IOException): FileVisitResult;
+    visitFile(path: Path, attrs: BasicFileAttributes): FileVisitResult;
+    visitFileFailed(file: Path, ioException: IOException): FileVisitResult;
 }

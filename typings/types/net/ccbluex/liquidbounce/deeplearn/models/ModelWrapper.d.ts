@@ -21,10 +21,10 @@ export abstract class ModelWrapper<I extends unknown, O extends unknown> extends
     close(): void;
     delete(): void;
     load(stream: InputStream): void;
-    load(path: Path[][]): void;
+    load(path: Path): void;
     load(name: string): void;
     predict(input: I): O;
-    save(path: Path[][]): void;
+    save(path: Path): void;
     save(name: string): void;
     train(features: number[][], labels: number[][]): void;
 }

@@ -8,15 +8,15 @@ import type { FileVisitorBuilder } from '../../../kotlin/io/path/FileVisitorBuil
 export class FileVisitorBuilderImpl extends Object implements FileVisitorBuilder {
     constructor()
     // private isBuilt: boolean;
-    // private onPostVisitDirectory: ((param0: Path[][], param1: IOException | null) => FileVisitResult) | null;
-    // private onPreVisitDirectory: ((param0: Path[][], param1: BasicFileAttributes) => FileVisitResult) | null;
-    // private onVisitFile: ((param0: Path[][], param1: BasicFileAttributes) => FileVisitResult) | null;
-    // private onVisitFileFailed: ((param0: Path[][], param1: IOException) => FileVisitResult) | null;
-    build(): FileVisitor<Path[][]>;
+    // private onPostVisitDirectory: ((param0: Path, param1: IOException | null) => FileVisitResult) | null;
+    // private onPreVisitDirectory: ((param0: Path, param1: BasicFileAttributes) => FileVisitResult) | null;
+    // private onVisitFile: ((param0: Path, param1: BasicFileAttributes) => FileVisitResult) | null;
+    // private onVisitFileFailed: ((param0: Path, param1: IOException) => FileVisitResult) | null;
+    build(): FileVisitor<Path>;
     // private checkIsNotBuilt(): void;
     // private checkNotDefined(function_: Object | null, name: string): void;
-    onPostVisitDirectory(function_: (param0: Path[][], param1: IOException | null) => FileVisitResult): void;
-    onPreVisitDirectory(function_: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult): void;
-    onVisitFile(function_: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult): void;
-    onVisitFileFailed(function_: (param0: Path[][], param1: IOException) => FileVisitResult): void;
+    onPostVisitDirectory(function_: (param0: Path, param1: IOException | null) => FileVisitResult): void;
+    onPreVisitDirectory(function_: (param0: Path, param1: BasicFileAttributes) => FileVisitResult): void;
+    onVisitFile(function_: (param0: Path, param1: BasicFileAttributes) => FileVisitResult): void;
+    onVisitFileFailed(function_: (param0: Path, param1: IOException) => FileVisitResult): void;
 }

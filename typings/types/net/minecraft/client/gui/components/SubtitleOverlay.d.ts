@@ -12,6 +12,7 @@ export class SubtitleOverlay extends Object implements SoundEventListener {
     // private minecraft: Minecraft;
     // private subtitles: SubtitleOverlay$Subtitle[];
     extractRenderState(graphics: GuiGraphicsExtractor): void;
-    // private extractRenderState$mixinextras$wrapped$5(arg0: GuiGraphicsExtractor): void;
+    // private extractRenderState$mixinextras$wrapped$13(arg0: GuiGraphicsExtractor): void;
+    // private extractRenderState$mixinextras$wrapped$15(arg0: GuiGraphicsExtractor): void;
     onPlaySound(sound: SoundInstance, soundEvent: WeighedSoundEvents, range: number): void;
 }

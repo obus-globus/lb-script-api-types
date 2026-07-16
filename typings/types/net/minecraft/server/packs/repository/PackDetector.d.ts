@@ -5,7 +5,7 @@ import type { ForbiddenSymlinkInfo } from '../../../../../net/minecraft/world/le
 export abstract class PackDetector<T extends unknown> extends Object {
     constructor(validator: DirectoryValidator)
     // private validator: DirectoryValidator;
-    createDirectoryPack(content: Path[]): T;
-    createZipPack(content: Path[]): T;
-    detectPackResources(content: Path[], issues: ForbiddenSymlinkInfo[]): T;
+    createDirectoryPack(content: Path): T;
+    createZipPack(content: Path): T;
+    detectPackResources(content: Path, issues: ForbiddenSymlinkInfo[]): T;
 }

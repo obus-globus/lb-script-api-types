@@ -7,9 +7,9 @@ import type { EquipmentSlot } from '../../../../../../net/minecraft/world/entity
 export class ArmorEvaluation extends Object {
     static INSTANCE: ArmorEvaluation;
     // private EXPECTED_DAMAGE: number;
-    findBestArmorPieces(slots: ItemSlot[], durabilityThreshold: number): { [key in EquipmentSlot]: ArmorPiece | null };
-    findBestArmorPiecesWithComparator(slots: ItemSlot[], comparator: ArmorComparator): { [key in EquipmentSlot]: ArmorPiece | null };
-    getArmorComparatorFor(currentKit: { [key in EquipmentSlot]: ArmorPiece | null }, durabilityThreshold: number): ArmorComparator;
+    findBestArmorPieces(slots: ItemSlot[], durabilityThreshold: number): Map<EquipmentSlot, ArmorPiece | null>;
+    findBestArmorPiecesWithComparator(slots: ItemSlot[], comparator: ArmorComparator): Map<EquipmentSlot, ArmorPiece | null>;
+    getArmorComparatorFor(currentKit: Map<EquipmentSlot, ArmorPiece | null>, durabilityThreshold: number): ArmorComparator;
     getArmorComparatorForParameters(currentParameters: ArmorKitParameters, durabilityThreshold: number): ArmorComparator;
-    // private groupArmorByType(slots: ItemSlot[]): { [key in EquipmentSlot]: ArmorPiece[] };
+    // private groupArmorByType(slots: ItemSlot[]): Map<EquipmentSlot, ArmorPiece[]>;
 }

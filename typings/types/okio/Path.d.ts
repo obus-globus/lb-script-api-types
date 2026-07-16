@@ -11,8 +11,8 @@ export class Path extends Object implements Comparable<Path> {
     static get(paramarg0: File, paramarg1: boolean): Path;
     static get(paramarg0: string): Path;
     static get(paramarg0: string, paramarg1: boolean): Path;
-    static get(paramarg0: Path_2[][]): Path;
-    static get(paramarg0: Path_2[][], paramarg1: boolean): Path;
+    static get(paramarg0: Path_2): Path;
+    static get(paramarg0: Path_2, paramarg1: boolean): Path;
     constructor(bytes: ByteString)
     // private bytes: ByteString;
     /*not mapped: */ getBytes$okio(): ByteString;
@@ -38,6 +38,6 @@ export class Path extends Object implements Comparable<Path> {
     resolve(child: ByteString, normalize: boolean): Path;
     resolve(child: Path, normalize: boolean): Path;
     toFile(): File;
-    toNioPath(): Path_2[][];
+    toNioPath(): Path_2;
     toString(): string;
 }

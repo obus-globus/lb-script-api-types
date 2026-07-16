@@ -16,7 +16,7 @@ export class ProtocolTranslator extends Object {
     static getPlayNetworkUserConnection(): UserConnection;
     static getTargetVersion(): ProtocolVersion;
     static getTargetVersion(paramarg0: Channel): ProtocolVersion;
-    static init(paramarg0: Path[][]): CompletableFuture<void>;
+    static init(paramarg0: Path): CompletableFuture<void>;
     static injectPreviousVersionReset(paramarg0: Channel): void;
     static injectViaPipeline(paramarg0: Connection, paramarg1: Channel): void;
     static setTargetVersion(paramarg0: ProtocolVersion): void;

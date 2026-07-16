@@ -29,8 +29,8 @@ export class ZipArchiveOutputStream extends ArchiveOutputStream<ZipArchiveEntry>
     constructor(arg0: File, arg1: number)
     constructor(arg0: OutputStream)
     constructor(arg0: SeekableByteChannel)
-    constructor(arg0: Path[], ...arg1: OpenOption[])
-    constructor(arg0: Path[], arg1: number)
+    constructor(arg0: Path, ...arg1: OpenOption[])
+    constructor(arg0: Path, arg1: number)
     // private cdDiskNumberStart: number;
     // private cdLength: number;
     // private cdOffset: number;
@@ -65,7 +65,7 @@ export class ZipArchiveOutputStream extends ArchiveOutputStream<ZipArchiveEntry>
     // private closeEntry(arg0: boolean, arg1: boolean): void;
     // private copyFromZipInputStream(arg0: InputStream, arg1: boolean): void;
     createArchiveEntry(arg0: File, arg1: string): ZipArchiveEntry;
-    createArchiveEntry(arg0: Path[], arg1: string, ...arg2: LinkOption[]): ZipArchiveEntry;
+    createArchiveEntry(arg0: Path, arg1: string, ...arg2: LinkOption[]): ZipArchiveEntry;
     // private createCentralFileHeader(arg0: ZipArchiveEntry): number[];
     // private createCentralFileHeader(arg0: ZipArchiveEntry, arg1: ByteBuffer, arg2: ZipArchiveOutputStream$EntryMetaData, arg3: boolean): number[];
     // private createLocalFileHeader(arg0: ZipArchiveEntry, arg1: ByteBuffer, arg2: boolean, arg3: boolean, arg4: number): number[];
@@ -109,7 +109,7 @@ export class ZipArchiveOutputStream extends ArchiveOutputStream<ZipArchiveEntry>
     // private versionNeededToExtract(arg0: number, arg1: boolean, arg2: boolean): number;
     // private versionNeededToExtractMethod(arg0: number): number;
     write(arg0: File): number;
-    write(arg0: Path[]): number;
+    write(arg0: Path): number;
     write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;

@@ -4,11 +4,11 @@ import type { BooleanSupplier } from '../../../../../java/util/function/BooleanS
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { TarArchiveOutputStream } from '../../../../../org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.d.ts'
 export class RealmsUploadWorldPacker extends Object {
-    static pack(paramdirectoryToPack: Path[][], paramisCanceled: () => boolean): File;
-    private constructor(directoryToPack: Path[], isCanceled: () => boolean)
-    // private directoryToPack: Path[];
+    static pack(paramdirectoryToPack: Path, paramisCanceled: () => boolean): File;
+    private constructor(directoryToPack: Path, isCanceled: () => boolean)
+    // private directoryToPack: Path;
     // private isCanceled: () => boolean;
-    // private addFileToTarGz(out: TarArchiveOutputStream, path: Path[], base: string, root: boolean): void;
+    // private addFileToTarGz(out: TarArchiveOutputStream, path: Path, base: string, root: boolean): void;
     // private tarGzipArchive(): File;
     // private verifyBelowSizeLimit(sizeInByte: number): void;
 }

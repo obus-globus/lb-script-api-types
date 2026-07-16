@@ -5,7 +5,7 @@ import type { PacketTypeMap } from '../../../../com/viaversion/viaversion/api/pr
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ProtocolUtil extends Object {
-    static packetTypeMap(paramarg0: Class<PacketType>, paramarg1: Object | null): { [key in State]: PacketTypeMap<PacketType> };
+    static packetTypeMap(paramarg0: Class<PacketType>, paramarg1: Object | null): Map<State, PacketTypeMap<PacketType>>;
     static toNiceHex(paramarg0: number): string;
     static toNiceName(paramarg0: Class<Protocol<any, any, any, any>>): string;
     constructor()

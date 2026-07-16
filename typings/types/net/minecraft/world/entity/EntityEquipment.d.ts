@@ -13,7 +13,7 @@ export class EntityEquipment extends Object implements EquipmentInfo, ChangeSubs
     constructor()
     // private hasUnsentEquipmentChanges: boolean;
     // private inLevel: boolean;
-    // private items: { [key in EquipmentSlot]: ItemStack };
+    // private items: Map<EquipmentSlot, ItemStack>;
     // private recheckEnchantmentForStack: ItemStack;
     // private shouldTickEnchantments: boolean;
     clear(): void;

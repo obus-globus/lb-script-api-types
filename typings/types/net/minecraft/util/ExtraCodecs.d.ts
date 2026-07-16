@@ -84,7 +84,7 @@ export class ExtraCodecs extends Object {
     static dispatchOptionalValue(paramtypeKey: string, paramvalueKey: string, paramtypeCodec: Codec<Object>, paramtypeGetter: (param0: Object) => Object | null, paramvalueCodec: (param0: Object) => Codec<Object>): MapCodec<Object>;
     static ensureHomogenous(paramtypeGetter: (param0: Object | null) => Object | null): (param0: Object | null) => DataResult<Object>;
     static floatRange(paramminInclusive: number, parammaxInclusive: number): Codec<number>;
-    static guardedPathCodec(parambaseFolder: Path[][]): Codec<Path[][]>;
+    static guardedPathCodec(parambaseFolder: Path): Codec<Path>;
     static idResolverCodec(paramtoInt: (param0: Object | null) => number, paramfromInt: (param0: number) => Object | null, paramunknownId: number): Codec<Object>;
     static idResolverCodec(paramvalue: Codec<Object>, paramfromId: (param0: Object | null) => Object | null, paramtoId: (param0: Object | null) => Object | null): Codec<Object>;
     static intRange(paramminInclusive: number, parammaxInclusive: number): Codec<number>;
@@ -103,8 +103,8 @@ export class ExtraCodecs extends Object {
     static orElsePartial(paramvalue: Object | null): Codec$ResultFunction<Object>;
     static overrideLifecycle(paramcodec: Codec<Object>, paramlifecycleGetter: (param0: Object | null) => Lifecycle): Codec<Object>;
     static overrideLifecycle(paramcodec: Codec<Object>, paramdecodeLifecycle: (param0: Object | null) => Lifecycle, paramencodeLifecycle: (param0: Object | null) => Lifecycle): Codec<Object>;
-    static pathCodec(parampathFactory: (param0: string) => Path[][]): Codec<Path[][]>;
-    static relaiveNormalizedSubPathCodec(parampathFactory: (param0: string) => Path[][]): Codec<Path[][]>;
+    static pathCodec(parampathFactory: (param0: string) => Path): Codec<Path>;
+    static relaiveNormalizedSubPathCodec(parampathFactory: (param0: string) => Path): Codec<Path>;
     static retrieveContext(paramgetter: (param0: DynamicOps<Object>) => DataResult<Object>): MapCodec<Object>;
     static sizeLimitedMap(paramcodec: Codec<Map<Object | null, Object | null>>, parammaxSizeInclusive: number): Codec<Map<Object | null, Object | null>>;
     static strictUnboundedMap(paramkeyCodec: Codec<Object>, paramelementCodec: Codec<Object>): ExtraCodecs$StrictUnboundedMapCodec<Object, Object>;

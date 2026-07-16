@@ -14,8 +14,8 @@ export class ForkParser extends Object implements Closeable, Parser {
     constructor()
     constructor(arg0: ClassLoader)
     constructor(arg0: ClassLoader, arg1: Parser)
-    constructor(arg0: Path[], arg1: ParserFactoryFactory)
-    constructor(arg0: Path[], arg1: ParserFactoryFactory, arg2: ClassLoader)
+    constructor(arg0: Path, arg1: ParserFactoryFactory)
+    constructor(arg0: Path, arg1: ParserFactoryFactory, arg2: ClassLoader)
     // private currentlyInUse: number;
     // private java: string[];
     // private loader: ClassLoader;
@@ -27,7 +27,7 @@ export class ForkParser extends Object implements Closeable, Parser {
     readonly serverParseTimeoutMillis: number;
     readonly serverPulseMillis: number;
     readonly serverWaitTimeoutMillis: number;
-    // private tikaBin: Path[];
+    // private tikaBin: Path;
     // private acquireClient(): ForkClient;
     close(): void;
     getJavaCommandAsList(): string[];

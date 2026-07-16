@@ -12,10 +12,10 @@ import type { PackDirectives } from '../../../../../net/irisshaders/iris/shaderp
 import type { ShaderProperties } from '../../../../../net/irisshaders/iris/shaderpack/properties/ShaderProperties.d.ts'
 export class ProgramSet extends Object implements ProgramSetInterface {
     constructor(arg0: AbsolutePackPath, arg1: (param0: AbsolutePackPath) => string, arg2: ShaderProperties, arg3: ShaderPack)
-    // private compositePrograms: { [key in ProgramArrayId]: ProgramSource[] };
-    // private computePrograms: { [key in ProgramArrayId]: ComputeSource[][] };
+    // private compositePrograms: Map<ProgramArrayId, ProgramSource[]>;
+    // private computePrograms: Map<ProgramArrayId, ComputeSource[][]>;
     readonly finalCompute: ComputeSource[];
-    // private gbufferPrograms: { [key in ProgramId]: ProgramSource };
+    // private gbufferPrograms: Map<ProgramId, ProgramSource>;
     readonly pack: ShaderPack;
     readonly packDirectives: PackDirectives;
     readonly setup: ComputeSource[];

@@ -15,7 +15,7 @@ import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class CopperGolemStatueBlockRenderer extends Object implements BlockEntityRenderer<CopperGolemStatueBlockEntity, CopperGolemStatueRenderState> {
     static modelTransformation(paramfacing: Direction): Transformation;
     constructor(context: BlockEntityRendererProvider$Context)
-    // private models: { [key in CopperGolemStatueBlock$Pose]: CopperGolemStatueModel };
+    // private models: Map<CopperGolemStatueBlock$Pose, CopperGolemStatueModel>;
     createRenderState(): CopperGolemStatueRenderState;
     extractRenderState(blockEntity: CopperGolemStatueBlockEntity, state: CopperGolemStatueRenderState, partialTicks: number, cameraPosition: Vec3, breakProgress: ModelFeatureRenderer$CrumblingOverlay): void;
     getViewDistance(): number;

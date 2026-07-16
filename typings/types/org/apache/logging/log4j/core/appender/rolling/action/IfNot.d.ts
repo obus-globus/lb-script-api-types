@@ -8,7 +8,7 @@ export class IfNot extends Object implements PathCondition {
     static createNotCondition(paramcondition: PathCondition): IfNot;
     private constructor(negate: PathCondition)
     // private negate: PathCondition;
-    accept(baseDir: Path[], relativePath: Path[], attrs: BasicFileAttributes): boolean;
+    accept(baseDir: Path, relativePath: Path, attrs: BasicFileAttributes): boolean;
     beforeFileTreeWalk(): void;
     getWrappedFilter(): PathCondition;
     toString(): string;

@@ -29,9 +29,9 @@ export class Scanner extends Object implements Closeable, Iterator<string> {
     constructor(arg0: ReadableByteChannel)
     constructor(arg0: ReadableByteChannel, arg1: Charset)
     constructor(arg0: ReadableByteChannel, arg1: string)
-    constructor(arg0: Path[])
-    constructor(arg0: Path[], arg1: Charset)
-    constructor(arg0: Path[], arg1: string)
+    constructor(arg0: Path)
+    constructor(arg0: Path, arg1: Charset)
+    constructor(arg0: Path, arg1: string)
     constructor(arg0: string)
     // private buf: CharBuffer;
     // private closed: boolean;

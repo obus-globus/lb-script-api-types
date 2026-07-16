@@ -16,15 +16,15 @@ export class InternalResource$Env extends Object {
     // private contextPreinitializationCheck: () => boolean;
     // private owner: Module;
     // private resourceClass: Class<InternalResource>;
-    // private copyResource(source: Path[], target: Path[], attrs: PosixFilePermission[]): void;
+    // private copyResource(source: Path, target: Path, attrs: PosixFilePermission[]): void;
     getCPUArchitecture(): InternalResource$CPUArchitecture;
     getOS(): InternalResource$OS;
     // private getResourceStream(resourceName: string): InputStream;
     inContextPreinitialization(): boolean;
     inNativeImageBuild(): boolean;
-    // private loadFileList(source: Path[]): { [key: string]: any };
+    // private loadFileList(source: Path): { [key: string]: any };
     // private preferredResource(candidates: Enumeration<URL>): URL;
-    readResourceLines(location: Path[]): string[];
-    unpackResourceFiles(source: Path[], target: Path[], relativizeTo: Path[]): void;
-    unpackResourceFiles(source: Path[], target: Path[], relativizeTo: Path[], filter: (param0: Path[]) => boolean): void;
+    readResourceLines(location: Path): string[];
+    unpackResourceFiles(source: Path, target: Path, relativizeTo: Path): void;
+    unpackResourceFiles(source: Path, target: Path, relativizeTo: Path, filter: (param0: Path) => boolean): void;
 }

@@ -119,7 +119,7 @@ export class JniUtils extends Object {
     static linear(paramarg0: PtNDArray, paramarg1: PtNDArray, paramarg2: PtNDArray): PtNDArray;
     static linspace(paramarg0: PtNDManager, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: DataType, paramarg5: Device, paramarg6: SparseFormat): PtNDArray;
     static loadModule(paramarg0: PtNDManager, paramarg1: InputStream, paramarg2: boolean, paramarg3: boolean): PtSymbolBlock;
-    static loadModule(paramarg0: PtNDManager, paramarg1: Path[][], paramarg2: boolean, paramarg3: (Object | null)[], paramarg4: (Object | null)[], paramarg5: boolean): PtSymbolBlock;
+    static loadModule(paramarg0: PtNDManager, paramarg1: Path, paramarg2: boolean, paramarg3: (Object | null)[], paramarg4: (Object | null)[], paramarg5: boolean): PtSymbolBlock;
     static loadModuleHandle(paramarg0: InputStream, paramarg1: Device, paramarg2: boolean, paramarg3: boolean): number;
     static log(paramarg0: PtNDArray): PtNDArray;
     static log10(paramarg0: PtNDArray): PtNDArray;

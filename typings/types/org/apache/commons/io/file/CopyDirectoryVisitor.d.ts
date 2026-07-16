@@ -9,18 +9,18 @@ import type { PathFilter } from '../../../../../org/apache/commons/io/file/PathF
 export class CopyDirectoryVisitor extends CountingPathVisitor {
     static withBigIntegerCounters(): CountingPathVisitor;
     static withLongCounters(): CountingPathVisitor;
-    constructor(arg0: Counters$PathCounters, arg1: Path[], arg2: Path[], ...arg3: CopyOption[])
-    constructor(arg0: Counters$PathCounters, arg1: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult, arg2: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult, arg3: Path[], arg4: Path[], ...arg5: CopyOption[])
+    constructor(arg0: Counters$PathCounters, arg1: Path, arg2: Path, ...arg3: CopyOption[])
+    constructor(arg0: Counters$PathCounters, arg1: (param0: Path, param1: BasicFileAttributes) => FileVisitResult, arg2: (param0: Path, param1: BasicFileAttributes) => FileVisitResult, arg3: Path, arg4: Path, ...arg5: CopyOption[])
     readonly copyOptions: CopyOption[];
-    readonly sourceDirectory: Path[];
-    readonly targetDirectory: Path[];
-    copy(arg0: Path[], arg1: Path[]): void;
+    readonly sourceDirectory: Path;
+    readonly targetDirectory: Path;
+    copy(arg0: Path, arg1: Path): void;
     equals(arg0: Object | null): boolean;
     getCopyOptions(): CopyOption[];
-    getSourceDirectory(): Path[];
-    getTargetDirectory(): Path[];
+    getSourceDirectory(): Path;
+    getTargetDirectory(): Path;
     hashCode(): number;
-    preVisitDirectory(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
-    // private resolveRelativeAsString(arg0: Path[]): Path[];
-    visitFile(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
+    preVisitDirectory(arg0: Path, arg1: BasicFileAttributes): FileVisitResult;
+    // private resolveRelativeAsString(arg0: Path): Path;
+    visitFile(arg0: Path, arg1: BasicFileAttributes): FileVisitResult;
 }

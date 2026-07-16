@@ -8,11 +8,11 @@ export class Lister extends Object {
     // private args: string[];
     // private quiet: boolean;
     go(): void;
-    // private list(arg0: Path[], ...arg1: string[]): void;
-    // private list7z(arg0: Path[]): void;
-    // private listStream(arg0: Path[], arg1: string[]): void;
-    // private listZipUsingTarFile(arg0: Path[]): void;
-    // private listZipUsingZipFile(arg0: Path[]): void;
+    // private list(arg0: Path, ...arg1: string[]): void;
+    // private list7z(arg0: Path): void;
+    // private listStream(arg0: Path, arg1: string[]): void;
+    // private listZipUsingTarFile(arg0: Path): void;
+    // private listZipUsingZipFile(arg0: Path): void;
     // private println(arg0: string): void;
     // private println(arg0: ArchiveEntry): void;
 }

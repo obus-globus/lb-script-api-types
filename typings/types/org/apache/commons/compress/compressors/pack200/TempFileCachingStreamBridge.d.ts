@@ -5,6 +5,6 @@ import type { AbstractStreamBridge } from '../../../../../../org/apache/commons/
 export class TempFileCachingStreamBridge extends AbstractStreamBridge {
     static nullOutputStream(): OutputStream;
     constructor()
-    // private path: Path[];
+    // private path: Path;
     createInputStream(): InputStream;
 }

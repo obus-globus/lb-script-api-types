@@ -7,11 +7,11 @@ import type { EquipmentClientInfo$LayerType } from '../../../../../net/minecraft
 export class EquipmentClientInfo extends Record {
     static CODEC: Codec<EquipmentClientInfo>;
     static builder(): EquipmentClientInfo$Builder;
-    constructor(layers: { [key in EquipmentClientInfo$LayerType]: EquipmentClientInfo$Layer[] })
-    // private layers: { [key in EquipmentClientInfo$LayerType]: EquipmentClientInfo$Layer[] };
+    constructor(layers: Map<EquipmentClientInfo$LayerType, EquipmentClientInfo$Layer[]>)
+    // private layers: Map<EquipmentClientInfo$LayerType, EquipmentClientInfo$Layer[]>;
     equals(o: Object | null): boolean;
     getLayers(type: EquipmentClientInfo$LayerType): EquipmentClientInfo$Layer[];
     hashCode(): number;
-    layers(): { [key in EquipmentClientInfo$LayerType]: EquipmentClientInfo$Layer[] };
+    layers(): Map<EquipmentClientInfo$LayerType, EquipmentClientInfo$Layer[]>;
     toString(): string;
 }

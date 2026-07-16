@@ -12,6 +12,6 @@ export class CompressedNbt$MissingSeverity extends Enum<CompressedNbt$MissingSev
     static values(): (Object | null)[];
     private constructor(logFunction: (param0: string, param1: Object) => void)
     // private logFunction: (param0: string, param1: Object) => void;
-    log(message: string, path: Path[]): void;
+    log(message: string, path: Path): void;
     name(): "IMPORTANT" | "NEUTRAL" | "MINOR";
 }

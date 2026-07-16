@@ -6,11 +6,11 @@ import type { LerpFunction } from '../../../../../net/minecraft/world/attribute/
 import type { AttributeModifier } from '../../../../../net/minecraft/world/attribute/modifier/AttributeModifier.d.ts'
 import type { AttributeModifier$OperationId } from '../../../../../net/minecraft/world/attribute/modifier/AttributeModifier$OperationId.d.ts'
 export class AttributeModifier$OverrideModifier<Value extends unknown> extends Record implements AttributeModifier<Value, Value> {
-    static ARGB_COLOR_LIBRARY: { [key in AttributeModifier$OperationId]: AttributeModifier<number, Object> };
-    static BOOLEAN_LIBRARY: { [key in AttributeModifier$OperationId]: AttributeModifier<boolean, Object> };
-    static FLOAT_LIBRARY: { [key in AttributeModifier$OperationId]: AttributeModifier<number, Object> };
-    static INTEGER_LIBRARY: { [key in AttributeModifier$OperationId]: AttributeModifier<number, Object> };
-    static RGB_COLOR_LIBRARY: { [key in AttributeModifier$OperationId]: AttributeModifier<number, Object> };
+    static ARGB_COLOR_LIBRARY: Map<AttributeModifier$OperationId, AttributeModifier<number, Object>>;
+    static BOOLEAN_LIBRARY: Map<AttributeModifier$OperationId, AttributeModifier<boolean, Object>>;
+    static FLOAT_LIBRARY: Map<AttributeModifier$OperationId, AttributeModifier<number, Object>>;
+    static INTEGER_LIBRARY: Map<AttributeModifier$OperationId, AttributeModifier<number, Object>>;
+    static RGB_COLOR_LIBRARY: Map<AttributeModifier$OperationId, AttributeModifier<number, Object>>;
     static override(): AttributeModifier<Object, Object>;
     constructor()
     apply(subject: Value, argument: Value): Value;

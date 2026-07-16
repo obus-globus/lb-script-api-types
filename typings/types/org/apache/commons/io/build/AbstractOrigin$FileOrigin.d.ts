@@ -6,5 +6,5 @@ export class AbstractOrigin$FileOrigin extends AbstractOrigin<File, AbstractOrig
     getByteArray(): number[];
     getByteArray(arg0: number, arg1: number): number[];
     getFile(): File;
-    getPath(): Path[];
+    getPath(): Path;
 }

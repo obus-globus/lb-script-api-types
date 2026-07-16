@@ -8,8 +8,8 @@ export class FileSystems$PathOperationsOnlyFileSystem extends FileSystems$Denied
     // private delegateFileSystem: FileSystem;
     hasNoAccess(): boolean;
     isInternal(polyglot: AbstractPolyglotImpl): boolean;
-    isSameFile(path1: Path[], path2: Path[], ...options: LinkOption[]): boolean;
-    setCurrentWorkingDirectory(currentWorkingDirectory: Path[]): void;
-    toAbsolutePath(path: Path[]): Path[];
-    toRealPath(path: Path[], ...linkOptions: LinkOption[]): Path[];
+    isSameFile(path1: Path, path2: Path, ...options: LinkOption[]): boolean;
+    setCurrentWorkingDirectory(currentWorkingDirectory: Path): void;
+    toAbsolutePath(path: Path): Path;
+    toRealPath(path: Path, ...linkOptions: LinkOption[]): Path;
 }

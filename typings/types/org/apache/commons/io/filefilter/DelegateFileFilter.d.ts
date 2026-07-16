@@ -15,6 +15,6 @@ export class DelegateFileFilter extends AbstractFileFilter implements Serializab
     // private fileNameFilter: (param0: File, param1: string) => boolean;
     accept(arg0: File): boolean;
     accept(arg0: File, arg1: string): boolean;
-    accept(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
+    accept(arg0: Path, arg1: BasicFileAttributes): FileVisitResult;
     toString(): string;
 }

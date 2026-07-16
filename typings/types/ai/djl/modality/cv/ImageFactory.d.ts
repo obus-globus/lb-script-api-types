@@ -8,7 +8,7 @@ export abstract class ImageFactory extends Object {
     static getInstance(): ImageFactory;
     static setImageFactory(paramarg0: ImageFactory): void;
     constructor()
-    fromFile(arg0: Path[]): Image;
+    fromFile(arg0: Path): Image;
     fromImage(arg0: Object): Image;
     fromInputStream(arg0: InputStream): Image;
     fromNDArray(arg0: NDArray): Image;

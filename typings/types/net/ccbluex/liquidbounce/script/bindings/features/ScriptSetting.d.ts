@@ -24,10 +24,19 @@ export class ScriptSetting extends Object {
      * @param option.default Initial value if the user hasn't changed it.
      * @returns The setting handle. Call `.get()` to read the current value.
      *
+     * Reached through the ambient `Setting` global, inside the `settings`
+     * key of a `registerModule` moduleObject (there is no `mod.setting.*`
+     * API - the module exposes the declared values as `mod.settings.<key>`).
+     *
      * @example
      * ```ts
-     * const loud = mod.setting.boolean({ name: "Loud", default: false });
-     * if (loud.get()) print("loud!");
+     * registerModule({
+     *     name: "MyModule",
+     *     category: "Misc",
+     *     settings: { loud: Setting.boolean({ name: "Loud", default: false }) },
+     * }, (mod) => {
+     *     mod.on("enable", () => { if (mod.settings.loud.get()) print("loud!"); });
+     * });
      * ```
      *
      * Source: `ScriptSetting.kt:43` - `fun boolean(value: PolyglotValue)`,

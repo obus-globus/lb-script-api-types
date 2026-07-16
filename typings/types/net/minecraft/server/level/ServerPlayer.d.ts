@@ -319,7 +319,7 @@ export class ServerPlayer extends Player implements PacketContextProvider {
     giveExperiencePoints(i: number): void;
     handleExtraItemsCreatedOnUse(extraItems: ItemStack): void;
     handleShoulderEntities(): void;
-    // private handleTeamKill(source: ScoreHolder, target: ScoreHolder, criteriaByTeam: { [key in TeamColor]: ObjectiveCriteria }): void;
+    // private handleTeamKill(source: ScoreHolder, target: ScoreHolder, criteriaByTeam: Map<TeamColor, ObjectiveCriteria>): void;
     hasChangedDimension(): void;
     hasDisconnected(): boolean;
     hurtServer(level: ServerLevel, source: DamageSource, damage: number): boolean;

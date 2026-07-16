@@ -36,7 +36,7 @@ export class RealmsConfigureWorldScreen extends RealmsScreen {
     readonly lastScreen: RealmsMainScreen;
     // private layout: HeaderAndFooterLayout;
     // private playButton: Button;
-    // private regionServiceQuality: { [key in RealmsRegion]: ServiceQuality };
+    // private regionServiceQuality: Map<RealmsRegion, ServiceQuality>;
     // private regions: PreferredRegionsDto;
     // private serverData: RealmsServer;
     // private serverId: number;

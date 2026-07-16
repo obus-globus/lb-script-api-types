@@ -9,7 +9,7 @@ export class MobSpawnSettings$Builder extends Object {
     constructor()
     // private creatureGenerationProbability: number;
     // private mobSpawnCosts: Map<EntityType<any>, MobSpawnSettings$MobSpawnCost>;
-    // private spawners: { [key in MobCategory]: WeightedList$Builder<MobSpawnSettings$SpawnerData> };
+    // private spawners: Map<MobCategory, WeightedList$Builder<MobSpawnSettings$SpawnerData>>;
     addMobCharge(type: EntityType<any>, charge: number, energyBudget: number): MobSpawnSettings$Builder;
     addSpawn(category: MobCategory, weight: number, spawnerData: MobSpawnSettings$SpawnerData): MobSpawnSettings$Builder;
     build(): MobSpawnSettings;

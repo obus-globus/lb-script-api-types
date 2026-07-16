@@ -12,8 +12,8 @@ import type { TestInstanceBlockEntity } from '../../../../net/minecraft/world/le
 import type { BoundingBox } from '../../../../net/minecraft/world/level/levelgen/structure/BoundingBox.d.ts'
 export class StructureUtils extends Object {
     static DEFAULT_Y_SEARCH_RADIUS: number;
-    static testStructuresSourceDir: Path[][];
-    static testStructuresTargetDir: Path[][];
+    static testStructuresSourceDir: Path;
+    static testStructuresTargetDir: Path;
     static clearSpaceForStructure(paramstructureBoundingBox: BoundingBox, paramlevel: ServerLevel): void;
     static createNewEmptyTest(paramid: Identifier, paramstructurePos: BlockPos, paramsize: Vec3i, paramrotation: Rotation, paramlevel: ServerLevel): TestInstanceBlockEntity;
     static findNearestTest(paramrelativeToPos: BlockPos, paramsearchRadius: number, paramlevel: ServerLevel): Optional<BlockPos>;

@@ -15,6 +15,6 @@ export class TestWorldBuilderImpl extends Object implements TestWorldBuilder {
     create(): TestSingleplayerContext;
     createServer(): TestDedicatedServerContext;
     createServer(arg0: { [key: string]: any }): TestDedicatedServerContext;
-    // private navigateCreateWorldScreen(): Path[];
+    // private navigateCreateWorldScreen(): Path;
     setUseConsistentSettings(arg0: boolean): TestWorldBuilder;
 }

@@ -16,7 +16,7 @@ export class Blender extends Object {
     static addAroundOldChunksCarvingMaskFilter(paramregion: WorldGenLevel, paramchunk: ProtoChunk): void;
     static empty(): Blender;
     static generateBorderTicks(paramregion: WorldGenRegion, paramchunk: ChunkAccess): void;
-    static makeOldChunkDistanceGetter(paramcenterBlendingData: BlendingData, paramoldSidesBlendingData: { [key in Direction8]: BlendingData }): Blender$DistanceGetter;
+    static makeOldChunkDistanceGetter(paramcenterBlendingData: BlendingData, paramoldSidesBlendingData: Map<Direction8, BlendingData>): Blender$DistanceGetter;
     static of(paramregion: WorldGenRegion): Blender;
     private constructor(heightAndBiomeBlendingData: { [key: string]: any }, densityBlendingData: { [key: string]: any })
     // private densityBlendingData: { [key: string]: any };

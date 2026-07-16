@@ -16,7 +16,7 @@ export class PlatformRecording extends Object implements AutoCloseable {
     constructor(arg0: PlatformRecorder, arg1: number)
     readonly chunks: RepositoryChunk[];
     readonly destination: WriteablePath;
-    readonly dumpDirectory: Path[];
+    readonly dumpDirectory: Path;
     readonly dumpOnExit: boolean;
     readonly duration: Duration;
     // private finalStartChunkNanos: number;
@@ -79,13 +79,13 @@ export class PlatformRecording extends Object implements AutoCloseable {
     open(arg0: Instant, arg1: Instant): InputStream;
     removeBefore(arg0: Instant): void;
     removeNonExistantPaths(): void;
-    removePath(arg0: Path[]): void;
+    removePath(arg0: Path): void;
     // private removed(arg0: RepositoryChunk): void;
     scheduleStart(arg0: Duration): void;
     scheduleStart(arg0: Instant): void;
     setConfiguration(arg0: Configuration): void;
     setDestination(arg0: WriteablePath): void;
-    setDumpDirectory(arg0: Path[]): void;
+    setDumpDirectory(arg0: Path): void;
     setDumpOnExit(arg0: boolean): void;
     setDuration(arg0: Duration): void;
     setFinalStartnanos(arg0: number): void;

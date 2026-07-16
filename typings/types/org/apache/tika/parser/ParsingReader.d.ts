@@ -16,7 +16,7 @@ export class ParsingReader extends Reader {
     constructor(arg0: File)
     constructor(arg0: InputStream)
     constructor(arg0: InputStream, arg1: string)
-    constructor(arg0: Path[])
+    constructor(arg0: Path)
     constructor(arg0: Parser, arg1: InputStream, arg2: Metadata, arg3: ParseContext)
     constructor(arg0: Parser, arg1: InputStream, arg2: Metadata, arg3: ParseContext, arg4: Executor)
     // private context: ParseContext;

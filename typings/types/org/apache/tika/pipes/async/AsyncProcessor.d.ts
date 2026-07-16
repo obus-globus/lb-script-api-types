@@ -9,8 +9,8 @@ import type { AsyncConfig } from '../../../../../org/apache/tika/pipes/async/Asy
 import type { EmitData } from '../../../../../org/apache/tika/pipes/emitter/EmitData.d.ts'
 import type { TotalCounter } from '../../../../../org/apache/tika/pipes/pipesiterator/TotalCounter.d.ts'
 export class AsyncProcessor extends Object implements Closeable {
-    constructor(arg0: Path[])
-    constructor(arg0: Path[], arg1: FetchEmitTuple[])
+    constructor(arg0: Path)
+    constructor(arg0: Path, arg1: FetchEmitTuple[])
     // private addedEmitterSemaphores: boolean;
     // private asyncConfig: AsyncConfig;
     // private emitData: EmitData[];

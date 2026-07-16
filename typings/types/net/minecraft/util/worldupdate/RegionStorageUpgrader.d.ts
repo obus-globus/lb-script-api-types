@@ -29,9 +29,9 @@ export class RegionStorageUpgrader extends Object {
     // private tagModifiers: { [key: string]: any };
     // private type: string;
     // private upgradeProgress: UpgradeProgress;
-    createStorage(info: RegionStorageInfo, regionFolder: Path[]): SimpleRegionStorage;
+    createStorage(info: RegionStorageInfo, regionFolder: Path): SimpleRegionStorage;
     fileAmount(): number;
-    // private getFilesToProcess(info: RegionStorageInfo, regionFolder: Path[]): FileToUpgrade[];
+    // private getFilesToProcess(info: RegionStorageInfo, regionFolder: Path): FileToUpgrade[];
     init(dimensionKey: ResourceKey<Level>, levelStorage: LevelStorageSource$LevelStorageAccess): void;
     // private onFileFinished(regionFile: RegionFile): void;
     // private processOnePosition(storage: SimpleRegionStorage, pos: ChunkPos): boolean;

@@ -4,7 +4,7 @@ import type { DataGenerator$PackGenerator } from '../../../net/minecraft/data/Da
 import type { DataProvider } from '../../../net/minecraft/data/DataProvider.d.ts'
 import type { PackOutput } from '../../../net/minecraft/data/PackOutput.d.ts'
 export abstract class DataGenerator extends Object {
-    constructor(output: Path[])
+    constructor(output: Path)
     // private allProviderIds: string[];
     // private providersToRun: { [key: string]: DataProvider };
     vanillaPackOutput: PackOutput;

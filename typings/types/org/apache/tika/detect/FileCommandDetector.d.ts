@@ -16,7 +16,7 @@ export class FileCommandDetector extends Object implements Detector {
     readonly timeoutMs: number;
     readonly useMime: boolean;
     detect(arg0: InputStream, arg1: Metadata): MediaType;
-    // private detectOnPath(arg0: Path[], arg1: Metadata): MediaType;
+    // private detectOnPath(arg0: Path, arg1: Metadata): MediaType;
     isUseMime(): boolean;
     setFilePath(arg0: string): void;
     setMaxBytes(arg0: number): void;

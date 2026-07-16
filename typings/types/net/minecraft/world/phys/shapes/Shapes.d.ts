@@ -29,17 +29,17 @@ export class Shapes extends Object {
     static or(paramfirst: VoxelShape, ...paramtail: (Object | null)[]): VoxelShape;
     static rotate(paramshape: VoxelShape, paramrotation: OctahedralGroup): VoxelShape;
     static rotate(paramshape: VoxelShape, paramrotation: OctahedralGroup, paramrotationPoint: Vec3): VoxelShape;
-    static rotateAll(paramnorth: VoxelShape): { [key in Direction]: VoxelShape };
-    static rotateAll(paramnorth: VoxelShape, paraminitial: OctahedralGroup, paramrotationCenter: Vec3): { [key in Direction]: VoxelShape };
-    static rotateAll(paramnorth: VoxelShape, paramrotationCenter: Vec3): { [key in Direction]: VoxelShape };
-    static rotateAllAxis(paramnorth: VoxelShape): { [key in Direction$Axis]: VoxelShape };
-    static rotateAllAxis(paramnorth: VoxelShape, paramrotationCenter: Vec3): { [key in Direction$Axis]: VoxelShape };
-    static rotateAttachFace(paramnorth: VoxelShape): { [key in AttachFace]: { [key in Direction]: VoxelShape } };
-    static rotateAttachFace(paramnorth: VoxelShape, paraminitial: OctahedralGroup): { [key in AttachFace]: { [key in Direction]: VoxelShape } };
-    static rotateHorizontal(paramnorth: VoxelShape): { [key in Direction]: VoxelShape };
-    static rotateHorizontal(paramnorth: VoxelShape, paraminitial: OctahedralGroup): { [key in Direction]: VoxelShape };
-    static rotateHorizontal(paramnorth: VoxelShape, paraminitial: OctahedralGroup, paramrotationCenter: Vec3): { [key in Direction]: VoxelShape };
-    static rotateHorizontalAxis(paramzAxis: VoxelShape): { [key in Direction$Axis]: VoxelShape };
-    static rotateHorizontalAxis(paramzAxis: VoxelShape, paramrotationCenter: Vec3): { [key in Direction$Axis]: VoxelShape };
+    static rotateAll(paramnorth: VoxelShape): Map<Direction, VoxelShape>;
+    static rotateAll(paramnorth: VoxelShape, paraminitial: OctahedralGroup, paramrotationCenter: Vec3): Map<Direction, VoxelShape>;
+    static rotateAll(paramnorth: VoxelShape, paramrotationCenter: Vec3): Map<Direction, VoxelShape>;
+    static rotateAllAxis(paramnorth: VoxelShape): Map<Direction$Axis, VoxelShape>;
+    static rotateAllAxis(paramnorth: VoxelShape, paramrotationCenter: Vec3): Map<Direction$Axis, VoxelShape>;
+    static rotateAttachFace(paramnorth: VoxelShape): Map<AttachFace, Map<Direction, VoxelShape>>;
+    static rotateAttachFace(paramnorth: VoxelShape, paraminitial: OctahedralGroup): Map<AttachFace, Map<Direction, VoxelShape>>;
+    static rotateHorizontal(paramnorth: VoxelShape): Map<Direction, VoxelShape>;
+    static rotateHorizontal(paramnorth: VoxelShape, paraminitial: OctahedralGroup): Map<Direction, VoxelShape>;
+    static rotateHorizontal(paramnorth: VoxelShape, paraminitial: OctahedralGroup, paramrotationCenter: Vec3): Map<Direction, VoxelShape>;
+    static rotateHorizontalAxis(paramzAxis: VoxelShape): Map<Direction$Axis, VoxelShape>;
+    static rotateHorizontalAxis(paramzAxis: VoxelShape, paramrotationCenter: Vec3): Map<Direction$Axis, VoxelShape>;
     constructor()
 }

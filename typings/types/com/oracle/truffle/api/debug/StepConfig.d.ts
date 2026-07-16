@@ -6,8 +6,8 @@ import type { EventContext } from '../../../../../com/oracle/truffle/api/instrum
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class StepConfig extends Object {
     static newBuilder(): StepConfig$Builder;
-    constructor(sourceElements: SourceElement[], preferredAnchors: { [key in SourceElement]: SuspendAnchor[] }, count: number)
-    // private preferredAnchors: { [key in SourceElement]: SuspendAnchor[] };
+    constructor(sourceElements: SourceElement[], preferredAnchors: Map<SourceElement, SuspendAnchor[]>, count: number)
+    // private preferredAnchors: Map<SourceElement, SuspendAnchor[]>;
     // private sourceElements: SourceElement[];
     // private stepCount: number;
     containsSourceElement(session: DebuggerSession, sourceElement: SourceElement): boolean;

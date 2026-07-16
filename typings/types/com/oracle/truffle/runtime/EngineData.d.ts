@@ -102,7 +102,7 @@ export class EngineData extends Object {
     onEngineClosing(): boolean;
     onEngineCreated(engine: Object): void;
     onEnginePatch(newRuntimeOptions: OptionValues, newLoggerFactory: (param0: string) => TruffleLogger, sandboxPolicy: SandboxPolicy): void;
-    onStoreCache(targetPath: Path[], cancelledWord: number): boolean;
+    onStoreCache(targetPath: Path, cancelledWord: number): boolean;
     preinitializeContext(): void;
     putEngineLocal<T extends unknown>(symbol: Class<T>, value: T): void;
     restoreStore(finalizationResult: Object): void;

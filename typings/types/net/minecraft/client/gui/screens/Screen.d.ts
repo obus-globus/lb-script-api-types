@@ -151,7 +151,7 @@ export abstract class Screen extends AbstractContainerEventHandler implements Sc
     keyPressed(event: KeyEvent): boolean;
     liquidbounce$screenInitialized(): boolean;
     onClose(): void;
-    onFilesDrop(files: Path[][]): void;
+    onFilesDrop(files: Path[]): void;
     rebuildWidgets(): void;
     removeWidget(widget: GuiEventListener): void;
     removed(): void;

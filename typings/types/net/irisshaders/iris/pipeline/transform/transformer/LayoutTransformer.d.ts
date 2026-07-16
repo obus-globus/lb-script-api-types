@@ -5,7 +5,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { PatchShaderType } from '../../../../../../net/irisshaders/iris/pipeline/transform/PatchShaderType.d.ts'
 import type { Parameters } from '../../../../../../net/irisshaders/iris/pipeline/transform/parameter/Parameters.d.ts'
 export class LayoutTransformer extends Object {
-    static transformGrouped(paramarg0: ASTParser, paramarg1: { [key in PatchShaderType]: TranslationUnit }, paramarg2: Parameters): void;
+    static transformGrouped(paramarg0: ASTParser, paramarg1: Map<PatchShaderType, TranslationUnit>, paramarg2: Parameters): void;
     static transformIn(paramarg0: { [key: string]: any }, paramarg1: ASTParser, paramarg2: TranslationUnit, paramarg3: Root, paramarg4: Parameters): void;
     static transformOut(paramarg0: ASTParser, paramarg1: TranslationUnit, paramarg2: Root, paramarg3: Parameters): { [key: string]: any };
     constructor()

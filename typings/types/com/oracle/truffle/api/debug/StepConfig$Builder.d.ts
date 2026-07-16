@@ -4,7 +4,7 @@ import type { SuspendAnchor } from '../../../../../com/oracle/truffle/api/debug/
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class StepConfig$Builder extends Object {
     private constructor(null_: StepConfig)
-    // private preferredAnchors: { [key in SourceElement]: SuspendAnchor[] };
+    // private preferredAnchors: Map<SourceElement, SuspendAnchor[]>;
     // private stepCount: number;
     // private stepElements: SourceElement[];
     build(): StepConfig;

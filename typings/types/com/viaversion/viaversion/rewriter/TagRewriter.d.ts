@@ -11,10 +11,10 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class TagRewriter<C extends ClientboundPacketType> extends Object implements TagRewriter_2 {
     constructor(arg0: Protocol<C, any, any, any>)
     // private protocol: Protocol<C, any, any, any>;
-    // private toAdd: { [key in RegistryType]: TagData[] };
-    // private toRemove: { [key in RegistryType]: string[] };
+    // private toAdd: Map<RegistryType, TagData[]>;
+    // private toRemove: Map<RegistryType, string[]>;
     // private toRemoveRegistries: string[];
-    // private toRename: { [key in RegistryType]: { [key: string]: string } };
+    // private toRename: Map<RegistryType, { [key: string]: string }>;
     addEmptyTag(arg0: RegistryType, arg1: string): void;
     addEmptyTags(arg0: RegistryType, ...arg1: string[]): void;
     addEntityTag(arg0: string, ...arg1: EntityType[]): void;

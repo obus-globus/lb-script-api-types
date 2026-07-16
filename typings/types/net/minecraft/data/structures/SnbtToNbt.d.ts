@@ -20,22 +20,22 @@ export class SnbtToNbt extends Object implements DataProvider {
     static FIXED_ORDER_FIELDS: (param0: string) => number;
     static KEY_COMPARATOR: (param0: Object) => boolean;
     static LOGGER: Logger;
-    static saveAll(paramcache: CachedOutput, paramcodec: Codec<Object>, parampathGetter: (param0: Object | null) => Path[][], paramcontents: Map<Object | null, Object | null>): CompletableFuture<Object>;
-    static saveAll(paramcache: CachedOutput, paramserializer: (param0: Object | null) => JsonElement, parampathGetter: (param0: Object | null) => Path[][], paramcontents: Map<Object | null, Object | null>): CompletableFuture<Object>;
+    static saveAll(paramcache: CachedOutput, paramcodec: Codec<Object>, parampathGetter: (param0: Object | null) => Path, paramcontents: Map<Object | null, Object | null>): CompletableFuture<Object>;
+    static saveAll(paramcache: CachedOutput, paramserializer: (param0: Object | null) => JsonElement, parampathGetter: (param0: Object | null) => Path, paramcontents: Map<Object | null, Object | null>): CompletableFuture<Object>;
     static saveAll(paramcache: CachedOutput, paramcodec: Codec<Object>, parampathProvider: PackOutput$PathProvider, paramentries: Map<Identifier, Object | null>): CompletableFuture<Object>;
-    static saveStable(paramcache: CachedOutput, paramcodec: Codec<Object>, paramvalue: Object | null, parampath: Path[][]): CompletableFuture<Object>;
-    static saveStable(paramcache: CachedOutput, paramregistries: HolderLookup$Provider, paramcodec: Codec<Object>, paramvalue: Object | null, parampath: Path[][]): CompletableFuture<Object>;
-    static saveStable(paramcache: CachedOutput, paramroot: JsonElement, parampath: Path[][]): CompletableFuture<Object>;
-    constructor(output: PackOutput, inputFolder: Path[])
-    constructor(output: PackOutput, inputFolders: Path[][])
+    static saveStable(paramcache: CachedOutput, paramcodec: Codec<Object>, paramvalue: Object | null, parampath: Path): CompletableFuture<Object>;
+    static saveStable(paramcache: CachedOutput, paramregistries: HolderLookup$Provider, paramcodec: Codec<Object>, paramvalue: Object | null, parampath: Path): CompletableFuture<Object>;
+    static saveStable(paramcache: CachedOutput, paramroot: JsonElement, parampath: Path): CompletableFuture<Object>;
+    constructor(output: PackOutput, inputFolder: Path)
+    constructor(output: PackOutput, inputFolders: Path[])
     // private filters: (param0: string, param1: CompoundTag) => CompoundTag[];
-    // private inputFolders: Path[][];
+    // private inputFolders: Path[];
     // private output: PackOutput;
     addFilter(filter: (param0: string, param1: CompoundTag) => CompoundTag): SnbtToNbt;
     // private applyFilters(name: string, input: CompoundTag): CompoundTag;
     getName(): string;
-    // private getName(root: Path[], path: Path[]): string;
-    // private readStructure(path: Path[], name: string): SnbtToNbt$TaskResult;
+    // private getName(root: Path, path: Path): string;
+    // private readStructure(path: Path, name: string): SnbtToNbt$TaskResult;
     run(cache: CachedOutput): CompletableFuture<Object>;
-    // private storeStructureIfChanged(cache: CachedOutput, task: SnbtToNbt$TaskResult, output: Path[]): void;
+    // private storeStructureIfChanged(cache: CachedOutput, task: SnbtToNbt$TaskResult, output: Path): void;
 }

@@ -7,15 +7,15 @@ import type { EventLogDirectory$CompressedFile } from '../../../../net/minecraft
 import type { EventLogDirectory$File } from '../../../../net/minecraft/util/eventlog/EventLogDirectory$File.d.ts'
 import type { EventLogDirectory$FileId } from '../../../../net/minecraft/util/eventlog/EventLogDirectory$FileId.d.ts'
 export class EventLogDirectory$RawFile extends Record implements EventLogDirectory$File {
-    constructor(path: Path[], id: EventLogDirectory$FileId)
+    constructor(path: Path, id: EventLogDirectory$FileId)
     // private id: EventLogDirectory$FileId;
-    // private path: Path[];
+    // private path: Path;
     compress(): EventLogDirectory$CompressedFile;
     equals(o: Object | null): boolean;
     hashCode(): number;
     id(): EventLogDirectory$FileId;
     openChannel(): FileChannel;
     openReader(): Reader;
-    path(): Path[];
+    path(): Path;
     toString(): string;
 }

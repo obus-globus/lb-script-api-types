@@ -20,7 +20,7 @@ export abstract class AbstractOrigin<T extends unknown, B extends AbstractOrigin
     getFile(): File;
     getInputStream(...arg0: OpenOption[]): InputStream;
     getOutputStream(...arg0: OpenOption[]): OutputStream;
-    getPath(): Path[];
+    getPath(): Path;
     getRandomAccessFile(...arg0: OpenOption[]): RandomAccessFile;
     getReader(arg0: Charset): Reader;
     // private getSimpleClassName(): string;

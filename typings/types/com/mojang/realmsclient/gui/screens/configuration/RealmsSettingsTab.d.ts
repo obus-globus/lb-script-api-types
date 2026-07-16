@@ -14,14 +14,14 @@ import type { GridLayoutTab } from '../../../../../../net/minecraft/client/gui/c
 import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
 export class RealmsSettingsTab extends GridLayoutTab implements RealmsConfigurationTab {
     static TITLE: Component;
-    constructor(configurationScreen: RealmsConfigureWorldScreen, minecraft: Minecraft, serverData: RealmsServer, regionServiceQuality: { [key in RealmsRegion]: ServiceQuality })
+    constructor(configurationScreen: RealmsConfigureWorldScreen, minecraft: Minecraft, serverData: RealmsServer, regionServiceQuality: Map<RealmsRegion, ServiceQuality>)
     // private closeOpenButton: Button;
     // private configurationScreen: RealmsConfigureWorldScreen;
     // private descEdit: EditBox;
     // private minecraft: Minecraft;
     // private nameEdit: EditBox;
     // private preferredRegionSelection: RealmsSettingsTab$RegionSelection;
-    // private regionServiceQuality: { [key in RealmsRegion]: ServiceQuality };
+    // private regionServiceQuality: Map<RealmsRegion, ServiceQuality>;
     // private selectedRegionImageWidget: ImageWidget;
     // private selectedRegionStringWidget: StringWidget;
     // private serverData: RealmsServer;

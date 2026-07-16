@@ -70,7 +70,7 @@ export class Util extends Object {
     static copyAndAdd(paramlist: (Object | null)[], paramelement: Object | null): (Object | null)[];
     static copyAndAdd(paramlist: (Object | null)[], paramelements: Object | null): (Object | null)[];
     static copyAndPut(parammap: Map<Object | null, Object | null>, paramkey: Object | null, paramvalue: Object | null): Map<Object | null, Object | null>;
-    static copyBetweenDirs(paramsourceDir: Path[][], paramtargetDir: Path[][], paramsourcePath: Path[][]): void;
+    static copyBetweenDirs(paramsourceDir: Path, paramtargetDir: Path, paramsourcePath: Path): void;
     static createIndexIdentityLookup(paramvalues: (Object | null)[]): (param0: Object | null) => number;
     static createIndexLookup(paramvalues: (Object | null)[]): (param0: Object | null) => number;
     static describeError(paramerr: Throwable): string;
@@ -121,9 +121,9 @@ export class Util extends Object {
     static readTypedOrThrow(paramtype: Type<Object>, paramdynamic: Dynamic<Object>): Typed<Object>;
     static readTypedOrThrow(paramtype: Type<Object>, paramdynamic: Dynamic<Object>, paramacceptPartial: boolean): Typed<Object>;
     static runNamed(paramrunnable: () => void, paramname: string): void;
-    static safeMoveFile(paramfromPath: Path[][], paramtoPath: Path[][], ...paramoptions: (Object | null)[]): boolean;
-    static safeReplaceFile(paramtargetPath: Path[][], paramnewPath: Path[][], parambackupPath: Path[][]): void;
-    static safeReplaceOrMoveFile(paramtargetPath: Path[][], paramnewPath: Path[][], parambackupPath: Path[][], paramnoRollback: boolean): boolean;
+    static safeMoveFile(paramfromPath: Path, paramtoPath: Path, ...paramoptions: (Object | null)[]): boolean;
+    static safeReplaceFile(paramtargetPath: Path, paramnewPath: Path, parambackupPath: Path): void;
+    static safeReplaceOrMoveFile(paramtargetPath: Path, paramnewPath: Path, parambackupPath: Path, paramnoRollback: boolean): boolean;
     static sanitizeName(paramvalue: string, paramisAllowedChar: (param0: string) => boolean): string;
     static sequence(paramfutures: CompletableFuture<Object>[]): CompletableFuture<(Object | null)[]>;
     static sequenceFailFast(paramfutures: CompletableFuture<Object>[]): CompletableFuture<(Object | null)[]>;

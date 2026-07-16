@@ -6,15 +6,15 @@ import type { CustomTextureData } from '../../../../net/irisshaders/iris/shaderp
 import type { TextureStage } from '../../../../net/irisshaders/iris/shaderpack/texture/TextureStage.d.ts'
 import type { AbstractTexture } from '../../../../net/minecraft/client/renderer/texture/AbstractTexture.d.ts'
 export class CustomTextureManager extends Object {
-    constructor(arg0: PackDirectives, arg1: { [key in TextureStage]: { [key: string]: CustomTextureData } }, arg2: { [key: string]: CustomTextureData }, arg3: CustomTextureData)
-    readonly customTextureIdMap: { [key in TextureStage]: { [key: string]: TextureAccess } };
+    constructor(arg0: PackDirectives, arg1: Map<TextureStage, { [key: string]: CustomTextureData }>, arg2: { [key: string]: CustomTextureData }, arg3: CustomTextureData)
+    readonly customTextureIdMap: Map<TextureStage, { [key: string]: TextureAccess }>;
     readonly irisCustomTextures: { [key: string]: TextureAccess };
     // private noise: TextureAccess;
     // private ownedRawTextures: GlTexture[];
     // private ownedTextures: AbstractTexture[];
     // private createCustomTexture(arg0: CustomTextureData): TextureAccess;
     destroy(): void;
-    getCustomTextureIdMap(): { [key in TextureStage]: { [key: string]: TextureAccess } };
+    getCustomTextureIdMap(): Map<TextureStage, { [key: string]: TextureAccess }>;
     getCustomTextureIdMap(arg0: TextureStage): { [key: string]: TextureAccess };
     getIrisCustomTextures(): { [key: string]: TextureAccess };
     getNoiseTexture(): TextureAccess;

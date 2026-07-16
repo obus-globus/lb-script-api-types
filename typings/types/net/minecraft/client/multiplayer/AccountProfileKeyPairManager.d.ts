@@ -10,11 +10,11 @@ import type { ProfileKeyPairManager } from '../../../../net/minecraft/client/mul
 import type { ProfileKeyPair } from '../../../../net/minecraft/world/entity/player/ProfileKeyPair.d.ts'
 export class AccountProfileKeyPairManager extends Object implements ProfileKeyPairManager {
     static EMPTY_KEY_MANAGER: ProfileKeyPairManager;
-    static create(paramuserApiService: UserApiService, paramuser: User, paramgameDirectory: Path[][]): ProfileKeyPairManager;
-    constructor(userApiService: UserApiService, profileId: UUID, gameDirectory: Path[])
+    static create(paramuserApiService: UserApiService, paramuser: User, paramgameDirectory: Path): ProfileKeyPairManager;
+    constructor(userApiService: UserApiService, profileId: UUID, gameDirectory: Path)
     // private keyPair: CompletableFuture<Optional<ProfileKeyPair>>;
     // private nextProfileKeyRefreshTime: Instant;
-    // private profileKeyPairPath: Path[];
+    // private profileKeyPairPath: Path;
     // private userApiService: UserApiService;
     // private fetchProfileKeyPair(userApiService: UserApiService): ProfileKeyPair;
     prepareKeyPair(): CompletableFuture<Optional<ProfileKeyPair>>;

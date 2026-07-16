@@ -43,7 +43,7 @@ export class LadderBlock extends Block implements SimpleWaterloggedBlock {
     static FILTERED_REGISTRIES: ResourceKey<FeatureElement[]>[];
     static INDESTRUCTIBLE: number;
     static INSTANT: number;
-    static SHAPES: { [key in Direction]: VoxelShape };
+    static SHAPES: Map<Direction, VoxelShape>;
     static UPDATE_ALL: number;
     static UPDATE_ALL_IMMEDIATE: number;
     static UPDATE_CLIENTS: number;

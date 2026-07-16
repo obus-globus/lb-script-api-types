@@ -6,7 +6,7 @@ import type { AbstractSupplier } from '../../../../../org/apache/commons/io/buil
 import type { IOBiFunction } from '../../../../../org/apache/commons/io/function/IOBiFunction.d.ts'
 export abstract class SimplePathVisitor$AbstractBuilder<T extends unknown, B extends AbstractSupplier<T, B>> extends AbstractSupplier<T, B> {
     constructor()
-    // private visitFileFailedFunction: (param0: Path[], param1: IOException) => FileVisitResult;
-    getVisitFileFailedFunction(): (param0: Path[], param1: IOException) => FileVisitResult;
-    setVisitFileFailedFunction(arg0: (param0: Path[], param1: IOException) => FileVisitResult): B;
+    // private visitFileFailedFunction: (param0: Path, param1: IOException) => FileVisitResult;
+    getVisitFileFailedFunction(): (param0: Path, param1: IOException) => FileVisitResult;
+    setVisitFileFailedFunction(arg0: (param0: Path, param1: IOException) => FileVisitResult): B;
 }

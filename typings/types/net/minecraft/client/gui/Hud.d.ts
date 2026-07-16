@@ -43,7 +43,7 @@ export class Hud extends Object implements MixinHudAccessor, HudAccessor {
     readonly bossOverlay: BossHealthOverlay;
     readonly chat: ChatComponent;
     // private contextualInfoBar: Pair<Hud$ContextualInfo, ContextualBar>;
-    // private contextualInfoBars: { [key in Hud$ContextualInfo]: () => ContextualBar };
+    // private contextualInfoBars: Map<Hud$ContextualInfo, () => ContextualBar>;
     readonly debugOverlay: DebugScreenOverlay;
     // private deferredSubtitles: () => void;
     // private displayHealth: number;

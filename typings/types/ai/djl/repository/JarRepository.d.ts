@@ -14,7 +14,7 @@ export class JarRepository extends AbstractRepository {
     // private originalUri: string;
     // private queryString: string;
     // private resolved: boolean;
-    download(arg0: Path[], arg1: URI, arg2: Artifact$Item, arg3: Progress): void;
+    download(arg0: Path, arg1: URI, arg2: Artifact$Item, arg3: Progress): void;
     // private getMetadata(): Metadata;
     getResources(): MRL[];
     isRemote(): boolean;

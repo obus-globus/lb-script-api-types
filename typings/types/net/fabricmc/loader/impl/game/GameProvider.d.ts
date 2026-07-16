@@ -19,7 +19,7 @@ export interface GameProvider extends Object{
     getGameId(): string;
     getGameName(): string;
     getLaunchArguments(arg0: boolean): string[];
-    getLaunchDirectory(): Path[];
+    getLaunchDirectory(): Path;
     getNormalizedGameVersion(): string;
     getRawGameVersion(): string;
     getRuntimeNamespace(arg0: string): string;

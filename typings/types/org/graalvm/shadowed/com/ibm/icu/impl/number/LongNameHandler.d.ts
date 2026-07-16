@@ -18,9 +18,9 @@ export class LongNameHandler extends Object implements LongNameMultiplexer$Paren
     static forCurrencyLongNames(paramlocale: ULocale, paramcurrency: Currency, paramrules: PluralRules, paramparent: MicroPropsGenerator): LongNameHandler;
     static forMeasureUnit(paramlocale: ULocale, paramunit: MeasureUnit, paramwidth: NumberFormatter$UnitWidth, paramunitDisplayCase: string, paramrules: PluralRules, paramparent: MicroPropsGenerator): LongNameHandler;
     static getUnitDisplayName(paramlocale: ULocale, paramunit: MeasureUnit, paramwidth: NumberFormatter$UnitWidth): string;
-    private constructor(modifiers: { [key in StandardPlural]: SimpleModifier }, rules: PluralRules, parent: MicroPropsGenerator)
+    private constructor(modifiers: Map<StandardPlural, SimpleModifier>, rules: PluralRules, parent: MicroPropsGenerator)
     // private gender: string;
-    // private modifiers: { [key in StandardPlural]: SimpleModifier };
+    // private modifiers: Map<StandardPlural, SimpleModifier>;
     // private parent: MicroPropsGenerator;
     // private rules: PluralRules;
     getModifier(signum: Modifier$Signum, plural: StandardPlural): Modifier;

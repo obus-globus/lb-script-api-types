@@ -13,10 +13,10 @@ export interface Repository extends Object{
     dataset(arg0: Application, arg1: string, arg2: string): MRL;
     dataset(arg0: Application, arg1: string, arg2: string, arg3: string): MRL;
     getBaseUri(): URI;
-    getCacheDirectory(): Path[];
-    getFile(arg0: Artifact$Item, arg1: string): Path[];
+    getCacheDirectory(): Path;
+    getFile(arg0: Artifact$Item, arg1: string): Path;
     getName(): string;
-    getResourceDirectory(arg0: Artifact): Path[];
+    getResourceDirectory(arg0: Artifact): Path;
     getResources(): MRL[];
     isRemote(): boolean;
     listDirectory(arg0: Artifact$Item, arg1: string): string[];

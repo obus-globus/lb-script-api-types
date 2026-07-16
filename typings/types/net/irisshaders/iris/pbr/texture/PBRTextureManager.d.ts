@@ -16,8 +16,8 @@ export class PBRTextureManager extends Object {
     clear(): void;
     close(): void;
     // private closeHolder(arg0: PBRTextureHolder): void;
-    // private dumpHolder(arg0: PBRTextureHolder, arg1: Path[]): void;
-    dumpTextures(arg0: Path[]): void;
+    // private dumpHolder(arg0: PBRTextureHolder, arg1: Path): void;
+    dumpTextures(arg0: Path): void;
     getHolder(arg0: number): PBRTextureHolder;
     getOrLoadHolder(arg0: number): PBRTextureHolder;
     init(): void;

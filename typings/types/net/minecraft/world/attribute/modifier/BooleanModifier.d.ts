@@ -8,14 +8,14 @@ import type { AttributeModifier } from '../../../../../net/minecraft/world/attri
 import type { AttributeModifier$OperationId } from '../../../../../net/minecraft/world/attribute/modifier/AttributeModifier$OperationId.d.ts'
 export class BooleanModifier extends Enum<BooleanModifier> implements AttributeModifier<boolean, boolean> {
     static AND: BooleanModifier;
-    static ARGB_COLOR_LIBRARY: { [key in AttributeModifier$OperationId]: AttributeModifier<number, Object> };
-    static BOOLEAN_LIBRARY: { [key in AttributeModifier$OperationId]: AttributeModifier<boolean, Object> };
-    static FLOAT_LIBRARY: { [key in AttributeModifier$OperationId]: AttributeModifier<number, Object> };
-    static INTEGER_LIBRARY: { [key in AttributeModifier$OperationId]: AttributeModifier<number, Object> };
+    static ARGB_COLOR_LIBRARY: Map<AttributeModifier$OperationId, AttributeModifier<number, Object>>;
+    static BOOLEAN_LIBRARY: Map<AttributeModifier$OperationId, AttributeModifier<boolean, Object>>;
+    static FLOAT_LIBRARY: Map<AttributeModifier$OperationId, AttributeModifier<number, Object>>;
+    static INTEGER_LIBRARY: Map<AttributeModifier$OperationId, AttributeModifier<number, Object>>;
     static NAND: BooleanModifier;
     static NOR: BooleanModifier;
     static OR: BooleanModifier;
-    static RGB_COLOR_LIBRARY: { [key in AttributeModifier$OperationId]: AttributeModifier<number, Object> };
+    static RGB_COLOR_LIBRARY: Map<AttributeModifier$OperationId, AttributeModifier<number, Object>>;
     static XNOR: BooleanModifier;
     static XOR: BooleanModifier;
     static override(): AttributeModifier<Object, Object>;

@@ -39,7 +39,7 @@ export abstract class AbstractPolyglotImpl extends Object {
     buildEngine(permittedLanguages: string[], sandboxPolicy: SandboxPolicy, out: OutputStream, err: OutputStream, in_: InputStream, options: { [key: string]: string }, allowExperimentalOptions: boolean, boundEngine: boolean, messageInterceptor: MessageTransport, logHandler: Object, hostLanguage: Object, hostLanguageOnly: boolean, registerInActiveEngines: boolean, polyglotHostService: Object): Engine;
     buildLimits(statementLimit: number, statementLimitSourceFilter: (param0: Object) => boolean, onLimit: (param0: Object) => void): Object;
     buildSource(language: string, origin: Object, uri: URI, name: string, mimeType: string, content: Object, interactive: boolean, internal: boolean, cached: boolean, encoding: Charset, url: URL, path: string, options: { [key: string]: string }): Object;
-    copyResources(targetFolder: Path[], ...components: string[]): boolean;
+    copyResources(targetFolder: Path, ...components: string[]): boolean;
     createAllEngineOptionDescriptors(): OptionDescriptor[];
     createEngineOptionDescriptors(): OptionDescriptor[];
     createHostAccess(): Object;

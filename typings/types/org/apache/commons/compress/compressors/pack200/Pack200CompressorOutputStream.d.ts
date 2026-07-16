@@ -15,7 +15,7 @@ export class Pack200CompressorOutputStream extends CompressorOutputStream<Output
     close(): void;
     finish(): void;
     write(arg0: File): number;
-    write(arg0: Path[]): number;
+    write(arg0: Path): number;
     write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;

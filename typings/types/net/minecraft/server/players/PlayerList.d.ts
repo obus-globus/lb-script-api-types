@@ -100,7 +100,7 @@ export abstract class PlayerList extends Object {
     isUsingWhitelist(): boolean;
     isWhiteListed(nameAndId: NameAndId): boolean;
     loadPlayerData(nameAndId: NameAndId): Optional<CompoundTag>;
-    // private locateStatsFile(gameProfile: GameProfile): Path[];
+    // private locateStatsFile(gameProfile: GameProfile): Path;
     op(nameAndId: NameAndId): void;
     op(nameAndId: NameAndId, permissions: Optional<LevelBasedPermissionSet>, canBypassPlayerLimit: Optional<boolean>): void;
     placeNewPlayer(connection: Connection, player: ServerPlayer, cookie: CommonListenerCookie): void;

@@ -49,10 +49,10 @@ export class RenderSectionManager extends Object implements ShadowRenderListAcce
     // private cameraStableSince: number;
     // private cameraTimingControl: AsyncCameraTimingControl;
     readonly chunkRenderer: ChunkRenderer;
-    // private cullResults: { [key in CullType]: SectionTree };
+    // private cullResults: Map<CullType, SectionTree>;
     // private deferredTasks: number;
     readonly frame: number;
-    // private importantTasks: { [key in DeferMode]: RenderSection[] };
+    // private importantTasks: Map<DeferMode, RenderSection[]>;
     // private jobDurationEstimator: JobDurationEstimator;
     // private jobUploadDurationEstimator: UploadDurationEstimator;
     // private lastBlockingCollector: ChunkJobCollector;

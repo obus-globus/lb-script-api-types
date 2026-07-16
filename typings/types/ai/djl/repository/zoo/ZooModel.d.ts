@@ -32,7 +32,7 @@ export class ZooModel<I extends unknown, O extends unknown> extends Object imple
     getArtifactNames(): string[];
     getBlock(): Block;
     getDataType(): DataType;
-    getModelPath(): Path[];
+    getModelPath(): Path;
     getNDManager(): NDManager;
     getName(): string;
     getProperties(): { [key: string]: string };
@@ -42,10 +42,10 @@ export class ZooModel<I extends unknown, O extends unknown> extends Object imple
     getWrappedModel(): Model;
     intProperty(arg0: string, arg1: number): number;
     load(arg0: InputStream): void;
-    load(arg0: Path[]): void;
-    load(arg0: Path[], arg1: string): void;
+    load(arg0: Path): void;
+    load(arg0: Path, arg1: string): void;
     load(arg0: InputStream, arg1: { [key: string]: Object | null }): void;
-    load(arg0: Path[], arg1: string, arg2: { [key: string]: Object | null }): void;
+    load(arg0: Path, arg1: string, arg2: { [key: string]: Object | null }): void;
     longProperty(arg0: string, arg1: number): number;
     newPredictor(arg0: Translator<I, O>): Predictor<I, O>;
     newPredictor(): Predictor<I, O>;
@@ -53,7 +53,7 @@ export class ZooModel<I extends unknown, O extends unknown> extends Object imple
     newPredictor<P extends unknown, Q extends unknown>(arg0: Translator<P, Q>, arg1: Device): Predictor<P, Q>;
     newTrainer(arg0: TrainingConfig): Trainer;
     quantize(): void;
-    save(arg0: Path[], arg1: string): void;
+    save(arg0: Path, arg1: string): void;
     setBlock(arg0: Block): void;
     setDataType(arg0: DataType): void;
     setProperty(arg0: string, arg1: string): void;

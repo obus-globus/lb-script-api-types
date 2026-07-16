@@ -5,5 +5,5 @@ import type { AbstractOrigin$AbstractRandomAccessFileOrigin } from '../../../../
 export class AbstractOrigin$IORandomAccessFileOrigin extends AbstractOrigin$AbstractRandomAccessFileOrigin<IORandomAccessFile, AbstractOrigin$IORandomAccessFileOrigin> {
     constructor(arg0: IORandomAccessFile)
     getFile(): File;
-    getPath(): Path[];
+    getPath(): Path;
 }

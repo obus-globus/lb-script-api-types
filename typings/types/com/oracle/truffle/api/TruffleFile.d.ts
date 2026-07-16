@@ -46,20 +46,20 @@ export class TruffleFile extends Object {
     static UNIX_PERMISSIONS: TruffleFile$AttributeDescriptor<PosixFilePermission[]>;
     static UNIX_RDEV: TruffleFile$AttributeDescriptor<number>;
     static UNIX_UID: TruffleFile$AttributeDescriptor<number>;
-    constructor(fileSystemContext: TruffleFile$FileSystemContext, path: Path[])
-    constructor(fileSystemContext: TruffleFile$FileSystemContext, path: Path[], normalizedPath: Path[], isEmptyPath: boolean)
+    constructor(fileSystemContext: TruffleFile$FileSystemContext, path: Path)
+    constructor(fileSystemContext: TruffleFile$FileSystemContext, path: Path, normalizedPath: Path, isEmptyPath: boolean)
     // private fileSystemContext: TruffleFile$FileSystemContext;
     // private isEmptyPath: boolean;
-    // private normalizedPath: Path[];
-    readonly path: Path[];
+    // private normalizedPath: Path;
+    readonly path: Path;
     // private checkAccess(modes: AccessMode[], ...linkOptions: LinkOption[]): boolean;
     // private checkAccess(...modes: AccessMode[]): boolean;
     // private checkFileOperationPreconditions(): void;
     copy(target: TruffleFile, ...options: CopyOption[]): void;
-    // private createDirAndCheck(dir: Path[], ...attrs: FileAttribute<Object>[]): Path[];
+    // private createDirAndCheck(dir: Path, ...attrs: FileAttribute<Object>[]): Path;
     createDirectories(...attributes: FileAttribute<Object>[]): void;
     createDirectory(...attributes: FileAttribute<Object>[]): void;
-    // private createDirectoryImpl(dir: Path[], ...attrs: FileAttribute<Object>[]): Path[];
+    // private createDirectoryImpl(dir: Path, ...attrs: FileAttribute<Object>[]): Path;
     createFile(...attributes: FileAttribute<Object>[]): void;
     createLink(target: TruffleFile): void;
     createSymbolicLink(target: TruffleFile, ...attrs: FileAttribute<Object>[]): void;
@@ -71,11 +71,11 @@ export class TruffleFile extends Object {
     endsWith(other: string): boolean;
     equals(other: Object | null): boolean;
     exists(...options: LinkOption[]): boolean;
-    // private findExisting(forPath: Path[]): Path[];
+    // private findExisting(forPath: Path): Path;
     getAbsoluteFile(): TruffleFile;
     getAttribute<T extends unknown>(attribute: TruffleFile$AttributeDescriptor<T>, ...linkOptions: LinkOption[]): T;
-    // private getAttributeImpl<T extends unknown>(forPath: Path[], attribute: string, type: Class<T>, ...options: LinkOption[]): T;
-    // private getAttributeImpl(forPath: Path[], attribute: string, ...options: LinkOption[]): Object;
+    // private getAttributeImpl<T extends unknown>(forPath: Path, attribute: string, type: Class<T>, ...options: LinkOption[]): T;
+    // private getAttributeImpl(forPath: Path, attribute: string, ...options: LinkOption[]): Object;
     // private getAttributeImpl<T extends unknown>(attribute: string, type: Class<T>, ...options: LinkOption[]): T;
     getAttributes(attributes: TruffleFile$AttributeDescriptor<Object>[], ...linkOptions: LinkOption[]): TruffleFile$Attributes;
     getCanonicalFile(...options: LinkOption[]): TruffleFile;
@@ -92,7 +92,7 @@ export class TruffleFile extends Object {
     getPath(): string;
     getPosixPermissions(...linkOptions: LinkOption[]): PosixFilePermission[];
     getSPIFileSystem(): FileSystem;
-    getSPIPath(): Path[];
+    getSPIPath(): Path;
     hashCode(): number;
     isAbsolute(): boolean;
     isDirectory(...options: LinkOption[]): boolean;
@@ -127,7 +127,7 @@ export class TruffleFile extends Object {
     size(...options: LinkOption[]): number;
     startsWith(other: TruffleFile): boolean;
     startsWith(other: string): boolean;
-    // private toAbsolutePathImpl(): Path[][];
+    // private toAbsolutePathImpl(): Path[];
     toRelativeUri(): URI;
     toString(): string;
     toUri(): URI;

@@ -46,7 +46,7 @@ export class WallBlock extends Block implements SimpleWaterloggedBlock {
     static INDESTRUCTIBLE: number;
     static INSTANT: number;
     static NORTH: EnumProperty<WallSide>;
-    static PROPERTY_BY_DIRECTION: { [key in Direction]: EnumProperty<WallSide> };
+    static PROPERTY_BY_DIRECTION: Map<Direction, EnumProperty<WallSide>>;
     static SOUTH: EnumProperty<WallSide>;
     static UP: BooleanProperty;
     static UPDATE_ALL: number;

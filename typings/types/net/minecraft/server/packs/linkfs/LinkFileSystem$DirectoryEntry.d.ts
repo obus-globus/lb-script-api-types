@@ -4,10 +4,10 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class LinkFileSystem$DirectoryEntry extends Record {
     constructor()
     // private children: { [key: string]: LinkFileSystem$DirectoryEntry };
-    // private files: { [key: string]: Path[] };
+    // private files: { [key: string]: Path };
     children(): { [key: string]: LinkFileSystem$DirectoryEntry };
     equals(o: Object | null): boolean;
-    files(): { [key: string]: Path[] };
+    files(): { [key: string]: Path };
     hashCode(): number;
     toString(): string;
 }

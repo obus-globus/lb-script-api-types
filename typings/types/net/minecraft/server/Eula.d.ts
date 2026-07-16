@@ -1,9 +1,9 @@
 import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class Eula extends Object {
-    constructor(file: Path[])
+    constructor(file: Path)
     // private agreed: boolean;
-    // private file: Path[];
+    // private file: Path;
     hasAgreedToEULA(): boolean;
     // private readFile(): boolean;
     // private saveDefaults(): void;

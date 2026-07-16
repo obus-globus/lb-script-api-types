@@ -58,13 +58,13 @@ export class CpioArchiveOutputStream extends ArchiveOutputStream<CpioArchiveEntr
     close(): void;
     closeArchiveEntry(): void;
     createArchiveEntry(arg0: File, arg1: string): CpioArchiveEntry;
-    createArchiveEntry(arg0: Path[], arg1: string, ...arg2: LinkOption[]): CpioArchiveEntry;
+    createArchiveEntry(arg0: Path, arg1: string, ...arg2: LinkOption[]): CpioArchiveEntry;
     // private encode(arg0: string): number[];
     finish(): void;
     // private pad(arg0: number): void;
     putArchiveEntry(arg0: CpioArchiveEntry): void;
     write(arg0: File): number;
-    write(arg0: Path[]): number;
+    write(arg0: Path): number;
     write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;

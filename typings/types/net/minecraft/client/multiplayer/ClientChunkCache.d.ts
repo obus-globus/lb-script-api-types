@@ -38,7 +38,7 @@ export class ClientChunkCache extends ChunkSource {
     removedEmptySections(): (Object | null)[];
     removedLoadedChunks(): (Object | null)[];
     replaceBiomes(chunkX: number, chunkZ: number, readBuffer: FriendlyByteBuf): void;
-    replaceWithPacketData(chunkX: number, chunkZ: number, readBuffer: FriendlyByteBuf, heightmaps: { [key in Heightmap$Types]: number[] }, blockEntities: (param0: (param0: BlockPos, param1: BlockEntityType<any>, param2: CompoundTag) => void) => void): LevelChunk;
+    replaceWithPacketData(chunkX: number, chunkZ: number, readBuffer: FriendlyByteBuf, heightmaps: Map<Heightmap$Types, number[]>, blockEntities: (param0: (param0: BlockPos, param1: BlockEntityType<any>, param2: CompoundTag) => void) => void): LevelChunk;
     tick(haveTime: () => boolean, tickChunks: boolean): void;
     updateViewCenter(x: number, z: number): void;
     updateViewRadius(viewRange: number): void;

@@ -25,7 +25,7 @@ export abstract class BaseModel extends Object implements Model {
     dataType: DataType;
     // private inputData: Pair<string, Shape>[];
     // private manager: NDManager;
-    // private modelDir: Path[];
+    // private modelDir: Path;
     // private modelName: string;
     properties: { [key: string]: string };
     // private wasLoaded: boolean;
@@ -40,7 +40,7 @@ export abstract class BaseModel extends Object implements Model {
     getArtifactNames(): string[];
     getBlock(): Block;
     getDataType(): DataType;
-    getModelPath(): Path[];
+    getModelPath(): Path;
     getNDManager(): NDManager;
     getName(): string;
     getProperties(): { [key: string]: string };
@@ -49,21 +49,21 @@ export abstract class BaseModel extends Object implements Model {
     intProperty(arg0: string, arg1: number): number;
     load(arg0: InputStream): void;
     load(arg0: InputStream, arg1: { [key: string]: Object | null }): void;
-    load(arg0: Path[]): void;
-    load(arg0: Path[], arg1: string): void;
+    load(arg0: Path): void;
+    load(arg0: Path, arg1: string): void;
     loadBlock(arg0: string, arg1: { [key: string]: Object | null }): void;
     longProperty(arg0: string, arg1: number): number;
     newPredictor<I extends unknown, O extends unknown>(arg0: Translator<I, O>): Predictor<I, O>;
     newPredictor<I extends unknown, O extends unknown>(arg0: Translator<I, O>, arg1: Device): Predictor<I, O>;
     newTrainer(arg0: TrainingConfig): Trainer;
-    paramPathResolver(arg0: string, arg1: { [key: string]: Object | null }): Path[];
+    paramPathResolver(arg0: string, arg1: { [key: string]: Object | null }): Path;
     quantize(): void;
     readParameters(arg0: InputStream, arg1: { [key: string]: Object | null }): boolean;
-    readParameters(arg0: Path[], arg1: { [key: string]: Object | null }): boolean;
-    save(arg0: Path[], arg1: string): void;
+    readParameters(arg0: Path, arg1: { [key: string]: Object | null }): boolean;
+    save(arg0: Path, arg1: string): void;
     setBlock(arg0: Block): void;
     setDataType(arg0: DataType): void;
-    setModelDir(arg0: Path[]): void;
+    setModelDir(arg0: Path): void;
     setProperty(arg0: string, arg1: string): void;
     toString(): string;
 }

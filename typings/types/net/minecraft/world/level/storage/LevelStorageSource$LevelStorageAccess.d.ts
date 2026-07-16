@@ -18,11 +18,11 @@ import type { PlayerDataStorage } from '../../../../../net/minecraft/world/level
 import type { WorldData } from '../../../../../net/minecraft/world/level/storage/WorldData.d.ts'
 import type { IORunnable } from '../../../../../org/apache/commons/io/function/IORunnable.d.ts'
 export class LevelStorageSource$LevelStorageAccess extends Object implements AutoCloseable {
-    private constructor(null_: LevelStorageSource, levelId: string, path: Path[])
+    private constructor(null_: LevelStorageSource, levelId: string, path: Path)
     readonly levelDirectory: LevelStorageSource$LevelDirectory;
     readonly levelId: string;
     // private lock: DirectoryLock;
-    // private resources: Map<LevelResource, Path[]>;
+    // private resources: Map<LevelResource, Path>;
     checkForLowDiskSpace(): boolean;
     // private checkLock(): void;
     close(): void;
@@ -33,13 +33,13 @@ export class LevelStorageSource$LevelStorageAccess extends Object implements Aut
     estimateDiskSpace(): number;
     fixAndGetSummary(): LevelSummary;
     fixAndGetSummaryFromTag(dataTag: Dynamic<Object>): LevelSummary;
-    // private getDataFile(useFallback: boolean): Path[];
-    getDimensionPath(name: ResourceKey<Level>): Path[];
+    // private getDataFile(useFallback: boolean): Path;
+    getDimensionPath(name: ResourceKey<Level>): Path;
     getFileModificationTime(fallback: boolean): Instant;
-    getIconFile(): Optional<Path[]>;
+    getIconFile(): Optional<Path>;
     getLevelDirectory(): LevelStorageSource$LevelDirectory;
     getLevelId(): string;
-    getLevelPath(resource: LevelResource): Path[];
+    getLevelPath(resource: LevelResource): Path;
     getUnfixedDataTag(useFallback: boolean): Dynamic<Object>;
     getUnfixedDataTagWithFallback(): Dynamic<Object>;
     hasWorldData(): boolean;

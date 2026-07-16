@@ -11,12 +11,12 @@ export class BlockFamily extends Object {
     // private generateStonecutterRecipe: boolean;
     readonly recipeGroupPrefix: string;
     readonly recipeUnlockedBy: string;
-    readonly variants: { [key in BlockFamily$Variant]: Block };
+    readonly variants: Map<BlockFamily$Variant, Block>;
     get(variant: BlockFamily$Variant): Block;
     getBaseBlock(): Block;
     getRecipeGroupPrefix(): Optional<string>;
     getRecipeUnlockedBy(): Optional<string>;
-    getVariants(): { [key in BlockFamily$Variant]: Block };
+    getVariants(): Map<BlockFamily$Variant, Block>;
     shouldGenerateCraftingRecipe(): boolean;
     shouldGenerateModel(): boolean;
     shouldGenerateSmeltingRecipe(): boolean;

@@ -5,9 +5,9 @@ export class ExceptionsCollector extends Object {
     constructor(limit: number)
     readonly collectedExceptions: Exception[];
     // private limit: number;
-    path: Path[][] | null;
+    path: Path | null;
     readonly totalExceptions: number;
     collect(exception: Exception): void;
-    enterEntry(name: Path[][]): void;
-    exitEntry(name: Path[][]): void;
+    enterEntry(name: Path): void;
+    exitEntry(name: Path): void;
 }

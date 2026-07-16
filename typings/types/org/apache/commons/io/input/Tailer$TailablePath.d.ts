@@ -5,10 +5,10 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Tailer$RandomAccessResourceBridge } from '../../../../../org/apache/commons/io/input/Tailer$RandomAccessResourceBridge.d.ts'
 import type { Tailer$Tailable } from '../../../../../org/apache/commons/io/input/Tailer$Tailable.d.ts'
 export class Tailer$TailablePath extends Object implements Tailer$Tailable {
-    constructor(arg0: Path[], arg1: LinkOption[], arg2: any)
+    constructor(arg0: Path, arg1: LinkOption[], arg2: any)
     // private linkOptions: LinkOption[];
-    // private path: Path[];
-    getPath(): Path[];
+    // private path: Path;
+    getPath(): Path;
     getRandomAccess(arg0: string): Tailer$RandomAccessResourceBridge;
     isNewer(arg0: FileTime): boolean;
     lastModifiedFileTime(): FileTime;

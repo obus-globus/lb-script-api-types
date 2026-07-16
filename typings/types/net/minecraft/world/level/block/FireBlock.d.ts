@@ -42,7 +42,7 @@ export class FireBlock extends BaseFireBlock implements FireBlockHooks {
     static INSTANT: number;
     static MAX_AGE: number;
     static NORTH: BooleanProperty;
-    static PROPERTY_BY_DIRECTION: { [key in Direction]: BooleanProperty };
+    static PROPERTY_BY_DIRECTION: Map<Direction, BooleanProperty>;
     static SOUTH: BooleanProperty;
     static UP: BooleanProperty;
     static UPDATE_ALL: number;

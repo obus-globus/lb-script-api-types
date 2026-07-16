@@ -7,5 +7,5 @@ export interface EventLogDirectory$File extends Object{
     compress(): EventLogDirectory$CompressedFile;
     id(): EventLogDirectory$FileId;
     openReader(): Reader;
-    path(): Path[];
+    path(): Path;
 }

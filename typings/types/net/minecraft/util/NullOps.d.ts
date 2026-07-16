@@ -41,9 +41,9 @@ export class NullOps extends Object implements DynamicOps<Unit> {
     createLong(value: number): Unit;
     createLongList(arg0: LongStream): Unit;
     createLongList(input: LongStream): Unit;
-    createMap(arg0: { [key in Unit]: Unit }): Unit;
+    createMap(arg0: Map<Unit, Unit>): Unit;
     createMap(map: Stream<Pair<Unit, Unit>>): Unit;
-    createMap(map: { [key in Unit]: Unit }): Unit;
+    createMap(map: Map<Unit, Unit>): Unit;
     createNumeric(value: Number): Unit;
     createShort(arg0: number): Unit;
     createShort(value: number): Unit;
@@ -77,9 +77,9 @@ export class NullOps extends Object implements DynamicOps<Unit> {
     mergeToList(input: Unit, values: Unit[]): DataResult<Unit>;
     mergeToList(input: Unit, value: Unit): DataResult<Unit>;
     mergeToMap(arg0: Unit, arg1: MapLike<Unit>): DataResult<Unit>;
-    mergeToMap(arg0: Unit, arg1: { [key in Unit]: Unit }): DataResult<Unit>;
+    mergeToMap(arg0: Unit, arg1: Map<Unit, Unit>): DataResult<Unit>;
     mergeToMap(input: Unit, values: MapLike<Unit>): DataResult<Unit>;
-    mergeToMap(input: Unit, values: { [key in Unit]: Unit }): DataResult<Unit>;
+    mergeToMap(input: Unit, values: Map<Unit, Unit>): DataResult<Unit>;
     mergeToMap(input: Unit, key: Unit, value: Unit): DataResult<Unit>;
     mergeToPrimitive(arg0: Unit, arg1: Unit): DataResult<Unit>;
     remove(input: Unit, key: string): Unit;

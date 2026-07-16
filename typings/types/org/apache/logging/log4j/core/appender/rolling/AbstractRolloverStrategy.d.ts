@@ -10,11 +10,11 @@ export abstract class AbstractRolloverStrategy extends Object implements Rollove
     static PATTERN_COUNTER: Pattern;
     constructor(strSubstitutor: StrSubstitutor)
     readonly strSubstitutor: StrSubstitutor;
-    getEligibleFiles(path: string, pattern: string): { [key: number]: Path[] };
-    getEligibleFiles(path: string, logfilePattern: string, isAscending: boolean): { [key: number]: Path[] };
-    getEligibleFiles(currentFile: string, path: string, logfilePattern: string, isAscending: boolean): { [key: number]: Path[] };
-    getEligibleFiles(manager: RollingFileManager): { [key: number]: Path[] };
-    getEligibleFiles(manager: RollingFileManager, isAscending: boolean): { [key: number]: Path[] };
+    getEligibleFiles(path: string, pattern: string): { [key: number]: Path };
+    getEligibleFiles(path: string, logfilePattern: string, isAscending: boolean): { [key: number]: Path };
+    getEligibleFiles(currentFile: string, path: string, logfilePattern: string, isAscending: boolean): { [key: number]: Path };
+    getEligibleFiles(manager: RollingFileManager): { [key: number]: Path };
+    getEligibleFiles(manager: RollingFileManager, isAscending: boolean): { [key: number]: Path };
     getStrSubstitutor(): StrSubstitutor;
     merge(compressAction: Action, custom: Action[], stopOnError: boolean): Action;
     rollover(manager: RollingFileManager): RolloverDescription;

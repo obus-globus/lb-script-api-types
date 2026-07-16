@@ -8,12 +8,12 @@ import type { FileResourceType } from '../../../../../net/minecraft/util/filefix
 export class FileAccessProvider extends Object implements AutoCloseable {
     constructor(dataVersion: number)
     // private accessedFiles: FileAccess<any>[];
-    // private baseDirectory: ScopedValue<Path[]>;
+    // private baseDirectory: ScopedValue<Path>;
     // private dataVersion: number;
     // private frozen: boolean;
-    baseDirectory(): ScopedValue<Path[]>;
+    baseDirectory(): ScopedValue<Path>;
     close(): void;
     dataVersion(): number;
     freeze(): void;
-    getFileAccess<T extends AutoCloseable>(type: FileResourceType<T>, fileRelation: (param0: Path[][]) => Path[][][]): FileAccess<T>;
+    getFileAccess<T extends AutoCloseable>(type: FileResourceType<T>, fileRelation: (param0: Path) => Path[]): FileAccess<T>;
 }

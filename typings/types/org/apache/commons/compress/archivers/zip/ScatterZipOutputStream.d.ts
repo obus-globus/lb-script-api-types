@@ -12,8 +12,8 @@ import type { ScatterGatherBackingStore } from '../../../../../../org/apache/com
 export class ScatterZipOutputStream extends Object implements Closeable {
     static fileBased(paramarg0: File): ScatterZipOutputStream;
     static fileBased(paramarg0: File, paramarg1: number): ScatterZipOutputStream;
-    static pathBased(paramarg0: Path[][]): ScatterZipOutputStream;
-    static pathBased(paramarg0: Path[][], paramarg1: number): ScatterZipOutputStream;
+    static pathBased(paramarg0: Path): ScatterZipOutputStream;
+    static pathBased(paramarg0: Path, paramarg1: number): ScatterZipOutputStream;
     constructor(arg0: ScatterGatherBackingStore, arg1: StreamCompressor)
     // private backingStore: ScatterGatherBackingStore;
     // private isClosed: AtomicBoolean;

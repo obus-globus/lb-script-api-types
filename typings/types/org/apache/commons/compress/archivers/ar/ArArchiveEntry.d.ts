@@ -9,7 +9,7 @@ export class ArArchiveEntry extends Object implements ArchiveEntry {
     static SIZE_UNKNOWN: number;
     static TRAILER: string;
     constructor(arg0: File, arg1: string)
-    constructor(arg0: Path[], arg1: string, ...arg2: LinkOption[])
+    constructor(arg0: Path, arg1: string, ...arg2: LinkOption[])
     constructor(arg0: string, arg1: number)
     constructor(arg0: string, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number)
     readonly groupId: number;
@@ -29,5 +29,5 @@ export class ArArchiveEntry extends Object implements ArchiveEntry {
     getUserId(): number;
     hashCode(): number;
     isDirectory(): boolean;
-    resolveIn(arg0: Path[]): Path[];
+    resolveIn(arg0: Path): Path;
 }

@@ -18,11 +18,11 @@ export class DeletingPathVisitor extends CountingPathVisitor {
     // private linkOptions: LinkOption[];
     // private overrideReadOnly: boolean;
     // private skip: string[];
-    // private accept(arg0: Path[]): boolean;
-    accept(arg0: Path[], arg1: BasicFileAttributes): boolean;
+    // private accept(arg0: Path): boolean;
+    accept(arg0: Path, arg1: BasicFileAttributes): boolean;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
-    postVisitDirectory(arg0: Path[], arg1: IOException): FileVisitResult;
-    preVisitDirectory(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
-    visitFile(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
+    postVisitDirectory(arg0: Path, arg1: IOException): FileVisitResult;
+    preVisitDirectory(arg0: Path, arg1: BasicFileAttributes): FileVisitResult;
+    visitFile(arg0: Path, arg1: BasicFileAttributes): FileVisitResult;
 }

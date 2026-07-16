@@ -17,7 +17,7 @@ export abstract class AbstractFileFilter extends Object implements PathVisitor, 
     // private onReject: FileVisitResult;
     accept(arg0: File): boolean;
     accept(arg0: File, arg1: string): boolean;
-    accept(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
+    accept(arg0: Path, arg1: BasicFileAttributes): FileVisitResult;
     and(arg0: IOFileFilter): IOFileFilter;
     append(arg0: Object[], arg1: StringBuilder): void;
     append(arg0: (Object | null)[], arg1: StringBuilder): void;
@@ -25,13 +25,13 @@ export abstract class AbstractFileFilter extends Object implements PathVisitor, 
     handle(arg0: Throwable): FileVisitResult;
     isDirectory(arg0: File): boolean;
     isFile(arg0: File): boolean;
-    matches(arg0: Path[]): boolean;
+    matches(arg0: Path): boolean;
     negate(): IOFileFilter;
     or(arg0: IOFileFilter): IOFileFilter;
-    postVisitDirectory(arg0: Path[], arg1: IOException): FileVisitResult;
-    preVisitDirectory(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
+    postVisitDirectory(arg0: Path, arg1: IOException): FileVisitResult;
+    preVisitDirectory(arg0: Path, arg1: BasicFileAttributes): FileVisitResult;
     toFileVisitResult(arg0: boolean): FileVisitResult;
     toString(): string;
-    visitFile(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
-    visitFileFailed(arg0: Path[], arg1: IOException): FileVisitResult;
+    visitFile(arg0: Path, arg1: BasicFileAttributes): FileVisitResult;
+    visitFileFailed(arg0: Path, arg1: IOException): FileVisitResult;
 }

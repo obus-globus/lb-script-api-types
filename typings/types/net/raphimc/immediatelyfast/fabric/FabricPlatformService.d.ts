@@ -5,6 +5,6 @@ import type { PlatformService } from '../../../../net/raphimc/immediatelyfast/se
 export class FabricPlatformService extends Object implements PlatformService {
     static INSTANCE: PlatformService;
     constructor()
-    getConfigDirectory(): Path[];
+    getConfigDirectory(): Path;
     getModVersion(arg0: string): Optional<string>;
 }

@@ -19,7 +19,7 @@ import type { WorldSessionTelemetryManager } from '../../../../net/minecraft/cli
 export class ClientTelemetryManager extends Object implements AutoCloseable {
     constructor(minecraft: Minecraft, userApiService: UserApiService, user: User)
     // private deviceSessionProperties: TelemetryPropertyMap;
-    readonly logDirectory: Path[];
+    readonly logDirectory: Path;
     // private logManager: CompletableFuture<Optional<TelemetryLogManager>>;
     // private minecraft: Minecraft;
     readonly outsideSessionSender: () => (param0: TelemetryEventType, param1: (param0: TelemetryPropertyMap$Builder) => void) => void;
@@ -27,6 +27,6 @@ export class ClientTelemetryManager extends Object implements AutoCloseable {
     close(): void;
     // private createEventSender(): (param0: TelemetryEventType, param1: (param0: TelemetryPropertyMap$Builder) => void) => void;
     createWorldSessionManager(newWorld: boolean, worldLoadDuration: Duration, minigameName: string, sessionId: UUID): WorldSessionTelemetryManager;
-    getLogDirectory(): Path[];
+    getLogDirectory(): Path;
     getOutsideSessionSender(): (param0: TelemetryEventType, param1: (param0: TelemetryPropertyMap$Builder) => void) => void;
 }

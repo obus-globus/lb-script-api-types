@@ -8,10 +8,10 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class TextureUtil extends Object {
     static MIN_MIPMAP_LEVEL: number;
     static fillEmptyAreasWithDarkColor(paramimage: NativeImage): void;
-    static getDebugTexturePath(): Path[][];
-    static getDebugTexturePath(paramroot: Path[][]): Path[][];
+    static getDebugTexturePath(): Path;
+    static getDebugTexturePath(paramroot: Path): Path;
     static readResource(paraminputStream: InputStream): ByteBuffer;
     static solidify(paramimage: NativeImage): void;
-    static writeAsPNG(paramdir: Path[][], paramprefix: string, paramtexture: GpuTexture, parammaxMipLevel: number, parampixelModifier: (param0: number) => number): void;
+    static writeAsPNG(paramdir: Path, paramprefix: string, paramtexture: GpuTexture, parammaxMipLevel: number, parampixelModifier: (param0: number) => number): void;
     constructor()
 }

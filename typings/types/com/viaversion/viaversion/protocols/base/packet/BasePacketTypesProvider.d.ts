@@ -7,15 +7,15 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class BasePacketTypesProvider extends Object implements PacketTypesProvider<BaseClientboundPacket, BaseClientboundPacket, BaseServerboundPacket, BaseServerboundPacket> {
     static INSTANCE: PacketTypesProvider<BaseClientboundPacket, BaseClientboundPacket, BaseServerboundPacket, BaseServerboundPacket>;
     private constructor()
-    // private clientboundPacketTypes: { [key in State]: PacketTypeMap<BaseClientboundPacket> };
-    // private serverboundPacketTypes: { [key in State]: PacketTypeMap<BaseServerboundPacket> };
-    mappedClientboundPacketTypes(): { [key in State]: PacketTypeMap<BaseClientboundPacket> };
+    // private clientboundPacketTypes: Map<State, PacketTypeMap<BaseClientboundPacket>>;
+    // private serverboundPacketTypes: Map<State, PacketTypeMap<BaseServerboundPacket>>;
+    mappedClientboundPacketTypes(): Map<State, PacketTypeMap<BaseClientboundPacket>>;
     mappedClientboundType(arg0: State, arg1: string): BaseClientboundPacket;
-    mappedServerboundPacketTypes(): { [key in State]: PacketTypeMap<BaseServerboundPacket> };
-    unmappedClientboundPacketTypes(): { [key in State]: PacketTypeMap<BaseClientboundPacket> };
+    mappedServerboundPacketTypes(): Map<State, PacketTypeMap<BaseServerboundPacket>>;
+    unmappedClientboundPacketTypes(): Map<State, PacketTypeMap<BaseClientboundPacket>>;
     unmappedClientboundType(arg0: State, arg1: number): BaseClientboundPacket;
     unmappedClientboundType(arg0: State, arg1: string): BaseClientboundPacket;
-    unmappedServerboundPacketTypes(): { [key in State]: PacketTypeMap<BaseServerboundPacket> };
+    unmappedServerboundPacketTypes(): Map<State, PacketTypeMap<BaseServerboundPacket>>;
     unmappedServerboundType(arg0: State, arg1: number): BaseServerboundPacket;
     unmappedServerboundType(arg0: State, arg1: string): BaseServerboundPacket;
 }

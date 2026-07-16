@@ -12,12 +12,12 @@ import type { DownloadQueue$LogEntry } from '../../../../net/minecraft/server/pa
 import type { JsonEventLog } from '../../../../net/minecraft/util/eventlog/JsonEventLog.d.ts'
 import type { ConsecutiveExecutor } from '../../../../net/minecraft/util/thread/ConsecutiveExecutor.d.ts'
 export class DownloadQueue extends Object implements AutoCloseable {
-    constructor(cacheDir: Path[])
-    // private cacheDir: Path[];
+    constructor(cacheDir: Path)
+    // private cacheDir: Path;
     // private eventLog: JsonEventLog<DownloadQueue$LogEntry>;
     // private tasks: ConsecutiveExecutor;
     close(): void;
     downloadBatch(config: DownloadQueue$BatchConfig, requests: Map<UUID, DownloadQueue$DownloadRequest>): CompletableFuture<DownloadQueue$BatchResult>;
-    // private getFileInfo(downloadedFile: Path[]): Either<string, DownloadQueue$FileInfoEntry>;
+    // private getFileInfo(downloadedFile: Path): Either<string, DownloadQueue$FileInfoEntry>;
     // private runDownload(config: DownloadQueue$BatchConfig, requests: Map<UUID, DownloadQueue$DownloadRequest>): DownloadQueue$BatchResult;
 }

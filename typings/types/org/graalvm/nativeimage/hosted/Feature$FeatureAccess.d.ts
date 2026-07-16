@@ -5,6 +5,6 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export interface Feature$FeatureAccess extends Object{
     findClassByName(className: string): Class<Object>;
     getApplicationClassLoader(): ClassLoader;
-    getApplicationClassPath(): Path[][];
-    getApplicationModulePath(): Path[][];
+    getApplicationClassPath(): Path[];
+    getApplicationModulePath(): Path[];
 }

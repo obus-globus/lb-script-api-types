@@ -9,7 +9,7 @@ import type { Position3f } from '../../../../../../net/raphimc/viabedrock/protoc
 export class Entity extends Object {
     constructor(arg0: UserConnection, arg1: number, arg2: number, arg3: string, arg4: number, arg5: UUID, arg6: EntityTypes26_2)
     // private age: number;
-    // private entityData: { [key in ActorDataIDs]: EntityData };
+    // private entityData: Map<ActorDataIDs, EntityData>;
     hasBossBar: boolean;
     // private javaId: number;
     // private javaType: EntityTypes26_2;
@@ -23,7 +23,7 @@ export class Entity extends Object {
     // private uniqueId: number;
     // private user: UserConnection;
     age(): number;
-    entityData(): { [key in ActorDataIDs]: EntityData };
+    entityData(): Map<ActorDataIDs, EntityData>;
     entityFlags(): ActorFlags[];
     eyeOffset(): number;
     getJavaEntityDataIndex(arg0: string): number;

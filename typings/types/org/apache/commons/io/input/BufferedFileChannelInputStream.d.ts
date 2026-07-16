@@ -9,8 +9,8 @@ export class BufferedFileChannelInputStream extends InputStream {
     static nullInputStream(): InputStream;
     constructor(arg0: File)
     constructor(arg0: File, arg1: number)
-    constructor(arg0: Path[])
-    constructor(arg0: Path[], arg1: number)
+    constructor(arg0: Path)
+    constructor(arg0: Path, arg1: number)
     constructor(arg0: BufferedFileChannelInputStream$Builder, arg1: any)
     // private byteBuffer: ByteBuffer;
     // private fileChannel: FileChannel;

@@ -309,7 +309,7 @@ export class SoundEvents extends Object {
     static CAT_HURT_BABY: Holder$Reference<SoundEvent>;
     static CAT_PURREOW_BABY: Holder$Reference<SoundEvent>;
     static CAT_PURR_BABY: Holder$Reference<SoundEvent>;
-    static CAT_SOUNDS: { [key in CatSoundVariants$SoundSet]: CatSoundVariant };
+    static CAT_SOUNDS: Map<CatSoundVariants$SoundSet, CatSoundVariant>;
     static CAT_STRAY_AMBIENT_BABY: Holder$Reference<SoundEvent>;
     static CAVE_VINES_BREAK: SoundEvent;
     static CAVE_VINES_FALL: SoundEvent;
@@ -359,7 +359,7 @@ export class SoundEvents extends Object {
     static CHICKEN_DEATH_BABY: Holder$Reference<SoundEvent>;
     static CHICKEN_EGG: SoundEvent;
     static CHICKEN_HURT_BABY: Holder$Reference<SoundEvent>;
-    static CHICKEN_SOUNDS: { [key in ChickenSoundVariants$SoundSet]: ChickenSoundVariant };
+    static CHICKEN_SOUNDS: Map<ChickenSoundVariants$SoundSet, ChickenSoundVariant>;
     static CHICKEN_STEP: Holder$Reference<SoundEvent>;
     static CHICKEN_STEP_BABY: Holder$Reference<SoundEvent>;
     static CHISELED_BOOKSHELF_BREAK: SoundEvent;
@@ -455,7 +455,7 @@ export class SoundEvents extends Object {
     static CORAL_BLOCK_PLACE: SoundEvent;
     static CORAL_BLOCK_STEP: SoundEvent;
     static COW_MILK: SoundEvent;
-    static COW_SOUNDS: { [key in CowSoundVariants$SoundSet]: CowSoundVariant };
+    static COW_SOUNDS: Map<CowSoundVariants$SoundSet, CowSoundVariant>;
     static CRAFTER_CRAFT: SoundEvent;
     static CRAFTER_FAIL: SoundEvent;
     static CREAKING_ACTIVATE: SoundEvent;
@@ -1225,7 +1225,7 @@ export class SoundEvents extends Object {
     static PIG_EAT_BABY: Holder$Reference<SoundEvent>;
     static PIG_HURT_BABY: Holder$Reference<SoundEvent>;
     static PIG_SADDLE: Holder$Reference<SoundEvent>;
-    static PIG_SOUNDS: { [key in PigSoundVariants$SoundSet]: PigSoundVariant };
+    static PIG_SOUNDS: Map<PigSoundVariants$SoundSet, PigSoundVariant>;
     static PIG_STEP: Holder$Reference<SoundEvent>;
     static PIG_STEP_BABY: Holder$Reference<SoundEvent>;
     static PILLAGER_AMBIENT: SoundEvent;
@@ -1829,7 +1829,7 @@ export class SoundEvents extends Object {
     static WOLF_HURT_BABY: Holder$Reference<SoundEvent>;
     static WOLF_PANT_BABY: Holder$Reference<SoundEvent>;
     static WOLF_SHAKE: SoundEvent;
-    static WOLF_SOUNDS: { [key in WolfSoundVariants$SoundSet]: WolfSoundVariant };
+    static WOLF_SOUNDS: Map<WolfSoundVariants$SoundSet, WolfSoundVariant>;
     static WOLF_STEP: Holder$Reference<SoundEvent>;
     static WOLF_STEP_BABY: Holder$Reference<SoundEvent>;
     static WOLF_WHINE_BABY: Holder$Reference<SoundEvent>;

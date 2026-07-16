@@ -10,7 +10,7 @@ export class ICUResourceBundle$AvailEntry extends Object {
     // private locales: Locale[];
     // private nameSet: string[];
     // private prefix: string;
-    // private ulocales: { [key in ULocale$AvailableType]: ULocale[] };
+    // private ulocales: Map<ULocale$AvailableType, ULocale[]>;
     getFullLocaleNameSet(): string[];
     getLocaleList(arg0: ULocale$AvailableType): Locale[];
     getLocaleNameSet(): string[];

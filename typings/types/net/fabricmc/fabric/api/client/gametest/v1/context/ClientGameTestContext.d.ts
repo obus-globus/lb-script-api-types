@@ -24,8 +24,8 @@ export interface ClientGameTestContext extends Object {
     restoreDefaultGameOptions(): void;
     runOnClient<E extends Throwable>(arg0: (param0: Minecraft) => void): void;
     setScreen(arg0: () => Screen): void;
-    takeScreenshot(arg0: string): Path[];
-    takeScreenshot(arg0: TestScreenshotOptions): Path[];
+    takeScreenshot(arg0: string): Path;
+    takeScreenshot(arg0: TestScreenshotOptions): Path;
     tryClickScreenButton(arg0: string): boolean;
     waitFor(arg0: (param0: Minecraft) => boolean): number;
     waitFor(arg0: (param0: Minecraft) => boolean, arg1: number): number;

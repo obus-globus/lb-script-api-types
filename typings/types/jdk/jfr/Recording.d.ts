@@ -19,10 +19,10 @@ export class Recording extends Object implements Closeable {
     copy(arg0: boolean): Recording;
     disable(arg0: Class<Event>): EventSettings;
     disable(arg0: string): EventSettings;
-    dump(arg0: Path[]): void;
+    dump(arg0: Path): void;
     enable(arg0: Class<Event>): EventSettings;
     enable(arg0: string): EventSettings;
-    getDestination(): Path[];
+    getDestination(): Path;
     getDumpOnExit(): boolean;
     getDuration(): Duration;
     getFlushInterval(): Duration;
@@ -39,7 +39,7 @@ export class Recording extends Object implements Closeable {
     getStream(arg0: Instant, arg1: Instant): InputStream;
     isToDisk(): boolean;
     scheduleStart(arg0: Duration): void;
-    setDestination(arg0: Path[]): void;
+    setDestination(arg0: Path): void;
     setDumpOnExit(arg0: boolean): void;
     setDuration(arg0: Duration): void;
     setMaxAge(arg0: Duration): void;

@@ -6,11 +6,11 @@ export abstract class TestScreenshotCommonOptionsImpl<SELF extends TestScreensho
     constructor()
     counterPrefix: boolean;
     deltaTicks: number;
-    destinationDir: Path[];
+    destinationDir: Path;
     size: Vector2i;
     disableCounterPrefix(): SELF;
     // private getThis(): SELF;
     withDeltaTicks(arg0: number): SELF;
-    withDestinationDir(arg0: Path[]): SELF;
+    withDestinationDir(arg0: Path): SELF;
     withSize(arg0: number, arg1: number): SELF;
 }

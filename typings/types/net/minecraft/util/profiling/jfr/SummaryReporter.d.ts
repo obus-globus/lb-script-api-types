@@ -4,5 +4,5 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class SummaryReporter extends Object {
     constructor(onDeregistration: () => void)
     // private onDeregistration: () => void;
-    recordingStopped(result: Path[]): void;
+    recordingStopped(result: Path): void;
 }

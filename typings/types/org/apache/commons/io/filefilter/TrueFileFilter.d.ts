@@ -10,11 +10,11 @@ export class TrueFileFilter extends Object implements Serializable, IOFileFilter
     static INSTANCE: IOFileFilter;
     static TRUE: IOFileFilter;
     constructor()
-    accept(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
+    accept(arg0: Path, arg1: BasicFileAttributes): FileVisitResult;
     accept(arg0: File): boolean;
     accept(arg0: File, arg1: string): boolean;
     and(arg0: IOFileFilter): IOFileFilter;
-    matches(arg0: Path[]): boolean;
+    matches(arg0: Path): boolean;
     negate(): IOFileFilter;
     or(arg0: IOFileFilter): IOFileFilter;
     toString(): string;

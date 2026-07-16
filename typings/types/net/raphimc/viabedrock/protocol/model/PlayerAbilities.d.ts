@@ -5,12 +5,12 @@ import type { SerializedAbilitiesData_SerializedAbilitiesLayer } from '../../../
 import type { PlayerAbilities$AbilitiesLayer } from '../../../../../net/raphimc/viabedrock/protocol/model/PlayerAbilities$AbilitiesLayer.d.ts'
 export class PlayerAbilities extends Record {
     constructor(arg0: number, arg1: number, arg2: number)
-    constructor(entityUniqueId: number, playerPermission: number, commandPermission: number, abilityLayers: { [key in SerializedAbilitiesData_SerializedAbilitiesLayer]: PlayerAbilities$AbilitiesLayer })
-    // private abilityLayers: { [key in SerializedAbilitiesData_SerializedAbilitiesLayer]: PlayerAbilities$AbilitiesLayer };
+    constructor(entityUniqueId: number, playerPermission: number, commandPermission: number, abilityLayers: Map<SerializedAbilitiesData_SerializedAbilitiesLayer, PlayerAbilities$AbilitiesLayer>)
+    // private abilityLayers: Map<SerializedAbilitiesData_SerializedAbilitiesLayer, PlayerAbilities$AbilitiesLayer>;
     // private commandPermission: number;
     // private entityUniqueId: number;
     // private playerPermission: number;
-    abilityLayers(): { [key in SerializedAbilitiesData_SerializedAbilitiesLayer]: PlayerAbilities$AbilitiesLayer };
+    abilityLayers(): Map<SerializedAbilitiesData_SerializedAbilitiesLayer, PlayerAbilities$AbilitiesLayer>;
     commandPermission(): number;
     entityUniqueId(): number;
     equals(arg0: Object | null): boolean;

@@ -12,7 +12,7 @@ import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class AbstractRepository extends Object implements Repository {
     static newInstance(paramarg0: string, paramarg1: string): Repository;
-    static newInstance(paramarg0: string, paramarg1: Path[][]): Repository;
+    static newInstance(paramarg0: string, paramarg1: Path): Repository;
     static registerRepositoryFactory(paramarg0: RepositoryFactory): void;
     constructor(arg0: string, arg1: URI)
     // private arguments: { [key: string]: string };
@@ -21,12 +21,12 @@ export abstract class AbstractRepository extends Object implements Repository {
     addResource(arg0: MRL): void;
     dataset(arg0: Application, arg1: string, arg2: string): MRL;
     dataset(arg0: Application, arg1: string, arg2: string, arg3: string): MRL;
-    download(arg0: Path[], arg1: URI, arg2: Artifact$Item, arg3: Progress): void;
+    download(arg0: Path, arg1: URI, arg2: Artifact$Item, arg3: Progress): void;
     getBaseUri(): URI;
-    getCacheDirectory(): Path[];
-    getFile(arg0: Artifact$Item, arg1: string): Path[];
+    getCacheDirectory(): Path;
+    getFile(arg0: Artifact$Item, arg1: string): Path;
     getName(): string;
-    getResourceDirectory(arg0: Artifact): Path[];
+    getResourceDirectory(arg0: Artifact): Path;
     isRemote(): boolean;
     listDirectory(arg0: Artifact$Item, arg1: string): string[];
     locate(arg0: MRL): Metadata;
@@ -37,5 +37,5 @@ export abstract class AbstractRepository extends Object implements Repository {
     prepare(arg0: Artifact): void;
     prepare(arg0: Artifact, arg1: Progress): void;
     resolvePath(arg0: Artifact$Item, arg1: string): URI;
-    save(arg0: InputStream, arg1: Path[], arg2: Artifact$Item, arg3: Progress): void;
+    save(arg0: InputStream, arg1: Path, arg2: Artifact$Item, arg3: Progress): void;
 }

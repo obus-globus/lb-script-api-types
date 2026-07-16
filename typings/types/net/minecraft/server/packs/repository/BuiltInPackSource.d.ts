@@ -24,7 +24,7 @@ export abstract class BuiltInPackSource extends Object implements RepositorySour
     readonly vanillaPack: VanillaPackResources;
     createBuiltinPack(id: string, resources: Pack$ResourcesSupplier, name: Component): Pack;
     createVanillaPack(resources: PackResources): Pack;
-    discoverPacksInPath(targetDir: Path[], discoveredPacks: (param0: string, param1: (param0: string) => Pack) => void): void;
+    discoverPacksInPath(targetDir: Path, discoveredPacks: (param0: string, param1: (param0: string) => Pack) => void): void;
     getPackTitle(id: string): Component;
     getVanillaPack(): VanillaPackResources;
     // private listBundledPacks(packConsumer: (param0: Pack) => void): void;

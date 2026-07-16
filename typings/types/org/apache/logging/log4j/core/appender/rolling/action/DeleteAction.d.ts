@@ -15,11 +15,11 @@ export class DeleteAction extends AbstractPathAction {
     // private scriptCondition: ScriptCondition;
     readonly testMode: boolean;
     // private callScript(): PathWithAttributes[];
-    createFileVisitor(visitorBaseDir: Path[], conditions: PathCondition[]): FileVisitor<Path[]>;
-    delete(path: Path[]): void;
+    createFileVisitor(visitorBaseDir: Path, conditions: PathCondition[]): FileVisitor<Path>;
+    delete(path: Path): void;
     // private deleteSelectedFiles(selectedForDeletion: PathWithAttributes[]): void;
     execute(): boolean;
-    execute(visitor: FileVisitor<Path[]>): boolean;
+    execute(visitor: FileVisitor<Path>): boolean;
     // private executeScript(): boolean;
     getSortedPaths(): PathWithAttributes[];
     isTestMode(): boolean;

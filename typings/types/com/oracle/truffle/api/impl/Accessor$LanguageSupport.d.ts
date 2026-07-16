@@ -69,7 +69,7 @@ export abstract class Accessor$LanguageSupport extends Accessor$Support {
     getLoggerCache(logger: TruffleLogger): Object;
     getLoggersSPI(loggerCache: Object): Object;
     getOrCreateLazyStackTrace(t: Throwable): Throwable;
-    getPath(truffleFile: TruffleFile): Path[];
+    getPath(truffleFile: TruffleFile): Path;
     getPolyglotContext(context: TruffleContext): Object;
     getPolyglotInstrument(info: InstrumentInfo): Object;
     getPolyglotLanguageContext(env: TruffleLanguage$Env): Object;
@@ -77,7 +77,7 @@ export abstract class Accessor$LanguageSupport extends Accessor$Support {
     getSPI(env: TruffleLanguage$Env): TruffleLanguage<Object>;
     getScope(env: TruffleLanguage$Env): Object;
     getTruffleFile(uri: URI, fileSystemContext: Object): TruffleFile;
-    getTruffleFile(path: Path[], fileSystemContext: Object): TruffleFile;
+    getTruffleFile(path: Path, fileSystemContext: Object): TruffleFile;
     getTruffleFile(path: string, fileSystemContext: Object): TruffleFile;
     initializeLanguage(impl: TruffleLanguage<Object>, language: LanguageInfo, polyglotLanguage: Object, polyglotLanguageInstance: Object): void;
     initializeMultiContext(language: TruffleLanguage<Object>): void;

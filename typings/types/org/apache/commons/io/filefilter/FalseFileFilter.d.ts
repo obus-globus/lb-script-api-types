@@ -12,9 +12,9 @@ export class FalseFileFilter extends Object implements Serializable, IOFileFilte
     constructor()
     accept(arg0: File): boolean;
     accept(arg0: File, arg1: string): boolean;
-    accept(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
+    accept(arg0: Path, arg1: BasicFileAttributes): FileVisitResult;
     and(arg0: IOFileFilter): IOFileFilter;
-    matches(arg0: Path[]): boolean;
+    matches(arg0: Path): boolean;
     negate(): IOFileFilter;
     or(arg0: IOFileFilter): IOFileFilter;
     toString(): string;

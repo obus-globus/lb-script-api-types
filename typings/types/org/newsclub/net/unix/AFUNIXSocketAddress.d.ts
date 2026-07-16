@@ -31,8 +31,8 @@ export class AFUNIXSocketAddress extends AFSocketAddress {
     static of(paramarg0: SocketAddress): AFUNIXSocketAddress;
     static of(paramarg0: URI): AFUNIXSocketAddress;
     static of(paramarg0: URI, paramarg1: number): AFUNIXSocketAddress;
-    static of(paramarg0: Path[][]): AFUNIXSocketAddress;
-    static of(paramarg0: Path[][], paramarg1: number): AFUNIXSocketAddress;
+    static of(paramarg0: Path): AFUNIXSocketAddress;
+    static of(paramarg0: Path, paramarg1: number): AFUNIXSocketAddress;
     static ofNewTempFile(): AFUNIXSocketAddress;
     static ofNewTempPath(paramarg0: number): AFUNIXSocketAddress;
     static unwrap(paramarg0: string, paramarg1: number): AFUNIXSocketAddress;

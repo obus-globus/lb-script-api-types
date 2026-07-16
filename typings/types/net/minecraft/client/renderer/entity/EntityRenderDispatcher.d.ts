@@ -50,10 +50,10 @@ export class EntityRenderDispatcher extends Object implements FabricResourceRelo
     // private font: Font;
     readonly itemInHandRenderer: ItemInHandRenderer;
     // private itemModelResolver: ItemModelResolver;
-    // private mannequinRenderers: { [key in PlayerModelType]: AvatarRenderer<ClientMannequin> };
+    // private mannequinRenderers: Map<PlayerModelType, AvatarRenderer<ClientMannequin>>;
     // private mapRenderer: MapRenderer;
     options: Options;
-    // private playerRenderers: { [key in PlayerModelType]: AvatarRenderer<AbstractClientPlayer> };
+    // private playerRenderers: Map<PlayerModelType, AvatarRenderer<AbstractClientPlayer>>;
     // private playerSkinRenderCache: PlayerSkinRenderCache;
     // private renderers: Map<EntityType<any>, EntityRenderer<any, any>>;
     textureManager: TextureManager;
@@ -62,7 +62,7 @@ export class EntityRenderDispatcher extends Object implements FabricResourceRelo
     extractEntity<E extends Entity>(entity: E, partialTicks: number): EntityRenderState;
     fabric$getId(): Identifier;
     // private fillRendererDetails<S extends EntityRenderState>(renderer: EntityRenderer<any, S>, report: CrashReport): CrashReportCategory;
-    // private getAvatarRenderer<T extends Avatar & ClientAvatarEntity>(renderers: { [key in PlayerModelType]: AvatarRenderer<T> }, entity: T): AvatarRenderer<T>;
+    // private getAvatarRenderer<T extends Avatar & ClientAvatarEntity>(renderers: Map<PlayerModelType, AvatarRenderer<T>>, entity: T): AvatarRenderer<T>;
     getItemInHandRenderer(): ItemInHandRenderer;
     getName(): string;
     getPackedLightCoords<E extends Entity>(entity: E, partialTickTime: number): number;

@@ -18,15 +18,15 @@ export class ModNioPackResources extends Object implements ModPackResources, Pac
     static METADATA_EXTENSION: string;
     static PACK_META: string;
     static create(paramarg0: string, paramarg1: ModContainer, paramarg2: string, paramarg3: PackType, paramarg4: PackActivationType, paramarg5: boolean): ModNioPackResources;
-    static readNamespaces(paramarg0: Path[][][], paramarg1: string): { [key in PackType]: string[] };
-    private constructor(arg0: string, arg1: ModContainer, arg2: Path[][], arg3: PackType, arg4: PackActivationType, arg5: boolean, arg6: PackLocationInfo)
+    static readNamespaces(paramarg0: Path[], paramarg1: string): Map<PackType, string[]>;
+    private constructor(arg0: string, arg1: ModContainer, arg2: Path[], arg3: PackType, arg4: PackActivationType, arg5: boolean, arg6: PackLocationInfo)
     readonly activationType: PackActivationType;
-    // private basePaths: Path[][];
+    // private basePaths: Path[];
     // private id: string;
     // private metadata: PackLocationInfo;
     // private mod: ModContainer;
     // private modBundled: boolean;
-    // private namespaces: { [key in PackType]: string[] };
+    // private namespaces: Map<PackType, string[]>;
     // private type: PackType;
     close(): void;
     createOverlay(arg0: string): ModNioPackResources;
@@ -34,7 +34,7 @@ export class ModNioPackResources extends Object implements ModPackResources, Pac
     getFabricModMetadata(): ModMetadata;
     getMetadataSection<T extends unknown>(arg0: MetadataSectionType<T>): T;
     getNamespaces(arg0: PackType): string[];
-    // private getPath(arg0: string): Path[];
+    // private getPath(arg0: string): Path;
     getResource(arg0: PackType, arg1: Identifier): () => InputStream;
     getRootResource(...arg0: string[]): () => InputStream;
     // private hasAbsentNs(arg0: string): boolean;

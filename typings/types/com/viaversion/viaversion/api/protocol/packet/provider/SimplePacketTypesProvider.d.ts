@@ -6,21 +6,21 @@ import type { PacketTypesProvider } from '../../../../../../../com/viaversion/vi
 import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class SimplePacketTypesProvider<CU extends ClientboundPacketType, CM extends ClientboundPacketType, SM extends ServerboundPacketType, SU extends ServerboundPacketType> extends Record implements PacketTypesProvider<CU, CM, SM, SU> {
-    constructor(unmappedClientboundPacketTypes: { [key in State]: PacketTypeMap<CU> }, mappedClientboundPacketTypes: { [key in State]: PacketTypeMap<CM> }, mappedServerboundPacketTypes: { [key in State]: PacketTypeMap<SM> }, unmappedServerboundPacketTypes: { [key in State]: PacketTypeMap<SU> })
-    // private mappedClientboundPacketTypes: { [key in State]: PacketTypeMap<CM> };
-    // private mappedServerboundPacketTypes: { [key in State]: PacketTypeMap<SM> };
-    // private unmappedClientboundPacketTypes: { [key in State]: PacketTypeMap<CU> };
-    // private unmappedServerboundPacketTypes: { [key in State]: PacketTypeMap<SU> };
+    constructor(unmappedClientboundPacketTypes: Map<State, PacketTypeMap<CU>>, mappedClientboundPacketTypes: Map<State, PacketTypeMap<CM>>, mappedServerboundPacketTypes: Map<State, PacketTypeMap<SM>>, unmappedServerboundPacketTypes: Map<State, PacketTypeMap<SU>>)
+    // private mappedClientboundPacketTypes: Map<State, PacketTypeMap<CM>>;
+    // private mappedServerboundPacketTypes: Map<State, PacketTypeMap<SM>>;
+    // private unmappedClientboundPacketTypes: Map<State, PacketTypeMap<CU>>;
+    // private unmappedServerboundPacketTypes: Map<State, PacketTypeMap<SU>>;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
-    mappedClientboundPacketTypes(): { [key in State]: PacketTypeMap<CM> };
+    mappedClientboundPacketTypes(): Map<State, PacketTypeMap<CM>>;
     mappedClientboundType(arg0: State, arg1: string): CM;
-    mappedServerboundPacketTypes(): { [key in State]: PacketTypeMap<SM> };
+    mappedServerboundPacketTypes(): Map<State, PacketTypeMap<SM>>;
     toString(): string;
-    unmappedClientboundPacketTypes(): { [key in State]: PacketTypeMap<CU> };
+    unmappedClientboundPacketTypes(): Map<State, PacketTypeMap<CU>>;
     unmappedClientboundType(arg0: State, arg1: number): CU;
     unmappedClientboundType(arg0: State, arg1: string): CU;
-    unmappedServerboundPacketTypes(): { [key in State]: PacketTypeMap<SU> };
+    unmappedServerboundPacketTypes(): Map<State, PacketTypeMap<SU>>;
     unmappedServerboundType(arg0: State, arg1: number): SU;
     unmappedServerboundType(arg0: State, arg1: string): SU;
 }

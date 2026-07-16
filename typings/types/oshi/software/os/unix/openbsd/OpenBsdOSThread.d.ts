@@ -3,7 +3,7 @@ import type { OSProcess$State } from '../../../../../oshi/software/os/OSProcess$
 import type { OpenBsdOSProcess$PsThreadColumns } from '../../../../../oshi/software/os/unix/openbsd/OpenBsdOSProcess$PsThreadColumns.d.ts'
 export class OpenBsdOSThread extends AbstractOSThread {
     constructor(arg0: number, arg1: number)
-    constructor(arg0: number, arg1: { [key in OpenBsdOSProcess$PsThreadColumns]: string })
+    constructor(arg0: number, arg1: Map<OpenBsdOSProcess$PsThreadColumns, string>)
     readonly contextSwitches: number;
     readonly kernelTime: number;
     readonly majorFaults: number;
@@ -29,5 +29,5 @@ export class OpenBsdOSThread extends AbstractOSThread {
     getUpTime(): number;
     getUserTime(): number;
     updateAttributes(): boolean;
-    // private updateAttributes(arg0: { [key in OpenBsdOSProcess$PsThreadColumns]: string }): boolean;
+    // private updateAttributes(arg0: Map<OpenBsdOSProcess$PsThreadColumns, string>): boolean;
 }

@@ -14,6 +14,6 @@ export interface EngineCacheSupport extends OptimizedRuntimeServiceProvider, Obj
     onEngineClosing(e: EngineData): boolean;
     onEngineCreated(e: EngineData): void;
     onEnginePatch(e: EngineData): void;
-    onStoreCache(e: EngineData, path: Path[], cancelledWord: number): boolean;
+    onStoreCache(e: EngineData, path: Path, cancelledWord: number): boolean;
     tryLoadingCachedEngine(options: OptionValues, loggerFactory: (param0: string) => TruffleLogger): Object;
 }

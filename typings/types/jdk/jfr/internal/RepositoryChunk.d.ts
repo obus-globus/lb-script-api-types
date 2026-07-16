@@ -4,19 +4,19 @@ import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Instant } from '../../../java/time/Instant.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class RepositoryChunk extends Object {
-    constructor(arg0: Path[])
-    // private chunkFile: Path[];
+    constructor(arg0: Path)
+    // private chunkFile: Path;
     readonly endTime: Instant;
     // private refCount: number;
     readonly size: number;
     readonly startTime: Instant;
     // private unFinishedRAF: RandomAccessFile;
-    // private delete(arg0: Path[]): void;
+    // private delete(arg0: Path): void;
     // private destroy(): void;
     finish(arg0: Instant): boolean;
     getCurrentFileSize(): number;
     getEndTime(): Instant;
-    getFile(): Path[];
+    getFile(): Path;
     getSize(): number;
     getStartTime(): Instant;
     inInterval(arg0: Instant, arg1: Instant): boolean;

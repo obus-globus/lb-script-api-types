@@ -38,7 +38,7 @@ export class VineBlock extends Block {
     static INDESTRUCTIBLE: number;
     static INSTANT: number;
     static NORTH: BooleanProperty;
-    static PROPERTY_BY_DIRECTION: { [key in Direction]: BooleanProperty };
+    static PROPERTY_BY_DIRECTION: Map<Direction, BooleanProperty>;
     static SOUTH: BooleanProperty;
     static UP: BooleanProperty;
     static UPDATE_ALL: number;

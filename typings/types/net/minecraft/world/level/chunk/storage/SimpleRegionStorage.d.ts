@@ -15,7 +15,7 @@ import type { IOWorker } from '../../../../../../net/minecraft/world/level/chunk
 import type { RegionStorageInfo } from '../../../../../../net/minecraft/world/level/chunk/storage/RegionStorageInfo.d.ts'
 export class SimpleRegionStorage extends Object implements AutoCloseable {
     static injectDatafixingContext(paramchunkTag: CompoundTag, paramcontextTag: CompoundTag): void;
-    constructor(info: RegionStorageInfo, folder: Path[], fixerUpper: DataFixer, syncWrites: boolean, dataFixType: DataFixTypes)
+    constructor(info: RegionStorageInfo, folder: Path, fixerUpper: DataFixer, syncWrites: boolean, dataFixType: DataFixTypes)
     // private dataFixType: DataFixTypes;
     // private fixerUpper: DataFixer;
     // private worker: IOWorker;

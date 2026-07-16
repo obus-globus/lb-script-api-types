@@ -9,7 +9,7 @@ export class GroupMove extends Record implements FileFixOperation {
     // private fixers: Move[];
     // private fromTo: { [key: string]: string };
     equals(o: Object | null): boolean;
-    fix(baseDirectory: Path[], upgradeProgress: UpgradeProgress): void;
+    fix(baseDirectory: Path, upgradeProgress: UpgradeProgress): void;
     fixers(): Move[];
     fromTo(): { [key: string]: string };
     hashCode(): number;

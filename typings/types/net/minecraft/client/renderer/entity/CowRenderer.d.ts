@@ -14,7 +14,7 @@ export class CowRenderer extends MobRenderer<Cow, CowRenderState, CowModel> {
     static NAMETAG_SCALE: number;
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
-    // private models: { [key in CowVariant$ModelType]: AdultAndBabyModelPair<CowModel> };
+    // private models: Map<CowVariant$ModelType, AdultAndBabyModelPair<CowModel>>;
     createRenderState(): CowRenderState;
     createRenderState(entity: Cow, partialTicks: number): CowRenderState;
     extractRenderState(entity: Cow, state: CowRenderState, partialTicks: number): void;

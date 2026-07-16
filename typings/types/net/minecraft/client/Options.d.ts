@@ -199,7 +199,7 @@ export class Options extends Object implements OptionsAccessor {
     skipMultiplayerWarning: boolean;
     smoothCamera: boolean;
     // private soundDevice: OptionInstance<string>;
-    // private soundSourceVolumes: { [key in SoundSource]: OptionInstance<number> };
+    // private soundSourceVolumes: Map<SoundSource, OptionInstance<number>>;
     // private sprintWindow: OptionInstance<number>;
     startedCleanly: boolean;
     syncWrites: boolean;

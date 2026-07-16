@@ -16,10 +16,10 @@ export class MoreFiles$PathByteSource extends ByteSource {
     static concat(paramsources: Iterator<ByteSource>): ByteSource;
     static empty(): ByteSource;
     static wrap(paramb: number[]): ByteSource;
-    constructor(arg0: Path[], arg1: OpenOption[], arg2: (param0: Object) => boolean)
+    constructor(arg0: Path, arg1: OpenOption[], arg2: (param0: Object) => boolean)
     // private followLinks: boolean;
     // private options: OpenOption[];
-    // private path: Path[];
+    // private path: Path;
     asCharSource(charset: Charset): CharSource;
     openStream(): InputStream;
     read(): number[];

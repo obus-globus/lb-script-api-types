@@ -7,5 +7,5 @@ import type { RegistryLayer } from '../../../../../../net/minecraft/server/Regis
 import type { GameRules } from '../../../../../../net/minecraft/world/level/gamerules/GameRules.d.ts'
 import type { LevelDataAndDimensions$WorldDataAndGenSettings } from '../../../../../../net/minecraft/world/level/storage/LevelDataAndDimensions$WorldDataAndGenSettings.d.ts'
 export interface CreateWorldCallback extends Object{
-    create(createWorldScreen: CreateWorldScreen, finalLayers: LayeredRegistryAccess<RegistryLayer>, worldDataAndGenSettings: LevelDataAndDimensions$WorldDataAndGenSettings, gameRules: Optional<GameRules>, tempDataPackDir: Path[]): boolean;
+    create(createWorldScreen: CreateWorldScreen, finalLayers: LayeredRegistryAccess<RegistryLayer>, worldDataAndGenSettings: LevelDataAndDimensions$WorldDataAndGenSettings, gameRules: Optional<GameRules>, tempDataPackDir: Path): boolean;
 }

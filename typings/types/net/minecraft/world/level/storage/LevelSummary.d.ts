@@ -10,9 +10,9 @@ import type { LevelVersion } from '../../../../../net/minecraft/world/level/stor
 export class LevelSummary extends Object implements Comparable<LevelSummary> {
     static PLAY_WORLD: Component;
     static UPGRADE_AND_PLAY_WORLD: Component;
-    constructor(settings: LevelSettings, levelVersion: LevelVersion, levelId: string, requiresManualConversion: boolean, requiresFileFixing: boolean, locked: boolean, experimental: boolean, icon: Path[])
+    constructor(settings: LevelSettings, levelVersion: LevelVersion, levelId: string, requiresManualConversion: boolean, requiresFileFixing: boolean, locked: boolean, experimental: boolean, icon: Path)
     readonly experimental: boolean;
-    readonly icon: Path[];
+    readonly icon: Path;
     readonly info: Component;
     readonly levelId: string;
     // private levelVersion: LevelVersion;
@@ -28,7 +28,7 @@ export class LevelSummary extends Object implements Comparable<LevelSummary> {
     compareTo(rhs: LevelSummary): number;
     // private createInfo(): Component;
     getGameMode(): GameType;
-    getIcon(): Path[];
+    getIcon(): Path;
     getInfo(): Component;
     getLastPlayed(): number;
     getLevelId(): string;

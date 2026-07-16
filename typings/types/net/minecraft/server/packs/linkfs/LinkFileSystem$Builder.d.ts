@@ -6,6 +6,6 @@ export class LinkFileSystem$Builder extends Object {
     constructor()
     // private root: LinkFileSystem$DirectoryEntry;
     build(name: string): FileSystem;
-    put(path: string[], target: Path[]): LinkFileSystem$Builder;
-    put(path: string[], name: string, target: Path[]): LinkFileSystem$Builder;
+    put(path: string[], target: Path): LinkFileSystem$Builder;
+    put(path: string[], name: string, target: Path): LinkFileSystem$Builder;
 }

@@ -6,7 +6,7 @@ import type { Style } from '../../../net/minecraft/network/chat/Style.d.ts'
 export class TextComponentTagVisitor$PlainStyling extends Object implements TextComponentTagVisitor$Styling {
     static INSTANCE: TextComponentTagVisitor$Styling;
     private constructor()
-    // private tokens: { [key in TextComponentTagVisitor$Token]: Component };
+    // private tokens: Map<TextComponentTagVisitor$Token, Component>;
     keyStyle(): Style;
     numberStyle(): Style;
     stringStyle(): Style;

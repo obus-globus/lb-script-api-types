@@ -5,8 +5,8 @@ export class LoaderUtil extends Object {
     static getClassFileName(paramarg0: string): string;
     static hasAwtSupport(): boolean;
     static hasMacOs(): boolean;
-    static normalizeExistingPath(paramarg0: Path[][]): Path[][];
-    static normalizePath(paramarg0: Path[][]): Path[][];
+    static normalizeExistingPath(paramarg0: Path): Path;
+    static normalizePath(paramarg0: Path): Path;
     static verifyClasspath(): void;
     static verifyNotInTargetCl(paramarg0: Class<Object>): void;
     constructor()

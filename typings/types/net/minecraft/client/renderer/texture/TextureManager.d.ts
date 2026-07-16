@@ -21,7 +21,7 @@ export class TextureManager extends Object implements AutoCloseable, FabricResou
     // private resourceManager: ResourceManager;
     // private tickableTextures: TickableTexture[];
     close(): void;
-    dumpAllSheets(targetDir: Path[]): void;
+    dumpAllSheets(targetDir: Path): void;
     fabric$getId(): Identifier;
     getName(): string;
     getTexture(location: Identifier): AbstractTexture;

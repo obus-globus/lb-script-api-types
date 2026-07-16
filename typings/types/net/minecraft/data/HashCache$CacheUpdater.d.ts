@@ -15,6 +15,6 @@ export class HashCache$CacheUpdater extends Object implements CachedOutput {
     // private provider: string;
     // private writes: AtomicInteger;
     close(): HashCache$UpdateResult;
-    // private shouldWrite(path: Path[], hash: HashCode): boolean;
-    writeIfNeeded(path: Path[], input: number[], hash: HashCode): void;
+    // private shouldWrite(path: Path, hash: HashCode): boolean;
+    writeIfNeeded(path: Path, input: number[], hash: HashCode): void;
 }

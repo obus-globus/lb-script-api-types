@@ -16,5 +16,5 @@ export class FontTexture extends AbstractTexture implements Dumpable {
     // private renderTypes: GlyphRenderTypes;
     // private root: FontTexture$Node;
     add(info: GlyphInfo, glyph: GlyphBitmap): BakedSheetGlyph;
-    dumpContents(selfId: Identifier, dir: Path[]): void;
+    dumpContents(selfId: Identifier, dir: Path): void;
 }

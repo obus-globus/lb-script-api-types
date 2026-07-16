@@ -9,7 +9,7 @@ export class ColorLerper$Type extends Enum<ColorLerper$Type> {
     static valueOf(paramname: string): ColorLerper$Type;
     static values(): (Object | null)[];
     private constructor(colorDuration: number, colors: DyeColor[], brightness: number)
-    // private colorByDye: { [key in DyeColor]: number };
+    // private colorByDye: Map<DyeColor, number>;
     // private colorDuration: number;
     // private colors: DyeColor[];
     getColor(dyeColor: DyeColor): number;

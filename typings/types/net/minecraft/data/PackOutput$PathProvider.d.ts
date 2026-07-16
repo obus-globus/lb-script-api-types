@@ -7,8 +7,8 @@ import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d
 export class PackOutput$PathProvider extends Object {
     constructor(output: PackOutput, target: PackOutput$Target, kind: string)
     kind: string;
-    root: Path[];
-    file(element: Identifier, extension: string): Path[];
-    json(element: Identifier): Path[];
-    json(element: ResourceKey<Object>): Path[];
+    root: Path;
+    file(element: Identifier, extension: string): Path;
+    json(element: Identifier): Path;
+    json(element: ResourceKey<Object>): Path;
 }

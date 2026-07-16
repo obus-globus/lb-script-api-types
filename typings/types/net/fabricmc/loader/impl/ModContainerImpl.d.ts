@@ -8,22 +8,22 @@ import type { LoaderModMetadata } from '../../../../net/fabricmc/loader/impl/met
 export class ModContainerImpl extends ModContainer {
     constructor(arg0: ModCandidateImpl)
     // private childModIds: string[];
-    readonly codeSourcePaths: Path[][];
+    readonly codeSourcePaths: Path[];
     readonly info: LoaderModMetadata;
     readonly origin: ModOrigin;
     // private parentModId: string;
-    // private roots: Path[][];
+    // private roots: Path[];
     // private warnedClose: boolean;
-    // private checkFsOpen(arg0: Path[][]): boolean;
-    getCodeSourcePaths(): Path[][];
+    // private checkFsOpen(arg0: Path[]): boolean;
+    getCodeSourcePaths(): Path[];
     getContainedMods(): ModContainer_2[];
     getContainingMod(): Optional<ModContainer_2>;
     getInfo(): LoaderModMetadata;
     getMetadata(): LoaderModMetadata;
     getOrigin(): ModOrigin;
-    getPath(arg0: string): Path[];
-    getRootPath(): Path[];
-    getRootPaths(): Path[][];
-    // private obtainRootPaths(): Path[][];
+    getPath(arg0: string): Path;
+    getRootPath(): Path;
+    getRootPaths(): Path[];
+    // private obtainRootPaths(): Path[];
     toString(): string;
 }

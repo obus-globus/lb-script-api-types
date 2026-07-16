@@ -19,23 +19,23 @@ export class Knot extends FabricLauncherBase {
     static setLauncher(paramarg0: FabricLauncher): void;
     constructor(arg0: EnvType)
     // private classLoader: KnotClassLoaderInterface;
-    readonly classPath: Path[][];
+    readonly classPath: Path[];
     // private envType: EnvType;
     // private properties: { [key: string]: Object };
     // private provider: GameProvider;
     // private unlocked: boolean;
-    addToClassPath(arg0: Path[], ...arg1: string[]): void;
+    addToClassPath(arg0: Path, ...arg1: string[]): void;
     // private createGameProvider(arg0: string[]): GameProvider;
     getClassByteArray(arg0: string, arg1: boolean): number[];
-    getClassPath(): Path[][];
+    getClassPath(): Path[];
     getEntrypoint(): string;
     getEnvironmentType(): EnvType;
-    getManifest(arg0: Path[]): Manifest;
+    getManifest(arg0: Path): Manifest;
     getResourceAsStream(arg0: string): InputStream;
     getTargetClassLoader(): ClassLoader;
     init(arg0: string[]): ClassLoader;
     isClassLoaded(arg0: string): boolean;
     loadIntoTarget(arg0: string): Class<Object>;
-    setAllowedPrefixes(arg0: Path[], ...arg1: string[]): void;
-    setValidParentClassPath(arg0: Path[][]): void;
+    setAllowedPrefixes(arg0: Path, ...arg1: string[]): void;
+    setValidParentClassPath(arg0: Path[]): void;
 }

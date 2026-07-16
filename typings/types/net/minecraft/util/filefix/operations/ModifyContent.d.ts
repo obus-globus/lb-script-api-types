@@ -8,5 +8,5 @@ export class ModifyContent extends Object implements FileFixOperation {
     constructor(fileAccessProvider: FileAccessProvider, fixFunction: (param0: UpgradeProgress) => void)
     // private fileAccessProvider: FileAccessProvider;
     // private fixFunction: (param0: UpgradeProgress) => void;
-    fix(baseDirectory: Path[], upgradeProgress: UpgradeProgress): void;
+    fix(baseDirectory: Path, upgradeProgress: UpgradeProgress): void;
 }

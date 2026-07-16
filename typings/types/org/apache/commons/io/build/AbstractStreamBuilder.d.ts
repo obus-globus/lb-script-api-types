@@ -31,7 +31,7 @@ export abstract class AbstractStreamBuilder<T extends unknown, B extends Abstrac
     getInputStream(): InputStream;
     getOpenOptions(): OpenOption[];
     getOutputStream(): OutputStream;
-    getPath(): Path[];
+    getPath(): Path;
     getRandomAccessFile(): RandomAccessFile;
     getReader(): Reader;
     getWriter(): Writer;

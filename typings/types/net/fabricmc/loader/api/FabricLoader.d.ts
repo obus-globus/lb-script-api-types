@@ -11,12 +11,12 @@ import type { ObjectShare } from '../../../../net/fabricmc/loader/api/ObjectShar
 import type { EntrypointContainer } from '../../../../net/fabricmc/loader/api/entrypoint/EntrypointContainer.d.ts'
 export interface FabricLoader extends Object {
     getAllMods(): ModContainer[];
-    getConfigDir(): Path[];
+    getConfigDir(): Path;
     getConfigDirectory(): File;
     getEntrypointContainers<T extends unknown>(arg0: string, arg1: Class<T>): EntrypointContainer<T>[];
     getEntrypoints<T extends unknown>(arg0: string, arg1: Class<T>): T[];
     getEnvironmentType(): EnvType;
-    getGameDir(): Path[];
+    getGameDir(): Path;
     getGameDirectory(): File;
     getGameInstance(): Object;
     getLaunchArguments(arg0: boolean): string[];

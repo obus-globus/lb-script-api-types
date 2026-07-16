@@ -6,10 +6,10 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ScatterGatherBackingStore } from '../../../../../org/apache/commons/compress/parallel/ScatterGatherBackingStore.d.ts'
 export class FileBasedScatterGatherBackingStore extends Object implements ScatterGatherBackingStore {
     constructor(arg0: File)
-    constructor(arg0: Path[])
+    constructor(arg0: Path)
     // private closed: boolean;
     // private outputStream: OutputStream;
-    // private target: Path[];
+    // private target: Path;
     close(): void;
     closeForWriting(): void;
     getInputStream(): InputStream;

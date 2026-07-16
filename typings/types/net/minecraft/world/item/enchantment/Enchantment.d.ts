@@ -70,7 +70,7 @@ export class Enchantment extends Record {
     getMaxLevel(): number;
     getMinCost(level: number): number;
     getMinLevel(): number;
-    getSlotItems(entity: LivingEntity): { [key in EquipmentSlot]: ItemStack };
+    getSlotItems(entity: LivingEntity): Map<EquipmentSlot, ItemStack>;
     getSupportedItems(): Holder<Item>[];
     getWeight(): number;
     hashCode(): number;

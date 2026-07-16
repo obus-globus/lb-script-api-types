@@ -14,7 +14,7 @@ export class BaseModelLoader extends Object implements ModelLoader {
     constructor(arg0: MRL)
     // private defaultFactory: TranslatorFactory;
     mrl: MRL;
-    createModel(arg0: Path[], arg1: string, arg2: Device, arg3: Block, arg4: { [key: string]: Object }, arg5: string): Model;
+    createModel(arg0: Path, arg1: string, arg2: Device, arg3: Block, arg4: { [key: string]: Object }, arg5: string): Model;
     downloadModel<I extends unknown, O extends unknown>(arg0: Criteria<I, O>, arg1: Progress): void;
     getApplication(): Application;
     getArtifactId(): string;
@@ -24,6 +24,6 @@ export class BaseModelLoader extends Object implements ModelLoader {
     getTranslatorFactory(arg0: Criteria<Object, Object>, arg1: { [key: string]: Object }): TranslatorFactory;
     isDownloaded<I extends unknown, O extends unknown>(arg0: Criteria<I, O>): boolean;
     loadModel<I extends unknown, O extends unknown>(arg0: Criteria<I, O>): ZooModel<I, O>;
-    // private loadServingProperties(arg0: Path[], arg1: { [key: string]: Object }, arg2: { [key: string]: string }): void;
+    // private loadServingProperties(arg0: Path, arg1: { [key: string]: Object }, arg2: { [key: string]: string }): void;
     toString(): string;
 }

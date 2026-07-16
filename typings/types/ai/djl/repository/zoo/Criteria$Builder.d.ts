@@ -39,7 +39,7 @@ export class Criteria$Builder<I extends unknown, O extends unknown> extends Obje
     optFilters(arg0: { [key: string]: string }): Criteria$Builder<I, O>;
     optGroupId(arg0: string): Criteria$Builder<I, O>;
     optModelName(arg0: string): Criteria$Builder<I, O>;
-    optModelPath(arg0: Path[]): Criteria$Builder<I, O>;
+    optModelPath(arg0: Path): Criteria$Builder<I, O>;
     optModelUrls(arg0: string): Criteria$Builder<I, O>;
     optModelZoo(arg0: ModelZoo): Criteria$Builder<I, O>;
     optOption(arg0: string, arg1: string): Criteria$Builder<I, O>;

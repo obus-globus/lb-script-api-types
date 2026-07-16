@@ -62,12 +62,12 @@ export class TruffleAdapter extends Object implements VirtualLanguageServerFileP
     getLogger(): TruffleLogger;
     getOrCreateSurrogate(uri: URI, text: string, languageInfo: LanguageInfo): TextDocumentSurrogate;
     getSource(uri: URI): Source;
-    getSourceText(path: Path[]): string;
+    getSourceText(path: Path): string;
     hasCoverageData(uri: URI): boolean;
     hover(uri: URI, line: number, column: number): Future<Hover>;
     // private initSurrogateMap(): void;
     initializeLSPServer(server: LSPServerAccessor): void;
-    isVirtualFile(path: Path[]): boolean;
+    isVirtualFile(path: Path): boolean;
     parse(text: string, langId: string, uri: URI): Future<CallTarget>;
     parseWithEnteredContext(text: string, langId: string, uri: URI): CallTarget;
     parseWithEnteredContext(surrogate: TextDocumentSurrogate): CallTarget;

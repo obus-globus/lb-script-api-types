@@ -16,7 +16,7 @@ export class FileTimes extends Object {
     static plusMillis(paramarg0: FileTime, paramarg1: number): FileTime;
     static plusNanos(paramarg0: FileTime, paramarg1: number): FileTime;
     static plusSeconds(paramarg0: FileTime, paramarg1: number): FileTime;
-    static setLastModifiedTime(paramarg0: Path[][]): void;
+    static setLastModifiedTime(paramarg0: Path): void;
     static toDate(paramarg0: FileTime): Date;
     static toFileTime(paramarg0: Date): FileTime;
     static toNtfsTime(paramarg0: FileTime): number;

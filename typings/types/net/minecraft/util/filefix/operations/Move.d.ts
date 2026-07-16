@@ -8,7 +8,7 @@ export class Move extends Record implements FileFixOperation {
     // private from: string;
     // private to: string;
     equals(o: Object | null): boolean;
-    fix(baseDirectory: Path[], upgradeProgress: UpgradeProgress): void;
+    fix(baseDirectory: Path, upgradeProgress: UpgradeProgress): void;
     from(): string;
     hashCode(): number;
     relative(sourceFolder: string, targetFolder: string): Move;

@@ -17,13 +17,13 @@ import type { ResourceProvider } from '../../../../net/minecraft/server/packs/re
 export class VanillaPackResources extends Object implements PackResources {
     static METADATA_EXTENSION: string;
     static PACK_META: string;
-    constructor(location: PackLocationInfo, metadata: ResourceMetadata, namespaces: string[], rootPaths: Path[][], pathsForType: { [key in PackType]: Path[][] })
+    constructor(location: PackLocationInfo, metadata: ResourceMetadata, namespaces: string[], rootPaths: Path[], pathsForType: Map<PackType, Path[]>)
     // private builtInMetadata: ResourceMetadata;
     // private location: PackLocationInfo;
     // private namespaces: string[];
-    // private pathsForType: { [key in PackType]: Path[][] };
+    // private pathsForType: Map<PackType, Path[]>;
     // private resourceMetadata: ResourceMetadata;
-    // private rootPaths: Path[][];
+    // private rootPaths: Path[];
     asProvider(): (param0: Identifier) => Optional<Resource>;
     close(): void;
     getMetadataSection<T extends unknown>(metadataSerializer: MetadataSectionType<T>): T;
@@ -31,7 +31,7 @@ export class VanillaPackResources extends Object implements PackResources {
     getResource(type: PackType, location: Identifier): () => InputStream;
     getRootResource(...path: string[]): () => InputStream;
     knownPackInfo(): Optional<KnownPack>;
-    listRawPaths(type: PackType, resource: Identifier, output: (param0: Path[]) => void): void;
+    listRawPaths(type: PackType, resource: Identifier, output: (param0: Path) => void): void;
     listResources(type: PackType, namespace: string, directory: string, output: (param0: Object | null, param1: Object | null) => void): void;
     location(): PackLocationInfo;
     packId(): string;

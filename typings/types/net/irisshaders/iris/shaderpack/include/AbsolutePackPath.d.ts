@@ -10,6 +10,6 @@ export class AbsolutePackPath extends Object {
     hashCode(): number;
     parent(): Optional<AbsolutePackPath>;
     resolve(arg0: string): AbsolutePackPath;
-    resolved(arg0: Path[]): Path[];
+    resolved(arg0: Path): Path;
     toString(): string;
 }

@@ -7,7 +7,7 @@ export class DeleteFileOrEmptyDirectory extends Record implements FileFixOperati
     constructor(target: string)
     // private target: string;
     equals(o: Object | null): boolean;
-    fix(baseDirectory: Path[], upgradeProgress: UpgradeProgress): void;
+    fix(baseDirectory: Path, upgradeProgress: UpgradeProgress): void;
     hashCode(): number;
     target(): string;
     toString(): string;

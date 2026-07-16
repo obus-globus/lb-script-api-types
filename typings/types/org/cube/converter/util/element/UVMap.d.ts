@@ -7,12 +7,12 @@ export class UVMap extends Object {
     static fromBoxUV(paramarg0: Position3V, paramarg1: (Object | null)[], paramarg2: boolean): UVMap;
     static fromPerfaceUV(paramarg0: JsonObject): UVMap;
     private constructor(arg0: UVMap$UVType)
-    readonly uvMap: { [key in Direction]: number[] };
-    readonly uvRotation: { [key in Direction]: number };
+    readonly uvMap: Map<Direction, number[]>;
+    readonly uvRotation: Map<Direction, number>;
     readonly uvType: UVMap$UVType;
     clone(): UVMap;
-    getUvMap(): { [key in Direction]: number[] };
-    getUvRotation(): { [key in Direction]: number };
+    getUvMap(): Map<Direction, number[]>;
+    getUvRotation(): Map<Direction, number>;
     getUvType(): UVMap$UVType;
     rotate(arg0: Direction, arg1: number): void;
     toJavaPerfaceUV(arg0: number, arg1: number): UVMap;

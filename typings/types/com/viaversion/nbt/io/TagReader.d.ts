@@ -13,6 +13,6 @@ export class TagReader<T extends Tag> extends Object {
     named(): TagReader<T>;
     read(arg0: DataInput): T;
     read(arg0: InputStream): T;
-    read(arg0: Path[], arg1: boolean): T;
+    read(arg0: Path, arg1: boolean): T;
     tagLimiter(arg0: TagLimiter): TagReader<T>;
 }

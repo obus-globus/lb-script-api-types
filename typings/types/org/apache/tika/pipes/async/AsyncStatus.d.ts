@@ -9,15 +9,15 @@ export class AsyncStatus extends Object {
     readonly crashMessage: string;
     readonly lastUpdate: Instant;
     readonly started: Instant;
-    readonly statusCounts: { [key in PipesResult$STATUS]: number };
+    readonly statusCounts: Map<PipesResult$STATUS, number>;
     readonly totalCountResult: TotalCountResult;
     getAsyncStatus(): AsyncStatus$ASYNC_STATUS;
     getCrashMessage(): string;
     getLastUpdate(): Instant;
     getStarted(): Instant;
-    getStatusCounts(): { [key in PipesResult$STATUS]: number };
+    getStatusCounts(): Map<PipesResult$STATUS, number>;
     getTotalCountResult(): TotalCountResult;
     toString(): string;
-    update(arg0: { [key in PipesResult$STATUS]: number }, arg1: TotalCountResult, arg2: AsyncStatus$ASYNC_STATUS): void;
+    update(arg0: Map<PipesResult$STATUS, number>, arg1: TotalCountResult, arg2: AsyncStatus$ASYNC_STATUS): void;
     updateCrash(arg0: string): void;
 }

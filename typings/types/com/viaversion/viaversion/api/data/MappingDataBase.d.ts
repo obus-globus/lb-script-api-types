@@ -31,7 +31,7 @@ export class MappingDataBase extends Object implements MappingData {
     slotDisplayMappings: FullMappings;
     soundMappings: Mappings;
     statisticsMappings: Mappings;
-    // private tags: { [key in RegistryType]: TagData[] };
+    // private tags: Map<RegistryType, TagData[]>;
     // private unmappedVersion: string;
     changedBlocks(): (Object | null)[];
     checkValidity(arg0: number, arg1: number, arg2: string): number;

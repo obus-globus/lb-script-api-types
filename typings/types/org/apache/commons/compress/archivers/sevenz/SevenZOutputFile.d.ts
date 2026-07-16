@@ -36,8 +36,8 @@ export class SevenZOutputFile extends Object implements Closeable {
     close(): void;
     closeArchiveEntry(): void;
     createArchiveEntry(arg0: File, arg1: string): SevenZArchiveEntry;
-    createArchiveEntry(arg0: Path[], arg1: string, ...arg2: LinkOption[]): SevenZArchiveEntry;
-    // private fillDates(arg0: Path[], arg1: SevenZArchiveEntry, ...arg2: LinkOption[]): void;
+    createArchiveEntry(arg0: Path, arg1: string, ...arg2: LinkOption[]): SevenZArchiveEntry;
+    // private fillDates(arg0: Path, arg1: SevenZArchiveEntry, ...arg2: LinkOption[]): void;
     finish(): void;
     // private getContentMethods(arg0: SevenZArchiveEntry): SevenZMethodConfiguration[];
     // private getCurrentOutputStream(): OutputStream;
@@ -47,7 +47,7 @@ export class SevenZOutputFile extends Object implements Closeable {
     setContentMethods(arg0: SevenZMethodConfiguration[]): void;
     // private setupFileOutputStream(): CountingOutputStream;
     write(arg0: InputStream): void;
-    write(arg0: Path[], ...arg1: OpenOption[]): void;
+    write(arg0: Path, ...arg1: OpenOption[]): void;
     write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;

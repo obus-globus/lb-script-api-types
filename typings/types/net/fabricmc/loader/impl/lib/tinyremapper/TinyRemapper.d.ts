@@ -23,7 +23,7 @@ import type { TrLogger } from '../../../../../../net/fabricmc/loader/impl/lib/ti
 import type { Remapper } from '../../../../../../org/objectweb/asm/commons/Remapper.d.ts'
 export class TinyRemapper extends Object {
     static newRemapper(paramarg0: TrLogger): TinyRemapper$Builder;
-    constructor(arg0: (Object | null)[], arg1: boolean, arg2: number, arg3: boolean, arg4: (Object | null)[], arg5: (Object | null)[], arg6: boolean, arg7: TinyRemapper$LinkedMethodPropagation, arg8: TinyRemapper$LinkedMethodPropagation, arg9: boolean, arg10: boolean, arg11: boolean, arg12: boolean, arg13: boolean, arg14: boolean, arg15: boolean, arg16: boolean, arg17: Pattern, arg18: boolean, arg19: boolean, arg20: (Object | null)[], arg21: (Object | null)[], arg22: (Object | null)[], arg23: (Object | null)[], arg24: Remapper, arg25: TrLogger, arg26: SimpleFileVisitor<Path[]>)
+    constructor(arg0: (Object | null)[], arg1: boolean, arg2: number, arg3: boolean, arg4: (Object | null)[], arg5: (Object | null)[], arg6: boolean, arg7: TinyRemapper$LinkedMethodPropagation, arg8: TinyRemapper$LinkedMethodPropagation, arg9: boolean, arg10: boolean, arg11: boolean, arg12: boolean, arg13: boolean, arg14: boolean, arg15: boolean, arg16: boolean, arg17: Pattern, arg18: boolean, arg19: boolean, arg20: (Object | null)[], arg21: (Object | null)[], arg22: (Object | null)[], arg23: (Object | null)[], arg24: Remapper, arg25: TrLogger, arg26: SimpleFileVisitor<Path>)
     // private analyzeVisitors: TinyRemapper$AnalyzeVisitorProvider[];
     // private check: boolean;
     // private checkPackageAccess: boolean;
@@ -67,7 +67,7 @@ export class TinyRemapper extends Object {
     // private stateProcessors: TinyRemapper$StateProcessor[];
     // private threadCount: number;
     // private threadPool: ExecutorService;
-    // private analyze(arg0: boolean, arg1: InputTag[], arg2: Path[], arg3: Path[]): ClassInstance;
+    // private analyze(arg0: boolean, arg1: InputTag[], arg2: Path, arg3: Path): ClassInstance;
     apply(arg0: (param0: string, param1: number[]) => void, ...arg1: InputTag[]): void;
     // private apply(arg0: ClassInstance): number[];
     // private checkClassMappings(): void;
@@ -82,11 +82,11 @@ export class TinyRemapper extends Object {
     // private merge(arg0: TinyRemapper$MrjState): void;
     // private mrjRefresh(arg0: TinyRemapper$MrjState): void;
     // private propagate(arg0: TinyRemapper$MrjState): void;
-    // private read(arg0: Path[], arg1: boolean, arg2: InputTag[], arg3: Path[], arg4: boolean, arg5: FileSystemReference[]): CompletableFuture<ClassInstance[]>[];
-    // private read(arg0: Path[], arg1: boolean, arg2: InputTag[], arg3: boolean, arg4: FileSystemReference[]): CompletableFuture<ClassInstance[]>[];
-    // private read(arg0: Path[][], arg1: boolean, arg2: InputTag): CompletableFuture<ClassInstance[]>;
-    readClassPathAsync(...arg0: Path[][]): CompletableFuture<Object>;
-    // private readFile(arg0: Path[], arg1: boolean, arg2: InputTag[], arg3: Path[], arg4: FileSystemReference[]): ClassInstance[];
-    readInputsAsync(arg0: InputTag, ...arg1: Path[][]): CompletableFuture<Object>;
+    // private read(arg0: Path, arg1: boolean, arg2: InputTag[], arg3: Path, arg4: boolean, arg5: FileSystemReference[]): CompletableFuture<ClassInstance[]>[];
+    // private read(arg0: Path, arg1: boolean, arg2: InputTag[], arg3: boolean, arg4: FileSystemReference[]): CompletableFuture<ClassInstance[]>[];
+    // private read(arg0: Path[], arg1: boolean, arg2: InputTag): CompletableFuture<ClassInstance[]>;
+    readClassPathAsync(...arg0: Path[]): CompletableFuture<Object>;
+    // private readFile(arg0: Path, arg1: boolean, arg2: InputTag[], arg3: Path, arg4: FileSystemReference[]): ClassInstance[];
+    readInputsAsync(arg0: InputTag, ...arg1: Path[]): CompletableFuture<Object>;
     // private refresh(): void;
 }

@@ -130,22 +130,34 @@ export class PolyglotScript extends Object implements AutoCloseable {
      * event handlers, render logic) before returning. The module is added
      * to LiquidBounce's module manager as soon as your script is enabled.
      *
-     * @param moduleObject Metadata describing the module.
+     * @param moduleObject Metadata describing the module. Settings are
+     *                     declared here, under the `settings` key, with the
+     *                     global {@link ScriptSetting `Setting`} factories -
+     *                     they are read back inside the callback via
+     *                     `mod.settings.<key>`.
      * @param moduleObject.name Display name shown in the ClickGUI.
      * @param moduleObject.category One of `"Combat" | "Movement" | "Player" | "Render" | "World" | "Misc" | "Fun" | "Exploit"`.
      * @param callback Configurator invoked once at registration. Use it to
-     *                 declare settings (`module.setting.boolean(...)`),
-     *                 bind events (`module.on(...)`), and define behaviour.
+     *                 bind events (`mod.on(...)`) and define behaviour.
      *
      * @example
      * ```ts
-     * script.registerModule({ name: "MyModule", category: "Misc" }, (mod) => {
-     *     const enabled = mod.setting.boolean({ name: "loud", default: false });
-     *     mod.on("enable", () => print("on"));
+     * script.registerModule({
+     *     name: "MyModule",
+     *     category: "Misc",
+     *     settings: {
+     *         loud: Setting.boolean({ name: "Loud", default: false }),
+     *     },
+     * }, (mod) => {
+     *     mod.on("enable", () => {
+     *         if (mod.settings.loud.get()) print("on!");
+     *     });
      * });
      * ```
      *
-     * Source: `PolyglotScript.kt:213` - KDoc on `fun registerModule`.
+     * Source: `ScriptModule.kt` - the `settings` map is read from the
+     * moduleObject at construction. (Upstream has no KDoc example; this
+     * docstring is authored locally.)
      */
     registerModule(moduleObject: { name: string; category: string; [key: string]: unknown }, callback: (mod: ScriptModule) => void): void;
 }

@@ -5,9 +5,9 @@ import type { PathContents } from '../../../../../net/minecraft/server/packs/lin
 export class PathContents$FileContents extends Record implements PathContents {
     static MISSING: PathContents;
     static RELATIVE: PathContents;
-    constructor(contents: Path[])
-    // private contents: Path[];
-    contents(): Path[];
+    constructor(contents: Path)
+    // private contents: Path;
+    contents(): Path;
     equals(o: Object | null): boolean;
     hashCode(): number;
     toString(): string;

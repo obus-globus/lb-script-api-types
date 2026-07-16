@@ -6,11 +6,11 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Tag } from '../../../../../net/minecraft/nbt/Tag.d.ts'
 import type { CompressedNbt$MissingSeverity } from '../../../../../net/minecraft/util/filefix/access/CompressedNbt$MissingSeverity.d.ts'
 export abstract class CompressedNbt extends Object implements AutoCloseable {
-    constructor(path: Path[], missingSeverity: CompressedNbt$MissingSeverity)
+    constructor(path: Path, missingSeverity: CompressedNbt$MissingSeverity)
     // private missingSeverity: CompressedNbt$MissingSeverity;
-    // private path: Path[];
+    // private path: Path;
     close(): void;
-    path(): Path[];
+    path(): Path;
     read(): Optional<Dynamic<Tag>>;
     readFile(): Optional<Dynamic<Tag>>;
     write<T extends unknown>(data: Dynamic<T>): void;

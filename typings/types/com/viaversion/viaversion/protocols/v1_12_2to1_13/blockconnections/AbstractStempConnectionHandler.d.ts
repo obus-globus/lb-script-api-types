@@ -9,7 +9,7 @@ export abstract class AbstractStempConnectionHandler extends Object implements C
     constructor(arg0: string)
     // private baseStateId: number;
     // private blockId: (Object | null)[];
-    // private stemps: { [key in BlockFace]: number };
+    // private stemps: Map<BlockFace, number>;
     connect(arg0: UserConnection, arg1: BlockPosition, arg2: number): number;
     getBlockData(arg0: UserConnection, arg1: BlockPosition): number;
     getInitAction(arg0: string, arg1: string): (param0: WrappedBlockData) => void;

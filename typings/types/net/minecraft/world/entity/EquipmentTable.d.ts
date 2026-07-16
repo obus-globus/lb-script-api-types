@@ -6,14 +6,14 @@ import type { EquipmentSlot } from '../../../../net/minecraft/world/entity/Equip
 import type { LootTable } from '../../../../net/minecraft/world/level/storage/loot/LootTable.d.ts'
 export class EquipmentTable extends Record {
     static CODEC: Codec<EquipmentTable>;
-    static DROP_CHANCES_CODEC: Codec<{ [key in EquipmentSlot]: number }>;
+    static DROP_CHANCES_CODEC: Codec<Map<EquipmentSlot, number>>;
     constructor(lootTable: ResourceKey<LootTable>, dropChance: number)
-    constructor(lootTable: ResourceKey<LootTable>, slotDropChances: { [key in EquipmentSlot]: number })
+    constructor(lootTable: ResourceKey<LootTable>, slotDropChances: Map<EquipmentSlot, number>)
     // private lootTable: ResourceKey<LootTable>;
-    // private slotDropChances: { [key in EquipmentSlot]: number };
+    // private slotDropChances: Map<EquipmentSlot, number>;
     equals(o: Object | null): boolean;
     hashCode(): number;
     lootTable(): ResourceKey<LootTable>;
-    slotDropChances(): { [key in EquipmentSlot]: number };
+    slotDropChances(): Map<EquipmentSlot, number>;
     toString(): string;
 }

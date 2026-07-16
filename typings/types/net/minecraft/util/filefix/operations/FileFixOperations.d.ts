@@ -8,7 +8,7 @@ import type { GroupMove } from '../../../../../net/minecraft/util/filefix/operat
 import type { Move } from '../../../../../net/minecraft/util/filefix/operations/Move.d.ts'
 import type { RegexMove } from '../../../../../net/minecraft/util/filefix/operations/RegexMove.d.ts'
 export class FileFixOperations extends Object {
-    static applyInFolders(paramapplicableFolders: (param0: Path[][]) => Path[][][], paramoperations: FileFixOperation[]): ApplyInFolders;
+    static applyInFolders(paramapplicableFolders: (param0: Path) => Path[], paramoperations: FileFixOperation[]): ApplyInFolders;
     static delete(paramtarget: string): DeleteFileOrEmptyDirectory;
     static groupMove(paramdata: { [key: string]: string }, parammove: Move[]): GroupMove;
     static move(paramfrom: string, paramto: string): Move;

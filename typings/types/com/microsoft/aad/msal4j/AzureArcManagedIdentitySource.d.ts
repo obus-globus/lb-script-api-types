@@ -12,8 +12,8 @@ export class AzureArcManagedIdentitySource extends AbstractManagedIdentitySource
     // private MSI_ENDPOINT: URI;
     createManagedIdentityRequest(arg0: string): void;
     handleResponse(arg0: ManagedIdentityParameters, arg1: IHttpResponse): ManagedIdentityResponse;
-    // private isValidLinuxPath(arg0: Path[]): boolean;
-    // private isValidWindowsPath(arg0: Path[]): boolean;
+    // private isValidLinuxPath(arg0: Path): boolean;
+    // private isValidWindowsPath(arg0: Path): boolean;
     // private readChallengeFrom(arg0: IHttpResponse): Optional<string>;
-    // private validateFile(arg0: Path[]): void;
+    // private validateFile(arg0: Path): void;
 }

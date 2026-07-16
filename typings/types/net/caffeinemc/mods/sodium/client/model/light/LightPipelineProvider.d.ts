@@ -6,7 +6,7 @@ import type { FlatFluidLightPipeline } from '../../../../../../../net/caffeinemc
 export class LightPipelineProvider extends Object {
     constructor(arg0: LightDataAccess)
     readonly flatFluidLighter: FlatFluidLightPipeline;
-    // private lighters: { [key in LightMode]: LightPipeline };
+    // private lighters: Map<LightMode, LightPipeline>;
     getFlatFluidLighter(): FlatFluidLightPipeline;
     getLighter(arg0: LightMode): LightPipeline;
 }

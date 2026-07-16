@@ -16,7 +16,7 @@ export class AndFileFilter extends AbstractFileFilter implements Serializable, C
     readonly fileFilters: IOFileFilter[];
     accept(arg0: File): boolean;
     accept(arg0: File, arg1: string): boolean;
-    accept(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
+    accept(arg0: Path, arg1: BasicFileAttributes): FileVisitResult;
     addFileFilter(...arg0: IOFileFilter[]): void;
     addFileFilter(arg0: IOFileFilter): void;
     getFileFilters(): IOFileFilter[];

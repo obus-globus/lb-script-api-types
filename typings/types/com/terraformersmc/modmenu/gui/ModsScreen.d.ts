@@ -64,7 +64,7 @@ export class ModsScreen extends Screen {
     init(width: number, height: number): void;
     keyPressed(arg0: KeyEvent): boolean;
     onClose(): void;
-    onFilesDrop(arg0: Path[][]): void;
+    onFilesDrop(arg0: Path[]): void;
     safelyOpenConfigScreen(arg0: string): void;
     // private setFilterOptionsShown(arg0: boolean): void;
     // private updateFiltersX(arg0: boolean): boolean;

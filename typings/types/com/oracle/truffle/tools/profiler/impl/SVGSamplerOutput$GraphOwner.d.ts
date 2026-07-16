@@ -14,12 +14,12 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { JSONObject } from '../../../../../../org/graalvm/shadowed/org/json/JSONObject.d.ts'
 export class SVGSamplerOutput$GraphOwner extends Object implements SVGSamplerOutput$SVGComponent {
     constructor(output: StringBuilder, data: CPUSamplerData[])
-    // private colorsForKeys: { [key in SVGSamplerOutput$GraphColorMap]: Map<SVGSamplerOutput$GraphOwner$SampleKey, string> };
+    // private colorsForKeys: Map<SVGSamplerOutput$GraphColorMap, Map<SVGSamplerOutput$GraphOwner$SampleKey, string>>;
     // private components: SVGSamplerOutput$SVGComponent[];
     // private data: CPUSamplerData[];
     keyCounter: number;
     keyHash: Map<SVGSamplerOutput$GraphOwner$SampleKey, number>;
-    // private languageColors: { [key in SVGSamplerOutput$GraphColorMap]: string };
+    // private languageColors: Map<SVGSamplerOutput$GraphColorMap, string>;
     nameCounter: number;
     nameHash: { [key: string]: number };
     // private random: Random;

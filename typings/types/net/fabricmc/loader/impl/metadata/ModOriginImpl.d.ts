@@ -5,14 +5,14 @@ import type { ModOrigin$Kind } from '../../../../../net/fabricmc/loader/api/meta
 export class ModOriginImpl extends Object implements ModOrigin {
     constructor()
     constructor(arg0: string, arg1: string)
-    constructor(arg0: Path[][])
+    constructor(arg0: Path[])
     readonly kind: ModOrigin$Kind;
     readonly parentModId: string;
     readonly parentSubLocation: string;
-    readonly paths: Path[][];
+    readonly paths: Path[];
     getKind(): ModOrigin$Kind;
     getParentModId(): string;
     getParentSubLocation(): string;
-    getPaths(): Path[][];
+    getPaths(): Path[];
     toString(): string;
 }

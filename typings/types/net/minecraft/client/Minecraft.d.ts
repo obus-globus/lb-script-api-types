@@ -214,7 +214,7 @@ export class Minecraft extends ReentrantBlockableEventLoop<() => void> implement
     // private remoteFriendListUpdateHandler: RemoteFriendListUpdateHandler;
     readonly reportingContext: ReportingContext;
     readonly resourceManager: ReloadableResourceManager;
-    readonly resourcePackDirectory: Path[];
+    readonly resourcePackDirectory: Path;
     readonly resourcePackRepository: PackRepository;
     // private rightClickDelay: number;
     readonly running: boolean;
@@ -247,7 +247,7 @@ export class Minecraft extends ReentrantBlockableEventLoop<() => void> implement
     allowsMultiplayer(): boolean;
     allowsRealms(): boolean;
     allowsTelemetry(): boolean;
-    // private archiveProfilingReport(systemReport: SystemReport, profilingResultPaths: Path[][]): Path[];
+    // private archiveProfilingReport(systemReport: SystemReport, profilingResultPaths: Path[]): Path;
     callStartUseItem(): void;
     canInterruptScreen(): boolean;
     canSwitchGameMode(): boolean;
@@ -324,7 +324,7 @@ export class Minecraft extends ReentrantBlockableEventLoop<() => void> implement
     // private getQuickActionsDialog(): Optional<Holder<Dialog>>;
     getReportingContext(): ReportingContext;
     getResourceManager(): ResourceManager;
-    getResourcePackDirectory(): Path[];
+    getResourcePackDirectory(): Path;
     getResourcePackRepository(): PackRepository;
     getRunningThread(): Thread;
     getShaderManager(): ShaderManager;

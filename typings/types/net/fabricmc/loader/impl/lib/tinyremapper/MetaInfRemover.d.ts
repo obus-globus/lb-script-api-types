@@ -6,6 +6,6 @@ import type { TinyRemapper } from '../../../../../../net/fabricmc/loader/impl/li
 export class MetaInfRemover extends Object implements OutputConsumerPath$ResourceRemapper {
     static INSTANCE: MetaInfRemover;
     constructor()
-    canTransform(arg0: TinyRemapper, arg1: Path[]): boolean;
-    transform(arg0: Path[], arg1: Path[], arg2: InputStream, arg3: TinyRemapper): void;
+    canTransform(arg0: TinyRemapper, arg1: Path): boolean;
+    transform(arg0: Path, arg1: Path, arg2: InputStream, arg3: TinyRemapper): void;
 }

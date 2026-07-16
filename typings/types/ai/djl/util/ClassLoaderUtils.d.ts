@@ -6,8 +6,8 @@ import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Enumeration } from '../../../java/util/Enumeration.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class ClassLoaderUtils extends Object {
-    static compileJavaClass(paramarg0: Path[][]): void;
-    static findImplementation(paramarg0: Path[][], paramarg1: Class<Object>, paramarg2: string): Object | null;
+    static compileJavaClass(paramarg0: Path): void;
+    static findImplementation(paramarg0: Path, paramarg1: Class<Object>, paramarg2: string): Object | null;
     static getContextClassLoader(): ClassLoader;
     static getResource(paramarg0: string): URL;
     static getResourceAsStream(paramarg0: string): InputStream;

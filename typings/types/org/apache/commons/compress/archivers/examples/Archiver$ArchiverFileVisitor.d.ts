@@ -5,12 +5,12 @@ import type { SimpleFileVisitor } from '../../../../../../java/nio/file/SimpleFi
 import type { BasicFileAttributes } from '../../../../../../java/nio/file/attribute/BasicFileAttributes.d.ts'
 import type { ArchiveEntry } from '../../../../../../org/apache/commons/compress/archivers/ArchiveEntry.d.ts'
 import type { ArchiveOutputStream } from '../../../../../../org/apache/commons/compress/archivers/ArchiveOutputStream.d.ts'
-export class Archiver$ArchiverFileVisitor<O extends ArchiveOutputStream<E>, E extends ArchiveEntry> extends SimpleFileVisitor<Path[]> {
-    constructor(arg0: ArchiveOutputStream<ArchiveEntry>, arg1: Path[], arg2: LinkOption[], arg3: Archiver$ArchiverFileVisitor<ArchiveOutputStream<ArchiveEntry>, ArchiveEntry>)
-    // private directory: Path[];
+export class Archiver$ArchiverFileVisitor<O extends ArchiveOutputStream<E>, E extends ArchiveEntry> extends SimpleFileVisitor<Path> {
+    constructor(arg0: ArchiveOutputStream<ArchiveEntry>, arg1: Path, arg2: LinkOption[], arg3: Archiver$ArchiverFileVisitor<ArchiveOutputStream<ArchiveEntry>, ArchiveEntry>)
+    // private directory: Path;
     // private linkOptions: LinkOption[];
     // private outputStream: O;
-    preVisitDirectory(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
-    visit(arg0: Path[], arg1: BasicFileAttributes, arg2: boolean): FileVisitResult;
-    visitFile(arg0: Path[], arg1: BasicFileAttributes): FileVisitResult;
+    preVisitDirectory(arg0: Path, arg1: BasicFileAttributes): FileVisitResult;
+    visit(arg0: Path, arg1: BasicFileAttributes, arg2: boolean): FileVisitResult;
+    visitFile(arg0: Path, arg1: BasicFileAttributes): FileVisitResult;
 }

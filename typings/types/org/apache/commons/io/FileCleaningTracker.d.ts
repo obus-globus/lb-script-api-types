@@ -18,8 +18,8 @@ export class FileCleaningTracker extends Object {
     getTrackCount(): number;
     track(arg0: File, arg1: Object): void;
     track(arg0: File, arg1: Object, arg2: FileDeleteStrategy): void;
-    track(arg0: Path[], arg1: Object): void;
-    track(arg0: Path[], arg1: Object, arg2: FileDeleteStrategy): void;
+    track(arg0: Path, arg1: Object): void;
+    track(arg0: Path, arg1: Object, arg2: FileDeleteStrategy): void;
     track(arg0: string, arg1: Object): void;
     track(arg0: string, arg1: Object, arg2: FileDeleteStrategy): void;
 }

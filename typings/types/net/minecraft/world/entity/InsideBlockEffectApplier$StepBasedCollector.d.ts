@@ -6,8 +6,8 @@ import type { InsideBlockEffectType } from '../../../../net/minecraft/world/enti
 export class InsideBlockEffectApplier$StepBasedCollector extends Object implements InsideBlockEffectApplier {
     static NOOP: InsideBlockEffectApplier;
     constructor()
-    // private afterEffectsInStep: { [key in InsideBlockEffectType]: (param0: Entity) => void[] };
-    // private beforeEffectsInStep: { [key in InsideBlockEffectType]: (param0: Entity) => void[] };
+    // private afterEffectsInStep: Map<InsideBlockEffectType, (param0: Entity) => void[]>;
+    // private beforeEffectsInStep: Map<InsideBlockEffectType, (param0: Entity) => void[]>;
     // private effectsInStep: InsideBlockEffectType[];
     // private finalEffects: (param0: Entity) => void[];
     // private lastStep: number;

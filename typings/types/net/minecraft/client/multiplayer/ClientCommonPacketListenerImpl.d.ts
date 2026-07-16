@@ -98,5 +98,5 @@ export abstract class ClientCommonPacketListenerImpl extends Object implements P
     shouldHandleMessage(packet: Packet<any>): boolean;
     showDialog(dialog: Holder<Dialog>, activeScreen: Screen): void;
     showDialog(dialog: Holder<Dialog>, connectionAccess: DialogConnectionAccess, activeScreen: Screen): void;
-    // private storeDisconnectionReport(packet: Packet<PacketListener>, cause: Throwable): Optional<Path[]>;
+    // private storeDisconnectionReport(packet: Packet<PacketListener>, cause: Throwable): Optional<Path>;
 }

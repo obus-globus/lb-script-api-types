@@ -35,7 +35,7 @@ export class PlatformRecorder extends Object {
     getTimer(): Timer;
     // private isToDisk(): boolean;
     makeChunkList(arg0: Instant, arg1: Instant): RepositoryChunk[];
-    migrate(arg0: Path[]): void;
+    migrate(arg0: Path): void;
     newCopy(arg0: PlatformRecording, arg1: boolean): Recording;
     newRecording(arg0: { [key: string]: string }): PlatformRecording;
     // private newRecording(arg0: { [key: string]: string }, arg1: number): PlatformRecording;

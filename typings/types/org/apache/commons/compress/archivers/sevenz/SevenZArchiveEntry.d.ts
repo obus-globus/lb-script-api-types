@@ -53,7 +53,7 @@ export class SevenZArchiveEntry extends Object implements ArchiveEntry {
     isAntiItem(): boolean;
     isDirectory(): boolean;
     isEmptyStream(): boolean;
-    resolveIn(arg0: Path[]): Path[];
+    resolveIn(arg0: Path): Path;
     setAccessDate(arg0: Date): void;
     setAccessDate(arg0: number): void;
     setAccessTime(arg0: FileTime): void;

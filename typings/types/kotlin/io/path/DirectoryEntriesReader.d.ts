@@ -3,12 +3,12 @@ import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { SimpleFileVisitor } from '../../../java/nio/file/SimpleFileVisitor.d.ts'
 import type { BasicFileAttributes } from '../../../java/nio/file/attribute/BasicFileAttributes.d.ts'
 import type { PathNode } from '../../../kotlin/io/path/PathNode.d.ts'
-export class DirectoryEntriesReader extends SimpleFileVisitor<Path[][]> {
+export class DirectoryEntriesReader extends SimpleFileVisitor<Path> {
     constructor(followLinks: boolean)
     // private directoryNode: PathNode | null;
     // private entries: PathNode[];
     readonly followLinks: boolean;
-    preVisitDirectory(dir: Path[][], attrs: BasicFileAttributes): FileVisitResult;
+    preVisitDirectory(dir: Path, attrs: BasicFileAttributes): FileVisitResult;
     readEntries(directoryNode: PathNode): PathNode[];
-    visitFile(file: Path[][], attrs: BasicFileAttributes): FileVisitResult;
+    visitFile(file: Path, attrs: BasicFileAttributes): FileVisitResult;
 }

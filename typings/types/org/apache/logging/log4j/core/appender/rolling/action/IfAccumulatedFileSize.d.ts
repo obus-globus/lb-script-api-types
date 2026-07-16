@@ -10,7 +10,7 @@ export class IfAccumulatedFileSize extends Object implements PathCondition {
     // private accumulatedSize: number;
     readonly nestedConditions: PathCondition[];
     readonly thresholdBytes: number;
-    accept(basePath: Path[], relativePath: Path[], attrs: BasicFileAttributes): boolean;
+    accept(basePath: Path, relativePath: Path, attrs: BasicFileAttributes): boolean;
     beforeFileTreeWalk(): void;
     getNestedConditions(): PathCondition[];
     getThresholdBytes(): number;

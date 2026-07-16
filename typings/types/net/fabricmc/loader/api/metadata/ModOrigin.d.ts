@@ -5,5 +5,5 @@ export interface ModOrigin extends Object{
     getKind(): ModOrigin$Kind;
     getParentModId(): string;
     getParentSubLocation(): string;
-    getPaths(): Path[][];
+    getPaths(): Path[];
 }

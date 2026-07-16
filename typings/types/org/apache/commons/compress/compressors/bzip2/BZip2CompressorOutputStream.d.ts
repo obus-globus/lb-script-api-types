@@ -61,7 +61,7 @@ export class BZip2CompressorOutputStream extends CompressorOutputStream<OutputSt
     // private sendMTFValues6(arg0: number, arg1: number): void;
     // private sendMTFValues7(): void;
     write(arg0: File): number;
-    write(arg0: Path[]): number;
+    write(arg0: Path): number;
     write(arg0: number[]): void;
     write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;

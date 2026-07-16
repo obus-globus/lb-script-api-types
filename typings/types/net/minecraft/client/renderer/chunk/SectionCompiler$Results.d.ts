@@ -7,7 +7,7 @@ import type { BlockEntity } from '../../../../../net/minecraft/world/level/block
 export class SectionCompiler$Results extends Object {
     constructor()
     blockEntities: BlockEntity[];
-    renderedLayers: { [key in ChunkSectionLayer]: MeshData };
+    renderedLayers: Map<ChunkSectionLayer, MeshData>;
     transparencyState: MeshData$SortState;
     visibilitySet: VisibilitySet;
     release(): void;

@@ -4,7 +4,7 @@ import type { EntityAttachments } from '../../../../net/minecraft/world/entity/E
 import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class EntityAttachments$Builder extends Object {
     private constructor()
-    // private attachments: { [key in EntityAttachment]: Vec3[] };
+    // private attachments: Map<EntityAttachment, Vec3[]>;
     attach(attachment: EntityAttachment, x: number, y: number, z: number): EntityAttachments$Builder;
     attach(attachment: EntityAttachment, point: Vec3): EntityAttachments$Builder;
     build(width: number, height: number): EntityAttachments;

@@ -13,6 +13,6 @@ export class ClassFileDumper extends Object {
     dumpFailedClass(arg0: string, arg1: number[]): void;
     isEnabled(): boolean;
     key(): string;
-    // private pathname(arg0: string): Path[];
-    // private write(arg0: Path[], arg1: number[]): void;
+    // private pathname(arg0: string): Path;
+    // private write(arg0: Path, arg1: number[]): void;
 }

@@ -8,8 +8,8 @@ import type { ExecutorService } from '../../../java/util/concurrent/ExecutorServ
 import type { Future } from '../../../java/util/concurrent/Future.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class AsynchronousFileChannel extends Object implements AsynchronousChannel {
-    static open(paramarg0: Path[][], ...paramarg1: (Object | null)[]): AsynchronousFileChannel;
-    static open(paramarg0: Path[][], paramarg1: OpenOption[], paramarg2: ExecutorService, paramarg3: Object | null): AsynchronousFileChannel;
+    static open(paramarg0: Path, ...paramarg1: (Object | null)[]): AsynchronousFileChannel;
+    static open(paramarg0: Path, paramarg1: OpenOption[], paramarg2: ExecutorService, paramarg3: Object | null): AsynchronousFileChannel;
     constructor()
     close(): void;
     force(arg0: boolean): void;

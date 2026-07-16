@@ -29,7 +29,7 @@ export class Iris extends Object {
     static getPipelineManager(): PipelineManager;
     static getReleaseTarget(): string;
     static getShaderPackOptionQueue(): { [key: string]: string };
-    static getShaderpacksDirectory(): Path[][];
+    static getShaderpacksDirectory(): Path;
     static getShaderpacksDirectoryManager(): ShaderpackDirectoryManager;
     static getStoredError(): Optional<Exception>;
     static getUpdateChecker(): UpdateChecker;
@@ -39,8 +39,8 @@ export class Iris extends Object {
     static handleKeybinds(paramarg0: Minecraft): void;
     static isFallback(): boolean;
     static isPackInUseQuick(): boolean;
-    static isValidShaderpack(paramarg0: Path[][]): boolean;
-    static isValidToShowPack(paramarg0: Path[][]): boolean;
+    static isValidShaderpack(paramarg0: Path): boolean;
+    static isValidToShowPack(paramarg0: Path): boolean;
     static loadShaderpack(): void;
     static loadShaderpackWhenPossible(): void;
     static loadedIncompatiblePack(): boolean;

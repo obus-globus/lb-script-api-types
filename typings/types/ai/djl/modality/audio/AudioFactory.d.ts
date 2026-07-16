@@ -11,7 +11,7 @@ export abstract class AudioFactory extends Object {
     sampleFormat: number;
     sampleRate: number;
     fromData(arg0: number[]): Audio;
-    fromFile(arg0: Path[]): Audio;
+    fromFile(arg0: Path): Audio;
     fromInputStream(arg0: InputStream): Audio;
     fromNDArray(arg0: NDArray): Audio;
     fromUrl(arg0: URL): Audio;

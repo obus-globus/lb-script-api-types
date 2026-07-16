@@ -7,7 +7,7 @@ export class SharedRegistrations extends Object {
     static create(): SharedRegistrations;
     static defaultRegistrations(): SharedRegistrations;
     constructor()
-    // private versionedTemplates: { [key in VersionType]: VersionedTemplateGroup[] };
+    // private versionedTemplates: Map<VersionType, VersionedTemplateGroup[]>;
     applyMatching(arg0: AbstractProtocol<any, any, any, any>): void;
     register(arg0: VersionType, arg1: VersionedTemplateGroup[]): void;
     registrations(): RegistrationBuilder;

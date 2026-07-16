@@ -7,7 +7,7 @@ import type { Pack$Metadata } from '../../../../net/minecraft/server/packs/repos
 import type { Pack$ResourcesSupplier } from '../../../../net/minecraft/server/packs/repository/Pack$ResourcesSupplier.d.ts'
 export class FilePackResources$FileResourcesSupplier extends Object implements Pack$ResourcesSupplier {
     constructor(content: File)
-    constructor(content: Path[])
+    constructor(content: Path)
     // private content: File;
     openFull(location: PackLocationInfo, metadata: Pack$Metadata): PackResources;
     openPrimary(location: PackLocationInfo): PackResources;

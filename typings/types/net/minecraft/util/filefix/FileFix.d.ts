@@ -16,5 +16,5 @@ export abstract class FileFix extends Object {
     getSchema(): Schema;
     getVersion(): number;
     makeFixer(): void;
-    runFixOperations(baseFolder: Path[], upgradeProgress: UpgradeProgress): void;
+    runFixOperations(baseFolder: Path, upgradeProgress: UpgradeProgress): void;
 }

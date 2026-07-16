@@ -4,14 +4,14 @@ import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { Manifest } from '../../../../../../java/util/jar/Manifest.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export interface KnotClassLoaderInterface extends Object{
-    addCodeSource(arg0: Path[]): void;
+    addCodeSource(arg0: Path): void;
     getClassLoader(): ClassLoader;
-    getManifest(arg0: Path[]): Manifest;
+    getManifest(arg0: Path): Manifest;
     getPreMixinClassBytes(arg0: string): number[];
     getRawClassBytes(arg0: string): number[];
     initializeTransformers(): void;
     isClassLoaded(arg0: string): boolean;
     loadIntoTarget(arg0: string): Class<Object>;
-    setAllowedPrefixes(arg0: Path[], ...arg1: string[]): void;
-    setValidParentClassPath(arg0: Path[][]): void;
+    setAllowedPrefixes(arg0: Path, ...arg1: string[]): void;
+    setValidParentClassPath(arg0: Path[]): void;
 }

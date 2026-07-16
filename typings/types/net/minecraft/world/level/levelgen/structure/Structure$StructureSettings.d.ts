@@ -10,15 +10,15 @@ import type { TerrainAdjustment } from '../../../../../../net/minecraft/world/le
 export class Structure$StructureSettings extends Record {
     static CODEC: MapCodec<Structure$StructureSettings>;
     constructor(biomes: Holder<Biome>[])
-    constructor(biomes: Holder<Biome>[], spawnOverrides: { [key in MobCategory]: StructureSpawnOverride }, step: GenerationStep$Decoration, terrainAdaptation: TerrainAdjustment)
+    constructor(biomes: Holder<Biome>[], spawnOverrides: Map<MobCategory, StructureSpawnOverride>, step: GenerationStep$Decoration, terrainAdaptation: TerrainAdjustment)
     // private biomes: Holder<Biome>[];
-    // private spawnOverrides: { [key in MobCategory]: StructureSpawnOverride };
+    // private spawnOverrides: Map<MobCategory, StructureSpawnOverride>;
     // private step: GenerationStep$Decoration;
     // private terrainAdaptation: TerrainAdjustment;
     biomes(): Holder<Biome>[];
     equals(o: Object | null): boolean;
     hashCode(): number;
-    spawnOverrides(): { [key in MobCategory]: StructureSpawnOverride };
+    spawnOverrides(): Map<MobCategory, StructureSpawnOverride>;
     step(): GenerationStep$Decoration;
     terrainAdaptation(): TerrainAdjustment;
     toString(): string;

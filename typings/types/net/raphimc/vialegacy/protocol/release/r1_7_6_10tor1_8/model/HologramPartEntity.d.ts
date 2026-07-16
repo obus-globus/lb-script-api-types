@@ -7,7 +7,7 @@ import type { EntityDataIndex1_7_6 } from '../../../../../../../net/raphimc/vial
 import type { EntityTracker } from '../../../../../../../net/raphimc/vialegacy/protocol/release/r1_7_6_10tor1_8/storage/EntityTracker.d.ts'
 export class HologramPartEntity extends Object {
     constructor(arg0: UserConnection, arg1: number, arg2: EntityTypes1_8$EntityType)
-    // private entityData: { [key in EntityDataIndex1_7_6]: Object };
+    // private entityData: Map<EntityDataIndex1_7_6, Object>;
     readonly entityId: number;
     // private entityTracker: EntityTracker;
     readonly entityType: EntityTypes1_8$EntityType;

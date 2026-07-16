@@ -4,14 +4,14 @@ import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class InternalResourceRoots$Root extends Record {
-    constructor(path: Path[], kind: InternalResourceRoots$Root$Kind, resources: InternalResourceCache[])
+    constructor(path: Path, kind: InternalResourceRoots$Root$Kind, resources: InternalResourceCache[])
     // private kind: InternalResourceRoots$Root$Kind;
-    // private path: Path[];
+    // private path: Path;
     // private resources: InternalResourceCache[];
     equals(o: Object | null): boolean;
     hashCode(): number;
     kind(): InternalResourceRoots$Root$Kind;
-    path(): Path[];
+    path(): Path;
     resources(): InternalResourceCache[];
     toString(): string;
 }

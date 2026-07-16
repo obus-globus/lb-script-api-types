@@ -14,7 +14,7 @@ import type { SkinManager$TextureCache } from '../../../../net/minecraft/client/
 import type { Services } from '../../../../net/minecraft/server/Services.d.ts'
 import type { PlayerSkin } from '../../../../net/minecraft/world/entity/player/PlayerSkin.d.ts'
 export class SkinManager extends Object {
-    constructor(skinsDirectory: Path[], services: Services, skinTextureDownloader: SkinTextureDownloader, mainThreadExecutor: Executor)
+    constructor(skinsDirectory: Path, services: Services, skinTextureDownloader: SkinTextureDownloader, mainThreadExecutor: Executor)
     // private capeTextures: SkinManager$TextureCache;
     // private elytraTextures: SkinManager$TextureCache;
     // private services: Services;

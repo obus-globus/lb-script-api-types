@@ -8,13 +8,13 @@ import type { ModOrigin } from '../../../net/fabricmc/loader/api/metadata/ModOri
 import type { LoaderModMetadata } from '../../../net/fabricmc/loader/metadata/LoaderModMetadata.d.ts'
 export abstract class ModContainer extends Object implements ModContainer_2 {
     constructor()
-    findPath(arg0: string): Optional<Path[]>;
-    getCodeSourcePaths(): Path[][];
+    findPath(arg0: string): Optional<Path>;
+    getCodeSourcePaths(): Path[];
     getInfo(): LoaderModMetadata;
     getMetadata(): ModMetadata;
     getOrigin(): ModOrigin;
     getOriginUrl(): URL;
-    getPath(arg0: string): Path[];
-    getRoot(): Path[];
-    getRootPath(): Path[];
+    getPath(arg0: string): Path;
+    getRoot(): Path;
+    getRootPath(): Path;
 }

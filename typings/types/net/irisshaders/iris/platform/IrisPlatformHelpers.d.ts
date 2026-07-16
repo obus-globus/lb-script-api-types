@@ -8,8 +8,8 @@ import type { BlockState } from '../../../../net/minecraft/world/level/block/sta
 export interface IrisPlatformHelpers extends Object{
     compareVersions(arg0: string, arg1: string): number;
     getBlockAppearance(arg0: BlockAndTintGetter, arg1: BlockState, arg2: Direction, arg3: BlockPos): BlockState;
-    getConfigDir(): Path[];
-    getGameDir(): Path[];
+    getConfigDir(): Path;
+    getGameDir(): Path;
     getVersion(): string;
     isDevelopmentEnvironment(): boolean;
     isModLoaded(arg0: string): boolean;

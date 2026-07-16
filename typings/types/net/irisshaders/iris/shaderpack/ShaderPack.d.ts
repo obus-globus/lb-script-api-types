@@ -20,13 +20,13 @@ import type { CustomTextureData } from '../../../../net/irisshaders/iris/shaderp
 import type { TextureStage } from '../../../../net/irisshaders/iris/shaderpack/texture/TextureStage.d.ts'
 import type { CustomUniforms$Builder } from '../../../../net/irisshaders/iris/uniforms/custom/CustomUniforms$Builder.d.ts'
 export class ShaderPack extends Object {
-    constructor(arg0: Path[], arg1: StringPair[], arg2: boolean)
-    constructor(arg0: Path[], arg1: { [key: string]: string }, arg2: StringPair[], arg3: boolean)
+    constructor(arg0: Path, arg1: StringPair[], arg2: boolean)
+    constructor(arg0: Path, arg1: { [key: string]: string }, arg2: StringPair[], arg3: boolean)
     // private activeFeatures: FeatureFlags[];
     // private base: ProgramSet;
     readonly bufferObjects: { [key: string]: any };
     readonly customNoiseTexture: CustomTextureData;
-    readonly customTextureDataMap: { [key in TextureStage]: { [key: string]: CustomTextureData } };
+    readonly customTextureDataMap: Map<TextureStage, { [key: string]: CustomTextureData }>;
     customUniforms: CustomUniforms$Builder;
     // private dimensionIds: string[];
     readonly dimensionMap: Map<NamespacedId, string>;
@@ -44,7 +44,7 @@ export class ShaderPack extends Object {
     getBufferObjects(): { [key: string]: any };
     // private getCurrentProfileName(): string;
     getCustomNoiseTexture(): CustomTextureData;
-    getCustomTextureDataMap(): { [key in TextureStage]: { [key: string]: CustomTextureData } };
+    getCustomTextureDataMap(): Map<TextureStage, { [key: string]: CustomTextureData }>;
     getDimensionMap(): Map<NamespacedId, string>;
     getIdMap(): IdMap;
     getIrisCustomImages(): ImageInformation[];
@@ -55,7 +55,7 @@ export class ShaderPack extends Object {
     getProgramSet(arg0: NamespacedId): ProgramSet;
     getShaderPackOptions(): ShaderPackOptions;
     hasFeature(arg0: FeatureFlags): boolean;
-    // private loadMcMeta(arg0: Path[]): JsonObject;
+    // private loadMcMeta(arg0: Path): JsonObject;
     // private parseDimensionIds(arg0: { [key: string]: any }, arg1: string): string[];
-    readTexture(arg0: Path[], arg1: TextureDefinition): CustomTextureData;
+    readTexture(arg0: Path, arg1: TextureDefinition): CustomTextureData;
 }

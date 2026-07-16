@@ -170,7 +170,7 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     constructor(type: EntityType<LivingEntity>, level: Level)
     readonly absorptionAmount: number;
     readonly activeEffects: Map<Holder<MobEffect>, MobEffectInstance>;
-    // private activeLocationDependentEnchantments: { [key in EquipmentSlot]: Map<Enchantment, EnchantmentLocationBasedEffect[]> };
+    // private activeLocationDependentEnchantments: Map<EquipmentSlot, Map<Enchantment, EnchantmentLocationBasedEffect[]>>;
     attackAnim: number;
     attackStrengthTicker: number;
     readonly attributes: AttributeMap;
@@ -197,7 +197,7 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     readonly lastClimbablePos: Optional<BlockPos>;
     readonly lastDamageSource: DamageSource;
     // private lastDamageStamp: number;
-    // private lastEquipmentItems: { [key in EquipmentSlot]: ItemStack };
+    // private lastEquipmentItems: Map<EquipmentSlot, ItemStack>;
     // private lastHurt: number;
     readonly lastHurtByMob: EntityReference<LivingEntity>;
     readonly lastHurtByMobTimestamp: number;
@@ -278,7 +278,7 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     checkFallDamage(ya: number, onGround: boolean, onState: BlockState, pos: BlockPos): void;
     // private checkTotemDeathProtection(killingDamage: DamageSource): boolean;
     clearSleepingPos(): void;
-    collectEquipmentChanges(lastEquipmentItems: { [key in EquipmentSlot]: ItemStack }): { [key in EquipmentSlot]: ItemStack };
+    collectEquipmentChanges(lastEquipmentItems: Map<EquipmentSlot, ItemStack>): Map<EquipmentSlot, ItemStack>;
     completeUsingItem(): void;
     createDamageSource(): DamageSource;
     createEquipment(): EntityEquipment;
@@ -417,10 +417,10 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     goDownInWater(): void;
     handleDamageEvent(source: DamageSource): void;
     handleEntityEvent(id: number): void;
-    // private handleEquipmentChanges(changedItems: { [key in EquipmentSlot]: ItemStack }): void;
+    // private handleEquipmentChanges(changedItems: Map<EquipmentSlot, ItemStack>): void;
     handleExtraItemsCreatedOnUse(extraCreatedRemainder: ItemStack): void;
     // private handleFallFlyingCollisions(moveHorLength: number, newMoveHorLength: number): void;
-    // private handleHandSwap(changedItems: { [key in EquipmentSlot]: ItemStack }): void;
+    // private handleHandSwap(changedItems: Map<EquipmentSlot, ItemStack>): void;
     handleKillingBlow(): void;
     // private handleOnClimbable(delta: Vec3): Vec3;
     // private handleRelativeFrictionAndCalculateMovement(input: Vec3, friction: number): Vec3;

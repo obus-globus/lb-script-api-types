@@ -6,14 +6,14 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Component } from '../../../net/minecraft/network/chat/Component.d.ts'
 export class DisconnectionDetails extends Record {
     constructor(reason: Component)
-    constructor(reason: Component, report: Optional<Path[]>, bugReportLink: Optional<URI>)
+    constructor(reason: Component, report: Optional<Path>, bugReportLink: Optional<URI>)
     // private bugReportLink: Optional<URI>;
     // private reason: Component;
-    // private report: Optional<Path[]>;
+    // private report: Optional<Path>;
     bugReportLink(): Optional<URI>;
     equals(o: Object | null): boolean;
     hashCode(): number;
     reason(): Component;
-    report(): Optional<Path[]>;
+    report(): Optional<Path>;
     toString(): string;
 }
