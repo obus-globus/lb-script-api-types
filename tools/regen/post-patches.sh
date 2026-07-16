@@ -724,22 +724,34 @@ DOCS = [
      * event handlers, render logic) before returning. The module is added
      * to LiquidBounce's module manager as soon as your script is enabled.
      *
-     * @param moduleObject Metadata describing the module.
+     * @param moduleObject Metadata describing the module. Settings are
+     *                     declared here, under the `settings` key, with the
+     *                     global {@link ScriptSetting `Setting`} factories -
+     *                     they are read back inside the callback via
+     *                     `mod.settings.<key>`.
      * @param moduleObject.name Display name shown in the ClickGUI.
      * @param moduleObject.category One of `"Combat" | "Movement" | "Player" | "Render" | "World" | "Misc" | "Fun" | "Exploit"`.
      * @param callback Configurator invoked once at registration. Use it to
-     *                 declare settings (`module.setting.boolean(...)`),
-     *                 bind events (`module.on(...)`), and define behaviour.
+     *                 bind events (`mod.on(...)`) and define behaviour.
      *
      * @example
      * ```ts
-     * script.registerModule({ name: "MyModule", category: "Misc" }, (mod) => {
-     *     const enabled = mod.setting.boolean({ name: "loud", default: false });
-     *     mod.on("enable", () => print("on"));
+     * script.registerModule({
+     *     name: "MyModule",
+     *     category: "Misc",
+     *     settings: {
+     *         loud: Setting.boolean({ name: "Loud", default: false }),
+     *     },
+     * }, (mod) => {
+     *     mod.on("enable", () => {
+     *         if (mod.settings.loud.get()) print("on!");
+     *     });
      * });
      * ```
      *
-     * Source: `PolyglotScript.kt:213` - KDoc on `fun registerModule`.
+     * Source: `ScriptModule.kt` - the `settings` map is read from the
+     * moduleObject at construction. (Upstream has no KDoc example; this
+     * docstring is authored locally.)
      */""",
     ),
     # PolyglotScript.on - literal-event overload (the narrow one only; the
@@ -813,10 +825,19 @@ DOCS = [
      * @param option.default Initial value if the user hasn't changed it.
      * @returns The setting handle. Call `.get()` to read the current value.
      *
+     * Reached through the ambient `Setting` global, inside the `settings`
+     * key of a `registerModule` moduleObject (there is no `mod.setting.*`
+     * API - the module exposes the declared values as `mod.settings.<key>`).
+     *
      * @example
      * ```ts
-     * const loud = mod.setting.boolean({ name: "Loud", default: false });
-     * if (loud.get()) print("loud!");
+     * registerModule({
+     *     name: "MyModule",
+     *     category: "Misc",
+     *     settings: { loud: Setting.boolean({ name: "Loud", default: false }) },
+     * }, (mod) => {
+     *     mod.on("enable", () => { if (mod.settings.loud.get()) print("loud!"); });
+     * });
      * ```
      *
      * Source: `ScriptSetting.kt:43` - `fun boolean(value: PolyglotValue)`,

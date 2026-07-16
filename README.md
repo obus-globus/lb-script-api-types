@@ -37,6 +37,7 @@ Pull in the ambient script globals through `tsconfig.json`:
 {
   "compilerOptions": {
     "lib": ["es2023"],            // no DOM - see below
+    "skipLibCheck": true,         // required - see below
     "types": ["@wunk/lb-script-api-types/ambient"]
   }
 }
@@ -48,6 +49,13 @@ silently overrides the script API's `localStorage` (a Java
 `ConcurrentHashMap<String, Any>` with `get`/`put`, not
 `getItem`/`setItem`) and DOM globals show up in autocomplete that don't exist
 at runtime.
+
+`"skipLibCheck": true` is required, not optional: the ~59k generated `.d.ts`
+carry a known, baselined set of internal lib-check errors (Java/Kotlin
+declaration-merging shapes TS dislikes - tracked in `typings/__smoke/`).
+Without it, `tsc` reports hundreds of errors from inside the package itself.
+Your own script code is still fully checked either way; `skipLibCheck` only
+skips diagnosing the `.d.ts` files.
 
 Now the runtime globals are typed:
 
@@ -174,7 +182,7 @@ The `types/` tree is generated, not hand-edited. The whole flow is one command:
    LiquidBounce headless (`xvfb-run` + Mesa llvmpipe, JDK 25) so `ts-defgen.js` can
    introspect the live class graph into `tools/regen-output/`, then
    `post-patches.sh` applies `apply-kdoc.py` (TSDoc) and `fix-binding-types.py`
-   (the F4/F5 binding fixes). This takes about 50 to 60 minutes on softpipe.
+   (the F4/F5 binding fixes). This takes ~6 min locally since the O(1) module index (~10-30 min on CI softpipe depending on cache).
 3. **promote**: copies the result into `typings/` and stamps the version (see
    Versioning), keeping the hand-maintained `package.json`, `__smoke/`, and
    `tsconfig.json`.
@@ -251,17 +259,20 @@ flow in [docs/versioning.md](docs/versioning.md).
 GPL-3.0-or-later, since the types derive from LiquidBounce. This is an independent
 redistribution and is not affiliated with or endorsed by CCBlueX.
 
+Do not `npm publish` by hand - that bypasses every gate. The one human command
+between "regen merged to main" and "published on npm" is:
+
 ```bash
-cd typings
-npm pack --dry-run     # verify contents (about 10.6 MB packed)
-npm publish            # uses publishConfig.access from package.json
+npm run release:dry    # preflights only (clean main, typecheck, canary, tag/npm guards)
+npm run release        # cut-release.sh: preflights -> tag -> GitHub Release -> CI publish
 ```
 
 - **Access**: `publishConfig.access` is `public` (free for scoped packages). The
   package is published under the **`@wunk`** npm org scope.
-- **CI**: `.github/workflows/npm-publish.yml` publishes on a GitHub Release and
-  skips if the version is already on npm. It needs an `NPM_TOKEN` repo or org
-  secret (a granular token with publish rights for the `@wunk` scope).
+- **CI**: `.github/workflows/npm-publish.yml` is the single trusted publisher; it
+  runs on a GitHub Release (or dispatch) and skips if the version is already on
+  npm. Authentication is npm **OIDC trusted publishing** - there is no NPM_TOKEN
+  secret, long-lived or otherwise.
 
 ## Notes
 

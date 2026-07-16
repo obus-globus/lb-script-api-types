@@ -208,7 +208,7 @@ function partBC() {
             ok = false;
             console.error(`  FAIL - ${novel.length} NEW parse error(s) in the package (${files.length} files):`);
             for (const e of novel.slice(0, 40)) console.error(`      ${e}`);
-            console.error(`  (if intentional, re-freeze with: npm run typecheck:update-baseline)`);
+            console.error(`  (fix the generator; only if the growth is a reviewed, intentional trade-off, re-freeze with: npm run typecheck:update-baseline - it accepts ALL current errors wholesale)`);
         } else {
             console.error(`  ok   syntax: ${files.length} files, ${current.size} known parse error(s), 0 new`);
         }
@@ -218,7 +218,7 @@ function partBC() {
                 console.error(`  tightened - ${fixed.length} fixed entr(ies) removed from the syntax baseline`);
             } else {
                 console.error(`  note - ${fixed.length} baselined error(s) no longer present; ` +
-                    `tighten with: npm run typecheck:update-baseline`);
+                    `tighten with: npm run typecheck:tighten (shrink-only; never use update-baseline for this)`);
             }
         }
     }
@@ -353,13 +353,13 @@ function partD() {
         ok = false;
         console.error(`  FAIL - transitive semantic debt grew:`);
         for (const r of regressions) console.error(`      ${r}`);
-        console.error(`  (if intentional, re-freeze with: npm run typecheck:update-baseline)`);
+        console.error(`  (fix the generator; only if the growth is a reviewed, intentional trade-off, re-freeze with: npm run typecheck:update-baseline - it accepts ALL current errors wholesale)`);
     } else {
         const total = Object.values(transObj).reduce((a, b) => a + b, 0);
         const allowedTotal = Object.values(baseline.transitive || {}).reduce((a, b) => a + b, 0);
         console.error(`  ok   transitive: ${total} error(s) within baseline (${allowedTotal} allowed)`);
         if (total < allowedTotal) {
-            console.error(`  note - debt shrank; tighten with: npm run typecheck:update-baseline`);
+            console.error(`  note - debt shrank; tighten with: npm run typecheck:tighten (shrink-only; never use update-baseline for this)`);
         }
     }
 

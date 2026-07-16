@@ -20,7 +20,7 @@ docker/regen.sh --no-promote    # stop at tools/regen-output/ inside the volume
 
 First run downloads Gradle deps + the Minecraft assets/libraries + the LB source
 (several GB, slow). They persist in the named volumes, so later runs skip the
-downloads - only the **~50-60 min softpipe introspection** remains.
+downloads - only the introspection run remains (~6 min locally since the O(1) module index; ~10-30 min on CI softpipe depending on cache).
 
 ### Volumes (the cache)
 | volume | mount | holds |

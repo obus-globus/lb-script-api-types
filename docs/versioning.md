@@ -83,19 +83,23 @@ token): a GitHub Release fires `.github/workflows/npm-publish.yml`, which
 `npm publish`es the `typings/` package. Because the version is already final
 after regen, releasing is just tag -> GitHub Release; no version bump step.
 
-**A. Automatic (daily auto-regen).** On a clean regen (gate/canary/sanity pass),
-`.github/workflows/check-regen.yml` reads the stamped version, commits, tags
-`v<version>`, creates the Release, and dispatches the publish - all unattended.
+**A. Automatic (daily auto-regen).** On a clean regen (regen step + gate +
+canary + sanity + generator tests all pass, MC version unchanged, and the
+`AUTO_RELEASE` repo var enabled), `.github/workflows/check-regen.yml` reads the
+stamped version, commits, tags `v<version>`, creates the Release, and dispatches
+the publish - all unattended. Anything less than all-clean routes to a review
+branch instead.
 
 **B. Manual / human-reviewed.** When a regen routes to a review branch, merge it,
-then cut the release for the already-stamped version:
+then cut the release for the already-stamped version with the one human command:
 ```bash
-# edit PINNED_SHA in tools/regen-types.sh to the target LB build (if changing it)
-./fetch-references.sh && ./run-regen.sh   # regenerates types + derives/stamps the version
-VER="$(node -p "require('./typings/package.json').version")"
-git commit -am "regen for LB <x>" && git tag -a "v$VER" -m "v$VER" && git push --follow-tags
-gh release create "v$VER" --title "v$VER"  # -> npm-publish.yml publishes
+# (only if changing the target build: edit PINNED_SHA in tools/regen-types.sh,
+#  then ./fetch-references.sh && ./run-regen.sh and merge the regen first)
+npm run release:dry   # preflights: clean main, typecheck, canary, tag/npm guards
+npm run release       # scripts/cut-release.sh: tag -> GitHub Release -> CI publish
 ```
+`cut-release.sh` re-runs the gates and refuses duplicate tags/versions - do not
+substitute raw `git tag` + `gh release create`, which skips all of that.
 
 The publish workflow is **idempotent**: it skips if that exact version is already
 on npm, so re-running a release is safe.
@@ -105,10 +109,11 @@ on npm, so re-running a release is safe.
 - **The version is derived, not chosen.** Every regen against a new LB commit
   produces the next free build automatically; you don't pick a number.
 - **Same LB build, type-only improvement.** Regenerating the same LB commit keeps
-  the version (idempotent). To ship a type-only rebuild, the registry-derived
-  build increments only once a *different* commit is stamped - so bump `PINNED_SHA`
-  to the intended LB build (even if `mod_version` is unchanged) and the next build
-  number follows.
+  the version while it is still unpublished (idempotent re-stamps within one
+  release cycle). Once that version is on the registry, the next stamp for the
+  same commit **re-derives** the next free script build - this is exactly what
+  the scriptBuild digits are for (shipping generator fixes for one LB build)
+  and what prevents a branch from stranding on an already-taken number.
 - **LB ships a real patch tag (e.g. v0.38.0 -> v0.38.1).** Both fold into our
   `0.38.*` line but land in distinct encoded ranges (`0.38.0xxx` vs `0.38.1xxx`);
   the exact build is always in the `liquidbounce` block.

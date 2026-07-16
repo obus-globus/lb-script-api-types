@@ -108,23 +108,33 @@ function nextScriptBuild(versions) {
 }
 
 // Idempotent: if this exact LB commit is already stamped, keep its version - we
-// don't reassign a version to a build that already has one (and never re-derive
-// for a re-run of the same commit). Only a NEW commit gets a fresh version.
+// don't reassign a version to a build that already has one. EXCEPT when that
+// version is already on the registry: then keeping it strands the tree on an
+// unpublishable number (cut-release hard-fails on the tag/npm guards with no
+// recovery), so re-derive the next free build. This is also what makes
+// "generator fix, same LB build" releases possible at all - the scriptBuild
+// digits exist precisely to version regens of one LB commit (versioning.md).
 let version;
-if (pkg.liquidbounce && pkg.liquidbounce.commit === sha && /^\d+\.\d+\.\d+/.test(pkg.version || "")) {
+const stampedSameCommit =
+    pkg.liquidbounce && pkg.liquidbounce.commit === sha && /^\d+\.\d+\.\d+/.test(pkg.version || "");
+const versions = publishedVersions(pkg.name);
+if (versions === null) {
+    console.error(
+        `could not read published versions for ${pkg.name} from the npm registry ` +
+        `(needed to derive/validate the script build). Check network/registry access.`);
+    process.exit(1);
+}
+if (stampedSameCommit && !versions.includes(pkg.version)) {
     version = pkg.version;
-    console.log(`version:     ${version} (unchanged - same LB commit already stamped)`);
+    console.log(`version:     ${version} (unchanged - same LB commit already stamped, not yet published)`);
 } else {
-    const versions = publishedVersions(pkg.name);
-    if (versions === null) {
-        console.error(
-            `could not read published versions for ${pkg.name} from the npm registry ` +
-            `(needed to derive the next script build). Check network/registry access.`);
-        process.exit(1);
-    }
     const build = nextScriptBuild(versions);
     version = `${lbLine}.${lbPatch * BUILD_MULT + build}`;
-    console.log(`version:     ${version}  (LB ${lbMajor}.${lbMinor}.${lbPatch}, script build ${build})`);
+    if (stampedSameCommit) {
+        console.log(`version:     ${version}  (re-derived: stamped ${pkg.version} is already published; LB ${lbMajor}.${lbMinor}.${lbPatch}, script build ${build})`);
+    } else {
+        console.log(`version:     ${version}  (LB ${lbMajor}.${lbMinor}.${lbPatch}, script build ${build})`);
+    }
 }
 
 const next = {

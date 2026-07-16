@@ -62,15 +62,28 @@ with full semantics, the way no consumer ever does (everyone runs
 
 ## Baselines
 
-When a regen legitimately changes a set (errors fixed by a generator
-improvement, or a new triaged-and-accepted quirk), re-freeze both:
+Two different situations, two different commands - do not mix them up:
+
+**Debt shrank** (a generator improvement fixed baselined errors) - use the
+shrink-only mode; it can never launder new debt into the baseline:
+
+```bash
+npm run typecheck:tighten
+```
+
+`run-regen.sh` already runs this after every local promote, and the gate
+prints a `note` pointing at it when baselined errors are no longer present.
+
+**Debt grew intentionally** (a new triaged-and-accepted quirk) - only after
+reviewing every new error, re-freeze wholesale:
 
 ```bash
 npm run typecheck:update-baseline
 ```
 
-The gate prints a `note` when baselined errors are no longer present, so the
-baselines can be tightened as the generator improves.
+This accepts ALL current errors as the new baseline in one shot (surface +
+transitive + syntax), with no growth guard - never reach for it as the
+first response to a red gate.
 
 ## Scope notes
 

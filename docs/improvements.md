@@ -194,7 +194,7 @@ Layered on top of the generated tree and barrel-indexed
   ~270 MB monolith.
 - **`typesVersions` path map** corrected so `types/foo` / `augmentations/foo`
   resolve.
-- Hand-curated `package.json` (correct name, `private`, version pinned to the LB
+- Hand-curated `package.json` (correct name, version pinned to the LB
   build) preserved across regens.
 
 ## Infrastructure - makes regen possible at all

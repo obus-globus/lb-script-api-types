@@ -34,6 +34,7 @@ Pull in the ambient script globals through `tsconfig.json`:
 {
   "compilerOptions": {
     "lib": ["es2023"],            // no DOM - see below
+    "skipLibCheck": true,         // required - see below
     "types": ["@wunk/lb-script-api-types/ambient"]
   }
 }
@@ -44,6 +45,12 @@ and if `lib.dom` is loaded its `localStorage: Storage` silently overrides the
 script API's `localStorage` (a Java `ConcurrentHashMap` with `get`/`put`, not
 `getItem`/`setItem`), plus DOM globals pollute autocomplete with APIs that
 don't exist at runtime.
+
+`"skipLibCheck": true` is required, not optional: the ~59k generated `.d.ts`
+carry a known, baselined set of internal lib-check errors (Java/Kotlin
+declaration-merging shapes TS dislikes). Without it, `tsc` reports hundreds
+of errors from inside the package itself. Your own script code is still fully
+checked either way; `skipLibCheck` only skips diagnosing `.d.ts` files.
 
 Class-value bindings (`Vec3i`, `BlockPos`, `Hand`, `MathHelper`,
 `RotationAxis`, ...) are raw `java.lang.Class` values at runtime: construct

@@ -72,9 +72,10 @@ tree-sitter extractor can.
   injects `@deprecated` TSDoc (merging into existing blocks). **12 of 16**
   recovered (up from 1; the other 4 are on constructs outside the member
   surface). _Layer: extractor + post-patch._
-- **[ ] W3 - event class docs.** 117 / 121 event classes are undocumented. Either
-  hand-write TSDoc for the top ~30 highest-traffic events, or upstream KDoc PRs to
-  LiquidBounce. _Layer: extractor + docs._
+- **[x] W3 - event class docs.** Done (far past the original "top ~30" ask):
+  the 126-entry hand-authored overlay `tools/regen/event-docs-overlay.json` is
+  applied by post-patches; 130 / 134 shipped event classes carry doc blocks.
+  (Originally: 117 / 121 undocumented.) _Layer: extractor + docs._
 - **[x] W4 - `ScriptModule.on()` overloads documented.** Done 2026-06-04:
   `apply-event-docs.py` adds `@see {@link <Event>}` (read off each overload) plus
   a one-line summary for the 7 documented event classes. **121** overloads

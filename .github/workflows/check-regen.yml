@@ -11,7 +11,7 @@ name: Check upstream LiquidBounce & regenerate
 # regen only happens when upstream moves past main's pin.
 #
 # Same caveats as regen-types.yml: the flow launches a headless Minecraft client
-# (~50-60 min on Mesa softpipe) and pulls several GB; GitHub-hosted runners are
+# (~10-30 min on CI softpipe depending on cache) and pulls several GB; GitHub-hosted runners are
 # tight on disk/CPU - a self-hosted runner is recommended for routine use.
 on:
   schedule:

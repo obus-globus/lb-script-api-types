@@ -10,7 +10,7 @@
 #                        hand-curated typings/package.json + the hand-maintained
 #                        typings/__smoke + tsconfig.json.
 #
-# The headless client run is slow (~50-60 min on Mesa softpipe). Usage:
+# The headless client run is slow (~6 min locally post-O(1)-index; ~10-30 min on CI softpipe depending on cache). Usage:
 #   ./run-regen.sh [--no-promote] [--no-regen]
 set -euo pipefail
 

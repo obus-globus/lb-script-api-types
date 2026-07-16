@@ -4,8 +4,8 @@ name: Regenerate script-api types
 # introspection -> apply-kdoc + fix-binding -> promote) inside the regen container,
 # then opens a PR if the committed typings/ changed.
 #
-# NOTE: the flow launches a real Minecraft client headlessly (~50-60 min on Mesa
-# softpipe) and downloads several GB of Gradle/MC deps. GitHub-hosted runners are
+# NOTE: the flow launches a real Minecraft client headlessly (~10-30 min on CI
+# softpipe depending on cache) and downloads several GB of Gradle/MC deps. GitHub-hosted runners are
 # resource-constrained (2 vCPU / ~14 GB disk) - this may be slow or run out of
 # disk; a larger or self-hosted runner is recommended for routine use. The Gradle
 # cache is persisted across runs to skip the re-downloads.
