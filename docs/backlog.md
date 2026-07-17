@@ -27,6 +27,11 @@ below was empirically verified (source + emitted d.ts + scoped tsc probes).
 Grouped into fix waves; W1 = generator quick wins, W2 = script-API surface,
 W3 = deeper design, W4 = infra.
 
+> **Fix plans (2026-07-17):** the remaining deferred/partial items have detailed
+> engineering plans in `docs/plans/`: [A11 @JvmOverloads](plans/A11-jvmoverloads.md),
+> [A13 JavaMap](plans/A13-javamap.md), [A15 nashorn dual](plans/A15-nashorn-dual.md),
+> [A17 emission nits](plans/A17-emission-nits.md).
+
 ### Wave 1 - generator quick wins
 
 - **[x] A1 - Comparator SAM mis-detected (wave 1).** Fixed 2026-07-16 (lb-ts-generator@8bfbaf1). `findSingleAbstractMethod`
