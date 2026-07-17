@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { TruffleContext } from '../../../../../com/oracle/truffle/api/TruffleContext.d.ts'
 import type { SourceSectionFilter } from '../../../../../com/oracle/truffle/api/instrumentation/SourceSectionFilter.d.ts'
 import type { TruffleInstrument$Env } from '../../../../../com/oracle/truffle/api/instrumentation/TruffleInstrument$Env.d.ts'
@@ -19,7 +20,7 @@ import type { Engine } from '../../../../../org/graalvm/polyglot/Engine.d.ts'
 export class CPUSampler extends Object implements Closeable {
     static find(paramengine: Engine): CPUSampler;
     constructor(env: TruffleInstrument$Env)
-    // private activeContexts: Map<TruffleContext, number>;
+    // private activeContexts: JavaMap<TruffleContext, number>;
     // private closed: boolean;
     readonly collecting: boolean;
     readonly delay: number;
@@ -43,7 +44,7 @@ export class CPUSampler extends Object implements Closeable {
     close(): void;
     // private contexts(): TruffleContext[];
     // private enterChangeConfig(): void;
-    getData(): Map<TruffleContext, CPUSamplerData>;
+    getData(): JavaMap<TruffleContext, CPUSamplerData>;
     getDataList(): CPUSamplerData[];
     getDelay(): number;
     getFilter(): SourceSectionFilter;
@@ -63,6 +64,6 @@ export class CPUSampler extends Object implements Closeable {
     setPeriod(samplePeriod: number): void;
     setSampleContextInitialization(enabled: boolean): void;
     setStackLimit(stackLimit: number): void;
-    takeSample(): Map<Thread, StackTraceEntry[]>;
-    takeSample(timeout: number, timeoutUnit: TimeUnit): Map<Thread, StackTraceEntry[]>;
+    takeSample(): JavaMap<Thread, StackTraceEntry[]>;
+    takeSample(timeout: number, timeoutUnit: TimeUnit): JavaMap<Thread, StackTraceEntry[]>;
 }

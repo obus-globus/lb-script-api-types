@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { FieldNamingStrategy } from '../../../com/google/gson/FieldNamingStrategy.d.ts'
 import type { FormattingStyle } from '../../../com/google/gson/FormattingStyle.d.ts'
 import type { GsonBuilder } from '../../../com/google/gson/GsonBuilder.d.ts'
@@ -37,7 +38,7 @@ export class Gson extends Object {
     // private formattingStyle: FormattingStyle;
     // private generateNonExecutableJson: boolean;
     // private htmlSafe: boolean;
-    // private instanceCreators: Map<Type, InstanceCreator<Object>>;
+    // private instanceCreators: JavaMap<Type, InstanceCreator<Object>>;
     // private jsonAdapterFactory: JsonAdapterAnnotationTypeAdapterFactory;
     // private longSerializationPolicy: LongSerializationPolicy;
     // private numberToNumberStrategy: ToNumberStrategy;
@@ -46,9 +47,9 @@ export class Gson extends Object {
     // private serializeNulls: boolean;
     // private serializeSpecialFloatingPointValues: boolean;
     // private strictness: Strictness;
-    // private threadLocalAdapterResults: ThreadLocal<Map<TypeToken<Object>, TypeAdapter<Object>>>;
+    // private threadLocalAdapterResults: ThreadLocal<JavaMap<TypeToken<Object>, TypeAdapter<Object>>>;
     // private timeStyle: number;
-    // private typeTokenCache: Map<TypeToken<Object>, TypeAdapter<Object>>;
+    // private typeTokenCache: JavaMap<TypeToken<Object>, TypeAdapter<Object>>;
     // private useJdkUnsafe: boolean;
     excluder(): Excluder;
     fieldNamingStrategy(): FieldNamingStrategy;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
@@ -17,7 +18,7 @@ import type { TrimPattern } from '../../../../../net/minecraft/world/item/equipm
 export class TrimPredicate extends Record implements SingleComponentItemPredicate<ArmorTrim> {
     static CODEC: Codec<TrimPredicate>;
     static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<any>>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, JavaMap<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
     constructor(material: Optional<Holder<TrimMaterial>[]>, pattern: Optional<Holder<TrimPattern>[]>)
     // private material: Optional<Holder<TrimMaterial>[]>;
     // private pattern: Optional<Holder<TrimPattern>[]>;

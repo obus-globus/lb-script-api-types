@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ReferenceQueue } from '../../../../java/lang/ref/ReferenceQueue.d.ts'
 import type { ListFormat$Style } from '../../../../java/text/ListFormat$Style.d.ts'
 import type { ListFormat$Type } from '../../../../java/text/ListFormat$Type.d.ts'
@@ -15,7 +16,7 @@ export class LocaleResources extends Object {
     static trace(paramarg0: string, ...paramarg1: Object[]): void;
     constructor(arg0: ResourceBundleBasedAdapter, arg1: Locale)
     // private CPattern: string;
-    // private cache: { [key: string]: LocaleResources$ResourceReference };
+    // private cache: JavaMap<string, LocaleResources$ResourceReference>;
     // private jPattern: string;
     // private locale: Locale;
     // private localeData: LocaleData;

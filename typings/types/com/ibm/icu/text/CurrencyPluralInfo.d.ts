@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { PluralRules } from '../../../../com/ibm/icu/text/PluralRules.d.ts'
 import type { PluralRules$FixedDecimal } from '../../../../com/ibm/icu/text/PluralRules$FixedDecimal.d.ts'
 import type { ULocale } from '../../../../com/ibm/icu/util/ULocale.d.ts'
@@ -13,7 +14,7 @@ export class CurrencyPluralInfo extends Object implements Serializable, Cloneabl
     constructor()
     constructor(arg0: ULocale)
     constructor(arg0: Locale)
-    // private pluralCountToCurrencyUnitPattern: { [key: string]: string };
+    // private pluralCountToCurrencyUnitPattern: JavaMap<string, string>;
     readonly pluralRules: PluralRules;
     // private ulocale: ULocale;
     clone(): CurrencyPluralInfo;

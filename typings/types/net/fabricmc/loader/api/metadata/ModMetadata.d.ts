@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Version } from '../../../../../net/fabricmc/loader/api/Version.d.ts'
@@ -15,7 +16,7 @@ export interface ModMetadata extends Object{
     getContact(): ContactInformation;
     getContributors(): Person[];
     getCustomValue(arg0: string): CustomValue;
-    getCustomValues(): { [key: string]: CustomValue };
+    getCustomValues(): JavaMap<string, CustomValue>;
     getDependencies(): ModDependency[];
     getDepends(): ModDependency[];
     getDescription(): string;

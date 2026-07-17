@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { FabricPackOutput } from '../../../../../net/fabricmc/fabric/api/datagen/v1/FabricPackOutput.d.ts'
@@ -11,9 +12,9 @@ import type { PackOutput$PathProvider } from '../../../../../net/minecraft/data/
 import type { Item } from '../../../../../net/minecraft/world/item/Item.d.ts'
 export class ModelProvider$ItemInfoCollector extends Object implements FabricItemAssetDefinitions, ItemModelOutput {
     private constructor()
-    // private copies: Map<Item, Item>;
+    // private copies: JavaMap<Item, Item>;
     readonly fabricPackOutput: FabricPackOutput;
-    // private itemInfos: Map<Item, ClientItem>;
+    // private itemInfos: JavaMap<Item, ClientItem>;
     // private processedBlocks: (Object | null)[];
     accept(item: Item, generator: ItemModel$Unbaked): void;
     accept(item: Item, model: ItemModel$Unbaked, properties: ClientItem$Properties): void;

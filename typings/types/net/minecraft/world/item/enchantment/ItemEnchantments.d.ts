@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Object2IntMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Object2IntMap$Entry.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
@@ -15,8 +16,8 @@ export class ItemEnchantments extends Object implements TooltipProvider {
     static CODEC: Codec<ItemEnchantments>;
     static EMPTY: ItemEnchantments;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ItemEnchantments>;
-    private constructor(enchantments: { [key: string]: any })
-    // private enchantments: { [key: string]: any };
+    private constructor(enchantments: JavaMap<any, any>)
+    // private enchantments: JavaMap<any, any>;
     addToTooltip(context: Item$TooltipContext, consumer: (param0: Component) => void, flag: TooltipFlag, components: DataComponentGetter): void;
     entrySet(): Object2IntMap$Entry<Holder<Enchantment>>[];
     equals(obj: Object | null): boolean;

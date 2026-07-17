@@ -1,7 +1,8 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { IntListIterator } from '../../../../../it/unimi/dsi/fastutil/ints/IntListIterator.d.ts'
 import type { Object2IntAVLTreeMap$TreeIterator } from '../../../../../it/unimi/dsi/fastutil/objects/Object2IntAVLTreeMap$TreeIterator.d.ts'
 export class Object2IntAVLTreeMap$ValueIterator extends Object2IntAVLTreeMap$TreeIterator implements IntListIterator {
-    private constructor(null_: { [key: string]: any })
+    private constructor(null_: JavaMap<any, any>)
     add(arg0: number): void;
     next(): number;
     nextInt(): number;

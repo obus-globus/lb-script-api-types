@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../../../net/minecraft/core/Holder.d.ts'
@@ -12,10 +13,10 @@ export class AttributeInstance extends Object {
     readonly baseValue: number;
     // private cachedValue: number;
     // private dirty: boolean;
-    // private modifierById: Map<Identifier, AttributeModifier>;
-    // private modifiersByOperation: Map<AttributeModifier$Operation, Map<Identifier, AttributeModifier>>;
+    // private modifierById: JavaMap<Identifier, AttributeModifier>;
+    // private modifiersByOperation: JavaMap<AttributeModifier$Operation, JavaMap<Identifier, AttributeModifier>>;
     // private onDirty: (param0: AttributeInstance) => void;
-    readonly permanentModifiers: Map<Identifier, AttributeModifier>;
+    readonly permanentModifiers: JavaMap<Identifier, AttributeModifier>;
     // private addModifier(modifier: AttributeModifier): void;
     addOrReplacePermanentModifier(modifier: AttributeModifier): void;
     addOrUpdateTransientModifier(modifier: AttributeModifier): void;
@@ -28,7 +29,7 @@ export class AttributeInstance extends Object {
     getBaseValue(): number;
     getModifier(id: Identifier): AttributeModifier;
     getModifiers(): AttributeModifier[];
-    getModifiers(operation: AttributeModifier$Operation): Map<Identifier, AttributeModifier>;
+    getModifiers(operation: AttributeModifier$Operation): JavaMap<Identifier, AttributeModifier>;
     // private getModifiersOrEmpty(operation: AttributeModifier$Operation): AttributeModifier[];
     getPermanentModifiers(): AttributeModifier[];
     getValue(): number;

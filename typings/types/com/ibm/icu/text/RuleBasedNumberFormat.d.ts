@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { BigDecimal } from '../../../../com/ibm/icu/math/BigDecimal.d.ts'
 import type { BreakIterator } from '../../../../com/ibm/icu/text/BreakIterator.d.ts'
 import type { DecimalFormat } from '../../../../com/ibm/icu/text/DecimalFormat.d.ts'
@@ -95,9 +96,9 @@ export class RuleBasedNumberFormat extends NumberFormat implements Cloneable {
     // private postProcessor: RBNFPostProcessor;
     // private publicRuleSetNames: string[];
     readonly roundingMode: number;
-    readonly ruleSetDisplayNames: { [key: string]: string[] };
+    readonly ruleSetDisplayNames: JavaMap<string, string[]>;
     // private ruleSets: NFRuleSet[];
-    // private ruleSetsMap: { [key: string]: NFRuleSet };
+    // private ruleSetsMap: JavaMap<string, NFRuleSet>;
     // private scannerProvider: RbnfLenientScannerProvider;
     // private adjustForContext(arg0: string): string;
     clone(): RuleBasedNumberFormat;

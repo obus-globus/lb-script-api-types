@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Scope } from '../../../../../../com/oracle/js/parser/ir/Scope.d.ts'
 import type { TruffleString } from '../../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
 import type { JSFrameDescriptor } from '../../../../../../com/oracle/truffle/js/nodes/JSFrameDescriptor.d.ts'
@@ -119,5 +120,5 @@ export class FunctionEnvironment extends Environment {
     setNeedsParentFrame(needsParentFrame: boolean): void;
     setRestParameter(restParameter: boolean): void;
     setSimpleParameterList(simpleParameterList: boolean): void;
-    toStringImpl(state: { [key: string]: number }): string;
+    toStringImpl(state: JavaMap<string, number>): string;
 }

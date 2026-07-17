@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Annotation } from '../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { KClass } from '../../kotlin/reflect/KClass.d.ts'
@@ -13,10 +14,10 @@ export class SealedClassSerializer<T extends unknown> extends AbstractPolymorphi
     constructor(serialName: string, baseClass: KClass<T>, subclasses: KClass<T>[], subclassSerializers: KSerializer<T>[], classAnnotations: Annotation[])
     // private _annotations: Annotation[];
     readonly baseClass: KClass<T>;
-    // private class2Serializer: Map<KClass<T>, KSerializer<T>>;
-    /*not mapped: */ getClass2Serializer$kotlinx_serialization_core(): Map<KClass<T>, KSerializer<T>>;
+    // private class2Serializer: JavaMap<KClass<T>, KSerializer<T>>;
+    /*not mapped: */ getClass2Serializer$kotlinx_serialization_core(): JavaMap<KClass<T>, KSerializer<T>>;
     readonly descriptor: SerialDescriptor;
-    // private serialName2Serializer: { [key: string]: KSerializer<T> };
+    // private serialName2Serializer: JavaMap<string, KSerializer<T>>;
     findPolymorphicSerializerOrNull(decoder: CompositeDecoder, klassName: string | null): DeserializationStrategy<T> | null;
     findPolymorphicSerializerOrNull(encoder: Encoder, value: T): SerializationStrategy<T> | null;
 }

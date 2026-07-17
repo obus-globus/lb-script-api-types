@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Function } from '../../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ParticleGroupRegistryImpl$ParticleTextureNode } from '../../../../../../net/fabricmc/fabric/impl/client/particle/ParticleGroupRegistryImpl$ParticleTextureNode.d.ts'
@@ -8,8 +9,8 @@ import type { Identifier } from '../../../../../../net/minecraft/resources/Ident
 export class ParticleGroupRegistryImpl extends Object {
     static INSTANCE: ParticleGroupRegistryImpl;
     constructor(arg0: ParticleRenderType[])
-    // private factories: Map<ParticleRenderType, (param0: ParticleEngine) => ParticleGroup<any>>;
-    // private nodes: Map<Identifier, ParticleGroupRegistryImpl$ParticleTextureNode>;
+    // private factories: JavaMap<ParticleRenderType, (param0: ParticleEngine) => ParticleGroup<any>>;
+    // private nodes: JavaMap<Identifier, ParticleGroupRegistryImpl$ParticleTextureNode>;
     // private renderTypes: ParticleRenderType[];
     getFactory(arg0: ParticleRenderType): (param0: ParticleEngine) => ParticleGroup<any>;
     getParticleRenderType(arg0: Identifier): ParticleRenderType;

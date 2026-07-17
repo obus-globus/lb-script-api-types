@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { AbstractApplicationBase$Builder } from '../../../../com/microsoft/aad/msal4j/AbstractApplicationBase$Builder.d.ts'
 import type { AuthenticationResult } from '../../../../com/microsoft/aad/msal4j/AuthenticationResult.d.ts'
 import type { AuthenticationResultSupplier } from '../../../../com/microsoft/aad/msal4j/AuthenticationResultSupplier.d.ts'
@@ -30,7 +31,7 @@ export abstract class AbstractApplicationBase extends Object implements IApplica
     // private retryDisabled: boolean;
     // private serviceBundle: ServiceBundle;
     // private sslSocketFactory: SSLSocketFactory;
-    // private telemetryConsumer: (param0: { [key: string]: string }[]) => void;
+    // private telemetryConsumer: (param0: JavaMap<string, string>[]) => void;
     // private tenant: string;
     // private tokenCache: TokenCache;
     // private validateAuthority: boolean;
@@ -48,7 +49,7 @@ export abstract class AbstractApplicationBase extends Object implements IApplica
     readTimeoutForDefaultHttpClient(): number;
     serviceBundle(): ServiceBundle;
     sslSocketFactory(): SSLSocketFactory;
-    telemetryConsumer(): (param0: { [key: string]: string }[]) => void;
+    telemetryConsumer(): (param0: JavaMap<string, string>[]) => void;
     tenant(): string;
     tokenCache(): TokenCache;
     validateAuthority(): boolean;

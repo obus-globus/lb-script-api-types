@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { RBBINode } from '../../../../com/ibm/icu/text/RBBINode.d.ts'
 import type { RBBIRuleScanner } from '../../../../com/ibm/icu/text/RBBIRuleScanner.d.ts'
 import type { RBBISymbolTable$RBBISymbolTableEntry } from '../../../../com/ibm/icu/text/RBBISymbolTable$RBBISymbolTableEntry.d.ts'
@@ -9,7 +10,7 @@ export class RBBISymbolTable extends Object implements SymbolTable {
     static SYMBOL_REF: string;
     constructor(arg0: RBBIRuleScanner)
     // private fCachedSetLookup: string[];
-    // private fHashTable: { [key: string]: RBBISymbolTable$RBBISymbolTableEntry };
+    // private fHashTable: JavaMap<string, RBBISymbolTable$RBBISymbolTableEntry>;
     // private fRuleScanner: RBBIRuleScanner;
     // private ffffString: string;
     addEntry(arg0: string, arg1: RBBINode): void;

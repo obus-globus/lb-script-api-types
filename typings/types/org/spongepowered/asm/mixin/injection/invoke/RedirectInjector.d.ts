@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Type } from '../../../../../../org/objectweb/asm/Type.d.ts'
 import type { AbstractInsnNode } from '../../../../../../org/objectweb/asm/tree/AbstractInsnNode.d.ts'
 import type { TypeInsnNode } from '../../../../../../org/objectweb/asm/tree/TypeInsnNode.d.ts'
@@ -17,10 +18,10 @@ export class RedirectInjector extends InvokeInjector {
     static canCoerce(paramarg0: Type, paramarg1: Type): boolean;
     constructor(arg0: InjectionInfo)
     constructor(arg0: InjectionInfo, arg1: string)
-    // private ctorRedirectors: Map<BeforeNew, RedirectInjector$ConstructorRedirectData>;
+    // private ctorRedirectors: JavaMap<BeforeNew, RedirectInjector$ConstructorRedirectData>;
     // private meta: RedirectInjector$Meta;
     addTargetNode(arg0: InjectorTarget, arg1: InjectionNodes$InjectionNode[], arg2: AbstractInsnNode, arg3: InjectionPoint[]): void;
-    addTargetNode(arg0: InjectorTarget, arg1: { [key: number]: Injector$TargetNode }, arg2: InjectionPoint, arg3: AbstractInsnNode): void;
+    addTargetNode(arg0: InjectorTarget, arg1: JavaMap<number, Injector$TargetNode>, arg2: InjectionPoint, arg3: AbstractInsnNode): void;
     // private checkIsAssignableFrom(arg0: AbstractInsnNode[], arg1: Target$Extension): void;
     checkTarget(arg0: AbstractInsnNode[]): void;
     // private doNullCheck(arg0: AbstractInsnNode[], arg1: Target$Extension, arg2: string, arg3: string): void;

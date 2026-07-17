@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Tag } from '../../../../../com/viaversion/nbt/tag/Tag.d.ts'
 import type { UserConnection } from '../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { ItemHasher } from '../../../../../com/viaversion/viaversion/api/data/item/ItemHasher.d.ts'
@@ -15,7 +16,7 @@ export class ItemHasherBase extends Object implements ItemHasher {
     constructor(arg0: Protocol<any, any, any, any>, arg1: UserConnection)
     // private connection: UserConnection;
     // private context: CodecContext;
-    // private hashes: { [key: number]: OriginalHashedItem };
+    // private hashes: JavaMap<number, OriginalHashedItem>;
     // private mappedContext: CodecContext;
     readonly processingClientboundInventoryPacket: boolean;
     // private hashTag(arg0: Map$Entry<string, Tag>[]): number;

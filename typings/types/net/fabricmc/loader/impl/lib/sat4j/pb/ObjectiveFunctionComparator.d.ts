@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Serializable } from '../../../../../../../java/io/Serializable.d.ts'
 import type { BigInteger } from '../../../../../../../java/math/BigInteger.d.ts'
 import type { Comparator } from '../../../../../../../java/util/Comparator.d.ts'
@@ -10,7 +11,7 @@ import type { Comparable } from '../../../../../../../java/lang/Comparable.d.ts'
 import type { ObjectiveFunction } from '../../../../../../../net/fabricmc/loader/impl/lib/sat4j/pb/ObjectiveFunction.d.ts'
 export class ObjectiveFunctionComparator extends Object implements Serializable, Comparator<number> {
     constructor(arg0: ObjectiveFunction)
-    // private obj: { [key: number]: BigInteger };
+    // private obj: JavaMap<number, BigInteger>;
     compare(arg0: number, arg1: number): number;
     reversed(): (param0: number, param1: number) => number;
     thenComparing(arg0: (param0: number, param1: number) => number): (param0: number, param1: number) => number;

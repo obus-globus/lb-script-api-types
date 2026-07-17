@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Scope } from '../../../../../../com/oracle/js/parser/ir/Scope.d.ts'
 import type { Symbol } from '../../../../../../com/oracle/js/parser/ir/Symbol.d.ts'
 import type { TruffleString } from '../../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
@@ -72,6 +73,6 @@ export abstract class Environment extends Object {
     reserveSuperSlot(): void;
     reserveThisSlot(): void;
     toString(): string;
-    toStringImpl(state: { [key: string]: number }): string;
+    toStringImpl(state: JavaMap<string, number>): string;
     // private unsupported(): UnsupportedOperationException;
 }

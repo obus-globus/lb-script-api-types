@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { UnaryOperator } from '../../../../../java/util/function/UnaryOperator.d.ts'
@@ -15,7 +16,7 @@ import type { ValueOutput } from '../../../../../net/minecraft/world/level/stora
 export interface AttachmentTargetImpl extends Object, AttachmentTarget {
     fabric_clearDeferredSyncChanges(): void;
     fabric_computeInitialSyncChanges(arg0: ServerPlayer, arg1: (param0: AttachmentChange) => void): void;
-    fabric_getAttachments(): Map<AttachmentType<Object>, Object | null>;
+    fabric_getAttachments(): JavaMap<AttachmentType<Object>, Object | null>;
     fabric_getRegistryAccess(): RegistryAccess;
     fabric_getSyncTargetInfo(): AttachmentTargetInfo<Object>;
     fabric_hasPersistentAttachments(): boolean;

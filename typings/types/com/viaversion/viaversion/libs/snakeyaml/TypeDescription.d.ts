@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { BeanAccess } from '../../../../../com/viaversion/viaversion/libs/snakeyaml/introspector/BeanAccess.d.ts'
 import type { Property } from '../../../../../com/viaversion/viaversion/libs/snakeyaml/introspector/Property.d.ts'
 import type { PropertySubstitute } from '../../../../../com/viaversion/viaversion/libs/snakeyaml/introspector/PropertySubstitute.d.ts'
@@ -18,7 +19,7 @@ export class TypeDescription extends Object {
     excludes: string[];
     // private impl: Class<Object>;
     includes: string[];
-    readonly properties: { [key: string]: PropertySubstitute };
+    readonly properties: JavaMap<string, PropertySubstitute>;
     readonly propertyUtils: PropertyUtils;
     readonly tag: Tag;
     readonly type: Class<Object>;

@@ -1,9 +1,10 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Long2DoubleLinkedOpenHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/longs/Long2DoubleLinkedOpenHashMap$MapIterator.d.ts'
 import type { LongListIterator } from '../../../../../it/unimi/dsi/fastutil/longs/LongListIterator.d.ts'
 import type { LongConsumer } from '../../../../../java/util/function/LongConsumer.d.ts'
 export class Long2DoubleLinkedOpenHashMap$KeyIterator extends Long2DoubleLinkedOpenHashMap$MapIterator<(param0: number) => void> implements LongListIterator {
-    constructor(null_: { [key: string]: any })
-    constructor(null_: { [key: string]: any }, arg1: number)
+    constructor(null_: JavaMap<any, any>)
+    constructor(null_: JavaMap<any, any>, arg1: number)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     add(arg0: number): void;
     next(): number;

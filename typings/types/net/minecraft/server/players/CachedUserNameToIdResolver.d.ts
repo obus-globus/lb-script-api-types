@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Gson } from '../../../../com/google/gson/Gson.d.ts'
 import type { GameProfileRepository } from '../../../../com/mojang/authlib/GameProfileRepository.d.ts'
 import type { File } from '../../../../java/io/File.d.ts'
@@ -15,8 +16,8 @@ export class CachedUserNameToIdResolver extends Object implements UserNameToIdRe
     // private gson: Gson;
     // private operationCount: AtomicLong;
     // private profileRepository: GameProfileRepository;
-    // private profilesByName: { [key: string]: CachedUserNameToIdResolver$GameProfileInfo };
-    // private profilesByUUID: Map<UUID, CachedUserNameToIdResolver$GameProfileInfo>;
+    // private profilesByName: JavaMap<string, CachedUserNameToIdResolver$GameProfileInfo>;
+    // private profilesByUUID: JavaMap<UUID, CachedUserNameToIdResolver$GameProfileInfo>;
     // private resolveOfflineUsers: boolean;
     add(nameAndId: NameAndId): void;
     // private addInternal(profile: NameAndId): CachedUserNameToIdResolver$GameProfileInfo;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { UserConnection } from '../../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { BlockFace } from '../../../../../../com/viaversion/viaversion/api/minecraft/BlockFace.d.ts'
 import type { BlockPosition } from '../../../../../../com/viaversion/viaversion/api/minecraft/BlockPosition.d.ts'
@@ -9,7 +10,7 @@ export abstract class AbstractStempConnectionHandler extends Object implements C
     constructor(arg0: string)
     // private baseStateId: number;
     // private blockId: (Object | null)[];
-    // private stemps: Map<BlockFace, number>;
+    // private stemps: JavaMap<BlockFace, number>;
     connect(arg0: UserConnection, arg1: BlockPosition, arg2: number): number;
     getBlockData(arg0: UserConnection, arg1: BlockPosition): number;
     getInitAction(arg0: string, arg1: string): (param0: WrappedBlockData) => void;

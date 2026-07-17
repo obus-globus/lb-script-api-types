@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { ClassCastException } from '../../../java/lang/ClassCastException.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../java/util/Iterator.d.ts'
@@ -14,8 +15,8 @@ export class TypeIntrinsics extends Object {
     static asMutableList(paramarg0: Object, paramarg1: string): (Object | null)[];
     static asMutableListIterator(paramarg0: Object): ListIterator<Object>;
     static asMutableListIterator(paramarg0: Object, paramarg1: string): ListIterator<Object>;
-    static asMutableMap(paramarg0: Object): Map<Object | null, Object | null>;
-    static asMutableMap(paramarg0: Object, paramarg1: string): Map<Object | null, Object | null>;
+    static asMutableMap(paramarg0: Object): JavaMap<Object | null, Object | null>;
+    static asMutableMap(paramarg0: Object, paramarg1: string): JavaMap<Object | null, Object | null>;
     static asMutableMapEntry(paramarg0: Object): Map$Entry<Object, Object>;
     static asMutableMapEntry(paramarg0: Object, paramarg1: string): Map$Entry<Object, Object>;
     static asMutableSet(paramarg0: Object): (Object | null)[];
@@ -27,7 +28,7 @@ export class TypeIntrinsics extends Object {
     static castToIterator(paramarg0: Object): Iterator<Object>;
     static castToList(paramarg0: Object): (Object | null)[];
     static castToListIterator(paramarg0: Object): ListIterator<Object>;
-    static castToMap(paramarg0: Object): Map<Object | null, Object | null>;
+    static castToMap(paramarg0: Object): JavaMap<Object | null, Object | null>;
     static castToMapEntry(paramarg0: Object): Map$Entry<Object, Object>;
     static castToSet(paramarg0: Object): (Object | null)[];
     static getFunctionArity(paramarg0: Object): number;

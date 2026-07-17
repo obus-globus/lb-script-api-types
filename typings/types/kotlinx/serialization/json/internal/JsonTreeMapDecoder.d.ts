@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { SerialDescriptor } from '../../../../kotlinx/serialization/descriptors/SerialDescriptor.d.ts'
 import type { CompositeDecoder$Companion } from '../../../../kotlinx/serialization/encoding/CompositeDecoder$Companion.d.ts'
 import type { Json } from '../../../../kotlinx/serialization/json/Json.d.ts'
@@ -7,11 +8,11 @@ export class JsonTreeMapDecoder extends JsonTreeDecoder {
     static Companion: CompositeDecoder$Companion;
     static DECODE_DONE: number;
     static UNKNOWN_NAME: number;
-    constructor(json: Json, value: { [key: string]: any })
+    constructor(json: Json, value: JavaMap<any, any>)
     // private keys: string[];
     // private position: number;
     // private size: number;
-    readonly value: { [key: string]: any };
+    readonly value: JavaMap<any, any>;
     protected currentElement(tag: string): JsonElement;
     decodeElementIndex(descriptor: SerialDescriptor): number;
     protected elementName(descriptor: SerialDescriptor, index: number): string;

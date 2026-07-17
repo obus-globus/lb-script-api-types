@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { EnchantmentUtil$BuilderExtensions } from '../../../../../net/fabricmc/fabric/impl/item/EnchantmentUtil$BuilderExtensions.d.ts'
 import type { EnchantmentBuilderAccessor } from '../../../../../net/fabricmc/fabric/mixin/item/EnchantmentBuilderAccessor.d.ts'
@@ -18,7 +19,7 @@ export class Enchantment$Builder extends Object implements EnchantmentUtil$Build
     constructor(definition: Enchantment$EnchantmentDefinition)
     readonly definition: Enchantment$EnchantmentDefinition;
     // private didModify: boolean;
-    // private effectLists: Map<DataComponentType<Object>, (Object | null)[]>;
+    // private effectLists: JavaMap<DataComponentType<Object>, (Object | null)[]>;
     // private effectMapBuilder: DataComponentMap$Builder;
     readonly exclusiveSet: Holder<Enchantment>[];
     build(descriptionKey: Identifier): Enchantment;

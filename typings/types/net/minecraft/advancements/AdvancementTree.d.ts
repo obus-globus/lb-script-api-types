@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { AdvancementHolder } from '../../../net/minecraft/advancements/AdvancementHolder.d.ts'
 import type { AdvancementNode } from '../../../net/minecraft/advancements/AdvancementNode.d.ts'
@@ -6,7 +7,7 @@ import type { Identifier } from '../../../net/minecraft/resources/Identifier.d.t
 export class AdvancementTree extends Object {
     constructor()
     readonly listener: AdvancementTree$Listener;
-    // private nodes: Map<Identifier, AdvancementNode>;
+    // private nodes: JavaMap<Identifier, AdvancementNode>;
     // private roots: AdvancementNode[];
     // private tasks: AdvancementNode[];
     addAll(advancements: AdvancementHolder[]): void;

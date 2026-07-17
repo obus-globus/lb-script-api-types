@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { AutoCloseable } from '../../../../../../java/lang/AutoCloseable.d.ts'
 import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -11,7 +12,7 @@ export class RegionFileStorage extends Object implements AutoCloseable {
     constructor(info: RegionStorageInfo, folder: Path, sync: boolean)
     // private folder: Path;
     // private info: RegionStorageInfo;
-    // private regionCache: { [key: string]: any };
+    // private regionCache: JavaMap<any, any>;
     // private sync: boolean;
     close(): void;
     flush(): void;

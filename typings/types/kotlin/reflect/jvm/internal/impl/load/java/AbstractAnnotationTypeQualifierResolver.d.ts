@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Pair } from '../../../../../../../kotlin/Pair.d.ts'
 import type { AnnotationQualifierApplicabilityType } from '../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/AnnotationQualifierApplicabilityType.d.ts'
@@ -12,7 +13,7 @@ import type { FqName } from '../../../../../../../kotlin/reflect/jvm/internal/im
 export abstract class AbstractAnnotationTypeQualifierResolver<TAnnotation extends unknown> extends Object {
     constructor(arg0: JavaTypeEnhancementState)
     // private javaTypeEnhancementState: JavaTypeEnhancementState;
-    // private resolvedNicknames: Map<Object, TAnnotation>;
+    // private resolvedNicknames: JavaMap<Object, TAnnotation>;
     // private allIfTypeUse(arg0: AnnotationQualifierApplicabilityType[]): AnnotationQualifierApplicabilityType[];
     enumArguments(arg0: TAnnotation, arg1: boolean): string[];
     extractAndMergeDefaultQualifiers(arg0: JavaTypeQualifiersByElementType, arg1: TAnnotation[], arg2: boolean): JavaTypeQualifiersByElementType;

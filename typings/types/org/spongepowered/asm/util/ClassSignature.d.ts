@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { SignatureVisitor } from '../../../../org/objectweb/asm/signature/SignatureVisitor.d.ts'
 import type { ClassNode } from '../../../../org/objectweb/asm/tree/ClassNode.d.ts'
@@ -12,7 +13,7 @@ export class ClassSignature extends Object {
     // private interfaces: ClassSignature$Token[];
     // private rawInterfaces: string[];
     readonly superClass: ClassSignature$Token;
-    // private types: Map<ClassSignature$TypeVar, ClassSignature$TokenHandle>;
+    // private types: JavaMap<ClassSignature$TypeVar, ClassSignature$TokenHandle>;
     addInterface(arg0: string): void;
     addInterface(arg0: ClassSignature$Token): void;
     addRawInterface(arg0: string): void;

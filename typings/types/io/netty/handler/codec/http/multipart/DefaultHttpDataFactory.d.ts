@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { HttpRequest } from '../../../../../../io/netty/handler/codec/http/HttpRequest.d.ts'
 import type { Attribute } from '../../../../../../io/netty/handler/codec/http/multipart/Attribute.d.ts'
 import type { FileUpload } from '../../../../../../io/netty/handler/codec/http/multipart/FileUpload.d.ts'
@@ -21,7 +22,7 @@ export class DefaultHttpDataFactory extends Object implements HttpDataFactory {
     readonly deleteOnExit: boolean;
     // private maxSize: number;
     // private minSize: number;
-    // private requestFileDeleteMap: Map<HttpRequest, HttpData[]>;
+    // private requestFileDeleteMap: JavaMap<HttpRequest, HttpData[]>;
     // private useDisk: boolean;
     cleanAllHttpData(): void;
     cleanAllHttpDatas(): void;

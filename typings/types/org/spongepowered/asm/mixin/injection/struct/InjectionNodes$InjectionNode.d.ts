@@ -1,10 +1,11 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../../../java/lang/Comparable.d.ts'
 import type { AbstractInsnNode } from '../../../../../../org/objectweb/asm/tree/AbstractInsnNode.d.ts'
 export class InjectionNodes$InjectionNode extends Object implements Comparable<InjectionNodes$InjectionNode> {
     constructor(arg0: AbstractInsnNode)
     readonly currentTarget: AbstractInsnNode;
-    // private decorations: { [key: string]: Object };
+    // private decorations: JavaMap<string, Object>;
     readonly id: number;
     readonly originalTarget: AbstractInsnNode;
     compareTo(arg0: InjectionNodes$InjectionNode): number;

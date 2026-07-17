@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { BackwardsProtocol } from '../../../../../com/viaversion/viabackwards/api/BackwardsProtocol.d.ts'
 import type { EntityReplacement } from '../../../../../com/viaversion/viabackwards/api/entities/storage/EntityReplacement.d.ts'
 import type { UserConnection } from '../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
@@ -19,7 +20,7 @@ export abstract class EntityRewriterBase<C extends ClientboundPacketType, T exte
     // private displayNameIndex: number;
     // private displayVisibilityDataType: EntityDataType;
     // private displayVisibilityIndex: number;
-    // private entityDataMappings: { [key: string]: any };
+    // private entityDataMappings: JavaMap<any, any>;
     // private addDisplayVisibilityData(arg0: EntityData[]): void;
     alwaysShowOriginalMobName(): boolean;
     entityDataForType(arg0: EntityType): EntityReplacement;

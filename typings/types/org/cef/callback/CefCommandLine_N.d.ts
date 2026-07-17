@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { CefCommandLine } from '../../../org/cef/callback/CefCommandLine.d.ts'
 import type { CefNativeAdapter } from '../../../org/cef/callback/CefNativeAdapter.d.ts'
 export class CefCommandLine_N extends CefNativeAdapter implements CefCommandLine {
@@ -8,7 +9,7 @@ export class CefCommandLine_N extends CefNativeAdapter implements CefCommandLine
     // private N_GetArguments(arg0: number): string[];
     // private N_GetProgram(arg0: number): string;
     // private N_GetSwitchValue(arg0: number, arg1: string): string;
-    // private N_GetSwitches(arg0: number): { [key: string]: string };
+    // private N_GetSwitches(arg0: number): JavaMap<string, string>;
     // private N_HasArguments(arg0: number): boolean;
     // private N_HasSwitch(arg0: number, arg1: string): boolean;
     // private N_HasSwitches(arg0: number): boolean;
@@ -20,7 +21,7 @@ export class CefCommandLine_N extends CefNativeAdapter implements CefCommandLine
     getArguments(): string[];
     getProgram(): string;
     getSwitchValue(arg0: string): string;
-    getSwitches(): { [key: string]: string };
+    getSwitches(): JavaMap<string, string>;
     hasArguments(): boolean;
     hasSwitch(arg0: string): boolean;
     hasSwitches(): boolean;

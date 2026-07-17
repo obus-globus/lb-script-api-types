@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { GpuBufferSlice } from '../../../../../com/mojang/blaze3d/buffers/GpuBufferSlice.d.ts'
 import type { GpuSampler } from '../../../../../com/mojang/blaze3d/textures/GpuSampler.d.ts'
 import type { GpuTextureView } from '../../../../../com/mojang/blaze3d/textures/GpuTextureView.d.ts'
@@ -9,9 +10,9 @@ import type { SodiumChunkSection } from '../../../../../net/caffeinemc/mods/sodi
 import type { ChunkSectionLayer } from '../../../../../net/minecraft/client/renderer/chunk/ChunkSectionLayer.d.ts'
 import type { ChunkSectionLayerGroup } from '../../../../../net/minecraft/client/renderer/chunk/ChunkSectionLayerGroup.d.ts'
 export class ChunkSectionsToRender extends Record implements SodiumChunkSection {
-    constructor(textureView: GpuTextureView, drawGroupsPerLayer: Map<ChunkSectionLayer, { [key: string]: any }>, maxIndicesRequired: number, chunkSectionInfos: GpuBufferSlice[])
+    constructor(textureView: GpuTextureView, drawGroupsPerLayer: JavaMap<ChunkSectionLayer, JavaMap<any, any>>, maxIndicesRequired: number, chunkSectionInfos: GpuBufferSlice[])
     // private chunkSectionInfos: GpuBufferSlice[];
-    // private drawGroupsPerLayer: Map<ChunkSectionLayer, { [key: string]: any }>;
+    // private drawGroupsPerLayer: JavaMap<ChunkSectionLayer, JavaMap<any, any>>;
     // private matrices: ChunkRenderMatrices;
     // private maxIndicesRequired: number;
     // private renderer: SodiumWorldRenderer;
@@ -20,7 +21,7 @@ export class ChunkSectionsToRender extends Record implements SodiumChunkSection 
     // private y: number;
     // private z: number;
     chunkSectionInfos(): GpuBufferSlice[];
-    drawGroupsPerLayer(): Map<ChunkSectionLayer, { [key: string]: any }>;
+    drawGroupsPerLayer(): JavaMap<ChunkSectionLayer, JavaMap<any, any>>;
     equals(o: Object | null): boolean;
     hashCode(): number;
     maxIndicesRequired(): number;

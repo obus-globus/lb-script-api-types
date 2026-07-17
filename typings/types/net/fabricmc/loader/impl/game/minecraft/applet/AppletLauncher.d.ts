@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Applet } from '../../../../../../../java/applet/Applet.d.ts'
 import type { AppletStub } from '../../../../../../../java/applet/AppletStub.d.ts'
 import type { AudioClip } from '../../../../../../../java/applet/AudioClip.d.ts'
@@ -23,13 +24,13 @@ export class AppletLauncher extends Applet implements AppletStub {
     constructor(arg0: File, arg1: string, arg2: string, arg3: string, arg4: string, arg5: boolean, arg6: boolean, arg7: boolean)
     readonly active: boolean;
     // private mcApplet: Applet;
-    readonly params: { [key: string]: string };
+    readonly params: JavaMap<string, string>;
     appletResize(arg0: number, arg1: number): void;
     getCodeBase(): URL;
     getDocumentBase(): URL;
     // private getMinecraftHostingUrl(): URL;
     getParameter(arg0: string): string;
-    getParams(): { [key: string]: string };
+    getParams(): JavaMap<string, string>;
     init(): void;
     isActive(): boolean;
     replace(arg0: Applet): void;

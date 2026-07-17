@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Principal } from '../../../java/security/Principal.d.ts'
 import type { Subject } from '../../../javax/security/auth/Subject.d.ts'
 import type { X500Principal } from '../../../javax/security/auth/x500/X500Principal.d.ts'
@@ -48,7 +49,7 @@ export class X500Name extends Object implements Principal, GeneralNameInterface 
     constructor(arg0: string, arg1: string)
     constructor(arg0: string, arg1: string, arg2: string, arg3: string)
     constructor(arg0: string, arg1: string, arg2: string, arg3: string, arg4: string, arg5: string)
-    constructor(arg0: string, arg1: { [key: string]: string })
+    constructor(arg0: string, arg1: JavaMap<string, string>)
     constructor(arg0: DerInputStream)
     constructor(arg0: DerValue)
     // private allAvaList: AVA[];
@@ -70,8 +71,8 @@ export class X500Name extends Object implements Principal, GeneralNameInterface 
     // private findAttribute(arg0: ObjectIdentifier): DerValue;
     findMostSpecificAttribute(arg0: ObjectIdentifier): DerValue;
     // private generateDN(): void;
-    // private generateRFC1779DN(arg0: { [key: string]: string }): string;
-    // private generateRFC2253DN(arg0: { [key: string]: string }): string;
+    // private generateRFC1779DN(arg0: JavaMap<string, string>): string;
+    // private generateRFC2253DN(arg0: JavaMap<string, string>): string;
     getCommonName(): string;
     getCountry(): string;
     getDNQualifier(): string;
@@ -87,10 +88,10 @@ export class X500Name extends Object implements Principal, GeneralNameInterface 
     getOrganization(): string;
     getOrganizationalUnit(): string;
     getRFC1779Name(): string;
-    getRFC1779Name(arg0: { [key: string]: string }): string;
+    getRFC1779Name(arg0: JavaMap<string, string>): string;
     getRFC2253CanonicalName(): string;
     getRFC2253Name(): string;
-    getRFC2253Name(arg0: { [key: string]: string }): string;
+    getRFC2253Name(arg0: JavaMap<string, string>): string;
     getState(): string;
     // private getString(arg0: DerValue): string;
     getSurname(): string;
@@ -100,7 +101,7 @@ export class X500Name extends Object implements Principal, GeneralNameInterface 
     isEmpty(): boolean;
     // private isWithinSubtree(arg0: X500Name): boolean;
     // private parseDER(arg0: DerInputStream): void;
-    // private parseDN(arg0: string, arg1: { [key: string]: string }): void;
+    // private parseDN(arg0: string, arg1: JavaMap<string, string>): void;
     // private parseRFC2253DN(arg0: string): void;
     rdns(): RDN[];
     size(): number;

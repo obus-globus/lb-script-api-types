@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { PoseStack } from '../../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { MutableMesh } from '../../../../../net/fabricmc/fabric/api/client/renderer/v1/mesh/MutableMesh.d.ts'
@@ -18,7 +19,7 @@ export class BlockModelRenderState extends Object implements FabricBlockModelRen
     // private mesh: MutableMesh;
     // private modelParts: BlockStateModelPart[];
     // private randomSource: RandomSource;
-    // private renderStateData: Map<Object | null, Object | null>;
+    // private renderStateData: JavaMap<Object | null, Object | null>;
     // private renderType: RenderType;
     // private specialRenderer: SpecialModelRenderer<Object>;
     // private specialRendererTransformation: Matrix4fc;

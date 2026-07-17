@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { InternalThreadLocalMap } from '../../../../io/netty/util/internal/InternalThreadLocalMap.d.ts'
 import type { Runnable } from '../../../../java/lang/Runnable.d.ts'
 import type { StackTraceElement } from '../../../../java/lang/StackTraceElement.d.ts'
@@ -19,7 +20,7 @@ export class FastThreadLocalThread extends Thread {
     static currentThreadWillCleanupFastThreadLocals(): boolean;
     static dumpStack(): void;
     static enumerate(paramarg0: Thread[]): number;
-    static getAllStackTraces(): Map<Thread, StackTraceElement[]>;
+    static getAllStackTraces(): JavaMap<Thread, StackTraceElement[]>;
     static getDefaultUncaughtExceptionHandler(): (param0: Thread, param1: Throwable) => void;
     static holdsLock(paramarg0: Object): boolean;
     static interrupted(): boolean;

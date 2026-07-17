@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { ObjectInputStream } from '../../../../../../../java/io/ObjectInputStream.d.ts'
 import type { ObjectOutputStream } from '../../../../../../../java/io/ObjectOutputStream.d.ts'
 import type { StringBuffer } from '../../../../../../../java/lang/StringBuffer.d.ts'
@@ -21,11 +22,11 @@ import type { ULocale$Type } from '../../../../../../../org/graalvm/shadowed/com
 export class MessageFormat extends UFormat implements Cloneable {
     static autoQuoteApostrophe(parampattern: string): string;
     static format(parampattern: string, ...paramarguments: Object[]): string;
-    static format(parampattern: string, paramarguments: { [key: string]: Object }): string;
+    static format(parampattern: string, paramarguments: JavaMap<string, Object>): string;
     constructor(pattern: string)
     constructor(pattern: string, locale: Locale)
     constructor(pattern: string, locale: ULocale)
-    // private cachedFormatters: { [key: number]: Format };
+    // private cachedFormatters: JavaMap<number, Format>;
     // private customFormatArgStarts: number[];
     // private msgPattern: MessagePattern;
     // private ordinalProvider: MessageFormat$PluralSelectorProvider;
@@ -47,10 +48,10 @@ export class MessageFormat extends UFormat implements Cloneable {
     format(arguments: Object, result: StringBuffer, pos: FieldPosition): StringBuffer;
     // private format(arguments: Object, result: MessageFormat$AppendableWrapper, fp: FieldPosition): void;
     format(arguments: Object[], result: StringBuffer, pos: FieldPosition): StringBuffer;
-    // private format(arguments: Object[], argsMap: { [key: string]: Object }, dest: MessageFormat$AppendableWrapper, fp: FieldPosition): void;
-    // private format(msgStart: number, pluralNumber: MessageFormat$PluralSelectorContext, args: Object[], argsMap: { [key: string]: Object }, dest: MessageFormat$AppendableWrapper, fp: FieldPosition): void;
-    format(arguments: { [key: string]: Object }, result: StringBuffer, pos: FieldPosition): StringBuffer;
-    // private formatComplexSubMessage(msgStart: number, pluralNumber: MessageFormat$PluralSelectorContext, args: Object[], argsMap: { [key: string]: Object }, dest: MessageFormat$AppendableWrapper): void;
+    // private format(arguments: Object[], argsMap: JavaMap<string, Object>, dest: MessageFormat$AppendableWrapper, fp: FieldPosition): void;
+    // private format(msgStart: number, pluralNumber: MessageFormat$PluralSelectorContext, args: Object[], argsMap: JavaMap<string, Object>, dest: MessageFormat$AppendableWrapper, fp: FieldPosition): void;
+    format(arguments: JavaMap<string, Object>, result: StringBuffer, pos: FieldPosition): StringBuffer;
+    // private formatComplexSubMessage(msgStart: number, pluralNumber: MessageFormat$PluralSelectorContext, args: Object[], argsMap: JavaMap<string, Object>, dest: MessageFormat$AppendableWrapper): void;
     formatToCharacterIterator(arguments: Object): AttributedCharacterIterator;
     getApostropheMode(): MessagePattern$ApostropheMode;
     // private getArgName(partIndex: number): string;
@@ -66,13 +67,13 @@ export class MessageFormat extends UFormat implements Cloneable {
     getULocale(): ULocale;
     hashCode(): number;
     // private nextTopLevelArgStart(partIndex: number): number;
-    // private parse(msgStart: number, source: string, pos: ParsePosition, args: Object[], argsMap: { [key: string]: Object }): void;
+    // private parse(msgStart: number, source: string, pos: ParsePosition, args: Object[], argsMap: JavaMap<string, Object>): void;
     parse(source: string): Object[];
     parse(source: string, pos: ParsePosition): Object[];
     parseObject(arg0: string): Object;
     parseObject(source: string, pos: ParsePosition): Object;
-    parseToMap(source: string): { [key: string]: Object };
-    parseToMap(source: string, pos: ParsePosition): { [key: string]: Object };
+    parseToMap(source: string): JavaMap<string, Object>;
+    parseToMap(source: string, pos: ParsePosition): JavaMap<string, Object>;
     // private readObject(in_: ObjectInputStream): void;
     // private resetPattern(): void;
     // private setArgStartFormat(argStart: number, formatter: Format): void;
@@ -82,7 +83,7 @@ export class MessageFormat extends UFormat implements Cloneable {
     setFormatByArgumentName(argumentName: string, newFormat: Format): void;
     setFormats(newFormats: Format[]): void;
     setFormatsByArgumentIndex(newFormats: Format[]): void;
-    setFormatsByArgumentName(newFormats: { [key: string]: Format }): void;
+    setFormatsByArgumentName(newFormats: JavaMap<string, Format>): void;
     setLocale(locale: Locale): void;
     setLocale(locale: ULocale): void;
     setLocale(valid: ULocale, actual: ULocale): void;

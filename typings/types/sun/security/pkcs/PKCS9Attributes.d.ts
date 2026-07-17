@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { PKCS9Attribute } from '../../../sun/security/pkcs/PKCS9Attribute.d.ts'
 import type { DerInputStream } from '../../../sun/security/util/DerInputStream.d.ts'
@@ -8,10 +9,10 @@ export class PKCS9Attributes extends Object {
     constructor(arg0: ObjectIdentifier[], arg1: DerInputStream)
     constructor(arg0: DerInputStream)
     constructor(arg0: DerInputStream, arg1: boolean)
-    // private attributes: Map<ObjectIdentifier, PKCS9Attribute>;
+    // private attributes: JavaMap<ObjectIdentifier, PKCS9Attribute>;
     readonly derEncoding: number[];
     // private ignoreUnsupportedAttributes: boolean;
-    // private permittedAttributes: Map<ObjectIdentifier, ObjectIdentifier>;
+    // private permittedAttributes: JavaMap<ObjectIdentifier, ObjectIdentifier>;
     // private decode(arg0: DerInputStream): number[];
     encode(arg0: number, arg1: DerOutputStream): void;
     // private generateDerEncoding(): number[];

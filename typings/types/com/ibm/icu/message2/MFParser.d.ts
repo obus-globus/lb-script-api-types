@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { InputSource } from '../../../../com/ibm/icu/message2/InputSource.d.ts'
 import type { MFDataModel$Attribute } from '../../../../com/ibm/icu/message2/MFDataModel$Attribute.d.ts'
 import type { MFDataModel$Declaration } from '../../../../com/ibm/icu/message2/MFDataModel$Declaration.d.ts'
@@ -39,7 +40,7 @@ export class MFParser extends Object {
     // private getMatch(arg0: MFDataModel$Declaration[]): MFDataModel$SelectMessage;
     // private getName(): string;
     // private getOption(): MFDataModel$Option;
-    // private getOptions(): { [key: string]: MFDataModel$Option };
+    // private getOptions(): JavaMap<string, MFDataModel$Option>;
     // private getPattern(): MFDataModel$Pattern;
     // private getPatternPart(): MFDataModel$PatternPart;
     // private getPlaceholder(): MFDataModel$Expression;

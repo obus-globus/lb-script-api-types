@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Evaluator } from '../../../../ai/djl/training/evaluator/Evaluator.d.ts'
 import type { ElasticNetWeightDecay } from '../../../../ai/djl/training/loss/ElasticNetWeightDecay.d.ts'
 import type { HingeLoss } from '../../../../ai/djl/training/loss/HingeLoss.d.ts'
@@ -42,7 +43,7 @@ export abstract class Loss extends Evaluator {
     static softmaxCrossEntropyLoss(paramarg0: string): SoftmaxCrossEntropyLoss;
     static softmaxCrossEntropyLoss(paramarg0: string, paramarg1: number, paramarg2: number, paramarg3: boolean, paramarg4: boolean): SoftmaxCrossEntropyLoss;
     constructor(arg0: string)
-    // private totalLoss: { [key: string]: number };
+    // private totalLoss: JavaMap<string, number>;
     addAccumulator(arg0: string): void;
     getAccumulator(arg0: string): number;
     resetAccumulator(arg0: string): void;

@@ -1,10 +1,11 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { BlockChangeRecord } from '../../../../../com/viaversion/viaversion/api/minecraft/BlockChangeRecord.d.ts'
 import type { Chunk } from '../../../../../com/viaversion/viaversion/api/minecraft/chunks/Chunk.d.ts'
 import type { IdAndData } from '../../../../../com/viaversion/viaversion/util/IdAndData.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class AbstractBlockRemapper extends Object {
     constructor()
-    // private REPLACEMENTS: { [key: string]: any };
+    // private REPLACEMENTS: JavaMap<any, any>;
     registerReplacement(arg0: IdAndData, arg1: IdAndData): void;
     registerReplacement(arg0: number, arg1: number): void;
     remapBlock(arg0: IdAndData): void;

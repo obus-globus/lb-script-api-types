@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -70,7 +71,7 @@ export class Enchantment extends Record {
     getMaxLevel(): number;
     getMinCost(level: number): number;
     getMinLevel(): number;
-    getSlotItems(entity: LivingEntity): Map<EquipmentSlot, ItemStack>;
+    getSlotItems(entity: LivingEntity): JavaMap<EquipmentSlot, ItemStack>;
     getSupportedItems(): Holder<Item>[];
     getWeight(): number;
     hashCode(): number;

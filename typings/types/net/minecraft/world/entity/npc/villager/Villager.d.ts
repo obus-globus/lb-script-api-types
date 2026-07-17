@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { BiPredicate } from '../../../../../../java/util/function/BiPredicate.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Predicate } from '../../../../../../java/util/function/Predicate.d.ts'
@@ -93,7 +94,7 @@ export class Villager extends AbstractVillager implements VillagerAccessor, Repu
     static FLYING_LAVA_DRAG: number;
     static FLYING_VERTICAL_AIR_DRAG: number;
     static FLYING_WATER_DRAG: number;
-    static FOOD_POINTS: Map<Item, number>;
+    static FOOD_POINTS: JavaMap<Item, number>;
     static FREEZE_HURT_FREQUENCY: number;
     static INVALID_ENTITY_ID: number;
     static LAVA_DRAG: number;
@@ -114,7 +115,7 @@ export class Villager extends AbstractVillager implements VillagerAccessor, Repu
     static NBT_ATTACHMENT_KEY: string;
     static PLAYER_HURT_EXPERIENCE_TIME: number;
     static PLAYER_NOT_WEARING_DISGUISE_ITEM: (param0: LivingEntity) => boolean;
-    static POI_MEMORIES: Map<MemoryModuleType<GlobalPos>, (param0: Villager, param1: Holder<PoiType>) => boolean>;
+    static POI_MEMORIES: JavaMap<MemoryModuleType<GlobalPos>, (param0: Villager, param1: Holder<PoiType>) => boolean>;
     static REALLY_FAR_DISTANCE: number;
     static SADDLE_OFFSET: number;
     static SHARED_QUAD_ATTACHMENT_POINTS: Vec3[];

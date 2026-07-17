@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { OpenSslSession } from '../../../../io/netty/handler/ssl/OpenSslSession.d.ts'
 import type { OpenSslSessionContext } from '../../../../io/netty/handler/ssl/OpenSslSessionContext.d.ts'
 import type { OpenSslSessionId } from '../../../../io/netty/handler/ssl/OpenSslSessionId.d.ts'
@@ -23,13 +24,13 @@ export interface OpenSslInternalSession extends OpenSslSession, Object{
     hasPeerCertificates(): boolean;
     invalidate(): void;
     isValid(): boolean;
-    keyValueStorage(): { [key: string]: Object };
+    keyValueStorage(): JavaMap<string, Object>;
     prepareHandshake(): void;
     putValue(arg0: string, arg1: Object): void;
     removeValue(arg0: string): void;
     sessionId(): OpenSslSessionId;
     setLastAccessedTime(arg0: number): void;
     setLocalCertificate(arg0: Certificate[]): void;
-    setSessionDetails(arg0: number, arg1: number, arg2: OpenSslSessionId, arg3: { [key: string]: Object }): void;
+    setSessionDetails(arg0: number, arg1: number, arg2: OpenSslSessionId, arg3: JavaMap<string, Object>): void;
     tryExpandApplicationBufferSize(arg0: number): void;
 }

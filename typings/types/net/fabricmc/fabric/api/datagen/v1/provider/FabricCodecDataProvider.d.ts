@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { JsonElement } from '../../../../../../../com/google/gson/JsonElement.d.ts'
 import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { DynamicOps } from '../../../../../../../com/mojang/serialization/DynamicOps.d.ts'
@@ -28,5 +29,5 @@ export abstract class FabricCodecDataProvider<T extends unknown> extends Object 
     // private convert(arg0: Identifier, arg1: T, arg2: DynamicOps<JsonElement>): JsonElement;
     getName(): string;
     run(arg0: CachedOutput): CompletableFuture<Object>;
-    // private write(arg0: CachedOutput, arg1: Map<Identifier, JsonElement>): CompletableFuture<Object>;
+    // private write(arg0: CachedOutput, arg1: JavaMap<Identifier, JsonElement>): CompletableFuture<Object>;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { JsonObject } from '../../../../com/google/gson/JsonObject.d.ts'
 import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
@@ -21,34 +22,34 @@ import type { TextureStage } from '../../../../net/irisshaders/iris/shaderpack/t
 import type { CustomUniforms$Builder } from '../../../../net/irisshaders/iris/uniforms/custom/CustomUniforms$Builder.d.ts'
 export class ShaderPack extends Object {
     constructor(arg0: Path, arg1: StringPair[], arg2: boolean)
-    constructor(arg0: Path, arg1: { [key: string]: string }, arg2: StringPair[], arg3: boolean)
+    constructor(arg0: Path, arg1: JavaMap<string, string>, arg2: StringPair[], arg3: boolean)
     // private activeFeatures: FeatureFlags[];
     // private base: ProgramSet;
-    readonly bufferObjects: { [key: string]: any };
+    readonly bufferObjects: JavaMap<any, any>;
     readonly customNoiseTexture: CustomTextureData;
-    readonly customTextureDataMap: Map<TextureStage, { [key: string]: CustomTextureData }>;
+    readonly customTextureDataMap: JavaMap<TextureStage, JavaMap<string, CustomTextureData>>;
     customUniforms: CustomUniforms$Builder;
     // private dimensionIds: string[];
-    readonly dimensionMap: Map<NamespacedId, string>;
+    readonly dimensionMap: JavaMap<NamespacedId, string>;
     readonly idMap: IdMap;
     readonly irisCustomImages: ImageInformation[];
-    readonly irisCustomTextureDataMap: { [key: string]: CustomTextureData };
+    readonly irisCustomTextureDataMap: JavaMap<string, CustomTextureData>;
     readonly languageMap: LanguageMap;
     readonly menuContainer: OptionMenuContainer;
-    // private overrides: Map<NamespacedId, ProgramSetInterface>;
+    // private overrides: JavaMap<NamespacedId, ProgramSetInterface>;
     // private profile: ProfileSet$ProfileResult;
     readonly profileInfo: string;
     readonly shaderPackOptions: ShaderPackOptions;
     // private shaderProperties: ShaderProperties;
     // private sourceProvider: (param0: AbsolutePackPath) => string;
-    getBufferObjects(): { [key: string]: any };
+    getBufferObjects(): JavaMap<any, any>;
     // private getCurrentProfileName(): string;
     getCustomNoiseTexture(): CustomTextureData;
-    getCustomTextureDataMap(): Map<TextureStage, { [key: string]: CustomTextureData }>;
-    getDimensionMap(): Map<NamespacedId, string>;
+    getCustomTextureDataMap(): JavaMap<TextureStage, JavaMap<string, CustomTextureData>>;
+    getDimensionMap(): JavaMap<NamespacedId, string>;
     getIdMap(): IdMap;
     getIrisCustomImages(): ImageInformation[];
-    getIrisCustomTextureDataMap(): { [key: string]: CustomTextureData };
+    getIrisCustomTextureDataMap(): JavaMap<string, CustomTextureData>;
     getLanguageMap(): LanguageMap;
     getMenuContainer(): OptionMenuContainer;
     getProfileInfo(): string;
@@ -56,6 +57,6 @@ export class ShaderPack extends Object {
     getShaderPackOptions(): ShaderPackOptions;
     hasFeature(arg0: FeatureFlags): boolean;
     // private loadMcMeta(arg0: Path): JsonObject;
-    // private parseDimensionIds(arg0: { [key: string]: any }, arg1: string): string[];
+    // private parseDimensionIds(arg0: JavaMap<any, any>, arg1: string): string[];
     readTexture(arg0: Path, arg1: TextureDefinition): CustomTextureData;
 }

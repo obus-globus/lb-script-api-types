@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ULocale } from '../../../../com/ibm/icu/util/ULocale.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class LocalePriorityList$Builder extends Object {
@@ -5,7 +6,7 @@ export class LocalePriorityList$Builder extends Object {
     private constructor(arg0: ULocale[])
     // private built: ULocale[];
     // private hasWeights: boolean;
-    // private languageToWeight: Map<ULocale, number>;
+    // private languageToWeight: JavaMap<ULocale, number>;
     add(arg0: ULocale[]): LocalePriorityList$Builder;
     add(arg0: ULocale): LocalePriorityList$Builder;
     add(arg0: ULocale, arg1: number): LocalePriorityList$Builder;

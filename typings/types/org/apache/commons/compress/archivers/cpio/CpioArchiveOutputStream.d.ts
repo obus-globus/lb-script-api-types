@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { LinkOption } from '../../../../../../java/nio/file/LinkOption.d.ts'
@@ -51,7 +52,7 @@ export class CpioArchiveOutputStream extends ArchiveOutputStream<CpioArchiveEntr
     // private crc: number;
     // private entry: CpioArchiveEntry;
     // private entryFormat: number;
-    // private names: { [key: string]: CpioArchiveEntry };
+    // private names: JavaMap<string, CpioArchiveEntry>;
     // private nextArtificalDeviceAndInode: number;
     // private written: number;
     // private zipEncoding: ZipEncoding;

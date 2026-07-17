@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { ByteBuf } from '../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { HttpContent } from '../../../../../../io/netty/handler/codec/http/HttpContent.d.ts'
 import type { HttpRequest } from '../../../../../../io/netty/handler/codec/http/HttpRequest.d.ts'
@@ -15,7 +16,7 @@ export class HttpPostStandardRequestDecoder extends Object implements InterfaceH
     constructor(arg0: HttpDataFactory, arg1: HttpRequest, arg2: Charset, arg3: number, arg4: number)
     // private bodyListHttpData: InterfaceHttpData[];
     // private bodyListHttpDataRank: number;
-    // private bodyMapHttpData: { [key: string]: InterfaceHttpData[] };
+    // private bodyMapHttpData: JavaMap<string, InterfaceHttpData[]>;
     // private charset: Charset;
     // private currentAttribute: Attribute;
     // private currentStatus: HttpPostRequestDecoder$MultiPartStatus;

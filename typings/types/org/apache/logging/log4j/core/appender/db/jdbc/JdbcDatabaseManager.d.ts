@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Serializable } from '../../../../../../../../java/io/Serializable.d.ts'
 import type { Exception } from '../../../../../../../../java/lang/Exception.d.ts'
 import type { Connection } from '../../../../../../../../java/sql/Connection.d.ts'
@@ -25,7 +26,7 @@ export class JdbcDatabaseManager extends AbstractDatabaseManager {
     static hasManager(paramname: string): boolean;
     private constructor(name: string, sqlStatement: string, columnConfigs: ColumnConfig[], factoryData: JdbcDatabaseManager$FactoryData)
     // private columnConfigs: ColumnConfig[];
-    // private columnMetaData: { [key: string]: JdbcDatabaseManager$ResultSetColumnMetaData };
+    // private columnMetaData: JavaMap<string, JdbcDatabaseManager$ResultSetColumnMetaData>;
     // private connection: Connection;
     // private factoryData: JdbcDatabaseManager$FactoryData;
     // private isBatchSupported: boolean;

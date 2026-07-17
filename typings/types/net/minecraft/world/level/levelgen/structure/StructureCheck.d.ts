@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { DataFixer } from '../../../../../../com/mojang/datafixers/DataFixer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { RegistryAccess } from '../../../../../../net/minecraft/core/RegistryAccess.d.ts'
@@ -20,10 +21,10 @@ export class StructureCheck extends Object {
     // private biomeSource: BiomeSource;
     // private chunkGenerator: ChunkGenerator;
     // private dimension: ResourceKey<Level>;
-    // private featureChecks: Map<Structure, { [key: string]: any }>;
+    // private featureChecks: JavaMap<Structure, JavaMap<any, any>>;
     // private fixerUpper: DataFixer;
     // private heightAccessor: LevelHeightAccessor;
-    // private loadedChunks: { [key: string]: any };
+    // private loadedChunks: JavaMap<any, any>;
     // private randomState: RandomState;
     // private registryAccess: RegistryAccess;
     // private seed: number;
@@ -31,10 +32,10 @@ export class StructureCheck extends Object {
     // private structureTemplateManager: StructureTemplateManager;
     // private canCreateStructure(pos: ChunkPos, structure: Structure): boolean;
     checkStart(pos: ChunkPos, structure: Structure, placement: StructurePlacement, requireUnreferenced: boolean): StructureCheckResult;
-    // private checkStructureInfo(cachedResult: { [key: string]: any }, structure: Structure, requireUnreferenced: boolean): StructureCheckResult;
+    // private checkStructureInfo(cachedResult: JavaMap<any, any>, structure: Structure, requireUnreferenced: boolean): StructureCheckResult;
     incrementReference(chunkPos: ChunkPos, structure: Structure): void;
-    // private loadStructures(chunkTag: CompoundTag): { [key: string]: any };
-    onStructureLoad(pos: ChunkPos, starts: Map<Structure, StructureStart>): void;
-    // private storeFullResults(posKey: number, starts: { [key: string]: any }): void;
+    // private loadStructures(chunkTag: CompoundTag): JavaMap<any, any>;
+    onStructureLoad(pos: ChunkPos, starts: JavaMap<Structure, StructureStart>): void;
+    // private storeFullResults(posKey: number, starts: JavaMap<any, any>): void;
     // private tryLoadFromStorage(pos: ChunkPos, structure: Structure, requireUnreferenced: boolean, posKey: number): StructureCheckResult;
 }

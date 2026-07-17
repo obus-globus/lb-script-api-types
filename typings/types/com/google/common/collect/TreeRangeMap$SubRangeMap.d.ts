@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Range } from '../../../../com/google/common/collect/Range.d.ts'
 import type { RangeMap } from '../../../../com/google/common/collect/RangeMap.d.ts'
 import type { TreeRangeMap } from '../../../../com/google/common/collect/TreeRangeMap.d.ts'
@@ -8,8 +9,8 @@ import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class TreeRangeMap$SubRangeMap extends Object implements RangeMap<K, V> {
     constructor(null_: TreeRangeMap<Comparable<Object>, Object>, subRange: Range<Comparable<Object>>)
     // private subRange: Range<K>;
-    asDescendingMapOfRanges<K extends Comparable<Object>, V extends unknown>(): Map<Range<K>, V>;
-    asMapOfRanges<K extends Comparable<Object>, V extends unknown>(): Map<Range<K>, V>;
+    asDescendingMapOfRanges<K extends Comparable<Object>, V extends unknown>(): JavaMap<Range<K>, V>;
+    asMapOfRanges<K extends Comparable<Object>, V extends unknown>(): JavaMap<Range<K>, V>;
     clear(): void;
     equals(o: Object | null): boolean;
     get<V extends unknown, K extends Comparable<Object>>(key: K): V;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { JsonElement } from '../../../../com/google/gson/JsonElement.d.ts'
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { CompletableFuture } from '../../../../java/util/concurrent/CompletableFuture.d.ts'
@@ -18,7 +19,7 @@ export class PackMetadataGenerator extends Object implements DataProvider {
     static forFeaturePack(paramoutput: PackOutput, paramdescription: Component): PackMetadataGenerator;
     static forFeaturePack(paramoutput: PackOutput, paramdescription: Component, paramflags: FeatureFlagSet): PackMetadataGenerator;
     constructor(output: PackOutput)
-    // private elements: { [key: string]: () => JsonElement };
+    // private elements: JavaMap<string, () => JsonElement>;
     // private output: PackOutput;
     add<T extends unknown>(type: MetadataSectionType<T>, value: T): PackMetadataGenerator;
     getName(): string;

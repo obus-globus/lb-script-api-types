@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
 import type { PropertyDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/PropertyDescriptor.d.ts'
@@ -43,10 +44,10 @@ export class DeserializedMemberScope$NoReorderImplementation extends Object impl
     // private getDeclaredFunctions(): SimpleFunctionDescriptor[];
     // private getDeclaredProperties(): PropertyDescriptor[];
     getFunctionNames(): Name[];
-    // private getFunctionsByName(): Map<Name, SimpleFunctionDescriptor[]>;
-    // private getPropertiesByName(): Map<Name, PropertyDescriptor[]>;
+    // private getFunctionsByName(): JavaMap<Name, SimpleFunctionDescriptor[]>;
+    // private getPropertiesByName(): JavaMap<Name, PropertyDescriptor[]>;
     getTypeAliasByName(arg0: Name): TypeAliasDescriptor;
     getTypeAliasNames(): Name[];
-    // private getTypeAliasesByName(): Map<Name, TypeAliasDescriptor>;
+    // private getTypeAliasesByName(): JavaMap<Name, TypeAliasDescriptor>;
     getVariableNames(): Name[];
 }

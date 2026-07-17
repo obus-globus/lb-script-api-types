@@ -1,9 +1,10 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { SourceImpl } from '../../../../../com/oracle/truffle/api/source/SourceImpl.d.ts'
 import type { URI } from '../../../../../java/net/URI.d.ts'
 import type { URL } from '../../../../../java/net/URL.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class SourceImpl$Key extends Object {
-    constructor(content: Object, mimeType: string, languageId: string, name: string, internal: boolean, interactive: boolean, cached: boolean, embedderSource: boolean, options: { [key: string]: string })
+    constructor(content: Object, mimeType: string, languageId: string, name: string, internal: boolean, interactive: boolean, cached: boolean, embedderSource: boolean, options: JavaMap<string, string>)
     // private cached: boolean;
     // private cachedHashCode: number;
     // private content: Object;
@@ -13,7 +14,7 @@ export abstract class SourceImpl$Key extends Object {
     // private language: string;
     // private mimeType: string;
     // private name: string;
-    // private options: { [key: string]: string };
+    // private options: JavaMap<string, string>;
     // private compareContent(other: SourceImpl$Key): boolean;
     equals(obj: Object | null): boolean;
     getPath(): string;

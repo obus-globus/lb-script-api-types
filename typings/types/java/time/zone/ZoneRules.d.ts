@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { DataOutput } from '../../../java/io/DataOutput.d.ts'
 import type { ObjectInputStream } from '../../../java/io/ObjectInputStream.d.ts'
 import type { Serializable } from '../../../java/io/Serializable.d.ts'
@@ -13,7 +14,7 @@ export class ZoneRules extends Object implements Serializable {
     static of(paramarg0: ZoneOffset, paramarg1: ZoneOffset, paramarg2: ZoneOffsetTransition[], paramarg3: ZoneOffsetTransition[], paramarg4: ZoneOffsetTransitionRule[]): ZoneRules;
     constructor(arg0: ZoneOffset, arg1: ZoneOffset, arg2: ZoneOffsetTransition[], arg3: ZoneOffsetTransition[], arg4: ZoneOffsetTransitionRule[])
     // private lastRules: ZoneOffsetTransitionRule[];
-    // private lastRulesCache: { [key: number]: ZoneOffsetTransition[] };
+    // private lastRulesCache: JavaMap<number, ZoneOffsetTransition[]>;
     // private savingsInstantTransitions: number[];
     // private savingsLocalTransitions: LocalDateTime[];
     // private standardOffsets: ZoneOffset[];

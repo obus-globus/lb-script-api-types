@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { Serializable } from '../../../../../../java/io/Serializable.d.ts'
 import type { InetAddress } from '../../../../../../java/net/InetAddress.d.ts'
@@ -33,7 +34,7 @@ export class TcpSocketManager extends AbstractSocketManager {
     // private createReconnector(): TcpSocketManager$Reconnector;
     createSocket(socketAddress: InetSocketAddress): Socket;
     getConnectTimeoutMillis(): number;
-    getContentFormat(): { [key: string]: string };
+    getContentFormat(): JavaMap<string, string>;
     getReconnectionDelayMillis(): number;
     getSocket(): Socket;
     getSocketOptions(): SocketOptions;

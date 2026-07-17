@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { AbstractApplicationBase } from '../../../../com/microsoft/aad/msal4j/AbstractApplicationBase.d.ts'
 import type { HttpRequest } from '../../../../com/microsoft/aad/msal4j/HttpRequest.d.ts'
 import type { IHttpClient } from '../../../../com/microsoft/aad/msal4j/IHttpClient.d.ts'
@@ -15,8 +16,8 @@ export class HttpHelper extends Object implements IHttpHelper {
     // private httpClient: IHttpClient;
     // private retryDisabled: boolean;
     // private retryPolicy: IRetryPolicy;
-    // private addRequestInfoToTelemetry(arg0: HttpRequest, arg1: { [key: string]: any }): void;
-    // private addResponseInfoToTelemetry(arg0: IHttpResponse, arg1: { [key: string]: any }): void;
+    // private addRequestInfoToTelemetry(arg0: HttpRequest, arg1: JavaMap<any, any>): void;
+    // private addResponseInfoToTelemetry(arg0: IHttpResponse, arg1: JavaMap<any, any>): void;
     // private checkForThrottling(arg0: RequestContext): void;
     executeHttpRequest(arg0: HttpRequest): IHttpResponse;
     executeHttpRequest(arg0: HttpRequest, arg1: RequestContext, arg2: ServiceBundle): IHttpResponse;

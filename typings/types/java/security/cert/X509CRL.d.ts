@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { BigInteger } from '../../../java/math/BigInteger.d.ts'
 import type { DEREncodable } from '../../../java/security/DEREncodable.d.ts'
 import type { Principal } from '../../../java/security/Principal.d.ts'
@@ -30,6 +31,6 @@ export abstract class X509CRL extends CRL implements DEREncodable, X509Extension
     hasUnsupportedCriticalExtension(): boolean;
     hashCode(): number;
     verify(arg0: PublicKey): void;
-    verify(arg0: PublicKey, arg1: { [key: string]: any }): void;
+    verify(arg0: PublicKey, arg1: JavaMap<any, any>): void;
     verify(arg0: PublicKey, arg1: string): void;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { RenderSection } from '../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/RenderSection.d.ts'
 import type { CoordinateSectionVisitor } from '../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/lists/CoordinateSectionVisitor.d.ts'
@@ -9,7 +10,7 @@ export class RemovableMultiForest extends Object implements RemovableForest<Remo
     constructor(arg0: number)
     // private lastTree: RemovableTree;
     // private treeSortList: RemovableTree[];
-    // private trees: { [key: string]: any };
+    // private trees: JavaMap<any, any>;
     // private treesAreReady: boolean;
     add(arg0: number, arg1: number, arg2: number): void;
     add(arg0: number, arg1: number, arg2: number, arg3: (param0: RemovableTree, param1: number, param2: number, param3: number) => number): boolean;

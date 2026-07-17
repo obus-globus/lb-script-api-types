@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { CollationData } from '../../../../../com/ibm/icu/impl/coll/CollationData.d.ts'
 import type { CollationSettings } from '../../../../../com/ibm/icu/impl/coll/CollationSettings.d.ts'
 import type { SharedObject$Reference } from '../../../../../com/ibm/icu/impl/coll/SharedObject$Reference.d.ts'
@@ -8,7 +9,7 @@ export class CollationTailoring extends Object {
     constructor(arg0: SharedObject$Reference<CollationSettings>)
     actualLocale: ULocale;
     data: CollationData;
-    maxExpansions: { [key: number]: number };
+    maxExpansions: JavaMap<number, number>;
     // private ownedData: CollationData;
     readonly rules: string;
     // private rulesResource: UResourceBundle;

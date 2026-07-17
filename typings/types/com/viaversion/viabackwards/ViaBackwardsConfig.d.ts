@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { DialogStyleConfig } from '../../../com/viaversion/viabackwards/api/DialogStyleConfig.d.ts'
 import type { ViaBackwardsConfig as ViaBackwardsConfig_2 } from '../../../com/viaversion/viabackwards/api/ViaBackwardsConfig.d.ts'
 import type { Config } from '../../../com/viaversion/viaversion/util/Config.d.ts'
@@ -39,7 +40,7 @@ export class ViaBackwardsConfig extends Config implements ViaBackwardsConfig_2 {
     getString(arg0: ConfigSection, arg1: string, arg2: string): string;
     getString(arg0: string, arg1: string): string;
     getUnsupportedOptions(): string[];
-    handleConfig(arg0: { [key: string]: Object }): void;
+    handleConfig(arg0: JavaMap<string, Object>): void;
     handlePingsAsInvAcknowledgements(): boolean;
     isFix1_13FacePlayer(): boolean;
     // private loadDialogStyleConfig(arg0: ConfigSection): DialogStyleConfig;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Tag } from '../../../../../com/viaversion/nbt/tag/Tag.d.ts'
 import type { BackwardsProtocol } from '../../../../../com/viaversion/viabackwards/api/BackwardsProtocol.d.ts'
 import type { MappedLegacyBlockItem } from '../../../../../com/viaversion/viabackwards/api/data/MappedLegacyBlockItem.d.ts'
@@ -18,10 +19,10 @@ export abstract class LegacyBlockItemRewriter<C extends ClientboundPacketType, S
     constructor(arg0: T, arg1: string)
     constructor(arg0: T, arg1: string, arg2: Type<Item>, arg3: Type<Item[]>)
     constructor(arg0: T, arg1: string, arg2: Type<Item>, arg3: Type<Item[]>, arg4: Type<Item>, arg5: Type<Item[]>)
-    // private blockReplacements: { [key: string]: any };
-    // private itemReplacements: { [key: string]: any };
-    // private addMapping(arg0: string, arg1: JsonObject, arg2: MappedLegacyBlockItem$Type, arg3: { [key: string]: any }): void;
-    // private addMappings(arg0: MappedLegacyBlockItem$Type, arg1: JsonObject, arg2: { [key: string]: any }): void;
+    // private blockReplacements: JavaMap<any, any>;
+    // private itemReplacements: JavaMap<any, any>;
+    // private addMapping(arg0: string, arg1: JsonObject, arg2: MappedLegacyBlockItem$Type, arg3: JavaMap<any, any>): void;
+    // private addMappings(arg0: MappedLegacyBlockItem$Type, arg1: JsonObject, arg2: JavaMap<any, any>): void;
     compress(arg0: number, arg1: number): number;
     getFallingBlockHandler(): (param0: PacketWrapper) => void;
     // private getMappedBlock(arg0: number): MappedLegacyBlockItem;

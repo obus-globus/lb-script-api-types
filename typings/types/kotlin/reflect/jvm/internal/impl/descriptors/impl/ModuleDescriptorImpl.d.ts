@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Lazy } from '../../../../../../../kotlin/Lazy.d.ts'
 import type { KotlinBuiltIns } from '../../../../../../../kotlin/reflect/jvm/internal/impl/builtins/KotlinBuiltIns.d.ts'
@@ -18,9 +19,9 @@ import type { StorageManager } from '../../../../../../../kotlin/reflect/jvm/int
 export class ModuleDescriptorImpl extends DeclarationDescriptorImpl implements ModuleDescriptor {
     static toString(paramarg0: DeclarationDescriptor): string;
     constructor(arg0: Name, arg1: StorageManager, arg2: KotlinBuiltIns, arg3: Object[])
-    constructor(arg0: Name, arg1: StorageManager, arg2: KotlinBuiltIns, arg3: Object[], arg4: Map<ModuleCapability<Object>, Object | null>, arg5: Name)
+    constructor(arg0: Name, arg1: StorageManager, arg2: KotlinBuiltIns, arg3: Object[], arg4: JavaMap<ModuleCapability<Object>, Object | null>, arg5: Name)
     readonly builtIns: KotlinBuiltIns;
-    // private capabilities: Map<ModuleCapability<Object>, Object>;
+    // private capabilities: JavaMap<ModuleCapability<Object>, Object>;
     readonly dependencies: ModuleDependencies;
     // private isValid: boolean;
     // private packageFragmentProviderForModuleContent: PackageFragmentProvider;

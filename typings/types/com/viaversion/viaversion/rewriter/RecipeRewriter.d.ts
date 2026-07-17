@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { UserConnection } from '../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { Item } from '../../../../com/viaversion/viaversion/api/minecraft/item/Item.d.ts'
 import type { Protocol } from '../../../../com/viaversion/viaversion/api/protocol/Protocol.d.ts'
@@ -9,7 +10,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class RecipeRewriter<C extends ClientboundPacketType> extends Object {
     constructor(arg0: Protocol<C, any, any, any>)
     // private protocol: Protocol<C, any, any, any>;
-    // private recipeHandlers: { [key: string]: (param0: PacketWrapper) => void };
+    // private recipeHandlers: JavaMap<string, (param0: PacketWrapper) => void>;
     handleCraftingShaped(arg0: PacketWrapper): void;
     handleCraftingShapeless(arg0: PacketWrapper): void;
     handleIngredient(arg0: PacketWrapper): void;

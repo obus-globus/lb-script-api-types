@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { BeanAccess } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/introspector/BeanAccess.d.ts'
 import type { Property } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/introspector/Property.d.ts'
 import type { PlatformFeatureDetector } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/util/PlatformFeatureDetector.d.ts'
@@ -9,13 +10,13 @@ export class PropertyUtils extends Object {
     readonly allowReadOnlyProperties: boolean;
     readonly beanAccess: BeanAccess;
     // private platformFeatureDetector: PlatformFeatureDetector;
-    // private propertiesCache: Map<Class<Object>, { [key: string]: Property }>;
-    // private readableProperties: Map<Class<Object>, Property[]>;
+    // private propertiesCache: JavaMap<Class<Object>, JavaMap<string, Property>>;
+    // private readableProperties: JavaMap<Class<Object>, Property[]>;
     readonly skipMissingProperties: boolean;
     createPropertySet(arg0: Class<Object>, arg1: BeanAccess): Property[];
     getProperties(arg0: Class<Object>): Property[];
     getProperties(arg0: Class<Object>, arg1: BeanAccess): Property[];
-    getPropertiesMap(arg0: Class<Object>, arg1: BeanAccess): { [key: string]: Property };
+    getPropertiesMap(arg0: Class<Object>, arg1: BeanAccess): JavaMap<string, Property>;
     getProperty(arg0: Class<Object>, arg1: string): Property;
     getProperty(arg0: Class<Object>, arg1: string, arg2: BeanAccess): Property;
     isAllowReadOnlyProperties(): boolean;

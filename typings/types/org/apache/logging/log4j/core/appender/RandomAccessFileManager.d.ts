@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { RandomAccessFile } from '../../../../../../java/io/RandomAccessFile.d.ts'
 import type { Serializable } from '../../../../../../java/io/Serializable.d.ts'
@@ -19,7 +20,7 @@ export class RandomAccessFileManager extends OutputStreamManager {
     closeOutputStream(): boolean;
     flush(): void;
     getBufferSize(): number;
-    getContentFormat(): { [key: string]: string };
+    getContentFormat(): JavaMap<string, string>;
     getFileName(): string;
     isEndOfBatch(): boolean;
     setEndOfBatch(endOfBatch: boolean): void;

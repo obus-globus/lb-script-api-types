@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { AbstractInsnNode } from '../../../../../org/objectweb/asm/tree/AbstractInsnNode.d.ts'
 import type { ClassNode } from '../../../../../org/objectweb/asm/tree/ClassNode.d.ts'
@@ -32,7 +33,7 @@ export class TargetClassContext extends ClassContext implements ITargetClassCont
     // private signature: ClassSignature;
     // private sourceMap: SourceMap;
     // private suppressedExceptions: InvalidMixinException[];
-    // private targetMethods: { [key: string]: AbstractInsnNode[] };
+    // private targetMethods: JavaMap<string, AbstractInsnNode[]>;
     addMixinField(arg0: FieldNode): void;
     addMixinMethod(arg0: MethodNode): void;
     addSuppressed(arg0: InvalidMixinException): void;

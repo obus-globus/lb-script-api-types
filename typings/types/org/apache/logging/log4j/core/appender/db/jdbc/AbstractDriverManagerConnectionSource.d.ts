@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Connection } from '../../../../../../../../java/sql/Connection.d.ts'
 import type { TimeUnit } from '../../../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Logger } from '../../../../../../../../org/apache/logging/log4j/Logger.d.ts'
@@ -23,7 +24,7 @@ export class AbstractDriverManagerConnectionSource extends AbstractConnectionSou
     getUserName(): string[];
     loadDriver(): void;
     loadDriver(className: string): void;
-    toProperties(properties: Property[]): { [key: string]: any };
+    toProperties(properties: Property[]): JavaMap<any, any>;
     toString(): string;
     toString(value: string[]): string;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { AmbiguityConsumer } from '../../../../com/mojang/brigadier/AmbiguityConsumer.d.ts'
 import type { Command } from '../../../../com/mojang/brigadier/Command.d.ts'
 import type { RedirectModifier } from '../../../../com/mojang/brigadier/RedirectModifier.d.ts'
@@ -15,11 +16,11 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 export abstract class CommandNode<S extends unknown> extends Object implements Comparable<CommandNode<S>> {
     constructor(arg0: (param0: CommandContext<S>) => number, arg1: (param0: S) => boolean, arg2: CommandNode<S>, arg3: (param0: CommandContext<S>) => S[], arg4: boolean)
-    // private arguments: { [key: string]: ArgumentCommandNode<S, Object> };
-    readonly children: { [key: string]: CommandNode<S> };
+    // private arguments: JavaMap<string, ArgumentCommandNode<S, Object>>;
+    readonly children: JavaMap<string, CommandNode<S>>;
     readonly command: (param0: CommandContext<S>) => number;
     // private forks: boolean;
-    // private literals: { [key: string]: LiteralCommandNode<S> };
+    // private literals: JavaMap<string, LiteralCommandNode<S>>;
     // private modifier: (param0: CommandContext<S>) => S[];
     readonly redirect: CommandNode<S>;
     readonly requirement: (param0: S) => boolean;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { BlockPos$MutableBlockPos } from '../../../../../net/minecraft/core/BlockPos$MutableBlockPos.d.ts'
 import type { Direction } from '../../../../../net/minecraft/core/Direction.d.ts'
@@ -19,7 +20,7 @@ export class FlyNodeEvaluator extends WalkNodeEvaluator {
     static getPathTypeStatic(paramcontext: PathfindingContext, parampos: BlockPos$MutableBlockPos): PathType;
     static isBurningBlock(paramblockState: BlockState): boolean;
     constructor()
-    // private pathTypeByPosCache: { [key: string]: any };
+    // private pathTypeByPosCache: JavaMap<any, any>;
     canStartAt(pos: BlockPos): boolean;
     done(): void;
     findAcceptedNode(x: number, y: number, z: number): Node;

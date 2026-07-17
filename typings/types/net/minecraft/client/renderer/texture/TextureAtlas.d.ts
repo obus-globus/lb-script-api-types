@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { GpuBuffer } from '../../../../../com/mojang/blaze3d/buffers/GpuBuffer.d.ts'
 import type { GpuTextureView } from '../../../../../com/mojang/blaze3d/textures/GpuTextureView.d.ts'
 import type { Path } from '../../../../../java/nio/file/Path.d.ts'
@@ -34,7 +35,7 @@ export class TextureAtlas extends AbstractTexture implements ExtendedTextureAtla
     // private spriteFinder: SpriteFinder;
     // private spriteUbos: GpuBuffer;
     // private sprites: TextureAtlasSprite[];
-    readonly texturesByName: Map<Identifier, TextureAtlasSprite>;
+    readonly texturesByName: JavaMap<Identifier, TextureAtlasSprite>;
     // private width: number;
     callGetHeight(): number;
     callGetWidth(): number;

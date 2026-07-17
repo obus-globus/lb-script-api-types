@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { SSLContext } from '../../../javax/net/ssl/SSLContext.d.ts'
 import type { SSLSocket } from '../../../javax/net/ssl/SSLSocket.d.ts'
 import type { SSLSocketFactory } from '../../../javax/net/ssl/SSLSocketFactory.d.ts'
@@ -11,7 +12,7 @@ export class BouncyCastlePlatform extends Platform {
     static WARN: number;
     static get(): Platform;
     private constructor()
-    // private provider: { [key: string]: any };
+    // private provider: JavaMap<any, any>;
     configureTlsExtensions(sslSocket: SSLSocket, hostname: string | null, protocols: Protocol[]): void;
     getSelectedProtocol(sslSocket: SSLSocket): string | null;
     newSSLContext(): SSLContext;

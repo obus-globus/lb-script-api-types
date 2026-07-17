@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Mob } from '../../../../../net/minecraft/world/entity/Mob.d.ts'
 import type { PathNavigationRegion } from '../../../../../net/minecraft/world/level/PathNavigationRegion.d.ts'
@@ -11,7 +12,7 @@ export class SwimNodeEvaluator extends NodeEvaluator {
     static isBurningBlock(paramblockState: BlockState): boolean;
     constructor(allowBreaching: boolean)
     // private allowBreaching: boolean;
-    // private pathTypesByPosCache: { [key: string]: any };
+    // private pathTypesByPosCache: JavaMap<any, any>;
     done(): void;
     findAcceptedNode(x: number, y: number, z: number): Node;
     getCachedBlockType(x: number, y: number, z: number): PathType;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { Optional } from '../../../../../../../java/util/Optional.d.ts'
 import type { Predicate } from '../../../../../../../java/util/function/Predicate.d.ts'
@@ -11,7 +12,7 @@ export class EnumProperty<T extends Enum<T> & StringRepresentable> extends Prope
     static create<T extends Enum<T> & StringRepresentable>(paramname: string, paramclazz: Class<T>, paramvalues: T[]): EnumProperty<T>;
     static create<T extends Enum<T> & StringRepresentable>(paramname: string, paramclazz: Class<T>, paramfilter: (param0: T) => boolean): EnumProperty<T>;
     private constructor(name: string, clazz: Class<T>, values: T[])
-    // private names: { [key: string]: T };
+    // private names: JavaMap<string, T>;
     // private ordinalToIndex: number[];
     // private values: T[];
     equals(o: Object | null): boolean;

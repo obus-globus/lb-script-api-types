@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { FlowContext } from '../../../../../../com/llamalad7/mixinextras/expression/impl/flow/FlowContext.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Type } from '../../../../../../org/objectweb/asm/Type.d.ts'
@@ -9,11 +10,11 @@ import type { VarInsnNode } from '../../../../../../org/objectweb/asm/tree/VarIn
 import type { BasicValue } from '../../../../../../org/objectweb/asm/tree/analysis/BasicValue.d.ts'
 import type { Interpreter } from '../../../../../../org/objectweb/asm/tree/analysis/Interpreter.d.ts'
 export class LocalsCalculator extends Interpreter<BasicValue> {
-    static getLocalTypes(paramarg0: ClassNode, paramarg1: MethodNode, paramarg2: FlowContext): Map<VarInsnNode, Type>;
+    static getLocalTypes(paramarg0: ClassNode, paramarg1: MethodNode, paramarg2: FlowContext): JavaMap<VarInsnNode, Type>;
     private constructor(arg0: MethodNode, arg1: FlowContext)
     // private context: FlowContext;
     // private methodNode: MethodNode;
-    // private results: Map<VarInsnNode, Object>;
+    // private results: JavaMap<VarInsnNode, Object>;
     binaryOperation(arg0: AbstractInsnNode, arg1: BasicValue, arg2: BasicValue): BasicValue;
     copyOperation(arg0: AbstractInsnNode, arg1: BasicValue): BasicValue;
     // private getLocalVariableAt(arg0: VarInsnNode): LocalVariableNode;

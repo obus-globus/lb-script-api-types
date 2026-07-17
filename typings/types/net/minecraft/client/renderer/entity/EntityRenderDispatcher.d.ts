@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { PoseStack } from '../../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
 import type { BoatRenderer1_8 } from '../../../../../com/viaversion/viafabricplus/features/entity/legacy_boat_model/BoatRenderer1_8.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
@@ -50,19 +51,19 @@ export class EntityRenderDispatcher extends Object implements FabricResourceRelo
     // private font: Font;
     readonly itemInHandRenderer: ItemInHandRenderer;
     // private itemModelResolver: ItemModelResolver;
-    // private mannequinRenderers: Map<PlayerModelType, AvatarRenderer<ClientMannequin>>;
+    // private mannequinRenderers: JavaMap<PlayerModelType, AvatarRenderer<ClientMannequin>>;
     // private mapRenderer: MapRenderer;
     options: Options;
-    // private playerRenderers: Map<PlayerModelType, AvatarRenderer<AbstractClientPlayer>>;
+    // private playerRenderers: JavaMap<PlayerModelType, AvatarRenderer<AbstractClientPlayer>>;
     // private playerSkinRenderCache: PlayerSkinRenderCache;
-    // private renderers: Map<EntityType<any>, EntityRenderer<any, any>>;
+    // private renderers: JavaMap<EntityType<any>, EntityRenderer<any, any>>;
     textureManager: TextureManager;
     // private viaFabricPlus$boatRenderer: BoatRenderer1_8;
     distanceToSqr(entity: Entity): number;
     extractEntity<E extends Entity>(entity: E, partialTicks: number): EntityRenderState;
     fabric$getId(): Identifier;
     // private fillRendererDetails<S extends EntityRenderState>(renderer: EntityRenderer<any, S>, report: CrashReport): CrashReportCategory;
-    // private getAvatarRenderer<T extends Avatar & ClientAvatarEntity>(renderers: Map<PlayerModelType, AvatarRenderer<T>>, entity: T): AvatarRenderer<T>;
+    // private getAvatarRenderer<T extends Avatar & ClientAvatarEntity>(renderers: JavaMap<PlayerModelType, AvatarRenderer<T>>, entity: T): AvatarRenderer<T>;
     getItemInHandRenderer(): ItemInHandRenderer;
     getName(): string;
     getPackedLightCoords<E extends Entity>(entity: E, partialTickTime: number): number;

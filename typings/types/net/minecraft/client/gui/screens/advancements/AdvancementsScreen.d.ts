@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { AdvancementHolder } from '../../../../../../net/minecraft/advancements/AdvancementHolder.d.ts'
 import type { AdvancementNode } from '../../../../../../net/minecraft/advancements/AdvancementNode.d.ts'
 import type { AdvancementProgress } from '../../../../../../net/minecraft/advancements/AdvancementProgress.d.ts'
@@ -41,7 +42,7 @@ export class AdvancementsScreen extends Screen implements ClientAdvancements$Lis
     // private layout: HeaderAndFooterLayout;
     // private leftPos: number;
     // private selectedTab: AdvancementTab;
-    // private tabs: Map<AdvancementHolder, AdvancementTab>;
+    // private tabs: JavaMap<AdvancementHolder, AdvancementTab>;
     // private topPos: number;
     // private extractInside(graphics: GuiGraphicsExtractor): void;
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;

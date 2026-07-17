@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { KCallable } from '../../../../kotlin/reflect/KCallable.d.ts'
 import type { KParameter } from '../../../../kotlin/reflect/KParameter.d.ts'
@@ -16,7 +17,7 @@ export interface ReflectKCallable<R extends unknown> extends Object, KCallable<R
     readonly overriddenStorage: KCallableOverriddenStorage;
     readonly rawBoundReceiver: Object | null;
     call(...args: (Object | null)[]): R;
-    callBy(args: Map<KParameter, Object | null>): R;
+    callBy(args: JavaMap<KParameter, Object | null>): R;
     getAbsentArguments(): (Object | null)[];
     shallowCopy(container: KDeclarationContainerImpl, overriddenStorage: KCallableOverriddenStorage): ReflectKCallable<R>;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { TruffleObject } from '../../../../com/oracle/truffle/api/interop/TruffleObject.d.ts'
 import type { TriState } from '../../../../com/oracle/truffle/api/utilities/TriState.d.ts'
 import type { PolyglotContextImpl } from '../../../../com/oracle/truffle/polyglot/PolyglotContextImpl.d.ts'
@@ -8,8 +9,8 @@ export class PolyglotBindings extends Object implements TruffleObject {
     constructor(languageContext: PolyglotLanguageContext)
     // private context: PolyglotContextImpl;
     // private languageContext: PolyglotLanguageContext;
-    // private valueBindings: { [key: string]: Object };
-    getBindings(): { [key: string]: Object };
+    // private valueBindings: JavaMap<string, Object>;
+    getBindings(): JavaMap<string, Object>;
     getMembers(includeInternal: boolean): Object;
     hasMembers(): boolean;
     identityHashCode(): number;

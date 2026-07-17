@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Mod } from '../../../../../com/terraformersmc/modmenu/util/mod/Mod.d.ts'
 import type { Thread } from '../../../../../java/lang/Thread.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -21,7 +22,7 @@ export class HideAppearance extends Object implements EventListener {
     // private isHidingNow: boolean;
     /*not mapped: */ isHidingNow(): boolean;
     // private keyHandler: EventHook<KeyboardKeyEvent>;
-    // private modContainersToHide: { [key: string]: Mod | null };
+    // private modContainersToHide: JavaMap<string, Mod | null>;
     readonly running: boolean;
     // private shiftChronometer: Chronometer;
     children(): EventListener[];

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Appendable } from '../../java/lang/Appendable.d.ts'
 import type { StringBuilder } from '../../java/lang/StringBuilder.d.ts'
 import type { BigDecimal } from '../../java/math/BigDecimal.d.ts'
@@ -30,14 +31,14 @@ export class StringsKt___StringsKt extends StringsKt___StringsJvmKt {
     static appendln(self: StringBuilder): StringBuilder;
     static asIterable(self: CharSequence): string[];
     static asSequence(self: CharSequence): Sequence<string>;
-    static associate<K extends unknown, V extends unknown>(self: CharSequence, transform: (param0: string) => Pair<K, V>): Map<K, V>;
-    static associateBy<K extends unknown, V extends unknown>(self: CharSequence, keySelector: (param0: string) => K, valueTransform: (param0: string) => V): Map<K, V>;
-    static associateBy<K extends unknown>(self: CharSequence, keySelector: (param0: string) => K): Map<K, string>;
-    static associateByTo<M extends Map<K, string>, K extends unknown>(self: CharSequence, destination: M, keySelector: (param0: string) => K): M;
-    static associateByTo<M extends Map<K, V>, K extends unknown, V extends unknown>(self: CharSequence, destination: M, keySelector: (param0: string) => K, valueTransform: (param0: string) => V): M;
-    static associateTo<M extends Map<K, V>, K extends unknown, V extends unknown>(self: CharSequence, destination: M, transform: (param0: string) => Pair<K, V>): M;
-    static associateWith<V extends unknown>(self: CharSequence, valueSelector: (param0: string) => V): { [key: string]: V };
-    static associateWithTo<M extends { [key: string]: V }, V extends unknown>(self: CharSequence, destination: M, valueSelector: (param0: string) => V): M;
+    static associate<K extends unknown, V extends unknown>(self: CharSequence, transform: (param0: string) => Pair<K, V>): JavaMap<K, V>;
+    static associateBy<K extends unknown, V extends unknown>(self: CharSequence, keySelector: (param0: string) => K, valueTransform: (param0: string) => V): JavaMap<K, V>;
+    static associateBy<K extends unknown>(self: CharSequence, keySelector: (param0: string) => K): JavaMap<K, string>;
+    static associateByTo<M extends JavaMap<K, string>, K extends unknown>(self: CharSequence, destination: M, keySelector: (param0: string) => K): M;
+    static associateByTo<M extends JavaMap<K, V>, K extends unknown, V extends unknown>(self: CharSequence, destination: M, keySelector: (param0: string) => K, valueTransform: (param0: string) => V): M;
+    static associateTo<M extends JavaMap<K, V>, K extends unknown, V extends unknown>(self: CharSequence, destination: M, transform: (param0: string) => Pair<K, V>): M;
+    static associateWith<V extends unknown>(self: CharSequence, valueSelector: (param0: string) => V): JavaMap<string, V>;
+    static associateWithTo<M extends JavaMap<string, V>, V extends unknown>(self: CharSequence, destination: M, valueSelector: (param0: string) => V): M;
     static capitalize(self: string): string;
     static capitalize(self: string, locale: Locale): string;
     static chunked<R extends unknown>(self: CharSequence, size: number, transform: (param0: CharSequence) => R): R[];
@@ -102,10 +103,10 @@ export class StringsKt___StringsKt extends StringsKt___StringsJvmKt {
     static getIndices(paramarg0: CharSequence): { start: number; endInclusive: number; step: number };
     static getLastIndex(paramarg0: CharSequence): number;
     static getOrNull(self: CharSequence, index: number): string | null;
-    static groupBy<K extends unknown, V extends unknown>(self: CharSequence, keySelector: (param0: string) => K, valueTransform: (param0: string) => V): Map<K, V[]>;
-    static groupBy<K extends unknown>(self: CharSequence, keySelector: (param0: string) => K): Map<K, string[]>;
-    static groupByTo<M extends Map<K, string[]>, K extends unknown>(self: CharSequence, destination: M, keySelector: (param0: string) => K): M;
-    static groupByTo<M extends Map<K, V[]>, K extends unknown, V extends unknown>(self: CharSequence, destination: M, keySelector: (param0: string) => K, valueTransform: (param0: string) => V): M;
+    static groupBy<K extends unknown, V extends unknown>(self: CharSequence, keySelector: (param0: string) => K, valueTransform: (param0: string) => V): JavaMap<K, V[]>;
+    static groupBy<K extends unknown>(self: CharSequence, keySelector: (param0: string) => K): JavaMap<K, string[]>;
+    static groupByTo<M extends JavaMap<K, string[]>, K extends unknown>(self: CharSequence, destination: M, keySelector: (param0: string) => K): M;
+    static groupByTo<M extends JavaMap<K, V[]>, K extends unknown, V extends unknown>(self: CharSequence, destination: M, keySelector: (param0: string) => K, valueTransform: (param0: string) => V): M;
     static groupingBy<K extends unknown>(self: CharSequence, keySelector: (param0: string) => K): Grouping<string, K>;
     static hasSurrogatePairAt(self: CharSequence, index: number): boolean;
     static indexOf(self: CharSequence, char: string, startIndex: number, ignoreCase: boolean): number;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { DebugProtocolServer } from '../../../../../../com/oracle/truffle/tools/dap/types/DebugProtocolServer.d.ts'
 import type { DebugProtocolServer$ExceptionWithMessage } from '../../../../../../com/oracle/truffle/tools/dap/types/DebugProtocolServer$ExceptionWithMessage.d.ts'
 import type { ErrorResponse } from '../../../../../../com/oracle/truffle/tools/dap/types/ErrorResponse.d.ts'
@@ -19,7 +20,7 @@ export class DebugProtocolServer$Session extends Object implements Runnable {
     // private closed: boolean;
     // private in: InputStream;
     // private out: OutputStream;
-    // private pendingSentRequests: { [key: number]: CompletableFuture<Response> };
+    // private pendingSentRequests: JavaMap<number, CompletableFuture<Response>>;
     // private sequenceNum: AtomicInteger;
     // private server: DebugProtocolServer;
     // private asExceptionWithMessage(t: Throwable): DebugProtocolServer$ExceptionWithMessage;

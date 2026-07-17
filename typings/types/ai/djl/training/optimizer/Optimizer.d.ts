@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Device } from '../../../../ai/djl/Device.d.ts'
 import type { NDArray } from '../../../../ai/djl/ndarray/NDArray.d.ts'
 import type { Adadelta$Builder } from '../../../../ai/djl/training/optimizer/Adadelta$Builder.d.ts'
@@ -23,10 +24,10 @@ export abstract class Optimizer extends Object {
     // private clipGrad: number;
     // private numUpdate: number;
     // private rescaleGrad: number;
-    // private updateCounts: { [key: string]: number };
+    // private updateCounts: JavaMap<string, number>;
     // private weightDecays: number;
     getWeightDecay(): number;
     update(arg0: string, arg1: NDArray, arg2: NDArray): void;
     updateCount(arg0: string): number;
-    withDefaultState(arg0: { [key: string]: Map<Device, NDArray> }, arg1: string, arg2: Device, arg3: (param0: string) => NDArray): NDArray;
+    withDefaultState(arg0: JavaMap<string, JavaMap<Device, NDArray>>, arg1: string, arg2: Device, arg3: (param0: string) => NDArray): NDArray;
 }

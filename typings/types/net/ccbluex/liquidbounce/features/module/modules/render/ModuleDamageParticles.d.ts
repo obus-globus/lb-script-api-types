@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { DecimalFormat } from '../../../../../../../java/text/DecimalFormat.d.ts'
 import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { EntityHealthUpdateEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/EntityHealthUpdateEvent.d.ts'
@@ -25,7 +26,7 @@ export class ModuleDamageParticles extends ClientModule {
     // private /*not mapped: */ getDisplacement(): Vec3;
     // private displacementTransition: Easing;
     // private /*not mapped: */ getDisplacementTransition(): Easing;
-    // private entityHealthMap: { [key: string]: any };
+    // private entityHealthMap: JavaMap<any, any>;
     // private entityHealthUpdateHandler: EventHook<EntityHealthUpdateEvent>;
     // private particles: ModuleDamageParticles$Particle[];
     // private renderHandler: EventHook<OverlayRenderEvent>;

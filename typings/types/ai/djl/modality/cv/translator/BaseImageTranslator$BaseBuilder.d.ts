@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Image$Flag } from '../../../../../ai/djl/modality/cv/Image$Flag.d.ts'
 import type { Batchifier } from '../../../../../ai/djl/translate/Batchifier.d.ts'
 import type { Pipeline } from '../../../../../ai/djl/translate/Pipeline.d.ts'
@@ -11,8 +12,8 @@ export abstract class BaseImageTranslator$BaseBuilder<T extends BaseImageTransla
     // private pipeline: Pipeline;
     // private width: number;
     addTransform(arg0: Transform): T;
-    configPostProcess(arg0: { [key: string]: Object | null }): void;
-    configPreProcess(arg0: { [key: string]: Object | null }): void;
+    configPostProcess(arg0: JavaMap<string, Object | null>): void;
+    configPreProcess(arg0: JavaMap<string, Object | null>): void;
     optBatchifier(arg0: Batchifier): T;
     optFlag(arg0: Image$Flag): T;
     self(): T;

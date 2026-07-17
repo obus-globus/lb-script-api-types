@@ -1,8 +1,9 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ReentrantReadWriteLock } from '../../../../../java/util/concurrent/locks/ReentrantReadWriteLock.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BlockTintCache$CacheData extends Object {
     private constructor()
-    // private cache: { [key: string]: any };
+    // private cache: JavaMap<any, any>;
     readonly invalidated: boolean;
     // private lock: ReentrantReadWriteLock;
     // private allocateLayer(): number[];

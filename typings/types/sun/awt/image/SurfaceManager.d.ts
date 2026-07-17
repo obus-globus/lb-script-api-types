@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { GraphicsConfiguration } from '../../../java/awt/GraphicsConfiguration.d.ts'
 import type { Image } from '../../../java/awt/Image.d.ts'
 import type { ImageCapabilities } from '../../../java/awt/ImageCapabilities.d.ts'
@@ -14,7 +15,7 @@ export abstract class SurfaceManager extends Object {
     static setImageAccessor(paramarg0: SurfaceManager$ImageAccessor): void;
     static setManager(paramarg0: Image, paramarg1: SurfaceManager): void;
     constructor()
-    // private weakCache: Map<SurfaceManager$ProxyCache, WeakReference<SurfaceDataProxy>>;
+    // private weakCache: JavaMap<SurfaceManager$ProxyCache, WeakReference<SurfaceDataProxy>>;
     acceleratedSurfaceLost(): void;
     flush(): void;
     flush(arg0: boolean): void;

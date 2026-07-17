@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { ObjectInputStream } from '../../java/io/ObjectInputStream.d.ts'
 import type { ObjectOutputStream } from '../../java/io/ObjectOutputStream.d.ts'
 import type { Serializable } from '../../java/io/Serializable.d.ts'
@@ -102,8 +103,8 @@ export abstract class Calendar extends Object implements Serializable, Cloneable
     getBaseStyle(arg0: number): number;
     getCalendarType(): string;
     getDisplayName(arg0: number, arg1: number, arg2: Locale): string;
-    getDisplayNames(arg0: number, arg1: number, arg2: Locale): { [key: string]: number };
-    // private getDisplayNamesImpl(arg0: number, arg1: number, arg2: Locale): { [key: string]: number };
+    getDisplayNames(arg0: number, arg1: number, arg2: Locale): JavaMap<string, number>;
+    // private getDisplayNamesImpl(arg0: number, arg1: number, arg2: Locale): JavaMap<string, number>;
     // private getFieldStrings(arg0: number, arg1: number, arg2: DateFormatSymbols): string[];
     getFirstDayOfWeek(): number;
     getGreatestMinimum(arg0: number): number;

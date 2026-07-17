@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
 import type { PropertyDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/PropertyDescriptor.d.ts'
@@ -18,12 +19,12 @@ import type { NotNullLazyValue } from '../../../../../../../../kotlin/reflect/jv
 export class DeserializedMemberScope$OptimizedImplementation extends Object implements DeserializedMemberScope$Implementation {
     constructor(null_: DeserializedMemberScope, arg1: ProtoBuf$Function[], arg2: ProtoBuf$Property[], arg3: ProtoBuf$TypeAlias[])
     // private functionNames$delegate: NotNullLazyValue<Object>;
-    // private functionProtosBytes: Map<Name, number[]>;
+    // private functionProtosBytes: JavaMap<Name, number[]>;
     // private functions: MemoizedFunctionToNotNull<Name, SimpleFunctionDescriptor[]>;
     // private properties: MemoizedFunctionToNotNull<Name, PropertyDescriptor[]>;
-    // private propertyProtosBytes: Map<Name, number[]>;
+    // private propertyProtosBytes: JavaMap<Name, number[]>;
     // private typeAliasByName: MemoizedFunctionToNullable<Name, TypeAliasDescriptor>;
-    // private typeAliasBytes: Map<Name, number[]>;
+    // private typeAliasBytes: JavaMap<Name, number[]>;
     // private variableNames$delegate: NotNullLazyValue<Object>;
     addFunctionsAndPropertiesTo(arg0: DeclarationDescriptor[], arg1: DescriptorKindFilter, arg2: (param0: Name) => boolean, arg3: LookupLocation): void;
     // private computeFunctions(arg0: Name): SimpleFunctionDescriptor[];
@@ -35,5 +36,5 @@ export class DeserializedMemberScope$OptimizedImplementation extends Object impl
     getTypeAliasByName(arg0: Name): TypeAliasDescriptor;
     getTypeAliasNames(): Name[];
     getVariableNames(): Name[];
-    // private packToByteArray(arg0: Map<Name, AbstractMessageLite[]>): Map<Name, number[]>;
+    // private packToByteArray(arg0: JavaMap<Name, AbstractMessageLite[]>): JavaMap<Name, number[]>;
 }

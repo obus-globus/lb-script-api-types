@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { CommandSyntaxException } from '../../../../com/mojang/brigadier/exceptions/CommandSyntaxException.d.ts'
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
@@ -9,8 +10,8 @@ export class NbtPathArgument$NbtPath extends Object {
     static CODEC: Codec<NbtPathArgument$NbtPath>;
     static isTooDeep(paramtag: Tag, paramdepth: number): boolean;
     static of(paramstring: string): NbtPathArgument$NbtPath;
-    constructor(original: string, nodes: NbtPathArgument$Node[], nodeToOriginalPosition: { [key: string]: any })
-    // private nodeToOriginalPosition: { [key: string]: any };
+    constructor(original: string, nodes: NbtPathArgument$Node[], nodeToOriginalPosition: JavaMap<any, any>)
+    // private nodeToOriginalPosition: JavaMap<any, any>;
     // private nodes: NbtPathArgument$Node[];
     // private original: string;
     asString(): string;

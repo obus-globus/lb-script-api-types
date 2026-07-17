@@ -1,9 +1,10 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { File } from '../../../../java/io/File.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class CommentStore extends Object {
     constructor(arg0: string, arg1: number)
-    // private headers: { [key: string]: string[] };
+    // private headers: JavaMap<string, string[]>;
     // private indents: number;
     // private mainHeader: string[];
     // private pathSeparator: string;

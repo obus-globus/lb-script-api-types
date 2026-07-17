@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Component } from '../../../../net/minecraft/network/chat/Component.d.ts'
@@ -20,12 +21,12 @@ import type { ObjectiveCriteria$RenderType } from '../../../../net/minecraft/wor
 export class Scoreboard extends Object {
     static HIDDEN_SCORE_PREFIX: string;
     constructor()
-    // private displayObjectives: Map<DisplaySlot, Objective>;
-    // private objectivesByCriteria: Map<ObjectiveCriteria, Objective[]>;
-    // private objectivesByName: { [key: string]: Objective };
-    // private playerScores: { [key: string]: PlayerScores };
-    // private teamsByName: { [key: string]: PlayerTeam };
-    // private teamsByPlayer: { [key: string]: PlayerTeam };
+    // private displayObjectives: JavaMap<DisplaySlot, Objective>;
+    // private objectivesByCriteria: JavaMap<ObjectiveCriteria, Objective[]>;
+    // private objectivesByName: JavaMap<string, Objective>;
+    // private playerScores: JavaMap<string, PlayerScores>;
+    // private teamsByName: JavaMap<string, PlayerTeam>;
+    // private teamsByPlayer: JavaMap<string, PlayerTeam>;
     addObjective(name: string, criteria: ObjectiveCriteria, displayName: Component, renderType: ObjectiveCriteria$RenderType, displayAutoUpdate: boolean, numberFormat: NumberFormat): Objective;
     addPlayerTeam(name: string): PlayerTeam;
     addPlayerToTeam(player: string, team: PlayerTeam): boolean;
@@ -45,7 +46,7 @@ export class Scoreboard extends Object {
     getTeamNames(): string[];
     getTrackedPlayers(): ScoreHolder[];
     listPlayerScores(objective: Objective): PlayerScoreEntry[];
-    listPlayerScores(player: ScoreHolder): { [key: string]: any };
+    listPlayerScores(player: ScoreHolder): JavaMap<any, any>;
     loadObjective(objective: Objective$Packed): void;
     loadPlayerScore(score: Scoreboard$PackedScore): void;
     loadPlayerTeam(packed: PlayerTeam$Packed): void;
@@ -59,7 +60,7 @@ export class Scoreboard extends Object {
     onTeamAdded(team: PlayerTeam): void;
     onTeamChanged(team: PlayerTeam): void;
     onTeamRemoved(team: PlayerTeam): void;
-    packDisplaySlots(): Map<DisplaySlot, string>;
+    packDisplaySlots(): JavaMap<DisplaySlot, string>;
     packObjectives(): Objective$Packed[];
     packPlayerScores(): Scoreboard$PackedScore[];
     packPlayerTeams(): PlayerTeam$Packed[];

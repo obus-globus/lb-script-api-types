@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { LinkOption } from '../../../../../../java/nio/file/LinkOption.d.ts'
@@ -35,16 +36,16 @@ export class TarArchiveOutputStream extends ArchiveOutputStream<TarArchiveEntry>
     // private recordsPerBlock: number;
     // private recordsWritten: number;
     // private zipEncoding: ZipEncoding;
-    // private addFileTimePaxHeader(arg0: { [key: string]: string }, arg1: string, arg2: FileTime): void;
-    // private addFileTimePaxHeaderForBigNumber(arg0: { [key: string]: string }, arg1: string, arg2: FileTime, arg3: number): void;
-    // private addInstantPaxHeader(arg0: { [key: string]: string }, arg1: string, arg2: number, arg3: number): void;
-    // private addPaxHeaderForBigNumber(arg0: { [key: string]: string }, arg1: string, arg2: number, arg3: number): void;
-    // private addPaxHeadersForBigNumbers(arg0: { [key: string]: string }, arg1: TarArchiveEntry): void;
+    // private addFileTimePaxHeader(arg0: JavaMap<string, string>, arg1: string, arg2: FileTime): void;
+    // private addFileTimePaxHeaderForBigNumber(arg0: JavaMap<string, string>, arg1: string, arg2: FileTime, arg3: number): void;
+    // private addInstantPaxHeader(arg0: JavaMap<string, string>, arg1: string, arg2: number, arg3: number): void;
+    // private addPaxHeaderForBigNumber(arg0: JavaMap<string, string>, arg1: string, arg2: number, arg3: number): void;
+    // private addPaxHeadersForBigNumbers(arg0: JavaMap<string, string>, arg1: TarArchiveEntry): void;
     close(): void;
     closeArchiveEntry(): void;
     createArchiveEntry(arg0: File, arg1: string): TarArchiveEntry;
     createArchiveEntry(arg0: Path, arg1: string, ...arg2: LinkOption[]): TarArchiveEntry;
-    // private encodeExtendedPaxHeadersContents(arg0: { [key: string]: string }): number[];
+    // private encodeExtendedPaxHeadersContents(arg0: JavaMap<string, string>): number[];
     // private failForBigNumber(arg0: string, arg1: number, arg2: number): void;
     // private failForBigNumber(arg0: string, arg1: number, arg2: number, arg3: string): void;
     // private failForBigNumberWithPosixMessage(arg0: string, arg1: number, arg2: number): void;
@@ -53,7 +54,7 @@ export class TarArchiveOutputStream extends ArchiveOutputStream<TarArchiveEntry>
     getBytesWritten(): number;
     getCount(): number;
     getRecordSize(): number;
-    // private handleLongName(arg0: TarArchiveEntry, arg1: string, arg2: { [key: string]: string }, arg3: string, arg4: number, arg5: string): boolean;
+    // private handleLongName(arg0: TarArchiveEntry, arg1: string, arg2: JavaMap<string, string>, arg3: string, arg4: number, arg5: string): boolean;
     // private padAsNeeded(): void;
     putArchiveEntry(arg0: TarArchiveEntry): void;
     setAddPaxHeadersForNonAsciiNames(arg0: boolean): void;
@@ -68,6 +69,6 @@ export class TarArchiveOutputStream extends ArchiveOutputStream<TarArchiveEntry>
     write(arg0: number[], arg1: number, arg2: number): void;
     write(arg0: number): void;
     // private writeEOFRecord(): void;
-    writePaxHeaders(arg0: TarArchiveEntry, arg1: string, arg2: { [key: string]: string }): void;
+    writePaxHeaders(arg0: TarArchiveEntry, arg1: string, arg2: JavaMap<string, string>): void;
     // private writeRecord(arg0: number[]): void;
 }

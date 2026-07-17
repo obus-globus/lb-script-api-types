@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Stopwatch } from '../../../../../com/google/common/base/Stopwatch.d.ts'
 import type { Ticker } from '../../../../../com/google/common/base/Ticker.d.ts'
 import type { OptionalLong } from '../../../../../java/util/OptionalLong.d.ts'
@@ -13,7 +14,7 @@ export class GameLoadTimesEvent extends Object {
     static INSTANCE: GameLoadTimesEvent;
     constructor(timeSource: Ticker)
     readonly bootstrapTime: OptionalLong;
-    // private measurements: Map<TelemetryProperty<GameLoadTimesEvent$Measurement>, Stopwatch>;
+    // private measurements: JavaMap<TelemetryProperty<GameLoadTimesEvent$Measurement>, Stopwatch>;
     // private timeSource: Ticker;
     beginStep(property: TelemetryProperty<GameLoadTimesEvent$Measurement>): void;
     beginStep(property: TelemetryProperty<GameLoadTimesEvent$Measurement>, measurement: Stopwatch): void;

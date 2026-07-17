@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { URI } from '../../../../../java/net/URI.d.ts'
 import type { FileChannel } from '../../../../../java/nio/channels/FileChannel.d.ts'
@@ -39,9 +40,9 @@ export class CopyOnWriteFSProvider extends FileSystemProvider {
     // private newChannel<C extends unknown>(path: Path, options: OpenOption[], attrs: FileAttribute<Object>[], channelFactory: (param0: Path, param1: OpenOption[], param2: FileAttribute<Object>[]) => C): C;
     newDirectoryStream(dir: Path, filter: (param0: Path) => boolean): Path[];
     newFileChannel(path: Path, options: OpenOption[], ...attrs: FileAttribute<Object>[]): FileChannel;
-    newFileSystem(uri: URI, env: { [key: string]: Object | null }): FileSystem;
-    newFileSystem(arg0: Path, arg1: { [key: string]: Object | null }): FileSystem;
+    newFileSystem(uri: URI, env: JavaMap<string, Object | null>): FileSystem;
+    newFileSystem(arg0: Path, arg1: JavaMap<string, Object | null>): FileSystem;
     readAttributes<A extends BasicFileAttributes>(path: Path, type: Class<A>, ...options: LinkOption[]): A;
-    readAttributes(path: Path, attributes: string, ...options: LinkOption[]): { [key: string]: Object };
+    readAttributes(path: Path, attributes: string, ...options: LinkOption[]): JavaMap<string, Object>;
     setAttribute(path: Path, attribute: string, value: Object, ...options: LinkOption[]): void;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ImmutableListMultimap$Builder } from '../../../../com/google/common/collect/ImmutableListMultimap$Builder.d.ts'
 import type { ImmutableMultimap } from '../../../../com/google/common/collect/ImmutableMultimap.d.ts'
 import type { ImmutableMultimap$Builder } from '../../../../com/google/common/collect/ImmutableMultimap$Builder.d.ts'
@@ -33,7 +34,7 @@ export class ImmutableListMultimap<K extends unknown, V extends unknown> extends
     static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V, paramk3: K, paramv3: V, paramk4: K, paramv4: V): ImmutableMultimap<K, V>;
     static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V, paramk3: K, paramv3: V, paramk4: K, paramv4: V, paramk5: K, paramv5: V): ImmutableMultimap<K, V>;
     static toImmutableListMultimap<T extends unknown, K extends unknown, V extends unknown>(paramkeyFunction: (param0: Object) => K, paramvalueFunction: (param0: Object) => V): Collector<T, Object, ImmutableListMultimap<K, V>>;
-    constructor(map: Map<K, V[]>, size: number)
+    constructor(map: JavaMap<K, V[]>, size: number)
     // private deserializationReplacement: ImmutableListMultimap<Object, Object>;
     // private inverse: ImmutableListMultimap<V, K>;
     get(key: K): V[];

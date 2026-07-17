@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { EnvType } from '../../../../../net/fabricmc/api/EnvType.d.ts'
 import type { Version } from '../../../../../net/fabricmc/loader/api/Version.d.ts'
@@ -15,21 +16,21 @@ import type { V1ModMetadata$MixinEntry } from '../../../../../net/fabricmc/loade
 export class V1ModMetadata extends AbstractModMetadata implements LoaderModMetadata {
     static TYPE_BUILTIN: string;
     static TYPE_FABRIC_MOD: string;
-    constructor(arg0: string, arg1: Version, arg2: string[], arg3: ModEnvironment, arg4: { [key: string]: EntrypointMetadata[] }, arg5: NestedJarEntry[], arg6: V1ModMetadata$MixinEntry[], arg7: string, arg8: ModDependency[], arg9: boolean, arg10: string, arg11: string, arg12: Person[], arg13: Person[], arg14: ContactInformation, arg15: string[], arg16: V1ModMetadata$IconEntry, arg17: { [key: string]: string }, arg18: { [key: string]: CustomValue })
+    constructor(arg0: string, arg1: Version, arg2: string[], arg3: ModEnvironment, arg4: JavaMap<string, EntrypointMetadata[]>, arg5: NestedJarEntry[], arg6: V1ModMetadata$MixinEntry[], arg7: string, arg8: ModDependency[], arg9: boolean, arg10: string, arg11: string, arg12: Person[], arg13: Person[], arg14: ContactInformation, arg15: string[], arg16: V1ModMetadata$IconEntry, arg17: JavaMap<string, string>, arg18: JavaMap<string, CustomValue>)
     readonly authors: Person[];
     readonly classTweaker: string;
     readonly contact: ContactInformation;
     readonly contributors: Person[];
-    readonly customValues: { [key: string]: CustomValue };
+    readonly customValues: JavaMap<string, CustomValue>;
     readonly dependencies: ModDependency[];
     readonly description: string;
-    // private entrypoints: { [key: string]: EntrypointMetadata[] };
+    // private entrypoints: JavaMap<string, EntrypointMetadata[]>;
     readonly environment: ModEnvironment;
     // private hasRequires: boolean;
     // private icon: V1ModMetadata$IconEntry;
     readonly id: string;
     readonly jars: NestedJarEntry[];
-    // private languageAdapters: { [key: string]: string };
+    // private languageAdapters: JavaMap<string, string>;
     readonly license: string[];
     // private mixins: V1ModMetadata$MixinEntry[];
     readonly name: string;
@@ -40,7 +41,7 @@ export class V1ModMetadata extends AbstractModMetadata implements LoaderModMetad
     getClassTweaker(): string;
     getContact(): ContactInformation;
     getContributors(): Person[];
-    getCustomValues(): { [key: string]: CustomValue };
+    getCustomValues(): JavaMap<string, CustomValue>;
     getDependencies(): ModDependency[];
     getDescription(): string;
     getEntrypointKeys(): string[];
@@ -49,7 +50,7 @@ export class V1ModMetadata extends AbstractModMetadata implements LoaderModMetad
     getIconPath(arg0: number): Optional<string>;
     getId(): string;
     getJars(): NestedJarEntry[];
-    getLanguageAdapterDefinitions(): { [key: string]: string };
+    getLanguageAdapterDefinitions(): JavaMap<string, string>;
     getLicense(): string[];
     getMixinConfigs(arg0: EnvType): string[];
     getName(): string;

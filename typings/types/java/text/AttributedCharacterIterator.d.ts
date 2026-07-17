@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { AttributedCharacterIterator$Attribute } from '../../java/text/AttributedCharacterIterator$Attribute.d.ts'
 import type { CharacterIterator } from '../../java/text/CharacterIterator.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
@@ -7,7 +8,7 @@ export interface AttributedCharacterIterator extends CharacterIterator, Object{
     first(): string;
     getAllAttributeKeys(): AttributedCharacterIterator$Attribute[];
     getAttribute(arg0: AttributedCharacterIterator$Attribute): Object;
-    getAttributes(): Map<AttributedCharacterIterator$Attribute, Object>;
+    getAttributes(): JavaMap<AttributedCharacterIterator$Attribute, Object>;
     getBeginIndex(): number;
     getEndIndex(): number;
     getIndex(): number;

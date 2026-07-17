@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Device } from '../../../../ai/djl/Device.d.ts'
 import type { NDArray } from '../../../../ai/djl/ndarray/NDArray.d.ts'
 import type { Adadelta$Builder } from '../../../../ai/djl/training/optimizer/Adadelta$Builder.d.ts'
@@ -20,7 +21,7 @@ export class Adagrad extends Optimizer {
     static sgd(): Sgd$Builder;
     constructor(arg0: Adagrad$Builder)
     // private epsilon: number;
-    // private history: { [key: string]: Map<Device, NDArray> };
+    // private history: JavaMap<string, JavaMap<Device, NDArray>>;
     // private learningRateTracker: ParameterTracker;
     update(arg0: string, arg1: NDArray, arg2: NDArray): void;
 }

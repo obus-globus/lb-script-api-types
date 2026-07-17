@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { NDArray } from '../../../ai/djl/ndarray/NDArray.d.ts'
 import type { AbstractBaseBlock } from '../../../ai/djl/nn/AbstractBaseBlock.d.ts'
 import type { Block } from '../../../ai/djl/nn/Block.d.ts'
@@ -9,7 +10,7 @@ export abstract class AbstractBlock extends AbstractBaseBlock {
     constructor()
     constructor(arg0: number)
     children: (Object | null)[];
-    parameters: { [key: string]: Parameter };
+    parameters: JavaMap<string, Parameter>;
     addChildBlock<B extends Block>(arg0: string, arg1: B): B;
     addChildBlock(arg0: string, arg1: (param0: (Object | null)[]) => (Object | null)[]): LambdaBlock;
     addChildBlockSingleton(arg0: string, arg1: (param0: NDArray) => NDArray): LambdaBlock;

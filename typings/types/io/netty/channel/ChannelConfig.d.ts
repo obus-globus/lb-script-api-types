@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { ByteBufAllocator } from '../../../io/netty/buffer/ByteBufAllocator.d.ts'
 import type { ChannelOption } from '../../../io/netty/channel/ChannelOption.d.ts'
 import type { MessageSizeEstimator } from '../../../io/netty/channel/MessageSizeEstimator.d.ts'
@@ -10,7 +11,7 @@ export interface ChannelConfig extends Object{
     getMaxMessagesPerRead(): number;
     getMessageSizeEstimator(): MessageSizeEstimator;
     getOption<T extends unknown>(arg0: ChannelOption<T>): T;
-    getOptions(): Map<ChannelOption<Object>, Object>;
+    getOptions(): JavaMap<ChannelOption<Object>, Object>;
     getRecvByteBufAllocator<T extends RecvByteBufAllocator>(): T;
     getWriteBufferHighWaterMark(): number;
     getWriteBufferLowWaterMark(): number;
@@ -25,7 +26,7 @@ export interface ChannelConfig extends Object{
     setMaxMessagesPerRead(arg0: number): ChannelConfig;
     setMessageSizeEstimator(arg0: MessageSizeEstimator): ChannelConfig;
     setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
-    setOptions(arg0: Map<ChannelOption<Object>, Object | null>): boolean;
+    setOptions(arg0: JavaMap<ChannelOption<Object>, Object | null>): boolean;
     setRecvByteBufAllocator(arg0: RecvByteBufAllocator): ChannelConfig;
     setWriteBufferHighWaterMark(arg0: number): ChannelConfig;
     setWriteBufferLowWaterMark(arg0: number): ChannelConfig;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { RegistryDataCollector$ContentsCollector } from '../../../../net/minecraft/client/multiplayer/RegistryDataCollector$ContentsCollector.d.ts'
@@ -15,7 +16,7 @@ export class RegistryDataCollector extends Object {
     // private contentsCollector: RegistryDataCollector$ContentsCollector;
     // private tagCollector: RegistryDataCollector$TagCollector;
     appendContents(registry: ResourceKey<(Object | null)[]>, elementData: RegistrySynchronization$PackedRegistryEntry[]): void;
-    appendTags(data: Map<ResourceKey<(Object | null)[]>, TagNetworkSerialization$NetworkPayload>): void;
+    appendTags(data: JavaMap<ResourceKey<(Object | null)[]>, TagNetworkSerialization$NetworkPayload>): void;
     collectGameRegistries(knownDataSource: (param0: Identifier) => Optional<Resource>, originalRegistries: RegistryAccess$Frozen, tagsAndComponentsForSynchronizedRegistriesOnly: boolean): RegistryAccess$Frozen;
     // private loadNewElementsAndTags(knownDataSource: (param0: Identifier) => Optional<Resource>, contentsCollector: RegistryDataCollector$ContentsCollector, tagsForSynchronizedRegistriesOnly: boolean): RegistryAccess;
 }

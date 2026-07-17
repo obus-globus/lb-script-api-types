@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../../../../java/lang/CharSequence.d.ts'
 import type { Pair } from '../../../../../../../../kotlin/Pair.d.ts'
@@ -12,7 +13,7 @@ import type { Emit } from '../../../../../../../../org/ahocorasick/trie/Emit.d.t
  */
 export class NameProtectMappings extends Object {
     constructor()
-    // private friendMappings: { [key: string]: string };
+    // private friendMappings: JavaMap<string, string>;
     // private otherPlayerMappings: string[];
     // private replacementInstructions: NameProtectMappings$ReplacementInstructions | null;
     // private usernameReplacement: Pair<string, string> | null;

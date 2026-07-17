@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { OutputStream } from '../../../../../../../java/io/OutputStream.d.ts'
 import type { StringBuilder } from '../../../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
@@ -16,7 +17,7 @@ export class RBBIRuleBuilder extends Object {
     // private fRules: string;
     // private fScanner: RBBIRuleScanner;
     // private fSetBuilder: RBBISetBuilder;
-    // private fStatusSets: Map<number[], number>;
+    // private fStatusSets: JavaMap<number[], number>;
     // private fStrippedRules: StringBuilder;
     // private fTreeRoots: RBBINode[];
     // private fUSetNodes: RBBINode[];

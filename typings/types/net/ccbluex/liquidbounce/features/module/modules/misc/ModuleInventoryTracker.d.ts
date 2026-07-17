@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { UUID } from '../../../../../../../java/util/UUID.d.ts'
 import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { EntityEquipmentChangeEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/EntityEquipmentChangeEvent.d.ts'
@@ -17,10 +18,10 @@ import type { Player } from '../../../../../../../net/minecraft/world/entity/pla
  */
 export class ModuleInventoryTracker extends ClientModule {
     static INSTANCE: ModuleInventoryTracker;
-    // private inventoryMap: Map<UUID, TrackedInventory>;
+    // private inventoryMap: JavaMap<UUID, TrackedInventory>;
     // private itemLoreQueryHandler: EventHook<ItemLoreQueryEvent>;
     readonly playerEquipmentChangeHandler: EventHook<EntityEquipmentChangeEvent>;
-    readonly playerMap: Map<UUID, Player>;
+    readonly playerMap: JavaMap<UUID, Player>;
     // private savePlayers: boolean;
     // private /*not mapped: */ getSavePlayers(): boolean;
     // private worldChangeHandler: EventHook<WorldChangeEvent>;

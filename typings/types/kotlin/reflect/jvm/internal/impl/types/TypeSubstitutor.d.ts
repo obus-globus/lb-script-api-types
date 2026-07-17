@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { TypeParameterDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/TypeParameterDescriptor.d.ts'
 import type { KotlinType } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/KotlinType.d.ts'
@@ -10,7 +11,7 @@ export class TypeSubstitutor extends Object implements TypeSubstitutorMarker {
     static EMPTY: TypeSubstitutor;
     static combine(paramarg0: Variance, paramarg1: TypeProjection): Variance;
     static combine(paramarg0: Variance, paramarg1: Variance): Variance;
-    static create(paramarg0: Map<TypeConstructor, TypeProjection>): TypeSubstitutor;
+    static create(paramarg0: JavaMap<TypeConstructor, TypeProjection>): TypeSubstitutor;
     static create(paramarg0: KotlinType): TypeSubstitutor;
     static create(paramarg0: TypeSubstitution): TypeSubstitutor;
     static createChainedSubstitutor(paramarg0: TypeSubstitution, paramarg1: TypeSubstitution): TypeSubstitutor;

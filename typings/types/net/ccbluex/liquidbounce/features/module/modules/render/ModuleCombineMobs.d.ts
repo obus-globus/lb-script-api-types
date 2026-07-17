@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Pool } from '../../../../../../../net/ccbluex/fastutil/Pool.d.ts'
 import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { GameRenderEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/GameRenderEvent.d.ts'
@@ -22,10 +23,10 @@ export class ModuleCombineMobs extends ClientModule {
     // private /*not mapped: */ getCombineArmorStands(): boolean;
     // private combineMinecarts: boolean;
     // private /*not mapped: */ getCombineMinecarts(): boolean;
-    // private mapPool: Pool<{ [key: string]: any }>;
-    // private nametagTracker: Map<ModuleCombineMobs$CombineKey, { [key: string]: any }>;
+    // private mapPool: Pool<JavaMap<any, any>>;
+    // private nametagTracker: JavaMap<ModuleCombineMobs$CombineKey, JavaMap<any, any>>;
     // private renderGameHandler: EventHook<GameRenderEvent>;
-    // private renderTracker: Map<ModuleCombineMobs$CombineKey, { [key: string]: any }>;
+    // private renderTracker: JavaMap<ModuleCombineMobs$CombineKey, JavaMap<any, any>>;
     // private clearNametagTracker(): void;
     // private clearRenderTracker(): void;
     getCombinedCount(entity: Entity): number;

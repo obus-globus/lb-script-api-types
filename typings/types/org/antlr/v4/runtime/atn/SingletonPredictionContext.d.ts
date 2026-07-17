@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Recognizer } from '../../../../../org/antlr/v4/runtime/Recognizer.d.ts'
 import type { RuleContext } from '../../../../../org/antlr/v4/runtime/RuleContext.d.ts'
@@ -11,8 +12,8 @@ export class SingletonPredictionContext extends PredictionContext {
     static create(paramarg0: PredictionContext, paramarg1: number): SingletonPredictionContext;
     static fromRuleContext(paramarg0: ATN, paramarg1: RuleContext): PredictionContext;
     static getAllContextNodes(paramarg0: PredictionContext): PredictionContext[];
-    static getAllContextNodes_(paramarg0: PredictionContext, paramarg1: PredictionContext[], paramarg2: Map<PredictionContext, PredictionContext>): void;
-    static getCachedContext(paramarg0: PredictionContext, paramarg1: PredictionContextCache, paramarg2: Map<PredictionContext, PredictionContext>): PredictionContext;
+    static getAllContextNodes_(paramarg0: PredictionContext, paramarg1: PredictionContext[], paramarg2: JavaMap<PredictionContext, PredictionContext>): void;
+    static getCachedContext(paramarg0: PredictionContext, paramarg1: PredictionContextCache, paramarg2: JavaMap<PredictionContext, PredictionContext>): PredictionContext;
     static merge(paramarg0: PredictionContext, paramarg1: PredictionContext, paramarg2: boolean, paramarg3: DoubleKeyMap<PredictionContext, PredictionContext, PredictionContext>): PredictionContext;
     static mergeArrays(paramarg0: ArrayPredictionContext, paramarg1: ArrayPredictionContext, paramarg2: boolean, paramarg3: DoubleKeyMap<PredictionContext, PredictionContext, PredictionContext>): PredictionContext;
     static mergeRoot(paramarg0: SingletonPredictionContext, paramarg1: SingletonPredictionContext, paramarg2: boolean): PredictionContext;

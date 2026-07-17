@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { File } from '../../../../java/io/File.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../../java/io/OutputStream.d.ts'
@@ -32,9 +33,9 @@ export abstract class AbstractPolyglotImpl extends Object {
     allowInternalResourceAccess(fileSystem: FileSystem_2, readOnlyResources: boolean): FileSystem_2;
     asByteSequence(object: Object): ByteSequence;
     asValue(o: Object): Object;
-    buildEngine(permittedLanguages: string[], sandboxPolicy: SandboxPolicy, out: OutputStream, err: OutputStream, in_: InputStream, options: { [key: string]: string }, systemPropertiesOptions: { [key: string]: string }, useSystemProperties: boolean, allowExperimentalOptions: boolean, boundEngine: boolean, useIsolatedEngine: boolean, messageInterceptor: MessageTransport, logHandler: Object, hostLanguage: Object, hostLanguageOnly: boolean, registerInActiveEngines: boolean, polyglotHostService: Object, exceptionHandler: (param0: PolyglotException) => void): Engine;
+    buildEngine(permittedLanguages: string[], sandboxPolicy: SandboxPolicy, out: OutputStream, err: OutputStream, in_: InputStream, options: JavaMap<string, string>, systemPropertiesOptions: JavaMap<string, string>, useSystemProperties: boolean, allowExperimentalOptions: boolean, boundEngine: boolean, useIsolatedEngine: boolean, messageInterceptor: MessageTransport, logHandler: Object, hostLanguage: Object, hostLanguageOnly: boolean, registerInActiveEngines: boolean, polyglotHostService: Object, exceptionHandler: (param0: PolyglotException) => void): Engine;
     buildLimits(statementLimit: number, statementLimitSourceFilter: (param0: Object) => boolean, onLimit: (param0: Object) => void): Object;
-    buildSource(language: string, origin: Object, uri: URI, name: string, mimeType: string, content: Object, interactive: boolean, internal: boolean, cached: boolean, encoding: Charset, url: URL, path: string, options: { [key: string]: string }): Object;
+    buildSource(language: string, origin: Object, uri: URI, name: string, mimeType: string, content: Object, interactive: boolean, internal: boolean, cached: boolean, encoding: Charset, url: URL, path: string, options: JavaMap<string, string>): Object;
     copyResources(targetFolder: Path, ...components: string[]): boolean;
     createEngineOptionDescriptors(): OptionDescriptor[];
     createHostAccess(): Object;

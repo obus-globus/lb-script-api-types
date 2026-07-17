@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { RecordCodecBuilder } from '../../../../../../com/mojang/serialization/codecs/RecordCodecBuilder.d.ts'
@@ -48,7 +49,7 @@ export abstract class Structure extends Object {
     findValidGenerationPoint(context: Structure$GenerationContext): Optional<Structure$GenerationStub>;
     generate(selected: Holder<Structure>, dimension: ResourceKey<Level>, registryAccess: RegistryAccess, chunkGenerator: ChunkGenerator, biomeSource: BiomeSource, randomState: RandomState, structureTemplateManager: StructureTemplateManager, seed: number, sourceChunkPos: ChunkPos, references: number, heightAccessor: LevelHeightAccessor, validBiome: (param0: Holder<Biome>) => boolean): StructureStart;
     getLowestYIn5by5BoxOffset7Blocks(context: Structure$GenerationContext, rotation: Rotation): BlockPos;
-    spawnOverrides(): Map<MobCategory, StructureSpawnOverride>;
+    spawnOverrides(): JavaMap<MobCategory, StructureSpawnOverride>;
     step(): GenerationStep$Decoration;
     terrainAdaptation(): TerrainAdjustment;
     type(): StructureType<any>;

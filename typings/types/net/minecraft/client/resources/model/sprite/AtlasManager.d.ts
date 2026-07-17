@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { AutoCloseable } from '../../../../../../java/lang/AutoCloseable.d.ts'
 import type { CompletableFuture } from '../../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Executor } from '../../../../../../java/util/concurrent/Executor.d.ts'
@@ -20,11 +21,11 @@ import type { PreparableReloadListener$StateKey } from '../../../../../../net/mi
 export class AtlasManager extends Object implements AutoCloseable, FabricResourceReloader, AtlasManagerAccessor, SpriteGetter, PreparableReloadListener {
     static PENDING_STITCH: PreparableReloadListener$StateKey<AtlasManager$PendingStitchResults>;
     constructor(textureManager: TextureManager, maxMipmapLevels: number)
-    // private atlasById: Map<Identifier, AtlasManager$AtlasEntry>;
-    // private atlasByTexture: Map<Identifier, AtlasManager$AtlasEntry>;
+    // private atlasById: JavaMap<Identifier, AtlasManager$AtlasEntry>;
+    // private atlasByTexture: JavaMap<Identifier, AtlasManager$AtlasEntry>;
     // private fabric$id: Identifier;
     // private maxMipmapLevels: number;
-    // private spriteLookup: Map<SpriteId, TextureAtlasSprite>;
+    // private spriteLookup: JavaMap<SpriteId, TextureAtlasSprite>;
     close(): void;
     fabric$getId(): Identifier;
     forEach(output: (param0: Identifier, param1: TextureAtlas) => void): void;

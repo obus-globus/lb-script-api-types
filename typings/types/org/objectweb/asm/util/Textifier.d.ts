@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { StringBuilder } from '../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Attribute } from '../../../../org/objectweb/asm/Attribute.d.ts'
@@ -23,7 +24,7 @@ export class Textifier extends Printer {
     constructor()
     constructor(arg0: number)
     // private access: number;
-    // private labelNames: Map<Label, string>;
+    // private labelNames: JavaMap<Label, string>;
     // private ltab: string;
     // private numAnnotationValues: number;
     // private tab: string;

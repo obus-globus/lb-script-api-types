@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Future } from '../../../../../../../java/util/concurrent/Future.d.ts'
 import type { TimeUnit } from '../../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
@@ -27,20 +28,20 @@ export class RoutingAppender extends AbstractAppender {
     static parseInt(params: string, paramdefaultValue: number): number;
     private constructor(name: string, filter: Filter, ignoreExceptions: boolean, routes: Routes, rewritePolicy: RewritePolicy, configuration: Configuration, purgePolicy: PurgePolicy, defaultRouteScript: AbstractScript, properties: Property[])
     readonly configuration: Configuration;
-    // private createdAppenders: { [key: string]: RoutingAppender$CreatedRouteAppenderControl };
-    // private createdAppendersUnmodifiableView: { [key: string]: AppenderControl };
+    // private createdAppenders: JavaMap<string, RoutingAppender$CreatedRouteAppenderControl>;
+    // private createdAppendersUnmodifiableView: JavaMap<string, AppenderControl>;
     readonly defaultRoute: Route;
     readonly defaultRouteScript: AbstractScript;
     readonly purgePolicy: PurgePolicy;
-    // private referencedAppenders: { [key: string]: RoutingAppender$RouteAppenderControl };
+    // private referencedAppenders: JavaMap<string, RoutingAppender$RouteAppenderControl>;
     readonly rewritePolicy: RewritePolicy;
     readonly routes: Routes;
-    readonly scriptStaticVariables: Map<Object, Object>;
+    readonly scriptStaticVariables: JavaMap<Object, Object>;
     append(event: LogEvent): void;
     // private createAppender(route: Route, event: LogEvent): Appender;
     deleteAppender(key: string): void;
     // private getAppender(key: string): RoutingAppender$RouteAppenderControl;
-    getAppenders(): { [key: string]: AppenderControl };
+    getAppenders(): JavaMap<string, AppenderControl>;
     getConfiguration(): Configuration;
     // private getControl(key: string, event: LogEvent): RoutingAppender$RouteAppenderControl;
     getDefaultRoute(): Route;
@@ -48,7 +49,7 @@ export class RoutingAppender extends AbstractAppender {
     getPurgePolicy(): PurgePolicy;
     getRewritePolicy(): RewritePolicy;
     getRoutes(): Routes;
-    getScriptStaticVariables(): Map<Object, Object>;
+    getScriptStaticVariables(): JavaMap<Object, Object>;
     start(): void;
     stop(): void;
     stop(future: Future<Object>): boolean;

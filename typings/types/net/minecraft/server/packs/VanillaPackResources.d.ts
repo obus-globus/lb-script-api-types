@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
@@ -17,11 +18,11 @@ import type { ResourceProvider } from '../../../../net/minecraft/server/packs/re
 export class VanillaPackResources extends Object implements PackResources {
     static METADATA_EXTENSION: string;
     static PACK_META: string;
-    constructor(location: PackLocationInfo, metadata: ResourceMetadata, namespaces: string[], rootPaths: Path[], pathsForType: Map<PackType, Path[]>)
+    constructor(location: PackLocationInfo, metadata: ResourceMetadata, namespaces: string[], rootPaths: Path[], pathsForType: JavaMap<PackType, Path[]>)
     // private builtInMetadata: ResourceMetadata;
     // private location: PackLocationInfo;
     // private namespaces: string[];
-    // private pathsForType: Map<PackType, Path[]>;
+    // private pathsForType: JavaMap<PackType, Path[]>;
     // private resourceMetadata: ResourceMetadata;
     // private rootPaths: Path[];
     asProvider(): (param0: Identifier) => Optional<Resource>;

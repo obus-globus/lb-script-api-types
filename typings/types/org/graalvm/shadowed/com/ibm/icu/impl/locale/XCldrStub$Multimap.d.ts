@@ -1,11 +1,12 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../../../java/util/Map$Entry.d.ts'
 export class XCldrStub$Multimap<K extends unknown, V extends unknown> extends Object {
-    private constructor(map: Map<K, V[]>, setClass: Class<Object>)
-    // private map: Map<K, V[]>;
+    private constructor(map: JavaMap<K, V[]>, setClass: Class<Object>)
+    // private map: JavaMap<K, V[]>;
     // private setClass: Class<V[]>;
-    asMap(): Map<K, V[]>;
+    asMap(): JavaMap<K, V[]>;
     // private createSetIfMissing(key: K): V[];
     entries(): Map$Entry<K, V>[];
     equals(obj: Object | null): boolean;

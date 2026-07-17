@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ParserConfiguration } from '../../../../../org/graalvm/shadowed/org/json/ParserConfiguration.d.ts'
 import type { XMLXsiTypeConverter } from '../../../../../org/graalvm/shadowed/org/json/XMLXsiTypeConverter.d.ts'
@@ -18,10 +19,10 @@ export class XMLParserConfiguration extends ParserConfiguration {
     readonly keepBooleanAsString: boolean;
     readonly keepNumberAsString: boolean;
     // private shouldTrimWhiteSpace: boolean;
-    readonly xsiTypeMap: { [key: string]: XMLXsiTypeConverter<Object> };
+    readonly xsiTypeMap: JavaMap<string, XMLXsiTypeConverter<Object>>;
     clone(): XMLParserConfiguration;
     getForceList(): string[];
-    getXsiTypeMap(): { [key: string]: XMLXsiTypeConverter<Object> };
+    getXsiTypeMap(): JavaMap<string, XMLXsiTypeConverter<Object>>;
     getcDataTagName(): string;
     isCloseEmptyTag(): boolean;
     isConvertNilAttributeToNull(): boolean;
@@ -36,6 +37,6 @@ export class XMLParserConfiguration extends ParserConfiguration {
     withKeepStrings(newVal: boolean): XMLParserConfiguration;
     withMaxNestingDepth(maxNestingDepth: number): XMLParserConfiguration;
     withShouldTrimWhitespace(shouldTrimWhiteSpace: boolean): XMLParserConfiguration;
-    withXsiTypeMap(xsiTypeMap: { [key: string]: XMLXsiTypeConverter<Object> }): XMLParserConfiguration;
+    withXsiTypeMap(xsiTypeMap: JavaMap<string, XMLXsiTypeConverter<Object>>): XMLParserConfiguration;
     withcDataTagName(newVal: string): XMLParserConfiguration;
 }

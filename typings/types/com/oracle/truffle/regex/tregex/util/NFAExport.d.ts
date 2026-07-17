@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { TruffleFile } from '../../../../../../com/oracle/truffle/api/TruffleFile.d.ts'
 import type { NFA } from '../../../../../../com/oracle/truffle/regex/tregex/nfa/NFA.d.ts'
 import type { NFAState } from '../../../../../../com/oracle/truffle/regex/tregex/nfa/NFAState.d.ts'
@@ -15,7 +16,7 @@ export class NFAExport extends Object {
     // private mergeFinalStates: boolean;
     // private nextStateNumber: number;
     // private nfa: NFA;
-    // private stateNumberMap: Map<NFAState, number>;
+    // private stateNumberMap: JavaMap<NFAState, number>;
     // private writer: BufferedWriter;
     // private exportDot(): void;
     // private exportLaTex(): void;

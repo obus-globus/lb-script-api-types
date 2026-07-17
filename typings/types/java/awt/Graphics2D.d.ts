@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Color } from '../../java/awt/Color.d.ts'
 import type { Composite } from '../../java/awt/Composite.d.ts'
 import type { Graphics } from '../../java/awt/Graphics.d.ts'
@@ -20,7 +21,7 @@ import type { AttributedCharacterIterator } from '../../java/text/AttributedChar
 import type { Object } from '../../java/lang/Object.d.ts'
 export abstract class Graphics2D extends Graphics {
     constructor()
-    addRenderingHints(arg0: Map<Object | null, Object | null>): void;
+    addRenderingHints(arg0: JavaMap<Object | null, Object | null>): void;
     clip(arg0: Shape): void;
     draw(arg0: Shape): void;
     draw3DRect(arg0: number, arg1: number, arg2: number, arg3: number, arg4: boolean): void;
@@ -39,7 +40,7 @@ export abstract class Graphics2D extends Graphics {
     getFontRenderContext(): FontRenderContext;
     getPaint(): Paint;
     getRenderingHint(arg0: RenderingHints$Key): Object;
-    getRenderingHints(): { [key: string]: any };
+    getRenderingHints(): JavaMap<any, any>;
     getStroke(): Stroke;
     getTransform(): AffineTransform;
     hit(arg0: Rectangle, arg1: Shape, arg2: boolean): boolean;
@@ -50,7 +51,7 @@ export abstract class Graphics2D extends Graphics {
     setComposite(arg0: Composite): void;
     setPaint(arg0: Paint): void;
     setRenderingHint(arg0: RenderingHints$Key, arg1: Object): void;
-    setRenderingHints(arg0: Map<Object | null, Object | null>): void;
+    setRenderingHints(arg0: JavaMap<Object | null, Object | null>): void;
     setStroke(arg0: Stroke): void;
     setTransform(arg0: AffineTransform): void;
     shear(arg0: number, arg1: number): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Assumption } from '../../../../../com/oracle/truffle/api/Assumption.d.ts'
 import type { EventBinding } from '../../../../../com/oracle/truffle/api/instrumentation/EventBinding.d.ts'
 import type { ExecutionEventNodeFactory } from '../../../../../com/oracle/truffle/api/instrumentation/ExecutionEventNodeFactory.d.ts'
@@ -38,11 +39,11 @@ export class CoverageTracker extends Object implements AutoCloseable {
     // private instrumentExecution(config: CoverageTracker$Config, instrumenter: Instrumenter, f: SourceSectionFilter): void;
     // private instrumentLoadedRoots(instrumenter: Instrumenter, f: SourceSectionFilter): void;
     // private instrumentLoadedStatements(instrumenter: Instrumenter, f: SourceSectionFilter): void;
-    // private mapping(reset: boolean): Map<Source, Map<SourceSection, CoverageTracker$RootData>>;
-    // private processCovered(mapping: Map<Source, Map<SourceSection, CoverageTracker$RootData>>, reset: boolean): void;
-    // private processLoaded(sourceCoverage: Map<Source, Map<SourceSection, CoverageTracker$RootData>>): void;
-    // private processLoadedRoots(sourceCoverage: Map<Source, Map<SourceSection, CoverageTracker$RootData>>): void;
-    // private processLoadedSections(sourceCoverage: Map<Source, Map<SourceSection, CoverageTracker$RootData>>): void;
+    // private mapping(reset: boolean): JavaMap<Source, JavaMap<SourceSection, CoverageTracker$RootData>>;
+    // private processCovered(mapping: JavaMap<Source, JavaMap<SourceSection, CoverageTracker$RootData>>, reset: boolean): void;
+    // private processLoaded(sourceCoverage: JavaMap<Source, JavaMap<SourceSection, CoverageTracker$RootData>>): void;
+    // private processLoadedRoots(sourceCoverage: JavaMap<Source, JavaMap<SourceSection, CoverageTracker$RootData>>): void;
+    // private processLoadedSections(sourceCoverage: JavaMap<Source, JavaMap<SourceSection, CoverageTracker$RootData>>): void;
     resetCoverage(): SourceCoverage[];
     start(config: CoverageTracker$Config): void;
 }

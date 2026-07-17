@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { PrintStream } from '../../../../java/io/PrintStream.d.ts'
 import type { StackTraceElement } from '../../../../java/lang/StackTraceElement.d.ts'
 import type { Thread } from '../../../../java/lang/Thread.d.ts'

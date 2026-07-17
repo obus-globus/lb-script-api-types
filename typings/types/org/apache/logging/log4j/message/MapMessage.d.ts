@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
@@ -10,7 +11,7 @@ import type { TriConsumer } from '../../../../../org/apache/logging/log4j/util/T
 export class MapMessage<M extends MapMessage<M, V>, V extends unknown> extends Object implements MultiFormatStringBuilderFormattable {
     constructor()
     constructor(initialCapacity: number)
-    constructor(map: { [key: string]: V })
+    constructor(map: JavaMap<string, V>)
     readonly data: IndexedStringMap;
     appendMap(sb: StringBuilder): void;
     asJava(sb: StringBuilder): void;
@@ -29,7 +30,7 @@ export class MapMessage<M extends MapMessage<M, V>, V extends unknown> extends O
     formatTo(buffer: StringBuilder): void;
     formatTo(formats: string[], buffer: StringBuilder): void;
     get(key: string): string;
-    getData(): { [key: string]: V };
+    getData(): JavaMap<string, V>;
     getFormat(): string;
     // private getFormat(formats: string[]): MapMessage$MapFormat;
     getFormats(): string[];
@@ -39,9 +40,9 @@ export class MapMessage<M extends MapMessage<M, V>, V extends unknown> extends O
     getParameters(): Object[];
     getThrowable(): Throwable;
     hashCode(): number;
-    newInstance(map: { [key: string]: V }): M;
+    newInstance(map: JavaMap<string, V>): M;
     put(candidateKey: string, value: string): void;
-    putAll(map: { [key: string]: string }): void;
+    putAll(map: JavaMap<string, string>): void;
     remove(key: string): string;
     toKey(candidateKey: string): string;
     toString(): string;

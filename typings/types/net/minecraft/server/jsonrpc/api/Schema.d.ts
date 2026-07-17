@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Either } from '../../../../../com/mojang/datafixers/util/Either.d.ts'
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
@@ -60,11 +61,11 @@ export class Schema<T extends unknown> extends Record {
     static ofTypes<T extends unknown>(paramtypes: string[], paramcodec: Codec<T>): Schema<T>;
     static record<T extends unknown>(paramcodec: Codec<T>): Schema<T>;
     static typedCodec<T extends unknown>(): Codec<Schema<T>>;
-    constructor(reference: Optional<URI>, type: string[], items: Optional<Schema<Object>>, properties: { [key: string]: Schema<Object> }, enumValues: string[], codec: Codec<T>)
+    constructor(reference: Optional<URI>, type: string[], items: Optional<Schema<Object>>, properties: JavaMap<string, Schema<Object>>, enumValues: string[], codec: Codec<T>)
     // private codec: Codec<T>;
     // private enumValues: string[];
     // private items: Optional<Schema<Object>>;
-    // private properties: { [key: string]: Schema<Object> };
+    // private properties: JavaMap<string, Schema<Object>>;
     // private reference: Optional<URI>;
     // private type: string[];
     asArray(): Schema<T[]>;
@@ -74,7 +75,7 @@ export class Schema<T extends unknown> extends Record {
     hashCode(): number;
     info(): Schema<T>;
     items(): Optional<Schema<Object>>;
-    properties(): { [key: string]: Schema<Object> };
+    properties(): JavaMap<string, Schema<Object>>;
     reference(): Optional<URI>;
     toString(): string;
     type(): string[];

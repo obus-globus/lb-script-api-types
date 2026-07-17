@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { SymmetricGroup3 } from '../../../com/mojang/math/SymmetricGroup3.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
@@ -75,7 +76,7 @@ export class OctahedralGroup extends Enum<OctahedralGroup> implements StringRepr
     // private invertZ: boolean;
     // private name: string;
     // private permutation: SymmetricGroup3;
-    // private rotatedDirections: Map<Direction, Direction>;
+    // private rotatedDirections: JavaMap<Direction, Direction>;
     // private transformation: Matrix3fc;
     compose(that: OctahedralGroup): OctahedralGroup;
     getSerializedName(): string;

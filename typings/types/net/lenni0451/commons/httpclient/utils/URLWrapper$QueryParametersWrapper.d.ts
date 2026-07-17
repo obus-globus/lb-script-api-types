@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { URLWrapper } from '../../../../../net/lenni0451/commons/httpclient/utils/URLWrapper.d.ts'
@@ -8,7 +9,7 @@ export class URLWrapper$QueryParametersWrapper extends Object {
     addParameter(arg0: string, arg1: string): URLWrapper$QueryParametersWrapper;
     addParameter(arg0: URLWrapper$Parameter): URLWrapper$QueryParametersWrapper;
     addParameters(arg0: URLWrapper$Parameter[]): URLWrapper$QueryParametersWrapper;
-    addParameters(arg0: { [key: string]: string }): URLWrapper$QueryParametersWrapper;
+    addParameters(arg0: JavaMap<string, string>): URLWrapper$QueryParametersWrapper;
     apply(): URLWrapper;
     clearParameters(): URLWrapper$QueryParametersWrapper;
     getFirstValue(arg0: string): Optional<string>;
@@ -17,5 +18,5 @@ export class URLWrapper$QueryParametersWrapper extends Object {
     hasParameter(arg0: string): boolean;
     removeParameters(arg0: string): URLWrapper$QueryParametersWrapper;
     setParameter(arg0: string, arg1: string): URLWrapper$QueryParametersWrapper;
-    setParameters(arg0: { [key: string]: string }): URLWrapper$QueryParametersWrapper;
+    setParameters(arg0: JavaMap<string, string>): URLWrapper$QueryParametersWrapper;
 }

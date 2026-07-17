@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../../../java/util/Iterator.d.ts'
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
@@ -13,7 +14,7 @@ export class FieldSet<FieldDescriptorType extends FieldSet$FieldDescriptorLite<F
     static writeField(paramarg0: FieldSet$FieldDescriptorLite<any>, paramarg1: Object, paramarg2: CodedOutputStream): void;
     private constructor()
     private constructor(arg0: boolean)
-    // private fields: Map<FieldDescriptorType, Object>;
+    // private fields: JavaMap<FieldDescriptorType, Object>;
     // private hasLazyField: boolean;
     // private isImmutable: boolean;
     addRepeatedField(arg0: FieldDescriptorType, arg1: Object): void;

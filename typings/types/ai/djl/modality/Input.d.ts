@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { BytesSupplier } from '../../../ai/djl/ndarray/BytesSupplier.d.ts'
 import type { NDArray } from '../../../ai/djl/ndarray/NDArray.d.ts'
 import type { NDManager } from '../../../ai/djl/ndarray/NDManager.d.ts'
@@ -11,7 +12,7 @@ export class Input extends Object {
     constructor()
     readonly cancelled: boolean;
     content: Pair<string, BytesSupplier>[];
-    properties: { [key: string]: string };
+    properties: JavaMap<string, string>;
     add(arg0: BytesSupplier): void;
     add(arg0: number[]): void;
     add(arg0: number, arg1: string, arg2: BytesSupplier): void;
@@ -37,11 +38,11 @@ export class Input extends Object {
     getContentAsBuffers(): Pair<string, ByteBuffer>[];
     getData(): BytesSupplier;
     getDataAsNDList(arg0: NDManager): (Object | null)[];
-    getProperties(): { [key: string]: string };
+    getProperties(): JavaMap<string, string>;
     getProperty(arg0: string, arg1: string): string;
     isCancelled(): boolean;
     setCancelled(arg0: boolean): void;
     setContent(arg0: Pair<string, BytesSupplier>[]): void;
-    setProperties(arg0: { [key: string]: string }): void;
+    setProperties(arg0: JavaMap<string, string>): void;
     toString(): string;
 }

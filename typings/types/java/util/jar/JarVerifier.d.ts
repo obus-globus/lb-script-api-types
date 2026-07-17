@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { ByteArrayOutputStream } from '../../../java/io/ByteArrayOutputStream.d.ts'
 import type { CodeSigner } from '../../../java/security/CodeSigner.d.ts'
 import type { Certificate } from '../../../java/security/cert/Certificate.d.ts'
@@ -18,11 +19,11 @@ export class JarVerifier extends Object {
     // private parsingBlockOrSF: boolean;
     // private parsingMeta: boolean;
     // private pendingBlocks: SignatureFileVerifier[];
-    // private sigFileData: { [key: string]: number[] };
-    // private sigFileSigners: { [key: string]: CodeSigner[] };
+    // private sigFileData: JavaMap<string, number[]>;
+    // private sigFileSigners: JavaMap<string, CodeSigner[]>;
     // private signerCache: CodeSigner[][];
-    // private signersToAlgs: Map<CodeSigner[], { [key: string]: boolean }>;
-    // private verifiedSigners: { [key: string]: CodeSigner[] };
+    // private signersToAlgs: JavaMap<CodeSigner[], JavaMap<string, boolean>>;
+    // private verifiedSigners: JavaMap<string, CodeSigner[]>;
     beginEntry(arg0: JarEntry, arg1: ManifestEntryVerifier): void;
     doneWithMeta(): void;
     getCerts(arg0: JarEntry): Certificate[];

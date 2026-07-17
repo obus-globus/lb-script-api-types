@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
@@ -28,7 +29,7 @@ export class ResourceLoaderImpl extends Object implements ResourceLoader {
     static registerBuiltinResourcePacks(paramarg0: PackType, paramarg1: (param0: Pack) => void): void;
     static sort(paramarg0: PackType, paramarg1: (param0: PreparableReloadListener$SharedState, param1: Executor, param2: (param0: Object | null) => CompletableFuture<Object>, param3: Executor) => CompletableFuture<void>[]): (param0: PreparableReloadListener$SharedState, param1: Executor, param2: (param0: Object | null) => CompletableFuture<Object>, param3: Executor) => CompletableFuture<void>[];
     constructor(arg0: PackType)
-    // private addedReloaders: Map<Identifier, (param0: PreparableReloadListener$SharedState, param1: Executor, param2: (param0: Object | null) => CompletableFuture<Object>, param3: Executor) => CompletableFuture<void>>;
+    // private addedReloaders: JavaMap<Identifier, (param0: PreparableReloadListener$SharedState, param1: Executor, param2: (param0: Object | null) => CompletableFuture<Object>, param3: Executor) => CompletableFuture<void>>;
     // private reloadersOrdering: ResourceLoaderImpl$ReloaderOrder[];
     // private type: PackType;
     addListenerOrdering(arg0: Identifier, arg1: Identifier): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { GLSLParser } from '../../../../../io/github/douira/glsl_transformer/GLSLParser.d.ts'
 import type { GLSLParser$TranslationUnitContext } from '../../../../../io/github/douira/glsl_transformer/GLSLParser$TranslationUnitContext.d.ts'
 import type { CachingParser } from '../../../../../io/github/douira/glsl_transformer/parser/CachingParser.d.ts'
@@ -8,7 +9,7 @@ import type { ParserRuleContext } from '../../../../../org/antlr/v4/runtime/Pars
 export class TwoTierCachingParser extends CachingParser {
     constructor()
     constructor(arg0: boolean, arg1: number, arg2: number)
-    // private secondaryCache: { [key: string]: any };
+    // private secondaryCache: JavaMap<any, any>;
     parse(arg0: string): GLSLParser$TranslationUnitContext;
     parse<C extends ParserRuleContext>(arg0: string, arg1: ParseShape<C, any>): C;
     parse<C extends ParserRuleContext>(arg0: string, arg1: (param0: GLSLParser) => C): C;

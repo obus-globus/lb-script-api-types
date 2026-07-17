@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { Stream } from '../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -6,7 +7,7 @@ import type { DataComponentLookup$ComponentStorage } from '../../../../net/minec
 import type { DataComponentType } from '../../../../net/minecraft/core/component/DataComponentType.d.ts'
 export class DataComponentLookup<T extends unknown> extends Object {
     constructor(elements: Holder<T>[])
-    // private cache: Map<DataComponentType<Object>, DataComponentLookup$ComponentStorage<Object, T>>;
+    // private cache: JavaMap<DataComponentType<Object>, DataComponentLookup$ComponentStorage<Object, T>>;
     // private elements: Holder<T>[];
     findAll<C extends unknown>(type: DataComponentType<C>): Holder<T>[];
     findAll<C extends unknown>(type: DataComponentType<C>, value: C): Holder<T>[];

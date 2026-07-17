@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { GpuBufferSlice } from '../../../../../com/mojang/blaze3d/buffers/GpuBufferSlice.d.ts'
 import type { RenderPass } from '../../../../../com/mojang/blaze3d/systems/RenderPass.d.ts'
 import type { AutoCloseable } from '../../../../../java/lang/AutoCloseable.d.ts'
@@ -6,10 +7,10 @@ import type { SpriteContentsTickerAccessor } from '../../../../../net/irisshader
 import type { SpriteContents } from '../../../../../net/minecraft/client/renderer/texture/SpriteContents.d.ts'
 import type { SpriteContents$AnimatedTexture } from '../../../../../net/minecraft/client/renderer/texture/SpriteContents$AnimatedTexture.d.ts'
 export class SpriteContents$AnimationState extends Object implements AutoCloseable, SpriteContentsTickerAccessor {
-    private constructor(null_: SpriteContents, animationInfo: SpriteContents$AnimatedTexture, frameTexturesByIndex: { [key: string]: any }, spriteUbosByMip: GpuBufferSlice[])
+    private constructor(null_: SpriteContents, animationInfo: SpriteContents$AnimatedTexture, frameTexturesByIndex: JavaMap<any, any>, spriteUbosByMip: GpuBufferSlice[])
     readonly animationInfo: SpriteContents$AnimatedTexture;
     readonly frame: number;
-    // private frameTexturesByIndex: { [key: string]: any };
+    // private frameTexturesByIndex: JavaMap<any, any>;
     // private hasUploadedAllOnce: boolean;
     // private isDirty: boolean;
     // private parent: SpriteContents;

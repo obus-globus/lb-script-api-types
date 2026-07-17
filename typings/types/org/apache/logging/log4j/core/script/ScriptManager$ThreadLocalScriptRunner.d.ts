@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { ThreadLocal } from '../../../../../../java/lang/ThreadLocal.d.ts'
 import type { ScriptEngine } from '../../../../../../javax/script/ScriptEngine.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -9,7 +10,7 @@ export class ScriptManager$ThreadLocalScriptRunner extends ScriptManager$Abstrac
     constructor(null_: ScriptManager, script: AbstractScript)
     // private runners: ThreadLocal<ScriptManager$MainScriptRunner>;
     readonly script: AbstractScript;
-    execute(bindings: { [key: string]: any }): Object;
+    execute(bindings: JavaMap<any, any>): Object;
     getScript(): AbstractScript;
     getScriptEngine(): ScriptEngine;
 }

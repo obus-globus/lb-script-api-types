@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../../java/lang/Comparable.d.ts'
@@ -23,7 +24,7 @@ export class MixinConfig extends Object implements Comparable<MixinConfig>, IMix
     private constructor()
     // private compatibility: string;
     // private compatibilityLevel: MixinEnvironment$CompatibilityLevel;
-    // private decorations: { [key: string]: Object };
+    // private decorations: JavaMap<string, Object>;
     // private env: MixinEnvironment;
     readonly handle: Config;
     // private initialised: boolean;
@@ -33,7 +34,7 @@ export class MixinConfig extends Object implements Comparable<MixinConfig>, IMix
     // private mixinClasses: string[];
     // private mixinClassesClient: string[];
     // private mixinClassesServer: string[];
-    // private mixinMapping: { [key: string]: MixinInfo[] };
+    // private mixinMapping: JavaMap<string, MixinInfo[]>;
     readonly mixinPackage: string;
     // private mixinPriority: number;
     // private mixins: MixinInfo[];

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -28,7 +29,7 @@ export class ExternalParser extends Object implements Initializable, Parser {
     getOutputParser(): Parser;
     getSupportedTypes(arg0: ParseContext): MediaType[];
     // private handleOutput(arg0: FileProcessResult, arg1: Path, arg2: XHTMLContentHandler, arg3: Metadata, arg4: ParseContext): void;
-    initialize(arg0: { [key: string]: Param<Object> }): void;
+    initialize(arg0: JavaMap<string, Param<Object>>): void;
     parse(arg0: InputStream, arg1: ContentHandler, arg2: Metadata, arg3: ParseContext): void;
     setCommandLine(arg0: string[]): void;
     setMaxStdErr(arg0: number): void;

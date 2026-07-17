@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { AmbiguityConsumer } from '../../../com/mojang/brigadier/AmbiguityConsumer.d.ts'
 import type { ParseResults } from '../../../com/mojang/brigadier/ParseResults.d.ts'
 import type { ResultConsumer } from '../../../com/mojang/brigadier/ResultConsumer.d.ts'
@@ -32,7 +33,7 @@ export class CommandDispatcher<S extends unknown> extends Object {
     getCompletionSuggestions(arg0: ParseResults<S>, arg1: number): CompletableFuture<Suggestions>;
     getPath(arg0: CommandNode<S>): string[];
     getRoot(): RootCommandNode<S>;
-    getSmartUsage(arg0: CommandNode<S>, arg1: S): Map<CommandNode<S>, string>;
+    getSmartUsage(arg0: CommandNode<S>, arg1: S): JavaMap<CommandNode<S>, string>;
     // private getSmartUsage(arg0: CommandNode<S>, arg1: S, arg2: boolean, arg3: boolean): string;
     parse(arg0: StringReader, arg1: S): ParseResults<S>;
     parse(arg0: string, arg1: S): ParseResults<S>;

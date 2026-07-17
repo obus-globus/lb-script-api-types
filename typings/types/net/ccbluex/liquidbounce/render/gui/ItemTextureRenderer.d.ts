@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { TextureTarget } from '../../../../../com/mojang/blaze3d/pipeline/TextureTarget.d.ts'
 import type { GpuDevice } from '../../../../../com/mojang/blaze3d/systems/GpuDevice.d.ts'
 import type { PoseStack } from '../../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
@@ -42,7 +43,7 @@ export class ItemTextureRenderer extends Object implements MinecraftShortcuts {
     // private textureSize: number;
     readonly world: ClientLevel;
     // private close(): void;
-    // private findBlockToItemAliases(): Map<Identifier, Identifier>;
+    // private findBlockToItemAliases(): JavaMap<Identifier, Identifier>;
     /**
      * @see net.minecraft.client.gui.render.GuiRenderer.prepareItemElements
 From 1.21.5 DrawContext code

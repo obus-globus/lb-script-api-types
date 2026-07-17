@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
@@ -7,11 +8,11 @@ import type { Pack200Strategy } from '../../../../../../org/apache/commons/compr
 export class Pack200CompressorOutputStream extends CompressorOutputStream<OutputStream> {
     static nullOutputStream(): OutputStream;
     constructor(arg0: OutputStream)
-    constructor(arg0: OutputStream, arg1: { [key: string]: string })
+    constructor(arg0: OutputStream, arg1: JavaMap<string, string>)
     constructor(arg0: OutputStream, arg1: Pack200Strategy)
-    constructor(arg0: OutputStream, arg1: Pack200Strategy, arg2: { [key: string]: string })
+    constructor(arg0: OutputStream, arg1: Pack200Strategy, arg2: JavaMap<string, string>)
     // private abstractStreamBridge: AbstractStreamBridge;
-    // private properties: { [key: string]: string };
+    // private properties: JavaMap<string, string>;
     close(): void;
     finish(): void;
     write(arg0: File): number;

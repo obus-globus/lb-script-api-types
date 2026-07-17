@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { PrintStream } from '../../../java/io/PrintStream.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { Field } from '../../../java/lang/reflect/Field.d.ts'
@@ -23,7 +24,7 @@ export class APIUtil extends Object {
     static apiArrayp(paramarg0: MemoryStack, ...paramarg1: ByteBuffer[]): number;
     static apiArrayp(paramarg0: MemoryStack, paramarg1: APIUtil$Encoder, ...paramarg2: CharSequence[]): number;
     static apiCheckAllocation(paramarg0: number, paramarg1: number, paramarg2: number): number;
-    static apiClassTokens(paramarg0: (param0: Field, param1: number) => boolean, paramarg1: { [key: number]: string }, ...paramarg2: Class<Object>[]): { [key: number]: string };
+    static apiClassTokens(paramarg0: (param0: Field, param1: number) => boolean, paramarg1: JavaMap<number, string>, ...paramarg2: Class<Object>[]): JavaMap<number, string>;
     static apiClosureRet(paramarg0: number, paramarg1: boolean): void;
     static apiClosureRet(paramarg0: number, paramarg1: number): void;
     static apiClosureRetL(paramarg0: number, paramarg1: number): void;

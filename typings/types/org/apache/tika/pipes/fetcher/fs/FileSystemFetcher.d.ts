@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
 import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { FileTime } from '../../../../../../java/nio/file/attribute/FileTime.d.ts'
@@ -18,7 +19,7 @@ export class FileSystemFetcher extends AbstractFetcher implements Initializable 
     checkInitialization(arg0: InitializableProblemHandler): void;
     fetch(arg0: string, arg1: Metadata, arg2: ParseContext): InputStream;
     getBasePath(): Path;
-    initialize(arg0: { [key: string]: Param<Object> }): void;
+    initialize(arg0: JavaMap<string, Param<Object>>): void;
     setBasePath(arg0: string): void;
     setExtractFileSystemMetadata(arg0: boolean): void;
     // private updateFileSystemMetadata(arg0: Path, arg1: Metadata): void;

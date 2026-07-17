@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { StringBuilder } from '../../../../../../../java/lang/StringBuilder.d.ts'
 import type { Field } from '../../../../../../../java/lang/reflect/Field.d.ts'
 import type { Comparator } from '../../../../../../../java/util/Comparator.d.ts'
@@ -26,7 +27,7 @@ export class CommandLine$Help extends Object {
     // private colorScheme: CommandLine$Help$ColorScheme;
     // private command: Object;
     commandName: string;
-    // private commands: { [key: string]: CommandLine$Help };
+    // private commands: JavaMap<string, CommandLine$Help>;
     optionFields: Field[];
     parameterLabelRenderer: CommandLine$Help$IParamLabelRenderer;
     positionalParametersFields: Field[];
@@ -35,7 +36,7 @@ export class CommandLine$Help extends Object {
     showDefaultValues: boolean;
     sortOptions: boolean;
     abbreviatedSynopsis(): string;
-    addAllSubcommands(commands: { [key: string]: CommandLine }): CommandLine$Help;
+    addAllSubcommands(commands: JavaMap<string, CommandLine>): CommandLine$Help;
     addSubcommand(commandName: string, command: Object): CommandLine$Help;
     ansi(): CommandLine$Help$Ansi;
     // private appendOptionSynopsis(optionText: CommandLine$Help$Ansi$Text, field: Field, optionName: string, prefix: string, suffix: string): CommandLine$Help$Ansi$Text;

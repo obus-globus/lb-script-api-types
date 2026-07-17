@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { JavaFieldBinding } from '../../../../../team/unnamed/mocha/runtime/binding/JavaFieldBinding.d.ts'
@@ -11,9 +12,9 @@ export class JavaObjectBinding extends Object implements ObjectValue {
     static of<T extends unknown>(paramarg0: Class<T>, paramarg1: T, paramarg2: ObjectValue): JavaObjectBinding;
     constructor()
     constructor(arg0: string[])
-    // private entries: { [key: string]: Object };
+    // private entries: JavaMap<string, Object>;
     // private names: string[];
-    entries(): { [key: string]: ObjectProperty };
+    entries(): JavaMap<string, ObjectProperty>;
     get(arg0: string): Value;
     getField(arg0: string): JavaFieldBinding;
     getProperty(arg0: string): ObjectProperty;

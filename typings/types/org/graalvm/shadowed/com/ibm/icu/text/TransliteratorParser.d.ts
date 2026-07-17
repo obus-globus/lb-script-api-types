@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { StringBuilder } from '../../../../../../../java/lang/StringBuilder.d.ts'
 import type { ParsePosition } from '../../../../../../../java/text/ParsePosition.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
@@ -19,7 +20,7 @@ export class TransliteratorParser extends Object {
     // private segmentStandins: StringBuilder;
     // private undefinedVariableName: string;
     // private variableLimit: string;
-    // private variableNames: { [key: string]: string[] };
+    // private variableNames: JavaMap<string, string[]>;
     // private variableNext: string;
     // private variablesVector: Object[];
     // private appendVariableDef(name: string, buf: StringBuilder): void;

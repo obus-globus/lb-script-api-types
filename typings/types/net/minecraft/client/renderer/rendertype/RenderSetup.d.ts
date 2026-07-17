@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { RenderPipeline } from '../../../../../com/mojang/blaze3d/pipeline/RenderPipeline.d.ts'
 import type { SamplerCache } from '../../../../../com/mojang/blaze3d/systems/SamplerCache.d.ts'
 import type { GpuTextureView } from '../../../../../com/mojang/blaze3d/textures/GpuTextureView.d.ts'
@@ -13,7 +14,7 @@ import type { TextureTransform } from '../../../../../net/minecraft/client/rende
 import type { TextureManager } from '../../../../../net/minecraft/client/renderer/texture/TextureManager.d.ts'
 export class RenderSetup extends Object implements MixinRenderSetupAccessor {
     static builder(parampipeline: RenderPipeline): RenderSetup$RenderSetupBuilder;
-    private constructor(pipeline: RenderPipeline, textures: { [key: string]: RenderSetup$TextureBinding }, useLightmap: boolean, useOverlay: boolean, layeringTransform: LayeringTransform, outputTarget: OutputTarget, textureTransform: TextureTransform, outlineProperty: RenderSetup$OutlineProperty, affectsCrumbling: boolean, sortOnUpload: boolean)
+    private constructor(pipeline: RenderPipeline, textures: JavaMap<string, RenderSetup$TextureBinding>, useLightmap: boolean, useOverlay: boolean, layeringTransform: LayeringTransform, outputTarget: OutputTarget, textureTransform: TextureTransform, outlineProperty: RenderSetup$OutlineProperty, affectsCrumbling: boolean, sortOnUpload: boolean)
     readonly affectsCrumbling: boolean;
     readonly layeringTransform: LayeringTransform;
     readonly outlineProperty: RenderSetup$OutlineProperty;
@@ -21,7 +22,7 @@ export class RenderSetup extends Object implements MixinRenderSetupAccessor {
     readonly pipeline: RenderPipeline;
     readonly sortOnUpload: boolean;
     readonly textureTransform: TextureTransform;
-    readonly textures: { [key: string]: RenderSetup$TextureBinding };
+    readonly textures: JavaMap<string, RenderSetup$TextureBinding>;
     readonly useLightmap: boolean;
     readonly useOverlay: boolean;
     getAffectsCrumbling(): boolean;

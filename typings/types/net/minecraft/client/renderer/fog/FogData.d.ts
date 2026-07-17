@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { FabricRenderState } from '../../../../../net/fabricmc/fabric/api/client/rendering/v1/FabricRenderState.d.ts'
 import type { RenderStateDataKey } from '../../../../../net/fabricmc/fabric/api/client/rendering/v1/RenderStateDataKey.d.ts'
@@ -10,7 +11,7 @@ export class FogData extends Object implements FabricRenderState {
     environmentalStart: number;
     renderDistanceEnd: number;
     renderDistanceStart: number;
-    // private renderStateData: Map<Object | null, Object | null>;
+    // private renderStateData: JavaMap<Object | null, Object | null>;
     skyEnd: number;
     clearExtraData(): void;
     getData<T extends unknown>(arg0: RenderStateDataKey<T>): T;

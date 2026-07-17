@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Clock } from '../../../java/time/Clock.d.ts'
 import type { Instant } from '../../../java/time/Instant.d.ts'
 import type { ZoneId } from '../../../java/time/ZoneId.d.ts'
@@ -40,7 +41,7 @@ export interface Chronology extends Object, Comparable<Chronology>{
     period(arg0: number, arg1: number, arg2: number): ChronoPeriod;
     prolepticYear(arg0: Era, arg1: number): number;
     range(arg0: ChronoField): ValueRange;
-    resolveDate(arg0: Map<TemporalField, number>, arg1: ResolverStyle): ChronoLocalDate;
+    resolveDate(arg0: JavaMap<TemporalField, number>, arg1: ResolverStyle): ChronoLocalDate;
     zonedDateTime(arg0: Instant, arg1: ZoneId): ChronoZonedDateTime<ChronoLocalDate>;
     zonedDateTime(arg0: TemporalAccessor): ChronoZonedDateTime<ChronoLocalDate>;
 }

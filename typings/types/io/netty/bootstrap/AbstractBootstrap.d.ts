@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { AbstractBootstrapConfig } from '../../../io/netty/bootstrap/AbstractBootstrapConfig.d.ts'
 import type { ChannelFactory } from '../../../io/netty/bootstrap/ChannelFactory.d.ts'
 import type { ChannelInitializerExtension } from '../../../io/netty/bootstrap/ChannelInitializerExtension.d.ts'
@@ -17,16 +18,16 @@ import type { Map$Entry } from '../../../java/util/Map$Entry.d.ts'
 export abstract class AbstractBootstrap<B extends AbstractBootstrap<B, C>, C extends Channel> extends Object implements Cloneable {
     constructor()
     constructor(arg0: AbstractBootstrap<B, C>)
-    // private attrs: Map<AttributeKey<Object>, Object>;
+    // private attrs: JavaMap<AttributeKey<Object>, Object>;
     // private channelFactory: ChannelFactory<C>;
     // private extensionsClassLoader: ClassLoader;
     // private group: (Object | null)[];
     // private handler: ChannelHandler;
     // private localAddress: SocketAddress;
-    // private options: Map<ChannelOption<Object>, Object>;
+    // private options: JavaMap<ChannelOption<Object>, Object>;
     attr<T extends unknown>(arg0: AttributeKey<T>, arg1: T): B;
-    attrs(): Map<AttributeKey<Object>, Object>;
-    attrs0(): Map<AttributeKey<Object>, Object>;
+    attrs(): JavaMap<AttributeKey<Object>, Object>;
+    attrs0(): JavaMap<AttributeKey<Object>, Object>;
     bind(): ChannelFuture;
     bind(arg0: InetAddress, arg1: number): ChannelFuture;
     bind(arg0: SocketAddress): ChannelFuture;
@@ -55,8 +56,8 @@ export abstract class AbstractBootstrap<B extends AbstractBootstrap<B, C>, C ext
     newAttributesArray(): Map$Entry<AttributeKey<Object>, Object>[];
     newOptionsArray(): Map$Entry<ChannelOption<Object>, Object>[];
     option<T extends unknown>(arg0: ChannelOption<T>, arg1: T): B;
-    options(): Map<ChannelOption<Object>, Object>;
-    options0(): Map<ChannelOption<Object>, Object>;
+    options(): JavaMap<ChannelOption<Object>, Object>;
+    options0(): JavaMap<ChannelOption<Object>, Object>;
     register(): ChannelFuture;
     // private self(): B;
     toString(): string;

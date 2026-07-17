@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -21,14 +22,14 @@ export class ModelBakery extends Object {
     static DESTROY_TYPES: RenderType[];
     static FIRE_0: SpriteId;
     static FIRE_1: SpriteId;
-    constructor(entityModelSet: EntityModelSet, sprites: SpriteGetter, playerSkinRenderCache: PlayerSkinRenderCache, unbakedBlockStateModels: Map<BlockState, BlockStateModel$UnbakedRoot>, clientInfos: Map<Identifier, ClientItem>, resolvedModels: Map<Identifier, ResolvedModel>, missingModel: ResolvedModel)
-    // private clientInfos: Map<Identifier, ClientItem>;
+    constructor(entityModelSet: EntityModelSet, sprites: SpriteGetter, playerSkinRenderCache: PlayerSkinRenderCache, unbakedBlockStateModels: JavaMap<BlockState, BlockStateModel$UnbakedRoot>, clientInfos: JavaMap<Identifier, ClientItem>, resolvedModels: JavaMap<Identifier, ResolvedModel>, missingModel: ResolvedModel)
+    // private clientInfos: JavaMap<Identifier, ClientItem>;
     // private entityModelSet: EntityModelSet;
     // private fabric_eventDispatcher: ModelLoadingEventDispatcher;
     // private missingModel: ResolvedModel;
     // private playerSkinRenderCache: PlayerSkinRenderCache;
-    // private resolvedModels: Map<Identifier, ResolvedModel>;
+    // private resolvedModels: JavaMap<Identifier, ResolvedModel>;
     // private sprites: SpriteGetter;
-    // private unbakedBlockStateModels: Map<BlockState, BlockStateModel$UnbakedRoot>;
+    // private unbakedBlockStateModels: JavaMap<BlockState, BlockStateModel$UnbakedRoot>;
     bakeModels(materials: MaterialBaker, taskExecutor: Executor): CompletableFuture<ModelBakery$BakingResult>;
 }

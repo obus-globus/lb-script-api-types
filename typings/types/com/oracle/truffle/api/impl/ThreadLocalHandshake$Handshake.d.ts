@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { TruffleLogger } from '../../../../../com/oracle/truffle/api/TruffleLogger.d.ts'
 import type { ThreadLocalHandshake$Barrier } from '../../../../../com/oracle/truffle/api/impl/ThreadLocalHandshake$Barrier.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
@@ -26,7 +27,7 @@ export class ThreadLocalHandshake$Handshake<T extends Consumer<Node>> extends Ob
     // private syncActionPrintStackTraces: boolean;
     // private syncEndOfEvent: boolean;
     // private syncStartOfEvent: boolean;
-    // private threads: Map<Thread, boolean>;
+    // private threads: JavaMap<Thread, boolean>;
     // private warned: AtomicBoolean;
     activateThread(): boolean;
     // private await(barrier: ThreadLocalHandshake$Barrier): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { RubySubexpressionCalls$CallGraphNode } from '../../../../../../com/oracle/truffle/regex/flavor/ruby/RubySubexpressionCalls$CallGraphNode.d.ts'
 import type { AtomicGroup } from '../../../../../../com/oracle/truffle/regex/tregex/parser/ast/AtomicGroup.d.ts'
 import type { BackReference } from '../../../../../../com/oracle/truffle/regex/tregex/parser/ast/BackReference.d.ts'
@@ -14,9 +15,9 @@ import type { DepthFirstTraversalRegexASTVisitor } from '../../../../../../com/o
 export class RubySubexpressionCalls$BuildCallGraphVisitor extends DepthFirstTraversalRegexASTVisitor {
     constructor(ast: RegexAST)
     // private ast: RegexAST;
-    callGraph: Map<RubySubexpressionCalls$CallGraphNode, RubySubexpressionCalls$CallGraphNode[]>;
+    callGraph: JavaMap<RubySubexpressionCalls$CallGraphNode, RubySubexpressionCalls$CallGraphNode[]>;
     // private enclosingCaptureGroups: Group[];
-    inDegree: Map<RubySubexpressionCalls$CallGraphNode, number>;
+    inDegree: JavaMap<RubySubexpressionCalls$CallGraphNode, number>;
     // private addEdge(from: RubySubexpressionCalls$CallGraphNode, to: RubySubexpressionCalls$CallGraphNode): void;
     leave(atomicGroup: AtomicGroup): void;
     leave(group: Group): void;

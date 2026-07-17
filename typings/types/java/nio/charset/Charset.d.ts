@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
 import type { CharBuffer } from '../../../java/nio/CharBuffer.d.ts'
 import type { CharsetDecoder } from '../../../java/nio/charset/CharsetDecoder.d.ts'
@@ -6,7 +7,7 @@ import type { Locale } from '../../../java/util/Locale.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../java/lang/Comparable.d.ts'
 export abstract class Charset extends Object implements Comparable<Charset> {
-    static availableCharsets(): { [key: string]: Charset };
+    static availableCharsets(): JavaMap<string, Charset>;
     static defaultCharset(): Charset;
     static forName(paramarg0: string): Charset;
     static forName(paramarg0: string, paramarg1: Charset): Charset;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
 import type { CompressorInputStream } from '../../../../../../org/apache/commons/compress/compressors/CompressorInputStream.d.ts'
@@ -7,13 +8,13 @@ export class Pack200CompressorInputStream extends CompressorInputStream {
     static matches(paramarg0: number[], paramarg1: number): boolean;
     static nullInputStream(): InputStream;
     constructor(arg0: File)
-    constructor(arg0: File, arg1: { [key: string]: string })
+    constructor(arg0: File, arg1: JavaMap<string, string>)
     constructor(arg0: File, arg1: Pack200Strategy)
-    constructor(arg0: File, arg1: Pack200Strategy, arg2: { [key: string]: string })
+    constructor(arg0: File, arg1: Pack200Strategy, arg2: JavaMap<string, string>)
     constructor(arg0: InputStream)
-    constructor(arg0: InputStream, arg1: { [key: string]: string })
+    constructor(arg0: InputStream, arg1: JavaMap<string, string>)
     constructor(arg0: InputStream, arg1: Pack200Strategy)
-    constructor(arg0: InputStream, arg1: Pack200Strategy, arg2: { [key: string]: string })
+    constructor(arg0: InputStream, arg1: Pack200Strategy, arg2: JavaMap<string, string>)
     // private abstractStreamBridge: AbstractStreamBridge;
     // private originalInputStream: InputStream;
     available(): number;

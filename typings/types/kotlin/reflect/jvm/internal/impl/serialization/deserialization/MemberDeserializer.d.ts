@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CallableDescriptor$UserDataKey } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableDescriptor$UserDataKey.d.ts'
 import type { ClassConstructorDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassConstructorDescriptor.d.ts'
@@ -34,7 +35,7 @@ export class MemberDeserializer extends Object {
     // private getDispatchReceiverParameter(): ReceiverParameterDescriptor;
     // private getPropertyFieldAnnotations(arg0: ProtoBuf$Property, arg1: boolean): AnnotationDescriptor[];
     // private getReceiverParameterAnnotations(arg0: MessageLite, arg1: AnnotatedCallableKind): AnnotationDescriptor[];
-    // private initializeWithCoroutinesExperimentalityStatus(arg0: DeserializedSimpleFunctionDescriptor, arg1: ReceiverParameterDescriptor, arg2: ReceiverParameterDescriptor, arg3: ReceiverParameterDescriptor[], arg4: TypeParameterDescriptor[], arg5: ValueParameterDescriptor[], arg6: KotlinType, arg7: Modality, arg8: DescriptorVisibility, arg9: Map<CallableDescriptor$UserDataKey<Object>, Object | null>): void;
+    // private initializeWithCoroutinesExperimentalityStatus(arg0: DeserializedSimpleFunctionDescriptor, arg1: ReceiverParameterDescriptor, arg2: ReceiverParameterDescriptor, arg3: ReceiverParameterDescriptor[], arg4: TypeParameterDescriptor[], arg5: ValueParameterDescriptor[], arg6: KotlinType, arg7: Modality, arg8: DescriptorVisibility, arg9: JavaMap<CallableDescriptor$UserDataKey<Object>, Object | null>): void;
     loadConstructor(arg0: ProtoBuf$Constructor, arg1: boolean): ClassConstructorDescriptor;
     loadFunction(arg0: ProtoBuf$Function): SimpleFunctionDescriptor;
     // private loadOldFlags(arg0: number): number;

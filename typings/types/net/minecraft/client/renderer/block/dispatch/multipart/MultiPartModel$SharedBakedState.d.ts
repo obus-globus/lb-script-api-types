@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { BitSet } from '../../../../../../../java/util/BitSet.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { MultiPartModelSharedBakedStateAccessor } from '../../../../../../../net/fabricmc/fabric/mixin/client/renderer/block/model/MultiPartModelSharedBakedStateAccessor.d.ts'
@@ -10,6 +11,6 @@ export class MultiPartModel$SharedBakedState extends Object implements MultiPart
     // private materialFlags: number;
     // private particleMaterial: Material$Baked;
     readonly selectors: MultiPartModel$Selector<BlockStateModel>[];
-    // private subsets: Map<BitSet, BlockStateModel[]>;
+    // private subsets: JavaMap<BitSet, BlockStateModel[]>;
     selectModels(state: BlockState): BlockStateModel[];
 }

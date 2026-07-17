@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Source } from '../../../../../com/oracle/truffle/api/source/Source.d.ts'
 import type { Source$SourceBuilder } from '../../../../../com/oracle/truffle/api/source/Source$SourceBuilder.d.ts'
 import type { URI } from '../../../../../java/net/URI.d.ts'
@@ -20,6 +21,6 @@ export class Source$LiteralBuilder extends Source$SourceBuilder {
     mimeType(newMimeType: string): Source$LiteralBuilder;
     name(newName: string): Source$LiteralBuilder;
     option(key: string, value: string): Source$LiteralBuilder;
-    options(options: { [key: string]: string }): Source$LiteralBuilder;
+    options(options: JavaMap<string, string>): Source$LiteralBuilder;
     uri(ownUri: URI): Source$LiteralBuilder;
 }

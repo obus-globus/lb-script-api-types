@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Replaceable } from '../../../../com/ibm/icu/text/Replaceable.d.ts'
 import type { Transliterator } from '../../../../com/ibm/icu/text/Transliterator.d.ts'
 import type { Transliterator$Factory } from '../../../../com/ibm/icu/text/Transliterator$Factory.d.ts'
@@ -26,8 +27,8 @@ export class AnyTransliterator extends Transliterator {
     static registerFactory(paramarg0: string, paramarg1: Transliterator$Factory): void;
     static registerInstance(paramarg0: Transliterator): void;
     static unregister(paramarg0: string): void;
-    constructor(arg0: string, arg1: UnicodeFilter, arg2: string, arg3: number, arg4: Transliterator, arg5: { [key: number]: Transliterator })
-    // private cache: { [key: number]: Transliterator };
+    constructor(arg0: string, arg1: UnicodeFilter, arg2: string, arg3: number, arg4: Transliterator, arg5: JavaMap<number, Transliterator>)
+    // private cache: JavaMap<number, Transliterator>;
     // private target: string;
     // private targetScript: number;
     addSourceTargetSet(arg0: string[], arg1: string[], arg2: string[]): void;

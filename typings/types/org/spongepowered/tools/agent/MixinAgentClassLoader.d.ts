@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { ClassLoader } from '../../../../java/lang/ClassLoader.d.ts'
@@ -14,8 +15,8 @@ export class MixinAgentClassLoader extends ClassLoader {
     static getSystemResources(paramarg0: string): Enumeration<URL>;
     static log(paramarg0: Level, paramarg1: string, ...paramarg2: Object[]): void;
     constructor()
-    // private mixins: Map<Class<Object>, number[]>;
-    // private targets: { [key: string]: number[] };
+    // private mixins: JavaMap<Class<Object>, number[]>;
+    // private targets: JavaMap<string, number[]>;
     addMixinClass(arg0: string): void;
     addTargetClass(arg0: string, arg1: ClassNode): void;
     getFakeMixinBytecode(arg0: Class<Object>): number[];

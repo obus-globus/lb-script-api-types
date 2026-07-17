@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CallableDescriptor$UserDataKey } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableDescriptor$UserDataKey.d.ts'
 import type { CallableMemberDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableMemberDescriptor.d.ts'
@@ -45,7 +46,7 @@ export abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
     readonly typeParameters: TypeParameterDescriptor[];
     // private unsubstitutedReturnType: KotlinType;
     // private unsubstitutedValueParameters: ValueParameterDescriptor[];
-    // private userDataMap: Map<CallableDescriptor$UserDataKey<Object>, Object>;
+    // private userDataMap: JavaMap<CallableDescriptor$UserDataKey<Object>, Object>;
     readonly visibility: DescriptorVisibility;
     accept<R extends unknown, D extends unknown>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
     copy(arg0: DeclarationDescriptor, arg1: Modality, arg2: DescriptorVisibility, arg3: CallableMemberDescriptor$Kind, arg4: boolean): FunctionDescriptor;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
 import type { AbstractProcessor } from '../../../../../../../../javax/annotation/processing/AbstractProcessor.d.ts'
 import type { ProcessingEnvironment } from '../../../../../../../../javax/annotation/processing/ProcessingEnvironment.d.ts'
@@ -14,7 +15,7 @@ export class GraalVmProcessor extends AbstractProcessor {
     constructor()
     // private annotationUtil: Annotations;
     // private processedElements: Element[];
-    // private reachableTypes: { [key: string]: ReachabilityMetadata$Type };
+    // private reachableTypes: JavaMap<string, ReachabilityMetadata$Type>;
     // private addField(parent: TypeElement, element: VariableElement): void;
     // private addMethod(parent: TypeElement, element: ExecutableElement): void;
     getReachabilityMetadataPath(groupId: string, artifactId: string, fallbackFolderName: string): string;

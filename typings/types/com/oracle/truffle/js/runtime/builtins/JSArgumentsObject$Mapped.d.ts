@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { InteropLibrary } from '../../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { HiddenKey } from '../../../../../../com/oracle/truffle/api/object/HiddenKey.d.ts'
@@ -104,8 +105,8 @@ export class JSArgumentsObject$Mapped extends JSArgumentsObject {
     static updatePropertyFlags(paramobj: JSDynamicObject, paramkey: Object, paramupdateFunction: (param0: number) => number): boolean;
     constructor(shape: Shape, proto: JSDynamicObject, arrayType: DynamicArray, array: Object, length: number)
     connectedArgumentCount: number;
-    disconnectedIndices: { [key: number]: Object };
+    disconnectedIndices: JavaMap<number, Object>;
     getConnectedArgumentCount(): number;
-    getDisconnectedIndices(): { [key: number]: Object };
+    getDisconnectedIndices(): JavaMap<number, Object>;
     initDisconnectedIndices(): void;
 }

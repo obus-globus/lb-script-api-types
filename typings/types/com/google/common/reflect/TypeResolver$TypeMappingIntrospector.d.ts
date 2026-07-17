@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { TypeResolver$TypeVariableKey } from '../../../../com/google/common/reflect/TypeResolver$TypeVariableKey.d.ts'
 import type { TypeVisitor } from '../../../../com/google/common/reflect/TypeVisitor.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
@@ -8,7 +9,7 @@ import type { WildcardType } from '../../../../java/lang/reflect/WildcardType.d.
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class TypeResolver$TypeMappingIntrospector extends TypeVisitor {
     private constructor()
-    // private mappings: Map<TypeResolver$TypeVariableKey, Type>;
+    // private mappings: JavaMap<TypeResolver$TypeVariableKey, Type>;
     // private map(var_: TypeResolver$TypeVariableKey, arg: Type): void;
     visitClass(clazz: Class<Object>): void;
     visitParameterizedType(parameterizedType: ParameterizedType): void;

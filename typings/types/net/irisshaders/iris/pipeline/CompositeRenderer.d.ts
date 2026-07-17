@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { RenderPipeline } from '../../../../com/mojang/blaze3d/pipeline/RenderPipeline.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -21,14 +22,14 @@ import type { FrameUpdateNotifier } from '../../../../net/irisshaders/iris/unifo
 import type { CustomUniforms } from '../../../../net/irisshaders/iris/uniforms/custom/CustomUniforms.d.ts'
 export class CompositeRenderer extends Object {
     static COMPOSITE_PIPELINE: RenderPipeline;
-    constructor(arg0: WorldRenderingPipeline, arg1: CompositePass, arg2: PackDirectives, arg3: ProgramSource[], arg4: ComputeSource[][], arg5: RenderTargets, arg6: ShaderStorageBufferHolder, arg7: TextureAccess, arg8: FrameUpdateNotifier, arg9: CenterDepthSampler, arg10: BufferFlipper, arg11: () => ShadowRenderTargets, arg12: TextureStage, arg13: { [key: string]: TextureAccess }, arg14: { [key: string]: TextureAccess }, arg15: GlImage[], arg16: { [key: number]: boolean }, arg17: CustomUniforms)
+    constructor(arg0: WorldRenderingPipeline, arg1: CompositePass, arg2: PackDirectives, arg3: ProgramSource[], arg4: ComputeSource[][], arg5: RenderTargets, arg6: ShaderStorageBufferHolder, arg7: TextureAccess, arg8: FrameUpdateNotifier, arg9: CenterDepthSampler, arg10: BufferFlipper, arg11: () => ShadowRenderTargets, arg12: TextureStage, arg13: JavaMap<string, TextureAccess>, arg14: JavaMap<string, TextureAccess>, arg15: GlImage[], arg16: JavaMap<number, boolean>, arg17: CustomUniforms)
     // private centerDepthSampler: CenterDepthSampler;
     // private compositePass: CompositePass;
     // private customImages: GlImage[];
-    // private customTextureIds: { [key: string]: TextureAccess };
+    // private customTextureIds: JavaMap<string, TextureAccess>;
     // private customUniforms: CustomUniforms;
     readonly flippedAtLeastOnceFinal: number[];
-    // private irisCustomTextures: { [key: string]: TextureAccess };
+    // private irisCustomTextures: JavaMap<string, TextureAccess>;
     // private noiseTexture: TextureAccess;
     // private passes: CompositeRenderer$Pass[];
     // private pipeline: WorldRenderingPipeline;

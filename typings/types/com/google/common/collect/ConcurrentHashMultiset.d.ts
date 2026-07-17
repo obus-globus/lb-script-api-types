@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { AtomicInteger } from '../../../../java/util/concurrent/atomic/AtomicInteger.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ConcurrentHashMultiset<E extends unknown> {
@@ -5,5 +6,5 @@ export class ConcurrentHashMultiset<E extends unknown> {
     // render structurally (arrays / maps); only the statics are declared here.
     static create<E extends unknown>(): E[];
     static create<E extends unknown>(paramelements: E[]): E[];
-    static create<E extends unknown>(paramcountMap: Map<E, AtomicInteger>): E[];
+    static create<E extends unknown>(paramcountMap: JavaMap<E, AtomicInteger>): E[];
 }

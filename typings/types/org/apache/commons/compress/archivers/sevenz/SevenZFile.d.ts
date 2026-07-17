@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Closeable } from '../../../../../../java/io/Closeable.d.ts'
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
@@ -47,7 +48,7 @@ export class SevenZFile extends Object implements Closeable {
     // private buildDecoderStack(arg0: Folder, arg1: number, arg2: number, arg3: SevenZArchiveEntry): InputStream;
     // private buildDecodingStream(arg0: number, arg1: boolean): void;
     // private calculateStreamMap(arg0: Archive): void;
-    // private checkEntryIsInitialized(arg0: { [key: number]: SevenZArchiveEntry }, arg1: number): void;
+    // private checkEntryIsInitialized(arg0: JavaMap<number, SevenZArchiveEntry>, arg1: number): void;
     close(): void;
     // private getCurrentStream(): InputStream;
     getDefaultName(): string;

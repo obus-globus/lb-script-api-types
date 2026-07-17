@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Field } from '../../../../../../java/lang/reflect/Field.d.ts'
 import type { Method } from '../../../../../../java/lang/reflect/Method.d.ts'
@@ -6,9 +7,9 @@ import type { Pair } from '../../../../../../kotlin/Pair.d.ts'
 import type { Triple } from '../../../../../../kotlin/Triple.d.ts'
 export class ScriptReflectionUtil extends Object {
     constructor()
-    // private fieldCache: Map<Pair<Class<Object>, string>, Field>;
-    // private methodCache: Map<Triple<Class<Object>, string, Class<Object>[]>, Method>;
-    // private primitiveTypeMap: Map<Class<Object>, Class<Object> | null>;
+    // private fieldCache: JavaMap<Pair<Class<Object>, string>, Field>;
+    // private methodCache: JavaMap<Triple<Class<Object>, string, Class<Object>[]>, Method>;
+    // private primitiveTypeMap: JavaMap<Class<Object>, Class<Object> | null>;
     /**
      * Resolves a Java class by its fully-qualified name (accepts `/` or `.` separators).
      *

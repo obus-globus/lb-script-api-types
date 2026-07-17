@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { InterruptedException } from '../../../../../../java/lang/InterruptedException.d.ts'
 import type { Runnable } from '../../../../../../java/lang/Runnable.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -24,9 +25,9 @@ export class LockBasedStorageManager extends Object implements StorageManager {
     createLazyValue<T extends unknown>(arg0: () => T): NotNullLazyValue<T>;
     createLazyValueWithPostCompute<T extends unknown>(arg0: () => T, arg1: (param0: boolean) => T, arg2: (param0: T) => void): NotNullLazyValue<T>;
     createMemoizedFunction<K extends unknown, V extends unknown>(arg0: (param0: K) => V): MemoizedFunctionToNotNull<K, V>;
-    createMemoizedFunction<K extends unknown, V extends unknown>(arg0: (param0: K) => V, arg1: Map<K, Object>): MemoizedFunctionToNotNull<K, V>;
+    createMemoizedFunction<K extends unknown, V extends unknown>(arg0: (param0: K) => V, arg1: JavaMap<K, Object>): MemoizedFunctionToNotNull<K, V>;
     createMemoizedFunctionWithNullableValues<K extends unknown, V extends unknown>(arg0: (param0: K) => V): MemoizedFunctionToNullable<K, V>;
-    createMemoizedFunctionWithNullableValues<K extends unknown, V extends unknown>(arg0: (param0: K) => V, arg1: Map<K, Object>): MemoizedFunctionToNullable<K, V>;
+    createMemoizedFunctionWithNullableValues<K extends unknown, V extends unknown>(arg0: (param0: K) => V, arg1: JavaMap<K, Object>): MemoizedFunctionToNullable<K, V>;
     createNullableLazyValue<T extends unknown>(arg0: () => T): NullableLazyValue<T>;
     createRecursionTolerantLazyValue<T extends unknown>(arg0: () => T, arg1: T): NotNullLazyValue<T>;
     recursionDetectedDefault<V extends unknown, K extends unknown>(arg0: string, arg1: K): LockBasedStorageManager$RecursionDetectedResult<V>;

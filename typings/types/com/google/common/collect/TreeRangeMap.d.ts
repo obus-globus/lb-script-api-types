@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Cut } from '../../../../com/google/common/collect/Cut.d.ts'
 import type { Range } from '../../../../com/google/common/collect/Range.d.ts'
 import type { RangeMap } from '../../../../com/google/common/collect/RangeMap.d.ts'
@@ -10,10 +11,10 @@ export class TreeRangeMap<K extends Comparable<Object>, V extends unknown> exten
     static copyOf<K extends Comparable<Object>, V extends unknown>(paramrangeMap: RangeMap<K, V>): TreeRangeMap<K, V>;
     static create<K extends Comparable<Object>, V extends unknown>(): TreeRangeMap<K, V>;
     private constructor()
-    private constructor(entriesByLowerBound: Map<Cut<K>, TreeRangeMap$RangeMapEntry<K, V>>)
-    // private entriesByLowerBound: Map<Cut<K>, TreeRangeMap$RangeMapEntry<K, V>>;
-    asDescendingMapOfRanges(): Map<Range<K>, V>;
-    asMapOfRanges(): Map<Range<K>, V>;
+    private constructor(entriesByLowerBound: JavaMap<Cut<K>, TreeRangeMap$RangeMapEntry<K, V>>)
+    // private entriesByLowerBound: JavaMap<Cut<K>, TreeRangeMap$RangeMapEntry<K, V>>;
+    asDescendingMapOfRanges(): JavaMap<Range<K>, V>;
+    asMapOfRanges(): JavaMap<Range<K>, V>;
     clear(): void;
     // private coalescedRange(range: Range<K>, value: V): Range<K>;
     // private emptySubRangeMap(): RangeMap<K, V>;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { PoseStack } from '../../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
 import type { PoseStack$Pose } from '../../../../../com/mojang/blaze3d/vertex/PoseStack$Pose.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
@@ -33,7 +34,7 @@ export class ItemStackRenderState$LayerRenderState extends Object implements Fab
     // private parentState: ItemStackRenderState;
     readonly particleMaterial: Material$Baked;
     // private quads: BakedQuad[];
-    // private renderStateData: Map<Object | null, Object | null>;
+    // private renderStateData: JavaMap<Object | null, Object | null>;
     // private specialRenderer: SpecialModelRenderer<Object>;
     // private tintLayers: (Object | null)[];
     readonly usesBlockLight: boolean;

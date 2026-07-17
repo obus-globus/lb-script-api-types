@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Tag } from '../../../../../../../com/viaversion/nbt/tag/Tag.d.ts'
 import type { UserConnection } from '../../../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { Protocol } from '../../../../../../../com/viaversion/viaversion/api/protocol/Protocol.d.ts'
@@ -11,14 +12,14 @@ export class ArmorTrimMaterial extends Record implements Copyable, Rewritable {
     static TYPE1_21_2: HolderType<ArmorTrimMaterial>;
     static TYPE1_21_4: HolderType<ArmorTrimMaterial>;
     static TYPE1_21_5: HolderType<ArmorTrimMaterial>;
-    constructor(assetName: string, itemId: number, itemModelIndex: number, overrideArmorMaterials: { [key: string]: string }, description: Tag)
-    constructor(arg0: string, arg1: number, arg2: { [key: string]: string }, arg3: Tag)
-    constructor(arg0: string, arg1: { [key: string]: string }, arg2: Tag)
+    constructor(assetName: string, itemId: number, itemModelIndex: number, overrideArmorMaterials: JavaMap<string, string>, description: Tag)
+    constructor(arg0: string, arg1: number, arg2: JavaMap<string, string>, arg3: Tag)
+    constructor(arg0: string, arg1: JavaMap<string, string>, arg2: Tag)
     // private assetName: string;
     // private description: Tag;
     // private itemId: number;
     // private itemModelIndex: number;
-    // private overrideArmorMaterials: { [key: string]: string };
+    // private overrideArmorMaterials: JavaMap<string, string>;
     assetName(): string;
     copy(): ArmorTrimMaterial;
     description(): Tag;
@@ -26,7 +27,7 @@ export class ArmorTrimMaterial extends Record implements Copyable, Rewritable {
     hashCode(): number;
     itemId(): number;
     itemModelIndex(): number;
-    overrideArmorMaterials(): { [key: string]: string };
+    overrideArmorMaterials(): JavaMap<string, string>;
     rewrite(arg0: UserConnection, arg1: Protocol<any, any, any, any>, arg2: boolean): ArmorTrimMaterial;
     toString(): string;
 }

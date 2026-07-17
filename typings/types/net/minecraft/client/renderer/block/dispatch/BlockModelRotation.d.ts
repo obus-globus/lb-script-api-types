@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { OctahedralGroup } from '../../../../../../com/mojang/math/OctahedralGroup.d.ts'
 import type { Transformation } from '../../../../../../com/mojang/math/Transformation.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -10,8 +11,8 @@ export class BlockModelRotation extends Object implements ModelState {
     static NO_TRANSFORM: Matrix4fc;
     static get(paramgroup: OctahedralGroup): BlockModelRotation;
     private constructor(orientation: OctahedralGroup)
-    // private faceMapping: Map<Direction, Matrix4fc>;
-    // private inverseFaceMapping: Map<Direction, Matrix4fc>;
+    // private faceMapping: JavaMap<Direction, Matrix4fc>;
+    // private inverseFaceMapping: JavaMap<Direction, Matrix4fc>;
     // private orientation: OctahedralGroup;
     // private transformation: Transformation;
     // private withUvLock: BlockModelRotation$WithUvLock;

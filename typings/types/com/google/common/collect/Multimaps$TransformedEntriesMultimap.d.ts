@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { AbstractMultimap } from '../../../../com/google/common/collect/AbstractMultimap.d.ts'
 import type { Maps$EntryTransformer } from '../../../../com/google/common/collect/Maps$EntryTransformer.d.ts'
 import type { Multimap } from '../../../../com/google/common/collect/Multimap.d.ts'
@@ -10,7 +11,7 @@ export class Multimaps$TransformedEntriesMultimap<K extends unknown, V1 extends 
     // private transformer: (param0: K, param1: V1) => V2;
     clear(): void;
     containsKey(key: Object): boolean;
-    createAsMap(): Map<K, V2[]>;
+    createAsMap(): JavaMap<K, V2[]>;
     createEntries(): Map$Entry<K, V2>[];
     createKeySet(): K[];
     createKeys(): K[];

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { NDManager } from '../../../ai/djl/ndarray/NDManager.d.ts'
 import type { DataType } from '../../../ai/djl/ndarray/types/DataType.d.ts'
 import type { Shape } from '../../../ai/djl/ndarray/types/Shape.d.ts'
@@ -20,7 +21,7 @@ export interface Block extends Object {
     freezeParameters(arg0: boolean): void;
     freezeParameters(arg0: boolean, arg1: (param0: Parameter) => boolean): void;
     getChildren(): (Object | null)[];
-    getCustomMetadata(): { [key: string]: string };
+    getCustomMetadata(): JavaMap<string, string>;
     getDirectParameters(): (Object | null)[];
     getInputShapes(): Shape[];
     getOutputDataTypes(): DataType[];

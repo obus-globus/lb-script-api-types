@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { GpuBufferSlice } from '../../../../com/mojang/blaze3d/buffers/GpuBufferSlice.d.ts'
 import type { RenderPipeline } from '../../../../com/mojang/blaze3d/pipeline/RenderPipeline.d.ts'
 import type { RenderTarget } from '../../../../com/mojang/blaze3d/pipeline/RenderTarget.d.ts'
@@ -68,13 +69,13 @@ export class RenderShortcutsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L152 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:152}
      */
-    static drawCustomMesh(self: WorldRenderEnvironment, pipeline: RenderPipeline, textures: { [key: string]: AbstractTexture }, uniforms: { [key: string]: GpuBufferSlice }, drawer: (param0: VertexConsumer, param1: PoseStack$Pose) => void): void;
+    static drawCustomMesh(self: WorldRenderEnvironment, pipeline: RenderPipeline, textures: JavaMap<string, AbstractTexture>, uniforms: JavaMap<string, GpuBufferSlice>, drawer: (param0: VertexConsumer, param1: PoseStack$Pose) => void): void;
     /**
      * Variant of {@link drawCustomMesh} that binds {@link sampler0} as `Sampler0`.
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L137 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:137}
      */
-    static drawCustomMeshTextured(self: WorldRenderEnvironment, sampler0: AbstractTexture, pipeline: RenderPipeline, uniforms: { [key: string]: GpuBufferSlice }, drawer: (param0: VertexConsumer, param1: PoseStack$Pose) => void): void;
+    static drawCustomMeshTextured(self: WorldRenderEnvironment, sampler0: AbstractTexture, pipeline: RenderPipeline, uniforms: JavaMap<string, GpuBufferSlice>, drawer: (param0: VertexConsumer, param1: PoseStack$Pose) => void): void;
     static drawGenericBlockESP(self: RenderTarget, renderState: CachedMeshStorage, pipeline: RenderPipeline, distanceFade: DistanceFadeUniformValueGroup, dynamicTransforms: () => GpuBufferSlice): boolean;
     /**
      * Function to draw a circle of the size {@link outerRadius} with a cutout of size {@link innerRadius}

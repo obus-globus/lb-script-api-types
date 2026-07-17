@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { PrintStream } from '../../../../../../../java/io/PrintStream.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { Runnable } from '../../../../../../../java/lang/Runnable.d.ts'
@@ -37,7 +38,7 @@ export class CommandLine extends Object {
     getCommandName(): string;
     getParent(): CommandLine;
     getSeparator(): string;
-    getSubcommands(): { [key: string]: CommandLine };
+    getSubcommands(): JavaMap<string, CommandLine>;
     getUnmatchedArguments(): string[];
     isOverwrittenOptionsAllowed(): boolean;
     isUnmatchedArgumentsAllowed(): boolean;

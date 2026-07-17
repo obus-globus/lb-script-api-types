@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { GlyphProvider } from '../../../../../com/mojang/blaze3d/font/GlyphProvider.d.ts'
 import type { GlyphProvider$Conditional } from '../../../../../com/mojang/blaze3d/font/GlyphProvider$Conditional.d.ts'
 import type { AutoCloseable } from '../../../../../java/lang/AutoCloseable.d.ts'
@@ -33,9 +34,9 @@ export class FontManager extends Object implements AutoCloseable, FabricResource
     constructor(textureManager: TextureManager, atlasManager: AtlasManager, playerSkinRenderCache: PlayerSkinRenderCache)
     // private anyGlyphs: FontManager$CachedFontProvider;
     // private atlasManager: AtlasManager;
-    // private atlasProviders: Map<Identifier, AtlasGlyphProvider>;
+    // private atlasProviders: JavaMap<Identifier, AtlasGlyphProvider>;
     // private fabric$id: Identifier;
-    fontSets: Map<Identifier, FontSet>;
+    fontSets: JavaMap<Identifier, FontSet>;
     // private missingFontSet: FontSet;
     // private nonFishyGlyphs: FontManager$CachedFontProvider;
     // private playerProvider: PlayerGlyphProvider;
@@ -54,7 +55,7 @@ export class FontManager extends Object implements AutoCloseable, FabricResource
     // private prepare(manager: ResourceManager, executor: Executor): CompletableFuture<FontManager$Preparation>;
     prepareSharedState(currentReload: PreparableReloadListener$SharedState): void;
     reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => CompletableFuture<Object>, reloadExecutor: Executor): CompletableFuture<void>;
-    // private resolveProviders(unresolvedProviders: FontManager$UnresolvedBuilderBundle[]): Map<Identifier, GlyphProvider$Conditional[]>;
+    // private resolveProviders(unresolvedProviders: FontManager$UnresolvedBuilderBundle[]): JavaMap<Identifier, GlyphProvider$Conditional[]>;
     // private safeLoad(id: FontManager$BuilderId, provider: GlyphProviderDefinition$Loader, manager: ResourceManager, executor: Executor): CompletableFuture<Optional<GlyphProvider>>;
     updateOptions(options: Options): void;
 }

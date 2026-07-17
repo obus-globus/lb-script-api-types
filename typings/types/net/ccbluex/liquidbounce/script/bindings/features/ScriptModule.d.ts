@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Supplier } from '../../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Value } from '../../../../../../net/ccbluex/liquidbounce/config/types/Value.d.ts'
@@ -9,11 +10,11 @@ import type { Value as Value_2 } from '../../../../../../org/graalvm/polyglot/Va
  * A client module defined by a script - the object passed to a `registerModule` callback. Register event handlers on it with `on(...)`, expose settings, and it participates in the client's module system.
  */
 export class ScriptModule extends ClientModule {
-    constructor(script: PolyglotScript, moduleObject: { [key: string]: Object })
+    constructor(script: PolyglotScript, moduleObject: JavaMap<string, Object>)
     // private _description: string | null;
-    // private _values: { [key: string]: Value<Object> };
+    // private _values: JavaMap<string, Value<Object>>;
     description: () => string | null;
-    // private events: { [key: string]: Value_2 };
+    // private events: JavaMap<string, Value_2>;
     /**
      * The script that owns this module.
      */
@@ -23,7 +24,7 @@ export class ScriptModule extends ClientModule {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptModule.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptModule.kt:59}
      */
-    readonly settings: { [key: string]: Value<Object> };
+    readonly settings: JavaMap<string, Value<Object>>;
     tag: string | null;
     // private callEvent(event: string, payload: Event | null): void;
     // private hookHandler(eventName: string): void;

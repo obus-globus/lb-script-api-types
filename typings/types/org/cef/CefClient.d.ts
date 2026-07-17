@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Dimension } from '../../java/awt/Dimension.d.ts'
 import type { Point } from '../../java/awt/Point.d.ts'
 import type { Rectangle } from '../../java/awt/Rectangle.d.ts'
@@ -58,7 +59,7 @@ import type { CefRequest$TransitionType } from '../../org/cef/network/CefRequest
 export class CefClient extends CefClientHandler implements CefAudioHandler, CefContextMenuHandler, CefDialogHandler, CefDisplayHandler, CefDownloadHandler, CefDragHandler, CefFocusHandler, CefJSDialogHandler, CefKeyboardHandler, CefLifeSpanHandler, CefLoadHandler, CefPrintHandler, CefRenderHandler, CefRequestHandler, CefWindowHandler {
     constructor()
     // private audioHandler_: CefAudioHandler;
-    // private browser_: { [key: number]: CefBrowser };
+    // private browser_: JavaMap<number, CefBrowser>;
     // private contextMenuHandler_: CefContextMenuHandler;
     // private dialogHandler_: CefDialogHandler;
     // private displayHandler_: CefDisplayHandler;

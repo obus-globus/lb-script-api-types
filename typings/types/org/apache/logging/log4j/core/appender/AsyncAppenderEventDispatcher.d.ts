@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Runnable } from '../../../../../../java/lang/Runnable.d.ts'
 import type { StackTraceElement } from '../../../../../../java/lang/StackTraceElement.d.ts'
 import type { Thread } from '../../../../../../java/lang/Thread.d.ts'
@@ -20,7 +21,7 @@ export class AsyncAppenderEventDispatcher extends Log4jThread {
     static currentThread(): Thread;
     static dumpStack(): void;
     static enumerate(paramarg0: Thread[]): number;
-    static getAllStackTraces(): Map<Thread, StackTraceElement[]>;
+    static getAllStackTraces(): JavaMap<Thread, StackTraceElement[]>;
     static getDefaultUncaughtExceptionHandler(): (param0: Thread, param1: Throwable) => void;
     static holdsLock(paramarg0: Object): boolean;
     static interrupted(): boolean;

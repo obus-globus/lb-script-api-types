@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ImmutableRangeMap$Builder } from '../../../../com/google/common/collect/ImmutableRangeMap$Builder.d.ts'
 import type { Range } from '../../../../com/google/common/collect/Range.d.ts'
 import type { RangeMap } from '../../../../com/google/common/collect/RangeMap.d.ts'
@@ -18,8 +19,8 @@ export class ImmutableRangeMap<K extends Comparable<Object>, V extends unknown> 
     constructor(ranges: Range<K>[], values: V[])
     // private ranges: Range<K>[];
     // private values: V[];
-    asDescendingMapOfRanges(): Map<Range<K>, V>;
-    asMapOfRanges(): Map<Range<K>, V>;
+    asDescendingMapOfRanges(): JavaMap<Range<K>, V>;
+    asMapOfRanges(): JavaMap<Range<K>, V>;
     clear(): void;
     equals(o: Object | null): boolean;
     get(key: K): V;

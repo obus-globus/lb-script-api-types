@@ -1,8 +1,9 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Reference2ShortLinkedOpenHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2ShortLinkedOpenHashMap$MapIterator.d.ts'
 import type { ShortConsumer } from '../../../../../it/unimi/dsi/fastutil/shorts/ShortConsumer.d.ts'
 import type { ShortListIterator } from '../../../../../it/unimi/dsi/fastutil/shorts/ShortListIterator.d.ts'
 export class Reference2ShortLinkedOpenHashMap$ValueIterator extends Reference2ShortLinkedOpenHashMap$MapIterator<Object> implements ShortListIterator {
-    constructor(null_: { [key: string]: any })
+    constructor(null_: JavaMap<any, any>)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     add(arg0: number): void;
     next(): number;

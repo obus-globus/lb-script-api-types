@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Closeable } from '../../../../../../java/io/Closeable.d.ts'
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
@@ -46,7 +47,7 @@ export class ZipFile extends Object implements Closeable {
     readonly entries: ZipArchiveEntry[];
     readonly firstLocalFileHeaderOffset: number;
     // private isSplitZipArchive: boolean;
-    // private nameMap: { [key: string]: ZipArchiveEntry[] };
+    // private nameMap: JavaMap<string, ZipArchiveEntry[]>;
     // private shortBbuf: ByteBuffer;
     // private shortBuf: number[];
     // private useUnicodeExtraFields: boolean;
@@ -73,12 +74,12 @@ export class ZipFile extends Object implements Closeable {
     getInputStream(arg0: ZipArchiveEntry): InputStream;
     getRawInputStream(arg0: ZipArchiveEntry): InputStream;
     getUnixSymlink(arg0: ZipArchiveEntry): string;
-    // private populateFromCentralDirectory(): Map<ZipArchiveEntry, ZipFile$NameAndComment>;
+    // private populateFromCentralDirectory(): JavaMap<ZipArchiveEntry, ZipFile$NameAndComment>;
     // private positionAtCentralDirectory(): void;
     // private positionAtCentralDirectory32(): void;
     // private positionAtCentralDirectory64(): void;
-    // private readCentralDirectoryEntry(arg0: Map<ZipArchiveEntry, ZipFile$NameAndComment>): void;
-    // private resolveLocalFileHeaderData(arg0: Map<ZipArchiveEntry, ZipFile$NameAndComment>): void;
+    // private readCentralDirectoryEntry(arg0: JavaMap<ZipArchiveEntry, ZipFile$NameAndComment>): void;
+    // private resolveLocalFileHeaderData(arg0: JavaMap<ZipArchiveEntry, ZipFile$NameAndComment>): void;
     // private sanityCheckLFHOffset(arg0: ZipArchiveEntry): void;
     // private setDataOffset(arg0: ZipArchiveEntry): number[];
     // private setSizesAndOffsetFromZip64Extra(arg0: ZipArchiveEntry): void;

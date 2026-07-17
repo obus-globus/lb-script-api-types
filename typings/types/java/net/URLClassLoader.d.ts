@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Closeable } from '../../java/io/Closeable.d.ts'
 import type { InputStream } from '../../java/io/InputStream.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
@@ -28,7 +29,7 @@ export class URLClassLoader extends SecureClassLoader implements Closeable {
     constructor(arg0: URL[], arg1: ClassLoader, arg2: URLStreamHandlerFactory)
     constructor(arg0: string, arg1: URL[], arg2: ClassLoader)
     constructor(arg0: string, arg1: URL[], arg2: ClassLoader, arg3: URLStreamHandlerFactory)
-    // private closeables: Map<Closeable, void>;
+    // private closeables: JavaMap<Closeable, void>;
     // private ucp: URLClassPath;
     addURL(arg0: URL): void;
     close(): void;

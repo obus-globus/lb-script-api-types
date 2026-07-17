@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { TruffleObject } from '../../../../../../com/oracle/truffle/api/interop/TruffleObject.d.ts'
 import type { Supplier } from '../../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -12,7 +13,7 @@ export class MemoryDump extends Object implements TruffleObject {
     // private heapDumpBuilder: () => HeapDump$Builder;
     // private limit: number;
     // private maxDepth: number;
-    // private metaObjectCache: { [key: string]: MemoryDump$MetaObjectCopy };
+    // private metaObjectCache: JavaMap<string, MemoryDump$MetaObjectCopy>;
     // private objectCache: WeakIdentityHashMap<Object, MemoryDump$ObjectCopy>;
     // private replacement: CacheReplacement;
     addDump(dump: Object[]): void;

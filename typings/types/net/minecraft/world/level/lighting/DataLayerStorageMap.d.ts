@@ -1,11 +1,12 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { DataLayer } from '../../../../../net/minecraft/world/level/chunk/DataLayer.d.ts'
 export abstract class DataLayerStorageMap<M extends DataLayerStorageMap<M>> extends Object {
-    constructor(map: { [key: string]: any })
+    constructor(map: JavaMap<any, any>)
     // private cacheEnabled: boolean;
     // private lastSectionKeys: number[];
     // private lastSections: DataLayer[];
-    // private map: { [key: string]: any };
+    // private map: JavaMap<any, any>;
     clearCache(): void;
     copy(): M;
     copyDataLayer(sectionNode: number): DataLayer;

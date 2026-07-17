@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { ProtocolVersion } from '../../../../../../com/viaversion/viaversion/api/protocol/version/ProtocolVersion.d.ts'
 import type { ProtocolVersionRange } from '../../../../../../com/viaversion/viaversion/api/protocol/version/ProtocolVersionRange.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -9,10 +10,10 @@ import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemS
 import type { Enchantment } from '../../../../../../net/minecraft/world/item/enchantment/Enchantment.d.ts'
 import type { BannerPattern } from '../../../../../../net/minecraft/world/level/block/entity/BannerPattern.d.ts'
 export class VersionedRegistries extends Object {
-    static EFFECT_DIFF: Map<Holder<MobEffect>, ProtocolVersionRange>;
-    static ENCHANTMENT_DIFF: Map<ResourceKey<Enchantment>, ProtocolVersionRange>;
-    static ITEM_DIFF: Map<Item, ProtocolVersionRange>;
-    static PATTERN_DIFF: Map<ResourceKey<BannerPattern>, ProtocolVersionRange>;
+    static EFFECT_DIFF: JavaMap<Holder<MobEffect>, ProtocolVersionRange>;
+    static ENCHANTMENT_DIFF: JavaMap<ResourceKey<Enchantment>, ProtocolVersionRange>;
+    static ITEM_DIFF: JavaMap<Item, ProtocolVersionRange>;
+    static PATTERN_DIFF: JavaMap<ResourceKey<BannerPattern>, ProtocolVersionRange>;
     static containsBannerPattern(paramarg0: ResourceKey<BannerPattern>, paramarg1: ProtocolVersion): boolean;
     static containsEffect(paramarg0: Holder<MobEffect>, paramarg1: ProtocolVersion): boolean;
     static containsEnchantment(paramarg0: ResourceKey<Enchantment>, paramarg1: ProtocolVersion): boolean;

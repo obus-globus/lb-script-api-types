@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { MethodVisitor } from '../../../../org/objectweb/asm/MethodVisitor.d.ts'
 import type { AbstractInsnNode } from '../../../../org/objectweb/asm/tree/AbstractInsnNode.d.ts'
 import type { LabelNode } from '../../../../org/objectweb/asm/tree/LabelNode.d.ts'
@@ -21,7 +22,7 @@ export class IntInsnNode extends AbstractInsnNode {
     constructor(arg0: number, arg1: number)
     operand: number;
     accept(arg0: MethodVisitor): void;
-    clone(arg0: Map<LabelNode, LabelNode>): AbstractInsnNode;
+    clone(arg0: JavaMap<LabelNode, LabelNode>): AbstractInsnNode;
     getType(): number;
     setOpcode(arg0: number): void;
 }

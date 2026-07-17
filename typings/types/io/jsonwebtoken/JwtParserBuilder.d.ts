@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Clock } from '../../io/jsonwebtoken/Clock.d.ts'
 import type { CompressionCodecResolver } from '../../io/jsonwebtoken/CompressionCodecResolver.d.ts'
 import type { JwtParser } from '../../io/jsonwebtoken/JwtParser.d.ts'
@@ -28,12 +29,12 @@ export interface JwtParserBuilder extends Builder<JwtParser>, Object{
     critical(): NestedCollection<string, JwtParserBuilder>;
     decryptWith(arg0: PrivateKey): JwtParserBuilder;
     decryptWith(arg0: SecretKey): JwtParserBuilder;
-    deserializeJsonWith(arg0: Deserializer<{ [key: string]: Object | null }>): JwtParserBuilder;
+    deserializeJsonWith(arg0: Deserializer<JavaMap<string, Object | null>>): JwtParserBuilder;
     enc(): NestedCollection<AeadAlgorithm, JwtParserBuilder>;
-    json(arg0: Deserializer<{ [key: string]: Object | null }>): JwtParserBuilder;
+    json(arg0: Deserializer<JavaMap<string, Object | null>>): JwtParserBuilder;
     key(): NestedCollection<KeyAlgorithm<any, any>, JwtParserBuilder>;
     keyLocator(arg0: Locator<Key>): JwtParserBuilder;
-    provider(arg0: { [key: string]: any }): JwtParserBuilder;
+    provider(arg0: JavaMap<any, any>): JwtParserBuilder;
     require(arg0: string, arg1: Object): JwtParserBuilder;
     requireAudience(arg0: string): JwtParserBuilder;
     requireExpiration(arg0: Date): JwtParserBuilder;

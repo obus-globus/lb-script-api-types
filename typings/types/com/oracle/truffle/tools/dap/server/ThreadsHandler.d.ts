@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { TruffleContext } from '../../../../../../com/oracle/truffle/api/TruffleContext.d.ts'
 import type { DebuggerSession } from '../../../../../../com/oracle/truffle/api/debug/DebuggerSession.d.ts'
 import type { SuspendedEvent } from '../../../../../../com/oracle/truffle/api/debug/SuspendedEvent.d.ts'
@@ -12,11 +13,11 @@ export class ThreadsHandler extends Object implements ThreadsListener {
     constructor(context: ExecutionContext, debuggerSession: DebuggerSession)
     // private context: ExecutionContext;
     // private debuggerSession: DebuggerSession;
-    // private id2threads: { [key: number]: Thread_2 };
+    // private id2threads: JavaMap<number, Thread_2>;
     // private lastRefId: number;
     // private lastThreadId: number;
-    // private suspendedThreads: { [key: number]: ThreadsHandler$SuspendedThreadInfo };
-    // private thread2Ids: Map<Thread_2, number>;
+    // private suspendedThreads: JavaMap<number, ThreadsHandler$SuspendedThreadInfo>;
+    // private thread2Ids: JavaMap<Thread_2, number>;
     dispose(): void;
     executeInSuspendedThread(id: number, task: (param0: ThreadsHandler$SuspendedThreadInfo) => boolean): void;
     getThreads(): Thread[];

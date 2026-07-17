@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { MixinEnvironment } from '../../../../../org/spongepowered/asm/mixin/MixinEnvironment.d.ts'
 import type { IRemapper } from '../../../../../org/spongepowered/asm/mixin/extensibility/IRemapper.d.ts'
@@ -6,7 +7,7 @@ import type { IReferenceMapper } from '../../../../../org/spongepowered/asm/mixi
 export class RemappingReferenceMapper extends Object implements IClassReferenceMapper, IReferenceMapper {
     static of(paramarg0: MixinEnvironment, paramarg1: IReferenceMapper): IReferenceMapper;
     private constructor(arg0: MixinEnvironment, arg1: IReferenceMapper)
-    // private mappedReferenceCache: { [key: string]: string };
+    // private mappedReferenceCache: JavaMap<string, string>;
     // private refMap: IReferenceMapper;
     // private remapper: IRemapper;
     getContext(): string;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { SslContextOption } from '../../../../io/netty/handler/ssl/SslContextOption.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -9,7 +10,7 @@ export class SslProvider extends Enum<SslProvider> {
     static isAlpnSupported(paramarg0: SslProvider): boolean;
     static isOptionSupported(paramarg0: SslProvider, paramarg1: SslContextOption<Object>): boolean;
     static isTlsv13Supported(paramarg0: SslProvider): boolean;
-    static isTlsv13Supported(paramarg0: SslProvider, paramarg1: { [key: string]: any }): boolean;
+    static isTlsv13Supported(paramarg0: SslProvider, paramarg1: JavaMap<any, any>): boolean;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): SslProvider;
     static values(): SslProvider[];

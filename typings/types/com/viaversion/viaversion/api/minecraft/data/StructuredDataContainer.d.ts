@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { FullMappings } from '../../../../../../com/viaversion/viaversion/api/data/FullMappings.d.ts'
 import type { StructuredData } from '../../../../../../com/viaversion/viaversion/api/minecraft/data/StructuredData.d.ts'
 import type { StructuredDataKey } from '../../../../../../com/viaversion/viaversion/api/minecraft/data/StructuredDataKey.d.ts'
@@ -11,8 +12,8 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class StructuredDataContainer extends Object implements Copyable {
     constructor()
     constructor(arg0: StructuredData<Object>[])
-    constructor(arg0: Map<StructuredDataKey<Object>, StructuredData<Object>>)
-    // private data: Map<StructuredDataKey<Object>, StructuredData<Object>>;
+    constructor(arg0: JavaMap<StructuredDataKey<Object>, StructuredData<Object>>)
+    // private data: JavaMap<StructuredDataKey<Object>, StructuredData<Object>>;
     // private lookup: FullMappings;
     // private mappedNames: boolean;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -10,7 +11,7 @@ import type { Block } from '../../../../../net/minecraft/world/level/block/Block
 export class ModelProvider$BlockStateGeneratorCollector extends Object implements Consumer<BlockModelDefinitionGenerator>, FabricModelProviderDefinitions {
     private constructor()
     readonly fabricPackOutput: FabricPackOutput;
-    generators: Map<Block, BlockModelDefinitionGenerator>;
+    generators: JavaMap<Block, BlockModelDefinitionGenerator>;
     accept(generator: BlockModelDefinitionGenerator): void;
     andThen(arg0: (param0: BlockModelDefinitionGenerator) => void): (param0: BlockModelDefinitionGenerator) => void;
     save(cache: CachedOutput, pathProvider: PackOutput$PathProvider): CompletableFuture<Object>;

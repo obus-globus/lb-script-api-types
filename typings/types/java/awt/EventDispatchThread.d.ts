@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { AWTEvent } from '../../java/awt/AWTEvent.d.ts'
 import type { Component } from '../../java/awt/Component.d.ts'
 import type { Conditional } from '../../java/awt/Conditional.d.ts'
@@ -21,7 +22,7 @@ export class EventDispatchThread extends Thread {
     static currentThread(): Thread;
     static dumpStack(): void;
     static enumerate(paramarg0: Thread[]): number;
-    static getAllStackTraces(): Map<Thread, StackTraceElement[]>;
+    static getAllStackTraces(): JavaMap<Thread, StackTraceElement[]>;
     static getDefaultUncaughtExceptionHandler(): (param0: Thread, param1: Throwable) => void;
     static holdsLock(paramarg0: Object): boolean;
     static interrupted(): boolean;

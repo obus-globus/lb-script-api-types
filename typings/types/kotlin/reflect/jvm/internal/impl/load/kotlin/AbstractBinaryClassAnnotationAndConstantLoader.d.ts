@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { AbstractBinaryClassAnnotationLoader } from '../../../../../../../kotlin/reflect/jvm/internal/impl/load/kotlin/AbstractBinaryClassAnnotationLoader.d.ts'
 import type { AbstractBinaryClassAnnotationLoader$Companion } from '../../../../../../../kotlin/reflect/jvm/internal/impl/load/kotlin/AbstractBinaryClassAnnotationLoader$Companion.d.ts'
@@ -20,7 +21,7 @@ export abstract class AbstractBinaryClassAnnotationAndConstantLoader<A extends u
     constructor(arg0: StorageManager, arg1: KotlinClassFinder)
     // private storage: MemoizedFunctionToNotNull<KotlinJvmBinaryClass, AnnotationsContainerWithConstants<A, C>>;
     getAnnotationsContainer(arg0: KotlinJvmBinaryClass): AnnotationsContainerWithConstants<A, C>;
-    isRepeatableWithImplicitContainer(arg0: ClassId, arg1: Map<Name, ConstantValue<Object>>): boolean;
+    isRepeatableWithImplicitContainer(arg0: ClassId, arg1: JavaMap<Name, ConstantValue<Object>>): boolean;
     loadAnnotationDefaultValue(arg0: ProtoContainer, arg1: ProtoBuf$Property, arg2: KotlinType): C;
     // private loadAnnotationsAndInitializers(arg0: KotlinJvmBinaryClass): AnnotationsContainerWithConstants<A, C>;
     loadConstant(arg0: string, arg1: Object): C;

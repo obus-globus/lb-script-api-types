@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { FloatComparator } from '../../../../../it/unimi/dsi/fastutil/floats/FloatComparator.d.ts'
 import type { FloatConsumer } from '../../../../../it/unimi/dsi/fastutil/floats/FloatConsumer.d.ts'
 import type { FloatSpliterator } from '../../../../../it/unimi/dsi/fastutil/floats/FloatSpliterator.d.ts'
@@ -12,8 +13,8 @@ export class Long2FloatOpenHashMap$ValueSpliterator extends Long2FloatOpenHashMa
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: { [key: string]: any })
-    constructor(null_: { [key: string]: any }, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
+    constructor(null_: JavaMap<any, any>)
+    constructor(null_: JavaMap<any, any>, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     characteristics(): number;
     forEachRemaining(arg0: (param0: number) => void): void;

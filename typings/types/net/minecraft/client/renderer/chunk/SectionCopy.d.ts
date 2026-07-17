@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { LevelHeightAccessor } from '../../../../../net/minecraft/world/level/LevelHeightAccessor.d.ts'
@@ -7,7 +8,7 @@ import type { LevelChunk } from '../../../../../net/minecraft/world/level/chunk/
 import type { PalettedContainer } from '../../../../../net/minecraft/world/level/chunk/PalettedContainer.d.ts'
 export class SectionCopy extends Object {
     constructor(levelChunk: LevelChunk, sectionIndex: number)
-    // private blockEntities: Map<BlockPos, BlockEntity>;
+    // private blockEntities: JavaMap<BlockPos, BlockEntity>;
     // private debug: boolean;
     // private levelHeightAccessor: LevelHeightAccessor;
     // private section: PalettedContainer<BlockState>;

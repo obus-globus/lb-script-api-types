@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Version } from '../../../../../net/fabricmc/loader/api/Version.d.ts'
 import type { ContactInformation } from '../../../../../net/fabricmc/loader/api/metadata/ContactInformation.d.ts'
@@ -13,13 +14,13 @@ export class BuiltinModMetadata$Builder extends Object {
     // private dependencies: ModDependency[];
     // private description: string;
     // private environment: ModEnvironment;
-    // private icons: { [key: number]: string };
+    // private icons: JavaMap<number, string>;
     // private id: string;
     // private license: string[];
     // private name: string;
     // private version: Version;
-    addAuthor(arg0: string, arg1: { [key: string]: string }): BuiltinModMetadata$Builder;
-    addContributor(arg0: string, arg1: { [key: string]: string }): BuiltinModMetadata$Builder;
+    addAuthor(arg0: string, arg1: JavaMap<string, string>): BuiltinModMetadata$Builder;
+    addContributor(arg0: string, arg1: JavaMap<string, string>): BuiltinModMetadata$Builder;
     addDependency(arg0: ModDependency): BuiltinModMetadata$Builder;
     addIcon(arg0: number, arg1: string): BuiltinModMetadata$Builder;
     addLicense(arg0: string): BuiltinModMetadata$Builder;

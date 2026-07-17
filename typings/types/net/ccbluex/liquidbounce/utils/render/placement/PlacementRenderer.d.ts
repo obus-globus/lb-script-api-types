@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { ToggleableValueGroup } from '../../../../../../net/ccbluex/liquidbounce/config/types/group/ToggleableValueGroup.d.ts'
 import type { EventHook } from '../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { EventListener } from '../../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
@@ -30,7 +31,7 @@ export class PlacementRenderer extends ToggleableValueGroup {
     // private outAnimationsFinished: boolean;
     readonly outTime: number;
     readonly outlineColorSetting: Color4b;
-    // private placementRenderHandlers: { [key: string]: any };
+    // private placementRenderHandlers: JavaMap<any, any>;
     // private renderHandler: EventHook<WorldRenderEvent>;
     // private repeatable: EventHook<GameTickEvent>;
     /**

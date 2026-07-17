@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { DumperOptions } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/DumperOptions.d.ts'
 import type { DumperOptions$ScalarStyle } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/DumperOptions$ScalarStyle.d.ts'
 import type { DumperOptions$Version } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/DumperOptions$Version.d.ts'
@@ -46,7 +47,7 @@ export class Emitter extends Object implements Emitable {
     // private states: ArrayStack<EmitterState>;
     // private stream: Writer;
     // private style: DumperOptions$ScalarStyle;
-    // private tagPrefixes: { [key: string]: string };
+    // private tagPrefixes: JavaMap<string, string>;
     // private whitespace: boolean;
     // private analyzeScalar(arg0: string): ScalarAnalysis;
     // private checkEmptyDocument(): boolean;

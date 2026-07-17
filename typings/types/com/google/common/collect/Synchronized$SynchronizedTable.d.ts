@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Synchronized$SynchronizedObject } from '../../../../com/google/common/collect/Synchronized$SynchronizedObject.d.ts'
 import type { Table } from '../../../../com/google/common/collect/Table.d.ts'
 import type { Table$Cell } from '../../../../com/google/common/collect/Table$Cell.d.ts'
@@ -6,9 +7,9 @@ export class Synchronized$SynchronizedTable<R extends unknown, C extends unknown
     constructor(delegate: Table<R, C, V>, mutex: Object)
     cellSet(): Table$Cell<R, C, V>[];
     clear(): void;
-    column(columnKey: C): Map<R, V>;
+    column(columnKey: C): JavaMap<R, V>;
     columnKeySet(): C[];
-    columnMap(): Map<C, Map<R, V>>;
+    columnMap(): JavaMap<C, JavaMap<R, V>>;
     contains(rowKey: Object, columnKey: Object): boolean;
     containsColumn(columnKey: Object): boolean;
     containsRow(rowKey: Object): boolean;
@@ -21,9 +22,9 @@ export class Synchronized$SynchronizedTable<R extends unknown, C extends unknown
     put(rowKey: R, columnKey: C, value: V): V;
     putAll(table: Table<R, C, V>): void;
     remove(rowKey: Object, columnKey: Object): V;
-    row(rowKey: R): Map<C, V>;
+    row(rowKey: R): JavaMap<C, V>;
     rowKeySet(): R[];
-    rowMap(): Map<R, Map<C, V>>;
+    rowMap(): JavaMap<R, JavaMap<C, V>>;
     size(): number;
     values(): V[];
 }

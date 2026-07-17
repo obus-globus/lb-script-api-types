@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { InputStream } from '../../java/io/InputStream.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
 import type { Module } from '../../java/lang/Module.d.ts'
@@ -24,7 +25,7 @@ export abstract class ClassLoader extends Object {
     // private checkCerts(arg0: string, arg1: CodeSource): void;
     clearAssertionStatus(): void;
     // private compareCerts(arg0: Certificate[], arg1: Certificate[]): boolean;
-    createOrGetClassLoaderValueMap(): Map<Object | null, Object | null>;
+    createOrGetClassLoaderValueMap(): JavaMap<Object | null, Object | null>;
     defineClass(arg0: number[], arg1: number, arg2: number): Class<Object>;
     defineClass(arg0: string, arg1: ByteBuffer, arg2: ProtectionDomain): Class<Object>;
     defineClass(arg0: string, arg1: number[], arg2: number, arg3: number): Class<Object>;

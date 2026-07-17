@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Pair } from '../../../../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Optional } from '../../../../../../java/util/Optional.d.ts'
@@ -11,8 +12,8 @@ import type { AngerManagement$Sorter } from '../../../../../../net/minecraft/wor
 export class AngerManagement extends Object {
     static codec(paramfilter: (param0: Entity) => boolean): Codec<AngerManagement>;
     constructor(filter: (param0: Entity) => boolean, angerByUuid: Pair<UUID, number>[])
-    // private angerBySuspect: { [key: string]: any };
-    // private angerByUuid: { [key: string]: any };
+    // private angerBySuspect: JavaMap<any, any>;
+    // private angerByUuid: JavaMap<any, any>;
     // private conversionDelay: number;
     // private filter: (param0: Entity) => boolean;
     // private highestAnger: number;

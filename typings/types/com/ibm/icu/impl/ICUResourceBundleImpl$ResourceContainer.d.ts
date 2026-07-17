@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ICUResourceBundle } from '../../../../com/ibm/icu/impl/ICUResourceBundle.d.ts'
 import type { ICUResourceBundle$OpenType } from '../../../../com/ibm/icu/impl/ICUResourceBundle$OpenType.d.ts'
 import type { ICUResourceBundle$WholeBundle } from '../../../../com/ibm/icu/impl/ICUResourceBundle$WholeBundle.d.ts'
@@ -68,8 +69,8 @@ export abstract class ICUResourceBundleImpl$ResourceContainer extends ICUResourc
     constructor(arg0: ICUResourceBundle$WholeBundle)
     constructor(arg0: ICUResourceBundleImpl, arg1: string, arg2: number)
     // private value: ICUResourceBundleReader$Container;
-    createBundleObject(arg0: number, arg1: string, arg2: { [key: string]: string }, arg3: UResourceBundle): UResourceBundle;
-    createBundleObject(arg0: string, arg1: number, arg2: { [key: string]: string }, arg3: UResourceBundle): ICUResourceBundle;
+    createBundleObject(arg0: number, arg1: string, arg2: JavaMap<string, string>, arg3: UResourceBundle): UResourceBundle;
+    createBundleObject(arg0: string, arg1: number, arg2: JavaMap<string, string>, arg3: UResourceBundle): ICUResourceBundle;
     getContainerResource(arg0: number): number;
     getSize(): number;
     getString(): string;

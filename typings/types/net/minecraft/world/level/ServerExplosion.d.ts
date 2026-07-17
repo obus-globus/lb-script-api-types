@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { LithiumExplosion } from '../../../../net/caffeinemc/mods/lithium/common/explosion/LithiumExplosion.d.ts'
 import type { BlockPos } from '../../../../net/minecraft/core/BlockPos.d.ts'
@@ -28,7 +29,7 @@ export class ServerExplosion extends Object implements LithiumExplosion, Explosi
     // private directMappedTags: number[];
     // private explodedAirPositions: (Object | null)[];
     // private fire: boolean;
-    readonly hitPlayers: Map<Player, Vec3>;
+    readonly hitPlayers: JavaMap<Player, Vec3>;
     // private level: ServerLevel;
     // private prevChunk: ChunkAccess;
     // private prevChunkX: number;
@@ -47,7 +48,7 @@ export class ServerExplosion extends Object implements LithiumExplosion, Explosi
     // private getCacheHitIndex(arg0: number): number;
     getDamageSource(): DamageSource;
     getDirectSourceEntity(): Entity;
-    getHitPlayers(): Map<Player, Vec3>;
+    getHitPlayers(): JavaMap<Player, Vec3>;
     getIndirectSourceEntity(): LivingEntity;
     // private hurtEntities(): void;
     // private initCaches(): void;

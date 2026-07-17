@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { FileSystems$PolyglotFileSystem } from '../../../../com/oracle/truffle/polyglot/FileSystems$PolyglotFileSystem.d.ts'
 import type { InternalResourceRoots } from '../../../../com/oracle/truffle/polyglot/InternalResourceRoots.d.ts'
 import type { URI } from '../../../../java/net/URI.d.ts'
@@ -42,10 +43,10 @@ export class FileSystems$PreInitializeContextFileSystem extends Object implement
     newByteChannel(path: Path, options: OpenOption[], ...attrs: FileAttribute<Object>[]): SeekableByteChannel;
     newDirectoryStream(dir: Path, filter: (param0: Path) => boolean): Path[];
     onLoadPreinitializedContext(newDelegate: FileSystem): void;
-    onPreInitializeContextEnd(internalResourceRoots: InternalResourceRoots, languageHomes: { [key: string]: Path }): void;
+    onPreInitializeContextEnd(internalResourceRoots: InternalResourceRoots, languageHomes: JavaMap<string, Path>): void;
     parsePath(path: URI): Path;
     parsePath(path: string): Path;
-    readAttributes(path: Path, attributes: string, ...options: LinkOption[]): { [key: string]: Object };
+    readAttributes(path: Path, attributes: string, ...options: LinkOption[]): JavaMap<string, Object>;
     readSymbolicLink(link: Path): Path;
     setAttribute(path: Path, attribute: string, value: Object, ...options: LinkOption[]): void;
     setCurrentWorkingDirectory(currentWorkingDirectory: Path): void;

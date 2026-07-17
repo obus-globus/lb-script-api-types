@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 /**
  * The main hub of the ScriptAPI that provides access to a useful set of members.
@@ -6,6 +7,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
  */
 export class ScriptContextProvider extends Object {
     static INSTANCE: ScriptContextProvider;
-    // private localStorage: { [key: string]: Object };
+    // private localStorage: JavaMap<string, Object>;
     cleanup(): void;
 }

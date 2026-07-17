@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Pair } from '../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { DataResult } from '../../../com/mojang/serialization/DataResult.d.ts'
 import type { Decoder } from '../../../com/mojang/serialization/Decoder.d.ts'
@@ -41,9 +42,9 @@ export class NullOps extends Object implements DynamicOps<Unit> {
     createLong(value: number): Unit;
     createLongList(arg0: LongStream): Unit;
     createLongList(input: LongStream): Unit;
-    createMap(arg0: Map<Unit, Unit>): Unit;
+    createMap(arg0: JavaMap<Unit, Unit>): Unit;
     createMap(map: Stream<Pair<Unit, Unit>>): Unit;
-    createMap(map: Map<Unit, Unit>): Unit;
+    createMap(map: JavaMap<Unit, Unit>): Unit;
     createNumeric(value: Number): Unit;
     createShort(arg0: number): Unit;
     createShort(value: number): Unit;
@@ -77,9 +78,9 @@ export class NullOps extends Object implements DynamicOps<Unit> {
     mergeToList(input: Unit, values: Unit[]): DataResult<Unit>;
     mergeToList(input: Unit, value: Unit): DataResult<Unit>;
     mergeToMap(arg0: Unit, arg1: MapLike<Unit>): DataResult<Unit>;
-    mergeToMap(arg0: Unit, arg1: Map<Unit, Unit>): DataResult<Unit>;
+    mergeToMap(arg0: Unit, arg1: JavaMap<Unit, Unit>): DataResult<Unit>;
     mergeToMap(input: Unit, values: MapLike<Unit>): DataResult<Unit>;
-    mergeToMap(input: Unit, values: Map<Unit, Unit>): DataResult<Unit>;
+    mergeToMap(input: Unit, values: JavaMap<Unit, Unit>): DataResult<Unit>;
     mergeToMap(input: Unit, key: Unit, value: Unit): DataResult<Unit>;
     mergeToPrimitive(arg0: Unit, arg1: Unit): DataResult<Unit>;
     remove(input: Unit, key: string): Unit;

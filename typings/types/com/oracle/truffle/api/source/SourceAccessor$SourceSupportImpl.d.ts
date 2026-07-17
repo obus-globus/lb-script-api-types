@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Accessor$SourceSupport } from '../../../../../com/oracle/truffle/api/impl/Accessor$SourceSupport.d.ts'
 import type { Source } from '../../../../../com/oracle/truffle/api/source/Source.d.ts'
 import type { Source$SourceBuilder } from '../../../../../com/oracle/truffle/api/source/Source$SourceBuilder.d.ts'
@@ -13,7 +14,7 @@ export class SourceAccessor$SourceSupportImpl extends Accessor$SourceSupport {
     getOrCreatePolyglotSource(source: Source, createSource: (param0: Source) => Object): Object;
     getOriginalURI(source: Source): URI;
     getSourceIdentifier(source: Source): Object;
-    getSourceOptions(source: Source): { [key: string]: string };
+    getSourceOptions(source: Source): JavaMap<string, string>;
     invalidateAfterPreinitialiation(source: Source): void;
     mergeLoadedSources(sources: Source[]): void;
     newBuilder(language: string, origin: File): Source$SourceBuilder;

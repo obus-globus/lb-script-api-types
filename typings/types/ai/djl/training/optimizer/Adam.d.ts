@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Device } from '../../../../ai/djl/Device.d.ts'
 import type { NDArray } from '../../../../ai/djl/ndarray/NDArray.d.ts'
 import type { Adadelta$Builder } from '../../../../ai/djl/training/optimizer/Adadelta$Builder.d.ts'
@@ -23,7 +24,7 @@ export class Adam extends Optimizer {
     // private beta2: number;
     // private epsilon: number;
     // private learningRateTracker: ParameterTracker;
-    // private means: { [key: string]: Map<Device, NDArray> };
-    // private variances: { [key: string]: Map<Device, NDArray> };
+    // private means: JavaMap<string, JavaMap<Device, NDArray>>;
+    // private variances: JavaMap<string, JavaMap<Device, NDArray>>;
     update(arg0: string, arg1: NDArray, arg2: NDArray): void;
 }

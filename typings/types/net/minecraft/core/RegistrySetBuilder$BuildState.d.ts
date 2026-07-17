@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Record } from '../../../java/lang/Record.d.ts'
 import type { RuntimeException } from '../../../java/lang/RuntimeException.d.ts'
 import type { Stream } from '../../../java/util/stream/Stream.d.ts'
@@ -12,20 +13,20 @@ import type { Identifier } from '../../../net/minecraft/resources/Identifier.d.t
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
 export class RegistrySetBuilder$BuildState extends Record {
     static create(paramcontext: RegistryAccess, paramnewRegistries: Stream<ResourceKey<Object[]>>): RegistrySetBuilder$BuildState;
-    private constructor(owner: RegistrySetBuilder$UniversalOwner, lookup: RegistrySetBuilder$UniversalLookup, registries: Map<Identifier, HolderGetter<Object>>, registeredValues: Map<ResourceKey<Object>, RegistrySetBuilder$RegisteredValue<Object>>, errors: RuntimeException[])
+    private constructor(owner: RegistrySetBuilder$UniversalOwner, lookup: RegistrySetBuilder$UniversalLookup, registries: JavaMap<Identifier, HolderGetter<Object>>, registeredValues: JavaMap<ResourceKey<Object>, RegistrySetBuilder$RegisteredValue<Object>>, errors: RuntimeException[])
     // private errors: RuntimeException[];
     // private lookup: RegistrySetBuilder$UniversalLookup;
     // private owner: RegistrySetBuilder$UniversalOwner;
-    // private registeredValues: Map<ResourceKey<Object>, RegistrySetBuilder$RegisteredValue<Object>>;
-    // private registries: Map<Identifier, HolderGetter<Object>>;
+    // private registeredValues: JavaMap<ResourceKey<Object>, RegistrySetBuilder$RegisteredValue<Object>>;
+    // private registries: JavaMap<Identifier, HolderGetter<Object>>;
     bootstrapContext<T extends unknown>(): BootstrapContext<T>;
     equals(o: Object | null): boolean;
     errors(): RuntimeException[];
     hashCode(): number;
     lookup(): RegistrySetBuilder$UniversalLookup;
     owner(): RegistrySetBuilder$UniversalOwner;
-    registeredValues(): Map<ResourceKey<Object>, RegistrySetBuilder$RegisteredValue<Object>>;
-    registries(): Map<Identifier, HolderGetter<Object>>;
+    registeredValues(): JavaMap<ResourceKey<Object>, RegistrySetBuilder$RegisteredValue<Object>>;
+    registries(): JavaMap<Identifier, HolderGetter<Object>>;
     reportNotCollectedHolders(): void;
     reportUnclaimedRegisteredValues(): void;
     throwOnError(): void;

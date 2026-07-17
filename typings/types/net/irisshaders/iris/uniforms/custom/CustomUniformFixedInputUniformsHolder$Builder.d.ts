@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { BooleanSupplier } from '../../../../../java/util/function/BooleanSupplier.d.ts'
 import type { DoubleSupplier } from '../../../../../java/util/function/DoubleSupplier.d.ts'
 import type { IntSupplier } from '../../../../../java/util/function/IntSupplier.d.ts'
@@ -18,7 +19,7 @@ import type { Vector3i } from '../../../../../org/joml/Vector3i.d.ts'
 import type { Vector4f } from '../../../../../org/joml/Vector4f.d.ts'
 export class CustomUniformFixedInputUniformsHolder$Builder extends Object implements UniformHolder {
     constructor()
-    // private inputVariables: { [key: string]: CachedUniform };
+    // private inputVariables: JavaMap<string, CachedUniform>;
     build(): CustomUniformFixedInputUniformsHolder;
     externallyManagedUniform(arg0: string, arg1: UniformType): UniformHolder;
     // private put(arg0: string, arg1: CachedUniform): CustomUniformFixedInputUniformsHolder$Builder;

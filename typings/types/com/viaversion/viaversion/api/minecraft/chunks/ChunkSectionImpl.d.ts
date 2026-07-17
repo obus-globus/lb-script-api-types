@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { ChunkSection } from '../../../../../../com/viaversion/viaversion/api/minecraft/chunks/ChunkSection.d.ts'
 import type { ChunkSectionLight } from '../../../../../../com/viaversion/viaversion/api/minecraft/chunks/ChunkSectionLight.d.ts'
 import type { DataPalette } from '../../../../../../com/viaversion/viaversion/api/minecraft/chunks/DataPalette.d.ts'
@@ -12,7 +13,7 @@ export class ChunkSectionImpl extends Object implements ChunkSection {
     readonly fluidCount: number;
     readonly light: ChunkSectionLight;
     readonly nonAirBlocksCount: number;
-    // private palettes: Map<PaletteType, DataPalette>;
+    // private palettes: JavaMap<PaletteType, DataPalette>;
     addPalette(arg0: PaletteType, arg1: DataPalette): void;
     getFluidCount(): number;
     getLight(): ChunkSectionLight;

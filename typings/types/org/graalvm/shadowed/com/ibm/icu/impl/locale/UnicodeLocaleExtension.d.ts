@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Extension } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/locale/Extension.d.ts'
 export class UnicodeLocaleExtension extends Extension {
     static CA_JAPANESE: UnicodeLocaleExtension;
@@ -8,9 +9,9 @@ export class UnicodeLocaleExtension extends Extension {
     static isSingletonChar(paramc: string): boolean;
     static isType(params: string): boolean;
     static isTypeSubtag(params: string): boolean;
-    constructor(attributes: string[], keywords: { [key: string]: string })
+    constructor(attributes: string[], keywords: JavaMap<string, string>)
     // private _attributes: string[];
-    // private _keywords: { [key: string]: string };
+    // private _keywords: JavaMap<string, string>;
     getUnicodeLocaleAttributes(): string[];
     getUnicodeLocaleKeys(): string[];
     getUnicodeLocaleType(unicodeLocaleKey: string): string;

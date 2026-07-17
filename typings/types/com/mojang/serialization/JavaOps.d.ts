@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Pair } from '../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { DataResult } from '../../../com/mojang/serialization/DataResult.d.ts'
 import type { Decoder } from '../../../com/mojang/serialization/Decoder.d.ts'
@@ -32,7 +33,7 @@ export class JavaOps extends Object implements DynamicOps<Object> {
     createList(arg0: Stream<Object>): Object;
     createLong(arg0: number): Object;
     createLongList(arg0: LongStream): Object;
-    createMap(arg0: Map<Object, Object>): Object;
+    createMap(arg0: JavaMap<Object, Object>): Object;
     createMap(arg0: Stream<Pair<Object, Object>>): Object;
     createNumeric(arg0: Number): Object;
     createShort(arg0: number): Object;
@@ -59,7 +60,7 @@ export class JavaOps extends Object implements DynamicOps<Object> {
     mergeToList(arg0: Object, arg1: Object[]): DataResult<Object>;
     mergeToList(arg0: Object, arg1: Object): DataResult<Object>;
     mergeToMap(arg0: Object, arg1: MapLike<Object>): DataResult<Object>;
-    mergeToMap(arg0: Object, arg1: Map<Object, Object>): DataResult<Object>;
+    mergeToMap(arg0: Object, arg1: JavaMap<Object, Object>): DataResult<Object>;
     mergeToMap(arg0: Object, arg1: Object, arg2: Object): DataResult<Object>;
     mergeToPrimitive(arg0: Object, arg1: Object): DataResult<Object>;
     remove(arg0: Object, arg1: string): Object;

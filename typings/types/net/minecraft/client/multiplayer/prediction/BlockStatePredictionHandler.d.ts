@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { AutoCloseable } from '../../../../../java/lang/AutoCloseable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ClientLevel } from '../../../../../net/minecraft/client/multiplayer/ClientLevel.d.ts'
@@ -9,7 +10,7 @@ export class BlockStatePredictionHandler extends Object implements AutoCloseable
     // private currentSequenceNr: number;
     // private isPredicting: boolean;
     // private lastTeleportSequence: number;
-    // private serverVerifiedStates: { [key: string]: any };
+    // private serverVerifiedStates: JavaMap<any, any>;
     close(): void;
     currentSequence(): number;
     endPredictionsUpTo(sequence: number, clientLevel: ClientLevel): void;

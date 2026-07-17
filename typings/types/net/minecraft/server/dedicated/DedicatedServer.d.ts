@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { DataFixer } from '../../../../com/mojang/datafixers/DataFixer.d.ts'
 import type { Thread } from '../../../../java/lang/Thread.d.ts'
 import type { Path } from '../../../../java/nio/file/Path.d.ts'
@@ -59,7 +60,7 @@ export class DedicatedServer extends MinecraftServer implements ServerInterface 
     static relayDelayCrash(paramcrashReport: CrashReport): void;
     static spin<S extends MinecraftServer>(paramfactory: (param0: Thread) => S): S;
     constructor(serverThread: Thread, levelStorageSource: LevelStorageSource$LevelStorageAccess, packRepository: PackRepository, worldStem: WorldStem, gameRules: Optional<GameRules>, settings: DedicatedServerSettings, fixerUpper: DataFixer, services: Services, jsonRpcServer: ManagementServer, notificationManager: NotificationManager)
-    // private codeOfConductTexts: { [key: string]: string };
+    // private codeOfConductTexts: JavaMap<string, string>;
     // private consoleInput: ConsoleInput[];
     // private gui: MinecraftServerGui;
     // private isTickTimeLoggingEnabled: boolean;
@@ -86,7 +87,7 @@ export class DedicatedServer extends MinecraftServer implements ServerInterface 
     gameMode(): GameType;
     getAbsoluteMaxWorldSize(): number;
     getChatSpamThresholdSeconds(): number;
-    getCodeOfConducts(): { [key: string]: string };
+    getCodeOfConducts(): JavaMap<string, string>;
     getCommandSpamThresholdSeconds(): number;
     getCompressionThreshold(): number;
     getForcedGameType(): GameType;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { ATNState } from '../../../../../org/antlr/v4/runtime/atn/ATNState.d.ts'
 import type { AbstractPredicateTransition } from '../../../../../org/antlr/v4/runtime/atn/AbstractPredicateTransition.d.ts'
@@ -15,7 +16,7 @@ export class PrecedencePredicateTransition extends AbstractPredicateTransition {
     static SET: number;
     static WILDCARD: number;
     static serializationNames: string[];
-    static serializationTypes: Map<Class<Transition>, number>;
+    static serializationTypes: JavaMap<Class<Transition>, number>;
     constructor(arg0: ATNState, arg1: number)
     precedence: number;
     getPredicate(): SemanticContext$PrecedencePredicate;

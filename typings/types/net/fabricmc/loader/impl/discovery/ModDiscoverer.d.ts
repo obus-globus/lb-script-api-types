@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { EnvType } from '../../../../../net/fabricmc/api/EnvType.d.ts'
@@ -14,12 +15,12 @@ export class ModDiscoverer extends Object {
     // private candidateFinders: (param0: ModCandidateFinder$ModCandidateConsumer) => void[];
     // private depOverrides: DependencyOverrides;
     // private envType: EnvType;
-    // private jijDedupMap: { [key: number]: ModDiscoverer$ModScanTask };
+    // private jijDedupMap: JavaMap<number, ModDiscoverer$ModScanTask>;
     // private nestedModInitDatas: ModDiscoverer$NestedModInitData[];
     readonly nonFabricMods: Path[];
     // private versionOverrides: VersionOverrides;
     addCandidateFinder(arg0: (param0: ModCandidateFinder$ModCandidateConsumer) => void): void;
     // private createJavaMod(): ModCandidateImpl;
-    discoverMods(arg0: FabricLoaderImpl, arg1: { [key: string]: ModCandidateImpl[] }): ModCandidateImpl[];
+    discoverMods(arg0: FabricLoaderImpl, arg1: JavaMap<string, ModCandidateImpl[]>): ModCandidateImpl[];
     getNonFabricMods(): Path[];
 }

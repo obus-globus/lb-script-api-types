@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { Runnable } from '../../../../java/lang/Runnable.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
@@ -53,7 +54,7 @@ export class Item extends Object implements FabricItem, ItemExtensions, ItemVari
     static ABSOLUTE_MAX_STACK_SIZE: number;
     static BASE_ATTACK_DAMAGE_ID: Identifier;
     static BASE_ATTACK_SPEED_ID: Identifier;
-    static BY_BLOCK: Map<Block, Item>;
+    static BY_BLOCK: JavaMap<Block, Item>;
     static CODEC: Codec<Holder<Item>>;
     static CODEC_WITH_BOUND_COMPONENTS: Codec<Holder<Item>>;
     static DEFAULT_LIGHT_COLOR: Vector3f;

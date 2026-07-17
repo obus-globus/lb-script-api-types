@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { CefBrowser } from '../../../org/cef/browser/CefBrowser.d.ts'
 import type { CefMessageRouter } from '../../../org/cef/browser/CefMessageRouter.d.ts'
@@ -19,7 +20,7 @@ import type { CefRequestHandler } from '../../../org/cef/handler/CefRequestHandl
 import type { CefWindowHandler } from '../../../org/cef/handler/CefWindowHandler.d.ts'
 export abstract class CefClientHandler extends Object implements CefNative {
     constructor()
-    // private N_CefHandle: { [key: string]: number };
+    // private N_CefHandle: JavaMap<string, number>;
     // private msgRouters: CefMessageRouter[];
     // private N_CefClientHandler_CTOR(): void;
     // private N_CefClientHandler_DTOR(): void;

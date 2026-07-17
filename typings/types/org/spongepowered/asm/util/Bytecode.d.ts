@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { OutputStream } from '../../../../java/io/OutputStream.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -16,7 +17,7 @@ export class Bytecode extends Object {
     static CONSTANTS_INT: number[];
     static CONSTANTS_LONG: number[];
     static changeDescriptorReturnType(paramarg0: string, paramarg1: string): string;
-    static cloneLabels(paramarg0: AbstractInsnNode[]): Map<LabelNode, LabelNode>;
+    static cloneLabels(paramarg0: AbstractInsnNode[]): JavaMap<LabelNode, LabelNode>;
     static compareBridgeMethods(paramarg0: MethodNode, paramarg1: MethodNode): void;
     static compareFlags(paramarg0: FieldNode, paramarg1: FieldNode, paramarg2: number): boolean;
     static compareFlags(paramarg0: MethodNode, paramarg1: MethodNode, paramarg2: number): boolean;

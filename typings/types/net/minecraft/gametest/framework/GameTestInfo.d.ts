@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Stopwatch } from '../../../../com/google/common/base/Stopwatch.d.ts'
 import type { Runnable } from '../../../../java/lang/Runnable.d.ts'
 import type { Stream } from '../../../../java/util/stream/Stream.d.ts'
@@ -26,7 +27,7 @@ export class GameTestInfo extends Object {
     readonly listeners: GameTestListener[];
     // private placedStructure: boolean;
     // private retryOptions: RetryOptions;
-    // private runAtTickTimeMap: { [key: string]: any };
+    // private runAtTickTimeMap: JavaMap<any, any>;
     // private sequences: GameTestSequence[];
     // private started: boolean;
     readonly test: Holder$Reference<GameTestInstance>;

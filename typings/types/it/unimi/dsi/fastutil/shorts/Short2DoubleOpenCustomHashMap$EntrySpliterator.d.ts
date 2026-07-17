@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ObjectSpliterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectSpliterator.d.ts'
 import type { Short2DoubleMap$Entry } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2DoubleMap$Entry.d.ts'
 import type { Short2DoubleOpenCustomHashMap$MapSpliterator } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2DoubleOpenCustomHashMap$MapSpliterator.d.ts'
@@ -11,8 +12,8 @@ export class Short2DoubleOpenCustomHashMap$EntrySpliterator extends Short2Double
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: { [key: string]: any })
-    constructor(null_: { [key: string]: any }, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
+    constructor(null_: JavaMap<any, any>)
+    constructor(null_: JavaMap<any, any>, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
     acceptOnIndex(arg0: (param0: Short2DoubleMap$Entry) => void, arg1: number): void;
     characteristics(): number;
     makeForSplit(arg0: number, arg1: number, arg2: boolean): Short2DoubleOpenCustomHashMap$EntrySpliterator;

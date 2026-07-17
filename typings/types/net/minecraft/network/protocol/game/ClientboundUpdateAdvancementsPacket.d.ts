@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { AdvancementHolder } from '../../../../../net/minecraft/advancements/AdvancementHolder.d.ts'
 import type { AdvancementProgress } from '../../../../../net/minecraft/advancements/AdvancementProgress.d.ts'
@@ -9,14 +10,14 @@ import type { ClientGamePacketListener } from '../../../../../net/minecraft/netw
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 export class ClientboundUpdateAdvancementsPacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundUpdateAdvancementsPacket>;
-    constructor(reset: boolean, newAdvancements: AdvancementHolder[], removedAdvancements: Identifier[], progress: Map<Identifier, AdvancementProgress>, showAdvancements: boolean)
+    constructor(reset: boolean, newAdvancements: AdvancementHolder[], removedAdvancements: Identifier[], progress: JavaMap<Identifier, AdvancementProgress>, showAdvancements: boolean)
     readonly added: AdvancementHolder[];
-    readonly progress: Map<Identifier, AdvancementProgress>;
+    readonly progress: JavaMap<Identifier, AdvancementProgress>;
     readonly removed: Identifier[];
     // private reset: boolean;
     // private showAdvancements: boolean;
     getAdded(): AdvancementHolder[];
-    getProgress(): Map<Identifier, AdvancementProgress>;
+    getProgress(): JavaMap<Identifier, AdvancementProgress>;
     getRemoved(): Identifier[];
     handle(listener: ClientGamePacketListener): void;
     isSkippable(): boolean;

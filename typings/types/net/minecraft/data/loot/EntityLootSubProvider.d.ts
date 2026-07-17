@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { BiConsumer } from '../../../../java/util/function/BiConsumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { FabricEntityLootSubProvider } from '../../../../net/fabricmc/fabric/api/datagen/v1/loot/FabricEntityLootSubProvider.d.ts'
@@ -22,7 +23,7 @@ export abstract class EntityLootSubProvider extends Object implements FabricEnti
     constructor(enabledFeatures: FeatureFlagSet, registries: HolderLookup$Provider)
     constructor(allowed: FeatureFlagSet, required: FeatureFlagSet, registries: HolderLookup$Provider)
     // private allowed: FeatureFlagSet;
-    map: Map<EntityType<any>, Map<ResourceKey<LootTable>, LootTable$Builder>>;
+    map: JavaMap<EntityType<any>, JavaMap<ResourceKey<LootTable>, LootTable$Builder>>;
     readonly registries: HolderLookup$Provider;
     // private required: FeatureFlagSet;
     add(type: EntityType<any>, lootTable: ResourceKey<LootTable>, builder: LootTable$Builder): void;

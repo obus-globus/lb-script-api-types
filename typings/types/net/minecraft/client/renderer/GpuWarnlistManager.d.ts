@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { FabricResourceReloader } from '../../../../net/fabricmc/fabric/impl/resource/FabricResourceReloader.d.ts'
 import type { GpuWarnlistManager$Preparations } from '../../../../net/minecraft/client/renderer/GpuWarnlistManager$Preparations.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
@@ -9,7 +10,7 @@ export class GpuWarnlistManager extends SimplePreparableReloadListener<GpuWarnli
     // private fabric$id: Identifier;
     // private showWarning: boolean;
     // private warningDismissed: boolean;
-    // private warnings: { [key: string]: string };
+    // private warnings: JavaMap<string, string>;
     apply(preparations: GpuWarnlistManager$Preparations, manager: ResourceManager, profiler: ProfilerFiller): void;
     dismissWarning(): void;
     fabric$getId(): Identifier;

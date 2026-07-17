@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlockModelGenerators } from '../../../../../net/minecraft/client/data/models/BlockModelGenerators.d.ts'
 import type { ModelTemplate } from '../../../../../net/minecraft/client/data/models/model/ModelTemplate.d.ts'
@@ -12,7 +13,7 @@ export class BlockModelGenerators$BlockFamilyProvider extends Object {
     // private family: BlockFamily;
     // private fullBlock: Variant;
     // private mapping: TextureMapping;
-    // private models: Map<ModelTemplate, Identifier>;
+    // private models: JavaMap<ModelTemplate, Identifier>;
     // private skipGeneratingModelsFor: Block[];
     button(block: Block): BlockModelGenerators$BlockFamilyProvider;
     customFence(block: Block): BlockModelGenerators$BlockFamilyProvider;

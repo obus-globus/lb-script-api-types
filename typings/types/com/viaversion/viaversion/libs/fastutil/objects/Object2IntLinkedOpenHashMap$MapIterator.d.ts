@@ -1,7 +1,8 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object2IntMap$Entry } from '../../../../../../com/viaversion/viaversion/libs/fastutil/objects/Object2IntMap$Entry.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class Object2IntLinkedOpenHashMap$MapIterator<ConsumerType extends unknown> extends Object {
-    constructor(null_: { [key: string]: any })
+    constructor(null_: JavaMap<any, any>)
     // private curr: number;
     // private index: number;
     // private next: number;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { FabricDynamicRegistryProvider$ConditionalEntry } from '../../../../../../../net/fabricmc/fabric/api/datagen/v1/provider/FabricDynamicRegistryProvider$ConditionalEntry.d.ts'
@@ -10,6 +11,6 @@ export class FabricDynamicRegistryProvider$RegistryEntries<T extends unknown> ex
     // private elementCodec: Codec<T>;
     // private lookup: HolderOwner<T>;
     // private registry: ResourceKey<T[]>;
-    // private resources: Map<ResourceKey<T>, FabricDynamicRegistryProvider$ConditionalEntry<T>>;
+    // private resources: JavaMap<ResourceKey<T>, FabricDynamicRegistryProvider$ConditionalEntry<T>>;
     add(arg0: ResourceKey<T>, arg1: T, arg2: ResourceCondition[]): Holder<T>;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { FlowValue } from '../../../../../../com/llamalad7/mixinextras/expression/impl/flow/FlowValue.d.ts'
 import type { MemberDefinition } from '../../../../../../com/llamalad7/mixinextras/expression/impl/pool/MemberDefinition.d.ts'
 import type { TypeDefinition } from '../../../../../../com/llamalad7/mixinextras/expression/impl/pool/TypeDefinition.d.ts'
@@ -5,8 +6,8 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Type } from '../../../../../../org/objectweb/asm/Type.d.ts'
 export class IdentifierPool extends Object {
     constructor()
-    // private members: { [key: string]: MemberDefinition[] };
-    // private types: { [key: string]: TypeDefinition[] };
+    // private members: JavaMap<string, MemberDefinition[]>;
+    // private types: JavaMap<string, TypeDefinition[]>;
     addMember(arg0: string, arg1: MemberDefinition): void;
     addType(arg0: string, arg1: TypeDefinition): void;
     matchesMember(arg0: string, arg1: FlowValue): boolean;

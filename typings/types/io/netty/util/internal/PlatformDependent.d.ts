@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { CleanableDirectBuffer } from '../../../../io/netty/util/internal/CleanableDirectBuffer.d.ts'
 import type { LongCounter } from '../../../../io/netty/util/internal/LongCounter.d.ts'
 import type { File } from '../../../../java/io/File.d.ts'
@@ -88,11 +89,11 @@ export class PlatformDependent extends Object {
     static maxDirectMemory(): number;
     static maybeSuperUser(): boolean;
     static newConcurrentDeque<C extends unknown>(): C[];
-    static newConcurrentHashMap<K extends unknown, V extends unknown>(): Map<K, V>;
-    static newConcurrentHashMap<K extends unknown, V extends unknown>(paramarg0: number): Map<K, V>;
-    static newConcurrentHashMap<K extends unknown, V extends unknown>(paramarg0: number, paramarg1: number): Map<K, V>;
-    static newConcurrentHashMap<K extends unknown, V extends unknown>(paramarg0: number, paramarg1: number, paramarg2: number): Map<K, V>;
-    static newConcurrentHashMap<K extends unknown, V extends unknown>(paramarg0: Map<K, V>): Map<K, V>;
+    static newConcurrentHashMap<K extends unknown, V extends unknown>(): JavaMap<K, V>;
+    static newConcurrentHashMap<K extends unknown, V extends unknown>(paramarg0: number): JavaMap<K, V>;
+    static newConcurrentHashMap<K extends unknown, V extends unknown>(paramarg0: number, paramarg1: number): JavaMap<K, V>;
+    static newConcurrentHashMap<K extends unknown, V extends unknown>(paramarg0: number, paramarg1: number, paramarg2: number): JavaMap<K, V>;
+    static newConcurrentHashMap<K extends unknown, V extends unknown>(paramarg0: JavaMap<K, V>): JavaMap<K, V>;
     static newFixedMpmcQueue<T extends unknown>(paramarg0: number): T[];
     static newFixedMpscQueue<T extends unknown>(paramarg0: number): T[];
     static newFixedMpscUnpaddedQueue<T extends unknown>(paramarg0: number): T[];

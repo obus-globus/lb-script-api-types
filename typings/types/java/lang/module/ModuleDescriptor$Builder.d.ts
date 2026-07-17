@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { ModuleDescriptor } from '../../../java/lang/module/ModuleDescriptor.d.ts'
 import type { ModuleDescriptor$Exports } from '../../../java/lang/module/ModuleDescriptor$Exports.d.ts'
 import type { ModuleDescriptor$Exports$Modifier } from '../../../java/lang/module/ModuleDescriptor$Exports$Modifier.d.ts'
@@ -12,16 +13,16 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export class ModuleDescriptor$Builder extends Object {
     constructor(arg0: string, arg1: boolean, arg2: ModuleDescriptor$Modifier[])
     // private automatic: boolean;
-    // private exports: { [key: string]: ModuleDescriptor$Exports };
+    // private exports: JavaMap<string, ModuleDescriptor$Exports>;
     // private mainClass: string;
     // private modifiers: ModuleDescriptor$Modifier[];
     // private name: string;
     // private open: boolean;
-    // private opens: { [key: string]: ModuleDescriptor$Opens };
+    // private opens: JavaMap<string, ModuleDescriptor$Opens>;
     // private packages: string[];
-    // private provides: { [key: string]: ModuleDescriptor$Provides };
+    // private provides: JavaMap<string, ModuleDescriptor$Provides>;
     // private rawVersionString: string;
-    // private requires: { [key: string]: ModuleDescriptor$Requires };
+    // private requires: JavaMap<string, ModuleDescriptor$Requires>;
     // private strict: boolean;
     // private uses: string[];
     // private version: ModuleDescriptor$Version;

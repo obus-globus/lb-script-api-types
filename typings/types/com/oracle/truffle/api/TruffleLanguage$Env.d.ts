@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Assumption } from '../../../../com/oracle/truffle/api/Assumption.d.ts'
 import type { CallTarget } from '../../../../com/oracle/truffle/api/CallTarget.d.ts'
 import type { InstrumentInfo } from '../../../../com/oracle/truffle/api/InstrumentInfo.d.ts'
@@ -31,9 +32,9 @@ import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 import type { OptionValues } from '../../../../org/graalvm/options/OptionValues.d.ts'
 import type { SandboxPolicy } from '../../../../org/graalvm/polyglot/SandboxPolicy.d.ts'
 export class TruffleLanguage$Env extends Object {
-    constructor(polyglotLanguageContext: Object, language: TruffleLanguage<Object>, out: OutputStream, err: OutputStream, in_: InputStream, config: { [key: string]: Object }, options: OptionValues, applicationArguments: string[])
+    constructor(polyglotLanguageContext: Object, language: TruffleLanguage<Object>, out: OutputStream, err: OutputStream, in_: InputStream, config: JavaMap<string, Object>, options: OptionValues, applicationArguments: string[])
     readonly applicationArguments: string[];
-    readonly config: { [key: string]: Object };
+    readonly config: JavaMap<string, Object>;
     context: Object;
     // private contextUnchangedAssumption: Assumption;
     // private err: OutputStream;
@@ -73,15 +74,15 @@ export class TruffleLanguage$Env extends Object {
     exportSymbol(symbolName: string, value: Object): void;
     findMetaObject(value: Object): Object;
     getApplicationArguments(): string[];
-    getConfig(): { [key: string]: Object };
+    getConfig(): JavaMap<string, Object>;
     getContext(): TruffleContext;
     getCurrentWorkingDirectory(): TruffleFile;
-    getEnvironment(): { [key: string]: string };
+    getEnvironment(): JavaMap<string, string>;
     getFileNameSeparator(): string;
     getHostLanguage(): LanguageInfo;
-    getInstruments(): { [key: string]: InstrumentInfo };
+    getInstruments(): JavaMap<string, InstrumentInfo>;
     getInternalFileSystemContext(): TruffleFile$FileSystemContext;
-    getInternalLanguages(): { [key: string]: LanguageInfo };
+    getInternalLanguages(): JavaMap<string, LanguageInfo>;
     getInternalResource(resource: Class<InternalResource>): TruffleFile;
     getInternalResource(resourceId: string): TruffleFile;
     getInternalTruffleFile(uri: URI): TruffleFile;
@@ -96,7 +97,7 @@ export class TruffleLanguage$Env extends Object {
     getPolyglotBindings(): Object;
     getPolyglotLanguageContext(): Object;
     getPublicFileSystemContext(): TruffleFile$FileSystemContext;
-    getPublicLanguages(): { [key: string]: LanguageInfo };
+    getPublicLanguages(): JavaMap<string, LanguageInfo>;
     getPublicTruffleFile(uri: URI): TruffleFile;
     getPublicTruffleFile(path: string): TruffleFile;
     getSandboxPolicy(): SandboxPolicy;

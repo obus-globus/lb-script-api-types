@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { TranslationUnit } from '../../../../../../io/github/douira/glsl_transformer/ast/node/TranslationUnit.d.ts'
 import type { RootSupplier } from '../../../../../../io/github/douira/glsl_transformer/ast/query/RootSupplier.d.ts'
 import type { ASTParser } from '../../../../../../io/github/douira/glsl_transformer/ast/transform/ASTParser.d.ts'
@@ -7,7 +8,7 @@ import type { BiConsumer } from '../../../../../../java/util/function/BiConsumer
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Supplier } from '../../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class GroupedASTTransformer<J extends JobParameters, K extends unknown, M extends Map<K, string>, N extends Map<K, TranslationUnit>> extends ASTTransformer<J, Map<K, string>> {
+export class GroupedASTTransformer<J extends JobParameters, K extends unknown, M extends JavaMap<K, string>, N extends JavaMap<K, TranslationUnit>> extends ASTTransformer<J, JavaMap<K, string>> {
     static _getInternalInstance(): ASTParser;
     constructor()
     constructor(arg0: (param0: N, param1: J) => void, arg1: () => N, arg2: () => M)
@@ -21,7 +22,7 @@ export class GroupedASTTransformer<J extends JobParameters, K extends unknown, M
     setTransformation(arg0: (param0: N, param1: J) => void): void;
     setTransformation(arg0: (param0: N) => void): void;
     setTuMapSupplier(arg0: () => N): void;
-    transform(arg0: RootSupplier, arg1: Map<K, string>): M;
-    transform(arg0: Map<K, string>): Map<K, string>;
-    transform(arg0: Map<K, string>, arg1: J): Map<K, string>;
+    transform(arg0: RootSupplier, arg1: JavaMap<K, string>): M;
+    transform(arg0: JavaMap<K, string>): JavaMap<K, string>;
+    transform(arg0: JavaMap<K, string>, arg1: J): JavaMap<K, string>;
 }

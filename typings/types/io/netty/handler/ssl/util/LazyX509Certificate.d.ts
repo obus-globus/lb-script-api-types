@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { BigInteger } from '../../../../../java/math/BigInteger.d.ts'
 import type { Principal } from '../../../../../java/security/Principal.d.ts'
 import type { PublicKey } from '../../../../../java/security/PublicKey.d.ts'
@@ -40,6 +41,6 @@ export class LazyX509Certificate extends X509Certificate {
     toString(): string;
     // private unwrap(): X509Certificate;
     verify(arg0: PublicKey): void;
-    verify(arg0: PublicKey, arg1: { [key: string]: any }): void;
+    verify(arg0: PublicKey, arg1: JavaMap<any, any>): void;
     verify(arg0: PublicKey, arg1: string): void;
 }

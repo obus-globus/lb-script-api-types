@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { IChunkTracker } from '../../../../../com/viaversion/viafabricplus/injection/access/core/bedrock/IChunkTracker.d.ts'
 import type { StoredObject } from '../../../../../com/viaversion/viaversion/api/connection/StoredObject.d.ts'
 import type { UserConnection } from '../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
@@ -20,7 +21,7 @@ export class ChunkTracker extends StoredObject implements IChunkTracker {
     // private centerX: number;
     // private centerZ: number;
     // private chunkType: Type<Chunk>;
-    // private chunks: { [key: string]: any };
+    // private chunks: JavaMap<any, any>;
     readonly dimension: Dimension;
     // private dirtyChunks: (Object | null)[];
     readonly minY: number;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { PrintStream } from '../../../../java/io/PrintStream.d.ts'
 import type { StackTraceElement } from '../../../../java/lang/StackTraceElement.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -31,7 +32,7 @@ export class PrettyPrinter extends Object {
     add(arg0: string, ...arg1: Object[]): PrettyPrinter;
     add(arg0: Throwable): PrettyPrinter;
     add(arg0: Throwable, arg1: number): PrettyPrinter;
-    add(arg0: Map<Object | null, Object | null>): PrettyPrinter;
+    add(arg0: JavaMap<Object | null, Object | null>): PrettyPrinter;
     add(arg0: PrettyPrinter$IPrettyPrintable): PrettyPrinter;
     addIndexed(arg0: Object[]): PrettyPrinter;
     // private addLine(arg0: Object): void;

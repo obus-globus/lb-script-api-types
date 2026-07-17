@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export interface CefCommandLine extends Object{
     appendArgument(arg0: string): void;
@@ -6,7 +7,7 @@ export interface CefCommandLine extends Object{
     getArguments(): string[];
     getProgram(): string;
     getSwitchValue(arg0: string): string;
-    getSwitches(): { [key: string]: string };
+    getSwitches(): JavaMap<string, string>;
     hasArguments(): boolean;
     hasSwitch(arg0: string): boolean;
     hasSwitches(): boolean;

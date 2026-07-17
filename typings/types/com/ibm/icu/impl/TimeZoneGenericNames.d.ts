@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { TextTrieMap } from '../../../../com/ibm/icu/impl/TextTrieMap.d.ts'
 import type { TimeZoneGenericNames$GenericMatchInfo } from '../../../../com/ibm/icu/impl/TimeZoneGenericNames$GenericMatchInfo.d.ts'
 import type { TimeZoneGenericNames$GenericNameType } from '../../../../com/ibm/icu/impl/TimeZoneGenericNames$GenericNameType.d.ts'
@@ -18,8 +19,8 @@ export class TimeZoneGenericNames extends Object implements Freezable<TimeZoneGe
     static getInstance(paramarg0: ULocale): TimeZoneGenericNames;
     constructor(arg0: ULocale, arg1: TimeZoneNames)
     // private _frozen: boolean;
-    // private _genericLocationNamesMap: { [key: string]: string };
-    // private _genericPartialLocationNamesMap: { [key: string]: string };
+    // private _genericLocationNamesMap: JavaMap<string, string>;
+    // private _genericPartialLocationNamesMap: JavaMap<string, string>;
     // private _gnamesTrie: TextTrieMap<TimeZoneGenericNames$NameInfo>;
     // private _gnamesTrieFullyLoaded: boolean;
     // private _locale: ULocale;

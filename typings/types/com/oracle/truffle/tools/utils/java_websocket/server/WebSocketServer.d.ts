@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { AbstractWebSocket } from '../../../../../../../com/oracle/truffle/tools/utils/java_websocket/AbstractWebSocket.d.ts'
 import type { WebSocket } from '../../../../../../../com/oracle/truffle/tools/utils/java_websocket/WebSocket.d.ts'
 import type { WebSocketFactory } from '../../../../../../../com/oracle/truffle/tools/utils/java_websocket/WebSocketFactory.d.ts'
@@ -62,7 +63,7 @@ export abstract class WebSocketServer extends AbstractWebSocket implements Runna
     // private doServerShutdown(): void;
     // private doSetupSelectorAndServerThread(): boolean;
     // private doWrite(arg0: SelectionKey): void;
-    // private fillFrames(arg0: Draft, arg1: Map<Draft, Framedata[]>, arg2: string, arg3: ByteBuffer): void;
+    // private fillFrames(arg0: Draft, arg1: JavaMap<Draft, Framedata[]>, arg2: string, arg3: ByteBuffer): void;
     getAddress(): InetSocketAddress;
     getConnections(): WebSocket[];
     getDraft(): Draft[];

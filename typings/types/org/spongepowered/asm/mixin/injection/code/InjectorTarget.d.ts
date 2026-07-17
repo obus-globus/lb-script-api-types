@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { AbstractInsnNode } from '../../../../../../org/objectweb/asm/tree/AbstractInsnNode.d.ts'
 import type { MethodNode } from '../../../../../../org/objectweb/asm/tree/MethodNode.d.ts'
@@ -7,7 +8,7 @@ import type { TargetSelectors$SelectedMethod } from '../../../../../../org/spong
 import type { InjectionNodes$InjectionNode } from '../../../../../../org/spongepowered/asm/mixin/injection/struct/InjectionNodes$InjectionNode.d.ts'
 export class InjectorTarget extends Object {
     constructor(arg0: ISliceContext, arg1: AbstractInsnNode[], arg2: TargetSelectors$SelectedMethod)
-    // private cache: { [key: string]: (Object | null)[] };
+    // private cache: JavaMap<string, (Object | null)[]>;
     // private context: ISliceContext;
     readonly mergedBy: string;
     readonly mergedPriority: number;

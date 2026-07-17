@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { DynamicDispatchLibrary } from '../../../../../com/oracle/truffle/api/library/DynamicDispatchLibrary.d.ts'
 import type { Library } from '../../../../../com/oracle/truffle/api/library/Library.d.ts'
 import type { LibraryExport } from '../../../../../com/oracle/truffle/api/library/LibraryExport.d.ts'
@@ -17,14 +18,14 @@ export abstract class LibraryFactory<T extends Library> extends Object {
     // private afterBuiltinDefaultExports: DefaultExportProvider[];
     // private aot: LibraryFactory$CachedAOTExports;
     // private beforeBuiltinDefaultExports: DefaultExportProvider[];
-    // private cachedCache: Map<Class<Object>, T>;
+    // private cachedCache: JavaMap<Class<Object>, T>;
     // private dispatchLibrary: DynamicDispatchLibrary;
-    // private exportCache: Map<Class<Object>, LibraryExport<T>>;
+    // private exportCache: JavaMap<Class<Object>, LibraryExport<T>>;
     // private libraryClass: Class<T>;
     readonly messages: Message[];
-    // private nameToMessages: { [key: string]: Message[] };
+    // private nameToMessages: JavaMap<string, Message[]>;
     // private proxyExports: LibraryFactory$ProxyExports;
-    // private uncachedCache: Map<Class<Object>, T>;
+    // private uncachedCache: JavaMap<Class<Object>, T>;
     // private uncachedDispatch: T;
     // private aotSupport(): LibraryFactory$CachedAOTExports;
     create(receiver: Object): T;

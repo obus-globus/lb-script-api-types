@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ShaderStorageBufferHolder } from '../../../../net/irisshaders/iris/gl/buffer/ShaderStorageBufferHolder.d.ts'
 import type { GlImage } from '../../../../net/irisshaders/iris/gl/image/GlImage.d.ts'
@@ -13,12 +14,12 @@ import type { ShadowRenderTargets } from '../../../../net/irisshaders/iris/shado
 import type { FrameUpdateNotifier } from '../../../../net/irisshaders/iris/uniforms/FrameUpdateNotifier.d.ts'
 import type { CustomUniforms } from '../../../../net/irisshaders/iris/uniforms/custom/CustomUniforms.d.ts'
 export class ShadowCompositeRenderer extends Object {
-    constructor(arg0: WorldRenderingPipeline, arg1: PackDirectives, arg2: ProgramSource[], arg3: ComputeSource[][], arg4: ShadowRenderTargets, arg5: ShaderStorageBufferHolder, arg6: TextureAccess, arg7: FrameUpdateNotifier, arg8: { [key: string]: TextureAccess }, arg9: GlImage[], arg10: { [key: number]: boolean }, arg11: { [key: string]: TextureAccess }, arg12: CustomUniforms)
-    // private customTextureIds: { [key: string]: TextureAccess };
+    constructor(arg0: WorldRenderingPipeline, arg1: PackDirectives, arg2: ProgramSource[], arg3: ComputeSource[][], arg4: ShadowRenderTargets, arg5: ShaderStorageBufferHolder, arg6: TextureAccess, arg7: FrameUpdateNotifier, arg8: JavaMap<string, TextureAccess>, arg9: GlImage[], arg10: JavaMap<number, boolean>, arg11: JavaMap<string, TextureAccess>, arg12: CustomUniforms)
+    // private customTextureIds: JavaMap<string, TextureAccess>;
     // private customUniforms: CustomUniforms;
     readonly flippedAtLeastOnceFinal: number[];
     // private irisCustomImages: GlImage[];
-    // private irisCustomTextures: { [key: string]: TextureAccess };
+    // private irisCustomTextures: JavaMap<string, TextureAccess>;
     // private noiseTexture: TextureAccess;
     // private passes: ShadowCompositeRenderer$Pass[];
     // private pipeline: WorldRenderingPipeline;

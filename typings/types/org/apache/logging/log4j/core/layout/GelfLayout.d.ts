@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { StringBuilder } from '../../../../../../java/lang/StringBuilder.d.ts'
 import type { Level } from '../../../../../../org/apache/logging/log4j/Level.d.ts'
 import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
@@ -29,7 +30,7 @@ export class GelfLayout extends AbstractStringLayout {
     // private compress(bytes: number[]): number[];
     encode(event: LogEvent, destination: ByteBufferDestination): void;
     // private formatLevel(level: Level): number;
-    getContentFormat(): { [key: string]: string };
+    getContentFormat(): JavaMap<string, string>;
     getContentType(): string;
     requiresLocation(): boolean;
     toByteArray(event: LogEvent): number[];

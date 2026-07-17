@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
 import type { ArchiveEntry } from '../../../../../../org/apache/commons/compress/archivers/ArchiveEntry.d.ts'
 import type { ArchiveInputStream } from '../../../../../../org/apache/commons/compress/archivers/ArchiveInputStream.d.ts'
@@ -21,14 +22,14 @@ export class TarArchiveInputStream extends ArchiveInputStream<TarArchiveEntry> {
     // private currentSparseInputStreamIndex: number;
     // private entryOffset: number;
     // private entrySize: number;
-    // private globalPaxHeaders: { [key: string]: string };
+    // private globalPaxHeaders: JavaMap<string, string>;
     // private globalSparseHeaders: TarArchiveStructSparse[];
     // private lenient: boolean;
     // private recordBuffer: number[];
     // private smallBuf: number[];
     // private sparseInputStreams: InputStream[];
     // private zipEncoding: ZipEncoding;
-    // private applyPaxHeadersToCurrentEntry(arg0: { [key: string]: string }, arg1: TarArchiveStructSparse[]): void;
+    // private applyPaxHeadersToCurrentEntry(arg0: JavaMap<string, string>, arg1: TarArchiveStructSparse[]): void;
     available(): number;
     // private buildSparseInputStreams(): void;
     canReadEntryData(arg0: ArchiveEntry): boolean;

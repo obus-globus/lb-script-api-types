@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Application } from '../../../../ai/djl/Application.d.ts'
 import type { MRL } from '../../../../ai/djl/repository/MRL.d.ts'
 import type { Repository } from '../../../../ai/djl/repository/Repository.d.ts'
@@ -13,18 +14,18 @@ export abstract class ModelZoo extends Object {
     static getModelZoo(paramarg0: string): ModelZoo;
     static hasModelZoo(paramarg0: string): boolean;
     static listModelZoo(): ModelZoo[];
-    static listModels(): Map<Application, MRL[]>;
-    static listModels(paramarg0: Criteria<Object, Object>): Map<Application, MRL[]>;
+    static listModels(): JavaMap<Application, MRL[]>;
+    static listModels(paramarg0: Criteria<Object, Object>): JavaMap<Application, MRL[]>;
     static loadModel<I extends unknown, O extends unknown>(paramarg0: Criteria<I, O>): ZooModel<I, O>;
     static registerModelZoo(paramarg0: ZooProvider): void;
     static setModelZooResolver(paramarg0: ModelZooResolver): void;
     constructor()
-    readonly modelLoaders: { [key: string]: ModelLoader };
+    readonly modelLoaders: JavaMap<string, ModelLoader>;
     addModel(arg0: MRL): void;
     addModel(arg0: ModelLoader): void;
     getGroupId(): string;
     getModelLoader(arg0: string): ModelLoader;
     getModelLoaders(): ModelLoader[];
     getSupportedEngines(): string[];
-    listModels(arg0: Repository, arg1: Application): { [key: string]: { [key: string]: Object } };
+    listModels(arg0: Repository, arg1: Application): JavaMap<string, JavaMap<string, Object>>;
 }

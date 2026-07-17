@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { DataFixer } from '../../../../com/mojang/datafixers/DataFixer.d.ts'
 import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { CompletableFuture } from '../../../../java/util/concurrent/CompletableFuture.d.ts'
@@ -14,7 +15,7 @@ import type { RegionStorageInfo } from '../../../../net/minecraft/world/level/ch
 import type { SimpleRegionStorage } from '../../../../net/minecraft/world/level/chunk/storage/SimpleRegionStorage.d.ts'
 import type { LevelStorageSource$LevelStorageAccess } from '../../../../net/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess.d.ts'
 export class RegionStorageUpgrader extends Object {
-    constructor(dataFixer: DataFixer, dataFixType: DataFixTypes, type: string, folderName: string, defaultVersion: number, recreateRegionFiles: boolean, upgradeProgress: UpgradeProgress, startIndex: number, dataFixContextTag: CompoundTag, tagModifiers: { [key: string]: any })
+    constructor(dataFixer: DataFixer, dataFixType: DataFixTypes, type: string, folderName: string, defaultVersion: number, recreateRegionFiles: boolean, upgradeProgress: UpgradeProgress, startIndex: number, dataFixContextTag: CompoundTag, tagModifiers: JavaMap<any, any>)
     // private dataFixContextTag: CompoundTag;
     // private dataFixType: DataFixTypes;
     // private dataFixer: DataFixer;
@@ -26,7 +27,7 @@ export class RegionStorageUpgrader extends Object {
     // private recreateRegionFiles: boolean;
     // private startIndex: number;
     // private storage: SimpleRegionStorage;
-    // private tagModifiers: { [key: string]: any };
+    // private tagModifiers: JavaMap<any, any>;
     // private type: string;
     // private upgradeProgress: UpgradeProgress;
     createStorage(info: RegionStorageInfo, regionFolder: Path): SimpleRegionStorage;

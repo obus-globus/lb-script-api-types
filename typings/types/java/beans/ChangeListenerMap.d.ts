@@ -1,9 +1,10 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { EventListener } from '../../java/util/EventListener.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../java/util/Map$Entry.d.ts'
 export abstract class ChangeListenerMap<L extends EventListener> extends Object {
     constructor()
-    // private map: { [key: string]: L[] };
+    // private map: JavaMap<string, L[]>;
     add(arg0: string, arg1: L): void;
     extract(arg0: L): L;
     get(arg0: string): L[];

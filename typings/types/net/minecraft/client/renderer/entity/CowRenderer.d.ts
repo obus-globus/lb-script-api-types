@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { PoseStack } from '../../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
 import type { AdultAndBabyModelPair } from '../../../../../net/minecraft/client/model/AdultAndBabyModelPair.d.ts'
 import type { CowModel } from '../../../../../net/minecraft/client/model/animal/cow/CowModel.d.ts'
@@ -14,7 +15,7 @@ export class CowRenderer extends MobRenderer<Cow, CowRenderState, CowModel> {
     static NAMETAG_SCALE: number;
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
-    // private models: Map<CowVariant$ModelType, AdultAndBabyModelPair<CowModel>>;
+    // private models: JavaMap<CowVariant$ModelType, AdultAndBabyModelPair<CowModel>>;
     createRenderState(): CowRenderState;
     createRenderState(entity: Cow, partialTicks: number): CowRenderState;
     extractRenderState(entity: Cow, state: CowRenderState, partialTicks: number): void;

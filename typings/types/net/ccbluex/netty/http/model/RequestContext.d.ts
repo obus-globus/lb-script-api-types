@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { HttpMethod } from '../../../../../io/netty/handler/codec/http/HttpMethod.d.ts'
 import type { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -7,7 +8,7 @@ export class RequestContext extends Object {
     readonly contentBuffer: ByteArrayOutputStream;
     headers: Map$Entry<string, string>[];
     httpMethod: HttpMethod;
-    readonly params: { [key: string]: string };
+    readonly params: JavaMap<string, string>;
     readonly path: string;
     uri: string;
     component1(): HttpMethod;

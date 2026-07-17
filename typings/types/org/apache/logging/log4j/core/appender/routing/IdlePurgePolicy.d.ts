@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Runnable } from '../../../../../../../java/lang/Runnable.d.ts'
 import type { Future } from '../../../../../../../java/util/concurrent/Future.d.ts'
 import type { ScheduledFuture } from '../../../../../../../java/util/concurrent/ScheduledFuture.d.ts'
@@ -14,7 +15,7 @@ export class IdlePurgePolicy extends AbstractLifeCycle implements Runnable, Purg
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
     static createPurgePolicy(paramtimeToLive: string, paramcheckInterval: string, paramtimeUnit: string, paramconfiguration: Configuration): PurgePolicy;
     constructor(timeToLive: number, checkInterval: number, scheduler: ConfigurationScheduler)
-    // private appendersUsage: { [key: string]: number };
+    // private appendersUsage: JavaMap<string, number>;
     // private checkInterval: number;
     // private future: ScheduledFuture<Object>;
     // private routingAppender: RoutingAppender;

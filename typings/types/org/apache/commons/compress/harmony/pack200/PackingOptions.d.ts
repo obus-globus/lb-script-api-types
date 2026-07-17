@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Attribute } from '../../../../../../org/objectweb/asm/Attribute.d.ts'
 export class PackingOptions extends Object {
@@ -7,15 +8,15 @@ export class PackingOptions extends Object {
     static SEGMENT_LIMIT: number;
     static STRIP: string;
     constructor()
-    // private classAttributeActions: { [key: string]: string };
-    // private codeAttributeActions: { [key: string]: string };
+    // private classAttributeActions: JavaMap<string, string>;
+    // private codeAttributeActions: JavaMap<string, string>;
     readonly deflateHint: string;
     readonly effort: number;
-    // private fieldAttributeActions: { [key: string]: string };
+    // private fieldAttributeActions: JavaMap<string, string>;
     readonly gzip: boolean;
     readonly keepFileOrder: boolean;
     readonly logFile: string;
-    // private methodAttributeActions: { [key: string]: string };
+    // private methodAttributeActions: JavaMap<string, string>;
     readonly modificationTime: string;
     // private passFiles: string[];
     readonly segmentLimit: number;
@@ -27,13 +28,13 @@ export class PackingOptions extends Object {
     addCodeAttributeAction(arg0: string, arg1: string): void;
     addFieldAttributeAction(arg0: string, arg1: string): void;
     addMethodAttributeAction(arg0: string, arg1: string): void;
-    // private addOrUpdateAttributeActions(arg0: Attribute[], arg1: { [key: string]: string }, arg2: number): void;
+    // private addOrUpdateAttributeActions(arg0: Attribute[], arg1: JavaMap<string, string>, arg2: number): void;
     addPassFile(arg0: string): void;
     getDeflateHint(): string;
     getEffort(): number;
     getLogFile(): string;
     getModificationTime(): string;
-    // private getOrDefault(arg0: { [key: string]: string }, arg1: string, arg2: string): string;
+    // private getOrDefault(arg0: JavaMap<string, string>, arg1: string, arg2: string): string;
     getSegmentLimit(): number;
     getUnknownAttributeAction(): string;
     getUnknownAttributePrototypes(): Attribute[];

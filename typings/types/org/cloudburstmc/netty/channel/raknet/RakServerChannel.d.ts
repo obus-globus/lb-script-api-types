@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ChannelFuture } from '../../../../../io/netty/channel/ChannelFuture.d.ts'
 import type { ChannelPromise } from '../../../../../io/netty/channel/ChannelPromise.d.ts'
 import type { ServerChannel } from '../../../../../io/netty/channel/ServerChannel.d.ts'
@@ -14,7 +15,7 @@ import type { RakServerChannelConfig } from '../../../../../org/cloudburstmc/net
 export class RakServerChannel extends ProxyChannel<DatagramChannel> implements ServerChannel {
     constructor(arg0: DatagramChannel)
     constructor(arg0: DatagramChannel, arg1: (param0: RakChannel) => void)
-    // private childChannelMap: Map<SocketAddress, RakChildChannel>;
+    // private childChannelMap: JavaMap<SocketAddress, RakChildChannel>;
     // private childConsumer: (param0: RakChannel) => void;
     // private config: RakServerChannelConfig;
     config(): RakServerChannelConfig;

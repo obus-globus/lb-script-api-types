@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { ClaimsBuilder } from '../../../io/jsonwebtoken/ClaimsBuilder.d.ts'
 import type { Clock } from '../../../io/jsonwebtoken/Clock.d.ts'
 import type { CompressionCodecResolver } from '../../../io/jsonwebtoken/CompressionCodecResolver.d.ts'
@@ -28,18 +29,18 @@ export class DefaultJwtParserBuilder extends Object implements JwtParserBuilder 
     // private critical: string[];
     // private decoder: Decoder<InputStream, InputStream>;
     // private decryptionKey: Key;
-    // private deserializer: Deserializer<{ [key: string]: Object | null }>;
-    // private encAlgs: { [key: string]: AeadAlgorithm };
+    // private deserializer: Deserializer<JavaMap<string, Object | null>>;
+    // private encAlgs: JavaMap<string, AeadAlgorithm>;
     // private expectedClaims: ClaimsBuilder;
-    // private keyAlgs: { [key: string]: KeyAlgorithm<any, any> };
+    // private keyAlgs: JavaMap<string, KeyAlgorithm<any, any>>;
     // private keyLocator: Locator<Key>;
-    // private provider: { [key: string]: any };
-    // private sigAlgs: { [key: string]: SecureDigestAlgorithm<any, any> };
+    // private provider: JavaMap<any, any>;
+    // private sigAlgs: JavaMap<string, SecureDigestAlgorithm<any, any>>;
     // private signatureVerificationKey: Key;
     // private signingKeyResolver: SigningKeyResolver;
     // private unsecured: boolean;
     // private unsecuredDecompression: boolean;
-    // private zipAlgs: { [key: string]: CompressionAlgorithm };
+    // private zipAlgs: JavaMap<string, CompressionAlgorithm>;
     b64Url(arg0: Decoder<InputStream, InputStream>): JwtParserBuilder;
     base64UrlDecodeWith(arg0: Decoder<CharSequence, number[]>): JwtParserBuilder;
     build(): JwtParser;
@@ -49,12 +50,12 @@ export class DefaultJwtParserBuilder extends Object implements JwtParserBuilder 
     // private decryptWith(arg0: Key): JwtParserBuilder;
     decryptWith(arg0: PrivateKey): JwtParserBuilder;
     decryptWith(arg0: SecretKey): JwtParserBuilder;
-    deserializeJsonWith(arg0: Deserializer<{ [key: string]: Object | null }>): JwtParserBuilder;
+    deserializeJsonWith(arg0: Deserializer<JavaMap<string, Object | null>>): JwtParserBuilder;
     enc(): NestedCollection<AeadAlgorithm, JwtParserBuilder>;
-    json(arg0: Deserializer<{ [key: string]: Object | null }>): JwtParserBuilder;
+    json(arg0: Deserializer<JavaMap<string, Object | null>>): JwtParserBuilder;
     key(): NestedCollection<KeyAlgorithm<any, any>, JwtParserBuilder>;
     keyLocator(arg0: Locator<Key>): JwtParserBuilder;
-    provider(arg0: { [key: string]: any }): JwtParserBuilder;
+    provider(arg0: JavaMap<any, any>): JwtParserBuilder;
     require(arg0: string, arg1: Object): JwtParserBuilder;
     requireAudience(arg0: string): JwtParserBuilder;
     requireExpiration(arg0: Date): JwtParserBuilder;

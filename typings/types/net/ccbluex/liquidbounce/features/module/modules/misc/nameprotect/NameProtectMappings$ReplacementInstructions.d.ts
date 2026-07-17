@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { NameProtectMappings$MappingData } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/misc/nameprotect/NameProtectMappings$MappingData.d.ts'
 import type { Trie } from '../../../../../../../../org/ahocorasick/trie/Trie.d.ts'
@@ -7,7 +8,7 @@ import type { Trie } from '../../../../../../../../org/ahocorasick/trie/Trie.d.t
  * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/nameprotect/NameProtectMappings.kt#L127 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/nameprotect/NameProtectMappings.kt:127}
  */
 export class NameProtectMappings$ReplacementInstructions extends Object {
-    constructor(matcher: Trie, replacements: { [key: string]: NameProtectMappings$MappingData })
+    constructor(matcher: Trie, replacements: JavaMap<string, NameProtectMappings$MappingData>)
     readonly matcher: Trie;
-    readonly replacements: { [key: string]: NameProtectMappings$MappingData };
+    readonly replacements: JavaMap<string, NameProtectMappings$MappingData>;
 }

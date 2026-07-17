@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Component } from '../../java/awt/Component.d.ts'
 import type { Dimension } from '../../java/awt/Dimension.d.ts'
 import type { InputStream } from '../../java/io/InputStream.d.ts'
@@ -60,8 +61,8 @@ export class JEditorPane extends JTextComponent {
     // private isUserSetEditorKit: boolean;
     // private kit: EditorKit;
     // private pageLoader: SwingWorker<URL, Object>;
-    // private pageProperties: { [key: string]: Object };
-    // private typeHandlers: { [key: string]: EditorKit };
+    // private pageProperties: JavaMap<string, Object>;
+    // private typeHandlers: JavaMap<string, EditorKit>;
     addHyperlinkListener(arg0: HyperlinkListener): void;
     createDefaultEditorKit(): EditorKit;
     fireHyperlinkUpdate(arg0: HyperlinkEvent): void;

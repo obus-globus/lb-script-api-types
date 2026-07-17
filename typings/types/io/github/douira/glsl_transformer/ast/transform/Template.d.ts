@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { ASTNode } from '../../../../../../io/github/douira/glsl_transformer/ast/node/abstract_node/ASTNode.d.ts'
 import type { Expression } from '../../../../../../io/github/douira/glsl_transformer/ast/node/expression/Expression.d.ts'
 import type { ExternalDeclaration } from '../../../../../../io/github/douira/glsl_transformer/ast/node/external_declaration/ExternalDeclaration.d.ts'
@@ -14,7 +15,7 @@ export class Template<N extends ASTNode> extends Object {
     constructor(arg0: N)
     // private localReplacements: ASTNode[];
     // private localReplacementsMarked: number;
-    // private replacements: Map<ASTNode, () => ASTNode>;
+    // private replacements: JavaMap<ASTNode, () => ASTNode>;
     readonly source: N;
     getInstanceFor(arg0: Root): N;
     getInstanceFor(arg0: Root, arg1: ASTNode): N;

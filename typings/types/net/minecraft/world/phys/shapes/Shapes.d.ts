@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { OctahedralGroup } from '../../../../../com/mojang/math/OctahedralGroup.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Direction } from '../../../../../net/minecraft/core/Direction.d.ts'
@@ -29,17 +30,17 @@ export class Shapes extends Object {
     static or(paramfirst: VoxelShape, ...paramtail: VoxelShape[]): VoxelShape;
     static rotate(paramshape: VoxelShape, paramrotation: OctahedralGroup): VoxelShape;
     static rotate(paramshape: VoxelShape, paramrotation: OctahedralGroup, paramrotationPoint: Vec3): VoxelShape;
-    static rotateAll(paramnorth: VoxelShape): Map<Direction, VoxelShape>;
-    static rotateAll(paramnorth: VoxelShape, paraminitial: OctahedralGroup, paramrotationCenter: Vec3): Map<Direction, VoxelShape>;
-    static rotateAll(paramnorth: VoxelShape, paramrotationCenter: Vec3): Map<Direction, VoxelShape>;
-    static rotateAllAxis(paramnorth: VoxelShape): Map<Direction$Axis, VoxelShape>;
-    static rotateAllAxis(paramnorth: VoxelShape, paramrotationCenter: Vec3): Map<Direction$Axis, VoxelShape>;
-    static rotateAttachFace(paramnorth: VoxelShape): Map<AttachFace, Map<Direction, VoxelShape>>;
-    static rotateAttachFace(paramnorth: VoxelShape, paraminitial: OctahedralGroup): Map<AttachFace, Map<Direction, VoxelShape>>;
-    static rotateHorizontal(paramnorth: VoxelShape): Map<Direction, VoxelShape>;
-    static rotateHorizontal(paramnorth: VoxelShape, paraminitial: OctahedralGroup): Map<Direction, VoxelShape>;
-    static rotateHorizontal(paramnorth: VoxelShape, paraminitial: OctahedralGroup, paramrotationCenter: Vec3): Map<Direction, VoxelShape>;
-    static rotateHorizontalAxis(paramzAxis: VoxelShape): Map<Direction$Axis, VoxelShape>;
-    static rotateHorizontalAxis(paramzAxis: VoxelShape, paramrotationCenter: Vec3): Map<Direction$Axis, VoxelShape>;
+    static rotateAll(paramnorth: VoxelShape): JavaMap<Direction, VoxelShape>;
+    static rotateAll(paramnorth: VoxelShape, paraminitial: OctahedralGroup, paramrotationCenter: Vec3): JavaMap<Direction, VoxelShape>;
+    static rotateAll(paramnorth: VoxelShape, paramrotationCenter: Vec3): JavaMap<Direction, VoxelShape>;
+    static rotateAllAxis(paramnorth: VoxelShape): JavaMap<Direction$Axis, VoxelShape>;
+    static rotateAllAxis(paramnorth: VoxelShape, paramrotationCenter: Vec3): JavaMap<Direction$Axis, VoxelShape>;
+    static rotateAttachFace(paramnorth: VoxelShape): JavaMap<AttachFace, JavaMap<Direction, VoxelShape>>;
+    static rotateAttachFace(paramnorth: VoxelShape, paraminitial: OctahedralGroup): JavaMap<AttachFace, JavaMap<Direction, VoxelShape>>;
+    static rotateHorizontal(paramnorth: VoxelShape): JavaMap<Direction, VoxelShape>;
+    static rotateHorizontal(paramnorth: VoxelShape, paraminitial: OctahedralGroup): JavaMap<Direction, VoxelShape>;
+    static rotateHorizontal(paramnorth: VoxelShape, paraminitial: OctahedralGroup, paramrotationCenter: Vec3): JavaMap<Direction, VoxelShape>;
+    static rotateHorizontalAxis(paramzAxis: VoxelShape): JavaMap<Direction$Axis, VoxelShape>;
+    static rotateHorizontalAxis(paramzAxis: VoxelShape, paramrotationCenter: Vec3): JavaMap<Direction$Axis, VoxelShape>;
     constructor()
 }

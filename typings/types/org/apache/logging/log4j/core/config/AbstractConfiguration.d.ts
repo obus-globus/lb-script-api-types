@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { WeakReference } from '../../../../../../java/lang/ref/WeakReference.d.ts'
 import type { Future } from '../../../../../../java/util/concurrent/Future.d.ts'
 import type { TimeUnit } from '../../../../../../java/util/concurrent/TimeUnit.d.ts'
@@ -39,24 +40,24 @@ export abstract class AbstractConfiguration extends AbstractFilterable implement
     // private advertisement: Object;
     readonly advertiser: Advertiser;
     // private advertiserNode: Node;
-    readonly appenders: { [key: string]: Appender };
+    readonly appenders: JavaMap<string, Appender>;
     // private asyncLoggerConfigDisruptor: AsyncLoggerConfigDisruptor;
     readonly asyncWaitStrategyFactory: AsyncWaitStrategyFactory;
-    // private componentMap: { [key: string]: Object };
+    // private componentMap: JavaMap<string, Object>;
     // private configurationScheduler: ConfigurationScheduler;
     readonly configurationSource: ConfigurationSource;
     readonly configurationStrSubstitutor: StrSubstitutor;
     readonly customLevels: CustomLevelConfig[];
     // private isShutdownHookEnabled: boolean;
     // private listeners: ConfigurationListener[];
-    // private loggerConfigs: { [key: string]: LoggerConfig };
+    // private loggerConfigs: JavaMap<string, LoggerConfig>;
     readonly loggerContext: WeakReference<LoggerContext>;
     // private monitorResources: MonitorResource[];
     readonly name: string;
     readonly nanoClock: NanoClock;
     pluginManager: PluginManager;
     readonly pluginPackages: string[];
-    // private propertyMap: { [key: string]: string };
+    // private propertyMap: JavaMap<string, string>;
     // private root: LoggerConfig;
     rootNode: Node;
     // private runtimeStrSubstitutor: StrSubstitutor;
@@ -77,7 +78,7 @@ export abstract class AbstractConfiguration extends AbstractFilterable implement
     doConfigure(): void;
     getAdvertiser(): Advertiser;
     getAppender<T extends Appender>(appenderName: string): T;
-    getAppenders(): { [key: string]: Appender };
+    getAppenders(): JavaMap<string, Appender>;
     // private getAsyncAppenders(all: Appender[]): Appender[];
     getAsyncLoggerConfigDelegate(): AsyncLoggerConfigDelegate;
     getAsyncWaitStrategyFactory(): AsyncWaitStrategyFactory;
@@ -89,12 +90,12 @@ export abstract class AbstractConfiguration extends AbstractFilterable implement
     getLogger(loggerName: string): LoggerConfig;
     getLoggerConfig(loggerName: string): LoggerConfig;
     getLoggerContext(): LoggerContext;
-    getLoggers(): { [key: string]: LoggerConfig };
+    getLoggers(): JavaMap<string, LoggerConfig>;
     getName(): string;
     getNanoClock(): NanoClock;
     getPluginManager(): PluginManager;
     getPluginPackages(): string[];
-    getProperties(): { [key: string]: string };
+    getProperties(): JavaMap<string, string>;
     getReliabilityStrategy(loggerConfig: LoggerConfig): ReliabilityStrategy;
     getRootLogger(): LoggerConfig;
     getRootNode(): Node;

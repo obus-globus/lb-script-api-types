@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { PolyglotBindings } from '../../../../com/oracle/truffle/polyglot/PolyglotBindings.d.ts'
 import type { PolyglotLanguageContext } from '../../../../com/oracle/truffle/polyglot/PolyglotLanguageContext.d.ts'
 import type { PolyglotValueDispatch } from '../../../../com/oracle/truffle/polyglot/PolyglotValueDispatch.d.ts'
@@ -8,7 +9,7 @@ export class PolyglotBindingsValue extends PolyglotValueDispatch {
     constructor(context: PolyglotLanguageContext, bindings: PolyglotBindings)
     // private bindings: PolyglotBindings;
     // private languageContext: PolyglotLanguageContext;
-    // private values: { [key: string]: Object };
+    // private values: JavaMap<string, Object>;
     asClass<T extends unknown>(context: Object, receiver: Object, targetType: Class<T>): T;
     asTypeLiteral<T extends unknown>(context: Object, receiver: Object, rawType: Class<T>, type: Type): T;
     getMember(context: Object, receiver: Object, key: string): Object;

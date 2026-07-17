@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -26,7 +27,7 @@ export class StructureManager extends Object {
     checkStructurePresence(pos: ChunkPos, structure: Structure, placement: StructurePlacement, createReference: boolean): StructureCheckResult;
     fillStartsForStructure(structure: Structure, referencesForStructure: (Object | null)[], consumer: (param0: StructureStart) => void): void;
     forWorldGenRegion(region: WorldGenRegion): StructureManager;
-    getAllStructuresAt(pos: BlockPos): Map<Structure, (Object | null)[]>;
+    getAllStructuresAt(pos: BlockPos): JavaMap<Structure, (Object | null)[]>;
     getStartForStructure(pos: SectionPos, structure: Structure, chunk: StructureAccess): StructureStart;
     getStructureAt(blockPos: BlockPos, structure: Structure): StructureStart;
     getStructureWithPieceAt(blockPos: BlockPos, predicate: (param0: Holder<Structure>) => boolean): StructureStart;

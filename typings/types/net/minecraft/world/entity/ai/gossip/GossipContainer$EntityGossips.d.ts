@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { UUID } from '../../../../../../java/util/UUID.d.ts'
 import type { Predicate } from '../../../../../../java/util/function/Predicate.d.ts'
 import type { Stream } from '../../../../../../java/util/stream/Stream.d.ts'
@@ -6,7 +7,7 @@ import type { GossipContainer$GossipEntry } from '../../../../../../net/minecraf
 import type { GossipType } from '../../../../../../net/minecraft/world/entity/ai/gossip/GossipType.d.ts'
 export class GossipContainer$EntityGossips extends Object {
     private constructor()
-    // private entries: { [key: string]: any };
+    // private entries: JavaMap<any, any>;
     decay(): void;
     isEmpty(): boolean;
     makeSureValueIsntTooLowOrTooHigh(type: GossipType): void;

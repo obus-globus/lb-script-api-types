@@ -1,10 +1,11 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { Object2ObjectMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Object2ObjectMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class Object2ObjectOpenHashMap$MapEntry extends Object implements Pair<K, V>, Object2ObjectMap$Entry<K, V>, Map$Entry<K, V> {
-    constructor(null_: Map<Object, Object>)
-    constructor(null_: Map<Object, Object>, arg1: number)
+    constructor(null_: JavaMap<Object, Object>)
+    constructor(null_: JavaMap<Object, Object>, arg1: number)
     // private index: number;
     getKey(): K;
     getValue(): V;

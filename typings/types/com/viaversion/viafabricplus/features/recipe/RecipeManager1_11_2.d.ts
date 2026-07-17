@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Multimap } from '../../../../../com/google/common/collect/Multimap.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Stream } from '../../../../../java/util/stream/Stream.d.ts'
@@ -10,7 +11,7 @@ import type { RecipeType } from '../../../../../net/minecraft/world/item/craftin
 import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 export class RecipeManager1_11_2 extends Object {
     constructor(arg0: RecipeHolder<any>[])
-    // private recipesById: Map<ResourceKey<Recipe<any>>, RecipeHolder<any>>;
+    // private recipesById: JavaMap<ResourceKey<Recipe<any>>, RecipeHolder<any>>;
     // private recipesByType: Multimap<RecipeType<any>, RecipeHolder<any>>;
     get(arg0: ResourceKey<Recipe<any>>): Optional<RecipeHolder<any>>;
     getFirstMatch<T extends Recipe<I>, I extends RecipeInput>(arg0: RecipeType<T>, arg1: I, arg2: Level): Optional<RecipeHolder<T>>;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { LoggerContext } from '../../../../../../../org/apache/logging/log4j/core/LoggerContext.d.ts'
 import type { ConfigurationSource } from '../../../../../../../org/apache/logging/log4j/core/config/ConfigurationSource.d.ts'
@@ -23,24 +24,24 @@ export class PropertiesConfigurationBuilder extends ConfigurationBuilderFactory 
     constructor()
     // private builder: ConfigurationBuilder<PropertiesConfiguration>;
     readonly loggerContext: LoggerContext;
-    // private rootProperties: { [key: string]: any };
-    // private addFiltersToComponent<B extends FilterableComponentBuilder<ComponentBuilder<any>>>(componentBuilder: B, properties: { [key: string]: any }): B;
-    // private addLoggersToComponent<B extends LoggableComponentBuilder<ComponentBuilder<any>>>(loggerBuilder: B, properties: { [key: string]: any }): B;
+    // private rootProperties: JavaMap<any, any>;
+    // private addFiltersToComponent<B extends FilterableComponentBuilder<ComponentBuilder<any>>>(componentBuilder: B, properties: JavaMap<any, any>): B;
+    // private addLoggersToComponent<B extends LoggableComponentBuilder<ComponentBuilder<any>>>(loggerBuilder: B, properties: JavaMap<any, any>): B;
     build(): PropertiesConfiguration;
-    // private createAppender(key: string, properties: { [key: string]: any }): AppenderComponentBuilder;
-    // private createAppenderRef(key: string, properties: { [key: string]: any }): AppenderRefComponentBuilder;
-    // private createFilter(key: string, properties: { [key: string]: any }): FilterComponentBuilder;
-    // private createLayout(appenderName: string, properties: { [key: string]: any }): LayoutComponentBuilder;
-    // private createLogger(key: string, properties: { [key: string]: any }): LoggerComponentBuilder;
-    // private createRootLogger(properties: { [key: string]: any }): RootLoggerComponentBuilder;
-    // private createScript(properties: { [key: string]: any }): ScriptComponentBuilder;
-    // private createScriptFile(properties: { [key: string]: any }): ScriptFileComponentBuilder;
+    // private createAppender(key: string, properties: JavaMap<any, any>): AppenderComponentBuilder;
+    // private createAppenderRef(key: string, properties: JavaMap<any, any>): AppenderRefComponentBuilder;
+    // private createFilter(key: string, properties: JavaMap<any, any>): FilterComponentBuilder;
+    // private createLayout(appenderName: string, properties: JavaMap<any, any>): LayoutComponentBuilder;
+    // private createLogger(key: string, properties: JavaMap<any, any>): LoggerComponentBuilder;
+    // private createRootLogger(properties: JavaMap<any, any>): RootLoggerComponentBuilder;
+    // private createScript(properties: JavaMap<any, any>): ScriptComponentBuilder;
+    // private createScriptFile(properties: JavaMap<any, any>): ScriptFileComponentBuilder;
     getErrorPrefix(): string;
     getLoggerContext(): LoggerContext;
     isValid(): boolean;
-    // private processRemainingProperties(builder: ConfigurationBuilder<PropertiesConfiguration>, properties: { [key: string]: any }): void;
+    // private processRemainingProperties(builder: ConfigurationBuilder<PropertiesConfiguration>, properties: JavaMap<any, any>): void;
     // private removeDefinedButUnusedProperties(prefix: string): void;
     setConfigurationSource(source: ConfigurationSource): PropertiesConfigurationBuilder;
     setLoggerContext(loggerContext: LoggerContext): PropertiesConfigurationBuilder;
-    setRootProperties(rootProperties: { [key: string]: any }): PropertiesConfigurationBuilder;
+    setRootProperties(rootProperties: JavaMap<any, any>): PropertiesConfigurationBuilder;
 }

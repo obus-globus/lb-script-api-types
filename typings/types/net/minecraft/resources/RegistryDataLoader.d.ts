@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Optional } from '../../../java/util/Optional.d.ts'
 import type { CompletableFuture } from '../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Executor } from '../../../java/util/concurrent/Executor.d.ts'
@@ -15,7 +16,7 @@ export class RegistryDataLoader extends Object {
     static DIMENSION_REGISTRIES: RegistryDataLoader$RegistryData<Object>[];
     static SYNCHRONIZED_REGISTRIES: RegistryDataLoader$RegistryData<Object>[];
     static WORLDGEN_REGISTRIES: RegistryDataLoader$RegistryData<Object>[];
-    static load(paramentries: Map<ResourceKey<Object[]>, RegistryDataLoader$NetworkedRegistryData>, paramknownDataSource: (param0: Identifier) => Optional<Resource>, paramcontextRegistries: HolderLookup$RegistryLookup<Object>[], paramregistriesToLoad: RegistryDataLoader$RegistryData<Object>[], paramexecutor: Executor): CompletableFuture<RegistryAccess$Frozen>;
+    static load(paramentries: JavaMap<ResourceKey<Object[]>, RegistryDataLoader$NetworkedRegistryData>, paramknownDataSource: (param0: Identifier) => Optional<Resource>, paramcontextRegistries: HolderLookup$RegistryLookup<Object>[], paramregistriesToLoad: RegistryDataLoader$RegistryData<Object>[], paramexecutor: Executor): CompletableFuture<RegistryAccess$Frozen>;
     static load(paramresourceManager: ResourceManager, paramcontextRegistries: HolderLookup$RegistryLookup<Object>[], paramregistriesToLoad: RegistryDataLoader$RegistryData<Object>[], paramexecutor: Executor): CompletableFuture<RegistryAccess$Frozen>;
     constructor()
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts'
 import type { ItemStack } from '../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
@@ -9,9 +10,9 @@ import type { LootItemCondition } from '../../../../../../../net/minecraft/world
 import type { NumberProvider } from '../../../../../../../net/minecraft/world/level/storage/loot/providers/number/NumberProvider.d.ts'
 export class SetEnchantmentsFunction extends LootItemConditionalFunction {
     static MAP_CODEC: MapCodec<SetEnchantmentsFunction>;
-    private constructor(predicates: LootItemCondition[], enchantments: Map<Holder<Enchantment>, NumberProvider>, add: boolean)
+    private constructor(predicates: LootItemCondition[], enchantments: JavaMap<Holder<Enchantment>, NumberProvider>, add: boolean)
     // private add: boolean;
-    // private enchantments: Map<Holder<Enchantment>, NumberProvider>;
+    // private enchantments: JavaMap<Holder<Enchantment>, NumberProvider>;
     codec(): MapCodec<SetEnchantmentsFunction>;
     run(itemStack: ItemStack, context: LootContext): ItemStack;
     validate(context: ValidationContext): void;

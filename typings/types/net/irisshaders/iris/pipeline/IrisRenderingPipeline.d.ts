@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { GlProgram } from '../../../../com/mojang/blaze3d/opengl/GlProgram.d.ts'
 import type { GpuTextureView } from '../../../../com/mojang/blaze3d/textures/GpuTextureView.d.ts'
 import type { VertexFormat } from '../../../../com/mojang/blaze3d/vertex/VertexFormat.d.ts'
@@ -75,7 +76,7 @@ export class IrisRenderingPipeline extends Object implements ShaderRenderingPipe
     readonly currentSpecularTexture: AbstractTexture;
     // private customImages: GlImage[];
     // private customTextureManager: CustomTextureManager;
-    // private customTextureMap: Map<Tri<string, TextureType, TextureStage>, string>;
+    // private customTextureMap: JavaMap<Tri<string, TextureType, TextureStage>, string>;
     readonly customUniforms: CustomUniforms;
     // private defaultFB: GlFramebuffer;
     // private defaultFBAlt: GlFramebuffer;
@@ -183,7 +184,7 @@ export class IrisRenderingPipeline extends Object implements ShaderRenderingPipe
     getShaderMap(): ShaderMap;
     getSpecularSampler(): GlSampler;
     getSunPathRotation(): number;
-    getTextureMap(): Map<Tri<string, TextureType, TextureStage>, string>;
+    getTextureMap(): JavaMap<Tri<string, TextureType, TextureStage>, string>;
     getWhitePixel(): AbstractTexture;
     hasFeature(arg0: FeatureFlags): boolean;
     hasShadowRenderTargets(): boolean;

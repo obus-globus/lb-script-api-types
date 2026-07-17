@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Minecraft } from '../../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
@@ -8,7 +9,7 @@ import type { Slot } from '../../../../../../net/minecraft/world/inventory/Slot.
 import type { SlotDisplay } from '../../../../../../net/minecraft/world/item/crafting/display/SlotDisplay.d.ts'
 export class GhostSlots extends Object {
     constructor(slotSelectTime: () => number)
-    // private ingredients: Map<Slot, GhostSlots$GhostSlot>;
+    // private ingredients: JavaMap<Slot, GhostSlots$GhostSlot>;
     // private slotSelectTime: () => number;
     clear(): void;
     extractRenderState(graphics: GuiGraphicsExtractor, minecraft: Minecraft, isResultSlotBig: boolean): void;

@@ -1,6 +1,7 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class Double2BooleanOpenCustomHashMap$MapIterator<ConsumerType extends unknown> extends Object {
-    private constructor(null_: { [key: string]: any })
+    private constructor(null_: JavaMap<any, any>)
     // private c: number;
     // private last: number;
     // private mustReturnNullKey: boolean;

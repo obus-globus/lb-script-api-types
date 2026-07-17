@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -6,9 +7,9 @@ import type { FeatureFlag } from '../../../../net/minecraft/world/flag/FeatureFl
 import type { FeatureFlagSet } from '../../../../net/minecraft/world/flag/FeatureFlagSet.d.ts'
 import type { FeatureFlagUniverse } from '../../../../net/minecraft/world/flag/FeatureFlagUniverse.d.ts'
 export class FeatureFlagRegistry extends Object {
-    private constructor(universe: FeatureFlagUniverse, allFlags: FeatureFlagSet, names: Map<Identifier, FeatureFlag>)
+    private constructor(universe: FeatureFlagUniverse, allFlags: FeatureFlagSet, names: JavaMap<Identifier, FeatureFlag>)
     // private allFlags: FeatureFlagSet;
-    // private names: Map<Identifier, FeatureFlag>;
+    // private names: JavaMap<Identifier, FeatureFlag>;
     // private universe: FeatureFlagUniverse;
     allFlags(): FeatureFlagSet;
     codec(): Codec<FeatureFlagSet>;

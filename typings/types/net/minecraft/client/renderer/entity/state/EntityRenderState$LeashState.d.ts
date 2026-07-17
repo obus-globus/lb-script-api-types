@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { FabricRenderState } from '../../../../../../net/fabricmc/fabric/api/client/rendering/v1/FabricRenderState.d.ts'
 import type { RenderStateDataKey } from '../../../../../../net/fabricmc/fabric/api/client/rendering/v1/RenderStateDataKey.d.ts'
@@ -8,7 +9,7 @@ export class EntityRenderState$LeashState extends Object implements FabricRender
     endBlockLight: number;
     endSkyLight: number;
     offset: Vec3;
-    // private renderStateData: Map<Object | null, Object | null>;
+    // private renderStateData: JavaMap<Object | null, Object | null>;
     slack: boolean;
     start: Vec3;
     startBlockLight: number;

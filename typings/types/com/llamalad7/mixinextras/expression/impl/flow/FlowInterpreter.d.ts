@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { FlowContext } from '../../../../../../com/llamalad7/mixinextras/expression/impl/flow/FlowContext.d.ts'
 import type { FlowValue } from '../../../../../../com/llamalad7/mixinextras/expression/impl/flow/FlowValue.d.ts'
 import type { FlowPostProcessor } from '../../../../../../com/llamalad7/mixinextras/expression/impl/flow/postprocessing/FlowPostProcessor.d.ts'
@@ -11,9 +12,9 @@ import type { Interpreter } from '../../../../../../org/objectweb/asm/tree/analy
 export class FlowInterpreter extends Interpreter<FlowValue> {
     static analyze(paramarg0: ClassNode, paramarg1: MethodNode, paramarg2: FlowContext): FlowValue[];
     constructor(arg0: ClassNode, arg1: MethodNode, arg2: FlowContext)
-    // private cache: Map<AbstractInsnNode, FlowValue>;
+    // private cache: JavaMap<AbstractInsnNode, FlowValue>;
     // private context: FlowContext;
-    // private localTypes: Map<VarInsnNode, Type>;
+    // private localTypes: JavaMap<VarInsnNode, Type>;
     // private postProcessors: FlowPostProcessor[];
     binaryOperation(arg0: AbstractInsnNode, arg1: FlowValue, arg2: FlowValue): FlowValue;
     copyOperation(arg0: AbstractInsnNode, arg1: FlowValue): FlowValue;

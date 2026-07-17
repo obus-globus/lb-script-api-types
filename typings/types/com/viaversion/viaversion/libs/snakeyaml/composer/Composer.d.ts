@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { LoaderOptions } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/LoaderOptions.d.ts'
 import type { CommentEventsCollector } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/comments/CommentEventsCollector.d.ts'
 import type { CommentLine } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/comments/CommentLine.d.ts'
@@ -10,7 +11,7 @@ import type { MergeUtils } from '../../../../../../com/viaversion/viaversion/lib
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class Composer extends Object {
     constructor(arg0: Parser, arg1: Resolver, arg2: LoaderOptions)
-    // private anchors: { [key: string]: Node };
+    // private anchors: JavaMap<string, Node>;
     // private blockCommentsCollector: CommentEventsCollector;
     // private inlineCommentsCollector: CommentEventsCollector;
     // private loadingConfig: LoaderOptions;

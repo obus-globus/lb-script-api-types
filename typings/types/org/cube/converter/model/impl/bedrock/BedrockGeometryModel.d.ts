@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { JsonObject } from '../../../../../../com/viaversion/viaversion/libs/gson/JsonObject.d.ts'
 import type { RotationType } from '../../../../../../org/cube/converter/converter/enums/RotationType.d.ts'
 import type { GeneralModel } from '../../../../../../org/cube/converter/model/GeneralModel.d.ts'
@@ -12,6 +13,6 @@ export class BedrockGeometryModel extends GeneralModel {
     compile(): JsonObject;
     getIdentifier(): string;
     toJavaItemModel(arg0: string, arg1: RotationType): JavaItemModel;
-    toJavaItemModel(arg0: Map<Direction, string>, arg1: RotationType): JavaItemModel;
+    toJavaItemModel(arg0: JavaMap<Direction, string>, arg1: RotationType): JavaItemModel;
     toJavaMultiItemModel(arg0: string): JavaItemModel[];
 }

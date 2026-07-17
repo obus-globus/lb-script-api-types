@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../../java/io/OutputStream.d.ts'
 import type { AutoCloseable } from '../../../../java/lang/AutoCloseable.d.ts'
@@ -45,14 +46,14 @@ export class CloseableURLConnection extends URLConnection implements AutoCloseab
     getHeaderFieldInt(arg0: string, arg1: number): number;
     getHeaderFieldKey(arg0: number): string;
     getHeaderFieldLong(arg0: string, arg1: number): number;
-    getHeaderFields(): { [key: string]: string[] };
+    getHeaderFields(): JavaMap<string, string[]>;
     getIfModifiedSince(): number;
     getInputStream(): InputStream;
     getLastModified(): number;
     getOutputStream(): OutputStream;
     getPermission(): Permission;
     getReadTimeout(): number;
-    getRequestProperties(): { [key: string]: string[] };
+    getRequestProperties(): JavaMap<string, string[]>;
     getRequestProperty(arg0: string): string;
     getURL(): URL;
     getUseCaches(): boolean;

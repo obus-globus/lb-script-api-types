@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ClaimsRequest } from '../../../../com/microsoft/aad/msal4j/ClaimsRequest.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class AbstractMsalAuthorizationGrant extends Object {
@@ -6,5 +7,5 @@ export abstract class AbstractMsalAuthorizationGrant extends Object {
     // private scopes: string[];
     getClaims(): ClaimsRequest;
     getScopes(): string[];
-    toParameters(): { [key: string]: string };
+    toParameters(): JavaMap<string, string>;
 }

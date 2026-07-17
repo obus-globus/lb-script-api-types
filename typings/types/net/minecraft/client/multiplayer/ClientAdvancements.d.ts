@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ClientAdvancementsAccessor } from '../../../../net/fabricmc/fabric/mixin/client/rendering/advancement/ClientAdvancementsAccessor.d.ts'
 import type { AdvancementHolder } from '../../../../net/minecraft/advancements/AdvancementHolder.d.ts'
@@ -12,7 +13,7 @@ export class ClientAdvancements extends Object implements ClientAdvancementsAcce
     constructor(minecraft: Minecraft, telemetryManager: WorldSessionTelemetryManager)
     readonly listener: ClientAdvancements$Listener;
     // private minecraft: Minecraft;
-    // private progress: Map<AdvancementHolder, AdvancementProgress>;
+    // private progress: JavaMap<AdvancementHolder, AdvancementProgress>;
     // private selectedTab: AdvancementHolder;
     // private telemetryManager: WorldSessionTelemetryManager;
     readonly tree: AdvancementTree;

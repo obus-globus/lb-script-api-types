@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Pair } from '../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { DataResult } from '../../../com/mojang/serialization/DataResult.d.ts'
 import type { Decoder } from '../../../com/mojang/serialization/Decoder.d.ts'
@@ -40,9 +41,9 @@ export abstract class DelegatingOps<T extends unknown> extends Object implements
     createLong(value: number): T;
     createLongList(arg0: LongStream): T;
     createLongList(input: LongStream): T;
-    createMap(arg0: Map<T, T>): T;
+    createMap(arg0: JavaMap<T, T>): T;
     createMap(map: Stream<Pair<T, T>>): T;
-    createMap(map: Map<T, T>): T;
+    createMap(map: JavaMap<T, T>): T;
     createNumeric(i: Number): T;
     createShort(arg0: number): T;
     createShort(value: number): T;
@@ -76,10 +77,10 @@ export abstract class DelegatingOps<T extends unknown> extends Object implements
     mergeToList(list: T, value: T): DataResult<T>;
     mergeToList(list: T, values: T[]): DataResult<T>;
     mergeToMap(arg0: T, arg1: MapLike<T>): DataResult<T>;
-    mergeToMap(arg0: T, arg1: Map<T, T>): DataResult<T>;
+    mergeToMap(arg0: T, arg1: JavaMap<T, T>): DataResult<T>;
     mergeToMap(map: T, key: T, value: T): DataResult<T>;
     mergeToMap(map: T, values: MapLike<T>): DataResult<T>;
-    mergeToMap(map: T, values: Map<T, T>): DataResult<T>;
+    mergeToMap(map: T, values: JavaMap<T, T>): DataResult<T>;
     mergeToPrimitive(arg0: T, arg1: T): DataResult<T>;
     mergeToPrimitive(prefix: T, value: T): DataResult<T>;
     remove(input: T, key: string): T;

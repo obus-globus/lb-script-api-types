@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { OptionalInt } from '../../../../../java/util/OptionalInt.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
@@ -16,7 +17,7 @@ export class Raids extends SavedData {
     static load(paramtag: CompoundTag): Raids;
     constructor()
     // private nextId: number;
-    // private raidMap: { [key: string]: any };
+    // private raidMap: JavaMap<any, any>;
     // private tick: number;
     createOrExtendRaid(player: ServerPlayer, raidPosition: BlockPos): Raid;
     get(raidId: number): Raid;

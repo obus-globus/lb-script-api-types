@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { BlockPos$MutableBlockPos } from '../../../../../net/minecraft/core/BlockPos$MutableBlockPos.d.ts'
 import type { Direction } from '../../../../../net/minecraft/core/Direction.d.ts'
@@ -20,8 +21,8 @@ export class WalkNodeEvaluator extends NodeEvaluator {
     static getPathTypeStatic(paramcontext: PathfindingContext, parampos: BlockPos$MutableBlockPos): PathType;
     static isBurningBlock(paramblockState: BlockState): boolean;
     constructor()
-    // private collisionCache: { [key: string]: any };
-    // private pathTypesByPosCacheByMob: { [key: string]: any };
+    // private collisionCache: JavaMap<any, any>;
+    // private pathTypesByPosCacheByMob: JavaMap<any, any>;
     // private reusableNeighbors: Node[];
     // private canReachWithoutCollision(posTo: Node): boolean;
     canStartAt(pos: BlockPos): boolean;

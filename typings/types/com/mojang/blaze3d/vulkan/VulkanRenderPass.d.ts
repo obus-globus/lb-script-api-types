@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { IndexType } from '../../../../com/mojang/blaze3d/IndexType.d.ts'
 import type { GpuBuffer } from '../../../../com/mojang/blaze3d/buffers/GpuBuffer.d.ts'
 import type { GpuBufferSlice } from '../../../../com/mojang/blaze3d/buffers/GpuBufferSlice.d.ts'
@@ -36,8 +37,8 @@ export class VulkanRenderPass extends Object implements RenderPassBackend, Vulka
     pipeline: VulkanRenderPipeline;
     // private pushedDebugGroups: number;
     // private renderArea: RenderPass$RenderArea;
-    // private textures: { [key: string]: VulkanRenderPass$TextureViewAndSampler };
-    // private uniforms: { [key: string]: GpuBufferSlice };
+    // private textures: JavaMap<string, VulkanRenderPass$TextureViewAndSampler>;
+    // private uniforms: JavaMap<string, GpuBufferSlice>;
     bindTexture(name: string, textureView: GpuTextureView, sampler: GpuSampler): void;
     // private commandBuffer(): VkCommandBuffer;
     disableScissor(): void;

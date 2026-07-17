@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { FloatFloatPair } from '../../../../../../../../it/unimi/dsi/fastutil/floats/FloatFloatPair.d.ts'
 import type { ValueGroup } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ValueGroup.d.ts'
 import type { CrystalAuraDamageOptions$DamageConstellation } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/CrystalAuraDamageOptions$DamageConstellation.d.ts'
@@ -8,7 +9,7 @@ export class CrystalAuraDamageOptions extends ValueGroup {
     static INSTANCE: CrystalAuraDamageOptions;
     // private antiSuicide: boolean;
     // private /*not mapped: */ getAntiSuicide(): boolean;
-    readonly cacheMap: Map<CrystalAuraDamageOptions$DamageConstellation, DamageProvider>;
+    readonly cacheMap: JavaMap<CrystalAuraDamageOptions$DamageConstellation, DamageProvider>;
     /**
      * Only places / breaks crystals that deal more damage to the enemy than to us.
      *

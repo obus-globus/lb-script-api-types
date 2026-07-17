@@ -1,11 +1,12 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class MFDataModelFormatter$MapWithNfcKeys extends Object {
     constructor()
-    constructor(orgMap: { [key: string]: Object })
+    constructor(orgMap: JavaMap<string, Object>)
     constructor(org: MFDataModelFormatter$MapWithNfcKeys)
-    // private theMap: { [key: string]: Object };
+    // private theMap: JavaMap<string, Object>;
     get(key: string): Object;
-    getMap(): { [key: string]: Object };
+    getMap(): JavaMap<string, Object>;
     put(key: string, value: Object): Object;
-    putAll(m: { [key: string]: Object | null }): void;
+    putAll(m: JavaMap<string, Object | null>): void;
 }

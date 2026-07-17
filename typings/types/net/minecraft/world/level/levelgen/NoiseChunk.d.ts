@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Climate$ParameterPoint } from '../../../../../net/minecraft/world/level/biome/Climate$ParameterPoint.d.ts'
 import type { Climate$Sampler } from '../../../../../net/minecraft/world/level/biome/Climate$Sampler.d.ts'
@@ -55,10 +56,10 @@ export class NoiseChunk extends Object implements DensityFunction$ContextProvide
     // private lastBlendingOutput: Blender$BlendingOutput;
     // private noiseSizeXZ: number;
     // private preliminarySurfaceLevel: DensityFunction;
-    // private preliminarySurfaceLevelCache: { [key: string]: any };
+    // private preliminarySurfaceLevelCache: JavaMap<any, any>;
     // private seed: number;
     // private sliceFillingContextProvider: DensityFunction$ContextProvider;
-    // private wrapped: Map<DensityFunction, DensityFunction>;
+    // private wrapped: JavaMap<DensityFunction, DensityFunction>;
     advanceCellX(cellXIndex: number): void;
     aquifer(): Aquifer;
     blockX(): number;

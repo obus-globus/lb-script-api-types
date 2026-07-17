@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Minecraft } from '../../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
@@ -23,7 +24,7 @@ export class ExperimentsScreen extends Screen {
     // private layout: HeaderAndFooterLayout;
     // private output: (param0: PackRepository) => void;
     // private packRepository: PackRepository;
-    // private packs: { [key: string]: any };
+    // private packs: JavaMap<any, any>;
     // private parent: Screen;
     // private scrollArea: ScrollableLayout;
     getNarrationMessage(): Component;

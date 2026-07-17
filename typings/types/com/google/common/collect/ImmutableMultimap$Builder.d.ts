@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ImmutableCollection$Builder } from '../../../../com/google/common/collect/ImmutableCollection$Builder.d.ts'
 import type { ImmutableMultimap } from '../../../../com/google/common/collect/ImmutableMultimap.d.ts'
 import type { Multimap } from '../../../../com/google/common/collect/Multimap.d.ts'
@@ -7,13 +8,13 @@ import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class ImmutableMultimap$Builder<K extends unknown, V extends unknown> extends Object {
     constructor()
     constructor(expectedKeys: number)
-    // private builderMap: Map<K, ImmutableCollection$Builder<V>>;
+    // private builderMap: JavaMap<K, ImmutableCollection$Builder<V>>;
     // private expectedValuesPerKey: number;
     // private keyComparator: (param0: K, param1: K) => number;
     // private valueComparator: (param0: V, param1: V) => number;
     build(): ImmutableMultimap<K, V>;
     combine(other: ImmutableMultimap$Builder<K, V>): ImmutableMultimap$Builder<K, V>;
-    ensureBuilderMapNonNull(): Map<K, ImmutableCollection$Builder<V>>;
+    ensureBuilderMapNonNull(): JavaMap<K, ImmutableCollection$Builder<V>>;
     expectedValueCollectionSize(defaultExpectedValues: number, values: (Object | null)[]): number;
     expectedValuesPerKey(expectedValuesPerKey: number): ImmutableMultimap$Builder<K, V>;
     newValueCollectionBuilderWithExpectedSize(expectedSize: number): ImmutableCollection$Builder<V>;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class ExtendedClassicBlocks extends Object {
     static BROWN_WOOL: number;
@@ -10,9 +11,9 @@ export class ExtendedClassicBlocks extends Object {
     static ICE: number;
     static LIGHT_PINK_WOOL: number;
     static MAGMA: number;
-    static MAPPING: { [key: string]: any };
+    static MAPPING: JavaMap<any, any>;
     static PILLAR: number;
-    static REVERSE_MAPPING: { [key: string]: any };
+    static REVERSE_MAPPING: JavaMap<any, any>;
     static ROPE: number;
     static SANDSTONE: number;
     static SNOW: number;

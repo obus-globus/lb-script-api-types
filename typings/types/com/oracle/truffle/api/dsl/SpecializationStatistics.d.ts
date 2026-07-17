@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { SpecializationStatistics$EnabledNodeStatistics } from '../../../../../com/oracle/truffle/api/dsl/SpecializationStatistics$EnabledNodeStatistics.d.ts'
 import type { SpecializationStatistics$NodeClassStatistics } from '../../../../../com/oracle/truffle/api/dsl/SpecializationStatistics$NodeClassStatistics.d.ts'
 import type { SpecializationStatistics$NodeStatistics } from '../../../../../com/oracle/truffle/api/dsl/SpecializationStatistics$NodeStatistics.d.ts'
@@ -9,8 +10,8 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class SpecializationStatistics extends Object {
     static create(): SpecializationStatistics;
     constructor()
-    // private classStatistics: Map<Class<Object>, SpecializationStatistics$NodeClassStatistics>;
-    // private uncachedStatistics: Map<Node, SpecializationStatistics$EnabledNodeStatistics>;
+    // private classStatistics: JavaMap<Class<Object>, SpecializationStatistics$NodeClassStatistics>;
+    // private uncachedStatistics: JavaMap<Node, SpecializationStatistics$EnabledNodeStatistics>;
     // private createCachedNodeStatistic(node: Node, specializations: string[]): SpecializationStatistics$NodeStatistics;
     enter(): SpecializationStatistics;
     // private getClassStatistics(nodeClass: Class<Object>, specializations: string[]): SpecializationStatistics$NodeClassStatistics;

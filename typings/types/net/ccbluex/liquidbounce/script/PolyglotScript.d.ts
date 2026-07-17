@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { File } from '../../../../java/io/File.d.ts'
 import type { AutoCloseable } from '../../../../java/lang/AutoCloseable.d.ts'
 import type { Runnable } from '../../../../java/lang/Runnable.d.ts'
@@ -50,7 +51,7 @@ export class PolyglotScript extends Object implements AutoCloseable {
     // private context: Context;
     readonly debugOptions: ScriptDebugOptions;
     readonly file: File;
-    // private globalEvents: { [key: string]: () => void };
+    // private globalEvents: JavaMap<string, () => void>;
     readonly language: string;
     // private registeredCommands: Command[];
     // private registeredModes: Mode[];

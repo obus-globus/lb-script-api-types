@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { InspectorExecutionContext } from '../../../../../../com/oracle/truffle/tools/chromeinspector/InspectorExecutionContext.d.ts'
 import type { InspectorWSConnection } from '../../../../../../com/oracle/truffle/tools/chromeinspector/instrument/InspectorWSConnection.d.ts'
 import type { Token } from '../../../../../../com/oracle/truffle/tools/chromeinspector/instrument/Token.d.ts'
@@ -18,8 +19,8 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class InspectorServer extends WebSocketServer implements InspectorWSConnection {
     static get(paramisa: InetSocketAddress, paramtoken: Token, parampathContainingToken: string, paramcontext: InspectorExecutionContext, paramdebugBrk: boolean, paramconnectionWatcher: ConnectionWatcher, paraminitialSession: InspectServerSession): InspectorServer;
     private constructor(isa: InetSocketAddress)
-    // private sessions: Map<Token, InspectorServer$ServerPathSession>;
-    // private socketConnectionHandlers: Map<WebSocket, InspectorServer$InspectWebSocketHandler>;
+    // private sessions: JavaMap<Token, InspectorServer$ServerPathSession>;
+    // private socketConnectionHandlers: JavaMap<WebSocket, InspectorServer$InspectWebSocketHandler>;
     // private started: CountDownLatch;
     close(token: Token): void;
     closing(token: Token): void;

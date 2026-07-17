@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlockColors } from '../../../../../net/minecraft/client/color/block/BlockColors.d.ts'
 import type { BuiltInBlockModels$ModelFactory } from '../../../../../net/minecraft/client/renderer/block/BuiltInBlockModels$ModelFactory.d.ts'
@@ -7,8 +8,8 @@ import type { BlockState } from '../../../../../net/minecraft/world/level/block/
 export class BuiltInBlockModels$Builder extends Object {
     private constructor(blockColors: BlockColors)
     // private blockColors: BlockColors;
-    // private result: Map<BlockState, BlockModel$Unbaked>;
-    build(): Map<BlockState, BlockModel$Unbaked>;
+    // private result: JavaMap<BlockState, BlockModel$Unbaked>;
+    build(): JavaMap<BlockState, BlockModel$Unbaked>;
     // private put(factory: (param0: BlockColors, param1: BlockState) => BlockModel$Unbaked, block: Block): void;
     // private put(factory: (param0: BlockColors, param1: BlockState) => BlockModel$Unbaked, a: Block, b: Block): void;
     // private put(specialModel: BlockModel$Unbaked, block: Block): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Protocol } from '../../../../com/viaversion/viaversion/api/protocol/Protocol.d.ts'
 import type { PacketType } from '../../../../com/viaversion/viaversion/api/protocol/packet/PacketType.d.ts'
 import type { State } from '../../../../com/viaversion/viaversion/api/protocol/packet/State.d.ts'
@@ -5,7 +6,7 @@ import type { PacketTypeMap } from '../../../../com/viaversion/viaversion/api/pr
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ProtocolUtil extends Object {
-    static packetTypeMap<P extends PacketType>(paramarg0: Class<P>, ...paramarg1: Class<P>[]): Map<State, PacketTypeMap<P>>;
+    static packetTypeMap<P extends PacketType>(paramarg0: Class<P>, ...paramarg1: Class<P>[]): JavaMap<State, PacketTypeMap<P>>;
     static toNiceHex(paramarg0: number): string;
     static toNiceName(paramarg0: Class<Protocol<any, any, any, any>>): string;
     constructor()

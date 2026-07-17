@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BiConsumer } from '../../../../../org/apache/logging/log4j/util/BiConsumer.d.ts'
@@ -9,5 +10,5 @@ export interface ReadOnlyStringMap extends Serializable, Object {
     getValue<V extends unknown>(key: string): V;
     isEmpty(): boolean;
     size(): number;
-    toMap(): { [key: string]: string };
+    toMap(): JavaMap<string, string>;
 }

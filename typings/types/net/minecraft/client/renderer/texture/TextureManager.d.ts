@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { AutoCloseable } from '../../../../../java/lang/AutoCloseable.d.ts'
 import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
@@ -16,7 +17,7 @@ import type { ResourceManager } from '../../../../../net/minecraft/server/packs/
 export class TextureManager extends Object implements AutoCloseable, FabricResourceReloader, PreparableReloadListener {
     static INTENTIONAL_MISSING_TEXTURE: Identifier;
     constructor(resourceManager: ResourceManager)
-    // private byPath: Map<Identifier, AbstractTexture>;
+    // private byPath: JavaMap<Identifier, AbstractTexture>;
     // private fabric$id: Identifier;
     // private resourceManager: ResourceManager;
     // private tickableTextures: TickableTexture[];

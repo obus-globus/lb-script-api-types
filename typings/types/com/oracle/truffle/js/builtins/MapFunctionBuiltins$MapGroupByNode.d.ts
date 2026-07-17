@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
@@ -21,5 +22,5 @@ export abstract class MapFunctionBuiltins$MapGroupByNode extends JSBuiltinNode {
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
     groupBy(items: Object, callbackfn: Object, groupByNode: GroupByNode): JSObject;
-    setGroups(map: JSMapObject, groups: Map<Object, Object[]>): void;
+    setGroups(map: JSMapObject, groups: JavaMap<Object, Object[]>): void;
 }

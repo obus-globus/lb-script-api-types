@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { EventHook } from '../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { EventListener } from '../../../../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
@@ -7,20 +8,20 @@ import type { Component } from '../../../../../../../../net/minecraft/network/ch
 import type { ItemStack } from '../../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class AutoShopInventoryManager extends Object implements EventListener {
     static INSTANCE: AutoShopInventoryManager;
-    // private currentInventoryItems: { [key: string]: any };
+    // private currentInventoryItems: JavaMap<any, any>;
     readonly debugDisplayName: Component;
     readonly inventoryItems: ItemStack[];
     // private onTick: EventHook<GameTickEvent>;
-    // private pendingItems: { [key: string]: any };
-    // private prevInventoryItems: { [key: string]: any };
+    // private pendingItems: JavaMap<any, any>;
+    // private prevInventoryItems: JavaMap<any, any>;
     readonly running: boolean;
-    addPendingItems(items: { [key: string]: any }): void;
+    addPendingItems(items: JavaMap<any, any>): void;
     children(): EventListener[];
     clearPendingItems(): void;
-    getInventoryItems(): { [key: string]: any };
+    getInventoryItems(): JavaMap<any, any>;
     parent(): EventListener | null;
     parent(): ModuleAutoShop;
     unregister(): void;
-    // private update(newItems: { [key: string]: any }): void;
+    // private update(newItems: JavaMap<any, any>): void;
     // private updatePendingItems(): void;
 }

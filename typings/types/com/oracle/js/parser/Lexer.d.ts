@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Lexer$LineInfoReceiver } from '../../../../com/oracle/js/parser/Lexer$LineInfoReceiver.d.ts'
 import type { Lexer$RegexToken } from '../../../../com/oracle/js/parser/Lexer$RegexToken.d.ts'
 import type { Lexer$State } from '../../../../com/oracle/js/parser/Lexer$State.d.ts'
@@ -18,7 +19,7 @@ export class Lexer extends Scanner implements StringPool {
     // private allowBigInt: boolean;
     // private annexB: boolean;
     // private ecmaScriptVersion: number;
-    // private internedStrings: { [key: string]: TruffleString };
+    // private internedStrings: JavaMap<string, TruffleString>;
     // private isModule: boolean;
     // private last: TokenType;
     // private linePosition: number;

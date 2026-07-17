@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { TruffleContext } from '../../../../../../com/oracle/truffle/api/TruffleContext.d.ts'
 import type { DebuggerSession } from '../../../../../../com/oracle/truffle/api/debug/DebuggerSession.d.ts'
 import type { LoadSourceEvent } from '../../../../../../com/oracle/truffle/api/instrumentation/LoadSourceEvent.d.ts'
@@ -13,12 +14,12 @@ export class LoadedSourcesHandler extends Object implements LoadSourceListener {
     constructor(context: ExecutionContext, debuggerSession: DebuggerSession)
     // private context: ExecutionContext;
     // private debuggerSession: DebuggerSession;
-    // private sourceIDs: Map<Source, number>;
+    // private sourceIDs: JavaMap<Source, number>;
     // private sources: LoadedSourcesHandler$DAPSourceWrapper[];
     // private sourcesBacklog: Source[];
-    // private sourcesByPath: { [key: string]: Source };
+    // private sourcesByPath: JavaMap<string, Source>;
     // private sourcesLock: Object;
-    // private toRunOnLoad: { [key: string]: (param0: Source) => void };
+    // private toRunOnLoad: JavaMap<string, (param0: Source) => void>;
     assureLoaded(sourceLoaded: Source): Source_2;
     assureLoaded(sourceLoaded: Source, truffleContext: TruffleContext): Source_2;
     // private from(source: Source, truffleContext: TruffleContext): Source_2;

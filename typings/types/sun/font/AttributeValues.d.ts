@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Font } from '../../java/awt/Font.d.ts'
 import type { Paint } from '../../java/awt/Paint.d.ts'
 import type { GraphicAttribute } from '../../java/awt/font/GraphicAttribute.d.ts'
@@ -15,17 +16,17 @@ export class AttributeValues extends Object implements Cloneable {
     static MASK_ALL: number;
     static extractXRotation(paramarg0: AffineTransform, paramarg1: boolean): AffineTransform;
     static extractYRotation(paramarg0: AffineTransform, paramarg1: boolean): AffineTransform;
-    static fromMap(paramarg0: Map<AttributedCharacterIterator$Attribute, Object>): AttributeValues;
-    static fromMap(paramarg0: Map<AttributedCharacterIterator$Attribute, Object>, paramarg1: number): AttributeValues;
-    static fromSerializableHashtable(paramarg0: Map<Object, Object>): AttributeValues;
-    static getBaselineTransform(paramarg0: Map<Object, Object>): AffineTransform;
-    static getCharTransform(paramarg0: Map<Object, Object>): AffineTransform;
-    static getJustification(paramarg0: Map<Object, Object>): number;
+    static fromMap(paramarg0: JavaMap<AttributedCharacterIterator$Attribute, Object>): AttributeValues;
+    static fromMap(paramarg0: JavaMap<AttributedCharacterIterator$Attribute, Object>, paramarg1: number): AttributeValues;
+    static fromSerializableHashtable(paramarg0: JavaMap<Object, Object>): AttributeValues;
+    static getBaselineTransform(paramarg0: JavaMap<Object, Object>): AffineTransform;
+    static getCharTransform(paramarg0: JavaMap<Object, Object>): AffineTransform;
+    static getJustification(paramarg0: JavaMap<Object, Object>): number;
     static getMask(paramarg0: EAttribute): number;
     static getMask(...paramarg0: EAttribute[]): number;
-    static getNumericShaping(paramarg0: Map<Object, Object>): NumericShaper;
-    static getTracking(paramarg0: Map<Object, Object>): number;
-    static is16Hashtable(paramarg0: Map<Object, Object>): boolean;
+    static getNumericShaping(paramarg0: JavaMap<Object, Object>): NumericShaper;
+    static getTracking(paramarg0: JavaMap<Object, Object>): number;
+    static is16Hashtable(paramarg0: JavaMap<Object, Object>): boolean;
     constructor()
     readonly background: Paint;
     readonly baselineTransform: AffineTransform;
@@ -96,8 +97,8 @@ export class AttributeValues extends Object implements Cloneable {
     // private i_validate(arg0: EAttribute): boolean;
     isDefined(arg0: EAttribute): boolean;
     isNonDefault(arg0: EAttribute): boolean;
-    merge(arg0: Map<AttributedCharacterIterator$Attribute, Object | null>): AttributeValues;
-    merge(arg0: Map<AttributedCharacterIterator$Attribute, Object | null>, arg1: number): AttributeValues;
+    merge(arg0: JavaMap<AttributedCharacterIterator$Attribute, Object | null>): AttributeValues;
+    merge(arg0: JavaMap<AttributedCharacterIterator$Attribute, Object | null>, arg1: number): AttributeValues;
     merge(arg0: AttributeValues): AttributeValues;
     merge(arg0: AttributeValues, arg1: number): AttributeValues;
     set(arg0: EAttribute, arg1: Object): void;
@@ -128,8 +129,8 @@ export class AttributeValues extends Object implements Cloneable {
     setUnderline(arg0: number): void;
     setWeight(arg0: number): void;
     setWidth(arg0: number): void;
-    toMap(arg0: Map<TextAttribute, Object>): Map<TextAttribute, Object>;
-    toSerializableHashtable(): Map<Object, Object>;
+    toMap(arg0: JavaMap<TextAttribute, Object>): JavaMap<TextAttribute, Object>;
+    toSerializableHashtable(): JavaMap<Object, Object>;
     toString(): string;
     unset(arg0: EAttribute): void;
     unsetDefault(): void;

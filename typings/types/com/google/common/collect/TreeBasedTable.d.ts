@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { StandardRowSortedTable } from '../../../../com/google/common/collect/StandardRowSortedTable.d.ts'
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -11,6 +12,6 @@ export class TreeBasedTable<R extends unknown, C extends unknown, V extends unkn
     // private columnComparator: (param0: C, param1: C) => number;
     columnComparator(): (param0: C, param1: C) => number;
     createColumnKeyIterator(): Iterator<C>;
-    row(rowKey: R): Map<C, V>;
+    row(rowKey: R): JavaMap<C, V>;
     rowComparator(): (param0: R, param1: R) => number;
 }

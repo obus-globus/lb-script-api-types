@@ -1,8 +1,9 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Byte2ByteLinkedOpenHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/bytes/Byte2ByteLinkedOpenHashMap$MapIterator.d.ts'
 import type { ByteConsumer } from '../../../../../it/unimi/dsi/fastutil/bytes/ByteConsumer.d.ts'
 import type { ByteListIterator } from '../../../../../it/unimi/dsi/fastutil/bytes/ByteListIterator.d.ts'
 export class Byte2ByteLinkedOpenHashMap$ValueIterator extends Byte2ByteLinkedOpenHashMap$MapIterator<(param0: number) => void> implements ByteListIterator {
-    constructor(null_: { [key: string]: any })
+    constructor(null_: JavaMap<any, any>)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     add(arg0: number): void;
     next(): number;

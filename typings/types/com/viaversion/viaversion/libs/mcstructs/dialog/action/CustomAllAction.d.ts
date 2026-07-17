@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Tag } from '../../../../../../../com/viaversion/nbt/tag/Tag.d.ts'
 import type { Identifier } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/core/Identifier.d.ts'
 import type { DialogAction } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/dialog/action/DialogAction.d.ts'
@@ -16,6 +17,6 @@ export class CustomAllAction extends Object implements DialogAction {
     hashCode(): number;
     setAdditions(arg0: Map$Entry<string, Tag>[]): void;
     setId(arg0: Identifier): void;
-    toAction(arg0: { [key: string]: ValueGetter }): ClickEvent;
+    toAction(arg0: JavaMap<string, ValueGetter>): ClickEvent;
     toString(): string;
 }

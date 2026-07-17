@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { TruffleFile } from '../../../../../com/oracle/truffle/api/TruffleFile.d.ts'
 import type { TruffleLanguage } from '../../../../../com/oracle/truffle/api/TruffleLanguage.d.ts'
 import type { Source } from '../../../../../com/oracle/truffle/api/source/Source.d.ts'
@@ -35,7 +36,7 @@ export class SourceImpl extends Source {
     getLanguage(): string;
     getMimeType(): string;
     getName(): string;
-    getOptions(): { [key: string]: string };
+    getOptions(): JavaMap<string, string>;
     getOptions(language: TruffleLanguage<Object>): OptionValues;
     getOriginalURI(): URI;
     getPath(): string;

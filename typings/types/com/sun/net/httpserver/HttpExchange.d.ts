@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { HttpContext } from '../../../../com/sun/net/httpserver/HttpContext.d.ts'
 import type { HttpPrincipal } from '../../../../com/sun/net/httpserver/HttpPrincipal.d.ts'
 import type { Request } from '../../../../com/sun/net/httpserver/Request.d.ts'
@@ -17,12 +18,12 @@ export abstract class HttpExchange extends Object implements Request, AutoClosea
     getProtocol(): string;
     getRemoteAddress(): InetSocketAddress;
     getRequestBody(): InputStream;
-    getRequestHeaders(): { [key: string]: any };
+    getRequestHeaders(): JavaMap<any, any>;
     getRequestMethod(): string;
     getRequestURI(): URI;
     getResponseBody(): OutputStream;
     getResponseCode(): number;
-    getResponseHeaders(): { [key: string]: any };
+    getResponseHeaders(): JavaMap<any, any>;
     sendResponseHeaders(arg0: number, arg1: number): void;
     setAttribute(arg0: string, arg1: Object): void;
     setStreams(arg0: InputStream, arg1: OutputStream): void;

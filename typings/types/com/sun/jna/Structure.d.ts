@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Memory } from '../../../com/sun/jna/Memory.d.ts'
 import type { Pointer } from '../../../com/sun/jna/Pointer.d.ts'
 import type { Structure$FFIType } from '../../../com/sun/jna/Structure$FFIType.d.ts'
@@ -33,11 +34,11 @@ export abstract class Structure extends Object {
     // private array: Structure[];
     // private encoding: string;
     // private memory: Pointer;
-    // private nativeStrings: { [key: string]: Structure$NativeStringTracking };
+    // private nativeStrings: JavaMap<string, Structure$NativeStringTracking>;
     // private readCalled: boolean;
     // private size: number;
     // private structAlignment: number;
-    // private structFields: { [key: string]: Structure$StructField };
+    // private structFields: JavaMap<string, Structure$StructField>;
     // private typeInfo: number;
     // private typeMapper: TypeMapper;
     // private addPadding(arg0: number): number;
@@ -62,7 +63,7 @@ export abstract class Structure extends Object {
     equals(arg0: Object | null): boolean;
     fieldOffset(arg0: string): number;
     // private fieldOrder(): string[];
-    fields(): { [key: string]: Structure$StructField };
+    fields(): JavaMap<string, Structure$StructField>;
     // private format(arg0: Class<Object>): string;
     getAutoRead(): boolean;
     getAutoWrite(): boolean;

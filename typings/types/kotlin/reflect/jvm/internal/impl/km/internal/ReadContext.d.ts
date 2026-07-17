@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { MetadataExtensions } from '../../../../../../../kotlin/reflect/jvm/internal/impl/km/internal/extensions/MetadataExtensions.d.ts'
 import type { ProtoBuf$TypeParameter } from '../../../../../../../kotlin/reflect/jvm/internal/impl/metadata/ProtoBuf$TypeParameter.d.ts'
@@ -11,7 +12,7 @@ export class ReadContext extends Object {
     // private ignoreUnknownVersionRequirements: boolean;
     // private parent: ReadContext;
     readonly strings: NameResolver;
-    // private typeParameterNameToId: { [key: number]: number };
+    // private typeParameterNameToId: JavaMap<number, number>;
     readonly types: TypeTable;
     // private versionRequirements: VersionRequirementTable;
     className$org_jetbrains_kotlin_kotlin_metadata(arg0: number): string;

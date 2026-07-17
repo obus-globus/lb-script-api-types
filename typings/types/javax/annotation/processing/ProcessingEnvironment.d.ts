@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Locale } from '../../../java/util/Locale.d.ts'
 import type { Filer } from '../../../javax/annotation/processing/Filer.d.ts'
 import type { Messager } from '../../../javax/annotation/processing/Messager.d.ts'
@@ -10,7 +11,7 @@ export interface ProcessingEnvironment extends Object{
     getFiler(): Filer;
     getLocale(): Locale;
     getMessager(): Messager;
-    getOptions(): { [key: string]: string };
+    getOptions(): JavaMap<string, string>;
     getSourceVersion(): SourceVersion;
     getTypeUtils(): Types;
     isPreviewEnabled(): boolean;

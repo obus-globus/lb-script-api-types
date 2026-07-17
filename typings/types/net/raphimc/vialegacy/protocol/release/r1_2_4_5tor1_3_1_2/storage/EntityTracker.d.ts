@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { StoredObject } from '../../../../../../../com/viaversion/viaversion/api/connection/StoredObject.d.ts'
 import type { UserConnection } from '../../../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { EntityData } from '../../../../../../../com/viaversion/viaversion/api/minecraft/entitydata/EntityData.d.ts'
@@ -13,11 +14,11 @@ export class EntityTracker extends StoredObject {
     static constrainToRange(paramarg0: number, paramarg1: number, paramarg2: number): number;
     constructor(arg0: UserConnection)
     RND: Random;
-    // private entityMap: { [key: number]: AbstractTrackedEntity };
+    // private entityMap: JavaMap<number, AbstractTrackedEntity>;
     readonly playerID: number;
     getNearestEntity(arg0: Location, arg1: number, arg2: (param0: AbstractTrackedEntity) => boolean): Optional<AbstractTrackedEntity>;
     getPlayerID(): number;
-    getTrackedEntities(): { [key: number]: AbstractTrackedEntity };
+    getTrackedEntities(): JavaMap<number, AbstractTrackedEntity>;
     playSound(arg0: number, arg1: SoundType): void;
     // private playSoundAt(arg0: Location, arg1: Location, arg2: ConfiguredSound): void;
     playSoundAt(arg0: Location, arg1: Sound, arg2: number, arg3: number): void;

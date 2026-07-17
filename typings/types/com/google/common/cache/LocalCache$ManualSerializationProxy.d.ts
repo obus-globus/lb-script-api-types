@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Equivalence } from '../../../../com/google/common/base/Equivalence.d.ts'
 import type { Ticker } from '../../../../com/google/common/base/Ticker.d.ts'
 import type { Cache } from '../../../../com/google/common/cache/Cache.d.ts'
@@ -12,7 +13,7 @@ import type { ObjectInputStream } from '../../../../java/io/ObjectInputStream.d.
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class LocalCache$ManualSerializationProxy<K extends unknown, V extends unknown> extends ForwardingCache<K, V> implements Serializable {
-    constructor(cache: Map<K, V>)
+    constructor(cache: JavaMap<K, V>)
     // private concurrencyLevel: number;
     // private delegate: Cache<K, V>;
     // private expireAfterAccessNanos: number;

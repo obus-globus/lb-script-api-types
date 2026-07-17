@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { ClassDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
@@ -25,7 +26,7 @@ export class LazyJavaPackageFragment extends PackageFragmentDescriptorImpl {
     // private subPackages: NotNullLazyValue<FqName[]>;
     findClassifierByJavaClass$org_jetbrains_kotlin_descriptors_jvm(arg0: JavaClass): ClassDescriptor;
     getAnnotations(): AnnotationDescriptor[];
-    getBinaryClasses$org_jetbrains_kotlin_descriptors_jvm(): { [key: string]: KotlinJvmBinaryClass };
+    getBinaryClasses$org_jetbrains_kotlin_descriptors_jvm(): JavaMap<string, KotlinJvmBinaryClass>;
     getMemberScope(): JvmPackageScope;
     getSource(): SourceElement;
     getSubPackageFqNames$org_jetbrains_kotlin_descriptors_jvm(): FqName[];

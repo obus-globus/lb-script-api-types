@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { AbstractConstantKeysObject } from '../../../../../../com/oracle/truffle/regex/AbstractConstantKeysObject.d.ts'
 import type { AbstractRegexObject } from '../../../../../../com/oracle/truffle/regex/AbstractRegexObject.d.ts'
 import type { RegexSource } from '../../../../../../com/oracle/truffle/regex/RegexSource.d.ts'
@@ -5,8 +6,8 @@ import type { TruffleReadOnlyKeysArray } from '../../../../../../com/oracle/truf
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class OracleDBFlags extends AbstractConstantKeysObject {
     static EMPTY_INSTANCE: OracleDBFlags;
-    static createNamedCaptureGroupMapInt(paramnamedCaptureGroups: { [key: string]: number[] }): AbstractRegexObject;
-    static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: { [key: string]: number[] }): AbstractRegexObject;
+    static createNamedCaptureGroupMapInt(paramnamedCaptureGroups: JavaMap<string, number[]>): AbstractRegexObject;
+    static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: JavaMap<string, number[]>): AbstractRegexObject;
     static parseFlags(paramsource: RegexSource): OracleDBFlags;
     private constructor(value: number)
     // private value: number;

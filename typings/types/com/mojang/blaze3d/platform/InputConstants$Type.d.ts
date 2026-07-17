@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { InputConstants$Key } from '../../../../com/mojang/blaze3d/platform/InputConstants$Key.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { BiFunction } from '../../../../java/util/function/BiFunction.d.ts'
@@ -13,7 +14,7 @@ export class InputConstants$Type extends Enum<InputConstants$Type> {
     private constructor(defaultPrefix: string, displayTextSupplier: (param0: number, param1: string) => Component)
     // private defaultPrefix: string;
     // private displayTextSupplier: (param0: number, param1: string) => Component;
-    map: { [key: string]: any };
+    map: JavaMap<any, any>;
     getOrCreate(value: number): InputConstants$Key;
     name(): "KEYSYM" | "SCANCODE" | "MOUSE";
 }

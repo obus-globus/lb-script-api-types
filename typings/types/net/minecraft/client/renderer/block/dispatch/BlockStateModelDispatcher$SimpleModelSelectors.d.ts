@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { BiConsumer } from '../../../../../../java/util/function/BiConsumer.d.ts'
@@ -10,11 +11,11 @@ import type { BlockState } from '../../../../../../net/minecraft/world/level/blo
 import type { StateDefinition } from '../../../../../../net/minecraft/world/level/block/state/StateDefinition.d.ts'
 export class BlockStateModelDispatcher$SimpleModelSelectors extends Record {
     static CODEC: Codec<BlockStateModelDispatcher$SimpleModelSelectors>;
-    constructor(models: { [key: string]: BlockStateModel$Unbaked })
-    // private models: { [key: string]: BlockStateModel$Unbaked };
+    constructor(models: JavaMap<string, BlockStateModel$Unbaked>)
+    // private models: JavaMap<string, BlockStateModel$Unbaked>;
     equals(o: Object | null): boolean;
     hashCode(): number;
     instantiate(stateDefinition: StateDefinition<Block, BlockState>, source: () => string, output: (param0: BlockState, param1: BlockStateModel$UnbakedRoot) => void): void;
-    models(): { [key: string]: BlockStateModel$Unbaked };
+    models(): JavaMap<string, BlockStateModel$Unbaked>;
     toString(): string;
 }

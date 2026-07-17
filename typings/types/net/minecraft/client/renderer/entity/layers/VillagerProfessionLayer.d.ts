@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { PoseStack } from '../../../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { EntityModel } from '../../../../../../net/minecraft/client/model/EntityModel.d.ts'
@@ -19,10 +20,10 @@ export class VillagerProfessionLayer<S extends LivingEntityRenderState & Village
     // private noHatBabyModel: M;
     // private noHatModel: M;
     // private path: string;
-    // private professionHatCache: Map<ResourceKey<VillagerProfession>, VillagerMetadataSection$Hat>;
+    // private professionHatCache: JavaMap<ResourceKey<VillagerProfession>, VillagerMetadataSection$Hat>;
     // private resourceManager: ResourceManager;
-    // private typeHatCache: Map<ResourceKey<VillagerType>, VillagerMetadataSection$Hat>;
-    getHatData<K extends unknown>(cache: Map<ResourceKey<K>, VillagerMetadataSection$Hat>, name: string, holder: Holder<K>): VillagerMetadataSection$Hat;
+    // private typeHatCache: JavaMap<ResourceKey<VillagerType>, VillagerMetadataSection$Hat>;
+    getHatData<K extends unknown>(cache: JavaMap<ResourceKey<K>, VillagerMetadataSection$Hat>, name: string, holder: Holder<K>): VillagerMetadataSection$Hat;
     // private getIdentifier(type: string, holder: Holder<Object>): Identifier;
     // private getIdentifier(type: string, key: Identifier): Identifier;
     submit(poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, lightCoords: number, state: S, yRot: number, xRot: number): void;

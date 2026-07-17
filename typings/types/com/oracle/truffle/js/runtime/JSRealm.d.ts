@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { TruffleContext } from '../../../../../com/oracle/truffle/api/TruffleContext.d.ts'
 import type { TruffleFile } from '../../../../../com/oracle/truffle/api/TruffleFile.d.ts'
 import type { TruffleLanguage$Env } from '../../../../../com/oracle/truffle/api/TruffleLanguage$Env.d.ts'
@@ -98,9 +99,9 @@ export class JSRealm extends Object {
     readonly charset: Charset;
     readonly collatorConstructor: JSFunctionObject;
     readonly collatorPrototype: JSDynamicObject;
-    readonly commonJSRequireCache: Map<TruffleFile, JSObject>;
+    readonly commonJSRequireCache: JavaMap<TruffleFile, JSObject>;
     readonly commonJSRequireFunctionObject: Object;
-    // private compiledRegexCache: Map<Source, Object>;
+    // private compiledRegexCache: JavaMap<Source, Object>;
     readonly consoleUtil: JSConsoleUtil;
     readonly context: JSContext;
     readonly contextOptions: JSContextOptions;
@@ -113,7 +114,7 @@ export class JSRealm extends Object {
     readonly datePrototype: JSDynamicObject;
     readonly dateTimeFormatConstructor: JSFunctionObject;
     readonly dateTimeFormatPrototype: JSDynamicObject;
-    readonly dedentMap: Map<Object, JSArrayObject>;
+    readonly dedentMap: JavaMap<Object, JSArrayObject>;
     readonly displayNamesConstructor: JSFunctionObject;
     readonly displayNamesPrototype: JSDynamicObject;
     readonly disposableStackConstructor: JSFunctionObject;
@@ -245,7 +246,7 @@ export class JSRealm extends Object {
     readonly stringPrototype: JSDynamicObject;
     readonly symbolConstructor: JSFunctionObject;
     readonly symbolPrototype: JSDynamicObject;
-    readonly templateRegistry: Map<Object, JSArrayObject>;
+    readonly templateRegistry: JavaMap<Object, JSArrayObject>;
     readonly temporalDurationConstructor: JSFunctionObject;
     readonly temporalDurationPrototype: JSDynamicObject;
     readonly temporalInstantConstructor: JSFunctionObject;
@@ -416,7 +417,7 @@ export class JSRealm extends Object {
     // private getCharsetImpl(): Charset;
     getCollatorConstructor(): JSFunctionObject;
     getCollatorPrototype(): JSDynamicObject;
-    getCommonJSRequireCache(): Map<TruffleFile, JSObject>;
+    getCommonJSRequireCache(): JavaMap<TruffleFile, JSObject>;
     getCommonJSRequireFunctionObject(): Object;
     getConsoleUtil(): JSConsoleUtil;
     getContext(): JSContext;
@@ -430,7 +431,7 @@ export class JSRealm extends Object {
     getDateTimeFormatConstructor(): JSFunctionObject;
     getDateTimeFormatPrototype(): JSDynamicObject;
     getDateToStringFormat(): DateFormat;
-    getDedentMap(): Map<Object, JSArrayObject>;
+    getDedentMap(): JavaMap<Object, JSArrayObject>;
     getDisplayNamesConstructor(): JSFunctionObject;
     getDisplayNamesPrototype(): JSDynamicObject;
     getDisposableStackConstructor(): JSFunctionObject;
@@ -551,7 +552,7 @@ export class JSRealm extends Object {
     getStringPrototype(): JSDynamicObject;
     getSymbolConstructor(): JSFunctionObject;
     getSymbolPrototype(): JSDynamicObject;
-    getTemplateRegistry(): Map<Object, JSArrayObject>;
+    getTemplateRegistry(): JavaMap<Object, JSArrayObject>;
     getTemporalDurationConstructor(): JSFunctionObject;
     getTemporalDurationPrototype(): JSDynamicObject;
     getTemporalInstantConstructor(): JSFunctionObject;

@@ -1,10 +1,11 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Double2FloatMap$Entry } from '../../../../../it/unimi/dsi/fastutil/doubles/Double2FloatMap$Entry.d.ts'
 import type { DoubleFloatPair } from '../../../../../it/unimi/dsi/fastutil/doubles/DoubleFloatPair.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class Double2FloatArrayMap$MapEntry extends Object implements Double2FloatMap$Entry, DoubleFloatPair, Map$Entry<number, number> {
-    constructor(null_: { [key: string]: any })
-    constructor(null_: { [key: string]: any }, arg1: number)
+    constructor(null_: JavaMap<any, any>)
+    constructor(null_: JavaMap<any, any>, arg1: number)
     // private index: number;
     getKey(): number;
     getValue(): number;

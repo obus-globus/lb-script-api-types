@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { AutoCloseable } from '../../java/lang/AutoCloseable.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
 import type { Array } from '../../java/sql/Array.d.ts'
@@ -33,14 +34,14 @@ export interface Connection extends AutoCloseable, Wrapper, Object{
     endRequest(): void;
     getAutoCommit(): boolean;
     getCatalog(): string;
-    getClientInfo(): { [key: string]: any };
+    getClientInfo(): JavaMap<any, any>;
     getClientInfo(arg0: string): string;
     getHoldability(): number;
     getMetaData(): DatabaseMetaData;
     getNetworkTimeout(): number;
     getSchema(): string;
     getTransactionIsolation(): number;
-    getTypeMap(): { [key: string]: Class<Object> };
+    getTypeMap(): JavaMap<string, Class<Object>>;
     getWarnings(): (Object | null)[];
     isClosed(): boolean;
     isReadOnly(): boolean;
@@ -60,7 +61,7 @@ export interface Connection extends AutoCloseable, Wrapper, Object{
     rollback(arg0: Savepoint): void;
     setAutoCommit(arg0: boolean): void;
     setCatalog(arg0: string): void;
-    setClientInfo(arg0: { [key: string]: any }): void;
+    setClientInfo(arg0: JavaMap<any, any>): void;
     setClientInfo(arg0: string, arg1: string): void;
     setHoldability(arg0: number): void;
     setNetworkTimeout(arg0: Executor, arg1: number): void;
@@ -73,5 +74,5 @@ export interface Connection extends AutoCloseable, Wrapper, Object{
     setShardingKeyIfValid(arg0: ShardingKey, arg1: ShardingKey, arg2: number): boolean;
     setShardingKeyIfValid(arg0: ShardingKey, arg1: number): boolean;
     setTransactionIsolation(arg0: number): void;
-    setTypeMap(arg0: { [key: string]: Class<Object> }): void;
+    setTypeMap(arg0: JavaMap<string, Class<Object>>): void;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { PBRTextureLoader } from '../../../../../net/irisshaders/iris/pbr/loader/PBRTextureLoader.d.ts'
@@ -5,7 +6,7 @@ import type { AbstractTexture } from '../../../../../net/minecraft/client/render
 export class PBRTextureLoaderRegistry extends Object {
     static INSTANCE: PBRTextureLoaderRegistry;
     constructor()
-    // private loaderMap: Map<Class<Object>, PBRTextureLoader<any>>;
+    // private loaderMap: JavaMap<Class<Object>, PBRTextureLoader<any>>;
     getLoader<T extends AbstractTexture>(arg0: Class<T>): PBRTextureLoader<T>;
     register<T extends AbstractTexture>(arg0: Class<T>, arg1: PBRTextureLoader<T>): void;
 }

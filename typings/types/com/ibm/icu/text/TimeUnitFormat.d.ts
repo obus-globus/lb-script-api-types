@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { LocalizedNumberFormatter } from '../../../../com/ibm/icu/number/LocalizedNumberFormatter.d.ts'
 import type { MeasureFormat } from '../../../../com/ibm/icu/text/MeasureFormat.d.ts'
 import type { MeasureFormat$FormatWidth } from '../../../../com/ibm/icu/text/MeasureFormat$FormatWidth.d.ts'
@@ -31,7 +32,7 @@ export class TimeUnitFormat extends MeasureFormat implements Cloneable {
     readonly locale: ULocale;
     // private pluralRules: PluralRules;
     // private style: number;
-    // private timeUnitToCountToPatterns: Map<TimeUnit, { [key: string]: Object[] }>;
+    // private timeUnitToCountToPatterns: JavaMap<TimeUnit, JavaMap<string, Object[]>>;
     clone(): TimeUnitFormat;
     getNumberFormat(): NumberFormat;
     getNumberFormatInternal(): NumberFormat;
@@ -39,12 +40,12 @@ export class TimeUnitFormat extends MeasureFormat implements Cloneable {
     parseObject(arg0: string): Object;
     parseObject(arg0: string, arg1: ParsePosition): TimeUnitAmount;
     // private readResolve(): Object;
-    // private searchInTree(arg0: string, arg1: number, arg2: TimeUnit, arg3: string, arg4: string, arg5: { [key: string]: Object[] }): void;
+    // private searchInTree(arg0: string, arg1: number, arg2: TimeUnit, arg3: string, arg4: string, arg5: JavaMap<string, Object[]>): void;
     setLocale(arg0: ULocale): TimeUnitFormat;
     setLocale(arg0: ULocale, arg1: ULocale): void;
     setLocale(arg0: Locale): TimeUnitFormat;
     setNumberFormat(arg0: NumberFormat): TimeUnitFormat;
     // private setup(): void;
-    // private setup(arg0: string, arg1: Map<TimeUnit, { [key: string]: Object[] }>, arg2: number, arg3: string[]): void;
+    // private setup(arg0: string, arg1: JavaMap<TimeUnit, JavaMap<string, Object[]>>, arg2: number, arg3: string[]): void;
     // private writeReplace(): Object;
 }

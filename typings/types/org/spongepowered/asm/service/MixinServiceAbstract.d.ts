@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -20,7 +21,7 @@ import type { ReEntranceLock } from '../../../../org/spongepowered/asm/util/ReEn
 import type { ImmutableList$Builder } from '../../../../org/spongepowered/include/com/google/common/collect/ImmutableList$Builder.d.ts'
 export abstract class MixinServiceAbstract extends Object implements IMixinService {
     constructor()
-    // private internals: Map<Class<IMixinInternal>, IMixinInternal>;
+    // private internals: JavaMap<Class<IMixinInternal>, IMixinInternal>;
     // private lock: ReEntranceLock;
     // private serviceAgents: IMixinPlatformServiceAgent[];
     readonly sideName: string;

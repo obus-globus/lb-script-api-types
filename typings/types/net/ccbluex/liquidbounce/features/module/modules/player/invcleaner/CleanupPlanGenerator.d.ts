@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { CleanupPlanPlacementTemplate } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/CleanupPlanPlacementTemplate.d.ts'
 import type { InventoryCleanupPlan } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/InventoryCleanupPlan.d.ts'
@@ -12,14 +13,14 @@ import type { ItemSlot } from '../../../../../../../../net/ccbluex/liquidbounce/
 export class CleanupPlanGenerator extends Object implements ItemPacker$ItemAmountConstraintProvider {
     constructor(template: CleanupPlanPlacementTemplate, availableItems: ItemSlot[])
     // private availableItems: ItemSlot[];
-    // private categoryToSlotsMap: Map<ItemCategory, ItemSlot[]>;
-    // private currentLimit: { [key: string]: any };
+    // private categoryToSlotsMap: JavaMap<ItemCategory, ItemSlot[]>;
+    // private currentLimit: JavaMap<any, any>;
     // private hotbarSwaps: InventorySwap[];
     // private packer: ItemPacker;
     // private template: CleanupPlanPlacementTemplate;
     addItem(item: ItemFacet): void;
     generatePlan(): InventoryCleanupPlan;
     getSatisfactionStatus(item: ItemFacet): ItemPacker$ItemAmountConstraintProvider$SatisfactionStatus;
-    // private groupItemsByType(): Map<ItemAndComponents, ItemSlot[]>;
+    // private groupItemsByType(): JavaMap<ItemAndComponents, ItemSlot[]>;
     // private processItemCategory(category: ItemCategory, availableItems: ItemFacet[]): void;
 }

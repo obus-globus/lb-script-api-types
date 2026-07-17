@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { DataFixer } from '../../../../../../../com/mojang/datafixers/DataFixer.d.ts'
 import type { Path } from '../../../../../../../java/nio/file/Path.d.ts'
 import type { Optional } from '../../../../../../../java/util/Optional.d.ts'
@@ -21,7 +22,7 @@ export class StructureTemplateManager extends Object {
     constructor(resourceManager: ResourceManager, storage: LevelStorageSource$LevelStorageAccess, fixerUpper: DataFixer, blockLookup: HolderGetter<Block>)
     // private resourceManagerSource: ResourceManagerTemplateSource;
     // private sources: TemplateSource[];
-    // private structureRepository: Map<Identifier, Optional<StructureTemplate>>;
+    // private structureRepository: JavaMap<Identifier, Optional<StructureTemplate>>;
     // private testTemplates: TemplatePathFactory;
     // private worldTemplates: TemplatePathFactory;
     get(id: Identifier): Optional<StructureTemplate>;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ByteBuffer } from '../../../../../java/nio/ByteBuffer.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -32,12 +33,12 @@ export class Boundaries extends Object {
     static listToArray<T extends unknown>(paramlist: T[]): Object[];
     static listToEditable<T extends unknown>(paramlist: T[]): T[];
     static listToStringArray(paramlist: string[]): string[];
-    static mapContainsKey<K extends unknown, V extends unknown>(parammap: Map<K, V>, paramkey: K): boolean;
+    static mapContainsKey<K extends unknown, V extends unknown>(parammap: JavaMap<K, V>, paramkey: K): boolean;
     static mapEntry<K extends unknown, V extends unknown>(paramkey: K, paramvalue: V): Map$Entry<K, V>;
-    static mapGet<K extends unknown, V extends unknown>(parammap: Map<K, V>, paramkey: K): V;
-    static mapPut<K extends unknown, V extends unknown>(parammap: Map<K, V>, paramkey: K, paramvalue: V): V;
-    static mapPutIfAbsent<K extends unknown, V extends unknown>(parammap: Map<K, V>, paramkey: K, paramvalue: V): V;
-    static mapRemove<K extends unknown, V extends unknown>(parammap: Map<K, V>, paramkey: K): V;
+    static mapGet<K extends unknown, V extends unknown>(parammap: JavaMap<K, V>, paramkey: K): V;
+    static mapPut<K extends unknown, V extends unknown>(parammap: JavaMap<K, V>, paramkey: K, paramvalue: V): V;
+    static mapPutIfAbsent<K extends unknown, V extends unknown>(parammap: JavaMap<K, V>, paramkey: K, paramvalue: V): V;
+    static mapRemove<K extends unknown, V extends unknown>(parammap: JavaMap<K, V>, paramkey: K): V;
     static queueAdd<T extends unknown>(paramqueue: Object[], paramrequest: T): void;
     static setContains(paramset: Object[], paramelement: Object): boolean;
     static stringFormat(paramformat: string, ...paramparams: Object[]): string;

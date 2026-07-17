@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { CoroutineScope } from '../../../../../kotlinx/coroutines/CoroutineScope.d.ts'
 import type { Task } from '../../../../../net/ccbluex/liquidbounce/integration/task/type/Task.d.ts'
@@ -11,7 +12,7 @@ export class TaskManager extends Object {
     /*not mapped: */ isCompleted(): boolean;
     readonly progress: number;
     // private scope: CoroutineScope;
-    // private tasks: { [key: string]: Task };
+    // private tasks: JavaMap<string, Task>;
     /**
      * Cancels a task
      *

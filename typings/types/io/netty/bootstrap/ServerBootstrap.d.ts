@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { AbstractBootstrap } from '../../../io/netty/bootstrap/AbstractBootstrap.d.ts'
 import type { ServerBootstrapConfig } from '../../../io/netty/bootstrap/ServerBootstrapConfig.d.ts'
 import type { Channel } from '../../../io/netty/channel/Channel.d.ts'
@@ -8,18 +9,18 @@ import type { AttributeKey } from '../../../io/netty/util/AttributeKey.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class ServerBootstrap extends AbstractBootstrap<ServerBootstrap, ServerChannel> {
     constructor()
-    // private childAttrs: Map<AttributeKey<Object>, Object>;
+    // private childAttrs: JavaMap<AttributeKey<Object>, Object>;
     // private childGroup: (Object | null)[];
     // private childHandler: ChannelHandler;
-    // private childOptions: Map<ChannelOption<Object>, Object>;
+    // private childOptions: JavaMap<ChannelOption<Object>, Object>;
     // private config: ServerBootstrapConfig;
     childAttr<T extends unknown>(arg0: AttributeKey<T>, arg1: T): ServerBootstrap;
-    childAttrs(): Map<AttributeKey<Object>, Object>;
+    childAttrs(): JavaMap<AttributeKey<Object>, Object>;
     childGroup(): (Object | null)[];
     childHandler(): ChannelHandler;
     childHandler(arg0: ChannelHandler): ServerBootstrap;
     childOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): ServerBootstrap;
-    childOptions(): Map<ChannelOption<Object>, Object>;
+    childOptions(): JavaMap<ChannelOption<Object>, Object>;
     clone(): ServerBootstrap;
     config(): ServerBootstrapConfig;
     group(): (Object | null)[];

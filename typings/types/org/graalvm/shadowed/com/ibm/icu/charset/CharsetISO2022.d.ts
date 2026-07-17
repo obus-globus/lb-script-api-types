@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { ByteBuffer } from '../../../../../../../java/nio/ByteBuffer.d.ts'
 import type { Charset } from '../../../../../../../java/nio/charset/Charset.d.ts'
 import type { CharsetDecoder } from '../../../../../../../java/nio/charset/CharsetDecoder.d.ts'
@@ -11,7 +12,7 @@ import type { UConverterSharedData } from '../../../../../../../org/graalvm/shad
 export class CharsetISO2022 extends CharsetICU {
     static ROUNDTRIP_AND_FALLBACK_SET: number;
     static ROUNDTRIP_SET: number;
-    static availableCharsets(): { [key: string]: Charset };
+    static availableCharsets(): JavaMap<string, Charset>;
     static defaultCharset(): Charset;
     static forName(paramarg0: string): Charset;
     static forName(paramarg0: string, paramarg1: Charset): Charset;

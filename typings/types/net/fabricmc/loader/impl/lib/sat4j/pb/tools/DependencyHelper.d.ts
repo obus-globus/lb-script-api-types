@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { BigInteger } from '../../../../../../../../java/math/BigInteger.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { IPBSolver } from '../../../../../../../../net/fabricmc/loader/impl/lib/sat4j/pb/IPBSolver.d.ts'
@@ -18,11 +19,11 @@ export class DependencyHelper<T extends unknown, C extends unknown> extends Obje
     constructor(arg0: IPBSolver, arg1: boolean)
     constructor(arg0: IPBSolver, arg1: boolean, arg2: boolean)
     // private canonicalOptFunction: boolean;
-    // private descs: Map<IConstr, C>;
+    // private descs: JavaMap<IConstr, C>;
     // private explanationEnabled: boolean;
     // private gator: GateTranslator;
-    // private mapToDimacs: Map<T, number>;
-    // private mapToDomain: { [key: number]: T };
+    // private mapToDimacs: JavaMap<T, number>;
+    // private mapToDomain: JavaMap<number, T>;
     readonly negator: INegator;
     // private objCoefs: IVec<BigInteger>;
     // private objFunction: ObjectiveFunction;

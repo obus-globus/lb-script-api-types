@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class AnsiEscape extends Enum<AnsiEscape> {
@@ -62,8 +63,8 @@ export class AnsiEscape extends Enum<AnsiEscape> {
     static UNDERLINE: AnsiEscape;
     static WHITE: AnsiEscape;
     static YELLOW: AnsiEscape;
-    static createMap(paramvalues: string, paramdontEscapeKeys: string[]): { [key: string]: string };
-    static createMap(paramvalues: string[], paramdontEscapeKeys: string[]): { [key: string]: string };
+    static createMap(paramvalues: string, paramdontEscapeKeys: string[]): JavaMap<string, string>;
+    static createMap(paramvalues: string[], paramdontEscapeKeys: string[]): JavaMap<string, string>;
     static createSequence(...paramnames: string[]): string;
     static getDefaultStyle(): string;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;

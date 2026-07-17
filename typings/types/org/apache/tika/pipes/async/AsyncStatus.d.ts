@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Instant } from '../../../../../java/time/Instant.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { PipesResult$STATUS } from '../../../../../org/apache/tika/pipes/PipesResult$STATUS.d.ts'
@@ -9,15 +10,15 @@ export class AsyncStatus extends Object {
     readonly crashMessage: string;
     readonly lastUpdate: Instant;
     readonly started: Instant;
-    readonly statusCounts: Map<PipesResult$STATUS, number>;
+    readonly statusCounts: JavaMap<PipesResult$STATUS, number>;
     readonly totalCountResult: TotalCountResult;
     getAsyncStatus(): AsyncStatus$ASYNC_STATUS;
     getCrashMessage(): string;
     getLastUpdate(): Instant;
     getStarted(): Instant;
-    getStatusCounts(): Map<PipesResult$STATUS, number>;
+    getStatusCounts(): JavaMap<PipesResult$STATUS, number>;
     getTotalCountResult(): TotalCountResult;
     toString(): string;
-    update(arg0: Map<PipesResult$STATUS, number>, arg1: TotalCountResult, arg2: AsyncStatus$ASYNC_STATUS): void;
+    update(arg0: JavaMap<PipesResult$STATUS, number>, arg1: TotalCountResult, arg2: AsyncStatus$ASYNC_STATUS): void;
     updateCrash(arg0: string): void;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Trainer } from '../../../../ai/djl/training/Trainer.d.ts'
 import type { Evaluator } from '../../../../ai/djl/training/evaluator/Evaluator.d.ts'
 import type { TrainingListener$BatchData } from '../../../../ai/djl/training/listener/TrainingListener$BatchData.d.ts'
@@ -10,10 +11,10 @@ export class EvaluatorTrainingListener extends TrainingListenerAdapter {
     static metricName(paramarg0: Evaluator, paramarg1: string): string;
     constructor()
     constructor(arg0: number)
-    readonly latestEvaluations: { [key: string]: number };
+    readonly latestEvaluations: JavaMap<string, number>;
     // private progressCounter: number;
     // private progressUpdateFrequency: number;
-    getLatestEvaluations(): { [key: string]: number };
+    getLatestEvaluations(): JavaMap<string, number>;
     onEpoch(arg0: Trainer): void;
     onTrainingBatch(arg0: Trainer, arg1: TrainingListener$BatchData): void;
     onTrainingBegin(arg0: Trainer): void;

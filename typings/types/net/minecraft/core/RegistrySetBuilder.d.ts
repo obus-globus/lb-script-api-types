@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Lifecycle } from '../../../com/mojang/serialization/Lifecycle.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Cloner$Factory } from '../../../net/minecraft/core/Cloner$Factory.d.ts'
@@ -21,6 +22,6 @@ export class RegistrySetBuilder extends Object {
     build(context: RegistryAccess): HolderLookup$Provider;
     buildPatch(context: RegistryAccess, fallbackProvider: HolderLookup$Provider, clonerFactory: Cloner$Factory): RegistrySetBuilder$PatchedRegistries;
     // private createLazyFullPatchedRegistries<T extends unknown>(owner: HolderOwner<T>, clonerFactory: Cloner$Factory, registryKey: ResourceKey<T[]>, patchProvider: HolderLookup$Provider, fallbackProvider: HolderLookup$Provider, targetProvider: MutableObject<HolderLookup$Provider>): HolderLookup$RegistryLookup<T>;
-    // private createLazyFullPatchedRegistries(context: RegistryAccess, fallbackProvider: HolderLookup$Provider, clonerFactory: Cloner$Factory, newRegistries: Map<ResourceKey<(Object | null)[]>, RegistrySetBuilder$RegistryContents<Object>>, patchOnlyRegistries: HolderLookup$Provider): HolderLookup$Provider;
+    // private createLazyFullPatchedRegistries(context: RegistryAccess, fallbackProvider: HolderLookup$Provider, clonerFactory: Cloner$Factory, newRegistries: JavaMap<ResourceKey<(Object | null)[]>, RegistrySetBuilder$RegistryContents<Object>>, patchOnlyRegistries: HolderLookup$Provider): HolderLookup$Provider;
     // private createState(context: RegistryAccess): RegistrySetBuilder$BuildState;
 }

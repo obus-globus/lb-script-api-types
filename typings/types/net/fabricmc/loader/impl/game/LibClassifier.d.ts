@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { URL } from '../../../../../java/net/URL.d.ts'
 import type { Path } from '../../../../../java/nio/file/Path.d.ts'
@@ -10,8 +11,8 @@ import type { LoaderLibrary } from '../../../../../net/fabricmc/loader/impl/game
 export class LibClassifier<L extends Enum<L> & LibClassifier$LibraryType> extends Object {
     constructor(arg0: Class<L>, arg1: EnvType, arg2: GameProvider)
     // private libs: L[];
-    // private localPaths: Map<L, string>;
-    // private origins: Map<L, Path>;
+    // private localPaths: JavaMap<L, string>;
+    // private origins: JavaMap<L, Path>;
     readonly systemLibraries: Path[];
     readonly unmatchedOrigins: Path[];
     // private addLibrary(arg0: L, arg1: Path, arg2: string): void;

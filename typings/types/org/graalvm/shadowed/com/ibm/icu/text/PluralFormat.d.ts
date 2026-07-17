@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { ObjectInputStream } from '../../../../../../../java/io/ObjectInputStream.d.ts'
 import type { StringBuffer } from '../../../../../../../java/lang/StringBuffer.d.ts'
 import type { FieldPosition } from '../../../../../../../java/text/FieldPosition.d.ts'
@@ -31,7 +32,7 @@ export class PluralFormat extends UFormat {
     // private msgPattern: MessagePattern;
     readonly numberFormat: NumberFormat;
     // private offset: number;
-    // private parsedValues: { [key: string]: string };
+    // private parsedValues: JavaMap<string, string>;
     // private pattern: string;
     // private pluralRules: PluralRules;
     // private pluralRulesWrapper: PluralFormat$PluralSelectorAdapter;

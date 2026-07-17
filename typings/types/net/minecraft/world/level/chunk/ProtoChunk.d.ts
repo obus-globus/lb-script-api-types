@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
@@ -50,11 +51,11 @@ export class ProtoChunk extends ChunkAccess {
     addEntity(entity: Entity): void;
     addPackedPostProcess(packedOffsets: (Object | null)[], sectionIndex: number): void;
     getBelowZeroRetrogen(): BelowZeroRetrogen;
-    getBlockEntities(): Map<BlockPos, BlockEntity>;
+    getBlockEntities(): JavaMap<BlockPos, BlockEntity>;
     getBlockEntity(pos: BlockPos): BlockEntity;
     getBlockEntity<T extends BlockEntity>(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockEntityNbtForSaving(blockPos: BlockPos, registryAccess: HolderLookup$Provider): CompoundTag;
-    getBlockEntityNbts(): Map<BlockPos, CompoundTag>;
+    getBlockEntityNbts(): JavaMap<BlockPos, CompoundTag>;
     getBlockState(pos: BlockPos): BlockState;
     getBlockTicks(): TickContainerAccess<Block>;
     getCarvingMask(): CarvingMask;

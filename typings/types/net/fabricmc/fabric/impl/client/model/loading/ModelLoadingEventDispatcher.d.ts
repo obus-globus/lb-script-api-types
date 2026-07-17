@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Operation } from '../../../../../../../com/llamalad7/mixinextras/injector/wrapoperation/Operation.d.ts'
 import type { ThreadLocal } from '../../../../../../../java/lang/ThreadLocal.d.ts'
 import type { BiConsumer } from '../../../../../../../java/util/function/BiConsumer.d.ts'
@@ -31,13 +32,13 @@ export class ModelLoadingEventDispatcher extends Object {
     // private onLoadBlockModifierContext: ModelLoadingEventDispatcher$OnLoadBlockModifierContext;
     // private onLoadModifierContext: ModelLoadingEventDispatcher$OnLoadModifierContext;
     // private pluginContext: ModelLoadingPluginContextImpl;
-    getExtraModels(): Map<ExtraModelKey<Object>, UnbakedExtraModel<Object>>;
+    getExtraModels(): JavaMap<ExtraModelKey<Object>, UnbakedExtraModel<Object>>;
     modifyBlockModel(arg0: BlockStateModel$UnbakedRoot, arg1: BlockState, arg2: ModelBaker, arg3: (param0: Object[]) => BlockStateModel): BlockStateModel;
     // private modifyBlockModelOnLoad(arg0: BlockState, arg1: BlockStateModel$UnbakedRoot): BlockStateModel$UnbakedRoot;
     modifyBlockModelsOnLoad(arg0: BlockStateModelLoader$LoadedModels): BlockStateModelLoader$LoadedModels;
     modifyItemModel(arg0: ItemModel$Unbaked, arg1: Identifier, arg2: ItemModel$BakingContext, arg3: Matrix4fc, arg4: (param0: Object[]) => ItemModel): ItemModel;
     // private modifyModelOnLoad(arg0: Identifier, arg1: UnbakedModel): UnbakedModel;
-    modifyModelsOnLoad(arg0: Map<Identifier, UnbakedModel>): Map<Identifier, UnbakedModel>;
-    // private putResolvedBlockStates(arg0: Map<BlockState, BlockStateModel$UnbakedRoot>): void;
+    modifyModelsOnLoad(arg0: JavaMap<Identifier, UnbakedModel>): JavaMap<Identifier, UnbakedModel>;
+    // private putResolvedBlockStates(arg0: JavaMap<BlockState, BlockStateModel$UnbakedRoot>): void;
     // private resolveBlockStates(arg0: (param0: BlockStateResolver$Context) => void, arg1: Block, arg2: (param0: BlockState, param1: BlockStateModel$UnbakedRoot) => void): void;
 }

@@ -1,8 +1,9 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { IntListIterator } from '../../../../../it/unimi/dsi/fastutil/ints/IntListIterator.d.ts'
 import type { Reference2IntLinkedOpenHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2IntLinkedOpenHashMap$MapIterator.d.ts'
 import type { IntConsumer } from '../../../../../java/util/function/IntConsumer.d.ts'
 export class Reference2IntLinkedOpenHashMap$ValueIterator extends Reference2IntLinkedOpenHashMap$MapIterator<Object> implements IntListIterator {
-    constructor(null_: { [key: string]: any })
+    constructor(null_: JavaMap<any, any>)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     add(arg0: number): void;
     next(): number;

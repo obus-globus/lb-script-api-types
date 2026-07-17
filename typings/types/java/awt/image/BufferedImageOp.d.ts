@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Point2D } from '../../../java/awt/geom/Point2D.d.ts'
 import type { Rectangle2D } from '../../../java/awt/geom/Rectangle2D.d.ts'
 import type { BufferedImage } from '../../../java/awt/image/BufferedImage.d.ts'
@@ -8,5 +9,5 @@ export interface BufferedImageOp extends Object{
     filter(arg0: BufferedImage, arg1: BufferedImage): BufferedImage;
     getBounds2D(arg0: BufferedImage): Rectangle2D;
     getPoint2D(arg0: Point2D, arg1: Point2D): Point2D;
-    getRenderingHints(): { [key: string]: any };
+    getRenderingHints(): JavaMap<any, any>;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Closeable } from '../../../java/io/Closeable.d.ts'
 import type { Flushable } from '../../../java/io/Flushable.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
@@ -42,8 +43,8 @@ export class DiskLruCache extends Object implements Closeable, Flushable, Lockab
     // private journalFileBackup: Path;
     // private journalFileTmp: Path;
     // private journalWriter: BufferedSink | null;
-    // private lruEntries: { [key: string]: DiskLruCache$Entry };
-    /*not mapped: */ getLruEntries$okhttp(): { [key: string]: DiskLruCache$Entry };
+    // private lruEntries: JavaMap<string, DiskLruCache$Entry>;
+    /*not mapped: */ getLruEntries$okhttp(): JavaMap<string, DiskLruCache$Entry>;
     maxSize: number;
     // private mostRecentRebuildFailed: boolean;
     // private mostRecentTrimFailed: boolean;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
@@ -7,14 +8,14 @@ import type { SideChainPartBlock } from '../../../../../net/minecraft/world/leve
 import type { SideChainPartBlock$Neighbor } from '../../../../../net/minecraft/world/level/block/SideChainPartBlock$Neighbor.d.ts'
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class SideChainPartBlock$Neighbors extends Record {
-    constructor(block: SideChainPartBlock, level: LevelAccessor, facing: Direction, center: BlockPos, cache: Map<BlockPos, SideChainPartBlock$Neighbor>)
+    constructor(block: SideChainPartBlock, level: LevelAccessor, facing: Direction, center: BlockPos, cache: JavaMap<BlockPos, SideChainPartBlock$Neighbor>)
     // private block: SideChainPartBlock;
-    // private cache: Map<BlockPos, SideChainPartBlock$Neighbor>;
+    // private cache: JavaMap<BlockPos, SideChainPartBlock$Neighbor>;
     // private center: BlockPos;
     // private facing: Direction;
     // private level: LevelAccessor;
     block(): SideChainPartBlock;
-    cache(): Map<BlockPos, SideChainPartBlock$Neighbor>;
+    cache(): JavaMap<BlockPos, SideChainPartBlock$Neighbor>;
     center(): BlockPos;
     // private createNewNeighbor(pos: BlockPos): SideChainPartBlock$Neighbor;
     equals(o: Object | null): boolean;

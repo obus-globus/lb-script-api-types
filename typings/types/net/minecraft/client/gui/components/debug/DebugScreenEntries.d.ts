@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { DebugScreenEntriesAccessor } from '../../../../../../net/caffeinemc/mods/sodium/mixin/features/gui/hooks/debug/DebugScreenEntriesAccessor.d.ts'
 import type { DebugScreenEntry } from '../../../../../../net/minecraft/client/gui/components/debug/DebugScreenEntry.d.ts'
@@ -35,7 +36,7 @@ export class DebugScreenEntries extends Object implements DebugScreenEntriesAcce
     static PLAYER_POSITION: Identifier;
     static PLAYER_SECTION_POSITION: Identifier;
     static POST_EFFECT: Identifier;
-    static PROFILES: Map<DebugScreenProfile, Map<Identifier, DebugScreenEntryStatus>>;
+    static PROFILES: JavaMap<DebugScreenProfile, JavaMap<Identifier, DebugScreenEntryStatus>>;
     static SIMPLE_PERFORMANCE_IMPACTORS: Identifier;
     static SOUND_CACHE: Identifier;
     static SOUND_MOOD: Identifier;
@@ -51,7 +52,7 @@ export class DebugScreenEntries extends Object implements DebugScreenEntriesAcce
     static VISUALIZE_SKY_LIGHT_SECTIONS: Identifier;
     static VISUALIZE_SOLID_FACES: Identifier;
     static VISUALIZE_WATER_LEVELS: Identifier;
-    static allEntries(): Map<Identifier, DebugScreenEntry>;
+    static allEntries(): JavaMap<Identifier, DebugScreenEntry>;
     static getEntry(paramid: Identifier): DebugScreenEntry;
     static register(paramidentifier: Identifier, paramentry: DebugScreenEntry): Identifier;
     constructor()

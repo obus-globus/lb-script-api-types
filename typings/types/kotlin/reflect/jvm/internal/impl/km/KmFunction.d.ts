@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { KmAnnotation } from '../../../../../../kotlin/reflect/jvm/internal/impl/km/KmAnnotation.d.ts'
 import type { KmContract } from '../../../../../../kotlin/reflect/jvm/internal/impl/km/KmContract.d.ts'
@@ -9,7 +10,7 @@ import type { KmFunctionExtension } from '../../../../../../kotlin/reflect/jvm/i
 export class KmFunction extends Object {
     constructor(arg0: number, arg1: string)
     readonly annotations: KmAnnotation[];
-    readonly compilerPluginMetadata: { [key: string]: number[] };
+    readonly compilerPluginMetadata: JavaMap<string, number[]>;
     readonly contextParameters: KmValueParameter[];
     // private contextReceiverTypes: KmType[];
     readonly contract: KmContract;
@@ -23,7 +24,7 @@ export class KmFunction extends Object {
     readonly valueParameters: KmValueParameter[];
     readonly versionRequirements: KmVersionRequirement[];
     getAnnotations(): KmAnnotation[];
-    getCompilerPluginMetadata(): { [key: string]: number[] };
+    getCompilerPluginMetadata(): JavaMap<string, number[]>;
     getContextParameters(): KmValueParameter[];
     getExtensionReceiverParameterAnnotations(): KmAnnotation[];
     getExtensions$org_jetbrains_kotlin_kotlin_metadata(): KmFunctionExtension[];

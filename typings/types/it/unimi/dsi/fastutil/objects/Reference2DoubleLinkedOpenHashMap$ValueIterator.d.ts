@@ -1,8 +1,9 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { DoubleListIterator } from '../../../../../it/unimi/dsi/fastutil/doubles/DoubleListIterator.d.ts'
 import type { Reference2DoubleLinkedOpenHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2DoubleLinkedOpenHashMap$MapIterator.d.ts'
 import type { DoubleConsumer } from '../../../../../java/util/function/DoubleConsumer.d.ts'
 export class Reference2DoubleLinkedOpenHashMap$ValueIterator extends Reference2DoubleLinkedOpenHashMap$MapIterator<Object> implements DoubleListIterator {
-    constructor(null_: { [key: string]: any })
+    constructor(null_: JavaMap<any, any>)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     add(arg0: number): void;
     next(): number;

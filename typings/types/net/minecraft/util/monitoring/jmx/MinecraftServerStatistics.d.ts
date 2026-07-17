@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Attribute } from '../../../../../javax/management/Attribute.d.ts'
 import type { DynamicMBean } from '../../../../../javax/management/DynamicMBean.d.ts'
 import type { MBeanInfo } from '../../../../../javax/management/MBeanInfo.d.ts'
@@ -7,7 +8,7 @@ import type { MinecraftServerStatistics$AttributeDescription } from '../../../..
 export class MinecraftServerStatistics extends Object implements DynamicMBean {
     static registerJmxMonitoring(paramserver: MinecraftServer): void;
     private constructor(server: MinecraftServer)
-    // private attributeDescriptionByName: { [key: string]: MinecraftServerStatistics$AttributeDescription };
+    // private attributeDescriptionByName: JavaMap<string, MinecraftServerStatistics$AttributeDescription>;
     // private mBeanInfo: MBeanInfo;
     // private server: MinecraftServer;
     getAttribute(attribute: string): Object;

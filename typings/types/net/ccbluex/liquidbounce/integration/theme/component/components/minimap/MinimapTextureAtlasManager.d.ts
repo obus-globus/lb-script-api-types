@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { ReentrantReadWriteLock } from '../../../../../../../../java/util/concurrent/locks/ReentrantReadWriteLock.d.ts'
 import type { BiConsumer } from '../../../../../../../../java/util/function/BiConsumer.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
@@ -8,7 +9,7 @@ export class MinimapTextureAtlasManager extends Object {
     constructor()
     // private allocated: boolean;
     // private availableAtlasPositions: MinimapTextureAtlasManager$AtlasPosition[];
-    // private chunkPosAtlasPosMap: { [key: string]: any };
+    // private chunkPosAtlasPosMap: JavaMap<any, any>;
     // private dirtyAtlasPositions: MinimapTextureAtlasManager$AtlasPosition[];
     // private lock: ReentrantReadWriteLock;
     // private texture: DynamicTexture;

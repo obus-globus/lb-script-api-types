@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { PropertyChangeListener } from '../../java/beans/PropertyChangeListener.d.ts'
 import type { PropertyChangeSupport } from '../../java/beans/PropertyChangeSupport.d.ts'
 import type { ClassLoader } from '../../java/lang/ClassLoader.d.ts'
@@ -24,7 +25,7 @@ export class AppContext extends Object {
     // private mostRecentKeyValue: MostRecentKeyValue;
     // private shadowMostRecentKeyValue: MostRecentKeyValue;
     // private state: AppContext$State;
-    // private table: Map<Object, Object>;
+    // private table: JavaMap<Object, Object>;
     readonly threadGroup: ThreadGroup;
     addPropertyChangeListener(arg0: string, arg1: PropertyChangeListener): void;
     dispose(): void;

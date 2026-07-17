@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { DataComponentPatch } from '../../../../net/minecraft/core/component/DataComponentPatch.d.ts'
@@ -5,7 +6,7 @@ import type { DataComponentType } from '../../../../net/minecraft/core/component
 import type { TypedDataComponent } from '../../../../net/minecraft/core/component/TypedDataComponent.d.ts'
 export class DataComponentPatch$Builder extends Object {
     private constructor()
-    // private map: Map<DataComponentType<Object>, Optional<Object>>;
+    // private map: JavaMap<DataComponentType<Object>, Optional<Object>>;
     build(): DataComponentPatch;
     remove<T extends unknown>(type: DataComponentType<T>): DataComponentPatch$Builder;
     set(components: TypedDataComponent<Object>[]): DataComponentPatch$Builder;

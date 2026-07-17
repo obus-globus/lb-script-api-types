@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
 import type { TypeParameterDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/TypeParameterDescriptor.d.ts'
@@ -12,7 +13,7 @@ export class LazyJavaTypeParameterResolver extends Object implements TypeParamet
     // private c: LazyJavaResolverContext;
     // private containingDeclaration: DeclarationDescriptor;
     // private resolve: MemoizedFunctionToNullable<JavaTypeParameter, LazyJavaTypeParameterDescriptor>;
-    // private typeParameters: Map<JavaTypeParameter, number>;
+    // private typeParameters: JavaMap<JavaTypeParameter, number>;
     // private typeParametersIndexOffset: number;
     resolveTypeParameter(arg0: JavaTypeParameter): TypeParameterDescriptor;
 }

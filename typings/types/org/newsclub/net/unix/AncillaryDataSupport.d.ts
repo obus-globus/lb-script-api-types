@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Closeable } from '../../../../java/io/Closeable.d.ts'
 import type { FileDescriptor } from '../../../../java/io/FileDescriptor.d.ts'
 import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
@@ -5,7 +6,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class AncillaryDataSupport extends Object implements Closeable {
     constructor()
     // private ancillaryReceiveBuffer: ByteBuffer;
-    // private openReceivedFileDescriptors: Map<FileDescriptor, number>;
+    // private openReceivedFileDescriptors: JavaMap<FileDescriptor, number>;
     // private pendingFileDescriptors: number[];
     // private receivedFileDescriptors: FileDescriptor[][];
     // private tipcDestName: number[];

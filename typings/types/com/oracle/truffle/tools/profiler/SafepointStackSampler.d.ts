@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { TruffleContext } from '../../../../../com/oracle/truffle/api/TruffleContext.d.ts'
 import type { SourceSectionFilter } from '../../../../../com/oracle/truffle/api/instrumentation/SourceSectionFilter.d.ts'
 import type { TruffleInstrument$Env } from '../../../../../com/oracle/truffle/api/instrumentation/TruffleInstrument$Env.d.ts'
@@ -31,7 +32,7 @@ export class SafepointStackSampler extends Object {
     popSyntheticFrame(): void;
     pushSyntheticFrame(language: LanguageInfo, message: string): void;
     resetSampling(): void;
-    sample(cpuSampler: CPUSampler, env: TruffleInstrument$Env, contexts: Map<TruffleContext, CPUSampler$MutableSamplerData>, useSyntheticFrames: boolean, timeout: number, timeoutUnit: TimeUnit): SafepointStackSampler$StackSample[];
+    sample(cpuSampler: CPUSampler, env: TruffleInstrument$Env, contexts: JavaMap<TruffleContext, CPUSampler$MutableSamplerData>, useSyntheticFrames: boolean, timeout: number, timeoutUnit: TimeUnit): SafepointStackSampler$StackSample[];
     setIncludeAsyncStackTrace(includeAsyncStackTrace: boolean): void;
     setSourceSectionFilter(sourceSectionFilter: SourceSectionFilter): void;
     setStackLimit(stackLimit: number): void;

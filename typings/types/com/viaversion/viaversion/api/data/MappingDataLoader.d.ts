@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { TagReader } from '../../../../../com/viaversion/nbt/io/TagReader.d.ts'
 import type { Tag } from '../../../../../com/viaversion/nbt/tag/Tag.d.ts'
 import type { MappingDataLoader$AddConsumer } from '../../../../../com/viaversion/viaversion/api/data/MappingDataLoader$AddConsumer.d.ts'
@@ -21,8 +22,8 @@ export class MappingDataLoader extends Object {
     // private cacheValid: boolean;
     // private dataLoaderClass: Class<Object>;
     // private dataPath: string;
-    // private mappingsCache: { [key: string]: Map$Entry<string, Tag>[] };
-    arrayToMap(arg0: JsonElement[]): { [key: string]: any };
+    // private mappingsCache: JavaMap<string, Map$Entry<string, Tag>[]>;
+    arrayToMap(arg0: JsonElement[]): JavaMap<any, any>;
     clearCache(): void;
     getDataFolder(): File;
     getLogger(): Logger;
@@ -31,7 +32,7 @@ export class MappingDataLoader extends Object {
     // private identifiers(arg0: Mappings, arg1: string): string[];
     identifiersFromGlobalIds(arg0: Map$Entry<string, Tag>[], arg1: Map$Entry<string, Tag>[], arg2: string): MappingDataLoader$IdentifiersPair;
     identifiersFromGlobalIds(arg0: Map$Entry<string, Tag>[], arg1: string): string[];
-    indexedObjectToMap(arg0: JsonObject): { [key: string]: any };
+    indexedObjectToMap(arg0: JsonObject): JavaMap<any, any>;
     loadData(arg0: string): JsonObject;
     loadFromDataDir(arg0: string): JsonObject;
     loadMappings(arg0: Map$Entry<string, Tag>[], arg1: string): Mappings;

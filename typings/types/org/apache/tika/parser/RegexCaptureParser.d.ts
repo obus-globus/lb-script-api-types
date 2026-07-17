@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { Pattern } from '../../../../java/util/regex/Pattern.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -11,14 +12,14 @@ import type { Parser } from '../../../../org/apache/tika/parser/Parser.d.ts'
 import type { ContentHandler } from '../../../../org/xml/sax/ContentHandler.d.ts'
 export class RegexCaptureParser extends Object implements Initializable, Parser {
     constructor()
-    readonly captureMap: { [key: string]: Pattern };
-    readonly matchMap: { [key: string]: Pattern };
+    readonly captureMap: JavaMap<string, Pattern>;
+    readonly matchMap: JavaMap<string, Pattern>;
     readonly writeContent: boolean;
     checkInitialization(arg0: InitializableProblemHandler): void;
     getSupportedTypes(arg0: ParseContext): MediaType[];
-    initialize(arg0: { [key: string]: Param<Object> }): void;
+    initialize(arg0: JavaMap<string, Param<Object>>): void;
     parse(arg0: InputStream, arg1: ContentHandler, arg2: Metadata, arg3: ParseContext): void;
-    setCaptureMap(arg0: { [key: string]: string }): void;
-    setMatchMap(arg0: { [key: string]: string }): void;
+    setCaptureMap(arg0: JavaMap<string, string>): void;
+    setMatchMap(arg0: JavaMap<string, string>): void;
     setWriteContent(arg0: boolean): void;
 }

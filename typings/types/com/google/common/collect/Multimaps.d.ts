@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Function } from '../../../../com/google/common/base/Function.d.ts'
 import type { Predicate } from '../../../../com/google/common/base/Predicate.d.ts'
 import type { Supplier } from '../../../../com/google/common/base/Supplier.d.ts'
@@ -16,10 +17,10 @@ import type { Stream } from '../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class Multimaps extends Object {
-    static asMap<K extends unknown, V extends unknown>(parammultimap: Multimap<K, V>): Map<K, V[]>;
-    static asMap<K extends unknown, V extends unknown>(parammultimap: ListMultimap<K, V>): Map<K, V[]>;
-    static asMap<K extends unknown, V extends unknown>(parammultimap: SetMultimap<K, V>): Map<K, V[]>;
-    static asMap<K extends unknown, V extends unknown>(parammultimap: SortedSetMultimap<K, V>): Map<K, V[]>;
+    static asMap<K extends unknown, V extends unknown>(parammultimap: Multimap<K, V>): JavaMap<K, V[]>;
+    static asMap<K extends unknown, V extends unknown>(parammultimap: ListMultimap<K, V>): JavaMap<K, V[]>;
+    static asMap<K extends unknown, V extends unknown>(parammultimap: SetMultimap<K, V>): JavaMap<K, V[]>;
+    static asMap<K extends unknown, V extends unknown>(parammultimap: SortedSetMultimap<K, V>): JavaMap<K, V[]>;
     static filterEntries<K extends unknown, V extends unknown>(paramunfiltered: Multimap<K, V>, paramentryPredicate: (param0: Object) => boolean): Multimap<K, V>;
     static filterEntries<K extends unknown, V extends unknown>(paramunfiltered: SetMultimap<K, V>, paramentryPredicate: (param0: Object) => boolean): SetMultimap<K, V>;
     static filterKeys<K extends unknown, V extends unknown>(paramunfiltered: ListMultimap<K, V>, paramkeyPredicate: (param0: Object) => boolean): ListMultimap<K, V>;
@@ -28,14 +29,14 @@ export class Multimaps extends Object {
     static filterValues<K extends unknown, V extends unknown>(paramunfiltered: Multimap<K, V>, paramvaluePredicate: (param0: Object) => boolean): Multimap<K, V>;
     static filterValues<K extends unknown, V extends unknown>(paramunfiltered: SetMultimap<K, V>, paramvaluePredicate: (param0: Object) => boolean): SetMultimap<K, V>;
     static flatteningToMultimap<T extends unknown, K extends unknown, V extends unknown, M extends Multimap<K, V>>(paramkeyFunction: (param0: Object) => K, paramvalueFunction: (param0: Object) => Stream<V>, parammultimapSupplier: () => M): Collector<T, Object, M>;
-    static forMap<K extends unknown, V extends unknown>(parammap: Map<K, V>): SetMultimap<K, V>;
+    static forMap<K extends unknown, V extends unknown>(parammap: JavaMap<K, V>): SetMultimap<K, V>;
     static index<K extends unknown, V extends unknown>(paramvalues: V[], paramkeyFunction: (param0: Object) => K): ImmutableListMultimap<K, V>;
     static index<K extends unknown, V extends unknown>(paramvalues: Iterator<V>, paramkeyFunction: (param0: Object) => K): ImmutableListMultimap<K, V>;
     static invertFrom<K extends unknown, V extends unknown, M extends Multimap<K, V>>(paramsource: Multimap<V, K>, paramdest: M): M;
-    static newListMultimap<K extends unknown, V extends unknown>(parammap: Map<K, V[]>, paramfactory: () => V[]): ListMultimap<K, V>;
-    static newMultimap<K extends unknown, V extends unknown>(parammap: Map<K, V[]>, paramfactory: () => V[]): Multimap<K, V>;
-    static newSetMultimap<K extends unknown, V extends unknown>(parammap: Map<K, V[]>, paramfactory: () => V[]): SetMultimap<K, V>;
-    static newSortedSetMultimap<K extends unknown, V extends unknown>(parammap: Map<K, V[]>, paramfactory: () => V[]): SortedSetMultimap<K, V>;
+    static newListMultimap<K extends unknown, V extends unknown>(parammap: JavaMap<K, V[]>, paramfactory: () => V[]): ListMultimap<K, V>;
+    static newMultimap<K extends unknown, V extends unknown>(parammap: JavaMap<K, V[]>, paramfactory: () => V[]): Multimap<K, V>;
+    static newSetMultimap<K extends unknown, V extends unknown>(parammap: JavaMap<K, V[]>, paramfactory: () => V[]): SetMultimap<K, V>;
+    static newSortedSetMultimap<K extends unknown, V extends unknown>(parammap: JavaMap<K, V[]>, paramfactory: () => V[]): SortedSetMultimap<K, V>;
     static synchronizedListMultimap<K extends unknown, V extends unknown>(parammultimap: ListMultimap<K, V>): ListMultimap<K, V>;
     static synchronizedMultimap<K extends unknown, V extends unknown>(parammultimap: Multimap<K, V>): Multimap<K, V>;
     static synchronizedSetMultimap<K extends unknown, V extends unknown>(parammultimap: SetMultimap<K, V>): SetMultimap<K, V>;

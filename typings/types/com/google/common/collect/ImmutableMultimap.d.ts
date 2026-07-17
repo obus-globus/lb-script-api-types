@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { BaseImmutableMultimap } from '../../../../com/google/common/collect/BaseImmutableMultimap.d.ts'
 import type { ImmutableMultimap$Builder } from '../../../../com/google/common/collect/ImmutableMultimap$Builder.d.ts'
 import type { Multimap } from '../../../../com/google/common/collect/Multimap.d.ts'
@@ -18,14 +19,14 @@ export abstract class ImmutableMultimap<K extends unknown, V extends unknown> ex
     static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V, paramk3: K, paramv3: V): ImmutableMultimap<K, V>;
     static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V, paramk3: K, paramv3: V, paramk4: K, paramv4: V): ImmutableMultimap<K, V>;
     static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V, paramk3: K, paramv3: V, paramk4: K, paramv4: V, paramk5: K, paramv5: V): ImmutableMultimap<K, V>;
-    constructor(map: Map<K, V[]>, size: number)
-    // private map: Map<K, V[]>;
+    constructor(map: JavaMap<K, V[]>, size: number)
+    // private map: JavaMap<K, V[]>;
     // private size: number;
-    asMap(): Map<K, V[]>;
+    asMap(): JavaMap<K, V[]>;
     clear(): void;
     containsKey(key: Object): boolean;
     containsValue(value: Object): boolean;
-    createAsMap(): Map<K, V[]>;
+    createAsMap(): JavaMap<K, V[]>;
     createEntries(): Map$Entry<K, V>[];
     createKeySet(): K[];
     createKeys(): K[];

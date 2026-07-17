@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { AbstractApplicationBase } from '../../../../com/microsoft/aad/msal4j/AbstractApplicationBase.d.ts'
 import type { AuthenticationResult } from '../../../../com/microsoft/aad/msal4j/AuthenticationResult.d.ts'
 import type { AuthenticationResultSupplier } from '../../../../com/microsoft/aad/msal4j/AuthenticationResultSupplier.d.ts'
@@ -11,7 +12,7 @@ export class AcquireTokenByAuthorizationGrantSupplier extends AuthenticationResu
     // private requestAuthority: Authority;
     // private IsUiRequiredCacheSupported(): boolean;
     execute(): AuthenticationResult;
-    // private getAuthorizationGrantIntegrated(arg0: string): { [key: string]: string };
-    // private getSAMLAuthGrantParameters(arg0: WSTrustResponse): { [key: string]: string };
+    // private getAuthorizationGrantIntegrated(arg0: string): JavaMap<string, string>;
+    // private getSAMLAuthGrantParameters(arg0: WSTrustResponse): JavaMap<string, string>;
     // private processPasswordGrant(arg0: OAuthAuthorizationGrant): void;
 }

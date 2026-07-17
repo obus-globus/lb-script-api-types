@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ByteBufAllocator } from '../../../../../io/netty/buffer/ByteBufAllocator.d.ts'
 import type { ChannelOption } from '../../../../../io/netty/channel/ChannelOption.d.ts'
 import type { MessageSizeEstimator } from '../../../../../io/netty/channel/MessageSizeEstimator.d.ts'
@@ -14,8 +15,8 @@ export class DefaultOioSocketChannelConfig extends DefaultSocketChannelConfig im
     constructor(arg0: OioSocketChannel, arg1: Socket)
     autoReadCleared(): void;
     getOption<T extends unknown>(arg0: ChannelOption<T>): T;
-    getOptions(): Map<ChannelOption<Object>, Object>;
-    getOptions(arg0: Map<ChannelOption<Object>, Object>, ...arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
+    getOptions(): JavaMap<ChannelOption<Object>, Object>;
+    getOptions(arg0: JavaMap<ChannelOption<Object>, Object>, ...arg1: ChannelOption<Object>[]): JavaMap<ChannelOption<Object>, Object>;
     getSoTimeout(): number;
     setAllocator(arg0: ByteBufAllocator): OioSocketChannelConfig;
     setAllowHalfClosure(arg0: boolean): OioSocketChannelConfig;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { NetherNetServerSignaling$NewConnectionHandler } from '../../../../../../dev/kastle/netty/channel/nethernet/signaling/NetherNetServerSignaling$NewConnectionHandler.d.ts'
 import type { NetherNetServerSignaling$PongData } from '../../../../../../dev/kastle/netty/channel/nethernet/signaling/NetherNetServerSignaling$PongData.d.ts'
 import type { NetherNetSignaling$SignalHandler } from '../../../../../../dev/kastle/netty/channel/nethernet/signaling/NetherNetSignaling$SignalHandler.d.ts'
@@ -16,9 +17,9 @@ export class NetherNetDiscovery extends SimpleChannelInboundHandler<DatagramPack
     // private discoveryCallback: (param0: number, param1: ByteBuf) => void;
     // private networkId: number;
     readonly newConnectionHandler: (param0: number, param1: string, param2: string) => void;
-    // private peerAddresses: { [key: number]: InetSocketAddress };
+    // private peerAddresses: JavaMap<number, InetSocketAddress>;
     readonly pongData: number[];
-    // private signalHandlers: { [key: number]: (param0: string) => void };
+    // private signalHandlers: JavaMap<number, (param0: string) => void>;
     bind(): void;
     bind(arg0: InetSocketAddress): void;
     bind(arg0: number): void;

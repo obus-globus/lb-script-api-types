@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../java/lang/CharSequence.d.ts'
@@ -23,12 +24,12 @@ export class Assert extends Object {
     static noNullElements(paramarg0: Object[]): void;
     static noNullElements(paramarg0: Object[], paramarg1: string): void;
     static notEmpty<T extends Object[]>(paramarg0: T, paramarg1: string): T;
-    static notEmpty<T extends Map<Object, Object>>(paramarg0: T, paramarg1: string): T;
+    static notEmpty<T extends JavaMap<Object, Object>>(paramarg0: T, paramarg1: string): T;
     static notEmpty(paramarg0: number[], paramarg1: string): number[];
     static notEmpty(paramarg0: string[], paramarg1: string): string[];
     static notEmpty(paramarg0: Object[], paramarg1: string): Object[];
     static notEmpty(paramarg0: Object[]): void;
-    static notEmpty(paramarg0: Map<Object | null, Object | null>): void;
+    static notEmpty(paramarg0: JavaMap<Object | null, Object | null>): void;
     static notNull<T extends unknown>(paramarg0: T, paramarg1: string): T;
     static notNull(paramarg0: Object): void;
     static state(paramarg0: boolean): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ElementOrder$Type } from '../../../../com/google/common/graph/ElementOrder$Type.d.ts'
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -13,7 +14,7 @@ export class ElementOrder<T extends unknown> extends Object {
     // private type: ElementOrder$Type;
     cast<T1 extends T>(): ElementOrder<T1>;
     comparator(): (param0: T, param1: T) => number;
-    createMap<K extends T, V extends unknown>(expectedSize: number): Map<K, V>;
+    createMap<K extends T, V extends unknown>(expectedSize: number): JavaMap<K, V>;
     equals(obj: Object | null): boolean;
     hashCode(): number;
     toString(): string;

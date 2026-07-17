@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { AbstractTable } from '../../../../com/google/common/collect/AbstractTable.d.ts'
 import type { Table } from '../../../../com/google/common/collect/Table.d.ts'
 import type { Table$Cell } from '../../../../com/google/common/collect/Table$Cell.d.ts'
@@ -13,21 +14,21 @@ export class ArrayTable<R extends unknown, C extends unknown, V extends unknown>
     private constructor(table: Table<R, C, V>)
     private constructor(rowKeys: R[], columnKeys: C[])
     // private array: V[][];
-    // private columnKeyToIndex: Map<C, number>;
+    // private columnKeyToIndex: JavaMap<C, number>;
     // private columnList: C[];
-    // private columnMap: Map<R, C>;
-    // private rowKeyToIndex: Map<R, number>;
+    // private columnMap: JavaMap<R, C>;
+    // private rowKeyToIndex: JavaMap<R, number>;
     // private rowList: R[];
-    // private rowMap: Map<R, C>;
+    // private rowMap: JavaMap<R, C>;
     at(rowIndex: number, columnIndex: number): V;
     cellIterator(): Iterator<Table$Cell<R, C, V>>;
     cellSet(): Table$Cell<R, C, V>[];
     cellSpliterator(): Spliterator<Table$Cell<R, C, V>>;
     clear(): void;
-    column(columnKey: C): Map<R, V>;
+    column(columnKey: C): JavaMap<R, V>;
     columnKeyList(): C[];
     columnKeySet(): C[];
-    columnMap(): Map<C, Map<R, V>>;
+    columnMap(): JavaMap<C, JavaMap<R, V>>;
     contains(rowKey: Object, columnKey: Object): boolean;
     containsColumn(columnKey: Object): boolean;
     containsRow(rowKey: Object): boolean;
@@ -41,10 +42,10 @@ export class ArrayTable<R extends unknown, C extends unknown, V extends unknown>
     put(rowKey: R, columnKey: C, value: V): V;
     putAll(table: Table<R, C, V>): void;
     remove(rowKey: Object, columnKey: Object): V;
-    row(rowKey: R): Map<C, V>;
+    row(rowKey: R): JavaMap<C, V>;
     rowKeyList(): R[];
     rowKeySet(): R[];
-    rowMap(): Map<R, Map<C, V>>;
+    rowMap(): JavaMap<R, JavaMap<C, V>>;
     set(rowIndex: number, columnIndex: number, value: V): V;
     size(): number;
     toArray(valueClass: Class<V>): V[][];

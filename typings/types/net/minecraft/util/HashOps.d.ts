@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { HashCode } from '../../../com/google/common/hash/HashCode.d.ts'
 import type { HashFunction } from '../../../com/google/common/hash/HashFunction.d.ts'
 import type { Pair } from '../../../com/mojang/datafixers/util/Pair.d.ts'
@@ -50,9 +51,9 @@ export class HashOps extends Object implements DynamicOps<HashCode> {
     createLong(value: number): HashCode;
     createLongList(arg0: LongStream): HashCode;
     createLongList(input: LongStream): HashCode;
-    createMap(arg0: Map<HashCode, HashCode>): HashCode;
+    createMap(arg0: JavaMap<HashCode, HashCode>): HashCode;
     createMap(map: Stream<Pair<HashCode, HashCode>>): HashCode;
-    createMap(map: Map<HashCode, HashCode>): HashCode;
+    createMap(map: JavaMap<HashCode, HashCode>): HashCode;
     createNumeric(value: Number): HashCode;
     createShort(arg0: number): HashCode;
     createShort(value: number): HashCode;
@@ -90,10 +91,10 @@ export class HashOps extends Object implements DynamicOps<HashCode> {
     mergeToList(prefix: HashCode, value: HashCode): DataResult<HashCode>;
     mergeToList(prefix: HashCode, values: HashCode[]): DataResult<HashCode>;
     mergeToMap(arg0: HashCode, arg1: MapLike<HashCode>): DataResult<HashCode>;
-    mergeToMap(arg0: HashCode, arg1: Map<HashCode, HashCode>): DataResult<HashCode>;
+    mergeToMap(arg0: HashCode, arg1: JavaMap<HashCode, HashCode>): DataResult<HashCode>;
     mergeToMap(prefix: HashCode, key: HashCode, value: HashCode): DataResult<HashCode>;
     mergeToMap(prefix: HashCode, values: MapLike<HashCode>): DataResult<HashCode>;
-    mergeToMap(prefix: HashCode, values: Map<HashCode, HashCode>): DataResult<HashCode>;
+    mergeToMap(prefix: HashCode, values: JavaMap<HashCode, HashCode>): DataResult<HashCode>;
     mergeToPrimitive(arg0: HashCode, arg1: HashCode): DataResult<HashCode>;
     remove(input: HashCode, key: string): HashCode;
     set(arg0: HashCode, arg1: string, arg2: HashCode): HashCode;

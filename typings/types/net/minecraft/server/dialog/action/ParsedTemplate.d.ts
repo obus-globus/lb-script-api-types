@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { StringTemplate } from '../../../../../net/minecraft/commands/functions/StringTemplate.d.ts'
@@ -7,5 +8,5 @@ export class ParsedTemplate extends Object {
     private constructor(raw: string, parsed: StringTemplate)
     // private parsed: StringTemplate;
     // private raw: string;
-    instantiate(arguments: { [key: string]: string }): string;
+    instantiate(arguments: JavaMap<string, string>): string;
 }

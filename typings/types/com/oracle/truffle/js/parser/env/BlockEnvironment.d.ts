@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Scope } from '../../../../../../com/oracle/js/parser/ir/Scope.d.ts'
 import type { Symbol } from '../../../../../../com/oracle/js/parser/ir/Symbol.d.ts'
 import type { JSFrameDescriptor } from '../../../../../../com/oracle/truffle/js/nodes/JSFrameDescriptor.d.ts'
@@ -34,6 +35,6 @@ export class BlockEnvironment extends Environment {
     isFunctionBlock(): boolean;
     isGeneratorFunctionBlock(): boolean;
     // private slotId(name: Object): Object;
-    toStringImpl(state: { [key: string]: number }): string;
+    toStringImpl(state: JavaMap<string, number>): string;
     // private updateSlotRange(slot: JSFrameSlot): void;
 }

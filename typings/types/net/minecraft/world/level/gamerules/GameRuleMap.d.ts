@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Predicate } from '../../../../../java/util/function/Predicate.d.ts'
 import type { Stream } from '../../../../../java/util/stream/Stream.d.ts'
@@ -11,14 +12,14 @@ export class GameRuleMap extends SavedData {
     static copyOf(paramgameRuleMap: GameRuleMap): GameRuleMap;
     static of(): GameRuleMap;
     static of(paramgameRuleTypeStream: Stream<GameRule<Object>>): GameRuleMap;
-    private constructor(map: Map<GameRule<Object>, Object>)
-    // private map: Map<GameRule<Object>, Object>;
+    private constructor(map: JavaMap<GameRule<Object>, Object>)
+    // private map: JavaMap<GameRule<Object>, Object>;
     equals(obj: Object | null): boolean;
     get<T extends unknown>(gameRule: GameRule<T>): T;
     has(gameRule: GameRule<Object>): boolean;
     hashCode(): number;
     keySet(): GameRule<Object>[];
-    // private map(): Map<GameRule<Object>, Object>;
+    // private map(): JavaMap<GameRule<Object>, Object>;
     remove<T extends unknown>(gameRule: GameRule<T>): T;
     reset<T extends unknown>(gameRule: GameRule<T>): void;
     set<T extends unknown>(gameRule: GameRule<T>, value: T): void;

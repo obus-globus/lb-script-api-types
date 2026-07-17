@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Annotation } from '../../../../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -44,7 +45,7 @@ export abstract class InjectionInfo extends SpecialMethodInfo implements ISliceC
     // private requiredCallbackCount: number;
     // private slices: MethodSlices;
     targetCount: number;
-    // private targetNodes: Map<AbstractInsnNode[], InjectionNodes$InjectionNode[]>;
+    // private targetNodes: JavaMap<AbstractInsnNode[], InjectionNodes$InjectionNode[]>;
     // private targets: TargetSelectors$SelectedMethod[];
     addCallbackInvocation(arg0: MethodNode): void;
     addMessage(arg0: string, ...arg1: Object[]): void;

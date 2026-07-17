@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { AccessWidener } from '../../../../../../../net/fabricmc/loader/impl/lib/classtweaker/api/AccessWidener.d.ts'
 import type { AccessWidener$Access } from '../../../../../../../net/fabricmc/loader/impl/lib/classtweaker/api/AccessWidener$Access.d.ts'
@@ -8,10 +9,10 @@ import type { EntryTriple } from '../../../../../../../net/fabricmc/loader/impl/
 export class AccessWidenerImpl extends Object implements AccessWidener, AccessWidenerVisitor {
     constructor(arg0: string)
     classAccess: AccessWidenerImpl$MutableAccess;
-    // private fieldAccess: Map<EntryTriple, AccessWidenerImpl$MutableAccess>;
-    // private methodAccess: Map<EntryTriple, AccessWidenerImpl$MutableAccess>;
+    // private fieldAccess: JavaMap<EntryTriple, AccessWidenerImpl$MutableAccess>;
+    // private methodAccess: JavaMap<EntryTriple, AccessWidenerImpl$MutableAccess>;
     // private owner: string;
-    addOrMerge(arg0: Map<EntryTriple, AccessWidenerImpl$MutableAccess>, arg1: EntryTriple, arg2: AccessWidenerVisitor$AccessType, arg3: AccessWidenerImpl$MutableAccess): void;
+    addOrMerge(arg0: JavaMap<EntryTriple, AccessWidenerImpl$MutableAccess>, arg1: EntryTriple, arg2: AccessWidenerVisitor$AccessType, arg3: AccessWidenerImpl$MutableAccess): void;
     applyAccess(arg0: AccessWidenerVisitor$AccessType, arg1: AccessWidenerImpl$MutableAccess, arg2: EntryTriple): AccessWidenerImpl$MutableAccess;
     getCanonicalConstructorAccess(): AccessWidener$Access;
     getClassAccess(): AccessWidenerImpl$MutableAccess;

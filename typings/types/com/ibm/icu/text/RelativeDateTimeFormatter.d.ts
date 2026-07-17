@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { FormattedStringBuilder } from '../../../../com/ibm/icu/impl/FormattedStringBuilder.d.ts'
 import type { StandardPlural } from '../../../../com/ibm/icu/impl/StandardPlural.d.ts'
 import type { BreakIterator } from '../../../../com/ibm/icu/text/BreakIterator.d.ts'
@@ -22,16 +23,16 @@ export class RelativeDateTimeFormatter extends Object {
     static getInstance(paramarg0: ULocale, paramarg1: NumberFormat, paramarg2: RelativeDateTimeFormatter$Style, paramarg3: DisplayContext): RelativeDateTimeFormatter;
     static getInstance(paramarg0: Locale): RelativeDateTimeFormatter;
     static getInstance(paramarg0: Locale, paramarg1: NumberFormat): RelativeDateTimeFormatter;
-    private constructor(arg0: Map<RelativeDateTimeFormatter$Style, Map<RelativeDateTimeFormatter$AbsoluteUnit, Map<RelativeDateTimeFormatter$Direction, string>>>, arg1: Map<RelativeDateTimeFormatter$Style, Map<RelativeDateTimeFormatter$RelativeUnit, string[][]>>, arg2: string, arg3: PluralRules, arg4: NumberFormat, arg5: RelativeDateTimeFormatter$Style, arg6: DisplayContext, arg7: BreakIterator, arg8: ULocale)
+    private constructor(arg0: JavaMap<RelativeDateTimeFormatter$Style, JavaMap<RelativeDateTimeFormatter$AbsoluteUnit, JavaMap<RelativeDateTimeFormatter$Direction, string>>>, arg1: JavaMap<RelativeDateTimeFormatter$Style, JavaMap<RelativeDateTimeFormatter$RelativeUnit, string[][]>>, arg2: string, arg3: PluralRules, arg4: NumberFormat, arg5: RelativeDateTimeFormatter$Style, arg6: DisplayContext, arg7: BreakIterator, arg8: ULocale)
     // private breakIterator: BreakIterator;
     readonly capitalizationContext: DisplayContext;
     // private combinedDateAndTime: string;
     // private dateFormatSymbols: DateFormatSymbols;
     // private locale: ULocale;
     readonly numberFormat: NumberFormat;
-    // private patternMap: Map<RelativeDateTimeFormatter$Style, Map<RelativeDateTimeFormatter$RelativeUnit, string[][]>>;
+    // private patternMap: JavaMap<RelativeDateTimeFormatter$Style, JavaMap<RelativeDateTimeFormatter$RelativeUnit, string[][]>>;
     // private pluralRules: PluralRules;
-    // private qualitativeUnitMap: Map<RelativeDateTimeFormatter$Style, Map<RelativeDateTimeFormatter$AbsoluteUnit, Map<RelativeDateTimeFormatter$Direction, string>>>;
+    // private qualitativeUnitMap: JavaMap<RelativeDateTimeFormatter$Style, JavaMap<RelativeDateTimeFormatter$AbsoluteUnit, JavaMap<RelativeDateTimeFormatter$Direction, string>>>;
     // private style: RelativeDateTimeFormatter$Style;
     // private styleToDateFormatSymbolsWidth: number[];
     // private adjustForContext(arg0: string): string;

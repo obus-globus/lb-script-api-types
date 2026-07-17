@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { ClaimsMutator } from '../../io/jsonwebtoken/ClaimsMutator.d.ts'
 import type { JwtBuilder$BuilderClaims } from '../../io/jsonwebtoken/JwtBuilder$BuilderClaims.d.ts'
 import type { JwtBuilder$BuilderHeader } from '../../io/jsonwebtoken/JwtBuilder$BuilderHeader.d.ts'
@@ -16,12 +17,12 @@ import type { Date } from '../../java/util/Date.d.ts'
 import type { SecretKey } from '../../javax/crypto/SecretKey.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export interface JwtBuilder extends ClaimsMutator<JwtBuilder>, Object{
-    addClaims(arg0: { [key: string]: Object | null }): JwtBuilder;
+    addClaims(arg0: JavaMap<string, Object | null>): JwtBuilder;
     b64Url(arg0: Encoder<OutputStream, OutputStream>): JwtBuilder;
     base64UrlEncodeWith(arg0: Encoder<number[], string>): JwtBuilder;
     claim(arg0: string, arg1: Object): JwtBuilder;
     claims(): JwtBuilder$BuilderClaims;
-    claims(arg0: { [key: string]: Object | null }): JwtBuilder;
+    claims(arg0: JavaMap<string, Object | null>): JwtBuilder;
     compact(): string;
     compressWith(arg0: CompressionAlgorithm): JwtBuilder;
     content(arg0: InputStream): JwtBuilder;
@@ -38,15 +39,15 @@ export interface JwtBuilder extends ClaimsMutator<JwtBuilder>, Object{
     id(arg0: string): JwtBuilder;
     issuedAt(arg0: Date): JwtBuilder;
     issuer(arg0: string): JwtBuilder;
-    json(arg0: Serializer<{ [key: string]: Object | null }>): JwtBuilder;
+    json(arg0: Serializer<JavaMap<string, Object | null>>): JwtBuilder;
     notBefore(arg0: Date): JwtBuilder;
-    provider(arg0: { [key: string]: any }): JwtBuilder;
+    provider(arg0: JavaMap<any, any>): JwtBuilder;
     random(arg0: SecureRandom): JwtBuilder;
-    serializeToJsonWith(arg0: Serializer<{ [key: string]: Object | null }>): JwtBuilder;
-    setClaims(arg0: { [key: string]: Object | null }): JwtBuilder;
-    setHeader(arg0: { [key: string]: Object | null }): JwtBuilder;
+    serializeToJsonWith(arg0: Serializer<JavaMap<string, Object | null>>): JwtBuilder;
+    setClaims(arg0: JavaMap<string, Object | null>): JwtBuilder;
+    setHeader(arg0: JavaMap<string, Object | null>): JwtBuilder;
     setHeaderParam(arg0: string, arg1: Object): JwtBuilder;
-    setHeaderParams(arg0: { [key: string]: Object | null }): JwtBuilder;
+    setHeaderParams(arg0: JavaMap<string, Object | null>): JwtBuilder;
     setPayload(arg0: string): JwtBuilder;
     signWith<K extends Key>(arg0: K, arg1: SecureDigestAlgorithm<K, any>): JwtBuilder;
     signWith(arg0: SignatureAlgorithm, arg1: Key): JwtBuilder;

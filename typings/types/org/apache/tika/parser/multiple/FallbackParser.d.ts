@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Exception } from '../../../../../java/lang/Exception.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Param } from '../../../../../org/apache/tika/config/Param.d.ts'
@@ -10,7 +11,7 @@ import type { AbstractMultipleParser$MetadataPolicy } from '../../../../../org/a
 import type { ContentHandler } from '../../../../../org/xml/sax/ContentHandler.d.ts'
 export class FallbackParser extends AbstractMultipleParser {
     static allowedPolicies: AbstractMultipleParser$MetadataPolicy[];
-    constructor(arg0: MediaTypeRegistry, arg1: Parser[], arg2: { [key: string]: Param<Object> })
+    constructor(arg0: MediaTypeRegistry, arg1: Parser[], arg2: JavaMap<string, Param<Object>>)
     constructor(arg0: MediaTypeRegistry, arg1: AbstractMultipleParser$MetadataPolicy, ...arg2: Parser[])
     constructor(arg0: MediaTypeRegistry, arg1: AbstractMultipleParser$MetadataPolicy, arg2: Parser[])
     parserCompleted(arg0: Parser, arg1: Metadata, arg2: ContentHandler, arg3: ParseContext, arg4: Exception): boolean;

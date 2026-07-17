@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { ScheduleInventoryActionEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/ScheduleInventoryActionEvent.d.ts'
 import type { ScreenEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/ScreenEvent.d.ts'
@@ -35,7 +36,7 @@ export class ModuleReplenish extends ClientModule {
     // private /*not mapped: */ getReplenishEmpty(): boolean;
     readonly running: boolean;
     // private screenHandler: EventHook<ScreenEvent>;
-    // private trackedHotbarItems: Map<HotbarItemSlot, ItemAndComponents>;
+    // private trackedHotbarItems: JavaMap<HotbarItemSlot, ItemAndComponents>;
     // private worldChangeHandler: EventHook<WorldChangeEvent>;
     // private clear(): void;
     onEnabled(): void;

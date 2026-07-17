@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Transient } from '../../java/beans/Transient.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
 import type { StringBuilder } from '../../java/lang/StringBuilder.d.ts'
@@ -15,15 +16,15 @@ export class FeatureDescriptor extends Object {
     readonly name: string;
     readonly preferred: boolean;
     readonly shortDescription: string;
-    // private table: { [key: string]: Object };
-    // private addTable(arg0: { [key: string]: Object }): void;
+    // private table: JavaMap<string, Object>;
+    // private addTable(arg0: JavaMap<string, Object>): void;
     appendTo(arg0: StringBuilder): void;
     attributeNames(): Enumeration<string>;
     getClass0(): Class<Object>;
     getDisplayName(): string;
     getName(): string;
     getShortDescription(): string;
-    // private getTable(): { [key: string]: Object };
+    // private getTable(): JavaMap<string, Object>;
     getValue(arg0: string): Object;
     isExpert(): boolean;
     isHidden(): boolean;

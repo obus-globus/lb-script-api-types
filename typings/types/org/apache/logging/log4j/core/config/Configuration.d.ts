@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Appender } from '../../../../../../org/apache/logging/log4j/core/Appender.d.ts'
 import type { Filter } from '../../../../../../org/apache/logging/log4j/core/Filter.d.ts'
@@ -31,7 +32,7 @@ export interface Configuration extends Object, Filterable{
     createConfiguration(node: Node, event: LogEvent): void;
     getAdvertiser(): Advertiser;
     getAppender<T extends Appender>(name: string): T;
-    getAppenders(): { [key: string]: Appender };
+    getAppenders(): JavaMap<string, Appender>;
     getAsyncLoggerConfigDelegate(): AsyncLoggerConfigDelegate;
     getAsyncWaitStrategyFactory(): AsyncWaitStrategyFactory;
     getComponent<T extends unknown>(name: string): T;
@@ -41,11 +42,11 @@ export interface Configuration extends Object, Filterable{
     getFilter(): Filter;
     getLoggerConfig(name: string): LoggerConfig;
     getLoggerContext(): LoggerContext;
-    getLoggers(): { [key: string]: LoggerConfig };
+    getLoggers(): JavaMap<string, LoggerConfig>;
     getName(): string;
     getNanoClock(): NanoClock;
     getPluginPackages(): string[];
-    getProperties(): { [key: string]: string };
+    getProperties(): JavaMap<string, string>;
     getReliabilityStrategy(loggerConfig: LoggerConfig): ReliabilityStrategy;
     getRootLogger(): LoggerConfig;
     getScheduler(): ConfigurationScheduler;

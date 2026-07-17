@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { AuthorizationRequestUrlParameters } from '../../../../com/microsoft/aad/msal4j/AuthorizationRequestUrlParameters.d.ts'
 import type { ClaimsRequest } from '../../../../com/microsoft/aad/msal4j/ClaimsRequest.d.ts'
 import type { Prompt } from '../../../../com/microsoft/aad/msal4j/Prompt.d.ts'
@@ -12,7 +13,7 @@ export class AuthorizationRequestUrlParameters$Builder extends Object {
     // private codeChallengeMethod: string;
     // private correlationId: string;
     // private domainHint: string;
-    // private extraQueryParameters: { [key: string]: string };
+    // private extraQueryParameters: JavaMap<string, string>;
     // private extraScopesToConsent: string[];
     // private instanceAware: boolean;
     // private loginHint: string;
@@ -29,7 +30,7 @@ export class AuthorizationRequestUrlParameters$Builder extends Object {
     codeChallengeMethod(arg0: string): AuthorizationRequestUrlParameters$Builder;
     correlationId(arg0: string): AuthorizationRequestUrlParameters$Builder;
     domainHint(arg0: string): AuthorizationRequestUrlParameters$Builder;
-    extraQueryParameters(arg0: { [key: string]: string }): AuthorizationRequestUrlParameters$Builder;
+    extraQueryParameters(arg0: JavaMap<string, string>): AuthorizationRequestUrlParameters$Builder;
     extraScopesToConsent(arg0: string[]): AuthorizationRequestUrlParameters$Builder;
     instanceAware(arg0: boolean): AuthorizationRequestUrlParameters$Builder;
     loginHint(arg0: string): AuthorizationRequestUrlParameters$Builder;

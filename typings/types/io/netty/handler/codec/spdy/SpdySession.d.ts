@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { SpdySession$PendingWrite } from '../../../../../io/netty/handler/codec/spdy/SpdySession$PendingWrite.d.ts'
 import type { SpdySession$StreamComparator } from '../../../../../io/netty/handler/codec/spdy/SpdySession$StreamComparator.d.ts'
 import type { SpdySession$StreamState } from '../../../../../io/netty/handler/codec/spdy/SpdySession$StreamState.d.ts'
@@ -8,12 +9,12 @@ export class SpdySession extends Object {
     constructor(arg0: number, arg1: number)
     // private activeLocalStreams: AtomicInteger;
     // private activeRemoteStreams: AtomicInteger;
-    // private activeStreams: { [key: number]: SpdySession$StreamState };
+    // private activeStreams: JavaMap<number, SpdySession$StreamState>;
     // private receiveWindowSize: AtomicInteger;
     // private sendWindowSize: AtomicInteger;
     // private streamComparator: SpdySession$StreamComparator;
     acceptStream(arg0: number, arg1: number, arg2: boolean, arg3: boolean, arg4: number, arg5: number, arg6: boolean): void;
-    activeStreams(): { [key: number]: SpdySession$StreamState };
+    activeStreams(): JavaMap<number, SpdySession$StreamState>;
     closeLocalSide(arg0: number, arg1: boolean): void;
     closeRemoteSide(arg0: number, arg1: boolean): void;
     getPendingWrite(arg0: number): SpdySession$PendingWrite;

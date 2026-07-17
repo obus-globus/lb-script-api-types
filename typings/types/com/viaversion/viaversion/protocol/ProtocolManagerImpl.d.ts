@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Range } from '../../../../com/google/common/collect/Range.d.ts'
 import type { UserConnection } from '../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { Protocol } from '../../../../com/viaversion/viaversion/api/protocol/Protocol.d.ts'
@@ -25,14 +26,14 @@ export class ProtocolManagerImpl extends Object implements ProtocolManager {
     constructor()
     // private clientboundBaseProtocols: Pair<Range<ProtocolVersion>, Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>[];
     // private mappingLoaderExecutor: ExecutorService;
-    // private mappingLoaderFutures: Map<Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, CompletableFuture<void>>;
+    // private mappingLoaderFutures: JavaMap<Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, CompletableFuture<void>>;
     // private mappingLoaderLock: ReadWriteLock;
     // private mappingsLoaded: boolean;
     readonly maxPathDeltaIncrease: number;
     readonly maxProtocolPathSize: number;
-    // private pathCache: Map<ProtocolPathKey, ProtocolPathEntry[]>;
-    readonly protocols: Map<Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, Protocol<any, any, any, any>>;
-    // private registryMap: Map<ProtocolVersion, Map<ProtocolVersion, Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>>;
+    // private pathCache: JavaMap<ProtocolPathKey, ProtocolPathEntry[]>;
+    readonly protocols: JavaMap<Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, Protocol<any, any, any, any>>;
+    // private registryMap: JavaMap<ProtocolVersion, JavaMap<ProtocolVersion, Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>>;
     readonly serverProtocolVersion: ServerProtocolVersion;
     // private serverboundBaseProtocols: Pair<Range<ProtocolVersion>, Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>[];
     readonly supportedVersions: ProtocolVersion[];
@@ -53,7 +54,7 @@ export class ProtocolManagerImpl extends Object implements ProtocolManager {
     getProtocol<T extends Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>(arg0: Class<T>): T;
     getProtocolPath(arg0: number, arg1: number): ProtocolPathEntry[];
     getProtocolPath(arg0: ProtocolVersion, arg1: ProtocolVersion): ProtocolPathEntry[];
-    // private getProtocolPath(arg0: Map<ProtocolVersion, Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, arg1: ProtocolVersion, arg2: ProtocolVersion): Map<ProtocolVersion, Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>;
+    // private getProtocolPath(arg0: JavaMap<ProtocolVersion, Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, arg1: ProtocolVersion, arg2: ProtocolVersion): JavaMap<ProtocolVersion, Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>;
     getProtocols(): Protocol<any, any, any, any>[];
     getServerProtocolVersion(): ServerProtocolVersion;
     getSupportedVersions(): ProtocolVersion[];

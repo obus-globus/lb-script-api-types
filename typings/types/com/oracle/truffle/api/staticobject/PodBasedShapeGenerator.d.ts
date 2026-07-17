@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { PodBasedStaticShape } from '../../../../../com/oracle/truffle/api/staticobject/PodBasedStaticShape.d.ts'
 import type { ShapeGenerator } from '../../../../../com/oracle/truffle/api/staticobject/ShapeGenerator.d.ts'
 import type { StaticProperty } from '../../../../../com/oracle/truffle/api/staticobject/StaticProperty.d.ts'
@@ -8,6 +9,6 @@ export class PodBasedShapeGenerator<T extends unknown> extends ShapeGenerator<T>
     private constructor(storageSuperClass: Class<Object>, storageFactoryInterface: Class<T>)
     // private storageFactoryInterface: Class<T>;
     // private storageSuperClass: Class<Object>;
-    // private generateShape(parentShape: PodBasedStaticShape<T>, staticProperties: { [key: string]: StaticProperty }, safetyChecks: boolean): StaticShape<T>;
-    generateShape(parentShape: StaticShape<T>, staticProperties: { [key: string]: StaticProperty }, safetyChecks: boolean, storageClassName: string): StaticShape<T>;
+    // private generateShape(parentShape: PodBasedStaticShape<T>, staticProperties: JavaMap<string, StaticProperty>, safetyChecks: boolean): StaticShape<T>;
+    generateShape(parentShape: StaticShape<T>, staticProperties: JavaMap<string, StaticProperty>, safetyChecks: boolean, storageClassName: string): StaticShape<T>;
 }

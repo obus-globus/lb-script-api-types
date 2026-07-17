@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { MeshData$SortState } from '../../../../../com/mojang/blaze3d/vertex/MeshData$SortState.d.ts'
 import type { AtomicBoolean } from '../../../../../java/util/concurrent/atomic/AtomicBoolean.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -13,12 +14,12 @@ export class CompiledSectionMesh extends Object implements SectionMesh {
     static EMPTY: SectionMesh;
     static UNCOMPILED: SectionMesh;
     constructor(translucencyPointOfView: TranslucencyPointOfView, results: SectionCompiler$Results)
-    // private draws: Map<ChunkSectionLayer, SectionMesh$SectionDraw>;
-    readonly indexBufferUploaded: Map<ChunkSectionLayer, AtomicBoolean>;
+    // private draws: JavaMap<ChunkSectionLayer, SectionMesh$SectionDraw>;
+    readonly indexBufferUploaded: JavaMap<ChunkSectionLayer, AtomicBoolean>;
     readonly renderableBlockEntities: BlockEntity[];
     readonly translucencyPointOfView: TranslucencyPointOfView;
     readonly transparencyState: MeshData$SortState;
-    readonly vertexBufferUploaded: Map<ChunkSectionLayer, AtomicBoolean>;
+    readonly vertexBufferUploaded: JavaMap<ChunkSectionLayer, AtomicBoolean>;
     // private visibilitySet: VisibilitySet;
     close(): void;
     facesCanSeeEachother(direction1: Direction, direction2: Direction): boolean;

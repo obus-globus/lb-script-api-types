@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { GpuSampler } from '../../../../../../com/mojang/blaze3d/textures/GpuSampler.d.ts'
 import type { PoseStack } from '../../../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
@@ -51,8 +52,8 @@ export class SodiumWorldRenderer extends Object implements ShadowRenderListAcces
     // private useTranslucencySorting: boolean;
     // private deleteRendererState(): void;
     drawChunkLayer(arg0: ChunkSectionLayerGroup, arg1: ChunkRenderMatrices, arg2: number, arg3: number, arg4: number, arg5: GpuSampler): void;
-    extractBlockEntities(arg0: Camera, arg1: number, arg2: { [key: string]: any }, arg3: LevelRenderState): void;
-    // private extractBlockEntity(arg0: BlockEntity, arg1: PoseStack, arg2: Camera, arg3: number, arg4: { [key: string]: any }, arg5: LevelRenderState, arg6: boolean): void;
+    extractBlockEntities(arg0: Camera, arg1: number, arg2: JavaMap<any, any>, arg3: LevelRenderState): void;
+    // private extractBlockEntity(arg0: BlockEntity, arg1: PoseStack, arg2: Camera, arg3: number, arg4: JavaMap<any, any>, arg5: LevelRenderState, arg6: boolean): void;
     getChunksDebugString(): string;
     getDebugStrings(arg0: boolean): string[];
     getVisibleChunkCount(): number;

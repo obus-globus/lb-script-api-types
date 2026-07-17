@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Device } from '../../../ai/djl/Device.d.ts'
 import type { Engine } from '../../../ai/djl/engine/Engine.d.ts'
 import type { BaseNDManager$TempResource } from '../../../ai/djl/ndarray/BaseNDManager$TempResource.d.ts'
@@ -28,8 +29,8 @@ export abstract class BaseNDManager extends Object implements NDManager {
     device: Device;
     name: string;
     // private parent: NDManager;
-    // private resources: { [key: string]: AutoCloseable };
-    // private tempResources: { [key: string]: BaseNDManager$TempResource };
+    // private resources: JavaMap<string, AutoCloseable>;
+    // private tempResources: JavaMap<string, BaseNDManager$TempResource>;
     // private uid: string;
     allocateDirect(arg0: number): ByteBuffer;
     arange(arg0: number): NDArray;

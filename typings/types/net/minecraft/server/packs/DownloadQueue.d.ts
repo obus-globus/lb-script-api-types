@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Either } from '../../../../com/mojang/datafixers/util/Either.d.ts'
 import type { AutoCloseable } from '../../../../java/lang/AutoCloseable.d.ts'
 import type { Path } from '../../../../java/nio/file/Path.d.ts'
@@ -17,7 +18,7 @@ export class DownloadQueue extends Object implements AutoCloseable {
     // private eventLog: JsonEventLog<DownloadQueue$LogEntry>;
     // private tasks: ConsecutiveExecutor;
     close(): void;
-    downloadBatch(config: DownloadQueue$BatchConfig, requests: Map<UUID, DownloadQueue$DownloadRequest>): CompletableFuture<DownloadQueue$BatchResult>;
+    downloadBatch(config: DownloadQueue$BatchConfig, requests: JavaMap<UUID, DownloadQueue$DownloadRequest>): CompletableFuture<DownloadQueue$BatchResult>;
     // private getFileInfo(downloadedFile: Path): Either<string, DownloadQueue$FileInfoEntry>;
-    // private runDownload(config: DownloadQueue$BatchConfig, requests: Map<UUID, DownloadQueue$DownloadRequest>): DownloadQueue$BatchResult;
+    // private runDownload(config: DownloadQueue$BatchConfig, requests: JavaMap<UUID, DownloadQueue$DownloadRequest>): DownloadQueue$BatchResult;
 }

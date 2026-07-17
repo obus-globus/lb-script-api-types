@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { Constructor } from '../../../../../../../java/lang/reflect/Constructor.d.ts'
 import type { Comparator } from '../../../../../../../java/util/Comparator.d.ts'
@@ -5,15 +6,15 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../../java/util/Map$Entry.d.ts'
 import type { Freezable } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/Freezable.d.ts'
 export class Relation<K extends unknown, V extends unknown> extends Object implements Freezable<Relation<K, V>> {
-    static of<K extends unknown, V extends unknown>(parammap: Map<K, V[]>, paramsetCreator: Class<Object>): Relation<K, V>;
-    static of<K extends unknown, V extends unknown>(parammap: Map<K, V[]>, paramsetCreator: Class<Object>, paramsetComparator: (param0: V, param1: V) => number): Relation<K, V>;
-    constructor(map: Map<K, V[]>, setCreator: Class<Object>)
-    constructor(map: Map<K, V[]>, setCreator: Class<Object>, setComparator: (param0: V, param1: V) => number)
-    // private data: Map<K, V[]>;
+    static of<K extends unknown, V extends unknown>(parammap: JavaMap<K, V[]>, paramsetCreator: Class<Object>): Relation<K, V>;
+    static of<K extends unknown, V extends unknown>(parammap: JavaMap<K, V[]>, paramsetCreator: Class<Object>, paramsetComparator: (param0: V, param1: V) => number): Relation<K, V>;
+    constructor(map: JavaMap<K, V[]>, setCreator: Class<Object>)
+    constructor(map: JavaMap<K, V[]>, setCreator: Class<Object>, setComparator: (param0: V, param1: V) => number)
+    // private data: JavaMap<K, V[]>;
     frozen: boolean;
     // private setComparatorParam: Object[];
     // private setCreator: Constructor<V[]>;
-    addAllInverted(source: Map<V, K>): Relation<K, V>;
+    addAllInverted(source: JavaMap<V, K>): Relation<K, V>;
     addAllInverted(source: Relation<V, K>): Relation<K, V>;
     clear(): void;
     cloneAsThawed(): Relation<K, V>;
@@ -32,7 +33,7 @@ export class Relation<K extends unknown, V extends unknown> extends Object imple
     keyValuesSet(): Map$Entry<K, V[]>[];
     // private newSet(): V[];
     put(key: K, value: V): V;
-    putAll(t: Map<K, V>): void;
+    putAll(t: JavaMap<K, V>): void;
     putAll(key: K, values: V[]): V;
     putAll(keys: K[], value: V): V;
     putAll(t: Relation<K, V>): void;

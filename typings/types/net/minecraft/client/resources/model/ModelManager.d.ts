@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
@@ -25,18 +26,18 @@ import type { BlockState } from '../../../../../net/minecraft/world/level/block/
 export class ModelManager extends Object implements FabricModelManager, FabricResourceReloader, PreparableReloadListener {
     constructor(blockColors: BlockColors, atlasManager: AtlasManager, playerSkinRenderCache: PlayerSkinRenderCache)
     // private atlasManager: AtlasManager;
-    // private bakedItemStackModels: Map<Identifier, ItemModel>;
+    // private bakedItemStackModels: JavaMap<Identifier, ItemModel>;
     // private blockColors: BlockColors;
     readonly blockModelSet: BlockModelSet;
     readonly blockStateModelSet: BlockStateModelSet;
     // private entityModelSet: EntityModelSet;
     // private eventDispatcherFuture: CompletableFuture<Object>;
-    // private extraModels: Map<Object | null, Object | null>;
+    // private extraModels: JavaMap<Object | null, Object | null>;
     // private fabric$id: Identifier;
     readonly fluidStateModelSet: FluidStateModelSet;
-    // private itemProperties: Map<Identifier, ClientItem$Properties>;
+    // private itemProperties: JavaMap<Identifier, ClientItem$Properties>;
     // private missingModels: ModelBakery$MissingModels;
-    // private modelGroups: { [key: string]: any };
+    // private modelGroups: JavaMap<any, any>;
     // private playerSkinRenderCache: PlayerSkinRenderCache;
     // private apply(preparations: ModelManager$ReloadState): void;
     entityModels(): () => EntityModelSet;

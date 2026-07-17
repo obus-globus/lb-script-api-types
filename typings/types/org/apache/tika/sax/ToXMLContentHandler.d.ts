@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { OutputStream } from '../../../../java/io/OutputStream.d.ts'
 import type { ToTextContentHandler } from '../../../../org/apache/tika/sax/ToTextContentHandler.d.ts'
 import type { ToXMLContentHandler$ElementInfo } from '../../../../org/apache/tika/sax/ToXMLContentHandler$ElementInfo.d.ts'
@@ -9,7 +10,7 @@ export class ToXMLContentHandler extends ToTextContentHandler {
     // private currentElement: ToXMLContentHandler$ElementInfo;
     // private encoding: string;
     // private inStartElement: boolean;
-    // private namespaces: { [key: string]: string };
+    // private namespaces: JavaMap<string, string>;
     characters(arg0: string[], arg1: number, arg2: number): void;
     endElement(arg0: string, arg1: string, arg2: string): void;
     // private lazyCloseStartElement(): void;

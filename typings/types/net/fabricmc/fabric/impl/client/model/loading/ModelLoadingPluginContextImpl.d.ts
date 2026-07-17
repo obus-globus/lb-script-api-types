@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { BlockStateResolver } from '../../../../../../../net/fabricmc/fabric/api/client/model/loading/v1/BlockStateResolver.d.ts'
 import type { BlockStateResolver$Context } from '../../../../../../../net/fabricmc/fabric/api/client/model/loading/v1/BlockStateResolver$Context.d.ts'
@@ -29,8 +30,8 @@ export class ModelLoadingPluginContextImpl extends Object implements ModelLoadin
     // private afterBakeItemModifiers: Event<(param0: ItemModel, param1: ModelModifier$AfterBakeItem$Context) => ItemModel>;
     // private beforeBakeBlockModifiers: Event<(param0: BlockStateModel$UnbakedRoot, param1: ModelModifier$BeforeBakeBlock$Context) => BlockStateModel$UnbakedRoot>;
     // private beforeBakeItemModifiers: Event<(param0: ItemModel$Unbaked, param1: ModelModifier$BeforeBakeItem$Context) => ItemModel$Unbaked>;
-    // private blockStateResolvers: Map<Block, (param0: BlockStateResolver$Context) => void>;
-    // private extraModels: Map<ExtraModelKey<Object>, UnbakedExtraModel<Object>>;
+    // private blockStateResolvers: JavaMap<Block, (param0: BlockStateResolver$Context) => void>;
+    // private extraModels: JavaMap<ExtraModelKey<Object>, UnbakedExtraModel<Object>>;
     // private onLoadBlockModifiers: Event<(param0: BlockStateModel$UnbakedRoot, param1: ModelModifier$OnLoadBlock$Context) => BlockStateModel$UnbakedRoot>;
     // private onLoadModifiers: Event<(param0: UnbakedModel, param1: ModelModifier$OnLoad$Context) => UnbakedModel>;
     addModel<T extends unknown>(arg0: ExtraModelKey<T>, arg1: UnbakedExtraModel<T>): void;

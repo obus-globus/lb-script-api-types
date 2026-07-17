@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { StoredObject } from '../../../../../com/viaversion/viaversion/api/connection/StoredObject.d.ts'
 import type { UserConnection } from '../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { BlockPosition } from '../../../../../com/viaversion/viaversion/api/minecraft/BlockPosition.d.ts'
@@ -11,10 +12,10 @@ export class EntityTracker extends StoredObject {
     constructor(arg0: UserConnection)
     // private ID_COUNTER: AtomicInteger;
     // private clientPlayerEntity: ClientPlayerEntity;
-    // private entities: { [key: string]: any };
-    // private itemFrames: { [key: string]: any };
-    // private javaIdToUniqueId: { [key: string]: any };
-    // private runtimeIdToUniqueId: { [key: string]: any };
+    // private entities: JavaMap<any, any>;
+    // private itemFrames: JavaMap<any, any>;
+    // private javaIdToUniqueId: JavaMap<any, any>;
+    // private runtimeIdToUniqueId: JavaMap<any, any>;
     addEntity<T extends Entity>(arg0: T): T;
     addEntity<T extends Entity>(arg0: T, arg1: boolean): T;
     addEntity(arg0: number, arg1: number, arg2: string, arg3: EntityTypes26_2): Entity;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ByteBuf } from '../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { ByteBufAllocator } from '../../../../io/netty/buffer/ByteBufAllocator.d.ts'
 import type { ApplicationProtocolAccessor } from '../../../../io/netty/handler/ssl/ApplicationProtocolAccessor.d.ts'
@@ -38,7 +39,7 @@ export class ReferenceCountedOpenSslEngine extends SSLEngine implements Applicat
     // private enableOcsp: boolean;
     readonly enabledProtocols: string[];
     // private endpointIdentificationAlgorithm: string;
-    // private engines: { [key: number]: ReferenceCountedOpenSslEngine };
+    // private engines: JavaMap<number, ReferenceCountedOpenSslEngine>;
     // private groups: string[];
     // private handshakeState: ReferenceCountedOpenSslEngine$HandshakeState;
     // private hasTLSv13Cipher: boolean;

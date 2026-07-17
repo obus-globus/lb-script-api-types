@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ICUResourceBundle } from '../../../../com/ibm/icu/impl/ICUResourceBundle.d.ts'
 import type { ICUResourceBundle$OpenType } from '../../../../com/ibm/icu/impl/ICUResourceBundle$OpenType.d.ts'
 import type { ICUResourceBundleImpl } from '../../../../com/ibm/icu/impl/ICUResourceBundleImpl.d.ts'
@@ -68,7 +69,7 @@ export class ICUResourceBundleImpl$ResourceArray extends ICUResourceBundleImpl$R
     getStringArray(): string[];
     getStringArray(arg0: string): string[];
     getType(): number;
-    handleGet(arg0: number, arg1: { [key: string]: string }, arg2: UResourceBundle): UResourceBundle;
-    handleGet(arg0: string, arg1: { [key: string]: string }, arg2: UResourceBundle): UResourceBundle;
+    handleGet(arg0: number, arg1: JavaMap<string, string>, arg2: UResourceBundle): UResourceBundle;
+    handleGet(arg0: string, arg1: JavaMap<string, string>, arg2: UResourceBundle): UResourceBundle;
     handleGetStringArray(): string[];
 }

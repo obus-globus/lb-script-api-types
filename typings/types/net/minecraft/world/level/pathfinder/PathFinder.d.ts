@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { BooleanSupplier } from '../../../../../java/util/function/BooleanSupplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
@@ -17,7 +18,7 @@ export class PathFinder extends Object {
     // private openSet: BinaryHeap;
     distance(from: Node, to: Node): number;
     findPath(level: PathNavigationRegion, entity: Mob, targets: BlockPos[], maxPathLength: number, reachRange: number, maxVisitedNodesMultiplier: number): Path;
-    // private findPath(from: Node, targetMap: Map<Target, BlockPos>, maxPathLength: number, reachRange: number, maxVisitedNodesMultiplier: number): Path;
+    // private findPath(from: Node, targetMap: JavaMap<Target, BlockPos>, maxPathLength: number, reachRange: number, maxVisitedNodesMultiplier: number): Path;
     // private getBestH(from: Node, targets: Target[]): number;
     // private reconstructPath(closest: Node, target: BlockPos, reached: boolean): Path;
     setCaptureDebug(captureDebug: () => boolean): void;

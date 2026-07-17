@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { GpuBuffer } from '../../../../com/mojang/blaze3d/buffers/GpuBuffer.d.ts'
 import type { GpuDevice } from '../../../../com/mojang/blaze3d/systems/GpuDevice.d.ts'
 import type { StagingBuffer } from '../../../../com/mojang/blaze3d/vertex/StagingBuffer.d.ts'
@@ -14,13 +15,13 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class UberGpuBuffer<T extends unknown> extends Object implements AutoCloseable {
     constructor(name: string, bufferUsage: number, heapSize: number, alignSize: number, stagingBuffer: StagingBuffer)
     // private alignSize: number;
-    // private allocationMap: Map<T, TlsfAllocator$Allocation>;
+    // private allocationMap: JavaMap<T, TlsfAllocator$Allocation>;
     // private bufferUsage: number;
     // private heapSize: number;
     // private name: string;
     // private nodes: Pair<TlsfAllocator, UberGpuBuffer$UberGpuBufferHeap>[];
     // private skippedStagedAllocations: T[];
-    // private stagedAllocations: Map<T, UberGpuBuffer$StagedAllocationEntry<T>>;
+    // private stagedAllocations: JavaMap<T, UberGpuBuffer$StagedAllocationEntry<T>>;
     // private stagingBuffer: StagingBuffer;
     addAllocation<U extends T>(allocationKey: U, callback: UberGpuBuffer$UploadCallback<U>, buffer: ByteBuffer): boolean;
     close(): void;

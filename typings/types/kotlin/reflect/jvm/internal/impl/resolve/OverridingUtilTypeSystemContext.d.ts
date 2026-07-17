@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { KotlinBuiltIns } from '../../../../../../kotlin/reflect/jvm/internal/impl/builtins/KotlinBuiltIns.d.ts'
 import type { PrimitiveType } from '../../../../../../kotlin/reflect/jvm/internal/impl/builtins/PrimitiveType.d.ts'
@@ -29,12 +30,12 @@ import type { TypeSystemContext } from '../../../../../../kotlin/reflect/jvm/int
 import type { TypeVariableTypeConstructorMarker } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeVariableTypeConstructorMarker.d.ts'
 import type { TypeVariance } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeVariance.d.ts'
 export class OverridingUtilTypeSystemContext extends Object implements ClassicTypeSystemContext {
-    constructor(arg0: Map<TypeConstructor, TypeConstructor>, arg1: KotlinTypeChecker$TypeConstructorEquality, arg2: KotlinTypeRefiner, arg3: KotlinTypePreparator, arg4: (param0: KotlinTypeMarker, param1: KotlinTypeMarker) => boolean)
+    constructor(arg0: JavaMap<TypeConstructor, TypeConstructor>, arg1: KotlinTypeChecker$TypeConstructorEquality, arg2: KotlinTypeRefiner, arg3: KotlinTypePreparator, arg4: (param0: KotlinTypeMarker, param1: KotlinTypeMarker) => boolean)
     readonly customSubtypingCallback: (param0: KotlinTypeMarker, param1: KotlinTypeMarker) => boolean;
     // private equalityAxioms: KotlinTypeChecker$TypeConstructorEquality;
     // private kotlinTypePreparator: KotlinTypePreparator;
     // private kotlinTypeRefiner: KotlinTypeRefiner;
-    // private matchingTypeConstructors: Map<TypeConstructor, TypeConstructor>;
+    // private matchingTypeConstructors: JavaMap<TypeConstructor, TypeConstructor>;
     areEqualTypeConstructors(arg0: TypeConstructorMarker, arg1: TypeConstructorMarker): boolean;
     // private areEqualTypeConstructorsByAxioms(arg0: TypeConstructor, arg1: TypeConstructor): boolean;
     argumentsCount(arg0: KotlinTypeMarker): number;
@@ -152,7 +153,7 @@ export class OverridingUtilTypeSystemContext extends Object implements ClassicTy
     typeConstructor(arg0: CapturedTypeMarker): CapturedTypeConstructorMarker;
     typeConstructor(arg0: KotlinTypeMarker): TypeConstructorMarker;
     typeConstructor(arg0: RigidTypeMarker): TypeConstructorMarker;
-    typeSubstitutorForUnderlyingType(arg0: Map<TypeConstructorMarker, KotlinTypeMarker>): TypeSubstitutorMarker;
+    typeSubstitutorForUnderlyingType(arg0: JavaMap<TypeConstructorMarker, KotlinTypeMarker>): TypeSubstitutorMarker;
     upperBound(arg0: FlexibleTypeMarker): SimpleTypeMarker;
     upperBoundIfFlexible(arg0: KotlinTypeMarker): RigidTypeMarker;
     withNullability(arg0: KotlinTypeMarker, arg1: boolean): KotlinTypeMarker;

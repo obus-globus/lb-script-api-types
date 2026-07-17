@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Predictor } from '../../../../../ai/djl/inference/Predictor.d.ts'
 import type { VisionLanguageInput } from '../../../../../ai/djl/modality/cv/VisionLanguageInput.d.ts'
 import type { DetectedObjects } from '../../../../../ai/djl/modality/cv/output/DetectedObjects.d.ts'
@@ -10,7 +11,7 @@ import type { TranslatorContext } from '../../../../../ai/djl/translate/Translat
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class YoloWorldTranslator extends Object implements NoBatchifyTranslator<VisionLanguageInput, DetectedObjects> {
     static builder(): YoloWorldTranslator$Builder;
-    static builder(paramarg0: { [key: string]: Object }): YoloWorldTranslator$Builder;
+    static builder(paramarg0: JavaMap<string, Object>): YoloWorldTranslator$Builder;
     constructor(arg0: YoloWorldTranslator$Builder)
     // private clipModelPath: string;
     // private imageProcessor: BaseImageTranslator<Object>;

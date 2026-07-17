@@ -1,10 +1,11 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Double2IntMap$Entry } from '../../../../../it/unimi/dsi/fastutil/doubles/Double2IntMap$Entry.d.ts'
 import type { DoubleIntPair } from '../../../../../it/unimi/dsi/fastutil/doubles/DoubleIntPair.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class Double2IntOpenHashMap$MapEntry extends Object implements Double2IntMap$Entry, DoubleIntPair, Map$Entry<number, number> {
-    constructor(null_: { [key: string]: any })
-    constructor(null_: { [key: string]: any }, arg1: number)
+    constructor(null_: JavaMap<any, any>)
+    constructor(null_: JavaMap<any, any>, arg1: number)
     // private index: number;
     getKey(): number;
     getValue(): number;

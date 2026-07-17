@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { MappedElementKind } from '../../../../../../../net/fabricmc/loader/impl/lib/mappingio/MappedElementKind.d.ts'
 import type { MappingVisitor } from '../../../../../../../net/fabricmc/loader/impl/lib/mappingio/MappingVisitor.d.ts'
 import type { MappingTree$ClassMapping } from '../../../../../../../net/fabricmc/loader/impl/lib/mappingio/tree/MappingTree$ClassMapping.d.ts'
@@ -12,14 +13,14 @@ import type { MemoryMappingTree$MethodEntry } from '../../../../../../../net/fab
 import type { VisitOrder } from '../../../../../../../net/fabricmc/loader/impl/lib/mappingio/tree/VisitOrder.d.ts'
 export class MemoryMappingTree$ClassEntry extends MemoryMappingTree$Entry<MemoryMappingTree$ClassEntry> implements MappingTree$ClassMapping {
     constructor(arg0: MemoryMappingTree, arg1: string)
-    readonly fields: Map<MemoryMappingTree$MemberKey, MemoryMappingTree$FieldEntry>;
+    readonly fields: JavaMap<MemoryMappingTree$MemberKey, MemoryMappingTree$FieldEntry>;
     // private fieldsView: MemoryMappingTree$FieldEntry[];
     // private flags: number;
-    readonly methods: Map<MemoryMappingTree$MemberKey, MemoryMappingTree$MethodEntry>;
+    readonly methods: JavaMap<MemoryMappingTree$MemberKey, MemoryMappingTree$MethodEntry>;
     // private methodsView: MemoryMappingTree$MethodEntry[];
     accept(arg0: MappingVisitor, arg1: VisitOrder, arg2: boolean, arg3: boolean): void;
     addFieldInternal(arg0: MappingTree$FieldMapping): MemoryMappingTree$FieldEntry;
-    // private addMember<T extends MemoryMappingTree$MemberEntry<T>>(arg0: T, arg1: Map<MemoryMappingTree$MemberKey, T>, arg2: number, arg3: number): T;
+    // private addMember<T extends MemoryMappingTree$MemberEntry<T>>(arg0: T, arg1: JavaMap<MemoryMappingTree$MemberKey, T>, arg2: number, arg3: number): T;
     addMethodInternal(arg0: MappingTree$MethodMapping): MemoryMappingTree$MethodEntry;
     copyFrom(arg0: MemoryMappingTree$ClassEntry, arg1: boolean): void;
     getField(arg0: string, arg1: string, arg2: number): MappingTree$FieldMapping;

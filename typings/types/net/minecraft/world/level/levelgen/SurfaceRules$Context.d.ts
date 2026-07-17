@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { DoubleSupplier } from '../../../../../java/util/function/DoubleSupplier.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -31,8 +32,8 @@ export class SurfaceRules$Context extends Object {
     // private lastUpdateY: number;
     // private minSurfaceLevel: number;
     // private noiseChunk: NoiseChunk;
-    // private noiseSamplers2d: Map<ResourceKey<NormalNoise$NoiseParameters>, () => number>;
-    // private noiseSamplers3d: Map<ResourceKey<NormalNoise$NoiseParameters>, () => number>;
+    // private noiseSamplers2d: JavaMap<ResourceKey<NormalNoise$NoiseParameters>, () => number>;
+    // private noiseSamplers3d: JavaMap<ResourceKey<NormalNoise$NoiseParameters>, () => number>;
     // private pos: BlockPos$MutableBlockPos;
     // private possibleBiomes: Holder<Biome>[];
     // private preliminarySurfaceCache: number[];

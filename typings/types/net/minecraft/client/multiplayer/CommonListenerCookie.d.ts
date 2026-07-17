@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { GameProfile } from '../../../../com/mojang/authlib/GameProfile.d.ts'
 import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { UUID } from '../../../../java/util/UUID.d.ts'
@@ -13,23 +14,23 @@ import type { Identifier } from '../../../../net/minecraft/resources/Identifier.
 import type { ServerLinks } from '../../../../net/minecraft/server/ServerLinks.d.ts'
 import type { FeatureFlagSet } from '../../../../net/minecraft/world/flag/FeatureFlagSet.d.ts'
 export class CommonListenerCookie extends Record {
-    constructor(levelLoadTracker: LevelLoadTracker, localGameProfile: GameProfile, telemetryManager: WorldSessionTelemetryManager, receivedRegistries: RegistryAccess$Frozen, enabledFeatures: FeatureFlagSet, serverBrand: string, serverData: ServerData, postDisconnectScreen: Screen, serverCookies: Map<Identifier, number[]>, chatState: ChatComponent$State, customReportDetails: { [key: string]: string }, serverLinks: ServerLinks, seenPlayers: Map<UUID, PlayerInfo>, seenInsecureChatWarning: boolean)
+    constructor(levelLoadTracker: LevelLoadTracker, localGameProfile: GameProfile, telemetryManager: WorldSessionTelemetryManager, receivedRegistries: RegistryAccess$Frozen, enabledFeatures: FeatureFlagSet, serverBrand: string, serverData: ServerData, postDisconnectScreen: Screen, serverCookies: JavaMap<Identifier, number[]>, chatState: ChatComponent$State, customReportDetails: JavaMap<string, string>, serverLinks: ServerLinks, seenPlayers: JavaMap<UUID, PlayerInfo>, seenInsecureChatWarning: boolean)
     // private chatState: ChatComponent$State;
-    // private customReportDetails: { [key: string]: string };
+    // private customReportDetails: JavaMap<string, string>;
     // private enabledFeatures: FeatureFlagSet;
     // private levelLoadTracker: LevelLoadTracker;
     // private localGameProfile: GameProfile;
     // private postDisconnectScreen: Screen;
     // private receivedRegistries: RegistryAccess$Frozen;
     // private seenInsecureChatWarning: boolean;
-    // private seenPlayers: Map<UUID, PlayerInfo>;
+    // private seenPlayers: JavaMap<UUID, PlayerInfo>;
     // private serverBrand: string;
-    // private serverCookies: Map<Identifier, number[]>;
+    // private serverCookies: JavaMap<Identifier, number[]>;
     // private serverData: ServerData;
     // private serverLinks: ServerLinks;
     // private telemetryManager: WorldSessionTelemetryManager;
     chatState(): ChatComponent$State;
-    customReportDetails(): { [key: string]: string };
+    customReportDetails(): JavaMap<string, string>;
     enabledFeatures(): FeatureFlagSet;
     equals(o: Object | null): boolean;
     hashCode(): number;
@@ -38,9 +39,9 @@ export class CommonListenerCookie extends Record {
     postDisconnectScreen(): Screen;
     receivedRegistries(): RegistryAccess$Frozen;
     seenInsecureChatWarning(): boolean;
-    seenPlayers(): Map<UUID, PlayerInfo>;
+    seenPlayers(): JavaMap<UUID, PlayerInfo>;
     serverBrand(): string;
-    serverCookies(): Map<Identifier, number[]>;
+    serverCookies(): JavaMap<Identifier, number[]>;
     serverData(): ServerData;
     serverLinks(): ServerLinks;
     telemetryManager(): WorldSessionTelemetryManager;

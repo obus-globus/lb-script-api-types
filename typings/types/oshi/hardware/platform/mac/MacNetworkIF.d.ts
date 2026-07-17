@@ -1,10 +1,11 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { NetworkInterface } from '../../../../java/net/NetworkInterface.d.ts'
 import type { NetStat$IFdata } from '../../../../oshi/driver/mac/net/NetStat$IFdata.d.ts'
 import type { NetworkIF } from '../../../../oshi/hardware/NetworkIF.d.ts'
 import type { AbstractNetworkIF } from '../../../../oshi/hardware/common/AbstractNetworkIF.d.ts'
 export class MacNetworkIF extends AbstractNetworkIF {
     static getNetworks(paramarg0: boolean): NetworkIF[];
-    constructor(arg0: NetworkInterface, arg1: { [key: number]: NetStat$IFdata })
+    constructor(arg0: NetworkInterface, arg1: JavaMap<number, NetStat$IFdata>)
     readonly bytesRecv: number;
     readonly bytesSent: number;
     readonly collisions: number;
@@ -28,5 +29,5 @@ export class MacNetworkIF extends AbstractNetworkIF {
     getSpeed(): number;
     getTimeStamp(): number;
     updateAttributes(): boolean;
-    // private updateNetworkStats(arg0: { [key: number]: NetStat$IFdata }): boolean;
+    // private updateNetworkStats(arg0: JavaMap<number, NetStat$IFdata>): boolean;
 }

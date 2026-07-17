@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ByteBufAllocator } from '../../../../io/netty/buffer/ByteBufAllocator.d.ts'
 import type { AbstractReferenceCounted } from '../../../../io/netty/util/AbstractReferenceCounted.d.ts'
 import type { ReferenceCounted } from '../../../../io/netty/util/ReferenceCounted.d.ts'
@@ -7,7 +8,7 @@ export class SplitPacketHelper extends AbstractReferenceCounted {
     constructor(arg0: number)
     // private created: number;
     // private expectedLength: number;
-    // private packets: { [key: string]: any };
+    // private packets: JavaMap<any, any>;
     add(arg0: EncapsulatedPacket, arg1: ByteBufAllocator): EncapsulatedPacket;
     deallocate(): void;
     expired(): boolean;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -41,6 +42,6 @@ export class InWorldGameRulesScreen extends AbstractGameRulesScreen implements H
     // private initializeGameRuleValue<T extends unknown>(rule: GameRule<T>, valueStr: string): void;
     onClose(): void;
     onDone(): void;
-    onGameRuleValuesUpdated(values: Map<ResourceKey<GameRule<Object>>, string>): void;
+    onGameRuleValuesUpdated(values: JavaMap<ResourceKey<GameRule<Object>>, string>): void;
     onGamemasterPermissionChanged(hasGamemasterPermission: boolean): void;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Typed } from '../../../../../com/mojang/datafixers/Typed.d.ts'
 import type { Schema } from '../../../../../com/mojang/datafixers/schemas/Schema.d.ts'
 import type { Dynamic } from '../../../../../com/mojang/serialization/Dynamic.d.ts'
@@ -7,7 +8,7 @@ export class LeavesFix$LeavesSection extends LeavesFix$Section {
     constructor(section: Typed<Object>, inputSchema: Schema)
     // private leaveIds: (Object | null)[];
     // private logIds: (Object | null)[];
-    // private stateToIdMap: { [key: string]: any };
+    // private stateToIdMap: JavaMap<any, any>;
     // private getDistance(block: number): number;
     isLeaf(block: number): boolean;
     isLog(block: number): boolean;

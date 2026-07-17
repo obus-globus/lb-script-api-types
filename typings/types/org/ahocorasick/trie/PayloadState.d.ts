@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Payload } from '../../../org/ahocorasick/trie/Payload.d.ts'
 export class PayloadState<T extends unknown> extends Object {
@@ -6,7 +7,7 @@ export class PayloadState<T extends unknown> extends Object {
     readonly depth: number;
     // private emits: Payload<T>[];
     // private rootState: PayloadState<T>;
-    // private success: { [key: string]: PayloadState<T> };
+    // private success: JavaMap<string, PayloadState<T>>;
     addEmit(arg0: Payload<T>[]): void;
     addEmit(arg0: Payload<T>): void;
     addState(arg0: string): PayloadState<T>;

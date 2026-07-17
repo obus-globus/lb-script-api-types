@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../../java/io/OutputStream.d.ts'
 import type { Process } from '../../../../java/lang/Process.d.ts'
@@ -18,7 +19,7 @@ export class ExternalEmbedder extends Object implements Embedder {
     readonly commandAppendOperator: string;
     readonly commandAssignmentDelimeter: string;
     readonly commandAssignmentOperator: string;
-    readonly metadataCommandArguments: Map<Property, string[]>;
+    readonly metadataCommandArguments: JavaMap<Property, string[]>;
     readonly quoteAssignmentValues: boolean;
     readonly supportedEmbedTypes: MediaType[];
     // private tmp: TemporaryResources;
@@ -28,7 +29,7 @@ export class ExternalEmbedder extends Object implements Embedder {
     getCommandAssignmentDelimeter(): string;
     getCommandAssignmentOperator(): string;
     getCommandMetadataSegments(arg0: Metadata): string[];
-    getMetadataCommandArguments(): Map<Property, string[]>;
+    getMetadataCommandArguments(): JavaMap<Property, string[]>;
     getSupportedEmbedTypes(): MediaType[];
     getSupportedEmbedTypes(arg0: ParseContext): MediaType[];
     isQuoteAssignmentValues(): boolean;
@@ -40,7 +41,7 @@ export class ExternalEmbedder extends Object implements Embedder {
     setCommandAppendOperator(arg0: string): void;
     setCommandAssignmentDelimeter(arg0: string): void;
     setCommandAssignmentOperator(arg0: string): void;
-    setMetadataCommandArguments(arg0: Map<Property, string[]>): void;
+    setMetadataCommandArguments(arg0: JavaMap<Property, string[]>): void;
     setQuoteAssignmentValues(arg0: boolean): void;
     setSupportedEmbedTypes(arg0: MediaType[]): void;
 }

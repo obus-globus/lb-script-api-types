@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { TruffleLanguage } from '../../../../com/oracle/truffle/api/TruffleLanguage.d.ts'
 import type { TruffleLogger } from '../../../../com/oracle/truffle/api/TruffleLogger.d.ts'
 import type { Source } from '../../../../com/oracle/truffle/api/source/Source.d.ts'
@@ -33,8 +34,8 @@ export class EngineData extends Object {
     compileAOTOnCreate: boolean;
     compileImmediately: boolean;
     compileOnly: string;
-    readonly compilerOptions: { [key: string]: string };
-    // private engineLocals: Map<Class<Object>, Object>;
+    readonly compilerOptions: JavaMap<string, string>;
+    // private engineLocals: JavaMap<Class<Object>, Object>;
     engineOptions: OptionValues;
     firstTierOnly: boolean;
     id: number;
@@ -87,7 +88,7 @@ export class EngineData extends Object {
     finalizeStore(): Object;
     getCallTargets(): OptimizedCallTarget[];
     // private getCompileOnly(): Pair<string[], string[]>;
-    getCompilerOptions(): { [key: string]: string };
+    getCompilerOptions(): JavaMap<string, string>;
     getEngineLocal<T extends unknown>(symbol: Class<T>): T;
     getEngineLock(): Object;
     getEngineLogHandler(): Object;
@@ -111,6 +112,6 @@ export class EngineData extends Object {
     preinitializeContext(): void;
     putEngineLocal<T extends unknown>(symbol: Class<T>, value: T): void;
     restoreStore(finalizationResult: Object): void;
-    // private updateCompilerOptions(options: { [key: string]: string }): void;
+    // private updateCompilerOptions(options: JavaMap<string, string>): void;
     // private validateOptions(sandboxPolicy: SandboxPolicy): void;
 }

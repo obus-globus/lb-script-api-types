@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../java/lang/CharSequence.d.ts'
 import type { ServiceLoader } from '../../../../../org/apache/tika/config/ServiceLoader.d.ts'
@@ -23,6 +24,6 @@ export abstract class LanguageDetector extends Object {
     loadModels(arg0: string[]): LanguageDetector;
     reset(): void;
     setMixedLanguages(arg0: boolean): LanguageDetector;
-    setPriors(arg0: { [key: string]: number }): LanguageDetector;
+    setPriors(arg0: JavaMap<string, number>): LanguageDetector;
     setShortText(arg0: boolean): LanguageDetector;
 }

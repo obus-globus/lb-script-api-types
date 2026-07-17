@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../../../../java/io/InputStream.d.ts'
 import type { StringBuilder } from '../../../../../../../java/lang/StringBuilder.d.ts'
 import type { ParsePosition } from '../../../../../../../java/text/ParsePosition.d.ts'
@@ -29,7 +30,7 @@ export class UnicodeRegex extends Object implements Cloneable, StringTransform, 
     getBnfLineSeparator(): string;
     getBnfVariableInfix(): string;
     getSymbolTable(): SymbolTable;
-    // private getVariables(lines: string[]): { [key: string]: string };
+    // private getVariables(lines: string[]): JavaMap<string, string>;
     isFrozen(): boolean;
     // private processSet(regex: string, i: number, result: StringBuilder, temp: string[], pos: ParsePosition): number;
     setBnfCommentString(bnfCommentString: string): void;

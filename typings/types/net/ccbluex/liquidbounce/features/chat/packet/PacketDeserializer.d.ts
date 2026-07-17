@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { JsonDeserializationContext } from '../../../../../../com/google/gson/JsonDeserializationContext.d.ts'
 import type { JsonDeserializer } from '../../../../../../com/google/gson/JsonDeserializer.d.ts'
 import type { JsonElement } from '../../../../../../com/google/gson/JsonElement.d.ts'
@@ -14,7 +15,7 @@ import type { AxochatPacket } from '../../../../../../net/ccbluex/liquidbounce/f
  */
 export class PacketDeserializer extends Object implements JsonDeserializer<AxochatPacket> {
     constructor()
-    // private packetRegistry: { [key: string]: Class<AxochatPacket> };
+    // private packetRegistry: JavaMap<string, Class<AxochatPacket>>;
     /**
      * Gson invokes this call-back method during deserialization when it encounters a field of the
      * specified type.

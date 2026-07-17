@@ -1,8 +1,9 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object2ShortRBTreeMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Object2ShortRBTreeMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Object2ShortRBTreeMap$TreeIterator extends Object {
-    constructor(null_: { [key: string]: any })
-    constructor(null_: { [key: string]: any }, arg1: Object)
+    constructor(null_: JavaMap<any, any>)
+    constructor(null_: JavaMap<any, any>, arg1: Object)
     // private curr: Object2ShortRBTreeMap$Entry<K>;
     // private index: number;
     // private next: Object2ShortRBTreeMap$Entry<K>;

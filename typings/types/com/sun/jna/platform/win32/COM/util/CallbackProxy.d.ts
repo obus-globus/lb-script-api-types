@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Pointer } from '../../../../../../../com/sun/jna/Pointer.d.ts'
 import type { WString } from '../../../../../../../com/sun/jna/WString.d.ts'
 import type { DispatchListener } from '../../../../../../../com/sun/jna/platform/win32/COM/DispatchListener.d.ts'
@@ -29,7 +30,7 @@ export class CallbackProxy extends Object implements IDispatchCallback {
     // private comEventCallbackInterface: Class<Object>;
     // private comEventCallbackListener: IComEventCallbackListener;
     dispatchListener: DispatchListener;
-    // private dsipIdMap: Map<OaIdl$DISPID, Method>;
+    // private dsipIdMap: JavaMap<OaIdl$DISPID, Method>;
     // private factory: ObjectFactory;
     // private listenedToRiid: Guid$REFIID;
     AddRef(): number;
@@ -39,7 +40,7 @@ export class CallbackProxy extends Object implements IDispatchCallback {
     Invoke(arg0: OaIdl$DISPID, arg1: Guid$REFIID, arg2: WinDef$LCID, arg3: WinDef$WORD, arg4: OleAuto$DISPPARAMS$ByReference, arg5: Variant$VARIANT$ByReference, arg6: OaIdl$EXCEPINFO$ByReference, arg7: IntByReference): WinNT$HRESULT;
     QueryInterface(arg0: Guid$REFIID, arg1: PointerByReference): WinNT$HRESULT;
     Release(): number;
-    // private createDispIdMap(arg0: Class<Object>): Map<OaIdl$DISPID, Method>;
+    // private createDispIdMap(arg0: Class<Object>): JavaMap<OaIdl$DISPID, Method>;
     // private createRIID(arg0: Class<Object>): Guid$REFIID;
     // private fetchDispIdFromName(arg0: ComEventCallback): number;
     getPointer(): Pointer;

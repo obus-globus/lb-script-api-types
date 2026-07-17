@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { ConsumerTracking } from '../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/ConsumerTracking.d.ts'
 import type { Codec } from '../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/codec/Codec.d.ts'
 import type { Result } from '../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/model/Result.d.ts'
@@ -10,10 +11,10 @@ export interface DataConverter<T extends unknown> extends ConsumerTracking, Obje
     asIntArray(arg0: T): Result<number[]>;
     asList(arg0: T): Result<T[]>;
     asLongArray(arg0: T): Result<number[]>;
-    asMap(arg0: T): Result<Map<T, T>>;
+    asMap(arg0: T): Result<JavaMap<T, T>>;
     asNumber(arg0: T): Result<Number>;
     asString(arg0: T): Result<string>;
-    asStringTypeMap(arg0: T): Result<{ [key: string]: T }>;
+    asStringTypeMap(arg0: T): Result<JavaMap<string, T>>;
     convertFrom<N extends unknown>(arg0: DataConverter<N>, arg1: N): T;
     convertList<N extends unknown>(arg0: DataConverter<N>, arg1: T): N;
     convertMap<N extends unknown>(arg0: DataConverter<N>, arg1: T): N;
@@ -28,11 +29,11 @@ export interface DataConverter<T extends unknown> extends ConsumerTracking, Obje
     createList(arg0: T[]): T;
     createLong(arg0: number): T;
     createLongArray(arg0: number[]): T;
-    createMergedMap(arg0: Map<T, T>): Result<T>;
+    createMergedMap(arg0: JavaMap<T, T>): Result<T>;
     createNumber(arg0: Number): T;
     createShort(arg0: number): T;
     createString(arg0: string): T;
-    createUnsafeMap(arg0: Map<T, T>): T;
+    createUnsafeMap(arg0: JavaMap<T, T>): T;
     currentConsumer(): (param0: string) => void;
     empty(): T;
     emptyList(): T;
@@ -44,7 +45,7 @@ export interface DataConverter<T extends unknown> extends ConsumerTracking, Obje
     mergeList(arg0: T, arg1: T[]): Result<T>;
     mergeMap(arg0: T, arg1: T, arg2: T): Result<T>;
     mergeMap(arg0: T, ...arg1: T[]): Result<T>;
-    mergeMap(arg0: T, arg1: Map<T, T>): Result<T>;
+    mergeMap(arg0: T, arg1: JavaMap<T, T>): Result<T>;
     setCurrentConsumer(arg0: (param0: string) => void): void;
     toCodec(): Codec<T>;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { TextAttribute } from '../../../java/awt/font/TextAttribute.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class InputMethodHighlight extends Object {
@@ -9,13 +10,13 @@ export class InputMethodHighlight extends Object {
     static UNSELECTED_RAW_TEXT_HIGHLIGHT: InputMethodHighlight;
     constructor(arg0: boolean, arg1: number)
     constructor(arg0: boolean, arg1: number, arg2: number)
-    constructor(arg0: boolean, arg1: number, arg2: number, arg3: Map<TextAttribute, Object | null>)
+    constructor(arg0: boolean, arg1: number, arg2: number, arg3: JavaMap<TextAttribute, Object | null>)
     readonly selected: boolean;
     readonly state: number;
-    readonly style: Map<TextAttribute, Object | null>;
+    readonly style: JavaMap<TextAttribute, Object | null>;
     readonly variation: number;
     getState(): number;
-    getStyle(): Map<TextAttribute, Object | null>;
+    getStyle(): JavaMap<TextAttribute, Object | null>;
     getVariation(): number;
     isSelected(): boolean;
 }

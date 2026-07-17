@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { Stream } from '../../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -7,8 +8,8 @@ import type { RegistryAccess } from '../../../../../../net/minecraft/core/Regist
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { ResourceKey } from '../../../../../../net/minecraft/resources/ResourceKey.d.ts'
 export class DynamicRegistryViewImpl extends Object implements DynamicRegistryView {
-    constructor(arg0: Map<ResourceKey<(Object | null)[]>, (Object | null)[]>)
-    // private registries: Map<ResourceKey<(Object | null)[]>, (Object | null)[]>;
+    constructor(arg0: JavaMap<ResourceKey<(Object | null)[]>, (Object | null)[]>)
+    // private registries: JavaMap<ResourceKey<(Object | null)[]>, (Object | null)[]>;
     asRegistryAccess(): RegistryAccess;
     getOptional<T extends unknown>(arg0: ResourceKey<T[]>): Optional<T[]>;
     registerEntryAdded<T extends unknown>(arg0: ResourceKey<T[]>, arg1: (param0: number, param1: Identifier, param2: T) => void): void;

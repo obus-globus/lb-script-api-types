@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class State extends Object {
     constructor()
@@ -5,7 +6,7 @@ export class State extends Object {
     readonly depth: number;
     // private emits: string[];
     // private rootState: State;
-    // private success: { [key: string]: State };
+    // private success: JavaMap<string, State>;
     addEmit(arg0: string): void;
     addEmit(arg0: string[]): void;
     addState(arg0: string): State;

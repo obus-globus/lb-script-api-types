@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { LoaderOptions } from '../../../../../../../com/viaversion/viaversion/libs/snakeyaml/LoaderOptions.d.ts'
 import type { Construct } from '../../../../../../../com/viaversion/viaversion/libs/snakeyaml/constructor/Construct.d.ts'
 import type { Constructor } from '../../../../../../../com/viaversion/viaversion/libs/snakeyaml/constructor/Constructor.d.ts'
@@ -20,5 +21,5 @@ export class CompactConstructor extends Constructor {
     getCompactData(arg0: string): CompactData;
     getConstructor(arg0: Node): Construct;
     getSequencePropertyName(arg0: Class<Object>): string;
-    setProperties(arg0: Object, arg1: { [key: string]: Object }): void;
+    setProperties(arg0: Object, arg1: JavaMap<string, Object>): void;
 }

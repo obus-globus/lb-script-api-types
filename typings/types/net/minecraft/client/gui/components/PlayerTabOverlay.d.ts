@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { IPlayerTabOverlay } from '../../../../../com/viaversion/viafabricplus/visuals/injection/access/r1_7_tab_list_tyle/IPlayerTabOverlay.d.ts'
 import type { UUID } from '../../../../../java/util/UUID.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -16,7 +17,7 @@ export class PlayerTabOverlay extends Object implements IPlayerTabOverlay {
     constructor(minecraft: Minecraft, hud: Hud)
     footer: Component;
     header: Component;
-    // private healthStates: Map<UUID, PlayerTabOverlay$HealthState>;
+    // private healthStates: JavaMap<UUID, PlayerTabOverlay$HealthState>;
     // private hud: Hud;
     // private minecraft: Minecraft;
     // private viaFabricPlusVisuals$hideSkins: boolean;

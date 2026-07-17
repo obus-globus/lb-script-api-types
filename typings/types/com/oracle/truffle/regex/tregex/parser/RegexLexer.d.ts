@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { RegexSource } from '../../../../../../com/oracle/truffle/regex/RegexSource.d.ts'
 import type { RegexSyntaxException } from '../../../../../../com/oracle/truffle/regex/RegexSyntaxException.d.ts'
 import type { RegexSyntaxException$ErrorCode } from '../../../../../../com/oracle/truffle/regex/RegexSyntaxException$ErrorCode.d.ts'
@@ -29,7 +30,7 @@ export abstract class RegexLexer extends Object {
     readonly encoding: Encoding;
     // private identifiedAllGroups: boolean;
     // private nGroups: number;
-    namedCaptureGroups: { [key: string]: number[] };
+    namedCaptureGroups: JavaMap<string, number[]>;
     // private pattern: string;
     // private position: number;
     source: RegexSource;
@@ -83,7 +84,7 @@ export abstract class RegexLexer extends Object {
     getLastCharacterClassBeginPosition(): number;
     getLastTokenPosition(): number;
     getMaxBackReferenceDigits(): number;
-    getNamedCaptureGroups(): { [key: string]: number[] };
+    getNamedCaptureGroups(): JavaMap<string, number[]>;
     // private getNext(): Token;
     getNumberOfParsedGroups(): number;
     getPOSIXCharClass(name: string): (Object | null)[];

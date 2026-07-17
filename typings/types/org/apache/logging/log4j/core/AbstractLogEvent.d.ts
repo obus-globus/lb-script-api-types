@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { StackTraceElement } from '../../../../../java/lang/StackTraceElement.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
@@ -13,7 +14,7 @@ export abstract class AbstractLogEvent extends Object implements LogEvent {
     constructor()
     readonly instant: MutableInstant;
     getContextData(): ReadOnlyStringMap;
-    getContextMap(): { [key: string]: string };
+    getContextMap(): JavaMap<string, string>;
     getContextStack(): (Object | null)[];
     getInstant(): Instant;
     getLevel(): Level;

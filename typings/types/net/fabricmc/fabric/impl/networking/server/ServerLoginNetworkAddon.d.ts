@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { ChannelFutureListener } from '../../../../../../io/netty/channel/ChannelFutureListener.d.ts'
 import type { Future } from '../../../../../../java/util/concurrent/Future.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -19,7 +20,7 @@ import type { MinecraftServer } from '../../../../../../net/minecraft/server/Min
 import type { ServerLoginPacketListenerImpl } from '../../../../../../net/minecraft/server/network/ServerLoginPacketListenerImpl.d.ts'
 export class ServerLoginNetworkAddon extends AbstractNetworkAddon<(param0: MinecraftServer, param1: ServerLoginPacketListenerImpl, param2: boolean, param3: FriendlyByteBuf, param4: (param0: Future<Object>) => void, param5: PacketSender) => void> implements LoginPacketSender {
     constructor(arg0: ServerLoginPacketListenerImpl)
-    // private channels: { [key: number]: Identifier };
+    // private channels: JavaMap<number, Identifier>;
     // private connection: Connection;
     // private firstQueryTick: boolean;
     // private listener: ServerLoginPacketListenerImpl;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { SodiumModelData } from '../../../../../../net/caffeinemc/mods/sodium/client/services/SodiumModelData.d.ts'
@@ -37,8 +38,8 @@ export class LevelSlice extends Object implements FabricBlockGetter, BlockAndTin
     // private biomeColors: LevelColorCache;
     // private biomeSlice: LevelBiomeSlice;
     // private blockArrays: BlockState[][];
-    // private blockEntityArrays: { [key: string]: any }[];
-    // private blockEntityRenderDataArrays: { [key: string]: any }[];
+    // private blockEntityArrays: JavaMap<any, any>[];
+    // private blockEntityRenderDataArrays: JavaMap<any, any>[];
     // private level: ClientLevel;
     // private lightArrays: DataLayer[][];
     // private modelMapArrays: SodiumModelDataContainer[];

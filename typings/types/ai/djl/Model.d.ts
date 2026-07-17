@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Device } from '../../ai/djl/Device.d.ts'
 import type { Predictor } from '../../ai/djl/inference/Predictor.d.ts'
 import type { NDManager } from '../../ai/djl/ndarray/NDManager.d.ts'
@@ -28,15 +29,15 @@ export interface Model extends AutoCloseable, Object {
     getModelPath(): Path;
     getNDManager(): NDManager;
     getName(): string;
-    getProperties(): { [key: string]: string };
+    getProperties(): JavaMap<string, string>;
     getProperty(arg0: string): string;
     getProperty(arg0: string, arg1: string): string;
     intProperty(arg0: string, arg1: number): number;
     load(arg0: InputStream): void;
-    load(arg0: InputStream, arg1: { [key: string]: Object | null }): void;
+    load(arg0: InputStream, arg1: JavaMap<string, Object | null>): void;
     load(arg0: Path): void;
     load(arg0: Path, arg1: string): void;
-    load(arg0: Path, arg1: string, arg2: { [key: string]: Object | null }): void;
+    load(arg0: Path, arg1: string, arg2: JavaMap<string, Object | null>): void;
     longProperty(arg0: string, arg1: number): number;
     newPredictor<I extends unknown, O extends unknown>(arg0: Translator<I, O>): Predictor<I, O>;
     newPredictor<I extends unknown, O extends unknown>(arg0: Translator<I, O>, arg1: Device): Predictor<I, O>;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { FileMonitor$FileEvent } from '../../../../com/sun/jna/platform/FileMonitor$FileEvent.d.ts'
 import type { FileMonitor$FileListener } from '../../../../com/sun/jna/platform/FileMonitor$FileListener.d.ts'
 import type { File } from '../../../../java/io/File.d.ts'
@@ -17,7 +18,7 @@ export abstract class FileMonitor extends Object {
     static getInstance(): FileMonitor;
     constructor()
     // private listeners: FileMonitor$FileListener[];
-    // private watched: Map<File, number>;
+    // private watched: JavaMap<File, number>;
     addFileListener(arg0: FileMonitor$FileListener): void;
     addWatch(arg0: File): void;
     addWatch(arg0: File, arg1: number): void;

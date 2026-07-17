@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../net/minecraft/core/BlockPos.d.ts'
 import type { EnvironmentAttribute } from '../../../../net/minecraft/world/attribute/EnvironmentAttribute.d.ts'
@@ -11,8 +12,8 @@ import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class EnvironmentAttributeSystem extends Object implements EnvironmentAttributeReader {
     static EMPTY: EnvironmentAttributeReader;
     static builder(): EnvironmentAttributeSystem$Builder;
-    private constructor(layersByAttribute: Map<EnvironmentAttribute<Object>, EnvironmentAttributeLayer<Object>[]>)
-    // private attributeSamplers: Map<EnvironmentAttribute<Object>, EnvironmentAttributeSystem$ValueSampler<Object>>;
+    private constructor(layersByAttribute: JavaMap<EnvironmentAttribute<Object>, EnvironmentAttributeLayer<Object>[]>)
+    // private attributeSamplers: JavaMap<EnvironmentAttribute<Object>, EnvironmentAttributeSystem$ValueSampler<Object>>;
     // private bakeLayerSampler<Value extends unknown>(attribute: EnvironmentAttribute<Value>, untypedLayers: EnvironmentAttributeLayer<Object>[]): EnvironmentAttributeSystem$ValueSampler<Value>;
     getConstantBaseValue<Value extends unknown>(attribute: EnvironmentAttribute<Value>): Value;
     getDimensionValue<Value extends unknown>(attribute: EnvironmentAttribute<Value>): Value;

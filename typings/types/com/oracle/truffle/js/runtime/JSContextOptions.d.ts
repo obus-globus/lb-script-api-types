@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { JSContextOptions$UnhandledRejectionsTrackingMode } from '../../../../../com/oracle/truffle/js/runtime/JSContextOptions$UnhandledRejectionsTrackingMode.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { OptionKey } from '../../../../../org/graalvm/options/OptionKey.d.ts'
@@ -35,7 +36,7 @@ export class JSContextOptions extends Object {
     static CLASS_FIELDS: OptionKey<boolean>;
     static CLASS_FIELDS_ES_VERSION: number;
     static CLASS_FIELDS_NAME: string;
-    static COMMONJS_CORE_MODULES_REPLACEMENTS: OptionKey<{ [key: string]: string }>;
+    static COMMONJS_CORE_MODULES_REPLACEMENTS: OptionKey<JavaMap<string, string>>;
     static COMMONJS_CORE_MODULES_REPLACEMENTS_NAME: string;
     static COMMONJS_REQUIRE: OptionKey<boolean>;
     static COMMONJS_REQUIRE_CWD: OptionKey<string>;
@@ -323,7 +324,7 @@ export class JSContextOptions extends Object {
     // private cacheOptions(sandboxPolicy: SandboxPolicy): void;
     canAgentBlock(): boolean;
     getCharset(): string;
-    getCommonJSRequireBuiltins(): { [key: string]: string };
+    getCommonJSRequireBuiltins(): JavaMap<string, string>;
     getDebugPropertyName(): string;
     getEcmaScriptVersion(): number;
     getFrequencyBasedPropertyCacheLimit(): number;

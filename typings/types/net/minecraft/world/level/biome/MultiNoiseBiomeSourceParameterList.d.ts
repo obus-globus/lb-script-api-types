@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../../net/minecraft/core/Holder.d.ts'
@@ -9,7 +10,7 @@ import type { MultiNoiseBiomeSourceParameterList$Preset } from '../../../../../n
 export class MultiNoiseBiomeSourceParameterList extends Object {
     static CODEC: Codec<Holder<MultiNoiseBiomeSourceParameterList>>;
     static DIRECT_CODEC: Codec<MultiNoiseBiomeSourceParameterList>;
-    static knownPresets(): Map<MultiNoiseBiomeSourceParameterList$Preset, Climate$ParameterList<ResourceKey<Biome>>>;
+    static knownPresets(): JavaMap<MultiNoiseBiomeSourceParameterList$Preset, Climate$ParameterList<ResourceKey<Biome>>>;
     constructor(preset: MultiNoiseBiomeSourceParameterList$Preset, biomes: HolderGetter<Biome>)
     // private parameters: Climate$ParameterList<Holder<Biome>>;
     // private preset: MultiNoiseBiomeSourceParameterList$Preset;

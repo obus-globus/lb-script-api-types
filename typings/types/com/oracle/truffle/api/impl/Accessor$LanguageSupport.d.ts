@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { CallTarget } from '../../../../../com/oracle/truffle/api/CallTarget.d.ts'
 import type { InstrumentInfo } from '../../../../../com/oracle/truffle/api/InstrumentInfo.d.ts'
 import type { InternalResource } from '../../../../../com/oracle/truffle/api/InternalResource.d.ts'
@@ -37,9 +38,9 @@ export abstract class Accessor$LanguageSupport extends Accessor$Support {
     addStackFrameInfo(callNode: Node, root: RootCallTarget, e: Throwable, frame: Frame): void;
     areOptionsCompatible(language: TruffleLanguage<Object>, firstContextOptions: OptionValues, newContextOptions: OptionValues): boolean;
     closeEngineLoggers(loggers: Object): void;
-    configureLoggers(polyglotContext: Object, logLevels: { [key: string]: Level }, ...loggers: Object[]): void;
+    configureLoggers(polyglotContext: Object, logLevels: JavaMap<string, Level>, ...loggers: Object[]): void;
     createEngineLoggers(spi: Object): Object;
-    createEnv(polyglotLanguageContext: Object, language: TruffleLanguage<Object>, stdOut: OutputStream, stdErr: OutputStream, stdIn: InputStream, config: { [key: string]: Object }, options: OptionValues, applicationArguments: string[]): TruffleLanguage$Env;
+    createEnv(polyglotLanguageContext: Object, language: TruffleLanguage<Object>, stdOut: OutputStream, stdErr: OutputStream, stdIn: InputStream, config: JavaMap<string, Object>, options: OptionValues, applicationArguments: string[]): TruffleLanguage$Env;
     createEnvContext(localEnv: TruffleLanguage$Env, servicesCollector: Object[]): Object;
     createFileSystemContext(engineObject: Object, fileSystem: FileSystem): Object;
     createInstrument(polyglotInstrument: Object, id: string, name: string, version: string): InstrumentInfo;
@@ -97,7 +98,7 @@ export abstract class Accessor$LanguageSupport extends Accessor$Support {
     notifyTLActionBlocked(action: ThreadLocalAction, access: ThreadLocalAction$Access, blocked: boolean): void;
     parse(env: TruffleLanguage$Env, code: Source, optionValues: OptionValues, context: Node, ...argumentNames: string[]): CallTarget;
     parseInline(env: TruffleLanguage$Env, code: Source, optionValues: OptionValues, context: Node, frame: MaterializedFrame): ExecutableNode;
-    patchEnvContext(env: TruffleLanguage$Env, stdOut: OutputStream, stdErr: OutputStream, stdIn: InputStream, config: { [key: string]: Object }, options: OptionValues, applicationArguments: string[]): TruffleLanguage$Env;
+    patchEnvContext(env: TruffleLanguage$Env, stdOut: OutputStream, stdErr: OutputStream, stdIn: InputStream, config: JavaMap<string, Object>, options: OptionValues, applicationArguments: string[]): TruffleLanguage$Env;
     performTLAction(action: ThreadLocalAction, access: ThreadLocalAction$Access): void;
     postInitEnv(env: TruffleLanguage$Env): void;
 }

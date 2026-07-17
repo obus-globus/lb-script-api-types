@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { JsonReader } from '../../../../com/azure/json/JsonReader.d.ts'
 import type { JsonWriter } from '../../../../com/azure/json/JsonWriter.d.ts'
 import type { JsonElement } from '../../../../com/azure/json/models/JsonElement.d.ts'
@@ -7,7 +8,7 @@ import type { Number } from '../../../../java/lang/Number.d.ts'
 export class JsonObject extends JsonElement {
     static fromJson(paramarg0: JsonReader): JsonObject;
     constructor()
-    // private properties: { [key: string]: JsonElement };
+    // private properties: JavaMap<string, JsonElement>;
     getProperty(arg0: string): JsonElement;
     hasProperty(arg0: string): boolean;
     isObject(): boolean;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { JsonElement } from '../../../com/google/gson/JsonElement.d.ts'
 import type { Pair } from '../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { DataResult } from '../../../com/mojang/serialization/DataResult.d.ts'
@@ -35,7 +36,7 @@ export class JsonOps extends Object implements DynamicOps<JsonElement> {
     createList(arg0: Stream<JsonElement>): JsonElement;
     createLong(arg0: number): JsonElement;
     createLongList(arg0: LongStream): JsonElement;
-    createMap(arg0: Map<JsonElement, JsonElement>): JsonElement;
+    createMap(arg0: JavaMap<JsonElement, JsonElement>): JsonElement;
     createMap(arg0: Stream<Pair<JsonElement, JsonElement>>): JsonElement;
     createNumeric(arg0: Number): JsonElement;
     createShort(arg0: number): JsonElement;
@@ -62,7 +63,7 @@ export class JsonOps extends Object implements DynamicOps<JsonElement> {
     mergeToList(arg0: JsonElement, arg1: JsonElement[]): DataResult<JsonElement>;
     mergeToList(arg0: JsonElement, arg1: JsonElement): DataResult<JsonElement>;
     mergeToMap(arg0: JsonElement, arg1: MapLike<JsonElement>): DataResult<JsonElement>;
-    mergeToMap(arg0: JsonElement, arg1: Map<JsonElement, JsonElement>): DataResult<JsonElement>;
+    mergeToMap(arg0: JsonElement, arg1: JavaMap<JsonElement, JsonElement>): DataResult<JsonElement>;
     mergeToMap(arg0: JsonElement, arg1: JsonElement, arg2: JsonElement): DataResult<JsonElement>;
     mergeToPrimitive(arg0: JsonElement, arg1: JsonElement): DataResult<JsonElement>;
     remove(arg0: JsonElement, arg1: string): JsonElement;

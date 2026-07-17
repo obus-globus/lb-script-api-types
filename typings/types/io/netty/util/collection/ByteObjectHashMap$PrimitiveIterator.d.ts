@@ -1,9 +1,10 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ByteObjectMap$PrimitiveEntry } from '../../../../io/netty/util/collection/ByteObjectMap$PrimitiveEntry.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class ByteObjectHashMap$PrimitiveIterator extends Object implements ByteObjectMap$PrimitiveEntry<V>, Iterator<ByteObjectMap$PrimitiveEntry<V>> {
-    private constructor(null_: { [key: string]: any })
+    private constructor(null_: JavaMap<any, any>)
     // private entryIndex: number;
     // private nextIndex: number;
     // private prevIndex: number;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { Runnable } from '../../../../../../java/lang/Runnable.d.ts'
@@ -16,7 +17,7 @@ export class LanguageServer$DelegateServer extends Object implements Runnable {
     readonly languageId: string;
     // private logger: LanguageServer$LoggerProxy;
     // private out: OutputStream;
-    // private receivedMessages: Map<Object, JSONObject>;
+    // private receivedMessages: JavaMap<Object, JSONObject>;
     // private serverOutput: OutputStream;
     // private socket: Socket;
     // private truffleAdapter: TruffleAdapter;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { KClass } from '../../../kotlin/reflect/KClass.d.ts'
 import type { DeserializationStrategy } from '../../../kotlinx/serialization/DeserializationStrategy.d.ts'
@@ -8,12 +9,12 @@ import type { SerializersModule } from '../../../kotlinx/serialization/modules/S
 import type { SerializersModuleCollector } from '../../../kotlinx/serialization/modules/SerializersModuleCollector.d.ts'
 export class SerializersModuleBuilder extends Object implements SerializersModuleCollector {
     constructor()
-    // private class2ContextualProvider: Map<KClass<Object>, ContextualProvider>;
+    // private class2ContextualProvider: JavaMap<KClass<Object>, ContextualProvider>;
     // private hasInterfaceContextualSerializers: boolean;
-    // private polyBase2DefaultDeserializerProvider: Map<KClass<Object>, (param0: string | null) => DeserializationStrategy<Object> | null>;
-    // private polyBase2DefaultSerializerProvider: Map<KClass<Object>, (param0: Object | null) => SerializationStrategy<Object> | null>;
-    // private polyBase2NamedSerializers: Map<KClass<Object>, { [key: string]: KSerializer<Object> }>;
-    // private polyBase2Serializers: Map<KClass<Object>, Map<KClass<Object>, KSerializer<Object>>>;
+    // private polyBase2DefaultDeserializerProvider: JavaMap<KClass<Object>, (param0: string | null) => DeserializationStrategy<Object> | null>;
+    // private polyBase2DefaultSerializerProvider: JavaMap<KClass<Object>, (param0: Object | null) => SerializationStrategy<Object> | null>;
+    // private polyBase2NamedSerializers: JavaMap<KClass<Object>, JavaMap<string, KSerializer<Object>>>;
+    // private polyBase2Serializers: JavaMap<KClass<Object>, JavaMap<KClass<Object>, KSerializer<Object>>>;
     build(): SerializersModule;
     contextual<T extends unknown>(kClass: KClass<T>, provider: (param0: KSerializer<Object>[]) => KSerializer<Object>): void;
     contextual<T extends unknown>(kClass: KClass<T>, serializer: KSerializer<T>): void;

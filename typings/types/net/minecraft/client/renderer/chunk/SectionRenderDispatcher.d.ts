@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { StagingBuffer } from '../../../../../com/mojang/blaze3d/vertex/StagingBuffer.d.ts'
 import type { AtomicReference } from '../../../../../java/util/concurrent/atomic/AtomicReference.d.ts'
 import type { ReentrantLock } from '../../../../../java/util/concurrent/locks/ReentrantLock.d.ts'
@@ -21,7 +22,7 @@ export class SectionRenderDispatcher extends Object {
     constructor(executor: TracingExecutor, renderBuffers: RenderBuffers, sectionCompiler: SectionCompiler, onSectionMeshUpdate: (param0: SectionRenderDispatcher$RenderSection) => void)
     // private bufferPool: SectionBufferBuilderPool;
     readonly cameraPosition: AtomicReference<Vec3>;
-    // private chunkUberBuffers: Map<ChunkSectionLayer, SectionRenderDispatcher$SectionUberBuffers>;
+    // private chunkUberBuffers: JavaMap<ChunkSectionLayer, SectionRenderDispatcher$SectionUberBuffers>;
     // private closed: boolean;
     // private copyLock: ReentrantLock;
     // private executor: TracingExecutor;

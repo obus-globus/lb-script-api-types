@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { ObjectInputStream } from '../../../../../../../java/io/ObjectInputStream.d.ts'
 import type { Serializable } from '../../../../../../../java/io/Serializable.d.ts'
 import type { WeakReference } from '../../../../../../../java/lang/ref/WeakReference.d.ts'
@@ -18,8 +19,8 @@ export class TimeZoneGenericNames extends Object implements Serializable, Freeza
     static getInstance(paramlocale: ULocale): TimeZoneGenericNames;
     constructor(locale: ULocale, tznames: TimeZoneNames)
     // private _frozen: boolean;
-    // private _genericLocationNamesMap: { [key: string]: string };
-    // private _genericPartialLocationNamesMap: { [key: string]: string };
+    // private _genericLocationNamesMap: JavaMap<string, string>;
+    // private _genericPartialLocationNamesMap: JavaMap<string, string>;
     // private _gnamesTrie: TextTrieMap<TimeZoneGenericNames$NameInfo>;
     // private _gnamesTrieFullyLoaded: boolean;
     // private _locale: ULocale;

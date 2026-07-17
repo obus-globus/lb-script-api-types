@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../../net/minecraft/core/Holder.d.ts'
@@ -10,10 +11,10 @@ import type { ClockNetworkState } from '../../../../../net/minecraft/world/clock
 import type { WorldClock } from '../../../../../net/minecraft/world/clock/WorldClock.d.ts'
 export class ClientboundSetTimePacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundSetTimePacket>;
-    constructor(gameTime: number, clockUpdates: Map<Holder<WorldClock>, ClockNetworkState>)
-    // private clockUpdates: Map<Holder<WorldClock>, ClockNetworkState>;
+    constructor(gameTime: number, clockUpdates: JavaMap<Holder<WorldClock>, ClockNetworkState>)
+    // private clockUpdates: JavaMap<Holder<WorldClock>, ClockNetworkState>;
     // private gameTime: number;
-    clockUpdates(): Map<Holder<WorldClock>, ClockNetworkState>;
+    clockUpdates(): JavaMap<Holder<WorldClock>, ClockNetworkState>;
     equals(o: Object | null): boolean;
     gameTime(): number;
     handle(listener: ClientGamePacketListener): void;

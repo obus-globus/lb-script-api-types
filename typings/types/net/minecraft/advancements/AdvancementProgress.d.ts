@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Codec } from '../../../com/mojang/serialization/Codec.d.ts'
 import type { Instant } from '../../../java/time/Instant.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
@@ -10,7 +11,7 @@ export class AdvancementProgress extends Object implements Comparable<Advancemen
     static CODEC: Codec<AdvancementProgress>;
     static fromNetwork(paraminput: FriendlyByteBuf): AdvancementProgress;
     constructor()
-    // private criteria: { [key: string]: CriterionProgress };
+    // private criteria: JavaMap<string, CriterionProgress>;
     // private requirements: AdvancementRequirements;
     compareTo(o: AdvancementProgress): number;
     // private countCompletedRequirements(): number;

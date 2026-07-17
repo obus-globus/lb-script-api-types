@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { DataOutputStream } from '../../../../../java/io/DataOutputStream.d.ts'
 import type { OutputStream } from '../../../../../java/io/OutputStream.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
@@ -15,9 +16,9 @@ export class HeapDump extends Object {
     constructor(out: OutputStream, builder: HeapDump$Builder)
     // private builder: HeapDump$Builder;
     // private heap: DataOutputStream;
-    // private heapStrings: { [key: string]: HeapDump$ObjectInstance };
-    // private primitiveClasses: Map<Class<Object>, HeapDump$ClassInstance>;
-    // private primitives: Map<Object, HeapDump$ObjectInstance>;
+    // private heapStrings: JavaMap<string, HeapDump$ObjectInstance>;
+    // private primitiveClasses: JavaMap<Class<Object>, HeapDump$ClassInstance>;
+    // private primitives: JavaMap<Object, HeapDump$ObjectInstance>;
     // private typeObject: HeapDump$ClassInstance;
     // private typeObjectArray: HeapDump$ClassInstance;
     // private typeString: HeapDump$ClassInstance;

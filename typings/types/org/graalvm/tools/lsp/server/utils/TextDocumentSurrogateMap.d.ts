@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { TruffleInstrument$Env } from '../../../../../../com/oracle/truffle/api/instrumentation/TruffleInstrument$Env.d.ts'
 import type { LanguageInfo } from '../../../../../../com/oracle/truffle/api/nodes/LanguageInfo.d.ts'
 import type { Source } from '../../../../../../com/oracle/truffle/api/source/Source.d.ts'
@@ -8,7 +9,7 @@ import type { TextDocumentSurrogate } from '../../../../../../org/graalvm/tools/
 export class TextDocumentSurrogateMap extends Object {
     constructor(env: TruffleInstrument$Env)
     // private env: TruffleInstrument$Env;
-    // private uri2TextDocumentSurrogate: Map<URI, TextDocumentSurrogate>;
+    // private uri2TextDocumentSurrogate: JavaMap<URI, TextDocumentSurrogate>;
     containsSurrogate(uri: URI): boolean;
     get(uri: URI): TextDocumentSurrogate;
     getOrCreateSurrogate(uri: URI, languageInfo: LanguageInfo): TextDocumentSurrogate;

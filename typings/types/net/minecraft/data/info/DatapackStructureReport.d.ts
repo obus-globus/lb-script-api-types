@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { CompletableFuture } from '../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { ToIntFunction } from '../../../../java/util/function/ToIntFunction.d.ts'
@@ -15,7 +16,7 @@ export class DatapackStructureReport extends Object implements DataProvider {
     constructor(output: PackOutput)
     // private output: PackOutput;
     getName(): string;
-    // private listRegistries(): Map<ResourceKey<(Object | null)[]>, DatapackStructureReport$Entry>;
-    // private putIfNotPresent(output: Map<ResourceKey<(Object | null)[]>, DatapackStructureReport$Entry>, key: ResourceKey<(Object | null)[]>, entry: DatapackStructureReport$Entry): void;
+    // private listRegistries(): JavaMap<ResourceKey<(Object | null)[]>, DatapackStructureReport$Entry>;
+    // private putIfNotPresent(output: JavaMap<ResourceKey<(Object | null)[]>, DatapackStructureReport$Entry>, key: ResourceKey<(Object | null)[]>, entry: DatapackStructureReport$Entry): void;
     run(cache: CachedOutput): CompletableFuture<Object>;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { ClassLoader } from '../../../java/lang/ClassLoader.d.ts'
 import type { Module } from '../../../java/lang/Module.d.ts'
@@ -19,7 +20,7 @@ export interface Instrumentation extends Object{
     isRedefineClassesSupported(): boolean;
     isRetransformClassesSupported(): boolean;
     redefineClasses(...arg0: ClassDefinition[]): void;
-    redefineModule(arg0: Module, arg1: Module[], arg2: { [key: string]: Module[] }, arg3: { [key: string]: Module[] }, arg4: Class<Object>[], arg5: Map<Class<Object>, Class<Object>[]>): void;
+    redefineModule(arg0: Module, arg1: Module[], arg2: JavaMap<string, Module[]>, arg3: JavaMap<string, Module[]>, arg4: Class<Object>[], arg5: JavaMap<Class<Object>, Class<Object>[]>): void;
     removeTransformer(arg0: ClassFileTransformer): boolean;
     retransformClasses(...arg0: Class<Object>[]): void;
     setNativeMethodPrefix(arg0: ClassFileTransformer, arg1: string): void;

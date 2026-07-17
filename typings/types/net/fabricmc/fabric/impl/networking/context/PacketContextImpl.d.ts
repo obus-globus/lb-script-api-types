@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { GameProfile } from '../../../../../../com/mojang/authlib/GameProfile.d.ts'
 import type { ScopedValue } from '../../../../../../java/lang/ScopedValue.d.ts'
 import type { ReadWriteLock } from '../../../../../../java/util/concurrent/locks/ReadWriteLock.d.ts'
@@ -15,7 +16,7 @@ export class PacketContextImpl extends Object implements PacketContext {
     static SERVER_INSTANCE: PacketContext$Key<MinecraftServer>;
     static VALUE: ScopedValue<PacketContext>;
     constructor(arg0: Connection)
-    // private contextMap: Map<PacketContext$Key<Object>, Object>;
+    // private contextMap: JavaMap<PacketContext$Key<Object>, Object>;
     // private lock: ReadWriteLock;
     get<T extends unknown>(arg0: PacketContext$ReadKey<T>): T;
     orElse<T extends unknown>(arg0: PacketContext$ReadKey<T>, arg1: T): T;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { StringReader } from '../../../../../../java/io/StringReader.d.ts'
@@ -38,7 +39,7 @@ export class NewAttributeBands extends BandSet {
     // private readNextUnionCase(arg0: StringReader): NewAttributeBands$UnionCase;
     // private readNumber(arg0: StringReader): number;
     // private readUpToMatchingBracket(arg0: StringReader): string;
-    renumberBci(arg0: IntList, arg1: Map<Label, number>): void;
+    renumberBci(arg0: IntList, arg1: JavaMap<Label, number>): void;
     // private resolveCalls(): void;
     // private resolveCallsForElement(arg0: number, arg1: NewAttributeBands$Callable, arg2: NewAttributeBands$LayoutElement): void;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
@@ -15,6 +16,6 @@ export abstract class CurrencyDisplayNames extends Object {
     getSymbol(isoCode: string): string;
     getULocale(): ULocale;
     getVariantSymbol(isoCode: string): string;
-    nameMap(): { [key: string]: string };
-    symbolMap(): { [key: string]: string };
+    nameMap(): JavaMap<string, string>;
+    symbolMap(): JavaMap<string, string>;
 }

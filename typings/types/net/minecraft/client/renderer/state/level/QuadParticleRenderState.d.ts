@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { VertexConsumer } from '../../../../../../com/mojang/blaze3d/vertex/VertexConsumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { VertexBufferWriter } from '../../../../../../net/caffeinemc/mods/sodium/api/vertex/buffer/VertexBufferWriter.d.ts'
@@ -10,7 +11,7 @@ import type { Quaternionf } from '../../../../../../org/joml/Quaternionf.d.ts'
 export class QuadParticleRenderState extends Object implements ParticleGroupRenderState {
     constructor()
     // private particleCount: number;
-    // private particles: Map<SingleQuadParticle$Layer, QuadParticleRenderState$Storage>;
+    // private particles: JavaMap<SingleQuadParticle$Layer, QuadParticleRenderState$Storage>;
     add(layer: SingleQuadParticle$Layer, x: number, y: number, z: number, xRot: number, yRot: number, zRot: number, wRot: number, scale: number, u0: number, u1: number, v0: number, v1: number, color: number, lightCoords: number): void;
     buildLayer(layer: SingleQuadParticle$Layer, bufferBuilder: VertexConsumer): void;
     clear(): void;

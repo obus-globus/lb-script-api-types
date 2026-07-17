@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { EventHook } from '../../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { EventListener } from '../../../../../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
@@ -12,8 +13,8 @@ import type { Component } from '../../../../../../../../../net/minecraft/network
  */
 export abstract class CrystalPostAttackTracker extends Object implements EventListener {
     constructor()
-    // private attackedIds: { [key: string]: any };
-    // private /*not mapped: */ getAttackedIds(): { [key: string]: any };
+    // private attackedIds: JavaMap<any, any>;
+    // private /*not mapped: */ getAttackedIds(): JavaMap<any, any>;
     readonly debugDisplayName: Component;
     // private explodeListener: EventHook<PacketEvent>;
     // private repeatable: EventHook<GameTickEvent>;

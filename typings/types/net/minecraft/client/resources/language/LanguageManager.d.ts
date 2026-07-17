@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
@@ -14,11 +15,11 @@ export class LanguageManager extends Object implements FabricResourceReloader, R
     constructor(languageCode: string, reloadCallback: (param0: ClientLanguage) => void)
     // private currentCode: string;
     // private fabric$id: Identifier;
-    readonly languages: { [key: string]: LanguageInfo };
+    readonly languages: JavaMap<string, LanguageInfo>;
     // private reloadCallback: (param0: ClientLanguage) => void;
     fabric$getId(): Identifier;
     getLanguage(code: string): LanguageInfo;
-    getLanguages(): { [key: string]: LanguageInfo };
+    getLanguages(): JavaMap<string, LanguageInfo>;
     getName(): string;
     getSelected(): string;
     onResourceManagerReload(resourceManager: ResourceManager): void;

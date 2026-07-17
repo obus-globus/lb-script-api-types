@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { UUID } from '../../../../../java/util/UUID.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -20,8 +21,8 @@ export class CustomPermissionContext extends Record implements MutablePermission
     static POSITION: PermissionContext$Key<Vec3>;
     static SERVER: PermissionContext$Key<MinecraftServer>;
     constructor(arg0: UUID, arg1: PermissionContext$Type, arg2: PermissionLevel)
-    constructor(uuid: UUID, type: PermissionContext$Type, permissionLevel: PermissionLevel, overrides: Map<PermissionContext$Key<Object>, Object>)
-    // private overrides: Map<PermissionContext$Key<Object>, Object>;
+    constructor(uuid: UUID, type: PermissionContext$Type, permissionLevel: PermissionLevel, overrides: JavaMap<PermissionContext$Key<Object>, Object>)
+    // private overrides: JavaMap<PermissionContext$Key<Object>, Object>;
     // private permissionLevel: PermissionLevel;
     // private type: PermissionContext$Type;
     // private uuid: UUID;
@@ -29,7 +30,7 @@ export class CustomPermissionContext extends Record implements MutablePermission
     get<T extends unknown>(arg0: PermissionContext$Key<T>): T;
     hashCode(): number;
     keys(): PermissionContext$Key<Object>[];
-    overrides(): Map<PermissionContext$Key<Object>, Object>;
+    overrides(): JavaMap<PermissionContext$Key<Object>, Object>;
     permissionLevel(): PermissionLevel;
     set<T extends unknown>(arg0: PermissionContext$Key<T>, arg1: T): MutablePermissionContext;
     toString(): string;

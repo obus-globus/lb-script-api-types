@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { BiConsumer } from '../../../../java/util/function/BiConsumer.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -29,7 +30,7 @@ export abstract class BlockLootSubProvider extends Object implements FabricBlock
     constructor(explosionResistant: Item[], enabledFeatures: FeatureFlagSet, registries: HolderLookup$Provider)
     // private enabledFeatures: FeatureFlagSet;
     // private explosionResistant: Item[];
-    map: Map<ResourceKey<LootTable>, LootTable$Builder>;
+    map: JavaMap<ResourceKey<LootTable>, LootTable$Builder>;
     readonly registries: HolderLookup$Provider;
     add(block: Block, builder: (param0: Block) => LootTable$Builder): void;
     add(block: Block, builder: LootTable$Builder): void;

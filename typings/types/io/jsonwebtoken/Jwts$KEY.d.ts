@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { KeyAlgorithm } from '../../io/jsonwebtoken/security/KeyAlgorithm.d.ts'
 import type { Password } from '../../io/jsonwebtoken/security/Password.d.ts'
 import type { SecretKeyAlgorithm } from '../../io/jsonwebtoken/security/SecretKeyAlgorithm.d.ts'
@@ -23,6 +24,6 @@ export class Jwts$KEY extends Object {
     static RSA1_5: KeyAlgorithm<PublicKey, PrivateKey>;
     static RSA_OAEP: KeyAlgorithm<PublicKey, PrivateKey>;
     static RSA_OAEP_256: KeyAlgorithm<PublicKey, PrivateKey>;
-    static get(): { [key: string]: KeyAlgorithm<any, any> };
+    static get(): JavaMap<string, KeyAlgorithm<any, any>>;
     private constructor()
 }

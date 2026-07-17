@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { AbstractParser } from '../../../../com/oracle/js/parser/AbstractParser.d.ts'
 import type { CoverExpressionError } from '../../../../com/oracle/js/parser/CoverExpressionError.d.ts'
 import type { ErrorManager } from '../../../../com/oracle/js/parser/ErrorManager.d.ts'
@@ -77,7 +78,7 @@ export class Parser extends AbstractParser {
     // private breakStatement(yield_: boolean, await_: boolean): void;
     // private caseStatementList(yield_: boolean, await_: boolean): Statement[];
     // private catchBody(yield_: boolean, await_: boolean, catchToken: number, catchLine: number, exception: IdentNode, pattern: Expression, ifExpression: Expression): CatchNode;
-    // private checkES5PropertyDefinition(property: PropertyNode, map: { [key: string]: PropertyNode }): void;
+    // private checkES5PropertyDefinition(property: PropertyNode, map: JavaMap<string, PropertyNode>): void;
     // private checkPropertyRedefinition(property: PropertyNode, value: Expression, getter: FunctionNode, setter: FunctionNode, prevValue: Expression, prevGetter: FunctionNode, prevSetter: FunctionNode): void;
     // private checkValidLValue(init: Expression, contextString: string): boolean;
     // private classDeclaration(yield_: boolean, await_: boolean, defaultExport: boolean): ClassNode;
@@ -291,8 +292,8 @@ export class Parser extends AbstractParser {
     // private verifyStrictIdent(ident: IdentNode, contextString: string, bindingIdentifier: boolean): void;
     // private verifyUseStrict(function_: ParserContextFunctionNode, parseFlags: number): void;
     // private whileStatement(yield_: boolean, await_: boolean): void;
-    // private withClause(): Map<TruffleString, TruffleString>;
-    // private withEntries(): Map<TruffleString, TruffleString>;
+    // private withClause(): JavaMap<TruffleString, TruffleString>;
+    // private withEntries(): JavaMap<TruffleString, TruffleString>;
     // private withStatement(yield_: boolean, await_: boolean): void;
     // private yieldExpression(in_: boolean, await_: boolean): Expression;
 }

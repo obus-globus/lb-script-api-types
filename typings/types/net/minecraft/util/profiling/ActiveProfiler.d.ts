@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Pair } from '../../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { BooleanSupplier } from '../../../../java/util/function/BooleanSupplier.d.ts'
 import type { IntSupplier } from '../../../../java/util/function/IntSupplier.d.ts'
@@ -13,7 +14,7 @@ export class ActiveProfiler extends Object implements ProfileCollector {
     constructor(getRealTime: () => number, getTickTime: () => number, suppressWarnings: () => boolean)
     readonly chartedPaths: Pair<string, MetricCategory>[];
     // private currentEntry: ActiveProfiler$PathEntry;
-    // private entries: { [key: string]: ActiveProfiler$PathEntry };
+    // private entries: JavaMap<string, ActiveProfiler$PathEntry>;
     // private getRealTime: () => number;
     // private getTickTime: () => number;
     // private path: string;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { SerialDescriptor } from '../../../../kotlinx/serialization/descriptors/SerialDescriptor.d.ts'
 import type { CompositeDecoder } from '../../../../kotlinx/serialization/encoding/CompositeDecoder.d.ts'
 import type { CompositeDecoder$Companion } from '../../../../kotlinx/serialization/encoding/CompositeDecoder$Companion.d.ts'
@@ -8,11 +9,11 @@ export class JsonTreeDecoder extends AbstractJsonTreeDecoder {
     static Companion: CompositeDecoder$Companion;
     static DECODE_DONE: number;
     static UNKNOWN_NAME: number;
-    constructor(json: Json, value: { [key: string]: any }, polymorphicDiscriminator: string | null, polyDescriptor: SerialDescriptor | null)
+    constructor(json: Json, value: JavaMap<any, any>, polymorphicDiscriminator: string | null, polyDescriptor: SerialDescriptor | null)
     // private forceNull: boolean;
     // private polyDescriptor: SerialDescriptor | null;
     // private position: number;
-    readonly value: { [key: string]: any };
+    readonly value: JavaMap<any, any>;
     beginStructure(descriptor: SerialDescriptor): CompositeDecoder;
     protected currentElement(tag: string): JsonElement;
     currentElementOrNull(tag: string): JsonElement | null;

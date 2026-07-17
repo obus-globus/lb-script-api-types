@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { RuntimeException } from '../../../../java/lang/RuntimeException.d.ts'
 import type { Type } from '../../../../java/lang/reflect/Type.d.ts'
@@ -26,7 +27,7 @@ export abstract class AbstractPolyglotImpl$AbstractHostAccess extends AbstractPo
     toIterable<T extends unknown>(internalContext: Object, iterable: Object, implementFunction: boolean, elementClass: Class<T>, elementType: Type): T[];
     toIterator<T extends unknown>(internalContext: Object, iterable: Object, implementFunction: boolean, elementClass: Class<T>, elementType: Type): Iterator<T>;
     toList<T extends unknown>(internalContext: Object, guestValue: Object, implementFunction: boolean, elementClass: Class<T>, elementType: Type): T[];
-    toMap<K extends unknown, V extends unknown>(internalContext: Object, foreignObject: Object, implementsFunction: boolean, keyClass: Class<K>, keyType: Type, valueClass: Class<V>, valueType: Type): Map<K, V>;
+    toMap<K extends unknown, V extends unknown>(internalContext: Object, foreignObject: Object, implementsFunction: boolean, keyClass: Class<K>, keyType: Type, valueClass: Class<V>, valueType: Type): JavaMap<K, V>;
     toMapEntry<K extends unknown, V extends unknown>(internalContext: Object, foreignObject: Object, implementsFunction: boolean, keyClass: Class<K>, keyType: Type, valueClass: Class<V>, valueType: Type): Map$Entry<K, V>;
     toObjectProxy(internalContext: Object, clazz: Class<Object>, genericType: Type, obj: Object): Object;
     toPolyglotException(internalContext: Object, e: Throwable): RuntimeException;

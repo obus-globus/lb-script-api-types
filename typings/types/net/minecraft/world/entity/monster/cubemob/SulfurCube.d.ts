@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Predicate } from '../../../../../../java/util/function/Predicate.d.ts'
@@ -208,7 +209,7 @@ export class SulfurCube extends AbstractCubeMob implements Bucketable, Shearable
     canHoldItem(itemStack: ItemStack): boolean;
     canPickUpLoot(): boolean;
     canUseSlot(slot: EquipmentSlot): boolean;
-    collectEquipmentChanges(lastEquipmentItems: Map<EquipmentSlot, ItemStack>): Map<EquipmentSlot, ItemStack>;
+    collectEquipmentChanges(lastEquipmentItems: JavaMap<EquipmentSlot, ItemStack>): JavaMap<EquipmentSlot, ItemStack>;
     customServerAiStep(level: ServerLevel): void;
     defineSynchedData(entityData: SynchedEntityData$Builder): void;
     doPush(entity: Entity): void;

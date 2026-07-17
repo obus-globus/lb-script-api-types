@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { GameProfile$Property } from '../../../../../com/viaversion/viaversion/api/minecraft/GameProfile$Property.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { UUID } from '../../../../../java/util/UUID.d.ts'
@@ -16,6 +17,6 @@ export class GameProfile extends Record {
     id(): UUID;
     name(): string;
     properties(): GameProfile$Property[];
-    propertiesMap(): { [key: string]: GameProfile$Property[] };
+    propertiesMap(): JavaMap<string, GameProfile$Property[]>;
     toString(): string;
 }

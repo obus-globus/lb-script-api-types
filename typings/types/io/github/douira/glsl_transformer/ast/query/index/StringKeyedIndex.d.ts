@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { ASTNode } from '../../../../../../../io/github/douira/glsl_transformer/ast/node/abstract_node/ASTNode.d.ts'
 import type { ReferenceExpression } from '../../../../../../../io/github/douira/glsl_transformer/ast/node/expression/ReferenceExpression.d.ts'
 import type { Index } from '../../../../../../../io/github/douira/glsl_transformer/ast/query/index/Index.d.ts'
@@ -5,7 +6,7 @@ import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { Supplier } from '../../../../../../../java/util/function/Supplier.d.ts'
 import type { Stream } from '../../../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-export abstract class StringKeyedIndex<V extends unknown, N extends ASTNode, S extends V[], I extends { [key: string]: S }> extends Object implements Index<N> {
+export abstract class StringKeyedIndex<V extends unknown, N extends ASTNode, S extends V[], I extends JavaMap<string, S>> extends Object implements Index<N> {
     constructor(arg0: I, arg1: () => S)
     index: I;
     setFactory: () => S;

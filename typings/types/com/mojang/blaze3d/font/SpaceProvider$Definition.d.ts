@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Either } from '../../../../com/mojang/datafixers/util/Either.d.ts'
 import type { MapCodec } from '../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Record } from '../../../../java/lang/Record.d.ts'
@@ -9,9 +10,9 @@ import type { GlyphProviderType } from '../../../../net/minecraft/client/gui/fon
 export class SpaceProvider$Definition extends Record implements GlyphProviderDefinition {
     static CODEC: MapCodec<SpaceProvider$Definition>;
     static MAP_CODEC: MapCodec<GlyphProviderDefinition>;
-    constructor(advances: { [key: number]: number })
-    // private advances: { [key: number]: number };
-    advances(): { [key: number]: number };
+    constructor(advances: JavaMap<number, number>)
+    // private advances: JavaMap<number, number>;
+    advances(): JavaMap<number, number>;
     equals(o: Object | null): boolean;
     hashCode(): number;
     toString(): string;

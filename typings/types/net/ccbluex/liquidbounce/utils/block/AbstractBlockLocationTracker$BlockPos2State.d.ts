@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 import type { Sequence } from '../../../../../kotlin/sequences/Sequence.d.ts'
@@ -14,7 +15,7 @@ import type { ChunkPos } from '../../../../../net/minecraft/world/level/ChunkPos
  */
 export abstract class AbstractBlockLocationTracker$BlockPos2State<T extends unknown> extends AbstractBlockLocationTracker<T> {
     constructor()
-    // private positionAndState: Map<BlockPos, T>;
+    // private positionAndState: JavaMap<BlockPos, T>;
     allPositions(): Sequence<BlockPos>;
     clearAllChunks(): void;
     clearChunk(pos: ChunkPos): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { BufferedReader } from '../../../../../java/io/BufferedReader.d.ts'
 import type { BufferedWriter } from '../../../../../java/io/BufferedWriter.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
@@ -65,7 +66,7 @@ export class FilesUncheck extends Object {
     static readAllLines(paramarg0: Path): string[];
     static readAllLines(paramarg0: Path, paramarg1: Charset): string[];
     static readAttributes<A extends BasicFileAttributes>(paramarg0: Path, paramarg1: Class<A>, ...paramarg2: LinkOption[]): A;
-    static readAttributes(paramarg0: Path, paramarg1: string, ...paramarg2: LinkOption[]): { [key: string]: Object };
+    static readAttributes(paramarg0: Path, paramarg1: string, ...paramarg2: LinkOption[]): JavaMap<string, Object>;
     static readSymbolicLink(paramarg0: Path): Path;
     static setAttribute(paramarg0: Path, paramarg1: string, paramarg2: Object, ...paramarg3: LinkOption[]): Path;
     static setLastModifiedTime(paramarg0: Path, paramarg1: FileTime): Path;

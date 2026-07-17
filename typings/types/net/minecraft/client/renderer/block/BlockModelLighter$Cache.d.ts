@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlockAndTintGetter } from '../../../../../net/minecraft/client/renderer/block/BlockAndTintGetter.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
@@ -6,9 +7,9 @@ import type { BlockAndLightGetter } from '../../../../../net/minecraft/world/lev
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class BlockModelLighter$Cache extends Object {
     constructor()
-    // private brightnessCache: { [key: string]: any };
+    // private brightnessCache: JavaMap<any, any>;
     // private cachedBrightnessGetter: (param0: BlockAndLightGetter, param1: BlockPos) => number;
-    // private colorCache: { [key: string]: any };
+    // private colorCache: JavaMap<any, any>;
     // private enabled: boolean;
     disable(): void;
     enable(): void;

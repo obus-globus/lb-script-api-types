@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { StringBuilder } from '../../../../../../../java/lang/StringBuilder.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
@@ -23,7 +24,7 @@ export class MFDataModelFormatter extends Object {
     // private locale: Locale;
     // private standardFunctions: MFFunctionRegistry;
     // private findBestMatchingPattern(sm: MFDataModel$SelectMessage, variables: MFDataModelFormatter$MapWithNfcKeys, arguments: MFDataModelFormatter$MapWithNfcKeys): MFDataModel$Pattern;
-    format(arguments: { [key: string]: Object }): string;
+    format(arguments: JavaMap<string, Object>): string;
     // private formatExpression(expression: MFDataModel$Expression, variables: MFDataModelFormatter$MapWithNfcKeys, arguments: MFDataModelFormatter$MapWithNfcKeys): FormattedPlaceholder;
     // private getFormattingFunctionFactoryByName(toFormat: Object, functionName: string): FunctionFactory;
     // private implementBiDiDefault(result: StringBuilder, msgdir: Directionality, formattedExpression: FormattedPlaceholder): void;

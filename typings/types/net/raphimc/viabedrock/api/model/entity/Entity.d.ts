@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { UserConnection } from '../../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { EntityTypes26_2 } from '../../../../../../com/viaversion/viaversion/api/minecraft/entities/EntityTypes26_2.d.ts'
 import type { EntityData } from '../../../../../../com/viaversion/viaversion/api/minecraft/entitydata/EntityData.d.ts'
@@ -9,7 +10,7 @@ import type { Position3f } from '../../../../../../net/raphimc/viabedrock/protoc
 export class Entity extends Object {
     constructor(arg0: UserConnection, arg1: number, arg2: number, arg3: string, arg4: number, arg5: UUID, arg6: EntityTypes26_2)
     // private age: number;
-    // private entityData: Map<ActorDataIDs, EntityData>;
+    // private entityData: JavaMap<ActorDataIDs, EntityData>;
     hasBossBar: boolean;
     // private javaId: number;
     // private javaType: EntityTypes26_2;
@@ -23,7 +24,7 @@ export class Entity extends Object {
     // private uniqueId: number;
     // private user: UserConnection;
     age(): number;
-    entityData(): Map<ActorDataIDs, EntityData>;
+    entityData(): JavaMap<ActorDataIDs, EntityData>;
     entityFlags(): ActorFlags[];
     eyeOffset(): number;
     getJavaEntityDataIndex(arg0: string): number;

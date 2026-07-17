@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Function } from '../../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -10,7 +11,7 @@ export class ArrayBackedEvent<T extends unknown> extends Event<T> {
     // private handlers: T[];
     // private invokerFactory: (param0: T[]) => T;
     // private lock: Object;
-    // private phases: Map<Identifier, EventPhaseData<T>>;
+    // private phases: JavaMap<Identifier, EventPhaseData<T>>;
     // private sortedPhases: EventPhaseData<T>[];
     addPhaseOrdering(arg0: Identifier, arg1: Identifier): void;
     // private getOrCreatePhase(arg0: Identifier, arg1: boolean): EventPhaseData<T>;

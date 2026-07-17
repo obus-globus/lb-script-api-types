@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../../java/lang/CharSequence.d.ts'
 import type { Languages$LanguageSet } from '../../../../../../org/apache/commons/codec/language/bm/Languages$LanguageSet.d.ts'
@@ -10,8 +11,8 @@ export class Rule extends Object {
     static ALL_STRINGS_RMATCHER: Rule$RPattern;
     static getInstance(paramarg0: NameType, paramarg1: RuleType, paramarg2: string): Rule[];
     static getInstance(paramarg0: NameType, paramarg1: RuleType, paramarg2: Languages$LanguageSet): Rule[];
-    static getInstanceMap(paramarg0: NameType, paramarg1: RuleType, paramarg2: string): { [key: string]: Rule[] };
-    static getInstanceMap(paramarg0: NameType, paramarg1: RuleType, paramarg2: Languages$LanguageSet): { [key: string]: Rule[] };
+    static getInstanceMap(paramarg0: NameType, paramarg1: RuleType, paramarg2: string): JavaMap<string, Rule[]>;
+    static getInstanceMap(paramarg0: NameType, paramarg1: RuleType, paramarg2: Languages$LanguageSet): JavaMap<string, Rule[]>;
     constructor(arg0: string, arg1: string, arg2: string, arg3: Rule$PhonemeExpr)
     // private lContext: Rule$RPattern;
     readonly pattern: string;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ChannelFuture } from '../../../../../io/netty/channel/ChannelFuture.d.ts'
 import type { ChannelMetadata } from '../../../../../io/netty/channel/ChannelMetadata.d.ts'
 import type { ChannelOutboundBuffer } from '../../../../../io/netty/channel/ChannelOutboundBuffer.d.ts'
@@ -26,7 +27,7 @@ export class NioDatagramChannel extends AbstractNioMessageChannel implements Dat
     constructor(arg0: SelectorProvider, arg1: InternetProtocolFamily)
     constructor(arg0: SelectorProvider, arg1: SocketProtocolFamily)
     // private config: DatagramChannelConfig;
-    // private memberships: Map<InetAddress, MembershipKey[]>;
+    // private memberships: JavaMap<InetAddress, MembershipKey[]>;
     block(arg0: InetAddress, arg1: InetAddress): ChannelFuture;
     block(arg0: InetAddress, arg1: InetAddress, arg2: ChannelPromise): ChannelFuture;
     block(arg0: InetAddress, arg1: NetworkInterface, arg2: InetAddress): ChannelFuture;

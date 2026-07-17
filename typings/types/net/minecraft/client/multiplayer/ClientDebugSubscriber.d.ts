@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { BiConsumer } from '../../../../java/util/function/BiConsumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { DebugScreenOverlay } from '../../../../net/minecraft/client/gui/components/DebugScreenOverlay.d.ts'
@@ -18,7 +19,7 @@ export class ClientDebugSubscriber extends Object {
     // private connection: ClientPacketListener;
     // private debugScreenOverlay: DebugScreenOverlay;
     // private remoteSubscriptions: DebugSubscription<Object>[];
-    // private valuesBySubscription: Map<DebugSubscription<Object>, ClientDebugSubscriber$ValueMaps<Object>>;
+    // private valuesBySubscription: JavaMap<DebugSubscription<Object>, ClientDebugSubscriber$ValueMaps<Object>>;
     clear(): void;
     createDebugValueAccess(level: Level): DebugValueAccess;
     dropChunk(chunkPos: ChunkPos): void;

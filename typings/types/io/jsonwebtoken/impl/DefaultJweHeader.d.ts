@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Parameter } from '../../../io/jsonwebtoken/impl/lang/Parameter.d.ts'
 export class DefaultJweHeader {
     // A14 statics-only surface: instances of this collection-backed type
@@ -6,7 +7,7 @@ export class DefaultJweHeader {
     static COMPRESSION_ALGORITHM: string;
     static CONTENT_TYPE: string;
     static DEPRECATED_COMPRESSION_ALGORITHM: string;
-    static EPK: Parameter<{ [key: string]: any }>;
+    static EPK: Parameter<JavaMap<any, any>>;
     static IV: Parameter<number[]>;
     static JWT_TYPE: string;
     static P2C: Parameter<number>;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Pair } from '../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { DataResult } from '../../../com/mojang/serialization/DataResult.d.ts'
 import type { Decoder } from '../../../com/mojang/serialization/Decoder.d.ts'
@@ -41,7 +42,7 @@ export class NbtOps extends Object implements DynamicOps<Tag> {
     createLong(value: number): Tag;
     createLongList(arg0: LongStream): Tag;
     createLongList(input: LongStream): Tag;
-    createMap(arg0: Map<Tag, Tag>): Tag;
+    createMap(arg0: JavaMap<Tag, Tag>): Tag;
     createMap(map: Stream<Pair<Tag, Tag>>): Tag;
     createNumeric(i: Number): Tag;
     createShort(arg0: number): Tag;
@@ -76,9 +77,9 @@ export class NbtOps extends Object implements DynamicOps<Tag> {
     mergeToList(list: Tag, values: Tag[]): DataResult<Tag>;
     mergeToList(list: Tag, value: Tag): DataResult<Tag>;
     mergeToMap(arg0: Tag, arg1: MapLike<Tag>): DataResult<Tag>;
-    mergeToMap(arg0: Tag, arg1: Map<Tag, Tag>): DataResult<Tag>;
+    mergeToMap(arg0: Tag, arg1: JavaMap<Tag, Tag>): DataResult<Tag>;
     mergeToMap(map: Tag, values: MapLike<Tag>): DataResult<Tag>;
-    mergeToMap(map: Tag, values: Map<Tag, Tag>): DataResult<Tag>;
+    mergeToMap(map: Tag, values: JavaMap<Tag, Tag>): DataResult<Tag>;
     mergeToMap(map: Tag, key: Tag, value: Tag): DataResult<Tag>;
     mergeToPrimitive(arg0: Tag, arg1: Tag): DataResult<Tag>;
     remove(input: Tag, key: string): Tag;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { DumperOptions } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/DumperOptions.d.ts'
 import type { DumperOptions$Version } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/DumperOptions$Version.d.ts'
 import type { CommentLine } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/comments/CommentLine.d.ts'
@@ -11,7 +12,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class Serializer extends Object {
     constructor(arg0: Emitable, arg1: Resolver, arg2: DumperOptions, arg3: Tag)
     // private anchorGenerator: AnchorGenerator;
-    // private anchors: Map<Node, string>;
+    // private anchors: JavaMap<Node, string>;
     // private closed: boolean;
     // private dereferenceAliases: boolean;
     // private emitter: Emitable;
@@ -22,7 +23,7 @@ export class Serializer extends Object {
     // private recursive: Node[];
     // private resolver: Resolver;
     // private serializedNodes: Node[];
-    // private useTags: { [key: string]: string };
+    // private useTags: JavaMap<string, string>;
     // private useVersion: DumperOptions$Version;
     // private anchorNode(arg0: Node): void;
     close(): void;

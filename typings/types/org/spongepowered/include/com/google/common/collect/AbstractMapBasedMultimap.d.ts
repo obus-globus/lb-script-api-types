@@ -1,12 +1,13 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Serializable } from '../../../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { AbstractMultimap } from '../../../../../../../org/spongepowered/include/com/google/common/collect/AbstractMultimap.d.ts'
 export abstract class AbstractMapBasedMultimap<K extends unknown, V extends unknown> extends AbstractMultimap<K, V> implements Serializable {
-    constructor(arg0: Map<K, V[]>)
-    // private map: Map<K, V[]>;
+    constructor(arg0: JavaMap<K, V[]>)
+    // private map: JavaMap<K, V[]>;
     // private totalSize: number;
     clear(): void;
-    createAsMap(): Map<K, V[]>;
+    createAsMap(): JavaMap<K, V[]>;
     createCollection(): V[];
     createCollection(arg0: K): V[];
     createKeySet(): K[];

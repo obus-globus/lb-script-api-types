@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Channel } from '../../../../io/netty/channel/Channel.d.ts'
 import type { IoHandle } from '../../../../io/netty/channel/IoHandle.d.ts'
 import type { IoHandler } from '../../../../io/netty/channel/IoHandler.d.ts'
@@ -27,7 +28,7 @@ export class KQueueIoHandler extends Object implements IoHandler {
     // private nativeArrays: NativeArrays;
     // private nextId: number;
     // private numChannels: number;
-    // private registrations: { [key: string]: any };
+    // private registrations: JavaMap<any, any>;
     // private selectNowSupplier: IntSupplier;
     // private selectStrategy: SelectStrategy;
     // private wakenUp: number;

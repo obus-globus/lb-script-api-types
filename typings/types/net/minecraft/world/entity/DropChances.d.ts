@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -8,9 +9,9 @@ export class DropChances extends Record {
     static DEFAULT_EQUIPMENT_DROP_CHANCE: number;
     static PRESERVE_ITEM_DROP_CHANCE: number;
     static PRESERVE_ITEM_DROP_CHANCE_THRESHOLD: number;
-    constructor(byEquipment: Map<EquipmentSlot, number>)
-    // private byEquipment: Map<EquipmentSlot, number>;
-    byEquipment(): Map<EquipmentSlot, number>;
+    constructor(byEquipment: JavaMap<EquipmentSlot, number>)
+    // private byEquipment: JavaMap<EquipmentSlot, number>;
+    byEquipment(): JavaMap<EquipmentSlot, number>;
     byEquipment(slot: EquipmentSlot): number;
     equals(o: Object | null): boolean;
     hashCode(): number;

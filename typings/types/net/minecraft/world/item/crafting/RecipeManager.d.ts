@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Stream } from '../../../../../java/util/stream/Stream.d.ts'
@@ -32,8 +33,8 @@ export class RecipeManager extends SimplePreparableReloadListener<RecipeMap> imp
     constructor(registries: HolderLookup$Provider)
     // private allDisplays: RecipeManager$ServerDisplayInfo[];
     // private id: Identifier;
-    // private propertySets: Map<ResourceKey<RecipePropertySet>, RecipePropertySet>;
-    // private recipeToDisplay: Map<ResourceKey<Recipe<any>>, RecipeManager$ServerDisplayInfo[]>;
+    // private propertySets: JavaMap<ResourceKey<RecipePropertySet>, RecipePropertySet>;
+    // private recipeToDisplay: JavaMap<ResourceKey<Recipe<any>>, RecipeManager$ServerDisplayInfo[]>;
     readonly recipes: RecipeMap;
     // private registries: HolderLookup$Provider;
     // private stonecutterRecipes: SelectableRecipe$SingleInputSet<StonecutterRecipe>;
@@ -53,7 +54,7 @@ export class RecipeManager extends SimplePreparableReloadListener<RecipeMap> imp
     getRecipeFor<T extends Recipe<I>, I extends RecipeInput>(type: RecipeType<T>, input: I, level: Level, recipeHint: RecipeHolder<T>): Optional<RecipeHolder<T>>;
     getRecipeFromDisplay(id: RecipeDisplayId): RecipeManager$ServerDisplayInfo;
     getRecipes(): RecipeHolder<any>[];
-    getSynchronizedItemProperties(): Map<ResourceKey<RecipePropertySet>, RecipePropertySet>;
+    getSynchronizedItemProperties(): JavaMap<ResourceKey<RecipePropertySet>, RecipePropertySet>;
     getSynchronizedRecipes(): SynchronizedRecipes;
     getSynchronizedStonecutterRecipes(): SelectableRecipe$SingleInputSet<StonecutterRecipe>;
     listDisplaysForRecipe(id: ResourceKey<Recipe<any>>, output: (param0: RecipeDisplayEntry) => void): void;

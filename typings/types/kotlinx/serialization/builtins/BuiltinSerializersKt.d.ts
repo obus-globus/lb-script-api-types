@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { BooleanCompanionObject } from '../../../kotlin/jvm/internal/BooleanCompanionObject.d.ts'
 import type { ByteCompanionObject } from '../../../kotlin/jvm/internal/ByteCompanionObject.d.ts'
@@ -39,7 +40,7 @@ export class BuiltinSerializersKt extends Object {
     static ListSerializer<T extends unknown>(elementSerializer: KSerializer<T>): KSerializer<T[]>;
     static LongArraySerializer(): KSerializer<number[]>;
     static MapEntrySerializer<K extends unknown, V extends unknown>(keySerializer: KSerializer<K>, valueSerializer: KSerializer<V>): KSerializer<Map$Entry<K, V>>;
-    static MapSerializer<K extends unknown, V extends unknown>(keySerializer: KSerializer<K>, valueSerializer: KSerializer<V>): KSerializer<Map<K, V>>;
+    static MapSerializer<K extends unknown, V extends unknown>(keySerializer: KSerializer<K>, valueSerializer: KSerializer<V>): KSerializer<JavaMap<K, V>>;
     static NothingSerializer(): KSerializer<void>;
     static PairSerializer<K extends unknown, V extends unknown>(keySerializer: KSerializer<K>, valueSerializer: KSerializer<V>): KSerializer<Pair<K, V>>;
     static SetSerializer<T extends unknown>(elementSerializer: KSerializer<T>): KSerializer<T[]>;

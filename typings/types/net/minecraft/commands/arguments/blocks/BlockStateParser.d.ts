@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { StringReader } from '../../../../../com/mojang/brigadier/StringReader.d.ts'
 import type { Dynamic2CommandExceptionType } from '../../../../../com/mojang/brigadier/exceptions/Dynamic2CommandExceptionType.d.ts'
 import type { Dynamic3CommandExceptionType } from '../../../../../com/mojang/brigadier/exceptions/Dynamic3CommandExceptionType.d.ts'
@@ -42,12 +43,12 @@ export class BlockStateParser extends Object {
     // private forTesting: boolean;
     // private id: Identifier;
     // private nbt: CompoundTag;
-    // private properties: Map<Property<any>, Comparable<Object>>;
+    // private properties: JavaMap<Property<any>, Comparable<Object>>;
     // private reader: StringReader;
     // private state: BlockState;
     // private suggestions: (param0: SuggestionsBuilder) => CompletableFuture<Suggestions>;
     // private tag: Holder<Block>[];
-    // private vagueProperties: { [key: string]: string };
+    // private vagueProperties: JavaMap<string, string>;
     // private hasBlockEntity(): boolean;
     // private parse(): void;
     // private readBlock(): void;

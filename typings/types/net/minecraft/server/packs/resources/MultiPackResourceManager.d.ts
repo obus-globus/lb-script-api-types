@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Predicate } from '../../../../../java/util/function/Predicate.d.ts'
 import type { Stream } from '../../../../../java/util/stream/Stream.d.ts'
@@ -14,7 +15,7 @@ import type { ResourceProvider } from '../../../../../net/minecraft/server/packs
 export class MultiPackResourceManager extends Object implements FabricMultiPackResourceManager, CloseableResourceManager {
     static EMPTY: (param0: Identifier) => Optional<Resource>;
     constructor(type: PackType, packs: PackResources[])
-    // private namespacedManagers: { [key: string]: FallbackResourceManager };
+    // private namespacedManagers: JavaMap<string, FallbackResourceManager>;
     // private packType: PackType;
     // private packs: PackResources[];
     close(): void;
@@ -24,6 +25,6 @@ export class MultiPackResourceManager extends Object implements FabricMultiPackR
     getResource(location: Identifier): Optional<Resource>;
     getResourceStack(location: Identifier): Resource[];
     listPacks(): Stream<PackResources>;
-    listResourceStacks(directory: string, filter: (param0: Identifier) => boolean): Map<Identifier, Resource[]>;
-    listResources(directory: string, filter: (param0: Identifier) => boolean): Map<Identifier, Resource>;
+    listResourceStacks(directory: string, filter: (param0: Identifier) => boolean): JavaMap<Identifier, Resource[]>;
+    listResources(directory: string, filter: (param0: Identifier) => boolean): JavaMap<Identifier, Resource>;
 }

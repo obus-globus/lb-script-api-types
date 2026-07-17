@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { IntFunction } from '../../../../../java/util/function/IntFunction.d.ts'
@@ -33,7 +34,7 @@ import type { VoxelShape } from '../../../../../net/minecraft/world/phys/shapes/
 export class ComposterBlock extends Block implements WorldlyContainerHolder {
     static BLOCK_STATE_REGISTRY: BlockState[];
     static CODEC: MapCodec<ComposterBlock>;
-    static COMPOSTABLES: { [key: string]: any };
+    static COMPOSTABLES: JavaMap<any, any>;
     static FILTERED_REGISTRIES: ResourceKey<FeatureElement[]>[];
     static INDESTRUCTIBLE: number;
     static INSTANT: number;

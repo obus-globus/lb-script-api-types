@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { InputStream } from '../../../java/io/InputStream.d.ts'
 import type { PrintStream } from '../../../java/io/PrintStream.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
@@ -15,13 +16,13 @@ export class MessageHeader extends Object {
     add(arg0: string, arg1: string): void;
     // private checkMaxHeaderSize(arg0: number): void;
     // private checkNewSize(arg0: number, arg1: number, arg2: number): number;
-    filterAndAddHeaders(arg0: string[], arg1: { [key: string]: string[] }): { [key: string]: string[] };
+    filterAndAddHeaders(arg0: string[], arg1: JavaMap<string, string[]>): JavaMap<string, string[]>;
     filterNTLMResponses(arg0: string): boolean;
     findNextValue(arg0: string, arg1: string): string;
     findValue(arg0: string): string;
     getHeaderNamesInList(): string;
-    getHeaders(): { [key: string]: string[] };
-    getHeaders(arg0: string[]): { [key: string]: string[] };
+    getHeaders(): JavaMap<string, string[]>;
+    getHeaders(arg0: string[]): JavaMap<string, string[]>;
     getKey(arg0: number): string;
     getKey(arg0: string): number;
     getValue(arg0: number): string;

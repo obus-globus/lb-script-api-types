@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { MinecraftServer } from '../../../../net/minecraft/server/MinecraftServer.d.ts'
@@ -9,7 +10,7 @@ export class ServerClockManager$ClockInstance extends Object {
     // private partialTick: number;
     // private paused: boolean;
     // private rate: number;
-    // private timeMarkers: Map<ResourceKey<ClockTimeMarker>, ClockTimeMarker>;
+    // private timeMarkers: JavaMap<ResourceKey<ClockTimeMarker>, ClockTimeMarker>;
     // private totalTicks: number;
     loadFrom(state: ClockState): void;
     packNetworkState(server: MinecraftServer): ClockNetworkState;

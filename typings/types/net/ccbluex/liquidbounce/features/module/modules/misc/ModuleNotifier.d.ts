@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { UUID } from '../../../../../../../java/util/UUID.d.ts'
 import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { PacketEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/PacketEvent.d.ts'
@@ -25,14 +26,14 @@ export class ModuleNotifier extends ClientModule {
     // private /*not mapped: */ getGameModeMessageFormat(): string;
     // private gameModeMessages: boolean;
     // private /*not mapped: */ getGameModeMessages(): boolean;
-    // private heldItemCache: Map<UUID, ModuleNotifier$HeldItemState>;
+    // private heldItemCache: JavaMap<UUID, ModuleNotifier$HeldItemState>;
     // private heldItemMessageFormat: string;
     // private /*not mapped: */ getHeldItemMessageFormat(): string;
     // private heldItemMessages: boolean;
     // private /*not mapped: */ getHeldItemMessages(): boolean;
     // private heldItems: Item[];
     // private /*not mapped: */ getHeldItems(): Item[];
-    // private itemConsumptionCache: Map<UUID, ModuleNotifier$ItemConsumptionState>;
+    // private itemConsumptionCache: JavaMap<UUID, ModuleNotifier$ItemConsumptionState>;
     // private itemConsumptionMessageFormat: string;
     // private /*not mapped: */ getItemConsumptionMessageFormat(): string;
     // private itemConsumptionMessages: boolean;
@@ -48,15 +49,15 @@ export class ModuleNotifier extends ClientModule {
     // private observedPlayers: UUID[];
     readonly packetHandler: EventHook<PacketEvent>;
     // private tickHandler: EventHook<PlayerTickEvent>;
-    // private totemPopCounter: { [key: string]: any };
+    // private totemPopCounter: JavaMap<any, any>;
     // private totemPopMessageFormat: string;
     // private /*not mapped: */ getTotemPopMessageFormat(): string;
     // private totemPopMessages: boolean;
     // private /*not mapped: */ getTotemPopMessages(): boolean;
     // private useNotification: boolean;
     // private /*not mapped: */ getUseNotification(): boolean;
-    // private uuidGameModeCache: Map<UUID, GameType>;
-    // private uuidNameCache: Map<UUID, string>;
+    // private uuidGameModeCache: JavaMap<UUID, GameType>;
+    // private uuidNameCache: JavaMap<UUID, string>;
     // private worldChangeHandler: EventHook<WorldChangeEvent>;
     // private handleGameModeUpdate(entry: ClientboundPlayerInfoUpdatePacket$Entry, isInitializing: boolean): void;
     // private handleHeldItems(player: RemotePlayer): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Semver } from '../../../../../com/vdurmont/semver4j/Semver.d.ts'
 import type { Tag } from '../../../../../com/viaversion/nbt/tag/Tag.d.ts'
 import type { StoredObject } from '../../../../../com/viaversion/viaversion/api/connection/StoredObject.d.ts'
@@ -11,7 +12,7 @@ export class GameSessionStorage extends StoredObject {
     constructor(arg0: UserConnection)
     readonly availableEntityIdentifiers: string[];
     readonly bedrockBiomeDefinitions: Map$Entry<string, Tag>[];
-    readonly bedrockDimensionDefinitions: { [key: string]: IntIntPair };
+    readonly bedrockDimensionDefinitions: JavaMap<string, IntIntPair>;
     readonly bedrockVanillaVersion: Semver;
     readonly blockBreakingServerAuthoritative: boolean;
     readonly chatRestrictionLevel: ChatRestrictionLevel;
@@ -29,7 +30,7 @@ export class GameSessionStorage extends StoredObject {
     areCommandsEnabled(): boolean;
     getAvailableEntityIdentifiers(): string[];
     getBedrockBiomeDefinitions(): Map$Entry<string, Tag>[];
-    getBedrockDimensionDefinitions(): { [key: string]: IntIntPair };
+    getBedrockDimensionDefinitions(): JavaMap<string, IntIntPair>;
     getBedrockVanillaVersion(): Semver;
     getChatRestrictionLevel(): ChatRestrictionLevel;
     getDeathMessage(): TextComponent;

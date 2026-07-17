@@ -1,11 +1,12 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { FunctionFactory } from '../../../../com/ibm/icu/message2/FunctionFactory.d.ts'
 import type { MFFunctionRegistry } from '../../../../com/ibm/icu/message2/MFFunctionRegistry.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class MFFunctionRegistry$Builder extends Object {
     private constructor()
-    // private classToFunction: Map<Class<Object>, string>;
-    // private functionMap: { [key: string]: FunctionFactory };
+    // private classToFunction: JavaMap<Class<Object>, string>;
+    // private functionMap: JavaMap<string, FunctionFactory>;
     addAll(arg0: MFFunctionRegistry): MFFunctionRegistry$Builder;
     build(): MFFunctionRegistry;
     clearDefaultFunctionNames(): MFFunctionRegistry$Builder;

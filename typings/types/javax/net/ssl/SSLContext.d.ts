@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { SecureRandom } from '../../../java/security/SecureRandom.d.ts'
 import type { KeyManager } from '../../../javax/net/ssl/KeyManager.d.ts'
 import type { SSLContextSpi } from '../../../javax/net/ssl/SSLContextSpi.d.ts'
@@ -12,18 +13,18 @@ export class SSLContext extends Object {
     static getDefault(): SSLContext;
     static getInstance(paramarg0: string): SSLContext;
     static getInstance(paramarg0: string, paramarg1: string): SSLContext;
-    static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): SSLContext;
+    static getInstance(paramarg0: string, paramarg1: JavaMap<any, any>): SSLContext;
     static setDefault(paramarg0: SSLContext): void;
-    constructor(arg0: SSLContextSpi, arg1: { [key: string]: any }, arg2: string)
+    constructor(arg0: SSLContextSpi, arg1: JavaMap<any, any>, arg2: string)
     // private contextSpi: SSLContextSpi;
     readonly protocol: string;
-    readonly provider: { [key: string]: any };
+    readonly provider: JavaMap<any, any>;
     createSSLEngine(): SSLEngine;
     createSSLEngine(arg0: string, arg1: number): SSLEngine;
     getClientSessionContext(): SSLSessionContext;
     getDefaultSSLParameters(): SSLParameters;
     getProtocol(): string;
-    getProvider(): { [key: string]: any };
+    getProvider(): JavaMap<any, any>;
     getServerSessionContext(): SSLSessionContext;
     getServerSocketFactory(): SSLServerSocketFactory;
     getSocketFactory(): SSLSocketFactory;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Exception } from '../../../../java/lang/Exception.d.ts'
 import type { URL } from '../../../../java/net/URL.d.ts'
 import type { Path } from '../../../../java/nio/file/Path.d.ts'
@@ -51,15 +52,15 @@ import type { Dialog } from '../../../../net/minecraft/server/dialog/Dialog.d.ts
 export abstract class ClientCommonPacketListenerImpl extends Object implements PacketContextProvider, PacketListenerExtensions, ClientCommonPacketListenerImplAccessor, ClientCommonPacketListener {
     constructor(minecraft: Minecraft, connection: Connection, cookie: CommonListenerCookie)
     readonly connection: Connection;
-    // private customReportDetails: { [key: string]: string };
+    // private customReportDetails: JavaMap<string, string>;
     // private deferredPackets: ClientCommonPacketListenerImpl$DeferredPacket[];
     // private isTransferring: boolean;
     // private minecraft: Minecraft;
     // private postDisconnectScreen: Screen;
     // private seenInsecureChatWarning: boolean;
-    // private seenPlayers: Map<UUID, PlayerInfo>;
+    // private seenPlayers: JavaMap<UUID, PlayerInfo>;
     // private serverBrand: string;
-    // private serverCookies: Map<Identifier, number[]>;
+    // private serverCookies: JavaMap<Identifier, number[]>;
     // private serverData: ServerData;
     // private serverLinks: ServerLinks;
     // private telemetryManager: WorldSessionTelemetryManager;

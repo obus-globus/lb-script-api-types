@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { BiFunction } from '../../../../../../java/util/function/BiFunction.d.ts'
 import type { Stream } from '../../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -78,7 +79,7 @@ export class TextureMapping extends Object {
     static wool(paramblock: Block): TextureMapping;
     constructor()
     // private forcedSlots: TextureSlot[];
-    // private slots: Map<TextureSlot, Material>;
+    // private slots: JavaMap<TextureSlot, Material>;
     copyAndUpdate(slot: TextureSlot, material: Material): TextureMapping;
     copyForced(from: TextureSlot, to: TextureSlot): TextureMapping;
     copySlot(from: TextureSlot, to: TextureSlot): TextureMapping;

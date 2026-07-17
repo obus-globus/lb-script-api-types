@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Predicate } from '../../../../com/google/common/base/Predicate.d.ts'
 import type { AbstractMultimap } from '../../../../com/google/common/collect/AbstractMultimap.d.ts'
 import type { FilteredMultimap } from '../../../../com/google/common/collect/FilteredMultimap.d.ts'
@@ -11,7 +12,7 @@ export class FilteredKeyMultimap<K extends unknown, V extends unknown> extends A
     // private unfiltered: Multimap<K, V>;
     clear(): void;
     containsKey(key: Object): boolean;
-    createAsMap(): Map<K, V[]>;
+    createAsMap(): JavaMap<K, V[]>;
     createEntries(): Map$Entry<K, V>[];
     createKeySet(): K[];
     createKeys(): K[];

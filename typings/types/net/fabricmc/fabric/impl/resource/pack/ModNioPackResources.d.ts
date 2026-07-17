@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
 import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { Optional } from '../../../../../../java/util/Optional.d.ts'
@@ -18,7 +19,7 @@ export class ModNioPackResources extends Object implements ModPackResources, Pac
     static METADATA_EXTENSION: string;
     static PACK_META: string;
     static create(paramarg0: string, paramarg1: ModContainer, paramarg2: string, paramarg3: PackType, paramarg4: PackActivationType, paramarg5: boolean): ModNioPackResources;
-    static readNamespaces(paramarg0: Path[], paramarg1: string): Map<PackType, string[]>;
+    static readNamespaces(paramarg0: Path[], paramarg1: string): JavaMap<PackType, string[]>;
     private constructor(arg0: string, arg1: ModContainer, arg2: Path[], arg3: PackType, arg4: PackActivationType, arg5: boolean, arg6: PackLocationInfo)
     readonly activationType: PackActivationType;
     // private basePaths: Path[];
@@ -26,7 +27,7 @@ export class ModNioPackResources extends Object implements ModPackResources, Pac
     // private metadata: PackLocationInfo;
     // private mod: ModContainer;
     // private modBundled: boolean;
-    // private namespaces: Map<PackType, string[]>;
+    // private namespaces: JavaMap<PackType, string[]>;
     // private type: PackType;
     close(): void;
     createOverlay(arg0: string): ModNioPackResources;

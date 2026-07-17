@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { WeightedList } from '../../../../../net/minecraft/util/random/WeightedList.d.ts'
@@ -9,10 +10,10 @@ export class MobSpawnSettings extends Object {
     static CODEC: MapCodec<MobSpawnSettings>;
     static EMPTY: MobSpawnSettings;
     static EMPTY_MOB_LIST: WeightedList<MobSpawnSettings$SpawnerData>;
-    private constructor(creatureGenerationProbability: number, spawners: Map<MobCategory, WeightedList<MobSpawnSettings$SpawnerData>>, mobSpawnCosts: Map<EntityType<any>, MobSpawnSettings$MobSpawnCost>)
+    private constructor(creatureGenerationProbability: number, spawners: JavaMap<MobCategory, WeightedList<MobSpawnSettings$SpawnerData>>, mobSpawnCosts: JavaMap<EntityType<any>, MobSpawnSettings$MobSpawnCost>)
     creatureGenerationProbability: number;
-    mobSpawnCosts: Map<EntityType<any>, MobSpawnSettings$MobSpawnCost>;
-    spawners: Map<MobCategory, WeightedList<MobSpawnSettings$SpawnerData>>;
+    mobSpawnCosts: JavaMap<EntityType<any>, MobSpawnSettings$MobSpawnCost>;
+    spawners: JavaMap<MobCategory, WeightedList<MobSpawnSettings$SpawnerData>>;
     getCreatureProbability(): number;
     getMobSpawnCost(type: EntityType<any>): MobSpawnSettings$MobSpawnCost;
     getMobs(category: MobCategory): WeightedList<MobSpawnSettings$SpawnerData>;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { FabricRenderState } from '../../../../../../net/fabricmc/fabric/api/client/rendering/v1/FabricRenderState.d.ts'
 import type { RenderStateDataKey } from '../../../../../../net/fabricmc/fabric/api/client/rendering/v1/RenderStateDataKey.d.ts'
@@ -15,7 +16,7 @@ export class BlockEntityRenderState extends Object implements FabricRenderState 
     blockState: BlockState;
     breakProgress: ModelFeatureRenderer$CrumblingOverlay;
     lightCoords: number;
-    // private renderStateData: Map<Object | null, Object | null>;
+    // private renderStateData: JavaMap<Object | null, Object | null>;
     clearExtraData(): void;
     fillCrashReportCategory(category: CrashReportCategory): void;
     getData<T extends unknown>(arg0: RenderStateDataKey<T>): T;

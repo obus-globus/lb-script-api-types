@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Supplier } from '../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { CentralProcessor } from '../../../oshi/hardware/CentralProcessor.d.ts'
@@ -23,7 +24,7 @@ export abstract class AbstractCentralProcessor extends Object implements Central
     readonly processorCaches: CentralProcessor$ProcessorCache[];
     readonly processorCpuLoadTicks: () => number[][];
     readonly systemCpuLoadTicks: () => number[];
-    createProcListFromDmesg(arg0: CentralProcessor$LogicalProcessor[], arg1: { [key: number]: string }): CentralProcessor$PhysicalProcessor[];
+    createProcListFromDmesg(arg0: CentralProcessor$LogicalProcessor[], arg1: JavaMap<number, string>): CentralProcessor$PhysicalProcessor[];
     getContextSwitches(): number;
     getCurrentFreq(): number[];
     getFeatureFlags(): string[];

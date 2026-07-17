@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Optional } from '../../../java/util/Optional.d.ts'
 import type { Stream } from '../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
@@ -13,10 +14,10 @@ export class RegistryAccess$ImmutableRegistryAccess extends Object implements Bi
     static LOGGER: Logger;
     constructor(entries: Stream<RegistryAccess$RegistryEntry<Object>>)
     constructor(registries: (Object | null)[][])
-    constructor(registries: Map<ResourceKey<(Object | null)[]>, (Object | null)[]>)
+    constructor(registries: JavaMap<ResourceKey<(Object | null)[]>, (Object | null)[]>)
     // private dimensionsModified: boolean;
     // private modified: boolean;
-    // private registries: Map<ResourceKey<(Object | null)[]>, (Object | null)[]>;
+    // private registries: JavaMap<ResourceKey<(Object | null)[]>, (Object | null)[]>;
     fabric_markDimensionsModified(): void;
     fabric_markModified(): void;
     freeze(): RegistryAccess$Frozen;

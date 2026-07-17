@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object2IntFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Object2IntFunction.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ChunkVertexType } from '../../../../../net/caffeinemc/mods/sodium/client/render/chunk/vertex/format/ChunkVertexType.d.ts'
@@ -7,8 +8,8 @@ export class WorldRenderingSettings extends Object {
     static INSTANCE: WorldRenderingSettings;
     constructor()
     readonly ambientOcclusionLevel: number;
-    readonly blockStateIds: { [key: string]: any };
-    readonly blockTypeIds: Map<Block, BlockRenderType>;
+    readonly blockStateIds: JavaMap<any, any>;
+    readonly blockTypeIds: JavaMap<Block, BlockRenderType>;
     // private chunkVertexFormat: ChunkVertexType;
     readonly disableDirectionalShading: boolean;
     readonly entityIds: (param0: Object) => number;
@@ -21,16 +22,16 @@ export class WorldRenderingSettings extends Object {
     breaksAnisotropy(): boolean;
     clearReloadRequired(): void;
     getAmbientOcclusionLevel(): number;
-    getBlockStateIds(): { [key: string]: any };
-    getBlockTypeIds(): Map<Block, BlockRenderType>;
+    getBlockStateIds(): JavaMap<any, any>;
+    getBlockTypeIds(): JavaMap<Block, BlockRenderType>;
     getEntityIds(): (param0: Object) => number;
     getItemIds(): (param0: Object) => number;
     getVertexFormat(): ChunkVertexType;
     hasVillagerConversionId(): boolean;
     isReloadRequired(): boolean;
     setAmbientOcclusionLevel(arg0: number): void;
-    setBlockStateIds(arg0: { [key: string]: any }): void;
-    setBlockTypeIds(arg0: Map<Block, BlockRenderType>): void;
+    setBlockStateIds(arg0: JavaMap<any, any>): void;
+    setBlockTypeIds(arg0: JavaMap<Block, BlockRenderType>): void;
     setBreaksAnisotropy(arg0: boolean): void;
     setDisableDirectionalShading(arg0: boolean): void;
     setEntityIds(arg0: (param0: Object) => number): void;

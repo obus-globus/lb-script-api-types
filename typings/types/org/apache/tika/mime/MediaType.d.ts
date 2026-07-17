@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Charset } from '../../../../java/nio/charset/Charset.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -18,18 +19,18 @@ export class MediaType extends Object implements Serializable, Comparable<MediaT
     static text(paramarg0: string): MediaType;
     static video(paramarg0: string): MediaType;
     constructor(arg0: string, arg1: string)
-    constructor(arg0: string, arg1: string, arg2: { [key: string]: string })
+    constructor(arg0: string, arg1: string, arg2: JavaMap<string, string>)
     constructor(arg0: MediaType, arg1: Charset)
     constructor(arg0: MediaType, arg1: string, arg2: string)
-    constructor(arg0: MediaType, arg1: { [key: string]: string })
-    readonly parameters: { [key: string]: string };
+    constructor(arg0: MediaType, arg1: JavaMap<string, string>)
+    readonly parameters: JavaMap<string, string>;
     // private semicolon: number;
     // private slash: number;
     // private string: string;
     compareTo(arg0: MediaType): number;
     equals(arg0: Object | null): boolean;
     getBaseType(): MediaType;
-    getParameters(): { [key: string]: string };
+    getParameters(): JavaMap<string, string>;
     getSubtype(): string;
     getType(): string;
     hasParameters(): boolean;

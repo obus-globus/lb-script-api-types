@@ -1,9 +1,10 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { OrderedMapIterator } from '../../../../../org/apache/commons/collections4/OrderedMapIterator.d.ts'
 import type { AbstractPatriciaTrie$TrieEntry } from '../../../../../org/apache/commons/collections4/trie/AbstractPatriciaTrie$TrieEntry.d.ts'
 import type { AbstractPatriciaTrie$TrieIterator } from '../../../../../org/apache/commons/collections4/trie/AbstractPatriciaTrie$TrieIterator.d.ts'
 export class AbstractPatriciaTrie$TrieMapIterator extends AbstractPatriciaTrie$TrieIterator<Object> implements OrderedMapIterator<K, V> {
-    private constructor(null_: Map<Object, Object>)
+    private constructor(null_: JavaMap<Object, Object>)
     // private previous: AbstractPatriciaTrie$TrieEntry<K, V>;
     getKey<K extends unknown>(): K;
     getValue<V extends unknown>(): V;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ImportClauseNode } from '../../../../../com/oracle/js/parser/ir/ImportClauseNode.d.ts'
 import type { LexicalContext } from '../../../../../com/oracle/js/parser/ir/LexicalContext.d.ts'
 import type { LiteralNode } from '../../../../../com/oracle/js/parser/ir/LiteralNode.d.ts'
@@ -8,14 +9,14 @@ import type { TruffleString } from '../../../../../com/oracle/truffle/api/string
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ImportNode extends Node {
-    constructor(token: number, start: number, finish: number, importClause: ImportClauseNode, moduleSpecifier: LiteralNode<TruffleString>, attributes: Map<TruffleString, TruffleString>)
-    constructor(token: number, start: number, finish: number, moduleSpecifier: LiteralNode<TruffleString>, attributes: Map<TruffleString, TruffleString>)
-    readonly attributes: Map<TruffleString, TruffleString>;
+    constructor(token: number, start: number, finish: number, importClause: ImportClauseNode, moduleSpecifier: LiteralNode<TruffleString>, attributes: JavaMap<TruffleString, TruffleString>)
+    constructor(token: number, start: number, finish: number, moduleSpecifier: LiteralNode<TruffleString>, attributes: JavaMap<TruffleString, TruffleString>)
+    readonly attributes: JavaMap<TruffleString, TruffleString>;
     readonly importClause: ImportClauseNode;
     readonly moduleSpecifier: LiteralNode<TruffleString>;
     accept(visitor: NodeVisitor<LexicalContext>): Node;
     accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
-    getAttributes(): Map<TruffleString, TruffleString>;
+    getAttributes(): JavaMap<TruffleString, TruffleString>;
     getImportClause(): ImportClauseNode;
     getModuleSpecifier(): LiteralNode<TruffleString>;
     setImportClause(importClause: ImportClauseNode): ImportNode;

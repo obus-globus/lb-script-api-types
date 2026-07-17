@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Lifecycle } from '../../../com/mojang/serialization/Lifecycle.d.ts'
 import type { Exception } from '../../../java/lang/Exception.d.ts'
 import type { Optional } from '../../../java/util/Optional.d.ts'
@@ -13,8 +14,8 @@ import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d
 import type { Resource } from '../../../net/minecraft/server/packs/resources/Resource.d.ts'
 import type { ResourceProvider } from '../../../net/minecraft/server/packs/resources/ResourceProvider.d.ts'
 export class NetworkRegistryLoadTask<T extends unknown> extends RegistryLoadTask<T> {
-    constructor(data: RegistryDataLoader$RegistryData<T>, lifecycle: Lifecycle, loadingErrors: Map<ResourceKey<Object>, Exception>, entries: Map<ResourceKey<(Object | null)[]>, RegistryDataLoader$NetworkedRegistryData>, knownDataSource: (param0: Identifier) => Optional<Resource>)
-    // private entries: Map<ResourceKey<(Object | null)[]>, RegistryDataLoader$NetworkedRegistryData>;
+    constructor(data: RegistryDataLoader$RegistryData<T>, lifecycle: Lifecycle, loadingErrors: JavaMap<ResourceKey<Object>, Exception>, entries: JavaMap<ResourceKey<(Object | null)[]>, RegistryDataLoader$NetworkedRegistryData>, knownDataSource: (param0: Identifier) => Optional<Resource>)
+    // private entries: JavaMap<ResourceKey<(Object | null)[]>, RegistryDataLoader$NetworkedRegistryData>;
     // private knownDataSource: (param0: Identifier) => Optional<Resource>;
     load(context: RegistryOps$RegistryInfoLookup, executor: Executor): CompletableFuture<Object>;
 }

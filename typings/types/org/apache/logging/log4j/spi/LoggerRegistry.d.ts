@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Lock } from '../../../../../java/util/concurrent/locks/Lock.d.ts'
 import type { ReadWriteLock } from '../../../../../java/util/concurrent/locks/ReadWriteLock.d.ts'
@@ -9,10 +10,10 @@ export class LoggerRegistry<T extends ExtendedLogger> extends Object {
     constructor()
     constructor(mapFactory: LoggerRegistry$MapFactory<T>)
     // private lock: ReadWriteLock;
-    // private loggerByMessageFactoryByName: { [key: string]: Map<MessageFactory, T> };
+    // private loggerByMessageFactoryByName: JavaMap<string, JavaMap<MessageFactory, T>>;
     // private readLock: Lock;
     // private writeLock: Lock;
-    // private createLoggerRefByMessageFactoryMap(ignored: string): Map<MessageFactory, T>;
+    // private createLoggerRefByMessageFactoryMap(ignored: string): JavaMap<MessageFactory, T>;
     getLogger(name: string): T;
     getLogger(name: string, messageFactory: MessageFactory): T;
     getLoggers(): T[];

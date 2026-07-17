@@ -1,16 +1,17 @@
+import type { JavaMap } from '../JavaMap.d.ts'
 import type { AbstractOptionSpec } from '../joptsimple/AbstractOptionSpec.d.ts'
 import type { OptionSpec } from '../joptsimple/OptionSpec.d.ts'
 import type { Object } from '../java/lang/Object.d.ts'
 export class OptionSet extends Object {
-    constructor(arg0: { [key: string]: AbstractOptionSpec<Object> })
-    // private defaultValues: { [key: string]: (Object | null)[] };
-    // private detectedOptions: { [key: string]: AbstractOptionSpec<Object> };
+    constructor(arg0: JavaMap<string, AbstractOptionSpec<Object>>)
+    // private defaultValues: JavaMap<string, (Object | null)[]>;
+    // private detectedOptions: JavaMap<string, AbstractOptionSpec<Object>>;
     // private detectedSpecs: OptionSpec<Object>[];
-    // private optionsToArguments: Map<AbstractOptionSpec<Object>, string[]>;
-    // private recognizedSpecs: { [key: string]: AbstractOptionSpec<Object> };
+    // private optionsToArguments: JavaMap<AbstractOptionSpec<Object>, string[]>;
+    // private recognizedSpecs: JavaMap<string, AbstractOptionSpec<Object>>;
     add(arg0: AbstractOptionSpec<Object>): void;
     addWithArgument(arg0: AbstractOptionSpec<Object>, arg1: string): void;
-    asMap(): Map<OptionSpec<Object>, (Object | null)[]>;
+    asMap(): JavaMap<OptionSpec<Object>, (Object | null)[]>;
     // private defaultValueFor<V extends unknown>(arg0: OptionSpec<V>): V[];
     // private defaultValuesFor<V extends unknown>(arg0: string): V[];
     equals(arg0: Object | null): boolean;

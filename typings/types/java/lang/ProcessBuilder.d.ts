@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { File } from '../../java/io/File.d.ts'
 import type { Process } from '../../java/lang/Process.d.ts'
 import type { ProcessBuilder$Redirect } from '../../java/lang/ProcessBuilder$Redirect.d.ts'
@@ -8,7 +9,7 @@ export class ProcessBuilder extends Object {
     constructor(arg0: string[])
     // private command: string[];
     // private directory: File;
-    // private environment: { [key: string]: string };
+    // private environment: JavaMap<string, string>;
     // private redirectErrorStream: boolean;
     // private redirects: ProcessBuilder$Redirect[];
     command(): string[];
@@ -16,7 +17,7 @@ export class ProcessBuilder extends Object {
     command(arg0: string[]): ProcessBuilder;
     directory(): File;
     directory(arg0: File): ProcessBuilder;
-    environment(): { [key: string]: string };
+    environment(): JavaMap<string, string>;
     environment(arg0: string[]): ProcessBuilder;
     inheritIO(): ProcessBuilder;
     redirectError(): ProcessBuilder$Redirect;

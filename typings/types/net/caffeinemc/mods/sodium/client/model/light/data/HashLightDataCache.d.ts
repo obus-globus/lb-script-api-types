@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { LightDataAccess } from '../../../../../../../../net/caffeinemc/mods/sodium/client/model/light/data/LightDataAccess.d.ts'
 import type { BlockAndTintGetter } from '../../../../../../../../net/minecraft/client/renderer/block/BlockAndTintGetter.d.ts'
 import type { BlockPos } from '../../../../../../../../net/minecraft/core/BlockPos.d.ts'
@@ -22,7 +23,7 @@ export class HashLightDataCache extends LightDataAccess {
     static unpackOP(paramarg0: number): boolean;
     static unpackSL(paramarg0: number): number;
     constructor(arg0: BlockAndTintGetter)
-    // private map: { [key: string]: any };
+    // private map: JavaMap<any, any>;
     clearCache(): void;
     get(arg0: number, arg1: number, arg2: number): number;
     get(arg0: number, arg1: number, arg2: number, arg3: Direction): number;

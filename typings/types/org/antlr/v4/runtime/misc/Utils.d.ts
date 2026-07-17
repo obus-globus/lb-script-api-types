@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { BitSet } from '../../../../../java/util/BitSet.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../../java/util/Iterator.d.ts'
@@ -17,7 +18,7 @@ export class Utils extends Object {
     static sequence(paramarg0: number, paramarg1: string): string;
     static spaces(paramarg0: number): string;
     static toCharArray(paramarg0: IntegerList): string[];
-    static toMap(paramarg0: string[]): { [key: string]: number };
+    static toMap(paramarg0: string[]): JavaMap<string, number>;
     static toSet(paramarg0: BitSet): IntervalSet;
     static writeFile(paramarg0: string, paramarg1: string): void;
     static writeFile(paramarg0: string, paramarg1: string, paramarg2: string): void;

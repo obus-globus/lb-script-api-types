@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { InternalResource } from '../../../../com/oracle/truffle/api/InternalResource.d.ts'
 import type { InternalResource$CPUArchitecture } from '../../../../com/oracle/truffle/api/InternalResource$CPUArchitecture.d.ts'
 import type { InternalResource$OS } from '../../../../com/oracle/truffle/api/InternalResource$OS.d.ts'
@@ -23,7 +24,7 @@ export class InternalResource$Env extends Object {
     // private getResourceStream(resourcePath: Path): InputStream;
     inContextPreinitialization(): boolean;
     inNativeImageBuild(): boolean;
-    // private loadFileList(source: Path): { [key: string]: any };
+    // private loadFileList(source: Path): JavaMap<any, any>;
     // private preferredResource(candidates: Enumeration<URL>): URL;
     readResourceLines(location: Path): string[];
     unpackResourceFiles(source: Path, target: Path, relativizeTo: Path): void;

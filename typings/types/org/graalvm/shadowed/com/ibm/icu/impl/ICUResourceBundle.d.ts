@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { ClassLoader } from '../../../../../../../java/lang/ClassLoader.d.ts'
 import type { Module } from '../../../../../../../java/lang/Module.d.ts'
 import type { Enumeration } from '../../../../../../../java/util/Enumeration.d.ts'
@@ -82,7 +83,7 @@ export class ICUResourceBundle extends UResourceBundle {
     findWithFallback(path: string): ICUResourceBundle;
     get(index: number): UResourceBundle;
     get(aKey: string): UResourceBundle;
-    get(aKey: string, aliasesVisited: { [key: string]: string }, requested: UResourceBundle): ICUResourceBundle;
+    get(aKey: string, aliasesVisited: JavaMap<string, string>, requested: UResourceBundle): ICUResourceBundle;
     getAllChildrenWithFallback(path: string, sink: UResource$Sink): void;
     getAllItemsWithFallback(path: string, sink: UResource$Sink): void;
     // private getAllItemsWithFallback(key: UResource$Key, readerValue: ICUResourceBundleReader$ReaderValue, sink: UResource$Sink, requested: UResourceBundle): void;

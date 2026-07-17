@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Multimap } from '../../../../../com/google/common/collect/Multimap.d.ts'
 import type { Stream } from '../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -12,9 +13,9 @@ import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 export class RecipeMap extends Object implements SyncedSerializerAwarePreparedRecipe {
     static EMPTY: RecipeMap;
     static create(paramrecipes: RecipeHolder<any>[]): RecipeMap;
-    private constructor(byType: Multimap<RecipeType<any>, RecipeHolder<any>>, byKey: Map<ResourceKey<Recipe<any>>, RecipeHolder<any>>)
-    // private byKey: Map<ResourceKey<Recipe<any>>, RecipeHolder<any>>;
-    // private bySyncedSerializer: Map<Object | null, Object | null>;
+    private constructor(byType: Multimap<RecipeType<any>, RecipeHolder<any>>, byKey: JavaMap<ResourceKey<Recipe<any>>, RecipeHolder<any>>)
+    // private byKey: JavaMap<ResourceKey<Recipe<any>>, RecipeHolder<any>>;
+    // private bySyncedSerializer: JavaMap<Object | null, Object | null>;
     // private byType: Multimap<RecipeType<any>, RecipeHolder<any>>;
     byKey(recipeId: ResourceKey<Recipe<any>>): RecipeHolder<any>;
     byType<T extends Recipe<I>>(type: RecipeType<T>): RecipeHolder<T>[];

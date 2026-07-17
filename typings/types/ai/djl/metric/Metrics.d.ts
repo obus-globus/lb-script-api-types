@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Dimension } from '../../../ai/djl/metric/Dimension.d.ts'
 import type { Metric } from '../../../ai/djl/metric/Metric.d.ts'
 import type { Unit } from '../../../ai/djl/metric/Unit.d.ts'
@@ -7,7 +8,7 @@ import type { Number } from '../../../java/lang/Number.d.ts'
 export class Metrics extends Object {
     constructor()
     readonly limit: number;
-    // private metrics: { [key: string]: Metric[] };
+    // private metrics: JavaMap<string, Metric[]>;
     readonly onLimit: (param0: Metrics, param1: string) => void;
     addMetric(arg0: Metric): void;
     addMetric(arg0: string, arg1: Number): void;

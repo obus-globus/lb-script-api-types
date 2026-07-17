@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { AWTEvent } from '../../java/awt/AWTEvent.d.ts'
 import type { Component } from '../../java/awt/Component.d.ts'
 import type { Cursor } from '../../java/awt/Cursor.d.ts'
@@ -36,10 +37,10 @@ export abstract class Toolkit extends Object {
     static getProperty(paramarg0: string, paramarg1: string): string;
     constructor()
     // private calls: number[];
-    // private desktopProperties: { [key: string]: Object };
+    // private desktopProperties: JavaMap<string, Object>;
     // private desktopPropsSupport: PropertyChangeSupport;
     // private eventListener: AWTEventListener;
-    // private listener2SelectiveListener: Map<AWTEventListener, Toolkit$SelectiveAWTEventListener>;
+    // private listener2SelectiveListener: JavaMap<AWTEventListener, Toolkit$SelectiveAWTEventListener>;
     addAWTEventListener(arg0: AWTEventListener, arg1: number): void;
     addPropertyChangeListener(arg0: string, arg1: PropertyChangeListener): void;
     areExtraMouseButtonsEnabled(): boolean;
@@ -67,7 +68,7 @@ export abstract class Toolkit extends Object {
     getMenuShortcutKeyMask(): number;
     getMenuShortcutKeyMaskEx(): number;
     getPrintJob(arg0: Frame, arg1: string, arg2: JobAttributes, arg3: PageAttributes): PrintJob;
-    getPrintJob(arg0: Frame, arg1: string, arg2: { [key: string]: any }): PrintJob;
+    getPrintJob(arg0: Frame, arg1: string, arg2: JavaMap<any, any>): PrintJob;
     getPropertyChangeListeners(): PropertyChangeListener[];
     getPropertyChangeListeners(arg0: string): PropertyChangeListener[];
     getScreenInsets(arg0: GraphicsConfiguration): Insets;
@@ -86,7 +87,7 @@ export abstract class Toolkit extends Object {
     isModalityTypeSupported(arg0: Dialog$ModalityType): boolean;
     lazilyLoadDesktopProperty(arg0: string): Object;
     loadSystemColors(arg0: number[]): void;
-    mapInputMethodHighlight(arg0: InputMethodHighlight): Map<TextAttribute, Object | null>;
+    mapInputMethodHighlight(arg0: InputMethodHighlight): JavaMap<TextAttribute, Object | null>;
     notifyAWTEventListeners(arg0: AWTEvent): void;
     prepareImage(arg0: Image, arg1: number, arg2: number, arg3: ImageObserver): boolean;
     removeAWTEventListener(arg0: AWTEventListener): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { AbstractTable } from '../../../../com/google/common/collect/AbstractTable.d.ts'
 import type { ImmutableTable$Builder } from '../../../../com/google/common/collect/ImmutableTable$Builder.d.ts'
 import type { Table } from '../../../../com/google/common/collect/Table.d.ts'
@@ -23,9 +24,9 @@ export abstract class ImmutableTable<R extends unknown, C extends unknown, V ext
     cellSet(): Table$Cell<R, C, V>[];
     cellSpliterator(): Spliterator<Table$Cell<R, C, V>>;
     clear(): void;
-    column(columnKey: C): Map<R, V>;
+    column(columnKey: C): JavaMap<R, V>;
     columnKeySet(): C[];
-    columnMap(): Map<C, Map<R, V>>;
+    columnMap(): JavaMap<C, JavaMap<R, V>>;
     contains(rowKey: Object, columnKey: Object): boolean;
     containsValue(value: Object): boolean;
     createCellSet(): Table$Cell<R, C, V>[];
@@ -34,9 +35,9 @@ export abstract class ImmutableTable<R extends unknown, C extends unknown, V ext
     putAll(table: Table<R, C, V>): void;
     // private readObject(stream: ObjectInputStream): void;
     remove(rowKey: Object, columnKey: Object): V;
-    row(rowKey: R): Map<C, V>;
+    row(rowKey: R): JavaMap<C, V>;
     rowKeySet(): R[];
-    rowMap(): Map<R, Map<C, V>>;
+    rowMap(): JavaMap<R, JavaMap<C, V>>;
     values(): V[];
     valuesIterator(): Iterator<V>;
     writeReplace(): Object;

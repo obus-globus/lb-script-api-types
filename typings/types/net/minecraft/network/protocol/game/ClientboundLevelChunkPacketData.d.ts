@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -16,10 +17,10 @@ export class ClientboundLevelChunkPacketData extends Object {
     constructor(levelChunk: LevelChunk)
     // private blockEntitiesData: ClientboundLevelChunkPacketData$BlockEntityInfo[];
     // private buffer: number[];
-    readonly heightmaps: Map<Heightmap$Types, number[]>;
+    readonly heightmaps: JavaMap<Heightmap$Types, number[]>;
     // private getBlockEntitiesTags(output: (param0: BlockPos, param1: BlockEntityType<any>, param2: CompoundTag) => void, x: number, z: number): void;
     getBlockEntitiesTagsConsumer(x: number, z: number): (param0: (param0: BlockPos, param1: BlockEntityType<any>, param2: CompoundTag) => void) => void;
-    getHeightmaps(): Map<Heightmap$Types, number[]>;
+    getHeightmaps(): JavaMap<Heightmap$Types, number[]>;
     getReadBuffer(): FriendlyByteBuf;
     // private getWriteBuffer(): ByteBuf;
     write(output: RegistryFriendlyByteBuf): void;

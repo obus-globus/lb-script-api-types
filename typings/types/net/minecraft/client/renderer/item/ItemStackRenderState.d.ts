@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { PoseStack } from '../../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -23,7 +24,7 @@ export class ItemStackRenderState extends Object implements FabricRenderState, I
     // private iris_displayStack: Item;
     // private layers: ItemStackRenderState$LayerRenderState[];
     readonly oversizedInGui: boolean;
-    // private renderStateData: Map<Object | null, Object | null>;
+    // private renderStateData: JavaMap<Object | null, Object | null>;
     appendModelIdentityElement(element: Object): void;
     clear(): void;
     clearExtraData(): void;

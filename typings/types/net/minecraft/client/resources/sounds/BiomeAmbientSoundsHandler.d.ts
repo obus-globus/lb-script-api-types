@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BiomeAmbienceInterface } from '../../../../../net/irisshaders/iris/mixinterface/BiomeAmbienceInterface.d.ts'
 import type { LocalPlayer } from '../../../../../net/minecraft/client/player/LocalPlayer.d.ts'
@@ -10,7 +11,7 @@ import type { RandomSource } from '../../../../../net/minecraft/util/RandomSourc
 export class BiomeAmbientSoundsHandler extends Object implements BiomeAmbienceInterface, AmbientSoundHandler {
     constructor(player: LocalPlayer, soundManager: SoundManager)
     // private constantMoodiness: number;
-    // private loopSounds: Map<Holder<SoundEvent>, BiomeAmbientSoundsHandler$LoopSoundInstance>;
+    // private loopSounds: JavaMap<Holder<SoundEvent>, BiomeAmbientSoundsHandler$LoopSoundInstance>;
     readonly moodiness: number;
     // private player: LocalPlayer;
     // private previousLoopSound: Holder<SoundEvent>;

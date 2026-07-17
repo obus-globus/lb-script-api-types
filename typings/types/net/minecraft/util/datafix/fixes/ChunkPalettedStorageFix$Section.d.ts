@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Dynamic } from '../../../../../com/mojang/serialization/Dynamic.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ChunkPalettedStorageFix$Section extends Object {
@@ -8,7 +9,7 @@ export class ChunkPalettedStorageFix$Section extends Object {
     // private palette: Dynamic<Object>[];
     // private section: Dynamic<Object>;
     // private seen: Dynamic<Object>[];
-    // private toFix: { [key: string]: any };
+    // private toFix: JavaMap<any, any>;
     // private update: (Object | null)[];
     y: number;
     // private addFix(id: number, position: number): void;

@@ -1,13 +1,14 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { ASTNode } from '../../../../../../../io/github/douira/glsl_transformer/ast/node/abstract_node/ASTNode.d.ts'
 import type { ExternalDeclaration } from '../../../../../../../io/github/douira/glsl_transformer/ast/node/external_declaration/ExternalDeclaration.d.ts'
 import type { ExternalDeclarationIndex$DeclarationEntry } from '../../../../../../../io/github/douira/glsl_transformer/ast/query/index/ExternalDeclarationIndex$DeclarationEntry.d.ts'
 import type { StringKeyedIndex } from '../../../../../../../io/github/douira/glsl_transformer/ast/query/index/StringKeyedIndex.d.ts'
 import type { BiConsumer } from '../../../../../../../java/util/function/BiConsumer.d.ts'
 import type { Supplier } from '../../../../../../../java/util/function/Supplier.d.ts'
-export class ExternalDeclarationIndex<S extends ExternalDeclarationIndex$DeclarationEntry[], I extends { [key: string]: S }> extends StringKeyedIndex<ExternalDeclarationIndex$DeclarationEntry, ExternalDeclaration, S, I> {
-    static withOnlyExact<R extends ExternalDeclarationIndex$DeclarationEntry[]>(paramarg0: () => R): ExternalDeclarationIndex<R, { [key: string]: R }>;
-    static withOnlyExact(): ExternalDeclarationIndex<ExternalDeclarationIndex$DeclarationEntry[], { [key: string]: ExternalDeclarationIndex$DeclarationEntry[] }>;
-    static withOnlyExactOrdered(): ExternalDeclarationIndex<ExternalDeclarationIndex$DeclarationEntry[], { [key: string]: ExternalDeclarationIndex$DeclarationEntry[] }>;
+export class ExternalDeclarationIndex<S extends ExternalDeclarationIndex$DeclarationEntry[], I extends JavaMap<string, S>> extends StringKeyedIndex<ExternalDeclarationIndex$DeclarationEntry, ExternalDeclaration, S, I> {
+    static withOnlyExact<R extends ExternalDeclarationIndex$DeclarationEntry[]>(paramarg0: () => R): ExternalDeclarationIndex<R, JavaMap<string, R>>;
+    static withOnlyExact(): ExternalDeclarationIndex<ExternalDeclarationIndex$DeclarationEntry[], JavaMap<string, ExternalDeclarationIndex$DeclarationEntry[]>>;
+    static withOnlyExactOrdered(): ExternalDeclarationIndex<ExternalDeclarationIndex$DeclarationEntry[], JavaMap<string, ExternalDeclarationIndex$DeclarationEntry[]>>;
     constructor(arg0: I, arg1: () => S)
     add(arg0: ExternalDeclaration): void;
     // private addEntry(arg0: ExternalDeclaration, arg1: ASTNode, arg2: string): void;

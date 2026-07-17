@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ImmutableMap$Builder } from '../../../../../com/google/common/collect/ImmutableMap$Builder.d.ts'
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -31,7 +32,7 @@ export class EntityPredicate$Builder extends Object {
     constructor()
     // private parts: ImmutableMap$Builder<Codec<EntitySubPredicate>, EntitySubPredicate>;
     build(): EntityPredicate;
-    components(components: Map<DataComponentPredicate$Type<any>, DataComponentPredicate>): EntityPredicate$Builder;
+    components(components: JavaMap<DataComponentPredicate$Type<any>, DataComponentPredicate>): EntityPredicate$Builder;
     components(components: DataComponentMatchers): EntityPredicate$Builder;
     components(components: DataComponentExactPredicate): EntityPredicate$Builder;
     cubeMob(cubeMob: CubeMobPredicate): EntityPredicate$Builder;

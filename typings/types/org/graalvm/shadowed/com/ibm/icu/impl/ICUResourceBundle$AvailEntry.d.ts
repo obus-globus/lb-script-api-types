@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { ClassLoader } from '../../../../../../../java/lang/ClassLoader.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
@@ -10,7 +11,7 @@ export class ICUResourceBundle$AvailEntry extends Object {
     // private locales: Locale[];
     // private nameSet: string[];
     // private prefix: string;
-    // private ulocales: Map<ULocale$AvailableType, ULocale[]>;
+    // private ulocales: JavaMap<ULocale$AvailableType, ULocale[]>;
     getFullLocaleNameSet(): string[];
     getLocaleList(type: ULocale$AvailableType): Locale[];
     getLocaleNameSet(): string[];

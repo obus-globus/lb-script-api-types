@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Batchifier } from '../../../../../ai/djl/translate/Batchifier.d.ts'
 import type { Locale } from '../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -13,7 +14,7 @@ export abstract class QATranslator$BaseBuilder<T extends QATranslator$BaseBuilde
     // private tokenizerName: string;
     // private truncation: boolean;
     // private vocab: string;
-    configure(arg0: { [key: string]: Object | null }): void;
+    configure(arg0: JavaMap<string, Object | null>): void;
     optBatchifier(arg0: Batchifier): T;
     optIncludeTokenTypes(arg0: boolean): T;
     optLocale(arg0: string): T;

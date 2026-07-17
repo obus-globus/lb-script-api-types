@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { InputStream } from '../../java/io/InputStream.d.ts'
 import type { Reader } from '../../java/io/Reader.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
@@ -85,10 +86,10 @@ export interface CallableStatement extends PreparedStatement, Object{
     getNString(arg0: string): string;
     getObject(arg0: number): Object;
     getObject<T extends unknown>(arg0: number, arg1: Class<T>): T;
-    getObject(arg0: number, arg1: { [key: string]: Class<Object> }): Object;
+    getObject(arg0: number, arg1: JavaMap<string, Class<Object>>): Object;
     getObject(arg0: string): Object;
     getObject<T extends unknown>(arg0: string, arg1: Class<T>): T;
-    getObject(arg0: string, arg1: { [key: string]: Class<Object> }): Object;
+    getObject(arg0: string, arg1: JavaMap<string, Class<Object>>): Object;
     getParameterMetaData(): ParameterMetaData;
     getQueryTimeout(): number;
     getRef(arg0: number): Ref;

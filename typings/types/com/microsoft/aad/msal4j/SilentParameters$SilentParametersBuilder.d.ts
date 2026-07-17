@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ClaimsRequest } from '../../../../com/microsoft/aad/msal4j/ClaimsRequest.d.ts'
 import type { HttpMethod } from '../../../../com/microsoft/aad/msal4j/HttpMethod.d.ts'
 import type { IAccount } from '../../../../com/microsoft/aad/msal4j/IAccount.d.ts'
@@ -10,8 +11,8 @@ export class SilentParameters$SilentParametersBuilder extends Object {
     // private account: IAccount;
     // private authorityUrl: string;
     // private claims: ClaimsRequest;
-    // private extraHttpHeaders: { [key: string]: string };
-    // private extraQueryParameters: { [key: string]: string };
+    // private extraHttpHeaders: JavaMap<string, string>;
+    // private extraQueryParameters: JavaMap<string, string>;
     // private forceRefresh: boolean;
     // private proofOfPossession: PopParameters;
     // private scopes: string[];
@@ -20,8 +21,8 @@ export class SilentParameters$SilentParametersBuilder extends Object {
     authorityUrl(arg0: string): SilentParameters$SilentParametersBuilder;
     build(): SilentParameters;
     claims(arg0: ClaimsRequest): SilentParameters$SilentParametersBuilder;
-    extraHttpHeaders(arg0: { [key: string]: string }): SilentParameters$SilentParametersBuilder;
-    extraQueryParameters(arg0: { [key: string]: string }): SilentParameters$SilentParametersBuilder;
+    extraHttpHeaders(arg0: JavaMap<string, string>): SilentParameters$SilentParametersBuilder;
+    extraQueryParameters(arg0: JavaMap<string, string>): SilentParameters$SilentParametersBuilder;
     forceRefresh(arg0: boolean): SilentParameters$SilentParametersBuilder;
     proofOfPossession(arg0: HttpMethod, arg1: URI, arg2: string): SilentParameters$SilentParametersBuilder;
     scopes(arg0: string[]): SilentParameters$SilentParametersBuilder;

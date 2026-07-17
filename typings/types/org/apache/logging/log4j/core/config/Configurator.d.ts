@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { ClassLoader } from '../../../../../../java/lang/ClassLoader.d.ts'
 import type { URI } from '../../../../../../java/net/URI.d.ts'
@@ -30,7 +31,7 @@ export class Configurator extends Object {
     static setLevel(paramclazz: Class<Object>, paramlevel: Level): void;
     static setLevel(paramloggerName: string, paramlevel: string): void;
     static setLevel(paramloggerName: string, paramlevel: Level): void;
-    static setLevel(paramlevelMap: { [key: string]: Level }): void;
+    static setLevel(paramlevelMap: JavaMap<string, Level>): void;
     static setRootLevel(paramlevel: Level): void;
     static shutdown(paramctx: LoggerContext, paramtimeout: number, paramtimeUnit: TimeUnit): boolean;
     static shutdown(paramctx: LoggerContext): void;

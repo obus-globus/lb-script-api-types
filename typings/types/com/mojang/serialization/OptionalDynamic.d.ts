@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Pair } from '../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { DataResult } from '../../../com/mojang/serialization/DataResult.d.ts'
 import type { Decoder } from '../../../com/mojang/serialization/Decoder.d.ts'
@@ -21,7 +22,7 @@ export class OptionalDynamic<T extends unknown> extends DynamicLike<T> {
     asIntStreamOpt(): DataResult<IntStream>;
     asLongStreamOpt(): DataResult<LongStream>;
     asMapOpt(): DataResult<Stream<Pair<Dynamic<T>, Dynamic<T>>>>;
-    asMapOpt<K extends unknown, V extends unknown>(arg0: (param0: Dynamic<T>) => K, arg1: (param0: Dynamic<T>) => V): DataResult<Map<K, V>>;
+    asMapOpt<K extends unknown, V extends unknown>(arg0: (param0: Dynamic<T>) => K, arg1: (param0: Dynamic<T>) => V): DataResult<JavaMap<K, V>>;
     asNumber(): DataResult<Number>;
     asNumber(arg0: Number): Number;
     asStreamOpt(): DataResult<Stream<Dynamic<T>>>;

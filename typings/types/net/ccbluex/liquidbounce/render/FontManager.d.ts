@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { File } from '../../../../java/io/File.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -30,8 +31,8 @@ export class FontManager extends Object {
     readonly FONT_RENDERER: FontRenderer;
     // private STYLES: number[];
     // private _glyphManager: FontGlyphPageManager | null;
-    // private fontFaces: { [key: string]: FontFace };
-    /*not mapped: */ getFontFaces$net_ccbluex_liquidbounce(): { [key: string]: FontFace };
+    // private fontFaces: JavaMap<string, FontFace>;
+    /*not mapped: */ getFontFaces$net_ccbluex_liquidbounce(): JavaMap<string, FontFace>;
     /**
      * The glyph manager that is responsible for managing the glyph pages.
      *

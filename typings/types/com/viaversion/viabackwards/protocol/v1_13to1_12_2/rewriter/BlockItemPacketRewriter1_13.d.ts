@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Tag } from '../../../../../../com/viaversion/nbt/tag/Tag.d.ts'
 import type { BackwardsItemRewriter } from '../../../../../../com/viaversion/viabackwards/api/rewriters/BackwardsItemRewriter.d.ts'
 import type { Protocol1_13To1_12_2 } from '../../../../../../com/viaversion/viabackwards/protocol/v1_13to1_12_2/Protocol1_13To1_12_2.d.ts'
@@ -9,7 +10,7 @@ import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class BlockItemPacketRewriter1_13 extends BackwardsItemRewriter<ClientboundPackets1_13, ServerboundPackets1_12_1, Protocol1_13To1_12_2> {
     static isDamageable(paramarg0: number): boolean;
     constructor(arg0: Protocol1_13To1_12_2)
-    // private enchantmentMappings: { [key: string]: string };
+    // private enchantmentMappings: JavaMap<string, string>;
     // private extraNbtTag: string;
     handleItemToClient(arg0: UserConnection, arg1: Item): Item;
     handleItemToServer(arg0: UserConnection, arg1: Item): Item;

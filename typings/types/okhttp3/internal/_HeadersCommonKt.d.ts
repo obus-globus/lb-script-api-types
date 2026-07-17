@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Pair } from '../../kotlin/Pair.d.ts'
 import type { Iterator } from '../../java/util/Iterator.d.ts'
@@ -18,7 +19,7 @@ export class _HeadersCommonKt extends Object {
     static commonNewBuilder(self: Pair<string, string>[]): Headers$Builder;
     static commonRemoveAll(self: Headers$Builder, name: string): Headers$Builder;
     static commonSet(self: Headers$Builder, name: string, value: string): Headers$Builder;
-    static commonToHeaders(self: { [key: string]: string }): Pair<string, string>[];
+    static commonToHeaders(self: JavaMap<string, string>): Pair<string, string>[];
     static commonToString(self: Pair<string, string>[]): string;
     static commonValue(self: Pair<string, string>[], index: number): string;
     static commonValues(self: Pair<string, string>[], name: string): string[];

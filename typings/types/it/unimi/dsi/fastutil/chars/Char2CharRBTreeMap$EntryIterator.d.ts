@@ -1,9 +1,10 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Char2CharMap$Entry } from '../../../../../it/unimi/dsi/fastutil/chars/Char2CharMap$Entry.d.ts'
 import type { Char2CharRBTreeMap$TreeIterator } from '../../../../../it/unimi/dsi/fastutil/chars/Char2CharRBTreeMap$TreeIterator.d.ts'
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 export class Char2CharRBTreeMap$EntryIterator extends Char2CharRBTreeMap$TreeIterator implements ObjectListIterator<Char2CharMap$Entry> {
-    constructor(null_: { [key: string]: any })
-    constructor(null_: { [key: string]: any }, arg1: string)
+    constructor(null_: JavaMap<any, any>)
+    constructor(null_: JavaMap<any, any>, arg1: string)
     add(arg0: Char2CharMap$Entry): void;
     next(): Char2CharMap$Entry;
     previous(): Char2CharMap$Entry;

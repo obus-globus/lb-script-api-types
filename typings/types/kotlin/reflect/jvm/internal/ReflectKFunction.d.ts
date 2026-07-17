@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { GenericDeclaration } from '../../../../java/lang/reflect/GenericDeclaration.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { KotlinGenericDeclaration } from '../../../../kotlin/jvm/internal/KotlinGenericDeclaration.d.ts'
@@ -9,6 +10,6 @@ export interface ReflectKFunction extends Object, KotlinGenericDeclaration, KFun
     readonly overridden: ReflectKFunction[];
     readonly signature: string;
     call(...args: (Object | null)[]): Object | null;
-    callBy(args: Map<KParameter, Object | null>): Object | null;
+    callBy(args: JavaMap<KParameter, Object | null>): Object | null;
     findJavaDeclaration(): GenericDeclaration | null;
 }

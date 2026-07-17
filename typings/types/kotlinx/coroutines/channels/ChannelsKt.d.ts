@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Comparator } from '../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Pair } from '../../../kotlin/Pair.d.ts'
@@ -62,8 +63,8 @@ export class ChannelsKt extends Object {
     static toChannel<C extends SendChannel<E>, E extends unknown>(self: ReceiveChannel<E>, destination: C): C;
     static toCollection<C extends E[], E extends unknown>(self: ReceiveChannel<E>, destination: C): C;
     static toList<E extends unknown>(self: ReceiveChannel<E>): E[];
-    static toMap<M extends Map<K, V>, K extends unknown, V extends unknown>(self: ReceiveChannel<Pair<K, V>>, destination: M): M;
-    static toMap<K extends unknown, V extends unknown>(self: ReceiveChannel<Pair<K, V>>): Map<K, V>;
+    static toMap<M extends JavaMap<K, V>, K extends unknown, V extends unknown>(self: ReceiveChannel<Pair<K, V>>, destination: M): M;
+    static toMap<K extends unknown, V extends unknown>(self: ReceiveChannel<Pair<K, V>>): JavaMap<K, V>;
     static toMutableList<E extends unknown>(self: ReceiveChannel<E>): E[];
     static toMutableSet<E extends unknown>(self: ReceiveChannel<E>): E[];
     static toSet<E extends unknown>(self: ReceiveChannel<E>): E[];

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { HolderLookup$Provider } from '../../../../net/minecraft/core/HolderLookup$Provider.d.ts'
@@ -16,9 +17,9 @@ export class DedicatedServerProperties extends Settings<DedicatedServerPropertie
     static MANAGEMENT_SERVER_TLS_KEYSTORE_PASSWORD_KEY: string;
     static deserializePermission(paramvalue: string): LevelBasedPermissionSet;
     static fromFile(paramfile: Path): DedicatedServerProperties;
-    static loadFromFile(paramfile: Path): { [key: string]: any };
+    static loadFromFile(paramfile: Path): JavaMap<any, any>;
     static serializePermission(parampermission: LevelBasedPermissionSet): string;
-    constructor(settings: { [key: string]: any })
+    constructor(settings: JavaMap<any, any>)
     acceptsTransfers: Settings$MutableValue<Object>;
     allowFlight: Settings$MutableValue<Object>;
     announcePlayerAchievements: boolean;
@@ -83,5 +84,5 @@ export class DedicatedServerProperties extends Settings<DedicatedServerPropertie
     // private worldDimensionData: DedicatedServerProperties$WorldDimensionData;
     worldOptions: WorldOptions;
     createDimensions(registries: HolderLookup$Provider): WorldDimensions;
-    reload(registryAccess: RegistryAccess, properties: { [key: string]: any }): DedicatedServerProperties;
+    reload(registryAccess: RegistryAccess, properties: JavaMap<any, any>): DedicatedServerProperties;
 }

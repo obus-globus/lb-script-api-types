@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { BiConsumer } from '../../../../java/util/function/BiConsumer.d.ts'
@@ -33,7 +34,7 @@ export class MobEffect extends Object implements FabricMobEffect, FeatureElement
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Holder<MobEffect>>;
     constructor(category: MobEffectCategory, color: number)
     constructor(category: MobEffectCategory, color: number, particleOptions: ParticleOptions)
-    // private attributeModifiers: Map<Holder<Attribute>, MobEffect$AttributeTemplate>;
+    // private attributeModifiers: JavaMap<Holder<Attribute>, MobEffect$AttributeTemplate>;
     readonly blendInDurationTicks: number;
     readonly blendOutAdvanceTicks: number;
     readonly blendOutDurationTicks: number;

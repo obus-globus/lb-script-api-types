@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Exception } from '../../../java/lang/Exception.d.ts'
 import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Optional } from '../../../java/util/Optional.d.ts'
@@ -28,7 +29,7 @@ export class Iris extends Object {
     static getIrisConfig(): IrisConfig;
     static getPipelineManager(): PipelineManager;
     static getReleaseTarget(): string;
-    static getShaderPackOptionQueue(): { [key: string]: string };
+    static getShaderPackOptionQueue(): JavaMap<string, string>;
     static getShaderpacksDirectory(): Path;
     static getShaderpacksDirectoryManager(): ShaderpackDirectoryManager;
     static getStoredError(): Optional<Exception>;
@@ -48,7 +49,7 @@ export class Iris extends Object {
     static onRenderSystemInit(): void;
     static queueDefaultShaderPackOptionValues(): void;
     static queueShaderPackOptionsFromProfile(paramarg0: Profile): void;
-    static queueShaderPackOptionsFromProperties(paramarg0: { [key: string]: any }): void;
+    static queueShaderPackOptionsFromProperties(paramarg0: JavaMap<any, any>): void;
     static reload(): void;
     static resetShaderPackOptionsOnNextReload(): void;
     static setDebug(paramarg0: boolean): void;

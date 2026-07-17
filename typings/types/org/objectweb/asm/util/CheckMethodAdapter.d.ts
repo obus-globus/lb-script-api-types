@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { AnnotationVisitor } from '../../../../org/objectweb/asm/AnnotationVisitor.d.ts'
 import type { Attribute } from '../../../../org/objectweb/asm/Attribute.d.ts'
@@ -6,16 +7,16 @@ import type { Label } from '../../../../org/objectweb/asm/Label.d.ts'
 import type { MethodVisitor } from '../../../../org/objectweb/asm/MethodVisitor.d.ts'
 import type { TypePath } from '../../../../org/objectweb/asm/TypePath.d.ts'
 export class CheckMethodAdapter extends MethodVisitor {
-    constructor(arg0: number, arg1: number, arg2: string, arg3: string, arg4: MethodVisitor, arg5: Map<Label, number>)
-    constructor(arg0: number, arg1: string, arg2: string, arg3: MethodVisitor, arg4: Map<Label, number>)
-    constructor(arg0: number, arg1: MethodVisitor, arg2: Map<Label, number>)
+    constructor(arg0: number, arg1: number, arg2: string, arg3: string, arg4: MethodVisitor, arg5: JavaMap<Label, number>)
+    constructor(arg0: number, arg1: string, arg2: string, arg3: MethodVisitor, arg4: JavaMap<Label, number>)
+    constructor(arg0: number, arg1: MethodVisitor, arg2: JavaMap<Label, number>)
     constructor(arg0: MethodVisitor)
-    constructor(arg0: MethodVisitor, arg1: Map<Label, number>)
+    constructor(arg0: MethodVisitor, arg1: JavaMap<Label, number>)
     // private access: number;
     // private handlers: Label[];
     // private insnCount: number;
     // private invisibleAnnotableParameterCount: number;
-    // private labelInsnIndices: Map<Label, number>;
+    // private labelInsnIndices: JavaMap<Label, number>;
     // private lastFrameInsnIndex: number;
     // private numCompressedFrames: number;
     // private numExpandedFrames: number;

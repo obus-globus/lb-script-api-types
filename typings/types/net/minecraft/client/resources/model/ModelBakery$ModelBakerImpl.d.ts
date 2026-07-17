@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlockStateModelPart } from '../../../../../net/minecraft/client/renderer/block/dispatch/BlockStateModelPart.d.ts'
@@ -15,7 +16,7 @@ export class ModelBakery$ModelBakerImpl extends Object implements ModelBaker {
     // private interner: ModelBaker$Interner;
     // private materials: MaterialBaker;
     // private missingModels: ModelBakery$MissingModels;
-    // private operationCache: Map<(param0: ModelBaker) => Object, Object>;
+    // private operationCache: JavaMap<(param0: ModelBaker) => Object, Object>;
     compute<T extends unknown>(key: (param0: ModelBaker) => T): T;
     getModel(location: Identifier): ResolvedModel;
     interner(): ModelBaker$Interner;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { InteropLibrary } from '../../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { HeapDump } from '../../../../../../org/graalvm/tools/insight/heap/HeapDump.d.ts'
@@ -9,17 +10,17 @@ import type { HeapGenerator$SourceKey } from '../../../../../../org/graalvm/tool
 import type { HeapGenerator$SourceSectionKey } from '../../../../../../org/graalvm/tools/insight/heap/instrument/HeapGenerator$SourceSectionKey.d.ts'
 export class HeapGenerator extends Object {
     constructor(generator: HeapDump$Builder)
-    // private classes: Map<string[], HeapDump$ClassInstance>;
+    // private classes: JavaMap<string[], HeapDump$ClassInstance>;
     // private frames: number;
     // private generator: HeapDump$Builder;
     // private keyClass: HeapDump$ClassInstance;
-    // private languages: { [key: string]: HeapDump$ClassInstance };
-    // private objects: Map<Object, HeapDump$ObjectInstance>;
+    // private languages: JavaMap<string, HeapDump$ClassInstance>;
+    // private objects: JavaMap<Object, HeapDump$ObjectInstance>;
     // private pending: HeapGenerator$Dump[];
     // private sourceClass: HeapDump$ClassInstance;
     // private sourceSectionClass: HeapDump$ClassInstance;
-    // private sourceSections: Map<HeapGenerator$SourceSectionKey, HeapDump$ObjectInstance>;
-    // private sources: Map<HeapGenerator$SourceKey, HeapDump$ObjectInstance>;
+    // private sourceSections: JavaMap<HeapGenerator$SourceSectionKey, HeapDump$ObjectInstance>;
+    // private sources: JavaMap<HeapGenerator$SourceKey, HeapDump$ObjectInstance>;
     // private unreachable: HeapDump$ObjectInstance;
     dump(args: Object[]): void;
     // private dumpObject(iop: InteropLibrary, seg: HeapDump, metaName: string, obj: Object, depth: number): HeapDump$ObjectInstance;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { JsonConfiguration } from '../../../../kotlinx/serialization/json/JsonConfiguration.d.ts'
 import type { JsonElement } from '../../../../kotlinx/serialization/json/JsonElement.d.ts'
@@ -13,6 +14,6 @@ export class JsonTreeReader extends Object {
     // private readArray(): JsonElement;
     // private readDeepRecursive(): JsonElement;
     // private readObject(): JsonElement;
-    // private readObjectImpl(reader: () => JsonElement): { [key: string]: any };
+    // private readObjectImpl(reader: () => JsonElement): JavaMap<any, any>;
     // private readValue(isString: boolean): JsonPrimitive;
 }

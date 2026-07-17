@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { NDManager } from '../../../../ai/djl/ndarray/NDManager.d.ts'
 import type { DataType } from '../../../../ai/djl/ndarray/types/DataType.d.ts'
 import type { Shape } from '../../../../ai/djl/ndarray/types/Shape.d.ts'
@@ -21,7 +22,7 @@ export class PtSymbolBlock extends AbstractSymbolBlock implements AutoCloseable 
     // private isTrain: boolean;
     // private manager: PtNDManager;
     // private outputDescriptions: Pair<string, Shape>[];
-    readonly parameters: { [key: string]: Parameter };
+    readonly parameters: JavaMap<string, Parameter>;
     // private uid: string;
     close(): void;
     describeInput(): Pair<string, Shape>[];

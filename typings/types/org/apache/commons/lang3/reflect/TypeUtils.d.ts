@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { GenericArrayType } from '../../../../../java/lang/reflect/GenericArrayType.d.ts'
 import type { ParameterizedType } from '../../../../../java/lang/reflect/ParameterizedType.d.ts'
@@ -10,7 +11,7 @@ import type { Typed } from '../../../../../org/apache/commons/lang3/reflect/Type
 export class TypeUtils extends Object {
     static WILDCARD_ALL: WildcardType;
     static containsTypeVariables(paramarg0: Type): boolean;
-    static determineTypeArguments(paramarg0: Class<Object>, paramarg1: ParameterizedType): Map<TypeVariable<any>, Type>;
+    static determineTypeArguments(paramarg0: Class<Object>, paramarg1: ParameterizedType): JavaMap<TypeVariable<any>, Type>;
     static equals(paramarg0: Type, paramarg1: Type): boolean;
     static genericArrayType(paramarg0: Type): GenericArrayType;
     static getArrayComponentType(paramarg0: Type): Type;
@@ -18,20 +19,20 @@ export class TypeUtils extends Object {
     static getImplicitLowerBounds(paramarg0: WildcardType): Type[];
     static getImplicitUpperBounds(paramarg0: WildcardType): Type[];
     static getRawType(paramarg0: Type, paramarg1: Type): Class<Object>;
-    static getTypeArguments(paramarg0: ParameterizedType): Map<TypeVariable<any>, Type>;
-    static getTypeArguments(paramarg0: Type, paramarg1: Class<Object>): Map<TypeVariable<any>, Type>;
+    static getTypeArguments(paramarg0: ParameterizedType): JavaMap<TypeVariable<any>, Type>;
+    static getTypeArguments(paramarg0: Type, paramarg1: Class<Object>): JavaMap<TypeVariable<any>, Type>;
     static isArrayType(paramarg0: Type): boolean;
     static isAssignable(paramarg0: Type, paramarg1: Type): boolean;
     static isInstance(paramarg0: Object, paramarg1: Type): boolean;
     static normalizeUpperBounds(paramarg0: Type[]): Type[];
     static parameterize(paramarg0: Class<Object>, ...paramarg1: Type[]): ParameterizedType;
-    static parameterize(paramarg0: Class<Object>, paramarg1: Map<TypeVariable<any>, Type>): ParameterizedType;
+    static parameterize(paramarg0: Class<Object>, paramarg1: JavaMap<TypeVariable<any>, Type>): ParameterizedType;
     static parameterizeWithOwner(paramarg0: Type, paramarg1: Class<Object>, ...paramarg2: Type[]): ParameterizedType;
-    static parameterizeWithOwner(paramarg0: Type, paramarg1: Class<Object>, paramarg2: Map<TypeVariable<any>, Type>): ParameterizedType;
+    static parameterizeWithOwner(paramarg0: Type, paramarg1: Class<Object>, paramarg2: JavaMap<TypeVariable<any>, Type>): ParameterizedType;
     static toLongString(paramarg0: TypeVariable<any>): string;
     static toString(paramarg0: Type): string;
-    static typesSatisfyVariables(paramarg0: Map<TypeVariable<any>, Type>): boolean;
-    static unrollVariables(paramarg0: Map<TypeVariable<any>, Type>, paramarg1: Type): Type;
+    static typesSatisfyVariables(paramarg0: JavaMap<TypeVariable<any>, Type>): boolean;
+    static unrollVariables(paramarg0: JavaMap<TypeVariable<any>, Type>, paramarg1: Type): Type;
     static wildcardType(): TypeUtils$WildcardTypeBuilder;
     static wrap<T extends unknown>(paramarg0: Class<T>): () => Type;
     static wrap<T extends unknown>(paramarg0: Type): () => Type;

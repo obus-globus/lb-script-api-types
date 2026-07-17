@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Tag } from '../../../../../../com/viaversion/nbt/tag/Tag.d.ts'
 import type { EntityData } from '../../../../../../com/viaversion/viaversion/api/minecraft/entitydata/EntityData.d.ts'
 import type { Item } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/Item.d.ts'
@@ -6,7 +7,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class MannequinData extends Object {
     constructor(arg0: UUID, arg1: string)
     // private entityData: EntityData[];
-    // private itemMap: { [key: number]: Item };
+    // private itemMap: JavaMap<number, Item>;
     // private name: string;
     // private pitch: number;
     // private uuid: UUID;
@@ -18,7 +19,7 @@ export class MannequinData extends Object {
     entityData(): EntityData[];
     hasTeam(): boolean;
     headYaw(): number;
-    itemMap(): { [key: number]: Item };
+    itemMap(): JavaMap<number, Item>;
     name(): string;
     passengers(): number[];
     pitch(): number;

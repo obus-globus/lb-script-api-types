@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { StringBuilder } from '../../../../../../java/lang/StringBuilder.d.ts'
 import type { TimeUnit } from '../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -21,9 +22,9 @@ export class StructuredDataFilter extends MapFilter {
     static EMPTY_ARRAY: Filter[];
     static createFilter(parampairs: KeyValuePair[], paramoper: string, parammatch: Filter$Result, parammismatch: Filter$Result): MapFilter;
     static createFilter(parampairs: KeyValuePair[], paramoper: string, parammatch: Filter$Result, parammismatch: Filter$Result): StructuredDataFilter;
-    private constructor(map: { [key: string]: string[] }, oper: boolean, onMatch: Filter$Result, onMismatch: Filter$Result)
+    private constructor(map: JavaMap<string, string[]>, oper: boolean, onMatch: Filter$Result, onMismatch: Filter$Result)
     // private appendOrNull(value: string, sb: StringBuilder): StringBuilder;
-    filter(data: { [key: string]: string }): boolean;
+    filter(data: JavaMap<string, string>): boolean;
     filter(event: LogEvent): Filter$Result;
     filter(logger: Logger, level: Level, marker: Marker, msg: Object, t: Throwable): Filter$Result;
     filter(logger: Logger, level: Level, marker: Marker, msg: string): Filter$Result;

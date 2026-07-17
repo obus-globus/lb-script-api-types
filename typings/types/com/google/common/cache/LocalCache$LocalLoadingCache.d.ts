@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { CacheBuilder } from '../../../../com/google/common/cache/CacheBuilder.d.ts'
 import type { CacheLoader } from '../../../../com/google/common/cache/CacheLoader.d.ts'
 import type { LoadingCache } from '../../../../com/google/common/cache/LoadingCache.d.ts'
@@ -10,7 +11,7 @@ export class LocalCache$LocalLoadingCache<K extends unknown, V extends unknown> 
     apply(key: K): V;
     get(key: K): V;
     get(key: K, valueLoader: () => V): V;
-    getAll(keys: K[]): Map<K, V>;
+    getAll(keys: K[]): JavaMap<K, V>;
     getUnchecked(key: K): V;
     // private readObject(in_: ObjectInputStream): void;
     refresh(key: K): void;

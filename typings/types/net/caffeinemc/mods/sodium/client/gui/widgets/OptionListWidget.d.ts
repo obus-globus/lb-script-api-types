@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Consumer } from '../../../../../../../java/util/function/Consumer.d.ts'
 import type { Option$OptionNameSource } from '../../../../../../../net/caffeinemc/mods/sodium/client/config/structure/Option$OptionNameSource.d.ts'
 import type { Page } from '../../../../../../../net/caffeinemc/mods/sodium/client/config/structure/Page.d.ts'
@@ -13,7 +14,7 @@ export class OptionListWidget extends AbstractOptionList {
     // private ignoreNextScrollUpdate: boolean;
     // private lastFocusedSection: OptionListWidget$SectionInfo;
     // private onPageFocused: (param0: Page) => void;
-    // private pageToSectionInfo: Map<Page, OptionListWidget$SectionInfo>;
+    // private pageToSectionInfo: JavaMap<Page, OptionListWidget$SectionInfo>;
     clearFilter(): void;
     extractRenderState(arg0: GuiGraphicsExtractor, arg1: number, arg2: number, arg3: number): void;
     jumpToPage(arg0: Page): void;

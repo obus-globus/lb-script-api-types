@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { TruffleContext } from '../../../../../com/oracle/truffle/api/TruffleContext.d.ts'
 import type { DebuggerSession } from '../../../../../com/oracle/truffle/api/debug/DebuggerSession.d.ts'
 import type { ContextsListener } from '../../../../../com/oracle/truffle/api/instrumentation/ContextsListener.d.ts'
@@ -18,9 +19,9 @@ export class ScriptsHandler extends Object implements LoadSourceListener {
     // private listeners: ScriptsHandler$LoadScriptListener[];
     // private reportInternal: boolean;
     readonly scripts: Script[];
-    // private sourceIDs: Map<Source, number>;
+    // private sourceIDs: JavaMap<Source, number>;
     // private sourcesBacklog: Source[];
-    // private uniqueSourceNames: { [key: string]: number };
+    // private uniqueSourceNames: JavaMap<string, number>;
     addLoadScriptListener(listener: ScriptsHandler$LoadScriptListener): void;
     assureLoaded(sourceLoaded: Source): Script;
     // private assureLoaded(sourceLoaded: Source, truffleContext: TruffleContext): Script;

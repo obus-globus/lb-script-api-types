@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { CallTarget } from '../../../../com/oracle/truffle/api/CallTarget.d.ts'
 import type { Source } from '../../../../com/oracle/truffle/api/source/Source.d.ts'
 import type { PolyglotEngineImpl } from '../../../../com/oracle/truffle/polyglot/PolyglotEngineImpl.d.ts'
@@ -11,7 +12,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 export class SourceCacheStatisticsListener extends Object implements SourceCacheListener {
     private constructor(sourceCacheStatisticDetails: boolean)
-    // private cacheCounters: Map<SourceCacheStatisticsListener$CacheCounterKey, SourceCacheStatisticsListener$SourceCacheCounters>;
+    // private cacheCounters: JavaMap<SourceCacheStatisticsListener$CacheCounterKey, SourceCacheStatisticsListener$SourceCacheCounters>;
     // private showAllDetails: boolean;
     // private finalizeAllCounters(counters: SourceCacheStatisticsListener$SourceCacheCounters): void;
     // private getCacheCounter(sharingLayerId: number, cacheType: SourceCacheListener$CacheType): SourceCacheStatisticsListener$SourceCacheCounters;

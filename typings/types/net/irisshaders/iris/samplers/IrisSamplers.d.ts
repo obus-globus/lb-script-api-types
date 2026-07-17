@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { GpuSampler } from '../../../../com/mojang/blaze3d/textures/GpuSampler.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -18,7 +19,7 @@ export class IrisSamplers extends Object {
     static WORLD_RESERVED_TEXTURE_UNITS: number[];
     static addCompositeSamplers(paramarg0: SamplerHolder, paramarg1: RenderTargets): void;
     static addCustomImages(paramarg0: SamplerHolder, paramarg1: GlImage[]): void;
-    static addCustomTextures(paramarg0: SamplerHolder, paramarg1: { [key: string]: TextureAccess }): void;
+    static addCustomTextures(paramarg0: SamplerHolder, paramarg1: JavaMap<string, TextureAccess>): void;
     static addLevelSamplers(paramarg0: SamplerHolder, paramarg1: WorldRenderingPipeline, paramarg2: AbstractTexture, paramarg3: boolean, paramarg4: boolean, paramarg5: boolean): void;
     static addNoiseSampler(paramarg0: SamplerHolder, paramarg1: TextureAccess): void;
     static addRenderTargetSamplers(paramarg0: SamplerHolder, paramarg1: () => number[], paramarg2: RenderTargets, paramarg3: boolean, paramarg4: WorldRenderingPipeline): void;

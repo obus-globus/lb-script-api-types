@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { CompactData$CompactType } from '../../../../com/ibm/icu/impl/number/CompactData$CompactType.d.ts'
 import type { MicroPropsGenerator } from '../../../../com/ibm/icu/impl/number/MicroPropsGenerator.d.ts'
 import type { MutablePatternModifier } from '../../../../com/ibm/icu/impl/number/MutablePatternModifier.d.ts'
@@ -11,12 +12,12 @@ export class CompactNotation extends Notation {
     static compactLong(): CompactNotation;
     static compactShort(): CompactNotation;
     static engineering(): ScientificNotation;
-    static forCustomData(paramarg0: { [key: string]: { [key: string]: string } }): CompactNotation;
+    static forCustomData(paramarg0: JavaMap<string, JavaMap<string, string>>): CompactNotation;
     static scientific(): ScientificNotation;
     static simple(): SimpleNotation;
     constructor(arg0: CompactDecimalFormat$CompactStyle)
-    constructor(arg0: { [key: string]: { [key: string]: string } })
-    // private compactCustomData: { [key: string]: { [key: string]: string } };
+    constructor(arg0: JavaMap<string, JavaMap<string, string>>)
+    // private compactCustomData: JavaMap<string, JavaMap<string, string>>;
     // private compactStyle: CompactDecimalFormat$CompactStyle;
     withLocaleData(arg0: ULocale, arg1: string, arg2: CompactData$CompactType, arg3: PluralRules, arg4: MutablePatternModifier, arg5: boolean, arg6: MicroPropsGenerator): MicroPropsGenerator;
 }

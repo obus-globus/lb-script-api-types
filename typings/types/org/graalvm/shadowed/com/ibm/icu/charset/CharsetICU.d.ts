@@ -1,8 +1,9 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Charset } from '../../../../../../../java/nio/charset/Charset.d.ts'
 export abstract class CharsetICU extends Charset {
     static ROUNDTRIP_AND_FALLBACK_SET: number;
     static ROUNDTRIP_SET: number;
-    static availableCharsets(): { [key: string]: Charset };
+    static availableCharsets(): JavaMap<string, Charset>;
     static defaultCharset(): Charset;
     static forName(paramarg0: string): Charset;
     static forName(paramarg0: string, paramarg1: Charset): Charset;

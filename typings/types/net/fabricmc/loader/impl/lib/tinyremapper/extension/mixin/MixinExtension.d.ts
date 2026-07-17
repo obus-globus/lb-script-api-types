@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Consumer } from '../../../../../../../../java/util/function/Consumer.d.ts'
 import type { Predicate } from '../../../../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
@@ -14,7 +15,7 @@ export class MixinExtension extends Object implements TinyRemapper$Extension {
     constructor(arg0: MixinExtension$AnnotationTarget[], arg1: (param0: InputTag) => boolean)
     // private inputTagFilter: (param0: InputTag) => boolean;
     // private targets: MixinExtension$AnnotationTarget[];
-    // private tasks: { [key: number]: (param0: CommonData) => void[] };
+    // private tasks: JavaMap<number, (param0: CommonData) => void[]>;
     attach(arg0: TinyRemapper$Builder): void;
     // private stateProcessor(arg0: TrEnvironment): void;
 }

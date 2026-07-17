@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Ops } from '../../../../../../../com/viaversion/viaversion/api/minecraft/codec/Ops.d.ts'
 import type { StructuredData } from '../../../../../../../com/viaversion/viaversion/api/minecraft/data/StructuredData.d.ts'
 import type { StructuredDataKey } from '../../../../../../../com/viaversion/viaversion/api/minecraft/data/StructuredDataKey.d.ts'
@@ -10,7 +11,7 @@ export class ItemType1_20_5 extends Type<Item> {
     constructor(arg0: StructuredDataTypeBase)
     // private dataType: StructuredDataTypeBase;
     read(arg0: ByteBuf): Item;
-    readData(arg0: ByteBuf): Map<StructuredDataKey<Object>, StructuredData<Object>>;
+    readData(arg0: ByteBuf): JavaMap<StructuredDataKey<Object>, StructuredData<Object>>;
     write(arg0: Ops, arg1: Item): void;
     write(arg0: ByteBuf, arg1: Item): void;
     writeData(arg0: ByteBuf, arg1: Item): void;

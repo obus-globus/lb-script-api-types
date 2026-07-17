@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { EntityModelSet } from '../../../../../net/minecraft/client/model/geom/EntityModelSet.d.ts'
@@ -8,20 +9,20 @@ import type { ModelBakery$BakingResult } from '../../../../../net/minecraft/clie
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { Fluid } from '../../../../../net/minecraft/world/level/material/Fluid.d.ts'
 export class ModelManager$ReloadState extends Record {
-    private constructor(bakedModels: ModelBakery$BakingResult, modelGroups: { [key: string]: any }, blockStateModels: Map<BlockState, BlockStateModel>, blockModels: Map<BlockState, BlockModel>, fluidModels: Map<Fluid, FluidModel>, entityModelSet: EntityModelSet)
+    private constructor(bakedModels: ModelBakery$BakingResult, modelGroups: JavaMap<any, any>, blockStateModels: JavaMap<BlockState, BlockStateModel>, blockModels: JavaMap<BlockState, BlockModel>, fluidModels: JavaMap<Fluid, FluidModel>, entityModelSet: EntityModelSet)
     // private bakedModels: ModelBakery$BakingResult;
-    // private blockModels: Map<BlockState, BlockModel>;
-    // private blockStateModels: Map<BlockState, BlockStateModel>;
+    // private blockModels: JavaMap<BlockState, BlockModel>;
+    // private blockStateModels: JavaMap<BlockState, BlockStateModel>;
     // private entityModelSet: EntityModelSet;
-    // private fluidModels: Map<Fluid, FluidModel>;
-    // private modelGroups: { [key: string]: any };
+    // private fluidModels: JavaMap<Fluid, FluidModel>;
+    // private modelGroups: JavaMap<any, any>;
     bakedModels(): ModelBakery$BakingResult;
-    blockModels(): Map<BlockState, BlockModel>;
-    blockStateModels(): Map<BlockState, BlockStateModel>;
+    blockModels(): JavaMap<BlockState, BlockModel>;
+    blockStateModels(): JavaMap<BlockState, BlockStateModel>;
     entityModelSet(): EntityModelSet;
     equals(o: Object | null): boolean;
-    fluidModels(): Map<Fluid, FluidModel>;
+    fluidModels(): JavaMap<Fluid, FluidModel>;
     hashCode(): number;
-    modelGroups(): { [key: string]: any };
+    modelGroups(): JavaMap<any, any>;
     toString(): string;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Version } from '../../../../../net/fabricmc/loader/api/Version.d.ts'
 import type { ContactInformation } from '../../../../../net/fabricmc/loader/api/metadata/ContactInformation.d.ts'
@@ -9,14 +10,14 @@ import type { AbstractModMetadata } from '../../../../../net/fabricmc/loader/imp
 export class BuiltinModMetadata extends AbstractModMetadata {
     static TYPE_BUILTIN: string;
     static TYPE_FABRIC_MOD: string;
-    private constructor(arg0: string, arg1: Version, arg2: ModEnvironment, arg3: string, arg4: string, arg5: Person[], arg6: Person[], arg7: ContactInformation, arg8: string[], arg9: { [key: number]: string }, arg10: ModDependency[])
+    private constructor(arg0: string, arg1: Version, arg2: ModEnvironment, arg3: string, arg4: string, arg5: Person[], arg6: Person[], arg7: ContactInformation, arg8: string[], arg9: JavaMap<number, string>, arg10: ModDependency[])
     readonly authors: Person[];
     readonly contact: ContactInformation;
     readonly contributors: Person[];
     readonly dependencies: ModDependency[];
     readonly description: string;
     readonly environment: ModEnvironment;
-    // private icons: { [key: number]: string };
+    // private icons: JavaMap<number, string>;
     readonly id: string;
     readonly license: string[];
     readonly name: string;
@@ -26,7 +27,7 @@ export class BuiltinModMetadata extends AbstractModMetadata {
     getContact(): ContactInformation;
     getContributors(): Person[];
     getCustomValue(arg0: string): CustomValue;
-    getCustomValues(): { [key: string]: CustomValue };
+    getCustomValues(): JavaMap<string, CustomValue>;
     getDependencies(): ModDependency[];
     getDescription(): string;
     getEnvironment(): ModEnvironment;

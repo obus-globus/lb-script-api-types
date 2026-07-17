@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { MessageDigest } from '../../../../../java/security/MessageDigest.d.ts'
@@ -8,8 +9,8 @@ import type { GitIdentifiers$FileMode } from '../../../../../org/apache/commons/
 import type { GitIdentifiers$TreeIdBuilder$BlobIdSupplier } from '../../../../../org/apache/commons/codec/digest/GitIdentifiers$TreeIdBuilder$BlobIdSupplier.d.ts'
 export class GitIdentifiers$TreeIdBuilder extends Object implements Supplier<number[]> {
     private constructor(arg0: MessageDigest)
-    // private dirEntries: { [key: string]: GitIdentifiers$TreeIdBuilder };
-    // private fileEntries: { [key: string]: GitIdentifiers$DirectoryEntry };
+    // private dirEntries: JavaMap<string, GitIdentifiers$TreeIdBuilder>;
+    // private fileEntries: JavaMap<string, GitIdentifiers$DirectoryEntry>;
     // private messageDigest: MessageDigest;
     addDirectory(arg0: string): GitIdentifiers$TreeIdBuilder;
     addFile(arg0: GitIdentifiers$FileMode, arg1: string, arg2: number[]): void;

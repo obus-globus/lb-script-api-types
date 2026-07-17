@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Predictor } from '../../../../../ai/djl/inference/Predictor.d.ts'
 import type { CausalLMOutput } from '../../../../../ai/djl/modality/nlp/generate/CausalLMOutput.d.ts'
 import type { SearchConfig } from '../../../../../ai/djl/modality/nlp/generate/SearchConfig.d.ts'
@@ -10,10 +11,10 @@ export abstract class SeqBatchScheduler extends Object {
     // private config: SearchConfig;
     // private manager: NDManager;
     // private predictor: Predictor<(Object | null)[], CausalLMOutput>;
-    // private results: { [key: number]: NDArray };
+    // private results: JavaMap<number, NDArray>;
     // private seqBatcher: SeqBatcher;
     addRequest(arg0: NDArray, arg1: NDArray): void;
-    collectResults(): { [key: number]: NDArray };
+    collectResults(): JavaMap<number, NDArray>;
     incrementForward(arg0: number): boolean;
     inferenceCall(): NDArray;
     initForward(arg0: NDArray, arg1: NDArray): SeqBatcher;

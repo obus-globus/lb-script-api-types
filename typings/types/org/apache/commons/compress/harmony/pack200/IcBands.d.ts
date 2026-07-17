@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { BandSet } from '../../../../../../org/apache/commons/compress/harmony/pack200/BandSet.d.ts'
 import type { CPClass } from '../../../../../../org/apache/commons/compress/harmony/pack200/CPClass.d.ts'
@@ -9,7 +10,7 @@ export class IcBands extends BandSet {
     // private bit16Count: number;
     // private cpBands: CpBands;
     // private innerClasses: IcBands$IcTuple[];
-    // private outerToInner: { [key: string]: IcBands$IcTuple[] };
+    // private outerToInner: JavaMap<string, IcBands$IcTuple[]>;
     addInnerClass(arg0: string, arg1: string, arg2: string, arg3: number): void;
     // private addToMap(arg0: string, arg1: IcBands$IcTuple): void;
     finaliseBands(): void;

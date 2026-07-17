@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Command } from '../../../../com/mojang/brigadier/Command.d.ts'
 import type { CommandDispatcher } from '../../../../com/mojang/brigadier/CommandDispatcher.d.ts'
 import type { RedirectModifier } from '../../../../com/mojang/brigadier/RedirectModifier.d.ts'
@@ -10,7 +11,7 @@ import type { CommandNode } from '../../../../com/mojang/brigadier/tree/CommandN
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class CommandContextBuilder<S extends unknown> extends Object {
     constructor(arg0: CommandDispatcher<S>, arg1: S, arg2: CommandNode<S>, arg3: number)
-    readonly arguments: { [key: string]: ParsedArgument<S, Object> };
+    readonly arguments: JavaMap<string, ParsedArgument<S, Object>>;
     readonly child: CommandContextBuilder<S>;
     readonly command: (param0: CommandContext<S>) => number;
     readonly dispatcher: CommandDispatcher<S>;
@@ -23,7 +24,7 @@ export class CommandContextBuilder<S extends unknown> extends Object {
     build(arg0: string): CommandContext<S>;
     copy(): CommandContextBuilder<S>;
     findSuggestionContext(arg0: number): SuggestionContext<S>;
-    getArguments(): { [key: string]: ParsedArgument<S, Object> };
+    getArguments(): JavaMap<string, ParsedArgument<S, Object>>;
     getChild(): CommandContextBuilder<S>;
     getCommand(): (param0: CommandContext<S>) => number;
     getDispatcher(): CommandDispatcher<S>;

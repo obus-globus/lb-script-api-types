@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ClassNode } from '../../../../../org/objectweb/asm/tree/ClassNode.d.ts'
@@ -8,7 +9,7 @@ export class SourceMap extends Object {
     // private defaultStratum: string;
     // private nextLineOffset: number;
     readonly sourceFile: string;
-    // private strata: { [key: string]: SourceMap$Stratum };
+    // private strata: JavaMap<string, SourceMap$Stratum>;
     addFile(arg0: string, arg1: string, arg2: number): SourceMap$File;
     addFile(arg0: string, arg1: string, arg2: string, arg3: number): SourceMap$File;
     addFile(arg0: string, arg1: ClassNode): SourceMap$File;

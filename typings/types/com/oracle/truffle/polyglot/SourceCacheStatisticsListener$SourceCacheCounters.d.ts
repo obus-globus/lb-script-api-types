@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Source } from '../../../../com/oracle/truffle/api/source/Source.d.ts'
 import type { SourceCacheListener$CacheType } from '../../../../com/oracle/truffle/polyglot/SourceCacheListener$CacheType.d.ts'
 import type { SourceCacheStatisticsListener$CacheEventType } from '../../../../com/oracle/truffle/polyglot/SourceCacheStatisticsListener$CacheEventType.d.ts'
@@ -14,7 +15,7 @@ export class SourceCacheStatisticsListener$SourceCacheCounters extends Object {
     // private failureParseSizeCharacters: SourceCacheStatisticsListener$LongStatistics;
     // private failureParseTimeBytes: SourceCacheStatisticsListener$LongStatistics;
     // private failureParseTimeCharacters: SourceCacheStatisticsListener$LongStatistics;
-    // private failures: { [key: string]: number };
+    // private failures: JavaMap<string, number>;
     // private finalized: boolean;
     // private hitCountBytes: AtomicLong;
     // private hitCountCharacters: AtomicLong;
@@ -27,7 +28,7 @@ export class SourceCacheStatisticsListener$SourceCacheCounters extends Object {
     // private missParseSizeCharacters: SourceCacheStatisticsListener$LongStatistics;
     // private missParseTimeBytes: SourceCacheStatisticsListener$LongStatistics;
     // private missParseTimeCharacters: SourceCacheStatisticsListener$LongStatistics;
-    // private nestedCounters: { [key: string]: SourceCacheStatisticsListener$SourceCacheCounters };
+    // private nestedCounters: JavaMap<string, SourceCacheStatisticsListener$SourceCacheCounters>;
     // private sharingLayerId: number;
     // private sortString: string;
     // private sourceSizeBytes: SourceCacheStatisticsListener$LongStatistics;

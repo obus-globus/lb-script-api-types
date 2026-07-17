@@ -1,10 +1,11 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ByteBufAllocator } from '../../../../io/netty/buffer/ByteBufAllocator.d.ts'
 import type { OpenSslKeyMaterial } from '../../../../io/netty/handler/ssl/OpenSslKeyMaterial.d.ts'
 import type { OpenSslKeyMaterialProvider } from '../../../../io/netty/handler/ssl/OpenSslKeyMaterialProvider.d.ts'
 import type { X509KeyManager } from '../../../../javax/net/ssl/X509KeyManager.d.ts'
 export class OpenSslCachingKeyMaterialProvider extends OpenSslKeyMaterialProvider {
     constructor(arg0: X509KeyManager, arg1: string, arg2: number)
-    // private cache: { [key: string]: OpenSslKeyMaterial };
+    // private cache: JavaMap<string, OpenSslKeyMaterial>;
     // private destroyed: boolean;
     // private maxCachedEntries: number;
     cacheSize(): number;

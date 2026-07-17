@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { StorableObject } from '../../../../../../com/viaversion/viaversion/api/connection/StorableObject.d.ts'
 import type { BlockPosition } from '../../../../../../com/viaversion/viaversion/api/minecraft/BlockPosition.d.ts'
 import type { BlockConnectionStorage$SectionData } from '../../../../../../com/viaversion/viaversion/protocols/v1_12_2to1_13/storage/BlockConnectionStorage$SectionData.d.ts'
@@ -5,7 +6,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class BlockConnectionStorage extends Object implements StorableObject {
     static init(): void;
     constructor()
-    // private blockStorage: { [key: string]: any };
+    // private blockStorage: JavaMap<any, any>;
     // private lastIndex: number;
     // private lastSection: BlockConnectionStorage$SectionData;
     // private modified: BlockPosition[];

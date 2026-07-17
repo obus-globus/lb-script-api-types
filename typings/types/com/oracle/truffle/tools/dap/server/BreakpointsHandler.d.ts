@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Breakpoint } from '../../../../../../com/oracle/truffle/api/debug/Breakpoint.d.ts'
 import type { DebugStackFrame } from '../../../../../../com/oracle/truffle/api/debug/DebugStackFrame.d.ts'
 import type { DebuggerSession } from '../../../../../../com/oracle/truffle/api/debug/DebuggerSession.d.ts'
@@ -17,19 +18,19 @@ import type { AtomicReference } from '../../../../../../java/util/concurrent/ato
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class BreakpointsHandler extends Object {
     constructor(context: ExecutionContext, debuggerSession: DebuggerSession)
-    // private bp2IDs: Map<Breakpoint, number>;
+    // private bp2IDs: JavaMap<Breakpoint, number>;
     // private context: ExecutionContext;
     // private debuggerSession: DebuggerSession;
     // private exceptionBreakpoint: AtomicReference<Breakpoint>;
-    // private functionBreakpoints: AtomicReference<Map<FunctionBreakpoint, number>>;
-    // private functionNames: Map<Breakpoint, string>;
-    // private hitConditions: Map<Breakpoint, string[]>;
-    // private id2Bps: { [key: number]: Breakpoint };
+    // private functionBreakpoints: AtomicReference<JavaMap<FunctionBreakpoint, number>>;
+    // private functionNames: JavaMap<Breakpoint, string>;
+    // private hitConditions: JavaMap<Breakpoint, string[]>;
+    // private id2Bps: JavaMap<number, Breakpoint>;
     // private lastId: number;
-    // private logMessages: Map<Breakpoint, string>;
-    // private resolvedBreakpoints: Map<Breakpoint, SourceSection>;
+    // private logMessages: JavaMap<Breakpoint, string>;
+    // private resolvedBreakpoints: JavaMap<Breakpoint, SourceSection>;
     // private resolvedHandler: BreakpointsHandler$ResolvedHandler;
-    // private sourceBreakpoints: { [key: string]: Map<SourceBreakpoint, number> };
+    // private sourceBreakpoints: JavaMap<string, JavaMap<SourceBreakpoint, number>>;
     breakpointLocations(args: BreakpointLocationsArguments): BreakpointLocation[];
     checkConditions(bp: Breakpoint, topStackFrame: DebugStackFrame): boolean;
     // private collectSuspendableLocations(source: Source, startIndex: number, endIndex: number): BreakpointsHandler$SectionsCollector;

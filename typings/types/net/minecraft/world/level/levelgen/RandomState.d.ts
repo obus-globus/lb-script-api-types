@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { HolderGetter } from '../../../../../net/minecraft/core/HolderGetter.d.ts'
 import type { HolderGetter$Provider } from '../../../../../net/minecraft/core/HolderGetter$Provider.d.ts'
@@ -15,10 +16,10 @@ export class RandomState extends Object {
     static create(paramsettings: NoiseGeneratorSettings, paramnoises: HolderGetter<NormalNoise$NoiseParameters>, paramseed: number): RandomState;
     private constructor(settings: NoiseGeneratorSettings, noises: HolderGetter<NormalNoise$NoiseParameters>, seed: number)
     // private aquiferRandom: PositionalRandomFactory;
-    // private noiseIntances: Map<ResourceKey<NormalNoise$NoiseParameters>, NormalNoise>;
+    // private noiseIntances: JavaMap<ResourceKey<NormalNoise$NoiseParameters>, NormalNoise>;
     // private noises: HolderGetter<NormalNoise$NoiseParameters>;
     // private oreRandom: PositionalRandomFactory;
-    // private positionalRandoms: Map<Identifier, PositionalRandomFactory>;
+    // private positionalRandoms: JavaMap<Identifier, PositionalRandomFactory>;
     // private random: PositionalRandomFactory;
     // private router: NoiseRouter;
     // private sampler: Climate$Sampler;

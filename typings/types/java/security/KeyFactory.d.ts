@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
 import type { Key } from '../../java/security/Key.d.ts'
 import type { KeyFactorySpi } from '../../java/security/KeyFactorySpi.d.ts'
@@ -10,18 +11,18 @@ import type { Iterator } from '../../java/util/Iterator.d.ts'
 export class KeyFactory extends Object {
     static getInstance(paramarg0: string): KeyFactory;
     static getInstance(paramarg0: string, paramarg1: string): KeyFactory;
-    static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): KeyFactory;
-    constructor(arg0: KeyFactorySpi, arg1: { [key: string]: any }, arg2: string)
+    static getInstance(paramarg0: string, paramarg1: JavaMap<any, any>): KeyFactory;
+    constructor(arg0: KeyFactorySpi, arg1: JavaMap<any, any>, arg2: string)
     readonly algorithm: string;
     // private lock: Object;
-    readonly provider: { [key: string]: any };
+    readonly provider: JavaMap<any, any>;
     // private serviceIterator: Iterator<Provider$Service>;
     // private spi: KeyFactorySpi;
     generatePrivate(arg0: KeySpec): PrivateKey;
     generatePublic(arg0: KeySpec): PublicKey;
     getAlgorithm(): string;
     getKeySpec<T extends KeySpec>(arg0: Key, arg1: Class<T>): T;
-    getProvider(): { [key: string]: any };
+    getProvider(): JavaMap<any, any>;
     // private nextSpi(arg0: KeyFactorySpi): KeyFactorySpi;
     translateKey(arg0: Key): Key;
 }

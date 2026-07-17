@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { GpuDevice } from '../../../../../com/mojang/blaze3d/systems/GpuDevice.d.ts'
 import type { SuggestionsBuilder } from '../../../../../com/mojang/brigadier/suggestion/SuggestionsBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -32,8 +33,8 @@ export class Command extends Object implements DebuggedOwner, MinecraftShortcuts
     readonly parentCommand: Command | null;
     readonly player: LocalPlayer;
     readonly requiresIngame: boolean;
-    // private subcommandMap: { [key: string]: Command };
-    /*not mapped: */ getSubcommandMap$net_ccbluex_liquidbounce(): { [key: string]: Command };
+    // private subcommandMap: JavaMap<string, Command>;
+    /*not mapped: */ getSubcommandMap$net_ccbluex_liquidbounce(): JavaMap<string, Command>;
     readonly subcommands: Command[];
     readonly translationBaseKey: string;
     readonly world: ClientLevel;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { BiConsumer } from '../../../../../java/util/function/BiConsumer.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
@@ -54,7 +55,7 @@ export class ImposterProtoChunk extends ProtoChunk {
     addReferenceForStructure(structure: Structure, reference: number): void;
     canBeSerialized(): boolean;
     fabric_computeInitialSyncChanges(arg0: ServerPlayer, arg1: (param0: Object) => void): void;
-    fabric_getAttachments(): Map<Object | null, Object | null>;
+    fabric_getAttachments(): JavaMap<Object | null, Object | null>;
     fabric_getRegistryAccess(): RegistryAccess;
     fabric_getSyncTargetInfo(): AttachmentTargetInfo<Object>;
     fabric_hasPersistentAttachments(): boolean;
@@ -66,8 +67,8 @@ export class ImposterProtoChunk extends ProtoChunk {
     fillBiomesFromNoise(biomeResolver: BiomeResolver, sampler: Climate$Sampler): void;
     findBlocks(predicate: (param0: BlockState) => boolean, consumer: (param0: BlockPos, param1: BlockState) => void): void;
     // private fixType(type: Heightmap$Types): Heightmap$Types;
-    getAllReferences(): Map<Structure, (Object | null)[]>;
-    getAllStarts(): Map<Structure, StructureStart>;
+    getAllReferences(): JavaMap<Structure, (Object | null)[]>;
+    getAllStarts(): JavaMap<Structure, StructureStart>;
     getAttached(arg0: AttachmentType<Object>): Object;
     getBlendingData(): BlendingData;
     getBlockEntity(pos: BlockPos): BlockEntity;
@@ -100,8 +101,8 @@ export class ImposterProtoChunk extends ProtoChunk {
     markPosForPostProcessing(blockPos: BlockPos): void;
     markUnsaved(): void;
     removeBlockEntity(pos: BlockPos): void;
-    setAllReferences(data: Map<Structure, (Object | null)[]>): void;
-    setAllStarts(starts: Map<Structure, StructureStart>): void;
+    setAllReferences(data: JavaMap<Structure, (Object | null)[]>): void;
+    setAllStarts(starts: JavaMap<Structure, StructureStart>): void;
     setAttached(arg0: AttachmentType<Object>, arg1: Object): Object;
     setBlockEntity(blockEntity: BlockEntity): void;
     setBlockEntityNbt(entityTag: CompoundTag): void;

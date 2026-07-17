@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ItemCooldownsAddition } from '../../../../net/ccbluex/liquidbounce/interfaces/ItemCooldownsAddition.d.ts'
 import type { ItemCooldownsAddition$Entry } from '../../../../net/ccbluex/liquidbounce/interfaces/ItemCooldownsAddition$Entry.d.ts'
@@ -6,7 +7,7 @@ import type { ItemCooldowns$CooldownInstance } from '../../../../net/minecraft/w
 import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class ItemCooldowns extends Object implements ItemCooldownsAddition {
     constructor()
-    // private cooldowns: Map<Identifier, ItemCooldowns$CooldownInstance>;
+    // private cooldowns: JavaMap<Identifier, ItemCooldowns$CooldownInstance>;
     // private tickCount: number;
     addCooldown(cooldownGroup: Identifier, time: number): void;
     addCooldown(item: ItemStack, time: number): void;

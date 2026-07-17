@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Int2IntOpenHashMap$MapSpliterator } from '../../../../../it/unimi/dsi/fastutil/ints/Int2IntOpenHashMap$MapSpliterator.d.ts'
 import type { IntComparator } from '../../../../../it/unimi/dsi/fastutil/ints/IntComparator.d.ts'
 import type { IntConsumer } from '../../../../../it/unimi/dsi/fastutil/ints/IntConsumer.d.ts'
@@ -13,8 +14,8 @@ export class Int2IntOpenHashMap$ValueSpliterator extends Int2IntOpenHashMap$MapS
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: { [key: string]: any })
-    constructor(null_: { [key: string]: any }, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
+    constructor(null_: JavaMap<any, any>)
+    constructor(null_: JavaMap<any, any>, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     characteristics(): number;
     forEachRemaining(arg0: (param0: number) => void): void;

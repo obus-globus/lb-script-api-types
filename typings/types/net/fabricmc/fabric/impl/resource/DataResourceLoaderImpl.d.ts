@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
@@ -36,7 +37,7 @@ export class DataResourceLoaderImpl extends ResourceLoaderImpl implements DataRe
     static registerBuiltinResourcePacks(paramarg0: PackType, paramarg1: (param0: Pack) => void): void;
     static sort(paramarg0: PackType, paramarg1: (param0: PreparableReloadListener$SharedState, param1: Executor, param2: (param0: Object | null) => CompletableFuture<Object>, param3: Executor) => CompletableFuture<void>[]): (param0: PreparableReloadListener$SharedState, param1: Executor, param2: (param0: Object | null) => CompletableFuture<Object>, param3: Executor) => CompletableFuture<void>[];
     private constructor()
-    // private addedReloaderFactories: Map<Identifier, (param0: HolderLookup$Provider) => (param0: PreparableReloadListener$SharedState, param1: Executor, param2: (param0: Object | null) => CompletableFuture<Object>, param3: Executor) => CompletableFuture<void>>;
+    // private addedReloaderFactories: JavaMap<Identifier, (param0: HolderLookup$Provider) => (param0: PreparableReloadListener$SharedState, param1: Executor, param2: (param0: Object | null) => CompletableFuture<Object>, param3: Executor) => CompletableFuture<void>>;
     collectReloadersToAdd(arg0: SetupMarkerResourceReloader): Map$Entry<Identifier, (param0: PreparableReloadListener$SharedState, param1: Executor, param2: (param0: Object | null) => CompletableFuture<Object>, param3: Executor) => CompletableFuture<void>>[];
     hasResourceReloader(arg0: Identifier): boolean;
     registerReloadListener(arg0: Identifier, arg1: (param0: HolderLookup$Provider) => (param0: PreparableReloadListener$SharedState, param1: Executor, param2: (param0: Object | null) => CompletableFuture<Object>, param3: Executor) => CompletableFuture<void>): void;

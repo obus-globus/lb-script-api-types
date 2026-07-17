@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ReentrantReadWriteLock } from '../../../../../java/util/concurrent/locks/ReentrantReadWriteLock.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
@@ -20,7 +21,7 @@ import type { ChunkPos } from '../../../../../net/minecraft/world/level/ChunkPos
 export abstract class AbstractBlockLocationTracker$State2BlockPos<T extends unknown> extends AbstractBlockLocationTracker<T> {
     constructor()
     // private lock: ReentrantReadWriteLock;
-    // private stateAndPositions: Map<T, (Object | null)[]>;
+    // private stateAndPositions: JavaMap<T, (Object | null)[]>;
     allPositions(): Sequence<BlockPos>;
     clearAllChunks(): void;
     clearChunk(pos: ChunkPos): void;

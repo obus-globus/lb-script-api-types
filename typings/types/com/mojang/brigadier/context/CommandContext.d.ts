@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Command } from '../../../../com/mojang/brigadier/Command.d.ts'
 import type { RedirectModifier } from '../../../../com/mojang/brigadier/RedirectModifier.d.ts'
 import type { ParsedArgument } from '../../../../com/mojang/brigadier/context/ParsedArgument.d.ts'
@@ -7,8 +8,8 @@ import type { CommandNode } from '../../../../com/mojang/brigadier/tree/CommandN
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class CommandContext<S extends unknown> extends Object {
-    constructor(arg0: S, arg1: string, arg2: { [key: string]: ParsedArgument<S, Object> }, arg3: (param0: CommandContext<S>) => number, arg4: CommandNode<S>, arg5: ParsedCommandNode<S>[], arg6: StringRange, arg7: CommandContext<S>, arg8: (param0: CommandContext<S>) => S[], arg9: boolean)
-    // private arguments: { [key: string]: ParsedArgument<S, Object> };
+    constructor(arg0: S, arg1: string, arg2: JavaMap<string, ParsedArgument<S, Object>>, arg3: (param0: CommandContext<S>) => number, arg4: CommandNode<S>, arg5: ParsedCommandNode<S>[], arg6: StringRange, arg7: CommandContext<S>, arg8: (param0: CommandContext<S>) => S[], arg9: boolean)
+    // private arguments: JavaMap<string, ParsedArgument<S, Object>>;
     readonly child: CommandContext<S>;
     readonly command: (param0: CommandContext<S>) => number;
     // private forks: boolean;

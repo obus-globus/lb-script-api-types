@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { NBTByte } from '../../../../../com/seedfinding/mccore/nbt/tag/NBTByte.d.ts'
 import type { NBTByteArray } from '../../../../../com/seedfinding/mccore/nbt/tag/NBTByteArray.d.ts'
 import type { NBTDouble } from '../../../../../com/seedfinding/mccore/nbt/tag/NBTDouble.d.ts'
@@ -15,11 +16,11 @@ import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class NBTCompound extends NBTTag< { [key: string]: NBTTag<Object> }> {
+export class NBTCompound extends NBTTag<JavaMap<string, NBTTag<Object>>> {
     static NULL: NBTCompound;
     static create(paramarg0: ByteBuffer): NBTTag<Object>;
     constructor()
-    constructor(arg0: () => { [key: string]: NBTTag<Object> })
+    constructor(arg0: () => JavaMap<string, NBTTag<Object>>)
     contains(arg0: string): boolean;
     contains(arg0: string, arg1: number): boolean;
     getBoolean(arg0: string): boolean;
@@ -32,8 +33,8 @@ export class NBTCompound extends NBTTag< { [key: string]: NBTTag<Object> }> {
     getByteOrDefault(arg0: string, arg1: number): number;
     getByteTag(arg0: string): NBTByte;
     getByteTagOrDefault(arg0: string, arg1: NBTByte): NBTByte;
-    getCompound(arg0: string): { [key: string]: NBTTag<Object> };
-    getCompoundOrDefault(arg0: string, arg1: { [key: string]: NBTTag<Object> }): { [key: string]: NBTTag<Object> };
+    getCompound(arg0: string): JavaMap<string, NBTTag<Object>>;
+    getCompoundOrDefault(arg0: string, arg1: JavaMap<string, NBTTag<Object>>): JavaMap<string, NBTTag<Object>>;
     getCompoundTag(arg0: string): NBTCompound;
     getCompoundTagOrDefault(arg0: string, arg1: NBTCompound): NBTCompound;
     getDouble(arg0: string): number;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../../../java/lang/Comparable.d.ts'
 import type { MultiVariant } from '../../../../../../net/minecraft/client/data/models/MultiVariant.d.ts'
@@ -22,9 +23,9 @@ export abstract class PropertyDispatch<V extends unknown> extends Object {
     static modify<T1 extends Comparable<T1>, T2 extends Comparable<T2>>(paramproperty1: Property<T1>, paramproperty2: Property<T2>): PropertyDispatch$C2<(param0: Variant) => Variant, T1, T2>;
     static modify<T1 extends Comparable<T1>>(paramproperty1: Property<T1>): PropertyDispatch$C1<(param0: Variant) => Variant, T1>;
     constructor()
-    // private values: Map<PropertyValueList, V>;
+    // private values: JavaMap<PropertyValueList, V>;
     getDefinedProperties(): Property<any>[];
-    getEntries(): Map<PropertyValueList, V>;
+    getEntries(): JavaMap<PropertyValueList, V>;
     putValue(key: PropertyValueList, variant: V): void;
     // private verifyComplete(): void;
 }

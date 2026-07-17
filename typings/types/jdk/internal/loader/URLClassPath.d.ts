@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { IOException } from '../../../java/io/IOException.d.ts'
 import type { URL } from '../../../java/net/URL.d.ts'
 import type { URLStreamHandler } from '../../../java/net/URLStreamHandler.d.ts'
@@ -12,7 +13,7 @@ export class URLClassPath extends Object {
     constructor(arg0: string, arg1: boolean)
     // private closed: boolean;
     // private jarHandler: URLStreamHandler;
-    // private lmap: { [key: string]: URLClassPath$Loader };
+    // private lmap: JavaMap<string, URLClassPath$Loader>;
     // private loaders: URLClassPath$Loader[];
     // private path: URL[];
     // private unopenedUrls: URL[];

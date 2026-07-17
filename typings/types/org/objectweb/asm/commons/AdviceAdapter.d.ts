@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Handle } from '../../../../org/objectweb/asm/Handle.d.ts'
 import type { Label } from '../../../../org/objectweb/asm/Label.d.ts'
@@ -273,7 +274,7 @@ export abstract class AdviceAdapter extends GeneratorAdapter implements Opcodes 
     static V_PREVIEW: number;
     static XOR: number;
     constructor(arg0: number, arg1: MethodVisitor, arg2: number, arg3: string, arg4: string)
-    // private forwardJumpStackFrames: Map<Label, Object[]>;
+    // private forwardJumpStackFrames: JavaMap<Label, Object[]>;
     // private isConstructor: boolean;
     // private methodAccess: number;
     // private methodDesc: string;

@@ -1,9 +1,10 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { StackedContents$IngredientInfo } from '../../../../../net/minecraft/world/entity/player/StackedContents$IngredientInfo.d.ts'
 import type { StackedContents$Output } from '../../../../../net/minecraft/world/entity/player/StackedContents$Output.d.ts'
 export class StackedContents<T extends unknown> extends Object {
     constructor()
-    amounts: { [key: string]: any };
+    amounts: JavaMap<any, any>;
     account(item: T, count: number): void;
     clear(): void;
     getResultUpperBound(ingredients: (param0: T) => boolean[]): number;

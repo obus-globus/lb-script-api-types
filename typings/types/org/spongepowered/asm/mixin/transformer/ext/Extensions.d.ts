@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ClassNode } from '../../../../../../org/objectweb/asm/tree/ClassNode.d.ts'
@@ -10,9 +11,9 @@ import type { ISyntheticClassRegistry } from '../../../../../../org/spongepowere
 export class Extensions extends Object implements IExtensionRegistry {
     constructor(arg0: ISyntheticClassRegistry)
     readonly activeExtensions: IExtension[];
-    // private extensionMap: Map<Class<IExtension>, IExtension>;
+    // private extensionMap: JavaMap<Class<IExtension>, IExtension>;
     readonly extensions: IExtension[];
-    // private generatorMap: Map<Class<IClassGenerator>, IClassGenerator>;
+    // private generatorMap: JavaMap<Class<IClassGenerator>, IClassGenerator>;
     readonly generators: IClassGenerator[];
     // private generatorsView: IClassGenerator[];
     readonly syntheticClassRegistry: ISyntheticClassRegistry;

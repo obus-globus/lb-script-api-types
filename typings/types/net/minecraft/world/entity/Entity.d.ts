@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { IEntity } from '../../../../com/viaversion/viafabricplus/injection/access/world/always_tick_entities/IEntity.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { UUID } from '../../../../java/util/UUID.d.ts'
@@ -172,7 +173,7 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     static getViewScale(): number;
     static setViewScale(paramviewScale: number): void;
     constructor(type: EntityType<any>, level: Level)
-    // private attachedChangedListeners: Map<Object, Object>;
+    // private attachedChangedListeners: JavaMap<Object, Object>;
     // private bb: AABB;
     // private blockPosition: BlockPos;
     blocksBuilding: boolean;
@@ -181,7 +182,7 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     // private context: PermissionContext;
     // private crystalSoundIntensity: number;
     // private customData: CustomData;
-    // private dataAttachments: Map<Object, Object>;
+    // private dataAttachments: JavaMap<Object, Object>;
     // private deferredSyncedAttachments: (Object | null)[];
     readonly deltaMovement: Vec3;
     dimensions: EntityDimensions;
@@ -231,7 +232,7 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     stringUUID: string;
     // private stuckSpeedMultiplier: Vec3;
     syncPosition: boolean;
-    // private syncedAttachments: Map<Object, Object>;
+    // private syncedAttachments: JavaMap<Object, Object>;
     // private tags: string[];
     tickCount: number;
     readonly type: EntityType<any>;
@@ -354,8 +355,8 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     fabric_clearDeferredSyncChanges(): void;
     fabric_computeInitialSyncChanges(arg0: ServerPlayer, arg1: (param0: AttachmentChange) => void): void;
     fabric_computeInitialSyncChanges(arg0: ServerPlayer, arg1: (param0: Object) => void): void;
-    fabric_getAttachments(): Map<AttachmentType<Object>, Object | null>;
-    fabric_getAttachments(): Map<Object | null, Object | null>;
+    fabric_getAttachments(): JavaMap<AttachmentType<Object>, Object | null>;
+    fabric_getAttachments(): JavaMap<Object | null, Object | null>;
     fabric_getRegistryAccess(): RegistryAccess;
     fabric_getSyncTargetInfo(): AttachmentTargetInfo<Object>;
     fabric_hasPersistentAttachments(): boolean;

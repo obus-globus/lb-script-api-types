@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Serializable } from '../../../../../../../java/io/Serializable.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
@@ -13,7 +14,7 @@ export class DateIntervalInfo extends Object implements Serializable, Cloneable,
     constructor(locale: ULocale)
     // private fFallbackIntervalPattern: string;
     // private fFirstDateInPtnIsLaterDate: boolean;
-    // private fIntervalPatterns: { [key: string]: { [key: string]: DateIntervalInfo$PatternInfo } };
+    // private fIntervalPatterns: JavaMap<string, JavaMap<string, DateIntervalInfo$PatternInfo>>;
     // private fIntervalPatternsReadOnly: boolean;
     readonly frozen: boolean;
     clone(): DateIntervalInfo;
@@ -25,8 +26,8 @@ export class DateIntervalInfo extends Object implements Serializable, Cloneable,
     getDefaultOrder(): boolean;
     getFallbackIntervalPattern(): string;
     getIntervalPattern(skeleton: string, field: number): DateIntervalInfo$PatternInfo;
-    getPatterns(): { [key: string]: string[] };
-    getRawPatterns(): { [key: string]: { [key: string]: DateIntervalInfo$PatternInfo } };
+    getPatterns(): JavaMap<string, string[]>;
+    getRawPatterns(): JavaMap<string, JavaMap<string, DateIntervalInfo$PatternInfo>>;
     hashCode(): number;
     // private initializeData(locale: ULocale): void;
     // private initializeFromReadOnlyPatterns(dii: DateIntervalInfo): void;

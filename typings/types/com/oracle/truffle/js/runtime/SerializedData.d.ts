@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { JSRealm } from '../../../../../com/oracle/truffle/js/runtime/JSRealm.d.ts'
 import type { JSArrayBufferObject } from '../../../../../com/oracle/truffle/js/runtime/builtins/JSArrayBufferObject.d.ts'
 import type { JSArrayBufferObject$Shared } from '../../../../../com/oracle/truffle/js/runtime/builtins/JSArrayBufferObject$Shared.d.ts'
@@ -15,7 +16,7 @@ export class SerializedData extends Object {
     constructor(value: Object)
     constructor(value: Object, transferSet: JSArrayBufferObject[])
     // private data: Object[];
-    // private memory: Map<Object, number>;
+    // private memory: JavaMap<Object, number>;
     // private nextId: number;
     // private assignId(value: Object): void;
     deserialize(realm: JSRealm): Object;

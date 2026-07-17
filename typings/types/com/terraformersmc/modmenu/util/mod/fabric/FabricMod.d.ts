@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { UpdateChecker } from '../../../../../../com/terraformersmc/modmenu/api/UpdateChecker.d.ts'
 import type { UpdateInfo } from '../../../../../../com/terraformersmc/modmenu/api/UpdateInfo.d.ts'
 import type { Mod } from '../../../../../../com/terraformersmc/modmenu/util/mod/Mod.d.ts'
@@ -17,7 +18,7 @@ export class FabricMod extends Object implements Mod {
     childHasUpdate: boolean;
     readonly container: ModContainer;
     // private defaultIconWarning: boolean;
-    readonly links: { [key: string]: string };
+    readonly links: JavaMap<string, string>;
     // private metadata: ModMetadata;
     readonly modMenuData: FabricMod$ModMenuData;
     updateChecker: UpdateChecker;
@@ -28,15 +29,15 @@ export class FabricMod extends Object implements Mod {
     getChildHasUpdate(): boolean;
     getContact(arg0: string): ContactInformation;
     getContainer(): ModContainer;
-    getContributors(): { [key: string]: string[] };
-    getCredits(): { [key: string]: string[] };
+    getContributors(): JavaMap<string, string[]>;
+    getCredits(): JavaMap<string, string[]>;
     getDescription(): string;
     getFormattedDescription(): Component;
     getIcon(arg0: FabricIconHandler, arg1: number): DynamicTexture;
     getId(): string;
     getIssueTracker(): string;
     getLicense(): string[];
-    getLinks(): { [key: string]: string };
+    getLinks(): JavaMap<string, string>;
     getModMenuData(): FabricMod$ModMenuData;
     getName(): string;
     getParent(): string;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { PrintStream } from '../../java/io/PrintStream.d.ts'
 import type { Thread } from '../../java/lang/Thread.d.ts'
 import type { Thread$UncaughtExceptionHandler } from '../../java/lang/Thread$UncaughtExceptionHandler.d.ts'
@@ -32,7 +33,7 @@ export class ThreadGroup extends Object implements Thread$UncaughtExceptionHandl
     isDaemon(): boolean;
     isDestroyed(): boolean;
     list(): void;
-    // private list(arg0: Map<ThreadGroup, Thread[]>, arg1: PrintStream, arg2: number): void;
+    // private list(arg0: JavaMap<ThreadGroup, Thread[]>, arg1: PrintStream, arg2: number): void;
     parentOf(arg0: ThreadGroup): boolean;
     // private removeWeak(arg0: number): void;
     setDaemon(arg0: boolean): void;

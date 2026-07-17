@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { FieldModifierImpl } from '../../../../../com/ibm/icu/impl/personname/FieldModifierImpl.d.ts'
 import type { PersonNameFormatterImpl } from '../../../../../com/ibm/icu/impl/personname/PersonNameFormatterImpl.d.ts'
 import type { PersonNamePattern$Element } from '../../../../../com/ibm/icu/impl/personname/PersonNamePattern$Element.d.ts'
@@ -8,7 +9,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class PersonNamePattern$NameFieldImpl extends Object implements PersonNamePattern$Element {
     constructor(arg0: string, arg1: PersonNameFormatterImpl)
     // private fieldID: PersonName$NameField;
-    // private modifiers: Map<PersonName$FieldModifier, FieldModifierImpl>;
+    // private modifiers: JavaMap<PersonName$FieldModifier, FieldModifierImpl>;
     format(arg0: PersonName): string;
     isLiteral(): boolean;
     isPopulated(arg0: PersonName): boolean;

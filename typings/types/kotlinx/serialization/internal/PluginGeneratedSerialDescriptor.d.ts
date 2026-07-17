@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Annotation } from '../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { KSerializer } from '../../../kotlinx/serialization/KSerializer.d.ts'
@@ -17,7 +18,7 @@ export class PluginGeneratedSerialDescriptor extends Object implements SerialDes
     readonly elementsCount: number;
     // private elementsOptionality: boolean[];
     // private generatedSerializer: GeneratedSerializer<Object> | null;
-    // private indices: { [key: string]: number };
+    // private indices: JavaMap<string, number>;
     /*not mapped: */ isInline(): boolean;
     /*not mapped: */ isNullable(): boolean;
     readonly kind: SerialKind;
@@ -28,7 +29,7 @@ export class PluginGeneratedSerialDescriptor extends Object implements SerialDes
     // private typeParameterDescriptors: SerialDescriptor[];
     /*not mapped: */ getTypeParameterDescriptors$kotlinx_serialization_core(): SerialDescriptor[];
     addElement(name: string, isOptional: boolean): void;
-    // private buildIndices(): { [key: string]: number };
+    // private buildIndices(): JavaMap<string, number>;
     equals(other: Object | null): boolean;
     getElementAnnotations(index: number): Annotation[];
     getElementDescriptor(index: number): SerialDescriptor;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { CommandDispatcher } from '../../../com/mojang/brigadier/CommandDispatcher.d.ts'
 import type { Optional } from '../../../java/util/Optional.d.ts'
 import type { CompletableFuture } from '../../../java/util/concurrent/CompletableFuture.d.ts'
@@ -18,14 +19,14 @@ export class ServerFunctionLibrary extends Object implements FabricResourceReloa
     constructor(functionCompilationPermissions: PermissionSet, dispatcher: CommandDispatcher<CommandSourceStack>)
     // private dispatcher: CommandDispatcher<CommandSourceStack>;
     // private functionCompilationPermissions: PermissionSet;
-    readonly functions: Map<Identifier, CommandFunction<CommandSourceStack>>;
+    readonly functions: JavaMap<Identifier, CommandFunction<CommandSourceStack>>;
     // private id: Identifier;
-    // private tags: Map<Identifier, CommandFunction<CommandSourceStack>[]>;
+    // private tags: JavaMap<Identifier, CommandFunction<CommandSourceStack>[]>;
     // private tagsLoader: TagLoader<CommandFunction<CommandSourceStack>>;
     fabric$getId(): Identifier;
     getAvailableTags(): Identifier[];
     getFunction(id: Identifier): Optional<CommandFunction<CommandSourceStack>>;
-    getFunctions(): Map<Identifier, CommandFunction<CommandSourceStack>>;
+    getFunctions(): JavaMap<Identifier, CommandFunction<CommandSourceStack>>;
     getName(): string;
     getTag(tag: Identifier): CommandFunction<CommandSourceStack>[];
     prepareSharedState(currentReload: PreparableReloadListener$SharedState): void;

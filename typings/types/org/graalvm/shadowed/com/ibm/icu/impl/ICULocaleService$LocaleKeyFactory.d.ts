@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { ICUService } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/ICUService.d.ts'
 import type { ICUService$Factory } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/ICUService$Factory.d.ts'
@@ -17,5 +18,5 @@ export abstract class ICULocaleService$LocaleKeyFactory extends Object implement
     handlesKey(key: ICUService$Key): boolean;
     isSupportedID(id: string): boolean;
     toString(): string;
-    updateVisibleIDs(result: { [key: string]: ICUService$Factory }): void;
+    updateVisibleIDs(result: JavaMap<string, ICUService$Factory>): void;
 }

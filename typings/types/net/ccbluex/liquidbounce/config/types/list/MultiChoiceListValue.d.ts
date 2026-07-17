@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Gson } from '../../../../../../com/google/gson/Gson.d.ts'
 import type { JsonElement } from '../../../../../../com/google/gson/JsonElement.d.ts'
 import type { Value } from '../../../../../../net/ccbluex/liquidbounce/config/types/Value.d.ts'
@@ -10,7 +11,7 @@ export class MultiChoiceListValue<T extends Tagged> extends Value<T[]> {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/MultiChoiceListValue.kt#L47 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/MultiChoiceListValue.kt:47}
      */
     readonly canBeNone: boolean;
-    // private choiceByName: { [key: string]: T };
+    // private choiceByName: JavaMap<string, T>;
     /**
      * All selectable choices. A readonly and ordered {@link Set}.
      *

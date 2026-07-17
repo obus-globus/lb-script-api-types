@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { UUID } from '../../../../../java/util/UUID.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -21,15 +22,15 @@ export class OverriddenPermissionContext extends Record implements MutablePermis
     static POSITION: PermissionContext$Key<Vec3>;
     static SERVER: PermissionContext$Key<MinecraftServer>;
     constructor(arg0: PermissionContext)
-    constructor(context: PermissionContext, overrides: Map<PermissionContext$Key<Object>, Object>)
+    constructor(context: PermissionContext, overrides: JavaMap<PermissionContext$Key<Object>, Object>)
     // private context: PermissionContext;
-    // private overrides: Map<PermissionContext$Key<Object>, Object>;
+    // private overrides: JavaMap<PermissionContext$Key<Object>, Object>;
     context(): PermissionContext;
     equals(arg0: Object | null): boolean;
     get<T extends unknown>(arg0: PermissionContext$Key<T>): T;
     hashCode(): number;
     keys(): PermissionContext$Key<Object>[];
-    overrides(): Map<PermissionContext$Key<Object>, Object>;
+    overrides(): JavaMap<PermissionContext$Key<Object>, Object>;
     permissionLevel(): PermissionLevel;
     set<T extends unknown>(arg0: PermissionContext$Key<T>, arg1: T): MutablePermissionContext;
     toString(): string;

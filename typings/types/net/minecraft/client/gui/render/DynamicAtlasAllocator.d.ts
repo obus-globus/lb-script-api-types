@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { BitSet } from '../../../../../java/util/BitSet.d.ts'
 import type { BiPredicate } from '../../../../../java/util/function/BiPredicate.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -6,7 +7,7 @@ export class DynamicAtlasAllocator<K extends unknown> extends Object {
     constructor(width: number, height: number)
     // private freeSlots: BitSet;
     // private slots: DynamicAtlasAllocator$Slot[];
-    // private usedSlotByKey: Map<K, DynamicAtlasAllocator$Slot>;
+    // private usedSlotByKey: JavaMap<K, DynamicAtlasAllocator$Slot>;
     // private width: number;
     endFrame(): void;
     freeSlotCount(): number;

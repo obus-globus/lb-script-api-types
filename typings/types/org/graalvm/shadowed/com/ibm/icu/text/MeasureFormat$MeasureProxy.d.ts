@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Externalizable } from '../../../../../../../java/io/Externalizable.d.ts'
 import type { ObjectInput } from '../../../../../../../java/io/ObjectInput.d.ts'
 import type { ObjectOutput } from '../../../../../../../java/io/ObjectOutput.d.ts'
@@ -10,7 +11,7 @@ export class MeasureFormat$MeasureProxy extends Object implements Externalizable
     constructor()
     constructor(locale: ULocale, width: MeasureFormat$FormatWidth, numberFormat: NumberFormat, subClass: number)
     // private formatWidth: MeasureFormat$FormatWidth;
-    // private keyValues: Map<Object, Object>;
+    // private keyValues: JavaMap<Object, Object>;
     // private locale: ULocale;
     // private numberFormat: NumberFormat;
     // private subClass: number;

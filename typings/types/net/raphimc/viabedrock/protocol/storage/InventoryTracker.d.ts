@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { StoredObject } from '../../../../../com/viaversion/viaversion/api/connection/StoredObject.d.ts'
 import type { UserConnection } from '../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { IntObjectPair } from '../../../../../com/viaversion/viaversion/libs/fastutil/ints/IntObjectPair.d.ts'
@@ -15,7 +16,7 @@ export class InventoryTracker extends StoredObject {
     readonly armorContainer: ArmorContainer;
     readonly currentContainer: Container;
     readonly currentForm: IntObjectPair<Form>;
-    // private dynamicContainerRegistry: Map<FullContainerName, BundleContainer>;
+    // private dynamicContainerRegistry: JavaMap<FullContainerName, BundleContainer>;
     readonly hudContainer: HudContainer;
     readonly inventoryContainer: InventoryContainer;
     readonly offhandContainer: OffhandContainer;

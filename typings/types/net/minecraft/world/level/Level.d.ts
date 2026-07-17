@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { AutoCloseable } from '../../../../java/lang/AutoCloseable.d.ts'
 import type { Thread } from '../../../../java/lang/Thread.d.ts'
@@ -114,12 +115,12 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     static isInSpawnableBounds(parampos: BlockPos): boolean;
     constructor(levelData: WritableLevelData, dimension: ResourceKey<Level>, registryAccess: RegistryAccess, dimensionTypeRegistration: Holder<DimensionType>, isClientSide: boolean, isDebug: boolean, biomeZoomSeed: number, maxChainedNeighborUpdates: number)
     // private addend: number;
-    // private attachedChangedListeners: Map<Object, Object>;
+    // private attachedChangedListeners: JavaMap<Object, Object>;
     readonly biomeManager: BiomeManager;
     // private blockEntityTickers: TickingBlockEntity[];
     // private bottomY: number;
     // private damageSources: DamageSources;
-    // private dataAttachments: Map<Object, Object>;
+    // private dataAttachments: JavaMap<Object, Object>;
     // private deferredSyncedAttachments: (Object | null)[];
     // private dimension: ResourceKey<Level>;
     // private dimensionTypeRegistration: Holder<DimensionType>;
@@ -141,7 +142,7 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     // private soundSeedGenerator: RandomSource;
     // private storage: LithiumData$Data;
     // private subTickCount: number;
-    // private syncedAttachments: Map<Object, Object>;
+    // private syncedAttachments: JavaMap<Object, Object>;
     readonly thread: Thread;
     thunderLevel: number;
     // private tickingBlockEntities: boolean;
@@ -183,8 +184,8 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     fabric_clearDeferredSyncChanges(): void;
     fabric_computeInitialSyncChanges(arg0: ServerPlayer, arg1: (param0: AttachmentChange) => void): void;
     fabric_computeInitialSyncChanges(arg0: ServerPlayer, arg1: (param0: Object) => void): void;
-    fabric_getAttachments(): Map<AttachmentType<Object>, Object | null>;
-    fabric_getAttachments(): Map<Object | null, Object | null>;
+    fabric_getAttachments(): JavaMap<AttachmentType<Object>, Object | null>;
+    fabric_getAttachments(): JavaMap<Object | null, Object | null>;
     fabric_getLoadedChunks(): (Object | null)[];
     fabric_getRegistryAccess(): RegistryAccess;
     fabric_getSyncTargetInfo(): AttachmentTargetInfo<Object>;

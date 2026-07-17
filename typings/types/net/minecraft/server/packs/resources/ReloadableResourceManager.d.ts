@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { AutoCloseable } from '../../../../../java/lang/AutoCloseable.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
@@ -29,7 +30,7 @@ export class ReloadableResourceManager extends Object implements AutoCloseable, 
     getResource(location: Identifier): Optional<Resource>;
     getResourceStack(location: Identifier): Resource[];
     listPacks(): Stream<PackResources>;
-    listResourceStacks(directory: string, filter: (param0: Identifier) => boolean): Map<Identifier, Resource[]>;
-    listResources(directory: string, filenameFilter: (param0: Identifier) => boolean): Map<Identifier, Resource>;
+    listResourceStacks(directory: string, filter: (param0: Identifier) => boolean): JavaMap<Identifier, Resource[]>;
+    listResources(directory: string, filenameFilter: (param0: Identifier) => boolean): JavaMap<Identifier, Resource>;
     registerReloadListener(listener: (param0: PreparableReloadListener$SharedState, param1: Executor, param2: (param0: Object | null) => CompletableFuture<Object>, param3: Executor) => CompletableFuture<void>): void;
 }

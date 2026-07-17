@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Module } from '../../../java/lang/Module.d.ts'
 import type { Enumeration } from '../../../java/util/Enumeration.d.ts'
 import type { Predicate } from '../../../java/util/function/Predicate.d.ts'
@@ -8,7 +9,7 @@ import type { Logger } from '../../../java/util/logging/Logger.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class LogManager$LoggerContext extends Object {
     private constructor(null_: LogManager)
-    // private namedLoggers: { [key: string]: LogManager$LoggerWeakRef };
+    // private namedLoggers: JavaMap<string, LogManager$LoggerWeakRef>;
     // private root: LogManager$LogNode;
     addLocalLogger(arg0: Logger): boolean;
     addLocalLogger(arg0: Logger, arg1: boolean): boolean;

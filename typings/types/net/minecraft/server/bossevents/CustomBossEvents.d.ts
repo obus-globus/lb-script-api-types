@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Component } from '../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
 import type { CustomBossEvent } from '../../../../net/minecraft/server/bossevents/CustomBossEvent.d.ts'
@@ -8,7 +9,7 @@ import type { SavedDataType } from '../../../../net/minecraft/world/level/savedd
 export class CustomBossEvents extends SavedData {
     static TYPE: SavedDataType<CustomBossEvents>;
     constructor()
-    readonly events: Map<Identifier, CustomBossEvent>;
+    readonly events: JavaMap<Identifier, CustomBossEvent>;
     create(random: RandomSource, id: Identifier, name: Component): CustomBossEvent;
     get(id: Identifier): CustomBossEvent;
     getEvents(): CustomBossEvent[];

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { StringBuilder } from '../../../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../../../java/lang/CharSequence.d.ts'
@@ -8,7 +9,7 @@ import type { StringTrieBuilder$ValueNode } from '../../../../../../../org/graal
 export abstract class StringTrieBuilder extends Object {
     constructor()
     // private lookupFinalValueNode: StringTrieBuilder$ValueNode;
-    // private nodes: Map<StringTrieBuilder$Node, StringTrieBuilder$Node>;
+    // private nodes: JavaMap<StringTrieBuilder$Node, StringTrieBuilder$Node>;
     // private root: StringTrieBuilder$Node;
     // private state: StringTrieBuilder$State;
     // private strings: StringBuilder;

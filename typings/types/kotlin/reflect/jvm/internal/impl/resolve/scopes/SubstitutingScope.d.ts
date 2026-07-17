@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Lazy } from '../../../../../../../kotlin/Lazy.d.ts'
 import type { ClassifierDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassifierDescriptor.d.ts'
@@ -15,7 +16,7 @@ export class SubstitutingScope extends Object implements MemberScope {
     constructor(arg0: MemberScope, arg1: TypeSubstitutor)
     // private _allDescriptors$delegate: Lazy<Object>;
     // private capturingSubstitutor: TypeSubstitutor;
-    // private substitutedDescriptors: Map<DeclarationDescriptor, DeclarationDescriptor>;
+    // private substitutedDescriptors: JavaMap<DeclarationDescriptor, DeclarationDescriptor>;
     // private substitutor$delegate: Lazy<Object>;
     // private workerScope: MemberScope;
     getClassifierNames(): Name[];

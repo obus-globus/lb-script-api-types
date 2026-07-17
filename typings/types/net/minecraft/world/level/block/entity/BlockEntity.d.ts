@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Supplier } from '../../../../../../java/util/function/Supplier.d.ts'
 import type { UnaryOperator } from '../../../../../../java/util/function/UnaryOperator.d.ts'
@@ -51,15 +52,15 @@ export abstract class BlockEntity extends Object implements SetBlockStateHandlin
     static loadStatic(parampos: BlockPos, paramstate: BlockState, paramtag: CompoundTag, paramregistries: HolderLookup$Provider): BlockEntity;
     static parseCustomNameSafe(paraminput: ValueInput, paramname: string): Component;
     constructor(type: BlockEntityType<any>, worldPosition: BlockPos, blockState: BlockState)
-    // private attachedChangedListeners: Map<Object, Object>;
+    // private attachedChangedListeners: JavaMap<Object, Object>;
     readonly blockState: BlockState;
-    // private dataAttachments: Map<Object, Object>;
+    // private dataAttachments: JavaMap<Object, Object>;
     // private deferredSyncedAttachments: (Object | null)[];
     // private hasComparators: number;
     level: Level;
     // private remove: boolean;
     // private supportTestResult: boolean;
-    // private syncedAttachments: Map<Object, Object>;
+    // private syncedAttachments: JavaMap<Object, Object>;
     readonly type: BlockEntityType<any>;
     // private worldPosition: BlockPos;
     // private acknowledgeSynced(arg0: AttachmentType<Object>, arg1: Object): void;
@@ -74,8 +75,8 @@ export abstract class BlockEntity extends Object implements SetBlockStateHandlin
     fabric_clearDeferredSyncChanges(): void;
     fabric_computeInitialSyncChanges(arg0: ServerPlayer, arg1: (param0: AttachmentChange) => void): void;
     fabric_computeInitialSyncChanges(arg0: ServerPlayer, arg1: (param0: Object) => void): void;
-    fabric_getAttachments(): Map<AttachmentType<Object>, Object | null>;
-    fabric_getAttachments(): Map<Object | null, Object | null>;
+    fabric_getAttachments(): JavaMap<AttachmentType<Object>, Object | null>;
+    fabric_getAttachments(): JavaMap<Object | null, Object | null>;
     fabric_getRegistryAccess(): RegistryAccess;
     fabric_getSyncTargetInfo(): AttachmentTargetInfo<Object>;
     fabric_hasPersistentAttachments(): boolean;

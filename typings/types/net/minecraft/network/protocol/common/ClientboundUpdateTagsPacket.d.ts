@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { FriendlyByteBuf } from '../../../../../net/minecraft/network/FriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
@@ -8,9 +9,9 @@ import type { ResourceKey } from '../../../../../net/minecraft/resources/Resourc
 import type { TagNetworkSerialization$NetworkPayload } from '../../../../../net/minecraft/tags/TagNetworkSerialization$NetworkPayload.d.ts'
 export class ClientboundUpdateTagsPacket extends Object implements Packet<ClientCommonPacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundUpdateTagsPacket>;
-    constructor(tags: Map<ResourceKey<(Object | null)[]>, TagNetworkSerialization$NetworkPayload>)
-    readonly tags: Map<ResourceKey<(Object | null)[]>, TagNetworkSerialization$NetworkPayload>;
-    getTags(): Map<ResourceKey<(Object | null)[]>, TagNetworkSerialization$NetworkPayload>;
+    constructor(tags: JavaMap<ResourceKey<(Object | null)[]>, TagNetworkSerialization$NetworkPayload>)
+    readonly tags: JavaMap<ResourceKey<(Object | null)[]>, TagNetworkSerialization$NetworkPayload>;
+    getTags(): JavaMap<ResourceKey<(Object | null)[]>, TagNetworkSerialization$NetworkPayload>;
     handle(listener: ClientCommonPacketListener): void;
     isSkippable(): boolean;
     isTerminal(): boolean;

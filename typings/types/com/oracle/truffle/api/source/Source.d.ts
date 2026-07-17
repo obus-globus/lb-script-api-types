@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { TruffleFile } from '../../../../../com/oracle/truffle/api/TruffleFile.d.ts'
 import type { TruffleLanguage } from '../../../../../com/oracle/truffle/api/TruffleLanguage.d.ts'
 import type { Source$LiteralBuilder } from '../../../../../com/oracle/truffle/api/source/Source$LiteralBuilder.d.ts'
@@ -50,7 +51,7 @@ export abstract class Source extends Object {
     getMimeType(): string;
     getName(): string;
     // private getNamedURI(name: string, bytes: number[]): URI;
-    getOptions(): { [key: string]: string };
+    getOptions(): JavaMap<string, string>;
     getOptions(language: TruffleLanguage<Object>): OptionValues;
     getOriginalURI(): URI;
     getPath(): string;

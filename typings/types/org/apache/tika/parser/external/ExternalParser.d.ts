@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { Process } from '../../../../../java/lang/Process.d.ts'
 import type { Pattern } from '../../../../../java/util/regex/Pattern.d.ts'
@@ -19,14 +20,14 @@ export class ExternalParser extends Object implements Parser {
     constructor()
     readonly command: string[];
     readonly ignoredLineConsumer: ExternalParser$LineConsumer;
-    // private metadataPatterns: Map<Pattern, string>;
+    // private metadataPatterns: JavaMap<Pattern, string>;
     readonly supportedTypes: MediaType[];
     // private timeoutMs: number;
     // private extractMetadata(arg0: InputStream, arg1: Metadata): void;
     // private extractOutput(arg0: InputStream, arg1: XHTMLContentHandler): void;
     getCommand(): string[];
     getIgnoredLineConsumer(): ExternalParser$LineConsumer;
-    getMetadataExtractionPatterns(): Map<Pattern, string>;
+    getMetadataExtractionPatterns(): JavaMap<Pattern, string>;
     getSupportedTypes(): MediaType[];
     getSupportedTypes(arg0: ParseContext): MediaType[];
     parse(arg0: InputStream, arg1: ContentHandler, arg2: Metadata, arg3: ParseContext): void;
@@ -34,6 +35,6 @@ export class ExternalParser extends Object implements Parser {
     // private sendInput(arg0: Process, arg1: InputStream): void;
     setCommand(...arg0: string[]): void;
     setIgnoredLineConsumer(arg0: ExternalParser$LineConsumer): void;
-    setMetadataExtractionPatterns(arg0: Map<Pattern, string>): void;
+    setMetadataExtractionPatterns(arg0: JavaMap<Pattern, string>): void;
     setSupportedTypes(arg0: MediaType[]): void;
 }

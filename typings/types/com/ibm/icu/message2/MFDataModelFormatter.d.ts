@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Directionality } from '../../../../com/ibm/icu/message2/Directionality.d.ts'
 import type { FormattedPlaceholder } from '../../../../com/ibm/icu/message2/FormattedPlaceholder.d.ts'
 import type { FunctionFactory } from '../../../../com/ibm/icu/message2/FunctionFactory.d.ts'
@@ -23,7 +24,7 @@ export class MFDataModelFormatter extends Object {
     // private locale: Locale;
     // private standardFunctions: MFFunctionRegistry;
     // private findBestMatchingPattern(arg0: MFDataModel$SelectMessage, arg1: MFDataModelFormatter$MapWithNfcKeys, arg2: MFDataModelFormatter$MapWithNfcKeys): MFDataModel$Pattern;
-    format(arg0: { [key: string]: Object }): string;
+    format(arg0: JavaMap<string, Object>): string;
     // private formatExpression(arg0: MFDataModel$Expression, arg1: MFDataModelFormatter$MapWithNfcKeys, arg2: MFDataModelFormatter$MapWithNfcKeys): FormattedPlaceholder;
     // private getFormattingFunctionFactoryByName(arg0: Object, arg1: string): FunctionFactory;
     // private implementBiDiDefault(arg0: StringBuilder, arg1: Directionality, arg2: FormattedPlaceholder): void;

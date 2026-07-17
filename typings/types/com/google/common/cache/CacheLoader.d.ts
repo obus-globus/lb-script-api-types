@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Function } from '../../../../com/google/common/base/Function.d.ts'
 import type { Supplier } from '../../../../com/google/common/base/Supplier.d.ts'
 import type { ListenableFuture } from '../../../../com/google/common/util/concurrent/ListenableFuture.d.ts'
@@ -9,6 +10,6 @@ export abstract class CacheLoader<K extends unknown, V extends unknown> extends 
     static from<V extends unknown>(paramsupplier: () => V): CacheLoader<Object, V>;
     constructor()
     load(key: K): V;
-    loadAll(keys: K[]): Map<K, V>;
+    loadAll(keys: K[]): JavaMap<K, V>;
     reload(key: K, oldValue: V): ListenableFuture<V>;
 }

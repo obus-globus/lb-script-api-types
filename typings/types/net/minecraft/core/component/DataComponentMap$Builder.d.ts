@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -6,7 +7,7 @@ import type { DataComponentType } from '../../../../net/minecraft/core/component
 import type { TypedDataComponent } from '../../../../net/minecraft/core/component/TypedDataComponent.d.ts'
 export class DataComponentMap$Builder extends Object implements FabricComponentMapBuilder {
     private constructor()
-    // private map: Map<DataComponentType<Object>, Object>;
+    // private map: JavaMap<DataComponentType<Object>, Object>;
     // private validator: (param0: TypedDataComponent<Object>[]) => void;
     addAll(map: TypedDataComponent<Object>[]): DataComponentMap$Builder;
     addValidator(newValidator: (param0: TypedDataComponent<Object>[]) => void): DataComponentMap$Builder;

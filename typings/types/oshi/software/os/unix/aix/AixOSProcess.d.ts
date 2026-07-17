@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Perfstat$perfstat_process_t } from '../../../../../com/sun/jna/platform/unix/aix/Perfstat$perfstat_process_t.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { AixLibc$AixPsInfo } from '../../../../../oshi/jna/platform/unix/AixLibc$AixPsInfo.d.ts'
@@ -12,7 +13,7 @@ export class AixOSProcess extends AbstractOSProcess {
     readonly bitness: () => number;
     readonly bytesRead: number;
     readonly bytesWritten: number;
-    // private cmdEnv: () => Pair<string[], { [key: string]: string }>;
+    // private cmdEnv: () => Pair<string[], JavaMap<string, string>>;
     readonly commandLine: () => string;
     // private commandLineBackup: string;
     readonly group: string;
@@ -41,7 +42,7 @@ export class AixOSProcess extends AbstractOSProcess {
     getBytesWritten(): number;
     getCommandLine(): string;
     getCurrentWorkingDirectory(): string;
-    getEnvironmentVariables(): { [key: string]: string };
+    getEnvironmentVariables(): JavaMap<string, string>;
     getGroup(): string;
     getGroupID(): string;
     getHardOpenFileLimit(): number;
@@ -64,7 +65,7 @@ export class AixOSProcess extends AbstractOSProcess {
     getVirtualSize(): number;
     // private queryBitness(): number;
     // private queryCommandLine(): string;
-    // private queryCommandlineEnvironment(): Pair<string[], { [key: string]: string }>;
+    // private queryCommandlineEnvironment(): Pair<string[], JavaMap<string, string>>;
     // private queryPsInfo(): AixLibc$AixPsInfo;
     updateAttributes(): boolean;
     // private updateAttributes(arg0: Pair<number, number>): boolean;

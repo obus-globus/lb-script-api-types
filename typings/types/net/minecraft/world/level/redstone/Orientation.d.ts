@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Direction } from '../../../../../net/minecraft/core/Direction.d.ts'
@@ -18,9 +19,9 @@ export class Orientation extends Object {
     readonly sideBias: Orientation$SideBias;
     readonly up: Direction;
     // private verticalNeighbors: Direction[];
-    // private withFront: Map<Direction, Orientation>;
-    // private withSideBias: Map<Orientation$SideBias, Orientation>;
-    // private withUp: Map<Direction, Orientation>;
+    // private withFront: JavaMap<Direction, Orientation>;
+    // private withSideBias: JavaMap<Orientation$SideBias, Orientation>;
+    // private withUp: JavaMap<Direction, Orientation>;
     getDirections(): Direction[];
     getFront(): Direction;
     getHorizontalDirections(): Direction[];

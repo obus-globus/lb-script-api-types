@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Application } from '../../../../ai/djl/Application.d.ts'
 import type { MRL } from '../../../../ai/djl/repository/MRL.d.ts'
 import type { Criteria } from '../../../../ai/djl/repository/zoo/Criteria.d.ts'
@@ -13,8 +14,8 @@ export class DefaultModelZoo extends ModelZoo {
     static getModelZoo(paramarg0: string): ModelZoo;
     static hasModelZoo(paramarg0: string): boolean;
     static listModelZoo(): ModelZoo[];
-    static listModels(): Map<Application, MRL[]>;
-    static listModels(paramarg0: Criteria<Object, Object>): Map<Application, MRL[]>;
+    static listModels(): JavaMap<Application, MRL[]>;
+    static listModels(paramarg0: Criteria<Object, Object>): JavaMap<Application, MRL[]>;
     static loadModel<I extends unknown, O extends unknown>(paramarg0: Criteria<I, O>): ZooModel<I, O>;
     static registerModelZoo(paramarg0: ZooProvider): void;
     static setModelZooResolver(paramarg0: ModelZooResolver): void;

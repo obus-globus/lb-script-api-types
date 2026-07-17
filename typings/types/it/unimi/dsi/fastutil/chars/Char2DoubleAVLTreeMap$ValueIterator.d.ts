@@ -1,7 +1,8 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Char2DoubleAVLTreeMap$TreeIterator } from '../../../../../it/unimi/dsi/fastutil/chars/Char2DoubleAVLTreeMap$TreeIterator.d.ts'
 import type { DoubleListIterator } from '../../../../../it/unimi/dsi/fastutil/doubles/DoubleListIterator.d.ts'
 export class Char2DoubleAVLTreeMap$ValueIterator extends Char2DoubleAVLTreeMap$TreeIterator implements DoubleListIterator {
-    private constructor(null_: { [key: string]: any })
+    private constructor(null_: JavaMap<any, any>)
     add(arg0: number): void;
     next(): number;
     nextDouble(): number;

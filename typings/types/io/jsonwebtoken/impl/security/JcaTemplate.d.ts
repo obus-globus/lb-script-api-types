@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { CheckedFunction } from '../../../../io/jsonwebtoken/impl/lang/CheckedFunction.d.ts'
 import type { CheckedSupplier } from '../../../../io/jsonwebtoken/impl/lang/CheckedSupplier.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
@@ -25,16 +26,16 @@ import type { SecretKeyFactory } from '../../../../javax/crypto/SecretKeyFactory
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class JcaTemplate extends Object {
     constructor(arg0: string)
-    constructor(arg0: string, arg1: { [key: string]: any })
-    constructor(arg0: string, arg1: { [key: string]: any }, arg2: SecureRandom)
+    constructor(arg0: string, arg1: JavaMap<any, any>)
+    constructor(arg0: string, arg1: JavaMap<any, any>, arg2: SecureRandom)
     // private jcaName: string;
-    // private provider: { [key: string]: any };
+    // private provider: JavaMap<any, any>;
     // private secureRandom: SecureRandom;
     // private execute<T extends unknown>(arg0: Class<Object>, arg1: CheckedSupplier<T>): T;
     // private execute<R extends unknown, T extends unknown>(arg0: Class<T>, arg1: CheckedFunction<T, R>): R;
-    // private execute<R extends unknown, T extends unknown>(arg0: Class<T>, arg1: CheckedFunction<T, R>, arg2: { [key: string]: any }): R;
+    // private execute<R extends unknown, T extends unknown>(arg0: Class<T>, arg1: CheckedFunction<T, R>, arg2: JavaMap<any, any>): R;
     fallback<R extends unknown, T extends unknown>(arg0: Class<T>, arg1: CheckedFunction<T, R>): R;
-    findBouncyCastle(): { [key: string]: any };
+    findBouncyCastle(): JavaMap<any, any>;
     generateKeyPair(): KeyPair;
     generateKeyPair(arg0: AlgorithmParameterSpec): KeyPair;
     generateKeyPair(arg0: number): KeyPair;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { EntityRewriter } from '../../../../../../com/viaversion/viabackwards/api/rewriters/EntityRewriter.d.ts'
 import type { Protocol1_21To1_20_5 } from '../../../../../../com/viaversion/viabackwards/protocol/v1_21to1_20_5/Protocol1_21To1_20_5.d.ts'
 import type { EntityPacketRewriter1_21$PaintingData } from '../../../../../../com/viaversion/viabackwards/protocol/v1_21to1_20_5/rewriter/EntityPacketRewriter1_21$PaintingData.d.ts'
@@ -7,7 +8,7 @@ import type { PacketWrapper } from '../../../../../../com/viaversion/viaversion/
 import type { ClientboundPacket1_21 } from '../../../../../../com/viaversion/viaversion/protocols/v1_20_5to1_21/packet/ClientboundPacket1_21.d.ts'
 export class EntityPacketRewriter1_21 extends EntityRewriter<ClientboundPacket1_21, Protocol1_21To1_20_5> {
     constructor(arg0: Protocol1_21To1_20_5)
-    // private oldPaintings: { [key: string]: EntityPacketRewriter1_21$PaintingData };
+    // private oldPaintings: JavaMap<string, EntityPacketRewriter1_21$PaintingData>;
     // private paintingMappingsForEntries(arg0: RegistryEntry[]): number[];
     registerPackets(): void;
     registerRewrites(): void;

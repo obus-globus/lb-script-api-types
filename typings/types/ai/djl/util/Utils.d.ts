@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { NDArray } from '../../../ai/djl/ndarray/NDArray.d.ts'
 import type { Parameter } from '../../../ai/djl/nn/Parameter.d.ts'
 import type { Pair } from '../../../ai/djl/util/Pair.d.ts'
@@ -23,14 +24,14 @@ export class Utils extends Object {
     static getNestedModelDir(paramarg0: Path): Path;
     static getenv(paramarg0: string): string;
     static getenv(paramarg0: string, paramarg1: string): string;
-    static getenv(): { [key: string]: string };
+    static getenv(): JavaMap<string, string>;
     static hash(paramarg0: string): string;
     static indexOf<T extends unknown>(paramarg0: T[], paramarg1: T): number;
     static isOfflineMode(): boolean;
     static moveQuietly(paramarg0: Path, paramarg1: Path): void;
     static openUrl(paramarg0: string): InputStream;
     static openUrl(paramarg0: URL): InputStream;
-    static openUrl(paramarg0: URL, paramarg1: { [key: string]: string }): InputStream;
+    static openUrl(paramarg0: URL, paramarg1: JavaMap<string, string>): InputStream;
     static pad(paramarg0: StringBuilder, paramarg1: string, paramarg2: number): void;
     static readLines(paramarg0: InputStream): string[];
     static readLines(paramarg0: InputStream, paramarg1: boolean): string[];

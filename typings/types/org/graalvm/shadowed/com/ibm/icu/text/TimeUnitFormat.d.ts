@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { ParsePosition } from '../../../../../../../java/text/ParsePosition.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
@@ -31,7 +32,7 @@ export class TimeUnitFormat extends MeasureFormat implements Cloneable {
     readonly locale: ULocale;
     // private pluralRules: PluralRules;
     // private style: number;
-    // private timeUnitToCountToPatterns: Map<TimeUnit, { [key: string]: Object[] }>;
+    // private timeUnitToCountToPatterns: JavaMap<TimeUnit, JavaMap<string, Object[]>>;
     clone(): TimeUnitFormat;
     getNumberFormat(): NumberFormat;
     getNumberFormatInternal(): NumberFormat;
@@ -39,12 +40,12 @@ export class TimeUnitFormat extends MeasureFormat implements Cloneable {
     parseObject(arg0: string): Object;
     parseObject(source: string, pos: ParsePosition): TimeUnitAmount;
     // private readResolve(): Object;
-    // private searchInTree(resourceKey: string, styl: number, timeUnit: TimeUnit, srcPluralCount: string, searchPluralCount: string, countToPatterns: { [key: string]: Object[] }): void;
+    // private searchInTree(resourceKey: string, styl: number, timeUnit: TimeUnit, srcPluralCount: string, searchPluralCount: string, countToPatterns: JavaMap<string, Object[]>): void;
     setLocale(locale: Locale): TimeUnitFormat;
     setLocale(locale: ULocale): TimeUnitFormat;
     setLocale(valid: ULocale, actual: ULocale): void;
     setNumberFormat(format: NumberFormat): TimeUnitFormat;
     // private setup(): void;
-    // private setup(resourceKey: string, timeUnitToCountToPatterns: Map<TimeUnit, { [key: string]: Object[] }>, style: number, pluralKeywords: string[]): void;
+    // private setup(resourceKey: string, timeUnitToCountToPatterns: JavaMap<TimeUnit, JavaMap<string, Object[]>>, style: number, pluralKeywords: string[]): void;
     // private writeReplace(): Object;
 }

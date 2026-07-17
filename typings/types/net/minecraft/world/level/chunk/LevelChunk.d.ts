@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
@@ -58,11 +59,11 @@ export class LevelChunk extends ChunkAccess implements AttachmentTargetImpl, Deb
     readonly blockTicks: LevelChunkTicks<Block>;
     readonly fluidTicks: LevelChunkTicks<Fluid>;
     readonly fullStatus: () => FullChunkStatus;
-    readonly gameEventListenerRegistrySections: { [key: string]: any };
+    readonly gameEventListenerRegistrySections: JavaMap<any, any>;
     readonly level: Level;
     loaded: boolean;
     // private postLoad: (param0: LevelChunk) => void;
-    // private tickersInLevel: Map<BlockPos, LevelChunk$RebindableTickingBlockEntityWrapper>;
+    // private tickersInLevel: JavaMap<BlockPos, LevelChunk$RebindableTickingBlockEntityWrapper>;
     readonly unsavedListener: (param0: ChunkPos) => void;
     addAndRegisterBlockEntity(blockEntity: BlockEntity): void;
     addEntity(entity: Entity): void;
@@ -73,7 +74,7 @@ export class LevelChunk extends ChunkAccess implements AttachmentTargetImpl, Deb
     fabric_clearDeferredSyncChanges(): void;
     fabric_computeInitialSyncChanges(arg0: ServerPlayer, arg1: (param0: AttachmentChange) => void): void;
     fabric_computeInitialSyncChanges(arg0: ServerPlayer, arg1: (param0: Object) => void): void;
-    fabric_getAttachments(): Map<AttachmentType<Object>, Object | null>;
+    fabric_getAttachments(): JavaMap<AttachmentType<Object>, Object | null>;
     fabric_getRegistryAccess(): RegistryAccess;
     fabric_getSyncTargetInfo(): AttachmentTargetInfo<Object>;
     fabric_hasPersistentAttachments(): boolean;
@@ -85,7 +86,7 @@ export class LevelChunk extends ChunkAccess implements AttachmentTargetImpl, Deb
     fabric_syncChange(arg0: AttachmentType<Object>, arg1: AttachmentChange): void;
     fabric_updateSyncTarget<T extends unknown>(arg0: AttachmentTargetInfo<T>, arg1: AttachmentTargetInfo<T>): void;
     fabric_writeAttachmentsToNbt(arg0: ValueOutput): void;
-    getBlockEntities(): Map<BlockPos, BlockEntity>;
+    getBlockEntities(): JavaMap<BlockPos, BlockEntity>;
     getBlockEntity(pos: BlockPos): BlockEntity;
     getBlockEntity<T extends BlockEntity>(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockEntity(pos: BlockPos, creationType: LevelChunk$EntityCreationType): BlockEntity;
@@ -134,13 +135,13 @@ export class LevelChunk extends ChunkAccess implements AttachmentTargetImpl, Deb
     // private removeGameEventListener<T extends BlockEntity>(blockEntity: T, level: ServerLevel): void;
     // private removeGameEventListenerRegistry(sectionY: number): void;
     replaceBiomes(buffer: FriendlyByteBuf): void;
-    replaceWithPacketData(buffer: FriendlyByteBuf, heightmaps: Map<Heightmap$Types, number[]>, blockEntities: (param0: (param0: BlockPos, param1: BlockEntityType<any>, param2: CompoundTag) => void) => void): void;
+    replaceWithPacketData(buffer: FriendlyByteBuf, heightmaps: JavaMap<Heightmap$Types, number[]>, blockEntities: (param0: (param0: BlockPos, param1: BlockEntityType<any>, param2: CompoundTag) => void) => void): void;
     runPostLoad(): void;
     setBlockEntity(blockEntity: BlockEntity): void;
     setBlockState(pos: BlockPos, state: BlockState): BlockState;
     setBlockState(pos: BlockPos, state: BlockState, flags: number): BlockState;
     setFullStatus(fullStatus: () => FullChunkStatus): void;
-    setGameEventListenerRegistrySections(arg0: { [key: string]: any }): void;
+    setGameEventListenerRegistrySections(arg0: JavaMap<any, any>): void;
     setLoaded(loaded: boolean): void;
     setUnsavedListener(unsavedListener: (param0: ChunkPos) => void): void;
     unpackTicks(currentTick: number): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Multimap } from '../../../../../../com/google/common/collect/Multimap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../../../net/minecraft/core/Holder.d.ts'
@@ -9,7 +10,7 @@ import type { AttributeModifier } from '../../../../../../net/minecraft/world/en
 import type { AttributeSupplier } from '../../../../../../net/minecraft/world/entity/ai/attributes/AttributeSupplier.d.ts'
 export class AttributeMap extends Object {
     constructor(supplier: AttributeSupplier)
-    // private attributes: Map<Holder<Attribute>, AttributeInstance>;
+    // private attributes: JavaMap<Holder<Attribute>, AttributeInstance>;
     readonly attributesToSync: AttributeInstance[];
     readonly attributesToUpdate: AttributeInstance[];
     // private supplier: AttributeSupplier;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { PoseStack } from '../../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
 import type { Transformation } from '../../../../../com/mojang/math/Transformation.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -15,7 +16,7 @@ import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class CopperGolemStatueBlockRenderer extends Object implements BlockEntityRenderer<CopperGolemStatueBlockEntity, CopperGolemStatueRenderState> {
     static modelTransformation(paramfacing: Direction): Transformation;
     constructor(context: BlockEntityRendererProvider$Context)
-    // private models: Map<CopperGolemStatueBlock$Pose, CopperGolemStatueModel>;
+    // private models: JavaMap<CopperGolemStatueBlock$Pose, CopperGolemStatueModel>;
     createRenderState(): CopperGolemStatueRenderState;
     extractRenderState(blockEntity: CopperGolemStatueBlockEntity, state: CopperGolemStatueRenderState, partialTicks: number, cameraPosition: Vec3, breakProgress: ModelFeatureRenderer$CrumblingOverlay): void;
     getViewDistance(): number;

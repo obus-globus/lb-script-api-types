@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Image } from '../../../java/awt/Image.d.ts'
 import type { DataFlavor } from '../../../java/awt/datatransfer/DataFlavor.d.ts'
 import type { FlavorMap } from '../../../java/awt/datatransfer/FlavorMap.d.ts'
@@ -15,26 +16,26 @@ export abstract class DataTransferer extends Object {
     static javaTextEncodingFlavor: DataFlavor;
     static adaptFlavorMap(paramarg0: FlavorMap): FlavorTable;
     static getInstance(): DataTransferer;
-    static keysToLongArray(paramarg0: { [key: number]: Object }): number[];
+    static keysToLongArray(paramarg0: JavaMap<number, Object>): number[];
     static setToSortedDataFlavorArray(paramarg0: DataFlavor[]): DataFlavor[];
     constructor()
     // private castToFile(arg0: Object): File;
     // private castToFiles(arg0: (Object | null)[]): string[];
     // private concatData(arg0: Object, arg1: Object): Object;
     // private constructFlavoredObject(arg0: Object, arg1: DataFlavor, arg2: Class<Object>): Object;
-    convertData(arg0: Object, arg1: Transferable, arg2: number, arg3: { [key: number]: DataFlavor }, arg4: boolean): number[];
+    convertData(arg0: Object, arg1: Transferable, arg2: number, arg3: JavaMap<number, DataFlavor>, arg4: boolean): number[];
     convertFileListToBytes(arg0: string[]): ByteArrayOutputStream;
     dragQueryFile(arg0: number[]): string[];
     dragQueryURIs(arg0: InputStream, arg1: number, arg2: Transferable): URI[];
     getBestCharsetForTextFormat(arg0: number, arg1: Transferable): string;
     getCharsetForTextFormat(arg0: number): string;
     getDefaultUnicodeEncoding(): string;
-    getFlavorsForFormats(arg0: number[], arg1: FlavorTable): Map<DataFlavor, number>;
+    getFlavorsForFormats(arg0: number[], arg1: FlavorTable): JavaMap<DataFlavor, number>;
     getFlavorsForFormatsAsArray(arg0: number[], arg1: FlavorTable): DataFlavor[];
     getFlavorsForFormatsAsSet(arg0: number[], arg1: FlavorTable): DataFlavor[];
     getFormatForNativeAsLong(arg0: string): number;
-    getFormatsForFlavors(arg0: DataFlavor[], arg1: FlavorTable): { [key: number]: DataFlavor };
-    getFormatsForTransferable(arg0: Transferable, arg1: FlavorTable): { [key: number]: DataFlavor };
+    getFormatsForFlavors(arg0: DataFlavor[], arg1: FlavorTable): JavaMap<number, DataFlavor>;
+    getFormatsForTransferable(arg0: Transferable, arg1: FlavorTable): JavaMap<number, DataFlavor>;
     getFormatsForTransferableAsArray(arg0: Transferable, arg1: FlavorTable): number[];
     getNativeForFormat(arg0: number): string;
     getPlatformMappingsForFlavor(arg0: DataFlavor): string[];

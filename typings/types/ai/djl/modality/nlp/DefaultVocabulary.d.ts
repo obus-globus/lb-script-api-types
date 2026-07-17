@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { DefaultVocabulary$Builder } from '../../../../ai/djl/modality/nlp/DefaultVocabulary$Builder.d.ts'
 import type { DefaultVocabulary$TokenInfo } from '../../../../ai/djl/modality/nlp/DefaultVocabulary$TokenInfo.d.ts'
 import type { Vocabulary } from '../../../../ai/djl/modality/nlp/Vocabulary.d.ts'
@@ -8,7 +9,7 @@ export class DefaultVocabulary extends Object implements Vocabulary {
     constructor(arg0: string[])
     // private indexToToken: string[];
     // private reservedTokens: string[];
-    // private tokens: { [key: string]: DefaultVocabulary$TokenInfo };
+    // private tokens: JavaMap<string, DefaultVocabulary$TokenInfo>;
     // private unknownToken: string;
     // private addToken(arg0: string): void;
     contains(arg0: string): boolean;

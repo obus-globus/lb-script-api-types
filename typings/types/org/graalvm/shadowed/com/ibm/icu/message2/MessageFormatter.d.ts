@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { FormattedMessage } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/message2/FormattedMessage.d.ts'
@@ -17,8 +18,8 @@ export class MessageFormatter extends Object {
     readonly locale: Locale;
     // private modelFormatter: MFDataModelFormatter;
     readonly pattern: string;
-    format(arguments: { [key: string]: Object }): FormattedMessage;
-    formatToString(arguments: { [key: string]: Object }): string;
+    format(arguments: JavaMap<string, Object>): FormattedMessage;
+    formatToString(arguments: JavaMap<string, Object>): string;
     getBidiIsolation(): MessageFormatter$BidiIsolation;
     getDataModel(): MFDataModel$Message;
     getErrorHandlingBehavior(): MessageFormatter$ErrorHandlingBehavior;

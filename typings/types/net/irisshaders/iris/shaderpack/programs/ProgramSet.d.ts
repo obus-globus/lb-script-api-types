@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -12,10 +13,10 @@ import type { PackDirectives } from '../../../../../net/irisshaders/iris/shaderp
 import type { ShaderProperties } from '../../../../../net/irisshaders/iris/shaderpack/properties/ShaderProperties.d.ts'
 export class ProgramSet extends Object implements ProgramSetInterface {
     constructor(arg0: AbsolutePackPath, arg1: (param0: AbsolutePackPath) => string, arg2: ShaderProperties, arg3: ShaderPack)
-    // private compositePrograms: Map<ProgramArrayId, ProgramSource[]>;
-    // private computePrograms: Map<ProgramArrayId, ComputeSource[][]>;
+    // private compositePrograms: JavaMap<ProgramArrayId, ProgramSource[]>;
+    // private computePrograms: JavaMap<ProgramArrayId, ComputeSource[][]>;
     readonly finalCompute: ComputeSource[];
-    // private gbufferPrograms: Map<ProgramId, ProgramSource>;
+    // private gbufferPrograms: JavaMap<ProgramId, ProgramSource>;
     readonly pack: ShaderPack;
     readonly packDirectives: PackDirectives;
     readonly setup: ComputeSource[];

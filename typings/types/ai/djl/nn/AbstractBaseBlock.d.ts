@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { NDManager } from '../../../ai/djl/ndarray/NDManager.d.ts'
 import type { DataType } from '../../../ai/djl/ndarray/types/DataType.d.ts'
 import type { Shape } from '../../../ai/djl/ndarray/types/Shape.d.ts'
@@ -29,7 +30,7 @@ export abstract class AbstractBaseBlock extends Object implements Block {
     forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<string, Object>[]): (Object | null)[];
     freezeParameters(arg0: boolean): void;
     freezeParameters(arg0: boolean, arg1: (param0: Parameter) => boolean): void;
-    getCustomMetadata(): { [key: string]: string };
+    getCustomMetadata(): JavaMap<string, string>;
     getInputShapes(): Shape[];
     getOutputDataTypes(): DataType[];
     getOutputShapes(arg0: Shape[], arg1: DataType[]): Shape[];

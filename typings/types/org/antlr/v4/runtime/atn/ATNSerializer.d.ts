@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ATN } from '../../../../../org/antlr/v4/runtime/atn/ATN.d.ts'
 import type { IntegerList } from '../../../../../org/antlr/v4/runtime/misc/IntegerList.d.ts'
@@ -9,16 +10,16 @@ export class ATNSerializer extends Object {
     // private data: IntegerList;
     // private nonGreedyStates: IntegerList;
     // private precedenceStates: IntegerList;
-    // private sets: Map<IntervalSet, boolean>;
+    // private sets: JavaMap<IntervalSet, boolean>;
     // private addDecisionStartStates(): void;
     // private addEdges(): number;
-    // private addEdges(arg0: number, arg1: Map<IntervalSet, number>): void;
+    // private addEdges(arg0: number, arg1: JavaMap<IntervalSet, number>): void;
     // private addLexerActions(): void;
     // private addModeStartStates(): void;
     // private addNonGreedyStates(): void;
     // private addPreamble(): void;
     // private addPrecedenceStates(): void;
     // private addRuleStatesAndLexerTokenTypes(): void;
-    // private addSets(): Map<IntervalSet, number>;
+    // private addSets(): JavaMap<IntervalSet, number>;
     serialize(): IntegerList;
 }

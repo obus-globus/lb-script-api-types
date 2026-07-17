@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { ASTNode } from '../../../../../../../io/github/douira/glsl_transformer/ast/node/abstract_node/ASTNode.d.ts'
 import type { Index } from '../../../../../../../io/github/douira/glsl_transformer/ast/query/index/Index.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
@@ -8,7 +9,7 @@ export class NodeIndex<S extends ASTNode[]> extends Object implements Index<ASTN
     static withOrdered(): NodeIndex<ASTNode[]>;
     static withUnordered(): NodeIndex<ASTNode[]>;
     constructor(arg0: () => S)
-    index: Map<Class<ASTNode>, S>;
+    index: JavaMap<Class<ASTNode>, S>;
     setFactory: () => S;
     add(arg0: ASTNode): void;
     get<N extends ASTNode>(arg0: N): N[];

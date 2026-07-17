@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Continuation } from '../../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { ActivateCapeRequest } from '../../../../../../net/ccbluex/liquidbounce/authlib/mojangapi/model/ActivateCapeRequest.d.ts'
@@ -48,7 +49,7 @@ export interface MinecraftServicesApi extends Object{
     /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
     hideCape($completion: Continuation<PlayerProfile>): any;
     /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
-    loginWithXbox(identityToken: { [key: string]: string }, $completion: Continuation<MinecraftAuthResponse>): any;
+    loginWithXbox(identityToken: JavaMap<string, string>, $completion: Continuation<MinecraftAuthResponse>): any;
     /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
     lookupNameByUuid(uuid: string, $completion: Continuation<ProfileIdName>): any;
     /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { GameProfile } from '../../../com/mojang/authlib/GameProfile.d.ts'
 import type { DataFixer } from '../../../com/mojang/datafixers/DataFixer.d.ts'
 import type { DiscontinuousFrame } from '../../../com/mojang/jtracy/DiscontinuousFrame.d.ts'
@@ -153,7 +154,7 @@ export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
     // private lastServerStatus: number;
     // private lastTickNanos: number;
     readonly levelLoadListener: LevelLoadListener;
-    // private levels: Map<ResourceKey<Level>, ServerLevel>;
+    // private levels: JavaMap<ResourceKey<Level>, ServerLevel>;
     readonly localIp: string;
     // private mayHaveDelayedTasks: boolean;
     // private metricsRecorder: MetricsRecorder;
@@ -256,7 +257,7 @@ export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
     getAverageTickTimeNanos(): number;
     getChatDecorator(): (param0: ServerPlayer, param1: Component) => Component;
     getChatSpamThresholdSeconds(): number;
-    getCodeOfConducts(): { [key: string]: string };
+    getCodeOfConducts(): JavaMap<string, string>;
     getCommandSpamThresholdSeconds(): number;
     getCommandStorage(): CommandStorage;
     getCommands(): Commands;

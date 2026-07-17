@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { StringTransform } from '../../../../com/ibm/icu/text/StringTransform.d.ts'
 import type { SymbolTable } from '../../../../com/ibm/icu/text/SymbolTable.d.ts'
 import type { Freezable } from '../../../../com/ibm/icu/util/Freezable.d.ts'
@@ -29,7 +30,7 @@ export class UnicodeRegex extends Object implements StringTransform, Freezable<U
     getBnfLineSeparator(): string;
     getBnfVariableInfix(): string;
     getSymbolTable(): SymbolTable;
-    // private getVariables(arg0: string[]): { [key: string]: string };
+    // private getVariables(arg0: string[]): JavaMap<string, string>;
     isFrozen(): boolean;
     // private processSet(arg0: string, arg1: number, arg2: StringBuilder, arg3: string[], arg4: ParsePosition): number;
     setBnfCommentString(arg0: string): void;

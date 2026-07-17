@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { KType } from '../../../../../kotlin/reflect/KType.d.ts'
 import type { KTypeParameter } from '../../../../../kotlin/reflect/KTypeParameter.d.ts'
@@ -6,9 +7,9 @@ import type { KVariance } from '../../../../../kotlin/reflect/KVariance.d.ts'
 import type { KTypeSubstitutor$Companion } from '../../../../../kotlin/reflect/jvm/internal/types/KTypeSubstitutor$Companion.d.ts'
 export class KTypeSubstitutor extends Object {
     static Companion: KTypeSubstitutor$Companion;
-    constructor(substitution: Map<KTypeParameter, KTypeProjection>, eraseToUpperBoundsAfterSubstitution: boolean)
+    constructor(substitution: JavaMap<KTypeParameter, KTypeProjection>, eraseToUpperBoundsAfterSubstitution: boolean)
     // private eraseToUpperBoundsAfterSubstitution: boolean;
-    // private substitution: Map<KTypeParameter, KTypeProjection>;
+    // private substitution: JavaMap<KTypeParameter, KTypeProjection>;
     chainedWith(other: KTypeSubstitutor): KTypeSubstitutor;
     // private copy(eraseToUpperBoundsAfterSubstitution: boolean): KTypeSubstitutor;
     disjointSumWith(other: KTypeSubstitutor, memberNameForDebug: string): KTypeSubstitutor;

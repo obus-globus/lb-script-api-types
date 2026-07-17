@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { AutoCloseable } from '../../../../../../java/lang/AutoCloseable.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { EventHook } from '../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
@@ -17,17 +18,17 @@ export class FontGlyphPageManager extends Object implements AutoCloseable, Event
     readonly debugDisplayName: Component;
     // private dynamicFontManager: DynamicFontCacheManager;
     // private dynamicPage: DynamicGlyphPage;
-    // private dynamicallyLoadedGlyphs: Map<GlyphIdentifier, GlyphDescriptor>;
+    // private dynamicallyLoadedGlyphs: JavaMap<GlyphIdentifier, GlyphDescriptor>;
     // private fallbackFonts: FontFace[];
-    // private fallbackGlyphs: Map<FontFace, GlyphDescriptor>;
+    // private fallbackGlyphs: JavaMap<FontFace, GlyphDescriptor>;
     // private registeredFonts: FontFace[];
     // private renderHandler: EventHook<GameRenderEvent>;
     readonly running: boolean;
-    // private staticGlyphs: Map<FontId, { [key: string]: any }>;
+    // private staticGlyphs: JavaMap<FontId, JavaMap<any, any>>;
     // private staticPage: StaticGlyphPage[];
     children(): EventListener[];
     close(): void;
-    // private createStaticGlyphRegistry(glyphPages: StaticGlyphPage[]): Map<FontId, { [key: string]: any }>;
+    // private createStaticGlyphRegistry(glyphPages: StaticGlyphPage[]): JavaMap<FontId, JavaMap<any, any>>;
     getFallbackGlyph(font: FontFace): GlyphDescriptor;
     parent(): EventListener | null;
     requestGlyph(font: FontFace, style: number, codepoint: number): GlyphDescriptor | null;

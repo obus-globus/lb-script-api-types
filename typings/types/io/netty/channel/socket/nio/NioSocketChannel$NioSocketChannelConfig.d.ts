@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ChannelOption } from '../../../../../io/netty/channel/ChannelOption.d.ts'
 import type { DefaultSocketChannelConfig } from '../../../../../io/netty/channel/socket/DefaultSocketChannelConfig.d.ts'
 import type { NioSocketChannel } from '../../../../../io/netty/channel/socket/nio/NioSocketChannel.d.ts'
@@ -11,8 +12,8 @@ export class NioSocketChannel$NioSocketChannelConfig extends DefaultSocketChanne
     // private calculateMaxBytesPerGatheringWrite(): void;
     getMaxBytesPerGatheringWrite(): number;
     getOption<T extends unknown>(arg0: ChannelOption<T>): T;
-    getOptions(): Map<ChannelOption<Object>, Object>;
-    getOptions(arg0: Map<ChannelOption<Object>, Object>, ...arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
+    getOptions(): JavaMap<ChannelOption<Object>, Object>;
+    getOptions(arg0: JavaMap<ChannelOption<Object>, Object>, ...arg1: ChannelOption<Object>[]): JavaMap<ChannelOption<Object>, Object>;
     // private jdkChannel(): SocketChannel;
     setMaxBytesPerGatheringWrite(arg0: number): void;
     setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;

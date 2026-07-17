@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { ClassLoader } from '../../../../../../../java/lang/ClassLoader.d.ts'
 import type { Module } from '../../../../../../../java/lang/Module.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
@@ -68,7 +69,7 @@ export class ICUResourceBundleImpl$ResourceArray extends ICUResourceBundleImpl$R
     getStringArray(): string[];
     getStringArray(arg0: string): string[];
     getType(): number;
-    handleGet(index: number, aliasesVisited: { [key: string]: string }, requested: UResourceBundle): UResourceBundle;
-    handleGet(indexStr: string, aliasesVisited: { [key: string]: string }, requested: UResourceBundle): UResourceBundle;
+    handleGet(index: number, aliasesVisited: JavaMap<string, string>, requested: UResourceBundle): UResourceBundle;
+    handleGet(indexStr: string, aliasesVisited: JavaMap<string, string>, requested: UResourceBundle): UResourceBundle;
     handleGetStringArray(): string[];
 }

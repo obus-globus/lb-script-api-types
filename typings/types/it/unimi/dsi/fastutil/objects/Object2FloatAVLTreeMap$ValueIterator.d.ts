@@ -1,7 +1,8 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { FloatListIterator } from '../../../../../it/unimi/dsi/fastutil/floats/FloatListIterator.d.ts'
 import type { Object2FloatAVLTreeMap$TreeIterator } from '../../../../../it/unimi/dsi/fastutil/objects/Object2FloatAVLTreeMap$TreeIterator.d.ts'
 export class Object2FloatAVLTreeMap$ValueIterator extends Object2FloatAVLTreeMap$TreeIterator implements FloatListIterator {
-    private constructor(null_: { [key: string]: any })
+    private constructor(null_: JavaMap<any, any>)
     add(arg0: number): void;
     next(): number;
     nextFloat(): number;

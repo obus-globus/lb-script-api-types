@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { ThreadLocal } from '../../../../../java/lang/ThreadLocal.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -31,7 +32,7 @@ export class Biome extends Object implements ExtendedBiome {
     // private hasCustomGrassColor: boolean;
     readonly mobSettings: MobSpawnSettings;
     readonly specialEffects: BiomeSpecialEffects;
-    // private temperatureCache: ThreadLocal<{ [key: string]: any }>;
+    // private temperatureCache: ThreadLocal<JavaMap<any, any>>;
     coldEnoughToSnow(pos: BlockPos, seaLevel: number): boolean;
     getAttributes(): EnvironmentAttributeMap;
     // private getBaseGrassColor(): number;

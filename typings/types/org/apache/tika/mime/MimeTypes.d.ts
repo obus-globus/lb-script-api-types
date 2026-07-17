@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { File } from '../../../../java/io/File.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
@@ -24,7 +25,7 @@ export class MimeTypes extends Object implements Serializable, Detector {
     // private rootMimeType: MimeType;
     // private rootMimeTypeL: MimeType[];
     // private textMimeType: MimeType;
-    // private types: Map<MediaType, MimeType>;
+    // private types: JavaMap<MediaType, MimeType>;
     // private xmlMimeType: MimeType;
     // private xmls: MimeType[];
     add(arg0: MimeType): void;

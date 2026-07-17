@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Application } from '../../../ai/djl/Application.d.ts'
 import type { Artifact } from '../../../ai/djl/repository/Artifact.d.ts'
 import type { Metadata } from '../../../ai/djl/repository/Metadata.d.ts'
@@ -27,10 +28,10 @@ export class MRL extends Object {
     getVersion(): string;
     isPrepared(arg0: Artifact): boolean;
     listArtifacts(): Artifact[];
-    match(arg0: { [key: string]: string }): Artifact;
+    match(arg0: JavaMap<string, string>): Artifact;
     prepare(arg0: Artifact): void;
     prepare(arg0: Artifact, arg1: Progress): void;
-    // private search(arg0: { [key: string]: string }): Artifact[];
+    // private search(arg0: JavaMap<string, string>): Artifact[];
     toString(): string;
     toURI(): URI;
 }

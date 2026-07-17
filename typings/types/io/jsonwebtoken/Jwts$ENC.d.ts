@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { AeadAlgorithm } from '../../io/jsonwebtoken/security/AeadAlgorithm.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export class Jwts$ENC extends Object {
@@ -7,6 +8,6 @@ export class Jwts$ENC extends Object {
     static A192GCM: AeadAlgorithm;
     static A256CBC_HS512: AeadAlgorithm;
     static A256GCM: AeadAlgorithm;
-    static get(): { [key: string]: AeadAlgorithm };
+    static get(): JavaMap<string, AeadAlgorithm>;
     private constructor()
 }

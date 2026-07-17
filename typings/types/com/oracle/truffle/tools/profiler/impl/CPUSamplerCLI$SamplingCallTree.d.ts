@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { CPUSampler$Payload } from '../../../../../../com/oracle/truffle/tools/profiler/CPUSampler$Payload.d.ts'
 import type { CPUSamplerData } from '../../../../../../com/oracle/truffle/tools/profiler/CPUSamplerData.d.ts'
 import type { ProfilerNode } from '../../../../../../com/oracle/truffle/tools/profiler/ProfilerNode.d.ts'
@@ -8,7 +9,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { OptionValues } from '../../../../../../org/graalvm/options/OptionValues.d.ts'
 export class CPUSamplerCLI$SamplingCallTree extends Object {
     constructor(data: CPUSamplerData, options: OptionValues)
-    // private entries: Map<Thread, CPUSamplerCLI$SamplingCallTree$CallTreeOutputEntry[]>;
+    // private entries: JavaMap<Thread, CPUSamplerCLI$SamplingCallTree$CallTreeOutputEntry[]>;
     // private format: string;
     // private maxNameLength: number;
     // private minSamples: number;
@@ -20,9 +21,9 @@ export class CPUSamplerCLI$SamplingCallTree extends Object {
     // private summariseThreads: boolean;
     // private tiers: number[];
     // private title: string;
-    // private calculateMaxValues(threadData: Map<Thread, ProfilerNode<CPUSampler$Payload>[]>): void;
+    // private calculateMaxValues(threadData: JavaMap<Thread, ProfilerNode<CPUSampler$Payload>[]>): void;
     // private calculateMaxValuesRec(node: ProfilerNode<CPUSampler$Payload>, depth: number): void;
-    // private makeEntries(threadData: Map<Thread, ProfilerNode<CPUSampler$Payload>[]>): void;
+    // private makeEntries(threadData: JavaMap<Thread, ProfilerNode<CPUSampler$Payload>[]>): void;
     // private makeEntry(node: ProfilerNode<CPUSampler$Payload>, depth: number): CPUSamplerCLI$SamplingCallTree$CallTreeOutputEntry;
     // private mergeEntry(callTreeEntries: CPUSamplerCLI$SamplingCallTree$CallTreeOutputEntry[], node: ProfilerNode<CPUSampler$Payload>, depth: number): void;
     print(out: PrintStream): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Pair } from '../../../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -30,18 +31,18 @@ export class Brain<E extends LivingEntity> extends Object implements BrainExtend
     constructor()
     constructor(memoryTypes: MemoryModuleType<Object>[], sensorTypes: SensorType<Sensor<E>>[], activities: ActivityData<E>[], memories: MemoryMap$Value<Object>[], randomSource: RandomSource)
     readonly activeActivities: Activity[];
-    // private activityMemoriesToEraseWhenStopped: Map<Activity, MemoryModuleType<Object>[]>;
-    // private activityRequirements: Map<Activity, Pair<MemoryModuleType<Object>, MemoryStatus>[]>;
-    // private availableBehaviorsByPriority: { [key: number]: Map<Activity, BehaviorControl<E>[]> };
+    // private activityMemoriesToEraseWhenStopped: JavaMap<Activity, MemoryModuleType<Object>[]>;
+    // private activityRequirements: JavaMap<Activity, Pair<MemoryModuleType<Object>, MemoryStatus>[]>;
+    // private availableBehaviorsByPriority: JavaMap<number, JavaMap<Activity, BehaviorControl<E>[]>>;
     readonly coreActivities: Activity[];
     readonly defaultActivity: Activity;
     // private lastScheduleUpdate: number;
-    // private memories: Map<MemoryModuleType<Object>, MemorySlot<Object>>;
+    // private memories: JavaMap<MemoryModuleType<Object>, MemorySlot<Object>>;
     // private memoryModCount: number;
     // private possibleTasks: Object[];
     // private runningTasks: Object[];
     readonly schedule: EnvironmentAttribute<Activity>;
-    readonly sensors: Map<SensorType<Sensor<E>>, Sensor<E>>;
+    readonly sensors: JavaMap<SensorType<Sensor<E>>, Sensor<E>>;
     // private activityRequirementsAreMet(activity: Activity): boolean;
     addActivity(activity: Activity, behaviorPriorityPairs: Pair<number, BehaviorControl<E>>[], conditions: Pair<MemoryModuleType<Object>, MemoryStatus>[], memoriesToEraseWhenStopped: MemoryModuleType<Object>[]): void;
     checkMemory(type: MemoryModuleType<Object>, status: MemoryStatus): boolean;

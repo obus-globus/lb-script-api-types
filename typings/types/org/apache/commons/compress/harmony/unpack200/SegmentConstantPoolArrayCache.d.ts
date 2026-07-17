@@ -1,8 +1,9 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { SegmentConstantPoolArrayCache$CachedArray } from '../../../../../../org/apache/commons/compress/harmony/unpack200/SegmentConstantPoolArrayCache$CachedArray.d.ts'
 export class SegmentConstantPoolArrayCache extends Object {
     constructor()
-    // private knownArrays: Map<string[], SegmentConstantPoolArrayCache$CachedArray>;
+    // private knownArrays: JavaMap<string[], SegmentConstantPoolArrayCache$CachedArray>;
     // private lastArray: string[];
     // private lastIndexes: number[];
     // private lastKey: string;

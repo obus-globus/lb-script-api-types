@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { FileSystems$PolyglotFileSystem } from '../../../../com/oracle/truffle/polyglot/FileSystems$PolyglotFileSystem.d.ts'
 import type { URI } from '../../../../java/net/URI.d.ts'
 import type { SeekableByteChannel } from '../../../../java/nio/channels/SeekableByteChannel.d.ts'
@@ -39,7 +40,7 @@ export class FileSystems$ForwardingFileSystem extends Object implements FileSyst
     newDirectoryStream(dir: Path, filter: (param0: Path) => boolean): Path[];
     parsePath(path: URI): Path;
     parsePath(path: string): Path;
-    readAttributes(path: Path, attributes: string, ...options: LinkOption[]): { [key: string]: Object };
+    readAttributes(path: Path, attributes: string, ...options: LinkOption[]): JavaMap<string, Object>;
     readSymbolicLink(link: Path): Path;
     setAttribute(path: Path, attribute: string, value: Object, ...options: LinkOption[]): void;
     setCurrentWorkingDirectory(currentWorkingDirectory: Path): void;

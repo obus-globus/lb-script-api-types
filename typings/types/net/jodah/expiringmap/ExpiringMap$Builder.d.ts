@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { TimeUnit } from '../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { EntryLoader } from '../../../net/jodah/expiringmap/EntryLoader.d.ts'
@@ -18,7 +19,7 @@ export class ExpiringMap$Builder<K extends unknown, V extends unknown> extends O
     // private assertNoLoaderSet(): void;
     asyncExpirationListener<K1 extends K, V1 extends V>(arg0: ExpirationListener<K1, V1>): ExpiringMap$Builder<K1, V1>;
     asyncExpirationListeners<K1 extends K, V1 extends V>(arg0: ExpirationListener<K1, V1>[]): ExpiringMap$Builder<K1, V1>;
-    build<K1 extends K, V1 extends V>(): Map<K1, V1>;
+    build<K1 extends K, V1 extends V>(): JavaMap<K1, V1>;
     entryLoader<K1 extends K, V1 extends V>(arg0: EntryLoader<K1, V1>): ExpiringMap$Builder<K1, V1>;
     expiration(arg0: number, arg1: TimeUnit): ExpiringMap$Builder<K, V>;
     expirationListener<K1 extends K, V1 extends V>(arg0: ExpirationListener<K1, V1>): ExpiringMap$Builder<K1, V1>;

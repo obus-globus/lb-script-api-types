@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { TypeResolver$TypeTable } from '../../../../com/google/common/reflect/TypeResolver$TypeTable.d.ts'
 import type { TypeResolver$TypeVariableKey } from '../../../../com/google/common/reflect/TypeResolver$TypeVariableKey.d.ts'
 import type { GenericArrayType } from '../../../../java/lang/reflect/GenericArrayType.d.ts'
@@ -14,6 +15,6 @@ export class TypeResolver extends Object {
     // private resolveTypes(types: Type[]): Type[];
     resolveTypesInPlace(types: Type[]): Type[];
     // private resolveWildcardType(type: WildcardType): WildcardType;
-    where(mappings: Map<TypeResolver$TypeVariableKey, Type>): TypeResolver;
+    where(mappings: JavaMap<TypeResolver$TypeVariableKey, Type>): TypeResolver;
     where(formal: Type, actual: Type): TypeResolver;
 }

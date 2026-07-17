@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { ChunkTracker$ChunkEventHandler } from '../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/map/ChunkTracker$ChunkEventHandler.d.ts'
 import type { ClientChunkEventListener } from '../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/map/ClientChunkEventListener.d.ts'
@@ -5,7 +6,7 @@ export class ChunkTracker extends Object implements ClientChunkEventListener {
     static forEachChunk(paramarg0: (Object | null)[], paramarg1: ChunkTracker$ChunkEventHandler): void;
     constructor()
     // private chunkReady: (Object | null)[];
-    // private chunkStatus: { [key: string]: any };
+    // private chunkStatus: JavaMap<any, any>;
     // private loadQueue: (Object | null)[];
     // private unloadQueue: (Object | null)[];
     forEachEvent(arg0: ChunkTracker$ChunkEventHandler, arg1: ChunkTracker$ChunkEventHandler): void;

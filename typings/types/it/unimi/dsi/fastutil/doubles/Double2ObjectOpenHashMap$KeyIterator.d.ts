@@ -1,10 +1,11 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Double2ObjectOpenHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/doubles/Double2ObjectOpenHashMap$MapIterator.d.ts'
 import type { DoubleConsumer } from '../../../../../it/unimi/dsi/fastutil/doubles/DoubleConsumer.d.ts'
 import type { DoubleIterator } from '../../../../../it/unimi/dsi/fastutil/doubles/DoubleIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { DoubleConsumer as DoubleConsumer_2 } from '../../../../../java/util/function/DoubleConsumer.d.ts'
 export class Double2ObjectOpenHashMap$KeyIterator extends Double2ObjectOpenHashMap$MapIterator<Object> implements DoubleIterator {
-    constructor(null_: { [key: string]: any })
+    constructor(null_: JavaMap<any, any>)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;

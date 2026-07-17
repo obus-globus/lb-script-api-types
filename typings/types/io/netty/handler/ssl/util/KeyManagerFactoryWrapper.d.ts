@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { SimpleKeyManagerFactory } from '../../../../../io/netty/handler/ssl/util/SimpleKeyManagerFactory.d.ts'
 import type { KeyStore } from '../../../../../java/security/KeyStore.d.ts'
 import type { KeyManager } from '../../../../../javax/net/ssl/KeyManager.d.ts'
@@ -7,7 +8,7 @@ export class KeyManagerFactoryWrapper extends SimpleKeyManagerFactory {
     static getDefaultAlgorithm(): string;
     static getInstance(paramarg0: string): KeyManagerFactory;
     static getInstance(paramarg0: string, paramarg1: string): KeyManagerFactory;
-    static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): KeyManagerFactory;
+    static getInstance(paramarg0: string, paramarg1: JavaMap<any, any>): KeyManagerFactory;
     constructor(arg0: KeyManager)
     // private km: KeyManager;
     engineGetKeyManagers(): KeyManager[];

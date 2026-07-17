@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { PropertyChangeEvent } from '../../../../../java/beans/PropertyChangeEvent.d.ts'
 import type { PropertyChangeListener } from '../../../../../java/beans/PropertyChangeListener.d.ts'
 import type { AutoCloseable } from '../../../../../java/lang/AutoCloseable.d.ts'
@@ -40,7 +41,7 @@ export class LoggerContext extends AbstractLifeCycle implements AutoCloseable, C
     // private configLock: Lock;
     readonly configuration: Configuration;
     // private contextName: string;
-    // private externalMap: { [key: string]: Object };
+    // private externalMap: JavaMap<string, Object>;
     readonly listeners: LoggerContextShutdownAware[];
     readonly loggerRegistry: InternalLoggerRegistry;
     // private propertyChangeListeners: PropertyChangeListener[];

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { AtomicReferenceArray } from '../../../../../java/util/concurrent/atomic/AtomicReferenceArray.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -20,7 +21,7 @@ export class ModelDiscovery$ModelWrapper extends Object implements ResolvedModel
     private constructor(id: Identifier, wrapped: UnbakedModel, valid: boolean)
     // private fixedSlots: AtomicReferenceArray<Object>;
     // private id: Identifier;
-    // private modelBakeCache: Map<ModelState, QuadCollection>;
+    // private modelBakeCache: JavaMap<ModelState, QuadCollection>;
     // private parent: ModelDiscovery$ModelWrapper;
     // private valid: boolean;
     // private wrapped: UnbakedModel;

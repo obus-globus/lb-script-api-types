@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { TruffleLogger } from '../../../../com/oracle/truffle/api/TruffleLogger.d.ts'
 import type { TruffleLogger$LoggerCache$ContextWeakReference } from '../../../../com/oracle/truffle/api/TruffleLogger$LoggerCache$ContextWeakReference.d.ts'
 import type { TruffleLogger$LoggerCache$LoggerNode } from '../../../../com/oracle/truffle/api/TruffleLogger$LoggerCache$LoggerNode.d.ts'
@@ -7,12 +8,12 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class TruffleLogger$LoggerCache extends Object {
     constructor(loggerCacheSpi: Object)
     // private activeContexts: TruffleLogger$LoggerCache$ContextWeakReference[];
-    // private effectiveLevels: { [key: string]: Level };
+    // private effectiveLevels: JavaMap<string, Level>;
     // private loggerCache: Object;
-    // private loggers: { [key: string]: TruffleLogger$LoggerCache$NamedLoggerRef };
+    // private loggers: JavaMap<string, TruffleLogger$LoggerCache$NamedLoggerRef>;
     // private polyglotRootLogger: TruffleLogger;
     // private root: TruffleLogger$LoggerCache$LoggerNode;
-    addLogLevelsForVMObject(vmObject: Object, addedLevels: { [key: string]: Level }): void;
+    addLogLevelsForVMObject(vmObject: Object, addedLevels: JavaMap<string, Level>): void;
     // private addLogger(logger: TruffleLogger): boolean;
     close(): void;
     // private collectRemovedLevels(): string[];
@@ -24,7 +25,7 @@ export class TruffleLogger$LoggerCache extends Object {
     // private getOrCreateLogger(id: string, loggerName: string): TruffleLogger;
     getSPI(): Object;
     isLoggable(loggerName: string, level: Level): boolean;
-    // private reconfigure(addedLevels: { [key: string]: Level }, toRemove: string[]): void;
+    // private reconfigure(addedLevels: JavaMap<string, Level>, toRemove: string[]): void;
     // private removeContext(vmObject: Object): string[];
     removeLogLevelsForVMObject(vmObject: Object): void;
     // private setLoggerLevel(logger: TruffleLogger, loggerName: string, singleContext: boolean): void;

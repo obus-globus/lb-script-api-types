@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { GpuBufferSlice } from '../../../../../com/mojang/blaze3d/buffers/GpuBufferSlice.d.ts'
 import type { RenderPipeline } from '../../../../../com/mojang/blaze3d/pipeline/RenderPipeline.d.ts'
 import type { RenderTarget } from '../../../../../com/mojang/blaze3d/pipeline/RenderTarget.d.ts'
@@ -43,9 +44,9 @@ export class GuiRenderer extends Object implements AutoCloseable, GuiRendererExt
     // private guiProjectionMatrixBuffer: ProjectionMatrixBuffer;
     // private hasFabricInitialized: boolean;
     // private itemAtlas: GuiItemAtlas;
-    // private oversizedItemRenderers: Map<Object, OversizedItemRenderer>;
-    // private pictureInPictureRenderers: Map<Class<PictureInPictureRenderState>, PictureInPictureRenderer<any>>;
-    // private pipRendererPools: Map<Object | null, Object | null>;
+    // private oversizedItemRenderers: JavaMap<Object, OversizedItemRenderer>;
+    // private pictureInPictureRenderers: JavaMap<Class<PictureInPictureRenderState>, PictureInPictureRenderer<any>>;
+    // private pipRendererPools: JavaMap<Object | null, Object | null>;
     // private previousDraw: StagedVertexBuffer$Draw;
     // private previousPipeline: RenderPipeline;
     // private previousScissorArea: ScreenRectangle;

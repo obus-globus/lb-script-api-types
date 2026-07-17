@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Thread } from '../../../java/lang/Thread.d.ts'
 import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Instant } from '../../../java/time/Instant.d.ts'
@@ -37,8 +38,8 @@ export class PlatformRecorder extends Object {
     makeChunkList(arg0: Instant, arg1: Instant): RepositoryChunk[];
     migrate(arg0: Path): void;
     newCopy(arg0: PlatformRecording, arg1: boolean): Recording;
-    newRecording(arg0: { [key: string]: string }): PlatformRecording;
-    // private newRecording(arg0: { [key: string]: string }, arg1: number): PlatformRecording;
+    newRecording(arg0: JavaMap<string, string>): PlatformRecording;
+    // private newRecording(arg0: JavaMap<string, string>, arg1: number): PlatformRecording;
     newTemporaryRecording(): PlatformRecording;
     // private periodicTask(): void;
     rotateDisk(): void;

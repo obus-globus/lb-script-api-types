@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { InputStream } from '../../java/io/InputStream.d.ts'
 import type { Serializable } from '../../java/io/Serializable.d.ts'
 import type { Class$AnnotationData } from '../../java/lang/Class$AnnotationData.d.ts'
@@ -41,8 +42,8 @@ export class Class<T extends unknown> extends Object implements Serializable, Co
     // private annotationType: AnnotationType;
     // private cachedConstructor: Constructor<T>;
     // private classRedefinedCount: number;
-    // private classValueMap: { [key: string]: any };
-    // private enumConstantDirectory: { [key: string]: T };
+    // private classValueMap: JavaMap<any, any>;
+    // private enumConstantDirectory: JavaMap<string, T>;
     readonly enumConstants: T[];
     // private genericInfo: ClassRepository;
     readonly module: Module;
@@ -64,7 +65,7 @@ export class Class<T extends unknown> extends Object implements Serializable, Co
     descriptorString(): string;
     desiredAssertionStatus(): boolean;
     // private elementType(): Class<Object>;
-    enumConstantDirectory(): { [key: string]: T };
+    enumConstantDirectory(): JavaMap<string, T>;
     findMethod(arg0: boolean, arg1: string, ...arg2: Class<Object>[]): Method;
     getAnnotatedInterfaces(): AnnotatedType[];
     getAnnotatedSuperclass(): AnnotatedType;
@@ -90,7 +91,7 @@ export class Class<T extends unknown> extends Object implements Serializable, Co
     getConstructors(): Constructor<Object>[];
     getDeclaredAnnotation<A extends Annotation>(arg0: Class<A>): A;
     getDeclaredAnnotation(arg0: Class<T>): T;
-    getDeclaredAnnotationMap(): Map<Class<Annotation>, Annotation>;
+    getDeclaredAnnotationMap(): JavaMap<Class<Annotation>, Annotation>;
     getDeclaredAnnotations(): Annotation[];
     getDeclaredAnnotationsByType<A extends Annotation>(arg0: Class<A>): A[];
     getDeclaredAnnotationsByType(arg0: Class<T>): T[];

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { ObjectInputStream } from '../../../../../../../java/io/ObjectInputStream.d.ts'
 import type { ObjectOutputStream } from '../../../../../../../java/io/ObjectOutputStream.d.ts'
 import type { StringBuffer } from '../../../../../../../java/lang/StringBuffer.d.ts'
@@ -187,9 +188,9 @@ export class SimpleDateFormat extends DateFormat implements Cloneable {
     // private hasMinute: boolean;
     // private hasSecond: boolean;
     // private locale: ULocale;
-    // private numberFormatters: { [key: string]: NumberFormat };
+    // private numberFormatters: JavaMap<string, NumberFormat>;
     // private override: string;
-    // private overrideMap: { [key: string]: string };
+    // private overrideMap: JavaMap<string, string>;
     // private pattern: string;
     // private patternItems: Object[];
     // private serialVersionOnStream: number;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { MethodVisitor } from '../../../../../../../com/oracle/truffle/api/impl/asm/MethodVisitor.d.ts'
 import type { AbstractInsnNode } from '../../../../../../../com/oracle/truffle/api/impl/asm/tree/AbstractInsnNode.d.ts'
 import type { LabelNode } from '../../../../../../../com/oracle/truffle/api/impl/asm/tree/LabelNode.d.ts'
@@ -22,6 +23,6 @@ export class MultiANewArrayInsnNode extends AbstractInsnNode {
     desc: string;
     dims: number;
     accept(methodVisitor: MethodVisitor): void;
-    clone(clonedLabels: Map<LabelNode, LabelNode>): AbstractInsnNode;
+    clone(clonedLabels: JavaMap<LabelNode, LabelNode>): AbstractInsnNode;
     getType(): number;
 }

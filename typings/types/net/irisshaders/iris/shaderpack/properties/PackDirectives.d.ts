@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { TextureScaleOverride } from '../../../../../net/irisshaders/iris/gl/texture/TextureScaleOverride.d.ts'
 import type { TextureType } from '../../../../../net/irisshaders/iris/gl/texture/TextureType.d.ts'
@@ -20,7 +21,7 @@ export class PackDirectives extends Object {
     readonly concurrentCompute: boolean;
     // private dhCloudSetting: CloudSetting;
     readonly drynessHalfLife: number;
-    // private explicitFlips: { [key: string]: { [key: string]: any } };
+    // private explicitFlips: JavaMap<string, JavaMap<any, any>>;
     readonly eyeBrightnessHalfLife: number;
     readonly fallbackTex: number;
     // private frustumCulling: boolean;
@@ -33,7 +34,7 @@ export class PackDirectives extends Object {
     readonly prepareBeforeShadow: boolean;
     // private rainDepth: boolean;
     readonly renderTargetDirectives: PackRenderTargetDirectives;
-    // private scaleOverrides: { [key: string]: TextureScaleOverride };
+    // private scaleOverrides: JavaMap<string, TextureScaleOverride>;
     // private separateAo: boolean;
     // private separateEntityDraws: boolean;
     readonly shadowDirectives: PackShadowDirectives;
@@ -44,7 +45,7 @@ export class PackDirectives extends Object {
     readonly sunPathRotation: number;
     // private supportsColorCorrection: boolean;
     // private supportsEndFlash: boolean;
-    readonly textureMap: Map<Tri<string, TextureType, TextureStage>, string>;
+    readonly textureMap: JavaMap<Tri<string, TextureType, TextureStage>, string>;
     // private underwaterOverlay: boolean;
     // private vignette: boolean;
     // private voxelizeLightBlocks: boolean;
@@ -59,7 +60,7 @@ export class PackDirectives extends Object {
     getConcurrentCompute(): boolean;
     getDHCloudSetting(): CloudSetting;
     getDrynessHalfLife(): number;
-    getExplicitFlips(arg0: string): { [key: number]: boolean };
+    getExplicitFlips(arg0: string): JavaMap<number, boolean>;
     getEyeBrightnessHalfLife(): number;
     getFallbackTex(): number;
     getNoiseTextureResolution(): number;
@@ -67,7 +68,7 @@ export class PackDirectives extends Object {
     getRenderTargetDirectives(): PackRenderTargetDirectives;
     getShadowDirectives(): PackShadowDirectives;
     getSunPathRotation(): number;
-    getTextureMap(): Map<Tri<string, TextureType, TextureStage>, string>;
+    getTextureMap(): JavaMap<Tri<string, TextureType, TextureStage>, string>;
     getTextureScaleOverride(arg0: number, arg1: number, arg2: number): Vector2i;
     getWetnessHalfLife(): number;
     isOldHandLight(): boolean;

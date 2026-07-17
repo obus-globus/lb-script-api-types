@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { ClassLoader } from '../../../../../../java/lang/ClassLoader.d.ts'
 import type { URL } from '../../../../../../java/net/URL.d.ts'
@@ -12,12 +13,12 @@ import type { KnotClassLoaderInterface } from '../../../../../../net/fabricmc/lo
 import type { IMixinTransformer } from '../../../../../../org/spongepowered/asm/mixin/transformer/IMixinTransformer.d.ts'
 export class KnotClassDelegate<T extends ClassLoader & KnotClassDelegate$ClassLoaderAccess> extends Object implements KnotClassLoaderInterface {
     constructor(arg0: boolean, arg1: EnvType, arg2: T, arg3: ClassLoader, arg4: GameProvider)
-    // private allowedPrefixes: Map<Path, string[]>;
+    // private allowedPrefixes: JavaMap<Path, string[]>;
     readonly classLoader: T;
     // private codeSources: Path[];
     // private envType: EnvType;
     // private isDevelopment: boolean;
-    // private metadataCache: Map<Path, KnotClassDelegate$Metadata>;
+    // private metadataCache: JavaMap<Path, KnotClassDelegate$Metadata>;
     // private mixinTransformer: IMixinTransformer;
     // private parentClassLoader: ClassLoader;
     // private parentSourcedClasses: string[];

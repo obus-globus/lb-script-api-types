@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../../java/io/OutputStream.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
@@ -41,12 +42,12 @@ export abstract class FileSystemProvider extends Object {
     newByteChannel(arg0: Path, arg1: OpenOption[], ...arg2: FileAttribute<Object>[]): SeekableByteChannel;
     newDirectoryStream(arg0: Path, arg1: (param0: Path) => boolean): Path[];
     newFileChannel(arg0: Path, arg1: OpenOption[], ...arg2: FileAttribute<Object>[]): FileChannel;
-    newFileSystem(arg0: URI, arg1: { [key: string]: Object | null }): FileSystem;
-    newFileSystem(arg0: Path, arg1: { [key: string]: Object | null }): FileSystem;
+    newFileSystem(arg0: URI, arg1: JavaMap<string, Object | null>): FileSystem;
+    newFileSystem(arg0: Path, arg1: JavaMap<string, Object | null>): FileSystem;
     newInputStream(arg0: Path, ...arg1: OpenOption[]): InputStream;
     newOutputStream(arg0: Path, ...arg1: OpenOption[]): OutputStream;
     readAttributes<A extends BasicFileAttributes>(arg0: Path, arg1: Class<A>, ...arg2: LinkOption[]): A;
-    readAttributes(arg0: Path, arg1: string, ...arg2: LinkOption[]): { [key: string]: Object };
+    readAttributes(arg0: Path, arg1: string, ...arg2: LinkOption[]): JavaMap<string, Object>;
     readAttributesIfExists<A extends BasicFileAttributes>(arg0: Path, arg1: Class<A>, ...arg2: LinkOption[]): A;
     readSymbolicLink(arg0: Path): Path;
     setAttribute(arg0: Path, arg1: string, arg2: Object, ...arg3: LinkOption[]): void;

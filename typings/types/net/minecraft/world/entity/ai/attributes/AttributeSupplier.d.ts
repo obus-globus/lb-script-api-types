@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../../../net/minecraft/core/Holder.d.ts'
@@ -7,8 +8,8 @@ import type { AttributeInstance } from '../../../../../../net/minecraft/world/en
 import type { AttributeSupplier$Builder } from '../../../../../../net/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder.d.ts'
 export class AttributeSupplier extends Object {
     static builder(): AttributeSupplier$Builder;
-    private constructor(instances: Map<Holder<Attribute>, AttributeInstance>)
-    // private instances: Map<Holder<Attribute>, AttributeInstance>;
+    private constructor(instances: JavaMap<Holder<Attribute>, AttributeInstance>)
+    // private instances: JavaMap<Holder<Attribute>, AttributeInstance>;
     createInstance(onDirty: (param0: AttributeInstance) => void, attribute: Holder<Attribute>): AttributeInstance;
     // private getAttributeInstance(attribute: Holder<Attribute>): AttributeInstance;
     getBaseValue(attribute: Holder<Attribute>): number;

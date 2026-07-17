@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { RecipeCollection } from '../../../net/minecraft/client/gui/screens/recipebook/RecipeCollection.d.ts'
 import type { RecipeBook } from '../../../net/minecraft/stats/RecipeBook.d.ts'
 import type { ExtendedRecipeBookCategory } from '../../../net/minecraft/world/item/crafting/ExtendedRecipeBookCategory.d.ts'
@@ -6,9 +7,9 @@ import type { RecipeDisplayId } from '../../../net/minecraft/world/item/crafting
 export class ClientRecipeBook extends RecipeBook {
     constructor()
     // private allCollections: RecipeCollection[];
-    // private collectionsByTab: Map<ExtendedRecipeBookCategory, RecipeCollection[]>;
+    // private collectionsByTab: JavaMap<ExtendedRecipeBookCategory, RecipeCollection[]>;
     // private highlight: RecipeDisplayId[];
-    // private known: Map<RecipeDisplayId, RecipeDisplayEntry>;
+    // private known: JavaMap<RecipeDisplayId, RecipeDisplayEntry>;
     add(display: RecipeDisplayEntry): void;
     addHighlight(id: RecipeDisplayId): void;
     clear(): void;

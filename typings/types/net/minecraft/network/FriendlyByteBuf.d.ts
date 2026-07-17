@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Either } from '../../../com/mojang/datafixers/util/Either.d.ts'
 import type { Codec } from '../../../com/mojang/serialization/Codec.d.ts'
 import type { DynamicOps } from '../../../com/mojang/serialization/DynamicOps.d.ts'
@@ -188,8 +189,8 @@ export class FriendlyByteBuf extends ByteBuf {
     readLong(): number;
     readLongArray(): number[];
     readLongLE(): number;
-    readMap<M extends Map<K, V>, K extends unknown, V extends unknown>(ctor: (param0: number) => M, keyDecoder: (param0: FriendlyByteBuf) => K, valueDecoder: (param0: FriendlyByteBuf) => V): M;
-    readMap<K extends unknown, V extends unknown>(keyDecoder: (param0: FriendlyByteBuf) => K, valueDecoder: (param0: FriendlyByteBuf) => V): Map<K, V>;
+    readMap<M extends JavaMap<K, V>, K extends unknown, V extends unknown>(ctor: (param0: number) => M, keyDecoder: (param0: FriendlyByteBuf) => K, valueDecoder: (param0: FriendlyByteBuf) => V): M;
+    readMap<K extends unknown, V extends unknown>(keyDecoder: (param0: FriendlyByteBuf) => K, valueDecoder: (param0: FriendlyByteBuf) => V): JavaMap<K, V>;
     readMedium(): number;
     readMediumLE(): number;
     readNbt(): CompoundTag;
@@ -309,7 +310,7 @@ export class FriendlyByteBuf extends ByteBuf {
     writeLong(value: number): FriendlyByteBuf;
     writeLongArray(longs: number[]): FriendlyByteBuf;
     writeLongLE(value: number): FriendlyByteBuf;
-    writeMap<K extends unknown, V extends unknown>(map: Map<K, V>, keyEncoder: (param0: FriendlyByteBuf, param1: K) => void, valueEncoder: (param0: FriendlyByteBuf, param1: V) => void): void;
+    writeMap<K extends unknown, V extends unknown>(map: JavaMap<K, V>, keyEncoder: (param0: FriendlyByteBuf, param1: K) => void, valueEncoder: (param0: FriendlyByteBuf, param1: V) => void): void;
     writeMedium(value: number): FriendlyByteBuf;
     writeMediumLE(value: number): FriendlyByteBuf;
     writeNbt(tag: Tag): FriendlyByteBuf;

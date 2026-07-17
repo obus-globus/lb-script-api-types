@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ParticleEngineAccessor } from '../../../../net/fabricmc/fabric/mixin/client/particle/ParticleEngineAccessor.d.ts'
 import type { Camera } from '../../../../net/minecraft/client/Camera.d.ts'
@@ -16,11 +17,11 @@ import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
 export class ParticleEngine extends Object implements ParticleEngineAccessor {
     constructor(level: ClientLevel, resourceManager: ParticleResources)
     level: ClientLevel;
-    // private particles: Map<ParticleRenderType, ParticleGroup<any>>;
+    // private particles: JavaMap<ParticleRenderType, ParticleGroup<any>>;
     // private particlesToAdd: Particle[];
     readonly random: RandomSource;
     resourceManager: ParticleResources;
-    // private trackedParticleCounts: { [key: string]: any };
+    // private trackedParticleCounts: JavaMap<any, any>;
     // private trackingEmitters: TrackingEmitter[];
     add(p: Particle): void;
     clearParticles(): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { ObjectInputStream } from '../../../java/io/ObjectInputStream.d.ts'
 import type { Serializable } from '../../../java/io/Serializable.d.ts'
 import type { Predicate } from '../../../java/util/function/Predicate.d.ts'
@@ -39,7 +40,7 @@ export class Pattern extends Object implements Serializable {
     // private localCount: number;
     // private localTCNCount: number;
     // private matchRoot: Pattern$Node;
-    // private namedGroups: { [key: string]: number };
+    // private namedGroups: JavaMap<string, number>;
     // private normalizedPattern: string;
     // private pattern: string;
     // private patternLength: number;
@@ -75,8 +76,8 @@ export class Pattern extends Object implements Serializable {
     // private isLineSeparator(arg0: number): boolean;
     // private mark(arg0: number): void;
     matcher(arg0: CharSequence): Matcher;
-    namedGroups(): { [key: string]: number };
-    // private namedGroupsMap(): { [key: string]: number };
+    namedGroups(): JavaMap<string, number>;
+    // private namedGroupsMap(): JavaMap<string, number>;
     // private newCharProperty(arg0: (param0: number) => boolean): Pattern$CharProperty;
     // private newSlice(arg0: number[], arg1: number, arg2: boolean): Pattern$Node;
     // private next(): number;

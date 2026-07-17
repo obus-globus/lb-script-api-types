@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Channel } from '../../../../io/netty/channel/Channel.d.ts'
 import type { AbstractEpollChannel$AbstractEpollUnsafe } from '../../../../io/netty/channel/epoll/AbstractEpollChannel$AbstractEpollUnsafe.d.ts'
 import type { AbstractEpollStreamChannel } from '../../../../io/netty/channel/epoll/AbstractEpollStreamChannel.d.ts'
@@ -26,7 +27,7 @@ export class EpollSocketChannel extends AbstractEpollStreamChannel implements So
     newUnsafe(): AbstractEpollChannel$AbstractEpollUnsafe;
     parent(): ServerSocketChannel;
     remoteAddress(): InetSocketAddress;
-    setTcpMd5Sig(arg0: Map<InetAddress, number[]>): void;
+    setTcpMd5Sig(arg0: JavaMap<InetAddress, number[]>): void;
     tcpInfo(): EpollTcpInfo;
     tcpInfo(arg0: EpollTcpInfo): EpollTcpInfo;
 }

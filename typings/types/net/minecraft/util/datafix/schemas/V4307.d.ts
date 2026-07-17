@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Schema } from '../../../../../com/mojang/datafixers/schemas/Schema.d.ts'
 import type { Type } from '../../../../../com/mojang/datafixers/types/Type.d.ts'
 import type { TypeTemplate } from '../../../../../com/mojang/datafixers/types/templates/TypeTemplate.d.ts'
@@ -6,9 +7,9 @@ import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { NamespacedSchema } from '../../../../../net/minecraft/util/datafix/schemas/NamespacedSchema.d.ts'
 export class V4307 extends NamespacedSchema {
     static NAMESPACED_STRING_CODEC: PrimitiveCodec<string>;
-    static components(paramschema: Schema): { [key: string]: () => TypeTemplate };
+    static components(paramschema: Schema): JavaMap<string, () => TypeTemplate>;
     static ensureNamespaced(paraminput: string): string;
     static namespacedString(): Type<string>;
     constructor(versionKey: number, parent: Schema)
-    registerTypes(schema: Schema, entityTypes: { [key: string]: () => TypeTemplate }, blockEntityTypes: { [key: string]: () => TypeTemplate }): void;
+    registerTypes(schema: Schema, entityTypes: JavaMap<string, () => TypeTemplate>, blockEntityTypes: JavaMap<string, () => TypeTemplate>): void;
 }

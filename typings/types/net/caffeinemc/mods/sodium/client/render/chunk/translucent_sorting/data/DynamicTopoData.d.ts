@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../../JavaMap.d.ts'
 import type { IntBuffer } from '../../../../../../../../../java/nio/IntBuffer.d.ts'
 import type { Supplier } from '../../../../../../../../../java/util/function/Supplier.d.ts'
 import type { CombinedCameraPos } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/translucent_sorting/data/CombinedCameraPos.d.ts'
@@ -20,13 +21,13 @@ export class DynamicTopoData extends DynamicData {
     static vertexCountToQuadCount(paramarg0: number): number;
     static writeQuadVertexIndexes(paramarg0: IntBuffer, paramarg1: number): void;
     static writeQuadVertexIndexes(paramarg0: IntBuffer, paramarg1: number[]): void;
-    private constructor(arg0: SectionPos, arg1: TQuad[], arg2: GeometryPlanes, arg3: Vector3dc, arg4: () => Map<Vector3fc, number[]>)
+    private constructor(arg0: SectionPos, arg1: TQuad[], arg2: GeometryPlanes, arg3: Vector3dc, arg4: () => JavaMap<Vector3fc, number[]>)
     // private GFNITrigger: boolean;
     // private centroids: Vector3fc[];
     // private consecutiveTopoSortFailures: number;
     // private directTrigger: boolean;
     readonly directTriggerKey: number;
-    // private distancesByNormal: Map<Vector3fc, number[]>;
+    // private distancesByNormal: JavaMap<Vector3fc, number[]>;
     // private pendingTriggerIsDirect: boolean;
     // private quads: TQuad[];
     GFNITriggerEnabled(): boolean;

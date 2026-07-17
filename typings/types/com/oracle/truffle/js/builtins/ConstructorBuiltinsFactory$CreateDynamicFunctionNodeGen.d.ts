@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { ConstructorBuiltins$CreateDynamicFunctionNode } from '../../../../../com/oracle/truffle/js/builtins/ConstructorBuiltins$CreateDynamicFunctionNode.d.ts'
 import type { ConstructorBuiltins$CreateDynamicFunctionNode$CachedSourceKey } from '../../../../../com/oracle/truffle/js/builtins/ConstructorBuiltins$CreateDynamicFunctionNode$CachedSourceKey.d.ts'
@@ -12,7 +13,7 @@ export class ConstructorBuiltinsFactory$CreateDynamicFunctionNodeGen extends Con
     private constructor(context: JSContext, generatorFunction: boolean, asyncFunction: boolean)
     // private cached_cache: ConstructorBuiltinsFactory$CreateDynamicFunctionNodeGen$CachedData;
     // private state_0_: number;
-    // private uncached_cache_: Map<ConstructorBuiltins$CreateDynamicFunctionNode$CachedSourceKey, ScriptNode>;
+    // private uncached_cache_: JavaMap<ConstructorBuiltins$CreateDynamicFunctionNode$CachedSourceKey, ScriptNode>;
     // private executeAndSpecialize(arg0Value: string, arg1Value: string, arg2Value: string, arg3Value: ScriptOrModule): JSFunctionObject;
     executeFunction(arg0Value: string, arg1Value: string, arg2Value: string, arg3Value: ScriptOrModule): JSFunctionObject;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ListenerTransform } from '../../../../com/mojang/blaze3d/audio/ListenerTransform.d.ts'
 import type { CompletableFuture } from '../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Executor } from '../../../../java/util/concurrent/Executor.d.ts'
@@ -30,8 +31,8 @@ export class SoundManager extends SimplePreparableReloadListener<SoundManager$Pr
     static INTENTIONALLY_EMPTY_SOUND_LOCATION: Identifier;
     constructor(options: Options)
     // private fabric$id: Identifier;
-    // private registry: Map<Identifier, WeighedSoundEvents>;
-    // private soundCache: Map<Identifier, Resource>;
+    // private registry: JavaMap<Identifier, WeighedSoundEvents>;
+    // private soundCache: JavaMap<Identifier, Resource>;
     // private soundEngine: SoundEngine;
     addListener(listener: SoundEventListener): void;
     apply(preparations: SoundManager$Preparations, manager: ResourceManager, profiler: ProfilerFiller): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { FileMonitor } from '../../../../../com/sun/jna/platform/FileMonitor.d.ts'
 import type { W32FileMonitor$FileInfo } from '../../../../../com/sun/jna/platform/win32/W32FileMonitor$FileInfo.d.ts'
 import type { WinNT$HANDLE } from '../../../../../com/sun/jna/platform/win32/WinNT$HANDLE.d.ts'
@@ -18,8 +19,8 @@ export class W32FileMonitor extends FileMonitor {
     static getInstance(): FileMonitor;
     constructor()
     // private disposing: boolean;
-    // private fileMap: Map<File, W32FileMonitor$FileInfo>;
-    // private handleMap: Map<WinNT$HANDLE, W32FileMonitor$FileInfo>;
+    // private fileMap: JavaMap<File, W32FileMonitor$FileInfo>;
+    // private handleMap: JavaMap<WinNT$HANDLE, W32FileMonitor$FileInfo>;
     // private port: WinNT$HANDLE;
     // private watcher: Thread;
     // private convertMask(arg0: number): number;

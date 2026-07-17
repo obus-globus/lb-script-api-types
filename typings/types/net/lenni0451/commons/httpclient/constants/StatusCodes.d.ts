@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class StatusCodes extends Object {
     static ACCEPTED: number;
@@ -50,7 +51,7 @@ export class StatusCodes extends Object {
     static RESET_CONTENT: number;
     static SEE_OTHER: number;
     static SERVICE_UNAVAILABLE: number;
-    static STATUS_CODES: { [key: number]: string };
+    static STATUS_CODES: JavaMap<number, string>;
     static SWITCHING_PROTOCOLS: number;
     static TEMPORARY_REDIRECT: number;
     static TOO_EARLY: number;

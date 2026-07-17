@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -9,12 +10,12 @@ import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { LivingEntity } from '../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 export class MobEffectsPredicate extends Record {
     static CODEC: Codec<MobEffectsPredicate>;
-    constructor(effectMap: Map<Holder<MobEffect>, MobEffectsPredicate$MobEffectInstancePredicate>)
-    // private effectMap: Map<Holder<MobEffect>, MobEffectsPredicate$MobEffectInstancePredicate>;
-    effectMap(): Map<Holder<MobEffect>, MobEffectsPredicate$MobEffectInstancePredicate>;
+    constructor(effectMap: JavaMap<Holder<MobEffect>, MobEffectsPredicate$MobEffectInstancePredicate>)
+    // private effectMap: JavaMap<Holder<MobEffect>, MobEffectsPredicate$MobEffectInstancePredicate>;
+    effectMap(): JavaMap<Holder<MobEffect>, MobEffectsPredicate$MobEffectInstancePredicate>;
     equals(o: Object | null): boolean;
     hashCode(): number;
-    matches(effects: Map<Holder<MobEffect>, MobEffectInstance>): boolean;
+    matches(effects: JavaMap<Holder<MobEffect>, MobEffectInstance>): boolean;
     matches(entity: Entity): boolean;
     matches(entity: LivingEntity): boolean;
     toString(): string;

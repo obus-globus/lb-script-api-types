@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { StringTag } from '../../../../../../com/viaversion/nbt/tag/StringTag.d.ts'
 import type { Tag } from '../../../../../../com/viaversion/nbt/tag/Tag.d.ts'
 import type { UserConnection } from '../../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
@@ -17,7 +18,7 @@ export class StructuredDataConverter extends Object {
     static removeBackupTag(paramarg0: Map$Entry<string, Tag>[]): Map$Entry<string, Tag>[];
     constructor(arg0: boolean)
     // private backupInconvertibleData: boolean;
-    // private rewriters: Map<StructuredDataKey<Object>, (param0: UserConnection, param1: Object | null, param2: Map$Entry<string, Tag>[]) => void>;
+    // private rewriters: JavaMap<StructuredDataKey<Object>, (param0: UserConnection, param1: Object | null, param2: Map$Entry<string, Tag>[]) => void>;
     backupInconvertibleData(): boolean;
     // private convertBlockPredicates(arg0: Map$Entry<string, Tag>[], arg1: AdventureModePredicate, arg2: string, arg3: number): void;
     // private convertEnchantments(arg0: Enchantments, arg1: Map$Entry<string, Tag>[], arg2: boolean): void;

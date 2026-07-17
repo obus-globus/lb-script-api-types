@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { FileChannel } from '../../../../../../java/nio/channels/FileChannel.d.ts'
@@ -14,7 +15,7 @@ export class ZipSplitOutputStream extends RandomAccessOutputStream {
     // private diskToPosition: number[];
     // private finished: boolean;
     // private outputStream: FileRandomAccessOutputStream;
-    // private positionToFiles: { [key: number]: Path };
+    // private positionToFiles: JavaMap<number, Path>;
     // private singleByte: number[];
     // private splitSize: number;
     // private totalPosition: number;

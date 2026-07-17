@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { RootCoverage } from '../../../../../../com/oracle/truffle/tools/coverage/RootCoverage.d.ts'
 import type { SourceCoverage } from '../../../../../../com/oracle/truffle/tools/coverage/SourceCoverage.d.ts'
 import type { PrintStream } from '../../../../../../java/io/PrintStream.d.ts'
@@ -7,7 +8,7 @@ export class LCOVPrinter extends Object {
     // private coverage: SourceCoverage[];
     // private out: PrintStream;
     // private strictLines: boolean;
-    // private linesToCount(sourceCoverage: SourceCoverage): { [key: number]: number };
+    // private linesToCount(sourceCoverage: SourceCoverage): JavaMap<number, number>;
     print(): void;
     // private printCoveredRootCount(coveredRoots: number): void;
     // private printLineData(sourceCoverage: SourceCoverage): void;

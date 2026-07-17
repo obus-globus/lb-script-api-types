@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { DialogAction } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/dialog/action/DialogAction.d.ts'
 import type { ValueGetter } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/dialog/action/ValueGetter.d.ts'
 import type { ParsedTemplate } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/dialog/template/ParsedTemplate.d.ts'
@@ -11,6 +12,6 @@ export class CommandTemplateAction extends Object implements DialogAction {
     getTemplate(): ParsedTemplate;
     hashCode(): number;
     setTemplate(arg0: ParsedTemplate): void;
-    toAction(arg0: { [key: string]: ValueGetter }): ClickEvent;
+    toAction(arg0: JavaMap<string, ValueGetter>): ClickEvent;
     toString(): string;
 }

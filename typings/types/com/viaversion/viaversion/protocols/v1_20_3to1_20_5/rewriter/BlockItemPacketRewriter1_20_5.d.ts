@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { StringTag } from '../../../../../../com/viaversion/nbt/tag/StringTag.d.ts'
 import type { Tag } from '../../../../../../com/viaversion/nbt/tag/Tag.d.ts'
 import type { UserConnection } from '../../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
@@ -23,9 +24,9 @@ export class BlockItemPacketRewriter1_20_5 extends ItemRewriter<ClientboundPacke
     static ATTRIBUTE_OPERATIONS: string[];
     static MOB_TAGS: string[];
     constructor(arg0: Protocol1_20_3To1_20_5)
-    // private viaFabricPlus$armorMaxDamage_b1_8_1: Map<Object | null, Object | null>;
+    // private viaFabricPlus$armorMaxDamage_b1_8_1: JavaMap<Object | null, Object | null>;
     // private viaFabricPlus$foodItems_b1_7_3: (Object | null)[];
-    // private viaFabricPlus$toolDataChanges: Map<Object | null, Object | null>;
+    // private viaFabricPlus$toolDataChanges: JavaMap<Object | null, Object | null>;
     // private addBlockEntityId(arg0: Map$Entry<string, Tag>[], arg1: string): void;
     // private appendItemDataFixComponents(arg0: UserConnection, arg1: Item): void;
     // private deserializeBlockPredicate(arg0: UserConnection, arg1: string): BlockPredicate;

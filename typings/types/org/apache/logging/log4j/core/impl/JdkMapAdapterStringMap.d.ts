@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BiConsumer } from '../../../../../../org/apache/logging/log4j/util/BiConsumer.d.ts'
 import type { ReadOnlyStringMap } from '../../../../../../org/apache/logging/log4j/util/ReadOnlyStringMap.d.ts'
@@ -5,10 +6,10 @@ import type { StringMap } from '../../../../../../org/apache/logging/log4j/util/
 import type { TriConsumer } from '../../../../../../org/apache/logging/log4j/util/TriConsumer.d.ts'
 export class JdkMapAdapterStringMap extends Object implements StringMap {
     constructor()
-    constructor(map: { [key: string]: string })
-    constructor(map: { [key: string]: string }, frozen: boolean)
+    constructor(map: JavaMap<string, string>)
+    constructor(map: JavaMap<string, string>, frozen: boolean)
     // private immutable: boolean;
-    // private map: { [key: string]: string };
+    // private map: JavaMap<string, string>;
     // private sortedKeys: string[];
     // private assertNotFrozen(): void;
     clear(): void;
@@ -26,6 +27,6 @@ export class JdkMapAdapterStringMap extends Object implements StringMap {
     putValue(key: string, value: Object): void;
     remove(key: string): void;
     size(): number;
-    toMap(): { [key: string]: string };
+    toMap(): JavaMap<string, string>;
     toString(): string;
 }

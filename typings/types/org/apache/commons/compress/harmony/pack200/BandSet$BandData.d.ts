@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BandSet } from '../../../../../../org/apache/commons/compress/harmony/pack200/BandSet.d.ts'
 export class BandSet$BandData extends Object {
@@ -6,7 +7,7 @@ export class BandSet$BandData extends Object {
     // private averageAbsoluteValue: number;
     // private band: number[];
     // private deltaIsAscending: number;
-    // private distinctValues: { [key: number]: number };
+    // private distinctValues: JavaMap<number, number>;
     // private largest: number;
     // private largestDelta: number;
     // private smallDeltaCount: number;

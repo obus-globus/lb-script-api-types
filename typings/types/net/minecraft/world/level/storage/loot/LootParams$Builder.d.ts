@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
@@ -10,7 +11,7 @@ import type { LootParams } from '../../../../../../net/minecraft/world/level/sto
 import type { LootParams$DynamicDrop } from '../../../../../../net/minecraft/world/level/storage/loot/LootParams$DynamicDrop.d.ts'
 export class LootParams$Builder extends Object {
     constructor(level: ServerLevel)
-    // private dynamicDrops: Map<Identifier, (param0: (param0: ItemStack) => void) => void>;
+    // private dynamicDrops: JavaMap<Identifier, (param0: (param0: ItemStack) => void) => void>;
     readonly level: ServerLevel;
     // private luck: number;
     // private params: ContextMap$Builder;

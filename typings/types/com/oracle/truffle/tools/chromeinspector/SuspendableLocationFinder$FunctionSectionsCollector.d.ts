@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Instrumenter } from '../../../../../com/oracle/truffle/api/instrumentation/Instrumenter.d.ts'
 import type { LoadSourceSectionEvent } from '../../../../../com/oracle/truffle/api/instrumentation/LoadSourceSectionEvent.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
@@ -7,7 +8,7 @@ export class SuspendableLocationFinder$FunctionSectionsCollector extends Suspend
     constructor(startIndex: number, instrumenter: Instrumenter)
     // private instrumenter: Instrumenter;
     // private rangeNode: Node;
-    // private sectionsMap: Map<Node, SourceSection[]>;
+    // private sectionsMap: JavaMap<Node, SourceSection[]>;
     // private findRoot(node: Node): Node;
     getSections(): SourceSection[];
     onLoad(event: LoadSourceSectionEvent): void;

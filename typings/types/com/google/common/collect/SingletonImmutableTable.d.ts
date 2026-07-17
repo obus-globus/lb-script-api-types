@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ImmutableTable } from '../../../../com/google/common/collect/ImmutableTable.d.ts'
 import type { ImmutableTable$Builder } from '../../../../com/google/common/collect/ImmutableTable$Builder.d.ts'
 import type { Table } from '../../../../com/google/common/collect/Table.d.ts'
@@ -18,11 +19,11 @@ export class SingletonImmutableTable<R extends unknown, C extends unknown, V ext
     // private singleColumnKey: C;
     // private singleRowKey: R;
     // private singleValue: V;
-    column(columnKey: C): Map<R, V>;
-    columnMap(): Map<C, Map<R, V>>;
+    column(columnKey: C): JavaMap<R, V>;
+    columnMap(): JavaMap<C, JavaMap<R, V>>;
     createCellSet(): Table$Cell<R, C, V>[];
     createValues(): V[];
-    rowMap(): Map<R, Map<C, V>>;
+    rowMap(): JavaMap<R, JavaMap<C, V>>;
     size(): number;
     writeReplace(): Object;
 }

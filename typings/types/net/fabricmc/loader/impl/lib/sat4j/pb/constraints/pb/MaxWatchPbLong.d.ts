@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../../JavaMap.d.ts'
 import type { BigInteger } from '../../../../../../../../../java/math/BigInteger.d.ts'
 import type { ILits } from '../../../../../../../../../net/fabricmc/loader/impl/lib/sat4j/minisat/core/ILits.d.ts'
 import type { WatchPbLong } from '../../../../../../../../../net/fabricmc/loader/impl/lib/sat4j/pb/constraints/pb/WatchPbLong.d.ts'
@@ -10,7 +11,7 @@ export class MaxWatchPbLong extends WatchPbLong {
     static normalizedMaxWatchPbNew(paramarg0: UnitPropagationListener, paramarg1: ILits, paramarg2: number[], paramarg3: BigInteger[], paramarg4: BigInteger, paramarg5: BigInteger): MaxWatchPbLong;
     static toLong(paramarg0: BigInteger[]): number[];
     private constructor(arg0: ILits, arg1: number[], arg2: BigInteger[], arg3: BigInteger, arg4: BigInteger)
-    // private litToCoeffs: { [key: number]: number };
+    // private litToCoeffs: JavaMap<number, number>;
     // private watchCumul: number;
     computePropagation(arg0: UnitPropagationListener): void;
     computeWatches(): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Parameter } from '../../../../io/jsonwebtoken/impl/lang/Parameter.d.ts'
 import type { ParameterBuilder } from '../../../../io/jsonwebtoken/impl/lang/ParameterBuilder.d.ts'
 import type { ParameterReadable } from '../../../../io/jsonwebtoken/impl/lang/ParameterReadable.d.ts'
@@ -13,10 +14,10 @@ export class Parameters extends Object {
     static bytes(paramarg0: string, paramarg1: string): ParameterBuilder<number[]>;
     static bytesEquals(paramarg0: BigInteger, paramarg1: BigInteger): boolean;
     static equals<T extends unknown>(paramarg0: ParameterReadable, paramarg1: Object, paramarg2: Parameter<T>): boolean;
-    static registry(...paramarg0: Parameter<Object>[]): { [key: string]: Parameter<Object> };
-    static registry(paramarg0: { [key: string]: Parameter<Object> }, ...paramarg1: Parameter<Object>[]): { [key: string]: Parameter<Object> };
-    static registry(paramarg0: Parameter<Object>[]): { [key: string]: Parameter<Object> };
-    static replace(paramarg0: { [key: string]: Parameter<Object> }, paramarg1: Parameter<Object>): { [key: string]: Parameter<Object> };
+    static registry(...paramarg0: Parameter<Object>[]): JavaMap<string, Parameter<Object>>;
+    static registry(paramarg0: JavaMap<string, Parameter<Object>>, ...paramarg1: Parameter<Object>[]): JavaMap<string, Parameter<Object>>;
+    static registry(paramarg0: Parameter<Object>[]): JavaMap<string, Parameter<Object>>;
+    static replace(paramarg0: JavaMap<string, Parameter<Object>>, paramarg1: Parameter<Object>): JavaMap<string, Parameter<Object>>;
     static rfcDate(paramarg0: string, paramarg1: string): Parameter<Date>;
     static secretBigInt(paramarg0: string, paramarg1: string): Parameter<BigInteger>;
     static string(paramarg0: string, paramarg1: string): Parameter<string>;

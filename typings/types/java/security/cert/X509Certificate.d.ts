@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { BigInteger } from '../../../java/math/BigInteger.d.ts'
 import type { DEREncodable } from '../../../java/security/DEREncodable.d.ts'
 import type { Principal } from '../../../java/security/Principal.d.ts'
@@ -34,5 +35,5 @@ export abstract class X509Certificate extends Certificate implements DEREncodabl
     getTBSCertificate(): number[];
     getVersion(): number;
     hasUnsupportedCriticalExtension(): boolean;
-    verify(arg0: PublicKey, arg1: { [key: string]: any }): void;
+    verify(arg0: PublicKey, arg1: JavaMap<any, any>): void;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Supplier } from '../../../../../com/google/common/base/Supplier.d.ts'
 import type { Striped } from '../../../../../com/google/common/util/concurrent/Striped.d.ts'
 import type { Striped$PowerOfTwoStriped } from '../../../../../com/google/common/util/concurrent/Striped$PowerOfTwoStriped.d.ts'
@@ -14,7 +15,7 @@ export class Striped$LargeLazyStriped<L extends unknown> extends Striped$PowerOf
     static readWriteLock(paramstripes: number): Striped<ReadWriteLock>;
     static semaphore(paramstripes: number, parampermits: number): Striped<Semaphore>;
     constructor(stripes: number, supplier: () => L)
-    // private locks: { [key: number]: L };
+    // private locks: JavaMap<number, L>;
     // private size: number;
     // private supplier: () => L;
     getAt(index: number): L;

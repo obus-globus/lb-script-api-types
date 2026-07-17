@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { ClassLoader } from '../../../../../../../java/lang/ClassLoader.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { ICULocaleService$LocaleKeyFactory } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/ICULocaleService$LocaleKeyFactory.d.ts'
@@ -14,5 +15,5 @@ export class ICULocaleService$ICUResourceBundleFactory extends ICULocaleService$
     handleCreate(loc: ULocale, kind: number, service: ICUService): Object;
     loader(): ClassLoader;
     toString(): string;
-    updateVisibleIDs(result: { [key: string]: ICUService$Factory }): void;
+    updateVisibleIDs(result: JavaMap<string, ICUService$Factory>): void;
 }

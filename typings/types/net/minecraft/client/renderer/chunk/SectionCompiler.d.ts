@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { BufferBuilder } from '../../../../../com/mojang/blaze3d/vertex/BufferBuilder.d.ts'
 import type { VertexSorting } from '../../../../../com/mojang/blaze3d/vertex/VertexSorting.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -18,6 +19,6 @@ export class SectionCompiler extends Object {
     // private cutoutLeaves: boolean;
     // private fluidModelSet: FluidStateModelSet;
     compile(sectionPos: SectionPos, region: RenderSectionRegion, vertexSorting: VertexSorting, builders: SectionBufferBuilderPack): SectionCompiler$Results;
-    // private getOrBeginLayer(startedLayers: Map<ChunkSectionLayer, BufferBuilder>, buffers: SectionBufferBuilderPack, layer: ChunkSectionLayer): BufferBuilder;
+    // private getOrBeginLayer(startedLayers: JavaMap<ChunkSectionLayer, BufferBuilder>, buffers: SectionBufferBuilderPack, layer: ChunkSectionLayer): BufferBuilder;
     // private handleBlockEntity<E extends BlockEntity>(results: SectionCompiler$Results, blockEntity: E): void;
 }

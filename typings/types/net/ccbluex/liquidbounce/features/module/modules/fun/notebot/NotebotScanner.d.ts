@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { GpuDevice } from '../../../../../../../../com/mojang/blaze3d/systems/GpuDevice.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { MinecraftShortcuts } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/MinecraftShortcuts.d.ts'
@@ -18,7 +19,7 @@ export class NotebotScanner extends Object implements MinecraftShortcuts {
     readonly network: ClientPacketListener;
     readonly player: LocalPlayer;
     readonly world: ClientLevel;
-    // private calculateRequirements(songData: SongData): { [key: string]: any };
+    // private calculateRequirements(songData: SongData): JavaMap<any, any>;
     scanBlocksAndCheckRequirements(songData: SongData): NotebotScanner$BlocksAndRequirements;
-    // private scanSurroundingNoteBlocks(songData: SongData): Map<NoteBlockInstrument, NoteBlockTracker[]>;
+    // private scanSurroundingNoteBlocks(songData: SongData): JavaMap<NoteBlockInstrument, NoteBlockTracker[]>;
 }

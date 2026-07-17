@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Schema } from '../../../../../com/mojang/datafixers/schemas/Schema.d.ts'
 import type { Type } from '../../../../../com/mojang/datafixers/types/Type.d.ts'
 import type { TypeTemplate } from '../../../../../com/mojang/datafixers/types/templates/TypeTemplate.d.ts'
@@ -9,6 +10,6 @@ export class V1466 extends NamespacedSchema {
     static ensureNamespaced(paraminput: string): string;
     static namespacedString(): Type<string>;
     constructor(versionKey: number, parent: Schema)
-    registerBlockEntities(schema: Schema): { [key: string]: () => TypeTemplate };
-    registerTypes(schema: Schema, entityTypes: { [key: string]: () => TypeTemplate }, blockEntityTypes: { [key: string]: () => TypeTemplate }): void;
+    registerBlockEntities(schema: Schema): JavaMap<string, () => TypeTemplate>;
+    registerTypes(schema: Schema, entityTypes: JavaMap<string, () => TypeTemplate>, blockEntityTypes: JavaMap<string, () => TypeTemplate>): void;
 }

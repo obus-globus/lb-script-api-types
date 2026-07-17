@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Assumption } from '../../../../../com/oracle/truffle/api/Assumption.d.ts'
 import type { Breakpoint } from '../../../../../com/oracle/truffle/api/debug/Breakpoint.d.ts'
 import type { Breakpoint$BreakpointConditionFailure } from '../../../../../com/oracle/truffle/api/debug/Breakpoint$BreakpointConditionFailure.d.ts'
@@ -49,7 +50,7 @@ export class DebuggerSession extends Object implements Closeable {
     readonly breakpoints: Breakpoint[];
     // private callback: SuspendedCallback;
     // private closed: boolean;
-    // private currentSuspendedEventMap: Map<Thread, SuspendedEvent>;
+    // private currentSuspendedEventMap: JavaMap<Thread, SuspendedEvent>;
     readonly debugger: Debugger;
     // private exceptionBreakpointsActive: DebuggerSession$StableBoolean;
     // private executionLifecycle: DebuggerExecutionLifecycle;
@@ -67,7 +68,7 @@ export class DebuggerSession extends Object implements Closeable {
     // private sources: DebugSourcesResolver;
     // private stepping: DebuggerSession$StableBoolean;
     // private steppingEnabledSlots: ThreadLocal<number[]>;
-    // private strategyMap: Map<Thread, SteppingStrategy>;
+    // private strategyMap: JavaMap<Thread, SteppingStrategy>;
     // private suspendAll: boolean;
     // private suspendNext: boolean;
     // private suspensionFilterUnchanged: Assumption;
@@ -83,11 +84,11 @@ export class DebuggerSession extends Object implements Closeable {
     createPrimitiveValue(primitiveValue: Object, language: LanguageInfo): DebugValue;
     disposeBreakpoint(breakpoint: Breakpoint): void;
     disposeStepping(t: Thread): void;
-    // private doSuspend(context: SuspendedContext, suspendAnchor: SuspendAnchor, frame: MaterializedFrame, insertableNode: InsertableNode, inputValuesProvider: DebuggerNode$InputValuesProvider, returnValue: Object, exception: DebugException, breaks: Breakpoint[], conditionFailures: Map<Breakpoint, Throwable>, currentStrategy: SteppingStrategy, singleStepCompleted: boolean, isUnwind: boolean): Object;
+    // private doSuspend(context: SuspendedContext, suspendAnchor: SuspendAnchor, frame: MaterializedFrame, insertableNode: InsertableNode, inputValuesProvider: DebuggerNode$InputValuesProvider, returnValue: Object, exception: DebugException, breaks: Breakpoint[], conditionFailures: JavaMap<Breakpoint, Throwable>, currentStrategy: SteppingStrategy, singleStepCompleted: boolean, isUnwind: boolean): Object;
     // private doSuspend(context: SuspendedContext, suspendAnchor: SuspendAnchor, frame: MaterializedFrame, insertableNode: InsertableNode, isUnwind: boolean): void;
     getBreakpoints(): Breakpoint[];
     getDebugger(): Debugger;
-    getExportedSymbols(): { [key: string]: DebugValue };
+    getExportedSymbols(): JavaMap<string, DebugValue>;
     getSourceElements(): SourceElement[];
     // private getSteppingStrategy(value: Thread): SteppingStrategy;
     getSuspensionFilterUnchangedAssumption(): Assumption;
@@ -106,7 +107,7 @@ export class DebuggerSession extends Object implements Closeable {
     // private notifyNewThread(currentThread: Thread): SteppingStrategy;
     // private notifyUnwindCallback(frame: MaterializedFrame, insertableNode: InsertableNode): void;
     // private performKill(location: Node): void;
-    // private processBreakpointsAndStep(context: EventContext, nodes: DebuggerNode[], s: SteppingStrategy, source: DebuggerNode, frame: MaterializedFrame, suspendAnchor: SuspendAnchor, atCaller: boolean, inputValuesProvider: DebuggerNode$InputValuesProvider, returnValue: Object, exception: DebugException, breakpointFailures: Map<Breakpoint, Throwable>, contextSupplier: () => SuspendedContext): Object;
+    // private processBreakpointsAndStep(context: EventContext, nodes: DebuggerNode[], s: SteppingStrategy, source: DebuggerNode, frame: MaterializedFrame, suspendAnchor: SuspendAnchor, atCaller: boolean, inputValuesProvider: DebuggerNode$InputValuesProvider, returnValue: Object, exception: DebugException, breakpointFailures: JavaMap<Breakpoint, Throwable>, contextSupplier: () => SuspendedContext): Object;
     // private removeBindings(): void;
     resolveSection(node: Node): SourceSection;
     resolveSection(section: SourceSection): SourceSection;

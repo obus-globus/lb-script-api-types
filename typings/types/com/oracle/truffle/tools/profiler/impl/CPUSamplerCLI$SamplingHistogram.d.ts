@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { CPUSampler$Payload } from '../../../../../../com/oracle/truffle/tools/profiler/CPUSampler$Payload.d.ts'
 import type { CPUSamplerData } from '../../../../../../com/oracle/truffle/tools/profiler/CPUSamplerData.d.ts'
 import type { ProfilerNode } from '../../../../../../com/oracle/truffle/tools/profiler/ProfilerNode.d.ts'
@@ -12,7 +13,7 @@ import type { OptionValues } from '../../../../../../org/graalvm/options/OptionV
 export class CPUSamplerCLI$SamplingHistogram extends Object {
     constructor(data: CPUSamplerData, options: OptionValues)
     // private format: string;
-    // private histogram: Map<Thread, CPUSamplerCLI$OutputEntry[]>;
+    // private histogram: JavaMap<Thread, CPUSamplerCLI$OutputEntry[]>;
     // private maxNameLength: number;
     // private minSamples: number;
     // private samplePeriod: number;
@@ -25,6 +26,6 @@ export class CPUSamplerCLI$SamplingHistogram extends Object {
     // private title: string;
     // private histogramEntries(threadEntry: Map$Entry<Thread, CPUSamplerCLI$SamplingHistogram$SourceLocationNodes>): CPUSamplerCLI$OutputEntry[];
     // private histogramEntry(sourceLocationEntry: Map$Entry<ProfilerCLI$SourceLocation, ProfilerNode<CPUSampler$Payload>[]>): CPUSamplerCLI$OutputEntry;
-    // private maybeSummarizeThreads(perThreadSourceLocationPayloads: Map<Thread, CPUSamplerCLI$SamplingHistogram$SourceLocationNodes>): void;
+    // private maybeSummarizeThreads(perThreadSourceLocationPayloads: JavaMap<Thread, CPUSamplerCLI$SamplingHistogram$SourceLocationNodes>): void;
     print(out: PrintStream): void;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { CompoundTag } from '../../../../../../net/minecraft/nbt/CompoundTag.d.ts'
@@ -27,7 +28,7 @@ export class SerializableChunkData extends Record {
     static copyOf(paramlevel: ServerLevel, paramchunk: ChunkAccess): SerializableChunkData;
     static getChunkStatusFromTag(paramtag: CompoundTag): ChunkStatus;
     static parse(paramlevelHeight: LevelHeightAccessor, paramcontainerFactory: PalettedContainerFactory, paramchunkData: CompoundTag): SerializableChunkData;
-    constructor(containerFactory: PalettedContainerFactory, chunkPos: ChunkPos, minSectionY: number, lastUpdateTime: number, inhabitedTime: number, chunkStatus: ChunkStatus, blendingData: BlendingData$Packed, belowZeroRetrogen: BelowZeroRetrogen, upgradeData: UpgradeData, carvingMask: number[], heightmaps: Map<Heightmap$Types, number[]>, packedTicks: ChunkAccess$PackedTicks, postProcessingSections: (Object | null)[][], lightCorrect: boolean, sectionData: SerializableChunkData$SectionData[], entities: CompoundTag[], blockEntities: CompoundTag[], structureData: CompoundTag)
+    constructor(containerFactory: PalettedContainerFactory, chunkPos: ChunkPos, minSectionY: number, lastUpdateTime: number, inhabitedTime: number, chunkStatus: ChunkStatus, blendingData: BlendingData$Packed, belowZeroRetrogen: BelowZeroRetrogen, upgradeData: UpgradeData, carvingMask: number[], heightmaps: JavaMap<Heightmap$Types, number[]>, packedTicks: ChunkAccess$PackedTicks, postProcessingSections: (Object | null)[][], lightCorrect: boolean, sectionData: SerializableChunkData$SectionData[], entities: CompoundTag[], blockEntities: CompoundTag[], structureData: CompoundTag)
     // private attachmentNbtData: CompoundTag;
     // private belowZeroRetrogen: BelowZeroRetrogen;
     // private blendingData: BlendingData$Packed;
@@ -37,7 +38,7 @@ export class SerializableChunkData extends Record {
     // private chunkStatus: ChunkStatus;
     // private containerFactory: PalettedContainerFactory;
     // private entities: CompoundTag[];
-    // private heightmaps: Map<Heightmap$Types, number[]>;
+    // private heightmaps: JavaMap<Heightmap$Types, number[]>;
     // private inhabitedTime: number;
     // private lastUpdateTime: number;
     // private lightCorrect: boolean;
@@ -57,7 +58,7 @@ export class SerializableChunkData extends Record {
     entities(): CompoundTag[];
     equals(o: Object | null): boolean;
     hashCode(): number;
-    heightmaps(): Map<Heightmap$Types, number[]>;
+    heightmaps(): JavaMap<Heightmap$Types, number[]>;
     inhabitedTime(): number;
     lastUpdateTime(): number;
     lightCorrect(): boolean;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { GlProgram } from '../../../../../com/mojang/blaze3d/opengl/GlProgram.d.ts'
 import type { GlRenderPass$TextureViewAndSampler } from '../../../../../com/mojang/blaze3d/opengl/GlRenderPass$TextureViewAndSampler.d.ts'
 import type { GlShaderModule } from '../../../../../com/mojang/blaze3d/opengl/GlShaderModule.d.ts'
@@ -54,11 +55,11 @@ export class ExtendedShader extends GlProgram implements IrisProgram {
     // private usesTessellation: boolean;
     // private writingToAfterTranslucent: GlFramebuffer;
     // private writingToBeforeTranslucent: GlFramebuffer;
-    getUniforms(): { [key: string]: Uniform };
+    getUniforms(): JavaMap<string, Uniform>;
     hasActiveImages(): boolean;
     iris$clearState(): void;
     iris$getBlockIndex(arg0: number, arg1: CharSequence): number;
     iris$isSetUp(): boolean;
-    iris$setupState(arg0: { [key: string]: GlRenderPass$TextureViewAndSampler }, arg1: GpuTextureView): void;
+    iris$setupState(arg0: JavaMap<string, GlRenderPass$TextureViewAndSampler>, arg1: GpuTextureView): void;
     isIntensitySwizzle(): boolean;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
@@ -29,7 +30,7 @@ export abstract class JSConstantNode extends JavaScriptNode implements Repeatabl
     copyUninitialized(materializedTags: Class<Tag>[]): JavaScriptNode;
     executeVoid(frame: VirtualFrame): void;
     expressionToString(): string;
-    getDebugProperties(): { [key: string]: Object };
+    getDebugProperties(): JavaMap<string, Object>;
     getNodeObject(): Object;
     getValue(): Object;
     hasTag(tag: Class<Tag>): boolean;

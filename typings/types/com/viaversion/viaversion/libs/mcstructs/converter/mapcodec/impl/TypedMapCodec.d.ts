@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { DataConverter } from '../../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/DataConverter.d.ts'
 import type { Codec } from '../../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/codec/Codec.d.ts'
 import type { ThrowingFunction } from '../../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/codec/ThrowingFunction.d.ts'
@@ -18,11 +19,11 @@ export class TypedMapCodec<K extends unknown, V extends unknown> extends Object 
     asCodec(): Codec<V>;
     defaulted(arg0: V): MapCodec<V>;
     defaulted(arg0: (param0: V) => boolean, arg1: () => V): MapCodec<V>;
-    deserialize<S extends unknown>(arg0: DataConverter<S>, arg1: Map<S, S>): Result<V>;
+    deserialize<S extends unknown>(arg0: DataConverter<S>, arg1: JavaMap<S, S>): Result<V>;
     elseGet(arg0: () => V): MapCodec<V>;
     field(arg0: string): FieldMapCodec$Builder$Stage1<V>;
     map<N extends unknown>(arg0: (param0: N) => V, arg1: (param0: V) => N): MapCodec<N>;
     mapThrowing<N extends unknown>(arg0: (param0: N) => V, arg1: (param0: V) => N): MapCodec<N>;
-    serialize<S extends unknown>(arg0: DataConverter<S>, arg1: Map<S, S>, arg2: V): Result<Map<S, S>>;
+    serialize<S extends unknown>(arg0: DataConverter<S>, arg1: JavaMap<S, S>, arg2: V): Result<JavaMap<S, S>>;
     verified(arg0: (param0: V) => Result<void>): MapCodec<V>;
 }

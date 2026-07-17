@@ -1,8 +1,9 @@
+import type { JavaMap } from '../JavaMap.d.ts'
 import type { Comparator } from '../java/util/Comparator.d.ts'
 import type { Object } from '../java/lang/Object.d.ts'
 import type { CipherSuite } from '../okhttp3/CipherSuite.d.ts'
 export class CipherSuite$Companion extends Object {
-    // private INSTANCES: { [key: string]: CipherSuite };
+    // private INSTANCES: JavaMap<string, CipherSuite>;
     // private ORDER_BY_NAME: (param0: string, param1: string) => number;
     /*not mapped: */ getORDER_BY_NAME$okhttp(): (param0: string, param1: string) => number;
     TLS_AES_128_CCM_8_SHA256: CipherSuite;

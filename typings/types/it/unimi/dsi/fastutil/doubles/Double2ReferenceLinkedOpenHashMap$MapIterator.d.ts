@@ -1,7 +1,8 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Double2ReferenceMap$Entry } from '../../../../../it/unimi/dsi/fastutil/doubles/Double2ReferenceMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class Double2ReferenceLinkedOpenHashMap$MapIterator<ConsumerType extends unknown> extends Object {
-    constructor(null_: { [key: string]: any })
+    constructor(null_: JavaMap<any, any>)
     // private curr: number;
     // private index: number;
     // private next: number;

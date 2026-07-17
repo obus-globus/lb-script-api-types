@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ChannelOption } from '../../../../../io/netty/channel/ChannelOption.d.ts'
 import type { DatagramChannelConfig } from '../../../../../io/netty/channel/socket/DatagramChannelConfig.d.ts'
 import type { DefaultDatagramChannelConfig } from '../../../../../io/netty/channel/socket/DefaultDatagramChannelConfig.d.ts'
@@ -15,8 +16,8 @@ export class NioDatagramChannelConfig extends DefaultDatagramChannelConfig {
     getNetworkInterface(): NetworkInterface;
     getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     // private getOption0<T extends unknown>(arg0: SocketOption<T>): T;
-    getOptions(): Map<ChannelOption<Object>, Object>;
-    getOptions(arg0: Map<ChannelOption<Object>, Object>, ...arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
+    getOptions(): JavaMap<ChannelOption<Object>, Object>;
+    getOptions(arg0: JavaMap<ChannelOption<Object>, Object>, ...arg1: ChannelOption<Object>[]): JavaMap<ChannelOption<Object>, Object>;
     getTimeToLive(): number;
     isLoopbackModeDisabled(): boolean;
     setAutoRead(arg0: boolean): DatagramChannelConfig;

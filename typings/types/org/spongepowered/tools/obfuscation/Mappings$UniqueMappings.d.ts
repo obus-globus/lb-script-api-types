@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { IMapping } from '../../../../org/spongepowered/asm/obfuscation/mapping/IMapping.d.ts'
 import type { MappingField } from '../../../../org/spongepowered/asm/obfuscation/mapping/common/MappingField.d.ts'
@@ -6,12 +7,12 @@ import type { ObfuscationType } from '../../../../org/spongepowered/tools/obfusc
 import type { IMappingConsumer } from '../../../../org/spongepowered/tools/obfuscation/mapping/IMappingConsumer.d.ts'
 export class Mappings$UniqueMappings extends Object implements IMappingConsumer {
     constructor(arg0: IMappingConsumer)
-    // private fields: Map<ObfuscationType, Map<MappingField, MappingField>>;
+    // private fields: JavaMap<ObfuscationType, JavaMap<MappingField, MappingField>>;
     // private mappings: IMappingConsumer;
-    // private methods: Map<ObfuscationType, Map<MappingMethod, MappingMethod>>;
+    // private methods: JavaMap<ObfuscationType, JavaMap<MappingMethod, MappingMethod>>;
     addFieldMapping(arg0: ObfuscationType, arg1: MappingField, arg2: MappingField): void;
     addMethodMapping(arg0: ObfuscationType, arg1: MappingMethod, arg2: MappingMethod): void;
-    // private checkForExistingMapping<TMapping extends IMapping<TMapping>>(arg0: ObfuscationType, arg1: TMapping, arg2: TMapping, arg3: Map<ObfuscationType, Map<TMapping, TMapping>>): boolean;
+    // private checkForExistingMapping<TMapping extends IMapping<TMapping>>(arg0: ObfuscationType, arg1: TMapping, arg2: TMapping, arg3: JavaMap<ObfuscationType, JavaMap<TMapping, TMapping>>): boolean;
     clear(): void;
     clearMaps(): void;
     getFieldMappings(arg0: ObfuscationType): MappingField[];

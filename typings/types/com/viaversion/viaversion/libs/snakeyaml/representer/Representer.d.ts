@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { DumperOptions } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/DumperOptions.d.ts'
 import type { TypeDescription } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/TypeDescription.d.ts'
 import type { Property } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/introspector/Property.d.ts'
@@ -11,7 +12,7 @@ import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class Representer extends SafeRepresenter {
     constructor(arg0: DumperOptions)
-    // private typeDefinitions: Map<Class<Object>, TypeDescription>;
+    // private typeDefinitions: JavaMap<Class<Object>, TypeDescription>;
     addTypeDescription(arg0: TypeDescription): TypeDescription;
     checkGlobalTag(arg0: Property, arg1: Node, arg2: Object): void;
     getProperties(arg0: Class<Object>): Property[];

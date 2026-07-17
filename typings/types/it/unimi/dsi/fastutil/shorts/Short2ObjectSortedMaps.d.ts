@@ -1,18 +1,19 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ObjectBidirectionalIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectBidirectionalIterator.d.ts'
 import type { Short2ObjectMap$Entry } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ObjectMap$Entry.d.ts'
 import type { ShortComparator } from '../../../../../it/unimi/dsi/fastutil/shorts/ShortComparator.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Short2ObjectSortedMaps extends Object {
-    static EMPTY_MAP: { [key: string]: any };
-    static emptyMap<V extends unknown>(): { [key: string]: any };
+    static EMPTY_MAP: JavaMap<any, any>;
+    static emptyMap<V extends unknown>(): JavaMap<any, any>;
     static entryComparator(paramarg0: (param0: number, param1: number) => number): (param0: Object, param1: Object) => number;
-    static fastIterable<V extends unknown>(paramarg0: { [key: string]: any }): Short2ObjectMap$Entry<V>[];
-    static fastIterator<V extends unknown>(paramarg0: { [key: string]: any }): ObjectBidirectionalIterator<Short2ObjectMap$Entry<V>>;
-    static singleton<V extends unknown>(paramarg0: number, paramarg1: V): { [key: string]: any };
-    static singleton<V extends unknown>(paramarg0: number, paramarg1: V, paramarg2: (param0: number, param1: number) => number): { [key: string]: any };
-    static synchronize<V extends unknown>(paramarg0: { [key: string]: any }): { [key: string]: any };
-    static synchronize<V extends unknown>(paramarg0: { [key: string]: any }, paramarg1: Object): { [key: string]: any };
-    static unmodifiable<V extends unknown>(paramarg0: { [key: string]: any }): { [key: string]: any };
+    static fastIterable<V extends unknown>(paramarg0: JavaMap<any, any>): Short2ObjectMap$Entry<V>[];
+    static fastIterator<V extends unknown>(paramarg0: JavaMap<any, any>): ObjectBidirectionalIterator<Short2ObjectMap$Entry<V>>;
+    static singleton<V extends unknown>(paramarg0: number, paramarg1: V): JavaMap<any, any>;
+    static singleton<V extends unknown>(paramarg0: number, paramarg1: V, paramarg2: (param0: number, param1: number) => number): JavaMap<any, any>;
+    static synchronize<V extends unknown>(paramarg0: JavaMap<any, any>): JavaMap<any, any>;
+    static synchronize<V extends unknown>(paramarg0: JavaMap<any, any>, paramarg1: Object): JavaMap<any, any>;
+    static unmodifiable<V extends unknown>(paramarg0: JavaMap<any, any>): JavaMap<any, any>;
     private constructor()
 }

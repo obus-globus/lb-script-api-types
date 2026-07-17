@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { HolderLookup } from '../../../../../../net/minecraft/core/HolderLookup.d.ts'
 import type { HolderLookup$Provider } from '../../../../../../net/minecraft/core/HolderLookup$Provider.d.ts'
@@ -10,7 +11,7 @@ export class FuelValues$Builder extends Object {
     constructor(registries: HolderLookup$Provider, enabledFeatures: FeatureFlagSet)
     // private enabledFeatures: FeatureFlagSet;
     // private items: HolderLookup<Item>;
-    // private values: { [key: string]: any };
+    // private values: JavaMap<any, any>;
     add(tag: TagKey<Item>, time: number): FuelValues$Builder;
     add(itemLike: ItemLike, time: number): FuelValues$Builder;
     build(): FuelValues;

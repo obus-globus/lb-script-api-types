@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { BiConsumer } from '../../../../../../../java/util/function/BiConsumer.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { AccessWidener } from '../../../../../../../net/fabricmc/loader/impl/lib/classtweaker/api/AccessWidener.d.ts'
@@ -11,10 +12,10 @@ import type { InjectedInterfaceImpl } from '../../../../../../../net/fabricmc/lo
 import type { ClassVisitor } from '../../../../../../../org/objectweb/asm/ClassVisitor.d.ts'
 export class ClassTweakerImpl extends Object implements ClassTweaker {
     constructor()
-    // private accessWideners: { [key: string]: AccessWidenerImpl };
+    // private accessWideners: JavaMap<string, AccessWidenerImpl>;
     // private classes: string[];
-    // private enumExtensions: { [key: string]: EnumExtensionImpl[] };
-    // private injectedInterfaces: { [key: string]: InjectedInterfaceImpl[] };
+    // private enumExtensions: JavaMap<string, EnumExtensionImpl[]>;
+    // private injectedInterfaces: JavaMap<string, InjectedInterfaceImpl[]>;
     // private namespace: string;
     // private targetClasses: string[];
     // private addTargets(arg0: string): void;

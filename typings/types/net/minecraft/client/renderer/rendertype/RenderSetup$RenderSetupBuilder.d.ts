@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { RenderPipeline } from '../../../../../com/mojang/blaze3d/pipeline/RenderPipeline.d.ts'
 import type { GpuSampler } from '../../../../../com/mojang/blaze3d/textures/GpuSampler.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
@@ -18,7 +19,7 @@ export class RenderSetup$RenderSetupBuilder extends Object {
     // private pipeline: RenderPipeline;
     // private sortOnUpload: boolean;
     // private textureTransform: TextureTransform;
-    // private textures: { [key: string]: RenderSetup$TextureBinding };
+    // private textures: JavaMap<string, RenderSetup$TextureBinding>;
     // private useLightmap: boolean;
     // private useOverlay: boolean;
     affectsCrumbling(): RenderSetup$RenderSetupBuilder;

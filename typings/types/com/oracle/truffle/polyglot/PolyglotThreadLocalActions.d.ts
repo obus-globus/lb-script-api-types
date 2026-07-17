@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ThreadLocalAction } from '../../../../com/oracle/truffle/api/ThreadLocalAction.d.ts'
 import type { PolyglotContextImpl } from '../../../../com/oracle/truffle/polyglot/PolyglotContextImpl.d.ts'
 import type { PolyglotThreadInfo } from '../../../../com/oracle/truffle/polyglot/PolyglotThreadInfo.d.ts'
@@ -11,7 +12,7 @@ import type { Future } from '../../../../java/util/concurrent/Future.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class PolyglotThreadLocalActions extends Object {
     constructor(context: PolyglotContextImpl)
-    // private activeEvents: Map<PolyglotThreadLocalActions$AbstractTLHandshake, void>;
+    // private activeEvents: JavaMap<PolyglotThreadLocalActions$AbstractTLHandshake, void>;
     // private context: PolyglotContextImpl;
     // private idCounter: number;
     // private intervalTimer: Timer;

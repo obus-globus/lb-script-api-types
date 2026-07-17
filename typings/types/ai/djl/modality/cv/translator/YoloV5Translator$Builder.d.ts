@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ObjectDetectionTranslator$ObjectDetectionBuilder } from '../../../../../ai/djl/modality/cv/translator/ObjectDetectionTranslator$ObjectDetectionBuilder.d.ts'
 import type { YoloV5Translator } from '../../../../../ai/djl/modality/cv/translator/YoloV5Translator.d.ts'
 import type { YoloV5Translator$YoloOutputType } from '../../../../../ai/djl/modality/cv/translator/YoloV5Translator$YoloOutputType.d.ts'
@@ -7,7 +8,7 @@ export class YoloV5Translator$Builder extends ObjectDetectionTranslator$ObjectDe
     // private nmsThreshold: number;
     // private outputType: YoloV5Translator$YoloOutputType;
     build(): YoloV5Translator;
-    configPostProcess(arg0: { [key: string]: Object | null }): void;
+    configPostProcess(arg0: JavaMap<string, Object | null>): void;
     optNmsThreshold(arg0: number): YoloV5Translator$Builder;
     optOutputType(arg0: YoloV5Translator$YoloOutputType): YoloV5Translator$Builder;
     self(): YoloV5Translator$Builder;

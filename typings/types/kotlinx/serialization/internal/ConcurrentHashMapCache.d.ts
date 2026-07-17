@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { KClass } from '../../../kotlin/reflect/KClass.d.ts'
@@ -6,7 +7,7 @@ import type { CacheEntry } from '../../../kotlinx/serialization/internal/CacheEn
 import type { SerializerCache } from '../../../kotlinx/serialization/internal/SerializerCache.d.ts'
 export class ConcurrentHashMapCache<T extends unknown> extends Object implements SerializerCache<T> {
     constructor(compute: (param0: KClass<Object>) => KSerializer<T> | null)
-    // private cache: Map<Class<Object>, CacheEntry<T>>;
+    // private cache: JavaMap<Class<Object>, CacheEntry<T>>;
     // private compute: (param0: KClass<Object>) => KSerializer<T> | null;
     get(key: KClass<Object>): KSerializer<T> | null;
     isStored(key: KClass<Object>): boolean;

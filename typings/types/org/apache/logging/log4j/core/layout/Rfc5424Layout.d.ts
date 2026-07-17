@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { StringBuilder } from '../../../../../../java/lang/StringBuilder.d.ts'
 import type { Charset } from '../../../../../../java/nio/charset/Charset.d.ts'
 import type { Pattern } from '../../../../../../java/util/regex/Pattern.d.ts'
@@ -34,7 +35,7 @@ export class Rfc5424Layout extends AbstractStringLayout {
     // private eventPrefix: string;
     // private exceptionFormatters: PatternFormatter[];
     readonly facility: Facility;
-    // private fieldFormatters: { [key: string]: Rfc5424Layout$FieldFormatter };
+    // private fieldFormatters: JavaMap<string, Rfc5424Layout$FieldFormatter>;
     readonly includeMdc: boolean;
     // private includeNewLine: boolean;
     // private lastTimestamp: number;
@@ -50,10 +51,10 @@ export class Rfc5424Layout extends AbstractStringLayout {
     // private procId: string;
     // private timestamppStr: string;
     // private useTlsMessageFormat: boolean;
-    // private addStructuredData(sdElements: { [key: string]: Rfc5424Layout$StructuredDataElement }, data: StructuredDataMessage): void;
+    // private addStructuredData(sdElements: JavaMap<string, Rfc5424Layout$StructuredDataElement>, data: StructuredDataMessage): void;
     // private appendAppName(buffer: StringBuilder): void;
     // private appendHostName(buffer: StringBuilder): void;
-    // private appendMap(prefix: string, map: { [key: string]: string }, sb: StringBuilder, checker: ListChecker): void;
+    // private appendMap(prefix: string, map: JavaMap<string, string>, sb: StringBuilder, checker: ListChecker): void;
     // private appendMessage(buffer: StringBuilder, event: LogEvent): void;
     // private appendMessageId(buffer: StringBuilder, message: Message): void;
     // private appendPriority(buffer: StringBuilder, logLevel: Level): void;
@@ -61,13 +62,13 @@ export class Rfc5424Layout extends AbstractStringLayout {
     // private appendSpace(buffer: StringBuilder): void;
     // private appendStructuredElements(buffer: StringBuilder, event: LogEvent): void;
     // private appendTimestamp(buffer: StringBuilder, milliseconds: number): void;
-    // private checkRequired(map: { [key: string]: string }): void;
+    // private checkRequired(map: JavaMap<string, string>): void;
     // private computeTimeStampString(now: number): string;
-    // private createFieldFormatters(loggerFields: LoggerFields[], config: Configuration): { [key: string]: Rfc5424Layout$FieldFormatter };
+    // private createFieldFormatters(loggerFields: LoggerFields[], config: Configuration): JavaMap<string, Rfc5424Layout$FieldFormatter>;
     // private escapeNewlines(text: string, replacement: string): string;
     // private escapeParamValue(value: string): string;
     // private formatStructuredElement(id: string, data: Rfc5424Layout$StructuredDataElement, sb: StringBuilder, checker: ListChecker): void;
-    getContentFormat(): { [key: string]: string };
+    getContentFormat(): JavaMap<string, string>;
     getDefaultId(): string;
     getEnterpriseNumber(): string;
     getEscapeNewLine(): string;

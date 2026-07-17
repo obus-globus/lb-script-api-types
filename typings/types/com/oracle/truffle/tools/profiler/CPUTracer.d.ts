@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { EventBinding } from '../../../../../com/oracle/truffle/api/instrumentation/EventBinding.d.ts'
 import type { EventContext } from '../../../../../com/oracle/truffle/api/instrumentation/EventContext.d.ts'
 import type { SourceSectionFilter } from '../../../../../com/oracle/truffle/api/instrumentation/SourceSectionFilter.d.ts'
@@ -15,7 +16,7 @@ export class CPUTracer extends Object implements Closeable {
     readonly collecting: boolean;
     // private env: TruffleInstrument$Env;
     readonly filter: SourceSectionFilter;
-    // private payloadMap: Map<SourceSection, CPUTracer$Payload>;
+    // private payloadMap: JavaMap<SourceSection, CPUTracer$Payload>;
     clearData(): void;
     close(): void;
     // private getCounter(context: EventContext): CPUTracer$Payload;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { InputStream } from '../../../java/io/InputStream.d.ts'
 import type { AutoCloseable } from '../../../java/lang/AutoCloseable.d.ts'
 import type { Path } from '../../../java/nio/file/Path.d.ts'
@@ -28,7 +29,7 @@ export class PlatformRecording extends Object implements AutoCloseable {
     // private recorder: PlatformRecorder;
     readonly recording: Recording;
     readonly reports: Report[];
-    readonly settings: { [key: string]: string };
+    readonly settings: JavaMap<string, string>;
     // private shouldWriteActiveRecordingEvent: boolean;
     readonly size: number;
     readonly startNanos: number;
@@ -64,7 +65,7 @@ export class PlatformRecording extends Object implements AutoCloseable {
     getName(): string;
     getRecording(): Recording;
     getReports(): Report[];
-    getSettings(): { [key: string]: string };
+    getSettings(): JavaMap<string, string>;
     getSize(): number;
     getStartNanos(): number;
     getStartTime(): Instant;
@@ -96,8 +97,8 @@ export class PlatformRecording extends Object implements AutoCloseable {
     setName(arg0: string): void;
     setRecording(arg0: Recording): void;
     setSetting(arg0: string, arg1: string): void;
-    setSettings(arg0: { [key: string]: string }): void;
-    // private setSettings(arg0: { [key: string]: string }, arg1: boolean): void;
+    setSettings(arg0: JavaMap<string, string>): void;
+    // private setSettings(arg0: JavaMap<string, string>, arg1: boolean): void;
     setShouldWriteActiveRecordingEvent(arg0: boolean): void;
     setStartTime(arg0: Instant): void;
     setState(arg0: RecordingState): void;

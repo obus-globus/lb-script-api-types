@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Pointer } from '../../../../../com/sun/jna/Pointer.d.ts'
 import type { Tlhelp32$MODULEENTRY32W } from '../../../../../com/sun/jna/platform/win32/Tlhelp32$MODULEENTRY32W.d.ts'
 import type { WinDef } from '../../../../../com/sun/jna/platform/win32/WinDef.d.ts'
@@ -35,8 +36,8 @@ export abstract class Kernel32Util extends Object implements WinDef {
     static getCurrentThreadPriority(): number;
     static getDriveType(paramarg0: string): number;
     static getEnvironmentVariable(paramarg0: string): string;
-    static getEnvironmentVariables(): { [key: string]: string };
-    static getEnvironmentVariables(paramarg0: Pointer, paramarg1: number): { [key: string]: string };
+    static getEnvironmentVariables(): JavaMap<string, string>;
+    static getEnvironmentVariables(paramarg0: Pointer, paramarg1: number): JavaMap<string, string>;
     static getFileAttributes(paramarg0: string): number;
     static getFileType(paramarg0: string): number;
     static getLastErrorMessage(): string;
@@ -51,7 +52,7 @@ export abstract class Kernel32Util extends Object implements WinDef {
     static getPrivateProfileString(paramarg0: string, paramarg1: string, paramarg2: string, paramarg3: string): string;
     static getProcessPriority(paramarg0: number): WinDef$DWORD;
     static getResource(paramarg0: string, paramarg1: string, paramarg2: string): number[];
-    static getResourceNames(paramarg0: string): { [key: string]: string[] };
+    static getResourceNames(paramarg0: string): JavaMap<string, string[]>;
     static getTempPath(): string;
     static getThreadPriority(paramarg0: number): number;
     static getVolumePathNamesForVolumeName(paramarg0: string): string[];

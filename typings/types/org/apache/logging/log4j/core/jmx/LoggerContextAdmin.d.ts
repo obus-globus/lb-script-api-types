@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { PropertyChangeEvent } from '../../../../../../java/beans/PropertyChangeEvent.d.ts'
 import type { PropertyChangeListener } from '../../../../../../java/beans/PropertyChangeListener.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
@@ -21,7 +22,7 @@ export class LoggerContextAdmin extends NotificationBroadcasterSupport implement
     getConfigFilter(): string;
     getConfigLocationUri(): string;
     getConfigName(): string;
-    getConfigProperties(): { [key: string]: string };
+    getConfigProperties(): JavaMap<string, string>;
     getConfigText(): string;
     getConfigText(charsetName: string): string;
     getName(): string;

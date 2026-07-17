@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { ClassLoader } from '../../../../../../java/lang/ClassLoader.d.ts'
@@ -12,7 +13,7 @@ import type { KnotClassLoaderInterface } from '../../../../../../net/fabricmc/lo
 export class Knot extends FabricLauncherBase {
     static getClass(paramarg0: string): Class<Object>;
     static getLauncher(): FabricLauncher;
-    static getProperties(): { [key: string]: Object };
+    static getProperties(): JavaMap<string, Object>;
     static isMixinReady(): boolean;
     static launch(paramarg0: string[], paramarg1: EnvType): void;
     static main(paramarg0: string[]): void;
@@ -21,7 +22,7 @@ export class Knot extends FabricLauncherBase {
     // private classLoader: KnotClassLoaderInterface;
     readonly classPath: Path[];
     // private envType: EnvType;
-    // private properties: { [key: string]: Object };
+    // private properties: JavaMap<string, Object>;
     // private provider: GameProvider;
     // private unlocked: boolean;
     addToClassPath(arg0: Path, ...arg1: string[]): void;

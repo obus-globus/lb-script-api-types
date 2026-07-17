@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { BitSet } from '../../../../java/util/BitSet.d.ts'
 import type { Label } from '../../../../org/objectweb/asm/Label.d.ts'
 import type { MethodVisitor } from '../../../../org/objectweb/asm/MethodVisitor.d.ts'
@@ -261,9 +262,9 @@ export class JSRInlinerAdapter extends MethodNode implements Opcodes {
     constructor(arg0: MethodVisitor, arg1: number, arg2: string, arg3: string, arg4: string, arg5: string[])
     // private mainSubroutineInsns: BitSet;
     // private sharedSubroutineInsns: BitSet;
-    // private subroutinesInsns: Map<LabelNode, BitSet>;
+    // private subroutinesInsns: JavaMap<LabelNode, BitSet>;
     // private emitCode(): void;
-    // private emitInstantiation(arg0: { [key: string]: any }, arg1: { [key: string]: any }[], arg2: AbstractInsnNode[], arg3: TryCatchBlockNode[], arg4: LocalVariableNode[]): void;
+    // private emitInstantiation(arg0: JavaMap<any, any>, arg1: JavaMap<any, any>[], arg2: AbstractInsnNode[], arg3: TryCatchBlockNode[], arg4: LocalVariableNode[]): void;
     // private findReachableInsns(arg0: number, arg1: BitSet, arg2: BitSet): void;
     // private findSubroutineInsns(arg0: number, arg1: BitSet, arg2: BitSet): void;
     // private findSubroutinesInsns(): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { UUID } from '../../../../../java/util/UUID.d.ts'
@@ -36,8 +37,8 @@ export class Raid extends Object {
     readonly active: boolean;
     // private celebrationTicks: number;
     readonly center: BlockPos;
-    // private groupRaiderMap: { [key: number]: Raider[] };
-    // private groupToLeaderMap: { [key: number]: Raider };
+    // private groupRaiderMap: JavaMap<number, Raider[]>;
+    // private groupToLeaderMap: JavaMap<number, Raider>;
     readonly groupsSpawned: number;
     // private heroesOfTheVillage: UUID[];
     // private isBarDirty: boolean;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { ClaimsBuilder } from '../../../io/jsonwebtoken/ClaimsBuilder.d.ts'
 import type { Clock } from '../../../io/jsonwebtoken/Clock.d.ts'
 import type { CompressionCodecResolver } from '../../../io/jsonwebtoken/CompressionCodecResolver.d.ts'
@@ -30,24 +31,24 @@ export class DefaultJwtParser extends AbstractParser<Jwt<any, Object>> implement
     static MISSING_JWE_DIGEST_MSG_FMT: string;
     static MISSING_JWS_ALG_MSG: string;
     static MISSING_JWS_DIGEST_MSG_FMT: string;
-    constructor(arg0: { [key: string]: any }, arg1: SigningKeyResolver, arg2: boolean, arg3: boolean, arg4: Locator<Key>, arg5: Clock, arg6: string[], arg7: number, arg8: { [key: string]: any }, arg9: Decoder<InputStream, InputStream>, arg10: Deserializer<{ [key: string]: Object | null }>, arg11: CompressionCodecResolver, arg12: { [key: string]: CompressionAlgorithm }, arg13: { [key: string]: SecureDigestAlgorithm<any, any> }, arg14: { [key: string]: KeyAlgorithm<any, any> }, arg15: { [key: string]: AeadAlgorithm })
+    constructor(arg0: JavaMap<any, any>, arg1: SigningKeyResolver, arg2: boolean, arg3: boolean, arg4: Locator<Key>, arg5: Clock, arg6: string[], arg7: number, arg8: JavaMap<any, any>, arg9: Decoder<InputStream, InputStream>, arg10: Deserializer<JavaMap<string, Object | null>>, arg11: CompressionCodecResolver, arg12: JavaMap<string, CompressionAlgorithm>, arg13: JavaMap<string, SecureDigestAlgorithm<any, any>>, arg14: JavaMap<string, KeyAlgorithm<any, any>>, arg15: JavaMap<string, AeadAlgorithm>)
     // private allowedClockSkewMillis: number;
     // private clock: Clock;
     // private critical: string[];
     // private decoder: Decoder<InputStream, InputStream>;
-    // private deserializer: Deserializer<{ [key: string]: Object | null }>;
-    // private encAlgs: Function<{ [key: string]: any }, AeadAlgorithm>;
+    // private deserializer: Deserializer<JavaMap<string, Object | null>>;
+    // private encAlgs: Function<JavaMap<any, any>, AeadAlgorithm>;
     // private expectedClaims: ClaimsBuilder;
-    // private keyAlgs: Function<{ [key: string]: any }, KeyAlgorithm<any, any>>;
+    // private keyAlgs: Function<JavaMap<any, any>, KeyAlgorithm<any, any>>;
     // private keyLocator: Locator<Key>;
-    // private provider: { [key: string]: any };
-    // private sigAlgs: Function<{ [key: string]: any }, SecureDigestAlgorithm<any, any>>;
+    // private provider: JavaMap<any, any>;
+    // private sigAlgs: Function<JavaMap<any, any>, SecureDigestAlgorithm<any, any>>;
     // private signingKeyResolver: SigningKeyResolver;
     // private unsecured: boolean;
     // private unsecuredDecompression: boolean;
-    // private zipAlgs: Function<{ [key: string]: any }, CompressionAlgorithm>;
+    // private zipAlgs: Function<JavaMap<any, any>, CompressionAlgorithm>;
     decode(arg0: CharSequence, arg1: string): number[];
-    deserialize(arg0: InputStream, arg1: string): { [key: string]: Object | null };
+    deserialize(arg0: InputStream, arg1: string): JavaMap<string, Object | null>;
     isSigned(arg0: CharSequence): boolean;
     parse(arg0: InputStream): Jwt<any, Object>;
     parse(arg0: Reader): Jwt<any, Object>;
@@ -56,22 +57,22 @@ export class DefaultJwtParser extends AbstractParser<Jwt<any, Object>> implement
     parse<T extends unknown>(arg0: CharSequence, arg1: JwtHandler<T>): T;
     // private parse(arg0: CharSequence, arg1: Payload): Jwt<any, Object>;
     parse(arg0: CharSequence, arg1: number, arg2: number): Jwt<any, Object>;
-    parseClaimsJws(arg0: CharSequence): Jws<{ [key: string]: any }>;
-    parseClaimsJwt(arg0: CharSequence): Jwt<{ [key: string]: any }, { [key: string]: any }>;
+    parseClaimsJws(arg0: CharSequence): Jws<JavaMap<any, any>>;
+    parseClaimsJwt(arg0: CharSequence): Jwt<JavaMap<any, any>, JavaMap<any, any>>;
     parseContentJws(arg0: CharSequence): Jws<number[]>;
-    parseContentJwt(arg0: CharSequence): Jwt<{ [key: string]: any }, number[]>;
-    parseEncryptedClaims(arg0: CharSequence): Jwe<{ [key: string]: any }>;
+    parseContentJwt(arg0: CharSequence): Jwt<JavaMap<any, any>, number[]>;
+    parseEncryptedClaims(arg0: CharSequence): Jwe<JavaMap<any, any>>;
     parseEncryptedContent(arg0: CharSequence): Jwe<number[]>;
-    parseSignedClaims(arg0: CharSequence): Jws<{ [key: string]: any }>;
-    // private parseSignedClaims(arg0: CharSequence, arg1: Payload): Jws<{ [key: string]: any }>;
-    parseSignedClaims(arg0: CharSequence, arg1: InputStream): Jws<{ [key: string]: any }>;
-    parseSignedClaims(arg0: CharSequence, arg1: number[]): Jws<{ [key: string]: any }>;
+    parseSignedClaims(arg0: CharSequence): Jws<JavaMap<any, any>>;
+    // private parseSignedClaims(arg0: CharSequence, arg1: Payload): Jws<JavaMap<any, any>>;
+    parseSignedClaims(arg0: CharSequence, arg1: InputStream): Jws<JavaMap<any, any>>;
+    parseSignedClaims(arg0: CharSequence, arg1: number[]): Jws<JavaMap<any, any>>;
     parseSignedContent(arg0: CharSequence): Jws<number[]>;
     // private parseSignedContent(arg0: CharSequence, arg1: Payload): Jws<number[]>;
     parseSignedContent(arg0: CharSequence, arg1: InputStream): Jws<number[]>;
     parseSignedContent(arg0: CharSequence, arg1: number[]): Jws<number[]>;
-    parseUnsecuredClaims(arg0: CharSequence): Jwt<{ [key: string]: any }, { [key: string]: any }>;
-    parseUnsecuredContent(arg0: CharSequence): Jwt<{ [key: string]: any }, number[]>;
-    // private validateExpectedClaims(arg0: { [key: string]: any }, arg1: { [key: string]: any }): void;
-    // private verifySignature(arg0: TokenizedJwt, arg1: { [key: string]: any }, arg2: string, arg3: SigningKeyResolver, arg4: { [key: string]: any }, arg5: Payload): number[];
+    parseUnsecuredClaims(arg0: CharSequence): Jwt<JavaMap<any, any>, JavaMap<any, any>>;
+    parseUnsecuredContent(arg0: CharSequence): Jwt<JavaMap<any, any>, number[]>;
+    // private validateExpectedClaims(arg0: JavaMap<any, any>, arg1: JavaMap<any, any>): void;
+    // private verifySignature(arg0: TokenizedJwt, arg1: JavaMap<any, any>, arg2: string, arg3: SigningKeyResolver, arg4: JavaMap<any, any>, arg5: Payload): number[];
 }

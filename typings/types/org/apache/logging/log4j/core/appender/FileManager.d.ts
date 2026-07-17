@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { Serializable } from '../../../../../../java/io/Serializable.d.ts'
@@ -33,7 +34,7 @@ export class FileManager extends OutputStreamManager {
     createParentDir(file: File): void;
     defineAttributeView(path: Path): void;
     getBufferSize(): number;
-    getContentFormat(): { [key: string]: string };
+    getContentFormat(): JavaMap<string, string>;
     getFileGroup(): string;
     getFileName(): string;
     getFileOwner(): string;

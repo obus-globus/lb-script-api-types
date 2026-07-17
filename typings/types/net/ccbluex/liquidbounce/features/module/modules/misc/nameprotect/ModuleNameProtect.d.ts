@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Pool } from '../../../../../../../../net/ccbluex/fastutil/Pool.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { EventHook } from '../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
@@ -23,12 +24,12 @@ export class ModuleNameProtect extends ClientModule {
     // private colorMode: ModeValueGroup<GenericColorMode<void>>;
     // private coloringInfo: NameProtectMappings$ColoringInfo;
     // private mappedCharListPool: Pool<ModuleNameProtect$MappedCharacter[]>;
-    // private orderedTextMappingCache: Map<(param0: (param0: number, param1: Style, param2: number) => boolean) => boolean, ModuleNameProtect$WrappedOrderedText>;
+    // private orderedTextMappingCache: JavaMap<(param0: (param0: number, param1: Style, param2: number) => boolean) => boolean, ModuleNameProtect$WrappedOrderedText>;
     // private renderHandler: EventHook<GameTickEvent>;
     // private replacement: string;
     // private /*not mapped: */ getReplacement(): string;
     // private replacementMappings: NameProtectMappings;
-    // private stringMappingCache: { [key: string]: string };
+    // private stringMappingCache: JavaMap<string, string>;
     replace(original: string): string;
     // private uncachedReplace(original: string): string;
     // private uncachedWrap(original: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean): ModuleNameProtect$WrappedOrderedText;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { JsonElement } from '../../../../com/google/gson/JsonElement.d.ts'
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { DynamicOps } from '../../../../com/mojang/serialization/DynamicOps.d.ts'
@@ -12,12 +13,12 @@ import type { SimpleJsonResourceReloadListener } from '../../../../net/minecraft
 import type { ProfilerFiller } from '../../../../net/minecraft/util/profiling/ProfilerFiller.d.ts'
 import type { WaypointStyleAsset } from '../../../../net/minecraft/world/waypoints/WaypointStyleAsset.d.ts'
 export class WaypointStyleManager extends SimpleJsonResourceReloadListener<WaypointStyle> implements FabricResourceReloader {
-    static scanDirectory<T extends unknown>(parammanager: ResourceManager, paramlister: FileToIdConverter, paramops: DynamicOps<JsonElement>, paramcodec: Codec<T>, paramresult: Map<Identifier, T>): void;
-    static scanDirectory<T extends unknown>(parammanager: ResourceManager, paramregistryKey: ResourceKey<T[]>, paramops: DynamicOps<JsonElement>, paramcodec: Codec<T>, paramresult: Map<Identifier, T>): void;
+    static scanDirectory<T extends unknown>(parammanager: ResourceManager, paramlister: FileToIdConverter, paramops: DynamicOps<JsonElement>, paramcodec: Codec<T>, paramresult: JavaMap<Identifier, T>): void;
+    static scanDirectory<T extends unknown>(parammanager: ResourceManager, paramregistryKey: ResourceKey<T[]>, paramops: DynamicOps<JsonElement>, paramcodec: Codec<T>, paramresult: JavaMap<Identifier, T>): void;
     constructor()
     // private fabric$id: Identifier;
-    // private waypointStyles: Map<ResourceKey<WaypointStyleAsset>, WaypointStyle>;
-    apply(preparations: Map<Identifier, WaypointStyle>, manager: ResourceManager, profiler: ProfilerFiller): void;
+    // private waypointStyles: JavaMap<ResourceKey<WaypointStyleAsset>, WaypointStyle>;
+    apply(preparations: JavaMap<Identifier, WaypointStyle>, manager: ResourceManager, profiler: ProfilerFiller): void;
     fabric$getId(): Identifier;
     get(id: ResourceKey<WaypointStyleAsset>): WaypointStyle;
     getName(): string;

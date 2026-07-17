@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { UUID } from '../../../../java/util/UUID.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../net/minecraft/core/BlockPos.d.ts'
@@ -11,9 +12,9 @@ import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { ChunkPos } from '../../../../net/minecraft/world/level/ChunkPos.d.ts'
 export class TrackingDebugSynchronizer$SourceSynchronizer<T extends unknown> extends TrackingDebugSynchronizer<T> {
     constructor(subscription: DebugSubscription<T>)
-    // private blockEntitySources: Map<BlockPos, TrackingDebugSynchronizer$ValueSource<T>>;
-    // private chunkSources: Map<ChunkPos, TrackingDebugSynchronizer$ValueSource<T>>;
-    // private entitySources: Map<UUID, TrackingDebugSynchronizer$ValueSource<T>>;
+    // private blockEntitySources: JavaMap<BlockPos, TrackingDebugSynchronizer$ValueSource<T>>;
+    // private chunkSources: JavaMap<ChunkPos, TrackingDebugSynchronizer$ValueSource<T>>;
+    // private entitySources: JavaMap<UUID, TrackingDebugSynchronizer$ValueSource<T>>;
     clear(): void;
     dropBlockEntity(level: ServerLevel, blockPos: BlockPos): void;
     dropChunk(chunkPos: ChunkPos): void;

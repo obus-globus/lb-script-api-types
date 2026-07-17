@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { StringBuilder } from '../../../java/lang/StringBuilder.d.ts'
 import type { AccessFlag } from '../../../java/lang/reflect/AccessFlag.d.ts'
@@ -17,10 +18,10 @@ export class Executable extends AccessibleObject implements GenericDeclaration, 
     static PUBLIC: number;
     static setAccessible(paramarg0: AccessibleObject[], paramarg1: boolean): void;
     constructor()
-    readonly declaredAnnotations: Map<Class<Annotation>, Annotation>;
+    readonly declaredAnnotations: JavaMap<Class<Annotation>, Annotation>;
     // private parameterData: Executable$ParameterData;
     accessFlags(): AccessFlag[];
-    // private declaredAnnotations(): Map<Class<Annotation>, Annotation>;
+    // private declaredAnnotations(): JavaMap<Class<Annotation>, Annotation>;
     equalParamTypes(arg0: Class<Object>[], arg1: Class<Object>[]): boolean;
     getAllGenericParameterTypes(): Type[];
     getAnnotatedExceptionTypes(): AnnotatedType[];

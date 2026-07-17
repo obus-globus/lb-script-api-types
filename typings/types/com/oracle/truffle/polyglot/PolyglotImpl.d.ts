@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { TruffleLanguage } from '../../../../com/oracle/truffle/api/TruffleLanguage.d.ts'
 import type { PolyglotContextDispatch } from '../../../../com/oracle/truffle/polyglot/PolyglotContextDispatch.d.ts'
 import type { PolyglotContextImpl } from '../../../../com/oracle/truffle/polyglot/PolyglotContextImpl.d.ts'
@@ -57,19 +58,19 @@ export class PolyglotImpl extends AbstractPolyglotImpl {
     // private instrumentDispatch: PolyglotInstrumentDispatch;
     // private languageDispatch: PolyglotLanguageDispatch;
     // private preInitializedEngineRef: AtomicReference<PolyglotEngineImpl>;
-    // private presetOptions: { [key: string]: string };
-    // private primitiveValues: Map<Class<Object>, PolyglotValueDispatch>;
+    // private presetOptions: JavaMap<string, string>;
+    // private primitiveValues: JavaMap<Class<Object>, PolyglotValueDispatch>;
     // private sourceDispatch: PolyglotSourceDispatch;
     // private sourceSectionDispatch: PolyglotSourceSectionDispatch;
     allowInternalResourceAccess(fileSystem: FileSystem_2, readOnlyResources: boolean): FileSystem_2;
-    // private applyPresetOptions(options: { [key: string]: string }, systemPropertiesOptions: { [key: string]: string }, useSystemProperties: boolean, hostLanguageOnly: boolean): { [key: string]: string };
+    // private applyPresetOptions(options: JavaMap<string, string>, systemPropertiesOptions: JavaMap<string, string>, useSystemProperties: boolean, hostLanguageOnly: boolean): JavaMap<string, string>;
     asByteSequence(object: Object): ByteSequence;
     asValue(currentContext: PolyglotContextImpl, hostValue: Object): Object;
     asValue(hostValue: Object): Object;
-    buildEngine(permittedLanguages: string[], sandboxPolicy: SandboxPolicy, out: OutputStream, err: OutputStream, in_: InputStream, options: { [key: string]: string }, systemPropertiesOptions: { [key: string]: string }, useSystemProperties: boolean, allowExperimentalOptions: boolean, boundEngine: boolean, useIsolatedEngine: boolean, messageInterceptor: MessageTransport, logHandler: Object, hostLanguage: Object, hostLanguageOnly: boolean, registerInActiveEngines: boolean, polyglotHostService: Object, exceptionHandler: (param0: PolyglotException) => void): Engine;
+    buildEngine(permittedLanguages: string[], sandboxPolicy: SandboxPolicy, out: OutputStream, err: OutputStream, in_: InputStream, options: JavaMap<string, string>, systemPropertiesOptions: JavaMap<string, string>, useSystemProperties: boolean, allowExperimentalOptions: boolean, boundEngine: boolean, useIsolatedEngine: boolean, messageInterceptor: MessageTransport, logHandler: Object, hostLanguage: Object, hostLanguageOnly: boolean, registerInActiveEngines: boolean, polyglotHostService: Object, exceptionHandler: (param0: PolyglotException) => void): Engine;
     buildLimits(statementLimit: number, statementLimitSourceFilter: (param0: Object) => boolean, onLimit: (param0: Object) => void): Object;
-    // private buildLocalEngine(permittedLanguages: string[], sandboxPolicy: SandboxPolicy, out: OutputStream, err: OutputStream, in_: InputStream, options: { [key: string]: string }, systemPropertiesOptions: { [key: string]: string }, useSystemProperties: boolean, allowExperimentalOptions: boolean, boundEngine: boolean, spawnIsolate: boolean, messageInterceptor: MessageTransport, logHandler: Object, hostLanguage: Object, hostLanguageOnly: boolean, registerInActiveEngines: boolean, polyglotHostService: Object, exceptionHandler: (param0: PolyglotException) => void): Engine;
-    buildSource(language: string, origin: Object, uri: URI, name: string, mimeType: string, content: Object, interactive: boolean, internal: boolean, cached: boolean, encoding: Charset, url: URL, path: string, options: { [key: string]: string }): Object;
+    // private buildLocalEngine(permittedLanguages: string[], sandboxPolicy: SandboxPolicy, out: OutputStream, err: OutputStream, in_: InputStream, options: JavaMap<string, string>, systemPropertiesOptions: JavaMap<string, string>, useSystemProperties: boolean, allowExperimentalOptions: boolean, boundEngine: boolean, spawnIsolate: boolean, messageInterceptor: MessageTransport, logHandler: Object, hostLanguage: Object, hostLanguageOnly: boolean, registerInActiveEngines: boolean, polyglotHostService: Object, exceptionHandler: (param0: PolyglotException) => void): Engine;
+    buildSource(language: string, origin: Object, uri: URI, name: string, mimeType: string, content: Object, interactive: boolean, internal: boolean, cached: boolean, encoding: Charset, url: URL, path: string, options: JavaMap<string, string>): Object;
     copyResources(targetFolder: Path, ...components: string[]): boolean;
     createDefaultEngine(hostLanguage: TruffleLanguage<Object>): PolyglotEngineImpl;
     createEngineOptionDescriptors(): OptionDescriptor[];

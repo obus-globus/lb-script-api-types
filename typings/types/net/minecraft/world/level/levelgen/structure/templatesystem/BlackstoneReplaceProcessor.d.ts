@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
@@ -11,7 +12,7 @@ export class BlackstoneReplaceProcessor extends Object implements StructureProce
     static INSTANCE: BlackstoneReplaceProcessor;
     static MAP_CODEC: MapCodec<BlackstoneReplaceProcessor>;
     private constructor()
-    // private replacements: Map<Block, Block>;
+    // private replacements: JavaMap<Block, Block>;
     codec(): MapCodec<BlackstoneReplaceProcessor>;
     evaluatesEntirePieceState(): boolean;
     finalizeProcessing(level: ServerLevelAccessor, position: BlockPos, referencePos: BlockPos, originalBlockInfoList: StructureTemplate$StructureBlockInfo[], processedBlockInfoList: StructureTemplate$StructureBlockInfo[], settings: StructurePlaceSettings): StructureTemplate$StructureBlockInfo[];

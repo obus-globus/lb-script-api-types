@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -8,13 +9,13 @@ import type { ConfigurationTask$Type } from '../../../../../../net/minecraft/ser
 import type { ServerConfigurationPacketListenerImpl } from '../../../../../../net/minecraft/server/network/ServerConfigurationPacketListenerImpl.d.ts'
 export class RegistrySyncManager$SyncConfigurationTask extends Record implements ConfigurationTask {
     static KEY: ConfigurationTask$Type;
-    constructor(handler: ServerConfigurationPacketListenerImpl, map: Map<Identifier, { [key: string]: any }>)
+    constructor(handler: ServerConfigurationPacketListenerImpl, map: JavaMap<Identifier, JavaMap<any, any>>)
     // private handler: ServerConfigurationPacketListenerImpl;
-    // private map: Map<Identifier, { [key: string]: any }>;
+    // private map: JavaMap<Identifier, JavaMap<any, any>>;
     equals(arg0: Object | null): boolean;
     handler(): ServerConfigurationPacketListenerImpl;
     hashCode(): number;
-    map(): Map<Identifier, { [key: string]: any }>;
+    map(): JavaMap<Identifier, JavaMap<any, any>>;
     start(arg0: (param0: Packet<any>) => void): void;
     tick(): boolean;
     toString(): string;

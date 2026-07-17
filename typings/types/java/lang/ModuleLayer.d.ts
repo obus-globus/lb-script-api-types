@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { ClassLoader } from '../../java/lang/ClassLoader.d.ts'
 import type { Module } from '../../java/lang/Module.d.ts'
 import type { ModuleLayer$Controller } from '../../java/lang/ModuleLayer$Controller.d.ts'
@@ -17,7 +18,7 @@ export class ModuleLayer extends Object {
     // private allLayers: ModuleLayer[];
     // private cf: Configuration;
     // private modules: Module[];
-    // private nameToModule: { [key: string]: Module };
+    // private nameToModule: JavaMap<string, Module>;
     // private parents: ModuleLayer[];
     // private servicesCatalog: ServicesCatalog;
     addEnableNativeAccess(arg0: string): boolean;

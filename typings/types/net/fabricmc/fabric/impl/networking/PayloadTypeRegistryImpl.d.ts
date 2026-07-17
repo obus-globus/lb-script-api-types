@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { IntSupplier } from '../../../../../java/util/function/IntSupplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { PayloadTypeRegistry } from '../../../../../net/fabricmc/fabric/api/networking/v1/PayloadTypeRegistry.d.ts'
@@ -19,10 +20,10 @@ export class PayloadTypeRegistryImpl<B extends FriendlyByteBuf> extends Object i
     static get(paramarg0: ProtocolInfo<any>): PayloadTypeRegistryImpl<any>;
     private constructor(arg0: ConnectionProtocol, arg1: PacketFlow)
     readonly flow: PacketFlow;
-    // private maxPacketSizes: { [key: string]: any };
+    // private maxPacketSizes: JavaMap<any, any>;
     // private minimalSplittableSize: number;
-    // private packetTypes: Map<Identifier, CustomPacketPayload$TypeAndCodec<B, CustomPacketPayload>>;
-    // private pendingMaxPacketSizes: Map<Identifier, () => number>;
+    // private packetTypes: JavaMap<Identifier, CustomPacketPayload$TypeAndCodec<B, CustomPacketPayload>>;
+    // private pendingMaxPacketSizes: JavaMap<Identifier, () => number>;
     readonly protocol: ConnectionProtocol;
     get<T extends CustomPacketPayload>(arg0: CustomPacketPayload$Type<T>): CustomPacketPayload$TypeAndCodec<B, T>;
     get(arg0: Identifier): CustomPacketPayload$TypeAndCodec<B, CustomPacketPayload>;

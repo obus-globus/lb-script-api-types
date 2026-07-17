@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { JsonObject } from '../../../../../../com/google/gson/JsonObject.d.ts'
 import type { NetherNetClientSignaling } from '../../../../../../dev/kastle/netty/channel/nethernet/signaling/NetherNetClientSignaling.d.ts'
 import type { NetherNetClientSignaling$NotFoundHandler } from '../../../../../../dev/kastle/netty/channel/nethernet/signaling/NetherNetClientSignaling$NotFoundHandler.d.ts'
@@ -21,7 +22,7 @@ export abstract class AbstractNetherNetXboxSignaling extends SimpleChannelInboun
     // private channel: Channel;
     // private connectFuture: CompletableFuture<NetherNetSignaling$IceServerInfo[]>;
     // private eventLoopGroup: (Object | null)[];
-    // private handlers: { [key: number]: (param0: string) => void };
+    // private handlers: JavaMap<number, (param0: string) => void>;
     iceServers: NetherNetSignaling$IceServerInfo[];
     readonly localNetworkId: string;
     // private log: InternalLogger;

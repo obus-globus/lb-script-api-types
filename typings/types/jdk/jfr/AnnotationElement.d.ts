@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
 import type { ValueDescriptor } from '../../jdk/jfr/ValueDescriptor.d.ts'
 import type { Type } from '../../jdk/jfr/internal/Type.d.ts'
@@ -6,7 +7,7 @@ import type { Object } from '../../java/lang/Object.d.ts'
 export class AnnotationElement extends Object {
     constructor(arg0: Class<Annotation>)
     constructor(arg0: Class<Annotation>, arg1: Object)
-    constructor(arg0: Class<Annotation>, arg1: { [key: string]: Object })
+    constructor(arg0: Class<Annotation>, arg1: JavaMap<string, Object>)
     constructor(arg0: Type, arg1: Object[], arg2: boolean)
     // private annotationValues: Object[];
     // private inBootClassLoader: boolean;

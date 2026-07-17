@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../../net/minecraft/core/Holder.d.ts'
@@ -9,9 +10,9 @@ import type { ItemAttributeModifiers } from '../../../../../net/minecraft/world/
 import type { ArmorType } from '../../../../../net/minecraft/world/item/equipment/ArmorType.d.ts'
 import type { EquipmentAsset } from '../../../../../net/minecraft/world/item/equipment/EquipmentAsset.d.ts'
 export class ArmorMaterial extends Record {
-    constructor(durability: number, defense: Map<ArmorType, number>, enchantmentValue: number, equipSound: Holder<SoundEvent>, toughness: number, knockbackResistance: number, repairIngredient: TagKey<Item>, assetId: ResourceKey<EquipmentAsset>)
+    constructor(durability: number, defense: JavaMap<ArmorType, number>, enchantmentValue: number, equipSound: Holder<SoundEvent>, toughness: number, knockbackResistance: number, repairIngredient: TagKey<Item>, assetId: ResourceKey<EquipmentAsset>)
     // private assetId: ResourceKey<EquipmentAsset>;
-    // private defense: Map<ArmorType, number>;
+    // private defense: JavaMap<ArmorType, number>;
     // private durability: number;
     // private enchantmentValue: number;
     // private equipSound: Holder<SoundEvent>;
@@ -20,7 +21,7 @@ export class ArmorMaterial extends Record {
     // private toughness: number;
     assetId(): ResourceKey<EquipmentAsset>;
     createAttributes(type: ArmorType): ItemAttributeModifiers;
-    defense(): Map<ArmorType, number>;
+    defense(): JavaMap<ArmorType, number>;
     durability(): number;
     enchantmentValue(): number;
     equals(o: Object | null): boolean;

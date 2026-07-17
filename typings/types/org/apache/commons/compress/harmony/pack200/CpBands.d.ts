@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BandSet } from '../../../../../../org/apache/commons/compress/harmony/pack200/BandSet.d.ts'
@@ -28,15 +29,15 @@ export class CpBands extends BandSet {
     // private cp_String: CPString[];
     // private cp_Utf8: CPUTF8[];
     // private defaultAttributeNames: string[];
-    // private objectsToCPConstant: Map<Object, CPConstant<any>>;
+    // private objectsToCPConstant: JavaMap<Object, CPConstant<any>>;
     // private segment: Segment;
-    // private stringsToCpClass: { [key: string]: CPClass };
-    // private stringsToCpField: { [key: string]: CPMethodOrField };
-    // private stringsToCpIMethod: { [key: string]: CPMethodOrField };
-    // private stringsToCpMethod: { [key: string]: CPMethodOrField };
-    // private stringsToCpNameAndType: { [key: string]: CPNameAndType };
-    // private stringsToCpSignature: { [key: string]: CPSignature };
-    // private stringsToCpUtf8: { [key: string]: CPUTF8 };
+    // private stringsToCpClass: JavaMap<string, CPClass>;
+    // private stringsToCpField: JavaMap<string, CPMethodOrField>;
+    // private stringsToCpIMethod: JavaMap<string, CPMethodOrField>;
+    // private stringsToCpMethod: JavaMap<string, CPMethodOrField>;
+    // private stringsToCpNameAndType: JavaMap<string, CPNameAndType>;
+    // private stringsToCpSignature: JavaMap<string, CPSignature>;
+    // private stringsToCpUtf8: JavaMap<string, CPUTF8>;
     addCPClass(arg0: string): void;
     addCPUtf8(arg0: string): void;
     // private addCharacters(arg0: string[], arg1: string[]): void;

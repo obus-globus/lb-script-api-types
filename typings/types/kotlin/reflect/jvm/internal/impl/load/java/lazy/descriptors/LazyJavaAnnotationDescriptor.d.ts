@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { ClassDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
 import type { PossiblyExternalAnnotationDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/descriptors/PossiblyExternalAnnotationDescriptor.d.ts'
@@ -24,7 +25,7 @@ export class LazyJavaAnnotationDescriptor extends Object implements PossiblyExte
     readonly source: JavaSourceElement;
     // private type$delegate: NotNullLazyValue<Object>;
     // private createTypeForMissingDependencies(arg0: FqName): ClassDescriptor;
-    getAllValueArguments(): Map<Name, ConstantValue<Object>>;
+    getAllValueArguments(): JavaMap<Name, ConstantValue<Object>>;
     getFqName(): FqName;
     getSource(): JavaSourceElement;
     getType(): SimpleType;

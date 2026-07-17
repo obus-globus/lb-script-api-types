@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ByteBufAllocator } from '../../../../io/netty/buffer/ByteBufAllocator.d.ts'
 import type { ChannelOption } from '../../../../io/netty/channel/ChannelOption.d.ts'
 import type { MessageSizeEstimator } from '../../../../io/netty/channel/MessageSizeEstimator.d.ts'
@@ -11,8 +12,8 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class EpollServerSocketChannelConfig extends EpollServerChannelConfig implements ServerSocketChannelConfig {
     constructor(arg0: EpollServerSocketChannel)
     getOption<T extends unknown>(arg0: ChannelOption<T>): T;
-    getOptions(): Map<ChannelOption<Object>, Object>;
-    getOptions(arg0: Map<ChannelOption<Object>, Object>, ...arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
+    getOptions(): JavaMap<ChannelOption<Object>, Object>;
+    getOptions(arg0: JavaMap<ChannelOption<Object>, Object>, ...arg1: ChannelOption<Object>[]): JavaMap<ChannelOption<Object>, Object>;
     getTcpDeferAccept(): number;
     isFreeBind(): boolean;
     isIpTransparent(): boolean;
@@ -32,7 +33,7 @@ export class EpollServerSocketChannelConfig extends EpollServerChannelConfig imp
     setReuseAddress(arg0: boolean): EpollServerSocketChannelConfig;
     setReusePort(arg0: boolean): EpollServerSocketChannelConfig;
     setTcpDeferAccept(arg0: number): EpollServerSocketChannelConfig;
-    setTcpMd5Sig(arg0: Map<InetAddress, number[]>): EpollServerSocketChannelConfig;
+    setTcpMd5Sig(arg0: JavaMap<InetAddress, number[]>): EpollServerSocketChannelConfig;
     setWriteBufferHighWaterMark(arg0: number): EpollServerSocketChannelConfig;
     setWriteBufferLowWaterMark(arg0: number): EpollServerSocketChannelConfig;
     setWriteBufferWaterMark(arg0: WriteBufferWaterMark): EpollServerSocketChannelConfig;

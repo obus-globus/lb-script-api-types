@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { AccessFlag } from '../../../java/lang/reflect/AccessFlag.d.ts'
 import type { AccessibleObject } from '../../../java/lang/reflect/AccessibleObject.d.ts'
@@ -22,7 +23,7 @@ export class Field extends AccessibleObject implements Member {
     checkCanSetAccessible(arg0: Class<Object>): void;
     checkCanSetAccessible(arg0: Class<Object>, arg1: Class<Object>): void;
     copy(): Field;
-    // private declaredAnnotations(): Map<Class<Annotation>, Annotation>;
+    // private declaredAnnotations(): JavaMap<Class<Annotation>, Annotation>;
     equals(arg0: Object | null): boolean;
     get(arg0: Object): Object;
     getAnnotatedType(): AnnotatedType;

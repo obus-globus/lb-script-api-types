@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Pair } from '../../../kotlin/Pair.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
@@ -32,14 +33,14 @@ export class FlowKt extends Object {
     static asFlow(self: { start: number; endInclusive: number; step: number }): Flow<number>;
     static asSharedFlow<T extends unknown>(self: MutableSharedFlow<T>): SharedFlow<T>;
     static asStateFlow<T extends unknown>(self: MutableStateFlow<T>): StateFlow<T>;
-    static associate<K extends unknown, V extends unknown, T extends unknown>(self: Flow<T>, transform: (param0: T) => Pair<K, V>): Map<K, V>;
-    static associateBy<K extends unknown, V extends unknown, T extends unknown>(self: Flow<T>, keySelector: (param0: T) => K, valueTransform: (param0: T) => V): Map<K, V>;
-    static associateBy<K extends unknown, T extends unknown>(self: Flow<T>, keySelector: (param0: T) => K): Map<K, T>;
-    static associateByTo<M extends Map<K, T>, T extends unknown, K extends unknown>(self: Flow<T>, destination: M, keySelector: (param0: T) => K): M;
-    static associateByTo<M extends Map<K, V>, T extends unknown, K extends unknown, V extends unknown>(self: Flow<T>, destination: M, keySelector: (param0: T) => K, valueTransform: (param0: T) => V): M;
-    static associateTo<M extends Map<K, V>, T extends unknown, K extends unknown, V extends unknown>(self: Flow<T>, destination: M, transform: (param0: T) => Pair<K, V>): M;
-    static associateWith<K extends unknown, V extends unknown>(self: Flow<K>, valueSelector: (param0: K) => V): Map<K, V>;
-    static associateWithTo<M extends Map<K, V>, K extends unknown, V extends unknown>(self: Flow<K>, destination: M, valueSelector: (param0: K) => V): M;
+    static associate<K extends unknown, V extends unknown, T extends unknown>(self: Flow<T>, transform: (param0: T) => Pair<K, V>): JavaMap<K, V>;
+    static associateBy<K extends unknown, V extends unknown, T extends unknown>(self: Flow<T>, keySelector: (param0: T) => K, valueTransform: (param0: T) => V): JavaMap<K, V>;
+    static associateBy<K extends unknown, T extends unknown>(self: Flow<T>, keySelector: (param0: T) => K): JavaMap<K, T>;
+    static associateByTo<M extends JavaMap<K, T>, T extends unknown, K extends unknown>(self: Flow<T>, destination: M, keySelector: (param0: T) => K): M;
+    static associateByTo<M extends JavaMap<K, V>, T extends unknown, K extends unknown, V extends unknown>(self: Flow<T>, destination: M, keySelector: (param0: T) => K, valueTransform: (param0: T) => V): M;
+    static associateTo<M extends JavaMap<K, V>, T extends unknown, K extends unknown, V extends unknown>(self: Flow<T>, destination: M, transform: (param0: T) => Pair<K, V>): M;
+    static associateWith<K extends unknown, V extends unknown>(self: Flow<K>, valueSelector: (param0: K) => V): JavaMap<K, V>;
+    static associateWithTo<M extends JavaMap<K, V>, K extends unknown, V extends unknown>(self: Flow<K>, destination: M, valueSelector: (param0: K) => V): M;
     static buffer<T extends unknown>(self: Flow<T>, capacity: number, onBufferOverflow: BufferOverflow): Flow<T>;
     static buffer<T extends unknown>(self: Flow<T>, capacity: number): Flow<T>;
     static cache<T extends unknown>(self: Flow<T>): Flow<T>;
@@ -118,10 +119,10 @@ export class FlowKt extends Object {
     static fold<R extends unknown, T extends unknown>(self: Flow<T>, initial: R, operation: (param0: R, param1: T) => R): R;
     static forEach<T extends unknown>(self: Flow<T>, action: (param0: T) => void): void;
     static getDEFAULT_CONCURRENCY(): number;
-    static groupBy<K extends unknown, V extends unknown, T extends unknown>(self: Flow<T>, keySelector: (param0: T) => K, valueTransform: (param0: T) => V): Map<K, V[]>;
-    static groupBy<K extends unknown, T extends unknown>(self: Flow<T>, keySelector: (param0: T) => K): Map<K, T[]>;
-    static groupByTo<M extends Map<K, T[]>, T extends unknown, K extends unknown>(self: Flow<T>, destination: M, keySelector: (param0: T) => K): M;
-    static groupByTo<M extends Map<K, V[]>, T extends unknown, K extends unknown, V extends unknown>(self: Flow<T>, destination: M, keySelector: (param0: T) => K, valueTransform: (param0: T) => V): M;
+    static groupBy<K extends unknown, V extends unknown, T extends unknown>(self: Flow<T>, keySelector: (param0: T) => K, valueTransform: (param0: T) => V): JavaMap<K, V[]>;
+    static groupBy<K extends unknown, T extends unknown>(self: Flow<T>, keySelector: (param0: T) => K): JavaMap<K, T[]>;
+    static groupByTo<M extends JavaMap<K, T[]>, T extends unknown, K extends unknown>(self: Flow<T>, destination: M, keySelector: (param0: T) => K): M;
+    static groupByTo<M extends JavaMap<K, V[]>, T extends unknown, K extends unknown, V extends unknown>(self: Flow<T>, destination: M, keySelector: (param0: T) => K, valueTransform: (param0: T) => V): M;
     static last<T extends unknown>(self: Flow<T>): T;
     static lastOrNull<T extends unknown>(self: Flow<T>): T | null;
     static launchIn<T extends unknown>(self: Flow<T>, scope: CoroutineScope): Job;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { GameProfile } from '../../../../com/mojang/authlib/GameProfile.d.ts'
 import type { File } from '../../../../java/io/File.d.ts'
 import type { SocketAddress } from '../../../../java/net/SocketAddress.d.ts'
@@ -45,19 +46,19 @@ export abstract class PlayerList extends Object {
     static USERBANLIST_FILE: File;
     static WHITELIST_FILE: File;
     constructor(server: MinecraftServer, registries: LayeredRegistryAccess<RegistryLayer>, playerIo: PlayerDataStorage, notificationService: NotificationService)
-    // private advancements: Map<UUID, PlayerAdvancements>;
+    // private advancements: JavaMap<UUID, PlayerAdvancements>;
     readonly allowCommandsForAllPlayers: boolean;
     readonly bans: UserBanList;
     readonly ipBans: IpBanList;
     readonly ops: ServerOpList;
     // private playerIo: PlayerDataStorage;
     readonly players: ServerPlayer[];
-    readonly playersByUUID: Map<UUID, ServerPlayer>;
+    readonly playersByUUID: JavaMap<UUID, ServerPlayer>;
     // private registries: LayeredRegistryAccess<RegistryLayer>;
     // private sendAllPlayerInfoIn: number;
     readonly server: MinecraftServer;
     readonly simulationDistance: number;
-    // private stats: Map<UUID, ServerStatsCounter>;
+    // private stats: JavaMap<UUID, ServerStatsCounter>;
     readonly viewDistance: number;
     // private whitelist: UserWhiteList;
     addWorldborderListener(level: ServerLevel): void;
@@ -88,7 +89,7 @@ export abstract class PlayerList extends Object {
     getPlayerNamesArray(): string[];
     getPlayerStats(player: Player): ServerStatsCounter;
     getPlayers(): ServerPlayer[];
-    getPlayersByUUID(): Map<UUID, ServerPlayer>;
+    getPlayersByUUID(): JavaMap<UUID, ServerPlayer>;
     getPlayersWithAddress(ip: string): ServerPlayer[];
     getServer(): MinecraftServer;
     getSimulationDistance(): number;

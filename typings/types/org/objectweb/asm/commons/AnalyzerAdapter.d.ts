@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Handle } from '../../../../org/objectweb/asm/Handle.d.ts'
 import type { Label } from '../../../../org/objectweb/asm/Label.d.ts'
@@ -11,7 +12,7 @@ export class AnalyzerAdapter extends MethodVisitor {
     // private maxStack: number;
     // private owner: string;
     stack: Object[];
-    uninitializedTypes: Map<Object, Object>;
+    uninitializedTypes: JavaMap<Object, Object>;
     // private execute(arg0: number, arg1: number, arg2: string): void;
     // private get(arg0: number): Object;
     // private pop(): Object;

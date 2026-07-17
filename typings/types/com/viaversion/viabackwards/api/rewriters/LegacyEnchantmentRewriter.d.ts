@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Tag } from '../../../../../com/viaversion/nbt/tag/Tag.d.ts'
 import type { Item } from '../../../../../com/viaversion/viaversion/api/minecraft/item/Item.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -6,7 +7,7 @@ export class LegacyEnchantmentRewriter extends Object {
     constructor(arg0: string)
     constructor(arg0: string, arg1: boolean)
     // private dummyEnchantment: boolean;
-    // private enchantmentMappings: { [key: number]: string };
+    // private enchantmentMappings: JavaMap<number, string>;
     readonly hideLevelForEnchants: number[];
     // private nbtTagName: string;
     handleToClient(arg0: Item): void;

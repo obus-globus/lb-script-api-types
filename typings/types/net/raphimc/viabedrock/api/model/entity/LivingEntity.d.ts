@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { UserConnection } from '../../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { EntityTypes26_2 } from '../../../../../../com/viaversion/viaversion/api/minecraft/entities/EntityTypes26_2.d.ts'
 import type { EntityData } from '../../../../../../com/viaversion/viaversion/api/minecraft/entitydata/EntityData.d.ts'
@@ -9,11 +10,11 @@ import type { EntityAttribute } from '../../../../../../net/raphimc/viabedrock/p
 import type { EntityEffect } from '../../../../../../net/raphimc/viabedrock/protocol/model/EntityEffect.d.ts'
 export class LivingEntity extends Entity {
     constructor(arg0: UserConnection, arg1: number, arg2: number, arg3: string, arg4: number, arg5: UUID, arg6: EntityTypes26_2)
-    // private attributes: { [key: string]: EntityAttribute };
-    // private effects: { [key: string]: EntityEffect };
-    attributes(): { [key: string]: EntityAttribute };
+    // private attributes: JavaMap<string, EntityAttribute>;
+    // private effects: JavaMap<string, EntityEffect>;
+    attributes(): JavaMap<string, EntityAttribute>;
     clearEffects(): void;
-    effects(): { [key: string]: EntityEffect };
+    effects(): JavaMap<string, EntityEffect>;
     isDead(): boolean;
     removeEffect(arg0: string, arg1: PacketWrapper): void;
     sendAttribute(arg0: string): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { AuthenticationResult } from '../../../../com/microsoft/aad/msal4j/AuthenticationResult.d.ts'
 import type { Authority } from '../../../../com/microsoft/aad/msal4j/Authority.d.ts'
 import type { ConfidentialClientApplication } from '../../../../com/microsoft/aad/msal4j/ConfidentialClientApplication.d.ts'
@@ -13,8 +14,8 @@ export class TokenRequestExecutor extends Object {
     // private requestAuthority: Authority;
     // private serviceBundle: ServiceBundle;
     // private tenant: string;
-    // private addCredentialToRequest(arg0: { [key: string]: string }, arg1: ConfidentialClientApplication): void;
-    // private addJWTBearerAssertionParams(arg0: { [key: string]: string }, arg1: string): void;
+    // private addCredentialToRequest(arg0: JavaMap<string, string>, arg1: ConfidentialClientApplication): void;
+    // private addJWTBearerAssertionParams(arg0: JavaMap<string, string>, arg1: string): void;
     // private addQueryParameters(arg0: OAuthHttpRequest): void;
     // private createAuthenticationResultFromOauthHttpResponse(arg0: HttpResponse): AuthenticationResult;
     createOauthHttpRequest(): OAuthHttpRequest;

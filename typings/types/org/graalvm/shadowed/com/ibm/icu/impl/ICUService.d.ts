@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Comparator } from '../../../../../../../java/util/Comparator.d.ts'
 import type { EventListener } from '../../../../../../../java/util/EventListener.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
@@ -11,12 +12,12 @@ import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/
 export class ICUService extends ICUNotifier {
     constructor()
     constructor(name: string)
-    // private cache: { [key: string]: ICUService$CacheEntry };
+    // private cache: JavaMap<string, ICUService$CacheEntry>;
     // private defaultSize: number;
     // private dnref: ICUService$LocaleRef;
     // private factories: ICUService$Factory[];
     // private factoryLock: ICURWLock;
-    // private idcache: { [key: string]: ICUService$Factory };
+    // private idcache: JavaMap<string, ICUService$Factory>;
     readonly name: string;
     acceptsListener(l: EventListener): boolean;
     clearCaches(): void;
@@ -27,16 +28,16 @@ export class ICUService extends ICUNotifier {
     get(descriptor: string, actualReturn: string[]): Object;
     getDisplayName(id: string): string;
     getDisplayName(id: string, locale: ULocale): string;
-    getDisplayNames(): { [key: string]: string };
-    getDisplayNames(locale: ULocale): { [key: string]: string };
-    getDisplayNames(locale: ULocale, com: (param0: Object, param1: Object) => number): { [key: string]: string };
-    getDisplayNames(locale: ULocale, com: (param0: Object, param1: Object) => number, matchID: string): { [key: string]: string };
-    getDisplayNames(locale: ULocale, matchID: string): { [key: string]: string };
+    getDisplayNames(): JavaMap<string, string>;
+    getDisplayNames(locale: ULocale): JavaMap<string, string>;
+    getDisplayNames(locale: ULocale, com: (param0: Object, param1: Object) => number): JavaMap<string, string>;
+    getDisplayNames(locale: ULocale, com: (param0: Object, param1: Object) => number, matchID: string): JavaMap<string, string>;
+    getDisplayNames(locale: ULocale, matchID: string): JavaMap<string, string>;
     getKey(key: ICUService$Key): Object;
     getKey(key: ICUService$Key, actualReturn: string[]): Object;
     getKey(key: ICUService$Key, actualReturn: string[], factory: ICUService$Factory): Object;
     getName(): string;
-    // private getVisibleIDMap(): { [key: string]: ICUService$Factory };
+    // private getVisibleIDMap(): JavaMap<string, ICUService$Factory>;
     getVisibleIDs(): string[];
     getVisibleIDs(matchID: string): string[];
     handleDefault(key: ICUService$Key, actualIDReturn: string[]): Object;

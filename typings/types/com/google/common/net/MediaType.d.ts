@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../com/google/common/base/Optional.d.ts'
 import type { ImmutableListMultimap } from '../../../../com/google/common/collect/ImmutableListMultimap.d.ts'
 import type { Multimap } from '../../../../com/google/common/collect/Multimap.d.ts'
@@ -138,7 +139,7 @@ export class MediaType extends Object {
     hashCode(): number;
     is(mediaTypeRange: MediaType): boolean;
     parameters(): ImmutableListMultimap<string, string>;
-    // private parametersAsMap(): { [key: string]: string[] };
+    // private parametersAsMap(): JavaMap<string, string[]>;
     subtype(): string;
     toString(): string;
     type(): string;

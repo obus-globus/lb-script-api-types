@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { MapCodec } from '../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -10,15 +11,15 @@ import type { TerrainAdjustment } from '../../../../../../net/minecraft/world/le
 export class Structure$StructureSettings extends Record {
     static CODEC: MapCodec<Structure$StructureSettings>;
     constructor(biomes: Holder<Biome>[])
-    constructor(biomes: Holder<Biome>[], spawnOverrides: Map<MobCategory, StructureSpawnOverride>, step: GenerationStep$Decoration, terrainAdaptation: TerrainAdjustment)
+    constructor(biomes: Holder<Biome>[], spawnOverrides: JavaMap<MobCategory, StructureSpawnOverride>, step: GenerationStep$Decoration, terrainAdaptation: TerrainAdjustment)
     // private biomes: Holder<Biome>[];
-    // private spawnOverrides: Map<MobCategory, StructureSpawnOverride>;
+    // private spawnOverrides: JavaMap<MobCategory, StructureSpawnOverride>;
     // private step: GenerationStep$Decoration;
     // private terrainAdaptation: TerrainAdjustment;
     biomes(): Holder<Biome>[];
     equals(o: Object | null): boolean;
     hashCode(): number;
-    spawnOverrides(): Map<MobCategory, StructureSpawnOverride>;
+    spawnOverrides(): JavaMap<MobCategory, StructureSpawnOverride>;
     step(): GenerationStep$Decoration;
     terrainAdaptation(): TerrainAdjustment;
     toString(): string;

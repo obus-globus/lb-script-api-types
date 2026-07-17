@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ShapeGenerator } from '../../../../../com/oracle/truffle/api/staticobject/ShapeGenerator.d.ts'
 import type { StaticProperty } from '../../../../../com/oracle/truffle/api/staticobject/StaticProperty.d.ts'
 import type { StaticShape } from '../../../../../com/oracle/truffle/api/staticobject/StaticShape.d.ts'
@@ -11,7 +12,7 @@ export class ArrayBasedShapeGenerator<T extends unknown> extends ShapeGenerator<
     // private generatedStorageClass: Class<Object>;
     // private objectArrayOffset: number;
     // private shapeOffset: number;
-    generateShape(parentShape: StaticShape<T>, staticProperties: { [key: string]: StaticProperty }, safetyChecks: boolean, storageClassName: string): StaticShape<T>;
+    generateShape(parentShape: StaticShape<T>, staticProperties: JavaMap<string, StaticProperty>, safetyChecks: boolean, storageClassName: string): StaticShape<T>;
     getByteArrayOffset(): number;
     getObjectArrayOffset(): number;
     getShapeOffset(): number;

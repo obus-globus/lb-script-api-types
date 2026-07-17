@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { AbstractApplicationBase } from '../../../../com/microsoft/aad/msal4j/AbstractApplicationBase.d.ts'
 import type { Authority } from '../../../../com/microsoft/aad/msal4j/Authority.d.ts'
 import type { IHttpClient } from '../../../../com/microsoft/aad/msal4j/IHttpClient.d.ts'
@@ -21,7 +22,7 @@ export abstract class AbstractApplicationBase$Builder<T extends AbstractApplicat
     // private proxy: Proxy;
     // private readTimeoutForDefaultHttpClient: number;
     // private sslSocketFactory: SSLSocketFactory;
-    // private telemetryConsumer: (param0: { [key: string]: string }[]) => void;
+    // private telemetryConsumer: (param0: JavaMap<string, string>[]) => void;
     build(): AbstractApplicationBase;
     connectTimeoutForDefaultHttpClient(arg0: number): T;
     correlationId(arg0: string): T;
@@ -34,5 +35,5 @@ export abstract class AbstractApplicationBase$Builder<T extends AbstractApplicat
     readTimeoutForDefaultHttpClient(arg0: number): T;
     self(): T;
     sslSocketFactory(arg0: SSLSocketFactory): T;
-    telemetryConsumer(arg0: (param0: { [key: string]: string }[]) => void): T;
+    telemetryConsumer(arg0: (param0: JavaMap<string, string>[]) => void): T;
 }

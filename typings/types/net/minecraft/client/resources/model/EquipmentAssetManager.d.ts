@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { JsonElement } from '../../../../../com/google/gson/JsonElement.d.ts'
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { DynamicOps } from '../../../../../com/mojang/serialization/DynamicOps.d.ts'
@@ -13,12 +14,12 @@ import type { ProfilerFiller } from '../../../../../net/minecraft/util/profiling
 import type { EquipmentAsset } from '../../../../../net/minecraft/world/item/equipment/EquipmentAsset.d.ts'
 export class EquipmentAssetManager extends SimpleJsonResourceReloadListener<EquipmentClientInfo> implements FabricResourceReloader {
     static MISSING: EquipmentClientInfo;
-    static scanDirectory<T extends unknown>(parammanager: ResourceManager, paramlister: FileToIdConverter, paramops: DynamicOps<JsonElement>, paramcodec: Codec<T>, paramresult: Map<Identifier, T>): void;
-    static scanDirectory<T extends unknown>(parammanager: ResourceManager, paramregistryKey: ResourceKey<T[]>, paramops: DynamicOps<JsonElement>, paramcodec: Codec<T>, paramresult: Map<Identifier, T>): void;
+    static scanDirectory<T extends unknown>(parammanager: ResourceManager, paramlister: FileToIdConverter, paramops: DynamicOps<JsonElement>, paramcodec: Codec<T>, paramresult: JavaMap<Identifier, T>): void;
+    static scanDirectory<T extends unknown>(parammanager: ResourceManager, paramregistryKey: ResourceKey<T[]>, paramops: DynamicOps<JsonElement>, paramcodec: Codec<T>, paramresult: JavaMap<Identifier, T>): void;
     constructor()
-    // private equipmentAssets: Map<ResourceKey<EquipmentAsset>, EquipmentClientInfo>;
+    // private equipmentAssets: JavaMap<ResourceKey<EquipmentAsset>, EquipmentClientInfo>;
     // private fabric$id: Identifier;
-    apply(preparations: Map<Identifier, EquipmentClientInfo>, manager: ResourceManager, profiler: ProfilerFiller): void;
+    apply(preparations: JavaMap<Identifier, EquipmentClientInfo>, manager: ResourceManager, profiler: ProfilerFiller): void;
     fabric$getId(): Identifier;
     get(id: ResourceKey<EquipmentAsset>): EquipmentClientInfo;
     getName(): string;

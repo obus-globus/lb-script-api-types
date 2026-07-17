@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { IndexType } from '../../../../com/mojang/blaze3d/IndexType.d.ts'
 import type { GpuBufferSlice } from '../../../../com/mojang/blaze3d/buffers/GpuBufferSlice.d.ts'
 import type { RenderTarget } from '../../../../com/mojang/blaze3d/pipeline/RenderTarget.d.ts'
@@ -28,7 +29,7 @@ export class RenderPassExtensionsKt extends Object {
     static bindLightingUniform(self: RenderPass): void;
     static bindProjectionUniform(self: RenderPass): void;
     static bindTexture(self: RenderPass, name: string, texture: AbstractTexture | null): void;
-    static bindTextures(self: RenderPass, textures: { [key: string]: AbstractTexture | null }): void;
+    static bindTextures(self: RenderPass, textures: JavaMap<string, AbstractTexture | null>): void;
     /**
      * Color-only RenderPass.
      *
@@ -48,7 +49,7 @@ export class RenderPassExtensionsKt extends Object {
     static getDynamicTransformsUniform(paramarg0: Matrix4f): GpuBufferSlice;
     static getDynamicTransformsUniform(paramarg0: Matrix4f, paramarg1: Color4b): GpuBufferSlice;
     static getDynamicTransformsUniform(modelView: Matrix4f | null, colorModulator: Color4b, modelOffset: Vector3f | null): GpuBufferSlice;
-    static setUniforms(self: RenderPass, uniforms: { [key: string]: GpuBufferSlice }): void;
+    static setUniforms(self: RenderPass, uniforms: JavaMap<string, GpuBufferSlice>): void;
     static setupRenderTypeScissor(self: RenderPass): void;
     static unbindTexture(self: RenderPass, name: string): void;
 }

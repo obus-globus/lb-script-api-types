@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { QueryStringDecoder$Builder } from '../../../../../io/netty/handler/codec/http/QueryStringDecoder$Builder.d.ts'
 import type { URI } from '../../../../../java/net/URI.d.ts'
 import type { Charset } from '../../../../../java/nio/charset/Charset.d.ts'
@@ -19,14 +20,14 @@ export class QueryStringDecoder extends Object {
     // private charset: Charset;
     // private htmlQueryDecoding: boolean;
     // private maxParams: number;
-    // private params: { [key: string]: string[] };
+    // private params: JavaMap<string, string[]>;
     // private path: string;
     // private pathEndIdx: number;
     // private semicolonIsNormalChar: boolean;
     // private uri: string;
-    // private addParam(arg0: string, arg1: number, arg2: number, arg3: number, arg4: { [key: string]: string[] }, arg5: Charset): boolean;
-    // private decodeParams(arg0: string, arg1: number, arg2: Charset, arg3: number): { [key: string]: string[] };
-    parameters(): { [key: string]: string[] };
+    // private addParam(arg0: string, arg1: number, arg2: number, arg3: number, arg4: JavaMap<string, string[]>, arg5: Charset): boolean;
+    // private decodeParams(arg0: string, arg1: number, arg2: Charset, arg3: number): JavaMap<string, string[]>;
+    parameters(): JavaMap<string, string[]>;
     path(): string;
     // private pathEndIdx(): number;
     rawPath(): string;

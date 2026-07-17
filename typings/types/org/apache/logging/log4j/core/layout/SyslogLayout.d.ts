@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { StringBuilder } from '../../../../../../java/lang/StringBuilder.d.ts'
 import type { Charset } from '../../../../../../java/nio/charset/Charset.d.ts'
 import type { SimpleDateFormat } from '../../../../../../java/text/SimpleDateFormat.d.ts'
@@ -18,7 +19,7 @@ export class SyslogLayout extends AbstractStringLayout {
     // private includeNewLine: boolean;
     // private localHostname: string;
     // private addDate(timestamp: number, buf: StringBuilder): void;
-    getContentFormat(): { [key: string]: string };
+    getContentFormat(): JavaMap<string, string>;
     getFacility(): Facility;
     toSerializable(event: LogEvent): string;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Callback } from '../../../com/sun/jna/Callback.d.ts'
 import type { Callback$UncaughtExceptionHandler } from '../../../com/sun/jna/Callback$UncaughtExceptionHandler.d.ts'
 import type { CallbackThreadInitializer } from '../../../com/sun/jna/CallbackThreadInitializer.d.ts'
@@ -42,7 +43,7 @@ export class Native extends Object implements Version {
     static getDefaultStringEncoding(): string;
     static getDirectBufferPointer(paramarg0: Buffer): Pointer;
     static getLastError(): number;
-    static getLibraryOptions(paramarg0: Class<Object>): { [key: string]: Object };
+    static getLibraryOptions(paramarg0: Class<Object>): JavaMap<string, Object>;
     static getNativeLibrary(paramarg0: Library): NativeLibrary;
     static getNativeLibrary(paramarg0: Class<Object>): NativeLibrary;
     static getNativeSize(paramarg0: Class<Object>): number;
@@ -56,13 +57,13 @@ export class Native extends Object implements Version {
     static isProtected(): boolean;
     static isSupportedNativeType(paramarg0: Class<Object>): boolean;
     static load<T extends Library>(paramarg0: Class<T>): T;
-    static load<T extends Library>(paramarg0: Class<T>, paramarg1: { [key: string]: Object }): T;
+    static load<T extends Library>(paramarg0: Class<T>, paramarg1: JavaMap<string, Object>): T;
     static load<T extends Library>(paramarg0: string, paramarg1: Class<T>): T;
-    static load<T extends Library>(paramarg0: string, paramarg1: Class<T>, paramarg2: { [key: string]: Object }): T;
+    static load<T extends Library>(paramarg0: string, paramarg1: Class<T>, paramarg2: JavaMap<string, Object>): T;
     static loadLibrary<T extends unknown>(paramarg0: Class<T>): T;
-    static loadLibrary<T extends unknown>(paramarg0: Class<T>, paramarg1: { [key: string]: Object }): T;
+    static loadLibrary<T extends unknown>(paramarg0: Class<T>, paramarg1: JavaMap<string, Object>): T;
     static loadLibrary<T extends unknown>(paramarg0: string, paramarg1: Class<T>): T;
-    static loadLibrary<T extends unknown>(paramarg0: string, paramarg1: Class<T>, paramarg2: { [key: string]: Object }): T;
+    static loadLibrary<T extends unknown>(paramarg0: string, paramarg1: Class<T>, paramarg2: JavaMap<string, Object>): T;
     static main(paramarg0: string[]): void;
     static malloc(paramarg0: number): number;
     static register(paramarg0: NativeLibrary): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Appendable } from '../../../java/lang/Appendable.d.ts'
 import type { StringBuffer } from '../../../java/lang/StringBuffer.d.ts'
 import type { StringBuilder } from '../../../java/lang/StringBuilder.d.ts'
@@ -24,7 +25,7 @@ export class Matcher extends Object implements MatchResult {
     // private localsPos: IntHashSet[];
     // private lookbehindTo: number;
     // private modCount: number;
-    // private namedGroups: { [key: string]: number };
+    // private namedGroups: JavaMap<string, number>;
     // private oldLast: number;
     // private parentPattern: Pattern;
     // private requireEnd: boolean;
@@ -61,7 +62,7 @@ export class Matcher extends Object implements MatchResult {
     matches(): boolean;
     // private maxEnd(): number;
     // private minStart(): number;
-    namedGroups(): { [key: string]: number };
+    namedGroups(): JavaMap<string, number>;
     pattern(): Pattern;
     region(arg0: number, arg1: number): Matcher;
     regionEnd(): number;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Block } from '../../../../com/seedfinding/mccore/block/Block.d.ts'
 import type { Identifier } from '../../../../com/seedfinding/mccore/util/data/Identifier.d.ts'
 import type { Pair } from '../../../../com/seedfinding/mccore/util/data/Pair.d.ts'
@@ -422,8 +423,8 @@ export class Blocks extends Object {
     static LAPIS_ORE: Block;
     static LARGE_AMETHYST_BUD: Block;
     static LARGE_FERN: Block;
-    static LATEST_ID_REGISTRY: Map<Identifier, Block>;
-    static LATEST_REGISTRY: { [key: number]: Block };
+    static LATEST_ID_REGISTRY: JavaMap<Identifier, Block>;
+    static LATEST_REGISTRY: JavaMap<number, Block>;
     static LAVA: Block;
     static LAVA_CAULDRON: Block;
     static LECTERN: Block;
@@ -825,8 +826,8 @@ export class Blocks extends Object {
     static TURTLE_EGG: Block;
     static TWISTING_VINES: Block;
     static TWISTING_VINES_PLANT: Block;
-    static VERSIONED_ID_REGISTRY: { [key: string]: any };
-    static VERSIONED_REGISTRY: { [key: string]: any };
+    static VERSIONED_ID_REGISTRY: JavaMap<any, any>;
+    static VERSIONED_REGISTRY: JavaMap<any, any>;
     static VINE: Block;
     static VOID_AIR: Block;
     static WALL_TORCH: Block;

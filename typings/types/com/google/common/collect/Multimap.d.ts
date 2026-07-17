@@ -1,8 +1,9 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { BiConsumer } from '../../../../java/util/function/BiConsumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export interface Multimap<K extends unknown, V extends unknown> extends Object {
-    asMap(): Map<K, V[]>;
+    asMap(): JavaMap<K, V[]>;
     clear(): void;
     containsEntry(key: Object, value: Object): boolean;
     containsKey(key: Object): boolean;

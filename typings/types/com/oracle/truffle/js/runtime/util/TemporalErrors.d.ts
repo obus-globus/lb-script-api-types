@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { TruffleString } from '../../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
 import type { JSException } from '../../../../../../com/oracle/truffle/js/runtime/JSException.d.ts'
@@ -29,7 +30,7 @@ export class TemporalErrors extends Object {
     static createRangeErrorTemporalMalformedDuration(): JSException;
     static createRangeErrorTimeOutsideRange(): JSException;
     static createRangeErrorTimeZoneOffsetExpected(): JSException;
-    static createRangeErrorUnitValueUndefinedOrNotAllowed(paramproperty: TruffleString, paramvalue: TruffleString, paramallowedUnits: Map<TruffleString, TemporalUtil$Unit>): JSException;
+    static createRangeErrorUnitValueUndefinedOrNotAllowed(paramproperty: TruffleString, paramvalue: TruffleString, paramallowedUnits: JavaMap<TruffleString, TemporalUtil$Unit>): JSException;
     static createRangeErrorYearMonthOutsideRange(): JSException;
     static createTypeErrorDurationOutsideRange(): JSException;
     static createTypeErrorFieldsNotAnObject(): JSException;

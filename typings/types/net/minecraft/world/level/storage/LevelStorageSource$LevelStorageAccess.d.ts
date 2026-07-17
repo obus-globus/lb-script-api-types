@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Dynamic } from '../../../../../com/mojang/serialization/Dynamic.d.ts'
 import type { AutoCloseable } from '../../../../../java/lang/AutoCloseable.d.ts'
 import type { Path } from '../../../../../java/nio/file/Path.d.ts'
@@ -22,7 +23,7 @@ export class LevelStorageSource$LevelStorageAccess extends Object implements Aut
     readonly levelDirectory: LevelStorageSource$LevelDirectory;
     readonly levelId: string;
     // private lock: DirectoryLock;
-    // private resources: Map<LevelResource, Path>;
+    // private resources: JavaMap<LevelResource, Path>;
     checkForLowDiskSpace(): boolean;
     // private checkLock(): void;
     close(): void;

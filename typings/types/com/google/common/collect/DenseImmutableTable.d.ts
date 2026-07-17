@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ImmutableTable } from '../../../../com/google/common/collect/ImmutableTable.d.ts'
 import type { ImmutableTable$Builder } from '../../../../com/google/common/collect/ImmutableTable$Builder.d.ts'
 import type { RegularImmutableTable } from '../../../../com/google/common/collect/RegularImmutableTable.d.ts'
@@ -18,17 +19,17 @@ export class DenseImmutableTable<R extends unknown, C extends unknown, V extends
     // private cellColumnIndices: number[];
     // private cellRowIndices: number[];
     // private columnCounts: number[];
-    // private columnKeyToIndex: Map<C, number>;
-    // private columnMap: Map<C, Map<R, V>>;
+    // private columnKeyToIndex: JavaMap<C, number>;
+    // private columnMap: JavaMap<C, JavaMap<R, V>>;
     // private rowCounts: number[];
-    // private rowKeyToIndex: Map<R, number>;
-    // private rowMap: Map<R, Map<C, V>>;
+    // private rowKeyToIndex: JavaMap<R, number>;
+    // private rowMap: JavaMap<R, JavaMap<C, V>>;
     // private values: V[][];
-    columnMap(): Map<C, Map<R, V>>;
+    columnMap(): JavaMap<C, JavaMap<R, V>>;
     get(rowKey: Object, columnKey: Object): V;
     getCell(index: number): Table$Cell<R, C, V>;
     getValue(index: number): V;
-    rowMap(): Map<R, Map<C, V>>;
+    rowMap(): JavaMap<R, JavaMap<C, V>>;
     size(): number;
     writeReplace(): Object;
 }

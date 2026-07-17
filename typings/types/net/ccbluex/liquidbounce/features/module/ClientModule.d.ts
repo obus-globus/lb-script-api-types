@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { GpuDevice } from '../../../../../com/mojang/blaze3d/systems/GpuDevice.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Continuation } from '../../../../../kotlin/coroutines/Continuation.d.ts'
@@ -57,7 +58,7 @@ export class ClientModule extends ToggleableValueGroup implements EventListener,
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt#L115 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt:115}
      */
-    readonly settings: { [key: string]: Value<Object> };
+    readonly settings: JavaMap<string, Value<Object>>;
     readonly tag: string | null;
     readonly tagValue: Value<Object> | null;
     readonly world: ClientLevel;

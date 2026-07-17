@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { ClassLoader } from '../../../../../../../java/lang/ClassLoader.d.ts'
 import type { Module } from '../../../../../../../java/lang/Module.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
@@ -72,8 +73,8 @@ export class ICUResourceBundleImpl$ResourceTable extends ICUResourceBundleImpl$R
     getKey(): string;
     getKey(index: number): string;
     getType(): number;
-    handleGet(index: number, aliasesVisited: { [key: string]: string }, requested: UResourceBundle): UResourceBundle;
-    handleGet(resKey: string, aliasesVisited: { [key: string]: string }, requested: UResourceBundle): UResourceBundle;
+    handleGet(index: number, aliasesVisited: JavaMap<string, string>, requested: UResourceBundle): UResourceBundle;
+    handleGet(resKey: string, aliasesVisited: JavaMap<string, string>, requested: UResourceBundle): UResourceBundle;
     handleGetObject(key: string): Object;
     handleKeySet(): string[];
 }

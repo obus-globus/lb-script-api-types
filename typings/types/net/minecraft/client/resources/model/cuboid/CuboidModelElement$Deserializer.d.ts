@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { JsonDeserializationContext } from '../../../../../../com/google/gson/JsonDeserializationContext.d.ts'
 import type { JsonDeserializer } from '../../../../../../com/google/gson/JsonDeserializer.d.ts'
 import type { JsonElement } from '../../../../../../com/google/gson/JsonElement.d.ts'
@@ -12,9 +13,9 @@ import type { Direction$Axis } from '../../../../../../net/minecraft/core/Direct
 export class CuboidModelElement$Deserializer extends Object implements JsonDeserializer<CuboidModelElement> {
     constructor()
     deserialize(json: JsonElement, typeOfT: Type, context: JsonDeserializationContext): CuboidModelElement;
-    // private filterNullFromFaces(context: JsonDeserializationContext, object: JsonObject): Map<Direction, CuboidFace>;
+    // private filterNullFromFaces(context: JsonDeserializationContext, object: JsonObject): JavaMap<Direction, CuboidFace>;
     // private getAxis(object: JsonObject): Direction$Axis;
-    // private getFaces(context: JsonDeserializationContext, object: JsonObject): Map<Direction, CuboidFace>;
+    // private getFaces(context: JsonDeserializationContext, object: JsonObject): JavaMap<Direction, CuboidFace>;
     // private getFacing(name: string): Direction;
     // private getRotation(object: JsonObject): CuboidRotation;
 }

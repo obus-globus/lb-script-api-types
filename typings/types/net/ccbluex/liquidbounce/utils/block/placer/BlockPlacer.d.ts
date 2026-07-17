@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ModeValueGroup } from '../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { ValueGroup } from '../../../../../../net/ccbluex/liquidbounce/config/types/group/ValueGroup.d.ts'
@@ -32,8 +33,8 @@ export class BlockPlacer extends ValueGroup implements EventListener {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt#L143 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt:143}
      */
-    readonly blocks: { [key: string]: any };
-    getBlocks(): { [key: string]: any };
+    readonly blocks: JavaMap<any, any>;
+    getBlocks(): JavaMap<any, any>;
     /**
      * Construct a center hit result when the raytrace result is invalid.
      * This can make the module rotations wrong as well as place a bit outside the range,

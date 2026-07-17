@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { AbstractNetwork } from '../../../../com/google/common/graph/AbstractNetwork.d.ts'
 import type { ElementOrder } from '../../../../com/google/common/graph/ElementOrder.d.ts'
 import type { MapIteratorCache } from '../../../../com/google/common/graph/MapIteratorCache.d.ts'
@@ -6,7 +7,7 @@ import type { NetworkConnections } from '../../../../com/google/common/graph/Net
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class StandardNetwork<N extends unknown, E extends unknown> extends AbstractNetwork<N, E> {
     constructor(builder: NetworkBuilder<N, E>)
-    constructor(builder: NetworkBuilder<N, E>, nodeConnections: Map<N, NetworkConnections<N, E>>, edgeToReferenceNode: Map<E, N>)
+    constructor(builder: NetworkBuilder<N, E>, nodeConnections: JavaMap<N, NetworkConnections<N, E>>, edgeToReferenceNode: JavaMap<E, N>)
     // private allowsParallelEdges: boolean;
     // private allowsSelfLoops: boolean;
     // private edgeOrder: ElementOrder<E>;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { EnvironmentAttribute } from '../../../../net/minecraft/world/attribute/EnvironmentAttribute.d.ts'
@@ -11,7 +12,7 @@ export class EnvironmentAttributeProbe extends Object {
     // private level: Level;
     // private position: Vec3;
     // private valueProbeFactory: (param0: EnvironmentAttribute<Object>) => EnvironmentAttributeProbe$ValueProbe<Object>;
-    // private valueProbes: Map<EnvironmentAttribute<Object>, EnvironmentAttributeProbe$ValueProbe<Object>>;
+    // private valueProbes: JavaMap<EnvironmentAttribute<Object>, EnvironmentAttributeProbe$ValueProbe<Object>>;
     getValue<Value extends unknown>(attribute: EnvironmentAttribute<Value>, partialTicks: number): Value;
     reset(): void;
     tick(level: Level, position: Vec3): void;

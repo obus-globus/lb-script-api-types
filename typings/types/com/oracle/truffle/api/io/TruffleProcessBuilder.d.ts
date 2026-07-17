@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { TruffleFile } from '../../../../../com/oracle/truffle/api/TruffleFile.d.ts'
 import type { OutputStream } from '../../../../../java/io/OutputStream.d.ts'
 import type { Process } from '../../../../../java/lang/Process.d.ts'
@@ -11,7 +12,7 @@ export class TruffleProcessBuilder extends Object {
     // private clearEnvironment: boolean;
     // private cmd: string[];
     // private cwd: TruffleFile;
-    // private env: { [key: string]: string };
+    // private env: JavaMap<string, string>;
     // private errorRedirect: ProcessHandler$Redirect;
     // private fileSystem: FileSystem;
     // private inheritIO: boolean;
@@ -25,7 +26,7 @@ export class TruffleProcessBuilder extends Object {
     createRedirectToStream(stream: OutputStream): ProcessHandler$Redirect;
     directory(currentWorkingDirectory: TruffleFile): TruffleProcessBuilder;
     environment(name: string, value: string): TruffleProcessBuilder;
-    environment(environment: { [key: string]: string }): TruffleProcessBuilder;
+    environment(environment: JavaMap<string, string>): TruffleProcessBuilder;
     inheritIO(enabled: boolean): TruffleProcessBuilder;
     redirectError(destination: ProcessHandler$Redirect): TruffleProcessBuilder;
     redirectErrorStream(enabled: boolean): TruffleProcessBuilder;

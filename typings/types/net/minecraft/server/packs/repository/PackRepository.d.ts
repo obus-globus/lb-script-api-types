@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Stream } from '../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -8,11 +9,11 @@ import type { FeatureFlagSet } from '../../../../../net/minecraft/world/flag/Fea
 export class PackRepository extends Object {
     static displayPackList(parampacks: Pack[]): string;
     constructor(sources: (param0: (param0: Pack) => void) => void[])
-    // private available: { [key: string]: Pack };
+    // private available: JavaMap<string, Pack>;
     readonly selected: Pack[];
     sources: (param0: (param0: Pack) => void) => void[];
     addPack(packId: string): boolean;
-    // private discoverAvailable(): { [key: string]: Pack };
+    // private discoverAvailable(): JavaMap<string, Pack>;
     getAvailableIds(): string[];
     getAvailablePacks(): Pack[];
     // private getAvailablePacks(ids: string[]): Stream<Pack>;

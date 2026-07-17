@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { GuardedSerializer } from '../../../../com/mojang/realmsclient/dto/GuardedSerializer.d.ts'
 import type { PlayerInfo } from '../../../../com/mojang/realmsclient/dto/PlayerInfo.d.ts'
 import type { RealmsServer$Compatibility } from '../../../../com/mojang/realmsclient/dto/RealmsServer$Compatibility.d.ts'
@@ -38,10 +39,10 @@ export class RealmsServer extends ValueObject implements ReflectionBasedSerializ
     regionSelectionPreference: RegionSelectionPreferenceDto;
     remoteSubscriptionId: string;
     // private slotList: RealmsSlot[];
-    slots: { [key: number]: RealmsSlot };
+    slots: JavaMap<number, RealmsSlot>;
     state: RealmsServer$State;
     worldType: RealmsServer$WorldType;
-    cloneSlots(slots: { [key: number]: RealmsSlot }): { [key: number]: RealmsSlot };
+    cloneSlots(slots: JavaMap<number, RealmsSlot>): JavaMap<number, RealmsSlot>;
     copy(): RealmsServer;
     equals(obj: Object | null): boolean;
     getDescription(): string;

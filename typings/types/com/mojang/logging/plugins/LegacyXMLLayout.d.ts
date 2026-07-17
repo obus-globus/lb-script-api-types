@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Charset } from '../../../../java/nio/charset/Charset.d.ts'
 import type { LogEvent } from '../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
 import type { AbstractStringLayout } from '../../../../org/apache/logging/log4j/core/layout/AbstractStringLayout.d.ts'
@@ -13,7 +14,7 @@ export class LegacyXMLLayout extends AbstractStringLayout {
     // private locationInfo: boolean;
     // private namespacePrefix: string;
     // private properties: boolean;
-    getContentFormat(): { [key: string]: string };
+    getContentFormat(): JavaMap<string, string>;
     getContentType(): string;
     getFooter(): number[];
     getHeader(): number[];

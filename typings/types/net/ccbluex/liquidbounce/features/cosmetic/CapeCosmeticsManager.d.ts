@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { GameProfile } from '../../../../../com/mojang/authlib/GameProfile.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -15,7 +16,7 @@ import type { Logger } from '../../../../../org/apache/logging/log4j/Logger.d.ts
  */
 export class CapeCosmeticsManager extends Object implements EventListener {
     static INSTANCE: CapeCosmeticsManager;
-    // private cachedCapes: { [key: string]: Identifier };
+    // private cachedCapes: JavaMap<string, Identifier>;
     readonly debugDisplayName: Component;
     // private disconnectHandler: EventHook<DisconnectEvent>;
     // private logger: Logger;

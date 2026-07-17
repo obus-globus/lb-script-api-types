@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { BiConsumer } from '../../../../java/util/function/BiConsumer.d.ts'
 import type { Language } from '../../../../net/minecraft/locale/Language.d.ts'
@@ -11,8 +12,8 @@ export class ClientLanguage extends Language {
     static getInstance(): Language;
     static inject(paramlanguage: Language): void;
     static loadFromJson(paramstream: InputStream, paramoutput: (param0: string, param1: string) => void): void;
-    constructor(translations: { [key: string]: string })
-    // private translations: { [key: string]: string };
+    constructor(translations: JavaMap<string, string>)
+    // private translations: JavaMap<string, string>;
     /**
      * Get a translation for the given key.
      * If the translation is not found, the fallback will be used.

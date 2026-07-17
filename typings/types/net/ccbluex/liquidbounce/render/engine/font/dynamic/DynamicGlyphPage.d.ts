@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Dimension } from '../../../../../../../java/awt/Dimension.d.ts'
 import type { BufferedImage } from '../../../../../../../java/awt/image/BufferedImage.d.ts'
 import type { Pair } from '../../../../../../../kotlin/Pair.d.ts'
@@ -16,7 +17,7 @@ export class DynamicGlyphPage extends GlyphPage {
     // private allocator: DynamicAtlasAllocator;
     readonly atlasSize: Dimension;
     // private copyScratchBuffer: number[];
-    // private glyphMap: Map<GlyphIdentifier, Pair<GlyphRenderInfo, AtlasSliceHandle>>;
+    // private glyphMap: JavaMap<GlyphIdentifier, Pair<GlyphRenderInfo, AtlasSliceHandle>>;
     // private image: BufferedImage;
     readonly texture: DynamicTexture;
     free(glyphIdentifier: GlyphIdentifier): GlyphRenderInfo | null;

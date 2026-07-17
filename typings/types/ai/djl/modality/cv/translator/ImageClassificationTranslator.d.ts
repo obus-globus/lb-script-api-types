@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Classifications } from '../../../../../ai/djl/modality/Classifications.d.ts'
 import type { BaseImageTranslator } from '../../../../../ai/djl/modality/cv/translator/BaseImageTranslator.d.ts'
 import type { BaseImageTranslator$SynsetLoader } from '../../../../../ai/djl/modality/cv/translator/BaseImageTranslator$SynsetLoader.d.ts'
@@ -7,7 +8,7 @@ import type { TranslatorOptions } from '../../../../../ai/djl/translate/Translat
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ImageClassificationTranslator extends BaseImageTranslator<Classifications> {
     static builder(): ImageClassificationTranslator$Builder;
-    static builder(paramarg0: { [key: string]: Object }): ImageClassificationTranslator$Builder;
+    static builder(paramarg0: JavaMap<string, Object>): ImageClassificationTranslator$Builder;
     constructor(arg0: ImageClassificationTranslator$Builder)
     // private applySoftmax: boolean;
     // private classes: string[];

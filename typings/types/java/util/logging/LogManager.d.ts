@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { InputStream } from '../../../java/io/InputStream.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { Module } from '../../../java/lang/Module.d.ts'
@@ -27,9 +28,9 @@ export class LogManager extends Object {
     // private globalHandlersState: number;
     // private initializationDone: boolean;
     // private initializedCalled: boolean;
-    // private listeners: Map<Object, () => void>;
+    // private listeners: JavaMap<Object, () => void>;
     // private loggerRefQueue: ReferenceQueue<Logger>;
-    // private props: { [key: string]: any };
+    // private props: JavaMap<any, any>;
     // private readPrimordialConfiguration: boolean;
     // private rootLogger: Logger;
     // private systemContext: LogManager$LoggerContext;

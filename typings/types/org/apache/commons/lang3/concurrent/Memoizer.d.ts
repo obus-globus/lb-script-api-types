@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { RuntimeException } from '../../../../../java/lang/RuntimeException.d.ts'
 import type { Future } from '../../../../../java/util/concurrent/Future.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
@@ -9,7 +10,7 @@ export class Memoizer<I extends unknown, O extends unknown> extends Object imple
     constructor(arg0: (param0: I) => O, arg1: boolean)
     constructor(arg0: (param0: I) => O)
     constructor(arg0: (param0: I) => O, arg1: boolean)
-    // private cache: Map<I, Future<O>>;
+    // private cache: JavaMap<I, Future<O>>;
     // private mappingFunction: (param0: I) => Future<O>;
     // private recalculate: boolean;
     compute(arg0: I): O;

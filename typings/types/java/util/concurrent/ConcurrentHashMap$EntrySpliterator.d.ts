@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Comparator } from '../../../java/util/Comparator.d.ts'
 import type { Spliterator } from '../../../java/util/Spliterator.d.ts'
 import type { ConcurrentHashMap$Node } from '../../../java/util/concurrent/ConcurrentHashMap$Node.d.ts'
@@ -14,9 +15,9 @@ export class ConcurrentHashMap$EntrySpliterator<K extends unknown, V extends unk
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(arg0: ConcurrentHashMap$Node<K, V>[], arg1: number, arg2: number, arg3: number, arg4: number, arg5: Map<K, V>)
+    constructor(arg0: ConcurrentHashMap$Node<K, V>[], arg1: number, arg2: number, arg3: number, arg4: number, arg5: JavaMap<K, V>)
     // private est: number;
-    // private map: Map<K, V>;
+    // private map: JavaMap<K, V>;
     characteristics(): number;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: Map$Entry<K, V>) => void): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { RBBINode } from '../../../../com/ibm/icu/text/RBBINode.d.ts'
 import type { RBBIRuleScanner } from '../../../../com/ibm/icu/text/RBBIRuleScanner.d.ts'
 import type { RBBISetBuilder } from '../../../../com/ibm/icu/text/RBBISetBuilder.d.ts'
@@ -16,7 +17,7 @@ export class RBBIRuleBuilder extends Object {
     // private fRules: string;
     // private fScanner: RBBIRuleScanner;
     // private fSetBuilder: RBBISetBuilder;
-    // private fStatusSets: Map<number[], number>;
+    // private fStatusSets: JavaMap<number[], number>;
     // private fStrippedRules: StringBuilder;
     // private fTreeRoots: RBBINode[];
     // private fUSetNodes: RBBINode[];

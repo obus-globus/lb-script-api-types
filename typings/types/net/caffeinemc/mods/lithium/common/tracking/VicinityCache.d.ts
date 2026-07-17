@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { SectionedBlockChangeTracker } from '../../../../../../net/caffeinemc/mods/lithium/common/tracking/block/SectionedBlockChangeTracker.d.ts'
 import type { TagKey } from '../../../../../../net/minecraft/tags/TagKey.d.ts'
@@ -10,7 +11,7 @@ export class VicinityCache extends Object {
     readonly cachedIsSuffocating: number;
     readonly cachedSupportingBlock: BlockState;
     readonly cachedTouchingFireLava: number;
-    // private fluidType2FluidHeightMap: { [key: string]: any };
+    // private fluidType2FluidHeightMap: JavaMap<any, any>;
     // private initDelay: number;
     // private trackedPos: AABB;
     // private tracker: SectionedBlockChangeTracker;

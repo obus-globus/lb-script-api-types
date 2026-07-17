@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { UserApiService } from '../../../../../../com/mojang/authlib/minecraft/UserApiService.d.ts'
 import type { FriendsService } from '../../../../../../com/mojang/authlib/yggdrasil/FriendsService.d.ts'
 import type { FriendsService$ResultCode } from '../../../../../../com/mojang/authlib/yggdrasil/FriendsService$ResultCode.d.ts'
@@ -15,7 +16,7 @@ import type { PlayerInfo } from '../../../../../../net/minecraft/client/multipla
 export class PlayerSocialManager extends Object {
     constructor(minecraft: Minecraft, service: UserApiService, friendsService: FriendsService, remoteFriendListUpdateHandler: RemoteFriendListUpdateHandler)
     readonly allowFriendRequests: boolean;
-    // private discoveredNamesToUUID: { [key: string]: UUID };
+    // private discoveredNamesToUUID: JavaMap<string, UUID>;
     readonly friendListEnabled: boolean;
     // private friendsService: FriendsService;
     readonly hiddenPlayers: UUID[];

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { FlowContext } from '../../../../../../com/llamalad7/mixinextras/expression/impl/flow/FlowContext.d.ts'
 import type { Pair } from '../../../../../../com/llamalad7/mixinextras/lib/apache/commons/tuple/Pair.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -6,7 +7,7 @@ import type { AbstractInsnNode } from '../../../../../../org/objectweb/asm/tree/
 import type { Value } from '../../../../../../org/objectweb/asm/tree/analysis/Value.d.ts'
 export class FlowValue extends Object implements Value {
     constructor(arg0: Type, arg1: AbstractInsnNode, ...arg2: FlowValue[])
-    readonly decorations: { [key: string]: Object };
+    readonly decorations: JavaMap<string, Object>;
     readonly insn: AbstractInsnNode;
     readonly next: Pair<FlowValue, number>[];
     // private nextIsReady: boolean;
@@ -16,7 +17,7 @@ export class FlowValue extends Object implements Value {
     decorate<V extends unknown>(arg0: string, arg1: V): void;
     finish(): void;
     getDecoration<V extends unknown>(arg0: string): V;
-    getDecorations(): { [key: string]: Object };
+    getDecorations(): JavaMap<string, Object>;
     getInput(arg0: number): FlowValue;
     getInsn(): AbstractInsnNode;
     getNext(): Pair<FlowValue, number>[];

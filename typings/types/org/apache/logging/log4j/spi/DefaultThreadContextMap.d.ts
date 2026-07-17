@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ThreadLocal } from '../../../../../java/lang/ThreadLocal.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ThreadContextMap } from '../../../../../org/apache/logging/log4j/spi/ThreadContextMap.d.ts'
@@ -17,16 +18,16 @@ export class DefaultThreadContextMap extends Object implements ThreadContextMap,
     forEach<V extends unknown>(action: (param0: string, param1: V) => void): void;
     forEach<V extends unknown, S extends unknown>(action: TriConsumer<string, V, S>, state: S): void;
     get(key: string): string;
-    getCopy(): { [key: string]: string };
-    getImmutableMapOrNull(): { [key: string]: string };
+    getCopy(): JavaMap<string, string>;
+    getImmutableMapOrNull(): JavaMap<string, string>;
     getValue<V extends unknown>(key: string): V;
     hashCode(): number;
     isEmpty(): boolean;
     put(key: string, value: string): void;
-    putAll(m: { [key: string]: string }): void;
+    putAll(m: JavaMap<string, string>): void;
     remove(key: string): void;
     removeAll(keys: string[]): void;
     size(): number;
-    toMap(): { [key: string]: string };
+    toMap(): JavaMap<string, string>;
     toString(): string;
 }

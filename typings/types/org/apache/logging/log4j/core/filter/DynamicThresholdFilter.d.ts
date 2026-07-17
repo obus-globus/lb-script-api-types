@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { TimeUnit } from '../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../../java/lang/Throwable.d.ts'
@@ -17,11 +18,11 @@ export class DynamicThresholdFilter extends AbstractFilter {
     static ELEMENT_TYPE: string;
     static EMPTY_ARRAY: Filter[];
     static createFilter(paramkey: string, parampairs: KeyValuePair[], paramdefaultThreshold: Level, paramonMatch: Filter$Result, paramonMismatch: Filter$Result): DynamicThresholdFilter;
-    private constructor(key: string, pairs: { [key: string]: Level }, defaultLevel: Level, onMatch: Filter$Result, onMismatch: Filter$Result)
+    private constructor(key: string, pairs: JavaMap<string, Level>, defaultLevel: Level, onMatch: Filter$Result, onMismatch: Filter$Result)
     // private defaultThreshold: Level;
     // private injector: ContextDataInjector;
     readonly key: string;
-    readonly levelMap: { [key: string]: Level };
+    readonly levelMap: JavaMap<string, Level>;
     equals(obj: Object | null): boolean;
     // private filter(level: Level, value: Object): Filter$Result;
     filter(event: LogEvent): Filter$Result;
@@ -40,7 +41,7 @@ export class DynamicThresholdFilter extends AbstractFilter {
     filter(logger: Logger, level: Level, marker: Marker, msg: string, ...params: Object[]): Filter$Result;
     filter(logger: Logger, level: Level, marker: Marker, msg: Message, t: Throwable): Filter$Result;
     getKey(): string;
-    getLevelMap(): { [key: string]: Level };
+    getLevelMap(): JavaMap<string, Level>;
     hashCode(): number;
     toString(): string;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { KmAnnotation } from '../../../../../../kotlin/reflect/jvm/internal/impl/km/KmAnnotation.d.ts'
 import type { KmType } from '../../../../../../kotlin/reflect/jvm/internal/impl/km/KmType.d.ts'
@@ -7,7 +8,7 @@ import type { KmTypeAliasExtension } from '../../../../../../kotlin/reflect/jvm/
 export class KmTypeAlias extends Object {
     constructor(arg0: number, arg1: string)
     readonly annotations: KmAnnotation[];
-    readonly compilerPluginMetadata: { [key: string]: number[] };
+    readonly compilerPluginMetadata: JavaMap<string, number[]>;
     expandedType: KmType;
     // private extensions: KmTypeAliasExtension[];
     // private flags: number;
@@ -16,7 +17,7 @@ export class KmTypeAlias extends Object {
     underlyingType: KmType;
     readonly versionRequirements: KmVersionRequirement[];
     getAnnotations(): KmAnnotation[];
-    getCompilerPluginMetadata(): { [key: string]: number[] };
+    getCompilerPluginMetadata(): JavaMap<string, number[]>;
     getFlags$org_jetbrains_kotlin_kotlin_metadata(): number;
     getTypeParameters(): KmTypeParameter[];
     getVersionRequirements(): KmVersionRequirement[];

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { TruffleInstrument } from '../../../../com/oracle/truffle/api/instrumentation/TruffleInstrument.d.ts'
 import type { TruffleInstrumentProvider } from '../../../../com/oracle/truffle/api/instrumentation/provider/TruffleInstrumentProvider.d.ts'
 import type { InternalResourceCache } from '../../../../com/oracle/truffle/polyglot/InternalResourceCache.d.ts'
@@ -5,11 +6,11 @@ import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { SandboxPolicy } from '../../../../org/graalvm/polyglot/SandboxPolicy.d.ts'
 export class InstrumentCache extends Object {
-    private constructor(id: string, name: string, version: string, className: string, internal: boolean, services: string[], provider: TruffleInstrumentProvider, website: string, sandboxPolicy: SandboxPolicy, internalResources: { [key: string]: InternalResourceCache })
+    private constructor(id: string, name: string, version: string, className: string, internal: boolean, services: string[], provider: TruffleInstrumentProvider, website: string, sandboxPolicy: SandboxPolicy, internalResources: JavaMap<string, InternalResourceCache>)
     // private className: string;
     // private id: string;
     // private internal: boolean;
-    // private internalResources: { [key: string]: InternalResourceCache };
+    // private internalResources: JavaMap<string, InternalResourceCache>;
     // private name: string;
     // private provider: TruffleInstrumentProvider;
     // private sandboxPolicy: SandboxPolicy;

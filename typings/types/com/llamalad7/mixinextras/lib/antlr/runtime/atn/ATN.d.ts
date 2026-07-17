@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { RuleContext } from '../../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/RuleContext.d.ts'
 import type { ATNState } from '../../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/atn/ATNState.d.ts'
 import type { ATNType } from '../../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/atn/ATNType.d.ts'
@@ -14,7 +15,7 @@ export class ATN extends Object {
     grammarType: ATNType;
     lexerActions: LexerAction[];
     maxTokenType: number;
-    modeNameToStartState: { [key: string]: TokensStartState };
+    modeNameToStartState: JavaMap<string, TokensStartState>;
     modeToStartState: TokensStartState[];
     ruleToStartState: RuleStartState[];
     ruleToStopState: RuleStopState[];

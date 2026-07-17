@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { AutoCloseable } from '../../../java/lang/AutoCloseable.d.ts'
 import type { CompletableFuture } from '../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
@@ -8,7 +9,7 @@ export class CefDevToolsClient extends Object implements AutoCloseable {
     constructor(arg0: CefBrowser_N)
     // private browser_: CefBrowser_N;
     // private eventListeners_: CefDevToolsClient$EventListener[];
-    // private queuedCommands_: { [key: number]: CompletableFuture<string> };
+    // private queuedCommands_: JavaMap<number, CompletableFuture<string>>;
     // private registration_: CefRegistration;
     addEventListener(arg0: CefDevToolsClient$EventListener): void;
     close(): void;

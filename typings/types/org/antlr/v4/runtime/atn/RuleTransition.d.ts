@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { ATNState } from '../../../../../org/antlr/v4/runtime/atn/ATNState.d.ts'
 import type { RuleStartState } from '../../../../../org/antlr/v4/runtime/atn/RuleStartState.d.ts'
@@ -14,7 +15,7 @@ export class RuleTransition extends Transition {
     static SET: number;
     static WILDCARD: number;
     static serializationNames: string[];
-    static serializationTypes: Map<Class<Transition>, number>;
+    static serializationTypes: JavaMap<Class<Transition>, number>;
     constructor(arg0: RuleStartState, arg1: number, arg2: number, arg3: ATNState)
     constructor(arg0: RuleStartState, arg1: number, arg2: ATNState)
     followState: ATNState;

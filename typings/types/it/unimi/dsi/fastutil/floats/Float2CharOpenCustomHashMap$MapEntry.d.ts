@@ -1,10 +1,11 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Float2CharMap$Entry } from '../../../../../it/unimi/dsi/fastutil/floats/Float2CharMap$Entry.d.ts'
 import type { FloatCharPair } from '../../../../../it/unimi/dsi/fastutil/floats/FloatCharPair.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class Float2CharOpenCustomHashMap$MapEntry extends Object implements Float2CharMap$Entry, FloatCharPair, Map$Entry<number, string> {
-    constructor(null_: { [key: string]: any })
-    constructor(null_: { [key: string]: any }, arg1: number)
+    constructor(null_: JavaMap<any, any>)
+    constructor(null_: JavaMap<any, any>, arg1: number)
     // private index: number;
     getKey(): number;
     getValue(): string;

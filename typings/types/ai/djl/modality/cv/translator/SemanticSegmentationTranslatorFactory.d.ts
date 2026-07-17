@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Model } from '../../../../../ai/djl/Model.d.ts'
 import type { Image } from '../../../../../ai/djl/modality/cv/Image.d.ts'
 import type { CategoryMask } from '../../../../../ai/djl/modality/cv/output/CategoryMask.d.ts'
@@ -8,6 +9,6 @@ import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class SemanticSegmentationTranslatorFactory extends BaseImageTranslatorFactory<CategoryMask> implements Serializable {
     constructor()
-    buildBaseTranslator(arg0: Model, arg1: { [key: string]: Object | null }): Translator<Image, CategoryMask>;
+    buildBaseTranslator(arg0: Model, arg1: JavaMap<string, Object | null>): Translator<Image, CategoryMask>;
     getBaseOutputType(): Class<CategoryMask>;
 }

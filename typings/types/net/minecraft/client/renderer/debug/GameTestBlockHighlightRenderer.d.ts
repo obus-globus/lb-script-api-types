@@ -1,10 +1,11 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { IGameTestBlockHighlightRenderer } from '../../../../../com/viaversion/viafabricplus/injection/access/networking/packet_handling/IGameTestBlockHighlightRenderer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { GameTestBlockHighlightRenderer$Marker } from '../../../../../net/minecraft/client/renderer/debug/GameTestBlockHighlightRenderer$Marker.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 export class GameTestBlockHighlightRenderer extends Object implements IGameTestBlockHighlightRenderer {
     constructor()
-    // private markers: Map<BlockPos, GameTestBlockHighlightRenderer$Marker>;
+    // private markers: JavaMap<BlockPos, GameTestBlockHighlightRenderer$Marker>;
     clear(): void;
     emitGizmos(): void;
     highlightPos(absolutePos: BlockPos, relativePos: BlockPos): void;

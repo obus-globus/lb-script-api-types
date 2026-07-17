@@ -1,10 +1,11 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { LongPredicate } from '../../../../../java/util/function/LongPredicate.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { LeveledPriorityQueue } from '../../../../../net/minecraft/world/level/lighting/LeveledPriorityQueue.d.ts'
 export abstract class DynamicGraphMinFixedPoint extends Object {
     static SOURCE: number;
     constructor(levelCount: number, minQueueSize: number, minMapSize: number)
-    // private computedLevels: { [key: string]: any };
+    // private computedLevels: JavaMap<any, any>;
     // private hasWork: boolean;
     // private levelCount: number;
     // private priorityQueue: LeveledPriorityQueue;

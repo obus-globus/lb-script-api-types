@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Handle } from '../../../../org/objectweb/asm/Handle.d.ts'
 import type { MethodVisitor } from '../../../../org/objectweb/asm/MethodVisitor.d.ts'
@@ -26,6 +27,6 @@ export class InvokeDynamicInsnNode extends AbstractInsnNode {
     desc: string;
     name: string;
     accept(arg0: MethodVisitor): void;
-    clone(arg0: Map<LabelNode, LabelNode>): AbstractInsnNode;
+    clone(arg0: JavaMap<LabelNode, LabelNode>): AbstractInsnNode;
     getType(): number;
 }

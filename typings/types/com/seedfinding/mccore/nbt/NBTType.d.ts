@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { NBTTag } from '../../../../com/seedfinding/mccore/nbt/tag/NBTTag.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
@@ -14,7 +15,7 @@ export class NBTType extends Object {
     static LIST: number;
     static LONG: number;
     static LONG_ARRAY: number;
-    static REGISTRY: { [key: number]: () => NBTTag<Object> };
+    static REGISTRY: JavaMap<number, () => NBTTag<Object>>;
     static SHORT: number;
     static STRING: number;
     static createEmpty(paramarg0: number): NBTTag<Object>;

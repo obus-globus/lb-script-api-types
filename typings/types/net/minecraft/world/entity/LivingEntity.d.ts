@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { UUID } from '../../../../java/util/UUID.d.ts'
 import type { BiConsumer } from '../../../../java/util/function/BiConsumer.d.ts'
@@ -165,8 +166,8 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     static setViewScale(paramviewScale: number): void;
     constructor(type: EntityType<LivingEntity>, level: Level)
     readonly absorptionAmount: number;
-    readonly activeEffects: Map<Holder<MobEffect>, MobEffectInstance>;
-    // private activeLocationDependentEnchantments: Map<EquipmentSlot, Map<Enchantment, EnchantmentLocationBasedEffect[]>>;
+    readonly activeEffects: JavaMap<Holder<MobEffect>, MobEffectInstance>;
+    // private activeLocationDependentEnchantments: JavaMap<EquipmentSlot, JavaMap<Enchantment, EnchantmentLocationBasedEffect[]>>;
     attackAnim: number;
     attackStrengthTicker: number;
     readonly attributes: AttributeMap;
@@ -193,7 +194,7 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     readonly lastClimbablePos: Optional<BlockPos>;
     readonly lastDamageSource: DamageSource;
     // private lastDamageStamp: number;
-    // private lastEquipmentItems: Map<EquipmentSlot, ItemStack>;
+    // private lastEquipmentItems: JavaMap<EquipmentSlot, ItemStack>;
     // private lastHurt: number;
     readonly lastHurtByMob: EntityReference<LivingEntity>;
     readonly lastHurtByMobTimestamp: number;
@@ -211,7 +212,7 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     oAttackAnim: number;
     // private previousElytra: boolean;
     // private previousIsGliding: boolean;
-    // private recentKineticEnemies: { [key: string]: any };
+    // private recentKineticEnemies: JavaMap<any, any>;
     removeArrowTime: number;
     removeStingerTime: number;
     // private skipDropExperience: boolean;
@@ -232,7 +233,7 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     yHeadRotO: number;
     yya: number;
     zza: number;
-    activeLocationDependentEnchantments(slot: EquipmentSlot): Map<Enchantment, EnchantmentLocationBasedEffect[]>;
+    activeLocationDependentEnchantments(slot: EquipmentSlot): JavaMap<Enchantment, EnchantmentLocationBasedEffect[]>;
     actuallyHurt(level: ServerLevel, source: DamageSource, dmg: number): void;
     addAdditionalSaveData(output: ValueOutput): void;
     addEffect(newEffect: MobEffectInstance): boolean;
@@ -274,7 +275,7 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     checkFallDamage(ya: number, onGround: boolean, onState: BlockState, pos: BlockPos): void;
     // private checkTotemDeathProtection(killingDamage: DamageSource): boolean;
     clearSleepingPos(): void;
-    collectEquipmentChanges(lastEquipmentItems: Map<EquipmentSlot, ItemStack>): Map<EquipmentSlot, ItemStack>;
+    collectEquipmentChanges(lastEquipmentItems: JavaMap<EquipmentSlot, ItemStack>): JavaMap<EquipmentSlot, ItemStack>;
     completeUsingItem(): void;
     createDamageSource(): DamageSource;
     createEquipment(): EntityEquipment;
@@ -308,7 +309,7 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     forceAddEffect(newEffect: MobEffectInstance, source: Entity): void;
     getAbsorptionAmount(): number;
     getActiveEffects(): MobEffectInstance[];
-    getActiveEffectsMap(): Map<Holder<MobEffect>, MobEffectInstance>;
+    getActiveEffectsMap(): JavaMap<Holder<MobEffect>, MobEffectInstance>;
     getActiveItem(): ItemStack;
     getAgeScale(): number;
     getAirDrag(): number;
@@ -413,10 +414,10 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     goDownInWater(): void;
     handleDamageEvent(source: DamageSource): void;
     handleEntityEvent(id: number): void;
-    // private handleEquipmentChanges(changedItems: Map<EquipmentSlot, ItemStack>): void;
+    // private handleEquipmentChanges(changedItems: JavaMap<EquipmentSlot, ItemStack>): void;
     handleExtraItemsCreatedOnUse(extraCreatedRemainder: ItemStack): void;
     // private handleFallFlyingCollisions(moveHorLength: number, newMoveHorLength: number): void;
-    // private handleHandSwap(changedItems: Map<EquipmentSlot, ItemStack>): void;
+    // private handleHandSwap(changedItems: JavaMap<EquipmentSlot, ItemStack>): void;
     handleKillingBlow(): void;
     // private handleOnClimbable(delta: Vec3): Vec3;
     // private handleRelativeFrictionAndCalculateMovement(input: Vec3, friction: number): Vec3;

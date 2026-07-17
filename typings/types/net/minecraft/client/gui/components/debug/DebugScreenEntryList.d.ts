@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { DataFixer } from '../../../../../../com/mojang/datafixers/DataFixer.d.ts'
 import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { File } from '../../../../../../java/io/File.d.ts'
@@ -8,7 +9,7 @@ import type { DebugScreenProfile } from '../../../../../../net/minecraft/client/
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
 export class DebugScreenEntryList extends Object {
     constructor(workingDirectory: File, dataFixer: DataFixer)
-    // private allStatuses: Map<Identifier, DebugScreenEntryStatus>;
+    // private allStatuses: JavaMap<Identifier, DebugScreenEntryStatus>;
     // private codec: Codec<DebugScreenEntryList$SerializedOptions>;
     readonly currentlyEnabled: Identifier[];
     readonly currentlyEnabledVersion: number;
@@ -24,7 +25,7 @@ export class DebugScreenEntryList extends Object {
     load(): void;
     loadProfile(profile: DebugScreenProfile): void;
     rebuildCurrentList(): void;
-    // private resetStatuses(newEntries: Map<Identifier, DebugScreenEntryStatus>): void;
+    // private resetStatuses(newEntries: JavaMap<Identifier, DebugScreenEntryStatus>): void;
     // private resetToProfile(profile: DebugScreenProfile): void;
     save(): void;
     // private setFullDebugStatuses(): void;

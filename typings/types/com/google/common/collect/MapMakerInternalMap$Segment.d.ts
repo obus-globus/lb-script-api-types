@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { MapMakerInternalMap$InternalEntry } from '../../../../com/google/common/collect/MapMakerInternalMap$InternalEntry.d.ts'
 import type { MapMakerInternalMap$WeakValueReference } from '../../../../com/google/common/collect/MapMakerInternalMap$WeakValueReference.d.ts'
 import type { ReferenceQueue } from '../../../../java/lang/ref/ReferenceQueue.d.ts'
@@ -6,9 +7,9 @@ import type { AtomicReferenceArray } from '../../../../java/util/concurrent/atom
 import type { ReentrantLock } from '../../../../java/util/concurrent/locks/ReentrantLock.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class MapMakerInternalMap$Segment<K extends unknown, V extends unknown, E extends MapMakerInternalMap$InternalEntry<K, V, E>, S extends MapMakerInternalMap$Segment<K, V, E, S>> extends ReentrantLock {
-    constructor(map: Map<K, V>, initialCapacity: number)
+    constructor(map: JavaMap<K, V>, initialCapacity: number)
     // private count: number;
-    // private map: Map<K, V>;
+    // private map: JavaMap<K, V>;
     // private modCount: number;
     // private readCount: AtomicInteger;
     // private table: AtomicReferenceArray<E>;

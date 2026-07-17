@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { MessageDigest } from '../../../java/security/MessageDigest.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { ManifestDigester$Entry } from '../../../sun/security/util/ManifestDigester$Entry.d.ts'
@@ -5,7 +6,7 @@ import type { ManifestDigester$Position } from '../../../sun/security/util/Manif
 export class ManifestDigester extends Object {
     static MF_MAIN_ATTRS: string;
     constructor(arg0: number[])
-    // private entries: { [key: string]: ManifestDigester$Entry };
+    // private entries: JavaMap<string, ManifestDigester$Entry>;
     readonly mainAttsEntry: ManifestDigester$Entry;
     // private rawBytes: number[];
     // private findSection(arg0: number, arg1: ManifestDigester$Position): boolean;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { ByteTag } from '../../../../../../com/viaversion/nbt/tag/ByteTag.d.ts'
 import type { FloatTag } from '../../../../../../com/viaversion/nbt/tag/FloatTag.d.ts'
 import type { IntTag } from '../../../../../../com/viaversion/nbt/tag/IntTag.d.ts'
@@ -58,7 +59,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class ComponentRewriter1_20_5<C extends ClientboundPacketType> extends JsonNBTComponentRewriter<C> {
     constructor(arg0: Protocol<C, any, any, any>, arg1: StructuredDataType)
-    // private converters: Map<StructuredDataKey<Object>, ComponentRewriter1_20_5$ConverterPair<Object>>;
+    // private converters: JavaMap<StructuredDataKey<Object>, ComponentRewriter1_20_5$ConverterPair<Object>>;
     // private structuredDataType: StructuredDataType;
     asBoolean(arg0: Tag): boolean;
     asInt(arg0: Tag): number;
@@ -229,7 +230,7 @@ export class ComponentRewriter1_20_5<C extends ClientboundPacketType> extends Js
     suspiciousStewEffectsToTag(arg0: SuspiciousStewEffect[]): Map$Entry<string, Tag>[][];
     tagConverter<T extends unknown>(arg0: StructuredDataKey<T>): (param0: UserConnection, param1: Tag) => T;
     toData(arg0: UserConnection, arg1: Map$Entry<string, Tag>[]): StructuredData<Object>[];
-    toTag(arg0: UserConnection, arg1: Map<StructuredDataKey<Object>, StructuredData<Object>>): Map$Entry<string, Tag>[];
+    toTag(arg0: UserConnection, arg1: JavaMap<StructuredDataKey<Object>, StructuredData<Object>>): Map$Entry<string, Tag>[];
     toolFromTag(arg0: Tag): ToolProperties;
     toolToTag(arg0: ToolProperties): Map$Entry<string, Tag>[];
     trimFromTag(arg0: UserConnection, arg1: Tag): ArmorTrim;

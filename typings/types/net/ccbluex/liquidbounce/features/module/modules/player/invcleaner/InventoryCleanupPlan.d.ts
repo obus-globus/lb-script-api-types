@@ -1,10 +1,11 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { InventorySwap } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/InventorySwap.d.ts'
 import type { ItemAndComponents } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemAndComponents.d.ts'
 import type { ItemSlot } from '../../../../../../../../net/ccbluex/liquidbounce/utils/inventory/ItemSlot.d.ts'
 export class InventoryCleanupPlan extends Object {
-    constructor(usefulItems: ItemSlot[], swaps: InventorySwap[], mergeableItems: Map<ItemAndComponents, ItemSlot[]>)
-    readonly mergeableItems: Map<ItemAndComponents, ItemSlot[]>;
+    constructor(usefulItems: ItemSlot[], swaps: InventorySwap[], mergeableItems: JavaMap<ItemAndComponents, ItemSlot[]>)
+    readonly mergeableItems: JavaMap<ItemAndComponents, ItemSlot[]>;
     readonly swaps: InventorySwap[];
     readonly usefulItems: ItemSlot[];
     findItemsToThrowOut(itemSlots: ItemSlot[]): ItemSlot[];
@@ -21,5 +22,5 @@ export class InventoryCleanupPlan extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/CleanupPlan.kt#L65 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/CleanupPlan.kt:65}
      */
-    remapSlots(slotMap: Map<ItemSlot, ItemSlot>): void;
+    remapSlots(slotMap: JavaMap<ItemSlot, ItemSlot>): void;
 }

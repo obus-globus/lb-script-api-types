@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { JsonToken } from '../../../com/azure/json/JsonToken.d.ts'
 import type { ReadValueCallback } from '../../../com/azure/json/ReadValueCallback.d.ts'
 import type { Closeable } from '../../../java/io/Closeable.d.ts'
@@ -29,7 +30,7 @@ export abstract class JsonReader extends Object implements Closeable {
     readChildren(): string;
     readChildren(arg0: StringBuilder): void;
     // private readInternal(arg0: StringBuilder, arg1: boolean, arg2: boolean): StringBuilder;
-    readMap<T extends unknown>(arg0: (param0: JsonReader) => T): { [key: string]: T };
+    readMap<T extends unknown>(arg0: (param0: JsonReader) => T): JavaMap<string, T>;
     // private readMapOrObject<T extends unknown>(arg0: (param0: JsonReader) => T, arg1: boolean): T;
     readObject<T extends unknown>(arg0: (param0: JsonReader) => T): T;
     readRemainingFieldsAsJsonObject(): string;

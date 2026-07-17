@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { ClassLoader } from '../../../java/lang/ClassLoader.d.ts'
 import type { Module } from '../../../java/lang/Module.d.ts'
 import type { Locale } from '../../../java/util/Locale.d.ts'
@@ -17,7 +18,7 @@ export abstract class TimeZoneNamesBundle extends OpenListResourceBundle {
     static getBundle(paramarg0: string, paramarg1: Locale, paramarg2: ClassLoader, paramarg3: ResourceBundle$Control): ResourceBundle;
     static getBundle(paramarg0: string, paramarg1: Locale, paramarg2: Module): ResourceBundle;
     constructor()
-    createMap<K extends unknown, V extends unknown>(arg0: number): Map<K, V>;
+    createMap<K extends unknown, V extends unknown>(arg0: number): JavaMap<K, V>;
     createSet<E extends unknown>(): E[];
     getContents(): Object[][];
     handleGetObject(arg0: string): Object;

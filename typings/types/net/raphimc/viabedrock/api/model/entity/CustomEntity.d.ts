@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { UserConnection } from '../../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { CustomEntity$EvaluatedModel } from '../../../../../../net/raphimc/viabedrock/api/model/entity/CustomEntity$EvaluatedModel.d.ts'
 import type { CustomEntity$ItemDisplayEntity } from '../../../../../../net/raphimc/viabedrock/api/model/entity/CustomEntity$ItemDisplayEntity.d.ts'
@@ -11,8 +12,8 @@ export class CustomEntity extends Entity {
     constructor(arg0: UserConnection, arg1: number, arg2: number, arg3: string, arg4: number, arg5: EntityDefinitions$EntityDefinition)
     // private entityDefinition: EntityDefinitions$EntityDefinition;
     // private entityScope: Scope;
-    // private inverseGeometryMap: { [key: string]: string };
-    // private inverseTextureMap: { [key: string]: string };
+    // private inverseGeometryMap: JavaMap<string, string>;
+    // private inverseTextureMap: JavaMap<string, string>;
     // private models: CustomEntity$EvaluatedModel[];
     // private partEntities: CustomEntity$ItemDisplayEntity[];
     // private spawned: boolean;

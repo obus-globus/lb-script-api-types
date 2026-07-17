@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { KotlinBuiltIns } from '../../../../../../../kotlin/reflect/jvm/internal/impl/builtins/KotlinBuiltIns.d.ts'
 import type { PrimitiveType } from '../../../../../../../kotlin/reflect/jvm/internal/impl/builtins/PrimitiveType.d.ts'
@@ -97,7 +98,7 @@ export class ClassicTypeSystemContext$DefaultImpls extends Object {
     static supertypes(paramarg0: ClassicTypeSystemContext, paramarg1: TypeConstructorMarker): KotlinTypeMarker[];
     static typeConstructor(paramarg0: ClassicTypeSystemContext, paramarg1: CapturedTypeMarker): CapturedTypeConstructorMarker;
     static typeConstructor(paramarg0: ClassicTypeSystemContext, paramarg1: RigidTypeMarker): TypeConstructorMarker;
-    static typeSubstitutorForUnderlyingType(paramarg0: ClassicTypeSystemContext, paramarg1: Map<TypeConstructorMarker, KotlinTypeMarker>): TypeSubstitutorMarker;
+    static typeSubstitutorForUnderlyingType(paramarg0: ClassicTypeSystemContext, paramarg1: JavaMap<TypeConstructorMarker, KotlinTypeMarker>): TypeSubstitutorMarker;
     static upperBound(paramarg0: ClassicTypeSystemContext, paramarg1: FlexibleTypeMarker): SimpleTypeMarker;
     static withNullability(paramarg0: ClassicTypeSystemContext, paramarg1: KotlinTypeMarker, paramarg2: boolean): KotlinTypeMarker;
     static withNullability(paramarg0: ClassicTypeSystemContext, paramarg1: RigidTypeMarker, paramarg2: boolean): SimpleTypeMarker;

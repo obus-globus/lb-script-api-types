@@ -1,8 +1,9 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Int2ObjectAVLTreeMap$Entry } from '../../../../../it/unimi/dsi/fastutil/ints/Int2ObjectAVLTreeMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Int2ObjectAVLTreeMap$TreeIterator extends Object {
-    constructor(null_: { [key: string]: any })
-    constructor(null_: { [key: string]: any }, arg1: number)
+    constructor(null_: JavaMap<any, any>)
+    constructor(null_: JavaMap<any, any>, arg1: number)
     // private curr: Int2ObjectAVLTreeMap$Entry<V>;
     // private index: number;
     // private next: Int2ObjectAVLTreeMap$Entry<V>;

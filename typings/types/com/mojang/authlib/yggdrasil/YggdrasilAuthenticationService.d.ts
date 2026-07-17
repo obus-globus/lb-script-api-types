@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Environment } from '../../../../com/mojang/authlib/Environment.d.ts'
 import type { GameProfileRepository } from '../../../../com/mojang/authlib/GameProfileRepository.d.ts'
 import type { HttpAuthenticationService } from '../../../../com/mojang/authlib/HttpAuthenticationService.d.ts'
@@ -9,7 +10,7 @@ import type { Proxy } from '../../../../java/net/Proxy.d.ts'
 import type { URL } from '../../../../java/net/URL.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class YggdrasilAuthenticationService extends HttpAuthenticationService {
-    static buildQuery(paramarg0: { [key: string]: Object }): string;
+    static buildQuery(paramarg0: JavaMap<string, Object>): string;
     static concatenateURL(paramarg0: URL, paramarg1: string): URL;
     static constantURL(paramarg0: string): URL;
     static createOffline(paramarg0: Proxy): YggdrasilAuthenticationService;

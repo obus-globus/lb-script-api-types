@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { ResolverStyle } from '../../../java/time/format/ResolverStyle.d.ts'
 import type { Temporal } from '../../../java/time/temporal/Temporal.d.ts'
@@ -60,7 +61,7 @@ export class ChronoField extends Enum<ChronoField> implements TemporalField {
     isTimeBased(): boolean;
     range(): ValueRange;
     rangeRefinedBy(arg0: TemporalAccessor): ValueRange;
-    resolve(arg0: Map<TemporalField, number>, arg1: TemporalAccessor, arg2: ResolverStyle): TemporalAccessor;
+    resolve(arg0: JavaMap<TemporalField, number>, arg1: TemporalAccessor, arg2: ResolverStyle): TemporalAccessor;
     toString(): string;
     name(): "NANO_OF_SECOND" | "NANO_OF_DAY" | "MICRO_OF_SECOND" | "MICRO_OF_DAY" | "MILLI_OF_SECOND" | "MILLI_OF_DAY" | "SECOND_OF_MINUTE" | "SECOND_OF_DAY" | "MINUTE_OF_HOUR" | "MINUTE_OF_DAY" | "HOUR_OF_AMPM" | "CLOCK_HOUR_OF_AMPM" | "HOUR_OF_DAY" | "CLOCK_HOUR_OF_DAY" | "AMPM_OF_DAY" | "DAY_OF_WEEK" | "ALIGNED_DAY_OF_WEEK_IN_MONTH" | "ALIGNED_DAY_OF_WEEK_IN_YEAR" | "DAY_OF_MONTH" | "DAY_OF_YEAR" | "EPOCH_DAY" | "ALIGNED_WEEK_OF_MONTH" | "ALIGNED_WEEK_OF_YEAR" | "MONTH_OF_YEAR" | "PROLEPTIC_MONTH" | "YEAR_OF_ERA" | "YEAR" | "ERA" | "INSTANT_SECONDS" | "OFFSET_SECONDS";
 }

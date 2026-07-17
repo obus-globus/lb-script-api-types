@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Runnable } from '../../../../../../java/lang/Runnable.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { FabricRenderState } from '../../../../../../net/fabricmc/fabric/api/client/rendering/v1/FabricRenderState.d.ts'
@@ -28,7 +29,7 @@ export class LevelRenderState extends Object implements FabricRenderState {
     particlesRenderState: ParticlesRenderState;
     playerCompiledSectionCallback: () => void;
     render3dCrosshair: boolean;
-    // private renderStateData: Map<Object | null, Object | null>;
+    // private renderStateData: JavaMap<Object | null, Object | null>;
     sectionUpdateRenderStates: SectionUpdateRenderState[];
     shouldResetChunkLayerSampler: boolean;
     shouldResetSkyRenderer: boolean;

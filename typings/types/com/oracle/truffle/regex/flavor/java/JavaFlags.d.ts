@@ -1,10 +1,11 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { AbstractConstantKeysObject } from '../../../../../../com/oracle/truffle/regex/AbstractConstantKeysObject.d.ts'
 import type { AbstractRegexObject } from '../../../../../../com/oracle/truffle/regex/AbstractRegexObject.d.ts'
 import type { TruffleReadOnlyKeysArray } from '../../../../../../com/oracle/truffle/regex/util/TruffleReadOnlyKeysArray.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JavaFlags extends AbstractConstantKeysObject {
-    static createNamedCaptureGroupMapInt(paramnamedCaptureGroups: { [key: string]: number[] }): AbstractRegexObject;
-    static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: { [key: string]: number[] }): AbstractRegexObject;
+    static createNamedCaptureGroupMapInt(paramnamedCaptureGroups: JavaMap<string, number[]>): AbstractRegexObject;
+    static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: JavaMap<string, number[]>): AbstractRegexObject;
     static isValidFlagChar(paramcandidateChar: number): boolean;
     static parseFlags(paramsource: string): JavaFlags;
     constructor(bits: number)

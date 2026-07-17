@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { SourceElement } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/SourceElement.d.ts'
 import type { PossiblyExternalAnnotationDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/descriptors/PossiblyExternalAnnotationDescriptor.d.ts'
@@ -16,7 +17,7 @@ export class JavaAnnotationDescriptor extends Object implements PossiblyExternal
     // private isIdeExternalAnnotation: boolean;
     readonly source: SourceElement;
     // private type$delegate: NotNullLazyValue<Object>;
-    getAllValueArguments(): Map<Name, ConstantValue<Object>>;
+    getAllValueArguments(): JavaMap<Name, ConstantValue<Object>>;
     getFirstArgument(): JavaAnnotationArgument;
     getFqName(): FqName;
     getSource(): SourceElement;

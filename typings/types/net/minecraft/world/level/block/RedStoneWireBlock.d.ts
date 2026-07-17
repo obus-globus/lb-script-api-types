@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { IntFunction } from '../../../../../java/util/function/IntFunction.d.ts'
@@ -43,7 +44,7 @@ export class RedStoneWireBlock extends Block {
     static INSTANT: number;
     static NORTH: EnumProperty<RedstoneSide>;
     static POWER: IntegerProperty;
-    static PROPERTY_BY_DIRECTION: Map<Direction, EnumProperty<RedstoneSide>>;
+    static PROPERTY_BY_DIRECTION: JavaMap<Direction, EnumProperty<RedstoneSide>>;
     static SOUTH: EnumProperty<RedstoneSide>;
     static UPDATE_ALL: number;
     static UPDATE_ALL_IMMEDIATE: number;

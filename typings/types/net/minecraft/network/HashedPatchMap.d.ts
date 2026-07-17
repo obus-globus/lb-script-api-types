@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Record } from '../../../java/lang/Record.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { DataComponentPatch } from '../../../net/minecraft/core/component/DataComponentPatch.d.ts'
@@ -9,10 +10,10 @@ import type { StreamCodec } from '../../../net/minecraft/network/codec/StreamCod
 export class HashedPatchMap extends Record {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, HashedPatchMap>;
     static create(parampatch: DataComponentPatch, paramhasher: (param0: TypedDataComponent<Object>) => number): HashedPatchMap;
-    constructor(addedComponents: Map<DataComponentType<Object>, number>, removedComponents: DataComponentType<Object>[])
-    // private addedComponents: Map<DataComponentType<Object>, number>;
+    constructor(addedComponents: JavaMap<DataComponentType<Object>, number>, removedComponents: DataComponentType<Object>[])
+    // private addedComponents: JavaMap<DataComponentType<Object>, number>;
     // private removedComponents: DataComponentType<Object>[];
-    addedComponents(): Map<DataComponentType<Object>, number>;
+    addedComponents(): JavaMap<DataComponentType<Object>, number>;
     equals(o: Object | null): boolean;
     hashCode(): number;
     matches(patch: DataComponentPatch, hasher: (param0: TypedDataComponent<Object>) => number): boolean;

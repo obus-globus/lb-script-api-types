@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ByteBuf } from '../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { PemEncoded } from '../../../../io/netty/handler/ssl/PemEncoded.d.ts'
 import type { BigInteger } from '../../../../java/math/BigInteger.d.ts'
@@ -51,6 +52,6 @@ export class PemX509Certificate extends X509Certificate implements PemEncoded {
     touch(): PemX509Certificate;
     touch(arg0: Object): PemX509Certificate;
     verify(arg0: PublicKey): void;
-    verify(arg0: PublicKey, arg1: { [key: string]: any }): void;
+    verify(arg0: PublicKey, arg1: JavaMap<any, any>): void;
     verify(arg0: PublicKey, arg1: string): void;
 }

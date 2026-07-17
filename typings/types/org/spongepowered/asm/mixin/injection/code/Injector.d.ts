@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Type } from '../../../../../../org/objectweb/asm/Type.d.ts'
 import type { AbstractInsnNode } from '../../../../../../org/objectweb/asm/tree/AbstractInsnNode.d.ts'
@@ -25,7 +26,7 @@ export abstract class Injector extends Object {
     // private methodNode: MethodNode;
     // private returnType: Type;
     addTargetNode(arg0: InjectorTarget, arg1: InjectionNodes$InjectionNode[], arg2: AbstractInsnNode, arg3: InjectionPoint[]): void;
-    addTargetNode(arg0: InjectorTarget, arg1: { [key: number]: Injector$TargetNode }, arg2: InjectionPoint, arg3: AbstractInsnNode): void;
+    addTargetNode(arg0: InjectorTarget, arg1: JavaMap<number, Injector$TargetNode>, arg2: InjectionPoint, arg3: AbstractInsnNode): void;
     checkCoerce(arg0: number, arg1: Type, arg2: string, arg3: boolean): boolean;
     checkTargetForNode(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode, arg2: InjectionPoint$RestrictTargetLevel): void;
     checkTargetModifiers(arg0: AbstractInsnNode[], arg1: boolean): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Field } from '../../../../java/lang/reflect/Field.d.ts'
 import type { Method } from '../../../../java/lang/reflect/Method.d.ts'
@@ -196,7 +197,7 @@ export class ArrayUtils extends Object {
     static swap(paramarg0: Object[], paramarg1: number, paramarg2: number): void;
     static swap(paramarg0: Object[], paramarg1: number, paramarg2: number, paramarg3: number): void;
     static toArray<T extends unknown>(...paramarg0: T[]): T[];
-    static toMap(paramarg0: Object[]): Map<Object, Object>;
+    static toMap(paramarg0: Object[]): JavaMap<Object, Object>;
     static toObject(paramarg0: boolean[]): boolean[];
     static toObject(paramarg0: number[]): number[];
     static toObject(paramarg0: string[]): string[];

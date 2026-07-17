@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Minecraft } from '../../../../../net/minecraft/client/Minecraft.d.ts'
@@ -27,7 +28,7 @@ export class DebugScreenOverlay extends Object {
     // private pingChart: PingDebugChart;
     readonly pingLogger: LocalSampleLogger;
     readonly profilerPieChart: ProfilerPieChart;
-    // private remoteSupportingLoggers: Map<RemoteDebugSampleType, LocalSampleLogger>;
+    // private remoteSupportingLoggers: JavaMap<RemoteDebugSampleType, LocalSampleLogger>;
     // private renderFpsCharts: boolean;
     // private renderLightmapTexture: boolean;
     // private renderNetworkCharts: boolean;

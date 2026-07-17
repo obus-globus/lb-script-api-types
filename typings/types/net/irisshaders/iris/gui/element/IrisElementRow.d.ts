@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { IrisElementRow$Element } from '../../../../../net/irisshaders/iris/gui/element/IrisElementRow$Element.d.ts'
@@ -8,7 +9,7 @@ import type { MouseButtonEvent } from '../../../../../net/minecraft/client/input
 export class IrisElementRow extends Object {
     constructor()
     constructor(arg0: number)
-    // private elements: Map<IrisElementRow$Element, number>;
+    // private elements: JavaMap<IrisElementRow$Element, number>;
     // private height: number;
     // private orderedElements: IrisElementRow$Element[];
     // private spacing: number;

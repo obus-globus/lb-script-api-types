@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
 import type { Charset } from '../../../../../../java/nio/charset/Charset.d.ts'
@@ -11,15 +12,15 @@ export class URLEncodedFormContent extends HttpContent {
     static bytes(paramarg0: number[], paramarg1: number, paramarg2: number): HttpContent;
     static file(paramarg0: File): HttpContent;
     static form(paramarg0: string, paramarg1: string): HttpContent;
-    static form(paramarg0: { [key: string]: string }): HttpContent;
+    static form(paramarg0: JavaMap<string, string>): HttpContent;
     static inputStream(paramarg0: ContentType, paramarg1: InputStream, paramarg2: number): InputStreamContent;
     static multiPartForm(): MultiPartFormContent;
     static string(paramarg0: string): HttpContent;
     static string(paramarg0: string, paramarg1: Charset): HttpContent;
     constructor()
     constructor(arg0: Charset)
-    constructor(arg0: { [key: string]: string })
-    constructor(arg0: { [key: string]: string }, arg1: Charset)
+    constructor(arg0: JavaMap<string, string>)
+    constructor(arg0: JavaMap<string, string>, arg1: Charset)
     // private charset: Charset;
     // private entries: URLEncodedFormContent$FormEntry[];
     canBeStreamedMultipleTimes(): boolean;

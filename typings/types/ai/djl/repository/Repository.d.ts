@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Application } from '../../../ai/djl/Application.d.ts'
 import type { Artifact } from '../../../ai/djl/repository/Artifact.d.ts'
 import type { Artifact$Item } from '../../../ai/djl/repository/Artifact$Item.d.ts'
@@ -27,5 +28,5 @@ export interface Repository extends Object{
     openStream(arg0: Artifact$Item, arg1: string): InputStream;
     prepare(arg0: Artifact): void;
     prepare(arg0: Artifact, arg1: Progress): void;
-    resolve(arg0: MRL, arg1: { [key: string]: string }): Artifact;
+    resolve(arg0: MRL, arg1: JavaMap<string, string>): Artifact;
 }

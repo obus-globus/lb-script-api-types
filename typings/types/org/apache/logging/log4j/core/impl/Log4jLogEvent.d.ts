@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { ObjectInputStream } from '../../../../../../java/io/ObjectInputStream.d.ts'
 import type { Serializable } from '../../../../../../java/io/Serializable.d.ts'
 import type { StackTraceElement } from '../../../../../../java/lang/StackTraceElement.d.ts'
@@ -17,7 +18,7 @@ import type { ReadOnlyStringMap } from '../../../../../../org/apache/logging/log
 import type { StringMap } from '../../../../../../org/apache/logging/log4j/util/StringMap.d.ts'
 export class Log4jLogEvent extends Object implements LogEvent {
     static canDeserialize(paramevent: Serializable): boolean;
-    static createEvent(paramloggerName: string, parammarker: Marker, paramloggerFQCN: string, paramlevel: Level, parammessage: Message, paramthrown: Throwable, paramignoredThrownProxy: ThrowableProxy, parammdc: { [key: string]: string }, paramndc: (Object | null)[], paramthreadName: string, paramlocation: StackTraceElement, paramtimestamp: number): Log4jLogEvent;
+    static createEvent(paramloggerName: string, parammarker: Marker, paramloggerFQCN: string, paramlevel: Level, parammessage: Message, paramthrown: Throwable, paramignoredThrownProxy: ThrowableProxy, parammdc: JavaMap<string, string>, paramndc: (Object | null)[], paramthreadName: string, paramlocation: StackTraceElement, paramtimestamp: number): Log4jLogEvent;
     static createMemento(paramlogEvent: LogEvent): LogEvent;
     static createMemento(paramevent: LogEvent, paramincludeLocation: boolean): Log4jLogEvent;
     static deserialize(paramevent: Serializable): Log4jLogEvent;
@@ -30,7 +31,7 @@ export class Log4jLogEvent extends Object implements LogEvent {
     constructor(timestamp: number)
     constructor(loggerName: string, marker: Marker, loggerFQCN: string, source: StackTraceElement, level: Level, message: Message, properties: Property[], t: Throwable)
     constructor(loggerName: string, marker: Marker, loggerFQCN: string, level: Level, message: Message, t: Throwable)
-    constructor(loggerName: string, marker: Marker, loggerFQCN: string, level: Level, message: Message, t: Throwable, mdc: { [key: string]: string }, ndc: (Object | null)[], threadName: string, location: StackTraceElement, timestampMillis: number)
+    constructor(loggerName: string, marker: Marker, loggerFQCN: string, level: Level, message: Message, t: Throwable, mdc: JavaMap<string, string>, ndc: (Object | null)[], threadName: string, location: StackTraceElement, timestampMillis: number)
     constructor(loggerName: string, marker: Marker, loggerFQCN: string, level: Level, message: Message, properties: Property[], t: Throwable)
     readonly contextData: StringMap;
     readonly contextStack: (Object | null)[];
@@ -52,7 +53,7 @@ export class Log4jLogEvent extends Object implements LogEvent {
     asBuilder(): Log4jLogEvent$Builder;
     equals(o: Object | null): boolean;
     getContextData(): ReadOnlyStringMap;
-    getContextMap(): { [key: string]: string };
+    getContextMap(): JavaMap<string, string>;
     getContextStack(): (Object | null)[];
     getInstant(): Instant;
     getLevel(): Level;

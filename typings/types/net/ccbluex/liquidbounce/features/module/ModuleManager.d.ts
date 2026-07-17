@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../../java/util/Iterator.d.ts'
 import type { Config } from '../../../../../net/ccbluex/liquidbounce/config/types/Config.d.ts'
@@ -28,8 +29,8 @@ export class ModuleManager extends Object implements EventListener {
     readonly running: boolean;
     readonly size: number;
     getSize(): number;
-    // private smartKeyboardStates: Map<ClientModule, ModuleManager$SmartBindKeyboardState>;
-    // private smartMouseStates: Map<ClientModule, ModuleManager$SmartBindMouseState>;
+    // private smartKeyboardStates: JavaMap<ClientModule, ModuleManager$SmartBindKeyboardState>;
+    // private smartMouseStates: JavaMap<ClientModule, ModuleManager$SmartBindMouseState>;
     addModule(module: ClientModule): void;
     children(): EventListener[];
     clear(): void;

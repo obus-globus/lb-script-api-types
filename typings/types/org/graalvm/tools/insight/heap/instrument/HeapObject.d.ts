@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { TruffleInstrument$Env } from '../../../../../../com/oracle/truffle/api/instrumentation/TruffleInstrument$Env.d.ts'
 import type { TruffleObject } from '../../../../../../com/oracle/truffle/api/interop/TruffleObject.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
@@ -33,5 +34,5 @@ export class HeapObject extends Object implements TruffleObject, Consumer<Output
     readMember(name: string): Object;
     // private setGenerator(generator: HeapDump$Builder): void;
     // private setSink(sink: OutputStream): void;
-    symbolsWithValues(): { [key: string]: Object | null };
+    symbolsWithValues(): JavaMap<string, Object | null>;
 }

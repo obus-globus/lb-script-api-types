@@ -1,3 +1,4 @@
+import type { JavaMap } from '../JavaMap.d.ts'
 import type { Pair } from '../kotlin/Pair.d.ts'
 import type { Headers$Companion } from '../okhttp3/Headers$Companion.d.ts'
 export class Headers {
@@ -6,5 +7,5 @@ export class Headers {
     static Companion: Headers$Companion;
     static EMPTY: Pair<string, string>[];
     static of(...namesAndValues: string[]): Pair<string, string>[];
-    static of(self: { [key: string]: string }): Pair<string, string>[];
+    static of(self: JavaMap<string, string>): Pair<string, string>[];
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { LateApplyingInjectorInfo } from '../../../../com/llamalad7/mixinextras/injector/LateApplyingInjectorInfo.d.ts'
 import type { MixinExtrasInjectionInfo } from '../../../../com/llamalad7/mixinextras/injector/MixinExtrasInjectionInfo.d.ts'
 import type { InjectorWrapperImpl } from '../../../../com/llamalad7/mixinextras/wrapper/InjectorWrapperImpl.d.ts'
@@ -33,7 +34,7 @@ export abstract class WrapperInjectionInfo extends MixinExtrasInjectionInfo impl
     getLateInjectionType(): string;
     getOrder(): number;
     getSelectedTargets(): AbstractInsnNode[][];
-    getTargetMap(): Map<AbstractInsnNode[], InjectionNodes$InjectionNode[]>;
+    getTargetMap(): JavaMap<AbstractInsnNode[], InjectionNodes$InjectionNode[]>;
     inject(): void;
     isValid(): boolean;
     lateApply(): void;

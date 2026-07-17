@@ -1,9 +1,10 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { StorableObject } from '../../../../../../com/viaversion/viaversion/api/connection/StorableObject.d.ts'
 import type { ChunkLightStorage$ChunkLight } from '../../../../../../com/viaversion/viaversion/protocols/v1_17_1to1_18/storage/ChunkLightStorage$ChunkLight.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ChunkLightStorage extends Object implements StorableObject {
     constructor()
-    // private lightPackets: { [key: string]: any };
+    // private lightPackets: JavaMap<any, any>;
     // private loadedChunks: (Object | null)[];
     addLoadedChunk(arg0: number, arg1: number): boolean;
     clear(): void;

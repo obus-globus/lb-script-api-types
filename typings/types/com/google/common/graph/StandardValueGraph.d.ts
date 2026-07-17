@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { AbstractGraphBuilder } from '../../../../com/google/common/graph/AbstractGraphBuilder.d.ts'
 import type { AbstractValueGraph } from '../../../../com/google/common/graph/AbstractValueGraph.d.ts'
 import type { ElementOrder } from '../../../../com/google/common/graph/ElementOrder.d.ts'
@@ -6,7 +7,7 @@ import type { MapIteratorCache } from '../../../../com/google/common/graph/MapIt
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class StandardValueGraph<N extends unknown, V extends unknown> extends AbstractValueGraph<N, V> {
     constructor(builder: AbstractGraphBuilder<N>)
-    constructor(builder: AbstractGraphBuilder<N>, nodeConnections: Map<N, GraphConnections<N, V>>, edgeCount: number)
+    constructor(builder: AbstractGraphBuilder<N>, nodeConnections: JavaMap<N, GraphConnections<N, V>>, edgeCount: number)
     // private allowsSelfLoops: boolean;
     // private edgeCount: number;
     // private isDirected: boolean;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { StrLookup } from '../../../../../../org/apache/logging/log4j/core/lookup/StrLookup.d.ts'
 import type { StrMatcher } from '../../../../../../org/apache/logging/log4j/core/lookup/StrMatcher.d.ts'
@@ -10,12 +11,12 @@ export class ConfigurationStrSubstitutor extends StrSubstitutor {
     static DEFAULT_VALUE_DELIMITER_STRING: string;
     static DEFAULT_VALUE_ESCAPE_DELIMITER: StrMatcher;
     static ESCAPE_DELIMITER_STRING: string;
-    static replace(paramsource: Object, paramvalueMap: { [key: string]: string }): string;
-    static replace(paramsource: Object, paramvalueMap: { [key: string]: string }, paramprefix: string, paramsuffix: string): string;
-    static replace(paramsource: Object, paramvalueProperties: { [key: string]: any }): string;
+    static replace(paramsource: Object, paramvalueMap: JavaMap<string, string>): string;
+    static replace(paramsource: Object, paramvalueMap: JavaMap<string, string>, paramprefix: string, paramsuffix: string): string;
+    static replace(paramsource: Object, paramvalueProperties: JavaMap<any, any>): string;
     constructor()
-    constructor(properties: { [key: string]: any })
-    constructor(valueMap: { [key: string]: string })
+    constructor(properties: JavaMap<any, any>)
+    constructor(valueMap: JavaMap<string, string>)
     constructor(lookup: StrLookup)
     constructor(other: StrSubstitutor)
     toString(): string;

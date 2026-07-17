@@ -1,3 +1,4 @@
+import type { JavaMap } from '../JavaMap.d.ts'
 import type { OutputStream } from '../java/io/OutputStream.d.ts'
 import type { Writer } from '../java/io/Writer.d.ts'
 import type { AbstractOptionSpec } from '../joptsimple/AbstractOptionSpec.d.ts'
@@ -16,16 +17,16 @@ export class OptionParser extends Object implements OptionDeclarer {
     constructor(arg0: boolean)
     constructor(arg0: string)
     // private allowsUnrecognizedOptions: boolean;
-    // private availableIf: Map<string[], OptionSpec<Object>[]>;
-    // private availableUnless: Map<string[], OptionSpec<Object>[]>;
+    // private availableIf: JavaMap<string[], OptionSpec<Object>[]>;
+    // private availableUnless: JavaMap<string[], OptionSpec<Object>[]>;
     // private helpFormatter: HelpFormatter;
     // private posixlyCorrect: boolean;
     // private recognizedOptions: OptionNameMap<AbstractOptionSpec<Object>>;
-    // private requiredIf: Map<string[], OptionSpec<Object>[]>;
-    // private requiredUnless: Map<string[], OptionSpec<Object>[]>;
+    // private requiredIf: JavaMap<string[], OptionSpec<Object>[]>;
+    // private requiredUnless: JavaMap<string[], OptionSpec<Object>[]>;
     // private state: OptionParserState;
     // private trainingOrder: AbstractOptionSpec<Object>[];
-    // private _recognizedOptions(): { [key: string]: AbstractOptionSpec<Object> };
+    // private _recognizedOptions(): JavaMap<string, AbstractOptionSpec<Object>>;
     accepts(arg0: string): OptionSpecBuilder;
     accepts(arg0: string, arg1: string): OptionSpecBuilder;
     acceptsAll(arg0: string[]): OptionSpecBuilder;
@@ -57,10 +58,10 @@ export class OptionParser extends Object implements OptionDeclarer {
     posixlyCorrect(arg0: boolean): void;
     printHelpOn(arg0: OutputStream): void;
     printHelpOn(arg0: Writer): void;
-    // private putDependentOption(arg0: string[], arg1: OptionSpec<Object>, arg2: Map<string[], OptionSpec<Object>[]>): void;
+    // private putDependentOption(arg0: string[], arg1: OptionSpec<Object>, arg2: JavaMap<string[], OptionSpec<Object>[]>): void;
     recognize(arg0: AbstractOptionSpec<Object>): void;
     recognizeAlternativeLongOptions(arg0: boolean): void;
-    recognizedOptions(): { [key: string]: OptionSpec<Object> };
+    recognizedOptions(): JavaMap<string, OptionSpec<Object>>;
     requiredIf(arg0: string[], arg1: OptionSpec<Object>): void;
     requiredIf(arg0: string[], arg1: string): void;
     requiredUnless(arg0: string[], arg1: OptionSpec<Object>): void;

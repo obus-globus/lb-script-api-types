@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { GameProfile } from '../../../../com/mojang/authlib/GameProfile.d.ts'
 import type { ParseResults } from '../../../../com/mojang/brigadier/ParseResults.d.ts'
 import type { Runnable } from '../../../../java/lang/Runnable.d.ts'
@@ -160,8 +161,8 @@ export class ServerGamePacketListenerImpl extends ServerCommonPacketListenerImpl
     ackBlockChangesUpTo(packetSequenceNr: number): void;
     // private broadcastChatMessage(message: PlayerChatMessage): void;
     // private broadcastGameRuleChangeToOperators<T extends unknown>(rule: GameRule<T>, value: T): void;
-    // private collectSignedArguments<S extends unknown>(packet: ServerboundChatCommandSignedPacket, command: SignableCommand<S>, lastSeenMessages: LastSeenMessages): { [key: string]: PlayerChatMessage };
-    // private collectUnsignedArguments<S extends unknown>(parsedArguments: SignableCommand$Argument<S>[]): { [key: string]: PlayerChatMessage };
+    // private collectSignedArguments<S extends unknown>(packet: ServerboundChatCommandSignedPacket, command: SignableCommand<S>, lastSeenMessages: LastSeenMessages): JavaMap<string, PlayerChatMessage>;
+    // private collectUnsignedArguments<S extends unknown>(parsedArguments: SignableCommand$Argument<S>[]): JavaMap<string, PlayerChatMessage>;
     // private detectChatRateSpam(): void;
     // private detectCommandRateSpam(): void;
     // private detectRateSpam(throttler: TickThrottler): void;

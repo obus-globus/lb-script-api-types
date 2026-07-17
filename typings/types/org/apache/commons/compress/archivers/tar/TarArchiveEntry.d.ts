@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { LinkOption } from '../../../../../../java/nio/file/LinkOption.d.ts'
 import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
@@ -101,8 +102,8 @@ export class TarArchiveEntry extends Object implements ArchiveEntry, EntryStream
     constructor(arg0: string, arg1: boolean)
     constructor(arg0: string, arg1: number)
     constructor(arg0: string, arg1: number, arg2: boolean)
-    constructor(arg0: { [key: string]: string }, arg1: number[], arg2: ZipEncoding, arg3: boolean)
-    constructor(arg0: { [key: string]: string }, arg1: number[], arg2: ZipEncoding, arg3: boolean, arg4: number)
+    constructor(arg0: JavaMap<string, string>, arg1: number[], arg2: ZipEncoding, arg3: boolean)
+    constructor(arg0: JavaMap<string, string>, arg1: number[], arg2: ZipEncoding, arg3: boolean, arg4: number)
     // private aTime: FileTime;
     // private birthTime: FileTime;
     // private cTime: FileTime;
@@ -110,7 +111,7 @@ export class TarArchiveEntry extends Object implements ArchiveEntry, EntryStream
     readonly dataOffset: number;
     readonly devMajor: number;
     readonly devMinor: number;
-    readonly extraPaxHeaders: { [key: string]: string };
+    readonly extraPaxHeaders: JavaMap<string, string>;
     readonly file: Path;
     readonly groupId: number;
     readonly groupName: string;
@@ -136,18 +137,18 @@ export class TarArchiveEntry extends Object implements ArchiveEntry, EntryStream
     clearExtraPaxHeaders(): void;
     equals(arg0: Object | null): boolean;
     equals(arg0: TarArchiveEntry): boolean;
-    // private evaluateType(arg0: { [key: string]: string }, arg1: number[]): number;
+    // private evaluateType(arg0: JavaMap<string, string>, arg1: number[]): number;
     // private fill(arg0: number, arg1: number, arg2: number[], arg3: number): number;
-    fillGNUSparse0xData(arg0: { [key: string]: string }): void;
-    fillGNUSparse1xData(arg0: { [key: string]: string }): void;
-    fillStarSparseData(arg0: { [key: string]: string }): void;
+    fillGNUSparse0xData(arg0: JavaMap<string, string>): void;
+    fillGNUSparse1xData(arg0: JavaMap<string, string>): void;
+    fillStarSparseData(arg0: JavaMap<string, string>): void;
     getCreationTime(): FileTime;
     getDataOffset(): number;
     getDevMajor(): number;
     getDevMinor(): number;
     getDirectoryEntries(): TarArchiveEntry[];
     getExtraPaxHeader(arg0: string): string;
-    getExtraPaxHeaders(): { [key: string]: string };
+    getExtraPaxHeaders(): JavaMap<string, string>;
     getFile(): File;
     getGroupId(): number;
     getGroupName(): string;
@@ -194,16 +195,16 @@ export class TarArchiveEntry extends Object implements ArchiveEntry, EntryStream
     isStreamContiguous(): boolean;
     isSymbolicLink(): boolean;
     isTypeFlagUstar(): boolean;
-    // private isXstar(arg0: { [key: string]: string }, arg1: number[]): boolean;
+    // private isXstar(arg0: JavaMap<string, string>, arg1: number[]): boolean;
     // private parseOctalOrBinary(arg0: number[], arg1: number, arg2: number, arg3: boolean): number;
     parseTarHeader(arg0: number[]): void;
     parseTarHeader(arg0: number[], arg1: ZipEncoding): void;
     // private parseTarHeader(arg0: number[], arg1: ZipEncoding, arg2: boolean, arg3: boolean): void;
-    // private parseTarHeader(arg0: { [key: string]: string }, arg1: number[], arg2: ZipEncoding, arg3: boolean, arg4: boolean): void;
+    // private parseTarHeader(arg0: JavaMap<string, string>, arg1: number[], arg2: ZipEncoding, arg3: boolean, arg4: boolean): void;
     // private parseTarHeaderBlock(arg0: number[], arg1: ZipEncoding, arg2: boolean, arg3: boolean, arg4: number): number;
-    // private parseUstarHeaderBlock(arg0: { [key: string]: string }, arg1: number[], arg2: ZipEncoding, arg3: boolean, arg4: boolean): void;
+    // private parseUstarHeaderBlock(arg0: JavaMap<string, string>, arg1: number[], arg2: ZipEncoding, arg3: boolean, arg4: boolean): void;
     // private processPaxHeader(arg0: string, arg1: string): void;
-    // private processPaxHeader(arg0: string, arg1: string, arg2: { [key: string]: string }): void;
+    // private processPaxHeader(arg0: string, arg1: string, arg2: JavaMap<string, string>): void;
     // private readFileMode(arg0: Path, arg1: string, ...arg2: LinkOption[]): void;
     // private readOsSpecificProperties(arg0: Path, ...arg1: LinkOption[]): void;
     resolveIn(arg0: Path): Path;
@@ -229,7 +230,7 @@ export class TarArchiveEntry extends Object implements ArchiveEntry, EntryStream
     setUserId(arg0: number): void;
     setUserName(arg0: string): void;
     toString(): string;
-    updateEntryFromPaxHeaders(arg0: { [key: string]: string }): void;
+    updateEntryFromPaxHeaders(arg0: JavaMap<string, string>): void;
     writeEntryHeader(arg0: number[]): void;
     writeEntryHeader(arg0: number[], arg1: ZipEncoding, arg2: boolean): void;
     // private writeEntryHeaderField(arg0: number, arg1: number[], arg2: number, arg3: number, arg4: boolean): number;

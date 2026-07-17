@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Exception } from '../../../../../java/lang/Exception.d.ts'
 import type { DatagramPacket } from '../../../../../java/net/DatagramPacket.d.ts'
 import type { DatagramSocket } from '../../../../../java/net/DatagramSocket.d.ts'
@@ -21,7 +22,7 @@ export class QueryThreadGs4 extends GenericThread {
     // private serverName: string;
     // private serverPort: number;
     // private socket: DatagramSocket;
-    // private validChallenges: Map<SocketAddress, QueryThreadGs4$RequestChallenge>;
+    // private validChallenges: JavaMap<SocketAddress, QueryThreadGs4$RequestChallenge>;
     // private worldName: string;
     // private buildRuleResponse(packet: DatagramPacket): number[];
     // private getIdentBytes(src: SocketAddress): number[];

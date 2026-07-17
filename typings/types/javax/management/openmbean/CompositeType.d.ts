@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { CompositeData } from '../../../javax/management/openmbean/CompositeData.d.ts'
 import type { OpenType } from '../../../javax/management/openmbean/OpenType.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
@@ -8,8 +9,8 @@ export class CompositeType extends OpenType<CompositeData> {
     // private myHashCode: number;
     // private myNamesSet: string[];
     // private myToString: string;
-    // private nameToDescription: { [key: string]: string };
-    // private nameToType: { [key: string]: OpenType<Object> };
+    // private nameToDescription: JavaMap<string, string>;
+    // private nameToType: JavaMap<string, OpenType<Object>>;
     containsKey(arg0: string): boolean;
     equals(arg0: Object | null): boolean;
     getDescription(): string;

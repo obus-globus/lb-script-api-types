@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { StringTag } from '../../../../com/viaversion/nbt/tag/StringTag.d.ts'
 import type { Tag } from '../../../../com/viaversion/nbt/tag/Tag.d.ts'
 import type { UserConnection } from '../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
@@ -12,10 +13,10 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class RegistryDataRewriter extends Object implements RegistryDataRewriter_2 {
     constructor(arg0: Protocol<any, any, any, any>)
-    // private enchantmentEffectHandlers: { [key: string]: (param0: Map$Entry<string, Tag>[]) => void };
+    // private enchantmentEffectHandlers: JavaMap<string, (param0: Map$Entry<string, Tag>[]) => void>;
     // private protocol: Protocol<any, any, any, any>;
-    // private registryEntryHandlers: { [key: string]: (param0: string, param1: Map$Entry<string, Tag>[]) => void };
-    // private toAdd: { [key: string]: RegistryEntry[] };
+    // private registryEntryHandlers: JavaMap<string, (param0: string, param1: Map$Entry<string, Tag>[]) => void>;
+    // private toAdd: JavaMap<string, RegistryEntry[]>;
     // private toRemove: string[];
     addEnchantmentEffectRewriter(arg0: string, arg1: (param0: Map$Entry<string, Tag>[]) => void): void;
     addEntries(arg0: string, ...arg1: RegistryEntry[]): void;

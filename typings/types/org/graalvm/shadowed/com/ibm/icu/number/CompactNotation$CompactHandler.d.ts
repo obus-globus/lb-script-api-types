@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CompactData } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/number/CompactData.d.ts'
 import type { CompactData$CompactType } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/number/CompactData$CompactType.d.ts'
@@ -13,7 +14,7 @@ export class CompactNotation$CompactHandler extends Object implements MicroProps
     private constructor(notation: CompactNotation, locale: ULocale, nsName: string, compactType: CompactData$CompactType, rules: PluralRules, buildReference: MutablePatternModifier, safe: boolean, parent: MicroPropsGenerator)
     // private data: CompactData;
     // private parent: MicroPropsGenerator;
-    // private precomputedMods: { [key: string]: MutablePatternModifier$ImmutablePatternModifier };
+    // private precomputedMods: JavaMap<string, MutablePatternModifier$ImmutablePatternModifier>;
     // private rules: PluralRules;
     // private unsafePatternModifier: MutablePatternModifier;
     // private precomputeAllModifiers(buildReference: MutablePatternModifier): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { BufferedReader } from '../../../../../java/io/BufferedReader.d.ts'
 import type { FileSystem } from '../../../../../java/nio/file/FileSystem.d.ts'
 import type { Path } from '../../../../../java/nio/file/Path.d.ts'
@@ -7,7 +8,7 @@ import type { PathAllowList$ConfigEntry } from '../../../../../net/minecraft/wor
 export class PathAllowList extends Object implements PathMatcher {
     static readPlain(paramreader: BufferedReader): PathAllowList;
     constructor(entries: PathAllowList$ConfigEntry[])
-    // private compiledPaths: { [key: string]: (param0: Path) => boolean };
+    // private compiledPaths: JavaMap<string, (param0: Path) => boolean>;
     // private entries: PathAllowList$ConfigEntry[];
     getForFileSystem(fileSystem: FileSystem): (param0: Path) => boolean;
     matches(path: Path): boolean;

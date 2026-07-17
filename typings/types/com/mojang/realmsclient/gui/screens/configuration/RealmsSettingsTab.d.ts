@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { RealmsRegion } from '../../../../../../com/mojang/realmsclient/dto/RealmsRegion.d.ts'
 import type { RealmsServer } from '../../../../../../com/mojang/realmsclient/dto/RealmsServer.d.ts'
 import type { RegionSelectionPreference } from '../../../../../../com/mojang/realmsclient/dto/RegionSelectionPreference.d.ts'
@@ -14,14 +15,14 @@ import type { GridLayoutTab } from '../../../../../../net/minecraft/client/gui/c
 import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
 export class RealmsSettingsTab extends GridLayoutTab implements RealmsConfigurationTab {
     static TITLE: Component;
-    constructor(configurationScreen: RealmsConfigureWorldScreen, minecraft: Minecraft, serverData: RealmsServer, regionServiceQuality: Map<RealmsRegion, ServiceQuality>)
+    constructor(configurationScreen: RealmsConfigureWorldScreen, minecraft: Minecraft, serverData: RealmsServer, regionServiceQuality: JavaMap<RealmsRegion, ServiceQuality>)
     // private closeOpenButton: Button;
     // private configurationScreen: RealmsConfigureWorldScreen;
     // private descEdit: EditBox;
     // private minecraft: Minecraft;
     // private nameEdit: EditBox;
     // private preferredRegionSelection: RealmsSettingsTab$RegionSelection;
-    // private regionServiceQuality: Map<RealmsRegion, ServiceQuality>;
+    // private regionServiceQuality: JavaMap<RealmsRegion, ServiceQuality>;
     // private selectedRegionImageWidget: ImageWidget;
     // private selectedRegionStringWidget: StringWidget;
     // private serverData: RealmsServer;

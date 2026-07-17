@@ -1,3 +1,4 @@
+import type { JavaMap } from '../JavaMap.d.ts'
 import type { FileSystem } from '../java/nio/file/FileSystem.d.ts'
 import type { FileHandle } from '../okio/FileHandle.d.ts'
 import type { FileMetadata } from '../okio/FileMetadata.d.ts'
@@ -13,9 +14,9 @@ export class ZipFileSystem extends FileSystem_2 {
     static SYSTEM: FileSystem_2;
     static SYSTEM_TEMPORARY_DIRECTORY: Path;
     static get(self: FileSystem): FileSystem_2;
-    constructor(zipPath: Path, fileSystem: FileSystem_2, entries: Map<Path, ZipEntry>, comment: string | null)
+    constructor(zipPath: Path, fileSystem: FileSystem_2, entries: JavaMap<Path, ZipEntry>, comment: string | null)
     // private comment: string | null;
-    // private entries: Map<Path, ZipEntry>;
+    // private entries: JavaMap<Path, ZipEntry>;
     // private fileSystem: FileSystem_2;
     // private zipPath: Path;
     appendingSink(file: Path): Sink;

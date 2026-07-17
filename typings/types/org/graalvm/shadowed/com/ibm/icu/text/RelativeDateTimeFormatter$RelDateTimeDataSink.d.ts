@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { StringBuilder } from '../../../../../../../java/lang/StringBuilder.d.ts'
 import type { UResource$Key } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/UResource$Key.d.ts'
 import type { UResource$Sink } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/UResource$Sink.d.ts'
@@ -10,10 +11,10 @@ import type { RelativeDateTimeFormatter$Style } from '../../../../../../../org/g
 export class RelativeDateTimeFormatter$RelDateTimeDataSink extends UResource$Sink {
     constructor()
     // private pastFutureIndex: number;
-    // private qualitativeUnitMap: Map<RelativeDateTimeFormatter$Style, Map<RelativeDateTimeFormatter$AbsoluteUnit, Map<RelativeDateTimeFormatter$Direction, string>>>;
+    // private qualitativeUnitMap: JavaMap<RelativeDateTimeFormatter$Style, JavaMap<RelativeDateTimeFormatter$AbsoluteUnit, JavaMap<RelativeDateTimeFormatter$Direction, string>>>;
     // private sb: StringBuilder;
     // private style: RelativeDateTimeFormatter$Style;
-    // private styleRelUnitPatterns: Map<RelativeDateTimeFormatter$Style, Map<RelativeDateTimeFormatter$RelativeUnit, string[][]>>;
+    // private styleRelUnitPatterns: JavaMap<RelativeDateTimeFormatter$Style, JavaMap<RelativeDateTimeFormatter$RelativeUnit, string[][]>>;
     // private unit: RelativeDateTimeFormatter$RelDateTimeDataSink$DateTimeUnit;
     consumeTableRelative(key: UResource$Key, value: UResource$Value): void;
     consumeTableRelativeTime(key: UResource$Key, value: UResource$Value): void;

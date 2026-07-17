@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Stream } from '../../../../../java/util/stream/Stream.d.ts'
 import type { CompoundTag } from '../../../../../net/minecraft/nbt/CompoundTag.d.ts'
@@ -8,8 +9,8 @@ export class CommandStorage$Container extends SavedData {
     static CODEC: Codec<CommandStorage$Container>;
     static type(paramnamespace: string): SavedDataType<CommandStorage$Container>;
     private constructor()
-    private constructor(storage: { [key: string]: CompoundTag })
-    // private storage: { [key: string]: CompoundTag };
+    private constructor(storage: JavaMap<string, CompoundTag>)
+    // private storage: JavaMap<string, CompoundTag>;
     get(id: string): CompoundTag;
     getKeys(namespace: string): Stream<Identifier>;
     put(id: string, contents: CompoundTag): void;

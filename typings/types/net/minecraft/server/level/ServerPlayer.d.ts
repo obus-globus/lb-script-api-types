@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { GameProfile } from '../../../../com/mojang/authlib/GameProfile.d.ts'
 import type { Either } from '../../../../com/mojang/datafixers/util/Either.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
@@ -319,7 +320,7 @@ export class ServerPlayer extends Player implements PacketContextProvider {
     giveExperiencePoints(i: number): void;
     handleExtraItemsCreatedOnUse(extraItems: ItemStack): void;
     handleShoulderEntities(): void;
-    // private handleTeamKill(source: ScoreHolder, target: ScoreHolder, criteriaByTeam: Map<TeamColor, ObjectiveCriteria>): void;
+    // private handleTeamKill(source: ScoreHolder, target: ScoreHolder, criteriaByTeam: JavaMap<TeamColor, ObjectiveCriteria>): void;
     hasChangedDimension(): void;
     hasDisconnected(): boolean;
     hurtServer(level: ServerLevel, source: DamageSource, damage: number): boolean;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
 import type { Field } from '../../../../../../../../java/lang/reflect/Field.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
@@ -17,6 +18,6 @@ export class ReflectiveTypeAdapterFactory extends Object implements TypeAdapterF
     create<T extends unknown>(arg0: Gson, arg1: TypeToken<T>): TypeAdapter<T>;
     // private createBoundField(arg0: Gson, arg1: Field, arg2: string, arg3: TypeToken<Object>, arg4: boolean, arg5: boolean): ReflectiveTypeAdapterFactory$BoundField;
     excludeField(arg0: Field, arg1: boolean): boolean;
-    // private getBoundFields(arg0: Gson, arg1: TypeToken<Object>, arg2: Class<Object>): { [key: string]: ReflectiveTypeAdapterFactory$BoundField };
+    // private getBoundFields(arg0: Gson, arg1: TypeToken<Object>, arg2: Class<Object>): JavaMap<string, ReflectiveTypeAdapterFactory$BoundField>;
     // private getFieldName(arg0: Field): string;
 }

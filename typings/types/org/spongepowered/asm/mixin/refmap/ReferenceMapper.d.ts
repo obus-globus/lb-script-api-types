@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Reader } from '../../../../../java/io/Reader.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Appendable } from '../../../../../java/lang/Appendable.d.ts'
@@ -10,8 +11,8 @@ export class ReferenceMapper extends Object implements Serializable, IReferenceM
     static read(paramarg0: string): ReferenceMapper;
     constructor()
     readonly context: string;
-    // private data: { [key: string]: { [key: string]: { [key: string]: string } } };
-    // private mappings: { [key: string]: { [key: string]: string } };
+    // private data: JavaMap<string, JavaMap<string, JavaMap<string, string>>>;
+    // private mappings: JavaMap<string, JavaMap<string, string>>;
     // private readOnly: boolean;
     // private resource: string;
     addMapping(arg0: string, arg1: string, arg2: string, arg3: string): string;
@@ -20,7 +21,7 @@ export class ReferenceMapper extends Object implements Serializable, IReferenceM
     getStatus(): string;
     isDefault(): boolean;
     remap(arg0: string, arg1: string): string;
-    // private remap(arg0: { [key: string]: { [key: string]: string } }, arg1: string, arg2: string): string;
+    // private remap(arg0: JavaMap<string, JavaMap<string, string>>, arg1: string, arg2: string): string;
     remapWithContext(arg0: string, arg1: string, arg2: string): string;
     setContext(arg0: string): void;
     // private setResourceName(arg0: string): void;

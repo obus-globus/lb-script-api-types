@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Writer } from '../../../../../java/io/Writer.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { BigDecimal } from '../../../../../java/math/BigDecimal.d.ts'
@@ -30,12 +31,12 @@ export class JSONObject extends Object {
     constructor(source: string)
     constructor(baseName: string, locale: Locale)
     constructor(source: string, jsonParserConfiguration: JSONParserConfiguration)
-    constructor(m: Map<Object | null, Object | null>)
-    constructor(m: Map<Object | null, Object | null>, jsonParserConfiguration: JSONParserConfiguration)
+    constructor(m: JavaMap<Object | null, Object | null>)
+    constructor(m: JavaMap<Object | null, Object | null>, jsonParserConfiguration: JSONParserConfiguration)
     constructor(jo: JSONObject, ...names: string[])
     constructor(x: JSONTokener)
     constructor(x: JSONTokener, jsonParserConfiguration: JSONParserConfiguration)
-    // private map: { [key: string]: Object };
+    // private map: JavaMap<string, Object>;
     accumulate(key: string, value: Object): JSONObject;
     append(key: string, value: Object): JSONObject;
     clear(): void;
@@ -51,7 +52,7 @@ export class JSONObject extends Object {
     getJSONArray(key: string): Object[];
     getJSONObject(key: string): JSONObject;
     getLong(key: string): number;
-    getMapType(): Class<Map<Object | null, Object | null>>;
+    getMapType(): Class<JavaMap<Object | null, Object | null>>;
     getNumber(key: string): Number;
     getString(key: string): string;
     has(key: string): boolean;
@@ -103,7 +104,7 @@ export class JSONObject extends Object {
     put(key: string, value: boolean): JSONObject;
     put(key: string, value: number): JSONObject;
     put(key: string, value: (Object | null)[]): JSONObject;
-    put(key: string, value: Map<Object | null, Object | null>): JSONObject;
+    put(key: string, value: JavaMap<Object | null, Object | null>): JSONObject;
     putOnce(key: string, value: Object): JSONObject;
     putOpt(key: string, value: Object): JSONObject;
     query(jsonPointer: string): Object;
@@ -111,7 +112,7 @@ export class JSONObject extends Object {
     remove(key: string): Object;
     similar(other: Object): boolean;
     toJSONArray(names: Object[]): Object[];
-    toMap(): { [key: string]: Object };
+    toMap(): JavaMap<string, Object>;
     toString(): string;
     toString(indentFactor: number): string;
     write(writer: Writer): Writer;

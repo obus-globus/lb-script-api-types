@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { HostClassDesc } from '../../../../com/oracle/truffle/host/HostClassDesc.d.ts'
 import type { HostObject } from '../../../../com/oracle/truffle/host/HostObject.d.ts'
 import type { HostTargetMapping } from '../../../../com/oracle/truffle/host/HostTargetMapping.d.ts'
@@ -30,7 +31,7 @@ export class HostClassCache extends Object {
     // private mapAccess: boolean;
     // private methodLookup: MethodHandles$Lookup;
     // private polyglotHostAccess: AbstractPolyglotImpl$AbstractHostAccess;
-    // private targetMappings: Map<Class<Object>, Object>;
+    // private targetMappings: JavaMap<Class<Object>, Object>;
     // private weakHostClassRef: WeakReference<HostClassCache>;
     allowsAccess(m: Constructor<Object>): boolean;
     allowsAccess(f: Field): boolean;

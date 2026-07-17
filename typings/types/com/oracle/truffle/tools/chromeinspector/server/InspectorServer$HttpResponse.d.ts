@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { ByteChannel } from '../../../../../../java/nio/channels/ByteChannel.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class InspectorServer$HttpResponse extends Object {
@@ -7,7 +8,7 @@ export class InspectorServer$HttpResponse extends Object {
     // private content: string;
     // private contentType: string;
     // private encoding: string;
-    // private headers: { [key: string]: string };
+    // private headers: JavaMap<string, string>;
     // private status: string;
     addHeader(name: string, value: string): void;
     writeTo(channel: ByteChannel): void;

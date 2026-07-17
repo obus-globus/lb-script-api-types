@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { JobParameters } from '../../../../../../io/github/douira/glsl_transformer/ast/transform/JobParameters.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { AlphaTest } from '../../../../../../net/irisshaders/iris/gl/blending/AlphaTest.d.ts'
@@ -8,7 +9,7 @@ import type { Parameters } from '../../../../../../net/irisshaders/iris/pipeline
 import type { TextureStage } from '../../../../../../net/irisshaders/iris/shaderpack/texture/TextureStage.d.ts'
 export class SodiumParameters extends Parameters {
     static EMPTY: JobParameters;
-    constructor(arg0: Patch, arg1: Map<Tri<string, TextureType, TextureStage>, string>, arg2: AlphaTest, arg3: boolean)
+    constructor(arg0: Patch, arg1: JavaMap<Tri<string, TextureType, TextureStage>, string>, arg2: AlphaTest, arg3: boolean)
     alpha: AlphaTest;
     shadow: boolean;
     equals(arg0: Object | null): boolean;

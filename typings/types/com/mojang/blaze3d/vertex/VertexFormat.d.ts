@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { VertexFormat$Builder } from '../../../../com/mojang/blaze3d/vertex/VertexFormat$Builder.d.ts'
 import type { VertexFormatElement } from '../../../../com/mojang/blaze3d/vertex/VertexFormatElement.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -8,7 +9,7 @@ export class VertexFormat extends Object implements VertexFormatExtensions, Vert
     static builder(paramstepRate: number): VertexFormat$Builder;
     private constructor(elements: VertexFormatElement[], vertexSize: number, stepRate: number)
     // private elementValues: VertexFormatElement[];
-    readonly elements: { [key: string]: VertexFormatElement };
+    readonly elements: JavaMap<string, VertexFormatElement>;
     // private sodium$globalId: number;
     readonly stepRate: number;
     readonly vertexSize: number;

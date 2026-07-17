@@ -1,10 +1,11 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Byte2DoubleMap$Entry } from '../../../../../it/unimi/dsi/fastutil/bytes/Byte2DoubleMap$Entry.d.ts'
 import type { Byte2DoubleOpenCustomHashMap$MapEntry } from '../../../../../it/unimi/dsi/fastutil/bytes/Byte2DoubleOpenCustomHashMap$MapEntry.d.ts'
 import type { Byte2DoubleOpenCustomHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/bytes/Byte2DoubleOpenCustomHashMap$MapIterator.d.ts'
 import type { ObjectIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 export class Byte2DoubleOpenCustomHashMap$FastEntryIterator extends Byte2DoubleOpenCustomHashMap$MapIterator<(param0: Byte2DoubleMap$Entry) => void> implements ObjectIterator<Byte2DoubleMap$Entry> {
-    private constructor(null_: { [key: string]: any })
+    private constructor(null_: JavaMap<any, any>)
     // private entry: Byte2DoubleOpenCustomHashMap$MapEntry;
     acceptOnIndex(arg0: (param0: Byte2DoubleMap$Entry) => void, arg1: number): void;
     next(): Byte2DoubleOpenCustomHashMap$MapEntry;

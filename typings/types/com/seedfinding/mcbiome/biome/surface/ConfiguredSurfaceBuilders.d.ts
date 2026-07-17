@@ -1,9 +1,10 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { SurfaceBuilder } from '../../../../../com/seedfinding/mcbiome/biome/surface/builder/SurfaceBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ConfiguredSurfaceBuilders extends Object {
     static BADLANDS: SurfaceBuilder;
     static BASALT_DELTAS: SurfaceBuilder;
-    static CONFIGURED_SURFACE_BUILDERS: { [key: string]: SurfaceBuilder };
+    static CONFIGURED_SURFACE_BUILDERS: JavaMap<string, SurfaceBuilder>;
     static CRIMSON_FOREST: SurfaceBuilder;
     static DESERT: SurfaceBuilder;
     static END: SurfaceBuilder;

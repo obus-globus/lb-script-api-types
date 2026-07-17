@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ExtensionRegistryLite$ObjectIntPair } from '../../../../../../kotlin/reflect/jvm/internal/impl/protobuf/ExtensionRegistryLite$ObjectIntPair.d.ts'
 import type { GeneratedMessageLite$GeneratedExtension } from '../../../../../../kotlin/reflect/jvm/internal/impl/protobuf/GeneratedMessageLite$GeneratedExtension.d.ts'
@@ -7,7 +8,7 @@ export class ExtensionRegistryLite extends Object {
     static newInstance(): ExtensionRegistryLite;
     constructor()
     constructor(arg0: ExtensionRegistryLite)
-    // private extensionsByNumber: Map<ExtensionRegistryLite$ObjectIntPair, GeneratedMessageLite$GeneratedExtension<any, Object>>;
+    // private extensionsByNumber: JavaMap<ExtensionRegistryLite$ObjectIntPair, GeneratedMessageLite$GeneratedExtension<any, Object>>;
     add(arg0: GeneratedMessageLite$GeneratedExtension<any, Object>): void;
     findLiteExtensionByNumber<ContainingType extends MessageLite>(arg0: ContainingType, arg1: number): GeneratedMessageLite$GeneratedExtension<ContainingType, Object>;
     getUnmodifiable(): ExtensionRegistryLite;

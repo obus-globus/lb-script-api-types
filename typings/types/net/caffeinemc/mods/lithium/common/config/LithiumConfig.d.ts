@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Option } from '../../../../../../net/caffeinemc/mods/lithium/common/config/Option.d.ts'
@@ -5,7 +6,7 @@ import type { PlatformMixinOverrides$MixinOverride } from '../../../../../../net
 export class LithiumConfig extends Object {
     static load(paramarg0: File): LithiumConfig;
     private constructor()
-    // private options: { [key: string]: Option };
+    // private options: JavaMap<string, Option>;
     // private optionsWithDependencies: Option[];
     // private addMixinRule(arg0: string, arg1: boolean): void;
     // private addRuleDependency(arg0: string, arg1: string, arg2: boolean): void;
@@ -17,5 +18,5 @@ export class LithiumConfig extends Object {
     getOptionOverrideCount(): number;
     getParent(arg0: Option): Option;
     isOptionEnabled(arg0: string): boolean;
-    // private readProperties(arg0: { [key: string]: any }): void;
+    // private readProperties(arg0: JavaMap<any, any>): void;
 }

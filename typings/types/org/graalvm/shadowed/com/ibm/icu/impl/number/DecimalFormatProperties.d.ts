@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { ObjectInputStream } from '../../../../../../../../java/io/ObjectInputStream.d.ts'
 import type { ObjectOutputStream } from '../../../../../../../../java/io/ObjectOutputStream.d.ts'
 import type { Serializable } from '../../../../../../../../java/io/Serializable.d.ts'
@@ -16,7 +17,7 @@ import type { Currency } from '../../../../../../../../org/graalvm/shadowed/com/
 import type { Currency$CurrencyUsage } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/Currency$CurrencyUsage.d.ts'
 export class DecimalFormatProperties extends Object implements Serializable, Cloneable {
     constructor()
-    readonly compactCustomData: { [key: string]: { [key: string]: string } };
+    readonly compactCustomData: JavaMap<string, JavaMap<string, string>>;
     readonly compactStyle: CompactDecimalFormat$CompactStyle;
     readonly currency: Currency;
     readonly currencyAsDecimal: boolean;
@@ -73,7 +74,7 @@ export class DecimalFormatProperties extends Object implements Serializable, Clo
     clone(): DecimalFormatProperties;
     copyFrom(other: DecimalFormatProperties): DecimalFormatProperties;
     equals(other: Object | null): boolean;
-    getCompactCustomData(): { [key: string]: { [key: string]: string } };
+    getCompactCustomData(): JavaMap<string, JavaMap<string, string>>;
     getCompactStyle(): CompactDecimalFormat$CompactStyle;
     getCurrency(): Currency;
     getCurrencyAsDecimal(): boolean;
@@ -119,7 +120,7 @@ export class DecimalFormatProperties extends Object implements Serializable, Clo
     hashCode(): number;
     // private readObject(ois: ObjectInputStream): void;
     readObjectImpl(ois: ObjectInputStream): void;
-    setCompactCustomData(compactCustomData: { [key: string]: { [key: string]: string } }): DecimalFormatProperties;
+    setCompactCustomData(compactCustomData: JavaMap<string, JavaMap<string, string>>): DecimalFormatProperties;
     setCompactStyle(compactStyle: CompactDecimalFormat$CompactStyle): DecimalFormatProperties;
     setCurrency(currency: Currency): DecimalFormatProperties;
     setCurrencyAsDecimal(currencyAsDecimal: boolean): DecimalFormatProperties;

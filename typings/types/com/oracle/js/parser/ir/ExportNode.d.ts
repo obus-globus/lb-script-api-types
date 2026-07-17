@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Expression } from '../../../../../com/oracle/js/parser/ir/Expression.d.ts'
 import type { LexicalContext } from '../../../../../com/oracle/js/parser/ir/LexicalContext.d.ts'
 import type { LiteralNode } from '../../../../../com/oracle/js/parser/ir/LiteralNode.d.ts'
@@ -11,11 +12,11 @@ import type { TruffleString } from '../../../../../com/oracle/truffle/api/string
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ExportNode extends Node {
-    constructor(token: number, start: number, finish: number, exportClause: NamedExportsNode, moduleSpecifier: LiteralNode<TruffleString>, attributes: Map<TruffleString, TruffleString>)
+    constructor(token: number, start: number, finish: number, exportClause: NamedExportsNode, moduleSpecifier: LiteralNode<TruffleString>, attributes: JavaMap<TruffleString, TruffleString>)
     constructor(token: number, start: number, finish: number, ident: PropertyKey, expression: Expression, isDefault: boolean)
-    constructor(token: number, start: number, finish: number, ident: PropertyKey, moduleSpecifier: LiteralNode<TruffleString>, attributes: Map<TruffleString, TruffleString>)
+    constructor(token: number, start: number, finish: number, ident: PropertyKey, moduleSpecifier: LiteralNode<TruffleString>, attributes: JavaMap<TruffleString, TruffleString>)
     constructor(token: number, start: number, finish: number, ident: PropertyKey, var_: VarNode)
-    readonly attributes: Map<TruffleString, TruffleString>;
+    readonly attributes: JavaMap<TruffleString, TruffleString>;
     // private exportIdent: PropertyKey;
     readonly expression: Expression;
     // private isDefault: boolean;
@@ -24,7 +25,7 @@ export class ExportNode extends Node {
     readonly var: VarNode;
     accept(visitor: NodeVisitor<LexicalContext>): Node;
     accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
-    getAttributes(): Map<TruffleString, TruffleString>;
+    getAttributes(): JavaMap<TruffleString, TruffleString>;
     getExportIdentifier(): PropertyKey;
     getExpression(): Expression;
     getModuleSpecifier(): LiteralNode<TruffleString>;

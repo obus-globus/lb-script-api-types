@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { UserConnection } from '../../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { EntityType } from '../../../../../../com/viaversion/viaversion/api/minecraft/entities/EntityType.d.ts'
 import type { EntityTrackerBase } from '../../../../../../com/viaversion/viaversion/data/entity/EntityTrackerBase.d.ts'
@@ -5,7 +6,7 @@ import type { EntityTracker1_21_2$BoatEntity } from '../../../../../../com/viave
 import type { UUID } from '../../../../../../java/util/UUID.d.ts'
 export class EntityTracker1_21_2 extends EntityTrackerBase {
     constructor(arg0: UserConnection)
-    // private boats: { [key: string]: any };
+    // private boats: JavaMap<any, any>;
     playerMaxHealthAttributeValue(): number;
     removeEntity(arg0: number): void;
     setPlayerMaxHealthAttributeValue(arg0: number): void;

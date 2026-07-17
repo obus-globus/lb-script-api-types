@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { KotlinBuiltIns } from '../../../../../../../kotlin/reflect/jvm/internal/impl/builtins/KotlinBuiltIns.d.ts'
 import type { PrimitiveType } from '../../../../../../../kotlin/reflect/jvm/internal/impl/builtins/PrimitiveType.d.ts'
@@ -144,7 +145,7 @@ export class SimpleClassicTypeSystemContext extends Object implements ClassicTyp
     typeConstructor(arg0: CapturedTypeMarker): CapturedTypeConstructorMarker;
     typeConstructor(arg0: KotlinTypeMarker): TypeConstructorMarker;
     typeConstructor(arg0: RigidTypeMarker): TypeConstructorMarker;
-    typeSubstitutorForUnderlyingType(arg0: Map<TypeConstructorMarker, KotlinTypeMarker>): TypeSubstitutorMarker;
+    typeSubstitutorForUnderlyingType(arg0: JavaMap<TypeConstructorMarker, KotlinTypeMarker>): TypeSubstitutorMarker;
     upperBound(arg0: FlexibleTypeMarker): SimpleTypeMarker;
     upperBoundIfFlexible(arg0: KotlinTypeMarker): RigidTypeMarker;
     withNullability(arg0: KotlinTypeMarker, arg1: boolean): KotlinTypeMarker;

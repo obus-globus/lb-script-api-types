@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Appendable } from '../../java/lang/Appendable.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
 import type { Comparator } from '../../java/util/Comparator.d.ts'
@@ -24,14 +25,14 @@ export class CollectionsKt___CollectionsKt extends CollectionsKt___CollectionsJv
     static asReversed<T extends unknown>(self: T[]): T[];
     static asReversedMutable<T extends unknown>(self: T[]): T[];
     static asSequence<T extends unknown>(self: T[]): Sequence<T>;
-    static associate<K extends unknown, V extends unknown, T extends unknown>(self: T[], transform: (param0: T) => Pair<K, V>): Map<K, V>;
-    static associateBy<K extends unknown, V extends unknown, T extends unknown>(self: T[], keySelector: (param0: T) => K, valueTransform: (param0: T) => V): Map<K, V>;
-    static associateBy<K extends unknown, T extends unknown>(self: T[], keySelector: (param0: T) => K): Map<K, T>;
-    static associateByTo<M extends Map<K, T>, T extends unknown, K extends unknown>(self: T[], destination: M, keySelector: (param0: T) => K): M;
-    static associateByTo<M extends Map<K, V>, T extends unknown, K extends unknown, V extends unknown>(self: T[], destination: M, keySelector: (param0: T) => K, valueTransform: (param0: T) => V): M;
-    static associateTo<M extends Map<K, V>, T extends unknown, K extends unknown, V extends unknown>(self: T[], destination: M, transform: (param0: T) => Pair<K, V>): M;
-    static associateWith<K extends unknown, V extends unknown>(self: K[], valueSelector: (param0: K) => V): Map<K, V>;
-    static associateWithTo<M extends Map<K, V>, K extends unknown, V extends unknown>(self: K[], destination: M, valueSelector: (param0: K) => V): M;
+    static associate<K extends unknown, V extends unknown, T extends unknown>(self: T[], transform: (param0: T) => Pair<K, V>): JavaMap<K, V>;
+    static associateBy<K extends unknown, V extends unknown, T extends unknown>(self: T[], keySelector: (param0: T) => K, valueTransform: (param0: T) => V): JavaMap<K, V>;
+    static associateBy<K extends unknown, T extends unknown>(self: T[], keySelector: (param0: T) => K): JavaMap<K, T>;
+    static associateByTo<M extends JavaMap<K, T>, T extends unknown, K extends unknown>(self: T[], destination: M, keySelector: (param0: T) => K): M;
+    static associateByTo<M extends JavaMap<K, V>, T extends unknown, K extends unknown, V extends unknown>(self: T[], destination: M, keySelector: (param0: T) => K, valueTransform: (param0: T) => V): M;
+    static associateTo<M extends JavaMap<K, V>, T extends unknown, K extends unknown, V extends unknown>(self: T[], destination: M, transform: (param0: T) => Pair<K, V>): M;
+    static associateWith<K extends unknown, V extends unknown>(self: K[], valueSelector: (param0: K) => V): JavaMap<K, V>;
+    static associateWithTo<M extends JavaMap<K, V>, K extends unknown, V extends unknown>(self: K[], destination: M, valueSelector: (param0: K) => V): M;
     static averageOfByte(self: number[]): number;
     static averageOfDouble(self: number[]): number;
     static averageOfFloat(self: number[]): number;
@@ -97,10 +98,10 @@ export class CollectionsKt___CollectionsKt extends CollectionsKt___CollectionsJv
     static getIndices(paramarg0: Object[]): { start: number; endInclusive: number; step: number };
     static getLastIndex<T extends unknown>(paramarg0: T[]): number;
     static getOrNull<T extends unknown>(self: T[], index: number): T | null;
-    static groupBy<K extends unknown, V extends unknown, T extends unknown>(self: T[], keySelector: (param0: T) => K, valueTransform: (param0: T) => V): Map<K, V[]>;
-    static groupBy<K extends unknown, T extends unknown>(self: T[], keySelector: (param0: T) => K): Map<K, T[]>;
-    static groupByTo<M extends Map<K, T[]>, T extends unknown, K extends unknown>(self: T[], destination: M, keySelector: (param0: T) => K): M;
-    static groupByTo<M extends Map<K, V[]>, T extends unknown, K extends unknown, V extends unknown>(self: T[], destination: M, keySelector: (param0: T) => K, valueTransform: (param0: T) => V): M;
+    static groupBy<K extends unknown, V extends unknown, T extends unknown>(self: T[], keySelector: (param0: T) => K, valueTransform: (param0: T) => V): JavaMap<K, V[]>;
+    static groupBy<K extends unknown, T extends unknown>(self: T[], keySelector: (param0: T) => K): JavaMap<K, T[]>;
+    static groupByTo<M extends JavaMap<K, T[]>, T extends unknown, K extends unknown>(self: T[], destination: M, keySelector: (param0: T) => K): M;
+    static groupByTo<M extends JavaMap<K, V[]>, T extends unknown, K extends unknown, V extends unknown>(self: T[], destination: M, keySelector: (param0: T) => K, valueTransform: (param0: T) => V): M;
     static groupingBy<T extends unknown, K extends unknown>(self: T[], keySelector: (param0: T) => K): Grouping<T, K>;
     static indexOf<T extends unknown>(self: T[], element: T): number;
     static indexOfFirst<T extends unknown>(self: T[], predicate: (param0: T) => boolean): number;

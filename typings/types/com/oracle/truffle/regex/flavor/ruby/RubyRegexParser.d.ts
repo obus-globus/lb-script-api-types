@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { AbstractRegexObject } from '../../../../../../com/oracle/truffle/regex/AbstractRegexObject.d.ts'
 import type { RegexLanguage } from '../../../../../../com/oracle/truffle/regex/RegexLanguage.d.ts'
 import type { RegexSource } from '../../../../../../com/oracle/truffle/regex/RegexSource.d.ts'
@@ -38,7 +39,7 @@ export class RubyRegexParser extends Object implements RegexParser, RegexValidat
     // private inPattern: string;
     // private inSource: RegexSource;
     // private lookbehindDepth: number;
-    readonly namedCaptureGroups: { [key: string]: number[] };
+    readonly namedCaptureGroups: JavaMap<string, number[]>;
     // private numberOfCaptureGroups: number;
     // private parseDepth: number;
     // private position: number;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { EntityRenderStateAddition } from '../../../../../../net/ccbluex/liquidbounce/interfaces/EntityRenderStateAddition.d.ts'
 import type { FabricRenderState } from '../../../../../../net/fabricmc/fabric/api/client/rendering/v1/FabricRenderState.d.ts'
@@ -29,7 +30,7 @@ export class EntityRenderState extends Object implements EntityRenderStateAdditi
     nameTagAttachment: Vec3;
     outlineColor: number;
     passengerOffset: Vec3;
-    // private renderStateData: Map<Object | null, Object | null>;
+    // private renderStateData: JavaMap<Object | null, Object | null>;
     scoreText: Component;
     shadowPieces: EntityRenderState$ShadowPiece[];
     shadowRadius: number;

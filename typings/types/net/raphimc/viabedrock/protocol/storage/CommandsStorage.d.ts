@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { CommandDispatcher } from '../../../../../com/mojang/brigadier/CommandDispatcher.d.ts'
 import type { Suggestions } from '../../../../../com/mojang/brigadier/suggestion/Suggestions.d.ts'
 import type { CommandNode } from '../../../../../com/mojang/brigadier/tree/CommandNode.d.ts'
@@ -14,11 +15,11 @@ export class CommandsStorage extends StoredObject {
     constructor(arg0: UserConnection, arg1: CommandData[])
     // private commands: CommandData[];
     // private dispatcher: CommandDispatcher<UserConnection>;
-    // private softEnumMap: { [key: string]: CommandData$EnumData };
+    // private softEnumMap: JavaMap<string, CommandData$EnumData>;
     // private buildCommandTree(): void;
     complete(arg0: string): Suggestions;
     execute(arg0: string): number;
-    // private getNodeIndices(arg0: RootCommandNode<UserConnection>): Map<CommandNode<UserConnection>, number>;
+    // private getNodeIndices(arg0: RootCommandNode<UserConnection>): JavaMap<CommandNode<UserConnection>, number>;
     getSoftEnum(arg0: string): CommandData$EnumData;
     updateCommandTree(): void;
     writeCommandTree(arg0: PacketWrapper): void;

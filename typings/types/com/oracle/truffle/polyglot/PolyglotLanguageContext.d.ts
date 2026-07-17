@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { CallTarget } from '../../../../com/oracle/truffle/api/CallTarget.d.ts'
 import type { TruffleLanguage$Env } from '../../../../com/oracle/truffle/api/TruffleLanguage$Env.d.ts'
 import type { TruffleLanguage$ExitMode } from '../../../../com/oracle/truffle/api/TruffleLanguage$ExitMode.d.ts'
@@ -53,7 +54,7 @@ export class PolyglotLanguageContext extends Object implements PolyglotImpl$VMOb
     exitContext(exitMode: TruffleLanguage$ExitMode, exitCode: number): boolean;
     finalizeContext(mustSucceed: boolean, notifyInstruments: boolean): boolean;
     getAPIAccess(): AbstractPolyglotImpl$APIAccess;
-    getAccessibleLanguages(allowInternalAndDependent: boolean): { [key: string]: LanguageInfo };
+    getAccessibleLanguages(allowInternalAndDependent: boolean): JavaMap<string, LanguageInfo>;
     getContextImpl(): Object;
     getEngine(): PolyglotEngineImpl;
     getHostBindings(): Object;

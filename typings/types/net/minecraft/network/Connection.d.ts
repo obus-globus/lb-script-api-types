@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { IConnection } from '../../../com/viaversion/viafabricplus/injection/access/core/IConnection.d.ts'
 import type { UserConnection } from '../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { ProtocolVersion } from '../../../com/viaversion/viaversion/api/protocol/version/ProtocolVersion.d.ts'
@@ -62,7 +63,7 @@ export class Connection extends SimpleChannelInboundHandler<Packet<any>> impleme
     readonly packetContext: PacketContextImpl;
     readonly packetListener: PacketListener;
     pendingActions: (param0: Connection) => void[];
-    // private playChannels: Map<Object | null, Object | null>;
+    // private playChannels: JavaMap<Object | null, Object | null>;
     // private receivedPackets: number;
     readonly receiving: PacketFlow;
     // private sendLoginDisconnect: boolean;

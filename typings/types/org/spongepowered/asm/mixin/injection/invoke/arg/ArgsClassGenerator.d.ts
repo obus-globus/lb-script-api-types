@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { ClassVisitor } from '../../../../../../../org/objectweb/asm/ClassVisitor.d.ts'
 import type { ClassNode } from '../../../../../../../org/objectweb/asm/tree/ClassNode.d.ts'
@@ -12,8 +13,8 @@ export class ArgsClassGenerator extends Object implements IClassGenerator {
     static GETTER_PREFIX: string;
     static SYNTHETIC_PACKAGE: string;
     constructor(arg0: IConsumer<ISyntheticClassInfo>)
-    // private descToClass: { [key: string]: ArgsClassGenerator$ArgsClassInfo };
-    // private nameToClass: { [key: string]: ArgsClassGenerator$ArgsClassInfo };
+    // private descToClass: JavaMap<string, ArgsClassGenerator$ArgsClassInfo>;
+    // private nameToClass: JavaMap<string, ArgsClassGenerator$ArgsClassInfo>;
     // private nextIndex: number;
     // private registry: IConsumer<ISyntheticClassInfo>;
     generate(arg0: string, arg1: ClassNode): boolean;

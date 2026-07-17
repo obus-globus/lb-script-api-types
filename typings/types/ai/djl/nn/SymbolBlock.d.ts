@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { NDManager } from '../../../ai/djl/ndarray/NDManager.d.ts'
 import type { DataType } from '../../../ai/djl/ndarray/types/DataType.d.ts'
 import type { Shape } from '../../../ai/djl/ndarray/types/Shape.d.ts'
@@ -19,7 +20,7 @@ export interface SymbolBlock extends Block, Object {
     forward(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean): (Object | null)[];
     freezeParameters(arg0: boolean): void;
     freezeParameters(arg0: boolean, arg1: (param0: Parameter) => boolean): void;
-    getCustomMetadata(): { [key: string]: string };
+    getCustomMetadata(): JavaMap<string, string>;
     getOutputShapes(arg0: Shape[], arg1: DataType[]): Shape[];
     isInitialized(): boolean;
     loadParameters(arg0: NDManager, arg1: DataInputStream): void;

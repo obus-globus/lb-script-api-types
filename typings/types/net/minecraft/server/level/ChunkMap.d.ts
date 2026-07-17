@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { DataFixer } from '../../../../com/mojang/datafixers/DataFixer.d.ts'
 import type { Dynamic } from '../../../../com/mojang/serialization/Dynamic.d.ts'
 import type { Writer } from '../../../../java/io/Writer.d.ts'
@@ -74,18 +75,18 @@ export class ChunkMap extends SimpleRegionStorage implements ChunkMapAccessor, C
     // private activeChunkWrites: AtomicInteger;
     // private chunkGeneratorState: ChunkGeneratorStructureState;
     // private chunkStatusListener: (param0: ChunkPos, param1: FullChunkStatus) => void;
-    // private chunkTypeCache: { [key: string]: any };
+    // private chunkTypeCache: JavaMap<any, any>;
     // private chunksToEagerlySave: (Object | null)[];
     readonly distanceManager: ChunkMap$DistanceManager;
-    readonly entityMap: { [key: string]: any };
+    readonly entityMap: JavaMap<any, any>;
     level: ServerLevel;
     // private lightEngine: ThreadedLevelLightEngine;
     // private lightTaskDispatcher: ChunkTaskDispatcher;
     // private mainThreadExecutor: BlockableEventLoop<() => void>;
     // private modified: boolean;
-    // private nextChunkSaveTime: { [key: string]: any };
+    // private nextChunkSaveTime: JavaMap<any, any>;
     // private pendingGenerationTasks: ChunkGenerationTask[];
-    // private pendingUnloads: { [key: string]: any };
+    // private pendingUnloads: JavaMap<any, any>;
     // private playerMap: PlayerMap;
     // private poiManager: PoiManager;
     // private randomState: RandomState;
@@ -94,8 +95,8 @@ export class ChunkMap extends SimpleRegionStorage implements ChunkMapAccessor, C
     // private ticketStorage: TicketStorage;
     // private toDrop: (Object | null)[];
     // private unloadQueue: () => void[];
-    // private updatingChunkMap: { [key: string]: any };
-    // private visibleChunkMap: { [key: string]: any };
+    // private updatingChunkMap: JavaMap<any, any>;
+    // private visibleChunkMap: JavaMap<any, any>;
     // private worldGenContext: WorldGenContext;
     // private worldgenTaskDispatcher: ChunkTaskDispatcher;
     acquireGeneration(chunkNode: number): GenerationChunkHolder;

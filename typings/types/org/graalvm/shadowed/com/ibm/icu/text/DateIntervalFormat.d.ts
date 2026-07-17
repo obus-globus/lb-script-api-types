@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { ObjectInputStream } from '../../../../../../../java/io/ObjectInputStream.d.ts'
 import type { StringBuffer } from '../../../../../../../java/lang/StringBuffer.d.ts'
 import type { StringBuilder } from '../../../../../../../java/lang/StringBuilder.d.ts'
@@ -38,13 +39,13 @@ export class DateIntervalFormat extends UFormat implements Cloneable {
     // private fDateTimeFormat: string;
     // private fFromCalendar: Calendar;
     // private fInfo: DateIntervalInfo;
-    // private fIntervalPatterns: { [key: string]: DateIntervalInfo$PatternInfo };
+    // private fIntervalPatterns: JavaMap<string, DateIntervalInfo$PatternInfo>;
     // private fSkeleton: string;
     // private fTimePattern: string;
     // private fToCalendar: Calendar;
     // private isDateIntervalInfoDefault: boolean;
     clone(): DateIntervalFormat;
-    // private concatSingleDate2TimeInterval(dtfmt: string, datePattern: string, field: number, intervalPatterns: { [key: string]: DateIntervalInfo$PatternInfo }): void;
+    // private concatSingleDate2TimeInterval(dtfmt: string, datePattern: string, field: number, intervalPatterns: JavaMap<string, DateIntervalInfo$PatternInfo>): void;
     // private fallbackFormat(fromCalendar: Calendar, toCalendar: Calendar, fromToOnSameDay: boolean, appendTo: StringBuffer, pos: FieldPosition, output: DateIntervalFormat$FormatOutput, attributes: FieldPosition[]): StringBuffer;
     // private fallbackFormat(fromCalendar: Calendar, toCalendar: Calendar, fromToOnSameDay: boolean, appendTo: StringBuffer, pos: FieldPosition, output: DateIntervalFormat$FormatOutput, attributes: FieldPosition[], fullPattern: string): StringBuffer;
     // private fallbackFormatRange(fromCalendar: Calendar, toCalendar: Calendar, appendTo: StringBuffer, patternSB: StringBuilder, pos: FieldPosition, output: DateIntervalFormat$FormatOutput, attributes: FieldPosition[]): void;
@@ -58,18 +59,18 @@ export class DateIntervalFormat extends UFormat implements Cloneable {
     formatToValue(fromTemporal: Temporal, toTemporal: Temporal): DateIntervalFormat$FormattedDateInterval;
     formatToValue(fromCalendar: Calendar, toCalendar: Calendar): DateIntervalFormat$FormattedDateInterval;
     formatToValue(dtInterval: DateInterval): DateIntervalFormat$FormattedDateInterval;
-    // private genFallbackPattern(field: number, skeleton: string, intervalPatterns: { [key: string]: DateIntervalInfo$PatternInfo }, dtpng: DateTimePatternGenerator): void;
-    // private genIntervalPattern(field: number, skeleton: string, bestSkeleton: string, differenceInfo: number, intervalPatterns: { [key: string]: DateIntervalInfo$PatternInfo }): DateIntervalFormat$SkeletonAndItsBestMatch;
-    // private genSeparateDateTimePtn(dateSkeleton: string, timeSkeleton: string, intervalPatterns: { [key: string]: DateIntervalInfo$PatternInfo }, dtpng: DateTimePatternGenerator): boolean;
+    // private genFallbackPattern(field: number, skeleton: string, intervalPatterns: JavaMap<string, DateIntervalInfo$PatternInfo>, dtpng: DateTimePatternGenerator): void;
+    // private genIntervalPattern(field: number, skeleton: string, bestSkeleton: string, differenceInfo: number, intervalPatterns: JavaMap<string, DateIntervalInfo$PatternInfo>): DateIntervalFormat$SkeletonAndItsBestMatch;
+    // private genSeparateDateTimePtn(dateSkeleton: string, timeSkeleton: string, intervalPatterns: JavaMap<string, DateIntervalInfo$PatternInfo>, dtpng: DateTimePatternGenerator): boolean;
     // private getConcatenationPattern(locale: ULocale): string;
     getContext(type: DisplayContext$Type): DisplayContext;
     getDateFormat(): DateFormat;
     getDateIntervalInfo(): DateIntervalInfo;
     getPatterns(fromCalendar: Calendar, toCalendar: Calendar, part2: Output<string>): string;
-    getRawPatterns(): { [key: string]: DateIntervalInfo$PatternInfo };
+    getRawPatterns(): JavaMap<string, DateIntervalInfo$PatternInfo>;
     getTimeZone(): TimeZone;
-    // private initializeIntervalPattern(fullPattern: string, locale: ULocale): { [key: string]: DateIntervalInfo$PatternInfo };
-    // private initializePattern(cache: ICUCache<string, { [key: string]: DateIntervalInfo$PatternInfo }>): void;
+    // private initializeIntervalPattern(fullPattern: string, locale: ULocale): JavaMap<string, DateIntervalInfo$PatternInfo>;
+    // private initializePattern(cache: ICUCache<string, JavaMap<string, DateIntervalInfo$PatternInfo>>): void;
     // private normalizeHourMetacharacters(skeleton: string, locale: ULocale): string;
     parseObject(arg0: string): Object;
     parseObject(source: string, parse_pos: ParsePosition): Object;

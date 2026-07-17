@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { EventHook } from '../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { ScheduleInventoryActionEvent } from '../../../../../../../../net/ccbluex/liquidbounce/event/events/ScheduleInventoryActionEvent.d.ts'
 import type { ClientModule } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
@@ -49,7 +50,7 @@ export class ModuleInventoryCleaner extends ClientModule {
     // private /*not mapped: */ getSlotItem8(): ItemSortChoice;
     // private slotItem9: ItemSortChoice;
     // private /*not mapped: */ getSlotItem9(): ItemSortChoice;
-    // private buildSlotTargetMap(): Map<HotbarItemSlot, ItemSortChoice>;
+    // private buildSlotTargetMap(): JavaMap<HotbarItemSlot, ItemSortChoice>;
     // private processHotbarSwaps(event: ScheduleInventoryActionEvent, cleanupPlan: InventoryCleanupPlan): boolean;
     // private processItemDisposal(event: ScheduleInventoryActionEvent, cleanupPlan: InventoryCleanupPlan, currentInventorySlots: ItemSlot[]): boolean;
     // private processStackMerging(event: ScheduleInventoryActionEvent, cleanupPlan: InventoryCleanupPlan): boolean;

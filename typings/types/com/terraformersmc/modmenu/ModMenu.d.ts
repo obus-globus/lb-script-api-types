@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { ListMultimap } from '../../../com/google/common/collect/ListMultimap.d.ts'
 import type { Gson } from '../../../com/google/gson/Gson.d.ts'
 import type { Mod } from '../../../com/terraformersmc/modmenu/util/mod/Mod.d.ts'
@@ -12,10 +13,10 @@ export class ModMenu extends Object implements ClientModInitializer {
     static GSON: Gson;
     static GSON_MINIFIED: Gson;
     static LOGGER: Logger;
-    static MODS: { [key: string]: Mod };
+    static MODS: JavaMap<string, Mod>;
     static MOD_ID: string;
     static PARENT_MAP: ListMultimap<Mod, Mod>;
-    static ROOT_MODS: { [key: string]: Mod };
+    static ROOT_MODS: JavaMap<string, Mod>;
     static RUNNING_QUILT: boolean;
     static TEXT_PLACEHOLDER_COMPAT: boolean;
     static areModUpdatesAvailable(): boolean;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { RenderPipeline } from '../../../../../../../com/mojang/blaze3d/pipeline/RenderPipeline.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { LayeringTransform } from '../../../../../../../net/minecraft/client/renderer/rendertype/LayeringTransform.d.ts'
@@ -10,7 +11,7 @@ export interface MixinRenderSetupAccessor extends Object{
     getPipeline(): RenderPipeline;
     getSortOnUpload(): boolean;
     getTextureTransform(): TextureTransform;
-    getTextures(): { [key: string]: Object };
+    getTextures(): JavaMap<string, Object>;
     getUseLightmap(): boolean;
     getUseOverlay(): boolean;
 }

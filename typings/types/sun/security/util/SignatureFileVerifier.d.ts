@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { CodeSigner } from '../../../java/security/CodeSigner.d.ts'
 import type { MessageDigest } from '../../../java/security/MessageDigest.d.ts'
 import type { PrivateKey } from '../../../java/security/PrivateKey.d.ts'
@@ -17,11 +18,11 @@ export class SignatureFileVerifier extends Object {
     constructor(arg0: CodeSigner[][], arg1: ManifestDigester, arg2: string, arg3: number[])
     // private block: PKCS7;
     // private certificateFactory: CertificateFactory;
-    // private createdDigests: { [key: string]: MessageDigest };
+    // private createdDigests: JavaMap<string, MessageDigest>;
     // private md: ManifestDigester;
     // private name: string;
     // private params: JarConstraintsParameters;
-    // private permittedAlgs: { [key: string]: boolean };
+    // private permittedAlgs: JavaMap<string, boolean>;
     // private sfBytes: number[];
     // private signerCache: CodeSigner[][];
     // private workaround: boolean;
@@ -31,11 +32,11 @@ export class SignatureFileVerifier extends Object {
     needSignatureFile(arg0: string): boolean;
     needSignatureFileBytes(): boolean;
     // private permittedCheck(arg0: string, arg1: string): boolean;
-    process(arg0: { [key: string]: CodeSigner[] }, arg1: Object[], arg2: string): void;
-    // private processImpl(arg0: { [key: string]: CodeSigner[] }, arg1: Object[], arg2: string): void;
+    process(arg0: JavaMap<string, CodeSigner[]>, arg1: Object[], arg2: string): void;
+    // private processImpl(arg0: JavaMap<string, CodeSigner[]>, arg1: Object[], arg2: string): void;
     setSignatureFile(arg0: number[]): void;
-    updateSigners(arg0: CodeSigner[], arg1: { [key: string]: CodeSigner[] }, arg2: string): void;
+    updateSigners(arg0: CodeSigner[], arg1: JavaMap<string, CodeSigner[]>, arg2: string): void;
     // private verifyManifestHash(arg0: Manifest, arg1: ManifestDigester, arg2: Object[]): boolean;
     // private verifyManifestMainAttrs(arg0: Manifest, arg1: ManifestDigester): boolean;
-    // private verifySection(arg0: { [key: string]: any }, arg1: string, arg2: ManifestDigester): boolean;
+    // private verifySection(arg0: JavaMap<any, any>, arg1: string, arg2: ManifestDigester): boolean;
 }

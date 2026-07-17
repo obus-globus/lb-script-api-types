@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlockColorsExtension } from '../../../../../net/caffeinemc/mods/sodium/client/model/color/interop/BlockColorsExtension.d.ts'
 import type { BlockTintSource } from '../../../../../net/minecraft/client/color/block/BlockTintSource.d.ts'
@@ -9,13 +10,13 @@ export class BlockColors extends Object implements BlockColorsExtension {
     static LILY_PAD_IN_WORLD: number;
     static createDefault(): BlockColors;
     constructor()
-    // private blocksToColor: Map<Object, Object>;
+    // private blocksToColor: JavaMap<Object, Object>;
     // private overridenBlocks: Object[];
-    // private sources: Map<Block, BlockTintSource[]>;
+    // private sources: JavaMap<Block, BlockTintSource[]>;
     getColoringProperties(block: Block): Property<any>[];
     getTintSource(state: BlockState, layer: number): BlockTintSource;
     getTintSources(state: BlockState): BlockTintSource[];
     register(layers: BlockTintSource[], ...blocks: Block[]): void;
     sodium$getOverridenVanillaBlocks(): Object[];
-    sodium$getProviders(): Map<Object, Object>;
+    sodium$getProviders(): JavaMap<Object, Object>;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { PoseStack } from '../../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
 import type { NautilusModel } from '../../../../../net/minecraft/client/model/animal/nautilus/NautilusModel.d.ts'
 import type { SubmitNodeCollector } from '../../../../../net/minecraft/client/renderer/SubmitNodeCollector.d.ts'
@@ -13,7 +14,7 @@ export class ZombieNautilusRenderer extends MobRenderer<ZombieNautilus, Nautilus
     static NAMETAG_SCALE: number;
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
-    // private models: Map<ZombieNautilusVariant$ModelType, NautilusModel>;
+    // private models: JavaMap<ZombieNautilusVariant$ModelType, NautilusModel>;
     createRenderState(): NautilusRenderState;
     createRenderState(entity: ZombieNautilus, partialTicks: number): NautilusRenderState;
     extractRenderState(entity: ZombieNautilus, state: NautilusRenderState, partialTicks: number): void;

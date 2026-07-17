@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Charset } from '../../../../../java/nio/charset/Charset.d.ts'
 import type { Duration } from '../../../../../java/time/Duration.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -5,12 +6,12 @@ import type { PropertiesUtil$Environment } from '../../../../../org/apache/loggi
 import type { PropertySource } from '../../../../../org/apache/logging/log4j/util/PropertySource.d.ts'
 import type { Supplier } from '../../../../../org/apache/logging/log4j/util/Supplier.d.ts'
 export class PropertiesUtil extends Object {
-    static extractSubset(paramproperties: { [key: string]: any }, paramprefix: string): { [key: string]: any };
+    static extractSubset(paramproperties: JavaMap<any, any>, paramprefix: string): JavaMap<any, any>;
     static getProperties(): PropertiesUtil;
-    static getSystemProperties(): { [key: string]: any };
-    static partitionOnCommonPrefixes(paramproperties: { [key: string]: any }): { [key: string]: { [key: string]: any } };
-    static partitionOnCommonPrefixes(paramproperties: { [key: string]: any }, paramincludeBaseKey: boolean): { [key: string]: { [key: string]: any } };
-    constructor(props: { [key: string]: any })
+    static getSystemProperties(): JavaMap<any, any>;
+    static partitionOnCommonPrefixes(paramproperties: JavaMap<any, any>): JavaMap<string, JavaMap<any, any>>;
+    static partitionOnCommonPrefixes(paramproperties: JavaMap<any, any>, paramincludeBaseKey: boolean): JavaMap<string, JavaMap<any, any>>;
+    constructor(props: JavaMap<any, any>)
     constructor(propertiesFileName: string)
     constructor(source: PropertySource)
     // private environment: PropertiesUtil$Environment;

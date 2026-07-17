@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Initializable } from '../../../../org/apache/tika/config/Initializable.d.ts'
 import type { InitializableProblemHandler } from '../../../../org/apache/tika/config/InitializableProblemHandler.d.ts'
@@ -15,7 +16,7 @@ export abstract class PipesReporterBase extends PipesReporter implements Initial
     // private buildStatusFilter(arg0: PipesResult$STATUS[], arg1: PipesResult$STATUS[]): PipesReporterBase$StatusFilter;
     checkInitialization(arg0: InitializableProblemHandler): void;
     // private getOptionString(): string;
-    initialize(arg0: { [key: string]: Param<Object> }): void;
+    initialize(arg0: JavaMap<string, Param<Object>>): void;
     setExcludes(arg0: string[]): void;
     setIncludes(arg0: string[]): void;
 }

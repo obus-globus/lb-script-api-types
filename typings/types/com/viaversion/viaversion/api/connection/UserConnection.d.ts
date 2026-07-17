@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ProtocolInfo } from '../../../../../com/viaversion/viaversion/api/connection/ProtocolInfo.d.ts'
 import type { StorableObject } from '../../../../../com/viaversion/viaversion/api/connection/StorableObject.d.ts'
 import type { EntityTracker } from '../../../../../com/viaversion/viaversion/api/data/entity/EntityTracker.d.ts'
@@ -38,7 +39,7 @@ export interface UserConnection extends Object {
     getItemHasher<T extends ItemHasher>(arg0: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>): T;
     getPacketTracker(): PacketTracker;
     getProtocolInfo(): ProtocolInfo;
-    getStoredObjects(): Map<Class<Object>, StorableObject>;
+    getStoredObjects(): JavaMap<Class<Object>, StorableObject>;
     has(arg0: Class<StorableObject>): boolean;
     isActive(): boolean;
     isClientSide(): boolean;

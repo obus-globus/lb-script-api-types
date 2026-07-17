@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { StorableObject } from '../../../../../com/viaversion/viaversion/api/connection/StorableObject.d.ts'
 import type { BlockPosition } from '../../../../../com/viaversion/viaversion/api/minecraft/BlockPosition.d.ts'
 import type { Chunk } from '../../../../../com/viaversion/viaversion/api/minecraft/chunks/Chunk.d.ts'
@@ -7,8 +8,8 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ChunkCoord } from '../../../../../net/raphimc/vialegacy/api/model/ChunkCoord.d.ts'
 export abstract class AbstractChunkTracker extends Object implements StorableObject {
     constructor(...arg0: number[])
-    // private chunks: Map<ChunkCoord, Chunk>;
-    // private replacements: { [key: string]: any };
+    // private chunks: JavaMap<ChunkCoord, Chunk>;
+    // private replacements: JavaMap<any, any>;
     // private toTrack: (Object | null)[];
     // private trackAll: boolean;
     clear(): void;

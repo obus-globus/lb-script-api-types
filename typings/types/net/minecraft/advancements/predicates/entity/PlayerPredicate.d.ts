@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
@@ -18,16 +19,16 @@ export class PlayerPredicate extends Record implements EntitySubPredicate {
     static ALWAYS_TRUE: EntitySubPredicate;
     static CODEC: Codec<PlayerPredicate>;
     static LOOKING_AT_RANGE: number;
-    constructor(level: MinMaxBounds$Ints, food: FoodPredicate, gameType: GameTypePredicate, stats: PlayerPredicate$StatMatcher<Object>[], recipes: { [key: string]: any }, advancements: Map<Identifier, PlayerPredicate$AdvancementPredicate>, lookingAt: Optional<EntityPredicate>, input: Optional<InputPredicate>)
-    // private advancements: Map<Identifier, PlayerPredicate$AdvancementPredicate>;
+    constructor(level: MinMaxBounds$Ints, food: FoodPredicate, gameType: GameTypePredicate, stats: PlayerPredicate$StatMatcher<Object>[], recipes: JavaMap<any, any>, advancements: JavaMap<Identifier, PlayerPredicate$AdvancementPredicate>, lookingAt: Optional<EntityPredicate>, input: Optional<InputPredicate>)
+    // private advancements: JavaMap<Identifier, PlayerPredicate$AdvancementPredicate>;
     // private food: FoodPredicate;
     // private gameType: GameTypePredicate;
     // private input: Optional<InputPredicate>;
     // private level: MinMaxBounds$Ints;
     // private lookingAt: Optional<EntityPredicate>;
-    // private recipes: { [key: string]: any };
+    // private recipes: JavaMap<any, any>;
     // private stats: PlayerPredicate$StatMatcher<Object>[];
-    advancements(): Map<Identifier, PlayerPredicate$AdvancementPredicate>;
+    advancements(): JavaMap<Identifier, PlayerPredicate$AdvancementPredicate>;
     and(other: EntitySubPredicate): EntitySubPredicate;
     equals(o: Object | null): boolean;
     food(): FoodPredicate;
@@ -37,7 +38,7 @@ export class PlayerPredicate extends Record implements EntitySubPredicate {
     level(): MinMaxBounds$Ints;
     lookingAt(): Optional<EntityPredicate>;
     matches(entity: Entity, level: ServerLevel, position: Vec3): boolean;
-    recipes(): { [key: string]: any };
+    recipes(): JavaMap<any, any>;
     stats(): PlayerPredicate$StatMatcher<Object>[];
     toString(): string;
 }

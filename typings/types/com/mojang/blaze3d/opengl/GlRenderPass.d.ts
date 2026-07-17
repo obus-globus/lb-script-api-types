@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { IndexType } from '../../../../com/mojang/blaze3d/IndexType.d.ts'
 import type { GpuBuffer } from '../../../../com/mojang/blaze3d/buffers/GpuBuffer.d.ts'
 import type { GpuBufferSlice } from '../../../../com/mojang/blaze3d/buffers/GpuBufferSlice.d.ts'
@@ -32,9 +33,9 @@ export class GlRenderPass extends Object implements RenderPassBackend, GlRenderP
     // private indexType: IndexType;
     // private iris$customPass: CustomPass;
     pipeline: GlRenderPipeline;
-    samplers: { [key: string]: GlRenderPass$TextureViewAndSampler };
+    samplers: JavaMap<string, GlRenderPass$TextureViewAndSampler>;
     // private scissorState: ScissorState;
-    // private uniforms: { [key: string]: GpuBufferSlice };
+    // private uniforms: JavaMap<string, GpuBufferSlice>;
     // private vertexBufferDirty: boolean;
     // private vertexBuffers: GpuBufferSlice[];
     bindTexture(name: string, textureView: GpuTextureView, sampler: GpuSampler): void;

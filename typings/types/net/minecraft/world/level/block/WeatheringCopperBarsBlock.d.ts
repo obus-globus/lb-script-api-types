@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
@@ -33,10 +34,10 @@ export class WeatheringCopperBarsBlock extends IronBarsBlock implements Weatheri
     static FILTERED_REGISTRIES: ResourceKey<FeatureElement[]>[];
     static INDESTRUCTIBLE: number;
     static INSTANT: number;
-    static NEXT_BY_BLOCK: () => Map<Block, Block>;
+    static NEXT_BY_BLOCK: () => JavaMap<Block, Block>;
     static NORTH: BooleanProperty;
-    static PREVIOUS_BY_BLOCK: () => Map<Block, Block>;
-    static PROPERTY_BY_DIRECTION: Map<Direction, BooleanProperty>;
+    static PREVIOUS_BY_BLOCK: () => JavaMap<Block, Block>;
+    static PROPERTY_BY_DIRECTION: JavaMap<Direction, BooleanProperty>;
     static SCAN_DISTANCE: number;
     static SOUTH: BooleanProperty;
     static UPDATE_ALL: number;

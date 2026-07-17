@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Scope } from '../../../../team/unnamed/mocha/runtime/Scope.d.ts'
 import type { Scope$Builder } from '../../../../team/unnamed/mocha/runtime/Scope$Builder.d.ts'
@@ -5,7 +6,7 @@ import type { ObjectProperty } from '../../../../team/unnamed/mocha/runtime/valu
 import type { Value } from '../../../../team/unnamed/mocha/runtime/value/Value.d.ts'
 export class ScopeImpl$BuilderImpl extends Object implements Scope$Builder {
     constructor()
-    // private properties: { [key: string]: ObjectProperty };
+    // private properties: JavaMap<string, ObjectProperty>;
     build(): Scope;
     set(arg0: string, arg1: Value): Scope$Builder;
 }

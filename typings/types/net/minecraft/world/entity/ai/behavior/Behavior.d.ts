@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ServerLevel } from '../../../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { LivingEntity } from '../../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
@@ -7,13 +8,13 @@ import type { MemoryModuleType } from '../../../../../../net/minecraft/world/ent
 import type { MemoryStatus } from '../../../../../../net/minecraft/world/entity/ai/memory/MemoryStatus.d.ts'
 export abstract class Behavior<E extends LivingEntity> extends Object implements BehaviorControl<E> {
     static DEFAULT_DURATION: number;
-    constructor(entryCondition: Map<MemoryModuleType<Object>, MemoryStatus>)
-    constructor(entryCondition: Map<MemoryModuleType<Object>, MemoryStatus>, timeOutDuration: number)
-    constructor(entryCondition: Map<MemoryModuleType<Object>, MemoryStatus>, minDuration: number, maxDuration: number)
+    constructor(entryCondition: JavaMap<MemoryModuleType<Object>, MemoryStatus>)
+    constructor(entryCondition: JavaMap<MemoryModuleType<Object>, MemoryStatus>, timeOutDuration: number)
+    constructor(entryCondition: JavaMap<MemoryModuleType<Object>, MemoryStatus>, minDuration: number, maxDuration: number)
     // private cachedHasRequiredMemoryState: boolean;
     // private cachedMemoryModCount: number;
     // private endTimestamp: number;
-    // private entryCondition: Map<MemoryModuleType<Object>, MemoryStatus>;
+    // private entryCondition: JavaMap<MemoryModuleType<Object>, MemoryStatus>;
     // private maxDuration: number;
     // private minDuration: number;
     readonly status: Behavior$Status;

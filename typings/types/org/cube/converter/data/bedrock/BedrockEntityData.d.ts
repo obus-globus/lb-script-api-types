@@ -1,21 +1,22 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BedrockEntityData$RenderController } from '../../../../../org/cube/converter/data/bedrock/BedrockEntityData$RenderController.d.ts'
 import type { BedrockEntityData$Scripts } from '../../../../../org/cube/converter/data/bedrock/BedrockEntityData$Scripts.d.ts'
 export class BedrockEntityData extends Object {
-    constructor(arg0: string, arg1: BedrockEntityData$Scripts, arg2: BedrockEntityData$RenderController[], arg3: { [key: string]: string }, arg4: { [key: string]: string }, arg5: { [key: string]: string }, arg6: { [key: string]: string })
-    readonly animations: { [key: string]: string };
+    constructor(arg0: string, arg1: BedrockEntityData$Scripts, arg2: BedrockEntityData$RenderController[], arg3: JavaMap<string, string>, arg4: JavaMap<string, string>, arg5: JavaMap<string, string>, arg6: JavaMap<string, string>)
+    readonly animations: JavaMap<string, string>;
     readonly controllers: BedrockEntityData$RenderController[];
-    readonly geometries: { [key: string]: string };
+    readonly geometries: JavaMap<string, string>;
     readonly identifier: string;
-    readonly materials: { [key: string]: string };
+    readonly materials: JavaMap<string, string>;
     readonly scripts: BedrockEntityData$Scripts;
-    readonly textures: { [key: string]: string };
-    getAnimations(): { [key: string]: string };
+    readonly textures: JavaMap<string, string>;
+    getAnimations(): JavaMap<string, string>;
     getControllers(): BedrockEntityData$RenderController[];
-    getGeometries(): { [key: string]: string };
+    getGeometries(): JavaMap<string, string>;
     getIdentifier(): string;
-    getMaterials(): { [key: string]: string };
+    getMaterials(): JavaMap<string, string>;
     getScripts(): BedrockEntityData$Scripts;
-    getTextures(): { [key: string]: string };
+    getTextures(): JavaMap<string, string>;
     toString(): string;
 }

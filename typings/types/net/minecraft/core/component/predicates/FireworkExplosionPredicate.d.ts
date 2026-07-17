@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -14,7 +15,7 @@ import type { FireworkExplosion } from '../../../../../net/minecraft/world/item/
 export class FireworkExplosionPredicate extends Record implements SingleComponentItemPredicate<FireworkExplosion> {
     static CODEC: Codec<FireworkExplosionPredicate>;
     static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<any>>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, JavaMap<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
     constructor(predicate: FireworkExplosionPredicate$FireworkPredicate)
     // private predicate: FireworkExplosionPredicate$FireworkPredicate;
     componentType(): DataComponentType<FireworkExplosion>;

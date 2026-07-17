@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { ByteBuf } from '../../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { ChannelHandlerContext } from '../../../../../../../io/netty/channel/ChannelHandlerContext.d.ts'
 import type { DatagramPacket } from '../../../../../../../io/netty/channel/socket/DatagramPacket.d.ts'
@@ -12,7 +13,7 @@ export class RakServerOfflineHandler extends AdvancedChannelInboundHandler<Datag
     static NAME: string;
     constructor(arg0: RakServerChannel)
     // private channel: RakServerChannel;
-    // private pendingConnections: Map<InetSocketAddress, RakServerOfflineHandler$PendingConnection>;
+    // private pendingConnections: JavaMap<InetSocketAddress, RakServerOfflineHandler$PendingConnection>;
     // private random: ThreadLocal<SecureRandom>;
     acceptInboundMessage(arg0: ChannelHandlerContext, arg1: Object): boolean;
     channelRead0(arg0: ChannelHandlerContext, arg1: DatagramPacket): void;

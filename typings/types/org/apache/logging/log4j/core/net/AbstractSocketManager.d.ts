@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { Serializable } from '../../../../../../java/io/Serializable.d.ts'
 import type { InetAddress } from '../../../../../../java/net/InetAddress.d.ts'
@@ -14,7 +15,7 @@ export abstract class AbstractSocketManager extends OutputStreamManager {
     readonly host: string;
     // private inetAddress: InetAddress;
     readonly port: number;
-    getContentFormat(): { [key: string]: string };
+    getContentFormat(): JavaMap<string, string>;
     getHost(): string;
     getPort(): number;
 }

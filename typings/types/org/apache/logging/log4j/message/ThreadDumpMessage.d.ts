@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ObjectInputStream } from '../../../../../java/io/ObjectInputStream.d.ts'
 import type { StackTraceElement } from '../../../../../java/lang/StackTraceElement.d.ts'
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
@@ -9,7 +10,7 @@ import type { StringBuilderFormattable } from '../../../../../org/apache/logging
 export class ThreadDumpMessage extends Object implements Message, StringBuilderFormattable {
     constructor(title: string)
     readonly formattedMessage: string;
-    // private threads: Map<ThreadInformation, StackTraceElement[]>;
+    // private threads: JavaMap<ThreadInformation, StackTraceElement[]>;
     // private title: string;
     formatTo(sb: StringBuilder): void;
     getFormat(): string;

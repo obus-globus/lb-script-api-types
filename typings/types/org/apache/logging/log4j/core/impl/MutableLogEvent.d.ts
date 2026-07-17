@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { ObjectInputStream } from '../../../../../../java/io/ObjectInputStream.d.ts'
 import type { StackTraceElement } from '../../../../../../java/lang/StackTraceElement.d.ts'
 import type { StringBuilder } from '../../../../../../java/lang/StringBuilder.d.ts'
@@ -48,7 +49,7 @@ export class MutableLogEvent extends Object implements LogEvent, ParameterVisita
     forEachParameter<S extends unknown>(action: ParameterConsumer<S>, state: S): void;
     formatTo(buffer: StringBuilder): void;
     getContextData(): ReadOnlyStringMap;
-    getContextMap(): { [key: string]: string };
+    getContextMap(): JavaMap<string, string>;
     getContextStack(): (Object | null)[];
     getFormat(): string;
     getFormattedMessage(): string;

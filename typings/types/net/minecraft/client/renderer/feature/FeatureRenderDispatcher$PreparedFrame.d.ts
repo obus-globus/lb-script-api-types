@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { AutoCloseable } from '../../../../../java/lang/AutoCloseable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { SubmitNodeStorage } from '../../../../../net/minecraft/client/renderer/SubmitNodeStorage.d.ts'
@@ -11,8 +12,8 @@ export class FeatureRenderDispatcher$PreparedFrame extends Object implements Aut
     constructor(null_: FeatureRenderDispatcher)
     // private allSubmits: SubmitNode[];
     // private context: FeatureFrameContext;
-    // private groupsByFeature: Map<FeatureRendererType<any>, FeatureRenderDispatcher$PreparedGroup<any>[]>;
-    // private groupsByPhase: Map<FeatureRenderPhase<any>, FeatureRenderDispatcher$PreparedGroup<any>[]>;
+    // private groupsByFeature: JavaMap<FeatureRendererType<any>, FeatureRenderDispatcher$PreparedGroup<any>[]>;
+    // private groupsByPhase: JavaMap<FeatureRenderPhase<any>, FeatureRenderDispatcher$PreparedGroup<any>[]>;
     // private submitNodeStorage: SubmitNodeStorage;
     // private begin(context: FeatureFrameContext, submitNodeStorage: SubmitNodeStorage): FeatureRenderDispatcher$PreparedFrame;
     close(): void;

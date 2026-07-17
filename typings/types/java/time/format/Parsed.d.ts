@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { LocalTime } from '../../../java/time/LocalTime.d.ts'
 import type { Period } from '../../../java/time/Period.d.ts'
 import type { ZoneId } from '../../../java/time/ZoneId.d.ts'
@@ -16,7 +17,7 @@ export class Parsed extends Object implements TemporalAccessor {
     // private date: ChronoLocalDate;
     // private dayPeriod: DateTimeFormatterBuilder$DayPeriod;
     // private excessDays: Period;
-    // private fieldValues: Map<TemporalField, number>;
+    // private fieldValues: JavaMap<TemporalField, number>;
     // private leapSecond: boolean;
     // private resolverStyle: ResolverStyle;
     // private time: LocalTime;

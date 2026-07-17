@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
@@ -10,7 +11,7 @@ export class SkullBlock$Types extends Enum<SkullBlock$Types> implements SkullBlo
     static PLAYER: SkullBlock$Types;
     static PRE_BUILT_MAP_THRESHOLD: number;
     static SKELETON: SkullBlock$Types;
-    static TYPES: { [key: string]: SkullBlock$Type };
+    static TYPES: JavaMap<string, SkullBlock$Type>;
     static WITHER_SKELETON: SkullBlock$Types;
     static ZOMBIE: SkullBlock$Types;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;

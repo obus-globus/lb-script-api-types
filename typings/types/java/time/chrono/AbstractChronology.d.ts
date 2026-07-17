@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { DataOutput } from '../../../java/io/DataOutput.d.ts'
 import type { ObjectInputStream } from '../../../java/io/ObjectInputStream.d.ts'
 import type { Clock } from '../../../java/time/Clock.d.ts'
@@ -20,7 +21,7 @@ import type { Locale } from '../../../java/util/Locale.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class AbstractChronology extends Object implements Chronology {
     constructor()
-    addFieldValue(arg0: Map<TemporalField, number>, arg1: ChronoField, arg2: number): void;
+    addFieldValue(arg0: JavaMap<TemporalField, number>, arg1: ChronoField, arg2: number): void;
     compareTo(arg0: Chronology): number;
     date(arg0: Era, arg1: number, arg2: number, arg3: number): ChronoLocalDate;
     date(arg0: TemporalAccessor): ChronoLocalDate;
@@ -47,15 +48,15 @@ export abstract class AbstractChronology extends Object implements Chronology {
     range(arg0: ChronoField): ValueRange;
     // private readObject(arg0: ObjectInputStream): void;
     resolveAligned(arg0: ChronoLocalDate, arg1: number, arg2: number, arg3: number): ChronoLocalDate;
-    resolveDate(arg0: Map<TemporalField, number>, arg1: ResolverStyle): ChronoLocalDate;
-    resolveProlepticMonth(arg0: Map<TemporalField, number>, arg1: ResolverStyle): void;
-    resolveYAA(arg0: Map<TemporalField, number>, arg1: ResolverStyle): ChronoLocalDate;
-    resolveYAD(arg0: Map<TemporalField, number>, arg1: ResolverStyle): ChronoLocalDate;
-    resolveYD(arg0: Map<TemporalField, number>, arg1: ResolverStyle): ChronoLocalDate;
-    resolveYMAA(arg0: Map<TemporalField, number>, arg1: ResolverStyle): ChronoLocalDate;
-    resolveYMAD(arg0: Map<TemporalField, number>, arg1: ResolverStyle): ChronoLocalDate;
-    resolveYMD(arg0: Map<TemporalField, number>, arg1: ResolverStyle): ChronoLocalDate;
-    resolveYearOfEra(arg0: Map<TemporalField, number>, arg1: ResolverStyle): ChronoLocalDate;
+    resolveDate(arg0: JavaMap<TemporalField, number>, arg1: ResolverStyle): ChronoLocalDate;
+    resolveProlepticMonth(arg0: JavaMap<TemporalField, number>, arg1: ResolverStyle): void;
+    resolveYAA(arg0: JavaMap<TemporalField, number>, arg1: ResolverStyle): ChronoLocalDate;
+    resolveYAD(arg0: JavaMap<TemporalField, number>, arg1: ResolverStyle): ChronoLocalDate;
+    resolveYD(arg0: JavaMap<TemporalField, number>, arg1: ResolverStyle): ChronoLocalDate;
+    resolveYMAA(arg0: JavaMap<TemporalField, number>, arg1: ResolverStyle): ChronoLocalDate;
+    resolveYMAD(arg0: JavaMap<TemporalField, number>, arg1: ResolverStyle): ChronoLocalDate;
+    resolveYMD(arg0: JavaMap<TemporalField, number>, arg1: ResolverStyle): ChronoLocalDate;
+    resolveYearOfEra(arg0: JavaMap<TemporalField, number>, arg1: ResolverStyle): ChronoLocalDate;
     toString(): string;
     writeExternal(arg0: DataOutput): void;
     writeReplace(): Object;

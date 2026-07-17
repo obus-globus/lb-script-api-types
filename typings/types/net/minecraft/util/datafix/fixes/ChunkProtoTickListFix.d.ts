@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { DataFix } from '../../../../../com/mojang/datafixers/DataFix.d.ts'
 import type { RewriteResult } from '../../../../../com/mojang/datafixers/RewriteResult.d.ts'
 import type { TypeRewriteRule } from '../../../../../com/mojang/datafixers/TypeRewriteRule.d.ts'
@@ -15,5 +16,5 @@ export class ChunkProtoTickListFix extends DataFix {
     constructor(outputSchema: Schema)
     // private createTick(tag: Dynamic<Object>, container: () => ChunkProtoTickListFix$PoorMansPalettedContainer, sectionX: number, sectionY: number, sectionZ: number, pos: number, typeGetter: (param0: Dynamic<Object>) => string): Dynamic<Object>;
     makeRule(): TypeRewriteRule;
-    // private makeTickList(tag: Dynamic<Object>, palettedContainers: { [key: string]: any }, sectionMinY: number, sectionX: number, sectionZ: number, protoTickListTag: string, typeGetter: (param0: Dynamic<Object>) => string): Dynamic<Object>;
+    // private makeTickList(tag: Dynamic<Object>, palettedContainers: JavaMap<any, any>, sectionMinY: number, sectionX: number, sectionZ: number, protoTickListTag: string, typeGetter: (param0: Dynamic<Object>) => string): Dynamic<Object>;
 }

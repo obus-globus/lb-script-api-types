@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Closeable } from '../../../../../../java/io/Closeable.d.ts'
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
@@ -25,15 +26,15 @@ export class TarFile extends Object implements Closeable {
     // private currEntry: TarArchiveEntry;
     readonly entries: TarArchiveEntry[];
     // private eof: boolean;
-    // private globalPaxHeaders: { [key: string]: string };
+    // private globalPaxHeaders: JavaMap<string, string>;
     // private globalSparseHeaders: TarArchiveStructSparse[];
     // private lenient: boolean;
     // private recordBuffer: ByteBuffer;
     // private recordSize: number;
     // private smallBuf: number[];
-    // private sparseInputStreams: { [key: string]: InputStream[] };
+    // private sparseInputStreams: JavaMap<string, InputStream[]>;
     // private zipEncoding: ZipEncoding;
-    // private applyPaxHeadersToCurrentEntry(arg0: { [key: string]: string }, arg1: TarArchiveStructSparse[]): void;
+    // private applyPaxHeadersToCurrentEntry(arg0: JavaMap<string, string>, arg1: TarArchiveStructSparse[]): void;
     // private buildSparseInputStreams(): void;
     close(): void;
     // private consumeRemainderOfLastBlock(): void;

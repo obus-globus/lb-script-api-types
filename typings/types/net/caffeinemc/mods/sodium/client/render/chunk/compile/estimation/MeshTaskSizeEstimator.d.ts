@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { RenderSection } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/RenderSection.d.ts'
 import type { Average1DEstimator } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/compile/estimation/Average1DEstimator.d.ts'
@@ -8,7 +9,7 @@ export class MeshTaskSizeEstimator extends Average1DEstimator<MeshResultSize$Sec
     static NEW_DATA_RATIO: number;
     constructor(arg0: ClientLevel)
     // private seaLevelChunk: number;
-    createMap<T extends unknown>(): Map<MeshResultSize$SectionCategory, T>;
+    createMap<T extends unknown>(): JavaMap<MeshResultSize$SectionCategory, T>;
     estimateSize(arg0: RenderSection): number;
     resultForSection(arg0: RenderSection, arg1: number): MeshResultSize;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { SimpleTrustManagerFactory } from '../../../../../io/netty/handler/ssl/util/SimpleTrustManagerFactory.d.ts'
 import type { KeyStore } from '../../../../../java/security/KeyStore.d.ts'
 import type { ManagerFactoryParameters } from '../../../../../javax/net/ssl/ManagerFactoryParameters.d.ts'
@@ -8,7 +9,7 @@ export class InsecureTrustManagerFactory extends SimpleTrustManagerFactory {
     static getDefaultAlgorithm(): string;
     static getInstance(paramarg0: string): TrustManagerFactory;
     static getInstance(paramarg0: string, paramarg1: string): TrustManagerFactory;
-    static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): TrustManagerFactory;
+    static getInstance(paramarg0: string, paramarg1: JavaMap<any, any>): TrustManagerFactory;
     private constructor()
     engineGetTrustManagers(): TrustManager[];
     engineInit(arg0: KeyStore): void;

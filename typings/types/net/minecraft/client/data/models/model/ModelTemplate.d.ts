@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { BiConsumer } from '../../../../../../java/util/function/BiConsumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -16,7 +17,7 @@ export class ModelTemplate extends Object {
     create(target: Identifier, textures: TextureMapping, output: (param0: Identifier, param1: ModelInstance) => void): Identifier;
     create(item: Item, textures: TextureMapping, output: (param0: Identifier, param1: ModelInstance) => void): Identifier;
     create(block: Block, textures: TextureMapping, output: (param0: Identifier, param1: ModelInstance) => void): Identifier;
-    // private createMap(mapping: TextureMapping): Map<TextureSlot, Material>;
+    // private createMap(mapping: TextureMapping): JavaMap<TextureSlot, Material>;
     createWithOverride(block: Block, suffixOverride: string, textures: TextureMapping, output: (param0: Identifier, param1: ModelInstance) => void): Identifier;
     createWithSuffix(block: Block, extraSuffix: string, textures: TextureMapping, output: (param0: Identifier, param1: ModelInstance) => void): Identifier;
     getDefaultModelLocation(block: Block): Identifier;

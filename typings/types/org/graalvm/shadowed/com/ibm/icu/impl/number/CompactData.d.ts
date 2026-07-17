@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { CompactData$CompactType } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/number/CompactData$CompactType.d.ts'
 import type { DecimalQuantity } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/number/DecimalQuantity.d.ts'
@@ -14,6 +15,6 @@ export class CompactData extends Object implements MultiplierProducer {
     getMultiplier(magnitude: number): number;
     getPattern(magnitude: number, rules: PluralRules, dq: DecimalQuantity): string;
     getUniquePatterns(output: string[]): void;
-    populate(powersToPluralsToPatterns: { [key: string]: { [key: string]: string } }): void;
+    populate(powersToPluralsToPatterns: JavaMap<string, JavaMap<string, string>>): void;
     populate(locale: ULocale, nsName: string, compactStyle: CompactDecimalFormat$CompactStyle, compactType: CompactData$CompactType): void;
 }

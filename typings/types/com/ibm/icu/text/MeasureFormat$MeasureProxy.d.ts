@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { MeasureFormat$FormatWidth } from '../../../../com/ibm/icu/text/MeasureFormat$FormatWidth.d.ts'
 import type { NumberFormat } from '../../../../com/ibm/icu/text/NumberFormat.d.ts'
 import type { TimeUnitFormat } from '../../../../com/ibm/icu/text/TimeUnitFormat.d.ts'
@@ -10,7 +11,7 @@ export class MeasureFormat$MeasureProxy extends Object implements Externalizable
     constructor()
     constructor(arg0: ULocale, arg1: MeasureFormat$FormatWidth, arg2: NumberFormat, arg3: number)
     // private formatWidth: MeasureFormat$FormatWidth;
-    // private keyValues: Map<Object, Object>;
+    // private keyValues: JavaMap<Object, Object>;
     // private locale: ULocale;
     // private numberFormat: NumberFormat;
     // private subClass: number;

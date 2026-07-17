@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ICUResourceBundle$OpenType } from '../../../../com/ibm/icu/impl/ICUResourceBundle$OpenType.d.ts'
 import type { ICUResourceBundle$WholeBundle } from '../../../../com/ibm/icu/impl/ICUResourceBundle$WholeBundle.d.ts'
 import type { ICUResourceBundleReader$ReaderValue } from '../../../../com/ibm/icu/impl/ICUResourceBundleReader$ReaderValue.d.ts'
@@ -82,7 +83,7 @@ export class ICUResourceBundle extends UResourceBundle {
     findWithFallback(arg0: string): ICUResourceBundle;
     get(arg0: number): UResourceBundle;
     get(arg0: string): UResourceBundle;
-    get(arg0: string, arg1: { [key: string]: string }, arg2: UResourceBundle): ICUResourceBundle;
+    get(arg0: string, arg1: JavaMap<string, string>, arg2: UResourceBundle): ICUResourceBundle;
     getAllChildrenWithFallback(arg0: string, arg1: UResource$Sink): void;
     // private getAllItemsWithFallback(arg0: UResource$Key, arg1: ICUResourceBundleReader$ReaderValue, arg2: UResource$Sink, arg3: UResourceBundle): void;
     getAllItemsWithFallback(arg0: string, arg1: UResource$Sink): void;

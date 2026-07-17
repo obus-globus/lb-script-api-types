@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Pair } from '../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { DataResult } from '../../../com/mojang/serialization/DataResult.d.ts'
 import type { Decoder } from '../../../com/mojang/serialization/Decoder.d.ts'
@@ -30,7 +31,7 @@ export interface DynamicOps<T extends unknown> extends Object {
     createLong(arg0: number): T;
     createLongList(arg0: LongStream): T;
     createMap(arg0: Stream<Pair<T, T>>): T;
-    createMap(arg0: Map<T, T>): T;
+    createMap(arg0: JavaMap<T, T>): T;
     createNumeric(arg0: Number): T;
     createShort(arg0: number): T;
     createString(arg0: string): T;
@@ -57,7 +58,7 @@ export interface DynamicOps<T extends unknown> extends Object {
     mergeToList(arg0: T, arg1: T[]): DataResult<T>;
     mergeToMap(arg0: T, arg1: T, arg2: T): DataResult<T>;
     mergeToMap(arg0: T, arg1: MapLike<T>): DataResult<T>;
-    mergeToMap(arg0: T, arg1: Map<T, T>): DataResult<T>;
+    mergeToMap(arg0: T, arg1: JavaMap<T, T>): DataResult<T>;
     mergeToPrimitive(arg0: T, arg1: T): DataResult<T>;
     remove(arg0: T, arg1: string): T;
     set(arg0: T, arg1: string, arg2: T): T;

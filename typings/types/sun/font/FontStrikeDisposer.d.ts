@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Reference } from '../../java/lang/ref/Reference.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Font2D } from '../../sun/font/Font2D.d.ts'
@@ -18,6 +19,6 @@ export class FontStrikeDisposer extends Object implements Disposer$PollDisposabl
     // private pScalerContext: number;
     // private segIntGlyphImages: number[][];
     // private segLongGlyphImages: number[][];
-    // private strikeCache: Map<FontStrikeDesc, Reference<FontStrike>>;
+    // private strikeCache: JavaMap<FontStrikeDesc, Reference<FontStrike>>;
     dispose(): void;
 }

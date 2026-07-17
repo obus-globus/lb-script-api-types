@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { CallTarget } from '../../../../../../com/oracle/truffle/api/CallTarget.d.ts'
 import type { TruffleStackTraceElement } from '../../../../../../com/oracle/truffle/api/TruffleStackTraceElement.d.ts'
 import type { Frame } from '../../../../../../com/oracle/truffle/api/frame/Frame.d.ts'
@@ -30,7 +31,7 @@ export class FunctionRootNode extends AbstractFunctionRootNode implements FrameD
     countsTowardsStackTraceLimit(): boolean;
     executeInRealm(frame: VirtualFrame): Object;
     getBody(): JavaScriptNode;
-    getDebugProperties(): { [key: string]: Object };
+    getDebugProperties(): JavaMap<string, Object>;
     getFunctionData(): JSFunctionData;
     getName(): string;
     getNameTString(): TruffleString;

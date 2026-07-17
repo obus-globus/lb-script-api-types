@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { WorldRenderEvent } from '../../../../../../net/ccbluex/liquidbounce/event/events/WorldRenderEvent.d.ts'
 import type { BlockCuller } from '../../../../../../net/ccbluex/liquidbounce/utils/render/placement/BlockCuller.d.ts'
@@ -19,10 +20,10 @@ export class PlacementRenderHandler extends Object implements BlockCuller$Owner 
     // private blockPosCache: BlockPos$MutableBlockPos;
     // private blockPosCacheList: (Object | null)[];
     // private culler: BlockCuller;
-    // private currentList: { [key: string]: any };
+    // private currentList: JavaMap<any, any>;
     readonly id: number;
-    // private inList: { [key: string]: any };
-    // private outList: { [key: string]: any };
+    // private inList: JavaMap<any, any>;
+    // private outList: JavaMap<any, any>;
     // private placementRenderer: PlacementRenderer;
     /**
      * Adds a block to be rendered. First it will make an appear-animation, then

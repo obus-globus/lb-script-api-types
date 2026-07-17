@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Binding } from '../../javax/naming/Binding.d.ts'
 import type { Context } from '../../javax/naming/Context.d.ts'
 import type { Name } from '../../javax/naming/Name.d.ts'
@@ -23,11 +24,11 @@ export class InitialContext extends Object implements Context {
     static doLookup<T extends unknown>(paramarg0: string): T;
     static doLookup<T extends unknown>(paramarg0: Name): T;
     constructor()
-    constructor(arg0: Map<Object | null, Object | null>)
+    constructor(arg0: JavaMap<Object | null, Object | null>)
     constructor(arg0: boolean)
     // private defaultInitCtx: Context;
     // private gotDefault: boolean;
-    // private myProps: Map<Object, Object>;
+    // private myProps: JavaMap<Object, Object>;
     addToEnvironment(arg0: string, arg1: Object): Object;
     bind(arg0: Name, arg1: Object): void;
     bind(arg0: string, arg1: Object): void;
@@ -39,13 +40,13 @@ export class InitialContext extends Object implements Context {
     destroySubcontext(arg0: Name): void;
     destroySubcontext(arg0: string): void;
     getDefaultInitCtx(): Context;
-    getEnvironment(): Map<Object | null, Object | null>;
+    getEnvironment(): JavaMap<Object | null, Object | null>;
     getNameInNamespace(): string;
     getNameParser(arg0: Name): NameParser;
     getNameParser(arg0: string): NameParser;
     getURLOrDefaultInitCtx(arg0: Name): Context;
     getURLOrDefaultInitCtx(arg0: string): Context;
-    init(arg0: Map<Object | null, Object | null>): void;
+    init(arg0: JavaMap<Object | null, Object | null>): void;
     list(arg0: Name): NamingEnumeration<NameClassPair>;
     list(arg0: string): NamingEnumeration<NameClassPair>;
     listBindings(arg0: Name): NamingEnumeration<Binding>;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { AbstractApplicationBase } from '../../../../com/microsoft/aad/msal4j/AbstractApplicationBase.d.ts'
 import type { AuthenticationResult } from '../../../../com/microsoft/aad/msal4j/AuthenticationResult.d.ts'
 import type { Authority } from '../../../../com/microsoft/aad/msal4j/Authority.d.ts'
@@ -14,6 +15,6 @@ export abstract class AuthenticationResultSupplier extends Object implements Sup
     execute(): AuthenticationResult;
     get(): IAuthenticationResult;
     getAuthorityWithPrefNetworkHost(arg0: string): Authority;
-    // private initializeApiEvent(arg0: MsalRequest): { [key: string]: any };
+    // private initializeApiEvent(arg0: MsalRequest): JavaMap<any, any>;
     // private logResult(arg0: AuthenticationResult, arg1: HttpHeaders): void;
 }

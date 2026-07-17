@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CallableDescriptor$UserDataKey } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableDescriptor$UserDataKey.d.ts'
 import type { CallableMemberDescriptor$Kind } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableMemberDescriptor$Kind.d.ts'
@@ -27,7 +28,7 @@ export class SimpleFunctionDescriptorImpl extends FunctionDescriptorImpl impleme
     createSubstitutedCopy(arg0: DeclarationDescriptor, arg1: FunctionDescriptor, arg2: CallableMemberDescriptor$Kind, arg3: Name, arg4: AnnotationDescriptor[], arg5: SourceElement): FunctionDescriptorImpl;
     getOriginal(): SimpleFunctionDescriptor;
     initialize(arg0: ReceiverParameterDescriptor, arg1: ReceiverParameterDescriptor, arg2: ReceiverParameterDescriptor[], arg3: TypeParameterDescriptor[], arg4: ValueParameterDescriptor[], arg5: KotlinType, arg6: Modality, arg7: DescriptorVisibility): SimpleFunctionDescriptorImpl;
-    initialize(arg0: ReceiverParameterDescriptor, arg1: ReceiverParameterDescriptor, arg2: ReceiverParameterDescriptor[], arg3: TypeParameterDescriptor[], arg4: ValueParameterDescriptor[], arg5: KotlinType, arg6: Modality, arg7: DescriptorVisibility, arg8: Map<CallableDescriptor$UserDataKey<Object>, Object | null>): SimpleFunctionDescriptorImpl;
+    initialize(arg0: ReceiverParameterDescriptor, arg1: ReceiverParameterDescriptor, arg2: ReceiverParameterDescriptor[], arg3: TypeParameterDescriptor[], arg4: ValueParameterDescriptor[], arg5: KotlinType, arg6: Modality, arg7: DescriptorVisibility, arg8: JavaMap<CallableDescriptor$UserDataKey<Object>, Object | null>): SimpleFunctionDescriptorImpl;
     newCopyBuilder(): FunctionDescriptor$CopyBuilder<SimpleFunctionDescriptor>;
     newCopyBuilder(arg0: TypeSubstitutor): FunctionDescriptorImpl$CopyConfiguration;
 }

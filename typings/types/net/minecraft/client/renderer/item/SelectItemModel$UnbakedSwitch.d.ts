@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -17,7 +18,7 @@ export class SelectItemModel$UnbakedSwitch<P extends SelectItemModelProperty<T>,
     // private property: P;
     bake(context: ItemModel$BakingContext, transformation: Matrix4fc, fallback: ItemModel): ItemModel;
     cases(): SelectItemModel$SwitchCase<T>[];
-    // private createModelGetter(originalModels: Map<T, ItemModel>, registrySwapper: RegistryContextSwapper): (param0: T, param1: ClientLevel) => ItemModel;
+    // private createModelGetter(originalModels: JavaMap<T, ItemModel>, registrySwapper: RegistryContextSwapper): (param0: T, param1: ClientLevel) => ItemModel;
     equals(o: Object | null): boolean;
     hashCode(): number;
     property(): P;

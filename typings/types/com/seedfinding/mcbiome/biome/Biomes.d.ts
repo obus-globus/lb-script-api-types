@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Biome } from '../../../../com/seedfinding/mcbiome/biome/Biome.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Biomes extends Object {
@@ -98,7 +99,7 @@ export class Biomes extends Object {
     static PLAINS: Biome;
     static REDWOOD_TAIGA: Biome;
     static REDWOOD_TAIGA_HILLs: Biome;
-    static REGISTRY: { [key: number]: Biome };
+    static REGISTRY: JavaMap<number, Biome>;
     static RIVER: Biome;
     static ROOFED_FOREST: Biome;
     static ROOFED_FOREST_M: Biome;

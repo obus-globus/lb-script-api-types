@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../../JavaMap.d.ts'
 import type { Tagged$Companion } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
 import type { CombatSample } from '../../../../../../../../../net/ccbluex/liquidbounce/deeplearn/data/CombatSample.d.ts'
 import type { EventHook } from '../../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
@@ -18,14 +19,14 @@ export class DebugCombatRecorder extends ModuleDebugRecorder$DebugRecorderMode<C
     static INSTANCE: DebugCombatRecorder;
     // private attackHandler: EventHook<AttackEntityEvent>;
     // private /*not mapped: */ getDoNotTrack(): boolean;
-    // private fightMap: { [key: string]: any };
+    // private fightMap: JavaMap<any, any>;
     // private packetHandler: EventHook<PacketEvent>;
     // private previous: Rotation;
     // private renderHandler: EventHook<WorldRenderEvent>;
     // private targetEntityId: number | null;
     // private targetTracker: TargetTracker;
     // private tickHandler: EventHook<GameTickEvent>;
-    // private trainingCollection: { [key: string]: any };
+    // private trainingCollection: JavaMap<any, any>;
     disable(): void;
     // private reset(): void;
 }

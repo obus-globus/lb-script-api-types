@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { InputStream } from '../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../java/io/OutputStream.d.ts'
 import type { Consumer } from '../../../java/util/function/Consumer.d.ts'
@@ -16,7 +17,7 @@ export class Engine$Builder extends Object {
     // private exceptionHandler: (param0: PolyglotException) => void;
     // private in: InputStream;
     // private messageTransport: MessageTransport;
-    // private options: { [key: string]: string };
+    // private options: JavaMap<string, string>;
     // private out: OutputStream;
     // private permittedLanguages: string[];
     // private sandboxPolicy: SandboxPolicy;
@@ -30,7 +31,7 @@ export class Engine$Builder extends Object {
     logHandler(logOut: OutputStream): Engine$Builder;
     logHandler(logHandler: Handler): Engine$Builder;
     option(key: string, value: string): Engine$Builder;
-    options(options: { [key: string]: string }): Engine$Builder;
+    options(options: JavaMap<string, string>): Engine$Builder;
     out(out: OutputStream): Engine$Builder;
     sandbox(policy: SandboxPolicy): Engine$Builder;
     serverTransport(serverTransport: MessageTransport): Engine$Builder;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { StringBuffer } from '../../../../../java/lang/StringBuffer.d.ts'
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -10,15 +11,15 @@ export class StrSubstitutor extends Object {
     static DEFAULT_PREFIX: StrMatcher;
     static DEFAULT_SUFFIX: StrMatcher;
     static DEFAULT_VALUE_DELIMITER: StrMatcher;
-    static replace<V extends unknown>(paramarg0: Object, paramarg1: { [key: string]: V }): string;
-    static replace<V extends unknown>(paramarg0: Object, paramarg1: { [key: string]: V }, paramarg2: string, paramarg3: string): string;
-    static replace(paramarg0: Object, paramarg1: { [key: string]: any }): string;
+    static replace<V extends unknown>(paramarg0: Object, paramarg1: JavaMap<string, V>): string;
+    static replace<V extends unknown>(paramarg0: Object, paramarg1: JavaMap<string, V>, paramarg2: string, paramarg3: string): string;
+    static replace(paramarg0: Object, paramarg1: JavaMap<any, any>): string;
     static replaceSystemProperties(paramarg0: Object): string;
     constructor()
-    constructor(arg0: { [key: string]: Object })
-    constructor(arg0: { [key: string]: Object }, arg1: string, arg2: string)
-    constructor(arg0: { [key: string]: Object }, arg1: string, arg2: string, arg3: string)
-    constructor(arg0: { [key: string]: Object }, arg1: string, arg2: string, arg3: string, arg4: string)
+    constructor(arg0: JavaMap<string, Object>)
+    constructor(arg0: JavaMap<string, Object>, arg1: string, arg2: string)
+    constructor(arg0: JavaMap<string, Object>, arg1: string, arg2: string, arg3: string)
+    constructor(arg0: JavaMap<string, Object>, arg1: string, arg2: string, arg3: string, arg4: string)
     constructor(arg0: StrLookup<Object>)
     constructor(arg0: StrLookup<Object>, arg1: string, arg2: string, arg3: string)
     constructor(arg0: StrLookup<Object>, arg1: string, arg2: string, arg3: string, arg4: string)

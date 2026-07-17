@@ -1,8 +1,9 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 export class ObjectUtil extends Object {
     static checkInRange(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: string): number;
-    static checkNonEmpty<K extends unknown, V extends unknown, T extends Map<K, V>>(paramarg0: T, paramarg1: string): T;
+    static checkNonEmpty<K extends unknown, V extends unknown, T extends JavaMap<K, V>>(paramarg0: T, paramarg1: string): T;
     static checkNonEmpty<T extends Object[]>(paramarg0: T, paramarg1: string): T;
     static checkNonEmpty<T extends unknown>(paramarg0: T[], paramarg1: string): T[];
     static checkNonEmpty(paramarg0: number[], paramarg1: string): number[];

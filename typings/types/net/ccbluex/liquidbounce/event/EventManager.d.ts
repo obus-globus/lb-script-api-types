@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { MutableSharedFlow } from '../../../../kotlinx/coroutines/flow/MutableSharedFlow.d.ts'
@@ -13,8 +14,8 @@ import type { EventListener } from '../../../../net/ccbluex/liquidbounce/event/E
  */
 export class EventManager extends Object {
     static INSTANCE: EventManager;
-    // private flows: Map<Class<Event>, MutableSharedFlow<Event>>;
-    // private registry: Map<Class<Event>, EventHookRegistry<Event>>;
+    // private flows: JavaMap<Class<Event>, MutableSharedFlow<Event>>;
+    // private registry: JavaMap<Class<Event>, EventHookRegistry<Event>>;
     /**
      * Call event to listeners
      *

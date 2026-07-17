@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { RuntimeException } from '../../../../java/lang/RuntimeException.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -12,7 +13,7 @@ export class OptionValuesImpl extends Object implements OptionValues {
     // private trackDeprecatedOptions: boolean;
     // private usedDeprecatedDescriptors: OptionDescriptor[];
     // private validAssertKeys: OptionKey<Object>[];
-    // private values: Map<OptionKey<Object>, Object>;
+    // private values: JavaMap<OptionKey<Object>, Object>;
     // private contains<T extends unknown>(optionKey: OptionKey<T>): boolean;
     copy(): OptionValuesImpl;
     copyInto(target: OptionValuesImpl): void;
@@ -27,7 +28,7 @@ export class OptionValuesImpl extends Object implements OptionValues {
     hashCode(): number;
     // private initializeValidAssertKeys(): OptionKey<Object>[];
     put(key: string, value: string, allowExperimentalOptions: boolean, allOptionsSupplier: () => OptionDescriptor[]): OptionDescriptor;
-    putAll(providedValues: { [key: string]: string }, allowExperimentalOptions: boolean, allOptionsSupplier: () => OptionDescriptor[]): void;
+    putAll(providedValues: JavaMap<string, string>, allowExperimentalOptions: boolean, allOptionsSupplier: () => OptionDescriptor[]): void;
     set<T extends unknown>(optionKey: OptionKey<T>, value: T): void;
     // private slowCompareKey(key: OptionKey<Object>, other: OptionValues): boolean;
     toString(): string;

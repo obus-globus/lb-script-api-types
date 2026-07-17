@@ -1,7 +1,8 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { CharListIterator } from '../../../../../it/unimi/dsi/fastutil/chars/CharListIterator.d.ts'
 import type { Long2CharRBTreeMap$TreeIterator } from '../../../../../it/unimi/dsi/fastutil/longs/Long2CharRBTreeMap$TreeIterator.d.ts'
 export class Long2CharRBTreeMap$ValueIterator extends Long2CharRBTreeMap$TreeIterator implements CharListIterator {
-    private constructor(null_: { [key: string]: any })
+    private constructor(null_: JavaMap<any, any>)
     add(arg0: string): void;
     next(): string;
     nextChar(): string;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { PoseStack } from '../../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
 import type { AdultAndBabyModelPair } from '../../../../../net/minecraft/client/model/AdultAndBabyModelPair.d.ts'
 import type { ChickenModel } from '../../../../../net/minecraft/client/model/animal/chicken/ChickenModel.d.ts'
@@ -14,7 +15,7 @@ export class ChickenRenderer extends MobRenderer<Chicken, ChickenRenderState, Ch
     static NAMETAG_SCALE: number;
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
-    // private models: Map<ChickenVariant$ModelType, AdultAndBabyModelPair<ChickenModel>>;
+    // private models: JavaMap<ChickenVariant$ModelType, AdultAndBabyModelPair<ChickenModel>>;
     createRenderState(): ChickenRenderState;
     createRenderState(entity: Chicken, partialTicks: number): ChickenRenderState;
     extractRenderState(entity: Chicken, state: ChickenRenderState, partialTicks: number): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Ordering } from '../../../../com/google/common/collect/Ordering.d.ts'
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
@@ -13,9 +14,9 @@ export class ExplicitOrdering<T extends unknown> extends Ordering<T> implements 
     static from<T extends unknown>(paramcomparator: (param0: T, param1: T) => number): Ordering<T>;
     static natural<C extends Comparable<Object>>(): Ordering<C>;
     static usingToString(): Ordering<Object>;
-    constructor(rankMap: Map<T, number>)
+    constructor(rankMap: JavaMap<T, number>)
     constructor(valuesInOrder: T[])
-    // private rankMap: Map<T, number>;
+    // private rankMap: JavaMap<T, number>;
     compare(left: T, right: T): number;
     equals(object: Object | null): boolean;
     hashCode(): number;

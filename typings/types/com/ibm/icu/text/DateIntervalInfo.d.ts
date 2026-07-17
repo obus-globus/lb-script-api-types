@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { DateIntervalFormat$BestMatchInfo } from '../../../../com/ibm/icu/text/DateIntervalFormat$BestMatchInfo.d.ts'
 import type { DateIntervalInfo$PatternInfo } from '../../../../com/ibm/icu/text/DateIntervalInfo$PatternInfo.d.ts'
 import type { Freezable } from '../../../../com/ibm/icu/util/Freezable.d.ts'
@@ -13,7 +14,7 @@ export class DateIntervalInfo extends Object implements Freezable<DateIntervalIn
     constructor(arg0: Locale)
     // private fFallbackIntervalPattern: string;
     // private fFirstDateInPtnIsLaterDate: boolean;
-    // private fIntervalPatterns: { [key: string]: { [key: string]: DateIntervalInfo$PatternInfo } };
+    // private fIntervalPatterns: JavaMap<string, JavaMap<string, DateIntervalInfo$PatternInfo>>;
     // private fIntervalPatternsReadOnly: boolean;
     readonly frozen: boolean;
     clone(): DateIntervalInfo;
@@ -25,8 +26,8 @@ export class DateIntervalInfo extends Object implements Freezable<DateIntervalIn
     getDefaultOrder(): boolean;
     getFallbackIntervalPattern(): string;
     getIntervalPattern(arg0: string, arg1: number): DateIntervalInfo$PatternInfo;
-    getPatterns(): { [key: string]: string[] };
-    getRawPatterns(): { [key: string]: { [key: string]: DateIntervalInfo$PatternInfo } };
+    getPatterns(): JavaMap<string, string[]>;
+    getRawPatterns(): JavaMap<string, JavaMap<string, DateIntervalInfo$PatternInfo>>;
     hashCode(): number;
     // private initializeData(arg0: ULocale): void;
     // private initializeFromReadOnlyPatterns(arg0: DateIntervalInfo): void;

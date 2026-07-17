@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { GameTickEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts'
 import type { WorldChangeEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/WorldChangeEvent.d.ts'
@@ -22,11 +23,11 @@ export class ModuleBreadcrumbs extends ClientModule {
     // private /*not mapped: */ getColorRainbow(): boolean;
     // private height: number;
     // private /*not mapped: */ getHeight(): number;
-    // private lastPositions: Map<Entity, Vec3>;
+    // private lastPositions: JavaMap<Entity, Vec3>;
     // private onlyOwn: boolean;
     // private /*not mapped: */ getOnlyOwn(): boolean;
     readonly renderHandler: EventHook<WorldRenderEvent>;
-    // private trails: Map<Entity, ModuleBreadcrumbs$Trail>;
+    // private trails: JavaMap<Entity, ModuleBreadcrumbs$Trail>;
     /**
      * Updates all trails.
      *

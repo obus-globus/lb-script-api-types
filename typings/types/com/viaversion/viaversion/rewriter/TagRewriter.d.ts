@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { RegistryType } from '../../../../com/viaversion/viaversion/api/minecraft/RegistryType.d.ts'
 import type { TagData } from '../../../../com/viaversion/viaversion/api/minecraft/TagData.d.ts'
 import type { EntityType } from '../../../../com/viaversion/viaversion/api/minecraft/entities/EntityType.d.ts'
@@ -11,10 +12,10 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class TagRewriter<C extends ClientboundPacketType> extends Object implements TagRewriter_2 {
     constructor(arg0: Protocol<C, any, any, any>)
     // private protocol: Protocol<C, any, any, any>;
-    // private toAdd: Map<RegistryType, TagData[]>;
-    // private toRemove: Map<RegistryType, string[]>;
+    // private toAdd: JavaMap<RegistryType, TagData[]>;
+    // private toRemove: JavaMap<RegistryType, string[]>;
     // private toRemoveRegistries: string[];
-    // private toRename: Map<RegistryType, { [key: string]: string }>;
+    // private toRename: JavaMap<RegistryType, JavaMap<string, string>>;
     addEmptyTag(arg0: RegistryType, arg1: string): void;
     addEmptyTags(arg0: RegistryType, ...arg1: string[]): void;
     addEntityTag(arg0: string, ...arg1: EntityType[]): void;
@@ -26,7 +27,7 @@ export class TagRewriter<C extends ClientboundPacketType> extends Object impleme
     getOrComputeNewTags(arg0: RegistryType): TagData[];
     getRewriter(arg0: RegistryType): (param0: number) => number;
     handle(arg0: PacketWrapper, arg1: RegistryType): void;
-    handle(arg0: PacketWrapper, arg1: (param0: number) => number, arg2: TagData[], arg3: { [key: string]: string }, arg4: string[]): void;
+    handle(arg0: PacketWrapper, arg1: (param0: number) => number, arg2: TagData[], arg3: JavaMap<string, string>, arg4: string[]): void;
     handle(arg0: PacketWrapper, arg1: string): void;
     handleGeneric(arg0: PacketWrapper): void;
     onMappingDataLoaded(): void;

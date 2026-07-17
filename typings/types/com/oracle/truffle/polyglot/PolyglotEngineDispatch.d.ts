@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { PolyglotImpl } from '../../../../com/oracle/truffle/polyglot/PolyglotImpl.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../../java/io/OutputStream.d.ts'
@@ -24,11 +25,11 @@ export class PolyglotEngineDispatch extends AbstractPolyglotImpl$AbstractEngineD
     // private polyglot: PolyglotImpl;
     attachExecutionListener(engineReceiver: Object, onEnter: (param0: Object) => void, onReturn: (param0: Object) => void, expressions: boolean, statements: boolean, roots: boolean, sourceFilter: (param0: Object) => boolean, rootFilter: (param0: string) => boolean, collectInputValues: boolean, collectReturnValues: boolean, collectExceptions: boolean): Object;
     close(oreceiver: Object, apiObject: Object, cancelIfExecuting: boolean): void;
-    createContext(oreceiver: Object, engineApi: Engine, sandboxPolicy: SandboxPolicy, out: OutputStream, err: OutputStream, in_: InputStream, allowHostLookup: boolean, hostAccess: Object, polyglotAccess: Object, allowNativeAccess: boolean, allowCreateThread: boolean, allowHostClassLoading: boolean, allowInnerContextOptions: boolean, allowExperimentalOptions: boolean, classFilter: (param0: string) => boolean, options: { [key: string]: string }, arguments: { [key: string]: string[] }, onlyLanguages: string[], ioAccess: Object, logHandler: Object, allowCreateProcess: boolean, processHandler: ProcessHandler, exceptionHandler: (param0: PolyglotException) => void, environmentAccess: Object, environment: { [key: string]: string }, zone: ZoneId, limitsImpl: Object, currentWorkingDirectory: string, tmpDir: string, hostClassLoader: ClassLoader, allowValueSharing: boolean, useSystemExit: boolean, registerInActiveContexts: boolean): Context;
+    createContext(oreceiver: Object, engineApi: Engine, sandboxPolicy: SandboxPolicy, out: OutputStream, err: OutputStream, in_: InputStream, allowHostLookup: boolean, hostAccess: Object, polyglotAccess: Object, allowNativeAccess: boolean, allowCreateThread: boolean, allowHostClassLoading: boolean, allowInnerContextOptions: boolean, allowExperimentalOptions: boolean, classFilter: (param0: string) => boolean, options: JavaMap<string, string>, arguments: JavaMap<string, string[]>, onlyLanguages: string[], ioAccess: Object, logHandler: Object, allowCreateProcess: boolean, processHandler: ProcessHandler, exceptionHandler: (param0: PolyglotException) => void, environmentAccess: Object, environment: JavaMap<string, string>, zone: ZoneId, limitsImpl: Object, currentWorkingDirectory: string, tmpDir: string, hostClassLoader: ClassLoader, allowValueSharing: boolean, useSystemExit: boolean, registerInActiveContexts: boolean): Context;
     getCachedSources(oreceiver: Object): Object[];
     getImplementationName(oreceiver: Object): string;
-    getInstruments(oreceiver: Object): { [key: string]: Object };
-    getLanguages(oreceiver: Object): { [key: string]: Object };
+    getInstruments(oreceiver: Object): JavaMap<string, Object>;
+    getLanguages(oreceiver: Object): JavaMap<string, Object>;
     getOptions(oreceiver: Object): OptionDescriptor[];
     getSandboxPolicy(engineReceiver: Object): SandboxPolicy;
     getVersion(oreceiver: Object): string;

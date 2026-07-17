@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Component } from '../../java/awt/Component.d.ts'
 import type { Dimension } from '../../java/awt/Dimension.d.ts'
 import type { Point } from '../../java/awt/Point.d.ts'
@@ -71,7 +72,7 @@ export class JTree extends JComponent implements Accessible, Scrollable {
     static isLightweightComponent(paramarg0: Component): boolean;
     static setDefaultLocale(paramarg0: Locale): void;
     constructor()
-    constructor(arg0: Map<Object | null, Object | null>)
+    constructor(arg0: JavaMap<Object | null, Object | null>)
     constructor(arg0: (Object | null)[])
     constructor(arg0: TreeModel)
     constructor(arg0: TreeNode)
@@ -87,7 +88,7 @@ export class JTree extends JComponent implements Accessible, Scrollable {
     editable: boolean;
     // private expandRow: number;
     // private expandedStack: TreePath[][];
-    // private expandedState: Map<TreePath, boolean>;
+    // private expandedState: JavaMap<TreePath, boolean>;
     readonly expandsSelectedPaths: boolean;
     invokesStopCellEditing: boolean;
     largeModel: boolean;

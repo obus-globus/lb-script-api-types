@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Mob } from '../../../../../net/minecraft/world/entity/Mob.d.ts'
@@ -19,7 +20,7 @@ export abstract class NodeEvaluator extends Object {
     // private entityHeight: number;
     // private entityWidth: number;
     // private mob: Mob;
-    // private nodes: { [key: string]: any };
+    // private nodes: JavaMap<any, any>;
     done(): void;
     getNeighbors(neighbors: Node[], pos: Node): number;
     getNode(x: number, y: number, z: number): Node;

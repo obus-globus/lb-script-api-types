@@ -1,6 +1,7 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { JcaTemplate$JcaInstanceFactory } from '../../../../io/jsonwebtoken/impl/security/JcaTemplate$JcaInstanceFactory.d.ts'
 import type { Cipher } from '../../../../javax/crypto/Cipher.d.ts'
 export class JcaTemplate$CipherFactory extends JcaTemplate$JcaInstanceFactory<Cipher> {
     constructor()
-    doGet(arg0: string, arg1: { [key: string]: any }): Cipher;
+    doGet(arg0: string, arg1: JavaMap<any, any>): Cipher;
 }

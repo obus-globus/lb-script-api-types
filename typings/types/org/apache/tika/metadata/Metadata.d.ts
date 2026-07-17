@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Calendar } from '../../../../java/util/Calendar.d.ts'
 import type { Date } from '../../../../java/util/Date.d.ts'
@@ -84,7 +85,7 @@ export class Metadata extends Object implements Serializable, ClimateForcast, Cr
     static TIMESTAMP: Property;
     static WORK_TYPE: string;
     constructor()
-    // private metadata: { [key: string]: string[] };
+    // private metadata: JavaMap<string, string[]>;
     // private writeFilter: MetadataWriteFilter;
     // private _getValues(arg0: string): string[];
     add(arg0: string, arg1: string[]): void;
@@ -115,7 +116,7 @@ export class Metadata extends Object implements Serializable, ClimateForcast, Cr
     set(arg0: Property, arg1: boolean): void;
     set(arg0: Property, arg1: number): void;
     set(arg0: Property, arg1: string): void;
-    setAll(arg0: { [key: string]: any }): void;
+    setAll(arg0: JavaMap<any, any>): void;
     setMetadataWriteFilter(arg0: MetadataWriteFilter): void;
     size(): number;
     toString(): string;

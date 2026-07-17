@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { JsonObject } from '../../../../../../com/google/gson/JsonObject.d.ts'
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
@@ -14,7 +15,7 @@ export class JsonContent extends StringContent {
     static bytes(paramarg0: number[], paramarg1: number, paramarg2: number): HttpContent;
     static file(paramarg0: File): HttpContent;
     static form(paramarg0: string, paramarg1: string): HttpContent;
-    static form(paramarg0: { [key: string]: string }): HttpContent;
+    static form(paramarg0: JavaMap<string, string>): HttpContent;
     static inputStream(paramarg0: ContentType, paramarg1: InputStream, paramarg2: number): InputStreamContent;
     static multiPartForm(): MultiPartFormContent;
     static string(paramarg0: string): HttpContent;

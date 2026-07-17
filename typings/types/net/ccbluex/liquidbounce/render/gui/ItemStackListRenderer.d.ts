@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { EventHook } from '../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { EventListener } from '../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
@@ -15,7 +16,7 @@ export class ItemStackListRenderer extends Object implements EventListener {
     static INSTANCE: ItemStackListRenderer;
     static create(self: GuiGraphicsExtractor, stacks: ItemStack[]): ItemStackListRenderState;
     static createItemStackForRendering(self: Block, count: number): ItemStack;
-    // private block2Item: Map<Block, Item>;
+    // private block2Item: JavaMap<Block, Item>;
     readonly debugDisplayName: Component;
     // private overlapRearranger: GuiOverlapRearranger;
     // private overlayRenderHandler: EventHook<OverlayRenderEvent>;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Closeable } from '../../java/io/Closeable.d.ts'
 import type { InputStream } from '../../java/io/InputStream.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
@@ -13,7 +14,7 @@ import type { Object } from '../../java/lang/Object.d.ts'
 export class Recording extends Object implements Closeable {
     constructor()
     constructor(arg0: Configuration)
-    constructor(arg0: { [key: string]: string })
+    constructor(arg0: JavaMap<string, string>)
     // private internal: PlatformRecording;
     close(): void;
     copy(arg0: boolean): Recording;
@@ -31,7 +32,7 @@ export class Recording extends Object implements Closeable {
     getMaxAge(): Duration;
     getMaxSize(): number;
     getName(): string;
-    getSettings(): { [key: string]: string };
+    getSettings(): JavaMap<string, string>;
     getSize(): number;
     getStartTime(): Instant;
     getState(): RecordingState;
@@ -46,7 +47,7 @@ export class Recording extends Object implements Closeable {
     setMaxSize(arg0: number): void;
     setName(arg0: string): void;
     // private setSetting(arg0: string, arg1: string): void;
-    setSettings(arg0: { [key: string]: string }): void;
+    setSettings(arg0: JavaMap<string, string>): void;
     setToDisk(arg0: boolean): void;
     start(): void;
     stop(): boolean;

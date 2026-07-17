@@ -1,8 +1,9 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ShaderStorageBuffer } from '../../../../../net/irisshaders/iris/gl/buffer/ShaderStorageBuffer.d.ts'
 export class ShaderStorageBufferHolder extends Object {
     static forceDeleteBuffers(): void;
-    constructor(arg0: { [key: string]: any }, arg1: number, arg2: number)
+    constructor(arg0: JavaMap<any, any>, arg1: number, arg2: number)
     // private buffers: ShaderStorageBuffer[];
     // private cachedHeight: number;
     // private cachedWidth: number;

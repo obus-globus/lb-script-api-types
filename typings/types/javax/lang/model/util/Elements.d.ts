@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Writer } from '../../../../java/io/Writer.d.ts'
 import type { AnnotatedConstruct } from '../../../../javax/lang/model/AnnotatedConstruct.d.ts'
 import type { AnnotationMirror } from '../../../../javax/lang/model/element/AnnotationMirror.d.ts'
@@ -26,7 +27,7 @@ export interface Elements extends Object{
     getConstantExpression(arg0: Object): string;
     getDocComment(arg0: Element): string;
     getDocCommentKind(arg0: Element): Elements$DocCommentKind;
-    getElementValuesWithDefaults(arg0: AnnotationMirror): Map<ExecutableElement, AnnotationValue>;
+    getElementValuesWithDefaults(arg0: AnnotationMirror): JavaMap<ExecutableElement, AnnotationValue>;
     getEnumConstantBody(arg0: VariableElement): TypeElement;
     getFileObjectOf(arg0: Element): JavaFileObject;
     getModuleElement(arg0: CharSequence): ModuleElement;

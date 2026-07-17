@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
 import type { EnvironmentAttribute } from '../../../../net/minecraft/world/attribute/EnvironmentAttribute.d.ts'
@@ -14,7 +15,7 @@ import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
 import type { Timeline } from '../../../../net/minecraft/world/timeline/Timeline.d.ts'
 export class EnvironmentAttributeSystem$Builder extends Object {
     private constructor()
-    // private layersByAttribute: Map<EnvironmentAttribute<Object>, EnvironmentAttributeLayer<Object>[]>;
+    // private layersByAttribute: JavaMap<EnvironmentAttribute<Object>, EnvironmentAttributeLayer<Object>[]>;
     // private addConstantEntry<Value extends unknown>(attribute: EnvironmentAttribute<Value>, attributeMap: EnvironmentAttributeMap): EnvironmentAttributeSystem$Builder;
     addConstantLayer<Value extends unknown>(attribute: EnvironmentAttribute<Value>, layer: (param0: Value) => Value): EnvironmentAttributeSystem$Builder;
     addConstantLayer(attributeMap: EnvironmentAttributeMap): EnvironmentAttributeSystem$Builder;

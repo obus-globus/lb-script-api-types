@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { JsonElement } from '../../../com/google/gson/JsonElement.d.ts'
 import type { GameProfile } from '../../../com/mojang/authlib/GameProfile.d.ts'
 import type { PropertyMap } from '../../../com/mojang/authlib/properties/PropertyMap.d.ts'
@@ -94,8 +95,8 @@ export class ExtraCodecs extends Object {
     static longRange(paramminInclusive: number, parammaxInclusive: number): Codec<number>;
     static nonEmptyHolderSet<T extends unknown>(paramlistCodec: Codec<Holder<T>[]>): Codec<Holder<T>[]>;
     static nonEmptyList<T extends unknown>(paramlistCodec: Codec<T[]>): Codec<T[]>;
-    static nonEmptyMap<M extends Map<Object, Object>>(parammapCodec: Codec<M>): Codec<M>;
-    static object2BooleanMap<T extends unknown>(paramkeyCodec: Codec<T>): Codec<{ [key: string]: any }>;
+    static nonEmptyMap<M extends JavaMap<Object, Object>>(parammapCodec: Codec<M>): Codec<M>;
+    static object2BooleanMap<T extends unknown>(paramkeyCodec: Codec<T>): Codec<JavaMap<any, any>>;
     static optionalAlwaysPresentFieldOf<A extends unknown>(paramelementCodec: Codec<A>, paramname: string, paramdefaultValue: A): MapCodec<A>;
     static optionalAlwaysPresentFieldOf<A extends unknown>(paramelementCodec: Codec<A>, paramname: string, paramdefaultValue: A, paramlenient: boolean): MapCodec<A>;
     static optionalEmptyMap<A extends unknown>(paramcodec: Codec<A>): Codec<Optional<A>>;
@@ -107,7 +108,7 @@ export class ExtraCodecs extends Object {
     static pathCodec(parampathFactory: (param0: string) => Path): Codec<Path>;
     static relaiveNormalizedSubPathCodec(parampathFactory: (param0: string) => Path): Codec<Path>;
     static retrieveContext<E extends unknown>(paramgetter: (param0: DynamicOps<Object>) => DataResult<E>): MapCodec<E>;
-    static sizeLimitedMap<K extends unknown, V extends unknown>(paramcodec: Codec<Map<K, V>>, parammaxSizeInclusive: number): Codec<Map<K, V>>;
+    static sizeLimitedMap<K extends unknown, V extends unknown>(paramcodec: Codec<JavaMap<K, V>>, parammaxSizeInclusive: number): Codec<JavaMap<K, V>>;
     static strictUnboundedMap<K extends unknown, V extends unknown>(paramkeyCodec: Codec<K>, paramelementCodec: Codec<V>): ExtraCodecs$StrictUnboundedMapCodec<K, V>;
     static temporalCodec(paramformatter: DateTimeFormatter): Codec<TemporalAccessor>;
     constructor()

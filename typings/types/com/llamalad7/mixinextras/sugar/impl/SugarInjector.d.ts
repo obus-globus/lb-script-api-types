@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Pair } from '../../../../../com/llamalad7/mixinextras/lib/apache/commons/tuple/Pair.d.ts'
 import type { SugarApplicationException } from '../../../../../com/llamalad7/mixinextras/sugar/impl/SugarApplicationException.d.ts'
 import type { SugarApplicator } from '../../../../../com/llamalad7/mixinextras/sugar/impl/SugarApplicator.d.ts'
@@ -21,14 +22,14 @@ export class SugarInjector extends Object {
     // private parameterGenerics: Type[];
     // private strippedSugars: SugarParameter[];
     // private sugarAnnotations: AnnotationNode[];
-    // private targets: Map<AbstractInsnNode[], InjectionNodes$InjectionNode[]>;
+    // private targets: JavaMap<AbstractInsnNode[], InjectionNodes$InjectionNode[]>;
     getExceptions(): SugarApplicationException[];
     // private makeApplicators(): void;
     // private prepareApplicators(): void;
     prepareSugar(): void;
     reSugarHandler(): void;
-    setTargets(arg0: Map<AbstractInsnNode[], InjectionNodes$InjectionNode[]>): void;
+    setTargets(arg0: JavaMap<AbstractInsnNode[], InjectionNodes$InjectionNode[]>): void;
     stripSugar(): void;
-    transformHandlerCalls(arg0: Map<AbstractInsnNode[], Pair<InjectionNodes$InjectionNode, MethodInsnNode>[]>): void;
+    transformHandlerCalls(arg0: JavaMap<AbstractInsnNode[], Pair<InjectionNodes$InjectionNode, MethodInsnNode>[]>): void;
     // private validateApplicators(): void;
 }

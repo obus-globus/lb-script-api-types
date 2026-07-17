@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Module$ModuleRequest } from '../../../../../../com/oracle/js/parser/ir/Module$ModuleRequest.d.ts'
 import type { TruffleFile } from '../../../../../../com/oracle/truffle/api/TruffleFile.d.ts'
 import type { Source } from '../../../../../../com/oracle/truffle/api/source/Source.d.ts'
@@ -19,7 +20,7 @@ export class DefaultESModuleLoader extends Object implements JSModuleLoader {
     static SLASH: string;
     static create(paramrealm: JSRealm): DefaultESModuleLoader;
     constructor(realm: JSRealm)
-    // private moduleMap: Map<DefaultESModuleLoader$CanonicalModuleKey, AbstractModuleRecord>;
+    // private moduleMap: JavaMap<DefaultESModuleLoader$CanonicalModuleKey, AbstractModuleRecord>;
     // private realm: JSRealm;
     addLoadedModule(moduleRequest: Module$ModuleRequest, moduleRecord: AbstractModuleRecord): AbstractModuleRecord;
     asURI(specifier: string): URI;

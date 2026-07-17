@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { EventHook } from '../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { EventListener } from '../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
@@ -15,7 +16,7 @@ export class PlayerSimulationCache extends Object implements EventListener {
     // private localPlayerCache: SimulatedPlayerCache | null;
     // private modalMovementHandler: EventHook<MovementInputEvent>;
     // private movementHandler: EventHook<MovementInputEvent>;
-    // private otherPlayerCache: Map<Player, SimulatedPlayerCache>;
+    // private otherPlayerCache: JavaMap<Player, SimulatedPlayerCache>;
     readonly running: boolean;
     children(): EventListener[];
     getSimulationForLocalPlayer(): SimulatedPlayerCache;

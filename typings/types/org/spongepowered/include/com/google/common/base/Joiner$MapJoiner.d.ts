@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Appendable } from '../../../../../../../java/lang/Appendable.d.ts'
 import type { StringBuilder } from '../../../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
@@ -11,5 +12,5 @@ export class Joiner$MapJoiner extends Object {
     appendTo<A extends Appendable>(arg0: A, arg1: Iterator<Map$Entry<Object, Object>>): A;
     appendTo(arg0: StringBuilder, arg1: Map$Entry<Object, Object>[]): StringBuilder;
     appendTo(arg0: StringBuilder, arg1: Iterator<Map$Entry<Object, Object>>): StringBuilder;
-    appendTo(arg0: StringBuilder, arg1: Map<Object | null, Object | null>): StringBuilder;
+    appendTo(arg0: StringBuilder, arg1: JavaMap<Object | null, Object | null>): StringBuilder;
 }

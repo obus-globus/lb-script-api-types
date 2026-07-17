@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { Exception } from '../../../../../java/lang/Exception.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -11,7 +12,7 @@ import type { AbstractMultipleParser$MetadataPolicy } from '../../../../../org/a
 import type { ContentHandlerFactory } from '../../../../../org/apache/tika/sax/ContentHandlerFactory.d.ts'
 import type { ContentHandler } from '../../../../../org/xml/sax/ContentHandler.d.ts'
 export abstract class AbstractMultipleParser extends Object implements Parser {
-    constructor(arg0: MediaTypeRegistry, arg1: Parser[], arg2: { [key: string]: Param<Object> })
+    constructor(arg0: MediaTypeRegistry, arg1: Parser[], arg2: JavaMap<string, Param<Object>>)
     constructor(arg0: MediaTypeRegistry, arg1: AbstractMultipleParser$MetadataPolicy, ...arg2: Parser[])
     constructor(arg0: MediaTypeRegistry, arg1: AbstractMultipleParser$MetadataPolicy, arg2: Parser[])
     // private offeredTypes: MediaType[];

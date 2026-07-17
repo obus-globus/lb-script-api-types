@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
@@ -12,7 +13,7 @@ export class Log4jEventBuilder extends Object implements CallerBoundaryAware, Lo
     constructor(markerFactory: Log4jMarkerFactory, logger: Logger, level: Level)
     // private arguments: Object[];
     // private fqcn: string;
-    // private keyValuePairs: { [key: string]: string };
+    // private keyValuePairs: JavaMap<string, string>;
     // private level: Level;
     // private logger: Logger;
     // private marker: Marker;

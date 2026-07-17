@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { IntFunction } from '../../../../../java/util/function/IntFunction.d.ts'
@@ -42,7 +43,7 @@ export class ShulkerBoxBlock extends BaseEntityBlock {
     static FILTERED_REGISTRIES: ResourceKey<FeatureElement[]>[];
     static INDESTRUCTIBLE: number;
     static INSTANT: number;
-    static SHAPES_OPEN_SUPPORT: Map<Direction, VoxelShape>;
+    static SHAPES_OPEN_SUPPORT: JavaMap<Direction, VoxelShape>;
     static UPDATE_ALL: number;
     static UPDATE_ALL_IMMEDIATE: number;
     static UPDATE_CLIENTS: number;

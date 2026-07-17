@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { CallTarget } from '../../../../../../com/oracle/truffle/api/CallTarget.d.ts'
 import type { TruffleFile } from '../../../../../../com/oracle/truffle/api/TruffleFile.d.ts'
 import type { LanguageInfo } from '../../../../../../com/oracle/truffle/api/nodes/LanguageInfo.d.ts'
@@ -16,7 +17,7 @@ export class TextDocumentSurrogate extends Object {
     readonly editorText: string;
     readonly languageInfo: LanguageInfo;
     readonly lastChange: TextDocumentContentChangeEvent;
-    // private section2coverageData: Map<SourceSectionReference, CoverageData[]>;
+    // private section2coverageData: JavaMap<SourceSectionReference, CoverageData[]>;
     readonly sourceWrapper: SourceWrapper;
     // private truffleFile: TruffleFile;
     addLocationCoverage(section: SourceSectionReference, coverageData: CoverageData): void;

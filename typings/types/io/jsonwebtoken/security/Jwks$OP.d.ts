@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { KeyOperation } from '../../../io/jsonwebtoken/security/KeyOperation.d.ts'
 import type { KeyOperationBuilder } from '../../../io/jsonwebtoken/security/KeyOperationBuilder.d.ts'
 import type { KeyOperationPolicyBuilder } from '../../../io/jsonwebtoken/security/KeyOperationPolicyBuilder.d.ts'
@@ -12,7 +13,7 @@ export class Jwks$OP extends Object {
     static VERIFY: KeyOperation;
     static WRAP_KEY: KeyOperation;
     static builder(): KeyOperationBuilder;
-    static get(): { [key: string]: KeyOperation };
+    static get(): JavaMap<string, KeyOperation>;
     static policy(): KeyOperationPolicyBuilder;
     private constructor()
 }

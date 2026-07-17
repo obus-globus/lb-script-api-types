@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { FrameDescriptor$Builder } from '../../../../../com/oracle/truffle/api/frame/FrameDescriptor$Builder.d.ts'
 import type { FrameSlotKind } from '../../../../../com/oracle/truffle/api/frame/FrameSlotKind.d.ts'
 import type { BitSet } from '../../../../../java/util/BitSet.d.ts'
@@ -25,7 +26,7 @@ export class FrameDescriptor extends Object implements Cloneable {
     copy(): FrameDescriptor;
     disableAuxiliarySlot(key: Object): void;
     findOrAddAuxiliarySlot(key: Object): number;
-    getAuxiliarySlots(): Map<Object, number>;
+    getAuxiliarySlots(): JavaMap<Object, number>;
     getDefaultValue(): Object;
     getInfo(): Object;
     getNumberOfAuxiliarySlots(): number;

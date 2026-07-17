@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { ATNState } from '../../../../../org/antlr/v4/runtime/atn/ATNState.d.ts'
 import type { Transition } from '../../../../../org/antlr/v4/runtime/atn/Transition.d.ts'
@@ -13,7 +14,7 @@ export class WildcardTransition extends Transition {
     static SET: number;
     static WILDCARD: number;
     static serializationNames: string[];
-    static serializationTypes: Map<Class<Transition>, number>;
+    static serializationTypes: JavaMap<Class<Transition>, number>;
     constructor(arg0: ATNState)
     getSerializationType(): number;
     matches(arg0: number, arg1: number, arg2: number): boolean;

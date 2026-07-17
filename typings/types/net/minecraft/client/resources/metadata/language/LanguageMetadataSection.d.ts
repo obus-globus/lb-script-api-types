@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -7,10 +8,10 @@ export class LanguageMetadataSection extends Record {
     static CODEC: Codec<LanguageMetadataSection>;
     static LANGUAGE_CODE_CODEC: Codec<string>;
     static TYPE: MetadataSectionType<LanguageMetadataSection>;
-    constructor(languages: { [key: string]: LanguageInfo })
-    // private languages: { [key: string]: LanguageInfo };
+    constructor(languages: JavaMap<string, LanguageInfo>)
+    // private languages: JavaMap<string, LanguageInfo>;
     equals(o: Object | null): boolean;
     hashCode(): number;
-    languages(): { [key: string]: LanguageInfo };
+    languages(): JavaMap<string, LanguageInfo>;
     toString(): string;
 }

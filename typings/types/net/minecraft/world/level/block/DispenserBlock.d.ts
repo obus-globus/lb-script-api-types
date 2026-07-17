@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { IntFunction } from '../../../../../java/util/function/IntFunction.d.ts'
@@ -39,7 +40,7 @@ import type { VoxelShape } from '../../../../../net/minecraft/world/phys/shapes/
 export class DispenserBlock extends BaseEntityBlock {
     static BLOCK_STATE_REGISTRY: BlockState[];
     static CODEC: MapCodec<DispenserBlock>;
-    static DISPENSER_REGISTRY: Map<Item, DispenseItemBehavior>;
+    static DISPENSER_REGISTRY: JavaMap<Item, DispenseItemBehavior>;
     static FACING: EnumProperty<Direction>;
     static FILTERED_REGISTRIES: ResourceKey<FeatureElement[]>[];
     static INDESTRUCTIBLE: number;

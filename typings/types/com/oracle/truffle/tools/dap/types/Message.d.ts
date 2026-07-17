@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { JSONBase } from '../../../../../../com/oracle/truffle/tools/dap/types/JSONBase.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { JSONObject } from '../../../../../../org/graalvm/shadowed/org/json/JSONObject.d.ts'
@@ -11,7 +12,7 @@ export class Message extends JSONBase {
     getShowUser(): boolean;
     getUrl(): string;
     getUrlLabel(): string;
-    getVariables(): { [key: string]: string };
+    getVariables(): JavaMap<string, string>;
     hashCode(): number;
     setFormat(format: string): Message;
     setId(id: number): Message;
@@ -19,5 +20,5 @@ export class Message extends JSONBase {
     setShowUser(showUser: boolean): Message;
     setUrl(url: string): Message;
     setUrlLabel(urlLabel: string): Message;
-    setVariables(variables: { [key: string]: string }): Message;
+    setVariables(variables: JavaMap<string, string>): Message;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { StreamingTranslator } from '../../../ai/djl/inference/streaming/StreamingTranslator.d.ts'
 import type { StreamingTranslator$StreamOutput } from '../../../ai/djl/inference/streaming/StreamingTranslator$StreamOutput.d.ts'
 import type { StreamingTranslator$Support } from '../../../ai/djl/inference/streaming/StreamingTranslator$Support.d.ts'
@@ -9,7 +10,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export interface ServingTranslator extends StreamingTranslator<Input, Output>, Object{
     getSupport(): StreamingTranslator$Support;
     processStreamOutput(arg0: TranslatorContext, arg1: Stream<(Object | null)[]>): StreamingTranslator$StreamOutput<Output>;
-    setArguments(arg0: { [key: string]: Object | null }): void;
+    setArguments(arg0: JavaMap<string, Object | null>): void;
     supportsAsync(): boolean;
     supportsIterative(): boolean;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { TruffleLanguage$ContextPolicy } from '../../../../com/oracle/truffle/api/TruffleLanguage$ContextPolicy.d.ts'
 import type { OptionValuesImpl } from '../../../../com/oracle/truffle/polyglot/OptionValuesImpl.d.ts'
 import type { PolyglotContextConfig } from '../../../../com/oracle/truffle/polyglot/PolyglotContextConfig.d.ts'
@@ -11,7 +12,7 @@ import type { PolyglotSourceCache } from '../../../../com/oracle/truffle/polyglo
 import type { WeakAssumedValue } from '../../../../com/oracle/truffle/polyglot/WeakAssumedValue.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class PolyglotSharingLayer$Shared extends Object {
-    private constructor(engine: PolyglotEngineImpl, contextPolicy: TruffleLanguage$ContextPolicy, previousLanguageOptions: Map<PolyglotLanguage, OptionValuesImpl>)
+    private constructor(engine: PolyglotEngineImpl, contextPolicy: TruffleLanguage$ContextPolicy, previousLanguageOptions: JavaMap<PolyglotLanguage, OptionValuesImpl>)
     // private bytecodeData: Object;
     // private claimedCount: number;
     // private contextPolicy: TruffleLanguage$ContextPolicy;
@@ -21,7 +22,7 @@ export class PolyglotSharingLayer$Shared extends Object {
     // private instructionTracers: PolyglotInstructionTracers;
     // private preInitializedContext: PolyglotContextImpl;
     // private preinitConfig: PolyglotContextConfig$PreinitConfig;
-    // private previousLanguageOptions: Map<PolyglotLanguage, OptionValuesImpl>;
+    // private previousLanguageOptions: JavaMap<PolyglotLanguage, OptionValuesImpl>;
     // private singleContextValue: WeakAssumedValue<PolyglotContextImpl>;
     // private sourceCache: PolyglotSourceCache;
     getFastThreadLocals(engine: PolyglotEngineImpl): Object[];

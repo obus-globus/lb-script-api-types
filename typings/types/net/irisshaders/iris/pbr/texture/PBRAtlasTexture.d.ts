@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { GpuBuffer } from '../../../../../com/mojang/blaze3d/buffers/GpuBuffer.d.ts'
 import type { GpuTextureView } from '../../../../../com/mojang/blaze3d/textures/GpuTextureView.d.ts'
 import type { Path } from '../../../../../java/nio/file/Path.d.ts'
@@ -23,8 +24,8 @@ export class PBRAtlasTexture extends AbstractTexture implements PBRDumpable {
     // private missingSprite: TextureAtlasSprite;
     // private spriteUbos: GpuBuffer;
     // private sprites: AtlasPBRLoader$PBRTextureAtlasSprite[];
-    // private texturesByName: Map<Identifier, AtlasPBRLoader$PBRTextureAtlasSprite>;
-    // private texturesByNameToAdd: Map<Identifier, AtlasPBRLoader$PBRTextureAtlasSprite>;
+    // private texturesByName: JavaMap<Identifier, AtlasPBRLoader$PBRTextureAtlasSprite>;
+    // private texturesByNameToAdd: JavaMap<Identifier, AtlasPBRLoader$PBRTextureAtlasSprite>;
     readonly type: PBRType;
     // private width: number;
     addSprite(arg0: AtlasPBRLoader$PBRTextureAtlasSprite): void;

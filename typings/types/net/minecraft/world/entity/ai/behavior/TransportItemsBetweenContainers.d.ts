@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { BiConsumer } from '../../../../../../java/util/function/BiConsumer.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
@@ -22,12 +23,12 @@ import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class TransportItemsBetweenContainers extends Behavior<PathfinderMob> {
     static DEFAULT_DURATION: number;
     static TARGET_INTERACTION_TIME: number;
-    constructor(speedModifier: number, sourceBlockType: (param0: BlockState) => boolean, destinationBlockType: (param0: BlockState) => boolean, horizontalSearchDistance: number, verticalSearchDistance: number, onTargetInteractionActions: Map<TransportItemsBetweenContainers$ContainerInteractionState, (param0: PathfinderMob, param1: TransportItemsBetweenContainers$TransportItemTarget, param2: number) => void>, onStartTravelling: (param0: PathfinderMob) => void, shouldQueueForTarget: (param0: TransportItemsBetweenContainers$TransportItemTarget) => boolean)
+    constructor(speedModifier: number, sourceBlockType: (param0: BlockState) => boolean, destinationBlockType: (param0: BlockState) => boolean, horizontalSearchDistance: number, verticalSearchDistance: number, onTargetInteractionActions: JavaMap<TransportItemsBetweenContainers$ContainerInteractionState, (param0: PathfinderMob, param1: TransportItemsBetweenContainers$TransportItemTarget, param2: number) => void>, onStartTravelling: (param0: PathfinderMob) => void, shouldQueueForTarget: (param0: TransportItemsBetweenContainers$TransportItemTarget) => boolean)
     // private destinationBlockType: (param0: BlockState) => boolean;
     // private horizontalSearchDistance: number;
     // private interactionState: TransportItemsBetweenContainers$ContainerInteractionState;
     // private onStartTravelling: (param0: PathfinderMob) => void;
-    // private onTargetInteractionActions: Map<TransportItemsBetweenContainers$ContainerInteractionState, (param0: PathfinderMob, param1: TransportItemsBetweenContainers$TransportItemTarget, param2: number) => void>;
+    // private onTargetInteractionActions: JavaMap<TransportItemsBetweenContainers$ContainerInteractionState, (param0: PathfinderMob, param1: TransportItemsBetweenContainers$TransportItemTarget, param2: number) => void>;
     // private shouldQueueForTarget: (param0: TransportItemsBetweenContainers$TransportItemTarget) => boolean;
     // private sourceBlockType: (param0: BlockState) => boolean;
     // private speedModifier: number;

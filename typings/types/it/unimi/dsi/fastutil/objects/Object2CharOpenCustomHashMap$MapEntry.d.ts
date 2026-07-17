@@ -1,11 +1,12 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { Object2CharMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Object2CharMap$Entry.d.ts'
 import type { ObjectCharPair } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectCharPair.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class Object2CharOpenCustomHashMap$MapEntry extends Object implements Object2CharMap$Entry<K>, ObjectCharPair<K>, Map$Entry<K, string> {
-    constructor(null_: { [key: string]: any })
-    constructor(null_: { [key: string]: any }, arg1: number)
+    constructor(null_: JavaMap<any, any>)
+    constructor(null_: JavaMap<any, any>, arg1: number)
     // private index: number;
     readonly key: K;
     getKey(): K;

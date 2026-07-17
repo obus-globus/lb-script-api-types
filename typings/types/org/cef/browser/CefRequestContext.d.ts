@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { CefRequestContextHandler } from '../../../org/cef/handler/CefRequestContextHandler.d.ts'
 export abstract class CefRequestContext extends Object {
@@ -6,7 +7,7 @@ export abstract class CefRequestContext extends Object {
     constructor()
     canSetPreference(arg0: string): boolean;
     dispose(): void;
-    getAllPreferences(arg0: boolean): { [key: string]: Object };
+    getAllPreferences(arg0: boolean): JavaMap<string, Object>;
     getHandler(): CefRequestContextHandler;
     getPreference(arg0: string): Object;
     hasPreference(arg0: string): boolean;

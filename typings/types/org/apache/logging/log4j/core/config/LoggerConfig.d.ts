@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { StackTraceElement } from '../../../../../../java/lang/StackTraceElement.d.ts'
 import type { TimeUnit } from '../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Throwable } from '../../../../../../java/lang/Throwable.d.ts'
@@ -38,7 +39,7 @@ export class LoggerConfig extends AbstractFilterable implements LocationAware {
     readonly name: string;
     readonly parent: LoggerConfig;
     readonly properties: Property[];
-    // private propertiesMap: Map<Property, boolean>;
+    // private propertiesMap: JavaMap<Property, boolean>;
     readonly propertiesRequireLookup: boolean;
     readonly reliabilityStrategy: ReliabilityStrategy;
     addAppender(appender: Appender, level: Level, filter: Filter): void;
@@ -46,14 +47,14 @@ export class LoggerConfig extends AbstractFilterable implements LocationAware {
     // private cleanupFilter(ctl: AppenderControl): void;
     clearAppenders(): void;
     getAppenderRefs(): AppenderRef[];
-    getAppenders(): { [key: string]: Appender };
+    getAppenders(): JavaMap<string, Appender>;
     getExplicitLevel(): Level;
     getFilter(): Filter;
     getLevel(): Level;
     getLogEventFactory(): LogEventFactory;
     getName(): string;
     getParent(): LoggerConfig;
-    getProperties(): Map<Property, boolean>;
+    getProperties(): JavaMap<Property, boolean>;
     // private getProperties(loggerName: string, fqcn: string, marker: Marker, level: Level, data: Message, t: Throwable): Property[];
     // private getPropertiesWithLookups(loggerName: string, fqcn: string, marker: Marker, level: Level, data: Message, t: Throwable, props: Property[]): Property[];
     getPropertyList(): Property[];

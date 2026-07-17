@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { MFDataModel$Attribute } from '../../../../com/ibm/icu/message2/MFDataModel$Attribute.d.ts'
 import type { MFDataModel$Declaration } from '../../../../com/ibm/icu/message2/MFDataModel$Declaration.d.ts'
 import type { MFDataModel$Expression } from '../../../../com/ibm/icu/message2/MFDataModel$Expression.d.ts'
@@ -41,7 +42,7 @@ export class MFSerializer extends Object {
     // private localDeclarationToString(arg0: MFDataModel$LocalDeclaration): void;
     // private markupToString(arg0: MFDataModel$Markup): void;
     // private messageToString(arg0: MFDataModel$Message): string;
-    // private optionsToString(arg0: { [key: string]: MFDataModel$Option }): void;
+    // private optionsToString(arg0: JavaMap<string, MFDataModel$Option>): void;
     // private patternMessageToString(arg0: MFDataModel$PatternMessage): void;
     // private patternToString(arg0: MFDataModel$Pattern): void;
     // private selectMessageToString(arg0: MFDataModel$SelectMessage): void;

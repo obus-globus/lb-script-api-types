@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { CompressionExtension } from '../../../../../../../../com/oracle/truffle/tools/utils/java_websocket/extensions/CompressionExtension.d.ts'
 import type { IExtension } from '../../../../../../../../com/oracle/truffle/tools/utils/java_websocket/extensions/IExtension.d.ts'
 import type { Framedata } from '../../../../../../../../com/oracle/truffle/tools/utils/java_websocket/framing/Framedata.d.ts'
@@ -9,7 +10,7 @@ export class PerMessageDeflateExtension extends CompressionExtension {
     readonly clientNoContextTakeover: boolean;
     readonly deflater: Deflater;
     readonly inflater: Inflater;
-    // private requestedParameters: { [key: string]: string };
+    // private requestedParameters: JavaMap<string, string>;
     readonly serverNoContextTakeover: boolean;
     readonly threshold: number;
     acceptProvidedExtensionAsClient(arg0: string): boolean;

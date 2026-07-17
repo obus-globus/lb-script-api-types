@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Module$ModuleRequest } from '../../../../../com/oracle/js/parser/ir/Module$ModuleRequest.d.ts'
 import type { Assumption } from '../../../../../com/oracle/truffle/api/Assumption.d.ts'
 import type { CallTarget } from '../../../../../com/oracle/truffle/api/CallTarget.d.ts'
@@ -70,7 +71,7 @@ export class JSContext extends Object {
     readonly booleanFactory: JSObjectFactory;
     // private boundFunctionFactory: JSFunctionFactory;
     // private builtinFunctionData: JSFunctionData[];
-    // private builtinFunctionDataMap: Map<Builtin, JSFunctionData>;
+    // private builtinFunctionDataMap: JavaMap<Builtin, JSFunctionData>;
     readonly callSiteFactory: JSObjectFactory;
     readonly collatorFactory: JSObjectFactory;
     // private constructorFactory: JSFunctionFactory;
@@ -125,7 +126,7 @@ export class JSContext extends Object {
     readonly mapFactory: JSObjectFactory;
     readonly mapIteratorFactory: JSObjectFactory;
     // private moduleNamespaceFactory: JSObjectFactory$BoundProto;
-    // private namedEmptyFunctionsDataMap: Map<TruffleString, JSFunctionData>;
+    // private namedEmptyFunctionsDataMap: JavaMap<TruffleString, JSFunctionData>;
     readonly noSuchMethodUnusedAssumption: Assumption;
     readonly noSuchPropertyUnusedAssumption: Assumption;
     readonly nodeFactory: Object;
@@ -143,7 +144,7 @@ export class JSContext extends Object {
     readonly pluralRulesFactory: JSObjectFactory;
     readonly prepareStackTraceCallback: PrepareStackTraceCallback;
     // private prepareStackTraceCallbackNotUsedAssumption: Assumption;
-    readonly privateSymbolRegistry: Map<TruffleString, Symbol>;
+    readonly privateSymbolRegistry: JavaMap<TruffleString, Symbol>;
     readonly promiseFactory: JSObjectFactory;
     readonly promiseHook: PromiseHook;
     // private promiseHookNotUsedAssumption: Assumption;
@@ -157,8 +158,8 @@ export class JSContext extends Object {
     readonly regExpFactory: JSObjectFactory;
     readonly regExpGroupsEmptyShape: Shape;
     readonly regExpStaticResultUnusedAssumption: Assumption;
-    readonly regexOptions: { [key: string]: string };
-    readonly regexValidateOptions: { [key: string]: string };
+    readonly regexOptions: JavaMap<string, string>;
+    readonly regexValidateOptions: JavaMap<string, string>;
     readonly relativeTimeFormatFactory: JSObjectFactory;
     readonly segmentIteratorFactory: JSObjectFactory;
     readonly segmenterFactory: JSObjectFactory;
@@ -166,7 +167,7 @@ export class JSContext extends Object {
     readonly setFactory: JSObjectFactory;
     readonly setIteratorFactory: JSObjectFactory;
     readonly shadowRealmFactory: JSObjectFactory;
-    readonly shapeDataMap: Map<Shape, JSShapeData>;
+    readonly shapeDataMap: JavaMap<Shape, JSShapeData>;
     readonly sharedArrayBufferFactory: JSObjectFactory;
     // private sharedRootNode: JSContext$SharedRootNode;
     readonly singleRealmAssumption: Assumption;
@@ -178,7 +179,7 @@ export class JSContext extends Object {
     readonly supportedImportAttributes: TruffleString[];
     readonly symbolFactory: JSObjectFactory;
     readonly symbolIteratorThisGetterFunctionData: JSFunctionData;
-    readonly symbolRegistry: Map<TruffleString, Symbol>;
+    readonly symbolRegistry: JavaMap<TruffleString, Symbol>;
     readonly symbolSpeciesThisGetterFunctionData: JSFunctionData;
     readonly symbolUsageMarker: Object;
     // private tRegexEmptyResult: Object;
@@ -198,7 +199,7 @@ export class JSContext extends Object {
     // private typedArrayFactories: JSObjectFactory[];
     readonly typedArrayNotDetachedAssumption: Assumption;
     readonly uncheckedProxyHandlerFactory: JSObjectFactory;
-    // private unregisteredSymbols: Map<Symbol, boolean>;
+    // private unregisteredSymbols: JavaMap<Symbol, boolean>;
     readonly weakMapFactory: JSObjectFactory;
     readonly weakRefFactory: JSObjectFactory;
     readonly weakSetFactory: JSObjectFactory;
@@ -309,7 +310,7 @@ export class JSContext extends Object {
     getParserOptions(): JSParserOptions;
     getPluralRulesFactory(): JSObjectFactory;
     getPrepareStackTraceCallback(): PrepareStackTraceCallback;
-    getPrivateSymbolRegistry(): Map<TruffleString, Symbol>;
+    getPrivateSymbolRegistry(): JavaMap<TruffleString, Symbol>;
     getPromiseFactory(): JSObjectFactory;
     getPromiseShapePrototypeInObject(): Shape;
     getPropertyCacheLimit(): number;
@@ -319,8 +320,8 @@ export class JSContext extends Object {
     getRegExpFactory(): JSObjectFactory;
     getRegExpGroupsEmptyShape(): Shape;
     getRegExpStaticResultUnusedAssumption(): Assumption;
-    getRegexOptions(): { [key: string]: string };
-    getRegexValidateOptions(): { [key: string]: string };
+    getRegexOptions(): JavaMap<string, string>;
+    getRegexValidateOptions(): JavaMap<string, string>;
     getRelativeTimeFormatFactory(): JSObjectFactory;
     getSegmentIteratorFactory(): JSObjectFactory;
     getSegmenterFactory(): JSObjectFactory;
@@ -328,7 +329,7 @@ export class JSContext extends Object {
     getSetFactory(): JSObjectFactory;
     getSetIteratorFactory(): JSObjectFactory;
     getShadowRealmFactory(): JSObjectFactory;
-    getShapeDataMap(): Map<Shape, JSShapeData>;
+    getShapeDataMap(): JavaMap<Shape, JSShapeData>;
     getSharedArrayBufferFactory(): JSObjectFactory;
     getSingleRealmAssumption(): Assumption;
     getStrictArgumentsFactory(): JSObjectFactory;
@@ -338,7 +339,7 @@ export class JSContext extends Object {
     getSupportedImportAttributes(): TruffleString[];
     getSymbolFactory(): JSObjectFactory;
     getSymbolIteratorThisGetterFunctionData(): JSFunctionData;
-    getSymbolRegistry(): Map<TruffleString, Symbol>;
+    getSymbolRegistry(): JavaMap<TruffleString, Symbol>;
     getSymbolSpeciesThisGetterFunctionData(): JSFunctionData;
     getSymbolUsageMarker(): Object;
     getTRegexEmptyResult(): Object;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { PoseStack } from '../../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts'
@@ -34,7 +35,7 @@ export class BlockEntityRenderDispatcher extends Object implements FabricResourc
     // private font: Font;
     // private itemModelResolver: ItemModelResolver;
     // private playerSkinRenderCache: PlayerSkinRenderCache;
-    // private renderers: Map<BlockEntityType<any>, BlockEntityRenderer<any, any>>;
+    // private renderers: JavaMap<BlockEntityType<any>, BlockEntityRenderer<any, any>>;
     // private sprites: SpriteGetter;
     fabric$getId(): Identifier;
     getName(): string;

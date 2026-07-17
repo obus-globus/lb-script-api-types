@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { FrameDescriptor } from '../../../../com/oracle/truffle/api/frame/FrameDescriptor.d.ts'
 import type { VirtualFrame } from '../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { FrameWithoutBoxing } from '../../../../com/oracle/truffle/api/impl/FrameWithoutBoxing.d.ts'
@@ -31,7 +32,7 @@ export class BytecodeOSRMetadata extends Object {
     // private getCurrentlyCompiling(): OptimizedCallTarget;
     getLazyState(): BytecodeOSRMetadata$LazyState;
     // private getLazyStateBoundary(): BytecodeOSRMetadata$LazyState;
-    getOSRCompilations(): { [key: number]: OptimizedCallTarget };
+    getOSRCompilations(): JavaMap<number, OptimizedCallTarget>;
     incrementAndPoll(): boolean;
     incrementAndPoll(loopCountIncrement: number): boolean;
     isDisabled(): boolean;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Format } from '../../../../../java/text/Format.d.ts'
 import type { MessageFormat } from '../../../../../java/text/MessageFormat.d.ts'
@@ -9,9 +10,9 @@ export class ExtendedMessageFormat extends MessageFormat {
     static format(paramarg0: string, ...paramarg1: Object[]): string;
     constructor(arg0: string)
     constructor(arg0: string, arg1: Locale)
-    constructor(arg0: string, arg1: Locale, arg2: { [key: string]: FormatFactory })
-    constructor(arg0: string, arg1: { [key: string]: FormatFactory })
-    // private registry: { [key: string]: FormatFactory };
+    constructor(arg0: string, arg1: Locale, arg2: JavaMap<string, FormatFactory>)
+    constructor(arg0: string, arg1: JavaMap<string, FormatFactory>)
+    // private registry: JavaMap<string, FormatFactory>;
     // private toPattern: string;
     // private appendQuotedString(arg0: string, arg1: ParsePosition, arg2: StringBuilder): StringBuilder;
     applyPattern(arg0: string): void;

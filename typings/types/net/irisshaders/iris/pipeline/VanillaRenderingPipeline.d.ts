@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { GpuTextureView } from '../../../../com/mojang/blaze3d/textures/GpuTextureView.d.ts'
 import type { OptionalInt } from '../../../../java/util/OptionalInt.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -35,7 +36,7 @@ export class VanillaRenderingPipeline extends Object implements WorldRenderingPi
     getParticleRenderingSettings(): ParticleRenderingSettings;
     getPhase(): WorldRenderingPhase;
     getSunPathRotation(): number;
-    getTextureMap(): Map<Tri<string, TextureType, TextureStage>, string>;
+    getTextureMap(): JavaMap<Tri<string, TextureType, TextureStage>, string>;
     hasFeature(arg0: FeatureFlags): boolean;
     onBeginClear(): void;
     onSetAlbedoTex(arg0: GpuTextureView): void;

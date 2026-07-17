@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
 import type { ServerSocket } from '../../java/net/ServerSocket.d.ts'
 import type { Socket } from '../../java/net/Socket.d.ts'
@@ -44,6 +45,6 @@ export class _UtilJvmKt extends Object {
     static toHostHeader(self: HttpUrl, includeDefaultPort: boolean): string;
     static toImmutableList<T extends unknown>(self: T[] | null): T[];
     static toImmutableList<T extends unknown>(self: T[]): T[];
-    static unmodifiable<K extends unknown, V extends unknown>(self: Map<K, V>): Map<K, V>;
+    static unmodifiable<K extends unknown, V extends unknown>(self: JavaMap<K, V>): JavaMap<K, V>;
     static unmodifiable<T extends unknown>(self: T[]): T[];
 }

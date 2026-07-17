@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ConfigScreenFactory } from '../../../../com/terraformersmc/modmenu/api/ConfigScreenFactory.d.ts'
 import type { UpdateChecker } from '../../../../com/terraformersmc/modmenu/api/UpdateChecker.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
@@ -6,7 +7,7 @@ import type { Screen } from '../../../../net/minecraft/client/gui/screens/Screen
 export interface ModMenuApi extends Object {
     attachModpackBadges(arg0: (param0: string) => void): void;
     getModConfigScreenFactory(): (param0: Screen) => Screen | null;
-    getProvidedConfigScreenFactories(): { [key: string]: (param0: Screen) => Screen | null };
-    getProvidedUpdateCheckers(): { [key: string]: UpdateChecker };
+    getProvidedConfigScreenFactories(): JavaMap<string, (param0: Screen) => Screen | null>;
+    getProvidedUpdateCheckers(): JavaMap<string, UpdateChecker>;
     getUpdateChecker(): UpdateChecker;
 }

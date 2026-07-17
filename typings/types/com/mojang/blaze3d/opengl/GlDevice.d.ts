@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { GpuFormat } from '../../../../com/mojang/blaze3d/GpuFormat.d.ts'
 import type { GpuBuffer } from '../../../../com/mojang/blaze3d/buffers/GpuBuffer.d.ts'
 import type { BufferStorage } from '../../../../com/mojang/blaze3d/opengl/BufferStorage.d.ts'
@@ -42,8 +43,8 @@ export class GlDevice extends Object implements GpuDeviceBackend {
     // private encoder: GlCommandEncoder;
     // private frameBufferCache: FrameBufferCache;
     // private missingShaders: (Object | null)[];
-    // private pipelineCache: Map<RenderPipeline, GlRenderPipeline>;
-    // private shaderCache: Map<GlDevice$ShaderCompilationKey, GlShaderModule>;
+    // private pipelineCache: JavaMap<RenderPipeline, GlRenderPipeline>;
+    // private shaderCache: JavaMap<GlDevice$ShaderCompilationKey, GlShaderModule>;
     // private vertexArrayCache: VertexArrayCache;
     clearPipelineCache(): void;
     close(): void;

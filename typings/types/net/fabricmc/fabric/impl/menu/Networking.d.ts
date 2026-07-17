@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ModInitializer } from '../../../../../net/fabricmc/api/ModInitializer.d.ts'
 import type { ExtendedMenuProvider } from '../../../../../net/fabricmc/fabric/api/menu/v1/ExtendedMenuProvider.d.ts'
@@ -6,7 +7,7 @@ import type { Identifier } from '../../../../../net/minecraft/resources/Identifi
 import type { ServerPlayer } from '../../../../../net/minecraft/server/level/ServerPlayer.d.ts'
 import type { AbstractContainerMenu } from '../../../../../net/minecraft/world/inventory/AbstractContainerMenu.d.ts'
 export class Networking extends Object implements ModInitializer {
-    static CODEC_BY_ID: Map<Identifier, StreamCodec<Object, Object>>;
+    static CODEC_BY_ID: JavaMap<Identifier, StreamCodec<Object, Object>>;
     static OPEN_ID: Identifier;
     static sendOpenPacket<D extends unknown>(paramarg0: ServerPlayer, paramarg1: ExtendedMenuProvider<D>, paramarg2: AbstractContainerMenu, paramarg3: number): void;
     constructor()

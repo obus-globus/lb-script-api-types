@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { MinecraftServer } from '../../../../../../net/minecraft/server/MinecraftServer.d.ts'
@@ -7,6 +8,6 @@ export class RegistrySyncManager extends Object {
     static postBootstrap: boolean;
     static bootstrapRegistries(): void;
     static configureClient(paramarg0: ServerConfigurationPacketListenerImpl, paramarg1: MinecraftServer): void;
-    static createAndPopulateRegistryMap(): Map<Identifier, { [key: string]: any }>;
+    static createAndPopulateRegistryMap(): JavaMap<Identifier, JavaMap<any, any>>;
     private constructor()
 }

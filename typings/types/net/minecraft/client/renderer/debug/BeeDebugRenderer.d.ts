@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { UUID } from '../../../../../java/util/UUID.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Camera } from '../../../../../net/minecraft/client/Camera.d.ts'
@@ -14,11 +15,11 @@ export class BeeDebugRenderer extends Object implements DebugRenderer$SimpleDebu
     constructor(minecraft: Minecraft)
     // private lastLookedAtUuid: UUID;
     // private minecraft: Minecraft;
-    // private createHiveBlacklistMap(debugValues: DebugValueAccess): Map<BlockPos, UUID[]>;
+    // private createHiveBlacklistMap(debugValues: DebugValueAccess): JavaMap<BlockPos, UUID[]>;
     // private doRender(debugValues: DebugValueAccess): void;
     emitGizmos(camX: number, camY: number, camZ: number, debugValues: DebugValueAccess, frustum: Frustum, partialTicks: number): void;
     // private getCamera(): Camera;
-    // private getGhostHives(debugValues: DebugValueAccess): Map<BlockPos, string[]>;
+    // private getGhostHives(debugValues: DebugValueAccess): JavaMap<BlockPos, string[]>;
     // private getHiveMembers(hivePos: BlockPos, debugValues: DebugValueAccess): UUID[];
     // private getPosDescription(entity: Entity, pos: BlockPos): string;
     // private isBeeSelected(entity: Entity): boolean;

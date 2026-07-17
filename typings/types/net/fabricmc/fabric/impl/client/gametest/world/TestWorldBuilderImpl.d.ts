@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Path } from '../../../../../../../java/nio/file/Path.d.ts'
 import type { Consumer } from '../../../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
@@ -14,7 +15,7 @@ export class TestWorldBuilderImpl extends Object implements TestWorldBuilder {
     adjustSettings(arg0: (param0: WorldCreationUiState) => void): TestWorldBuilder;
     create(): TestSingleplayerContext;
     createServer(): TestDedicatedServerContext;
-    createServer(arg0: { [key: string]: any }): TestDedicatedServerContext;
+    createServer(arg0: JavaMap<any, any>): TestDedicatedServerContext;
     // private navigateCreateWorldScreen(): Path;
     setUseConsistentSettings(arg0: boolean): TestWorldBuilder;
 }

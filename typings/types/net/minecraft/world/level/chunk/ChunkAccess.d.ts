@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { BiConsumer } from '../../../../../java/util/function/BiConsumer.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
@@ -58,25 +59,25 @@ export abstract class ChunkAccess extends Object implements AttachmentTarget, At
     static getOrCreateOffsetList(paramlist: (Object | null)[][], paramsectionIndex: number): (Object | null)[];
     static problemPath(parampos: ChunkPos): () => string;
     constructor(chunkPos: ChunkPos, upgradeData: UpgradeData, levelHeightAccessor: LevelHeightAccessor, containerFactory: PalettedContainerFactory, inhabitedTime: number, sections: LevelChunkSection[], blendingData: BlendingData)
-    // private attachedChangedListeners: Map<Object, Object>;
+    // private attachedChangedListeners: JavaMap<Object, Object>;
     readonly blendingData: BlendingData;
-    // private blockEntities: Map<BlockPos, BlockEntity>;
+    // private blockEntities: JavaMap<BlockPos, BlockEntity>;
     // private carverBiomeSettings: BiomeGenerationSettings;
     // private chunkPos: ChunkPos;
-    // private dataAttachments: Map<Object, Object>;
+    // private dataAttachments: JavaMap<Object, Object>;
     // private deferredSyncedAttachments: (Object | null)[];
-    readonly heightmaps: Map<Heightmap$Types, Heightmap>;
+    readonly heightmaps: JavaMap<Heightmap$Types, Heightmap>;
     readonly inhabitedTime: number;
     // private isLightCorrect: boolean;
     // private levelHeightAccessor: LevelHeightAccessor;
     // private noiseChunk: NoiseChunk;
-    // private pendingBlockEntities: Map<BlockPos, CompoundTag>;
+    // private pendingBlockEntities: JavaMap<BlockPos, CompoundTag>;
     readonly postProcessing: (Object | null)[][];
     readonly sections: LevelChunkSection[];
     skyLightSources: ChunkSkyLightSources;
-    // private structureStarts: Map<Structure, StructureStart>;
-    // private structuresRefences: Map<Structure, (Object | null)[]>;
-    // private syncedAttachments: Map<Object, Object>;
+    // private structureStarts: JavaMap<Structure, StructureStart>;
+    // private structuresRefences: JavaMap<Structure, (Object | null)[]>;
+    // private syncedAttachments: JavaMap<Object, Object>;
     readonly unsaved: boolean;
     readonly upgradeData: UpgradeData;
     // private acknowledgeSynced(arg0: AttachmentType<Object>, arg1: Object): void;
@@ -90,8 +91,8 @@ export abstract class ChunkAccess extends Object implements AttachmentTarget, At
     fabric_clearDeferredSyncChanges(): void;
     fabric_computeInitialSyncChanges(arg0: ServerPlayer, arg1: (param0: AttachmentChange) => void): void;
     fabric_computeInitialSyncChanges(arg0: ServerPlayer, arg1: (param0: Object) => void): void;
-    fabric_getAttachments(): Map<AttachmentType<Object>, Object | null>;
-    fabric_getAttachments(): Map<Object | null, Object | null>;
+    fabric_getAttachments(): JavaMap<AttachmentType<Object>, Object | null>;
+    fabric_getAttachments(): JavaMap<Object | null, Object | null>;
     fabric_getRegistryAccess(): RegistryAccess;
     fabric_getSyncTargetInfo(): AttachmentTargetInfo<Object>;
     fabric_hasPersistentAttachments(): boolean;
@@ -108,8 +109,8 @@ export abstract class ChunkAccess extends Object implements AttachmentTarget, At
     fillBiomesFromNoise(biomeResolver: BiomeResolver, sampler: Climate$Sampler): void;
     findBlockLightSources(consumer: (param0: BlockPos, param1: BlockState) => void): void;
     findBlocks(predicate: (param0: BlockState) => boolean, consumer: (param0: BlockPos, param1: BlockState) => void): void;
-    getAllReferences(): Map<Structure, (Object | null)[]>;
-    getAllStarts(): Map<Structure, StructureStart>;
+    getAllReferences(): JavaMap<Structure, (Object | null)[]>;
+    getAllStarts(): JavaMap<Structure, StructureStart>;
     getAttached<A extends unknown>(arg0: AttachmentType<A>): A;
     getAttached(arg0: AttachmentType<Object>): Object;
     getAttachedOrCreate<A extends unknown>(arg0: AttachmentType<A>): A;
@@ -169,8 +170,8 @@ export abstract class ChunkAccess extends Object implements AttachmentTarget, At
     problemPath(): () => string;
     removeAttached<A extends unknown>(arg0: AttachmentType<A>): A;
     removeBlockEntity(pos: BlockPos): void;
-    setAllReferences(data: Map<Structure, (Object | null)[]>): void;
-    setAllStarts(starts: Map<Structure, StructureStart>): void;
+    setAllReferences(data: JavaMap<Structure, (Object | null)[]>): void;
+    setAllStarts(starts: JavaMap<Structure, StructureStart>): void;
     setAttached<A extends unknown>(arg0: AttachmentType<A>, arg1: A): A;
     setAttached(arg0: AttachmentType<Object>, arg1: Object): Object;
     setBlockEntity(blockEntity: BlockEntity): void;

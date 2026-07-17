@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { TruffleString } from '../../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
 import type { JSFrameSlot } from '../../../../../../com/oracle/truffle/js/nodes/JSFrameSlot.d.ts'
 import type { NodeFactory } from '../../../../../../com/oracle/truffle/js/nodes/NodeFactory.d.ts'
@@ -19,5 +20,5 @@ export class GlobalEnvironment extends DerivedEnvironment {
     hasLexicalDeclaration(name: TruffleString): boolean;
     hasVarDeclaration(name: TruffleString): boolean;
     setHasBeenDeclared(name: TruffleString, declared: boolean): void;
-    toStringImpl(state: { [key: string]: number }): string;
+    toStringImpl(state: JavaMap<string, number>): string;
 }

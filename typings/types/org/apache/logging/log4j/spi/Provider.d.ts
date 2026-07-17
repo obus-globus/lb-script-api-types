@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { ClassLoader } from '../../../../../java/lang/ClassLoader.d.ts'
 import type { WeakReference } from '../../../../../java/lang/ref/WeakReference.d.ts'
@@ -10,7 +11,7 @@ export class Provider extends Object {
     static LOGGER_CONTEXT_FACTORY: string;
     static PROVIDER_PROPERTY_NAME: string;
     static THREAD_CONTEXT_MAP: string;
-    constructor(props: { [key: string]: any }, url: URL, classLoader: ClassLoader)
+    constructor(props: JavaMap<any, any>, url: URL, classLoader: ClassLoader)
     constructor(priority: number, versions: string)
     constructor(priority: number, versions: string, loggerContextFactoryClass: Class<LoggerContextFactory>)
     constructor(priority: number, versions: string, loggerContextFactoryClass: Class<LoggerContextFactory>, threadContextMapClass: Class<ThreadContextMap>)

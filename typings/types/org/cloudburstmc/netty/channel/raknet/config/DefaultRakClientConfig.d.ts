@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { ByteBuf } from '../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Channel } from '../../../../../../io/netty/channel/Channel.d.ts'
 import type { ChannelOption } from '../../../../../../io/netty/channel/ChannelOption.d.ts'
@@ -20,8 +21,8 @@ export class DefaultRakClientConfig extends DefaultRakSessionConfig {
     getConnectTimeout(): number;
     getMtuSizes(): number[];
     getOption<T extends unknown>(arg0: ChannelOption<T>): T;
-    getOptions(): Map<ChannelOption<Object>, Object>;
-    getOptions(arg0: Map<ChannelOption<Object>, Object>, ...arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
+    getOptions(): JavaMap<ChannelOption<Object>, Object>;
+    getOptions(arg0: JavaMap<ChannelOption<Object>, Object>, ...arg1: ChannelOption<Object>[]): JavaMap<ChannelOption<Object>, Object>;
     getServerGuid(): number;
     getSessionTimeout(): number;
     getTimeBetweenSendConnectionAttemptsMS(): number;

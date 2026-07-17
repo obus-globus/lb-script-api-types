@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { SourceSection } from '../../../../../com/oracle/truffle/api/source/SourceSection.d.ts'
 import type { StackTraceEntry } from '../../../../../com/oracle/truffle/tools/profiler/StackTraceEntry.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
@@ -8,7 +9,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ProfilerNode<T extends unknown> extends Object {
     constructor()
     constructor(parent: ProfilerNode<T>, sourceLocation: StackTraceEntry, payload: T)
-    children: Map<StackTraceEntry, ProfilerNode<T>>;
+    children: JavaMap<StackTraceEntry, ProfilerNode<T>>;
     readonly parent: ProfilerNode<T>;
     readonly payload: T;
     // private sourceLocation: StackTraceEntry;

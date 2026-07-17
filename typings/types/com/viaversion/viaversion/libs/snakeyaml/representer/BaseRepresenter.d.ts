@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { DumperOptions$FlowStyle } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/DumperOptions$FlowStyle.d.ts'
 import type { DumperOptions$ScalarStyle } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/DumperOptions$ScalarStyle.d.ts'
 import type { PropertyUtils } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/introspector/PropertyUtils.d.ts'
@@ -11,19 +12,19 @@ export abstract class BaseRepresenter extends Object {
     defaultFlowStyle: DumperOptions$FlowStyle;
     defaultScalarStyle: DumperOptions$ScalarStyle;
     readonly explicitPropertyUtils: boolean;
-    // private multiRepresenters: Map<Class<Object>, Represent>;
+    // private multiRepresenters: JavaMap<Class<Object>, Represent>;
     // private nullRepresenter: Represent;
     // private objectToRepresent: Object;
     readonly propertyUtils: PropertyUtils;
-    // private representedObjects: Map<Object, Node>;
-    // private representers: Map<Class<Object>, Represent>;
+    // private representedObjects: JavaMap<Object, Node>;
+    // private representers: JavaMap<Class<Object>, Represent>;
     getDefaultFlowStyle(): DumperOptions$FlowStyle;
     getDefaultScalarStyle(): DumperOptions$ScalarStyle;
     getPropertyUtils(): PropertyUtils;
     isExplicitPropertyUtils(): boolean;
     represent(arg0: Object): Node;
     representData(arg0: Object): Node;
-    representMapping(arg0: Tag, arg1: Map<Object | null, Object | null>, arg2: DumperOptions$FlowStyle): Node;
+    representMapping(arg0: Tag, arg1: JavaMap<Object | null, Object | null>, arg2: DumperOptions$FlowStyle): Node;
     representScalar(arg0: Tag, arg1: string): Node;
     representScalar(arg0: Tag, arg1: string, arg2: DumperOptions$ScalarStyle): Node;
     representSequence(arg0: Tag, arg1: (Object | null)[], arg2: DumperOptions$FlowStyle): Node;

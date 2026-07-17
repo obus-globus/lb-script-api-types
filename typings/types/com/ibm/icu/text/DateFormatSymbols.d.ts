@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ICUResourceBundle } from '../../../../com/ibm/icu/impl/ICUResourceBundle.d.ts'
 import type { DateFormatSymbols$CapitalizationContextUsage } from '../../../../com/ibm/icu/text/DateFormatSymbols$CapitalizationContextUsage.d.ts'
 import type { Calendar } from '../../../../com/ibm/icu/util/Calendar.d.ts'
@@ -43,7 +44,7 @@ export class DateFormatSymbols extends Object implements Serializable, Cloneable
     // private ampms: string[];
     // private ampmsNarrow: string[];
     // private ampmsWide: string[];
-    // private capitalization: Map<DateFormatSymbols$CapitalizationContextUsage, boolean[]>;
+    // private capitalization: JavaMap<DateFormatSymbols$CapitalizationContextUsage, boolean[]>;
     eraNames: string[];
     eras: string[];
     // private leapMonthPatterns: string[];
@@ -104,11 +105,11 @@ export class DateFormatSymbols extends Object implements Serializable, Cloneable
     getZodiacNames(arg0: number, arg1: number): string[];
     getZoneStrings(): string[][];
     hashCode(): number;
-    initEras(arg0: string, arg1: { [key: string]: { [key: string]: string } }, arg2: ICUResourceBundle, arg3: number): string[];
+    initEras(arg0: string, arg1: JavaMap<string, JavaMap<string, string>>, arg2: ICUResourceBundle, arg3: number): string[];
     initializeData(arg0: DateFormatSymbols): void;
     initializeData(arg0: ULocale, arg1: ICUResourceBundle, arg2: string): void;
     initializeData(arg0: ULocale, arg1: string): void;
-    // private loadDayPeriodStrings(arg0: { [key: string]: string }, arg1: string[]): string[];
+    // private loadDayPeriodStrings(arg0: JavaMap<string, string>, arg1: string[]): string[];
     // private readObject(arg0: ObjectInputStream): void;
     setAmPmStrings(arg0: string[]): void;
     setAmPmStrings(arg0: string[], arg1: number, arg2: number): void;

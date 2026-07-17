@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { TruffleContext } from '../../../../com/oracle/truffle/api/TruffleContext.d.ts'
 import type { TruffleLanguage$Env } from '../../../../com/oracle/truffle/api/TruffleLanguage$Env.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
@@ -17,9 +18,9 @@ export class TruffleContext$Builder extends Object {
     // private allowInnerContextOptions: boolean;
     // private allowNativeAccess: boolean;
     // private allowPolyglotAccess: boolean;
-    // private arguments: { [key: string]: string[] };
-    // private config: { [key: string]: Object };
-    // private environment: { [key: string]: string };
+    // private arguments: JavaMap<string, string[]>;
+    // private config: JavaMap<string, Object>;
+    // private environment: JavaMap<string, string>;
     // private err: OutputStream;
     // private in: InputStream;
     // private inheritAccess: boolean;
@@ -27,7 +28,7 @@ export class TruffleContext$Builder extends Object {
     // private onCancelled: () => void;
     // private onClosed: () => void;
     // private onExited: (param0: number) => void;
-    // private options: { [key: string]: string };
+    // private options: JavaMap<string, string>;
     // private out: OutputStream;
     // private permittedLanguages: string[];
     // private sharingEnabled: boolean;
@@ -47,7 +48,7 @@ export class TruffleContext$Builder extends Object {
     build(): TruffleContext;
     config(key: string, value: Object): TruffleContext$Builder;
     environment(name: string, value: string): TruffleContext$Builder;
-    environment(env: { [key: string]: string }): TruffleContext$Builder;
+    environment(env: JavaMap<string, string>): TruffleContext$Builder;
     err(err: OutputStream): TruffleContext$Builder;
     forceSharing(enabled: boolean): TruffleContext$Builder;
     in(in_: InputStream): TruffleContext$Builder;
@@ -57,7 +58,7 @@ export class TruffleContext$Builder extends Object {
     onClosed(r: () => void): TruffleContext$Builder;
     onExited(r: (param0: number) => void): TruffleContext$Builder;
     option(key: string, value: string): TruffleContext$Builder;
-    options(options: { [key: string]: string }): TruffleContext$Builder;
+    options(options: JavaMap<string, string>): TruffleContext$Builder;
     out(out: OutputStream): TruffleContext$Builder;
     permittedLanguages(...permittedLanguages: string[]): TruffleContext$Builder;
     threadAccessDeniedHandler(handler: (param0: string) => void): TruffleContext$Builder;

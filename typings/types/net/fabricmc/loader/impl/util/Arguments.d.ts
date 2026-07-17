@@ -1,10 +1,11 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Arguments extends Object {
     static ADD_MODS: string;
     static GAME_VERSION: string;
     constructor()
     readonly extraArgs: string[];
-    // private values: { [key: string]: string };
+    // private values: JavaMap<string, string>;
     addExtraArg(arg0: string): void;
     containsKey(arg0: string): boolean;
     get(arg0: string): string;

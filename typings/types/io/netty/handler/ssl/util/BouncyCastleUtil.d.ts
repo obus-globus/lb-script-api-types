@@ -1,10 +1,11 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { SSLEngine } from '../../../../../javax/net/ssl/SSLEngine.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 export class BouncyCastleUtil extends Object {
-    static getBcProviderJce(): { [key: string]: any };
-    static getBcProviderJsse(): { [key: string]: any };
+    static getBcProviderJce(): JavaMap<any, any>;
+    static getBcProviderJsse(): JavaMap<any, any>;
     static getBcSSLEngineClass(): Class<SSLEngine>;
     static isBcJsseInUse(paramarg0: SSLEngine): boolean;
     static isBcPkixAvailable(): boolean;

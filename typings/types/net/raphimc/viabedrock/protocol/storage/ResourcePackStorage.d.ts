@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { StorableObject } from '../../../../../com/viaversion/viaversion/api/connection/StorableObject.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ResourcePack } from '../../../../../net/raphimc/viabedrock/api/resourcepack/ResourcePack.d.ts'
@@ -18,7 +19,7 @@ export class ResourcePackStorage extends Object implements StorableObject {
     readonly attachables: AttachableDefinitions;
     readonly biomes: BiomeDefinitions;
     readonly blocks: BlockDefinitions;
-    readonly converterData: { [key: string]: Object };
+    readonly converterData: JavaMap<string, Object>;
     readonly entities: EntityDefinitions;
     readonly fogs: FogDefinitions;
     readonly items: ItemDefinitions;
@@ -34,7 +35,7 @@ export class ResourcePackStorage extends Object implements StorableObject {
     getAttachables(): AttachableDefinitions;
     getBiomes(): BiomeDefinitions;
     getBlocks(): BlockDefinitions;
-    getConverterData(): { [key: string]: Object };
+    getConverterData(): JavaMap<string, Object>;
     getEntities(): EntityDefinitions;
     getFogs(): FogDefinitions;
     getItems(): ItemDefinitions;

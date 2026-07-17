@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { NodeId } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/nodes/NodeId.d.ts'
 import type { Tag } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/nodes/Tag.d.ts'
 import type { ResolverTuple } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/resolver/ResolverTuple.d.ts'
@@ -14,7 +15,7 @@ export class Resolver extends Object {
     static VALUE: Pattern;
     static YAML: Pattern;
     constructor()
-    // private yamlImplicitResolvers: { [key: string]: ResolverTuple[] };
+    // private yamlImplicitResolvers: JavaMap<string, ResolverTuple[]>;
     addImplicitResolver(arg0: Tag, arg1: Pattern, arg2: string): void;
     addImplicitResolver(arg0: Tag, arg1: Pattern, arg2: string, arg3: number): void;
     addImplicitResolvers(): void;

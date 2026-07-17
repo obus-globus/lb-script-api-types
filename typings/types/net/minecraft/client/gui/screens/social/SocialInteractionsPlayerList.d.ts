@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { UUID } from '../../../../../../java/util/UUID.d.ts'
 import type { Minecraft } from '../../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
@@ -19,9 +20,9 @@ export class SocialInteractionsPlayerList extends ContainerObjectSelectionList<P
     readonly filter: string;
     // private players: PlayerEntry[];
     // private socialInteractionsScreen: SocialInteractionsScreen;
-    // private addOnlinePlayers(playersToAdd: UUID[], output: Map<UUID, PlayerEntry>): void;
+    // private addOnlinePlayers(playersToAdd: UUID[], output: JavaMap<UUID, PlayerEntry>): void;
     addPlayer(player: PlayerInfo, page: SocialInteractionsScreen$Page): void;
-    // private addSeenPlayers(newEntries: Map<UUID, PlayerEntry>): void;
+    // private addSeenPlayers(newEntries: JavaMap<UUID, PlayerEntry>): void;
     enableScissor(graphics: GuiGraphicsExtractor): void;
     extractListBackground(graphics: GuiGraphicsExtractor): void;
     extractListSeparators(graphics: GuiGraphicsExtractor): void;
@@ -34,5 +35,5 @@ export class SocialInteractionsPlayerList extends ContainerObjectSelectionList<P
     // private updateFilteredPlayers(): void;
     // private updateFiltersAndScroll(newEntries: PlayerEntry[], scrollAmount: number): void;
     updatePlayerList(playersToAdd: UUID[], scrollAmount: number, addOfflineEntries: boolean): void;
-    // private updatePlayersFromChatLog(entries: Map<UUID, PlayerEntry>, addOfflineEntries: boolean): void;
+    // private updatePlayersFromChatLog(entries: JavaMap<UUID, PlayerEntry>, addOfflineEntries: boolean): void;
 }

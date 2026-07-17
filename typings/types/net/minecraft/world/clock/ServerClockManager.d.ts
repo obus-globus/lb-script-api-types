@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Stream } from '../../../../java/util/stream/Stream.d.ts'
 import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
@@ -14,7 +15,7 @@ import type { SavedDataType } from '../../../../net/minecraft/world/level/savedd
 export class ServerClockManager extends SavedData implements ClockManager {
     static TYPE: SavedDataType<ServerClockManager>;
     private constructor(packedClockStates: PackedClockStates)
-    // private clocks: Map<Holder<WorldClock>, ServerClockManager$ClockInstance>;
+    // private clocks: JavaMap<Holder<WorldClock>, ServerClockManager$ClockInstance>;
     // private packedClockStates: PackedClockStates;
     // private server: MinecraftServer;
     addTicks(clock: Holder<WorldClock>, ticks: number): void;

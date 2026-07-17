@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Application } from '../../../ai/djl/Application.d.ts'
 import type { Artifact } from '../../../ai/djl/repository/Artifact.d.ts'
 import type { Artifact$Item } from '../../../ai/djl/repository/Artifact$Item.d.ts'
@@ -11,7 +12,7 @@ import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class AbstractRepository extends Object implements Repository {
     constructor(arg0: string, arg1: URI)
-    // private arguments: { [key: string]: string };
+    // private arguments: JavaMap<string, string>;
     name: string;
     // private uri: URI;
     addResource(arg0: MRL): void;

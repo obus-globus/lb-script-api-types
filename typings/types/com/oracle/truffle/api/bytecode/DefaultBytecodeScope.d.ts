@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { BytecodeNode } from '../../../../../com/oracle/truffle/api/bytecode/BytecodeNode.d.ts'
 import type { DefaultBytecodeScope$Members } from '../../../../../com/oracle/truffle/api/bytecode/DefaultBytecodeScope$Members.d.ts'
 import type { DefaultBytecodeScope$NameToIndexCache } from '../../../../../com/oracle/truffle/api/bytecode/DefaultBytecodeScope$NameToIndexCache.d.ts'
@@ -15,7 +16,7 @@ export class DefaultBytecodeScope extends Object implements TruffleObject {
     // private node: TagTreeNode;
     accepts(cachedBytecode: BytecodeNode, cachedNode: TagTreeNode, cachedBci: number, cache: DefaultBytecodeScope$NameToIndexCache): boolean;
     // private createMembers(): DefaultBytecodeScope$Members;
-    createNameToIndex(): { [key: string]: number };
+    createNameToIndex(): JavaMap<string, number>;
     getCache(): DefaultBytecodeScope$NameToIndexCache;
     getLanguageId(cachedNode: TagTreeNode): string;
     getMembers(includeInternal: boolean): Object;

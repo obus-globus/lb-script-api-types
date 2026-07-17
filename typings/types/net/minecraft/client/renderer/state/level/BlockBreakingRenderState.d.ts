@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { FabricRenderState } from '../../../../../../net/fabricmc/fabric/api/client/rendering/v1/FabricRenderState.d.ts'
@@ -9,7 +10,7 @@ export class BlockBreakingRenderState extends Record implements FabricRenderStat
     // private blockPos: BlockPos;
     // private blockState: BlockState;
     // private progress: number;
-    // private renderStateData: Map<Object | null, Object | null>;
+    // private renderStateData: JavaMap<Object | null, Object | null>;
     blockPos(): BlockPos;
     blockState(): BlockState;
     clearExtraData(): void;

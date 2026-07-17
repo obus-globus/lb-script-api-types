@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { FullMappings } from '../../../../../com/viaversion/viaversion/api/data/FullMappings.d.ts'
 import type { MappingDataLoader$IdentifiersPair } from '../../../../../com/viaversion/viaversion/api/data/MappingDataLoader$IdentifiersPair.d.ts'
 import type { Mappings } from '../../../../../com/viaversion/viaversion/api/data/Mappings.d.ts'
@@ -6,7 +7,7 @@ export class FullIdentityMappings extends Object implements FullMappings {
     constructor(arg0: MappingDataLoader$IdentifiersPair, arg1: Mappings)
     // private idToString: string[];
     // private mappings: Mappings;
-    // private stringToId: { [key: string]: any };
+    // private stringToId: JavaMap<any, any>;
     getNewId(arg0: number): number;
     id(arg0: string): number;
     identifier(arg0: number): string;

@@ -1,13 +1,14 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { HttpMethod } from '../../../../com/microsoft/aad/msal4j/HttpMethod.d.ts'
 import type { URL } from '../../../../java/net/URL.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class HttpRequest extends Object {
     constructor(arg0: HttpMethod, arg1: string)
     constructor(arg0: HttpMethod, arg1: string, arg2: string)
-    constructor(arg0: HttpMethod, arg1: string, arg2: { [key: string]: string })
-    constructor(arg0: HttpMethod, arg1: string, arg2: { [key: string]: string }, arg3: string)
+    constructor(arg0: HttpMethod, arg1: string, arg2: JavaMap<string, string>)
+    constructor(arg0: HttpMethod, arg1: string, arg2: JavaMap<string, string>, arg3: string)
     // private body: string;
-    // private headers: { [key: string]: string };
+    // private headers: JavaMap<string, string>;
     // private httpMethod: HttpMethod;
     // private url: URL;
     body(): string;
@@ -16,7 +17,7 @@ export class HttpRequest extends Object {
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     headerValue(arg0: string): string;
-    headers(): { [key: string]: string };
+    headers(): JavaMap<string, string>;
     httpMethod(): HttpMethod;
     url(): URL;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { DumperOptions$FlowStyle } from '../../../../../com/viaversion/viaversion/libs/snakeyaml/DumperOptions$FlowStyle.d.ts'
 import type { DumperOptions$LineBreak } from '../../../../../com/viaversion/viaversion/libs/snakeyaml/DumperOptions$LineBreak.d.ts'
 import type { DumperOptions$NonPrintableStyle } from '../../../../../com/viaversion/viaversion/libs/snakeyaml/DumperOptions$NonPrintableStyle.d.ts'
@@ -27,7 +28,7 @@ export class DumperOptions extends Object {
     readonly prettyFlow: boolean;
     readonly processComments: boolean;
     readonly splitLines: boolean;
-    readonly tags: { [key: string]: string };
+    readonly tags: JavaMap<string, string>;
     readonly timeZone: TimeZone;
     readonly version: DumperOptions$Version;
     getAnchorGenerator(): AnchorGenerator;
@@ -40,7 +41,7 @@ export class DumperOptions extends Object {
     getMaxSimpleKeyLength(): number;
     getNonPrintableStyle(): DumperOptions$NonPrintableStyle;
     getSplitLines(): boolean;
-    getTags(): { [key: string]: string };
+    getTags(): JavaMap<string, string>;
     getTimeZone(): TimeZone;
     getVersion(): DumperOptions$Version;
     getWidth(): number;
@@ -70,7 +71,7 @@ export class DumperOptions extends Object {
     setPrettyFlow(arg0: boolean): void;
     setProcessComments(arg0: boolean): void;
     setSplitLines(arg0: boolean): void;
-    setTags(arg0: { [key: string]: string }): void;
+    setTags(arg0: JavaMap<string, string>): void;
     setTimeZone(arg0: TimeZone): void;
     setVersion(arg0: DumperOptions$Version): void;
     setWidth(arg0: number): void;

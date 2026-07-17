@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { FingerprintTrustManagerFactoryBuilder } from '../../../../../io/netty/handler/ssl/util/FingerprintTrustManagerFactoryBuilder.d.ts'
 import type { SimpleTrustManagerFactory } from '../../../../../io/netty/handler/ssl/util/SimpleTrustManagerFactory.d.ts'
 import type { FastThreadLocal } from '../../../../../io/netty/util/concurrent/FastThreadLocal.d.ts'
@@ -11,7 +12,7 @@ export class FingerprintTrustManagerFactory extends SimpleTrustManagerFactory {
     static getDefaultAlgorithm(): string;
     static getInstance(paramarg0: string): TrustManagerFactory;
     static getInstance(paramarg0: string, paramarg1: string): TrustManagerFactory;
-    static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): TrustManagerFactory;
+    static getInstance(paramarg0: string, paramarg1: JavaMap<any, any>): TrustManagerFactory;
     constructor(...arg0: number[][])
     constructor(...arg0: string[])
     constructor(arg0: string, arg1: number[][])

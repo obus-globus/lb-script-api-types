@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { ReentrantLock } from '../../../java/util/concurrent/locks/ReentrantLock.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
@@ -21,7 +22,7 @@ export class BroadcastChannelImpl<E extends unknown> extends BufferedChannel<E> 
     /*not mapped: */ isClosedForSend(): boolean;
     // private lastConflatedElement: Object | null;
     // private lock: ReentrantLock;
-    // private onSendInternalResult: Map<SelectInstance<Object>, Object | null>;
+    // private onSendInternalResult: JavaMap<SelectInstance<Object>, Object | null>;
     // private subscribers: BufferedChannel<E>[];
     readonly value: E;
     readonly valueOrNull: E | null;

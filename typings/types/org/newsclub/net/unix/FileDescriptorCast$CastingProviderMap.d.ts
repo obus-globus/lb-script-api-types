@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { FileDescriptorCast } from '../../../../org/newsclub/net/unix/FileDescriptorCast.d.ts'
@@ -5,7 +6,7 @@ import type { FileDescriptorCast$CastingProvider } from '../../../../org/newsclu
 export abstract class FileDescriptorCast$CastingProviderMap extends Object {
     constructor()
     // private classes: Class<Object>[];
-    // private providers: Map<Class<Object>, (param0: FileDescriptorCast, param1: Class<Object>) => Object | null>;
+    // private providers: JavaMap<Class<Object>, (param0: FileDescriptorCast, param1: Class<Object>) => Object | null>;
     addProvider<T extends unknown>(arg0: Class<T>, arg1: (param0: FileDescriptorCast, param1: Class<Object>) => Object | null): void;
     // private addProvider0(arg0: Class<Object>, arg1: (param0: FileDescriptorCast, param1: Class<Object>) => Object | null): void;
     addProviders(): void;

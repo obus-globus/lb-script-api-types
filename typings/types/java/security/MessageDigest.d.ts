@@ -1,14 +1,15 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { ByteBuffer } from '../../java/nio/ByteBuffer.d.ts'
 import type { MessageDigestSpi } from '../../java/security/MessageDigestSpi.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export abstract class MessageDigest extends MessageDigestSpi {
     static getInstance(paramarg0: string): MessageDigest;
     static getInstance(paramarg0: string, paramarg1: string): MessageDigest;
-    static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): MessageDigest;
+    static getInstance(paramarg0: string, paramarg1: JavaMap<any, any>): MessageDigest;
     static isEqual(paramarg0: number[], paramarg1: number[]): boolean;
     constructor(arg0: string)
     readonly algorithm: string;
-    readonly provider: { [key: string]: any };
+    readonly provider: JavaMap<any, any>;
     // private state: number;
     clone(): Object;
     digest(): number[];
@@ -16,7 +17,7 @@ export abstract class MessageDigest extends MessageDigestSpi {
     digest(arg0: number[], arg1: number, arg2: number): number;
     getAlgorithm(): string;
     getDigestLength(): number;
-    getProvider(): { [key: string]: any };
+    getProvider(): JavaMap<any, any>;
     // private getProviderName(): string;
     reset(): void;
     toString(): string;

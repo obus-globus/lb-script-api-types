@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 import type { GlobalProperties$Keys } from '../../../../org/spongepowered/asm/launch/GlobalProperties$Keys.d.ts'
@@ -25,7 +26,7 @@ export class MixinEnvironment extends Object implements ITokenProvider {
     static setCompatibilityLevel(paramarg0: MixinEnvironment$CompatibilityLevel): void;
     constructor(arg0: MixinEnvironment$Phase)
     // private configsKey: GlobalProperties$Keys;
-    // private internalTokens: { [key: string]: number };
+    // private internalTokens: JavaMap<string, number>;
     readonly obfuscationContext: string;
     // private options: boolean[];
     readonly phase: MixinEnvironment$Phase;

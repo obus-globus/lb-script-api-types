@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { StagingBuffer } from '../../../../../../../../net/caffeinemc/mods/sodium/client/gpu/arena/staging/StagingBuffer.d.ts'
 import type { IntPool } from '../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/IntPool.d.ts'
@@ -9,7 +10,7 @@ export class RenderRegionManager extends Object {
     constructor(arg0: RenderSectionManager)
     // private freeIds: IntPool;
     // private parent: RenderSectionManager;
-    // private regions: { [key: string]: any };
+    // private regions: JavaMap<any, any>;
     readonly stagingBuffer: StagingBuffer;
     // private create(arg0: number, arg1: number, arg2: number): RenderRegion;
     createForChunk(arg0: number, arg1: number, arg2: number): RenderRegion;

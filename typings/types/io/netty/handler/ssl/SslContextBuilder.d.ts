@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ApplicationProtocolConfig } from '../../../../io/netty/handler/ssl/ApplicationProtocolConfig.d.ts'
 import type { CipherSuiteFilter } from '../../../../io/netty/handler/ssl/CipherSuiteFilter.d.ts'
 import type { ClientAuth } from '../../../../io/netty/handler/ssl/ClientAuth.d.ts'
@@ -42,14 +43,14 @@ export class SslContextBuilder extends Object {
     // private keyManagerFactory: KeyManagerFactory;
     // private keyPassword: string;
     // private keyStoreType: string;
-    // private options: Map<SslContextOption<Object>, Object>;
+    // private options: JavaMap<SslContextOption<Object>, Object>;
     // private protocols: string[];
     // private provider: SslProvider;
     // private secureRandom: SecureRandom;
     // private serverNames: SNIServerName[];
     // private sessionCacheSize: number;
     // private sessionTimeout: number;
-    // private sslContextProvider: { [key: string]: any };
+    // private sslContextProvider: JavaMap<any, any>;
     // private startTls: boolean;
     // private trustCertCollection: X509Certificate[];
     // private trustManagerFactory: TrustManagerFactory;
@@ -81,7 +82,7 @@ export class SslContextBuilder extends Object {
     serverName(arg0: SNIServerName): SslContextBuilder;
     sessionCacheSize(arg0: number): SslContextBuilder;
     sessionTimeout(arg0: number): SslContextBuilder;
-    sslContextProvider(arg0: { [key: string]: any }): SslContextBuilder;
+    sslContextProvider(arg0: JavaMap<any, any>): SslContextBuilder;
     sslProvider(arg0: SslProvider): SslContextBuilder;
     startTls(arg0: boolean): SslContextBuilder;
     trustManager(arg0: File): SslContextBuilder;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { GameTickEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts'
@@ -12,8 +13,8 @@ import type { FontRenderer } from '../../../../../../../net/ccbluex/liquidbounce
 import type { Color4b } from '../../../../../../../net/ccbluex/liquidbounce/render/engine/type/Color4b.d.ts'
 export class ModuleDebug extends ClientModule {
     static INSTANCE: ModuleDebug;
-    // private debugParameters: Map<ModuleDebug$DebuggedKey, ModuleDebug$ParameterCapture>;
-    // private debuggedGeometry: Map<ModuleDebug$DebuggedKey, ModuleDebug$DebuggedGeometry>;
+    // private debugParameters: JavaMap<ModuleDebug$DebuggedKey, ModuleDebug$ParameterCapture>;
+    // private debuggedGeometry: JavaMap<ModuleDebug$DebuggedKey, ModuleDebug$DebuggedGeometry>;
     // private expireHandler: EventHook<GameTickEvent>;
     // private expireTime: number;
     // private /*not mapped: */ getExpireTime(): number;

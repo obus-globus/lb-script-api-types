@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { FrameGraphBuilder } from '../../../../com/mojang/blaze3d/framegraph/FrameGraphBuilder.d.ts'
 import type { RenderTarget } from '../../../../com/mojang/blaze3d/pipeline/RenderTarget.d.ts'
 import type { GraphicsResourceAllocator } from '../../../../com/mojang/blaze3d/resource/GraphicsResourceAllocator.d.ts'
@@ -15,11 +16,11 @@ import type { Identifier } from '../../../../net/minecraft/resources/Identifier.
 export class PostChain extends Object implements AutoCloseable {
     static MAIN_TARGET_ID: Identifier;
     static load(paramconfig: PostChainConfig, paramtextureManager: TextureManager, paramallowedExternalTargets: Identifier[], paramid: Identifier, paramprojection: Projection, paramprojectionMatrixBuffer: ProjectionMatrixBuffer): PostChain;
-    private constructor(passes: PostPass[], internalTargets: Map<Identifier, PostChainConfig$InternalTarget>, externalTargets: Identifier[], projection: Projection, projectionMatrixBuffer: ProjectionMatrixBuffer)
+    private constructor(passes: PostPass[], internalTargets: JavaMap<Identifier, PostChainConfig$InternalTarget>, externalTargets: Identifier[], projection: Projection, projectionMatrixBuffer: ProjectionMatrixBuffer)
     // private externalTargets: Identifier[];
-    // private internalTargets: Map<Identifier, PostChainConfig$InternalTarget>;
+    // private internalTargets: JavaMap<Identifier, PostChainConfig$InternalTarget>;
     passes: PostPass[];
-    // private persistentTargets: Map<Identifier, RenderTarget>;
+    // private persistentTargets: JavaMap<Identifier, RenderTarget>;
     // private projection: Projection;
     // private projectionMatrixBuffer: ProjectionMatrixBuffer;
     addToFrame(frame: FrameGraphBuilder, screenWidth: number, screenHeight: number, providedTargets: PostChain$TargetBundle): void;

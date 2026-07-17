@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ClaimsRequest } from '../../../../com/microsoft/aad/msal4j/ClaimsRequest.d.ts'
 import type { HttpMethod } from '../../../../com/microsoft/aad/msal4j/HttpMethod.d.ts'
 import type { InteractiveRequestParameters } from '../../../../com/microsoft/aad/msal4j/InteractiveRequestParameters.d.ts'
@@ -11,8 +12,8 @@ export class InteractiveRequestParameters$InteractiveRequestParametersBuilder ex
     // private claims: ClaimsRequest;
     // private claimsChallenge: string;
     // private domainHint: string;
-    // private extraHttpHeaders: { [key: string]: string };
-    // private extraQueryParameters: { [key: string]: string };
+    // private extraHttpHeaders: JavaMap<string, string>;
+    // private extraQueryParameters: JavaMap<string, string>;
     // private httpPollingTimeoutInSeconds: number;
     // private instanceAware: boolean;
     // private loginHint: string;
@@ -27,8 +28,8 @@ export class InteractiveRequestParameters$InteractiveRequestParametersBuilder ex
     claims(arg0: ClaimsRequest): InteractiveRequestParameters$InteractiveRequestParametersBuilder;
     claimsChallenge(arg0: string): InteractiveRequestParameters$InteractiveRequestParametersBuilder;
     domainHint(arg0: string): InteractiveRequestParameters$InteractiveRequestParametersBuilder;
-    extraHttpHeaders(arg0: { [key: string]: string }): InteractiveRequestParameters$InteractiveRequestParametersBuilder;
-    extraQueryParameters(arg0: { [key: string]: string }): InteractiveRequestParameters$InteractiveRequestParametersBuilder;
+    extraHttpHeaders(arg0: JavaMap<string, string>): InteractiveRequestParameters$InteractiveRequestParametersBuilder;
+    extraQueryParameters(arg0: JavaMap<string, string>): InteractiveRequestParameters$InteractiveRequestParametersBuilder;
     httpPollingTimeoutInSeconds(arg0: number): InteractiveRequestParameters$InteractiveRequestParametersBuilder;
     instanceAware(arg0: boolean): InteractiveRequestParameters$InteractiveRequestParametersBuilder;
     loginHint(arg0: string): InteractiveRequestParameters$InteractiveRequestParametersBuilder;

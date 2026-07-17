@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { InputStream } from '../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../java/io/OutputStream.d.ts'
 import type { ClassLoader } from '../../../java/lang/ClassLoader.d.ts'
@@ -33,11 +34,11 @@ export class Context$Builder extends Object {
     // private allowInnerContextOptions: boolean;
     // private allowNativeAccess: boolean;
     // private allowValueSharing: boolean;
-    // private arguments: { [key: string]: string[] };
+    // private arguments: JavaMap<string, string[]>;
     // private currentWorkingDirectory: Path;
     // private customFileSystem: FileSystem;
     // private customLogHandler: Object;
-    // private environment: { [key: string]: string };
+    // private environment: JavaMap<string, string>;
     // private environmentAccess: EnvironmentAccess;
     // private err: OutputStream;
     // private exceptionHandler: (param0: PolyglotException) => void;
@@ -47,7 +48,7 @@ export class Context$Builder extends Object {
     // private in: InputStream;
     // private ioAccess: IOAccess;
     // private messageTransport: MessageTransport;
-    // private options: { [key: string]: string };
+    // private options: JavaMap<string, string>;
     // private out: OutputStream;
     // private permittedLanguages: string[];
     // private polyglotAccess: PolyglotAccess;
@@ -79,7 +80,7 @@ export class Context$Builder extends Object {
     currentWorkingDirectory(workingDirectory: Path): Context$Builder;
     engine(engine: Engine): Context$Builder;
     environment(name: string, value: string): Context$Builder;
-    environment(env: { [key: string]: string }): Context$Builder;
+    environment(env: JavaMap<string, string>): Context$Builder;
     err(err: OutputStream): Context$Builder;
     exceptionHandler(handler: (param0: PolyglotException) => void): Context$Builder;
     extendHostAccess(defaultInitialValue: HostAccess, setup: (param0: HostAccess$Builder) => void): Context$Builder;
@@ -91,7 +92,7 @@ export class Context$Builder extends Object {
     logHandler(logOut: OutputStream): Context$Builder;
     logHandler(logHandler: Handler): Context$Builder;
     option(key: string, value: string): Context$Builder;
-    options(options: { [key: string]: string }): Context$Builder;
+    options(options: JavaMap<string, string>): Context$Builder;
     // private orAllAccess(optionalBoolean: boolean): boolean;
     out(out: OutputStream): Context$Builder;
     processHandler(handler: ProcessHandler): Context$Builder;

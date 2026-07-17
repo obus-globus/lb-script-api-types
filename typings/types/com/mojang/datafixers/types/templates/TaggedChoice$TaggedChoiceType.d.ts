@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { RewriteResult } from '../../../../../com/mojang/datafixers/RewriteResult.d.ts'
 import type { TypeRewriteRule } from '../../../../../com/mojang/datafixers/TypeRewriteRule.d.ts'
 import type { Typed } from '../../../../../com/mojang/datafixers/Typed.d.ts'
@@ -22,12 +23,12 @@ export class TaggedChoice$TaggedChoiceType<K extends unknown> extends Type<Pair<
     static elementResult<K extends unknown, FT extends unknown, FR extends unknown>(paramarg0: K, paramarg1: TaggedChoice$TaggedChoiceType<K>, paramarg2: RewriteResult<FT, FR>): RewriteResult<Pair<K, Object>, Pair<K, Object>>;
     static opticView<S extends unknown, T extends unknown, A extends unknown, B extends unknown>(paramarg0: Type<S>, paramarg1: RewriteResult<A, B>, paramarg2: TypedOptic<S, T, A, B>): RewriteResult<S, T>;
     static unbox<A extends unknown>(paramarg0: App<Type$Mu, A>): Type<A>;
-    constructor(arg0: string, arg1: Type<K>, arg2: Map<K, Type<Object>>)
+    constructor(arg0: string, arg1: Type<K>, arg2: JavaMap<K, Type<Object>>)
     // private failSoft: boolean;
     // private hashCode: number;
     readonly keyType: Type<K>;
     readonly name: string;
-    // private types: Map<K, Type<Object>>;
+    // private types: JavaMap<K, Type<Object>>;
     all(arg0: TypeRewriteRule, arg1: boolean, arg2: boolean): RewriteResult<Pair<K, Object>, Object>;
     buildCodec(): Codec<Pair<K, Object>>;
     buildTemplate(): TypeTemplate;
@@ -48,6 +49,6 @@ export class TaggedChoice$TaggedChoiceType<K extends unknown> extends Type<Pair<
     point(arg0: DynamicOps<Object>): Optional<Pair<K, Object>>;
     point(arg0: DynamicOps<Object>, arg1: K, arg2: Object): Optional<Typed<Pair<K, Object>>>;
     toString(): string;
-    types(): Map<K, Type<Object>>;
+    types(): JavaMap<K, Type<Object>>;
     updateMu(arg0: RecursiveTypeFamily): Type<Object>;
 }

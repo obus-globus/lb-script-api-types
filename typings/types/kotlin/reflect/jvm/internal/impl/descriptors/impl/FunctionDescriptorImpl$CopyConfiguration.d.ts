@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CallableDescriptor$UserDataKey } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableDescriptor$UserDataKey.d.ts'
 import type { CallableMemberDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableMemberDescriptor.d.ts'
@@ -39,7 +40,7 @@ export class FunctionDescriptorImpl$CopyConfiguration extends Object implements 
     // private preserveSourceElement: boolean;
     // private signatureChange: boolean;
     // private substitution: TypeSubstitution;
-    // private userDataMap: Map<CallableDescriptor$UserDataKey<Object>, Object>;
+    // private userDataMap: JavaMap<CallableDescriptor$UserDataKey<Object>, Object>;
     build(): FunctionDescriptor;
     putUserData<V extends unknown>(arg0: CallableDescriptor$UserDataKey<V>, arg1: V): FunctionDescriptor$CopyBuilder<FunctionDescriptor>;
     setAdditionalAnnotations(arg0: AnnotationDescriptor[]): FunctionDescriptorImpl$CopyConfiguration;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Runnable } from '../../../../java/lang/Runnable.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { CompletableFuture } from '../../../../java/util/concurrent/CompletableFuture.d.ts'
@@ -19,11 +20,11 @@ export class ParticleResources extends Object implements FabricResourceReloader,
     constructor()
     // private fabric$id: Identifier;
     // private onReload: () => void;
-    readonly providers: { [key: string]: any };
-    spriteSets: Map<Identifier, ParticleResources$MutableSpriteSet>;
+    readonly providers: JavaMap<any, any>;
+    spriteSets: JavaMap<Identifier, ParticleResources$MutableSpriteSet>;
     fabric$getId(): Identifier;
     getName(): string;
-    getProviders(): { [key: string]: any };
+    getProviders(): JavaMap<any, any>;
     // private loadParticleDescription(id: Identifier, resource: Resource): Optional<Identifier[]>;
     onReload(onReload: () => void): void;
     prepareSharedState(currentReload: PreparableReloadListener$SharedState): void;

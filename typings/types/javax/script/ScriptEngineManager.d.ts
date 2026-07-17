@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { ClassLoader } from '../../java/lang/ClassLoader.d.ts'
 import type { Function } from '../../java/util/function/Function.d.ts'
 import type { ScriptEngine } from '../../javax/script/ScriptEngine.d.ts'
@@ -7,13 +8,13 @@ export class ScriptEngineManager extends Object {
     constructor()
     constructor(arg0: ClassLoader)
     // private engineSpis: ScriptEngineFactory[];
-    // private extensionAssociations: { [key: string]: ScriptEngineFactory };
-    // private globalScope: { [key: string]: any };
-    // private mimeTypeAssociations: { [key: string]: ScriptEngineFactory };
-    // private nameAssociations: { [key: string]: ScriptEngineFactory };
+    // private extensionAssociations: JavaMap<string, ScriptEngineFactory>;
+    // private globalScope: JavaMap<any, any>;
+    // private mimeTypeAssociations: JavaMap<string, ScriptEngineFactory>;
+    // private nameAssociations: JavaMap<string, ScriptEngineFactory>;
     get(arg0: string): Object;
-    getBindings(): { [key: string]: any };
-    // private getEngineBy(arg0: string, arg1: { [key: string]: ScriptEngineFactory }, arg2: (param0: ScriptEngineFactory) => string[]): ScriptEngine;
+    getBindings(): JavaMap<any, any>;
+    // private getEngineBy(arg0: string, arg1: JavaMap<string, ScriptEngineFactory>, arg2: (param0: ScriptEngineFactory) => string[]): ScriptEngine;
     getEngineByExtension(arg0: string): ScriptEngine;
     getEngineByMimeType(arg0: string): ScriptEngine;
     getEngineByName(arg0: string): ScriptEngine;
@@ -24,5 +25,5 @@ export class ScriptEngineManager extends Object {
     registerEngineExtension(arg0: string, arg1: ScriptEngineFactory): void;
     registerEngineMimeType(arg0: string, arg1: ScriptEngineFactory): void;
     registerEngineName(arg0: string, arg1: ScriptEngineFactory): void;
-    setBindings(arg0: { [key: string]: any }): void;
+    setBindings(arg0: JavaMap<any, any>): void;
 }

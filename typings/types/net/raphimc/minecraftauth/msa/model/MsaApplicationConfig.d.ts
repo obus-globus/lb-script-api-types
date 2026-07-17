@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { JsonObject } from '../../../../../com/google/gson/JsonObject.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
@@ -15,7 +16,7 @@ export class MsaApplicationConfig extends Object {
     readonly redirectUri: string;
     readonly scope: string;
     equals(arg0: Object | null): boolean;
-    getAuthCodeParameters(): { [key: string]: string };
+    getAuthCodeParameters(): JavaMap<string, string>;
     getClientId(): string;
     getClientSecret(): string;
     getEnvironment(): MsaEnvironment;

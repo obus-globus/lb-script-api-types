@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Serializable } from '../../../../../../../java/io/Serializable.d.ts'
 import type { BigInteger } from '../../../../../../../java/math/BigInteger.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
@@ -20,7 +21,7 @@ export class ObjectiveFunction extends Object implements Serializable {
     getCorrectionOffset(): BigInteger;
     getVars(): IVecInt;
     hashCode(): number;
-    toMap(): { [key: number]: BigInteger };
+    toMap(): JavaMap<number, BigInteger>;
     toString(): string;
     // private varInModel(arg0: number, arg1: RandomAccessModel): boolean;
 }

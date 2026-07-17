@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { DescriptionListWidget } from '../../../../com/terraformersmc/modmenu/gui/widget/DescriptionListWidget.d.ts'
 import type { ModListWidget } from '../../../../com/terraformersmc/modmenu/gui/widget/ModListWidget.d.ts'
 import type { ModListEntry } from '../../../../com/terraformersmc/modmenu/gui/widget/entries/ModListEntry.d.ts'
@@ -38,9 +39,9 @@ export class ModsScreen extends Screen {
     // private keepFilterOptionsShown: boolean;
     // private librariesButton: AbstractWidget;
     // private modBadgeRenderer: ModBadgeRenderer;
-    modHasConfigScreen: { [key: string]: boolean };
+    modHasConfigScreen: JavaMap<string, boolean>;
     // private modList: ModListWidget;
-    modScreenErrors: { [key: string]: Throwable };
+    modScreenErrors: JavaMap<string, Throwable>;
     // private paneWidth: number;
     // private previousScreen: Screen;
     // private rightPaneX: number;

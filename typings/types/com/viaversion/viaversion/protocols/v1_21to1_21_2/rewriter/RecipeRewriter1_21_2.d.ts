@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { StorableObject } from '../../../../../../com/viaversion/viaversion/api/connection/StorableObject.d.ts'
 import type { HolderSet } from '../../../../../../com/viaversion/viaversion/api/minecraft/HolderSet.d.ts'
 import type { Item } from '../../../../../../com/viaversion/viaversion/api/minecraft/item/Item.d.ts'
@@ -11,10 +12,10 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class RecipeRewriter1_21_2 extends RecipeRewriter1_20_3<ClientboundPacket1_21> implements StorableObject {
     constructor(arg0: Protocol<ClientboundPacket1_21, any, any, any>)
     readonly currentRecipeIdentifier: string;
-    // private recipeGroups: { [key: string]: any };
-    // private recipeInputs: { [key: string]: (Object | null)[] };
+    // private recipeGroups: JavaMap<any, any>;
+    // private recipeInputs: JavaMap<string, (Object | null)[]>;
     // private recipes: RecipeRewriter1_21_2$Recipe[];
-    // private recipesByKey: { [key: string]: RecipeRewriter1_21_2$Recipe };
+    // private recipesByKey: JavaMap<string, RecipeRewriter1_21_2$Recipe>;
     // private stoneCutterRecipes: RecipeRewriter1_21_2$StoneCutterRecipe[];
     // private addRecipe(arg0: RecipeRewriter1_21_2$Recipe): void;
     finalizeRecipes(): void;

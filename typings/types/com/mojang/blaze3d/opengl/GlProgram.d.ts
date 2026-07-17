@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { GlShaderModule } from '../../../../com/mojang/blaze3d/opengl/GlShaderModule.d.ts'
 import type { Uniform } from '../../../../com/mojang/blaze3d/opengl/Uniform.d.ts'
 import type { BindGroupLayout } from '../../../../com/mojang/blaze3d/pipeline/BindGroupLayout.d.ts'
@@ -15,12 +16,12 @@ export class GlProgram extends Object implements AutoCloseable, ShaderInstanceIn
     readonly debugLabel: string;
     readonly programId: number;
     readonly shouldSkip: MethodHandle;
-    uniformsByName: { [key: string]: Uniform };
+    uniformsByName: JavaMap<string, Uniform>;
     close(): void;
     getDebugLabel(): string;
     getProgramId(): number;
     getUniform(name: string): Uniform;
-    getUniforms(): { [key: string]: Uniform };
+    getUniforms(): JavaMap<string, Uniform>;
     iris$shouldSkipThis(): boolean;
     // private iris$unlockDepthColorState(arg0: CallbackInfo): void;
     // private isKnownShader(): boolean;

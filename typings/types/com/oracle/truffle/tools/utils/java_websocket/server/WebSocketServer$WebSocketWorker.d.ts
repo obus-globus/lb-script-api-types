@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { WebSocketImpl } from '../../../../../../../com/oracle/truffle/tools/utils/java_websocket/WebSocketImpl.d.ts'
 import type { WebSocketServer } from '../../../../../../../com/oracle/truffle/tools/utils/java_websocket/server/WebSocketServer.d.ts'
 import type { Runnable } from '../../../../../../../java/lang/Runnable.d.ts'
@@ -18,7 +19,7 @@ export class WebSocketServer$WebSocketWorker extends Thread {
     static currentThread(): Thread;
     static dumpStack(): void;
     static enumerate(paramarg0: Thread[]): number;
-    static getAllStackTraces(): Map<Thread, StackTraceElement[]>;
+    static getAllStackTraces(): JavaMap<Thread, StackTraceElement[]>;
     static getDefaultUncaughtExceptionHandler(): (param0: Thread, param1: Throwable) => void;
     static holdsLock(paramarg0: Object): boolean;
     static interrupted(): boolean;

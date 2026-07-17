@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -14,7 +15,7 @@ export class SpriteLoader extends Object {
     constructor(location: Identifier, maxSupportedTextureSize: number)
     // private location: Identifier;
     // private maxSupportedTextureSize: number;
-    // private getStitchedSprites(stitcher: Stitcher<SpriteContents>, atlasWidth: number, atlasHeight: number): Map<Identifier, TextureAtlasSprite>;
+    // private getStitchedSprites(stitcher: Stitcher<SpriteContents>, atlasWidth: number, atlasHeight: number): JavaMap<Identifier, TextureAtlasSprite>;
     loadAndStitch(manager: ResourceManager, atlasInfoLocation: Identifier, maxMipmapLevels: number, taskExecutor: Executor, additionalMetadata: MetadataSectionType<Object>[]): CompletableFuture<SpriteLoader$Preparations>;
     // private stitch(sprites: SpriteContents[], maxMipmapLevels: number, executor: Executor): SpriteLoader$Preparations;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Lifecycle } from '../../../com/mojang/serialization/Lifecycle.d.ts'
 import type { Exception } from '../../../java/lang/Exception.d.ts'
 import type { Optional } from '../../../java/util/Optional.d.ts'
@@ -14,19 +15,19 @@ import type { RegistryOps$RegistryInfoLookup } from '../../../net/minecraft/reso
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { TagKey } from '../../../net/minecraft/tags/TagKey.d.ts'
 export abstract class RegistryLoadTask<T extends unknown> extends Object {
-    constructor(data: RegistryDataLoader$RegistryData<T>, lifecycle: Lifecycle, loadingErrors: Map<ResourceKey<Object>, Exception>)
+    constructor(data: RegistryDataLoader$RegistryData<T>, lifecycle: Lifecycle, loadingErrors: JavaMap<ResourceKey<Object>, Exception>)
     // private concurrentRegistrationGetter: ConcurrentHolderGetter<T>;
     // private data: RegistryDataLoader$RegistryData<T>;
     // private elementsRegistered: boolean;
-    // private loadingErrors: Map<ResourceKey<Object>, Exception>;
+    // private loadingErrors: JavaMap<ResourceKey<Object>, Exception>;
     registry: T[];
     // private registryWriteLock: Object;
     createRegistryInfo(): RegistryOps$RegistryInfo<Object>;
-    freezeRegistry(loadingErrors: Map<ResourceKey<Object>, Exception>): boolean;
+    freezeRegistry(loadingErrors: JavaMap<ResourceKey<Object>, Exception>): boolean;
     load(context: RegistryOps$RegistryInfoLookup, executor: Executor): CompletableFuture<Object>;
     readOnlyRegistry(): T[];
     registerElements(elements: Stream<RegistryLoadTask$PendingRegistration<T>>): void;
-    registerTags(pendingTags: Map<TagKey<T>, Holder<T>[]>): void;
+    registerTags(pendingTags: JavaMap<TagKey<T>, Holder<T>[]>): void;
     registryKey(): ResourceKey<T[]>;
-    validateRegistry(loadingErrors: Map<ResourceKey<Object>, Exception>): Optional<T[]>;
+    validateRegistry(loadingErrors: JavaMap<ResourceKey<Object>, Exception>): Optional<T[]>;
 }

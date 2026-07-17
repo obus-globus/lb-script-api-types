@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Certificate } from '../../../../../../java/security/cert/Certificate.d.ts'
 import type { JarEntry } from '../../../../../../java/util/jar/JarEntry.d.ts'
 import type { ZipEntry } from '../../../../../../java/util/zip/ZipEntry.d.ts'
@@ -55,5 +56,5 @@ export class JarArchiveEntry extends ZipArchiveEntry {
     constructor(arg0: string)
     constructor(arg0: ZipArchiveEntry)
     getCertificates(): Certificate[];
-    getManifestAttributes(): { [key: string]: any };
+    getManifestAttributes(): JavaMap<any, any>;
 }

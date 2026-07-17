@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { PacketEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/PacketEvent.d.ts'
 import type { WorldChangeEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/WorldChangeEvent.d.ts'
@@ -16,7 +17,7 @@ export class ModuleNewChunks extends ClientModule {
     static INSTANCE: ModuleNewChunks;
     // private autoY: boolean;
     // private /*not mapped: */ getAutoY(): boolean;
-    // private chunks: Map<ChunkPos, boolean>;
+    // private chunks: JavaMap<ChunkPos, boolean>;
     // private newColor: Color4b;
     // private /*not mapped: */ getNewColor(): Color4b;
     // private oldColor: Color4b;

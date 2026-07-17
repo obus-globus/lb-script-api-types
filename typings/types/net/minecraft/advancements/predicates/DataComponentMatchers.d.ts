@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { MapCodec } from '../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
@@ -12,9 +13,9 @@ export class DataComponentMatchers extends Record implements Predicate<DataCompo
     static ANY: DataComponentMatchers;
     static CODEC: MapCodec<DataComponentMatchers>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentMatchers>;
-    constructor(exact: DataComponentExactPredicate, partial: Map<DataComponentPredicate$Type<any>, DataComponentPredicate>)
+    constructor(exact: DataComponentExactPredicate, partial: JavaMap<DataComponentPredicate$Type<any>, DataComponentPredicate>)
     // private exact: DataComponentExactPredicate;
-    // private partial: Map<DataComponentPredicate$Type<any>, DataComponentPredicate>;
+    // private partial: JavaMap<DataComponentPredicate$Type<any>, DataComponentPredicate>;
     and(arg0: (param0: DataComponentGetter) => boolean): (param0: DataComponentGetter) => boolean;
     equals(o: Object | null): boolean;
     exact(): DataComponentExactPredicate;
@@ -22,7 +23,7 @@ export class DataComponentMatchers extends Record implements Predicate<DataCompo
     isEmpty(): boolean;
     negate(): (param0: DataComponentGetter) => boolean;
     or(arg0: (param0: DataComponentGetter) => boolean): (param0: DataComponentGetter) => boolean;
-    partial(): Map<DataComponentPredicate$Type<any>, DataComponentPredicate>;
+    partial(): JavaMap<DataComponentPredicate$Type<any>, DataComponentPredicate>;
     test(values: DataComponentGetter): boolean;
     toString(): string;
 }

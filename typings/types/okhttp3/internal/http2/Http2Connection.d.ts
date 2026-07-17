@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Closeable } from '../../../java/io/Closeable.d.ts'
 import type { IOException } from '../../../java/io/IOException.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
@@ -57,8 +58,8 @@ export class Http2Connection extends Object implements Closeable, Lockable {
     // private settingsListenerQueue: TaskQueue;
     // private socket: BufferedSocket;
     /*not mapped: */ getSocket$okhttp(): BufferedSocket;
-    // private streams: { [key: number]: Http2Stream };
-    /*not mapped: */ getStreams$okhttp(): { [key: number]: Http2Stream };
+    // private streams: JavaMap<number, Http2Stream>;
+    /*not mapped: */ getStreams$okhttp(): JavaMap<number, Http2Stream>;
     // private taskRunner: TaskRunner;
     readonly writeBytesMaximum: number;
     readonly writeBytesTotal: number;

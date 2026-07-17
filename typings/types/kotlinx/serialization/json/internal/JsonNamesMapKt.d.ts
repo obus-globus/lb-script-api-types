@@ -1,11 +1,12 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { SerialDescriptor } from '../../../../kotlinx/serialization/descriptors/SerialDescriptor.d.ts'
 import type { Json } from '../../../../kotlinx/serialization/json/Json.d.ts'
 import type { JsonNamingStrategy } from '../../../../kotlinx/serialization/json/JsonNamingStrategy.d.ts'
 import type { DescriptorSchemaCache$Key } from '../../../../kotlinx/serialization/json/internal/DescriptorSchemaCache$Key.d.ts'
 export class JsonNamesMapKt extends Object {
-    static deserializationNamesMap(self: Json, descriptor: SerialDescriptor): { [key: string]: number };
-    static getJsonDeserializationNamesKey(): DescriptorSchemaCache$Key<{ [key: string]: number }>;
+    static deserializationNamesMap(self: Json, descriptor: SerialDescriptor): JavaMap<string, number>;
+    static getJsonDeserializationNamesKey(): DescriptorSchemaCache$Key<JavaMap<string, number>>;
     static getJsonElementName(self: SerialDescriptor, json: Json, index: number): string;
     static getJsonEncodedNames(self: SerialDescriptor, json: Json): string[];
     static getJsonNameIndex(self: SerialDescriptor, json: Json, name: string): number;

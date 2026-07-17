@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ThreadLocal } from '../../../../../java/lang/ThreadLocal.d.ts'
 import type { ReentrantReadWriteLock } from '../../../../../java/util/concurrent/locks/ReentrantReadWriteLock.d.ts'
 import type { ToIntFunction } from '../../../../../java/util/function/ToIntFunction.d.ts'
@@ -7,7 +8,7 @@ import type { BlockTintCache$LatestCacheInfo } from '../../../../../net/minecraf
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 export class BlockTintCache extends Object {
     constructor(source: (param0: BlockPos) => number)
-    // private cache: { [key: string]: any };
+    // private cache: JavaMap<any, any>;
     // private latestChunkOnThread: ThreadLocal<BlockTintCache$LatestCacheInfo>;
     // private lock: ReentrantReadWriteLock;
     // private source: (param0: BlockPos) => number;

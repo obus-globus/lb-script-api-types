@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { AutoCloseable } from '../../../../../../java/lang/AutoCloseable.d.ts'
 import type { TimeUnit } from '../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -14,7 +15,7 @@ export abstract class AbstractManager extends Object implements AutoCloseable {
     readonly loggerContext: LoggerContext;
     readonly name: string;
     close(): void;
-    getContentFormat(): { [key: string]: string };
+    getContentFormat(): JavaMap<string, string>;
     getCount(): number;
     getLoggerContext(): LoggerContext;
     getName(): string;

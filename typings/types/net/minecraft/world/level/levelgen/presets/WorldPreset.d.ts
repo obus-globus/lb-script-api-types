@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -8,9 +9,9 @@ import type { WorldDimensions } from '../../../../../../net/minecraft/world/leve
 export class WorldPreset extends Object {
     static CODEC: Codec<Holder<WorldPreset>>;
     static DIRECT_CODEC: Codec<WorldPreset>;
-    constructor(dimensions: Map<ResourceKey<LevelStem>, LevelStem>)
-    // private dimensions: Map<ResourceKey<LevelStem>, LevelStem>;
+    constructor(dimensions: JavaMap<ResourceKey<LevelStem>, LevelStem>)
+    // private dimensions: JavaMap<ResourceKey<LevelStem>, LevelStem>;
     createWorldDimensions(): WorldDimensions;
-    // private dimensionsInOrder(): Map<ResourceKey<LevelStem>, LevelStem>;
+    // private dimensionsInOrder(): JavaMap<ResourceKey<LevelStem>, LevelStem>;
     overworld(): Optional<LevelStem>;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { URI } from '../../../java/net/URI.d.ts'
 import type { Charset } from '../../../java/nio/charset/Charset.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
@@ -14,7 +15,7 @@ export class Source$Builder extends Object {
     // private language: string;
     // private mimeType: string;
     // private name: string;
-    // private options: { [key: string]: string };
+    // private options: JavaMap<string, string>;
     // private origin: Object;
     // private uri: URI;
     build(): Source;
@@ -29,6 +30,6 @@ export class Source$Builder extends Object {
     mimeType(mimeType: string): Source$Builder;
     name(newName: string): Source$Builder;
     option(key: string, value: string): Source$Builder;
-    options(options: { [key: string]: string }): Source$Builder;
+    options(options: JavaMap<string, string>): Source$Builder;
     uri(newUri: URI): Source$Builder;
 }

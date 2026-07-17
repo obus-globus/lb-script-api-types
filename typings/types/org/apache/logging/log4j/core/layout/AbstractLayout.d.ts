@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Serializable } from '../../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Layout } from '../../../../../../org/apache/logging/log4j/core/Layout.d.ts'
@@ -14,7 +15,7 @@ export abstract class AbstractLayout<T extends Serializable> extends Object impl
     readonly header: number[];
     encode(event: LogEvent, destination: ByteBufferDestination): void;
     getConfiguration(): Configuration;
-    getContentFormat(): { [key: string]: string };
+    getContentFormat(): JavaMap<string, string>;
     getFooter(): number[];
     getHeader(): number[];
     markEvent(): void;

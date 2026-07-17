@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Reader } from '../../../../../../java/io/Reader.d.ts'
 import type { Writer } from '../../../../../../java/io/Writer.d.ts'
 import type { Appendable } from '../../../../../../java/lang/Appendable.d.ts'
@@ -22,8 +23,8 @@ import type { JsonReader } from '../../../../../../org/spongepowered/include/com
 import type { JsonWriter } from '../../../../../../org/spongepowered/include/com/google/gson/stream/JsonWriter.d.ts'
 export class Gson extends Object {
     constructor()
-    constructor(arg0: Excluder, arg1: FieldNamingStrategy, arg2: Map<Type, InstanceCreator<Object>>, arg3: boolean, arg4: boolean, arg5: boolean, arg6: boolean, arg7: boolean, arg8: boolean, arg9: LongSerializationPolicy, arg10: TypeAdapterFactory[])
-    // private calls: ThreadLocal<Map<TypeToken<Object>, Gson$FutureTypeAdapter<Object>>>;
+    constructor(arg0: Excluder, arg1: FieldNamingStrategy, arg2: JavaMap<Type, InstanceCreator<Object>>, arg3: boolean, arg4: boolean, arg5: boolean, arg6: boolean, arg7: boolean, arg8: boolean, arg9: LongSerializationPolicy, arg10: TypeAdapterFactory[])
+    // private calls: ThreadLocal<JavaMap<TypeToken<Object>, Gson$FutureTypeAdapter<Object>>>;
     // private constructorConstructor: ConstructorConstructor;
     // private deserializationContext: JsonDeserializationContext;
     // private factories: TypeAdapterFactory[];
@@ -32,7 +33,7 @@ export class Gson extends Object {
     // private prettyPrinting: boolean;
     // private serializationContext: JsonSerializationContext;
     // private serializeNulls: boolean;
-    // private typeTokenCache: Map<TypeToken<Object>, TypeAdapter<Object>>;
+    // private typeTokenCache: JavaMap<TypeToken<Object>, TypeAdapter<Object>>;
     // private checkValidFloatingPoint(arg0: number): void;
     // private doubleAdapter(arg0: boolean): TypeAdapter<Number>;
     // private floatAdapter(arg0: boolean): TypeAdapter<Number>;

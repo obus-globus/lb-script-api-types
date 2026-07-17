@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { ByteBuffer } from '../../java/nio/ByteBuffer.d.ts'
 import type { AlgorithmParameters } from '../../java/security/AlgorithmParameters.d.ts'
 import type { PrivateKey } from '../../java/security/PrivateKey.d.ts'
@@ -10,17 +11,17 @@ import type { Object } from '../../java/lang/Object.d.ts'
 export abstract class Signature extends SignatureSpi {
     static getInstance(paramarg0: string): Signature;
     static getInstance(paramarg0: string, paramarg1: string): Signature;
-    static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): Signature;
+    static getInstance(paramarg0: string, paramarg1: JavaMap<any, any>): Signature;
     constructor(arg0: string)
     readonly algorithm: string;
-    provider: { [key: string]: any };
+    provider: JavaMap<any, any>;
     // private state: number;
     chooseFirstProvider(): void;
     clone(): Object;
     getAlgorithm(): string;
     getParameter(arg0: string): Object;
     getParameters(): AlgorithmParameters;
-    getProvider(): { [key: string]: any };
+    getProvider(): JavaMap<any, any>;
     // private getProviderName(): string;
     initSign(arg0: PrivateKey): void;
     initSign(arg0: PrivateKey, arg1: SecureRandom): void;

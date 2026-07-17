@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
 import type { AnnotationElement } from '../../jdk/jfr/AnnotationElement.d.ts'
 import type { Event } from '../../jdk/jfr/Event.d.ts'
@@ -10,7 +11,7 @@ import type { Object } from '../../java/lang/Object.d.ts'
 export class EventType extends Object {
     static getEventType(paramarg0: Class<Event>): EventType;
     constructor(arg0: PlatformEventType)
-    // private cache: { [key: string]: ValueDescriptor };
+    // private cache: JavaMap<string, ValueDescriptor>;
     readonly label: string;
     // private platformEventType: PlatformEventType;
     getAnnotation<A extends Annotation>(arg0: Class<A>): A;

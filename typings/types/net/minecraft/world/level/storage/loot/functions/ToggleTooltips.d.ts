@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { DataComponentType } from '../../../../../../../net/minecraft/core/component/DataComponentType.d.ts'
@@ -7,8 +8,8 @@ import type { LootItemConditionalFunction } from '../../../../../../../net/minec
 import type { LootItemCondition } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
 export class ToggleTooltips extends LootItemConditionalFunction {
     static MAP_CODEC: MapCodec<ToggleTooltips>;
-    private constructor(predicates: LootItemCondition[], values: Map<DataComponentType<Object>, boolean>)
-    // private values: Map<DataComponentType<Object>, boolean>;
+    private constructor(predicates: LootItemCondition[], values: JavaMap<DataComponentType<Object>, boolean>)
+    // private values: JavaMap<DataComponentType<Object>, boolean>;
     codec(): MapCodec<ToggleTooltips>;
     run(itemStack: ItemStack, context: LootContext): ItemStack;
 }

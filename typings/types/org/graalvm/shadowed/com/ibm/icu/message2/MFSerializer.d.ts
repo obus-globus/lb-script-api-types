@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { StringBuilder } from '../../../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { MFDataModel$Attribute } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/message2/MFDataModel$Attribute.d.ts'
@@ -41,7 +42,7 @@ export class MFSerializer extends Object {
     // private localDeclarationToString(declaration: MFDataModel$LocalDeclaration): void;
     // private markupToString(markup: MFDataModel$Markup): void;
     // private messageToString(message: MFDataModel$Message): string;
-    // private optionsToString(options: { [key: string]: MFDataModel$Option }): void;
+    // private optionsToString(options: JavaMap<string, MFDataModel$Option>): void;
     // private patternMessageToString(message: MFDataModel$PatternMessage): void;
     // private patternToString(pattern: MFDataModel$Pattern): void;
     // private selectMessageToString(message: MFDataModel$SelectMessage): void;

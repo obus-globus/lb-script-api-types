@@ -1,10 +1,11 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { DirectedGraphConnections$NodeConnection } from '../../../../com/google/common/graph/DirectedGraphConnections$NodeConnection.d.ts'
 import type { GraphConnections } from '../../../../com/google/common/graph/GraphConnections.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class DirectedGraphConnections<N extends unknown, V extends unknown> extends Object implements GraphConnections<N, V> {
-    private constructor(adjacentNodeValues: Map<N, Object>, orderedNodeConnections: DirectedGraphConnections$NodeConnection<N>[], predecessorCount: number, successorCount: number)
-    // private adjacentNodeValues: Map<N, Object>;
+    private constructor(adjacentNodeValues: JavaMap<N, Object>, orderedNodeConnections: DirectedGraphConnections$NodeConnection<N>[], predecessorCount: number, successorCount: number)
+    // private adjacentNodeValues: JavaMap<N, Object>;
     // private orderedNodeConnections: DirectedGraphConnections$NodeConnection<N>[];
     // private predecessorCount: number;
     // private successorCount: number;

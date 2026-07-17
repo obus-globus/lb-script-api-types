@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { BaseLocale } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/locale/BaseLocale.d.ts'
 import type { InternalLocaleBuilder$CaseInsensitiveChar } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/locale/InternalLocaleBuilder$CaseInsensitiveChar.d.ts'
@@ -6,12 +7,12 @@ import type { LanguageTag } from '../../../../../../../../org/graalvm/shadowed/c
 import type { LocaleExtensions } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/locale/LocaleExtensions.d.ts'
 export class InternalLocaleBuilder extends Object {
     constructor()
-    // private _extensions: Map<InternalLocaleBuilder$CaseInsensitiveChar, string>;
+    // private _extensions: JavaMap<InternalLocaleBuilder$CaseInsensitiveChar, string>;
     // private _language: string;
     // private _region: string;
     // private _script: string;
     // private _uattributes: InternalLocaleBuilder$CaseInsensitiveString[];
-    // private _ukeywords: Map<InternalLocaleBuilder$CaseInsensitiveString, string>;
+    // private _ukeywords: JavaMap<InternalLocaleBuilder$CaseInsensitiveString, string>;
     // private _variant: string;
     addUnicodeLocaleAttribute(attribute: string): InternalLocaleBuilder;
     // private checkVariants(variants: string, sep: string): number;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { RandomAccessFile } from '../../../java/io/RandomAccessFile.d.ts'
 import type { BitSet } from '../../../java/util/BitSet.d.ts'
 import type { ZipCoder } from '../../../java/util/zip/ZipCoder.d.ts'
@@ -14,7 +15,7 @@ export class ZipFile$Source extends Object {
     // private locpos: number;
     // private manifestNum: number;
     // private manifestPos: number;
-    // private metaVersions: { [key: number]: BitSet };
+    // private metaVersions: JavaMap<number, BitSet>;
     // private refs: number;
     // private signatureMetaNames: number[];
     // private startsWithLoc: boolean;

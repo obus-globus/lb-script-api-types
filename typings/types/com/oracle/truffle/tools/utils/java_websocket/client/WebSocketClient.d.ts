@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { AbstractWebSocket } from '../../../../../../../com/oracle/truffle/tools/utils/java_websocket/AbstractWebSocket.d.ts'
 import type { WebSocket } from '../../../../../../../com/oracle/truffle/tools/utils/java_websocket/WebSocket.d.ts'
 import type { WebSocketImpl } from '../../../../../../../com/oracle/truffle/tools/utils/java_websocket/WebSocketImpl.d.ts'
@@ -28,9 +29,9 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export abstract class WebSocketClient extends AbstractWebSocket implements WebSocket, Runnable {
     constructor(arg0: URI)
     constructor(arg0: URI, arg1: Draft)
-    constructor(arg0: URI, arg1: Draft, arg2: { [key: string]: string })
-    constructor(arg0: URI, arg1: Draft, arg2: { [key: string]: string }, arg3: number)
-    constructor(arg0: URI, arg1: { [key: string]: string })
+    constructor(arg0: URI, arg1: Draft, arg2: JavaMap<string, string>)
+    constructor(arg0: URI, arg1: Draft, arg2: JavaMap<string, string>, arg3: number)
+    constructor(arg0: URI, arg1: JavaMap<string, string>)
     // private closeLatch: CountDownLatch;
     // private connectLatch: CountDownLatch;
     // private connectReadThread: Thread;
@@ -38,7 +39,7 @@ export abstract class WebSocketClient extends AbstractWebSocket implements WebSo
     readonly dnsResolver: DnsResolver;
     readonly draft: Draft;
     // private engine: WebSocketImpl;
-    // private headers: { [key: string]: string };
+    // private headers: JavaMap<string, string>;
     // private ostream: OutputStream;
     readonly proxy: Proxy;
     readonly socket: Socket;

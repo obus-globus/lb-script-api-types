@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Predicate } from '../../../../com/google/common/base/Predicate.d.ts'
 import type { Range } from '../../../../com/google/common/collect/Range.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
@@ -32,7 +33,7 @@ export class Sets extends Object {
     static newLinkedHashSet<E extends unknown>(): E[];
     static newLinkedHashSet<E extends unknown>(paramelements: E[]): E[];
     static newLinkedHashSetWithExpectedSize<E extends unknown>(paramexpectedSize: number): E[];
-    static newSetFromMap<E extends unknown>(parammap: Map<E, boolean>): E[];
+    static newSetFromMap<E extends unknown>(parammap: JavaMap<E, boolean>): E[];
     static newTreeSet<E extends Comparable<Object>>(): E[];
     static newTreeSet<E extends Comparable<Object>>(paramelements: E[]): E[];
     static newTreeSet<E extends unknown>(paramcomparator: (param0: Object, param1: Object) => number): E[];

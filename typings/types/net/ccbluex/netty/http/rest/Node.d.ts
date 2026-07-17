@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { FullHttpResponse } from '../../../../../io/netty/handler/codec/http/FullHttpResponse.d.ts'
 import type { HttpMethod } from '../../../../../io/netty/handler/codec/http/HttpMethod.d.ts'
 import type { File } from '../../../../../java/io/File.d.ts'
@@ -9,7 +10,7 @@ import type { RequestHandler } from '../../../../../net/ccbluex/netty/http/model
 import type { RoutingContext } from '../../../../../net/ccbluex/netty/http/routing/RoutingContext.d.ts'
 export class Node extends Object {
     constructor(part: string)
-    // private handlers: Map<HttpMethod, (param0: RoutingContext) => void>;
+    // private handlers: JavaMap<HttpMethod, (param0: RoutingContext) => void>;
     /*not mapped: */ isExecutable(): boolean;
     // private isParam: boolean;
     /*not mapped: */ isParam(): boolean;

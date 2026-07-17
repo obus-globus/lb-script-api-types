@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { GpuBufferSlice } from '../../../../../com/mojang/blaze3d/buffers/GpuBufferSlice.d.ts'
 import type { RenderTarget } from '../../../../../com/mojang/blaze3d/pipeline/RenderTarget.d.ts'
 import type { ByteBufferBuilder } from '../../../../../com/mojang/blaze3d/vertex/ByteBufferBuilder.d.ts'
@@ -12,7 +13,7 @@ export class BatchCollector extends Object {
     // private appendNewBuilder: (param0: Object) => BatchCollector$PendingDraw;
     // private bufferAllocatorInUse: ByteBufferBuilder[];
     // private builtBuffers: BatchCollector$BuiltDraw[];
-    // private consolidatedDraws: Map<RenderDrawKey, BatchCollector$PendingDraw>;
+    // private consolidatedDraws: JavaMap<RenderDrawKey, BatchCollector$PendingDraw>;
     // private drawOrder: BatchCollector$PendingDraw[];
     // private clearBuilders(): void;
     flush(renderTarget: RenderTarget, dynamicTransforms: GpuBufferSlice | null): void;

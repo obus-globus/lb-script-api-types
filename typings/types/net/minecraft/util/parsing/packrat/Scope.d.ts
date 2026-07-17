@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Atom } from '../../../../../net/minecraft/util/parsing/packrat/Atom.d.ts'
 export class Scope extends Object {
@@ -14,7 +15,7 @@ export class Scope extends Object {
     getOrThrow<T extends unknown>(name: Atom<T>): T;
     // private getPreviousMarkerIndex(markerKeyIndex: number): number;
     hasOnlySingleFrame(): boolean;
-    lastFrame(): Map<Atom<Object>, Object | null>;
+    lastFrame(): JavaMap<Atom<Object>, Object | null>;
     mergeFrame(): void;
     popFrame(): void;
     pushFrame(): void;

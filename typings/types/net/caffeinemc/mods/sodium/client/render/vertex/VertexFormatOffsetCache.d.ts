@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { VertexFormat } from '../../../../../../../com/mojang/blaze3d/vertex/VertexFormat.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class VertexFormatOffsetCache extends Object {
@@ -9,6 +10,6 @@ export class VertexFormatOffsetCache extends Object {
     static UV: number;
     static getInstance(): VertexFormatOffsetCache;
     constructor()
-    // private offsetCache: Map<VertexFormat, number[]>;
+    // private offsetCache: JavaMap<VertexFormat, number[]>;
     getCachedOffsets(arg0: VertexFormat): number[];
 }

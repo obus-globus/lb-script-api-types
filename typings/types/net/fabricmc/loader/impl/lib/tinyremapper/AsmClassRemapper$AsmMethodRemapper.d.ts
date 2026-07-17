@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Pattern } from '../../../../../../java/util/regex/Pattern.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { AsmRemapper } from '../../../../../../net/fabricmc/loader/impl/lib/tinyremapper/AsmRemapper.d.ts'
@@ -14,7 +15,7 @@ export class AsmClassRemapper$AsmMethodRemapper extends MethodRemapper {
     // private inferNameFromSameLvIndex: boolean;
     // private invalidLvNamePattern: Pattern;
     // private methodNode: MethodNode;
-    // private nameCounts: { [key: string]: number };
+    // private nameCounts: JavaMap<string, number>;
     // private output: MethodVisitor;
     // private owner: string;
     // private renameInvalidLocals: boolean;

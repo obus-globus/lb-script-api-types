@@ -1,9 +1,10 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { LithiumConfig } from '../../../../../../net/caffeinemc/mods/lithium/common/config/LithiumConfig.d.ts'
 import type { Logger } from '../../../../../../org/apache/logging/log4j/Logger.d.ts'
 export class Option extends Object {
     constructor(arg0: string, arg1: boolean, arg2: boolean)
-    // private dependencies: { [key: string]: any };
+    // private dependencies: JavaMap<any, any>;
     readonly enabled: boolean;
     readonly modDefined: string[];
     readonly name: string;

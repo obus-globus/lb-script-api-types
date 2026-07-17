@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { CurrencyData$CurrencyFormatInfo } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/CurrencyData$CurrencyFormatInfo.d.ts'
 import type { CurrencyData$CurrencySpacingInfo } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/CurrencyData$CurrencySpacingInfo.d.ts'
@@ -12,5 +13,5 @@ export abstract class CurrencyData$CurrencyDisplayInfo extends CurrencyDisplayNa
     constructor()
     getFormatInfo(isoCode: string): CurrencyData$CurrencyFormatInfo;
     getSpacingInfo(): CurrencyData$CurrencySpacingInfo;
-    getUnitPatterns(): { [key: string]: string };
+    getUnitPatterns(): JavaMap<string, string>;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Application } from '../../../../ai/djl/Application.d.ts'
 import type { Device } from '../../../../ai/djl/Device.d.ts'
 import type { Block } from '../../../../ai/djl/nn/Block.d.ts'
@@ -13,34 +14,34 @@ export class Criteria<I extends unknown, O extends unknown> extends Object {
     static builder(): Criteria$Builder<Object, Object>;
     constructor(arg0: Criteria$Builder<I, O>)
     readonly application: Application;
-    readonly arguments: { [key: string]: Object };
+    readonly arguments: JavaMap<string, Object>;
     readonly artifactId: string;
     readonly block: Block;
     readonly device: Device;
     readonly engine: string;
     // private factory: TranslatorFactory;
-    readonly filters: { [key: string]: string };
+    readonly filters: JavaMap<string, string>;
     readonly groupId: string;
     readonly inputClass: Class<I>;
     readonly modelName: string;
     readonly modelZoo: ModelZoo;
-    readonly options: { [key: string]: string };
+    readonly options: JavaMap<string, string>;
     readonly outputClass: Class<O>;
     readonly progress: Progress;
     // private resolvedLoaders: ModelLoader[];
     downloadModel(): void;
     getApplication(): Application;
-    getArguments(): { [key: string]: Object };
+    getArguments(): JavaMap<string, Object>;
     getArtifactId(): string;
     getBlock(): Block;
     getDevice(): Device;
     getEngine(): string;
-    getFilters(): { [key: string]: string };
+    getFilters(): JavaMap<string, string>;
     getGroupId(): string;
     getInputClass(): Class<I>;
     getModelName(): string;
     getModelZoo(): ModelZoo;
-    getOptions(): { [key: string]: string };
+    getOptions(): JavaMap<string, string>;
     getOutputClass(): Class<O>;
     getProgress(): Progress;
     getTranslatorFactory(): TranslatorFactory;

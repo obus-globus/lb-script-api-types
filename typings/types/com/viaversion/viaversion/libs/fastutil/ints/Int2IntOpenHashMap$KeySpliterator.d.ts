@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Int2IntOpenHashMap$MapSpliterator } from '../../../../../../com/viaversion/viaversion/libs/fastutil/ints/Int2IntOpenHashMap$MapSpliterator.d.ts'
 import type { IntComparator } from '../../../../../../com/viaversion/viaversion/libs/fastutil/ints/IntComparator.d.ts'
 import type { IntConsumer } from '../../../../../../com/viaversion/viaversion/libs/fastutil/ints/IntConsumer.d.ts'
@@ -13,6 +14,6 @@ export class Int2IntOpenHashMap$KeySpliterator extends Int2IntOpenHashMap$MapSpl
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: { [key: string]: any })
-    constructor(null_: { [key: string]: any }, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
+    constructor(null_: JavaMap<any, any>)
+    constructor(null_: JavaMap<any, any>, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
 }

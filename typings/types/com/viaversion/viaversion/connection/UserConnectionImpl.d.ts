@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ProtocolInfo } from '../../../../com/viaversion/viaversion/api/connection/ProtocolInfo.d.ts'
 import type { StorableObject } from '../../../../com/viaversion/viaversion/api/connection/StorableObject.d.ts'
 import type { UserConnection } from '../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
@@ -26,15 +27,15 @@ export class UserConnectionImpl extends Object implements UserConnection {
     readonly active: boolean;
     readonly channel: Channel;
     readonly clientSide: boolean;
-    // private clientWorlds: Map<Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, ClientWorld>;
-    readonly entityTrackers: Map<Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, EntityTracker>;
+    // private clientWorlds: JavaMap<Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, ClientWorld>;
+    readonly entityTrackers: JavaMap<Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, EntityTracker>;
     readonly id: number;
-    // private itemHashers: Map<Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, ItemHasher>;
+    // private itemHashers: JavaMap<Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, ItemHasher>;
     readonly packetTracker: PacketTracker;
     // private passthroughTokens: UUID[];
     readonly pendingDisconnect: boolean;
     readonly protocolInfo: ProtocolInfo;
-    readonly storedObjects: Map<Class<Object>, StorableObject>;
+    readonly storedObjects: JavaMap<Class<Object>, StorableObject>;
     addClientWorld(arg0: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, arg1: ClientWorld): void;
     addEntityTracker(arg0: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, arg1: EntityTracker): void;
     addItemHasher(arg0: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, arg1: ItemHasher): void;
@@ -58,7 +59,7 @@ export class UserConnectionImpl extends Object implements UserConnection {
     getItemHasher<T extends ItemHasher>(arg0: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>): T;
     getPacketTracker(): PacketTracker;
     getProtocolInfo(): ProtocolInfo;
-    getStoredObjects(): Map<Class<Object>, StorableObject>;
+    getStoredObjects(): JavaMap<Class<Object>, StorableObject>;
     has(arg0: Class<StorableObject>): boolean;
     hashCode(): number;
     isActive(): boolean;

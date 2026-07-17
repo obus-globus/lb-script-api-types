@@ -1,8 +1,9 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class MapIteratorCache<K extends unknown, V extends unknown> extends Object {
-    constructor(backingMap: Map<K, V>)
-    // private backingMap: Map<K, V>;
+    constructor(backingMap: JavaMap<K, V>)
+    // private backingMap: JavaMap<K, V>;
     // private cacheEntry: Map$Entry<K, V>;
     clear(): void;
     clearCache(): void;

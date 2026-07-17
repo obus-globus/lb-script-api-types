@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Closeable } from '../../../../../../java/io/Closeable.d.ts'
 import type { DataOutput } from '../../../../../../java/io/DataOutput.d.ts'
 import type { File } from '../../../../../../java/io/File.d.ts'
@@ -22,7 +23,7 @@ export class SevenZOutputFile extends Object implements Closeable {
     constructor(arg0: SeekableByteChannel)
     constructor(arg0: SeekableByteChannel, arg1: string[])
     // private additionalCountingStreams: CountingOutputStream[];
-    // private additionalSizes: Map<SevenZArchiveEntry, number[]>;
+    // private additionalSizes: JavaMap<SevenZArchiveEntry, number[]>;
     // private aes256Options: AES256Options;
     // private channel: SeekableByteChannel;
     // private compressedCrc32: CRC32;

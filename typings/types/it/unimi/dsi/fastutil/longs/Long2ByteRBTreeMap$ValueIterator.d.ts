@@ -1,7 +1,8 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ByteListIterator } from '../../../../../it/unimi/dsi/fastutil/bytes/ByteListIterator.d.ts'
 import type { Long2ByteRBTreeMap$TreeIterator } from '../../../../../it/unimi/dsi/fastutil/longs/Long2ByteRBTreeMap$TreeIterator.d.ts'
 export class Long2ByteRBTreeMap$ValueIterator extends Long2ByteRBTreeMap$TreeIterator implements ByteListIterator {
-    private constructor(null_: { [key: string]: any })
+    private constructor(null_: JavaMap<any, any>)
     add(arg0: number): void;
     next(): number;
     nextByte(): number;

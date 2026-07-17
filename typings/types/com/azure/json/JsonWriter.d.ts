@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { JsonSerializable } from '../../../com/azure/json/JsonSerializable.d.ts'
 import type { JsonWriteContext } from '../../../com/azure/json/JsonWriteContext.d.ts'
 import type { WriteValueCallback } from '../../../com/azure/json/WriteValueCallback.d.ts'
@@ -31,11 +32,11 @@ export abstract class JsonWriter extends Object implements Closeable {
     writeJsonField(arg0: string, arg1: JsonSerializable<any>): JsonWriter;
     writeLong(arg0: number): JsonWriter;
     writeLongField(arg0: string, arg1: number): JsonWriter;
-    writeMap<T extends unknown>(arg0: { [key: string]: T }, arg1: (param0: JsonWriter, param1: T) => void): JsonWriter;
-    writeMap<T extends unknown>(arg0: { [key: string]: T }, arg1: (param0: JsonWriter, param1: T) => void, arg2: boolean): JsonWriter;
-    writeMapField<T extends unknown>(arg0: string, arg1: { [key: string]: T }, arg2: (param0: JsonWriter, param1: T) => void): JsonWriter;
-    writeMapField<T extends unknown>(arg0: string, arg1: { [key: string]: T }, arg2: (param0: JsonWriter, param1: T) => void, arg3: boolean): JsonWriter;
-    // private writeMapInternal<T extends unknown>(arg0: string, arg1: { [key: string]: T }, arg2: (param0: JsonWriter, param1: T) => void, arg3: boolean): JsonWriter;
+    writeMap<T extends unknown>(arg0: JavaMap<string, T>, arg1: (param0: JsonWriter, param1: T) => void): JsonWriter;
+    writeMap<T extends unknown>(arg0: JavaMap<string, T>, arg1: (param0: JsonWriter, param1: T) => void, arg2: boolean): JsonWriter;
+    writeMapField<T extends unknown>(arg0: string, arg1: JavaMap<string, T>, arg2: (param0: JsonWriter, param1: T) => void): JsonWriter;
+    writeMapField<T extends unknown>(arg0: string, arg1: JavaMap<string, T>, arg2: (param0: JsonWriter, param1: T) => void, arg3: boolean): JsonWriter;
+    // private writeMapInternal<T extends unknown>(arg0: string, arg1: JavaMap<string, T>, arg2: (param0: JsonWriter, param1: T) => void, arg3: boolean): JsonWriter;
     writeNull(): JsonWriter;
     writeNullField(arg0: string): JsonWriter;
     writeNullableField<T extends unknown>(arg0: string, arg1: T, arg2: (param0: JsonWriter, param1: T) => void): JsonWriter;

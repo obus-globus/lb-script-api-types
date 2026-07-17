@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { AccessFlag } from '../../../java/lang/reflect/AccessFlag.d.ts'
 import type { AnnotatedElement } from '../../../java/lang/reflect/AnnotatedElement.d.ts'
@@ -8,7 +9,7 @@ import type { Annotation } from '../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class Parameter extends Object implements AnnotatedElement {
     constructor(arg0: string, arg1: number, arg2: Executable, arg3: number)
-    readonly declaredAnnotations: Map<Class<Annotation>, Annotation>;
+    readonly declaredAnnotations: JavaMap<Class<Annotation>, Annotation>;
     // private executable: Executable;
     // private index: number;
     readonly modifiers: number;
@@ -16,7 +17,7 @@ export class Parameter extends Object implements AnnotatedElement {
     // private parameterClassCache: Class<Object>;
     // private parameterTypeCache: Type;
     accessFlags(): AccessFlag[];
-    // private declaredAnnotations(): Map<Class<Annotation>, Annotation>;
+    // private declaredAnnotations(): JavaMap<Class<Annotation>, Annotation>;
     equals(arg0: Object | null): boolean;
     getAnnotatedType(): AnnotatedType;
     getAnnotation<T extends Annotation>(arg0: Class<T>): T;

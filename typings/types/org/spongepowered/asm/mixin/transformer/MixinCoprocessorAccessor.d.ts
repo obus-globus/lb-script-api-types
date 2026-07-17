@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ClassNode } from '../../../../../org/objectweb/asm/tree/ClassNode.d.ts'
 import type { MethodNode } from '../../../../../org/objectweb/asm/tree/MethodNode.d.ts'
 import type { ClassInfo } from '../../../../../org/spongepowered/asm/mixin/transformer/ClassInfo.d.ts'
@@ -7,7 +8,7 @@ import type { MixinCoprocessor$ProcessResult } from '../../../../../org/spongepo
 import type { MixinInfo } from '../../../../../org/spongepowered/asm/mixin/transformer/MixinInfo.d.ts'
 export class MixinCoprocessorAccessor extends MixinCoprocessor {
     constructor(arg0: string)
-    // private accessorMixins: { [key: string]: MixinInfo };
+    // private accessorMixins: JavaMap<string, MixinInfo>;
     // private sessionId: string;
     couldTransform(arg0: string): boolean;
     // private getAccessorMethod(arg0: MixinInfo, arg1: MethodNode, arg2: ClassInfo): ClassInfo$Method;

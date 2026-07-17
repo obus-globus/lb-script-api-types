@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
 import type { Configuration } from '../../../../../../org/apache/logging/log4j/core/config/Configuration.d.ts'
@@ -13,8 +14,8 @@ export class MarkerPatternSelector extends Object implements LocationAware, Patt
     constructor(properties: PatternMatch[], defaultPattern: string, alwaysWriteExceptions: boolean, noConsoleNoAnsi: boolean, config: Configuration)
     // private defaultFormatters: PatternFormatter[];
     // private defaultPattern: string;
-    // private formatterMap: { [key: string]: PatternFormatter[] };
-    // private patternMap: { [key: string]: string };
+    // private formatterMap: JavaMap<string, PatternFormatter[]>;
+    // private patternMap: JavaMap<string, string>;
     // private requiresLocation: boolean;
     getFormatters(event: LogEvent): PatternFormatter[];
     requiresLocation(): boolean;

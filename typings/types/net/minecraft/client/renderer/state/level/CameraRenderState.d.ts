@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { FabricRenderState } from '../../../../../../net/fabricmc/fabric/api/client/rendering/v1/FabricRenderState.d.ts'
 import type { RenderStateDataKey } from '../../../../../../net/fabricmc/fabric/api/client/rendering/v1/RenderStateDataKey.d.ts'
@@ -24,7 +25,7 @@ export class CameraRenderState extends Object implements FabricRenderState {
     orientation: Quaternionf;
     pos: Vec3;
     projectionMatrix: Matrix4f;
-    // private renderStateData: Map<Object | null, Object | null>;
+    // private renderStateData: JavaMap<Object | null, Object | null>;
     smartCull: boolean;
     viewRotationMatrix: Matrix4f;
     xRot: number;

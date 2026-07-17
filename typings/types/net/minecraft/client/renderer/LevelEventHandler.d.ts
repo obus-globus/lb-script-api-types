@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Minecraft } from '../../../../net/minecraft/client/Minecraft.d.ts'
 import type { ClientLevel } from '../../../../net/minecraft/client/multiplayer/ClientLevel.d.ts'
@@ -12,7 +13,7 @@ export class LevelEventHandler extends Object {
     constructor(minecraft: Minecraft, level: ClientLevel)
     // private level: ClientLevel;
     // private minecraft: Minecraft;
-    // private playingJukeboxSongs: Map<BlockPos, SoundInstance>;
+    // private playingJukeboxSongs: JavaMap<BlockPos, SoundInstance>;
     globalLevelEvent(type: number, pos: BlockPos, data: number): void;
     levelEvent(eventType: number, pos: BlockPos, data: number): void;
     // private notifyNearbyEntities(level: Level, pos: BlockPos, isPlaying: boolean): void;

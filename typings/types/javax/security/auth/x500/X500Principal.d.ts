@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { ObjectInputStream } from '../../../../java/io/ObjectInputStream.d.ts'
 import type { ObjectOutputStream } from '../../../../java/io/ObjectOutputStream.d.ts'
@@ -13,14 +14,14 @@ export class X500Principal extends Object implements Serializable, Principal {
     constructor(arg0: InputStream)
     constructor(arg0: number[])
     constructor(arg0: string)
-    constructor(arg0: string, arg1: { [key: string]: string })
+    constructor(arg0: string, arg1: JavaMap<string, string>)
     constructor(arg0: X500Name)
     // private thisX500Name: X500Name;
     equals(arg0: Object | null): boolean;
     getEncoded(): number[];
     getName(): string;
     getName(arg0: string): string;
-    getName(arg0: string, arg1: { [key: string]: string }): string;
+    getName(arg0: string, arg1: JavaMap<string, string>): string;
     hashCode(): number;
     implies(arg0: Subject): boolean;
     // private readObject(arg0: ObjectInputStream): void;

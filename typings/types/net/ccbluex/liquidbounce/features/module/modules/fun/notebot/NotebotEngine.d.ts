@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Continuation } from '../../../../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { ModuleNotebot$NotebotStageHandler } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/fun/notebot/ModuleNotebot$NotebotStageHandler.d.ts'
@@ -10,7 +11,7 @@ export class NotebotEngine extends Object {
     constructor(songData: SongData, blocksAndRequirements: NotebotScanner$BlocksAndRequirements)
     readonly blocksAndRequirements: NotebotScanner$BlocksAndRequirements;
     // private currentStageHandler: ModuleNotebot$NotebotStageHandler;
-    // private notebotTrackerMap: Map<BlockPos, NoteBlockTracker>;
+    // private notebotTrackerMap: JavaMap<BlockPos, NoteBlockTracker>;
     readonly songData: SongData;
     // private ticksToWait: number | null;
     changeStage(handler: ModuleNotebot$NotebotStageHandler): void;

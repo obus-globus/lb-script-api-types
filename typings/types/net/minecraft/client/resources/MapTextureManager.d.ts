@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { AutoCloseable } from '../../../../java/lang/AutoCloseable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { TextureManager } from '../../../../net/minecraft/client/renderer/texture/TextureManager.d.ts'
@@ -9,9 +10,9 @@ import type { MapAtlasTexture } from '../../../../net/raphimc/immediatelyfast/fe
 import type { IMapTextureManager } from '../../../../net/raphimc/immediatelyfast/injection/interfaces/IMapTextureManager.d.ts'
 export class MapTextureManager extends Object implements AutoCloseable, IMapTextureManager {
     constructor(textureManager: TextureManager)
-    // private immediatelyFast$mapAtlasTextures: { [key: string]: any };
-    // private immediatelyFast$mapIdToAtlasMapping: { [key: string]: any };
-    // private maps: { [key: string]: any };
+    // private immediatelyFast$mapAtlasTextures: JavaMap<any, any>;
+    // private immediatelyFast$mapIdToAtlasMapping: JavaMap<any, any>;
+    // private maps: JavaMap<any, any>;
     // private textureManager: TextureManager;
     close(): void;
     // private getOrCreateMapInstance(id: MapId, data: MapItemSavedData): MapTextureManager$MapInstance;

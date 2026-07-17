@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { LibGraalIsolate$Cleaner } from '../../../../../../com/oracle/truffle/runtime/hotspot/libgraal/LibGraalIsolate$Cleaner.d.ts'
 import type { LibGraalObject } from '../../../../../../com/oracle/truffle/runtime/hotspot/libgraal/LibGraalObject.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
@@ -13,7 +14,7 @@ export class LibGraalIsolate extends Object {
     // private cleanersQueue: ReferenceQueue<LibGraalObject>;
     // private destroyed: boolean;
     readonly id: number;
-    // private singletons: Map<Class<Object>, Object>;
+    // private singletons: JavaMap<Class<Object>, Object>;
     // private cleanHandles(): void;
     getId(): number;
     getSingleton<T extends unknown>(key: Class<T>, supplier: () => T): T;

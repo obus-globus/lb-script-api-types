@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
 import type { BandSet } from '../../../../../../org/apache/commons/compress/harmony/unpack200/BandSet.d.ts'
 import type { Segment } from '../../../../../../org/apache/commons/compress/harmony/unpack200/Segment.d.ts'
@@ -43,28 +44,28 @@ export class CpBands extends BandSet {
     // private cpStringInts: number[];
     readonly cpUTF8: string[];
     // private descrOffset: number;
-    // private descriptorsToCPNameAndTypes: { [key: string]: CPNameAndType };
+    // private descriptorsToCPNameAndTypes: JavaMap<string, CPNameAndType>;
     // private doubleOffset: number;
-    // private doublesToCPDoubles: { [key: number]: CPDouble };
+    // private doublesToCPDoubles: JavaMap<number, CPDouble>;
     // private fieldOffset: number;
     // private floatOffset: number;
-    // private floatsToCPFloats: { [key: number]: CPFloat };
+    // private floatsToCPFloats: JavaMap<number, CPFloat>;
     // private imethodOffset: number;
     // private intOffset: number;
-    // private integersToCPIntegers: { [key: number]: CPInteger };
+    // private integersToCPIntegers: JavaMap<number, CPInteger>;
     // private longOffset: number;
-    // private longsToCPLongs: { [key: number]: CPLong };
-    // private mapClass: { [key: string]: number };
-    // private mapDescriptor: { [key: string]: number };
-    // private mapSignature: { [key: string]: number };
-    // private mapUTF8: { [key: string]: number };
+    // private longsToCPLongs: JavaMap<number, CPLong>;
+    // private mapClass: JavaMap<string, number>;
+    // private mapDescriptor: JavaMap<string, number>;
+    // private mapSignature: JavaMap<string, number>;
+    // private mapUTF8: JavaMap<string, number>;
     // private methodOffset: number;
     // private pool: SegmentConstantPool;
     // private signatureOffset: number;
     // private stringOffset: number;
-    // private stringsToCPClass: { [key: string]: CPClass };
-    // private stringsToCPStrings: { [key: string]: CPString };
-    // private stringsToCPUTF8: { [key: string]: CPUTF8 };
+    // private stringsToCPClass: JavaMap<string, CPClass>;
+    // private stringsToCPStrings: JavaMap<string, CPString>;
+    // private stringsToCPUTF8: JavaMap<string, CPUTF8>;
     cpClassValue(arg0: number): CPClass;
     cpClassValue(arg0: string): CPClass;
     cpDoubleValue(arg0: number): CPDouble;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { ILoggerFactory } from '../../../org/slf4j/ILoggerFactory.d.ts'
 import type { Logger } from '../../../org/slf4j/Logger.d.ts'
@@ -6,7 +7,7 @@ import type { SubstituteLogger } from '../../../org/slf4j/helpers/SubstituteLogg
 export class SubstituteLoggerFactory extends Object implements ILoggerFactory {
     constructor()
     readonly eventQueue: SubstituteLoggingEvent[];
-    readonly loggers: { [key: string]: SubstituteLogger };
+    readonly loggers: JavaMap<string, SubstituteLogger>;
     // private postInitialization: boolean;
     clear(): void;
     getEventQueue(): SubstituteLoggingEvent[];

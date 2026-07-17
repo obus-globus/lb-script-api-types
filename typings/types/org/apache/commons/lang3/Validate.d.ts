@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -34,8 +35,8 @@ export class Validate extends Object {
     static notEmpty<T extends CharSequence>(paramarg0: T, paramarg1: string, ...paramarg2: Object[]): T;
     static notEmpty<T extends Object[]>(paramarg0: T): T;
     static notEmpty<T extends Object[]>(paramarg0: T, paramarg1: string, ...paramarg2: Object[]): T;
-    static notEmpty<T extends Map<Object, Object>>(paramarg0: T): T;
-    static notEmpty<T extends Map<Object, Object>>(paramarg0: T, paramarg1: string, ...paramarg2: Object[]): T;
+    static notEmpty<T extends JavaMap<Object, Object>>(paramarg0: T): T;
+    static notEmpty<T extends JavaMap<Object, Object>>(paramarg0: T, paramarg1: string, ...paramarg2: Object[]): T;
     static notEmpty<T extends unknown>(paramarg0: T[]): T[];
     static notEmpty<T extends unknown>(paramarg0: T[], paramarg1: string, ...paramarg2: Object[]): T[];
     static notNaN(paramarg0: number): void;

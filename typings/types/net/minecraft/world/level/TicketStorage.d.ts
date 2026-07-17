@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Pair } from '../../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { BiConsumer } from '../../../../java/util/function/BiConsumer.d.ts'
@@ -16,11 +17,11 @@ export class TicketStorage extends SavedData {
     static TYPE: SavedDataType<TicketStorage>;
     constructor()
     // private chunksWithForcedTickets: (Object | null)[];
-    // private deactivatedTickets: { [key: string]: any };
+    // private deactivatedTickets: JavaMap<any, any>;
     readonly loadingChunkUpdatedListener: (param0: number, param1: number, param2: boolean) => void;
-    // private positionsWithExpiringTicket: { [key: string]: any };
+    // private positionsWithExpiringTicket: JavaMap<any, any>;
     readonly simulationChunkUpdatedListener: (param0: number, param1: number, param2: boolean) => void;
-    // private tickets: { [key: string]: any };
+    // private tickets: JavaMap<any, any>;
     activateAllDeactivatedTickets(): void;
     addTicket(key: number, ticket: Ticket): boolean;
     addTicket(ticket: Ticket, chunkPos: ChunkPos): void;
@@ -39,7 +40,7 @@ export class TicketStorage extends SavedData {
     purgeStaleTickets(chunkMap: ChunkMap): void;
     removeTicket(key: number, ticket: Ticket): boolean;
     removeTicket(ticket: Ticket, chunkPos: ChunkPos): void;
-    removeTicketIf(predicate: TicketStorage$TicketPredicate, removedTickets: { [key: string]: any }): void;
+    removeTicketIf(predicate: TicketStorage$TicketPredicate, removedTickets: JavaMap<any, any>): void;
     removeTicketWithRadius(type: TicketType, chunkPos: ChunkPos, radius: number): void;
     replaceTicketLevelOfType(newLevel: number, ticketType: TicketType): void;
     setLoadingChunkUpdatedListener(loadingChunkUpdatedListener: (param0: number, param1: number, param2: boolean) => void): void;

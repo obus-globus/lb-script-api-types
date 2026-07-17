@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ModuleCategory } from '../../../../../net/ccbluex/liquidbounce/features/module/ModuleCategory.d.ts'
 export class ModuleCategories extends Object {
@@ -21,7 +22,7 @@ export class ModuleCategories extends Object {
     RENDER: ModuleCategory;
     WORLD: ModuleCategory;
     /*not mapped: */ getEntries(): ModuleCategory[];
-    // private registry: { [key: string]: ModuleCategory };
+    // private registry: JavaMap<string, ModuleCategory>;
     byName(name: string): ModuleCategory | null;
     // private register(category: ModuleCategory): ModuleCategory;
 }

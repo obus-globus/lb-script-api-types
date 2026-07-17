@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Stream } from '../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -18,10 +19,10 @@ export class ChunkGeneratorStructureState extends Object {
     // private concentricRingsSeed: number;
     // private hasGeneratedPositions: boolean;
     readonly levelSeed: number;
-    // private placementsForStructure: Map<Structure, StructurePlacement[]>;
+    // private placementsForStructure: JavaMap<Structure, StructurePlacement[]>;
     // private possibleStructureSets: Holder<StructureSet>[];
     // private randomState: RandomState;
-    // private ringPositions: Map<ConcentricRingsStructurePlacement, CompletableFuture<ChunkPos[]>>;
+    // private ringPositions: JavaMap<ConcentricRingsStructurePlacement, CompletableFuture<ChunkPos[]>>;
     ensureStructuresGenerated(): void;
     // private generatePositions(): void;
     // private generateRingPositions(structureSet: Holder<StructureSet>, placement: ConcentricRingsStructurePlacement): CompletableFuture<ChunkPos[]>;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { FieldNode } from '../../../../../org/objectweb/asm/tree/FieldNode.d.ts'
 import type { MethodNode } from '../../../../../org/objectweb/asm/tree/MethodNode.d.ts'
 import type { IActivityContext$IActivity } from '../../../../../org/spongepowered/asm/mixin/extensibility/IActivityContext$IActivity.d.ts'
@@ -9,7 +10,7 @@ import type { TargetClassContext } from '../../../../../org/spongepowered/asm/mi
 import type { Clinit } from '../../../../../org/spongepowered/asm/mixin/transformer/struct/Clinit.d.ts'
 export class MixinApplicatorEnum extends MixinApplicatorStandard {
     constructor(arg0: TargetClassContext)
-    // private extensionInfos: Map<IMixinInfo, EnumInfo>;
+    // private extensionInfos: JavaMap<IMixinInfo, EnumInfo>;
     // private insertionPoint: FieldNode;
     // private ordinalShift: number;
     // private targetInfo: EnumInfo;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { TypeLibUtil } from '../../../../../../../com/sun/jna/platform/win32/COM/TypeLibUtil.d.ts'
 import type { TlbBase } from '../../../../../../../com/sun/jna/platform/win32/COM/tlb/imp/TlbBase.d.ts'
 import type { TlbConst } from '../../../../../../../com/sun/jna/platform/win32/COM/tlb/imp/TlbConst.d.ts'
@@ -26,7 +27,7 @@ export class TlbImp extends Object implements TlbConst {
     static logInfo(paramarg0: string): void;
     static main(paramarg0: string[]): void;
     constructor(arg0: string[])
-    // private cmdlineArgs: { [key: string]: any };
+    // private cmdlineArgs: JavaMap<any, any>;
     // private comRootDir: File;
     // private outputDir: File;
     // private typeLibUtil: TypeLibUtil;

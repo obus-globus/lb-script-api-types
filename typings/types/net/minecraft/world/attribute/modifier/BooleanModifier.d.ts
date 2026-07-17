@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -8,14 +9,14 @@ import type { AttributeModifier } from '../../../../../net/minecraft/world/attri
 import type { AttributeModifier$OperationId } from '../../../../../net/minecraft/world/attribute/modifier/AttributeModifier$OperationId.d.ts'
 export class BooleanModifier extends Enum<BooleanModifier> implements AttributeModifier<boolean, boolean> {
     static AND: BooleanModifier;
-    static ARGB_COLOR_LIBRARY: Map<AttributeModifier$OperationId, AttributeModifier<number, Object>>;
-    static BOOLEAN_LIBRARY: Map<AttributeModifier$OperationId, AttributeModifier<boolean, Object>>;
-    static FLOAT_LIBRARY: Map<AttributeModifier$OperationId, AttributeModifier<number, Object>>;
-    static INTEGER_LIBRARY: Map<AttributeModifier$OperationId, AttributeModifier<number, Object>>;
+    static ARGB_COLOR_LIBRARY: JavaMap<AttributeModifier$OperationId, AttributeModifier<number, Object>>;
+    static BOOLEAN_LIBRARY: JavaMap<AttributeModifier$OperationId, AttributeModifier<boolean, Object>>;
+    static FLOAT_LIBRARY: JavaMap<AttributeModifier$OperationId, AttributeModifier<number, Object>>;
+    static INTEGER_LIBRARY: JavaMap<AttributeModifier$OperationId, AttributeModifier<number, Object>>;
     static NAND: BooleanModifier;
     static NOR: BooleanModifier;
     static OR: BooleanModifier;
-    static RGB_COLOR_LIBRARY: Map<AttributeModifier$OperationId, AttributeModifier<number, Object>>;
+    static RGB_COLOR_LIBRARY: JavaMap<AttributeModifier$OperationId, AttributeModifier<number, Object>>;
     static XNOR: BooleanModifier;
     static XOR: BooleanModifier;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;

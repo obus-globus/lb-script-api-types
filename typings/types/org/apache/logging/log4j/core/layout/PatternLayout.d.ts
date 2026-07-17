@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { StringBuilder } from '../../../../../../java/lang/StringBuilder.d.ts'
 import type { Charset } from '../../../../../../java/nio/charset/Charset.d.ts'
 import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
@@ -29,7 +30,7 @@ export class PatternLayout extends AbstractStringLayout {
     readonly eventSerializer: AbstractStringLayout$Serializer;
     // private patternSelector: PatternSelector;
     encode(event: LogEvent, destination: ByteBufferDestination): void;
-    getContentFormat(): { [key: string]: string };
+    getContentFormat(): JavaMap<string, string>;
     getConversionPattern(): string;
     getEventSerializer(): AbstractStringLayout$Serializer;
     requiresLocation(): boolean;

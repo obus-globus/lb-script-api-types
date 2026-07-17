@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { SVGSamplerOutput$GraphOwner } from '../../../../../../com/oracle/truffle/tools/profiler/impl/SVGSamplerOutput$GraphOwner.d.ts'
 import type { SVGSamplerOutput$GraphOwner$SampleKey } from '../../../../../../com/oracle/truffle/tools/profiler/impl/SVGSamplerOutput$GraphOwner$SampleKey.d.ts'
 import type { SVGSamplerOutput$SVGComponent } from '../../../../../../com/oracle/truffle/tools/profiler/impl/SVGSamplerOutput$SVGComponent.d.ts'
@@ -13,7 +14,7 @@ export class SVGSamplerOutput$SVGHistogram extends Object implements SVGSamplerO
     // private titlePadding: number;
     // private widthPerTime: number;
     // private buildHistogram(sample: JSONObject): JSONObject[];
-    // private buildHistogram(sample: JSONObject, samples: JSONObject[], bars: Map<SVGSamplerOutput$GraphOwner$SampleKey, JSONObject>): void;
+    // private buildHistogram(sample: JSONObject, samples: JSONObject[], bars: JavaMap<SVGSamplerOutput$GraphOwner$SampleKey, JSONObject>): void;
     css(): string;
     drawCanvas(x: number, y: number): string;
     // private drawElement(bar: JSONObject, position: number): string;

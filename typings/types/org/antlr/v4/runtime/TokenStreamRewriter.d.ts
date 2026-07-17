@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Token } from '../../../../org/antlr/v4/runtime/Token.d.ts'
@@ -9,8 +10,8 @@ export class TokenStreamRewriter extends Object {
     static MIN_TOKEN_INDEX: number;
     static PROGRAM_INIT_SIZE: number;
     constructor(arg0: TokenStream)
-    // private lastRewriteTokenIndexes: { [key: string]: number };
-    // private programs: { [key: string]: TokenStreamRewriter$RewriteOperation[] };
+    // private lastRewriteTokenIndexes: JavaMap<string, number>;
+    // private programs: JavaMap<string, TokenStreamRewriter$RewriteOperation[]>;
     // private tokens: TokenStream;
     catOpText(arg0: Object, arg1: Object): string;
     delete(arg0: number): void;
@@ -39,7 +40,7 @@ export class TokenStreamRewriter extends Object {
     insertBefore(arg0: string, arg1: number, arg2: Object): void;
     insertBefore(arg0: string, arg1: Token, arg2: Object): void;
     insertBefore(arg0: Token, arg1: Object): void;
-    reduceToSingleOperationPerIndex(arg0: TokenStreamRewriter$RewriteOperation[]): { [key: number]: TokenStreamRewriter$RewriteOperation };
+    reduceToSingleOperationPerIndex(arg0: TokenStreamRewriter$RewriteOperation[]): JavaMap<number, TokenStreamRewriter$RewriteOperation>;
     replace(arg0: number, arg1: Object): void;
     replace(arg0: number, arg1: number, arg2: Object): void;
     replace(arg0: string, arg1: number, arg2: number, arg3: Object): void;

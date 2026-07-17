@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { StoredObject } from '../../../../../com/viaversion/viaversion/api/connection/StoredObject.d.ts'
 import type { UserConnection } from '../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
@@ -12,8 +13,8 @@ export class ResourcePackLoadStateTracker extends StoredObject {
     // private javaClientAccepted: boolean;
     // private loadFuture: CompletableFuture<void>;
     // private remainingResourcePackCount: AtomicInteger;
-    // private requests: Map<ResourcePack$Key, ResourcePackLoadStateTracker$Info>;
-    // private resourcePacks: Map<ResourcePack$Key, ResourcePack>;
+    // private requests: JavaMap<ResourcePack$Key, ResourcePackLoadStateTracker$Info>;
+    // private resourcePacks: JavaMap<ResourcePack$Key, ResourcePack>;
     addLocalResourcePack(arg0: ResourcePack): void;
     addRemoteResourcePack(arg0: ResourcePack): void;
     getRequest(arg0: ResourcePack$Key): ResourcePackLoadStateTracker$Info;

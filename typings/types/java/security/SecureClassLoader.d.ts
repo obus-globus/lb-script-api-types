@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { InputStream } from '../../java/io/InputStream.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
 import type { ClassLoader } from '../../java/lang/ClassLoader.d.ts'
@@ -18,7 +19,7 @@ export class SecureClassLoader extends ClassLoader {
     constructor()
     constructor(arg0: ClassLoader)
     constructor(arg0: string, arg1: ClassLoader)
-    // private pdcache: Map<SecureClassLoader$CodeSourceKey, ProtectionDomain>;
+    // private pdcache: JavaMap<SecureClassLoader$CodeSourceKey, ProtectionDomain>;
     defineClass(arg0: number[], arg1: number, arg2: number): Class<Object>;
     defineClass(arg0: string, arg1: ByteBuffer, arg2: CodeSource): Class<Object>;
     defineClass(arg0: string, arg1: ByteBuffer, arg2: ProtectionDomain): Class<Object>;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ULocale } from '../../../../com/ibm/icu/util/ULocale.d.ts'
 import type { UResourceBundleIterator } from '../../../../com/ibm/icu/util/UResourceBundleIterator.d.ts'
 import type { VersionInfo } from '../../../../com/ibm/icu/util/VersionInfo.d.ts'
@@ -61,8 +62,8 @@ export abstract class UResourceBundle extends ResourceBundle {
     getUInt(): number;
     getULocale(): ULocale;
     getVersion(): VersionInfo;
-    handleGet(arg0: number, arg1: { [key: string]: string }, arg2: UResourceBundle): UResourceBundle;
-    handleGet(arg0: string, arg1: { [key: string]: string }, arg2: UResourceBundle): UResourceBundle;
+    handleGet(arg0: number, arg1: JavaMap<string, string>, arg2: UResourceBundle): UResourceBundle;
+    handleGet(arg0: string, arg1: JavaMap<string, string>, arg2: UResourceBundle): UResourceBundle;
     handleGetKeys(): Enumeration<string>;
     handleGetObject(arg0: string): Object;
     // private handleGetObjectImpl(arg0: string, arg1: UResourceBundle): Object;

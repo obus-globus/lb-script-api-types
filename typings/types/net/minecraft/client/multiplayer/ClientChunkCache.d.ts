@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { BooleanSupplier } from '../../../../java/util/function/BooleanSupplier.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -38,7 +39,7 @@ export class ClientChunkCache extends ChunkSource {
     removedEmptySections(): (Object | null)[];
     removedLoadedChunks(): (Object | null)[];
     replaceBiomes(chunkX: number, chunkZ: number, readBuffer: FriendlyByteBuf): void;
-    replaceWithPacketData(chunkX: number, chunkZ: number, readBuffer: FriendlyByteBuf, heightmaps: Map<Heightmap$Types, number[]>, blockEntities: (param0: (param0: BlockPos, param1: BlockEntityType<any>, param2: CompoundTag) => void) => void): LevelChunk;
+    replaceWithPacketData(chunkX: number, chunkZ: number, readBuffer: FriendlyByteBuf, heightmaps: JavaMap<Heightmap$Types, number[]>, blockEntities: (param0: (param0: BlockPos, param1: BlockEntityType<any>, param2: CompoundTag) => void) => void): LevelChunk;
     tick(haveTime: () => boolean, tickChunks: boolean): void;
     updateViewCenter(x: number, z: number): void;
     updateViewRadius(viewRange: number): void;

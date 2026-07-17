@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { BiConsumer } from '../../../../java/util/function/BiConsumer.d.ts'
 import type { LongPredicate } from '../../../../java/util/function/LongPredicate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -12,11 +13,11 @@ import type { LevelTicks$PosAndContainerConsumer } from '../../../../net/minecra
 import type { ScheduledTick } from '../../../../net/minecraft/world/ticks/ScheduledTick.d.ts'
 export class LevelTicks<T extends unknown> extends Object implements LevelTickAccess<T> {
     constructor(tickCheck: (param0: number) => boolean)
-    // private allContainers: { [key: string]: any };
+    // private allContainers: JavaMap<any, any>;
     // private alreadyRunThisTick: ScheduledTick<T>[];
     // private chunkScheduleUpdater: (param0: LevelChunkTicks<T>, param1: ScheduledTick<T>) => void;
     // private containersToTick: LevelChunkTicks<T>[];
-    // private nextTickForContainer: { [key: string]: any };
+    // private nextTickForContainer: JavaMap<any, any>;
     // private tickCheck: (param0: number) => boolean;
     // private toRunThisTick: ScheduledTick<T>[];
     // private toRunThisTickSet: ScheduledTick<Object>[];

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { AbstractBootstrap } from '../../../io/netty/bootstrap/AbstractBootstrap.d.ts'
 import type { ChannelFactory } from '../../../io/netty/bootstrap/ChannelFactory.d.ts'
 import type { Channel } from '../../../io/netty/channel/Channel.d.ts'
@@ -9,11 +10,11 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class AbstractBootstrapConfig<B extends AbstractBootstrap<B, C>, C extends Channel> extends Object {
     constructor(arg0: B)
     // private bootstrap: B;
-    attrs(): Map<AttributeKey<Object>, Object>;
+    attrs(): JavaMap<AttributeKey<Object>, Object>;
     channelFactory(): ChannelFactory<C>;
     group(): (Object | null)[];
     handler(): ChannelHandler;
     localAddress(): SocketAddress;
-    options(): Map<ChannelOption<Object>, Object>;
+    options(): JavaMap<ChannelOption<Object>, Object>;
     toString(): string;
 }

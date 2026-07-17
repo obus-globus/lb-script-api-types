@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { VFPScreen } from '../../../../../com/viaversion/viafabricplus/screen/VFPScreen.d.ts'
 import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
@@ -23,7 +24,7 @@ export class ReportIssuesScreen extends VFPScreen {
     static setScreen(paramarg0: Screen): void;
     static showErrorScreen(paramarg0: Component, paramarg1: Throwable, paramarg2: Screen): void;
     constructor()
-    // private actions: { [key: string]: () => void };
+    // private actions: JavaMap<string, () => void>;
     // private delay: number;
     init(): void;
     init(width: number, height: number): void;

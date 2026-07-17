@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { UUID } from '../../../../../java/util/UUID.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Minecraft } from '../../../../../net/minecraft/client/Minecraft.d.ts'
@@ -13,7 +14,7 @@ export class BrainDebugRenderer extends Object implements DebugRenderer$SimpleDe
     // private minecraft: Minecraft;
     // private doRender(debugValues: DebugValueAccess): void;
     emitGizmos(camX: number, camY: number, camZ: number, debugValues: DebugValueAccess, frustum: Frustum, partialTicks: number): void;
-    getGhostPois(debugValues: DebugValueAccess): Map<BlockPos, string[]>;
+    getGhostPois(debugValues: DebugValueAccess): JavaMap<BlockPos, string[]>;
     // private isMobSelected(entity: Entity): boolean;
     // private renderBrainInfo(entity: Entity, brainDump: DebugBrainDump): void;
     // private updateLastLookedAtUuid(): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { TruffleObject } from '../../../../../com/oracle/truffle/api/interop/TruffleObject.d.ts'
 import type { TruffleString } from '../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -23,13 +24,13 @@ export class Symbol extends Object implements TruffleObject {
     static createRegistered(paramdescription: TruffleString): Symbol;
     private constructor(description: TruffleString, registered: boolean, isPrivate: boolean)
     readonly description: TruffleString;
-    readonly invertedMap: Map<{ [key: string]: any }, Object>;
+    readonly invertedMap: JavaMap<JavaMap<any, any>, Object>;
     // private isPrivate: boolean;
     readonly registered: boolean;
     clearInvertedMap(): void;
     equals(obj: Object | null): boolean;
     getDescription(): Object;
-    getInvertedMap(): Map<{ [key: string]: any }, Object>;
+    getInvertedMap(): JavaMap<JavaMap<any, any>, Object>;
     getLanguageId(): string;
     getMetaObject(): Object;
     getName(): TruffleString;
@@ -39,7 +40,7 @@ export class Symbol extends Object implements TruffleObject {
     identityHashCode(): number;
     isPrivate(): boolean;
     isRegistered(): boolean;
-    setInvertedMap(invMap: Map<{ [key: string]: any }, Object>): void;
+    setInvertedMap(invMap: JavaMap<JavaMap<any, any>, Object>): void;
     toDisplayString(allowSideEffects: boolean): Object;
     toFunctionNameString(): TruffleString;
     toString(): string;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { EventHook } from '../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { EventListener } from '../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
@@ -14,7 +15,7 @@ export class InputTracker extends Object implements EventListener {
     static INSTANCE: InputTracker;
     readonly debugDisplayName: Component;
     // private handleMouseAction: EventHook<MouseButtonEvent>;
-    // private keyLastPressed: { [key: string]: any };
+    // private keyLastPressed: JavaMap<any, any>;
     // private mouseLastPressed: number[];
     // private mouseStates: number[];
     readonly running: boolean;

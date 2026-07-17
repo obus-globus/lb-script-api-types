@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { ClassLoader } from '../../../../../../../java/lang/ClassLoader.d.ts'
 import type { Module } from '../../../../../../../java/lang/Module.d.ts'
 import type { ByteBuffer } from '../../../../../../../java/nio/ByteBuffer.d.ts'
@@ -61,8 +62,8 @@ export abstract class UResourceBundle extends ResourceBundle {
     getUInt(): number;
     getULocale(): ULocale;
     getVersion(): VersionInfo;
-    handleGet(index: number, aliasesVisited: { [key: string]: string }, requested: UResourceBundle): UResourceBundle;
-    handleGet(aKey: string, aliasesVisited: { [key: string]: string }, requested: UResourceBundle): UResourceBundle;
+    handleGet(index: number, aliasesVisited: JavaMap<string, string>, requested: UResourceBundle): UResourceBundle;
+    handleGet(aKey: string, aliasesVisited: JavaMap<string, string>, requested: UResourceBundle): UResourceBundle;
     handleGetKeys(): Enumeration<string>;
     handleGetObject(aKey: string): Object;
     // private handleGetObjectImpl(aKey: string, requested: UResourceBundle): Object;

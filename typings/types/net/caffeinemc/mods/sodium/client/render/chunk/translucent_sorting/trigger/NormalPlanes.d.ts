@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { DoubleInterval } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/util/interval_tree/DoubleInterval.d.ts'
 import type { SectionPos } from '../../../../../../../../../net/minecraft/core/SectionPos.d.ts'
@@ -14,6 +15,6 @@ export class NormalPlanes extends Object {
     // private relativeDistancesSet: (Object | null)[];
     // private sectionPos: SectionPos;
     addPlaneMember(arg0: number): void;
-    prepareAndInsert(arg0: Map<Vector3fc, number[]>): void;
+    prepareAndInsert(arg0: JavaMap<Vector3fc, number[]>): void;
     prepareIntegration(): void;
 }

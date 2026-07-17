@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { LogEvent } from '../../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
 import type { Route } from '../../../../../../../org/apache/logging/log4j/core/appender/routing/Route.d.ts'
@@ -12,7 +13,7 @@ export class Routes extends Object {
     // private pattern: string;
     readonly patternScript: AbstractScript;
     readonly routes: Route[];
-    getPattern(event: LogEvent, scriptStaticVariables: Map<Object, Object>): string;
+    getPattern(event: LogEvent, scriptStaticVariables: JavaMap<Object, Object>): string;
     getPatternScript(): AbstractScript;
     getRoute(key: string): Route;
     getRoutes(): Route[];

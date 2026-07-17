@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 import type { Throwable } from '../../../../../../java/lang/Throwable.d.ts'
@@ -16,7 +17,7 @@ export class QuickFix extends Enum<QuickFix> {
     static values(): QuickFix[];
     private constructor(description: string, testError: (param0: Throwable) => boolean, whatYouNeed: Instructions | null, whatToDo: Instructions | null)
     readonly description: string;
-    readonly messages: { [key: string]: Instructions | null };
+    readonly messages: JavaMap<string, Instructions | null>;
     readonly testError: (param0: Throwable) => boolean;
     readonly whatToDo: Instructions | null;
     readonly whatYouNeed: Instructions | null;

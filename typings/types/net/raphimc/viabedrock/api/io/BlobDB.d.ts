@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Closeable } from '../../../../../java/io/Closeable.d.ts'
 import type { File } from '../../../../../java/io/File.d.ts'
 import type { RandomAccessFile } from '../../../../../java/io/RandomAccessFile.d.ts'
@@ -8,10 +9,10 @@ export class BlobDB extends Object implements Closeable {
     constructor(arg0: File)
     // private dataFile: RandomAccessFile;
     // private dataOffset: number;
-    // private index: { [key: number]: BlobDB$IndexEntry };
+    // private index: JavaMap<number, BlobDB$IndexEntry>;
     // private indexDirty: boolean;
     // private indexFile: File;
-    // private pendingWrites: { [key: number]: number[] };
+    // private pendingWrites: JavaMap<number, number[]>;
     // private writeThread: Thread;
     close(): void;
     contains(arg0: number): boolean;

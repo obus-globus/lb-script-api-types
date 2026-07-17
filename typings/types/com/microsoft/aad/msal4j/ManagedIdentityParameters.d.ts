@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ClaimsRequest } from '../../../../com/microsoft/aad/msal4j/ClaimsRequest.d.ts'
 import type { IAcquireTokenParameters } from '../../../../com/microsoft/aad/msal4j/IAcquireTokenParameters.d.ts'
 import type { ManagedIdentityParameters$ManagedIdentityParametersBuilder } from '../../../../com/microsoft/aad/msal4j/ManagedIdentityParameters$ManagedIdentityParametersBuilder.d.ts'
@@ -10,8 +11,8 @@ export class ManagedIdentityParameters extends Object implements IAcquireTokenPa
     // private resource: string;
     // private revokedTokenHash: string;
     claims(): ClaimsRequest;
-    extraHttpHeaders(): { [key: string]: string };
-    extraQueryParameters(): { [key: string]: string };
+    extraHttpHeaders(): JavaMap<string, string>;
+    extraQueryParameters(): JavaMap<string, string>;
     forceRefresh(): boolean;
     resource(): string;
     revokedTokenHash(): string;

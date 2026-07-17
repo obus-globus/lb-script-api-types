@@ -1,8 +1,9 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Float2LongAVLTreeMap$Entry } from '../../../../../it/unimi/dsi/fastutil/floats/Float2LongAVLTreeMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Float2LongAVLTreeMap$TreeIterator extends Object {
-    constructor(null_: { [key: string]: any })
-    constructor(null_: { [key: string]: any }, arg1: number)
+    constructor(null_: JavaMap<any, any>)
+    constructor(null_: JavaMap<any, any>, arg1: number)
     // private curr: Float2LongAVLTreeMap$Entry;
     // private index: number;
     // private next: Float2LongAVLTreeMap$Entry;

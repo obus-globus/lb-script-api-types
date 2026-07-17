@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Value } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/Value.d.ts'
 import type { ValueGroup } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ValueGroup.d.ts'
@@ -14,7 +15,7 @@ export class StatusEffectBasedBuff$Potions extends ValueGroup {
     // private regenPotion: StatusEffectBasedBuff$HealthBasedPotion;
     // private speedPotion: StatusEffectBasedBuff$Potion;
     // private strengthPotion: StatusEffectBasedBuff$Potion;
-    // private values: Map<Holder<MobEffect>, StatusEffectBasedBuff$Potion>;
+    // private values: JavaMap<Holder<MobEffect>, StatusEffectBasedBuff$Potion>;
     // private waterBreathingPotion: StatusEffectBasedBuff$Potion;
     get(): Value<Object>[];
     get(statusEffect: Holder<MobEffect>): StatusEffectBasedBuff$Potion | null;

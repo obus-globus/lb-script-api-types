@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Normalizer$Mode } from '../../../../com/ibm/icu/text/Normalizer$Mode.d.ts'
 import type { RuleBasedTransliterator$Data } from '../../../../com/ibm/icu/text/RuleBasedTransliterator$Data.d.ts'
 import type { StringMatcher } from '../../../../com/ibm/icu/text/StringMatcher.d.ts'
@@ -19,7 +20,7 @@ export class TransliteratorParser extends Object {
     // private segmentStandins: StringBuilder;
     // private undefinedVariableName: string;
     // private variableLimit: string;
-    // private variableNames: { [key: string]: string[] };
+    // private variableNames: JavaMap<string, string[]>;
     // private variableNext: string;
     // private variablesVector: Object[];
     // private appendVariableDef(arg0: string, arg1: StringBuilder): void;

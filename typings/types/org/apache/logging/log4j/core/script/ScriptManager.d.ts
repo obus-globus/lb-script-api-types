@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { ScriptEngineManager } from '../../../../../../javax/script/ScriptEngineManager.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -12,11 +13,11 @@ export class ScriptManager extends Object implements FileWatcher {
     // private configuration: Configuration;
     // private languages: string;
     // private manager: ScriptEngineManager;
-    // private scriptRunners: { [key: string]: ScriptManager$ScriptRunner };
+    // private scriptRunners: JavaMap<string, ScriptManager$ScriptRunner>;
     // private watchManager: WatchManager;
     addScript(script: AbstractScript): boolean;
-    createBindings(script: AbstractScript): { [key: string]: any };
-    execute(id: string, bindings: { [key: string]: any }): Object;
+    createBindings(script: AbstractScript): JavaMap<any, any>;
+    execute(id: string, bindings: JavaMap<any, any>): Object;
     fileModified(file: File): void;
     getAllowedLanguages(): string[];
     getScript(id: string): AbstractScript;

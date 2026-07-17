@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { TranslationUnit } from '../../../../../../io/github/douira/glsl_transformer/ast/node/TranslationUnit.d.ts'
 import type { Root } from '../../../../../../io/github/douira/glsl_transformer/ast/query/Root.d.ts'
 import type { RootSupplier } from '../../../../../../io/github/douira/glsl_transformer/ast/query/RootSupplier.d.ts'
@@ -18,7 +19,7 @@ export class TriASTTransformer<J extends JobParameters, E extends Enum<E>> exten
     constructor(arg0: (param0: TranslationUnit, param1: TranslationUnit, param2: TranslationUnit, param3: Root, param4: Root, param5: Root) => void, arg1: Class<E>, arg2: E, arg3: E, arg4: E)
     constructor(arg0: (param0: TranslationUnit, param1: TranslationUnit, param2: TranslationUnit) => void, arg1: Class<E>, arg2: E, arg3: E, arg4: E)
     constructor(arg0: Class<E>, arg1: E, arg2: E, arg3: E)
-    constructor(arg0: (param0: Map<E, TranslationUnit>) => void, arg1: Class<E>, arg2: E, arg3: E, arg4: E)
+    constructor(arg0: (param0: JavaMap<E, TranslationUnit>) => void, arg1: Class<E>, arg2: E, arg3: E, arg4: E)
     // private aType: E;
     // private bType: E;
     // private cType: E;
@@ -27,13 +28,13 @@ export class TriASTTransformer<J extends JobParameters, E extends Enum<E>> exten
     setTransformation(arg0: (param0: TranslationUnit, param1: TranslationUnit, param2: TranslationUnit, param3: Root, param4: Root, param5: Root, param6: J) => void): void;
     setTransformation(arg0: (param0: TranslationUnit, param1: TranslationUnit, param2: TranslationUnit, param3: Root, param4: Root, param5: Root) => void): void;
     setTransformation(arg0: (param0: TranslationUnit, param1: TranslationUnit, param2: TranslationUnit) => void): void;
-    setTransformation(arg0: (param0: Map<E, TranslationUnit>, param1: J) => void): void;
-    setTransformation(arg0: (param0: Map<E, TranslationUnit>) => void): void;
-    transform(arg0: RootSupplier, arg1: Map<E, string>): Map<E, string>;
+    setTransformation(arg0: (param0: JavaMap<E, TranslationUnit>, param1: J) => void): void;
+    setTransformation(arg0: (param0: JavaMap<E, TranslationUnit>) => void): void;
+    transform(arg0: RootSupplier, arg1: JavaMap<E, string>): JavaMap<E, string>;
     transform(arg0: Triple<string>): Triple<string>;
     transform(arg0: Triple<string>, arg1: J): Triple<string>;
-    transform(arg0: string, arg1: string, arg2: string): Map<E, string>;
-    transform(arg0: string, arg1: string, arg2: string, arg3: J): Map<E, string>;
-    transform(arg0: Map<E, string>): Map<E, string>;
-    transform(arg0: Map<E, string>, arg1: J): Map<E, string>;
+    transform(arg0: string, arg1: string, arg2: string): JavaMap<E, string>;
+    transform(arg0: string, arg1: string, arg2: string, arg3: J): JavaMap<E, string>;
+    transform(arg0: JavaMap<E, string>): JavaMap<E, string>;
+    transform(arg0: JavaMap<E, string>, arg1: J): JavaMap<E, string>;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Serializable } from '../../../java/io/Serializable.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { GenericDeclaration } from '../../../java/lang/reflect/GenericDeclaration.d.ts'
@@ -32,7 +33,7 @@ export abstract class CallableReference extends Object implements Serializable, 
     readonly typeParameters: KTypeParameter[];
     readonly visibility: KVisibility | null;
     call(...arg0: (Object | null)[]): Object | null;
-    callBy(arg0: Map<Object | null, Object | null>): Object | null;
+    callBy(arg0: JavaMap<Object | null, Object | null>): Object | null;
     compute(): KCallable<Object>;
     computeReflected(): KCallable<Object>;
     findJavaDeclaration(): GenericDeclaration | null;

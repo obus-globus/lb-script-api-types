@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
@@ -39,9 +40,9 @@ export class WeatheringCopperGolemStatueBlock extends CopperGolemStatueBlock imp
     static FILTERED_REGISTRIES: ResourceKey<FeatureElement[]>[];
     static INDESTRUCTIBLE: number;
     static INSTANT: number;
-    static NEXT_BY_BLOCK: () => Map<Block, Block>;
+    static NEXT_BY_BLOCK: () => JavaMap<Block, Block>;
     static POSE: EnumProperty<CopperGolemStatueBlock$Pose>;
-    static PREVIOUS_BY_BLOCK: () => Map<Block, Block>;
+    static PREVIOUS_BY_BLOCK: () => JavaMap<Block, Block>;
     static SCAN_DISTANCE: number;
     static UPDATE_ALL: number;
     static UPDATE_ALL_IMMEDIATE: number;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { Filer } from '../../../../../../javax/annotation/processing/Filer.d.ts'
 import type { Messager } from '../../../../../../javax/annotation/processing/Messager.d.ts'
@@ -7,12 +8,12 @@ import type { MappingMethod } from '../../../../../../org/spongepowered/asm/obfu
 import type { IMappingProvider } from '../../../../../../org/spongepowered/tools/obfuscation/mapping/IMappingProvider.d.ts'
 export abstract class MappingProvider extends Object implements IMappingProvider {
     constructor(arg0: Messager, arg1: Filer)
-    // private classMap: { [key: string]: string };
-    // private fieldMap: Map<MappingField, MappingField>;
+    // private classMap: JavaMap<string, string>;
+    // private fieldMap: JavaMap<MappingField, MappingField>;
     // private filer: Filer;
     // private messager: Messager;
-    // private methodMap: Map<MappingMethod, MappingMethod>;
-    // private packageMap: { [key: string]: string };
+    // private methodMap: JavaMap<MappingMethod, MappingMethod>;
+    // private packageMap: JavaMap<string, string>;
     clear(): void;
     getClassMapping(arg0: string): string;
     getFieldMapping(arg0: MappingField): MappingField;

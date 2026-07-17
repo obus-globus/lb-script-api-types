@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { GLSLLexer } from '../../../../../../io/github/douira/glsl_transformer/GLSLLexer.d.ts'
 import type { GLSLParser } from '../../../../../../io/github/douira/glsl_transformer/GLSLParser.d.ts'
 import type { TranslationUnit } from '../../../../../../io/github/douira/glsl_transformer/ast/node/TranslationUnit.d.ts'
@@ -19,9 +20,9 @@ import type { ParserRuleContext } from '../../../../../../org/antlr/v4/runtime/P
 export class ASTParser extends Object implements ParserInterface {
     static _getInternalInstance(): ASTParser;
     constructor()
-    constructor(arg0: EnhancedParser, arg1: { [key: string]: any })
+    constructor(arg0: EnhancedParser, arg1: JavaMap<any, any>)
     // private astCacheStrategy: ASTParser$ASTCacheStrategy;
-    readonly buildCache: { [key: string]: any };
+    readonly buildCache: JavaMap<any, any>;
     readonly parseLineDirectives: boolean;
     readonly parser: EnhancedParser;
     getLexer(): GLSLLexer;
@@ -41,7 +42,7 @@ export class ASTParser extends Object implements ParserInterface {
     parseTranslationUnit(arg0: Root, arg1: string): TranslationUnit;
     parseTranslationUnit(arg0: RootSupplier, arg1: string): TranslationUnit;
     setASTCacheStrategy(arg0: ASTParser$ASTCacheStrategy): void;
-    setBuildCache(arg0: { [key: string]: any }): void;
+    setBuildCache(arg0: JavaMap<any, any>): void;
     // private setBuilderTokenStream(): void;
     setLLOnly(): void;
     setParseLineDirectives(arg0: boolean): void;

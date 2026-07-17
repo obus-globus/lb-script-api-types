@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { TruffleFile } from '../../../../com/oracle/truffle/api/TruffleFile.d.ts'
 import type { HostClassLoader$Loader } from '../../../../com/oracle/truffle/host/HostClassLoader$Loader.d.ts'
 import type { HostClassLoader$Resource } from '../../../../com/oracle/truffle/host/HostClassLoader$Resource.d.ts'
@@ -20,7 +21,7 @@ export class HostClassLoader extends ClassLoader implements Closeable {
     // private closed: boolean;
     // private hostContext: HostContext;
     // private loaders: HostClassLoader$Loader[];
-    // private roots: Map<TruffleFile, boolean>;
+    // private roots: JavaMap<TruffleFile, boolean>;
     // private toClose: Closeable[];
     addClasspathRoot(file: TruffleFile): void;
     close(): void;

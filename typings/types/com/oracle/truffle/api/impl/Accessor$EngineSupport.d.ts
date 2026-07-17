@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { CallTarget } from '../../../../../com/oracle/truffle/api/CallTarget.d.ts'
 import type { ContextLocal } from '../../../../../com/oracle/truffle/api/ContextLocal.d.ts'
 import type { ContextThreadLocal } from '../../../../../com/oracle/truffle/api/ContextThreadLocal.d.ts'
@@ -92,7 +93,7 @@ export abstract class Accessor$EngineSupport extends Accessor$Support {
     createInstrumentContextLocal<T extends unknown>(factory: Object): ContextLocal<T>;
     createInstrumentContextThreadLocal<T extends unknown>(factory: Object): ContextThreadLocal<T>;
     createInstrumentSystemThread(polyglotInstrument: Object, runnable: () => void, threadGroup: ThreadGroup): Thread;
-    createInternalContext(sourcePolyglotLanguageContext: Object, out: OutputStream, err: OutputStream, in_: InputStream, timeZone: ZoneId, permittedLanguages: string[], config: { [key: string]: Object }, options: { [key: string]: string }, arguments: { [key: string]: string[] }, sharingEnabled: boolean, initializeCreatorContext: boolean, onCancelled: () => void, onExited: (param0: number) => void, onClosed: () => void, inheritAccess: boolean, allowCreateThreads: boolean, threadAccessDeniedHandler: (param0: string) => void, allowNativeAccess: boolean, allowIO: boolean, allowHostLookup: boolean, allowHostClassLoading: boolean, allowCreateProcess: boolean, allowPolyglotAccess: boolean, allowEnvironmentAccess: boolean, environment: { [key: string]: string }, allowInnerContextOptions: boolean): TruffleContext;
+    createInternalContext(sourcePolyglotLanguageContext: Object, out: OutputStream, err: OutputStream, in_: InputStream, timeZone: ZoneId, permittedLanguages: string[], config: JavaMap<string, Object>, options: JavaMap<string, string>, arguments: JavaMap<string, string[]>, sharingEnabled: boolean, initializeCreatorContext: boolean, onCancelled: () => void, onExited: (param0: number) => void, onClosed: () => void, inheritAccess: boolean, allowCreateThreads: boolean, threadAccessDeniedHandler: (param0: string) => void, allowNativeAccess: boolean, allowIO: boolean, allowHostLookup: boolean, allowHostClassLoading: boolean, allowCreateProcess: boolean, allowPolyglotAccess: boolean, allowEnvironmentAccess: boolean, environment: JavaMap<string, string>, allowInnerContextOptions: boolean): TruffleContext;
     createInterruptExecution(sourceSection: SourceSection): Throwable;
     createLanguageContextLocal<T extends unknown>(factory: Object): ContextLocal<T>;
     createLanguageContextThreadLocal<T extends unknown>(factory: Object): ContextThreadLocal<T>;
@@ -103,7 +104,7 @@ export abstract class Accessor$EngineSupport extends Accessor$Support {
     createPolyglotEngineException(cause: RuntimeException): RuntimeException;
     createPolyglotSourceSection(polyglotObject: Object, source: Object, sectionImpl: SourceSection): Object;
     createPolyglotThreadScope(): AutoCloseable;
-    createSubProcess(polyglotLanguageContext: Object, cmd: string[], cwd: string, environment: { [key: string]: string }, redirectErrorStream: boolean, inputRedirect: ProcessHandler$Redirect, outputRedirect: ProcessHandler$Redirect, errorRedirect: ProcessHandler$Redirect): Process;
+    createSubProcess(polyglotLanguageContext: Object, cmd: string[], cwd: string, environment: JavaMap<string, string>, redirectErrorStream: boolean, inputRedirect: ProcessHandler$Redirect, outputRedirect: ProcessHandler$Redirect, errorRedirect: ProcessHandler$Redirect): Process;
     createThread(polyglotLanguageContext: Object, runnable: () => void, innerContextImpl: Object, group: ThreadGroup, stackSize: number, beforeEnter: () => void, afterLeave: () => void, virtual: boolean): Thread;
     detachOutputConsumer(dos: DispatchOutputStream, out: OutputStream): void;
     engineToInstrumentException(t: Throwable): RuntimeException;
@@ -117,7 +118,7 @@ export abstract class Accessor$EngineSupport extends Accessor$Support {
     evalInternalContext(node: Node, polyglotContext: Object, source: Source, allowInternal: boolean): Object;
     exitContext(polyglotContext: Object, exitLocation: Node, exitCode: number): void;
     exportSymbol(polyglotLanguageContext: Object, symbolName: string, value: Object): void;
-    filterHostOptions(polyglotEngineImpl: Object, polyglotOptions: { [key: string]: string }): { [key: string]: string };
+    filterHostOptions(polyglotEngineImpl: Object, polyglotOptions: JavaMap<string, string>): JavaMap<string, string>;
     finalizeStore(polyglotEngine: Object): Object;
     findCallTargets(polyglotEngine: Object): CallTarget[];
     findGuestToHostFrame(polyglotEngineImpl: Object, firstElement: StackTraceElement, hostStack: StackTraceElement[], nextElementIndex: number): number;
@@ -142,11 +143,11 @@ export abstract class Accessor$EngineSupport extends Accessor$Support {
     getDefaultLanguageView(polyglotLanguageContext: Object, value: Object): Object;
     getEncapsulatingNodeReference(invalidateOnNull: boolean): EncapsulatingNodeReference;
     getEngineErr(engine: Object): DispatchOutputStream;
-    getEngineFileTypeDetectors(engineFileSystemContext: Object): { [key: string]: TruffleFile$FileTypeDetector[] };
+    getEngineFileTypeDetectors(engineFileSystemContext: Object): JavaMap<string, TruffleFile$FileTypeDetector[]>;
     getEngineFromPolyglotObject(polyglotObject: Object): Object;
     getEngineId(polyglotEngine: Object): number;
     getEngineIn(engine: Object): InputStream;
-    getEngineInternalResources(): { [key: string]: InternalResource };
+    getEngineInternalResources(): JavaMap<string, InternalResource>;
     getEngineLock(polyglotEngine: Object): Object;
     getEngineLogHandler(polyglotEngineImpl: Object): AbstractPolyglotImpl$LogHandler;
     getEngineOptionValues(polyglotEngine: Object): OptionValues;
@@ -159,7 +160,7 @@ export abstract class Accessor$EngineSupport extends Accessor$Support {
     getExitExceptionSourceLocation(cancelExecution: Throwable): SourceSection;
     getFileSystem(polyglotContext: Object): FileSystem;
     getFormatKind(logRecord: LogRecord): string;
-    getGeneratorCache(polyglotLanguageInstance: Object): Map<Pair<Class<Object>, Class<Object>>, Object>;
+    getGeneratorCache(polyglotLanguageInstance: Object): JavaMap<Pair<Class<Object>, Class<Object>>, Object>;
     getGuestToHostCodeCache(polyglotContextImpl: Object): Object;
     getHostContext(valueContext: Object): Object;
     getHostLanguage(vmObject: Object): LanguageInfo;
@@ -171,9 +172,9 @@ export abstract class Accessor$EngineSupport extends Accessor$Support {
     getInstrumentSourceOptions(polyglotInstrument: Object, source: Source): OptionValues;
     getInstrumentationHandler(rootNode: RootNode): Object;
     getInstrumentationHandler(polyglotObject: Object): Object;
-    getInstruments(polyglotObject: Object): { [key: string]: InstrumentInfo };
+    getInstruments(polyglotObject: Object): JavaMap<string, InstrumentInfo>;
     getInternalFileSystemContext(polyglotContextImpl: Object): Object;
-    getInternalLanguages(polyglotObject: Object): { [key: string]: LanguageInfo };
+    getInternalLanguages(polyglotObject: Object): JavaMap<string, LanguageInfo>;
     getInternalResource(owner: Object, resourceType: Class<InternalResource>): TruffleFile;
     getInternalResource(owner: Object, resourceId: string): TruffleFile;
     getIsolateOptionOption(): OptionKey<OptionMap<string>>;
@@ -183,7 +184,7 @@ export abstract class Accessor$EngineSupport extends Accessor$Support {
     getLanguageId(anchor: Node, languageClass: Class<TruffleLanguage<Object>>): string;
     getLanguageInfo(vmObject: Object, languageClass: Class<TruffleLanguage<Object>>): LanguageInfo;
     getLanguageView(viewLanguage: LanguageInfo, value: Object): Object;
-    getLogLevels(loggerCache: Object): { [key: string]: Level };
+    getLogLevels(loggerCache: Object): JavaMap<string, Level>;
     getLogger(polyglotInstrument: Object, name: string): TruffleLogger;
     getLoggerOwner(loggerCache: Object): Object;
     getMaxIsolateMemoryOption(): OptionKey<number>;
@@ -199,10 +200,10 @@ export abstract class Accessor$EngineSupport extends Accessor$Support {
     getPolyglotEngineExceptionCause(engineException: Throwable): Throwable;
     getPolyglotExceptionCause(polyglotExceptionImpl: Object): Throwable;
     getPolyglotSharingLayer(polyglotLanguageInstance: Object): Object;
-    getProcessEnvironment(polyglotLanguageContext: Object): { [key: string]: string };
+    getProcessEnvironment(polyglotLanguageContext: Object): JavaMap<string, string>;
     getProvidedTags(language: LanguageInfo): Class<Object>[];
     getPublicFileSystemContext(polyglotContextImpl: Object): Object;
-    getPublicLanguages(polyglotObject: Object): { [key: string]: LanguageInfo };
+    getPublicLanguages(polyglotObject: Object): JavaMap<string, LanguageInfo>;
     getReinitializedPath(truffleFile: TruffleFile): string;
     getReinitializedURI(truffleFile: TruffleFile): URI;
     getRelativePathInResourceRoot(truffleFile: TruffleFile): string;

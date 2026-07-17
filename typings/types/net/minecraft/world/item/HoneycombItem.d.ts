@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Pair } from '../../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
@@ -26,7 +27,7 @@ export class HoneycombItem extends Item implements SignApplicator {
     static ABSOLUTE_MAX_STACK_SIZE: number;
     static BASE_ATTACK_DAMAGE_ID: Identifier;
     static BASE_ATTACK_SPEED_ID: Identifier;
-    static BY_BLOCK: Map<Block, Item>;
+    static BY_BLOCK: JavaMap<Block, Item>;
     static CODEC: Codec<Holder<Item>>;
     static CODEC_WITH_BOUND_COMPONENTS: Codec<Holder<Item>>;
     static DEFAULT_LIGHT_COLOR: Vector3f;
@@ -34,9 +35,9 @@ export class HoneycombItem extends Item implements SignApplicator {
     static FILTERED_REGISTRIES: ResourceKey<FeatureElement[]>[];
     static MAX_BAR_WIDTH: number;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Holder<Item>>;
-    static WAXABLES: () => Map<Block, Block>;
-    static WAXED_RECIPES: Map<Block, Pair<RecipeCategory, string>>;
-    static WAX_OFF_BY_BLOCK: () => Map<Block, Block>;
+    static WAXABLES: () => JavaMap<Block, Block>;
+    static WAXED_RECIPES: JavaMap<Block, Pair<RecipeCategory, string>>;
+    static WAX_OFF_BY_BLOCK: () => JavaMap<Block, Block>;
     static byBlock(paramblock: Block): Item;
     static byId(paramid: number): Item;
     static getId(paramitem: Item): number;

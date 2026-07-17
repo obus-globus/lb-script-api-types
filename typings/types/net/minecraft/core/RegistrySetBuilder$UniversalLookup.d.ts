@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Optional } from '../../../java/util/Optional.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Holder$Reference } from '../../../net/minecraft/core/Holder$Reference.d.ts'
@@ -7,7 +8,7 @@ import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d
 import type { TagKey } from '../../../net/minecraft/tags/TagKey.d.ts'
 export class RegistrySetBuilder$UniversalLookup extends RegistrySetBuilder$EmptyTagLookup<Object> {
     constructor(owner: HolderOwner<Object>)
-    // private holders: Map<ResourceKey<Object>, Holder$Reference<Object>>;
+    // private holders: JavaMap<ResourceKey<Object>, Holder$Reference<Object>>;
     get(id: ResourceKey<Object>): Optional<Holder$Reference<Object>>;
     get(id: TagKey<Object>): Optional<Object[]>;
     // private getOrCreate<T extends unknown>(id: ResourceKey<T>): Holder$Reference<T>;

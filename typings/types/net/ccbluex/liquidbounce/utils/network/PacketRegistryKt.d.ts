@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { PacketFlow } from '../../../../../net/minecraft/network/protocol/PacketFlow.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
@@ -12,5 +13,5 @@ export class PacketRegistryKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PacketRegistry.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PacketRegistry.kt:35}
      */
-    static getPacketRegistry(): Map<PacketFlow, Identifier[]>;
+    static getPacketRegistry(): JavaMap<PacketFlow, Identifier[]>;
 }

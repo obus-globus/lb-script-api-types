@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../../JavaMap.d.ts'
 import type { ToggleableValueGroup } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ToggleableValueGroup.d.ts'
 import type { MultiChoiceListValue } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/MultiChoiceListValue.d.ts'
 import type { CustomAntiBotMode$Armor$ArmorPredicate } from '../../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode$Armor$ArmorPredicate.d.ts'
@@ -8,6 +9,6 @@ export class CustomAntiBotMode$Armor extends ToggleableValueGroup {
     // private BASE: CustomAntiBotMode$Armor$ArmorPredicate[];
     // private CHESTPLATE: CustomAntiBotMode$Armor$ArmorPredicate[];
     // private HELMET: CustomAntiBotMode$Armor$ArmorPredicate[];
-    // private values: Map<EquipmentSlot, MultiChoiceListValue<CustomAntiBotMode$Armor$ArmorPredicate>>;
+    // private values: JavaMap<EquipmentSlot, MultiChoiceListValue<CustomAntiBotMode$Armor$ArmorPredicate>>;
     isValid(entity: Player): boolean;
 }

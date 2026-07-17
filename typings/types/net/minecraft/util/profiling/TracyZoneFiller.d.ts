@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Zone } from '../../../../com/mojang/jtracy/Zone.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -10,7 +11,7 @@ export class TracyZoneFiller extends Object implements ProfilerFiller {
     constructor()
     // private activeZones: Zone[];
     // private name: string;
-    // private plots: { [key: string]: TracyZoneFiller$PlotAndValue };
+    // private plots: JavaMap<string, TracyZoneFiller$PlotAndValue>;
     // private activeZone(): Zone;
     addZoneText(text: string): void;
     addZoneValue(value: number): void;

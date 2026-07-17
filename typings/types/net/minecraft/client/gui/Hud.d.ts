@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Pair } from '../../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { Runnable } from '../../../../java/lang/Runnable.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
@@ -40,7 +41,7 @@ export class Hud extends Object implements MixinHudAccessor, HudAccessor {
     readonly bossOverlay: BossHealthOverlay;
     readonly chat: ChatComponent;
     // private contextualInfoBar: Pair<Hud$ContextualInfo, ContextualBar>;
-    // private contextualInfoBars: Map<Hud$ContextualInfo, () => ContextualBar>;
+    // private contextualInfoBars: JavaMap<Hud$ContextualInfo, () => ContextualBar>;
     readonly debugOverlay: DebugScreenOverlay;
     // private deferredSubtitles: () => void;
     // private displayHealth: number;

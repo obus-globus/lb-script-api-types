@@ -1,8 +1,9 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { ClassLoader } from '../../../java/lang/ClassLoader.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class Version extends Object {
-    static identify(): { [key: string]: Version };
-    static identify(paramarg0: ClassLoader): { [key: string]: Version };
+    static identify(): JavaMap<string, Version>;
+    static identify(paramarg0: ClassLoader): JavaMap<string, Version>;
     static main(paramarg0: string[]): void;
     private constructor(arg0: string, arg1: string, arg2: number, arg3: number, arg4: string, arg5: string, arg6: string)
     // private artifactId: string;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { CallTarget } from '../../../../com/oracle/truffle/api/CallTarget.d.ts'
 import type { RootCallTarget } from '../../../../com/oracle/truffle/api/RootCallTarget.d.ts'
 import type { TruffleObject } from '../../../../com/oracle/truffle/api/interop/TruffleObject.d.ts'
@@ -12,8 +13,8 @@ import type { RegexSource } from '../../../../com/oracle/truffle/regex/RegexSour
 import type { TruffleReadOnlyKeysArray } from '../../../../com/oracle/truffle/regex/util/TruffleReadOnlyKeysArray.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class RegexObject extends AbstractConstantKeysObject {
-    static createNamedCaptureGroupMapInt(paramnamedCaptureGroups: { [key: string]: number[] }): AbstractRegexObject;
-    static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: { [key: string]: number[] }): AbstractRegexObject;
+    static createNamedCaptureGroupMapInt(paramnamedCaptureGroups: JavaMap<string, number[]>): AbstractRegexObject;
+    static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: JavaMap<string, number[]>): AbstractRegexObject;
     constructor(language: RegexLanguage, source: RegexSource, execNode: RegexExecNode, flags: AbstractRegexObject, numberOfCaptureGroups: number, namedCaptureGroups: AbstractRegexObject)
     readonly backtracking: boolean;
     // private execBooleanRootCallTarget: RootCallTarget;

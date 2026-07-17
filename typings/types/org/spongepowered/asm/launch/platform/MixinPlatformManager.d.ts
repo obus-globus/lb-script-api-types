@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { CommandLineOptions } from '../../../../../org/spongepowered/asm/launch/platform/CommandLineOptions.d.ts'
 import type { MixinConnectorManager } from '../../../../../org/spongepowered/asm/launch/platform/MixinConnectorManager.d.ts'
@@ -7,7 +8,7 @@ import type { IMixinConfigSource } from '../../../../../org/spongepowered/asm/mi
 export class MixinPlatformManager extends Object {
     constructor()
     // private connectors: MixinConnectorManager;
-    // private containers: Map<IContainerHandle, MixinContainer>;
+    // private containers: JavaMap<IContainerHandle, MixinContainer>;
     // private injected: boolean;
     // private prepared: boolean;
     // private primaryContainer: MixinContainer;

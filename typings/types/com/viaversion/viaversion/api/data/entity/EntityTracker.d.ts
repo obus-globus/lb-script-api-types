@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { UserConnection } from '../../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { DimensionData } from '../../../../../../com/viaversion/viaversion/api/data/entity/DimensionData.d.ts'
 import type { StoredEntityData } from '../../../../../../com/viaversion/viaversion/api/data/entity/StoredEntityData.d.ts'
@@ -34,7 +35,7 @@ export interface EntityTracker extends Object{
     setCurrentMinY(arg0: number): void;
     setCurrentWorld(arg0: string): void;
     setCurrentWorldSectionHeight(arg0: number): void;
-    setDimensions(arg0: { [key: string]: DimensionData }): void;
+    setDimensions(arg0: JavaMap<string, DimensionData>): void;
     setInstaBuild(arg0: boolean): void;
     user(): UserConnection;
 }

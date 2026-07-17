@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { JsonElement } from '../../../../com/google/gson/JsonElement.d.ts'
 import type { JsonObject } from '../../../../com/google/gson/JsonObject.d.ts'
 import type { Channel } from '../../../../io/netty/channel/Channel.d.ts'
@@ -20,7 +21,7 @@ export class Connection extends SimpleChannelInboundHandler<JsonElement> {
     // private jsonRpcLogger: JsonRpcLogger;
     // private managementServer: ManagementServer;
     // private minecraftApi: MinecraftApi;
-    // private pendingRequests: { [key: string]: any };
+    // private pendingRequests: JavaMap<any, any>;
     // private transactionId: AtomicInteger;
     channelActive(ctx: ChannelHandlerContext): void;
     channelInactive(ctx: ChannelHandlerContext): void;

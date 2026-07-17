@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
@@ -18,11 +19,11 @@ export class FireworkStarRecipe extends CustomRecipe {
     static MAP_CODEC: MapCodec<FireworkStarRecipe>;
     static SERIALIZER: RecipeSerializer<FireworkStarRecipe>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, FireworkStarRecipe>;
-    constructor(shapes: Map<FireworkExplosion$Shape, Ingredient>, trail: Ingredient, twinkle: Ingredient, fuel: Ingredient, dye: Ingredient, result: ItemStackTemplate)
+    constructor(shapes: JavaMap<FireworkExplosion$Shape, Ingredient>, trail: Ingredient, twinkle: Ingredient, fuel: Ingredient, dye: Ingredient, result: ItemStackTemplate)
     // private dye: Ingredient;
     // private fuel: Ingredient;
     // private result: ItemStackTemplate;
-    // private shapes: Map<FireworkExplosion$Shape, Ingredient>;
+    // private shapes: JavaMap<FireworkExplosion$Shape, Ingredient>;
     // private trail: Ingredient;
     // private twinkle: Ingredient;
     assemble(input: CraftingInput): ItemStack;

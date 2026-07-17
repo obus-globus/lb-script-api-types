@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { KAnnotatedElement } from '../../kotlin/reflect/KAnnotatedElement.d.ts'
 import type { KParameter } from '../../kotlin/reflect/KParameter.d.ts'
@@ -15,5 +16,5 @@ export interface KCallable<R extends unknown> extends Object, KAnnotatedElement{
     readonly typeParameters: KTypeParameter[];
     readonly visibility: KVisibility | null;
     call(...args: (Object | null)[]): R;
-    callBy(args: Map<KParameter, Object | null>): R;
+    callBy(args: JavaMap<KParameter, Object | null>): R;
 }

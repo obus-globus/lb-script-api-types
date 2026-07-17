@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { Reader } from '../../../../java/io/Reader.d.ts'
 import type { URI } from '../../../../java/net/URI.d.ts'
@@ -25,7 +26,7 @@ export class PolyglotSourceDispatch extends AbstractPolyglotImpl$AbstractSourceD
     getLineStartOffset(impl: Object, lineNumber: number): number;
     getMimeType(impl: Object): string;
     getName(impl: Object): string;
-    getOptions(impl: Object): { [key: string]: string };
+    getOptions(impl: Object): JavaMap<string, string>;
     getOriginalURI(impl: Object): URI;
     getPath(impl: Object): string;
     getReader(impl: Object): Reader;

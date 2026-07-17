@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { GameProfile } from '../../../../com/mojang/authlib/GameProfile.d.ts'
 import type { CommandDispatcher } from '../../../../com/mojang/brigadier/CommandDispatcher.d.ts'
 import type { Runnable } from '../../../../java/lang/Runnable.d.ts'
@@ -239,7 +240,7 @@ export class ClientPacketListener extends ClientCommonPacketListenerImpl impleme
     // private nextChatIndex: number;
     // private onlineMode: boolean;
     // private pingDebugMonitor: PingDebugMonitor;
-    // private playerInfoMap: Map<UUID, PlayerInfo>;
+    // private playerInfoMap: JavaMap<UUID, PlayerInfo>;
     // private potionBrewing: PotionBrewing;
     // private random: RandomSource;
     // private recipes: ClientRecipeContainer;
@@ -288,7 +289,7 @@ export class ClientPacketListener extends ClientCommonPacketListenerImpl impleme
     getPlayerInfo(player: UUID): PlayerInfo;
     getPlayerInfo(player: string): PlayerInfo;
     getPlayerInfoIgnoreCase(player: string): PlayerInfo;
-    getSeenPlayers(): Map<UUID, PlayerInfo>;
+    getSeenPlayers(): JavaMap<UUID, PlayerInfo>;
     getServerData(): ServerData;
     getSuggestionsProvider(): ClientSuggestionProvider;
     getWaypointManager(): ClientWaypointManager;

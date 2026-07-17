@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { ChannelHandlerContext } from '../../../../../../../io/netty/channel/ChannelHandlerContext.d.ts'
 import type { SimpleChannelInboundHandler } from '../../../../../../../io/netty/channel/SimpleChannelInboundHandler.d.ts'
 import type { DatagramPacket } from '../../../../../../../io/netty/channel/socket/DatagramPacket.d.ts'
@@ -11,12 +12,12 @@ import type { RakServerChannel } from '../../../../../../../org/cloudburstmc/net
 export class RakServerRateLimiter extends SimpleChannelInboundHandler<DatagramPacket> {
     static NAME: string;
     constructor(arg0: RakServerChannel)
-    // private blockedConnections: Map<InetAddress, number>;
+    // private blockedConnections: JavaMap<InetAddress, number>;
     // private blockedTickFuture: ScheduledFuture<Object>;
     // private channel: RakServerChannel;
     // private exceptions: InetAddress[];
     // private globalCounter: AtomicLong;
-    // private rateLimitMap: Map<InetAddress, AtomicInteger>;
+    // private rateLimitMap: JavaMap<InetAddress, AtomicInteger>;
     // private tickFuture: ScheduledFuture<Object>;
     addException(arg0: InetAddress): void;
     blockAddress(arg0: InetAddress, arg1: number, arg2: TimeUnit): boolean;

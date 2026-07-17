@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { UResource$Key } from '../../../../com/ibm/icu/impl/UResource$Key.d.ts'
 import type { DateFormat$HourCycle } from '../../../../com/ibm/icu/text/DateFormat$HourCycle.d.ts'
 import type { DateTimePatternGenerator$DTPGflags } from '../../../../com/ibm/icu/text/DateTimePatternGenerator$DTPGflags.d.ts'
@@ -49,7 +50,7 @@ export class DateTimePatternGenerator extends Object implements Freezable<DateTi
     // private _distanceInfo: DateTimePatternGenerator$DistanceInfo;
     // private allowedHourFormats: string[];
     // private appendItemFormats: string[];
-    // private basePattern_pattern: { [key: string]: DateTimePatternGenerator$PatternWithSkeletonFlag };
+    // private basePattern_pattern: JavaMap<string, DateTimePatternGenerator$PatternWithSkeletonFlag>;
     // private cldrAvailableFormatKeys: string[];
     // private current: DateTimePatternGenerator$DateTimeMatcher;
     // private dateTimeFormats: string[];
@@ -58,7 +59,7 @@ export class DateTimePatternGenerator extends Object implements Freezable<DateTi
     // private fieldDisplayNames: string[][];
     // private fp: DateTimePatternGenerator$FormatParser;
     readonly frozen: boolean;
-    // private skeleton2pattern: Map<DateTimePatternGenerator$DateTimeMatcher, DateTimePatternGenerator$PatternWithSkeletonFlag>;
+    // private skeleton2pattern: JavaMap<DateTimePatternGenerator$DateTimeMatcher, DateTimePatternGenerator$PatternWithSkeletonFlag>;
     // private addCLDRData(arg0: DateTimePatternGenerator$PatternInfo, arg1: ULocale): void;
     // private addCanonicalItems(): void;
     // private addICUPatterns(arg0: DateTimePatternGenerator$PatternInfo, arg1: ULocale): void;
@@ -97,7 +98,7 @@ export class DateTimePatternGenerator extends Object implements Freezable<DateTi
     // private getSet(arg0: string): string[];
     getSkeleton(arg0: string): string;
     getSkeletonAllowingDuplicates(arg0: string): string;
-    getSkeletons(arg0: { [key: string]: string }): { [key: string]: string };
+    getSkeletons(arg0: JavaMap<string, string>): JavaMap<string, string>;
     // private getTopBitNumber(arg0: number): number;
     // private hackTimes(arg0: DateTimePatternGenerator$PatternInfo, arg1: string): void;
     // private initData(arg0: ULocale, arg1: boolean): void;

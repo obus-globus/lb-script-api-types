@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { TruffleContext } from '../../../../../com/oracle/truffle/api/TruffleContext.d.ts'
 import type { DebugContext } from '../../../../../com/oracle/truffle/api/debug/DebugContext.d.ts'
 import type { DebugContextsListener } from '../../../../../com/oracle/truffle/api/debug/DebugContextsListener.d.ts'
@@ -13,7 +14,7 @@ import type { Thread } from '../../../../../java/lang/Thread.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DebuggerExecutionLifecycle extends Object implements ContextsListener, ThreadsListener {
     constructor(session: DebuggerSession)
-    // private contextMap: Map<TruffleContext, DebugContext>;
+    // private contextMap: JavaMap<TruffleContext, DebugContext>;
     // private contextsBinding: EventBinding<ContextsListener>;
     // private contextsListener: DebugContextsListener;
     // private lifecycleInstrumenter: Instrumenter;

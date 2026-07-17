@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Transformation } from '../../../../../../com/mojang/math/Transformation.d.ts'
 import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -36,8 +37,8 @@ export class ItemModelUtils extends Object {
     static select<T extends unknown>(paramproperty: SelectItemModelProperty<T>, paramfallback: ItemModel$Unbaked, paramcases: SelectItemModel$SwitchCase<T>[]): ItemModel$Unbaked;
     static select<T extends unknown>(paramproperty: SelectItemModelProperty<T>, paramfallback: ItemModel$Unbaked, ...paramcases: SelectItemModel$SwitchCase<T>[]): ItemModel$Unbaked;
     static select<T extends unknown>(paramproperty: SelectItemModelProperty<T>, ...paramcases: SelectItemModel$SwitchCase<T>[]): ItemModel$Unbaked;
-    static selectBlockItemProperty<T extends Comparable<T>>(paramtransformation: Transformation, paramproperty: Property<T>, paramfallback: ItemModel$Unbaked, paramcases: Map<T, ItemModel$Unbaked>): ItemModel$Unbaked;
-    static selectBlockItemProperty<T extends Comparable<T>>(paramproperty: Property<T>, paramfallback: ItemModel$Unbaked, paramcases: Map<T, ItemModel$Unbaked>): ItemModel$Unbaked;
+    static selectBlockItemProperty<T extends Comparable<T>>(paramtransformation: Transformation, paramproperty: Property<T>, paramfallback: ItemModel$Unbaked, paramcases: JavaMap<T, ItemModel$Unbaked>): ItemModel$Unbaked;
+    static selectBlockItemProperty<T extends Comparable<T>>(paramproperty: Property<T>, paramfallback: ItemModel$Unbaked, paramcases: JavaMap<T, ItemModel$Unbaked>): ItemModel$Unbaked;
     static specialModel(parambase: Identifier, paramtransformation: Transformation, parammodel: SpecialModelRenderer$Unbaked<Object>): ItemModel$Unbaked;
     static specialModel(parambase: Identifier, paramtransformation: Optional<Transformation>, parammodel: SpecialModelRenderer$Unbaked<Object>): ItemModel$Unbaked;
     static specialModel(parambase: Identifier, parammodel: SpecialModelRenderer$Unbaked<Object>): ItemModel$Unbaked;

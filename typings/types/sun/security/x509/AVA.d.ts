@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Reader } from '../../../java/io/Reader.d.ts'
 import type { StringBuilder } from '../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
@@ -9,8 +10,8 @@ import type { ObjectIdentifier } from '../../../sun/security/util/ObjectIdentifi
 export class AVA extends Object implements DerEncoder {
     constructor(arg0: Reader)
     constructor(arg0: Reader, arg1: number)
-    constructor(arg0: Reader, arg1: number, arg2: { [key: string]: string })
-    constructor(arg0: Reader, arg1: { [key: string]: string })
+    constructor(arg0: Reader, arg1: number, arg2: JavaMap<string, string>)
+    constructor(arg0: Reader, arg1: JavaMap<string, string>)
     constructor(arg0: DerInputStream)
     constructor(arg0: DerValue)
     constructor(arg0: ObjectIdentifier, arg1: DerValue)
@@ -25,12 +26,12 @@ export class AVA extends Object implements DerEncoder {
     hashCode(): number;
     // private parseQuotedString(arg0: Reader, arg1: StringBuilder): DerValue;
     // private parseString(arg0: Reader, arg1: number, arg2: number, arg3: StringBuilder): DerValue;
-    // private toKeyword(arg0: number, arg1: { [key: string]: string }): string;
+    // private toKeyword(arg0: number, arg1: JavaMap<string, string>): string;
     // private toKeywordValueString(arg0: string, arg1: boolean): string;
     toRFC1779String(): string;
-    toRFC1779String(arg0: { [key: string]: string }): string;
+    toRFC1779String(arg0: JavaMap<string, string>): string;
     toRFC2253CanonicalString(): string;
     toRFC2253String(): string;
-    toRFC2253String(arg0: { [key: string]: string }): string;
+    toRFC2253String(arg0: JavaMap<string, string>): string;
     toString(): string;
 }

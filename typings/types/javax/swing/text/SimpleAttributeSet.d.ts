@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { ObjectInputStream } from '../../../java/io/ObjectInputStream.d.ts'
 import type { ObjectOutputStream } from '../../../java/io/ObjectOutputStream.d.ts'
 import type { Serializable } from '../../../java/io/Serializable.d.ts'
@@ -12,7 +13,7 @@ export class SimpleAttributeSet extends Object implements Serializable, MutableA
     static ResolveAttribute: Object;
     constructor()
     constructor(arg0: AttributeSet)
-    // private table: Map<Object, Object>;
+    // private table: JavaMap<Object, Object>;
     addAttribute(arg0: Object, arg1: Object): void;
     addAttributes(arg0: AttributeSet): void;
     clone(): Object;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { ByteBuffer } from '../../java/nio/ByteBuffer.d.ts'
 import type { Key } from '../../java/security/Key.d.ts'
 import type { Provider$Service } from '../../java/security/Provider$Service.d.ts'
@@ -9,13 +10,13 @@ import type { Iterator } from '../../java/util/Iterator.d.ts'
 export class Mac extends Object implements Cloneable {
     static getInstance(paramarg0: string): Mac;
     static getInstance(paramarg0: string, paramarg1: string): Mac;
-    static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): Mac;
-    constructor(arg0: MacSpi, arg1: { [key: string]: any }, arg2: string)
+    static getInstance(paramarg0: string, paramarg1: JavaMap<any, any>): Mac;
+    constructor(arg0: MacSpi, arg1: JavaMap<any, any>, arg2: string)
     readonly algorithm: string;
     // private firstService: Provider$Service;
     // private initialized: boolean;
     // private lock: Object;
-    readonly provider: { [key: string]: any };
+    readonly provider: JavaMap<any, any>;
     // private serviceIterator: Iterator<Provider$Service>;
     // private spi: MacSpi;
     chooseFirstProvider(): void;
@@ -26,7 +27,7 @@ export class Mac extends Object implements Cloneable {
     doFinal(arg0: number[], arg1: number): void;
     getAlgorithm(): string;
     getMacLength(): number;
-    getProvider(): { [key: string]: any };
+    getProvider(): JavaMap<any, any>;
     // private getProviderName(): string;
     init(arg0: Key): void;
     init(arg0: Key, arg1: AlgorithmParameterSpec): void;

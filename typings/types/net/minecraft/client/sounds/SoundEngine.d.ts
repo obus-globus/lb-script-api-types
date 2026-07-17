@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Multimap } from '../../../../com/google/common/collect/Multimap.d.ts'
 import type { DeviceList } from '../../../../com/mojang/blaze3d/audio/DeviceList.d.ts'
 import type { DeviceTracker } from '../../../../com/mojang/blaze3d/audio/DeviceTracker.d.ts'
@@ -31,9 +32,9 @@ export class SoundEngine extends Object {
     // private channelAccess: ChannelAccess;
     // private deviceTracker: DeviceTracker;
     // private executor: SoundEngineExecutor;
-    // private gainBySource: { [key: string]: any };
+    // private gainBySource: JavaMap<any, any>;
     // private instanceBySource: Multimap<SoundSource, SoundInstance>;
-    // private instanceToChannel: Map<SoundInstance, ChannelAccess$ChannelHandle>;
+    // private instanceToChannel: JavaMap<SoundInstance, ChannelAccess$ChannelHandle>;
     // private lastSeenDevices: DeviceList;
     // private library: Library;
     // private listener: Listener;
@@ -41,10 +42,10 @@ export class SoundEngine extends Object {
     // private loaded: boolean;
     // private options: Options;
     // private preloadQueue: Sound[];
-    // private queuedSounds: Map<SoundInstance, number>;
+    // private queuedSounds: JavaMap<SoundInstance, number>;
     // private queuedTickableSounds: TickableSoundInstance[];
     // private soundBuffers: SoundBufferLibrary;
-    // private soundDeleteTime: Map<SoundInstance, number>;
+    // private soundDeleteTime: JavaMap<SoundInstance, number>;
     // private soundManager: SoundManager;
     // private tickCount: number;
     // private tickingSounds: TickableSoundInstance[];

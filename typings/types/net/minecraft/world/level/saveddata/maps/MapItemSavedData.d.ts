@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Pair } from '../../../../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { ByteBuffer } from '../../../../../../java/nio/ByteBuffer.d.ts'
@@ -31,15 +32,15 @@ export class MapItemSavedData extends SavedData {
     static type(paramid: MapId): SavedDataType<MapItemSavedData>;
     private constructor(centerX: number, centerZ: number, scale: number, trackingPosition: boolean, unlimitedTracking: boolean, locked: boolean, dimension: ResourceKey<Level>)
     private constructor(dimension: ResourceKey<Level>, centerX: number, centerZ: number, scale: number, colors: ByteBuffer, trackingPosition: boolean, unlimitedTracking: boolean, locked: boolean, banners: MapBanner[], frames: MapFrame[])
-    // private bannerMarkers: { [key: string]: MapBanner };
+    // private bannerMarkers: JavaMap<string, MapBanner>;
     // private carriedBy: MapItemSavedData$HoldingPlayer[];
-    // private carriedByPlayers: Map<Player, MapItemSavedData$HoldingPlayer>;
+    // private carriedByPlayers: JavaMap<Player, MapItemSavedData$HoldingPlayer>;
     centerX: number;
     centerZ: number;
     colors: number[];
-    readonly decorations: { [key: string]: MapDecoration };
+    readonly decorations: JavaMap<string, MapDecoration>;
     dimension: ResourceKey<Level>;
-    // private frameMarkers: { [key: string]: MapFrame };
+    // private frameMarkers: JavaMap<string, MapFrame>;
     locked: boolean;
     scale: number;
     // private trackedDecorationCount: number;

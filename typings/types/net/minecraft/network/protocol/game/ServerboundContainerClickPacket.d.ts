@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { HashedStack } from '../../../../../net/minecraft/network/HashedStack.d.ts'
@@ -9,17 +10,17 @@ import type { ServerGamePacketListener } from '../../../../../net/minecraft/netw
 import type { ContainerInput } from '../../../../../net/minecraft/world/inventory/ContainerInput.d.ts'
 export class ServerboundContainerClickPacket extends Record implements Packet<ServerGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ServerboundContainerClickPacket>;
-    constructor(containerId: number, stateId: number, slotNum: number, buttonNum: number, containerInput: ContainerInput, changedSlots: { [key: string]: any }, carriedItem: HashedStack)
+    constructor(containerId: number, stateId: number, slotNum: number, buttonNum: number, containerInput: ContainerInput, changedSlots: JavaMap<any, any>, carriedItem: HashedStack)
     // private buttonNum: number;
     // private carriedItem: HashedStack;
-    // private changedSlots: { [key: string]: any };
+    // private changedSlots: JavaMap<any, any>;
     // private containerId: number;
     // private containerInput: ContainerInput;
     // private slotNum: number;
     // private stateId: number;
     buttonNum(): number;
     carriedItem(): HashedStack;
-    changedSlots(): { [key: string]: any };
+    changedSlots(): JavaMap<any, any>;
     containerId(): number;
     containerInput(): ContainerInput;
     equals(o: Object | null): boolean;

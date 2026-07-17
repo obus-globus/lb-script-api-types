@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -17,9 +18,9 @@ export class EntityPredicate extends Object {
     static wrap(paramsinglePredicate: Optional<EntityPredicate>): Optional<ContextAwarePredicate>;
     static wrap(paramsinglePredicate: EntityPredicate$Builder): ContextAwarePredicate;
     static wrap(paramsinglePredicate: EntityPredicate): ContextAwarePredicate;
-    constructor(parts: Map<Codec<EntitySubPredicate>, EntitySubPredicate>)
+    constructor(parts: JavaMap<Codec<EntitySubPredicate>, EntitySubPredicate>)
     // private combinedPart: EntitySubPredicate;
-    // private parts: Map<Codec<EntitySubPredicate>, EntitySubPredicate>;
+    // private parts: JavaMap<Codec<EntitySubPredicate>, EntitySubPredicate>;
     equals(o: Object | null): boolean;
     hashCode(): number;
     matches(level: ServerLevel, position: Vec3, entity: Entity): boolean;

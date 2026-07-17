@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { BigInteger } from '../../../java/math/BigInteger.d.ts'
 import type { Timestamp } from '../../../java/security/Timestamp.d.ts'
 import type { X509Certificate } from '../../../java/security/cert/X509Certificate.d.ts'
@@ -19,7 +20,7 @@ export class SignerInfo extends Object implements DerEncoder {
     constructor(arg0: DerInputStream, arg1: boolean)
     constructor(arg0: X500Name, arg1: BigInteger, arg2: AlgorithmId, arg3: PKCS9Attributes, arg4: AlgorithmId, arg5: number[], arg6: PKCS9Attributes)
     constructor(arg0: X500Name, arg1: BigInteger, arg2: AlgorithmId, arg3: AlgorithmId, arg4: number[])
-    // private algorithms: Map<AlgorithmId, SignerInfo$AlgorithmInfo>;
+    // private algorithms: JavaMap<AlgorithmId, SignerInfo$AlgorithmInfo>;
     authenticatedAttributes: PKCS9Attributes;
     certificateSerialNumber: BigInteger;
     digestAlgorithmId: AlgorithmId;

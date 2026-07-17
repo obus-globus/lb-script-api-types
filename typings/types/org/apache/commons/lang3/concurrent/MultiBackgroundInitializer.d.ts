@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ExecutorService } from '../../../../../java/util/concurrent/ExecutorService.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BackgroundInitializer } from '../../../../../org/apache/commons/lang3/concurrent/BackgroundInitializer.d.ts'
@@ -9,7 +10,7 @@ export class MultiBackgroundInitializer extends BackgroundInitializer<MultiBackg
     static builder<T extends unknown>(): BackgroundInitializer$Builder<BackgroundInitializer<T>, T>;
     constructor()
     constructor(arg0: ExecutorService)
-    // private childInitializers: { [key: string]: BackgroundInitializer<Object> };
+    // private childInitializers: JavaMap<string, BackgroundInitializer<Object>>;
     addInitializer(arg0: string, arg1: BackgroundInitializer<Object>): void;
     close(): void;
     getTaskCount(): number;

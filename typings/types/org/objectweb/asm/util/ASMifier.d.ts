@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { StringBuilder } from '../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Attribute } from '../../../../org/objectweb/asm/Attribute.d.ts'
@@ -14,7 +15,7 @@ export class ASMifier extends Printer {
     constructor()
     constructor(arg0: number, arg1: string, arg2: number)
     // private id: number;
-    // private labelNames: Map<Label, string>;
+    // private labelNames: JavaMap<Label, string>;
     // private name: string;
     // private appendAccessFlags(arg0: number): void;
     appendConstant(arg0: Object): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { AbstractMultimap } from '../../../../com/google/common/collect/AbstractMultimap.d.ts'
 import type { LinkedListMultimap$KeyList } from '../../../../com/google/common/collect/LinkedListMultimap$KeyList.d.ts'
 import type { LinkedListMultimap$Node } from '../../../../com/google/common/collect/LinkedListMultimap$Node.d.ts'
@@ -15,7 +16,7 @@ export class LinkedListMultimap<K extends unknown, V extends unknown> extends Ab
     static create<K extends unknown, V extends unknown>(paramexpectedKeys: number): LinkedListMultimap<K, V>;
     constructor()
     // private head: LinkedListMultimap$Node<K, V>;
-    // private keyToKeyList: Map<K, LinkedListMultimap$KeyList<K, V>>;
+    // private keyToKeyList: JavaMap<K, LinkedListMultimap$KeyList<K, V>>;
     // private modCount: number;
     // private size: number;
     // private tail: LinkedListMultimap$Node<K, V>;
@@ -23,7 +24,7 @@ export class LinkedListMultimap<K extends unknown, V extends unknown> extends Ab
     clear(): void;
     containsKey(key: Object): boolean;
     containsValue(value: Object): boolean;
-    createAsMap(): Map<K, V[]>;
+    createAsMap(): JavaMap<K, V[]>;
     createEntries(): Map$Entry<K, V>[];
     createKeySet(): K[];
     createKeys(): K[];

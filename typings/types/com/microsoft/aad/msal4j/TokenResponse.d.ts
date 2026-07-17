@@ -1,6 +1,7 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class TokenResponse extends Object {
-    constructor(arg0: { [key: string]: string })
+    constructor(arg0: JavaMap<string, string>)
     // private accessToken: string;
     // private clientInfo: string;
     // private expiresIn: number;

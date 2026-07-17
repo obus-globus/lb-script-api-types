@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { KParameter } from '../../../../kotlin/reflect/KParameter.d.ts'
 import type { KCallableOverriddenStorage } from '../../../../kotlin/reflect/jvm/internal/KCallableOverriddenStorage.d.ts'
@@ -11,6 +12,6 @@ export abstract class ReflectKCallableImpl<R extends unknown> extends Object imp
     /*not mapped: */ isOpen(): boolean;
     readonly overriddenStorage: KCallableOverriddenStorage;
     call(...args: (Object | null)[]): R;
-    callBy(args: Map<KParameter, Object | null>): R;
+    callBy(args: JavaMap<KParameter, Object | null>): R;
     getAbsentArguments(): (Object | null)[];
 }

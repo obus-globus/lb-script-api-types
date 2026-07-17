@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { AnnotationMirror } from '../../../../javax/lang/model/element/AnnotationMirror.d.ts'
 import type { ExecutableElement } from '../../../../javax/lang/model/element/ExecutableElement.d.ts'
 import type { IMixinContext } from '../../../../org/spongepowered/asm/mixin/refmap/IMixinContext.d.ts'
@@ -8,7 +9,7 @@ import type { AnnotationHandle } from '../../../../org/spongepowered/tools/obfus
 import type { InjectorRemap } from '../../../../org/spongepowered/tools/obfuscation/struct/InjectorRemap.d.ts'
 export class AnnotatedMixinElementHandlerInjector$AnnotatedElementInjectionPoint extends AnnotatedMixinElementHandler$AnnotatedElementExecutable {
     constructor(arg0: ExecutableElement, arg1: AnnotationHandle, arg2: IMixinContext, arg3: string, arg4: AnnotationHandle, arg5: InjectorRemap)
-    // private args: { [key: string]: string };
+    // private args: JavaMap<string, string>;
     readonly at: AnnotationHandle;
     // private state: InjectorRemap;
     getAt(): AnnotationHandle;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { DetectedObjects } from '../../../../../ai/djl/modality/cv/output/DetectedObjects.d.ts'
 import type { Rectangle } from '../../../../../ai/djl/modality/cv/output/Rectangle.d.ts'
 import type { ObjectDetectionTranslator } from '../../../../../ai/djl/modality/cv/translator/ObjectDetectionTranslator.d.ts'
@@ -7,7 +8,7 @@ import type { TranslatorContext } from '../../../../../ai/djl/translate/Translat
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class YoloV5Translator extends ObjectDetectionTranslator {
     static builder(): YoloV5Translator$Builder;
-    static builder(paramarg0: { [key: string]: Object }): YoloV5Translator$Builder;
+    static builder(paramarg0: JavaMap<string, Object>): YoloV5Translator$Builder;
     constructor(arg0: YoloV5Translator$Builder)
     // private nmsThreshold: number;
     // private yoloOutputLayerType: YoloV5Translator$YoloOutputType;

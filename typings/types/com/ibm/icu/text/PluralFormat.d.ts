@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { MessagePattern } from '../../../../com/ibm/icu/text/MessagePattern.d.ts'
 import type { NumberFormat } from '../../../../com/ibm/icu/text/NumberFormat.d.ts'
 import type { PluralFormat$PluralSelectorAdapter } from '../../../../com/ibm/icu/text/PluralFormat$PluralSelectorAdapter.d.ts'
@@ -31,7 +32,7 @@ export class PluralFormat extends UFormat {
     // private msgPattern: MessagePattern;
     readonly numberFormat: NumberFormat;
     // private offset: number;
-    // private parsedValues: { [key: string]: string };
+    // private parsedValues: JavaMap<string, string>;
     // private pattern: string;
     // private pluralRules: PluralRules;
     // private pluralRulesWrapper: PluralFormat$PluralSelectorAdapter;

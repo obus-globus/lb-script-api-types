@@ -1,8 +1,9 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Float2ReferenceRBTreeMap$Entry } from '../../../../../it/unimi/dsi/fastutil/floats/Float2ReferenceRBTreeMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Float2ReferenceRBTreeMap$TreeIterator extends Object {
-    constructor(null_: { [key: string]: any })
-    constructor(null_: { [key: string]: any }, arg1: number)
+    constructor(null_: JavaMap<any, any>)
+    constructor(null_: JavaMap<any, any>, arg1: number)
     // private curr: Float2ReferenceRBTreeMap$Entry<V>;
     // private index: number;
     // private next: Float2ReferenceRBTreeMap$Entry<V>;

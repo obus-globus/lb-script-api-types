@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Predicate } from '../../../../../../../java/util/function/Predicate.d.ts'
@@ -8,11 +9,11 @@ import type { StateDefinition } from '../../../../../../../net/minecraft/world/l
 import type { StateHolder } from '../../../../../../../net/minecraft/world/level/block/state/StateHolder.d.ts'
 export class KeyValueCondition extends Record implements Condition {
     static CODEC: Codec<KeyValueCondition>;
-    constructor(tests: { [key: string]: KeyValueCondition$Terms })
-    // private tests: { [key: string]: KeyValueCondition$Terms };
+    constructor(tests: JavaMap<string, KeyValueCondition$Terms>)
+    // private tests: JavaMap<string, KeyValueCondition$Terms>;
     equals(o: Object | null): boolean;
     hashCode(): number;
     instantiate<S extends StateHolder<O, S>, O extends unknown>(definition: StateDefinition<O, S>): (param0: S) => boolean;
-    tests(): { [key: string]: KeyValueCondition$Terms };
+    tests(): JavaMap<string, KeyValueCondition$Terms>;
     toString(): string;
 }

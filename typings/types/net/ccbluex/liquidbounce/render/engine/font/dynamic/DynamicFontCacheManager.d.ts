@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { AutoCloseable } from '../../../../../../../java/lang/AutoCloseable.d.ts'
 import type { Thread } from '../../../../../../../java/lang/Thread.d.ts'
 import type { AtomicBoolean } from '../../../../../../../java/util/concurrent/atomic/AtomicBoolean.d.ts'
@@ -11,7 +12,7 @@ import type { DynamicFontCacheManager$ChangeOnAtlas } from '../../../../../../..
 import type { DynamicGlyphPage } from '../../../../../../../net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.d.ts'
 export class DynamicFontCacheManager extends Object implements AutoCloseable {
     constructor(dynamicGlyphPage: DynamicGlyphPage)
-    // private cacheData: Map<GlyphIdentifier, CharCacheData>;
+    // private cacheData: JavaMap<GlyphIdentifier, CharCacheData>;
     // private dynamicGlyphPage: DynamicGlyphPage;
     // private glyphPageChanges: DynamicFontCacheManager$ChangeOnAtlas[];
     // private glyphPageDirtyFlag: AtomicBoolean;

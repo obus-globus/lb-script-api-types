@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Bee } from '../../../../../../net/minecraft/world/entity/animal/bee/Bee.d.ts'
@@ -10,7 +11,7 @@ export class Bee$BeePollinateGoal extends Bee$BaseBeeGoal {
     // private pollinating: boolean;
     // private pollinatingTicks: number;
     // private successfulPollinatingTicks: number;
-    // private unreachableFlowerCache: { [key: string]: any };
+    // private unreachableFlowerCache: JavaMap<any, any>;
     canBeeContinueToUse(): boolean;
     canBeeUse(): boolean;
     // private findNearbyFlower(): Optional<BlockPos>;

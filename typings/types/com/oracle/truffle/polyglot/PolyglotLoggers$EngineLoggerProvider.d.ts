@@ -1,12 +1,13 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { TruffleLogger } from '../../../../com/oracle/truffle/api/TruffleLogger.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Level } from '../../../../java/util/logging/Level.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { AbstractPolyglotImpl$LogHandler } from '../../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl$LogHandler.d.ts'
 export class PolyglotLoggers$EngineLoggerProvider extends Object implements Function<string, TruffleLogger> {
-    constructor(logHandler: AbstractPolyglotImpl$LogHandler, logLevels: { [key: string]: Level })
+    constructor(logHandler: AbstractPolyglotImpl$LogHandler, logLevels: JavaMap<string, Level>)
     // private logHandler: AbstractPolyglotImpl$LogHandler;
-    // private logLevels: { [key: string]: Level };
+    // private logLevels: JavaMap<string, Level>;
     // private loggers: Object;
     andThen<V extends unknown>(arg0: (param0: TruffleLogger) => V): (param0: string) => V;
     apply(loggerId: string): TruffleLogger;

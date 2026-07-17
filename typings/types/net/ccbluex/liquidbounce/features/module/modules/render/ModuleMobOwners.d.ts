@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { UUID } from '../../../../../../../java/util/UUID.d.ts'
 import type { ClientModule } from '../../../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
 import type { Style } from '../../../../../../../net/minecraft/network/chat/Style.d.ts'
@@ -18,7 +19,7 @@ export class ModuleMobOwners extends ClientModule {
     // private LOADING_TEXT: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     // private projectiles: boolean;
     // private /*not mapped: */ getProjectiles(): boolean;
-    // private uuidNameCache: Map<UUID, (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean>;
+    // private uuidNameCache: JavaMap<UUID, (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean>;
     // private getFromMojangApi(ownerId: UUID): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     getOwnerInfoText(entity: Entity | null): ((param0: (param0: number, param1: Style, param2: number) => boolean) => boolean) | null;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Reader } from '../../../../../java/io/Reader.d.ts'
 import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
 import type { SocketAddress } from '../../../../../java/net/SocketAddress.d.ts'
@@ -28,7 +29,7 @@ export class JfrProfiler extends Object implements JvmProfiler {
     private constructor()
     // private currentAverageTickTimeServer: number;
     // private currentFPS: number;
-    // private networkTrafficByAddress: { [key: string]: NetworkSummaryEvent$SumAggregation };
+    // private networkTrafficByAddress: JavaMap<string, NetworkSummaryEvent$SumAggregation>;
     // private periodicClientFps: () => void;
     // private periodicNetworkSummary: () => void;
     // private periodicServerTickTime: () => void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { FriendlyByteBuf } from '../../../../../net/minecraft/network/FriendlyByteBuf.d.ts'
@@ -9,8 +10,8 @@ import type { ResourceKey } from '../../../../../net/minecraft/resources/Resourc
 import type { GameRule } from '../../../../../net/minecraft/world/level/gamerules/GameRule.d.ts'
 export class ClientboundGameRuleValuesPacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundGameRuleValuesPacket>;
-    constructor(values: Map<ResourceKey<GameRule<Object>>, string>)
-    // private values: Map<ResourceKey<GameRule<Object>>, string>;
+    constructor(values: JavaMap<ResourceKey<GameRule<Object>>, string>)
+    // private values: JavaMap<ResourceKey<GameRule<Object>>, string>;
     equals(o: Object | null): boolean;
     handle(listener: ClientGamePacketListener): void;
     hashCode(): number;
@@ -18,5 +19,5 @@ export class ClientboundGameRuleValuesPacket extends Record implements Packet<Cl
     isTerminal(): boolean;
     toString(): string;
     type(): PacketType<ClientboundGameRuleValuesPacket>;
-    values(): Map<ResourceKey<GameRule<Object>>, string>;
+    values(): JavaMap<ResourceKey<GameRule<Object>>, string>;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { DeviceCode } from '../../../../com/microsoft/aad/msal4j/DeviceCode.d.ts'
 import type { DeviceCodeFlowParameters } from '../../../../com/microsoft/aad/msal4j/DeviceCodeFlowParameters.d.ts'
 import type { IAuthenticationResult } from '../../../../com/microsoft/aad/msal4j/IAuthenticationResult.d.ts'
@@ -12,12 +13,12 @@ export class DeviceCodeFlowRequest extends MsalRequest {
     // private futureReference: AtomicReference<CompletableFuture<IAuthenticationResult>>;
     // private parameters: DeviceCodeFlowParameters;
     // private scopesStr: string;
-    acquireDeviceCode(arg0: string, arg1: string, arg2: { [key: string]: string }, arg3: ServiceBundle): DeviceCode;
-    // private appendToHeaders(arg0: { [key: string]: string }): { [key: string]: string };
+    acquireDeviceCode(arg0: string, arg1: string, arg2: JavaMap<string, string>, arg3: ServiceBundle): DeviceCode;
+    // private appendToHeaders(arg0: JavaMap<string, string>): JavaMap<string, string>;
     createAuthenticationGrant(arg0: DeviceCode): void;
     // private createQueryParams(arg0: string): string;
     futureReference(): AtomicReference<CompletableFuture<IAuthenticationResult>>;
     parameters(): DeviceCodeFlowParameters;
-    // private parseJsonToDeviceCodeAndSetParameters(arg0: string, arg1: { [key: string]: string }, arg2: string): DeviceCode;
+    // private parseJsonToDeviceCodeAndSetParameters(arg0: string, arg1: JavaMap<string, string>, arg2: string): DeviceCode;
     scopesStr(): string;
 }

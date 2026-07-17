@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { TimeUnit } from '../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../../java/lang/Throwable.d.ts'
@@ -20,13 +21,13 @@ export class ThreadContextMapFilter extends MapFilter {
     static EMPTY_ARRAY: Filter[];
     static createFilter(parampairs: KeyValuePair[], paramoper: string, parammatch: Filter$Result, parammismatch: Filter$Result): MapFilter;
     static createFilter(parampairs: KeyValuePair[], paramoper: string, parammatch: Filter$Result, parammismatch: Filter$Result): ThreadContextMapFilter;
-    constructor(pairs: { [key: string]: string[] }, oper: boolean, onMatch: Filter$Result, onMismatch: Filter$Result)
+    constructor(pairs: JavaMap<string, string[]>, oper: boolean, onMatch: Filter$Result, onMismatch: Filter$Result)
     // private injector: ContextDataInjector;
     // private key: string;
     // private useMap: boolean;
     // private value: string;
     // private filter(): Filter$Result;
-    filter(data: { [key: string]: string }): boolean;
+    filter(data: JavaMap<string, string>): boolean;
     filter(event: LogEvent): Filter$Result;
     filter(logger: Logger, level: Level, marker: Marker, msg: Object, t: Throwable): Filter$Result;
     filter(logger: Logger, level: Level, marker: Marker, msg: string): Filter$Result;

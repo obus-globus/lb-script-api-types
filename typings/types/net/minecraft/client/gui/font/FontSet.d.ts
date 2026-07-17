@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { GlyphProvider } from '../../../../../com/mojang/blaze3d/font/GlyphProvider.d.ts'
 import type { GlyphProvider$Conditional } from '../../../../../com/mojang/blaze3d/font/GlyphProvider$Conditional.d.ts'
 import type { UnbakedGlyph$Stitcher } from '../../../../../com/mojang/blaze3d/font/UnbakedGlyph$Stitcher.d.ts'
@@ -20,7 +21,7 @@ export class FontSet extends Object implements AutoCloseable {
     // private anyGlyphs: GlyphSource;
     glyphCache: CodepointMap<FontSet$SelectedGlyphs>;
     // private glyphGetter: (param0: number) => FontSet$SelectedGlyphs;
-    // private glyphsByWidth: { [key: string]: any };
+    // private glyphsByWidth: JavaMap<any, any>;
     // private missingGlyph: BakedGlyph;
     // private missingGlyphGetter: () => BakedGlyph;
     // private missingSelectedGlyphs: FontSet$SelectedGlyphs;

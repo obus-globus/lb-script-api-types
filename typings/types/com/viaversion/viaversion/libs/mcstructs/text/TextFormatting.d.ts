@@ -1,12 +1,13 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { TextFormatting$Type } from '../../../../../../com/viaversion/viaversion/libs/mcstructs/text/TextFormatting$Type.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class TextFormatting extends Object {
-    static ALL: { [key: string]: TextFormatting };
+    static ALL: JavaMap<string, TextFormatting>;
     static AQUA: TextFormatting;
     static BLACK: TextFormatting;
     static BLUE: TextFormatting;
     static BOLD: TextFormatting;
-    static COLORS: { [key: string]: TextFormatting };
+    static COLORS: JavaMap<string, TextFormatting>;
     static COLOR_CHAR: string;
     static DARK_AQUA: TextFormatting;
     static DARK_BLUE: TextFormatting;
@@ -14,7 +15,7 @@ export class TextFormatting extends Object {
     static DARK_GREEN: TextFormatting;
     static DARK_PURPLE: TextFormatting;
     static DARK_RED: TextFormatting;
-    static FORMATTINGS: { [key: string]: TextFormatting };
+    static FORMATTINGS: JavaMap<string, TextFormatting>;
     static GOLD: TextFormatting;
     static GRAY: TextFormatting;
     static GREEN: TextFormatting;

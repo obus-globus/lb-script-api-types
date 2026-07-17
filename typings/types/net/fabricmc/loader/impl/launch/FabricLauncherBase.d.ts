@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { ClassLoader } from '../../../../../java/lang/ClassLoader.d.ts'
@@ -10,7 +11,7 @@ import type { MappingConfiguration } from '../../../../../net/fabricmc/loader/im
 export abstract class FabricLauncherBase extends Object implements FabricLauncher {
     static getClass(paramarg0: string): Class<Object>;
     static getLauncher(): FabricLauncher;
-    static getProperties(): { [key: string]: Object };
+    static getProperties(): JavaMap<string, Object>;
     static isMixinReady(): boolean;
     static setLauncher(paramarg0: FabricLauncher): void;
     constructor()

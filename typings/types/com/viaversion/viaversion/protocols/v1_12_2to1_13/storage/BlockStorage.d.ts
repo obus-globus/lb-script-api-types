@@ -1,10 +1,11 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { StorableObject } from '../../../../../../com/viaversion/viaversion/api/connection/StorableObject.d.ts'
 import type { BlockPosition } from '../../../../../../com/viaversion/viaversion/api/minecraft/BlockPosition.d.ts'
 import type { BlockStorage$ReplacementData } from '../../../../../../com/viaversion/viaversion/protocols/v1_12_2to1_13/storage/BlockStorage$ReplacementData.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class BlockStorage extends Object implements StorableObject {
     constructor()
-    // private blocks: { [key: string]: any };
+    // private blocks: JavaMap<any, any>;
     clear(): void;
     contains(arg0: BlockPosition): boolean;
     get(arg0: BlockPosition): BlockStorage$ReplacementData;

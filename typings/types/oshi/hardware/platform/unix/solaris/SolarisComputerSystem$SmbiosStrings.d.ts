@@ -1,6 +1,7 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class SolarisComputerSystem$SmbiosStrings extends Object {
-    private constructor(arg0: { [key: string]: string }, arg1: { [key: string]: string }, arg2: { [key: string]: string })
+    private constructor(arg0: JavaMap<string, string>, arg1: JavaMap<string, string>, arg2: JavaMap<string, string>)
     // private biosDate: string;
     // private biosVendor: string;
     // private biosVersion: string;

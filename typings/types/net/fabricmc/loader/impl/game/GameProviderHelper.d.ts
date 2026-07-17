@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ClassLoader } from '../../../../../java/lang/ClassLoader.d.ts'
 import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
@@ -8,8 +9,8 @@ import type { GameProviderHelper$FindResult } from '../../../../../net/fabricmc/
 import type { FabricLauncher } from '../../../../../net/fabricmc/loader/impl/launch/FabricLauncher.d.ts'
 export class GameProviderHelper extends Object {
     static addLibrary(paramarg0: string, paramarg1: Path[]): void;
-    static deobfuscate(paramarg0: { [key: string]: Path }, paramarg1: string, paramarg2: string, paramarg3: string, paramarg4: Path, paramarg5: FabricLauncher): { [key: string]: Path };
-    static findFirst(paramarg0: Path[], paramarg1: Map<Path, ZipFile>, paramarg2: boolean, ...paramarg3: string[]): GameProviderHelper$FindResult;
+    static deobfuscate(paramarg0: JavaMap<string, Path>, paramarg1: string, paramarg2: string, paramarg3: string, paramarg4: Path, paramarg5: FabricLauncher): JavaMap<string, Path>;
+    static findFirst(paramarg0: Path[], paramarg1: JavaMap<Path, ZipFile>, paramarg2: boolean, ...paramarg3: string[]): GameProviderHelper$FindResult;
     static getCommonGameJar(): Path;
     static getEnvGameJar(paramarg0: EnvType): Path;
     static getLibraries(paramarg0: string): Path[];

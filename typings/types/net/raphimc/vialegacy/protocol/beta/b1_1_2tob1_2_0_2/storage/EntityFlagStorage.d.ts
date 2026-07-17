@@ -1,8 +1,9 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { StorableObject } from '../../../../../../../com/viaversion/viaversion/api/connection/StorableObject.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class EntityFlagStorage extends Object implements StorableObject {
     constructor()
-    // private animationFlags: { [key: string]: any };
+    // private animationFlags: JavaMap<any, any>;
     getFlag(arg0: number, arg1: number): boolean;
     getFlagMask(arg0: number): number;
     onRemove(): void;

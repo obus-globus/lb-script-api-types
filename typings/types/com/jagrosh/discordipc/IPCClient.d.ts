@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { IPCClient$ApprovalMode } from '../../../com/jagrosh/discordipc/IPCClient$ApprovalMode.d.ts'
 import type { IPCClient$Event } from '../../../com/jagrosh/discordipc/IPCClient$Event.d.ts'
 import type { IPCListener } from '../../../com/jagrosh/discordipc/IPCListener.d.ts'
@@ -25,7 +26,7 @@ export class IPCClient extends Object implements Closeable {
     // private RECONNECT_TIME_MS: Backoff;
     readonly applicationId: string;
     readonly autoRegister: boolean;
-    // private callbacks: { [key: string]: Callback };
+    // private callbacks: JavaMap<string, Callback>;
     // private clientId: number;
     readonly debugMode: boolean;
     readonly encoding: string;

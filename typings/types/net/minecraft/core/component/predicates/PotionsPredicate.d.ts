@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -15,7 +16,7 @@ import type { PotionContents } from '../../../../../net/minecraft/world/item/alc
 export class PotionsPredicate extends Record implements SingleComponentItemPredicate<PotionContents> {
     static CODEC: Codec<PotionsPredicate>;
     static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<any>>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, JavaMap<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
     static potions(parampotions: Holder<Potion>[]): DataComponentPredicate;
     constructor(potions: Holder<Potion>[])
     // private potions: Holder<Potion>[];

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { MessageDigest } from '../../java/security/MessageDigest.d.ts'
 import type { SecureRandomParameters } from '../../java/security/SecureRandomParameters.d.ts'
 import type { SecureRandomSpi } from '../../java/security/SecureRandomSpi.d.ts'
@@ -7,19 +8,19 @@ export class SecureRandom extends Random {
     static from(paramarg0: RandomGenerator): Random;
     static getInstance(paramarg0: string): SecureRandom;
     static getInstance(paramarg0: string, paramarg1: string): SecureRandom;
-    static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): SecureRandom;
+    static getInstance(paramarg0: string, paramarg1: JavaMap<any, any>): SecureRandom;
     static getInstance(paramarg0: string, paramarg1: SecureRandomParameters): SecureRandom;
     static getInstance(paramarg0: string, paramarg1: SecureRandomParameters, paramarg2: string): SecureRandom;
-    static getInstance(paramarg0: string, paramarg1: SecureRandomParameters, paramarg2: { [key: string]: any }): SecureRandom;
+    static getInstance(paramarg0: string, paramarg1: SecureRandomParameters, paramarg2: JavaMap<any, any>): SecureRandom;
     static getInstanceStrong(): SecureRandom;
     static getSeed(paramarg0: number): number[];
     constructor()
-    constructor(arg0: SecureRandomSpi, arg1: { [key: string]: any })
+    constructor(arg0: SecureRandomSpi, arg1: JavaMap<any, any>)
     constructor(arg0: number[])
     readonly algorithm: string;
     // private counter: number;
     // private digest: MessageDigest;
-    readonly provider: { [key: string]: any };
+    readonly provider: JavaMap<any, any>;
     // private randomBytes: number[];
     // private randomBytesUsed: number;
     // private secureRandomSpi: SecureRandomSpi;
@@ -29,7 +30,7 @@ export class SecureRandom extends Random {
     getAlgorithm(): string;
     // private getDefaultPRNG(arg0: boolean, arg1: number[]): void;
     getParameters(): SecureRandomParameters;
-    getProvider(): { [key: string]: any };
+    getProvider(): JavaMap<any, any>;
     // private getProviderName(): string;
     // private getThreadSafe(): boolean;
     next(arg0: number): number;

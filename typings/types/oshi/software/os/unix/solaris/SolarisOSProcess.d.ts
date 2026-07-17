@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { SolarisLibc$SolarisPrUsage } from '../../../../../oshi/jna/platform/unix/SolarisLibc$SolarisPrUsage.d.ts'
 import type { SolarisLibc$SolarisPsInfo } from '../../../../../oshi/jna/platform/unix/SolarisLibc$SolarisPsInfo.d.ts'
@@ -11,7 +12,7 @@ export class SolarisOSProcess extends AbstractOSProcess {
     readonly bitness: () => number;
     readonly bytesRead: number;
     readonly bytesWritten: number;
-    // private cmdEnv: () => Pair<string[], { [key: string]: string }>;
+    // private cmdEnv: () => Pair<string[], JavaMap<string, string>>;
     readonly commandLine: () => string;
     // private commandLineBackup: string;
     readonly contextSwitches: number;
@@ -44,7 +45,7 @@ export class SolarisOSProcess extends AbstractOSProcess {
     getCommandLine(): string;
     getContextSwitches(): number;
     getCurrentWorkingDirectory(): string;
-    getEnvironmentVariables(): { [key: string]: string };
+    getEnvironmentVariables(): JavaMap<string, string>;
     getGroup(): string;
     getGroupID(): string;
     getHardOpenFileLimit(): number;
@@ -70,7 +71,7 @@ export class SolarisOSProcess extends AbstractOSProcess {
     getVirtualSize(): number;
     // private queryBitness(): number;
     // private queryCommandLine(): string;
-    // private queryCommandlineEnvironment(): Pair<string[], { [key: string]: string }>;
+    // private queryCommandlineEnvironment(): Pair<string[], JavaMap<string, string>>;
     // private queryPrUsage(): SolarisLibc$SolarisPrUsage;
     // private queryPsInfo(): SolarisLibc$SolarisPsInfo;
     updateAttributes(): boolean;

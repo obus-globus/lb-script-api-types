@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Comparator } from '../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Pair } from '../../../kotlin/Pair.d.ts'
@@ -50,7 +51,7 @@ export class ChannelsKt__DeprecatedKt extends Object {
     static takeWhile(paramarg0: ReceiveChannel<Object>, paramarg1: CoroutineContext, paramarg2: (param0: Object | null, param1: Object | null) => Object | null): ReceiveChannel<Object>;
     static toChannel<E extends unknown, C extends SendChannel<Object>>(paramarg0: ReceiveChannel<E>, paramarg1: C, paramarg2: Continuation<Object>): Object;
     static toCollection<E extends unknown, C extends Object[]>(paramarg0: ReceiveChannel<E>, paramarg1: C, paramarg2: Continuation<Object>): Object;
-    static toMap<K extends unknown, V extends unknown, M extends Map<Object, Object>>(paramarg0: ReceiveChannel<Pair<K, V>>, paramarg1: M, paramarg2: Continuation<Object>): Object;
+    static toMap<K extends unknown, V extends unknown, M extends JavaMap<Object, Object>>(paramarg0: ReceiveChannel<Pair<K, V>>, paramarg1: M, paramarg2: Continuation<Object>): Object;
     static toMap(paramarg0: ReceiveChannel<Object>, paramarg1: Continuation<Object>): Object;
     static toMutableList(paramarg0: ReceiveChannel<Object>, paramarg1: Continuation<Object>): Object;
     static toMutableSet<E extends unknown>(paramarg0: ReceiveChannel<E>, paramarg1: Continuation<Object>): Object;

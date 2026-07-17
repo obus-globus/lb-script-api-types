@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { MappedElementKind } from '../../../../../../../net/fabricmc/loader/impl/lib/mappingio/MappedElementKind.d.ts'
 import type { MappingFlag } from '../../../../../../../net/fabricmc/loader/impl/lib/mappingio/MappingFlag.d.ts'
 import type { MappingVisitor } from '../../../../../../../net/fabricmc/loader/impl/lib/mappingio/MappingVisitor.d.ts'
@@ -5,7 +6,7 @@ import type { ForwardingMappingVisitor } from '../../../../../../../net/fabricmc
 export class MappingSourceNsSwitch extends ForwardingMappingVisitor {
     constructor(arg0: MappingVisitor, arg1: string, arg2: boolean)
     // private argIdx: number;
-    // private classMap: { [key: string]: string };
+    // private classMap: JavaMap<string, string>;
     // private classMapReady: boolean;
     // private dropMissingNewSrcName: boolean;
     // private dstDescs: string[];

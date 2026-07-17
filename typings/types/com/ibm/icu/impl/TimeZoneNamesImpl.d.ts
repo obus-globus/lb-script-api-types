@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ICUResourceBundle } from '../../../../com/ibm/icu/impl/ICUResourceBundle.d.ts'
 import type { TextTrieMap } from '../../../../com/ibm/icu/impl/TextTrieMap.d.ts'
 import type { TimeZoneNamesImpl$NameInfo } from '../../../../com/ibm/icu/impl/TimeZoneNamesImpl$NameInfo.d.ts'
@@ -17,11 +18,11 @@ export class TimeZoneNamesImpl extends TimeZoneNames {
     static getInstance(paramarg0: Locale): TimeZoneNames;
     static getTZDBInstance(paramarg0: ULocale): TimeZoneNames;
     constructor(arg0: ULocale)
-    // private _mzNamesMap: { [key: string]: TimeZoneNamesImpl$ZNames };
+    // private _mzNamesMap: JavaMap<string, TimeZoneNamesImpl$ZNames>;
     // private _namesFullyLoaded: boolean;
     // private _namesTrie: TextTrieMap<TimeZoneNamesImpl$NameInfo>;
     // private _namesTrieFullyLoaded: boolean;
-    // private _tzNamesMap: { [key: string]: TimeZoneNamesImpl$ZNames };
+    // private _tzNamesMap: JavaMap<string, TimeZoneNamesImpl$ZNames>;
     // private _zoneStrings: ICUResourceBundle;
     // private addAllNamesIntoTrie(): void;
     // private doFind(arg0: TimeZoneNamesImpl$NameSearchHandler, arg1: CharSequence, arg2: number): TimeZoneNames$MatchInfo[];

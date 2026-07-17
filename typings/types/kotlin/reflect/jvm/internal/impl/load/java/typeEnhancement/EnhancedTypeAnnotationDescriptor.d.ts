@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { SourceElement } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/SourceElement.d.ts'
 import type { AnnotationDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/annotations/AnnotationDescriptor.d.ts'
@@ -8,7 +9,7 @@ import type { KotlinType } from '../../../../../../../../kotlin/reflect/jvm/inte
 export class EnhancedTypeAnnotationDescriptor extends Object implements AnnotationDescriptor {
     static INSTANCE: EnhancedTypeAnnotationDescriptor;
     private constructor()
-    getAllValueArguments(): Map<Name, ConstantValue<Object>>;
+    getAllValueArguments(): JavaMap<Name, ConstantValue<Object>>;
     getFqName(): FqName;
     getSource(): SourceElement;
     getType(): KotlinType;

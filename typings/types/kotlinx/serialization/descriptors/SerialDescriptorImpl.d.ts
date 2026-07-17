@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Annotation } from '../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { ClassSerialDescriptorBuilder } from '../../../kotlinx/serialization/descriptors/ClassSerialDescriptorBuilder.d.ts'
@@ -17,7 +18,7 @@ export class SerialDescriptorImpl extends Object implements SerialDescriptor, Ca
     /*not mapped: */ isInline(): boolean;
     /*not mapped: */ isNullable(): boolean;
     readonly kind: SerialKind;
-    // private name2Index: { [key: string]: number };
+    // private name2Index: JavaMap<string, number>;
     readonly serialName: string;
     readonly serialNames: string[];
     // private typeParametersDescriptors: SerialDescriptor[];

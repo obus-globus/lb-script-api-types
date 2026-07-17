@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ChannelHandlerContext } from '../../../../io/netty/channel/ChannelHandlerContext.d.ts'
 import type { ChannelPromise } from '../../../../io/netty/channel/ChannelPromise.d.ts'
 import type { AbstractTrafficShapingHandler } from '../../../../io/netty/handler/traffic/AbstractTrafficShapingHandler.d.ts'
@@ -13,7 +14,7 @@ export class GlobalTrafficShapingHandler extends AbstractTrafficShapingHandler {
     constructor(arg0: ScheduledExecutorService, arg1: number, arg2: number)
     constructor(arg0: ScheduledExecutorService, arg1: number, arg2: number, arg3: number)
     constructor(arg0: ScheduledExecutorService, arg1: number, arg2: number, arg3: number, arg4: number)
-    // private channelQueues: { [key: number]: GlobalTrafficShapingHandler$PerChannel };
+    // private channelQueues: JavaMap<number, GlobalTrafficShapingHandler$PerChannel>;
     maxGlobalWriteSize: number;
     // private queuesSize: AtomicLong;
     checkWaitReadTime(arg0: ChannelHandlerContext, arg1: number, arg2: number): number;

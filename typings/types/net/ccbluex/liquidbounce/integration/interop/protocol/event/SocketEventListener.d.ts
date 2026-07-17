@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { ThreadLocal } from '../../../../../../../java/lang/ThreadLocal.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
@@ -9,8 +10,8 @@ import type { StringBuilderWriter } from '../../../../../../../org/apache/common
 export class SocketEventListener extends Object implements EventListener {
     static INSTANCE: SocketEventListener;
     readonly debugDisplayName: Component;
-    // private events: { [key: string]: Class<Event> };
-    // private registeredEvents: Map<Class<Event>, EventHook<Event>>;
+    // private events: JavaMap<string, Class<Event>>;
+    // private registeredEvents: JavaMap<Class<Event>, EventHook<Event>>;
     readonly running: boolean;
     // private writeBuffer: ThreadLocal<StringBuilderWriter>;
     children(): EventListener[];

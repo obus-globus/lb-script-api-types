@@ -1,6 +1,7 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Appender } from '../../../../../../org/apache/logging/log4j/core/Appender.d.ts'
 export class AppendersPlugin extends Object {
-    static createAppenders(paramappenders: Appender[]): { [key: string]: Appender };
+    static createAppenders(paramappenders: Appender[]): JavaMap<string, Appender>;
     private constructor()
 }

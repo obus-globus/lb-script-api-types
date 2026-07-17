@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { NetworkInterface } from '../../../java/net/NetworkInterface.d.ts'
 import type { Supplier } from '../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
@@ -16,7 +17,7 @@ export abstract class AbstractNetworkIF extends Object implements NetworkIF {
     // private networkInterface: NetworkInterface;
     readonly prefixLengths: number[];
     readonly subnetMasks: number[];
-    // private vmMacAddrProps: () => { [key: string]: any };
+    // private vmMacAddrProps: () => JavaMap<any, any>;
     getBytesRecv(): number;
     getBytesSent(): number;
     getCollisions(): number;

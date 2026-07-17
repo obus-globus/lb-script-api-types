@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { FabricRenderState } from '../../../../../net/fabricmc/fabric/api/client/rendering/v1/FabricRenderState.d.ts'
@@ -22,7 +23,7 @@ export class MovingBlockRenderState extends Object implements FabricRenderState,
     cardinalLighting: CardinalLighting;
     lightEngine: LevelLightEngine;
     randomSeedPos: BlockPos;
-    // private renderStateData: Map<Object | null, Object | null>;
+    // private renderStateData: JavaMap<Object | null, Object | null>;
     clearExtraData(): void;
     getBiomeFabric(arg0: BlockPos): Holder<Object>;
     getBlockEntity(pos: BlockPos): BlockEntity;

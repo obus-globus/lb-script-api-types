@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { CompletableFuture } from '../../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { ExecutorService } from '../../../../../../java/util/concurrent/ExecutorService.d.ts'
@@ -26,14 +27,14 @@ export class TinyRemapper extends Object {
     // private analyzeVisitors: TinyRemapper$AnalyzeVisitorProvider[];
     // private check: boolean;
     // private checkPackageAccess: boolean;
-    // private classMap: { [key: string]: string };
+    // private classMap: JavaMap<string, string>;
     // private classesToMakePublic: ClassInstance[];
-    // private conflicts: Map<MemberInstance, string[]>;
+    // private conflicts: JavaMap<MemberInstance, string[]>;
     // private defaultState: TinyRemapper$MrjState;
     // private dirty: boolean;
     // private disableLocalVariableTracking: boolean;
     // private extraRemapper: Remapper;
-    // private fieldMap: { [key: string]: string };
+    // private fieldMap: JavaMap<string, string>;
     // private fixPackageAccess: boolean;
     // private forcePropagation: string[];
     // private ignoreConflicts: boolean;
@@ -45,23 +46,23 @@ export class TinyRemapper extends Object {
     readonly logger: TrLogger;
     // private mappingProviders: (param0: IMappingProvider$MappingAcceptor) => void[];
     // private membersToMakePublic: MemberInstance[];
-    // private methodArgMap: { [key: string]: string };
-    // private methodMap: { [key: string]: string };
-    // private methodVarMap: { [key: string]: string };
-    // private mrjStates: { [key: number]: TinyRemapper$MrjState };
-    // private outputBuffer: Map<ClassInstance, number[]>;
+    // private methodArgMap: JavaMap<string, string>;
+    // private methodMap: JavaMap<string, string>;
+    // private methodVarMap: JavaMap<string, string>;
+    // private mrjStates: JavaMap<number, TinyRemapper$MrjState>;
+    // private outputBuffer: JavaMap<ClassInstance, number[]>;
     // private pendingReads: CompletableFuture<Object>[];
     // private postApplyVisitors: TinyRemapper$ApplyVisitorProvider[];
     // private preApplyVisitors: TinyRemapper$ApplyVisitorProvider[];
     // private propagateBridges: TinyRemapper$LinkedMethodPropagation;
     // private propagatePrivate: boolean;
     // private propagateRecordComponents: TinyRemapper$LinkedMethodPropagation;
-    // private readClasses: { [key: string]: ClassInstance };
+    // private readClasses: JavaMap<string, ClassInstance>;
     // private rebuildSourceFilenames: boolean;
     // private removeFrames: boolean;
     // private renameInvalidLocals: boolean;
     // private resolveMissing: boolean;
-    // private singleInputTags: AtomicReference<Map<InputTag, InputTag[]>>;
+    // private singleInputTags: AtomicReference<JavaMap<InputTag, InputTag[]>>;
     // private skipLocalMapping: boolean;
     // private stateProcessors: TinyRemapper$StateProcessor[];
     // private threadCount: number;

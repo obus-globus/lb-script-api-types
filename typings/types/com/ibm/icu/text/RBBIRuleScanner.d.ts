@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { RBBINode } from '../../../../com/ibm/icu/text/RBBINode.d.ts'
 import type { RBBIRuleBuilder } from '../../../../com/ibm/icu/text/RBBIRuleBuilder.d.ts'
 import type { RBBIRuleScanner$RBBIRuleChar } from '../../../../com/ibm/icu/text/RBBIRuleScanner$RBBIRuleChar.d.ts'
@@ -22,7 +23,7 @@ export class RBBIRuleScanner extends Object {
     // private fRuleNum: number;
     // private fRuleSets: string[][];
     // private fScanIndex: number;
-    // private fSetTable: { [key: string]: RBBIRuleScanner$RBBISetTableEl };
+    // private fSetTable: JavaMap<string, RBBIRuleScanner$RBBISetTableEl>;
     // private fStack: number[];
     // private fStackPtr: number;
     // private fSymbolTable: RBBISymbolTable;

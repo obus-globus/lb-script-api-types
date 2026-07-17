@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { BiPredicate } from '../../../../../../java/util/function/BiPredicate.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BiomeModificationContext$MobSpawnSettingsContext } from '../../../../../../net/fabricmc/fabric/api/biome/v1/BiomeModificationContext$MobSpawnSettingsContext.d.ts'
@@ -9,7 +10,7 @@ import type { MobSpawnSettings } from '../../../../../../net/minecraft/world/lev
 import type { MobSpawnSettings$SpawnerData } from '../../../../../../net/minecraft/world/level/biome/MobSpawnSettings$SpawnerData.d.ts'
 export class BiomeModificationContextImpl$SpawnSettingsContextImpl extends Object implements BiomeModificationContext$MobSpawnSettingsContext {
     constructor(null_: BiomeModificationContextImpl)
-    // private fabricSpawners: Map<MobCategory, Weighted<MobSpawnSettings$SpawnerData>[]>;
+    // private fabricSpawners: JavaMap<MobCategory, Weighted<MobSpawnSettings$SpawnerData>[]>;
     // private spawnSettings: MobSpawnSettings;
     addMobCharge(arg0: EntityType<any>, arg1: number, arg2: number): void;
     addSpawn(arg0: MobCategory, arg1: MobSpawnSettings$SpawnerData, arg2: number): void;

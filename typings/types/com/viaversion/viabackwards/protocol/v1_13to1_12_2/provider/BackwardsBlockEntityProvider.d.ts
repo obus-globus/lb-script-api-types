@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Tag } from '../../../../../../com/viaversion/nbt/tag/Tag.d.ts'
 import type { BackwardsBlockEntityProvider$BackwardsBlockEntityHandler } from '../../../../../../com/viaversion/viabackwards/protocol/v1_13to1_12_2/provider/BackwardsBlockEntityProvider$BackwardsBlockEntityHandler.d.ts'
 import type { UserConnection } from '../../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
@@ -7,7 +8,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class BackwardsBlockEntityProvider extends Object implements Provider {
     constructor()
-    // private handlers: { [key: string]: (param0: number, param1: Map$Entry<string, Tag>[]) => Map$Entry<string, Tag>[] };
+    // private handlers: JavaMap<string, (param0: number, param1: Map$Entry<string, Tag>[]) => Map$Entry<string, Tag>[]>;
     isHandled(arg0: string): boolean;
     transform(arg0: UserConnection, arg1: BlockPosition, arg2: Map$Entry<string, Tag>[]): Map$Entry<string, Tag>[];
     transform(arg0: UserConnection, arg1: BlockPosition, arg2: string): Map$Entry<string, Tag>[];

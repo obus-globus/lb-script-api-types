@@ -1,8 +1,9 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Double2FloatRBTreeMap$Entry } from '../../../../../it/unimi/dsi/fastutil/doubles/Double2FloatRBTreeMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Double2FloatRBTreeMap$TreeIterator extends Object {
-    constructor(null_: { [key: string]: any })
-    constructor(null_: { [key: string]: any }, arg1: number)
+    constructor(null_: JavaMap<any, any>)
+    constructor(null_: JavaMap<any, any>, arg1: number)
     // private curr: Double2FloatRBTreeMap$Entry;
     // private index: number;
     // private next: Double2FloatRBTreeMap$Entry;

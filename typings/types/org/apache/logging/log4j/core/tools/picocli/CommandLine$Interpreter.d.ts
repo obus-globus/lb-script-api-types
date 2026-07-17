@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { Field } from '../../../../../../../java/lang/reflect/Field.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
@@ -7,15 +8,15 @@ import type { CommandLine$Range } from '../../../../../../../org/apache/logging/
 export class CommandLine$Interpreter extends Object {
     constructor(null_: CommandLine, command: Object)
     // private command: Object;
-    // private commands: { [key: string]: CommandLine };
-    // private converterRegistry: Map<Class<Object>, CommandLine$ITypeConverter<Object>>;
+    // private commands: JavaMap<string, CommandLine>;
+    // private converterRegistry: JavaMap<Class<Object>, CommandLine$ITypeConverter<Object>>;
     // private isHelpRequested: boolean;
-    // private optionName2Field: { [key: string]: Field };
+    // private optionName2Field: JavaMap<string, Field>;
     // private position: number;
     // private positionalParametersFields: Field[];
     // private requiredFields: Field[];
     // private separator: string;
-    // private singleCharOption2Field: { [key: string]: Field };
+    // private singleCharOption2Field: JavaMap<string, Field>;
     // private applyOption(field: Field, annotation: Class<Object>, arity: CommandLine$Range, valueAttachedToOption: boolean, args: string[], initialized: Field[], argDescription: string): number;
     // private applyValueToSingleValuedField(field: Field, arity: CommandLine$Range, args: string[], cls: Class<Object>, initialized: Field[], argDescription: string): number;
     // private applyValuesToArrayField(field: Field, annotation: Class<Object>, arity: CommandLine$Range, args: string[], cls: Class<Object>, argDescription: string): number;
@@ -24,11 +25,11 @@ export class CommandLine$Interpreter extends Object {
     // private assertNoMissingParameters(field: Field, arity: number, args: string[]): void;
     // private checkMaxArityExceeded(arity: CommandLine$Range, remainder: number, field: Field, values: string[]): void;
     // private consumeArguments(field: Field, annotation: Class<Object>, arity: CommandLine$Range, args: string[], type: Class<Object>, originalSize: number, argDescription: string): Object[];
-    // private consumeMapArguments(field: Field, arity: CommandLine$Range, args: string[], classes: Class<Object>[], keyConverter: CommandLine$ITypeConverter<Object>, valueConverter: CommandLine$ITypeConverter<Object>, result: Map<Object, Object>, argDescription: string): void;
+    // private consumeMapArguments(field: Field, arity: CommandLine$Range, args: string[], classes: Class<Object>[], keyConverter: CommandLine$ITypeConverter<Object>, valueConverter: CommandLine$ITypeConverter<Object>, result: JavaMap<Object, Object>, argDescription: string): void;
     // private consumeOneArgument(field: Field, arity: CommandLine$Range, args: string[], type: Class<Object>, result: Object[], index: number, originalSize: number, argDescription: string): number;
-    // private consumeOneMapArgument(field: Field, arity: CommandLine$Range, args: string[], classes: Class<Object>[], keyConverter: CommandLine$ITypeConverter<Object>, valueConverter: CommandLine$ITypeConverter<Object>, result: Map<Object, Object>, index: number, argDescription: string): void;
+    // private consumeOneMapArgument(field: Field, arity: CommandLine$Range, args: string[], classes: Class<Object>[], keyConverter: CommandLine$ITypeConverter<Object>, valueConverter: CommandLine$ITypeConverter<Object>, result: JavaMap<Object, Object>, index: number, argDescription: string): void;
     // private createCollection(collectionClass: Class<Object>): Object[];
-    // private createMap(mapClass: Class<Object>): Map<Object, Object>;
+    // private createMap(mapClass: Class<Object>): JavaMap<Object, Object>;
     // private getTypeConverter(type: Class<Object>, field: Field): CommandLine$ITypeConverter<Object>;
     // private handleUnmatchedArguments(args: string[]): void;
     // private handleUnmatchedArguments(arg: string): void;

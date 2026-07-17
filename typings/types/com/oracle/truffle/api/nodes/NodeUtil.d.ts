@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { NodeUtil$NodeCountFilter } from '../../../../../com/oracle/truffle/api/nodes/NodeUtil$NodeCountFilter.d.ts'
 import type { NodeVisitor } from '../../../../../com/oracle/truffle/api/nodes/NodeVisitor.d.ts'
@@ -12,8 +13,8 @@ export class NodeUtil extends Object {
     static assertRecursion(paramnode: Node, parammaxRecursion: number): boolean;
     static cloneNode<T extends Node>(paramorig: T): T;
     static collectFieldNames(paramclazz: Class<Node>): string[];
-    static collectNodeChildren(paramnode: Node): { [key: string]: Node };
-    static collectNodeProperties(paramnode: Node): { [key: string]: Object };
+    static collectNodeChildren(paramnode: Node): JavaMap<string, Node>;
+    static collectNodeProperties(paramnode: Node): JavaMap<string, Object>;
     static collectNodes(paramparent: Node, paramchild: Node): Node[];
     static concat<T extends unknown>(paramfirst: T[], paramsecond: T[]): T[];
     static countNodes(paramroot: Node): number;

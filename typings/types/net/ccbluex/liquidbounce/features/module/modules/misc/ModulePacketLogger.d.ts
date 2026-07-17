@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { File } from '../../../../../../../java/io/File.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { Field } from '../../../../../../../java/lang/reflect/Field.d.ts'
@@ -22,10 +23,10 @@ import type { Identifier } from '../../../../../../../net/minecraft/resources/Id
  */
 export class ModulePacketLogger extends ClientModule {
     static INSTANCE: ModulePacketLogger;
-    // private classNames: Map<Class<Packet<any>>, string>;
+    // private classNames: JavaMap<Class<Packet<any>>, string>;
     // private clientPackets: Identifier[];
     // private /*not mapped: */ getClientPackets(): Identifier[];
-    // private fieldNames: Map<Field, string>;
+    // private fieldNames: JavaMap<Field, string>;
     // private filter: Filter;
     // private /*not mapped: */ getFilter(): Filter;
     // private outputDir: File;

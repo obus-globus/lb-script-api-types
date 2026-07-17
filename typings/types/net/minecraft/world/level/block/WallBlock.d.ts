@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
@@ -44,7 +45,7 @@ export class WallBlock extends Block implements SimpleWaterloggedBlock {
     static INDESTRUCTIBLE: number;
     static INSTANT: number;
     static NORTH: EnumProperty<WallSide>;
-    static PROPERTY_BY_DIRECTION: Map<Direction, EnumProperty<WallSide>>;
+    static PROPERTY_BY_DIRECTION: JavaMap<Direction, EnumProperty<WallSide>>;
     static SOUTH: EnumProperty<WallSide>;
     static UP: BooleanProperty;
     static UPDATE_ALL: number;
@@ -99,7 +100,7 @@ export class WallBlock extends Block implements SimpleWaterloggedBlock {
     // private shapes: (param0: BlockState) => VoxelShape;
     // private viaFabricPlus$collision_shape_r1_12_2: VoxelShape[];
     // private viaFabricPlus$outline_shape_r1_12_2: VoxelShape[];
-    // private viaFabricPlus$shapeIndexCache_r1_12_2: { [key: string]: any };
+    // private viaFabricPlus$shapeIndexCache_r1_12_2: JavaMap<any, any>;
     canPlaceLiquid(user: LivingEntity, level: BlockGetter, pos: BlockPos, state: BlockState, type: Fluid): boolean;
     codec(): MapCodec<WallBlock>;
     // private connectsTo(state: BlockState, faceSolid: boolean, direction: Direction): boolean;

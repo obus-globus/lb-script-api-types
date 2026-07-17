@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Function } from '../../../com/sun/jna/Function.d.ts'
 import type { Pointer } from '../../../com/sun/jna/Pointer.d.ts'
 import type { SymbolProvider } from '../../../com/sun/jna/SymbolProvider.d.ts'
@@ -11,18 +12,18 @@ export class NativeLibrary extends Object implements Closeable {
     static addSearchPath(paramarg0: string, paramarg1: string): void;
     static getInstance(paramarg0: string): NativeLibrary;
     static getInstance(paramarg0: string, paramarg1: ClassLoader): NativeLibrary;
-    static getInstance(paramarg0: string, paramarg1: { [key: string]: Object }): NativeLibrary;
+    static getInstance(paramarg0: string, paramarg1: JavaMap<string, Object>): NativeLibrary;
     static getProcess(): NativeLibrary;
-    static getProcess(paramarg0: { [key: string]: Object }): NativeLibrary;
-    private constructor(arg0: string, arg1: string, arg2: number, arg3: { [key: string]: Object | null })
+    static getProcess(paramarg0: JavaMap<string, Object>): NativeLibrary;
+    private constructor(arg0: string, arg1: string, arg2: number, arg3: JavaMap<string, Object | null>)
     // private callFlags: number;
     // private cleanable: Cleaner$Cleanable;
     // private encoding: string;
-    // private functions: { [key: string]: Function };
+    // private functions: JavaMap<string, Function>;
     // private handle: number;
     // private libraryName: string;
     // private libraryPath: string;
-    readonly options: { [key: string]: Object | null };
+    readonly options: JavaMap<string, Object | null>;
     // private symbolProvider: SymbolProvider;
     close(): void;
     dispose(): void;
@@ -34,7 +35,7 @@ export class NativeLibrary extends Object implements Closeable {
     getGlobalVariableAddress(arg0: string): Pointer;
     // private getLibraryName(arg0: string): string;
     getName(): string;
-    getOptions(): { [key: string]: Object | null };
+    getOptions(): JavaMap<string, Object | null>;
     getSymbolAddress(arg0: string): number;
     toString(): string;
 }

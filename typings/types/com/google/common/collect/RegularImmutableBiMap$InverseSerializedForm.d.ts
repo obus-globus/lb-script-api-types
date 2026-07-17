@@ -1,7 +1,8 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class RegularImmutableBiMap$InverseSerializedForm<K extends unknown, V extends unknown> extends Object implements Serializable {
-    constructor(forward: Map<K, V>)
-    // private forward: Map<K, V>;
+    constructor(forward: JavaMap<K, V>)
+    // private forward: JavaMap<K, V>;
     readResolve(): Object;
 }

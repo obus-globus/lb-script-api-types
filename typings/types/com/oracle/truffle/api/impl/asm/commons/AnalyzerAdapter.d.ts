@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Handle } from '../../../../../../../com/oracle/truffle/api/impl/asm/Handle.d.ts'
 import type { Label } from '../../../../../../../com/oracle/truffle/api/impl/asm/Label.d.ts'
 import type { MethodVisitor } from '../../../../../../../com/oracle/truffle/api/impl/asm/MethodVisitor.d.ts'
@@ -11,7 +12,7 @@ export class AnalyzerAdapter extends MethodVisitor {
     // private maxStack: number;
     // private owner: string;
     stack: Object[];
-    uninitializedTypes: Map<Object, Object>;
+    uninitializedTypes: JavaMap<Object, Object>;
     // private execute(opcode: number, intArg: number, stringArg: string): void;
     // private get(local: number): Object;
     // private pop(): Object;

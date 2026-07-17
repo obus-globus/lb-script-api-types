@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Charset } from '../../../../../../java/nio/charset/Charset.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
@@ -8,7 +9,7 @@ export class DefaultLayout extends Object implements StringLayout {
     private constructor()
     encode(event: LogEvent, destination: ByteBufferDestination): void;
     getCharset(): Charset;
-    getContentFormat(): { [key: string]: string };
+    getContentFormat(): JavaMap<string, string>;
     getContentType(): string;
     getFooter(): number[];
     getHeader(): number[];

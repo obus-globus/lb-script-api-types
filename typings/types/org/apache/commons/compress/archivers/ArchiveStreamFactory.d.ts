@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../../../java/io/OutputStream.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -20,20 +21,20 @@ export class ArchiveStreamFactory extends Object implements ArchiveStreamProvide
     static XAPK: string;
     static ZIP: string;
     static detect(paramarg0: InputStream): string;
-    static findAvailableArchiveInputStreamProviders(): { [key: string]: ArchiveStreamProvider };
-    static findAvailableArchiveOutputStreamProviders(): { [key: string]: ArchiveStreamProvider };
+    static findAvailableArchiveInputStreamProviders(): JavaMap<string, ArchiveStreamProvider>;
+    static findAvailableArchiveOutputStreamProviders(): JavaMap<string, ArchiveStreamProvider>;
     constructor()
     constructor(arg0: string)
-    readonly archiveInputStreamProviders: { [key: string]: ArchiveStreamProvider };
-    readonly archiveOutputStreamProviders: { [key: string]: ArchiveStreamProvider };
+    readonly archiveInputStreamProviders: JavaMap<string, ArchiveStreamProvider>;
+    readonly archiveOutputStreamProviders: JavaMap<string, ArchiveStreamProvider>;
     readonly entryEncoding: string;
     createArchiveInputStream<I extends ArchiveInputStream<ArchiveEntry>>(arg0: InputStream): I;
     createArchiveInputStream<I extends ArchiveInputStream<ArchiveEntry>>(arg0: string, arg1: InputStream): I;
     createArchiveInputStream<I extends ArchiveInputStream<ArchiveEntry>>(arg0: string, arg1: InputStream, arg2: string): I;
     createArchiveOutputStream<O extends ArchiveOutputStream<ArchiveEntry>>(arg0: string, arg1: OutputStream): O;
     createArchiveOutputStream<O extends ArchiveOutputStream<ArchiveEntry>>(arg0: string, arg1: OutputStream, arg2: string): O;
-    getArchiveInputStreamProviders(): { [key: string]: ArchiveStreamProvider };
-    getArchiveOutputStreamProviders(): { [key: string]: ArchiveStreamProvider };
+    getArchiveInputStreamProviders(): JavaMap<string, ArchiveStreamProvider>;
+    getArchiveOutputStreamProviders(): JavaMap<string, ArchiveStreamProvider>;
     getEntryEncoding(): string;
     getInputStreamArchiveNames(): string[];
     getOutputStreamArchiveNames(): string[];

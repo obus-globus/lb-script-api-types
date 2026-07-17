@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { BlockPalette } from '../../../../com/seedfinding/mccore/block/BlockPalette.d.ts'
 import type { Tile } from '../../../../com/seedfinding/mccore/block/Tile.d.ts'
 import type { PieceInfo$TileView } from '../../../../com/seedfinding/mccore/gen/PieceInfo$TileView.d.ts'
@@ -10,15 +11,15 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class PieceInfo extends Object {
     static TILE_SORTER: (param0: Tile, param1: Tile) => number;
     constructor(arg0: MCVersion)
-    blockEntities: Map<BPos, NBTCompound>;
-    blockIDs: Map<BPos, number>;
+    blockEntities: JavaMap<BPos, NBTCompound>;
+    blockIDs: JavaMap<BPos, number>;
     dataVersion: number;
     palettes: BlockPalette[];
     size: Vec3i;
     readonly version: MCVersion;
     fromTag(arg0: NBTCompound): PieceInfo;
-    getBlockEntities(): Map<BPos, NBTCompound>;
-    getBlockIDs(): Map<BPos, number>;
+    getBlockEntities(): JavaMap<BPos, NBTCompound>;
+    getBlockIDs(): JavaMap<BPos, number>;
     getDataVersion(): number;
     getPalette(): BlockPalette;
     getPalettes(): BlockPalette[];

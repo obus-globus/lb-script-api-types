@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Closeable } from '../../../../../java/io/Closeable.d.ts'
 import type { DataOutputStream } from '../../../../../java/io/DataOutputStream.d.ts'
 import type { OutputStream } from '../../../../../java/io/OutputStream.d.ts'
@@ -18,7 +19,7 @@ export class HeapDump$Builder extends Object implements Closeable {
     // private threadCounter: HeapDump$Counter;
     // private timeBase: number;
     // private whole: DataOutputStream;
-    // private wholeStrings: { [key: string]: number };
+    // private wholeStrings: JavaMap<string, number>;
     close(): void;
     dumpHeap(generator: (param0: HeapDump) => void): void;
     dumpHeap(timeStamp: number, generator: (param0: HeapDump) => void): void;

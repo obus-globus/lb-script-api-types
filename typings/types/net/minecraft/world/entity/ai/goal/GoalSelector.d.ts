@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Predicate } from '../../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Goal } from '../../../../../../net/minecraft/world/entity/ai/goal/Goal.d.ts'
@@ -7,7 +8,7 @@ export class GoalSelector extends Object {
     constructor()
     readonly availableGoals: WrappedGoal[];
     // private disabledFlags: Goal$Flag[];
-    // private lockedFlags: Map<Goal$Flag, WrappedGoal>;
+    // private lockedFlags: JavaMap<Goal$Flag, WrappedGoal>;
     addGoal(prio: number, goal: Goal): void;
     disableControlFlag(flag: Goal$Flag): void;
     enableControlFlag(flag: Goal$Flag): void;

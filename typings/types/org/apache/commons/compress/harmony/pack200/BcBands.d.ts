@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BandSet } from '../../../../../../org/apache/commons/compress/harmony/pack200/BandSet.d.ts'
@@ -41,7 +42,7 @@ export class BcBands extends BandSet {
     // private cpBands: CpBands;
     // private currentClass: string;
     // private currentNewClass: string;
-    // private labelsToOffsets: Map<Label, number>;
+    // private labelsToOffsets: JavaMap<Label, number>;
     // private renumberedOffset: number;
     // private segment: Segment;
     // private superClass: string;

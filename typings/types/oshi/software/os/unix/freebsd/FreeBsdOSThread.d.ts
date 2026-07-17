@@ -1,9 +1,10 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { AbstractOSThread } from '../../../../../oshi/software/common/AbstractOSThread.d.ts'
 import type { OSProcess$State } from '../../../../../oshi/software/os/OSProcess$State.d.ts'
 import type { FreeBsdOSProcess$PsThreadColumns } from '../../../../../oshi/software/os/unix/freebsd/FreeBsdOSProcess$PsThreadColumns.d.ts'
 export class FreeBsdOSThread extends AbstractOSThread {
     constructor(arg0: number, arg1: number)
-    constructor(arg0: number, arg1: Map<FreeBsdOSProcess$PsThreadColumns, string>)
+    constructor(arg0: number, arg1: JavaMap<FreeBsdOSProcess$PsThreadColumns, string>)
     readonly contextSwitches: number;
     readonly kernelTime: number;
     readonly majorFaults: number;
@@ -29,5 +30,5 @@ export class FreeBsdOSThread extends AbstractOSThread {
     getUpTime(): number;
     getUserTime(): number;
     updateAttributes(): boolean;
-    // private updateAttributes(arg0: Map<FreeBsdOSProcess$PsThreadColumns, string>): boolean;
+    // private updateAttributes(arg0: JavaMap<FreeBsdOSProcess$PsThreadColumns, string>): boolean;
 }

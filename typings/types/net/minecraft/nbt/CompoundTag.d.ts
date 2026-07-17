@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Codec } from '../../../com/mojang/serialization/Codec.d.ts'
 import type { DynamicOps } from '../../../com/mojang/serialization/DynamicOps.d.ts'
 import type { MapCodec } from '../../../com/mojang/serialization/MapCodec.d.ts'
@@ -34,8 +35,8 @@ export class CompoundTag extends Object implements Tag {
     static TAG_STRING: number;
     static TYPE: TagType<CompoundTag>;
     constructor()
-    constructor(tags: { [key: string]: Tag })
-    // private tags: { [key: string]: Tag };
+    constructor(tags: JavaMap<string, Tag>)
+    // private tags: JavaMap<string, Tag>;
     accept(visitor: StreamTagVisitor): StreamTagVisitor$ValueResult;
     accept(visitor: TagVisitor): void;
     acceptAsRoot(output: StreamTagVisitor): void;

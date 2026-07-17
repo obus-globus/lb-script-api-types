@@ -1,13 +1,14 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class FileNameUtil extends Object {
-    constructor(arg0: { [key: string]: string }, arg1: string)
-    // private compressSuffix: { [key: string]: string };
+    constructor(arg0: JavaMap<string, string>, arg1: string)
+    // private compressSuffix: JavaMap<string, string>;
     // private defaultExtension: string;
     // private longestCompressedSuffix: number;
     // private longestUncompressedSuffix: number;
     // private shortestCompressedSuffix: number;
     // private shortestUncompressedSuffix: number;
-    // private uncompressSuffix: { [key: string]: string };
+    // private uncompressSuffix: JavaMap<string, string>;
     getCompressedFileName(arg0: string): string;
     getCompressedFilename(arg0: string): string;
     getUncompressedFileName(arg0: string): string;

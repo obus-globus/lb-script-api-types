@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { Exception } from '../../../../java/lang/Exception.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
@@ -18,12 +19,12 @@ export class Timeline extends Object {
     static DIRECT_CODEC: Codec<Timeline>;
     static NETWORK_CODEC: Codec<Timeline>;
     static builder(paramclock: Holder<WorldClock>): Timeline$Builder;
-    static validateRegistry(paramtimelines: Timeline[], paramloadingErrors: Map<ResourceKey<Object>, Exception>): void;
-    private constructor(clock: Holder<WorldClock>, periodTicks: Optional<number>, tracks: Map<EnvironmentAttribute<Object>, AttributeTrack<Object, Object>>, timeMarkers: Map<ResourceKey<ClockTimeMarker>, Timeline$TimeMarkerInfo>)
+    static validateRegistry(paramtimelines: Timeline[], paramloadingErrors: JavaMap<ResourceKey<Object>, Exception>): void;
+    private constructor(clock: Holder<WorldClock>, periodTicks: Optional<number>, tracks: JavaMap<EnvironmentAttribute<Object>, AttributeTrack<Object, Object>>, timeMarkers: JavaMap<ResourceKey<ClockTimeMarker>, Timeline$TimeMarkerInfo>)
     // private clock: Holder<WorldClock>;
     // private periodTicks: Optional<number>;
-    // private timeMarkers: Map<ResourceKey<ClockTimeMarker>, Timeline$TimeMarkerInfo>;
-    // private tracks: Map<EnvironmentAttribute<Object>, AttributeTrack<Object, Object>>;
+    // private timeMarkers: JavaMap<ResourceKey<ClockTimeMarker>, Timeline$TimeMarkerInfo>;
+    // private tracks: JavaMap<EnvironmentAttribute<Object>, AttributeTrack<Object, Object>>;
     attributes(): EnvironmentAttribute<Object>[];
     clock(): Holder<WorldClock>;
     createTrackSampler<Value extends unknown>(attribute: EnvironmentAttribute<Value>, clockManager: ClockManager): AttributeTrackSampler<Value, Object>;

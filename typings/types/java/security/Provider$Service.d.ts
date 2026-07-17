@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
 import type { Constructor } from '../../java/lang/reflect/Constructor.d.ts'
 import type { Key } from '../../java/security/Key.d.ts'
@@ -5,16 +6,16 @@ import type { Provider$EngineDescription } from '../../java/security/Provider$En
 import type { Provider$UString } from '../../java/security/Provider$UString.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export class Provider$Service extends Object {
-    constructor(arg0: { [key: string]: any }, arg1: string, arg2: string, arg3: string, arg4: string[], arg5: { [key: string]: string })
+    constructor(arg0: JavaMap<any, any>, arg1: string, arg2: string, arg3: string, arg4: string[], arg5: JavaMap<string, string>)
     readonly algorithm: string;
     // private aliases: string[];
-    // private attributes: Map<Provider$UString, string>;
+    // private attributes: JavaMap<Provider$UString, string>;
     // private classCache: Object;
     readonly className: string;
     // private constructorCache: Object;
     // private engineDescription: Provider$EngineDescription;
     // private hasKeyAttributes: boolean;
-    readonly provider: { [key: string]: any };
+    readonly provider: JavaMap<any, any>;
     // private registered: boolean;
     // private supportedClasses: Class<Object>[];
     // private supportedFormats: string[];
@@ -28,7 +29,7 @@ export class Provider$Service extends Object {
     // private getDefaultConstructor(): Constructor<Object>;
     // private getImplClass(): Class<Object>;
     // private getKeyClass(arg0: string): Class<Object>;
-    getProvider(): { [key: string]: any };
+    getProvider(): JavaMap<any, any>;
     getType(): string;
     // private hasKeyAttributes(): boolean;
     // private isValid(): boolean;

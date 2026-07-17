@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Optional } from '../../../java/util/Optional.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { BlockFamily$Variant } from '../../../net/minecraft/data/BlockFamily$Variant.d.ts'
@@ -11,12 +12,12 @@ export class BlockFamily extends Object {
     // private generateStonecutterRecipe: boolean;
     readonly recipeGroupPrefix: string;
     readonly recipeUnlockedBy: string;
-    readonly variants: Map<BlockFamily$Variant, Block>;
+    readonly variants: JavaMap<BlockFamily$Variant, Block>;
     get(variant: BlockFamily$Variant): Block;
     getBaseBlock(): Block;
     getRecipeGroupPrefix(): Optional<string>;
     getRecipeUnlockedBy(): Optional<string>;
-    getVariants(): Map<BlockFamily$Variant, Block>;
+    getVariants(): JavaMap<BlockFamily$Variant, Block>;
     shouldGenerateCraftingRecipe(): boolean;
     shouldGenerateModel(): boolean;
     shouldGenerateSmeltingRecipe(): boolean;

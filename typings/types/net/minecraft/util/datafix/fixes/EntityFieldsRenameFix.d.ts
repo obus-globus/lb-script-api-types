@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { RewriteResult } from '../../../../../com/mojang/datafixers/RewriteResult.d.ts'
 import type { Typed } from '../../../../../com/mojang/datafixers/Typed.d.ts'
 import type { Schema } from '../../../../../com/mojang/datafixers/schemas/Schema.d.ts'
@@ -9,8 +10,8 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { NamedEntityFix } from '../../../../../net/minecraft/util/datafix/fixes/NamedEntityFix.d.ts'
 export class EntityFieldsRenameFix extends NamedEntityFix {
     static checked<A extends unknown, B extends unknown>(paramarg0: string, paramarg1: Type<A>, paramarg2: Type<B>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<A, B>;
-    constructor(outputSchema: Schema, name: string, entityType: string, renames: { [key: string]: string })
-    // private renames: { [key: string]: string };
+    constructor(outputSchema: Schema, name: string, entityType: string, renames: JavaMap<string, string>)
+    // private renames: JavaMap<string, string>;
     fix(entity: Typed<Object>): Typed<Object>;
     fixTag(data: Dynamic<Object>): Dynamic<Object>;
 }

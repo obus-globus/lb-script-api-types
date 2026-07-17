@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 import type { Type } from '../../../../../../org/objectweb/asm/Type.d.ts'
@@ -13,7 +14,7 @@ import type { IMessageSink } from '../../../../../../org/spongepowered/asm/util/
 export class InjectionPointData extends Object {
     static parseType(paramarg0: string): string;
     constructor(arg0: IInjectionPointContext, arg1: string, arg2: string[], arg3: string, arg4: string, arg5: number, arg6: number, arg7: string, arg8: number)
-    // private args: { [key: string]: string };
+    // private args: JavaMap<string, string>;
     readonly at: string;
     readonly context: IInjectionPointContext;
     // private flags: number;

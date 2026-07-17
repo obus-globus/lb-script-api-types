@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { BlendFunction } from '../../../../com/mojang/blaze3d/pipeline/BlendFunction.d.ts'
 import type { RenderPipeline } from '../../../../com/mojang/blaze3d/pipeline/RenderPipeline.d.ts'
 import type { RenderPipeline$Builder } from '../../../../com/mojang/blaze3d/pipeline/RenderPipeline$Builder.d.ts'
@@ -57,7 +58,7 @@ export class ClientRenderPipelines extends Object {
     // private TriangleStrip: RenderPipeline;
     // private TriangleStripNoDepthTest: RenderPipeline;
     Triangles: RenderPipeline;
-    // private renderPipelines: Map<Identifier, RenderPipeline>;
+    // private renderPipelines: JavaMap<Identifier, RenderPipeline>;
     gradientCircle(noDepthTest: boolean): RenderPipeline;
     heart(noDepthTest: boolean): RenderPipeline;
     newPipeline(name: string, builderAction: (param0: RenderPipeline$Builder) => void): RenderPipeline;

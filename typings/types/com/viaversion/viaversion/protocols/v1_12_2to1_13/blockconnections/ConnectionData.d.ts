@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { UserConnection } from '../../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { BlockPosition } from '../../../../../../com/viaversion/viaversion/api/minecraft/BlockPosition.d.ts'
 import type { Chunk } from '../../../../../../com/viaversion/viaversion/api/minecraft/chunks/Chunk.d.ts'
@@ -12,7 +13,7 @@ export class ConnectionData extends Object {
     static connects(paramarg0: number): boolean;
     static getConnectionHandler(paramarg0: number): (param0: UserConnection, param1: BlockPosition, param2: number) => number;
     static getId(paramarg0: string): number;
-    static getKeyToId(): { [key: string]: any };
+    static getKeyToId(): JavaMap<any, any>;
     static init(): void;
     static isWelcome(paramarg0: number): boolean;
     static markModified(paramarg0: UserConnection, paramarg1: BlockPosition): void;

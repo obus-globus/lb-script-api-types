@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../../../java/io/OutputStream.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -20,8 +21,8 @@ export class CompressorStreamFactory extends Object implements CompressorStreamP
     static Z: string;
     static ZSTANDARD: string;
     static detect(paramarg0: InputStream): string;
-    static findAvailableCompressorInputStreamProviders(): { [key: string]: CompressorStreamProvider };
-    static findAvailableCompressorOutputStreamProviders(): { [key: string]: CompressorStreamProvider };
+    static findAvailableCompressorInputStreamProviders(): JavaMap<string, CompressorStreamProvider>;
+    static findAvailableCompressorOutputStreamProviders(): JavaMap<string, CompressorStreamProvider>;
     static getBrotli(): string;
     static getBzip2(): string;
     static getDeflate(): string;
@@ -40,8 +41,8 @@ export class CompressorStreamFactory extends Object implements CompressorStreamP
     constructor()
     constructor(arg0: boolean)
     constructor(arg0: boolean, arg1: number)
-    readonly compressorInputStreamProviders: { [key: string]: CompressorStreamProvider };
-    readonly compressorOutputStreamProviders: { [key: string]: CompressorStreamProvider };
+    readonly compressorInputStreamProviders: JavaMap<string, CompressorStreamProvider>;
+    readonly compressorOutputStreamProviders: JavaMap<string, CompressorStreamProvider>;
     readonly decompressConcatenated: boolean;
     // private decompressUntilEof: boolean;
     // private memoryLimitInKb: number;
@@ -50,8 +51,8 @@ export class CompressorStreamFactory extends Object implements CompressorStreamP
     createCompressorInputStream(arg0: string, arg1: InputStream): CompressorInputStream;
     createCompressorInputStream(arg0: string, arg1: InputStream, arg2: boolean): CompressorInputStream;
     createCompressorOutputStream(arg0: string, arg1: OutputStream): CompressorOutputStream<OutputStream>;
-    getCompressorInputStreamProviders(): { [key: string]: CompressorStreamProvider };
-    getCompressorOutputStreamProviders(): { [key: string]: CompressorStreamProvider };
+    getCompressorInputStreamProviders(): JavaMap<string, CompressorStreamProvider>;
+    getCompressorOutputStreamProviders(): JavaMap<string, CompressorStreamProvider>;
     getDecompressConcatenated(): boolean;
     getDecompressUntilEOF(): boolean;
     getInputStreamCompressorNames(): string[];

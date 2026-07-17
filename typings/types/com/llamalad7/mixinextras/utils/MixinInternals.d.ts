@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Pair } from '../../../../com/llamalad7/mixinextras/lib/apache/commons/tuple/Pair.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -12,11 +13,11 @@ import type { Extensions } from '../../../../org/spongepowered/asm/mixin/transfo
 import type { IExtension } from '../../../../org/spongepowered/asm/mixin/transformer/ext/IExtension.d.ts'
 import type { ITargetClassContext } from '../../../../org/spongepowered/asm/mixin/transformer/ext/ITargetClassContext.d.ts'
 export class MixinInternals extends Object {
-    static getDecorations(paramarg0: InjectionNodes$InjectionNode): { [key: string]: Object };
+    static getDecorations(paramarg0: InjectionNodes$InjectionNode): JavaMap<string, Object>;
     static getExtensions(): Extensions;
     static getInjector(paramarg0: InjectionInfo): Injector;
     static getMixinsFor(paramarg0: ITargetClassContext): Pair<IMixinInfo, ClassNode>[];
-    static getTargets(paramarg0: InjectionInfo): Map<AbstractInsnNode[], InjectionNodes$InjectionNode[]>;
+    static getTargets(paramarg0: InjectionInfo): JavaMap<AbstractInsnNode[], InjectionNodes$InjectionNode[]>;
     static registerClassInfo(paramarg0: ClassNode): void;
     static registerExtension(paramarg0: IExtension): void;
     static registerExtension(paramarg0: IExtension, paramarg1: boolean): void;

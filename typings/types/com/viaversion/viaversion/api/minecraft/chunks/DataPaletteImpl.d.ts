@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { DataPalette } from '../../../../../../com/viaversion/viaversion/api/minecraft/chunks/DataPalette.d.ts'
 import type { DataPaletteImpl$ChunkData } from '../../../../../../com/viaversion/viaversion/api/minecraft/chunks/DataPaletteImpl$ChunkData.d.ts'
 import type { IntUnaryOperator } from '../../../../../../java/util/function/IntUnaryOperator.d.ts'
@@ -5,7 +6,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class DataPaletteImpl extends Object implements DataPalette {
     constructor(arg0: number)
     constructor(arg0: number, arg1: number)
-    // private inversePalette: { [key: string]: any };
+    // private inversePalette: JavaMap<any, any>;
     // private palette: (Object | null)[];
     // private sizeBits: number;
     // private values: DataPaletteImpl$ChunkData;

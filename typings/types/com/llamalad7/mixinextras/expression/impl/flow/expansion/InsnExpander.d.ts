@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { FlowValue } from '../../../../../../../com/llamalad7/mixinextras/expression/impl/flow/FlowValue.d.ts'
 import type { InsnExpander$Expansion } from '../../../../../../../com/llamalad7/mixinextras/expression/impl/flow/expansion/InsnExpander$Expansion.d.ts'
 import type { InsnExpander$InsnComponent } from '../../../../../../../com/llamalad7/mixinextras/expression/impl/flow/expansion/InsnExpander$InsnComponent.d.ts'
@@ -16,7 +17,7 @@ export abstract class InsnExpander extends Object implements FlowPostProcessor {
     static hasExpansion(paramarg0: FlowValue): boolean;
     static prepareExpansion(paramarg0: FlowValue, paramarg1: AbstractInsnNode[], paramarg2: InjectionInfo, paramarg3: ExpressionContext): InsnExpander$Expansion;
     constructor()
-    // private expansions: Map<AbstractInsnNode, InsnExpander$Expansion>;
+    // private expansions: JavaMap<AbstractInsnNode, InsnExpander$Expansion>;
     expand(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode, arg2: InsnExpander$Expansion): void;
     expandInsn(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode, ...arg2: AbstractInsnNode[]): void;
     process(arg0: FlowValue, arg1: FlowPostProcessor$OutputSink): void;

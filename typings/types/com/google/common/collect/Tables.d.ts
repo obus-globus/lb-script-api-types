@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Function } from '../../../../com/google/common/base/Function.d.ts'
 import type { Supplier } from '../../../../com/google/common/base/Supplier.d.ts'
 import type { RowSortedTable } from '../../../../com/google/common/collect/RowSortedTable.d.ts'
@@ -10,7 +11,7 @@ import type { Collector } from '../../../../java/util/stream/Collector.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Tables extends Object {
     static immutableCell<R extends unknown, C extends unknown, V extends unknown>(paramrowKey: R, paramcolumnKey: C, paramvalue: V): Table$Cell<R, C, V>;
-    static newCustomTable<R extends unknown, C extends unknown, V extends unknown>(parambackingMap: Map<R, Map<C, V>>, paramfactory: () => Map<C, V>): Table<R, C, V>;
+    static newCustomTable<R extends unknown, C extends unknown, V extends unknown>(parambackingMap: JavaMap<R, JavaMap<C, V>>, paramfactory: () => JavaMap<C, V>): Table<R, C, V>;
     static synchronizedTable<R extends unknown, C extends unknown, V extends unknown>(paramtable: Table<R, C, V>): Table<R, C, V>;
     static toTable<T extends unknown, R extends unknown, C extends unknown, V extends unknown, I extends Table<R, C, V>>(paramrowFunction: (param0: Object) => R, paramcolumnFunction: (param0: Object) => C, paramvalueFunction: (param0: Object) => V, parammergeFunction: (param0: V, param1: V) => V, paramtableSupplier: () => I): Collector<T, Object, I>;
     static toTable<T extends unknown, R extends unknown, C extends unknown, V extends unknown, I extends Table<R, C, V>>(paramrowFunction: (param0: Object) => R, paramcolumnFunction: (param0: Object) => C, paramvalueFunction: (param0: Object) => V, paramtableSupplier: () => I): Collector<T, Object, I>;

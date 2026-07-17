@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { RealmsMainScreen } from '../../../../../../com/mojang/realmsclient/RealmsMainScreen.d.ts'
 import type { PreferredRegionsDto } from '../../../../../../com/mojang/realmsclient/dto/PreferredRegionsDto.d.ts'
 import type { RealmsRegion } from '../../../../../../com/mojang/realmsclient/dto/RealmsRegion.d.ts'
@@ -36,7 +37,7 @@ export class RealmsConfigureWorldScreen extends RealmsScreen {
     readonly lastScreen: RealmsMainScreen;
     // private layout: HeaderAndFooterLayout;
     // private playButton: Button;
-    // private regionServiceQuality: Map<RealmsRegion, ServiceQuality>;
+    // private regionServiceQuality: JavaMap<RealmsRegion, ServiceQuality>;
     // private regions: PreferredRegionsDto;
     // private serverData: RealmsServer;
     // private serverId: number;

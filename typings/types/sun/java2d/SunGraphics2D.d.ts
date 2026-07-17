@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { BasicStroke } from '../../java/awt/BasicStroke.d.ts'
 import type { Color } from '../../java/awt/Color.d.ts'
 import type { Composite } from '../../java/awt/Composite.d.ts'
@@ -93,7 +94,7 @@ export class SunGraphics2D extends Graphics2D implements Cloneable, Constrainabl
     // private fractionalMetricsHint: number;
     // private glyphVectorFRC: FontRenderContext;
     // private glyphVectorFontInfo: FontInfo;
-    hints: { [key: string]: any };
+    hints: JavaMap<any, any>;
     imageComp: CompositeType;
     imagepipe: DrawImagePipe;
     // private interpolationHint: number;
@@ -119,7 +120,7 @@ export class SunGraphics2D extends Graphics2D implements Cloneable, Constrainabl
     transformState: number;
     usrClip: Shape;
     // private validFontInfo: boolean;
-    addRenderingHints(arg0: Map<Object | null, Object | null>): void;
+    addRenderingHints(arg0: JavaMap<Object | null, Object | null>): void;
     checkFontInfo(arg0: FontInfo, arg1: Font, arg2: FontRenderContext): FontInfo;
     clearRect(arg0: number, arg1: number, arg2: number, arg3: number): void;
     clip(arg0: Shape): void;
@@ -189,7 +190,7 @@ export class SunGraphics2D extends Graphics2D implements Cloneable, Constrainabl
     getGVFontInfo(arg0: Font, arg1: FontRenderContext): FontInfo;
     getPaint(): Paint;
     getRenderingHint(arg0: RenderingHints$Key): Object;
-    getRenderingHints(): { [key: string]: any };
+    getRenderingHints(): JavaMap<any, any>;
     // private getResolutionVariant(arg0: MultiResolutionImage, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: AffineTransform): Image;
     getStroke(): Stroke;
     getSurfaceData(): SurfaceData;
@@ -201,7 +202,7 @@ export class SunGraphics2D extends Graphics2D implements Cloneable, Constrainabl
     intersectShapes(arg0: Shape, arg1: Shape, arg2: boolean, arg3: boolean): Shape;
     invalidatePipe(): void;
     invalidateTransform(): void;
-    makeHints(arg0: Map<Object | null, Object | null>): { [key: string]: any };
+    makeHints(arg0: JavaMap<Object | null, Object | null>): JavaMap<any, any>;
     // private revalidateAll(): void;
     rotate(arg0: number): void;
     rotate(arg0: number, arg1: number, arg2: number): void;
@@ -218,7 +219,7 @@ export class SunGraphics2D extends Graphics2D implements Cloneable, Constrainabl
     setPaint(arg0: Paint): void;
     setPaintMode(): void;
     setRenderingHint(arg0: RenderingHints$Key, arg1: Object): void;
-    setRenderingHints(arg0: Map<Object | null, Object | null>): void;
+    setRenderingHints(arg0: JavaMap<Object | null, Object | null>): void;
     setStroke(arg0: Stroke): void;
     setTransform(arg0: AffineTransform): void;
     setXORMode(arg0: Color): void;

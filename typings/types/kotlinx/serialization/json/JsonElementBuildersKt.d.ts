@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Number } from '../../../java/lang/Number.d.ts'
 import type { JsonArrayBuilder } from '../../../kotlinx/serialization/json/JsonArrayBuilder.d.ts'
@@ -14,7 +15,7 @@ export class JsonElementBuildersKt extends Object {
     static addJsonArray(self: JsonArrayBuilder, builderAction: (param0: JsonArrayBuilder) => void): boolean;
     static addJsonObject(self: JsonArrayBuilder, builderAction: (param0: JsonObjectBuilder) => void): boolean;
     static buildJsonArray(builderAction: (param0: JsonArrayBuilder) => void): (Object | null)[];
-    static buildJsonObject(builderAction: (param0: JsonObjectBuilder) => void): { [key: string]: any };
+    static buildJsonObject(builderAction: (param0: JsonObjectBuilder) => void): JavaMap<any, any>;
     static put(self: JsonObjectBuilder, key: string, value: boolean | null): JsonElement | null;
     static put(self: JsonObjectBuilder, key: string, value: Number | null): JsonElement | null;
     static put(self: JsonObjectBuilder, key: string, value: string | null): JsonElement | null;

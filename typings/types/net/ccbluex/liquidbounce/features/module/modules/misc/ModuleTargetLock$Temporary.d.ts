@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Tagged$Companion } from '../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
 import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { AttackEntityEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/AttackEntityEvent.d.ts'
@@ -10,7 +11,7 @@ export class ModuleTargetLock$Temporary extends ModuleTargetLock$LockMode {
     static INSTANCE: ModuleTargetLock$Temporary;
     // private attackHandler: EventHook<AttackEntityEvent>;
     // private cleanUpTask: EventHook<GameTickEvent>;
-    // private lockList: { [key: string]: any };
+    // private lockList: JavaMap<any, any>;
     // private outOfRange: number;
     // private /*not mapped: */ getOutOfRange(): number;
     // private timeUntilReset: number;

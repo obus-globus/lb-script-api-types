@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ClientLanguageAccessor } from '../../../../../com/nikoverflow/exploitpreventer/injection/mixin/vanilla/ClientLanguageAccessor.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { BiConsumer } from '../../../../../java/util/function/BiConsumer.d.ts'
@@ -14,9 +15,9 @@ export class ClientLanguage extends Language implements ClientLanguageAccessor {
     static inject(paramlanguage: Language): void;
     static loadFrom(paramresourceManager: ResourceManager, paramlanguageStack: string[], paramdefaultRightToLeft: boolean): ClientLanguage;
     static loadFromJson(paramstream: InputStream, paramoutput: (param0: string, param1: string) => void): void;
-    private constructor(storage: { [key: string]: string }, defaultRightToLeft: boolean)
+    private constructor(storage: JavaMap<string, string>, defaultRightToLeft: boolean)
     readonly defaultRightToLeft: boolean;
-    storage: { [key: string]: string };
+    storage: JavaMap<string, string>;
     getOrDefault(elementId: string): string;
     getOrDefault(key: string, defaultValue: string): string;
     getVisualOrder(lines: FormattedText[]): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[];

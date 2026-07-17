@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Dynamic } from '../../../../../../com/mojang/serialization/Dynamic.d.ts'
 import type { DynamicOps } from '../../../../../../com/mojang/serialization/DynamicOps.d.ts'
@@ -23,7 +24,7 @@ import type { SimpleRegionStorage } from '../../../../../../net/minecraft/world/
 export class SectionStorage<R extends unknown, P extends unknown> extends Object implements AutoCloseable, RegionBasedStorageSectionExtended<Object> {
     constructor(simpleRegionStorage: SimpleRegionStorage, codec: Codec<P>, packer: (param0: R) => P, unpacker: (param0: P, param1: () => void) => R, factory: (param0: () => void) => R, registryAccess: RegistryAccess, errorReporter: ChunkIOErrorReporter, levelHeightAccessor: LevelHeightAccessor)
     // private codec: Codec<P>;
-    // private columns: { [key: string]: any };
+    // private columns: JavaMap<any, any>;
     // private dirtyChunks: (Object | null)[];
     // private errorReporter: ChunkIOErrorReporter;
     // private factory: (param0: () => void) => R;
@@ -31,10 +32,10 @@ export class SectionStorage<R extends unknown, P extends unknown> extends Object
     // private loadLock: Object;
     // private loadedChunks: (Object | null)[];
     // private packer: (param0: R) => P;
-    // private pendingLoads: { [key: string]: any };
+    // private pendingLoads: JavaMap<any, any>;
     // private registryAccess: RegistryAccess;
     // private simpleRegionStorage: SimpleRegionStorage;
-    // private storage: { [key: string]: any };
+    // private storage: JavaMap<any, any>;
     // private unpacker: (param0: P, param1: () => void) => R;
     close(): void;
     flush(chunkPos: ChunkPos): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -9,9 +10,9 @@ import type { DataComponentPredicate$Type } from '../../../../../net/minecraft/c
 import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 export class AnyValue extends Record implements DataComponentPredicate {
-    static CODEC: Codec<Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
+    static CODEC: Codec<JavaMap<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
     static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<any>>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, JavaMap<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
     constructor(type: DataComponentType<Object>)
     // private type: DataComponentType<Object>;
     equals(o: Object | null): boolean;

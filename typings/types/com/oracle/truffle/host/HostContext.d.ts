@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { TruffleFile } from '../../../../com/oracle/truffle/api/TruffleFile.d.ts'
 import type { TruffleLanguage$Env } from '../../../../com/oracle/truffle/api/TruffleLanguage$Env.d.ts'
 import type { Node } from '../../../../com/oracle/truffle/api/nodes/Node.d.ts'
@@ -22,8 +23,8 @@ import type { AbstractPolyglotImpl$AbstractValueDispatch } from '../../../../org
 export class HostContext extends Object {
     constructor(hostLanguage: HostLanguage, env: TruffleLanguage$Env)
     // private access: AbstractPolyglotImpl$AbstractHostAccess;
-    // private adapterCache: ClassValue<Map<Class<Object>[], HostAdapterFactory$AdapterResult>>;
-    // private classCache: { [key: string]: Class<Object> };
+    // private adapterCache: ClassValue<JavaMap<Class<Object>[], HostAdapterFactory$AdapterResult>>;
+    // private classCache: JavaMap<string, Class<Object>>;
     // private classFilter: (param0: string) => boolean;
     // private classloader: HostClassLoader;
     // private contextClassLoader: ClassLoader;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { GpuBuffer } from '../../../../com/mojang/blaze3d/buffers/GpuBuffer.d.ts'
 import type { GpuBufferSlice } from '../../../../com/mojang/blaze3d/buffers/GpuBufferSlice.d.ts'
 import type { FrameGraphBuilder } from '../../../../com/mojang/blaze3d/framegraph/FrameGraphBuilder.d.ts'
@@ -11,13 +12,13 @@ import type { PostPass$Input } from '../../../../net/minecraft/client/renderer/P
 import type { UniformValue } from '../../../../net/minecraft/client/renderer/UniformValue.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
 export class PostPass extends Object implements AutoCloseable {
-    constructor(pipeline: RenderPipeline, outputTargetId: Identifier, uniformGroups: { [key: string]: UniformValue[] }, inputs: PostPass$Input[])
-    // private customUniforms: { [key: string]: GpuBuffer };
+    constructor(pipeline: RenderPipeline, outputTargetId: Identifier, uniformGroups: JavaMap<string, UniformValue[]>, inputs: PostPass$Input[])
+    // private customUniforms: JavaMap<string, GpuBuffer>;
     // private infoUbo: MappableRingBuffer;
     // private inputs: PostPass$Input[];
     // private name: string;
     // private outputTargetId: Identifier;
     // private pipeline: RenderPipeline;
-    addToFrame(frame: FrameGraphBuilder, targets: Map<Identifier, ResourceHandle<RenderTarget>>, shaderOrthoMatrix: GpuBufferSlice): void;
+    addToFrame(frame: FrameGraphBuilder, targets: JavaMap<Identifier, ResourceHandle<RenderTarget>>, shaderOrthoMatrix: GpuBufferSlice): void;
     close(): void;
 }

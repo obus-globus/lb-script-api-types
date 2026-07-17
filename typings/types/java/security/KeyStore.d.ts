@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { File } from '../../java/io/File.d.ts'
 import type { InputStream } from '../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../java/io/OutputStream.d.ts'
@@ -18,11 +19,11 @@ export class KeyStore extends Object {
     static getInstance(paramarg0: File, paramarg1: KeyStore$LoadStoreParameter): KeyStore;
     static getInstance(paramarg0: string): KeyStore;
     static getInstance(paramarg0: string, paramarg1: string): KeyStore;
-    static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): KeyStore;
-    constructor(arg0: KeyStoreSpi, arg1: { [key: string]: any }, arg2: string)
+    static getInstance(paramarg0: string, paramarg1: JavaMap<any, any>): KeyStore;
+    constructor(arg0: KeyStoreSpi, arg1: JavaMap<any, any>, arg2: string)
     // private initialized: boolean;
     // private keyStoreSpi: KeyStoreSpi;
-    readonly provider: { [key: string]: any };
+    readonly provider: JavaMap<any, any>;
     readonly type: string;
     aliases(): Enumeration<string>;
     containsAlias(arg0: string): boolean;
@@ -35,7 +36,7 @@ export class KeyStore extends Object {
     getCreationDate(arg0: string): Date;
     getEntry(arg0: string, arg1: KeyStore$ProtectionParameter): KeyStore$Entry;
     getKey(arg0: string, arg1: string[]): Key;
-    getProvider(): { [key: string]: any };
+    getProvider(): JavaMap<any, any>;
     // private getProviderName(): string;
     getType(): string;
     isCertificateEntry(arg0: string): boolean;

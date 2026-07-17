@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ForwardingMultimap } from '../../../../com/google/common/collect/ForwardingMultimap.d.ts'
 import type { Multimap } from '../../../../com/google/common/collect/Multimap.d.ts'
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
@@ -10,9 +11,9 @@ export class Multimaps$UnmodifiableMultimap<K extends unknown, V extends unknown
     // private entries: Map$Entry<K, V>[];
     // private keySet: K[];
     // private keys: K[];
-    // private map: Map<K, V[]>;
+    // private map: JavaMap<K, V[]>;
     // private values: V[];
-    asMap(): Map<K, V[]>;
+    asMap(): JavaMap<K, V[]>;
     clear(): void;
     delegate(): Multimap<K, V>;
     entries(): Map$Entry<K, V>[];

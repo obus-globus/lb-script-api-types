@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Annotation } from '../../../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -43,14 +44,14 @@ export class MixinTargetContext extends ClassContext implements IMixinContext {
     // private detachedSuper: boolean;
     // private inheritsFromMixin: boolean;
     // private initialiser: Initialiser;
-    readonly injectorGroups: { [key: string]: any };
+    readonly injectorGroups: JavaMap<any, any>;
     // private injectors: InjectionInfo[];
-    // private innerClasses: { [key: string]: string };
+    // private innerClasses: JavaMap<string, string>;
     // private mergedMethods: MethodNode[];
     readonly minRequiredClassVersion: number;
     readonly mixin: MixinInfo;
     // private sessionId: string;
-    // private shadowFields: Map<FieldNode, ClassInfo$Field>;
+    // private shadowFields: JavaMap<FieldNode, ClassInfo$Field>;
     // private shadowMethods: MethodNode[];
     readonly stratum: SourceMap$File;
     // private targetClass: TargetClassContext;
@@ -84,9 +85,9 @@ export class MixinTargetContext extends ClassContext implements IMixinContext {
     getFirstInjectionInfo(): InjectionInfo;
     getInfo(): MixinInfo;
     getInitialiser(): Initialiser;
-    getInjectorGroups(): { [key: string]: any };
+    getInjectorGroups(): JavaMap<any, any>;
     getInjectorOrders(arg0: number[]): void;
-    getInnerClasses(): { [key: string]: string };
+    getInnerClasses(): JavaMap<string, string>;
     getInterfaces(): string[];
     getLoggingLevel(): Level;
     getMaxShiftByValue(): number;

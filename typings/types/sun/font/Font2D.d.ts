@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Font } from '../../java/awt/Font.d.ts'
 import type { FontRenderContext } from '../../java/awt/font/FontRenderContext.d.ts'
 import type { AffineTransform } from '../../java/awt/geom/AffineTransform.d.ts'
@@ -28,7 +29,7 @@ export abstract class Font2D extends Object {
     handle: Font2DHandle;
     // private lastFontStrike: Reference<FontStrike>;
     // private mapper: CharToGlyphMapper;
-    // private strikeCache: Map<FontStrikeDesc, Reference<FontStrike>>;
+    // private strikeCache: JavaMap<FontStrikeDesc, Reference<FontStrike>>;
     // private strikeCacheMax: number;
     style: number;
     // private useWeak: boolean;

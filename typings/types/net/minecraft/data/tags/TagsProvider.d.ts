@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { CompletableFuture } from '../../../../java/util/concurrent/CompletableFuture.d.ts'
@@ -21,7 +22,7 @@ export abstract class TagsProvider<T extends unknown> extends Object implements 
     static LOGGER: Logger;
     constructor(output: PackOutput, registryKey: ResourceKey<T[]>, lookupProvider: CompletableFuture<HolderLookup$Provider>)
     constructor(output: PackOutput, registryKey: ResourceKey<T[]>, lookupProvider: CompletableFuture<HolderLookup$Provider>, parentProvider: CompletableFuture<(param0: TagKey<T>) => Optional<TagBuilder>>)
-    builders: Map<Identifier, TagBuilder>;
+    builders: JavaMap<Identifier, TagBuilder>;
     // private contentsDone: CompletableFuture<void>;
     // private lookupProvider: CompletableFuture<HolderLookup$Provider>;
     // private parentProvider: CompletableFuture<(param0: TagKey<T>) => Optional<TagBuilder>>;

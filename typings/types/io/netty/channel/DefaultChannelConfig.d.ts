@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { ByteBufAllocator } from '../../../io/netty/buffer/ByteBufAllocator.d.ts'
 import type { Channel } from '../../../io/netty/channel/Channel.d.ts'
 import type { ChannelConfig } from '../../../io/netty/channel/ChannelConfig.d.ts'
@@ -28,8 +29,8 @@ export class DefaultChannelConfig extends Object implements ChannelConfig {
     getMaxMessagesPerWrite(): number;
     getMessageSizeEstimator(): MessageSizeEstimator;
     getOption<T extends unknown>(arg0: ChannelOption<T>): T;
-    getOptions(): Map<ChannelOption<Object>, Object>;
-    getOptions(arg0: Map<ChannelOption<Object>, Object>, ...arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
+    getOptions(): JavaMap<ChannelOption<Object>, Object>;
+    getOptions(arg0: JavaMap<ChannelOption<Object>, Object>, ...arg1: ChannelOption<Object>[]): JavaMap<ChannelOption<Object>, Object>;
     // private getPinEventExecutorPerGroup(): boolean;
     getRecvByteBufAllocator<T extends RecvByteBufAllocator>(): T;
     getWriteBufferHighWaterMark(): number;
@@ -46,7 +47,7 @@ export class DefaultChannelConfig extends Object implements ChannelConfig {
     setMaxMessagesPerWrite(arg0: number): ChannelConfig;
     setMessageSizeEstimator(arg0: MessageSizeEstimator): ChannelConfig;
     setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
-    setOptions(arg0: Map<ChannelOption<Object>, Object | null>): boolean;
+    setOptions(arg0: JavaMap<ChannelOption<Object>, Object | null>): boolean;
     // private setPinEventExecutorPerGroup(arg0: boolean): ChannelConfig;
     setRecvByteBufAllocator(arg0: RecvByteBufAllocator): ChannelConfig;
     // private setRecvByteBufAllocator(arg0: RecvByteBufAllocator, arg1: ChannelMetadata): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { ColorProvider } from '../../../../../../../net/caffeinemc/mods/sodium/client/model/color/ColorProvider.d.ts'
 import type { BlockColors } from '../../../../../../../net/minecraft/client/color/block/BlockColors.d.ts'
@@ -7,8 +8,8 @@ import type { Fluid } from '../../../../../../../net/minecraft/world/level/mater
 import type { FluidState } from '../../../../../../../net/minecraft/world/level/material/FluidState.d.ts'
 export class ColorProviderRegistry extends Object {
     constructor(arg0: BlockColors)
-    // private blocks: Map<Block, ColorProvider<BlockState>>;
-    // private fluids: Map<Fluid, ColorProvider<FluidState>>;
+    // private blocks: JavaMap<Block, ColorProvider<BlockState>>;
+    // private fluids: JavaMap<Fluid, ColorProvider<FluidState>>;
     // private overridenBlocks: Block[];
     getColorProvider(arg0: Block): ColorProvider<BlockState>;
     getColorProvider(arg0: Fluid): ColorProvider<FluidState>;

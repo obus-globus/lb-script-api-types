@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Closeable } from '../../../../../java/io/Closeable.d.ts'
 import type { File } from '../../../../../java/io/File.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
@@ -36,7 +37,7 @@ export class Theme extends BaseApi implements Closeable, ResourceManagerReloadLi
     readonly backgroundImage: ThemeBackground | null;
     readonly backgroundShader: ThemeBackground | null;
     readonly colors: ValueGroup;
-    // private componentFactories: { [key: string]: HudComponentFactory } | null;
+    // private componentFactories: JavaMap<string, HudComponentFactory> | null;
     // private componentSettings: ValueGroup | null;
     readonly components: HudComponent[];
     // private imageMutex: Mutex;

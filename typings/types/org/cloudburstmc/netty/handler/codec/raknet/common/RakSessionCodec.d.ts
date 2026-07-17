@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { IRakSessionCodec } from '../../../../../../../com/viaversion/viafabricplus/injection/access/core/bedrock/IRakSessionCodec.d.ts'
 import type { ByteBufAllocator } from '../../../../../../../io/netty/buffer/ByteBufAllocator.d.ts'
 import type { Channel } from '../../../../../../../io/netty/channel/Channel.d.ts'
@@ -44,7 +45,7 @@ export class RakSessionCodec extends ChannelDuplexHandler implements IRakSession
     // private reliabilityReadIndex: number;
     // private reliabilityWriteIndex: number;
     // private reliableDatagramQueue: BitQueue;
-    // private sentDatagrams: { [key: string]: any };
+    // private sentDatagrams: JavaMap<any, any>;
     // private slidingWindow: RakSlidingWindow;
     // private splitIndex: number;
     // private splitPackets: SplitPacketHelper[];
@@ -90,7 +91,7 @@ export class RakSessionCodec extends ChannelDuplexHandler implements IRakSession
     // private onTick(): void;
     recalculatePongTime(arg0: number): void;
     // private send(arg0: ChannelHandlerContext, arg1: RakMessage): void;
-    // private sendDatagram(arg0: ChannelHandlerContext, arg1: RakDatagramPacket, arg2: number, arg3: { [key: string]: any }): void;
+    // private sendDatagram(arg0: ChannelHandlerContext, arg1: RakDatagramPacket, arg2: number, arg3: JavaMap<any, any>): void;
     // private sendDatagrams(arg0: ChannelHandlerContext, arg1: number, arg2: number): void;
     // private sendImmediate(arg0: ChannelHandlerContext, arg1: EncapsulatedPacket[]): void;
     // private sendStaleDatagrams(arg0: ChannelHandlerContext, arg1: number): number;

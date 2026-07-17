@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Comparator } from '../../java/util/Comparator.d.ts'
 import type { HashMap$HashMapSpliterator } from '../../java/util/HashMap$HashMapSpliterator.d.ts'
 import type { Spliterator } from '../../java/util/Spliterator.d.ts'
@@ -12,7 +13,7 @@ export class HashMap$KeySpliterator<K extends unknown, V extends unknown> extend
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(arg0: Map<K, V>, arg1: number, arg2: number, arg3: number, arg4: number)
+    constructor(arg0: JavaMap<K, V>, arg1: number, arg2: number, arg3: number, arg4: number)
     characteristics(): number;
     forEachRemaining(arg0: (param0: K) => void): void;
     getComparator(): (param0: K, param1: K) => number;

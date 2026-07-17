@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Model } from '../../../ai/djl/Model.d.ts'
 import type { ImageClassificationTranslatorFactory } from '../../../ai/djl/modality/cv/translator/ImageClassificationTranslatorFactory.d.ts'
 import type { ServingTranslatorFactory } from '../../../ai/djl/translate/ServingTranslatorFactory.d.ts'
@@ -11,9 +12,9 @@ export class DefaultTranslatorFactory extends Object implements TranslatorFactor
     constructor()
     // private imageClassificationTranslatorFactory: ImageClassificationTranslatorFactory;
     // private servingTranslatorFactory: ServingTranslatorFactory;
-    // private translators: Map<Pair<Type, Type>, Translator<Object, Object>>;
+    // private translators: JavaMap<Pair<Type, Type>, Translator<Object, Object>>;
     getSupportedTypes(): Pair<Type, Type>[];
     isSupported(arg0: Class<Object>, arg1: Class<Object>): boolean;
-    newInstance<I extends unknown, O extends unknown>(arg0: Class<I>, arg1: Class<O>, arg2: Model, arg3: { [key: string]: Object | null }): Translator<I, O>;
+    newInstance<I extends unknown, O extends unknown>(arg0: Class<I>, arg1: Class<O>, arg2: Model, arg3: JavaMap<string, Object | null>): Translator<I, O>;
     registerTranslator<I extends unknown, O extends unknown>(arg0: Class<I>, arg1: Class<O>, arg2: Translator<I, O>): void;
 }

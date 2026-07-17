@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { AbstractCurve } from '../../../../io/jsonwebtoken/impl/security/AbstractCurve.d.ts'
 import type { KeyLengthSupplier } from '../../../../io/jsonwebtoken/security/KeyLengthSupplier.d.ts'
 import type { KeyPairBuilder } from '../../../../io/jsonwebtoken/security/KeyPairBuilder.d.ts'
@@ -33,6 +34,6 @@ export class EdwardsCurve extends AbstractCurve implements KeyLengthSupplier {
     isSignatureCurve(): boolean;
     keyPair(): KeyPairBuilder;
     privateKeySpec(arg0: number[], arg1: boolean): KeySpec;
-    toPrivateKey(arg0: number[], arg1: { [key: string]: any }): PrivateKey;
-    toPublicKey(arg0: number[], arg1: { [key: string]: any }): PublicKey;
+    toPrivateKey(arg0: number[], arg1: JavaMap<any, any>): PrivateKey;
+    toPublicKey(arg0: number[], arg1: JavaMap<any, any>): PublicKey;
 }

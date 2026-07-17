@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { JsonElement } from '../../../../../../../../com/viaversion/viaversion/libs/gson/JsonElement.d.ts'
 import type { DataConverter } from '../../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/DataConverter.d.ts'
 import type { Codec } from '../../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/codec/Codec.d.ts'
@@ -14,10 +15,10 @@ export class JsonConverter_v1_20_3 extends Object implements DataConverter<JsonE
     asIntArray(arg0: JsonElement): Result<number[]>;
     asList(arg0: JsonElement): Result<JsonElement[]>;
     asLongArray(arg0: JsonElement): Result<number[]>;
-    asMap(arg0: JsonElement): Result<Map<JsonElement, JsonElement>>;
+    asMap(arg0: JsonElement): Result<JavaMap<JsonElement, JsonElement>>;
     asNumber(arg0: JsonElement): Result<Number>;
     asString(arg0: JsonElement): Result<string>;
-    asStringTypeMap(arg0: JsonElement): Result<{ [key: string]: JsonElement }>;
+    asStringTypeMap(arg0: JsonElement): Result<JavaMap<string, JsonElement>>;
     convertFrom<N extends unknown>(arg0: DataConverter<N>, arg1: N): JsonElement;
     convertList<N extends unknown>(arg0: DataConverter<N>, arg1: JsonElement): N;
     convertMap<N extends unknown>(arg0: DataConverter<N>, arg1: JsonElement): N;
@@ -32,11 +33,11 @@ export class JsonConverter_v1_20_3 extends Object implements DataConverter<JsonE
     createList(arg0: JsonElement[]): JsonElement;
     createLong(arg0: number): JsonElement;
     createLongArray(arg0: number[]): JsonElement;
-    createMergedMap(arg0: Map<JsonElement, JsonElement>): Result<JsonElement>;
+    createMergedMap(arg0: JavaMap<JsonElement, JsonElement>): Result<JsonElement>;
     createNumber(arg0: Number): JsonElement;
     createShort(arg0: number): JsonElement;
     createString(arg0: string): JsonElement;
-    createUnsafeMap(arg0: Map<JsonElement, JsonElement>): JsonElement;
+    createUnsafeMap(arg0: JavaMap<JsonElement, JsonElement>): JsonElement;
     currentConsumer(): (param0: string) => void;
     empty(): JsonElement;
     emptyList(): JsonElement;
@@ -47,7 +48,7 @@ export class JsonConverter_v1_20_3 extends Object implements DataConverter<JsonE
     mergeList(arg0: JsonElement, arg1: JsonElement[]): Result<JsonElement>;
     mergeMap(arg0: JsonElement, arg1: JsonElement, arg2: JsonElement): Result<JsonElement>;
     mergeMap(arg0: JsonElement, ...arg1: JsonElement[]): Result<JsonElement>;
-    mergeMap(arg0: JsonElement, arg1: Map<JsonElement, JsonElement>): Result<JsonElement>;
+    mergeMap(arg0: JsonElement, arg1: JavaMap<JsonElement, JsonElement>): Result<JsonElement>;
     setCurrentConsumer(arg0: (param0: string) => void): void;
     toCodec(): Codec<JsonElement>;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { StagingBuffer } from '../../../../../../../../net/caffeinemc/mods/sodium/client/gpu/arena/staging/StagingBuffer.d.ts'
 import type { MultiDrawBatch } from '../../../../../../../../net/caffeinemc/mods/sodium/client/gpu/device/batch/MultiDrawBatch.d.ts'
@@ -28,20 +29,20 @@ export class RenderRegion extends Object implements ShadowRenderRegion {
     static key(paramarg0: number, paramarg1: number, paramarg2: number): number;
     constructor(arg0: number, arg1: number, arg2: number, arg3: StagingBuffer)
     readonly animatedSprites: TextureAtlasSprite[][];
-    // private cachedBatches: Map<TerrainRenderPass, MultiDrawBatch>;
+    // private cachedBatches: JavaMap<TerrainRenderPass, MultiDrawBatch>;
     readonly creationTime: number;
     readonly culledBlockEntities: BlockEntity[][];
     readonly globalBlockEntities: BlockEntity[][];
     // private iris$shadowRenderListActive: boolean;
-    // private regularCachedBatches: Map<Object | null, Object | null>;
+    // private regularCachedBatches: JavaMap<Object | null, Object | null>;
     // private regularRenderList: ChunkRenderList;
     readonly renderList: ChunkRenderList;
     readonly resources: RenderRegion$DeviceResources;
     // private sectionCount: number;
     readonly sectionFlags: number[];
-    // private sectionRenderData: Map<TerrainRenderPass, SectionRenderDataStorage>;
+    // private sectionRenderData: JavaMap<TerrainRenderPass, SectionRenderDataStorage>;
     // private sections: RenderSection[];
-    // private shadowCachedBatches: Map<Object | null, Object | null>;
+    // private shadowCachedBatches: JavaMap<Object | null, Object | null>;
     // private shadowRenderList: ChunkRenderList;
     // private stagingBuffer: StagingBuffer;
     // private uniqueId: number;

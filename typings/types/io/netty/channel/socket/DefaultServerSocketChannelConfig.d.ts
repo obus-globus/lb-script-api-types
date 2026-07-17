@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ByteBufAllocator } from '../../../../io/netty/buffer/ByteBufAllocator.d.ts'
 import type { ChannelOption } from '../../../../io/netty/channel/ChannelOption.d.ts'
 import type { DefaultChannelConfig } from '../../../../io/netty/channel/DefaultChannelConfig.d.ts'
@@ -14,8 +15,8 @@ export class DefaultServerSocketChannelConfig extends DefaultChannelConfig imple
     // private javaSocket: ServerSocket;
     getBacklog(): number;
     getOption<T extends unknown>(arg0: ChannelOption<T>): T;
-    getOptions(): Map<ChannelOption<Object>, Object>;
-    getOptions(arg0: Map<ChannelOption<Object>, Object>, ...arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
+    getOptions(): JavaMap<ChannelOption<Object>, Object>;
+    getOptions(arg0: JavaMap<ChannelOption<Object>, Object>, ...arg1: ChannelOption<Object>[]): JavaMap<ChannelOption<Object>, Object>;
     getReceiveBufferSize(): number;
     isReuseAddress(): boolean;
     setAllocator(arg0: ByteBufAllocator): ServerSocketChannelConfig;

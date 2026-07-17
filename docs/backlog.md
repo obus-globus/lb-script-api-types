@@ -130,7 +130,7 @@ W3 = deeper design, W4 = infra.
   NULLABLE form in `functionsOf` (same name/params, returns differ only by
   `| null` -> keep nullable: a spurious null check beats a masked null).
   Tests: wave3RegressionTests.
-- **[~] A13 - Map renderings don't match GraalJS reality - DEFERRED (wave 3).**
+- **[x] A13 - structural JavaMap<K, V>.** Fixed 2026-07-18 (gen@f7c75a3): every Java/Kotlin Map reference (15,277 sites) renders as a synthetic `JavaMap<K,V>` (F8 shape - `.get/.put/.containsKey`, `V | null`, keySet/values/entrySet `any`; NOT bracket-indexable, NOT a JS Map) via an unconditionally-emitted `types/JavaMap.d.ts` + per-module import. De-risked by a no-regen dry-run (measured zero per-code baseline delta); real regen reproduced it (7/704, no movement). P-02/P-02b post-patch regexes updated. FOLLOW-UP: position-aware `JavaMap | {[key:string]:V}` in PARAMETER position (~8,838 sites where GraalJS accepts a JS object literal but JavaMap rejects one) - a DX regression for scripts passing object literals to Java Map params; not a blocker (hot paths post-patch-covered). Superseded rationale:
   A structural `JavaMap<K,V>` ambient type is the right shape but flips ~14k
   renderings (5.3k JS-global `Map<K,V>` refs + 8.4k index-signature
   fallbacks) - a near-total semantic-baseline rewrite whose impact can't be

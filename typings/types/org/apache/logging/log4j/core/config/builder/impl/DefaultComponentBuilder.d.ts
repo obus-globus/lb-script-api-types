@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 import type { Level } from '../../../../../../../../org/apache/logging/log4j/Level.d.ts'
@@ -9,7 +10,7 @@ export class DefaultComponentBuilder<T extends ComponentBuilder<T>, CB extends C
     constructor(builder: CB, type: string)
     constructor(builder: CB, name: string, type: string)
     constructor(builder: CB, name: string, type: string, value: string)
-    // private attributes: { [key: string]: string };
+    // private attributes: JavaMap<string, string>;
     readonly builder: CB;
     // private components: Component[];
     readonly name: string;

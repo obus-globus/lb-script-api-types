@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Function } from '../../../com/google/common/base/Function.d.ts'
 import type { Ticker } from '../../../com/google/common/base/Ticker.d.ts'
 import type { Escaper } from '../../../com/google/common/escape/Escaper.d.ts'
@@ -71,7 +72,7 @@ export class Util extends Object {
     static copyAndAdd<T extends unknown>(paramelement: T, paramlist: T[]): T[];
     static copyAndAdd<T extends unknown>(paramlist: T[], paramelement: T): T[];
     static copyAndAdd<T extends unknown>(paramlist: T[], ...paramelements: T[]): T[];
-    static copyAndPut<K extends unknown, V extends unknown>(parammap: Map<K, V>, paramkey: K, paramvalue: V): Map<K, V>;
+    static copyAndPut<K extends unknown, V extends unknown>(parammap: JavaMap<K, V>, paramkey: K, paramvalue: V): JavaMap<K, V>;
     static copyBetweenDirs(paramsourceDir: Path, paramtargetDir: Path, paramsourcePath: Path): void;
     static createIndexIdentityLookup<T extends unknown>(paramvalues: T[]): (param0: T) => number;
     static createIndexLookup<T extends unknown>(paramvalues: T[]): (param0: T) => number;
@@ -107,9 +108,9 @@ export class Util extends Object {
     static make<T extends unknown>(paramt: T, paramconsumer: (param0: Object) => void): T;
     static make<T extends unknown>(paramfactory: () => T): T;
     static makeDescriptionId(paramprefix: string, paramlocation: Identifier): string;
-    static makeEnumMap<K extends Enum<K>, V extends unknown>(paramkeyType: Class<K>, paramfunction: (param0: K) => V): Map<K, V>;
-    static mapValues<K extends unknown, V1 extends unknown, V2 extends unknown>(parammap: Map<K, V1>, paramvalueMapper: (param0: Object) => V2): Map<K, V2>;
-    static mapValuesLazy<K extends unknown, V1 extends unknown, V2 extends unknown>(parammap: Map<K, V1>, paramvalueMapper: (param0: V1) => V2): Map<K, V2>;
+    static makeEnumMap<K extends Enum<K>, V extends unknown>(paramkeyType: Class<K>, paramfunction: (param0: K) => V): JavaMap<K, V>;
+    static mapValues<K extends unknown, V1 extends unknown, V2 extends unknown>(parammap: JavaMap<K, V1>, paramvalueMapper: (param0: Object) => V2): JavaMap<K, V2>;
+    static mapValuesLazy<K extends unknown, V1 extends unknown, V2 extends unknown>(parammap: JavaMap<K, V1>, paramvalueMapper: (param0: V1) => V2): JavaMap<K, V2>;
     static maxAllowedExecutorThreads(): number;
     static memoize<T extends unknown, R extends unknown>(paramfunction: (param0: T) => R): (param0: T) => R;
     static memoize<T extends unknown, U extends unknown, R extends unknown>(paramfunction: (param0: T, param1: U) => R): (param0: T, param1: U) => R;
@@ -141,7 +142,7 @@ export class Util extends Object {
     static startTimerHackThread(): void;
     static throwAsRuntime(paramthrowable: Throwable): void;
     static timeSource(): TimeSource$NanoTimeSource;
-    static toMap<K extends unknown, V extends unknown>(): Collector<Map$Entry<K, V>, Object, Map<K, V>>;
+    static toMap<K extends unknown, V extends unknown>(): Collector<Map$Entry<K, V>, Object, JavaMap<K, V>>;
     static toMutableList<T extends unknown>(): Collector<T, Object, T[]>;
     static toShuffledList<T extends unknown>(paramstream: Stream<T>, paramrandom: RandomSource): T[];
     static toShuffledList(paramstream: IntStream, paramrandom: RandomSource): (Object | null)[];

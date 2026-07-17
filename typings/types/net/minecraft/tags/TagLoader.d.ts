@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Either } from '../../../com/mojang/datafixers/util/Either.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../net/minecraft/core/Holder.d.ts'
@@ -16,13 +17,13 @@ import type { TagNetworkSerialization$NetworkPayload } from '../../../net/minecr
 export class TagLoader<T extends unknown> extends Object {
     static buildUpdatedLookups(paramregistries: RegistryAccess$Frozen, paramtags: Registry$PendingTags<Object>[]): HolderLookup$RegistryLookup<Object>[];
     static loadTagsForExistingRegistries(parammanager: ResourceManager, paramlayer: RegistryAccess): Registry$PendingTags<Object>[];
-    static loadTagsForRegistry<T extends unknown>(parammanager: ResourceManager, paramregistryKey: ResourceKey<T[]>, paramlookup: TagLoader$ElementLookup<Holder<T>>): Map<TagKey<T>, Holder<T>[]>;
+    static loadTagsForRegistry<T extends unknown>(parammanager: ResourceManager, paramregistryKey: ResourceKey<T[]>, paramlookup: TagLoader$ElementLookup<Holder<T>>): JavaMap<TagKey<T>, Holder<T>[]>;
     static loadTagsForRegistry<T extends unknown>(parammanager: ResourceManager, paramregistry: T[]): void;
-    static loadTagsFromNetwork<T extends unknown>(paramtags: TagNetworkSerialization$NetworkPayload, paramregistry: T[]): Map<TagKey<T>, Holder<T>[]>;
+    static loadTagsFromNetwork<T extends unknown>(paramtags: TagNetworkSerialization$NetworkPayload, paramregistry: T[]): JavaMap<TagKey<T>, Holder<T>[]>;
     constructor(elementLookup: TagLoader$ElementLookup<T>, directory: string)
     // private directory: string;
     // private elementLookup: TagLoader$ElementLookup<T>;
-    build(builders: Map<Identifier, TagLoader$EntryWithSource[]>): Map<Identifier, T[]>;
-    load(resourceManager: ResourceManager): Map<Identifier, TagLoader$EntryWithSource[]>;
+    build(builders: JavaMap<Identifier, TagLoader$EntryWithSource[]>): JavaMap<Identifier, T[]>;
+    load(resourceManager: ResourceManager): JavaMap<Identifier, TagLoader$EntryWithSource[]>;
     // private tryBuildTag(lookup: TagEntry$Lookup<T>, entries: TagLoader$EntryWithSource[]): Either<TagLoader$EntryWithSource[], T[]>;
 }

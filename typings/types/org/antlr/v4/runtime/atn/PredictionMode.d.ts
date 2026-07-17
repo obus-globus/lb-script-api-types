@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { BitSet } from '../../../../../java/util/BitSet.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -14,7 +15,7 @@ export class PredictionMode extends Enum<PredictionMode> {
     static getAlts(paramarg0: (Object | null)[]): BitSet;
     static getConflictingAltSubsets(paramarg0: (Object | null)[]): BitSet[];
     static getSingleViableAlt(paramarg0: BitSet[]): number;
-    static getStateToAltMap(paramarg0: (Object | null)[]): Map<ATNState, BitSet>;
+    static getStateToAltMap(paramarg0: (Object | null)[]): JavaMap<ATNState, BitSet>;
     static getUniqueAlt(paramarg0: BitSet[]): number;
     static hasConfigInRuleStopState(paramarg0: (Object | null)[]): boolean;
     static hasConflictingAltSet(paramarg0: BitSet[]): boolean;

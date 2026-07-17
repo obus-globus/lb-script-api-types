@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { GpuFormat } from '../../../../com/mojang/blaze3d/GpuFormat.d.ts'
 import type { GpuBuffer } from '../../../../com/mojang/blaze3d/buffers/GpuBuffer.d.ts'
 import type { CompiledRenderPipeline } from '../../../../com/mojang/blaze3d/pipeline/CompiledRenderPipeline.d.ts'
@@ -41,8 +42,8 @@ export class VulkanDevice extends Object implements GpuDeviceBackend {
     // private graphicsQueue: VulkanQueue;
     // private instance: VulkanInstance;
     // private isIntegratedIntelMoltenVK: boolean;
-    // private pipelineCache: Map<RenderPipeline, VulkanRenderPipeline>;
-    // private shaderCache: Map<VulkanDevice$ShaderCompilationKey, IntermediaryShaderModule>;
+    // private pipelineCache: JavaMap<RenderPipeline, VulkanRenderPipeline>;
+    // private shaderCache: JavaMap<VulkanDevice$ShaderCompilationKey, IntermediaryShaderModule>;
     // private transferQueue: VulkanQueue;
     // private vkDevice: VkDevice;
     // private vma: number;

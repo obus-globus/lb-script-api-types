@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { AlphaTest } from '../../../../../net/irisshaders/iris/gl/blending/AlphaTest.d.ts'
@@ -12,7 +13,7 @@ export class ProgramDirectives extends Object {
     readonly blendModeOverride: Optional<BlendModeOverride>;
     // private bufferBlendInformations: BufferBlendInformation[];
     readonly drawBuffers: number[];
-    readonly explicitFlips: { [key: number]: boolean };
+    readonly explicitFlips: JavaMap<number, boolean>;
     readonly mipmappedBuffers: number[];
     // private unknownDrawBuffers: boolean;
     readonly viewportScale: ViewportData;
@@ -20,7 +21,7 @@ export class ProgramDirectives extends Object {
     getBlendModeOverride(): Optional<BlendModeOverride>;
     getBufferBlendOverrides(): BufferBlendInformation[];
     getDrawBuffers(): number[];
-    getExplicitFlips(): { [key: number]: boolean };
+    getExplicitFlips(): JavaMap<number, boolean>;
     getMipmappedBuffers(): number[];
     getViewportScale(): ViewportData;
     hasUnknownDrawBuffers(): boolean;

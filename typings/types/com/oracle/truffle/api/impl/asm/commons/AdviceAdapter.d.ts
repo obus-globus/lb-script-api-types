@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Handle } from '../../../../../../../com/oracle/truffle/api/impl/asm/Handle.d.ts'
 import type { Label } from '../../../../../../../com/oracle/truffle/api/impl/asm/Label.d.ts'
 import type { MethodVisitor } from '../../../../../../../com/oracle/truffle/api/impl/asm/MethodVisitor.d.ts'
@@ -271,7 +272,7 @@ export abstract class AdviceAdapter extends GeneratorAdapter implements Opcodes 
     static V_PREVIEW: number;
     static XOR: number;
     constructor(api: number, methodVisitor: MethodVisitor, access: number, name: string, descriptor: string)
-    // private forwardJumpStackFrames: Map<Label, Object[]>;
+    // private forwardJumpStackFrames: JavaMap<Label, Object[]>;
     // private isConstructor: boolean;
     // private methodAccess: number;
     // private methodDesc: string;

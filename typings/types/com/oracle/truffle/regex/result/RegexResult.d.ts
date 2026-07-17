@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { CallTarget } from '../../../../../com/oracle/truffle/api/CallTarget.d.ts'
 import type { TruffleString } from '../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
 import type { AbstractConstantKeysObject } from '../../../../../com/oracle/truffle/regex/AbstractConstantKeysObject.d.ts'
@@ -11,8 +12,8 @@ export class RegexResult extends AbstractConstantKeysObject {
     static create(paramresult: number[]): RegexResult;
     static createFromExecutorResult(paramexecutorResult: Object): RegexResult;
     static createLazy(paraminput: TruffleString, paramfromIndex: number, paramregionFrom: number, paramregionTo: number, paramstart: number, paramend: number, paramlazyCallTarget: CallTarget): RegexResult;
-    static createNamedCaptureGroupMapInt(paramnamedCaptureGroups: { [key: string]: number[] }): AbstractRegexObject;
-    static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: { [key: string]: number[] }): AbstractRegexObject;
+    static createNamedCaptureGroupMapInt(paramnamedCaptureGroups: JavaMap<string, number[]>): AbstractRegexObject;
+    static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: JavaMap<string, number[]>): AbstractRegexObject;
     static getBooleanMatchInstance(): RegexResult;
     static getNoMatchInstance(): RegexResult;
     constructor(input: TruffleString, fromIndex: number, regionFrom: number, regionTo: number, start: number, end: number, result: number[], lazyCallTarget: CallTarget)

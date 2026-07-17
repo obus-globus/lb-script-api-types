@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Config } from '../../../com/viaversion/viaversion/util/Config.d.ts'
 import type { File } from '../../../java/io/File.d.ts'
 import type { URL } from '../../../java/net/URL.d.ts'
@@ -22,7 +23,7 @@ export class ViaLegacyConfig extends Config implements ViaLegacyConfig_2 {
     getClassicChunkRange(): number;
     getDefaultConfigURL(): URL;
     getUnsupportedOptions(): string[];
-    handleConfig(arg0: { [key: string]: Object }): void;
+    handleConfig(arg0: JavaMap<string, Object>): void;
     isDynamicOnground(): boolean;
     isIgnoreLong1_8ChannelNames(): boolean;
     isLegacySkinLoading(): boolean;

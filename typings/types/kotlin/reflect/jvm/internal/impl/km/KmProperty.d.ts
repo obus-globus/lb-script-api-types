@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { KmAnnotation } from '../../../../../../kotlin/reflect/jvm/internal/impl/km/KmAnnotation.d.ts'
 import type { KmPropertyAccessorAttributes } from '../../../../../../kotlin/reflect/jvm/internal/impl/km/KmPropertyAccessorAttributes.d.ts'
@@ -13,7 +14,7 @@ export class KmProperty extends Object {
     // private _hasSetter$delegate: BooleanFlagDelegate<Object>;
     readonly annotations: KmAnnotation[];
     readonly backingFieldAnnotations: KmAnnotation[];
-    readonly compilerPluginMetadata: { [key: string]: number[] };
+    readonly compilerPluginMetadata: JavaMap<string, number[]>;
     readonly contextParameters: KmValueParameter[];
     // private contextReceiverTypes: KmType[];
     readonly delegateFieldAnnotations: KmAnnotation[];
@@ -30,7 +31,7 @@ export class KmProperty extends Object {
     readonly versionRequirements: KmVersionRequirement[];
     getAnnotations(): KmAnnotation[];
     getBackingFieldAnnotations(): KmAnnotation[];
-    getCompilerPluginMetadata(): { [key: string]: number[] };
+    getCompilerPluginMetadata(): JavaMap<string, number[]>;
     getContextParameters(): KmValueParameter[];
     getDelegateFieldAnnotations(): KmAnnotation[];
     getExtensionReceiverParameterAnnotations(): KmAnnotation[];

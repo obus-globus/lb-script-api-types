@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { FileSystems$DeniedIOFileSystem } from '../../../../com/oracle/truffle/polyglot/FileSystems$DeniedIOFileSystem.d.ts'
 import type { URI } from '../../../../java/net/URI.d.ts'
 import type { SeekableByteChannel } from '../../../../java/nio/channels/SeekableByteChannel.d.ts'
@@ -30,7 +31,7 @@ export class FileSystems$ReadOnlyFileSystem extends FileSystems$DeniedIOFileSyst
     newDirectoryStream(dir: Path, filter: (param0: Path) => boolean): Path[];
     parsePath(uri: URI): Path;
     parsePath(path: string): Path;
-    readAttributes(path: Path, attributes: string, ...options: LinkOption[]): { [key: string]: Object };
+    readAttributes(path: Path, attributes: string, ...options: LinkOption[]): JavaMap<string, Object>;
     readSymbolicLink(link: Path): Path;
     setCurrentWorkingDirectory(currentWorkingDirectory: Path): void;
     toAbsolutePath(path: Path): Path;

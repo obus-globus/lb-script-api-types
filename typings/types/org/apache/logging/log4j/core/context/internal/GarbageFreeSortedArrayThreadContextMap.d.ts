@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { ThreadLocal } from '../../../../../../../java/lang/ThreadLocal.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { ObjectThreadContextMap } from '../../../../../../../org/apache/logging/log4j/spi/ObjectThreadContextMap.d.ts'
@@ -17,16 +18,16 @@ export class GarbageFreeSortedArrayThreadContextMap extends Object implements Ob
     createStringMap(original: ReadOnlyStringMap): StringMap;
     equals(obj: Object | null): boolean;
     get(key: string): string;
-    getCopy(): { [key: string]: string };
-    getImmutableMapOrNull(): { [key: string]: string };
+    getCopy(): JavaMap<string, string>;
+    getImmutableMapOrNull(): JavaMap<string, string>;
     getReadOnlyContextData(): StringMap;
     // private getThreadLocalMap(): StringMap;
     getValue<V extends unknown>(key: string): V;
     hashCode(): number;
     isEmpty(): boolean;
     put(key: string, value: string): void;
-    putAll(values: { [key: string]: string }): void;
-    putAllValues<V extends unknown>(values: { [key: string]: V }): void;
+    putAll(values: JavaMap<string, string>): void;
+    putAllValues<V extends unknown>(values: JavaMap<string, V>): void;
     putValue(key: string, value: Object): void;
     remove(key: string): void;
     removeAll(keys: string[]): void;

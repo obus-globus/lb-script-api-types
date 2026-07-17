@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Function } from '../../../../com/google/common/base/Function.d.ts'
 import type { AbstractTable } from '../../../../com/google/common/collect/AbstractTable.d.ts'
 import type { Table } from '../../../../com/google/common/collect/Table.d.ts'
@@ -13,17 +14,17 @@ export class Tables$TransformedTable<R extends unknown, C extends unknown, V1 ex
     cellIterator(): Iterator<Table$Cell<R, C, V2>>;
     cellSpliterator(): Spliterator<Table$Cell<R, C, V2>>;
     clear(): void;
-    column(columnKey: C): Map<R, V2>;
+    column(columnKey: C): JavaMap<R, V2>;
     columnKeySet(): C[];
-    columnMap(): Map<C, Map<R, V2>>;
+    columnMap(): JavaMap<C, JavaMap<R, V2>>;
     contains(rowKey: Object, columnKey: Object): boolean;
     createValues(): V2[];
     get(rowKey: Object, columnKey: Object): V2;
     put(rowKey: R, columnKey: C, value: V2): V2;
     putAll(table: Table<R, C, V2>): void;
     remove(rowKey: Object, columnKey: Object): V2;
-    row(rowKey: R): Map<C, V2>;
+    row(rowKey: R): JavaMap<C, V2>;
     rowKeySet(): R[];
-    rowMap(): Map<R, Map<C, V2>>;
+    rowMap(): JavaMap<R, JavaMap<C, V2>>;
     size(): number;
 }

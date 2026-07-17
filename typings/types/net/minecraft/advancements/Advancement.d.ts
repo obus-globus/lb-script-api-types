@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Codec } from '../../../com/mojang/serialization/Codec.d.ts'
 import type { Record } from '../../../java/lang/Record.d.ts'
 import type { Optional } from '../../../java/util/Optional.d.ts'
@@ -17,16 +18,16 @@ export class Advancement extends Record {
     static CODEC: Codec<Advancement>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Advancement>;
     static name(paramholder: AdvancementHolder): Component;
-    constructor(parent: Optional<Identifier>, display: Optional<DisplayInfo>, rewards: AdvancementRewards, criteria: { [key: string]: Criterion<any> }, requirements: AdvancementRequirements, sendsTelemetryEvent: boolean)
-    constructor(parent: Optional<Identifier>, display: Optional<DisplayInfo>, rewards: AdvancementRewards, criteria: { [key: string]: Criterion<any> }, requirements: AdvancementRequirements, sendsTelemetryEvent: boolean, name: Optional<Component>)
-    // private criteria: { [key: string]: Criterion<any> };
+    constructor(parent: Optional<Identifier>, display: Optional<DisplayInfo>, rewards: AdvancementRewards, criteria: JavaMap<string, Criterion<any>>, requirements: AdvancementRequirements, sendsTelemetryEvent: boolean)
+    constructor(parent: Optional<Identifier>, display: Optional<DisplayInfo>, rewards: AdvancementRewards, criteria: JavaMap<string, Criterion<any>>, requirements: AdvancementRequirements, sendsTelemetryEvent: boolean, name: Optional<Component>)
+    // private criteria: JavaMap<string, Criterion<any>>;
     // private display: Optional<DisplayInfo>;
     // private name: Optional<Component>;
     // private parent: Optional<Identifier>;
     // private requirements: AdvancementRequirements;
     // private rewards: AdvancementRewards;
     // private sendsTelemetryEvent: boolean;
-    criteria(): { [key: string]: Criterion<any> };
+    criteria(): JavaMap<string, Criterion<any>>;
     display(): Optional<DisplayInfo>;
     equals(o: Object | null): boolean;
     hashCode(): number;

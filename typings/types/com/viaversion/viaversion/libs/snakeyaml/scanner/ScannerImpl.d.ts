@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { LoaderOptions } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/LoaderOptions.d.ts'
 import type { CommentType } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/comments/CommentType.d.ts'
 import type { Mark } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/error/Mark.d.ts'
@@ -12,8 +13,8 @@ import type { ArrayStack } from '../../../../../../com/viaversion/viaversion/lib
 import type { StringBuilder } from '../../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ScannerImpl extends Object implements Scanner {
-    static ESCAPE_CODES: { [key: string]: number };
-    static ESCAPE_REPLACEMENTS: { [key: string]: string };
+    static ESCAPE_CODES: JavaMap<string, number>;
+    static ESCAPE_REPLACEMENTS: JavaMap<string, string>;
     constructor(arg0: StreamReader, arg1: LoaderOptions)
     // private allowSimpleKey: boolean;
     // private done: boolean;
@@ -23,7 +24,7 @@ export class ScannerImpl extends Object implements Scanner {
     // private lastToken: Token;
     // private loaderOptions: LoaderOptions;
     // private parseComments: boolean;
-    // private possibleSimpleKeys: { [key: number]: SimpleKey };
+    // private possibleSimpleKeys: JavaMap<number, SimpleKey>;
     // private reader: StreamReader;
     // private tokens: Token[];
     // private tokensTaken: number;

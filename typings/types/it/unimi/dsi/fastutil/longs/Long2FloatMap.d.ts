@@ -1,7 +1,8 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Long2FloatMap$Entry } from '../../../../../it/unimi/dsi/fastutil/longs/Long2FloatMap$Entry.d.ts'
 export class Long2FloatMap {
     // A14 statics-only surface: instances of this collection-backed type
     // render structurally (arrays / maps); only the statics are declared here.
     static entry(paramarg0: number, paramarg1: number): Long2FloatMap$Entry;
-    static ofEntries(...paramarg0: Long2FloatMap$Entry[]): { [key: string]: any };
+    static ofEntries(...paramarg0: Long2FloatMap$Entry[]): JavaMap<any, any>;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Memory } from '../../../../../com/sun/jna/Memory.d.ts'
 import type { Advapi32Util$AccessCheckPermission } from '../../../../../com/sun/jna/platform/win32/Advapi32Util$AccessCheckPermission.d.ts'
 import type { Advapi32Util$Account } from '../../../../../com/sun/jna/platform/win32/Advapi32Util$Account.d.ts'
@@ -29,7 +30,7 @@ export abstract class Advapi32Util extends Object {
     static getAccountBySid(paramarg0: string, paramarg1: string): Advapi32Util$Account;
     static getAceSize(paramarg0: number): number;
     static getCurrentUserGroups(): Advapi32Util$Account[];
-    static getEnvironmentBlock(paramarg0: { [key: string]: string }): string;
+    static getEnvironmentBlock(paramarg0: JavaMap<string, string>): string;
     static getFileSecurity(paramarg0: string, paramarg1: boolean): WinNT$ACE_HEADER[];
     static getFileSecurityDescriptor(paramarg0: File, paramarg1: boolean): WinNT$SECURITY_DESCRIPTOR_RELATIVE;
     static getSecurityDescriptorForObject(paramarg0: string, paramarg1: number, paramarg2: boolean): Memory;
@@ -74,9 +75,9 @@ export abstract class Advapi32Util extends Object {
     static registryGetStringValue(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: string): string;
     static registryGetStringValue(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: string, paramarg3: number): string;
     static registryGetValue(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: string): Object;
-    static registryGetValues(paramarg0: WinReg$HKEY): { [key: string]: Object };
-    static registryGetValues(paramarg0: WinReg$HKEY, paramarg1: string): { [key: string]: Object };
-    static registryGetValues(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: number): { [key: string]: Object };
+    static registryGetValues(paramarg0: WinReg$HKEY): JavaMap<string, Object>;
+    static registryGetValues(paramarg0: WinReg$HKEY, paramarg1: string): JavaMap<string, Object>;
+    static registryGetValues(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: number): JavaMap<string, Object>;
     static registryKeyExists(paramarg0: WinReg$HKEY, paramarg1: string): boolean;
     static registryKeyExists(paramarg0: WinReg$HKEY, paramarg1: string, paramarg2: number): boolean;
     static registryLoadAppKey(paramarg0: string, paramarg1: number, paramarg2: number): WinReg$HKEYByReference;

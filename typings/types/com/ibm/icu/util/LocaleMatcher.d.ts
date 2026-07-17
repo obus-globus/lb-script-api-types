@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { LSR } from '../../../../com/ibm/icu/impl/locale/LSR.d.ts'
 import type { LocaleMatcher$Builder } from '../../../../com/ibm/icu/util/LocaleMatcher$Builder.d.ts'
 import type { LocaleMatcher$Direction } from '../../../../com/ibm/icu/util/LocaleMatcher$Direction.d.ts'
@@ -22,7 +23,7 @@ export class LocaleMatcher extends Object {
     // private supportedLSRs: LSR[];
     // private supportedLSRsLength: number;
     // private supportedLocales: Locale[];
-    // private supportedLsrToIndex: Map<LSR, number>;
+    // private supportedLsrToIndex: JavaMap<LSR, number>;
     // private supportedULocales: ULocale[];
     // private thresholdDistance: number;
     canonicalize(arg0: ULocale): ULocale;

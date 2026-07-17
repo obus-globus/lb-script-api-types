@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { ObjectInputStream } from '../../java/io/ObjectInputStream.d.ts'
 import type { ObjectOutputStream } from '../../java/io/ObjectOutputStream.d.ts'
 import type { ObjectStreamClass$ClassDataSlot } from '../../java/io/ObjectStreamClass$ClassDataSlot.d.ts'
@@ -22,7 +23,7 @@ export class ObjectStreamClass extends Object implements Serializable {
     // private dataLayout: ObjectStreamClass$ClassDataSlot[];
     // private defaultSerializeEx: ObjectStreamClass$ExceptionInfo;
     // private deserializationCtr: MethodHandle;
-    // private deserializationCtrs: { [key: string]: any };
+    // private deserializationCtrs: JavaMap<any, any>;
     // private deserializeEx: ObjectStreamClass$ExceptionInfo;
     // private externalizable: boolean;
     // private fieldRefl: ObjectStreamClass$FieldReflector;

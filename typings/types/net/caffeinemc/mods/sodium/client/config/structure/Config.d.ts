@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
@@ -19,10 +20,10 @@ export class Config extends Object implements ConfigState {
     static onRendererUpdate(): void;
     static onVideoModeReload(): void;
     constructor(arg0: ModOptions[])
-    // private flagHooks: Map<Identifier, FlagHook[]>;
+    // private flagHooks: JavaMap<Identifier, FlagHook[]>;
     // private globalRebuildDependents: DynamicValue<Object>[];
     readonly modOptions: ModOptions[];
-    // private options: Map<Identifier, Option>;
+    // private options: JavaMap<Identifier, Option>;
     // private pendingStorageHandlers: () => void[];
     // private searchIndex: SearchIndex;
     // private triggeredHooks: FlagHook[];

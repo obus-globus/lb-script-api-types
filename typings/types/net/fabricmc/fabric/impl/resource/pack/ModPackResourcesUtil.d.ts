@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Gson } from '../../../../../../com/google/gson/Gson.d.ts'
 import type { JsonObject } from '../../../../../../com/google/gson/JsonObject.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
@@ -31,7 +32,7 @@ export class ModPackResourcesUtil extends Object {
     static getModResourcePacks(paramarg0: FabricLoader, paramarg1: PackType, paramarg2: string): ModPackResources[];
     static getName(paramarg0: ModMetadata): Component;
     static openDefault(paramarg0: ModContainer, paramarg1: PackType, paramarg2: string): InputStream;
-    static refreshAutoEnabledPacks(paramarg0: Pack[], paramarg1: { [key: string]: Pack }): void;
+    static refreshAutoEnabledPacks(paramarg0: Pack[], paramarg1: JavaMap<string, Pack>): void;
     static serializeMetadata(paramarg0: PackFormat, paramarg1: string, paramarg2: PackType): string;
     private constructor()
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
@@ -10,10 +11,10 @@ import type { BlockModel$Unbaked } from '../../../../../net/minecraft/client/ren
 import type { SpriteGetter } from '../../../../../net/minecraft/client/resources/model/sprite/SpriteGetter.d.ts'
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class LoadedBlockModels extends Object {
-    constructor(unbakedModels: Map<BlockState, BlockModel$Unbaked>, entityModelSet: EntityModelSet, sprites: SpriteGetter, playerSkinRenderCache: PlayerSkinRenderCache)
+    constructor(unbakedModels: JavaMap<BlockState, BlockModel$Unbaked>, entityModelSet: EntityModelSet, sprites: SpriteGetter, playerSkinRenderCache: PlayerSkinRenderCache)
     // private entityModelSet: EntityModelSet;
     // private playerSkinRenderCache: PlayerSkinRenderCache;
     // private sprites: SpriteGetter;
-    // private unbakedModels: Map<BlockState, BlockModel$Unbaked>;
-    bake(bakedBlockStateModels: (param0: BlockState) => BlockStateModel, missingModel: BlockStateModel, executor: Executor): CompletableFuture<Map<BlockState, BlockModel>>;
+    // private unbakedModels: JavaMap<BlockState, BlockModel$Unbaked>;
+    bake(bakedBlockStateModels: (param0: BlockState) => BlockStateModel, missingModel: BlockStateModel, executor: Executor): CompletableFuture<JavaMap<BlockState, BlockModel>>;
 }

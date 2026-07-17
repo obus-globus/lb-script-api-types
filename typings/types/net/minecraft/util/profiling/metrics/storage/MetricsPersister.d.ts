@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ProfileResults } from '../../../../../../net/minecraft/util/profiling/ProfileResults.d.ts'
@@ -12,8 +13,8 @@ export class MetricsPersister extends Object {
     constructor(rootFolderName: string)
     // private rootFolderName: string;
     // private saveCategory(category: MetricCategory, samplers: MetricSampler[], dir: Path): void;
-    // private saveDeviations(deviationsBySampler: Map<MetricSampler, RecordedDeviation[]>, directory: Path): void;
+    // private saveDeviations(deviationsBySampler: JavaMap<MetricSampler, RecordedDeviation[]>, directory: Path): void;
     // private saveMetrics(samplers: MetricSampler[], dir: Path): void;
     // private saveProfilingTaskExecutionResult(results: ProfileResults, directory: Path): void;
-    saveReports(samplers: MetricSampler[], deviationsBySampler: Map<MetricSampler, RecordedDeviation[]>, profilerResults: ProfileResults): Path;
+    saveReports(samplers: MetricSampler[], deviationsBySampler: JavaMap<MetricSampler, RecordedDeviation[]>, profilerResults: ProfileResults): Path;
 }

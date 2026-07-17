@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { ExecutorService } from '../../../../../../../java/util/concurrent/ExecutorService.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { ChunkRenderer } from '../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/ChunkRenderer.d.ts'
@@ -49,10 +50,10 @@ export class RenderSectionManager extends Object implements ShadowRenderListAcce
     // private cameraStableSince: number;
     // private cameraTimingControl: AsyncCameraTimingControl;
     readonly chunkRenderer: ChunkRenderer;
-    // private cullResults: Map<CullType, SectionTree>;
+    // private cullResults: JavaMap<CullType, SectionTree>;
     // private deferredTasks: number;
     readonly frame: number;
-    // private importantTasks: Map<DeferMode, RenderSection[]>;
+    // private importantTasks: JavaMap<DeferMode, RenderSection[]>;
     // private jobDurationEstimator: JobDurationEstimator;
     // private jobUploadDurationEstimator: UploadDurationEstimator;
     // private lastBlockingCollector: ChunkJobCollector;
@@ -79,7 +80,7 @@ export class RenderSectionManager extends Object implements ShadowRenderListAcce
     readonly renderLists: SortedRenderLists;
     // private renderTree: SectionTree;
     // private renderableSectionTree: RemovableMultiForest;
-    // private sectionByPosition: { [key: string]: any };
+    // private sectionByPosition: JavaMap<any, any>;
     // private sectionCache: ClonedChunkSectionCache;
     readonly sectionsWithGlobalEntities: RenderSection[];
     // private shadowNeedsRenderListUpdate: boolean;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { ViaAprilFoolsConfig as ViaAprilFoolsConfig_2 } from '../../../com/viaversion/viaaprilfools/platform/ViaAprilFoolsConfig.d.ts'
 import type { Config } from '../../../com/viaversion/viaversion/util/Config.d.ts'
 import type { File } from '../../../java/io/File.d.ts'
@@ -10,7 +11,7 @@ export class ViaAprilFoolsConfig extends Config implements ViaAprilFoolsConfig_2
     getDefaultConfigInputStream(): InputStream;
     getDefaultConfigURL(): URL;
     getUnsupportedOptions(): string[];
-    handleConfig(arg0: { [key: string]: Object }): void;
+    handleConfig(arg0: JavaMap<string, Object>): void;
     // private loadFields(): void;
     reload(): void;
 }

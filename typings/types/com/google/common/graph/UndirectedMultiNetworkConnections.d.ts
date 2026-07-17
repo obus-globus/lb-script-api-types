@@ -1,8 +1,9 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { AbstractUndirectedNetworkConnections } from '../../../../com/google/common/graph/AbstractUndirectedNetworkConnections.d.ts'
 import type { Reference } from '../../../../java/lang/ref/Reference.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class UndirectedMultiNetworkConnections<N extends unknown, E extends unknown> extends AbstractUndirectedNetworkConnections<N, E> {
-    private constructor(incidentEdges: Map<E, N>)
+    private constructor(incidentEdges: JavaMap<E, N>)
     // private adjacentNodesReference: Reference<N[]>;
     addInEdge(edge: E, node: N, isSelfLoop: boolean): void;
     addOutEdge(edge: E, node: N): void;

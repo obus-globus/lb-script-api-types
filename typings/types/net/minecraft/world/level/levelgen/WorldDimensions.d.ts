@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
@@ -15,13 +16,13 @@ import type { WorldDimensions$Complete } from '../../../../../net/minecraft/worl
 export class WorldDimensions extends Record {
     static CODEC: MapCodec<WorldDimensions>;
     static keysInOrder(paramknownKeys: ResourceKey<LevelStem>[]): Stream<ResourceKey<LevelStem>>;
-    static withOverworld(paramdimensions: Map<ResourceKey<LevelStem>, LevelStem>, paramtype: Holder<DimensionType>, paramgenerator: ChunkGenerator): Map<ResourceKey<LevelStem>, LevelStem>;
-    static withOverworld(paramdimensionTypes: HolderLookup<DimensionType>, paramdimensions: Map<ResourceKey<LevelStem>, LevelStem>, paramgenerator: ChunkGenerator): Map<ResourceKey<LevelStem>, LevelStem>;
-    constructor(dimensions: Map<ResourceKey<LevelStem>, LevelStem>)
+    static withOverworld(paramdimensions: JavaMap<ResourceKey<LevelStem>, LevelStem>, paramtype: Holder<DimensionType>, paramgenerator: ChunkGenerator): JavaMap<ResourceKey<LevelStem>, LevelStem>;
+    static withOverworld(paramdimensionTypes: HolderLookup<DimensionType>, paramdimensions: JavaMap<ResourceKey<LevelStem>, LevelStem>, paramgenerator: ChunkGenerator): JavaMap<ResourceKey<LevelStem>, LevelStem>;
+    constructor(dimensions: JavaMap<ResourceKey<LevelStem>, LevelStem>)
     constructor(registry: LevelStem[])
-    // private dimensions: Map<ResourceKey<LevelStem>, LevelStem>;
+    // private dimensions: JavaMap<ResourceKey<LevelStem>, LevelStem>;
     bake(baseDimensions: LevelStem[]): WorldDimensions$Complete;
-    dimensions(): Map<ResourceKey<LevelStem>, LevelStem>;
+    dimensions(): JavaMap<ResourceKey<LevelStem>, LevelStem>;
     equals(o: Object | null): boolean;
     get(key: ResourceKey<LevelStem>): Optional<LevelStem>;
     hashCode(): number;

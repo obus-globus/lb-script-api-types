@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { PrintWriter } from '../../../../../java/io/PrintWriter.d.ts'
 import type { ServerSocket } from '../../../../../java/net/ServerSocket.d.ts'
 import type { SocketAddress } from '../../../../../java/net/SocketAddress.d.ts'
@@ -52,7 +53,7 @@ export class LanguageServerImpl extends LanguageServer {
     // private emptySignatureHelp: SignatureHelp;
     // private err: PrintWriter;
     // private info: PrintWriter;
-    // private openedFileUri2LangId: Map<URI, string>;
+    // private openedFileUri2LangId: JavaMap<URI, string>;
     // private serverCapabilities: ServerCapabilities;
     // private truffleAdapter: TruffleAdapter;
     codeAction(params: CodeActionParams): CompletableFuture<CodeAction[]>;

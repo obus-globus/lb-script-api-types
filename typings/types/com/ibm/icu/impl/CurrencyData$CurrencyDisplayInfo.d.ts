@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { CurrencyData$CurrencyFormatInfo } from '../../../../com/ibm/icu/impl/CurrencyData$CurrencyFormatInfo.d.ts'
 import type { CurrencyData$CurrencySpacingInfo } from '../../../../com/ibm/icu/impl/CurrencyData$CurrencySpacingInfo.d.ts'
 import type { CurrencyDisplayNames } from '../../../../com/ibm/icu/text/CurrencyDisplayNames.d.ts'
@@ -12,5 +13,5 @@ export abstract class CurrencyData$CurrencyDisplayInfo extends CurrencyDisplayNa
     constructor()
     getFormatInfo(arg0: string): CurrencyData$CurrencyFormatInfo;
     getSpacingInfo(): CurrencyData$CurrencySpacingInfo;
-    getUnitPatterns(): { [key: string]: string };
+    getUnitPatterns(): JavaMap<string, string>;
 }

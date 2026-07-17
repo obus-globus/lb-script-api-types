@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Function3 } from '../../../com/mojang/datafixers/util/Function3.d.ts'
 import type { Pair } from '../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { DataResult } from '../../../com/mojang/serialization/DataResult.d.ts'
@@ -30,9 +31,9 @@ export abstract class DynamicLike<T extends unknown> extends Object {
     asLong(arg0: number): number;
     asLongStream(): LongStream;
     asLongStreamOpt(): DataResult<LongStream>;
-    asMap<K extends unknown, V extends unknown>(arg0: (param0: Dynamic<T>) => K, arg1: (param0: Dynamic<T>) => V): Map<K, V>;
+    asMap<K extends unknown, V extends unknown>(arg0: (param0: Dynamic<T>) => K, arg1: (param0: Dynamic<T>) => V): JavaMap<K, V>;
     asMapOpt(): DataResult<Stream<Pair<Dynamic<T>, Dynamic<T>>>>;
-    asMapOpt<K extends unknown, V extends unknown>(arg0: (param0: Dynamic<T>) => K, arg1: (param0: Dynamic<T>) => V): DataResult<Map<K, V>>;
+    asMapOpt<K extends unknown, V extends unknown>(arg0: (param0: Dynamic<T>) => K, arg1: (param0: Dynamic<T>) => V): DataResult<JavaMap<K, V>>;
     asNumber(): DataResult<Number>;
     asNumber(arg0: Number): Number;
     asShort(arg0: number): number;
@@ -50,7 +51,7 @@ export abstract class DynamicLike<T extends unknown> extends Object {
     createList(arg0: Stream<Dynamic<Object>>): Dynamic<T>;
     createLong(arg0: number): Dynamic<T>;
     createLongList(arg0: LongStream): Dynamic<Object>;
-    createMap(arg0: Map<Dynamic<Object>, Dynamic<Object>>): Dynamic<T>;
+    createMap(arg0: JavaMap<Dynamic<Object>, Dynamic<Object>>): Dynamic<T>;
     createNumeric(arg0: Number): Dynamic<T>;
     createShort(arg0: number): Dynamic<T>;
     createString(arg0: string): Dynamic<T>;

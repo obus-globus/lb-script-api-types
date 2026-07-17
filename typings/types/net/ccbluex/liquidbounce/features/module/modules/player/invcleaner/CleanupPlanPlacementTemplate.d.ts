@@ -1,10 +1,11 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { ItemConstraintInfo } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemConstraintInfo.d.ts'
 import type { ItemSortChoice } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemSortChoice.d.ts'
 import type { ItemFacet } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/items/ItemFacet.d.ts'
 import type { ItemSlot } from '../../../../../../../../net/ccbluex/liquidbounce/utils/inventory/ItemSlot.d.ts'
 export class CleanupPlanPlacementTemplate extends Object {
-    constructor(slotContentMap: Map<ItemSlot, ItemSortChoice>, itemAmountConstraintProvider: (param0: ItemFacet) => ItemConstraintInfo[], isGreedy: boolean, forbiddenSlots: ItemSlot[], forbiddenSlotsToFill: ItemSlot[])
+    constructor(slotContentMap: JavaMap<ItemSlot, ItemSortChoice>, itemAmountConstraintProvider: (param0: ItemFacet) => ItemConstraintInfo[], isGreedy: boolean, forbiddenSlots: ItemSlot[], forbiddenSlotsToFill: ItemSlot[])
     readonly forbiddenSlots: ItemSlot[];
     readonly forbiddenSlotsToFill: ItemSlot[];
     // private isGreedy: boolean;
@@ -26,5 +27,5 @@ export class CleanupPlanPlacementTemplate extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/CleanupPlanGenerator.kt#L158 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/CleanupPlanGenerator.kt:158}
      */
-    readonly slotContentMap: Map<ItemSlot, ItemSortChoice>;
+    readonly slotContentMap: JavaMap<ItemSlot, ItemSortChoice>;
 }

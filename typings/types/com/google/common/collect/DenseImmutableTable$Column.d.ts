@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ImmutableMap$Builder } from '../../../../com/google/common/collect/ImmutableMap$Builder.d.ts'
 import type { BinaryOperator } from '../../../../java/util/function/BinaryOperator.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
@@ -9,20 +10,20 @@ export class DenseImmutableTable$Column {
     // render structurally (arrays / maps); only the statics are declared here.
     static builder<K extends unknown, V extends unknown>(): ImmutableMap$Builder<K, V>;
     static builderWithExpectedSize<K extends unknown, V extends unknown>(paramexpectedSize: number): ImmutableMap$Builder<K, V>;
-    static copyOf<K extends unknown, V extends unknown>(paramentries: Map$Entry<K, V>[]): Map<K, V>;
-    static copyOf<K extends unknown, V extends unknown>(parammap: Map<K, V>): Map<K, V>;
-    static of<K extends unknown, V extends unknown>(): Map<K, V>;
-    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V): Map<K, V>;
-    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V): Map<K, V>;
-    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V, paramk3: K, paramv3: V): Map<K, V>;
-    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V, paramk3: K, paramv3: V, paramk4: K, paramv4: V): Map<K, V>;
-    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V, paramk3: K, paramv3: V, paramk4: K, paramv4: V, paramk5: K, paramv5: V): Map<K, V>;
-    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V, paramk3: K, paramv3: V, paramk4: K, paramv4: V, paramk5: K, paramv5: V, paramk6: K, paramv6: V): Map<K, V>;
-    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V, paramk3: K, paramv3: V, paramk4: K, paramv4: V, paramk5: K, paramv5: V, paramk6: K, paramv6: V, paramk7: K, paramv7: V): Map<K, V>;
-    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V, paramk3: K, paramv3: V, paramk4: K, paramv4: V, paramk5: K, paramv5: V, paramk6: K, paramv6: V, paramk7: K, paramv7: V, paramk8: K, paramv8: V): Map<K, V>;
-    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V, paramk3: K, paramv3: V, paramk4: K, paramv4: V, paramk5: K, paramv5: V, paramk6: K, paramv6: V, paramk7: K, paramv7: V, paramk8: K, paramv8: V, paramk9: K, paramv9: V): Map<K, V>;
-    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V, paramk3: K, paramv3: V, paramk4: K, paramv4: V, paramk5: K, paramv5: V, paramk6: K, paramv6: V, paramk7: K, paramv7: V, paramk8: K, paramv8: V, paramk9: K, paramv9: V, paramk10: K, paramv10: V): Map<K, V>;
-    static ofEntries<K extends unknown, V extends unknown>(...paramentries: Map$Entry<K, V>[]): Map<K, V>;
-    static toImmutableMap<T extends unknown, K extends unknown, V extends unknown>(paramkeyFunction: (param0: Object) => K, paramvalueFunction: (param0: Object) => V): Collector<T, Object, Map<K, V>>;
-    static toImmutableMap<T extends unknown, K extends unknown, V extends unknown>(paramkeyFunction: (param0: Object) => K, paramvalueFunction: (param0: Object) => V, parammergeFunction: (param0: V, param1: V) => V): Collector<T, Object, Map<K, V>>;
+    static copyOf<K extends unknown, V extends unknown>(paramentries: Map$Entry<K, V>[]): JavaMap<K, V>;
+    static copyOf<K extends unknown, V extends unknown>(parammap: JavaMap<K, V>): JavaMap<K, V>;
+    static of<K extends unknown, V extends unknown>(): JavaMap<K, V>;
+    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V): JavaMap<K, V>;
+    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V): JavaMap<K, V>;
+    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V, paramk3: K, paramv3: V): JavaMap<K, V>;
+    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V, paramk3: K, paramv3: V, paramk4: K, paramv4: V): JavaMap<K, V>;
+    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V, paramk3: K, paramv3: V, paramk4: K, paramv4: V, paramk5: K, paramv5: V): JavaMap<K, V>;
+    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V, paramk3: K, paramv3: V, paramk4: K, paramv4: V, paramk5: K, paramv5: V, paramk6: K, paramv6: V): JavaMap<K, V>;
+    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V, paramk3: K, paramv3: V, paramk4: K, paramv4: V, paramk5: K, paramv5: V, paramk6: K, paramv6: V, paramk7: K, paramv7: V): JavaMap<K, V>;
+    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V, paramk3: K, paramv3: V, paramk4: K, paramv4: V, paramk5: K, paramv5: V, paramk6: K, paramv6: V, paramk7: K, paramv7: V, paramk8: K, paramv8: V): JavaMap<K, V>;
+    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V, paramk3: K, paramv3: V, paramk4: K, paramv4: V, paramk5: K, paramv5: V, paramk6: K, paramv6: V, paramk7: K, paramv7: V, paramk8: K, paramv8: V, paramk9: K, paramv9: V): JavaMap<K, V>;
+    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V, paramk3: K, paramv3: V, paramk4: K, paramv4: V, paramk5: K, paramv5: V, paramk6: K, paramv6: V, paramk7: K, paramv7: V, paramk8: K, paramv8: V, paramk9: K, paramv9: V, paramk10: K, paramv10: V): JavaMap<K, V>;
+    static ofEntries<K extends unknown, V extends unknown>(...paramentries: Map$Entry<K, V>[]): JavaMap<K, V>;
+    static toImmutableMap<T extends unknown, K extends unknown, V extends unknown>(paramkeyFunction: (param0: Object) => K, paramvalueFunction: (param0: Object) => V): Collector<T, Object, JavaMap<K, V>>;
+    static toImmutableMap<T extends unknown, K extends unknown, V extends unknown>(paramkeyFunction: (param0: Object) => K, paramvalueFunction: (param0: Object) => V, parammergeFunction: (param0: V, param1: V) => V): Collector<T, Object, JavaMap<K, V>>;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ShaderType } from '../../../../com/mojang/blaze3d/shaders/ShaderType.d.ts'
 import type { AutoCloseable } from '../../../../java/lang/AutoCloseable.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
@@ -9,7 +10,7 @@ import type { Identifier } from '../../../../net/minecraft/resources/Identifier.
 export class ShaderManager$CompilationCache extends Object implements AutoCloseable {
     private constructor(null_: ShaderManager, configs: ShaderManager$Configs)
     // private configs: ShaderManager$Configs;
-    // private postChains: Map<Identifier, Optional<PostChain>>;
+    // private postChains: JavaMap<Identifier, Optional<PostChain>>;
     // private triggeredRecovery: boolean;
     close(): void;
     getOrLoadPostChain(id: Identifier, allowedTargets: Identifier[]): PostChain;

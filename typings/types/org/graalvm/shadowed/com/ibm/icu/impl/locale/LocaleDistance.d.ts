@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { LSR } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/locale/LSR.d.ts'
 import type { LocaleDistance$Data } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/locale/LocaleDistance$Data.d.ts'
@@ -37,7 +38,7 @@ export class LocaleDistance extends Object {
     isParadigmLSR(lsr: LSR): boolean;
     // private partitionsForRegion(lsr: LSR): string;
     testOnlyDistance(desired: ULocale, supported: ULocale, threshold: number, favorSubtag: LocaleMatcher$FavorSubtag): number;
-    testOnlyGetDistanceTable(): { [key: string]: number };
+    testOnlyGetDistanceTable(): JavaMap<string, number>;
     testOnlyPrintDistanceTable(): void;
     toString(): string;
 }

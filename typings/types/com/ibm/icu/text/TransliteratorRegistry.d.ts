@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Transliterator } from '../../../../com/ibm/icu/text/Transliterator.d.ts'
 import type { Transliterator$Factory } from '../../../../com/ibm/icu/text/Transliterator$Factory.d.ts'
 import type { TransliteratorRegistry$Spec } from '../../../../com/ibm/icu/text/TransliteratorRegistry$Spec.d.ts'
@@ -10,8 +11,8 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class TransliteratorRegistry extends Object {
     constructor()
     readonly availableIDs: CaseInsensitiveString[];
-    // private registry: Map<CaseInsensitiveString, Object[]>;
-    // private specDAG: Map<CaseInsensitiveString, Map<CaseInsensitiveString, CaseInsensitiveString[]>>;
+    // private registry: JavaMap<CaseInsensitiveString, Object[]>;
+    // private specDAG: JavaMap<CaseInsensitiveString, JavaMap<CaseInsensitiveString, CaseInsensitiveString[]>>;
     // private find(arg0: string): Object[];
     // private find(arg0: string, arg1: string, arg2: string): Object[];
     // private findInBundle(arg0: TransliteratorRegistry$Spec, arg1: TransliteratorRegistry$Spec, arg2: string, arg3: number): Object[];

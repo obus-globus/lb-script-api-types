@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { RewriteResult } from '../../../../../com/mojang/datafixers/RewriteResult.d.ts'
 import type { TypeRewriteRule } from '../../../../../com/mojang/datafixers/TypeRewriteRule.d.ts'
 import type { TypedOptic } from '../../../../../com/mojang/datafixers/TypedOptic.d.ts'
@@ -19,7 +20,7 @@ export class RecursiveTypeFamily extends Object implements TypeFamily {
     // private name: string;
     // private size: number;
     // private template: TypeTemplate;
-    // private types: { [key: string]: any };
+    // private types: JavaMap<any, any>;
     apply(arg0: number): RecursivePoint$RecursivePointType<Object>;
     buildMuType<A extends unknown>(arg0: Type<A>, arg1: RecursiveTypeFamily): RecursivePoint$RecursivePointType<A>;
     // private cap2<A extends unknown, B extends unknown>(arg0: RewriteResult<Object, Object>[], arg1: RecursivePoint$RecursivePointType<A>, arg2: TypeRewriteRule, arg3: PointFreeRule, arg4: boolean, arg5: RewriteResult<Object, Object>, arg6: RecursivePoint$RecursivePointType<B>): boolean;

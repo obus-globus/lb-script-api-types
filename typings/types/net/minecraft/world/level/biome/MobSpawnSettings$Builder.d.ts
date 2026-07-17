@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { WeightedList$Builder } from '../../../../../net/minecraft/util/random/WeightedList$Builder.d.ts'
 import type { EntityType } from '../../../../../net/minecraft/world/entity/EntityType.d.ts'
@@ -8,8 +9,8 @@ import type { MobSpawnSettings$SpawnerData } from '../../../../../net/minecraft/
 export class MobSpawnSettings$Builder extends Object {
     constructor()
     // private creatureGenerationProbability: number;
-    // private mobSpawnCosts: Map<EntityType<any>, MobSpawnSettings$MobSpawnCost>;
-    // private spawners: Map<MobCategory, WeightedList$Builder<MobSpawnSettings$SpawnerData>>;
+    // private mobSpawnCosts: JavaMap<EntityType<any>, MobSpawnSettings$MobSpawnCost>;
+    // private spawners: JavaMap<MobCategory, WeightedList$Builder<MobSpawnSettings$SpawnerData>>;
     addMobCharge(type: EntityType<any>, charge: number, energyBudget: number): MobSpawnSettings$Builder;
     addSpawn(category: MobCategory, weight: number, spawnerData: MobSpawnSettings$SpawnerData): MobSpawnSettings$Builder;
     build(): MobSpawnSettings;

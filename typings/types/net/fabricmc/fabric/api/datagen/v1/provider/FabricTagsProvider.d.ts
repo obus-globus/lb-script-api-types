@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Comparator } from '../../../../../../../java/util/Comparator.d.ts'
 import type { CompletableFuture } from '../../../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { ToIntFunction } from '../../../../../../../java/util/function/ToIntFunction.d.ts'
@@ -16,11 +17,11 @@ export abstract class FabricTagsProvider<T extends unknown> extends TagsProvider
     static KEY_COMPARATOR: (param0: string, param1: string) => number;
     static LOGGER: Logger;
     constructor(arg0: FabricPackOutput, arg1: ResourceKey<T[]>, arg2: CompletableFuture<HolderLookup$Provider>)
-    readonly aliasGroupBuilders: Map<Identifier, FabricTagsProvider$AliasGroupBuilder>;
+    readonly aliasGroupBuilders: JavaMap<Identifier, FabricTagsProvider$AliasGroupBuilder>;
     // private output: FabricPackOutput;
     addTags(arg0: HolderLookup$Provider): void;
     aliasGroup(arg0: string): FabricTagsProvider$AliasGroupBuilder;
     aliasGroup(arg0: Identifier): FabricTagsProvider$AliasGroupBuilder;
     builder(arg0: TagKey<T>): TagAppender<T>;
-    getAliasGroupBuilders(): Map<Identifier, FabricTagsProvider$AliasGroupBuilder>;
+    getAliasGroupBuilders(): JavaMap<Identifier, FabricTagsProvider$AliasGroupBuilder>;
 }

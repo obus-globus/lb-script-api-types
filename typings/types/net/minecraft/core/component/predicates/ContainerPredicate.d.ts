@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
@@ -17,7 +18,7 @@ import type { ItemContainerContents } from '../../../../../net/minecraft/world/i
 export class ContainerPredicate extends Record implements SingleComponentItemPredicate<ItemContainerContents> {
     static CODEC: Codec<ContainerPredicate>;
     static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<any>>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, JavaMap<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
     constructor(items: Optional<CollectionPredicate<ItemInstance, ItemPredicate>>)
     // private items: Optional<CollectionPredicate<ItemInstance, ItemPredicate>>;
     componentType(): DataComponentType<ItemContainerContents>;

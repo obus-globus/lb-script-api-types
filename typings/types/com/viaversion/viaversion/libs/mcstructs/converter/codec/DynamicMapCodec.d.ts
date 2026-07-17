@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { DataConverter } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/DataConverter.d.ts'
 import type { SerializedData } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/SerializedData.d.ts'
 import type { Codec } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/codec/Codec.d.ts'
@@ -10,7 +11,7 @@ import type { UUID } from '../../../../../../../java/util/UUID.d.ts'
 import type { BiFunction } from '../../../../../../../java/util/function/BiFunction.d.ts'
 import type { Function } from '../../../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-export class DynamicMapCodec<K extends unknown, V extends unknown> extends Object implements Codec<Map<K, V>> {
+export class DynamicMapCodec<K extends unknown, V extends unknown> extends Object implements Codec<JavaMap<K, V>> {
     static BOOLEAN: Codec<boolean>;
     static BYTE: Codec<number>;
     static BYTE_ARRAY: Codec<number[]>;
@@ -32,25 +33,25 @@ export class DynamicMapCodec<K extends unknown, V extends unknown> extends Objec
     constructor(arg0: Codec<K>, arg1: (param0: K) => Codec<V>)
     // private keyCodec: Codec<K>;
     // private keyToValueCodec: (param0: K) => Codec<V>;
-    compactListOf(): Codec<Map<K, V>[]>;
-    converterFlatMap<N extends unknown>(arg0: (param0: DataConverter<Object>, param1: N) => Result<Map<K, V>>, arg1: (param0: DataConverter<Object>, param1: Map<K, V>) => Result<N>): Codec<N>;
-    converterVerified(arg0: (param0: DataConverter<Object>, param1: Map<K, V>) => Result<void>): Codec<Map<K, V>>;
-    deserialize<S extends unknown>(arg0: DataConverter<S>, arg1: S): Result<Map<K, V>>;
-    flatMap<N extends unknown>(arg0: (param0: N) => Result<Map<K, V>>, arg1: (param0: Map<K, V>) => Result<N>): Codec<N>;
-    listOf(): Codec<Map<K, V>[]>;
-    listOf(arg0: number): Codec<Map<K, V>[]>;
-    listOf(arg0: number, arg1: number): Codec<Map<K, V>[]>;
-    map<N extends unknown>(arg0: (param0: N) => Map<K, V>, arg1: (param0: Map<K, V>) => N): Codec<N>;
-    mapCodec(arg0: string): FieldMapCodec$Builder$Stage1<Map<K, V>>;
-    mapThrowing<N extends unknown>(arg0: (param0: N) => Map<K, V>, arg1: (param0: Map<K, V>) => N): Codec<N>;
-    nonEmptyList(): Codec<Map<K, V>[]>;
-    optionalListOf(): Codec<Map<K, V>[]>;
-    optionalListOf(arg0: number): Codec<Map<K, V>[]>;
-    optionalListOf(arg0: number, arg1: number): Codec<Map<K, V>[]>;
-    serialize<S extends unknown>(arg0: DataConverter<S>, arg1: Map<K, V>): Result<S>;
-    typed<N extends unknown>(arg0: (param0: N) => Map<K, V>, arg1: (param0: Map<K, V>) => MapCodec<N>): Codec<N>;
-    typed<N extends unknown>(arg0: string, arg1: (param0: N) => Map<K, V>, arg2: (param0: Map<K, V>) => MapCodec<N>): Codec<N>;
-    typedMap<N extends unknown>(arg0: (param0: N) => Map<K, V>, arg1: (param0: Map<K, V>) => MapCodec<N>): MapCodec<N>;
-    typedMap<N extends unknown>(arg0: string, arg1: (param0: N) => Map<K, V>, arg2: (param0: Map<K, V>) => MapCodec<N>): MapCodec<N>;
-    verified(arg0: (param0: Map<K, V>) => Result<void>): Codec<Map<K, V>>;
+    compactListOf(): Codec<JavaMap<K, V>[]>;
+    converterFlatMap<N extends unknown>(arg0: (param0: DataConverter<Object>, param1: N) => Result<JavaMap<K, V>>, arg1: (param0: DataConverter<Object>, param1: JavaMap<K, V>) => Result<N>): Codec<N>;
+    converterVerified(arg0: (param0: DataConverter<Object>, param1: JavaMap<K, V>) => Result<void>): Codec<JavaMap<K, V>>;
+    deserialize<S extends unknown>(arg0: DataConverter<S>, arg1: S): Result<JavaMap<K, V>>;
+    flatMap<N extends unknown>(arg0: (param0: N) => Result<JavaMap<K, V>>, arg1: (param0: JavaMap<K, V>) => Result<N>): Codec<N>;
+    listOf(): Codec<JavaMap<K, V>[]>;
+    listOf(arg0: number): Codec<JavaMap<K, V>[]>;
+    listOf(arg0: number, arg1: number): Codec<JavaMap<K, V>[]>;
+    map<N extends unknown>(arg0: (param0: N) => JavaMap<K, V>, arg1: (param0: JavaMap<K, V>) => N): Codec<N>;
+    mapCodec(arg0: string): FieldMapCodec$Builder$Stage1<JavaMap<K, V>>;
+    mapThrowing<N extends unknown>(arg0: (param0: N) => JavaMap<K, V>, arg1: (param0: JavaMap<K, V>) => N): Codec<N>;
+    nonEmptyList(): Codec<JavaMap<K, V>[]>;
+    optionalListOf(): Codec<JavaMap<K, V>[]>;
+    optionalListOf(arg0: number): Codec<JavaMap<K, V>[]>;
+    optionalListOf(arg0: number, arg1: number): Codec<JavaMap<K, V>[]>;
+    serialize<S extends unknown>(arg0: DataConverter<S>, arg1: JavaMap<K, V>): Result<S>;
+    typed<N extends unknown>(arg0: (param0: N) => JavaMap<K, V>, arg1: (param0: JavaMap<K, V>) => MapCodec<N>): Codec<N>;
+    typed<N extends unknown>(arg0: string, arg1: (param0: N) => JavaMap<K, V>, arg2: (param0: JavaMap<K, V>) => MapCodec<N>): Codec<N>;
+    typedMap<N extends unknown>(arg0: (param0: N) => JavaMap<K, V>, arg1: (param0: JavaMap<K, V>) => MapCodec<N>): MapCodec<N>;
+    typedMap<N extends unknown>(arg0: string, arg1: (param0: N) => JavaMap<K, V>, arg2: (param0: JavaMap<K, V>) => MapCodec<N>): MapCodec<N>;
+    verified(arg0: (param0: JavaMap<K, V>) => Result<void>): Codec<JavaMap<K, V>>;
 }

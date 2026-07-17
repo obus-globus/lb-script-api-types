@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { FluidRenderHandler } from '../../../../../../../net/fabricmc/fabric/api/client/render/fluid/v1/FluidRenderHandler.d.ts'
 import type { FluidModel$Unbaked } from '../../../../../../../net/minecraft/client/renderer/block/FluidModel$Unbaked.d.ts'
@@ -6,7 +7,7 @@ import type { Fluid } from '../../../../../../../net/minecraft/world/level/mater
 export class FluidRenderingRegistryImpl extends Object {
     static get(paramarg0: Fluid): FluidRenderHandler;
     static getOverride(paramarg0: Fluid): FluidRenderHandler;
-    static getUnbakedModels(): Map<Fluid, FluidModel$Unbaked>;
+    static getUnbakedModels(): JavaMap<Fluid, FluidModel$Unbaked>;
     static isBlockTransparent(paramarg0: Block): boolean;
     static register(paramarg0: Fluid, paramarg1: FluidModel$Unbaked): void;
     static register(paramarg0: Fluid, paramarg1: FluidModel$Unbaked, paramarg2: FluidRenderHandler): void;

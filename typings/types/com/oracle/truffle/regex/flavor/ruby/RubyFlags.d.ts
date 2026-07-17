@@ -1,11 +1,12 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { AbstractConstantKeysObject } from '../../../../../../com/oracle/truffle/regex/AbstractConstantKeysObject.d.ts'
 import type { AbstractRegexObject } from '../../../../../../com/oracle/truffle/regex/AbstractRegexObject.d.ts'
 import type { RubyFlags$Mode } from '../../../../../../com/oracle/truffle/regex/flavor/ruby/RubyFlags$Mode.d.ts'
 import type { TruffleReadOnlyKeysArray } from '../../../../../../com/oracle/truffle/regex/util/TruffleReadOnlyKeysArray.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class RubyFlags extends AbstractConstantKeysObject {
-    static createNamedCaptureGroupMapInt(paramnamedCaptureGroups: { [key: string]: number[] }): AbstractRegexObject;
-    static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: { [key: string]: number[] }): AbstractRegexObject;
+    static createNamedCaptureGroupMapInt(paramnamedCaptureGroups: JavaMap<string, number[]>): AbstractRegexObject;
+    static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: JavaMap<string, number[]>): AbstractRegexObject;
     static isBitFlag(paramcandidateChar: number): boolean;
     static isTypeFlag(paramcandidateChar: number): boolean;
     static isValidFlagChar(paramcandidateChar: number): boolean;

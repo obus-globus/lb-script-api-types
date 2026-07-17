@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Channel } from '../../../../io/netty/channel/Channel.d.ts'
 import type { AbstractEpollServerChannel } from '../../../../io/netty/channel/epoll/AbstractEpollServerChannel.d.ts'
 import type { EpollServerSocketChannelConfig } from '../../../../io/netty/channel/epoll/EpollServerSocketChannelConfig.d.ts'
@@ -22,6 +23,6 @@ export class EpollServerSocketChannel extends AbstractEpollServerChannel impleme
     localAddress(): InetSocketAddress;
     newChildChannel(arg0: number, arg1: number[], arg2: number, arg3: number): Channel;
     remoteAddress(): InetSocketAddress;
-    setTcpMd5Sig(arg0: Map<InetAddress, number[]>): void;
+    setTcpMd5Sig(arg0: JavaMap<InetAddress, number[]>): void;
     tcpMd5SigAddresses(): InetAddress[];
 }

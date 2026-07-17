@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ConfigScreenFactory } from '../../../../com/terraformersmc/modmenu/api/ConfigScreenFactory.d.ts'
 import type { ModMenuApi } from '../../../../com/terraformersmc/modmenu/api/ModMenuApi.d.ts'
 import type { UpdateChecker } from '../../../../com/terraformersmc/modmenu/api/UpdateChecker.d.ts'
@@ -8,7 +9,7 @@ export class ModMenuScreenFactory extends Object implements ModMenuApi {
     constructor()
     attachModpackBadges(arg0: (param0: string) => void): void;
     getModConfigScreenFactory(): (param0: Screen) => Screen | null;
-    getProvidedConfigScreenFactories(): { [key: string]: (param0: Screen) => Screen | null };
-    getProvidedUpdateCheckers(): { [key: string]: UpdateChecker };
+    getProvidedConfigScreenFactories(): JavaMap<string, (param0: Screen) => Screen | null>;
+    getProvidedUpdateCheckers(): JavaMap<string, UpdateChecker>;
     getUpdateChecker(): UpdateChecker;
 }

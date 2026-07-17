@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Lang } from '../../../../../../org/apache/commons/codec/language/bm/Lang.d.ts'
 import type { Languages$LanguageSet } from '../../../../../../org/apache/commons/codec/language/bm/Languages$LanguageSet.d.ts'
@@ -13,7 +14,7 @@ export class PhoneticEngine extends Object {
     readonly maxPhonemes: number;
     readonly nameType: NameType;
     readonly ruleType: RuleType;
-    // private applyFinalRules(arg0: PhoneticEngine$PhonemeBuilder, arg1: { [key: string]: Rule[] }): PhoneticEngine$PhonemeBuilder;
+    // private applyFinalRules(arg0: PhoneticEngine$PhonemeBuilder, arg1: JavaMap<string, Rule[]>): PhoneticEngine$PhonemeBuilder;
     encode(arg0: string): string;
     encode(arg0: string, arg1: Languages$LanguageSet): string;
     getLang(): Lang;

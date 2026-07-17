@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { BuiltinPromiseRejectionTracker$PromiseChainInfoRecord } from '../../../../../../com/oracle/truffle/js/nodes/promise/BuiltinPromiseRejectionTracker$PromiseChainInfoRecord.d.ts'
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
 import type { JSContextOptions$UnhandledRejectionsTrackingMode } from '../../../../../../com/oracle/truffle/js/runtime/JSContextOptions$UnhandledRejectionsTrackingMode.d.ts'
@@ -8,7 +9,7 @@ export class BuiltinPromiseRejectionTracker extends Object implements PromiseRej
     constructor(context: JSContext, mode: JSContextOptions$UnhandledRejectionsTrackingMode)
     // private asyncHandledRejections: BuiltinPromiseRejectionTracker$PromiseChainInfoRecord[];
     // private context: JSContext;
-    // private maybeUnhandledPromises: Map<JSDynamicObject, BuiltinPromiseRejectionTracker$PromiseChainInfoRecord>;
+    // private maybeUnhandledPromises: JavaMap<JSDynamicObject, BuiltinPromiseRejectionTracker$PromiseChainInfoRecord>;
     // private mode: JSContextOptions$UnhandledRejectionsTrackingMode;
     // private pendingUnhandledRejections: JSDynamicObject[];
     promiseReactionJobsProcessed(): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { IntSupplier } from '../../../../../java/util/function/IntSupplier.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -7,8 +8,8 @@ import type { ValueUpdateNotifier } from '../../../../../net/irisshaders/iris/gl
 import type { TextureAccess } from '../../../../../net/irisshaders/iris/gl/texture/TextureAccess.d.ts'
 import type { TextureType } from '../../../../../net/irisshaders/iris/gl/texture/TextureType.d.ts'
 export class ProgramSamplers$CustomTextureSamplerInterceptor extends Object implements SamplerHolder {
-    private constructor(arg0: SamplerHolder, arg1: { [key: string]: TextureAccess }, arg2: number[])
-    // private customTextureIds: { [key: string]: TextureAccess };
+    private constructor(arg0: SamplerHolder, arg1: JavaMap<string, TextureAccess>, arg2: number[])
+    // private customTextureIds: JavaMap<string, TextureAccess>;
     // private deactivatedOverrides: string[];
     // private samplerHolder: SamplerHolder;
     addDefaultSampler(arg0: () => number, ...arg1: string[]): boolean;

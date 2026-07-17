@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
@@ -48,9 +49,9 @@ export class ZipArchiveOutputStream extends ArchiveOutputStream<ZipArchiveEntry>
     // private hasUsedZip64: boolean;
     // private isSplitZip: boolean;
     readonly level: number;
-    // private metaData: Map<ZipArchiveEntry, ZipArchiveOutputStream$EntryMetaData>;
+    // private metaData: JavaMap<ZipArchiveEntry, ZipArchiveOutputStream$EntryMetaData>;
     readonly method: number;
-    // private numberOfCDInDiskData: { [key: number]: number };
+    // private numberOfCDInDiskData: JavaMap<number, number>;
     // private streamCompressor: StreamCompressor;
     // private useUtf8Flag: boolean;
     // private zip64Mode: Zip64Mode;

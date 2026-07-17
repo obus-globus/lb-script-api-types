@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { TimeUnit } from '../../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Level } from '../../../../../../../org/apache/logging/log4j/Level.d.ts'
 import type { LoggerContext } from '../../../../../../../org/apache/logging/log4j/core/LoggerContext.d.ts'
@@ -20,7 +21,7 @@ export class XmlConfiguration extends AbstractConfiguration implements Reconfigu
     // private strict: boolean;
     // private constructHierarchy(node: Node, element: Element): void;
     // private getType(element: Element): string;
-    // private processAttributes(node: Node, element: Element): { [key: string]: string };
+    // private processAttributes(node: Node, element: Element): JavaMap<string, string>;
     reconfigure(): Configuration;
     setup(): void;
     toString(): string;

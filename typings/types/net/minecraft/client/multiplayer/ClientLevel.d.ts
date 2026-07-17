@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { Runnable } from '../../../../java/lang/Runnable.d.ts'
 import type { UUID } from '../../../../java/util/UUID.d.ts'
@@ -107,9 +108,9 @@ export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrac
     // private chunkTracker: ChunkTracker;
     // private clientLevelData: ClientLevel$ClientLevelData;
     // private connection: ClientPacketListener;
-    // private customColorCache: Map<Object, Object>;
-    // private destroyingBlocks: { [key: string]: any };
-    // private destructionProgress: { [key: string]: any };
+    // private customColorCache: JavaMap<Object, Object>;
+    // private destroyingBlocks: JavaMap<any, any>;
+    // private destructionProgress: JavaMap<any, any>;
     // private dragonParts: EnderDragonPart[];
     // private endFlashState: EndFlashState;
     // private entityStorage: TransientEntitySectionManager<Entity>;
@@ -119,7 +120,7 @@ export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrac
     // private levelEventHandler: LevelEventHandler;
     // private levelExtractor: LevelExtractor;
     // private lightUpdateQueue: () => void[];
-    // private mapData: Map<MapId, MapItemSavedData>;
+    // private mapData: JavaMap<MapId, MapItemSavedData>;
     // private minecraft: Minecraft;
     // private players: AbstractClientPlayer[];
     // private rainSoundTime: number;
@@ -128,7 +129,7 @@ export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrac
     readonly skyFlashTime: number;
     // private tickRateManager: TickRateManager;
     // private tickingEntities: EntityTickList;
-    // private tintCaches: Map<(param0: Biome, param1: number, param2: number) => number, BlockTintCache>;
+    // private tintCaches: JavaMap<(param0: Biome, param1: number, param2: number) => number, BlockTintCache>;
     readonly worldBorder: WorldBorder;
     addAlwaysVisibleParticle(particle: ParticleOptions, overrideLimiter: boolean, x: number, y: number, z: number, xd: number, yd: number, zd: number): void;
     addAlwaysVisibleParticle(particle: ParticleOptions, x: number, y: number, z: number, xd: number, yd: number, zd: number): void;
@@ -136,7 +137,7 @@ export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrac
     addDestroyBlockEffect(pos: BlockPos, blockState: BlockState): void;
     addEntity(entity: Entity): void;
     // private addEnvironmentAttributeLayers(environmentAttributes: EnvironmentAttributeSystem$Builder): EnvironmentAttributeSystem$Builder;
-    addMapData(mapData: Map<MapId, MapItemSavedData>): void;
+    addMapData(mapData: JavaMap<MapId, MapItemSavedData>): void;
     addParticle(particle: ParticleOptions, overrideLimiter: boolean, alwaysShow: boolean, x: number, y: number, z: number, xd: number, yd: number, zd: number): void;
     addParticle(particle: ParticleOptions, x: number, y: number, z: number, xd: number, yd: number, zd: number): void;
     animateTick(xt: number, yt: number, zt: number): void;
@@ -147,7 +148,7 @@ export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrac
     clockManager(): ClientClockManager;
     createFireworks(x: number, y: number, z: number, xd: number, yd: number, zd: number, explosions: FireworkExplosion[]): void;
     destroyBlockProgress(id: number, pos: BlockPos, progress: number): void;
-    destructionProgress(): { [key: string]: any };
+    destructionProgress(): JavaMap<any, any>;
     disconnect(message: Component): void;
     // private doAddParticle(particle: ParticleOptions, overrideLimiter: boolean, alwaysShowParticles: boolean, x: number, y: number, z: number, xd: number, yd: number, zd: number): void;
     doAnimateTick(xt: number, yt: number, zt: number, r: number, animateRandom: RandomSource, markerParticleTarget: Block, pos: BlockPos$MutableBlockPos): void;
@@ -169,7 +170,7 @@ export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrac
     gameEvent(sourceEntity: Entity, gameEvent: Holder<GameEvent>, pos: BlockPos): void;
     gameEvent(sourceEntity: Entity, gameEvent: Holder<GameEvent>, pos: Vec3): void;
     gatherChunkSourceStats(): string;
-    getAllMapData(): Map<MapId, MapItemSavedData>;
+    getAllMapData(): JavaMap<MapId, MapItemSavedData>;
     getBlockStatePredictionHandler(): BlockStatePredictionHandler;
     getBlockTicks(): LevelTickAccess<Block>;
     getBlockTint(pos: BlockPos, resolver: (param0: Biome, param1: number, param2: number) => number): number;

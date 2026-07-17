@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ICUResourceBundle } from '../../../../com/ibm/icu/impl/ICUResourceBundle.d.ts'
 import type { ICUResourceBundle$OpenType } from '../../../../com/ibm/icu/impl/ICUResourceBundle$OpenType.d.ts'
 import type { ICUResourceBundle$WholeBundle } from '../../../../com/ibm/icu/impl/ICUResourceBundle$WholeBundle.d.ts'
@@ -72,8 +73,8 @@ export class ICUResourceBundleImpl$ResourceTable extends ICUResourceBundleImpl$R
     getKey(): string;
     getKey(arg0: number): string;
     getType(): number;
-    handleGet(arg0: number, arg1: { [key: string]: string }, arg2: UResourceBundle): UResourceBundle;
-    handleGet(arg0: string, arg1: { [key: string]: string }, arg2: UResourceBundle): UResourceBundle;
+    handleGet(arg0: number, arg1: JavaMap<string, string>, arg2: UResourceBundle): UResourceBundle;
+    handleGet(arg0: string, arg1: JavaMap<string, string>, arg2: UResourceBundle): UResourceBundle;
     handleGetObject(arg0: string): Object;
     handleKeySet(): string[];
 }

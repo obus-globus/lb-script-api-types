@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
@@ -11,7 +12,7 @@ export class VanillaPackResourcesBuilder extends Object {
     constructor()
     // private metadata: ResourceMetadata;
     // private namespaces: string[];
-    // private pathsForType: Map<PackType, Path[]>;
+    // private pathsForType: JavaMap<PackType, Path[]>;
     // private rootPaths: Path[];
     applyDevelopmentConfig(): VanillaPackResourcesBuilder;
     build(location: PackLocationInfo): VanillaPackResources;

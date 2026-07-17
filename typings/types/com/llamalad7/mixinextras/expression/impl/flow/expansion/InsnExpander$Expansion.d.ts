@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { InsnExpander } from '../../../../../../../com/llamalad7/mixinextras/expression/impl/flow/expansion/InsnExpander.d.ts'
 import type { InsnExpander$InsnComponent } from '../../../../../../../com/llamalad7/mixinextras/expression/impl/flow/expansion/InsnExpander$InsnComponent.d.ts'
 import type { Consumer } from '../../../../../../../java/util/function/Consumer.d.ts'
@@ -9,9 +10,9 @@ export class InsnExpander$Expansion extends Object {
     constructor(null_: InsnExpander, arg1: AbstractInsnNode)
     compound: AbstractInsnNode;
     // private expanded: boolean;
-    // private expandedInsns: Map<InsnExpander$InsnComponent, AbstractInsnNode>;
-    // private expansionSteps: Map<InsnExpander$InsnComponent, (param0: InjectionNodes$InjectionNode) => void[]>;
-    // private interests: Map<InjectionInfo, InsnExpander$InsnComponent>;
+    // private expandedInsns: JavaMap<InsnExpander$InsnComponent, AbstractInsnNode>;
+    // private expansionSteps: JavaMap<InsnExpander$InsnComponent, (param0: InjectionNodes$InjectionNode) => void[]>;
+    // private interests: JavaMap<InjectionInfo, InsnExpander$InsnComponent>;
     addExpansionStep(arg0: InsnExpander$InsnComponent, arg1: (param0: InjectionNodes$InjectionNode) => void): void;
     decorate(arg0: InjectionInfo, arg1: string, arg2: Object): void;
     decorateInjectorSpecific(arg0: InjectionInfo, arg1: string, arg2: Object): void;

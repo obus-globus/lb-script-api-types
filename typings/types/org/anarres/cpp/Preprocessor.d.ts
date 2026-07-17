@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Closeable } from '../../../java/io/Closeable.d.ts'
 import type { File } from '../../../java/io/File.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
@@ -21,7 +22,7 @@ export class Preprocessor extends Object implements Closeable {
     readonly includes: VirtualFile[];
     // private inputs: Token[][];
     readonly listener: PreprocessorListener;
-    readonly macros: { [key: string]: Macro };
+    readonly macros: JavaMap<string, Macro>;
     // private onceseenpaths: string[];
     // private quoteincludepath: string[];
     // private source: Token[];
@@ -60,7 +61,7 @@ export class Preprocessor extends Object implements Closeable {
     getIncludes(): VirtualFile[];
     getListener(): PreprocessorListener;
     getMacro(arg0: string): Macro;
-    getMacros(): { [key: string]: Macro };
+    getMacros(): JavaMap<string, Macro>;
     getQuoteIncludePath(): string[];
     getSource(): Token[];
     getSystemIncludePath(): string[];

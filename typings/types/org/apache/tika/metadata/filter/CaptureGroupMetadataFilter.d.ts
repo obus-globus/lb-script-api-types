@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Pattern } from '../../../../../java/util/regex/Pattern.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Initializable } from '../../../../../org/apache/tika/config/Initializable.d.ts'
@@ -18,7 +19,7 @@ export class CaptureGroupMetadataFilter extends MetadataFilter implements Initia
     getRegex(): string;
     getSourceField(): string;
     getTargetField(): string;
-    initialize(arg0: { [key: string]: Param<Object> }): void;
+    initialize(arg0: JavaMap<string, Param<Object>>): void;
     setRegex(arg0: string): void;
     setSourceField(arg0: string): void;
     setTargetField(arg0: string): void;

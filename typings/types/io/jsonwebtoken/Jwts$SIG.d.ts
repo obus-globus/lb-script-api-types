@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { MacAlgorithm } from '../../io/jsonwebtoken/security/MacAlgorithm.d.ts'
 import type { SecureDigestAlgorithm } from '../../io/jsonwebtoken/security/SecureDigestAlgorithm.d.ts'
 import type { SignatureAlgorithm } from '../../io/jsonwebtoken/security/SignatureAlgorithm.d.ts'
@@ -18,6 +19,6 @@ export class Jwts$SIG extends Object {
     static RS256: SignatureAlgorithm;
     static RS384: SignatureAlgorithm;
     static RS512: SignatureAlgorithm;
-    static get(): { [key: string]: SecureDigestAlgorithm<any, any> };
+    static get(): JavaMap<string, SecureDigestAlgorithm<any, any>>;
     private constructor()
 }

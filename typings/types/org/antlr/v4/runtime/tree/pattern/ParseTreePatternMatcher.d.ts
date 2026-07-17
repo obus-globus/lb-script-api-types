@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Lexer } from '../../../../../../org/antlr/v4/runtime/Lexer.d.ts'
 import type { Parser } from '../../../../../../org/antlr/v4/runtime/Parser.d.ts'
@@ -20,7 +21,7 @@ export class ParseTreePatternMatcher extends Object {
     getRuleTagToken(arg0: ParseTree): RuleTagToken;
     match(arg0: ParseTree, arg1: string, arg2: number): ParseTreeMatch;
     match(arg0: ParseTree, arg1: ParseTreePattern): ParseTreeMatch;
-    matchImpl(arg0: ParseTree, arg1: ParseTree, arg2: { [key: string]: ParseTree }): ParseTree;
+    matchImpl(arg0: ParseTree, arg1: ParseTree, arg2: JavaMap<string, ParseTree>): ParseTree;
     matches(arg0: ParseTree, arg1: string, arg2: number): boolean;
     matches(arg0: ParseTree, arg1: ParseTreePattern): boolean;
     setDelimiters(arg0: string, arg1: string, arg2: string): void;

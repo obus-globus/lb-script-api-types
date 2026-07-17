@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { AbstractCache$StatsCounter } from '../../../../com/google/common/cache/AbstractCache$StatsCounter.d.ts'
 import type { CacheLoader } from '../../../../com/google/common/cache/CacheLoader.d.ts'
 import type { LocalCache$LoadingValueReference } from '../../../../com/google/common/cache/LocalCache$LoadingValueReference.d.ts'
@@ -12,11 +13,11 @@ import type { ReentrantLock } from '../../../../java/util/concurrent/locks/Reent
 import type { BiFunction } from '../../../../java/util/function/BiFunction.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class LocalCache$Segment<K extends unknown, V extends unknown> extends ReentrantLock {
-    constructor(map: Map<K, V>, initialCapacity: number, maxSegmentWeight: number, statsCounter: AbstractCache$StatsCounter)
+    constructor(map: JavaMap<K, V>, initialCapacity: number, maxSegmentWeight: number, statsCounter: AbstractCache$StatsCounter)
     // private accessQueue: ReferenceEntry<K, V>[];
     // private count: number;
     // private keyReferenceQueue: ReferenceQueue<K>;
-    // private map: Map<K, V>;
+    // private map: JavaMap<K, V>;
     // private maxSegmentWeight: number;
     // private modCount: number;
     // private readCount: AtomicInteger;

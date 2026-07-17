@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Path } from '../../../../../../../java/nio/file/Path.d.ts'
 import type { Pattern } from '../../../../../../../java/util/regex/Pattern.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
@@ -10,11 +11,11 @@ export abstract class AbstractRolloverStrategy extends Object implements Rollove
     static PATTERN_COUNTER: Pattern;
     constructor(strSubstitutor: StrSubstitutor)
     readonly strSubstitutor: StrSubstitutor;
-    getEligibleFiles(path: string, pattern: string): { [key: number]: Path };
-    getEligibleFiles(path: string, logfilePattern: string, isAscending: boolean): { [key: number]: Path };
-    getEligibleFiles(currentFile: string, path: string, logfilePattern: string, isAscending: boolean): { [key: number]: Path };
-    getEligibleFiles(manager: RollingFileManager): { [key: number]: Path };
-    getEligibleFiles(manager: RollingFileManager, isAscending: boolean): { [key: number]: Path };
+    getEligibleFiles(path: string, pattern: string): JavaMap<number, Path>;
+    getEligibleFiles(path: string, logfilePattern: string, isAscending: boolean): JavaMap<number, Path>;
+    getEligibleFiles(currentFile: string, path: string, logfilePattern: string, isAscending: boolean): JavaMap<number, Path>;
+    getEligibleFiles(manager: RollingFileManager): JavaMap<number, Path>;
+    getEligibleFiles(manager: RollingFileManager, isAscending: boolean): JavaMap<number, Path>;
     getStrSubstitutor(): StrSubstitutor;
     merge(compressAction: Action, custom: Action[], stopOnError: boolean): Action;
     rollover(manager: RollingFileManager): RolloverDescription;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { CameraMovement } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/translucent_sorting/trigger/CameraMovement.d.ts'
 import type { Group } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/translucent_sorting/trigger/Group.d.ts'
@@ -9,8 +10,8 @@ export class NormalList extends Object {
     static queryRange(paramarg0: number[], paramarg1: number, paramarg2: number): boolean;
     constructor(arg0: Vector3fc, arg1: number)
     readonly alignedDirection: number;
-    // private groupsByInterval: Map<DoubleInterval, Group[]>;
-    // private groupsBySection: { [key: string]: any };
+    // private groupsByInterval: JavaMap<DoubleInterval, Group[]>;
+    // private groupsBySection: JavaMap<any, any>;
     // private intervalTree: number[];
     readonly normal: Vector3fc;
     // private addGroupInterval(arg0: Group): void;

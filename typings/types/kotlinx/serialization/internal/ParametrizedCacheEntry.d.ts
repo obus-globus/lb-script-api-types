@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Result } from '../../../kotlin/Result.d.ts'
 import type { KType } from '../../../kotlin/reflect/KType.d.ts'
@@ -5,6 +6,6 @@ import type { KSerializer } from '../../../kotlinx/serialization/KSerializer.d.t
 import type { KTypeWrapper } from '../../../kotlinx/serialization/internal/KTypeWrapper.d.ts'
 export class ParametrizedCacheEntry<T extends unknown> extends Object {
     constructor()
-    // private serializers: Map<KTypeWrapper[], Result<KSerializer<T>>>;
+    // private serializers: JavaMap<KTypeWrapper[], Result<KSerializer<T>>>;
     computeIfAbsent(types: KType[], producer: () => KSerializer<T> | null): Result<KSerializer<T>>;
 }

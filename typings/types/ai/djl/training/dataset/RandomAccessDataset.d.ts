@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Device } from '../../../../ai/djl/Device.d.ts'
 import type { NDManager } from '../../../../ai/djl/ndarray/NDManager.d.ts'
 import type { Batch } from '../../../../ai/djl/training/dataset/Batch.d.ts'
@@ -41,6 +42,6 @@ export abstract class RandomAccessDataset extends Object implements Dataset {
     subDataset(arg0: number, arg1: number): RandomAccessDataset;
     subDataset<K extends unknown>(arg0: K[], arg1: K[]): RandomAccessDataset;
     subDataset(arg0: number[]): RandomAccessDataset;
-    subDataset<K extends unknown>(arg0: Map<K, number>, arg1: K[]): RandomAccessDataset;
+    subDataset<K extends unknown>(arg0: JavaMap<K, number>, arg1: K[]): RandomAccessDataset;
     toArray(arg0: NDManager): Pair<Number[][], Number[][]>;
 }

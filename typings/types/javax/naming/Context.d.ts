@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Binding } from '../../javax/naming/Binding.d.ts'
 import type { Name } from '../../javax/naming/Name.d.ts'
 import type { NameClassPair } from '../../javax/naming/NameClassPair.d.ts'
@@ -15,7 +16,7 @@ export interface Context extends Object{
     createSubcontext(arg0: string): Context;
     destroySubcontext(arg0: Name): void;
     destroySubcontext(arg0: string): void;
-    getEnvironment(): Map<Object | null, Object | null>;
+    getEnvironment(): JavaMap<Object | null, Object | null>;
     getNameInNamespace(): string;
     getNameParser(arg0: Name): NameParser;
     getNameParser(arg0: string): NameParser;

@@ -1,9 +1,10 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { NDArray } from '../../../../ai/djl/ndarray/NDArray.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class Evaluator extends Object {
     constructor(arg0: string)
     readonly name: string;
-    // private totalInstances: { [key: string]: number };
+    // private totalInstances: JavaMap<string, number>;
     addAccumulator(arg0: string): void;
     checkLabelShapes(arg0: NDArray, arg1: NDArray): void;
     checkLabelShapes(arg0: NDArray, arg1: NDArray, arg2: boolean): void;

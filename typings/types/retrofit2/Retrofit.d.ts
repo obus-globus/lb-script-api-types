@@ -1,3 +1,4 @@
+import type { JavaMap } from '../JavaMap.d.ts'
 import type { Class } from '../java/lang/Class.d.ts'
 import type { Method } from '../java/lang/reflect/Method.d.ts'
 import type { Type } from '../java/lang/reflect/Type.d.ts'
@@ -23,7 +24,7 @@ export class Retrofit extends Object {
     // private converterFactories: Converter$Factory[];
     // private defaultCallAdapterFactoriesSize: number;
     // private defaultConverterFactoriesSize: number;
-    // private serviceMethodCache: Map<Method, Object>;
+    // private serviceMethodCache: JavaMap<Method, Object>;
     // private validateEagerly: boolean;
     baseUrl(): HttpUrl;
     callAdapter(arg0: Type, arg1: Annotation[]): CallAdapter<Object, Object>;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { TypeCheckerState$SupertypesPolicy } from '../../../../../kotlin/reflect/jvm/internal/impl/types/TypeCheckerState$SupertypesPolicy.d.ts'
 import type { CaptureStatus } from '../../../../../kotlin/reflect/jvm/internal/impl/types/model/CaptureStatus.d.ts'
@@ -92,7 +93,7 @@ export class ReflectTypeSystemContext extends Object implements TypeSystemContex
     typeConstructor(arg0: CapturedTypeMarker): CapturedTypeConstructorMarker;
     typeConstructor(arg0: KotlinTypeMarker): TypeConstructorMarker;
     typeConstructor(arg0: RigidTypeMarker): TypeConstructorMarker;
-    typeSubstitutorByTypeConstructor(map: Map<TypeConstructorMarker, KotlinTypeMarker>): TypeSubstitutorMarker;
+    typeSubstitutorByTypeConstructor(map: JavaMap<TypeConstructorMarker, KotlinTypeMarker>): TypeSubstitutorMarker;
     upperBound(arg0: FlexibleTypeMarker): RigidTypeMarker;
     upperBoundIfFlexible(arg0: KotlinTypeMarker): RigidTypeMarker;
     withNullability(arg0: KotlinTypeMarker, arg1: boolean): KotlinTypeMarker;

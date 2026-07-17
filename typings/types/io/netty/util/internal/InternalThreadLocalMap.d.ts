@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { IntegerHolder } from '../../../../io/netty/util/internal/IntegerHolder.d.ts'
 import type { ThreadLocalRandom } from '../../../../io/netty/util/internal/ThreadLocalRandom.d.ts'
 import type { TypeParameterMatcher } from '../../../../io/netty/util/internal/TypeParameterMatcher.d.ts'
@@ -20,10 +21,10 @@ export class InternalThreadLocalMap extends UnpaddedInternalThreadLocalMap {
     static remove(): void;
     private constructor()
     // private arrayList: Object[];
-    // private charsetDecoderCache: Map<Charset, CharsetDecoder>;
-    // private charsetEncoderCache: Map<Charset, CharsetEncoder>;
+    // private charsetDecoderCache: JavaMap<Charset, CharsetDecoder>;
+    // private charsetEncoderCache: JavaMap<Charset, CharsetEncoder>;
     // private cleanerFlags: BitSet;
-    // private handlerSharableCache: Map<Class<Object>, boolean>;
+    // private handlerSharableCache: JavaMap<Class<Object>, boolean>;
     // private indexedVariables: Object[];
     rp1: number;
     rp2: number;
@@ -34,17 +35,17 @@ export class InternalThreadLocalMap extends UnpaddedInternalThreadLocalMap {
     rp7: number;
     rp8: number;
     // private stringBuilder: StringBuilder;
-    // private typeParameterMatcherFindCache: Map<Class<Object>, { [key: string]: TypeParameterMatcher }>;
-    // private typeParameterMatcherGetCache: Map<Class<Object>, TypeParameterMatcher>;
+    // private typeParameterMatcherFindCache: JavaMap<Class<Object>, JavaMap<string, TypeParameterMatcher>>;
+    // private typeParameterMatcherGetCache: JavaMap<Class<Object>, TypeParameterMatcher>;
     arrayList<E extends unknown>(): E[];
     arrayList<E extends unknown>(arg0: number): E[];
-    charsetDecoderCache(): Map<Charset, CharsetDecoder>;
-    charsetEncoderCache(): Map<Charset, CharsetEncoder>;
+    charsetDecoderCache(): JavaMap<Charset, CharsetDecoder>;
+    charsetEncoderCache(): JavaMap<Charset, CharsetEncoder>;
     counterHashCode(): IntegerHolder;
     // private expandIndexedVariableTableAndSet(arg0: number, arg1: Object): void;
     futureListenerStackDepth(): number;
     getAndSetIndexedVariable(arg0: number, arg1: Object): Object;
-    handlerSharableCache(): Map<Class<Object>, boolean>;
+    handlerSharableCache(): JavaMap<Class<Object>, boolean>;
     indexedVariable(arg0: number): Object;
     isCleanerFlagSet(arg0: number): boolean;
     isIndexedVariableSet(arg0: number): boolean;
@@ -58,6 +59,6 @@ export class InternalThreadLocalMap extends UnpaddedInternalThreadLocalMap {
     setLocalChannelReaderStackDepth(arg0: number): void;
     size(): number;
     stringBuilder(): StringBuilder;
-    typeParameterMatcherFindCache(): Map<Class<Object>, { [key: string]: TypeParameterMatcher }>;
-    typeParameterMatcherGetCache(): Map<Class<Object>, TypeParameterMatcher>;
+    typeParameterMatcherFindCache(): JavaMap<Class<Object>, JavaMap<string, TypeParameterMatcher>>;
+    typeParameterMatcherGetCache(): JavaMap<Class<Object>, TypeParameterMatcher>;
 }

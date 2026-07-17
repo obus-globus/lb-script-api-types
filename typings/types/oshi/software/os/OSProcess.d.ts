@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { OSProcess$State } from '../../../oshi/software/os/OSProcess$State.d.ts'
 import type { OSThread } from '../../../oshi/software/os/OSThread.d.ts'
@@ -10,7 +11,7 @@ export interface OSProcess extends Object{
     getCommandLine(): string;
     getContextSwitches(): number;
     getCurrentWorkingDirectory(): string;
-    getEnvironmentVariables(): { [key: string]: string };
+    getEnvironmentVariables(): JavaMap<string, string>;
     getGroup(): string;
     getGroupID(): string;
     getHardOpenFileLimit(): number;

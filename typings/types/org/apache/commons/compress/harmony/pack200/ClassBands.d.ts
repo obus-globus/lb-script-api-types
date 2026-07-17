@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { AttributeDefinitionBands } from '../../../../../../org/apache/commons/compress/harmony/pack200/AttributeDefinitionBands.d.ts'
@@ -29,7 +30,7 @@ export class ClassBands extends BandSet {
     // private classFileVersionMinor: IntList;
     // private classInnerClassesNameRUN: CPUTF8[];
     // private classInnerClassesOuterRCN: CPClass[];
-    // private classReferencesInnerClass: Map<CPClass, CPClass[]>;
+    // private classReferencesInnerClass: JavaMap<CPClass, CPClass[]>;
     // private classSignature: CPSignature[];
     // private classSourceFile: CPUTF8[];
     // private class_InnerClasses_F: number[];
@@ -122,7 +123,7 @@ export class ClassBands extends BandSet {
     addSourceFile(arg0: string): void;
     // private createNewAttributeBands(): void;
     currentClassReferencesInnerClass(arg0: CPClass): void;
-    doBciRenumbering(arg0: IntList, arg1: Map<Label, number>): void;
+    doBciRenumbering(arg0: IntList, arg1: JavaMap<Label, number>): void;
     endOfClass(): void;
     endOfMethod(): void;
     finaliseBands(): void;
@@ -135,9 +136,9 @@ export class ClassBands extends BandSet {
     numClassesProcessed(): number;
     pack(arg0: OutputStream): void;
     removeCurrentClass(): void;
-    // private renumberBci(arg0: number[], arg1: IntList, arg2: Map<Label, number>): void;
-    // private renumberDoubleOffsetBci(arg0: number[], arg1: number[], arg2: Object[], arg3: IntList, arg4: Map<Label, number>): void;
-    // private renumberOffsetBci(arg0: number[], arg1: number[], arg2: IntList, arg3: Map<Label, number>): void;
+    // private renumberBci(arg0: number[], arg1: IntList, arg2: JavaMap<Label, number>): void;
+    // private renumberDoubleOffsetBci(arg0: number[], arg1: number[], arg2: Object[], arg3: IntList, arg4: JavaMap<Label, number>): void;
+    // private renumberOffsetBci(arg0: number[], arg1: number[], arg2: IntList, arg3: JavaMap<Label, number>): void;
     // private sum(arg0: number[]): number;
     // private writeClassAttributeBands(arg0: OutputStream): void;
     // private writeCodeAttributeBands(arg0: OutputStream): void;

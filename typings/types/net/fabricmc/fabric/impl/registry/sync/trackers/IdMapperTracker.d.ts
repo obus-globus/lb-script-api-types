@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { RegistryEntryAddedCallback } from '../../../../../../../net/fabricmc/fabric/api/event/registry/RegistryEntryAddedCallback.d.ts'
 import type { RegistryIdRemapCallback } from '../../../../../../../net/fabricmc/fabric/api/event/registry/RegistryIdRemapCallback.d.ts'
@@ -8,7 +9,7 @@ export class IdMapperTracker<V extends unknown, OV extends unknown> extends Obje
     private constructor(arg0: string, arg1: OV[])
     // private mappers: OV[];
     // private name: string;
-    // private removedMapperCache: Map<Identifier, OV>;
+    // private removedMapperCache: JavaMap<Identifier, OV>;
     onEntryAdded(arg0: number, arg1: Identifier, arg2: V): void;
     onRemap(arg0: RegistryIdRemapCallback$RemapState<V>): void;
 }

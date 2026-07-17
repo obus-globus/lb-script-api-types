@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { StandardPlural } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/StandardPlural.d.ts'
 import type { DecimalQuantity } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/number/DecimalQuantity.d.ts'
@@ -18,9 +19,9 @@ export class LongNameHandler extends Object implements LongNameMultiplexer$Paren
     static forCurrencyLongNames(paramlocale: ULocale, paramcurrency: Currency, paramrules: PluralRules, paramparent: MicroPropsGenerator): LongNameHandler;
     static forMeasureUnit(paramlocale: ULocale, paramunit: MeasureUnit, paramwidth: NumberFormatter$UnitWidth, paramunitDisplayCase: string, paramrules: PluralRules, paramparent: MicroPropsGenerator): LongNameHandler;
     static getUnitDisplayName(paramlocale: ULocale, paramunit: MeasureUnit, paramwidth: NumberFormatter$UnitWidth): string;
-    private constructor(modifiers: Map<StandardPlural, SimpleModifier>, rules: PluralRules, parent: MicroPropsGenerator)
+    private constructor(modifiers: JavaMap<StandardPlural, SimpleModifier>, rules: PluralRules, parent: MicroPropsGenerator)
     // private gender: string;
-    // private modifiers: Map<StandardPlural, SimpleModifier>;
+    // private modifiers: JavaMap<StandardPlural, SimpleModifier>;
     // private parent: MicroPropsGenerator;
     // private rules: PluralRules;
     getModifier(signum: Modifier$Signum, plural: StandardPlural): Modifier;

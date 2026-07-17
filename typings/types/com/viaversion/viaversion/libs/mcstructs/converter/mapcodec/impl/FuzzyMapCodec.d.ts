@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { DataConverter } from '../../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/DataConverter.d.ts'
 import type { Codec } from '../../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/codec/Codec.d.ts'
 import type { ThrowingFunction } from '../../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/codec/ThrowingFunction.d.ts'
@@ -16,11 +17,11 @@ export class FuzzyMapCodec<T extends unknown> extends Object implements MapCodec
     asCodec(): Codec<T>;
     defaulted(arg0: T): MapCodec<T>;
     defaulted(arg0: (param0: T) => boolean, arg1: () => T): MapCodec<T>;
-    deserialize<S extends unknown>(arg0: DataConverter<S>, arg1: Map<S, S>): Result<T>;
+    deserialize<S extends unknown>(arg0: DataConverter<S>, arg1: JavaMap<S, S>): Result<T>;
     elseGet(arg0: () => T): MapCodec<T>;
     field(arg0: string): FieldMapCodec$Builder$Stage1<T>;
     map<N extends unknown>(arg0: (param0: N) => T, arg1: (param0: T) => N): MapCodec<N>;
     mapThrowing<N extends unknown>(arg0: (param0: N) => T, arg1: (param0: T) => N): MapCodec<N>;
-    serialize<S extends unknown>(arg0: DataConverter<S>, arg1: Map<S, S>, arg2: T): Result<Map<S, S>>;
+    serialize<S extends unknown>(arg0: DataConverter<S>, arg1: JavaMap<S, S>, arg2: T): Result<JavaMap<S, S>>;
     verified(arg0: (param0: T) => Result<void>): MapCodec<T>;
 }

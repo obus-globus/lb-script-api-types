@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { BigDecimal } from '../../../../../../../../java/math/BigDecimal.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { ConversionRates$ConversionRateInfo } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/units/ConversionRates$ConversionRateInfo.d.ts'
@@ -7,7 +8,7 @@ import type { UnitsConverter$Convertibility } from '../../../../../../../../org/
 import type { UnitsConverter$Factor } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/units/UnitsConverter$Factor.d.ts'
 export class ConversionRates extends Object {
     constructor()
-    // private mapToConversionRate: { [key: string]: ConversionRates$ConversionRateInfo };
+    // private mapToConversionRate: JavaMap<string, ConversionRates$ConversionRateInfo>;
     // private checkSimpleUnit(measureUnitImpl: MeasureUnitImpl): boolean;
     extractBaseUnits(measureUnitImpl: MeasureUnitImpl): SingleUnitImpl[];
     extractBaseUnits(singleUnit: SingleUnitImpl): SingleUnitImpl[];

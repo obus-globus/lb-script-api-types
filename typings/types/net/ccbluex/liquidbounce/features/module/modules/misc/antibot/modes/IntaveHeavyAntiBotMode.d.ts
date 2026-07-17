@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../../JavaMap.d.ts'
 import type { UUID } from '../../../../../../../../../java/util/UUID.d.ts'
 import type { Tagged$Companion } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
 import type { EventHook } from '../../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
@@ -32,7 +33,7 @@ export class IntaveHeavyAntiBotMode extends AntiBotMode {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/IntaveHeavyAntiBotMode.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/IntaveHeavyAntiBotMode.kt:49}
      */
     readonly packetHandler: EventHook<PacketEvent>;
-    // private suspectList: Map<UUID, IntaveHeavyAntiBotMode$SuspectInfo>;
+    // private suspectList: JavaMap<UUID, IntaveHeavyAntiBotMode$SuspectInfo>;
     // private handleListPacket(packet: ClientboundPlayerInfoUpdatePacket): void;
     // private handlePlayerListAddPlayers(entries: ClientboundPlayerInfoUpdatePacket$Entry[]): void;
     // private handlePlayerListUpdateLatency(entries: ClientboundPlayerInfoUpdatePacket$Entry[]): void;

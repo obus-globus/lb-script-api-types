@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { TruffleLogger } from '../../../../../com/oracle/truffle/api/TruffleLogger.d.ts'
 import type { EventBinding } from '../../../../../com/oracle/truffle/api/instrumentation/EventBinding.d.ts'
 import type { Instrumenter } from '../../../../../com/oracle/truffle/api/instrumentation/Instrumenter.d.ts'
@@ -13,7 +14,7 @@ export class ShadowStack extends Object {
     // private logger: TruffleLogger;
     // private sourceSectionFilter: SourceSectionFilter;
     // private stackLimit: number;
-    // private stacks: Map<Thread, ShadowStack$ThreadLocalStack>;
+    // private stacks: JavaMap<Thread, ShadowStack$ThreadLocalStack>;
     getInitialStack(instrumentedNode: Node): StackTraceEntry[];
     getStack(thread: Thread): ShadowStack$ThreadLocalStack;
     getStacks(): ShadowStack$ThreadLocalStack[];

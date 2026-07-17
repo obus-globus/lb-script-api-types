@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { UserConnection } from '../../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { EntityTrackerBase } from '../../../../../../com/viaversion/viaversion/data/entity/EntityTrackerBase.d.ts'
 export class EntityTracker1_14 extends EntityTrackerBase {
@@ -5,10 +6,10 @@ export class EntityTracker1_14 extends EntityTrackerBase {
     readonly chunkCenterX: number;
     readonly chunkCenterZ: number;
     readonly forceSendCenterChunk: boolean;
-    readonly insentientData: { [key: string]: any };
+    readonly insentientData: JavaMap<any, any>;
     readonly latestTradeWindowId: number;
-    // private playerEntityFlags: { [key: string]: any };
-    // private sleepingAndRiptideData: { [key: string]: any };
+    // private playerEntityFlags: JavaMap<any, any>;
+    // private sleepingAndRiptideData: JavaMap<any, any>;
     getChunkCenterX(): number;
     getChunkCenterZ(): number;
     getEntityFlags(arg0: number): number;

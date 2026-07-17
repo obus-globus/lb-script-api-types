@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { ASTNode } from '../../../../../../io/github/douira/glsl_transformer/ast/node/abstract_node/ASTNode.d.ts'
 import type { ExternalDeclaration } from '../../../../../../io/github/douira/glsl_transformer/ast/node/external_declaration/ExternalDeclaration.d.ts'
 import type { StorageQualifier$StorageType } from '../../../../../../io/github/douira/glsl_transformer/ast/node/type/qualifier/StorageQualifier$StorageType.d.ts'
@@ -7,5 +8,5 @@ export class LayoutTransformer$DeclarationMatcher extends Matcher<ExternalDeclar
     constructor(arg0: StorageQualifier$StorageType)
     // private storageType: StorageQualifier$StorageType;
     matchesExtract(arg0: ExternalDeclaration): boolean;
-    matchesExtract(arg0: ExternalDeclaration, arg1: { [key: string]: Object }, arg2: { [key: string]: ASTNode }): boolean;
+    matchesExtract(arg0: ExternalDeclaration, arg1: JavaMap<string, Object>, arg2: JavaMap<string, ASTNode>): boolean;
 }

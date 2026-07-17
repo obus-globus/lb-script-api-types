@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { DefaultSpdySettingsFrame$Setting } from '../../../../../io/netty/handler/codec/spdy/DefaultSpdySettingsFrame$Setting.d.ts'
 import type { SpdySettingsFrame } from '../../../../../io/netty/handler/codec/spdy/SpdySettingsFrame.d.ts'
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
@@ -15,7 +16,7 @@ export class DefaultSpdySettingsFrame extends Object implements SpdySettingsFram
     static SETTINGS_UPLOAD_BANDWIDTH: number;
     constructor()
     // private clear: boolean;
-    // private settingsMap: { [key: number]: DefaultSpdySettingsFrame$Setting };
+    // private settingsMap: JavaMap<number, DefaultSpdySettingsFrame$Setting>;
     // private appendSettings(arg0: StringBuilder): void;
     clearPreviouslyPersistedSettings(): boolean;
     // private getSettings(): Map$Entry<number, DefaultSpdySettingsFrame$Setting>[];

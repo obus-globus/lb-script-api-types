@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { PrettyPrinter } from '../../../../../org/spongepowered/asm/util/PrettyPrinter.d.ts'
 import type { Profiler$Section } from '../../../../../org/spongepowered/asm/util/perf/Profiler$Section.d.ts'
@@ -11,7 +12,7 @@ export class Profiler extends Object {
     constructor(arg0: string)
     // private id: string;
     // private phases: string[];
-    readonly sections: { [key: string]: Profiler$Section };
+    readonly sections: JavaMap<string, Profiler$Section>;
     // private stack: Profiler$Section[];
     begin(...arg0: string[]): Profiler$Section;
     begin(arg0: number, ...arg1: string[]): Profiler$Section;

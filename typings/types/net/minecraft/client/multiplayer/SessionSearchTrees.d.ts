@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Runnable } from '../../../../java/lang/Runnable.d.ts'
 import type { CompletableFuture } from '../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -13,7 +14,7 @@ export class SessionSearchTrees extends Object {
     // private creativeByNameSearch: CompletableFuture<(param0: string) => ItemStack[]>;
     // private creativeByTagSearch: CompletableFuture<(param0: string) => ItemStack[]>;
     // private recipeSearch: CompletableFuture<(param0: string) => RecipeCollection[]>;
-    // private reloaders: Map<SessionSearchTrees$Key, () => void>;
+    // private reloaders: JavaMap<SessionSearchTrees$Key, () => void>;
     creativeNameSearch(): (param0: string) => ItemStack[];
     creativeTagSearch(): (param0: string) => ItemStack[];
     rebuildAfterLanguageChange(): void;

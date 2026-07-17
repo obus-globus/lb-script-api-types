@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { AttributeDefinitionBands$AttributeDefinition } from '../../../../../../org/apache/commons/compress/harmony/pack200/AttributeDefinitionBands$AttributeDefinition.d.ts'
 import type { BandSet } from '../../../../../../org/apache/commons/compress/harmony/pack200/BandSet.d.ts'
@@ -17,7 +18,7 @@ export class AttributeDefinitionBands extends BandSet {
     readonly fieldAttributeLayouts: AttributeDefinitionBands$AttributeDefinition[];
     readonly methodAttributeLayouts: AttributeDefinitionBands$AttributeDefinition[];
     // private segment: Segment;
-    // private addAttributeDefinitions(arg0: { [key: string]: string }, arg1: number[], arg2: number): void;
+    // private addAttributeDefinitions(arg0: JavaMap<string, string>, arg1: number[], arg2: number): void;
     // private addHighIndices(arg0: number[]): number[];
     // private addSyntheticDefinitions(): void;
     finaliseBands(): void;

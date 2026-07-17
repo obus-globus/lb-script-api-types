@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { OptionalInt } from '../../../../../java/util/OptionalInt.d.ts'
 import type { DoubleSupplier } from '../../../../../java/util/function/DoubleSupplier.d.ts'
 import type { IntSupplier } from '../../../../../java/util/function/IntSupplier.d.ts'
@@ -21,16 +22,16 @@ import type { Vector4f } from '../../../../../org/joml/Vector4f.d.ts'
 import type { Vector4i } from '../../../../../org/joml/Vector4i.d.ts'
 export class ProgramUniforms$Builder extends Object implements DynamicLocationalUniformHolder {
     constructor(arg0: string, arg1: number)
-    // private dynamic: { [key: string]: Uniform };
-    // private externalUniformNames: { [key: string]: UniformType };
-    // private locations: { [key: number]: string };
+    // private dynamic: JavaMap<string, Uniform>;
+    // private externalUniformNames: JavaMap<string, UniformType>;
+    // private locations: JavaMap<number, string>;
     // private name: string;
     // private notifiersToReset: ValueUpdateNotifier[];
-    // private once: { [key: string]: Uniform };
-    // private perFrame: { [key: string]: Uniform };
-    // private perTick: { [key: string]: Uniform };
+    // private once: JavaMap<string, Uniform>;
+    // private perFrame: JavaMap<string, Uniform>;
+    // private perTick: JavaMap<string, Uniform>;
     // private program: number;
-    // private uniformNames: { [key: string]: UniformType };
+    // private uniformNames: JavaMap<string, UniformType>;
     addDynamicUniform(arg0: Uniform, arg1: ValueUpdateNotifier): ProgramUniforms$Builder;
     addUniform(arg0: UniformUpdateFrequency, arg1: Uniform): ProgramUniforms$Builder;
     buildUniforms(): ProgramUniforms;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Vocabulary } from '../../../../../org/antlr/v4/runtime/Vocabulary.d.ts'
 import type { DecisionState } from '../../../../../org/antlr/v4/runtime/atn/DecisionState.d.ts'
@@ -9,7 +10,7 @@ export class DFA extends Object {
     decision: number;
     readonly precedenceDfa: boolean;
     s0: DFAState;
-    readonly states: Map<DFAState, DFAState>;
+    readonly states: JavaMap<DFAState, DFAState>;
     getPrecedenceStartState(arg0: number): DFAState;
     getStates(): DFAState[];
     isPrecedenceDfa(): boolean;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ObjectInputStream } from '../../../../../java/io/ObjectInputStream.d.ts'
 import type { ObjectOutputStream } from '../../../../../java/io/ObjectOutputStream.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -8,7 +9,7 @@ import type { TriConsumer } from '../../../../../org/apache/logging/log4j/util/T
 export class SortedArrayStringMap extends Object implements IndexedStringMap {
     constructor()
     constructor(initialCapacity: number)
-    constructor(map: { [key: string]: Object | null })
+    constructor(map: JavaMap<string, Object | null>)
     constructor(other: ReadOnlyStringMap)
     // private immutable: boolean;
     // private iterating: boolean;
@@ -43,7 +44,7 @@ export class SortedArrayStringMap extends Object implements IndexedStringMap {
     remove(key: string): void;
     // private resize(newCapacity: number): void;
     size(): number;
-    toMap(): { [key: string]: string };
+    toMap(): JavaMap<string, string>;
     toString(): string;
     // private writeObject(s: ObjectOutputStream): void;
 }

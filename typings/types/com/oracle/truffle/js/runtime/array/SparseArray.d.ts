@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { DynamicArray } from '../../../../../../com/oracle/truffle/js/runtime/array/DynamicArray.d.ts'
 import type { DynamicArray$DynamicArrayCache } from '../../../../../../com/oracle/truffle/js/runtime/array/DynamicArray$DynamicArrayCache.d.ts'
@@ -8,7 +9,7 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class SparseArray extends DynamicArray {
     static EMPTY_OBJECT_ARRAY: Object[];
-    static createArrayMap(): { [key: number]: Object };
+    static createArrayMap(): JavaMap<number, Object>;
     static createConstantArray(paramelements: Object[]): AbstractConstantArray;
     static createConstantEmptyArray(): AbstractConstantArray;
     static createSparseArray(): SparseArray;

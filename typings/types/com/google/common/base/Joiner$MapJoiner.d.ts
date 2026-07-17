@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Joiner } from '../../../../com/google/common/base/Joiner.d.ts'
 import type { Appendable } from '../../../../java/lang/Appendable.d.ts'
 import type { StringBuilder } from '../../../../java/lang/StringBuilder.d.ts'
@@ -10,12 +11,12 @@ export class Joiner$MapJoiner extends Object {
     // private keyValueSeparator: string;
     appendTo<A extends Appendable>(appendable: A, entries: Map$Entry<Object, Object>[]): A;
     appendTo<A extends Appendable>(appendable: A, parts: Iterator<Map$Entry<Object, Object>>): A;
-    appendTo<A extends Appendable>(appendable: A, map: Map<Object | null, Object | null>): A;
+    appendTo<A extends Appendable>(appendable: A, map: JavaMap<Object | null, Object | null>): A;
     appendTo(builder: StringBuilder, entries: Map$Entry<Object, Object>[]): StringBuilder;
     appendTo(builder: StringBuilder, entries: Iterator<Map$Entry<Object, Object>>): StringBuilder;
-    appendTo(builder: StringBuilder, map: Map<Object | null, Object | null>): StringBuilder;
+    appendTo(builder: StringBuilder, map: JavaMap<Object | null, Object | null>): StringBuilder;
     join(entries: Map$Entry<Object, Object>[]): string;
     join(entries: Iterator<Map$Entry<Object, Object>>): string;
-    join(map: Map<Object | null, Object | null>): string;
+    join(map: JavaMap<Object | null, Object | null>): string;
     useForNull(nullText: string): Joiner$MapJoiner;
 }

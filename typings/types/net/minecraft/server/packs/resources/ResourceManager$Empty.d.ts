@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { BufferedReader } from '../../../../../java/io/BufferedReader.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
@@ -22,8 +23,8 @@ export class ResourceManager$Empty extends Enum<ResourceManager$Empty> implement
     getResourceOrThrow(location: Identifier): Resource;
     getResourceStack(location: Identifier): Resource[];
     listPacks(): Stream<PackResources>;
-    listResourceStacks(directory: string, filter: (param0: Identifier) => boolean): Map<Identifier, Resource[]>;
-    listResources(directory: string, filter: (param0: Identifier) => boolean): Map<Identifier, Resource>;
+    listResourceStacks(directory: string, filter: (param0: Identifier) => boolean): JavaMap<Identifier, Resource[]>;
+    listResources(directory: string, filter: (param0: Identifier) => boolean): JavaMap<Identifier, Resource>;
     open(location: Identifier): InputStream;
     openAsReader(location: Identifier): BufferedReader;
     name(): "INSTANCE";

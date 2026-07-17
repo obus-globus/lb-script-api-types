@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ANTLRErrorListener } from '../../../../org/antlr/v4/runtime/ANTLRErrorListener.d.ts'
 import type { IntStream } from '../../../../org/antlr/v4/runtime/IntStream.d.ts'
@@ -25,7 +26,7 @@ export abstract class Recognizer<Symbol extends unknown, ATNInterpreter extends 
     getInputStream(): IntStream;
     getInterpreter(): ATNInterpreter;
     getParseInfo(): ParseInfo;
-    getRuleIndexMap(): { [key: string]: number };
+    getRuleIndexMap(): JavaMap<string, number>;
     getRuleNames(): string[];
     getSerializedATN(): string;
     getState(): number;
@@ -33,7 +34,7 @@ export abstract class Recognizer<Symbol extends unknown, ATNInterpreter extends 
     getTokenFactory(): TokenFactory<any>;
     getTokenNames(): string[];
     getTokenType(arg0: string): number;
-    getTokenTypeMap(): { [key: string]: number };
+    getTokenTypeMap(): JavaMap<string, number>;
     getVocabulary(): Vocabulary;
     precpred(arg0: RuleContext, arg1: number): boolean;
     removeErrorListener(arg0: ANTLRErrorListener): void;

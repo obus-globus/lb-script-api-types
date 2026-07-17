@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ByteBufAllocator } from '../../../../io/netty/buffer/ByteBufAllocator.d.ts'
 import type { ChannelOption } from '../../../../io/netty/channel/ChannelOption.d.ts'
 import type { MessageSizeEstimator } from '../../../../io/netty/channel/MessageSizeEstimator.d.ts'
@@ -53,7 +54,7 @@ export class EpollChannelOption<T extends unknown> extends UnixChannelOption<T> 
     static TCP_KEEPCNT: ChannelOption<number>;
     static TCP_KEEPIDLE: ChannelOption<number>;
     static TCP_KEEPINTVL: ChannelOption<number>;
-    static TCP_MD5SIG: ChannelOption<Map<InetAddress, number[]>>;
+    static TCP_MD5SIG: ChannelOption<JavaMap<InetAddress, number[]>>;
     static TCP_NODELAY: ChannelOption<boolean>;
     static TCP_NOTSENT_LOWAT: ChannelOption<number>;
     static TCP_QUICKACK: ChannelOption<boolean>;

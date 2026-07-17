@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { ObjectName } from '../../../../../../javax/management/ObjectName.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export interface LoggerContextAdminMBean extends Object{
@@ -5,7 +6,7 @@ export interface LoggerContextAdminMBean extends Object{
     getConfigFilter(): string;
     getConfigLocationUri(): string;
     getConfigName(): string;
-    getConfigProperties(): { [key: string]: string };
+    getConfigProperties(): JavaMap<string, string>;
     getConfigText(): string;
     getConfigText(charsetName: string): string;
     getName(): string;

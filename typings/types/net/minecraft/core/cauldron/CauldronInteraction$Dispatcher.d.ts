@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../net/minecraft/core/BlockPos.d.ts'
 import type { CauldronInteraction } from '../../../../net/minecraft/core/cauldron/CauldronInteraction.d.ts'
@@ -11,8 +12,8 @@ import type { Level } from '../../../../net/minecraft/world/level/Level.d.ts'
 import type { BlockState } from '../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class CauldronInteraction$Dispatcher extends Object {
     constructor()
-    // private items: Map<Item, (param0: BlockState, param1: Level, param2: BlockPos, param3: Player, param4: InteractionHand, param5: ItemStack) => InteractionResult>;
-    // private tags: Map<TagKey<Item>, (param0: BlockState, param1: Level, param2: BlockPos, param3: Player, param4: InteractionHand, param5: ItemStack) => InteractionResult>;
+    // private items: JavaMap<Item, (param0: BlockState, param1: Level, param2: BlockPos, param3: Player, param4: InteractionHand, param5: ItemStack) => InteractionResult>;
+    // private tags: JavaMap<TagKey<Item>, (param0: BlockState, param1: Level, param2: BlockPos, param3: Player, param4: InteractionHand, param5: ItemStack) => InteractionResult>;
     get(itemStack: ItemStack): (param0: BlockState, param1: Level, param2: BlockPos, param3: Player, param4: InteractionHand, param5: ItemStack) => InteractionResult;
     put(tag: TagKey<Item>, interaction: (param0: BlockState, param1: Level, param2: BlockPos, param3: Player, param4: InteractionHand, param5: ItemStack) => InteractionResult): void;
     put(item: Item, interaction: (param0: BlockState, param1: Level, param2: BlockPos, param3: Player, param4: InteractionHand, param5: ItemStack) => InteractionResult): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Level } from '../../../../../../../org/apache/logging/log4j/Level.d.ts'
 import type { LogEvent } from '../../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
@@ -5,8 +6,8 @@ import type { RewritePolicy } from '../../../../../../../org/apache/logging/log4
 import type { KeyValuePair } from '../../../../../../../org/apache/logging/log4j/core/util/KeyValuePair.d.ts'
 export class LoggerNameLevelRewritePolicy extends Object implements RewritePolicy {
     static createPolicy(paramloggerNamePrefix: string, paramlevelPairs: KeyValuePair[]): LoggerNameLevelRewritePolicy;
-    private constructor(loggerName: string, map: Map<Level, Level>)
+    private constructor(loggerName: string, map: JavaMap<Level, Level>)
     // private loggerName: string;
-    // private map: Map<Level, Level>;
+    // private map: JavaMap<Level, Level>;
     rewrite(event: LogEvent): LogEvent;
 }

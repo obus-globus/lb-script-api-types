@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Direction } from '../../../../../net/minecraft/core/Direction.d.ts'
@@ -20,10 +21,10 @@ export abstract class FlowingFluid extends Fluid {
     static FLUID_STATE_REGISTRY: FluidState[];
     static LEVEL: IntegerProperty;
     constructor()
-    // private shapes: Map<FluidState, VoxelShape>;
+    // private shapes: JavaMap<FluidState, VoxelShape>;
     // private affectsFlow(neighbourFluid: FluidState): boolean;
     beforeDestroyingBlock(level: LevelAccessor, pos: BlockPos, state: BlockState): void;
-    // private calculateComplexFluidFlowDirections(arg0: ServerLevel, arg1: BlockPos, arg2: BlockState, arg3: BlockState[], arg4: Map<Object | null, Object | null>): void;
+    // private calculateComplexFluidFlowDirections(arg0: ServerLevel, arg1: BlockPos, arg2: BlockState, arg3: BlockState[], arg4: JavaMap<Object | null, Object | null>): void;
     canConvertToSource(level: ServerLevel): boolean;
     // private canMaybeFlowIntoBlock(arg0: Level, arg1: BlockState, arg2: BlockPos): boolean;
     // private canMaybePassThrough(level: BlockGetter, sourcePos: BlockPos, sourceState: BlockState, direction: Direction, testPos: BlockPos, testState: BlockState, testFluidState: FluidState): boolean;
@@ -43,13 +44,13 @@ export abstract class FlowingFluid extends Fluid {
     getSlopeFindDistance(level: LevelReader): number;
     getSource(): Fluid;
     getSource(falling: boolean): FluidState;
-    getSpread(level: ServerLevel, pos: BlockPos, state: BlockState): Map<Direction, FluidState>;
+    getSpread(level: ServerLevel, pos: BlockPos, state: BlockState): JavaMap<Direction, FluidState>;
     getSpreadDelay(level: Level, pos: BlockPos, oldFluidState: FluidState, newFluidState: FluidState): number;
-    // private isHoleBelow(arg0: LevelReader, arg1: { [key: string]: any }, arg2: number, arg3: BlockPos, arg4: BlockState): boolean;
+    // private isHoleBelow(arg0: LevelReader, arg1: JavaMap<any, any>, arg2: number, arg3: BlockPos, arg4: BlockState): boolean;
     isSolidFace(level: BlockGetter, pos: BlockPos, direction: Direction): boolean;
     // private isSourceBlockOfThisType(state: FluidState): boolean;
     isWaterHole(arg0: BlockGetter, arg1: BlockPos, arg2: BlockState, arg3: BlockPos, arg4: BlockState): boolean;
-    // private removeDirectionsWithoutHoleAccess(arg0: number, arg1: Map<Object | null, Object | null>): void;
+    // private removeDirectionsWithoutHoleAccess(arg0: number, arg1: JavaMap<Object | null, Object | null>): void;
     // private sourceNeighborCount(level: LevelReader, pos: BlockPos): number;
     spread(level: ServerLevel, pos: BlockPos, state: BlockState, fluidState: FluidState): void;
     spreadTo(level: LevelAccessor, pos: BlockPos, state: BlockState, direction: Direction, target: FluidState): void;

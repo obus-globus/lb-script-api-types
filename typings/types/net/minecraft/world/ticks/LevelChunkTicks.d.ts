@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { BiConsumer } from '../../../../java/util/function/BiConsumer.d.ts'
 import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { Stream } from '../../../../java/util/stream/Stream.d.ts'
@@ -15,7 +16,7 @@ export class LevelChunkTicks<T extends unknown> extends Object implements Serial
     readonly onTickAdded: (param0: LevelChunkTicks<T>, param1: ScheduledTick<T>) => void;
     // private pendingTicks: SavedTick<T>[];
     // private tickQueue: ScheduledTick<T>[];
-    // private tickQueuesByTimeAndPriority: { [key: string]: any };
+    // private tickQueuesByTimeAndPriority: JavaMap<any, any>;
     // private ticksPerPosition: ScheduledTick<Object>[];
     count(): number;
     getAll(): Stream<Object>;

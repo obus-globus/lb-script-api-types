@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../../JavaMap.d.ts'
 import type { CallableDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableDescriptor.d.ts'
 import type { ClassConstructorDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassConstructorDescriptor.d.ts'
 import type { ClassDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
@@ -35,7 +36,7 @@ export class LazyJavaClassMemberScope extends LazyJavaScope {
     static Companion: MemberScope$Companion;
     constructor(arg0: LazyJavaResolverContext, arg1: ClassDescriptor, arg2: JavaClass, arg3: boolean, arg4: LazyJavaClassMemberScope)
     // private constructors: NotNullLazyValue<ClassConstructorDescriptor[]>;
-    // private enumEntryIndex: NotNullLazyValue<Map<Name, JavaField>>;
+    // private enumEntryIndex: NotNullLazyValue<JavaMap<Name, JavaField>>;
     // private generatedNestedClassNames: NotNullLazyValue<Name[]>;
     // private jClass: JavaClass;
     // private nestedClassIndex: NotNullLazyValue<Name[]>;

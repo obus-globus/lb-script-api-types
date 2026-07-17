@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { AdvancementTabAccessor } from '../../../../../../net/fabricmc/fabric/mixin/client/rendering/advancement/AdvancementTabAccessor.d.ts'
 import type { AdvancementHolder } from '../../../../../../net/minecraft/advancements/AdvancementHolder.d.ts'
@@ -31,7 +32,7 @@ export class AdvancementTab extends Object implements AdvancementTabAccessor {
     // private scrollY: number;
     readonly title: Component;
     readonly type: AdvancementTabType;
-    // private widgets: Map<AdvancementHolder, AdvancementWidget>;
+    // private widgets: JavaMap<AdvancementHolder, AdvancementWidget>;
     addAdvancement(node: AdvancementNode): void;
     // private addWidget(widget: AdvancementWidget, advancement: AdvancementHolder): void;
     canScrollHorizontally(): boolean;

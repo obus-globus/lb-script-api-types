@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Long2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/longs/Long2ObjectFunction.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { LongStream } from '../../../../../java/util/stream/LongStream.d.ts'
@@ -18,7 +19,7 @@ export class EntitySectionStorage<T extends EntityAccess> extends Object impleme
     // private entityClass: Class<T>;
     // private intialSectionVisibility: (param0: number) => Visibility;
     // private sectionIds: (Object | null)[];
-    // private sections: { [key: string]: any };
+    // private sections: JavaMap<any, any>;
     // private consumeSection(arg0: number, arg1: (param0: Object) => AbortableIterationConsumer$Continuation): AbortableIterationConsumer$Continuation;
     count(): number;
     // private createSection(sectionPos: number): EntitySection<T>;

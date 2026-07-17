@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { EnvType } from '../../../../../net/fabricmc/api/EnvType.d.ts'
 import type { Version } from '../../../../../net/fabricmc/loader/api/Version.d.ts'
@@ -25,7 +26,7 @@ export class BuiltinMetadataWrapper extends AbstractModMetadata implements Loade
     getContact(): ContactInformation;
     getContributors(): Person[];
     getCustomValue(arg0: string): CustomValue;
-    getCustomValues(): { [key: string]: CustomValue };
+    getCustomValues(): JavaMap<string, CustomValue>;
     getDependencies(): ModDependency[];
     getDescription(): string;
     getEntrypointKeys(): string[];
@@ -34,7 +35,7 @@ export class BuiltinMetadataWrapper extends AbstractModMetadata implements Loade
     getIconPath(arg0: number): Optional<string>;
     getId(): string;
     getJars(): NestedJarEntry[];
-    getLanguageAdapterDefinitions(): { [key: string]: string };
+    getLanguageAdapterDefinitions(): JavaMap<string, string>;
     getLicense(): string[];
     getMixinConfigs(arg0: EnvType): string[];
     getName(): string;

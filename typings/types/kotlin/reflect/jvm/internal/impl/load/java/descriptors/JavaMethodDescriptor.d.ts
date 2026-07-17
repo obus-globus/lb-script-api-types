@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Pair } from '../../../../../../../../kotlin/Pair.d.ts'
 import type { CallableDescriptor$UserDataKey } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableDescriptor$UserDataKey.d.ts'
@@ -34,6 +35,6 @@ export class JavaMethodDescriptor extends SimpleFunctionDescriptorImpl implement
     hasStableParameterNames(): boolean;
     hasSynthesizedParameterNames(): boolean;
     initialize(arg0: ReceiverParameterDescriptor, arg1: ReceiverParameterDescriptor, arg2: ReceiverParameterDescriptor[], arg3: TypeParameterDescriptor[], arg4: ValueParameterDescriptor[], arg5: KotlinType, arg6: Modality, arg7: DescriptorVisibility): SimpleFunctionDescriptorImpl;
-    initialize(arg0: ReceiverParameterDescriptor, arg1: ReceiverParameterDescriptor, arg2: ReceiverParameterDescriptor[], arg3: TypeParameterDescriptor[], arg4: ValueParameterDescriptor[], arg5: KotlinType, arg6: Modality, arg7: DescriptorVisibility, arg8: Map<CallableDescriptor$UserDataKey<Object>, Object | null>): SimpleFunctionDescriptorImpl;
+    initialize(arg0: ReceiverParameterDescriptor, arg1: ReceiverParameterDescriptor, arg2: ReceiverParameterDescriptor[], arg3: TypeParameterDescriptor[], arg4: ValueParameterDescriptor[], arg5: KotlinType, arg6: Modality, arg7: DescriptorVisibility, arg8: JavaMap<CallableDescriptor$UserDataKey<Object>, Object | null>): SimpleFunctionDescriptorImpl;
     setParameterNamesStatus(arg0: boolean, arg1: boolean): void;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { MethodVisitor } from '../../../../../../../com/oracle/truffle/api/impl/asm/MethodVisitor.d.ts'
 import type { AbstractInsnNode } from '../../../../../../../com/oracle/truffle/api/impl/asm/tree/AbstractInsnNode.d.ts'
 import type { LabelNode } from '../../../../../../../com/oracle/truffle/api/impl/asm/tree/LabelNode.d.ts'
@@ -20,6 +21,6 @@ export class InsnNode extends AbstractInsnNode {
     static VAR_INSN: number;
     constructor(opcode: number)
     accept(methodVisitor: MethodVisitor): void;
-    clone(clonedLabels: Map<LabelNode, LabelNode>): AbstractInsnNode;
+    clone(clonedLabels: JavaMap<LabelNode, LabelNode>): AbstractInsnNode;
     getType(): number;
 }

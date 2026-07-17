@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { TruffleFile$FileTypeDetector } from '../../../../com/oracle/truffle/api/TruffleFile$FileTypeDetector.d.ts'
 import type { TruffleLanguage } from '../../../../com/oracle/truffle/api/TruffleLanguage.d.ts'
 import type { TruffleLanguage$ContextPolicy } from '../../../../com/oracle/truffle/api/TruffleLanguage$ContextPolicy.d.ts'
@@ -10,7 +11,7 @@ import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 import type { SandboxPolicy } from '../../../../org/graalvm/polyglot/SandboxPolicy.d.ts'
 export class LanguageCache extends Object implements Comparable<LanguageCache> {
     static getNeedsAllEncodings(): boolean;
-    private constructor(id: string, name: string, implementationName: string, version: string, className: string, languageHome: string, characterMimeTypes: string[], byteMimeTypes: string[], defaultMimeType: string, dependentLanguages: string[], interactive: boolean, internal: boolean, needsAllEncodings: boolean, services: string[], contextPolicy: TruffleLanguage$ContextPolicy, provider: TruffleLanguageProvider, website: string, sandboxPolicy: SandboxPolicy, internalResources: { [key: string]: InternalResourceCache })
+    private constructor(id: string, name: string, implementationName: string, version: string, className: string, languageHome: string, characterMimeTypes: string[], byteMimeTypes: string[], defaultMimeType: string, dependentLanguages: string[], interactive: boolean, internal: boolean, needsAllEncodings: boolean, services: string[], contextPolicy: TruffleLanguage$ContextPolicy, provider: TruffleLanguageProvider, website: string, sandboxPolicy: SandboxPolicy, internalResources: JavaMap<string, InternalResourceCache>)
     // private characterMimeTypes: string[];
     // private className: string;
     // private contextPolicy: TruffleLanguage$ContextPolicy;
@@ -21,7 +22,7 @@ export class LanguageCache extends Object implements Comparable<LanguageCache> {
     // private implementationName: string;
     // private interactive: boolean;
     // private internal: boolean;
-    // private internalResources: { [key: string]: InternalResourceCache };
+    // private internalResources: JavaMap<string, InternalResourceCache>;
     // private languageHome: string;
     // private mimeTypes: string[];
     // private name: string;

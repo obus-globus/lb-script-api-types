@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Predictor } from '../../../../../ai/djl/inference/Predictor.d.ts'
 import type { DetectedObjects } from '../../../../../ai/djl/modality/cv/output/DetectedObjects.d.ts'
 import type { Sam2Translator$Builder } from '../../../../../ai/djl/modality/cv/translator/Sam2Translator$Builder.d.ts'
@@ -9,7 +10,7 @@ import type { TranslatorContext } from '../../../../../ai/djl/translate/Translat
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Sam2Translator extends Object implements NoBatchifyTranslator<Sam2Translator$Sam2Input, DetectedObjects> {
     static builder(): Sam2Translator$Builder;
-    static builder(paramarg0: { [key: string]: Object }): Sam2Translator$Builder;
+    static builder(paramarg0: JavaMap<string, Object>): Sam2Translator$Builder;
     constructor(arg0: Sam2Translator$Builder)
     // private encodeMethod: string;
     // private encoderPath: string;

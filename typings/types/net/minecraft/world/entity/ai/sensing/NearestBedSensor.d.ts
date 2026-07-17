@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { BiPredicate } from '../../../../../../java/util/function/BiPredicate.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ServerLevel } from '../../../../../../net/minecraft/server/level/ServerLevel.d.ts'
@@ -12,7 +13,7 @@ export class NearestBedSensor extends Sensor<Mob> {
     static rememberPositives<T extends unknown, U extends unknown>(paraminvocations: number, parampredicate: (param0: T, param1: U) => boolean): (param0: T, param1: U) => boolean;
     static wasEntityAttackableLastNTicks(parambody: LivingEntity, paramticks: number): (param0: ServerLevel, param1: LivingEntity) => boolean;
     constructor()
-    // private batchCache: { [key: string]: any };
+    // private batchCache: JavaMap<any, any>;
     // private lastUpdate: number;
     // private triedCount: number;
     doTick(level: ServerLevel, body: Mob): void;

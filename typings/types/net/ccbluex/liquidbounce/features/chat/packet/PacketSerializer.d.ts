@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { JsonElement } from '../../../../../../com/google/gson/JsonElement.d.ts'
 import type { JsonSerializationContext } from '../../../../../../com/google/gson/JsonSerializationContext.d.ts'
 import type { JsonSerializer } from '../../../../../../com/google/gson/JsonSerializer.d.ts'
@@ -14,7 +15,7 @@ import type { AxochatPacket } from '../../../../../../net/ccbluex/liquidbounce/f
  */
 export class PacketSerializer extends Object implements JsonSerializer<AxochatPacket> {
     constructor()
-    // private packetRegistry: Map<Class<AxochatPacket>, string>;
+    // private packetRegistry: JavaMap<Class<AxochatPacket>, string>;
     register(name: string): void;
     /**
      * Register packet

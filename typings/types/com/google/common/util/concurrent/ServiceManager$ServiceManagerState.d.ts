@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Stopwatch } from '../../../../../com/google/common/base/Stopwatch.d.ts'
 import type { ImmutableSetMultimap } from '../../../../../com/google/common/collect/ImmutableSetMultimap.d.ts'
 import type { SetMultimap } from '../../../../../com/google/common/collect/SetMultimap.d.ts'
@@ -18,7 +19,7 @@ export class ServiceManager$ServiceManagerState extends Object {
     // private numberOfServices: number;
     // private ready: boolean;
     // private servicesByState: SetMultimap<Service$State, Service>;
-    // private startupTimers: Map<Service, Stopwatch>;
+    // private startupTimers: JavaMap<Service, Stopwatch>;
     // private states: Service$State[];
     // private stoppedGuard: Monitor$Guard;
     // private transitioned: boolean;
@@ -34,7 +35,7 @@ export class ServiceManager$ServiceManagerState extends Object {
     enqueueStoppedEvent(): void;
     markReady(): void;
     servicesByState(): ImmutableSetMultimap<Service$State, Service>;
-    startupTimes(): Map<Service, number>;
+    startupTimes(): JavaMap<Service, number>;
     transitionService(service: Service, from: Service$State, to: Service$State): void;
     tryStartTiming(service: Service): void;
 }

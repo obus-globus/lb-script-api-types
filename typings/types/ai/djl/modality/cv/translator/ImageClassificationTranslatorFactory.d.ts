@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Model } from '../../../../../ai/djl/Model.d.ts'
 import type { Classifications } from '../../../../../ai/djl/modality/Classifications.d.ts'
 import type { Image } from '../../../../../ai/djl/modality/cv/Image.d.ts'
@@ -8,6 +9,6 @@ import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ImageClassificationTranslatorFactory extends BaseImageTranslatorFactory<Classifications> implements Serializable {
     constructor()
-    buildBaseTranslator(arg0: Model, arg1: { [key: string]: Object | null }): Translator<Image, Classifications>;
+    buildBaseTranslator(arg0: Model, arg1: JavaMap<string, Object | null>): Translator<Image, Classifications>;
     getBaseOutputType(): Class<Classifications>;
 }

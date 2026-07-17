@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Comparator } from '../../../../../../java/util/Comparator.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -23,7 +24,7 @@ export class GuiRenderState extends Object implements FabricRenderState {
     readonly itemModelIdentities: Object[];
     // private lastElementBounds: ScreenRectangle;
     panoramaRenderState: PanoramaRenderState;
-    // private renderStateData: Map<Object | null, Object | null>;
+    // private renderStateData: JavaMap<Object | null, Object | null>;
     // private strata: GuiRenderState$Node[];
     addBlitToCurrentLayer(blitState: BlitRenderState): void;
     // private addDebugRectangleIfEnabled(bounds: ScreenRectangle): void;

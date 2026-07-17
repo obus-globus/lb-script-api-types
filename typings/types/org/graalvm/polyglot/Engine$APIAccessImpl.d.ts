@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { RuntimeException } from '../../../java/lang/RuntimeException.d.ts'
 import type { MethodHandles$Lookup } from '../../../java/lang/invoke/MethodHandles$Lookup.d.ts'
@@ -82,7 +83,7 @@ export class Engine$APIAccessImpl extends AbstractPolyglotImpl$APIAccess {
     contextClosed(contextReference: Reference<Context>): void;
     contextEnter(context: Object): void;
     contextLeave(context: Object): void;
-    createPolyglotAccess(bindingsAccess: string[], evalAccess: { [key: string]: string[] }): Object;
+    createPolyglotAccess(bindingsAccess: string[], evalAccess: JavaMap<string, string[]>): Object;
     engineClosed(engineReference: Reference<Engine>): void;
     getBindingsAccess(access: Object): string[];
     getByteSequenceClass(): Class<Object>;
@@ -92,7 +93,7 @@ export class Engine$APIAccessImpl extends AbstractPolyglotImpl$APIAccess {
     getEngineReceiver(engine: Object): Object;
     getEnvironmentAccessInherit(): Object;
     getEnvironmentAccessNone(): Object;
-    getEvalAccess(access: Object): { [key: string]: string[] };
+    getEvalAccess(access: Object): JavaMap<string, string[]>;
     getEvalAccess(access: Object, language: string): string[];
     getHostAccessImpl(access: Object): Object;
     getHostAccessNone(): Object;
@@ -154,7 +155,7 @@ export class Engine$APIAccessImpl extends AbstractPolyglotImpl$APIAccess {
     newValue(dispatch: AbstractPolyglotImpl$AbstractValueDispatch, context: Object, receiver: Object, creatorContext: Context): Value;
     newValueArray(size: number): Object[];
     processReferenceQueue(): void;
-    readOptionsFromSystemProperties(): { [key: string]: string };
+    readOptionsFromSystemProperties(): JavaMap<string, string>;
     setHostAccessImpl(access: Object, impl: Object): void;
     toByteSequence(origin: Object): Object;
     validatePolyglotAccess(access: Object, languages: string[]): string;

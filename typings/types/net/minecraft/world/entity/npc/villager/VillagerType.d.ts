@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../../../net/minecraft/core/Holder.d.ts'
@@ -6,7 +7,7 @@ import type { StreamCodec } from '../../../../../../net/minecraft/network/codec/
 import type { ResourceKey } from '../../../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { Biome } from '../../../../../../net/minecraft/world/level/biome/Biome.d.ts'
 export class VillagerType extends Object {
-    static BY_BIOME: Map<ResourceKey<Biome>, ResourceKey<VillagerType>>;
+    static BY_BIOME: JavaMap<ResourceKey<Biome>, ResourceKey<VillagerType>>;
     static CODEC: Codec<Holder<VillagerType>>;
     static DESERT: ResourceKey<VillagerType>;
     static JUNGLE: ResourceKey<VillagerType>;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { GameTickEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts'
 import type { OverlayRenderEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/OverlayRenderEvent.d.ts'
@@ -30,7 +31,7 @@ export class ModuleStrongholdFinder extends ClientModule {
     // private announcePrediction: boolean;
     // private /*not mapped: */ getAnnouncePrediction(): boolean;
     // private cachedHypothesisCount: number;
-    // private detectedPortalBlocks: Map<BlockPos, ModuleStrongholdFinder$PortalBlockType>;
+    // private detectedPortalBlocks: JavaMap<BlockPos, ModuleStrongholdFinder$PortalBlockType>;
     // private hypothesisCache: StrongholdHypothesis[];
     // private hypothesisCount: number;
     // private /*not mapped: */ getHypothesisCount(): number;
@@ -63,7 +64,7 @@ export class ModuleStrongholdFinder extends ClientModule {
     // private sigma: number;
     // private /*not mapped: */ getSigma(): number;
     // private tickHandler: EventHook<GameTickEvent>;
-    // private trackedEyes: { [key: string]: any };
+    // private trackedEyes: JavaMap<any, any>;
     // private worldChangeHandler: EventHook<WorldChangeEvent>;
     // private getOrCreateHypotheses(): StrongholdHypothesis[];
     // private handleEyeSpawnPacket(packet: ClientboundAddEntityPacket): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { File } from '../../../../java/io/File.d.ts'
 import type { FileFilter } from '../../../../java/io/FileFilter.d.ts'
 import type { ToIntFunction } from '../../../../java/util/function/ToIntFunction.d.ts'
@@ -6,7 +7,7 @@ export class LinuxSensors extends AbstractSensors {
     static OSHI_HWMON_NAME_PRIORITY: string;
     static OSHI_THERMAL_ZONE_TYPE_PRIORITY: string;
     constructor()
-    // private sensorsMap: { [key: string]: string };
+    // private sensorsMap: JavaMap<string, string>;
     // private getSensorFilesFromPath(arg0: string, arg1: string, arg2: (param0: File) => boolean): void;
     // private getSensorFilesFromPath(arg0: string, arg1: string, arg2: (param0: File) => boolean, arg3: (param0: File[]) => number): void;
     // private populateSensorsMapFromHwmon(): void;

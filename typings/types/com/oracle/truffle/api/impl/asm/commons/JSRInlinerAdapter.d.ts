@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Label } from '../../../../../../../com/oracle/truffle/api/impl/asm/Label.d.ts'
 import type { MethodVisitor } from '../../../../../../../com/oracle/truffle/api/impl/asm/MethodVisitor.d.ts'
 import type { Opcodes } from '../../../../../../../com/oracle/truffle/api/impl/asm/Opcodes.d.ts'
@@ -259,9 +260,9 @@ export class JSRInlinerAdapter extends MethodNode implements Opcodes {
     constructor(api: number, methodVisitor: MethodVisitor, access: number, name: string, descriptor: string, signature: string, exceptions: string[])
     // private mainSubroutineInsns: BitSet;
     // private sharedSubroutineInsns: BitSet;
-    // private subroutinesInsns: Map<LabelNode, BitSet>;
+    // private subroutinesInsns: JavaMap<LabelNode, BitSet>;
     // private emitCode(): void;
-    // private emitInstantiation(instantiation: { [key: string]: any }, worklist: { [key: string]: any }[], newInstructions: AbstractInsnNode[], newTryCatchBlocks: TryCatchBlockNode[], newLocalVariables: LocalVariableNode[]): void;
+    // private emitInstantiation(instantiation: JavaMap<any, any>, worklist: JavaMap<any, any>[], newInstructions: AbstractInsnNode[], newTryCatchBlocks: TryCatchBlockNode[], newLocalVariables: LocalVariableNode[]): void;
     // private findReachableInsns(insnIndex: number, subroutineInsns: BitSet, visitedInsns: BitSet): void;
     // private findSubroutineInsns(startInsnIndex: number, subroutineInsns: BitSet, visitedInsns: BitSet): void;
     // private findSubroutinesInsns(): void;

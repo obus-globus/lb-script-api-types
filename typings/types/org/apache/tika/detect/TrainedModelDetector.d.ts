@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { File } from '../../../../java/io/File.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { ClassLoader } from '../../../../java/lang/ClassLoader.d.ts'
@@ -9,7 +10,7 @@ import type { Metadata } from '../../../../org/apache/tika/metadata/Metadata.d.t
 import type { MediaType } from '../../../../org/apache/tika/mime/MediaType.d.ts'
 export abstract class TrainedModelDetector extends Object implements Detector {
     constructor()
-    // private MODEL_MAP: Map<MediaType, TrainedModel>;
+    // private MODEL_MAP: JavaMap<MediaType, TrainedModel>;
     detect(arg0: InputStream, arg1: Metadata): MediaType;
     getMinLength(): number;
     loadDefaultModels(arg0: File): void;

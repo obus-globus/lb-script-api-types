@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ByteBufAllocator } from '../../../../../io/netty/buffer/ByteBufAllocator.d.ts'
 import type { ChannelHandlerContext } from '../../../../../io/netty/channel/ChannelHandlerContext.d.ts'
 import type { MessageToMessageDecoder } from '../../../../../io/netty/handler/codec/MessageToMessageDecoder.d.ts'
@@ -11,12 +12,12 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class SpdyHttpDecoder extends MessageToMessageDecoder<SpdyFrame> {
     constructor(arg0: SpdyVersion, arg1: number)
     constructor(arg0: SpdyVersion, arg1: number, arg2: boolean)
-    constructor(arg0: SpdyVersion, arg1: number, arg2: { [key: number]: FullHttpMessage })
-    constructor(arg0: SpdyVersion, arg1: number, arg2: { [key: number]: FullHttpMessage }, arg3: HttpHeadersFactory, arg4: HttpHeadersFactory)
-    constructor(arg0: SpdyVersion, arg1: number, arg2: { [key: number]: FullHttpMessage }, arg3: boolean)
+    constructor(arg0: SpdyVersion, arg1: number, arg2: JavaMap<number, FullHttpMessage>)
+    constructor(arg0: SpdyVersion, arg1: number, arg2: JavaMap<number, FullHttpMessage>, arg3: HttpHeadersFactory, arg4: HttpHeadersFactory)
+    constructor(arg0: SpdyVersion, arg1: number, arg2: JavaMap<number, FullHttpMessage>, arg3: boolean)
     // private headersFactory: HttpHeadersFactory;
     // private maxContentLength: number;
-    // private messageMap: { [key: number]: FullHttpMessage };
+    // private messageMap: JavaMap<number, FullHttpMessage>;
     // private spdyVersion: number;
     // private trailersFactory: HttpHeadersFactory;
     channelInactive(arg0: ChannelHandlerContext): void;

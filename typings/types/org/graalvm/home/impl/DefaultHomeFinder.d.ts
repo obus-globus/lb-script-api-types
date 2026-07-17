@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { HomeFinder } from '../../../../org/graalvm/home/HomeFinder.d.ts'
@@ -5,15 +6,15 @@ export class DefaultHomeFinder extends HomeFinder {
     static getInstance(): HomeFinder;
     constructor()
     // private graalVMHome: Object;
-    readonly languageHomes: { [key: string]: Path };
-    readonly toolHomes: { [key: string]: Path };
+    readonly languageHomes: JavaMap<string, Path>;
+    readonly toolHomes: JavaMap<string, Path>;
     // private verbose: boolean;
     readonly version: string;
-    // private collectStandaloneHomes(): { [key: string]: Path };
+    // private collectStandaloneHomes(): JavaMap<string, Path>;
     // private getGraalVmHomeNative(): Path;
     getHomeFolder(): Path;
-    getLanguageHomes(): { [key: string]: Path };
-    getToolHomes(): { [key: string]: Path };
+    getLanguageHomes(): JavaMap<string, Path>;
+    getToolHomes(): JavaMap<string, Path>;
     getVersion(): string;
     // private isVerbose(): boolean;
     // private searchHomeFolder(): Path;

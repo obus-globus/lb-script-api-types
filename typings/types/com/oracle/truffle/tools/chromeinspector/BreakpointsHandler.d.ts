@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Breakpoint } from '../../../../../com/oracle/truffle/api/debug/Breakpoint.d.ts'
 import type { DebugValue } from '../../../../../com/oracle/truffle/api/debug/DebugValue.d.ts'
 import type { DebuggerSession } from '../../../../../com/oracle/truffle/api/debug/DebuggerSession.d.ts'
@@ -13,13 +14,13 @@ import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BreakpointsHandler extends Object {
     constructor(ds: DebuggerSession, slh: ScriptsHandler, eventHandler: () => EventHandler)
-    // private bpIDs: Map<Breakpoint, number>;
+    // private bpIDs: JavaMap<Breakpoint, number>;
     // private ds: DebuggerSession;
     // private exceptionBreakpoint: AtomicReference<Breakpoint>;
     // private lastID: number;
-    // private resolvedBreakpoints: { [key: number]: SourceSection };
+    // private resolvedBreakpoints: JavaMap<number, SourceSection>;
     // private resolvedHandler: BreakpointsHandler$ResolvedHandler;
-    // private scriptListeners: { [key: number]: ScriptsHandler$LoadScriptListener };
+    // private scriptListeners: JavaMap<number, ScriptsHandler$LoadScriptListener>;
     // private slh: ScriptsHandler;
     createBreakpoint(location: Location, condition: string): Params;
     createFunctionBreakpoint(functionValue: DebugValue, condition: string): Params;

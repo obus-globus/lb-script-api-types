@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ImmutableList$Builder } from '../../../../../com/google/common/collect/ImmutableList$Builder.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -18,18 +19,18 @@ import type { Recipe } from '../../../../../net/minecraft/world/item/crafting/Re
 export class PlayerPredicate$Builder extends Object {
     static player(): PlayerPredicate$Builder;
     constructor()
-    // private advancements: Map<Identifier, PlayerPredicate$AdvancementPredicate>;
+    // private advancements: JavaMap<Identifier, PlayerPredicate$AdvancementPredicate>;
     // private food: FoodPredicate;
     // private gameType: GameTypePredicate;
     // private input: Optional<InputPredicate>;
     // private level: MinMaxBounds$Ints;
     // private lookingAt: Optional<EntityPredicate>;
-    // private recipes: { [key: string]: any };
+    // private recipes: JavaMap<any, any>;
     // private stats: ImmutableList$Builder<PlayerPredicate$StatMatcher<Object>>;
     addRecipe(recipe: ResourceKey<Recipe<any>>, present: boolean): PlayerPredicate$Builder;
     addStat<T extends unknown>(type: Stat<T>[], value: Holder$Reference<T>, range: MinMaxBounds$Ints): PlayerPredicate$Builder;
     build(): PlayerPredicate;
-    checkAdvancementCriterions(advancement: Identifier, criterions: { [key: string]: boolean }): PlayerPredicate$Builder;
+    checkAdvancementCriterions(advancement: Identifier, criterions: JavaMap<string, boolean>): PlayerPredicate$Builder;
     checkAdvancementDone(advancement: Identifier, isDone: boolean): PlayerPredicate$Builder;
     hasInput(input: InputPredicate): PlayerPredicate$Builder;
     setFood(food: FoodPredicate): PlayerPredicate$Builder;

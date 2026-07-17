@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { DayPeriodRules$DayPeriod } from '../../../../com/ibm/icu/impl/DayPeriodRules$DayPeriod.d.ts'
 import type { BreakIterator } from '../../../../com/ibm/icu/text/BreakIterator.d.ts'
 import type { DateFormat } from '../../../../com/ibm/icu/text/DateFormat.d.ts'
@@ -187,9 +188,9 @@ export class SimpleDateFormat extends DateFormat implements Cloneable {
     // private hasMinute: boolean;
     // private hasSecond: boolean;
     // private locale: ULocale;
-    // private numberFormatters: { [key: string]: NumberFormat };
+    // private numberFormatters: JavaMap<string, NumberFormat>;
     // private override: string;
-    // private overrideMap: { [key: string]: string };
+    // private overrideMap: JavaMap<string, string>;
     // private pattern: string;
     // private patternItems: Object[];
     // private serialVersionOnStream: number;

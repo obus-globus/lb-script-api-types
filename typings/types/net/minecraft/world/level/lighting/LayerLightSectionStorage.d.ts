@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { LightLayer } from '../../../../../net/minecraft/world/level/LightLayer.d.ts'
 import type { DataLayer } from '../../../../../net/minecraft/world/level/chunk/DataLayer.d.ts'
@@ -13,8 +14,8 @@ export abstract class LayerLightSectionStorage<M extends DataLayerStorageMap<M>>
     // private columnsWithSources: (Object | null)[];
     // private hasInconsistencies: boolean;
     // private layer: LightLayer;
-    // private queuedSections: { [key: string]: any };
-    // private sectionStates: { [key: string]: any };
+    // private queuedSections: JavaMap<any, any>;
+    // private sectionStates: JavaMap<any, any>;
     // private sectionsAffectedByLightUpdates: (Object | null)[];
     // private toRemove: (Object | null)[];
     // private updatingSectionData: M;

@@ -1,8 +1,9 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class WrappedBlockData extends Object {
     static fromString(paramarg0: string): WrappedBlockData;
     private constructor(arg0: string, arg1: number)
-    // private blockData: { [key: string]: string };
+    // private blockData: JavaMap<string, string>;
     readonly minecraftKey: string;
     readonly savedBlockStateId: number;
     getBlockStateId(): number;

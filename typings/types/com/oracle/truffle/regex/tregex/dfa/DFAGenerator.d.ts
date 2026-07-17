@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { TruffleString$CodePointSet } from '../../../../../../com/oracle/truffle/api/strings/TruffleString$CodePointSet.d.ts'
 import type { RegexOptions } from '../../../../../../com/oracle/truffle/regex/RegexOptions.d.ts'
 import type { TRegexCompilationRequest } from '../../../../../../com/oracle/truffle/regex/tregex/TRegexCompilationRequest.d.ts'
@@ -43,7 +44,7 @@ export class DFAGenerator extends Object implements JsonConvertible {
     // private cgPartialTransitions: DFACaptureGroupTransitionBuilder$PartialTransitionDebugInfo[];
     readonly compilationBuffer: CompilationBuffer;
     // private compilationRequest: TRegexCompilationRequest;
-    // private dfaTransitionsDedupMap: Map<DFAAbstractTransitionNode, DFAAbstractTransitionNode>;
+    // private dfaTransitionsDedupMap: JavaMap<DFAAbstractTransitionNode, DFAAbstractTransitionNode>;
     // private doSimpleCG: boolean;
     readonly entryStates: DFAStateNodeBuilder[];
     // private executorProps: TRegexDFAExecutorProperties;
@@ -61,7 +62,7 @@ export class DFAGenerator extends Object implements JsonConvertible {
     // private pruneUnambiguousPaths: boolean;
     // private simpleCGMustCopy: boolean;
     // private stateIndexMap: DFAStateNodeBuilder[];
-    readonly stateMap: Map<DFAStateNodeBuilder, DFAStateNodeBuilder>;
+    readonly stateMap: JavaMap<DFAStateNodeBuilder, DFAStateNodeBuilder>;
     // private stateReplacements: EconomicMap<number, DFAAbstractStateNode>;
     // private transitionIDCounter: Counter;
     // private addSuccessors(stateSet: NFAState[], state: NFAState): void;
@@ -108,7 +109,7 @@ export class DFAGenerator extends Object implements JsonConvertible {
     // private getReplacement(id: number): DFAAbstractStateNode;
     getState(stateNodeID: number): DFAStateNodeBuilder;
     // private getStateIndexMap(): DFAStateNodeBuilder[];
-    getStateMap(): Map<DFAStateNodeBuilder, DFAStateNodeBuilder>;
+    getStateMap(): JavaMap<DFAStateNodeBuilder, DFAStateNodeBuilder>;
     // private getUnanchoredInitialState(): DFAStateNodeBuilder;
     // private innerLiteralCanFindMatchStart(unanchoredInitialState: DFAStateNodeBuilder, literalLastDFAState: DFAStateNodeBuilder): boolean;
     // private innerLiteralMatchesPrefix(prefixNFAStates: NFAState[]): boolean;

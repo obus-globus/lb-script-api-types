@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { Duration } from '../../../../../../java/time/Duration.d.ts'
 import type { Instant } from '../../../../../../java/time/Instant.d.ts'
@@ -27,19 +28,19 @@ export class JfrStatsParser extends Object {
     // private garbageCollections: number;
     // private gcHeapStats: GcHeapStat[];
     // private gcTotalDuration: Duration;
-    // private readChunks: Map<ChunkIdentification, JfrStatsParser$MutableCountAndSize>;
-    // private receivedPackets: Map<PacketIdentification, JfrStatsParser$MutableCountAndSize>;
+    // private readChunks: JavaMap<ChunkIdentification, JfrStatsParser$MutableCountAndSize>;
+    // private receivedPackets: JavaMap<PacketIdentification, JfrStatsParser$MutableCountAndSize>;
     // private recordingEnded: Instant;
     // private recordingStarted: Instant;
-    // private sentPackets: Map<PacketIdentification, JfrStatsParser$MutableCountAndSize>;
+    // private sentPackets: JavaMap<PacketIdentification, JfrStatsParser$MutableCountAndSize>;
     // private serverTickTimes: TickTimeStat[];
     // private structureGenStats: StructureGenStat[];
     // private threadAllocationStats: ThreadAllocationStat[];
     // private worldCreationDuration: Duration;
-    // private writtenChunks: Map<ChunkIdentification, JfrStatsParser$MutableCountAndSize>;
+    // private writtenChunks: JavaMap<ChunkIdentification, JfrStatsParser$MutableCountAndSize>;
     // private appendFileIO(event: RecordedEvent, stats: FileIOStat[], sizeField: string): void;
     // private capture(events: Stream<RecordedEvent>): void;
-    // private incrementChunk(event: RecordedEvent, chunkSize: number, packets: Map<ChunkIdentification, JfrStatsParser$MutableCountAndSize>): void;
-    // private incrementPacket(event: RecordedEvent, packetSize: number, packets: Map<PacketIdentification, JfrStatsParser$MutableCountAndSize>): void;
+    // private incrementChunk(event: RecordedEvent, chunkSize: number, packets: JavaMap<ChunkIdentification, JfrStatsParser$MutableCountAndSize>): void;
+    // private incrementPacket(event: RecordedEvent, packetSize: number, packets: JavaMap<PacketIdentification, JfrStatsParser$MutableCountAndSize>): void;
     // private results(): JfrStatsResult;
 }

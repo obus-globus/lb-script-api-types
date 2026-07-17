@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Packet } from '../../../../net/minecraft/network/protocol/Packet.d.ts'
@@ -22,7 +23,7 @@ export class LevelDebugSynchronizers extends Object {
     // private level: ServerLevel;
     // private poiSynchronizer: TrackingDebugSynchronizer$PoiSynchronizer;
     // private sleeping: boolean;
-    // private sourceSynchronizers: Map<DebugSubscription<Object>, TrackingDebugSynchronizer$SourceSynchronizer<Object>>;
+    // private sourceSynchronizers: JavaMap<DebugSubscription<Object>, TrackingDebugSynchronizer$SourceSynchronizer<Object>>;
     // private villageSectionSynchronizer: TrackingDebugSynchronizer$VillageSectionSynchronizer;
     broadcastEventToTracking<T extends unknown>(blockPos: BlockPos, subscription: DebugSubscription<T>, value: T): void;
     // private broadcastToTracking(trackedEntity: Entity, subscription: DebugSubscription<Object>, packet: Packet<ClientGamePacketListener>): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { PoseStack } from '../../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
 import type { PoseStack$Pose } from '../../../../../com/mojang/blaze3d/vertex/PoseStack$Pose.d.ts'
 import type { VertexConsumer } from '../../../../../com/mojang/blaze3d/vertex/VertexConsumer.d.ts'
@@ -15,8 +16,8 @@ import type { Vector3f } from '../../../../../org/joml/Vector3f.d.ts'
 import type { Vector3fc } from '../../../../../org/joml/Vector3fc.d.ts'
 export class ModelPart extends Object implements ModelPartAccessor {
     static DEFAULT_SCALE: number;
-    constructor(cubes: ModelPart$Cube[], children: { [key: string]: ModelPart })
-    // private children: { [key: string]: ModelPart };
+    constructor(cubes: ModelPart$Cube[], children: JavaMap<string, ModelPart>)
+    // private children: JavaMap<string, ModelPart>;
     // private cubes: ModelPart$Cube[];
     readonly initialPose: PartPose;
     skipDraw: boolean;

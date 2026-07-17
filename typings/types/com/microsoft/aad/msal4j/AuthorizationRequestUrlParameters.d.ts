@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Authority } from '../../../../com/microsoft/aad/msal4j/Authority.d.ts'
 import type { AuthorizationRequestUrlParameters$Builder } from '../../../../com/microsoft/aad/msal4j/AuthorizationRequestUrlParameters$Builder.d.ts'
 import type { Prompt } from '../../../../com/microsoft/aad/msal4j/Prompt.d.ts'
@@ -12,29 +13,29 @@ export class AuthorizationRequestUrlParameters extends Object {
     // private codeChallengeMethod: string;
     // private correlationId: string;
     // private domainHint: string;
-    // private extraQueryParameters: { [key: string]: string };
+    // private extraQueryParameters: JavaMap<string, string>;
     // private instanceAware: boolean;
     // private loginHint: string;
     // private nonce: string;
     // private prompt: Prompt;
     // private redirectUri: string;
-    // private requestParameters: { [key: string]: string };
+    // private requestParameters: JavaMap<string, string>;
     // private responseMode: ResponseMode;
     // private scopes: string[];
     // private state: string;
     codeChallenge(): string;
     codeChallengeMethod(): string;
     correlationId(): string;
-    createAuthorizationURL(arg0: Authority, arg1: { [key: string]: string }): URL;
+    createAuthorizationURL(arg0: Authority, arg1: JavaMap<string, string>): URL;
     domainHint(): string;
-    extraQueryParameters(): { [key: string]: string };
+    extraQueryParameters(): JavaMap<string, string>;
     instanceAware(): boolean;
     log(): Logger;
     loginHint(): string;
     nonce(): string;
     prompt(): Prompt;
     redirectUri(): string;
-    requestParameters(): { [key: string]: string[] };
+    requestParameters(): JavaMap<string, string[]>;
     responseMode(): ResponseMode;
     scopes(): string[];
     state(): string;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
 import type { BandSet } from '../../../../../../org/apache/commons/compress/harmony/unpack200/BandSet.d.ts'
 import type { IcTuple } from '../../../../../../org/apache/commons/compress/harmony/unpack200/IcTuple.d.ts'
@@ -8,8 +9,8 @@ export class IcBands extends BandSet {
     // private cpClass: string[];
     // private cpUTF8: string[];
     // private icAll: IcTuple[];
-    // private outerClassToTuples: { [key: string]: IcTuple[] };
-    // private thisClassToTuple: { [key: string]: IcTuple };
+    // private outerClassToTuples: JavaMap<string, IcTuple[]>;
+    // private thisClassToTuple: JavaMap<string, IcTuple>;
     getIcTuples(): IcTuple[];
     getRelevantIcTuples(arg0: string, arg1: ClassConstantPool): IcTuple[];
     read(arg0: InputStream): void;

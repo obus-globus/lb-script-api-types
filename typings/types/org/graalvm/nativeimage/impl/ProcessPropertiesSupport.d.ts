@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Process } from '../../../../java/lang/Process.d.ts'
 import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -7,7 +8,7 @@ export interface ProcessPropertiesSupport extends Object{
     destroy(processID: number): boolean;
     destroyForcibly(processID: number): boolean;
     exec(executable: Path, args: string[]): void;
-    exec(executable: Path, args: string[], env: { [key: string]: string }): void;
+    exec(executable: Path, args: string[], env: JavaMap<string, string>): void;
     getArgumentVectorBlockSize(): number;
     getArgumentVectorProgramName(): string;
     getExecutableName(): string;

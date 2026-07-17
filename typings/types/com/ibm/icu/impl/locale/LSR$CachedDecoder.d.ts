@@ -1,9 +1,10 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class LSR$CachedDecoder extends Object {
     constructor(arg0: string[])
-    // private langsCache: { [key: number]: string };
+    // private langsCache: JavaMap<number, string>;
     // private m49: string[];
-    // private regionsCache: { [key: number]: string };
-    // private scriptsCache: { [key: number]: string };
+    // private regionsCache: JavaMap<number, string>;
+    // private scriptsCache: JavaMap<number, string>;
     decode(arg0: number): string[];
 }

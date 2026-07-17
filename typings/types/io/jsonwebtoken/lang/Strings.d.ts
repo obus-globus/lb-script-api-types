@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { StringBuilder } from '../../../java/lang/StringBuilder.d.ts'
 import type { CharBuffer } from '../../../java/nio/CharBuffer.d.ts'
 import type { Charset } from '../../../java/nio/charset/Charset.d.ts'
@@ -48,8 +49,8 @@ export class Strings extends Object {
     static replace(paramarg0: string, paramarg1: string, paramarg2: string): string;
     static sortStringArray(paramarg0: string[]): string[];
     static split(paramarg0: string, paramarg1: string): string[];
-    static splitArrayElementsIntoProperties(paramarg0: string[], paramarg1: string): { [key: string]: any };
-    static splitArrayElementsIntoProperties(paramarg0: string[], paramarg1: string, paramarg2: string): { [key: string]: any };
+    static splitArrayElementsIntoProperties(paramarg0: string[], paramarg1: string): JavaMap<any, any>;
+    static splitArrayElementsIntoProperties(paramarg0: string[], paramarg1: string, paramarg2: string): JavaMap<any, any>;
     static startsWithIgnoreCase(paramarg0: string, paramarg1: string): boolean;
     static stripFilenameExtension(paramarg0: string): string;
     static substringMatch(paramarg0: CharSequence, paramarg1: number, paramarg2: CharSequence): boolean;

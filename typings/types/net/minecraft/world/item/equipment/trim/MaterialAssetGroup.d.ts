@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { MapCodec } from '../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { ByteBuf } from '../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
@@ -22,14 +23,14 @@ export class MaterialAssetGroup extends Record {
     static SEPARATOR: string;
     static STREAM_CODEC: StreamCodec<ByteBuf, MaterialAssetGroup>;
     static create(parambase: string): MaterialAssetGroup;
-    static create(parambase: string, paramoverrides: Map<ResourceKey<EquipmentAsset>, string>): MaterialAssetGroup;
-    constructor(base: MaterialAssetGroup$AssetInfo, overrides: Map<ResourceKey<EquipmentAsset>, MaterialAssetGroup$AssetInfo>)
+    static create(parambase: string, paramoverrides: JavaMap<ResourceKey<EquipmentAsset>, string>): MaterialAssetGroup;
+    constructor(base: MaterialAssetGroup$AssetInfo, overrides: JavaMap<ResourceKey<EquipmentAsset>, MaterialAssetGroup$AssetInfo>)
     // private base: MaterialAssetGroup$AssetInfo;
-    // private overrides: Map<ResourceKey<EquipmentAsset>, MaterialAssetGroup$AssetInfo>;
+    // private overrides: JavaMap<ResourceKey<EquipmentAsset>, MaterialAssetGroup$AssetInfo>;
     assetId(equipmentAssetId: ResourceKey<EquipmentAsset>): MaterialAssetGroup$AssetInfo;
     base(): MaterialAssetGroup$AssetInfo;
     equals(o: Object | null): boolean;
     hashCode(): number;
-    overrides(): Map<ResourceKey<EquipmentAsset>, MaterialAssetGroup$AssetInfo>;
+    overrides(): JavaMap<ResourceKey<EquipmentAsset>, MaterialAssetGroup$AssetInfo>;
     toString(): string;
 }

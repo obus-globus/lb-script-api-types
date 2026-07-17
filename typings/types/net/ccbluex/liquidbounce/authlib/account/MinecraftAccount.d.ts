@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { JsonObject } from '../../../../../com/google/gson/JsonObject.d.ts'
 import type { YggdrasilAuthenticationService } from '../../../../../com/mojang/authlib/yggdrasil/YggdrasilAuthenticationService.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -12,7 +13,7 @@ export class MinecraftAccount extends Object {
     static fromJson(json: JsonObject): MinecraftAccount;
     static fromName(name: string): MinecraftAccount;
     protected constructor(type: AccountType)
-    bans: { [key: string]: Ban };
+    bans: JavaMap<string, Ban>;
     getFavorite(): boolean;
     profile: GameProfile | null;
     readonly type: AccountType;

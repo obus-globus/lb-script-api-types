@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { DynamicTopoData } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/translucent_sorting/data/DynamicTopoData.d.ts'
 import type { TranslucentData } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/translucent_sorting/data/TranslucentData.d.ts'
@@ -10,7 +11,7 @@ import type { Vector3dc } from '../../../../../../../../../org/joml/Vector3dc.d.
 export class DirectTriggers extends Object implements SortTriggering$SectionTriggers<DynamicTopoData> {
     constructor()
     // private accumulatedDistance: number;
-    // private directTriggerSections: { [key: string]: any };
+    // private directTriggerSections: JavaMap<any, any>;
     getDirectTriggerCount(): number;
     // private insertDirectAngleTrigger(arg0: DirectTriggers$DirectTriggerData, arg1: Vector3dc, arg2: number): void;
     // private insertDirectDistanceTrigger(arg0: DirectTriggers$DirectTriggerData, arg1: Vector3dc, arg2: number): void;

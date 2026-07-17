@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { ModuleDescriptor } from '../../../java/lang/module/ModuleDescriptor.d.ts'
 import type { ModuleFinder } from '../../../java/lang/module/ModuleFinder.d.ts'
 import type { ResolvedModule } from '../../../java/lang/module/ResolvedModule.d.ts'
@@ -8,11 +9,11 @@ export class Configuration extends Object {
     static empty(): Configuration;
     static resolve(paramarg0: ModuleFinder, paramarg1: Configuration[], paramarg2: ModuleFinder, paramarg3: string[]): Configuration;
     static resolveAndBind(paramarg0: ModuleFinder, paramarg1: Configuration[], paramarg2: ModuleFinder, paramarg3: string[]): Configuration;
-    constructor(arg0: ModuleFinder, arg1: { [key: string]: string[] })
+    constructor(arg0: ModuleFinder, arg1: JavaMap<string, string[]>)
     // private allConfigurations: Configuration[];
-    // private graph: Map<ResolvedModule, ResolvedModule[]>;
+    // private graph: JavaMap<ResolvedModule, ResolvedModule[]>;
     // private modules: ResolvedModule[];
-    // private nameToModule: { [key: string]: ResolvedModule };
+    // private nameToModule: JavaMap<string, ResolvedModule>;
     // private parents: Configuration[];
     // private targetPlatform: string;
     configurations(): Stream<Configuration>;

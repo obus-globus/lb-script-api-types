@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Predicate } from '../../../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { ReportedException } from '../../../../../../../net/minecraft/ReportedException.d.ts'
@@ -11,7 +12,7 @@ export class LithiumHashPalette<T extends unknown> extends Object implements Pal
     // private entries: T[];
     // private indexBits: number;
     readonly size: number;
-    // private table: { [key: string]: any };
+    // private table: JavaMap<any, any>;
     // private addEntry(arg0: T): number;
     // private clear(): void;
     // private computeEntry(arg0: T, arg1: PaletteResize<T>): number;

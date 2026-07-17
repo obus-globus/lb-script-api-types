@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object2ObjectLinkedOpenHashMap$MapEntry } from '../../../../../../com/viaversion/viaversion/libs/fastutil/objects/Object2ObjectLinkedOpenHashMap$MapEntry.d.ts'
 import type { Object2ObjectLinkedOpenHashMap$MapIterator } from '../../../../../../com/viaversion/viaversion/libs/fastutil/objects/Object2ObjectLinkedOpenHashMap$MapIterator.d.ts'
 import type { Object2ObjectMap$Entry } from '../../../../../../com/viaversion/viaversion/libs/fastutil/objects/Object2ObjectMap$Entry.d.ts'
@@ -5,8 +6,8 @@ import type { ObjectListIterator } from '../../../../../../com/viaversion/viaver
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class Object2ObjectLinkedOpenHashMap$EntryIterator extends Object2ObjectLinkedOpenHashMap$MapIterator<Object> implements ObjectListIterator<Object2ObjectMap$Entry<K, V>> {
-    constructor(null_: Map<Object, Object>)
-    constructor(null_: Map<Object, Object>, arg1: Object)
+    constructor(null_: JavaMap<Object, Object>)
+    constructor(null_: JavaMap<Object, Object>, arg1: Object)
     // private entry: Object2ObjectLinkedOpenHashMap$MapEntry;
     acceptOnIndex<K extends unknown, V extends unknown>(arg0: (param0: Object2ObjectMap$Entry<K, V>) => void, arg1: number): void;
     add<K extends unknown, V extends unknown>(arg0: Object2ObjectMap$Entry<K, V>): void;

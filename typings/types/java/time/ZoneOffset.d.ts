@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { DataOutput } from '../../java/io/DataOutput.d.ts'
 import type { ObjectInputStream } from '../../java/io/ObjectInputStream.d.ts'
 import type { Serializable } from '../../java/io/Serializable.d.ts'
@@ -14,13 +15,13 @@ import type { Comparable } from '../../java/lang/Comparable.d.ts'
 export class ZoneOffset extends ZoneId implements Serializable, TemporalAccessor, TemporalAdjuster, Comparable<ZoneOffset> {
     static MAX: ZoneOffset;
     static MIN: ZoneOffset;
-    static SHORT_IDS: { [key: string]: string };
+    static SHORT_IDS: JavaMap<string, string>;
     static UTC: ZoneOffset;
     static from(paramarg0: TemporalAccessor): ZoneId;
     static from(paramarg0: TemporalAccessor): ZoneOffset;
     static getAvailableZoneIds(): string[];
     static of(paramarg0: string): ZoneId;
-    static of(paramarg0: string, paramarg1: { [key: string]: string }): ZoneId;
+    static of(paramarg0: string, paramarg1: JavaMap<string, string>): ZoneId;
     static of(paramarg0: string): ZoneOffset;
     static ofHours(paramarg0: number): ZoneOffset;
     static ofHoursMinutes(paramarg0: number, paramarg1: number): ZoneOffset;

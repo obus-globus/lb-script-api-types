@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { RealmsRegion } from '../../../../../../com/mojang/realmsclient/dto/RealmsRegion.d.ts'
 import type { RegionSelectionPreference } from '../../../../../../com/mojang/realmsclient/dto/RegionSelectionPreference.d.ts'
 import type { ServiceQuality } from '../../../../../../com/mojang/realmsclient/dto/ServiceQuality.d.ts'
@@ -23,13 +24,13 @@ export class RealmsPreferredRegionSelectionScreen extends Screen {
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
     static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
-    constructor(parent: Screen, applySettings: (param0: RegionSelectionPreference, param1: RealmsRegion) => void, regionServiceQuality: Map<RealmsRegion, ServiceQuality>, currentSelection: RealmsSettingsTab$RegionSelection)
+    constructor(parent: Screen, applySettings: (param0: RegionSelectionPreference, param1: RealmsRegion) => void, regionServiceQuality: JavaMap<RealmsRegion, ServiceQuality>, currentSelection: RealmsSettingsTab$RegionSelection)
     // private applySettings: (param0: RegionSelectionPreference, param1: RealmsRegion) => void;
     // private doneButton: Button;
     // private layout: HeaderAndFooterLayout;
     // private list: RealmsPreferredRegionSelectionScreen$RegionSelectionList;
     // private parent: Screen;
-    // private regionServiceQuality: Map<RealmsRegion, ServiceQuality>;
+    // private regionServiceQuality: JavaMap<RealmsRegion, ServiceQuality>;
     // private selection: RealmsSettingsTab$RegionSelection;
     init(): void;
     init(width: number, height: number): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { FabricDynamicRegistryProvider$RegistryEntries } from '../../../../../../../net/fabricmc/fabric/api/datagen/v1/provider/FabricDynamicRegistryProvider$RegistryEntries.d.ts'
 import type { ResourceCondition } from '../../../../../../../net/fabricmc/fabric/api/resource/conditions/v1/ResourceCondition.d.ts'
@@ -13,7 +14,7 @@ import type { PlacedFeature } from '../../../../../../../net/minecraft/world/lev
 export class FabricDynamicRegistryProvider$Entries extends Object {
     constructor(arg0: HolderLookup$Provider, arg1: string)
     // private modId: string;
-    // private queuedEntries: Map<Identifier, FabricDynamicRegistryProvider$RegistryEntries<Object>>;
+    // private queuedEntries: JavaMap<Identifier, FabricDynamicRegistryProvider$RegistryEntries<Object>>;
     // private registries: HolderLookup$Provider;
     add<T extends unknown>(arg0: Holder$Reference<T>): void;
     add<T extends unknown>(arg0: Holder$Reference<T>, ...arg1: ResourceCondition[]): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { BucketItemAccessor } from '../../../../net/fabricmc/fabric/mixin/transfer/BucketItemAccessor.d.ts'
 import type { BlockPos } from '../../../../net/minecraft/core/BlockPos.d.ts'
@@ -26,7 +27,7 @@ export class BucketItem extends Item implements BucketItemAccessor, DispensibleC
     static ABSOLUTE_MAX_STACK_SIZE: number;
     static BASE_ATTACK_DAMAGE_ID: Identifier;
     static BASE_ATTACK_SPEED_ID: Identifier;
-    static BY_BLOCK: Map<Block, Item>;
+    static BY_BLOCK: JavaMap<Block, Item>;
     static CODEC: Codec<Holder<Item>>;
     static CODEC_WITH_BOUND_COMPONENTS: Codec<Holder<Item>>;
     static DEFAULT_LIGHT_COLOR: Vector3f;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Writer } from '../../../../../java/io/Writer.d.ts'
 import type { AutoCloseable } from '../../../../../java/lang/AutoCloseable.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
@@ -23,8 +24,8 @@ import type { Visibility } from '../../../../../net/minecraft/world/level/entity
 export class PersistentEntitySectionManager<T extends EntityAccess> extends Object implements AutoCloseable, PersistentEntitySectionManagerAccessor<EntityAccess>, PersistentEntitySectionManagerAccessor_2<EntityAccess>, PersistentEntitySectionManagerAccessor_3<EntityAccess> {
     constructor(entityClass: Class<T>, callbacks: LevelCallback<T>, permanentStorage: EntityPersistentStorage<T>)
     // private callbacks: LevelCallback<T>;
-    // private chunkLoadStatuses: { [key: string]: any };
-    // private chunkVisibility: { [key: string]: any };
+    // private chunkLoadStatuses: JavaMap<any, any>;
+    // private chunkVisibility: JavaMap<any, any>;
     // private chunksToUnload: (Object | null)[];
     readonly entityGetter: LevelEntityGetter<T>;
     // private knownUuids: UUID[];

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { CompilationBuffer } from '../../../../../../com/oracle/truffle/regex/tregex/buffer/CompilationBuffer.d.ts'
 import type { ASTStep } from '../../../../../../com/oracle/truffle/regex/tregex/nfa/ASTStep.d.ts'
 import type { ASTStepVisitor } from '../../../../../../com/oracle/truffle/regex/tregex/nfa/ASTStepVisitor.d.ts'
@@ -31,7 +32,7 @@ export class NFAGenerator extends Object {
     // private initialLoopBack: NFAStateTransition;
     // private initialStates: NFAState[];
     // private lastGroup: number;
-    // private nfaStates: Map<NFAGenerator$NFAStateID, NFAState>;
+    // private nfaStates: JavaMap<NFAGenerator$NFAStateID, NFAState>;
     // private prefixStates: NFAState[];
     // private stateID: Counter$ThresholdCounter;
     // private transitionGBClearIndices: number[];

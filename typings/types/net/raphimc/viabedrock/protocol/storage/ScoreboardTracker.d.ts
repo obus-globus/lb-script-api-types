@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { StorableObject } from '../../../../../com/viaversion/viaversion/api/connection/StorableObject.d.ts'
 import type { Pair } from '../../../../../com/viaversion/viaversion/util/Pair.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -5,7 +6,7 @@ import type { ScoreboardEntry } from '../../../../../net/raphimc/viabedrock/api/
 import type { ScoreboardObjective } from '../../../../../net/raphimc/viabedrock/api/model/scoreboard/ScoreboardObjective.d.ts'
 export class ScoreboardTracker extends Object implements StorableObject {
     constructor()
-    // private objectives: { [key: string]: ScoreboardObjective };
+    // private objectives: JavaMap<string, ScoreboardObjective>;
     addObjective(arg0: string, arg1: ScoreboardObjective): void;
     getEntry(arg0: number): Pair<ScoreboardObjective, ScoreboardEntry>;
     getEntryForPlayer(arg0: number): Pair<ScoreboardObjective, ScoreboardEntry>;

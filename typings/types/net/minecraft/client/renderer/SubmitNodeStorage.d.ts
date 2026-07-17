@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { PoseStack } from '../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
@@ -38,9 +39,9 @@ import type { VoxelShape } from '../../../../net/minecraft/world/phys/shapes/Vox
 import type { Quaternionf } from '../../../../org/joml/Quaternionf.d.ts'
 export class SubmitNodeStorage extends Object implements SubmitNodeCollector {
     constructor()
-    readonly submitsPerOrder: { [key: string]: any };
+    readonly submitsPerOrder: JavaMap<any, any>;
     drainPhases(consumer: (param0: FeatureRenderPhase<any>) => void): void;
-    getSubmitsPerOrder(): { [key: string]: any };
+    getSubmitsPerOrder(): JavaMap<any, any>;
     order(order: number): SubmitNodeCollection;
     submitBlockModel(arg0: PoseStack, arg1: (param0: Object) => Object, arg2: boolean, arg3: (Object | null)[], arg4: Mesh, arg5: number[], arg6: number, arg7: number, arg8: number): void;
     submitBlockModel(poseStack: PoseStack, renderType: RenderType, modelParts: BlockStateModelPart[], tintLayers: number[], lightCoords: number, overlayCoords: number, outlineColor: number): void;

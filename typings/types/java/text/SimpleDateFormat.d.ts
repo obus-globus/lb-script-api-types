@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { ObjectInputStream } from '../../java/io/ObjectInputStream.d.ts'
 import type { StringBuffer } from '../../java/lang/StringBuffer.d.ts'
 import type { AttributedCharacterIterator } from '../../java/text/AttributedCharacterIterator.d.ts'
@@ -83,8 +84,8 @@ export class SimpleDateFormat extends DateFormat {
     formatToCharacterIterator(arg0: Object): AttributedCharacterIterator;
     get2DigitYearStart(): Date;
     getDateFormatSymbols(): DateFormatSymbols;
-    // private getDisplayContextNamesMap(arg0: number, arg1: Locale): { [key: string]: number };
-    // private getDisplayNamesMap(arg0: number, arg1: Locale): { [key: string]: number };
+    // private getDisplayContextNamesMap(arg0: number, arg1: Locale): JavaMap<string, number>;
+    // private getDisplayNamesMap(arg0: number, arg1: Locale): JavaMap<string, number>;
     hashCode(): number;
     // private initialize(arg0: Locale): void;
     // private initializeCalendar(arg0: Locale): void;
@@ -92,7 +93,7 @@ export class SimpleDateFormat extends DateFormat {
     // private isDigit(arg0: string): boolean;
     // private matchDSTString(arg0: string, arg1: number, arg2: number, arg3: number, arg4: string[][]): boolean;
     // private matchString(arg0: string, arg1: number, arg2: number, arg3: string[], arg4: CalendarBuilder): number;
-    // private matchString(arg0: string, arg1: number, arg2: number, arg3: { [key: string]: number }, arg4: CalendarBuilder): number;
+    // private matchString(arg0: string, arg1: number, arg2: number, arg3: JavaMap<string, number>, arg4: CalendarBuilder): number;
     // private matchZoneString(arg0: string, arg1: number, arg2: string[]): number;
     parse(arg0: string): Date;
     parse(arg0: string, arg1: ParsePosition): Date;

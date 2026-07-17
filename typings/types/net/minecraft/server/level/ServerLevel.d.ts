@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Pair } from '../../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { Writer } from '../../../../java/io/Writer.d.ts'
@@ -140,7 +141,7 @@ export class ServerLevel extends Level implements ServerWorldExtended, ServerLev
     static isInSpawnableBounds(parampos: BlockPos): boolean;
     constructor(server: MinecraftServer, executor: Executor, levelStorage: LevelStorageSource$LevelStorageAccess, levelData: ServerLevelData, dimension: ResourceKey<Level>, levelStem: LevelStem, isDebug: boolean, biomeZoomSeed: number, customSpawners: CustomSpawner[], tickTime: boolean)
     // private apiLookupAccessesWithoutCleanup: number;
-    // private apiLookupCaches: Map<Object | null, Object | null>;
+    // private apiLookupCaches: JavaMap<Object | null, Object | null>;
     // private blockEvents: BlockEventData[];
     // private blockEventsToReschedule: BlockEventData[];
     readonly blockTicks: LevelTicks<Block>;
@@ -148,7 +149,7 @@ export class ServerLevel extends Level implements ServerWorldExtended, ServerLev
     // private customSpawners: CustomSpawner[];
     // private debugSynchronizers: LevelDebugSynchronizers;
     readonly dragonFight: EnderDragonFight;
-    // private dragonParts: { [key: string]: any };
+    // private dragonParts: JavaMap<any, any>;
     // private emptyTime: number;
     readonly entityManager: PersistentEntitySectionManager<Entity>;
     // private entityTickList: EntityTickList;
@@ -210,7 +211,7 @@ export class ServerLevel extends Level implements ServerWorldExtended, ServerLev
     explode(source: Entity, damageSource: DamageSource, damageCalculator: ExplosionDamageCalculator, boomPos: Vec3, r: number, fire: boolean, blockInteraction: Level$ExplosionInteraction): void;
     fabric_clearDeferredSyncChanges(): void;
     fabric_computeInitialSyncChanges(arg0: ServerPlayer, arg1: (param0: AttachmentChange) => void): void;
-    fabric_getAttachments(): Map<AttachmentType<Object>, Object | null>;
+    fabric_getAttachments(): JavaMap<AttachmentType<Object>, Object | null>;
     fabric_getRegistryAccess(): RegistryAccess;
     fabric_getSyncTargetInfo(): AttachmentTargetInfo<Object>;
     fabric_hasPersistentAttachments(): boolean;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { RetentionPolicy } from '../../../java/lang/annotation/RetentionPolicy.d.ts'
 import type { Method } from '../../../java/lang/reflect/Method.d.ts'
@@ -8,14 +9,14 @@ export class AnnotationType extends Object {
     static invocationHandlerReturnType(paramarg0: Class<Object>): Class<Object>;
     private constructor(arg0: Class<Annotation>)
     readonly inherited: boolean;
-    // private memberDefaults: { [key: string]: Object };
-    // private memberTypes: { [key: string]: Class<Object> };
-    // private members: { [key: string]: Method };
+    // private memberDefaults: JavaMap<string, Object>;
+    // private memberTypes: JavaMap<string, Class<Object>>;
+    // private members: JavaMap<string, Method>;
     // private retention: RetentionPolicy;
     isInherited(): boolean;
-    memberDefaults(): { [key: string]: Object };
-    memberTypes(): { [key: string]: Class<Object> };
-    members(): { [key: string]: Method };
+    memberDefaults(): JavaMap<string, Object>;
+    memberTypes(): JavaMap<string, Class<Object>>;
+    members(): JavaMap<string, Method>;
     retention(): RetentionPolicy;
     toString(): string;
 }

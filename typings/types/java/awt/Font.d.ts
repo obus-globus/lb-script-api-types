@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { FontRenderContext } from '../../java/awt/font/FontRenderContext.d.ts'
 import type { GlyphVector } from '../../java/awt/font/GlyphVector.d.ts'
 import type { LineMetrics } from '../../java/awt/font/LineMetrics.d.ts'
@@ -44,13 +45,13 @@ export class Font extends Object implements Serializable {
     static decode(paramarg0: string): Font;
     static getFont(paramarg0: string): Font;
     static getFont(paramarg0: string, paramarg1: Font): Font;
-    static getFont(paramarg0: Map<AttributedCharacterIterator$Attribute, Object>): Font;
+    static getFont(paramarg0: JavaMap<AttributedCharacterIterator$Attribute, Object>): Font;
     static textRequiresLayout(paramarg0: string[], paramarg1: number, paramarg2: number): boolean;
     constructor(arg0: Font)
     constructor(arg0: string, arg1: number, arg2: number)
-    constructor(arg0: Map<AttributedCharacterIterator$Attribute, Object | null>)
+    constructor(arg0: JavaMap<AttributedCharacterIterator$Attribute, Object | null>)
     // private createdFont: boolean;
-    // private fRequestedAttributes: Map<Object, Object>;
+    // private fRequestedAttributes: JavaMap<Object, Object>;
     // private flmref: SoftReference<FontLineMetrics>;
     // private font2DHandle: Font2DHandle;
     // private fontSerializedDataVersion: number;
@@ -78,10 +79,10 @@ export class Font extends Object implements Serializable {
     deriveFont(arg0: number): Font;
     deriveFont(arg0: number, arg1: AffineTransform): Font;
     deriveFont(arg0: number, arg1: number): Font;
-    deriveFont(arg0: Map<AttributedCharacterIterator$Attribute, Object | null>): Font;
+    deriveFont(arg0: JavaMap<AttributedCharacterIterator$Attribute, Object | null>): Font;
     equals(arg0: Object | null): boolean;
     // private getAttributeValues(): AttributeValues;
-    getAttributes(): Map<TextAttribute, Object | null>;
+    getAttributes(): JavaMap<TextAttribute, Object | null>;
     getAvailableAttributes(): AttributedCharacterIterator$Attribute[];
     getBaselineFor(arg0: string): number;
     getFamily(): string;

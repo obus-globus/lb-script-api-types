@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ViaCommandSender } from '../../../../com/viaversion/viaversion/api/command/ViaCommandSender.d.ts'
 import type { ViaSubCommand } from '../../../../com/viaversion/viaversion/api/command/ViaSubCommand.d.ts'
 import type { ViaVersionCommand } from '../../../../com/viaversion/viaversion/api/command/ViaVersionCommand.d.ts'
@@ -5,7 +6,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ViaCommandHandler extends Object implements ViaVersionCommand {
     constructor()
     constructor(arg0: boolean)
-    // private commandMap: { [key: string]: ViaSubCommand };
+    // private commandMap: JavaMap<string, ViaSubCommand>;
     // private calculateAllowedCommands(arg0: ViaCommandSender): ViaSubCommand[];
     getSubCommand(arg0: string): ViaSubCommand;
     // private hasPermission(arg0: ViaCommandSender, arg1: string): boolean;

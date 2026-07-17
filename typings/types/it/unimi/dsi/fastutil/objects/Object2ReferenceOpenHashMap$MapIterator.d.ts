@@ -1,6 +1,7 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class Object2ReferenceOpenHashMap$MapIterator<ConsumerType extends unknown> extends Object {
-    private constructor(null_: Map<Object, Object>)
+    private constructor(null_: JavaMap<Object, Object>)
     // private c: number;
     // private last: number;
     // private mustReturnNullKey: boolean;

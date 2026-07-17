@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { SodiumModelDataContainer } from '../../../../../../../net/caffeinemc/mods/sodium/client/services/SodiumModelDataContainer.d.ts'
 import type { SodiumAuxiliaryLightManager } from '../../../../../../../net/caffeinemc/mods/sodium/client/world/SodiumAuxiliaryLightManager.d.ts'
@@ -16,8 +17,8 @@ export class ClonedChunkSection extends Object {
     readonly auxLightManager: SodiumAuxiliaryLightManager;
     readonly biomeData: PalettedContainerRO<Holder<Biome>>;
     readonly blockData: PalettedContainerRO<BlockState>;
-    readonly blockEntityMap: { [key: string]: any };
-    readonly blockEntityRenderDataMap: { [key: string]: any };
+    readonly blockEntityMap: JavaMap<any, any>;
+    readonly blockEntityRenderDataMap: JavaMap<any, any>;
     readonly lastUsedTimestamp: number;
     // private lightDataArrays: DataLayer[];
     readonly modelMap: SodiumModelDataContainer;
@@ -25,8 +26,8 @@ export class ClonedChunkSection extends Object {
     getAuxLightManager(): SodiumAuxiliaryLightManager;
     getBiomeData(): PalettedContainerRO<Holder<Biome>>;
     getBlockData(): PalettedContainerRO<BlockState>;
-    getBlockEntityMap(): { [key: string]: any };
-    getBlockEntityRenderDataMap(): { [key: string]: any };
+    getBlockEntityMap(): JavaMap<any, any>;
+    getBlockEntityRenderDataMap(): JavaMap<any, any>;
     getLastUsedTimestamp(): number;
     getLightArray(arg0: LightLayer): DataLayer;
     getModelMap(): SodiumModelDataContainer;

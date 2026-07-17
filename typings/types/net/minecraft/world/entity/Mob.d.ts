@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { BiConsumer } from '../../../../java/util/function/BiConsumer.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
@@ -191,7 +192,7 @@ export abstract class Mob extends LivingEntity implements NavigatingEntity, Equi
     readonly lootTableSeed: number;
     moveControl: MoveControl<Mob>;
     navigation: PathNavigation;
-    // private pathfindingMalus: Map<PathType, number>;
+    // private pathfindingMalus: JavaMap<PathType, number>;
     readonly persistenceRequired: boolean;
     // private registeredNavigation: PathNavigation;
     readonly sensing: Sensing;
@@ -246,10 +247,10 @@ export abstract class Mob extends LivingEntity implements NavigatingEntity, Equi
     enchantSpawnedArmor(level: ServerLevelAccessor, random: RandomSource, slot: EquipmentSlot, difficulty: DifficultyInstance): void;
     // private enchantSpawnedEquipment(level: ServerLevelAccessor, slot: EquipmentSlot, random: RandomSource, chance: number, difficulty: DifficultyInstance): void;
     enchantSpawnedWeapon(level: ServerLevelAccessor, random: RandomSource, difficulty: DifficultyInstance): void;
-    equip(lootTable: ResourceKey<LootTable>, lootParams: LootParams, optionalLootTableSeed: number, dropChances: Map<EquipmentSlot, number>): void;
-    equip(lootTable: ResourceKey<LootTable>, lootParams: LootParams, dropChances: Map<EquipmentSlot, number>): void;
+    equip(lootTable: ResourceKey<LootTable>, lootParams: LootParams, optionalLootTableSeed: number, dropChances: JavaMap<EquipmentSlot, number>): void;
+    equip(lootTable: ResourceKey<LootTable>, lootParams: LootParams, dropChances: JavaMap<EquipmentSlot, number>): void;
     equip(equipment: EquipmentTable, lootParams: LootParams): void;
-    equip(lootTable: ResourceKey<LootTable>, dropChances: Map<EquipmentSlot, number>): void;
+    equip(lootTable: ResourceKey<LootTable>, dropChances: JavaMap<EquipmentSlot, number>): void;
     equip(equipment: EquipmentTable): void;
     equipItemIfPossible(level: ServerLevel, itemStack: ItemStack): ItemStack;
     finalizeSpawn(level: ServerLevelAccessor, difficulty: DifficultyInstance, spawnReason: EntitySpawnReason, groupData: SpawnGroupData): SpawnGroupData;

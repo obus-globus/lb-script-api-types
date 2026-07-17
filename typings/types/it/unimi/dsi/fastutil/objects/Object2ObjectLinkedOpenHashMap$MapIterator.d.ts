@@ -1,7 +1,8 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object2ObjectMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Object2ObjectMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class Object2ObjectLinkedOpenHashMap$MapIterator<ConsumerType extends unknown> extends Object {
-    constructor(null_: Map<Object, Object>)
+    constructor(null_: JavaMap<Object, Object>)
     // private curr: number;
     // private index: number;
     // private next: number;

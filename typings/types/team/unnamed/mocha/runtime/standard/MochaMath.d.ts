@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ObjectProperty } from '../../../../../team/unnamed/mocha/runtime/value/ObjectProperty.d.ts'
 import type { ObjectValue } from '../../../../../team/unnamed/mocha/runtime/value/ObjectValue.d.ts'
@@ -25,8 +26,8 @@ export class MochaMath extends Object implements ObjectValue {
     static sin(paramarg0: number): number;
     static trunc(paramarg0: number): number;
     constructor()
-    // private entries: { [key: string]: ObjectProperty };
-    entries(): { [key: string]: ObjectProperty };
+    // private entries: JavaMap<string, ObjectProperty>;
+    entries(): JavaMap<string, ObjectProperty>;
     get(arg0: string): Value;
     getProperty(arg0: string): ObjectProperty;
     set(arg0: string, arg1: Value): boolean;

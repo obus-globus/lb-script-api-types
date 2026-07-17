@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { ICrossCollisionBlock } from '../../../../../com/viaversion/viafabricplus/injection/access/block/shape/ICrossCollisionBlock.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
@@ -35,7 +36,7 @@ export class IronBarsBlock extends CrossCollisionBlock implements ICrossCollisio
     static INDESTRUCTIBLE: number;
     static INSTANT: number;
     static NORTH: BooleanProperty;
-    static PROPERTY_BY_DIRECTION: Map<Direction, BooleanProperty>;
+    static PROPERTY_BY_DIRECTION: JavaMap<Direction, BooleanProperty>;
     static SOUTH: BooleanProperty;
     static UPDATE_ALL: number;
     static UPDATE_ALL_IMMEDIATE: number;

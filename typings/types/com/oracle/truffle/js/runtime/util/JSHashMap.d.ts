@@ -1,10 +1,11 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { JSHashMap$Cursor } from '../../../../../../com/oracle/truffle/js/runtime/util/JSHashMap$Cursor.d.ts'
 import type { JSHashMap$Node } from '../../../../../../com/oracle/truffle/js/runtime/util/JSHashMap$Node.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSHashMap extends Object {
     constructor()
     // private head: JSHashMap$Node;
-    // private map: Map<Object, JSHashMap$Node>;
+    // private map: JavaMap<Object, JSHashMap$Node>;
     // private tail: JSHashMap$Node;
     clear(): void;
     copy(): JSHashMap;

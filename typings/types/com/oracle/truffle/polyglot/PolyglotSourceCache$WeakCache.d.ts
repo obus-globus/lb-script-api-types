@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { CallTarget } from '../../../../com/oracle/truffle/api/CallTarget.d.ts'
 import type { Source } from '../../../../com/oracle/truffle/api/source/Source.d.ts'
 import type { PolyglotImpl } from '../../../../com/oracle/truffle/polyglot/PolyglotImpl.d.ts'
@@ -14,7 +15,7 @@ export class PolyglotSourceCache$WeakCache extends PolyglotSourceCache$Cache {
     constructor(null_: PolyglotSourceCache, deadSources: ReferenceQueue<Source>)
     // private cacheRef: WeakReference<PolyglotSourceCache$WeakCache>;
     // private deadSources: ReferenceQueue<Source>;
-    // private sourceCache: Map<PolyglotSourceCache$WeakSourceKey, PolyglotSourceCache$WeakCacheValue>;
+    // private sourceCache: JavaMap<PolyglotSourceCache$WeakSourceKey, PolyglotSourceCache$WeakCacheValue>;
     isEmpty(): boolean;
     listSources(polyglot: PolyglotImpl, sources: Object[]): void;
     lookup(origin: PolyglotSourceCache$ParseOrigin, context: PolyglotLanguageContext, source: Source, argumentNames: string[], parse: boolean): CallTarget;

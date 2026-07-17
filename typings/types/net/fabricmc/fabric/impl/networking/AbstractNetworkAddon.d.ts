@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { AtomicBoolean } from '../../../../../java/util/concurrent/atomic/AtomicBoolean.d.ts'
 import type { ReadWriteLock } from '../../../../../java/util/concurrent/locks/ReadWriteLock.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -7,7 +8,7 @@ import type { Logger } from '../../../../../org/slf4j/Logger.d.ts'
 export abstract class AbstractNetworkAddon<H extends unknown> extends Object {
     constructor(arg0: GlobalReceiverRegistry<H>, arg1: string)
     // private disconnected: AtomicBoolean;
-    // private handlers: Map<Identifier, H>;
+    // private handlers: JavaMap<Identifier, H>;
     // private lock: ReadWriteLock;
     // private logger: Logger;
     // private receiver: GlobalReceiverRegistry<H>;
@@ -23,6 +24,6 @@ export abstract class AbstractNetworkAddon<H extends unknown> extends Object {
     isReservedChannel(arg0: Identifier): boolean;
     lateInit(): void;
     registerChannel(arg0: Identifier, arg1: H): boolean;
-    registerChannels(arg0: Map<Identifier, H>): void;
+    registerChannels(arg0: JavaMap<Identifier, H>): void;
     unregisterChannel(arg0: Identifier): H;
 }

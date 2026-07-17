@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { BatchTensorList } from '../../../../../ai/djl/modality/nlp/generate/BatchTensorList.d.ts'
 import type { NDArray } from '../../../../../ai/djl/ndarray/NDArray.d.ts'
 import type { NDManager } from '../../../../../ai/djl/ndarray/NDManager.d.ts'
@@ -7,12 +8,12 @@ export class SeqBatcher extends Object {
     // private batchSize: number;
     // private batchUid: NDArray;
     data: BatchTensorList;
-    // private exitIndexEndPosition: { [key: number]: number };
+    // private exitIndexEndPosition: JavaMap<number, number>;
     // private manager: NDManager;
     // private offSets: NDArray;
     // private seqLength: number;
     addBatch(arg0: SeqBatcher): void;
-    collectAndTrim(): { [key: number]: NDArray };
+    collectAndTrim(): JavaMap<number, NDArray>;
     exitCriteria(arg0: NDArray, arg1: number, arg2: number): void;
     getData(): BatchTensorList;
     // private merge(arg0: SeqBatcher, arg1: SeqBatcher, arg2: number): void;

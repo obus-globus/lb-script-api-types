@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { FriendlyByteBuf } from '../../../net/minecraft/network/FriendlyByteBuf.d.ts'
 import type { Identifier } from '../../../net/minecraft/resources/Identifier.d.ts'
@@ -5,8 +6,8 @@ import type { TagLoader$LoadResult } from '../../../net/minecraft/tags/TagLoader
 export class TagNetworkSerialization$NetworkPayload extends Object {
     static EMPTY: TagNetworkSerialization$NetworkPayload;
     static read(parambuf: FriendlyByteBuf): TagNetworkSerialization$NetworkPayload;
-    constructor(tags: Map<Identifier, (Object | null)[]>)
-    // private tags: Map<Identifier, (Object | null)[]>;
+    constructor(tags: JavaMap<Identifier, (Object | null)[]>)
+    // private tags: JavaMap<Identifier, (Object | null)[]>;
     isEmpty(): boolean;
     resolve<T extends unknown>(registry: T[]): TagLoader$LoadResult<T>;
     size(): number;

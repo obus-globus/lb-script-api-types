@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Runnable } from '../../../../../../../java/lang/Runnable.d.ts'
 import type { Optional } from '../../../../../../../java/util/Optional.d.ts'
 import type { BiConsumer } from '../../../../../../../java/util/function/BiConsumer.d.ts'
@@ -16,9 +17,9 @@ import type { PoiSection$Packed } from '../../../../../../../net/minecraft/world
 import type { PoiType } from '../../../../../../../net/minecraft/world/entity/ai/village/poi/PoiType.d.ts'
 export class PoiSection extends Object implements PointOfInterestSetExtended {
     constructor(setDirty: () => void)
-    // private byType: Map<Holder<PoiType>, PoiRecord[]>;
+    // private byType: JavaMap<Holder<PoiType>, PoiRecord[]>;
     // private isValid: boolean;
-    // private records: { [key: string]: any };
+    // private records: JavaMap<any, any>;
     // private setDirty: () => void;
     add(blockPos: BlockPos, type: Holder<PoiType>): PoiRecord;
     // private add(record: PoiRecord): boolean;

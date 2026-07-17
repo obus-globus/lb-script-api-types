@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { StackTraceElement } from '../../../../../../java/lang/StackTraceElement.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../../java/lang/Throwable.d.ts'
@@ -35,7 +36,7 @@ export class Log4jLogEvent$Builder extends Object implements Builder<LogEvent> {
     // private initTimeFields(): void;
     isValid(): boolean;
     setContextData(contextData: StringMap): Log4jLogEvent$Builder;
-    setContextMap(contextMap: { [key: string]: string }): Log4jLogEvent$Builder;
+    setContextMap(contextMap: JavaMap<string, string>): Log4jLogEvent$Builder;
     setContextStack(contextStack: (Object | null)[]): Log4jLogEvent$Builder;
     setEndOfBatch(endOfBatch: boolean): Log4jLogEvent$Builder;
     setIncludeLocation(includeLocation: boolean): Log4jLogEvent$Builder;

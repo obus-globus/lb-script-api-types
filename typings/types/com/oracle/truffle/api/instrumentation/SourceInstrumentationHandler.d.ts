@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { EventBinding$Source } from '../../../../../com/oracle/truffle/api/instrumentation/EventBinding$Source.d.ts'
 import type { InstrumentationHandler$AbstractInstrumenter } from '../../../../../com/oracle/truffle/api/instrumentation/InstrumentationHandler$AbstractInstrumenter.d.ts'
 import type { SourceInstrumentationHandler$SourcesNotificationQueue } from '../../../../../com/oracle/truffle/api/instrumentation/SourceInstrumentationHandler$SourcesNotificationQueue.d.ts'
@@ -12,14 +13,14 @@ export class SourceInstrumentationHandler extends Object {
     // private bindingsLock: ReentrantReadWriteLock;
     // private notificationConsumer: (param0: EventBinding$Source<Object>[], param1: Source) => void;
     // private notifications: SourceInstrumentationHandler$SourcesNotificationQueue;
-    // private sources: Map<Source, void>;
+    // private sources: JavaMap<Source, void>;
     // private sourcesInitialized: AtomicBoolean;
     // private sourcesList: Source[];
     // private addAllSourcesNotification(binding: EventBinding$Source<Object>): SourceInstrumentationHandler$SourcesNotificationQueue;
     addBinding(binding: EventBinding$Source<Object>, notify: boolean): SourceInstrumentationHandler$SourcesNotificationQueue;
     // private addInitializeSourcesNotification(): SourceInstrumentationHandler$SourcesNotificationQueue;
-    addNewSources(newSources: Map<Source, void>, notify: boolean): SourceInstrumentationHandler$SourcesNotificationQueue;
-    // private addNotification(collectedSources: Map<Source, void>, bindingsToNotify: EventBinding$Source<Object>[]): SourceInstrumentationHandler$SourcesNotificationQueue;
+    addNewSources(newSources: JavaMap<Source, void>, notify: boolean): SourceInstrumentationHandler$SourcesNotificationQueue;
+    // private addNotification(collectedSources: JavaMap<Source, void>, bindingsToNotify: EventBinding$Source<Object>[]): SourceInstrumentationHandler$SourcesNotificationQueue;
     clearAll(): void;
     // private clearAllInternal(): void;
     clearForDisposedBinding(disposedBinding: EventBinding$Source<Object>): void;

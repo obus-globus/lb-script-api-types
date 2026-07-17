@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { EnvType } from '../../../../../net/fabricmc/api/EnvType.d.ts'
 import type { Version } from '../../../../../net/fabricmc/loader/api/Version.d.ts'
@@ -21,7 +22,7 @@ export interface LoaderModMetadata extends Object, LoaderModMetadata_2{
     getEnvironment(): ModEnvironment;
     getId(): string;
     getJars(): NestedJarEntry[];
-    getLanguageAdapterDefinitions(): { [key: string]: string };
+    getLanguageAdapterDefinitions(): JavaMap<string, string>;
     getMixinConfigs(arg0: EnvType): string[];
     getName(): string;
     getOldInitializers(): string[];

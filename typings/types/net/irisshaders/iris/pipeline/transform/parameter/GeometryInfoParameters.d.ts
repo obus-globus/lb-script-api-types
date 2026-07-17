@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { JobParameters } from '../../../../../../io/github/douira/glsl_transformer/ast/transform/JobParameters.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { TextureType } from '../../../../../../net/irisshaders/iris/gl/texture/TextureType.d.ts'
@@ -7,7 +8,7 @@ import type { Parameters } from '../../../../../../net/irisshaders/iris/pipeline
 import type { TextureStage } from '../../../../../../net/irisshaders/iris/shaderpack/texture/TextureStage.d.ts'
 export abstract class GeometryInfoParameters extends Parameters {
     static EMPTY: JobParameters;
-    constructor(arg0: Patch, arg1: Map<Tri<string, TextureType, TextureStage>, string>, arg2: boolean, arg3: boolean)
+    constructor(arg0: Patch, arg1: JavaMap<Tri<string, TextureType, TextureStage>, string>, arg2: boolean, arg3: boolean)
     hasGeometry: boolean;
     hasTesselation: boolean;
     equals(arg0: Object | null): boolean;

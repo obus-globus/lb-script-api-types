@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Job } from '../../../../../../kotlinx/coroutines/Job.d.ts'
 import type { ResourceTask } from '../../../../../../net/ccbluex/liquidbounce/integration/task/type/ResourceTask.d.ts'
@@ -14,7 +15,7 @@ export class Task extends Object {
     readonly name: string;
     progress: number;
     startTime: number;
-    readonly subTasks: { [key: string]: Task };
+    readonly subTasks: JavaMap<string, Task>;
     /**
      * Checks if all subtasks are completed
      *

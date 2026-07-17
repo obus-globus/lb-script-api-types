@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { Tagged$Companion } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
 import type { EventHook } from '../../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
@@ -16,7 +17,7 @@ export class CustomAntiBotMode extends AntiBotMode {
     // private crittedSet: (Object | null)[];
     // private customConditions: CustomAntiBotMode$CustomConditions[];
     // private /*not mapped: */ getCustomConditions(): CustomAntiBotMode$CustomConditions[];
-    // private flyingSet: { [key: string]: any };
+    // private flyingSet: JavaMap<any, any>;
     // private hitSet: (Object | null)[];
     // private notAlwaysInRadiusSet: (Object | null)[];
     // private packetHandler: EventHook<PacketEvent>;

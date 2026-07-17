@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { FileRelation } from '../../../../../net/minecraft/util/filefix/access/FileRelation.d.ts'
@@ -10,7 +11,7 @@ import type { RegexMove } from '../../../../../net/minecraft/util/filefix/operat
 export class FileFixOperations extends Object {
     static applyInFolders(paramapplicableFolders: (param0: Path) => Path[], paramoperations: FileFixOperation[]): ApplyInFolders;
     static delete(paramtarget: string): DeleteFileOrEmptyDirectory;
-    static groupMove(paramdata: { [key: string]: string }, parammove: Move[]): GroupMove;
+    static groupMove(paramdata: JavaMap<string, string>, parammove: Move[]): GroupMove;
     static move(paramfrom: string, paramto: string): Move;
     static moveRegex(paramfilePattern: string, paramreplacePattern: string): RegexMove;
     static moveSimple(paramfile: string): Move;

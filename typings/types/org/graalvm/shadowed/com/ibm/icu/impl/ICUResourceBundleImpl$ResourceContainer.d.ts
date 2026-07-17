@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { ClassLoader } from '../../../../../../../java/lang/ClassLoader.d.ts'
 import type { Module } from '../../../../../../../java/lang/Module.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
@@ -68,8 +69,8 @@ export abstract class ICUResourceBundleImpl$ResourceContainer extends ICUResourc
     constructor(wholeBundle: ICUResourceBundle$WholeBundle)
     constructor(container: ICUResourceBundleImpl, key: string, resource: number)
     // private value: ICUResourceBundleReader$Container;
-    createBundleObject(index: number, resKey: string, aliasesVisited: { [key: string]: string }, requested: UResourceBundle): UResourceBundle;
-    createBundleObject(_key: string, _resource: number, aliasesVisited: { [key: string]: string }, requested: UResourceBundle): ICUResourceBundle;
+    createBundleObject(index: number, resKey: string, aliasesVisited: JavaMap<string, string>, requested: UResourceBundle): UResourceBundle;
+    createBundleObject(_key: string, _resource: number, aliasesVisited: JavaMap<string, string>, requested: UResourceBundle): ICUResourceBundle;
     getContainerResource(index: number): number;
     getSize(): number;
     getString(): string;

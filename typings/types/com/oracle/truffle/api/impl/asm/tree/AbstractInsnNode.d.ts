@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { MethodVisitor } from '../../../../../../../com/oracle/truffle/api/impl/asm/MethodVisitor.d.ts'
 import type { LabelNode } from '../../../../../../../com/oracle/truffle/api/impl/asm/tree/LabelNode.d.ts'
 import type { TypeAnnotationNode } from '../../../../../../../com/oracle/truffle/api/impl/asm/tree/TypeAnnotationNode.d.ts'
@@ -28,7 +29,7 @@ export abstract class AbstractInsnNode extends Object {
     visibleTypeAnnotations: TypeAnnotationNode[];
     accept(methodVisitor: MethodVisitor): void;
     acceptAnnotations(methodVisitor: MethodVisitor): void;
-    clone(clonedLabels: Map<LabelNode, LabelNode>): AbstractInsnNode;
+    clone(clonedLabels: JavaMap<LabelNode, LabelNode>): AbstractInsnNode;
     cloneAnnotations(insnNode: AbstractInsnNode): AbstractInsnNode;
     getNext(): AbstractInsnNode;
     getOpcode(): number;

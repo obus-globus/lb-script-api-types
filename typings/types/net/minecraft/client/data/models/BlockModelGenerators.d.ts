@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Transformation } from '../../../../../com/mojang/math/Transformation.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { BiConsumer } from '../../../../../java/util/function/BiConsumer.d.ts'
@@ -92,7 +93,7 @@ export class BlockModelGenerators extends Object {
     static or(...paramterms: ConditionBuilder[]): (param0: StateDefinition<Object, any>) => (param0: Object | null) => boolean;
     static plainModel(parammodel: Identifier): Variant;
     static plainVariant(parammodel: Identifier): MultiVariant;
-    static selectMultifaceProperties<T extends Property<any>>(paramholder: StateHolder<Object, Object>, paramconverter: (param0: Direction) => T): Map<T, (param0: Variant) => Variant>;
+    static selectMultifaceProperties<T extends Property<any>>(paramholder: StateHolder<Object, Object>, paramconverter: (param0: Direction) => T): JavaMap<T, (param0: Variant) => Variant>;
     static shelfCondition(paramdirection: Direction, paramisPowered: boolean, paramsideChainPart: SideChainPart): (param0: StateDefinition<Object, any>) => (param0: Object | null) => boolean;
     static variant(paramvariant: Variant): MultiVariant;
     static variants(...paramvariant: Variant[]): MultiVariant;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../../JavaMap.d.ts'
 import type { JsonObject } from '../../../../../../../../../com/google/gson/JsonObject.d.ts'
 import type { Future } from '../../../../../../../../../java/util/concurrent/Future.d.ts'
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
@@ -21,7 +22,7 @@ export class ActiveServerList extends Object implements EventListener {
     readonly debugDisplayName: Component;
     // private lanDetector: LanServerDetection$LanServerDetector | null;
     // private lanServerList: LanServerDetection$LanServerList;
-    // private lanServers: { [key: string]: ServerData };
+    // private lanServers: JavaMap<string, ServerData>;
     // private lastLanPingTime: number;
     // private pingTasks: Future<Object>[];
     readonly running: boolean;

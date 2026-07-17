@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Gson } from '../../../../../com/google/gson/Gson.d.ts'
 import type { JsonElement } from '../../../../../com/google/gson/JsonElement.d.ts'
 import type { FullHttpResponse } from '../../../../../io/netty/handler/codec/http/FullHttpResponse.d.ts'
@@ -15,9 +16,9 @@ export class RoutingContext extends Object {
     readonly call: ApplicationCall;
     readonly headers: Map$Entry<string, string>[];
     readonly method: HttpMethod;
-    readonly parameters: { [key: string]: string };
+    readonly parameters: JavaMap<string, string>;
     readonly path: string;
-    readonly queryParameters: { [key: string]: string };
+    readonly queryParameters: JavaMap<string, string>;
     readonly remainingPath: string;
     readonly route: Node;
     readonly uri: string;

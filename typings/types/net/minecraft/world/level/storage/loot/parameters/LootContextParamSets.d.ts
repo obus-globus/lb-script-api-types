@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
@@ -26,7 +27,7 @@ export class LootContextParamSets extends Object {
     static GIFT: ContextKeySet;
     static HIT_BLOCK: ContextKeySet;
     static PIGLIN_BARTER: ContextKeySet;
-    static REGISTRY: Map<Identifier, ContextKeySet>;
+    static REGISTRY: JavaMap<Identifier, ContextKeySet>;
     static SELECTOR: ContextKeySet;
     static SHEARING: ContextKeySet;
     static VAULT: ContextKeySet;

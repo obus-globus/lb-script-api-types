@@ -1,7 +1,8 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { HashMap$Node } from '../../java/util/HashMap$Node.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export abstract class HashMap$HashIterator extends Object {
-    constructor(null_: Map<Object, Object>)
+    constructor(null_: JavaMap<Object, Object>)
     // private current: HashMap$Node<K, V>;
     // private expectedModCount: number;
     // private index: number;

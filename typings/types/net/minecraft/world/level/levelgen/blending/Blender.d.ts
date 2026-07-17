@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Direction8 } from '../../../../../../net/minecraft/core/Direction8.d.ts'
 import type { Holder } from '../../../../../../net/minecraft/core/Holder.d.ts'
@@ -16,11 +17,11 @@ export class Blender extends Object {
     static addAroundOldChunksCarvingMaskFilter(paramregion: WorldGenLevel, paramchunk: ProtoChunk): void;
     static empty(): Blender;
     static generateBorderTicks(paramregion: WorldGenRegion, paramchunk: ChunkAccess): void;
-    static makeOldChunkDistanceGetter(paramcenterBlendingData: BlendingData, paramoldSidesBlendingData: Map<Direction8, BlendingData>): Blender$DistanceGetter;
+    static makeOldChunkDistanceGetter(paramcenterBlendingData: BlendingData, paramoldSidesBlendingData: JavaMap<Direction8, BlendingData>): Blender$DistanceGetter;
     static of(paramregion: WorldGenRegion): Blender;
-    private constructor(heightAndBiomeBlendingData: { [key: string]: any }, densityBlendingData: { [key: string]: any })
-    // private densityBlendingData: { [key: string]: any };
-    // private heightAndBiomeBlendingData: { [key: string]: any };
+    private constructor(heightAndBiomeBlendingData: JavaMap<any, any>, densityBlendingData: JavaMap<any, any>)
+    // private densityBlendingData: JavaMap<any, any>;
+    // private heightAndBiomeBlendingData: JavaMap<any, any>;
     // private blendBiome(quartX: number, quartY: number, quartZ: number): Holder<Biome>;
     blendDensity(context: DensityFunction$FunctionContext, noiseValue: number): number;
     blendOffsetAndFactor(blockX: number, blockZ: number): Blender$BlendingOutput;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { DataFixer } from '../../../com/mojang/datafixers/DataFixer.d.ts'
 import type { Codec } from '../../../com/mojang/serialization/Codec.d.ts'
 import type { Path } from '../../../java/nio/file/Path.d.ts'
@@ -17,14 +18,14 @@ import type { ServerPlayer } from '../../../net/minecraft/server/level/ServerPla
 import type { PlayerList } from '../../../net/minecraft/server/players/PlayerList.d.ts'
 export class PlayerAdvancements extends Object {
     constructor(dataFixer: DataFixer, playerList: PlayerList, manager: ServerAdvancementManager, playerSavePath: Path, player: ServerPlayer)
-    // private activeTriggers: Map<CriterionTrigger<any>, Map<PlayerAdvancements$TriggerInstanceKey, CriterionTriggerInstance>>;
+    // private activeTriggers: JavaMap<CriterionTrigger<any>, JavaMap<PlayerAdvancements$TriggerInstanceKey, CriterionTriggerInstance>>;
     // private codec: Codec<PlayerAdvancements$Data>;
     // private isFirstPacket: boolean;
     // private lastSelectedTab: AdvancementHolder;
     readonly player: ServerPlayer;
     // private playerList: PlayerList;
     // private playerSavePath: Path;
-    // private progress: Map<AdvancementHolder, AdvancementProgress>;
+    // private progress: JavaMap<AdvancementHolder, AdvancementProgress>;
     // private progressChanged: AdvancementHolder[];
     // private rootsToUpdate: AdvancementNode[];
     // private tree: AdvancementTree;
@@ -36,9 +37,9 @@ export class PlayerAdvancements extends Object {
     // private checkForAutomaticTriggers(manager: ServerAdvancementManager): void;
     clearTriggers(): void;
     flushDirty(player: ServerPlayer, showAdvancements: boolean): void;
-    // private getOrCreateTriggerMapForType<T extends CriterionTriggerInstance>(type: CriterionTrigger<T>): Map<PlayerAdvancements$TriggerInstanceKey, T>;
+    // private getOrCreateTriggerMapForType<T extends CriterionTriggerInstance>(type: CriterionTrigger<T>): JavaMap<PlayerAdvancements$TriggerInstanceKey, T>;
     getOrStartProgress(advancement: AdvancementHolder): AdvancementProgress;
-    getTriggerMapForType<T extends CriterionTriggerInstance>(type: CriterionTrigger<T>): Map<PlayerAdvancements$TriggerInstanceKey, T>;
+    getTriggerMapForType<T extends CriterionTriggerInstance>(type: CriterionTrigger<T>): JavaMap<PlayerAdvancements$TriggerInstanceKey, T>;
     // private load(manager: ServerAdvancementManager): void;
     // private markForVisibilityUpdate(advancement: AdvancementHolder): void;
     // private registerListeners(holder: AdvancementHolder): void;

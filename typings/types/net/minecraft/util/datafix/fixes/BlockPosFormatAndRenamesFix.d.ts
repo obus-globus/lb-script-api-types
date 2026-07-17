@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { DSL$TypeReference } from '../../../../../com/mojang/datafixers/DSL$TypeReference.d.ts'
 import type { DataFix } from '../../../../../com/mojang/datafixers/DataFix.d.ts'
 import type { RewriteResult } from '../../../../../com/mojang/datafixers/RewriteResult.d.ts'
@@ -14,8 +15,8 @@ export class BlockPosFormatAndRenamesFix extends DataFix {
     constructor(outputSchema: Schema)
     // private addBlockEntityRules(rules: TypeRewriteRule[]): void;
     // private addEntityRules(rules: TypeRewriteRule[]): void;
-    // private createEntityFixer(type: DSL$TypeReference, entityName: string, fields: { [key: string]: string }): TypeRewriteRule;
-    // private fixFields(typed: Typed<Object>, fields: { [key: string]: string }): Typed<Object>;
+    // private createEntityFixer(type: DSL$TypeReference, entityName: string, fields: JavaMap<string, string>): TypeRewriteRule;
+    // private fixFields(typed: Typed<Object>, fields: JavaMap<string, string>): Typed<Object>;
     // private fixMapSavedData<T extends unknown>(data: Dynamic<T>): Dynamic<T>;
     makeRule(): TypeRewriteRule;
 }

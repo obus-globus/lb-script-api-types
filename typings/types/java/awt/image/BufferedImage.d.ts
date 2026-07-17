@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Graphics } from '../../../java/awt/Graphics.d.ts'
 import type { Graphics2D } from '../../../java/awt/Graphics2D.d.ts'
 import type { Image } from '../../../java/awt/Image.d.ts'
@@ -40,13 +41,13 @@ export class BufferedImage extends Image implements Transparency, WritableRender
     static TYPE_USHORT_565_RGB: number;
     static TYPE_USHORT_GRAY: number;
     static UndefinedProperty: Object;
-    constructor(arg0: ColorModel, arg1: WritableRaster, arg2: boolean, arg3: Map<Object | null, Object | null>)
+    constructor(arg0: ColorModel, arg1: WritableRaster, arg2: boolean, arg3: JavaMap<Object | null, Object | null>)
     constructor(arg0: number, arg1: number, arg2: number)
     constructor(arg0: number, arg1: number, arg2: number, arg3: IndexColorModel)
     readonly colorModel: ColorModel;
     // private imageType: number;
     // private osis: OffScreenImageSource;
-    // private properties: { [key: string]: Object };
+    // private properties: JavaMap<string, Object>;
     readonly raster: WritableRaster;
     addTileObserver(arg0: TileObserver): void;
     coerceData(arg0: boolean): void;

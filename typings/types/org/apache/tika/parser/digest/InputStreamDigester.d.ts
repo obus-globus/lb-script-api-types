@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { File } from '../../../../../java/io/File.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { MessageDigest } from '../../../../../java/security/MessageDigest.d.ts'
@@ -17,6 +18,6 @@ export class InputStreamDigester extends Object implements DigestingParser$Diges
     // private digestFile(arg0: File, arg1: number, arg2: Metadata): void;
     // private digestStream(arg0: InputStream, arg1: Metadata): boolean;
     // private getMetadataKey(): string;
-    getProvider(): { [key: string]: any };
+    getProvider(): JavaMap<any, any>;
     // private newMessageDigest(): MessageDigest;
 }

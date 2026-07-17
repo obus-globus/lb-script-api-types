@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Component } from '../../java/awt/Component.d.ts'
 import type { Graphics } from '../../java/awt/Graphics.d.ts'
 import type { MenuComponent } from '../../java/awt/MenuComponent.d.ts'
@@ -39,12 +40,12 @@ export class JLayeredPane extends JComponent implements Accessible {
     static putLayer(paramarg0: JComponent, paramarg1: number): void;
     static setDefaultLocale(paramarg0: Locale): void;
     constructor()
-    // private componentToLayer: Map<Component, number>;
+    // private componentToLayer: JavaMap<Component, number>;
     // private optimizedDrawingPossible: boolean;
     addImpl(arg0: Component, arg1: Object, arg2: number): void;
     getAccessibleContext(): AccessibleContext;
     getComponentCountInLayer(arg0: number): number;
-    getComponentToLayer(): Map<Component, number>;
+    getComponentToLayer(): JavaMap<Component, number>;
     getComponentsInLayer(arg0: number): Component[];
     getIndexOf(arg0: Component): number;
     getLayer(arg0: Component): number;

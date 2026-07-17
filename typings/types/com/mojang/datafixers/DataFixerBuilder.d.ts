@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { DataFix } from '../../../com/mojang/datafixers/DataFix.d.ts'
 import type { DataFixerBuilder$Result } from '../../../com/mojang/datafixers/DataFixerBuilder$Result.d.ts'
 import type { Schema } from '../../../com/mojang/datafixers/schemas/Schema.d.ts'
@@ -8,7 +9,7 @@ export class DataFixerBuilder extends Object {
     // private dataVersion: number;
     // private fixerVersions: (Object | null)[];
     // private globalList: DataFix[];
-    // private schemas: { [key: string]: any };
+    // private schemas: JavaMap<any, any>;
     addFixer(arg0: DataFix): void;
     addSchema(arg0: Schema): void;
     addSchema(arg0: number, arg1: (param0: number, param1: Schema) => Schema): Schema;

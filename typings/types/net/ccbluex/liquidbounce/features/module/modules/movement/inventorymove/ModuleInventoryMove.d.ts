@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { EventHook } from '../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { KeyboardKeyEvent } from '../../../../../../../../net/ccbluex/liquidbounce/event/events/KeyboardKeyEvent.d.ts'
 import type { MovementInputEvent } from '../../../../../../../../net/ccbluex/liquidbounce/event/events/MovementInputEvent.d.ts'
@@ -26,7 +27,7 @@ export class ModuleInventoryMove extends ClientModule {
     readonly doNotAllowClicking: boolean;
     // private keyHandler: EventHook<KeyboardKeyEvent>;
     // private movementInputHandler: EventHook<MovementInputEvent>;
-    // private movementKeys: { [key: string]: any };
+    // private movementKeys: JavaMap<any, any>;
     // private packetHandler: EventHook<PacketEvent>;
     // private passthroughSneak: boolean;
     // private /*not mapped: */ getPassthroughSneak(): boolean;

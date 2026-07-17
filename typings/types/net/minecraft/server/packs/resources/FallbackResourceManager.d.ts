@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Predicate } from '../../../../../java/util/function/Predicate.d.ts'
 import type { Stream } from '../../../../../java/util/stream/Stream.d.ts'
@@ -22,10 +23,10 @@ export class FallbackResourceManager extends Object implements ResourceManager {
     getNamespaces(): string[];
     getResource(location: Identifier): Optional<Resource>;
     getResourceStack(location: Identifier): Resource[];
-    // private listPackResources(entry: FallbackResourceManager$PackEntry, directory: string, filter: (param0: Identifier) => boolean, foundResources: Map<Identifier, FallbackResourceManager$EntryStack>): void;
+    // private listPackResources(entry: FallbackResourceManager$PackEntry, directory: string, filter: (param0: Identifier) => boolean, foundResources: JavaMap<Identifier, FallbackResourceManager$EntryStack>): void;
     listPacks(): Stream<PackResources>;
-    listResourceStacks(directory: string, filter: (param0: Identifier) => boolean): Map<Identifier, Resource[]>;
-    listResources(directory: string, filter: (param0: Identifier) => boolean): Map<Identifier, Resource>;
+    listResourceStacks(directory: string, filter: (param0: Identifier) => boolean): JavaMap<Identifier, Resource[]>;
+    listResources(directory: string, filter: (param0: Identifier) => boolean): JavaMap<Identifier, Resource>;
     push(pack: PackResources): void;
     push(pack: PackResources, filter: (param0: Identifier) => boolean): void;
     pushFilterOnly(name: string, filter: (param0: Identifier) => boolean): void;

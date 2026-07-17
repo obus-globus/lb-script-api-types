@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Multimap } from '../../../../../../com/google/common/collect/Multimap.d.ts'
 import type { Function } from '../../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -12,7 +13,7 @@ import type { TextureSlots } from '../../../../../../net/minecraft/client/resour
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
 export abstract class MaterialBaker extends Object implements FabricMaterialBaker {
     constructor(missingSprite: TextureAtlasSprite)
-    // private bakedMaterials: Map<Material, Material$Baked>;
+    // private bakedMaterials: JavaMap<Material, Material$Baked>;
     // private bakerFunction: (param0: Material) => Material$Baked;
     // private missingReferences: Multimap<string, string>;
     // private missingSprite: Material$Baked;

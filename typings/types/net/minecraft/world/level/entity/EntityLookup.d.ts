@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { UUID } from '../../../../../java/util/UUID.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { AbortableIterationConsumer } from '../../../../../net/minecraft/util/AbortableIterationConsumer.d.ts'
@@ -6,8 +7,8 @@ import type { EntityAccess } from '../../../../../net/minecraft/world/level/enti
 import type { EntityTypeTest } from '../../../../../net/minecraft/world/level/entity/EntityTypeTest.d.ts'
 export class EntityLookup<T extends EntityAccess> extends Object {
     constructor()
-    // private byId: { [key: string]: any };
-    // private byUuid: Map<UUID, T>;
+    // private byId: JavaMap<any, any>;
+    // private byUuid: JavaMap<UUID, T>;
     add(entity: T): void;
     count(): number;
     getAllEntities(): T[];

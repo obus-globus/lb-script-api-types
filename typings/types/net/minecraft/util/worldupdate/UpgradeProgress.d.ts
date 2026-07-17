@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { AtomicInteger } from '../../../../java/util/concurrent/atomic/AtomicInteger.d.ts'
 import type { AtomicLong } from '../../../../java/util/concurrent/atomic/AtomicLong.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -14,7 +15,7 @@ export class UpgradeProgress extends Object {
     readonly dataFixType: DataFixTypes;
     readonly finished: boolean;
     // private lastLoggedProgressTime: AtomicLong;
-    // private progressMap: { [key: string]: any };
+    // private progressMap: JavaMap<any, any>;
     readonly runningFileFixerStats: UpgradeProgress$FileFixStats;
     readonly skipped: AtomicInteger;
     readonly status: UpgradeProgress$Status;

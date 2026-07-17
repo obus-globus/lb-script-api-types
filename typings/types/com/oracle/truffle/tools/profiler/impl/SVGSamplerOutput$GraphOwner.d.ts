@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { SourceSection } from '../../../../../../com/oracle/truffle/api/source/SourceSection.d.ts'
 import type { CPUSampler$Payload } from '../../../../../../com/oracle/truffle/tools/profiler/CPUSampler$Payload.d.ts'
 import type { CPUSamplerData } from '../../../../../../com/oracle/truffle/tools/profiler/CPUSamplerData.d.ts'
@@ -14,23 +15,23 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { JSONObject } from '../../../../../../org/graalvm/shadowed/org/json/JSONObject.d.ts'
 export class SVGSamplerOutput$GraphOwner extends Object implements SVGSamplerOutput$SVGComponent {
     constructor(output: StringBuilder, data: CPUSamplerData[])
-    // private colorsForKeys: Map<SVGSamplerOutput$GraphColorMap, Map<SVGSamplerOutput$GraphOwner$SampleKey, string>>;
+    // private colorsForKeys: JavaMap<SVGSamplerOutput$GraphColorMap, JavaMap<SVGSamplerOutput$GraphOwner$SampleKey, string>>;
     // private components: SVGSamplerOutput$SVGComponent[];
     // private data: CPUSamplerData[];
     keyCounter: number;
-    keyHash: Map<SVGSamplerOutput$GraphOwner$SampleKey, number>;
-    // private languageColors: Map<SVGSamplerOutput$GraphColorMap, string>;
+    keyHash: JavaMap<SVGSamplerOutput$GraphOwner$SampleKey, number>;
+    // private languageColors: JavaMap<SVGSamplerOutput$GraphColorMap, string>;
     nameCounter: number;
-    nameHash: { [key: string]: number };
+    nameHash: JavaMap<string, number>;
     // private random: Random;
-    // private recursiveChildMap: { [key: number]: Map<SVGSamplerOutput$GraphOwner$SampleKey, JSONObject> };
+    // private recursiveChildMap: JavaMap<number, JavaMap<SVGSamplerOutput$GraphOwner$SampleKey, JSONObject>>;
     sampleData: Object[];
     // private sampleId: number;
     sampleJsonKeys: Object[];
     sampleKeys: SVGSamplerOutput$GraphOwner$SampleKey[];
     sampleNames: Object[];
     sourceCounter: number;
-    sourceHash: { [key: string]: number };
+    sourceHash: JavaMap<string, number>;
     sourceNames: Object[];
     // private svg: SVGSamplerOutput;
     abbreviate(fullText: string, width: number): string;
@@ -42,11 +43,11 @@ export class SVGSamplerOutput$GraphOwner extends Object implements SVGSamplerOut
     // private buildRecursiveData(): void;
     // private buildSampleData(): void;
     // private calculateRecursiveData(sample: JSONObject): void;
-    // private childrenByKeyForSample(sample: JSONObject): Map<SVGSamplerOutput$GraphOwner$SampleKey, JSONObject>;
+    // private childrenByKeyForSample(sample: JSONObject): JavaMap<SVGSamplerOutput$GraphOwner$SampleKey, JSONObject>;
     // private colorChangeFunction(): string;
     colorForKey(keyId: number, type: SVGSamplerOutput$GraphColorMap): string;
     colorMapForLanguage(sample: ProfilerNode<CPUSampler$Payload>): SVGSamplerOutput$GraphColorMap;
-    colorsForType(type: SVGSamplerOutput$GraphColorMap): Map<SVGSamplerOutput$GraphOwner$SampleKey, string>;
+    colorsForType(type: SVGSamplerOutput$GraphColorMap): JavaMap<SVGSamplerOutput$GraphOwner$SampleKey, string>;
     css(): string;
     drawCanvas(x: number, y: number): string;
     fontName(): string;

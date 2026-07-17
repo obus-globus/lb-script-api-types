@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { AbstractConstantKeysObject } from '../../../../../../com/oracle/truffle/regex/AbstractConstantKeysObject.d.ts'
 import type { AbstractRegexObject } from '../../../../../../com/oracle/truffle/regex/AbstractRegexObject.d.ts'
 import type { RegexSource } from '../../../../../../com/oracle/truffle/regex/RegexSource.d.ts'
@@ -7,8 +8,8 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PythonFlags extends AbstractConstantKeysObject {
     static EMPTY_INSTANCE: PythonFlags;
     static TYPE_FLAGS_INSTANCE: PythonFlags;
-    static createNamedCaptureGroupMapInt(paramnamedCaptureGroups: { [key: string]: number[] }): AbstractRegexObject;
-    static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: { [key: string]: number[] }): AbstractRegexObject;
+    static createNamedCaptureGroupMapInt(paramnamedCaptureGroups: JavaMap<string, number[]>): AbstractRegexObject;
+    static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: JavaMap<string, number[]>): AbstractRegexObject;
     static isTypeFlagChar(paramcandidateChar: number): boolean;
     static isValidFlagChar(paramcandidateChar: number): boolean;
     constructor(source: string)

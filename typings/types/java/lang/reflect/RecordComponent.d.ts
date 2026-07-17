@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { AnnotatedElement } from '../../../java/lang/reflect/AnnotatedElement.d.ts'
 import type { AnnotatedType } from '../../../java/lang/reflect/AnnotatedType.d.ts'
@@ -12,14 +13,14 @@ export class RecordComponent extends Object implements AnnotatedElement {
     readonly accessor: Method;
     readonly annotations: number[];
     // private clazz: Class<Object>;
-    readonly declaredAnnotations: Map<Class<Annotation>, Annotation>;
+    readonly declaredAnnotations: JavaMap<Class<Annotation>, Annotation>;
     // private genericInfo: FieldRepository;
     readonly name: string;
     // private root: RecordComponent;
     // private signature: string;
     readonly type: Class<Object>;
     // private typeAnnotations: number[];
-    // private declaredAnnotations(): Map<Class<Annotation>, Annotation>;
+    // private declaredAnnotations(): JavaMap<Class<Annotation>, Annotation>;
     getAccessor(): Method;
     getAnnotatedType(): AnnotatedType;
     getAnnotation<T extends Annotation>(arg0: Class<T>): T;

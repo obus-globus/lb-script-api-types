@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { TruffleContext } from '../../../../../../com/oracle/truffle/api/TruffleContext.d.ts'
 import type { ContextsListener } from '../../../../../../com/oracle/truffle/api/instrumentation/ContextsListener.d.ts'
 import type { EventBinding } from '../../../../../../com/oracle/truffle/api/instrumentation/EventBinding.d.ts'
@@ -21,15 +22,15 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { EconomicMap } from '../../../../../../org/graalvm/collections/EconomicMap.d.ts'
 export class InsightPerSource extends Object implements ContextsListener, LoadSourceListener, AutoCloseable {
     constructor(instrumenter: Instrumenter, instrument: InsightInstrument, src: () => Source, ignoredSources: IgnoreSources)
-    // private bindings: Map<Object, InsightInstrument$Key>;
+    // private bindings: JavaMap<Object, InsightInstrument$Key>;
     // private closeBinding: InsightInstrument$Key;
-    // private contextLanguagesInitializing: Map<TruffleContext, string[]>;
+    // private contextLanguagesInitializing: JavaMap<TruffleContext, string[]>;
     // private ignoredSources: IgnoreSources;
     // private initializeBindings: EconomicMap<TruffleContext, EventBinding<Object>>;
     // private insight: AgentObject;
     // private instrument: InsightInstrument;
     // private onInit: EventBinding<InsightPerSource>;
-    // private registeredSource: Map<TruffleContext, Source>;
+    // private registeredSource: JavaMap<TruffleContext, Source>;
     // private sourceBinding: InsightInstrument$Key;
     // private src: () => Source;
     // private attachBinding(data: InsightFilter$Data, key: InsightInstrument$Key, sourceFilter: SourceFilter, needFactory: (param0: InsightInstrument$Key) => ExecutionEventNodeFactory): void;

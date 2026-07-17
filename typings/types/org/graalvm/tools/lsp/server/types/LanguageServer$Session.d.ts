@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { Runnable } from '../../../../../../java/lang/Runnable.d.ts'
@@ -18,7 +19,7 @@ export class LanguageServer$Session extends Object implements Runnable {
     // private delegateServers: DelegateServers;
     // private in: InputStream;
     // private out: OutputStream;
-    // private pendingReceivedRequests: Map<Object, CompletableFuture<Object>>;
+    // private pendingReceivedRequests: JavaMap<Object, CompletableFuture<Object>>;
     // private server: LanguageServer;
     // private isCancel(t: Throwable): boolean;
     // private processMessage(messageBytes: number[]): void;

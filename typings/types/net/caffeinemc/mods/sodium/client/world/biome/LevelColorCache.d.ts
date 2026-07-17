@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { BoxBlur$ColorBuffer } from '../../../../../../../net/caffeinemc/mods/sodium/client/util/color/BoxBlur$ColorBuffer.d.ts'
 import type { LevelBiomeSlice } from '../../../../../../../net/caffeinemc/mods/sodium/client/world/biome/LevelBiomeSlice.d.ts'
@@ -18,7 +19,7 @@ export class LevelColorCache extends Object {
     // private populateStamp: number;
     // private sizeXZ: number;
     // private sizeY: number;
-    // private slices: Map<(param0: Biome, param1: number, param2: number) => number, LevelColorCache$Slice[]>;
+    // private slices: JavaMap<(param0: Biome, param1: number, param2: number) => number, LevelColorCache$Slice[]>;
     // private tempColorBuffer: BoxBlur$ColorBuffer;
     getBlendRadius(): number;
     getColor(arg0: (param0: Biome, param1: number, param2: number) => number, arg1: number, arg2: number, arg3: number): number;

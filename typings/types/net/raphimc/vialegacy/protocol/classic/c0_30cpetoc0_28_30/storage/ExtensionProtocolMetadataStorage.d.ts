@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { IExtensionProtocolMetadataStorage } from '../../../../../../../com/viaversion/viafabricplus/injection/access/core/IExtensionProtocolMetadataStorage.d.ts'
 import type { StorableObject } from '../../../../../../../com/viaversion/viaversion/api/connection/StorableObject.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
@@ -6,7 +7,7 @@ export class ExtensionProtocolMetadataStorage extends Object implements IExtensi
     constructor()
     readonly extensionCount: number;
     readonly receivedExtensions: number;
-    // private serverExtensions: Map<ClassicProtocolExtension, number>;
+    // private serverExtensions: JavaMap<ClassicProtocolExtension, number>;
     readonly serverSoftwareName: string;
     addServerExtension(arg0: ClassicProtocolExtension, arg1: number): void;
     getExtensionCount(): number;
@@ -17,5 +18,5 @@ export class ExtensionProtocolMetadataStorage extends Object implements IExtensi
     onRemove(): void;
     setExtensionCount(arg0: number): void;
     setServerSoftwareName(arg0: string): void;
-    viaFabricPlus$getServerExtensions(): Map<Object | null, Object>;
+    viaFabricPlus$getServerExtensions(): JavaMap<Object | null, Object>;
 }

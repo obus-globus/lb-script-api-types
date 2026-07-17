@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { CompletableFuture } from '../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Executor } from '../../../../java/util/concurrent/Executor.d.ts'
 import type { BiFunction } from '../../../../java/util/function/BiFunction.d.ts'
@@ -13,6 +14,6 @@ export abstract class ParallelMapTransform$SplitterBase<K extends unknown, U ext
     batchSize(index: number): number;
     // private pendingBatchSize(): number;
     scheduleBatch(container: ParallelMapTransform$Container<K, U, V>, startIndex: number, endIndex: number, executor: Executor): CompletableFuture<Object>;
-    scheduleFinalOperation(allTasksDone: CompletableFuture<Object>, container: ParallelMapTransform$Container<K, U, V>): CompletableFuture<Map<K, V>>;
-    scheduleTasks(input: Map<K, U>, executor: Executor): CompletableFuture<Map<K, V>>;
+    scheduleFinalOperation(allTasksDone: CompletableFuture<Object>, container: ParallelMapTransform$Container<K, U, V>): CompletableFuture<JavaMap<K, V>>;
+    scheduleTasks(input: JavaMap<K, U>, executor: Executor): CompletableFuture<JavaMap<K, V>>;
 }

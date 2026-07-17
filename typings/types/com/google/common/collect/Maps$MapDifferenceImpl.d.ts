@@ -1,17 +1,18 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { MapDifference } from '../../../../com/google/common/collect/MapDifference.d.ts'
 import type { MapDifference$ValueDifference } from '../../../../com/google/common/collect/MapDifference$ValueDifference.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Maps$MapDifferenceImpl<K extends unknown, V extends unknown> extends Object implements MapDifference<K, V> {
-    constructor(onlyOnLeft: Map<K, V>, onlyOnRight: Map<K, V>, onBoth: Map<K, V>, differences: Map<K, MapDifference$ValueDifference<V>>)
-    // private differences: Map<K, MapDifference$ValueDifference<V>>;
-    // private onBoth: Map<K, V>;
-    // private onlyOnLeft: Map<K, V>;
-    // private onlyOnRight: Map<K, V>;
+    constructor(onlyOnLeft: JavaMap<K, V>, onlyOnRight: JavaMap<K, V>, onBoth: JavaMap<K, V>, differences: JavaMap<K, MapDifference$ValueDifference<V>>)
+    // private differences: JavaMap<K, MapDifference$ValueDifference<V>>;
+    // private onBoth: JavaMap<K, V>;
+    // private onlyOnLeft: JavaMap<K, V>;
+    // private onlyOnRight: JavaMap<K, V>;
     areEqual(): boolean;
-    entriesDiffering(): Map<K, MapDifference$ValueDifference<V>>;
-    entriesInCommon(): Map<K, V>;
-    entriesOnlyOnLeft(): Map<K, V>;
-    entriesOnlyOnRight(): Map<K, V>;
+    entriesDiffering(): JavaMap<K, MapDifference$ValueDifference<V>>;
+    entriesInCommon(): JavaMap<K, V>;
+    entriesOnlyOnLeft(): JavaMap<K, V>;
+    entriesOnlyOnRight(): JavaMap<K, V>;
     equals(object: Object | null): boolean;
     hashCode(): number;
     toString(): string;

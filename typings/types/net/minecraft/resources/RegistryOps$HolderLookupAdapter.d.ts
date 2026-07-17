@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Optional } from '../../../java/util/Optional.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { HolderLookup$Provider } from '../../../net/minecraft/core/HolderLookup$Provider.d.ts'
@@ -7,7 +8,7 @@ import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d
 export class RegistryOps$HolderLookupAdapter extends Object implements RegistryOps$RegistryInfoLookup {
     constructor(lookupProvider: HolderLookup$Provider)
     // private lookupProvider: HolderLookup$Provider;
-    // private lookups: Map<ResourceKey<(Object | null)[]>, Optional<RegistryOps$RegistryInfo<Object>>>;
+    // private lookups: JavaMap<ResourceKey<(Object | null)[]>, Optional<RegistryOps$RegistryInfo<Object>>>;
     // private createLookup(key: ResourceKey<(Object | null)[]>): Optional<RegistryOps$RegistryInfo<Object>>;
     equals(obj: Object | null): boolean;
     hashCode(): number;

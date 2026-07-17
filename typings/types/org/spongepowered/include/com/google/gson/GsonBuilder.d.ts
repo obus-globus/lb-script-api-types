@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Type } from '../../../../../../java/lang/reflect/Type.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { FieldNamingStrategy } from '../../../../../../org/spongepowered/include/com/google/gson/FieldNamingStrategy.d.ts'
@@ -17,7 +18,7 @@ export class GsonBuilder extends Object {
     // private fieldNamingPolicy: FieldNamingStrategy;
     // private generateNonExecutableJson: boolean;
     // private hierarchyFactories: TypeAdapterFactory[];
-    // private instanceCreators: Map<Type, InstanceCreator<Object>>;
+    // private instanceCreators: JavaMap<Type, InstanceCreator<Object>>;
     // private longSerializationPolicy: LongSerializationPolicy;
     // private prettyPrinting: boolean;
     // private serializeNulls: boolean;

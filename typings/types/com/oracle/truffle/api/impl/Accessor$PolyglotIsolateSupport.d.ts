@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Accessor$Support } from '../../../../../com/oracle/truffle/api/impl/Accessor$Support.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../../../java/io/OutputStream.d.ts'
@@ -13,7 +14,7 @@ import type { MessageTransport } from '../../../../../org/graalvm/polyglot/io/Me
 import type { ProcessHandler } from '../../../../../org/graalvm/polyglot/io/ProcessHandler.d.ts'
 export abstract class Accessor$PolyglotIsolateSupport extends Accessor$Support {
     constructor()
-    buildIsolatedEngine(polyglot: AbstractPolyglotImpl, localEngine: Engine, isolateLanguages: string[], permittedLanguages: string[], sandboxPolicy: SandboxPolicy, out: OutputStream, err: OutputStream, in_: InputStream, options: { [key: string]: string }, systemPropertiesOptions: { [key: string]: string }, useSystemProperties: boolean, allowExperimentalOptions: boolean, boundEngine: boolean, messageInterceptor: MessageTransport, registerInActiveEngines: boolean, externalProcess: boolean, stackHeadRoom: number, isolateLibrary: string, isolateLauncher: string): Engine;
+    buildIsolatedEngine(polyglot: AbstractPolyglotImpl, localEngine: Engine, isolateLanguages: string[], permittedLanguages: string[], sandboxPolicy: SandboxPolicy, out: OutputStream, err: OutputStream, in_: InputStream, options: JavaMap<string, string>, systemPropertiesOptions: JavaMap<string, string>, useSystemProperties: boolean, allowExperimentalOptions: boolean, boundEngine: boolean, messageInterceptor: MessageTransport, registerInActiveEngines: boolean, externalProcess: boolean, stackHeadRoom: number, isolateLibrary: string, isolateLauncher: string): Engine;
     createThreadScope(polyglot: AbstractPolyglotImpl): AbstractPolyglotImpl$ThreadScope;
     dumpIsolateHeap(engine: Object, folder: Path): Path;
     getAvailableIsolatedLanguages(): string[][];

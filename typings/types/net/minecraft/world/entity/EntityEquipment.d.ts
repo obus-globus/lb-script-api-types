@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { EquipmentInfo } from '../../../../net/caffeinemc/mods/lithium/common/entity/EquipmentInfo.d.ts'
@@ -13,7 +14,7 @@ export class EntityEquipment extends Object implements EquipmentInfo, ChangeSubs
     constructor()
     // private hasUnsentEquipmentChanges: boolean;
     // private inLevel: boolean;
-    // private items: Map<EquipmentSlot, ItemStack>;
+    // private items: JavaMap<EquipmentSlot, ItemStack>;
     // private recheckEnchantmentForStack: ItemStack;
     // private shouldTickEnchantments: boolean;
     clear(): void;

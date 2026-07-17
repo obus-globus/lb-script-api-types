@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { TruffleContext } from '../../../../../com/oracle/truffle/api/TruffleContext.d.ts'
 import type { TruffleLanguage } from '../../../../../com/oracle/truffle/api/TruffleLanguage.d.ts'
 import type { VirtualFrame } from '../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
@@ -42,14 +43,14 @@ import type { OptionValues } from '../../../../../org/graalvm/options/OptionValu
 export class InstrumentationHandler extends Object {
     constructor(polyglotEngine: Object)
     // private allocationBindings: EventBinding$Allocation<AllocationListener>[];
-    // private allocationReporters: Map<LanguageInfo, AllocationReporter>;
-    // private cachedProvidedTags: Map<Class<Object>, Class<Object>[]>;
+    // private allocationReporters: JavaMap<LanguageInfo, AllocationReporter>;
+    // private cachedProvidedTags: JavaMap<Class<Object>, Class<Object>[]>;
     // private contextsBindings: EventBinding<ContextsListener>[];
     // private engineInstrumenter: InstrumentationHandler$EngineInstrumenter;
     // private executedRoots: RootNode[];
     // private executionBindings: EventBinding$Source<Object>[];
     // private hasLoadOrExecutionBinding: boolean;
-    // private instrumenterMap: Map<Object, InstrumentationHandler$AbstractInstrumenter>;
+    // private instrumenterMap: JavaMap<Object, InstrumentationHandler$AbstractInstrumenter>;
     // private loadedRoots: RootNode[];
     // private outputErrBindings: EventBinding<OutputStream>[];
     // private outputStdBindings: EventBinding<OutputStream>[];
@@ -58,8 +59,8 @@ export class InstrumentationHandler extends Object {
     // private sourcesExecuted: SourceInstrumentationHandler;
     // private sourcesLoaded: SourceInstrumentationHandler;
     // private stableActivationListeners: InstrumentationHandler$StableThreadsActivationListeners;
-    // private threadLocalNewSourcesExecuted: ThreadLocal<Map<Source, void>>;
-    // private threadLocalNewSourcesLoaded: ThreadLocal<Map<Source, void>>;
+    // private threadLocalNewSourcesExecuted: ThreadLocal<JavaMap<Source, void>>;
+    // private threadLocalNewSourcesLoaded: ThreadLocal<JavaMap<Source, void>>;
     // private threadLocalSourceSectionLoadedList: ThreadLocal<InstrumentationHandler$BindingLoadSourceSectionEvent[]>;
     // private threadsActivationBindings: EventBinding<ThreadsActivationListener>[];
     // private threadsBindings: EventBinding<ThreadsListener>[];

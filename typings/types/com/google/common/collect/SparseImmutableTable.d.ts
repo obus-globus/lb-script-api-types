@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ImmutableTable } from '../../../../com/google/common/collect/ImmutableTable.d.ts'
 import type { ImmutableTable$Builder } from '../../../../com/google/common/collect/ImmutableTable$Builder.d.ts'
 import type { RegularImmutableTable } from '../../../../com/google/common/collect/RegularImmutableTable.d.ts'
@@ -17,12 +18,12 @@ export class SparseImmutableTable<R extends unknown, C extends unknown, V extend
     constructor(cellList: Table$Cell<R, C, V>[], rowSpace: R[], columnSpace: C[])
     // private cellColumnInRowIndices: number[];
     // private cellRowIndices: number[];
-    // private columnMap: Map<C, Map<R, V>>;
-    // private rowMap: Map<R, Map<C, V>>;
-    columnMap(): Map<C, Map<R, V>>;
+    // private columnMap: JavaMap<C, JavaMap<R, V>>;
+    // private rowMap: JavaMap<R, JavaMap<C, V>>;
+    columnMap(): JavaMap<C, JavaMap<R, V>>;
     getCell(index: number): Table$Cell<R, C, V>;
     getValue(index: number): V;
-    rowMap(): Map<R, Map<C, V>>;
+    rowMap(): JavaMap<R, JavaMap<C, V>>;
     size(): number;
     writeReplace(): Object;
 }

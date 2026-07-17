@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
 import type { ArchiveInputStream } from '../../../../../../org/apache/commons/compress/archivers/ArchiveInputStream.d.ts'
 import type { Dirent } from '../../../../../../org/apache/commons/compress/archivers/dump/Dirent.d.ts'
@@ -17,8 +18,8 @@ export class DumpArchiveInputStream extends ArchiveInputStream<DumpArchiveEntry>
     // private filepos: number;
     // private hasHitEOF: boolean;
     // private isClosed: boolean;
-    // private names: { [key: number]: Dirent };
-    // private pending: { [key: number]: DumpArchiveEntry };
+    // private names: JavaMap<number, Dirent>;
+    // private pending: JavaMap<number, DumpArchiveEntry>;
     // private queue: DumpArchiveEntry[];
     // private raw: TapeInputStream;
     // private readBuf: number[];

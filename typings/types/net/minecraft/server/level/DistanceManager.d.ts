@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { LongConsumer } from '../../../../it/unimi/dsi/fastutil/longs/LongConsumer.d.ts'
 import type { LongIterator } from '../../../../it/unimi/dsi/fastutil/longs/LongIterator.d.ts'
 import type { Executor } from '../../../../java/util/concurrent/Executor.d.ts'
@@ -20,7 +21,7 @@ export abstract class DistanceManager extends Object {
     // private mainThreadExecutor: Executor;
     // private naturalSpawnChunkCounter: DistanceManager$FixedPlayerDistanceChunkTracker;
     // private playerTicketManager: DistanceManager$PlayerTicketTracker;
-    // private playersPerChunk: { [key: string]: any };
+    // private playersPerChunk: JavaMap<any, any>;
     // private simulationChunkTracker: SimulationChunkTracker;
     // private simulationDistance: number;
     // private ticketDispatcher: ThrottlingChunkTaskDispatcher;

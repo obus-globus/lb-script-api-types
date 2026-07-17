@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
@@ -12,7 +13,7 @@ export class ExpressionResolver extends Object {
     // private enableDebugging: boolean;
     // private functionResolver: FunctionResolver;
     // private logs: string[];
-    // private numbers: { [key: string]: ConstantExpression };
+    // private numbers: JavaMap<string, ConstantExpression>;
     // private variableTypeMap: (param0: string) => Type;
     clearLogs(): void;
     extractLogs(): string[];

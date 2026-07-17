@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { FamilyOptic } from '../../../../../com/mojang/datafixers/FamilyOptic.d.ts'
 import type { RewriteResult } from '../../../../../com/mojang/datafixers/RewriteResult.d.ts'
 import type { Type } from '../../../../../com/mojang/datafixers/types/Type.d.ts'
@@ -10,13 +11,13 @@ import type { IntFunction } from '../../../../../java/util/function/IntFunction.
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { TaggedChoiceExtension } from '../../../../../net/fabricmc/fabric/impl/dimension/TaggedChoiceExtension.d.ts'
 export class TaggedChoice<K extends unknown> extends Object implements TypeTemplate, TaggedChoiceExtension {
-    constructor(arg0: string, arg1: Type<K>, arg2: Map<K, TypeTemplate>)
+    constructor(arg0: string, arg1: Type<K>, arg2: JavaMap<K, TypeTemplate>)
     // private failSoft: boolean;
     // private keyType: Type<K>;
     // private name: string;
     // private size: number;
-    // private templates: Map<K, TypeTemplate>;
-    // private types: Map<Pair<TypeFamily, number>, Type<Object>>;
+    // private templates: JavaMap<K, TypeTemplate>;
+    // private types: JavaMap<Pair<TypeFamily, number>, Type<Object>>;
     apply(arg0: TypeFamily): TypeFamily;
     applyO<A extends unknown, B extends unknown>(arg0: FamilyOptic<A, B>, arg1: Type<A>, arg2: Type<B>): FamilyOptic<A, B>;
     equals(arg0: Object | null): boolean;

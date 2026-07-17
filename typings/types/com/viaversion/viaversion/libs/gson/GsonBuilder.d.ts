@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ExclusionStrategy } from '../../../../../com/viaversion/viaversion/libs/gson/ExclusionStrategy.d.ts'
 import type { FieldNamingPolicy } from '../../../../../com/viaversion/viaversion/libs/gson/FieldNamingPolicy.d.ts'
 import type { FieldNamingStrategy } from '../../../../../com/viaversion/viaversion/libs/gson/FieldNamingStrategy.d.ts'
@@ -30,7 +31,7 @@ export class GsonBuilder extends Object {
     // private formattingStyle: FormattingStyle;
     // private generateNonExecutableJson: boolean;
     // private hierarchyFactories: TypeAdapterFactory[];
-    // private instanceCreators: Map<Type, InstanceCreator<Object>>;
+    // private instanceCreators: JavaMap<Type, InstanceCreator<Object>>;
     // private longSerializationPolicy: LongSerializationPolicy;
     // private numberToNumberStrategy: ToNumberStrategy;
     // private objectToNumberStrategy: ToNumberStrategy;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { HttpMethod } from '../../../../../../io/netty/handler/codec/http/HttpMethod.d.ts'
 import type { CorsConfig } from '../../../../../../io/netty/handler/codec/http/cors/CorsConfig.d.ts'
 import type { Callable } from '../../../../../../java/util/concurrent/Callable.d.ts'
@@ -18,7 +19,7 @@ export class CorsConfigBuilder extends Object {
     // private maxAge: number;
     // private noPreflightHeaders: boolean;
     // private origins: string[];
-    // private preflightHeaders: Map<CharSequence, () => Object | null>;
+    // private preflightHeaders: JavaMap<CharSequence, () => Object | null>;
     // private requestHeaders: string[];
     // private requestMethods: HttpMethod[];
     // private shortCircuit: boolean;

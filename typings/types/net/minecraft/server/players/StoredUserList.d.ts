@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { JsonObject } from '../../../../com/google/gson/JsonObject.d.ts'
 import type { File } from '../../../../java/io/File.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -6,7 +7,7 @@ import type { StoredUserEntry } from '../../../../net/minecraft/server/players/S
 export abstract class StoredUserList<K extends unknown, V extends StoredUserEntry<K>> extends Object {
     constructor(file: File, notificationService: NotificationService)
     readonly file: File;
-    // private map: { [key: string]: V };
+    // private map: JavaMap<string, V>;
     // private notificationService: NotificationService;
     add(infos: V): boolean;
     clear(): void;

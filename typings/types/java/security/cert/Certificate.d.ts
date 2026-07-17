@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Serializable } from '../../../java/io/Serializable.d.ts'
 import type { PublicKey } from '../../../java/security/PublicKey.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
@@ -12,7 +13,7 @@ export abstract class Certificate extends Object implements Serializable {
     hashCode(): number;
     toString(): string;
     verify(arg0: PublicKey): void;
-    verify(arg0: PublicKey, arg1: { [key: string]: any }): void;
+    verify(arg0: PublicKey, arg1: JavaMap<any, any>): void;
     verify(arg0: PublicKey, arg1: string): void;
     writeReplace(): Object;
 }

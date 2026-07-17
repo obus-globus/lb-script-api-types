@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ConversionRates$ConversionRateInfo } from '../../../../../com/ibm/icu/impl/units/ConversionRates$ConversionRateInfo.d.ts'
 import type { MeasureUnitImpl } from '../../../../../com/ibm/icu/impl/units/MeasureUnitImpl.d.ts'
 import type { SingleUnitImpl } from '../../../../../com/ibm/icu/impl/units/SingleUnitImpl.d.ts'
@@ -7,7 +8,7 @@ import type { BigDecimal } from '../../../../../java/math/BigDecimal.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ConversionRates extends Object {
     constructor()
-    // private mapToConversionRate: { [key: string]: ConversionRates$ConversionRateInfo };
+    // private mapToConversionRate: JavaMap<string, ConversionRates$ConversionRateInfo>;
     // private checkSimpleUnit(arg0: MeasureUnitImpl): boolean;
     extractBaseUnits(arg0: MeasureUnitImpl): SingleUnitImpl[];
     extractBaseUnits(arg0: SingleUnitImpl): SingleUnitImpl[];

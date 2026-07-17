@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { ReferenceQueue } from '../../../../../../../java/lang/ref/ReferenceQueue.d.ts'
 import type { WeakReference } from '../../../../../../../java/lang/ref/WeakReference.d.ts'
@@ -10,7 +11,7 @@ import type { MessageFactory } from '../../../../../../../org/apache/logging/log
 export class InternalLoggerRegistry extends Object {
     constructor()
     // private lock: ReadWriteLock;
-    // private loggerRefByNameByMessageFactory: Map<MessageFactory, { [key: string]: WeakReference<Logger> }>;
+    // private loggerRefByNameByMessageFactory: JavaMap<MessageFactory, JavaMap<string, WeakReference<Logger>>>;
     // private readLock: Lock;
     // private staleLoggerRefs: ReferenceQueue<Logger>;
     // private writeLock: Lock;

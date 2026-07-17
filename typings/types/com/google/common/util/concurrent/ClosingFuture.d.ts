@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { AsyncFunction } from '../../../../../com/google/common/util/concurrent/AsyncFunction.d.ts'
 import type { ClosingFuture$AsyncClosingCallable } from '../../../../../com/google/common/util/concurrent/ClosingFuture$AsyncClosingCallable.d.ts'
 import type { ClosingFuture$AsyncClosingFunction } from '../../../../../com/google/common/util/concurrent/ClosingFuture$AsyncClosingFunction.d.ts'
@@ -35,9 +36,9 @@ export class ClosingFuture<V extends unknown> extends Object {
     static whenAllSucceed(paramfutures: ClosingFuture<Object>[]): ClosingFuture$Combiner;
     static withoutCloser<V extends unknown, U extends unknown>(paramfunction: (param0: V) => ListenableFuture<U>): (param0: ClosingFuture$DeferredCloser, param1: V) => ClosingFuture<U>;
     private constructor(future: ListenableFuture<V>)
-    private constructor(future: ListenableFuture<V>, closeables: { [key: string]: any })
+    private constructor(future: ListenableFuture<V>, closeables: JavaMap<any, any>)
     // private state: ClosingFuture$State<V>;
-    // private becomeSubsumedInto(otherCloseables: { [key: string]: any }): void;
+    // private becomeSubsumedInto(otherCloseables: JavaMap<any, any>): void;
     cancel(mayInterruptIfRunning: boolean): boolean;
     catching<X extends Throwable>(exceptionType: Class<X>, fallback: (param0: ClosingFuture$DeferredCloser, param1: X) => V, executor: Executor): ClosingFuture<V>;
     catchingAsync<X extends Throwable>(exceptionType: Class<X>, fallback: (param0: ClosingFuture$DeferredCloser, param1: X) => ClosingFuture<V>, executor: Executor): ClosingFuture<V>;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Composite } from '../../java/awt/Composite.d.ts'
 import type { CompositeContext } from '../../java/awt/CompositeContext.d.ts'
 import type { ColorModel } from '../../java/awt/image/ColorModel.d.ts'
@@ -33,7 +34,7 @@ export class AlphaComposite extends Object implements Composite {
     private constructor(arg0: number, arg1: number)
     // private extraAlpha: number;
     rule: number;
-    createContext(arg0: ColorModel, arg1: ColorModel, arg2: { [key: string]: any }): CompositeContext;
+    createContext(arg0: ColorModel, arg1: ColorModel, arg2: JavaMap<any, any>): CompositeContext;
     derive(arg0: number): AlphaComposite;
     equals(arg0: Object | null): boolean;
     getAlpha(): number;

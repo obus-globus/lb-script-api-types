@@ -1,11 +1,12 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Byte2LongLinkedOpenHashMap$MapEntry } from '../../../../../it/unimi/dsi/fastutil/bytes/Byte2LongLinkedOpenHashMap$MapEntry.d.ts'
 import type { Byte2LongLinkedOpenHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/bytes/Byte2LongLinkedOpenHashMap$MapIterator.d.ts'
 import type { Byte2LongMap$Entry } from '../../../../../it/unimi/dsi/fastutil/bytes/Byte2LongMap$Entry.d.ts'
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 export class Byte2LongLinkedOpenHashMap$EntryIterator extends Byte2LongLinkedOpenHashMap$MapIterator<(param0: Byte2LongMap$Entry) => void> implements ObjectListIterator<Byte2LongMap$Entry> {
-    constructor(null_: { [key: string]: any })
-    constructor(null_: { [key: string]: any }, arg1: number)
+    constructor(null_: JavaMap<any, any>)
+    constructor(null_: JavaMap<any, any>, arg1: number)
     // private entry: Byte2LongLinkedOpenHashMap$MapEntry;
     acceptOnIndex(arg0: (param0: Byte2LongMap$Entry) => void, arg1: number): void;
     add(arg0: Byte2LongMap$Entry): void;

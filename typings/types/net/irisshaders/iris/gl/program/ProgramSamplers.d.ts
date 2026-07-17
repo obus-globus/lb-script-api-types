@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { GlUniform1iCall } from '../../../../../net/irisshaders/iris/gl/program/GlUniform1iCall.d.ts'
 import type { ProgramSamplers$Builder } from '../../../../../net/irisshaders/iris/gl/program/ProgramSamplers$Builder.d.ts'
@@ -9,8 +10,8 @@ import type { TextureAccess } from '../../../../../net/irisshaders/iris/gl/textu
 export class ProgramSamplers extends Object {
     static builder(paramarg0: number, paramarg1: number[]): ProgramSamplers$Builder;
     static clearActiveSamplers(): void;
-    static customTextureSamplerInterceptor(paramarg0: SamplerHolder, paramarg1: { [key: string]: TextureAccess }): ProgramSamplers$CustomTextureSamplerInterceptor;
-    static customTextureSamplerInterceptor(paramarg0: SamplerHolder, paramarg1: { [key: string]: TextureAccess }, paramarg2: number[]): ProgramSamplers$CustomTextureSamplerInterceptor;
+    static customTextureSamplerInterceptor(paramarg0: SamplerHolder, paramarg1: JavaMap<string, TextureAccess>): ProgramSamplers$CustomTextureSamplerInterceptor;
+    static customTextureSamplerInterceptor(paramarg0: SamplerHolder, paramarg1: JavaMap<string, TextureAccess>, paramarg2: number[]): ProgramSamplers$CustomTextureSamplerInterceptor;
     private constructor(arg0: SamplerBinding[], arg1: ValueUpdateNotifier[], arg2: GlUniform1iCall[])
     // private initializer: GlUniform1iCall[];
     // private notifiersToReset: ValueUpdateNotifier[];

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { Predicate } from '../../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -22,12 +23,12 @@ export class ClassInstance extends Object implements TrClass {
     // private inputTags: InputTag[];
     // private interfaces: string[];
     // private isInput: boolean;
-    readonly members: { [key: string]: MemberInstance };
+    readonly members: JavaMap<string, MemberInstance>;
     readonly mrjOrigin: ClassInstance;
     readonly mrjVersion: number;
     readonly name: string;
     // private parents: ClassInstance[];
-    // private resolvedMembers: { [key: string]: MemberInstance };
+    // private resolvedMembers: JavaMap<string, MemberInstance>;
     // private signature: string;
     // private srcPath: Path;
     readonly superName: string;

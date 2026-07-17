@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { RuntimeException } from '../../../../java/lang/RuntimeException.d.ts'
 import type { MethodHandles$Lookup } from '../../../../java/lang/invoke/MethodHandles$Lookup.d.ts'
@@ -79,7 +80,7 @@ export abstract class AbstractPolyglotImpl$APIAccess extends Object {
     contextClosed(contextReference: Reference<Context>): void;
     contextEnter(localContext: Object): void;
     contextLeave(localContext: Object): void;
-    createPolyglotAccess(bindingsAccess: string[], evalAccess: { [key: string]: string[] }): Object;
+    createPolyglotAccess(bindingsAccess: string[], evalAccess: JavaMap<string, string[]>): Object;
     engineClosed(engineReference: Reference<Engine>): void;
     getBindingsAccess(polyglotAccess: Object): string[];
     getByteSequenceClass(): Class<Object>;
@@ -89,7 +90,7 @@ export abstract class AbstractPolyglotImpl$APIAccess extends Object {
     getEngineReceiver(engine: Object): Object;
     getEnvironmentAccessInherit(): Object;
     getEnvironmentAccessNone(): Object;
-    getEvalAccess(polyglotAccess: Object): { [key: string]: string[] };
+    getEvalAccess(polyglotAccess: Object): JavaMap<string, string[]>;
     getEvalAccess(polyglotAccess: Object, language: string): string[];
     getHostAccessImpl(hostAccess: Object): Object;
     getHostAccessNone(): Object;
@@ -151,7 +152,7 @@ export abstract class AbstractPolyglotImpl$APIAccess extends Object {
     newValue(dispatch: AbstractPolyglotImpl$AbstractValueDispatch, context: Object, receiver: Object, creatorContext: Context): Value;
     newValueArray(size: number): Object[];
     processReferenceQueue(): void;
-    readOptionsFromSystemProperties(): { [key: string]: string };
+    readOptionsFromSystemProperties(): JavaMap<string, string>;
     setHostAccessImpl(hostAccess: Object, impl: Object): void;
     toByteSequence(origin: Object): Object;
     validatePolyglotAccess(polyglotAccess: Object, language: string[]): string;

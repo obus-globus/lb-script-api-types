@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Codec } from '../../../com/mojang/serialization/Codec.d.ts'
 import type { BiConsumer } from '../../../java/util/function/BiConsumer.d.ts'
 import type { Identifier } from '../../../net/minecraft/resources/Identifier.d.ts'
@@ -12,7 +13,7 @@ export class RandomSequences extends SavedData {
     // private includeSequenceId: boolean;
     // private includeWorldSeed: boolean;
     // private salt: number;
-    // private sequences: Map<Identifier, RandomSequence>;
+    // private sequences: JavaMap<Identifier, RandomSequence>;
     clear(): number;
     // private createSequence(key: Identifier, worldSeed: number): RandomSequence;
     // private createSequence(key: Identifier, worldSeed: number, salt: number, includeWorldSeed: boolean, includeSequenceId: boolean): RandomSequence;

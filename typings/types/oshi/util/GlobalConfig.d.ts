@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export class GlobalConfig extends Object {
     static OSHI_NETWORK_FILESYSTEM_TYPES: string;
@@ -28,7 +29,7 @@ export class GlobalConfig extends Object {
     static get(paramarg0: string, paramarg1: number): number;
     static get(paramarg0: string): string;
     static get(paramarg0: string, paramarg1: string): string;
-    static load(paramarg0: { [key: string]: any }): void;
+    static load(paramarg0: JavaMap<any, any>): void;
     static remove(paramarg0: string): void;
     static set(paramarg0: string, paramarg1: Object): void;
     private constructor()

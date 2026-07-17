@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { MappedElementKind } from '../../../../../../../net/fabricmc/loader/impl/lib/mappingio/MappedElementKind.d.ts'
 import type { MappingVisitor } from '../../../../../../../net/fabricmc/loader/impl/lib/mappingio/MappingVisitor.d.ts'
@@ -15,8 +16,8 @@ import type { VisitableMappingTree } from '../../../../../../../net/fabricmc/loa
 export class MemoryMappingTree extends Object implements VisitableMappingTree {
     constructor()
     constructor(arg0: boolean)
-    // private classesByDstNames: { [key: string]: MemoryMappingTree$ClassEntry }[];
-    // private classesBySrcName: { [key: string]: MemoryMappingTree$ClassEntry };
+    // private classesByDstNames: JavaMap<string, MemoryMappingTree$ClassEntry>[];
+    // private classesBySrcName: JavaMap<string, MemoryMappingTree$ClassEntry>;
     // private classesView: MemoryMappingTree$ClassEntry[];
     // private currentClass: MemoryMappingTree$ClassEntry;
     // private currentEntry: MemoryMappingTree$Entry<any>;
@@ -27,8 +28,8 @@ export class MemoryMappingTree extends Object implements VisitableMappingTree {
     // private inVisitPass: boolean;
     // private indexByDstNames: boolean;
     // private metadata: MappingTree$MetadataEntry[];
-    // private pendingClasses: { [key: string]: MemoryMappingTree$ClassEntry };
-    // private pendingMembers: Map<MemoryMappingTree$GlobalMemberKey, MemoryMappingTree$MemberEntry<any>>;
+    // private pendingClasses: JavaMap<string, MemoryMappingTree$ClassEntry>;
+    // private pendingMembers: JavaMap<MemoryMappingTree$GlobalMemberKey, MemoryMappingTree$MemberEntry<any>>;
     readonly srcNamespace: string;
     // private srcNsMap: number;
     accept(arg0: MappingVisitor): void;

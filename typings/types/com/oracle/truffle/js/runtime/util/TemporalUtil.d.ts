@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { InlinedBranchProfile } from '../../../../../../com/oracle/truffle/api/profiles/InlinedBranchProfile.d.ts'
 import type { TruffleString } from '../../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
@@ -96,7 +97,7 @@ export class TemporalUtil extends Object {
     static listY: TruffleString[];
     static listYD: TruffleString[];
     static mc_20_floor: MathContext;
-    static temporalFieldDefaults: Map<TruffleString, Object>;
+    static temporalFieldDefaults: JavaMap<TruffleString, Object>;
     static add24HourDaysToNormalizedTimeDuration(paramtimeDurationTotalNanoseconds: BigInt, paramdays: number): BigInt;
     static addDaysToZonedDateTime(paramctx: JSContext, paramrealm: JSRealm, paraminstant: JSTemporalInstantObject, paramdateTime: JSTemporalPlainDateTimeObject, paramtimeZone: TruffleString, paramdays: number): TemporalUtil$AddDaysToZonedDateTimeResult;
     static addDaysToZonedDateTime(paramctx: JSContext, paramrealm: JSRealm, paraminstant: JSTemporalInstantObject, paramdateTime: JSTemporalPlainDateTimeObject, paramtimeZone: TruffleString, paramdays: number, paramoverflow: TemporalUtil$Overflow): TemporalUtil$AddDaysToZonedDateTimeResult;

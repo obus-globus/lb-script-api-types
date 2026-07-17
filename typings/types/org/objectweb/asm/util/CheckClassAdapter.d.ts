@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { PrintWriter } from '../../../../java/io/PrintWriter.d.ts'
 import type { ClassLoader } from '../../../../java/lang/ClassLoader.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -22,7 +23,7 @@ export class CheckClassAdapter extends ClassVisitor {
     constructor(arg0: ClassVisitor)
     constructor(arg0: ClassVisitor, arg1: boolean)
     // private checkDataFlow: boolean;
-    // private labelInsnIndices: Map<Label, number>;
+    // private labelInsnIndices: JavaMap<Label, number>;
     // private nestMemberPackageName: string;
     // private version: number;
     // private visitCalled: boolean;

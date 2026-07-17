@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { IntFunction } from '../../../../../java/util/function/IntFunction.d.ts'
@@ -90,7 +91,7 @@ export class HopperBlock extends BaseEntityBlock implements ShapeUpdateHandlingB
     static updateOrDestroy(paramblockState: BlockState, paramnewState: BlockState, paramlevel: LevelAccessor, paramblockPos: BlockPos, paramupdateFlags: number): void;
     static updateOrDestroy(paramblockState: BlockState, paramnewState: BlockState, paramlevel: LevelAccessor, paramblockPos: BlockPos, paramupdateFlags: number, paramupdateLimit: number): void;
     constructor(properties: BlockBehaviour$Properties)
-    // private interactionShapes: Map<Direction, VoxelShape>;
+    // private interactionShapes: JavaMap<Direction, VoxelShape>;
     // private shapes: (param0: BlockState) => VoxelShape;
     // private viaFabricPlus$requireOriginalShape: boolean;
     affectNeighborsAfterRemoval(state: BlockState, level: ServerLevel, pos: BlockPos, movedByPiston: boolean): void;

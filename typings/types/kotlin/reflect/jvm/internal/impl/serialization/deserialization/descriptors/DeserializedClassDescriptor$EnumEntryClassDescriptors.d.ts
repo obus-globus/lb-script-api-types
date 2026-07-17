@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { ClassDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
 import type { ProtoBuf$EnumEntry } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/metadata/ProtoBuf$EnumEntry.d.ts'
@@ -8,7 +9,7 @@ import type { NotNullLazyValue } from '../../../../../../../../kotlin/reflect/jv
 export class DeserializedClassDescriptor$EnumEntryClassDescriptors extends Object {
     constructor(null_: DeserializedClassDescriptor)
     // private enumEntryByName: MemoizedFunctionToNullable<Name, ClassDescriptor>;
-    // private enumEntryProtos: Map<Name, ProtoBuf$EnumEntry>;
+    // private enumEntryProtos: JavaMap<Name, ProtoBuf$EnumEntry>;
     // private enumMemberNames: NotNullLazyValue<Name[]>;
     all(): ClassDescriptor[];
     // private computeEnumMemberNames(): Name[];

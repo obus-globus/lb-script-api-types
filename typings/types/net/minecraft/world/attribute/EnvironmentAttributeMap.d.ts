@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { EnvironmentAttribute } from '../../../../net/minecraft/world/attribute/EnvironmentAttribute.d.ts'
@@ -9,8 +10,8 @@ export class EnvironmentAttributeMap extends Object {
     static EMPTY: EnvironmentAttributeMap;
     static NETWORK_CODEC: Codec<EnvironmentAttributeMap>;
     static builder(): EnvironmentAttributeMap$Builder;
-    private constructor(entries: Map<EnvironmentAttribute<Object>, EnvironmentAttributeMap$Entry<Object, Object>>)
-    // private entries: Map<EnvironmentAttribute<Object>, EnvironmentAttributeMap$Entry<Object, Object>>;
+    private constructor(entries: JavaMap<EnvironmentAttribute<Object>, EnvironmentAttributeMap$Entry<Object, Object>>)
+    // private entries: JavaMap<EnvironmentAttribute<Object>, EnvironmentAttributeMap$Entry<Object, Object>>;
     applyModifier<Value extends unknown>(attribute: EnvironmentAttribute<Value>, baseValue: Value): Value;
     contains(attribute: EnvironmentAttribute<Object>): boolean;
     equals(obj: Object | null): boolean;

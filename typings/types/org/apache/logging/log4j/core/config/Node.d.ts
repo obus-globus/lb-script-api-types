@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { PluginType } from '../../../../../../org/apache/logging/log4j/core/config/plugins/util/PluginType.d.ts'
@@ -6,14 +7,14 @@ export class Node extends Object {
     constructor()
     constructor(node: Node)
     constructor(parent: Node, name: string, type: PluginType<Object>)
-    readonly attributes: { [key: string]: string };
+    readonly attributes: JavaMap<string, string>;
     readonly children: Node[];
     readonly name: string;
     readonly object: Object;
     readonly parent: Node;
     readonly type: PluginType<Object>;
     readonly value: string;
-    getAttributes(): { [key: string]: string };
+    getAttributes(): JavaMap<string, string>;
     getChildren(): Node[];
     getName(): string;
     getObject<T extends unknown>(): T;

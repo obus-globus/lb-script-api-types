@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -17,7 +18,7 @@ export class NewAttributeBands$Callable extends Object implements NewAttributeBa
     getBody(): NewAttributeBands$LayoutElement[];
     isBackwardsCallable(): boolean;
     pack(arg0: OutputStream): void;
-    renumberBci(arg0: IntList, arg1: Map<Label, number>): void;
+    renumberBci(arg0: IntList, arg1: JavaMap<Label, number>): void;
     setBackwardsCallable(): void;
     setBackwardsCallableIndex(arg0: number): void;
 }

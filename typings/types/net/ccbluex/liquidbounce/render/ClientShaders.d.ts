@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ShaderSource } from '../../../../com/mojang/blaze3d/shaders/ShaderSource.d.ts'
 import type { ShaderType } from '../../../../com/mojang/blaze3d/shaders/ShaderType.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -6,7 +7,7 @@ import type { Identifier } from '../../../../net/minecraft/resources/Identifier.
 export class ClientShaders extends Object implements ShaderSource {
     static Companion: ClientShaders$Companion;
     protected constructor(type: ShaderType)
-    // private shaders: Map<Identifier, string>;
+    // private shaders: JavaMap<Identifier, string>;
     readonly type: ShaderType;
     get(identifier: Identifier, type: ShaderType): string | null;
     // private newShader(id: string, path: string): Identifier;

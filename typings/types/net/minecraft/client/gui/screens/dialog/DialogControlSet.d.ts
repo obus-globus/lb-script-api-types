@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Supplier } from '../../../../../../java/util/function/Supplier.d.ts'
@@ -14,7 +15,7 @@ export class DialogControlSet extends Object {
     static EMPTY_ACTION: () => Optional<ClickEvent>;
     constructor(screen: DialogScreen<any>)
     // private screen: DialogScreen<any>;
-    // private valueGetters: { [key: string]: Action$ValueGetter };
+    // private valueGetters: JavaMap<string, Action$ValueGetter>;
     addInput(data: Input, output: (param0: LayoutElement) => void): void;
     bindAction(maybeAction: Optional<Action>): () => Optional<ClickEvent>;
     createActionButton(actionButton: ActionButton): Button$Builder;

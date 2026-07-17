@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { StackTraceElement } from '../../../../../java/lang/StackTraceElement.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -41,7 +42,7 @@ export class Logger extends AbstractLogger implements Supplier<LoggerConfig> {
     equals(o: Object | null): boolean;
     filterCount(): number;
     get(): LoggerConfig;
-    getAppenders(): { [key: string]: Appender };
+    getAppenders(): JavaMap<string, Appender>;
     getContext(): LoggerContext;
     getFilters(): Iterator<Filter>;
     getLevel(): Level;

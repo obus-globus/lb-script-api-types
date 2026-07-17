@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { DataFixer } from '../../../../../com/mojang/datafixers/DataFixer.d.ts'
 import type { PushbackInputStream } from '../../../../../java/io/PushbackInputStream.d.ts'
 import type { AutoCloseable } from '../../../../../java/lang/AutoCloseable.d.ts'
@@ -15,14 +16,14 @@ import type { SavedData } from '../../../../../net/minecraft/world/level/savedda
 import type { SavedDataType } from '../../../../../net/minecraft/world/level/saveddata/SavedDataType.d.ts'
 export class SavedDataStorage extends Object implements AutoCloseable {
     constructor(dataFolder: Path, fixerUpper: DataFixer, registries: HolderLookup$Provider)
-    // private cache: Map<SavedDataType<any>, Optional<SavedData>>;
+    // private cache: JavaMap<SavedDataType<any>, Optional<SavedData>>;
     // private closed: boolean;
     // private dataFolder: Path;
     // private fixerUpper: DataFixer;
     // private pendingWriteFuture: CompletableFuture<Object>;
     // private registries: HolderLookup$Provider;
     close(): void;
-    // private collectDirtyTagsToSave(): Map<SavedDataType<any>, CompoundTag>;
+    // private collectDirtyTagsToSave(): JavaMap<SavedDataType<any>, CompoundTag>;
     computeIfAbsent<T extends SavedData>(type: SavedDataType<T>): T;
     // private encodeUnchecked<T extends SavedData>(type: SavedDataType<T>, data: SavedData, ops: RegistryOps<Tag>): CompoundTag;
     get<T extends SavedData>(type: SavedDataType<T>): T;

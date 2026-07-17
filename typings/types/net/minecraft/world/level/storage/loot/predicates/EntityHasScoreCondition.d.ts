@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Record } from '../../../../../../../java/lang/Record.d.ts'
@@ -18,16 +19,16 @@ export class EntityHasScoreCondition extends Record implements LootItemCondition
     static MAP_CODEC: MapCodec<EntityHasScoreCondition>;
     static TYPED_CODEC: Codec<LootItemCondition>;
     static hasScores(paramtarget: LootContext$EntityTarget): EntityHasScoreCondition$Builder;
-    constructor(scores: { [key: string]: IntRange }, entityTarget: LootContext$EntityTarget)
+    constructor(scores: JavaMap<string, IntRange>, entityTarget: LootContext$EntityTarget)
     // private entityTarget: LootContext$EntityTarget;
-    // private scores: { [key: string]: IntRange };
+    // private scores: JavaMap<string, IntRange>;
     codec(): MapCodec<EntityHasScoreCondition>;
     entityTarget(): LootContext$EntityTarget;
     equals(o: Object | null): boolean;
     getReferencedContextParams(): ContextKey<Object>[];
     // private hasScore(context: LootContext, entity: Entity, scoreboard: Scoreboard, objectiveName: string, range: IntRange): boolean;
     hashCode(): number;
-    scores(): { [key: string]: IntRange };
+    scores(): JavaMap<string, IntRange>;
     test(context: LootContext): boolean;
     toString(): string;
     validate(context: ValidationContext): void;

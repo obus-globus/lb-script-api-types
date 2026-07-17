@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Digraph } from '../../../../de/odysseus/ithaka/digraph/Digraph.d.ts'
 import type { DigraphFactory } from '../../../../de/odysseus/ithaka/digraph/DigraphFactory.d.ts'
 import type { EdgeWeights } from '../../../../de/odysseus/ithaka/digraph/EdgeWeights.d.ts'
@@ -17,7 +18,7 @@ export class MapDigraph<V extends unknown> extends Object implements Digraph<V> 
     constructor(arg0: (param0: V, param1: V) => number, arg1: (param0: V, param1: V) => number)
     readonly edgeCount: number;
     // private edgeMapFactory: MapDigraph$EdgeMapFactory<V>;
-    // private vertexMap: Map<V, { [key: string]: any }>;
+    // private vertexMap: JavaMap<V, JavaMap<any, any>>;
     // private vertexMapFactory: MapDigraph$VertexMapFactory<V>;
     add(arg0: V): boolean;
     contains(arg0: V): boolean;

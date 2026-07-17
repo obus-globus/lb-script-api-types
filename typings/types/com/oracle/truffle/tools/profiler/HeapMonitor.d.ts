@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { EventBinding } from '../../../../../com/oracle/truffle/api/instrumentation/EventBinding.d.ts'
 import type { TruffleInstrument$Env } from '../../../../../com/oracle/truffle/api/instrumentation/TruffleInstrument$Env.d.ts'
 import type { LanguageInfo } from '../../../../../com/oracle/truffle/api/nodes/LanguageInfo.d.ts'
@@ -16,13 +17,13 @@ export class HeapMonitor extends Object implements Closeable {
     // private closed: boolean;
     readonly collecting: boolean;
     // private env: TruffleInstrument$Env;
-    // private initializedLanguages: Map<LanguageInfo, LanguageInfo>;
+    // private initializedLanguages: JavaMap<LanguageInfo, LanguageInfo>;
     // private newReferences: HeapMonitor$ObjectWeakReference[];
     // private processedReferences: HeapMonitor$ObjectWeakReference[];
     // private referenceExecutorService: ExecutorService;
     // private referenceFuture: Future<Object>;
     // private referenceQueue: ReferenceQueue<Object>;
-    // private summaryData: Map<LanguageInfo, { [key: string]: HeapSummary }>;
+    // private summaryData: JavaMap<LanguageInfo, JavaMap<string, HeapSummary>>;
     // private cleanReferenceQueue(): void;
     clearData(): void;
     close(): void;
@@ -31,6 +32,6 @@ export class HeapMonitor extends Object implements Closeable {
     // private processNewReferences(): void;
     // private resetMonitor(): void;
     setCollecting(collecting: boolean): void;
-    takeMetaObjectSummary(): Map<LanguageInfo, { [key: string]: HeapSummary }>;
+    takeMetaObjectSummary(): JavaMap<LanguageInfo, JavaMap<string, HeapSummary>>;
     takeSummary(): HeapSummary;
 }

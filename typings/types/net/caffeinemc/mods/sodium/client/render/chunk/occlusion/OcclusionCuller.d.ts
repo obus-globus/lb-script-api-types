@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { RenderSection } from '../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/RenderSection.d.ts'
 import type { OcclusionCuller$GraphOcclusionVisitor } from '../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/occlusion/OcclusionCuller$GraphOcclusionVisitor.d.ts'
@@ -11,7 +12,7 @@ import type { SectionPos } from '../../../../../../../../net/minecraft/core/Sect
 import type { Level } from '../../../../../../../../net/minecraft/world/level/Level.d.ts'
 export class OcclusionCuller extends Object {
     static isWithinNearbySectionFrustum(paramarg0: Viewport, paramarg1: RenderSection): boolean;
-    constructor(arg0: { [key: string]: any }, arg1: Level)
+    constructor(arg0: JavaMap<any, any>, arg1: Level)
     // private inBoundsOrigin: SectionPos;
     // private level: Level;
     // private origin: SectionPos;
@@ -21,7 +22,7 @@ export class OcclusionCuller extends Object {
     // private queue: DoubleBufferedQueue<RenderSection>;
     // private searchDistanceLocal: number;
     // private searchDistanceRegular: number;
-    // private sections: { [key: string]: any };
+    // private sections: JavaMap<any, any>;
     // private token: number;
     // private tokenSource: number;
     // private useOcclusionCulling: boolean;

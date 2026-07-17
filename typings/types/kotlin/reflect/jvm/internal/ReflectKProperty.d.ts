@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Field } from '../../../../java/lang/reflect/Field.d.ts'
 import type { GenericDeclaration } from '../../../../java/lang/reflect/GenericDeclaration.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -9,6 +10,6 @@ export interface ReflectKProperty<V extends unknown> extends Object, KotlinGener
     readonly javaField: Field | null;
     readonly signature: string;
     call(...args: (Object | null)[]): V;
-    callBy(args: Map<KParameter, Object | null>): V;
+    callBy(args: JavaMap<KParameter, Object | null>): V;
     findJavaDeclaration(): GenericDeclaration | null;
 }

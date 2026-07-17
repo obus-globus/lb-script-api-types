@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ExecutableNode } from '../../../../../com/oracle/truffle/api/nodes/ExecutableNode.d.ts'
 import type { NodeClass } from '../../../../../com/oracle/truffle/api/nodes/NodeClass.d.ts'
 import type { NodeCost } from '../../../../../com/oracle/truffle/api/nodes/NodeCost.d.ts'
@@ -31,7 +32,7 @@ export abstract class Node extends Object implements NodeInterface, Cloneable {
     deepCopy(): Node;
     getChildren(): Node[];
     getCost(): NodeCost;
-    getDebugProperties(): { [key: string]: Object };
+    getDebugProperties(): JavaMap<string, Object>;
     getDescription(): string;
     getEncapsulatingSourceSection(): SourceSection;
     // private getExecutableNode(): ExecutableNode;

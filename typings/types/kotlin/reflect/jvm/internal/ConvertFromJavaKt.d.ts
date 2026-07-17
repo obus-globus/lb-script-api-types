@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Member } from '../../../../java/lang/reflect/Member.d.ts'
 import type { Type } from '../../../../java/lang/reflect/Type.d.ts'
@@ -17,6 +18,6 @@ export class ConvertFromJavaKt extends Object {
     static getPurelyImplementedSupertype(kClass: KClassImpl<Object>): KType | null;
     static isEnumValuesValueOfMethod(self: Member): boolean;
     static isMappedBuiltin(paramarg0: KClass<Object>): boolean;
-    static toKType(self: Type, knownTypeParameters: Map<TypeVariable<any>, KTypeParameter>, nullability: TypeNullability, isForAnnotationParameter: boolean, replaceNonArrayArgumentsWithStarProjections: boolean, howThisTypeIsUsed: TypeUsage): KType;
+    static toKType(self: Type, knownTypeParameters: JavaMap<TypeVariable<any>, KTypeParameter>, nullability: TypeNullability, isForAnnotationParameter: boolean, replaceNonArrayArgumentsWithStarProjections: boolean, howThisTypeIsUsed: TypeUsage): KType;
     static toKTypeParameters(self: TypeVariable<any>[], container: KTypeParameterOwnerImpl): KTypeParameter[];
 }

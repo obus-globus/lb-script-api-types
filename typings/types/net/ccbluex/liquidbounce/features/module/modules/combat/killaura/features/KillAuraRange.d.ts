@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../../JavaMap.d.ts'
 import type { JsonObject } from '../../../../../../../../../com/google/gson/JsonObject.d.ts'
 import type { GpuDevice } from '../../../../../../../../../com/mojang/blaze3d/systems/GpuDevice.d.ts'
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
@@ -33,7 +34,7 @@ export class KillAuraRange extends RangeValueGroup implements MinecraftShortcuts
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraRange.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraRange.kt:58}
      */
-    migrateFromValues(map: { [key: string]: JsonObject[] }): void;
+    migrateFromValues(map: JavaMap<string, JsonObject[]>): void;
     update(): void;
     // private withDummy<T extends unknown>(name: string, jsonObject: JsonObject, value: T): T;
 }

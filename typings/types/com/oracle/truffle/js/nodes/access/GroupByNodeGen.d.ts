@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { GroupByNode } from '../../../../../../com/oracle/truffle/js/nodes/access/GroupByNode.d.ts'
 import type { GroupByNodeGen$GroupByData } from '../../../../../../com/oracle/truffle/js/nodes/access/GroupByNodeGen$GroupByData.d.ts'
@@ -9,6 +10,6 @@ export class GroupByNodeGen extends GroupByNode {
     private constructor(context: JSContext, toPropertyKeyCoercion: boolean)
     // private groupBy_cache: GroupByNodeGen$GroupByData;
     // private state_0_: number;
-    execute(arg0Value: Object, arg1Value: Object): Map<Object, Object[]>;
-    // private executeAndSpecialize(arg0Value: Object, arg1Value: Object): Map<Object, Object[]>;
+    execute(arg0Value: Object, arg1Value: Object): JavaMap<Object, Object[]>;
+    // private executeAndSpecialize(arg0Value: Object, arg1Value: Object): JavaMap<Object, Object[]>;
 }

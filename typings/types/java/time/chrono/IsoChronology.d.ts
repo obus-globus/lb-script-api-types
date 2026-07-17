@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { ObjectInputStream } from '../../../java/io/ObjectInputStream.d.ts'
 import type { Serializable } from '../../../java/io/Serializable.d.ts'
 import type { Clock } from '../../../java/time/Clock.d.ts'
@@ -43,10 +44,10 @@ export class IsoChronology extends AbstractChronology implements Serializable {
     prolepticYear(arg0: Era, arg1: number): number;
     range(arg0: ChronoField): ValueRange;
     // private readObject(arg0: ObjectInputStream): void;
-    resolveDate(arg0: Map<TemporalField, number>, arg1: ResolverStyle): LocalDate;
-    resolveProlepticMonth(arg0: Map<TemporalField, number>, arg1: ResolverStyle): void;
-    resolveYMD(arg0: Map<TemporalField, number>, arg1: ResolverStyle): LocalDate;
-    resolveYearOfEra(arg0: Map<TemporalField, number>, arg1: ResolverStyle): LocalDate;
+    resolveDate(arg0: JavaMap<TemporalField, number>, arg1: ResolverStyle): LocalDate;
+    resolveProlepticMonth(arg0: JavaMap<TemporalField, number>, arg1: ResolverStyle): void;
+    resolveYMD(arg0: JavaMap<TemporalField, number>, arg1: ResolverStyle): LocalDate;
+    resolveYearOfEra(arg0: JavaMap<TemporalField, number>, arg1: ResolverStyle): LocalDate;
     writeReplace(): Object;
     zonedDateTime(arg0: Instant, arg1: ZoneId): ZonedDateTime;
     zonedDateTime(arg0: TemporalAccessor): ZonedDateTime;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { FabricRenderState } from '../../../../../net/fabricmc/fabric/api/client/rendering/v1/FabricRenderState.d.ts'
 import type { RenderStateDataKey } from '../../../../../net/fabricmc/fabric/api/client/rendering/v1/RenderStateDataKey.d.ts'
@@ -13,7 +14,7 @@ export class LightmapRenderState extends Object implements FabricRenderState {
     needsUpdate: boolean;
     nightVisionColor: Vector3fc;
     nightVisionEffectIntensity: number;
-    // private renderStateData: Map<Object | null, Object | null>;
+    // private renderStateData: JavaMap<Object | null, Object | null>;
     skyFactor: number;
     skyLightColor: Vector3fc;
     clearExtraData(): void;

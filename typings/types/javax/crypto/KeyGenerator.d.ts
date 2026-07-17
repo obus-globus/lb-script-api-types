@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Provider$Service } from '../../java/security/Provider$Service.d.ts'
 import type { SecureRandom } from '../../java/security/SecureRandom.d.ts'
 import type { AlgorithmParameterSpec } from '../../java/security/spec/AlgorithmParameterSpec.d.ts'
@@ -8,21 +9,21 @@ import type { Iterator } from '../../java/util/Iterator.d.ts'
 export class KeyGenerator extends Object {
     static getInstance(paramarg0: string): KeyGenerator;
     static getInstance(paramarg0: string, paramarg1: string): KeyGenerator;
-    static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): KeyGenerator;
-    constructor(arg0: KeyGeneratorSpi, arg1: { [key: string]: any }, arg2: string)
+    static getInstance(paramarg0: string, paramarg1: JavaMap<any, any>): KeyGenerator;
+    constructor(arg0: KeyGeneratorSpi, arg1: JavaMap<any, any>, arg2: string)
     readonly algorithm: string;
     // private initKeySize: number;
     // private initParams: AlgorithmParameterSpec;
     // private initRandom: SecureRandom;
     // private initType: number;
     // private lock: Object;
-    readonly provider: { [key: string]: any };
+    readonly provider: JavaMap<any, any>;
     // private serviceIterator: Iterator<Provider$Service>;
     // private spi: KeyGeneratorSpi;
     disableFailover(): void;
     generateKey(): SecretKey;
     getAlgorithm(): string;
-    getProvider(): { [key: string]: any };
+    getProvider(): JavaMap<any, any>;
     // private getProviderName(): string;
     init(arg0: SecureRandom): void;
     init(arg0: AlgorithmParameterSpec): void;

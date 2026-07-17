@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ProcessingEnvironment } from '../../../../javax/annotation/processing/ProcessingEnvironment.d.ts'
 import type { RoundEnvironment } from '../../../../javax/annotation/processing/RoundEnvironment.d.ts'
 import type { AnnotationMirror } from '../../../../javax/lang/model/element/AnnotationMirror.d.ts'
@@ -27,13 +28,13 @@ export class AnnotatedMixins extends Object implements ITokenProvider, IJavadocP
     static getMixinsForEnvironment(paramarg0: ProcessingEnvironment): AnnotatedMixins;
     private constructor(arg0: ProcessingEnvironment)
     // private env: IMixinAnnotationProcessor$CompilerEnvironment;
-    // private mixins: { [key: string]: AnnotatedMixin };
+    // private mixins: JavaMap<string, AnnotatedMixin>;
     // private mixinsForPass: AnnotatedMixin[];
     // private obf: IObfuscationManager;
     // private processingEnv: ProcessingEnvironment;
-    readonly properties: { [key: string]: any };
-    // private targets: { [key: string]: any };
-    // private tokenCache: { [key: string]: number };
+    readonly properties: JavaMap<any, any>;
+    // private targets: JavaMap<any, any>;
+    // private tokenCache: JavaMap<string, number>;
     // private validators: IMixinValidator[];
     // private checkPluginVersion(arg0: string): string;
     getCompilerEnvironment(): IMixinAnnotationProcessor$CompilerEnvironment;
@@ -48,7 +49,7 @@ export class AnnotatedMixins extends Object implements ITokenProvider, IJavadocP
     getOption(arg0: string, arg1: string): string;
     getOptions(arg0: string): string[];
     getProcessingEnvironment(): ProcessingEnvironment;
-    getProperties(): { [key: string]: any };
+    getProperties(): JavaMap<any, any>;
     getSimulatedHandle(arg0: string, arg1: TypeMirror): TypeHandle;
     getToken(arg0: string): number;
     getTokenProvider(): ITokenProvider;
@@ -56,7 +57,7 @@ export class AnnotatedMixins extends Object implements ITokenProvider, IJavadocP
     getTypeHandle(arg0: Object): TypeHandle;
     getTypeHandle(arg0: string): TypeHandle;
     getTypeProvider(): ITypeHandleProvider;
-    initTargetMap(): { [key: string]: any };
+    initTargetMap(): JavaMap<any, any>;
     // private initTokenCache(arg0: string): void;
     onPassCompleted(arg0: RoundEnvironment): void;
     onPassStarted(): void;

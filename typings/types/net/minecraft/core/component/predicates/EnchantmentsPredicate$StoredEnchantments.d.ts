@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { EnchantmentPredicate } from '../../../../../net/minecraft/advancements/predicates/EnchantmentPredicate.d.ts'
@@ -13,7 +14,7 @@ import type { ItemEnchantments } from '../../../../../net/minecraft/world/item/e
 export class EnchantmentsPredicate$StoredEnchantments extends EnchantmentsPredicate {
     static CODEC: Codec<EnchantmentsPredicate$StoredEnchantments>;
     static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<any>>;
-    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
+    static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, JavaMap<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
     static codec<T extends EnchantmentsPredicate>(paramconstructor: (param0: EnchantmentPredicate[]) => T): Codec<T>;
     static enchantments(parampredicates: EnchantmentPredicate[]): EnchantmentsPredicate$Enchantments;
     static storedEnchantments(parampredicates: EnchantmentPredicate[]): EnchantmentsPredicate$StoredEnchantments;

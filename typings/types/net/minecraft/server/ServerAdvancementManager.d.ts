@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { JsonElement } from '../../../com/google/gson/JsonElement.d.ts'
 import type { Codec } from '../../../com/mojang/serialization/Codec.d.ts'
 import type { DynamicOps } from '../../../com/mojang/serialization/DynamicOps.d.ts'
@@ -14,14 +15,14 @@ import type { ResourceManager } from '../../../net/minecraft/server/packs/resour
 import type { SimpleJsonResourceReloadListener } from '../../../net/minecraft/server/packs/resources/SimpleJsonResourceReloadListener.d.ts'
 import type { ProfilerFiller } from '../../../net/minecraft/util/profiling/ProfilerFiller.d.ts'
 export class ServerAdvancementManager extends SimpleJsonResourceReloadListener<Advancement> implements FabricResourceReloader {
-    static scanDirectory<T extends unknown>(parammanager: ResourceManager, paramlister: FileToIdConverter, paramops: DynamicOps<JsonElement>, paramcodec: Codec<T>, paramresult: Map<Identifier, T>): void;
-    static scanDirectory<T extends unknown>(parammanager: ResourceManager, paramregistryKey: ResourceKey<T[]>, paramops: DynamicOps<JsonElement>, paramcodec: Codec<T>, paramresult: Map<Identifier, T>): void;
+    static scanDirectory<T extends unknown>(parammanager: ResourceManager, paramlister: FileToIdConverter, paramops: DynamicOps<JsonElement>, paramcodec: Codec<T>, paramresult: JavaMap<Identifier, T>): void;
+    static scanDirectory<T extends unknown>(parammanager: ResourceManager, paramregistryKey: ResourceKey<T[]>, paramops: DynamicOps<JsonElement>, paramcodec: Codec<T>, paramresult: JavaMap<Identifier, T>): void;
     constructor(registries: HolderLookup$Provider)
-    // private advancements: Map<Identifier, AdvancementHolder>;
+    // private advancements: JavaMap<Identifier, AdvancementHolder>;
     // private id: Identifier;
     // private registries: HolderLookup$Provider;
     // private tree: AdvancementTree;
-    apply(preparations: Map<Identifier, Advancement>, manager: ResourceManager, profiler: ProfilerFiller): void;
+    apply(preparations: JavaMap<Identifier, Advancement>, manager: ResourceManager, profiler: ProfilerFiller): void;
     fabric$getId(): Identifier;
     get(id: Identifier): AdvancementHolder;
     getAllAdvancements(): AdvancementHolder[];

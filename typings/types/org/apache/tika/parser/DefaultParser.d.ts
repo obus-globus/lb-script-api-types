@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { ClassLoader } from '../../../../java/lang/ClassLoader.d.ts'
 import type { ServiceLoader } from '../../../../org/apache/tika/config/ServiceLoader.d.ts'
@@ -19,6 +20,6 @@ export class DefaultParser extends CompositeParser {
     constructor(arg0: MediaTypeRegistry, arg1: ServiceLoader, arg2: EncodingDetector, arg3: Renderer)
     // private loader: ServiceLoader;
     getAllComponentParsers(): Parser[];
-    getParsers(): Map<MediaType, Parser>;
-    getParsers(arg0: ParseContext): Map<MediaType, Parser>;
+    getParsers(): JavaMap<MediaType, Parser>;
+    getParsers(arg0: ParseContext): JavaMap<MediaType, Parser>;
 }

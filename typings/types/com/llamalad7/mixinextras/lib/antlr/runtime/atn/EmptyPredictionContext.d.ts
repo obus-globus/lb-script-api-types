@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Recognizer } from '../../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/Recognizer.d.ts'
 import type { RuleContext } from '../../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/RuleContext.d.ts'
 import type { ATN } from '../../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/atn/ATN.d.ts'
@@ -11,7 +12,7 @@ export class EmptyPredictionContext extends SingletonPredictionContext {
     static Instance: EmptyPredictionContext;
     static create(paramarg0: PredictionContext, paramarg1: number): SingletonPredictionContext;
     static fromRuleContext(paramarg0: ATN, paramarg1: RuleContext): PredictionContext;
-    static getCachedContext(paramarg0: PredictionContext, paramarg1: PredictionContextCache, paramarg2: Map<PredictionContext, PredictionContext>): PredictionContext;
+    static getCachedContext(paramarg0: PredictionContext, paramarg1: PredictionContextCache, paramarg2: JavaMap<PredictionContext, PredictionContext>): PredictionContext;
     static merge(paramarg0: PredictionContext, paramarg1: PredictionContext, paramarg2: boolean, paramarg3: DoubleKeyMap<PredictionContext, PredictionContext, PredictionContext>): PredictionContext;
     static mergeArrays(paramarg0: ArrayPredictionContext, paramarg1: ArrayPredictionContext, paramarg2: boolean, paramarg3: DoubleKeyMap<PredictionContext, PredictionContext, PredictionContext>): PredictionContext;
     static mergeRoot(paramarg0: SingletonPredictionContext, paramarg1: SingletonPredictionContext, paramarg2: boolean): PredictionContext;

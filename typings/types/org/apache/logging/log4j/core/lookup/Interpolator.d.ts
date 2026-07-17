@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { WeakReference } from '../../../../../../java/lang/ref/WeakReference.d.ts'
 import type { Throwable } from '../../../../../../java/lang/Throwable.d.ts'
 import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
@@ -11,16 +12,16 @@ export class Interpolator extends AbstractConfigurationAwareLookup implements Lo
     static CATEGORY: string;
     static PREFIX_SEPARATOR: string;
     constructor()
-    constructor(properties: { [key: string]: string })
+    constructor(properties: JavaMap<string, string>)
     constructor(defaultLookup: StrLookup)
     constructor(defaultLookup: StrLookup, pluginPackages: string[])
     readonly defaultLookup: StrLookup;
     loggerContext: WeakReference<LoggerContext>;
-    readonly strLookupMap: { [key: string]: StrLookup };
+    readonly strLookupMap: JavaMap<string, StrLookup>;
     evaluate(key: string): LookupResult;
     evaluate(event: LogEvent, var_: string): LookupResult;
     getDefaultLookup(): StrLookup;
-    getStrLookupMap(): { [key: string]: StrLookup };
+    getStrLookupMap(): JavaMap<string, StrLookup>;
     // private handleError(lookupKey: string, t: Throwable): void;
     lookup(key: string): string;
     lookup(event: LogEvent, var_: string): string;

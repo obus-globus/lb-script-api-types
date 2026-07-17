@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { IntList } from '../../../../../../org/apache/commons/compress/harmony/pack200/IntList.d.ts'
@@ -17,5 +18,5 @@ export class NewAttributeBands$Union extends NewAttributeBands$LayoutElement {
     getUnionCases(): NewAttributeBands$UnionCase[];
     getUnionTag(): NewAttributeBands$Integral;
     pack(arg0: OutputStream): void;
-    renumberBci(arg0: IntList, arg1: Map<Label, number>): void;
+    renumberBci(arg0: IntList, arg1: JavaMap<Label, number>): void;
 }

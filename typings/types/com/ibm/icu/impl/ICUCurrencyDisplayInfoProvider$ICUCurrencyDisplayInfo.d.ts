@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { CurrencyData$CurrencyDisplayInfo } from '../../../../com/ibm/icu/impl/CurrencyData$CurrencyDisplayInfo.d.ts'
 import type { CurrencyData$CurrencyFormatInfo } from '../../../../com/ibm/icu/impl/CurrencyData$CurrencyFormatInfo.d.ts'
 import type { CurrencyData$CurrencySpacingInfo } from '../../../../com/ibm/icu/impl/CurrencyData$CurrencySpacingInfo.d.ts'
@@ -23,13 +24,13 @@ export class ICUCurrencyDisplayInfoProvider$ICUCurrencyDisplayInfo extends Curre
     // private pluralsDataCache: string[];
     // private rb: ICUResourceBundle;
     // private spacingInfoCache: CurrencyData$CurrencySpacingInfo;
-    // private unitPatternsCache: { [key: string]: string };
+    // private unitPatternsCache: JavaMap<string, string>;
     // private variantSymbolCache: ICUCurrencyDisplayInfoProvider$ICUCurrencyDisplayInfo$VariantSymbol;
     fetchFormattingData(arg0: string): ICUCurrencyDisplayInfoProvider$ICUCurrencyDisplayInfo$FormattingData;
     fetchParsingData(): ICUCurrencyDisplayInfoProvider$ICUCurrencyDisplayInfo$ParsingData;
     fetchPluralsData(arg0: string): string[];
     fetchSpacingInfo(): CurrencyData$CurrencySpacingInfo;
-    fetchUnitPatterns(): { [key: string]: string };
+    fetchUnitPatterns(): JavaMap<string, string>;
     fetchVariantSymbol(arg0: string, arg1: string): ICUCurrencyDisplayInfoProvider$ICUCurrencyDisplayInfo$VariantSymbol;
     getFormalSymbol(arg0: string): string;
     getFormatInfo(arg0: string): CurrencyData$CurrencyFormatInfo;
@@ -39,8 +40,8 @@ export class ICUCurrencyDisplayInfoProvider$ICUCurrencyDisplayInfo extends Curre
     getSpacingInfo(): CurrencyData$CurrencySpacingInfo;
     getSymbol(arg0: string): string;
     getULocale(): ULocale;
-    getUnitPatterns(): { [key: string]: string };
+    getUnitPatterns(): JavaMap<string, string>;
     getVariantSymbol(arg0: string): string;
-    nameMap(): { [key: string]: string };
-    symbolMap(): { [key: string]: string };
+    nameMap(): JavaMap<string, string>;
+    symbolMap(): JavaMap<string, string>;
 }

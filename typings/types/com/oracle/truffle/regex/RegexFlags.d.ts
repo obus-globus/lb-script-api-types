@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { AbstractConstantKeysObject } from '../../../../com/oracle/truffle/regex/AbstractConstantKeysObject.d.ts'
 import type { AbstractRegexObject } from '../../../../com/oracle/truffle/regex/AbstractRegexObject.d.ts'
 import type { RegexFlags$Builder } from '../../../../com/oracle/truffle/regex/RegexFlags$Builder.d.ts'
@@ -9,8 +10,8 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class RegexFlags extends AbstractConstantKeysObject implements JsonConvertible {
     static DEFAULT: RegexFlags;
     static builder(): RegexFlags$Builder;
-    static createNamedCaptureGroupMapInt(paramnamedCaptureGroups: { [key: string]: number[] }): AbstractRegexObject;
-    static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: { [key: string]: number[] }): AbstractRegexObject;
+    static createNamedCaptureGroupMapInt(paramnamedCaptureGroups: JavaMap<string, number[]>): AbstractRegexObject;
+    static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: JavaMap<string, number[]>): AbstractRegexObject;
     static isValidFlagChar(paramcandidateChar: string): boolean;
     static isValidLocalFlagChar(paramcandidateChar: string): boolean;
     static parseFlags(paramsource: RegexSource): RegexFlags;

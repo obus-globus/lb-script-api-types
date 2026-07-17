@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Tag } from '../../../../../com/viaversion/nbt/tag/Tag.d.ts'
 import type { BiMappings } from '../../../../../com/viaversion/viaversion/api/data/BiMappings.d.ts'
 import type { FullMappings } from '../../../../../com/viaversion/viaversion/api/data/FullMappings.d.ts'
@@ -31,7 +32,7 @@ export class MappingDataBase extends Object implements MappingData {
     slotDisplayMappings: FullMappings;
     soundMappings: Mappings;
     statisticsMappings: Mappings;
-    // private tags: Map<RegistryType, TagData[]>;
+    // private tags: JavaMap<RegistryType, TagData[]>;
     // private unmappedVersion: string;
     changedBlocks(): (Object | null)[];
     checkValidity(arg0: number, arg1: number, arg2: string): number;

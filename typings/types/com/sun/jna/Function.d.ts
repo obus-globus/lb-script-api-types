@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { NativeLibrary } from '../../../com/sun/jna/NativeLibrary.d.ts'
 import type { Pointer } from '../../../com/sun/jna/Pointer.d.ts'
 import type { TypeMapper } from '../../../com/sun/jna/TypeMapper.d.ts'
@@ -26,7 +27,7 @@ export class Function extends Pointer {
     // private encoding: string;
     // private functionName: string;
     // private library: NativeLibrary;
-    // private options: { [key: string]: Object | null };
+    // private options: JavaMap<string, Object | null>;
     // private checkCallingConvention(arg0: number): void;
     // private convertArgument(arg0: Object[], arg1: number, arg2: Method, arg3: TypeMapper, arg4: boolean, arg5: Class<Object>): Object;
     equals(arg0: Object | null): boolean;
@@ -34,8 +35,8 @@ export class Function extends Pointer {
     getName(): string;
     hashCode(): number;
     invoke(arg0: Class<Object>, arg1: Object[]): Object;
-    invoke(arg0: Class<Object>, arg1: Object[], arg2: { [key: string]: Object | null }): Object;
-    invoke(arg0: Method, arg1: Class<Object>[], arg2: Class<Object>, arg3: Object[], arg4: { [key: string]: Object | null }): Object;
+    invoke(arg0: Class<Object>, arg1: Object[], arg2: JavaMap<string, Object | null>): Object;
+    invoke(arg0: Method, arg1: Class<Object>[], arg2: Class<Object>, arg3: Object[], arg4: JavaMap<string, Object | null>): Object;
     invoke(arg0: Object[]): void;
     invoke(arg0: Object[], arg1: Class<Object>, arg2: boolean): Object;
     invoke(arg0: Object[], arg1: Class<Object>, arg2: boolean, arg3: number): Object;

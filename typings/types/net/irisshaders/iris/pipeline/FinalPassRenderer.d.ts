@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ShaderStorageBufferHolder } from '../../../../net/irisshaders/iris/gl/buffer/ShaderStorageBufferHolder.d.ts'
@@ -18,15 +19,15 @@ import type { RenderTargets } from '../../../../net/irisshaders/iris/targets/Ren
 import type { FrameUpdateNotifier } from '../../../../net/irisshaders/iris/uniforms/FrameUpdateNotifier.d.ts'
 import type { CustomUniforms } from '../../../../net/irisshaders/iris/uniforms/custom/CustomUniforms.d.ts'
 export class FinalPassRenderer extends Object {
-    constructor(arg0: WorldRenderingPipeline, arg1: ProgramSet, arg2: RenderTargets, arg3: TextureAccess, arg4: ShaderStorageBufferHolder, arg5: FrameUpdateNotifier, arg6: number[], arg7: CenterDepthSampler, arg8: () => ShadowRenderTargets, arg9: { [key: string]: TextureAccess }, arg10: { [key: string]: TextureAccess }, arg11: GlImage[], arg12: number[], arg13: CustomUniforms)
+    constructor(arg0: WorldRenderingPipeline, arg1: ProgramSet, arg2: RenderTargets, arg3: TextureAccess, arg4: ShaderStorageBufferHolder, arg5: FrameUpdateNotifier, arg6: number[], arg7: CenterDepthSampler, arg8: () => ShadowRenderTargets, arg9: JavaMap<string, TextureAccess>, arg10: JavaMap<string, TextureAccess>, arg11: GlImage[], arg12: number[], arg13: CustomUniforms)
     // private baseline: GlFramebuffer;
     // private centerDepthSampler: CenterDepthSampler;
     // private colorHolder: GlFramebuffer;
     // private customImages: GlImage[];
-    // private customTextureIds: { [key: string]: TextureAccess };
+    // private customTextureIds: JavaMap<string, TextureAccess>;
     // private customUniforms: CustomUniforms;
     // private finalPass: FinalPassRenderer$Pass;
-    // private irisCustomTextures: { [key: string]: TextureAccess };
+    // private irisCustomTextures: JavaMap<string, TextureAccess>;
     // private lastColorTextureId: number;
     // private lastColorTextureVersion: number;
     // private noiseTexture: TextureAccess;

@@ -1,7 +1,8 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class Float2IntOpenHashMap$MapSpliterator<ConsumerType extends unknown, SplitType extends Float2IntOpenHashMap$MapSpliterator<ConsumerType, SplitType>> extends Object {
-    constructor(null_: { [key: string]: any })
-    constructor(null_: { [key: string]: any }, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
+    constructor(null_: JavaMap<any, any>)
+    constructor(null_: JavaMap<any, any>, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
     // private c: number;
     // private hasSplit: boolean;
     // private max: number;

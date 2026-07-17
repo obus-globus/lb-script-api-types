@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { StringBuilder } from '../../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Level } from '../../../../../../org/apache/logging/log4j/Level.d.ts'
@@ -9,9 +10,9 @@ import type { PatternFormatter } from '../../../../../../org/apache/logging/log4
 export class HighlightConverter extends LogEventPatternConverter implements AnsiConverter {
     static CATEGORY: string;
     static newInstance(paramconfig: Configuration, paramoptions: string[]): HighlightConverter;
-    private constructor(patternFormatters: PatternFormatter[], levelStyles: { [key: string]: string }, noAnsi: boolean)
+    private constructor(patternFormatters: PatternFormatter[], levelStyles: JavaMap<string, string>, noAnsi: boolean)
     // private defaultStyle: string;
-    // private levelStyles: { [key: string]: string };
+    // private levelStyles: JavaMap<string, string>;
     // private noAnsi: boolean;
     // private patternFormatters: PatternFormatter[];
     format(obj: Object, output: StringBuilder): void;

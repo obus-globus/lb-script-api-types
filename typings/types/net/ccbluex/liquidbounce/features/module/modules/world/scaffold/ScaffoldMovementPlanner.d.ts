@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { ScaffoldMovementPlanner$SupportCandidate } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/world/scaffold/ScaffoldMovementPlanner$SupportCandidate.d.ts'
 import type { ScaffoldMovementPlanner$SupportReference } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/world/scaffold/ScaffoldMovementPlanner$SupportReference.d.ts'
@@ -17,8 +18,8 @@ export class ScaffoldMovementPlanner extends Object {
     // private lastSupportReference: ScaffoldMovementPlanner$SupportReference | null;
     // private offsetsToTry: number[];
     // private chooseDirection(currentAngle: number): Vec3;
-    // private chooseStableSupportCandidate(candidates: Map<BlockPos, ScaffoldMovementPlanner$SupportCandidate>, bestCandidate: ScaffoldMovementPlanner$SupportCandidate): ScaffoldMovementPlanner$SupportCandidate;
-    // private collectSupportCandidates(): Map<BlockPos, ScaffoldMovementPlanner$SupportCandidate>;
+    // private chooseStableSupportCandidate(candidates: JavaMap<BlockPos, ScaffoldMovementPlanner$SupportCandidate>, bestCandidate: ScaffoldMovementPlanner$SupportCandidate): ScaffoldMovementPlanner$SupportCandidate;
+    // private collectSupportCandidates(): JavaMap<BlockPos, ScaffoldMovementPlanner$SupportCandidate>;
     // private createSupportCandidate(blockPos: BlockPos): ScaffoldMovementPlanner$SupportCandidate;
     // private debugLastPlacedBlocks(lastPlacedBlocksToConsider: BlockPos[]): void;
     // private divergesTooMuchFromDirection(lastBlocksLine: Line, direction: Vec3): boolean;

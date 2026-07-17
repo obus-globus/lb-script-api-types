@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Predicate } from '../../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -27,13 +28,13 @@ export class VillagerProfession extends Record {
     static TOOLSMITH: ResourceKey<VillagerProfession>;
     static WEAPONSMITH: ResourceKey<VillagerProfession>;
     static bootstrap(paramregistry: VillagerProfession[]): VillagerProfession;
-    constructor(name: Component, heldJobSite: (param0: Holder<PoiType>) => boolean, acquirableJobSite: (param0: Holder<PoiType>) => boolean, requestedItems: Item[], secondaryPoi: Block[], workSound: SoundEvent, tradeSetsByLevel: { [key: string]: any })
+    constructor(name: Component, heldJobSite: (param0: Holder<PoiType>) => boolean, acquirableJobSite: (param0: Holder<PoiType>) => boolean, requestedItems: Item[], secondaryPoi: Block[], workSound: SoundEvent, tradeSetsByLevel: JavaMap<any, any>)
     // private acquirableJobSite: (param0: Holder<PoiType>) => boolean;
     // private heldJobSite: (param0: Holder<PoiType>) => boolean;
     // private name: Component;
     // private requestedItems: Item[];
     // private secondaryPoi: Block[];
-    // private tradeSetsByLevel: { [key: string]: any };
+    // private tradeSetsByLevel: JavaMap<any, any>;
     // private workSound: SoundEvent;
     acquirableJobSite(): (param0: Holder<PoiType>) => boolean;
     equals(o: Object | null): boolean;
@@ -44,6 +45,6 @@ export class VillagerProfession extends Record {
     requestedItems(): Item[];
     secondaryPoi(): Block[];
     toString(): string;
-    tradeSetsByLevel(): { [key: string]: any };
+    tradeSetsByLevel(): JavaMap<any, any>;
     workSound(): SoundEvent;
 }

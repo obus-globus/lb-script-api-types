@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Duration } from '../../../../java/time/Duration.d.ts'
 import type { UUID } from '../../../../java/util/UUID.d.ts'
 import type { AtomicReference } from '../../../../java/util/concurrent/atomic/AtomicReference.d.ts'
@@ -35,14 +36,14 @@ export class ClientHandshakePacketListenerImpl extends Object implements PacketC
     constructor(connection: Connection, minecraft: Minecraft, serverData: ServerData, parent: Screen, newWorld: boolean, worldLoadDuration: Duration, updateStatus: (param0: Component) => void, levelLoadTracker: LevelLoadTracker, transferState: TransferState)
     readonly addon: ClientLoginNetworkAddon;
     readonly connection: Connection;
-    // private cookies: Map<Identifier, number[]>;
+    // private cookies: JavaMap<Identifier, number[]>;
     // private levelLoadTracker: LevelLoadTracker;
     // private minecraft: Minecraft;
     readonly minigameName: string;
     // private newWorld: boolean;
     // private parent: Screen;
     // private seenInsecureChatWarning: boolean;
-    // private seenPlayers: Map<UUID, PlayerInfo>;
+    // private seenPlayers: JavaMap<UUID, PlayerInfo>;
     // private serverData: ServerData;
     // private state: AtomicReference<ClientHandshakePacketListenerImpl$State>;
     // private updateStatus: (param0: Component) => void;

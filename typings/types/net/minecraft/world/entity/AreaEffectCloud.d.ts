@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { DataComponentGetter } from '../../../../net/minecraft/core/component/DataComponentGetter.d.ts'
 import type { DataComponentType } from '../../../../net/minecraft/core/component/DataComponentType.d.ts'
@@ -84,7 +85,7 @@ export class AreaEffectCloud extends Entity implements TraceableEntity {
     readonly radiusOnUse: number;
     readonly radiusPerTick: number;
     // private reapplicationDelay: number;
-    // private victims: Map<Entity, number>;
+    // private victims: JavaMap<Entity, number>;
     readonly waitTime: number;
     addAdditionalSaveData(output: ValueOutput): void;
     addEffect(effect: MobEffectInstance): void;

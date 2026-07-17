@@ -1,13 +1,14 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 import type { BedrockTextFormatting$Type } from '../../../../net/lenni0451/mcstructs_bedrock/text/BedrockTextFormatting$Type.d.ts'
 export class BedrockTextFormatting extends Enum<BedrockTextFormatting> {
-    static ALL: { [key: string]: BedrockTextFormatting };
+    static ALL: JavaMap<string, BedrockTextFormatting>;
     static AQUA: BedrockTextFormatting;
     static BLACK: BedrockTextFormatting;
     static BLUE: BedrockTextFormatting;
     static BOLD: BedrockTextFormatting;
-    static COLORS: { [key: string]: BedrockTextFormatting };
+    static COLORS: JavaMap<string, BedrockTextFormatting>;
     static COLOR_CHAR: string;
     static DARK_AQUA: BedrockTextFormatting;
     static DARK_BLUE: BedrockTextFormatting;
@@ -15,7 +16,7 @@ export class BedrockTextFormatting extends Enum<BedrockTextFormatting> {
     static DARK_GREEN: BedrockTextFormatting;
     static DARK_PURPLE: BedrockTextFormatting;
     static DARK_RED: BedrockTextFormatting;
-    static FORMATTINGS: { [key: string]: BedrockTextFormatting };
+    static FORMATTINGS: JavaMap<string, BedrockTextFormatting>;
     static GOLD: BedrockTextFormatting;
     static GRAY: BedrockTextFormatting;
     static GREEN: BedrockTextFormatting;

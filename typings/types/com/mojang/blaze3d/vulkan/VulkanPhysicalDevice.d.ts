@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { DeviceType } from '../../../../com/mojang/blaze3d/systems/DeviceType.d.ts'
 import type { IntIntPair } from '../../../../it/unimi/dsi/fastutil/ints/IntIntPair.d.ts'
 import type { AutoCloseable } from '../../../../java/lang/AutoCloseable.d.ts'
@@ -13,7 +14,7 @@ export class VulkanPhysicalDevice extends Object implements AutoCloseable {
     constructor(vkPhysicalDevice: VkPhysicalDevice)
     // private computeQueueFamilyAndIndex: IntIntPair;
     // private graphicsQueueFamilyAndIndex: IntIntPair;
-    // private queueFamilyCreateInfoMap: { [key: string]: any };
+    // private queueFamilyCreateInfoMap: JavaMap<any, any>;
     // private transferQueueFamilyAndIndex: IntIntPair;
     // private vkDeviceExtensions: (Object | null)[];
     // private vkPhysicalDevice: VkPhysicalDevice;
@@ -30,7 +31,7 @@ export class VulkanPhysicalDevice extends Object implements AutoCloseable {
     getMissingExtensions(required: string[]): string[];
     graphicsQueueFamilyAndIndex(): IntIntPair;
     hasDeviceExtension(name: string): boolean;
-    queueFamilyCreateInfoMap(): { [key: string]: any };
+    queueFamilyCreateInfoMap(): JavaMap<any, any>;
     transferQueueFamilyAndIndex(): IntIntPair;
     vendorName(): string;
     vkPhysicalDevice(): VkPhysicalDevice;

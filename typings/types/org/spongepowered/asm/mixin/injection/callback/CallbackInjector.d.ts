@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Type } from '../../../../../../org/objectweb/asm/Type.d.ts'
 import type { AbstractInsnNode } from '../../../../../../org/objectweb/asm/tree/AbstractInsnNode.d.ts'
@@ -17,14 +18,14 @@ export class CallbackInjector extends Injector {
     // private callbackInfoVar: number;
     // private cancellable: boolean;
     // private identifier: string;
-    // private ids: { [key: number]: string };
+    // private ids: JavaMap<number, string>;
     // private lastDesc: string;
     // private lastId: string;
     // private lastTarget: AbstractInsnNode[];
     // private localCapture: LocalCapture;
     // private totalInjections: number;
     addTargetNode(arg0: InjectorTarget, arg1: InjectionNodes$InjectionNode[], arg2: AbstractInsnNode, arg3: InjectionPoint[]): void;
-    addTargetNode(arg0: InjectorTarget, arg1: { [key: number]: Injector$TargetNode }, arg2: InjectionPoint, arg3: AbstractInsnNode): void;
+    addTargetNode(arg0: InjectorTarget, arg1: JavaMap<number, Injector$TargetNode>, arg2: InjectionPoint, arg3: AbstractInsnNode): void;
     // private createCallbackInfo(arg0: (Object | null)[], arg1: boolean): void;
     // private dupReturnValue(arg0: (Object | null)[]): void;
     // private generateBadLVTMessage(arg0: (Object | null)[]): string;

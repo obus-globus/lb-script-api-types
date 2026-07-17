@@ -1,8 +1,9 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Long2ReferenceAVLTreeMap$Entry } from '../../../../../it/unimi/dsi/fastutil/longs/Long2ReferenceAVLTreeMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Long2ReferenceAVLTreeMap$TreeIterator extends Object {
-    constructor(null_: { [key: string]: any })
-    constructor(null_: { [key: string]: any }, arg1: number)
+    constructor(null_: JavaMap<any, any>)
+    constructor(null_: JavaMap<any, any>, arg1: number)
     // private curr: Long2ReferenceAVLTreeMap$Entry<V>;
     // private index: number;
     // private next: Long2ReferenceAVLTreeMap$Entry<V>;

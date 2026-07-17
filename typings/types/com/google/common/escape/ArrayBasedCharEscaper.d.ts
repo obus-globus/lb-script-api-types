@@ -1,8 +1,9 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ArrayBasedEscaperMap } from '../../../../com/google/common/escape/ArrayBasedEscaperMap.d.ts'
 import type { CharEscaper } from '../../../../com/google/common/escape/CharEscaper.d.ts'
 export abstract class ArrayBasedCharEscaper extends CharEscaper {
     constructor(escaperMap: ArrayBasedEscaperMap, safeMin: string, safeMax: string)
-    constructor(replacementMap: { [key: string]: string }, safeMin: string, safeMax: string)
+    constructor(replacementMap: JavaMap<string, string>, safeMin: string, safeMax: string)
     // private replacements: string[][];
     // private replacementsLength: number;
     // private safeMax: string;

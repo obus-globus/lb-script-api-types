@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { PolyglotEngineImpl } from '../../../../com/oracle/truffle/polyglot/PolyglotEngineImpl.d.ts'
 import type { PolyglotInstrument } from '../../../../com/oracle/truffle/polyglot/PolyglotInstrument.d.ts'
 import type { SystemThread } from '../../../../com/oracle/truffle/polyglot/SystemThread.d.ts'
@@ -19,7 +20,7 @@ export class SystemThread$InstrumentSystemThread extends SystemThread {
     static currentThread(): Thread;
     static dumpStack(): void;
     static enumerate(paramarg0: Thread[]): number;
-    static getAllStackTraces(): Map<Thread, StackTraceElement[]>;
+    static getAllStackTraces(): JavaMap<Thread, StackTraceElement[]>;
     static getDefaultUncaughtExceptionHandler(): (param0: Thread, param1: Throwable) => void;
     static holdsLock(paramarg0: Object): boolean;
     static interrupted(): boolean;

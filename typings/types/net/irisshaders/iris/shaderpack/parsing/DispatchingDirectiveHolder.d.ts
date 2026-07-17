@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { BooleanConsumer } from '../../../../../it/unimi/dsi/fastutil/booleans/BooleanConsumer.d.ts'
 import type { FloatConsumer } from '../../../../../it/unimi/dsi/fastutil/floats/FloatConsumer.d.ts'
 import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
@@ -11,13 +12,13 @@ import type { Vector3i } from '../../../../../org/joml/Vector3i.d.ts'
 import type { Vector4f } from '../../../../../org/joml/Vector4f.d.ts'
 export class DispatchingDirectiveHolder extends Object implements DirectiveHolder {
     constructor()
-    // private booleanConstVariables: { [key: string]: (param0: boolean) => void };
-    // private floatConstVariables: { [key: string]: (param0: number) => void };
-    // private intConstVariables: { [key: string]: (param0: number) => void };
-    // private ivec3ConstVariables: { [key: string]: (param0: Vector3i) => void };
-    // private stringConstVariables: { [key: string]: (param0: string) => void };
-    // private vec2ConstVariables: { [key: string]: (param0: Vector2f) => void };
-    // private vec4ConstVariables: { [key: string]: (param0: Vector4f) => void };
+    // private booleanConstVariables: JavaMap<string, (param0: boolean) => void>;
+    // private floatConstVariables: JavaMap<string, (param0: number) => void>;
+    // private intConstVariables: JavaMap<string, (param0: number) => void>;
+    // private ivec3ConstVariables: JavaMap<string, (param0: Vector3i) => void>;
+    // private stringConstVariables: JavaMap<string, (param0: string) => void>;
+    // private vec2ConstVariables: JavaMap<string, (param0: Vector2f) => void>;
+    // private vec4ConstVariables: JavaMap<string, (param0: Vector4f) => void>;
     acceptCommentFloatDirective(arg0: string, arg1: (param0: number) => void): void;
     acceptCommentIntDirective(arg0: string, arg1: (param0: number) => void): void;
     acceptCommentStringDirective(arg0: string, arg1: (param0: string) => void): void;
@@ -30,5 +31,5 @@ export class DispatchingDirectiveHolder extends Object implements DirectiveHolde
     acceptConstVec4Directive(arg0: string, arg1: (param0: Vector4f) => void): void;
     acceptUniformDirective(arg0: string, arg1: () => void): void;
     processDirective(arg0: ConstDirectiveParser$ConstDirective): void;
-    // private typeCheckHelper(arg0: string, arg1: { [key: string]: Object | null }, arg2: ConstDirectiveParser$ConstDirective): void;
+    // private typeCheckHelper(arg0: string, arg1: JavaMap<string, Object | null>, arg2: ConstDirectiveParser$ConstDirective): void;
 }

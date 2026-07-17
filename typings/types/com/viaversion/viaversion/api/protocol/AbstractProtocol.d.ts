@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { UserConnection } from '../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { MappingData } from '../../../../../com/viaversion/viaversion/api/data/MappingData.d.ts'
 import type { EntityTracker } from '../../../../../com/viaversion/viaversion/api/data/entity/EntityTracker.d.ts'
@@ -44,7 +45,7 @@ export abstract class AbstractProtocol<CU extends ClientboundPacketType, CM exte
     readonly packetTypesProvider: PacketTypesProvider<CU, CM, SM, SU>;
     readonly serverVersion: ProtocolVersion;
     // private serverboundMappings: PacketMappings;
-    // private storedObjects: Map<Class<Object>, Object>;
+    // private storedObjects: JavaMap<Class<Object>, Object>;
     // private unmappedClientboundPacketType: Class<CU>;
     // private unmappedServerboundPacketType: Class<SU>;
     addEntityTracker(arg0: UserConnection): void;
@@ -101,7 +102,7 @@ export abstract class AbstractProtocol<CU extends ClientboundPacketType, CM exte
     registerClientbound(arg0: State, arg1: ClientboundPacketType, arg2: (param0: PacketWrapper) => void): void;
     registerClientbound(arg0: State, arg1: number, arg2: number, arg3: (param0: PacketWrapper) => void): void;
     registerClientbound(arg0: State, arg1: number, arg2: number, arg3: (param0: PacketWrapper) => void, arg4: boolean): void;
-    // private registerPacketIdChanges<U extends PacketType, M extends PacketType>(arg0: Map<State, PacketTypeMap<U>>, arg1: Map<State, PacketTypeMap<M>>, arg2: (param0: U) => boolean, arg3: (param0: U, param1: M) => void): void;
+    // private registerPacketIdChanges<U extends PacketType, M extends PacketType>(arg0: JavaMap<State, PacketTypeMap<U>>, arg1: JavaMap<State, PacketTypeMap<M>>, arg2: (param0: U) => boolean, arg3: (param0: U, param1: M) => void): void;
     registerPackets(): void;
     registerServerbound(arg0: SU, arg1: SM): void;
     registerServerbound(arg0: SU, arg1: SM, arg2: (param0: PacketWrapper) => void): void;

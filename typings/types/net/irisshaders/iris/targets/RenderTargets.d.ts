@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { GpuTexture } from '../../../../com/mojang/blaze3d/textures/GpuTexture.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { GlFramebuffer } from '../../../../net/irisshaders/iris/gl/framebuffer/GlFramebuffer.d.ts'
@@ -7,7 +8,7 @@ import type { PackDirectives } from '../../../../net/irisshaders/iris/shaderpack
 import type { PackRenderTargetDirectives$RenderTargetSettings } from '../../../../net/irisshaders/iris/shaderpack/properties/PackRenderTargetDirectives$RenderTargetSettings.d.ts'
 import type { RenderTarget } from '../../../../net/irisshaders/iris/targets/RenderTarget.d.ts'
 export class RenderTargets extends Object {
-    constructor(arg0: number, arg1: number, arg2: GpuTexture, arg3: number, arg4: DepthBufferFormat, arg5: { [key: number]: PackRenderTargetDirectives$RenderTargetSettings }, arg6: PackDirectives)
+    constructor(arg0: number, arg1: number, arg2: GpuTexture, arg3: number, arg4: DepthBufferFormat, arg5: JavaMap<number, PackRenderTargetDirectives$RenderTargetSettings>, arg6: PackDirectives)
     // private cachedDepthBufferVersion: number;
     // private cachedHeight: number;
     // private cachedWidth: number;
@@ -24,7 +25,7 @@ export class RenderTargets extends Object {
     // private noTranslucentsDestFb: GlFramebuffer;
     // private ownedFramebuffers: GlFramebuffer[];
     // private packDirectives: PackDirectives;
-    // private targetSettingsMap: { [key: number]: PackRenderTargetDirectives$RenderTargetSettings };
+    // private targetSettingsMap: JavaMap<number, PackRenderTargetDirectives$RenderTargetSettings>;
     // private targets: RenderTarget[];
     // private translucentDepthDirty: boolean;
     copyPreHandDepth(): void;

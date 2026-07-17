@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { PoseStack } from '../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
 import type { VertexConsumer } from '../../../../com/mojang/blaze3d/vertex/VertexConsumer.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
@@ -10,7 +11,7 @@ import type { Identifier } from '../../../../net/minecraft/resources/Identifier.
 export abstract class Model<S extends unknown> extends Object implements FabricModel<S>, ModelExtensions {
     constructor(root: ModelPart, renderType: (param0: Identifier) => RenderType)
     // private allParts: ModelPart[];
-    // private childPartMap: Map<Object | null, Object | null>;
+    // private childPartMap: JavaMap<Object | null, Object | null>;
     // private renderType: (param0: Identifier) => RenderType;
     // private root: ModelPart;
     allParts(): ModelPart[];

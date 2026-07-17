@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Config } from '../../../com/viaversion/viaversion/util/Config.d.ts'
 import type { File } from '../../../java/io/File.d.ts'
 import type { URL } from '../../../java/net/URL.d.ts'
@@ -24,7 +25,7 @@ export class ViaBedrockConfig extends Config implements ViaBedrockConfig_2 {
     getResourcePackPort(): number;
     getResourcePackUrl(): string;
     getUnsupportedOptions(): string[];
-    handleConfig(arg0: { [key: string]: Object }): void;
+    handleConfig(arg0: JavaMap<string, Object>): void;
     // private loadFields(): void;
     reload(): void;
     shouldDisableServerBlacklist(): boolean;

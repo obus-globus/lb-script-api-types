@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { TQuad } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/translucent_sorting/quad/TQuad.d.ts'
 import type { NormalList } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/translucent_sorting/trigger/NormalList.d.ts'
@@ -10,7 +11,7 @@ export class GeometryPlanes extends Object {
     constructor()
     // private alignedPlanes: NormalPlanes[];
     // private unalignedNormalScratch: Vector3f;
-    // private unalignedPlanes: Map<Vector3fc, NormalPlanes>;
+    // private unalignedPlanes: JavaMap<Vector3fc, NormalPlanes>;
     addAlignedPlane(arg0: SectionPos, arg1: number, arg2: number): void;
     addDoubleSidedAlignedPlane(arg0: SectionPos, arg1: number, arg2: number): void;
     addDoubleSidedUnalignedPlane(arg0: SectionPos, arg1: Vector3fc, arg2: number): void;
@@ -21,8 +22,8 @@ export class GeometryPlanes extends Object {
     getAlignedOrCreate(): NormalPlanes[];
     getPlanesForNormal(arg0: NormalList): NormalPlanes;
     getUnaligned(): NormalPlanes[];
-    getUnalignedOrCreate(): Map<Vector3fc, NormalPlanes>;
-    prepareAndGetDistances(): Map<Vector3fc, number[]>;
-    // private prepareAndInsert(arg0: Map<Vector3fc, number[]>): void;
+    getUnalignedOrCreate(): JavaMap<Vector3fc, NormalPlanes>;
+    prepareAndGetDistances(): JavaMap<Vector3fc, number[]>;
+    // private prepareAndInsert(arg0: JavaMap<Vector3fc, number[]>): void;
     prepareIntegration(): void;
 }

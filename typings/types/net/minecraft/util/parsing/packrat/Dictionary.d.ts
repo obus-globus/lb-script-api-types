@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Atom } from '../../../../../net/minecraft/util/parsing/packrat/Atom.d.ts'
 import type { Dictionary$Entry } from '../../../../../net/minecraft/util/parsing/packrat/Dictionary$Entry.d.ts'
@@ -10,7 +11,7 @@ import type { Scope } from '../../../../../net/minecraft/util/parsing/packrat/Sc
 import type { Term } from '../../../../../net/minecraft/util/parsing/packrat/Term.d.ts'
 export class Dictionary<S extends unknown> extends Object {
     constructor()
-    // private terms: Map<Atom<Object>, Dictionary$Entry<S, Object>>;
+    // private terms: JavaMap<Atom<Object>, Dictionary$Entry<S, Object>>;
     checkAllBound(): void;
     forward<T extends unknown>(name: Atom<T>): NamedRule<S, T>;
     // private getOrCreateEntry<T extends unknown>(name: Atom<T>): Dictionary$Entry<S, T>;

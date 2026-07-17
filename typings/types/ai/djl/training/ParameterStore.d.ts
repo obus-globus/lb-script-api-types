@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Device } from '../../../ai/djl/Device.d.ts'
 import type { NDArray } from '../../../ai/djl/ndarray/NDArray.d.ts'
 import type { NDManager } from '../../../ai/djl/ndarray/NDManager.d.ts'
@@ -9,9 +10,9 @@ export class ParameterStore extends Object {
     constructor()
     constructor(arg0: NDManager, arg1: boolean)
     // private copy: boolean;
-    // private deviceMap: Map<Device, number>;
+    // private deviceMap: JavaMap<Device, number>;
     readonly manager: NDManager;
-    // private parameterMap: { [key: string]: ParameterStore$ParameterData };
+    // private parameterMap: JavaMap<string, ParameterStore$ParameterData>;
     // private parameterServer: ParameterServer;
     getManager(): NDManager;
     getValue(arg0: Parameter, arg1: Device, arg2: boolean): NDArray;

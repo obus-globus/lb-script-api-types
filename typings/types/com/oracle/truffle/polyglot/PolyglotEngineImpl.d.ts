@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Assumption } from '../../../../com/oracle/truffle/api/Assumption.d.ts'
 import type { CallTarget } from '../../../../com/oracle/truffle/api/CallTarget.d.ts'
 import type { InstrumentInfo } from '../../../../com/oracle/truffle/api/InstrumentInfo.d.ts'
@@ -67,7 +68,7 @@ import type { MessageTransport } from '../../../../org/graalvm/polyglot/io/Messa
 import type { ProcessHandler } from '../../../../org/graalvm/polyglot/io/ProcessHandler.d.ts'
 export class PolyglotEngineImpl extends Object implements PolyglotImpl$VMObject {
     constructor(prototype: PolyglotEngineImpl)
-    constructor(impl: PolyglotImpl, sandboxPolicy: SandboxPolicy, permittedLanguages: string[], out: DispatchOutputStream, err: DispatchOutputStream, in_: InputStream, engineOptions: OptionValuesImpl, logLevels: { [key: string]: Level }, engineLoggerSupplier: PolyglotLoggers$EngineLoggerProvider, options: { [key: string]: string }, systemPropertiesOptions: { [key: string]: string }, useSystemProperties: boolean, allowExperimentalOptions: boolean, boundEngine: boolean, preInitialization: boolean, messageTransport: MessageTransport, logHandler: AbstractPolyglotImpl$LogHandler, hostImpl: TruffleLanguage<Object>, hostLanguageOnly: boolean, usesPolyglotIsolate: boolean, polyglotHostService: AbstractPolyglotImpl$AbstractPolyglotHostService, exceptionHandler: (param0: PolyglotException) => void)
+    constructor(impl: PolyglotImpl, sandboxPolicy: SandboxPolicy, permittedLanguages: string[], out: DispatchOutputStream, err: DispatchOutputStream, in_: InputStream, engineOptions: OptionValuesImpl, logLevels: JavaMap<string, Level>, engineLoggerSupplier: PolyglotLoggers$EngineLoggerProvider, options: JavaMap<string, string>, systemPropertiesOptions: JavaMap<string, string>, useSystemProperties: boolean, allowExperimentalOptions: boolean, boundEngine: boolean, preInitialization: boolean, messageTransport: MessageTransport, logHandler: AbstractPolyglotImpl$LogHandler, hostImpl: TruffleLanguage<Object>, hostLanguageOnly: boolean, usesPolyglotIsolate: boolean, polyglotHostService: AbstractPolyglotImpl$AbstractPolyglotHostService, exceptionHandler: (param0: PolyglotException) => void)
     // private activeSystemThreads: SystemThread$InstrumentSystemThread[];
     // private allOptions: OptionDescriptor[];
     // private allSourceOptions: OptionDescriptor[];
@@ -75,7 +76,7 @@ export class PolyglotEngineImpl extends Object implements PolyglotImpl$VMObject 
     // private apiAccess: AbstractPolyglotImpl$APIAccess;
     // private asynchronousStackDepth: number;
     // private boundEngine: boolean;
-    // private classToLanguage: { [key: string]: PolyglotLanguage };
+    // private classToLanguage: JavaMap<string, PolyglotLanguage>;
     // private closed: boolean;
     // private closingThread: Thread;
     // private contextLocalLocations: PolyglotEngineImpl$StableLocalLocations;
@@ -92,16 +93,16 @@ export class PolyglotEngineImpl extends Object implements PolyglotImpl$VMObject 
     // private engineOptionValues: OptionValuesImpl;
     // private err: DispatchOutputStream;
     // private exceptionHandler: (param0: PolyglotException) => void;
-    // private fileTypeDetectorsSupplier: () => { [key: string]: TruffleFile$FileTypeDetector[] };
+    // private fileTypeDetectorsSupplier: () => JavaMap<string, TruffleFile$FileTypeDetector[]>;
     // private host: AbstractPolyglotImpl$AbstractHostLanguageService;
     // private hostLanguage: PolyglotLanguage;
     // private hostLanguageOnly: boolean;
-    // private idToInstrument: { [key: string]: PolyglotInstrument };
-    // private idToInternalInstrumentInfo: { [key: string]: InstrumentInfo };
-    // private idToInternalLanguageInfo: { [key: string]: LanguageInfo };
-    // private idToLanguage: { [key: string]: PolyglotLanguage };
-    // private idToPublicInstrument: { [key: string]: PolyglotInstrument };
-    // private idToPublicLanguage: { [key: string]: PolyglotLanguage };
+    // private idToInstrument: JavaMap<string, PolyglotInstrument>;
+    // private idToInternalInstrumentInfo: JavaMap<string, InstrumentInfo>;
+    // private idToInternalLanguageInfo: JavaMap<string, LanguageInfo>;
+    // private idToLanguage: JavaMap<string, PolyglotLanguage>;
+    // private idToPublicInstrument: JavaMap<string, PolyglotInstrument>;
+    // private idToPublicLanguage: JavaMap<string, PolyglotLanguage>;
     readonly impl: PolyglotImpl;
     // private in: InputStream;
     // private inEnginePreInitialization: boolean;
@@ -112,7 +113,7 @@ export class PolyglotEngineImpl extends Object implements PolyglotImpl$VMObject 
     // private limits: PolyglotLimits$EngineLimits;
     // private lock: Object;
     // private logHandler: AbstractPolyglotImpl$LogHandler;
-    // private logLevels: { [key: string]: Level };
+    // private logLevels: JavaMap<string, Level>;
     // private messageTransport: MessageTransport;
     // private noInnerContexts: Assumption;
     // private out: DispatchOutputStream;
@@ -139,8 +140,8 @@ export class PolyglotEngineImpl extends Object implements PolyglotImpl$VMObject 
     checkState(): void;
     claimSharingLayer(layer: PolyglotSharingLayer, context: PolyglotContextImpl, requestingLanguage: PolyglotLanguage): void;
     collectAliveContexts(): PolyglotContextImpl[];
-    createContext(engineAPI: Engine, contextSandboxPolicy: SandboxPolicy, configOut: OutputStream, configErr: OutputStream, configIn: InputStream, allowHostLookup: boolean, hostAccess: Object, polyglotAccess: Object, allowNativeAccess: boolean, allowCreateThread: boolean, threadAccessDeniedHandler: (param0: string) => void, allowHostClassLoading: boolean, allowContextOptions: boolean, allowExperimentalOptions: boolean, classFilter: (param0: string) => boolean, options: { [key: string]: string }, arguments: { [key: string]: string[] }, onlyLanguagesArray: string[], ioAccess: Object, handler: Object, allowCreateProcess: boolean, processHandler: ProcessHandler, environmentAccess: Object, environment: { [key: string]: string }, zone: ZoneId, limitsImpl: Object, currentWorkingDirectory: string, tmpDir: string, hostClassLoader: ClassLoader, allowValueSharing: boolean, useSystemExit: boolean, registerInActiveContexts: boolean, exceptionHandler: (param0: PolyglotException) => void): Context;
-    // private createInstruments(instrumentsOptions: Map<PolyglotInstrument, { [key: string]: string }>, deprecatedDescriptors: OptionDescriptor[]): void;
+    createContext(engineAPI: Engine, contextSandboxPolicy: SandboxPolicy, configOut: OutputStream, configErr: OutputStream, configIn: InputStream, allowHostLookup: boolean, hostAccess: Object, polyglotAccess: Object, allowNativeAccess: boolean, allowCreateThread: boolean, threadAccessDeniedHandler: (param0: string) => void, allowHostClassLoading: boolean, allowContextOptions: boolean, allowExperimentalOptions: boolean, classFilter: (param0: string) => boolean, options: JavaMap<string, string>, arguments: JavaMap<string, string[]>, onlyLanguagesArray: string[], ioAccess: Object, handler: Object, allowCreateProcess: boolean, processHandler: ProcessHandler, environmentAccess: Object, environment: JavaMap<string, string>, zone: ZoneId, limitsImpl: Object, currentWorkingDirectory: string, tmpDir: string, hostClassLoader: ClassLoader, allowValueSharing: boolean, useSystemExit: boolean, registerInActiveContexts: boolean, exceptionHandler: (param0: PolyglotException) => void): Context;
+    // private createInstruments(instrumentsOptions: JavaMap<PolyglotInstrument, JavaMap<string, string>>, deprecatedDescriptors: OptionDescriptor[]): void;
     // private createLanguage(cache: LanguageCache, index: number, initError: RuntimeException): PolyglotLanguage;
     // private createLanguageStaticIndex(): PolyglotLanguage[];
     disposeContext(context: PolyglotContextImpl): void;
@@ -167,23 +168,23 @@ export class PolyglotEngineImpl extends Object implements PolyglotImpl$VMObject 
     getEngineLogger(): TruffleLogger;
     getEngineLoggers(): Object;
     getEngineOptionValues(): OptionValuesImpl;
-    getFileTypeDetectorsSupplier(): () => { [key: string]: TruffleFile$FileTypeDetector[] };
+    getFileTypeDetectorsSupplier(): () => JavaMap<string, TruffleFile$FileTypeDetector[]>;
     getHostLanguageSPI(): TruffleLanguage<Object>;
     getImpl(): PolyglotImpl;
-    getInstruments(): { [key: string]: PolyglotInstrument };
+    getInstruments(): JavaMap<string, PolyglotInstrument>;
     getLanguage<T extends TruffleLanguage<Object>>(languageClass: Class<T>, fail: boolean): PolyglotLanguage;
     getLanguage(languageId: string, fail: boolean): PolyglotLanguage;
     getOptions(): OptionDescriptor[];
     getOrCreateEngineLoggers(): Object;
     getPreInitializedContext(): PolyglotContextImpl;
-    getPublicLanguages(): { [key: string]: PolyglotLanguage };
-    // private initializeEngineLogger(supplier: (param0: string) => TruffleLogger, levels: { [key: string]: Level }): TruffleLogger;
-    // private initializeInstruments(infos: { [key: string]: InstrumentInfo }): { [key: string]: PolyglotInstrument };
-    // private initializeLanguages(infos: { [key: string]: LanguageInfo }): { [key: string]: PolyglotLanguage };
+    getPublicLanguages(): JavaMap<string, PolyglotLanguage>;
+    // private initializeEngineLogger(supplier: (param0: string) => TruffleLogger, levels: JavaMap<string, Level>): TruffleLogger;
+    // private initializeInstruments(infos: JavaMap<string, InstrumentInfo>): JavaMap<string, PolyglotInstrument>;
+    // private initializeLanguages(infos: JavaMap<string, LanguageInfo>): JavaMap<string, PolyglotLanguage>;
     initializeMultiContext(): void;
     isSharingEnabled(config: PolyglotContextConfig): boolean;
     isStoreEngine(): boolean;
-    languageHomes(): { [key: string]: Path };
+    languageHomes(): JavaMap<string, Path>;
     leave(prev: Object[], context: PolyglotContextImpl): void;
     // private leaveBoundary(prev: Object[], context: PolyglotContextImpl): void;
     leaveCached(prev: Object[], context: PolyglotContextImpl): void;
@@ -195,10 +196,10 @@ export class PolyglotEngineImpl extends Object implements PolyglotImpl$VMObject 
     notifyCreated(): void;
     onEngineCollected(): void;
     onVMShutdown(): void;
-    // private parseAllOptions(targetOptions: OptionValuesImpl, unparsedOptions: { [key: string]: string }, allowExperimental: boolean, deprecatedDescriptors: OptionDescriptor[]): void;
-    // private parseOptions(options: { [key: string]: string }, systemPropertiesOptions: { [key: string]: string }, useSystemProperties: boolean, languagesOptions: Map<PolyglotLanguage, { [key: string]: string }>, instrumentsOptions: Map<PolyglotInstrument, { [key: string]: string }>): void;
-    // private parseOptionsInto(options: { [key: string]: string }, languagesOptions: Map<PolyglotLanguage, { [key: string]: string }>, instrumentsOptions: Map<PolyglotInstrument, { [key: string]: string }>, constantOptionsOnly: boolean): void;
-    patch(newSandboxPolicy: SandboxPolicy, newOut: DispatchOutputStream, newErr: DispatchOutputStream, newIn: InputStream, engineOptions: OptionValuesImpl, newLogConfig: PolyglotEngineImpl$LogConfig, logSupplier: PolyglotLoggers$EngineLoggerProvider, newOptions: { [key: string]: string }, newSystemPropertiesOptions: { [key: string]: string }, newUseSystemProperties: boolean, newAllowExperimentalOptions: boolean, newBoundEngine: boolean, newLogHandler: AbstractPolyglotImpl$LogHandler, newHostLanguage: TruffleLanguage<Object>, newUsesPolyglotIsolate: boolean, newPolyglotHostService: AbstractPolyglotImpl$AbstractPolyglotHostService, localExceptionHandler: (param0: PolyglotException) => void): boolean;
+    // private parseAllOptions(targetOptions: OptionValuesImpl, unparsedOptions: JavaMap<string, string>, allowExperimental: boolean, deprecatedDescriptors: OptionDescriptor[]): void;
+    // private parseOptions(options: JavaMap<string, string>, systemPropertiesOptions: JavaMap<string, string>, useSystemProperties: boolean, languagesOptions: JavaMap<PolyglotLanguage, JavaMap<string, string>>, instrumentsOptions: JavaMap<PolyglotInstrument, JavaMap<string, string>>): void;
+    // private parseOptionsInto(options: JavaMap<string, string>, languagesOptions: JavaMap<PolyglotLanguage, JavaMap<string, string>>, instrumentsOptions: JavaMap<PolyglotInstrument, JavaMap<string, string>>, constantOptionsOnly: boolean): void;
+    patch(newSandboxPolicy: SandboxPolicy, newOut: DispatchOutputStream, newErr: DispatchOutputStream, newIn: InputStream, engineOptions: OptionValuesImpl, newLogConfig: PolyglotEngineImpl$LogConfig, logSupplier: PolyglotLoggers$EngineLoggerProvider, newOptions: JavaMap<string, string>, newSystemPropertiesOptions: JavaMap<string, string>, newUseSystemProperties: boolean, newAllowExperimentalOptions: boolean, newBoundEngine: boolean, newLogHandler: AbstractPolyglotImpl$LogHandler, newHostLanguage: TruffleLanguage<Object>, newUsesPolyglotIsolate: boolean, newPolyglotHostService: AbstractPolyglotImpl$AbstractPolyglotHostService, localExceptionHandler: (param0: PolyglotException) => void): boolean;
     persistCache(callback: () => boolean): ByteBuffer;
     preInitialize(): void;
     printDeprecatedOptionsWarning(descriptors: OptionDescriptor[]): void;
@@ -216,6 +217,6 @@ export class PolyglotEngineImpl extends Object implements PolyglotImpl$VMObject 
     // private validateSandbox(): void;
     // private validateStoreCacheState(): void;
     validateVirtualThreadCreation(): void;
-    // private visitLanguage(initErrors: { [key: string]: RuntimeException }, cachedLanguages: { [key: string]: LanguageCache }, serializedLanguages: LanguageCache[], language: LanguageCache): void;
-    // private visitLanguageImpl(visitedIds: string[], initErrors: { [key: string]: RuntimeException }, cachedLanguages: { [key: string]: LanguageCache }, serializedLanguages: LanguageCache[], language: LanguageCache): void;
+    // private visitLanguage(initErrors: JavaMap<string, RuntimeException>, cachedLanguages: JavaMap<string, LanguageCache>, serializedLanguages: LanguageCache[], language: LanguageCache): void;
+    // private visitLanguageImpl(visitedIds: string[], initErrors: JavaMap<string, RuntimeException>, cachedLanguages: JavaMap<string, LanguageCache>, serializedLanguages: LanguageCache[], language: LanguageCache): void;
 }

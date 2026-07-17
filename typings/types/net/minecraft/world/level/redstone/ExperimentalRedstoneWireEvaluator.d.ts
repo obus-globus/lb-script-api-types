@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 import type { RedStoneWireBlock } from '../../../../../net/minecraft/world/level/block/RedStoneWireBlock.d.ts'
@@ -6,7 +7,7 @@ import type { Orientation } from '../../../../../net/minecraft/world/level/redst
 import type { RedstoneWireEvaluator } from '../../../../../net/minecraft/world/level/redstone/RedstoneWireEvaluator.d.ts'
 export class ExperimentalRedstoneWireEvaluator extends RedstoneWireEvaluator {
     constructor(wireBlock: RedStoneWireBlock)
-    // private updatedWires: { [key: string]: any };
+    // private updatedWires: JavaMap<any, any>;
     // private wiresToTurnOff: BlockPos[];
     // private wiresToTurnOn: BlockPos[];
     // private calculateCurrentChanges(level: Level, initialPosition: BlockPos, initialOrientation: Orientation): void;

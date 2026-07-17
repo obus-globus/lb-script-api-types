@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Paint } from '../../java/awt/Paint.d.ts'
 import type { PaintContext } from '../../java/awt/PaintContext.d.ts'
 import type { Rectangle } from '../../java/awt/Rectangle.d.ts'
@@ -57,7 +58,7 @@ export class Color extends Object implements Paint, Serializable {
     // private fvalue: number[];
     // private value: number;
     brighter(): Color;
-    createContext(arg0: ColorModel, arg1: Rectangle, arg2: Rectangle2D, arg3: AffineTransform, arg4: { [key: string]: any }): PaintContext;
+    createContext(arg0: ColorModel, arg1: Rectangle, arg2: Rectangle2D, arg3: AffineTransform, arg4: JavaMap<any, any>): PaintContext;
     darker(): Color;
     equals(arg0: Object | null): boolean;
     getAlpha(): number;

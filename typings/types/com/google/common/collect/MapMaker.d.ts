@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Equivalence } from '../../../../com/google/common/base/Equivalence.d.ts'
 import type { MapMakerInternalMap$Strength } from '../../../../com/google/common/collect/MapMakerInternalMap$Strength.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -17,7 +18,7 @@ export class MapMaker extends Object {
     getValueStrength(): MapMakerInternalMap$Strength;
     initialCapacity(initialCapacity: number): MapMaker;
     keyEquivalence(equivalence: Equivalence<Object>): MapMaker;
-    makeMap<K extends unknown, V extends unknown>(): Map<K, V>;
+    makeMap<K extends unknown, V extends unknown>(): JavaMap<K, V>;
     setKeyStrength(strength: MapMakerInternalMap$Strength): MapMaker;
     setValueStrength(strength: MapMakerInternalMap$Strength): MapMaker;
     toString(): string;

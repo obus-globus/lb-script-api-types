@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
 import type { UUID } from '../../../../../java/util/UUID.d.ts'
 import type { Continuation } from '../../../../../kotlin/coroutines/Continuation.d.ts'
@@ -29,8 +30,8 @@ export class CosmeticService extends ValueGroup implements EventListener {
     // private REFRESH_DELAY: number;
     // private carriers: string[];
     /*not mapped: */ getCarriers$net_ccbluex_liquidbounce(): string[];
-    // private carriersCosmetics: Map<UUID, Cosmetic[]>;
-    /*not mapped: */ getCarriersCosmetics$net_ccbluex_liquidbounce(): Map<UUID, Cosmetic[]>;
+    // private carriersCosmetics: JavaMap<UUID, Cosmetic[]>;
+    /*not mapped: */ getCarriersCosmetics$net_ccbluex_liquidbounce(): JavaMap<UUID, Cosmetic[]>;
     readonly debugDisplayName: Component;
     // private disconnectHandler: EventHook<DisconnectEvent>;
     // private lastUpdate: Chronometer;

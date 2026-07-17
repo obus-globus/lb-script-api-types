@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -6,12 +7,12 @@ import type { DatapackStructureReport$Entry } from '../../../../net/minecraft/da
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 export class DatapackStructureReport$Report extends Record {
     static CODEC: Codec<DatapackStructureReport$Report>;
-    private constructor(registries: Map<ResourceKey<(Object | null)[]>, DatapackStructureReport$Entry>, others: { [key: string]: DatapackStructureReport$CustomPackEntry })
-    // private others: { [key: string]: DatapackStructureReport$CustomPackEntry };
-    // private registries: Map<ResourceKey<(Object | null)[]>, DatapackStructureReport$Entry>;
+    private constructor(registries: JavaMap<ResourceKey<(Object | null)[]>, DatapackStructureReport$Entry>, others: JavaMap<string, DatapackStructureReport$CustomPackEntry>)
+    // private others: JavaMap<string, DatapackStructureReport$CustomPackEntry>;
+    // private registries: JavaMap<ResourceKey<(Object | null)[]>, DatapackStructureReport$Entry>;
     equals(o: Object | null): boolean;
     hashCode(): number;
-    others(): { [key: string]: DatapackStructureReport$CustomPackEntry };
-    registries(): Map<ResourceKey<(Object | null)[]>, DatapackStructureReport$Entry>;
+    others(): JavaMap<string, DatapackStructureReport$CustomPackEntry>;
+    registries(): JavaMap<ResourceKey<(Object | null)[]>, DatapackStructureReport$Entry>;
     toString(): string;
 }

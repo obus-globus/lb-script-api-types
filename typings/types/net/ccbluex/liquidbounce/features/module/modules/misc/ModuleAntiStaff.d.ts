@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Continuation } from '../../../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { PacketEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/PacketEvent.d.ts'
@@ -12,7 +13,7 @@ export class ModuleAntiStaff extends ClientModule {
     static INSTANCE: ModuleAntiStaff;
     readonly handleServerConnect: EventHook<ServerConnectEvent>;
     // private packetHandler: EventHook<PacketEvent>;
-    // private serverStaffList: { [key: string]: string[] };
+    // private serverStaffList: JavaMap<string, string[]>;
     // private showInTabList: boolean;
     // private /*not mapped: */ getShowInTabList(): boolean;
     // private alert(key: string, username: string | null): void;

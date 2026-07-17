@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { PoseStack } from '../../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
 import type { AdultAndBabyModelPair } from '../../../../../net/minecraft/client/model/AdultAndBabyModelPair.d.ts'
 import type { PigModel } from '../../../../../net/minecraft/client/model/animal/pig/PigModel.d.ts'
@@ -14,7 +15,7 @@ export class PigRenderer extends MobRenderer<Pig, PigRenderState, PigModel> {
     static NAMETAG_SCALE: number;
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
-    // private models: Map<PigVariant$ModelType, AdultAndBabyModelPair<PigModel>>;
+    // private models: JavaMap<PigVariant$ModelType, AdultAndBabyModelPair<PigModel>>;
     createRenderState(): PigRenderState;
     createRenderState(entity: Pig, partialTicks: number): PigRenderState;
     extractRenderState(entity: Pig, state: PigRenderState, partialTicks: number): void;

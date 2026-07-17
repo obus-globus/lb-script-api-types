@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { AbstractInsnNode } from '../../../../../../org/objectweb/asm/tree/AbstractInsnNode.d.ts'
 import type { LabelNode } from '../../../../../../org/objectweb/asm/tree/LabelNode.d.ts'
@@ -9,5 +10,5 @@ export class Clinit extends Object {
     // private clinit: MethodNode;
     // private finalReturn: AbstractInsnNode;
     append(arg0: IMixinInfo, arg1: MethodNode): void;
-    appendInsns(arg0: IMixinInfo, arg1: MethodNode, arg2: Map<LabelNode, LabelNode>): void;
+    appendInsns(arg0: IMixinInfo, arg1: MethodNode, arg2: JavaMap<LabelNode, LabelNode>): void;
 }

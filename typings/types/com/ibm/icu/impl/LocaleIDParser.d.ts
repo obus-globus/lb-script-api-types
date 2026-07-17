@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { StringBuilder } from '../../../../java/lang/StringBuilder.d.ts'
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -11,7 +12,7 @@ export class LocaleIDParser extends Object {
     // private hadCountry: boolean;
     // private id: string[];
     // private index: number;
-    keywords: { [key: string]: string };
+    keywords: JavaMap<string, string>;
     // private addSeparator(): void;
     // private append(arg0: string): void;
     // private atTerminator(): boolean;
@@ -20,7 +21,7 @@ export class LocaleIDParser extends Object {
     getCountry(): string;
     // private getKeyComparator(): (param0: string, param1: string) => number;
     // private getKeyword(): string;
-    getKeywordMap(): { [key: string]: string };
+    getKeywordMap(): JavaMap<string, string>;
     getKeywordValue(arg0: string): string;
     getKeywords(): Iterator<string>;
     getLanguage(): string;

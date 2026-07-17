@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { PrimitiveType } from '../../../../../../kotlin/reflect/jvm/internal/impl/builtins/PrimitiveType.d.ts'
 import type { ClassId } from '../../../../../../kotlin/reflect/jvm/internal/impl/name/ClassId.d.ts'
@@ -21,7 +22,7 @@ export class StandardNames$FqNames extends Object {
     static annotationTarget: FqName;
     static any: FqNameUnsafe;
     static array: FqNameUnsafe;
-    static arrayClassFqNameToPrimitiveType: Map<FqNameUnsafe, PrimitiveType>;
+    static arrayClassFqNameToPrimitiveType: JavaMap<FqNameUnsafe, PrimitiveType>;
     static atomicArray: FqName;
     static atomicBoolean: FqName;
     static atomicInt: FqName;
@@ -39,7 +40,7 @@ export class StandardNames$FqNames extends Object {
     static deprecationLevel: FqName;
     static extensionFunctionType: FqName;
     static findAssociatedObject: FqNameUnsafe;
-    static fqNameToPrimitiveType: Map<FqNameUnsafe, PrimitiveType>;
+    static fqNameToPrimitiveType: JavaMap<FqNameUnsafe, PrimitiveType>;
     static functionSupertype: FqNameUnsafe;
     static intRange: FqNameUnsafe;
     static introducedAt: FqName;

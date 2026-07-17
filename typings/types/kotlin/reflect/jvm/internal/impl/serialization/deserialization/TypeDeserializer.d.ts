@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { ClassifierDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassifierDescriptor.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
@@ -21,7 +22,7 @@ export class TypeDeserializer extends Object {
     // private debugName: string;
     // private parent: TypeDeserializer;
     // private typeAliasDescriptors: (param0: number) => ClassifierDescriptor;
-    // private typeParameterDescriptors: { [key: number]: TypeParameterDescriptor };
+    // private typeParameterDescriptors: JavaMap<number, TypeParameterDescriptor>;
     // private computeClassifierDescriptor(arg0: number): ClassifierDescriptor;
     // private computeLocalClassifierReplacementType(arg0: number): SimpleType;
     // private computeTypeAliasDescriptor(arg0: number): ClassifierDescriptor;

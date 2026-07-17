@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { OptionalBoolean } from '../../../../../../net/irisshaders/iris/helpers/OptionalBoolean.d.ts'
@@ -5,10 +6,10 @@ import type { OptionSet } from '../../../../../../net/irisshaders/iris/shaderpac
 import type { MutableOptionValues } from '../../../../../../net/irisshaders/iris/shaderpack/option/values/MutableOptionValues.d.ts'
 import type { OptionValues } from '../../../../../../net/irisshaders/iris/shaderpack/option/values/OptionValues.d.ts'
 export class ImmutableOptionValues extends Object implements OptionValues {
-    constructor(arg0: OptionSet, arg1: { [key: string]: boolean }, arg2: { [key: string]: string })
-    // private booleanValues: { [key: string]: boolean };
+    constructor(arg0: OptionSet, arg1: JavaMap<string, boolean>, arg2: JavaMap<string, string>)
+    // private booleanValues: JavaMap<string, boolean>;
     // private options: OptionSet;
-    // private stringValues: { [key: string]: string };
+    // private stringValues: JavaMap<string, string>;
     getBooleanValue(arg0: string): OptionalBoolean;
     getBooleanValueOrDefault(arg0: string): boolean;
     getOptionSet(): OptionSet;

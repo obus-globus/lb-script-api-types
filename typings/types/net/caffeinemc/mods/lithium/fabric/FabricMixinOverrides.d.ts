@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Option } from '../../../../../net/caffeinemc/mods/lithium/common/config/Option.d.ts'
 import type { PlatformMixinOverrides } from '../../../../../net/caffeinemc/mods/lithium/common/services/PlatformMixinOverrides.d.ts'
@@ -5,6 +6,6 @@ import type { PlatformMixinOverrides$MixinOverride } from '../../../../../net/ca
 export class FabricMixinOverrides extends Object implements PlatformMixinOverrides {
     static INSTANCE: PlatformMixinOverrides;
     constructor()
-    applyLithiumCompat(arg0: { [key: string]: Option }): void;
+    applyLithiumCompat(arg0: JavaMap<string, Option>): void;
     applyModOverrides(): PlatformMixinOverrides$MixinOverride[];
 }

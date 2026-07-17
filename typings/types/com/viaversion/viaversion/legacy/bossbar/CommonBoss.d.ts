@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { UserConnection } from '../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { BossBar } from '../../../../../com/viaversion/viaversion/api/legacy/bossbar/BossBar.d.ts'
 import type { BossColor } from '../../../../../com/viaversion/viaversion/api/legacy/bossbar/BossColor.d.ts'
@@ -10,7 +11,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class CommonBoss extends Object implements BossBar {
     constructor(arg0: string, arg1: number, arg2: BossColor, arg3: BossStyle)
     readonly color: BossColor;
-    readonly connections: Map<UUID, UserConnection>;
+    readonly connections: JavaMap<UUID, UserConnection>;
     readonly flags: BossFlag[];
     readonly health: number;
     readonly style: BossStyle;

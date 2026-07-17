@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export interface MatchResult extends Object{
     end(): number;
@@ -9,7 +10,7 @@ export interface MatchResult extends Object{
     groupCount(): number;
     // private groupNumber(arg0: string): number;
     hasMatch(): boolean;
-    namedGroups(): { [key: string]: number };
+    namedGroups(): JavaMap<string, number>;
     start(): number;
     start(arg0: number): number;
     start(arg0: string): number;

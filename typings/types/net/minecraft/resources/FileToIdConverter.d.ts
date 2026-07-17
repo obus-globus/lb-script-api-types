@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Record } from '../../../java/lang/Record.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { FileToIdConverterAccessor } from '../../../net/fabricmc/fabric/mixin/loot/FileToIdConverterAccessor.d.ts'
@@ -19,8 +20,8 @@ export class FileToIdConverter extends Record implements FileToIdConverterAccess
     getPrefix(): string;
     hashCode(): number;
     idToFile(id: Identifier): Identifier;
-    listMatchingResourceStacks(manager: ResourceManager): Map<Identifier, Resource[]>;
-    listMatchingResources(manager: ResourceManager): Map<Identifier, Resource>;
+    listMatchingResourceStacks(manager: ResourceManager): JavaMap<Identifier, Resource[]>;
+    listMatchingResources(manager: ResourceManager): JavaMap<Identifier, Resource>;
     prefix(): string;
     toString(): string;
 }

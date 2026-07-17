@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { UUID } from '../../../../../../java/util/UUID.d.ts'
 import type { DoublePredicate } from '../../../../../../java/util/function/DoublePredicate.d.ts'
@@ -12,13 +13,13 @@ export class GossipContainer extends Object {
     static CODEC: Codec<GossipContainer>;
     static DISCARD_THRESHOLD: number;
     constructor()
-    // private gossips: Map<UUID, GossipContainer$EntityGossips>;
+    // private gossips: JavaMap<UUID, GossipContainer$EntityGossips>;
     add(target: UUID, type: GossipType, amountToAdd: number): void;
     clear(): void;
     copy(): GossipContainer;
     decay(): void;
     getCountForType(type: GossipType, valueTest: (param0: number) => boolean): number;
-    getGossipEntries(): Map<UUID, { [key: string]: any }>;
+    getGossipEntries(): JavaMap<UUID, JavaMap<any, any>>;
     // private getOrCreate(target: UUID): GossipContainer$EntityGossips;
     getReputation(entity: UUID, types: (param0: GossipType) => boolean): number;
     // private mergeValuesForAddition(type: GossipType, oldValue: number, newValue: number): number;

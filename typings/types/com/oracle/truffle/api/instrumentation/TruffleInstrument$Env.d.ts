@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { CallTarget } from '../../../../../com/oracle/truffle/api/CallTarget.d.ts'
 import type { InstrumentInfo } from '../../../../../com/oracle/truffle/api/InstrumentInfo.d.ts'
 import type { InternalResource } from '../../../../../com/oracle/truffle/api/InternalResource.d.ts'
@@ -42,12 +43,12 @@ export class TruffleInstrument$Env extends Object {
     getEnteredContext(): TruffleContext;
     getHostLanguage(): LanguageInfo;
     getInstrumenter(): Instrumenter;
-    getInstruments(): { [key: string]: InstrumentInfo };
+    getInstruments(): JavaMap<string, InstrumentInfo>;
     getInternalResource(resource: Class<InternalResource>): TruffleFile;
     getInternalResource(resourceId: string): TruffleFile;
     getLanguageInfo(languageClass: Class<TruffleLanguage<Object>>): LanguageInfo;
     getLanguageView(language: LanguageInfo, value: Object): Object;
-    getLanguages(): { [key: string]: LanguageInfo };
+    getLanguages(): JavaMap<string, LanguageInfo>;
     getLogger(forClass: Class<Object>): TruffleLogger;
     getLogger(loggerName: string): TruffleLogger;
     getOptions(): OptionValues;

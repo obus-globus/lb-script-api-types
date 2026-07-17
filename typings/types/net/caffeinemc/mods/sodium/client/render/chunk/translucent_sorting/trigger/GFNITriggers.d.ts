@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { DynamicData } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/translucent_sorting/data/DynamicData.d.ts'
 import type { TranslucentData } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/translucent_sorting/data/TranslucentData.d.ts'
@@ -10,7 +11,7 @@ import type { SectionPos } from '../../../../../../../../../net/minecraft/core/S
 import type { Vector3fc } from '../../../../../../../../../org/joml/Vector3fc.d.ts'
 export class GFNITriggers extends Object implements SortTriggering$SectionTriggers<DynamicData> {
     constructor()
-    // private normalLists: Map<Vector3fc, NormalList>;
+    // private normalLists: JavaMap<Vector3fc, NormalList>;
     // private addSectionInNewNormalLists(arg0: NormalPlanes): void;
     getUniqueNormalCount(): number;
     integrateSection(arg0: SortTriggering, arg1: SectionPos, arg2: DynamicData, arg3: CameraMovement): void;

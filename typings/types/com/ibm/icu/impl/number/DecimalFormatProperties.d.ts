@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { DecimalFormatProperties$ParseMode } from '../../../../../com/ibm/icu/impl/number/DecimalFormatProperties$ParseMode.d.ts'
 import type { Padder$PadPosition } from '../../../../../com/ibm/icu/impl/number/Padder$PadPosition.d.ts'
 import type { CompactDecimalFormat$CompactStyle } from '../../../../../com/ibm/icu/text/CompactDecimalFormat$CompactStyle.d.ts'
@@ -16,7 +17,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../../../../java/lang/Cloneable.d.ts'
 export class DecimalFormatProperties extends Object implements Serializable, Cloneable {
     constructor()
-    readonly compactCustomData: { [key: string]: { [key: string]: string } };
+    readonly compactCustomData: JavaMap<string, JavaMap<string, string>>;
     readonly compactStyle: CompactDecimalFormat$CompactStyle;
     readonly currency: Currency;
     readonly currencyAsDecimal: boolean;
@@ -73,7 +74,7 @@ export class DecimalFormatProperties extends Object implements Serializable, Clo
     clone(): DecimalFormatProperties;
     copyFrom(arg0: DecimalFormatProperties): DecimalFormatProperties;
     equals(arg0: Object | null): boolean;
-    getCompactCustomData(): { [key: string]: { [key: string]: string } };
+    getCompactCustomData(): JavaMap<string, JavaMap<string, string>>;
     getCompactStyle(): CompactDecimalFormat$CompactStyle;
     getCurrency(): Currency;
     getCurrencyAsDecimal(): boolean;
@@ -119,7 +120,7 @@ export class DecimalFormatProperties extends Object implements Serializable, Clo
     hashCode(): number;
     // private readObject(arg0: ObjectInputStream): void;
     readObjectImpl(arg0: ObjectInputStream): void;
-    setCompactCustomData(arg0: { [key: string]: { [key: string]: string } }): DecimalFormatProperties;
+    setCompactCustomData(arg0: JavaMap<string, JavaMap<string, string>>): DecimalFormatProperties;
     setCompactStyle(arg0: CompactDecimalFormat$CompactStyle): DecimalFormatProperties;
     setCurrency(arg0: Currency): DecimalFormatProperties;
     setCurrencyAsDecimal(arg0: boolean): DecimalFormatProperties;

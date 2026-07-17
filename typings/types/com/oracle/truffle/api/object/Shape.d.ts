@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Assumption } from '../../../../../com/oracle/truffle/api/Assumption.d.ts'
 import type { AbstractAssumption } from '../../../../../com/oracle/truffle/api/impl/AbstractAssumption.d.ts'
 import type { BaseAllocator } from '../../../../../com/oracle/truffle/api/object/BaseAllocator.d.ts'
@@ -34,7 +35,7 @@ export class Shape extends Object {
     // private primitiveArraySize: number;
     // private primitiveFieldSize: number;
     readonly propertyCount: number;
-    // private propertyMap: { [key: string]: any };
+    // private propertyMap: JavaMap<any, any>;
     readonly root: Shape;
     readonly sharedData: Object;
     // private sharedPropertyAssumptions: PropertyAssumptions;
@@ -52,8 +53,8 @@ export class Shape extends Object {
     allocator(): BaseAllocator;
     allowPropertyAssumptions(): boolean;
     check(subject: DynamicObject): boolean;
-    createShape(dynamicType: Object, sharedData: Object, propertyMap: { [key: string]: any }, transition: Transition, allocator: BaseAllocator, flags: number): Shape;
-    createShapeWithSameSize(dynamicType: Object, sharedData: Object, propertyMap: { [key: string]: any }, transition: Transition, flags: number): Shape;
+    createShape(dynamicType: Object, sharedData: Object, propertyMap: JavaMap<any, any>, transition: Transition, allocator: BaseAllocator, flags: number): Shape;
+    createShapeWithSameSize(dynamicType: Object, sharedData: Object, propertyMap: JavaMap<any, any>, transition: Transition, flags: number): Shape;
     defineConstantProperty(key: Object, value: Object, propertyFlags: number): Shape;
     defineProperty(key: Object, value: Object, propertyFlags: number): Shape;
     defineProperty(key: Object, value: Object, propertyFlags: number, putFlags: number): Shape;
@@ -89,7 +90,7 @@ export class Shape extends Object {
     getPropertyCount(): number;
     getPropertyList(): Property[];
     getPropertyListInternal(ascending: boolean): Property[];
-    getPropertyMap(): { [key: string]: any };
+    getPropertyMap(): JavaMap<any, any>;
     getRoot(): Shape;
     getSharedData(): Object;
     getSuccessorShape(): Shape;

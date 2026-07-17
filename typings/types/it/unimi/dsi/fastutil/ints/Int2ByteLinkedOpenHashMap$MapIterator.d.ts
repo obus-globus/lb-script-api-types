@@ -1,7 +1,8 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Int2ByteMap$Entry } from '../../../../../it/unimi/dsi/fastutil/ints/Int2ByteMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class Int2ByteLinkedOpenHashMap$MapIterator<ConsumerType extends unknown> extends Object {
-    constructor(null_: { [key: string]: any })
+    constructor(null_: JavaMap<any, any>)
     // private curr: number;
     // private index: number;
     // private next: number;

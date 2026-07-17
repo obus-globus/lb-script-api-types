@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
@@ -15,8 +16,8 @@ export class DataComponentPatch extends Object {
     static EMPTY: DataComponentPatch;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPatch>;
     static builder(): DataComponentPatch$Builder;
-    constructor(map: Map<DataComponentType<Object>, Optional<Object>>)
-    // private map: Map<DataComponentType<Object>, Optional<Object>>;
+    constructor(map: JavaMap<DataComponentType<Object>, Optional<Object>>)
+    // private map: JavaMap<DataComponentType<Object>, Optional<Object>>;
     entrySet(): Map$Entry<DataComponentType<Object>, Optional<Object>>[];
     equals(obj: Object | null): boolean;
     forget(test: (param0: DataComponentType<Object>) => boolean): DataComponentPatch;

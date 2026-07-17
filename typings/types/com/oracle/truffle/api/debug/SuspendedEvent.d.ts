@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Breakpoint } from '../../../../../com/oracle/truffle/api/debug/Breakpoint.d.ts'
 import type { DebugException } from '../../../../../com/oracle/truffle/api/debug/DebugException.d.ts'
 import type { DebugStackFrame } from '../../../../../com/oracle/truffle/api/debug/DebugStackFrame.d.ts'
@@ -17,11 +18,11 @@ import type { Thread } from '../../../../../java/lang/Thread.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 export class SuspendedEvent extends Object {
-    constructor(session: DebuggerSession, thread: Thread, context: SuspendedContext, frame: MaterializedFrame, suspendAnchor: SuspendAnchor, insertableNode: InsertableNode, inputValuesProvider: DebuggerNode$InputValuesProvider, returnValue: Object, exception: DebugException, breakpoints: Breakpoint[], conditionFailures: Map<Breakpoint, Throwable>, singleStepCompleted: boolean, isUnwind: boolean)
+    constructor(session: DebuggerSession, thread: Thread, context: SuspendedContext, frame: MaterializedFrame, suspendAnchor: SuspendAnchor, insertableNode: InsertableNode, inputValuesProvider: DebuggerNode$InputValuesProvider, returnValue: Object, exception: DebugException, breakpoints: Breakpoint[], conditionFailures: JavaMap<Breakpoint, Throwable>, singleStepCompleted: boolean, isUnwind: boolean)
     readonly breakpoints: Breakpoint[];
     // private cachedAsyncFrames: DebugStackTraceElement[][];
     // private cachedFrames: DebugStackFrame[];
-    // private conditionFailures: Map<Breakpoint, Throwable>;
+    // private conditionFailures: JavaMap<Breakpoint, Throwable>;
     // private context: SuspendedContext;
     // private disposed: boolean;
     readonly exception: DebugException;

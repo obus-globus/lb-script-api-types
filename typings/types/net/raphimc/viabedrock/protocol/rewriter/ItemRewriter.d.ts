@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Tag } from '../../../../../com/viaversion/nbt/tag/Tag.d.ts'
 import type { StoredObject } from '../../../../../com/viaversion/viaversion/api/connection/StoredObject.d.ts'
 import type { UserConnection } from '../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
@@ -8,11 +9,11 @@ import type { BedrockItem } from '../../../../../net/raphimc/viabedrock/protocol
 import type { ItemEntry } from '../../../../../net/raphimc/viabedrock/protocol/model/ItemEntry.d.ts'
 export class ItemRewriter extends StoredObject {
     constructor(arg0: UserConnection, arg1: ItemEntry[])
-    // private blockItemValidBlockStates: { [key: string]: any };
+    // private blockItemValidBlockStates: JavaMap<any, any>;
     readonly componentItems: string[];
     // private itemArrayType: Type<BedrockItem[]>;
     // private itemType: Type<BedrockItem>;
-    readonly items: { [key: string]: number };
+    readonly items: JavaMap<string, number>;
     // private newItemArrayType: Type<BedrockItem[]>;
     // private newItemType: Type<BedrockItem>;
     // private optionalItemType: Type<BedrockItem>;
@@ -20,7 +21,7 @@ export class ItemRewriter extends StoredObject {
     bedrockItem(arg0: Item): BedrockItem;
     bedrockItems(arg0: Item[]): BedrockItem[];
     getComponentItems(): string[];
-    getItems(): { [key: string]: number };
+    getItems(): JavaMap<string, number>;
     itemArrayType(): Type<BedrockItem[]>;
     itemType(): Type<BedrockItem>;
     javaItem(arg0: Map$Entry<string, Tag>[]): Map$Entry<string, Tag>[];

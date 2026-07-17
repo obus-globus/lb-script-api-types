@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { TruffleCompilationTask } from '../../../../../com/oracle/truffle/compiler/TruffleCompilationTask.d.ts'
 import type { TruffleCompilerListener$CompilationResultInfo } from '../../../../../com/oracle/truffle/compiler/TruffleCompilerListener$CompilationResultInfo.d.ts'
 import type { TruffleCompilerListener$GraphInfo } from '../../../../../com/oracle/truffle/compiler/TruffleCompilerListener$GraphInfo.d.ts'
@@ -50,7 +51,7 @@ export class StatisticsListener extends AbstractGraalTruffleRuntimeListener {
     // private temporaryBailouts: number;
     // private tieredStatistics: StatisticsListener$CompilationStatistics[];
     // private timeInQueue: StatisticsListener$TargetLongStatistics;
-    // private timeQueued: Map<OptimizedCallTarget, number>;
+    // private timeQueued: JavaMap<OptimizedCallTarget, number>;
     // private timeToQueue: StatisticsListener$TargetLongStatistics;
     // private getStatisticsForTier(tier: number): StatisticsListener$CompilationStatistics;
     onCompilationDequeued(target: OptimizedCallTarget, source: Object, reason: CharSequence, tier: number): void;

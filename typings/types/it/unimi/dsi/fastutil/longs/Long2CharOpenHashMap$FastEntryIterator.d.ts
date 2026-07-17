@@ -1,10 +1,11 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Long2CharMap$Entry } from '../../../../../it/unimi/dsi/fastutil/longs/Long2CharMap$Entry.d.ts'
 import type { Long2CharOpenHashMap$MapEntry } from '../../../../../it/unimi/dsi/fastutil/longs/Long2CharOpenHashMap$MapEntry.d.ts'
 import type { Long2CharOpenHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/longs/Long2CharOpenHashMap$MapIterator.d.ts'
 import type { ObjectIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 export class Long2CharOpenHashMap$FastEntryIterator extends Long2CharOpenHashMap$MapIterator<(param0: Long2CharMap$Entry) => void> implements ObjectIterator<Long2CharMap$Entry> {
-    private constructor(null_: { [key: string]: any })
+    private constructor(null_: JavaMap<any, any>)
     // private entry: Long2CharOpenHashMap$MapEntry;
     acceptOnIndex(arg0: (param0: Long2CharMap$Entry) => void, arg1: number): void;
     next(): Long2CharOpenHashMap$MapEntry;

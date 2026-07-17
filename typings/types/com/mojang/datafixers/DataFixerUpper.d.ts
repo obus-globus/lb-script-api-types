@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { DSL$TypeReference } from '../../../com/mojang/datafixers/DSL$TypeReference.d.ts'
 import type { DataFix } from '../../../com/mojang/datafixers/DataFix.d.ts'
 import type { DataFixer } from '../../../com/mojang/datafixers/DataFixer.d.ts'
@@ -8,11 +9,11 @@ import type { Dynamic } from '../../../com/mojang/serialization/Dynamic.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class DataFixerUpper extends Object implements DataFixer {
     static ERRORS_ARE_FATAL: boolean;
-    constructor(arg0: { [key: string]: any }, arg1: DataFix[], arg2: (Object | null)[])
+    constructor(arg0: JavaMap<any, any>, arg1: DataFix[], arg2: (Object | null)[])
     // private fixerVersions: (Object | null)[];
     // private globalList: DataFix[];
-    // private rules: { [key: string]: any };
-    // private schemas: { [key: string]: any };
+    // private rules: JavaMap<any, any>;
+    // private schemas: JavaMap<any, any>;
     fixerVersions(): (Object | null)[];
     // private getLowestFixSameVersion(arg0: number): number;
     getRule(arg0: number, arg1: number): TypeRewriteRule;

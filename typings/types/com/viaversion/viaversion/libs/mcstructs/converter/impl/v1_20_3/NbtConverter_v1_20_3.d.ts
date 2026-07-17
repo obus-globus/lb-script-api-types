@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../../JavaMap.d.ts'
 import type { Tag } from '../../../../../../../../com/viaversion/nbt/tag/Tag.d.ts'
 import type { DataConverter } from '../../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/DataConverter.d.ts'
 import type { Codec } from '../../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/codec/Codec.d.ts'
@@ -18,10 +19,10 @@ export class NbtConverter_v1_20_3 extends Object implements DataConverter<Tag> {
     asIntArray(arg0: Tag): Result<number[]>;
     asList(arg0: Tag): Result<Tag[]>;
     asLongArray(arg0: Tag): Result<number[]>;
-    asMap(arg0: Tag): Result<Map<Tag, Tag>>;
+    asMap(arg0: Tag): Result<JavaMap<Tag, Tag>>;
     asNumber(arg0: Tag): Result<Number>;
     asString(arg0: Tag): Result<string>;
-    asStringTypeMap(arg0: Tag): Result<{ [key: string]: Tag }>;
+    asStringTypeMap(arg0: Tag): Result<JavaMap<string, Tag>>;
     convertFrom<N extends unknown>(arg0: DataConverter<N>, arg1: N): Tag;
     convertList<N extends unknown>(arg0: DataConverter<N>, arg1: Tag): N;
     convertMap<N extends unknown>(arg0: DataConverter<N>, arg1: Tag): N;
@@ -36,11 +37,11 @@ export class NbtConverter_v1_20_3 extends Object implements DataConverter<Tag> {
     createList(arg0: Tag[]): Tag;
     createLong(arg0: number): Tag;
     createLongArray(arg0: number[]): Tag;
-    createMergedMap(arg0: Map<Tag, Tag>): Result<Tag>;
+    createMergedMap(arg0: JavaMap<Tag, Tag>): Result<Tag>;
     createNumber(arg0: Number): Tag;
     createShort(arg0: number): Tag;
     createString(arg0: string): Tag;
-    createUnsafeMap(arg0: Map<Tag, Tag>): Tag;
+    createUnsafeMap(arg0: JavaMap<Tag, Tag>): Tag;
     currentConsumer(): (param0: string) => void;
     empty(): Tag;
     emptyList(): Tag;
@@ -51,7 +52,7 @@ export class NbtConverter_v1_20_3 extends Object implements DataConverter<Tag> {
     mergeList(arg0: Tag, arg1: Tag[]): Result<Tag>;
     mergeMap(arg0: Tag, arg1: Tag, arg2: Tag): Result<Tag>;
     mergeMap(arg0: Tag, ...arg1: Tag[]): Result<Tag>;
-    mergeMap(arg0: Tag, arg1: Map<Tag, Tag>): Result<Tag>;
+    mergeMap(arg0: Tag, arg1: JavaMap<Tag, Tag>): Result<Tag>;
     setCurrentConsumer(arg0: (param0: string) => void): void;
     toCodec(): Codec<Tag>;
 }

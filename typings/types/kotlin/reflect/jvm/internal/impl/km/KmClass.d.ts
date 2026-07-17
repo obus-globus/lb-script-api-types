@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { KmAnnotation } from '../../../../../../kotlin/reflect/jvm/internal/impl/km/KmAnnotation.d.ts'
 import type { KmConstructor } from '../../../../../../kotlin/reflect/jvm/internal/impl/km/KmConstructor.d.ts'
@@ -14,7 +15,7 @@ export class KmClass extends Object implements KmDeclarationContainer {
     constructor()
     readonly annotations: KmAnnotation[];
     readonly companionObject: string;
-    readonly compilerPluginMetadata: { [key: string]: number[] };
+    readonly compilerPluginMetadata: JavaMap<string, number[]>;
     readonly constructors: KmConstructor[];
     readonly contextReceiverTypes: KmType[];
     readonly enumEntries: string[];
@@ -33,7 +34,7 @@ export class KmClass extends Object implements KmDeclarationContainer {
     readonly typeParameters: KmTypeParameter[];
     readonly versionRequirements: KmVersionRequirement[];
     getAnnotations(): KmAnnotation[];
-    getCompilerPluginMetadata(): { [key: string]: number[] };
+    getCompilerPluginMetadata(): JavaMap<string, number[]>;
     getConstructors(): KmConstructor[];
     getContextReceiverTypes(): KmType[];
     getEnumEntries(): string[];

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { AbstractTable } from '../../../../com/google/common/collect/AbstractTable.d.ts'
 import type { Table } from '../../../../com/google/common/collect/Table.d.ts'
 import type { Table$Cell } from '../../../../com/google/common/collect/Table$Cell.d.ts'
@@ -10,9 +11,9 @@ export class Tables$TransposeTable<C extends unknown, R extends unknown, V exten
     cellIterator(): Iterator<Table$Cell<C, R, V>>;
     cellSpliterator(): Spliterator<Table$Cell<C, R, V>>;
     clear(): void;
-    column(columnKey: R): Map<C, V>;
+    column(columnKey: R): JavaMap<C, V>;
     columnKeySet(): R[];
-    columnMap(): Map<R, Map<C, V>>;
+    columnMap(): JavaMap<R, JavaMap<C, V>>;
     contains(rowKey: Object, columnKey: Object): boolean;
     containsColumn(columnKey: Object): boolean;
     containsRow(rowKey: Object): boolean;
@@ -21,9 +22,9 @@ export class Tables$TransposeTable<C extends unknown, R extends unknown, V exten
     put(rowKey: C, columnKey: R, value: V): V;
     putAll(table: Table<C, R, V>): void;
     remove(rowKey: Object, columnKey: Object): V;
-    row(rowKey: C): Map<R, V>;
+    row(rowKey: C): JavaMap<R, V>;
     rowKeySet(): C[];
-    rowMap(): Map<C, Map<R, V>>;
+    rowMap(): JavaMap<C, JavaMap<R, V>>;
     size(): number;
     values(): V[];
 }

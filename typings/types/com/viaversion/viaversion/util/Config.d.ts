@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { CommentStore } from '../../../../com/viaversion/viaversion/util/CommentStore.d.ts'
 import type { ConfigSection } from '../../../../com/viaversion/viaversion/util/ConfigSection.d.ts'
 import type { InputStreamSupplier } from '../../../../com/viaversion/viaversion/util/InputStreamSupplier.d.ts'
@@ -16,16 +17,16 @@ export abstract class Config extends ConfigSection {
     getDefaultConfigURL(): URL;
     getSectionsWithModifiableKeys(): string[];
     getUnsupportedOptions(): string[];
-    handleConfig(arg0: { [key: string]: Object }): void;
-    loadConfig(arg0: File): { [key: string]: Object };
-    // private loadConfig(arg0: File, arg1: () => InputStream): { [key: string]: Object };
-    loadConfig(arg0: File, arg1: URL): { [key: string]: Object };
+    handleConfig(arg0: JavaMap<string, Object>): void;
+    loadConfig(arg0: File): JavaMap<string, Object>;
+    // private loadConfig(arg0: File, arg1: () => InputStream): JavaMap<string, Object>;
+    loadConfig(arg0: File, arg1: URL): JavaMap<string, Object>;
     logger(): Logger;
-    // private merge(arg0: string, arg1: { [key: string]: Object }, arg2: { [key: string]: Object }): void;
+    // private merge(arg0: string, arg1: JavaMap<string, Object>, arg2: JavaMap<string, Object>): void;
     originalRootSection(): ConfigSection;
     reload(): void;
     root(): Config;
     save(): void;
     save(arg0: File): void;
-    save(arg0: File, arg1: { [key: string]: Object }): void;
+    save(arg0: File, arg1: JavaMap<string, Object>): void;
 }

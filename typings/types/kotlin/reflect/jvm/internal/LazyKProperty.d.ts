@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Annotation } from '../../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { KParameter } from '../../../../kotlin/reflect/KParameter.d.ts'
@@ -20,7 +21,7 @@ export abstract class LazyKProperty<V extends unknown, D extends KProperty<V>> e
     readonly typeParameters: KTypeParameter[];
     readonly visibility: KVisibility | null;
     call(...args: (Object | null)[]): V;
-    callBy(args: Map<KParameter, Object | null>): V;
+    callBy(args: JavaMap<KParameter, Object | null>): V;
     equals(other: Object | null): boolean;
     hashCode(): number;
     toString(): string;

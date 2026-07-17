@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { TruffleLanguage$ContextPolicy } from '../../../../com/oracle/truffle/api/TruffleLanguage$ContextPolicy.d.ts'
 import type { Node } from '../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { OptionValuesImpl } from '../../../../com/oracle/truffle/polyglot/OptionValuesImpl.d.ts'
@@ -23,7 +24,7 @@ export class PolyglotSharingLayer extends Object {
     allocateInstance(context: PolyglotContextImpl, language: PolyglotLanguage): PolyglotLanguageInstance;
     claimLayerForContext(sharableLayer: PolyglotSharingLayer, context: PolyglotContextImpl, requestingLanguages: PolyglotLanguage[]): boolean;
     close(): void;
-    // private collectLanguageOptions(config: PolyglotContextConfig, forcedLanguages: PolyglotLanguage[]): Map<PolyglotLanguage, OptionValuesImpl>;
+    // private collectLanguageOptions(config: PolyglotContextConfig, forcedLanguages: PolyglotLanguage[]): JavaMap<PolyglotLanguage, OptionValuesImpl>;
     equals(obj: Object | null): boolean;
     freeSharingLayer(context: PolyglotContextImpl): void;
     getContextPolicy(): TruffleLanguage$ContextPolicy;
@@ -44,8 +45,8 @@ export class PolyglotSharingLayer extends Object {
     toString(): string;
     // private trace(context: PolyglotContextImpl, s: PolyglotSharingLayer$Shared, label: string, message: string): void;
     // private traceAllocateLanguageInstance(context: PolyglotContextImpl, language: PolyglotLanguage): void;
-    // private traceClaimLayer(success: boolean, s: PolyglotSharingLayer$Shared, context: PolyglotContextImpl, requestingLangauges: PolyglotLanguage[], previousOptions: Map<PolyglotLanguage, OptionValuesImpl>): void;
-    // private traceCompatibility(s: PolyglotSharingLayer$Shared, context: PolyglotContextImpl, previousOptions: Map<PolyglotLanguage, OptionValuesImpl>, entry: Map$Entry<PolyglotLanguage, OptionValuesImpl>): void;
-    // private traceContextPreinit(success: boolean, s: PolyglotSharingLayer$Shared, context: PolyglotContextImpl, previousOptions: Map<PolyglotLanguage, OptionValuesImpl>, newLanguageOptions: Map<PolyglotLanguage, OptionValuesImpl>): void;
+    // private traceClaimLayer(success: boolean, s: PolyglotSharingLayer$Shared, context: PolyglotContextImpl, requestingLangauges: PolyglotLanguage[], previousOptions: JavaMap<PolyglotLanguage, OptionValuesImpl>): void;
+    // private traceCompatibility(s: PolyglotSharingLayer$Shared, context: PolyglotContextImpl, previousOptions: JavaMap<PolyglotLanguage, OptionValuesImpl>, entry: Map$Entry<PolyglotLanguage, OptionValuesImpl>): void;
+    // private traceContextPreinit(success: boolean, s: PolyglotSharingLayer$Shared, context: PolyglotContextImpl, previousOptions: JavaMap<PolyglotLanguage, OptionValuesImpl>, newLanguageOptions: JavaMap<PolyglotLanguage, OptionValuesImpl>): void;
     // private traceFreeLayer(context: PolyglotContextImpl): void;
 }

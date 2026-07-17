@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { AbstractOSProcess } from '../../../../oshi/software/common/AbstractOSProcess.d.ts'
 import type { OSProcess$State } from '../../../../oshi/software/os/OSProcess$State.d.ts'
@@ -11,7 +12,7 @@ export class LinuxOSProcess extends AbstractOSProcess {
     readonly bytesWritten: number;
     readonly commandLine: () => string;
     readonly contextSwitches: number;
-    readonly environmentVariables: () => { [key: string]: string };
+    readonly environmentVariables: () => JavaMap<string, string>;
     readonly group: () => string;
     readonly groupID: string;
     readonly kernelTime: number;
@@ -39,7 +40,7 @@ export class LinuxOSProcess extends AbstractOSProcess {
     getCommandLine(): string;
     getContextSwitches(): number;
     getCurrentWorkingDirectory(): string;
-    getEnvironmentVariables(): { [key: string]: string };
+    getEnvironmentVariables(): JavaMap<string, string>;
     getGroup(): string;
     getGroupID(): string;
     getHardOpenFileLimit(): number;
@@ -66,7 +67,7 @@ export class LinuxOSProcess extends AbstractOSProcess {
     // private queryArguments(): string[];
     // private queryBitness(): number;
     // private queryCommandLine(): string;
-    // private queryEnvironmentVariables(): { [key: string]: string };
+    // private queryEnvironmentVariables(): JavaMap<string, string>;
     // private queryGroup(): string;
     // private queryUser(): string;
     updateAttributes(): boolean;

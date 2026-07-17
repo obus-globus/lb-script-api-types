@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { OptionalBoolean } from '../../../../../net/irisshaders/iris/helpers/OptionalBoolean.d.ts'
 import type { DirectiveHolder } from '../../../../../net/irisshaders/iris/shaderpack/parsing/DirectiveHolder.d.ts'
@@ -9,7 +10,7 @@ export class PackShadowDirectives extends Object {
     static MAX_SHADOW_COLOR_BUFFERS_OF: number;
     constructor(arg0: PackShadowDirectives)
     constructor(arg0: ShaderProperties)
-    readonly colorSamplingSettings: { [key: string]: any };
+    readonly colorSamplingSettings: JavaMap<any, any>;
     readonly cullingState: ShadowCullState;
     readonly depthSamplingSettings: PackShadowDirectives$DepthSamplingSettings[];
     // private dhShadowEnabled: OptionalBoolean;
@@ -30,9 +31,9 @@ export class PackShadowDirectives extends Object {
     // private shouldRenderTerrain: boolean;
     // private shouldRenderTranslucent: boolean;
     readonly voxelDistance: number;
-    // private acceptBufferDirectives(arg0: DirectiveHolder, arg1: { [key: string]: any }): void;
+    // private acceptBufferDirectives(arg0: DirectiveHolder, arg1: JavaMap<any, any>): void;
     acceptDirectives(arg0: DirectiveHolder): void;
-    getColorSamplingSettings(): { [key: string]: any };
+    getColorSamplingSettings(): JavaMap<any, any>;
     getCullingState(): ShadowCullState;
     getDepthSamplingSettings(): PackShadowDirectives$DepthSamplingSettings[];
     getDistance(): number;

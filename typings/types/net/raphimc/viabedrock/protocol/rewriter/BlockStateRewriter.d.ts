@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Tag } from '../../../../../com/viaversion/nbt/tag/Tag.d.ts'
 import type { StorableObject } from '../../../../../com/viaversion/viaversion/api/connection/StorableObject.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -7,12 +8,12 @@ import type { BlockState } from '../../../../../net/raphimc/viabedrock/api/model
 import type { BlockProperties } from '../../../../../net/raphimc/viabedrock/protocol/model/BlockProperties.d.ts'
 export class BlockStateRewriter extends Object implements StorableObject {
     constructor(arg0: BlockProperties[], arg1: boolean)
-    // private blockStateIdMappings: { [key: string]: any };
-    // private blockStateMappings: Map<BlockState, number>;
+    // private blockStateIdMappings: JavaMap<any, any>;
+    // private blockStateMappings: JavaMap<BlockState, number>;
     // private blockStateSanitizer: BlockStateSanitizer;
-    // private blockStateTags: { [key: string]: any };
-    // private legacyBlockStateIdMappings: { [key: string]: any };
-    // private validBlockStates: { [key: string]: (Object | null)[] };
+    // private blockStateTags: JavaMap<any, any>;
+    // private legacyBlockStateIdMappings: JavaMap<any, any>;
+    // private validBlockStates: JavaMap<string, (Object | null)[]>;
     bedrockId(arg0: Map$Entry<string, Tag>[]): number;
     bedrockId(arg0: number): number;
     bedrockId(arg0: BlockState): number;

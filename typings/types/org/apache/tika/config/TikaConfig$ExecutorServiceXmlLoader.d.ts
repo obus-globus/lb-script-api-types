@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ConfigurableThreadPoolExecutor } from '../../../../org/apache/tika/concurrent/ConfigurableThreadPoolExecutor.d.ts'
@@ -8,7 +9,7 @@ import type { MimeTypes } from '../../../../org/apache/tika/mime/MimeTypes.d.ts'
 import type { Element } from '../../../../org/w3c/dom/Element.d.ts'
 export class TikaConfig$ExecutorServiceXmlLoader extends TikaConfig$XmlLoader<ConfigurableThreadPoolExecutor, ConfigurableThreadPoolExecutor> {
     private constructor()
-    createComposite(arg0: Class<ConfigurableThreadPoolExecutor>, arg1: ConfigurableThreadPoolExecutor[], arg2: Class<ConfigurableThreadPoolExecutor>[], arg3: { [key: string]: Param<Object> }, arg4: MimeTypes, arg5: ServiceLoader): ConfigurableThreadPoolExecutor;
+    createComposite(arg0: Class<ConfigurableThreadPoolExecutor>, arg1: ConfigurableThreadPoolExecutor[], arg2: Class<ConfigurableThreadPoolExecutor>[], arg3: JavaMap<string, Param<Object>>, arg4: MimeTypes, arg5: ServiceLoader): ConfigurableThreadPoolExecutor;
     createComposite(arg0: ConfigurableThreadPoolExecutor[], arg1: MimeTypes, arg2: ServiceLoader): ConfigurableThreadPoolExecutor;
     createDefault(arg0: MimeTypes, arg1: ServiceLoader): ConfigurableThreadPoolExecutor;
     decorate(arg0: ConfigurableThreadPoolExecutor, arg1: Element): ConfigurableThreadPoolExecutor;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { MinecraftProfileTexture } from '../../../../com/mojang/authlib/minecraft/MinecraftProfileTexture.d.ts'
 import type { MinecraftProfileTexture$Type } from '../../../../com/mojang/authlib/minecraft/MinecraftProfileTexture$Type.d.ts'
 import type { Path } from '../../../../java/nio/file/Path.d.ts'
@@ -9,7 +10,7 @@ import type { Identifier } from '../../../../net/minecraft/resources/Identifier.
 export class SkinManager$TextureCache extends Object {
     private constructor(null_: SkinManager, root: Path, type: MinecraftProfileTexture$Type)
     // private root: Path;
-    // private textures: { [key: string]: CompletableFuture<ClientAsset$Texture> };
+    // private textures: JavaMap<string, CompletableFuture<ClientAsset$Texture>>;
     // private type: MinecraftProfileTexture$Type;
     getOrLoad(texture: MinecraftProfileTexture): CompletableFuture<ClientAsset$Texture>;
     // private getTextureLocation(textureHash: string): Identifier;

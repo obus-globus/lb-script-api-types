@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Image } from '../../../../../ai/djl/modality/cv/Image.d.ts'
 import type { ExpansionTranslatorFactory } from '../../../../../ai/djl/translate/ExpansionTranslatorFactory.d.ts'
 import type { ExpansionTranslatorFactory$TranslatorExpansion } from '../../../../../ai/djl/translate/ExpansionTranslatorFactory$TranslatorExpansion.d.ts'
@@ -11,6 +12,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class BaseImageTranslatorFactory<O extends unknown> extends ExpansionTranslatorFactory<Image, O> {
     constructor()
     getBaseInputType(): Class<Image>;
-    getExpansions(): Map<Pair<Type, Type>, (param0: Translator<Image, O>) => Translator<Object, Object>>;
-    getPreprocessorExpansions(): Map<Type, (param0: PreProcessor<Image>) => PreProcessor<Object>>;
+    getExpansions(): JavaMap<Pair<Type, Type>, (param0: Translator<Image, O>) => Translator<Object, Object>>;
+    getPreprocessorExpansions(): JavaMap<Type, (param0: PreProcessor<Image>) => PreProcessor<Object>>;
 }

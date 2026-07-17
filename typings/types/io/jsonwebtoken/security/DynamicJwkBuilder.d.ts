@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { EcPrivateJwkBuilder } from '../../../io/jsonwebtoken/security/EcPrivateJwkBuilder.d.ts'
 import type { EcPublicJwkBuilder } from '../../../io/jsonwebtoken/security/EcPublicJwkBuilder.d.ts'
 import type { JwkBuilder } from '../../../io/jsonwebtoken/security/JwkBuilder.d.ts'
@@ -19,7 +20,7 @@ import type { RSAPrivateKey } from '../../../java/security/interfaces/RSAPrivate
 import type { RSAPublicKey } from '../../../java/security/interfaces/RSAPublicKey.d.ts'
 import type { SecretKey } from '../../../javax/crypto/SecretKey.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export interface DynamicJwkBuilder<K extends Key, J extends { [key: string]: any }> extends JwkBuilder<K, J, DynamicJwkBuilder<K, J>>, Object{
+export interface DynamicJwkBuilder<K extends Key, J extends JavaMap<any, any>> extends JwkBuilder<K, J, DynamicJwkBuilder<K, J>>, Object{
     chain<A extends PublicKey, B extends PrivateKey>(arg0: X509Certificate[]): PublicJwkBuilder<A, B, any, any, any, any>;
     ecChain(arg0: X509Certificate[]): EcPublicJwkBuilder;
     ecKeyPair(arg0: KeyPair): EcPrivateJwkBuilder;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { InteropLibrary } from '../../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { HiddenKey } from '../../../../../../com/oracle/truffle/api/object/HiddenKey.d.ts'
@@ -102,9 +103,9 @@ export class JSWeakSetObject extends JSNonProxyObject {
     static toPrimitive(paramobj: JSDynamicObject): Object;
     static toPrimitive(paramobj: JSDynamicObject, paramhint: JSToPrimitiveNode$Hint): Object;
     static updatePropertyFlags(paramobj: JSDynamicObject, paramkey: Object, paramupdateFunction: (param0: number) => number): boolean;
-    constructor(shape: Shape, proto: JSDynamicObject, weakHashMap: Map<Object, Object>)
-    readonly weakHashMap: Map<Object, Object>;
+    constructor(shape: Shape, proto: JSDynamicObject, weakHashMap: JavaMap<Object, Object>)
+    readonly weakHashMap: JavaMap<Object, Object>;
     getClassName(): TruffleString;
-    getWeakHashMap(): Map<Object, Object>;
+    getWeakHashMap(): JavaMap<Object, Object>;
     toDisplayStringImpl(allowSideEffects: boolean, format: ToDisplayStringFormat, depth: number): TruffleString;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ImmutableSetMultimap } from '../../../../../com/google/common/collect/ImmutableSetMultimap.d.ts'
 import type { Service } from '../../../../../com/google/common/util/concurrent/Service.d.ts'
 import type { Service$State } from '../../../../../com/google/common/util/concurrent/Service$State.d.ts'
@@ -22,8 +23,8 @@ export class ServiceManager extends Object implements ServiceManagerBridge {
     isHealthy(): boolean;
     servicesByState(): ImmutableSetMultimap<Service$State, Service>;
     startAsync(): ServiceManager;
-    startupDurations(): Map<Service, Duration>;
-    startupTimes(): Map<Service, number>;
+    startupDurations(): JavaMap<Service, Duration>;
+    startupTimes(): JavaMap<Service, number>;
     stopAsync(): ServiceManager;
     toString(): string;
 }

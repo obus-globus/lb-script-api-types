@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { EventBinding } from '../../../../../com/oracle/truffle/api/instrumentation/EventBinding.d.ts'
 import type { SourceSectionFilter } from '../../../../../com/oracle/truffle/api/instrumentation/SourceSectionFilter.d.ts'
 import type { TruffleInstrument$Env } from '../../../../../com/oracle/truffle/api/instrumentation/TruffleInstrument$Env.d.ts'
@@ -22,7 +23,7 @@ export class MemoryTracer extends Object implements Closeable {
     readonly filter: SourceSectionFilter;
     // private mergePayload: (param0: MemoryTracer$Payload, param1: MemoryTracer$Payload) => void;
     // private payloadFactory: () => MemoryTracer$Payload;
-    readonly rootNodes: Map<Thread, ProfilerNode<MemoryTracer$Payload>>;
+    readonly rootNodes: JavaMap<Thread, ProfilerNode<MemoryTracer$Payload>>;
     // private shadowStack: ShadowStack;
     readonly stackLimit: number;
     // private stackOverflowed: boolean;
@@ -31,7 +32,7 @@ export class MemoryTracer extends Object implements Closeable {
     close(): void;
     getRootNodes(): ProfilerNode<MemoryTracer$Payload>[];
     getStackLimit(): number;
-    getThreadToNodesMap(): Map<Thread, ProfilerNode<MemoryTracer$Payload>[]>;
+    getThreadToNodesMap(): JavaMap<Thread, ProfilerNode<MemoryTracer$Payload>[]>;
     hasData(): boolean;
     hasStackOverflowed(): boolean;
     isCollecting(): boolean;

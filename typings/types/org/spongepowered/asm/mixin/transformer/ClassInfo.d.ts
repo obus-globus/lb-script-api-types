@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Type } from '../../../../../org/objectweb/asm/Type.d.ts'
@@ -38,7 +39,7 @@ export class ClassInfo extends Object {
     private constructor(arg0: ClassNode)
     readonly access: number;
     readonly appliedMixins: MixinInfo[];
-    // private correspondingTypes: Map<ClassInfo, ClassInfo>;
+    // private correspondingTypes: JavaMap<ClassInfo, ClassInfo>;
     // private fields: ClassInfo$Field[];
     // private initialisers: ClassInfo$Method[];
     readonly interfaces: string[];

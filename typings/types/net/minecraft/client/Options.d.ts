@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { File } from '../../../java/io/File.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { OptionsAccessor } from '../../../net/caffeinemc/mods/sodium/mixin/features/gui/OptionsAccessor.d.ts'
@@ -199,7 +200,7 @@ export class Options extends Object implements OptionsAccessor {
     skipMultiplayerWarning: boolean;
     smoothCamera: boolean;
     // private soundDevice: OptionInstance<string>;
-    // private soundSourceVolumes: Map<SoundSource, OptionInstance<number>>;
+    // private soundSourceVolumes: JavaMap<SoundSource, OptionInstance<number>>;
     // private sprintWindow: OptionInstance<number>;
     startedCleanly: boolean;
     syncWrites: boolean;

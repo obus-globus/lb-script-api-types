@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { UserConnection } from '../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { ClientEntityIdChangeListener } from '../../../../../com/viaversion/viaversion/api/data/entity/ClientEntityIdChangeListener.d.ts'
 import type { DimensionData } from '../../../../../com/viaversion/viaversion/api/data/entity/DimensionData.d.ts'
@@ -10,11 +11,11 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class EntityTrackerBase extends Object implements ClientEntityIdChangeListener, EntityTracker {
     constructor(arg0: UserConnection, arg1: EntityType)
     // private connection: UserConnection;
-    readonly dimensions: { [key: string]: DimensionData };
-    // private entities: { [key: string]: any };
+    readonly dimensions: JavaMap<string, DimensionData>;
+    // private entities: JavaMap<any, any>;
     readonly instaBuild: boolean;
     // private playerType: EntityType;
-    // private registryKeyMappings: { [key: string]: KeyMappings };
+    // private registryKeyMappings: JavaMap<string, KeyMappings>;
     addEntity(arg0: number, arg1: EntityType): void;
     addRegistryKeys(arg0: string, arg1: KeyMappings): void;
     biomesSent(): number;
@@ -43,7 +44,7 @@ export class EntityTrackerBase extends Object implements ClientEntityIdChangeLis
     setCurrentMinY(arg0: number): void;
     setCurrentWorld(arg0: string): void;
     setCurrentWorldSectionHeight(arg0: number): void;
-    setDimensions(arg0: { [key: string]: DimensionData }): void;
+    setDimensions(arg0: JavaMap<string, DimensionData>): void;
     setInstaBuild(arg0: boolean): void;
     user(): UserConnection;
 }

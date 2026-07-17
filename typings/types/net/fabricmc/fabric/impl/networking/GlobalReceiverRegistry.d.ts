@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { ReadWriteLock } from '../../../../../java/util/concurrent/locks/ReadWriteLock.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { AbstractNetworkAddon } from '../../../../../net/fabricmc/fabric/impl/networking/AbstractNetworkAddon.d.ts'
@@ -9,7 +10,7 @@ export class GlobalReceiverRegistry<H extends unknown> extends Object {
     static DEFAULT_CHANNEL_NAME_MAX_LENGTH: number;
     constructor(arg0: PacketFlow, arg1: ConnectionProtocol, arg2: PayloadTypeRegistryImpl<any>)
     // private flow: PacketFlow;
-    readonly handlers: Map<Identifier, H>;
+    readonly handlers: JavaMap<Identifier, H>;
     // private lock: ReadWriteLock;
     // private payloadTypeRegistry: PayloadTypeRegistryImpl<any>;
     readonly protocol: ConnectionProtocol;
@@ -18,7 +19,7 @@ export class GlobalReceiverRegistry<H extends unknown> extends Object {
     endSession(arg0: AbstractNetworkAddon<H>): void;
     getChannels(): Identifier[];
     getHandler(arg0: Identifier): H;
-    getHandlers(): Map<Identifier, H>;
+    getHandlers(): JavaMap<Identifier, H>;
     getProtocol(): ConnectionProtocol;
     // private handleRegistration(arg0: Identifier, arg1: H): void;
     // private handleUnregistration(arg0: Identifier): void;

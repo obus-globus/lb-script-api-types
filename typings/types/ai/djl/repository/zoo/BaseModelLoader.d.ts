@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Application } from '../../../../ai/djl/Application.d.ts'
 import type { Device } from '../../../../ai/djl/Device.d.ts'
 import type { Model } from '../../../../ai/djl/Model.d.ts'
@@ -14,16 +15,16 @@ export class BaseModelLoader extends Object implements ModelLoader {
     constructor(arg0: MRL)
     // private defaultFactory: TranslatorFactory;
     mrl: MRL;
-    createModel(arg0: Path, arg1: string, arg2: Device, arg3: Block, arg4: { [key: string]: Object }, arg5: string): Model;
+    createModel(arg0: Path, arg1: string, arg2: Device, arg3: Block, arg4: JavaMap<string, Object>, arg5: string): Model;
     downloadModel<I extends unknown, O extends unknown>(arg0: Criteria<I, O>, arg1: Progress): void;
     getApplication(): Application;
     getArtifactId(): string;
     // private getFactoryLookupErrorMessage(arg0: TranslatorFactory): string;
     getGroupId(): string;
     getMrl(): MRL;
-    getTranslatorFactory(arg0: Criteria<Object, Object>, arg1: { [key: string]: Object }): TranslatorFactory;
+    getTranslatorFactory(arg0: Criteria<Object, Object>, arg1: JavaMap<string, Object>): TranslatorFactory;
     isDownloaded<I extends unknown, O extends unknown>(arg0: Criteria<I, O>): boolean;
     loadModel<I extends unknown, O extends unknown>(arg0: Criteria<I, O>): ZooModel<I, O>;
-    // private loadServingProperties(arg0: Path, arg1: { [key: string]: Object }, arg2: { [key: string]: string }): void;
+    // private loadServingProperties(arg0: Path, arg1: JavaMap<string, Object>, arg2: JavaMap<string, string>): void;
     toString(): string;
 }

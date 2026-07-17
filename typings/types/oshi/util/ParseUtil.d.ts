@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
 import type { OffsetDateTime } from '../../java/time/OffsetDateTime.d.ts'
 import type { Pattern } from '../../java/util/regex/Pattern.d.ts'
@@ -27,16 +28,16 @@ export class ParseUtil extends Object {
     static getStringBetween(paramarg0: string, paramarg1: string): string;
     static getStringValueOrUnknown(paramarg0: string): string;
     static getTextBetweenStrings(paramarg0: string, paramarg1: string, paramarg2: string): string;
-    static getValueOrUnknown(paramarg0: Map<Object, string>, paramarg1: Object): string;
-    static getValueOrUnknown(paramarg0: { [key: string]: string }, paramarg1: string): string;
+    static getValueOrUnknown(paramarg0: JavaMap<Object, string>, paramarg1: Object): string;
+    static getValueOrUnknown(paramarg0: JavaMap<string, string>, paramarg1: string): string;
     static hexStringToByteArray(paramarg0: string): number[];
     static hexStringToInt(paramarg0: string, paramarg1: number): number;
     static hexStringToLong(paramarg0: string, paramarg1: number): number;
     static hexStringToString(paramarg0: string): string;
     static longToByteArray(paramarg0: number, paramarg1: number, paramarg2: number): number[];
-    static parseByteArrayToStringMap(paramarg0: number[]): { [key: string]: string };
+    static parseByteArrayToStringMap(paramarg0: number[]): JavaMap<string, string>;
     static parseByteArrayToStrings(paramarg0: number[]): string[];
-    static parseCharArrayToStringMap(paramarg0: string[]): { [key: string]: string };
+    static parseCharArrayToStringMap(paramarg0: string[]): JavaMap<string, string>;
     static parseCimDateTimeToOffset(paramarg0: string): OffsetDateTime;
     static parseDHMSOrDefault(paramarg0: string, paramarg1: number): number;
     static parseDateToEpoch(paramarg0: string, paramarg1: string): number;
@@ -66,7 +67,7 @@ export class ParseUtil extends Object {
     static removeLeadingDots(paramarg0: string): string;
     static removeMatchingString(paramarg0: string, paramarg1: string): string;
     static strToLong(paramarg0: string, paramarg1: number): number;
-    static stringToEnumMap<K extends Enum<K>>(paramarg0: Class<K>, paramarg1: string, paramarg2: string): Map<K, string>;
+    static stringToEnumMap<K extends Enum<K>>(paramarg0: Class<K>, paramarg1: string, paramarg2: string): JavaMap<K, string>;
     static unsignedIntToLong(paramarg0: number): number;
     static unsignedLongToSignedLong(paramarg0: number): number;
     private constructor()

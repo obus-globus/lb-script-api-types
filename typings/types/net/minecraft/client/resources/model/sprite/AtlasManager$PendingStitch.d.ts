@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { CompletableFuture } from '../../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -12,7 +13,7 @@ export class AtlasManager$PendingStitch extends Record {
     entry(): AtlasManager$AtlasEntry;
     equals(o: Object | null): boolean;
     hashCode(): number;
-    joinAndUpload(result: Map<SpriteId, TextureAtlasSprite>): void;
+    joinAndUpload(result: JavaMap<SpriteId, TextureAtlasSprite>): void;
     preparations(): CompletableFuture<SpriteLoader$Preparations>;
     toString(): string;
 }

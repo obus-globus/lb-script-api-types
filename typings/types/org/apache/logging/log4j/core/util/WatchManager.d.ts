@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { UUID } from '../../../../../../java/util/UUID.d.ts'
 import type { Future } from '../../../../../../java/util/concurrent/Future.d.ts'
@@ -20,12 +21,12 @@ export class WatchManager extends AbstractLifeCycle {
     readonly id: UUID;
     readonly intervalSeconds: number;
     // private scheduler: ConfigurationScheduler;
-    readonly watchers: Map<Source, WatchManager$ConfigurationMonitor>;
+    readonly watchers: JavaMap<Source, WatchManager$ConfigurationMonitor>;
     checkFiles(): void;
-    getConfigurationWatchers(): Map<Source, Watcher>;
+    getConfigurationWatchers(): JavaMap<Source, Watcher>;
     getId(): UUID;
     getIntervalSeconds(): number;
-    getWatchers(): Map<File, FileWatcher>;
+    getWatchers(): JavaMap<File, FileWatcher>;
     hasEventListeners(): boolean;
     // private millisToString(millis: number): string;
     reset(): void;

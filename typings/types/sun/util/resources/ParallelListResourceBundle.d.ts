@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { ClassLoader } from '../../../java/lang/ClassLoader.d.ts'
 import type { Module } from '../../../java/lang/Module.d.ts'
 import type { Enumeration } from '../../../java/util/Enumeration.d.ts'
@@ -20,7 +21,7 @@ export abstract class ParallelListResourceBundle extends ResourceBundle {
     static getBundle(paramarg0: string, paramarg1: Locale, paramarg2: Module): ResourceBundle;
     constructor()
     // private keyset: string[];
-    // private lookup: { [key: string]: Object };
+    // private lookup: JavaMap<string, Object>;
     readonly parallelContents: AtomicMarkableReference<Object[][]>;
     areParallelContentsComplete(): boolean;
     containsKey(arg0: string): boolean;

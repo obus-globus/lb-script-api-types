@@ -1,9 +1,10 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { MapMakerInternalMap$InternalEntry } from '../../../../com/google/common/collect/MapMakerInternalMap$InternalEntry.d.ts'
 import type { MapMakerInternalMap$Segment } from '../../../../com/google/common/collect/MapMakerInternalMap$Segment.d.ts'
 import type { MapMakerInternalMap$StrongKeyStrongValueEntry } from '../../../../com/google/common/collect/MapMakerInternalMap$StrongKeyStrongValueEntry.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class MapMakerInternalMap$StrongKeyStrongValueSegment<K extends unknown, V extends unknown> extends MapMakerInternalMap$Segment<K, V, MapMakerInternalMap$StrongKeyStrongValueEntry<K, V>, MapMakerInternalMap$StrongKeyStrongValueSegment<K, V>> {
-    constructor(map: Map<K, V>, initialCapacity: number)
+    constructor(map: JavaMap<K, V>, initialCapacity: number)
     castForTesting(entry: MapMakerInternalMap$InternalEntry<K, V, MapMakerInternalMap$InternalEntry<Object, Object, any>>): MapMakerInternalMap$StrongKeyStrongValueEntry<K, V>;
     self(): MapMakerInternalMap$StrongKeyStrongValueSegment<K, V>;
 }

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { FileSystems$CompositeFileSystem$FileSystemInfo } from '../../../../com/oracle/truffle/polyglot/FileSystems$CompositeFileSystem$FileSystemInfo.d.ts'
 import type { FileSystems$PolyglotFileSystem } from '../../../../com/oracle/truffle/polyglot/FileSystems$PolyglotFileSystem.d.ts'
 import type { URI } from '../../../../java/net/URI.d.ts'
@@ -48,7 +49,7 @@ export class FileSystems$CompositeFileSystem extends Object implements FileSyste
     newDirectoryStream(dir: Path, filter: (param0: Path) => boolean): Path[];
     parsePath(uri: URI): Path;
     parsePath(path: string): Path;
-    readAttributes(path: Path, attributes: string, ...options: LinkOption[]): { [key: string]: Object };
+    readAttributes(path: Path, attributes: string, ...options: LinkOption[]): JavaMap<string, Object>;
     readSymbolicLink(link: Path): Path;
     // private selectFileSystem(path: Path): FileSystems$CompositeFileSystem$FileSystemInfo;
     setAttribute(path: Path, attribute: string, value: Object, ...options: LinkOption[]): void;

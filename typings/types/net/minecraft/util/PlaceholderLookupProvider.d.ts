@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { DynamicOps } from '../../../com/mojang/serialization/DynamicOps.d.ts'
 import type { Optional } from '../../../java/util/Optional.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
@@ -13,8 +14,8 @@ import type { RegistryContextSwapper } from '../../../net/minecraft/util/Registr
 export class PlaceholderLookupProvider extends Object implements HolderGetter$Provider {
     constructor(context: HolderLookup$Provider)
     // private context: HolderLookup$Provider;
-    // private holderSets: Map<TagKey<Object>, Object[]>;
-    // private holders: Map<ResourceKey<Object>, Holder$Reference<Object>>;
+    // private holderSets: JavaMap<TagKey<Object>, Object[]>;
+    // private holders: JavaMap<ResourceKey<Object>, Holder$Reference<Object>>;
     // private lookup: PlaceholderLookupProvider$UniversalLookup;
     createSerializationContext<V extends unknown>(parent: DynamicOps<V>): RegistryOps<V>;
     createSwapper(): RegistryContextSwapper;

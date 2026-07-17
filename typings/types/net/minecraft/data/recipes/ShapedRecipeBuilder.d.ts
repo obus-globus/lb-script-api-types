@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Criterion } from '../../../../net/minecraft/advancements/triggers/Criterion.d.ts'
 import type { HolderGetter } from '../../../../net/minecraft/core/HolderGetter.d.ts'
@@ -23,7 +24,7 @@ export class ShapedRecipeBuilder extends Object implements RecipeBuilder {
     // private category: RecipeCategory;
     // private group: string;
     // private items: HolderGetter<Item>;
-    // private key: { [key: string]: Ingredient };
+    // private key: JavaMap<string, Ingredient>;
     // private result: ItemStackTemplate;
     // private rows: string[];
     // private showNotification: boolean;

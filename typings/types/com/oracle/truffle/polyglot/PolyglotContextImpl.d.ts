@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { TruffleContext } from '../../../../com/oracle/truffle/api/TruffleContext.d.ts'
 import type { TruffleLanguage } from '../../../../com/oracle/truffle/api/TruffleLanguage.d.ts'
 import type { TruffleLanguage$ExitMode } from '../../../../com/oracle/truffle/api/TruffleLanguage$ExitMode.d.ts'
@@ -86,7 +87,7 @@ export class PolyglotContextImpl extends Object implements PolyglotImpl$VMObject
     // private objectSizeCalculator: ObjectSizeCalculator;
     // private parent: PolyglotContextImpl;
     // private pauseHandles: ContextPauseHandle[];
-    polyglotBindings: { [key: string]: Object };
+    polyglotBindings: JavaMap<string, Object>;
     readonly polyglotBindingsObject: PolyglotBindings;
     // private polyglotHostBindings: PolyglotBindings;
     // private singleThreadValue: WeakAssumedValue<PolyglotThreadInfo>;
@@ -99,7 +100,7 @@ export class PolyglotContextImpl extends Object implements PolyglotImpl$VMObject
     // private strongCreatorTruffleContext: TruffleContext;
     // private subProcesses: ProcessHandlers$ProcessDecorator[];
     // private threadLocalActions: PolyglotThreadLocalActions;
-    // private threads: Map<Thread, PolyglotThreadInfo>;
+    // private threads: JavaMap<Thread, PolyglotThreadInfo>;
     // private uncachedLocation: Node;
     // private volatileStatementCounter: AtomicLong;
     // private weakAPI: Reference<Context>;
@@ -177,8 +178,8 @@ export class PolyglotContextImpl extends Object implements PolyglotImpl$VMObject
     getOrCreateContextLoggers(): Object;
     getPolyglotBindings(): Object;
     getPolyglotBindingsObject(): Object;
-    getPolyglotGuestBindings(): { [key: string]: Object };
-    getSeenThreads(): Map<Thread, PolyglotThreadInfo>;
+    getPolyglotGuestBindings(): JavaMap<string, Object>;
+    getSeenThreads(): JavaMap<Thread, PolyglotThreadInfo>;
     getThreadInfo(thread: Thread): PolyglotThreadInfo;
     getThreadLocal(l: PolyglotLocals$LocalLocation, t: Thread): Object;
     // private getThreadLocals(thread: Thread): Object[];

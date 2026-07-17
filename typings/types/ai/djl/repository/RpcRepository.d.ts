@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { AbstractRepository } from '../../../ai/djl/repository/AbstractRepository.d.ts'
 import type { Artifact } from '../../../ai/djl/repository/Artifact.d.ts'
 import type { Artifact$Item } from '../../../ai/djl/repository/Artifact$Item.d.ts'
@@ -15,5 +16,5 @@ export class RpcRepository extends AbstractRepository {
     getResources(): MRL[];
     isRemote(): boolean;
     locate(arg0: MRL): Metadata;
-    resolve(arg0: MRL, arg1: { [key: string]: string }): Artifact;
+    resolve(arg0: MRL, arg1: JavaMap<string, string>): Artifact;
 }

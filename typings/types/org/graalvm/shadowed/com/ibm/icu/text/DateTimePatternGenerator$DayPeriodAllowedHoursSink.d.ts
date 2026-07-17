@@ -1,8 +1,9 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { UResource$Key } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/UResource$Key.d.ts'
 import type { UResource$Sink } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/UResource$Sink.d.ts'
 import type { UResource$Value } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/UResource$Value.d.ts'
 export class DateTimePatternGenerator$DayPeriodAllowedHoursSink extends UResource$Sink {
-    private constructor(tempMap: { [key: string]: string[] })
-    // private tempMap: { [key: string]: string[] };
+    private constructor(tempMap: JavaMap<string, string[]>)
+    // private tempMap: JavaMap<string, string[]>;
     put(key: UResource$Key, value: UResource$Value, noFallback: boolean): void;
 }

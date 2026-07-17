@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { CallTarget } from '../../../../com/oracle/truffle/api/CallTarget.d.ts'
 import type { TruffleLanguage } from '../../../../com/oracle/truffle/api/TruffleLanguage.d.ts'
 import type { RootNode } from '../../../../com/oracle/truffle/api/nodes/RootNode.d.ts'
@@ -22,20 +23,20 @@ import type { Pair } from '../../../../org/graalvm/collections/Pair.d.ts'
 import type { AbstractPolyglotImpl$APIAccess } from '../../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl$APIAccess.d.ts'
 export class PolyglotLanguageInstance extends Object implements PolyglotImpl$VMObject {
     constructor(language: PolyglotLanguage, layer: PolyglotSharingLayer)
-    // private callTargetCache: Map<Class<Object>, CallTarget>;
+    // private callTargetCache: JavaMap<Class<Object>, CallTarget>;
     // private contextLocalLocations: PolyglotLocals$LocalLocation[];
     // private contextLocals: PolyglotLocals$LanguageContextLocal<Object>[];
     // private contextThreadLocalLocations: PolyglotLocals$LocalLocation[];
     // private contextThreadLocals: PolyglotLocals$LanguageContextThreadLocal<Object>[];
-    // private generatorCache: Map<Pair<Class<Object>, Class<Object>>, Object>;
+    // private generatorCache: JavaMap<Pair<Class<Object>, Class<Object>>, Object>;
     // private guestToHostCodeCache: Object;
-    // private hostToGuestCodeCache: Map<Object, Object>;
+    // private hostToGuestCodeCache: JavaMap<Object, Object>;
     // private language: PolyglotLanguage;
     // private sharing: PolyglotSharingLayer;
     // private singleLanguageContext: WeakAssumedValue<PolyglotLanguageContext>;
     // private spi: TruffleLanguage<Object>;
-    // private staticObjectClassLoaders: Map<Class<Object>, Object>;
-    // private valueCache: Map<Class<Object>, PolyglotValueDispatch>;
+    // private staticObjectClassLoaders: JavaMap<Class<Object>, Object>;
+    // private valueCache: JavaMap<Class<Object>, PolyglotValueDispatch>;
     getAPIAccess(): AbstractPolyglotImpl$APIAccess;
     getEngine(): PolyglotEngineImpl;
     getGuestToHostCodeCache(): Object;

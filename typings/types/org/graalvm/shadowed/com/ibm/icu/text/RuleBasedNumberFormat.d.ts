@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { ObjectInputStream } from '../../../../../../../java/io/ObjectInputStream.d.ts'
 import type { ObjectOutputStream } from '../../../../../../../java/io/ObjectOutputStream.d.ts'
 import type { StringBuffer } from '../../../../../../../java/lang/StringBuffer.d.ts'
@@ -95,9 +96,9 @@ export class RuleBasedNumberFormat extends NumberFormat implements Cloneable {
     // private postProcessor: RBNFPostProcessor;
     // private publicRuleSetNames: string[];
     readonly roundingMode: number;
-    readonly ruleSetDisplayNames: { [key: string]: string[] };
+    readonly ruleSetDisplayNames: JavaMap<string, string[]>;
     // private ruleSets: NFRuleSet[];
-    // private ruleSetsMap: { [key: string]: NFRuleSet };
+    // private ruleSetsMap: JavaMap<string, NFRuleSet>;
     // private scannerProvider: RbnfLenientScannerProvider;
     // private adjustForContext(result: string): string;
     clone(): RuleBasedNumberFormat;

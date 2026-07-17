@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { CompletableFuture } from '../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
@@ -10,7 +11,7 @@ export class HashCache extends Object {
     constructor(rootDir: Path, providerIds: string[], version: WorldVersion)
     // private cacheDir: Path;
     // private cachePaths: Path[];
-    // private caches: { [key: string]: HashCache$ProviderCache };
+    // private caches: JavaMap<string, HashCache$ProviderCache>;
     // private cachesToWrite: string[];
     // private initialCount: number;
     // private rootDir: Path;

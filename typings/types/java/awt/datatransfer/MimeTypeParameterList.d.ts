@@ -1,10 +1,11 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { Enumeration } from '../../../java/util/Enumeration.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../../java/lang/Cloneable.d.ts'
 export class MimeTypeParameterList extends Object implements Cloneable {
     constructor()
     constructor(arg0: string)
-    // private parameters: { [key: string]: string };
+    // private parameters: JavaMap<string, string>;
     clone(): Object;
     equals(arg0: Object | null): boolean;
     get(arg0: string): string;

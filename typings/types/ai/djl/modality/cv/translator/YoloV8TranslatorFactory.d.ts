@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Model } from '../../../../../ai/djl/Model.d.ts'
 import type { Image } from '../../../../../ai/djl/modality/cv/Image.d.ts'
 import type { DetectedObjects } from '../../../../../ai/djl/modality/cv/output/DetectedObjects.d.ts'
@@ -7,5 +8,5 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class YoloV8TranslatorFactory extends ObjectDetectionTranslatorFactory implements Serializable {
     constructor()
-    buildBaseTranslator(arg0: Model, arg1: { [key: string]: Object | null }): Translator<Image, DetectedObjects>;
+    buildBaseTranslator(arg0: Model, arg1: JavaMap<string, Object | null>): Translator<Image, DetectedObjects>;
 }

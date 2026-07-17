@@ -5,7 +5,8 @@
 # Why: T-1 (in ts-defgen.js) auto-detects classes implementing
 # java.util.function.Function and emits the export as `Type_['apply']` which
 # IS callable but exposes the raw Java parameter shape (typically
-# Map<String, Object> -> `{ [key: string]: Object }`). For a small number of
+# Map<String, Object> -> `JavaMap<string, Object>` since A13, previously the
+# index signature `{ [key: string]: Object }`). For a small number of
 # script-API entry points the parameter is a runtime contract with named
 # keys; we narrow the parameter type here so users get autocomplete on
 # those keys.
@@ -167,13 +168,15 @@ if script_module_import not in src:
         )
 
 # (2) Rewrite the registerModule signature. Match the raw generator output
-#     (Map<String, Object> param + ClientModule callback) and the already-
-#     refined form (idempotent no-op).
+#     (Map<String, Object> param -> `JavaMap<string, Object>` since A13,
+#     + ClientModule callback) and the already-refined form (idempotent
+#     no-op). The refinement stays an object-literal shape: scripts pass a
+#     JS object literal that GraalJS target-type-maps into a host Map.
 already_refined = register_module_new in src
 if not already_refined:
     # Tolerate small whitespace variation in the raw signature.
     raw_pat = re.compile(
-        r"^[ \t]*registerModule\(\s*moduleObject:\s*\{\s*\[key:\s*string\]:\s*Object\s*\},"
+        r"^[ \t]*registerModule\(\s*moduleObject:\s*JavaMap<\s*string\s*,\s*Object\s*>\s*,"
         r"\s*callback:\s*\(\s*param0:\s*ClientModule\s*\)\s*=>\s*void\s*\):\s*void;",
         re.MULTILINE,
     )
@@ -237,8 +240,14 @@ if script_mode_import not in src:
         src = src[:end] + "\n" + script_mode_import + src[end:]
 
 # (2) Rewrite both registerMode and registerChoice signatures. Match the raw
-#     generator form (Mode callback, Object descriptor index); idempotent once
-#     refined.
+#     generator form (Mode callback, JavaMap descriptor); idempotent once
+#     refined. A13: the Kotlin `Map<String, Any>` descriptor param renders as
+#     `JavaMap<string, Object>` (previously the index signature
+#     `{ [key: string]: Object }`). The refinement deliberately stays the
+#     object-literal shape `{ [key: string]: unknown }`: scripts pass a JS
+#     object literal here and GraalJS target-type-maps it into a host Map, so
+#     an object literal is the truthful *input* type at this script-facing
+#     boundary (JavaMap would reject it).
 for fn in ("registerMode", "registerChoice"):
     refined = (
         f"    {fn}(modeValueGroup: ModeValueGroup<Mode>, "
@@ -249,7 +258,7 @@ for fn in ("registerMode", "registerChoice"):
         continue
     raw = re.compile(
         rf"^[ \t]*{fn}\(\s*modeValueGroup:\s*ModeValueGroup<Mode>\s*,"
-        rf"\s*modeObject:\s*\{{\s*\[key:\s*string\]:\s*Object\s*\}}\s*,"
+        rf"\s*modeObject:\s*JavaMap<\s*string\s*,\s*Object\s*>\s*,"
         rf"\s*callback:\s*\(\s*param0:\s*Mode\s*\)\s*=>\s*void\s*\):\s*void;",
         re.MULTILINE,
     )

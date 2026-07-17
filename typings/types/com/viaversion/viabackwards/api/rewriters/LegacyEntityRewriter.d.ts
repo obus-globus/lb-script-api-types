@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { BackwardsProtocol } from '../../../../../com/viaversion/viabackwards/api/BackwardsProtocol.d.ts'
 import type { EntityObjectData } from '../../../../../com/viaversion/viabackwards/api/entities/storage/EntityObjectData.d.ts'
 import type { EntityReplacement } from '../../../../../com/viaversion/viabackwards/api/entities/storage/EntityReplacement.d.ts'
@@ -15,7 +16,7 @@ import type { Type } from '../../../../../com/viaversion/viaversion/api/type/Typ
 export abstract class LegacyEntityRewriter<C extends ClientboundPacketType, T extends BackwardsProtocol<C, any, any, any>> extends EntityRewriterBase<C, T> {
     constructor(arg0: T)
     constructor(arg0: T, arg1: EntityDataType, arg2: EntityDataType)
-    // private objectTypes: Map<ObjectType, EntityReplacement>;
+    // private objectTypes: JavaMap<ObjectType, EntityReplacement>;
     getMobSpawnRewriter(arg0: Type<EntityData[]>): (param0: PacketWrapper) => void;
     getMobSpawnRewriter(arg0: Type<EntityData[]>, arg1: (param0: PacketWrapper, param1: number) => void): (param0: PacketWrapper) => void;
     getMobSpawnRewriter1_11(arg0: Type<EntityData[]>): (param0: PacketWrapper) => void;

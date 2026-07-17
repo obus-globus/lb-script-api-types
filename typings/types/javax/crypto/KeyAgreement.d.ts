@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../JavaMap.d.ts'
 import type { Key } from '../../java/security/Key.d.ts'
 import type { Provider$Service } from '../../java/security/Provider$Service.d.ts'
 import type { SecureRandom } from '../../java/security/SecureRandom.d.ts'
@@ -9,12 +10,12 @@ import type { Iterator } from '../../java/util/Iterator.d.ts'
 export class KeyAgreement extends Object {
     static getInstance(paramarg0: string): KeyAgreement;
     static getInstance(paramarg0: string, paramarg1: string): KeyAgreement;
-    static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): KeyAgreement;
-    constructor(arg0: KeyAgreementSpi, arg1: { [key: string]: any }, arg2: string)
+    static getInstance(paramarg0: string, paramarg1: JavaMap<any, any>): KeyAgreement;
+    constructor(arg0: KeyAgreementSpi, arg1: JavaMap<any, any>, arg2: string)
     readonly algorithm: string;
     // private firstService: Provider$Service;
     // private lock: Object;
-    readonly provider: { [key: string]: any };
+    readonly provider: JavaMap<any, any>;
     // private serviceIterator: Iterator<Provider$Service>;
     // private spi: KeyAgreementSpi;
     chooseFirstProvider(): void;
@@ -24,7 +25,7 @@ export class KeyAgreement extends Object {
     generateSecret(arg0: number[], arg1: number): number;
     generateSecret(arg0: string): SecretKey;
     getAlgorithm(): string;
-    getProvider(): { [key: string]: any };
+    getProvider(): JavaMap<any, any>;
     // private getProviderName(): string;
     // private implInit(arg0: KeyAgreementSpi, arg1: number, arg2: Key, arg3: AlgorithmParameterSpec, arg4: SecureRandom): void;
     init(arg0: Key): void;

@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { RenderDataMapConsumer } from '../../../../../net/fabricmc/fabric/impl/blockgetter/client/RenderDataMapConsumer.d.ts'
@@ -21,7 +22,7 @@ export class RenderSectionRegion extends Object implements RenderDataMapConsumer
     static index(paramminSectionX: number, paramminSectionY: number, paramminSectionZ: number, paramsectionX: number, paramsectionY: number, paramsectionZ: number): number;
     constructor(level: ClientLevel, minSectionX: number, minSectionY: number, minSectionZ: number, sections: SectionCopy[])
     // private cardinalLighting: CardinalLighting;
-    // private fabric_renderDataMap: { [key: string]: any };
+    // private fabric_renderDataMap: JavaMap<any, any>;
     // private level: ClientLevel;
     readonly lightEngine: LevelLightEngine;
     // private minSectionX: number;
@@ -29,7 +30,7 @@ export class RenderSectionRegion extends Object implements RenderDataMapConsumer
     // private minSectionZ: number;
     // private sections: SectionCopy[];
     cardinalLighting(): CardinalLighting;
-    fabric_acceptRenderDataMap(arg0: { [key: string]: any }): void;
+    fabric_acceptRenderDataMap(arg0: JavaMap<any, any>): void;
     getBiomeFabric(arg0: BlockPos): Holder<Object>;
     getBlockEntity(pos: BlockPos): BlockEntity;
     getBlockEntity<T extends BlockEntity>(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;

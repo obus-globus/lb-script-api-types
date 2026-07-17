@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
 import type { SelectionKey } from '../../../../java/nio/channels/SelectionKey.d.ts'
 import type { Selector } from '../../../../java/nio/channels/Selector.d.ts'
@@ -14,7 +15,7 @@ import type { AFSelectorProvider } from '../../../../org/newsclub/net/unix/AFSel
 export class AFSelector extends AbstractSelector {
     static open(): Selector;
     constructor(arg0: AFSelectorProvider<any>)
-    // private keysRegistered: Map<AFSelectionKey, number>;
+    // private keysRegistered: JavaMap<AFSelectionKey, number>;
     // private keysRegisteredKeySet: AFSelectionKey[];
     // private keysRegisteredPublic: SelectionKey[];
     // private pipeMsgReceiveBuffer: ByteBuffer;
