@@ -30,7 +30,12 @@ W3 = deeper design, W4 = infra.
 > **Fix plans (2026-07-17):** the remaining deferred/partial items have detailed
 > engineering plans in `docs/plans/`: [A11 @JvmOverloads](plans/A11-jvmoverloads.md),
 > [A13 JavaMap](plans/A13-javamap.md), [A15 nashorn dual](plans/A15-nashorn-dual.md),
-> [A17 emission nits](plans/A17-emission-nits.md).
+> [A17 emission nits](plans/A17-emission-nits.md). Each plan was
+> adversarially reviewed - read [plans/adversarial-review.md](plans/adversarial-review.md)
+> alongside them (it corrects real flaws: A17-N4 must use `protected` not
+> `private` ctors, A13's keySet/values/entrySet must stay `any`, A11's
+> open-override fallback is a phantom, and generator edits force a cold
+> multi-hour regen the plans mispriced).
 
 ### Wave 1 - generator quick wins
 
