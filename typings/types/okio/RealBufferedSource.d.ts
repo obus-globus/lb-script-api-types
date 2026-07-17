@@ -10,6 +10,7 @@ import type { Source } from '../okio/Source.d.ts'
 import type { Timeout } from '../okio/Timeout.d.ts'
 export class RealBufferedSource extends Object implements BufferedSource {
     constructor(source: Source)
+    getBuffer(): Buffer;
     bufferField: Buffer;
     closed: boolean;
     source: Source;

@@ -2,7 +2,6 @@ import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { AttachmentTarget } from '../../../../../net/fabricmc/fabric/api/attachment/v1/AttachmentTarget.d.ts'
 import type { AttachmentType } from '../../../../../net/fabricmc/fabric/api/attachment/v1/AttachmentType.d.ts'
 import type { AttachmentTargetImpl } from '../../../../../net/fabricmc/fabric/impl/attachment/AttachmentTargetImpl.d.ts'
 import type { AttachmentChange } from '../../../../../net/fabricmc/fabric/impl/attachment/sync/AttachmentChange.d.ts'
@@ -51,10 +50,8 @@ import type { TickContainerAccess } from '../../../../../net/minecraft/world/tic
 export class LevelChunk extends ChunkAccess implements AttachmentTargetImpl, DebugValueSource, LevelHeightAccessor {
     static NBT_ATTACHMENT_KEY: string;
     static NO_FILLED_SECTION: number;
-    static create(paramminY: number, paramheight: number): LevelHeightAccessor;
     static getOrCreateOffsetList(paramlist: (Object | null)[][], paramsectionIndex: number): (Object | null)[];
     static problemPath(parampos: ChunkPos): () => string;
-    static transfer(paramarg0: AttachmentTarget, paramarg1: AttachmentTarget, paramarg2: boolean): void;
     constructor(level: ServerLevel, protoChunk: ProtoChunk, postLoad: (param0: LevelChunk) => void)
     constructor(level: Level, pos: ChunkPos)
     constructor(level: Level, pos: ChunkPos, upgradeData: UpgradeData, blockTicks: LevelChunkTicks<Block>, fluidTicks: LevelChunkTicks<Fluid>, inhabitedTime: number, sections: LevelChunkSection[], postLoad: (param0: LevelChunk) => void, blendingData: BlendingData)

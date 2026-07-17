@@ -1,7 +1,7 @@
 import type { AutoCloseable } from '../../../../java/lang/AutoCloseable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class CloseableThreadContext$Instance extends Object implements AutoCloseable {
-    constructor(arg0: any)
+    private constructor()
     // private originalValues: { [key: string]: string };
     // private pushCount: number;
     close(): void;

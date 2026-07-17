@@ -18,7 +18,6 @@ export abstract class JSSubtractNode extends JSBinaryNode implements Truncatable
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
-    static truncate(paramnode: Node): void;
     constructor(truncate: boolean, left: JavaScriptNode, right: JavaScriptNode)
     // private truncate: boolean;
     copyRecursive(): JavaScriptNode;

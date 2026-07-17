@@ -39,9 +39,6 @@ export class EasingType$CubicBezier extends Object implements EasingType {
     static OUT_QUINT: EasingType;
     static OUT_SINE: EasingType;
     static SIMPLE_REGISTRY: ExtraCodecs$LateBoundIdMapper<string, EasingType>;
-    static cubicBezier(paramx1: number, paramy1: number, paramx2: number, paramy2: number): EasingType;
-    static registerSimple(paramid: string, parameasing: EasingType): EasingType;
-    static symmetricCubicBezier(paramx1: number, paramy1: number): EasingType;
     constructor(controls: EasingType$CubicBezierControls)
     // private controls: EasingType$CubicBezierControls;
     // private xCurve: EasingType$CubicBezier$CubicCurve;

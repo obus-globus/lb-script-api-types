@@ -5,7 +5,7 @@ import type { UnsynchronizedFilterInputStream$Builder } from '../../../../../org
 export class UnsynchronizedBufferedInputStream extends UnsynchronizedFilterInputStream {
     static builder(): UnsynchronizedFilterInputStream$Builder;
     static nullInputStream(): InputStream;
-    constructor(arg0: UnsynchronizedBufferedInputStream$Builder, arg1: any)
+    private constructor(arg0: UnsynchronizedBufferedInputStream$Builder)
     // private buffer: number[];
     // private count: number;
     // private markLimit: number;

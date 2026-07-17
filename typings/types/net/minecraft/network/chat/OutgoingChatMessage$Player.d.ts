@@ -6,7 +6,6 @@ import type { OutgoingChatMessage } from '../../../../net/minecraft/network/chat
 import type { PlayerChatMessage } from '../../../../net/minecraft/network/chat/PlayerChatMessage.d.ts'
 import type { ServerPlayer } from '../../../../net/minecraft/server/level/ServerPlayer.d.ts'
 export class OutgoingChatMessage$Player extends Record implements OutgoingChatMessage {
-    static create(parammessage: PlayerChatMessage): OutgoingChatMessage;
     constructor(message: PlayerChatMessage)
     // private message: PlayerChatMessage;
     content(): Component;

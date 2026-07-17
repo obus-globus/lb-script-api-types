@@ -9,5 +9,4 @@ export class KafkaManager extends AbstractManager {
     static getManager(paramloggerContext: LoggerContext, paramname: string, paramtopic: string, paramsyncSend: boolean, paramproperties: Property[], paramkey: string): KafkaManager;
     static hasManager(paramname: string): boolean;
     constructor(loggerContext: LoggerContext, name: string, topic: string, syncSend: boolean, properties: Property[], key: string)
-    constructor(arg0: LoggerContext, arg1: string, arg2: string, arg3: boolean, arg4: boolean, arg5: Property[], arg6: string, arg7: any)
 }

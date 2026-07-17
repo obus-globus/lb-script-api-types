@@ -9,7 +9,6 @@ import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class ShadowRealmPrototypeBuiltins$ShadowRealmPrototype extends Enum<ShadowRealmPrototypeBuiltins$ShadowRealmPrototype> implements BuiltinEnum<ShadowRealmPrototypeBuiltins$ShadowRealmPrototype> {
     static evaluate: ShadowRealmPrototypeBuiltins$ShadowRealmPrototype;
     static importValue: ShadowRealmPrototypeBuiltins$ShadowRealmPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): ShadowRealmPrototypeBuiltins$ShadowRealmPrototype;
     static values(): ShadowRealmPrototypeBuiltins$ShadowRealmPrototype[];

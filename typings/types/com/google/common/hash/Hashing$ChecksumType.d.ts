@@ -10,7 +10,7 @@ export class Hashing$ChecksumType extends Enum<Hashing$ChecksumType> implements 
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): Hashing$ChecksumType;
     static values(): Hashing$ChecksumType[];
-    constructor(arg2: string, arg3: any)
+    private constructor(toString: string)
     hashFunction: HashFunction;
     name(): "CRC_32" | "CRC_32C" | "ADLER_32";
 }

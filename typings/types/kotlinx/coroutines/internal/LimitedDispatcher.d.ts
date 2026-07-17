@@ -1,5 +1,4 @@
 import type { Runnable } from '../../../java/lang/Runnable.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Continuation } from '../../../kotlin/coroutines/Continuation.d.ts'
 import type { ContinuationInterceptor$Key } from '../../../kotlin/coroutines/ContinuationInterceptor$Key.d.ts'
 import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineContext.d.ts'
@@ -12,9 +11,9 @@ import type { LimitedDispatcher$Worker } from '../../../kotlinx/coroutines/inter
 import type { LockFreeTaskQueue } from '../../../kotlinx/coroutines/internal/LockFreeTaskQueue.d.ts'
 export class LimitedDispatcher extends CoroutineDispatcher implements Delay {
     static Key: ContinuationInterceptor$Key;
-    static delay$suspendImpl(paramarg0: Delay, paramarg1: number, paramarg2: Continuation<Object>): Object;
     constructor(dispatcher: CoroutineDispatcher, parallelism: number, name: string | null)
-    delay(time: number): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    delay(time: number, $completion: Continuation<void>): any;
     dispatch(context: CoroutineContext, block: () => void): void;
     // private dispatchInternal(block: () => void, startWorker: (param0: LimitedDispatcher$Worker) => void): void;
     dispatchYield(context: CoroutineContext, block: () => void): void;

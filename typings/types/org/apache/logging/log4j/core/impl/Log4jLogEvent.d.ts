@@ -31,7 +31,6 @@ export class Log4jLogEvent extends Object implements LogEvent {
     constructor(loggerName: string, marker: Marker, loggerFQCN: string, source: StackTraceElement, level: Level, message: Message, properties: Property[], t: Throwable)
     constructor(loggerName: string, marker: Marker, loggerFQCN: string, level: Level, message: Message, t: Throwable)
     constructor(loggerName: string, marker: Marker, loggerFQCN: string, level: Level, message: Message, t: Throwable, mdc: { [key: string]: string }, ndc: (Object | null)[], threadName: string, location: StackTraceElement, timestampMillis: number)
-    constructor(arg0: string, arg1: Marker, arg2: string, arg3: Level, arg4: Message, arg5: Throwable, arg6: StringMap, arg7: (Object | null)[], arg8: number, arg9: string, arg10: number, arg11: StackTraceElement, arg12: number, arg13: number, arg14: number, arg15: any)
     constructor(loggerName: string, marker: Marker, loggerFQCN: string, level: Level, message: Message, properties: Property[], t: Throwable)
     readonly contextData: StringMap;
     readonly contextStack: (Object | null)[];

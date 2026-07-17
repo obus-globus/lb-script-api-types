@@ -26,7 +26,7 @@ import type { FrameGpuBufferPool } from '../../../../../net/ccbluex/liquidbounce
  * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/render/buffers/DynamicGpuBufferWriter.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/render/buffers/DynamicGpuBufferWriter.kt:49}
  */
 export class DynamicGpuBufferWriter extends Object implements AutoCloseable {
-    constructor(label: string, usage: number, growPolicy: DynamicGpuBufferWriter$GrowPolicy)
+    constructor(label: string, usage: number, growPolicy?: DynamicGpuBufferWriter$GrowPolicy)
     // private closed: boolean;
     // private currentBuffer: GpuBuffer | null;
     readonly growPolicy: DynamicGpuBufferWriter$GrowPolicy;
@@ -58,5 +58,5 @@ export class DynamicGpuBufferWriter extends Object implements AutoCloseable {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/render/buffers/DynamicGpuBufferWriter.kt#L70 | src/main/kotlin/net/ccbluex/liquidbounce/render/buffers/DynamicGpuBufferWriter.kt:70}
      */
-    upload(data: ByteBuffer, alignment: number): GpuBufferSlice;
+    upload(data: ByteBuffer, alignment?: number): GpuBufferSlice;
 }

@@ -1,11 +1,8 @@
 import type { FloatDoublePair } from '../../../../../it/unimi/dsi/fastutil/floats/FloatDoublePair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
-import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class FloatDoubleImmutablePair extends Object implements FloatDoublePair, Serializable {
-    static lexComparator(): (param0: FloatDoublePair, param1: FloatDoublePair) => number;
     static of(paramarg0: number, paramarg1: number): FloatDoubleImmutablePair;
-    static of(paramarg0: number, paramarg1: number): FloatDoublePair;
     constructor(arg0: number, arg1: number)
     // private left: number;
     // private right: number;

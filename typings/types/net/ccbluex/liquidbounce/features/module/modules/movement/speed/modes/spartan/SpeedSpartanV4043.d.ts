@@ -16,4 +16,5 @@ export class SpeedSpartanV4043 extends Mode {
     constructor(parent: ModeValueGroup<any>)
     // private moveHandler: EventHook<PlayerMoveEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
 }

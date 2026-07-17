@@ -1,7 +1,7 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../../java/lang/Comparable.d.ts'
 export class ComparableUtils$ComparableCheckBuilder<A extends Comparable<A>> extends Object {
-    constructor(arg0: Comparable<Object>, arg1: any)
+    private constructor(arg0: A)
     // private a: A;
     between(arg0: A, arg1: A): boolean;
     betweenExclusive(arg0: A, arg1: A): boolean;

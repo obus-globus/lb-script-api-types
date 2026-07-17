@@ -10,7 +10,7 @@ export class Predicates$ObjectPredicate extends Enum<Predicates$ObjectPredicate>
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): Predicates$ObjectPredicate;
     static values(): Predicates$ObjectPredicate[];
-    constructor(arg2: any)
+    private constructor()
     test(arg0: Object): boolean;
     withNarrowedType<T extends unknown>(): (param0: T) => boolean;
     name(): "ALWAYS_TRUE" | "ALWAYS_FALSE" | "IS_NULL" | "NOT_NULL";

@@ -9,7 +9,6 @@ import type { DensityFunctions$Spline$Point } from '../../../../../net/minecraft
 export class DensityFunctions$Spline$Coordinate extends Record implements BoundedFloatFunction<DensityFunctions$Spline$Point> {
     static CODEC: Codec<DensityFunctions$Spline$Coordinate>;
     static IDENTITY: BoundedFloatFunction<number>;
-    static constant<C extends unknown>(paramvalue: number): BoundedFloatFunction<C>;
     constructor(function_: DensityFunction)
     // private function: DensityFunction;
     apply(point: DensityFunctions$Spline$Point): number;

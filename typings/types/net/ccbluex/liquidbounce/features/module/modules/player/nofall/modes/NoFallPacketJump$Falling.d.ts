@@ -5,5 +5,6 @@ export class NoFallPacketJump$Falling extends Mode {
     static Companion: Tagged$Companion;
     static INSTANCE: NoFallPacketJump$Falling;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     readonly resetFallDistance: boolean;
 }

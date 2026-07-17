@@ -1,4 +1,3 @@
-import type { DefaultConstructorMarker } from '../../../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { CallableDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableDescriptor.d.ts'
 import type { ClassConstructorDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassConstructorDescriptor.d.ts'
 import type { ClassDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
@@ -35,7 +34,6 @@ import type { KotlinType } from '../../../../../../../../../kotlin/reflect/jvm/i
 export class LazyJavaClassMemberScope extends LazyJavaScope {
     static Companion: MemberScope$Companion;
     constructor(arg0: LazyJavaResolverContext, arg1: ClassDescriptor, arg2: JavaClass, arg3: boolean, arg4: LazyJavaClassMemberScope)
-    constructor(arg0: LazyJavaResolverContext, arg1: ClassDescriptor, arg2: JavaClass, arg3: boolean, arg4: LazyJavaClassMemberScope, arg5: number, arg6: DefaultConstructorMarker)
     // private constructors: NotNullLazyValue<ClassConstructorDescriptor[]>;
     // private enumEntryIndex: NotNullLazyValue<Map<Name, JavaField>>;
     // private generatedNestedClassNames: NotNullLazyValue<Name[]>;

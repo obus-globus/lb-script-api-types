@@ -12,7 +12,6 @@ export abstract class AbstractRepeatingNode extends JavaScriptNode implements Re
     static CONTINUE_LOOP_STATUS: Object;
     static cloneUninitialized<T extends JavaScriptNode>(paramnode: T, parammaterializedTags: Class<Tag>[]): T;
     static cloneUninitialized<T extends JavaScriptNode>(paramnodeArray: T[], parammaterializedTags: Class<Tag>[]): T[];
-    static createResumableNode(paramnode: ResumableNode, paramstateSlot: number): JavaScriptNode;
     static findBlockScopeNode(paramnode: Node): Node;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;

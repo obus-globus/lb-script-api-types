@@ -4,7 +4,6 @@ import type { InvocationHandler } from '../../../java/lang/reflect/InvocationHan
 import type { Method } from '../../../java/lang/reflect/Method.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class CallbackReference$NativeFunctionHandler extends Object implements InvocationHandler {
-    static invokeDefault(paramarg0: Object, paramarg1: Method, ...paramarg2: Object[]): Object;
     constructor(arg0: Pointer, arg1: number, arg2: { [key: string]: Object | null })
     // private function: Function;
     // private options: { [key: string]: Object | null };

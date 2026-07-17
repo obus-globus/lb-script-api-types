@@ -6,7 +6,7 @@ import type { PatternSelector } from '../../../../../../org/apache/logging/log4j
 import type { RegexReplacement } from '../../../../../../org/apache/logging/log4j/core/pattern/RegexReplacement.d.ts'
 import type { Builder } from '../../../../../../org/apache/logging/log4j/core/util/Builder.d.ts'
 export class PatternLayout$Builder extends Object implements Builder<PatternLayout> {
-    constructor(arg0: any)
+    private constructor()
     // private alwaysWriteExceptions: boolean;
     // private charset: Charset;
     // private configuration: Configuration;

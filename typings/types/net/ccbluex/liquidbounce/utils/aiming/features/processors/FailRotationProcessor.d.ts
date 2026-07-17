@@ -12,7 +12,7 @@ import type { RotationProcessor } from '../../../../../../../net/ccbluex/liquidb
  * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/FailRotationProcessor.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/FailRotationProcessor.kt:36}
  */
 export class FailRotationProcessor extends ToggleableValueGroup implements RotationProcessor {
-    constructor(owner: EventListener | null)
+    constructor(owner?: EventListener | null)
     // private currentTransitionInDuration: number;
     readonly failFactor: number;
     // private failRate: number;

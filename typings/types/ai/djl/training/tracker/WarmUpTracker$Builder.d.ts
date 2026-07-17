@@ -3,7 +3,7 @@ import type { WarmUpTracker } from '../../../../ai/djl/training/tracker/WarmUpTr
 import type { WarmUpTracker$Mode } from '../../../../ai/djl/training/tracker/WarmUpTracker$Mode.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class WarmUpTracker$Builder extends Object {
-    constructor(arg0: any)
+    private constructor()
     // private mainTracker: Tracker;
     // private warmUpBeginValue: number;
     // private warmUpMode: WarmUpTracker$Mode;

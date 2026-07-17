@@ -8,7 +8,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class NumberFormatFunctionBuiltins$NumberFormatFunction extends Enum<NumberFormatFunctionBuiltins$NumberFormatFunction> implements BuiltinEnum<NumberFormatFunctionBuiltins$NumberFormatFunction> {
     static supportedLocalesOf: NumberFormatFunctionBuiltins$NumberFormatFunction;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): NumberFormatFunctionBuiltins$NumberFormatFunction;
     static values(): NumberFormatFunctionBuiltins$NumberFormatFunction[];

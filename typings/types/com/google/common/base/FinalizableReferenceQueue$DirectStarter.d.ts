@@ -4,6 +4,6 @@ import type { PhantomReference } from '../../../../java/lang/ref/PhantomReferenc
 import type { ReferenceQueue } from '../../../../java/lang/ref/ReferenceQueue.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class FinalizableReferenceQueue$DirectStarter extends Object implements FinalizableReferenceQueue$FinalizerStarter {
-    constructor(arg0: any)
+    private constructor()
     startFinalizer(finalizableReferenceClass: Class<Object>, queue: ReferenceQueue<Object>, frqRef: PhantomReference<Object>): void;
 }

@@ -7,8 +7,6 @@ export class ModuleAvoidHazards$AvoidMode extends Enum<ModuleAvoidHazards$AvoidM
     static INPUT: ModuleAvoidHazards$AvoidMode;
     static SHAPE: ModuleAvoidHazards$AvoidMode;
     static getEntries(): ModuleAvoidHazards$AvoidMode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleAvoidHazards$AvoidMode;
     static values(): ModuleAvoidHazards$AvoidMode[];

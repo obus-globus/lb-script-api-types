@@ -24,7 +24,6 @@ export class Tailer extends Object implements AutoCloseable, Runnable {
     constructor(arg0: File, arg1: TailerListener, arg2: number, arg3: boolean, arg4: boolean)
     constructor(arg0: File, arg1: TailerListener, arg2: number, arg3: boolean, arg4: boolean, arg5: number)
     constructor(arg0: File, arg1: TailerListener, arg2: number, arg3: boolean, arg4: number)
-    constructor(arg0: Tailer$Builder, arg1: any)
     // private charset: Charset;
     readonly delayDuration: Duration;
     // private ignoreTouch: boolean;

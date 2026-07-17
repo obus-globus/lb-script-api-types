@@ -1,4 +1,3 @@
-import type { DefaultConstructorMarker } from '../../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { BuiltInsPackageFragment } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/builtins/BuiltInsPackageFragment.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
 import type { ModuleDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ModuleDescriptor.d.ts'
@@ -11,7 +10,7 @@ import type { StorageManager } from '../../../../../../../../kotlin/reflect/jvm/
 export class BuiltInsPackageFragmentImpl extends DeserializedPackageFragmentImpl implements BuiltInsPackageFragment {
     static Companion: BuiltInsPackageFragmentImpl$Companion;
     static toString(paramarg0: DeclarationDescriptor): string;
-    constructor(arg0: FqName, arg1: StorageManager, arg2: ModuleDescriptor, arg3: ProtoBuf$PackageFragment, arg4: BuiltInsBinaryVersion, arg5: boolean, arg6: DefaultConstructorMarker)
+    private constructor(arg0: FqName, arg1: StorageManager, arg2: ModuleDescriptor, arg3: ProtoBuf$PackageFragment, arg4: BuiltInsBinaryVersion, arg5: boolean)
     // private isFallback: boolean;
     toString(): string;
 }

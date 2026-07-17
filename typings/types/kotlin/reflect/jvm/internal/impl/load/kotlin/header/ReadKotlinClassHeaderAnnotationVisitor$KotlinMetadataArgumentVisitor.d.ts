@@ -6,7 +6,7 @@ import type { ClassId } from '../../../../../../../../kotlin/reflect/jvm/interna
 import type { Name } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/name/Name.d.ts'
 import type { ClassLiteralValue } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/constants/ClassLiteralValue.d.ts'
 export class ReadKotlinClassHeaderAnnotationVisitor$KotlinMetadataArgumentVisitor extends Object implements KotlinJvmBinaryClass$AnnotationArgumentVisitor {
-    constructor(null_: ReadKotlinClassHeaderAnnotationVisitor, arg1: any)
+    private constructor(null_: ReadKotlinClassHeaderAnnotationVisitor)
     // private dataArrayVisitor(): KotlinJvmBinaryClass$AnnotationArrayArgumentVisitor;
     // private stringsArrayVisitor(): KotlinJvmBinaryClass$AnnotationArrayArgumentVisitor;
     visit(arg0: Name, arg1: Object): void;

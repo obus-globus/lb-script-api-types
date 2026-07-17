@@ -1,9 +1,7 @@
 import type { App } from '../../../../com/mojang/datafixers/kinds/App.d.ts'
 import type { Applicative } from '../../../../com/mojang/datafixers/kinds/Applicative.d.ts'
-import type { Applicative$Mu } from '../../../../com/mojang/datafixers/kinds/Applicative$Mu.d.ts'
 import type { Const$Instance$Mu } from '../../../../com/mojang/datafixers/kinds/Const$Instance$Mu.d.ts'
 import type { Const$Mu } from '../../../../com/mojang/datafixers/kinds/Const$Mu.d.ts'
-import type { K1 } from '../../../../com/mojang/datafixers/kinds/K1.d.ts'
 import type { Monoid } from '../../../../com/mojang/datafixers/kinds/Monoid.d.ts'
 import type { Function10 } from '../../../../com/mojang/datafixers/util/Function10.d.ts'
 import type { Function11 } from '../../../../com/mojang/datafixers/util/Function11.d.ts'
@@ -23,7 +21,6 @@ import type { BiFunction } from '../../../../java/util/function/BiFunction.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Const$Instance<C extends unknown> extends Object implements Applicative<Const$Mu<C>, Const$Instance$Mu<C>> {
-    static unbox<F extends K1, Mu extends Applicative$Mu>(paramarg0: App<Mu, F>): Applicative<F, Mu>;
     constructor(arg0: Monoid<C>)
     // private monoid: Monoid<C>;
     ap<R extends unknown, A extends unknown>(arg0: App<Const$Mu<C>, (param0: A) => R>, arg1: App<Const$Mu<C>, A>): App<Const$Mu<C>, R>;

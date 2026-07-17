@@ -8,8 +8,6 @@ export class ModuleSafeWalk$OnEdge$OnEdgeMode extends Enum<ModuleSafeWalk$OnEdge
     static INVERT: ModuleSafeWalk$OnEdge$OnEdgeMode;
     static STOP: ModuleSafeWalk$OnEdge$OnEdgeMode;
     static getEntries(): ModuleSafeWalk$OnEdge$OnEdgeMode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleSafeWalk$OnEdge$OnEdgeMode;
     static values(): ModuleSafeWalk$OnEdge$OnEdgeMode[];

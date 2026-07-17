@@ -17,8 +17,6 @@ export class ModuleFreeCam$CancelOn extends Enum<ModuleFreeCam$CancelOn> impleme
     static MOVE: ModuleFreeCam$CancelOn;
     static TELEPORT: ModuleFreeCam$CancelOn;
     static getEntries(): ModuleFreeCam$CancelOn[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleFreeCam$CancelOn;
     static values(): ModuleFreeCam$CancelOn[];

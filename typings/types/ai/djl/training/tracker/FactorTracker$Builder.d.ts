@@ -1,7 +1,7 @@
 import type { FactorTracker } from '../../../../ai/djl/training/tracker/FactorTracker.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class FactorTracker$Builder extends Object {
-    constructor(arg0: any)
+    private constructor()
     // private baseValue: number;
     // private factor: number;
     // private maxUpdates: number;

@@ -5,7 +5,7 @@ import type { HttpResponseEncoder } from '../../../../../io/netty/handler/codec/
 import type { HttpServerCodec } from '../../../../../io/netty/handler/codec/http/HttpServerCodec.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class HttpServerCodec$HttpServerResponseEncoder extends HttpResponseEncoder {
-    constructor(null_: HttpServerCodec, arg1: any)
+    private constructor(null_: HttpServerCodec)
     // private methodFlag: number;
     isContentAlwaysEmpty(arg0: HttpResponse): boolean;
     sanitizeHeadersBeforeEncode(arg0: HttpResponse, arg1: boolean): void;

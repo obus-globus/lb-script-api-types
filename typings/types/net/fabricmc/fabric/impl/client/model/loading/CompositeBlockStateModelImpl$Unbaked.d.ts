@@ -14,7 +14,6 @@ export class CompositeBlockStateModelImpl$Unbaked extends Record implements Comp
     static CODEC: MapCodec<CompositeBlockStateModelImpl$Unbaked>;
     static ELEMENT_CODEC: Codec<Weighted<Variant>>;
     static HARDCODED_WEIGHTED_CODEC: Codec<WeightedVariants$Unbaked>;
-    static of(paramarg0: BlockStateModel$Unbaked[]): CompositeBlockStateModel$Unbaked;
     static of(paramarg0: BlockStateModel$Unbaked[]): CompositeBlockStateModelImpl$Unbaked;
     constructor(models: BlockStateModel$Unbaked[])
     // private models: BlockStateModel$Unbaked[];

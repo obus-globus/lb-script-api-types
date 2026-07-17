@@ -21,8 +21,6 @@ export class StringMatchMode extends Enum<StringMatchMode> implements BiPredicat
     static STARTS_WITH: StringMatchMode;
     static STARTS_WITH_IGNORE_CASE: StringMatchMode;
     static getEntries(): StringMatchMode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): StringMatchMode;
     static values(): StringMatchMode[];

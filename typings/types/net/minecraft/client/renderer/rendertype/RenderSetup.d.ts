@@ -13,7 +13,6 @@ import type { TextureTransform } from '../../../../../net/minecraft/client/rende
 import type { TextureManager } from '../../../../../net/minecraft/client/renderer/texture/TextureManager.d.ts'
 export class RenderSetup extends Object implements MixinRenderSetupAccessor {
     static builder(parampipeline: RenderPipeline): RenderSetup$RenderSetupBuilder;
-    static liquid_bounce$invokeInit(paramarg0: RenderPipeline, paramarg1: { [key: string]: Object }, paramarg2: boolean, paramarg3: boolean, paramarg4: LayeringTransform, paramarg5: OutputTarget, paramarg6: TextureTransform, paramarg7: RenderSetup$OutlineProperty, paramarg8: boolean, paramarg9: boolean): RenderSetup;
     private constructor(pipeline: RenderPipeline, textures: { [key: string]: RenderSetup$TextureBinding }, useLightmap: boolean, useOverlay: boolean, layeringTransform: LayeringTransform, outputTarget: OutputTarget, textureTransform: TextureTransform, outlineProperty: RenderSetup$OutlineProperty, affectsCrumbling: boolean, sortOnUpload: boolean)
     readonly affectsCrumbling: boolean;
     readonly layeringTransform: LayeringTransform;

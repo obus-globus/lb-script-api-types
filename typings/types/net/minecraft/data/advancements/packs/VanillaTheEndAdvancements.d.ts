@@ -4,7 +4,6 @@ import type { AdvancementHolder } from '../../../../../net/minecraft/advancement
 import type { HolderLookup$Provider } from '../../../../../net/minecraft/core/HolderLookup$Provider.d.ts'
 import type { AdvancementSubProvider } from '../../../../../net/minecraft/data/advancements/AdvancementSubProvider.d.ts'
 export class VanillaTheEndAdvancements extends Object implements AdvancementSubProvider {
-    static createPlaceholder(paramid: string): AdvancementHolder;
     constructor()
     generate(registries: HolderLookup$Provider, output: (param0: AdvancementHolder) => void): void;
 }

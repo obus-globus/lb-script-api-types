@@ -15,7 +15,6 @@ export class WriterOutputStream extends OutputStream {
     constructor(arg0: Writer, arg1: CharsetDecoder, arg2: number, arg3: boolean)
     constructor(arg0: Writer, arg1: string)
     constructor(arg0: Writer, arg1: string, arg2: number, arg3: boolean)
-    constructor(arg0: WriterOutputStream$Builder, arg1: any)
     // private decoder: CharsetDecoder;
     // private decoderIn: ByteBuffer;
     // private decoderOut: CharBuffer;

@@ -1,6 +1,7 @@
 import type { Font } from '../../../../java/awt/Font.d.ts'
 import type { File } from '../../../../java/io/File.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Continuation } from '../../../../kotlin/coroutines/Continuation.d.ts'
 import type { FontId } from '../../../../net/ccbluex/liquidbounce/render/engine/font/FontId.d.ts'
 import type { FontRenderer } from '../../../../net/ccbluex/liquidbounce/render/engine/font/FontRenderer.d.ts'
 export class FontFace extends Object {
@@ -20,13 +21,10 @@ export class FontFace extends Object {
     readonly size: number;
     // private styles: (FontId | null)[];
     equals(other: Object | null): boolean;
-    fillDerivedStyles(baseFont: Font): void;
-    /**
-     * Fills the font style at the given index.
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/render/FontFace.kt#L84 | src/main/kotlin/net/ccbluex/liquidbounce/render/FontFace.kt:84}
-     */
-    fillStyle(font: Font, style: number): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    fillDerivedStyles(baseFont: Font, $completion: Continuation<void>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    fillStyle(font: Font, style: number, $completion: Continuation<void>): any;
     /**
      * @see java.lang.String.hashCode
      *

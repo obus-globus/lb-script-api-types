@@ -22,12 +22,10 @@ import type { TemporalField } from '../../java/time/temporal/TemporalField.d.ts'
 import type { TemporalQuery } from '../../java/time/temporal/TemporalQuery.d.ts'
 import type { TemporalUnit } from '../../java/time/temporal/TemporalUnit.d.ts'
 import type { ValueRange } from '../../java/time/temporal/ValueRange.d.ts'
-import type { Comparator } from '../../java/util/Comparator.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../java/lang/CharSequence.d.ts'
 export class ZonedDateTime extends Object implements Serializable, ChronoZonedDateTime<LocalDate>, Temporal {
     static from(paramarg0: TemporalAccessor): ZonedDateTime;
-    static from(paramarg0: TemporalAccessor): ChronoZonedDateTime<any>;
     static now(): ZonedDateTime;
     static now(paramarg0: Clock): ZonedDateTime;
     static now(paramarg0: ZoneId): ZonedDateTime;
@@ -40,7 +38,6 @@ export class ZonedDateTime extends Object implements Serializable, ChronoZonedDa
     static ofStrict(paramarg0: LocalDateTime, paramarg1: ZoneOffset, paramarg2: ZoneId): ZonedDateTime;
     static parse(paramarg0: CharSequence): ZonedDateTime;
     static parse(paramarg0: CharSequence, paramarg1: DateTimeFormatter): ZonedDateTime;
-    static timeLineOrder(): (param0: ChronoZonedDateTime<any>, param1: ChronoZonedDateTime<any>) => number;
     private constructor(arg0: LocalDateTime, arg1: ZoneOffset, arg2: ZoneId)
     // private dateTime: LocalDateTime;
     readonly offset: ZoneOffset;

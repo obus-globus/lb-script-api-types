@@ -6,7 +6,7 @@ export class Strings$CsStrings extends Strings {
     static CI: Strings;
     static CS: Strings;
     static builder(): Strings$Builder;
-    constructor(arg0: boolean, arg1: any)
+    private constructor(arg0: boolean)
     compare(arg0: string, arg1: string): number;
     contains(arg0: CharSequence, arg1: CharSequence): boolean;
     equals(other: Object | null): boolean;

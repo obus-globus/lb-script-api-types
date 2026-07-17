@@ -37,6 +37,7 @@ export class FlyNcpClip extends Mode {
     // private /*not mapped: */ getMaximumDistance(): number;
     // private packetHandler: EventHook<PacketEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private shouldLag: boolean;
     // private speed: number;
     // private /*not mapped: */ getSpeed(): number;

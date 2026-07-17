@@ -6,10 +6,6 @@ import type { MemorySessionImpl } from '../../../jdk/internal/foreign/MemorySess
 import type { NativeMemorySegmentImpl } from '../../../jdk/internal/foreign/NativeMemorySegmentImpl.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class ArenaImpl extends Object implements Arena {
-    static global(): Arena;
-    static ofAuto(): Arena;
-    static ofConfined(): Arena;
-    static ofShared(): Arena;
     constructor(arg0: MemorySessionImpl)
     // private session: MemorySessionImpl;
     // private shouldReserveMemory: boolean;

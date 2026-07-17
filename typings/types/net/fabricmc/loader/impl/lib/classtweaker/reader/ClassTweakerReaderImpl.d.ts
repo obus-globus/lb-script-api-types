@@ -8,7 +8,6 @@ import type { ClassTweakerFormatException } from '../../../../../../../net/fabri
 import type { ClassTweakerReaderImpl$HeaderImpl } from '../../../../../../../net/fabricmc/loader/impl/lib/classtweaker/reader/ClassTweakerReaderImpl$HeaderImpl.d.ts'
 export class ClassTweakerReaderImpl extends Object implements ClassTweakerReader {
     static ENCODING: Charset;
-    static create(paramarg0: ClassTweakerVisitor): ClassTweakerReader;
     static readHeader(paramarg0: BufferedReader): ClassTweakerReaderImpl$HeaderImpl;
     constructor(arg0: ClassTweakerVisitor)
     // private lineNumber: number;

@@ -6,7 +6,7 @@ export class UnsignedBytes$ArraysCompareUnsignedComparatorMaker extends Enum<Uns
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): UnsignedBytes$ArraysCompareUnsignedComparatorMaker;
     static values(): UnsignedBytes$ArraysCompareUnsignedComparatorMaker[];
-    constructor(arg2: any)
+    private constructor()
     tryMakeArraysCompareUnsignedComparator(): (param0: number[], param1: number[]) => number;
     name(): "INSTANCE";
 }

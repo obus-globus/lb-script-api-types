@@ -13,7 +13,6 @@ export class NumberPrototypeBuiltins$NumberPrototype extends Enum<NumberPrototyp
     static toPrecision: NumberPrototypeBuiltins$NumberPrototype;
     static toString: NumberPrototypeBuiltins$NumberPrototype;
     static valueOf: NumberPrototypeBuiltins$NumberPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): NumberPrototypeBuiltins$NumberPrototype;
     static values(): NumberPrototypeBuiltins$NumberPrototype[];

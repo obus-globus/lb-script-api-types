@@ -8,4 +8,5 @@ export class ModuleHighJump$Vanilla extends Mode {
     static INSTANCE: ModuleHighJump$Vanilla;
     readonly jumpEvent: EventHook<PlayerJumpEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
 }

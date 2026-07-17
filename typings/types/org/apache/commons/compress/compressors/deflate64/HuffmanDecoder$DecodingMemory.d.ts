@@ -1,6 +1,7 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class HuffmanDecoder$DecodingMemory extends Object {
-    constructor(arg0: any)
+    private constructor()
+    private constructor(arg0: number)
     // private mask: number;
     // private memory: number[];
     // private wHead: number;

@@ -10,7 +10,6 @@ export class PluralRulesPrototypeBuiltins$PluralRulesPrototype extends Enum<Plur
     static resolvedOptions: PluralRulesPrototypeBuiltins$PluralRulesPrototype;
     static select: PluralRulesPrototypeBuiltins$PluralRulesPrototype;
     static selectRange: PluralRulesPrototypeBuiltins$PluralRulesPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): PluralRulesPrototypeBuiltins$PluralRulesPrototype;
     static values(): PluralRulesPrototypeBuiltins$PluralRulesPrototype[];

@@ -4,7 +4,7 @@ import type { AbstractFutureState$Waiter } from '../../../../../com/google/commo
 import type { Thread } from '../../../../../java/lang/Thread.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class AbstractFutureState$AtomicHelper extends Object {
-    constructor(arg0: any)
+    private constructor()
     atomicHelperTypeForTest(): string;
     casListeners(future: AbstractFutureState<Object>, expect: AbstractFuture$Listener, update: AbstractFuture$Listener): boolean;
     casValue(future: AbstractFutureState<Object>, expect: Object, update: Object): boolean;

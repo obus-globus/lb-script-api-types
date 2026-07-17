@@ -14,7 +14,6 @@ export class GlobalBuiltins$GlobalNashornScriptingBuiltins$GlobalNashornScriptin
     static quit: GlobalBuiltins$GlobalNashornScriptingBuiltins$GlobalNashornScripting;
     static readFully: GlobalBuiltins$GlobalNashornScriptingBuiltins$GlobalNashornScripting;
     static readLine: GlobalBuiltins$GlobalNashornScriptingBuiltins$GlobalNashornScripting;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): GlobalBuiltins$GlobalNashornScriptingBuiltins$GlobalNashornScripting;
     static values(): GlobalBuiltins$GlobalNashornScriptingBuiltins$GlobalNashornScripting[];

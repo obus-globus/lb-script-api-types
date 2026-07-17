@@ -4,7 +4,6 @@ import type { PlatformMixinOverrides } from '../../../../../net/caffeinemc/mods/
 import type { PlatformMixinOverrides$MixinOverride } from '../../../../../net/caffeinemc/mods/lithium/common/services/PlatformMixinOverrides$MixinOverride.d.ts'
 export class FabricMixinOverrides extends Object implements PlatformMixinOverrides {
     static INSTANCE: PlatformMixinOverrides;
-    static getInstance(): PlatformMixinOverrides;
     constructor()
     applyLithiumCompat(arg0: { [key: string]: Option }): void;
     applyModOverrides(): PlatformMixinOverrides$MixinOverride[];

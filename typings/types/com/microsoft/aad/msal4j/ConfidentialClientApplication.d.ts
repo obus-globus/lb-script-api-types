@@ -14,7 +14,7 @@ import type { Function } from '../../../../java/util/function/Function.d.ts'
 export class ConfidentialClientApplication extends AbstractClientApplicationBase implements IConfidentialClientApplication {
     static DEFAULT_AUTHORITY: string;
     static builder(paramarg0: string, paramarg1: IClientCredential): ConfidentialClientApplication$Builder;
-    constructor(arg0: ConfidentialClientApplication$Builder, arg1: any)
+    private constructor(arg0: ConfidentialClientApplication$Builder)
     appTokenProvider: (param0: AppTokenProviderParameters) => CompletableFuture<TokenProviderResult>;
     // private clientCredential: IClientCredential;
     // private sendX5c: boolean;

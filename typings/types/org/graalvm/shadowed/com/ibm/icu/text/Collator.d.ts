@@ -24,11 +24,6 @@ export abstract class Collator extends Object implements Comparator<Object>, Clo
     static QUATERNARY: number;
     static SECONDARY: number;
     static TERTIARY: number;
-    static comparing<T extends unknown, U extends Comparable<Object>>(paramarg0: (param0: Object) => U): (param0: T, param1: T) => number;
-    static comparing<T extends unknown, U extends unknown>(paramarg0: (param0: Object) => U, paramarg1: (param0: Object, param1: Object) => number): (param0: T, param1: T) => number;
-    static comparingDouble<T extends unknown>(paramarg0: (param0: Object) => number): (param0: T, param1: T) => number;
-    static comparingInt<T extends unknown>(paramarg0: (param0: Object) => number): (param0: T, param1: T) => number;
-    static comparingLong<T extends unknown>(paramarg0: (param0: Object) => number): (param0: T, param1: T) => number;
     static getAvailableLocales(): Locale[];
     static getAvailableULocales(): ULocale[];
     static getDisplayName(paramobjectLocale: Locale): string;
@@ -44,12 +39,8 @@ export abstract class Collator extends Object implements Comparator<Object>, Clo
     static getKeywordValues(paramkeyword: string): string[];
     static getKeywordValuesForLocale(paramkey: string, paramlocale: ULocale, paramcommonlyUsed: boolean): string[];
     static getKeywords(): string[];
-    static naturalOrder<T extends Comparable<Object>>(): (param0: T, param1: T) => number;
-    static nullsFirst<T extends unknown>(paramarg0: (param0: Object, param1: Object) => number): (param0: T, param1: T) => number;
-    static nullsLast<T extends unknown>(paramarg0: (param0: Object, param1: Object) => number): (param0: T, param1: T) => number;
     static registerFactory(paramfactory: Collator$CollatorFactory): Object;
     static registerInstance(paramcollator: Collator, paramlocale: ULocale): Object;
-    static reverseOrder<T extends Comparable<Object>>(): (param0: T, param1: T) => number;
     static unregister(paramregistryKey: Object): boolean;
     constructor()
     // private checkNotFrozen(): void;

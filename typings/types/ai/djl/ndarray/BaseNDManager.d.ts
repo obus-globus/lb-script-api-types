@@ -20,12 +20,6 @@ import type { Number } from '../../../java/lang/Number.d.ts'
 export abstract class BaseNDManager extends Object implements NDManager {
     static UID_GENERATOR: AtomicLong;
     static copyBuffer(paramarg0: Buffer, paramarg1: ByteBuffer): void;
-    static newBaseManager(): NDManager;
-    static newBaseManager(paramarg0: Device): NDManager;
-    static newBaseManager(paramarg0: Device, paramarg1: string): NDManager;
-    static newBaseManager(paramarg0: string): NDManager;
-    static nextUid(): string;
-    static subManagerOf(paramarg0: NDResource): NDManager;
     static validateBuffer(paramarg0: Buffer, paramarg1: DataType, paramarg2: number): void;
     constructor(arg0: NDManager, arg1: Device)
     // private alternativeManager: NDManager;

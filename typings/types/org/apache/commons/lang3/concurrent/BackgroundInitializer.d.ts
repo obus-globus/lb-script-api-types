@@ -5,14 +5,12 @@ import type { Future } from '../../../../../java/util/concurrent/Future.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { AbstractConcurrentInitializer } from '../../../../../org/apache/commons/lang3/concurrent/AbstractConcurrentInitializer.d.ts'
 import type { BackgroundInitializer$Builder } from '../../../../../org/apache/commons/lang3/concurrent/BackgroundInitializer$Builder.d.ts'
-import type { FailableConsumer } from '../../../../../org/apache/commons/lang3/function/FailableConsumer.d.ts'
 import type { FailableSupplier } from '../../../../../org/apache/commons/lang3/function/FailableSupplier.d.ts'
 export class BackgroundInitializer<T extends unknown> extends AbstractConcurrentInitializer<T, Exception> {
     static NUL: () => Object | null;
     static builder<T extends unknown>(): BackgroundInitializer$Builder<BackgroundInitializer<T>, T>;
     constructor()
     constructor(arg0: ExecutorService)
-    constructor(arg0: () => Object, arg1: (param0: Object) => void, arg2: ExecutorService, arg3: any)
     // private executor: ExecutorService;
     readonly externalExecutor: ExecutorService;
     readonly future: Future<T>;

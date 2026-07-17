@@ -20,8 +20,9 @@ export class ProtoBuf$Annotation$Argument extends GeneratedMessageLite implement
     static newBuilder(paramarg0: ProtoBuf$Annotation$Argument): ProtoBuf$Annotation$Argument$Builder;
     static newRepeatedGeneratedExtension<ContainingType extends MessageLite, Type extends unknown>(paramarg0: ContainingType, paramarg1: MessageLite, paramarg2: Internal$EnumLiteMap<any>, paramarg3: number, paramarg4: WireFormat$FieldType, paramarg5: boolean, paramarg6: Class<Object>): GeneratedMessageLite$GeneratedExtension<ContainingType, Type>;
     static newSingularGeneratedExtension<ContainingType extends MessageLite, Type extends unknown>(paramarg0: ContainingType, paramarg1: Type, paramarg2: MessageLite, paramarg3: Internal$EnumLiteMap<any>, paramarg4: number, paramarg5: WireFormat$FieldType, paramarg6: Class<Object>): GeneratedMessageLite$GeneratedExtension<ContainingType, Type>;
-    constructor(arg0: CodedInputStream, arg1: ExtensionRegistryLite, arg2: any)
-    constructor(arg0: GeneratedMessageLite$Builder<GeneratedMessageLite, GeneratedMessageLite$Builder<any, any>>, arg1: any)
+    private constructor(arg0: boolean)
+    private constructor(arg0: CodedInputStream, arg1: ExtensionRegistryLite)
+    private constructor(arg0: GeneratedMessageLite$Builder<GeneratedMessageLite, GeneratedMessageLite$Builder<any, any>>)
     // private bitField0_: number;
     // private memoizedIsInitialized: number;
     // private memoizedSerializedSize: number;

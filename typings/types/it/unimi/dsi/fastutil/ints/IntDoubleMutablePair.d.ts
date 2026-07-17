@@ -1,11 +1,8 @@
 import type { IntDoublePair } from '../../../../../it/unimi/dsi/fastutil/ints/IntDoublePair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
-import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class IntDoubleMutablePair extends Object implements IntDoublePair, Serializable {
-    static lexComparator(): (param0: IntDoublePair, param1: IntDoublePair) => number;
     static of(paramarg0: number, paramarg1: number): IntDoubleMutablePair;
-    static of(paramarg0: number, paramarg1: number): IntDoublePair;
     constructor(arg0: number, arg1: number)
     // private left: number;
     // private right: number;

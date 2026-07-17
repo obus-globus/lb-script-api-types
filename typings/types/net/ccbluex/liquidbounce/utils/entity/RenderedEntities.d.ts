@@ -25,6 +25,7 @@ export class RenderedEntities extends Object implements EventListener {
     // private registry: EventListener[];
     readonly running: boolean;
     readonly size: number;
+    getSize(): number;
     // private tickHandler: EventHook<GameTickEvent>;
     // private worldHandler: EventHook<WorldChangeEvent>;
     children(): EventListener[];

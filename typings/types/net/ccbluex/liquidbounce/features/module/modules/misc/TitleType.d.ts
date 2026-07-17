@@ -8,8 +8,6 @@ export class TitleType extends Enum<TitleType> implements Tagged {
     static SUBTITLE: TitleType;
     static TITLE: TitleType;
     static getEntries(): TitleType[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): TitleType;
     static values(): TitleType[];

@@ -11,7 +11,6 @@ export class GlobalBuiltins$GlobalShellBuiltins$GlobalShell extends Enum<GlobalB
     static read: GlobalBuiltins$GlobalShellBuiltins$GlobalShell;
     static readbuffer: GlobalBuiltins$GlobalShellBuiltins$GlobalShell;
     static readline: GlobalBuiltins$GlobalShellBuiltins$GlobalShell;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): GlobalBuiltins$GlobalShellBuiltins$GlobalShell;
     static values(): GlobalBuiltins$GlobalShellBuiltins$GlobalShell[];

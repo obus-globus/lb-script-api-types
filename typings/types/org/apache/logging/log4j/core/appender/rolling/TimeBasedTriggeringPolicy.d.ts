@@ -8,7 +8,7 @@ export class TimeBasedTriggeringPolicy extends AbstractTriggeringPolicy {
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
     static createPolicy(paraminterval: string, parammodulate: string): TimeBasedTriggeringPolicy;
     static newBuilder(): TimeBasedTriggeringPolicy$Builder;
-    constructor(arg0: number, arg1: boolean, arg2: number, arg3: any)
+    private constructor(interval: number, modulate: boolean, maxRandomDelayMillis: number)
     readonly interval: number;
     // private manager: RollingFileManager;
     // private maxRandomDelayMillis: number;

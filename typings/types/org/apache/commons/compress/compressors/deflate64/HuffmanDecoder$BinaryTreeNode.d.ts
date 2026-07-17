@@ -1,6 +1,6 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class HuffmanDecoder$BinaryTreeNode extends Object {
-    constructor(arg0: number, arg1: any)
+    private constructor(arg0: number)
     // private bits: number;
     // private leftNode: HuffmanDecoder$BinaryTreeNode;
     // private literal: number;

@@ -29,6 +29,6 @@ export interface AbstractWithDateTimeBuilder extends Object, AbstractWithDateBui
     hour(padding: Padding): void;
     minute(padding: Padding): void;
     second(padding: Padding): void;
-    secondFraction(minLength: number, maxLength: number): void;
+    secondFraction(minLength: number, maxLength?: number): void;
     time(format: DateTimeFormat<LocalTime>): void;
 }

@@ -79,6 +79,6 @@ export class TrajectoryInfo extends Record {
     copy(gravity: number, hitboxRadius: number, initialVelocity: number, drag: number, dragInWater: number, roll: number, copiesPlayerVelocity: boolean): TrajectoryInfo;
     equals(other: Object | null): boolean;
     hashCode(): number;
-    hitbox(center: Vec3): AABB;
+    hitbox(center?: Vec3): AABB;
     toString(): string;
 }

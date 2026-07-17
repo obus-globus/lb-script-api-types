@@ -13,8 +13,6 @@ import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 export abstract class AbstractGraalTruffleRuntimeListener extends Object implements OptimizedTruffleRuntimeListener {
-    static addASTSizeProperty(paramtarget: OptimizedCallTarget, paramproperties: { [key: string]: Object }): void;
-    static isPermanentFailure(parambailout: boolean, parampermanentBailout: boolean): boolean;
     constructor(runtime: OptimizedTruffleRuntime)
     // private runtime: OptimizedTruffleRuntime;
     onCompilationDeoptimized(target: OptimizedCallTarget, frame: Frame): void;

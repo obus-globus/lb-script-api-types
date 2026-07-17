@@ -14,7 +14,6 @@ import type { ParticleOptions } from '../../../../net/minecraft/core/particles/P
 import type { RandomSource } from '../../../../net/minecraft/util/RandomSource.d.ts'
 import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
 export class ParticleEngine extends Object implements ParticleEngineAccessor {
-    static getParticleRenderTypes(): ParticleRenderType[];
     constructor(level: ClientLevel, resourceManager: ParticleResources)
     level: ClientLevel;
     // private particles: Map<ParticleRenderType, ParticleGroup<any>>;

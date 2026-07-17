@@ -4,7 +4,7 @@ import type { TableCollectors$MutableCell } from '../../../../com/google/common/
 import type { BinaryOperator } from '../../../../java/util/function/BinaryOperator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class TableCollectors$ImmutableTableCollectorState<R extends unknown, C extends unknown, V extends unknown> extends Object {
-    constructor(arg0: any)
+    private constructor()
     // private insertionOrder: TableCollectors$MutableCell<R, C, V>[];
     // private table: Table<R, C, TableCollectors$MutableCell<R, C, V>>;
     combine(other: TableCollectors$ImmutableTableCollectorState<R, C, V>, merger: (param0: V, param1: V) => V): TableCollectors$ImmutableTableCollectorState<R, C, V>;

@@ -55,11 +55,11 @@ export class ItemStackListRenderState extends Object implements GuiRearrangeable
     component8(): number;
     component9(): Color4b;
     copy(guiGraphics: GuiGraphicsExtractor, stacks: ItemStack[], title: Component | null, titleColor: number, centerX: number, centerY: number, scale: number, rowLength: number, backgroundColor: Color4b, backgroundOutlineColor: Color4b, backgroundMargin: number, useTexture: boolean, itemStackRenderer: ItemStackListRenderer$SingleItemStackRenderer): ItemStackListRenderState;
-    draw(rearrange: boolean): void;
+    draw(rearrange?: boolean): void;
     equals(other: Object | null): boolean;
     hashCode(): number;
     itemStackRenderer(itemStackRenderer: ItemStackListRenderer$SingleItemStackRenderer): ItemStackListRenderState;
-    rectBackground(color: Color4b, outlineColor: Color4b, margin: number): ItemStackListRenderState;
+    rectBackground(color: Color4b, outlineColor?: Color4b, margin?: number): ItemStackListRenderState;
     /**
      * @param rowLength The maximum count of stack which can be placed in one row.
      *
@@ -68,6 +68,6 @@ export class ItemStackListRenderState extends Object implements GuiRearrangeable
     rowLength(rowLength: number): ItemStackListRenderState;
     scale(scale: number): ItemStackListRenderState;
     textureBackground(): ItemStackListRenderState;
-    title(title: Component | null, color: number): ItemStackListRenderState;
+    title(title: Component | null, color?: number): ItemStackListRenderState;
     toString(): string;
 }

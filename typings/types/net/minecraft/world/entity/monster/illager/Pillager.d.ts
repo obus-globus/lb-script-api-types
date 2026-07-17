@@ -161,7 +161,6 @@ export class Pillager extends AbstractIllager implements CrossbowAttackMob, Inve
     static getInputVector(paraminput: Vec3, paramspeed: number, paramyRot: number): Vec3;
     static getViewScale(): number;
     static isDarkEnoughToSpawn(paramlevel: ServerLevelAccessor, parampos: BlockPos, paramrandom: RandomSource): boolean;
-    static pickUpItem(paramlevel: ServerLevel, parammob: Mob, paraminventoryCarrier: InventoryCarrier, paramitemEntity: ItemEntity): void;
     static resetForwardDirectionOfRelativePortalPosition(paramoffsets: Vec3): Vec3;
     static setViewScale(paramviewScale: number): void;
     constructor(type: EntityType<Pillager>, level: Level)

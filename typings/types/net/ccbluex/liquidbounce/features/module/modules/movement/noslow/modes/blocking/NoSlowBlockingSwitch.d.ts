@@ -9,6 +9,7 @@ export class NoSlowBlockingSwitch extends Mode {
     static INSTANCE: NoSlowBlockingSwitch;
     readonly onNetworkTick: EventHook<PlayerNetworkMovementTickEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     // private timingMode: NoSlowBlockingSwitch$TimingMode;
     // private /*not mapped: */ getTimingMode(): NoSlowBlockingSwitch$TimingMode;
 }

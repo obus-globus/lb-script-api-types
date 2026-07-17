@@ -1,9 +1,6 @@
-import type { App } from '../../../com/mojang/datafixers/kinds/App.d.ts'
 import type { Function3 } from '../../../com/mojang/datafixers/util/Function3.d.ts'
 import type { DataResult } from '../../../com/mojang/serialization/DataResult.d.ts'
 import type { DataResult$Error } from '../../../com/mojang/serialization/DataResult$Error.d.ts'
-import type { DataResult$Instance } from '../../../com/mojang/serialization/DataResult$Instance.d.ts'
-import type { DataResult$Mu } from '../../../com/mojang/serialization/DataResult$Mu.d.ts'
 import type { Lifecycle } from '../../../com/mojang/serialization/Lifecycle.d.ts'
 import type { Record } from '../../../java/lang/Record.d.ts'
 import type { Optional } from '../../../java/util/Optional.d.ts'
@@ -15,16 +12,6 @@ import type { UnaryOperator } from '../../../java/util/function/UnaryOperator.d.
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 export class DataResult$Success<R extends unknown> extends Record implements DataResult<R> {
-    static appendMessages(paramarg0: string, paramarg1: string): string;
-    static error<R extends unknown>(paramarg0: () => string): DataResult<R>;
-    static error<R extends unknown>(paramarg0: () => string, paramarg1: R): DataResult<R>;
-    static error<R extends unknown>(paramarg0: () => string, paramarg1: R, paramarg2: Lifecycle): DataResult<R>;
-    static error<R extends unknown>(paramarg0: () => string, paramarg1: Lifecycle): DataResult<R>;
-    static instance(): DataResult$Instance;
-    static partialGet<K extends unknown, V extends unknown>(paramarg0: (param0: K) => V, paramarg1: () => string): (param0: K) => DataResult<V>;
-    static success<R extends unknown>(paramarg0: R): DataResult<R>;
-    static success<R extends unknown>(paramarg0: R, paramarg1: Lifecycle): DataResult<R>;
-    static unbox<R extends unknown>(paramarg0: App<DataResult$Mu, R>): DataResult<R>;
     constructor(value: R, lifecycle: Lifecycle)
     // private lifecycle: Lifecycle;
     // private value: R;

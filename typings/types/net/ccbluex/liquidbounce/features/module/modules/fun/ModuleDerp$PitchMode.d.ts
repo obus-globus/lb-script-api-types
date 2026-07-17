@@ -5,5 +5,6 @@ export class ModuleDerp$PitchMode extends Mode {
     static Companion: Tagged$Companion;
     protected constructor(name: string)
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     readonly pitch: number;
 }

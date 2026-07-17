@@ -24,7 +24,7 @@ export class ConfigurationFactory$Factory extends ConfigurationFactory {
     static removeConfigurationFactory(paramfactory: ConfigurationFactory): void;
     static resetConfigurationFactory(): void;
     static setConfigurationFactory(paramfactory: ConfigurationFactory): void;
-    constructor(arg0: any)
+    private constructor()
     // private getConfiguration(requiredVersion: string, loggerContext: LoggerContext, configLocationStr: string): Configuration;
     // private getConfiguration(loggerContext: LoggerContext, isTest: boolean, name: string): Configuration;
     // private getConfiguration(loggerContext: LoggerContext, configLocationStr: string): Configuration;

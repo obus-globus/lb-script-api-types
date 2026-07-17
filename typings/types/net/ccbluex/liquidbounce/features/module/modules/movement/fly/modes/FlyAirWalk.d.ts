@@ -12,5 +12,6 @@ export class FlyAirWalk extends Mode {
     readonly onGround: boolean;
     readonly packetHandler: EventHook<PacketEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     readonly shapeHandler: EventHook<BlockShapeEvent>;
 }

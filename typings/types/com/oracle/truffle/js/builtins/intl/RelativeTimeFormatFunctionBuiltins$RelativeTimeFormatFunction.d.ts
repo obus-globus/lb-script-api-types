@@ -8,7 +8,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class RelativeTimeFormatFunctionBuiltins$RelativeTimeFormatFunction extends Enum<RelativeTimeFormatFunctionBuiltins$RelativeTimeFormatFunction> implements BuiltinEnum<RelativeTimeFormatFunctionBuiltins$RelativeTimeFormatFunction> {
     static supportedLocalesOf: RelativeTimeFormatFunctionBuiltins$RelativeTimeFormatFunction;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): RelativeTimeFormatFunctionBuiltins$RelativeTimeFormatFunction;
     static values(): RelativeTimeFormatFunctionBuiltins$RelativeTimeFormatFunction[];

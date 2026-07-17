@@ -6,7 +6,6 @@ import type { LevelBasedValue } from '../../../../../../net/minecraft/world/item
 import type { EnchantmentValueEffect } from '../../../../../../net/minecraft/world/item/enchantment/effects/EnchantmentValueEffect.d.ts'
 export class MultiplyValue extends Record implements EnchantmentValueEffect {
     static CODEC: MapCodec<MultiplyValue>;
-    static bootstrap(paramregistry: MapCodec<EnchantmentValueEffect>[]): MapCodec<EnchantmentValueEffect>;
     constructor(factor: LevelBasedValue)
     // private factor: LevelBasedValue;
     codec(): MapCodec<MultiplyValue>;

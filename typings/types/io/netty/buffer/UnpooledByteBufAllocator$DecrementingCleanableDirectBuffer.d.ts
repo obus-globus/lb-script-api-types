@@ -4,8 +4,8 @@ import type { CleanableDirectBuffer } from '../../../io/netty/util/internal/Clea
 import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class UnpooledByteBufAllocator$DecrementingCleanableDirectBuffer extends Object implements CleanableDirectBuffer {
-    constructor(arg0: ByteBufAllocator, arg1: CleanableDirectBuffer, arg2: any)
-    constructor(arg0: ByteBufAllocator, arg1: CleanableDirectBuffer, arg2: number, arg3: any)
+    private constructor(arg0: ByteBufAllocator, arg1: CleanableDirectBuffer)
+    private constructor(arg0: ByteBufAllocator, arg1: CleanableDirectBuffer, arg2: number)
     // private alloc: UnpooledByteBufAllocator;
     // private delegate: CleanableDirectBuffer;
     buffer(): ByteBuffer;

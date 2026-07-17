@@ -17,7 +17,6 @@ export class ObjectPrototypeBuiltins$ObjectPrototype extends Enum<ObjectPrototyp
     static toLocaleString: ObjectPrototypeBuiltins$ObjectPrototype;
     static toString: ObjectPrototypeBuiltins$ObjectPrototype;
     static valueOf: ObjectPrototypeBuiltins$ObjectPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): ObjectPrototypeBuiltins$ObjectPrototype;
     static values(): ObjectPrototypeBuiltins$ObjectPrototype[];

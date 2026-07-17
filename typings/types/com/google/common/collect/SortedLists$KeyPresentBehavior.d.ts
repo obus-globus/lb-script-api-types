@@ -11,7 +11,7 @@ export class SortedLists$KeyPresentBehavior extends Enum<SortedLists$KeyPresentB
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): SortedLists$KeyPresentBehavior;
     static values(): SortedLists$KeyPresentBehavior[];
-    constructor(arg2: any)
+    private constructor()
     resultIndex<E extends unknown>(comparator: (param0: E, param1: E) => number, key: E, list: E[], foundIndex: number): number;
     name(): "ANY_PRESENT" | "LAST_PRESENT" | "FIRST_PRESENT" | "FIRST_AFTER" | "LAST_BEFORE";
 }

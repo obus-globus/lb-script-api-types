@@ -7,8 +7,6 @@ export class ModuleLiquidFiller$PlaceIn extends Enum<ModuleLiquidFiller$PlaceIn>
     static LAVA: ModuleLiquidFiller$PlaceIn;
     static WATER: ModuleLiquidFiller$PlaceIn;
     static getEntries(): ModuleLiquidFiller$PlaceIn[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleLiquidFiller$PlaceIn;
     static values(): ModuleLiquidFiller$PlaceIn[];

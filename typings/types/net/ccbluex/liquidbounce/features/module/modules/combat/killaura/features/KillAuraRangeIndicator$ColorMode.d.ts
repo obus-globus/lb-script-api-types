@@ -8,8 +8,6 @@ export class KillAuraRangeIndicator$ColorMode extends Enum<KillAuraRangeIndicato
     static RAINBOW: KillAuraRangeIndicator$ColorMode;
     static STATIC: KillAuraRangeIndicator$ColorMode;
     static getEntries(): KillAuraRangeIndicator$ColorMode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): KillAuraRangeIndicator$ColorMode;
     static values(): KillAuraRangeIndicator$ColorMode[];

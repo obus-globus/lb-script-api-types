@@ -3,7 +3,7 @@ import type { TimeZone } from '../../../../../../../../java/util/TimeZone.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { InstantPatternFormatter } from '../../../../../../../../org/apache/logging/log4j/core/util/internal/instant/InstantPatternFormatter.d.ts'
 export class InstantPatternFormatter$Builder extends Object {
-    constructor(arg0: any)
+    private constructor()
     readonly cachingEnabled: boolean;
     readonly legacyFormattersEnabled: boolean;
     readonly locale: Locale;

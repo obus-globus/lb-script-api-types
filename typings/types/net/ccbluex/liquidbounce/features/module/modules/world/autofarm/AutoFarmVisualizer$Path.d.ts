@@ -5,6 +5,7 @@ import type { Color4b } from '../../../../../../../../net/ccbluex/liquidbounce/r
 export class AutoFarmVisualizer$Path extends ToggleableValueGroup {
     static INSTANCE: AutoFarmVisualizer$Path;
     readonly color: Color4b;
+    getColor(): Color4b;
     // private renderHandler: EventHook<WorldRenderEvent>;
     readonly running: boolean;
 }

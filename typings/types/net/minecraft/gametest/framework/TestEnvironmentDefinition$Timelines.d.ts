@@ -4,15 +4,12 @@ import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
 import type { TestEnvironmentDefinition } from '../../../../net/minecraft/gametest/framework/TestEnvironmentDefinition.d.ts'
-import type { TestEnvironmentDefinition$Activation } from '../../../../net/minecraft/gametest/framework/TestEnvironmentDefinition$Activation.d.ts'
 import type { ServerLevel } from '../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { EnvironmentAttributeSystem } from '../../../../net/minecraft/world/attribute/EnvironmentAttributeSystem.d.ts'
 import type { Timeline } from '../../../../net/minecraft/world/timeline/Timeline.d.ts'
 export class TestEnvironmentDefinition$Timelines extends Record implements TestEnvironmentDefinition<EnvironmentAttributeSystem> {
     static CODEC: MapCodec<TestEnvironmentDefinition$Timelines>;
     static DIRECT_CODEC: Codec<TestEnvironmentDefinition<Object>>;
-    static activate<T extends unknown>(paramenvironment: TestEnvironmentDefinition<T>, paramlevel: ServerLevel): TestEnvironmentDefinition$Activation<T>;
-    static bootstrap(paramregistry: MapCodec<TestEnvironmentDefinition<Object>>[]): MapCodec<TestEnvironmentDefinition<Object>>;
     constructor(timelines: Holder<Timeline>[])
     // private timelines: Holder<Timeline>[];
     codec(): MapCodec<TestEnvironmentDefinition$Timelines>;

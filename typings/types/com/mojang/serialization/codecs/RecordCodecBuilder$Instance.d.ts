@@ -1,7 +1,5 @@
 import type { App } from '../../../../com/mojang/datafixers/kinds/App.d.ts'
 import type { Applicative } from '../../../../com/mojang/datafixers/kinds/Applicative.d.ts'
-import type { Applicative$Mu } from '../../../../com/mojang/datafixers/kinds/Applicative$Mu.d.ts'
-import type { K1 } from '../../../../com/mojang/datafixers/kinds/K1.d.ts'
 import type { Function10 } from '../../../../com/mojang/datafixers/util/Function10.d.ts'
 import type { Function11 } from '../../../../com/mojang/datafixers/util/Function11.d.ts'
 import type { Function12 } from '../../../../com/mojang/datafixers/util/Function12.d.ts'
@@ -23,7 +21,6 @@ import type { BiFunction } from '../../../../java/util/function/BiFunction.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class RecordCodecBuilder$Instance<O extends unknown> extends Object implements Applicative<RecordCodecBuilder$Mu<O>, RecordCodecBuilder$Instance$Mu<O>> {
-    static unbox<F extends K1, Mu extends Applicative$Mu>(paramarg0: App<Mu, F>): Applicative<F, Mu>;
     constructor()
     ap<R extends unknown, A extends unknown>(arg0: App<RecordCodecBuilder$Mu<O>, (param0: A) => R>, arg1: App<RecordCodecBuilder$Mu<O>, A>): App<RecordCodecBuilder$Mu<O>, R>;
     ap<R extends unknown, A extends unknown>(arg0: (param0: A) => R, arg1: App<RecordCodecBuilder$Mu<O>, A>): App<RecordCodecBuilder$Mu<O>, R>;

@@ -10,8 +10,6 @@ export class ShowIn extends Enum<ShowIn> implements Tagged {
     static Companion: Tagged$Companion;
     static MESSAGE: ShowIn;
     static getEntries(): ShowIn[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ShowIn;
     static values(): ShowIn[];

@@ -8,14 +8,11 @@ import type { ItemFeatureRenderer$Submit } from '../../../../../net/minecraft/cl
 import type { RenderTypeFeatureRenderer } from '../../../../../net/minecraft/client/renderer/feature/RenderTypeFeatureRenderer.d.ts'
 import type { RenderType } from '../../../../../net/minecraft/client/renderer/rendertype/RenderType.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
-import type { ItemDisplayContext } from '../../../../../net/minecraft/world/item/ItemDisplayContext.d.ts'
 export class ItemFeatureRenderer extends RenderTypeFeatureRenderer<ItemFeatureRenderer$Submit> implements ItemFeatureRendererAccessor {
     static ENCHANTED_GLINT_ARMOR: Identifier;
     static ENCHANTED_GLINT_ITEM: Identifier;
     static NO_TINT: number;
     static TYPE: FeatureRendererType<ItemFeatureRenderer$Submit>;
-    static fabric_computeFoilDecalPose(paramarg0: ItemDisplayContext, paramarg1: PoseStack$Pose): PoseStack$Pose;
-    static fabric_useTransparentGlint(paramarg0: RenderType): boolean;
     constructor()
     // private quadInstance: QuadInstance;
     buildGroup(context: FeatureFrameContext, submits: ItemFeatureRenderer$Submit[]): void;

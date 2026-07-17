@@ -5,7 +5,7 @@ import type { Field } from '../../../../../java/lang/reflect/Field.d.ts'
 import type { Method } from '../../../../../java/lang/reflect/Method.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ReflectionHelper$RecordSupportedHelper extends ReflectionHelper$RecordHelper {
-    constructor(arg0: any)
+    private constructor()
     // private getName: Method;
     // private getRecordComponents: Method;
     // private getType: Method;

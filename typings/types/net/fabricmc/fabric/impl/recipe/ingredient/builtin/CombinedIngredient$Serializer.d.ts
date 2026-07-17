@@ -8,8 +8,6 @@ import type { StreamCodec } from '../../../../../../../net/minecraft/network/cod
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { Ingredient } from '../../../../../../../net/minecraft/world/item/crafting/Ingredient.d.ts'
 export class CombinedIngredient$Serializer<I extends CombinedIngredient> extends Object implements CustomIngredientSerializer<I> {
-    static get(paramarg0: Identifier): CustomIngredientSerializer<any>;
-    static register(paramarg0: CustomIngredientSerializer<any>): void;
     constructor(arg0: Identifier, arg1: (param0: Ingredient[]) => I, arg2: MapCodec<I>)
     readonly codec: MapCodec<I>;
     readonly identifier: Identifier;

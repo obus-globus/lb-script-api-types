@@ -1,11 +1,8 @@
 import type { ByteLongPair } from '../../../../../it/unimi/dsi/fastutil/bytes/ByteLongPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
-import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ByteLongMutablePair extends Object implements ByteLongPair, Serializable {
-    static lexComparator(): (param0: ByteLongPair, param1: ByteLongPair) => number;
     static of(paramarg0: number, paramarg1: number): ByteLongMutablePair;
-    static of(paramarg0: number, paramarg1: number): ByteLongPair;
     constructor(arg0: number, arg1: number)
     // private left: number;
     // private right: number;

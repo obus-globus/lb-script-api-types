@@ -18,9 +18,6 @@ import type { Vector3f } from '../../../../org/joml/Vector3f.d.ts'
 import type { Vector3fc } from '../../../../org/joml/Vector3fc.d.ts'
 import type { MemoryStack } from '../../../../org/lwjgl/system/MemoryStack.d.ts'
 export class BufferBuilder extends Object implements VertexConsumer, VertexBufferWriter, BufferBuilderExtension, BlockSensitiveBufferBuilder {
-    static copyInto(paramarg0: VertexBufferWriter, paramarg1: MemoryStack, paramarg2: number, paramarg3: number, paramarg4: VertexFormat): void;
-    static of(paramarg0: VertexConsumer): VertexBufferWriter;
-    static tryOf(paramarg0: VertexConsumer): VertexBufferWriter;
     constructor(buffer: ByteBufferBuilder, primitiveTopology: PrimitiveTopology, format: VertexFormat)
     // private blockFormat: boolean;
     // private buffer: ByteBufferBuilder;

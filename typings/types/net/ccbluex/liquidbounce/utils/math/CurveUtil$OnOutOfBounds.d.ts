@@ -8,8 +8,6 @@ export class CurveUtil$OnOutOfBounds extends Enum<CurveUtil$OnOutOfBounds> imple
     static Companion: Tagged$Companion;
     static EXTEND: CurveUtil$OnOutOfBounds;
     static getEntries(): CurveUtil$OnOutOfBounds[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): CurveUtil$OnOutOfBounds;
     static values(): CurveUtil$OnOutOfBounds[];

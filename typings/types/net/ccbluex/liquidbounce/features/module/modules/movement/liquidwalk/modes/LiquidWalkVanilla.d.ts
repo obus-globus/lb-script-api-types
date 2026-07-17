@@ -9,5 +9,6 @@ export class LiquidWalkVanilla extends Mode {
     static INSTANCE: LiquidWalkVanilla;
     readonly inputHandler: EventHook<MovementInputEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     readonly shapeHandler: EventHook<BlockShapeEvent>;
 }

@@ -15,6 +15,7 @@ export class ModuleStep$Vulcan286 extends Mode {
     static INSTANCE: ModuleStep$Vulcan286;
     // private movementInputHandler: EventHook<MovementInputEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     // private stepCounter: number;
     // private stepping: boolean;
     disable(): void;

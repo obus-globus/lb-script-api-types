@@ -3,9 +3,8 @@ import type { Short2ByteMap$Entry } from '../../../../../it/unimi/dsi/fastutil/s
 import type { Short2ByteOpenHashMap$MapEntry } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ByteOpenHashMap$MapEntry.d.ts'
 import type { Short2ByteOpenHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ByteOpenHashMap$MapIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Short2ByteOpenHashMap$EntryIterator extends Short2ByteOpenHashMap$MapIterator<(param0: Short2ByteMap$Entry) => void> implements ObjectIterator<Short2ByteMap$Entry> {
-    constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
+    private constructor(null_: { [key: string]: any })
     // private entry: Short2ByteOpenHashMap$MapEntry;
     acceptOnIndex(arg0: (param0: Short2ByteMap$Entry) => void, arg1: number): void;
     next(): Short2ByteOpenHashMap$MapEntry;

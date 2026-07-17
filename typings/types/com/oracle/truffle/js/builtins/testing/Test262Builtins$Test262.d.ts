@@ -19,7 +19,6 @@ export class Test262Builtins$Test262 extends Enum<Test262Builtins$Test262> imple
     static evalScript: Test262Builtins$Test262;
     static gc: Test262Builtins$Test262;
     static monotonicNow: Test262Builtins$Test262;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): Test262Builtins$Test262;
     static values(): Test262Builtins$Test262[];

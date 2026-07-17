@@ -7,8 +7,6 @@ export class ModuleBacktrack$Mode extends Enum<ModuleBacktrack$Mode> implements 
     static Companion: Tagged$Companion;
     static RANGE: ModuleBacktrack$Mode;
     static getEntries(): ModuleBacktrack$Mode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleBacktrack$Mode;
     static values(): ModuleBacktrack$Mode[];

@@ -5,6 +5,7 @@ export class KillAuraNotifyWhenFail$Sound extends Mode {
     static Companion: Tagged$Companion;
     static INSTANCE: KillAuraNotifyWhenFail$Sound;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     readonly pitch: number;
     readonly volume: number;
 }

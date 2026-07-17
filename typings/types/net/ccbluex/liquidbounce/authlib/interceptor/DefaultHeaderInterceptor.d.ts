@@ -5,7 +5,7 @@ import type { Interceptor$Companion } from '../../../../../okhttp3/Interceptor$C
 import type { Response } from '../../../../../okhttp3/Response.d.ts'
 export class DefaultHeaderInterceptor extends Object implements Interceptor {
     static Companion: Interceptor$Companion;
-    constructor(key: string, value: string, skipIfExists: boolean)
+    constructor(key: string, value: string, skipIfExists?: boolean)
     readonly key: string;
     readonly skipIfExists: boolean;
     readonly value: string;

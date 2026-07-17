@@ -4,7 +4,7 @@ import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { DoubleConsumer as DoubleConsumer_2 } from '../../../../../java/util/function/DoubleConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DoubleOpenCustomHashSet$SetIterator extends Object implements DoubleIterator {
-    constructor(null_: (Object | null)[], arg1: any)
+    private constructor(null_: (Object | null)[])
     // private c: number;
     // private last: number;
     // private mustReturnNull: boolean;

@@ -3,7 +3,7 @@ import type { CRC32 } from '../../../../../../java/util/zip/CRC32.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ZipArchiveEntry } from '../../../../../../org/apache/commons/compress/archivers/zip/ZipArchiveEntry.d.ts'
 export class ZipArchiveInputStream$CurrentEntry extends Object {
-    constructor(arg0: any)
+    private constructor()
     // private bytesRead: number;
     // private bytesReadFromStream: number;
     // private crc: CRC32;

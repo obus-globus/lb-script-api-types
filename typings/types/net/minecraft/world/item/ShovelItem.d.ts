@@ -12,7 +12,6 @@ import type { Item$Properties } from '../../../../net/minecraft/world/item/Item$
 import type { ToolMaterial } from '../../../../net/minecraft/world/item/ToolMaterial.d.ts'
 import type { UseOnContext } from '../../../../net/minecraft/world/item/context/UseOnContext.d.ts'
 import type { Block } from '../../../../net/minecraft/world/level/block/Block.d.ts'
-import type { BlockState } from '../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { Vector3f } from '../../../../org/joml/Vector3f.d.ts'
 export class ShovelItem extends Item implements ShovelItemAccessor {
     static ABSOLUTE_MAX_STACK_SIZE: number;
@@ -28,7 +27,6 @@ export class ShovelItem extends Item implements ShovelItemAccessor {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Holder<Item>>;
     static byBlock(paramblock: Block): Item;
     static byId(paramid: number): Item;
-    static getFlattenables(): Map<Block, BlockState>;
     static getId(paramitem: Item): number;
     constructor(material: ToolMaterial, attackDamageBaseline: number, attackSpeedBaseline: number, properties: Item$Properties)
     useOn(context: UseOnContext): InteractionResult;

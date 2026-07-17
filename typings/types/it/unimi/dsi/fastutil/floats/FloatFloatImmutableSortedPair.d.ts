@@ -5,7 +5,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class FloatFloatImmutableSortedPair extends FloatFloatImmutablePair implements FloatFloatSortedPair, Serializable {
     static of(paramarg0: number, paramarg1: number): FloatFloatImmutablePair;
     static of(paramarg0: number, paramarg1: number): FloatFloatImmutableSortedPair;
-    static of(paramarg0: number, paramarg1: number): FloatFloatSortedPair;
     private constructor(arg0: number, arg1: number)
     contains(arg0: Object): boolean;
     contains(arg0: number): boolean;

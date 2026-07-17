@@ -13,7 +13,7 @@ export class VersionComparisonOperator extends Enum<VersionComparisonOperator> {
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): VersionComparisonOperator;
     static values(): VersionComparisonOperator[];
-    constructor(arg2: string, arg3: boolean, arg4: boolean, arg5: VersionComparisonOperator)
+    private constructor(arg2: string, arg3: boolean, arg4: boolean)
     readonly maxInclusive: boolean;
     readonly minInclusive: boolean;
     readonly serialized: string;

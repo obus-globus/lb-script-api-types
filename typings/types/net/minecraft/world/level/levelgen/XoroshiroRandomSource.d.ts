@@ -8,11 +8,6 @@ import type { Xoroshiro128PlusPlus } from '../../../../../net/minecraft/world/le
 export class XoroshiroRandomSource extends Object implements RandomSource {
     static CODEC: Codec<XoroshiroRandomSource>;
     static GAUSSIAN_SPREAD_FACTOR: number;
-    static create(): RandomSource;
-    static create(paramseed: number): RandomSource;
-    static createThreadLocalInstance(): RandomSource;
-    static createThreadLocalInstance(paramseed: number): RandomSource;
-    static createThreadSafe(): RandomSource;
     constructor(seed: number)
     constructor(seedLo: number, seedHi: number)
     constructor(seed: RandomSupport$Seed128bit)

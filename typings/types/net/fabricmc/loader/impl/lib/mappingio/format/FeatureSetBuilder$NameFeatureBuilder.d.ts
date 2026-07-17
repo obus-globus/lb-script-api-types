@@ -4,7 +4,6 @@ import type { FeatureSet$NameSupport } from '../../../../../../../net/fabricmc/l
 export class FeatureSetBuilder$NameFeatureBuilder extends Object {
     constructor()
     constructor(arg0: boolean)
-    constructor(arg0: FeatureSet$NameSupport, arg1: any)
     // private dstNames: FeatureSet$FeaturePresence;
     // private srcNames: FeatureSet$FeaturePresence;
     build(): FeatureSet$NameSupport;

@@ -9,8 +9,6 @@ export class ModuleAutoRod$Ignore extends Enum<ModuleAutoRod$Ignore> implements 
     static OPEN_INVENTORY: ModuleAutoRod$Ignore;
     static USING_ITEM: ModuleAutoRod$Ignore;
     static getEntries(): ModuleAutoRod$Ignore[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleAutoRod$Ignore;
     static values(): ModuleAutoRod$Ignore[];

@@ -1,7 +1,7 @@
 import type { ObjectIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectIterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ObjectOpenHashBigSet$SetIterator extends Object implements ObjectIterator<K> {
-    constructor(null_: Object[], arg1: any)
+    private constructor(null_: Object[])
     // private base: number;
     // private c: number;
     // private displ: number;

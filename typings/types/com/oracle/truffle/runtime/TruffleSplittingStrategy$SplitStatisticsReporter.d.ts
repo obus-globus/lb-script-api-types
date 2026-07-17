@@ -12,8 +12,6 @@ import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 export class TruffleSplittingStrategy$SplitStatisticsReporter extends Object implements OptimizedTruffleRuntimeListener {
-    static addASTSizeProperty(paramtarget: OptimizedCallTarget, paramproperties: { [key: string]: Object }): void;
-    static isPermanentFailure(parambailout: boolean, parampermanentBailout: boolean): boolean;
     constructor()
     onCompilationDeoptimized(target: OptimizedCallTarget, frame: Frame): void;
     onCompilationDeoptimized(target: OptimizedCallTarget, frame: Frame, reason: string): void;

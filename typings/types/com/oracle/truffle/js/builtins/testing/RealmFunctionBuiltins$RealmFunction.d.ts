@@ -16,7 +16,6 @@ export class RealmFunctionBuiltins$RealmFunction extends Enum<RealmFunctionBuilt
     static global: RealmFunctionBuiltins$RealmFunction;
     static navigate: RealmFunctionBuiltins$RealmFunction;
     static owner: RealmFunctionBuiltins$RealmFunction;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): RealmFunctionBuiltins$RealmFunction;
     static values(): RealmFunctionBuiltins$RealmFunction[];

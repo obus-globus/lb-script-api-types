@@ -1,6 +1,5 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
-import type { DefaultConstructorMarker } from '../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { KotlinTarget$Companion } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/annotations/KotlinTarget$Companion.d.ts'
 export class KotlinTarget extends Enum<KotlinTarget> {
     static ANNOTATION_CLASS: KotlinTarget;
@@ -55,7 +54,7 @@ export class KotlinTarget extends Enum<KotlinTarget> {
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): KotlinTarget;
     static values(): KotlinTarget[];
-    constructor(arg2: string, arg3: boolean, arg4: number, arg5: DefaultConstructorMarker)
+    private constructor(arg2: string, arg3: boolean)
     // private description: string;
     // private isDefault: boolean;
     name(): "CLASS" | "ANNOTATION_CLASS" | "TYPE_PARAMETER" | "PROPERTY" | "FIELD" | "LOCAL_VARIABLE" | "VALUE_PARAMETER" | "CONSTRUCTOR" | "FUNCTION" | "PROPERTY_GETTER" | "PROPERTY_SETTER" | "TYPE" | "EXPRESSION" | "FILE" | "TYPEALIAS" | "TYPE_PROJECTION" | "STAR_PROJECTION" | "PROPERTY_PARAMETER" | "CLASS_ONLY" | "OBJECT" | "STANDALONE_OBJECT" | "COMPANION_OBJECT" | "INTERFACE" | "ENUM_CLASS" | "ENUM_ENTRY" | "LOCAL_CLASS" | "LOCAL_FUNCTION" | "MEMBER_FUNCTION" | "COMPANION_MEMBER_FUNCTION" | "TOP_LEVEL_FUNCTION" | "COMPANION_EXTENSION_FUNCTION" | "MEMBER_PROPERTY" | "COMPANION_MEMBER_PROPERTY" | "MEMBER_PROPERTY_WITH_BACKING_FIELD" | "MEMBER_PROPERTY_WITH_DELEGATE" | "MEMBER_PROPERTY_WITHOUT_FIELD_OR_DELEGATE" | "TOP_LEVEL_PROPERTY" | "COMPANION_EXTENSION_PROPERTY" | "TOP_LEVEL_PROPERTY_WITH_BACKING_FIELD" | "TOP_LEVEL_PROPERTY_WITH_DELEGATE" | "TOP_LEVEL_PROPERTY_WITHOUT_FIELD_OR_DELEGATE" | "BACKING_FIELD" | "INITIALIZER" | "DESTRUCTURING_DECLARATION" | "LAMBDA_EXPRESSION" | "ANONYMOUS_FUNCTION" | "OBJECT_LITERAL";

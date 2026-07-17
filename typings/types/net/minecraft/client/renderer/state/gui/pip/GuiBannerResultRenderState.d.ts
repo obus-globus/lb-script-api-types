@@ -8,7 +8,6 @@ import type { BannerPatternLayers } from '../../../../../../../net/minecraft/wor
 import type { Matrix3x2fc } from '../../../../../../../org/joml/Matrix3x2fc.d.ts'
 export class GuiBannerResultRenderState extends Record implements PictureInPictureRenderState {
     static IDENTITY_POSE: Matrix3x2fc;
-    static getBounds(paramx0: number, paramy0: number, paramx1: number, paramy1: number, paramscissorArea: ScreenRectangle): ScreenRectangle;
     constructor(flag: BannerFlagModel, baseColor: DyeColor, resultBannerPatterns: BannerPatternLayers, x0: number, y0: number, x1: number, y1: number, scissorArea: ScreenRectangle)
     constructor(flag: BannerFlagModel, baseColor: DyeColor, resultBannerPatterns: BannerPatternLayers, x0: number, y0: number, x1: number, y1: number, scissorArea: ScreenRectangle, bounds: ScreenRectangle)
     // private baseColor: DyeColor;

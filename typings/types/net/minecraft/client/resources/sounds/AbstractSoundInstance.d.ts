@@ -10,7 +10,6 @@ import type { SoundSource } from '../../../../../net/minecraft/sounds/SoundSourc
 import type { RandomSource } from '../../../../../net/minecraft/util/RandomSource.d.ts'
 export abstract class AbstractSoundInstance extends Object implements SoundInstance {
     static EMPTY_SOUND: Identifier;
-    static createUnseededRandom(): RandomSource;
     constructor(identifier: Identifier, source: SoundSource, random: RandomSource)
     constructor(event: SoundEvent, source: SoundSource, random: RandomSource)
     attenuation: SoundInstance$Attenuation;

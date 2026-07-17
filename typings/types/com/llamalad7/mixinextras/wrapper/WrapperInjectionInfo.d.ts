@@ -23,7 +23,6 @@ export abstract class WrapperInjectionInfo extends MixinExtrasInjectionInfo impl
     static getRegisteredAnnotations(): Class<Annotation>[];
     static parse(paramarg0: MixinTargetContext, paramarg1: MethodNode): InjectionInfo;
     static register(paramarg0: Class<InjectionInfo>): void;
-    static wrap(paramarg0: Object, paramarg1: LateApplyingInjectorInfo): boolean;
     constructor(arg0: (param0: InjectionInfo, param1: MixinTargetContext, param2: MethodNode, param3: AnnotationNode) => InjectorWrapperImpl, arg1: MixinTargetContext, arg2: MethodNode, arg3: AnnotationNode)
     readonly delegate: InjectionInfo;
     // private impl: InjectorWrapperImpl;

@@ -38,7 +38,7 @@ export abstract class AbstractDecoder extends Object implements CompositeDecoder
     decodeSequentially(): boolean;
     decodeSerializableElement<T extends unknown>(descriptor: SerialDescriptor, index: number, deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
     decodeSerializableValue<T extends unknown>(deserializer: DeserializationStrategy<T>): T;
-    decodeSerializableValue<T extends unknown>(deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
+    decodeSerializableValue<T extends unknown>(deserializer: DeserializationStrategy<T>, previousValue?: T | null): T;
     decodeShort(): number;
     decodeShortElement(descriptor: SerialDescriptor, index: number): number;
     decodeString(): string;

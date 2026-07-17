@@ -14,7 +14,6 @@ export class GzipCompressorInputStream extends CompressorInputStream implements 
     static nullInputStream(): InputStream;
     constructor(arg0: InputStream)
     constructor(arg0: InputStream, arg1: boolean)
-    constructor(arg0: GzipCompressorInputStream$Builder, arg1: any)
     // private buf: number[];
     // private bufUsed: number;
     // private countingStream: BoundedInputStream;

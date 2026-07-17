@@ -7,5 +7,6 @@ export class ModuleSafeWalk$Safe extends Mode {
     static Companion: Tagged$Companion;
     constructor(parent: ModeValueGroup<Mode>)
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     readonly safeWalkHandler: EventHook<PlayerSafeWalkEvent>;
 }

@@ -1,8 +1,7 @@
 import type { CharListIterator } from '../../../../../it/unimi/dsi/fastutil/chars/CharListIterator.d.ts'
 import type { Short2CharAVLTreeMap$TreeIterator } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2CharAVLTreeMap$TreeIterator.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Short2CharAVLTreeMap$ValueIterator extends Short2CharAVLTreeMap$TreeIterator implements CharListIterator {
-    constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
+    private constructor(null_: { [key: string]: any })
     add(arg0: string): void;
     next(): string;
     nextChar(): string;

@@ -15,6 +15,7 @@ export class ModuleAntiAFK$RandomInteraction extends Mode {
     // private /*not mapped: */ getInteractions(): ModuleAntiAFK$RandomInteraction$Interaction[];
     readonly movementInputEvent: EventHook<MovementInputEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     randomDirection: DirectionalInput;
     readonly repeatable: EventHook<GameTickEvent>;
 }

@@ -7,7 +7,7 @@ export class UncheckedBufferedReader extends BufferedReader {
     static builder(): UncheckedBufferedReader$Builder;
     static nullReader(): Reader;
     static of(paramarg0: CharSequence): Reader;
-    constructor(arg0: UncheckedBufferedReader$Builder, arg1: any)
+    private constructor(arg0: UncheckedBufferedReader$Builder)
     close(): void;
     mark(arg0: number): void;
     read(): number;

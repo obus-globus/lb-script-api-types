@@ -14,14 +14,14 @@ export class JvmSystemFileSystem extends FileSystem_2 {
     static get(self: FileSystem): FileSystem_2;
     constructor()
     appendingSink(file: Path): Sink;
-    appendingSink(file: Path, mustExist: boolean): Sink;
+    appendingSink(file: Path, mustExist?: boolean): Sink;
     atomicMove(source: Path, target: Path): void;
     canonicalize(path: Path): Path;
     createDirectory(dir: Path): void;
-    createDirectory(dir: Path, mustCreate: boolean): void;
+    createDirectory(dir: Path, mustCreate?: boolean): void;
     createSymlink(source: Path, target: Path): void;
     delete(path: Path): void;
-    delete(path: Path, mustExist: boolean): void;
+    delete(path: Path, mustExist?: boolean): void;
     list(dir: Path): Path[];
     // private list(dir: Path, throwOnFailure: boolean): Path[] | null;
     listOrNull(dir: Path): Path[] | null;
@@ -30,7 +30,7 @@ export class JvmSystemFileSystem extends FileSystem_2 {
     openReadWrite(file: Path): FileHandle;
     openReadWrite(file: Path, mustCreate: boolean, mustExist: boolean): FileHandle;
     sink(file: Path): Sink;
-    sink(file: Path, mustCreate: boolean): Sink;
+    sink(file: Path, mustCreate?: boolean): Sink;
     source(file: Path): Source;
     toString(): string;
 }

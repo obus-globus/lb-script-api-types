@@ -12,7 +12,7 @@ export class LocalCache$Strength extends Enum<LocalCache$Strength> {
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): LocalCache$Strength;
     static values(): LocalCache$Strength[];
-    constructor(arg2: LocalCache$ValueReference<Object, Object>)
+    private constructor()
     defaultEquivalence(): Equivalence<Object>;
     referenceValue<K extends unknown, V extends unknown>(segment: LocalCache$Segment<K, V>, entry: ReferenceEntry<K, V>, value: V, weight: number): LocalCache$ValueReference<K, V>;
     name(): "STRONG" | "SOFT" | "WEAK";

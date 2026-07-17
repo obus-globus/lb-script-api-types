@@ -7,7 +7,6 @@ import type { SurfaceRules$RuleSource } from '../../../../../net/minecraft/world
 import type { SurfaceRules$SurfaceRule } from '../../../../../net/minecraft/world/level/levelgen/SurfaceRules$SurfaceRule.d.ts'
 export class SurfaceRules$SequenceRuleSource extends Record implements SurfaceRules$RuleSource {
     static CODEC: Codec<SurfaceRules$RuleSource>;
-    static bootstrap(paramregistry: MapCodec<SurfaceRules$RuleSource>[]): MapCodec<SurfaceRules$RuleSource>;
     private constructor(sequence: SurfaceRules$RuleSource[])
     // private sequence: SurfaceRules$RuleSource[];
     apply(context: SurfaceRules$Context): SurfaceRules$SurfaceRule;

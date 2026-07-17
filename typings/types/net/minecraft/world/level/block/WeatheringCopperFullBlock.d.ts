@@ -65,12 +65,7 @@ export class WeatheringCopperFullBlock extends Block implements WeatheringCopper
     static dropResources(paramstate: BlockState, paramlevel: LevelAccessor, parampos: BlockPos, paramblockEntity: BlockEntity): void;
     static getDrops(paramstate: BlockState, paramlevel: ServerLevel, parampos: BlockPos, paramblockEntity: BlockEntity): ItemStack[];
     static getDrops(paramstate: BlockState, paramlevel: ServerLevel, parampos: BlockPos, paramblockEntity: BlockEntity, parambreaker: Entity, paramtool: ItemInstance): ItemStack[];
-    static getFirst(paramblock: Block): Block;
-    static getFirst(paramstate: BlockState): BlockState;
     static getId(paramblockState: BlockState): number;
-    static getNext(paramblock: Block): Optional<Block>;
-    static getPrevious(paramblock: Block): Optional<Block>;
-    static getPrevious(paramstate: BlockState): Optional<BlockState>;
     static isExceptionForConnection(paramstate: BlockState): boolean;
     static isFaceFull(paramshape: VoxelShape, paramdirection: Direction): boolean;
     static isShapeFullBlock(paramarg0: VoxelShape): boolean;

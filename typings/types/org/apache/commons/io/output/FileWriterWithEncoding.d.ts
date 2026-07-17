@@ -19,5 +19,4 @@ export class FileWriterWithEncoding extends ProxyWriter {
     constructor(arg0: string, arg1: CharsetEncoder, arg2: boolean)
     constructor(arg0: string, arg1: string)
     constructor(arg0: string, arg1: string, arg2: boolean)
-    constructor(arg0: FileWriterWithEncoding$Builder, arg1: any)
 }

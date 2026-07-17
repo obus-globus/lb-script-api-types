@@ -5,7 +5,7 @@ import type { CharBuffer } from '../../../../../../java/nio/CharBuffer.d.ts'
 import type { IntBuffer } from '../../../../../../java/nio/IntBuffer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class CodePointBuffer$Builder extends Object {
-    constructor(arg0: number, arg1: any)
+    private constructor(arg0: number)
     // private byteBuffer: ByteBuffer;
     // private charBuffer: CharBuffer;
     // private intBuffer: IntBuffer;

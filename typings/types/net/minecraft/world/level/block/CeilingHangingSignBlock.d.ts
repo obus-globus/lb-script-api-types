@@ -79,7 +79,6 @@ export class CeilingHangingSignBlock extends SignBlock implements HangingSignBlo
     static dropResources(paramstate: BlockState, paramlevel: Level, parampos: BlockPos, paramblockEntity: BlockEntity, parambreaker: Entity, paramtool: ItemStack): void;
     static dropResources(paramstate: BlockState, paramlevel: LevelAccessor, parampos: BlockPos, paramblockEntity: BlockEntity): void;
     static getAttachmentPoint(paramisAttached: boolean): HangingSignBlock$Attachment;
-    static getAttachmentPoint(paramblockState: BlockState): HangingSignBlock$Attachment;
     static getDrops(paramstate: BlockState, paramlevel: ServerLevel, parampos: BlockPos, paramblockEntity: BlockEntity): ItemStack[];
     static getDrops(paramstate: BlockState, paramlevel: ServerLevel, parampos: BlockPos, paramblockEntity: BlockEntity, parambreaker: Entity, paramtool: ItemInstance): ItemStack[];
     static getId(paramblockState: BlockState): number;

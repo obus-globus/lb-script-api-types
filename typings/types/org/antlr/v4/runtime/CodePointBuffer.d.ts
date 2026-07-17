@@ -9,7 +9,7 @@ export class CodePointBuffer extends Object {
     static withBytes(paramarg0: ByteBuffer): CodePointBuffer;
     static withChars(paramarg0: CharBuffer): CodePointBuffer;
     static withInts(paramarg0: IntBuffer): CodePointBuffer;
-    constructor(arg0: CodePointBuffer$Type, arg1: ByteBuffer, arg2: CharBuffer, arg3: IntBuffer, arg4: any)
+    private constructor(arg0: CodePointBuffer$Type, arg1: ByteBuffer, arg2: CharBuffer, arg3: IntBuffer)
     // private byteBuffer: ByteBuffer;
     // private charBuffer: CharBuffer;
     // private intBuffer: IntBuffer;

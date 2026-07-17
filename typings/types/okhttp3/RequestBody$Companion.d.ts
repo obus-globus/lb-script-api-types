@@ -6,7 +6,7 @@ import type { ByteString } from '../okio/ByteString.d.ts'
 export class RequestBody$Companion extends Object {
     EMPTY: RequestBody;
     create(contentType: MediaType | null, file: File): RequestBody;
-    create(contentType: MediaType | null, content: number[], offset: number, byteCount: number): RequestBody;
+    create(contentType: MediaType | null, content: number[], offset?: number, byteCount?: number): RequestBody;
     create(contentType: MediaType | null, content: string): RequestBody;
     create(contentType: MediaType | null, content: ByteString): RequestBody;
 }

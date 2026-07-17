@@ -8,7 +8,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class PluralRulesFunctionBuiltins$PluralRulesFunction extends Enum<PluralRulesFunctionBuiltins$PluralRulesFunction> implements BuiltinEnum<PluralRulesFunctionBuiltins$PluralRulesFunction> {
     static supportedLocalesOf: PluralRulesFunctionBuiltins$PluralRulesFunction;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): PluralRulesFunctionBuiltins$PluralRulesFunction;
     static values(): PluralRulesFunctionBuiltins$PluralRulesFunction[];

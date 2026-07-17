@@ -4,6 +4,5 @@ import type { TranslateLanguage$Companion } from '../../../../../../net/ccbluex/
 export class TranslateLanguage$Auto extends Object implements TranslateLanguage {
     static Companion: TranslateLanguage$Companion;
     static INSTANCE: TranslateLanguage$Auto;
-    static of(language: string): TranslateLanguage;
     readonly literal: string;
 }

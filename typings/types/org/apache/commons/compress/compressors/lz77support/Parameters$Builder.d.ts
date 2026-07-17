@@ -1,7 +1,7 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Parameters } from '../../../../../../org/apache/commons/compress/compressors/lz77support/Parameters.d.ts'
 export class Parameters$Builder extends Object {
-    constructor(arg0: number, arg1: any)
+    private constructor(arg0: number)
     // private lazyMatches: boolean;
     // private lazyThreshold: number;
     // private maxBackReferenceLength: number;

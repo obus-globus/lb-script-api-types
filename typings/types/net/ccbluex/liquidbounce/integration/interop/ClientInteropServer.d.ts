@@ -1,5 +1,6 @@
 import type { FullHttpResponse } from '../../../../../io/netty/handler/codec/http/FullHttpResponse.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Continuation } from '../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { HttpServer } from '../../../../../net/ccbluex/netty/http/HttpServer.d.ts'
 import type { RequestObject } from '../../../../../net/ccbluex/netty/http/model/RequestObject.d.ts'
 /**
@@ -20,7 +21,10 @@ export class ClientInteropServer extends Object {
     /*not mapped: */ isSkipping(): boolean;
     readonly url: string;
     // private getRootResponse(requestObject: RequestObject): FullHttpResponse;
-    start(): void;
-    // private startServer(port: number): number;
-    stop(): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    start($completion: Continuation<void>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private startServer(port: number, $completion: Continuation<number>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    stop($completion: Continuation<void>): any;
 }

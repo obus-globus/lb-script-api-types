@@ -4,7 +4,6 @@ import type { VarIntType } from '../../../../../../../com/viaversion/viaversion/
 import type { Key } from '../../../../../../../com/viaversion/viaversion/util/Key.d.ts'
 import type { ByteBuf } from '../../../../../../../io/netty/buffer/ByteBuf.d.ts'
 export class RegistryValueType extends VarIntType implements RegistryKey {
-    static of(paramarg0: string): RegistryKey;
     static varIntLength(paramarg0: number): number;
     constructor(arg0: Key, ...arg1: string[])
     // private key: Key;

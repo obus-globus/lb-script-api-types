@@ -4,7 +4,7 @@ import type { Subscriber } from '../../../../com/google/common/eventbus/Subscrib
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class Dispatcher$LegacyAsyncDispatcher extends Dispatcher {
-    constructor(arg0: any)
+    private constructor()
     // private queue: Dispatcher$LegacyAsyncDispatcher$EventWithSubscriber[];
     dispatch(event: Object, subscribers: Iterator<Subscriber>): void;
 }

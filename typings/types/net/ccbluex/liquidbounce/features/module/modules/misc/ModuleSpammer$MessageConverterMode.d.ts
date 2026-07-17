@@ -9,8 +9,6 @@ export class ModuleSpammer$MessageConverterMode extends Enum<ModuleSpammer$Messa
     static RANDOM_CASE_CONVERTER: ModuleSpammer$MessageConverterMode;
     static RANDOM_SPACE_CONVERTER: ModuleSpammer$MessageConverterMode;
     static getEntries(): ModuleSpammer$MessageConverterMode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleSpammer$MessageConverterMode;
     static values(): ModuleSpammer$MessageConverterMode[];

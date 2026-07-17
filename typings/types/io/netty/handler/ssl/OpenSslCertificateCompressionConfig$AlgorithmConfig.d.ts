@@ -2,7 +2,7 @@ import type { OpenSslCertificateCompressionAlgorithm } from '../../../../io/nett
 import type { OpenSslCertificateCompressionConfig$AlgorithmMode } from '../../../../io/netty/handler/ssl/OpenSslCertificateCompressionConfig$AlgorithmMode.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class OpenSslCertificateCompressionConfig$AlgorithmConfig extends Object {
-    constructor(arg0: OpenSslCertificateCompressionAlgorithm, arg1: OpenSslCertificateCompressionConfig$AlgorithmMode, arg2: any)
+    private constructor(arg0: OpenSslCertificateCompressionAlgorithm, arg1: OpenSslCertificateCompressionConfig$AlgorithmMode)
     // private algorithm: OpenSslCertificateCompressionAlgorithm;
     // private mode: OpenSslCertificateCompressionConfig$AlgorithmMode;
     algorithm(): OpenSslCertificateCompressionAlgorithm;

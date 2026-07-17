@@ -14,7 +14,6 @@ import type { Builder } from '../../../../../org/apache/commons/lang3/builder/Bu
 import type { StrMatcher } from '../../../../../org/apache/commons/lang3/text/StrMatcher.d.ts'
 import type { StrTokenizer } from '../../../../../org/apache/commons/lang3/text/StrTokenizer.d.ts'
 export class StrBuilder extends Object implements Serializable, Appendable, CharSequence, Builder<string> {
-    static compare(paramarg0: CharSequence, paramarg1: CharSequence): number;
     constructor()
     constructor(arg0: number)
     constructor(arg0: string)

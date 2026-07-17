@@ -4,7 +4,7 @@ import type { NDArraySupplier } from '../../../ai/djl/translate/NDArraySupplier.
 import type { PaddingStackBatchifier } from '../../../ai/djl/translate/PaddingStackBatchifier.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class PaddingStackBatchifier$Builder extends Object {
-    constructor(arg0: any)
+    private constructor()
     // private arraysToPad: number[];
     // private dimsToPad: number[];
     // private includeValidLengths: boolean;

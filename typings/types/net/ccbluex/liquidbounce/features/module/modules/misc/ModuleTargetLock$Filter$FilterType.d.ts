@@ -7,8 +7,6 @@ export class ModuleTargetLock$Filter$FilterType extends Enum<ModuleTargetLock$Fi
     static Companion: Tagged$Companion;
     static WHITELIST: ModuleTargetLock$Filter$FilterType;
     static getEntries(): ModuleTargetLock$Filter$FilterType[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleTargetLock$Filter$FilterType;
     static values(): ModuleTargetLock$Filter$FilterType[];

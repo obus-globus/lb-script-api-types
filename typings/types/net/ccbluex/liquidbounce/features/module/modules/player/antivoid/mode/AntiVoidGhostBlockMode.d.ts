@@ -8,6 +8,7 @@ export class AntiVoidGhostBlockMode extends AntiVoidMode {
     static INSTANCE: AntiVoidGhostBlockMode;
     // private handleBlockShape: EventHook<BlockShapeEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     /**
      * We have {@link handleBlockShape} to fix our situation instead.
      *

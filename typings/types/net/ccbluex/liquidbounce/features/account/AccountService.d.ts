@@ -9,8 +9,6 @@ export class AccountService extends Enum<AccountService> implements Tagged {
     static SESSION: AccountService;
     static THEALTENING: AccountService;
     static getEntries(): AccountService[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): AccountService;
     static values(): AccountService[];

@@ -16,5 +16,6 @@ export class NoSlowConsumeIntave14 extends Mode {
     // private /*not mapped: */ getMode(): NoSlowConsumeIntave14$Mode;
     // private onNetworkTick: EventHook<PlayerNetworkMovementTickEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private releasePacket(): void;
 }

@@ -11,7 +11,7 @@ export class HtmlLayout extends AbstractStringLayout {
     static createDefaultLayout(): HtmlLayout;
     static createLayout(paramlocationInfo: boolean, paramtitle: string, paramcontentType: string, paramcharset: Charset, paramfontSize: string, paramfont: string): HtmlLayout;
     static newBuilder(): HtmlLayout$Builder;
-    constructor(arg0: boolean, arg1: string, arg2: string, arg3: Charset, arg4: string, arg5: string, arg6: string, arg7: string, arg8: string, arg9: any)
+    private constructor(locationInfo: boolean, title: string, contentType: string, charset: Charset, font: string, fontSize: string, headerSize: string, datePattern: string, timezone: string)
     readonly contentType: string;
     // private datePatternConverter: DatePatternConverter;
     // private font: string;

@@ -18,7 +18,7 @@ export class JdbcAppender extends AbstractDatabaseAppender<JdbcDatabaseManager> 
     static createAppender<B extends JdbcAppender$Builder<B>>(paramname: string, paramignore: string, paramfilter: Filter, paramconnectionSource: ConnectionSource, parambufferSize: string, paramtableName: string, paramcolumnConfigs: ColumnConfig[]): JdbcAppender;
     static newBuilder<B extends JdbcAppender$Builder<B>>(): B;
     static parseInt(params: string, paramdefaultValue: number): number;
-    constructor(arg0: string, arg1: Filter, arg2: Layout<Serializable>, arg3: boolean, arg4: Property[], arg5: JdbcDatabaseManager, arg6: any)
+    private constructor(name: string, filter: Filter, layout: Layout<Serializable>, ignoreExceptions: boolean, properties: Property[], manager: JdbcDatabaseManager)
     // private description: string;
     toString(): string;
 }

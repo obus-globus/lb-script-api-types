@@ -10,6 +10,7 @@ export class ModuleSneak$Vanilla extends Mode {
     // private networkSneaking: boolean;
     // private networkTick: EventHook<PlayerNetworkMovementTickEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     // private sneakNetworkHandler: EventHook<PacketEvent>;
     disable(): void;
 }

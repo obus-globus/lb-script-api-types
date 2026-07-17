@@ -12,7 +12,6 @@ export class CharSequenceInputStream extends InputStream {
     constructor(arg0: CharSequence, arg1: Charset, arg2: number)
     constructor(arg0: CharSequence, arg1: string)
     constructor(arg0: CharSequence, arg1: string, arg2: number)
-    constructor(arg0: CharSequenceInputStream$Builder, arg1: any)
     // private bBuf: ByteBuffer;
     // private bBufMark: number;
     // private cBuf: CharBuffer;

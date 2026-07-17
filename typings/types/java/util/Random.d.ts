@@ -9,8 +9,6 @@ import type { LongStream } from '../../java/util/stream/LongStream.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export class Random extends Object implements Serializable, RandomGenerator {
     static from(paramarg0: RandomGenerator): Random;
-    static getDefault(): RandomGenerator;
-    static of(paramarg0: string): RandomGenerator;
     constructor()
     constructor(arg0: number)
     // private haveNextNextGaussian: boolean;

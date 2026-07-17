@@ -1,8 +1,7 @@
-import type { CharEscaper } from '../../../../com/google/common/escape/CharEscaper.d.ts'
 import type { Escaper } from '../../../../com/google/common/escape/Escaper.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Escapers$Builder extends Object {
-    constructor(arg0: CharEscaper)
+    private constructor()
     // private replacementMap: { [key: string]: string };
     // private safeMax: string;
     // private safeMin: string;

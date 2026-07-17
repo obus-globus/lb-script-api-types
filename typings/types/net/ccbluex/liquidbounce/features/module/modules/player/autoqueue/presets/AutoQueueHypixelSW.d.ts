@@ -11,5 +11,6 @@ export class AutoQueueHypixelSW extends Mode {
     // private /*not mapped: */ getGameMode(): AutoQueueHypixelSW$SkyWarsGameMode;
     // private /*not mapped: */ getHasPaper(): boolean;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     readonly repeatable: EventHook<GameTickEvent>;
 }

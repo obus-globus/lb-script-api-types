@@ -14,8 +14,6 @@ import type { TagKey } from '../../../net/minecraft/tags/TagKey.d.ts'
 export class Holder$Reference<T extends unknown> extends Object implements Holder<T> {
     static createIntrusive<T extends unknown>(paramowner: HolderOwner<T>, paramvalue: T): Holder$Reference<T>;
     static createStandAlone<T extends unknown>(paramowner: HolderOwner<T>, paramkey: ResourceKey<T>): Holder$Reference<T>;
-    static direct<T extends unknown>(paramvalue: T): Holder<T>;
-    static direct<T extends unknown>(paramvalue: T, paramcomponents: TypedDataComponent<Object>[]): Holder<T>;
     constructor(type: Holder$Reference$Type, owner: HolderOwner<T>, key: ResourceKey<T>, value: T)
     // private components: TypedDataComponent<Object>[];
     // private key: ResourceKey<T>;

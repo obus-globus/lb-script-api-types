@@ -11,7 +11,6 @@ export class NumberFunctionBuiltins$NumberFunction extends Enum<NumberFunctionBu
     static isInteger: NumberFunctionBuiltins$NumberFunction;
     static isNaN: NumberFunctionBuiltins$NumberFunction;
     static isSafeInteger: NumberFunctionBuiltins$NumberFunction;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): NumberFunctionBuiltins$NumberFunction;
     static values(): NumberFunctionBuiltins$NumberFunction[];

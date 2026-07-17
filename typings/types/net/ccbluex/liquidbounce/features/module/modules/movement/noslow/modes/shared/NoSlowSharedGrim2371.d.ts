@@ -14,6 +14,7 @@ export class NoSlowSharedGrim2371 extends Mode {
     static getShouldPreventNoSlow(): boolean;
     constructor(parent: ModeValueGroup<any>)
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private tickHandler: EventHook<GameTickEvent>;
     disable(): void;
 }

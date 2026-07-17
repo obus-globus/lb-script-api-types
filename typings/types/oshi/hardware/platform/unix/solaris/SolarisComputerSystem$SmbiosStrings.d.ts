@@ -1,6 +1,6 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class SolarisComputerSystem$SmbiosStrings extends Object {
-    constructor(arg0: Map<Object | null, Object | null>, arg1: Map<Object | null, Object | null>, arg2: Map<Object | null, Object | null>, arg3: any)
+    private constructor(arg0: { [key: string]: string }, arg1: { [key: string]: string }, arg2: { [key: string]: string })
     // private biosDate: string;
     // private biosVendor: string;
     // private biosVersion: string;

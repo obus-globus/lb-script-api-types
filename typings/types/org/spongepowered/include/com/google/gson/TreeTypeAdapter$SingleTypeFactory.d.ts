@@ -7,7 +7,7 @@ import type { TypeAdapter } from '../../../../../../org/spongepowered/include/co
 import type { TypeAdapterFactory } from '../../../../../../org/spongepowered/include/com/google/gson/TypeAdapterFactory.d.ts'
 import type { TypeToken } from '../../../../../../org/spongepowered/include/com/google/gson/reflect/TypeToken.d.ts'
 export class TreeTypeAdapter$SingleTypeFactory extends Object implements TypeAdapterFactory {
-    constructor(arg0: Object, arg1: TypeToken<Object>, arg2: boolean, arg3: Class<Object>, arg4: any)
+    private constructor(arg0: Object, arg1: TypeToken<Object>, arg2: boolean, arg3: Class<Object>)
     // private deserializer: JsonDeserializer<Object>;
     // private exactType: TypeToken<Object>;
     // private hierarchyType: Class<Object>;

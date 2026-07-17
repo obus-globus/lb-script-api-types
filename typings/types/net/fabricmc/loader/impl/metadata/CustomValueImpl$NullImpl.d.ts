@@ -4,6 +4,6 @@ import type { JsonReader } from '../../../../../net/fabricmc/loader/impl/lib/gso
 import type { CustomValueImpl } from '../../../../../net/fabricmc/loader/impl/metadata/CustomValueImpl.d.ts'
 export class CustomValueImpl$NullImpl extends CustomValueImpl {
     static readCustomValue(paramarg0: JsonReader): CustomValue;
-    constructor(arg0: any)
+    private constructor()
     getType(): CustomValue$CvType;
 }

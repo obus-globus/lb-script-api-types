@@ -7,8 +7,6 @@ export class ModuleAutoPearl$Modes extends Enum<ModuleAutoPearl$Modes> implement
     static TARGET: ModuleAutoPearl$Modes;
     static TRIGGER: ModuleAutoPearl$Modes;
     static getEntries(): ModuleAutoPearl$Modes[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleAutoPearl$Modes;
     static values(): ModuleAutoPearl$Modes[];

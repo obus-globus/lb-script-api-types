@@ -294,6 +294,5 @@ export class ModelLayers extends Object implements ModelLayersAccessor {
     static ZOMBIFIED_PIGLIN_BABY: ModelLayerLocation;
     static ZOMBIFIED_PIGLIN_BABY_ARMOR: ArmorModelSet<ModelLayerLocation>;
     static getKnownLocations(): Stream<ModelLayerLocation>;
-    static getLayers(): ModelLayerLocation[];
     constructor()
 }

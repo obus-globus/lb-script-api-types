@@ -1,8 +1,7 @@
 import type { Byte2IntAVLTreeMap$TreeIterator } from '../../../../../it/unimi/dsi/fastutil/bytes/Byte2IntAVLTreeMap$TreeIterator.d.ts'
 import type { IntListIterator } from '../../../../../it/unimi/dsi/fastutil/ints/IntListIterator.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Byte2IntAVLTreeMap$ValueIterator extends Byte2IntAVLTreeMap$TreeIterator implements IntListIterator {
-    constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
+    private constructor(null_: { [key: string]: any })
     add(arg0: number): void;
     next(): number;
     nextInt(): number;

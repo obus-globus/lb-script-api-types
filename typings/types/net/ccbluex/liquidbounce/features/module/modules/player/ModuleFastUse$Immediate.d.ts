@@ -8,6 +8,7 @@ export class ModuleFastUse$Immediate extends Mode {
     static INSTANCE: ModuleFastUse$Immediate;
     readonly delay: number;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     readonly repeatable: EventHook<GameTickEvent>;
     /**
      * This is the amount of times the packet is sent per tick.

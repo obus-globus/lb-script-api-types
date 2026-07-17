@@ -9,7 +9,7 @@ import type { JsonReader } from '../../../../../../org/spongepowered/include/com
 import type { JsonWriter } from '../../../../../../org/spongepowered/include/com/google/gson/stream/JsonWriter.d.ts'
 export class TreeTypeAdapter<T extends unknown> extends TypeAdapter<T> {
     static newFactory(paramarg0: TypeToken<Object>, paramarg1: Object): TypeAdapterFactory;
-    constructor(arg0: JsonSerializer<Object>, arg1: JsonDeserializer<Object>, arg2: Gson, arg3: TypeToken<Object>, arg4: TypeAdapterFactory, arg5: any)
+    private constructor(arg0: JsonSerializer<T>, arg1: JsonDeserializer<T>, arg2: Gson, arg3: TypeToken<T>, arg4: TypeAdapterFactory)
     // private delegate: TypeAdapter<T>;
     // private deserializer: JsonDeserializer<T>;
     // private gson: Gson;

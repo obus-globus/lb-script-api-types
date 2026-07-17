@@ -1,7 +1,7 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Blake3$ChunkState } from '../../../../../org/apache/commons/codec/digest/Blake3$ChunkState.d.ts'
 export class Blake3$EngineState extends Object {
-    constructor(arg0: number[], arg1: number, arg2: any)
+    private constructor(arg0: number[], arg1: number)
     // private cvStack: number[][];
     // private flags: number;
     // private key: number[];

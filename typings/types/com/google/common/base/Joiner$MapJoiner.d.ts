@@ -5,7 +5,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class Joiner$MapJoiner extends Object {
-    constructor(arg0: Joiner, arg1: string, arg2: Joiner)
+    private constructor(joiner: Joiner, keyValueSeparator: string)
     // private joiner: Joiner;
     // private keyValueSeparator: string;
     appendTo<A extends Appendable>(appendable: A, entries: Map$Entry<Object, Object>[]): A;

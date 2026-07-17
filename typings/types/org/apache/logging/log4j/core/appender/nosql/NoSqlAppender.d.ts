@@ -18,7 +18,7 @@ export class NoSqlAppender extends AbstractDatabaseAppender<NoSqlDatabaseManager
     static createAppender(paramname: string, paramignore: string, paramfilter: Filter, parambufferSize: string, paramprovider: NoSqlProvider<any>): NoSqlAppender;
     static newBuilder<B extends NoSqlAppender$Builder<B>>(): B;
     static parseInt(params: string, paramdefaultValue: number): number;
-    constructor(arg0: string, arg1: Filter, arg2: Layout<Serializable>, arg3: boolean, arg4: Property[], arg5: NoSqlDatabaseManager<Object>, arg6: any)
+    private constructor(name: string, filter: Filter, layout: Layout<Serializable>, ignoreExceptions: boolean, properties: Property[], manager: NoSqlDatabaseManager<Object>)
     // private description: string;
     toString(): string;
 }

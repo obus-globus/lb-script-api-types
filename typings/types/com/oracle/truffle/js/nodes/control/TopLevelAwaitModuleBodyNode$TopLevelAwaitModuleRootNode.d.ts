@@ -1,9 +1,7 @@
-import type { CallTarget } from '../../../../../../com/oracle/truffle/api/CallTarget.d.ts'
 import type { TruffleStackTraceElement } from '../../../../../../com/oracle/truffle/api/TruffleStackTraceElement.d.ts'
 import type { AbstractTruffleException } from '../../../../../../com/oracle/truffle/api/exception/AbstractTruffleException.d.ts'
 import type { Frame } from '../../../../../../com/oracle/truffle/api/frame/Frame.d.ts'
 import type { FrameDescriptor } from '../../../../../../com/oracle/truffle/api/frame/FrameDescriptor.d.ts'
-import type { MaterializedFrame } from '../../../../../../com/oracle/truffle/api/frame/MaterializedFrame.d.ts'
 import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { RootNode } from '../../../../../../com/oracle/truffle/api/nodes/RootNode.d.ts'
 import type { SourceSection } from '../../../../../../com/oracle/truffle/api/source/SourceSection.d.ts'
@@ -25,7 +23,6 @@ export class TopLevelAwaitModuleBodyNode$TopLevelAwaitModuleRootNode extends Abs
     static GENERATOR_OBJECT_OR_PROMISE_CAPABILITY_INDEX: number;
     static MODULE_DUMMY_FRAMEDESCRIPTOR: FrameDescriptor;
     static STACK_TRACE_INDEX: number;
-    static createAsyncContext(paramresumeTarget: CallTarget, paramgeneratorObjectOrPromiseCapability: Object, paramasyncFrame: MaterializedFrame): Object[];
     static createConstantNode(paramconstant: Object): RootNode;
     static findAsynchronousFrames(paramrootNode: JavaScriptRootNode, paramframe: Frame): TruffleStackTraceElement[];
     constructor(context: JSContext, body: JavaScriptNode, asyncResult: JSWriteFrameSlotNode, functionSourceSection: SourceSection, activeScriptOrModule: ScriptOrModule)

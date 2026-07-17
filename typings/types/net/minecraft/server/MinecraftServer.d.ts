@@ -24,7 +24,6 @@ import type { GlobalAttachmentsImpl } from '../../../net/fabricmc/fabric/impl/at
 import type { MinecraftServerHooks } from '../../../net/fabricmc/fabric/impl/event/lifecycle/MinecraftServerHooks.d.ts'
 import type { FabricOriginalKnownPacksGetter } from '../../../net/fabricmc/fabric/impl/resource/pack/FabricOriginalKnownPacksGetter.d.ts'
 import type { CrashReport } from '../../../net/minecraft/CrashReport.d.ts'
-import type { ReportedException } from '../../../net/minecraft/ReportedException.d.ts'
 import type { SystemReport } from '../../../net/minecraft/SystemReport.d.ts'
 import type { CommandSource } from '../../../net/minecraft/commands/CommandSource.d.ts'
 import type { CommandSourceStack } from '../../../net/minecraft/commands/CommandSourceStack.d.ts'
@@ -123,7 +122,6 @@ export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
     static SPAWN_POSITION_SEARCH_RADIUS: number;
     static VANILLA_BRAND: string;
     static configurePackRepository(parampackRepository: PackRepository, paraminitialDataConfig: WorldDataConfiguration, paraminitMode: boolean, paramsafeMode: boolean): WorldDataConfiguration;
-    static createMisplacedChunkReport(paramstoredPos: ChunkPos, paramrequestedPos: ChunkPos): ReportedException;
     static isNonRecoverable(paramt: Throwable): boolean;
     static relayDelayCrash(paramcrashReport: CrashReport): void;
     static spin<S extends MinecraftServer>(paramfactory: (param0: Thread) => S): S;

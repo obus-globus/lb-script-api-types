@@ -1,4 +1,3 @@
-import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { MetadataSectionType } from '../../../../../net/minecraft/server/packs/metadata/MetadataSectionType.d.ts'
@@ -8,9 +7,6 @@ import type { ResourceMetadata } from '../../../../../net/minecraft/server/packs
 export class ResourceMetadata$MapBased extends Object implements ResourceMetadata {
     static EMPTY: ResourceMetadata;
     static EMPTY_SUPPLIER: () => ResourceMetadata;
-    static fromJsonStream(paraminputStream: InputStream): ResourceMetadata;
-    static of<T1 extends unknown, T2 extends unknown>(paramk1: MetadataSectionType<T1>, paramv1: T1, paramk2: MetadataSectionType<T2>, paramv2: T2): ResourceMetadata;
-    static of<T extends unknown>(paramk: MetadataSectionType<T>, paramv: T): ResourceMetadata;
     private constructor(values: Map<MetadataSectionType<Object>, Object | null>)
     // private values: Map<MetadataSectionType<Object>, Object | null>;
     getSection<T extends unknown>(serializer: MetadataSectionType<T>): Optional<T>;

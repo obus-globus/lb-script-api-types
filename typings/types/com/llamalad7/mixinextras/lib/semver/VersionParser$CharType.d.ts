@@ -11,6 +11,6 @@ export class VersionParser$CharType extends Enum<VersionParser$CharType> impleme
     static PLUS: VersionParser$CharType;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static values(): VersionParser$CharType[];
-    constructor(arg2: any)
+    private constructor()
     name(): "DIGIT" | "LETTER" | "DOT" | "HYPHEN" | "PLUS" | "EOI" | "ILLEGAL";
 }

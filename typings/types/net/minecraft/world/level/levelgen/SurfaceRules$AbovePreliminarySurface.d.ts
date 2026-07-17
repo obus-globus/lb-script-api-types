@@ -8,7 +8,6 @@ import type { SurfaceRules$Context } from '../../../../../net/minecraft/world/le
 export class SurfaceRules$AbovePreliminarySurface extends Enum<SurfaceRules$AbovePreliminarySurface> implements SurfaceRules$ConditionSource {
     static CODEC: Codec<SurfaceRules$ConditionSource>;
     static INSTANCE: SurfaceRules$AbovePreliminarySurface;
-    static bootstrap(paramregistry: MapCodec<SurfaceRules$ConditionSource>[]): MapCodec<SurfaceRules$ConditionSource>;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): SurfaceRules$AbovePreliminarySurface;
     static values(): SurfaceRules$AbovePreliminarySurface[];

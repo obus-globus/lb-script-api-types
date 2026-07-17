@@ -10,7 +10,6 @@ import type { FormattedCharSink } from '../../../../../net/minecraft/util/Format
 export class ClientLanguage extends Language implements ClientLanguageAccessor {
     static DEFAULT: string;
     static DEFAULT_INSTANCE: Language;
-    static ep$ClientLanguage(paramarg0: { [key: string]: string }, paramarg1: boolean): ClientLanguage;
     static getInstance(): Language;
     static inject(paramlanguage: Language): void;
     static loadFrom(paramresourceManager: ResourceManager, paramlanguageStack: string[], paramdefaultRightToLeft: boolean): ClientLanguage;

@@ -12,7 +12,6 @@ export class EntityDataTypes1_4_2 extends Enum<EntityDataTypes1_4_2> implements 
     static SHORT: EntityDataTypes1_4_2;
     static STRING: EntityDataTypes1_4_2;
     static byId(paramarg0: number): EntityDataTypes1_4_2;
-    static create(paramarg0: number, paramarg1: Type<Object>): EntityDataType;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): EntityDataTypes1_4_2;
     static values(): EntityDataTypes1_4_2[];

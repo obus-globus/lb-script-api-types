@@ -57,7 +57,6 @@ export abstract class ChunkAccess extends Object implements AttachmentTarget, At
     static NO_FILLED_SECTION: number;
     static getOrCreateOffsetList(paramlist: (Object | null)[][], paramsectionIndex: number): (Object | null)[];
     static problemPath(parampos: ChunkPos): () => string;
-    static transfer(paramarg0: AttachmentTarget, paramarg1: AttachmentTarget, paramarg2: boolean): void;
     constructor(chunkPos: ChunkPos, upgradeData: UpgradeData, levelHeightAccessor: LevelHeightAccessor, containerFactory: PalettedContainerFactory, inhabitedTime: number, sections: LevelChunkSection[], blendingData: BlendingData)
     // private attachedChangedListeners: Map<Object, Object>;
     readonly blendingData: BlendingData;

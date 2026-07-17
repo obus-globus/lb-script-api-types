@@ -9,20 +9,12 @@ import type { Identifier } from '../../../../net/minecraft/resources/Identifier.
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { TagKey } from '../../../../net/minecraft/tags/TagKey.d.ts'
 import type { Item } from '../../../../net/minecraft/world/item/Item.d.ts'
-import type { ItemInstance } from '../../../../net/minecraft/world/item/ItemInstance.d.ts'
 import type { ItemStackTemplate } from '../../../../net/minecraft/world/item/ItemStackTemplate.d.ts'
-import type { CraftingBookCategory } from '../../../../net/minecraft/world/item/crafting/CraftingBookCategory.d.ts'
-import type { CraftingRecipe$CraftingBookInfo } from '../../../../net/minecraft/world/item/crafting/CraftingRecipe$CraftingBookInfo.d.ts'
 import type { Ingredient } from '../../../../net/minecraft/world/item/crafting/Ingredient.d.ts'
 import type { Recipe } from '../../../../net/minecraft/world/item/crafting/Recipe.d.ts'
-import type { Recipe$CommonInfo } from '../../../../net/minecraft/world/item/crafting/Recipe$CommonInfo.d.ts'
 import type { ItemLike } from '../../../../net/minecraft/world/level/ItemLike.d.ts'
 export class ShapedRecipeBuilder extends Object implements RecipeBuilder {
     static ROOT_RECIPE_ADVANCEMENT: Identifier;
-    static createCraftingBookInfo(paramcategory: RecipeCategory, paramgroup: string): CraftingRecipe$CraftingBookInfo;
-    static createCraftingCommonInfo(paramshowNotification: boolean): Recipe$CommonInfo;
-    static determineCraftingBookCategory(paramcategory: RecipeCategory): CraftingBookCategory;
-    static getDefaultRecipeId(paramresult: ItemInstance): ResourceKey<Recipe<any>>;
     static shaped(paramitems: HolderGetter<Item>, paramcategory: RecipeCategory, paramitem: ItemLike): ShapedRecipeBuilder;
     static shaped(paramitems: HolderGetter<Item>, paramcategory: RecipeCategory, paramitem: ItemLike, paramcount: number): ShapedRecipeBuilder;
     private constructor(items: HolderGetter<Item>, category: RecipeCategory, result: ItemStackTemplate)

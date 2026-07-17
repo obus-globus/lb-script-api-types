@@ -3,6 +3,6 @@ import type { ConsoleAppender$FactoryData } from '../../../../../../org/apache/l
 import type { ManagerFactory } from '../../../../../../org/apache/logging/log4j/core/appender/ManagerFactory.d.ts'
 import type { OutputStreamManager } from '../../../../../../org/apache/logging/log4j/core/appender/OutputStreamManager.d.ts'
 export class ConsoleAppender$ConsoleManagerFactory extends Object implements ManagerFactory<OutputStreamManager, ConsoleAppender$FactoryData> {
-    constructor(arg0: any)
+    private constructor()
     createManager(name: string, data: ConsoleAppender$FactoryData): OutputStreamManager;
 }

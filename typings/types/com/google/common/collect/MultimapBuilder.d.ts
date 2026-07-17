@@ -13,7 +13,7 @@ export abstract class MultimapBuilder<K0 extends unknown, V0 extends unknown> ex
     static linkedHashKeys(paramexpectedKeys: number): MultimapBuilder$MultimapBuilderWithKeys<Object>;
     static treeKeys<K0 extends unknown>(paramcomparator: (param0: K0, param1: K0) => number): MultimapBuilder$MultimapBuilderWithKeys<K0>;
     static treeKeys(): MultimapBuilder$MultimapBuilderWithKeys<Comparable<Object>>;
-    constructor(arg0: MultimapBuilder$MultimapBuilderWithKeys<Object>)
+    private constructor()
     build<K extends K0, V extends V0>(): Multimap<K, V>;
     build<K extends K0, V extends V0>(multimap: Multimap<K, V>): Multimap<K, V>;
 }

@@ -7,6 +7,7 @@ export class EmptyList extends Object implements Serializable, RandomAccess {
     static INSTANCE: EmptyList;
     // private serialVersionUID: number;
     readonly size: number;
+    getSize(): number;
     contains(element: void): boolean;
     containsAll(elements: void[]): boolean;
     equals(other: Object | null): boolean;

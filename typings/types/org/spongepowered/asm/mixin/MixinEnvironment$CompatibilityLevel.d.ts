@@ -29,7 +29,7 @@ export class MixinEnvironment$CompatibilityLevel extends Enum<MixinEnvironment$C
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): MixinEnvironment$CompatibilityLevel;
     static values(): MixinEnvironment$CompatibilityLevel[];
-    constructor(arg2: number, arg3: number, arg4: number, arg5: any)
+    private constructor(arg2: number, arg3: number, arg4: number)
     readonly languageFeatures: number;
     // private maxCompatibleLevel: MixinEnvironment$CompatibilityLevel;
     // private ver: number;

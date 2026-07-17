@@ -6,7 +6,6 @@ import type { LevelBasedValue } from '../../../../../../net/minecraft/world/item
 import type { EnchantmentValueEffect } from '../../../../../../net/minecraft/world/item/enchantment/effects/EnchantmentValueEffect.d.ts'
 export class RemoveBinomial extends Record implements EnchantmentValueEffect {
     static CODEC: MapCodec<RemoveBinomial>;
-    static bootstrap(paramregistry: MapCodec<EnchantmentValueEffect>[]): MapCodec<EnchantmentValueEffect>;
     constructor(chance: LevelBasedValue)
     // private chance: LevelBasedValue;
     chance(): LevelBasedValue;

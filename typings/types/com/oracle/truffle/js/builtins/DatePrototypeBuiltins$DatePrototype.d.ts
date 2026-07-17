@@ -54,7 +54,6 @@ export class DatePrototypeBuiltins$DatePrototype extends Enum<DatePrototypeBuilt
     static toTimeString: DatePrototypeBuiltins$DatePrototype;
     static toUTCString: DatePrototypeBuiltins$DatePrototype;
     static valueOf: DatePrototypeBuiltins$DatePrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): DatePrototypeBuiltins$DatePrototype;
     static values(): DatePrototypeBuiltins$DatePrototype[];

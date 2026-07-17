@@ -15,7 +15,6 @@ export class RealmsError$CustomError extends Record implements RealmsError {
     static connectivityError(paramexception: RealmsHttpException): RealmsError$CustomError;
     static htmlPayload(paramstatusCode: number, parampayload: string): RealmsError$CustomError;
     static noPayload(paramstatusCode: number): RealmsError$CustomError;
-    static parse(paramhttpCode: number, parampayload: string): RealmsError;
     static retry(paramstatusCode: number): RealmsError$CustomError;
     static unknownCompatibilityResponse(paramresponse: string): RealmsError$CustomError;
     constructor(httpCode: number, payload: Component)

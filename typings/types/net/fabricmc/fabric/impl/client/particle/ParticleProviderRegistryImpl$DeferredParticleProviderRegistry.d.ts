@@ -6,7 +6,6 @@ import type { ParticleProvider } from '../../../../../../net/minecraft/client/pa
 import type { ParticleOptions } from '../../../../../../net/minecraft/core/particles/ParticleOptions.d.ts'
 import type { ParticleType } from '../../../../../../net/minecraft/core/particles/ParticleType.d.ts'
 export class ParticleProviderRegistryImpl$DeferredParticleProviderRegistry extends Object implements ParticleProviderRegistry {
-    static getInstance(): ParticleProviderRegistry;
     constructor()
     // private constructors: Map<ParticleType<any>, (param0: FabricSpriteSet) => ParticleProvider<ParticleOptions>>;
     // private factories: Map<ParticleType<any>, ParticleProvider<any>>;

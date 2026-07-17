@@ -15,6 +15,7 @@ export class LegitNukerMode extends Mode {
     // private forceImmediateBreak: boolean;
     // private /*not mapped: */ getForceImmediateBreak(): boolean;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     // private range: number;
     // private /*not mapped: */ getRange(): number;
     // private rotations: RotationsValueGroup;

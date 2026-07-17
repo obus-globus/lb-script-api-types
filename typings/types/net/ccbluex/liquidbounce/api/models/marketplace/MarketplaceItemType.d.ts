@@ -1,5 +1,6 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
+import type { Continuation } from '../../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { Tagged } from '../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged.d.ts'
 import type { Tagged$Companion } from '../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
 export class MarketplaceItemType extends Enum<MarketplaceItemType> implements Tagged {
@@ -9,8 +10,6 @@ export class MarketplaceItemType extends Enum<MarketplaceItemType> implements Ta
     static SCRIPT: MarketplaceItemType;
     static THEME: MarketplaceItemType;
     static getEntries(): MarketplaceItemType[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): MarketplaceItemType;
     static values(): MarketplaceItemType[];
@@ -20,6 +19,7 @@ export class MarketplaceItemType extends Enum<MarketplaceItemType> implements Ta
     // private isSubscribable: boolean;
     /*not mapped: */ isSubscribable(): boolean;
     readonly tag: string;
-    reload(): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    reload($completion: Continuation<void>): any;
     name(): "CONFIG" | "SCRIPT" | "THEME" | "OTHER";
 }

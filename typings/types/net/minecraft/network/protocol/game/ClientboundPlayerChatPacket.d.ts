@@ -1,4 +1,3 @@
-import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { UUID } from '../../../../../java/util/UUID.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -9,14 +8,11 @@ import type { FilterMask } from '../../../../../net/minecraft/network/chat/Filte
 import type { MessageSignature } from '../../../../../net/minecraft/network/chat/MessageSignature.d.ts'
 import type { SignedMessageBody$Packed } from '../../../../../net/minecraft/network/chat/SignedMessageBody$Packed.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
-import type { StreamDecoder } from '../../../../../net/minecraft/network/codec/StreamDecoder.d.ts'
-import type { StreamMemberEncoder } from '../../../../../net/minecraft/network/codec/StreamMemberEncoder.d.ts'
 import type { Packet } from '../../../../../net/minecraft/network/protocol/Packet.d.ts'
 import type { PacketType } from '../../../../../net/minecraft/network/protocol/PacketType.d.ts'
 import type { ClientGamePacketListener } from '../../../../../net/minecraft/network/protocol/game/ClientGamePacketListener.d.ts'
 export class ClientboundPlayerChatPacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundPlayerChatPacket>;
-    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(globalIndex: number, sender: UUID, index: number, signature: MessageSignature, body: SignedMessageBody$Packed, unsignedContent: Component, filterMask: FilterMask, chatType: ChatType$Bound)
     // private body: SignedMessageBody$Packed;
     // private chatType: ChatType$Bound;

@@ -9,7 +9,7 @@ import type { SocketAddress } from '../../../../java/net/SocketAddress.d.ts'
 import type { ClosedChannelException } from '../../../../java/nio/channels/ClosedChannelException.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 export class LocalChannel$LocalUnsafe extends AbstractChannel$AbstractUnsafe implements LocalIoHandle {
-    constructor(null_: LocalChannel, arg1: () => void)
+    private constructor(null_: LocalChannel)
     // private shutdownHook: () => void;
     close(): void;
     close(arg0: ChannelPromise): void;

@@ -17,5 +17,6 @@ export class LiquidWalkVulcan291 extends Mode {
     // private motion: number;
     // private /*not mapped: */ getMotion(): number;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     // private tickHandler: EventHook<GameTickEvent>;
 }

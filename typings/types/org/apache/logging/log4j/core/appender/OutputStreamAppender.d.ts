@@ -16,5 +16,5 @@ export class OutputStreamAppender extends AbstractOutputStreamAppender<OutputStr
     static createAppender(paramlayout: Layout<Serializable>, paramfilter: Filter, paramtarget: OutputStream, paramname: string, paramfollow: boolean, paramignore: boolean): OutputStreamAppender;
     static newBuilder<B extends OutputStreamAppender$Builder<B>>(): B;
     static parseInt(params: string, paramdefaultValue: number): number;
-    constructor(arg0: string, arg1: Layout<Serializable>, arg2: Filter, arg3: OutputStreamManager, arg4: boolean, arg5: Property[], arg6: any)
+    private constructor(name: string, layout: Layout<Serializable>, filter: Filter, manager: OutputStreamManager, ignoreExceptions: boolean, properties: Property[])
 }

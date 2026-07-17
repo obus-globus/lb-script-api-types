@@ -20,8 +20,6 @@ export class HudComponentTweak extends Enum<HudComponentTweak> implements Tagged
     static DISABLE_SUBTITLE_OVERLAY: HudComponentTweak;
     static TWEAK_HOTBAR: HudComponentTweak;
     static getEntries(): HudComponentTweak[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): HudComponentTweak;
     static values(): HudComponentTweak[];

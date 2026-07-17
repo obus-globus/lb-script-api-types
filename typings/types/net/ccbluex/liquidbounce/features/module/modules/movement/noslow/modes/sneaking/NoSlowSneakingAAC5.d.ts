@@ -9,6 +9,7 @@ export class NoSlowSneakingAAC5 extends Mode {
     constructor(parent: ModeValueGroup<any>)
     // private networkTickHandler: EventHook<PlayerNetworkMovementTickEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private timingMode: NoSlowSneakingAAC5$TimingMode;
     // private /*not mapped: */ getTimingMode(): NoSlowSneakingAAC5$TimingMode;
     enable(): void;

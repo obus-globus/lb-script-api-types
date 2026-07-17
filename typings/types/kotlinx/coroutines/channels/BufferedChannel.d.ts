@@ -1,6 +1,7 @@
 import type { CancellationException } from '../../../java/util/concurrent/CancellationException.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
+import type { Continuation } from '../../../kotlin/coroutines/Continuation.d.ts'
 import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { AtomicRef } from '../../../kotlinx/atomicfu/AtomicRef.d.ts'
 import type { CancellableContinuation } from '../../../kotlinx/coroutines/CancellableContinuation.d.ts'
@@ -23,7 +24,7 @@ export class BufferedChannel<E extends unknown> extends Object implements Channe
     // private bufferOrRendezvousSend(curSenders: number): boolean;
     cancel(): void;
     cancel(cause: Throwable | null): boolean;
-    cancel(cause: CancellationException | null): void;
+    cancel(cause?: CancellationException | null): void;
     cancelImpl(cause: Throwable | null): boolean;
     // private cancelSuspendedReceiveRequests(lastSegment: ChannelSegment<E>, sendersCounter: number): void;
     checkSegmentStructureInvariants(): void;
@@ -57,7 +58,8 @@ export class BufferedChannel<E extends unknown> extends Object implements Channe
     // private onClosedReceiveOnNoWaiterSuspend(cont: CancellableContinuation<E>): void;
     // private onClosedSelectOnReceive(select: SelectInstance<Object>): void;
     // private onClosedSelectOnSend(element: E, select: SelectInstance<Object>): void;
-    // private onClosedSend(element: E): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private onClosedSend(element: E, $completion: Continuation<void>): any;
     // private onClosedSendOnNoWaiterSuspend(element: E, cont: CancellableContinuation<void>): void;
     protected onReceiveDequeued(): void;
     protected onReceiveEnqueued(): void;
@@ -65,20 +67,27 @@ export class BufferedChannel<E extends unknown> extends Object implements Channe
     // private processResultSelectReceiveCatching(ignoredParam: Object | null, selectResult: Object | null): Object | null;
     // private processResultSelectReceiveOrNull(ignoredParam: Object | null, selectResult: Object | null): Object | null;
     // private processResultSelectSend(ignoredParam: Object | null, selectResult: Object | null): Object | null;
-    receive(): E;
-    receiveCatching(): ChannelResult<E>;
-    // private receiveCatchingOnNoWaiterSuspend(segment: ChannelSegment<E>, index: number, r: number): ChannelResult<E>;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    receive($completion: Continuation<E>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    receiveCatching($completion: Continuation<ChannelResult<E>>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private receiveCatchingOnNoWaiterSuspend(segment: ChannelSegment<E>, index: number, r: number, $completion: Continuation<ChannelResult<E>>): any;
     // private receiveImpl<R extends unknown>(waiter: Object | null, onElementRetrieved: (param0: E) => R, onSuspend: (param0: ChannelSegment<E>, param1: number, param2: number) => R, onClosed: () => R, onNoWaiterSuspend: (param0: ChannelSegment<E>, param1: number, param2: number) => R): R;
     // private receiveImplOnNoWaiter(segment: ChannelSegment<E>, index: number, r: number, waiter: Waiter, onElementRetrieved: (param0: E) => void, onClosed: () => void): void;
-    // private receiveOnNoWaiterSuspend(segment: ChannelSegment<E>, index: number, r: number): E;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private receiveOnNoWaiterSuspend(segment: ChannelSegment<E>, index: number, r: number, $completion: Continuation<E>): any;
     // private registerSelectForReceive(select: SelectInstance<Object>, ignoredParam: Object | null): void;
     protected registerSelectForSend(select: SelectInstance<Object>, element: Object | null): void;
     // private removeUnprocessedElements(lastSegment: ChannelSegment<E>): void;
-    send(element: E): void;
-    sendBroadcast(element: E): boolean;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    send(element: E, $completion: Continuation<void>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    sendBroadcast(element: E, $completion: Continuation<boolean>): any;
     protected sendImpl<R extends unknown>(element: E, waiter: Object | null, onRendezvousOrBuffered: () => R, onSuspend: (param0: ChannelSegment<E>, param1: number) => R, onClosed: () => R, onNoWaiterSuspend: (param0: ChannelSegment<E>, param1: number, param2: E, param3: number) => R): R;
     // private sendImplOnNoWaiter(segment: ChannelSegment<E>, index: number, element: E, s: number, waiter: Waiter, onRendezvousOrBuffered: () => void, onClosed: () => void): void;
-    // private sendOnNoWaiterSuspend(segment: ChannelSegment<E>, index: number, element: E, s: number): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private sendOnNoWaiterSuspend(segment: ChannelSegment<E>, index: number, element: E, s: number, $completion: Continuation<void>): any;
     shouldSendSuspend(): boolean;
     // private shouldSendSuspend(curSendersAndCloseStatus: number): boolean;
     toString(): string;

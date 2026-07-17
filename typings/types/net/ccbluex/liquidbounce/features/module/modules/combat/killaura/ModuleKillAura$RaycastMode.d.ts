@@ -8,8 +8,6 @@ export class ModuleKillAura$RaycastMode extends Enum<ModuleKillAura$RaycastMode>
     static TRACE_NONE: ModuleKillAura$RaycastMode;
     static TRACE_ONLYENEMY: ModuleKillAura$RaycastMode;
     static getEntries(): ModuleKillAura$RaycastMode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleKillAura$RaycastMode;
     static values(): ModuleKillAura$RaycastMode[];

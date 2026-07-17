@@ -6,7 +6,7 @@ export class Pointer$Opaque extends Pointer {
     static createConstant(paramarg0: number): Pointer;
     static nativeValue(paramarg0: Pointer): number;
     static nativeValue(paramarg0: Pointer, paramarg1: number): void;
-    constructor(arg0: number, arg1: any)
+    private constructor(arg0: number)
     // private MSG: string;
     clear(arg0: number): void;
     dump(arg0: number, arg1: number): string;

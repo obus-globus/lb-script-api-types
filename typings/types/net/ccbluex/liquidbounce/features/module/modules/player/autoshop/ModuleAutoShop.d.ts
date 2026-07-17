@@ -1,4 +1,5 @@
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
+import type { Continuation } from '../../../../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { Mode } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/group/Mode.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { EventHook } from '../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
@@ -34,16 +35,20 @@ export class ModuleAutoShop extends ClientModule {
     // private /*not mapped: */ getStartDelay(): { start: number; endInclusive: number; step: number };
     // private startMilliseconds: number;
     // private waitedBeforeTheFirstClick: boolean;
-    // private buyAllItemsInCategory(remainingElements: ShopElement[]): void;
-    // private buyItem(itemSlot: number, shopElement: ShopElement): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private buyAllItemsInCategory(remainingElements: ShopElement[], $completion: Continuation<void>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private buyItem(itemSlot: number, shopElement: ShopElement, $completion: Continuation<void>): any;
     // private checkElement(shopElement: ShopElement, remainingElements: ShopElement[] | null, items: { [key: string]: any }): { [key: string]: any } | null;
     // private checkPrice(price: ItemInfo, items: { [key: string]: any }): boolean;
-    // private doClicks(remainingElements: ShopElement[]): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private doClicks(remainingElements: ShopElement[], $completion: Continuation<void>): any;
     // private getRequiredClicks(shopElement: ShopElement, items: { [key: string]: any }, requiredLimitedItems: { [key: string]: any }): number;
     // private hasItemCategoryChanged(prevShopStacks: string[]): boolean;
     // private hasReceivedItems(prevInventory: { [key: string]: any }, expectedItems: { [key: string]: any }): boolean;
     // private isShopOpen(): boolean;
     // private reset(): void;
     // private simulateNextPurchases(remainingElements: ShopElement[], onlySameCategory: boolean): ModuleAutoShop$PurchaseSimulationResult;
-    // private switchCategory(nextCategorySlot: number): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private switchCategory(nextCategorySlot: number, $completion: Continuation<void>): any;
 }

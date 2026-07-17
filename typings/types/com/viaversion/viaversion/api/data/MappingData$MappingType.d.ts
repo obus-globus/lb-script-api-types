@@ -7,7 +7,6 @@ export class MappingData$MappingType extends Enum<MappingData$MappingType> imple
     static ENTITY_TYPE: MappingData$MappingType;
     static ITEM: MappingData$MappingType;
     static SOUND: MappingData$MappingType;
-    static of(paramarg0: string): RegistryKey;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): MappingData$MappingType;
     static values(): MappingData$MappingType[];

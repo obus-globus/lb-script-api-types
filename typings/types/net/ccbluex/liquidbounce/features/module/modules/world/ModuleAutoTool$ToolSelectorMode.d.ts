@@ -7,6 +7,7 @@ export class ModuleAutoTool$ToolSelectorMode extends Mode {
     static Companion: Tagged$Companion;
     protected constructor(name: string)
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     getTool(blockState: BlockState): HotbarItemSlot | null;
     protected getToolSlot(blockState: BlockState): HotbarItemSlot | null;
 }

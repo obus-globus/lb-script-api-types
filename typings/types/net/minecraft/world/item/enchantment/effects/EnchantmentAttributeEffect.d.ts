@@ -19,7 +19,6 @@ import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class EnchantmentAttributeEffect extends Record implements EnchantmentLocationBasedEffect {
     static CODEC: Codec<EnchantmentLocationBasedEffect>;
     static MAP_CODEC: MapCodec<EnchantmentAttributeEffect>;
-    static bootstrap(paramregistry: MapCodec<EnchantmentLocationBasedEffect>[]): MapCodec<EnchantmentLocationBasedEffect>;
     constructor(id: Identifier, attribute: Holder<Attribute>, amount: LevelBasedValue, operation: AttributeModifier$Operation)
     // private amount: LevelBasedValue;
     // private attribute: Holder<Attribute>;

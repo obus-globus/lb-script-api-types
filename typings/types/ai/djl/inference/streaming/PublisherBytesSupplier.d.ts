@@ -5,9 +5,6 @@ import type { CountDownLatch } from '../../../../java/util/concurrent/CountDownL
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class PublisherBytesSupplier extends Object implements BytesSupplier {
-    static wrap(paramarg0: number[]): BytesSupplier;
-    static wrap(paramarg0: string): BytesSupplier;
-    static wrapAsJson(paramarg0: Object): BytesSupplier;
     constructor()
     // private future: CompletableFuture<void>;
     // private latch: CountDownLatch;

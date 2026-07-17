@@ -6,7 +6,7 @@ import type { AbstractStringLayout$Serializer } from '../../../../../../org/apac
 import type { PatternLayout$PatternSerializer } from '../../../../../../org/apache/logging/log4j/core/layout/PatternLayout$PatternSerializer.d.ts'
 import type { RegexReplacement } from '../../../../../../org/apache/logging/log4j/core/pattern/RegexReplacement.d.ts'
 export class PatternLayout$PatternSerializerWithReplacement extends Object implements LocationAware, AbstractStringLayout$Serializer {
-    constructor(arg0: PatternLayout$PatternSerializer, arg1: RegexReplacement, arg2: any)
+    private constructor(delegate: PatternLayout$PatternSerializer, replace: RegexReplacement)
     // private delegate: PatternLayout$PatternSerializer;
     // private replace: RegexReplacement;
     requiresLocation(): boolean;

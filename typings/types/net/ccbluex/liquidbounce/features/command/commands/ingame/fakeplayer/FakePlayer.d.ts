@@ -133,12 +133,14 @@ export class FakePlayer extends RemotePlayer implements MinecraftShortcuts {
     static getViewScale(): number;
     static resetForwardDirectionOfRelativePortalPosition(paramoffsets: Vec3): Vec3;
     static setViewScale(paramviewScale: number): void;
-    constructor(level: ClientLevel, gameProfile: GameProfile, onRemoval: ((param0: FakePlayer) => void) | null)
+    constructor(level: ClientLevel, gameProfile: GameProfile, onRemoval?: ((param0: FakePlayer) => void) | null)
     readonly gpuDevice: GpuDevice;
     readonly interaction: MultiPlayerGameMode;
     readonly mc: Minecraft;
     readonly network: ClientPacketListener;
     onRemoval: ((param0: FakePlayer) => void) | null;
+    getOnRemoval(): ((param0: FakePlayer) => void) | null;
+    setOnRemoval(value: ((param0: FakePlayer) => void) | null): void;
     readonly player: LocalPlayer;
     readonly world: ClientLevel;
     /**

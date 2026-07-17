@@ -124,7 +124,7 @@ export class MovingFakePlayer extends FakePlayer {
     static getViewScale(): number;
     static resetForwardDirectionOfRelativePortalPosition(paramoffsets: Vec3): Vec3;
     static setViewScale(paramviewScale: number): void;
-    constructor(snapshots: PosPoseSnapshot[], level: ClientLevel, gameProfile: GameProfile, onRemoval: ((param0: FakePlayer) => void) | null)
+    constructor(snapshots: PosPoseSnapshot[], level: ClientLevel, gameProfile: GameProfile, onRemoval?: ((param0: FakePlayer) => void) | null)
     // private index: number;
     // private snapshots: PosPoseSnapshot[];
     tick(): void;

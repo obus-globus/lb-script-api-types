@@ -7,8 +7,6 @@ export class ModuleChestStealer$ItemMoveMode extends Enum<ModuleChestStealer$Ite
     static DRAG_AND_DROP: ModuleChestStealer$ItemMoveMode;
     static QUICK_MOVE: ModuleChestStealer$ItemMoveMode;
     static getEntries(): ModuleChestStealer$ItemMoveMode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleChestStealer$ItemMoveMode;
     static values(): ModuleChestStealer$ItemMoveMode[];

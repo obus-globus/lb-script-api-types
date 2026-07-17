@@ -14,7 +14,6 @@ import type { BlockStateProvider } from '../../../../../../net/minecraft/world/l
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class ReplaceBlock extends Record implements EnchantmentEntityEffect {
     static CODEC: MapCodec<ReplaceBlock>;
-    static bootstrap(paramregistry: MapCodec<EnchantmentEntityEffect>[]): MapCodec<EnchantmentEntityEffect>;
     constructor(offset: Vec3i, predicate: Optional<BlockPredicate>, blockState: BlockStateProvider, triggerGameEvent: Optional<Holder<GameEvent>>)
     // private blockState: BlockStateProvider;
     // private offset: Vec3i;

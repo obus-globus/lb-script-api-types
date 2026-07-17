@@ -5,7 +5,7 @@ import type { IClientCredential } from '../../../../com/microsoft/aad/msal4j/ICl
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ClientCredentialParameters extends Object implements IAcquireTokenParameters {
     static builder(paramarg0: string[]): ClientCredentialParameters$ClientCredentialParametersBuilder;
-    constructor(arg0: (Object | null)[], arg1: boolean, arg2: ClaimsRequest, arg3: Map<Object | null, Object | null>, arg4: Map<Object | null, Object | null>, arg5: string, arg6: IClientCredential, arg7: any)
+    private constructor(arg0: string[], arg1: boolean, arg2: ClaimsRequest, arg3: { [key: string]: string }, arg4: { [key: string]: string }, arg5: string, arg6: IClientCredential)
     // private claims: ClaimsRequest;
     // private clientCredential: IClientCredential;
     // private extraHttpHeaders: { [key: string]: string };

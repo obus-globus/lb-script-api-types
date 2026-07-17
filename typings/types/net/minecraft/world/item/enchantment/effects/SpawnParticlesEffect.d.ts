@@ -12,7 +12,6 @@ import type { SpawnParticlesEffect$VelocitySource } from '../../../../../../net/
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class SpawnParticlesEffect extends Record implements EnchantmentEntityEffect {
     static CODEC: MapCodec<SpawnParticlesEffect>;
-    static bootstrap(paramregistry: MapCodec<EnchantmentEntityEffect>[]): MapCodec<EnchantmentEntityEffect>;
     static fixedVelocity(paramprovider: FloatProvider): SpawnParticlesEffect$VelocitySource;
     static inBoundingBox(): SpawnParticlesEffect$PositionSource;
     static movementScaled(paramscale: number): SpawnParticlesEffect$VelocitySource;

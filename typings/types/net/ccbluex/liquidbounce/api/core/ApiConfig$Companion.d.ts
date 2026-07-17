@@ -1,4 +1,5 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Continuation } from '../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { ApiConfig } from '../../../../../net/ccbluex/liquidbounce/api/core/ApiConfig.d.ts'
 export class ApiConfig$Companion extends Object {
     API_BRANCH: string;
@@ -17,5 +18,6 @@ export class ApiConfig$Companion extends Object {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/api/core/ApiConfig.kt#L72 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/ApiConfig.kt:72}
      */
     readonly config: ApiConfig;
-    lookup(): ApiConfig;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    lookup($completion: Continuation<ApiConfig>): any;
 }

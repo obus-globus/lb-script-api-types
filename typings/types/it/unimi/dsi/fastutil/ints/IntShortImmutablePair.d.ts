@@ -1,11 +1,8 @@
 import type { IntShortPair } from '../../../../../it/unimi/dsi/fastutil/ints/IntShortPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
-import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class IntShortImmutablePair extends Object implements IntShortPair, Serializable {
-    static lexComparator(): (param0: IntShortPair, param1: IntShortPair) => number;
     static of(paramarg0: number, paramarg1: number): IntShortImmutablePair;
-    static of(paramarg0: number, paramarg1: number): IntShortPair;
     constructor(arg0: number, arg1: number)
     // private left: number;
     // private right: number;

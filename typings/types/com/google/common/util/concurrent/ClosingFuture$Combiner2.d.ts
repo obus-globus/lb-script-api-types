@@ -6,11 +6,10 @@ import type { ClosingFuture$Combiner2$AsyncClosingFunction2 } from '../../../../
 import type { ClosingFuture$Combiner2$ClosingFunction2 } from '../../../../../com/google/common/util/concurrent/ClosingFuture$Combiner2$ClosingFunction2.d.ts'
 import type { ClosingFuture$DeferredCloser } from '../../../../../com/google/common/util/concurrent/ClosingFuture$DeferredCloser.d.ts'
 import type { ClosingFuture$Peeker } from '../../../../../com/google/common/util/concurrent/ClosingFuture$Peeker.d.ts'
-import type { Callable } from '../../../../../java/util/concurrent/Callable.d.ts'
 import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ClosingFuture$Combiner2<V1 extends unknown, V2 extends unknown> extends ClosingFuture$Combiner {
-    constructor(arg0: ClosingFuture<Object>, arg1: ClosingFuture<Object>, arg2: () => V)
+    private constructor(future1: ClosingFuture<V1>, future2: ClosingFuture<V2>)
     // private future1: ClosingFuture<V1>;
     // private future2: ClosingFuture<V2>;
     call<V extends unknown>(combiningCallable: (param0: ClosingFuture$DeferredCloser, param1: ClosingFuture$Peeker) => V, executor: Executor): ClosingFuture<V>;

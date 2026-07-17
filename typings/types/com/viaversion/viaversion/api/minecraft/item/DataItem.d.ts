@@ -4,7 +4,6 @@ import type { Item } from '../../../../../../com/viaversion/viaversion/api/minec
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class DataItem extends Object implements Item {
-    static isEmpty(paramarg0: Item): boolean;
     constructor()
     constructor(arg0: number, arg1: number, arg2: Map$Entry<string, Tag>[])
     constructor(arg0: number, arg1: number, arg2: number, arg3: Map$Entry<string, Tag>[])

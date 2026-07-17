@@ -1,3 +1,4 @@
+import type { Continuation } from '../../../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { Regex } from '../../../../../../../kotlin/text/Regex.d.ts'
 import type { Event } from '../../../../../../../net/ccbluex/liquidbounce/event/Event.d.ts'
 import type { ClientModule } from '../../../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
@@ -29,7 +30,8 @@ export class ModuleAutoAccount extends ClientModule {
     // private /*not mapped: */ getRegisterRegex(): Regex;
     readonly running: boolean;
     // private sending: boolean;
-    // private action(operation: () => void): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private action(operation: () => void, $completion: Continuation<void>): any;
     // private createMessageHandler<T extends Event>(messageSource: ModuleAutoAccount$MessageSource, textProvider: (param0: T) => string | null): void;
     login(): void;
     onDisabled(): void;

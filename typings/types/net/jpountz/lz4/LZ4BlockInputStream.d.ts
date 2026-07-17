@@ -12,7 +12,6 @@ export class LZ4BlockInputStream extends FilterInputStream {
     constructor(arg0: InputStream, arg1: LZ4FastDecompressor)
     constructor(arg0: InputStream, arg1: LZ4FastDecompressor, arg2: Checksum)
     constructor(arg0: InputStream, arg1: LZ4FastDecompressor, arg2: Checksum, arg3: boolean)
-    constructor(arg0: InputStream, arg1: LZ4FastDecompressor, arg2: LZ4SafeDecompressor, arg3: Checksum, arg4: boolean, arg5: any)
     // private buffer: number[];
     // private checksum: Checksum;
     // private compressedBuffer: number[];

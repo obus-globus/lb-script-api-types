@@ -21,6 +21,7 @@ export class FlyHypixelFlat extends Mode {
     // private isFlying: boolean;
     // private packetHandler: EventHook<PacketEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private speedHandler: EventHook<GameTickEvent>;
     // private timer: number;
     // private /*not mapped: */ getTimer(): number;

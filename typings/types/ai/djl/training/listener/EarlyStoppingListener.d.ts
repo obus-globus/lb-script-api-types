@@ -6,7 +6,7 @@ import type { TrainingListener$BatchData } from '../../../../ai/djl/training/lis
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class EarlyStoppingListener extends Object implements TrainingListener {
     static builder(): EarlyStoppingListener$Builder;
-    constructor(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: string, arg6: any)
+    private constructor(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: string)
     // private earlyStopPctImprovement: number;
     // private epochPatience: number;
     // private maxMillis: number;

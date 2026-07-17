@@ -5,5 +5,6 @@ export class ModuleFastExp$ThrowMode extends Mode {
     static Companion: Tagged$Companion;
     protected constructor(name: string)
     readonly parent: ModeValueGroup<ModuleFastExp$ThrowMode>;
+    getParent(): ModeValueGroup<ModuleFastExp$ThrowMode>;
     nextTickItems(): number;
 }

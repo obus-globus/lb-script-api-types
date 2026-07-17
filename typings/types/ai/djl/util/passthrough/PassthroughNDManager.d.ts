@@ -19,12 +19,6 @@ import type { Number } from '../../../../java/lang/Number.d.ts'
 export class PassthroughNDManager extends Object implements NDManager {
     static INSTANCE: PassthroughNDManager;
     static UID_GENERATOR: AtomicLong;
-    static newBaseManager(): NDManager;
-    static newBaseManager(paramarg0: Device): NDManager;
-    static newBaseManager(paramarg0: Device, paramarg1: string): NDManager;
-    static newBaseManager(paramarg0: string): NDManager;
-    static nextUid(): string;
-    static subManagerOf(paramarg0: NDResource): NDManager;
     constructor(arg0: Engine, arg1: Device)
     readonly device: Device;
     readonly engine: Engine;

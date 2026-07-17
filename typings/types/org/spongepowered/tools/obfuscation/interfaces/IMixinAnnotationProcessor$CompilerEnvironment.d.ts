@@ -9,7 +9,7 @@ export class IMixinAnnotationProcessor$CompilerEnvironment extends Enum<IMixinAn
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): IMixinAnnotationProcessor$CompilerEnvironment;
     static values(): IMixinAnnotationProcessor$CompilerEnvironment[];
-    constructor(arg2: boolean, arg3: string, arg4: any)
+    private constructor(arg2: boolean, arg3: string)
     readonly friendlyName: string;
     // private isDevelopmentEnvironment: boolean;
     getFriendlyName(): string;

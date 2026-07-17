@@ -9,7 +9,6 @@ import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class BooleanPrototypeBuiltins$BooleanPrototype extends Enum<BooleanPrototypeBuiltins$BooleanPrototype> implements BuiltinEnum<BooleanPrototypeBuiltins$BooleanPrototype> {
     static toString: BooleanPrototypeBuiltins$BooleanPrototype;
     static valueOf: BooleanPrototypeBuiltins$BooleanPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): BooleanPrototypeBuiltins$BooleanPrototype;
     static values(): BooleanPrototypeBuiltins$BooleanPrototype[];

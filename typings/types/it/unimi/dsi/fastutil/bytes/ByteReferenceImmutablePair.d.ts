@@ -4,7 +4,6 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ByteReferenceImmutablePair<V extends unknown> extends Object implements ByteReferencePair<V>, Serializable {
     static of<V extends unknown>(paramarg0: number, paramarg1: V): ByteReferenceImmutablePair<V>;
-    static of<V extends unknown>(paramarg0: number, paramarg1: V): ByteReferencePair<V>;
     constructor(arg0: number, arg1: V)
     // private left: number;
     // private right: V;

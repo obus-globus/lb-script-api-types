@@ -15,5 +15,5 @@ export class WriterAppender extends AbstractWriterAppender<WriterManager> {
     static createAppender(paramlayout: StringLayout, paramfilter: Filter, paramtarget: Writer, paramname: string, paramfollow: boolean, paramignore: boolean): WriterAppender;
     static newBuilder<B extends WriterAppender$Builder<B>>(): B;
     static parseInt(params: string, paramdefaultValue: number): number;
-    constructor(arg0: string, arg1: StringLayout, arg2: Filter, arg3: WriterManager, arg4: boolean, arg5: Property[], arg6: any)
+    private constructor(name: string, layout: StringLayout, filter: Filter, manager: WriterManager, ignoreExceptions: boolean, properties: Property[])
 }

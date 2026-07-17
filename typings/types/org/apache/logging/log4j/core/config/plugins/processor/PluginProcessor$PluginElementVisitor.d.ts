@@ -4,7 +4,7 @@ import type { SimpleElementVisitor7 } from '../../../../../../../../javax/lang/m
 import type { Plugin } from '../../../../../../../../org/apache/logging/log4j/core/config/plugins/Plugin.d.ts'
 import type { PluginEntry } from '../../../../../../../../org/apache/logging/log4j/core/config/plugins/processor/PluginEntry.d.ts'
 export class PluginProcessor$PluginElementVisitor extends SimpleElementVisitor7<PluginEntry, Plugin> {
-    constructor(arg0: Elements, arg1: any)
+    private constructor(elements: Elements)
     // private elements: Elements;
     visitType(e: TypeElement, plugin: Plugin): PluginEntry;
 }

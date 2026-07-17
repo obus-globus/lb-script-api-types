@@ -1,7 +1,7 @@
 import type { LinearTransformation } from '../../../../com/google/common/math/LinearTransformation.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class LinearTransformation$LinearTransformationBuilder extends Object {
-    constructor(arg0: number, arg1: number, arg2: any)
+    private constructor(x1: number, y1: number)
     // private x1: number;
     // private y1: number;
     and(x2: number, y2: number): LinearTransformation;

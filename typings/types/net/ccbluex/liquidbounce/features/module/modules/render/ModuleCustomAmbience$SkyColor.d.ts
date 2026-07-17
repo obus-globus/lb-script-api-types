@@ -3,4 +3,5 @@ import type { Color4b } from '../../../../../../../net/ccbluex/liquidbounce/rend
 export class ModuleCustomAmbience$SkyColor extends ToggleableValueGroup {
     static INSTANCE: ModuleCustomAmbience$SkyColor;
     readonly color: Color4b;
+    getColor(): Color4b;
 }

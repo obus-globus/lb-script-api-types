@@ -8,7 +8,6 @@ import type { Quaternionfc } from '../../../../../../../org/joml/Quaternionfc.d.
 import type { Vector3fc } from '../../../../../../../org/joml/Vector3fc.d.ts'
 export class GuiEntityRenderState extends Record implements PictureInPictureRenderState {
     static IDENTITY_POSE: Matrix3x2fc;
-    static getBounds(paramx0: number, paramy0: number, paramx1: number, paramy1: number, paramscissorArea: ScreenRectangle): ScreenRectangle;
     constructor(renderState: EntityRenderState, translation: Vector3fc, rotation: Quaternionfc, overrideCameraAngle: Quaternionfc, x0: number, y0: number, x1: number, y1: number, scale: number, scissorArea: ScreenRectangle)
     constructor(renderState: EntityRenderState, translation: Vector3fc, rotation: Quaternionfc, overrideCameraAngle: Quaternionfc, x0: number, y0: number, x1: number, y1: number, scale: number, scissorArea: ScreenRectangle, bounds: ScreenRectangle)
     // private bounds: ScreenRectangle;

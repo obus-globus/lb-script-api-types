@@ -6,7 +6,8 @@ import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class Joiner extends Object {
     static on(paramseparator: string): Joiner;
-    constructor(arg0: Joiner, arg1: Joiner)
+    private constructor(prototype: Joiner)
+    private constructor(separator: string)
     // private separator: string;
     appendTo<A extends Appendable>(appendable: A, first: Object, second: Object, ...rest: Object[]): A;
     appendTo<A extends Appendable>(appendable: A, parts: Object[]): A;

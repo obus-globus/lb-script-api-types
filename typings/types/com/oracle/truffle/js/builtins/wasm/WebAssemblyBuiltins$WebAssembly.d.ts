@@ -11,7 +11,6 @@ export class WebAssemblyBuiltins$WebAssembly extends Enum<WebAssemblyBuiltins$We
     static compile: WebAssemblyBuiltins$WebAssembly;
     static instantiate: WebAssemblyBuiltins$WebAssembly;
     static validate: WebAssemblyBuiltins$WebAssembly;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): WebAssemblyBuiltins$WebAssembly;
     static values(): WebAssemblyBuiltins$WebAssembly[];

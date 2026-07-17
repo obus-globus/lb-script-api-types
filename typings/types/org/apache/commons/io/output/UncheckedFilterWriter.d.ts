@@ -5,7 +5,7 @@ import type { UncheckedFilterWriter$Builder } from '../../../../../org/apache/co
 export class UncheckedFilterWriter extends FilterWriter {
     static builder(): UncheckedFilterWriter$Builder;
     static nullWriter(): Writer;
-    constructor(arg0: UncheckedFilterWriter$Builder, arg1: any)
+    private constructor(arg0: UncheckedFilterWriter$Builder)
     append(arg0: string): Writer;
     append(arg0: CharSequence): Writer;
     append(arg0: CharSequence, arg1: number, arg2: number): Writer;

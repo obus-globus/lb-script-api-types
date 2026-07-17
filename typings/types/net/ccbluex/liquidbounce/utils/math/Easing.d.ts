@@ -17,8 +17,6 @@ export class Easing extends Enum<Easing> implements Tagged {
     static QUAD_IN_OUT: Easing;
     static QUAD_OUT: Easing;
     static getEntries(): Easing[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): Easing;
     static values(): Easing[];

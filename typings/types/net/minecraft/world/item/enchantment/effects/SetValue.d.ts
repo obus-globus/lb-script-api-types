@@ -6,7 +6,6 @@ import type { LevelBasedValue } from '../../../../../../net/minecraft/world/item
 import type { EnchantmentValueEffect } from '../../../../../../net/minecraft/world/item/enchantment/effects/EnchantmentValueEffect.d.ts'
 export class SetValue extends Record implements EnchantmentValueEffect {
     static CODEC: MapCodec<SetValue>;
-    static bootstrap(paramregistry: MapCodec<EnchantmentValueEffect>[]): MapCodec<EnchantmentValueEffect>;
     constructor(value: LevelBasedValue)
     // private value: LevelBasedValue;
     codec(): MapCodec<SetValue>;

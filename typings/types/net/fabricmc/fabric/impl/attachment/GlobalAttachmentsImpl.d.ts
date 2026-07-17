@@ -1,6 +1,5 @@
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { AttachmentTarget } from '../../../../../net/fabricmc/fabric/api/attachment/v1/AttachmentTarget.d.ts'
 import type { AttachmentType } from '../../../../../net/fabricmc/fabric/api/attachment/v1/AttachmentType.d.ts'
 import type { GlobalAttachments } from '../../../../../net/fabricmc/fabric/api/attachment/v1/GlobalAttachments.d.ts'
 import type { Event } from '../../../../../net/fabricmc/fabric/api/event/Event.d.ts'
@@ -14,7 +13,6 @@ import type { ValueInput } from '../../../../../net/minecraft/world/level/storag
 import type { ValueOutput } from '../../../../../net/minecraft/world/level/storage/ValueOutput.d.ts'
 export class GlobalAttachmentsImpl extends Object implements GlobalAttachments, AttachmentTargetImpl {
     static NBT_ATTACHMENT_KEY: string;
-    static transfer(paramarg0: AttachmentTarget, paramarg1: AttachmentTarget, paramarg2: boolean): void;
     constructor(arg0: MinecraftServer)
     // private attachedChangedListeners: Map<Object, Object>;
     // private dataAttachments: Map<Object, Object>;

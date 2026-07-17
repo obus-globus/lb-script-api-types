@@ -8,6 +8,7 @@ import type { Sink } from '../okio/Sink.d.ts'
 import type { Source } from '../okio/Source.d.ts'
 import type { Timeout } from '../okio/Timeout.d.ts'
 export interface BufferedSink extends WritableByteChannel, Object, Sink{
+    getBuffer(): Buffer;
     buffer(): Buffer;
     close(): void;
     emit(): BufferedSink;

@@ -6,7 +6,6 @@ import type { InvocationHandler } from '../../../java/lang/reflect/InvocationHan
 import type { Method } from '../../../java/lang/reflect/Method.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class Library$Handler extends Object implements InvocationHandler {
-    static invokeDefault(paramarg0: Object, paramarg1: Method, ...paramarg2: Object[]): Object;
     constructor(arg0: string, arg1: Class<Object>, arg2: { [key: string]: Object | null })
     // private functions: Map<Method, Library$Handler$FunctionInfo>;
     readonly interfaceClass: Class<Object>;

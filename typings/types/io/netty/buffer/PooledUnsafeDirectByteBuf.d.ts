@@ -3,7 +3,6 @@ import type { PoolChunk } from '../../../io/netty/buffer/PoolChunk.d.ts'
 import type { PoolThreadCache } from '../../../io/netty/buffer/PoolThreadCache.d.ts'
 import type { PooledByteBuf } from '../../../io/netty/buffer/PooledByteBuf.d.ts'
 import type { SwappedByteBuf } from '../../../io/netty/buffer/SwappedByteBuf.d.ts'
-import type { Recycler } from '../../../io/netty/util/Recycler.d.ts'
 import type { ObjectPool$Handle } from '../../../io/netty/util/internal/ObjectPool$Handle.d.ts'
 import type { InputStream } from '../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../java/io/OutputStream.d.ts'
@@ -11,9 +10,8 @@ import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
 import type { FileChannel } from '../../../java/nio/channels/FileChannel.d.ts'
 import type { GatheringByteChannel } from '../../../java/nio/channels/GatheringByteChannel.d.ts'
 import type { ScatteringByteChannel } from '../../../java/nio/channels/ScatteringByteChannel.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 export class PooledUnsafeDirectByteBuf extends PooledByteBuf<ByteBuffer> {
-    constructor(arg0: ObjectPool$Handle<Object>, arg1: number, arg2: Recycler<PooledUnsafeDirectByteBuf>)
+    private constructor(arg0: ObjectPool$Handle<PooledUnsafeDirectByteBuf>, arg1: number)
     // private memoryAddress: number;
     _getByte(arg0: number): number;
     _getInt(arg0: number): number;

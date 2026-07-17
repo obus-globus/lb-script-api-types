@@ -18,7 +18,6 @@ export abstract class NormalCraftingRecipe extends Object implements CraftingRec
     static CODEC: Codec<Recipe<any>>;
     static KEY_CODEC: Codec<ResourceKey<Recipe<any>>>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<any>>;
-    static defaultCraftingReminder(paraminput: CraftingInput): ItemStack[];
     constructor(commonInfo: Recipe$CommonInfo, bookInfo: CraftingRecipe$CraftingBookInfo)
     // private bookInfo: CraftingRecipe$CraftingBookInfo;
     // private commonInfo: Recipe$CommonInfo;

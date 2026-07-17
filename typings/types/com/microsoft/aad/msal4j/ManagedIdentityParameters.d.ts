@@ -4,7 +4,7 @@ import type { ManagedIdentityParameters$ManagedIdentityParametersBuilder } from 
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ManagedIdentityParameters extends Object implements IAcquireTokenParameters {
     static builder(paramarg0: string): ManagedIdentityParameters$ManagedIdentityParametersBuilder;
-    constructor(arg0: string, arg1: boolean, arg2: string, arg3: any)
+    private constructor(arg0: string, arg1: boolean, arg2: string)
     // private claims: string;
     // private forceRefresh: boolean;
     // private resource: string;

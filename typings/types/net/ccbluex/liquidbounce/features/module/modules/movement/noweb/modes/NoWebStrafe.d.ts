@@ -18,6 +18,7 @@ export class NoWebStrafe extends NoWebMode {
     // private onlyGround: boolean;
     // private /*not mapped: */ getOnlyGround(): boolean;
     readonly parent: ModeValueGroup<NoWebMode>;
+    getParent(): ModeValueGroup<NoWebMode>;
     // private strength: number;
     // private /*not mapped: */ getStrength(): number;
     handleEntityCollision(pos: BlockPos): boolean;

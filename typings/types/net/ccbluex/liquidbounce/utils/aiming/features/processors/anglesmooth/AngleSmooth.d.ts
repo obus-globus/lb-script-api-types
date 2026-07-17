@@ -13,6 +13,7 @@ export abstract class AngleSmooth extends Mode implements RotationProcessor {
     static Companion: Tagged$Companion;
     constructor(name: string, parent: ModeValueGroup<any>, aliases: string[])
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     calculateTicks(currentRotation: Rotation, targetRotation: Rotation): number;
     process(rotationTarget: RotationTarget, currentRotation: Rotation, targetRotation: Rotation): Rotation;
 }

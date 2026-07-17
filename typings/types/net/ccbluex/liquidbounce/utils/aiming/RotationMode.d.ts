@@ -31,6 +31,7 @@ export class RotationMode extends Mode implements MinecraftShortcuts {
     readonly module: ClientModule;
     readonly network: ClientPacketListener;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     readonly player: LocalPlayer;
     /**
      * Already sends the packet on post-move.

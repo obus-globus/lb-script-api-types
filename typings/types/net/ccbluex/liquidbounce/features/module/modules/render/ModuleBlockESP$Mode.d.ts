@@ -10,6 +10,7 @@ export class ModuleBlockESP$Mode extends Mode {
     // private dirtyFlag: AtomicBoolean;
     // private /*not mapped: */ getDirtyFlag(): AtomicBoolean;
     readonly parent: ModeValueGroup<ModuleBlockESP$Mode>;
+    getParent(): ModeValueGroup<ModuleBlockESP$Mode>;
     // private useColor: boolean;
     // private /*not mapped: */ getUseColor(): boolean;
     enable(): void;

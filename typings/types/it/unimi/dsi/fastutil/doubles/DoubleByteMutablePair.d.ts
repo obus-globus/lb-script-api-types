@@ -1,11 +1,8 @@
 import type { DoubleBytePair } from '../../../../../it/unimi/dsi/fastutil/doubles/DoubleBytePair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
-import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DoubleByteMutablePair extends Object implements DoubleBytePair, Serializable {
-    static lexComparator(): (param0: DoubleBytePair, param1: DoubleBytePair) => number;
     static of(paramarg0: number, paramarg1: number): DoubleByteMutablePair;
-    static of(paramarg0: number, paramarg1: number): DoubleBytePair;
     constructor(arg0: number, arg1: number)
     // private left: number;
     // private right: number;

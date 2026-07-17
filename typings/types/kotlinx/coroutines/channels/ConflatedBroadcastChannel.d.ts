@@ -1,6 +1,7 @@
 import type { CancellationException } from '../../../java/util/concurrent/CancellationException.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
+import type { Continuation } from '../../../kotlin/coroutines/Continuation.d.ts'
 import type { BroadcastChannel } from '../../../kotlinx/coroutines/channels/BroadcastChannel.d.ts'
 import type { BroadcastChannelImpl } from '../../../kotlinx/coroutines/channels/BroadcastChannelImpl.d.ts'
 import type { ChannelResult } from '../../../kotlinx/coroutines/channels/ChannelResult.d.ts'
@@ -21,6 +22,7 @@ export class ConflatedBroadcastChannel<E extends unknown> extends Object impleme
     invokeOnClose(handler: (param0: Throwable | null) => void): void;
     offer(element: E): boolean;
     openSubscription(): ReceiveChannel<E>;
-    send(element: E): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    send(element: E, $completion: Continuation<void>): any;
     trySend(element: E): ChannelResult<void>;
 }

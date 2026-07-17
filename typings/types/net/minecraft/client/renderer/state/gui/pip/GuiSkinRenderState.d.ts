@@ -7,7 +7,6 @@ import type { Identifier } from '../../../../../../../net/minecraft/resources/Id
 import type { Matrix3x2fc } from '../../../../../../../org/joml/Matrix3x2fc.d.ts'
 export class GuiSkinRenderState extends Record implements PictureInPictureRenderState {
     static IDENTITY_POSE: Matrix3x2fc;
-    static getBounds(paramx0: number, paramy0: number, paramx1: number, paramy1: number, paramscissorArea: ScreenRectangle): ScreenRectangle;
     constructor(playerModel: Model$Simple, texture: Identifier, rotationX: number, rotationY: number, pivotY: number, x0: number, y0: number, x1: number, y1: number, scale: number, scissorArea: ScreenRectangle)
     constructor(playerModel: Model$Simple, texture: Identifier, rotationX: number, rotationY: number, pivotY: number, x0: number, y0: number, x1: number, y1: number, scale: number, scissorArea: ScreenRectangle, bounds: ScreenRectangle)
     // private bounds: ScreenRectangle;

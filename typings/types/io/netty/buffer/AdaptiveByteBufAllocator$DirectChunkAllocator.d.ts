@@ -3,7 +3,7 @@ import type { AdaptivePoolingAllocator$ChunkAllocator } from '../../../io/netty/
 import type { ByteBufAllocator } from '../../../io/netty/buffer/ByteBufAllocator.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class AdaptiveByteBufAllocator$DirectChunkAllocator extends Object implements AdaptivePoolingAllocator$ChunkAllocator {
-    constructor(arg0: ByteBufAllocator, arg1: any)
+    private constructor(arg0: ByteBufAllocator)
     // private allocator: ByteBufAllocator;
     allocate(arg0: number, arg1: number): AbstractByteBuf;
 }

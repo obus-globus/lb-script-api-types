@@ -4,7 +4,6 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ReferenceShortImmutablePair<K extends unknown> extends Object implements ReferenceShortPair<K>, Serializable {
     static of<K extends unknown>(paramarg0: K, paramarg1: number): ReferenceShortImmutablePair<K>;
-    static of<K extends unknown>(paramarg0: K, paramarg1: number): ReferenceShortPair<K>;
     constructor(arg0: K, arg1: number)
     // private left: K;
     // private right: number;

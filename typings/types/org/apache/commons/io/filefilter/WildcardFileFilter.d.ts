@@ -15,7 +15,6 @@ export class WildcardFileFilter extends AbstractFileFilter implements Serializab
     constructor(arg0: string, arg1: IOCase)
     constructor(arg0: string[])
     constructor(arg0: string[], arg1: IOCase)
-    constructor(arg0: WildcardFileFilter$Builder, arg1: any)
     // private ioCase: IOCase;
     // private wildcards: string[];
     accept(arg0: File): boolean;

@@ -11,6 +11,7 @@ export class InstantNukerMode extends Mode {
     // private doNotStop: boolean;
     // private /*not mapped: */ getDoNotStop(): boolean;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     // private range: number;
     // private /*not mapped: */ getRange(): number;
     // private tickHandler: EventHook<GameTickEvent>;

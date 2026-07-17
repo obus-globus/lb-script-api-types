@@ -12,8 +12,6 @@ export class ModuleCustomAmbience$TimeType extends Enum<ModuleCustomAmbience$Tim
     static NOON: ModuleCustomAmbience$TimeType;
     static NO_CHANGE: ModuleCustomAmbience$TimeType;
     static getEntries(): ModuleCustomAmbience$TimeType[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleCustomAmbience$TimeType;
     static values(): ModuleCustomAmbience$TimeType[];

@@ -23,7 +23,6 @@ export class PolyglotInternalBuiltins$PolyglotInternal extends Enum<PolyglotInte
     static toPolyglotValue: PolyglotInternalBuiltins$PolyglotInternal;
     static unbox: PolyglotInternalBuiltins$PolyglotInternal;
     static write: PolyglotInternalBuiltins$PolyglotInternal;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): PolyglotInternalBuiltins$PolyglotInternal;
     static values(): PolyglotInternalBuiltins$PolyglotInternal[];

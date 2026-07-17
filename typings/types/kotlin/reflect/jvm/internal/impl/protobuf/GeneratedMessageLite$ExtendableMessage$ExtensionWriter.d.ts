@@ -5,7 +5,7 @@ import type { CodedOutputStream } from '../../../../../../kotlin/reflect/jvm/int
 import type { GeneratedMessageLite$ExtendableMessage } from '../../../../../../kotlin/reflect/jvm/internal/impl/protobuf/GeneratedMessageLite$ExtendableMessage.d.ts'
 import type { GeneratedMessageLite$ExtensionDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/protobuf/GeneratedMessageLite$ExtensionDescriptor.d.ts'
 export class GeneratedMessageLite$ExtendableMessage$ExtensionWriter extends Object {
-    constructor(null_: GeneratedMessageLite$ExtendableMessage<GeneratedMessageLite$ExtendableMessage<MessageType>>, arg1: boolean, arg2: any)
+    private constructor(null_: GeneratedMessageLite$ExtendableMessage<GeneratedMessageLite$ExtendableMessage<MessageType>>, arg1: boolean)
     // private iter: Iterator<Map$Entry<GeneratedMessageLite$ExtensionDescriptor, Object>>;
     // private messageSetWireFormat: boolean;
     // private next: Map$Entry<GeneratedMessageLite$ExtensionDescriptor, Object>;

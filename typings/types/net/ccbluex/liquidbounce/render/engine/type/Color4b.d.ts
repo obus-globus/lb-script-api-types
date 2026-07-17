@@ -57,7 +57,7 @@ export class Color4b extends Record {
     static ofHSB(hue: number, saturation: number, brightness: number, alpha: number): Color4b;
     constructor(color: Color)
     constructor(argb: number)
-    constructor(r: number, g: number, b: number, a: number)
+    constructor(r: number, g: number, b: number, a?: number)
     /*not mapped: */ a(): number;
     // private argb: number;
     /*not mapped: */ argb(): number;
@@ -107,10 +107,10 @@ export class Color4b extends Record {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt#L227 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt:227}
      */
-    toHexString(format: HexFormat): string;
-    toRgbVector3f(dest: Vector3f): Vector3f;
+    toHexString(format?: HexFormat): string;
+    toRgbVector3f(dest?: Vector3f): Vector3f;
     toString(): string;
     toTextColor(): TextColor;
-    toVector4f(dest: Vector4f): Vector4f;
+    toVector4f(dest?: Vector4f): Vector4f;
     with(r: number, g: number, b: number, a: number): Color4b;
 }

@@ -5,7 +5,7 @@ import type { Reference2ByteOpenHashMap$MapIterator } from '../../../../../it/un
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Reference2ByteOpenHashMap$EntryIterator extends Reference2ByteOpenHashMap$MapIterator<Object> implements ObjectIterator<Reference2ByteMap$Entry<K>> {
-    constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
+    private constructor(null_: { [key: string]: any })
     // private entry: Reference2ByteOpenHashMap$MapEntry;
     acceptOnIndex<K extends unknown>(arg0: (param0: Reference2ByteMap$Entry<K>) => void, arg1: number): void;
     next<K extends unknown>(): Reference2ByteOpenHashMap$MapEntry;

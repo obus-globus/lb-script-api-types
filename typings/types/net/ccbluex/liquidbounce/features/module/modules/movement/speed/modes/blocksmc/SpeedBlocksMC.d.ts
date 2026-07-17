@@ -19,6 +19,7 @@ export class SpeedBlocksMC extends Mode {
     // private movementInputHandler: EventHook<MovementInputEvent>;
     // private packetHandler: EventHook<PacketEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private roundStrafeYaw: boolean;
     // private /*not mapped: */ getRoundStrafeYaw(): boolean;
     // private sprintHandler: EventHook<SprintEvent>;

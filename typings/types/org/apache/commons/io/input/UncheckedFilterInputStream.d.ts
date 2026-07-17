@@ -4,7 +4,7 @@ import type { UncheckedFilterInputStream$Builder } from '../../../../../org/apac
 export class UncheckedFilterInputStream extends FilterInputStream {
     static builder(): UncheckedFilterInputStream$Builder;
     static nullInputStream(): InputStream;
-    constructor(arg0: UncheckedFilterInputStream$Builder, arg1: any)
+    private constructor(arg0: UncheckedFilterInputStream$Builder)
     available(): number;
     close(): void;
     read(): number;

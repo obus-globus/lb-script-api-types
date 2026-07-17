@@ -3,6 +3,6 @@ import type { AbstractChannel$AbstractUnsafe } from '../../../io/netty/channel/A
 import type { ChannelPromise } from '../../../io/netty/channel/ChannelPromise.d.ts'
 import type { SocketAddress } from '../../../java/net/SocketAddress.d.ts'
 export class FailedChannel$FailedChannelUnsafe extends AbstractChannel$AbstractUnsafe {
-    constructor(null_: FailedChannel, arg1: any)
+    private constructor(null_: FailedChannel)
     connect(arg0: SocketAddress, arg1: SocketAddress, arg2: ChannelPromise): void;
 }

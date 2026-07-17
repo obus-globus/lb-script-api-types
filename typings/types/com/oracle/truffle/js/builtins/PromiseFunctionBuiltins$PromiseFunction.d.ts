@@ -15,7 +15,6 @@ export class PromiseFunctionBuiltins$PromiseFunction extends Enum<PromiseFunctio
     static resolve: PromiseFunctionBuiltins$PromiseFunction;
     static try_: PromiseFunctionBuiltins$PromiseFunction;
     static withResolvers: PromiseFunctionBuiltins$PromiseFunction;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): PromiseFunctionBuiltins$PromiseFunction;
     static values(): PromiseFunctionBuiltins$PromiseFunction[];

@@ -13,7 +13,7 @@ import type { DateTimeComponents$Companion } from '../../../kotlinx/datetime/for
 import type { DateTimeComponentsContents } from '../../../kotlinx/datetime/format/DateTimeComponentsContents.d.ts'
 export class DateTimeComponents extends Object {
     static Companion: DateTimeComponents$Companion;
-    constructor(contents: DateTimeComponentsContents)
+    constructor(contents?: DateTimeComponentsContents)
     amPm: AmPmMarker | null;
     // private contents: DateTimeComponentsContents;
     /*not mapped: */ getContents$kotlinx_datetime(): DateTimeComponentsContents;

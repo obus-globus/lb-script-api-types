@@ -1,10 +1,7 @@
-import type { JsonElement } from '../../../../../../../com/google/gson/JsonElement.d.ts'
-import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Path } from '../../../../../../../java/nio/file/Path.d.ts'
 import type { Comparator } from '../../../../../../../java/util/Comparator.d.ts'
 import type { CompletableFuture } from '../../../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Consumer } from '../../../../../../../java/util/function/Consumer.d.ts'
-import type { Function } from '../../../../../../../java/util/function/Function.d.ts'
 import type { ToIntFunction } from '../../../../../../../java/util/function/ToIntFunction.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { FabricPackOutput } from '../../../../../../../net/fabricmc/fabric/api/datagen/v1/FabricPackOutput.d.ts'
@@ -21,12 +18,6 @@ export abstract class FabricAdvancementProvider extends Object implements DataPr
     static KEY_COMPARATOR: (param0: string, param1: string) => number;
     static LOGGER: Logger;
     static createPlaceholder(paramarg0: Identifier): AdvancementHolder;
-    static saveAll<T extends unknown, E extends unknown>(paramcache: CachedOutput, paramcodec: Codec<E>, parampathGetter: (param0: T) => Path, paramcontents: Map<T, E>): CompletableFuture<Object>;
-    static saveAll<T extends unknown, E extends unknown>(paramcache: CachedOutput, paramserializer: (param0: E) => JsonElement, parampathGetter: (param0: T) => Path, paramcontents: Map<T, E>): CompletableFuture<Object>;
-    static saveAll<T extends unknown>(paramcache: CachedOutput, paramcodec: Codec<T>, parampathProvider: PackOutput$PathProvider, paramentries: Map<Identifier, T>): CompletableFuture<Object>;
-    static saveStable<T extends unknown>(paramcache: CachedOutput, paramcodec: Codec<T>, paramvalue: T, parampath: Path): CompletableFuture<Object>;
-    static saveStable<T extends unknown>(paramcache: CachedOutput, paramregistries: HolderLookup$Provider, paramcodec: Codec<T>, paramvalue: T, parampath: Path): CompletableFuture<Object>;
-    static saveStable(paramcache: CachedOutput, paramroot: JsonElement, parampath: Path): CompletableFuture<Object>;
     constructor(arg0: FabricPackOutput, arg1: CompletableFuture<HolderLookup$Provider>)
     // private output: FabricPackOutput;
     // private pathProvider: PackOutput$PathProvider;

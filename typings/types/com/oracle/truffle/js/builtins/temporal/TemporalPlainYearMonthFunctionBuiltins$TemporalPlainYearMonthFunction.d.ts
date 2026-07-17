@@ -9,7 +9,6 @@ import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class TemporalPlainYearMonthFunctionBuiltins$TemporalPlainYearMonthFunction extends Enum<TemporalPlainYearMonthFunctionBuiltins$TemporalPlainYearMonthFunction> implements BuiltinEnum<TemporalPlainYearMonthFunctionBuiltins$TemporalPlainYearMonthFunction> {
     static compare: TemporalPlainYearMonthFunctionBuiltins$TemporalPlainYearMonthFunction;
     static from: TemporalPlainYearMonthFunctionBuiltins$TemporalPlainYearMonthFunction;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): TemporalPlainYearMonthFunctionBuiltins$TemporalPlainYearMonthFunction;
     static values(): TemporalPlainYearMonthFunctionBuiltins$TemporalPlainYearMonthFunction[];

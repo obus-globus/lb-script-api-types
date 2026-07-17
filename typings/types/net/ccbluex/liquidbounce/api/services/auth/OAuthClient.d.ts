@@ -20,22 +20,13 @@ export class OAuthClient extends Object implements EventListener {
     // private buildAuthUrl(codeChallenge: string, state: string, redirectUri: string): string;
     children(): EventListener[];
     parent(): EventListener | null;
-    /**
-     * Renew an expired session using its refresh token
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt#L91 | src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt:91}
-     */
-    renewToken(session: OAuthSession): OAuthSession;
-    /**
-     * Start the OAuth authentication flow
-     *
-     * @param onUrl Callback for when the authorization URL is ready
-     * @returns Client account with the authenticated session
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt#L67 | src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt:67}
-     */
-    startAuth(onUrl: (param0: string) => void): ClientAccount;
-    // private startNettyServer(): number;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    renewToken(session: OAuthSession, $completion: Continuation<OAuthSession>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    startAuth(onUrl: (param0: string) => void, $completion: Continuation<ClientAccount>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private startNettyServer($completion: Continuation<number>): any;
     unregister(): void;
-    // private waitForAuthCode(): string;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private waitForAuthCode($completion: Continuation<string>): any;
 }

@@ -16,7 +16,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class BertBlock extends AbstractBlock {
     static builder(): BertBlock$Builder;
     static createAttentionMaskFromInputMask(paramarg0: NDArray, paramarg1: NDArray): NDArray;
-    constructor(arg0: BertBlock$Builder, arg1: any)
+    private constructor(arg0: BertBlock$Builder)
     // private embeddingDropout: Dropout;
     // private embeddingNorm: BatchNorm;
     readonly embeddingSize: number;

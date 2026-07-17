@@ -6,7 +6,7 @@ import type { MemoryMappedFileInputStream$Builder } from '../../../../../org/apa
 export class MemoryMappedFileInputStream extends AbstractInputStream {
     static builder(): MemoryMappedFileInputStream$Builder;
     static nullInputStream(): InputStream;
-    constructor(arg0: MemoryMappedFileInputStream$Builder, arg1: any)
+    private constructor(arg0: MemoryMappedFileInputStream$Builder)
     // private buffer: ByteBuffer;
     // private bufferSize: number;
     // private channel: FileChannel;

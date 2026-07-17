@@ -5,7 +5,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class LongLongImmutableSortedPair extends LongLongImmutablePair implements LongLongSortedPair, Serializable {
     static of(paramarg0: number, paramarg1: number): LongLongImmutablePair;
     static of(paramarg0: number, paramarg1: number): LongLongImmutableSortedPair;
-    static of(paramarg0: number, paramarg1: number): LongLongSortedPair;
     private constructor(arg0: number, arg1: number)
     contains(arg0: Object): boolean;
     contains(arg0: number): boolean;

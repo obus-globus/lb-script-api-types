@@ -5,5 +5,6 @@ export abstract class VelocityMode extends Mode {
     static Companion: Tagged$Companion;
     constructor(name: string)
     readonly parent: ModeValueGroup<VelocityMode>;
+    getParent(): ModeValueGroup<VelocityMode>;
     readonly running: boolean;
 }

@@ -25,6 +25,7 @@ export class CriticalsJump extends Mode {
     // private optimizeForCooldown: boolean;
     // private /*not mapped: */ getOptimizeForCooldown(): boolean;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private range: number;
     // private /*not mapped: */ getRange(): number;
     // private calculateTicksUntilNextCrit(): number;

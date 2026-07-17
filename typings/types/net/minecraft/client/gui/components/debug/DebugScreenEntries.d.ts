@@ -54,6 +54,5 @@ export class DebugScreenEntries extends Object implements DebugScreenEntriesAcce
     static allEntries(): Map<Identifier, DebugScreenEntry>;
     static getEntry(paramid: Identifier): DebugScreenEntry;
     static register(paramidentifier: Identifier, paramentry: DebugScreenEntry): Identifier;
-    static sodium$getEntries(): Map<Identifier, DebugScreenEntry>;
     constructor()
 }

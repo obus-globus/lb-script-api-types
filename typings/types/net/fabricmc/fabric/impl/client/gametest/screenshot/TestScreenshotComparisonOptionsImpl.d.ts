@@ -7,8 +7,6 @@ import type { TestScreenshotComparisonOptions } from '../../../../../../../net/f
 import type { TestScreenshotCommonOptionsImpl } from '../../../../../../../net/fabricmc/fabric/impl/client/gametest/screenshot/TestScreenshotCommonOptionsImpl.d.ts'
 import type { Rect2i } from '../../../../../../../net/minecraft/client/renderer/Rect2i.d.ts'
 export class TestScreenshotComparisonOptionsImpl extends TestScreenshotCommonOptionsImpl<TestScreenshotComparisonOptions> implements TestScreenshotComparisonOptions {
-    static of(paramarg0: NativeImage): TestScreenshotComparisonOptions;
-    static of(paramarg0: string): TestScreenshotComparisonOptions;
     constructor(arg0: NativeImage)
     constructor(arg0: string)
     algorithm: TestScreenshotComparisonAlgorithm;

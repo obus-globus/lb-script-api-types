@@ -20,6 +20,7 @@ export abstract class HatsMode extends Mode {
     // private hurtMarked: boolean;
     // private /*not mapped: */ getHurtMarked(): boolean;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private renderHandler: EventHook<WorldRenderEvent>;
     // private showInFirstPerson: boolean;
     // private /*not mapped: */ getShowInFirstPerson(): boolean;

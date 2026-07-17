@@ -9,7 +9,6 @@ import type { SurfaceRules$Context } from '../../../../../net/minecraft/world/le
 import type { VerticalAnchor } from '../../../../../net/minecraft/world/level/levelgen/VerticalAnchor.d.ts'
 export class SurfaceRules$VerticalGradientConditionSource extends Record implements SurfaceRules$ConditionSource {
     static CODEC: Codec<SurfaceRules$ConditionSource>;
-    static bootstrap(paramregistry: MapCodec<SurfaceRules$ConditionSource>[]): MapCodec<SurfaceRules$ConditionSource>;
     private constructor(randomName: Identifier, trueAtAndBelow: VerticalAnchor, falseAtAndAbove: VerticalAnchor)
     // private falseAtAndAbove: VerticalAnchor;
     // private randomName: Identifier;

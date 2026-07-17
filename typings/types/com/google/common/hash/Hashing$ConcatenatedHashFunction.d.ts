@@ -4,7 +4,7 @@ import type { HashFunction } from '../../../../com/google/common/hash/HashFuncti
 import type { Hasher } from '../../../../com/google/common/hash/Hasher.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Hashing$ConcatenatedHashFunction extends AbstractCompositeHashFunction {
-    constructor(arg0: HashFunction[], arg1: any)
+    private constructor(...functions: HashFunction[])
     bits(): number;
     equals(object: Object | null): boolean;
     hashCode(): number;

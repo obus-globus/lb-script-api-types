@@ -4,7 +4,7 @@ import type { WebSocketServerProtocolConfig$Builder } from '../../../../../../io
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class WebSocketServerProtocolConfig extends Object {
     static newBuilder(): WebSocketServerProtocolConfig$Builder;
-    constructor(arg0: string, arg1: string, arg2: boolean, arg3: number, arg4: number, arg5: boolean, arg6: WebSocketCloseStatus, arg7: boolean, arg8: WebSocketDecoderConfig, arg9: any)
+    private constructor(arg0: string, arg1: string, arg2: boolean, arg3: number, arg4: number, arg5: boolean, arg6: WebSocketCloseStatus, arg7: boolean, arg8: WebSocketDecoderConfig)
     // private checkStartsWith: boolean;
     // private decoderConfig: WebSocketDecoderConfig;
     // private dropPongFrames: boolean;

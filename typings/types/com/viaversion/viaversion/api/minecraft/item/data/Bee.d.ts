@@ -10,7 +10,6 @@ export class Bee extends Record implements Copyable {
     static ARRAY_TYPE1_21_9: Type<Bee[]>;
     static TYPE1_20_5: Type<Bee>;
     static TYPE1_21_9: Type<Bee>;
-    static copy<T extends unknown>(paramarg0: T): T;
     constructor(arg0: Map$Entry<string, Tag>[], arg1: number, arg2: number)
     constructor(entityData: EntityData, ticksInHive: number, minTicksInHive: number)
     // private entityData: EntityData;

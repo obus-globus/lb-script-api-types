@@ -1,11 +1,8 @@
 import type { App } from '../../../../com/mojang/datafixers/kinds/App.d.ts'
 import type { Applicative } from '../../../../com/mojang/datafixers/kinds/Applicative.d.ts'
-import type { Applicative$Mu } from '../../../../com/mojang/datafixers/kinds/Applicative$Mu.d.ts'
 import type { Functor } from '../../../../com/mojang/datafixers/kinds/Functor.d.ts'
-import type { Functor$Mu } from '../../../../com/mojang/datafixers/kinds/Functor$Mu.d.ts'
 import type { IdF$Instance$Mu } from '../../../../com/mojang/datafixers/kinds/IdF$Instance$Mu.d.ts'
 import type { IdF$Mu } from '../../../../com/mojang/datafixers/kinds/IdF$Mu.d.ts'
-import type { K1 } from '../../../../com/mojang/datafixers/kinds/K1.d.ts'
 import type { Function10 } from '../../../../com/mojang/datafixers/util/Function10.d.ts'
 import type { Function11 } from '../../../../com/mojang/datafixers/util/Function11.d.ts'
 import type { Function12 } from '../../../../com/mojang/datafixers/util/Function12.d.ts'
@@ -27,8 +24,6 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class IdF$Instance extends Enum<IdF$Instance> implements Applicative<IdF$Mu, IdF$Instance$Mu>, Functor<IdF$Mu, IdF$Instance$Mu> {
     static INSTANCE: IdF$Instance;
-    static unbox<F extends K1, Mu extends Applicative$Mu>(paramarg0: App<Mu, F>): Applicative<F, Mu>;
-    static unbox<F extends K1, Mu extends Functor$Mu>(paramarg0: App<Mu, F>): Functor<F, Mu>;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): IdF$Instance;
     static values(): IdF$Instance[];

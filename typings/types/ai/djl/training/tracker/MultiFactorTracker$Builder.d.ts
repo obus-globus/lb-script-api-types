@@ -1,7 +1,7 @@
 import type { MultiFactorTracker } from '../../../../ai/djl/training/tracker/MultiFactorTracker.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class MultiFactorTracker$Builder extends Object {
-    constructor(arg0: any)
+    private constructor()
     // private baseValue: number;
     // private factor: number;
     // private steps: number[];

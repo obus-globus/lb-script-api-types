@@ -19,10 +19,6 @@ import type { ValueRange } from '../../../java/time/temporal/ValueRange.d.ts'
 import type { Locale } from '../../../java/util/Locale.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class AbstractChronology extends Object implements Chronology {
-    static from(paramarg0: TemporalAccessor): Chronology;
-    static getAvailableChronologies(): Chronology[];
-    static of(paramarg0: string): Chronology;
-    static ofLocale(paramarg0: Locale): Chronology;
     constructor()
     addFieldValue(arg0: Map<TemporalField, number>, arg1: ChronoField, arg2: number): void;
     compareTo(arg0: Chronology): number;

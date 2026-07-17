@@ -16,4 +16,5 @@ export class ModuleFastBreak$AbortAnother extends Mode {
     static INSTANCE: ModuleFastBreak$AbortAnother;
     readonly packetHandler: EventHook<PacketEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
 }

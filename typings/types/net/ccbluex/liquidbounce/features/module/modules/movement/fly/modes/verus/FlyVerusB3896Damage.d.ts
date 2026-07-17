@@ -18,6 +18,7 @@ export class FlyVerusB3896Damage extends Mode {
     // private flyTicks: number;
     // private gotDamage: boolean;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     readonly repeatable: EventHook<GameTickEvent>;
     // private shouldStop: boolean;
     disable(): void;

@@ -56,7 +56,7 @@ export class Response extends Object implements Closeable {
     close(): void;
     code(): number;
     handshake(): Handshake | null;
-    header(name: string, defaultValue: string | null): string | null;
+    header(name: string, defaultValue?: string | null): string | null;
     headers(): Pair<string, string>[];
     headers(name: string): string[];
     message(): string;

@@ -1,3 +1,4 @@
+import type { Continuation } from '../../../../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { ToggleableValueGroup } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ToggleableValueGroup.d.ts'
 import type { EventHook } from '../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { GameTickEvent } from '../../../../../../../../net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts'
@@ -21,5 +22,6 @@ export class AutoFirework extends ToggleableValueGroup {
     // private /*not mapped: */ getSyncCooldownWithKillAura(): boolean;
     // private useMode: AutoFirework$FireworkUseMode;
     // private /*not mapped: */ getUseMode(): AutoFirework$FireworkUseMode;
-    // private canUseFirework(): boolean;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private canUseFirework($completion: Continuation<boolean>): any;
 }

@@ -13,7 +13,7 @@ import type { BufferedImage } from '../../../../java/awt/image/BufferedImage.d.t
 import type { Raster } from '../../../../java/awt/image/Raster.d.ts'
 import type { Icon } from '../../../../javax/swing/Icon.d.ts'
 export class WindowUtils$W32WindowUtils extends WindowUtils$NativeWindowUtils {
-    constructor(arg0: any)
+    private constructor()
     getAllWindows(arg0: boolean): DesktopWindow[];
     // private getAlpha(arg0: Window): number;
     // private getHWnd(arg0: Component): WinDef$HWND;

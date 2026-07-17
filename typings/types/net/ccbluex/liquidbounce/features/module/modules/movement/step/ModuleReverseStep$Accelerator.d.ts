@@ -9,5 +9,6 @@ export class ModuleReverseStep$Accelerator extends Mode {
     // private factor: number;
     // private /*not mapped: */ getFactor(): number;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     readonly repeatable: EventHook<GameTickEvent>;
 }

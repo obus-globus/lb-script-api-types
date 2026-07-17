@@ -7,8 +7,6 @@ export class NoSlowConsumeIntave14$Mode extends Enum<NoSlowConsumeIntave14$Mode>
     static NEW: NoSlowConsumeIntave14$Mode;
     static RELEASE: NoSlowConsumeIntave14$Mode;
     static getEntries(): NoSlowConsumeIntave14$Mode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): NoSlowConsumeIntave14$Mode;
     static values(): NoSlowConsumeIntave14$Mode[];

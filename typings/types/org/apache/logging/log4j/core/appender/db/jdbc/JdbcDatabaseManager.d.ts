@@ -23,7 +23,7 @@ export class JdbcDatabaseManager extends AbstractDatabaseManager {
     static getManager(paramname: string, parambufferSize: number, paramlayout: Layout<Serializable>, paramconnectionSource: ConnectionSource, paramtableName: string, paramcolumnConfigs: ColumnConfig[], paramcolumnMappings: ColumnMapping[], paramimmediateFail: boolean, paramreconnectIntervalMillis: number): JdbcDatabaseManager;
     static getManager(paramname: string, parambufferSize: number, paramlayout: Layout<Serializable>, paramconnectionSource: ConnectionSource, paramtableName: string, paramcolumnConfigs: ColumnConfig[], paramcolumnMappings: ColumnMapping[], paramimmediateFail: boolean, paramreconnectIntervalMillis: number, paramtruncateStrings: boolean): JdbcDatabaseManager;
     static hasManager(paramname: string): boolean;
-    constructor(arg0: string, arg1: string, arg2: (Object | null)[], arg3: JdbcDatabaseManager$FactoryData, arg4: any)
+    private constructor(name: string, sqlStatement: string, columnConfigs: ColumnConfig[], factoryData: JdbcDatabaseManager$FactoryData)
     // private columnConfigs: ColumnConfig[];
     // private columnMetaData: { [key: string]: JdbcDatabaseManager$ResultSetColumnMetaData };
     // private connection: Connection;

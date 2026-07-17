@@ -4,7 +4,6 @@ import type { Predicate } from '../../../../../../java/util/function/Predicate.d
 import type { ToIntFunction } from '../../../../../../java/util/function/ToIntFunction.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
-import type { Holder } from '../../../../../../net/minecraft/core/Holder.d.ts'
 import type { Packet } from '../../../../../../net/minecraft/network/protocol/Packet.d.ts'
 import type { ClientGamePacketListener } from '../../../../../../net/minecraft/network/protocol/game/ClientGamePacketListener.d.ts'
 import type { ClientboundAddEntityPacket } from '../../../../../../net/minecraft/network/protocol/game/ClientboundAddEntityPacket.d.ts'
@@ -179,11 +178,7 @@ export class Warden extends Monster implements VibrationSystem {
     static createMobAttributes(): AttributeSupplier$Builder;
     static createMonsterAttributes(): AttributeSupplier$Builder;
     static getEquipmentForSlot(paramslot: EquipmentSlot, paramtype: number): Item;
-    static getGameEventFrequency(paramevent: Holder<GameEvent>): number;
-    static getGameEventFrequency(paramevent: ResourceKey<GameEvent>): number;
     static getInputVector(paraminput: Vec3, paramspeed: number, paramyRot: number): Vec3;
-    static getRedstoneStrengthForDistance(paramdistance: number, paramlistenerRadius: number): number;
-    static getResonanceEventByFrequency(paramvibrationFrequency: number): ResourceKey<GameEvent>;
     static getViewScale(): number;
     static isDarkEnoughToSpawn(paramlevel: ServerLevelAccessor, parampos: BlockPos, paramrandom: RandomSource): boolean;
     static resetForwardDirectionOfRelativePortalPosition(paramoffsets: Vec3): Vec3;

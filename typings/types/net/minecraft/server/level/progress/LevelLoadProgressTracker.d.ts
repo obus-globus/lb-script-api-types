@@ -5,7 +5,6 @@ import type { LevelLoadListener$Stage } from '../../../../../net/minecraft/serve
 import type { ChunkPos } from '../../../../../net/minecraft/world/level/ChunkPos.d.ts'
 import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 export class LevelLoadProgressTracker extends Object implements LevelLoadListener {
-    static compose(paramfirst: LevelLoadListener, paramsecond: LevelLoadListener): LevelLoadListener;
     constructor(includePlayerChunks: boolean)
     // private finalizedWeight: number;
     // private includePlayerChunks: boolean;

@@ -2,7 +2,7 @@ import type { WebSocketDecoderConfig$Builder } from '../../../../../../io/netty/
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class WebSocketDecoderConfig extends Object {
     static newBuilder(): WebSocketDecoderConfig$Builder;
-    constructor(arg0: number, arg1: boolean, arg2: boolean, arg3: boolean, arg4: boolean, arg5: boolean, arg6: any)
+    private constructor(arg0: number, arg1: boolean, arg2: boolean, arg3: boolean, arg4: boolean, arg5: boolean)
     // private allowExtensions: boolean;
     // private allowMaskMismatch: boolean;
     // private closeOnProtocolViolation: boolean;

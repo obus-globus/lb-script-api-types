@@ -9,5 +9,6 @@ export class TextureMode$Builtin<T extends TextureMode$Builtin$Preset> extends T
     constructor(parent: ModeValueGroup<any>, default_: T, choices: T[])
     // private mode: ChoiceListValue<T>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     readonly texture: DynamicTexture | null;
 }

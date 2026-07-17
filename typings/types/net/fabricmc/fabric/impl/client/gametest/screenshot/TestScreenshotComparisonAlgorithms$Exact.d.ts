@@ -5,9 +5,6 @@ import type { TestScreenshotComparisonAlgorithm$RawImage } from '../../../../../
 import type { Vector2i } from '../../../../../../../org/joml/Vector2i.d.ts'
 export class TestScreenshotComparisonAlgorithms$Exact extends Enum<TestScreenshotComparisonAlgorithms$Exact> implements TestScreenshotComparisonAlgorithm {
     static INSTANCE: TestScreenshotComparisonAlgorithms$Exact;
-    static defaultAlgorithm(): TestScreenshotComparisonAlgorithm;
-    static exact(): TestScreenshotComparisonAlgorithm;
-    static meanSquaredDifference(paramarg0: number): TestScreenshotComparisonAlgorithm;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): TestScreenshotComparisonAlgorithms$Exact;
     static values(): TestScreenshotComparisonAlgorithms$Exact[];

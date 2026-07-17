@@ -23,7 +23,7 @@ export class RollingFileAppender extends AbstractOutputStreamAppender<RollingFil
     static createAppender<B extends RollingFileAppender$Builder<B>>(paramfileName: string, paramfilePattern: string, paramappend: string, paramname: string, parambufferedIO: string, parambufferSizeStr: string, paramimmediateFlush: string, parampolicy: TriggeringPolicy, paramstrategy: RolloverStrategy, paramlayout: Layout<Serializable>, paramfilter: Filter, paramignore: string, paramadvertise: string, paramadvertiseUri: string, paramconfig: Configuration): RollingFileAppender;
     static newBuilder<B extends RollingFileAppender$Builder<B>>(): B;
     static parseInt(params: string, paramdefaultValue: number): number;
-    constructor(arg0: string, arg1: Layout<Serializable>, arg2: Filter, arg3: RollingFileManager, arg4: string, arg5: string, arg6: boolean, arg7: boolean, arg8: Advertiser, arg9: Property[], arg10: any)
+    private constructor(name: string, layout: Layout<Serializable>, filter: Filter, manager: RollingFileManager, fileName: string, filePattern: string, ignoreExceptions: boolean, immediateFlush: boolean, advertiser: Advertiser, properties: Property[])
     // private advertisement: Object;
     // private advertiser: Advertiser;
     readonly fileName: string;

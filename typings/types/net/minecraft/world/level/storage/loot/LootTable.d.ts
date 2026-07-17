@@ -1,9 +1,7 @@
 import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.ts'
-import type { DataResult } from '../../../../../../com/mojang/serialization/DataResult.d.ts'
 import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { BiFunction } from '../../../../../../java/util/function/BiFunction.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
-import type { Function } from '../../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { FabricLootTable } from '../../../../../../net/fabricmc/fabric/impl/loot/FabricLootTable.d.ts'
 import type { LootTableAccessor } from '../../../../../../net/fabricmc/fabric/mixin/loot/LootTableAccessor.d.ts'
@@ -29,14 +27,7 @@ export class LootTable extends Object implements FabricLootTable, LootTableAcces
     static KEY_CODEC: Codec<ResourceKey<LootTable>>;
     static RANDOMIZE_SEED: number;
     static createStackSplitter(paramlevel: ServerLevel, paramoutput: (param0: ItemStack) => void): (param0: ItemStack) => void;
-    static listValidatorForContext<T extends Validatable>(paramparams: ContextKeySet): (param0: T[]) => DataResult<T[]>;
     static lootTable(): LootTable$Builder;
-    static validate(paramcontext: ValidationContext, paramname: string, paramlist: Validatable[]): void;
-    static validate(paramcontext: ValidationContext, paramname: string, paramoptional: Optional<Validatable>): void;
-    static validate(paramcontext: ValidationContext, paramname: string, paramv: Validatable): void;
-    static validate(paramcontext: ValidationContext, paramlist: Validatable[]): void;
-    static validateReference<T extends Validatable>(paramcontext: ValidationContext, paramid: ResourceKey<T>): void;
-    static validatorForContext<T extends Validatable>(paramparams: ContextKeySet): (param0: T) => DataResult<T>;
     private constructor(paramSet: ContextKeySet, randomSequence: Optional<Identifier>, pools: LootPool[], functions: LootItemFunction[])
     // private compositeFunction: (param0: ItemStack, param1: LootContext) => ItemStack;
     // private functions: LootItemFunction[];

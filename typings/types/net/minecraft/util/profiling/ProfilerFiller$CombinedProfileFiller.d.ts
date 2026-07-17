@@ -5,7 +5,6 @@ import type { Zone } from '../../../../net/minecraft/util/profiling/Zone.d.ts'
 import type { MetricCategory } from '../../../../net/minecraft/util/profiling/metrics/MetricCategory.d.ts'
 export class ProfilerFiller$CombinedProfileFiller extends Object implements ProfilerFiller {
     static ROOT: string;
-    static combine(paramfirst: ProfilerFiller, paramsecond: ProfilerFiller): ProfilerFiller;
     constructor(first: ProfilerFiller, second: ProfilerFiller)
     // private first: ProfilerFiller;
     // private second: ProfilerFiller;

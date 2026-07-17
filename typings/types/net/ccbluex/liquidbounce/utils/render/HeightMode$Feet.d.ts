@@ -8,5 +8,6 @@ export class HeightMode$Feet extends HeightMode {
     // private offset: number;
     // private /*not mapped: */ getOffset(): number;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     getHeight(entity: Entity, partialTicks: number): number;
 }

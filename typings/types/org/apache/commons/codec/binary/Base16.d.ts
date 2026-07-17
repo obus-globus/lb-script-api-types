@@ -11,7 +11,6 @@ export class Base16 extends BaseNCodec {
     constructor()
     constructor(arg0: boolean)
     constructor(arg0: boolean, arg1: CodecPolicy)
-    constructor(arg0: Base16$Builder, arg1: any)
     decode(arg0: Object): Object;
     decode(arg0: number[]): number[];
     decode(arg0: number[], arg1: number, arg2: number, arg3: BaseNCodec$Context): void;

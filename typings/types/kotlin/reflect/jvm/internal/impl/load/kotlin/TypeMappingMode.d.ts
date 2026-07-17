@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { DefaultConstructorMarker } from '../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { TypeMappingMode$Companion } from '../../../../../../../kotlin/reflect/jvm/internal/impl/load/kotlin/TypeMappingMode$Companion.d.ts'
 import type { Variance } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/Variance.d.ts'
 export class TypeMappingMode extends Object {
@@ -18,7 +17,6 @@ export class TypeMappingMode extends Object {
     static VALUE_FOR_ANNOTATION: TypeMappingMode;
     constructor()
     constructor(arg0: boolean, arg1: boolean, arg2: boolean, arg3: boolean, arg4: boolean, arg5: TypeMappingMode, arg6: boolean, arg7: TypeMappingMode, arg8: TypeMappingMode, arg9: boolean, arg10: boolean)
-    constructor(arg0: boolean, arg1: boolean, arg2: boolean, arg3: boolean, arg4: boolean, arg5: TypeMappingMode, arg6: boolean, arg7: TypeMappingMode, arg8: TypeMappingMode, arg9: boolean, arg10: boolean, arg11: number, arg12: DefaultConstructorMarker)
     // private genericArgumentMode: TypeMappingMode;
     // private genericContravariantArgumentMode: TypeMappingMode;
     // private genericInvariantArgumentMode: TypeMappingMode;

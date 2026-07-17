@@ -15,9 +15,6 @@ export class JCodingsImpl extends Object implements JCodings {
     static INSTANCE: JCodings;
     static JCODINGS_ENABLED: boolean;
     static PROVIDER: JCodingsProvider;
-    static asByteArray(parama: AbstractTruffleString, paramarrayA: number[]): number[];
-    static fromJCodingsName(paramjCodingsName: string): TruffleString$Encoding;
-    static getInstance(): JCodings;
     constructor(provider: JCodingsProvider)
     // private jcodingsEncodings: JCodingsProvider$Encoding[];
     // private provider: JCodingsProvider;

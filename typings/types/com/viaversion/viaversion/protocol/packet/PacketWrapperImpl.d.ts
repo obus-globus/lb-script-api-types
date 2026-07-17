@@ -18,9 +18,6 @@ import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class PacketWrapperImpl extends Object implements PacketWrapper {
     static PASSTHROUGH_ID: number;
-    static create(paramarg0: PacketType, paramarg1: UserConnection): PacketWrapper;
-    static create(paramarg0: PacketType, paramarg1: ByteBuf, paramarg2: UserConnection): PacketWrapper;
-    static create(paramarg0: number, paramarg1: ByteBuf, paramarg2: UserConnection): PacketWrapper;
     constructor(arg0: PacketType, arg1: ByteBuf, arg2: UserConnection)
     constructor(arg0: number, arg1: ByteBuf, arg2: UserConnection)
     readonly allActionsRead: boolean;

@@ -2,7 +2,6 @@ import type { Float2CharMap$Entry } from '../../../../../it/unimi/dsi/fastutil/f
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class Float2CharLinkedOpenHashMap$MapIterator<ConsumerType extends unknown> extends Object {
     constructor(null_: { [key: string]: any })
-    constructor(null_: { [key: string]: any }, arg1: number, arg2: (Object | null)[])
     // private curr: number;
     // private index: number;
     // private next: number;

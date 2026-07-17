@@ -2,7 +2,6 @@ import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { BiPredicate } from '../../../../../../../java/util/function/BiPredicate.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { FluidBehavior } from '../../../../../../../net/fabricmc/fabric/api/registry/fluid/FluidBehavior.d.ts'
-import type { FluidBehavior$Builder } from '../../../../../../../net/fabricmc/fabric/api/registry/fluid/FluidBehavior$Builder.d.ts'
 import type { FluidBehavior$Builder$MovementSlowdownFunction } from '../../../../../../../net/fabricmc/fabric/api/registry/fluid/FluidBehavior$Builder$MovementSlowdownFunction.d.ts'
 import type { TagKey } from '../../../../../../../net/minecraft/tags/TagKey.d.ts'
 import type { ToFloatFunction } from '../../../../../../../net/minecraft/util/ToFloatFunction.d.ts'
@@ -13,7 +12,6 @@ import type { Fluid } from '../../../../../../../net/minecraft/world/level/mater
 import type { Vec3 } from '../../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class SimpleConfiguredFluidBehavior extends Record implements FluidBehavior {
     static WATER_LIKE: FluidBehavior;
-    static simple(): FluidBehavior$Builder;
     constructor(movementSpeed: (param0: LivingEntity) => number, movementSlowdown: FluidBehavior$Builder$MovementSlowdownFunction, gravityMultiplier: number, fallDistanceMultiplier: number, flowingPushScale: number, allowMovingDown: boolean, allowBoats: boolean, allowSwimming: boolean, makeMobsFloat: boolean, makeRiddenMobsFloat: boolean, drowning: boolean, allowSprinting: (param0: TagKey<Fluid>, param1: LivingEntity) => boolean)
     // private allowBoats: boolean;
     // private allowMovingDown: boolean;

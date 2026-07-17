@@ -15,9 +15,7 @@ export class InputBind$BindAction extends Enum<InputBind$BindAction> implements 
     static SMART: InputBind$BindAction;
     static TOGGLE: InputBind$BindAction;
     static getEntries(): InputBind$BindAction[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
     static of(string: string | null): InputBind$BindAction | null;
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): InputBind$BindAction;
     static values(): InputBind$BindAction[];

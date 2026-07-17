@@ -4,7 +4,6 @@ import type { Copyable } from '../../../../../com/viaversion/viaversion/util/Cop
 import type { IdHolder } from '../../../../../com/viaversion/viaversion/util/IdHolder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Particle extends Object implements Copyable, IdHolder {
-    static copy<T extends unknown>(paramarg0: T): T;
     constructor(arg0: number)
     readonly arguments: Particle$ParticleData<Object>[];
     add<T extends unknown>(arg0: Type<T>, arg1: T): void;

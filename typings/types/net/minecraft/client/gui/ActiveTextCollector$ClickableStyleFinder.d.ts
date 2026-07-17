@@ -4,7 +4,6 @@ import type { ActiveTextCollector } from '../../../../net/minecraft/client/gui/A
 import type { ActiveTextCollector$Parameters } from '../../../../net/minecraft/client/gui/ActiveTextCollector$Parameters.d.ts'
 import type { Font } from '../../../../net/minecraft/client/gui/Font.d.ts'
 import type { TextAlignment } from '../../../../net/minecraft/client/gui/TextAlignment.d.ts'
-import type { GuiTextRenderState } from '../../../../net/minecraft/client/renderer/state/gui/GuiTextRenderState.d.ts'
 import type { Component } from '../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Style } from '../../../../net/minecraft/network/chat/Style.d.ts'
 import type { FormattedCharSequence } from '../../../../net/minecraft/util/FormattedCharSequence.d.ts'
@@ -12,8 +11,6 @@ import type { FormattedCharSink } from '../../../../net/minecraft/util/Formatted
 export class ActiveTextCollector$ClickableStyleFinder extends Object implements ActiveTextCollector {
     static MIN_SCROLL_PERIOD: number;
     static PERIOD_PER_SCROLLED_PIXEL: number;
-    static findElementUnderCursor(paramtext: GuiTextRenderState, paramtestX: number, paramtestY: number, paramoutput: (param0: Style) => void): void;
-    static isPointInRectangle(paramx: number, paramy: number, paramleft: number, paramtop: number, paramright: number, parambottom: number): boolean;
     constructor(font: Font, testX: number, testY: number)
     // private defaultParameters: ActiveTextCollector$Parameters;
     // private font: Font;

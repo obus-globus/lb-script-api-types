@@ -21,8 +21,6 @@ export class CheckScreenTitleValueGroup$ContainerTitle extends Enum<CheckScreenT
     static SHULKER_BOX: CheckScreenTitleValueGroup$ContainerTitle;
     static SMOKER: CheckScreenTitleValueGroup$ContainerTitle;
     static getEntries(): CheckScreenTitleValueGroup$ContainerTitle[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): CheckScreenTitleValueGroup$ContainerTitle;
     static values(): CheckScreenTitleValueGroup$ContainerTitle[];

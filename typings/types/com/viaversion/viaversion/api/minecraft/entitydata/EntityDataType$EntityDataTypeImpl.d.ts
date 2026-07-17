@@ -2,7 +2,6 @@ import type { EntityDataType } from '../../../../../../com/viaversion/viaversion
 import type { Type } from '../../../../../../com/viaversion/viaversion/api/type/Type.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class EntityDataType$EntityDataTypeImpl extends Object implements EntityDataType {
-    static create(paramarg0: number, paramarg1: Type<Object>): EntityDataType;
     constructor(arg0: number, arg1: Type<Object>)
     // private type: Type<Object>;
     // private typeId: number;

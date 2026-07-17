@@ -20,7 +20,6 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Char2CharFunctions$SynchronizedFunction extends Object implements Char2CharFunction, Serializable {
-    static identity(): (param0: string) => string;
     constructor(arg0: (param0: string) => string)
     constructor(arg0: (param0: string) => string, arg1: Object)
     // private function: (param0: string) => string;

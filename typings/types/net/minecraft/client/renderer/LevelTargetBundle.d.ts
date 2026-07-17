@@ -14,7 +14,6 @@ export class LevelTargetBundle extends Object implements PostChain$TargetBundle 
     static SORTING_TARGETS: Identifier[];
     static TRANSLUCENT_TARGET_ID: Identifier;
     static WEATHER_TARGET_ID: Identifier;
-    static of(paramtargetId: Identifier, paramtarget: ResourceHandle<RenderTarget>): PostChain$TargetBundle;
     constructor()
     clouds: ResourceHandle<RenderTarget>;
     entityOutline: ResourceHandle<RenderTarget>;

@@ -10,7 +10,6 @@ export class PerformanceBuiltins$PerformancePrototype extends Enum<PerformanceBu
     static now: PerformanceBuiltins$PerformancePrototype;
     static timeOrigin: PerformanceBuiltins$PerformancePrototype;
     static toJSON: PerformanceBuiltins$PerformancePrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): PerformanceBuiltins$PerformancePrototype;
     static values(): PerformanceBuiltins$PerformancePrototype[];

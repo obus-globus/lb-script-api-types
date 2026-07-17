@@ -13,6 +13,7 @@ export class MinecraftAccount extends Object {
     static fromName(name: string): MinecraftAccount;
     protected constructor(type: AccountType)
     bans: { [key: string]: Ban };
+    getFavorite(): boolean;
     profile: GameProfile | null;
     readonly type: AccountType;
     favorite(): MinecraftAccount;

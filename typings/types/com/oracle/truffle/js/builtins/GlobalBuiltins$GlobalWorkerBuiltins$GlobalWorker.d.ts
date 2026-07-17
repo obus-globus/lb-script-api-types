@@ -9,7 +9,6 @@ import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class GlobalBuiltins$GlobalWorkerBuiltins$GlobalWorker extends Enum<GlobalBuiltins$GlobalWorkerBuiltins$GlobalWorker> implements BuiltinEnum<GlobalBuiltins$GlobalWorkerBuiltins$GlobalWorker> {
     static close: GlobalBuiltins$GlobalWorkerBuiltins$GlobalWorker;
     static postMessage: GlobalBuiltins$GlobalWorkerBuiltins$GlobalWorker;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): GlobalBuiltins$GlobalWorkerBuiltins$GlobalWorker;
     static values(): GlobalBuiltins$GlobalWorkerBuiltins$GlobalWorker[];

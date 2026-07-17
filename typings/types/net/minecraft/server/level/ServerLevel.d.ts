@@ -16,7 +16,6 @@ import type { ServerWorldExtended } from '../../../../net/caffeinemc/mods/lithiu
 import type { ServerLevelAccessor } from '../../../../net/caffeinemc/mods/lithium/mixin/minimal_nonvanilla/spawning/ServerLevelAccessor.d.ts'
 import type { ServerLevelAccessor as ServerLevelAccessor_2 } from '../../../../net/caffeinemc/mods/lithium/mixin/util/accessors/ServerLevelAccessor.d.ts'
 import type { ServerLevelAccessor as ServerLevelAccessor_3 } from '../../../../net/caffeinemc/mods/lithium/mixin/util/entity_movement_tracking/ServerLevelAccessor.d.ts'
-import type { AttachmentTarget } from '../../../../net/fabricmc/fabric/api/attachment/v1/AttachmentTarget.d.ts'
 import type { AttachmentType } from '../../../../net/fabricmc/fabric/api/attachment/v1/AttachmentType.d.ts'
 import type { GlobalAttachments } from '../../../../net/fabricmc/fabric/api/attachment/v1/GlobalAttachments.d.ts'
 import type { AttachmentTargetImpl } from '../../../../net/fabricmc/fabric/impl/attachment/AttachmentTargetImpl.d.ts'
@@ -139,7 +138,6 @@ export class ServerLevel extends Level implements ServerWorldExtended, ServerLev
     static SHORT_PARTICLE_CLIP_RANGE: number;
     static THUNDER_DURATION: IntProvider;
     static isInSpawnableBounds(parampos: BlockPos): boolean;
-    static transfer(paramarg0: AttachmentTarget, paramarg1: AttachmentTarget, paramarg2: boolean): void;
     constructor(server: MinecraftServer, executor: Executor, levelStorage: LevelStorageSource$LevelStorageAccess, levelData: ServerLevelData, dimension: ResourceKey<Level>, levelStem: LevelStem, isDebug: boolean, biomeZoomSeed: number, customSpawners: CustomSpawner[], tickTime: boolean)
     // private apiLookupAccessesWithoutCleanup: number;
     // private apiLookupCaches: Map<Object | null, Object | null>;

@@ -17,7 +17,7 @@ export class NoSqlDatabaseManager<W extends unknown> extends AbstractDatabaseMan
     static getNoSqlDatabaseManager(paramname: string, parambufferSize: number, paramprovider: NoSqlProvider<any>): NoSqlDatabaseManager<Object>;
     static getNoSqlDatabaseManager(paramname: string, parambufferSize: number, paramprovider: NoSqlProvider<any>, paramadditionalFields: KeyValuePair[], paramconfiguration: Configuration): NoSqlDatabaseManager<Object>;
     static hasManager(paramname: string): boolean;
-    constructor(arg0: string, arg1: number, arg2: NoSqlProvider<NoSqlConnection<Object, any>>, arg3: KeyValuePair[], arg4: Configuration, arg5: any)
+    private constructor(name: string, bufferSize: number, provider: NoSqlProvider<NoSqlConnection<W, NoSqlObject<W>>>, additionalFields: KeyValuePair[], configuration: Configuration)
     // private additionalFields: KeyValuePair[];
     // private connection: NoSqlConnection<W, NoSqlObject<W>>;
     // private provider: NoSqlProvider<NoSqlConnection<W, NoSqlObject<W>>>;

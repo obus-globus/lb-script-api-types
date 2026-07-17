@@ -8,4 +8,5 @@ export class NoSlowBlockingBlink extends Mode {
     static INSTANCE: NoSlowBlockingBlink;
     // private fakeLagHandler: EventHook<BlinkPacketEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
 }

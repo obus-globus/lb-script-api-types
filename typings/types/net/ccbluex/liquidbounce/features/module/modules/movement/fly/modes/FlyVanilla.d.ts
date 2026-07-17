@@ -11,5 +11,6 @@ export class FlyVanilla extends Mode {
     // private glide: number;
     // private /*not mapped: */ getGlide(): number;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private tickHandler: EventHook<GameTickEvent>;
 }

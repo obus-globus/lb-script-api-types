@@ -16,4 +16,5 @@ export class ModuleFreeze$Queue extends Mode {
     // private origin: TransferOrigin[];
     // private /*not mapped: */ getOrigin(): TransferOrigin[];
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
 }

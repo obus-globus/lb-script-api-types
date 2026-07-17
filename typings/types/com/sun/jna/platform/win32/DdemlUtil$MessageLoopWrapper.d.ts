@@ -4,7 +4,6 @@ import type { InvocationHandler } from '../../../../../java/lang/reflect/Invocat
 import type { Method } from '../../../../../java/lang/reflect/Method.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DdemlUtil$MessageLoopWrapper extends Object implements InvocationHandler {
-    static invokeDefault(paramarg0: Object, paramarg1: Method, ...paramarg2: Object[]): Object;
     constructor(arg0: User32Util$MessageLoopThread, arg1: Object)
     // private delegate: Object;
     // private loopThread: User32Util$MessageLoopThread;

@@ -5,7 +5,6 @@ export class ResourceLeakDetector$TraceRecord extends Throwable {
     static CLOSE_MARK_POS: number;
     constructor(arg0: ResourceLeakDetector$TraceRecord)
     constructor(arg0: ResourceLeakDetector$TraceRecord, arg1: Object)
-    constructor(arg0: boolean, arg1: any)
     // private hintString: string;
     // private next: ResourceLeakDetector$TraceRecord;
     // private pos: number;

@@ -1,12 +1,9 @@
 import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { ObjectBytePair } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectBytePair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
-import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ObjectByteImmutablePair<K extends unknown> extends Object implements ObjectBytePair<K>, Serializable {
-    static lexComparator<K extends unknown>(): (param0: ObjectBytePair<K>, param1: ObjectBytePair<K>) => number;
     static of<K extends unknown>(paramarg0: K, paramarg1: number): ObjectByteImmutablePair<K>;
-    static of<K extends unknown>(paramarg0: K, paramarg1: number): ObjectBytePair<K>;
     constructor(arg0: K, arg1: number)
     // private left: K;
     // private right: number;

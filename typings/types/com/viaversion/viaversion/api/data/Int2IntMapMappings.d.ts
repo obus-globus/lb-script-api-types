@@ -1,8 +1,6 @@
 import type { Mappings } from '../../../../../com/viaversion/viaversion/api/data/Mappings.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Int2IntMapMappings extends Object implements Mappings {
-    static isFullIdentity(paramarg0: Mappings): boolean;
-    static isIntIdIdentity(paramarg0: Mappings): boolean;
     static of(): Int2IntMapMappings;
     static of(paramarg0: { [key: string]: any }, paramarg1: number): Int2IntMapMappings;
     constructor(arg0: { [key: string]: any }, arg1: number)

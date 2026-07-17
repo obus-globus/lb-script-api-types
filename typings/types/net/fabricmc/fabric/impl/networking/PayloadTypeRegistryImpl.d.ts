@@ -16,11 +16,7 @@ export class PayloadTypeRegistryImpl<B extends FriendlyByteBuf> extends Object i
     static CLIENTBOUND_PLAY: PayloadTypeRegistryImpl<RegistryFriendlyByteBuf>;
     static SERVERBOUND_CONFIGURATION: PayloadTypeRegistryImpl<FriendlyByteBuf>;
     static SERVERBOUND_PLAY: PayloadTypeRegistryImpl<RegistryFriendlyByteBuf>;
-    static clientboundConfiguration(): PayloadTypeRegistry<FriendlyByteBuf>;
-    static clientboundPlay(): PayloadTypeRegistry<RegistryFriendlyByteBuf>;
     static get(paramarg0: ProtocolInfo<any>): PayloadTypeRegistryImpl<any>;
-    static serverboundConfiguration(): PayloadTypeRegistry<FriendlyByteBuf>;
-    static serverboundPlay(): PayloadTypeRegistry<RegistryFriendlyByteBuf>;
     private constructor(arg0: ConnectionProtocol, arg1: PacketFlow)
     readonly flow: PacketFlow;
     // private maxPacketSizes: { [key: string]: any };

@@ -10,5 +10,4 @@ export class Base64OutputStream extends BaseNCodecOutputStream<Base64, Base64Out
     constructor(arg0: OutputStream, arg1: boolean)
     constructor(arg0: OutputStream, arg1: boolean, arg2: number, arg3: number[])
     constructor(arg0: OutputStream, arg1: boolean, arg2: number, arg3: number[], arg4: CodecPolicy)
-    constructor(arg0: Base64OutputStream$Builder, arg1: any)
 }

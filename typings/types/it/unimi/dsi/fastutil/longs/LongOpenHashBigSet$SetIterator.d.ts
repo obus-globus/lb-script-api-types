@@ -3,7 +3,7 @@ import type { LongIterator } from '../../../../../it/unimi/dsi/fastutil/longs/Lo
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class LongOpenHashBigSet$SetIterator extends Object implements LongIterator {
-    constructor(null_: (Object | null)[], arg1: any)
+    private constructor(null_: (Object | null)[])
     // private base: number;
     // private c: number;
     // private displ: number;

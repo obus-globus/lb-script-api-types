@@ -4,7 +4,7 @@ import type { HtmlLayout } from '../../../../../../org/apache/logging/log4j/core
 import type { HtmlLayout$FontSize } from '../../../../../../org/apache/logging/log4j/core/layout/HtmlLayout$FontSize.d.ts'
 import type { Builder } from '../../../../../../org/apache/logging/log4j/core/util/Builder.d.ts'
 export class HtmlLayout$Builder extends Object implements Builder<HtmlLayout> {
-    constructor(arg0: any)
+    private constructor()
     // private charset: Charset;
     // private contentType: string;
     // private datePattern: string;

@@ -36,7 +36,7 @@ export class ParameterBuilder<T extends unknown> extends Object {
     autocompletedFrom(ignoreCase: boolean, minecraftPlaceholders: boolean, placeholdersProvider: () => string[] | null): ParameterBuilder<T>;
     autocompletedWith(autocompletionHandler: AutoCompletionProvider): ParameterBuilder<T>;
     build(): Parameter<T>;
-    optional(default_: T | null): ParameterBuilder<T>;
+    optional(default_?: T | null): ParameterBuilder<T>;
     required(): ParameterBuilder<T>;
     /**
      * Marks this parameter as a vararg.

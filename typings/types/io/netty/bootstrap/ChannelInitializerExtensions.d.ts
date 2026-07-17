@@ -2,6 +2,6 @@ import type { ChannelInitializerExtension } from '../../../io/netty/bootstrap/Ch
 import type { ClassLoader } from '../../../java/lang/ClassLoader.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class ChannelInitializerExtensions extends Object {
-    constructor(arg0: any)
+    private constructor()
     extensions(arg0: ClassLoader): ChannelInitializerExtension[];
 }

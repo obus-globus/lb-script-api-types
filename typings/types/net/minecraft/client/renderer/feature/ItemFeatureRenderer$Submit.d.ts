@@ -7,10 +7,7 @@ import type { TranslucentSubmit } from '../../../../../net/minecraft/client/rend
 import type { ItemStackRenderState$FoilType } from '../../../../../net/minecraft/client/renderer/item/ItemStackRenderState$FoilType.d.ts'
 import type { BakedQuad } from '../../../../../net/minecraft/client/resources/model/geometry/BakedQuad.d.ts'
 import type { ItemDisplayContext } from '../../../../../net/minecraft/world/item/ItemDisplayContext.d.ts'
-import type { Matrix4fc } from '../../../../../org/joml/Matrix4fc.d.ts'
 export class ItemFeatureRenderer$Submit extends Record implements ModelStorage, TranslucentSubmit {
-    static computeDistanceToCameraSq(parampose: Matrix4fc): number;
-    static computeDistanceToCameraSq(parampose: Matrix4fc, paramoriginX: number, paramoriginY: number, paramoriginZ: number): number;
     constructor(pose: PoseStack$Pose, displayContext: ItemDisplayContext, lightCoords: number, overlayCoords: number, outlineColor: number, tintLayers: number[], quads: BakedQuad[], foilType: ItemStackRenderState$FoilType)
     // private beId: number;
     // private displayContext: ItemDisplayContext;

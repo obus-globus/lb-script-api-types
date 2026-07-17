@@ -3,6 +3,6 @@ import type { ManagerFactory } from '../../../../../../../../org/apache/logging/
 import type { JdbcDatabaseManager } from '../../../../../../../../org/apache/logging/log4j/core/appender/db/jdbc/JdbcDatabaseManager.d.ts'
 import type { JdbcDatabaseManager$FactoryData } from '../../../../../../../../org/apache/logging/log4j/core/appender/db/jdbc/JdbcDatabaseManager$FactoryData.d.ts'
 export class JdbcDatabaseManager$JdbcDatabaseManagerFactory extends Object implements ManagerFactory<JdbcDatabaseManager, JdbcDatabaseManager$FactoryData> {
-    constructor(arg0: any)
+    private constructor()
     createManager(name: string, data: JdbcDatabaseManager$FactoryData): JdbcDatabaseManager;
 }

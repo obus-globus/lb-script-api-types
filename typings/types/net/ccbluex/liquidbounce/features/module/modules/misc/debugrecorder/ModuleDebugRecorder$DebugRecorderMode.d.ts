@@ -10,6 +10,7 @@ export abstract class ModuleDebugRecorder$DebugRecorderMode<T extends unknown> e
     // private packets: T[];
     /*not mapped: */ getPackets$net_ccbluex_liquidbounce(): T[];
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     disable(): void;
     enable(): void;
     protected recordPacket(packet: T): void;

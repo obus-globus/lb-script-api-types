@@ -3,7 +3,7 @@ import type { FixedChannelPool$AcquireTask } from '../../../../io/netty/channel/
 import type { Runnable } from '../../../../java/lang/Runnable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class FixedChannelPool$TimeoutTask extends Object implements Runnable {
-    constructor(null_: FixedChannelPool, arg1: FixedChannelPool$TimeoutTask)
+    private constructor(null_: FixedChannelPool)
     onTimeout(arg0: FixedChannelPool$AcquireTask): void;
     run(): void;
 }

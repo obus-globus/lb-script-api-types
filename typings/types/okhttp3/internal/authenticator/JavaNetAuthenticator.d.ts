@@ -9,7 +9,7 @@ export class JavaNetAuthenticator extends Object implements Authenticator {
     static Companion: Authenticator$Companion;
     static JAVA_NET_AUTHENTICATOR: Authenticator;
     static NONE: Authenticator;
-    constructor(defaultDns: Dns)
+    constructor(defaultDns?: Dns)
     // private defaultDns: Dns;
     authenticate(route: Route | null, response: Response): Request | null;
 }

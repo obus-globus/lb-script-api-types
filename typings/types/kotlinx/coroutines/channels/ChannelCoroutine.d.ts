@@ -1,6 +1,7 @@
 import type { CancellationException } from '../../../java/util/concurrent/CancellationException.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
+import type { Continuation } from '../../../kotlin/coroutines/Continuation.d.ts'
 import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { AbstractCoroutine } from '../../../kotlinx/coroutines/AbstractCoroutine.d.ts'
 import type { Job$Key } from '../../../kotlinx/coroutines/Job$Key.d.ts'
@@ -40,10 +41,14 @@ export class ChannelCoroutine<E extends unknown> extends AbstractCoroutine<void>
     iterator(): ChannelIterator<E>;
     offer(element: E): boolean;
     poll(): E | null;
-    receive(): E;
-    receiveCatching(): ChannelResult<E>;
-    receiveOrNull(): E | null;
-    send(element: E): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    receive($completion: Continuation<E>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    receiveCatching($completion: Continuation<ChannelResult<E>>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    receiveOrNull($completion: Continuation<E>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    send(element: E, $completion: Continuation<void>): any;
     tryReceive(): ChannelResult<E>;
     trySend(element: E): ChannelResult<void>;
 }

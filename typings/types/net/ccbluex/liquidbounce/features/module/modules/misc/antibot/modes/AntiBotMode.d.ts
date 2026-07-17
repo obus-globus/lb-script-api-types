@@ -7,6 +7,7 @@ export class AntiBotMode extends Mode implements AntiBotPredicate {
     static Companion: Tagged$Companion;
     protected constructor(name: string)
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     isBot(entity: Player): boolean;
     reset(): void;
 }

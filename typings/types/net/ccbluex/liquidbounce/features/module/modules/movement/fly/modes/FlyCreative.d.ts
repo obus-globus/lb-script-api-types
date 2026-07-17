@@ -15,6 +15,7 @@ export class FlyCreative extends Mode {
     // private /*not mapped: */ getMaxVelocity(): number;
     readonly packetHandler: EventHook<PacketEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     readonly repeatable: EventHook<GameTickEvent>;
     // private speed: number;
     // private /*not mapped: */ getSpeed(): number;

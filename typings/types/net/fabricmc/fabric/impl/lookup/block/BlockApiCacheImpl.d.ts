@@ -1,6 +1,5 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BlockApiCache } from '../../../../../../net/fabricmc/fabric/api/lookup/v1/block/BlockApiCache.d.ts'
-import type { BlockApiLookup } from '../../../../../../net/fabricmc/fabric/api/lookup/v1/block/BlockApiLookup.d.ts'
 import type { BlockApiLookup$BlockApiProvider } from '../../../../../../net/fabricmc/fabric/api/lookup/v1/block/BlockApiLookup$BlockApiProvider.d.ts'
 import type { BlockApiLookupImpl } from '../../../../../../net/fabricmc/fabric/impl/lookup/block/BlockApiLookupImpl.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
@@ -9,7 +8,6 @@ import type { Level } from '../../../../../../net/minecraft/world/level/Level.d.
 import type { BlockEntity } from '../../../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
 import type { BlockState } from '../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class BlockApiCacheImpl<A extends unknown, C extends unknown> extends Object implements BlockApiCache<A, C> {
-    static create<A extends unknown, C extends unknown>(paramarg0: BlockApiLookup<A, C>, paramarg1: ServerLevel, paramarg2: BlockPos): BlockApiCache<A, C>;
     constructor(arg0: BlockApiLookupImpl<A, C>, arg1: ServerLevel, arg2: BlockPos)
     // private blockEntityCacheValid: boolean;
     // private cachedBlockEntity: BlockEntity;

@@ -10,8 +10,6 @@ import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
  */
 export class LinearPositionExtrapolation extends Object implements PositionExtrapolation {
     static Companion: PositionExtrapolation$Companion;
-    static constant(pos: Vec3): PositionExtrapolation;
-    static getBestForEntity(target: Entity): PositionExtrapolation;
     constructor(entity: Entity)
     constructor(basePosition: Vec3, velocity: Vec3)
     // private basePosition: Vec3;

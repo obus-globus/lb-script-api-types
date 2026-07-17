@@ -16,7 +16,6 @@ export abstract class CustomRecipe extends Object implements CraftingRecipe {
     static CODEC: Codec<Recipe<any>>;
     static KEY_CODEC: Codec<ResourceKey<Recipe<any>>>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<any>>;
-    static defaultCraftingReminder(paraminput: CraftingInput): ItemStack[];
     constructor()
     category(): CraftingBookCategory;
     getRemainingItems(input: CraftingInput): ItemStack[];

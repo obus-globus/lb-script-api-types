@@ -11,7 +11,6 @@ import type { Logger } from '../../../org/slf4j/Logger.d.ts'
 export class RegistryAccess$ImmutableRegistryAccess extends Object implements BiomeModificationMarker, DimensionModificationMarker, RegistryAccess {
     static EMPTY: RegistryAccess$Frozen;
     static LOGGER: Logger;
-    static fromRegistryOfRegistries(paramregistries: Object[][]): RegistryAccess$Frozen;
     constructor(entries: Stream<RegistryAccess$RegistryEntry<Object>>)
     constructor(registries: (Object | null)[][])
     constructor(registries: Map<ResourceKey<(Object | null)[]>, (Object | null)[]>)

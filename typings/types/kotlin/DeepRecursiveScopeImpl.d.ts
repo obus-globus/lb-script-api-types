@@ -10,7 +10,8 @@ export class DeepRecursiveScopeImpl<T extends unknown, R extends unknown> extend
     // private function: (param0: DeepRecursiveScope<Object, Object>, param1: Object | null) => Object | null;
     // private result: Result<Object>;
     // private value: Object | null;
-    callRecursive(value: T): R;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    callRecursive(value: T, $completion: Continuation<R>): any;
     // private crossFunctionCompletion(currentFunction: (param0: DeepRecursiveScope<Object, Object>, param1: Object | null) => Object | null, cont: Continuation<Object>): Continuation<Object>;
     resumeWith(result: Result<R>): void;
     runCallLoop(): R;

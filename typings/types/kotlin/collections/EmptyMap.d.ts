@@ -7,7 +7,9 @@ export class EmptyMap extends Object implements Serializable {
     readonly keys: (Object | null)[];
     // private serialVersionUID: number;
     readonly size: number;
+    getSize(): number;
     readonly values: void[];
+    getValues(): void[];
     containsKey(key: Object | null): boolean;
     containsValue(value: void): boolean;
     equals(other: Object | null): boolean;

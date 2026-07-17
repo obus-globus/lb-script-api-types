@@ -3,9 +3,8 @@ import type { Char2DoubleOpenHashMap$MapEntry } from '../../../../../it/unimi/ds
 import type { Char2DoubleOpenHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/chars/Char2DoubleOpenHashMap$MapIterator.d.ts'
 import type { ObjectIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Char2DoubleOpenHashMap$EntryIterator extends Char2DoubleOpenHashMap$MapIterator<(param0: Char2DoubleMap$Entry) => void> implements ObjectIterator<Char2DoubleMap$Entry> {
-    constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
+    private constructor(null_: { [key: string]: any })
     // private entry: Char2DoubleOpenHashMap$MapEntry;
     acceptOnIndex(arg0: (param0: Char2DoubleMap$Entry) => void, arg1: number): void;
     next(): Char2DoubleOpenHashMap$MapEntry;

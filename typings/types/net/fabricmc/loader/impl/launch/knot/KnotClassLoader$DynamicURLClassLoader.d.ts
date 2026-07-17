@@ -11,6 +11,6 @@ export class KnotClassLoader$DynamicURLClassLoader extends URLClassLoader {
     static getSystemResources(paramarg0: string): Enumeration<URL>;
     static newInstance(paramarg0: URL[]): URLClassLoader;
     static newInstance(paramarg0: URL[], paramarg1: ClassLoader): URLClassLoader;
-    constructor(arg0: URL[], arg1: any)
+    private constructor(arg0: URL[])
     addURL(arg0: URL): void;
 }

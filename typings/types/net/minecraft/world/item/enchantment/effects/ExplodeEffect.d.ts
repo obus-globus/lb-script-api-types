@@ -19,7 +19,6 @@ import type { Block } from '../../../../../../net/minecraft/world/level/block/Bl
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class ExplodeEffect extends Record implements EnchantmentEntityEffect {
     static CODEC: MapCodec<ExplodeEffect>;
-    static bootstrap(paramregistry: MapCodec<EnchantmentEntityEffect>[]): MapCodec<EnchantmentEntityEffect>;
     constructor(attributeToUser: boolean, damageType: Optional<Holder<DamageType>>, knockbackMultiplier: Optional<LevelBasedValue>, immuneBlocks: Optional<Holder<Block>[]>, offset: Vec3, radius: LevelBasedValue, createFire: boolean, blockInteraction: Level$ExplosionInteraction, smallParticle: ParticleOptions, largeParticle: ParticleOptions, blockParticles: WeightedList<ExplosionParticleInfo>, sound: Holder<SoundEvent>)
     // private attributeToUser: boolean;
     // private blockInteraction: Level$ExplosionInteraction;

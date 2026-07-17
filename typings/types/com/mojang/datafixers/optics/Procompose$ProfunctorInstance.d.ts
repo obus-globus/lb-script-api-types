@@ -1,5 +1,4 @@
 import type { FunctionType } from '../../../../com/mojang/datafixers/FunctionType.d.ts'
-import type { App } from '../../../../com/mojang/datafixers/kinds/App.d.ts'
 import type { App2 } from '../../../../com/mojang/datafixers/kinds/App2.d.ts'
 import type { K2 } from '../../../../com/mojang/datafixers/kinds/K2.d.ts'
 import type { Procompose } from '../../../../com/mojang/datafixers/optics/Procompose.d.ts'
@@ -10,7 +9,6 @@ import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Procompose$ProfunctorInstance<F extends K2, G extends K2> extends Object implements Profunctor<Procompose$Mu<F, G>, Profunctor$Mu> {
-    static unbox<P extends K2, Proof extends Profunctor$Mu>(paramarg0: App<Proof, P>): Profunctor<P, Proof>;
     constructor(arg0: Profunctor<F, Profunctor$Mu>, arg1: Profunctor<G, Profunctor$Mu>)
     // private p1: Profunctor<F, Profunctor$Mu>;
     // private p2: Profunctor<G, Profunctor$Mu>;

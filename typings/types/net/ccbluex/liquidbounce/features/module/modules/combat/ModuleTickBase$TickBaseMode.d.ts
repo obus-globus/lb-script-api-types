@@ -7,8 +7,6 @@ export class ModuleTickBase$TickBaseMode extends Enum<ModuleTickBase$TickBaseMod
     static FUTURE: ModuleTickBase$TickBaseMode;
     static PAST: ModuleTickBase$TickBaseMode;
     static getEntries(): ModuleTickBase$TickBaseMode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleTickBase$TickBaseMode;
     static values(): ModuleTickBase$TickBaseMode[];

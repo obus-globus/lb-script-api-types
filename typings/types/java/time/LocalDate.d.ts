@@ -27,7 +27,6 @@ import type { TemporalField } from '../../java/time/temporal/TemporalField.d.ts'
 import type { TemporalQuery } from '../../java/time/temporal/TemporalQuery.d.ts'
 import type { TemporalUnit } from '../../java/time/temporal/TemporalUnit.d.ts'
 import type { ValueRange } from '../../java/time/temporal/ValueRange.d.ts'
-import type { Comparator } from '../../java/util/Comparator.d.ts'
 import type { Stream } from '../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../java/lang/CharSequence.d.ts'
@@ -36,7 +35,6 @@ export class LocalDate extends Object implements Serializable, ChronoLocalDate, 
     static MAX: LocalDate;
     static MIN: LocalDate;
     static from(paramarg0: TemporalAccessor): LocalDate;
-    static from(paramarg0: TemporalAccessor): ChronoLocalDate;
     static now(): LocalDate;
     static now(paramarg0: Clock): LocalDate;
     static now(paramarg0: ZoneId): LocalDate;
@@ -47,7 +45,6 @@ export class LocalDate extends Object implements Serializable, ChronoLocalDate, 
     static ofYearDay(paramarg0: number, paramarg1: number): LocalDate;
     static parse(paramarg0: CharSequence): LocalDate;
     static parse(paramarg0: CharSequence, paramarg1: DateTimeFormatter): LocalDate;
-    static timeLineOrder(): (param0: ChronoLocalDate, param1: ChronoLocalDate) => number;
     private constructor(arg0: number, arg1: number, arg2: number)
     // private day: number;
     readonly month: number;

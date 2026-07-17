@@ -2,7 +2,7 @@ import type { ByteArrayOutputStream } from '../../../../java/io/ByteArrayOutputS
 import type { OutputStream } from '../../../../java/io/OutputStream.d.ts'
 export class FileBackedOutputStream$MemoryOutput extends ByteArrayOutputStream {
     static nullOutputStream(): OutputStream;
-    constructor(arg0: any)
+    private constructor()
     getBuffer(): number[];
     getCount(): number;
 }

@@ -21,7 +21,6 @@ export class PromiseReactionJobNode$PromiseReactionJobRootNode extends JavaScrip
     static MODULE_DUMMY_FRAMEDESCRIPTOR: FrameDescriptor;
     static createConstantNode(paramconstant: Object): RootNode;
     static findAsynchronousFrames(paramrootNode: JavaScriptRootNode, paramframe: Frame): TruffleStackTraceElement[];
-    static findInstrumentableParent(paramnode: Node): Node;
     constructor(context: JSContext)
     // private callHandlerNode: JSFunctionCallNode;
     // private callRejectNode: JSFunctionCallNode;

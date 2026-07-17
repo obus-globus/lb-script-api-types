@@ -8,8 +8,6 @@ export class Visibility extends Enum<Visibility> implements Tagged {
     static HEADER: Visibility;
     static NAME_ONLY: Visibility;
     static getEntries(): Visibility[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): Visibility;
     static values(): Visibility[];

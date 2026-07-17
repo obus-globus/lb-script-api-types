@@ -9,7 +9,6 @@ import type { EnchantmentEntityEffect } from '../../../../../../net/minecraft/wo
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class ApplyExhaustion extends Record implements EnchantmentEntityEffect {
     static CODEC: MapCodec<ApplyExhaustion>;
-    static bootstrap(paramregistry: MapCodec<EnchantmentEntityEffect>[]): MapCodec<EnchantmentEntityEffect>;
     constructor(amount: LevelBasedValue)
     // private amount: LevelBasedValue;
     amount(): LevelBasedValue;

@@ -111,9 +111,7 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     static OVERWORLD: ResourceKey<Level>;
     static RESOURCE_KEY_CODEC: Codec<ResourceKey<Level>>;
     static SHORT_PARTICLE_CLIP_RANGE: number;
-    static create(paramminY: number, paramheight: number): LevelHeightAccessor;
     static isInSpawnableBounds(parampos: BlockPos): boolean;
-    static transfer(paramarg0: AttachmentTarget, paramarg1: AttachmentTarget, paramarg2: boolean): void;
     constructor(levelData: WritableLevelData, dimension: ResourceKey<Level>, registryAccess: RegistryAccess, dimensionTypeRegistration: Holder<DimensionType>, isClientSide: boolean, isDebug: boolean, biomeZoomSeed: number, maxChainedNeighborUpdates: number)
     // private addend: number;
     // private attachedChangedListeners: Map<Object, Object>;

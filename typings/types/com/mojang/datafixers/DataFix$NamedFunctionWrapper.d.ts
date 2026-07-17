@@ -2,7 +2,6 @@ import type { DynamicOps } from '../../../com/mojang/serialization/DynamicOps.d.
 import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class DataFix$NamedFunctionWrapper<A extends unknown, B extends unknown> extends Object implements Function<DynamicOps<Object>, (param0: A) => B> {
-    static identity<T extends unknown>(): (param0: T) => T;
     constructor(arg0: string, arg1: (param0: DynamicOps<Object>) => Function<A, B>)
     // private delegate: (param0: DynamicOps<Object>) => Function<A, B>;
     // private name: string;

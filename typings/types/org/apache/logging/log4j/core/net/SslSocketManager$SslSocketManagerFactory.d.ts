@@ -5,7 +5,7 @@ import type { SslSocketManager } from '../../../../../../org/apache/logging/log4
 import type { SslSocketManager$SslFactoryData } from '../../../../../../org/apache/logging/log4j/core/net/SslSocketManager$SslFactoryData.d.ts'
 import type { TcpSocketManager$TcpSocketManagerFactory } from '../../../../../../org/apache/logging/log4j/core/net/TcpSocketManager$TcpSocketManagerFactory.d.ts'
 export class SslSocketManager$SslSocketManagerFactory extends TcpSocketManager$TcpSocketManagerFactory<SslSocketManager, SslSocketManager$SslFactoryData> {
-    constructor(arg0: any)
+    private constructor()
     createManager(name: string, os: OutputStream, socket: Socket, inetAddress: InetAddress, data: SslSocketManager$SslFactoryData): SslSocketManager;
     createManager(name: string, data: SslSocketManager$SslFactoryData): SslSocketManager;
     createSocket(data: SslSocketManager$SslFactoryData): Socket;

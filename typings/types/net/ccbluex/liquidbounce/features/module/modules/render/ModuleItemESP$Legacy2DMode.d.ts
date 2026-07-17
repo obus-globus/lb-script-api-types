@@ -12,6 +12,7 @@ export class ModuleItemESP$Legacy2DMode extends Mode {
     // private /*not mapped: */ getBackgroundAlpha(): number;
     // private entities: Entity[];
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     // private renderHandler: EventHook<WorldRenderEvent>;
     // private scale: number;
     // private /*not mapped: */ getScale(): number;

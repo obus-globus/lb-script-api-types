@@ -4,7 +4,7 @@ import type { HashCode } from '../../../../com/google/common/hash/HashCode.d.ts'
 import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
 import type { Checksum } from '../../../../java/util/zip/Checksum.d.ts'
 export class ChecksumHashFunction$ChecksumHasher extends AbstractByteHasher {
-    constructor(null_: ChecksumHashFunction, arg1: Checksum, arg2: any)
+    private constructor(null_: ChecksumHashFunction, checksum: Checksum)
     // private checksum: Checksum;
     hash(): HashCode;
     update(b: ByteBuffer): void;

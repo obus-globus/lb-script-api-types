@@ -9,6 +9,7 @@ export class AntiVoidFlagMode extends AntiVoidMode {
     // private height: number;
     // private /*not mapped: */ getHeight(): number;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private silent: boolean;
     // private /*not mapped: */ getSilent(): boolean;
     rescue(): boolean;

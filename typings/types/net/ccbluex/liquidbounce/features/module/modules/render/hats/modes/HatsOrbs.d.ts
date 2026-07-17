@@ -10,6 +10,7 @@ export class HatsOrbs extends HatsMode {
     static Companion: Tagged$Companion;
     static INSTANCE: HatsOrbs;
     readonly color: Color4b;
+    getColor(): Color4b;
     // private getPointX(angle: number, radius: number): number;
     // private getPointZ(angle: number, radius: number): number;
 }

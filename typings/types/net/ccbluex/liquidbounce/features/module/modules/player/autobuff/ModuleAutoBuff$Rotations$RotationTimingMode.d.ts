@@ -8,8 +8,6 @@ export class ModuleAutoBuff$Rotations$RotationTimingMode extends Enum<ModuleAuto
     static ON_TICK: ModuleAutoBuff$Rotations$RotationTimingMode;
     static ON_USE: ModuleAutoBuff$Rotations$RotationTimingMode;
     static getEntries(): ModuleAutoBuff$Rotations$RotationTimingMode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleAutoBuff$Rotations$RotationTimingMode;
     static values(): ModuleAutoBuff$Rotations$RotationTimingMode[];

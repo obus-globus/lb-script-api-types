@@ -8,7 +8,6 @@ import type { BlockState } from '../../../../../../net/minecraft/world/level/blo
 import type { FluidState } from '../../../../../../net/minecraft/world/level/material/FluidState.d.ts'
 export class FluidRendererImpl$FabricFactory extends Object implements FluidRendererFactory {
     static INSTANCE: FluidRendererFactory;
-    static getInstance(): FluidRendererFactory;
     constructor()
     createPlatformFluidRenderer(arg0: ColorProviderRegistry, arg1: LightPipelineProvider): FluidRenderer;
     getWaterBlockColorProvider(): BlendedColorProvider<BlockState>;

@@ -8,8 +8,6 @@ export class VerticalAnchor extends Enum<VerticalAnchor> implements Tagged {
     static MIDDLE: VerticalAnchor;
     static TOP: VerticalAnchor;
     static getEntries(): VerticalAnchor[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): VerticalAnchor;
     static values(): VerticalAnchor[];

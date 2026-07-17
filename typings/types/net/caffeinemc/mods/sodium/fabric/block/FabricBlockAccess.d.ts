@@ -14,7 +14,6 @@ import type { BlockState } from '../../../../../../net/minecraft/world/level/blo
 import type { FluidState } from '../../../../../../net/minecraft/world/level/material/FluidState.d.ts'
 export class FabricBlockAccess extends Object implements PlatformBlockAccess {
     static INSTANCE: PlatformBlockAccess;
-    static getInstance(): PlatformBlockAccess;
     constructor()
     getLightEmission(arg0: BlockState, arg1: BlockAndTintGetter, arg2: BlockPos): number;
     getNormalVectorShade(arg0: ModelQuadView, arg1: BlockAndTintGetter, arg2: boolean): number;

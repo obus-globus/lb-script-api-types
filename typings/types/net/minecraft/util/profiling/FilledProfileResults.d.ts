@@ -7,7 +7,6 @@ import type { ProfilerPathEntry } from '../../../../net/minecraft/util/profiling
 import type { ResultField } from '../../../../net/minecraft/util/profiling/ResultField.d.ts'
 export class FilledProfileResults extends Object implements ProfileResults {
     static PATH_SEPARATOR: string;
-    static demanglePath(parampath: string): string;
     constructor(entries: { [key: string]: ProfilerPathEntry }, startTimeNano: number, startTimeTicks: number, endTimeNano: number, endTimeTicks: number)
     readonly endTimeNano: number;
     readonly endTimeTicks: number;

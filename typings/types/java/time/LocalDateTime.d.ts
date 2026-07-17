@@ -22,14 +22,12 @@ import type { TemporalField } from '../../java/time/temporal/TemporalField.d.ts'
 import type { TemporalQuery } from '../../java/time/temporal/TemporalQuery.d.ts'
 import type { TemporalUnit } from '../../java/time/temporal/TemporalUnit.d.ts'
 import type { ValueRange } from '../../java/time/temporal/ValueRange.d.ts'
-import type { Comparator } from '../../java/util/Comparator.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../java/lang/CharSequence.d.ts'
 export class LocalDateTime extends Object implements Serializable, ChronoLocalDateTime<LocalDate>, Temporal, TemporalAdjuster {
     static MAX: LocalDateTime;
     static MIN: LocalDateTime;
     static from(paramarg0: TemporalAccessor): LocalDateTime;
-    static from(paramarg0: TemporalAccessor): ChronoLocalDateTime<any>;
     static now(): LocalDateTime;
     static now(paramarg0: Clock): LocalDateTime;
     static now(paramarg0: ZoneId): LocalDateTime;
@@ -44,7 +42,6 @@ export class LocalDateTime extends Object implements Serializable, ChronoLocalDa
     static ofInstant(paramarg0: Instant, paramarg1: ZoneId): LocalDateTime;
     static parse(paramarg0: CharSequence): LocalDateTime;
     static parse(paramarg0: CharSequence, paramarg1: DateTimeFormatter): LocalDateTime;
-    static timeLineOrder(): (param0: ChronoLocalDateTime<any>, param1: ChronoLocalDateTime<any>) => number;
     private constructor(arg0: LocalDate, arg1: LocalTime)
     // private date: LocalDate;
     // private time: LocalTime;

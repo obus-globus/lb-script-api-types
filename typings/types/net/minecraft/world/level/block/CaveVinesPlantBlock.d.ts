@@ -1,7 +1,6 @@
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { IntFunction } from '../../../../../java/util/function/IntFunction.d.ts'
-import type { ToIntFunction } from '../../../../../java/util/function/ToIntFunction.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Direction } from '../../../../../net/minecraft/core/Direction.d.ts'
 import type { ResourceKey } from '../../../../../net/minecraft/resources/ResourceKey.d.ts'
@@ -67,11 +66,9 @@ export class CaveVinesPlantBlock extends GrowingPlantBodyBlock implements CaveVi
     static dropResources(paramstate: BlockState, paramlevel: Level, parampos: BlockPos): void;
     static dropResources(paramstate: BlockState, paramlevel: Level, parampos: BlockPos, paramblockEntity: BlockEntity, parambreaker: Entity, paramtool: ItemStack): void;
     static dropResources(paramstate: BlockState, paramlevel: LevelAccessor, parampos: BlockPos, paramblockEntity: BlockEntity): void;
-    static emission(paramlightEmission: number): (param0: BlockState) => number;
     static getDrops(paramstate: BlockState, paramlevel: ServerLevel, parampos: BlockPos, paramblockEntity: BlockEntity): ItemStack[];
     static getDrops(paramstate: BlockState, paramlevel: ServerLevel, parampos: BlockPos, paramblockEntity: BlockEntity, parambreaker: Entity, paramtool: ItemInstance): ItemStack[];
     static getId(paramblockState: BlockState): number;
-    static hasGlowBerries(paramstate: BlockState): boolean;
     static isExceptionForConnection(paramstate: BlockState): boolean;
     static isFaceFull(paramshape: VoxelShape, paramdirection: Direction): boolean;
     static isShapeFullBlock(paramarg0: VoxelShape): boolean;
@@ -84,7 +81,6 @@ export class CaveVinesPlantBlock extends GrowingPlantBodyBlock implements CaveVi
     static updateFromNeighbourShapes(paramstate: BlockState, paramlevel: LevelAccessor, parampos: BlockPos): BlockState;
     static updateOrDestroy(paramblockState: BlockState, paramnewState: BlockState, paramlevel: LevelAccessor, paramblockPos: BlockPos, paramupdateFlags: number): void;
     static updateOrDestroy(paramblockState: BlockState, paramnewState: BlockState, paramlevel: LevelAccessor, paramblockPos: BlockPos, paramupdateFlags: number, paramupdateLimit: number): void;
-    static use(paramsourceEntity: Entity, paramstate: BlockState, paramlevel: Level, parampos: BlockPos): InteractionResult;
     constructor(properties: BlockBehaviour$Properties)
     codec(): MapCodec<CaveVinesPlantBlock>;
     createBlockStateDefinition(builder: StateDefinition$Builder<Block, BlockState>): void;

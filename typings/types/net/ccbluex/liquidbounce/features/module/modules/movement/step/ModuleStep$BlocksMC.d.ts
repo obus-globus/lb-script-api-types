@@ -20,6 +20,7 @@ export class ModuleStep$BlocksMC extends Mode {
     // private fakeLagHandler: EventHook<BlinkPacketEvent>;
     // private movementInputHandler: EventHook<MovementInputEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     // private recoveryTimer: number;
     // private /*not mapped: */ getRecoveryTimer(): number;
     readonly running: boolean;

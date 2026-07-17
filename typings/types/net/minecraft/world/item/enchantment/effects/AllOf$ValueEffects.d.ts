@@ -5,7 +5,6 @@ import type { RandomSource } from '../../../../../../net/minecraft/util/RandomSo
 import type { EnchantmentValueEffect } from '../../../../../../net/minecraft/world/item/enchantment/effects/EnchantmentValueEffect.d.ts'
 export class AllOf$ValueEffects extends Record implements EnchantmentValueEffect {
     static CODEC: MapCodec<AllOf$ValueEffects>;
-    static bootstrap(paramregistry: MapCodec<EnchantmentValueEffect>[]): MapCodec<EnchantmentValueEffect>;
     constructor(effects: EnchantmentValueEffect[])
     // private effects: EnchantmentValueEffect[];
     codec(): MapCodec<AllOf$ValueEffects>;

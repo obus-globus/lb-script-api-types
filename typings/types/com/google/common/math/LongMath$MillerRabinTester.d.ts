@@ -6,7 +6,7 @@ export class LongMath$MillerRabinTester extends Enum<LongMath$MillerRabinTester>
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): LongMath$MillerRabinTester;
     static values(): LongMath$MillerRabinTester[];
-    constructor(arg2: any)
+    private constructor()
     mulMod(a: number, b: number, m: number): number;
     // private powMod(a: number, p: number, m: number): number;
     squareMod(a: number, m: number): number;

@@ -7,16 +7,9 @@ import type { ResourceKey } from '../../../../../../../../net/minecraft/resource
 import type { RandomSource } from '../../../../../../../../net/minecraft/util/RandomSource.d.ts'
 import type { WeightedList } from '../../../../../../../../net/minecraft/util/random/WeightedList.d.ts'
 import type { StructureTemplatePool } from '../../../../../../../../net/minecraft/world/level/levelgen/structure/pools/StructureTemplatePool.d.ts'
-import type { DirectPoolAlias } from '../../../../../../../../net/minecraft/world/level/levelgen/structure/pools/alias/DirectPoolAlias.d.ts'
 import type { PoolAliasBinding } from '../../../../../../../../net/minecraft/world/level/levelgen/structure/pools/alias/PoolAliasBinding.d.ts'
-import type { RandomPoolAlias } from '../../../../../../../../net/minecraft/world/level/levelgen/structure/pools/alias/RandomPoolAlias.d.ts'
 export class RandomGroupPoolAlias extends Record implements PoolAliasBinding {
     static CODEC: MapCodec<RandomGroupPoolAlias>;
-    static direct(paramid: string, paramtarget: string): DirectPoolAlias;
-    static direct(paramalias: ResourceKey<StructureTemplatePool>, paramtarget: ResourceKey<StructureTemplatePool>): DirectPoolAlias;
-    static random(paramid: string, paramtargets: WeightedList<string>): RandomPoolAlias;
-    static random(paramid: ResourceKey<StructureTemplatePool>, paramtargets: WeightedList<ResourceKey<StructureTemplatePool>>): RandomPoolAlias;
-    static randomGroup(paramcombinations: WeightedList<PoolAliasBinding[]>): RandomGroupPoolAlias;
     constructor(groups: WeightedList<PoolAliasBinding[]>)
     // private groups: WeightedList<PoolAliasBinding[]>;
     allTargets(): Stream<ResourceKey<StructureTemplatePool>>;

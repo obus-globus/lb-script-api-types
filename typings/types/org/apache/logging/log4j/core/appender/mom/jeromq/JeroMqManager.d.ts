@@ -3,5 +3,5 @@ import type { JeroMqManager$JeroMqConfiguration } from '../../../../../../../../
 export class JeroMqManager extends AbstractManager {
     static SYS_PROPERTY_ENABLE_SHUTDOWN_HOOK: string;
     static SYS_PROPERTY_IO_THREADS: string;
-    constructor(arg0: string, arg1: JeroMqManager$JeroMqConfiguration, arg2: any)
+    private constructor(name: string, config: JeroMqManager$JeroMqConfiguration)
 }

@@ -17,7 +17,6 @@ export class TemporalPlainMonthDayPrototypeBuiltins$TemporalPlainMonthDayPrototy
     static toString: TemporalPlainMonthDayPrototypeBuiltins$TemporalPlainMonthDayPrototype;
     static valueOf: TemporalPlainMonthDayPrototypeBuiltins$TemporalPlainMonthDayPrototype;
     static with: TemporalPlainMonthDayPrototypeBuiltins$TemporalPlainMonthDayPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): TemporalPlainMonthDayPrototypeBuiltins$TemporalPlainMonthDayPrototype;
     static values(): TemporalPlainMonthDayPrototypeBuiltins$TemporalPlainMonthDayPrototype[];

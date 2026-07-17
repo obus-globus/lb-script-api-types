@@ -4,7 +4,7 @@ import type { SystemPropertyArbiter$Builder } from '../../../../../../../org/apa
 export class SystemPropertyArbiter extends Object implements Arbiter {
     static ELEMENT_TYPE: string;
     static newBuilder(): SystemPropertyArbiter$Builder;
-    constructor(arg0: string, arg1: string, arg2: any)
+    private constructor(propertyName: string, propertyValue: string)
     // private propertyName: string;
     // private propertyValue: string;
     isCondition(): boolean;

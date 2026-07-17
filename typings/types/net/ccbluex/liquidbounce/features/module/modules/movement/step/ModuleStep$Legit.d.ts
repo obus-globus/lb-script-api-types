@@ -8,4 +8,5 @@ export class ModuleStep$Legit extends Mode {
     static INSTANCE: ModuleStep$Legit;
     // private autoJumpHandler: EventHook<AllowAutoJumpEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
 }

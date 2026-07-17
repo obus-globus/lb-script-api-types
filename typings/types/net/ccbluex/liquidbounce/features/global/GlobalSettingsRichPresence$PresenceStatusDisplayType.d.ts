@@ -9,8 +9,6 @@ export class GlobalSettingsRichPresence$PresenceStatusDisplayType extends Enum<G
     static NAME: GlobalSettingsRichPresence$PresenceStatusDisplayType;
     static STATE: GlobalSettingsRichPresence$PresenceStatusDisplayType;
     static getEntries(): GlobalSettingsRichPresence$PresenceStatusDisplayType[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): GlobalSettingsRichPresence$PresenceStatusDisplayType;
     static values(): GlobalSettingsRichPresence$PresenceStatusDisplayType[];

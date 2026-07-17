@@ -19,6 +19,7 @@ export class GenericDistanceHSBColorMode<T extends unknown> extends GenericColor
     // private fixedAlpha: number | null;
     // private hue: CurveValue;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private saturation: number;
     // private /*not mapped: */ getSaturation(): number;
     getColor(param: T): Color4b;

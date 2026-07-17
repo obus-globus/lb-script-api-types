@@ -4,7 +4,7 @@ import type { OutputStream } from '../../../../java/io/OutputStream.d.ts'
 import type { InetSocketAddress } from '../../../../java/net/InetSocketAddress.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class PcapWriteHandler$Builder extends Object {
-    constructor(arg0: any)
+    private constructor()
     // private captureZeroByte: boolean;
     // private channelType: PcapWriteHandler$ChannelType;
     // private handlerAddr: InetSocketAddress;

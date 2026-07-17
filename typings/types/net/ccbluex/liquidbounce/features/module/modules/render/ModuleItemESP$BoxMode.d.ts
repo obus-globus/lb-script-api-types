@@ -14,6 +14,7 @@ export class ModuleItemESP$BoxMode extends Mode {
     // private mergeIntersecting: boolean;
     // private /*not mapped: */ getMergeIntersecting(): boolean;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     // private renderHandler: EventHook<WorldRenderEvent>;
     // private tickHandler: EventHook<GameTickEvent>;
     disable(): void;

@@ -8,7 +8,6 @@ import type { TaskChainer } from '../../../net/minecraft/util/TaskChainer.d.ts'
 import type { Logger } from '../../../org/slf4j/Logger.d.ts'
 export class FutureChain extends Object implements AutoCloseable, TaskChainer {
     static LOGGER: Logger;
-    static immediate(paramexecutor: Executor): (param0: CompletableFuture<Object>, param1: (param0: Object | null) => void) => void;
     constructor(executor: Executor)
     // private closed: boolean;
     // private executor: Executor;

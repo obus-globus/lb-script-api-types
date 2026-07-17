@@ -2,7 +2,7 @@ import type { Object } from '../../java/lang/Object.d.ts'
 import type { Duration } from '../../kotlin/time/Duration.d.ts'
 import type { TimeMark } from '../../kotlin/time/TimeMark.d.ts'
 export class AdjustedTimeMark extends Object implements TimeMark {
-    constructor(mark: TimeMark, adjustment: Duration)
+    protected constructor()
     // private adjustment: Duration;
 // (invalid TS: name contains '-')     /*not mapped: */ getAdjustment-UwyO8pc(): Duration;
     readonly mark: TimeMark;

@@ -6,5 +6,6 @@ export class HeightMode$Health extends HeightMode {
     static Companion: Tagged$Companion;
     constructor(parent: ModeValueGroup<any>)
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     getHeight(entity: Entity, partialTicks: number): number;
 }

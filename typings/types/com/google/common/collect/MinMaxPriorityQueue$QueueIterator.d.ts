@@ -2,7 +2,7 @@ import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class MinMaxPriorityQueue$QueueIterator extends Object implements Iterator<E> {
-    constructor(null_: Object[], arg1: any)
+    private constructor(null_: Object[])
     // private canRemove: boolean;
     // private cursor: number;
     // private expectedModCount: number;

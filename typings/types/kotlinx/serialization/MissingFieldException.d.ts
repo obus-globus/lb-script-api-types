@@ -1,7 +1,6 @@
 import type { Throwable } from '../../java/lang/Throwable.d.ts'
 import type { SerializationException } from '../../kotlinx/serialization/SerializationException.d.ts'
 export class MissingFieldException extends SerializationException {
-    constructor(missingField: string)
     constructor(missingField: string, serialName: string)
     constructor(missingFields: string[], serialName: string)
     constructor(missingFields: string[], message: string | null, cause: Throwable | null)

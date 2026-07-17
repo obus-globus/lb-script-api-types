@@ -16,4 +16,5 @@ export class FastClimb$Motion extends Mode {
     // private /*not mapped: */ getClimbMotion(): number;
     readonly moveHandler: EventHook<PlayerMoveEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
 }

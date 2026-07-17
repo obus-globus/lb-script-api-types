@@ -8,8 +8,6 @@ import type { AltModelBlockRenderer } from '../../../../../../../net/fabricmc/fa
 import type { BlockColors } from '../../../../../../../net/minecraft/client/color/block/BlockColors.d.ts'
 export class IndigoRenderer extends Object implements Renderer {
     static INSTANCE: IndigoRenderer;
-    static get(): Renderer;
-    static register(paramarg0: Renderer): void;
     private constructor()
     altModelBlockRenderer(arg0: boolean, arg1: boolean, arg2: BlockColors): AltModelBlockRenderer;
     mutableMesh(): MutableMesh;

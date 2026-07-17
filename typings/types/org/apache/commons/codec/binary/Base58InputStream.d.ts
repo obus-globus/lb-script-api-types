@@ -6,5 +6,4 @@ export class Base58InputStream extends BaseNCodecInputStream<Base58, Base58Input
     static builder(): Base58InputStream$Builder;
     static nullInputStream(): InputStream;
     constructor(arg0: InputStream)
-    constructor(arg0: Base58InputStream$Builder, arg1: any)
 }

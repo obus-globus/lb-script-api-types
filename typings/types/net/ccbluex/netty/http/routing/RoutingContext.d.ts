@@ -26,13 +26,13 @@ export class RoutingContext extends Object {
     internalServerError(reason: string): void;
     notFound(path: string, reason: string): void;
     receive<T extends unknown>(gson: Gson): T;
-    respond(body: JsonElement, gson: Gson): void;
+    respond(body: JsonElement, gson?: Gson): void;
     respond(response: FullHttpResponse): void;
-    respond(status: HttpResponseStatus, body: JsonElement, gson: Gson): void;
-    respond(status: HttpResponseStatus, body: Object, gson: Gson): void;
-    respond(body: Object, gson: Gson): void;
+    respond(status: HttpResponseStatus, body: JsonElement, gson?: Gson): void;
+    respond(status: HttpResponseStatus, body: Object, gson?: Gson): void;
+    respond(body: Object, gson?: Gson): void;
     respondFile(file: File): void;
-    respondFileStream(stream: InputStream, contentType: string | null, contentLength: number): void;
+    respondFileStream(stream: InputStream, contentType?: string | null, contentLength?: number): void;
     respondNoContent(): void;
     serviceUnavailable(reason: string): void;
     unauthorized(reason: string): void;

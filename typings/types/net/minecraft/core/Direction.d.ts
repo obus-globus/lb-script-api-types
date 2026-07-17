@@ -1,12 +1,8 @@
 import type { Codec } from '../../../com/mojang/serialization/Codec.d.ts'
-import type { Keyable } from '../../../com/mojang/serialization/Keyable.d.ts'
 import type { ByteBuf } from '../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
-import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { IntFunction } from '../../../java/util/function/IntFunction.d.ts'
-import type { Supplier } from '../../../java/util/function/Supplier.d.ts'
 import type { Stream } from '../../../java/util/stream/Stream.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 import type { Direction$Axis } from '../../../net/minecraft/core/Direction$Axis.d.ts'
 import type { Direction$AxisDirection } from '../../../net/minecraft/core/Direction$AxisDirection.d.ts'
@@ -40,14 +36,9 @@ export class Direction extends Enum<Direction> implements StringRepresentable {
     static allShuffled(paramrandom: RandomSource): Direction[];
     static axisStepOrder(parammovement: Vec3): Direction$Axis[];
     static byName(paramname: string): Direction;
-    static createNameLookup<T extends StringRepresentable>(paramvalueArray: T[]): (param0: string) => T;
-    static createNameLookup<T extends unknown>(paramvalueArray: T[], paramconverter: (param0: T) => string): (param0: string) => T;
     static from2DDataValue(paramdata: number): Direction;
     static from3DDataValue(paramdata: number): Direction;
     static fromAxisAndDirection(paramaxis: Direction$Axis, paramdirection: Direction$AxisDirection): Direction;
-    static fromEnum<E extends Enum<E> & StringRepresentable>(paramvalues: () => E[]): StringRepresentable$EnumCodec<E>;
-    static fromEnumWithMapping<E extends Enum<E> & StringRepresentable>(paramvalues: () => E[], paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<E>;
-    static fromValues<T extends StringRepresentable>(paramvalues: () => T[]): Codec<T>;
     static fromYRot(paramyRot: number): Direction;
     static get(paramaxisDirection: Direction$AxisDirection, paramaxis: Direction$Axis): Direction;
     static getApproximateNearest(paramdx: number, paramdy: number, paramdz: number): Direction;
@@ -58,7 +49,6 @@ export class Direction extends Enum<Direction> implements StringRepresentable {
     static getNearest(paramvec: Vec3i, paramorElse: Direction): Direction;
     static getRandom(paramarg0: RandomSource): Direction;
     static getYRot(paramdirection: Direction): number;
-    static keys(paramvalues: StringRepresentable[]): Keyable;
     static orderedByNearest(paramentity: Entity): Direction[];
     static rotate(parammatrix: Matrix4fc, paramfacing: Direction): Direction;
     static stream(): Stream<Direction>;

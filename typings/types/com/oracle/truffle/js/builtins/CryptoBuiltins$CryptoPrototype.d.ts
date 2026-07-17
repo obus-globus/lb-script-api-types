@@ -9,7 +9,6 @@ import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class CryptoBuiltins$CryptoPrototype extends Enum<CryptoBuiltins$CryptoPrototype> implements BuiltinEnum<CryptoBuiltins$CryptoPrototype> {
     static getRandomValues: CryptoBuiltins$CryptoPrototype;
     static randomUUID: CryptoBuiltins$CryptoPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): CryptoBuiltins$CryptoPrototype;
     static values(): CryptoBuiltins$CryptoPrototype[];

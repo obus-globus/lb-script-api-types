@@ -11,7 +11,7 @@ import type { Pair } from '../../../../ai/djl/util/Pair.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ScaledDotProductAttentionBlock extends AbstractBlock {
     static builder(): ScaledDotProductAttentionBlock$Builder;
-    constructor(arg0: ScaledDotProductAttentionBlock$Builder, arg1: any)
+    private constructor(arg0: ScaledDotProductAttentionBlock$Builder)
     // private attentionProbsDropout: Dropout;
     // private embeddingSize: number;
     // private headCount: number;

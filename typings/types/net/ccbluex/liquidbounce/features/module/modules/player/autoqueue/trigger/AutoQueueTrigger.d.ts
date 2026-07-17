@@ -6,4 +6,5 @@ export class AutoQueueTrigger extends Mode {
     protected constructor(name: string)
     /*not mapped: */ isTriggered(): boolean;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
 }

@@ -1,3 +1,4 @@
+import type { Continuation } from '../../../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { ToggleableValueGroup } from '../../../../../../../net/ccbluex/liquidbounce/config/types/group/ToggleableValueGroup.d.ts'
 import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { SprintEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/SprintEvent.d.ts'
@@ -25,7 +26,8 @@ export class ModuleAutoClicker$AttackButton extends ToggleableValueGroup {
     // private sprintHandler: EventHook<SprintEvent>;
     // private weapon: WeaponType[];
     // private /*not mapped: */ getWeapon(): WeaponType[];
-    encounterItemUse(): boolean;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    encounterItemUse($completion: Continuation<boolean>): any;
     isCriticalHit(entity: Entity): boolean;
     isOnObjective(): boolean;
     isWeaponSelected(): boolean;

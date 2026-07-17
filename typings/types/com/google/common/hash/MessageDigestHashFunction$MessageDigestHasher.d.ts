@@ -3,7 +3,7 @@ import type { HashCode } from '../../../../com/google/common/hash/HashCode.d.ts'
 import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
 import type { MessageDigest } from '../../../../java/security/MessageDigest.d.ts'
 export class MessageDigestHashFunction$MessageDigestHasher extends AbstractByteHasher {
-    constructor(arg0: MessageDigest, arg1: number, arg2: any)
+    private constructor(digest: MessageDigest, bytes: number)
     // private bytes: number;
     // private digest: MessageDigest;
     // private done: boolean;

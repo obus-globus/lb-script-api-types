@@ -13,4 +13,5 @@ export class FastClimb$Clip extends Mode {
     static INSTANCE: FastClimb$Clip;
     readonly moveHandler: EventHook<PlayerMoveEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
 }

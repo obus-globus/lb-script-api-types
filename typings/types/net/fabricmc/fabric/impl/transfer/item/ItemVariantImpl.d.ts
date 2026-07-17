@@ -8,15 +8,10 @@ import type { RegistryFriendlyByteBuf } from '../../../../../../net/minecraft/ne
 import type { StreamCodec } from '../../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { Item } from '../../../../../../net/minecraft/world/item/Item.d.ts'
 import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemStack.d.ts'
-import type { ItemLike } from '../../../../../../net/minecraft/world/level/ItemLike.d.ts'
 export class ItemVariantImpl extends Object implements ItemVariant {
     static CODEC: Codec<ItemVariant>;
     static PACKET_CODEC: StreamCodec<RegistryFriendlyByteBuf, ItemVariant>;
-    static blank(): ItemVariant;
     static getMaxStackSize(paramarg0: ItemVariant): number;
-    static of(paramarg0: ItemStack): ItemVariant;
-    static of(paramarg0: ItemLike): ItemVariant;
-    static of(paramarg0: ItemLike, paramarg1: DataComponentPatch): ItemVariant;
     static of(paramarg0: Holder<Item>, paramarg1: DataComponentPatch): ItemVariant;
     static of(paramarg0: Item, paramarg1: DataComponentPatch): ItemVariant;
     constructor(arg0: Item, arg1: DataComponentPatch)

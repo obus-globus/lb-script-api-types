@@ -8,8 +8,6 @@ export class ModuleProphuntESP$Tracking extends Enum<ModuleProphuntESP$Tracking>
     static Companion: Tagged$Companion;
     static FALLING_BLOCKS: ModuleProphuntESP$Tracking;
     static getEntries(): ModuleProphuntESP$Tracking[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleProphuntESP$Tracking;
     static values(): ModuleProphuntESP$Tracking[];

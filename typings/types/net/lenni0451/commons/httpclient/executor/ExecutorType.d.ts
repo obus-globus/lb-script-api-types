@@ -10,7 +10,7 @@ export class ExecutorType extends Enum<ExecutorType> {
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ExecutorType;
     static values(): ExecutorType[];
-    constructor(arg2: ExecutorType)
+    private constructor()
     readonly available: boolean;
     init(): void;
     initExecutor(arg0: HttpClient): RequestExecutor;

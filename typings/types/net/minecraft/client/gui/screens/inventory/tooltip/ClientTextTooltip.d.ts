@@ -5,10 +5,7 @@ import type { ClientTooltipComponent } from '../../../../../../../net/minecraft/
 import type { Style } from '../../../../../../../net/minecraft/network/chat/Style.d.ts'
 import type { FormattedCharSequence } from '../../../../../../../net/minecraft/util/FormattedCharSequence.d.ts'
 import type { FormattedCharSink } from '../../../../../../../net/minecraft/util/FormattedCharSink.d.ts'
-import type { TooltipComponent } from '../../../../../../../net/minecraft/world/inventory/tooltip/TooltipComponent.d.ts'
 export class ClientTextTooltip extends Object implements ClientTooltipComponent {
-    static create(paramcharSequence: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean): ClientTooltipComponent;
-    static create(paramcomponent: TooltipComponent): ClientTooltipComponent;
     constructor(text: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean)
     // private text: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     extractImage(font: Font, x: number, y: number, w: number, h: number, graphics: GuiGraphicsExtractor): void;

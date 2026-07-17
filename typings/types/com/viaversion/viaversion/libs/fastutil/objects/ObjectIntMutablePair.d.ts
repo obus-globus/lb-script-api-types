@@ -1,11 +1,8 @@
 import type { ObjectIntPair } from '../../../../../../com/viaversion/viaversion/libs/fastutil/objects/ObjectIntPair.d.ts'
 import type { Serializable } from '../../../../../../java/io/Serializable.d.ts'
-import type { Comparator } from '../../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ObjectIntMutablePair<K extends unknown> extends Object implements ObjectIntPair<K>, Serializable {
-    static lexComparator<K extends unknown>(): (param0: ObjectIntPair<K>, param1: ObjectIntPair<K>) => number;
     static of<K extends unknown>(paramarg0: K, paramarg1: number): ObjectIntMutablePair<K>;
-    static of<K extends unknown>(paramarg0: K, paramarg1: number): ObjectIntPair<K>;
     constructor(arg0: K, arg1: number)
     // private left: K;
     // private right: number;

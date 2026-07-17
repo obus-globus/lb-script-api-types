@@ -7,8 +7,6 @@ export class ModuleItemChams$ShieldTintMode extends Enum<ModuleItemChams$ShieldT
     static MULTIPLY: ModuleItemChams$ShieldTintMode;
     static OVERRIDE: ModuleItemChams$ShieldTintMode;
     static getEntries(): ModuleItemChams$ShieldTintMode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleItemChams$ShieldTintMode;
     static values(): ModuleItemChams$ShieldTintMode[];

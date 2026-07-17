@@ -171,12 +171,10 @@ export class Hoglin extends Animal implements Enemy, HoglinBase {
     static getInputVector(paraminput: Vec3, paramspeed: number, paramyRot: number): Vec3;
     static getSpeedUpSecondsWhenFeeding(paramticksUntilAdult: number): number;
     static getViewScale(): number;
-    static hurtAndThrowTarget(paramlevel: ServerLevel, parambody: LivingEntity, paramtarget: LivingEntity): boolean;
     static makeAgeLockedParticle(paramlevel: Level, parammob: Mob, paramageLockParticleTimer: number, paramisAgeLocked: boolean): number;
     static resetForwardDirectionOfRelativePortalPosition(paramoffsets: Vec3): Vec3;
     static setAgeLocked(parammob: Mob, paramisAgedLocked: () => boolean, paramplayer: Player, paramitemInHand: ItemStack, paramsetAgeLockData: (param0: Mob) => void): void;
     static setViewScale(paramviewScale: number): void;
-    static throwTarget(parambody: LivingEntity, paramtarget: LivingEntity): void;
     constructor(type: EntityType<Hoglin>, level: Level)
     readonly attackAnimationRemainingTicks: number;
     // private cannotBeHunted: boolean;

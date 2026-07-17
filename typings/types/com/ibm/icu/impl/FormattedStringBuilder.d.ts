@@ -5,7 +5,6 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 export class FormattedStringBuilder extends Object implements Appendable, CharSequence {
     static EMPTY: FormattedStringBuilder;
-    static compare(paramarg0: CharSequence, paramarg1: CharSequence): number;
     static unwrapField(paramarg0: Object): Format$Field;
     constructor()
     constructor(arg0: FormattedStringBuilder)

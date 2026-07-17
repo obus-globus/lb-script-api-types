@@ -8,8 +8,6 @@ export class Limit extends Enum<Limit> implements Tagged {
     static PARTICLES_AMOUNT: Limit;
     static PARTICLES_SPEED: Limit;
     static getEntries(): Limit[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): Limit;
     static values(): Limit[];

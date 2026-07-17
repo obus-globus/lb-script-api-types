@@ -11,7 +11,7 @@ import type { SuspendHandlerBehavior$DiscardLatest$Companion } from '../../../..
 export class SuspendHandlerBehavior$DiscardLatest extends Record implements SuspendHandlerBehavior {
     static Companion: SuspendHandlerBehavior$DiscardLatest$Companion;
     static Default: SuspendHandlerBehavior$DiscardLatest;
-    constructor(onCancellation: (() => void) | null)
+    constructor(onCancellation?: (() => void) | null)
     // private onCancellation: (() => void) | null;
     /*not mapped: */ onCancellation(): (() => void) | null;
     component1(): (() => void) | null;

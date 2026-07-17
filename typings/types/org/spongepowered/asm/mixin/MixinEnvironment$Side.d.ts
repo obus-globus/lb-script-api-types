@@ -7,7 +7,7 @@ export class MixinEnvironment$Side extends Enum<MixinEnvironment$Side> {
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): MixinEnvironment$Side;
     static values(): MixinEnvironment$Side[];
-    constructor(arg2: any)
+    private constructor()
     detect(): boolean;
     name(): "UNKNOWN" | "CLIENT" | "SERVER";
 }

@@ -11,7 +11,6 @@ export class WebAssemblyTablePrototypeBuiltins$WebAssemblyTablePrototype extends
     static grow: WebAssemblyTablePrototypeBuiltins$WebAssemblyTablePrototype;
     static length: WebAssemblyTablePrototypeBuiltins$WebAssemblyTablePrototype;
     static set: WebAssemblyTablePrototypeBuiltins$WebAssemblyTablePrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): WebAssemblyTablePrototypeBuiltins$WebAssemblyTablePrototype;
     static values(): WebAssemblyTablePrototypeBuiltins$WebAssemblyTablePrototype[];

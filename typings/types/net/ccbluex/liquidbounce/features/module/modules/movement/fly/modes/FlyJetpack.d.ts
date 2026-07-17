@@ -7,5 +7,6 @@ export class FlyJetpack extends Mode {
     static Companion: Tagged$Companion;
     static INSTANCE: FlyJetpack;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     readonly repeatable: EventHook<GameTickEvent>;
 }

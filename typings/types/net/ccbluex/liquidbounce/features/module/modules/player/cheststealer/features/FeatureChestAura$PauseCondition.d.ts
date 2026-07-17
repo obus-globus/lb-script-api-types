@@ -8,8 +8,6 @@ export class FeatureChestAura$PauseCondition extends Enum<FeatureChestAura$Pause
     static Companion: Tagged$Companion;
     static USING_ITEM: FeatureChestAura$PauseCondition;
     static getEntries(): FeatureChestAura$PauseCondition[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): FeatureChestAura$PauseCondition;
     static values(): FeatureChestAura$PauseCondition[];

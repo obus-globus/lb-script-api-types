@@ -2,7 +2,7 @@ import type { HashedWheelTimer$HashedWheelTimeout } from '../../../io/netty/util
 import type { Timeout } from '../../../io/netty/util/Timeout.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class HashedWheelTimer$HashedWheelBucket extends Object {
-    constructor(arg0: any)
+    private constructor()
     // private head: HashedWheelTimer$HashedWheelTimeout;
     // private tail: HashedWheelTimer$HashedWheelTimeout;
     addTimeout(arg0: HashedWheelTimer$HashedWheelTimeout): void;

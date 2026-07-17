@@ -21,7 +21,7 @@ export class Crc16 extends Object implements Checksum {
     static modbus(): Crc16;
     static nrsc5(): Crc16;
     static usb(): Crc16;
-    constructor(arg0: Crc16$Builder, arg1: any)
+    private constructor(arg0: Crc16$Builder)
     // private crc: number;
     // private init: number;
     // private table: number[];

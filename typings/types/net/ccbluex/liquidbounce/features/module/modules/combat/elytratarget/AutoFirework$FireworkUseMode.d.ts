@@ -8,8 +8,6 @@ export class AutoFirework$FireworkUseMode extends Enum<AutoFirework$FireworkUseM
     static NORMAL: AutoFirework$FireworkUseMode;
     static PACKET: AutoFirework$FireworkUseMode;
     static getEntries(): AutoFirework$FireworkUseMode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): AutoFirework$FireworkUseMode;
     static values(): AutoFirework$FireworkUseMode[];

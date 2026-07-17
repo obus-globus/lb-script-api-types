@@ -10,7 +10,6 @@ import type { AbstractConsecutiveExecutor$Status } from '../../../../net/minecra
 import type { StrictQueue } from '../../../../net/minecraft/util/thread/StrictQueue.d.ts'
 import type { TaskScheduler } from '../../../../net/minecraft/util/thread/TaskScheduler.d.ts'
 export abstract class AbstractConsecutiveExecutor<T extends Runnable> extends Object implements Runnable, ProfilerMeasured, TaskScheduler<T> {
-    static wrapExecutor(paramname: string, paramexecutor: Executor): TaskScheduler<() => void>;
     constructor(queue: StrictQueue<T>, executor: Executor, name: string)
     // private executor: Executor;
     // private name: string;

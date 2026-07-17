@@ -13,7 +13,6 @@ import type { ReportEnvironment } from '../../../../../../net/minecraft/client/m
 import type { ReportType } from '../../../../../../net/minecraft/client/multiplayer/chat/report/ReportType.d.ts'
 import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
 export class AbuseReportSender$Services extends Record implements AbuseReportSender {
-    static create(paramenvironment: ReportEnvironment, paramuserApiService: UserApiService): AbuseReportSender;
     constructor(environment: ReportEnvironment, userApiService: UserApiService)
     // private environment: ReportEnvironment;
     // private userApiService: UserApiService;

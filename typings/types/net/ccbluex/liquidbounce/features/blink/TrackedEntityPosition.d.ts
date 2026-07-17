@@ -6,7 +6,7 @@ import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class TrackedEntityPosition extends Object {
     constructor(entity: Entity)
-    constructor(initialPos: Vec3)
+    constructor(initialPos?: Vec3)
     base: Vec3;
     // private codec: VecDeltaCodec;
     handlePacket(packet: Packet<any>, level: ClientLevel, target: Entity): Vec3 | null;

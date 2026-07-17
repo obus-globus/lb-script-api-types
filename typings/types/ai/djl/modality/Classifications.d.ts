@@ -7,7 +7,6 @@ import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../java/util/Iterator.d.ts'
 export class Classifications extends Object implements Ensembleable<Classifications>, JsonSerializable {
-    static ensemble<T extends Ensembleable<T>>(paramarg0: T[]): T;
     constructor(arg0: string[], arg1: NDArray)
     constructor(arg0: string[], arg1: NDArray, arg2: number)
     constructor(arg0: string[], arg1: number[])

@@ -1,9 +1,6 @@
 import type { Optional } from '../../../../java/util/Optional.d.ts'
-import type { UnaryOperator } from '../../../../java/util/function/UnaryOperator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { FabricEntityType$Builder } from '../../../../net/fabricmc/fabric/api/object/builder/v1/entity/FabricEntityType$Builder.d.ts'
-import type { FabricEntityType$Builder$Living } from '../../../../net/fabricmc/fabric/api/object/builder/v1/entity/FabricEntityType$Builder$Living.d.ts'
-import type { FabricEntityType$Builder$Mob } from '../../../../net/fabricmc/fabric/api/object/builder/v1/entity/FabricEntityType$Builder$Mob.d.ts'
 import type { FabricEntityTypeImpl$Builder } from '../../../../net/fabricmc/fabric/impl/object/builder/FabricEntityTypeImpl$Builder.d.ts'
 import type { FabricEntityTypeImpl$Builder$Living } from '../../../../net/fabricmc/fabric/impl/object/builder/FabricEntityTypeImpl$Builder$Living.d.ts'
 import type { FabricEntityTypeImpl$Builder$Mob } from '../../../../net/fabricmc/fabric/impl/object/builder/FabricEntityTypeImpl$Builder$Mob.d.ts'
@@ -26,8 +23,6 @@ import type { Block } from '../../../../net/minecraft/world/level/block/Block.d.
 import type { LootTable } from '../../../../net/minecraft/world/level/storage/loot/LootTable.d.ts'
 import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class EntityType$Builder<T extends Entity> extends Object implements FabricEntityType$Builder<T>, FabricEntityTypeImpl$Builder {
-    static createLiving<T extends LivingEntity>(paramarg0: (param0: EntityType<T>, param1: Level) => T, paramarg1: MobCategory, paramarg2: (param0: FabricEntityType$Builder$Living<T>) => FabricEntityType$Builder$Living<T>): EntityType$Builder<T>;
-    static createMob<T extends Mob>(paramarg0: (param0: EntityType<T>, param1: Level) => T, paramarg1: MobCategory, paramarg2: (param0: FabricEntityType$Builder$Mob<T>) => FabricEntityType$Builder$Mob<T>): EntityType$Builder<T>;
     static createNothing<T extends Entity>(paramcategory: MobCategory): EntityType$Builder<T>;
     static of<T extends Entity>(paramfactory: (param0: EntityType<T>, param1: Level) => T, paramcategory: MobCategory): EntityType$Builder<T>;
     private constructor(factory: (param0: EntityType<T>, param1: Level) => T, category: MobCategory)

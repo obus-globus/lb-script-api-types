@@ -14,18 +14,7 @@ export class ModuleChestStealer$Index$Order extends Enum<ModuleChestStealer$Inde
     static ASCENDING: ModuleChestStealer$Index$Order;
     static Companion: Tagged$Companion;
     static DESCENDING: ModuleChestStealer$Index$Order;
-    static comparing<T extends unknown, U extends Comparable<Object>>(paramarg0: (param0: Object) => U): (param0: T, param1: T) => number;
-    static comparing<T extends unknown, U extends unknown>(paramarg0: (param0: Object) => U, paramarg1: (param0: Object, param1: Object) => number): (param0: T, param1: T) => number;
-    static comparingDouble<T extends unknown>(paramarg0: (param0: Object) => number): (param0: T, param1: T) => number;
-    static comparingInt<T extends unknown>(paramarg0: (param0: Object) => number): (param0: T, param1: T) => number;
-    static comparingLong<T extends unknown>(paramarg0: (param0: Object) => number): (param0: T, param1: T) => number;
     static getEntries(): ModuleChestStealer$Index$Order[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static naturalOrder<T extends Comparable<Object>>(): (param0: T, param1: T) => number;
-    static nullsFirst<T extends unknown>(paramarg0: (param0: Object, param1: Object) => number): (param0: T, param1: T) => number;
-    static nullsLast<T extends unknown>(paramarg0: (param0: Object, param1: Object) => number): (param0: T, param1: T) => number;
-    static of(self: string): Tagged;
-    static reverseOrder<T extends Comparable<Object>>(): (param0: T, param1: T) => number;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleChestStealer$Index$Order;
     static values(): ModuleChestStealer$Index$Order[];

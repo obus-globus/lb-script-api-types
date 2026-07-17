@@ -27,6 +27,7 @@ export class FlySentinel10thMar extends Mode {
     readonly moveHandler: EventHook<MovementInputEvent>;
     readonly packetHandler: EventHook<PacketEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     readonly repeatable: EventHook<GameTickEvent>;
     // private spoofOnGround: boolean;
     // private ticks: number;

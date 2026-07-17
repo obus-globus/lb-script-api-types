@@ -8,8 +8,6 @@ export class ModuleTickBase$TickBaseCall extends Enum<ModuleTickBase$TickBaseCal
     static GAME: ModuleTickBase$TickBaseCall;
     static PLAYER: ModuleTickBase$TickBaseCall;
     static getEntries(): ModuleTickBase$TickBaseCall[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleTickBase$TickBaseCall;
     static values(): ModuleTickBase$TickBaseCall[];

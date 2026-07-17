@@ -10,8 +10,6 @@ import type { Item } from '../../../../net/minecraft/world/item/Item.d.ts'
 import type { ItemInstance } from '../../../../net/minecraft/world/item/ItemInstance.d.ts'
 export class ItemPredicate extends Record implements Predicate<ItemInstance> {
     static CODEC: Codec<ItemPredicate>;
-    static isEqual<T extends unknown>(paramarg0: Object): (param0: T) => boolean;
-    static not<T extends unknown>(paramarg0: (param0: Object) => boolean): (param0: T) => boolean;
     constructor(items: Optional<Holder<Item>[]>, count: MinMaxBounds$Ints, components: DataComponentMatchers)
     // private components: DataComponentMatchers;
     // private count: MinMaxBounds$Ints;

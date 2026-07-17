@@ -8,6 +8,6 @@ export class Hashing$Crc32CSupplier extends Enum<Hashing$Crc32CSupplier> impleme
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): Hashing$Crc32CSupplier;
     static values(): Hashing$Crc32CSupplier[];
-    constructor(arg2: any)
+    private constructor()
     name(): "JAVA_UTIL_ZIP" | "ABSTRACT_HASH_FUNCTION";
 }

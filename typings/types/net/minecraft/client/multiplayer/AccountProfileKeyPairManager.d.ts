@@ -5,12 +5,10 @@ import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { UUID } from '../../../../java/util/UUID.d.ts'
 import type { CompletableFuture } from '../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { User } from '../../../../net/minecraft/client/User.d.ts'
 import type { ProfileKeyPairManager } from '../../../../net/minecraft/client/multiplayer/ProfileKeyPairManager.d.ts'
 import type { ProfileKeyPair } from '../../../../net/minecraft/world/entity/player/ProfileKeyPair.d.ts'
 export class AccountProfileKeyPairManager extends Object implements ProfileKeyPairManager {
     static EMPTY_KEY_MANAGER: ProfileKeyPairManager;
-    static create(paramuserApiService: UserApiService, paramuser: User, paramgameDirectory: Path): ProfileKeyPairManager;
     constructor(userApiService: UserApiService, profileId: UUID, gameDirectory: Path)
     // private keyPair: CompletableFuture<Optional<ProfileKeyPair>>;
     // private nextProfileKeyRefreshTime: Instant;

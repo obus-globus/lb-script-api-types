@@ -5,4 +5,5 @@ export class ModuleItemESP$GlowMode extends Mode {
     static Companion: Tagged$Companion;
     static INSTANCE: ModuleItemESP$GlowMode;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
 }

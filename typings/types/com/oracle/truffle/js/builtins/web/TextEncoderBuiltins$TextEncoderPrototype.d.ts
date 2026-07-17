@@ -11,7 +11,6 @@ export class TextEncoderBuiltins$TextEncoderPrototype extends Enum<TextEncoderBu
     static encode: TextEncoderBuiltins$TextEncoderPrototype;
     static encodeInto: TextEncoderBuiltins$TextEncoderPrototype;
     static encoding: TextEncoderBuiltins$TextEncoderPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): TextEncoderBuiltins$TextEncoderPrototype;
     static values(): TextEncoderBuiltins$TextEncoderPrototype[];

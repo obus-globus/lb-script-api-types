@@ -20,7 +20,6 @@ export class TemporalInstantPrototypeBuiltins$TemporalInstantPrototype extends E
     static toZonedDateTimeISO: TemporalInstantPrototypeBuiltins$TemporalInstantPrototype;
     static until: TemporalInstantPrototypeBuiltins$TemporalInstantPrototype;
     static valueOf: TemporalInstantPrototypeBuiltins$TemporalInstantPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): TemporalInstantPrototypeBuiltins$TemporalInstantPrototype;
     static values(): TemporalInstantPrototypeBuiltins$TemporalInstantPrototype[];

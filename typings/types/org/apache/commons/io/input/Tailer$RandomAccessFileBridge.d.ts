@@ -3,7 +3,7 @@ import type { RandomAccessFile } from '../../../../../java/io/RandomAccessFile.d
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Tailer$RandomAccessResourceBridge } from '../../../../../org/apache/commons/io/input/Tailer$RandomAccessResourceBridge.d.ts'
 export class Tailer$RandomAccessFileBridge extends Object implements Tailer$RandomAccessResourceBridge {
-    constructor(arg0: File, arg1: string, arg2: any)
+    private constructor(arg0: File, arg1: string)
     // private randomAccessFile: RandomAccessFile;
     close(): void;
     getPointer(): number;

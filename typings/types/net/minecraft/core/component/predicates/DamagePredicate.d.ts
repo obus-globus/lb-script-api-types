@@ -1,5 +1,4 @@
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
-import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { MinMaxBounds$Ints } from '../../../../../net/minecraft/advancements/predicates/MinMaxBounds$Ints.d.ts'
@@ -14,7 +13,6 @@ export class DamagePredicate extends Record implements DataComponentPredicate {
     static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<any>>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
     static durability(paramrange: MinMaxBounds$Ints): DamagePredicate;
-    static singleCodec(paramname: string): MapCodec<DataComponentPredicate$Single<any>>;
     constructor(durability: MinMaxBounds$Ints, damage: MinMaxBounds$Ints)
     // private damage: MinMaxBounds$Ints;
     // private durability: MinMaxBounds$Ints;

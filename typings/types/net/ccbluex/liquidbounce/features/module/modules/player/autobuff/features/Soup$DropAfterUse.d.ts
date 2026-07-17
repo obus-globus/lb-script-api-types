@@ -3,4 +3,5 @@ export class Soup$DropAfterUse extends ToggleableValueGroup {
     static INSTANCE: Soup$DropAfterUse;
     readonly assumeEmptyBowl: boolean;
     readonly wait: { start: number; endInclusive: number; step: number };
+    getWait(): { start: number; endInclusive: number; step: number };
 }

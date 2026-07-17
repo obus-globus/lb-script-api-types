@@ -5,7 +5,6 @@ import type { App } from '../../../com/mojang/datafixers/kinds/App.d.ts'
 import type { App2 } from '../../../com/mojang/datafixers/kinds/App2.d.ts'
 import type { Functor } from '../../../com/mojang/datafixers/kinds/Functor.d.ts'
 import type { K1 } from '../../../com/mojang/datafixers/kinds/K1.d.ts'
-import type { K2 } from '../../../com/mojang/datafixers/kinds/K2.d.ts'
 import type { Traversable } from '../../../com/mojang/datafixers/kinds/Traversable.d.ts'
 import type { Traversable$Mu } from '../../../com/mojang/datafixers/kinds/Traversable$Mu.d.ts'
 import type { Procompose } from '../../../com/mojang/datafixers/optics/Procompose.d.ts'
@@ -14,12 +13,9 @@ import type { Wander } from '../../../com/mojang/datafixers/optics/Wander.d.ts'
 import type { FunctorProfunctor } from '../../../com/mojang/datafixers/optics/profunctors/FunctorProfunctor.d.ts'
 import type { FunctorProfunctor$Mu } from '../../../com/mojang/datafixers/optics/profunctors/FunctorProfunctor$Mu.d.ts'
 import type { Mapping } from '../../../com/mojang/datafixers/optics/profunctors/Mapping.d.ts'
-import type { Mapping$Mu } from '../../../com/mojang/datafixers/optics/profunctors/Mapping$Mu.d.ts'
 import type { MonoidProfunctor } from '../../../com/mojang/datafixers/optics/profunctors/MonoidProfunctor.d.ts'
 import type { Monoidal } from '../../../com/mojang/datafixers/optics/profunctors/Monoidal.d.ts'
-import type { Monoidal$Mu } from '../../../com/mojang/datafixers/optics/profunctors/Monoidal$Mu.d.ts'
 import type { TraversalP } from '../../../com/mojang/datafixers/optics/profunctors/TraversalP.d.ts'
-import type { TraversalP$Mu } from '../../../com/mojang/datafixers/optics/profunctors/TraversalP$Mu.d.ts'
 import type { Either } from '../../../com/mojang/datafixers/util/Either.d.ts'
 import type { Pair } from '../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
@@ -29,9 +25,6 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class FunctionType$Instance extends Enum<FunctionType$Instance> implements App<FunctionType$Instance$Mu, FunctionType$Mu>, Mapping<FunctionType$Mu, FunctionType$Instance$Mu>, MonoidProfunctor<FunctionType$Mu, FunctionType$Instance$Mu>, Monoidal<FunctionType$Mu, FunctionType$Instance$Mu>, TraversalP<FunctionType$Mu, FunctionType$Instance$Mu> {
     static INSTANCE: FunctionType$Instance;
-    static unbox<P extends K2, Proof extends Mapping$Mu>(paramarg0: App<Proof, P>): Mapping<P, Proof>;
-    static unbox<P extends K2, Proof extends Monoidal$Mu>(paramarg0: App<Proof, P>): Monoidal<P, Proof>;
-    static unbox<P extends K2, Proof extends TraversalP$Mu>(paramarg0: App<Proof, P>): TraversalP<P, Proof>;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): FunctionType$Instance;
     static values(): FunctionType$Instance[];

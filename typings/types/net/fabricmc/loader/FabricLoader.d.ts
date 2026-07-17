@@ -9,7 +9,6 @@ import type { MappingResolver } from '../../../net/fabricmc/loader/api/MappingRe
 import type { ObjectShare } from '../../../net/fabricmc/loader/api/ObjectShare.d.ts'
 export abstract class FabricLoader extends Object implements FabricLoader_2 {
     static INSTANCE: FabricLoader;
-    static getInstance(): FabricLoader_2;
     constructor()
     getConfigDir(): Path;
     getConfigDirectory(): File;

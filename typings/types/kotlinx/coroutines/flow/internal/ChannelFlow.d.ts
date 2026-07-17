@@ -1,4 +1,5 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Continuation } from '../../../../kotlin/coroutines/Continuation.d.ts'
 import type { CoroutineContext } from '../../../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { CoroutineScope } from '../../../../kotlinx/coroutines/CoroutineScope.d.ts'
 import type { BufferOverflow } from '../../../../kotlinx/coroutines/channels/BufferOverflow.d.ts'
@@ -15,8 +16,10 @@ export abstract class ChannelFlow<T extends unknown> extends Object implements F
     onBufferOverflow: BufferOverflow;
     /*not mapped: */ getProduceCapacity$kotlinx_coroutines_core(): number;
     protected additionalToStringProps(): string | null;
-    collect(collector: FlowCollector<T>): void;
-    protected collectTo(scope: ProducerScope<T>): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    collect(collector: FlowCollector<T>, $completion: Continuation<void>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    protected collectTo(scope: ProducerScope<T>, $completion: Continuation<void>): any;
     protected create(context: CoroutineContext, capacity: number, onBufferOverflow: BufferOverflow): ChannelFlow<T>;
     dropChannelOperators(): Flow<T> | null;
     fuse(context: CoroutineContext, capacity: number, onBufferOverflow: BufferOverflow): Flow<T>;

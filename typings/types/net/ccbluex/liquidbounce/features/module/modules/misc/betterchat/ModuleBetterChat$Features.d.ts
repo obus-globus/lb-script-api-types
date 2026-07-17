@@ -9,8 +9,6 @@ export class ModuleBetterChat$Features extends Enum<ModuleBetterChat$Features> i
     static INFINITE: ModuleBetterChat$Features;
     static KEEP_AFTER_DEATH: ModuleBetterChat$Features;
     static getEntries(): ModuleBetterChat$Features[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleBetterChat$Features;
     static values(): ModuleBetterChat$Features[];

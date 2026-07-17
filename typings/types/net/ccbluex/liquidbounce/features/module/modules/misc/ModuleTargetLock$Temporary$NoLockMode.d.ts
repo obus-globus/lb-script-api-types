@@ -7,8 +7,6 @@ export class ModuleTargetLock$Temporary$NoLockMode extends Enum<ModuleTargetLock
     static ALLOW_NONE: ModuleTargetLock$Temporary$NoLockMode;
     static Companion: Tagged$Companion;
     static getEntries(): ModuleTargetLock$Temporary$NoLockMode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleTargetLock$Temporary$NoLockMode;
     static values(): ModuleTargetLock$Temporary$NoLockMode[];

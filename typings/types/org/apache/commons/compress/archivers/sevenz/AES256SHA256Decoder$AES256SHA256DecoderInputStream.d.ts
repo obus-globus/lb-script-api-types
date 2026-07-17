@@ -3,7 +3,7 @@ import type { CipherInputStream } from '../../../../../../javax/crypto/CipherInp
 import type { Coder } from '../../../../../../org/apache/commons/compress/archivers/sevenz/Coder.d.ts'
 export class AES256SHA256Decoder$AES256SHA256DecoderInputStream extends InputStream {
     static nullInputStream(): InputStream;
-    constructor(arg0: InputStream, arg1: Coder, arg2: string, arg3: number[], arg4: any)
+    private constructor(arg0: InputStream, arg1: Coder, arg2: string, arg3: number[])
     // private archiveName: string;
     // private cipherInputStream: CipherInputStream;
     // private coder: Coder;

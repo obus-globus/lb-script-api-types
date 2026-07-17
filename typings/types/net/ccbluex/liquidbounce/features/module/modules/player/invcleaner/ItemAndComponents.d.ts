@@ -15,7 +15,7 @@ import type { ItemStack } from '../../../../../../../../net/minecraft/world/item
  * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/CleanupPlan.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/CleanupPlan.kt:41}
  */
 export class ItemAndComponents extends Record implements TypedInstance<Item> {
-    constructor(item: Item, componentsPatch: DataComponentPatch)
+    constructor(item: Item, componentsPatch?: DataComponentPatch)
     constructor(itemStack: ItemStack)
     // private componentsPatch: DataComponentPatch;
     /*not mapped: */ componentsPatch(): DataComponentPatch;

@@ -13,7 +13,6 @@ export class WeakMapPrototypeBuiltins$WeakMapPrototype extends Enum<WeakMapProto
     static getOrInsertComputed: WeakMapPrototypeBuiltins$WeakMapPrototype;
     static has: WeakMapPrototypeBuiltins$WeakMapPrototype;
     static set: WeakMapPrototypeBuiltins$WeakMapPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): WeakMapPrototypeBuiltins$WeakMapPrototype;
     static values(): WeakMapPrototypeBuiltins$WeakMapPrototype[];

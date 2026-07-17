@@ -3,7 +3,7 @@ import type { AbstractDoubleTimeSource } from '../../kotlin/time/AbstractDoubleT
 import type { ComparableTimeMark } from '../../kotlin/time/ComparableTimeMark.d.ts'
 import type { Duration } from '../../kotlin/time/Duration.d.ts'
 export class AbstractDoubleTimeSource$DoubleTimeMark extends Object implements ComparableTimeMark {
-    constructor(startedAt: number, timeSource: AbstractDoubleTimeSource, offset: Duration)
+    protected constructor()
     // private offset: Duration;
     // private startedAt: number;
     // private timeSource: AbstractDoubleTimeSource;

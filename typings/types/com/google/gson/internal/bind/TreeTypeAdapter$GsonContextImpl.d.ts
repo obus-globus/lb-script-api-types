@@ -5,7 +5,7 @@ import type { TreeTypeAdapter } from '../../../../../com/google/gson/internal/bi
 import type { Type } from '../../../../../java/lang/reflect/Type.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class TreeTypeAdapter$GsonContextImpl extends Object implements JsonDeserializationContext, JsonSerializationContext {
-    constructor(null_: TreeTypeAdapter<Object>, arg1: any)
+    private constructor(null_: TreeTypeAdapter<Object>)
     deserialize<R extends unknown>(arg0: JsonElement, arg1: Type): R;
     serialize(arg0: Object): JsonElement;
     serialize(arg0: Object, arg1: Type): JsonElement;

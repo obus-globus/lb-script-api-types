@@ -3,15 +3,10 @@ import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Predicate } from '../../../../../java/util/function/Predicate.d.ts'
 import type { Stream } from '../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { SlotAccess } from '../../../../../net/minecraft/world/entity/SlotAccess.d.ts'
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { SlotCollection } from '../../../../../net/minecraft/world/item/slot/SlotCollection.d.ts'
 export class SlotCollection$Limited extends Record implements SlotCollection {
     static EMPTY: SlotCollection;
-    static concat(paramterms: SlotCollection[]): SlotCollection;
-    static concat(paramfirst: SlotCollection, paramsecond: SlotCollection): SlotCollection;
-    static of(paramslots: SlotAccess[]): SlotCollection;
-    static of(paramslotAccess: SlotAccess): SlotCollection;
     constructor(slots: SlotCollection, limit: number)
     // private limit: number;
     // private slots: SlotCollection;

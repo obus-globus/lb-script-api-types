@@ -1,3 +1,4 @@
+import type { Continuation } from '../../../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { TranslateLanguage } from '../../../../../../../net/ccbluex/liquidbounce/api/thirdparty/translator/TranslateLanguage.d.ts'
 import type { TranslationResult } from '../../../../../../../net/ccbluex/liquidbounce/api/thirdparty/translator/TranslationResult.d.ts'
 import type { TranslatorMode } from '../../../../../../../net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorMode.d.ts'
@@ -12,11 +13,7 @@ export class GoogleTranslateApi extends TranslatorMode {
     static Companion: Tagged$Companion;
     constructor(parent: ModeValueGroup<any>)
     readonly parent: ModeValueGroup<any>;
-    /**
-     * {@link Reference}(https://github.com/ssut/py-googletrans/issues/268)
-     * Updated at 2025/06/11
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/providers/GoogleTranslateApi.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/providers/GoogleTranslateApi.kt:46}
-     */
-    translateInternal(sourceLanguage: TranslateLanguage, targetLanguage: TranslateLanguage, text: string): TranslationResult;
+    getParent(): ModeValueGroup<any>;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    translateInternal(sourceLanguage: TranslateLanguage, targetLanguage: TranslateLanguage, text: string, $completion: Continuation<TranslationResult>): any;
 }

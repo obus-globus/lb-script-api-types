@@ -4,7 +4,7 @@ import type { IntegratedWindowsAuthenticationParameters$IntegratedWindowsAuthent
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class IntegratedWindowsAuthenticationParameters extends Object implements IAcquireTokenParameters {
     static builder(paramarg0: string[], paramarg1: string): IntegratedWindowsAuthenticationParameters$IntegratedWindowsAuthenticationParametersBuilder;
-    constructor(arg0: (Object | null)[], arg1: string, arg2: ClaimsRequest, arg3: Map<Object | null, Object | null>, arg4: Map<Object | null, Object | null>, arg5: string, arg6: any)
+    private constructor(arg0: string[], arg1: string, arg2: ClaimsRequest, arg3: { [key: string]: string }, arg4: { [key: string]: string }, arg5: string)
     // private claims: ClaimsRequest;
     // private extraHttpHeaders: { [key: string]: string };
     // private extraQueryParameters: { [key: string]: string };

@@ -1,4 +1,5 @@
 import type { Object } from '../../java/lang/Object.d.ts'
+import type { Continuation } from '../../kotlin/coroutines/Continuation.d.ts'
 import type { CoroutineContext } from '../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { AbstractCoroutine } from '../../kotlinx/coroutines/AbstractCoroutine.d.ts'
 import type { Deferred } from '../../kotlinx/coroutines/Deferred.d.ts'
@@ -8,6 +9,7 @@ export class DeferredCoroutine<T extends unknown> extends AbstractCoroutine<T> i
     static Key: Job$Key;
     constructor(parentContext: CoroutineContext, active: boolean)
     readonly onAwait: SelectClause1<T>;
-    await(): T;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    await($completion: Continuation<T>): any;
     getCompleted(): T;
 }

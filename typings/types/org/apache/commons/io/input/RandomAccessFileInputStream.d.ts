@@ -8,7 +8,6 @@ export class RandomAccessFileInputStream extends AbstractInputStream {
     static nullInputStream(): InputStream;
     constructor(arg0: RandomAccessFile)
     constructor(arg0: RandomAccessFile, arg1: boolean)
-    constructor(arg0: RandomAccessFileInputStream$Builder, arg1: any)
     // private propagateClose: boolean;
     readonly randomAccessFile: RandomAccessFile;
     available(): number;

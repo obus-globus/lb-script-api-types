@@ -7,8 +7,6 @@ export class ModuleAutoWeapon$ChangeOnAction extends Enum<ModuleAutoWeapon$Chang
     static ON_ATTACK: ModuleAutoWeapon$ChangeOnAction;
     static ON_TARGET: ModuleAutoWeapon$ChangeOnAction;
     static getEntries(): ModuleAutoWeapon$ChangeOnAction[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleAutoWeapon$ChangeOnAction;
     static values(): ModuleAutoWeapon$ChangeOnAction[];

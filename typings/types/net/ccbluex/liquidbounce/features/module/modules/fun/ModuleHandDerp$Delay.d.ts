@@ -8,5 +8,6 @@ export class ModuleHandDerp$Delay extends Mode {
     static INSTANCE: ModuleHandDerp$Delay;
     readonly delayValue: number;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     readonly repeatable: EventHook<GameTickEvent>;
 }

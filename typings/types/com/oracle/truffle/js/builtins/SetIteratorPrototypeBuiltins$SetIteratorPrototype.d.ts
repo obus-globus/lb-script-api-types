@@ -8,7 +8,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class SetIteratorPrototypeBuiltins$SetIteratorPrototype extends Enum<SetIteratorPrototypeBuiltins$SetIteratorPrototype> implements BuiltinEnum<SetIteratorPrototypeBuiltins$SetIteratorPrototype> {
     static next: SetIteratorPrototypeBuiltins$SetIteratorPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): SetIteratorPrototypeBuiltins$SetIteratorPrototype;
     static values(): SetIteratorPrototypeBuiltins$SetIteratorPrototype[];

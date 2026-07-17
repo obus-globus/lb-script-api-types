@@ -7,8 +7,6 @@ export class ScaffoldTellyFeature$Mode extends Enum<ScaffoldTellyFeature$Mode> i
     static RESET: ScaffoldTellyFeature$Mode;
     static REVERSE: ScaffoldTellyFeature$Mode;
     static getEntries(): ScaffoldTellyFeature$Mode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ScaffoldTellyFeature$Mode;
     static values(): ScaffoldTellyFeature$Mode[];

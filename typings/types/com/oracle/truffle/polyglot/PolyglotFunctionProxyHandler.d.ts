@@ -8,17 +8,6 @@ import type { Type } from '../../../../java/lang/reflect/Type.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Context } from '../../../../org/graalvm/polyglot/Context.d.ts'
 export class PolyglotFunctionProxyHandler extends Object implements PolyglotWrapper, InvocationHandler {
-    static asInstance(paramv: Object): PolyglotWrapper;
-    static equals(paramcontext: Object, paramreceiver: Object, paramobj: Object): boolean;
-    static equalsProxy(paramwrapper: PolyglotWrapper, paramother: Object): boolean;
-    static getHostProxy(paramv: Object): PolyglotWrapper;
-    static hashCode(paramcontext: Object, paramreceiver: Object): number;
-    static invokeDefault(paramarg0: Object, paramarg1: Method, ...paramarg2: Object[]): Object;
-    static isHostProxy(paramv: Object): boolean;
-    static isInstance(paramv: Object): boolean;
-    static toString(paramthisObj: PolyglotWrapper): string;
-    static toString(paramlanguageContext: Object, paramreceiver: Object): string;
-    static toStringImpl(paramlanguageContext: Object, paramreceiver: Object): string;
     constructor(obj: Object, functionMethod: Method, genericType: Type, languageContext: PolyglotLanguageContext)
     // private contextAnchor: Context;
     // private functionMethod: Method;

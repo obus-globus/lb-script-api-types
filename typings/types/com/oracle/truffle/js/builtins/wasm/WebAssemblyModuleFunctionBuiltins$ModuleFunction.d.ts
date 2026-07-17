@@ -10,7 +10,6 @@ export class WebAssemblyModuleFunctionBuiltins$ModuleFunction extends Enum<WebAs
     static customSections: WebAssemblyModuleFunctionBuiltins$ModuleFunction;
     static exports: WebAssemblyModuleFunctionBuiltins$ModuleFunction;
     static imports: WebAssemblyModuleFunctionBuiltins$ModuleFunction;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): WebAssemblyModuleFunctionBuiltins$ModuleFunction;
     static values(): WebAssemblyModuleFunctionBuiltins$ModuleFunction[];

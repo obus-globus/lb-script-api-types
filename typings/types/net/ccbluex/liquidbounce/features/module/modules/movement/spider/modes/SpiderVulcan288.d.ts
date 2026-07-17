@@ -22,6 +22,7 @@ export class SpiderVulcan288 extends Mode {
     static Companion: Tagged$Companion;
     static INSTANCE: SpiderVulcan288;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     readonly repeatable: EventHook<GameTickEvent>;
     // private requiresStop: boolean;
 }

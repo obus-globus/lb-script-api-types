@@ -13,7 +13,7 @@ export class Throttler extends Object {
     // private maxByteCount: number;
     // private waitByteCount: number;
     byteCountOrWaitNanos(now: number, byteCount: number): number;
-    bytesPerSecond(bytesPerSecond: number, waitByteCount: number, maxByteCount: number): void;
+    bytesPerSecond(bytesPerSecond: number, waitByteCount?: number, maxByteCount?: number): void;
     sink(sink: Sink): Sink;
     source(source: Source): Source;
     take(byteCount: number): number;

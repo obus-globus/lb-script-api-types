@@ -4,7 +4,7 @@ import type { BufferedSource } from '../../../okio/BufferedSource.d.ts'
 import type { ByteString } from '../../../okio/ByteString.d.ts'
 import type { Source } from '../../../okio/Source.d.ts'
 export class Hpack$Reader extends Object {
-    constructor(source: Source, headerTableSizeSetting: number, maxDynamicTableByteCount: number)
+    constructor(source: Source, headerTableSizeSetting: number, maxDynamicTableByteCount?: number)
     dynamicTable: (Header | null)[];
     dynamicTableByteCount: number;
     headerCount: number;

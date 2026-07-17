@@ -10,7 +10,7 @@ export class Rotation extends Record {
     static fromRotationVec(diffX: number, diffY: number, diffZ: number): Rotation;
     static fromRotationVec(lookVec: Vec3): Rotation;
     static lookingAt(point: Vec3, from: Vec3): Rotation;
-    constructor(yaw: number, pitch: number, isNormalized: boolean)
+    constructor(yaw: number, pitch: number, isNormalized?: boolean)
     /*not mapped: */ directionVector(): Vec3;
     // private isNormalized: boolean;
     /*not mapped: */ isNormalized(): boolean;
@@ -29,7 +29,7 @@ export class Rotation extends Record {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt#L110 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt:110}
      */
     angleTo(other: Rotation): number;
-    approximatelyEquals(other: Rotation, tolerance: number): boolean;
+    approximatelyEquals(other: Rotation, tolerance?: number): boolean;
     component1(): number;
     component2(): number;
     component3(): boolean;
@@ -58,7 +58,7 @@ export class Rotation extends Record {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt#L123 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt:123}
      */
     rotationDeltaTo(other: Rotation): RotationDelta;
-    toQuaternion(dest: Quaternionf): Quaternionf;
+    toQuaternion(dest?: Quaternionf): Quaternionf;
     toString(): string;
     /**
      * Calculates a new rotation that is closer to the {@link other} rotation by a limiting factor of

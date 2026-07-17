@@ -11,8 +11,6 @@ export class TrajectoryDetailedInfoRenderer$ShowAt extends Enum<TrajectoryDetail
     static LANDING: TrajectoryDetailedInfoRenderer$ShowAt;
     static OWNER: TrajectoryDetailedInfoRenderer$ShowAt;
     static getEntries(): TrajectoryDetailedInfoRenderer$ShowAt[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): TrajectoryDetailedInfoRenderer$ShowAt;
     static values(): TrajectoryDetailedInfoRenderer$ShowAt[];

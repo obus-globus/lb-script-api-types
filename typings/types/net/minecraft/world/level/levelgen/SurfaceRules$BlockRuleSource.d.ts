@@ -9,7 +9,6 @@ import type { SurfaceRules$StateRule } from '../../../../../net/minecraft/world/
 import type { SurfaceRules$SurfaceRule } from '../../../../../net/minecraft/world/level/levelgen/SurfaceRules$SurfaceRule.d.ts'
 export class SurfaceRules$BlockRuleSource extends Record implements SurfaceRules$RuleSource {
     static CODEC: Codec<SurfaceRules$RuleSource>;
-    static bootstrap(paramregistry: MapCodec<SurfaceRules$RuleSource>[]): MapCodec<SurfaceRules$RuleSource>;
     private constructor(state: BlockState)
     private constructor(resultState: BlockState, rule: SurfaceRules$StateRule)
     // private resultState: BlockState;

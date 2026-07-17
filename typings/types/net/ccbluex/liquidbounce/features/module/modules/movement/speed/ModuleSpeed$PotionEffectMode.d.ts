@@ -5,5 +5,6 @@ export abstract class ModuleSpeed$PotionEffectMode extends Mode {
     static Companion: Tagged$Companion;
     constructor(name: string)
     readonly parent: ModeValueGroup<ModuleSpeed$PotionEffectMode>;
+    getParent(): ModeValueGroup<ModuleSpeed$PotionEffectMode>;
     checkPotionEffects(): boolean;
 }

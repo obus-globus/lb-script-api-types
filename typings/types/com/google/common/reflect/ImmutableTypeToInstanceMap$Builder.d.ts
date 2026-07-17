@@ -3,7 +3,7 @@ import type { TypeToken } from '../../../../com/google/common/reflect/TypeToken.
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ImmutableTypeToInstanceMap$Builder<B extends unknown> extends Object {
-    constructor(arg0: any)
+    private constructor()
     // private mapBuilder: ImmutableMap$Builder<TypeToken<B>, B>;
     build(): { [key: string]: any };
     put<T extends B>(key: TypeToken<T>, value: T): ImmutableTypeToInstanceMap$Builder<B>;

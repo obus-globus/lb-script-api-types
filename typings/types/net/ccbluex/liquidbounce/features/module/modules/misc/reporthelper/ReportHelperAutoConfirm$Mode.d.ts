@@ -6,5 +6,6 @@ export class ReportHelperAutoConfirm$Mode extends Mode {
     static Companion: Tagged$Companion;
     protected constructor(name: string)
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     protected onScreenUpdated(screen: AbstractContainerScreen<any>): void;
 }

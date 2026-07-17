@@ -1,6 +1,5 @@
 import type { NDManager } from '../../../ai/djl/ndarray/NDManager.d.ts'
 import type { DataType } from '../../../ai/djl/ndarray/types/DataType.d.ts'
-import type { LayoutType } from '../../../ai/djl/ndarray/types/LayoutType.d.ts'
 import type { Shape } from '../../../ai/djl/ndarray/types/Shape.d.ts'
 import type { Block } from '../../../ai/djl/nn/Block.d.ts'
 import type { Parameter } from '../../../ai/djl/nn/Parameter.d.ts'
@@ -13,7 +12,6 @@ import type { DataOutputStream } from '../../../java/io/DataOutputStream.d.ts'
 import type { Predicate } from '../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class AbstractBaseBlock extends Object implements Block {
-    static validateLayout(paramarg0: LayoutType[], paramarg1: LayoutType[]): void;
     constructor()
     constructor(arg0: number)
     // private inputNames: string[];

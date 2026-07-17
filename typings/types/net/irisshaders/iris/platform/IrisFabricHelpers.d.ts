@@ -8,7 +8,6 @@ import type { Direction } from '../../../../net/minecraft/core/Direction.d.ts'
 import type { BlockState } from '../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class IrisFabricHelpers extends Object implements IrisPlatformHelpers {
     static INSTANCE: IrisPlatformHelpers;
-    static getInstance(): IrisPlatformHelpers;
     constructor()
     compareVersions(arg0: string, arg1: string): number;
     getBlockAppearance(arg0: BlockAndTintGetter, arg1: BlockState, arg2: Direction, arg3: BlockPos): BlockState;

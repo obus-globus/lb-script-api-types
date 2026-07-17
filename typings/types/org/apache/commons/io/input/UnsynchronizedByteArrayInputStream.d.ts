@@ -7,7 +7,6 @@ export class UnsynchronizedByteArrayInputStream extends InputStream {
     constructor(arg0: number[])
     constructor(arg0: number[], arg1: number)
     constructor(arg0: number[], arg1: number, arg2: number)
-    constructor(arg0: UnsynchronizedByteArrayInputStream$Builder, arg1: any)
     // private data: number[];
     // private eod: number;
     // private markedOffset: number;

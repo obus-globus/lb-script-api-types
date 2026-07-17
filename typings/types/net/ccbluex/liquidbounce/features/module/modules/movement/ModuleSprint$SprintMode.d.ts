@@ -8,8 +8,6 @@ export class ModuleSprint$SprintMode extends Enum<ModuleSprint$SprintMode> imple
     static OMNIDIRECTIONAL: ModuleSprint$SprintMode;
     static OMNIROTATIONAL: ModuleSprint$SprintMode;
     static getEntries(): ModuleSprint$SprintMode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleSprint$SprintMode;
     static values(): ModuleSprint$SprintMode[];

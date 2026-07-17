@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { DefaultConstructorMarker } from '../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { MetadataExtensions } from '../../../../../../../kotlin/reflect/jvm/internal/impl/km/internal/extensions/MetadataExtensions.d.ts'
 import type { ProtoBuf$TypeParameter } from '../../../../../../../kotlin/reflect/jvm/internal/impl/metadata/ProtoBuf$TypeParameter.d.ts'
 import type { NameResolver } from '../../../../../../../kotlin/reflect/jvm/internal/impl/metadata/deserialization/NameResolver.d.ts'
@@ -7,7 +6,6 @@ import type { TypeTable } from '../../../../../../../kotlin/reflect/jvm/internal
 import type { VersionRequirementTable } from '../../../../../../../kotlin/reflect/jvm/internal/impl/metadata/deserialization/VersionRequirementTable.d.ts'
 export class ReadContext extends Object {
     constructor(arg0: NameResolver, arg1: TypeTable, arg2: VersionRequirementTable, arg3: boolean, arg4: ReadContext, arg5: (Object | null)[])
-    constructor(arg0: NameResolver, arg1: TypeTable, arg2: VersionRequirementTable, arg3: boolean, arg4: ReadContext, arg5: (Object | null)[], arg6: number, arg7: DefaultConstructorMarker)
     // private contextExtensions: Object[];
     // private extensions: MetadataExtensions[];
     // private ignoreUnknownVersionRequirements: boolean;

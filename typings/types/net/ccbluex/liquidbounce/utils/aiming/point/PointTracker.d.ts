@@ -16,6 +16,7 @@ export class PointTracker extends ValueGroup implements EventListener {
     // private delay: PointProcessorDelay;
     // private gaussian: PointProcessorGaussian;
     // private lazy: PointProcessorLazy;
+    getParent(): EventListener;
     // private predicateBestHitVector: ExemptBestHitVector;
     // private predicateBoxParts: ExemptBoxPart[];
     // private /*not mapped: */ getPredicateBoxParts(): ExemptBoxPart[];

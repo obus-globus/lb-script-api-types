@@ -3,7 +3,7 @@ import type { URI } from '../../../../../java/net/URI.d.ts'
 import type { Charset } from '../../../../../java/nio/charset/Charset.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class QueryStringDecoder$Builder extends Object {
-    constructor(arg0: any)
+    private constructor()
     // private charset: Charset;
     // private hasPath: boolean;
     // private htmlQueryDecoding: boolean;

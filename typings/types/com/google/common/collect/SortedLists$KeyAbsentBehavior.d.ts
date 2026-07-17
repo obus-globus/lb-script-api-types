@@ -7,7 +7,7 @@ export class SortedLists$KeyAbsentBehavior extends Enum<SortedLists$KeyAbsentBeh
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): SortedLists$KeyAbsentBehavior;
     static values(): SortedLists$KeyAbsentBehavior[];
-    constructor(arg2: any)
+    private constructor()
     resultIndex(higherIndex: number): number;
     name(): "NEXT_LOWER" | "NEXT_HIGHER" | "INVERTED_INSERTION_INDEX";
 }

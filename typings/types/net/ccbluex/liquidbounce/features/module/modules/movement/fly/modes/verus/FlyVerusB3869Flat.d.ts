@@ -22,6 +22,7 @@ export class FlyVerusB3869Flat extends Mode {
     // private jumpEvent: EventHook<PlayerJumpEvent>;
     // private packetHandler: EventHook<PacketEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private shapeHandler: EventHook<BlockShapeEvent>;
     // private tickHandler: EventHook<GameTickEvent>;
     // private timer: number;

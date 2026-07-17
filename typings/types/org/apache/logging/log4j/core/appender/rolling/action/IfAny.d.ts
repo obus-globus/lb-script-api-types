@@ -4,7 +4,6 @@ import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { PathCondition } from '../../../../../../../../org/apache/logging/log4j/core/appender/rolling/action/PathCondition.d.ts'
 export class IfAny extends Object implements PathCondition {
     static EMPTY_ARRAY: PathCondition[];
-    static copy(...paramsource: PathCondition[]): PathCondition[];
     static createOrCondition(...paramcomponents: PathCondition[]): IfAny;
     private constructor(...filters: PathCondition[])
     // private components: PathCondition[];

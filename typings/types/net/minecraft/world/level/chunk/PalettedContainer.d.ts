@@ -14,11 +14,8 @@ import type { PalettedContainerRO } from '../../../../../net/minecraft/world/lev
 import type { PalettedContainerRO$PackedData } from '../../../../../net/minecraft/world/level/chunk/PalettedContainerRO$PackedData.d.ts'
 import type { Strategy } from '../../../../../net/minecraft/world/level/chunk/Strategy.d.ts'
 export class PalettedContainer<T extends unknown> extends Object implements PalettedContainerROExtension<Object>, PaletteResize<T>, PalettedContainerRO<T> {
-    static clone<T extends unknown>(paramarg0: PalettedContainerRO<T>): PalettedContainerRO<T>;
     static codecRO<T extends unknown>(paramelementCodec: Codec<T>, paramstrategy: Strategy<T>, paramdefaultValue: T): Codec<PalettedContainerRO<T>>;
     static codecRW<T extends unknown>(paramelementCodec: Codec<T>, paramstrategy: Strategy<T>, paramdefaultValue: T): Codec<PalettedContainer<T>>;
-    static noResizeExpected<T extends unknown>(): PaletteResize<T>;
-    static of<T extends unknown>(paramarg0: PalettedContainerRO<T>): PalettedContainerROExtension<T>;
     static unpack<T extends unknown>(paramstrategy: Strategy<T>, paramdiscData: PalettedContainerRO$PackedData<T>): DataResult<PalettedContainer<T>>;
     constructor(initialValue: T, strategy: Strategy<T>)
     // private data: PalettedContainer$Data<T>;

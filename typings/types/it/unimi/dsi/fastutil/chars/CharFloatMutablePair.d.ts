@@ -1,11 +1,8 @@
 import type { CharFloatPair } from '../../../../../it/unimi/dsi/fastutil/chars/CharFloatPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
-import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class CharFloatMutablePair extends Object implements CharFloatPair, Serializable {
-    static lexComparator(): (param0: CharFloatPair, param1: CharFloatPair) => number;
     static of(paramarg0: string, paramarg1: number): CharFloatMutablePair;
-    static of(paramarg0: string, paramarg1: number): CharFloatPair;
     constructor(arg0: string, arg1: number)
     // private left: string;
     // private right: number;

@@ -1,11 +1,8 @@
 import type { IntBooleanPair } from '../../../../../it/unimi/dsi/fastutil/ints/IntBooleanPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
-import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class IntBooleanMutablePair extends Object implements IntBooleanPair, Serializable {
-    static lexComparator(): (param0: IntBooleanPair, param1: IntBooleanPair) => number;
     static of(paramarg0: number, paramarg1: boolean): IntBooleanMutablePair;
-    static of(paramarg0: number, paramarg1: boolean): IntBooleanPair;
     constructor(arg0: number, arg1: boolean)
     // private left: number;
     // private right: boolean;

@@ -3,12 +3,8 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ParseState } from '../../../../../net/minecraft/util/parsing/packrat/ParseState.d.ts'
 import type { Rule } from '../../../../../net/minecraft/util/parsing/packrat/Rule.d.ts'
 import type { Rule$RuleAction } from '../../../../../net/minecraft/util/parsing/packrat/Rule$RuleAction.d.ts'
-import type { Rule$SimpleRuleAction } from '../../../../../net/minecraft/util/parsing/packrat/Rule$SimpleRuleAction.d.ts'
-import type { Scope } from '../../../../../net/minecraft/util/parsing/packrat/Scope.d.ts'
 import type { Term } from '../../../../../net/minecraft/util/parsing/packrat/Term.d.ts'
 export class Rule$WrappedTerm<S extends unknown, T extends unknown> extends Record implements Rule<S, T> {
-    static fromTerm<S extends unknown, T extends unknown>(paramchild: Term<S>, paramaction: (param0: ParseState<S>) => T): Rule<S, T>;
-    static fromTerm<S extends unknown, T extends unknown>(paramchild: Term<S>, paramaction: (param0: Scope) => T): Rule<S, T>;
     constructor(action: (param0: ParseState<S>) => T, child: Term<S>)
     // private action: (param0: ParseState<S>) => T;
     // private child: Term<S>;

@@ -12,7 +12,6 @@ export class DeferredFileOutputStream extends ThresholdingOutputStream {
     constructor(arg0: number, arg1: number, arg2: File)
     constructor(arg0: number, arg1: number, arg2: string, arg3: string, arg4: File)
     constructor(arg0: number, arg1: string, arg2: string, arg3: File)
-    constructor(arg0: DeferredFileOutputStream$Builder, arg1: any)
     // private closed: boolean;
     // private currentOutputStream: OutputStream;
     // private directory: Path;

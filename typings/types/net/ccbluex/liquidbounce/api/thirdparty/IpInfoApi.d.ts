@@ -1,3 +1,4 @@
+import type { Continuation } from '../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { BaseApi } from '../../../../../net/ccbluex/liquidbounce/api/core/BaseApi.d.ts'
 import type { IpInfoApi$IpData } from '../../../../../net/ccbluex/liquidbounce/api/thirdparty/IpInfoApi$IpData.d.ts'
 /**
@@ -25,6 +26,8 @@ export class IpInfoApi extends BaseApi {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/IpInfoApi.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/IpInfoApi.kt:46}
      */
     readonly original: IpInfoApi$IpData | null;
-    own(): IpInfoApi$IpData;
-    someoneElse(ip: string): IpInfoApi$IpData;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    own($completion: Continuation<IpInfoApi$IpData>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    someoneElse(ip: string, $completion: Continuation<IpInfoApi$IpData>): any;
 }

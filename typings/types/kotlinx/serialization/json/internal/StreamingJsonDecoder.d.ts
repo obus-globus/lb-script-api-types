@@ -49,7 +49,7 @@ export class StreamingJsonDecoder extends AbstractDecoder implements ChunkedDeco
     // private decodeObjectIndex(descriptor: SerialDescriptor): number;
     decodeSerializableElement<T extends unknown>(descriptor: SerialDescriptor, index: number, deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
     decodeSerializableValue<T extends unknown>(deserializer: DeserializationStrategy<T>): T;
-    decodeSerializableValue<T extends unknown>(deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
+    decodeSerializableValue<T extends unknown>(deserializer: DeserializationStrategy<T>, previousValue?: T | null): T;
     decodeShort(): number;
     decodeString(): string;
     decodeStringChunked(consumeChunk: (param0: string) => void): void;

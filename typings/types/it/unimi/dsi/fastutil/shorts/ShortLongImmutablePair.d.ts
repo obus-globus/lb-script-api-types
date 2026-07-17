@@ -1,11 +1,8 @@
 import type { ShortLongPair } from '../../../../../it/unimi/dsi/fastutil/shorts/ShortLongPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
-import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ShortLongImmutablePair extends Object implements ShortLongPair, Serializable {
-    static lexComparator(): (param0: ShortLongPair, param1: ShortLongPair) => number;
     static of(paramarg0: number, paramarg1: number): ShortLongImmutablePair;
-    static of(paramarg0: number, paramarg1: number): ShortLongPair;
     constructor(arg0: number, arg1: number)
     // private left: number;
     // private right: number;

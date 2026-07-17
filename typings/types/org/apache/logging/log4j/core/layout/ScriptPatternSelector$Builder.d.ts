@@ -5,7 +5,7 @@ import type { ScriptPatternSelector } from '../../../../../../org/apache/logging
 import type { AbstractScript } from '../../../../../../org/apache/logging/log4j/core/script/AbstractScript.d.ts'
 import type { Builder } from '../../../../../../org/apache/logging/log4j/core/util/Builder.d.ts'
 export class ScriptPatternSelector$Builder extends Object implements Builder<ScriptPatternSelector> {
-    constructor(arg0: any)
+    private constructor()
     // private alwaysWriteExceptions: boolean;
     // private configuration: Configuration;
     // private defaultPattern: string;

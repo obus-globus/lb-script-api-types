@@ -8,7 +8,6 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class PointFreeRule$SortProj extends Enum<PointFreeRule$SortProj> implements PointFreeRule$CompRewrite {
     static INSTANCE: PointFreeRule$SortProj;
-    static together(...paramarg0: PointFreeRule$CompRewrite[]): PointFreeRule$CompRewrite;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): PointFreeRule$SortProj;
     static values(): PointFreeRule$SortProj[];

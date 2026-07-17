@@ -9,7 +9,6 @@ import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class CollatorPrototypeBuiltins$CollatorPrototype extends Enum<CollatorPrototypeBuiltins$CollatorPrototype> implements BuiltinEnum<CollatorPrototypeBuiltins$CollatorPrototype> {
     static compare: CollatorPrototypeBuiltins$CollatorPrototype;
     static resolvedOptions: CollatorPrototypeBuiltins$CollatorPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): CollatorPrototypeBuiltins$CollatorPrototype;
     static values(): CollatorPrototypeBuiltins$CollatorPrototype[];

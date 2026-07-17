@@ -7,8 +7,6 @@ export class ServerObserver$ServerType extends Enum<ServerObserver$ServerType> i
     static Companion: Tagged$Companion;
     static PREMIUM: ServerObserver$ServerType;
     static getEntries(): ServerObserver$ServerType[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ServerObserver$ServerType;
     static values(): ServerObserver$ServerType[];

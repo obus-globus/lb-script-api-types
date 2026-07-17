@@ -1,7 +1,7 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { ByteString } from '../../../kotlinx/io/bytestring/ByteString.d.ts'
 export class ByteStringBuilder extends Object {
-    constructor(initialCapacity: number)
+    constructor(initialCapacity?: number)
     // private buffer: number[];
     readonly capacity: number;
     // private offset: number;

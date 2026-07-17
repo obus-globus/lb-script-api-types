@@ -8,14 +8,8 @@ import type { DelayedException } from '../../../../../../net/minecraft/util/pars
 import type { NamedRule } from '../../../../../../net/minecraft/util/parsing/packrat/NamedRule.d.ts'
 import type { ParseState } from '../../../../../../net/minecraft/util/parsing/packrat/ParseState.d.ts'
 import type { Rule } from '../../../../../../net/minecraft/util/parsing/packrat/Rule.d.ts'
-import type { Rule$RuleAction } from '../../../../../../net/minecraft/util/parsing/packrat/Rule$RuleAction.d.ts'
-import type { Rule$SimpleRuleAction } from '../../../../../../net/minecraft/util/parsing/packrat/Rule$SimpleRuleAction.d.ts'
-import type { Scope } from '../../../../../../net/minecraft/util/parsing/packrat/Scope.d.ts'
-import type { Term } from '../../../../../../net/minecraft/util/parsing/packrat/Term.d.ts'
 import type { ResourceSuggestion } from '../../../../../../net/minecraft/util/parsing/packrat/commands/ResourceSuggestion.d.ts'
 export abstract class ResourceLookupRule<C extends unknown, V extends unknown> extends Object implements Rule<StringReader, V>, ResourceSuggestion {
-    static fromTerm<S extends unknown, T extends unknown>(paramchild: Term<S>, paramaction: (param0: ParseState<S>) => T): Rule<S, T>;
-    static fromTerm<S extends unknown, T extends unknown>(paramchild: Term<S>, paramaction: (param0: Scope) => T): Rule<S, T>;
     constructor(idParser: NamedRule<StringReader, Identifier>, context: C)
     // private context: C;
     // private error: DelayedException<CommandSyntaxException>;

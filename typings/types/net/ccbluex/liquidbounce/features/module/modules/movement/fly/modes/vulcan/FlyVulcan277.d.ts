@@ -15,5 +15,6 @@ export class FlyVulcan277 extends Mode {
     static Companion: Tagged$Companion;
     static INSTANCE: FlyVulcan277;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     readonly repeatable: EventHook<GameTickEvent>;
 }

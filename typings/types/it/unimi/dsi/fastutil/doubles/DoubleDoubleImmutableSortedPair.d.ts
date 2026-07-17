@@ -5,7 +5,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DoubleDoubleImmutableSortedPair extends DoubleDoubleImmutablePair implements DoubleDoubleSortedPair, Serializable {
     static of(paramarg0: number, paramarg1: number): DoubleDoubleImmutablePair;
     static of(paramarg0: number, paramarg1: number): DoubleDoubleImmutableSortedPair;
-    static of(paramarg0: number, paramarg1: number): DoubleDoubleSortedPair;
     private constructor(arg0: number, arg1: number)
     contains(arg0: Object): boolean;
     contains(arg0: number): boolean;

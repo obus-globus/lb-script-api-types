@@ -16,4 +16,5 @@ export class ModuleFreeze$Cancel extends Mode {
     // private /*not mapped: */ getOrigin(): TransferOrigin[];
     // private packetHandler: EventHook<PacketEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
 }

@@ -9,12 +9,9 @@ import type { PacketDecoderAccessor } from '../../../net/fabricmc/fabric/mixin/n
 import type { PacketListener } from '../../../net/minecraft/network/PacketListener.d.ts'
 import type { ProtocolInfo } from '../../../net/minecraft/network/ProtocolInfo.d.ts'
 import type { ProtocolSwapHandler } from '../../../net/minecraft/network/ProtocolSwapHandler.d.ts'
-import type { Packet } from '../../../net/minecraft/network/protocol/Packet.d.ts'
 export class PacketDecoder<T extends PacketListener> extends ByteToMessageDecoder implements PacketContextSetter, PacketDecoderAccessor, ProtocolSwapHandler {
     static COMPOSITE_CUMULATOR: ByteToMessageDecoder$Cumulator;
     static MERGE_CUMULATOR: ByteToMessageDecoder$Cumulator;
-    static handleInboundTerminalPacket(paramctx: ChannelHandlerContext, parampacket: Packet<any>): void;
-    static handleOutboundTerminalPacket(paramctx: ChannelHandlerContext, parampacket: Packet<any>): void;
     constructor(protocolInfo: ProtocolInfo<T>)
     // private packetContext: PacketContext;
     // private protocolInfo: ProtocolInfo<T>;

@@ -1,10 +1,10 @@
-import type { TypeVisitor } from '../../../../com/google/common/reflect/TypeVisitor.d.ts'
 import type { Type } from '../../../../java/lang/reflect/Type.d.ts'
 import type { TypeVariable } from '../../../../java/lang/reflect/TypeVariable.d.ts'
 import type { AtomicInteger } from '../../../../java/util/concurrent/atomic/AtomicInteger.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class TypeResolver$WildcardCapturer extends Object {
-    constructor(arg0: AtomicInteger, arg1: TypeVisitor)
+    private constructor()
+    private constructor(id: AtomicInteger)
     // private id: AtomicInteger;
     capture(type: Type): Type;
     captureAsTypeVariable(upperBounds: Type[]): TypeVariable<any>;

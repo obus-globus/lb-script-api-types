@@ -8,4 +8,5 @@ export class ModuleHandDerp$Swing extends Mode {
     static INSTANCE: ModuleHandDerp$Swing;
     readonly packetHandler: EventHook<PacketEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
 }

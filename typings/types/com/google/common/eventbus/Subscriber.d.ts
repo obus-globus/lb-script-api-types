@@ -4,7 +4,7 @@ import type { Method } from '../../../../java/lang/reflect/Method.d.ts'
 import type { Executor } from '../../../../java/util/concurrent/Executor.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Subscriber extends Object {
-    constructor(arg0: EventBus, arg1: Object, arg2: Method, arg3: any)
+    private constructor(bus: EventBus, target: Object, method: Method)
     // private bus: EventBus;
     // private executor: Executor;
     // private method: Method;

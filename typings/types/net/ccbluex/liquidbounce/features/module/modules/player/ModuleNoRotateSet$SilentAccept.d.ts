@@ -5,4 +5,5 @@ export class ModuleNoRotateSet$SilentAccept extends Mode {
     static Companion: Tagged$Companion;
     static INSTANCE: ModuleNoRotateSet$SilentAccept;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
 }

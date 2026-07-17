@@ -11,8 +11,6 @@ export class ModuleOffhand$SwitchMode extends Enum<ModuleOffhand$SwitchMode> imp
     static SMART: ModuleOffhand$SwitchMode;
     static SWITCH: ModuleOffhand$SwitchMode;
     static getEntries(): ModuleOffhand$SwitchMode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleOffhand$SwitchMode;
     static values(): ModuleOffhand$SwitchMode[];

@@ -5,10 +5,6 @@ import type { ChunkTrackingView } from '../../../../net/minecraft/server/level/C
 import type { ChunkPos } from '../../../../net/minecraft/world/level/ChunkPos.d.ts'
 export class ChunkTrackingView$Positioned extends Record implements ChunkTrackingView {
     static EMPTY: ChunkTrackingView;
-    static difference(paramfrom: ChunkTrackingView, paramto: ChunkTrackingView, paramonEnter: (param0: ChunkPos) => void, paramonLeave: (param0: ChunkPos) => void): void;
-    static isInViewDistance(paramcenterX: number, paramcenterZ: number, paramviewDistance: number, paramchunkX: number, paramchunkZ: number): boolean;
-    static isWithinDistance(paramcenterX: number, paramcenterZ: number, paramviewDistance: number, paramchunkX: number, paramchunkZ: number, paramincludeNeighbors: boolean): boolean;
-    static of(paramcenter: ChunkPos, paramradius: number): ChunkTrackingView;
     constructor(center: ChunkPos, viewDistance: number)
     // private center: ChunkPos;
     // private viewDistance: number;

@@ -12,7 +12,6 @@ import type { OptionKey } from '../../../../org/graalvm/options/OptionKey.d.ts'
 import type { OptionValues } from '../../../../org/graalvm/options/OptionValues.d.ts'
 import type { Engine$CancellationCallback } from '../../../../org/graalvm/polyglot/Engine$CancellationCallback.d.ts'
 export abstract class AbstractEngineCacheSupport extends Object implements EngineCacheSupport {
-    static get(): EngineCacheSupport;
     constructor()
     // private cancelCompilations(e: EngineData, callTargets: OptimizedCallTarget[]): void;
     // private compileTargets(e: EngineData, compileQueue: OptimizedCallTarget[], useLastTier: boolean): void;

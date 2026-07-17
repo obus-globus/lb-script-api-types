@@ -8,8 +8,6 @@ export class ModuleScaffold$ScaffoldRotationValueGroup$RotationTimingMode extend
     static ON_TICK: ModuleScaffold$ScaffoldRotationValueGroup$RotationTimingMode;
     static ON_TICK_SNAP: ModuleScaffold$ScaffoldRotationValueGroup$RotationTimingMode;
     static getEntries(): ModuleScaffold$ScaffoldRotationValueGroup$RotationTimingMode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleScaffold$ScaffoldRotationValueGroup$RotationTimingMode;
     static values(): ModuleScaffold$ScaffoldRotationValueGroup$RotationTimingMode[];

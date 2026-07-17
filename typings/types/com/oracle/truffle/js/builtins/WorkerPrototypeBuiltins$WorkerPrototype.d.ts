@@ -11,7 +11,6 @@ export class WorkerPrototypeBuiltins$WorkerPrototype extends Enum<WorkerPrototyp
     static postMessage: WorkerPrototypeBuiltins$WorkerPrototype;
     static terminate: WorkerPrototypeBuiltins$WorkerPrototype;
     static terminateAndWait: WorkerPrototypeBuiltins$WorkerPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): WorkerPrototypeBuiltins$WorkerPrototype;
     static values(): WorkerPrototypeBuiltins$WorkerPrototype[];

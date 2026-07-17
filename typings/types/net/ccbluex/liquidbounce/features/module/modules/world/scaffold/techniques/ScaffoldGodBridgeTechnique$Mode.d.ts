@@ -11,8 +11,6 @@ export class ScaffoldGodBridgeTechnique$Mode extends Enum<ScaffoldGodBridgeTechn
     static SNEAK: ScaffoldGodBridgeTechnique$Mode;
     static STOP_INPUT: ScaffoldGodBridgeTechnique$Mode;
     static getEntries(): ScaffoldGodBridgeTechnique$Mode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ScaffoldGodBridgeTechnique$Mode;
     static values(): ScaffoldGodBridgeTechnique$Mode[];

@@ -1,4 +1,5 @@
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
+import type { Continuation } from '../../../../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { ModuleNotebot$NotebotStageHandler } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/fun/notebot/ModuleNotebot$NotebotStageHandler.d.ts'
 import type { NoteBlockTracker } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/fun/notebot/NoteBlockTracker.d.ts'
 import type { NotebotScanner$BlocksAndRequirements } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/fun/notebot/NotebotScanner$BlocksAndRequirements.d.ts'
@@ -14,5 +15,6 @@ export class NotebotEngine extends Object {
     // private ticksToWait: number | null;
     changeStage(handler: ModuleNotebot$NotebotStageHandler): void;
     handleSoundPacket(packet: ClientboundSoundPacket): void;
-    onTick(): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    onTick($completion: Continuation<void>): any;
 }

@@ -1,11 +1,8 @@
 import type { LongIntPair } from '../../../../../it/unimi/dsi/fastutil/longs/LongIntPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
-import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class LongIntImmutablePair extends Object implements LongIntPair, Serializable {
-    static lexComparator(): (param0: LongIntPair, param1: LongIntPair) => number;
     static of(paramarg0: number, paramarg1: number): LongIntImmutablePair;
-    static of(paramarg0: number, paramarg1: number): LongIntPair;
     constructor(arg0: number, arg1: number)
     // private left: number;
     // private right: number;

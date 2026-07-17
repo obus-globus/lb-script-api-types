@@ -1,12 +1,8 @@
-import type { Consumer } from '../../../java/util/function/Consumer.d.ts'
-import type { Supplier } from '../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Pool } from '../../../net/ccbluex/fastutil/Pool.d.ts'
 import type { Pool$Companion } from '../../../net/ccbluex/fastutil/Pool$Companion.d.ts'
 export class Pool$Sync<E extends unknown> extends Object implements Pool<E> {
     static Companion: Pool$Companion;
-    static create<E extends unknown>(initializer: () => E): Pool<E>;
-    static create<E extends unknown>(initializer: () => E, finalizer: (param0: E) => void): Pool<E>;
     constructor(delegate: Pool<E>)
     // private delegate: Pool<E>;
     borrow(): E;

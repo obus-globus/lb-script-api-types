@@ -3,7 +3,6 @@ import type { Predicate } from '../../../../../../java/util/function/Predicate.d
 import type { ToIntFunction } from '../../../../../../java/util/function/ToIntFunction.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
-import type { Holder } from '../../../../../../net/minecraft/core/Holder.d.ts'
 import type { Vec3i } from '../../../../../../net/minecraft/core/Vec3i.d.ts'
 import type { SynchedEntityData$Builder } from '../../../../../../net/minecraft/network/syncher/SynchedEntityData$Builder.d.ts'
 import type { ResourceKey } from '../../../../../../net/minecraft/resources/ResourceKey.d.ts'
@@ -161,13 +160,8 @@ export class Allay extends PathfinderMob implements InventoryCarrier, VibrationS
     static createLivingAttributes(): AttributeSupplier$Builder;
     static createMobAttributes(): AttributeSupplier$Builder;
     static getEquipmentForSlot(paramslot: EquipmentSlot, paramtype: number): Item;
-    static getGameEventFrequency(paramevent: Holder<GameEvent>): number;
-    static getGameEventFrequency(paramevent: ResourceKey<GameEvent>): number;
     static getInputVector(paraminput: Vec3, paramspeed: number, paramyRot: number): Vec3;
-    static getRedstoneStrengthForDistance(paramdistance: number, paramlistenerRadius: number): number;
-    static getResonanceEventByFrequency(paramvibrationFrequency: number): ResourceKey<GameEvent>;
     static getViewScale(): number;
-    static pickUpItem(paramlevel: ServerLevel, parammob: Mob, paraminventoryCarrier: InventoryCarrier, paramitemEntity: ItemEntity): void;
     static resetForwardDirectionOfRelativePortalPosition(paramoffsets: Vec3): Vec3;
     static setViewScale(paramviewScale: number): void;
     constructor(type: EntityType<Allay>, level: Level)

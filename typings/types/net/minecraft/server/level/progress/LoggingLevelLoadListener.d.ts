@@ -6,7 +6,6 @@ import type { LevelLoadProgressTracker } from '../../../../../net/minecraft/serv
 import type { ChunkPos } from '../../../../../net/minecraft/world/level/ChunkPos.d.ts'
 import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 export class LoggingLevelLoadListener extends Object implements LevelLoadListener {
-    static compose(paramfirst: LevelLoadListener, paramsecond: LevelLoadListener): LevelLoadListener;
     static forDedicatedServer(): LoggingLevelLoadListener;
     static forSingleplayer(): LoggingLevelLoadListener;
     constructor(includePlayerChunks: boolean)

@@ -1,22 +1,15 @@
 import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { Object2IntMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Object2IntMap$Entry.d.ts'
 import type { ObjectIntPair } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectIntPair.d.ts'
-import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Comparable } from '../../../../../java/lang/Comparable.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class Object2IntOpenHashMap$MapEntry extends Object implements Object2IntMap$Entry<K>, ObjectIntPair<K>, Map$Entry<K, number> {
-    static comparingByKey<K extends Comparable<Object>, V extends unknown>(): (param0: Map$Entry<K, V>, param1: Map$Entry<K, V>) => number;
-    static comparingByKey<K extends unknown, V extends unknown>(paramarg0: (param0: Object, param1: Object) => number): (param0: Map$Entry<K, V>, param1: Map$Entry<K, V>) => number;
-    static comparingByValue<K extends unknown, V extends Comparable<Object>>(): (param0: Map$Entry<K, V>, param1: Map$Entry<K, V>) => number;
-    static comparingByValue<K extends unknown, V extends unknown>(paramarg0: (param0: Object, param1: Object) => number): (param0: Map$Entry<K, V>, param1: Map$Entry<K, V>) => number;
-    static copyOf<K extends unknown, V extends unknown>(paramarg0: Map$Entry<K, V>): Map$Entry<K, V>;
-    static lexComparator<K extends unknown>(): (param0: ObjectIntPair<K>, param1: ObjectIntPair<K>) => number;
-    static of<K extends unknown>(paramarg0: K, paramarg1: number): ObjectIntPair<K>;
     constructor(null_: { [key: string]: any })
     constructor(null_: { [key: string]: any }, arg1: number)
     // private index: number;
     readonly key: K;
+    getKey(): K;
+    getValue(): number;
     equals(arg0: Object | null): boolean;
     getIntValue(): number;
     hashCode(): number;

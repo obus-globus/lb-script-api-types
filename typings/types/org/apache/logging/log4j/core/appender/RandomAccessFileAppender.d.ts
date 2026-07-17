@@ -19,7 +19,7 @@ export class RandomAccessFileAppender extends AbstractOutputStreamAppender<Rando
     static createAppender<B extends RandomAccessFileAppender$Builder<B>>(paramfileName: string, paramappend: string, paramname: string, paramimmediateFlush: string, parambufferSizeStr: string, paramignore: string, paramlayout: Layout<Serializable>, paramfilter: Filter, paramadvertise: string, paramadvertiseURI: string, paramconfiguration: Configuration): RandomAccessFileAppender;
     static newBuilder<B extends RandomAccessFileAppender$Builder<B>>(): B;
     static parseInt(params: string, paramdefaultValue: number): number;
-    constructor(arg0: string, arg1: Layout<Serializable>, arg2: Filter, arg3: RandomAccessFileManager, arg4: string, arg5: boolean, arg6: boolean, arg7: Advertiser, arg8: Property[], arg9: any)
+    private constructor(name: string, layout: Layout<Serializable>, filter: Filter, manager: RandomAccessFileManager, filename: string, ignoreExceptions: boolean, immediateFlush: boolean, advertiser: Advertiser, properties: Property[])
     // private advertisement: Object;
     // private advertiser: Advertiser;
     readonly fileName: string;

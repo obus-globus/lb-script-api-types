@@ -164,7 +164,6 @@ export abstract class Mob extends LivingEntity implements NavigatingEntity, Equi
     static WEARING_ARMOR_UPGRADE_MATERIAL_CHANCE: number;
     static WILDCARD: ScoreHolder;
     static WILDCARD_NAME: string;
-    static angularFriction<E extends Entity & Leashable>(paramentity: E): number;
     static areAllEffectsAmbient(parameffects: MobEffectInstance[]): boolean;
     static canGlideUsing(paramitemStack: ItemStack, paramslot: EquipmentSlot): boolean;
     static checkMobSpawnRules(paramtype: EntityType<Mob>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
@@ -173,16 +172,11 @@ export abstract class Mob extends LivingEntity implements NavigatingEntity, Equi
     static collideBoundingBox(paramsource: CollisionContext, parammovement: Vec3, paramboundingBox: AABB, paramlevel: Level, paramentityColliders: VoxelShape[]): Vec3;
     static createLivingAttributes(): AttributeSupplier$Builder;
     static createMobAttributes(): AttributeSupplier$Builder;
-    static createQuadLeashOffsets(paramentity: Entity, paramfrontOffset: number, paramfrontBack: number, paramleftRight: number, paramheight: number): Vec3[];
     static getEquipmentForSlot(paramslot: EquipmentSlot, paramtype: number): Item;
     static getInputVector(paraminput: Vec3, paramspeed: number, paramyRot: number): Vec3;
     static getViewScale(): number;
-    static leashableInArea(paramentity: Entity, paramtest: (param0: Leashable) => boolean): Leashable[];
-    static leashableInArea(paramlevel: Level, parampos: Vec3, paramtest: (param0: Leashable) => boolean): Leashable[];
-    static leashableLeashedTo(paramentity: Entity): Leashable[];
     static resetForwardDirectionOfRelativePortalPosition(paramoffsets: Vec3): Vec3;
     static setViewScale(paramviewScale: number): void;
-    static tickLeash<E extends Entity & Leashable>(paramlevel: ServerLevel, paramentity: E): void;
     constructor(type: EntityType<Mob>, level: Level)
     ambientSoundTime: number;
     // private bodyRotationControl: BodyRotationControl;

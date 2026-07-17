@@ -10,15 +10,6 @@ export abstract class KeyAnalyzer<K extends unknown> extends Object implements S
     static EQUAL_BIT_KEY: number;
     static NULL_BIT_KEY: number;
     static OUT_OF_BOUNDS_BIT_KEY: number;
-    static comparing<T extends unknown, U extends Comparable<Object>>(paramarg0: (param0: Object) => U): (param0: T, param1: T) => number;
-    static comparing<T extends unknown, U extends unknown>(paramarg0: (param0: Object) => U, paramarg1: (param0: Object, param1: Object) => number): (param0: T, param1: T) => number;
-    static comparingDouble<T extends unknown>(paramarg0: (param0: Object) => number): (param0: T, param1: T) => number;
-    static comparingInt<T extends unknown>(paramarg0: (param0: Object) => number): (param0: T, param1: T) => number;
-    static comparingLong<T extends unknown>(paramarg0: (param0: Object) => number): (param0: T, param1: T) => number;
-    static naturalOrder<T extends Comparable<Object>>(): (param0: T, param1: T) => number;
-    static nullsFirst<T extends unknown>(paramarg0: (param0: Object, param1: Object) => number): (param0: T, param1: T) => number;
-    static nullsLast<T extends unknown>(paramarg0: (param0: Object, param1: Object) => number): (param0: T, param1: T) => number;
-    static reverseOrder<T extends Comparable<Object>>(): (param0: T, param1: T) => number;
     constructor()
     bitIndex(arg0: K, arg1: number, arg2: number, arg3: K, arg4: number, arg5: number): number;
     bitsPerElement(): number;

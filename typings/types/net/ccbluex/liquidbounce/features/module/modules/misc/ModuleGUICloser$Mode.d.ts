@@ -10,8 +10,6 @@ export class ModuleGUICloser$Mode extends Enum<ModuleGUICloser$Mode> implements 
     static Companion: Tagged$Companion;
     static MATCHES: ModuleGUICloser$Mode;
     static getEntries(): ModuleGUICloser$Mode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleGUICloser$Mode;
     static values(): ModuleGUICloser$Mode[];

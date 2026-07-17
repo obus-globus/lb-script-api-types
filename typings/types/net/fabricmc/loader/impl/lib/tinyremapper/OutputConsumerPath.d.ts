@@ -1,6 +1,5 @@
 import type { Closeable } from '../../../../../../java/io/Closeable.d.ts'
 import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
-import type { SimpleFileVisitor } from '../../../../../../java/nio/file/SimpleFileVisitor.d.ts'
 import type { Lock } from '../../../../../../java/util/concurrent/locks/Lock.d.ts'
 import type { BiConsumer } from '../../../../../../java/util/function/BiConsumer.d.ts'
 import type { Predicate } from '../../../../../../java/util/function/Predicate.d.ts'
@@ -10,7 +9,7 @@ import type { NonClassCopyMode } from '../../../../../../net/fabricmc/loader/imp
 import type { OutputConsumerPath$ResourceRemapper } from '../../../../../../net/fabricmc/loader/impl/lib/tinyremapper/OutputConsumerPath$ResourceRemapper.d.ts'
 import type { TinyRemapper } from '../../../../../../net/fabricmc/loader/impl/lib/tinyremapper/TinyRemapper.d.ts'
 export class OutputConsumerPath extends Object implements Closeable, BiConsumer<string, number[]> {
-    constructor(arg0: Path, arg1: boolean, arg2: boolean, arg3: (param0: Object) => boolean, arg4: SimpleFileVisitor<Path>)
+    private constructor(arg0: Path, arg1: boolean, arg2: boolean, arg3: (param0: string) => boolean)
     // private classNameFilter: (param0: string) => boolean;
     // private closed: boolean;
     // private dstDir: Path;

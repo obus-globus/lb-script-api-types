@@ -16,7 +16,7 @@ export class DenyAllFilter extends AbstractFilter {
     static ELEMENT_TYPE: string;
     static EMPTY_ARRAY: Filter[];
     static newBuilder(): DenyAllFilter$Builder;
-    constructor(arg0: Filter$Result, arg1: Filter$Result, arg2: any)
+    private constructor(onMatch: Filter$Result, onMismatch: Filter$Result)
     // private filter(marker: Marker): Filter$Result;
     filter(event: LogEvent): Filter$Result;
     filter(logger: Logger, level: Level, marker: Marker, msg: Object, t: Throwable): Filter$Result;

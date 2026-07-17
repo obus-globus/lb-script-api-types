@@ -18,7 +18,6 @@ export class AccumulatorPathVisitor extends CountingPathVisitor {
     static withLongCounters(paramarg0: (param0: Path, param1: BasicFileAttributes) => FileVisitResult, paramarg1: (param0: Path, param1: BasicFileAttributes) => FileVisitResult): AccumulatorPathVisitor;
     static withLongCounters(): CountingPathVisitor;
     constructor()
-    constructor(arg0: AccumulatorPathVisitor$Builder, arg1: any)
     constructor(arg0: Counters$PathCounters)
     constructor(arg0: Counters$PathCounters, arg1: (param0: Path, param1: BasicFileAttributes) => FileVisitResult, arg2: (param0: Path, param1: BasicFileAttributes) => FileVisitResult)
     constructor(arg0: Counters$PathCounters, arg1: (param0: Path, param1: BasicFileAttributes) => FileVisitResult, arg2: (param0: Path, param1: BasicFileAttributes) => FileVisitResult, arg3: (param0: Path, param1: IOException) => FileVisitResult)

@@ -36,7 +36,7 @@ export class Request extends Object {
     tag(): Object | null;
     tag<T extends unknown>(type: Class<T>): T | null;
     tag<T extends unknown>(type: KClass<T>): T | null;
-    toCurl(includeBody: boolean): string;
+    toCurl(includeBody?: boolean): string;
     toString(): string;
     url(): HttpUrl;
 }

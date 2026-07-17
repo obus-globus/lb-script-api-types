@@ -6,7 +6,7 @@ import type { UserAssertion } from '../../../../com/microsoft/aad/msal4j/UserAss
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class OnBehalfOfParameters extends Object implements IAcquireTokenParameters {
     static builder(paramarg0: string[], paramarg1: UserAssertion): OnBehalfOfParameters$OnBehalfOfParametersBuilder;
-    constructor(arg0: (Object | null)[], arg1: boolean, arg2: IUserAssertion, arg3: ClaimsRequest, arg4: Map<Object | null, Object | null>, arg5: Map<Object | null, Object | null>, arg6: string, arg7: any)
+    private constructor(arg0: string[], arg1: boolean, arg2: IUserAssertion, arg3: ClaimsRequest, arg4: { [key: string]: string }, arg5: { [key: string]: string }, arg6: string)
     // private claims: ClaimsRequest;
     // private extraHttpHeaders: { [key: string]: string };
     // private extraQueryParameters: { [key: string]: string };

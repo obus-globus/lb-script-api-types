@@ -3,8 +3,6 @@ import type { Predicate } from '../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class BlockedServers extends Object implements Predicate<string> {
     static HASH_CHARSET: Charset;
-    static isEqual<T extends unknown>(paramarg0: Object): (param0: T) => boolean;
-    static not<T extends unknown>(paramarg0: (param0: Object) => boolean): (param0: T) => boolean;
     constructor(arg0: string[])
     // private blockedServers: string[];
     and(arg0: (param0: string) => boolean): (param0: string) => boolean;

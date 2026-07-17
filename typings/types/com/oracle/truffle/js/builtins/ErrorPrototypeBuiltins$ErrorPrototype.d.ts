@@ -10,7 +10,6 @@ export class ErrorPrototypeBuiltins$ErrorPrototype extends Enum<ErrorPrototypeBu
     static set_stack: ErrorPrototypeBuiltins$ErrorPrototype;
     static stack: ErrorPrototypeBuiltins$ErrorPrototype;
     static toString: ErrorPrototypeBuiltins$ErrorPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): ErrorPrototypeBuiltins$ErrorPrototype;
     static values(): ErrorPrototypeBuiltins$ErrorPrototype[];

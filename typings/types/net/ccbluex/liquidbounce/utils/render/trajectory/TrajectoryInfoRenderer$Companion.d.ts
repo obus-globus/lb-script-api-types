@@ -7,6 +7,6 @@ import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity
 import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class TrajectoryInfoRenderer$Companion extends Object {
-    getHypotheticalTrajectory(simulationOwner: Entity, trajectoryInfo: TrajectoryInfo, trajectoryType: TrajectoryType, rotation: Rotation, icon: ItemStack, partialTicks: number): TrajectoryInfoRenderer;
+    getHypotheticalTrajectory(simulationOwner: Entity, trajectoryInfo: TrajectoryInfo, trajectoryType: TrajectoryType, rotation: Rotation, icon?: ItemStack, partialTicks?: number): TrajectoryInfoRenderer;
     // private projectileDirectionFromRotation(yawRadians: number, pitchRadians: number, pitchWithRollRadians: number): Vec3;
 }

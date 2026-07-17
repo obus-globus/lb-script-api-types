@@ -1,5 +1,6 @@
 import type { GpuDevice } from '../../../../../com/mojang/blaze3d/systems/GpuDevice.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Continuation } from '../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { Value } from '../../../../../net/ccbluex/liquidbounce/config/types/Value.d.ts'
 import type { ToggleableValueGroup } from '../../../../../net/ccbluex/liquidbounce/config/types/group/ToggleableValueGroup.d.ts'
 import type { EventListener } from '../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
@@ -24,6 +25,7 @@ export class ClientModule extends ToggleableValueGroup implements EventListener,
     constructor(name: string, category: ModuleCategory, bind: number, bindAction: InputBind$BindAction, state: boolean, notActivatable: boolean, disableActivation: boolean, disableOnQuit: boolean, aliases: string[], hide: boolean)
     readonly baseKey: string;
     readonly bind: InputBind;
+    getBind(): InputBind;
     // private bindValue: Value<InputBind>;
     /*not mapped: */ getBindValue$net_ccbluex_liquidbounce(): Value<InputBind>;
     // private calledSinceStartup: boolean;
@@ -60,12 +62,8 @@ export class ClientModule extends ToggleableValueGroup implements EventListener,
     readonly tagValue: Value<Object> | null;
     readonly world: ClientLevel;
     children(): EventListener[];
-    /**
-     * Launches an async task on {@link eventListenerScope} when module is turned on.
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt#L149 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt:149}
-     */
-    enabledEffect(): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    enabledEffect($completion: Continuation<void>): any;
     message(key: string, ...args: Object[]): MutableComponent;
     onEnabledValueRegistration(value: Value<boolean>): Value<boolean>;
     /**

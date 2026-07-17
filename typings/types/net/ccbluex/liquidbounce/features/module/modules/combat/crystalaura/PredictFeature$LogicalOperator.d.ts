@@ -8,8 +8,6 @@ export class PredictFeature$LogicalOperator extends Enum<PredictFeature$LogicalO
     static Companion: Tagged$Companion;
     static OR: PredictFeature$LogicalOperator;
     static getEntries(): PredictFeature$LogicalOperator[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): PredictFeature$LogicalOperator;
     static values(): PredictFeature$LogicalOperator[];

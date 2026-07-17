@@ -6,7 +6,7 @@ export abstract class SmoothRateLimiter extends RateLimiter {
     static create(parampermitsPerSecond: number): RateLimiter;
     static create(parampermitsPerSecond: number, paramwarmupPeriod: Duration): RateLimiter;
     static create(parampermitsPerSecond: number, paramwarmupPeriod: number, paramunit: TimeUnit): RateLimiter;
-    constructor(arg0: RateLimiter$SleepingStopwatch, arg1: any)
+    private constructor(stopwatch: RateLimiter$SleepingStopwatch)
     // private maxPermits: number;
     // private nextFreeTicketMicros: number;
     // private stableIntervalMicros: number;

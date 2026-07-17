@@ -7,7 +7,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Logger } from '../../../../org/slf4j/Logger.d.ts'
 export class AuthorizationRequestUrlParameters extends Object {
     static builder(paramarg0: string, paramarg1: string[]): AuthorizationRequestUrlParameters$Builder;
-    constructor(arg0: AuthorizationRequestUrlParameters$Builder, arg1: any)
+    private constructor(arg0: AuthorizationRequestUrlParameters$Builder)
     // private codeChallenge: string;
     // private codeChallengeMethod: string;
     // private correlationId: string;

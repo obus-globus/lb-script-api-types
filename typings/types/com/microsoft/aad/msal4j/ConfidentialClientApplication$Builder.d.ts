@@ -6,7 +6,7 @@ import type { TokenProviderResult } from '../../../../com/microsoft/aad/msal4j/T
 import type { CompletableFuture } from '../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 export class ConfidentialClientApplication$Builder extends AbstractClientApplicationBase$Builder<ConfidentialClientApplication$Builder> {
-    constructor(arg0: string, arg1: IClientCredential, arg2: any)
+    private constructor(arg0: string, arg1: IClientCredential)
     // private appTokenProvider: (param0: AppTokenProviderParameters) => CompletableFuture<TokenProviderResult>;
     // private clientCredential: IClientCredential;
     // private sendX5c: boolean;

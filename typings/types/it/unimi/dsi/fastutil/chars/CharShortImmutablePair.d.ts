@@ -1,11 +1,8 @@
 import type { CharShortPair } from '../../../../../it/unimi/dsi/fastutil/chars/CharShortPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
-import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class CharShortImmutablePair extends Object implements CharShortPair, Serializable {
-    static lexComparator(): (param0: CharShortPair, param1: CharShortPair) => number;
     static of(paramarg0: string, paramarg1: number): CharShortImmutablePair;
-    static of(paramarg0: string, paramarg1: number): CharShortPair;
     constructor(arg0: string, arg1: number)
     // private left: string;
     // private right: number;

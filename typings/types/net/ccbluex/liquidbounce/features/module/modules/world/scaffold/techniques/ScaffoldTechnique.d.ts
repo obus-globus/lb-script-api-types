@@ -14,6 +14,7 @@ export class ScaffoldTechnique extends Mode {
     static Companion: Tagged$Companion;
     protected constructor(name: string)
     readonly parent: ModeValueGroup<ScaffoldTechnique>;
+    getParent(): ModeValueGroup<ScaffoldTechnique>;
     findPlacementTarget(predictedPos: Vec3, predictedPose: Pose, optimalLine: Line | null, bestStack: ItemStack): BlockPlacementTarget | null;
     getCrosshairTarget(target: BlockPlacementTarget | null, rotation: Rotation): BlockHitResult | null;
     getRotations(target: BlockPlacementTarget | null): Rotation | null;

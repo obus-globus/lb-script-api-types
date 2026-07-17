@@ -12,6 +12,7 @@ export class AutoQueueCustom extends Mode {
     // private actions: ModeValueGroup<AutoQueueAction>;
     /*not mapped: */ getActions$net_ccbluex_liquidbounce(): ModeValueGroup<AutoQueueAction>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private tickHandler: EventHook<GameTickEvent>;
     // private triggers: ModeValueGroup<AutoQueueTrigger>;
     /*not mapped: */ getTriggers$net_ccbluex_liquidbounce(): ModeValueGroup<AutoQueueTrigger>;

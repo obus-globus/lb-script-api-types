@@ -24,7 +24,7 @@ export class FabricLoaderImpl extends FabricLoader {
     static MOD_ID: string;
     static REMAPPED_JARS_DIR_NAME: string;
     static VERSION: string;
-    constructor(arg0: any)
+    private constructor()
     // private adapterMap: { [key: string]: LanguageAdapter };
     readonly classTweaker: ClassTweaker;
     readonly configDir: Path;

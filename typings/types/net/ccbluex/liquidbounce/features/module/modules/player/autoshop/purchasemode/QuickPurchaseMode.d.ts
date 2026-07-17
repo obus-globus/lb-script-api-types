@@ -6,5 +6,6 @@ export class QuickPurchaseMode extends Mode {
     static INSTANCE: QuickPurchaseMode;
     readonly delayMs: { start: number; endInclusive: number; step: number };
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     readonly waitForItems: boolean;
 }

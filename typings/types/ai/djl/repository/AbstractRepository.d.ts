@@ -4,16 +4,12 @@ import type { Artifact$Item } from '../../../ai/djl/repository/Artifact$Item.d.t
 import type { MRL } from '../../../ai/djl/repository/MRL.d.ts'
 import type { Metadata } from '../../../ai/djl/repository/Metadata.d.ts'
 import type { Repository } from '../../../ai/djl/repository/Repository.d.ts'
-import type { RepositoryFactory } from '../../../ai/djl/repository/RepositoryFactory.d.ts'
 import type { Progress } from '../../../ai/djl/util/Progress.d.ts'
 import type { InputStream } from '../../../java/io/InputStream.d.ts'
 import type { URI } from '../../../java/net/URI.d.ts'
 import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class AbstractRepository extends Object implements Repository {
-    static newInstance(paramarg0: string, paramarg1: string): Repository;
-    static newInstance(paramarg0: string, paramarg1: Path): Repository;
-    static registerRepositoryFactory(paramarg0: RepositoryFactory): void;
     constructor(arg0: string, arg1: URI)
     // private arguments: { [key: string]: string };
     name: string;

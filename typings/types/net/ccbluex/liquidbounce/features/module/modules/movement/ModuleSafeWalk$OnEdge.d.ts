@@ -25,6 +25,7 @@ export class ModuleSafeWalk$OnEdge extends Mode {
     // private /*not mapped: */ getMode(): ModuleSafeWalk$OnEdge$OnEdgeMode;
     // private overwriteTicks: number;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     // private sneak: { start: number; endInclusive: number; step: number };
     // private /*not mapped: */ getSneak(): { start: number; endInclusive: number; step: number };
     // private sneakTicks: number;

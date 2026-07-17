@@ -19,7 +19,6 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class AbstractInt2IntFunction extends Object implements Int2IntFunction, Serializable {
-    static identity(): (param0: number) => number;
     constructor()
     // private defRetValue: number;
     andThen<T extends unknown>(arg0: (param0: number) => T): (param0: number) => T;

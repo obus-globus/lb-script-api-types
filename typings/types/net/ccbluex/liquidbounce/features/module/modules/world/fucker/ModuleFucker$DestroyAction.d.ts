@@ -7,8 +7,6 @@ export class ModuleFucker$DestroyAction extends Enum<ModuleFucker$DestroyAction>
     static DESTROY: ModuleFucker$DestroyAction;
     static USE: ModuleFucker$DestroyAction;
     static getEntries(): ModuleFucker$DestroyAction[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleFucker$DestroyAction;
     static values(): ModuleFucker$DestroyAction[];

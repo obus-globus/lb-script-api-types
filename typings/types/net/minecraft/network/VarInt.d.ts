@@ -4,7 +4,6 @@ import type { VarIntAccessor } from '../../../net/fabricmc/fabric/mixin/attachme
 export class VarInt extends Object implements VarIntAccessor {
     static MAX_VARINT_SIZE: number;
     static getByteSize(paramvalue: number): number;
-    static getMaxByteSize(): number;
     static hasContinuationBit(paramin: number): boolean;
     static read(paraminput: ByteBuf): number;
     static write(paramoutput: ByteBuf, paramvalue: number): ByteBuf;

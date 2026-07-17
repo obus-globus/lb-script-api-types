@@ -9,8 +9,6 @@ export class PredictMode extends Enum<PredictMode> implements Tagged {
     static SIMPLE: PredictMode;
     static WITH_GRAVITY: PredictMode;
     static getEntries(): PredictMode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): PredictMode;
     static values(): PredictMode[];

@@ -11,7 +11,7 @@ export class PathProperties extends Enum<PathProperties> {
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): PathProperties;
     static values(): PathProperties[];
-    constructor(arg2: string, arg3: PathProperties)
+    private constructor(arg2: string)
     // private messageKey: string;
     accept(arg0: Path): boolean;
     getMessageKey(): string;

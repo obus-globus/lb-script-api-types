@@ -4,10 +4,6 @@ import type { Cursor } from '../../../../team/unnamed/mocha/lexer/Cursor.d.ts'
 import type { MolangLexer } from '../../../../team/unnamed/mocha/lexer/MolangLexer.d.ts'
 import type { Token } from '../../../../team/unnamed/mocha/lexer/Token.d.ts'
 export class MolangLexerImpl extends Object implements MolangLexer {
-    static lexer(paramarg0: Reader): MolangLexer;
-    static lexer(paramarg0: string): MolangLexer;
-    static tokenizeAll(paramarg0: Reader): Token[];
-    static tokenizeAll(paramarg0: string): Token[];
     constructor(arg0: Reader)
     // private cursor: Cursor;
     // private next: number;

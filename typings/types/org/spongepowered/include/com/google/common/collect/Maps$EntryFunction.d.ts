@@ -9,6 +9,6 @@ export class Maps$EntryFunction extends Enum<Maps$EntryFunction> implements Func
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): Maps$EntryFunction;
     static values(): Maps$EntryFunction[];
-    constructor(arg2: Maps$1)
+    private constructor()
     name(): "KEY" | "VALUE";
 }

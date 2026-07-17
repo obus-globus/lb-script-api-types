@@ -41,7 +41,6 @@ export class Base64 extends BaseNCodec {
     constructor(arg0: number, arg1: number[])
     constructor(arg0: number, arg1: number[], arg2: boolean)
     constructor(arg0: number, arg1: number[], arg2: boolean, arg3: CodecPolicy)
-    constructor(arg0: Base64$Builder, arg1: any)
     // private encodeSize: number;
     // private isStandardEncodeTable: boolean;
     // private isUrlSafe: boolean;

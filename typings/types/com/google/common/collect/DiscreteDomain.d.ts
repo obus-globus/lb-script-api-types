@@ -6,7 +6,6 @@ export abstract class DiscreteDomain<C extends Comparable<Object>> extends Objec
     static integers(): DiscreteDomain<number>;
     static longs(): DiscreteDomain<number>;
     constructor()
-    constructor(arg0: boolean, arg1: any)
     // private supportsFastOffset: boolean;
     distance(start: C, end: C): number;
     maxValue(): C;

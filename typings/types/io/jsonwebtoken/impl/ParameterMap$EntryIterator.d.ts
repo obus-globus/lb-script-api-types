@@ -2,6 +2,6 @@ import type { ParameterMap$ParameterMapIterator } from '../../../io/jsonwebtoken
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../java/util/Map$Entry.d.ts'
 export class ParameterMap$EntryIterator extends ParameterMap$ParameterMapIterator<Map$Entry<string, Object>> {
-    constructor(null_: { [key: string]: any }, arg1: any)
+    private constructor(null_: { [key: string]: any })
     next(): Map$Entry<string, Object>;
 }

@@ -2,7 +2,7 @@ import type { PrintStream } from '../../../../../../../java/io/PrintStream.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CommandLine$TraceLevel } from '../../../../../../../org/apache/logging/log4j/core/tools/picocli/CommandLine$TraceLevel.d.ts'
 export class CommandLine$Tracer extends Object {
-    constructor(arg0: any)
+    private constructor()
     // private level: CommandLine$TraceLevel;
     // private stream: PrintStream;
     debug(msg: string, ...params: Object[]): void;

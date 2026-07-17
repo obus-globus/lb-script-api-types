@@ -17,6 +17,7 @@ export class SimpleStringTypeAdapter<T extends unknown> extends TypeAdapter<T> {
     constructor(fromString: (param0: string) => T, toString: (param0: T) => string)
     readonly fromString: (param0: string) => T;
     readonly toString: (param0: T) => string;
+    getToString(): (param0: T) => string;
     read(reader: JsonReader): T | null;
     write(writer: JsonWriter, value: T | null): void;
 }

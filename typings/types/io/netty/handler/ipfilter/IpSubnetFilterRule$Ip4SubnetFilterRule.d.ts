@@ -4,7 +4,7 @@ import type { Inet4Address } from '../../../../java/net/Inet4Address.d.ts'
 import type { InetSocketAddress } from '../../../../java/net/InetSocketAddress.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class IpSubnetFilterRule$Ip4SubnetFilterRule extends Object implements IpFilterRule {
-    constructor(arg0: Inet4Address, arg1: number, arg2: IpFilterRuleType, arg3: any)
+    private constructor(arg0: Inet4Address, arg1: number, arg2: IpFilterRuleType)
     // private networkAddress: number;
     // private ruleType: IpFilterRuleType;
     // private subnetMask: number;

@@ -5,11 +5,9 @@ import type { Applicative } from '../../../../com/mojang/datafixers/kinds/Applic
 import type { K1 } from '../../../../com/mojang/datafixers/kinds/K1.d.ts'
 import type { K2 } from '../../../../com/mojang/datafixers/kinds/K2.d.ts'
 import type { Traversal } from '../../../../com/mojang/datafixers/optics/Traversal.d.ts'
-import type { Traversal$Mu } from '../../../../com/mojang/datafixers/optics/Traversal$Mu.d.ts'
 import type { TraversalP$Mu } from '../../../../com/mojang/datafixers/optics/profunctors/TraversalP$Mu.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ListTraversal<A extends unknown, B extends unknown> extends Object implements Traversal<A[], B[], A, B> {
-    static unbox<S extends unknown, T extends unknown, A extends unknown, B extends unknown>(paramarg0: App2<Traversal$Mu<A, B>, S, T>): Traversal<S, T, A, B>;
     private constructor()
     eval<P extends K2>(arg0: App<TraversalP$Mu, P>): FunctionType<App2<P, A, B>, App2<P, A[], B[]>>;
     toString(): string;

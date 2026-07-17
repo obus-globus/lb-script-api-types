@@ -23,6 +23,7 @@ export class FlyGrim2373Jan15 extends Mode {
     // private isStarted: boolean;
     // private motionHandler: EventHook<PlayerNetworkMovementTickEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private queuePacketHandler: EventHook<BlinkPacketEvent>;
     // private shouldDelay: boolean;
     disable(): void;

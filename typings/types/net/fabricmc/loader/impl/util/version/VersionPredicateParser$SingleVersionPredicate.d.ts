@@ -5,8 +5,6 @@ import type { VersionInterval } from '../../../../../../net/fabricmc/loader/api/
 import type { VersionPredicate } from '../../../../../../net/fabricmc/loader/api/metadata/version/VersionPredicate.d.ts'
 import type { VersionPredicate$PredicateTerm } from '../../../../../../net/fabricmc/loader/api/metadata/version/VersionPredicate$PredicateTerm.d.ts'
 export class VersionPredicateParser$SingleVersionPredicate extends Object implements VersionPredicate, VersionPredicate$PredicateTerm {
-    static parse(paramarg0: string[]): VersionPredicate[];
-    static parse(paramarg0: string): VersionPredicate;
     constructor(arg0: VersionComparisonOperator, arg1: Version)
     readonly operator: VersionComparisonOperator;
     // private refVersion: Version;

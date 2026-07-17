@@ -1,4 +1,5 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Continuation } from '../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { Duration } from '../../../../../kotlin/time/Duration.d.ts'
 import type { IpInfoApi$IpData } from '../../../../../net/ccbluex/liquidbounce/api/thirdparty/IpInfoApi$IpData.d.ts'
 import type { EventHook } from '../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
@@ -37,19 +38,8 @@ export class ServerObserver extends Object implements EventListener {
     readonly tps: number;
     readonly transactions: number[];
     // private wasDisconnected: boolean;
-    /**
-     * Requests completions for all given commands.
-     * This is an exploit for servers that block the `/plugins` command.
-     *
-     * Plugins will add themselves to the command suggestions list with a prefix like `/pluginname:command`.
-     * This can be used to get a list of plugins on the server.
-     *
-     * @see {@link ServerboundCommandSuggestionPacket}
-     * @see {@link ModulePlugins}
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ServerObserver.kt#L152 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ServerObserver.kt:152}
-     */
-    captureCommandSuggestions(timeout: Duration): boolean;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    captureCommandSuggestions(timeout: Duration, $completion: Continuation<boolean>): any;
     children(): EventListener[];
     /**
      * Reference: https://github.com/CCBlueX/LiquidBounce/blob/legacy/src/main/java/net/ccbluex/liquidbounce/features/module/modules/misc/AnticheatDetector.kt
@@ -66,6 +56,7 @@ export class ServerObserver extends Object implements EventListener {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ServerObserver.kt#L126 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ServerObserver.kt:126}
      */
     reconnect(): void;
-    requestHostingInformation(): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    requestHostingInformation($completion: Continuation<void>): any;
     unregister(): void;
 }

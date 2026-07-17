@@ -1,6 +1,7 @@
 import type { Gson } from '../../../../../../../com/google/gson/Gson.d.ts'
 import type { JsonObject } from '../../../../../../../com/google/gson/JsonObject.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { Continuation } from '../../../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { Command } from '../../../../../../../net/ccbluex/liquidbounce/features/command/Command.d.ts'
 import type { Command$Factory } from '../../../../../../../net/ccbluex/liquidbounce/features/command/Command$Factory.d.ts'
 /**
@@ -18,5 +19,6 @@ export class CommandDebug extends Object implements Command$Factory {
     // private gson: Gson;
     createCommand(): Command;
     // private createDebugJson(autoConfigPaste: string): JsonObject;
-    // private uploadToPaste(content: string): string;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private uploadToPaste(content: string, $completion: Continuation<string>): any;
 }

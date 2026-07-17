@@ -12,7 +12,6 @@ export class UnsynchronizedByteArrayOutputStream extends AbstractByteArrayOutput
     static toBufferedInputStream(paramarg0: InputStream, paramarg1: number): InputStream;
     constructor()
     constructor(arg0: number)
-    constructor(arg0: UnsynchronizedByteArrayOutputStream$Builder, arg1: any)
     reset(): void;
     size(): number;
     toByteArray(): number[];

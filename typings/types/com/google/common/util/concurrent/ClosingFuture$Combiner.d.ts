@@ -5,11 +5,10 @@ import type { ClosingFuture$DeferredCloser } from '../../../../../com/google/com
 import type { ClosingFuture$Peeker } from '../../../../../com/google/common/util/concurrent/ClosingFuture$Peeker.d.ts'
 import type { FluentFuture } from '../../../../../com/google/common/util/concurrent/FluentFuture.d.ts'
 import type { Futures$FutureCombiner } from '../../../../../com/google/common/util/concurrent/Futures$FutureCombiner.d.ts'
-import type { Callable } from '../../../../../java/util/concurrent/Callable.d.ts'
 import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ClosingFuture$Combiner extends Object {
-    constructor(arg0: boolean, arg1: (Object | null)[], arg2: () => V)
+    private constructor(allMustSucceed: boolean, inputs: ClosingFuture<Object>[])
     // private allMustSucceed: boolean;
     // private closeables: { [key: string]: any };
     // private inputs: ClosingFuture<Object>[];

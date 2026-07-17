@@ -7,15 +7,17 @@ import type { ChannelIterator } from '../../../kotlinx/coroutines/channels/Chann
 import type { ChannelSegment } from '../../../kotlinx/coroutines/channels/ChannelSegment.d.ts'
 import type { Segment } from '../../../kotlinx/coroutines/internal/Segment.d.ts'
 export class BufferedChannel$BufferedChannelIterator extends Object implements Waiter, ChannelIterator<E> {
-    static next<E extends unknown>(paramarg0: ChannelIterator<E>, paramarg1: Continuation<Object>): Object;
     constructor(null_: BufferedChannel<Object>)
     // private continuation: CancellableContinuationImpl<boolean> | null;
     // private receiveResult: Object | null;
-    hasNext(): boolean;
-    // private hasNextOnNoWaiterSuspend<E extends unknown>(segment: ChannelSegment<E>, index: number, r: number): boolean;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    hasNext($completion: Continuation<boolean>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private hasNextOnNoWaiterSuspend<E extends unknown>(segment: ChannelSegment<E>, index: number, r: number, $completion: Continuation<boolean>): any;
     invokeOnCancellation(segment: Segment<any>, index: number): void;
     next<E extends unknown>(): E;
-    next0<E extends unknown>(): E;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    next0<E extends unknown>($completion: Continuation<E>): any;
     // private onClosedHasNext(): boolean;
     // private onClosedHasNextNoWaiterSuspend(): void;
     tryResumeHasNext<E extends unknown>(element: E): boolean;

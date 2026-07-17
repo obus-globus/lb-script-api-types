@@ -1,7 +1,7 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ASMWrapper$LabelAccess } from '../../../../net/lenni0451/reflect/wrapper/ASMWrapper$LabelAccess.d.ts'
 export class ASMWrapper$MethodVisitorAccess extends Object {
-    constructor(arg0: Object, arg1: any)
+    private constructor(arg0: Object)
     // private methodVisitor: Object;
     isNull(): boolean;
     visitEnd(): void;

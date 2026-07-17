@@ -1,11 +1,8 @@
 import type { IntObjectPair } from '../../../../../it/unimi/dsi/fastutil/ints/IntObjectPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
-import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class IntObjectMutablePair<V extends unknown> extends Object implements IntObjectPair<V>, Serializable {
-    static lexComparator<V extends unknown>(): (param0: IntObjectPair<V>, param1: IntObjectPair<V>) => number;
     static of<V extends unknown>(paramarg0: number, paramarg1: V): IntObjectMutablePair<V>;
-    static of<V extends unknown>(paramarg0: number, paramarg1: V): IntObjectPair<V>;
     constructor(arg0: number, arg1: V)
     // private left: number;
     // private right: V;

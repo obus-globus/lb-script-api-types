@@ -8,6 +8,6 @@ export class SslMasterKeyHandler$WiresharkSslMasterKeyHandler extends SslMasterK
     static isSunSslEngineAvailable(): boolean;
     static newWireSharkSslMasterKeyHandler(): SslMasterKeyHandler;
     static sunSslEngineUnavailabilityCause(): Throwable;
-    constructor(arg0: any)
+    private constructor()
     accept(arg0: SecretKey, arg1: SSLSession): void;
 }

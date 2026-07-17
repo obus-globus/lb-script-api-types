@@ -33,8 +33,6 @@ export class AxeItem extends Item implements AxeItemAccessor {
     static byBlock(paramblock: Block): Item;
     static byId(paramid: number): Item;
     static getId(paramitem: Item): number;
-    static getStrippables(): Map<Block, Block>;
-    static setStrippables(paramarg0: Map<Block, Block>): void;
     constructor(material: ToolMaterial, attackDamageBaseline: number, attackSpeedBaseline: number, properties: Item$Properties)
     // private evaluateNewBlockState(level: Level, pos: BlockPos, player: Player, oldState: BlockState): Optional<BlockState>;
     // private getStripped(state: BlockState): Optional<BlockState>;

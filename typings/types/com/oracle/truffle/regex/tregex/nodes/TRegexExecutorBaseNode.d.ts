@@ -14,7 +14,6 @@ import type { Encoding } from '../../../../../../com/oracle/truffle/regex/tregex
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class TRegexExecutorBaseNode extends Node implements InstrumentableNode {
-    static findInstrumentableParent(paramnode: Node): Node;
     constructor()
     createLocals(input: TruffleString, fromIndex: number, maxIndex: number, regionFrom: number, regionTo: number, index: number): TRegexExecutorLocals;
     createProbe(sourceSection: SourceSection): ProbeNode;

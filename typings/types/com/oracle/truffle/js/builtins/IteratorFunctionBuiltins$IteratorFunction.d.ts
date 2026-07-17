@@ -11,7 +11,6 @@ export class IteratorFunctionBuiltins$IteratorFunction extends Enum<IteratorFunc
     static from: IteratorFunctionBuiltins$IteratorFunction;
     static zip: IteratorFunctionBuiltins$IteratorFunction;
     static zipKeyed: IteratorFunctionBuiltins$IteratorFunction;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): IteratorFunctionBuiltins$IteratorFunction;
     static values(): IteratorFunctionBuiltins$IteratorFunction[];

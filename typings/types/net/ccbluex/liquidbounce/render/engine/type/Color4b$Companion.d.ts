@@ -20,5 +20,5 @@ export class Color4b$Companion extends Object {
     YELLOW: Color4b;
     fromHex(hex: string): Color4b;
     fullAlpha(rgb: number): Color4b;
-    ofHSB(hue: number, saturation: number, brightness: number, alpha: number): Color4b;
+    ofHSB(hue: number, saturation: number, brightness: number, alpha?: number): Color4b;
 }

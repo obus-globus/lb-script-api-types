@@ -1,3 +1,4 @@
+import type { Continuation } from '../../../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { ClosedFloatingPointRange } from '../../../../../../../kotlin/ranges/ClosedFloatingPointRange.d.ts'
 import type { ModeValueGroup } from '../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { ClientModule } from '../../../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
@@ -26,7 +27,8 @@ export class ModuleSpammer extends ClientModule {
     // private pattern: ModuleSpammer$SpammerPattern;
     // private /*not mapped: */ getPattern(): ModuleSpammer$SpammerPattern;
     // private applyConversion(text: string): string;
-    enabledEffect(): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    enabledEffect($completion: Continuation<void>): any;
     // private format(text: string): string;
     // private sendMessageOrCommand(text: string): void;
 }

@@ -1,5 +1,4 @@
 import type { Runnable } from '../../../java/lang/Runnable.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Continuation } from '../../../kotlin/coroutines/Continuation.d.ts'
 import type { ContinuationInterceptor$Key } from '../../../kotlin/coroutines/ContinuationInterceptor$Key.d.ts'
 import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineContext.d.ts'
@@ -9,11 +8,11 @@ import type { Delay } from '../../../kotlinx/coroutines/Delay.d.ts'
 import type { DisposableHandle } from '../../../kotlinx/coroutines/DisposableHandle.d.ts'
 export class NamedDispatcher extends CoroutineDispatcher implements Delay {
     static Key: ContinuationInterceptor$Key;
-    static delay$suspendImpl(paramarg0: Delay, paramarg1: number, paramarg2: Continuation<Object>): Object;
     constructor(dispatcher: CoroutineDispatcher, name: string)
     // private dispatcher: CoroutineDispatcher;
     // private name: string;
-    delay(time: number): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    delay(time: number, $completion: Continuation<void>): any;
     dispatch(context: CoroutineContext, block: () => void): void;
     dispatchYield(context: CoroutineContext, block: () => void): void;
     invokeOnTimeout(timeMillis: number, block: () => void, context: CoroutineContext): DisposableHandle;

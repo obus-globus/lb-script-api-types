@@ -18,7 +18,6 @@ import type { Short2FloatFunction } from '../../../../../it/unimi/dsi/fastutil/s
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Float2FloatFunctions$PrimitiveFunction extends Object implements Float2FloatFunction {
-    static identity(): (param0: number) => number;
     constructor(arg0: (param0: number) => number)
     // private function: (param0: number) => number;
     andThen<T extends unknown>(arg0: (param0: number) => T): (param0: number) => T;

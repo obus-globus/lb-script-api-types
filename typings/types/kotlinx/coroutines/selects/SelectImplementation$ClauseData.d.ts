@@ -1,5 +1,6 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
+import type { Continuation } from '../../../kotlin/coroutines/Continuation.d.ts'
 import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { SelectImplementation } from '../../../kotlinx/coroutines/selects/SelectImplementation.d.ts'
 import type { SelectInstance } from '../../../kotlinx/coroutines/selects/SelectInstance.d.ts'
@@ -15,7 +16,8 @@ export class SelectImplementation$ClauseData extends Object {
     // private regFunc: (param0: Object, param1: SelectInstance<Object>, param2: Object | null) => void;
     createOnCancellationAction(select: SelectInstance<Object>, internalResult: Object | null): ((param0: Throwable, param1: Object | null, param2: CoroutineContext) => void) | null;
     dispose(): void;
-    invokeBlock<R extends unknown>(argument: Object | null): R;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    invokeBlock<R extends unknown>(argument: Object | null, $completion: Continuation<R>): any;
     processResult(result: Object | null): Object | null;
     tryRegisterAsWaiter<R extends unknown>(select: SelectImplementation<R>): boolean;
 }

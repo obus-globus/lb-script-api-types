@@ -2,7 +2,6 @@ import type { ViaCommandSender } from '../../../../../com/viaversion/viaversion/
 import type { ViaSubCommand } from '../../../../../com/viaversion/viaversion/api/command/ViaSubCommand.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DumpSubCmd extends Object implements ViaSubCommand {
-    static color(paramarg0: string): string;
     constructor()
     description(): string;
     execute(arg0: ViaCommandSender, arg1: string[]): boolean;

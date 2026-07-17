@@ -7,7 +7,6 @@ import type { Logger } from '../../../org/slf4j/Logger.d.ts'
 export class NarratorLinux extends Object implements Narrator {
     static EMPTY: Narrator;
     static LOGGER: Logger;
-    static getNarrator(): Narrator;
     constructor()
     // private executionBatch: AtomicInteger;
     // private executor: ExecutorService;

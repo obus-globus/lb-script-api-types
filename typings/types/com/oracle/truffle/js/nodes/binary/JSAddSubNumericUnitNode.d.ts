@@ -18,7 +18,6 @@ export abstract class JSAddSubNumericUnitNode extends JSUnaryNode implements Tru
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
-    static truncate(paramnode: Node): void;
     constructor(operand: JavaScriptNode, isAddition: boolean, truncate: boolean)
     // private isAddition: boolean;
     // private truncate: boolean;

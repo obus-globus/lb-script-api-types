@@ -4,7 +4,6 @@ import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { PathCondition } from '../../../../../../../../org/apache/logging/log4j/core/appender/rolling/action/PathCondition.d.ts'
 export class IfAccumulatedFileSize extends Object implements PathCondition {
     static EMPTY_ARRAY: PathCondition[];
-    static copy(...paramsource: PathCondition[]): PathCondition[];
     static createFileSizeCondition(paramsize: string, ...paramnestedConditions: PathCondition[]): IfAccumulatedFileSize;
     private constructor(thresholdSize: number, ...nestedConditions: PathCondition[])
     // private accumulatedSize: number;

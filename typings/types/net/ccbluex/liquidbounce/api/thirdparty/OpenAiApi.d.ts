@@ -1,3 +1,4 @@
+import type { Continuation } from '../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { BaseApi } from '../../../../../net/ccbluex/liquidbounce/api/core/BaseApi.d.ts'
 /**
  * OpenAI API
@@ -9,13 +10,6 @@ export class OpenAiApi extends BaseApi {
     // private model: string;
     // private openAiKey: string;
     // private prompt: string;
-    /**
-     * Requests a new answer from the OpenAI API
-     *
-     * @param question The question to ask
-     * @returns The response from the AI
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/OpenAiApi.kt#L47 | src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/OpenAiApi.kt:47}
-     */
-    requestNewAnswer(question: string): string;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    requestNewAnswer(question: string, $completion: Continuation<string>): any;
 }

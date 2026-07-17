@@ -6,5 +6,6 @@ export class ModuleAutoShoot$ThrowableTypeMode extends Mode {
     static Companion: Tagged$Companion;
     protected constructor(name: string, aliases: string[])
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     findSlot(): HotbarItemSlot | null;
 }

@@ -1,4 +1,3 @@
-import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { ChannelHandlerContext } from '../../../../../io/netty/channel/ChannelHandlerContext.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
@@ -12,8 +11,6 @@ import type { PacketEncoder } from '../../../../../net/minecraft/network/PacketE
 import type { PacketListener } from '../../../../../net/minecraft/network/PacketListener.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
-import type { StreamDecoder } from '../../../../../net/minecraft/network/codec/StreamDecoder.d.ts'
-import type { StreamMemberEncoder } from '../../../../../net/minecraft/network/codec/StreamMemberEncoder.d.ts'
 import type { Packet } from '../../../../../net/minecraft/network/protocol/Packet.d.ts'
 import type { PacketType } from '../../../../../net/minecraft/network/protocol/PacketType.d.ts'
 import type { ClientCommonPacketListener } from '../../../../../net/minecraft/network/protocol/common/ClientCommonPacketListener.d.ts'
@@ -22,8 +19,6 @@ export class ClientboundCustomPayloadPacket extends Record implements GenericPay
     static CONFIG_STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundCustomPayloadPacket>;
     static GAMEPLAY_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundCustomPayloadPacket>;
     static MAX_PAYLOAD_SIZE: number;
-    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
-    static getMaxPayloadSize(): number;
     constructor(payload: CustomPacketPayload)
     // private payload: CustomPacketPayload;
     equals(o: Object | null): boolean;

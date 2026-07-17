@@ -7,7 +7,6 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class FoodProperties1_20_5 extends Record implements Copyable {
     static TYPE1_20_5: Type<FoodProperties1_20_5>;
     static TYPE1_21: Type<FoodProperties1_20_5>;
-    static copy<T extends unknown>(paramarg0: T): T;
     constructor(nutrition: number, saturationModifier: number, canAlwaysEat: boolean, eatSeconds: number, usingConvertsTo: Item, possibleEffects: FoodProperties1_20_5$FoodEffect[])
     // private canAlwaysEat: boolean;
     // private eatSeconds: number;

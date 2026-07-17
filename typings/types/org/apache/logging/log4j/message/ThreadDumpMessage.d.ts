@@ -8,7 +8,6 @@ import type { ThreadInformation } from '../../../../../org/apache/logging/log4j/
 import type { StringBuilderFormattable } from '../../../../../org/apache/logging/log4j/util/StringBuilderFormattable.d.ts'
 export class ThreadDumpMessage extends Object implements Message, StringBuilderFormattable {
     constructor(title: string)
-    constructor(arg0: string, arg1: string, arg2: any)
     readonly formattedMessage: string;
     // private threads: Map<ThreadInformation, StackTraceElement[]>;
     // private title: string;

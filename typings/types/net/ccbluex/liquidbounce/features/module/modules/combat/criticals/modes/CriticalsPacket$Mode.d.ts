@@ -12,8 +12,6 @@ export class CriticalsPacket$Mode extends Enum<CriticalsPacket$Mode> implements 
     static NO_CHEAT_PLUS: CriticalsPacket$Mode;
     static VANILLA: CriticalsPacket$Mode;
     static getEntries(): CriticalsPacket$Mode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): CriticalsPacket$Mode;
     static values(): CriticalsPacket$Mode[];

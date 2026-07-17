@@ -8,8 +8,6 @@ export class ModuleNoFall$NotCondition extends Enum<ModuleNoFall$NotCondition> i
     static WHILE_GLIDING: ModuleNoFall$NotCondition;
     static WITH_MACE: ModuleNoFall$NotCondition;
     static getEntries(): ModuleNoFall$NotCondition[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleNoFall$NotCondition;
     static values(): ModuleNoFall$NotCondition[];

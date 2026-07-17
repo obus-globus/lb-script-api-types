@@ -8,7 +8,6 @@ export abstract class RandomSupport$AbstractSpliteratorGenerator extends Object 
     static doubles(paramarg0: RandomGenerator, paramarg1: number, paramarg2: number): DoubleStream;
     static doubles(paramarg0: RandomGenerator, paramarg1: number): DoubleStream;
     static doubles(paramarg0: RandomGenerator, paramarg1: number, paramarg2: number, paramarg3: number): DoubleStream;
-    static getDefault(): RandomGenerator;
     static ints(paramarg0: RandomGenerator): IntStream;
     static ints(paramarg0: RandomGenerator, paramarg1: number, paramarg2: number): IntStream;
     static ints(paramarg0: RandomGenerator, paramarg1: number): IntStream;
@@ -17,7 +16,6 @@ export abstract class RandomSupport$AbstractSpliteratorGenerator extends Object 
     static longs(paramarg0: RandomGenerator, paramarg1: number): LongStream;
     static longs(paramarg0: RandomGenerator, paramarg1: number, paramarg2: number): LongStream;
     static longs(paramarg0: RandomGenerator, paramarg1: number, paramarg2: number, paramarg3: number): LongStream;
-    static of(paramarg0: string): RandomGenerator;
     constructor()
     doubles(): DoubleStream;
     doubles(arg0: number, arg1: number): DoubleStream;

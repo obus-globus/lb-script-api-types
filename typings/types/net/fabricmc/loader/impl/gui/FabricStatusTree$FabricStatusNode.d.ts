@@ -6,7 +6,6 @@ import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 import type { FabricStatusTree$FabricTreeWarningLevel } from '../../../../../net/fabricmc/loader/impl/gui/FabricStatusTree$FabricTreeWarningLevel.d.ts'
 export class FabricStatusTree$FabricStatusNode extends Object {
     constructor(arg0: FabricStatusTree$FabricStatusNode, arg1: DataInputStream)
-    constructor(arg0: FabricStatusTree$FabricStatusNode, arg1: string, arg2: any)
     children: FabricStatusTree$FabricStatusNode[];
     details: string;
     expandByDefault: boolean;

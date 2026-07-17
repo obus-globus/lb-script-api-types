@@ -7,7 +7,6 @@ export class QueueInputStream extends InputStream {
     static nullInputStream(): InputStream;
     constructor()
     constructor(arg0: number[])
-    constructor(arg0: QueueInputStream$Builder, arg1: any)
     // private blockingQueue: number[];
     // private timeoutNanos: number;
     getBlockingQueue(): number[];

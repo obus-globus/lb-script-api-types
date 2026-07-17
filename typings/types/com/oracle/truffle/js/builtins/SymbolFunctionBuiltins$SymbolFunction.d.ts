@@ -9,7 +9,6 @@ import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class SymbolFunctionBuiltins$SymbolFunction extends Enum<SymbolFunctionBuiltins$SymbolFunction> implements BuiltinEnum<SymbolFunctionBuiltins$SymbolFunction> {
     static for_: SymbolFunctionBuiltins$SymbolFunction;
     static keyFor: SymbolFunctionBuiltins$SymbolFunction;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): SymbolFunctionBuiltins$SymbolFunction;
     static values(): SymbolFunctionBuiltins$SymbolFunction[];

@@ -8,7 +8,6 @@ import type { Protocol } from '../../../../../../com/viaversion/viaversion/api/p
 import type { Key } from '../../../../../../com/viaversion/viaversion/util/Key.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class RegistryAccessImpl extends Object implements CodecContext$RegistryAccess {
-    static of(paramarg0: Protocol<any, any, any, any>, paramarg1: UserConnection): CodecContext$RegistryAccess;
     constructor(arg0: Protocol<any, any, any, any>, arg1: UserConnection)
     // private connection: UserConnection;
     // private entityTracker: EntityTracker;

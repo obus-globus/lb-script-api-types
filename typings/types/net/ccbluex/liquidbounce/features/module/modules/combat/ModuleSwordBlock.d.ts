@@ -25,6 +25,6 @@ export class ModuleSwordBlock extends ClientModule {
     readonly hideShieldSlot: boolean;
     readonly onlyVisual: boolean;
     // private packetHandler: EventHook<PacketEvent>;
-    shouldAnimateSwordBlock(entity: LivingEntity, mainHandItem: ItemStack): boolean;
-    shouldHideOffhand(offHandStack: ItemStack, mainHandStack: ItemStack): boolean;
+    shouldAnimateSwordBlock(entity: LivingEntity, mainHandItem?: ItemStack): boolean;
+    shouldHideOffhand(offHandStack?: ItemStack, mainHandStack?: ItemStack): boolean;
 }

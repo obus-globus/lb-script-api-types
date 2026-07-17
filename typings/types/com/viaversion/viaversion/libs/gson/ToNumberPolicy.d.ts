@@ -11,7 +11,7 @@ export class ToNumberPolicy extends Enum<ToNumberPolicy> implements ToNumberStra
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ToNumberPolicy;
     static values(): ToNumberPolicy[];
-    constructor(arg2: ToNumberPolicy)
+    private constructor()
     readNumber(arg0: JsonReader): Number;
     name(): "DOUBLE" | "LAZILY_PARSED_NUMBER" | "LONG_OR_DOUBLE" | "BIG_DECIMAL";
 }

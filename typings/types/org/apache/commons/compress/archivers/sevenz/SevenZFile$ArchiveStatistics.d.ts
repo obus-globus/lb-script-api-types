@@ -1,8 +1,7 @@
-import type { FilterInputStream } from '../../../../../../java/io/FilterInputStream.d.ts'
 import type { BitSet } from '../../../../../../java/util/BitSet.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class SevenZFile$ArchiveStatistics extends Object {
-    constructor(arg0: FilterInputStream)
+    private constructor()
     // private folderHasCrc: BitSet;
     // private numberOfCoders: number;
     // private numberOfEntries: number;

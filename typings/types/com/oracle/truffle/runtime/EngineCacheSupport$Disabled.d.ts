@@ -9,7 +9,6 @@ import type { OptionDescriptor } from '../../../../org/graalvm/options/OptionDes
 import type { OptionValues } from '../../../../org/graalvm/options/OptionValues.d.ts'
 import type { Engine$CancellationCallback } from '../../../../org/graalvm/polyglot/Engine$CancellationCallback.d.ts'
 export class EngineCacheSupport$Disabled extends Object implements EngineCacheSupport {
-    static get(): EngineCacheSupport;
     constructor()
     getEngineOptions(): OptionDescriptor[];
     getPriority(): number;

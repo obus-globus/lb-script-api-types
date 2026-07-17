@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { DefaultConstructorMarker } from '../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { DescriptorKindExclude } from '../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/DescriptorKindExclude.d.ts'
 import type { DescriptorKindFilter$Companion } from '../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/DescriptorKindFilter$Companion.d.ts'
 export class DescriptorKindFilter extends Object {
@@ -15,7 +14,6 @@ export class DescriptorKindFilter extends Object {
     static VALUES: DescriptorKindFilter;
     static VARIABLES: DescriptorKindFilter;
     constructor(arg0: number, arg1: DescriptorKindExclude[])
-    constructor(arg0: number, arg1: (Object | null)[], arg2: number, arg3: DefaultConstructorMarker)
     readonly excludes: DescriptorKindExclude[];
     readonly kindMask: number;
     acceptsKinds(arg0: number): boolean;

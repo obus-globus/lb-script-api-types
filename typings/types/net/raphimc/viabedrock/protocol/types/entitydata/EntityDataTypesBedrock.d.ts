@@ -15,7 +15,6 @@ export class EntityDataTypesBedrock extends Enum<EntityDataTypesBedrock> impleme
     static STRING: EntityDataTypesBedrock;
     static TAG: EntityDataTypesBedrock;
     static byDataItemType(paramarg0: DataItemType): EntityDataTypesBedrock;
-    static create(paramarg0: number, paramarg1: Type<Object>): EntityDataType;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): EntityDataTypesBedrock;
     static values(): EntityDataTypesBedrock[];

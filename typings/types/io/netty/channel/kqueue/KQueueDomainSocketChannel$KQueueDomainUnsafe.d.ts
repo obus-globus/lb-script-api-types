@@ -2,7 +2,7 @@ import type { AbstractKQueueStreamChannel$KQueueStreamUnsafe } from '../../../..
 import type { KQueueDomainSocketChannel } from '../../../../io/netty/channel/kqueue/KQueueDomainSocketChannel.d.ts'
 import type { KQueueRecvByteAllocatorHandle } from '../../../../io/netty/channel/kqueue/KQueueRecvByteAllocatorHandle.d.ts'
 export class KQueueDomainSocketChannel$KQueueDomainUnsafe extends AbstractKQueueStreamChannel$KQueueStreamUnsafe {
-    constructor(null_: KQueueDomainSocketChannel, arg1: any)
+    private constructor(null_: KQueueDomainSocketChannel)
     readReady(arg0: KQueueRecvByteAllocatorHandle): void;
     // private readReadyFd(): void;
 }

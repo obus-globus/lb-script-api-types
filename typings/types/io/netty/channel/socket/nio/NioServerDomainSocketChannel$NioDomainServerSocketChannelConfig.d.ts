@@ -4,7 +4,7 @@ import type { NioServerDomainSocketChannel } from '../../../../../io/netty/chann
 import type { ServerSocketChannel } from '../../../../../java/nio/channels/ServerSocketChannel.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class NioServerDomainSocketChannel$NioDomainServerSocketChannelConfig extends DefaultChannelConfig {
-    constructor(null_: NioServerDomainSocketChannel, arg1: NioServerDomainSocketChannel, arg2: any)
+    private constructor(null_: NioServerDomainSocketChannel, arg1: NioServerDomainSocketChannel)
     // private backlog: number;
     autoReadCleared(): void;
     // private getBacklog(): number;

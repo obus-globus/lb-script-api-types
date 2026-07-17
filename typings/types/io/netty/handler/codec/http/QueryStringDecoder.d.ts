@@ -6,8 +6,6 @@ export class QueryStringDecoder extends Object {
     static builder(): QueryStringDecoder$Builder;
     static decodeComponent(paramarg0: string): string;
     static decodeComponent(paramarg0: string, paramarg1: Charset): string;
-    constructor(arg0: QueryStringDecoder$Builder, arg1: URI, arg2: any)
-    constructor(arg0: QueryStringDecoder$Builder, arg1: string, arg2: any)
     constructor(arg0: URI)
     constructor(arg0: URI, arg1: Charset)
     constructor(arg0: URI, arg1: Charset, arg2: number)

@@ -22,6 +22,7 @@ export class FlyVulcan286Teleport extends Mode {
     readonly moveHandler: EventHook<PlayerMoveEvent>;
     readonly packetHandler: EventHook<PacketEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     /**
      * Alright, lets fly...
      * Fall damage is based on fall distance. By spoofing the ground

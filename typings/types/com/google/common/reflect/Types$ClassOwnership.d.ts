@@ -1,4 +1,3 @@
-import type { TypeVisitor } from '../../../../com/google/common/reflect/TypeVisitor.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
@@ -8,7 +7,7 @@ export class Types$ClassOwnership extends Enum<Types$ClassOwnership> {
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): Types$ClassOwnership;
     static values(): Types$ClassOwnership[];
-    constructor(arg2: TypeVisitor)
+    private constructor()
     getOwnerType(rawType: Class<Object>): Class<Object>;
     name(): "OWNED_BY_ENCLOSING_CLASS" | "LOCAL_CLASS_HAS_NO_OWNER";
 }

@@ -1,14 +1,11 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Predicate } from '../../../../../../java/util/function/Predicate.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 export class TimedPickupTracker$PickupFilter extends Enum<TimedPickupTracker$PickupFilter> implements Predicate<BlockPos> {
     static LAVA: TimedPickupTracker$PickupFilter;
     static WATER: TimedPickupTracker$PickupFilter;
     static getEntries(): TimedPickupTracker$PickupFilter[];
-    static isEqual<T extends unknown>(paramarg0: Object): (param0: T) => boolean;
-    static not<T extends unknown>(paramarg0: (param0: Object) => boolean): (param0: T) => boolean;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): TimedPickupTracker$PickupFilter;
     static values(): TimedPickupTracker$PickupFilter[];

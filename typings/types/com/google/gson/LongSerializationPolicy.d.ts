@@ -9,7 +9,7 @@ export class LongSerializationPolicy extends Enum<LongSerializationPolicy> {
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): LongSerializationPolicy;
     static values(): LongSerializationPolicy[];
-    constructor(arg2: LongSerializationPolicy)
+    private constructor()
     serialize(arg0: number): JsonElement;
     typeAdapter(): TypeAdapter<Number>;
     name(): "DEFAULT" | "STRING";

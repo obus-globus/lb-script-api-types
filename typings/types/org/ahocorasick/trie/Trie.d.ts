@@ -8,7 +8,7 @@ import type { EmitHandler } from '../../../org/ahocorasick/trie/handler/EmitHand
 import type { StatefulEmitHandler } from '../../../org/ahocorasick/trie/handler/StatefulEmitHandler.d.ts'
 export class Trie extends Object {
     static builder(): Trie$TrieBuilder;
-    constructor(arg0: PayloadTrie<Object>, arg1: any)
+    private constructor(arg0: PayloadTrie<string>)
     // private payloadTrie: PayloadTrie<string>;
     containsMatch(arg0: CharSequence): boolean;
     firstMatch(arg0: CharSequence): Emit;

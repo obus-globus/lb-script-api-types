@@ -17,7 +17,7 @@ export class BurstFilter extends AbstractFilter {
     static ELEMENT_TYPE: string;
     static EMPTY_ARRAY: Filter[];
     static newBuilder(): BurstFilter$Builder;
-    constructor(arg0: Level, arg1: number, arg2: number, arg3: Filter$Result, arg4: Filter$Result, arg5: any)
+    private constructor(level: Level, rate: number, maxBurst: number, onMatch: Filter$Result, onMismatch: Filter$Result)
     readonly available: BurstFilter$LogDelay[];
     // private burstInterval: number;
     // private history: BurstFilter$LogDelay[];

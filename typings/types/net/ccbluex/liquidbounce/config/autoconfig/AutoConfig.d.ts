@@ -2,6 +2,7 @@ import type { JsonObject } from '../../../../../com/google/gson/JsonObject.d.ts'
 import type { Reader } from '../../../../../java/io/Reader.d.ts'
 import type { Writer } from '../../../../../java/io/Writer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Continuation } from '../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { AutoSettings } from '../../../../../net/ccbluex/liquidbounce/api/models/client/AutoSettings.d.ts'
 import type { AutoSettingsStatusType } from '../../../../../net/ccbluex/liquidbounce/api/types/enums/AutoSettingsStatusType.d.ts'
 import type { AutoSettingsType } from '../../../../../net/ccbluex/liquidbounce/api/types/enums/AutoSettingsType.d.ts'
@@ -21,16 +22,11 @@ export class AutoConfig extends Object {
      */
     loadAutoConfig(jsonObject: JsonObject, modules: ValueGroup[]): void;
     loadAutoConfig(reader: Reader, modules: ValueGroup[]): void;
-    loadAutoConfig(autoConfig: AutoSettings): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    loadAutoConfig(autoConfig: AutoSettings, $completion: Continuation<void>): any;
     // private printOutMetadata(jsonObject: JsonObject): void;
-    /**
-     * Reloads auto settings list.
-     *
-     * @returns successfully reloaded or not
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig.kt#L85 | src/main/kotlin/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig.kt:85}
-     */
-    reloadConfigs(): boolean;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    reloadConfigs($completion: Continuation<boolean>): any;
     /**
      * Created an auto config, which stores the moduleConfigur
      *

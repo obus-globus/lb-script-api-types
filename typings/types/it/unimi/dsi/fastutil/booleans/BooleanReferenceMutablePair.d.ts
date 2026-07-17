@@ -3,7 +3,6 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BooleanReferenceMutablePair<V extends unknown> extends Object implements BooleanReferencePair<V>, Serializable {
     static of<V extends unknown>(paramarg0: boolean, paramarg1: V): BooleanReferenceMutablePair<V>;
-    static of<V extends unknown>(paramarg0: boolean, paramarg1: V): BooleanReferencePair<V>;
     constructor(arg0: boolean, arg1: V)
     // private left: boolean;
     // private right: V;

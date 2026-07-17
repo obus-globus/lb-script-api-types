@@ -6,7 +6,6 @@ import type { Logger } from '../../../../org/slf4j/Logger.d.ts'
 export class RealmsError$ErrorWithRawPayload extends Record implements RealmsError {
     static LOGGER: Logger;
     static NO_MESSAGE: Component;
-    static parse(paramhttpCode: number, parampayload: string): RealmsError;
     constructor(httpCode: number, payload: string)
     // private httpCode: number;
     // private payload: string;

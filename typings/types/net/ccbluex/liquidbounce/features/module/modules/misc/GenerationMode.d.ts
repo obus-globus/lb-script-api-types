@@ -8,6 +8,7 @@ export class GenerationMode extends Mode {
     protected constructor(name: string)
     readonly pages: number;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private random: Random;
     /*not mapped: */ getRandom$net_ccbluex_liquidbounce(): Random;
     generate(): IntStream;

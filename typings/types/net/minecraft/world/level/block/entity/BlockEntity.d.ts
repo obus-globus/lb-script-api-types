@@ -50,7 +50,6 @@ export abstract class BlockEntity extends Object implements SetBlockStateHandlin
     static getPosFromTag(parambase: ChunkPos, paramentityTag: CompoundTag): BlockPos;
     static loadStatic(parampos: BlockPos, paramstate: BlockState, paramtag: CompoundTag, paramregistries: HolderLookup$Provider): BlockEntity;
     static parseCustomNameSafe(paraminput: ValueInput, paramname: string): Component;
-    static transfer(paramarg0: AttachmentTarget, paramarg1: AttachmentTarget, paramarg2: boolean): void;
     constructor(type: BlockEntityType<any>, worldPosition: BlockPos, blockState: BlockState)
     // private attachedChangedListeners: Map<Object, Object>;
     readonly blockState: BlockState;

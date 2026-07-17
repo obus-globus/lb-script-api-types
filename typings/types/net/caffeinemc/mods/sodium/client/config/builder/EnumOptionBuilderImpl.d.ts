@@ -16,7 +16,6 @@ import type { EnumOptionBuilderImplAccessor } from '../../../../../../../net/iri
 import type { Component } from '../../../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 export class EnumOptionBuilderImpl<E extends Enum<E>> extends StatefulOptionBuilderImpl<EnumOption<E>, E> implements EnumOptionBuilder<E>, EnumOptionBuilderImplAccessor<Enum<any>> {
-    static nameProviderFrom<E extends Enum<E>>(...paramarg0: Component[]): (param0: E) => Component;
     constructor(arg0: Identifier, arg1: Class<E>)
     // private allowedValues: DependentValue<E[]>;
     // private elementNameProvider: (param0: E) => Component;

@@ -6,7 +6,6 @@ export class NarratorWindows extends Unknown implements Narrator {
     static EMPTY: Narrator;
     static IID_IUNKNOWN: Guid$IID;
     static LOGGER: Logger;
-    static getNarrator(): Narrator;
     constructor()
     active(): boolean;
     clear(): void;

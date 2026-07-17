@@ -22,7 +22,8 @@ export class JavaAuthManager extends Object {
     static fromJson(paramarg0: HttpClient, paramarg1: JsonObject): JavaAuthManager;
     static fromJson(paramarg0: HttpClient, paramarg1: Map$Entry<string, GsonElement>[]): JavaAuthManager;
     static toJson(paramarg0: JavaAuthManager): JsonObject;
-    constructor(arg0: HttpClient, arg1: MsaApplicationConfig, arg2: string, arg3: KeyPair, arg4: UUID, arg5: MsaToken, arg6: any)
+    private constructor(arg0: HttpClient, arg1: MsaApplicationConfig, arg2: string, arg3: KeyPair, arg4: UUID, arg5: MsaToken)
+    private constructor(arg0: HttpClient, arg1: MsaApplicationConfig, arg2: string, arg3: KeyPair, arg4: UUID, arg5: MsaToken, arg6: XblDeviceToken, arg7: XblUserToken, arg8: XblTitleToken, arg9: XblXstsToken, arg10: MinecraftToken, arg11: MinecraftProfile, arg12: MinecraftPlayerCertificates)
     readonly changeListeners: ChangeListeners;
     readonly deviceId: UUID;
     readonly deviceKeyPair: KeyPair;

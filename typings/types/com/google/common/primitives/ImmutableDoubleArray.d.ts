@@ -17,7 +17,8 @@ export class ImmutableDoubleArray extends Object implements Serializable {
     static of(parame0: number, parame1: number, parame2: number, parame3: number, parame4: number): ImmutableDoubleArray;
     static of(parame0: number, parame1: number, parame2: number, parame3: number, parame4: number, parame5: number): ImmutableDoubleArray;
     static of(paramfirst: number, ...paramrest: number[]): ImmutableDoubleArray;
-    constructor(arg0: number[], arg1: number, arg2: number, arg3: any)
+    private constructor(array: number[])
+    private constructor(array: number[], start: number, end: number)
     // private array: number[];
     // private end: number;
     // private start: number;

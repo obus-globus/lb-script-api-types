@@ -4,7 +4,6 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { VertexFormatRegistry } from '../../../../../../../net/caffeinemc/mods/sodium/api/vertex/format/VertexFormatRegistry.d.ts'
 export class VertexFormatRegistryImpl extends Object implements VertexFormatRegistry {
     static INSTANCE: VertexFormatRegistry;
-    static instance(): VertexFormatRegistry;
     constructor()
     // private descriptions: { [key: string]: any };
     // private lock: StampedLock;

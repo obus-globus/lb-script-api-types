@@ -29,6 +29,7 @@ export class FlySentinel26thDec extends Mode {
     // private nostalgia: boolean;
     // private /*not mapped: */ getNostalgia(): boolean;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     readonly repeatable: EventHook<GameTickEvent>;
     // private ticks: number;
     // private /*not mapped: */ getTicks(): number;

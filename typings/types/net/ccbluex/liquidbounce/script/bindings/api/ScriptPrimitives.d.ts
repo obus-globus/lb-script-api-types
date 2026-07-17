@@ -22,7 +22,7 @@ export class ScriptPrimitives extends Object {
      */
     byte(byte: number): number;
     byte(long: number): number;
-    byte(string: string | null, radix: number): number;
+    byte(string: string | null, radix?: number): number;
     /**
      * Coerces the argument to a JVM `char`; a string yields its first character.
      */
@@ -45,16 +45,16 @@ export class ScriptPrimitives extends Object {
      */
     int(int: number): number;
     int(long: number): number;
-    int(string: string | null, radix: number): number;
+    int(string: string | null, radix?: number): number;
     /**
      * Coerces the argument to a JVM `long`; a string is parsed (optionally with a radix, default 10).
      */
     long(long: number): number;
-    long(string: string | null, radix: number): number;
+    long(string: string | null, radix?: number): number;
     /**
      * Coerces the argument to a JVM `short`; a string is parsed (optionally with a radix, default 10).
      */
     short(long: number): number;
     short(short: number): number;
-    short(string: string | null, radix: number): number;
+    short(string: string | null, radix?: number): number;
 }

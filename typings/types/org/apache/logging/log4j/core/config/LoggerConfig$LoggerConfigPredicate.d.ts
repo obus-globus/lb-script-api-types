@@ -8,7 +8,7 @@ export class LoggerConfig$LoggerConfigPredicate extends Enum<LoggerConfig$Logger
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): LoggerConfig$LoggerConfigPredicate;
     static values(): LoggerConfig$LoggerConfigPredicate[];
-    constructor(arg2: any)
+    private constructor()
     allow(config: LoggerConfig): boolean;
     name(): "ALL" | "ASYNCHRONOUS_ONLY" | "SYNCHRONOUS_ONLY";
 }

@@ -4,7 +4,7 @@ import type { UncheckedFilterOutputStream$Builder } from '../../../../../org/apa
 export class UncheckedFilterOutputStream extends FilterOutputStream {
     static builder(): UncheckedFilterOutputStream$Builder;
     static nullOutputStream(): OutputStream;
-    constructor(arg0: UncheckedFilterOutputStream$Builder, arg1: any)
+    private constructor(arg0: UncheckedFilterOutputStream$Builder)
     close(): void;
     flush(): void;
     write(arg0: number[]): void;

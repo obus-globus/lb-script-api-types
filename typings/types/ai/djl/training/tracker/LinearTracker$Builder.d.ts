@@ -1,7 +1,7 @@
 import type { LinearTracker } from '../../../../ai/djl/training/tracker/LinearTracker.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class LinearTracker$Builder extends Object {
-    constructor(arg0: any)
+    private constructor()
     // private baseValue: number;
     // private max: number;
     // private maxUpdates: number;

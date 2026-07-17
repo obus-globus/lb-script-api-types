@@ -5,4 +5,5 @@ export class ModuleItemESP$OutlineMode extends Mode {
     static Companion: Tagged$Companion;
     static INSTANCE: ModuleItemESP$OutlineMode;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
 }

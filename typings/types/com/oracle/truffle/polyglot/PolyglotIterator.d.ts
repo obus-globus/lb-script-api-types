@@ -10,16 +10,6 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 import type { Context } from '../../../../org/graalvm/polyglot/Context.d.ts'
 export class PolyglotIterator<T extends unknown> extends Object implements PolyglotWrapper, Iterator<T> {
-    static asInstance(paramv: Object): PolyglotWrapper;
-    static equals(paramcontext: Object, paramreceiver: Object, paramobj: Object): boolean;
-    static equalsProxy(paramwrapper: PolyglotWrapper, paramother: Object): boolean;
-    static getHostProxy(paramv: Object): PolyglotWrapper;
-    static hashCode(paramcontext: Object, paramreceiver: Object): number;
-    static isHostProxy(paramv: Object): boolean;
-    static isInstance(paramv: Object): boolean;
-    static toString(paramthisObj: PolyglotWrapper): string;
-    static toString(paramlanguageContext: Object, paramreceiver: Object): string;
-    static toStringImpl(paramlanguageContext: Object, paramreceiver: Object): string;
     constructor(elementClass: Class<T>, elementType: Type, array: Object, languageContext: PolyglotLanguageContext)
     // private cache: PolyglotIterator$Cache;
     // private concurrentlyModified: boolean;

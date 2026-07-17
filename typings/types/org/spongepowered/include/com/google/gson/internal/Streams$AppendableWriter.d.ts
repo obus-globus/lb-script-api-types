@@ -3,7 +3,7 @@ import type { Appendable } from '../../../../../../../java/lang/Appendable.d.ts'
 import type { Streams$AppendableWriter$CurrentWrite } from '../../../../../../../org/spongepowered/include/com/google/gson/internal/Streams$AppendableWriter$CurrentWrite.d.ts'
 export class Streams$AppendableWriter extends Writer {
     static nullWriter(): Writer;
-    constructor(arg0: Appendable, arg1: any)
+    private constructor(arg0: Appendable)
     // private appendable: Appendable;
     // private currentWrite: Streams$AppendableWriter$CurrentWrite;
     close(): void;

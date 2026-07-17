@@ -5,8 +5,6 @@ import type { FeatureRendererType } from '../../../../../net/minecraft/client/re
 import type { TranslucentSubmit } from '../../../../../net/minecraft/client/renderer/feature/submit/TranslucentSubmit.d.ts'
 import type { Matrix4fc } from '../../../../../org/joml/Matrix4fc.d.ts'
 export class MovingBlockFeatureRenderer$Submit extends Record implements TranslucentSubmit {
-    static computeDistanceToCameraSq(parampose: Matrix4fc): number;
-    static computeDistanceToCameraSq(parampose: Matrix4fc, paramoriginX: number, paramoriginY: number, paramoriginZ: number): number;
     constructor(pose: Matrix4fc, movingBlockRenderState: MovingBlockRenderState, outlineColor: number)
     // private movingBlockRenderState: MovingBlockRenderState;
     // private outlineColor: number;

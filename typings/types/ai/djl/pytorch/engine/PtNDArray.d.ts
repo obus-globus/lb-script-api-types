@@ -15,7 +15,6 @@ import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Number } from '../../../../java/lang/Number.d.ts'
 export class PtNDArray extends NativeResource<number> implements NDArray {
-    static decode(paramarg0: NDManager, paramarg1: number[]): NDArray;
     constructor(arg0: PtNDManager, arg1: string[], arg2: Shape)
     constructor(arg0: PtNDManager, arg1: number)
     constructor(arg0: PtNDManager, arg1: number, arg2: ByteBuffer)

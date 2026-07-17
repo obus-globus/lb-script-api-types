@@ -14,7 +14,6 @@ import type { Logger } from '../../../../../org/slf4j/Logger.d.ts'
 export class DensityFunctions$MulOrAdd extends Record implements DensityFunctions$PureTransformer, DensityFunctions$TwoArgumentSimpleFunction {
     static CODEC: Codec<DensityFunction>;
     static LOGGER: Logger;
-    static create(paramtype: DensityFunctions$TwoArgumentSimpleFunction$Type, paramargument1: DensityFunction, paramargument2: DensityFunction): DensityFunctions$TwoArgumentSimpleFunction;
     private constructor(specificType: DensityFunctions$MulOrAdd$Type, input: DensityFunction, minValue: number, maxValue: number, argument: number)
     // private argument: number;
     // private input: DensityFunction;

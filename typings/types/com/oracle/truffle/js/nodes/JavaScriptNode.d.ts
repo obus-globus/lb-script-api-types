@@ -15,7 +15,6 @@ export abstract class JavaScriptNode extends JavaScriptBaseNode implements Instr
     static cloneUninitialized<T extends JavaScriptNode>(paramnode: T, parammaterializedTags: Class<Tag>[]): T;
     static cloneUninitialized<T extends JavaScriptNode>(paramnodeArray: T[], parammaterializedTags: Class<Tag>[]): T[];
     static findBlockScopeNode(paramnode: Node): Node;
-    static findInstrumentableParent(paramnode: Node): Node;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;

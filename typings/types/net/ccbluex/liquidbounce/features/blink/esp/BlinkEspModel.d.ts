@@ -17,6 +17,7 @@ export class BlinkEspModel extends BlinkEspMode {
     // private outlineColor: Color4b;
     // private /*not mapped: */ getOutlineColor(): Color4b;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private poseStack: PoseStack;
     // private renderHandler: EventHook<GameRenderEvent>;
 }

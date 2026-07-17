@@ -5,7 +5,7 @@ export abstract class Strings extends Object {
     static CI: Strings;
     static CS: Strings;
     static builder(): Strings$Builder;
-    constructor(arg0: boolean, arg1: boolean, arg2: any)
+    private constructor(arg0: boolean, arg1: boolean)
     // private ignoreCase: boolean;
     // private nullIsLess: boolean;
     appendIfMissing(arg0: string, arg1: CharSequence, ...arg2: CharSequence[]): string;

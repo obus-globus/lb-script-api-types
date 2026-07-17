@@ -8,8 +8,6 @@ export class InventoryMoveSprintControlFeature$SprintMode extends Enum<Inventory
     static FORCE_NO_SPRINT: InventoryMoveSprintControlFeature$SprintMode;
     static FORCE_SPRINT: InventoryMoveSprintControlFeature$SprintMode;
     static getEntries(): InventoryMoveSprintControlFeature$SprintMode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): InventoryMoveSprintControlFeature$SprintMode;
     static values(): InventoryMoveSprintControlFeature$SprintMode[];

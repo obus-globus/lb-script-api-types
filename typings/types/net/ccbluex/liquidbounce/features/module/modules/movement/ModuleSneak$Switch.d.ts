@@ -9,6 +9,7 @@ export class ModuleSneak$Switch extends Mode {
     // private networkSneaking: boolean;
     // private networkTick: EventHook<PlayerNetworkMovementTickEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     disable(): void;
     enable(): void;
 }

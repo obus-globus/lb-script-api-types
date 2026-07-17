@@ -7,7 +7,6 @@ import type { Zone as Zone_2 } from '../../../../net/minecraft/util/profiling/Zo
 import type { MetricCategory } from '../../../../net/minecraft/util/profiling/metrics/MetricCategory.d.ts'
 export class TracyZoneFiller extends Object implements ProfilerFiller {
     static ROOT: string;
-    static combine(paramfirst: ProfilerFiller, paramsecond: ProfilerFiller): ProfilerFiller;
     constructor()
     // private activeZones: Zone[];
     // private name: string;

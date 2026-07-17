@@ -7,6 +7,7 @@ export class MurderMysteryMode extends Mode {
     static Companion: Tagged$Companion;
     protected constructor(name: string)
     readonly parent: ModeValueGroup<MurderMysteryMode>;
+    getParent(): ModeValueGroup<MurderMysteryMode>;
     disallowsArrowDodge(): boolean;
     getPlayerType(player: AbstractClientPlayer): MurderMysteryMode$PlayerType;
     handleHasBow(entity: AbstractClientPlayer): void;

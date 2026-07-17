@@ -7,8 +7,6 @@ export class ModuleElytraFly$Instant extends Enum<ModuleElytraFly$Instant> imple
     static START: ModuleElytraFly$Instant;
     static STOP: ModuleElytraFly$Instant;
     static getEntries(): ModuleElytraFly$Instant[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleElytraFly$Instant;
     static values(): ModuleElytraFly$Instant[];

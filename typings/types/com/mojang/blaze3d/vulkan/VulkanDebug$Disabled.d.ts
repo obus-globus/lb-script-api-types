@@ -7,7 +7,6 @@ import type { VkDevice } from '../../../../org/lwjgl/vulkan/VkDevice.d.ts'
 import type { VkInstance } from '../../../../org/lwjgl/vulkan/VkInstance.d.ts'
 import type { VkInstanceCreateInfo } from '../../../../org/lwjgl/vulkan/VkInstanceCreateInfo.d.ts'
 export class VulkanDebug$Disabled extends Object implements VulkanDebug {
-    static create(paramverbosity: number, paramwantsDebugLabels: boolean, paramavailableExtensions: string[], paramenabledExtensions: string[]): VulkanDebug;
     constructor()
     beginDebugGroup(buffer: VkCommandBuffer, label: () => string): void;
     chainCreateInfo(instanceCreateInfo: VkInstanceCreateInfo, stack: MemoryStack): void;

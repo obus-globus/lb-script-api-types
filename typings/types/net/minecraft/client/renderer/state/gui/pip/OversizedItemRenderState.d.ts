@@ -6,7 +6,6 @@ import type { PictureInPictureRenderState } from '../../../../../../../net/minec
 import type { Matrix3x2fc } from '../../../../../../../org/joml/Matrix3x2fc.d.ts'
 export class OversizedItemRenderState extends Record implements PictureInPictureRenderState {
     static IDENTITY_POSE: Matrix3x2fc;
-    static getBounds(paramx0: number, paramy0: number, paramx1: number, paramy1: number, paramscissorArea: ScreenRectangle): ScreenRectangle;
     constructor(guiItemRenderState: GuiItemRenderState, x0: number, y0: number, x1: number, y1: number)
     // private guiItemRenderState: GuiItemRenderState;
     // private x0: number;

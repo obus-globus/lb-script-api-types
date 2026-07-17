@@ -17,7 +17,7 @@ export class Base64$Decoder extends Object implements ByteProcessor {
     static FIND_NON_NUL: ByteProcessor;
     static FIND_NUL: ByteProcessor;
     static FIND_SEMI_COLON: ByteProcessor;
-    constructor(arg0: any)
+    private constructor()
     // private b4: number[];
     // private b4Posn: number;
     // private decodabet: number[];

@@ -8,8 +8,6 @@ export class BlockColors extends Object implements BlockColorsExtension {
     static LILY_PAD_DEFAULT: number;
     static LILY_PAD_IN_WORLD: number;
     static createDefault(): BlockColors;
-    static getOverridenVanillaBlocks(paramarg0: BlockColors): Block[];
-    static getProviders(paramarg0: BlockColors): Map<Block, BlockTintSource[]>;
     constructor()
     // private blocksToColor: Map<Object, Object>;
     // private overridenBlocks: Object[];

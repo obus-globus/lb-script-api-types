@@ -11,6 +11,7 @@ export class MineMode extends Mode {
     readonly canAbort: boolean;
     readonly canManuallyChange: boolean;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     readonly stopOnStateChange: boolean;
     finish(mineTarget: MineTarget): void;
     isInvalid(mineTarget: MineTarget, state: BlockState): boolean;

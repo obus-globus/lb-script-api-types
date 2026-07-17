@@ -5,6 +5,7 @@ export abstract class ModuleNoFov$FovMode extends Mode {
     static Companion: Tagged$Companion;
     constructor(name: string)
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     getFov(original: number): number;
     getFovMultiplier(original: number): number;
 }

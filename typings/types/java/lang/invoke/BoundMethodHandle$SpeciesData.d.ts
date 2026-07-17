@@ -1,4 +1,5 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
+type BoundMethodHandle$Specializer = any; // A17-N4: dependency has no emitted module (skipped); aliased so the name resolves
 import type { ClassSpecializer$SpeciesData } from '../../../java/lang/invoke/ClassSpecializer$SpeciesData.d.ts'
 import type { LambdaForm$BasicType } from '../../../java/lang/invoke/LambdaForm$BasicType.d.ts'
 import type { MemberName } from '../../../java/lang/invoke/MemberName.d.ts'

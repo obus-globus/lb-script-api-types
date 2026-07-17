@@ -1,5 +1,4 @@
 import type { Component } from '../../../../../java/awt/Component.d.ts'
-import type { WindowAdapter } from '../../../../../java/awt/event/WindowAdapter.d.ts'
 import type { Locale } from '../../../../../java/util/Locale.d.ts'
 import type { JTree } from '../../../../../javax/swing/JTree.d.ts'
 import type { DefaultTreeCellRenderer } from '../../../../../javax/swing/tree/DefaultTreeCellRenderer.d.ts'
@@ -46,7 +45,7 @@ export class FabricMainWindow$CustomTreeCellRenderer extends DefaultTreeCellRend
     static getDefaultLocale(): Locale;
     static isLightweightComponent(paramarg0: Component): boolean;
     static setDefaultLocale(paramarg0: Locale): void;
-    constructor(arg0: FabricMainWindow$IconSet, arg1: WindowAdapter)
+    private constructor(arg0: FabricMainWindow$IconSet)
     // private iconSet: FabricMainWindow$IconSet;
     getTreeCellRendererComponent(arg0: JTree, arg1: Object, arg2: boolean, arg3: boolean, arg4: boolean, arg5: number, arg6: boolean): Component;
 }

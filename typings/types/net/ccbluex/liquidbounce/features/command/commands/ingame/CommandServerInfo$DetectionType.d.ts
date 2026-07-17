@@ -12,8 +12,6 @@ export class CommandServerInfo$DetectionType extends Enum<CommandServerInfo$Dete
     static HOSTING: CommandServerInfo$DetectionType;
     static PLUGINS: CommandServerInfo$DetectionType;
     static getEntries(): CommandServerInfo$DetectionType[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): CommandServerInfo$DetectionType;
     static values(): CommandServerInfo$DetectionType[];

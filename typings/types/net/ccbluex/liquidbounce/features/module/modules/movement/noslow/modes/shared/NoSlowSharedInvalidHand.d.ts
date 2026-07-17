@@ -8,4 +8,5 @@ export class NoSlowSharedInvalidHand extends Mode {
     constructor(parent: ModeValueGroup<any>)
     // private packetHandler: EventHook<PacketEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
 }

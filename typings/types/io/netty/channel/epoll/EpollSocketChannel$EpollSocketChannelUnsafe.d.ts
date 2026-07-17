@@ -2,6 +2,6 @@ import type { AbstractEpollStreamChannel$EpollStreamUnsafe } from '../../../../i
 import type { EpollSocketChannel } from '../../../../io/netty/channel/epoll/EpollSocketChannel.d.ts'
 import type { Executor } from '../../../../java/util/concurrent/Executor.d.ts'
 export class EpollSocketChannel$EpollSocketChannelUnsafe extends AbstractEpollStreamChannel$EpollStreamUnsafe {
-    constructor(null_: EpollSocketChannel, arg1: any)
+    private constructor(null_: EpollSocketChannel)
     prepareToClose(): Executor;
 }

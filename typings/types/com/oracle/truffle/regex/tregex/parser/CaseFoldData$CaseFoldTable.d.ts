@@ -6,16 +6,6 @@ import type { Encoding } from '../../../../../../com/oracle/truffle/regex/tregex
 import type { BiConsumer } from '../../../../../../java/util/function/BiConsumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class CaseFoldData$CaseFoldTable extends Object implements SortedListOfRanges {
-    static adjacent(paramaLo: number, paramaHi: number, parambLo: number, parambHi: number): boolean;
-    static contains(paramaLo: number, paramaHi: number, parambLo: number, parambHi: number): boolean;
-    static intersect(parama: SortedListOfRanges, paramb: SortedListOfRanges, paramtarget: RangesBuffer): void;
-    static intersects(paramaLo: number, paramaHi: number, parambLo: number, parambHi: number): boolean;
-    static invert(parama: SortedListOfRanges, paramencoding: Encoding, paramtarget: RangesBuffer): void;
-    static leftOf(paramaHi: number, parambLo: number): boolean;
-    static leftOf(paramaLo: number, paramaHi: number, parambLo: number, parambHi: number): boolean;
-    static rightOf(paramaLo: number, parambHi: number): boolean;
-    static rightOf(paramaLo: number, paramaHi: number, parambLo: number, parambHi: number): boolean;
-    static union(parama: SortedListOfRanges, paramb: SortedListOfRanges, paramtarget: RangesBuffer): void;
     constructor(parent: CaseFoldData$CaseFoldTable, ranges: number[])
     // private parent: CaseFoldData$CaseFoldTable;
     // private ranges: number[];

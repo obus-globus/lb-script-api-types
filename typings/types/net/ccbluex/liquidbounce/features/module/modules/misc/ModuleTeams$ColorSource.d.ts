@@ -8,8 +8,6 @@ export class ModuleTeams$ColorSource extends Enum<ModuleTeams$ColorSource> imple
     static Companion: Tagged$Companion;
     static TEAM: ModuleTeams$ColorSource;
     static getEntries(): ModuleTeams$ColorSource[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleTeams$ColorSource;
     static values(): ModuleTeams$ColorSource[];

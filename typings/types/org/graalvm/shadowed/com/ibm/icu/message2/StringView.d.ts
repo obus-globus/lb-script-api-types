@@ -2,7 +2,6 @@ import type { IntStream } from '../../../../../../../java/util/stream/IntStream.
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../../../java/lang/CharSequence.d.ts'
 export class StringView extends Object implements CharSequence {
-    static compare(paramarg0: CharSequence, paramarg1: CharSequence): number;
     constructor(text: string)
     constructor(text: string, offset: number)
     /*not mapped: */ length(): number;

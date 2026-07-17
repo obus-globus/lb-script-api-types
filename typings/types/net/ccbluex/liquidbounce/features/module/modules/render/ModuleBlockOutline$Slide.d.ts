@@ -3,5 +3,6 @@ import type { Easing } from '../../../../../../../net/ccbluex/liquidbounce/utils
 export class ModuleBlockOutline$Slide extends ToggleableValueGroup {
     static INSTANCE: ModuleBlockOutline$Slide;
     readonly easing: Easing;
+    getEasing(): Easing;
     readonly time: number;
 }

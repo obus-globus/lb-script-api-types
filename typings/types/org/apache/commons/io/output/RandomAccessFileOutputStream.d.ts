@@ -4,7 +4,7 @@ import type { RandomAccessFileOutputStream$Builder } from '../../../../../org/ap
 export class RandomAccessFileOutputStream extends OutputStream {
     static builder(): RandomAccessFileOutputStream$Builder;
     static nullOutputStream(): OutputStream;
-    constructor(arg0: RandomAccessFileOutputStream$Builder, arg1: any)
+    private constructor(arg0: RandomAccessFileOutputStream$Builder)
     readonly randomAccessFile: RandomAccessFile;
     close(): void;
     flush(): void;

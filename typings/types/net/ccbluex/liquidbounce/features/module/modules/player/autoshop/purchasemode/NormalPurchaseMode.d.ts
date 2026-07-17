@@ -8,4 +8,5 @@ export class NormalPurchaseMode extends Mode {
     readonly action: NormalPurchaseMode$ActionType;
     readonly extraDelay: { start: number; endInclusive: number; step: number };
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
 }

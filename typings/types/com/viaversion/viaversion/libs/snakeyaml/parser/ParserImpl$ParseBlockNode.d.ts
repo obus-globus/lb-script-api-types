@@ -3,6 +3,6 @@ import type { ParserImpl } from '../../../../../../com/viaversion/viaversion/lib
 import type { Production } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/parser/Production.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ParserImpl$ParseBlockNode extends Object implements Production {
-    constructor(null_: ParserImpl, arg1: any)
+    private constructor(null_: ParserImpl)
     produce(): Event;
 }

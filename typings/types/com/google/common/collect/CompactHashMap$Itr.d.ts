@@ -2,7 +2,7 @@ import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export abstract class CompactHashMap$Itr<T extends unknown> extends Object implements Iterator<T> {
-    constructor(null_: Map<Object, Object>, arg1: CompactHashMap$Itr<Object>)
+    private constructor(null_: Map<Object, Object>)
     // private currentIndex: number;
     // private expectedMetadata: number;
     // private indexToRemove: number;

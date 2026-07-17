@@ -9,8 +9,6 @@ export class ModuleCriticals$WhenSprinting$StopSprintingMode extends Enum<Module
     static ON_ATTACK: ModuleCriticals$WhenSprinting$StopSprintingMode;
     static ON_NETWORK: ModuleCriticals$WhenSprinting$StopSprintingMode;
     static getEntries(): ModuleCriticals$WhenSprinting$StopSprintingMode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleCriticals$WhenSprinting$StopSprintingMode;
     static values(): ModuleCriticals$WhenSprinting$StopSprintingMode[];

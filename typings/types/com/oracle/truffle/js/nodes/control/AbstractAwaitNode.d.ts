@@ -26,7 +26,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class AbstractAwaitNode extends JavaScriptNode implements ResumableNode, SuspendNode {
     static cloneUninitialized<T extends JavaScriptNode>(paramnode: T, parammaterializedTags: Class<Tag>[]): T;
     static cloneUninitialized<T extends JavaScriptNode>(paramnodeArray: T[], parammaterializedTags: Class<Tag>[]): T[];
-    static createResumableNode(paramnode: ResumableNode, paramstateSlot: number): JavaScriptNode;
     static findAsyncStackFramesFromHandler(paramhandlerFunction: JSFunctionObject, paramargument: Object): TruffleStackTraceElement[];
     static findAsyncStackFramesFromPromise(parampromise: JSDynamicObject): TruffleStackTraceElement[];
     static findBlockScopeNode(paramnode: Node): Node;

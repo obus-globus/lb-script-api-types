@@ -21,14 +21,7 @@ import type { IOFunction } from '../../../../../org/apache/commons/io/function/I
 import type { IOPredicate } from '../../../../../org/apache/commons/io/function/IOPredicate.d.ts'
 import type { IOStream } from '../../../../../org/apache/commons/io/function/IOStream.d.ts'
 import type { IOSupplier } from '../../../../../org/apache/commons/io/function/IOSupplier.d.ts'
-import type { IOUnaryOperator } from '../../../../../org/apache/commons/io/function/IOUnaryOperator.d.ts'
 export class IOStreamAdapter<T extends unknown> extends IOBaseStreamAdapter<T, IOStream<T>, Stream<T>> implements IOStream<T> {
-    static adapt<T extends unknown>(paramarg0: Stream<T>): IOStream<T>;
-    static empty<T extends unknown>(): IOStream<T>;
-    static iterate<T extends unknown>(paramarg0: T, paramarg1: (param0: T) => T): IOStream<T>;
-    static of<T extends unknown>(paramarg0: T): IOStream<T>;
-    static of<T extends unknown>(...paramarg0: T[]): IOStream<T>;
-    static of<T extends unknown>(paramarg0: T[]): IOStream<T>;
     private constructor(arg0: Stream<T>)
     allMatch(arg0: (param0: T) => boolean): boolean;
     anyMatch(arg0: (param0: T) => boolean): boolean;

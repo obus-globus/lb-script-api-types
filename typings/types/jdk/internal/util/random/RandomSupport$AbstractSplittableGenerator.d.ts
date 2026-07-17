@@ -19,7 +19,6 @@ export abstract class RandomSupport$AbstractSplittableGenerator extends RandomSu
     static longs(paramarg0: RandomGenerator, paramarg1: number): LongStream;
     static longs(paramarg0: RandomGenerator, paramarg1: number, paramarg2: number): LongStream;
     static longs(paramarg0: RandomGenerator, paramarg1: number, paramarg2: number, paramarg3: number): LongStream;
-    static of(paramarg0: string): RandomGenerator$SplittableGenerator;
     constructor()
     makeSplitsSpliterator(arg0: number, arg1: number, arg2: RandomGenerator$SplittableGenerator): Spliterator<RandomGenerator$SplittableGenerator>;
     nextLong(): number;

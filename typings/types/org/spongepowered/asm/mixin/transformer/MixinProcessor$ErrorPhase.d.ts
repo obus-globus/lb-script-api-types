@@ -5,7 +5,6 @@ import type { IMixinConfig } from '../../../../../org/spongepowered/asm/mixin/ex
 import type { IMixinErrorHandler } from '../../../../../org/spongepowered/asm/mixin/extensibility/IMixinErrorHandler.d.ts'
 import type { IMixinErrorHandler$ErrorAction } from '../../../../../org/spongepowered/asm/mixin/extensibility/IMixinErrorHandler$ErrorAction.d.ts'
 import type { IMixinInfo } from '../../../../../org/spongepowered/asm/mixin/extensibility/IMixinInfo.d.ts'
-import type { MixinConfig$IListener } from '../../../../../org/spongepowered/asm/mixin/transformer/MixinConfig$IListener.d.ts'
 import type { InvalidMixinException } from '../../../../../org/spongepowered/asm/mixin/transformer/throwables/InvalidMixinException.d.ts'
 export class MixinProcessor$ErrorPhase extends Enum<MixinProcessor$ErrorPhase> {
     static APPLY: MixinProcessor$ErrorPhase;
@@ -13,7 +12,7 @@ export class MixinProcessor$ErrorPhase extends Enum<MixinProcessor$ErrorPhase> {
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): MixinProcessor$ErrorPhase;
     static values(): MixinProcessor$ErrorPhase[];
-    constructor(arg2: MixinConfig$IListener)
+    private constructor()
     // private text: string;
     getContext(arg0: IMixinInfo, arg1: string): string;
     getErrorMessage(arg0: IMixinInfo, arg1: IMixinConfig, arg2: MixinEnvironment$Phase): string;

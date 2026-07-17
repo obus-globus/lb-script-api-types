@@ -4,9 +4,6 @@ import type { ComponentPath } from '../../../../net/minecraft/client/gui/Compone
 import type { ContainerEventHandler } from '../../../../net/minecraft/client/gui/components/events/ContainerEventHandler.d.ts'
 import type { GuiEventListener } from '../../../../net/minecraft/client/gui/components/events/GuiEventListener.d.ts'
 export class ComponentPath$Path extends Record implements ComponentPath {
-    static leaf(paramcomponent: GuiEventListener): ComponentPath;
-    static path(paramcontainer: ContainerEventHandler, paramchildPath: ComponentPath): ComponentPath;
-    static path(paramtarget: GuiEventListener, ...paramcontainerPath: ContainerEventHandler[]): ComponentPath;
     constructor(component: ContainerEventHandler, childPath: ComponentPath)
     // private childPath: ComponentPath;
     // private component: ContainerEventHandler;

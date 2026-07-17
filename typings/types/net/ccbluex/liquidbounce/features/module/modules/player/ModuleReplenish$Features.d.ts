@@ -8,8 +8,6 @@ export class ModuleReplenish$Features extends Enum<ModuleReplenish$Features> imp
     static USE_PICKUP_ALL: ModuleReplenish$Features;
     static USE_SWAP: ModuleReplenish$Features;
     static getEntries(): ModuleReplenish$Features[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleReplenish$Features;
     static values(): ModuleReplenish$Features[];

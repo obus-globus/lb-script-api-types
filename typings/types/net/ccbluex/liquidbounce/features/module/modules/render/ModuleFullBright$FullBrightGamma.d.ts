@@ -9,6 +9,7 @@ export class ModuleFullBright$FullBrightGamma extends Mode {
     readonly brightness: number;
     readonly gamma: number;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     readonly tickHandler: EventHook<PlayerPostTickEvent>;
     enable(): void;
 }

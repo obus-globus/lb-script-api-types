@@ -8,7 +8,7 @@ import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 import type { BasicThreadFactory$Builder } from '../../../../../org/apache/commons/lang3/concurrent/BasicThreadFactory$Builder.d.ts'
 export class BasicThreadFactory extends Object implements ThreadFactory {
     static builder(): BasicThreadFactory$Builder;
-    constructor(arg0: BasicThreadFactory$Builder, arg1: any)
+    private constructor(arg0: BasicThreadFactory$Builder)
     // private daemon: boolean;
     readonly namingPattern: string;
     readonly priority: number;

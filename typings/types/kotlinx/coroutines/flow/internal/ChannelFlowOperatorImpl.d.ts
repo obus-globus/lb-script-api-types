@@ -1,4 +1,5 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Continuation } from '../../../../kotlin/coroutines/Continuation.d.ts'
 import type { CoroutineContext } from '../../../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { BufferOverflow } from '../../../../kotlinx/coroutines/channels/BufferOverflow.d.ts'
 import type { Flow } from '../../../../kotlinx/coroutines/flow/Flow.d.ts'
@@ -9,5 +10,6 @@ export class ChannelFlowOperatorImpl<T extends unknown> extends ChannelFlowOpera
     constructor(flow: Flow<T>, context: CoroutineContext, capacity: number, onBufferOverflow: BufferOverflow)
     protected create(context: CoroutineContext, capacity: number, onBufferOverflow: BufferOverflow): ChannelFlow<T>;
     dropChannelOperators(): Flow<T>;
-    protected flowCollect(collector: FlowCollector<T>): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    protected flowCollect(collector: FlowCollector<T>, $completion: Continuation<void>): any;
 }

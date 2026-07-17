@@ -3,7 +3,7 @@ import type { PrivateKey } from '../../../../java/security/PrivateKey.d.ts'
 import type { X509Certificate } from '../../../../java/security/cert/X509Certificate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class OpenSslKeyMaterialProvider$MaterialCache extends Object {
-    constructor(arg0: PrivateKey, arg1: X509Certificate[], arg2: OpenSslKeyMaterial, arg3: any)
+    private constructor(arg0: PrivateKey, arg1: X509Certificate[], arg2: OpenSslKeyMaterial)
     // private certs: X509Certificate[];
     // private key: PrivateKey;
     // private material: OpenSslKeyMaterial;

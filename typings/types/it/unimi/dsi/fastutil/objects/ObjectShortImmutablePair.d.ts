@@ -1,12 +1,9 @@
 import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { ObjectShortPair } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectShortPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
-import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ObjectShortImmutablePair<K extends unknown> extends Object implements ObjectShortPair<K>, Serializable {
-    static lexComparator<K extends unknown>(): (param0: ObjectShortPair<K>, param1: ObjectShortPair<K>) => number;
     static of<K extends unknown>(paramarg0: K, paramarg1: number): ObjectShortImmutablePair<K>;
-    static of<K extends unknown>(paramarg0: K, paramarg1: number): ObjectShortPair<K>;
     constructor(arg0: K, arg1: number)
     // private left: K;
     // private right: number;

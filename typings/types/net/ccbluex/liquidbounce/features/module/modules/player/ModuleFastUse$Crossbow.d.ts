@@ -7,6 +7,7 @@ export class ModuleFastUse$Crossbow extends Mode {
     static Companion: Tagged$Companion;
     static INSTANCE: ModuleFastUse$Crossbow;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     // private tickCooldown: number;
     // private /*not mapped: */ getTickCooldown(): number;
     readonly tickHandler: EventHook<GameTickEvent>;

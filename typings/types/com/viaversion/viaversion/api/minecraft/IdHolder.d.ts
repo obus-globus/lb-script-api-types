@@ -3,8 +3,6 @@ import type { Int2IntFunction } from '../../../../../com/viaversion/viaversion/l
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class IdHolder<T extends unknown> extends Record implements Holder<T> {
-    static of<T extends unknown>(paramarg0: T): Holder<T>;
-    static of<T extends unknown>(paramarg0: number): Holder<T>;
     constructor(id: number)
     // private id: number;
 }

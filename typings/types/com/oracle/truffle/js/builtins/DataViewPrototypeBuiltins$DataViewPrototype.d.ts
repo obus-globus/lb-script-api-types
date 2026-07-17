@@ -33,7 +33,6 @@ export class DataViewPrototypeBuiltins$DataViewPrototype extends Enum<DataViewPr
     static setUint16: DataViewPrototypeBuiltins$DataViewPrototype;
     static setUint32: DataViewPrototypeBuiltins$DataViewPrototype;
     static setUint8: DataViewPrototypeBuiltins$DataViewPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): DataViewPrototypeBuiltins$DataViewPrototype;
     static values(): DataViewPrototypeBuiltins$DataViewPrototype[];

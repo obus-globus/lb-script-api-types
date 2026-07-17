@@ -2,7 +2,7 @@ import type { GenericArrayType } from '../../../../../java/lang/reflect/GenericA
 import type { Type } from '../../../../../java/lang/reflect/Type.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class TypeUtils$GenericArrayTypeImpl extends Object implements GenericArrayType {
-    constructor(arg0: Type, arg1: any)
+    private constructor(arg0: Type)
     // private componentType: Type;
     equals(arg0: Object | null): boolean;
     getGenericComponentType(): Type;

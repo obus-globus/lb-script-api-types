@@ -1,8 +1,7 @@
 import type { BooleanListIterator } from '../../../../../it/unimi/dsi/fastutil/booleans/BooleanListIterator.d.ts'
 import type { Long2BooleanAVLTreeMap$TreeIterator } from '../../../../../it/unimi/dsi/fastutil/longs/Long2BooleanAVLTreeMap$TreeIterator.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Long2BooleanAVLTreeMap$ValueIterator extends Long2BooleanAVLTreeMap$TreeIterator implements BooleanListIterator {
-    constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
+    private constructor(null_: { [key: string]: any })
     add(arg0: boolean): void;
     next(): boolean;
     nextBoolean(): boolean;

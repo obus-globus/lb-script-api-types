@@ -19,6 +19,7 @@ export class ModuleTimer$Pulse extends Mode {
     // private onMove: boolean;
     // private /*not mapped: */ getOnMove(): boolean;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     readonly repeatable: EventHook<GameTickEvent>;
     enable(): void;
 }

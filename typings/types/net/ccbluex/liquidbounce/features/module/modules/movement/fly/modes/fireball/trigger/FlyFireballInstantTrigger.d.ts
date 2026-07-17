@@ -7,5 +7,6 @@ export class FlyFireballInstantTrigger extends Mode {
     static Companion: Tagged$Companion;
     static INSTANCE: FlyFireballInstantTrigger;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     readonly repeatable: EventHook<GameTickEvent>;
 }

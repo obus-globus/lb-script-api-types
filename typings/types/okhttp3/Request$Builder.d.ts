@@ -29,7 +29,7 @@ export class Request$Builder extends Object {
     cacheControl(cacheControl: CacheControl): Request$Builder;
     cacheUrlOverride(cacheUrlOverride: HttpUrl | null): Request$Builder;
     // private canonicalUrl(url: string): string;
-    delete(body: RequestBody | null): Request$Builder;
+    delete(body?: RequestBody | null): Request$Builder;
     get(): Request$Builder;
     gzip(): Request$Builder;
     head(): Request$Builder;

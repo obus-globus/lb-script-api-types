@@ -1,4 +1,5 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
+import type { Continuation } from '../../../kotlin/coroutines/Continuation.d.ts'
 import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { AtomicBoolean } from '../../../kotlinx/atomicfu/AtomicBoolean.d.ts'
 import type { CoroutineScope } from '../../../kotlinx/coroutines/CoroutineScope.d.ts'
@@ -11,8 +12,10 @@ import type { ChannelFlow } from '../../../kotlinx/coroutines/flow/internal/Chan
 export class ChannelAsFlow<T extends unknown> extends ChannelFlow<T> {
     constructor(channel: ReceiveChannel<T>, consume: boolean, context: CoroutineContext, capacity: number, onBufferOverflow: BufferOverflow)
     protected additionalToStringProps(): string;
-    collect(collector: FlowCollector<T>): void;
-    protected collectTo(scope: ProducerScope<T>): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    collect(collector: FlowCollector<T>, $completion: Continuation<void>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    protected collectTo(scope: ProducerScope<T>, $completion: Continuation<void>): any;
     protected create(context: CoroutineContext, capacity: number, onBufferOverflow: BufferOverflow): ChannelFlow<T>;
     dropChannelOperators(): Flow<T>;
     // private markConsumed(): void;

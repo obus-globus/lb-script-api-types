@@ -11,7 +11,6 @@ import type { KnotClassDelegate$Metadata } from '../../../../../../net/fabricmc/
 import type { KnotClassLoaderInterface } from '../../../../../../net/fabricmc/loader/impl/launch/knot/KnotClassLoaderInterface.d.ts'
 import type { IMixinTransformer } from '../../../../../../org/spongepowered/asm/mixin/transformer/IMixinTransformer.d.ts'
 export class KnotClassDelegate<T extends ClassLoader & KnotClassDelegate$ClassLoaderAccess> extends Object implements KnotClassLoaderInterface {
-    static create(paramarg0: boolean, paramarg1: boolean, paramarg2: EnvType, paramarg3: GameProvider): KnotClassLoaderInterface;
     constructor(arg0: boolean, arg1: EnvType, arg2: T, arg3: ClassLoader, arg4: GameProvider)
     // private allowedPrefixes: Map<Path, string[]>;
     readonly classLoader: T;

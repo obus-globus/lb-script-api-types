@@ -6,7 +6,6 @@ export class IfAll extends Object implements PathCondition {
     static EMPTY_ARRAY: PathCondition[];
     static accept(paramlist: PathCondition[], parambaseDir: Path, paramrelativePath: Path, paramattrs: BasicFileAttributes): boolean;
     static beforeFileTreeWalk(paramnestedConditions: PathCondition[]): void;
-    static copy(...paramsource: PathCondition[]): PathCondition[];
     static createAndCondition(...paramcomponents: PathCondition[]): IfAll;
     private constructor(...filters: PathCondition[])
     // private components: PathCondition[];

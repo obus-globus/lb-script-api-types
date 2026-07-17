@@ -13,7 +13,7 @@ export class MediaType extends Object {
     subtype(): string;
     // private type: string;
     type(): string;
-    charset(defaultValue: Charset | null): Charset | null;
+    charset(defaultValue?: Charset | null): Charset | null;
     equals(other: Object | null): boolean;
     hashCode(): number;
     parameter(name: string): string | null;

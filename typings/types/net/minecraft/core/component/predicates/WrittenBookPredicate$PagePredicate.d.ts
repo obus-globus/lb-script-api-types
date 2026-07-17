@@ -6,8 +6,6 @@ import type { Component } from '../../../../../net/minecraft/network/chat/Compon
 import type { Filterable } from '../../../../../net/minecraft/server/network/Filterable.d.ts'
 export class WrittenBookPredicate$PagePredicate extends Record implements Predicate<Filterable<Component>> {
     static CODEC: Codec<WrittenBookPredicate$PagePredicate>;
-    static isEqual<T extends unknown>(paramarg0: Object): (param0: T) => boolean;
-    static not<T extends unknown>(paramarg0: (param0: Object) => boolean): (param0: T) => boolean;
     constructor(contents: Component)
     // private contents: Component;
     and(arg0: (param0: Filterable<Component>) => boolean): (param0: Filterable<Component>) => boolean;

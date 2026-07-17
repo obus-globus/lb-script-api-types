@@ -8,7 +8,7 @@ import type { URI } from '../../../../java/net/URI.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class InteractiveRequestParameters extends Object implements IAcquireTokenParameters {
     static builder(paramarg0: URI): InteractiveRequestParameters$InteractiveRequestParametersBuilder;
-    constructor(arg0: URI, arg1: ClaimsRequest, arg2: (Object | null)[], arg3: Prompt, arg4: string, arg5: string, arg6: SystemBrowserOptions, arg7: string, arg8: Map<Object | null, Object | null>, arg9: Map<Object | null, Object | null>, arg10: string, arg11: number, arg12: boolean, arg13: number, arg14: PopParameters, arg15: any)
+    private constructor(arg0: URI, arg1: ClaimsRequest, arg2: string[], arg3: Prompt, arg4: string, arg5: string, arg6: SystemBrowserOptions, arg7: string, arg8: { [key: string]: string }, arg9: { [key: string]: string }, arg10: string, arg11: number, arg12: boolean, arg13: number, arg14: PopParameters)
     // private claims: ClaimsRequest;
     // private claimsChallenge: string;
     // private domainHint: string;

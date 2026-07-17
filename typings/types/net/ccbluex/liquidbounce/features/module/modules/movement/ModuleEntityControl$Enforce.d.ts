@@ -7,8 +7,6 @@ export class ModuleEntityControl$Enforce extends Enum<ModuleEntityControl$Enforc
     static JUMP_STRENGTH: ModuleEntityControl$Enforce;
     static SADDLED: ModuleEntityControl$Enforce;
     static getEntries(): ModuleEntityControl$Enforce[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleEntityControl$Enforce;
     static values(): ModuleEntityControl$Enforce[];

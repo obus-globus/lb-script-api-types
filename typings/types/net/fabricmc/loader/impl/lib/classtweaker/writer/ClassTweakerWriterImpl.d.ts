@@ -4,7 +4,6 @@ import type { ClassTweakerWriter } from '../../../../../../../net/fabricmc/loade
 import type { AccessWidenerVisitor } from '../../../../../../../net/fabricmc/loader/impl/lib/classtweaker/api/visitor/AccessWidenerVisitor.d.ts'
 import type { AccessWidenerVisitor$AccessType } from '../../../../../../../net/fabricmc/loader/impl/lib/classtweaker/api/visitor/AccessWidenerVisitor$AccessType.d.ts'
 export class ClassTweakerWriterImpl extends Object implements ClassTweakerWriter {
-    static create(paramarg0: number): ClassTweakerWriter;
     constructor(arg0: number)
     // private builder: StringBuilder;
     // private namespace: string;

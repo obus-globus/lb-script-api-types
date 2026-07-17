@@ -27,6 +27,7 @@ export class ModuleManager extends Object implements EventListener {
     // private mouseButtonHandler: EventHook<MouseButtonEvent>;
     readonly running: boolean;
     readonly size: number;
+    getSize(): number;
     // private smartKeyboardStates: Map<ClientModule, ModuleManager$SmartBindKeyboardState>;
     // private smartMouseStates: Map<ClientModule, ModuleManager$SmartBindMouseState>;
     addModule(module: ClientModule): void;

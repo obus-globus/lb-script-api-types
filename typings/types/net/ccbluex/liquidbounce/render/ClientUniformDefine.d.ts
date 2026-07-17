@@ -24,8 +24,8 @@ export class ClientUniformDefine extends Enum<ClientUniformDefine> {
     readonly size: number;
     readonly uboName: string;
     appendTo(builder: BindGroupLayout$Builder): BindGroupLayout$Builder;
-    createRingBuffer(labelGetter: () => string): MappableRingBuffer;
-    createSingleBuffer(labelGetter: () => string): GpuBufferSlice;
+    createRingBuffer(labelGetter?: () => string): MappableRingBuffer;
+    createSingleBuffer(labelGetter?: () => string): GpuBufferSlice;
     label(): string;
     setTo(renderPass: RenderPass, slice: GpuBufferSlice): void;
     name(): "DISTANCE_FADE" | "MESH_BASE_BLOCK_POS" | "ROUNDED_RECT" | "HAND_ITEM_LIGHTMAP" | "GUI_BLUR" | "GUI_BLUR_KERNEL" | "BLEND" | "THEME_BACKGROUND";

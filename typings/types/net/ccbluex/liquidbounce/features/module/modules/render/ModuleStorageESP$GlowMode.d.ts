@@ -12,6 +12,7 @@ export class ModuleStorageESP$GlowMode extends Mode {
     // private dirtyFlag: AtomicBoolean;
     // private glowRenderHandler: EventHook<DrawOutlinesEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     // private renderState: CachedMeshStorage;
     // private tickHandler: EventHook<GameTickEvent>;
     disable(): void;

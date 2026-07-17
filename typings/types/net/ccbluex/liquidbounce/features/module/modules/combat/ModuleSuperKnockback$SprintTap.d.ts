@@ -11,6 +11,7 @@ export class ModuleSuperKnockback$SprintTap extends Mode {
     // private cancelSprint: boolean;
     // private movementHandler: EventHook<SprintEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     // private reSprintTicks: { start: number; endInclusive: number; step: number };
     // private /*not mapped: */ getReSprintTicks(): { start: number; endInclusive: number; step: number };
     disable(): void;

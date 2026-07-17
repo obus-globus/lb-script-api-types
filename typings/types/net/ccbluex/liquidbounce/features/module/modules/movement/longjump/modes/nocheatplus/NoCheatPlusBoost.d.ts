@@ -17,5 +17,6 @@ export class NoCheatPlusBoost extends Mode {
     readonly moveHandler: EventHook<PlayerMoveEvent>;
     readonly ncpBoost: number;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     readonly repeatable: EventHook<GameTickEvent>;
 }

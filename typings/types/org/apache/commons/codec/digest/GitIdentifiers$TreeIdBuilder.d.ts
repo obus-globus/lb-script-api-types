@@ -7,7 +7,7 @@ import type { GitIdentifiers$DirectoryEntry } from '../../../../../org/apache/co
 import type { GitIdentifiers$FileMode } from '../../../../../org/apache/commons/codec/digest/GitIdentifiers$FileMode.d.ts'
 import type { GitIdentifiers$TreeIdBuilder$BlobIdSupplier } from '../../../../../org/apache/commons/codec/digest/GitIdentifiers$TreeIdBuilder$BlobIdSupplier.d.ts'
 export class GitIdentifiers$TreeIdBuilder extends Object implements Supplier<number[]> {
-    constructor(arg0: MessageDigest, arg1: any)
+    private constructor(arg0: MessageDigest)
     // private dirEntries: { [key: string]: GitIdentifiers$TreeIdBuilder };
     // private fileEntries: { [key: string]: GitIdentifiers$DirectoryEntry };
     // private messageDigest: MessageDigest;

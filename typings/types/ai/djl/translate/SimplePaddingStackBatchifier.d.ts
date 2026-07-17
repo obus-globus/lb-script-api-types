@@ -2,7 +2,6 @@ import type { Batchifier } from '../../../ai/djl/translate/Batchifier.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class SimplePaddingStackBatchifier extends Object implements Batchifier {
     static STACK: Batchifier;
-    static fromString(paramarg0: string): Batchifier;
     constructor()
     constructor(arg0: number)
     // private padding: number;

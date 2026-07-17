@@ -9,7 +9,6 @@ import type { EnchantmentEntityEffect } from '../../../../../../net/minecraft/wo
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class ApplyEntityImpulse extends Record implements EnchantmentEntityEffect {
     static CODEC: MapCodec<ApplyEntityImpulse>;
-    static bootstrap(paramregistry: MapCodec<EnchantmentEntityEffect>[]): MapCodec<EnchantmentEntityEffect>;
     constructor(direction: Vec3, coordinateScale: Vec3, magnitude: LevelBasedValue)
     // private coordinateScale: Vec3;
     // private direction: Vec3;

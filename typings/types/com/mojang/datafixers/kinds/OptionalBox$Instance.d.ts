@@ -1,11 +1,9 @@
 import type { App } from '../../../../com/mojang/datafixers/kinds/App.d.ts'
 import type { Applicative } from '../../../../com/mojang/datafixers/kinds/Applicative.d.ts'
-import type { Applicative$Mu } from '../../../../com/mojang/datafixers/kinds/Applicative$Mu.d.ts'
 import type { K1 } from '../../../../com/mojang/datafixers/kinds/K1.d.ts'
 import type { OptionalBox$Instance$Mu } from '../../../../com/mojang/datafixers/kinds/OptionalBox$Instance$Mu.d.ts'
 import type { OptionalBox$Mu } from '../../../../com/mojang/datafixers/kinds/OptionalBox$Mu.d.ts'
 import type { Traversable } from '../../../../com/mojang/datafixers/kinds/Traversable.d.ts'
-import type { Traversable$Mu } from '../../../../com/mojang/datafixers/kinds/Traversable$Mu.d.ts'
 import type { Function10 } from '../../../../com/mojang/datafixers/util/Function10.d.ts'
 import type { Function11 } from '../../../../com/mojang/datafixers/util/Function11.d.ts'
 import type { Function12 } from '../../../../com/mojang/datafixers/util/Function12.d.ts'
@@ -27,8 +25,6 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class OptionalBox$Instance extends Enum<OptionalBox$Instance> implements Applicative<OptionalBox$Mu, OptionalBox$Instance$Mu>, Traversable<OptionalBox$Mu, OptionalBox$Instance$Mu> {
     static INSTANCE: OptionalBox$Instance;
-    static unbox<F extends K1, Mu extends Applicative$Mu>(paramarg0: App<Mu, F>): Applicative<F, Mu>;
-    static unbox<F extends K1, Mu extends Traversable$Mu>(paramarg0: App<Mu, F>): Traversable<F, Mu>;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): OptionalBox$Instance;
     static values(): OptionalBox$Instance[];

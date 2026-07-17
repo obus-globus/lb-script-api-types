@@ -6,7 +6,7 @@ import type { BasicFileAttributes } from '../../../../../../java/nio/file/attrib
 import type { ArchiveEntry } from '../../../../../../org/apache/commons/compress/archivers/ArchiveEntry.d.ts'
 import type { ArchiveOutputStream } from '../../../../../../org/apache/commons/compress/archivers/ArchiveOutputStream.d.ts'
 export class Archiver$ArchiverFileVisitor<O extends ArchiveOutputStream<E>, E extends ArchiveEntry> extends SimpleFileVisitor<Path> {
-    constructor(arg0: ArchiveOutputStream<ArchiveEntry>, arg1: Path, arg2: LinkOption[], arg3: Archiver$ArchiverFileVisitor<ArchiveOutputStream<ArchiveEntry>, ArchiveEntry>)
+    private constructor(arg0: O, arg1: Path, ...arg2: LinkOption[])
     // private directory: Path;
     // private linkOptions: LinkOption[];
     // private outputStream: O;

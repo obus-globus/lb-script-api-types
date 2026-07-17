@@ -21,7 +21,6 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class AbstractBoolean2BooleanFunction extends Object implements Boolean2BooleanFunction, Serializable {
-    static identity(): (param0: boolean) => boolean;
     constructor()
     // private defRetValue: boolean;
     andThen<T extends unknown>(arg0: (param0: boolean) => T): (param0: boolean) => T;

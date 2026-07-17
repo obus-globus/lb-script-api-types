@@ -9,7 +9,6 @@ import type { ToStringStyle } from '../../../../../org/apache/commons/lang3/buil
 export class ReflectionDiffBuilder<T extends unknown> extends Object implements Builder<Diff<Object>[]> {
     static builder<T extends unknown>(): ReflectionDiffBuilder$Builder<T>;
     constructor(arg0: T, arg1: T, arg2: ToStringStyle)
-    constructor(arg0: DiffBuilder<Object>, arg1: string[], arg2: any)
     // private diffBuilder: DiffBuilder<T>;
     readonly excludeFieldNames: string[];
     // private accept(arg0: Field): boolean;

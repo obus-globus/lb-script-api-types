@@ -1,5 +1,6 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
+import type { Continuation } from '../../../kotlin/coroutines/Continuation.d.ts'
 import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { AtomicRef } from '../../../kotlinx/atomicfu/AtomicRef.d.ts'
 import type { CancelHandler } from '../../../kotlinx/coroutines/CancelHandler.d.ts'
@@ -13,19 +14,24 @@ export class SelectImplementation<R extends unknown> extends Object implements C
     constructor(context: CoroutineContext)
     // private checkClauseObject(clauseObject: Object): void;
     // private cleanup(selectedClause: SelectImplementation$ClauseData): void;
-    // private complete(): R;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private complete($completion: Continuation<R>): any;
     disposeOnCompletion(disposableHandle: DisposableHandle): void;
-    doSelect(): R;
-    // private doSelectSuspend(): R;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    doSelect($completion: Continuation<R>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private doSelectSuspend($completion: Continuation<R>): any;
     // private findClause(clauseObject: Object): SelectImplementation$ClauseData | null;
     invoke(cause: Throwable | null): void;
     invokeOnCancellation(segment: Segment<any>, index: number): void;
     onTimeout(timeMillis: number, block: () => R): void;
-    // private processResultAndInvokeBlockRecoveringException(clause: SelectImplementation$ClauseData, internalResult: Object | null): R;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private processResultAndInvokeBlockRecoveringException(clause: SelectImplementation$ClauseData, internalResult: Object | null, $completion: Continuation<R>): any;
     // private reregisterClause(clauseObject: Object): void;
     selectInRegistrationPhase(internalResult: Object | null): void;
     trySelect(clauseObject: Object, result: Object | null): boolean;
     trySelectDetailed(clauseObject: Object, result: Object | null): TrySelectDetailedResult;
     // private trySelectInternal(clauseObject: Object, internalResult: Object | null): number;
-    // private waitUntilSelected(): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private waitUntilSelected($completion: Continuation<void>): any;
 }

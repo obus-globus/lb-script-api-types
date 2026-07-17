@@ -1,5 +1,6 @@
 import type { UUID } from '../../../../../../java/util/UUID.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { Continuation } from '../../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { ClientAccount$Companion } from '../../../../../../net/ccbluex/liquidbounce/api/models/auth/ClientAccount$Companion.d.ts'
 import type { OAuthSession } from '../../../../../../net/ccbluex/liquidbounce/api/models/auth/OAuthSession.d.ts'
 import type { Cosmetic } from '../../../../../../net/ccbluex/liquidbounce/api/models/cosmetics/Cosmetic.d.ts'
@@ -24,10 +25,15 @@ export class ClientAccount extends Object {
     copy(session: OAuthSession | null, userInformation: UserInformation | null, cosmetics: Cosmetic[] | null): ClientAccount;
     equals(other: Object | null): boolean;
     hashCode(): number;
-    renew(): void;
-    takeSession(): OAuthSession;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    renew($completion: Continuation<void>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    takeSession($completion: Continuation<OAuthSession>): any;
     toString(): string;
-    transferTemporaryOwnership(uuid: UUID): void;
-    updateCosmetics(): void;
-    updateInfo(): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    transferTemporaryOwnership(uuid: UUID, $completion: Continuation<void>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    updateCosmetics($completion: Continuation<void>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    updateInfo($completion: Continuation<void>): any;
 }

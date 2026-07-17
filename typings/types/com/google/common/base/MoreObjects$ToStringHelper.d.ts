@@ -2,7 +2,7 @@ import type { MoreObjects$ToStringHelper$UnconditionalValueHolder } from '../../
 import type { MoreObjects$ToStringHelper$ValueHolder } from '../../../../com/google/common/base/MoreObjects$ToStringHelper$ValueHolder.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class MoreObjects$ToStringHelper extends Object {
-    constructor(arg0: string, arg1: any)
+    private constructor(className: string)
     // private className: string;
     // private holderHead: MoreObjects$ToStringHelper$ValueHolder;
     // private holderTail: MoreObjects$ToStringHelper$ValueHolder;

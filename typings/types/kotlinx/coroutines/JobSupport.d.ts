@@ -1,6 +1,7 @@
 import type { CancellationException } from '../../java/util/concurrent/CancellationException.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Throwable } from '../../java/lang/Throwable.d.ts'
+import type { Continuation } from '../../kotlin/coroutines/Continuation.d.ts'
 import type { AtomicRef } from '../../kotlinx/atomicfu/AtomicRef.d.ts'
 import type { ChildHandle } from '../../kotlinx/coroutines/ChildHandle.d.ts'
 import type { ChildHandleNode } from '../../kotlinx/coroutines/ChildHandleNode.d.ts'
@@ -22,8 +23,10 @@ export class JobSupport extends Object implements ChildJob, Job, ParentJob {
     // private addSuppressedExceptions(rootCause: Throwable, exceptions: Throwable[]): void;
     protected afterCompletion(state: Object | null): void;
     attachChild(child: ChildJob): ChildHandle;
-    protected awaitInternal(): Object | null;
-    // private awaitSuspend(): Object | null;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    protected awaitInternal($completion: Continuation<Object>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private awaitSuspend($completion: Continuation<Object>): any;
     cancel(): void;
     cancel(cause: Throwable | null): boolean;
     cancel(cause: CancellationException | null): void;
@@ -51,9 +54,11 @@ export class JobSupport extends Object implements ChildJob, Job, ParentJob {
     invokeOnCompletion(onCancelling: boolean, invokeImmediately: boolean, handler: (param0: Throwable | null) => void): DisposableHandle;
     invokeOnCompletion(handler: (param0: Throwable | null) => void): DisposableHandle;
     invokeOnCompletionInternal(invokeImmediately: boolean, node: JobNode): DisposableHandle;
-    join(): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    join($completion: Continuation<void>): any;
     // private joinInternal(): boolean;
-    // private joinSuspend(): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private joinSuspend($completion: Continuation<void>): any;
     // private loopOnState(block: (param0: Object | null) => void): void;
     // private makeCancelling(cause: Object | null): Object | null;
     makeCompleting(proposedUpdate: Object | null): boolean;

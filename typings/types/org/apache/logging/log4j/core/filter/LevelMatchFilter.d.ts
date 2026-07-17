@@ -17,7 +17,7 @@ export class LevelMatchFilter extends AbstractFilter {
     static ELEMENT_TYPE: string;
     static EMPTY_ARRAY: Filter[];
     static newBuilder(): LevelMatchFilter$Builder;
-    constructor(arg0: Level, arg1: Filter$Result, arg2: Filter$Result, arg3: any)
+    private constructor(level: Level, onMatch: Filter$Result, onMismatch: Filter$Result)
     // private level: Level;
     // private filter(level: Level): Filter$Result;
     filter(event: LogEvent): Filter$Result;

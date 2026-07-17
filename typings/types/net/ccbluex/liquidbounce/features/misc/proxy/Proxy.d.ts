@@ -16,6 +16,7 @@ export class Proxy extends Object {
     constructor(host: string, port: number, credentials: Proxy$Credentials | null, type: Proxy$Type | null, forwardAuthentication: boolean, ipInfo: IpInfoApi$IpData | null, favorite: boolean)
     readonly address: InetSocketAddress;
     readonly credentials: Proxy$Credentials | null;
+    getCredentials(): Proxy$Credentials | null;
     favorite: boolean;
     forwardAuthentication: boolean;
     readonly host: string;

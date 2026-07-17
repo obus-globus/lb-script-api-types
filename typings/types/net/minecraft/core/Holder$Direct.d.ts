@@ -12,8 +12,6 @@ import type { Identifier } from '../../../net/minecraft/resources/Identifier.d.t
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { TagKey } from '../../../net/minecraft/tags/TagKey.d.ts'
 export class Holder$Direct<T extends unknown> extends Record implements Holder<T> {
-    static direct<T extends unknown>(paramvalue: T): Holder<T>;
-    static direct<T extends unknown>(paramvalue: T, paramcomponents: TypedDataComponent<Object>[]): Holder<T>;
     constructor(value: T, components: TypedDataComponent<Object>[])
     // private components: TypedDataComponent<Object>[];
     // private value: T;

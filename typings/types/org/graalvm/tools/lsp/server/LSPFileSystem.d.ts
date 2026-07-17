@@ -4,26 +4,16 @@ import type { Charset } from '../../../../../java/nio/charset/Charset.d.ts'
 import type { AccessMode } from '../../../../../java/nio/file/AccessMode.d.ts'
 import type { CopyOption } from '../../../../../java/nio/file/CopyOption.d.ts'
 import type { DirectoryStream$Filter } from '../../../../../java/nio/file/DirectoryStream$Filter.d.ts'
-import type { FileSystem } from '../../../../../java/nio/file/FileSystem.d.ts'
 import type { LinkOption } from '../../../../../java/nio/file/LinkOption.d.ts'
 import type { OpenOption } from '../../../../../java/nio/file/OpenOption.d.ts'
 import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { FileAttribute } from '../../../../../java/nio/file/attribute/FileAttribute.d.ts'
 import type { FileSystemProvider } from '../../../../../java/nio/file/spi/FileSystemProvider.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { FileSystem as FileSystem_2 } from '../../../../../org/graalvm/polyglot/io/FileSystem.d.ts'
-import type { FileSystem$Selector } from '../../../../../org/graalvm/polyglot/io/FileSystem$Selector.d.ts'
+import type { FileSystem } from '../../../../../org/graalvm/polyglot/io/FileSystem.d.ts'
 import type { VirtualLanguageServerFileProvider } from '../../../../../org/graalvm/tools/lsp/server/VirtualLanguageServerFileProvider.d.ts'
-export class LSPFileSystem extends Object implements FileSystem_2 {
-    static allowInternalResourceAccess(paramfileSystem: FileSystem_2): FileSystem_2;
-    static allowInternalResources(paramfileSystem: FileSystem_2): FileSystem_2;
-    static allowLanguageHomeAccess(paramfileSystem: FileSystem_2): FileSystem_2;
-    static newCompositeFileSystem(paramfallbackFileSystem: FileSystem_2, ...paramdelegates: FileSystem$Selector[]): FileSystem_2;
-    static newDefaultFileSystem(): FileSystem_2;
-    static newDenyIOFileSystem(): FileSystem_2;
-    static newFileSystem(paramfileSystem: FileSystem): FileSystem_2;
-    static newReadOnlyFileSystem(paramfileSystem: FileSystem_2): FileSystem_2;
-    static newReadOnlyFileSystem(paramfileProvider: VirtualLanguageServerFileProvider): FileSystem_2;
+export class LSPFileSystem extends Object implements FileSystem {
+    static newReadOnlyFileSystem(paramfileProvider: VirtualLanguageServerFileProvider): FileSystem;
     private constructor(fileSystemProvider: FileSystemProvider, fileProvider: VirtualLanguageServerFileProvider)
     // private delegate: FileSystemProvider;
     // private fileProvider: VirtualLanguageServerFileProvider;

@@ -11,8 +11,6 @@ export class ModuleAntiAFK$RandomInteraction$Interaction extends Enum<ModuleAnti
     static SWING_HAND: ModuleAntiAFK$RandomInteraction$Interaction;
     static YAW: ModuleAntiAFK$RandomInteraction$Interaction;
     static getEntries(): ModuleAntiAFK$RandomInteraction$Interaction[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleAntiAFK$RandomInteraction$Interaction;
     static values(): ModuleAntiAFK$RandomInteraction$Interaction[];

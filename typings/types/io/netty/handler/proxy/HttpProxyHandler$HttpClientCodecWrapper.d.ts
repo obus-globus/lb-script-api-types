@@ -7,7 +7,7 @@ import type { SocketAddress } from '../../../../java/net/SocketAddress.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 export class HttpProxyHandler$HttpClientCodecWrapper extends Object implements ChannelInboundHandler, ChannelOutboundHandler {
-    constructor(arg0: any)
+    private constructor()
     // private codec: HttpClientCodec;
     bind(arg0: ChannelHandlerContext, arg1: SocketAddress, arg2: ChannelPromise): void;
     channelActive(arg0: ChannelHandlerContext): void;

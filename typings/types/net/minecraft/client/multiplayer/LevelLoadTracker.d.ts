@@ -12,7 +12,6 @@ import type { ChunkPos } from '../../../../net/minecraft/world/level/ChunkPos.d.
 import type { Level } from '../../../../net/minecraft/world/level/Level.d.ts'
 export class LevelLoadTracker extends Object implements LevelLoadListener {
     static LEVEL_LOAD_CLOSE_DELAY_MS: number;
-    static compose(paramfirst: LevelLoadListener, paramsecond: LevelLoadListener): LevelLoadListener;
     constructor()
     constructor(closeDelayMs: number)
     // private clientState: LevelLoadTracker$ClientState;

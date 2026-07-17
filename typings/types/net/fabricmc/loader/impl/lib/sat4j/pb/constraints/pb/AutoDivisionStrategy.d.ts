@@ -6,7 +6,7 @@ export class AutoDivisionStrategy extends Enum<AutoDivisionStrategy> {
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): AutoDivisionStrategy;
     static values(): AutoDivisionStrategy[];
-    constructor(arg2: AutoDivisionStrategy)
+    private constructor()
     toString(): string;
     name(): "DISABLED" | "ENABLED";
 }

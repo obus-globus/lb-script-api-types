@@ -8,7 +8,6 @@ import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 import type { Message } from '../../../../../org/apache/logging/log4j/message/Message.d.ts'
 import type { StringBuilderFormattable } from '../../../../../org/apache/logging/log4j/util/StringBuilderFormattable.d.ts'
 export class SimpleMessage extends Object implements CharSequence, Message, StringBuilderFormattable {
-    static compare(paramarg0: CharSequence, paramarg1: CharSequence): number;
     constructor()
     constructor(charSequence: CharSequence)
     constructor(message: string)

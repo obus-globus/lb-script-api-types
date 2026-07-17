@@ -4,8 +4,6 @@ import type { ThreadLocal } from '../../../../../../java/lang/ThreadLocal.d.ts'
 import type { Predicate } from '../../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class RootNameFilter extends Object implements Predicate<string> {
-    static isEqual<T extends unknown>(paramarg0: Object): (param0: T) => boolean;
-    static not<T extends unknown>(paramarg0: (param0: Object) => boolean): (param0: T) => boolean;
     constructor(instrument: InsightInstrument, key: InsightInstrument$Key)
     // private cache: { [key: string]: boolean };
     // private instrument: InsightInstrument;

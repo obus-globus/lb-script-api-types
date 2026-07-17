@@ -8,7 +8,6 @@ import type { BakedSheetGlyph } from '../../../../../../net/minecraft/client/gui
 export class SpecialGlyphs extends Enum<SpecialGlyphs> implements GlyphInfo {
     static MISSING: SpecialGlyphs;
     static WHITE: SpecialGlyphs;
-    static simple(paramadvance: number): GlyphInfo;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): SpecialGlyphs;
     static values(): SpecialGlyphs[];

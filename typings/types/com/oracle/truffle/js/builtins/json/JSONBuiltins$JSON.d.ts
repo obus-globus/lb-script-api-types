@@ -11,7 +11,6 @@ export class JSONBuiltins$JSON extends Enum<JSONBuiltins$JSON> implements Builti
     static parse: JSONBuiltins$JSON;
     static rawJSON: JSONBuiltins$JSON;
     static stringify: JSONBuiltins$JSON;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): JSONBuiltins$JSON;
     static values(): JSONBuiltins$JSON[];

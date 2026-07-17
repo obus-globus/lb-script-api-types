@@ -3,7 +3,7 @@ import type { CacheBuilderSpec$ValueParser } from '../../../../com/google/common
 import type { TimeUnit } from '../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class CacheBuilderSpec$DurationParser extends Object implements CacheBuilderSpec$ValueParser {
-    constructor(arg0: any)
+    private constructor()
     parse(spec: CacheBuilderSpec, key: string, value: string): void;
     parseDuration(spec: CacheBuilderSpec, duration: number, unit: TimeUnit): void;
 }

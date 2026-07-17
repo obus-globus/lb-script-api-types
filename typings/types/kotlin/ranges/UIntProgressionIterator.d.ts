@@ -3,7 +3,7 @@ import type { Object } from '../../java/lang/Object.d.ts'
 import type { UInt } from '../../kotlin/UInt.d.ts'
 import type { Iterator } from '../../java/util/Iterator.d.ts'
 export class UIntProgressionIterator extends Object implements Iterator<UInt> {
-    constructor(first: UInt, last: UInt, step: number)
+    protected constructor()
     // private finalElement: UInt;
     // private hasNext: boolean;
     // private next: UInt;

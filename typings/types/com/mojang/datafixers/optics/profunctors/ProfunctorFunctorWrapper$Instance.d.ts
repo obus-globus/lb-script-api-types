@@ -12,7 +12,6 @@ import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ProfunctorFunctorWrapper$Instance<P extends K2, F extends K1, G extends K1> extends Object implements App<ProfunctorFunctorWrapper$Instance$Mu, ProfunctorFunctorWrapper$Mu<P, F, G>>, Profunctor<ProfunctorFunctorWrapper$Mu<P, F, G>, ProfunctorFunctorWrapper$Instance$Mu> {
-    static unbox<P extends K2, Proof extends Profunctor$Mu>(paramarg0: App<Proof, P>): Profunctor<P, Proof>;
     constructor(arg0: App<Profunctor$Mu, P>, arg1: Functor<F, any>, arg2: Functor<G, any>)
     // private fFunctor: Functor<F, any>;
     // private gFunctor: Functor<G, any>;

@@ -1,4 +1,5 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
+import type { Continuation } from '../../../kotlin/coroutines/Continuation.d.ts'
 import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { Job } from '../../../kotlinx/coroutines/Job.d.ts'
 import type { BufferOverflow } from '../../../kotlinx/coroutines/channels/BufferOverflow.d.ts'
@@ -11,6 +12,7 @@ export class ReadonlySharedFlow<T extends unknown> extends Object implements Can
     constructor(flow: SharedFlow<T>, job: Job | null)
     // private job: Job | null;
     readonly replayCache: T[];
-    collect(collector: FlowCollector<T>): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    collect(collector: FlowCollector<T>, $completion: Continuation<void>): any;
     fuse(context: CoroutineContext, capacity: number, onBufferOverflow: BufferOverflow): Flow<T>;
 }

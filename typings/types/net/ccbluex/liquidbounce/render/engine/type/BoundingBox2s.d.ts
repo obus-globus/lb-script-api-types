@@ -5,7 +5,6 @@ import type { UV2f } from '../../../../../../net/ccbluex/liquidbounce/render/eng
 export class BoundingBox2s extends Record {
     constructor(xMin: number, yMin: number, xMax: number, yMax: number)
     constructor(rect: BoundingBox2f)
-    constructor(min: UV2f, max: UV2f)
     // private max: UV2f;
     /*not mapped: */ max(): UV2f;
     // private min: UV2f;

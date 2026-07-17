@@ -9,6 +9,7 @@ export class NoSlowSneakingSwitch extends Mode {
     constructor(parent: ModeValueGroup<any>)
     // private networkTickHandler: EventHook<PlayerNetworkMovementTickEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private timingMode: NoSlowSneakingSwitch$TimingMode;
     // private /*not mapped: */ getTimingMode(): NoSlowSneakingSwitch$TimingMode;
     enable(): void;

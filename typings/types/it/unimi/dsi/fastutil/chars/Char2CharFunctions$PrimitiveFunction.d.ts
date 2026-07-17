@@ -18,7 +18,6 @@ import type { Short2CharFunction } from '../../../../../it/unimi/dsi/fastutil/sh
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Char2CharFunctions$PrimitiveFunction extends Object implements Char2CharFunction {
-    static identity(): (param0: string) => string;
     constructor(arg0: (param0: string) => string)
     // private function: (param0: string) => string;
     andThen<T extends unknown>(arg0: (param0: string) => T): (param0: string) => T;

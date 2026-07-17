@@ -7,9 +7,6 @@ import type { LongStream } from '../../java/util/stream/LongStream.d.ts'
 import type { Stream } from '../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export class SplittableRandom extends Object implements RandomGenerator, RandomGenerator$SplittableGenerator {
-    static getDefault(): RandomGenerator;
-    static of(paramarg0: string): RandomGenerator;
-    static of(paramarg0: string): RandomGenerator$SplittableGenerator;
     constructor()
     constructor(arg0: number)
     // private gamma: number;

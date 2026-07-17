@@ -161,7 +161,6 @@ export class SulfurCube extends AbstractCubeMob implements Bucketable, Shearable
     static WILDCARD: ScoreHolder;
     static WILDCARD_NAME: string;
     static areAllEffectsAmbient(parameffects: MobEffectInstance[]): boolean;
-    static bucketMobPickup<T extends LivingEntity & Bucketable>(paramplayer: Player, paramhand: InteractionHand, parampickupEntity: T): Optional<InteractionResult>;
     static canGlideUsing(paramitemStack: ItemStack, paramslot: EquipmentSlot): boolean;
     static canUseGoldenDandelion(paramitemInHand: ItemStack, paramisBaby: boolean, paramcooldown: number, parammob: Mob): boolean;
     static checkMobSpawnRules(paramtype: EntityType<Mob>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
@@ -176,10 +175,8 @@ export class SulfurCube extends AbstractCubeMob implements Bucketable, Shearable
     static getInputVector(paraminput: Vec3, paramspeed: number, paramyRot: number): Vec3;
     static getSpeedUpSecondsWhenFeeding(paramticksUntilAdult: number): number;
     static getViewScale(): number;
-    static loadDefaultDataFromBucketTag(paramentity: Mob, paramtag: CompoundTag): void;
     static makeAgeLockedParticle(paramlevel: Level, parammob: Mob, paramageLockParticleTimer: number, paramisAgeLocked: boolean): number;
     static resetForwardDirectionOfRelativePortalPosition(paramoffsets: Vec3): Vec3;
-    static saveDefaultDataToBucketTag(paramentity: Mob, parambucket: ItemStack): void;
     static setAgeLocked(parammob: Mob, paramisAgedLocked: () => boolean, paramplayer: Player, paramitemInHand: ItemStack, paramsetAgeLockData: (param0: Mob) => void): void;
     static setViewScale(paramviewScale: number): void;
     constructor(type: EntityType<SulfurCube>, level: Level)

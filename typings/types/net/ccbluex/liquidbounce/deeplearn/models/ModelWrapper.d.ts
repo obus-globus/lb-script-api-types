@@ -15,6 +15,7 @@ export abstract class ModelWrapper<I extends unknown, O extends unknown> extends
     // private /*not mapped: */ getModel(): Model;
     readonly outputs: number;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private predictor: Predictor<I, O>;
     // private /*not mapped: */ getPredictor(): Predictor<I, O>;
     readonly translator: Translator<I, O>;

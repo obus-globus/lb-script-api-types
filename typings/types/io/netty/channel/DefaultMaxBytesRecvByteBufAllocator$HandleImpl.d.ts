@@ -6,7 +6,7 @@ import type { RecvByteBufAllocator$ExtendedHandle } from '../../../io/netty/chan
 import type { UncheckedBooleanSupplier } from '../../../io/netty/util/UncheckedBooleanSupplier.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class DefaultMaxBytesRecvByteBufAllocator$HandleImpl extends Object implements RecvByteBufAllocator$ExtendedHandle {
-    constructor(null_: DefaultMaxBytesRecvByteBufAllocator, arg1: any)
+    private constructor(null_: DefaultMaxBytesRecvByteBufAllocator)
     // private attemptBytesRead: number;
     // private bytesToRead: number;
     // private defaultMaybeMoreSupplier: UncheckedBooleanSupplier;

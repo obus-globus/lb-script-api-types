@@ -7,7 +7,7 @@ export class CLI$Mode extends Enum<CLI$Mode> {
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): CLI$Mode;
     static values(): CLI$Mode[];
-    constructor(arg2: string, arg3: any)
+    private constructor(arg2: string)
     readonly message: string;
     getMessage(): string;
     takeAction(arg0: SevenZFile, arg1: SevenZArchiveEntry): void;

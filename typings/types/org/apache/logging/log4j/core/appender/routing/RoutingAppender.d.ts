@@ -25,7 +25,7 @@ export class RoutingAppender extends AbstractAppender {
     static createAppender(paramname: string, paramignore: string, paramroutes: Routes, paramconfig: Configuration, paramrewritePolicy: RewritePolicy, parampurgePolicy: PurgePolicy, paramfilter: Filter): RoutingAppender;
     static newBuilder<B extends RoutingAppender$Builder<B>>(): B;
     static parseInt(params: string, paramdefaultValue: number): number;
-    constructor(arg0: string, arg1: Filter, arg2: boolean, arg3: Routes, arg4: RewritePolicy, arg5: Configuration, arg6: PurgePolicy, arg7: AbstractScript, arg8: Property[], arg9: any)
+    private constructor(name: string, filter: Filter, ignoreExceptions: boolean, routes: Routes, rewritePolicy: RewritePolicy, configuration: Configuration, purgePolicy: PurgePolicy, defaultRouteScript: AbstractScript, properties: Property[])
     readonly configuration: Configuration;
     // private createdAppenders: { [key: string]: RoutingAppender$CreatedRouteAppenderControl };
     // private createdAppendersUnmodifiableView: { [key: string]: AppenderControl };

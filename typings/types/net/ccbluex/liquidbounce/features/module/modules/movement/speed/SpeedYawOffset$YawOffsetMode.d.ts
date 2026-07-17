@@ -8,8 +8,6 @@ export class SpeedYawOffset$YawOffsetMode extends Enum<SpeedYawOffset$YawOffsetM
     static Companion: Tagged$Companion;
     static GROUND: SpeedYawOffset$YawOffsetMode;
     static getEntries(): SpeedYawOffset$YawOffsetMode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): SpeedYawOffset$YawOffsetMode;
     static values(): SpeedYawOffset$YawOffsetMode[];

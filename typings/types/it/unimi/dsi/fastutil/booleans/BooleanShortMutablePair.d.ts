@@ -1,11 +1,8 @@
 import type { BooleanShortPair } from '../../../../../it/unimi/dsi/fastutil/booleans/BooleanShortPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
-import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BooleanShortMutablePair extends Object implements BooleanShortPair, Serializable {
-    static lexComparator(): (param0: BooleanShortPair, param1: BooleanShortPair) => number;
     static of(paramarg0: boolean, paramarg1: number): BooleanShortMutablePair;
-    static of(paramarg0: boolean, paramarg1: number): BooleanShortPair;
     constructor(arg0: boolean, arg1: number)
     // private left: boolean;
     // private right: number;

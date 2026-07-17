@@ -6,10 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ChunkSectionImpl extends Object implements ChunkSection {
     static BIOME_SIZE: number;
     static SIZE: number;
-    static index(paramarg0: number, paramarg1: number, paramarg2: number): number;
-    static xFromIndex(paramarg0: number): number;
-    static yFromIndex(paramarg0: number): number;
-    static zFromIndex(paramarg0: number): number;
     constructor()
     constructor(arg0: boolean)
     constructor(arg0: boolean, arg1: number)

@@ -1,12 +1,10 @@
 import type { Lock } from '../../../../../../java/util/concurrent/locks/Lock.d.ts'
 import type { Supplier } from '../../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-import type { LockingVisitors$LockVisitor$LVBuilder } from '../../../../../../org/apache/commons/lang3/concurrent/locks/LockingVisitors$LockVisitor$LVBuilder.d.ts'
 import type { FailableConsumer } from '../../../../../../org/apache/commons/lang3/function/FailableConsumer.d.ts'
 import type { FailableFunction } from '../../../../../../org/apache/commons/lang3/function/FailableFunction.d.ts'
 export class LockingVisitors$LockVisitor<O extends unknown, L extends unknown> extends Object {
     constructor(arg0: O, arg1: L, arg2: () => Lock, arg3: () => Lock)
-    constructor(arg0: LockingVisitors$LockVisitor$LVBuilder<Object, Object, LockingVisitors$LockVisitor$LVBuilder<Object, Object, any>>, arg1: any)
     readonly lock: L;
     readonly object: O;
     // private readLockSupplier: () => Lock;

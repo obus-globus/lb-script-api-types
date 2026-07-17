@@ -23,7 +23,6 @@ export class ConsoleBuiltins$Console extends Enum<ConsoleBuiltins$Console> imple
     static timeEnd: ConsoleBuiltins$Console;
     static timeLog: ConsoleBuiltins$Console;
     static warn: ConsoleBuiltins$Console;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): ConsoleBuiltins$Console;
     static values(): ConsoleBuiltins$Console[];

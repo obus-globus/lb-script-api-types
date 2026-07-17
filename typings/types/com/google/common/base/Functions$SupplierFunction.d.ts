@@ -3,7 +3,7 @@ import type { Supplier } from '../../../../com/google/common/base/Supplier.d.ts'
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Functions$SupplierFunction<F extends unknown, T extends unknown> extends Object implements Function<F, T>, Serializable {
-    constructor(arg0: () => Object, arg1: any)
+    private constructor(supplier: () => T)
     // private supplier: () => T;
     apply(input: F): T;
     equals(obj: Object | null): boolean;

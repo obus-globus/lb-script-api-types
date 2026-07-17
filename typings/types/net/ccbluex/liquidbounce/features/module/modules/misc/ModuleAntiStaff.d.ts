@@ -1,3 +1,4 @@
+import type { Continuation } from '../../../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { PacketEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/PacketEvent.d.ts'
 import type { ServerConnectEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/ServerConnectEvent.d.ts'
@@ -15,8 +16,10 @@ export class ModuleAntiStaff extends ClientModule {
     // private showInTabList: boolean;
     // private /*not mapped: */ getShowInTabList(): boolean;
     // private alert(key: string, username: string | null): void;
-    enabledEffect(): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    enabledEffect($completion: Continuation<void>): any;
     // private isStaff(username: string): boolean;
-    loadStaffList(address: string): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    loadStaffList(address: string, $completion: Continuation<void>): any;
     shouldShowAsStaffOnTab(username: string): boolean;
 }

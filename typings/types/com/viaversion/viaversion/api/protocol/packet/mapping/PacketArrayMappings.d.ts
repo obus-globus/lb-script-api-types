@@ -4,7 +4,6 @@ import type { PacketMapping } from '../../../../../../../com/viaversion/viaversi
 import type { PacketMappings } from '../../../../../../../com/viaversion/viaversion/api/protocol/packet/mapping/PacketMappings.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class PacketArrayMappings extends Object implements PacketMappings {
-    static arrayMappings(): PacketMappings;
     constructor()
     // private packets: PacketMapping[][];
     addMapping(arg0: PacketType, arg1: PacketMapping): void;

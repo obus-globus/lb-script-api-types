@@ -1,6 +1,5 @@
 import type { Closeable } from '../../../../../../java/io/Closeable.d.ts'
 import type { File } from '../../../../../../java/io/File.d.ts'
-import type { FilterInputStream } from '../../../../../../java/io/FilterInputStream.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
 import type { ByteBuffer } from '../../../../../../java/nio/ByteBuffer.d.ts'
 import type { SeekableByteChannel } from '../../../../../../java/nio/channels/SeekableByteChannel.d.ts'
@@ -28,7 +27,6 @@ export class SevenZFile extends Object implements Closeable {
     constructor(arg0: SeekableByteChannel, arg1: string[], arg2: SevenZFileOptions)
     constructor(arg0: SeekableByteChannel, arg1: string)
     constructor(arg0: SeekableByteChannel, arg1: string, arg2: number[])
-    constructor(arg0: SeekableByteChannel, arg1: string, arg2: number[], arg3: boolean, arg4: number, arg5: boolean, arg6: boolean, arg7: FilterInputStream)
     constructor(arg0: SeekableByteChannel, arg1: string, arg2: string[])
     constructor(arg0: SeekableByteChannel, arg1: string, arg2: string[], arg3: SevenZFileOptions)
     constructor(arg0: SeekableByteChannel, arg1: string, arg2: SevenZFileOptions)

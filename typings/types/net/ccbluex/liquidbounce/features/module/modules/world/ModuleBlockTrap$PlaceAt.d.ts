@@ -7,8 +7,6 @@ export class ModuleBlockTrap$PlaceAt extends Enum<ModuleBlockTrap$PlaceAt> imple
     static FLOOR: ModuleBlockTrap$PlaceAt;
     static LEGS: ModuleBlockTrap$PlaceAt;
     static getEntries(): ModuleBlockTrap$PlaceAt[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleBlockTrap$PlaceAt;
     static values(): ModuleBlockTrap$PlaceAt[];

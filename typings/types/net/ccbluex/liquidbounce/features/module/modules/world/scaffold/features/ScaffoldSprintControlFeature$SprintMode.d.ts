@@ -10,8 +10,6 @@ export class ScaffoldSprintControlFeature$SprintMode extends Enum<ScaffoldSprint
     static NO_SPRINT_ON_GROUND: ScaffoldSprintControlFeature$SprintMode;
     static NO_SPRINT_ON_PLACE: ScaffoldSprintControlFeature$SprintMode;
     static getEntries(): ScaffoldSprintControlFeature$SprintMode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ScaffoldSprintControlFeature$SprintMode;
     static values(): ScaffoldSprintControlFeature$SprintMode[];

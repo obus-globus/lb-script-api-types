@@ -8,7 +8,7 @@ export class StopWatch$State extends Enum<StopWatch$State> {
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): StopWatch$State;
     static values(): StopWatch$State[];
-    constructor(arg2: any)
+    private constructor()
     isStarted(): boolean;
     isStopped(): boolean;
     isSuspended(): boolean;

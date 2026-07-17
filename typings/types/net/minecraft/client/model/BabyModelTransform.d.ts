@@ -4,7 +4,6 @@ import type { MeshDefinition } from '../../../../net/minecraft/client/model/geom
 import type { MeshTransformer } from '../../../../net/minecraft/client/model/geom/builders/MeshTransformer.d.ts'
 export class BabyModelTransform extends Record implements MeshTransformer {
     static IDENTITY: (param0: MeshDefinition) => MeshDefinition;
-    static scaling(paramfactor: number): (param0: MeshDefinition) => MeshDefinition;
     constructor(scaleHead: boolean, babyYHeadOffset: number, babyZHeadOffset: number, babyHeadScale: number, babyBodyScale: number, bodyYOffset: number, headParts: string[])
     constructor(scaleHead: boolean, babyYHeadOffset: number, babyZHeadOffset: number, headParts: string[])
     constructor(headParts: string[])

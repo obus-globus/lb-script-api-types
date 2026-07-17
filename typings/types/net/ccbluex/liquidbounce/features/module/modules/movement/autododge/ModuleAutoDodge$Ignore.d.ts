@@ -8,8 +8,6 @@ export class ModuleAutoDodge$Ignore extends Enum<ModuleAutoDodge$Ignore> impleme
     static USING_ITEM: ModuleAutoDodge$Ignore;
     static USING_SCAFFOLD: ModuleAutoDodge$Ignore;
     static getEntries(): ModuleAutoDodge$Ignore[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleAutoDodge$Ignore;
     static values(): ModuleAutoDodge$Ignore[];

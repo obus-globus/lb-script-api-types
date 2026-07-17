@@ -4,7 +4,7 @@ import type { CharSequence } from '../../../../../../../../java/lang/CharSequenc
 export class MigrationMapFileReader$CustomBufferedReader extends BufferedReader {
     static nullReader(): Reader;
     static of(paramarg0: CharSequence): Reader;
-    constructor(arg0: Reader, arg1: any)
+    private constructor(arg0: Reader)
     close(): void;
     forceClose(): void;
 }

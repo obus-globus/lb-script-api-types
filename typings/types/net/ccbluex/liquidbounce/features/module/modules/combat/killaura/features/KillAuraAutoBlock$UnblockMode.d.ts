@@ -9,8 +9,6 @@ export class KillAuraAutoBlock$UnblockMode extends Enum<KillAuraAutoBlock$Unbloc
     static STOP_USING_ITEM: KillAuraAutoBlock$UnblockMode;
     static SWAP_HAND: KillAuraAutoBlock$UnblockMode;
     static getEntries(): KillAuraAutoBlock$UnblockMode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): KillAuraAutoBlock$UnblockMode;
     static values(): KillAuraAutoBlock$UnblockMode[];

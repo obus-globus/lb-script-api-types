@@ -11,7 +11,6 @@ import type { Direction } from '../../../../../../../net/minecraft/core/Directio
 import type { RandomSource } from '../../../../../../../net/minecraft/util/RandomSource.d.ts'
 import type { BlockState } from '../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class CompositeBlockStateModelImpl extends Object implements CompositeBlockStateModel {
-    static of(paramarg0: BlockStateModel[]): CompositeBlockStateModel;
     static of(paramarg0: BlockStateModel[]): CompositeBlockStateModelImpl;
     constructor(arg0: BlockStateModel[])
     // private materialFlags: number;

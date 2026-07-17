@@ -8,6 +8,7 @@ export class ModuleMiddleClickAction$FriendClicker extends Mode {
     static INSTANCE: ModuleMiddleClickAction$FriendClicker;
     // private clicked: boolean;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private pickUpRange: number;
     // private /*not mapped: */ getPickUpRange(): number;
     readonly repeatable: EventHook<GameTickEvent>;

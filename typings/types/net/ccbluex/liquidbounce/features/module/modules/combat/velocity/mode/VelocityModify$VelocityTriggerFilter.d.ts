@@ -9,8 +9,6 @@ export class VelocityModify$VelocityTriggerFilter extends Enum<VelocityModify$Ve
     static IN_AIR: VelocityModify$VelocityTriggerFilter;
     static ON_GROUND: VelocityModify$VelocityTriggerFilter;
     static getEntries(): VelocityModify$VelocityTriggerFilter[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): VelocityModify$VelocityTriggerFilter;
     static values(): VelocityModify$VelocityTriggerFilter[];

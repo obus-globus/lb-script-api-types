@@ -11,8 +11,6 @@ export class ChatReceiveEvent$ChatType extends Enum<ChatReceiveEvent$ChatType> i
     static DISGUISED_CHAT_MESSAGE: ChatReceiveEvent$ChatType;
     static GAME_MESSAGE: ChatReceiveEvent$ChatType;
     static getEntries(): ChatReceiveEvent$ChatType[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ChatReceiveEvent$ChatType;
     static values(): ChatReceiveEvent$ChatType[];

@@ -6,7 +6,6 @@ export class ChunkedOutputStream extends FilterOutputStream {
     static nullOutputStream(): OutputStream;
     constructor(arg0: OutputStream)
     constructor(arg0: OutputStream, arg1: number)
-    constructor(arg0: ChunkedOutputStream$Builder, arg1: any)
     // private chunkSize: number;
     getChunkSize(): number;
     write(arg0: number[]): void;

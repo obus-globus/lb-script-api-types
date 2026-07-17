@@ -4,8 +4,6 @@ import type { FlammableBlockRegistry$Entry } from '../../../../../../net/fabricm
 import type { TagKey } from '../../../../../../net/minecraft/tags/TagKey.d.ts'
 import type { Block } from '../../../../../../net/minecraft/world/level/block/Block.d.ts'
 export class FlammableBlockRegistryImpl extends Object implements FlammableBlockRegistry {
-    static getDefaultInstance(): FlammableBlockRegistry;
-    static getInstance(paramarg0: Block): FlammableBlockRegistry;
     static getInstance(paramarg0: Block): FlammableBlockRegistryImpl;
     private constructor(arg0: Block)
     // private computedEntries: Map<Block, FlammableBlockRegistry$Entry>;

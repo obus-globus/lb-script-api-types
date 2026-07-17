@@ -4,7 +4,7 @@ import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { DoubleConsumer } from '../../../../../java/util/function/DoubleConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class FloatOpenHashBigSet$SetIterator extends Object implements FloatIterator {
-    constructor(null_: (Object | null)[], arg1: any)
+    private constructor(null_: (Object | null)[])
     // private base: number;
     // private c: number;
     // private displ: number;

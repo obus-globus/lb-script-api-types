@@ -6,7 +6,7 @@ export class AbstractCircuitBreaker$State extends Enum<AbstractCircuitBreaker$St
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): AbstractCircuitBreaker$State;
     static values(): AbstractCircuitBreaker$State[];
-    constructor(arg2: any)
+    private constructor()
     oppositeState(): AbstractCircuitBreaker$State;
     name(): "CLOSED" | "OPEN";
 }

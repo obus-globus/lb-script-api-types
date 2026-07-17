@@ -10,7 +10,6 @@ export class AsyncContextVariablePrototypeBuiltins$AsyncContextVariablePrototype
     static get: AsyncContextVariablePrototypeBuiltins$AsyncContextVariablePrototype;
     static name: AsyncContextVariablePrototypeBuiltins$AsyncContextVariablePrototype;
     static run: AsyncContextVariablePrototypeBuiltins$AsyncContextVariablePrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): AsyncContextVariablePrototypeBuiltins$AsyncContextVariablePrototype;
     static values(): AsyncContextVariablePrototypeBuiltins$AsyncContextVariablePrototype[];

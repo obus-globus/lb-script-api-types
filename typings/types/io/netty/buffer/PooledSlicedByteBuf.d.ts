@@ -1,7 +1,6 @@
 import type { AbstractPooledDerivedByteBuf } from '../../../io/netty/buffer/AbstractPooledDerivedByteBuf.d.ts'
 import type { ByteBuf } from '../../../io/netty/buffer/ByteBuf.d.ts'
 import type { ByteProcessor } from '../../../io/netty/util/ByteProcessor.d.ts'
-import type { Recycler } from '../../../io/netty/util/Recycler.d.ts'
 import type { ObjectPool$Handle } from '../../../io/netty/util/internal/ObjectPool$Handle.d.ts'
 import type { InputStream } from '../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../java/io/OutputStream.d.ts'
@@ -9,9 +8,8 @@ import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
 import type { FileChannel } from '../../../java/nio/channels/FileChannel.d.ts'
 import type { GatheringByteChannel } from '../../../java/nio/channels/GatheringByteChannel.d.ts'
 import type { ScatteringByteChannel } from '../../../java/nio/channels/ScatteringByteChannel.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 export class PooledSlicedByteBuf extends AbstractPooledDerivedByteBuf {
-    constructor(arg0: ObjectPool$Handle<Object>, arg1: Recycler<PooledSlicedByteBuf>)
+    private constructor(arg0: ObjectPool$Handle<PooledSlicedByteBuf>)
     // private adjustment: number;
     _getByte(arg0: number): number;
     _getInt(arg0: number): number;

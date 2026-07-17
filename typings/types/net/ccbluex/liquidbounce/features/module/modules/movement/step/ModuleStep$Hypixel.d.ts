@@ -17,6 +17,7 @@ export class ModuleStep$Hypixel extends Mode {
     // private movementInputHandler: EventHook<MovementInputEvent>;
     // private networkTickHandler: EventHook<PlayerNetworkMovementTickEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     // private spoof: boolean;
     // private /*not mapped: */ getSpoof(): boolean;
     // private /*not mapped: */ getStepHeight(): number;

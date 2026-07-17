@@ -7,7 +7,6 @@ import type { TypedFunction } from '../../../../kroppeb/stareval/function/TypedF
 import type { TypedFunction$Parameter } from '../../../../kroppeb/stareval/function/TypedFunction$Parameter.d.ts'
 import type { BooleanVectorizedFunction$ElementAccessExpression } from '../../../../net/irisshaders/iris/parsing/BooleanVectorizedFunction$ElementAccessExpression.d.ts'
 export class BooleanVectorizedFunction extends Object implements TypedFunction {
-    static format(paramarg0: TypedFunction, paramarg1: string): string;
     constructor(arg0: TypedFunction, arg1: number)
     // private index: number;
     // private inner: TypedFunction;

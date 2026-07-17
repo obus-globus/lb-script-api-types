@@ -9,8 +9,6 @@ export class Alignment$ScreenAxisY extends Enum<Alignment$ScreenAxisY> implement
     static Companion: Tagged$Companion;
     static TOP: Alignment$ScreenAxisY;
     static getEntries(): Alignment$ScreenAxisY[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): Alignment$ScreenAxisY;
     static values(): Alignment$ScreenAxisY[];

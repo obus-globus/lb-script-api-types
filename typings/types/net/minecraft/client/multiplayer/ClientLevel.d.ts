@@ -99,8 +99,6 @@ export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrac
     static OVERWORLD: ResourceKey<Level>;
     static RESOURCE_KEY_CODEC: Codec<ResourceKey<Level>>;
     static SHORT_PARTICLE_CLIP_RANGE: number;
-    static get(paramarg0: ClientLevel): ChunkTracker;
-    static getBiomeZoomSeed(paramarg0: ClientLevel): number;
     static isInSpawnableBounds(parampos: BlockPos): boolean;
     constructor(connection: ClientPacketListener, levelData: ClientLevel$ClientLevelData, dimension: ResourceKey<Level>, dimensionType: Holder<DimensionType>, serverChunkRadius: number, serverSimulationDistance: number, levelExtractor: LevelExtractor, isDebug: boolean, biomeZoomSeed: number, seaLevel: number)
     // private biomeZoomSeed: number;

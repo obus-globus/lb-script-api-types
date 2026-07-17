@@ -10,4 +10,5 @@ export class ModuleSneak$Legit extends Mode {
     // private onMagmaBlocksOnly: boolean;
     // private /*not mapped: */ getOnMagmaBlocksOnly(): boolean;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
 }

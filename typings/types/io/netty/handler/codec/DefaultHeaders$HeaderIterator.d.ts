@@ -4,7 +4,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class DefaultHeaders$HeaderIterator extends Object implements Iterator<Map$Entry<K, V>> {
-    constructor(null_: (Object | null)[], arg1: any)
+    private constructor(null_: (Object | null)[])
     // private current: DefaultHeaders$HeaderEntry<K, V>;
     forEachRemaining<K extends unknown, V extends unknown>(arg0: (param0: Map$Entry<K, V>) => void): void;
     hasNext(): boolean;

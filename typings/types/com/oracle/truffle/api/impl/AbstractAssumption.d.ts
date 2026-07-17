@@ -3,10 +3,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class AbstractAssumption extends Object implements Assumption {
     static ALWAYS_VALID: Assumption;
     static NEVER_VALID: Assumption;
-    static create(): Assumption;
-    static create(paramname: string): Assumption;
-    static isValidAssumption(paramassumption: Assumption): boolean;
-    static isValidAssumption(paramassumptions: Assumption[]): boolean;
     constructor(name: Object)
     // private isValid: boolean;
     readonly name: Object;

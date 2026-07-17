@@ -14,8 +14,6 @@ export class CustomAntiBotMode$Name$CharacterValidator extends Enum<CustomAntiBo
     static Companion: Tagged$Companion;
     static VANILLA: CustomAntiBotMode$Name$CharacterValidator;
     static getEntries(): CustomAntiBotMode$Name$CharacterValidator[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): CustomAntiBotMode$Name$CharacterValidator;
     static values(): CustomAntiBotMode$Name$CharacterValidator[];

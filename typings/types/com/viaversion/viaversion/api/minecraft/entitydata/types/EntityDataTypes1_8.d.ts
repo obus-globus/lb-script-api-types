@@ -13,7 +13,6 @@ export class EntityDataTypes1_8 extends Enum<EntityDataTypes1_8> implements Enti
     static SHORT: EntityDataTypes1_8;
     static STRING: EntityDataTypes1_8;
     static byId(paramarg0: number): EntityDataTypes1_8;
-    static create(paramarg0: number, paramarg1: Type<Object>): EntityDataType;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): EntityDataTypes1_8;
     static values(): EntityDataTypes1_8[];

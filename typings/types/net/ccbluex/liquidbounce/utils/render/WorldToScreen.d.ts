@@ -33,8 +33,8 @@ export class WorldToScreen extends Object {
     // private cacheVec4f: Vector4f;
     // private cachedCameraPos: Vec3;
     // private projModelViewMatrix: Matrix4f;
-    calculateMouseRay(posOnScreen: Vec2, cameraPos: Vec3): Line;
-    calculateScreenPos(pos: Vec3, cameraPos: Vec3): Vec3f | null;
-    calculateScreenRect(box: AABB, cameraPos: Vec3): Rect | null;
+    calculateMouseRay(posOnScreen: Vec2, cameraPos?: Vec3): Line;
+    calculateScreenPos(pos: Vec3, cameraPos?: Vec3): Vec3f | null;
+    calculateScreenRect(box: AABB, cameraPos?: Vec3): Rect | null;
     setMatrices(projectionMatrix: Matrix4fc, modelViewMatrix: Matrix4fc, cameraPos: Vec3): void;
 }

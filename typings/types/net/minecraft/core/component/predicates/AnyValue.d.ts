@@ -1,5 +1,4 @@
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
-import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { DataComponentGetter } from '../../../../../net/minecraft/core/component/DataComponentGetter.d.ts'
@@ -13,7 +12,6 @@ export class AnyValue extends Record implements DataComponentPredicate {
     static CODEC: Codec<Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
     static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<any>>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
-    static singleCodec(paramname: string): MapCodec<DataComponentPredicate$Single<any>>;
     constructor(type: DataComponentType<Object>)
     // private type: DataComponentType<Object>;
     equals(o: Object | null): boolean;

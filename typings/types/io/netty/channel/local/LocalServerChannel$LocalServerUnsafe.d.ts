@@ -1,6 +1,5 @@
 import type { AbstractChannel$AbstractUnsafe } from '../../../../io/netty/channel/AbstractChannel$AbstractUnsafe.d.ts'
 import type { ChannelPromise } from '../../../../io/netty/channel/ChannelPromise.d.ts'
-import type { DefaultChannelConfig } from '../../../../io/netty/channel/DefaultChannelConfig.d.ts'
 import type { IoEvent } from '../../../../io/netty/channel/IoEvent.d.ts'
 import type { IoRegistration } from '../../../../io/netty/channel/IoRegistration.d.ts'
 import type { LocalIoHandle } from '../../../../io/netty/channel/local/LocalIoHandle.d.ts'
@@ -10,7 +9,7 @@ import type { SocketAddress } from '../../../../java/net/SocketAddress.d.ts'
 import type { ClosedChannelException } from '../../../../java/nio/channels/ClosedChannelException.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 export class LocalServerChannel$LocalServerUnsafe extends AbstractChannel$AbstractUnsafe implements LocalIoHandle {
-    constructor(null_: LocalServerChannel, arg1: DefaultChannelConfig)
+    private constructor(null_: LocalServerChannel)
     // private shutdownHook: () => void;
     close(): void;
     close(arg0: ChannelPromise): void;

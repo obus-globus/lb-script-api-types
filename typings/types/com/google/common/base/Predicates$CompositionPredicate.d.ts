@@ -3,7 +3,7 @@ import type { Predicate } from '../../../../com/google/common/base/Predicate.d.t
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Predicates$CompositionPredicate<A extends unknown, B extends unknown> extends Object implements Predicate<A>, Serializable {
-    constructor(arg0: (param0: Object) => boolean, arg1: (param0: Object) => Object, arg2: any)
+    private constructor(p: (param0: B) => boolean, f: (param0: A) => B)
     // private f: (param0: A) => B;
     // private p: (param0: B) => boolean;
     apply(a: A): boolean;

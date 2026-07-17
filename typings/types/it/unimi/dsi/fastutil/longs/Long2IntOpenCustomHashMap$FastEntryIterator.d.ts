@@ -3,9 +3,8 @@ import type { Long2IntOpenCustomHashMap$MapEntry } from '../../../../../it/unimi
 import type { Long2IntOpenCustomHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/longs/Long2IntOpenCustomHashMap$MapIterator.d.ts'
 import type { ObjectIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Long2IntOpenCustomHashMap$FastEntryIterator extends Long2IntOpenCustomHashMap$MapIterator<(param0: Long2IntMap$Entry) => void> implements ObjectIterator<Long2IntMap$Entry> {
-    constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
+    private constructor(null_: { [key: string]: any })
     // private entry: Long2IntOpenCustomHashMap$MapEntry;
     acceptOnIndex(arg0: (param0: Long2IntMap$Entry) => void, arg1: number): void;
     next(): Long2IntOpenCustomHashMap$MapEntry;

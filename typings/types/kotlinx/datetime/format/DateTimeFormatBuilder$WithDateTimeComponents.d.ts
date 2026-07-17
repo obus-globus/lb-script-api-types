@@ -22,7 +22,7 @@ export interface DateTimeFormatBuilder$WithDateTimeComponents extends Object, Da
     offsetMinutesOfHour(padding: Padding): void;
     offsetSecondsOfMinute(padding: Padding): void;
     second(padding: Padding): void;
-    secondFraction(minLength: number, maxLength: number): void;
+    secondFraction(minLength: number, maxLength?: number): void;
     timeZoneId(): void;
     year(padding: Padding): void;
     yearTwoDigits(baseYear: number): void;

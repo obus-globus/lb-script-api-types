@@ -11,6 +11,6 @@ export interface DateTimeFormatBuilder$WithTime extends Object, DateTimeFormatBu
     minute(padding: Padding): void;
     second(padding: Padding): void;
     secondFraction(fixedLength: number): void;
-    secondFraction(minLength: number, maxLength: number): void;
+    secondFraction(minLength: number, maxLength?: number): void;
     time(format: DateTimeFormat<LocalTime>): void;
 }

@@ -3,7 +3,6 @@ import type { Copyable } from '../../../../../com/viaversion/viaversion/util/Cop
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class RegistryEntry extends Record implements Copyable {
-    static copy<T extends unknown>(paramarg0: T): T;
     constructor(key: string, tag: Tag)
     // private key: string;
     // private tag: Tag;

@@ -4,4 +4,5 @@ export class NoFallPacketJump$Constant extends NoFallPacketJump$DistanceMode {
     static Companion: Tagged$Companion;
     static INSTANCE: NoFallPacketJump$Constant;
     readonly value: number;
+    getValue(): number;
 }

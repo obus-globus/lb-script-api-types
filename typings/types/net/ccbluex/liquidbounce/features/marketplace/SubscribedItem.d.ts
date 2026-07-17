@@ -1,5 +1,6 @@
 import type { File } from '../../../../../java/io/File.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Continuation } from '../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { MarketplaceItem } from '../../../../../net/ccbluex/liquidbounce/api/models/marketplace/MarketplaceItem.d.ts'
 import type { MarketplaceItemType } from '../../../../../net/ccbluex/liquidbounce/api/models/marketplace/MarketplaceItemType.d.ts'
 import type { ResourceTask } from '../../../../../net/ccbluex/liquidbounce/integration/task/type/ResourceTask.d.ts'
@@ -11,7 +12,8 @@ export class SubscribedItem extends Object {
     readonly itemDir: File;
     readonly name: string;
     readonly type: MarketplaceItemType;
-    checkUpdate(): number | null;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    checkUpdate($completion: Continuation<number>): any;
     component1(): string;
     component2(): number;
     component3(): MarketplaceItemType;
@@ -30,17 +32,10 @@ export class SubscribedItem extends Object {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/SubscribedItem.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/SubscribedItem.kt:55}
      */
     getInstallationFolder(): File | null;
-    /**
-     * Check if the item has an update available.
-     *
-     * This depends on what item revision is being returned
-     * by the Marketplace API as first item. We do not
-     * use versioning here, therefore it could also work as downgrade.
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/SubscribedItem.kt#L91 | src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/SubscribedItem.kt:91}
-     */
-    getNewestRevisionId(): number | null;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    getNewestRevisionId($completion: Continuation<number>): any;
     hashCode(): number;
-    install(revisionId: number, subTask: ResourceTask | null): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    install(revisionId: number, subTask: ResourceTask | null, $completion: Continuation<void>): any;
     toString(): string;
 }

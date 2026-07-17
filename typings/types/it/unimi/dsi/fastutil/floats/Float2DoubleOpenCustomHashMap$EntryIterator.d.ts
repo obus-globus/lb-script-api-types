@@ -3,9 +3,8 @@ import type { Float2DoubleOpenCustomHashMap$MapEntry } from '../../../../../it/u
 import type { Float2DoubleOpenCustomHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/floats/Float2DoubleOpenCustomHashMap$MapIterator.d.ts'
 import type { ObjectIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Float2DoubleOpenCustomHashMap$EntryIterator extends Float2DoubleOpenCustomHashMap$MapIterator<(param0: Float2DoubleMap$Entry) => void> implements ObjectIterator<Float2DoubleMap$Entry> {
-    constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
+    private constructor(null_: { [key: string]: any })
     // private entry: Float2DoubleOpenCustomHashMap$MapEntry;
     acceptOnIndex(arg0: (param0: Float2DoubleMap$Entry) => void, arg1: number): void;
     next(): Float2DoubleOpenCustomHashMap$MapEntry;

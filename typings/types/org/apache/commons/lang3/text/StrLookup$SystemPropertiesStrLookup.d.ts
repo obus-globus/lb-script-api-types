@@ -4,6 +4,6 @@ export class StrLookup$SystemPropertiesStrLookup extends StrLookup<string> {
     static mapLookup<V extends unknown>(paramarg0: { [key: string]: V }): StrLookup<V>;
     static noneLookup(): StrLookup<Object>;
     static systemPropertiesLookup(): StrLookup<string>;
-    constructor(arg0: any)
+    private constructor()
     lookup(arg0: string): string;
 }

@@ -1,6 +1,5 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Lazy } from '../../../../../../../kotlin/Lazy.d.ts'
-import type { DefaultConstructorMarker } from '../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { KotlinBuiltIns } from '../../../../../../../kotlin/reflect/jvm/internal/impl/builtins/KotlinBuiltIns.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
 import type { DeclarationDescriptorVisitor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptorVisitor.d.ts'
@@ -20,7 +19,6 @@ export class ModuleDescriptorImpl extends DeclarationDescriptorImpl implements M
     static toString(paramarg0: DeclarationDescriptor): string;
     constructor(arg0: Name, arg1: StorageManager, arg2: KotlinBuiltIns, arg3: Object[])
     constructor(arg0: Name, arg1: StorageManager, arg2: KotlinBuiltIns, arg3: Object[], arg4: Map<ModuleCapability<Object>, Object | null>, arg5: Name)
-    constructor(arg0: Name, arg1: StorageManager, arg2: KotlinBuiltIns, arg3: Object[], arg4: Map<Object | null, Object | null>, arg5: Name, arg6: number, arg7: DefaultConstructorMarker)
     readonly builtIns: KotlinBuiltIns;
     // private capabilities: Map<ModuleCapability<Object>, Object>;
     readonly dependencies: ModuleDependencies;

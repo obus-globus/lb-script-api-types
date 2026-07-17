@@ -16,6 +16,7 @@ export class ModuleFreeze$Stationary extends Mode {
     // private /*not mapped: */ getCancelC0B(): boolean;
     // private packetEventHandler: EventHook<PacketEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     // private pitchOffset: ModuleFreeze$Stationary$FloatOffsetGenerator;
     // private yawOffset: ModuleFreeze$Stationary$FloatOffsetGenerator;
 }

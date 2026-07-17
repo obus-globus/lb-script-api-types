@@ -15,7 +15,6 @@ export class BlockScopeNode$VirtualBlockScopeNode extends BlockScopeNode impleme
     static cloneUninitialized<T extends JavaScriptNode>(paramnode: T, parammaterializedTags: Class<Tag>[]): T;
     static cloneUninitialized<T extends JavaScriptNode>(paramnodeArray: T[], parammaterializedTags: Class<Tag>[]): T[];
     static create(paramblock: JavaScriptNode, paramblockScopeSlot: JSFrameSlot, paramframeDescriptor: FrameDescriptor, paramparentSlot: JSFrameSlot, paramfunctionBlock: boolean, paramcaptureFunctionFrame: boolean, paramgeneratorFunctionBlock: boolean, paramhasParentBlock: boolean, paramstart: number, paramend: number): BlockScopeNode;
-    static createResumableNode(paramnode: ResumableNode, paramstateSlot: number): JavaScriptNode;
     static createVirtual(paramblock: JavaScriptNode, paramframeStart: number, paramframeEnd: number): BlockScopeNode;
     static findBlockScopeNode(paramnode: Node): Node;
     static reportLoopCount(paramnode: Node, paramcount: number): void;

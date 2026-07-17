@@ -47,7 +47,7 @@ export class YOLOv3Loss extends Loss {
     static softmaxCrossEntropyLoss(): SoftmaxCrossEntropyLoss;
     static softmaxCrossEntropyLoss(paramarg0: string): SoftmaxCrossEntropyLoss;
     static softmaxCrossEntropyLoss(paramarg0: string, paramarg1: number, paramarg2: number, paramarg3: boolean, paramarg4: boolean): SoftmaxCrossEntropyLoss;
-    constructor(arg0: YOLOv3Loss$Builder, arg1: any)
+    private constructor(arg0: YOLOv3Loss$Builder)
     // private anchors: number[];
     // private boxAttr: number;
     // private ignoreThreshold: number;

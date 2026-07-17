@@ -9,8 +9,6 @@ export class ModuleAutoDisable$DisableOn extends Enum<ModuleAutoDisable$DisableO
     static FLAG: ModuleAutoDisable$DisableOn;
     static WORLD_CHANGE: ModuleAutoDisable$DisableOn;
     static getEntries(): ModuleAutoDisable$DisableOn[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleAutoDisable$DisableOn;
     static values(): ModuleAutoDisable$DisableOn[];

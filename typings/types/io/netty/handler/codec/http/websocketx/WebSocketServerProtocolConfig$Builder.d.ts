@@ -4,8 +4,8 @@ import type { WebSocketDecoderConfig$Builder } from '../../../../../../io/netty/
 import type { WebSocketServerProtocolConfig } from '../../../../../../io/netty/handler/codec/http/websocketx/WebSocketServerProtocolConfig.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class WebSocketServerProtocolConfig$Builder extends Object {
-    constructor(arg0: WebSocketServerProtocolConfig, arg1: any)
-    constructor(arg0: string, arg1: string, arg2: boolean, arg3: number, arg4: number, arg5: boolean, arg6: WebSocketCloseStatus, arg7: boolean, arg8: WebSocketDecoderConfig, arg9: any)
+    private constructor(arg0: WebSocketServerProtocolConfig)
+    private constructor(arg0: string, arg1: string, arg2: boolean, arg3: number, arg4: number, arg5: boolean, arg6: WebSocketCloseStatus, arg7: boolean, arg8: WebSocketDecoderConfig)
     // private checkStartsWith: boolean;
     // private decoderConfig: WebSocketDecoderConfig;
     // private decoderConfigBuilder: WebSocketDecoderConfig$Builder;

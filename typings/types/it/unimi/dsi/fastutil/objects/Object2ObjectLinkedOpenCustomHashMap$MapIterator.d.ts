@@ -2,7 +2,6 @@ import type { Object2ObjectMap$Entry } from '../../../../../it/unimi/dsi/fastuti
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class Object2ObjectLinkedOpenCustomHashMap$MapIterator<ConsumerType extends unknown> extends Object {
     constructor(null_: Map<Object, Object>)
-    constructor(null_: Map<Object, Object>, arg1: Object, arg2: (Object | null)[])
     // private curr: number;
     // private index: number;
     // private next: number;

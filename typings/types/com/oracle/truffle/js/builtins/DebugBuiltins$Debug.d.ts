@@ -29,7 +29,6 @@ export class DebugBuiltins$Debug extends Enum<DebugBuiltins$Debug> implements Bu
     static systemProperty: DebugBuiltins$Debug;
     static toJavaString: DebugBuiltins$Debug;
     static typedArrayDetachBuffer: DebugBuiltins$Debug;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): DebugBuiltins$Debug;
     static values(): DebugBuiltins$Debug[];

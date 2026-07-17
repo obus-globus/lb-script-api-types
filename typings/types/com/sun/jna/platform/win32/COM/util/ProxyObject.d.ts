@@ -19,7 +19,6 @@ import type { InvocationHandler } from '../../../../../../../java/lang/reflect/I
 import type { Method } from '../../../../../../../java/lang/reflect/Method.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class ProxyObject extends Object implements IConnectionPoint, IDispatch_2, IRawDispatchHandle, InvocationHandler {
-    static invokeDefault(paramarg0: Object, paramarg1: Method, ...paramarg2: Object[]): Object;
     constructor(arg0: Class<Object>, arg1: IDispatch, arg2: ObjectFactory)
     // private factory: ObjectFactory;
     readonly rawDispatch: IDispatch;

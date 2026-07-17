@@ -18,7 +18,6 @@ import type { Short2IntFunction } from '../../../../../it/unimi/dsi/fastutil/sho
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Int2IntFunctions$PrimitiveFunction extends Object implements Int2IntFunction {
-    static identity(): (param0: number) => number;
     constructor(arg0: (param0: number) => number)
     // private function: (param0: number) => number;
     andThen<T extends unknown>(arg0: (param0: number) => T): (param0: number) => T;

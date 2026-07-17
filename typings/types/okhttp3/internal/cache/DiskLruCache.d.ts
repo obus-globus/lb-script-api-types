@@ -56,7 +56,7 @@ export class DiskLruCache extends Object implements Closeable, Flushable, Lockab
     close(): void;
     completeEdit(editor: DiskLruCache$Editor, success: boolean): void;
     delete(): void;
-    edit(key: string, expectedSequenceNumber: number): DiskLruCache$Editor | null;
+    edit(key: string, expectedSequenceNumber?: number): DiskLruCache$Editor | null;
     evictAll(): void;
     flush(): void;
     get(key: string): DiskLruCache$Snapshot | null;

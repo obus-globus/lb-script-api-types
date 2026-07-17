@@ -1,3 +1,4 @@
+import type { Continuation } from '../../../../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { FileValue } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/FileValue.d.ts'
 import type { EventHook } from '../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { GameTickEvent } from '../../../../../../../../net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts'
@@ -37,10 +38,12 @@ export class ModuleNotebot extends ClientModule {
     // private song: FileValue;
     // private tickHandler: EventHook<GameTickEvent>;
     // private checkRequirements(): boolean;
-    enabledEffect(): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    enabledEffect($completion: Continuation<void>): any;
     getPlayedNote(note: NbsNoteBlock): InstrumentNote;
     getRequiredInstruments(songData: SongData): NoteBlockInstrument[];
-    // private loadSongData(): SongData | null;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private loadSongData($completion: Continuation<SongData>): any;
     onDisabled(): void;
     // private removeProgressMessage(): void;
     sendNewProgressMessage(name: MutableComponent, progress: number, total: number): void;

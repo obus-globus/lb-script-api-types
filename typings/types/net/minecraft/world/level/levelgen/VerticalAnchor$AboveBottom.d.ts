@@ -7,11 +7,6 @@ export class VerticalAnchor$AboveBottom extends Record implements VerticalAnchor
     static BOTTOM: VerticalAnchor;
     static CODEC: Codec<VerticalAnchor$AboveBottom>;
     static TOP: VerticalAnchor;
-    static aboveBottom(paramoffset: number): VerticalAnchor;
-    static absolute(paramvalue: number): VerticalAnchor;
-    static belowTop(paramoffset: number): VerticalAnchor;
-    static bottom(): VerticalAnchor;
-    static top(): VerticalAnchor;
     constructor(offset: number)
     // private offset: number;
     equals(o: Object | null): boolean;

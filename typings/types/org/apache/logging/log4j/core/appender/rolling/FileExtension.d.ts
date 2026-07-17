@@ -15,7 +15,7 @@ export class FileExtension extends Enum<FileExtension> {
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): FileExtension;
     static values(): FileExtension[];
-    constructor(arg2: string, arg3: FileExtension)
+    private constructor(extension: string)
     readonly extension: string;
     createCompressAction(renameTo: string, compressedName: string, deleteSource: boolean, compressionLevel: number): Action;
     getExtension(): string;

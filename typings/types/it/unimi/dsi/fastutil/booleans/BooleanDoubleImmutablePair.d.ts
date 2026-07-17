@@ -1,11 +1,8 @@
 import type { BooleanDoublePair } from '../../../../../it/unimi/dsi/fastutil/booleans/BooleanDoublePair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
-import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BooleanDoubleImmutablePair extends Object implements BooleanDoublePair, Serializable {
-    static lexComparator(): (param0: BooleanDoublePair, param1: BooleanDoublePair) => number;
     static of(paramarg0: boolean, paramarg1: number): BooleanDoubleImmutablePair;
-    static of(paramarg0: boolean, paramarg1: number): BooleanDoublePair;
     constructor(arg0: boolean, arg1: number)
     // private left: boolean;
     // private right: number;

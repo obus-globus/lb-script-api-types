@@ -7,6 +7,7 @@ export class IsSelfBedMode extends Mode {
     static Companion: Tagged$Companion;
     protected constructor(name: string, parent: ModeValueGroup<any>)
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     isSelfBed(block: BedBlock, pos: BlockPos): boolean;
     shouldDefend(block: BedBlock, pos: BlockPos): boolean;
 }

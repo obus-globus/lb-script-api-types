@@ -1,4 +1,5 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { Continuation } from '../../../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { EventListener } from '../../../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
 import type { Command } from '../../../../../../../net/ccbluex/liquidbounce/features/command/Command.d.ts'
 import type { Command$Factory } from '../../../../../../../net/ccbluex/liquidbounce/features/command/Command$Factory.d.ts'
@@ -38,6 +39,7 @@ export class CommandServerInfo extends Object implements EventListener, Command$
     // private printHostingInformation(command: Command): void;
     // private printInformation(command: Command, detections: CommandServerInfo$DetectionType[]): void;
     // private printPluginInformation(command: Command): void;
-    // private runActiveDetection(command: Command, detectionTypes: CommandServerInfo$DetectionType[]): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private runActiveDetection(command: Command, detectionTypes: CommandServerInfo$DetectionType[], $completion: Continuation<void>): any;
     unregister(): void;
 }

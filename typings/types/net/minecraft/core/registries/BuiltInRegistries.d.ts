@@ -199,6 +199,5 @@ export class BuiltInRegistries extends Object implements BuiltInRegistriesAccess
     static acquireBootstrapRegistrationLookup<T extends unknown>(paramregistry: T[]): HolderGetter<T>;
     static bootStrap(): void;
     static createContents(): void;
-    static getWRITABLE_REGISTRY(): Object[][];
     constructor()
 }

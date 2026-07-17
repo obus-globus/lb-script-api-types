@@ -10,8 +10,6 @@ import type { BlockColors } from '../../../../../../../net/minecraft/client/colo
 export class SodiumRenderer extends Object implements Renderer {
     static BUFFERER: (param0: MutableQuadViewImpl) => void;
     static INSTANCE: SodiumRenderer;
-    static get(): Renderer;
-    static register(paramarg0: Renderer): void;
     private constructor()
     altModelBlockRenderer(arg0: boolean, arg1: boolean, arg2: BlockColors): AltModelBlockRenderer;
     mutableMesh(): MutableMesh;

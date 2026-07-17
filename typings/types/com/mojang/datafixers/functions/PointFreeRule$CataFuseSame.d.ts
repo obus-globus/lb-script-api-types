@@ -8,7 +8,6 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class PointFreeRule$CataFuseSame extends Enum<PointFreeRule$CataFuseSame> implements PointFreeRule$CompRewrite {
     static INSTANCE: PointFreeRule$CataFuseSame;
-    static together(...paramarg0: PointFreeRule$CompRewrite[]): PointFreeRule$CompRewrite;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): PointFreeRule$CataFuseSame;
     static values(): PointFreeRule$CataFuseSame[];

@@ -1,4 +1,3 @@
-import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Predicate } from '../../../../../../java/util/function/Predicate.d.ts'
 import type { Supplier } from '../../../../../../java/util/function/Supplier.d.ts'
@@ -155,7 +154,6 @@ export class Axolotl extends Animal implements Bucketable {
     static WILDCARD: ScoreHolder;
     static WILDCARD_NAME: string;
     static areAllEffectsAmbient(parameffects: MobEffectInstance[]): boolean;
-    static bucketMobPickup<T extends LivingEntity & Bucketable>(paramplayer: Player, paramhand: InteractionHand, parampickupEntity: T): Optional<InteractionResult>;
     static canGlideUsing(paramitemStack: ItemStack, paramslot: EquipmentSlot): boolean;
     static canUseGoldenDandelion(paramitemInHand: ItemStack, paramisBaby: boolean, paramcooldown: number, parammob: Mob): boolean;
     static checkAnimalSpawnRules(paramtype: EntityType<Animal>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
@@ -172,11 +170,9 @@ export class Axolotl extends Animal implements Bucketable {
     static getInputVector(paraminput: Vec3, paramspeed: number, paramyRot: number): Vec3;
     static getSpeedUpSecondsWhenFeeding(paramticksUntilAdult: number): number;
     static getViewScale(): number;
-    static loadDefaultDataFromBucketTag(paramentity: Mob, paramtag: CompoundTag): void;
     static makeAgeLockedParticle(paramlevel: Level, parammob: Mob, paramageLockParticleTimer: number, paramisAgeLocked: boolean): number;
     static onStopAttacking(paramlevel: ServerLevel, parambody: Axolotl, paramtarget: LivingEntity): void;
     static resetForwardDirectionOfRelativePortalPosition(paramoffsets: Vec3): Vec3;
-    static saveDefaultDataToBucketTag(paramentity: Mob, parambucket: ItemStack): void;
     static setAgeLocked(parammob: Mob, paramisAgedLocked: () => boolean, paramplayer: Player, paramitemInHand: ItemStack, paramsetAgeLockData: (param0: Mob) => void): void;
     static setViewScale(paramviewScale: number): void;
     constructor(type: EntityType<Axolotl>, level: Level)

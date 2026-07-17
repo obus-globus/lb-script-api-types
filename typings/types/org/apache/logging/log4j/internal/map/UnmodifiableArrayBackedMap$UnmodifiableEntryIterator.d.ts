@@ -3,7 +3,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../../../java/util/Iterator.d.ts'
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class UnmodifiableArrayBackedMap$UnmodifiableEntryIterator extends Object implements Iterator<Map$Entry<string, string>> {
-    constructor(null_: { [key: string]: any }, arg1: any)
+    private constructor(null_: { [key: string]: any })
     // private index: number;
     forEachRemaining(arg0: (param0: Map$Entry<string, string>) => void): void;
     hasNext(): boolean;

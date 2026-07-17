@@ -11,7 +11,6 @@ import type { EnchantmentEntityEffect } from '../../../../../../net/minecraft/wo
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class DamageEntity extends Record implements EnchantmentEntityEffect {
     static CODEC: MapCodec<DamageEntity>;
-    static bootstrap(paramregistry: MapCodec<EnchantmentEntityEffect>[]): MapCodec<EnchantmentEntityEffect>;
     constructor(minDamage: LevelBasedValue, maxDamage: LevelBasedValue, damageType: Holder<DamageType>)
     // private damageType: Holder<DamageType>;
     // private maxDamage: LevelBasedValue;

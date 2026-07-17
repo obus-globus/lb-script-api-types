@@ -9,7 +9,7 @@ export class RemovalCause extends Enum<RemovalCause> {
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): RemovalCause;
     static values(): RemovalCause[];
-    constructor(arg2: RemovalCause)
+    private constructor()
     wasEvicted(): boolean;
     name(): "EXPLICIT" | "REPLACED" | "COLLECTED" | "EXPIRED" | "SIZE";
 }

@@ -2,7 +2,6 @@ import type { IntStream } from '../../../../java/util/stream/IntStream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ByteSequence } from '../../../../org/graalvm/polyglot/io/ByteSequence.d.ts'
 export class ByteArraySequence extends Object implements ByteSequence {
-    static create(parambuffer: number[]): ByteSequence;
     constructor(buffer: number[], start: number, length: number)
     // private buffer: number[];
     // private hash: number;

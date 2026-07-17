@@ -10,6 +10,7 @@ export class FlyHycraftDamage extends Mode {
     // private damageTaken: boolean;
     // private packetHandler: EventHook<BlinkPacketEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private release: boolean;
     // private tickHandler: EventHook<GameTickEvent>;
     // private ticks: number;

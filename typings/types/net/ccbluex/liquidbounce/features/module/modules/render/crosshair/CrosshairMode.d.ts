@@ -8,6 +8,7 @@ export abstract class CrosshairMode extends Mode {
     constructor(name: string)
     // private cursorHandler: EventHook<OverlayRenderEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private showInThirdPerson: boolean;
     // private /*not mapped: */ getShowInThirdPerson(): boolean;
 }

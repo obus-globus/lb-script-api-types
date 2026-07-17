@@ -8,7 +8,6 @@ import type { ParticleResources } from '../../../../../../net/minecraft/client/p
 import type { ParticleOptions } from '../../../../../../net/minecraft/core/particles/ParticleOptions.d.ts'
 import type { ParticleType } from '../../../../../../net/minecraft/core/particles/ParticleType.d.ts'
 export class ParticleProviderRegistryImpl$DirectParticleProviderRegistry extends Record implements ParticleProviderRegistry {
-    static getInstance(): ParticleProviderRegistry;
     constructor(particleResources: ParticleResources)
     // private particleResources: ParticleResources;
     equals(arg0: Object | null): boolean;

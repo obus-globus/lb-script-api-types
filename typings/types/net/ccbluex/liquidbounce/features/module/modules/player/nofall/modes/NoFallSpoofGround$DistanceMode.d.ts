@@ -5,5 +5,7 @@ export abstract class NoFallSpoofGround$DistanceMode extends Mode {
     static Companion: Tagged$Companion;
     constructor(name: string)
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     readonly value: number;
+    getValue(): number;
 }

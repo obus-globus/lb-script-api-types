@@ -1,11 +1,8 @@
-import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Vec3i } from '../../../../../net/minecraft/core/Vec3i.d.ts'
 import type { FriendlyByteBuf } from '../../../../../net/minecraft/network/FriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
-import type { StreamDecoder } from '../../../../../net/minecraft/network/codec/StreamDecoder.d.ts'
-import type { StreamMemberEncoder } from '../../../../../net/minecraft/network/codec/StreamMemberEncoder.d.ts'
 import type { Packet } from '../../../../../net/minecraft/network/protocol/Packet.d.ts'
 import type { PacketType } from '../../../../../net/minecraft/network/protocol/PacketType.d.ts'
 import type { ServerGamePacketListener } from '../../../../../net/minecraft/network/protocol/game/ServerGamePacketListener.d.ts'
@@ -15,7 +12,6 @@ import type { StructureBlockEntity$UpdateType } from '../../../../../net/minecra
 import type { StructureMode } from '../../../../../net/minecraft/world/level/block/state/properties/StructureMode.d.ts'
 export class ServerboundSetStructureBlockPacket extends Object implements Packet<ServerGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundSetStructureBlockPacket>;
-    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(pos: BlockPos, updateType: StructureBlockEntity$UpdateType, mode: StructureMode, name: string, offset: BlockPos, size: Vec3i, mirror: Mirror, rotation: Rotation, data: string, ignoreEntities: boolean, strict: boolean, showAir: boolean, showBoundingBox: boolean, integrity: number, seed: number)
     readonly data: string;
     readonly ignoreEntities: boolean;

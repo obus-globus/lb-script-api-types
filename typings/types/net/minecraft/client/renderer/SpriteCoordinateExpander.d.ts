@@ -11,9 +11,6 @@ import type { Matrix4fc } from '../../../../org/joml/Matrix4fc.d.ts'
 import type { Vector3fc } from '../../../../org/joml/Vector3fc.d.ts'
 import type { MemoryStack } from '../../../../org/lwjgl/system/MemoryStack.d.ts'
 export class SpriteCoordinateExpander extends Object implements VertexConsumer, VertexBufferWriter {
-    static copyInto(paramarg0: VertexBufferWriter, paramarg1: MemoryStack, paramarg2: number, paramarg3: number, paramarg4: VertexFormat): void;
-    static of(paramarg0: VertexConsumer): VertexBufferWriter;
-    static tryOf(paramarg0: VertexConsumer): VertexBufferWriter;
     constructor(delegate: VertexConsumer, sprite: TextureAtlasSprite)
     // private canUseIntrinsics: boolean;
     // private delegate: VertexConsumer;

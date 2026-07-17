@@ -1,4 +1,3 @@
-import type { DefaultConstructorMarker } from '../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { DefaultBuiltIns$Companion } from '../../../../../../kotlin/reflect/jvm/internal/impl/builtins/DefaultBuiltIns$Companion.d.ts'
 import type { KotlinBuiltIns } from '../../../../../../kotlin/reflect/jvm/internal/impl/builtins/KotlinBuiltIns.d.ts'
 import type { PrimitiveType } from '../../../../../../kotlin/reflect/jvm/internal/impl/builtins/PrimitiveType.d.ts'
@@ -43,5 +42,4 @@ export class DefaultBuiltIns extends KotlinBuiltIns {
     static isUnsignedArrayType(paramarg0: KotlinType): boolean;
     constructor()
     constructor(arg0: boolean)
-    constructor(arg0: boolean, arg1: number, arg2: DefaultConstructorMarker)
 }

@@ -14,6 +14,6 @@ export class HttpPostStandardRequestDecoder$UrlEncodedDetector extends Object im
     static FIND_NON_NUL: ByteProcessor;
     static FIND_NUL: ByteProcessor;
     static FIND_SEMI_COLON: ByteProcessor;
-    constructor(arg0: any)
+    private constructor()
     process(arg0: number): boolean;
 }

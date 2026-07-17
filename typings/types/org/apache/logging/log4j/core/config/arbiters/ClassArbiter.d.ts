@@ -4,7 +4,7 @@ import type { ClassArbiter$Builder } from '../../../../../../../org/apache/loggi
 export class ClassArbiter extends Object implements Arbiter {
     static ELEMENT_TYPE: string;
     static newBuilder(): ClassArbiter$Builder;
-    constructor(arg0: string, arg1: any)
+    private constructor(className: string)
     // private className: string;
     isCondition(): boolean;
 }

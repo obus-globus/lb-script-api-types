@@ -13,4 +13,5 @@ export class NoSlowConsumeRelease extends Mode {
     constructor(parent: ModeValueGroup<any>)
     // private onNetworkTick: EventHook<PlayerNetworkMovementTickEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
 }

@@ -4,4 +4,5 @@ export class NoFallSpoofGround$Smart extends NoFallSpoofGround$DistanceMode {
     static Companion: Tagged$Companion;
     static INSTANCE: NoFallSpoofGround$Smart;
     readonly value: number;
+    getValue(): number;
 }

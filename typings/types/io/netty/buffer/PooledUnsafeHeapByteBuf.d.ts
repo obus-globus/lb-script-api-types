@@ -1,11 +1,9 @@
 import type { ByteBuf } from '../../../io/netty/buffer/ByteBuf.d.ts'
 import type { PooledHeapByteBuf } from '../../../io/netty/buffer/PooledHeapByteBuf.d.ts'
 import type { SwappedByteBuf } from '../../../io/netty/buffer/SwappedByteBuf.d.ts'
-import type { Recycler } from '../../../io/netty/util/Recycler.d.ts'
 import type { ObjectPool$Handle } from '../../../io/netty/util/internal/ObjectPool$Handle.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 export class PooledUnsafeHeapByteBuf extends PooledHeapByteBuf {
-    constructor(arg0: ObjectPool$Handle<Object>, arg1: number, arg2: Recycler<PooledUnsafeHeapByteBuf>)
+    private constructor(arg0: ObjectPool$Handle<PooledUnsafeHeapByteBuf>, arg1: number)
     _getByte(arg0: number): number;
     _getInt(arg0: number): number;
     _getIntLE(arg0: number): number;

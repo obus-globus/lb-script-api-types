@@ -13,7 +13,6 @@ export class AsyncDisposableStackPrototypeBuiltins$AsyncDisposableStackPrototype
     static disposed: AsyncDisposableStackPrototypeBuiltins$AsyncDisposableStackPrototype;
     static move: AsyncDisposableStackPrototypeBuiltins$AsyncDisposableStackPrototype;
     static use: AsyncDisposableStackPrototypeBuiltins$AsyncDisposableStackPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): AsyncDisposableStackPrototypeBuiltins$AsyncDisposableStackPrototype;
     static values(): AsyncDisposableStackPrototypeBuiltins$AsyncDisposableStackPrototype[];

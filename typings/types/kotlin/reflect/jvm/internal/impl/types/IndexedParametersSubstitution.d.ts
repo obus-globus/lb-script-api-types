@@ -1,4 +1,3 @@
-import type { DefaultConstructorMarker } from '../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { TypeParameterDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/TypeParameterDescriptor.d.ts'
 import type { KotlinType } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/KotlinType.d.ts'
 import type { TypeProjection } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeProjection.d.ts'
@@ -8,7 +7,6 @@ export class IndexedParametersSubstitution extends TypeSubstitution {
     static Companion: TypeSubstitution$Companion;
     static EMPTY: TypeSubstitution;
     constructor(arg0: TypeParameterDescriptor[], arg1: TypeProjection[], arg2: boolean)
-    constructor(arg0: TypeParameterDescriptor[], arg1: TypeProjection[], arg2: boolean, arg3: number, arg4: DefaultConstructorMarker)
     constructor(arg0: TypeParameterDescriptor[], arg1: TypeProjection[])
     // private approximateContravariantCapturedTypes: boolean;
     readonly arguments: TypeProjection[];

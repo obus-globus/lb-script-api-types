@@ -13,6 +13,7 @@ export class SupportFeature extends ToggleableValueGroup {
     constructor(placer: BlockPlacer)
     readonly blockedPositions: BlockPos[];
     readonly blocks: Block[];
+    getBlocks(): Block[];
     readonly chronometer: Chronometer;
     readonly delay: number;
     // private depth: number;

@@ -7,7 +7,6 @@ export class RealmsError$AuthenticationError extends Record implements RealmsErr
     static ERROR_CODE: number;
     static LOGGER: Logger;
     static NO_MESSAGE: Component;
-    static parse(paramhttpCode: number, parampayload: string): RealmsError;
     constructor(message: string)
     // private message: string;
     equals(o: Object | null): boolean;

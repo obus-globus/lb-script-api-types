@@ -6,4 +6,5 @@ export abstract class PredictFeature$CalculationMode extends Mode {
     constructor(name: string, modeValueGroup: ModeValueGroup<PredictFeature$CalculationMode>)
     // private modeValueGroup: ModeValueGroup<PredictFeature$CalculationMode>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
 }

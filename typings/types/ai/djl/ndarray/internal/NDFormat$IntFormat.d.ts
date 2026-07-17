@@ -5,7 +5,7 @@ import type { Number } from '../../../../java/lang/Number.d.ts'
 export class NDFormat$IntFormat extends NDFormat {
     static format(paramarg0: NDArray, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number): string;
     static format(paramarg0: NDArray, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: boolean): string;
-    constructor(arg0: any)
+    private constructor()
     // private exponential: boolean;
     // private precision: number;
     // private totalLength: number;

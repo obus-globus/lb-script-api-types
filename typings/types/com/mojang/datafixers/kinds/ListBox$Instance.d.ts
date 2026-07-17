@@ -4,14 +4,12 @@ import type { K1 } from '../../../../com/mojang/datafixers/kinds/K1.d.ts'
 import type { ListBox$Instance$Mu } from '../../../../com/mojang/datafixers/kinds/ListBox$Instance$Mu.d.ts'
 import type { ListBox$Mu } from '../../../../com/mojang/datafixers/kinds/ListBox$Mu.d.ts'
 import type { Traversable } from '../../../../com/mojang/datafixers/kinds/Traversable.d.ts'
-import type { Traversable$Mu } from '../../../../com/mojang/datafixers/kinds/Traversable$Mu.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class ListBox$Instance extends Enum<ListBox$Instance> implements Traversable<ListBox$Mu, ListBox$Instance$Mu> {
     static INSTANCE: ListBox$Instance;
-    static unbox<F extends K1, Mu extends Traversable$Mu>(paramarg0: App<Mu, F>): Traversable<F, Mu>;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ListBox$Instance;
     static values(): ListBox$Instance[];

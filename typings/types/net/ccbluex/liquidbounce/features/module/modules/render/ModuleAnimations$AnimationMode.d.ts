@@ -12,6 +12,7 @@ export abstract class ModuleAnimations$AnimationMode extends Mode {
     static Companion: Tagged$Companion;
     constructor(name: string)
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     protected applySwingOffset(matrices: PoseStack, arm: HumanoidArm, swingProgress: number): void;
     transform(matrices: PoseStack, arm: HumanoidArm, equipProgress: number, swingProgress: number): void;
 }

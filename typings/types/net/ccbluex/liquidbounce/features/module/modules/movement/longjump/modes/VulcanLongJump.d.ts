@@ -17,6 +17,7 @@ export class VulcanLongJump extends Mode {
     // private jumpingSequence: number[];
     // private packetHandler: EventHook<PacketEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private receivedSetback: boolean;
     // private repeatable: EventHook<GameTickEvent>;
     // private started: boolean;

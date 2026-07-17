@@ -84,7 +84,7 @@ export class Http2Connection extends Object implements Closeable, Lockable {
     sendDegradedPingLater(): void;
     setSettings(settings: Settings): void;
     shutdown(statusCode: ErrorCode): void;
-    start(sendConnectionPreface: boolean): void;
+    start(sendConnectionPreface?: boolean): void;
     updateConnectionFlowControl(read: number): void;
     writeData(streamId: number, outFinished: boolean, buffer: Buffer | null, byteCount: number): void;
     writeHeaders(streamId: number, outFinished: boolean, alternating: Header[]): void;

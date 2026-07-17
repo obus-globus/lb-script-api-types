@@ -21,9 +21,6 @@ export class DebugLevelSource extends ChunkGenerator implements DebugLevelSource
     static CODEC: MapCodec<DebugLevelSource>;
     static HEIGHT: number;
     static getBlockStateFor(paramworldX: number, paramworldZ: number): BlockState;
-    static setALL_BLOCKS(paramarg0: BlockState[]): void;
-    static setGRID_HEIGHT(paramarg0: number): void;
-    static setGRID_WIDTH(paramarg0: number): void;
     constructor(plains: Holder$Reference<Biome>)
     addDebugScreenInfo(result: string[], randomState: RandomState, feetPos: BlockPos): void;
     applyBiomeDecoration(level: WorldGenLevel, chunk: ChunkAccess, structureManager: StructureManager): void;

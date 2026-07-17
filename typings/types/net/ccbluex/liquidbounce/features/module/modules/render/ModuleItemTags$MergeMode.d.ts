@@ -9,8 +9,6 @@ export class ModuleItemTags$MergeMode extends Enum<ModuleItemTags$MergeMode> imp
     static Companion: Tagged$Companion;
     static NONE: ModuleItemTags$MergeMode;
     static getEntries(): ModuleItemTags$MergeMode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleItemTags$MergeMode;
     static values(): ModuleItemTags$MergeMode[];

@@ -16,7 +16,6 @@ import type { Level } from '../../../../../../net/minecraft/world/level/Level.d.
 import type { BlockState } from '../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class FabricModelAccess extends Object implements PlatformModelAccess {
     static INSTANCE: PlatformModelAccess;
-    static getInstance(): PlatformModelAccess;
     constructor()
     collectPartsOf(arg0: BlockStateModel, arg1: BlockAndTintGetter, arg2: BlockPos, arg3: BlockState, arg4: RandomSource, arg5: ListStorage): BlockStateModelPart[];
     createMutableColorProvider(): ColorProvider<BlockState>;

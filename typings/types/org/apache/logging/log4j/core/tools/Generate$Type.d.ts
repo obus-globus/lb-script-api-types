@@ -7,7 +7,7 @@ export class Generate$Type extends Enum<Generate$Type> {
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): Generate$Type;
     static values(): Generate$Type[];
-    constructor(arg2: any)
+    private constructor()
     constructor(): string;
     declaration(): string;
     generator(): Class<Object>;

@@ -10,10 +10,8 @@ export class InputBind$Modifier extends Enum<InputBind$Modifier> implements Tagg
     static SUPER: InputBind$Modifier;
     static fromRawValue(modifiers: number): InputBind$Modifier[];
     static getEntries(): InputBind$Modifier[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
     static of(keyCode: number): InputBind$Modifier | null;
     static of(string: string | null): InputBind$Modifier | null;
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): InputBind$Modifier;
     static values(): InputBind$Modifier[];

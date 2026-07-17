@@ -6,5 +6,6 @@ export class TextureMode$Custom extends TextureMode {
     static Companion: Tagged$Companion;
     constructor(parent: ModeValueGroup<any>)
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     readonly texture: DynamicTexture | null;
 }

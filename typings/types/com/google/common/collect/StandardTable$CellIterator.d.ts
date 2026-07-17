@@ -5,7 +5,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class StandardTable$CellIterator extends Object implements Iterator<Table$Cell<R, C, V>> {
-    constructor(null_: StandardTable<Object, Object, Object>, arg1: any)
+    private constructor(null_: StandardTable<Object, Object, Object>)
     // private columnIterator: Iterator<Map$Entry<C, V>>;
     // private rowEntry: Map$Entry<R, Map<C, V>>;
     // private rowIterator: Iterator<Map$Entry<R, Map<C, V>>>;

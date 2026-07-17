@@ -1,11 +1,8 @@
 import type { LongCharPair } from '../../../../../it/unimi/dsi/fastutil/longs/LongCharPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
-import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class LongCharMutablePair extends Object implements LongCharPair, Serializable {
-    static lexComparator(): (param0: LongCharPair, param1: LongCharPair) => number;
     static of(paramarg0: number, paramarg1: string): LongCharMutablePair;
-    static of(paramarg0: number, paramarg1: string): LongCharPair;
     constructor(arg0: number, arg1: string)
     // private left: number;
     // private right: string;

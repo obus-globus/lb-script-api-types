@@ -8,8 +8,6 @@ export class NormalPurchaseMode$ActionType extends Enum<NormalPurchaseMode$Actio
     static PICK_UP: NormalPurchaseMode$ActionType;
     static THROW: NormalPurchaseMode$ActionType;
     static getEntries(): NormalPurchaseMode$ActionType[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): NormalPurchaseMode$ActionType;
     static values(): NormalPurchaseMode$ActionType[];

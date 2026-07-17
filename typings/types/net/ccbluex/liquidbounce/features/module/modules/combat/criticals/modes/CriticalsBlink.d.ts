@@ -15,6 +15,7 @@ export class CriticalsBlink extends Mode {
     /*not mapped: */ isInState(): boolean;
     // private nextDelay: number;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private range: number;
     // private /*not mapped: */ getRange(): number;
     // private tickHandler: EventHook<GameTickEvent>;

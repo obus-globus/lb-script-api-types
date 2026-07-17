@@ -9,7 +9,7 @@ export class TreeRangeSet<C extends Comparable<Object>> extends AbstractRangeSet
     static create<C extends Comparable<Object>>(): TreeRangeSet<C>;
     static create<C extends Comparable<Object>>(paramrangeSet: RangeSet<C>): TreeRangeSet<C>;
     static create<C extends Comparable<Object>>(paramranges: Range<C>[]): TreeRangeSet<C>;
-    constructor(arg0: Map<Object, Object>, arg1: any)
+    private constructor(rangesByLowerCut: Map<Cut<C>, Range<C>>)
     // private asDescendingSetOfRanges: Range<C>[];
     // private asRanges: Range<C>[];
     // private complement: RangeSet<C>;

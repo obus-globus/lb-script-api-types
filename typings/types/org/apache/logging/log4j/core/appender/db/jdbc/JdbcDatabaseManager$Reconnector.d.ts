@@ -31,7 +31,7 @@ export class JdbcDatabaseManager$Reconnector extends Log4jThread {
     static sleep(paramarg0: number, paramarg1: number): void;
     static startVirtualThread(paramarg0: () => void): Thread;
     static yield(): void;
-    constructor(null_: JdbcDatabaseManager, arg1: any)
+    private constructor(null_: JdbcDatabaseManager)
     // private latch: CountDownLatch;
     // private shutdown: boolean;
     latch(): void;

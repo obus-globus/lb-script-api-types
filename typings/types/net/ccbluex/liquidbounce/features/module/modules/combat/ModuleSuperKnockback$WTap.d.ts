@@ -12,6 +12,7 @@ export class ModuleSuperKnockback$WTap extends Mode {
     // private inSequence: boolean;
     // private movementHandler: EventHook<MovementInputEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     // private ticksUntilAllowedMovement: { start: number; endInclusive: number; step: number };
     // private /*not mapped: */ getTicksUntilAllowedMovement(): { start: number; endInclusive: number; step: number };
     // private ticksUntilMovementBlock: { start: number; endInclusive: number; step: number };

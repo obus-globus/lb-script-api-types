@@ -4,7 +4,7 @@ import type { Interval } from '../../../../../../com/llamalad7/mixinextras/lib/a
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class CodePointCharStream extends Object implements CharStream {
     static fromBuffer(paramarg0: CodePointBuffer, paramarg1: string): CodePointCharStream;
-    constructor(arg0: number, arg1: number, arg2: string, arg3: any)
+    private constructor(arg0: number, arg1: number, arg2: string)
     // private name: string;
     // private position: number;
     // private size: number;

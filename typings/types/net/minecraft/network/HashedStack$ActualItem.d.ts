@@ -12,7 +12,6 @@ import type { ItemStack } from '../../../net/minecraft/world/item/ItemStack.d.ts
 export class HashedStack$ActualItem extends Record implements HashedStack {
     static EMPTY: HashedStack;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, HashedStack$ActualItem>;
-    static create(paramitemStack: ItemStack, paramhasher: (param0: TypedDataComponent<Object>) => number): HashedStack;
     constructor(item: Holder<Item>, count: number, components: HashedPatchMap)
     // private components: HashedPatchMap;
     // private count: number;

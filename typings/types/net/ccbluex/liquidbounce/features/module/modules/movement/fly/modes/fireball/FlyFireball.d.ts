@@ -6,6 +6,7 @@ export class FlyFireball extends Mode {
     static Companion: Tagged$Companion;
     static INSTANCE: FlyFireball;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     readonly slotResetDelay: { start: number; endInclusive: number; step: number };
     readonly technique: ModeValueGroup<Mode>;
     readonly trigger: ModeValueGroup<Mode>;

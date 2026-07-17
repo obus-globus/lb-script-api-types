@@ -18,6 +18,7 @@ export class ModuleXRay extends ClientModule {
     static INSTANCE: ModuleXRay;
     readonly backgroundOpacity: number;
     readonly blocks: Block[];
+    getBlocks(): Block[];
     // private defaultBlocks: Block[];
     // private exposedOnly: boolean;
     // private /*not mapped: */ getExposedOnly(): boolean;

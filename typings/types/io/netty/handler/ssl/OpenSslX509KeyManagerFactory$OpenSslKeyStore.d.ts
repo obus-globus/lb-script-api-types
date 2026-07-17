@@ -9,5 +9,5 @@ export class OpenSslX509KeyManagerFactory$OpenSslKeyStore extends KeyStore {
     static getInstance(paramarg0: string): KeyStore;
     static getInstance(paramarg0: string, paramarg1: string): KeyStore;
     static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): KeyStore;
-    constructor(arg0: X509Certificate[], arg1: boolean, arg2: any)
+    private constructor(arg0: X509Certificate[], arg1: boolean)
 }

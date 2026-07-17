@@ -6,7 +6,6 @@ import type { Viewport } from '../../../../../../../../net/caffeinemc/mods/sodiu
 import type { Level } from '../../../../../../../../net/minecraft/world/level/Level.d.ts'
 export abstract class AbstractTraversableBiForest<T extends TraversableTree> extends BaseBiForest<T> implements TraversableForest<T> {
     static checkApplicable(paramarg0: number, paramarg1: Level): boolean;
-    static createTraversableForest(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: Level): TraversableForest<TraversableTree>;
     constructor(arg0: number, arg1: number, arg2: number, arg3: number)
     addPatch(arg0: number, arg1: number, arg2: number): boolean;
     prepareForTraversal(): void;

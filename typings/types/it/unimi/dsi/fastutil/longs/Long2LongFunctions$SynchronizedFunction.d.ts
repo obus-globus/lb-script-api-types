@@ -20,7 +20,6 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Long2LongFunctions$SynchronizedFunction extends Object implements Long2LongFunction, Serializable {
-    static identity(): (param0: number) => number;
     constructor(arg0: (param0: number) => number)
     constructor(arg0: (param0: number) => number, arg1: Object)
     // private function: (param0: number) => number;

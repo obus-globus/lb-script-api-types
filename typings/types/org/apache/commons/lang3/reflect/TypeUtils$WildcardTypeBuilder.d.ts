@@ -3,7 +3,7 @@ import type { WildcardType } from '../../../../../java/lang/reflect/WildcardType
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Builder } from '../../../../../org/apache/commons/lang3/builder/Builder.d.ts'
 export class TypeUtils$WildcardTypeBuilder extends Object implements Builder<WildcardType> {
-    constructor(arg0: any)
+    private constructor()
     // private lowerBounds: Type[];
     // private upperBounds: Type[];
     build(): WildcardType;

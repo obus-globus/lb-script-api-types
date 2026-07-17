@@ -11,7 +11,6 @@ export class XmlStreamWriter extends Writer {
     constructor(arg0: File, arg1: string)
     constructor(arg0: OutputStream)
     constructor(arg0: OutputStream, arg1: string)
-    constructor(arg0: XmlStreamWriter$Builder, arg1: any)
     // private charset: Charset;
     // private defaultCharset: Charset;
     // private out: OutputStream;

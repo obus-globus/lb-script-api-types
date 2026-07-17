@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
-import type { DefaultConstructorMarker } from '../../../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { ClassDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
 import type { PossiblyExternalAnnotationDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/descriptors/PossiblyExternalAnnotationDescriptor.d.ts'
 import type { LazyJavaResolverContext } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/lazy/LazyJavaResolverContext.d.ts'
@@ -16,7 +15,6 @@ import type { NullableLazyValue } from '../../../../../../../../../kotlin/reflec
 import type { SimpleType } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/types/SimpleType.d.ts'
 export class LazyJavaAnnotationDescriptor extends Object implements PossiblyExternalAnnotationDescriptor {
     constructor(arg0: LazyJavaResolverContext, arg1: JavaAnnotation, arg2: boolean)
-    constructor(arg0: LazyJavaResolverContext, arg1: JavaAnnotation, arg2: boolean, arg3: number, arg4: DefaultConstructorMarker)
     // private allValueArguments$delegate: NotNullLazyValue<Object>;
     // private c: LazyJavaResolverContext;
     // private fqName$delegate: NullableLazyValue<Object>;

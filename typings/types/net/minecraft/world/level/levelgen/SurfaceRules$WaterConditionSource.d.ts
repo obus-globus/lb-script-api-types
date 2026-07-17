@@ -7,7 +7,6 @@ import type { SurfaceRules$ConditionSource } from '../../../../../net/minecraft/
 import type { SurfaceRules$Context } from '../../../../../net/minecraft/world/level/levelgen/SurfaceRules$Context.d.ts'
 export class SurfaceRules$WaterConditionSource extends Record implements SurfaceRules$ConditionSource {
     static CODEC: Codec<SurfaceRules$ConditionSource>;
-    static bootstrap(paramregistry: MapCodec<SurfaceRules$ConditionSource>[]): MapCodec<SurfaceRules$ConditionSource>;
     private constructor(offset: number, surfaceDepthMultiplier: number, addStoneDepth: boolean)
     // private addStoneDepth: boolean;
     // private offset: number;

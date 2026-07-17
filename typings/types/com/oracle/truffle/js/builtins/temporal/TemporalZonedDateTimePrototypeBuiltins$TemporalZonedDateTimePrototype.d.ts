@@ -55,7 +55,6 @@ export class TemporalZonedDateTimePrototypeBuiltins$TemporalZonedDateTimePrototy
     static withTimeZone: TemporalZonedDateTimePrototypeBuiltins$TemporalZonedDateTimePrototype;
     static year: TemporalZonedDateTimePrototypeBuiltins$TemporalZonedDateTimePrototype;
     static yearOfWeek: TemporalZonedDateTimePrototypeBuiltins$TemporalZonedDateTimePrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): TemporalZonedDateTimePrototypeBuiltins$TemporalZonedDateTimePrototype;
     static values(): TemporalZonedDateTimePrototypeBuiltins$TemporalZonedDateTimePrototype[];

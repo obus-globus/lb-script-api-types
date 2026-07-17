@@ -31280,6 +31280,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.render.ClientUniformDefine": typeof import("../types/net/ccbluex/liquidbounce/render/ClientUniformDefine").ClientUniformDefine;
     "net.ccbluex.liquidbounce.render.ClientVertexFormats": typeof import("../types/net/ccbluex/liquidbounce/render/ClientVertexFormats").ClientVertexFormats;
     "net.ccbluex.liquidbounce.render.FontFace": typeof import("../types/net/ccbluex/liquidbounce/render/FontFace").FontFace;
+    "net.ccbluex.liquidbounce.render.FontManager": typeof import("../types/net/ccbluex/liquidbounce/render/FontManager").FontManager;
     "net.ccbluex.liquidbounce.render.GenericColorMode": typeof import("../types/net/ccbluex/liquidbounce/render/GenericColorMode").GenericColorMode;
     "net.ccbluex.liquidbounce.render.GenericDistanceHSBColorMode": typeof import("../types/net/ccbluex/liquidbounce/render/GenericDistanceHSBColorMode").GenericDistanceHSBColorMode;
     "net.ccbluex.liquidbounce.render.GenericDistanceHSBColorMode$Companion": typeof import("../types/net/ccbluex/liquidbounce/render/GenericDistanceHSBColorMode$Companion").GenericDistanceHSBColorMode$Companion;
@@ -47951,7 +47952,6 @@ interface JavaTypeRegistry {
     "org.joml.Vector4i": typeof import("../types/org/joml/Vector4i").Vector4i;
     "org.joml.Vector4iKt": typeof import("../types/org/joml/Vector4iKt").Vector4iKt;
     "org.joml.sampling.BestCandidateSampling": typeof import("../types/org/joml/sampling/BestCandidateSampling").BestCandidateSampling;
-    "org.joml.sampling.BestCandidateSampling$1": typeof import("../types/org/joml/sampling/BestCandidateSampling$1").BestCandidateSampling$1;
     "org.joml.sampling.BestCandidateSampling$Cube": typeof import("../types/org/joml/sampling/BestCandidateSampling$Cube").BestCandidateSampling$Cube;
     "org.joml.sampling.BestCandidateSampling$Disk": typeof import("../types/org/joml/sampling/BestCandidateSampling$Disk").BestCandidateSampling$Disk;
     "org.joml.sampling.BestCandidateSampling$IntHolder": typeof import("../types/org/joml/sampling/BestCandidateSampling$IntHolder").BestCandidateSampling$IntHolder;

@@ -12,7 +12,6 @@ export class SharedArrayBufferPrototypeBuiltins$SharedArrayBufferPrototype exten
     static growable: SharedArrayBufferPrototypeBuiltins$SharedArrayBufferPrototype;
     static maxByteLength: SharedArrayBufferPrototypeBuiltins$SharedArrayBufferPrototype;
     static slice: SharedArrayBufferPrototypeBuiltins$SharedArrayBufferPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): SharedArrayBufferPrototypeBuiltins$SharedArrayBufferPrototype;
     static values(): SharedArrayBufferPrototypeBuiltins$SharedArrayBufferPrototype[];

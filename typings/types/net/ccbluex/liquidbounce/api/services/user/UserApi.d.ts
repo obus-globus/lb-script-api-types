@@ -1,4 +1,5 @@
 import type { UUID } from '../../../../../../java/util/UUID.d.ts'
+import type { Continuation } from '../../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { BaseApi } from '../../../../../../net/ccbluex/liquidbounce/api/core/BaseApi.d.ts'
 import type { OAuthSession } from '../../../../../../net/ccbluex/liquidbounce/api/models/auth/OAuthSession.d.ts'
 import type { Cosmetic } from '../../../../../../net/ccbluex/liquidbounce/api/models/cosmetics/Cosmetic.d.ts'
@@ -10,7 +11,10 @@ import type { UserInformation } from '../../../../../../net/ccbluex/liquidbounce
  */
 export class UserApi extends BaseApi {
     static INSTANCE: UserApi;
-    getCosmetics(session: OAuthSession): Cosmetic[];
-    getUserInformation(session: OAuthSession): UserInformation;
-    transferTemporaryOwnership(session: OAuthSession, uuid: UUID): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    getCosmetics(session: OAuthSession, $completion: Continuation<Cosmetic[]>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    getUserInformation(session: OAuthSession, $completion: Continuation<UserInformation>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    transferTemporaryOwnership(session: OAuthSession, uuid: UUID, $completion: Continuation<void>): any;
 }

@@ -8,4 +8,5 @@ export class ModuleTargetStrafe$InputMode extends Mode {
     static INSTANCE: ModuleTargetStrafe$InputMode;
     // private inputHandler: EventHook<MovementInputEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
 }

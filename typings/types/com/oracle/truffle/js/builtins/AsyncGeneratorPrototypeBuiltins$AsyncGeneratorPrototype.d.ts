@@ -10,7 +10,6 @@ export class AsyncGeneratorPrototypeBuiltins$AsyncGeneratorPrototype extends Enu
     static next: AsyncGeneratorPrototypeBuiltins$AsyncGeneratorPrototype;
     static return_: AsyncGeneratorPrototypeBuiltins$AsyncGeneratorPrototype;
     static throw_: AsyncGeneratorPrototypeBuiltins$AsyncGeneratorPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): AsyncGeneratorPrototypeBuiltins$AsyncGeneratorPrototype;
     static values(): AsyncGeneratorPrototypeBuiltins$AsyncGeneratorPrototype[];

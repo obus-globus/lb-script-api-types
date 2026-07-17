@@ -9,7 +9,6 @@ import type { SurfaceRules$ConditionSource } from '../../../../../net/minecraft/
 import type { SurfaceRules$Context } from '../../../../../net/minecraft/world/level/levelgen/SurfaceRules$Context.d.ts'
 export class SurfaceRules$BiomeConditionSource extends Record implements SurfaceRules$ConditionSource {
     static CODEC: Codec<SurfaceRules$ConditionSource>;
-    static bootstrap(paramregistry: MapCodec<SurfaceRules$ConditionSource>[]): MapCodec<SurfaceRules$ConditionSource>;
     private constructor(biomes: Holder<Biome>[])
     // private biomes: Holder<Biome>[];
     apply(ruleContext: SurfaceRules$Context): SurfaceRules$Condition;

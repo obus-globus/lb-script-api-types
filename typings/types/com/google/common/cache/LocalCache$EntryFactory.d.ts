@@ -1,5 +1,4 @@
 import type { LocalCache$Segment } from '../../../../com/google/common/cache/LocalCache$Segment.d.ts'
-import type { LocalCache$ValueReference } from '../../../../com/google/common/cache/LocalCache$ValueReference.d.ts'
 import type { ReferenceEntry } from '../../../../com/google/common/cache/ReferenceEntry.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -16,7 +15,7 @@ export class LocalCache$EntryFactory extends Enum<LocalCache$EntryFactory> {
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): LocalCache$EntryFactory;
     static values(): LocalCache$EntryFactory[];
-    constructor(arg2: LocalCache$ValueReference<Object, Object>)
+    private constructor()
     copyAccessEntry<K extends unknown, V extends unknown>(original: ReferenceEntry<K, V>, newEntry: ReferenceEntry<K, V>): void;
     copyEntry<K extends unknown, V extends unknown>(segment: LocalCache$Segment<K, V>, original: ReferenceEntry<K, V>, newNext: ReferenceEntry<K, V>, key: K): ReferenceEntry<K, V>;
     copyWriteEntry<K extends unknown, V extends unknown>(original: ReferenceEntry<K, V>, newEntry: ReferenceEntry<K, V>): void;

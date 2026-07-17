@@ -11,7 +11,6 @@ import type { EnchantmentEntityEffect } from '../../../../../../net/minecraft/wo
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class ApplyMobEffect extends Record implements EnchantmentEntityEffect {
     static CODEC: MapCodec<ApplyMobEffect>;
-    static bootstrap(paramregistry: MapCodec<EnchantmentEntityEffect>[]): MapCodec<EnchantmentEntityEffect>;
     constructor(toApply: Holder<MobEffect>[], minDuration: LevelBasedValue, maxDuration: LevelBasedValue, minAmplifier: LevelBasedValue, maxAmplifier: LevelBasedValue)
     // private maxAmplifier: LevelBasedValue;
     // private maxDuration: LevelBasedValue;

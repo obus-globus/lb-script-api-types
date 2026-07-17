@@ -10,5 +10,4 @@ export class Base16OutputStream extends BaseNCodecOutputStream<Base16, Base16Out
     constructor(arg0: OutputStream, arg1: boolean)
     constructor(arg0: OutputStream, arg1: boolean, arg2: boolean)
     constructor(arg0: OutputStream, arg1: boolean, arg2: boolean, arg3: CodecPolicy)
-    constructor(arg0: Base16OutputStream$Builder, arg1: any)
 }

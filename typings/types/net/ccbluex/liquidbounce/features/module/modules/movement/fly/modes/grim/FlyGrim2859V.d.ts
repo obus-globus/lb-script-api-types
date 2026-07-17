@@ -18,6 +18,7 @@ export class FlyGrim2859V extends Mode {
     static INSTANCE: FlyGrim2859V;
     readonly movementPacketsPre: EventHook<PlayerNetworkMovementTickEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     pos: Vec3 | null;
     readonly tickHandler: EventHook<PlayerTickEvent>;
     ticks: number;

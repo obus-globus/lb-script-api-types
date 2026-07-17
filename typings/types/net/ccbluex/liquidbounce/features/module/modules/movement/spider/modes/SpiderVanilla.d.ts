@@ -9,5 +9,6 @@ export class SpiderVanilla extends Mode {
     // private motion: number;
     // private /*not mapped: */ getMotion(): number;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     readonly repeatable: EventHook<GameTickEvent>;
 }

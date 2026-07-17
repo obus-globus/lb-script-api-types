@@ -5,7 +5,7 @@ import type { ObservableInputStream } from '../../../../../org/apache/commons/io
 export class MessageDigestInputStream extends ObservableInputStream {
     static builder(): MessageDigestInputStream$Builder;
     static nullInputStream(): InputStream;
-    constructor(arg0: MessageDigestInputStream$Builder, arg1: any)
+    private constructor(arg0: MessageDigestInputStream$Builder)
     readonly messageDigest: MessageDigest;
     getMessageDigest(): MessageDigest;
 }

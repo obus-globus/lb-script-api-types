@@ -15,6 +15,7 @@ export class ModuleStep$Instant extends Mode {
     // private packetType: MovePacketType;
     // private /*not mapped: */ getPacketType(): MovePacketType;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     // private simulateJumpOrder: { start: number; endInclusive: number; step: number };
     // private /*not mapped: */ getSimulateJumpOrder(): { start: number; endInclusive: number; step: number };
     // private stepHandler: EventHook<PlayerStepEvent>;

@@ -21,4 +21,5 @@ export class SpiderPolar29thMarch2025 extends Mode {
     // private jumpHeight: number;
     // private /*not mapped: */ getJumpHeight(): number;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
 }

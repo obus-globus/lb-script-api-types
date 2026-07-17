@@ -30,7 +30,6 @@ export class TemporalDurationPrototypeBuiltins$TemporalDurationPrototype extends
     static weeks: TemporalDurationPrototypeBuiltins$TemporalDurationPrototype;
     static with: TemporalDurationPrototypeBuiltins$TemporalDurationPrototype;
     static years: TemporalDurationPrototypeBuiltins$TemporalDurationPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): TemporalDurationPrototypeBuiltins$TemporalDurationPrototype;
     static values(): TemporalDurationPrototypeBuiltins$TemporalDurationPrototype[];

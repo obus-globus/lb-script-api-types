@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { DefaultConstructorMarker } from '../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { CallableMemberDescriptor$Kind } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableMemberDescriptor$Kind.d.ts'
 import type { ClassConstructorDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassConstructorDescriptor.d.ts'
 import type { ClassDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
@@ -24,7 +23,7 @@ export class TypeAliasConstructorDescriptorImpl extends FunctionDescriptorImpl i
     static getSubstitutedValueParameters(paramarg0: FunctionDescriptor, paramarg1: ValueParameterDescriptor[], paramarg2: TypeSubstitutor): ValueParameterDescriptor[];
     static getSubstitutedValueParameters(paramarg0: FunctionDescriptor, paramarg1: ValueParameterDescriptor[], paramarg2: TypeSubstitutor, paramarg3: boolean, paramarg4: boolean, paramarg5: boolean[]): ValueParameterDescriptor[];
     static toString(paramarg0: DeclarationDescriptor): string;
-    constructor(arg0: StorageManager, arg1: TypeAliasDescriptor, arg2: ClassConstructorDescriptor, arg3: TypeAliasConstructorDescriptor, arg4: AnnotationDescriptor[], arg5: CallableMemberDescriptor$Kind, arg6: SourceElement, arg7: DefaultConstructorMarker)
+    private constructor(arg0: StorageManager, arg1: TypeAliasDescriptor, arg2: ClassConstructorDescriptor, arg3: TypeAliasConstructorDescriptor, arg4: AnnotationDescriptor[], arg5: CallableMemberDescriptor$Kind, arg6: SourceElement)
     // private storageManager: StorageManager;
     readonly typeAliasDescriptor: TypeAliasDescriptor;
     readonly underlyingConstructorDescriptor: ClassConstructorDescriptor;

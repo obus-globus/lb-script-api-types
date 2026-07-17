@@ -5,4 +5,5 @@ export abstract class TpAuraMode extends Mode {
     static Companion: Tagged$Companion;
     constructor(name: string)
     readonly parent: ModeValueGroup<TpAuraMode>;
+    getParent(): ModeValueGroup<TpAuraMode>;
 }

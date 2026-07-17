@@ -6,7 +6,7 @@ import type { LogEventPatternConverter } from '../../../../../../org/apache/logg
 export class MessagePatternConverter extends LogEventPatternConverter {
     static CATEGORY: string;
     static newInstance(paramconfig: Configuration, paramoptions: string[]): MessagePatternConverter;
-    constructor(arg0: any)
+    private constructor()
     format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, toAppendTo: StringBuilder): void;
 }

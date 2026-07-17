@@ -5,7 +5,7 @@ import type { GraphicsConfiguration } from '../../../../java/awt/GraphicsConfigu
 import type { Window } from '../../../../java/awt/Window.d.ts'
 import type { Raster } from '../../../../java/awt/image/Raster.d.ts'
 export class WindowUtils$X11WindowUtils extends WindowUtils$NativeWindowUtils {
-    constructor(arg0: any)
+    private constructor()
     // private alphaVisualIDs: number[];
     // private didCheck: boolean;
     getAlphaCompatibleGraphicsConfiguration(): GraphicsConfiguration;

@@ -45,6 +45,7 @@ export class FlyVulcan286MC18 extends Mode {
      */
     readonly packetHandler: EventHook<PacketEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     readonly shapeHandler: EventHook<BlockShapeEvent>;
     readonly tickHandler: EventHook<PlayerTickEvent>;
     // private timer: number;

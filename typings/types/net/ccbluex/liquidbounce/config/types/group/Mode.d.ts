@@ -14,8 +14,6 @@ import type { LocalPlayer } from '../../../../../../net/minecraft/client/player/
 import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
 export abstract class Mode extends ValueGroup implements Tagged, EventListener, MinecraftShortcuts {
     static Companion: Tagged$Companion;
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     constructor(name: string, aliases: string[])
     readonly debugDisplayName: Component;
     readonly gpuDevice: GpuDevice;
@@ -23,6 +21,7 @@ export abstract class Mode extends ValueGroup implements Tagged, EventListener, 
     /*not mapped: */ isSelected$net_ccbluex_liquidbounce(): boolean;
     readonly mc: Minecraft;
     readonly network: ClientPacketListener;
+    getParent(): ModeValueGroup<any>;
     readonly player: LocalPlayer;
     /**
      * We check if the parent is active and if the mode is active, if so

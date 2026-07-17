@@ -9,7 +9,6 @@ import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class TypedArrayFunctionBuiltins$TypedArrayFunction extends Enum<TypedArrayFunctionBuiltins$TypedArrayFunction> implements BuiltinEnum<TypedArrayFunctionBuiltins$TypedArrayFunction> {
     static from: TypedArrayFunctionBuiltins$TypedArrayFunction;
     static of: TypedArrayFunctionBuiltins$TypedArrayFunction;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): TypedArrayFunctionBuiltins$TypedArrayFunction;
     static values(): TypedArrayFunctionBuiltins$TypedArrayFunction[];

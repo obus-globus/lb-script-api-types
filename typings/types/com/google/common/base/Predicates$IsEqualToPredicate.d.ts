@@ -2,7 +2,7 @@ import type { Predicate } from '../../../../com/google/common/base/Predicate.d.t
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Predicates$IsEqualToPredicate extends Object implements Predicate<Object>, Serializable {
-    constructor(arg0: Object, arg1: any)
+    private constructor(target: Object)
     // private target: Object;
     apply(o: Object): boolean;
     equals(obj: Object | null): boolean;

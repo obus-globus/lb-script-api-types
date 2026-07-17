@@ -8,9 +8,6 @@ import type { InjectionPoint } from '../../../../org/spongepowered/asm/mixin/inj
 import type { InjectionInfo } from '../../../../org/spongepowered/asm/mixin/injection/struct/InjectionInfo.d.ts'
 import type { IExtension } from '../../../../org/spongepowered/asm/mixin/transformer/ext/IExtension.d.ts'
 export class MixinExtrasServiceImpl extends Object implements MixinExtrasService {
-    static getFrom(paramarg0: Object): MixinExtrasService;
-    static getInstance(): MixinExtrasServiceImpl;
-    static setup(): void;
     constructor()
     // private allPackages: Versioned<string>[];
     // private initialized: boolean;

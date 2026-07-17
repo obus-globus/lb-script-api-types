@@ -5,6 +5,7 @@ export class EmptySet extends Object implements Serializable {
     static INSTANCE: EmptySet;
     // private serialVersionUID: number;
     readonly size: number;
+    getSize(): number;
     contains(element: void): boolean;
     containsAll(elements: void[]): boolean;
     equals(other: Object | null): boolean;

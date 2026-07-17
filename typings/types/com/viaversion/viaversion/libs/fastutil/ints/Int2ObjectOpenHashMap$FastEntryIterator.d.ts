@@ -5,7 +5,7 @@ import type { ObjectIterator } from '../../../../../../com/viaversion/viaversion
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class Int2ObjectOpenHashMap$FastEntryIterator extends Int2ObjectOpenHashMap$MapIterator<Object> implements ObjectIterator<Int2ObjectMap$Entry<V>> {
-    constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
+    private constructor(null_: { [key: string]: any })
     // private entry: Int2ObjectOpenHashMap$MapEntry;
     acceptOnIndex<V extends unknown>(arg0: (param0: Int2ObjectMap$Entry<V>) => void, arg1: number): void;
     next<V extends unknown>(): Int2ObjectOpenHashMap$MapEntry;

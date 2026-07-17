@@ -2,7 +2,7 @@ import type { DomainNameMapping } from '../../../io/netty/util/DomainNameMapping
 import type { StringBuilder } from '../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class DomainNameMappingBuilder$ImmutableDomainNameMapping<V extends unknown> extends DomainNameMapping<V> {
-    constructor(arg0: Object, arg1: Map<Object | null, Object | null>, arg2: any)
+    private constructor(arg0: V, arg1: { [key: string]: V })
     // private domainNamePatterns: string[];
     // private map: { [key: string]: V };
     // private values: V[];

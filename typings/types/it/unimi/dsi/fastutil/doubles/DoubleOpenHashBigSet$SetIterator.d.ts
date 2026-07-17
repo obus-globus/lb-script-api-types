@@ -3,7 +3,7 @@ import type { DoubleIterator } from '../../../../../it/unimi/dsi/fastutil/double
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DoubleOpenHashBigSet$SetIterator extends Object implements DoubleIterator {
-    constructor(null_: (Object | null)[], arg1: any)
+    private constructor(null_: (Object | null)[])
     // private base: number;
     // private c: number;
     // private displ: number;

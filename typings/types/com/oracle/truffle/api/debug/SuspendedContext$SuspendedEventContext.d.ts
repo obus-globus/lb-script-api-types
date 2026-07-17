@@ -9,8 +9,6 @@ import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { ThreadDeath } from '../../../../../java/lang/ThreadDeath.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class SuspendedContext$SuspendedEventContext extends Object implements SuspendedContext {
-    static create(parameventContext: EventContext, paramenv: TruffleInstrument$Env): SuspendedContext;
-    static create(paramnode: Node, paramunwind: ThreadDeath): SuspendedContext;
     private constructor(eventContext: EventContext, env: TruffleInstrument$Env)
     // private env: TruffleInstrument$Env;
     // private eventContext: EventContext;

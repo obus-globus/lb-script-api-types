@@ -8,7 +8,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class SelfSignedCertificate extends Object {
     static builder(): SelfSignedCertificate$Builder;
     constructor()
-    constructor(arg0: SelfSignedCertificate$Builder, arg1: any)
     constructor(arg0: Date, arg1: Date)
     constructor(arg0: Date, arg1: Date, arg2: string, arg3: number)
     constructor(arg0: string)

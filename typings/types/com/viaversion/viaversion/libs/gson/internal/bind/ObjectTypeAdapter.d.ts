@@ -8,7 +8,7 @@ import type { JsonWriter } from '../../../../../../../com/viaversion/viaversion/
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class ObjectTypeAdapter extends TypeAdapter<Object> {
     static getFactory(paramarg0: ToNumberStrategy): TypeAdapterFactory;
-    constructor(arg0: Gson, arg1: ToNumberStrategy, arg2: TypeAdapterFactory)
+    private constructor(arg0: Gson, arg1: ToNumberStrategy)
     // private gson: Gson;
     // private toNumberStrategy: ToNumberStrategy;
     read(arg0: JsonReader): Object;

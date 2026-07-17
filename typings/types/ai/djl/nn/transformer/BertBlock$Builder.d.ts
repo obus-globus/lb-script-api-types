@@ -1,7 +1,7 @@
 import type { BertBlock } from '../../../../ai/djl/nn/transformer/BertBlock.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class BertBlock$Builder extends Object {
-    constructor(arg0: any)
+    private constructor()
     // private attentionHeadCount: number;
     // private embeddingSize: number;
     // private hiddenDropoutProbability: number;

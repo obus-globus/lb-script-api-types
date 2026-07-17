@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { DefaultConstructorMarker } from '../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { ClassifierDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassifierDescriptor.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
 import type { PropertyDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/PropertyDescriptor.d.ts'
@@ -11,7 +10,7 @@ import type { DescriptorKindFilter } from '../../../../../../../kotlin/reflect/j
 import type { MemberScope } from '../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope.d.ts'
 export class ChainedMemberScope extends Object implements MemberScope {
     static Companion: ChainedMemberScope$Companion;
-    constructor(arg0: string, arg1: MemberScope[], arg2: DefaultConstructorMarker)
+    private constructor(arg0: string, arg1: MemberScope[])
     // private debugName: string;
     // private scopes: MemberScope[];
     getClassifierNames(): Name[];

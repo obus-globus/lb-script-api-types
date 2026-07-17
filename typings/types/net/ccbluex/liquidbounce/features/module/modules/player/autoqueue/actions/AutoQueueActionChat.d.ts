@@ -1,3 +1,4 @@
+import type { Continuation } from '../../../../../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { Tagged$Companion } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
 import type { AutoQueueAction } from '../../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/autoqueue/actions/AutoQueueAction.d.ts'
 export class AutoQueueActionChat extends AutoQueueAction {
@@ -9,5 +10,6 @@ export class AutoQueueActionChat extends AutoQueueAction {
     // private /*not mapped: */ getMessages(): string[];
     // private startDelay: { start: number; endInclusive: number; step: number };
     // private /*not mapped: */ getStartDelay(): { start: number; endInclusive: number; step: number };
-    execute(): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    execute($completion: Continuation<void>): any;
 }

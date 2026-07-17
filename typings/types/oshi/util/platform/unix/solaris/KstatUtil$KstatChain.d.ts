@@ -3,7 +3,7 @@ import type { LibKstat$KstatCtl } from '../../../../../com/sun/jna/platform/unix
 import type { AutoCloseable } from '../../../../../java/lang/AutoCloseable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class KstatUtil$KstatChain extends Object implements AutoCloseable {
-    constructor(arg0: LibKstat$KstatCtl, arg1: any)
+    private constructor(arg0: LibKstat$KstatCtl)
     // private localCtlRef: LibKstat$KstatCtl;
     close(): void;
     lookup(arg0: string, arg1: number, arg2: string): LibKstat$Kstat;

@@ -5,7 +5,7 @@ import type { LevelPatternConverter } from '../../../../../../org/apache/logging
 export class LevelPatternConverter$SimpleLevelPatternConverter extends LevelPatternConverter {
     static CATEGORY: string;
     static newInstance(paramoptions: string[]): LevelPatternConverter;
-    constructor(arg0: any)
+    private constructor()
     format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, output: StringBuilder): void;
 }

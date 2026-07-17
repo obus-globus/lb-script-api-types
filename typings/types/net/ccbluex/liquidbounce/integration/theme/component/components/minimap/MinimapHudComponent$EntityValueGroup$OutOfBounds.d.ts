@@ -7,8 +7,6 @@ export class MinimapHudComponent$EntityValueGroup$OutOfBounds extends Enum<Minim
     static Companion: Tagged$Companion;
     static NONE: MinimapHudComponent$EntityValueGroup$OutOfBounds;
     static getEntries(): MinimapHudComponent$EntityValueGroup$OutOfBounds[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): MinimapHudComponent$EntityValueGroup$OutOfBounds;
     static values(): MinimapHudComponent$EntityValueGroup$OutOfBounds[];

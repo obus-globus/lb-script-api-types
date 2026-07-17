@@ -11,6 +11,7 @@ export class FlyFireballLegitTechnique extends Mode {
     // private canMove: boolean;
     // private movementInputHandler: EventHook<MovementInputEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     // private repeatable: EventHook<GameTickEvent>;
     // private rotationUpdateHandler: EventHook<RotationUpdateEvent>;
     // private shouldJump: boolean;

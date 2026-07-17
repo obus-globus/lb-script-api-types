@@ -8,4 +8,5 @@ export abstract class SpeedBHopBase extends Mode {
     constructor(name: string, parent: ModeValueGroup<any>)
     // private movementInputHandler: EventHook<MovementInputEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
 }

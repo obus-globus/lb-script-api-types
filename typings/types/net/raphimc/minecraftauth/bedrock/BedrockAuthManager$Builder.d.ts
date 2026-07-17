@@ -9,7 +9,7 @@ import type { MsaAuthService } from '../../../../net/raphimc/minecraftauth/msa/s
 import type { MsaAuthServiceSupplier } from '../../../../net/raphimc/minecraftauth/msa/service/util/MsaAuthServiceSupplier.d.ts'
 import type { ParamMsaAuthServiceSupplier } from '../../../../net/raphimc/minecraftauth/msa/service/util/ParamMsaAuthServiceSupplier.d.ts'
 export class BedrockAuthManager$Builder extends Object {
-    constructor(arg0: HttpClient, arg1: string, arg2: any)
+    private constructor(arg0: HttpClient, arg1: string)
     // private deviceId: UUID;
     // private deviceKeyPair: KeyPair;
     // private deviceType: string;

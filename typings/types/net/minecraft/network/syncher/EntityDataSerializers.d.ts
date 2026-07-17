@@ -81,7 +81,6 @@ export class EntityDataSerializers extends Object implements EntityDataSerialize
     static WOLF_SOUND_VARIANT: EntityDataSerializer<Holder<WolfSoundVariant>>;
     static WOLF_VARIANT: EntityDataSerializer<Holder<WolfVariant>>;
     static ZOMBIE_NAUTILUS_VARIANT: EntityDataSerializer<Holder<ZombieNautilusVariant>>;
-    static fabric_getDataHandlers(): EntityDataSerializer<Object>[];
     static getSerializedId(paramserializer: EntityDataSerializer<Object>): number;
     static getSerializer(paramid: number): EntityDataSerializer<Object>;
     static registerSerializer(paramserializer: EntityDataSerializer<Object>): void;

@@ -3,7 +3,7 @@ import type { Object } from '../../java/lang/Object.d.ts'
 import type { ULong } from '../../kotlin/ULong.d.ts'
 import type { Iterator } from '../../java/util/Iterator.d.ts'
 export class ULongProgressionIterator extends Object implements Iterator<ULong> {
-    constructor(first: ULong, last: ULong, step: number)
+    protected constructor()
     // private finalElement: ULong;
     // private hasNext: boolean;
     // private next: ULong;

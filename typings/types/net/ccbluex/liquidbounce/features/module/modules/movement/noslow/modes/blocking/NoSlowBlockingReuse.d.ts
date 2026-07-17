@@ -9,6 +9,7 @@ export class NoSlowBlockingReuse extends Mode {
     static INSTANCE: NoSlowBlockingReuse;
     // private networkTickHandler: EventHook<PlayerNetworkMovementTickEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     // private timingMode: NoSlowBlockingReuse$TimingMode;
     // private /*not mapped: */ getTimingMode(): NoSlowBlockingReuse$TimingMode;
 }

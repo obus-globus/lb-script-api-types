@@ -4,7 +4,7 @@ import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { IntConsumer as IntConsumer_2 } from '../../../../../java/util/function/IntConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class IntOpenHashSet$SetIterator extends Object implements IntIterator {
-    constructor(null_: (Object | null)[], arg1: any)
+    private constructor(null_: (Object | null)[])
     // private c: number;
     // private last: number;
     // private mustReturnNull: boolean;

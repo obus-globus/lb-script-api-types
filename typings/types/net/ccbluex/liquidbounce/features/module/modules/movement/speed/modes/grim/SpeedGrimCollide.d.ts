@@ -7,6 +7,7 @@ export class SpeedGrimCollide extends Mode {
     static Companion: Tagged$Companion;
     constructor(parent: ModeValueGroup<any>)
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private shrinkBox: number;
     // private /*not mapped: */ getShrinkBox(): number;
     // private speed: number;

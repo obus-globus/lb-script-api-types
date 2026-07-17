@@ -4,7 +4,6 @@ import type { FeatureSet$FeaturePresence } from '../../../../../../../net/fabric
 export class FeatureSetBuilder$DescFeatureBuilder extends Object {
     constructor()
     constructor(arg0: boolean)
-    constructor(arg0: FeatureSet$DescSupport, arg1: any)
     // private dstDescriptors: FeatureSet$FeaturePresence;
     // private srcDescriptors: FeatureSet$FeaturePresence;
     build(): FeatureSet$DescSupport;

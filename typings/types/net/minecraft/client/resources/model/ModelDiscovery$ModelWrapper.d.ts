@@ -8,24 +8,15 @@ import type { ModelDiscovery$Slot } from '../../../../../net/minecraft/client/re
 import type { ResolvedModel } from '../../../../../net/minecraft/client/resources/model/ResolvedModel.d.ts'
 import type { UnbakedModel } from '../../../../../net/minecraft/client/resources/model/UnbakedModel.d.ts'
 import type { UnbakedModel$GuiLight } from '../../../../../net/minecraft/client/resources/model/UnbakedModel$GuiLight.d.ts'
-import type { ItemTransform } from '../../../../../net/minecraft/client/resources/model/cuboid/ItemTransform.d.ts'
 import type { ItemTransforms } from '../../../../../net/minecraft/client/resources/model/cuboid/ItemTransforms.d.ts'
 import type { QuadCollection } from '../../../../../net/minecraft/client/resources/model/geometry/QuadCollection.d.ts'
 import type { UnbakedGeometry } from '../../../../../net/minecraft/client/resources/model/geometry/UnbakedGeometry.d.ts'
 import type { Material$Baked } from '../../../../../net/minecraft/client/resources/model/sprite/Material$Baked.d.ts'
 import type { TextureSlots } from '../../../../../net/minecraft/client/resources/model/sprite/TextureSlots.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
-import type { ItemDisplayContext } from '../../../../../net/minecraft/world/item/ItemDisplayContext.d.ts'
 export class ModelDiscovery$ModelWrapper extends Object implements ResolvedModel {
     static DEFAULT_AMBIENT_OCCLUSION: boolean;
     static DEFAULT_GUI_LIGHT: UnbakedModel$GuiLight;
-    static findTopAmbientOcclusion(paramcurrent: ResolvedModel): boolean;
-    static findTopGeometry(paramcurrent: ResolvedModel): (param0: TextureSlots, param1: ModelBaker, param2: ModelState, param3: () => string) => QuadCollection;
-    static findTopGuiLight(paramcurrent: ResolvedModel): UnbakedModel$GuiLight;
-    static findTopTextureSlots(paramtop: ResolvedModel): TextureSlots;
-    static findTopTransform(paramcurrent: ResolvedModel, paramtype: ItemDisplayContext): ItemTransform;
-    static findTopTransforms(paramtop: ResolvedModel): ItemTransforms;
-    static resolveParticleMaterial(paramtextureSlots: TextureSlots, parambaker: ModelBaker, paramresolvedModel: () => string): Material$Baked;
     private constructor(id: Identifier, wrapped: UnbakedModel, valid: boolean)
     // private fixedSlots: AtomicReferenceArray<Object>;
     // private id: Identifier;

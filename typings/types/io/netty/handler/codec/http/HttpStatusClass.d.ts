@@ -14,7 +14,7 @@ export class HttpStatusClass extends Enum<HttpStatusClass> {
     static valueOf(paramarg0: CharSequence): HttpStatusClass;
     static valueOf(paramarg0: string): HttpStatusClass;
     static values(): HttpStatusClass[];
-    constructor(arg2: number, arg3: number, arg4: string, arg5: HttpStatusClass)
+    private constructor(arg2: number, arg3: number, arg4: string)
     // private defaultReasonPhrase: AsciiString;
     // private max: number;
     // private min: number;

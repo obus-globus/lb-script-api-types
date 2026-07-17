@@ -2,7 +2,7 @@ import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { URLWrapper } from '../../../../../net/lenni0451/commons/httpclient/utils/URLWrapper.d.ts'
 export class URLWrapper$QueryWrapper extends Object {
-    constructor(null_: URLWrapper, arg1: any)
+    private constructor(null_: URLWrapper)
     readonly queries: { [key: string]: string };
     addQueries(arg0: { [key: string]: string }): URLWrapper$QueryWrapper;
     apply(): URLWrapper;

@@ -4,14 +4,11 @@ import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
 import type { TestEnvironmentDefinition } from '../../../../net/minecraft/gametest/framework/TestEnvironmentDefinition.d.ts'
-import type { TestEnvironmentDefinition$Activation } from '../../../../net/minecraft/gametest/framework/TestEnvironmentDefinition$Activation.d.ts'
 import type { ServerLevel } from '../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { WorldClock } from '../../../../net/minecraft/world/clock/WorldClock.d.ts'
 export class TestEnvironmentDefinition$ClockTime extends Record implements TestEnvironmentDefinition<number> {
     static CODEC: MapCodec<TestEnvironmentDefinition$ClockTime>;
     static DIRECT_CODEC: Codec<TestEnvironmentDefinition<Object>>;
-    static activate<T extends unknown>(paramenvironment: TestEnvironmentDefinition<T>, paramlevel: ServerLevel): TestEnvironmentDefinition$Activation<T>;
-    static bootstrap(paramregistry: MapCodec<TestEnvironmentDefinition<Object>>[]): MapCodec<TestEnvironmentDefinition<Object>>;
     constructor(clock: Holder<WorldClock>, time: number)
     // private clock: Holder<WorldClock>;
     // private time: number;

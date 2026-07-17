@@ -10,6 +10,7 @@ export class ModuleMiddleClickAction$Pearl extends Mode {
     static INSTANCE: ModuleMiddleClickAction$Pearl;
     // private handler: EventHook<WorldChangeEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     readonly repeatable: EventHook<GameTickEvent>;
     // private slotResetDelay: number;
     // private /*not mapped: */ getSlotResetDelay(): number;

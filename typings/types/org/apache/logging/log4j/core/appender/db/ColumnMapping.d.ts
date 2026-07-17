@@ -6,7 +6,7 @@ export class ColumnMapping extends Object {
     static EMPTY_ARRAY: ColumnMapping[];
     static newBuilder(): ColumnMapping$Builder;
     static toKey(paramname: string): string;
-    constructor(arg0: string, arg1: string, arg2: StringLayout, arg3: string, arg4: string, arg5: Class<Object>, arg6: any)
+    private constructor(name: string, source: string, layout: StringLayout, literalValue: string, parameter: string, type: Class<Object>)
     readonly layout: StringLayout;
     readonly literalValue: string;
     readonly name: string;

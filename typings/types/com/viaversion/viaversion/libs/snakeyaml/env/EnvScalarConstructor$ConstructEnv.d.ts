@@ -3,6 +3,6 @@ import type { EnvScalarConstructor } from '../../../../../../com/viaversion/viav
 import type { Node } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/nodes/Node.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class EnvScalarConstructor$ConstructEnv extends AbstractConstruct {
-    constructor(null_: EnvScalarConstructor, arg1: any)
+    private constructor(null_: EnvScalarConstructor)
     construct(arg0: Node): Object;
 }

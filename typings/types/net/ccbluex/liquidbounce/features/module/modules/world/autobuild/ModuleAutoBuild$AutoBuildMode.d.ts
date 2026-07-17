@@ -6,6 +6,7 @@ export abstract class ModuleAutoBuild$AutoBuildMode extends Mode {
     static Companion: Tagged$Companion;
     constructor(name: string)
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     disabled(): void;
     enabled(): void;
     getSlot(): HotbarItemSlot | null;

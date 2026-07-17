@@ -2,7 +2,7 @@ import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BannedScopes } from '../../../../../../net/ccbluex/liquidbounce/authlib/mojangapi/model/BannedScopes.d.ts'
 export class BanStatus extends Record {
-    constructor(bannedScopes: BannedScopes | null)
+    constructor(bannedScopes?: BannedScopes | null)
     // private bannedScopes: BannedScopes | null;
     /*not mapped: */ bannedScopes(): BannedScopes | null;
     component1(): BannedScopes | null;

@@ -5,7 +5,6 @@ import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class DeathProtection extends Record implements Copyable {
     static TYPE: Type<DeathProtection>;
-    static copy<T extends unknown>(paramarg0: T): T;
     constructor(deathEffects: Consumable1_21_2$ConsumeEffect<Object>[])
     // private deathEffects: Consumable1_21_2$ConsumeEffect<Object>[];
     copy(): DeathProtection;

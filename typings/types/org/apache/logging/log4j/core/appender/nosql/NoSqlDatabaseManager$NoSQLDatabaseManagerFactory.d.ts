@@ -3,6 +3,6 @@ import type { ManagerFactory } from '../../../../../../../org/apache/logging/log
 import type { NoSqlDatabaseManager } from '../../../../../../../org/apache/logging/log4j/core/appender/nosql/NoSqlDatabaseManager.d.ts'
 import type { NoSqlDatabaseManager$FactoryData } from '../../../../../../../org/apache/logging/log4j/core/appender/nosql/NoSqlDatabaseManager$FactoryData.d.ts'
 export class NoSqlDatabaseManager$NoSQLDatabaseManagerFactory extends Object implements ManagerFactory<NoSqlDatabaseManager<Object>, NoSqlDatabaseManager$FactoryData> {
-    constructor(arg0: any)
+    private constructor()
     createManager(name: string, data: NoSqlDatabaseManager$FactoryData): NoSqlDatabaseManager<Object>;
 }

@@ -1,7 +1,6 @@
 import type { CharMatcher } from '../../../com/google/common/base/CharMatcher.d.ts'
 import type { CommandDispatcher } from '../../../com/mojang/brigadier/CommandDispatcher.d.ts'
 import type { Message } from '../../../com/mojang/brigadier/Message.d.ts'
-import type { ResultConsumer } from '../../../com/mojang/brigadier/ResultConsumer.d.ts'
 import type { CommandContext } from '../../../com/mojang/brigadier/context/CommandContext.d.ts'
 import type { CommandExceptionType } from '../../../com/mojang/brigadier/exceptions/CommandExceptionType.d.ts'
 import type { CommandSyntaxException } from '../../../com/mojang/brigadier/exceptions/CommandSyntaxException.d.ts'
@@ -13,8 +12,6 @@ import type { UUID } from '../../../java/util/UUID.d.ts'
 import type { CompletableFuture } from '../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { BinaryOperator } from '../../../java/util/function/BinaryOperator.d.ts'
 import type { Consumer } from '../../../java/util/function/Consumer.d.ts'
-import type { Function } from '../../../java/util/function/Function.d.ts'
-import type { Predicate } from '../../../java/util/function/Predicate.d.ts'
 import type { Supplier } from '../../../java/util/function/Supplier.d.ts'
 import type { Stream } from '../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
@@ -55,22 +52,6 @@ export class CommandSourceStack extends Object implements PermissionContextOwner
     static ERROR_NOT_ENTITY: SimpleCommandExceptionType;
     static ERROR_NOT_PLAYER: SimpleCommandExceptionType;
     static MATCH_SPLITTER: CharMatcher;
-    static filterResources<T extends unknown>(paramvalues: T[], paramcontents: string, paramprefix: string, paramconverter: (param0: T) => Identifier, paramconsumer: (param0: T) => void): void;
-    static filterResources<T extends unknown>(paramvalues: T[], paramcontents: string, paramconverter: (param0: T) => Identifier, paramconsumer: (param0: T) => void): void;
-    static listSuggestions<S extends unknown>(paramcontext: CommandContext<S>, parambuilder: SuggestionsBuilder, paramregistryKey: ResourceKey<Object[]>, paramtype: SharedSuggestionProvider$ElementSuggestionType): CompletableFuture<Suggestions>;
-    static matchesSubStr(parampattern: string, paraminput: string): boolean;
-    static resultConsumer<T extends ExecutionCommandSource<T>>(): (param0: CommandContext<T>, param1: boolean, param2: number) => void;
-    static suggest<T extends unknown>(paramvalues: T[], parambuilder: SuggestionsBuilder, paramtoString: (param0: T) => string, paramtooltip: (param0: T) => Message): CompletableFuture<Suggestions>;
-    static suggest(paramvalues: string[], parambuilder: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    static suggest(paramvalues: Stream<string>, parambuilder: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    static suggest2DCoordinates(paramcurrentInput: string, paramallSuggestions: SharedSuggestionProvider$TextCoordinates[], parambuilder: SuggestionsBuilder, paramvalidator: (param0: string) => boolean): CompletableFuture<Suggestions>;
-    static suggestCoordinates(paramcurrentInput: string, paramallSuggestions: SharedSuggestionProvider$TextCoordinates[], parambuilder: SuggestionsBuilder, paramvalidator: (param0: string) => boolean): CompletableFuture<Suggestions>;
-    static suggestResource<T extends unknown>(paramvalues: T[], parambuilder: SuggestionsBuilder, paramid: (param0: T) => Identifier, paramtooltip: (param0: T) => Message): CompletableFuture<Suggestions>;
-    static suggestResource<T extends unknown>(paramvalues: Stream<T>, parambuilder: SuggestionsBuilder, paramid: (param0: T) => Identifier, paramtooltip: (param0: T) => Message): CompletableFuture<Suggestions>;
-    static suggestResource(paramvalues: Identifier[], parambuilder: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    static suggestResource(paramvalues: Identifier[], parambuilder: SuggestionsBuilder, paramprefix: string): CompletableFuture<Suggestions>;
-    static suggestResource(paramvalues: Stream<Identifier>, parambuilder: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    static suggestResource(paramvalues: Stream<Identifier>, parambuilder: SuggestionsBuilder, paramprefix: string): CompletableFuture<Suggestions>;
     constructor(source: CommandSource, position: Vec3, rotation: Vec2, level: ServerLevel, permissions: PermissionSet, textName: string, displayName: Component, server: MinecraftServer, entity: Entity)
     readonly anchor: EntityAnchorArgument$Anchor;
     readonly chatMessageChainer: (param0: CompletableFuture<Object>, param1: (param0: Object | null) => void) => void;

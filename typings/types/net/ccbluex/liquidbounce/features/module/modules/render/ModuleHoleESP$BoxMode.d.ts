@@ -9,5 +9,6 @@ export class ModuleHoleESP$BoxMode extends Mode {
     // private outline: boolean;
     // private /*not mapped: */ getOutline(): boolean;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     readonly renderHandler: EventHook<WorldRenderEvent>;
 }

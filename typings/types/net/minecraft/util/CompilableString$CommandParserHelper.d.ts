@@ -4,7 +4,6 @@ import type { DataResult } from '../../../com/mojang/serialization/DataResult.d.
 import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class CompilableString$CommandParserHelper<T extends unknown> extends Object implements Function<string, DataResult<T>> {
-    static identity<T extends unknown>(): (param0: T) => T;
     constructor()
     andThen<V extends unknown>(arg0: (param0: DataResult<T>) => V): (param0: string) => V;
     apply(contents: string): DataResult<T>;

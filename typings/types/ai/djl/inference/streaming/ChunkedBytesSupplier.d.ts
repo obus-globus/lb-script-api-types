@@ -4,9 +4,6 @@ import type { TimeUnit } from '../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { AtomicBoolean } from '../../../../java/util/concurrent/atomic/AtomicBoolean.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ChunkedBytesSupplier extends Object implements BytesSupplier {
-    static wrap(paramarg0: number[]): BytesSupplier;
-    static wrap(paramarg0: string): BytesSupplier;
-    static wrapAsJson(paramarg0: Object): BytesSupplier;
     constructor()
     // private completed: AtomicBoolean;
     // private queue: BytesSupplier[];

@@ -6,5 +6,6 @@ export class ModuleNoRotateSet$ResetRotation extends Mode {
     static Companion: Tagged$Companion;
     static INSTANCE: ModuleNoRotateSet$ResetRotation;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     readonly rotations: RotationsValueGroup;
 }

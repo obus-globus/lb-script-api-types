@@ -5,8 +5,6 @@ import type { Pattern } from '../../../../../java/util/regex/Pattern.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ClassNameMatcher } from '../../../../../org/apache/commons/io/serialization/ClassNameMatcher.d.ts'
 export class ObjectStreamClassPredicate extends Object implements Predicate<ObjectStreamClass> {
-    static isEqual<T extends unknown>(paramarg0: Object): (param0: T) => boolean;
-    static not<T extends unknown>(paramarg0: (param0: Object) => boolean): (param0: T) => boolean;
     constructor()
     // private acceptMatchers: (param0: string) => boolean[];
     // private rejectMatchers: (param0: string) => boolean[];

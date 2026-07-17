@@ -1,4 +1,5 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Continuation } from '../../../../kotlin/coroutines/Continuation.d.ts'
 import type { CoroutineContext } from '../../../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { BufferOverflow } from '../../../../kotlinx/coroutines/channels/BufferOverflow.d.ts'
 import type { ProducerScope } from '../../../../kotlinx/coroutines/channels/ProducerScope.d.ts'
@@ -8,9 +9,13 @@ import type { ChannelFlow } from '../../../../kotlinx/coroutines/flow/internal/C
 export abstract class ChannelFlowOperator<S extends unknown, T extends unknown> extends ChannelFlow<T> {
     constructor(flow: Flow<S>, context: CoroutineContext, capacity: number, onBufferOverflow: BufferOverflow)
     // private flow: Flow<S>;
-    collect(collector: FlowCollector<T>): void;
-    protected collectTo(scope: ProducerScope<T>): void;
-    // private collectWithContextUndispatched(collector: FlowCollector<T>, newContext: CoroutineContext): void;
-    protected flowCollect(collector: FlowCollector<T>): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    collect(collector: FlowCollector<T>, $completion: Continuation<void>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    protected collectTo(scope: ProducerScope<T>, $completion: Continuation<void>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private collectWithContextUndispatched(collector: FlowCollector<T>, newContext: CoroutineContext, $completion: Continuation<void>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    protected flowCollect(collector: FlowCollector<T>, $completion: Continuation<void>): any;
     toString(): string;
 }

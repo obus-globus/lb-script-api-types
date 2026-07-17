@@ -5,7 +5,8 @@ import type { Rule$Phoneme } from '../../../../../../org/apache/commons/codec/la
 import type { Rule$PhonemeExpr } from '../../../../../../org/apache/commons/codec/language/bm/Rule$PhonemeExpr.d.ts'
 export class PhoneticEngine$PhonemeBuilder extends Object {
     static empty(paramarg0: Languages$LanguageSet): PhoneticEngine$PhonemeBuilder;
-    constructor(arg0: (Object | null)[], arg1: any)
+    private constructor(arg0: Rule$Phoneme[])
+    private constructor(arg0: Rule$Phoneme)
     readonly phonemes: Rule$Phoneme[];
     append(arg0: CharSequence): void;
     apply(arg0: Rule$PhonemeExpr, arg1: number): void;

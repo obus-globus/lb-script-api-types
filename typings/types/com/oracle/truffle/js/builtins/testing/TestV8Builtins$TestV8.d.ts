@@ -34,7 +34,6 @@ export class TestV8Builtins$TestV8 extends Enum<TestV8Builtins$TestV8> implement
     static toPrimitiveString: TestV8Builtins$TestV8;
     static toStringConv: TestV8Builtins$TestV8;
     static typedArrayDetachBuffer: TestV8Builtins$TestV8;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): TestV8Builtins$TestV8;
     static values(): TestV8Builtins$TestV8[];

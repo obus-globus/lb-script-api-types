@@ -1,7 +1,7 @@
 import type { FixedPerVarTracker } from '../../../../ai/djl/training/tracker/FixedPerVarTracker.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class FixedPerVarTracker$Builder extends Object {
-    constructor(arg0: any)
+    private constructor()
     // private value: number;
     // private valueMap: { [key: string]: number };
     build(): FixedPerVarTracker;

@@ -1,4 +1,5 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Continuation } from '../../../../kotlin/coroutines/Continuation.d.ts'
 import type { CoroutineContext } from '../../../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { CoroutineScope } from '../../../../kotlinx/coroutines/CoroutineScope.d.ts'
 import type { BufferOverflow } from '../../../../kotlinx/coroutines/channels/BufferOverflow.d.ts'
@@ -11,7 +12,8 @@ export class ChannelFlowMerge<T extends unknown> extends ChannelFlow<T> {
     // private concurrency: number;
     // private flow: Flow<Flow<T>>;
     protected additionalToStringProps(): string;
-    protected collectTo(scope: ProducerScope<T>): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    protected collectTo(scope: ProducerScope<T>, $completion: Continuation<void>): any;
     protected create(context: CoroutineContext, capacity: number, onBufferOverflow: BufferOverflow): ChannelFlow<T>;
     produceImpl(scope: CoroutineScope): ReceiveChannel<T>;
 }

@@ -159,11 +159,9 @@ export class Zoglin extends Monster implements HoglinBase {
     static getEquipmentForSlot(paramslot: EquipmentSlot, paramtype: number): Item;
     static getInputVector(paraminput: Vec3, paramspeed: number, paramyRot: number): Vec3;
     static getViewScale(): number;
-    static hurtAndThrowTarget(paramlevel: ServerLevel, parambody: LivingEntity, paramtarget: LivingEntity): boolean;
     static isDarkEnoughToSpawn(paramlevel: ServerLevelAccessor, parampos: BlockPos, paramrandom: RandomSource): boolean;
     static resetForwardDirectionOfRelativePortalPosition(paramoffsets: Vec3): Vec3;
     static setViewScale(paramviewScale: number): void;
-    static throwTarget(parambody: LivingEntity, paramtarget: LivingEntity): void;
     constructor(type: EntityType<Zoglin>, level: Level)
     readonly attackAnimationRemainingTicks: number;
     addAdditionalSaveData(output: ValueOutput): void;

@@ -11,7 +11,6 @@ export class AbstractModuleSourcePrototype extends Enum<AbstractModuleSourceProt
     static ABSTRACT_MODULE_SOURCE_PROTOTYPE: TruffleString;
     static BUILTINS: JSBuiltinsContainer;
     static _toStringTag: AbstractModuleSourcePrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): AbstractModuleSourcePrototype;
     static values(): AbstractModuleSourcePrototype[];

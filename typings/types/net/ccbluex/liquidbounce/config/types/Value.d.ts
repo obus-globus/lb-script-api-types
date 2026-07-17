@@ -37,6 +37,8 @@ export class Value<T extends unknown> extends Object {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt#L73 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt:73}
      */
     independentDescription: boolean;
+    getIndependentDescription(): boolean;
+    setIndependentDescription(value: boolean): void;
     // private inner: T;
     /*not mapped: */ getInner$net_ccbluex_liquidbounce(): T;
     // private isImmutable: boolean;
@@ -50,6 +52,7 @@ export class Value<T extends unknown> extends Object {
     // private listeners: (param0: T) => T[];
     /*not mapped: */ getLoweredName$net_ccbluex_liquidbounce(): string;
     readonly name: string;
+    getNotAnOption(): boolean;
     // private stateFlow: MutableStateFlow<T>;
     readonly valueType: ValueType;
     asStateFlow(): StateFlow<T>;

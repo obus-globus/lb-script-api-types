@@ -1,7 +1,6 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { DefaultConstructorMarker } from '../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 export abstract class JvmMemberSignature extends Object {
-    constructor(arg0: DefaultConstructorMarker)
+    private constructor()
     getDescriptor(): string;
     getName(): string;
     toString(): string;

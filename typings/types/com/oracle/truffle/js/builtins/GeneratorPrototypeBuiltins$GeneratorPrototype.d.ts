@@ -10,7 +10,6 @@ export class GeneratorPrototypeBuiltins$GeneratorPrototype extends Enum<Generato
     static next: GeneratorPrototypeBuiltins$GeneratorPrototype;
     static return_: GeneratorPrototypeBuiltins$GeneratorPrototype;
     static throw_: GeneratorPrototypeBuiltins$GeneratorPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): GeneratorPrototypeBuiltins$GeneratorPrototype;
     static values(): GeneratorPrototypeBuiltins$GeneratorPrototype[];

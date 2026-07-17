@@ -12,7 +12,6 @@ export class ReadAheadInputStream extends FilterInputStream {
     static nullInputStream(): InputStream;
     constructor(arg0: InputStream, arg1: number)
     constructor(arg0: InputStream, arg1: number, arg2: ExecutorService)
-    constructor(arg0: ReadAheadInputStream$Builder, arg1: any)
     // private activeBuffer: ByteBuffer;
     // private asyncReadComplete: Condition;
     // private endOfStream: boolean;

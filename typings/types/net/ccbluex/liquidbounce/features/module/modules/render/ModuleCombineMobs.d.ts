@@ -32,5 +32,5 @@ export class ModuleCombineMobs extends ClientModule {
     // private keyFor(mob: Entity): ModuleCombineMobs$CombineKey;
     onDisabled(): void;
     onEnabled(): void;
-    trackEntity(entity: Entity, forNametag: boolean): boolean;
+    trackEntity(entity: Entity, forNametag?: boolean): boolean;
 }

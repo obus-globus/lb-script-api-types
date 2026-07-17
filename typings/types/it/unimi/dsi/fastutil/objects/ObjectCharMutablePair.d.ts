@@ -1,11 +1,8 @@
 import type { ObjectCharPair } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectCharPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
-import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ObjectCharMutablePair<K extends unknown> extends Object implements ObjectCharPair<K>, Serializable {
-    static lexComparator<K extends unknown>(): (param0: ObjectCharPair<K>, param1: ObjectCharPair<K>) => number;
     static of<K extends unknown>(paramarg0: K, paramarg1: string): ObjectCharMutablePair<K>;
-    static of<K extends unknown>(paramarg0: K, paramarg1: string): ObjectCharPair<K>;
     constructor(arg0: K, arg1: string)
     // private left: K;
     // private right: string;

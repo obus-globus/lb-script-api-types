@@ -8,7 +8,6 @@ export class TimedSemaphore extends Object {
     static builder(): TimedSemaphore$Builder;
     constructor(arg0: ScheduledExecutorService, arg1: number, arg2: TimeUnit, arg3: number)
     constructor(arg0: number, arg1: TimeUnit, arg2: number)
-    constructor(arg0: TimedSemaphore$Builder, arg1: any)
     readonly acquireCount: number;
     // private executorService: ScheduledExecutorService;
     // private lastCallsPerPeriod: number;

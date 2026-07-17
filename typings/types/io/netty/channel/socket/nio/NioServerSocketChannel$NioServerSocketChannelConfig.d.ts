@@ -5,7 +5,7 @@ import type { ServerSocket } from '../../../../../java/net/ServerSocket.d.ts'
 import type { ServerSocketChannel } from '../../../../../java/nio/channels/ServerSocketChannel.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class NioServerSocketChannel$NioServerSocketChannelConfig extends DefaultServerSocketChannelConfig {
-    constructor(null_: NioServerSocketChannel, arg1: NioServerSocketChannel, arg2: ServerSocket, arg3: any)
+    private constructor(null_: NioServerSocketChannel, arg1: NioServerSocketChannel, arg2: ServerSocket)
     autoReadCleared(): void;
     getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;

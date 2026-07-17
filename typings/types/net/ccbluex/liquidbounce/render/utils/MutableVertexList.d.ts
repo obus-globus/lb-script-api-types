@@ -6,7 +6,7 @@ import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 import type { Vector3f } from '../../../../../org/joml/Vector3f.d.ts'
 export class MutableVertexList extends Object implements VertexList {
     static ELEMENTS_PER_VERTEX: number;
-    constructor(initialVertexCapacity: number)
+    constructor(initialVertexCapacity?: number)
     readonly size: number;
     // private values: (Object | null)[];
     add(x: number, y: number, z: number): MutableVertexList;

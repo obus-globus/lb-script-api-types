@@ -60,7 +60,6 @@ import type { AttackRange } from '../../../../net/minecraft/world/item/component
 import type { Enchantment } from '../../../../net/minecraft/world/item/enchantment/Enchantment.d.ts'
 import type { EnchantmentLocationBasedEffect } from '../../../../net/minecraft/world/item/enchantment/effects/EnchantmentLocationBasedEffect.d.ts'
 import type { Equippable } from '../../../../net/minecraft/world/item/equipment/Equippable.d.ts'
-import type { ChunkPos } from '../../../../net/minecraft/world/level/ChunkPos.d.ts'
 import type { ClipContext$Block } from '../../../../net/minecraft/world/level/ClipContext$Block.d.ts'
 import type { ClipContext$Fluid } from '../../../../net/minecraft/world/level/ClipContext$Fluid.d.ts'
 import type { Level } from '../../../../net/minecraft/world/level/Level.d.ts'
@@ -160,11 +159,8 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     static collideBoundingBox(paramarg0: Entity, paramarg1: Vec3, paramarg2: AABB, paramarg3: Level, paramarg4: (Object | null)[]): Vec3;
     static collideBoundingBox(paramsource: CollisionContext, parammovement: Vec3, paramboundingBox: AABB, paramlevel: Level, paramentityColliders: VoxelShape[]): Vec3;
     static createLivingAttributes(): AttributeSupplier$Builder;
-    static doesSourceIgnoreReceiver(paramsource: LivingEntity, paramreceiver: ServerPlayer): boolean;
     static getInputVector(paraminput: Vec3, paramspeed: number, paramyRot: number): Vec3;
     static getViewScale(): number;
-    static isChunkVisible(paramchunkPos: ChunkPos, paramreceiver: ServerPlayer): boolean;
-    static isReallyFar(paramsource: LivingEntity, paramreceiver: ServerPlayer): boolean;
     static resetForwardDirectionOfRelativePortalPosition(paramoffsets: Vec3): Vec3;
     static setViewScale(paramviewScale: number): void;
     constructor(type: EntityType<LivingEntity>, level: Level)

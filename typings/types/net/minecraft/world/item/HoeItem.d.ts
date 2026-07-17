@@ -1,7 +1,5 @@
-import type { Pair } from '../../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
-import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { HoeItemAccessor } from '../../../../net/fabricmc/fabric/mixin/content/registry/HoeItemAccessor.d.ts'
 import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
@@ -35,7 +33,6 @@ export class HoeItem extends Item implements HoeItemAccessor {
     static changeIntoState(paramstate: BlockState): (param0: UseOnContext) => void;
     static changeIntoStateAndDropItem(paramstate: BlockState, paramitem: ItemLike): (param0: UseOnContext) => void;
     static getId(paramitem: Item): number;
-    static getTillables(): Map<Block, Pair<(param0: UseOnContext) => boolean, (param0: UseOnContext) => void>>;
     static onlyIfAirAbove(paramcontext: UseOnContext): boolean;
     constructor(material: ToolMaterial, attackDamageBaseline: number, attackSpeedBaseline: number, properties: Item$Properties)
     useOn(context: UseOnContext): InteractionResult;

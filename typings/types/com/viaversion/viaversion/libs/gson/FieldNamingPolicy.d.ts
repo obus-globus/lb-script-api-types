@@ -13,7 +13,7 @@ export class FieldNamingPolicy extends Enum<FieldNamingPolicy> implements FieldN
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): FieldNamingPolicy;
     static values(): FieldNamingPolicy[];
-    constructor(arg2: FieldNamingPolicy)
+    private constructor()
     alternateNames(arg0: Field): string[];
     translateName(arg0: Field): string;
     name(): "IDENTITY" | "UPPER_CAMEL_CASE" | "UPPER_CAMEL_CASE_WITH_SPACES" | "UPPER_CASE_WITH_UNDERSCORES" | "LOWER_CASE_WITH_UNDERSCORES" | "LOWER_CASE_WITH_DASHES" | "LOWER_CASE_WITH_DOTS";

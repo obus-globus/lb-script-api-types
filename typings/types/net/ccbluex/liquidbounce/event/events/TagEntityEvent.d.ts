@@ -9,6 +9,7 @@ import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.
  */
 export class TagEntityEvent extends Event {
     constructor(entity: Entity, targetingInfo: EntityTargetingInfo)
+    getColor(): PriorityField<Color4b>;
     readonly entity: Entity;
     targetingInfo: EntityTargetingInfo;
     assumeFriend(): void;

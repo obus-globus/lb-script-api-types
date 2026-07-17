@@ -16,4 +16,5 @@ export class FlySpartan524 extends Mode {
     static INSTANCE: FlySpartan524;
     readonly moveHandler: EventHook<PlayerMoveEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
 }

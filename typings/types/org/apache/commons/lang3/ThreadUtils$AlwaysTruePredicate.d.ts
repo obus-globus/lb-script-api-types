@@ -4,7 +4,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ThreadUtils$ThreadGroupPredicate } from '../../../../org/apache/commons/lang3/ThreadUtils$ThreadGroupPredicate.d.ts'
 import type { ThreadUtils$ThreadPredicate } from '../../../../org/apache/commons/lang3/ThreadUtils$ThreadPredicate.d.ts'
 export class ThreadUtils$AlwaysTruePredicate extends Object implements ThreadUtils$ThreadGroupPredicate, ThreadUtils$ThreadPredicate {
-    constructor(arg0: any)
+    private constructor()
     test(arg0: Thread): boolean;
     test(arg0: ThreadGroup): boolean;
 }

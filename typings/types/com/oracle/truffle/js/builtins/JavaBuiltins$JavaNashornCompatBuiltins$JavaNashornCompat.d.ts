@@ -12,7 +12,6 @@ export class JavaBuiltins$JavaNashornCompatBuiltins$JavaNashornCompat extends En
     static isScriptFunction: JavaBuiltins$JavaNashornCompatBuiltins$JavaNashornCompat;
     static isScriptObject: JavaBuiltins$JavaNashornCompatBuiltins$JavaNashornCompat;
     static synchronized_: JavaBuiltins$JavaNashornCompatBuiltins$JavaNashornCompat;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): JavaBuiltins$JavaNashornCompatBuiltins$JavaNashornCompat;
     static values(): JavaBuiltins$JavaNashornCompatBuiltins$JavaNashornCompat[];

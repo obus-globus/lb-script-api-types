@@ -6,7 +6,6 @@ import type { BlockEntity } from '../../../../../../net/minecraft/world/level/bl
 import type { LevelChunk } from '../../../../../../net/minecraft/world/level/chunk/LevelChunk.d.ts'
 export class FabricLevelAccess extends Object implements PlatformLevelAccess {
     static INSTANCE: PlatformLevelAccess;
-    static getInstance(): PlatformLevelAccess;
     constructor()
     getBlockEntityData(arg0: BlockEntity): Object;
     getLightManager(arg0: LevelChunk, arg1: SectionPos): SodiumAuxiliaryLightManager;

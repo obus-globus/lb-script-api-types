@@ -2,7 +2,7 @@ import type { ChannelPromise } from '../../../io/netty/channel/ChannelPromise.d.
 import type { ObjectPool$Handle } from '../../../io/netty/util/internal/ObjectPool$Handle.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class PendingWriteQueue$PendingWrite extends Object {
-    constructor(arg0: ObjectPool$Handle<Object>, arg1: any)
+    private constructor(arg0: ObjectPool$Handle<PendingWriteQueue$PendingWrite>)
     // private handle: ObjectPool$Handle<PendingWriteQueue$PendingWrite>;
     // private msg: Object;
     // private next: PendingWriteQueue$PendingWrite;

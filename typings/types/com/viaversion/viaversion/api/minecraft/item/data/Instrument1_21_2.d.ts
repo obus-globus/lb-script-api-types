@@ -5,7 +5,6 @@ import type { SoundEvent } from '../../../../../../../com/viaversion/viaversion/
 import type { Protocol } from '../../../../../../../com/viaversion/viaversion/api/protocol/Protocol.d.ts'
 import type { EitherHolderType } from '../../../../../../../com/viaversion/viaversion/api/type/types/misc/EitherHolderType.d.ts'
 import type { HolderType } from '../../../../../../../com/viaversion/viaversion/api/type/types/misc/HolderType.d.ts'
-import type { Int2IntFunction } from '../../../../../../../com/viaversion/viaversion/libs/fastutil/ints/Int2IntFunction.d.ts'
 import type { Copyable } from '../../../../../../../com/viaversion/viaversion/util/Copyable.d.ts'
 import type { Rewritable } from '../../../../../../../com/viaversion/viaversion/util/Rewritable.d.ts'
 import type { Record } from '../../../../../../../java/lang/Record.d.ts'

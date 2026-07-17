@@ -2,7 +2,7 @@ import type { AbstractNioChannel$AbstractNioUnsafe } from '../../../../io/netty/
 import type { AbstractNioMessageChannel } from '../../../../io/netty/channel/nio/AbstractNioMessageChannel.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class AbstractNioMessageChannel$NioMessageUnsafe extends AbstractNioChannel$AbstractNioUnsafe {
-    constructor(null_: AbstractNioMessageChannel, arg1: any)
+    private constructor(null_: AbstractNioMessageChannel)
     // private readBuf: Object[];
     read(): void;
 }

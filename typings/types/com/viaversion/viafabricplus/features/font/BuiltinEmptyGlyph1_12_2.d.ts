@@ -5,7 +5,6 @@ import type { GlyphStitcher } from '../../../../../net/minecraft/client/gui/font
 import type { BakedSheetGlyph } from '../../../../../net/minecraft/client/gui/font/glyphs/BakedSheetGlyph.d.ts'
 export class BuiltinEmptyGlyph1_12_2 extends Enum<BuiltinEmptyGlyph1_12_2> implements GlyphInfo {
     static INSTANCE: BuiltinEmptyGlyph1_12_2;
-    static simple(paramadvance: number): GlyphInfo;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): BuiltinEmptyGlyph1_12_2;
     static values(): BuiltinEmptyGlyph1_12_2[];

@@ -8,7 +8,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class RegExpStringIteratorPrototypeBuiltins$RegExpStringIteratorPrototype extends Enum<RegExpStringIteratorPrototypeBuiltins$RegExpStringIteratorPrototype> implements BuiltinEnum<RegExpStringIteratorPrototypeBuiltins$RegExpStringIteratorPrototype> {
     static next: RegExpStringIteratorPrototypeBuiltins$RegExpStringIteratorPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): RegExpStringIteratorPrototypeBuiltins$RegExpStringIteratorPrototype;
     static values(): RegExpStringIteratorPrototypeBuiltins$RegExpStringIteratorPrototype[];

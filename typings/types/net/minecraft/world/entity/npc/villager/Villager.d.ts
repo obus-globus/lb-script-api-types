@@ -173,7 +173,6 @@ export class Villager extends AbstractVillager implements VillagerAccessor, Repu
     static createDefaultVillagerData(): VillagerData;
     static createLivingAttributes(): AttributeSupplier$Builder;
     static createMobAttributes(): AttributeSupplier$Builder;
-    static fabric_setItemFoodValues(paramarg0: Map<Item, number>): void;
     static getEquipmentForSlot(paramslot: EquipmentSlot, paramtype: number): Item;
     static getInputVector(paraminput: Vec3, paramspeed: number, paramyRot: number): Vec3;
     static getSpeedUpSecondsWhenFeeding(paramticksUntilAdult: number): number;

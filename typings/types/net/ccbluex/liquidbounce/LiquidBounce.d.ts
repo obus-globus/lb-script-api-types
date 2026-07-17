@@ -1,6 +1,7 @@
 import type { InputStream } from '../../../java/io/InputStream.d.ts'
 import type { CompletableFuture } from '../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
+import type { Continuation } from '../../../kotlin/coroutines/Continuation.d.ts'
 import type { CoroutineDispatcher } from '../../../kotlinx/coroutines/CoroutineDispatcher.d.ts'
 import type { EventHook } from '../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { EventListener } from '../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
@@ -88,10 +89,13 @@ export class LiquidBounce extends Object implements EventListener {
     identifier(path: string): Identifier;
     // private initializeClient(workerDispatcher: CoroutineDispatcher, renderThreadDispatcher: CoroutineDispatcher): CompletableFuture<void>;
     // private initializeFeatures(): void;
-    // private initializeManagers(workerDispatcher: CoroutineDispatcher, renderThreadDispatcher: CoroutineDispatcher): void;
-    // private initializeResources(dispatcher: CoroutineDispatcher): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private initializeManagers(workerDispatcher: CoroutineDispatcher, renderThreadDispatcher: CoroutineDispatcher, $completion: Continuation<void>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private initializeResources(dispatcher: CoroutineDispatcher, $completion: Continuation<void>): any;
     parent(): EventListener | null;
-    // private prepareGuiStage(dispatcher: CoroutineDispatcher): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private prepareGuiStage(dispatcher: CoroutineDispatcher, $completion: Continuation<void>): any;
     resource(path: string): InputStream;
     resourceToString(path: string): string;
     // private shutdownClient(): void;

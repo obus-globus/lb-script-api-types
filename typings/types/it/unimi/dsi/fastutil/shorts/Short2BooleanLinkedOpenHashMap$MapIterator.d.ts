@@ -2,7 +2,6 @@ import type { Short2BooleanMap$Entry } from '../../../../../it/unimi/dsi/fastuti
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class Short2BooleanLinkedOpenHashMap$MapIterator<ConsumerType extends unknown> extends Object {
     constructor(null_: { [key: string]: any })
-    constructor(null_: { [key: string]: any }, arg1: number, arg2: (Object | null)[])
     // private curr: number;
     // private index: number;
     // private next: number;

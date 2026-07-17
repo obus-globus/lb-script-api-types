@@ -7,6 +7,7 @@ export abstract class AntiVoidMode extends Mode {
     constructor(name: string)
     /*not mapped: */ isExempt(): boolean;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     discoverRescuePosition(): Vec3 | null;
     /**
      * Attempt to safely move the player to a safe location.

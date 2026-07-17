@@ -1,4 +1,3 @@
-import type { DefaultConstructorMarker } from '../../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { CallableMemberDescriptor$Kind } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableMemberDescriptor$Kind.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
 import type { FunctionDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/FunctionDescriptor.d.ts'
@@ -22,7 +21,6 @@ export class DeserializedSimpleFunctionDescriptor extends SimpleFunctionDescript
     static getSubstitutedValueParameters(paramarg0: FunctionDescriptor, paramarg1: ValueParameterDescriptor[], paramarg2: TypeSubstitutor, paramarg3: boolean, paramarg4: boolean, paramarg5: boolean[]): ValueParameterDescriptor[];
     static toString(paramarg0: DeclarationDescriptor): string;
     constructor(arg0: DeclarationDescriptor, arg1: SimpleFunctionDescriptor, arg2: AnnotationDescriptor[], arg3: Name, arg4: CallableMemberDescriptor$Kind, arg5: ProtoBuf$Function, arg6: NameResolver, arg7: TypeTable, arg8: VersionRequirementTable, arg9: DeserializedContainerSource, arg10: SourceElement)
-    constructor(arg0: DeclarationDescriptor, arg1: SimpleFunctionDescriptor, arg2: AnnotationDescriptor[], arg3: Name, arg4: CallableMemberDescriptor$Kind, arg5: ProtoBuf$Function, arg6: NameResolver, arg7: TypeTable, arg8: VersionRequirementTable, arg9: DeserializedContainerSource, arg10: SourceElement, arg11: number, arg12: DefaultConstructorMarker)
     readonly containerSource: DeserializedContainerSource;
     readonly nameResolver: NameResolver;
     readonly proto: ProtoBuf$Function;

@@ -21,7 +21,6 @@ export class AtomicsBuiltins$Atomics extends Enum<AtomicsBuiltins$Atomics> imple
     static wait: AtomicsBuiltins$Atomics;
     static waitAsync: AtomicsBuiltins$Atomics;
     static xor: AtomicsBuiltins$Atomics;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): AtomicsBuiltins$Atomics;
     static values(): AtomicsBuiltins$Atomics[];

@@ -10,6 +10,7 @@ export class FlyEnderpearl extends Mode {
     static INSTANCE: FlyEnderpearl;
     readonly packetHandler: EventHook<PacketEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     readonly repeatable: EventHook<GameTickEvent>;
     // private rotations: RotationsValueGroup;
     // private shouldFly: boolean;

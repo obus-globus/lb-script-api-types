@@ -4,7 +4,7 @@ import type { Consumer } from '../../../../../../java/util/function/Consumer.d.t
 import type { LongConsumer as LongConsumer_2 } from '../../../../../../java/util/function/LongConsumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class LongOpenHashSet$SetIterator extends Object implements LongIterator {
-    constructor(null_: (Object | null)[], arg1: any)
+    private constructor(null_: (Object | null)[])
     // private c: number;
     // private last: number;
     // private mustReturnNull: boolean;

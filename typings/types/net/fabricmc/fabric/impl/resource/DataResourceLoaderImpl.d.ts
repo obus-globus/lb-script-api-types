@@ -30,7 +30,6 @@ export class DataResourceLoaderImpl extends ResourceLoaderImpl implements DataRe
     static INSTANCE: DataResourceLoaderImpl;
     static RECIPE_MANAGER_KEY: PreparableReloadListener$StateKey<RecipeManager>;
     static REGISTRY_LOOKUP_KEY: PreparableReloadListener$StateKey<HolderLookup$Provider>;
-    static get(): DataResourceLoader;
     static get(paramarg0: PackType): ResourceLoaderImpl;
     static registerBuiltinPack(paramarg0: Identifier, paramarg1: string, paramarg2: ModContainer, paramarg3: PackActivationType): boolean;
     static registerBuiltinPack(paramarg0: Identifier, paramarg1: string, paramarg2: ModContainer, paramarg3: Component, paramarg4: PackActivationType): boolean;

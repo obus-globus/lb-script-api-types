@@ -4,7 +4,7 @@ import type { URI } from '../../../../java/net/URI.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class SystemBrowserOptions extends Object {
     static builder(): SystemBrowserOptions$SystemBrowserOptionsBuilder;
-    constructor(arg0: string, arg1: string, arg2: URI, arg3: URI, arg4: OpenBrowserAction, arg5: any)
+    private constructor(arg0: string, arg1: string, arg2: URI, arg3: URI, arg4: OpenBrowserAction)
     // private browserRedirectError: URI;
     // private browserRedirectSuccess: URI;
     // private htmlMessageError: string;

@@ -9,8 +9,6 @@ export class Alignment$ScreenAxisX extends Enum<Alignment$ScreenAxisX> implement
     static LEFT: Alignment$ScreenAxisX;
     static RIGHT: Alignment$ScreenAxisX;
     static getEntries(): Alignment$ScreenAxisX[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): Alignment$ScreenAxisX;
     static values(): Alignment$ScreenAxisX[];

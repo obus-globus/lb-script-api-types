@@ -16,6 +16,7 @@ export class SpeedHylexGround extends Mode {
     constructor(parent: ModeValueGroup<any>)
     // private groundTicks: number;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private tickHandler: EventHook<GameTickEvent>;
     enable(): void;
 }

@@ -11,9 +11,6 @@ import type { BlockEntity } from '../../../../../../net/minecraft/world/level/bl
 import type { BlockEntityType$BlockEntitySupplier } from '../../../../../../net/minecraft/world/level/block/entity/BlockEntityType$BlockEntitySupplier.d.ts'
 import type { BlockState } from '../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class BlockEntityType<T extends BlockEntity> extends Object implements ExtendedBlockEntityType<BlockEntity>, FabricBlockEntityType, BlockEntityTypeAccessor {
-    static addRenderPredicate<T extends BlockEntity>(paramarg0: BlockEntityType<T>, paramarg1: (param0: BlockGetter, param1: BlockPos, param2: T) => boolean): void;
-    static removeRenderPredicate<T extends BlockEntity>(paramarg0: BlockEntityType<T>, paramarg1: (param0: BlockGetter, param1: BlockPos, param2: T) => boolean): boolean;
-    static shouldRender<T extends BlockEntity>(paramarg0: BlockEntityType<T>, paramarg1: BlockGetter, paramarg2: BlockPos, paramarg3: T): boolean;
     constructor(factory: (param0: BlockPos, param1: BlockState) => T, validBlocks: Block[])
     // private builtInRegistryHolder: Holder$Reference<BlockEntityType<any>>;
     // private factory: (param0: BlockPos, param1: BlockState) => T;

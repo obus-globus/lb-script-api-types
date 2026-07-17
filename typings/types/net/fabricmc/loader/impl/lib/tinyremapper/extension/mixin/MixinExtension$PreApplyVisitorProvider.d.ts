@@ -5,7 +5,7 @@ import type { TrClass } from '../../../../../../../../net/fabricmc/loader/impl/l
 import type { MixinExtension } from '../../../../../../../../net/fabricmc/loader/impl/lib/tinyremapper/extension/mixin/MixinExtension.d.ts'
 import type { ClassVisitor } from '../../../../../../../../org/objectweb/asm/ClassVisitor.d.ts'
 export class MixinExtension$PreApplyVisitorProvider extends Object implements TinyRemapper$ApplyVisitorProvider {
-    constructor(null_: MixinExtension, arg1: any)
+    private constructor(null_: MixinExtension)
     insertApplyVisitor(arg0: TrClass, arg1: ClassVisitor, arg2: InputTag[]): ClassVisitor;
     insertApplyVisitor(arg0: TrClass, arg1: ClassVisitor): ClassVisitor;
 }

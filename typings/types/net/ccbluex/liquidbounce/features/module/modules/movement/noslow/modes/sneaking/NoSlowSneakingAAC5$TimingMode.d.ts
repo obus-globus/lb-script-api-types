@@ -8,8 +8,6 @@ export class NoSlowSneakingAAC5$TimingMode extends Enum<NoSlowSneakingAAC5$Timin
     static PRE_POST: NoSlowSneakingAAC5$TimingMode;
     static PRE_TICK: NoSlowSneakingAAC5$TimingMode;
     static getEntries(): NoSlowSneakingAAC5$TimingMode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): NoSlowSneakingAAC5$TimingMode;
     static values(): NoSlowSneakingAAC5$TimingMode[];

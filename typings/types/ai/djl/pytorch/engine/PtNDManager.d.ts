@@ -15,7 +15,7 @@ export class PtNDManager extends BaseNDManager {
     static UID_GENERATOR: AtomicLong;
     static copyBuffer(paramarg0: Buffer, paramarg1: ByteBuffer): void;
     static validateBuffer(paramarg0: Buffer, paramarg1: DataType, paramarg2: number): void;
-    constructor(arg0: NDManager, arg1: Device, arg2: any)
+    private constructor(arg0: NDManager, arg1: Device)
     allocateDirect(arg0: number): ByteBuffer;
     arange(arg0: number): NDArray;
     arange(arg0: number, arg1: number): NDArray;

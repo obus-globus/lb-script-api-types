@@ -4,7 +4,6 @@ import type { Direction$Axis } from '../../../../../net/minecraft/core/Direction
 import type { DiscreteVoxelShape } from '../../../../../net/minecraft/world/phys/shapes/DiscreteVoxelShape.d.ts'
 import type { VoxelShape } from '../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 export class ArrayVoxelShape extends VoxelShape implements ArrayVoxelShapeInvoker {
-    static init(paramarg0: DiscreteVoxelShape, paramarg1: (Object | null)[], paramarg2: (Object | null)[], paramarg3: (Object | null)[]): ArrayVoxelShape;
     constructor(shape: DiscreteVoxelShape, xs: (Object | null)[], ys: (Object | null)[], zs: (Object | null)[])
     constructor(shape: DiscreteVoxelShape, xs: number[], ys: number[], zs: number[])
     // private xs: (Object | null)[];

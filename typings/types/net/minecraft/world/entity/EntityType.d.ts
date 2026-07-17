@@ -45,8 +45,6 @@ export class EntityType<T extends Entity> extends Object implements FabricEntity
     static create(paramtype: EntityType<any>, paraminput: ValueInput, paramlevel: Level, paramreason: EntitySpawnReason): Optional<Entity>;
     static create(paraminput: ValueInput, paramlevel: Level, paramrequest: EntitySpawnRequest): Optional<Entity>;
     static createDefaultStackConfig<T extends Entity>(paramlevel: Level, paramitemStack: ItemStack, paramuser: LivingEntity): PostSpawnProcessor<T>;
-    static forClass<B extends unknown, T extends B>(paramcls: Class<T>): EntityTypeTest<B, T>;
-    static forExactClass<B extends unknown, T extends B>(paramcls: Class<T>): EntityTypeTest<B, T>;
     static getKey(paramtype: EntityType<any>): Identifier;
     static loadEntitiesRecursive(paramentities: ValueInput[], paramlevel: Level, paramreason: EntitySpawnReason): Stream<Entity>;
     static loadEntityRecursive(paramtag: CompoundTag, paramlevel: Level, paramrequest: EntitySpawnRequest, parampostLoad: (param0: Entity) => Entity): Entity;

@@ -1,5 +1,6 @@
 import type { File } from '../../../../../java/io/File.d.ts'
 import type { Result } from '../../../../../kotlin/Result.d.ts'
+import type { Continuation } from '../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { MarketplaceItem } from '../../../../../net/ccbluex/liquidbounce/api/models/marketplace/MarketplaceItem.d.ts'
 import type { MarketplaceItemType } from '../../../../../net/ccbluex/liquidbounce/api/models/marketplace/MarketplaceItemType.d.ts'
 import type { Config } from '../../../../../net/ccbluex/liquidbounce/config/types/Config.d.ts'
@@ -26,9 +27,13 @@ export class MarketplaceManager extends Config implements EventListener {
     getSubscribedItemsOfType(itemType: MarketplaceItemType): SubscribedItem[];
     isSubscribed(itemId: number): boolean;
     parent(): EventListener | null;
-    subscribe(item: MarketplaceItem): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    subscribe(item: MarketplaceItem, $completion: Continuation<void>): any;
     unregister(): void;
-    unsubscribe(itemId: number): void;
-    update(item: SubscribedItem, task: Task | null, command: Command | null): Result<void>;
-    updateAll(task: Task | null, command: Command | null): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    unsubscribe(itemId: number, $completion: Continuation<void>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    update(item: SubscribedItem, task: Task | null, command: Command | null, $completion: Continuation<Result<void>>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    updateAll(task: Task | null, command: Command | null, $completion: Continuation<void>): any;
 }

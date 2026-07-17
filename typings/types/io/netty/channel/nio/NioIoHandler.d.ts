@@ -18,7 +18,7 @@ export class NioIoHandler extends Object implements IoHandler {
     static newFactory(): IoHandlerFactory;
     static newFactory(paramarg0: SelectorProvider): IoHandlerFactory;
     static newFactory(paramarg0: SelectorProvider, paramarg1: SelectStrategyFactory): IoHandlerFactory;
-    constructor(arg0: ThreadAwareExecutor, arg1: SelectorProvider, arg2: SelectStrategy, arg3: IntSupplier)
+    private constructor(arg0: ThreadAwareExecutor, arg1: SelectorProvider, arg2: SelectStrategy)
     // private cancelledKeys: number;
     // private executor: ThreadAwareExecutor;
     // private needsToSelectAgain: boolean;

@@ -8,7 +8,6 @@ import type { Resource } from '../../../../../net/minecraft/server/packs/resourc
 import type { ResourceProvider } from '../../../../../net/minecraft/server/packs/resources/ResourceProvider.d.ts'
 export class ShaderCreator$IrisProgramResourceFactory extends Record implements ResourceProvider {
     static EMPTY: (param0: Identifier) => Optional<Resource>;
-    static fromMap(parammap: Map<Identifier, Resource>): (param0: Identifier) => Optional<Resource>;
     private constructor(json: string, vertex: string, geometry: string, tessControl: string, tessEval: string, fragment: string)
     // private fragment: string;
     // private geometry: string;

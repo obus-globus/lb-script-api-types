@@ -3,7 +3,7 @@ import type { Payload } from '../../../org/ahocorasick/trie/Payload.d.ts'
 import type { PayloadTrie } from '../../../org/ahocorasick/trie/PayloadTrie.d.ts'
 import type { TrieConfig } from '../../../org/ahocorasick/trie/TrieConfig.d.ts'
 export class PayloadTrie$PayloadTrieBuilder<T extends unknown> extends Object {
-    constructor(arg0: any)
+    private constructor()
     // private trie: PayloadTrie<T>;
     // private trieConfig: TrieConfig;
     addKeyword(arg0: string): PayloadTrie$PayloadTrieBuilder<T>;

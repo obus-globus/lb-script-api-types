@@ -90,7 +90,6 @@ export class ConstructorBuiltins$Constructor extends Enum<ConstructorBuiltins$Co
     static WeakSet: ConstructorBuiltins$Constructor;
     static Worker: ConstructorBuiltins$Constructor;
     static ZonedDateTime: ConstructorBuiltins$Constructor;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): ConstructorBuiltins$Constructor;
     static values(): ConstructorBuiltins$Constructor[];

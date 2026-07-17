@@ -9,7 +9,6 @@ import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class SegmentsPrototypeBuiltins$SegmentsPrototype extends Enum<SegmentsPrototypeBuiltins$SegmentsPrototype> implements BuiltinEnum<SegmentsPrototypeBuiltins$SegmentsPrototype> {
     static _iterator: SegmentsPrototypeBuiltins$SegmentsPrototype;
     static containing: SegmentsPrototypeBuiltins$SegmentsPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): SegmentsPrototypeBuiltins$SegmentsPrototype;
     static values(): SegmentsPrototypeBuiltins$SegmentsPrototype[];

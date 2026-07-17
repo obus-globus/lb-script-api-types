@@ -10,7 +10,6 @@ export class FinalizationRegistryPrototypeBuiltins$FinalizationRegistryPrototype
     static cleanupSome: FinalizationRegistryPrototypeBuiltins$FinalizationRegistryPrototype;
     static register: FinalizationRegistryPrototypeBuiltins$FinalizationRegistryPrototype;
     static unregister: FinalizationRegistryPrototypeBuiltins$FinalizationRegistryPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): FinalizationRegistryPrototypeBuiltins$FinalizationRegistryPrototype;
     static values(): FinalizationRegistryPrototypeBuiltins$FinalizationRegistryPrototype[];

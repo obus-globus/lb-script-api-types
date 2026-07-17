@@ -13,7 +13,6 @@ import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Number } from '../../../java/lang/Number.d.ts'
 export abstract class NDArrayAdapter extends Object implements NDArray {
-    static decode(paramarg0: NDManager, paramarg1: number[]): NDArray;
     constructor(arg0: NDManager, arg1: NDManager, arg2: Shape, arg3: DataType, arg4: string)
     // private alternativeArray: NDArray;
     // private alternativeManager: NDManager;

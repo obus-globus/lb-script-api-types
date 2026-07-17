@@ -8,7 +8,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class AsyncContextSnapshotPrototypeBuiltins$AsyncContextSnapshotPrototype extends Enum<AsyncContextSnapshotPrototypeBuiltins$AsyncContextSnapshotPrototype> implements BuiltinEnum<AsyncContextSnapshotPrototypeBuiltins$AsyncContextSnapshotPrototype> {
     static run: AsyncContextSnapshotPrototypeBuiltins$AsyncContextSnapshotPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): AsyncContextSnapshotPrototypeBuiltins$AsyncContextSnapshotPrototype;
     static values(): AsyncContextSnapshotPrototypeBuiltins$AsyncContextSnapshotPrototype[];

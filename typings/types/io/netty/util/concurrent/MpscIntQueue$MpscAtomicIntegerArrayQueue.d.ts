@@ -4,7 +4,6 @@ import type { IntBinaryOperator } from '../../../../java/util/function/IntBinary
 import type { IntConsumer } from '../../../../java/util/function/IntConsumer.d.ts'
 import type { IntSupplier } from '../../../../java/util/function/IntSupplier.d.ts'
 export class MpscIntQueue$MpscAtomicIntegerArrayQueue extends AtomicIntegerArray implements MpscIntQueue {
-    static create(paramarg0: number, paramarg1: number): MpscIntQueue;
     constructor(arg0: number, arg1: number)
     // private consumerIndex: number;
     // private emptyValue: number;

@@ -5,7 +5,6 @@ import type { DataResult } from '../../../com/mojang/serialization/DataResult.d.
 import type { Decoder } from '../../../com/mojang/serialization/Decoder.d.ts'
 import type { DynamicOps } from '../../../com/mojang/serialization/DynamicOps.d.ts'
 import type { Encoder } from '../../../com/mojang/serialization/Encoder.d.ts'
-import type { KeyCompressor } from '../../../com/mojang/serialization/KeyCompressor.d.ts'
 import type { Lifecycle } from '../../../com/mojang/serialization/Lifecycle.d.ts'
 import type { MapCodec$ResultFunction } from '../../../com/mojang/serialization/MapCodec$ResultFunction.d.ts'
 import type { MapDecoder } from '../../../com/mojang/serialization/MapDecoder.d.ts'
@@ -21,7 +20,6 @@ import type { Stream } from '../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class MapCodec<A extends unknown> extends CompressorHolder implements MapDecoder<A>, MapEncoder<A> {
     static assumeMapUnsafe<A extends unknown>(paramarg0: Codec<A>): MapCodec<A>;
-    static makeCompressedBuilder<T extends unknown>(paramarg0: DynamicOps<T>, paramarg1: KeyCompressor<T>): RecordBuilder<T>;
     static of<A extends unknown>(paramarg0: MapEncoder<A>, paramarg1: MapDecoder<A>): MapCodec<A>;
     static of<A extends unknown>(paramarg0: MapEncoder<A>, paramarg1: MapDecoder<A>, paramarg2: () => string): MapCodec<A>;
     static recursive<A extends unknown>(paramarg0: string, paramarg1: (param0: Codec<A>) => MapCodec<A>): MapCodec<A>;

@@ -5,7 +5,7 @@ import type { UserNamePasswordParameters$UserNamePasswordParametersBuilder } fro
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class UserNamePasswordParameters extends Object implements IAcquireTokenParameters {
     static builder(paramarg0: string[], paramarg1: string, paramarg2: string[]): UserNamePasswordParameters$UserNamePasswordParametersBuilder;
-    constructor(arg0: (Object | null)[], arg1: string, arg2: string[], arg3: ClaimsRequest, arg4: Map<Object | null, Object | null>, arg5: Map<Object | null, Object | null>, arg6: string, arg7: PopParameters, arg8: any)
+    private constructor(arg0: string[], arg1: string, arg2: string[], arg3: ClaimsRequest, arg4: { [key: string]: string }, arg5: { [key: string]: string }, arg6: string, arg7: PopParameters)
     // private claims: ClaimsRequest;
     // private extraHttpHeaders: { [key: string]: string };
     // private extraQueryParameters: { [key: string]: string };

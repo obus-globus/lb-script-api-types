@@ -7,6 +7,7 @@ export class ModuleTimer$Classic extends Mode {
     static Companion: Tagged$Companion;
     static INSTANCE: ModuleTimer$Classic;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     readonly repeatable: EventHook<GameTickEvent>;
     // private speed: number;
     // private /*not mapped: */ getSpeed(): number;

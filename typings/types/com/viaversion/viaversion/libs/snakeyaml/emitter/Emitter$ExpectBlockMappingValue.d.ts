@@ -2,6 +2,6 @@ import type { Emitter } from '../../../../../../com/viaversion/viaversion/libs/s
 import type { EmitterState } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/emitter/EmitterState.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class Emitter$ExpectBlockMappingValue extends Object implements EmitterState {
-    constructor(null_: Emitter, arg1: any)
+    private constructor(null_: Emitter)
     expect(): void;
 }

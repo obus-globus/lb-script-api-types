@@ -17,7 +17,8 @@ export class SafeCollector<T extends unknown> extends ContinuationImpl implement
     readonly context: CoroutineContext;
     // private lastEmissionContext: CoroutineContext | null;
     // private checkContext(currentContext: CoroutineContext, previousContext: CoroutineContext | null, value: T): void;
-    emit(value: T): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    emit(value: T, $completion: Continuation<void>): any;
     // private emit(uCont: Continuation<void>, value: T): Object | null;
     // private exceptionTransparencyViolated(exception: DownstreamExceptionContext, value: Object | null): void;
     getStackTraceElement(): StackTraceElement | null;

@@ -5,7 +5,6 @@ import type { ResultField } from '../../../../net/minecraft/util/profiling/Resul
 export class EmptyProfileResults extends Object implements ProfileResults {
     static EMPTY: EmptyProfileResults;
     static PATH_SEPARATOR: string;
-    static demanglePath(parampath: string): string;
     private constructor()
     getEndTimeNano(): number;
     getEndTimeTicks(): number;

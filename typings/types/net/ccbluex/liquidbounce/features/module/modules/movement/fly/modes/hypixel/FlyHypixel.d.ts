@@ -19,6 +19,7 @@ export class FlyHypixel extends Mode {
     // private isFlying: boolean;
     // private packetHandler: EventHook<PacketEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private strafeHandler: EventHook<PlayerMoveEvent>;
     // private tickHandler: EventHook<GameTickEvent>;
     // private timer: number;

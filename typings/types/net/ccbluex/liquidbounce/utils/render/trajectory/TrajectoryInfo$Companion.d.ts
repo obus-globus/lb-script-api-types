@@ -12,5 +12,5 @@ export class TrajectoryInfo$Companion extends Object {
     POTION: TrajectoryInfo;
     TRIDENT: TrajectoryInfo;
     WIND_CHARGE: TrajectoryInfo;
-    bowWithUsageDuration(usageDurationTicks: number): TrajectoryInfo | null;
+    bowWithUsageDuration(usageDurationTicks?: number): TrajectoryInfo | null;
 }

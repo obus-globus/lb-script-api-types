@@ -5,7 +5,6 @@ import type { ActiveTextCollector$Parameters } from '../../../../net/minecraft/c
 import type { GuiGraphicsExtractor } from '../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { GuiGraphicsExtractor$HoveredTextEffects } from '../../../../net/minecraft/client/gui/GuiGraphicsExtractor$HoveredTextEffects.d.ts'
 import type { TextAlignment } from '../../../../net/minecraft/client/gui/TextAlignment.d.ts'
-import type { GuiTextRenderState } from '../../../../net/minecraft/client/renderer/state/gui/GuiTextRenderState.d.ts'
 import type { Component } from '../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Style } from '../../../../net/minecraft/network/chat/Style.d.ts'
 import type { FormattedCharSequence } from '../../../../net/minecraft/util/FormattedCharSequence.d.ts'
@@ -13,8 +12,6 @@ import type { FormattedCharSink } from '../../../../net/minecraft/util/Formatted
 export class GuiGraphicsExtractor$RenderingTextCollector extends Object implements Consumer<Style>, ActiveTextCollector {
     static MIN_SCROLL_PERIOD: number;
     static PERIOD_PER_SCROLLED_PIXEL: number;
-    static findElementUnderCursor(paramtext: GuiTextRenderState, paramtestX: number, paramtestY: number, paramoutput: (param0: Style) => void): void;
-    static isPointInRectangle(paramx: number, paramy: number, paramleft: number, paramtop: number, paramright: number, parambottom: number): boolean;
     private constructor(null_: GuiGraphicsExtractor, initialParameters: ActiveTextCollector$Parameters, hoveredTextEffects: GuiGraphicsExtractor$HoveredTextEffects, additonalConsumer: (param0: Style) => void)
     // private additionalConsumer: (param0: Style) => void;
     // private defaultParameters: ActiveTextCollector$Parameters;

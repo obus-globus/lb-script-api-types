@@ -17,7 +17,7 @@ export class HttpAppender extends AbstractAppender {
     static EMPTY_ARRAY: Appender[];
     static newBuilder<B extends HttpAppender$Builder<B>>(): B;
     static parseInt(params: string, paramdefaultValue: number): number;
-    constructor(arg0: string, arg1: Layout<Serializable>, arg2: Filter, arg3: boolean, arg4: HttpManager, arg5: Property[], arg6: any)
+    private constructor(name: string, layout: Layout<Serializable>, filter: Filter, ignoreExceptions: boolean, manager: HttpManager, properties: Property[])
     // private manager: HttpManager;
     append(event: LogEvent): void;
     start(): void;

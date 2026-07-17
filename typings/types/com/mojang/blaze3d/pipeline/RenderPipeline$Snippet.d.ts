@@ -11,8 +11,6 @@ import type { FabricRenderPipeline$Snippet } from '../../../../net/fabricmc/fabr
 import type { ShaderDefines } from '../../../../net/minecraft/client/renderer/ShaderDefines.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
 export class RenderPipeline$Snippet extends Record implements FabricRenderPipeline$Snippet {
-    static withPipelineDrawModeForGui(paramarg0: RenderPipeline$Snippet, paramarg1: boolean): RenderPipeline$Snippet;
-    static withoutPipelineDrawModeForGui(paramarg0: RenderPipeline$Snippet): RenderPipeline$Snippet;
     constructor(vertexShader: Optional<Identifier>, fragmentShader: Optional<Identifier>, shaderDefines: Optional<ShaderDefines>, bindGroupLayouts: Optional<BindGroupLayout[]>, colorTargetStates: ColorTargetState[], activeColorTargetStateCount: number, depthStencilState: Optional<DepthStencilState>, polygonMode: Optional<PolygonMode>, cull: Optional<boolean>, vertexFormatPerBuffer: VertexFormat[], vertexFormatMode: Optional<PrimitiveTopology>)
     // private activeColorTargetStateCount: number;
     // private bindGroupLayouts: Optional<BindGroupLayout[]>;

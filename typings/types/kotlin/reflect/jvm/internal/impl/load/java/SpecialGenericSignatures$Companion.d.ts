@@ -1,11 +1,10 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { DefaultConstructorMarker } from '../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { SpecialGenericSignatures$Companion$NameAndSignature } from '../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/SpecialGenericSignatures$Companion$NameAndSignature.d.ts'
 import type { SpecialGenericSignatures$SpecialSignatureInfo } from '../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/SpecialGenericSignatures$SpecialSignatureInfo.d.ts'
 import type { SpecialGenericSignatures$TypeSafeBarrierDescription } from '../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/SpecialGenericSignatures$TypeSafeBarrierDescription.d.ts'
 import type { Name } from '../../../../../../../kotlin/reflect/jvm/internal/impl/name/Name.d.ts'
 export class SpecialGenericSignatures$Companion extends Object {
-    constructor(arg0: DefaultConstructorMarker)
+    private constructor()
     getBuiltinFunctionNamesByJvmName(arg0: Name): Name;
     getERASED_COLLECTION_PARAMETER_SIGNATURES(): string[];
     getERASED_VALUE_PARAMETERS_SHORT_NAMES(): Name[];

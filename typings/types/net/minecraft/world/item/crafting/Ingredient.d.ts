@@ -19,8 +19,6 @@ export class Ingredient extends Object implements Predicate<ItemStack>, FabricIn
     static NON_AIR_HOLDER_SET_CODEC: Codec<Holder<Item>[]>;
     static OPTIONAL_CONTENTS_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Optional<Ingredient>>;
     static displayForSingleItem(paramitem: Holder<Item>): SlotDisplay;
-    static isEqual<T extends unknown>(paramarg0: Object): (param0: T) => boolean;
-    static not<T extends unknown>(paramarg0: (param0: Object) => boolean): (param0: T) => boolean;
     static of(paramstream: Stream<ItemLike>): Ingredient;
     static of(paramtag: Holder<Item>[]): Ingredient;
     static of(paramitemLike: ItemLike): Ingredient;

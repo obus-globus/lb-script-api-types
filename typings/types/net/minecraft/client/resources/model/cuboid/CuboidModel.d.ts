@@ -1,4 +1,3 @@
-import type { Gson } from '../../../../../../com/google/gson/Gson.d.ts'
 import type { Reader } from '../../../../../../java/io/Reader.d.ts'
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -16,7 +15,6 @@ import type { TextureSlots$Data } from '../../../../../../net/minecraft/client/r
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
 export class CuboidModel extends Record implements CuboidModelAccessor, UnbakedModel {
     static PARTICLE_TEXTURE_REFERENCE: string;
-    static fabric_getGson(): Gson;
     static fromStream(paramreader: Reader): CuboidModel;
     constructor(geometry: (param0: TextureSlots, param1: ModelBaker, param2: ModelState, param3: () => string) => QuadCollection, guiLight: UnbakedModel$GuiLight, ambientOcclusion: boolean, transforms: ItemTransforms, textureSlots: TextureSlots$Data, parent: Identifier)
     // private ambientOcclusion: boolean;

@@ -9,7 +9,6 @@ import type { EnchantmentEntityEffect } from '../../../../../../net/minecraft/wo
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class Ignite extends Record implements EnchantmentEntityEffect {
     static CODEC: MapCodec<Ignite>;
-    static bootstrap(paramregistry: MapCodec<EnchantmentEntityEffect>[]): MapCodec<EnchantmentEntityEffect>;
     constructor(duration: LevelBasedValue)
     // private duration: LevelBasedValue;
     apply(serverLevel: ServerLevel, enchantmentLevel: number, item: EnchantedItemInUse, entity: Entity, position: Vec3): void;

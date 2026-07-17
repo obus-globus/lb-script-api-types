@@ -4,7 +4,7 @@ import type { Thread } from '../../../../../java/lang/Thread.d.ts'
 import type { AbstractOwnableSynchronizer } from '../../../../../java/util/concurrent/locks/AbstractOwnableSynchronizer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class InterruptibleTask$Blocker extends AbstractOwnableSynchronizer implements Runnable {
-    constructor(arg0: InterruptibleTask<Object>, arg1: any)
+    private constructor(task: InterruptibleTask<Object>)
     // private task: InterruptibleTask<Object>;
     getOwner(): Thread;
     run(): void;

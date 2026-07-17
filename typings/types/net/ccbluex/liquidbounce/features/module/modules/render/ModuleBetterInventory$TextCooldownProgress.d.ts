@@ -4,6 +4,7 @@ import type { Color4b } from '../../../../../../../net/ccbluex/liquidbounce/rend
 export class ModuleBetterInventory$TextCooldownProgress extends ToggleableValueGroup {
     static INSTANCE: ModuleBetterInventory$TextCooldownProgress;
     readonly color: Color4b;
+    getColor(): Color4b;
     readonly mode: ModuleBetterInventory$CooldownProgressMode;
     readonly scale: number;
 }

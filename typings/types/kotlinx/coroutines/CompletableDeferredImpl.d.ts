@@ -1,5 +1,6 @@
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Throwable } from '../../java/lang/Throwable.d.ts'
+import type { Continuation } from '../../kotlin/coroutines/Continuation.d.ts'
 import type { CompletableDeferred } from '../../kotlinx/coroutines/CompletableDeferred.d.ts'
 import type { Job } from '../../kotlinx/coroutines/Job.d.ts'
 import type { Job$Key } from '../../kotlinx/coroutines/Job$Key.d.ts'
@@ -10,7 +11,8 @@ export class CompletableDeferredImpl<T extends unknown> extends JobSupport imple
     constructor(parent: Job | null)
     readonly onAwait: SelectClause1<T>;
     /*not mapped: */ getOnCancelComplete$kotlinx_coroutines_core(): boolean;
-    await(): T;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    await($completion: Continuation<T>): any;
     complete(value: T): boolean;
     completeExceptionally(exception: Throwable): boolean;
     getCompleted(): T;

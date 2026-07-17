@@ -1,5 +1,6 @@
 import type { File } from '../../../../../java/io/File.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
+import type { Continuation } from '../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { Config } from '../../../../../net/ccbluex/liquidbounce/config/types/Config.d.ts'
 import type { Browser } from '../../../../../net/ccbluex/liquidbounce/integration/backend/browser/Browser.d.ts'
 import type { BrowserSettings } from '../../../../../net/ccbluex/liquidbounce/integration/backend/browser/BrowserSettings.d.ts'
@@ -30,8 +31,10 @@ export class ThemeManager extends Config {
     /*not mapped: */ getThemesFolder$net_ccbluex_liquidbounce(): File;
     drawBackground(context: GuiGraphicsExtractor, width: number, height: number, mouseX: number, mouseY: number, delta: number): boolean;
     getScreenLocation(customScreenType: CustomScreenType | null, markAsStatic: boolean): ThemeManager$ScreenLocation;
-    init(): void;
-    load(): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    init($completion: Continuation<void>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    load($completion: Continuation<void>): any;
     loadBackgroundAsync(): CompletableFuture<void>;
     openImmediate(customScreenType: CustomScreenType | null, markAsStatic: boolean, settings: BrowserSettings): Browser;
     openInputAwareImmediate(customScreenType: CustomScreenType | null, markAsStatic: boolean, settings: BrowserSettings, priority: number, inputAcceptor: InputAcceptor): Browser;

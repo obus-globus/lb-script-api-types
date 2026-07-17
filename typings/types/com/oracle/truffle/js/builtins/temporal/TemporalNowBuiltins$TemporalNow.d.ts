@@ -13,7 +13,6 @@ export class TemporalNowBuiltins$TemporalNow extends Enum<TemporalNowBuiltins$Te
     static plainTimeISO: TemporalNowBuiltins$TemporalNow;
     static timeZoneId: TemporalNowBuiltins$TemporalNow;
     static zonedDateTimeISO: TemporalNowBuiltins$TemporalNow;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): TemporalNowBuiltins$TemporalNow;
     static values(): TemporalNowBuiltins$TemporalNow[];

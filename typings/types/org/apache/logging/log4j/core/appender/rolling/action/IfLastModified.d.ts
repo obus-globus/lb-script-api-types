@@ -7,10 +7,9 @@ import type { IfLastModified$Builder } from '../../../../../../../../org/apache/
 import type { PathCondition } from '../../../../../../../../org/apache/logging/log4j/core/appender/rolling/action/PathCondition.d.ts'
 export class IfLastModified extends Object implements PathCondition {
     static EMPTY_ARRAY: PathCondition[];
-    static copy(...paramsource: PathCondition[]): PathCondition[];
     static createAgeCondition(paramage: Duration_2, ...parampathConditions: PathCondition[]): IfLastModified;
     static newBuilder(): IfLastModified$Builder;
-    constructor(arg0: Duration, arg1: PathCondition[], arg2: any)
+    private constructor(age: Duration, nestedConditions: PathCondition[])
     readonly age: Duration;
     readonly nestedConditions: PathCondition[];
     accept(basePath: Path, relativePath: Path, attrs: BasicFileAttributes): boolean;

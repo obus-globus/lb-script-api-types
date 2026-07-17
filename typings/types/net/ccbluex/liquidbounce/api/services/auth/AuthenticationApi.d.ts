@@ -1,3 +1,4 @@
+import type { Continuation } from '../../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { BaseApi } from '../../../../../../net/ccbluex/liquidbounce/api/core/BaseApi.d.ts'
 import type { TokenResponse } from '../../../../../../net/ccbluex/liquidbounce/api/models/auth/TokenResponse.d.ts'
 /**
@@ -7,6 +8,8 @@ import type { TokenResponse } from '../../../../../../net/ccbluex/liquidbounce/a
  */
 export class AuthenticationApi extends BaseApi {
     static INSTANCE: AuthenticationApi;
-    exchangeToken(clientId: string, code: string, codeVerifier: string, redirectUri: string): TokenResponse;
-    refreshToken(clientId: string, refreshToken: string): TokenResponse;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    exchangeToken(clientId: string, code: string, codeVerifier: string, redirectUri: string, $completion: Continuation<TokenResponse>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    refreshToken(clientId: string, refreshToken: string, $completion: Continuation<TokenResponse>): any;
 }

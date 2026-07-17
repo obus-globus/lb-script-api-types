@@ -11,5 +11,6 @@ export class ModuleHoleESP$GlowingPlane extends Mode {
     // private outline: boolean;
     // private /*not mapped: */ getOutline(): boolean;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     readonly renderHandler: EventHook<WorldRenderEvent>;
 }

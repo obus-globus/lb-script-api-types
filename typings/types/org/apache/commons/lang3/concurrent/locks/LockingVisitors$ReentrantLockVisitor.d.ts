@@ -5,5 +5,4 @@ import type { LockingVisitors$ReentrantLockVisitor$Builder } from '../../../../.
 export class LockingVisitors$ReentrantLockVisitor<O extends unknown> extends LockingVisitors$LockVisitor<O, ReentrantLock> {
     static builder<O extends unknown>(): LockingVisitors$ReentrantLockVisitor$Builder<O>;
     constructor(arg0: O, arg1: ReentrantLock)
-    constructor(arg0: LockingVisitors$ReentrantLockVisitor$Builder<Object>, arg1: any)
 }

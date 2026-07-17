@@ -6,4 +6,5 @@ export class ItemStackListRenderer$BackgroundMode extends Mode {
     static backgroundChoices$net_ccbluex_liquidbounce(parent: ModeValueGroup<any>): ItemStackListRenderer$BackgroundMode[];
     protected constructor(name: string, parent: ModeValueGroup<any>)
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
 }

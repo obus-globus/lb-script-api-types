@@ -35,6 +35,6 @@ export class CurveUtil extends Object {
     // private interpolateSpline(data: Vector2fc[], xPos: number, tension: number): number;
     // private normalizeTension(tension: number): number;
     // private sortAndDeduplicateByX(data: Vector2fc[]): Vector2fc[];
-    transform(data: Vector2fc[], xPos: number, tension: number, onOutOfBounds: CurveUtil$OnOutOfBounds): number;
+    transform(data: Vector2fc[], xPos: number, tension: number, onOutOfBounds?: CurveUtil$OnOutOfBounds): number;
     transformNormalized(data: Vector2fc[], xPos: number, tension: number, onOutOfBounds: CurveUtil$OnOutOfBounds): number;
 }

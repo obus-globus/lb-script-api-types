@@ -6,7 +6,6 @@ import type { ListOperation$Type } from '../../../../../../../net/minecraft/worl
 export class ListOperation$Insert extends Record implements ListOperation {
     static MAP_CODEC: MapCodec<ListOperation$Insert>;
     static UNLIMITED_CODEC: MapCodec<ListOperation>;
-    static codec(parammaxSize: number): MapCodec<ListOperation>;
     constructor(offset: number)
     // private offset: number;
     apply<T extends unknown>(original: T[], replacement: T[]): T[];

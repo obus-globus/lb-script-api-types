@@ -2,6 +2,7 @@ import type { GpuDevice } from '../../../../../com/mojang/blaze3d/systems/GpuDev
 import type { ThreadLocal } from '../../../../../java/lang/ThreadLocal.d.ts'
 import type { BiConsumer } from '../../../../../java/util/function/BiConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Continuation } from '../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { CompletableJob } from '../../../../../kotlinx/coroutines/CompletableJob.d.ts'
 import type { CoroutineDispatcher } from '../../../../../kotlinx/coroutines/CoroutineDispatcher.d.ts'
 import type { CoroutineScope } from '../../../../../kotlinx/coroutines/CoroutineScope.d.ts'
@@ -49,7 +50,8 @@ export class ChunkScanner extends Object implements EventListener, MinecraftShor
     cancelCurrentJobs(): void;
     children(): EventListener[];
     parent(): EventListener | null;
-    // private scanChunkSections(chunk: LevelChunk, action: (param0: BlockPos, param1: BlockState) => void): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private scanChunkSections(chunk: LevelChunk, action: (param0: BlockPos, param1: BlockState) => void, $completion: Continuation<void>): any;
     stopThread(): void;
     subscribe(newSubscriber: ChunkScanner$BlockChangeSubscriber): void;
     unregister(): void;

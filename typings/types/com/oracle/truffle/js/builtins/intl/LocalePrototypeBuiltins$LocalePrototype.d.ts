@@ -29,7 +29,6 @@ export class LocalePrototypeBuiltins$LocalePrototype extends Enum<LocalePrototyp
     static script: LocalePrototypeBuiltins$LocalePrototype;
     static toString: LocalePrototypeBuiltins$LocalePrototype;
     static variants: LocalePrototypeBuiltins$LocalePrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): LocalePrototypeBuiltins$LocalePrototype;
     static values(): LocalePrototypeBuiltins$LocalePrototype[];

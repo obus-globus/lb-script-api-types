@@ -1,5 +1,4 @@
 import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.d.ts'
-import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { OptionalInt } from '../../../../../java/util/OptionalInt.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { IntFunction } from '../../../../../java/util/function/IntFunction.d.ts'
@@ -67,12 +66,10 @@ export class MangroveLeavesBlock extends TintedParticleLeavesBlock implements Bo
     static dropResources(paramstate: BlockState, paramlevel: Level, parampos: BlockPos): void;
     static dropResources(paramstate: BlockState, paramlevel: Level, parampos: BlockPos, paramblockEntity: BlockEntity, parambreaker: Entity, paramtool: ItemStack): void;
     static dropResources(paramstate: BlockState, paramlevel: LevelAccessor, parampos: BlockPos, paramblockEntity: BlockEntity): void;
-    static findSpreadableNeighbourPos(paramlevel: Level, parampos: BlockPos, paramblockToPlace: BlockState): Optional<BlockPos>;
     static getDrops(paramstate: BlockState, paramlevel: ServerLevel, parampos: BlockPos, paramblockEntity: BlockEntity): ItemStack[];
     static getDrops(paramstate: BlockState, paramlevel: ServerLevel, parampos: BlockPos, paramblockEntity: BlockEntity, parambreaker: Entity, paramtool: ItemInstance): ItemStack[];
     static getId(paramblockState: BlockState): number;
     static getOptionalDistanceAt(paramstate: BlockState): OptionalInt;
-    static hasSpreadableNeighbourPos(paramlevel: LevelReader, parampos: BlockPos, paramblockToPlace: BlockState): boolean;
     static isExceptionForConnection(paramstate: BlockState): boolean;
     static isFaceFull(paramshape: VoxelShape, paramdirection: Direction): boolean;
     static isShapeFullBlock(paramarg0: VoxelShape): boolean;

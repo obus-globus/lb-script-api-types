@@ -5,7 +5,7 @@ import type { Inet6Address } from '../../../../java/net/Inet6Address.d.ts'
 import type { InetSocketAddress } from '../../../../java/net/InetSocketAddress.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class IpSubnetFilterRule$Ip6SubnetFilterRule extends Object implements IpFilterRule {
-    constructor(arg0: Inet6Address, arg1: number, arg2: IpFilterRuleType, arg3: any)
+    private constructor(arg0: Inet6Address, arg1: number, arg2: IpFilterRuleType)
     // private networkAddress: BigInteger;
     // private ruleType: IpFilterRuleType;
     // private subnetMask: BigInteger;

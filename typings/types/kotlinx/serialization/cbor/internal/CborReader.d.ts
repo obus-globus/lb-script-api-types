@@ -42,7 +42,7 @@ export class CborReader extends AbstractDecoder implements CborDecoder {
     decodeNotNullMark(): boolean;
     decodeNull(): void | null;
     decodeSerializableValue<T extends unknown>(deserializer: DeserializationStrategy<T>): T;
-    decodeSerializableValue<T extends unknown>(deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
+    decodeSerializableValue<T extends unknown>(deserializer: DeserializationStrategy<T>, previousValue?: T | null): T;
     decodeShort(): number;
     decodeString(): string;
     endStructure(descriptor: SerialDescriptor): void;

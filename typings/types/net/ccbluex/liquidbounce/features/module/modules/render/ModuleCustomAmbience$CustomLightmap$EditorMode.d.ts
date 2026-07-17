@@ -7,5 +7,6 @@ export class ModuleCustomAmbience$CustomLightmap$EditorMode extends Mode {
     static Companion: Tagged$Companion;
     protected constructor(name: string)
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     edit(texture: GpuTexture, lightmapRenderState: LightmapRenderState): boolean;
 }

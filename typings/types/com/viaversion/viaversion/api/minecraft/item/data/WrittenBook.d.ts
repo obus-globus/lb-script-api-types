@@ -6,7 +6,6 @@ import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class WrittenBook extends Record implements Copyable {
     static TYPE: Type<WrittenBook>;
-    static copy<T extends unknown>(paramarg0: T): T;
     constructor(title: FilterableString, author: string, generation: number, pages: FilterableComponent[], resolved: boolean)
     // private author: string;
     // private generation: number;

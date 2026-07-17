@@ -5,7 +5,6 @@ import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class WritableBook extends Record implements Copyable {
     static TYPE: Type<WritableBook>;
-    static copy<T extends unknown>(paramarg0: T): T;
     constructor(pages: FilterableString[])
     // private pages: FilterableString[];
     copy(): WritableBook;

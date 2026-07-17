@@ -10,5 +10,6 @@ export class GenericRainbowColorMode extends GenericColorMode<Object> {
     // private isParamSensitive: boolean;
     /*not mapped: */ isParamSensitive(): boolean;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     getColor(param: Object | null): Color4b;
 }

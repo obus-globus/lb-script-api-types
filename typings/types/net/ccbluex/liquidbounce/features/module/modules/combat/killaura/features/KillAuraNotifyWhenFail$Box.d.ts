@@ -6,7 +6,9 @@ export class KillAuraNotifyWhenFail$Box extends Mode {
     static Companion: Tagged$Companion;
     static INSTANCE: KillAuraNotifyWhenFail$Box;
     readonly color: Color4b;
+    getColor(): Color4b;
     readonly colorRainbow: boolean;
     readonly fadeSeconds: number;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
 }

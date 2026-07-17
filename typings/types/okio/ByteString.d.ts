@@ -46,12 +46,12 @@ export class ByteString extends Object implements Serializable, Comparable<ByteS
     hmacSha1(key: ByteString): ByteString;
     hmacSha256(key: ByteString): ByteString;
     hmacSha512(key: ByteString): ByteString;
-    indexOf(other: number[], fromIndex: number): number;
-    indexOf(other: ByteString, fromIndex: number): number;
+    indexOf(other: number[], fromIndex?: number): number;
+    indexOf(other: ByteString, fromIndex?: number): number;
     internalArray(): number[];
     internalGet(pos: number): number;
-    lastIndexOf(other: number[], fromIndex: number): number;
-    lastIndexOf(other: ByteString, fromIndex: number): number;
+    lastIndexOf(other: number[], fromIndex?: number): number;
+    lastIndexOf(other: ByteString, fromIndex?: number): number;
     md5(): ByteString;
     rangeEquals(offset: number, other: number[], otherOffset: number, byteCount: number): boolean;
     rangeEquals(offset: number, other: ByteString, otherOffset: number, byteCount: number): boolean;
@@ -63,7 +63,7 @@ export class ByteString extends Object implements Serializable, Comparable<ByteS
     startsWith(prefix: number[]): boolean;
     startsWith(prefix: ByteString): boolean;
     string(charset: Charset): string;
-    substring(beginIndex: number, endIndex: number): ByteString;
+    substring(beginIndex?: number, endIndex?: number): ByteString;
     toAsciiLowercase(): ByteString;
     toAsciiUppercase(): ByteString;
     toByteArray(): number[];

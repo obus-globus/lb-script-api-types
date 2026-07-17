@@ -28,6 +28,7 @@ export abstract class ToggleableValueGroup extends ValueGroup implements EventLi
     readonly interaction: MultiPlayerGameMode;
     readonly mc: Minecraft;
     readonly network: ClientPacketListener;
+    getParent(): EventListener | null;
     readonly player: LocalPlayer;
     /**
      * Because we pass the parent to the Listenable, we can simply

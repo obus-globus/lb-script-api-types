@@ -9,7 +9,6 @@ import type { Logger } from '../../../../org/slf4j/Logger.d.ts'
 export class DefaultDispenseItemBehavior extends Object implements DispenseItemBehavior {
     static LOGGER: Logger;
     static NOOP: DispenseItemBehavior;
-    static bootStrap(): void;
     static spawnItem(paramlevel: Level, paramitemStack: ItemStack, paramaccuracy: number, paramdirection: Direction, paramposition: Position): void;
     constructor()
     // private addToInventoryOrDispense(source: BlockSource, itemStack: ItemStack): void;

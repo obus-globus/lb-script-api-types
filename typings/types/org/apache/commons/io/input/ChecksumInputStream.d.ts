@@ -5,7 +5,7 @@ import type { CountingInputStream } from '../../../../../org/apache/commons/io/i
 export class ChecksumInputStream extends CountingInputStream {
     static builder(): ChecksumInputStream$Builder;
     static nullInputStream(): InputStream;
-    constructor(arg0: ChecksumInputStream$Builder, arg1: any)
+    private constructor(arg0: ChecksumInputStream$Builder)
     // private countThreshold: number;
     // private expectedChecksumValue: number;
     afterRead(arg0: number): void;

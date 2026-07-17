@@ -6,10 +6,7 @@ import type { RecipeOutput } from '../../../../net/minecraft/data/recipes/Recipe
 import type { RecipeUnlockAdvancementBuilder } from '../../../../net/minecraft/data/recipes/RecipeUnlockAdvancementBuilder.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
-import type { ItemInstance } from '../../../../net/minecraft/world/item/ItemInstance.d.ts'
 import type { ItemStackTemplate } from '../../../../net/minecraft/world/item/ItemStackTemplate.d.ts'
-import type { CraftingBookCategory } from '../../../../net/minecraft/world/item/crafting/CraftingBookCategory.d.ts'
-import type { CraftingRecipe$CraftingBookInfo } from '../../../../net/minecraft/world/item/crafting/CraftingRecipe$CraftingBookInfo.d.ts'
 import type { Ingredient } from '../../../../net/minecraft/world/item/crafting/Ingredient.d.ts'
 import type { Recipe } from '../../../../net/minecraft/world/item/crafting/Recipe.d.ts'
 import type { Recipe$CommonInfo } from '../../../../net/minecraft/world/item/crafting/Recipe$CommonInfo.d.ts'
@@ -18,10 +15,6 @@ import type { SingleItemRecipe$Factory } from '../../../../net/minecraft/world/i
 import type { ItemLike } from '../../../../net/minecraft/world/level/ItemLike.d.ts'
 export class SingleItemRecipeBuilder extends Object implements RecipeBuilder {
     static ROOT_RECIPE_ADVANCEMENT: Identifier;
-    static createCraftingBookInfo(paramcategory: RecipeCategory, paramgroup: string): CraftingRecipe$CraftingBookInfo;
-    static createCraftingCommonInfo(paramshowNotification: boolean): Recipe$CommonInfo;
-    static determineCraftingBookCategory(paramcategory: RecipeCategory): CraftingBookCategory;
-    static getDefaultRecipeId(paramresult: ItemInstance): ResourceKey<Recipe<any>>;
     static stonecutting(paramingredient: Ingredient, paramcategory: RecipeCategory, paramresult: ItemLike, paramcount: number): SingleItemRecipeBuilder;
     constructor(category: RecipeCategory, factory: (param0: Recipe$CommonInfo, param1: Ingredient, param2: ItemStackTemplate) => SingleItemRecipe | null, ingredient: Ingredient, result: ItemLike, count: number)
     // private advancementBuilder: RecipeUnlockAdvancementBuilder;

@@ -8,5 +8,6 @@ export class HeightMode$Relative extends HeightMode {
     // private height: number;
     // private /*not mapped: */ getHeight(): number;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     getHeight(entity: Entity, partialTicks: number): number;
 }

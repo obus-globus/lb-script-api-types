@@ -4,7 +4,6 @@ import type { BlockEntity } from '../../../../../com/viaversion/viaversion/api/m
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class BedrockBlockEntity extends Object implements BlockEntity {
-    static pack(paramarg0: number, paramarg1: number): number;
     constructor(arg0: Map$Entry<string, Tag>[])
     constructor(arg0: BlockPosition, arg1: Map$Entry<string, Tag>[])
     // private position: BlockPosition;

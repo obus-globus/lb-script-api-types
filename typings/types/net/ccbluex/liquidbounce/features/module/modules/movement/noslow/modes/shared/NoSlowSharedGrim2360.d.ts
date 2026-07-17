@@ -14,4 +14,5 @@ export class NoSlowSharedGrim2360 extends Mode {
     constructor(parent: ModeValueGroup<any>)
     // private onNetworkTick: EventHook<PlayerNetworkMovementTickEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
 }

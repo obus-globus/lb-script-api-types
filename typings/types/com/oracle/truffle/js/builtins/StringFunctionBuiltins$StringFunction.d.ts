@@ -11,7 +11,6 @@ export class StringFunctionBuiltins$StringFunction extends Enum<StringFunctionBu
     static fromCharCode: StringFunctionBuiltins$StringFunction;
     static fromCodePoint: StringFunctionBuiltins$StringFunction;
     static raw: StringFunctionBuiltins$StringFunction;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): StringFunctionBuiltins$StringFunction;
     static values(): StringFunctionBuiltins$StringFunction[];

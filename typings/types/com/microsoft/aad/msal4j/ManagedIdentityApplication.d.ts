@@ -12,7 +12,7 @@ export class ManagedIdentityApplication extends AbstractApplicationBase implemen
     static builder(paramarg0: ManagedIdentityId): ManagedIdentityApplication$Builder;
     static getManagedIdentitySource(): ManagedIdentitySourceType;
     static getSharedTokenCache(): TokenCache;
-    constructor(arg0: ManagedIdentityApplication$Builder, arg1: any)
+    private constructor(arg0: ManagedIdentityApplication$Builder)
     readonly clientCapabilities: string[];
     readonly managedIdentityId: ManagedIdentityId;
     // private managedIdentitySource: ManagedIdentitySourceType;

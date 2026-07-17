@@ -8,4 +8,5 @@ export class NoSlowBlockingInteract extends Mode {
     static INSTANCE: NoSlowBlockingInteract;
     readonly onNetworkTick: EventHook<PlayerNetworkMovementTickEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
 }

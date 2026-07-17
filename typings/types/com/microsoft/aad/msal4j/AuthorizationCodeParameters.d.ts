@@ -5,7 +5,7 @@ import type { URI } from '../../../../java/net/URI.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class AuthorizationCodeParameters extends Object implements IAcquireTokenParameters {
     static builder(paramarg0: string, paramarg1: URI): AuthorizationCodeParameters$AuthorizationCodeParametersBuilder;
-    constructor(arg0: string, arg1: URI, arg2: (Object | null)[], arg3: ClaimsRequest, arg4: string, arg5: Map<Object | null, Object | null>, arg6: Map<Object | null, Object | null>, arg7: string, arg8: any)
+    private constructor(arg0: string, arg1: URI, arg2: string[], arg3: ClaimsRequest, arg4: string, arg5: { [key: string]: string }, arg6: { [key: string]: string }, arg7: string)
     // private authorizationCode: string;
     // private claims: ClaimsRequest;
     // private codeVerifier: string;

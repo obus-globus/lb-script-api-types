@@ -7,7 +7,7 @@ export class UncheckedFilterReader extends FilterReader {
     static builder(): UncheckedFilterReader$Builder;
     static nullReader(): Reader;
     static of(paramarg0: CharSequence): Reader;
-    constructor(arg0: UncheckedFilterReader$Builder, arg1: any)
+    private constructor(arg0: UncheckedFilterReader$Builder)
     close(): void;
     mark(arg0: number): void;
     read(): number;

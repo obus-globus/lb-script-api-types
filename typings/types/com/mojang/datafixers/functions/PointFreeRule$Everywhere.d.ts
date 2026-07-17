@@ -4,14 +4,6 @@ import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class PointFreeRule$Everywhere extends Record implements PointFreeRule {
-    static all(paramarg0: PointFreeRule): PointFreeRule;
-    static choice(...paramarg0: PointFreeRule[]): PointFreeRule;
-    static everywhere(paramarg0: PointFreeRule, paramarg1: PointFreeRule): PointFreeRule;
-    static many(paramarg0: PointFreeRule): PointFreeRule;
-    static nop(): PointFreeRule;
-    static once(paramarg0: PointFreeRule): PointFreeRule;
-    static one(paramarg0: PointFreeRule): PointFreeRule;
-    static seq(...paramarg0: PointFreeRule[]): PointFreeRule;
     constructor(topDown: PointFreeRule, bottomUp: PointFreeRule)
     // private bottomUp: PointFreeRule;
     // private topDown: PointFreeRule;

@@ -25,8 +25,6 @@ export class CustomAntiBotMode$Armor$ArmorPredicate extends Enum<CustomAntiBotMo
     static SKULL: CustomAntiBotMode$Armor$ArmorPredicate;
     static TURTLE_SCUTE: CustomAntiBotMode$Armor$ArmorPredicate;
     static getEntries(): CustomAntiBotMode$Armor$ArmorPredicate[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): CustomAntiBotMode$Armor$ArmorPredicate;
     static values(): CustomAntiBotMode$Armor$ArmorPredicate[];

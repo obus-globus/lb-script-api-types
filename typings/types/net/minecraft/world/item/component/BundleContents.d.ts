@@ -7,7 +7,6 @@ import type { BundleContentsAccessor } from '../../../../../net/fabricmc/fabric/
 import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { TooltipComponent } from '../../../../../net/minecraft/world/inventory/tooltip/TooltipComponent.d.ts'
-import type { ItemInstance } from '../../../../../net/minecraft/world/item/ItemInstance.d.ts'
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { ItemStackTemplate } from '../../../../../net/minecraft/world/item/ItemStackTemplate.d.ts'
 import type { Fraction } from '../../../../../org/apache/commons/lang3/math/Fraction.d.ts'
@@ -18,7 +17,6 @@ export class BundleContents extends Object implements BundleContentsAccessor, To
     static NO_SELECTED_ITEM_INDEX: number;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, BundleContents>;
     static canItemBeInBundle(paramitemToAdd: ItemStack): boolean;
-    static getWeight(paramarg0: ItemInstance): DataResult<Fraction>;
     constructor(items: ItemStackTemplate[])
     // private items: ItemStackTemplate[];
     readonly selectedItem: number;

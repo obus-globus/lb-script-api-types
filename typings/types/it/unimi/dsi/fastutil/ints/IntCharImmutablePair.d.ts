@@ -1,11 +1,8 @@
 import type { IntCharPair } from '../../../../../it/unimi/dsi/fastutil/ints/IntCharPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
-import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class IntCharImmutablePair extends Object implements IntCharPair, Serializable {
-    static lexComparator(): (param0: IntCharPair, param1: IntCharPair) => number;
     static of(paramarg0: number, paramarg1: string): IntCharImmutablePair;
-    static of(paramarg0: number, paramarg1: string): IntCharPair;
     constructor(arg0: number, arg1: string)
     // private left: number;
     // private right: string;

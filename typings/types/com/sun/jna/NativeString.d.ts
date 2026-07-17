@@ -5,7 +5,6 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../java/lang/CharSequence.d.ts'
 import type { Comparable } from '../../../java/lang/Comparable.d.ts'
 export class NativeString extends Object implements CharSequence, Comparable<Object> {
-    static compare(paramarg0: CharSequence, paramarg1: CharSequence): number;
     constructor(arg0: WString)
     constructor(arg0: string)
     constructor(arg0: string, arg1: boolean)

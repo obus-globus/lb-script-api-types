@@ -10,7 +10,6 @@ export class WebAssemblyExceptionPrototypeBuiltins$WebAssemblyExceptionPrototype
     static getArg: WebAssemblyExceptionPrototypeBuiltins$WebAssemblyExceptionPrototype;
     static is: WebAssemblyExceptionPrototypeBuiltins$WebAssemblyExceptionPrototype;
     static stack: WebAssemblyExceptionPrototypeBuiltins$WebAssemblyExceptionPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): WebAssemblyExceptionPrototypeBuiltins$WebAssemblyExceptionPrototype;
     static values(): WebAssemblyExceptionPrototypeBuiltins$WebAssemblyExceptionPrototype[];

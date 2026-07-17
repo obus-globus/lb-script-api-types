@@ -11,8 +11,6 @@ export class SwingMode extends Enum<SwingMode> implements Consumer<InteractionHa
     static HIDE_CLIENT: SwingMode;
     static HIDE_SERVER: SwingMode;
     static getEntries(): SwingMode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): SwingMode;
     static values(): SwingMode[];

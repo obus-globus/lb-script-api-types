@@ -7,8 +7,6 @@ export class ModuleAimbot$Axis extends Enum<ModuleAimbot$Axis> implements Tagged
     static HORIZONTAL: ModuleAimbot$Axis;
     static VERTICAL: ModuleAimbot$Axis;
     static getEntries(): ModuleAimbot$Axis[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleAimbot$Axis;
     static values(): ModuleAimbot$Axis[];

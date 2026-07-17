@@ -1,12 +1,10 @@
 import type { IAbstractBoat } from '../../../../../../com/viaversion/viafabricplus/injection/access/entity/legacy_boat_model/IAbstractBoat.d.ts'
-import type { Predicate } from '../../../../../../java/util/function/Predicate.d.ts'
 import type { Supplier } from '../../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Direction } from '../../../../../../net/minecraft/core/Direction.d.ts'
 import type { Direction$Axis } from '../../../../../../net/minecraft/core/Direction$Axis.d.ts'
 import type { SynchedEntityData$Builder } from '../../../../../../net/minecraft/network/syncher/SynchedEntityData$Builder.d.ts'
-import type { ServerLevel } from '../../../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { SoundEvent } from '../../../../../../net/minecraft/sounds/SoundEvent.d.ts'
 import type { BlockUtil$FoundRectangle } from '../../../../../../net/minecraft/util/BlockUtil$FoundRectangle.d.ts'
 import type { InteractionHand } from '../../../../../../net/minecraft/world/InteractionHand.d.ts'
@@ -88,19 +86,13 @@ export abstract class AbstractBoat extends VehicleEntity implements IAbstractBoa
     static TOTAL_AIR_SUPPLY: number;
     static WILDCARD: ScoreHolder;
     static WILDCARD_NAME: string;
-    static angularFriction<E extends Entity & Leashable>(paramentity: E): number;
     static canVehicleCollide(paramvehicle: Entity, paramentity: Entity): boolean;
     static collectAllColliders(paramsource: Entity, paramlevel: Level, paramboundingBox: AABB): VoxelShape[];
     static collideBoundingBox(paramarg0: Entity, paramarg1: Vec3, paramarg2: AABB, paramarg3: Level, paramarg4: (Object | null)[]): Vec3;
     static collideBoundingBox(paramsource: CollisionContext, parammovement: Vec3, paramboundingBox: AABB, paramlevel: Level, paramentityColliders: VoxelShape[]): Vec3;
-    static createQuadLeashOffsets(paramentity: Entity, paramfrontOffset: number, paramfrontBack: number, paramleftRight: number, paramheight: number): Vec3[];
     static getInputVector(paraminput: Vec3, paramspeed: number, paramyRot: number): Vec3;
     static getViewScale(): number;
-    static leashableInArea(paramentity: Entity, paramtest: (param0: Leashable) => boolean): Leashable[];
-    static leashableInArea(paramlevel: Level, parampos: Vec3, paramtest: (param0: Leashable) => boolean): Leashable[];
-    static leashableLeashedTo(paramentity: Entity): Leashable[];
     static setViewScale(paramviewScale: number): void;
-    static tickLeash<E extends Entity & Leashable>(paramlevel: ServerLevel, paramentity: E): void;
     constructor(type: EntityType<AbstractBoat>, level: Level, dropItem: () => Item)
     // private bubbleAngle: number;
     // private bubbleAngleO: number;

@@ -3,13 +3,11 @@ import type { App } from '../../../../com/mojang/datafixers/kinds/App.d.ts'
 import type { App2 } from '../../../../com/mojang/datafixers/kinds/App2.d.ts'
 import type { K2 } from '../../../../com/mojang/datafixers/kinds/K2.d.ts'
 import type { Prism } from '../../../../com/mojang/datafixers/optics/Prism.d.ts'
-import type { Prism$Mu } from '../../../../com/mojang/datafixers/optics/Prism$Mu.d.ts'
 import type { Cocartesian$Mu } from '../../../../com/mojang/datafixers/optics/profunctors/Cocartesian$Mu.d.ts'
 import type { Either } from '../../../../com/mojang/datafixers/util/Either.d.ts'
 import type { Pair } from '../../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class InjTagged<K extends unknown, A extends unknown, B extends unknown> extends Object implements Prism<Pair<K, Object>, Pair<K, Object>, A, B> {
-    static unbox<S extends unknown, T extends unknown, A extends unknown, B extends unknown>(paramarg0: App2<Prism$Mu<A, B>, S, T>): Prism<S, T, A, B>;
     constructor(arg0: K)
     // private key: K;
     build(arg0: B): Pair<K, Object>;

@@ -10,6 +10,7 @@ import type { Source } from '../okio/Source.d.ts'
 import type { Timeout } from '../okio/Timeout.d.ts'
 export class RealBufferedSink extends Object implements BufferedSink {
     constructor(sink: Sink)
+    getBuffer(): Buffer;
     bufferField: Buffer;
     closed: boolean;
     sink: Sink;

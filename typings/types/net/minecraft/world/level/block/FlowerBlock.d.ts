@@ -15,7 +15,6 @@ import type { ItemInstance } from '../../../../../net/minecraft/world/item/ItemI
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { SuspiciousStewEffects } from '../../../../../net/minecraft/world/item/component/SuspiciousStewEffects.d.ts'
 import type { BlockGetter } from '../../../../../net/minecraft/world/level/BlockGetter.d.ts'
-import type { ItemLike } from '../../../../../net/minecraft/world/level/ItemLike.d.ts'
 import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 import type { LevelAccessor } from '../../../../../net/minecraft/world/level/LevelAccessor.d.ts'
 import type { LevelReader } from '../../../../../net/minecraft/world/level/LevelReader.d.ts'
@@ -63,7 +62,6 @@ export class FlowerBlock extends VegetationBlock implements SuspiciousEffectHold
     static dropResources(paramstate: BlockState, paramlevel: Level, parampos: BlockPos): void;
     static dropResources(paramstate: BlockState, paramlevel: Level, parampos: BlockPos, paramblockEntity: BlockEntity, parambreaker: Entity, paramtool: ItemStack): void;
     static dropResources(paramstate: BlockState, paramlevel: LevelAccessor, parampos: BlockPos, paramblockEntity: BlockEntity): void;
-    static getAllEffectHolders(): SuspiciousEffectHolder[];
     static getDrops(paramstate: BlockState, paramlevel: ServerLevel, parampos: BlockPos, paramblockEntity: BlockEntity): ItemStack[];
     static getDrops(paramstate: BlockState, paramlevel: ServerLevel, parampos: BlockPos, paramblockEntity: BlockEntity, parambreaker: Entity, paramtool: ItemInstance): ItemStack[];
     static getId(paramblockState: BlockState): number;
@@ -76,7 +74,6 @@ export class FlowerBlock extends VegetationBlock implements SuspiciousEffectHold
     static shouldRenderFace(paramstate: BlockState, paramneighborState: BlockState, paramdirection: Direction): boolean;
     static simpleCodec<B extends Block>(paramconstructor: (param0: BlockBehaviour$Properties) => B): MapCodec<B>;
     static stateById(paramidWithData: number): BlockState;
-    static tryGet(paramitem: ItemLike): SuspiciousEffectHolder;
     static updateFromNeighbourShapes(paramstate: BlockState, paramlevel: LevelAccessor, parampos: BlockPos): BlockState;
     static updateOrDestroy(paramblockState: BlockState, paramnewState: BlockState, paramlevel: LevelAccessor, paramblockPos: BlockPos, paramupdateFlags: number): void;
     static updateOrDestroy(paramblockState: BlockState, paramnewState: BlockState, paramlevel: LevelAccessor, paramblockPos: BlockPos, paramupdateFlags: number, paramupdateLimit: number): void;

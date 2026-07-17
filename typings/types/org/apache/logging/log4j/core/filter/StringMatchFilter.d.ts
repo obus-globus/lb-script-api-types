@@ -17,7 +17,7 @@ export class StringMatchFilter extends AbstractFilter {
     static ELEMENT_TYPE: string;
     static EMPTY_ARRAY: Filter[];
     static newBuilder(): StringMatchFilter$Builder;
-    constructor(arg0: string, arg1: Filter$Result, arg2: Filter$Result, arg3: any)
+    private constructor(text: string, onMatch: Filter$Result, onMismatch: Filter$Result)
     // private text: string;
     // private filter(msg: string): Filter$Result;
     filter(event: LogEvent): Filter$Result;

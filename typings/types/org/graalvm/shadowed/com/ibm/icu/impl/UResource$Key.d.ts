@@ -4,7 +4,6 @@ import type { CharSequence } from '../../../../../../../java/lang/CharSequence.d
 import type { Cloneable } from '../../../../../../../java/lang/Cloneable.d.ts'
 import type { Comparable } from '../../../../../../../java/lang/Comparable.d.ts'
 export class UResource$Key extends Object implements CharSequence, Cloneable, Comparable<UResource$Key> {
-    static compare(paramarg0: CharSequence, paramarg1: CharSequence): number;
     constructor()
     constructor(s: string)
     // private bytes: number[];

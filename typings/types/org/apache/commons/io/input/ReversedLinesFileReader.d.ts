@@ -19,7 +19,6 @@ export class ReversedLinesFileReader extends Object implements Closeable, IOIter
     constructor(arg0: Path, arg1: Charset)
     constructor(arg0: Path, arg1: number, arg2: Charset)
     constructor(arg0: Path, arg1: number, arg2: string)
-    constructor(arg0: ReversedLinesFileReader$Builder, arg1: IOIterator<string>)
     // private avoidNewlineSplitBufferSize: number;
     // private blockSize: number;
     // private byteDecrement: number;

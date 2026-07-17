@@ -5,17 +5,7 @@ import type { ItemVariant } from '../../../../../../net/fabricmc/fabric/api/tran
 import type { TransactionContext } from '../../../../../../net/fabricmc/fabric/api/transfer/v1/transaction/TransactionContext.d.ts'
 import type { InteractionHand } from '../../../../../../net/minecraft/world/InteractionHand.d.ts'
 import type { Player } from '../../../../../../net/minecraft/world/entity/player/Player.d.ts'
-import type { AbstractContainerMenu } from '../../../../../../net/minecraft/world/inventory/AbstractContainerMenu.d.ts'
-import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class PlayerContainerItemContext extends Object implements ContainerItemContext {
-    static forCreativeInteraction(paramarg0: Player, paramarg1: ItemStack): ContainerItemContext;
-    static forPlayerInteraction(paramarg0: Player, paramarg1: InteractionHand): ContainerItemContext;
-    static ofPlayerCursor(paramarg0: Player, paramarg1: AbstractContainerMenu): ContainerItemContext;
-    static ofPlayerHand(paramarg0: Player, paramarg1: InteractionHand): ContainerItemContext;
-    static ofPlayerSlot(paramarg0: Player, paramarg1: ItemVariant[]): ContainerItemContext;
-    static ofSingleSlot(paramarg0: ItemVariant[]): ContainerItemContext;
-    static withConstant(paramarg0: ItemVariant, paramarg1: number): ContainerItemContext;
-    static withConstant(paramarg0: ItemStack): ContainerItemContext;
     constructor(arg0: Player, arg1: ItemVariant[])
     constructor(arg0: Player, arg1: InteractionHand)
     // private playerWrapper: (Object | null)[];

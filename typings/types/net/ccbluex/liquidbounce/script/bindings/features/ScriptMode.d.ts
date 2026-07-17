@@ -11,6 +11,7 @@ export class ScriptMode extends Mode {
     // private _values: { [key: string]: Value<Object> };
     // private events: { [key: string]: Value_2 };
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     /**
      * Allows the user to access values by typing module.settings.<valuename>
      *

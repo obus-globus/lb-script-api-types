@@ -2,6 +2,7 @@ import type { File } from '../../../../../java/io/File.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Pair } from '../../../../../kotlin/Pair.d.ts'
+import type { Continuation } from '../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { HttpMethod } from '../../../../../net/ccbluex/liquidbounce/api/core/HttpMethod.d.ts'
 import type { MojangApiClient } from '../../../../../net/ccbluex/liquidbounce/authlib/mojangapi/MojangApiClient.d.ts'
 import type { OkHttpProgressInterceptor$ProgressListener } from '../../../../../net/ccbluex/liquidbounce/mcef/listeners/OkHttpProgressInterceptor$ProgressListener.d.ts'
@@ -37,6 +38,8 @@ export class HttpClient extends Object {
     // private defaultClient: OkHttpClient;
     // private mojangApiClient: MojangApiClient;
     /*not mapped: */ getMojangApiClient(): MojangApiClient;
-    download(url: string, file: File, agent: string, progressListener: ((param0: number, param1: number, param2: boolean) => void) | null): number;
-    request(url: string, method: HttpMethod, agent: string, headers: (param0: Headers$Builder) => void, body: RequestBody | null, progressListener: ((param0: number, param1: number, param2: boolean) => void) | null): Response;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    download(url: string, file: File, agent: string, progressListener: ((param0: number, param1: number, param2: boolean) => void) | null, $completion: Continuation<number>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    request(url: string, method: HttpMethod, agent: string, headers: (param0: Headers$Builder) => void, body: RequestBody | null, progressListener: ((param0: number, param1: number, param2: boolean) => void) | null, $completion: Continuation<Response>): any;
 }

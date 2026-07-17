@@ -10,8 +10,6 @@ export class MovePacketType extends Enum<MovePacketType> implements Tagged {
     static ON_GROUND_ONLY: MovePacketType;
     static POSITION_AND_ON_GROUND: MovePacketType;
     static getEntries(): MovePacketType[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): MovePacketType;
     static values(): MovePacketType[];

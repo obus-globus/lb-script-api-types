@@ -2,7 +2,7 @@ import type { CommonPattern } from '../../../../com/google/common/base/CommonPat
 import type { PatternCompiler } from '../../../../com/google/common/base/PatternCompiler.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Platform$JdkPatternCompiler extends Object implements PatternCompiler {
-    constructor(arg0: any)
+    private constructor()
     compile(pattern: string): CommonPattern;
     isPcreLike(): boolean;
 }

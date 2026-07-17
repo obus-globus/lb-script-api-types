@@ -6,7 +6,6 @@ export class ListOperation$ReplaceAll extends Object implements ListOperation {
     static INSTANCE: ListOperation$ReplaceAll;
     static MAP_CODEC: MapCodec<ListOperation$ReplaceAll>;
     static UNLIMITED_CODEC: MapCodec<ListOperation>;
-    static codec(parammaxSize: number): MapCodec<ListOperation>;
     private constructor()
     apply<T extends unknown>(original: T[], replacement: T[]): T[];
     apply<T extends unknown>(original: T[], replacement: T[], maxSize: number): T[];

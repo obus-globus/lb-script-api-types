@@ -1,14 +1,12 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { BiFunction } from '../../../../java/util/function/BiFunction.d.ts'
-import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Stream } from '../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 import type { BlockPos } from '../../../../net/minecraft/core/BlockPos.d.ts'
 import type { BlockGetter } from '../../../../net/minecraft/world/level/BlockGetter.d.ts'
-import type { BlockGetter$BlockStepVisitor } from '../../../../net/minecraft/world/level/BlockGetter$BlockStepVisitor.d.ts'
 import type { ClipBlockStateContext } from '../../../../net/minecraft/world/level/ClipBlockStateContext.d.ts'
 import type { ClipContext } from '../../../../net/minecraft/world/level/ClipContext.d.ts'
 import type { BlockEntity } from '../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
@@ -21,8 +19,6 @@ import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
 import type { VoxelShape } from '../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 export class EmptyBlockGetter extends Enum<EmptyBlockGetter> implements BlockGetter {
     static INSTANCE: EmptyBlockGetter;
-    static forEachBlockIntersectedBetween(paramfrom: Vec3, paramto: Vec3, paramaabbAtTarget: AABB, paramvisitor: (param0: BlockPos, param1: number) => boolean): boolean;
-    static traverseBlocks<T extends unknown, C extends unknown>(paramfrom: Vec3, paramto: Vec3, paramcontext: C, paramconsumer: (param0: C, param1: BlockPos) => T, parammissFactory: (param0: C) => T): T;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): EmptyBlockGetter;
     static values(): EmptyBlockGetter[];

@@ -1,7 +1,7 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ZipArchiveEntry } from '../../../../../../org/apache/commons/compress/archivers/zip/ZipArchiveEntry.d.ts'
 export class ZipArchiveOutputStream$CurrentEntry extends Object {
-    constructor(arg0: ZipArchiveEntry, arg1: any)
+    private constructor(arg0: ZipArchiveEntry)
     // private bytesRead: number;
     // private causedUseOfZip64: boolean;
     // private dataStart: number;

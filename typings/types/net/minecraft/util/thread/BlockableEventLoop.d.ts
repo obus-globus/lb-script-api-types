@@ -15,7 +15,6 @@ export abstract class BlockableEventLoop<R extends Runnable> extends Object impl
     static BLOCK_TIME_NANOS: number;
     static isNonRecoverable(paramt: Throwable): boolean;
     static relayDelayCrash(paramcrashReport: CrashReport): void;
-    static wrapExecutor(paramname: string, paramexecutor: Executor): TaskScheduler<() => void>;
     constructor(name: string, propagatesCrashes: boolean)
     // private blockingCount: number;
     // private name: string;

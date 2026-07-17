@@ -1,6 +1,5 @@
 import type { GameProfile } from '../../../../com/mojang/authlib/GameProfile.d.ts'
 import type { CommandDispatcher } from '../../../../com/mojang/brigadier/CommandDispatcher.d.ts'
-import type { ParseResults } from '../../../../com/mojang/brigadier/ParseResults.d.ts'
 import type { Runnable } from '../../../../java/lang/Runnable.d.ts'
 import type { ThreadLocal } from '../../../../java/lang/ThreadLocal.d.ts'
 import type { WeakReference } from '../../../../java/lang/ref/WeakReference.d.ts'
@@ -211,7 +210,6 @@ import type { LevelLightEngine } from '../../../../net/minecraft/world/level/lig
 import type { Scoreboard } from '../../../../net/minecraft/world/scores/Scoreboard.d.ts'
 export class ClientPacketListener extends ClientCommonPacketListenerImpl implements GlobalAttachmentsProvider, ClientCommandInternals$LastReceivedCommandsPacketAccessor, PacketListenerExtensions, ClientPacketListenerAccessor, TickablePacketListener, ClientGamePacketListener {
     static TELEPORT_INTERPOLATION_THRESHOLD: number;
-    static invokeIsValidCommand(paramarg0: ParseResults<Object>): boolean;
     constructor(minecraft: Minecraft, connection: Connection, cookie: CommonListenerCookie)
     readonly addon: ClientPlayNetworkAddon;
     readonly advancements: ClientAdvancements;

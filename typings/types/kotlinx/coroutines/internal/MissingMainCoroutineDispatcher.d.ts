@@ -1,5 +1,4 @@
 import type { Runnable } from '../../../java/lang/Runnable.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 import type { Continuation } from '../../../kotlin/coroutines/Continuation.d.ts'
 import type { ContinuationInterceptor$Key } from '../../../kotlin/coroutines/ContinuationInterceptor$Key.d.ts'
@@ -11,12 +10,12 @@ import type { DisposableHandle } from '../../../kotlinx/coroutines/DisposableHan
 import type { MainCoroutineDispatcher } from '../../../kotlinx/coroutines/MainCoroutineDispatcher.d.ts'
 export class MissingMainCoroutineDispatcher extends MainCoroutineDispatcher implements Delay {
     static Key: ContinuationInterceptor$Key;
-    static delay$suspendImpl(paramarg0: Delay, paramarg1: number, paramarg2: Continuation<Object>): Object;
     constructor(cause: Throwable | null, errorHint: string | null)
     // private cause: Throwable | null;
     // private errorHint: string | null;
     readonly immediate: MainCoroutineDispatcher;
-    delay(time: number): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    delay(time: number, $completion: Continuation<void>): any;
     dispatch(context: CoroutineContext, block: () => void): void;
     invokeOnTimeout(timeMillis: number, block: () => void, context: CoroutineContext): DisposableHandle;
     isDispatchNeeded(context: CoroutineContext): boolean;

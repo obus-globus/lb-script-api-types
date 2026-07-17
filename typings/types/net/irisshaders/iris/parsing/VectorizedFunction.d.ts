@@ -9,7 +9,6 @@ import type { VectorType$ArrayVector } from '../../../../net/irisshaders/iris/pa
 import type { VectorType$ArrayVector$IntObjectObjectObjectConsumer } from '../../../../net/irisshaders/iris/parsing/VectorType$ArrayVector$IntObjectObjectObjectConsumer.d.ts'
 import type { VectorizedFunction$ElementAccessExpression } from '../../../../net/irisshaders/iris/parsing/VectorizedFunction$ElementAccessExpression.d.ts'
 export class VectorizedFunction extends Object implements TypedFunction {
-    static format(paramarg0: TypedFunction, paramarg1: string): string;
     constructor(arg0: TypedFunction, arg1: number)
     // private index: number;
     // private inner: TypedFunction;

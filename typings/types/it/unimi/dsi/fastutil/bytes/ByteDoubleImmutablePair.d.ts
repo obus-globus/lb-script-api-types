@@ -1,11 +1,8 @@
 import type { ByteDoublePair } from '../../../../../it/unimi/dsi/fastutil/bytes/ByteDoublePair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
-import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ByteDoubleImmutablePair extends Object implements ByteDoublePair, Serializable {
-    static lexComparator(): (param0: ByteDoublePair, param1: ByteDoublePair) => number;
     static of(paramarg0: number, paramarg1: number): ByteDoubleImmutablePair;
-    static of(paramarg0: number, paramarg1: number): ByteDoublePair;
     constructor(arg0: number, arg1: number)
     // private left: number;
     // private right: number;

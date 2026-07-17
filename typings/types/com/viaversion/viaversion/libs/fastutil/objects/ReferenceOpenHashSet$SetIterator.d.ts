@@ -2,7 +2,7 @@ import type { ObjectIterator } from '../../../../../../com/viaversion/viaversion
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ReferenceOpenHashSet$SetIterator extends Object implements ObjectIterator<K> {
-    constructor(null_: Object[], arg1: any)
+    private constructor(null_: Object[])
     // private c: number;
     // private last: number;
     // private mustReturnNull: boolean;

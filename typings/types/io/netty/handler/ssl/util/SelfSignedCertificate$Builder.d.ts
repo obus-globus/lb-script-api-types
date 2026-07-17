@@ -6,7 +6,7 @@ import type { Date } from '../../../../../java/util/Date.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 export class SelfSignedCertificate$Builder extends Object {
-    constructor(arg0: any)
+    private constructor()
     // private algorithm: string;
     // private bits: number;
     // private failure: Throwable;

@@ -13,8 +13,6 @@ export class AutoFarmTrackedState$Plantable extends Enum<AutoFarmTrackedState$Pl
     static JUNGLE_LOGS: AutoFarmTrackedState$Plantable;
     static SOUL_SAND: AutoFarmTrackedState$Plantable;
     static getEntries(): AutoFarmTrackedState$Plantable[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): AutoFarmTrackedState$Plantable;
     static values(): AutoFarmTrackedState$Plantable[];

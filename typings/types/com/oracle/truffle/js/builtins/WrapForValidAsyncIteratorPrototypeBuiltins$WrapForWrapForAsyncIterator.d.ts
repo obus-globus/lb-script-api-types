@@ -9,7 +9,6 @@ import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class WrapForValidAsyncIteratorPrototypeBuiltins$WrapForWrapForAsyncIterator extends Enum<WrapForValidAsyncIteratorPrototypeBuiltins$WrapForWrapForAsyncIterator> implements BuiltinEnum<WrapForValidAsyncIteratorPrototypeBuiltins$WrapForWrapForAsyncIterator> {
     static next: WrapForValidAsyncIteratorPrototypeBuiltins$WrapForWrapForAsyncIterator;
     static return_: WrapForValidAsyncIteratorPrototypeBuiltins$WrapForWrapForAsyncIterator;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): WrapForValidAsyncIteratorPrototypeBuiltins$WrapForWrapForAsyncIterator;
     static values(): WrapForValidAsyncIteratorPrototypeBuiltins$WrapForWrapForAsyncIterator[];

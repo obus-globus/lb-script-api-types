@@ -19,5 +19,6 @@ export class CriticalsPacket extends Mode {
     // private packetType: MovePacketType;
     // private /*not mapped: */ getPacketType(): MovePacketType;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     // private p(mod: number, onGround: boolean): void;
 }

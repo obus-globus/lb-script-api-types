@@ -6,5 +6,6 @@ export class ModuleChestStealer$SelectionMode extends Mode {
     static Companion: Tagged$Companion;
     protected constructor(name: string)
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     process(slots: ContainerItemSlot[]): void;
 }

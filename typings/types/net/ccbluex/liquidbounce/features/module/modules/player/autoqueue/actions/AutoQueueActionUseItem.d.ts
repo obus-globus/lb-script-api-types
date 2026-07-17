@@ -1,3 +1,4 @@
+import type { Continuation } from '../../../../../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
 import type { AutoQueueAction } from '../../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/autoqueue/actions/AutoQueueAction.d.ts'
@@ -6,5 +7,6 @@ export class AutoQueueActionUseItem extends AutoQueueAction {
     static Companion: Tagged$Companion;
     static INSTANCE: AutoQueueActionUseItem;
     // private mode: ModeValueGroup<SingleItemStackPickMode>;
-    execute(): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    execute($completion: Continuation<void>): any;
 }

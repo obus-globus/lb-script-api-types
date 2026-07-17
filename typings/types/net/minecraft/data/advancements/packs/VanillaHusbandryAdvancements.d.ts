@@ -12,7 +12,6 @@ export class VanillaHusbandryAdvancements extends Object implements AdvancementS
     static INDIRECTLY_BREEDABLE_ANIMALS: EntityType<any>[];
     static WAX_SCRAPING_TOOLS: Item[];
     static createBreedAllAnimalsAdvancement(paramparent: AdvancementHolder, paramoutput: (param0: AdvancementHolder) => void, paramentityTypes: HolderGetter<EntityType<any>>, parambreedable: Stream<EntityType<any>>, paramindirectlyBreedable: Stream<EntityType<any>>): AdvancementHolder;
-    static createPlaceholder(paramid: string): AdvancementHolder;
     constructor()
     generate(registries: HolderLookup$Provider, output: (param0: AdvancementHolder) => void): void;
 }

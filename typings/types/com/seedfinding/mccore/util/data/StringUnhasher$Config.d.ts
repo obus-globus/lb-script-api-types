@@ -1,7 +1,7 @@
 import type { Predicate } from '../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class StringUnhasher$Config extends Object {
-    constructor(arg0: any)
+    private constructor()
     // private filter: (param0: string) => boolean;
     // private maxChar: string;
     // private maxSize: number;

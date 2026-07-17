@@ -26,7 +26,6 @@ export class RealmsUploadScreen extends RealmsScreen implements RealmsWorldUploa
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
     static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
-    static noOp(): RealmsWorldUploadStatusTracker;
     constructor(realmCreationTask: RealmCreationTask, realmId: number, slotId: number, lastScreen: RealmsResetWorldScreen, selectedLevel: LevelSummary)
     // private backButton: Button;
     // private cancelButton: Button;

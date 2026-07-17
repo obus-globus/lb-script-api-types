@@ -3,7 +3,6 @@ import type { BlockEntity } from '../../../../../com/viaversion/viaversion/api/m
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class BlockEntityWithBlockState extends Object implements BlockEntity {
-    static pack(paramarg0: number, paramarg1: number): number;
     constructor(arg0: BlockEntity, arg1: number)
     constructor(arg0: number, arg1: number, arg2: number)
     // private blockEntity: BlockEntity;

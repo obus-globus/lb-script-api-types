@@ -3,7 +3,7 @@ import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { SimpleClassPath } from '../../../../../net/fabricmc/loader/impl/util/SimpleClassPath.d.ts'
 export class SimpleClassPath$CpEntry extends Object {
-    constructor(null_: SimpleClassPath, arg1: number, arg2: string, arg3: Object, arg4: any)
+    private constructor(null_: SimpleClassPath, arg1: number, arg2: string, arg3: Object)
     // private idx: number;
     // private instance: Object;
     readonly subPath: string;

@@ -7,14 +7,6 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class PointFreeRule$Nop extends Enum<PointFreeRule$Nop> implements PointFreeRule, Supplier<PointFreeRule> {
     static INSTANCE: PointFreeRule$Nop;
-    static all(paramarg0: PointFreeRule): PointFreeRule;
-    static choice(...paramarg0: PointFreeRule[]): PointFreeRule;
-    static everywhere(paramarg0: PointFreeRule, paramarg1: PointFreeRule): PointFreeRule;
-    static many(paramarg0: PointFreeRule): PointFreeRule;
-    static nop(): PointFreeRule;
-    static once(paramarg0: PointFreeRule): PointFreeRule;
-    static one(paramarg0: PointFreeRule): PointFreeRule;
-    static seq(...paramarg0: PointFreeRule[]): PointFreeRule;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): PointFreeRule$Nop;
     static values(): PointFreeRule$Nop[];

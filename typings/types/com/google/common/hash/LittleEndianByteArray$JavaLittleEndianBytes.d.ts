@@ -6,7 +6,7 @@ export class LittleEndianByteArray$JavaLittleEndianBytes extends Enum<LittleEndi
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): LittleEndianByteArray$JavaLittleEndianBytes;
     static values(): LittleEndianByteArray$JavaLittleEndianBytes[];
-    constructor(arg2: any)
+    private constructor()
     usesFastPath(): boolean;
     name(): "INSTANCE";
 }

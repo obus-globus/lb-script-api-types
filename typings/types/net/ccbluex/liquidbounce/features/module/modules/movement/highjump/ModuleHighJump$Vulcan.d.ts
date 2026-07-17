@@ -18,6 +18,7 @@ export class ModuleHighJump$Vulcan extends Mode {
     glide: boolean;
     readonly jumpEvent: EventHook<PlayerJumpEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     readonly repeatable: EventHook<GameTickEvent>;
     shouldGlide: boolean;
 }

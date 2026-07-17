@@ -16,6 +16,7 @@ export class FlyExplosion extends Mode {
     static INSTANCE: FlyExplosion;
     readonly packetHandler: EventHook<PacketEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     readonly repeatable: EventHook<GameTickEvent>;
     readonly startStrafe: number;
     readonly strafeDecrease: number;

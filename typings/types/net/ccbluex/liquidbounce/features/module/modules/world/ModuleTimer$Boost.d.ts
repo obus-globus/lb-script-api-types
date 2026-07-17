@@ -16,6 +16,7 @@ export class ModuleTimer$Boost extends Mode {
     // private normalizeDuringCombat: boolean;
     // private /*not mapped: */ getNormalizeDuringCombat(): boolean;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     readonly repeatable: EventHook<GameTickEvent>;
     // private slowSpeed: number;
     // private /*not mapped: */ getSlowSpeed(): number;

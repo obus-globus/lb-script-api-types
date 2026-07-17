@@ -5,7 +5,7 @@ import type { ArrayPatternConverter } from '../../../../../../org/apache/logging
 import type { LogEventPatternConverter } from '../../../../../../org/apache/logging/log4j/core/pattern/LogEventPatternConverter.d.ts'
 export abstract class SimpleLiteralPatternConverter extends LogEventPatternConverter implements ArrayPatternConverter {
     static CATEGORY: string;
-    constructor(arg0: any)
+    private constructor()
     format(output: StringBuilder): void;
     format(output: StringBuilder, ...args: Object[]): void;
     format(ignored: Object, output: StringBuilder): void;

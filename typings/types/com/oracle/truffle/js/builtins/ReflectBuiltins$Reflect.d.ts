@@ -20,7 +20,6 @@ export class ReflectBuiltins$Reflect extends Enum<ReflectBuiltins$Reflect> imple
     static preventExtensions: ReflectBuiltins$Reflect;
     static set: ReflectBuiltins$Reflect;
     static setPrototypeOf: ReflectBuiltins$Reflect;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): ReflectBuiltins$Reflect;
     static values(): ReflectBuiltins$Reflect[];

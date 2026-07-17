@@ -16,6 +16,7 @@ export class LiquidWalkVerusB3901 extends Mode {
     static INSTANCE: LiquidWalkVerusB3901;
     readonly packetHandler: EventHook<PacketEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     readonly shapeHandler: EventHook<BlockShapeEvent>;
     // private spoof: boolean;
 }

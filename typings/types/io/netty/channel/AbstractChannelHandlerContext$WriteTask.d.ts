@@ -4,7 +4,7 @@ import type { ObjectPool$Handle } from '../../../io/netty/util/internal/ObjectPo
 import type { Runnable } from '../../../java/lang/Runnable.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class AbstractChannelHandlerContext$WriteTask extends Object implements Runnable {
-    constructor(arg0: ObjectPool$Handle<Object>, arg1: any)
+    private constructor(arg0: ObjectPool$Handle<AbstractChannelHandlerContext$WriteTask>)
     // private ctx: AbstractChannelHandlerContext;
     // private handle: ObjectPool$Handle<AbstractChannelHandlerContext$WriteTask>;
     // private msg: Object;

@@ -1,7 +1,7 @@
 import type { ScaledDotProductAttentionBlock } from '../../../../ai/djl/nn/transformer/ScaledDotProductAttentionBlock.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ScaledDotProductAttentionBlock$Builder extends Object {
-    constructor(arg0: any)
+    private constructor()
     // private attentionProbsDropoutProb: number;
     // private embeddingSize: number;
     // private headCount: number;

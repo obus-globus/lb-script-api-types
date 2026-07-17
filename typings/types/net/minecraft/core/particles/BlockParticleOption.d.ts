@@ -9,7 +9,6 @@ import type { StreamCodec } from '../../../../net/minecraft/network/codec/Stream
 import type { BlockState } from '../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class BlockParticleOption extends Object implements FabricBlockParticleOption, BlockParticleOptionExtension, ParticleOptions {
     static codec(paramtype: ParticleType<BlockParticleOption>): MapCodec<BlockParticleOption>;
-    static create(paramarg0: ParticleType<BlockParticleOption>, paramarg1: BlockState, paramarg2: BlockPos): BlockParticleOption;
     static streamCodec(paramtype: ParticleType<BlockParticleOption>): StreamCodec<Object, BlockParticleOption>;
     constructor(type: ParticleType<BlockParticleOption>, state: BlockState)
     readonly blockPos: BlockPos;

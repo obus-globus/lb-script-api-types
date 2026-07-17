@@ -2,7 +2,7 @@ import type { Float2ObjectRBTreeMap$TreeIterator } from '../../../../../it/unimi
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Float2ObjectRBTreeMap$ValueIterator extends Float2ObjectRBTreeMap$TreeIterator implements ObjectListIterator<V> {
-    constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
+    private constructor(null_: { [key: string]: any })
     add<V extends unknown>(arg0: V): void;
     next<V extends unknown>(): V;
     previous<V extends unknown>(): V;

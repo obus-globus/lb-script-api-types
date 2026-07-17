@@ -12,7 +12,6 @@ import type { Logger } from '../../../../../org/slf4j/Logger.d.ts'
 export class DensityFunctions$Ap2 extends Record implements DensityFunctions$TwoArgumentSimpleFunction {
     static CODEC: Codec<DensityFunction>;
     static LOGGER: Logger;
-    static create(paramtype: DensityFunctions$TwoArgumentSimpleFunction$Type, paramargument1: DensityFunction, paramargument2: DensityFunction): DensityFunctions$TwoArgumentSimpleFunction;
     private constructor(type: DensityFunctions$TwoArgumentSimpleFunction$Type, argument1: DensityFunction, argument2: DensityFunction, minValue: number, maxValue: number)
     // private argument1: DensityFunction;
     // private argument2: DensityFunction;

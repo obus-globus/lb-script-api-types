@@ -13,4 +13,5 @@ export class CriticalsNoGround extends Mode {
     static INSTANCE: CriticalsNoGround;
     // private packetHandler: EventHook<PacketEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
 }

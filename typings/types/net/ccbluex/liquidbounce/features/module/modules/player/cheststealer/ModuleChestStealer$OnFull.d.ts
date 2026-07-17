@@ -7,8 +7,6 @@ export class ModuleChestStealer$OnFull extends Enum<ModuleChestStealer$OnFull> i
     static NONE: ModuleChestStealer$OnFull;
     static THROW: ModuleChestStealer$OnFull;
     static getEntries(): ModuleChestStealer$OnFull[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleChestStealer$OnFull;
     static values(): ModuleChestStealer$OnFull[];

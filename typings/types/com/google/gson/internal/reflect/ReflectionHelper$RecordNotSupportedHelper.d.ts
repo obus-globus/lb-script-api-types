@@ -5,7 +5,7 @@ import type { Field } from '../../../../../java/lang/reflect/Field.d.ts'
 import type { Method } from '../../../../../java/lang/reflect/Method.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ReflectionHelper$RecordNotSupportedHelper extends ReflectionHelper$RecordHelper {
-    constructor(arg0: any)
+    private constructor()
     getAccessor(arg0: Class<Object>, arg1: Field): Method;
     getCanonicalRecordConstructor<T extends unknown>(arg0: Class<T>): Constructor<T>;
     getRecordComponentNames(arg0: Class<Object>): string[];

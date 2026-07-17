@@ -10,7 +10,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class HttpPostRequestEncoder$WrappedFullHttpRequest extends HttpPostRequestEncoder$WrappedHttpRequest implements FullHttpRequest {
     static EMPTY_LAST_CONTENT: LastHttpContent;
-    constructor(arg0: HttpRequest, arg1: HttpContent, arg2: any)
+    private constructor(arg0: HttpRequest, arg1: HttpContent)
     // private content: HttpContent;
     content(): ByteBuf;
     copy(): FullHttpRequest;

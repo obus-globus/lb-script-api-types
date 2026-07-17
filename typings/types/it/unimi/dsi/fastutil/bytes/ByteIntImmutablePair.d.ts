@@ -1,11 +1,8 @@
 import type { ByteIntPair } from '../../../../../it/unimi/dsi/fastutil/bytes/ByteIntPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
-import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ByteIntImmutablePair extends Object implements ByteIntPair, Serializable {
-    static lexComparator(): (param0: ByteIntPair, param1: ByteIntPair) => number;
     static of(paramarg0: number, paramarg1: number): ByteIntImmutablePair;
-    static of(paramarg0: number, paramarg1: number): ByteIntPair;
     constructor(arg0: number, arg1: number)
     // private left: number;
     // private right: number;

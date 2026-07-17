@@ -7,6 +7,7 @@ export class CriticalsTimer extends Mode {
     static Companion: Tagged$Companion;
     static INSTANCE: CriticalsTimer;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private range: number;
     // private /*not mapped: */ getRange(): number;
     // private speed: number;

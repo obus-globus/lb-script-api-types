@@ -7,7 +7,6 @@ import type { ListOperation$Type } from '../../../../../../../net/minecraft/worl
 export class ListOperation$ReplaceSection extends Record implements ListOperation {
     static MAP_CODEC: MapCodec<ListOperation$ReplaceSection>;
     static UNLIMITED_CODEC: MapCodec<ListOperation>;
-    static codec(parammaxSize: number): MapCodec<ListOperation>;
     constructor(offset: number)
     constructor(offset: number, size: Optional<number>)
     // private offset: number;

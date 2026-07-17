@@ -7,7 +7,6 @@ import type { ArgumentTypeInfo$Template } from '../../../../net/minecraft/comman
 export class ArgumentTypeInfos extends Object implements ArgumentTypeInfosAccessor {
     static bootstrap(paramregistry: ArgumentTypeInfo<any, any>[]): ArgumentTypeInfo<any, any>;
     static byClass<A extends ArgumentType<Object>>(paramargumentType: A): ArgumentTypeInfo<A, any>;
-    static fabric_getClassMap(): Map<Class<Object>, ArgumentTypeInfo<any, any>>;
     static isClassRecognized(paramcls: Class<Object>): boolean;
     static unpack<A extends ArgumentType<Object>>(paramargumentType: A): ArgumentTypeInfo$Template<A>;
     constructor()

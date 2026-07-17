@@ -25,5 +25,6 @@ export class FlySentinel27thJan extends Mode {
     // private /*not mapped: */ getHorizontalSpeed(): ClosedFloatingPointRange<number>;
     readonly moveHandler: EventHook<PlayerMoveEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     readonly repeatable: EventHook<GameTickEvent>;
 }

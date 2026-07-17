@@ -4,6 +4,6 @@ import type { XPath } from '../../../../javax/xml/xpath/XPath.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Document } from '../../../../org/w3c/dom/Document.d.ts'
 export class MexParser$WsTrustEndpointPolicySelector extends Object implements MexParser$PolicySelector {
-    constructor(arg0: any)
+    private constructor()
     selectPolicies(arg0: Document, arg1: XPath, arg2: boolean): { [key: string]: BindingPolicy };
 }

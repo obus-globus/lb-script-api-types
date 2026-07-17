@@ -14,8 +14,6 @@ export class Sorting extends Enum<Sorting> implements Tagged {
     static SCORE_LENGTH: Sorting;
     static VANILLA: Sorting;
     static getEntries(): Sorting[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): Sorting;
     static values(): Sorting[];

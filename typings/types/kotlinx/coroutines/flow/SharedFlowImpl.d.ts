@@ -27,16 +27,20 @@ export class SharedFlowImpl<T extends unknown> extends AbstractSharedFlow<Shared
     // private replayIndex: number;
     // private /*not mapped: */ getReplaySize(): number;
     // private /*not mapped: */ getTotalSize(): number;
-    // private awaitValue(slot: SharedFlowSlot): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private awaitValue(slot: SharedFlowSlot, $completion: Continuation<void>): any;
     // private cancelEmitter(emitter: SharedFlowImpl$Emitter): void;
     // private cleanupTailLocked(): void;
-    collect(collector: FlowCollector<T>): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    collect(collector: FlowCollector<T>, $completion: Continuation<void>): any;
     // private correctCollectorIndexesOnDropOldest(newHead: number): void;
     protected createSlot(): SharedFlowSlot;
     protected createSlotArray(size: number): (SharedFlowSlot | null)[];
     // private dropOldestLocked(): void;
-    emit(value: T): void;
-    // private emitSuspend(value: T): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    emit(value: T, $completion: Continuation<void>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private emitSuspend(value: T, $completion: Continuation<void>): any;
     // private enqueueLocked(item: Object | null): void;
     // private findSlotsToResumeLocked(resumesIn: (Continuation<void> | null)[]): (Continuation<void> | null)[];
     fuse(context: CoroutineContext, capacity: number, onBufferOverflow: BufferOverflow): Flow<T>;

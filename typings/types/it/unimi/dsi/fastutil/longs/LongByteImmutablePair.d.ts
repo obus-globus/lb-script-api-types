@@ -1,11 +1,8 @@
 import type { LongBytePair } from '../../../../../it/unimi/dsi/fastutil/longs/LongBytePair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
-import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class LongByteImmutablePair extends Object implements LongBytePair, Serializable {
-    static lexComparator(): (param0: LongBytePair, param1: LongBytePair) => number;
     static of(paramarg0: number, paramarg1: number): LongByteImmutablePair;
-    static of(paramarg0: number, paramarg1: number): LongBytePair;
     constructor(arg0: number, arg1: number)
     // private left: number;
     // private right: number;

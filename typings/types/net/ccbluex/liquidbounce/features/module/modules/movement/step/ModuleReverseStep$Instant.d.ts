@@ -7,6 +7,7 @@ export class ModuleReverseStep$Instant extends Mode {
     static Companion: Tagged$Companion;
     static INSTANCE: ModuleReverseStep$Instant;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     readonly repeatable: EventHook<GameTickEvent>;
     // private simulateFalling: boolean;
     // private /*not mapped: */ getSimulateFalling(): boolean;

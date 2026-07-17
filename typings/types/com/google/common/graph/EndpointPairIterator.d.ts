@@ -3,7 +3,7 @@ import type { BaseGraph } from '../../../../com/google/common/graph/BaseGraph.d.
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export abstract class EndpointPairIterator<N extends unknown> extends AbstractIterator<N[]> {
-    constructor(arg0: BaseGraph<Object>, arg1: any)
+    private constructor(graph: BaseGraph<N>)
     // private graph: BaseGraph<N>;
     // private node: N;
     // private nodeIterator: Iterator<N>;

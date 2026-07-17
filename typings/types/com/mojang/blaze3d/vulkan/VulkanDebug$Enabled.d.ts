@@ -8,7 +8,6 @@ import type { VkInstance } from '../../../../org/lwjgl/vulkan/VkInstance.d.ts'
 import type { VkInstanceCreateInfo } from '../../../../org/lwjgl/vulkan/VkInstanceCreateInfo.d.ts'
 export class VulkanDebug$Enabled extends Object implements VulkanDebug {
     static MESSAGE_TYPE_BITMASK: number;
-    static create(paramverbosity: number, paramwantsDebugLabels: boolean, paramavailableExtensions: string[], paramenabledExtensions: string[]): VulkanDebug;
     constructor(verbosity: number, wantsDebugLabels: boolean)
     // private messenger: number;
     // private severityBitmask: number;

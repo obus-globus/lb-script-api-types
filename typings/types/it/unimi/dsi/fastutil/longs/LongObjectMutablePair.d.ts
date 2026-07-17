@@ -1,11 +1,8 @@
 import type { LongObjectPair } from '../../../../../it/unimi/dsi/fastutil/longs/LongObjectPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
-import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class LongObjectMutablePair<V extends unknown> extends Object implements LongObjectPair<V>, Serializable {
-    static lexComparator<V extends unknown>(): (param0: LongObjectPair<V>, param1: LongObjectPair<V>) => number;
     static of<V extends unknown>(paramarg0: number, paramarg1: V): LongObjectMutablePair<V>;
-    static of<V extends unknown>(paramarg0: number, paramarg1: V): LongObjectPair<V>;
     constructor(arg0: number, arg1: V)
     // private left: number;
     // private right: V;

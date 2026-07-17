@@ -1,4 +1,3 @@
-import type { DefaultConstructorMarker } from '../../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { Annotated } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/annotations/Annotated.d.ts'
 import type { AnnotationDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/annotations/AnnotationDescriptor.d.ts'
 import type { AnnotationQualifierApplicabilityType } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/AnnotationQualifierApplicabilityType.d.ts'
@@ -16,7 +15,6 @@ import type { TypeParameterMarker } from '../../../../../../../../kotlin/reflect
 import type { TypeSystemInferenceExtensionContext } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeSystemInferenceExtensionContext.d.ts'
 export class SignatureParts extends AbstractSignatureParts<AnnotationDescriptor> {
     constructor(arg0: Annotated, arg1: boolean, arg2: LazyJavaResolverContext, arg3: AnnotationQualifierApplicabilityType, arg4: boolean)
-    constructor(arg0: Annotated, arg1: boolean, arg2: LazyJavaResolverContext, arg3: AnnotationQualifierApplicabilityType, arg4: boolean, arg5: number, arg6: DefaultConstructorMarker)
     readonly containerApplicabilityType: AnnotationQualifierApplicabilityType;
     // private containerContext: LazyJavaResolverContext;
     // private isCovariant: boolean;

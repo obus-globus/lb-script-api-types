@@ -7,7 +7,6 @@ import type { BlockEntity } from '../../../../../../../net/minecraft/world/level
 import type { BlockEntityType } from '../../../../../../../net/minecraft/world/level/block/entity/BlockEntityType.d.ts'
 export class BlockEntityRenderHandlerImpl extends Object implements BlockEntityRenderHandler {
     static INSTANCE: BlockEntityRenderHandler;
-    static instance(): BlockEntityRenderHandler;
     constructor()
     addRenderPredicate<T extends BlockEntity>(arg0: BlockEntityType<T>, arg1: (param0: BlockGetter, param1: BlockPos, param2: T) => boolean): void;
     removeRenderPredicate<T extends BlockEntity>(arg0: BlockEntityType<T>, arg1: (param0: BlockGetter, param1: BlockPos, param2: T) => boolean): boolean;

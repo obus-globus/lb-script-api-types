@@ -6,7 +6,6 @@ import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class StructuredItem extends Object implements Item {
     static empty(): StructuredItem;
     static emptyArray(paramarg0: number): Item[];
-    static isEmpty(paramarg0: Item): boolean;
     constructor(arg0: number, arg1: number)
     constructor(arg0: number, arg1: number, arg2: StructuredDataContainer)
     amount(): number;

@@ -9,15 +9,6 @@ import type { ConversionRates } from '../../../../../../../../org/graalvm/shadow
 import type { MeasureUnitImpl$MeasureUnitImplComparator } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/units/MeasureUnitImpl$MeasureUnitImplComparator.d.ts'
 import type { MeasureUnitImpl$MeasureUnitImplWithIndex } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/units/MeasureUnitImpl$MeasureUnitImplWithIndex.d.ts'
 export class MeasureUnitImpl$MeasureUnitImplWithIndexComparator extends Object implements Comparator<MeasureUnitImpl$MeasureUnitImplWithIndex> {
-    static comparing<T extends unknown, U extends Comparable<Object>>(paramarg0: (param0: Object) => U): (param0: T, param1: T) => number;
-    static comparing<T extends unknown, U extends unknown>(paramarg0: (param0: Object) => U, paramarg1: (param0: Object, param1: Object) => number): (param0: T, param1: T) => number;
-    static comparingDouble<T extends unknown>(paramarg0: (param0: Object) => number): (param0: T, param1: T) => number;
-    static comparingInt<T extends unknown>(paramarg0: (param0: Object) => number): (param0: T, param1: T) => number;
-    static comparingLong<T extends unknown>(paramarg0: (param0: Object) => number): (param0: T, param1: T) => number;
-    static naturalOrder<T extends Comparable<Object>>(): (param0: T, param1: T) => number;
-    static nullsFirst<T extends unknown>(paramarg0: (param0: Object, param1: Object) => number): (param0: T, param1: T) => number;
-    static nullsLast<T extends unknown>(paramarg0: (param0: Object, param1: Object) => number): (param0: T, param1: T) => number;
-    static reverseOrder<T extends Comparable<Object>>(): (param0: T, param1: T) => number;
     constructor(conversionRates: ConversionRates)
     // private measureUnitImplComparator: MeasureUnitImpl$MeasureUnitImplComparator;
     compare(o1: MeasureUnitImpl$MeasureUnitImplWithIndex, o2: MeasureUnitImpl$MeasureUnitImplWithIndex): number;

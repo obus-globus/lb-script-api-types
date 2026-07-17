@@ -9,8 +9,6 @@ export class ModuleAutoClicker$AttackButton$ObjectiveType extends Enum<ModuleAut
     static ENEMY: ModuleAutoClicker$AttackButton$ObjectiveType;
     static ENTITY: ModuleAutoClicker$AttackButton$ObjectiveType;
     static getEntries(): ModuleAutoClicker$AttackButton$ObjectiveType[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleAutoClicker$AttackButton$ObjectiveType;
     static values(): ModuleAutoClicker$AttackButton$ObjectiveType[];

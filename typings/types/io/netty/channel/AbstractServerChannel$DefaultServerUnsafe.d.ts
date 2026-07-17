@@ -3,6 +3,6 @@ import type { AbstractServerChannel } from '../../../io/netty/channel/AbstractSe
 import type { ChannelPromise } from '../../../io/netty/channel/ChannelPromise.d.ts'
 import type { SocketAddress } from '../../../java/net/SocketAddress.d.ts'
 export class AbstractServerChannel$DefaultServerUnsafe extends AbstractChannel$AbstractUnsafe {
-    constructor(null_: AbstractServerChannel, arg1: any)
+    private constructor(null_: AbstractServerChannel)
     connect(arg0: SocketAddress, arg1: SocketAddress, arg2: ChannelPromise): void;
 }

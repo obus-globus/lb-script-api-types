@@ -27,6 +27,7 @@ export class LazyActorCoroutine<E extends unknown> extends ActorCoroutine<E> {
     offer(element: E): boolean;
     // private onSendRegFunction(select: SelectInstance<Object>, element: Object | null): void;
     protected onStart(): void;
-    send(element: E): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    send(element: E, $completion: Continuation<void>): any;
     trySend(element: E): ChannelResult<void>;
 }

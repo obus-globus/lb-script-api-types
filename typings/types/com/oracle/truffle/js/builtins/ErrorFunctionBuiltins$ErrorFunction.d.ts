@@ -9,7 +9,6 @@ import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class ErrorFunctionBuiltins$ErrorFunction extends Enum<ErrorFunctionBuiltins$ErrorFunction> implements BuiltinEnum<ErrorFunctionBuiltins$ErrorFunction> {
     static captureStackTrace: ErrorFunctionBuiltins$ErrorFunction;
     static isError: ErrorFunctionBuiltins$ErrorFunction;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): ErrorFunctionBuiltins$ErrorFunction;
     static values(): ErrorFunctionBuiltins$ErrorFunction[];

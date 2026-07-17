@@ -11,8 +11,6 @@ export class ModuleSpeed$NotCondition extends Enum<ModuleSpeed$NotCondition> imp
     static SNEAKING: ModuleSpeed$NotCondition;
     static USING_ITEM: ModuleSpeed$NotCondition;
     static getEntries(): ModuleSpeed$NotCondition[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleSpeed$NotCondition;
     static values(): ModuleSpeed$NotCondition[];

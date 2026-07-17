@@ -8,8 +8,6 @@ export class NavigationBaseValueGroup$AutoAction extends Enum<NavigationBaseValu
     static SPRINT: NavigationBaseValueGroup$AutoAction;
     static SWIM: NavigationBaseValueGroup$AutoAction;
     static getEntries(): NavigationBaseValueGroup$AutoAction[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): NavigationBaseValueGroup$AutoAction;
     static values(): NavigationBaseValueGroup$AutoAction[];

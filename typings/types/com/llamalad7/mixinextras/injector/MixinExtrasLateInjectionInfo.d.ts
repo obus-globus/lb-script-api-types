@@ -18,7 +18,6 @@ export abstract class MixinExtrasLateInjectionInfo extends MixinExtrasInjectionI
     static getRegisteredAnnotations(): Class<Annotation>[];
     static parse(paramarg0: MixinTargetContext, paramarg1: MethodNode): InjectionInfo;
     static register(paramarg0: Class<InjectionInfo>): void;
-    static wrap(paramarg0: Object, paramarg1: LateApplyingInjectorInfo): boolean;
     constructor(arg0: MixinTargetContext, arg1: MethodNode, arg2: AnnotationNode)
     constructor(arg0: MixinTargetContext, arg1: MethodNode, arg2: AnnotationNode, arg3: string)
     // private hasInjectStarted: boolean;

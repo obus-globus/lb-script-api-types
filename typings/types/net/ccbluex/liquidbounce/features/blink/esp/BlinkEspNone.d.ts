@@ -5,4 +5,5 @@ export class BlinkEspNone extends BlinkEspMode {
     static Companion: Tagged$Companion;
     constructor(parent: ModeValueGroup<any>)
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
 }

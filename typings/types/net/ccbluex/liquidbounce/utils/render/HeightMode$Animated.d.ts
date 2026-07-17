@@ -13,6 +13,7 @@ export class HeightMode$Animated extends HeightMode implements HeightMode$WithGl
     // private heightOffset: number;
     // private /*not mapped: */ getHeightOffset(): number;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private speed: number;
     // private /*not mapped: */ getSpeed(): number;
     // private calculateHeight(time: number): number;

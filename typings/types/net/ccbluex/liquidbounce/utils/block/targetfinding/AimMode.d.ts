@@ -13,8 +13,6 @@ export class AimMode extends Enum<AimMode> implements Tagged {
     static REVERSE_YAW: AimMode;
     static STABILIZED: AimMode;
     static getEntries(): AimMode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): AimMode;
     static values(): AimMode[];

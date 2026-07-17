@@ -21,6 +21,7 @@ export abstract class BlockPlacerRotationMode extends Mode implements MinecraftS
     // private modeValueGroup: ModeValueGroup<BlockPlacerRotationMode>;
     readonly network: ClientPacketListener;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     readonly placer: BlockPlacer;
     readonly player: LocalPlayer;
     readonly postMove: boolean;

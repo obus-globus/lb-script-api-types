@@ -9,7 +9,6 @@ import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class Uint8ArrayBuiltins$Uint8ArrayConstructor extends Enum<Uint8ArrayBuiltins$Uint8ArrayConstructor> implements BuiltinEnum<Uint8ArrayBuiltins$Uint8ArrayConstructor> {
     static fromBase64: Uint8ArrayBuiltins$Uint8ArrayConstructor;
     static fromHex: Uint8ArrayBuiltins$Uint8ArrayConstructor;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): Uint8ArrayBuiltins$Uint8ArrayConstructor;
     static values(): Uint8ArrayBuiltins$Uint8ArrayConstructor[];

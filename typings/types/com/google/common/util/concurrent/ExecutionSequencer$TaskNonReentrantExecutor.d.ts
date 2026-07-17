@@ -5,7 +5,7 @@ import type { Thread } from '../../../../../java/lang/Thread.d.ts'
 import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts'
 import type { AtomicReference } from '../../../../../java/util/concurrent/atomic/AtomicReference.d.ts'
 export class ExecutionSequencer$TaskNonReentrantExecutor extends AtomicReference<ExecutionSequencer$RunningState> implements Runnable, Executor {
-    constructor(arg0: Executor, arg1: ExecutionSequencer, arg2: ExecutionSequencer$1)
+    private constructor(delegate: Executor, sequencer: ExecutionSequencer)
     // private delegate: Executor;
     // private sequencer: ExecutionSequencer;
     // private submitting: Thread;

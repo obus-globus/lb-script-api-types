@@ -24,7 +24,6 @@ import type { SlotAccess } from '../../../../../../net/minecraft/world/entity/Sl
 import type { SpawnGroupData } from '../../../../../../net/minecraft/world/entity/SpawnGroupData.d.ts'
 import type { AttributeModifier } from '../../../../../../net/minecraft/world/entity/ai/attributes/AttributeModifier.d.ts'
 import type { AttributeSupplier$Builder } from '../../../../../../net/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder.d.ts'
-import type { ItemEntity } from '../../../../../../net/minecraft/world/entity/item/ItemEntity.d.ts'
 import type { InventoryCarrier } from '../../../../../../net/minecraft/world/entity/npc/InventoryCarrier.d.ts'
 import type { Npc } from '../../../../../../net/minecraft/world/entity/npc/Npc.d.ts'
 import type { Player } from '../../../../../../net/minecraft/world/entity/player/Player.d.ts'
@@ -159,7 +158,6 @@ export abstract class AbstractVillager extends AgeableMob implements InventoryCa
     static getSpeedUpSecondsWhenFeeding(paramticksUntilAdult: number): number;
     static getViewScale(): number;
     static makeAgeLockedParticle(paramlevel: Level, parammob: Mob, paramageLockParticleTimer: number, paramisAgeLocked: boolean): number;
-    static pickUpItem(paramlevel: ServerLevel, parammob: Mob, paraminventoryCarrier: InventoryCarrier, paramitemEntity: ItemEntity): void;
     static resetForwardDirectionOfRelativePortalPosition(paramoffsets: Vec3): Vec3;
     static setAgeLocked(parammob: Mob, paramisAgedLocked: () => boolean, paramplayer: Player, paramitemInHand: ItemStack, paramsetAgeLockData: (param0: Mob) => void): void;
     static setViewScale(paramviewScale: number): void;

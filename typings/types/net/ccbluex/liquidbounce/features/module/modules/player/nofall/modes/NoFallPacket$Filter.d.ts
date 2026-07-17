@@ -6,4 +6,5 @@ export abstract class NoFallPacket$Filter extends Mode {
     constructor(name: string)
     /*not mapped: */ isActive(): boolean;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
 }

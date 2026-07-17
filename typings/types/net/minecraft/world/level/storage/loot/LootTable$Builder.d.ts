@@ -13,7 +13,6 @@ import type { FunctionUserBuilder } from '../../../../../../net/minecraft/world/
 import type { LootItemFunction } from '../../../../../../net/minecraft/world/level/storage/loot/functions/LootItemFunction.d.ts'
 import type { LootItemFunction$Builder } from '../../../../../../net/minecraft/world/level/storage/loot/functions/LootItemFunction$Builder.d.ts'
 export class LootTable$Builder extends Object implements FabricLootTableBuilder, FunctionUserBuilder<LootTable$Builder> {
-    static copyOf(paramarg0: LootTable): LootTable$Builder;
     constructor()
     // private functions: ImmutableList$Builder<LootItemFunction>;
     // private paramSet: ContextKeySet;

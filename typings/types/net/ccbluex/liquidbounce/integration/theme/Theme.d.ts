@@ -3,6 +3,7 @@ import type { File } from '../../../../../java/io/File.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Continuation } from '../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { Mutex } from '../../../../../kotlinx/coroutines/sync/Mutex.d.ts'
 import type { BaseApi } from '../../../../../net/ccbluex/liquidbounce/api/core/BaseApi.d.ts'
 import type { ValueGroup } from '../../../../../net/ccbluex/liquidbounce/config/types/group/ValueGroup.d.ts'
@@ -45,7 +46,8 @@ export class Theme extends BaseApi implements Closeable, ResourceManagerReloadLi
     // private shaderMutex: Mutex;
     addComponent(sourceId: string): HudComponent | null;
     close(): void;
-    compileShader(): boolean;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    compileShader($completion: Continuation<boolean>): any;
     componentCatalog(): Theme$ComponentCatalogEntry[];
     // private createComponent(factory: HudComponentFactory): HudComponent | null;
     /**
@@ -57,11 +59,16 @@ export class Theme extends BaseApi implements Closeable, ResourceManagerReloadLi
     isOverlaySupported(name: string | null): boolean;
     isScreenSupported(name: string | null): boolean;
     isSupported(name: string | null): boolean;
-    // private loadAll(): Theme;
-    loadBackgroundImage(): boolean;
-    // private loadComponents(): void;
-    // private loadFonts(): void;
-    // private loadMetadata(): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private loadAll($completion: Continuation<Theme>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    loadBackgroundImage($completion: Continuation<boolean>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private loadComponents($completion: Continuation<void>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private loadFonts($completion: Continuation<void>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private loadMetadata($completion: Continuation<void>): any;
     onResourceManagerReload(manager: ResourceManager): void;
     // private registerComponent(component: HudComponent): void;
     reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => CompletableFuture<Object>, reloadExecutor: Executor): CompletableFuture<void>;

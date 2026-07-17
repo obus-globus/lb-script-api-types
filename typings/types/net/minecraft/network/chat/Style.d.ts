@@ -8,7 +8,6 @@ import type { TextColor } from '../../../../net/minecraft/network/chat/TextColor
 export class Style extends Object implements MixinStyleAccessor {
     static EMPTY: Style;
     static NO_SHADOW: number;
-    static create(paramarg0: TextColor, paramarg1: number, paramarg2: boolean, paramarg3: boolean, paramarg4: boolean, paramarg5: boolean, paramarg6: boolean, paramarg7: ClickEvent, paramarg8: HoverEvent, paramarg9: string, paramarg10: FontDescription): Style;
     private constructor(color: TextColor, shadowColor: number, bold: boolean, italic: boolean, underlined: boolean, strikethrough: boolean, obfuscated: boolean, clickEvent: ClickEvent, hoverEvent: HoverEvent, insertion: string, font: FontDescription)
     readonly bold: boolean;
     readonly clickEvent: ClickEvent;

@@ -10,5 +10,4 @@ export class Base32InputStream extends BaseNCodecInputStream<Base32, Base32Input
     constructor(arg0: InputStream, arg1: boolean)
     constructor(arg0: InputStream, arg1: boolean, arg2: number, arg3: number[])
     constructor(arg0: InputStream, arg1: boolean, arg2: number, arg3: number[], arg4: CodecPolicy)
-    constructor(arg0: Base32InputStream$Builder, arg1: any)
 }

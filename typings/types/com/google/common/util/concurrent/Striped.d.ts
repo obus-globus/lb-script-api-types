@@ -11,7 +11,7 @@ export abstract class Striped<L extends unknown> extends Object {
     static lock(paramstripes: number): Striped<Lock>;
     static readWriteLock(paramstripes: number): Striped<ReadWriteLock>;
     static semaphore(paramstripes: number, parampermits: number): Striped<Semaphore>;
-    constructor(arg0: any)
+    private constructor()
     bulkGet(keys: (Object | null)[]): L[];
     get(key: Object): L;
     getAt(index: number): L;

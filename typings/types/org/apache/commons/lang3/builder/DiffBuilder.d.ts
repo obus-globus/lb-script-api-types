@@ -9,7 +9,6 @@ export class DiffBuilder<T extends unknown> extends Object implements Builder<Di
     static builder<T extends unknown>(): DiffBuilder$Builder<T>;
     constructor(arg0: T, arg1: T, arg2: ToStringStyle)
     constructor(arg0: T, arg1: T, arg2: ToStringStyle, arg3: boolean)
-    constructor(arg0: Object, arg1: Object, arg2: ToStringStyle, arg3: boolean, arg4: string, arg5: any)
     // private diffs: Diff<Object>[];
     // private equals: boolean;
     // private left: T;

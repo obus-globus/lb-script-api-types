@@ -7,6 +7,7 @@ export class ModuleFullBright$FullBrightNightVision extends Mode {
     static Companion: Tagged$Companion;
     static INSTANCE: ModuleFullBright$FullBrightNightVision;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     readonly tickHandler: EventHook<PlayerPostTickEvent>;
     disable(): void;
 }

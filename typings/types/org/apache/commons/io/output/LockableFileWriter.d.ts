@@ -15,7 +15,6 @@ export class LockableFileWriter extends Writer {
     constructor(arg0: string)
     constructor(arg0: string, arg1: boolean)
     constructor(arg0: string, arg1: boolean, arg2: string)
-    constructor(arg0: LockableFileWriter$Builder, arg1: any)
     // private lockFile: File;
     // private out: Writer;
     close(): void;

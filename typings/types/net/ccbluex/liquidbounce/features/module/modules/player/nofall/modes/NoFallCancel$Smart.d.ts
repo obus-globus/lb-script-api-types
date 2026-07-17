@@ -4,4 +4,5 @@ export class NoFallCancel$Smart extends NoFallCancel$DistanceMode {
     static Companion: Tagged$Companion;
     static INSTANCE: NoFallCancel$Smart;
     readonly value: number;
+    getValue(): number;
 }

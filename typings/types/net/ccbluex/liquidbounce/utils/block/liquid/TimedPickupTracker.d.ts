@@ -12,7 +12,7 @@ import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.t
  * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/liquid/TimedPickupTracker.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/liquid/TimedPickupTracker.kt:35}
  */
 export class TimedPickupTracker extends Object {
-    constructor(capacity: number, nowProvider: () => number)
+    constructor(capacity: number, nowProvider?: () => number)
     // private capacity: number;
     // private nowProvider: () => number;
     // private trackedPositions: TimedPickupTracker$TrackedPos[];
@@ -28,7 +28,7 @@ export class TimedPickupTracker extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/liquid/TimedPickupTracker.kt#L88 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/liquid/TimedPickupTracker.kt:88}
      */
-    firstEligible(minDelayMs: number, predicate: (param0: BlockPos) => boolean): BlockPos | null;
+    firstEligible(minDelayMs: number, predicate?: (param0: BlockPos) => boolean): BlockPos | null;
     /**
      * Removes entries that are older than {@link maxDelayMs} or fail {@link isPickupable}.
      *

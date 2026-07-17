@@ -5,10 +5,8 @@ import type { TimeZone } from '../../../../../../../../java/util/TimeZone.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Instant } from '../../../../../../../../org/apache/logging/log4j/core/time/Instant.d.ts'
 import type { InstantPatternFormatter } from '../../../../../../../../org/apache/logging/log4j/core/util/internal/instant/InstantPatternFormatter.d.ts'
-import type { InstantPatternFormatter$Builder } from '../../../../../../../../org/apache/logging/log4j/core/util/internal/instant/InstantPatternFormatter$Builder.d.ts'
 export abstract class InstantPatternDynamicFormatter$AbstractFormatter extends Object implements InstantPatternFormatter {
     static LEGACY_FORMATTERS_ENABLED: boolean;
-    static newBuilder(): InstantPatternFormatter$Builder;
     constructor(pattern: string, locale: Locale, timeZone: TimeZone, precision: ChronoUnit)
     readonly locale: Locale;
     readonly pattern: string;

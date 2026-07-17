@@ -9,5 +9,6 @@ export class GenericEntityHealthColorMode extends GenericColorMode<LivingEntity>
     // private alpha: number;
     // private /*not mapped: */ getAlpha(): number;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     getColor(param: LivingEntity): Color4b;
 }

@@ -13,7 +13,6 @@ export class RegistryType extends Enum<RegistryType> implements RegistryKey {
     static ITEM: RegistryType;
     static getByKey(paramarg0: string): RegistryType;
     static getValues(): RegistryType[];
-    static of(paramarg0: string): RegistryKey;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): RegistryType;
     static values(): RegistryType[];

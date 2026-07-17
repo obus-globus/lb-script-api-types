@@ -25,7 +25,7 @@ export class Rfc5424Layout extends AbstractStringLayout {
     static PARAM_VALUE_ESCAPE_PATTERN: Pattern;
     static createLayout(paramfacility: Facility, paramid: string, paramenterpriseNumber: number, paramincludeMDC: boolean, parammdcId: string, parammdcPrefix: string, parameventPrefix: string, paramnewLine: boolean, paramescapeNL: string, paramappName: string, parammsgId: string, paramexcludes: string, paramincludes: string, paramrequired: string, paramexceptionPattern: string, paramuseTlsMessageFormat: boolean, paramloggerFields: LoggerFields[], paramconfig: Configuration): Rfc5424Layout;
     static newBuilder(): Rfc5424Layout$Rfc5424LayoutBuilder;
-    constructor(arg0: Configuration, arg1: Facility, arg2: string, arg3: string, arg4: boolean, arg5: boolean, arg6: string, arg7: string, arg8: string, arg9: string, arg10: string, arg11: string, arg12: string, arg13: string, arg14: string, arg15: Charset, arg16: string, arg17: boolean, arg18: LoggerFields[], arg19: any)
+    private constructor(config: Configuration, facility: Facility, id: string, ein: string, includeMDC: boolean, includeNL: boolean, escapeNL: string, mdcId: string, mdcPrefix: string, eventPrefix: string, appName: string, messageId: string, excludes: string, includes: string, required: string, charset: Charset, exceptionPattern: string, useTLSMessageFormat: boolean, loggerFields: LoggerFields[])
     // private appName: string;
     // private configName: string;
     readonly defaultId: string;

@@ -5,7 +5,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ShortShortImmutableSortedPair extends ShortShortImmutablePair implements ShortShortSortedPair, Serializable {
     static of(paramarg0: number, paramarg1: number): ShortShortImmutablePair;
     static of(paramarg0: number, paramarg1: number): ShortShortImmutableSortedPair;
-    static of(paramarg0: number, paramarg1: number): ShortShortSortedPair;
     private constructor(arg0: number, arg1: number)
     contains(arg0: Object): boolean;
     contains(arg0: number): boolean;

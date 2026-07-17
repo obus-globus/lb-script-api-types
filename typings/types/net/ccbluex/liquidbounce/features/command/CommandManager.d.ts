@@ -18,6 +18,7 @@ import type { Parameter } from '../../../../../net/ccbluex/liquidbounce/features
 export class CommandManager extends Object {
     static INSTANCE: CommandManager;
     readonly size: number;
+    getSize(): number;
     addCommand(command: Command): void;
     autoComplete(origCmd: string, start: number): CompletableFuture<Suggestions>;
     contains(element: Command): boolean;

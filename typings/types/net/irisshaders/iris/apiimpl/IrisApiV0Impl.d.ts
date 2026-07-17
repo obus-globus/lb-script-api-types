@@ -8,7 +8,6 @@ import type { IrisProgram } from '../../../../net/irisshaders/iris/api/v0/IrisPr
 import type { IrisTextVertexSink } from '../../../../net/irisshaders/iris/api/v0/IrisTextVertexSink.d.ts'
 export class IrisApiV0Impl extends Object implements IrisApi {
     static INSTANCE: IrisApiV0Impl;
-    static getInstance(): IrisApi;
     constructor()
     assignPipeline(arg0: RenderPipeline, arg1: IrisProgram): void;
     createTextVertexSink(arg0: number, arg1: (param0: number) => ByteBuffer): IrisTextVertexSink;

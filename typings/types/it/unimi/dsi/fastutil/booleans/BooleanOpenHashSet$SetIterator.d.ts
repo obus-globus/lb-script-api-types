@@ -3,7 +3,7 @@ import type { BooleanIterator } from '../../../../../it/unimi/dsi/fastutil/boole
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BooleanOpenHashSet$SetIterator extends Object implements BooleanIterator {
-    constructor(null_: (Object | null)[], arg1: any)
+    private constructor(null_: (Object | null)[])
     // private c: number;
     // private last: number;
     // private mustReturnNull: boolean;

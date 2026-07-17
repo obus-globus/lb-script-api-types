@@ -5,5 +5,6 @@ export class NoFallMode extends Mode {
     static Companion: Tagged$Companion;
     protected constructor(name: string)
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private /*not mapped: */ getPlayerSafeFallDistance(): number;
 }

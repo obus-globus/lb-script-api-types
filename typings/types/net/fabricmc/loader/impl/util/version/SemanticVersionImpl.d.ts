@@ -5,7 +5,6 @@ import type { Version } from '../../../../../../net/fabricmc/loader/api/Version.
 import type { SemanticVersionImpl as SemanticVersionImpl_2 } from '../../../../../../net/fabricmc/loader/util/version/SemanticVersionImpl.d.ts'
 export class SemanticVersionImpl extends SemanticVersionImpl_2 implements SemanticVersion {
     static COMPONENT_WILDCARD: number;
-    static parse(paramarg0: string): SemanticVersion;
     constructor(arg0: number[], arg1: string, arg2: string)
     constructor(arg0: string, arg1: boolean)
     // private build: string;

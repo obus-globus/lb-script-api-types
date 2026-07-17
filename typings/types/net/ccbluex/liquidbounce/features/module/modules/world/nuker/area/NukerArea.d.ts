@@ -9,6 +9,7 @@ export class NukerArea extends Mode {
     static Companion: Tagged$Companion;
     protected constructor(name: string)
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     protected isPositionAvailable(eyesPos: Vec3, rangeSquared: number, pos: BlockPos, state: BlockState): boolean;
     lookupTargets(radius: number, count: number | null): Pair<BlockPos, BlockState>[];
 }

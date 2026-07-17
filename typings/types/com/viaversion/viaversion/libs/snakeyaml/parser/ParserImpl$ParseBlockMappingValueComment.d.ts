@@ -4,7 +4,7 @@ import type { Production } from '../../../../../../com/viaversion/viaversion/lib
 import type { CommentToken } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/tokens/CommentToken.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ParserImpl$ParseBlockMappingValueComment extends Object implements Production {
-    constructor(null_: ParserImpl, arg1: any)
+    private constructor(null_: ParserImpl)
     // private tokens: CommentToken[];
     produce(): Event;
 }

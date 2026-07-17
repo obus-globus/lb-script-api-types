@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Continuation } from '../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { TranslateLanguage } from '../../../../../net/ccbluex/liquidbounce/api/thirdparty/translator/TranslateLanguage.d.ts'
 import type { TranslationResult } from '../../../../../net/ccbluex/liquidbounce/api/thirdparty/translator/TranslationResult.d.ts'
@@ -10,13 +9,14 @@ import type { EventListener } from '../../../../../net/ccbluex/liquidbounce/even
 import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 export class GlobalSettingsAutoTranslate extends ValueGroup implements TranslatorApi, EventListener {
     static INSTANCE: GlobalSettingsAutoTranslate;
-    static translate$suspendImpl(paramarg0: TranslatorApi, paramarg1: TranslateLanguage, paramarg2: TranslateLanguage, paramarg3: string, paramarg4: Continuation<Object>): Object;
     readonly debugDisplayName: Component;
     // private providers: ModeValueGroup<GoogleTranslateApi>;
     readonly running: boolean;
     children(): EventListener[];
     parent(): EventListener | null;
-    translate(sourceLanguage: TranslateLanguage, targetLanguage: TranslateLanguage, text: string): TranslationResult;
-    translateInternal(sourceLanguage: TranslateLanguage, targetLanguage: TranslateLanguage, text: string): TranslationResult;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    translate(sourceLanguage: TranslateLanguage, targetLanguage: TranslateLanguage, text: string, $completion: Continuation<TranslationResult>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    translateInternal(sourceLanguage: TranslateLanguage, targetLanguage: TranslateLanguage, text: string, $completion: Continuation<TranslationResult>): any;
     unregister(): void;
 }

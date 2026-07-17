@@ -7,8 +7,6 @@ export class ModuleNoSwing$HideFor extends Enum<ModuleNoSwing$HideFor> implement
     static Companion: Tagged$Companion;
     static SERVER: ModuleNoSwing$HideFor;
     static getEntries(): ModuleNoSwing$HideFor[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleNoSwing$HideFor;
     static values(): ModuleNoSwing$HideFor[];

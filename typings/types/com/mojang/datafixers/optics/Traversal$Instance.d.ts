@@ -2,7 +2,6 @@ import type { FunctionType } from '../../../../com/mojang/datafixers/FunctionTyp
 import type { App } from '../../../../com/mojang/datafixers/kinds/App.d.ts'
 import type { App2 } from '../../../../com/mojang/datafixers/kinds/App2.d.ts'
 import type { K1 } from '../../../../com/mojang/datafixers/kinds/K1.d.ts'
-import type { K2 } from '../../../../com/mojang/datafixers/kinds/K2.d.ts'
 import type { Traversable } from '../../../../com/mojang/datafixers/kinds/Traversable.d.ts'
 import type { Traversable$Mu } from '../../../../com/mojang/datafixers/kinds/Traversable$Mu.d.ts'
 import type { Traversal$Mu } from '../../../../com/mojang/datafixers/optics/Traversal$Mu.d.ts'
@@ -17,7 +16,6 @@ import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Traversal$Instance<A2 extends unknown, B2 extends unknown> extends Object implements TraversalP<Traversal$Mu<A2, B2>, TraversalP$Mu> {
-    static unbox<P extends K2, Proof extends TraversalP$Mu>(paramarg0: App<Proof, P>): TraversalP<P, Proof>;
     constructor()
     dimap<C extends unknown, D extends unknown, A extends unknown, B extends unknown>(arg0: App2<Traversal$Mu<A2, B2>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Traversal$Mu<A2, B2>, C, D>;
     dimap<A extends unknown, B extends unknown, C extends unknown, D extends unknown>(arg0: (param0: C) => A, arg1: (param0: B) => D): FunctionType<App2<Traversal$Mu<A2, B2>, A, B>, App2<Traversal$Mu<A2, B2>, C, D>>;

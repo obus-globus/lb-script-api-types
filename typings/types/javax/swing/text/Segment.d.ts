@@ -5,7 +5,6 @@ import type { CharSequence } from '../../../java/lang/CharSequence.d.ts'
 import type { Cloneable } from '../../../java/lang/Cloneable.d.ts'
 export class Segment extends Object implements CharacterIterator, CharSequence, Cloneable {
     static DONE: string;
-    static compare(paramarg0: CharSequence, paramarg1: CharSequence): number;
     constructor()
     constructor(arg0: string[], arg1: number, arg2: number)
     array: string[];

@@ -10,7 +10,6 @@ export class BigIntPrototypeBuiltins$BigIntPrototype extends Enum<BigIntPrototyp
     static toLocaleString: BigIntPrototypeBuiltins$BigIntPrototype;
     static toString: BigIntPrototypeBuiltins$BigIntPrototype;
     static valueOf: BigIntPrototypeBuiltins$BigIntPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): BigIntPrototypeBuiltins$BigIntPrototype;
     static values(): BigIntPrototypeBuiltins$BigIntPrototype[];

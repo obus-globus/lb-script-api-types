@@ -11,8 +11,6 @@ import type { NoiseRouter } from '../../../../../net/minecraft/world/level/level
 import type { PositionalRandomFactory } from '../../../../../net/minecraft/world/level/levelgen/PositionalRandomFactory.d.ts'
 import type { MutableDouble } from '../../../../../org/apache/commons/lang3/mutable/MutableDouble.d.ts'
 export class Aquifer$NoiseBasedAquifer extends Object implements Aquifer {
-    static create(paramnoiseChunk: NoiseChunk, parampos: ChunkPos, paramrouter: NoiseRouter, parampositionalRandomFactory: PositionalRandomFactory, paramminBlockY: number, paramyBlockSize: number, paramfluidRule: Aquifer$FluidPicker): Aquifer;
-    static createDisabled(paramfluidRule: Aquifer$FluidPicker): Aquifer;
     private constructor(noiseChunk: NoiseChunk, pos: ChunkPos, router: NoiseRouter, positionalRandomFactory: PositionalRandomFactory, minBlockY: number, yBlockSize: number, globalFluidPicker: Aquifer$FluidPicker)
     // private aquiferCache: Aquifer$FluidStatus[];
     // private aquiferLocationCache: number[];

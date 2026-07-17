@@ -10,7 +10,6 @@ export class WeakSetPrototypeBuiltins$WeakSetPrototype extends Enum<WeakSetProto
     static add: WeakSetPrototypeBuiltins$WeakSetPrototype;
     static delete: WeakSetPrototypeBuiltins$WeakSetPrototype;
     static has: WeakSetPrototypeBuiltins$WeakSetPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): WeakSetPrototypeBuiltins$WeakSetPrototype;
     static values(): WeakSetPrototypeBuiltins$WeakSetPrototype[];

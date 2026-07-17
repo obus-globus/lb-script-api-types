@@ -7,7 +7,6 @@ import type { SourceSection } from '../../../../../com/oracle/truffle/api/source
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class SourceSectionFilter$TaggedNode extends Node implements InstrumentableNode {
-    static findInstrumentableParent(paramnode: Node): Node;
     constructor(tags: Class<Object>[])
     // private tags: Class<Object>[];
     createProbe(sourceSection: SourceSection): ProbeNode;

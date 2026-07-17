@@ -27,7 +27,6 @@ export class RegExpPrototypeBuiltins$RegExpPrototype extends Enum<RegExpPrototyp
     static toString: RegExpPrototypeBuiltins$RegExpPrototype;
     static unicode: RegExpPrototypeBuiltins$RegExpPrototype;
     static unicodeSets: RegExpPrototypeBuiltins$RegExpPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): RegExpPrototypeBuiltins$RegExpPrototype;
     static values(): RegExpPrototypeBuiltins$RegExpPrototype[];

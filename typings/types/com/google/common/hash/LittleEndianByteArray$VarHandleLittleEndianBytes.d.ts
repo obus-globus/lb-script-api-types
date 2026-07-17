@@ -6,7 +6,7 @@ export class LittleEndianByteArray$VarHandleLittleEndianBytes extends Enum<Littl
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): LittleEndianByteArray$VarHandleLittleEndianBytes;
     static values(): LittleEndianByteArray$VarHandleLittleEndianBytes[];
-    constructor(arg2: any)
+    private constructor()
     usesFastPath(): boolean;
     name(): "INSTANCE";
 }

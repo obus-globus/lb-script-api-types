@@ -7,7 +7,7 @@ export class ConnectionPool extends Object {
     constructor()
     constructor(maxIdleConnections: number, keepAliveDuration: number, timeUnit: TimeUnit)
     constructor(maxIdleConnections: number, keepAliveDuration: number, timeUnit: TimeUnit, taskRunner: TaskRunner, connectionListener: ConnectionListener)
-    constructor(maxIdleConnections: number, keepAliveDuration: number, timeUnit: TimeUnit, connectionListener: ConnectionListener)
+    constructor(maxIdleConnections: number, keepAliveDuration: number, timeUnit: TimeUnit, connectionListener?: ConnectionListener)
     constructor(delegate: RealConnectionPool)
     /*not mapped: */ getConnectionListener$okhttp(): ConnectionListener;
     // private delegate: RealConnectionPool;

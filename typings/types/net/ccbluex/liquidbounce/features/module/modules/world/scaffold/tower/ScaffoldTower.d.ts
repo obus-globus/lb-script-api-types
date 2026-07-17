@@ -6,6 +6,7 @@ export class ScaffoldTower extends Mode {
     static Companion: Tagged$Companion;
     protected constructor(name: string)
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     /**
      * Overwrites the {@link ModuleScaffold.getTargetedPosition} with a tower-specific one.
      *

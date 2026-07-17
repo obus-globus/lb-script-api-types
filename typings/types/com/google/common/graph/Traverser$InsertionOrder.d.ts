@@ -1,4 +1,3 @@
-import type { Traverser } from '../../../../com/google/common/graph/Traverser.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
@@ -8,7 +7,7 @@ export class Traverser$InsertionOrder extends Enum<Traverser$InsertionOrder> {
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): Traverser$InsertionOrder;
     static values(): Traverser$InsertionOrder[];
-    constructor(arg2: Traverser<N>)
+    private constructor()
     insertInto<T extends unknown>(deque: T[], value: T): void;
     name(): "FRONT" | "BACK";
 }

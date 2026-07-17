@@ -19,6 +19,7 @@ export class LiquidWalkNoCheatPlus extends Mode {
     readonly jumpHandler: EventHook<PlayerJumpEvent>;
     readonly packetHandler: EventHook<PacketEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     readonly repeatable: EventHook<GameTickEvent>;
     readonly shapeHandler: EventHook<BlockShapeEvent>;
     // private shiftDown: boolean;

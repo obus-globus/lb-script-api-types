@@ -4,7 +4,7 @@ import type { WritableByteChannel } from '../../../../../java/nio/channels/Writa
 import type { AtomicBoolean } from '../../../../../java/util/concurrent/atomic/AtomicBoolean.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class FixedLengthBlockOutputStream$BufferAtATimeOutputChannel extends Object implements WritableByteChannel {
-    constructor(arg0: OutputStream, arg1: any)
+    private constructor(arg0: OutputStream)
     // private closed: AtomicBoolean;
     // private out: OutputStream;
     close(): void;

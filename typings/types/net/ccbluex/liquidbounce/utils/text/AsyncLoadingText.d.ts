@@ -21,7 +21,6 @@ export class AsyncLoadingText extends Record implements DelegatedComponent {
     static DEFAULT_ON_LOADING: () => Component;
     static EMPTY: FormattedText;
     static STOP_ITERATION: Optional<Unit>;
-    static lazy(paramarg0: () => Component): () => Component;
     constructor(arg0: Deferred<Component>)
     constructor(delegate: Deferred<Component>, onLoading: () => Component, onException: (param0: Throwable) => Component)
     // private delegate: Deferred<Component>;

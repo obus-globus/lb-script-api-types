@@ -24,6 +24,7 @@ export class SpeedSentinelDamage extends Mode {
     // private moveHandler: EventHook<PlayerMoveEvent>;
     // private movementInputHandler: EventHook<MovementInputEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private reboostTicks: number;
     // private /*not mapped: */ getReboostTicks(): number;
     readonly repeatable: EventHook<GameTickEvent>;

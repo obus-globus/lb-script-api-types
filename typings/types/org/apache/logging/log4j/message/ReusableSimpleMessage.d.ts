@@ -9,7 +9,6 @@ import type { ParameterConsumer } from '../../../../../org/apache/logging/log4j/
 import type { ParameterVisitable } from '../../../../../org/apache/logging/log4j/message/ParameterVisitable.d.ts'
 import type { ReusableMessage } from '../../../../../org/apache/logging/log4j/message/ReusableMessage.d.ts'
 export class ReusableSimpleMessage extends Object implements CharSequence, Clearable, ParameterVisitable, ReusableMessage {
-    static compare(paramarg0: CharSequence, paramarg1: CharSequence): number;
     constructor()
     // private charSequence: CharSequence;
     /*not mapped: */ length(): number;

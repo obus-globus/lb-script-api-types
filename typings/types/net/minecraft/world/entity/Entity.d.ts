@@ -1,4 +1,3 @@
-import type { GameProfile } from '../../../../com/mojang/authlib/GameProfile.d.ts'
 import type { IEntity } from '../../../../com/viaversion/viafabricplus/injection/access/world/always_tick_entities/IEntity.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { UUID } from '../../../../java/util/UUID.d.ts'
@@ -169,13 +168,9 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     static collectAllColliders(paramsource: Entity, paramlevel: Level, paramboundingBox: AABB): VoxelShape[];
     static collideBoundingBox(paramarg0: Entity, paramarg1: Vec3, paramarg2: AABB, paramarg3: Level, paramarg4: (Object | null)[]): Vec3;
     static collideBoundingBox(paramsource: CollisionContext, parammovement: Vec3, paramboundingBox: AABB, paramlevel: Level, paramentityColliders: VoxelShape[]): Vec3;
-    static forNameOnly(paramname: string): ScoreHolder;
-    static fromGameProfile(paramprofile: GameProfile): ScoreHolder;
     static getInputVector(paraminput: Vec3, paramspeed: number, paramyRot: number): Vec3;
     static getViewScale(): number;
-    static offsetFromOwner(paramowner: ItemOwner, paramoffset: Vec3): ItemOwner;
     static setViewScale(paramviewScale: number): void;
-    static transfer(paramarg0: AttachmentTarget, paramarg1: AttachmentTarget, paramarg2: boolean): void;
     constructor(type: EntityType<any>, level: Level)
     // private attachedChangedListeners: Map<Object, Object>;
     // private bb: AABB;

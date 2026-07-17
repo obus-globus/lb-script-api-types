@@ -11,7 +11,7 @@ export class CaseFormat extends Enum<CaseFormat> {
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): CaseFormat;
     static values(): CaseFormat[];
-    constructor(arg2: CharMatcher, arg3: string, arg4: CaseFormat)
+    private constructor(wordBoundary: CharMatcher, wordSeparator: string)
     // private wordBoundary: CharMatcher;
     // private wordSeparator: string;
     convert(format: CaseFormat, s: string): string;

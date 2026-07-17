@@ -12,7 +12,6 @@ export class DateTimeFormatPrototypeBuiltins$DateTimeFormatPrototype extends Enu
     static formatRangeToParts: DateTimeFormatPrototypeBuiltins$DateTimeFormatPrototype;
     static formatToParts: DateTimeFormatPrototypeBuiltins$DateTimeFormatPrototype;
     static resolvedOptions: DateTimeFormatPrototypeBuiltins$DateTimeFormatPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): DateTimeFormatPrototypeBuiltins$DateTimeFormatPrototype;
     static values(): DateTimeFormatPrototypeBuiltins$DateTimeFormatPrototype[];

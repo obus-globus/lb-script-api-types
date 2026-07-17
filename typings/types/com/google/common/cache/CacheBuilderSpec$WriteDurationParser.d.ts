@@ -2,6 +2,6 @@ import type { CacheBuilderSpec } from '../../../../com/google/common/cache/Cache
 import type { CacheBuilderSpec$DurationParser } from '../../../../com/google/common/cache/CacheBuilderSpec$DurationParser.d.ts'
 import type { TimeUnit } from '../../../../java/util/concurrent/TimeUnit.d.ts'
 export class CacheBuilderSpec$WriteDurationParser extends CacheBuilderSpec$DurationParser {
-    constructor(arg0: any)
+    private constructor()
     parseDuration(spec: CacheBuilderSpec, duration: number, unit: TimeUnit): void;
 }

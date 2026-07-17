@@ -18,25 +18,25 @@ export abstract class FileSystem extends Object implements Closeable {
     static get(self: FileSystem_2): FileSystem;
     constructor()
     appendingSink(file: Path): Sink;
-    appendingSink(file: Path, mustExist: boolean): Sink;
+    appendingSink(file: Path, mustExist?: boolean): Sink;
     atomicMove(source: Path, target: Path): void;
     canonicalize(path: Path): Path;
     close(): void;
     copy(source: Path, target: Path): void;
     createDirectories(dir: Path): void;
-    createDirectories(dir: Path, mustCreate: boolean): void;
+    createDirectories(dir: Path, mustCreate?: boolean): void;
     createDirectory(dir: Path): void;
-    createDirectory(dir: Path, mustCreate: boolean): void;
+    createDirectory(dir: Path, mustCreate?: boolean): void;
     createSymlink(source: Path, target: Path): void;
     delete(path: Path): void;
-    delete(path: Path, mustExist: boolean): void;
+    delete(path: Path, mustExist?: boolean): void;
     deleteRecursively(fileOrDirectory: Path): void;
-    deleteRecursively(fileOrDirectory: Path, mustExist: boolean): void;
+    deleteRecursively(fileOrDirectory: Path, mustExist?: boolean): void;
     exists(path: Path): boolean;
     list(dir: Path): Path[];
     listOrNull(dir: Path): Path[] | null;
     listRecursively(dir: Path): Sequence<Path>;
-    listRecursively(dir: Path, followSymlinks: boolean): Sequence<Path>;
+    listRecursively(dir: Path, followSymlinks?: boolean): Sequence<Path>;
     metadata(path: Path): FileMetadata;
     metadataOrNull(path: Path): FileMetadata | null;
     openReadOnly(file: Path): FileHandle;
@@ -44,7 +44,7 @@ export abstract class FileSystem extends Object implements Closeable {
     openReadWrite(file: Path, mustCreate: boolean, mustExist: boolean): FileHandle;
     read<T extends unknown>(file: Path, readerAction: (param0: BufferedSource) => T): T;
     sink(file: Path): Sink;
-    sink(file: Path, mustCreate: boolean): Sink;
+    sink(file: Path, mustCreate?: boolean): Sink;
     source(file: Path): Source;
     write<T extends unknown>(file: Path, mustCreate: boolean, writerAction: (param0: BufferedSink) => T): T;
 }

@@ -6,7 +6,7 @@ import type { AbstractScript } from '../../../../../../../org/apache/logging/log
 export class ScriptArbiter extends Object implements Arbiter {
     static ELEMENT_TYPE: string;
     static newBuilder(): ScriptArbiter$Builder;
-    constructor(arg0: Configuration, arg1: AbstractScript, arg2: any)
+    private constructor(configuration: Configuration, script: AbstractScript)
     // private configuration: Configuration;
     // private script: AbstractScript;
     isCondition(): boolean;

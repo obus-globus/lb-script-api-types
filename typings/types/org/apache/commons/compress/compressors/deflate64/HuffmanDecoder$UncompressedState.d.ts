@@ -2,7 +2,7 @@ import type { HuffmanDecoder } from '../../../../../../org/apache/commons/compre
 import type { HuffmanDecoder$DecoderState } from '../../../../../../org/apache/commons/compress/compressors/deflate64/HuffmanDecoder$DecoderState.d.ts'
 import type { HuffmanState } from '../../../../../../org/apache/commons/compress/compressors/deflate64/HuffmanState.d.ts'
 export class HuffmanDecoder$UncompressedState extends HuffmanDecoder$DecoderState {
-    constructor(null_: HuffmanDecoder, arg1: number, arg2: any)
+    private constructor(null_: HuffmanDecoder, arg1: number)
     // private blockLength: number;
     // private read: number;
     available(): number;

@@ -1,11 +1,8 @@
 import type { ByteBooleanPair } from '../../../../../it/unimi/dsi/fastutil/bytes/ByteBooleanPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
-import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ByteBooleanMutablePair extends Object implements ByteBooleanPair, Serializable {
-    static lexComparator(): (param0: ByteBooleanPair, param1: ByteBooleanPair) => number;
     static of(paramarg0: number, paramarg1: boolean): ByteBooleanMutablePair;
-    static of(paramarg0: number, paramarg1: boolean): ByteBooleanPair;
     constructor(arg0: number, arg1: boolean)
     // private left: number;
     // private right: boolean;

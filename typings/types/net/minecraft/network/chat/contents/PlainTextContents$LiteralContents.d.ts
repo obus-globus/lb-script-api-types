@@ -9,7 +9,6 @@ import type { PlainTextContents } from '../../../../../net/minecraft/network/cha
 export class PlainTextContents$LiteralContents extends Record implements PlainTextContents {
     static EMPTY: PlainTextContents;
     static MAP_CODEC: MapCodec<PlainTextContents>;
-    static create(paramtext: string): PlainTextContents;
     constructor(text: string)
     // private text: string;
     codec(): MapCodec<PlainTextContents>;

@@ -40,10 +40,13 @@ export class RealConnection extends Http2Connection$Listener implements Connecti
     // private javaNetSocket: Socket;
     // private noCoalescedConnections: boolean;
     noNewExchanges: boolean;
+    getNoNewExchanges(): boolean;
+    setNoNewExchanges(value: boolean): void;
     // private pingIntervalMillis: number;
     // private protocol: Protocol;
     // private rawSocket: Socket;
     // private refusedStreamCount: number;
+    getRoute(): Route;
     // private routeFailureCount: number;
     /*not mapped: */ getRouteFailureCount$okhttp(): number;
     // private socket: BufferedSocket;

@@ -5,7 +5,6 @@ import type { Type } from '../../../../java/lang/reflect/Type.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class PolyglotIteratorAndFunction<T extends unknown> extends PolyglotIterator<T> implements Function<Object, Object> {
-    static identity<T extends unknown>(): (param0: T) => T;
     constructor(elementClass: Class<T>, elementType: Type, iterable: Object, languageContext: PolyglotLanguageContext)
     andThen<V extends unknown>(arg0: (param0: Object) => V): (param0: Object) => V;
     apply(t: Object): Object;

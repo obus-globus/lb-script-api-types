@@ -9,7 +9,8 @@ export class MixinEnvironment$Feature extends Enum<MixinEnvironment$Feature> {
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): MixinEnvironment$Feature;
     static values(): MixinEnvironment$Feature[];
-    constructor(arg2: any)
+    private constructor()
+    private constructor(arg2: boolean)
     readonly enabled: boolean;
     isAvailable(): boolean;
     isEnabled(): boolean;

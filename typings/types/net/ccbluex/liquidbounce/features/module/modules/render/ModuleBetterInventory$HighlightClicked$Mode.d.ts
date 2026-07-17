@@ -7,5 +7,6 @@ export class ModuleBetterInventory$HighlightClicked$Mode extends Mode {
     static Companion: Tagged$Companion;
     protected constructor(choiceName: string)
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     drawHighlightSlot(context: GuiGraphicsExtractor, slot: Slot): void;
 }

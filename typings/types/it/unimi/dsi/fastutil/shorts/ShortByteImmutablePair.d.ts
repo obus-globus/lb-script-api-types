@@ -1,11 +1,8 @@
 import type { ShortBytePair } from '../../../../../it/unimi/dsi/fastutil/shorts/ShortBytePair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
-import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ShortByteImmutablePair extends Object implements ShortBytePair, Serializable {
-    static lexComparator(): (param0: ShortBytePair, param1: ShortBytePair) => number;
     static of(paramarg0: number, paramarg1: number): ShortByteImmutablePair;
-    static of(paramarg0: number, paramarg1: number): ShortBytePair;
     constructor(arg0: number, arg1: number)
     // private left: number;
     // private right: number;

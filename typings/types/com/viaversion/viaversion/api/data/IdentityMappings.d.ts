@@ -2,8 +2,6 @@ import type { Mappings } from '../../../../../com/viaversion/viaversion/api/data
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class IdentityMappings extends Record implements Mappings {
-    static isFullIdentity(paramarg0: Mappings): boolean;
-    static isIntIdIdentity(paramarg0: Mappings): boolean;
     constructor(size: number, mappedSize: number)
     // private mappedSize: number;
     // private size: number;

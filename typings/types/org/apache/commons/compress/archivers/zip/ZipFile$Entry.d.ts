@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-import type { InflaterInputStreamWithStatistics } from '../../../../../../org/apache/commons/compress/archivers/zip/InflaterInputStreamWithStatistics.d.ts'
 import type { ZipArchiveEntry } from '../../../../../../org/apache/commons/compress/archivers/zip/ZipArchiveEntry.d.ts'
 export class ZipFile$Entry extends ZipArchiveEntry {
     static CENATT: number;
@@ -49,7 +48,7 @@ export class ZipFile$Entry extends ZipArchiveEntry {
     static PLATFORM_UNIX: number;
     static SIZE_UNKNOWN: number;
     static STORED: number;
-    constructor(arg0: InflaterInputStreamWithStatistics)
+    private constructor()
     equals(arg0: Object | null): boolean;
     hashCode(): number;
 }

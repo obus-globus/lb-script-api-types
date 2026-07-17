@@ -11,13 +11,10 @@ import type { Player } from '../../../../net/minecraft/world/entity/player/Playe
 import type { Explosion } from '../../../../net/minecraft/world/level/Explosion.d.ts'
 import type { Explosion$BlockInteraction } from '../../../../net/minecraft/world/level/Explosion$BlockInteraction.d.ts'
 import type { ExplosionDamageCalculator } from '../../../../net/minecraft/world/level/ExplosionDamageCalculator.d.ts'
-import type { Level } from '../../../../net/minecraft/world/level/Level.d.ts'
 import type { BlockState } from '../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { ChunkAccess } from '../../../../net/minecraft/world/level/chunk/ChunkAccess.d.ts'
 import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class ServerExplosion extends Object implements LithiumExplosion, Explosion {
-    static getDefaultDamageSource(paramlevel: Level, paramsource: Entity): DamageSource;
-    static getIndirectSourceEntity(paramsource: Entity): LivingEntity;
     static getSeenPercent(paramcenter: Vec3, paramentity: Entity): number;
     constructor(level: ServerLevel, source: Entity, damageSource: DamageSource, damageCalculator: ExplosionDamageCalculator, center: Vec3, radius: number, fire: boolean, blockInteraction: Explosion$BlockInteraction)
     readonly blockInteraction: Explosion$BlockInteraction;

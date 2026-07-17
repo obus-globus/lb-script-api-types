@@ -1,4 +1,5 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Continuation } from '../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { EventHook } from '../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { EventListener } from '../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
 import type { BrowserReadyEvent } from '../../../../../net/ccbluex/liquidbounce/event/events/BrowserReadyEvent.d.ts'
@@ -47,6 +48,8 @@ export class ScreenManager extends Object implements EventListener {
     restoreOriginalScreen(): void;
     unregister(): void;
     update(): void;
-    // private validateBrowserState(browser: Browser, allowTryOnceMore: boolean): void;
-    // private waitUntilInitialized(browser: Browser): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private validateBrowserState(browser: Browser, allowTryOnceMore: boolean, $completion: Continuation<void>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private waitUntilInitialized(browser: Browser, $completion: Continuation<void>): any;
 }

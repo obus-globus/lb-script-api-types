@@ -7,8 +7,6 @@ export class ModuleFakeLag$Mode extends Enum<ModuleFakeLag$Mode> implements Tagg
     static Companion: Tagged$Companion;
     static DYNAMIC: ModuleFakeLag$Mode;
     static getEntries(): ModuleFakeLag$Mode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleFakeLag$Mode;
     static values(): ModuleFakeLag$Mode[];

@@ -8,7 +8,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class MLEBuiltins$MLE extends Enum<MLEBuiltins$MLE> implements BuiltinEnum<MLEBuiltins$MLE> {
     static registerESMLookup: MLEBuiltins$MLE;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): MLEBuiltins$MLE;
     static values(): MLEBuiltins$MLE[];

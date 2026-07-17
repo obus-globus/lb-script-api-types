@@ -22,7 +22,7 @@ export class RollingRandomAccessFileAppender extends AbstractOutputStreamAppende
     static createAppender<B extends RollingRandomAccessFileAppender$Builder<B>>(paramfileName: string, paramfilePattern: string, paramappend: string, paramname: string, paramimmediateFlush: string, parambufferSizeStr: string, parampolicy: TriggeringPolicy, paramstrategy: RolloverStrategy, paramlayout: Layout<Serializable>, paramfilter: Filter, paramignoreExceptions: string, paramadvertise: string, paramadvertiseURI: string, paramconfiguration: Configuration): RollingRandomAccessFileAppender;
     static newBuilder<B extends RollingRandomAccessFileAppender$Builder<B>>(): B;
     static parseInt(params: string, paramdefaultValue: number): number;
-    constructor(arg0: string, arg1: Layout<Serializable>, arg2: Filter, arg3: RollingRandomAccessFileManager, arg4: string, arg5: string, arg6: boolean, arg7: boolean, arg8: number, arg9: Advertiser, arg10: Property[], arg11: any)
+    private constructor(name: string, layout: Layout<Serializable>, filter: Filter, manager: RollingRandomAccessFileManager, fileName: string, filePattern: string, ignoreExceptions: boolean, immediateFlush: boolean, bufferSize: number, advertiser: Advertiser, properties: Property[])
     // private advertisement: Object;
     // private advertiser: Advertiser;
     readonly fileName: string;

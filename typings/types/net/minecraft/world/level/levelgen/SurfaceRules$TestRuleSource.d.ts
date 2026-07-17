@@ -8,7 +8,6 @@ import type { SurfaceRules$RuleSource } from '../../../../../net/minecraft/world
 import type { SurfaceRules$SurfaceRule } from '../../../../../net/minecraft/world/level/levelgen/SurfaceRules$SurfaceRule.d.ts'
 export class SurfaceRules$TestRuleSource extends Record implements SurfaceRules$RuleSource {
     static CODEC: Codec<SurfaceRules$RuleSource>;
-    static bootstrap(paramregistry: MapCodec<SurfaceRules$RuleSource>[]): MapCodec<SurfaceRules$RuleSource>;
     private constructor(ifTrue: SurfaceRules$ConditionSource, thenRun: SurfaceRules$RuleSource)
     // private ifTrue: SurfaceRules$ConditionSource;
     // private thenRun: SurfaceRules$RuleSource;

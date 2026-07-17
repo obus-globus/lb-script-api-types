@@ -20,8 +20,12 @@ export class SequenceBuilderIterator<T extends unknown> extends SequenceScope<T>
     next(): T;
     // private nextNotReady(): T;
     resumeWith(result: Result<void>): void;
-    yield(value: T): void;
-    yieldAll(elements: T[]): void;
-    yieldAll(iterator: Iterator<T>): void;
-    yieldAll(sequence: Sequence<T>): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    yield(value: T, $completion: Continuation<void>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    yieldAll(elements: T[], $completion: Continuation<void>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    yieldAll(iterator: Iterator<T>, $completion: Continuation<void>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    yieldAll(sequence: Sequence<T>, $completion: Continuation<void>): any;
 }

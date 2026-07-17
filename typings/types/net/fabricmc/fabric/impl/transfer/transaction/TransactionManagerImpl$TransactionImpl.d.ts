@@ -7,11 +7,6 @@ import type { TransactionContext$OuterCloseCallback } from '../../../../../../ne
 import type { TransactionContext$Result } from '../../../../../../net/fabricmc/fabric/api/transfer/v1/transaction/TransactionContext$Result.d.ts'
 import type { TransactionManagerImpl } from '../../../../../../net/fabricmc/fabric/impl/transfer/transaction/TransactionManagerImpl.d.ts'
 export class TransactionManagerImpl$TransactionImpl extends Object implements Transaction {
-    static getCurrentUnsafe(): TransactionContext;
-    static getLifecycle(): Transaction$Lifecycle;
-    static isOpen(): boolean;
-    static openNested(paramarg0: TransactionContext): Transaction;
-    static openOuter(): Transaction;
     constructor(null_: TransactionManagerImpl, arg1: number)
     // private closeCallbacks: (param0: TransactionContext, param1: TransactionContext$Result) => void[];
     // private lifecycle: Transaction$Lifecycle;

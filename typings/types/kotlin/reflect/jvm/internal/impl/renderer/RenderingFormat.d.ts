@@ -1,13 +1,12 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
-import type { DefaultConstructorMarker } from '../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 export class RenderingFormat extends Enum<RenderingFormat> {
     static HTML: RenderingFormat;
     static PLAIN: RenderingFormat;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): RenderingFormat;
     static values(): RenderingFormat[];
-    constructor(arg2: DefaultConstructorMarker)
+    private constructor()
     escape(arg0: string): string;
     name(): "PLAIN" | "HTML";
 }

@@ -7,7 +7,7 @@ export class Device extends Object {
     static gpu(): Device;
     static gpu(paramarg0: number): Device;
     static of(paramarg0: string, paramarg1: number): Device;
-    constructor(arg0: string, arg1: number, arg2: any)
+    private constructor(arg0: string, arg1: number)
     deviceId: number;
     deviceType: string;
     equals(arg0: Object | null): boolean;

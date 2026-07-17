@@ -1,6 +1,7 @@
 import type { CancellationException } from '../../../java/util/concurrent/CancellationException.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
+import type { Continuation } from '../../../kotlin/coroutines/Continuation.d.ts'
 import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { AbstractCoroutine } from '../../../kotlinx/coroutines/AbstractCoroutine.d.ts'
 import type { Job$Key } from '../../../kotlinx/coroutines/Job$Key.d.ts'
@@ -29,6 +30,7 @@ export class BroadcastCoroutine<E extends unknown> extends AbstractCoroutine<voi
     protected onCancelled(cause: Throwable, handled: boolean): void;
     protected onCompleted(value: void): void;
     openSubscription(): ReceiveChannel<E>;
-    send(element: E): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    send(element: E, $completion: Continuation<void>): any;
     trySend(element: E): ChannelResult<void>;
 }

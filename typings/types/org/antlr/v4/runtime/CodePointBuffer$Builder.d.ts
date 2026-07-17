@@ -5,7 +5,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CodePointBuffer } from '../../../../org/antlr/v4/runtime/CodePointBuffer.d.ts'
 import type { CodePointBuffer$Type } from '../../../../org/antlr/v4/runtime/CodePointBuffer$Type.d.ts'
 export class CodePointBuffer$Builder extends Object {
-    constructor(arg0: number, arg1: any)
+    private constructor(arg0: number)
     // private byteBuffer: ByteBuffer;
     // private charBuffer: CharBuffer;
     // private intBuffer: IntBuffer;

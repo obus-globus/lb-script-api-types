@@ -1,9 +1,7 @@
 import type { App } from '../../../../../../../com/mojang/datafixers/kinds/App.d.ts'
 import type { Applicative } from '../../../../../../../com/mojang/datafixers/kinds/Applicative.d.ts'
-import type { Applicative$Mu } from '../../../../../../../com/mojang/datafixers/kinds/Applicative$Mu.d.ts'
 import type { Const$Mu } from '../../../../../../../com/mojang/datafixers/kinds/Const$Mu.d.ts'
 import type { IdF$Mu } from '../../../../../../../com/mojang/datafixers/kinds/IdF$Mu.d.ts'
-import type { K1 } from '../../../../../../../com/mojang/datafixers/kinds/K1.d.ts'
 import type { OptionalBox$Mu } from '../../../../../../../com/mojang/datafixers/kinds/OptionalBox$Mu.d.ts'
 import type { Function10 } from '../../../../../../../com/mojang/datafixers/util/Function10.d.ts'
 import type { Function11 } from '../../../../../../../com/mojang/datafixers/util/Function11.d.ts'
@@ -33,7 +31,6 @@ import type { MemoryAccessor } from '../../../../../../../net/minecraft/world/en
 import type { Trigger } from '../../../../../../../net/minecraft/world/entity/ai/behavior/declarative/Trigger.d.ts'
 import type { MemoryModuleType } from '../../../../../../../net/minecraft/world/entity/ai/memory/MemoryModuleType.d.ts'
 export class BehaviorBuilder$Instance<E extends LivingEntity> extends Object implements Applicative<BehaviorBuilder$Mu<E>, BehaviorBuilder$Instance$Mu<E>> {
-    static unbox<F extends K1, Mu extends Applicative$Mu>(paramarg0: App<Mu, F>): Applicative<F, Mu>;
     constructor()
     absent<Value extends unknown>(memory: MemoryModuleType<Value>): BehaviorBuilder<E, MemoryAccessor<Const$Mu<Unit>, Value>>;
     ap<R extends unknown, A extends unknown>(arg0: App<BehaviorBuilder$Mu<E>, (param0: A) => R>, arg1: App<BehaviorBuilder$Mu<E>, A>): App<BehaviorBuilder$Mu<E>, R>;

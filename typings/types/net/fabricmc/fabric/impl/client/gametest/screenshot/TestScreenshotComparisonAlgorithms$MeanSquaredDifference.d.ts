@@ -5,9 +5,6 @@ import type { TestScreenshotComparisonAlgorithm$RawImage } from '../../../../../
 import type { Vector2i } from '../../../../../../../org/joml/Vector2i.d.ts'
 export class TestScreenshotComparisonAlgorithms$MeanSquaredDifference extends Record implements TestScreenshotComparisonAlgorithm {
     static DEFAULT: TestScreenshotComparisonAlgorithms$MeanSquaredDifference;
-    static defaultAlgorithm(): TestScreenshotComparisonAlgorithm;
-    static exact(): TestScreenshotComparisonAlgorithm;
-    static meanSquaredDifference(paramarg0: number): TestScreenshotComparisonAlgorithm;
     constructor(maxMeanSquaredDifference: number)
     // private maxMeanSquaredDifference: number;
     equals(arg0: Object | null): boolean;

@@ -17,7 +17,6 @@ export class ReaderInputStream extends AbstractInputStream {
     constructor(arg0: Reader, arg1: CharsetEncoder, arg2: number)
     constructor(arg0: Reader, arg1: string)
     constructor(arg0: Reader, arg1: string, arg2: number)
-    constructor(arg0: ReaderInputStream$Builder, arg1: any)
     // private charsetEncoder: CharsetEncoder;
     // private encoderIn: CharBuffer;
     // private encoderOut: ByteBuffer;

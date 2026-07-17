@@ -23,9 +23,12 @@ export class FlyVulcan286 extends Mode {
     packet: ClientboundPlayerPositionPacket | null;
     readonly packetHandler: EventHook<PacketEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     readonly shapeHandler: EventHook<BlockShapeEvent>;
     readonly tickHandler: EventHook<PlayerTickEvent>;
     wait: boolean;
+    getWait(): boolean;
+    setWait(value: boolean): void;
     disable(): void;
     enable(): void;
 }

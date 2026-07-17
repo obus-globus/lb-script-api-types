@@ -1,11 +1,8 @@
 import type { ShortFloatPair } from '../../../../../it/unimi/dsi/fastutil/shorts/ShortFloatPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
-import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ShortFloatMutablePair extends Object implements ShortFloatPair, Serializable {
-    static lexComparator(): (param0: ShortFloatPair, param1: ShortFloatPair) => number;
     static of(paramarg0: number, paramarg1: number): ShortFloatMutablePair;
-    static of(paramarg0: number, paramarg1: number): ShortFloatPair;
     constructor(arg0: number, arg1: number)
     // private left: number;
     // private right: number;

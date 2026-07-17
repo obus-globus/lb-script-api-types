@@ -7,7 +7,6 @@ import type { AdvancementSubProvider } from '../../../../../net/minecraft/data/a
 import type { EntityType } from '../../../../../net/minecraft/world/entity/EntityType.d.ts'
 export class VanillaAdventureAdvancements extends Object implements AdvancementSubProvider {
     static createMonsterHunterAdvancement(paramparent: AdvancementHolder, paramoutput: (param0: AdvancementHolder) => void, paramentityTypes: HolderGetter<EntityType<any>>, parammobsToKill: EntityType<any>[]): AdvancementHolder;
-    static createPlaceholder(paramid: string): AdvancementHolder;
     constructor()
     generate(registries: HolderLookup$Provider, output: (param0: AdvancementHolder) => void): void;
 }

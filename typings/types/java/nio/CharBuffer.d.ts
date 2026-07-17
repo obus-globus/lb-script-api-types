@@ -6,7 +6,6 @@ import type { CharSequence } from '../../java/lang/CharSequence.d.ts'
 import type { Comparable } from '../../java/lang/Comparable.d.ts'
 export class CharBuffer extends Buffer implements Appendable, Readable, CharSequence, Comparable<CharBuffer> {
     static allocate(paramarg0: number): CharBuffer;
-    static compare(paramarg0: CharSequence, paramarg1: CharSequence): number;
     static wrap(paramarg0: string[]): CharBuffer;
     static wrap(paramarg0: string[], paramarg1: number, paramarg2: number): CharBuffer;
     static wrap(paramarg0: CharSequence): CharBuffer;

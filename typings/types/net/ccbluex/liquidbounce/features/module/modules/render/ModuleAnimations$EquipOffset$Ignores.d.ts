@@ -8,8 +8,6 @@ export class ModuleAnimations$EquipOffset$Ignores extends Enum<ModuleAnimations$
     static Companion: Tagged$Companion;
     static PLACE: ModuleAnimations$EquipOffset$Ignores;
     static getEntries(): ModuleAnimations$EquipOffset$Ignores[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleAnimations$EquipOffset$Ignores;
     static values(): ModuleAnimations$EquipOffset$Ignores[];

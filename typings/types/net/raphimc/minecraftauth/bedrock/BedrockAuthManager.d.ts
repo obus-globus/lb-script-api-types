@@ -24,7 +24,8 @@ export class BedrockAuthManager extends Object {
     static fromJson(paramarg0: HttpClient, paramarg1: string, paramarg2: JsonObject): BedrockAuthManager;
     static fromJson(paramarg0: HttpClient, paramarg1: string, paramarg2: Map$Entry<string, GsonElement>[]): BedrockAuthManager;
     static toJson(paramarg0: BedrockAuthManager): JsonObject;
-    constructor(arg0: HttpClient, arg1: string, arg2: MsaApplicationConfig, arg3: string, arg4: KeyPair, arg5: UUID, arg6: KeyPair, arg7: MsaToken, arg8: any)
+    private constructor(arg0: HttpClient, arg1: string, arg2: MsaApplicationConfig, arg3: string, arg4: KeyPair, arg5: UUID, arg6: KeyPair, arg7: MsaToken)
+    private constructor(arg0: HttpClient, arg1: string, arg2: MsaApplicationConfig, arg3: string, arg4: KeyPair, arg5: UUID, arg6: KeyPair, arg7: MsaToken, arg8: XblDeviceToken, arg9: XblUserToken, arg10: XblTitleToken, arg11: XblXstsToken, arg12: XblXstsToken, arg13: XblXstsToken, arg14: XblXstsToken, arg15: PlayFabToken, arg16: PlayFabEntityToken, arg17: MinecraftSession, arg18: MinecraftMultiplayerToken, arg19: MinecraftCertificateChain)
     readonly bedrockXstsToken: Holder<XblXstsToken>;
     readonly changeListeners: ChangeListeners;
     readonly deviceId: UUID;

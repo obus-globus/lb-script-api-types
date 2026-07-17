@@ -6,7 +6,6 @@ import type { LevelBasedValue } from '../../../../../../net/minecraft/world/item
 import type { EnchantmentValueEffect } from '../../../../../../net/minecraft/world/item/enchantment/effects/EnchantmentValueEffect.d.ts'
 export class ScaleExponentially extends Record implements EnchantmentValueEffect {
     static CODEC: MapCodec<ScaleExponentially>;
-    static bootstrap(paramregistry: MapCodec<EnchantmentValueEffect>[]): MapCodec<EnchantmentValueEffect>;
     constructor(base: LevelBasedValue, exponent: LevelBasedValue)
     // private base: LevelBasedValue;
     // private exponent: LevelBasedValue;

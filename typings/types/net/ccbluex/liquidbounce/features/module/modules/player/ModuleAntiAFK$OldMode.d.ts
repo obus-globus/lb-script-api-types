@@ -9,5 +9,6 @@ export class ModuleAntiAFK$OldMode extends Mode {
     static INSTANCE: ModuleAntiAFK$OldMode;
     readonly movementInputEvent: EventHook<MovementInputEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     readonly repeatable: EventHook<GameTickEvent>;
 }

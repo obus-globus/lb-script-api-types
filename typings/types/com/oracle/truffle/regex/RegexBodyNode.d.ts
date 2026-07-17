@@ -12,7 +12,6 @@ import type { Encoding } from '../../../../com/oracle/truffle/regex/tregex/strin
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class RegexBodyNode extends ExecutableNode implements InstrumentableNode {
-    static findInstrumentableParent(paramnode: Node): Node;
     constructor(copy: RegexBodyNode)
     constructor(language: RegexLanguage)
     readonly sourceSection: SourceSection;

@@ -1,8 +1,6 @@
 import type { Mappings } from '../../../../../com/viaversion/viaversion/api/data/Mappings.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class IntArrayMappings extends Object implements Mappings {
-    static isFullIdentity(paramarg0: Mappings): boolean;
-    static isIntIdIdentity(paramarg0: Mappings): boolean;
     static of(paramarg0: number[], paramarg1: number): IntArrayMappings;
     constructor(arg0: number[], arg1: number)
     // private mappedIds: number;

@@ -5,5 +5,6 @@ export class ModuleDerp$PitchRandom extends ModuleDerp$PitchMode {
     static Companion: Tagged$Companion;
     static INSTANCE: ModuleDerp$PitchRandom;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     readonly pitch: number;
 }

@@ -8,10 +8,6 @@ import type { Unit } from '../../../net/minecraft/util/Unit.d.ts'
 export class StringSplitter$LineComponent extends Object implements FormattedText {
     static EMPTY: FormattedText;
     static STOP_ITERATION: Optional<Unit>;
-    static composite(paramparts: FormattedText[]): FormattedText;
-    static composite(...paramparts: FormattedText[]): FormattedText;
-    static of(paramtext: string): FormattedText;
-    static of(paramtext: string, paramstyle: Style): FormattedText;
     constructor(contents: string, style: Style)
     // private contents: string;
     // private style: Style;

@@ -22,10 +22,7 @@ export class ResourceLoaderImpl extends Object implements ResourceLoader {
     static DEBUG_PROFILE_RESOURCE_RELOADERS: boolean;
     static FEATURE_FLAG_SET_KEY: PreparableReloadListener$StateKey<FeatureFlagSet>;
     static REGISTRY_LOOKUP_KEY: PreparableReloadListener$StateKey<HolderLookup$Provider>;
-    static get(paramarg0: PackType): ResourceLoader;
     static get(paramarg0: PackType): ResourceLoaderImpl;
-    static registerBuiltinPack(paramarg0: Identifier, paramarg1: ModContainer, paramarg2: PackActivationType): boolean;
-    static registerBuiltinPack(paramarg0: Identifier, paramarg1: ModContainer, paramarg2: Component, paramarg3: PackActivationType): boolean;
     static registerBuiltinPack(paramarg0: Identifier, paramarg1: string, paramarg2: ModContainer, paramarg3: PackActivationType): boolean;
     static registerBuiltinPack(paramarg0: Identifier, paramarg1: string, paramarg2: ModContainer, paramarg3: Component, paramarg4: PackActivationType): boolean;
     static registerBuiltinResourcePacks(paramarg0: PackType, paramarg1: (param0: Pack) => void): void;

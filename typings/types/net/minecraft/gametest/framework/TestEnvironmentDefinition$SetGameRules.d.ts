@@ -3,14 +3,11 @@ import type { MapCodec } from '../../../../com/mojang/serialization/MapCodec.d.t
 import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { TestEnvironmentDefinition } from '../../../../net/minecraft/gametest/framework/TestEnvironmentDefinition.d.ts'
-import type { TestEnvironmentDefinition$Activation } from '../../../../net/minecraft/gametest/framework/TestEnvironmentDefinition$Activation.d.ts'
 import type { ServerLevel } from '../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { GameRuleMap } from '../../../../net/minecraft/world/level/gamerules/GameRuleMap.d.ts'
 export class TestEnvironmentDefinition$SetGameRules extends Record implements TestEnvironmentDefinition<GameRuleMap> {
     static CODEC: MapCodec<TestEnvironmentDefinition$SetGameRules>;
     static DIRECT_CODEC: Codec<TestEnvironmentDefinition<Object>>;
-    static activate<T extends unknown>(paramenvironment: TestEnvironmentDefinition<T>, paramlevel: ServerLevel): TestEnvironmentDefinition$Activation<T>;
-    static bootstrap(paramregistry: MapCodec<TestEnvironmentDefinition<Object>>[]): MapCodec<TestEnvironmentDefinition<Object>>;
     constructor(gameRulesMap: GameRuleMap)
     // private gameRulesMap: GameRuleMap;
     codec(): MapCodec<TestEnvironmentDefinition$SetGameRules>;

@@ -1,6 +1,5 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
-import type { DefaultConstructorMarker } from '../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 export class AnnotationUseSiteTarget extends Enum<AnnotationUseSiteTarget> {
     static ALL: AnnotationUseSiteTarget;
     static CONSTRUCTOR_PARAMETER: AnnotationUseSiteTarget;
@@ -15,7 +14,7 @@ export class AnnotationUseSiteTarget extends Enum<AnnotationUseSiteTarget> {
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): AnnotationUseSiteTarget;
     static values(): AnnotationUseSiteTarget[];
-    constructor(arg2: string, arg3: number, arg4: DefaultConstructorMarker)
+    private constructor(arg2: string)
     readonly renderName: string;
     getRenderName(): string;
     name(): "ALL" | "FIELD" | "FILE" | "PROPERTY" | "PROPERTY_GETTER" | "PROPERTY_SETTER" | "RECEIVER" | "CONSTRUCTOR_PARAMETER" | "SETTER_PARAMETER" | "PROPERTY_DELEGATE_FIELD";

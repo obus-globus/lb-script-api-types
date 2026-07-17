@@ -14,7 +14,6 @@ export class AsciiString extends Object implements CharSequence, Comparable<Char
     static b2c(paramarg0: number): string;
     static c2b(paramarg0: string): number;
     static cached(paramarg0: string): AsciiString;
-    static compare(paramarg0: CharSequence, paramarg1: CharSequence): number;
     static contains(paramarg0: CharSequence, paramarg1: CharSequence): boolean;
     static containsAllContentEqualsIgnoreCase(paramarg0: CharSequence[], paramarg1: CharSequence[]): boolean;
     static containsContentEqualsIgnoreCase(paramarg0: CharSequence[], paramarg1: CharSequence): boolean;

@@ -1,11 +1,8 @@
 import type { App } from '../../../../com/mojang/datafixers/kinds/App.d.ts'
 import type { Applicative } from '../../../../com/mojang/datafixers/kinds/Applicative.d.ts'
-import type { Applicative$Mu } from '../../../../com/mojang/datafixers/kinds/Applicative$Mu.d.ts'
 import type { CocartesianLike } from '../../../../com/mojang/datafixers/kinds/CocartesianLike.d.ts'
-import type { CocartesianLike$Mu } from '../../../../com/mojang/datafixers/kinds/CocartesianLike$Mu.d.ts'
 import type { K1 } from '../../../../com/mojang/datafixers/kinds/K1.d.ts'
 import type { Traversable } from '../../../../com/mojang/datafixers/kinds/Traversable.d.ts'
-import type { Traversable$Mu } from '../../../../com/mojang/datafixers/kinds/Traversable$Mu.d.ts'
 import type { Either$Instance$Mu } from '../../../../com/mojang/datafixers/util/Either$Instance$Mu.d.ts'
 import type { Either$Mu } from '../../../../com/mojang/datafixers/util/Either$Mu.d.ts'
 import type { Function10 } from '../../../../com/mojang/datafixers/util/Function10.d.ts'
@@ -26,9 +23,6 @@ import type { BiFunction } from '../../../../java/util/function/BiFunction.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Either$Instance<R2 extends unknown> extends Object implements Applicative<Either$Mu<R2>, Either$Instance$Mu<R2>>, CocartesianLike<Either$Mu<R2>, R2, Either$Instance$Mu<R2>>, Traversable<Either$Mu<R2>, Either$Instance$Mu<R2>> {
-    static unbox<F extends K1, C extends unknown, Mu extends CocartesianLike$Mu>(paramarg0: App<Mu, F>): CocartesianLike<F, C, Mu>;
-    static unbox<F extends K1, Mu extends Applicative$Mu>(paramarg0: App<Mu, F>): Applicative<F, Mu>;
-    static unbox<F extends K1, Mu extends Traversable$Mu>(paramarg0: App<Mu, F>): Traversable<F, Mu>;
     constructor()
     ap<R extends unknown, A extends unknown>(arg0: App<Either$Mu<R2>, (param0: A) => R>, arg1: App<Either$Mu<R2>, A>): App<Either$Mu<R2>, R>;
     ap<R extends unknown, A extends unknown>(arg0: (param0: A) => R, arg1: App<Either$Mu<R2>, A>): App<Either$Mu<R2>, R>;

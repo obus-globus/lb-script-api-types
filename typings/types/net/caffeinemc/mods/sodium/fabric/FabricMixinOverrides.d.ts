@@ -3,7 +3,6 @@ import type { PlatformMixinOverrides } from '../../../../../net/caffeinemc/mods/
 import type { PlatformMixinOverrides$MixinOverride } from '../../../../../net/caffeinemc/mods/sodium/client/services/PlatformMixinOverrides$MixinOverride.d.ts'
 export class FabricMixinOverrides extends Object implements PlatformMixinOverrides {
     static INSTANCE: PlatformMixinOverrides;
-    static getInstance(): PlatformMixinOverrides;
     constructor()
     applyModOverrides(): PlatformMixinOverrides$MixinOverride[];
 }

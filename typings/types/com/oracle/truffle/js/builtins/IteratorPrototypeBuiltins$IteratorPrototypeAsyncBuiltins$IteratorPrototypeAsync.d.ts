@@ -8,7 +8,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class IteratorPrototypeBuiltins$IteratorPrototypeAsyncBuiltins$IteratorPrototypeAsync extends Enum<IteratorPrototypeBuiltins$IteratorPrototypeAsyncBuiltins$IteratorPrototypeAsync> implements BuiltinEnum<IteratorPrototypeBuiltins$IteratorPrototypeAsyncBuiltins$IteratorPrototypeAsync> {
     static toAsync: IteratorPrototypeBuiltins$IteratorPrototypeAsyncBuiltins$IteratorPrototypeAsync;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): IteratorPrototypeBuiltins$IteratorPrototypeAsyncBuiltins$IteratorPrototypeAsync;
     static values(): IteratorPrototypeBuiltins$IteratorPrototypeAsyncBuiltins$IteratorPrototypeAsync[];

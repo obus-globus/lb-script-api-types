@@ -9,6 +9,7 @@ export class AntiVoidBlinkMode extends AntiVoidMode {
     // private fakeLagHandler: EventHook<BlinkPacketEvent>;
     /*not mapped: */ isExempt(): boolean;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private /*not mapped: */ getRequiresLag(): boolean;
     /**
      * This method is called to discover a safe position to teleport to.

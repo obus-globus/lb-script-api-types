@@ -15,6 +15,7 @@ import type { Source } from '../okio/Source.d.ts'
 import type { Timeout } from '../okio/Timeout.d.ts'
 export class Buffer extends Object implements ByteChannel, Cloneable, BufferedSink, BufferedSource {
     constructor()
+    getBuffer(): Buffer;
     head: Segment | null;
     // private size: number;
     size(): number;
@@ -24,7 +25,7 @@ export class Buffer extends Object implements ByteChannel, Cloneable, BufferedSi
     close(): void;
     completeSegmentByteCount(): number;
     copy(): Buffer;
-    copyTo(out: OutputStream, offset: number, byteCount: number): Buffer;
+    copyTo(out: OutputStream, offset?: number, byteCount?: number): Buffer;
     copyTo(out: Buffer, offset: number): Buffer;
     copyTo(out: Buffer, offset: number, byteCount: number): Buffer;
     // private digest(algorithm: string): ByteString;
@@ -60,7 +61,7 @@ export class Buffer extends Object implements ByteChannel, Cloneable, BufferedSi
     read(sink: number[], offset: number, byteCount: number): number;
     read(sink: Buffer, byteCount: number): number;
     readAll(sink: Sink): number;
-    readAndWriteUnsafe(unsafeCursor: Buffer$UnsafeCursor): Buffer$UnsafeCursor;
+    readAndWriteUnsafe(unsafeCursor?: Buffer$UnsafeCursor): Buffer$UnsafeCursor;
     readByte(): number;
     readByteArray(): number[];
     readByteArray(byteCount: number): number[];
@@ -81,7 +82,7 @@ export class Buffer extends Object implements ByteChannel, Cloneable, BufferedSi
     readShortLe(): number;
     readString(charset: Charset): string;
     readString(byteCount: number, charset: Charset): string;
-    readUnsafe(unsafeCursor: Buffer$UnsafeCursor): Buffer$UnsafeCursor;
+    readUnsafe(unsafeCursor?: Buffer$UnsafeCursor): Buffer$UnsafeCursor;
     readUtf8(): string;
     readUtf8(byteCount: number): string;
     readUtf8CodePoint(): number;
@@ -121,7 +122,7 @@ export class Buffer extends Object implements ByteChannel, Cloneable, BufferedSi
     writeShortLe(s: number): Buffer;
     writeString(string: string, charset: Charset): Buffer;
     writeString(string: string, beginIndex: number, endIndex: number, charset: Charset): Buffer;
-    writeTo(out: OutputStream, byteCount: number): Buffer;
+    writeTo(out: OutputStream, byteCount?: number): Buffer;
     writeUtf8(string: string): Buffer;
     writeUtf8(string: string, beginIndex: number, endIndex: number): Buffer;
     writeUtf8CodePoint(codePoint: number): Buffer;

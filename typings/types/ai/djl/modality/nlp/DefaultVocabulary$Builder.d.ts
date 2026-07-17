@@ -4,7 +4,7 @@ import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class DefaultVocabulary$Builder extends Object {
-    constructor(arg0: any)
+    private constructor()
     // private maxTokens: number;
     // private minFrequency: number;
     // private reservedTokens: string[];

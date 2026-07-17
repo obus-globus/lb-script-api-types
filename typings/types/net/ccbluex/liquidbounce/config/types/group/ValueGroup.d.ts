@@ -175,8 +175,8 @@ export class ValueGroup extends Value<Value<Object>[]> {
     value<V extends Value<Object>>(value: V): V;
     value<T extends unknown>(name: string, defaultValue: T, valueType: ValueType, aliases: string[]): Value<T>;
     vec2f(name: string, default_: Vector2fc): Value<Vector2fc>;
-    vec3d(name: string, default_: Vec3, useLocateButton: boolean, aliases: string[]): Value<Vec3>;
-    vec3i(name: string, default_: Vec3i, useLocateButton: boolean, aliases: string[]): Value<Vec3i>;
+    vec3d(name: string, default_?: Vec3, useLocateButton?: boolean, aliases?: string[]): Value<Vec3>;
+    vec3i(name: string, default_?: Vec3i, useLocateButton?: boolean, aliases?: string[]): Value<Vec3i>;
     walkInit(): void;
     /**
      * Walks the path of the {@link ValueGroup} and its children

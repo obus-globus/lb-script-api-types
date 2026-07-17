@@ -1,5 +1,4 @@
 import type { Runnable } from '../../java/lang/Runnable.d.ts'
-import type { Object } from '../../java/lang/Object.d.ts'
 import type { Continuation } from '../../kotlin/coroutines/Continuation.d.ts'
 import type { ContinuationInterceptor$Key } from '../../kotlin/coroutines/ContinuationInterceptor$Key.d.ts'
 import type { CoroutineContext } from '../../kotlin/coroutines/CoroutineContext.d.ts'
@@ -12,10 +11,10 @@ import type { EventLoopImplBase$DelayedTaskQueue } from '../../kotlinx/coroutine
 import type { EventLoopImplPlatform } from '../../kotlinx/coroutines/EventLoopImplPlatform.d.ts'
 export abstract class EventLoopImplBase extends EventLoopImplPlatform implements Delay {
     static Key: ContinuationInterceptor$Key;
-    static delay$suspendImpl(paramarg0: Delay, paramarg1: number, paramarg2: Continuation<Object>): Object;
     constructor()
     // private closeQueue(): void;
-    delay(time: number): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    delay(time: number, $completion: Continuation<void>): any;
     // private dequeue(): (() => void) | null;
     dispatch(context: CoroutineContext, block: () => void): void;
     enqueue(task: () => void): void;

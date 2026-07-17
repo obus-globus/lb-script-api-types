@@ -14,7 +14,6 @@ import type { LootItemCondition } from '../../../../../../net/minecraft/world/le
 import type { LootItemCondition$Builder } from '../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder.d.ts'
 import type { NumberProvider } from '../../../../../../net/minecraft/world/level/storage/loot/providers/number/NumberProvider.d.ts'
 export class LootPool$Builder extends Object implements FabricLootPoolBuilder, FunctionUserBuilder<LootPool$Builder>, ConditionUserBuilder<LootPool$Builder> {
-    static copyOf(paramarg0: LootPool): LootPool$Builder;
     constructor()
     // private bonusRolls: NumberProvider;
     // private conditions: ImmutableList$Builder<LootItemCondition>;

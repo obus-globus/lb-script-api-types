@@ -9,8 +9,6 @@ export class ModuleFastPlace$ApplyTo extends Enum<ModuleFastPlace$ApplyTo> imple
     static Companion: Tagged$Companion;
     static PROJECTILES: ModuleFastPlace$ApplyTo;
     static getEntries(): ModuleFastPlace$ApplyTo[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleFastPlace$ApplyTo;
     static values(): ModuleFastPlace$ApplyTo[];

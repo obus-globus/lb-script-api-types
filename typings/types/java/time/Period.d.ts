@@ -2,7 +2,6 @@ import type { DataOutput } from '../../java/io/DataOutput.d.ts'
 import type { ObjectInputStream } from '../../java/io/ObjectInputStream.d.ts'
 import type { Serializable } from '../../java/io/Serializable.d.ts'
 import type { LocalDate } from '../../java/time/LocalDate.d.ts'
-import type { ChronoLocalDate } from '../../java/time/chrono/ChronoLocalDate.d.ts'
 import type { ChronoPeriod } from '../../java/time/chrono/ChronoPeriod.d.ts'
 import type { IsoChronology } from '../../java/time/chrono/IsoChronology.d.ts'
 import type { Temporal } from '../../java/time/temporal/Temporal.d.ts'
@@ -14,7 +13,6 @@ import type { CharSequence } from '../../java/lang/CharSequence.d.ts'
 export class Period extends Object implements Serializable, ChronoPeriod {
     static ZERO: Period;
     static between(paramarg0: LocalDate, paramarg1: LocalDate): Period;
-    static between(paramarg0: ChronoLocalDate, paramarg1: ChronoLocalDate): ChronoPeriod;
     static from(paramarg0: TemporalAmount): Period;
     static of(paramarg0: number, paramarg1: number, paramarg2: number): Period;
     static ofDays(paramarg0: number): Period;

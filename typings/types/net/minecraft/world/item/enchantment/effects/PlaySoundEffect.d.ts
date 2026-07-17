@@ -11,7 +11,6 @@ import type { EnchantmentEntityEffect } from '../../../../../../net/minecraft/wo
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class PlaySoundEffect extends Record implements EnchantmentEntityEffect {
     static CODEC: MapCodec<PlaySoundEffect>;
-    static bootstrap(paramregistry: MapCodec<EnchantmentEntityEffect>[]): MapCodec<EnchantmentEntityEffect>;
     constructor(soundEvents: Holder<SoundEvent>[], volume: FloatProvider, pitch: FloatProvider)
     // private pitch: FloatProvider;
     // private soundEvents: Holder<SoundEvent>[];

@@ -6,8 +6,6 @@ import type { TranslucentSubmit } from '../../../../../net/minecraft/client/rend
 import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Matrix4fc } from '../../../../../org/joml/Matrix4fc.d.ts'
 export class NameTagFeatureRenderer$Submit extends Record implements TranslucentSubmit {
-    static computeDistanceToCameraSq(parampose: Matrix4fc): number;
-    static computeDistanceToCameraSq(parampose: Matrix4fc, paramoriginX: number, paramoriginY: number, paramoriginZ: number): number;
     constructor(pose: Matrix4fc, x: number, y: number, text: Component, lightCoords: number, color: number, backgroundColor: number, displayMode: Font$DisplayMode)
     // private backgroundColor: number;
     // private color: number;

@@ -11,7 +11,6 @@ export class ErrorPrototypeBuiltins$ForeignErrorPrototypeBuiltins$ForeignError e
     static message: ErrorPrototypeBuiltins$ForeignErrorPrototypeBuiltins$ForeignError;
     static name: ErrorPrototypeBuiltins$ForeignErrorPrototypeBuiltins$ForeignError;
     static stack: ErrorPrototypeBuiltins$ForeignErrorPrototypeBuiltins$ForeignError;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): ErrorPrototypeBuiltins$ForeignErrorPrototypeBuiltins$ForeignError;
     static values(): ErrorPrototypeBuiltins$ForeignErrorPrototypeBuiltins$ForeignError[];

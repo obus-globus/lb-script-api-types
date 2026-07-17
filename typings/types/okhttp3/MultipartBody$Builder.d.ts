@@ -6,7 +6,7 @@ import type { MultipartBody$Part } from '../okhttp3/MultipartBody$Part.d.ts'
 import type { RequestBody } from '../okhttp3/RequestBody.d.ts'
 import type { ByteString } from '../okio/ByteString.d.ts'
 export class MultipartBody$Builder extends Object {
-    constructor(boundary: string)
+    constructor(boundary?: string)
     // private boundary: ByteString;
     // private parts: MultipartBody$Part[];
     // private type: MediaType;

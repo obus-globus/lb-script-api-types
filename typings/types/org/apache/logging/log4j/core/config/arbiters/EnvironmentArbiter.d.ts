@@ -4,7 +4,7 @@ import type { EnvironmentArbiter$Builder } from '../../../../../../../org/apache
 export class EnvironmentArbiter extends Object implements Arbiter {
     static ELEMENT_TYPE: string;
     static newBuilder(): EnvironmentArbiter$Builder;
-    constructor(arg0: string, arg1: string, arg2: any)
+    private constructor(propertyName: string, propertyValue: string)
     // private propertyName: string;
     // private propertyValue: string;
     isCondition(): boolean;

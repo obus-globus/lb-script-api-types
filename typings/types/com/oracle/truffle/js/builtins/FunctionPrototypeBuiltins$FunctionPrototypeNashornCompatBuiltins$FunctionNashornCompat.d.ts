@@ -8,7 +8,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class FunctionPrototypeBuiltins$FunctionPrototypeNashornCompatBuiltins$FunctionNashornCompat extends Enum<FunctionPrototypeBuiltins$FunctionPrototypeNashornCompatBuiltins$FunctionNashornCompat> implements BuiltinEnum<FunctionPrototypeBuiltins$FunctionPrototypeNashornCompatBuiltins$FunctionNashornCompat> {
     static toSource: FunctionPrototypeBuiltins$FunctionPrototypeNashornCompatBuiltins$FunctionNashornCompat;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): FunctionPrototypeBuiltins$FunctionPrototypeNashornCompatBuiltins$FunctionNashornCompat;
     static values(): FunctionPrototypeBuiltins$FunctionPrototypeNashornCompatBuiltins$FunctionNashornCompat[];

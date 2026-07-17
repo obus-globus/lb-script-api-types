@@ -15,7 +15,6 @@ export class FileAlterationObserver extends Object implements Serializable {
     constructor(arg0: string)
     constructor(arg0: string, arg1: (param0: File) => boolean)
     constructor(arg0: string, arg1: (param0: File) => boolean, arg2: IOCase)
-    constructor(arg0: FileAlterationObserver$Builder, arg1: any)
     constructor(arg0: FileEntry, arg1: (param0: File) => boolean, arg2: IOCase)
     // private comparator: (param0: File, param1: File) => number;
     readonly fileFilter: (param0: File) => boolean;

@@ -9,8 +9,6 @@ export class Theme$Origin extends Enum<Theme$Origin> implements Tagged {
     static REMOTE: Theme$Origin;
     static RESOURCE: Theme$Origin;
     static getEntries(): Theme$Origin[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): Theme$Origin;
     static values(): Theme$Origin[];

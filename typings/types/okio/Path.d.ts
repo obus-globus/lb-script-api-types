@@ -34,9 +34,9 @@ export class Path extends Object implements Comparable<Path> {
     hashCode(): number;
     normalized(): Path;
     relativeTo(other: Path): Path;
-    resolve(child: string, normalize: boolean): Path;
-    resolve(child: ByteString, normalize: boolean): Path;
-    resolve(child: Path, normalize: boolean): Path;
+    resolve(child: string, normalize?: boolean): Path;
+    resolve(child: ByteString, normalize?: boolean): Path;
+    resolve(child: Path, normalize?: boolean): Path;
     toFile(): File;
     toNioPath(): Path_2;
     toString(): string;

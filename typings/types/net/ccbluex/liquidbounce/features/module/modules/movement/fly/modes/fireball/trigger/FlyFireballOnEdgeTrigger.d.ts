@@ -10,4 +10,5 @@ export class FlyFireballOnEdgeTrigger extends Mode {
     // private /*not mapped: */ getEdgeDistance(): number;
     readonly inputHandler: EventHook<MovementInputEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
 }

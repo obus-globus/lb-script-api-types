@@ -6,6 +6,7 @@ export class EspMode extends Mode {
     static Companion: Tagged$Companion;
     protected constructor(name: string, requiresTrueSight: boolean)
     readonly parent: ModeValueGroup<EspMode>;
+    getParent(): ModeValueGroup<EspMode>;
     readonly requiresTrueSight: boolean;
     shouldRender(entity: Entity | null): boolean;
 }

@@ -5,7 +5,7 @@ import type { AbstractSupplier } from '../../../../org/apache/commons/lang3/buil
 import type { FailableSupplier } from '../../../../org/apache/commons/lang3/function/FailableSupplier.d.ts'
 export class Strings$Builder extends AbstractSupplier<Strings, Strings$Builder, RuntimeException> {
     static NUL: () => Object | null;
-    constructor(arg0: any)
+    private constructor()
     // private ignoreCase: boolean;
     // private nullIsLess: boolean;
     get(): Strings;

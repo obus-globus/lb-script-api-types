@@ -1,5 +1,3 @@
-import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
-import type { SimpleFileVisitor } from '../../../../../../java/nio/file/SimpleFileVisitor.d.ts'
 import type { Pattern } from '../../../../../../java/util/regex/Pattern.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { IMappingProvider } from '../../../../../../net/fabricmc/loader/impl/lib/tinyremapper/IMappingProvider.d.ts'
@@ -13,7 +11,7 @@ import type { TinyRemapper$StateProcessor } from '../../../../../../net/fabricmc
 import type { TrLogger } from '../../../../../../net/fabricmc/loader/impl/lib/tinyremapper/api/TrLogger.d.ts'
 import type { Remapper } from '../../../../../../org/objectweb/asm/commons/Remapper.d.ts'
 export class TinyRemapper$Builder extends Object {
-    constructor(arg0: TrLogger, arg1: SimpleFileVisitor<Path>)
+    private constructor(arg0: TrLogger)
     // private analyzeVisitors: TinyRemapper$AnalyzeVisitorProvider[];
     // private checkPackageAccess: boolean;
     // private disableLocalVariableTracking: boolean;

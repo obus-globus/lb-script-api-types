@@ -3,7 +3,7 @@ import type { CipherOutputStream } from '../../../../../../javax/crypto/CipherOu
 import type { AES256Options } from '../../../../../../org/apache/commons/compress/archivers/sevenz/AES256Options.d.ts'
 export class AES256SHA256Decoder$AES256SHA256DecoderOutputStream extends OutputStream {
     static nullOutputStream(): OutputStream;
-    constructor(arg0: AES256Options, arg1: OutputStream, arg2: any)
+    private constructor(arg0: AES256Options, arg1: OutputStream)
     // private cipherBlockBuffer: number[];
     // private cipherBlockSize: number;
     // private cipherOutputStream: CipherOutputStream;

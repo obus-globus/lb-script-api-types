@@ -25,8 +25,9 @@ export class ProtoBuf$TypeAlias extends GeneratedMessageLite$ExtendableMessage<P
     static newRepeatedGeneratedExtension<ContainingType extends MessageLite, Type extends unknown>(paramarg0: ContainingType, paramarg1: MessageLite, paramarg2: Internal$EnumLiteMap<any>, paramarg3: number, paramarg4: WireFormat$FieldType, paramarg5: boolean, paramarg6: Class<Object>): GeneratedMessageLite$GeneratedExtension<ContainingType, Type>;
     static newSingularGeneratedExtension<ContainingType extends MessageLite, Type extends unknown>(paramarg0: ContainingType, paramarg1: Type, paramarg2: MessageLite, paramarg3: Internal$EnumLiteMap<any>, paramarg4: number, paramarg5: WireFormat$FieldType, paramarg6: Class<Object>): GeneratedMessageLite$GeneratedExtension<ContainingType, Type>;
     static parseDelimitedFrom(paramarg0: InputStream, paramarg1: ExtensionRegistryLite): ProtoBuf$TypeAlias;
-    constructor(arg0: CodedInputStream, arg1: ExtensionRegistryLite, arg2: any)
-    constructor(arg0: GeneratedMessageLite$ExtendableBuilder<GeneratedMessageLite$ExtendableMessage<any>, GeneratedMessageLite$ExtendableBuilder<any, any>>, arg1: any)
+    private constructor(arg0: boolean)
+    private constructor(arg0: CodedInputStream, arg1: ExtensionRegistryLite)
+    private constructor(arg0: GeneratedMessageLite$ExtendableBuilder<ProtoBuf$TypeAlias, any>)
     // private annotation_: ProtoBuf$Annotation[];
     // private bitField0_: number;
     // private compilerPluginData_: ProtoBuf$CompilerPluginData[];

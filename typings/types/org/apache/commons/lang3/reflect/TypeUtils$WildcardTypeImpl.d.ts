@@ -2,7 +2,7 @@ import type { Type } from '../../../../../java/lang/reflect/Type.d.ts'
 import type { WildcardType } from '../../../../../java/lang/reflect/WildcardType.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class TypeUtils$WildcardTypeImpl extends Object implements WildcardType {
-    constructor(arg0: Type[], arg1: Type[], arg2: any)
+    private constructor(arg0: Type[], arg1: Type[])
     readonly lowerBounds: Type[];
     readonly upperBounds: Type[];
     equals(arg0: Object | null): boolean;

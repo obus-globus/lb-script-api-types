@@ -13,7 +13,7 @@ export class Striped$CompactStriped<L extends unknown> extends Striped$PowerOfTw
     static lock(paramstripes: number): Striped<Lock>;
     static readWriteLock(paramstripes: number): Striped<ReadWriteLock>;
     static semaphore(paramstripes: number, parampermits: number): Striped<Semaphore>;
-    constructor(arg0: number, arg1: () => Object, arg2: any)
+    private constructor(stripes: number, supplier: () => L)
     // private array: Object[];
     getAt(index: number): L;
     size(): number;

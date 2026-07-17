@@ -12,7 +12,6 @@ export class FunctionPrototypeBuiltins$FunctionPrototype extends Enum<FunctionPr
     static bind: FunctionPrototypeBuiltins$FunctionPrototype;
     static call: FunctionPrototypeBuiltins$FunctionPrototype;
     static toString: FunctionPrototypeBuiltins$FunctionPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): FunctionPrototypeBuiltins$FunctionPrototype;
     static values(): FunctionPrototypeBuiltins$FunctionPrototype[];

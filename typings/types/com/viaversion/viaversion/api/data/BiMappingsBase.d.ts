@@ -2,8 +2,6 @@ import type { BiMappings } from '../../../../../com/viaversion/viaversion/api/da
 import type { Mappings } from '../../../../../com/viaversion/viaversion/api/data/Mappings.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BiMappingsBase extends Object implements BiMappings {
-    static of(paramarg0: Mappings): BiMappings;
-    static of(paramarg0: Mappings, paramarg1: Mappings): BiMappings;
     constructor(arg0: Mappings, arg1: Mappings)
     // private inverse: BiMappingsBase;
     // private mappings: Mappings;

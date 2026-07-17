@@ -1,7 +1,6 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { LayoutSettings } from '../../../../../net/minecraft/client/gui/layouts/LayoutSettings.d.ts'
 export class LayoutSettings$LayoutSettingsImpl extends Object implements LayoutSettings {
-    static defaults(): LayoutSettings;
     constructor()
     constructor(copy: LayoutSettings$LayoutSettingsImpl)
     xAlignment: number;

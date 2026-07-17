@@ -10,7 +10,6 @@ export class LevelPatternSelector extends Object implements LocationAware, Patte
     static ELEMENT_TYPE: string;
     static createSelector(paramproperties: PatternMatch[], paramdefaultPattern: string, paramalwaysWriteExceptions: boolean, paramnoConsoleNoAnsi: boolean, paramconfiguration: Configuration): LevelPatternSelector;
     static newBuilder(): LevelPatternSelector$Builder;
-    constructor(arg0: PatternMatch[], arg1: string, arg2: boolean, arg3: boolean, arg4: boolean, arg5: Configuration, arg6: any)
     constructor(properties: PatternMatch[], defaultPattern: string, alwaysWriteExceptions: boolean, noConsoleNoAnsi: boolean, config: Configuration)
     // private defaultFormatters: PatternFormatter[];
     // private defaultPattern: string;

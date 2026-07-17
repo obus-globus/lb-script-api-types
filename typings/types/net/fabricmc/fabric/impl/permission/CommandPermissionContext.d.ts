@@ -1,5 +1,4 @@
 import type { UUID } from '../../../../../java/util/UUID.d.ts'
-import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { MutablePermissionContext } from '../../../../../net/fabricmc/fabric/api/permission/v1/MutablePermissionContext.d.ts'
 import type { PermissionContext } from '../../../../../net/fabricmc/fabric/api/permission/v1/PermissionContext.d.ts'
@@ -7,11 +6,9 @@ import type { PermissionContext$Key } from '../../../../../net/fabricmc/fabric/a
 import type { PermissionContext$Type } from '../../../../../net/fabricmc/fabric/api/permission/v1/PermissionContext$Type.d.ts'
 import type { CommandSourceStack } from '../../../../../net/minecraft/commands/CommandSourceStack.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
-import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { MinecraftServer } from '../../../../../net/minecraft/server/MinecraftServer.d.ts'
 import type { PermissionLevel } from '../../../../../net/minecraft/server/permissions/PermissionLevel.d.ts'
 import type { PermissionSet } from '../../../../../net/minecraft/server/permissions/PermissionSet.d.ts'
-import type { NameAndId } from '../../../../../net/minecraft/server/players/NameAndId.d.ts'
 import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
@@ -23,11 +20,7 @@ export class CommandPermissionContext extends Object implements PermissionContex
     static NAME: PermissionContext$Key<string>;
     static POSITION: PermissionContext$Key<Vec3>;
     static SERVER: PermissionContext$Key<MinecraftServer>;
-    static create(paramarg0: UUID, paramarg1: PermissionContext$Type, paramarg2: PermissionLevel): MutablePermissionContext;
     static extractPermissionLevel(paramarg0: PermissionSet): PermissionLevel;
-    static key<T extends unknown>(paramarg0: Identifier): PermissionContext$Key<T>;
-    static offlinePlayer(paramarg0: UUID, paramarg1: MinecraftServer): CompletableFuture<MutablePermissionContext>;
-    static offlinePlayer(paramarg0: NameAndId, paramarg1: MinecraftServer): CompletableFuture<MutablePermissionContext>;
     constructor(arg0: CommandSourceStack)
     // private permissionLevel: PermissionLevel;
     // private source: CommandSourceStack;

@@ -27,6 +27,7 @@ export class MineToolMode extends Mode implements MinecraftShortcuts {
     readonly mc: Minecraft;
     readonly network: ClientPacketListener;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     readonly player: LocalPlayer;
     // private switchesNever: boolean;
     readonly syncOnStart: boolean;

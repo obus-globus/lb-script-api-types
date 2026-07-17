@@ -21,7 +21,7 @@ export interface DateTimeFormatBuilder$WithDateTime extends Object, DateTimeForm
     monthNumber(padding: Padding): void;
     second(padding: Padding): void;
     secondFraction(fixedLength: number): void;
-    secondFraction(minLength: number, maxLength: number): void;
+    secondFraction(minLength: number, maxLength?: number): void;
     year(padding: Padding): void;
     yearTwoDigits(baseYear: number): void;
 }

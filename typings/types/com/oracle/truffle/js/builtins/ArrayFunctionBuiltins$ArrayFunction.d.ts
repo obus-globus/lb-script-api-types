@@ -11,7 +11,6 @@ export class ArrayFunctionBuiltins$ArrayFunction extends Enum<ArrayFunctionBuilt
     static fromAsync: ArrayFunctionBuiltins$ArrayFunction;
     static isArray: ArrayFunctionBuiltins$ArrayFunction;
     static of: ArrayFunctionBuiltins$ArrayFunction;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): ArrayFunctionBuiltins$ArrayFunction;
     static values(): ArrayFunctionBuiltins$ArrayFunction[];

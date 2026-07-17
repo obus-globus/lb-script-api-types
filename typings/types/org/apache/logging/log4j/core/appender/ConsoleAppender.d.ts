@@ -19,7 +19,7 @@ export class ConsoleAppender extends AbstractOutputStreamAppender<OutputStreamMa
     static createDefaultAppenderForLayout(paramlayout: Layout<Serializable>): ConsoleAppender;
     static newBuilder<B extends ConsoleAppender$Builder<B>>(): B;
     static parseInt(params: string, paramdefaultValue: number): number;
-    constructor(arg0: string, arg1: Layout<Serializable>, arg2: Filter, arg3: OutputStreamManager, arg4: boolean, arg5: ConsoleAppender$Target, arg6: Property[], arg7: any)
+    private constructor(name: string, layout: Layout<Serializable>, filter: Filter, manager: OutputStreamManager, ignoreExceptions: boolean, target: ConsoleAppender$Target, properties: Property[])
     readonly target: ConsoleAppender$Target;
     getTarget(): ConsoleAppender$Target;
 }

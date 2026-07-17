@@ -13,7 +13,6 @@ import type { RandomSource } from '../../../../../../net/minecraft/util/RandomSo
 import type { BlockState } from '../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class DefaultModelEmitter extends Object implements PlatformModelEmitter {
     static INSTANCE: PlatformModelEmitter;
-    static getInstance(): PlatformModelEmitter;
     constructor()
     emitModel(arg0: BlockStateModel, arg1: (param0: Direction) => boolean, arg2: MutableQuadViewImpl, arg3: RandomSource, arg4: BlockAndTintGetter, arg5: BlockPos, arg6: BlockState, arg7: (param0: BlockStateModelPart, param1: (param0: Direction) => boolean, param2: (param0: MutableQuadViewImpl) => void) => void): void;
 }

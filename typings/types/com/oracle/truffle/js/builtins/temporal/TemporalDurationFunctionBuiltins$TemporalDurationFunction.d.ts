@@ -9,7 +9,6 @@ import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class TemporalDurationFunctionBuiltins$TemporalDurationFunction extends Enum<TemporalDurationFunctionBuiltins$TemporalDurationFunction> implements BuiltinEnum<TemporalDurationFunctionBuiltins$TemporalDurationFunction> {
     static compare: TemporalDurationFunctionBuiltins$TemporalDurationFunction;
     static from: TemporalDurationFunctionBuiltins$TemporalDurationFunction;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): TemporalDurationFunctionBuiltins$TemporalDurationFunction;
     static values(): TemporalDurationFunctionBuiltins$TemporalDurationFunction[];

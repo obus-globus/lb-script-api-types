@@ -5,7 +5,7 @@ export abstract class Flags$FlagField<E extends unknown> extends Object {
     static after<E extends Internal$EnumLite>(paramarg0: Flags$FlagField<Object>, paramarg1: E[]): Flags$FlagField<E>;
     static booleanAfter(paramarg0: Flags$FlagField<Object>): Flags$BooleanFlagField;
     static booleanFirst(): Flags$BooleanFlagField;
-    constructor(arg0: number, arg1: number, arg2: any)
+    private constructor(arg0: number, arg1: number)
     bitWidth: number;
     offset: number;
     get(arg0: number): E;

@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { DefaultConstructorMarker } from '../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { FunctionTypeKind$Companion } from '../../../../../../../kotlin/reflect/jvm/internal/impl/builtins/functions/FunctionTypeKind$Companion.d.ts'
 import type { ClassId } from '../../../../../../../kotlin/reflect/jvm/internal/impl/name/ClassId.d.ts'
 import type { FqName } from '../../../../../../../kotlin/reflect/jvm/internal/impl/name/FqName.d.ts'
@@ -7,7 +6,6 @@ import type { Name } from '../../../../../../../kotlin/reflect/jvm/internal/impl
 export abstract class FunctionTypeKind extends Object {
     static Companion: FunctionTypeKind$Companion;
     constructor(arg0: FqName, arg1: string, arg2: boolean, arg3: ClassId, arg4: boolean, arg5: number)
-    constructor(arg0: FqName, arg1: string, arg2: boolean, arg3: ClassId, arg4: boolean, arg5: number, arg6: number, arg7: DefaultConstructorMarker)
     // private annotationOnInvokeClassId: ClassId;
     readonly classNamePrefix: string;
     // private isInlineable: boolean;

@@ -6,7 +6,6 @@ import type { Vec3i } from '../../../../net/minecraft/core/Vec3i.d.ts'
 import type { StreamCodec } from '../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { AttributeModifier } from '../../../../net/minecraft/world/entity/ai/attributes/AttributeModifier.d.ts'
-import type { Item$Properties } from '../../../../net/minecraft/world/item/Item$Properties.d.ts'
 import type { ChunkPos } from '../../../../net/minecraft/world/level/ChunkPos.d.ts'
 import type { Level } from '../../../../net/minecraft/world/level/Level.d.ts'
 import type { PartialTickSupplier } from '../../../../net/minecraft/world/waypoints/PartialTickSupplier.d.ts'
@@ -19,7 +18,6 @@ import type { Waypoint$Icon } from '../../../../net/minecraft/world/waypoints/Wa
 export abstract class TrackedWaypoint extends Object implements Waypoint {
     static STREAM_CODEC: StreamCodec<ByteBuf, TrackedWaypoint>;
     static WAYPOINT_TRANSMIT_RANGE_HIDE_MODIFIER: AttributeModifier;
-    static addHideAttribute(paramproperties: Item$Properties): Item$Properties;
     static empty(paramidentifier: UUID): TrackedWaypoint;
     static setAzimuth(paramidentifier: UUID, paramicon: Waypoint$Icon, paramangle: number): TrackedWaypoint;
     static setChunk(paramidentifier: UUID, paramicon: Waypoint$Icon, paramchunk: ChunkPos): TrackedWaypoint;

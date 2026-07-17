@@ -9,7 +9,6 @@ import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class AsyncContextBuiltins$AsyncContext extends Enum<AsyncContextBuiltins$AsyncContext> implements BuiltinEnum<AsyncContextBuiltins$AsyncContext> {
     static Snapshot: AsyncContextBuiltins$AsyncContext;
     static Variable: AsyncContextBuiltins$AsyncContext;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): AsyncContextBuiltins$AsyncContext;
     static values(): AsyncContextBuiltins$AsyncContext[];

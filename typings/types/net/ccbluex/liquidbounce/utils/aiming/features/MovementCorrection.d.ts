@@ -14,8 +14,6 @@ export class MovementCorrection extends Enum<MovementCorrection> implements Tagg
     static SILENT: MovementCorrection;
     static STRICT: MovementCorrection;
     static getEntries(): MovementCorrection[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): MovementCorrection;
     static values(): MovementCorrection[];

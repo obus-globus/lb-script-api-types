@@ -9,4 +9,5 @@ import type { ClientModule } from '../../../../../../../net/ccbluex/liquidbounce
 export class ModuleNoInterpolation extends ClientModule {
     static INSTANCE: ModuleNoInterpolation;
     readonly value: number;
+    getValue(): number;
 }

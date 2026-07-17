@@ -5,7 +5,7 @@ import type { Reference2ObjectOpenHashMap$MapIterator } from '../../../../../it/
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Reference2ObjectOpenHashMap$EntryIterator extends Reference2ObjectOpenHashMap$MapIterator<Object> implements ObjectIterator<Reference2ObjectMap$Entry<K, V>> {
-    constructor(null_: Map<Object, Object>, arg1: (Object | null)[])
+    private constructor(null_: Map<Object, Object>)
     // private entry: Reference2ObjectOpenHashMap$MapEntry;
     acceptOnIndex<K extends unknown, V extends unknown>(arg0: (param0: Reference2ObjectMap$Entry<K, V>) => void, arg1: number): void;
     next<K extends unknown, V extends unknown>(): Reference2ObjectOpenHashMap$MapEntry;

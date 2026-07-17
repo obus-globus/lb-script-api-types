@@ -1,6 +1,6 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class JdkSslContext$Defaults extends Object {
-    constructor(arg0: any)
+    private constructor()
     // private defaultCiphers: string[];
     // private defaultCiphersNonTLSv13: string[];
     // private defaultProtocols: string[];

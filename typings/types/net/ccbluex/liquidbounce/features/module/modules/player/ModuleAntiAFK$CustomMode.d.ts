@@ -9,6 +9,7 @@ export class ModuleAntiAFK$CustomMode extends Mode {
     readonly jump: boolean;
     readonly move: boolean;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     readonly repeatable: EventHook<GameTickEvent>;
     readonly swingRepeatable: EventHook<GameTickEvent>;
 }

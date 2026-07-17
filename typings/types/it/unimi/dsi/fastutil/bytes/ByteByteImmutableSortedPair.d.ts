@@ -5,7 +5,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ByteByteImmutableSortedPair extends ByteByteImmutablePair implements ByteByteSortedPair, Serializable {
     static of(paramarg0: number, paramarg1: number): ByteByteImmutablePair;
     static of(paramarg0: number, paramarg1: number): ByteByteImmutableSortedPair;
-    static of(paramarg0: number, paramarg1: number): ByteByteSortedPair;
     private constructor(arg0: number, arg1: number)
     contains(arg0: Object): boolean;
     contains(arg0: number): boolean;

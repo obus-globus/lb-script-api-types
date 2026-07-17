@@ -17,8 +17,6 @@ export class CustomAntiBotMode$CustomConditions extends Enum<CustomAntiBotMode$C
     static NO_GAME_MODE: CustomAntiBotMode$CustomConditions;
     static SWUNG: CustomAntiBotMode$CustomConditions;
     static getEntries(): CustomAntiBotMode$CustomConditions[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): CustomAntiBotMode$CustomConditions;
     static values(): CustomAntiBotMode$CustomConditions[];

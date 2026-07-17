@@ -10,7 +10,6 @@ import type { EnumExtensionImpl } from '../../../../../../../net/fabricmc/loader
 import type { InjectedInterfaceImpl } from '../../../../../../../net/fabricmc/loader/impl/lib/classtweaker/impl/InjectedInterfaceImpl.d.ts'
 import type { ClassVisitor } from '../../../../../../../org/objectweb/asm/ClassVisitor.d.ts'
 export class ClassTweakerImpl extends Object implements ClassTweaker {
-    static newInstance(): ClassTweaker;
     constructor()
     // private accessWideners: { [key: string]: AccessWidenerImpl };
     // private classes: string[];

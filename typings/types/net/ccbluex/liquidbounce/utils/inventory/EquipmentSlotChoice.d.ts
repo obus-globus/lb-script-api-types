@@ -16,8 +16,6 @@ export class EquipmentSlotChoice extends Enum<EquipmentSlotChoice> implements Ta
     static SADDLE: EquipmentSlotChoice;
     static allHumanoidArmor(): EquipmentSlotChoice[];
     static getEntries(): EquipmentSlotChoice[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): EquipmentSlotChoice;
     static values(): EquipmentSlotChoice[];

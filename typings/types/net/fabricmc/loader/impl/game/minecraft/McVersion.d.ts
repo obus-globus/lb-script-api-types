@@ -1,7 +1,7 @@
 import type { OptionalInt } from '../../../../../../java/util/OptionalInt.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class McVersion extends Object {
-    constructor(arg0: string, arg1: string, arg2: string, arg3: string, arg4: OptionalInt, arg5: any)
+    private constructor(arg0: string, arg1: string, arg2: string, arg3: string, arg4: OptionalInt)
     readonly classVersion: OptionalInt;
     readonly id: string;
     readonly name: string;

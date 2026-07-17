@@ -14,7 +14,7 @@ export class BloomFilter<T extends unknown> extends Object implements Predicate<
     static readFrom<T extends unknown>(paramin: InputStream, paramfunnel: Funnel<Object>): BloomFilter<T>;
     static toBloomFilter<T extends unknown>(paramfunnel: Funnel<Object>, paramexpectedInsertions: number): Collector<T, Object, BloomFilter<T>>;
     static toBloomFilter<T extends unknown>(paramfunnel: Funnel<Object>, paramexpectedInsertions: number, paramfpp: number): Collector<T, Object, BloomFilter<T>>;
-    constructor(arg0: BloomFilterStrategies$LockFreeBitArray, arg1: number, arg2: Funnel<Object>, arg3: BloomFilter$Strategy, arg4: any)
+    private constructor(bits: BloomFilterStrategies$LockFreeBitArray, numHashFunctions: number, funnel: Funnel<T>, strategy: BloomFilter$Strategy)
     // private bits: BloomFilterStrategies$LockFreeBitArray;
     // private funnel: Funnel<T>;
     // private numHashFunctions: number;

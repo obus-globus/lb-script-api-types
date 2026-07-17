@@ -1,7 +1,7 @@
 import type { CosineTracker } from '../../../../ai/djl/training/tracker/CosineTracker.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class CosineTracker$Builder extends Object {
-    constructor(arg0: any)
+    private constructor()
     // private baseValue: number;
     // private finalValue: number;
     // private maxUpdates: number;

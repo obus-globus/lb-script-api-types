@@ -9,7 +9,7 @@ export class PreviousInjectorInsns extends Enum<PreviousInjectorInsns> {
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): PreviousInjectorInsns;
     static values(): PreviousInjectorInsns[];
-    constructor(arg2: string, arg3: PreviousInjectorInsns)
+    private constructor(arg2: string)
     // private description: string;
     getLast(arg0: AbstractInsnNode): AbstractInsnNode;
     getPredicates(): (param0: AbstractInsnNode) => boolean[];

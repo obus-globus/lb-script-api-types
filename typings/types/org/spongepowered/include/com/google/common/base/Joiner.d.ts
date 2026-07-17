@@ -6,7 +6,8 @@ import type { Iterator } from '../../../../../../../java/util/Iterator.d.ts'
 import type { Joiner$MapJoiner } from '../../../../../../../org/spongepowered/include/com/google/common/base/Joiner$MapJoiner.d.ts'
 export class Joiner extends Object {
     static on(paramarg0: string): Joiner;
-    constructor(arg0: Joiner, arg1: Joiner)
+    private constructor(arg0: string)
+    private constructor(arg0: Joiner)
     // private separator: string;
     appendTo<A extends Appendable>(arg0: A, arg1: Iterator<Object>): A;
     appendTo(arg0: StringBuilder, arg1: Iterator<Object>): StringBuilder;

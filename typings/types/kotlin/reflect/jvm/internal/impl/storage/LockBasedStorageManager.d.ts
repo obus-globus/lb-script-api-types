@@ -15,7 +15,6 @@ export class LockBasedStorageManager extends Object implements StorageManager {
     static NO_LOCKS: StorageManager;
     constructor(arg0: string)
     constructor(arg0: string, arg1: () => void, arg2: (param0: InterruptedException) => void)
-    constructor(arg0: string, arg1: LockBasedStorageManager$ExceptionHandlingStrategy, arg2: SimpleLock, arg3: LockBasedStorageManager)
     // private debugText: string;
     // private exceptionHandlingStrategy: LockBasedStorageManager$ExceptionHandlingStrategy;
     // private lock: SimpleLock;

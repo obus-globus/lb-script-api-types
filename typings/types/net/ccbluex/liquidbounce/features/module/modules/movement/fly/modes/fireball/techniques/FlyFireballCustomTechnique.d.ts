@@ -13,6 +13,7 @@ export class FlyFireballCustomTechnique extends Mode {
     // private /*not mapped: */ getDisableDelay(): number;
     // private movementInputHandler: EventHook<MovementInputEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
     readonly playerMoveHandler: EventHook<PlayerMoveEvent>;
     // private rotationUpdateHandler: EventHook<RotationUpdateEvent>;
     readonly sprint: boolean;

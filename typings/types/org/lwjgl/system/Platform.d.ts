@@ -12,7 +12,7 @@ export class Platform extends Enum<Platform> {
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): Platform;
     static values(): Platform[];
-    constructor(arg2: string, arg3: string, arg4: Platform)
+    private constructor(arg2: string, arg3: string)
     // private nativePath: string;
     getName(): string;
     mapLibraryName(arg0: string): string;

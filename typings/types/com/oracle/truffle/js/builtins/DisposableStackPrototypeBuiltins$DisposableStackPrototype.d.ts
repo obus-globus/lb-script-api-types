@@ -13,7 +13,6 @@ export class DisposableStackPrototypeBuiltins$DisposableStackPrototype extends E
     static disposed: DisposableStackPrototypeBuiltins$DisposableStackPrototype;
     static move: DisposableStackPrototypeBuiltins$DisposableStackPrototype;
     static use: DisposableStackPrototypeBuiltins$DisposableStackPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): DisposableStackPrototypeBuiltins$DisposableStackPrototype;
     static values(): DisposableStackPrototypeBuiltins$DisposableStackPrototype[];

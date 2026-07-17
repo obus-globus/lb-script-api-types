@@ -10,7 +10,6 @@ export class WebAssemblyGlobalPrototypeBuiltins$WebAssemblyGlobalPrototype exten
     static set_value: WebAssemblyGlobalPrototypeBuiltins$WebAssemblyGlobalPrototype;
     static value: WebAssemblyGlobalPrototypeBuiltins$WebAssemblyGlobalPrototype;
     static valueOf: WebAssemblyGlobalPrototypeBuiltins$WebAssemblyGlobalPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): WebAssemblyGlobalPrototypeBuiltins$WebAssemblyGlobalPrototype;
     static values(): WebAssemblyGlobalPrototypeBuiltins$WebAssemblyGlobalPrototype[];

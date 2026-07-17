@@ -23,7 +23,6 @@ export abstract class JSAddConstantLeftNumberNode extends JSUnaryNode implements
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
-    static truncate(paramnode: Node): void;
     constructor(leftValue: Number, right: JavaScriptNode, truncate: boolean)
     // private isInt: boolean;
     // private isSafeLong: boolean;

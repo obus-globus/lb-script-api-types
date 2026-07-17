@@ -10,7 +10,6 @@ export class AsyncFromSyncIteratorPrototypeBuiltins$GeneratorPrototype extends E
     static next: AsyncFromSyncIteratorPrototypeBuiltins$GeneratorPrototype;
     static return_: AsyncFromSyncIteratorPrototypeBuiltins$GeneratorPrototype;
     static throw_: AsyncFromSyncIteratorPrototypeBuiltins$GeneratorPrototype;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): AsyncFromSyncIteratorPrototypeBuiltins$GeneratorPrototype;
     static values(): AsyncFromSyncIteratorPrototypeBuiltins$GeneratorPrototype[];

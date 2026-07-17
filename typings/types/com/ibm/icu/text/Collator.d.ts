@@ -24,11 +24,6 @@ export abstract class Collator extends Object implements Freezable<Collator>, Co
     static QUATERNARY: number;
     static SECONDARY: number;
     static TERTIARY: number;
-    static comparing<T extends unknown, U extends Comparable<Object>>(paramarg0: (param0: Object) => U): (param0: T, param1: T) => number;
-    static comparing<T extends unknown, U extends unknown>(paramarg0: (param0: Object) => U, paramarg1: (param0: Object, param1: Object) => number): (param0: T, param1: T) => number;
-    static comparingDouble<T extends unknown>(paramarg0: (param0: Object) => number): (param0: T, param1: T) => number;
-    static comparingInt<T extends unknown>(paramarg0: (param0: Object) => number): (param0: T, param1: T) => number;
-    static comparingLong<T extends unknown>(paramarg0: (param0: Object) => number): (param0: T, param1: T) => number;
     static getAvailableLocales(): Locale[];
     static getAvailableULocales(): ULocale[];
     static getDisplayName(paramarg0: ULocale): string;
@@ -44,12 +39,8 @@ export abstract class Collator extends Object implements Freezable<Collator>, Co
     static getKeywordValues(paramarg0: string): string[];
     static getKeywordValuesForLocale(paramarg0: string, paramarg1: ULocale, paramarg2: boolean): string[];
     static getKeywords(): string[];
-    static naturalOrder<T extends Comparable<Object>>(): (param0: T, param1: T) => number;
-    static nullsFirst<T extends unknown>(paramarg0: (param0: Object, param1: Object) => number): (param0: T, param1: T) => number;
-    static nullsLast<T extends unknown>(paramarg0: (param0: Object, param1: Object) => number): (param0: T, param1: T) => number;
     static registerFactory(paramarg0: Collator$CollatorFactory): Object;
     static registerInstance(paramarg0: Collator, paramarg1: ULocale): Object;
-    static reverseOrder<T extends Comparable<Object>>(): (param0: T, param1: T) => number;
     static unregister(paramarg0: Object): boolean;
     constructor()
     // private checkNotFrozen(): void;

@@ -9,7 +9,6 @@ import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class IntlBuiltins$Intl extends Enum<IntlBuiltins$Intl> implements BuiltinEnum<IntlBuiltins$Intl> {
     static getCanonicalLocales: IntlBuiltins$Intl;
     static supportedValuesOf: IntlBuiltins$Intl;
-    static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): IntlBuiltins$Intl;
     static values(): IntlBuiltins$Intl[];

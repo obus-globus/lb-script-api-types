@@ -1,4 +1,5 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
+import type { Continuation } from '../../../kotlin/coroutines/Continuation.d.ts'
 import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { AtomicRef } from '../../../kotlinx/atomicfu/AtomicRef.d.ts'
 import type { BufferOverflow } from '../../../kotlinx/coroutines/channels/BufferOverflow.d.ts'
@@ -11,11 +12,13 @@ import type { AbstractSharedFlow } from '../../../kotlinx/coroutines/flow/intern
 import type { FusibleFlow } from '../../../kotlinx/coroutines/flow/internal/FusibleFlow.d.ts'
 export class StateFlowImpl<T extends unknown> extends AbstractSharedFlow<StateFlowSlot> implements CancellableFlow<T>, MutableStateFlow<T>, FusibleFlow<T> {
     constructor(initialState: Object)
-    collect(collector: FlowCollector<T>): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    collect(collector: FlowCollector<T>, $completion: Continuation<void>): any;
     compareAndSet(expect: T, update: T): boolean;
     protected createSlot(): StateFlowSlot;
     protected createSlotArray(size: number): (StateFlowSlot | null)[];
-    emit(value: T): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    emit(value: T, $completion: Continuation<void>): any;
     fuse(context: CoroutineContext, capacity: number, onBufferOverflow: BufferOverflow): Flow<T>;
     resetReplayCache(): void;
     tryEmit(value: T): boolean;

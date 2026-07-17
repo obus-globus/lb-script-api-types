@@ -6,5 +6,6 @@ export abstract class NoWebMode extends Mode {
     static Companion: Tagged$Companion;
     constructor(name: string)
     readonly parent: ModeValueGroup<NoWebMode>;
+    getParent(): ModeValueGroup<NoWebMode>;
     handleEntityCollision(pos: BlockPos): boolean;
 }

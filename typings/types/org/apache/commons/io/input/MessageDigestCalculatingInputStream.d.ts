@@ -8,7 +8,6 @@ export class MessageDigestCalculatingInputStream extends ObservableInputStream {
     constructor(arg0: InputStream)
     constructor(arg0: InputStream, arg1: MessageDigest)
     constructor(arg0: InputStream, arg1: string)
-    constructor(arg0: MessageDigestCalculatingInputStream$Builder, arg1: any)
     readonly messageDigest: MessageDigest;
     getMessageDigest(): MessageDigest;
 }

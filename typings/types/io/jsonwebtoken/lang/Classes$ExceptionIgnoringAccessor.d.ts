@@ -5,7 +5,7 @@ import type { ClassLoader } from '../../../java/lang/ClassLoader.d.ts'
 import type { URL } from '../../../java/net/URL.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class Classes$ExceptionIgnoringAccessor extends Object implements Classes$ClassLoaderAccessor {
-    constructor(arg0: Classes$ExceptionIgnoringAccessor)
+    private constructor()
     doGetClassLoader(): ClassLoader;
     getClassLoader(): ClassLoader;
     getResource(arg0: string): URL;

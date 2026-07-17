@@ -1,6 +1,6 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class WindowsHWDiskStore$DiskStats extends Object {
-    constructor(arg0: any)
+    private constructor()
     // private diskTimeMap: { [key: string]: number };
     // private queueLengthMap: { [key: string]: number };
     // private readByteMap: { [key: string]: number };

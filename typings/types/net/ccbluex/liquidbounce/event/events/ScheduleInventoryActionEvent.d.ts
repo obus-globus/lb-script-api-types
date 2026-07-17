@@ -7,7 +7,8 @@ import type { Priority } from '../../../../../net/ccbluex/liquidbounce/utils/kot
  * Fires to schedule inventory actions, exposing the action chain list.
  */
 export class ScheduleInventoryActionEvent extends Event {
-    constructor(schedule: InventoryAction$Chain[])
+    constructor(schedule?: InventoryAction$Chain[])
+    getSchedule(): InventoryAction$Chain[];
     schedule(constrains: InventoryConstraints, actions: InventoryAction[], priority: Priority): void;
     schedule(constrains: InventoryConstraints, action: InventoryAction, priority: Priority): void;
 }

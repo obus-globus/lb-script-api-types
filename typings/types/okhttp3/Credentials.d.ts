@@ -4,5 +4,5 @@ export class Credentials extends Object {
     static INSTANCE: Credentials;
     static basic(paramarg0: string, paramarg1: string): string;
     static basic(username: string, password: string, charset: Charset): string;
-    basic(username: string, password: string, charset: Charset): string;
+    basic(username: string, password: string, charset?: Charset): string;
 }

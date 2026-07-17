@@ -5,5 +5,6 @@ export class ModuleDerp$YawMode extends Mode {
     static Companion: Tagged$Companion;
     protected constructor(name: string)
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     readonly yaw: number;
 }

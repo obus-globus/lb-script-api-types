@@ -13,7 +13,6 @@ import type { Level } from '../../../../../../net/minecraft/world/level/Level.d.
 import type { Matrix4f } from '../../../../../../org/joml/Matrix4f.d.ts'
 export class FabricLevelRenderHooks extends Object implements PlatformLevelRenderHooks {
     static INSTANCE: PlatformLevelRenderHooks;
-    static getInstance(): PlatformLevelRenderHooks;
     constructor()
     retrieveChunkMeshAppenders(arg0: Level, arg1: BlockPos): (Object | null)[];
     runChunkLayerEvents(arg0: RenderType, arg1: Level, arg2: LevelRenderer, arg3: Matrix4f, arg4: Matrix4f, arg5: number, arg6: Camera, arg7: Frustum): void;

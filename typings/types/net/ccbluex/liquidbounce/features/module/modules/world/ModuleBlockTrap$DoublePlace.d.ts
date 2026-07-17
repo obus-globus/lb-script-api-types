@@ -7,8 +7,6 @@ export class ModuleBlockTrap$DoublePlace extends Enum<ModuleBlockTrap$DoublePlac
     static BELOW: ModuleBlockTrap$DoublePlace;
     static Companion: Tagged$Companion;
     static getEntries(): ModuleBlockTrap$DoublePlace[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleBlockTrap$DoublePlace;
     static values(): ModuleBlockTrap$DoublePlace[];

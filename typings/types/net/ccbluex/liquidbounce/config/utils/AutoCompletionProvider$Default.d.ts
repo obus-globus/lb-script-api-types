@@ -8,7 +8,6 @@ export class AutoCompletionProvider$Default extends Object implements AutoComple
     static modeGroupCompleter: AutoCompletionProvider;
     static multiChoiceCompleter: AutoCompletionProvider;
     static rangedCompleter: AutoCompletionProvider;
-    static ofConst(strings: string[]): AutoCompletionProvider;
     booleanCompleter: AutoCompletionProvider;
     choiceListCompleter: AutoCompletionProvider;
     modeGroupCompleter: AutoCompletionProvider;

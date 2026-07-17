@@ -10,8 +10,6 @@ export class ModuleHoleFiller$Features extends Enum<ModuleHoleFiller$Features> i
     static PREVENT_SELF_FILL: ModuleHoleFiller$Features;
     static SMART: ModuleHoleFiller$Features;
     static getEntries(): ModuleHoleFiller$Features[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleHoleFiller$Features;
     static values(): ModuleHoleFiller$Features[];

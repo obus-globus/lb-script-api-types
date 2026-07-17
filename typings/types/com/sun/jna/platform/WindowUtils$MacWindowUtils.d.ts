@@ -6,7 +6,7 @@ import type { Window } from '../../../../java/awt/Window.d.ts'
 import type { Raster } from '../../../../java/awt/image/Raster.d.ts'
 import type { Icon } from '../../../../javax/swing/Icon.d.ts'
 export class WindowUtils$MacWindowUtils extends WindowUtils$NativeWindowUtils {
-    constructor(arg0: any)
+    private constructor()
     // private fixWindowDragging(arg0: Window, arg1: string): void;
     // private installMaskingPane(arg0: Window): WindowUtils$MacWindowUtils$OSXMaskingContentPane;
     isWindowAlphaSupported(): boolean;

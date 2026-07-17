@@ -42,7 +42,6 @@ export class ValidatingObjectInputStream extends ObjectInputStream {
     static builder(): ValidatingObjectInputStream$Builder;
     static nullInputStream(): InputStream;
     constructor(arg0: InputStream)
-    constructor(arg0: ValidatingObjectInputStream$Builder, arg1: any)
     // private predicate: ObjectStreamClassPredicate;
     accept(arg0: Pattern): ValidatingObjectInputStream;
     accept(...arg0: Class<Object>[]): ValidatingObjectInputStream;

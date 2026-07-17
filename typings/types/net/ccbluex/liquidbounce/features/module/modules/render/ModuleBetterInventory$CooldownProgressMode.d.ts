@@ -8,8 +8,6 @@ export class ModuleBetterInventory$CooldownProgressMode extends Enum<ModuleBette
     static DURATION_TICKS: ModuleBetterInventory$CooldownProgressMode;
     static PERCENTAGE: ModuleBetterInventory$CooldownProgressMode;
     static getEntries(): ModuleBetterInventory$CooldownProgressMode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleBetterInventory$CooldownProgressMode;
     static values(): ModuleBetterInventory$CooldownProgressMode[];

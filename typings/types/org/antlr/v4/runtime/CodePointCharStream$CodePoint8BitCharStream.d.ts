@@ -7,7 +7,7 @@ export class CodePointCharStream$CodePoint8BitCharStream extends CodePointCharSt
     static UNKNOWN_SOURCE_NAME: string;
     static fromBuffer(paramarg0: CodePointBuffer): CodePointCharStream;
     static fromBuffer(paramarg0: CodePointBuffer, paramarg1: string): CodePointCharStream;
-    constructor(arg0: number, arg1: number, arg2: string, arg3: number[], arg4: number, arg5: any)
+    private constructor(arg0: number, arg1: number, arg2: string, arg3: number[], arg4: number)
     // private byteArray: number[];
     LA(arg0: number): number;
     getInternalStorage(): Object;

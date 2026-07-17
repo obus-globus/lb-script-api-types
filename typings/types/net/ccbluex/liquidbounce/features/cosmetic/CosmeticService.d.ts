@@ -1,5 +1,6 @@
 import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
 import type { UUID } from '../../../../../java/util/UUID.d.ts'
+import type { Continuation } from '../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { Job } from '../../../../../kotlinx/coroutines/Job.d.ts'
 import type { Cosmetic } from '../../../../../net/ccbluex/liquidbounce/api/models/cosmetics/Cosmetic.d.ts'
 import type { CosmeticCategory } from '../../../../../net/ccbluex/liquidbounce/api/models/cosmetics/CosmeticCategory.d.ts'
@@ -50,6 +51,7 @@ export class CosmeticService extends ValueGroup implements EventListener {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt#L71 | src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt:71}
      */
     refreshCarriers(force: boolean, done: () => void): void;
-    // private transferTemporaryOwnership(uuid: UUID): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private transferTemporaryOwnership(uuid: UUID, $completion: Continuation<void>): any;
     unregister(): void;
 }

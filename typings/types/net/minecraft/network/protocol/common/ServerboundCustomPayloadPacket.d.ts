@@ -1,4 +1,3 @@
-import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { ChannelHandlerContext } from '../../../../../io/netty/channel/ChannelHandlerContext.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
@@ -10,8 +9,6 @@ import type { FriendlyByteBuf } from '../../../../../net/minecraft/network/Frien
 import type { PacketEncoder } from '../../../../../net/minecraft/network/PacketEncoder.d.ts'
 import type { PacketListener } from '../../../../../net/minecraft/network/PacketListener.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
-import type { StreamDecoder } from '../../../../../net/minecraft/network/codec/StreamDecoder.d.ts'
-import type { StreamMemberEncoder } from '../../../../../net/minecraft/network/codec/StreamMemberEncoder.d.ts'
 import type { Packet } from '../../../../../net/minecraft/network/protocol/Packet.d.ts'
 import type { PacketType } from '../../../../../net/minecraft/network/protocol/PacketType.d.ts'
 import type { ServerCommonPacketListener } from '../../../../../net/minecraft/network/protocol/common/ServerCommonPacketListener.d.ts'
@@ -19,7 +16,6 @@ import type { CustomPacketPayload } from '../../../../../net/minecraft/network/p
 export class ServerboundCustomPayloadPacket extends Record implements GenericPayloadAccessor, SplittablePacket, Packet<ServerCommonPacketListener> {
     static MAX_PAYLOAD_SIZE: number;
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundCustomPayloadPacket>;
-    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(payload: CustomPacketPayload)
     // private payload: CustomPacketPayload;
     equals(o: Object | null): boolean;

@@ -5,5 +5,6 @@ export abstract class ElytraFlyMode extends Mode {
     static Companion: Tagged$Companion;
     constructor(name: string)
     readonly parent: ModeValueGroup<ElytraFlyMode>;
+    getParent(): ModeValueGroup<ElytraFlyMode>;
     onTick(): void;
 }

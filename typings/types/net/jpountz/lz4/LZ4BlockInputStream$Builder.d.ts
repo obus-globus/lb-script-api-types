@@ -5,7 +5,7 @@ import type { LZ4BlockInputStream } from '../../../net/jpountz/lz4/LZ4BlockInput
 import type { LZ4FastDecompressor } from '../../../net/jpountz/lz4/LZ4FastDecompressor.d.ts'
 import type { LZ4SafeDecompressor } from '../../../net/jpountz/lz4/LZ4SafeDecompressor.d.ts'
 export class LZ4BlockInputStream$Builder extends Object {
-    constructor(arg0: any)
+    private constructor()
     // private checksum: Checksum;
     // private fastDecompressor: LZ4FastDecompressor;
     // private safeDecompressor: LZ4SafeDecompressor;

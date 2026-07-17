@@ -5,8 +5,6 @@ import type { ThreadLocal } from '../../../../../../java/lang/ThreadLocal.d.ts'
 import type { Predicate } from '../../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class InsightSourceFilter extends Object implements Predicate<Source> {
-    static isEqual<T extends unknown>(paramarg0: Object): (param0: T) => boolean;
-    static not<T extends unknown>(paramarg0: (param0: Object) => boolean): (param0: T) => boolean;
     constructor(insight: InsightInstrument, key: InsightInstrument$Key)
     // private insight: InsightInstrument;
     // private key: InsightInstrument$Key;

@@ -8,4 +8,5 @@ export class ModuleSuperKnockback$Packet extends Mode {
     static INSTANCE: ModuleSuperKnockback$Packet;
     // private attackHandler: EventHook<AttackEntityEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
 }

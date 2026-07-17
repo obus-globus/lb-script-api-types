@@ -3,7 +3,7 @@ import type { CyclicalTracker$CyclicalMode } from '../../../../ai/djl/training/t
 import type { CyclicalTracker$ScaleFunction } from '../../../../ai/djl/training/tracker/CyclicalTracker$ScaleFunction.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class CyclicalTracker$Builder extends Object {
-    constructor(arg0: any)
+    private constructor()
     // private baseValue: number;
     // private gamma: number;
     // private maxValue: number;

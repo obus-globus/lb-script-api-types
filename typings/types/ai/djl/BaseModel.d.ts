@@ -15,10 +15,6 @@ import type { Path } from '../../java/nio/file/Path.d.ts'
 import type { Function } from '../../java/util/function/Function.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export abstract class BaseModel extends Object implements Model {
-    static newInstance(paramarg0: string): Model;
-    static newInstance(paramarg0: string, paramarg1: Device): Model;
-    static newInstance(paramarg0: string, paramarg1: Device, paramarg2: string): Model;
-    static newInstance(paramarg0: string, paramarg1: string): Model;
     constructor(arg0: string)
     // private artifacts: { [key: string]: Object };
     block: Block;

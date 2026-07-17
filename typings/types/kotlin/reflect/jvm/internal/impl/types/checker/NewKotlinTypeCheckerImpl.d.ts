@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { DefaultConstructorMarker } from '../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { OverridingUtil } from '../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/OverridingUtil.d.ts'
 import type { KotlinType } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/KotlinType.d.ts'
 import type { TypeCheckerState } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeCheckerState.d.ts'
@@ -13,7 +12,6 @@ export class NewKotlinTypeCheckerImpl extends Object implements NewKotlinTypeChe
     static Companion: NewKotlinTypeChecker$Companion;
     static DEFAULT: KotlinTypeChecker;
     constructor(arg0: KotlinTypeRefiner, arg1: KotlinTypePreparator)
-    constructor(arg0: KotlinTypeRefiner, arg1: KotlinTypePreparator, arg2: number, arg3: DefaultConstructorMarker)
     readonly kotlinTypePreparator: KotlinTypePreparator;
     readonly kotlinTypeRefiner: KotlinTypeRefiner;
     readonly overridingUtil: OverridingUtil;

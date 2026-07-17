@@ -10,7 +10,7 @@ import type { ParameterStore } from '../../../../ai/djl/training/ParameterStore.
 import type { Pair } from '../../../../ai/djl/util/Pair.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class IdEmbedding extends AbstractBlock {
-    constructor(arg0: IdEmbedding$Builder, arg1: any)
+    private constructor(arg0: IdEmbedding$Builder)
     // private dictionarySize: number;
     // private embedding: Parameter;
     // private embeddingSize: number;

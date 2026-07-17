@@ -13,7 +13,6 @@ import type { GameEvent } from '../../../../../../net/minecraft/world/level/game
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class SetBlockProperties extends Record implements EnchantmentEntityEffect {
     static CODEC: MapCodec<SetBlockProperties>;
-    static bootstrap(paramregistry: MapCodec<EnchantmentEntityEffect>[]): MapCodec<EnchantmentEntityEffect>;
     constructor(properties: BlockItemStateProperties)
     constructor(properties: BlockItemStateProperties, offset: Vec3i, triggerGameEvent: Optional<Holder<GameEvent>>)
     // private offset: Vec3i;

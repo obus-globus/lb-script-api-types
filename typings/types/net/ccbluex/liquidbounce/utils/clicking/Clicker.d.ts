@@ -38,6 +38,7 @@ export class Clicker<T extends EventListener> extends ValueGroup implements Even
     /*not mapped: */ isClickTick(): boolean;
     readonly itemCooldown: ItemCooldown | null;
     readonly keyBinding: KeyMapping;
+    getParent(): T;
     // private /*not mapped: */ getPassesAttackCooldown(): boolean;
     // private pattern: Clicker$ClickPatterns;
     // private /*not mapped: */ getPattern(): Clicker$ClickPatterns;

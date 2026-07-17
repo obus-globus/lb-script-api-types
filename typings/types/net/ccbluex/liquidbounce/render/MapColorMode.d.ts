@@ -10,5 +10,6 @@ export class MapColorMode extends GenericColorMode<Pair<BlockPos, BlockState>> {
     constructor(parent: ModeValueGroup<any>, alpha: number)
     // private alpha: number;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     getColor(param: Pair<BlockPos, BlockState>): Color4b;
 }

@@ -1,3 +1,4 @@
+import type { Continuation } from '../../../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { ModeValueGroup } from '../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { GameTickEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts'
@@ -25,9 +26,11 @@ export class ModuleFastExp extends ClientModule {
     // private slotResetDelay: { start: number; endInclusive: number; step: number };
     // private /*not mapped: */ getSlotResetDelay(): { start: number; endInclusive: number; step: number };
     // private throwMode: ModeValueGroup<ModuleFastExp$ThrowMode>;
-    // private action(slot: HotbarItemSlot): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private action(slot: HotbarItemSlot, $completion: Continuation<void>): any;
     // private anyExpOrbMovingToPlayer(): boolean;
     // private getRequiredExperienceBottleCount(slot: HotbarItemSlot): number;
     onDisabled(): void;
-    // private waitForExperienceOrbs(): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private waitForExperienceOrbs($completion: Continuation<void>): any;
 }

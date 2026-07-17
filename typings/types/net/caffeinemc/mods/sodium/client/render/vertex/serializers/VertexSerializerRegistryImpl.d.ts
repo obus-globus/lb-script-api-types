@@ -5,7 +5,6 @@ import type { VertexSerializer } from '../../../../../../../../net/caffeinemc/mo
 import type { VertexSerializerRegistry } from '../../../../../../../../net/caffeinemc/mods/sodium/api/vertex/serializer/VertexSerializerRegistry.d.ts'
 export class VertexSerializerRegistryImpl extends Object implements VertexSerializerRegistry {
     static INSTANCE: VertexSerializerRegistry;
-    static instance(): VertexSerializerRegistry;
     constructor()
     // private cache: { [key: string]: any };
     // private lock: StampedLock;

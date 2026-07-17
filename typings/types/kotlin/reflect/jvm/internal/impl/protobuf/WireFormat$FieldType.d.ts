@@ -23,7 +23,7 @@ export class WireFormat$FieldType extends Enum<WireFormat$FieldType> {
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): WireFormat$FieldType;
     static values(): WireFormat$FieldType[];
-    constructor(arg2: WireFormat$JavaType, arg3: number, arg4: any)
+    private constructor(arg2: WireFormat$JavaType, arg3: number)
     readonly javaType: WireFormat$JavaType;
     readonly wireType: number;
     getJavaType(): WireFormat$JavaType;

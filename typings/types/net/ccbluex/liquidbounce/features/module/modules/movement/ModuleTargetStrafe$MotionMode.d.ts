@@ -10,4 +10,5 @@ export class ModuleTargetStrafe$MotionMode extends Mode {
     // private /*not mapped: */ getHypixel(): boolean;
     // private moveHandler: EventHook<PlayerMoveEvent>;
     readonly parent: ModeValueGroup<Mode>;
+    getParent(): ModeValueGroup<Mode>;
 }

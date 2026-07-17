@@ -3,7 +3,7 @@ import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Predicates$InstanceOfPredicate<T extends unknown> extends Object implements Predicate<T>, Serializable {
-    constructor(arg0: Class<Object>, arg1: any)
+    private constructor(clazz: Class<Object>)
     // private clazz: Class<Object>;
     apply(o: T): boolean;
     equals(obj: Object | null): boolean;

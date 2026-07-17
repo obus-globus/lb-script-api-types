@@ -18,7 +18,6 @@ export class EntityDataTypes1_9 extends Enum<EntityDataTypes1_9> implements Enti
     static STRING: EntityDataTypes1_9;
     static VAR_INT: EntityDataTypes1_9;
     static byId(paramarg0: number): EntityDataTypes1_9;
-    static create(paramarg0: number, paramarg1: Type<Object>): EntityDataType;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): EntityDataTypes1_9;
     static values(): EntityDataTypes1_9[];

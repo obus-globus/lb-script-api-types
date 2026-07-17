@@ -3,7 +3,7 @@ import type { AggregateFutureState$AtomicHelper } from '../../../../../com/googl
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 export class AggregateFutureState$SafeAtomicHelper extends AggregateFutureState$AtomicHelper {
-    constructor(arg0: any)
+    private constructor()
     atomicHelperTypeForTest(): string;
     compareAndSetSeenExceptions(state: AggregateFutureState<Object>, expect: Throwable[], update: Throwable[]): void;
     decrementAndGetRemainingCount(state: AggregateFutureState<Object>): number;

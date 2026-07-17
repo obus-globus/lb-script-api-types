@@ -7,7 +7,7 @@ import type { AbstractScript } from '../../../../../../../org/apache/logging/log
 export class Routes extends Object {
     static createRoutes(parampattern: string, ...paramroutes: Route[]): Routes;
     static newBuilder(): Routes$Builder;
-    constructor(arg0: Configuration, arg1: AbstractScript, arg2: string, arg3: Route[], arg4: any)
+    private constructor(configuration: Configuration, patternScript: AbstractScript, pattern: string, ...routes: Route[])
     // private configuration: Configuration;
     // private pattern: string;
     readonly patternScript: AbstractScript;

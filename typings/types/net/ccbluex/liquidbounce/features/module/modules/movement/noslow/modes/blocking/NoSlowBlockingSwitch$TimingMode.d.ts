@@ -8,8 +8,6 @@ export class NoSlowBlockingSwitch$TimingMode extends Enum<NoSlowBlockingSwitch$T
     static PRE_POST: NoSlowBlockingSwitch$TimingMode;
     static PRE_TICK: NoSlowBlockingSwitch$TimingMode;
     static getEntries(): NoSlowBlockingSwitch$TimingMode[];
-    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
-    static of(self: string): Tagged;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): NoSlowBlockingSwitch$TimingMode;
     static values(): NoSlowBlockingSwitch$TimingMode[];

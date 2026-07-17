@@ -2073,6 +2073,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.render.ClientUniformDefine": typeof import("../types/net/ccbluex/liquidbounce/render/ClientUniformDefine").ClientUniformDefine;
     "net.ccbluex.liquidbounce.render.ClientVertexFormats": typeof import("../types/net/ccbluex/liquidbounce/render/ClientVertexFormats").ClientVertexFormats;
     "net.ccbluex.liquidbounce.render.FontFace": typeof import("../types/net/ccbluex/liquidbounce/render/FontFace").FontFace;
+    "net.ccbluex.liquidbounce.render.FontManager": typeof import("../types/net/ccbluex/liquidbounce/render/FontManager").FontManager;
     "net.ccbluex.liquidbounce.render.GenericColorMode": typeof import("../types/net/ccbluex/liquidbounce/render/GenericColorMode").GenericColorMode;
     "net.ccbluex.liquidbounce.render.GenericDistanceHSBColorMode": typeof import("../types/net/ccbluex/liquidbounce/render/GenericDistanceHSBColorMode").GenericDistanceHSBColorMode;
     "net.ccbluex.liquidbounce.render.GenericDistanceHSBColorMode$Companion": typeof import("../types/net/ccbluex/liquidbounce/render/GenericDistanceHSBColorMode$Companion").GenericDistanceHSBColorMode$Companion;

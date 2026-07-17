@@ -11,12 +11,12 @@ import type { DisposableHandle } from '../../kotlinx/coroutines/DisposableHandle
 import type { ExecutorCoroutineDispatcher } from '../../kotlinx/coroutines/ExecutorCoroutineDispatcher.d.ts'
 export class ExecutorCoroutineDispatcherImpl extends ExecutorCoroutineDispatcher implements Delay {
     static Key: ContinuationInterceptor$Key;
-    static delay$suspendImpl(paramarg0: Delay, paramarg1: number, paramarg2: Continuation<Object>): Object;
     constructor(executor: Executor)
     readonly executor: Executor;
     // private cancelJobOnRejection(context: CoroutineContext, exception: RejectedExecutionException): void;
     close(): void;
-    delay(time: number): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    delay(time: number, $completion: Continuation<void>): any;
     dispatch(context: CoroutineContext, block: () => void): void;
     equals(other: Object | null): boolean;
     hashCode(): number;

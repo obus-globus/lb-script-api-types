@@ -5,7 +5,6 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class Enchantments extends Record implements Copyable {
     static TYPE1_20_5: Type<Enchantments>;
     static TYPE1_21_5: Type<Enchantments>;
-    static copy<T extends unknown>(paramarg0: T): T;
     constructor(arg0: { [key: string]: any })
     constructor(enchantments: { [key: string]: any }, showInTooltip: boolean)
     constructor(arg0: boolean)

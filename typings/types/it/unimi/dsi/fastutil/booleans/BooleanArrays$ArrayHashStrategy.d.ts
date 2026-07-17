@@ -2,7 +2,7 @@ import type { Hash$Strategy } from '../../../../../it/unimi/dsi/fastutil/Hash$St
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BooleanArrays$ArrayHashStrategy extends Object implements Hash$Strategy<boolean[]>, Serializable {
-    constructor(arg0: any)
+    private constructor()
     equals(other: Object | null): boolean;
     equals(arg0: boolean[], arg1: boolean[]): boolean;
     hashCode(): number;

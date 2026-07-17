@@ -1,4 +1,5 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { Continuation } from '../../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { ActivateCapeRequest } from '../../../../../../net/ccbluex/liquidbounce/authlib/mojangapi/model/ActivateCapeRequest.d.ts'
 import type { BlockList } from '../../../../../../net/ccbluex/liquidbounce/authlib/mojangapi/model/BlockList.d.ts'
 import type { ChangeSkinRequest } from '../../../../../../net/ccbluex/liquidbounce/authlib/mojangapi/model/ChangeSkinRequest.d.ts'
@@ -20,27 +21,50 @@ import type { MultipartBody$Part } from '../../../../../../okhttp3/MultipartBody
 import type { RequestBody } from '../../../../../../okhttp3/RequestBody.d.ts'
 import type { Response } from '../../../../../../retrofit2/Response.d.ts'
 export interface MinecraftServicesApi extends Object{
-    changeName(newName: string): PlayerProfile;
-    changeSkin(request: ChangeSkinRequest): PlayerProfile;
-    checkEntitlements(requestId: string): Response<EntitlementsResponse>;
-    checkGiftCode(): Response<void>;
-    checkNameAvailability(name: string): NameAvailability;
-    fetchAttributes(): PlayerAttributes;
-    fetchProfile(): PlayerProfile;
-    getBlockList(): BlockList;
-    getCertificates(): PlayerCertificates;
-    getFriends(etag: string | null): Response<FriendsList>;
-    getNameChangeInfo(): NameChangeInfo;
-    getPublicKeys(): PublicKeys;
-    hideCape(): PlayerProfile;
-    loginWithXbox(identityToken: { [key: string]: string }): MinecraftAuthResponse;
-    lookupNameByUuid(uuid: string): ProfileIdName;
-    lookupProfilesBulk(names: string[]): ProfileIdName[];
-    lookupUuidByName(username: string): ProfileIdName;
-    reportPresence(request: PresenceRequest): PresenceResponse;
-    resetSkin(): PlayerProfile;
-    showCape(request: ActivateCapeRequest): PlayerProfile;
-    updateAttributes(update: PlayerAttributesUpdate): PlayerAttributes;
-    updateFriend(request: FriendsUpdateRequest): Response<FriendsList>;
-    uploadSkin(variant: RequestBody, file: MultipartBody$Part): PlayerProfile;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    changeName(newName: string, $completion: Continuation<PlayerProfile>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    changeSkin(request: ChangeSkinRequest, $completion: Continuation<PlayerProfile>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    checkEntitlements(requestId: string, $completion: Continuation<Response<EntitlementsResponse>>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    checkGiftCode($completion: Continuation<Response<void>>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    checkNameAvailability(name: string, $completion: Continuation<NameAvailability>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    fetchAttributes($completion: Continuation<PlayerAttributes>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    fetchProfile($completion: Continuation<PlayerProfile>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    getBlockList($completion: Continuation<BlockList>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    getCertificates($completion: Continuation<PlayerCertificates>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    getFriends(etag: string | null, $completion: Continuation<Response<FriendsList>>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    getNameChangeInfo($completion: Continuation<NameChangeInfo>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    getPublicKeys($completion: Continuation<PublicKeys>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    hideCape($completion: Continuation<PlayerProfile>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    loginWithXbox(identityToken: { [key: string]: string }, $completion: Continuation<MinecraftAuthResponse>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    lookupNameByUuid(uuid: string, $completion: Continuation<ProfileIdName>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    lookupProfilesBulk(names: string[], $completion: Continuation<ProfileIdName[]>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    lookupUuidByName(username: string, $completion: Continuation<ProfileIdName>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    reportPresence(request: PresenceRequest, $completion: Continuation<PresenceResponse>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    resetSkin($completion: Continuation<PlayerProfile>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    showCape(request: ActivateCapeRequest, $completion: Continuation<PlayerProfile>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    updateAttributes(update: PlayerAttributesUpdate, $completion: Continuation<PlayerAttributes>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    updateFriend(request: FriendsUpdateRequest, $completion: Continuation<Response<FriendsList>>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    uploadSkin(variant: RequestBody, file: MultipartBody$Part, $completion: Continuation<PlayerProfile>): any;
 }

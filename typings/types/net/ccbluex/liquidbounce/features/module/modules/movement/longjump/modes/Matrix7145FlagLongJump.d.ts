@@ -24,6 +24,7 @@ export class Matrix7145FlagLongJump extends Mode {
     // private /*not mapped: */ getMotionY(): number;
     // private packetHandler: EventHook<PacketEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     // private tickHandler: EventHook<GameTickEvent>;
     disable(): void;
 }

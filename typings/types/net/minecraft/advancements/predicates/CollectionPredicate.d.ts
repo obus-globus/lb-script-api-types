@@ -8,8 +8,6 @@ import type { CollectionCountsPredicate } from '../../../../net/minecraft/advanc
 import type { MinMaxBounds$Ints } from '../../../../net/minecraft/advancements/predicates/MinMaxBounds$Ints.d.ts'
 export class CollectionPredicate<T extends unknown, P extends Predicate<T>> extends Record implements Predicate<T[]> {
     static codec<T extends unknown, P extends Predicate<T>>(paramelementCodec: Codec<P>): Codec<CollectionPredicate<T, P>>;
-    static isEqual<T extends unknown>(paramarg0: Object): (param0: T) => boolean;
-    static not<T extends unknown>(paramarg0: (param0: Object) => boolean): (param0: T) => boolean;
     constructor(contains: Optional<CollectionContentsPredicate<T, P>>, counts: Optional<CollectionCountsPredicate<T, P>>, size: Optional<MinMaxBounds$Ints>)
     // private contains: Optional<CollectionContentsPredicate<T, P>>;
     // private counts: Optional<CollectionCountsPredicate<T, P>>;

@@ -2,7 +2,7 @@ import type { Consumer } from '../../../../../../java/util/function/Consumer.d.t
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../../../java/util/Iterator.d.ts'
 export class RopeByteString$PieceIterator extends Object implements Iterator<(Object | null)[]> {
-    constructor(arg0: number[], arg1: any)
+    private constructor(arg0: number[])
     // private breadCrumbs: (Object | null)[][];
     // private next: (Object | null)[];
     forEachRemaining(arg0: (param0: (Object | null)[]) => void): void;

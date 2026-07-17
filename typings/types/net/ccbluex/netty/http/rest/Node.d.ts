@@ -3,6 +3,7 @@ import type { HttpMethod } from '../../../../../io/netty/handler/codec/http/Http
 import type { File } from '../../../../../java/io/File.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Continuation } from '../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { ApplicationCall } from '../../../../../net/ccbluex/netty/http/application/ApplicationCall.d.ts'
 import type { RequestHandler } from '../../../../../net/ccbluex/netty/http/model/RequestHandler.d.ts'
 import type { RoutingContext } from '../../../../../net/ccbluex/netty/http/routing/RoutingContext.d.ts'
@@ -27,7 +28,8 @@ export class Node extends Object {
     get(path: string, handler: (param0: RoutingContext) => void): Node;
     get(handler: RequestHandler): Node;
     get(handler: (param0: RoutingContext) => void): Node;
-    handle(call: ApplicationCall): FullHttpResponse;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    handle(call: ApplicationCall, $completion: Continuation<FullHttpResponse>): any;
     head(path: string, handler: RequestHandler): Node;
     head(path: string, handler: (param0: RoutingContext) => void): Node;
     head(handler: RequestHandler): Node;

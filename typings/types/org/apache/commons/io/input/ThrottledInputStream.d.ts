@@ -5,7 +5,7 @@ import type { ThrottledInputStream$Builder } from '../../../../../org/apache/com
 export class ThrottledInputStream extends CountingInputStream {
     static builder(): ThrottledInputStream$Builder;
     static nullInputStream(): InputStream;
-    constructor(arg0: ThrottledInputStream$Builder, arg1: any)
+    private constructor(arg0: ThrottledInputStream$Builder)
     // private maxBytesPerSecond: number;
     // private startTime: number;
     // private totalSleepDuration: Duration;

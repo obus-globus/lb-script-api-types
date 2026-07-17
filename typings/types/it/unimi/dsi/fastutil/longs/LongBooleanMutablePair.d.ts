@@ -1,11 +1,8 @@
 import type { LongBooleanPair } from '../../../../../it/unimi/dsi/fastutil/longs/LongBooleanPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
-import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class LongBooleanMutablePair extends Object implements LongBooleanPair, Serializable {
-    static lexComparator(): (param0: LongBooleanPair, param1: LongBooleanPair) => number;
     static of(paramarg0: number, paramarg1: boolean): LongBooleanMutablePair;
-    static of(paramarg0: number, paramarg1: boolean): LongBooleanPair;
     constructor(arg0: number, arg1: boolean)
     // private left: number;
     // private right: boolean;

@@ -8,10 +8,7 @@ import type { BatchableSubmit } from '../../../../../net/minecraft/client/render
 import type { TranslucentSubmit } from '../../../../../net/minecraft/client/renderer/feature/submit/TranslucentSubmit.d.ts'
 import type { RenderType } from '../../../../../net/minecraft/client/renderer/rendertype/RenderType.d.ts'
 import type { TextureAtlasSprite } from '../../../../../net/minecraft/client/renderer/texture/TextureAtlasSprite.d.ts'
-import type { Matrix4fc } from '../../../../../org/joml/Matrix4fc.d.ts'
 export class ModelFeatureRenderer$Submit<S extends unknown> extends Record implements ModelStorage, BatchableSubmit, TranslucentSubmit {
-    static computeDistanceToCameraSq(parampose: Matrix4fc): number;
-    static computeDistanceToCameraSq(parampose: Matrix4fc, paramoriginX: number, paramoriginY: number, paramoriginZ: number): number;
     constructor(renderType: RenderType, pose: PoseStack$Pose, model: Model<S>, state: S, lightCoords: number, overlayCoords: number, tintedColor: number, sprite: TextureAtlasSprite, sheetedDecalPose: PoseStack$Pose)
     // private beId: number;
     // private entityId: number;

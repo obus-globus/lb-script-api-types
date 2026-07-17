@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { DefaultConstructorMarker } from '../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { ClassDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
 import type { ModuleDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ModuleDescriptor.d.ts'
 import type { NotFoundClasses } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/NotFoundClasses.d.ts'
@@ -33,7 +32,6 @@ import type { StorageManager } from '../../../../../../../kotlin/reflect/jvm/int
 import type { TypeAttributeTranslator } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeAttributeTranslator.d.ts'
 import type { NewKotlinTypeChecker } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/checker/NewKotlinTypeChecker.d.ts'
 export class DeserializationComponents extends Object {
-    constructor(arg0: StorageManager, arg1: ModuleDescriptor, arg2: DeserializationConfiguration, arg3: ClassDataFinder, arg4: AnnotationAndConstantLoader<Object, Object>, arg5: PackageFragmentProvider, arg6: LocalClassifierTypeSettings, arg7: ErrorReporter, arg8: LookupTracker, arg9: FlexibleTypeDeserializer, arg10: (Object | null)[], arg11: NotFoundClasses, arg12: ContractDeserializer, arg13: AdditionalClassPartsProvider, arg14: PlatformDependentDeclarationFilter, arg15: ExtensionRegistryLite, arg16: NewKotlinTypeChecker, arg17: SamConversionResolver, arg18: (Object | null)[], arg19: EnumEntriesDeserializationSupport, arg20: number, arg21: DefaultConstructorMarker)
     constructor(arg0: StorageManager, arg1: ModuleDescriptor, arg2: DeserializationConfiguration, arg3: ClassDataFinder, arg4: AnnotationAndConstantLoader<AnnotationDescriptor, ConstantValue<Object>>, arg5: PackageFragmentProvider, arg6: LocalClassifierTypeSettings, arg7: ErrorReporter, arg8: LookupTracker, arg9: FlexibleTypeDeserializer, arg10: ClassDescriptorFactory[], arg11: NotFoundClasses, arg12: ContractDeserializer, arg13: AdditionalClassPartsProvider, arg14: PlatformDependentDeclarationFilter, arg15: ExtensionRegistryLite, arg16: NewKotlinTypeChecker, arg17: SamConversionResolver, arg18: TypeAttributeTranslator[], arg19: EnumEntriesDeserializationSupport)
     readonly additionalClassPartsProvider: AdditionalClassPartsProvider;
     readonly annotationAndConstantLoader: AnnotationAndConstantLoader<AnnotationDescriptor, ConstantValue<Object>>;

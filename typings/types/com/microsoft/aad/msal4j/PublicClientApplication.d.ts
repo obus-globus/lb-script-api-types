@@ -15,7 +15,7 @@ import type { CompletableFuture } from '../../../../java/util/concurrent/Complet
 export class PublicClientApplication extends AbstractClientApplicationBase implements IPublicClientApplication {
     static DEFAULT_AUTHORITY: string;
     static builder(paramarg0: string): PublicClientApplication$Builder;
-    constructor(arg0: PublicClientApplication$Builder, arg1: any)
+    private constructor(arg0: PublicClientApplication$Builder)
     // private broker: IBroker;
     // private brokerEnabled: boolean;
     acquireToken(arg0: AuthorizationCodeParameters): CompletableFuture<IAuthenticationResult>;

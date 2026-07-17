@@ -28,6 +28,7 @@ export class NoCheatPlusBow extends Mode {
     // private keyBindIsPressedHandler: EventHook<KeybindIsPressedEvent>;
     readonly movementInputHandler: EventHook<MovementInputEvent>;
     readonly parent: ModeValueGroup<any>;
+    getParent(): ModeValueGroup<any>;
     readonly rotations: RotationsValueGroup;
     // private shotArrows: number;
     readonly speed: number;

@@ -84,14 +84,9 @@ export class WeatheringCopperChestBlock extends CopperChestBlock implements Weat
     static getContainer(paramblock: ChestBlock, paramstate: BlockState, paramlevel: Level, parampos: BlockPos, paramignoreBeingBlocked: boolean): ItemStack[];
     static getDrops(paramstate: BlockState, paramlevel: ServerLevel, parampos: BlockPos, paramblockEntity: BlockEntity): ItemStack[];
     static getDrops(paramstate: BlockState, paramlevel: ServerLevel, parampos: BlockPos, paramblockEntity: BlockEntity, parambreaker: Entity, paramtool: ItemInstance): ItemStack[];
-    static getFirst(paramblock: Block): Block;
-    static getFirst(paramstate: BlockState): BlockState;
     static getFromCopperBlock(paramcopperBlock: Block, paramfacing: Direction, paramlevel: Level, parampos: BlockPos): BlockState;
     static getHingeSound(paramstate: WeatheringCopper$WeatherState, paramopen: boolean): SoundEvent;
     static getId(paramblockState: BlockState): number;
-    static getNext(paramblock: Block): Optional<Block>;
-    static getPrevious(paramblock: Block): Optional<Block>;
-    static getPrevious(paramstate: BlockState): Optional<BlockState>;
     static isChestBlockedAt(paramlevel: LevelAccessor, parampos: BlockPos): boolean;
     static isExceptionForConnection(paramstate: BlockState): boolean;
     static isFaceFull(paramshape: VoxelShape, paramdirection: Direction): boolean;
