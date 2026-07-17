@@ -103,7 +103,7 @@ W3 = deeper design, W4 = infra.
   (`Tweak.class` -> TS2339, cascades into `ArrayReflect.newInstance`). Add
   `readonly class: Class<T>` to `JavaClassBinding<T>` (ambient.d.ts:101) and
   the registry handle type. _Layer: ambient/augmentation._
-- **[~] A11 - assorted missing surface.** Fixed 2026-07-16: authors string|string[], require/console, localStorage extra members, completableFutureToPromise. DEFERRED: @JvmOverloads instance overloads (generator, see A17/wave3); ThemeManager.getTheme resolved -> not dropped, it's the A15 property/getter dual-surface (`.theme` works).
+- **[x] A11 - assorted missing surface.** (@JvmOverloads instance+ctor overloads fixed 2026-07-18, gen@3fd3075: optional trailing params.) Fixed 2026-07-16: authors string|string[], require/console, localStorage extra members, completableFutureToPromise. DEFERRED: @JvmOverloads instance overloads (generator, see A17/wave3); ThemeManager.getTheme resolved -> not dropped, it's the A15 property/getter dual-surface (`.theme` works).
   `AsyncUtil.completableFutureToPromise` (`@JvmName`'d extension on the
   declaring class is dropped; present in runtime-bindings.json:1184);
   `@JvmOverloads` synthetic overloads dropped on instance methods
@@ -167,7 +167,7 @@ W3 = deeper design, W4 = infra.
   fix-binding-types.py injects an idempotent A16 note above the ambient
   `export const` list, and both READMEs document the TS2451 trap + the
   escape hatches (use the global / rename / `export {}`).
-- **[~] A17 - misc emission nits.** Partially fixed 2026-07-16 (wave 3).
+- **[x] A17 - misc emission nits.** wave 3 (static generics/enum valueOf/UnaryOperator) + 2026-07-18 gen@3fd3075 (N1 color getter dual, N2 suspend Continuation, N3 interface-statics unmerged, N4 synthetic-ctor filter + dangling-ref fixes).
   **Done:** static-generics dead code replaced with REAL method-level
   generics on the Java-reflect path (`make<T>(param: Class<T>): T` via a
   SyntheticKType / JavaTypeVariableParameter bridge - kotlin-reflect's
