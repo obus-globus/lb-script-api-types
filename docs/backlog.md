@@ -179,25 +179,25 @@ W3 = deeper design, W4 = infra.
 
 ### Wave 4 - infra / docs
 
-- **[ ] A18 - canary blind spot.** `package-canary.sh` compiles only
+- **[x] A18 - canary blind spot.** Fixed 2026-07-17 (wave 4): package-canary.sh pass 2 compiles ambient-full -> registry-full (~62k .d.ts, ~3.8GB heap-capped). `package-canary.sh` compiles only
   `ambient` + `registry-lb`; `ambient-full.d.ts` is compiled by NOTHING
   (not even parsed - its two `/// <reference>` paths are unchecked);
   `registry-full` is syntax/import-checked but never type-checked as a
   consumer entry. Add a second canary pass. _Layer: tools._
-- **[ ] A19 - check-drift.sh not wired into CI** (no callers anywhere) and
+- **[x] A19 - check-drift.sh wired into CI** 2026-07-17 (wave 4): non-blocking informational step in check-regen.yml (SKIPs on fresh clone; script-runner gitignored). (no callers anywhere) and
   `tools/script-runner/` is gitignored so fresh clones silently pass. Add as
   informational check-regen step. _Layer: CI._
-- **[ ] A20 - check-regen never stages `docs/notes/`** so
+- **[x] A20 - check-regen now stages `docs/notes/`** 2026-07-17 (wave 4): added to both staging lists + regen-types.yml PR; kept out of the release change-detector. so
   events-doc-report.md rots on main between local regens (the `git add`
   lists in check-regen.yml omit it). _Layer: CI._
-- **[ ] A21 - stale divergent copies** of `ts-defgen.js` / `post-patches.sh` /
+- **[x] A21 - stale divergent copies retired** 2026-07-17 (wave 4, generator@035ebe4): dead post-patches.sh deleted, SUPERSEDED banners on ts-defgen.js/apply-enhancements.sh/regen-enhanced.yml/ENHANCEMENTS.md. of `ts-defgen.js` / `post-patches.sh` /
   `apply-enhancements.sh` inside the generator submodule (ScriptHelper-era;
   its P-1 regex predates T-1 and partially applies). Delete or mark
   superseded; also `generator/ENHANCEMENTS.md` I-01/I-02 describe the
   retired mod/ScriptHelper flow as current. _Layer: generator repo._
-- **[ ] A22 - `__smoke/run*.mjs` are broken relics** (resolve TypeScript from
+- **[x] A22 - `__smoke/run*.mjs` deleted** 2026-07-17 (wave 4): 8 dead runners removed (zero refs; real gate is tools/typecheck.mjs). (resolve TypeScript from
   pre-split monorepo paths); delete or repoint. _Layer: tools._
-- **[ ] A23 - README says collections expose the Java surface**
+- **[x] A23 - README collections claim fixed** 2026-07-17 (wave 4): typings/README now says JS arrays (players[0]/.length/for-of); root README had no such claim.
   (`list.get(0)`, `list.size()`) but the generator emits JS arrays - the
   actual (nicer) behavior is `players[0]`, `.length`, `for..of`. Fix the
   paragraph. _Layer: docs._

@@ -78,9 +78,10 @@ untyped), chosen by the class's origin:
   not typed - it would add a redundant alias for every Kotlin property
   tree-wide for a legacy calling convention.
 
-Java collections and arrays likewise
-support JS indexing at runtime (`list[0]`, `list.length`, `for (const x of list)`)
-while the types expose the Java surface (`list.get(0)`, `list.size()`).
+Java collections and arrays are typed as plain JS arrays (e.g.
+`ClientLevel.players()` returns `AbstractClientPlayer[]`), matching how you use
+them in scripts: `players[0]`, `players.length`, `for (const p of players)`.
+The Java surface (`.get(0)`, `.size()`) is not typed - use the array form.
 
 **Don't shadow the ambient globals.** Every binding above (and the Yarn-era
 aliases `Vec3d`, `MathHelper`, `Hand`, `RotationAxis`) is already a global. A

@@ -118,11 +118,13 @@ jobs:
             Automated regeneration via the headless LiquidBounce introspection flow
             (`run-regen.sh`). Review the diff before merging.
           # Keep in sync with check-regen.yml's staging list: the regen also
-          # rewrites README badges and kdoc-extractor manifests; capturing only
-          # typings/ would merge a PR whose badges/manifests lag the types.
+          # rewrites README badges, kdoc-extractor manifests and the derived
+          # docs/notes/events-doc-report.md; capturing only typings/ would
+          # merge a PR whose badges/manifests/report lag the types.
           add-paths: |
             typings/
             README.md
             tools/regen-types.sh
             tools/kdoc-extractor/
+            docs/notes/
           delete-branch: false

@@ -220,6 +220,31 @@ jobs:
             echo "sanity=fail" >> "$GITHUB_OUTPUT"
           fi
 
+      # Upstream drift check for the headless runner's source-adapted bindings
+      # (HeadlessContext/HeadlessScript vs upstream at their pinned SHA).
+      # INFORMATIONAL ONLY - unlike the gates above it records no output, the
+      # decision step never reads it, and it must NOT block auto-release.
+      # Caveat: tools/script-runner/ is gitignored ("provided separately"), so
+      # on a fresh CI clone the script SKIPs (exit 0) - a green step here is
+      # NOT evidence of "no drift"; the authoritative signal is a local run
+      # where the runner sources exist. Kept in CI anyway so environments that
+      # do have the runner (e.g. a self-hosted runner) surface drift in the
+      # run summary.
+      - name: Drift check (headless runner bindings, informational)
+        if: steps.branch.outputs.exists == 'false'
+        continue-on-error: true
+        run: |
+          rc=0
+          OUT="$(tools/check-drift.sh 2>&1)" || rc=$?
+          echo "$OUT"
+          {
+            echo "### Headless-runner drift check (informational, non-blocking)"
+            echo '```'
+            echo "$OUT"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          exit "$rc"
+
       # Generator unit/regression tests (Kotest) - guards the generator-root
       # fixes (ctor visibility incl. the TS2675 null-visibility case, overload
       # dedup, type-param substitution) from silently regressing. Run inside the
@@ -252,6 +277,12 @@ jobs:
 
       # 5. Decide: a clean regen (gate+canary+sanity pass, MC unchanged, real
       #    changes) on an enabled repo auto-ships; anything else -> review branch.
+      #    docs/notes/ (the derived events-doc-report.md) is deliberately absent
+      #    from the change-detector below: it's a report derived from typings/,
+      #    so a report-only refresh is noise, not a releasable change, and must
+      #    not trigger a release or review branch on its own. It IS in both
+      #    staging lists (6a/6b), so the committed report stays fresh whenever
+      #    real changes ship.
       - name: Decide auto-release vs review
         id: decide
         if: steps.branch.outputs.exists == 'false'
@@ -313,7 +344,10 @@ jobs:
           # scriptBuild is the next free build for this LB patch derived from the
           # npm registry. No `npm version patch` here - that would double-bump.
           VER="$(node -p "require('./typings/package.json').version")"
-          git add typings README.md tools/regen-types.sh tools/kdoc-extractor
+          # docs/notes: the regen refreshes the derived events-doc-report.md -
+          # stage it so it doesn't rot on main (it's NOT in the change-detector
+          # above; see the comment on the decide step).
+          git add typings README.md tools/regen-types.sh tools/kdoc-extractor docs/notes
           git commit -m "regen+release: v$VER - LiquidBounce $LB_VER (mc $LB_MC, $LB_SHORT)
 
           Automated clean regen against ccbluex/liquidbounce@$LB_SHA
@@ -359,8 +393,9 @@ jobs:
           git checkout -b "$LB_BRANCH"
           # Stage only the intended outputs (NOT `git add -A`: root-owned mounts
           # gradle-cache/ and tools/regen/.module-cache/ must not be committed);
-          # `.github` (synced above) is added so the branch matches remote main.
-          git add typings README.md tools/regen-types.sh tools/kdoc-extractor .github
+          # `.github` (synced above) is added so the branch matches remote main;
+          # docs/notes carries the regen-refreshed events-doc-report.md.
+          git add typings README.md tools/regen-types.sh tools/kdoc-extractor docs/notes .github
           git commit -m "regen: LiquidBounce $LB_VER (mc $LB_MC, $LB_SHORT)
 
           Automated regen against ccbluex/liquidbounce@$LB_SHA.
