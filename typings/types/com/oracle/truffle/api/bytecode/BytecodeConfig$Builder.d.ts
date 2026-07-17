@@ -7,8 +7,10 @@ export class BytecodeConfig$Builder extends Object {
     constructor(encoder: BytecodeConfigEncoder)
     // private encoder: BytecodeConfigEncoder;
     // private encoding: number;
+    addInstructionTracing(): BytecodeConfig$Builder;
     addInstrumentation(instrumentation: Class<Object>): BytecodeConfig$Builder;
     addSource(): BytecodeConfig$Builder;
+    addSourceContent(): BytecodeConfig$Builder;
     addTag(tag: Class<Tag>): BytecodeConfig$Builder;
     build(): BytecodeConfig;
 }

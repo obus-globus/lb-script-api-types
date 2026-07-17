@@ -4,8 +4,8 @@ import type { DifferenceZonedDateTimeNode } from '../../../../../../com/oracle/t
 import type { DifferenceZonedDateTimeWithRoundingNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/DifferenceZonedDateTimeWithRoundingNode.d.ts'
 import type { RoundRelativeDurationNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/RoundRelativeDurationNode.d.ts'
 import type { BigInt } from '../../../../../../com/oracle/truffle/js/runtime/BigInt.d.ts'
+import type { JSTemporalDurationRecord } from '../../../../../../com/oracle/truffle/js/runtime/builtins/temporal/JSTemporalDurationRecord.d.ts'
 import type { JSTemporalPlainDateTimeObject } from '../../../../../../com/oracle/truffle/js/runtime/builtins/temporal/JSTemporalPlainDateTimeObject.d.ts'
-import type { TemporalDurationWithTotalRecord } from '../../../../../../com/oracle/truffle/js/runtime/builtins/temporal/TemporalDurationWithTotalRecord.d.ts'
 import type { TemporalUtil$RoundingMode } from '../../../../../../com/oracle/truffle/js/runtime/util/TemporalUtil$RoundingMode.d.ts'
 import type { TemporalUtil$Unit } from '../../../../../../com/oracle/truffle/js/runtime/util/TemporalUtil$Unit.d.ts'
 export class DifferenceZonedDateTimeWithRoundingNodeGen extends DifferenceZonedDateTimeWithRoundingNode {
@@ -15,6 +15,6 @@ export class DifferenceZonedDateTimeWithRoundingNodeGen extends DifferenceZonedD
     // private differenceZonedDateTime_: DifferenceZonedDateTimeNode;
     // private roundRelativeDuration_: RoundRelativeDurationNode;
     // private state_0_: number;
-    execute(arg0Value: BigInt, arg1Value: BigInt, arg2Value: TruffleString, arg3Value: TruffleString, arg4Value: JSTemporalPlainDateTimeObject, arg5Value: TemporalUtil$Unit, arg6Value: number, arg7Value: TemporalUtil$Unit, arg8Value: TemporalUtil$RoundingMode): TemporalDurationWithTotalRecord;
-    // private executeAndSpecialize(arg0Value: BigInt, arg1Value: BigInt, arg2Value: TruffleString, arg3Value: TruffleString, arg4Value: JSTemporalPlainDateTimeObject, arg5Value: TemporalUtil$Unit, arg6Value: number, arg7Value: TemporalUtil$Unit, arg8Value: TemporalUtil$RoundingMode): TemporalDurationWithTotalRecord;
+    execute(arg0Value: BigInt, arg1Value: BigInt, arg2Value: TruffleString, arg3Value: TruffleString, arg4Value: JSTemporalPlainDateTimeObject, arg5Value: TemporalUtil$Unit, arg6Value: number, arg7Value: TemporalUtil$Unit, arg8Value: TemporalUtil$RoundingMode): JSTemporalDurationRecord;
+    // private executeAndSpecialize(arg0Value: BigInt, arg1Value: BigInt, arg2Value: TruffleString, arg3Value: TruffleString, arg4Value: JSTemporalPlainDateTimeObject, arg5Value: TemporalUtil$Unit, arg6Value: number, arg7Value: TemporalUtil$Unit, arg8Value: TemporalUtil$RoundingMode): JSTemporalDurationRecord;
 }

@@ -18,6 +18,5 @@ export interface ProcessPropertiesSupport extends Object{
     getProcessID(process: Process): number;
     isAlive(processID: number): boolean;
     setArgumentVectorProgramName(name: string): boolean;
-    setLocale(category: string, locale: string): string;
     waitForProcessExit(processID: number): number;
 }

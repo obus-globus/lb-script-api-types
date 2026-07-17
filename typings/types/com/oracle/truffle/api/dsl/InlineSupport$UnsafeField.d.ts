@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { NullPointerException } from '../../../../../java/lang/NullPointerException.d.ts'
 import type { RuntimeException } from '../../../../../java/lang/RuntimeException.d.ts'
 import type { MethodHandles$Lookup } from '../../../../../java/lang/invoke/MethodHandles$Lookup.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -10,6 +9,7 @@ export abstract class InlineSupport$UnsafeField extends Object {
     // private name: string;
     // private offset: number;
     // private receiverClass: Class<Object>;
+    castReceiver(node: Object): Object;
     compareAndSetObject(node: Object, expect: Object, update: Object, valueClass: Class<Object>): boolean;
     getBoolean(node: Object): boolean;
     getByte(node: Object): number;
@@ -22,10 +22,6 @@ export abstract class InlineSupport$UnsafeField extends Object {
     getObjectVolatile(node: Object): Object;
     getShort(node: Object): number;
     // private invalidReceiver(inlineTarget: Object): RuntimeException;
-    // private nullError(node: Object): RuntimeException;
-    // private nullReceiver(node: Object): NullPointerException;
-    resolveReceiver(node: Object): Object;
-    // private resolveReceiverSlow(node: Object): Object;
     setBoolean(node: Object, v: boolean): void;
     setByte(node: Object, v: number): void;
     setChar(node: Object, v: string): void;
@@ -35,5 +31,4 @@ export abstract class InlineSupport$UnsafeField extends Object {
     setLong(node: Object, v: number): void;
     setObject(node: Object, v: Object, valueClass: Class<Object>): void;
     setShort(node: Object, v: number): void;
-    // private validateForParentLookup(inlineTarget: Object, parent: Object): boolean;
 }

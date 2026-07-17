@@ -4,6 +4,7 @@ import type { TruffleObject } from '../../../../../../com/oracle/truffle/api/int
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { TruffleString } from '../../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
 import type { TruffleString$SwitchEncodingNode } from '../../../../../../com/oracle/truffle/api/strings/TruffleString$SwitchEncodingNode.d.ts'
+import type { TruffleString$ToJavaStringNode } from '../../../../../../com/oracle/truffle/api/strings/TruffleString$ToJavaStringNode.d.ts'
 import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { JSBuiltin } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
@@ -25,7 +26,7 @@ export abstract class PolyglotInternalBuiltins$PolyglotReadNode extends JSBuilti
     constructor(context: JSContext, builtin: JSBuiltin)
     arrayElement(obj: TruffleObject, index: Number, foreignConvert: ImportValueNode, interop: InteropLibrary): Object;
     arrayElementInt(obj: TruffleObject, index: number, foreignConvert: ImportValueNode, interop: InteropLibrary): Object;
-    member(obj: TruffleObject, name: TruffleString, foreignConvert: ImportValueNode, interop: InteropLibrary): Object;
+    member(obj: TruffleObject, name: TruffleString, foreignConvert: ImportValueNode, interop: InteropLibrary, toJavaString: TruffleString$ToJavaStringNode): Object;
     unsupported(obj: Object, name: Object): boolean;
-    unsupportedKey(obj: TruffleObject, key: Object, foreignConvert: ImportValueNode, interop: InteropLibrary, keyInterop: InteropLibrary, switchEncoding: TruffleString$SwitchEncodingNode): Object;
+    unsupportedKey(obj: TruffleObject, key: Object, foreignConvert: ImportValueNode, interop: InteropLibrary, keyInterop: InteropLibrary, switchEncoding: TruffleString$SwitchEncodingNode, toJavaString: TruffleString$ToJavaStringNode): Object;
 }

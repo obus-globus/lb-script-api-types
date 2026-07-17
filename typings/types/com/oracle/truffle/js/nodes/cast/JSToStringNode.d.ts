@@ -1,5 +1,6 @@
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { TruffleString } from '../../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
+import type { TruffleString$FromJavaStringNode } from '../../../../../../com/oracle/truffle/api/strings/TruffleString$FromJavaStringNode.d.ts'
 import type { JavaScriptBaseNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptBaseNode.d.ts'
 import type { JSDoubleToStringNode } from '../../../../../../com/oracle/truffle/js/nodes/cast/JSDoubleToStringNode.d.ts'
 import type { JSToPrimitiveNode } from '../../../../../../com/oracle/truffle/js/nodes/cast/JSToPrimitiveNode.d.ts'
@@ -17,7 +18,7 @@ export abstract class JSToStringNode extends JavaScriptBaseNode {
     constructor(undefinedToEmpty: boolean, symbolToString: boolean)
     // private symbolToString: boolean;
     // private undefinedToEmpty: boolean;
-    doBigInt(value: BigInt): TruffleString;
+    doBigInt(value: BigInt, fromJavaString: TruffleString$FromJavaStringNode): TruffleString;
     doBoolean(value: boolean): TruffleString;
     doDouble(d: number, doubleToStringNode: JSDoubleToStringNode): TruffleString;
     doInteger(value: number, doubleToStringNode: JSDoubleToStringNode): TruffleString;

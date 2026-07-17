@@ -7,7 +7,7 @@ export class MCEFProgressForwarder extends Object implements MCEFProgressListene
     /**
      * If everything is complete
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/MCEFProgressForwarder.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/MCEFProgressForwarder.kt:39}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/MCEFProgressForwarder.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/MCEFProgressForwarder.kt:39}
      */
     onComplete(): void;
     /**
@@ -15,7 +15,7 @@ export class MCEFProgressForwarder extends Object implements MCEFProgressListene
      *
      * @param taskName Task name
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/MCEFProgressForwarder.kt#L65 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/MCEFProgressForwarder.kt:65}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/MCEFProgressForwarder.kt#L65 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/MCEFProgressForwarder.kt:65}
      */
     onFileEnd(taskName: string): void;
     /**
@@ -26,7 +26,7 @@ export class MCEFProgressForwarder extends Object implements MCEFProgressListene
      * @param contentLength Total bytes
      * @param done Is download or extraction done
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/MCEFProgressForwarder.kt#L57 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/MCEFProgressForwarder.kt:57}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/MCEFProgressForwarder.kt#L57 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/MCEFProgressForwarder.kt:57}
      */
     onFileProgress(taskName: string, bytesRead: number, contentLength: number, done: boolean): void;
     /**
@@ -34,7 +34,7 @@ export class MCEFProgressForwarder extends Object implements MCEFProgressListene
      *
      * @param taskName Task name
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/MCEFProgressForwarder.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/MCEFProgressForwarder.kt:46}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/MCEFProgressForwarder.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/MCEFProgressForwarder.kt:46}
      */
     onFileStart(taskName: string): void;
     /**
@@ -43,7 +43,7 @@ export class MCEFProgressForwarder extends Object implements MCEFProgressListene
      * @param task Task name
      * @param progress Progress
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/MCEFProgressForwarder.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/MCEFProgressForwarder.kt:33}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/MCEFProgressForwarder.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/MCEFProgressForwarder.kt:33}
      */
     onProgressUpdate(task: string, progress: number): void;
 }

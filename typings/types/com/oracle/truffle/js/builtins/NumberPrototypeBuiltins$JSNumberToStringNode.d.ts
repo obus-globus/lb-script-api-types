@@ -1,7 +1,8 @@
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
-import type { InteropLibrary } from '../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { InlinedBranchProfile } from '../../../../../com/oracle/truffle/api/profiles/InlinedBranchProfile.d.ts'
+import type { TruffleString$FromLongNode } from '../../../../../com/oracle/truffle/api/strings/TruffleString$FromLongNode.d.ts'
+import type { NumberPrototypeBuiltins$ForeignGetDoubleValueNode } from '../../../../../com/oracle/truffle/js/builtins/NumberPrototypeBuiltins$ForeignGetDoubleValueNode.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { IsNumberNode } from '../../../../../com/oracle/truffle/js/nodes/cast/IsNumberNode.d.ts'
 import type { JSDoubleToStringNode } from '../../../../../com/oracle/truffle/js/nodes/cast/JSDoubleToStringNode.d.ts'
@@ -24,14 +25,13 @@ export abstract class NumberPrototypeBuiltins$JSNumberToStringNode extends JSBui
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
-    isRadix10(radix: Object): boolean;
     toString(): string;
     toString(thisObj: JSNumberObject, radix: Object, toIntegerNode: JSToIntegerAsIntNode, doubleToString: JSDoubleToStringNode, radixOtherBranch: InlinedBranchProfile, radixErrorBranch: InlinedBranchProfile): Object;
-    toStringForeignObject(thisObj: Object, radix: Object, node: Node, toIntegerNode: JSToIntegerAsIntNode, doubleToString: JSDoubleToStringNode, radixOtherBranch: InlinedBranchProfile, radixErrorBranch: InlinedBranchProfile, interop: InteropLibrary): Object;
-    toStringIntRadix10(thisObj: JSNumberObject, radix: Object): Object;
+    toStringForeignObject(thisObj: Object, radix: Object, node: Node, toIntegerNode: JSToIntegerAsIntNode, doubleToString: JSDoubleToStringNode, fromLong: TruffleString$FromLongNode, radixOtherBranch: InlinedBranchProfile, radixErrorBranch: InlinedBranchProfile, getDoubleValue: NumberPrototypeBuiltins$ForeignGetDoubleValueNode): Object;
+    toStringIntRadix10(thisObj: JSNumberObject, radix: Object, fromLong: TruffleString$FromLongNode): Object;
     toStringNoNumber(thisObj: Object, radix: Object): string;
     toStringPrimitive(thisNumber: Object, radix: Object, isNumber: IsNumberNode, toDouble: JSToDoubleNode, toIntegerNode: JSToIntegerAsIntNode, doubleToString: JSDoubleToStringNode, radixOtherBranch: InlinedBranchProfile, radixErrorBranch: InlinedBranchProfile): Object;
-    toStringPrimitiveIntRadix10(thisInteger: number, radix: Object): Object;
+    toStringPrimitiveIntRadix10(thisInteger: number, radix: Object, fromLong: TruffleString$FromLongNode): Object;
     toStringPrimitiveRadix10(thisNumber: Object, radix: Object, isNumber: IsNumberNode, doubleToString: JSDoubleToStringNode): Object;
     toStringPrimitiveRadixInt(thisNumber: Object, radix: number, isNumber: IsNumberNode, toDouble: JSToDoubleNode, doubleToString: JSDoubleToStringNode, radixOtherBranch: InlinedBranchProfile, radixErrorBranch: InlinedBranchProfile): Object;
     toStringRadix10(thisObj: JSNumberObject, radix: Object, doubleToString: JSDoubleToStringNode): Object;

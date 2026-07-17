@@ -1,6 +1,6 @@
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { ConditionProfile } from '../../../../../com/oracle/truffle/api/profiles/ConditionProfile.d.ts'
+import type { InlinedConditionProfile } from '../../../../../com/oracle/truffle/api/profiles/InlinedConditionProfile.d.ts'
 import type { ArrayPrototypeBuiltins$JSArrayOperation } from '../../../../../com/oracle/truffle/js/builtins/ArrayPrototypeBuiltins$JSArrayOperation.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { PropertyGetNode } from '../../../../../com/oracle/truffle/js/nodes/access/PropertyGetNode.d.ts'
@@ -27,25 +27,13 @@ export abstract class ArrayPrototypeBuiltins$JSArrayConcatNode extends ArrayProt
     constructor(context: JSContext, builtin: JSBuiltin)
     // private firstElementIndexNode: JSArrayFirstElementIndexNode;
     // private getSpreadableNode: PropertyGetNode;
-    // private hasFirstElements: ConditionProfile;
-    // private hasFirstOneElement: ConditionProfile;
-    // private hasMultipleArgs: ConditionProfile;
-    // private hasOneArg: ConditionProfile;
-    // private hasSecondElements: ConditionProfile;
-    // private hasSecondOneElement: ConditionProfile;
     // private isArrayNode: JSIsArrayNode;
-    // private isFirstSpreadable: ConditionProfile;
-    // private isSecondSpreadable: ConditionProfile;
     // private lastElementIndexNode: JSArrayLastElementIndexNode;
-    // private lengthErrorProfile: ConditionProfile;
-    // private optimizationsObservable: ConditionProfile;
     // private toBooleanNode: JSToBooleanNode;
-    concat(thisObj: Object, args: Object[]): Object;
-    // private concatElementIntl(retObj: Object, el: Object, n: number, isSpreadable: ConditionProfile, hasElements: ConditionProfile, hasOneElement: ConditionProfile): number;
-    // private concatIntl(retObj: Object, initialLength: number, args: Object[]): number;
-    // private concatSpreadable(retObj: Object, n: number, elObj: Object, len2: number, hasOneElement: ConditionProfile): number;
+    concat(thisObj: Object, args: Object[], isFirstSpreadable: InlinedConditionProfile, hasFirstElements: InlinedConditionProfile, hasFirstOneElement: InlinedConditionProfile, isSecondSpreadable: InlinedConditionProfile, hasSecondElements: InlinedConditionProfile, hasSecondOneElement: InlinedConditionProfile, lengthErrorProfile: InlinedConditionProfile, hasOneArg: InlinedConditionProfile, hasMultipleArgs: InlinedConditionProfile, optimizationsObservable: InlinedConditionProfile): Object;
+    // private concatElementIntl(retObj: Object, el: Object, n: number, isSpreadable: InlinedConditionProfile, hasElements: InlinedConditionProfile, hasOneElement: InlinedConditionProfile, lengthErrorProfile: InlinedConditionProfile, optimizationsObservable: InlinedConditionProfile): number;
+    // private concatSpreadable(retObj: Object, n: number, elObj: Object, len2: number, hasOneElement: InlinedConditionProfile, lengthErrorProfile: InlinedConditionProfile, optimizationsObservable: InlinedConditionProfile): number;
     // private firstElementIndex(target: JSDynamicObject, length: number): number;
-    // private getSpreadableProperty(obj: Object): Object;
     // private isArray(object: Object): boolean;
     // private isConcatSpreadable(el: Object): boolean;
     // private lastElementIndex(target: JSDynamicObject, length: number): number;

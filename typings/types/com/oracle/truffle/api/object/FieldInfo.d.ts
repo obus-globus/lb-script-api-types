@@ -14,7 +14,6 @@ export class FieldInfo extends CoreLocations$DynamicObjectFieldLocation implemen
     // private varHandle: VarHandle;
     compareTo(other: FieldInfo): number;
     equals(obj: Object | null): boolean;
-    getBytes(): number;
     getDeclaringClass(): Class<DynamicObject>;
     hashCode(): number;
     // private illegalReceiver(store: DynamicObject): IllegalArgumentException;
@@ -23,5 +22,6 @@ export class FieldInfo extends CoreLocations$DynamicObjectFieldLocation implemen
     receiverCheck(store: DynamicObject): void;
     toString(): string;
     type(): Class<Object>;
+    unsafeReceiverCast(store: DynamicObject): DynamicObject;
     varHandle(): VarHandle;
 }

@@ -8,7 +8,6 @@ export class TruffleStringFactory$LastByteIndexOfStringNodeGen extends TruffleSt
     static getUncached(): TruffleString$LastByteIndexOfStringNode;
     private constructor()
     // private indexOfStringNode__field1_: Node;
-    // private indexOfStringNode__field2_: Node;
     // private state_0_: number;
     execute(a: AbstractTruffleString, b: AbstractTruffleString, fromIndex: number, toIndex: number, expectedEncoding: TruffleString$Encoding): number;
     execute(arg0Value: AbstractTruffleString, arg1Value: AbstractTruffleString, arg2Value: number, arg3Value: number, arg4Value: number[], arg5Value: TruffleString$Encoding): number;

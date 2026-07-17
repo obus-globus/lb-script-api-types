@@ -1,3 +1,4 @@
+import type { TruffleString } from '../../../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
 import type { JSContext } from '../../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
 import type { JSRealm } from '../../../../../../../com/oracle/truffle/js/runtime/JSRealm.d.ts'
 import type { JSDynamicObject } from '../../../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
@@ -8,7 +9,7 @@ import type { DateIntervalFormat } from '../../../../../../../org/graalvm/shadow
 export class JSDateTimeFormat$InternalState extends Object {
     constructor()
     readonly boundFormatFunction: JSDynamicObject;
-    // private calendar: string;
+    readonly calendar: string;
     // private dateFormat: DateFormat;
     // private dateIntervalFormat: DateIntervalFormat;
     // private dateStyle: string;
@@ -24,12 +25,19 @@ export class JSDateTimeFormat$InternalState extends Object {
     // private month: string;
     // private numberingSystem: string;
     // private second: string;
+    // private temporalInstanceFormat: DateFormat;
+    // private temporalPlainDateFormat: DateFormat;
+    // private temporalPlainDateTimeFormat: DateFormat;
+    // private temporalPlainMonthDayFormat: DateFormat;
+    // private temporalPlainTimeFormat: DateFormat;
+    // private temporalPlainYearMonthFormat: DateFormat;
     // private timeStyle: string;
     // private timeZone: string;
     // private timeZoneName: string;
     // private weekday: string;
     // private year: string;
     getBoundFormatFunction(): JSDynamicObject;
+    getCalendar(): TruffleString;
     isInitialized(): boolean;
     setBoundFormatFunction(boundFormatFunction: JSDynamicObject): void;
     toResolvedOptionsObject(context: JSContext, realm: JSRealm): JSObject;

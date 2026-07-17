@@ -4,7 +4,8 @@ import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts
 import type { InlinedBranchProfile } from '../../../../../com/oracle/truffle/api/profiles/InlinedBranchProfile.d.ts'
 import type { InlinedConditionProfile } from '../../../../../com/oracle/truffle/api/profiles/InlinedConditionProfile.d.ts'
 import type { TruffleString } from '../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
-import type { JSConstructTypedArrayNode$IntegerIndexedObjectCreateNode } from '../../../../../com/oracle/truffle/js/builtins/JSConstructTypedArrayNode$IntegerIndexedObjectCreateNode.d.ts'
+import type { JSConstructTypedArrayNode$TypedArrayCreateNode } from '../../../../../com/oracle/truffle/js/builtins/JSConstructTypedArrayNode$TypedArrayCreateNode.d.ts'
+import type { TypedArrayPrototypeBuiltins$CopyTypedArrayElementsNode } from '../../../../../com/oracle/truffle/js/builtins/TypedArrayPrototypeBuiltins$CopyTypedArrayElementsNode.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { GetIteratorFromMethodNode } from '../../../../../com/oracle/truffle/js/nodes/access/GetIteratorFromMethodNode.d.ts'
 import type { GetMethodNode } from '../../../../../com/oracle/truffle/js/nodes/access/GetMethodNode.d.ts'
@@ -13,6 +14,7 @@ import type { IterableToListNode } from '../../../../../com/oracle/truffle/js/no
 import type { ReadElementNode } from '../../../../../com/oracle/truffle/js/nodes/access/ReadElementNode.d.ts'
 import type { WriteElementNode } from '../../../../../com/oracle/truffle/js/nodes/access/WriteElementNode.d.ts'
 import type { JSGetLengthNode } from '../../../../../com/oracle/truffle/js/nodes/array/JSGetLengthNode.d.ts'
+import type { TypedArrayLengthNode } from '../../../../../com/oracle/truffle/js/nodes/array/TypedArrayLengthNode.d.ts'
 import type { JSToIndexNode } from '../../../../../com/oracle/truffle/js/nodes/cast/JSToIndexNode.d.ts'
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
@@ -44,15 +46,15 @@ export abstract class JSConstructTypedArrayNode extends JSBuiltinNode {
     constructor(context: JSContext, builtin: JSBuiltin, factory: TypedArrayFactory)
     // private factory: TypedArrayFactory;
     // private getPrototypeFromConstructorViewNode: GetPrototypeFromConstructorNode;
-    // private integerIndexObjectCreateNode: JSConstructTypedArrayNode$IntegerIndexedObjectCreateNode;
     // private toIndexNode: JSToIndexNode;
+    // private typedArrayCreateNode: JSConstructTypedArrayNode$TypedArrayCreateNode;
     // private checkDetachedBuffer(buffer: JSArrayBufferObject, errorBranch: InlinedBranchProfile): void;
     // private checkLengthLimit(length: number, elementSize: number, errorBranch: InlinedBranchProfile): number;
     createGetIteratorMethod(): GetMethodNode;
     createGetLength(): JSGetLengthNode;
-    // private createTypedArray(arrayBuffer: JSArrayBufferObject, typedArray: TypedArray, offset: number, length: number, proto: JSDynamicObject): JSDynamicObject;
+    // private createTypedArray(arrayBuffer: JSArrayBufferObject, typedArray: TypedArray, offset: number, length: number, proto: JSDynamicObject): JSTypedArrayObject;
     // private createTypedArrayBuffer(length: number, errorBranch: InlinedBranchProfile): JSArrayBufferObject;
-    // private createTypedArrayWithLength(length: number, newTarget: JSDynamicObject, errorBranch: InlinedBranchProfile): JSDynamicObject;
+    // private createTypedArrayWithLength(length: number, newTarget: JSDynamicObject, errorBranch: InlinedBranchProfile): JSTypedArrayObject;
     createWriteOwn(): WriteElementNode;
     doArrayBuffer(newTarget: JSDynamicObject, arrayBuffer: JSArrayBufferObject$Heap, byteOffset0: Object, length0: Object, errorBranch: InlinedBranchProfile, lengthIsUndefined: InlinedConditionProfile): JSDynamicObject;
     // private doArrayBufferImpl(arrayBuffer: JSArrayBufferObject, byteOffset0: Object, length0: Object, newTarget: JSDynamicObject, bufferType: number, node: Node, errorBranch: InlinedBranchProfile, lengthIsUndefinedProfile: InlinedConditionProfile, interop: InteropLibrary): JSDynamicObject;
@@ -64,10 +66,9 @@ export abstract class JSConstructTypedArrayNode extends JSBuiltinNode {
     doLength(newTarget: JSDynamicObject, arg0: Object, byteOffset0: Object, length0: Object, errorBranch: InlinedBranchProfile): JSDynamicObject;
     doObject(newTarget: JSDynamicObject, object: JSObject, byteOffset0: Object, length0: Object, node: Node, getIteratorMethodNode: GetMethodNode, isIterableProfile: InlinedConditionProfile, writeOwnNode: WriteElementNode, getIteratorFromMethodNode: GetIteratorFromMethodNode, iterableToListNode: IterableToListNode, errorBranch: InlinedBranchProfile, getLengthNode: JSGetLengthNode, readNode: ReadElementNode): JSDynamicObject;
     doSharedArrayBuffer(newTarget: JSDynamicObject, arrayBuffer: JSArrayBufferObject$Shared, byteOffset0: Object, length0: Object, errorBranch: InlinedBranchProfile, lengthIsUndefined: InlinedConditionProfile): JSDynamicObject;
-    doTypedArray(newTarget: JSDynamicObject, arrayBufferView: JSTypedArrayObject, byteOffset0: Object, length0: Object, errorBranch: InlinedBranchProfile, bulkCopyProfile: InlinedConditionProfile): JSDynamicObject;
+    doTypedArray(newTarget: JSDynamicObject, arrayBufferView: JSTypedArrayObject, byteOffset0: Object, length0: Object, errorBranch: InlinedBranchProfile, bulkCopyProfile: InlinedConditionProfile, sourceLengthNode: TypedArrayLengthNode, copyTypedArrayElementsNode: TypedArrayPrototypeBuiltins$CopyTypedArrayElementsNode): JSDynamicObject;
     doUndefinedNewTarget(newTarget: Object, arg0: Object, byteOffset0: Object, length0: Object): JSDynamicObject;
     // private getPrototypeFromConstructorView(newTarget: JSDynamicObject): JSDynamicObject;
-    // private integerIndexedObjectCreate(arrayBuffer: JSArrayBufferObject, typedArray: TypedArray, offset: number, length: number, proto: JSDynamicObject): JSDynamicObject;
     // private rangeCheck(condition: boolean, message: string, errorBranch: InlinedBranchProfile): boolean;
     // private rangeCheckIsMultipleOfElementSize(condition: boolean, what: string, name: TruffleString, bytesPerElement: number, errorBranch: InlinedBranchProfile): boolean;
     // private throwInappropriateLengthError(length: number): RuntimeException;

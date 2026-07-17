@@ -21,6 +21,8 @@ export class JSConfig extends Object {
     static ECMAScript2024: number;
     static ECMAScript2025: number;
     static ECMAScript2026: number;
+    static ECMAScript2027: number;
+    static ECMAScript2028: number;
     static ECMAScript5: number;
     static ECMAScript6: number;
     static ECMAScriptVersionYearDelta: number;
@@ -42,8 +44,10 @@ export class JSConfig extends Object {
     static MaxCompiledRegexCacheLength: number;
     static MaxConsolePrintProperties: number;
     static MaxFlatArraySize: number;
+    static MaxWasmTagParams: number;
     static MergeCompatibleLocations: boolean;
     static MergeShapes: boolean;
+    static NextECMAScriptVersion: number;
     static OptimizeApplyArguments: boolean;
     static OptimizeNoFallthroughSwitch: boolean;
     static PrintAst: boolean;

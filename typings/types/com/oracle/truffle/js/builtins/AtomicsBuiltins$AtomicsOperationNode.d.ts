@@ -44,4 +44,5 @@ export abstract class AtomicsBuiltins$AtomicsOperationNode extends JSBuiltinNode
     typedArrayLength(target: JSTypedArrayObject): number;
     validateIntegerTypedArray(typedArrayObject: JSTypedArrayObject, waitable: boolean): TypedArray;
     validateTypedArray(object: Object): JSTypedArrayObject;
+    validateTypedArray(object: Object, writeAccess: boolean): JSTypedArrayObject;
 }

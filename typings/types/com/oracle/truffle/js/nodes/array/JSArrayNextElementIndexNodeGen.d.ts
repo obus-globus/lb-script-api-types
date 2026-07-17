@@ -10,10 +10,10 @@ export class JSArrayNextElementIndexNodeGen extends JSArrayNextElementIndexNode 
     static create(paramcontext: JSContext): JSArrayNextElementIndexNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
+    // private arrayTypeProfile_field1_: Class<Object>;
     // private hasPropertyNode: JSHasPropertyNode;
     // private nextElementIndexNode: JSArrayNextElementIndexNode;
     // private nextWithHolesCached_cache: JSArrayNextElementIndexNodeGen$NextWithHolesCachedData;
-    // private nextWithHolesUncached_arrayTypeProfile__field1_: Class<Object>;
     // private state_0_: number;
     // private withoutHolesCached_cache: JSArrayNextElementIndexNodeGen$WithoutHolesCachedData;
     // private executeAndSpecialize(arg0Value: Object, arg1Value: number, arg2Value: number, arg3Value: boolean): number;

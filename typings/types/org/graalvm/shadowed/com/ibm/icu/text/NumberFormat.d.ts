@@ -8,6 +8,7 @@ import type { ParsePosition } from '../../../../../../../java/text/ParsePosition
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../../../java/lang/CharSequence.d.ts'
+import type { Cloneable } from '../../../../../../../java/lang/Cloneable.d.ts'
 import type { Number } from '../../../../../../../java/lang/Number.d.ts'
 import type { BigDecimal as BigDecimal_2 } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/math/BigDecimal.d.ts'
 import type { DisplayContext } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/DisplayContext.d.ts'
@@ -17,7 +18,7 @@ import type { UFormat } from '../../../../../../../org/graalvm/shadowed/com/ibm/
 import type { Currency } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/Currency.d.ts'
 import type { CurrencyAmount } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/CurrencyAmount.d.ts'
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
-export abstract class NumberFormat extends UFormat {
+export abstract class NumberFormat extends UFormat implements Cloneable {
     static ACCOUNTINGCURRENCYSTYLE: number;
     static CASHCURRENCYSTYLE: number;
     static CURRENCYSTYLE: number;
@@ -72,7 +73,7 @@ export abstract class NumberFormat extends UFormat {
     readonly parseIntegerOnly: boolean;
     readonly parseStrict: boolean;
     // private serialVersionOnStream: number;
-    clone(): Object;
+    clone(): NumberFormat;
     equals(obj: Object | null): boolean;
     format(number: BigDecimal): string;
     format(number: BigDecimal, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;

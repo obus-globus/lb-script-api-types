@@ -2,6 +2,7 @@ import type { ObjectInputStream } from '../../../../../../../java/io/ObjectInput
 import type { Date } from '../../../../../../../java/util/Date.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { Cloneable } from '../../../../../../../java/lang/Cloneable.d.ts'
 import type { AnnualTimeZoneRule } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/AnnualTimeZoneRule.d.ts'
 import type { BasicTimeZone } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/BasicTimeZone.d.ts'
 import type { BasicTimeZone$LocalOption } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/BasicTimeZone$LocalOption.d.ts'
@@ -12,7 +13,7 @@ import type { TimeZone$SystemTimeZoneType } from '../../../../../../../org/graal
 import type { TimeZoneRule } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/TimeZoneRule.d.ts'
 import type { TimeZoneTransition } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/TimeZoneTransition.d.ts'
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
-export class SimpleTimeZone extends BasicTimeZone {
+export class SimpleTimeZone extends BasicTimeZone implements Cloneable {
     static GENERIC_LOCATION: number;
     static GMT_ZONE: TimeZone;
     static LONG: number;
@@ -79,8 +80,8 @@ export class SimpleTimeZone extends BasicTimeZone {
     // private transitionRulesInitialized: boolean;
     // private useDaylight: boolean;
     // private xinfo: STZInfo;
-    clone(): Object;
-    cloneAsThawed(): TimeZone;
+    clone(): SimpleTimeZone;
+    cloneAsThawed(): SimpleTimeZone;
     // private compareToRule(month: number, monthLen: number, prevMonthLen: number, dayOfMonth: number, dayOfWeek: number, millis: number, millisDelta: number, ruleMode: number, ruleMonth: number, ruleDayOfWeek: number, ruleDay: number, ruleMillis: number): number;
     // private construct(_raw: number, _startMonth: number, _startDay: number, _startDayOfWeek: number, _startTime: number, _startTimeMode: number, _endMonth: number, _endDay: number, _endDayOfWeek: number, _endTime: number, _endTimeMode: number, _dst: number): void;
     // private decodeEndRule(): void;

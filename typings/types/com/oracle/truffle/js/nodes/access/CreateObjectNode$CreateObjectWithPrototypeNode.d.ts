@@ -1,5 +1,7 @@
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { DynamicObjectLibrary } from '../../../../../../com/oracle/truffle/api/object/DynamicObjectLibrary.d.ts'
+import type { DynamicObject$GetShapeFlagsNode } from '../../../../../../com/oracle/truffle/api/object/DynamicObject$GetShapeFlagsNode.d.ts'
+import type { DynamicObject$PutNode } from '../../../../../../com/oracle/truffle/api/object/DynamicObject$PutNode.d.ts'
+import type { DynamicObject$SetShapeFlagsNode } from '../../../../../../com/oracle/truffle/api/object/DynamicObject$SetShapeFlagsNode.d.ts'
 import type { Shape } from '../../../../../../com/oracle/truffle/api/object/Shape.d.ts'
 import type { CreateObjectNode } from '../../../../../../com/oracle/truffle/js/nodes/access/CreateObjectNode.d.ts'
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
@@ -14,13 +16,14 @@ export abstract class CreateObjectNode$CreateObjectWithPrototypeNode extends Cre
     static createWithPrototype(paramcontext: JSContext, paramjsclass: JSClass): CreateObjectNode$CreateObjectWithPrototypeNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext, jsclass: JSClass)
+    // private getShapeFlagsNode: DynamicObject$GetShapeFlagsNode;
     // private jsclass: JSClass;
-    // private protoFlagsNode: DynamicObjectLibrary;
     // private seenArrayPrototype: boolean;
+    // private setShapeFlagsNode: DynamicObject$SetShapeFlagsNode;
     doCachedPrototype(prototype: JSDynamicObject, cachedPrototype: JSDynamicObject, protoChildShape: Shape): JSObject;
     doNotJSObjectOrNull(prototype: Object): JSObject;
-    doOrdinaryInstancePrototype(prototype: JSDynamicObject, setProtoNode: DynamicObjectLibrary): JSObject;
-    doPromiseInstancePrototype(prototype: JSDynamicObject, setProtoNode: DynamicObjectLibrary): JSObject;
+    doOrdinaryInstancePrototype(prototype: JSDynamicObject, setProtoNode: DynamicObject$PutNode): JSObject;
+    doPromiseInstancePrototype(prototype: JSDynamicObject, setProtoNode: DynamicObject$PutNode): JSObject;
     execute(realm: JSRealm): JSObject;
     execute(prototype: Object): JSObject;
     executeWithPrototype(realm: JSRealm, proto: Object): JSObject;

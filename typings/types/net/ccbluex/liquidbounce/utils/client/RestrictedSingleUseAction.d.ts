@@ -5,7 +5,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
  * Represents an operation that does not return a result and can only be executed once when {@link canExecute} returns true.
  * This is protected, so all future calls won't execute the actual {@link action}.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RestrictedSingleUseAction.kt#L27 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RestrictedSingleUseAction.kt:27}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RestrictedSingleUseAction.kt#L27 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RestrictedSingleUseAction.kt:27}
  */
 export class RestrictedSingleUseAction extends Object {
     constructor(canExecute: () => boolean, action: () => void)

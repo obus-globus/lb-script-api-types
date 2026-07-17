@@ -38,7 +38,6 @@ export class ImportCallNode extends JavaScriptNode {
     // private callRejectNode: JSFunctionCallNode;
     // private context: JSContext;
     // private enumerableOwnPropertyNamesNode: EnumerableOwnPropertyNamesNode;
-    // private getAssertNode: PropertyGetNode;
     // private getErrorObjectNode: TryCatchNode$GetErrorObjectNode;
     // private getWithNode: PropertyGetNode;
     // private newPromiseCapabilityNode: NewPromiseCapabilityNode;

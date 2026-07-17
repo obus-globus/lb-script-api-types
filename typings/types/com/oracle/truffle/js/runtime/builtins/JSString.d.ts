@@ -57,7 +57,9 @@ export class JSString extends JSPrimitive implements JSConstructorFactory$WithFu
     createPrototype(realm: JSRealm, ctor: JSFunctionObject): JSDynamicObject;
     defineOwnProperty(thisObj: JSDynamicObject, key: Object, desc: PropertyDescriptor, doThrow: boolean): boolean;
     delete(thisObj: JSDynamicObject, key: Object, isStrict: boolean): boolean;
+    delete(thisObj: JSDynamicObject, key: Object, isStrict: boolean, resultWhenNotPresent: boolean): boolean;
     delete(thisObj: JSDynamicObject, index: number, isStrict: boolean): boolean;
+    delete(thisObj: JSDynamicObject, index: number, isStrict: boolean, resultWhenNotPresent: boolean): boolean;
     getClassName(): TruffleString;
     getIntrinsicDefaultProto(realm: JSRealm): JSDynamicObject;
     getOwnHelper(store: JSDynamicObject, thisObj: Object, key: Object, encapsulatingNode: Node): Object;

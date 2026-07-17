@@ -1,5 +1,6 @@
 import type { VirtualFrame } from '../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
+import type { InteropLibrary } from '../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { TypedArrayPrototypeBuiltins$TypedArraySortMethodNode } from '../../../../../com/oracle/truffle/js/builtins/TypedArrayPrototypeBuiltins$TypedArraySortMethodNode.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
@@ -25,7 +26,7 @@ export class TypedArrayPrototypeBuiltinsFactory$TypedArraySortMethodNodeGen exte
     // private arguments0_: JavaScriptNode;
     // private arguments1_: JavaScriptNode;
     // private state_0_: number;
-    // private typedArrayLengthNode__field1_: Node;
+    // private typedArrayLengthNode__field1_: InteropLibrary;
     // private typedArraySortNode_: JSTypedArraySortNode;
     execute(frameValue: VirtualFrame): Object;
     // private executeAndSpecialize(arguments0Value: Object, arguments1Value: Object): JSTypedArrayObject;

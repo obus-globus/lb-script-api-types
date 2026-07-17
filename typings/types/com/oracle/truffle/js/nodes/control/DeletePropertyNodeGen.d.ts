@@ -2,7 +2,8 @@ import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/fram
 import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { InteropLibrary } from '../../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { DynamicObjectLibrary } from '../../../../../../com/oracle/truffle/api/object/DynamicObjectLibrary.d.ts'
+import type { DynamicObject$GetPropertyFlagsNode } from '../../../../../../com/oracle/truffle/api/object/DynamicObject$GetPropertyFlagsNode.d.ts'
+import type { DynamicObject$RemoveKeyNode } from '../../../../../../com/oracle/truffle/api/object/DynamicObject$RemoveKeyNode.d.ts'
 import type { TruffleString$EqualNode } from '../../../../../../com/oracle/truffle/api/strings/TruffleString$EqualNode.d.ts'
 import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { JSToPropertyKeyNode } from '../../../../../../com/oracle/truffle/js/nodes/cast/JSToPropertyKeyNode.d.ts'
@@ -24,9 +25,10 @@ export class DeletePropertyNodeGen extends DeletePropertyNode {
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     private constructor(strict: boolean, targetNode: JavaScriptNode, propertyNode: JavaScriptNode)
-    // private dynamicObjectLib: DynamicObjectLibrary;
+    // private getPropertyFlags: DynamicObject$GetPropertyFlagsNode;
     // private interop: InteropLibrary;
     // private jSObject_cache: DeletePropertyNodeGen$JSObjectData;
+    // private removeKey: DynamicObject$RemoveKeyNode;
     // private state_0_: number;
     // private string_equalsNode_: TruffleString$EqualNode;
     // private toArrayIndexNode: ToArrayIndexNode;

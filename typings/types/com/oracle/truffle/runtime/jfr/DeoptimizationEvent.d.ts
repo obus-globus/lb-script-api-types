@@ -4,5 +4,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface DeoptimizationEvent extends RootFunctionEvent, Object{
     isEnabled(): boolean;
     publish(): void;
+    setInvalidated(invalidated: boolean): void;
+    setReason(reason: string): void;
     setRootFunction(target: OptimizedCallTarget): void;
 }

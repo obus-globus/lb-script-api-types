@@ -12,10 +12,12 @@ export class SteppingStrategy$ComposedStrategy extends SteppingStrategy {
     // private last: SteppingStrategy;
     add(nextStrategy: SteppingStrategy): void;
     consume(): void;
+    getNestedStrategies(): SteppingStrategy[];
     initialize(contex: SuspendedContext, suspendAnchor: SuspendAnchor): void;
     isActive(context: EventContext, suspendAnchor: SuspendAnchor): boolean;
     isComposable(): boolean;
     isConsumed(): boolean;
+    isContinue(): boolean;
     isDone(): boolean;
     isKill(): boolean;
     isSingleStep(): boolean;

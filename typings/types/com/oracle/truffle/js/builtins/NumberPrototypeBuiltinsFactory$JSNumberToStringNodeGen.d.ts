@@ -1,8 +1,9 @@
 import type { VirtualFrame } from '../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
+import type { TruffleString$FromLongNode } from '../../../../../com/oracle/truffle/api/strings/TruffleString$FromLongNode.d.ts'
+import type { NumberPrototypeBuiltins$ForeignGetDoubleValueNode } from '../../../../../com/oracle/truffle/js/builtins/NumberPrototypeBuiltins$ForeignGetDoubleValueNode.d.ts'
 import type { NumberPrototypeBuiltins$JSNumberToStringNode } from '../../../../../com/oracle/truffle/js/builtins/NumberPrototypeBuiltins$JSNumberToStringNode.d.ts'
-import type { NumberPrototypeBuiltinsFactory$JSNumberToStringNodeGen$ToStringForeignObject0Data } from '../../../../../com/oracle/truffle/js/builtins/NumberPrototypeBuiltinsFactory$JSNumberToStringNodeGen$ToStringForeignObject0Data.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { JSDoubleToStringNode } from '../../../../../com/oracle/truffle/js/nodes/cast/JSDoubleToStringNode.d.ts'
 import type { JSToDoubleNode } from '../../../../../com/oracle/truffle/js/nodes/cast/JSToDoubleNode.d.ts'
@@ -27,16 +28,16 @@ export class NumberPrototypeBuiltinsFactory$JSNumberToStringNodeGen extends Numb
     // private arguments0_: JavaScriptNode;
     // private arguments1_: JavaScriptNode;
     // private doubleToString: JSDoubleToStringNode;
+    // private fromLong: TruffleString$FromLongNode;
     // private state_0_: number;
     // private state_1_: number;
     // private toDouble: JSToDoubleNode;
     // private toIntegerNode: JSToIntegerAsIntNode;
-    // private toStringForeignObject0_cache: NumberPrototypeBuiltinsFactory$JSNumberToStringNodeGen$ToStringForeignObject0Data;
+    // private toStringForeignObject_getDoubleValue_: NumberPrototypeBuiltins$ForeignGetDoubleValueNode;
     execute(frameValue: VirtualFrame): Object;
     // private executeAndSpecialize(arguments0Value: Object, arguments1Value: Object): Object;
     // private execute_generic2(state_0__: number, frameValue: VirtualFrame): Object;
     // private execute_int0(state_0__: number, frameValue: VirtualFrame): Object;
     // private execute_int1(state_0__: number, frameValue: VirtualFrame): Object;
     getArguments(): JavaScriptNode[];
-    // private toStringForeignObject1Boundary(state_0: number, arguments0Value_: Object, arguments1Value_: Object, toIntegerNode_2: JSToIntegerAsIntNode, doubleToString_5: JSDoubleToStringNode): Object;
 }

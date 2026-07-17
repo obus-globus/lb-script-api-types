@@ -7,12 +7,12 @@ import type { JSToInt32Node } from '../../../../../../com/oracle/truffle/js/node
 import type { TypedArray } from '../../../../../../com/oracle/truffle/js/runtime/array/TypedArray.d.ts'
 import type { TypedArray$AbstractUint8ClampedArray } from '../../../../../../com/oracle/truffle/js/runtime/array/TypedArray$AbstractUint8ClampedArray.d.ts'
 import type { TypedArray$TypedIntArray } from '../../../../../../com/oracle/truffle/js/runtime/array/TypedArray$TypedIntArray.d.ts'
-import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
+import type { JSTypedArrayObject } from '../../../../../../com/oracle/truffle/js/runtime/builtins/JSTypedArrayObject.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class WriteElementNode$TypedIntArrayWriteElementCacheNode extends WriteElementNode$AbstractTypedArrayWriteElementCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(arrayType: TypedArray)
-    doTypedIntArray(target: JSDynamicObject, typedArray: TypedArray$AbstractUint8ClampedArray, index: number, value: Object, root: WriteElementNode, toDoubleNode: JSToDoubleNode, inBoundsIf: InlinedConditionProfile): boolean;
-    doTypedIntArray(target: JSDynamicObject, typedArray: TypedArray$TypedIntArray, index: number, value: Object, root: WriteElementNode, toIntNode: JSToInt32Node, inBoundsIf: InlinedConditionProfile): boolean;
-    doTypedIntArrayIntValue(target: JSDynamicObject, typedArray: TypedArray$TypedIntArray, index: number, iValue: number, root: WriteElementNode, inBoundsIf: InlinedConditionProfile): boolean;
+    doTypedIntArray(target: JSTypedArrayObject, typedArray: TypedArray$AbstractUint8ClampedArray, index: number, value: Object, root: WriteElementNode, toDoubleNode: JSToDoubleNode, immutableIf: InlinedConditionProfile, inBoundsIf: InlinedConditionProfile): boolean;
+    doTypedIntArray(target: JSTypedArrayObject, typedArray: TypedArray$TypedIntArray, index: number, value: Object, root: WriteElementNode, toIntNode: JSToInt32Node, immutableIf: InlinedConditionProfile, inBoundsIf: InlinedConditionProfile): boolean;
+    doTypedIntArrayIntValue(target: JSTypedArrayObject, typedArray: TypedArray$TypedIntArray, index: number, iValue: number, root: WriteElementNode, inBoundsIf: InlinedConditionProfile): boolean;
 }

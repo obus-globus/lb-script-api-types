@@ -1,7 +1,6 @@
 import type { InlinedConditionProfile } from '../../../../../com/oracle/truffle/api/profiles/InlinedConditionProfile.d.ts'
 import type { AbstractPublicNode } from '../../../../../com/oracle/truffle/api/strings/AbstractPublicNode.d.ts'
 import type { AbstractTruffleString } from '../../../../../com/oracle/truffle/api/strings/AbstractTruffleString.d.ts'
-import type { TStringInternalNodes$GetCodeRangeForIndexCalculationNode } from '../../../../../com/oracle/truffle/api/strings/TStringInternalNodes$GetCodeRangeForIndexCalculationNode.d.ts'
 import type { TruffleString$Encoding } from '../../../../../com/oracle/truffle/api/strings/TruffleString$Encoding.d.ts'
 import type { TruffleString$ErrorHandling } from '../../../../../com/oracle/truffle/api/strings/TruffleString$ErrorHandling.d.ts'
 import type { TruffleStringIterator } from '../../../../../com/oracle/truffle/api/strings/TruffleStringIterator.d.ts'
@@ -9,7 +8,7 @@ export abstract class TruffleString$CreateCodePointIteratorNode extends Abstract
     static create(): TruffleString$CreateCodePointIteratorNode;
     static getUncached(): TruffleString$CreateCodePointIteratorNode;
     constructor()
-    createIterator(a: AbstractTruffleString, encoding: TruffleString$Encoding, errorHandling: TruffleString$ErrorHandling, managedProfileA: InlinedConditionProfile, nativeProfileA: InlinedConditionProfile, getCodeRangeANode: TStringInternalNodes$GetCodeRangeForIndexCalculationNode): TruffleStringIterator;
+    createIterator(a: AbstractTruffleString, encoding: TruffleString$Encoding, errorHandling: TruffleString$ErrorHandling, managedProfileA: InlinedConditionProfile, nativeProfileA: InlinedConditionProfile, impreciseAProfile: InlinedConditionProfile): TruffleStringIterator;
     execute(a: AbstractTruffleString, expectedEncoding: TruffleString$Encoding): TruffleStringIterator;
     execute(a: AbstractTruffleString, expectedEncoding: TruffleString$Encoding, errorHandling: TruffleString$ErrorHandling): TruffleStringIterator;
 }

@@ -22,6 +22,7 @@ export class PolyglotFastThreadLocals extends Object {
     static getContextWithNode(paramnode: Node): PolyglotContextImpl;
     static getCurrentThreadContextThreadLocals(paramlayer: PolyglotSharingLayer): Object[];
     static getCurrentThreadContextThreadLocalsEngine(paramengine: PolyglotEngineImpl): Object[];
+    static getEngine(paramnode: Node): PolyglotEngineImpl;
     static getLanguage(paramnode: Node, paramindex: number, paramlanguageClass: Class<Object>): TruffleLanguage<Object>;
     static getLanguageContext(paramnode: Node, paramindex: number): Object;
     static leave(paramprev: Object[]): void;

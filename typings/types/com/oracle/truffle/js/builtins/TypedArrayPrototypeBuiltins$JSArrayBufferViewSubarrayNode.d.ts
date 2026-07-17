@@ -4,6 +4,7 @@ import type { InlinedConditionProfile } from '../../../../../com/oracle/truffle/
 import type { ArrayBufferPrototypeBuiltins$JSArrayBufferOperation } from '../../../../../com/oracle/truffle/js/builtins/ArrayBufferPrototypeBuiltins$JSArrayBufferOperation.d.ts'
 import type { ArrayPrototypeBuiltins$ArraySpeciesConstructorNode } from '../../../../../com/oracle/truffle/js/builtins/ArrayPrototypeBuiltins$ArraySpeciesConstructorNode.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
+import type { TypedArrayLengthNode } from '../../../../../com/oracle/truffle/js/nodes/array/TypedArrayLengthNode.d.ts'
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
 import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
@@ -23,7 +24,6 @@ export abstract class TypedArrayPrototypeBuiltins$JSArrayBufferViewSubarrayNode 
     constructor(context: JSContext, builtin: JSBuiltin)
     // private arraySpeciesCreateNode: ArrayPrototypeBuiltins$ArraySpeciesConstructorNode;
     getArraySpeciesConstructorNode(): ArrayPrototypeBuiltins$ArraySpeciesConstructorNode;
-    subarray(thisObj: JSTypedArrayObject, start: Object, end: Object, negativeBegin: InlinedConditionProfile, negativeEnd: InlinedConditionProfile, smallerEnd: InlinedConditionProfile): JSTypedArrayObject;
+    subarray(thisObj: JSTypedArrayObject, start: Object, end: Object, typedArrayLength: TypedArrayLengthNode, negativeBegin: InlinedConditionProfile, negativeEnd: InlinedConditionProfile, smallerEnd: InlinedConditionProfile): JSTypedArrayObject;
     subarrayGeneric(thisObj: Object, begin0: Object, end0: Object): JSTypedArrayObject;
-    subarrayImpl(thisObj: JSTypedArrayObject, beginByteOffset: number, newLength: Object): JSTypedArrayObject;
 }

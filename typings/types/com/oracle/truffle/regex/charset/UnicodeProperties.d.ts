@@ -23,6 +23,8 @@ export class UnicodeProperties extends Object {
     // private normalizePropertyName(propertyName: string): string;
     // private normalizePropertySpec(propertySpec: string): string;
     // private normalizeScriptName(scriptName: string): string;
+    unionOfProperties(initial: (Object | null)[], ...properties: string[]): (Object | null)[];
+    unionOfProperties(...properties: string[]): (Object | null)[];
     // private withBlocks(): boolean;
     // private withOtherProperties(): boolean;
 }

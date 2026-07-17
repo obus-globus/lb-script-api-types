@@ -24,7 +24,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 514
+      "line": 515
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.IN_DEVELOPMENT": {
@@ -56,7 +56,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 295
+      "line": 296
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.initializeManagers": {
@@ -64,7 +64,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 247
+      "line": 248
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.initializeResources": {
@@ -72,7 +72,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 311
+      "line": 312
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.logger": {
@@ -88,7 +88,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 372
+      "line": 373
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.resource": {
@@ -118,7 +118,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 432
+      "line": 433
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.shutdownHandler": {
@@ -134,7 +134,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 459
+      "line": 460
     }
   },
   "net.ccbluex.liquidbounce.additions.GuiGraphicsExtractorAddition": {
@@ -3097,7 +3097,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt",
-      "line": 280
+      "line": 281
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.ModuleAimbot": {
@@ -3306,6 +3306,14 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleNoMissCooldown.kt",
       "line": 30
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.combat.ModuleSpearKill": {
+    "doc": "Spear kill module\n\nAutomatically attacks enemies using a charged spear.",
+    "kind": "object",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleSpearKill.kt",
+      "line": 49
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.ModuleSuperKnockback": {
@@ -6042,7 +6050,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleVehicleControl.kt",
-      "line": 45
+      "line": 46
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleVehicleControl.Rehook": {
@@ -6050,7 +6058,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleVehicleControl.kt",
-      "line": 138
+      "line": 153
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.autododge.DodgePlan.shouldJump": {
@@ -10562,7 +10570,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt",
-      "line": 236
+      "line": 240
     }
   },
   "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.ActiveServerList.lanServers": {
@@ -11100,7 +11108,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-      "line": 409
+      "line": 407
     }
   },
   "net.ccbluex.liquidbounce.render.ClientRenderPipelines.OutlineQuads": {
@@ -11120,7 +11128,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-      "line": 481
+      "line": 479
     }
   },
   "net.ccbluex.liquidbounce.render.ClientVertexFormats.GRADIENT_CIRCLE": {
@@ -12934,7 +12942,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
-      "line": 62
+      "line": 65
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.RotationManager.actualServerRotation": {
@@ -12942,7 +12950,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
-      "line": 108
+      "line": 118
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.RotationManager.allowedToUpdate": {
@@ -12950,7 +12958,19 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
-      "line": 240
+      "line": 286
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.aiming.RotationManager.clientboundRotation": {
+    "doc": "Resolves the relative rotation flags used by vanilla player position and rotation updates.",
+    "see": [
+      "net.minecraft.world.entity.PositionMoveRotation.calculateAbsolute",
+      "net.minecraft.world.entity.Entity.forceSetRotation"
+    ],
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
+      "line": 152
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.RotationManager.currentRotation": {
@@ -12958,7 +12978,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
-      "line": 79
+      "line": 87
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.RotationManager.isRotatingAllowed": {
@@ -12966,7 +12986,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
-      "line": 145
+      "line": 195
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.RotationManager.packetHandler": {
@@ -12974,7 +12994,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
-      "line": 280
+      "line": 326
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.RotationManager.rotationTarget": {
@@ -12982,7 +13002,19 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
-      "line": 67
+      "line": 70
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.aiming.RotationManager.serverboundRotation": {
+    "doc": "Applies the rotation normalization performed by the vanilla server for rotation-bearing\nmovement and item-use packets.",
+    "see": [
+      "net.minecraft.server.network.ServerGamePacketListenerImpl.handleMovePlayer",
+      "net.minecraft.server.network.ServerGamePacketListenerImpl.handleUseItem"
+    ],
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
+      "line": 140
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.RotationManager.update": {
@@ -12990,7 +13022,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
-      "line": 162
+      "line": 212
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.RotationMode.instant": {
@@ -13095,7 +13127,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt",
-      "line": 109
+      "line": 110
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.data.Rotation.interpolateTo": {
@@ -13103,7 +13135,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt",
-      "line": 144
+      "line": 149
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.data.Rotation.normalize": {
@@ -13112,7 +13144,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt",
-      "line": 81
+      "line": 82
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.data.Rotation.rotationDeltaTo": {
@@ -13120,7 +13152,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt",
-      "line": 118
+      "line": 123
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.data.Rotation.towardsLinear": {
@@ -13128,7 +13160,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt",
-      "line": 129
+      "line": 134
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.features.MovementCorrection": {
@@ -14472,7 +14504,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RequestHandler.kt",
-      "line": 66
+      "line": 71
     }
   },
   "net.ccbluex.liquidbounce.utils.client.RestrictedSingleUseAction": {
@@ -14516,7 +14548,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/SilentHotbar.kt",
-      "line": 34
+      "line": 37
     }
   },
   "net.ccbluex.liquidbounce.utils.client.SilentHotbar.isSlotModifiedBy": {
@@ -14524,23 +14556,37 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/SilentHotbar.kt",
-      "line": 79
+      "line": 91
     }
   },
-  "net.ccbluex.liquidbounce.utils.client.SilentHotbar.selectSlotSilently": {
-    "doc": "Silently selects a main-hand hotbar slot for duration of [ticksUntilReset].\nOffhand is ignored because it is not selected through held-item changes.",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/SilentHotbar.kt",
-      "line": 52
+  "net.ccbluex.liquidbounce.utils.client.SilentHotbar.selectSlotSilently": [
+    {
+      "doc": "Silently selects a main-hand hotbar slot for duration of [ticksUntilReset].\nOffhand is ignored because it is not selected through held-item changes.",
+      "returns": "`true` when the slot is selected or no selection is required, `false` when the request is cancelled",
+      "kind": "function",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/SilentHotbar.kt",
+        "line": 57
+      }
+    },
+    {
+      "doc": "",
+      "see": [
+        "net.minecraft.world.entity.player.Inventory.isHotbarSlot"
+      ],
+      "kind": "function",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/SilentHotbar.kt",
+        "line": 63
+      }
     }
-  },
+  ],
   "net.ccbluex.liquidbounce.utils.client.SilentHotbar.serversideSlot": {
     "doc": "Returns the slot that interactions would take place with",
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/SilentHotbar.kt",
-      "line": 42
+      "line": 45
     }
   },
   "net.ccbluex.liquidbounce.utils.client.Timer": {

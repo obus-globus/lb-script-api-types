@@ -1,6 +1,9 @@
 import type { AbstractPublicNode } from '../../../../../com/oracle/truffle/api/strings/AbstractPublicNode.d.ts'
 import type { TruffleStringBuilder } from '../../../../../com/oracle/truffle/api/strings/TruffleStringBuilder.d.ts'
 import type { TruffleStringBuilder$AppendCodePointIntlNode } from '../../../../../com/oracle/truffle/api/strings/TruffleStringBuilder$AppendCodePointIntlNode.d.ts'
+import type { TruffleStringBuilderUTF16 } from '../../../../../com/oracle/truffle/api/strings/TruffleStringBuilderUTF16.d.ts'
+import type { TruffleStringBuilderUTF32 } from '../../../../../com/oracle/truffle/api/strings/TruffleStringBuilderUTF32.d.ts'
+import type { TruffleStringBuilderUTF8 } from '../../../../../com/oracle/truffle/api/strings/TruffleStringBuilderUTF8.d.ts'
 export abstract class TruffleStringBuilder$AppendCodePointNode extends AbstractPublicNode {
     static create(): TruffleStringBuilder$AppendCodePointNode;
     static getUncached(): TruffleStringBuilder$AppendCodePointNode;
@@ -9,4 +12,13 @@ export abstract class TruffleStringBuilder$AppendCodePointNode extends AbstractP
     execute(sb: TruffleStringBuilder, codepoint: number): void;
     execute(sb: TruffleStringBuilder, codepoint: number, repeat: number): void;
     execute(sb: TruffleStringBuilder, codepoint: number, repeat: number, allowUTF16Surrogates: boolean): void;
+    execute(sb: TruffleStringBuilderUTF16, codepoint: number): void;
+    execute(sb: TruffleStringBuilderUTF16, codepoint: number, repeat: number): void;
+    execute(sb: TruffleStringBuilderUTF16, codepoint: number, repeat: number, allowUTF16Surrogates: boolean): void;
+    execute(sb: TruffleStringBuilderUTF32, codepoint: number): void;
+    execute(sb: TruffleStringBuilderUTF32, codepoint: number, repeat: number): void;
+    execute(sb: TruffleStringBuilderUTF32, codepoint: number, repeat: number, allowUTF16Surrogates: boolean): void;
+    execute(sb: TruffleStringBuilderUTF8, codepoint: number): void;
+    execute(sb: TruffleStringBuilderUTF8, codepoint: number, repeat: number): void;
+    execute(sb: TruffleStringBuilderUTF8, codepoint: number, repeat: number, allowUTF16Surrogates: boolean): void;
 }

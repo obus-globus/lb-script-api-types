@@ -8,7 +8,7 @@ export class ValueUtilsKt extends Object {
     /**
      * Convert the {@link FileValue} to a {@link ReadOnlyProperty} of {@link DynamicTexture}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/config/types/ValueUtils.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/ValueUtils.kt:46}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/config/types/ValueUtils.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/ValueUtils.kt:46}
      */
     static toTextureProperty<V extends EventListener & Value<Object>>(self: FileValue, owner: V, printErrorToChat: boolean): ReadOnlyProperty<Object, DynamicTexture>;
 }

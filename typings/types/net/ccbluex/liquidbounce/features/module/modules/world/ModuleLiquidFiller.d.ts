@@ -14,7 +14,7 @@ import type { BlockState } from '../../../../../../../net/minecraft/world/level/
  *
  * Places blocks inside of liquid source blocks within range of you.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleLiquidFiller.kt#L57 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleLiquidFiller.kt:57}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleLiquidFiller.kt#L57 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleLiquidFiller.kt:57}
  */
 export class ModuleLiquidFiller extends ClientModule {
     static INSTANCE: ModuleLiquidFiller;

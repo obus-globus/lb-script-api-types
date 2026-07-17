@@ -7,7 +7,7 @@ import type { ItemSlot } from '../../../../../../../../../net/ccbluex/liquidboun
  * Specialization of weapon type. Used in order to allow the user to specify that they want a mace and not an axe
  * or something.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/items/MaceItemFacet.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/items/MaceItemFacet.kt:39}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/items/MaceItemFacet.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/items/MaceItemFacet.kt:39}
  */
 export class MaceItemFacet extends WeaponItemFacet {
     static ASSUMED_FALL_DISTANCE: number;
@@ -15,7 +15,7 @@ export class MaceItemFacet extends WeaponItemFacet {
     /**
      * `0.85.pow(1 / 20.0)`
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/items/MaceItemFacet.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/items/MaceItemFacet.kt:44}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/items/MaceItemFacet.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/items/MaceItemFacet.kt:44}
      */
     static P: number;
     constructor(itemSlot: ItemSlot)

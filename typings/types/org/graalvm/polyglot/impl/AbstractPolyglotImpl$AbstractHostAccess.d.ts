@@ -6,7 +6,9 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
+import type { Value } from '../../../../org/graalvm/polyglot/Value.d.ts'
 import type { AbstractPolyglotImpl } from '../../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl.d.ts'
+import type { AbstractPolyglotImpl$APIAccess } from '../../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl$APIAccess.d.ts'
 import type { AbstractPolyglotImpl$AbstractDispatchClass } from '../../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl$AbstractDispatchClass.d.ts'
 export abstract class AbstractPolyglotImpl$AbstractHostAccess extends AbstractPolyglotImpl$AbstractDispatchClass {
     constructor(impl: AbstractPolyglotImpl)
@@ -20,7 +22,7 @@ export abstract class AbstractPolyglotImpl$AbstractHostAccess extends AbstractPo
     toEngineException(e: RuntimeException): RuntimeException;
     toFunction(internalContext: Object, function_: Object, returnClass: Class<Object>, returnType: Type, paramClass: Class<Object>, paramType: Type): (param0: Object | null) => Object | null;
     toFunctionProxy<T extends unknown>(internalContext: Object, functionalType: Class<T>, genericType: Type, function_: Object): T;
-    toGuestValue(internalContext: Object, hostValue: Object): Object;
+    toGuestValue(node: Object, apiAccess: AbstractPolyglotImpl$APIAccess, hostValue: Object): Object;
     toIterable<T extends unknown>(internalContext: Object, iterable: Object, implementFunction: boolean, elementClass: Class<T>, elementType: Type): T[];
     toIterator<T extends unknown>(internalContext: Object, iterable: Object, implementFunction: boolean, elementClass: Class<T>, elementType: Type): Iterator<T>;
     toList<T extends unknown>(internalContext: Object, guestValue: Object, implementFunction: boolean, elementClass: Class<T>, elementType: Type): T[];
@@ -28,7 +30,7 @@ export abstract class AbstractPolyglotImpl$AbstractHostAccess extends AbstractPo
     toMapEntry<K extends unknown, V extends unknown>(internalContext: Object, foreignObject: Object, implementsFunction: boolean, keyClass: Class<K>, keyType: Type, valueClass: Class<V>, valueType: Type): Map$Entry<K, V>;
     toObjectProxy(internalContext: Object, clazz: Class<Object>, genericType: Type, obj: Object): Object;
     toPolyglotException(internalContext: Object, e: Throwable): RuntimeException;
-    toValue(internalContext: Object, receiver: Object): Object;
+    toValue(internalContext: Object, receiver: Object): Value;
     toValues(internalContext: Object, values: Object[]): Object[];
     toValues(internalContext: Object, values: Object[], startIndex: number): Object[];
     unboxEngineException(e: RuntimeException): RuntimeException;

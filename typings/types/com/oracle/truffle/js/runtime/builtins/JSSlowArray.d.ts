@@ -1,5 +1,5 @@
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { DynamicObjectLibrary } from '../../../../../../com/oracle/truffle/api/object/DynamicObjectLibrary.d.ts'
+import type { DynamicObject$GetNode } from '../../../../../../com/oracle/truffle/api/object/DynamicObject$GetNode.d.ts'
 import type { HiddenKey } from '../../../../../../com/oracle/truffle/api/object/HiddenKey.d.ts'
 import type { Property } from '../../../../../../com/oracle/truffle/api/object/Property.d.ts'
 import type { TruffleString } from '../../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
@@ -29,8 +29,8 @@ export class JSSlowArray extends JSAbstractArray {
     static arrayGetHoleCount(paramthisObj: JSDynamicObject): number;
     static arrayGetIndexOffset(paramthisObj: JSDynamicObject): number;
     static arrayGetLength(paramthisObj: JSDynamicObject): number;
-    static arrayGetRegexResult(paramthisObj: JSDynamicObject, paramlazyRegexResult: DynamicObjectLibrary): Object;
-    static arrayGetRegexResultOriginalInput(paramthisObj: JSDynamicObject, paramlazyRegexResultOriginalInput: DynamicObjectLibrary): TruffleString;
+    static arrayGetRegexResult(paramthisObj: JSDynamicObject, paramgetLazyRegexResult: DynamicObject$GetNode): Object;
+    static arrayGetRegexResultOriginalInput(paramthisObj: JSDynamicObject, paramgetLazyRegexResultOriginalInput: DynamicObject$GetNode): TruffleString;
     static arrayGetUsedLength(paramthisObj: JSDynamicObject): number;
     static arraySetArray(paramthisObj: JSDynamicObject, paramarray: Object): void;
     static arraySetArrayOffset(paramthisObj: JSDynamicObject, paramarrayOffset: number): void;
@@ -59,7 +59,9 @@ export class JSSlowArray extends JSAbstractArray {
     private constructor()
     defineOwnPropertyIndex(thisObj: JSDynamicObject, name: TruffleString, descriptor: PropertyDescriptor, doThrow: boolean): boolean;
     delete(thisObj: JSDynamicObject, key: Object, isStrict: boolean): boolean;
+    delete(thisObj: JSDynamicObject, key: Object, isStrict: boolean, resultWhenNotPresent: boolean): boolean;
     delete(thisObj: JSDynamicObject, index: number, isStrict: boolean): boolean;
+    delete(thisObj: JSDynamicObject, index: number, isStrict: boolean, resultWhenNotPresent: boolean): boolean;
     getOwnHelper(store: JSDynamicObject, thisObj: Object, key: Object, encapsulatingNode: Node): Object;
     getOwnHelper(store: JSDynamicObject, thisObj: Object, index: number, encapsulatingNode: Node): Object;
     makeSlowArray(thisObj: JSDynamicObject): JSDynamicObject;

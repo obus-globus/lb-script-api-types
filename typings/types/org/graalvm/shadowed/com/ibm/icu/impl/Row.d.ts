@@ -14,7 +14,7 @@ export class Row<C0 extends unknown, C1 extends unknown, C2 extends unknown, C3 
     constructor()
     frozen: boolean;
     // private items: Object[];
-    clone(): Object;
+    clone(): Row<C0, C1, C2, C3, C4>;
     cloneAsThawed(): Row<C0, C1, C2, C3, C4>;
     compareTo(other: Object | null): number;
     equals(other: Object | null): boolean;

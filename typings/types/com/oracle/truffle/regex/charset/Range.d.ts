@@ -1,5 +1,7 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Range extends Object {
+    static rangesToString(paramranges: number[]): string;
+    static rangesToString(paramranges: number[], paramrangesOffset: number, paramrangeCount: number): string;
     static toString(paramlo: number, paramhi: number): string;
     constructor(lo: number, hi: number)
     hi: number;

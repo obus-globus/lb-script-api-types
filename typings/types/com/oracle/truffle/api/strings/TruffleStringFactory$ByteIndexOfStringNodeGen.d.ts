@@ -7,12 +7,8 @@ export class TruffleStringFactory$ByteIndexOfStringNodeGen extends TruffleString
     static create(): TruffleString$ByteIndexOfStringNode;
     static getUncached(): TruffleString$ByteIndexOfStringNode;
     private constructor()
-    // private indexOfStringNode__field2_: Node;
-    // private indexOfStringNode__field3_: number;
-    // private indexOfStringNode__field4_: number;
+    // private indexOfStringNode__field1_: Node;
     // private state_0_: number;
-    // private state_1_: number;
-    // private state_2_: number;
     execute(a: AbstractTruffleString, b: AbstractTruffleString, fromByteIndex: number, toByteIndex: number, expectedEncoding: TruffleString$Encoding): number;
     execute(arg0Value: AbstractTruffleString, arg1Value: AbstractTruffleString, arg2Value: number, arg3Value: number, arg4Value: number[], arg5Value: TruffleString$Encoding): number;
     execute(a: AbstractTruffleString, b: TruffleString$WithMask, fromByteIndex: number, toByteIndex: number, expectedEncoding: TruffleString$Encoding): number;

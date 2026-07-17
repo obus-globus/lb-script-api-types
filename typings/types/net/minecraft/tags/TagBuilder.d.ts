@@ -6,7 +6,7 @@ export class TagBuilder extends Object implements TagBuilderHooks {
     static create(): TagBuilder;
     constructor()
     // private entries: TagEntry[];
-// (invalid TS: name contains '-')     // private fdb7ee70$fabric-data-generation-api-v1$replace$0: boolean;
+// (invalid TS: name contains '-')     // private fdbe5d79$fabric-data-generation-api-v1$replace$0: boolean;
     // private remove: (Object | null)[];
     // private replace: boolean;
     add(entry: TagEntry): TagBuilder;

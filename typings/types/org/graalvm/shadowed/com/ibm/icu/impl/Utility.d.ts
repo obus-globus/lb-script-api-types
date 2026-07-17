@@ -1,5 +1,5 @@
 import type { Appendable } from '../../../../../../../java/lang/Appendable.d.ts'
-import type { StringBuffer } from '../../../../../../../java/lang/StringBuffer.d.ts'
+import type { StringBuilder } from '../../../../../../../java/lang/StringBuilder.d.ts'
 import type { Pattern } from '../../../../../../../java/util/regex/Pattern.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../../../java/lang/CharSequence.d.ts'
@@ -15,9 +15,9 @@ export class Utility extends Object {
     static addExact(paramx: number, paramy: number): number;
     static appendNumber<T extends Appendable>(paramresult: T, paramn: number, paramradix: number, paramminDigits: number): T;
     static appendTo<A extends Appendable>(paramstring: CharSequence, paramappendable: A): A;
-    static appendToRule(paramrule: StringBuffer, paramc: number, paramisLiteral: boolean, paramescapeUnprintable: boolean, paramquoteBuf: StringBuffer): void;
-    static appendToRule(paramrule: StringBuffer, paramtext: string, paramisLiteral: boolean, paramescapeUnprintable: boolean, paramquoteBuf: StringBuffer): void;
-    static appendToRule(paramrule: StringBuffer, parammatcher: UnicodeMatcher, paramescapeUnprintable: boolean, paramquoteBuf: StringBuffer): void;
+    static appendToRule(paramrule: StringBuilder, paramc: number, paramisLiteral: boolean, paramescapeUnprintable: boolean, paramquoteBuf: StringBuilder): void;
+    static appendToRule(paramrule: StringBuilder, paramtext: string, paramisLiteral: boolean, paramescapeUnprintable: boolean, paramquoteBuf: StringBuilder): void;
+    static appendToRule(paramrule: StringBuilder, parammatcher: UnicodeMatcher, paramescapeUnprintable: boolean, paramquoteBuf: StringBuilder): void;
     static arrayEquals(paramsource: number[], paramtarget: Object): boolean;
     static arrayEquals(paramsource: Object, paramtarget: Object): boolean;
     static arrayEquals(paramsource: Object[], paramtarget: Object): boolean;

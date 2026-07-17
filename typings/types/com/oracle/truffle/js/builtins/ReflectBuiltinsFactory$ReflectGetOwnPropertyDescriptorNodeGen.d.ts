@@ -4,6 +4,7 @@ import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts
 import type { ReflectBuiltins$ReflectGetOwnPropertyDescriptorNode } from '../../../../../com/oracle/truffle/js/builtins/ReflectBuiltins$ReflectGetOwnPropertyDescriptorNode.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { FromPropertyDescriptorNode } from '../../../../../com/oracle/truffle/js/nodes/access/FromPropertyDescriptorNode.d.ts'
+import type { IsObjectNode } from '../../../../../com/oracle/truffle/js/nodes/access/IsObjectNode.d.ts'
 import type { JSGetOwnPropertyNode } from '../../../../../com/oracle/truffle/js/nodes/access/JSGetOwnPropertyNode.d.ts'
 import type { JSToPropertyKeyNode } from '../../../../../com/oracle/truffle/js/nodes/cast/JSToPropertyKeyNode.d.ts'
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
@@ -28,6 +29,7 @@ export class ReflectBuiltinsFactory$ReflectGetOwnPropertyDescriptorNodeGen exten
     // private arguments1_: JavaScriptNode;
     // private fromPropertyDescriptorNode_: FromPropertyDescriptorNode;
     // private getOwnPropertyNode_: JSGetOwnPropertyNode;
+    // private isObjectNode_: IsObjectNode;
     // private state_0_: number;
     // private toPropertyKeyNode_: JSToPropertyKeyNode;
     execute(frameValue: VirtualFrame): Object;

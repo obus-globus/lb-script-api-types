@@ -67,7 +67,7 @@ export class PythonRegexLexer extends RegexLexer {
     handleBoundedQuantifierOutOfOrder(): RegexSyntaxException;
     handleBoundedQuantifierOverflow(min: number, max: number): Token;
     handleBoundedQuantifierOverflowMin(min: number, max: number): Token;
-    handleCCRangeOutOfOrder(rangeStart: number): RegexSyntaxException;
+    handleCCRangeOutOfOrder(rangeStart: number, lo: number, hi: number): ClassSetContents;
     handleCCRangeWithPredefCharClass(rangeStart: number, firstAtom: ClassSetContents, secondAtom: ClassSetContents): void;
     handleComplementOfStringSet(): RegexSyntaxException;
     handleGroupRedefinition(name: string, newId: number, oldId: number): void;

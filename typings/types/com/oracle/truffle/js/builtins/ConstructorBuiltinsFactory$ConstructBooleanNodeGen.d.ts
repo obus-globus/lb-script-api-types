@@ -6,7 +6,6 @@ import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
 import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
-import type { JSBooleanObject } from '../../../../../com/oracle/truffle/js/runtime/builtins/JSBooleanObject.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ConstructorBuiltinsFactory$ConstructBooleanNodeGen extends ConstructorBuiltins$ConstructBooleanNode {
@@ -26,6 +25,5 @@ export class ConstructorBuiltinsFactory$ConstructBooleanNodeGen extends Construc
     // private state_0_: number;
     // private toBoolean__field1_: Node;
     execute(frameValue: VirtualFrame): Object;
-    // private executeAndSpecialize(arguments0Value: Object, arguments1Value: Object): JSBooleanObject;
     getArguments(): JavaScriptNode[];
 }

@@ -10,6 +10,5 @@ export class WriteElementNodeFactory$TypedBigIntArrayWriteElementCacheNodeGen ex
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(arrayType: TypedArray)
     // private state_0_: number;
-    // private executeAndSpecialize(arg0Value: JSDynamicObject, arg1Value: ScriptArray, arg2Value: number, arg3Value: Object, arg4Value: WriteElementNode): boolean;
     executeSetArray(arg0Value: JSDynamicObject, arg1Value: ScriptArray, arg2Value: number, arg3Value: Object, arg4Value: WriteElementNode): boolean;
 }

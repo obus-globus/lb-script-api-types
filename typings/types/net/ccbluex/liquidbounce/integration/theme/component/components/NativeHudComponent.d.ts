@@ -8,20 +8,20 @@ export abstract class NativeHudComponent extends HudComponent {
      * currentGuiScale / 2. Native components have to expose their editor dimensions and
      * interpret stored offsets in that same coordinate space.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/components/NativeHudComponent.kt#L81 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/components/NativeHudComponent.kt:81}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/components/NativeHudComponent.kt#L81 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/components/NativeHudComponent.kt:81}
      */
     static WEB_HUD_BASE_SCALE: number;
     constructor(name: string, enabled: boolean, alignment: Alignment, tweaks: HudComponentTweak[], description: string)
     /**
      * @see com.mojang.blaze3d.platform.Window.guiScaledHeight
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/components/NativeHudComponent.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/components/NativeHudComponent.kt:43}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/components/NativeHudComponent.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/components/NativeHudComponent.kt:43}
      */
     readonly guiScaledHeight: number;
     /**
      * @see com.mojang.blaze3d.platform.Window.guiScaledWidth
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/components/NativeHudComponent.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/components/NativeHudComponent.kt:38}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/components/NativeHudComponent.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/components/NativeHudComponent.kt:38}
      */
     readonly guiScaledWidth: number;
     readonly height: number;

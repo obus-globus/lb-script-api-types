@@ -1,20 +1,21 @@
-import type { CharMatcher } from '../../../../../../../com/oracle/truffle/regex/tregex/matchers/CharMatcher.d.ts'
 import type { SequentialMatchers } from '../../../../../../../com/oracle/truffle/regex/tregex/nodes/dfa/SequentialMatchers.d.ts'
 export class SequentialMatchers$UTF8SequentialMatchers extends SequentialMatchers {
-    constructor(ascii: CharMatcher[], enc2: CharMatcher[], enc3: CharMatcher[], enc4: CharMatcher[], noMatchSuccessor: number)
-    readonly ascii: CharMatcher[];
-    readonly enc2: CharMatcher[];
-    readonly enc3: CharMatcher[];
-    readonly enc4: CharMatcher[];
+    static NO_MATCHER: number;
+    constructor(asciiRefs: number[], enc2Refs: number[], enc3Refs: number[], enc4Refs: number[], noMatchSuccessor: number)
+    readonly asciiRefs: number[];
+    readonly enc2Refs: number[];
+    readonly enc3Refs: number[];
+    readonly enc4Refs: number[];
     readonly maxBytes: number;
-    getAscii(): CharMatcher[];
-    getEnc2(): CharMatcher[];
-    getEnc3(): CharMatcher[];
-    getEnc4(): CharMatcher[];
+    getAsciiRefs(): number[];
+    getEnc2Refs(): number[];
+    getEnc3Refs(): number[];
+    getEnc4Refs(): number[];
     getMaxBytes(): number;
-    match(c: number): number;
-    match(i: number, c: number): boolean;
+    match(matchers: number[], c: number): number;
+    match(matchers: number[], i: number, c: number): boolean;
     size(): number;
     toString(): string;
     toString(i: number): string;
+    toString(matchers: number[], i: number): string;
 }

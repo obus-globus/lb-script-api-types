@@ -53,7 +53,7 @@ export abstract class Collator extends Object implements Comparator<Object>, Clo
     static unregister(paramregistryKey: Object): boolean;
     constructor()
     // private checkNotFrozen(): void;
-    clone(): Object;
+    clone(): Collator;
     cloneAsThawed(): Collator;
     compare(source: Object, target: Object): number;
     compare(source: string, target: string): number;

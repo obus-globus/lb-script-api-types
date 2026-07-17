@@ -1,6 +1,6 @@
 import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { DynamicObjectLibrary } from '../../../../../../com/oracle/truffle/api/object/DynamicObjectLibrary.d.ts'
+import type { DynamicObject$PutNode } from '../../../../../../com/oracle/truffle/api/object/DynamicObject$PutNode.d.ts'
 import type { Shape } from '../../../../../../com/oracle/truffle/api/object/Shape.d.ts'
 import type { InlinedBranchProfile } from '../../../../../../com/oracle/truffle/api/profiles/InlinedBranchProfile.d.ts'
 import type { JavaScriptBaseNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptBaseNode.d.ts'
@@ -27,8 +27,8 @@ export abstract class SpecializedNewObjectNode extends JavaScriptBaseNode {
     // private isConstructor: boolean;
     // private isGenerator: boolean;
     createDefaultProto(target: JSDynamicObject, prototype: Object): JSDynamicObject;
-    createWithProto(target: JSDynamicObject, prototype: JSObject, setProtoNode: DynamicObjectLibrary, cachedShape: Shape): JSDynamicObject;
-    createWithProtoCachedClass(target: JSDynamicObject, prototype: Object, setProtoNode: DynamicObjectLibrary, prototypeClass: Class<Object>, cachedShape: Shape): JSDynamicObject;
+    createWithProto(target: JSDynamicObject, prototype: JSObject, setProtoNode: DynamicObject$PutNode, cachedShape: Shape): JSDynamicObject;
+    createWithProtoCachedClass(target: JSDynamicObject, prototype: Object, setProtoNode: DynamicObject$PutNode, prototypeClass: Class<Object>, cachedShape: Shape): JSDynamicObject;
     doCachedProto(target: JSDynamicObject, prototype: Object, cachedPrototype: Object, factory: JSObjectFactory): JSDynamicObject;
     doUncachedProto(target: JSDynamicObject, prototype: JSObject, slowBranch: InlinedBranchProfile): JSDynamicObject;
     execute(frame: VirtualFrame, newTarget: JSDynamicObject): JSDynamicObject;

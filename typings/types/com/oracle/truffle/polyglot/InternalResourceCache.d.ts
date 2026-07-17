@@ -24,6 +24,8 @@ export class InternalResourceCache extends Object {
     clearCache(): void;
     // private copyResourcesForNativeImage(target: Path): boolean;
     // private findStandaloneResourceRoot(root: Path): Path;
+    getInternalResource(): InternalResource;
+    getOwningRoot(): Path;
     getPath(polyglotEngine: PolyglotEngineImpl): Path;
     getPathOrNull(): Path;
     getResourceId(): string;

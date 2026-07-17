@@ -1,7 +1,7 @@
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
+import type { InlinedConditionProfile } from '../../../../../com/oracle/truffle/api/profiles/InlinedConditionProfile.d.ts'
 import type { InternalByteArray } from '../../../../../com/oracle/truffle/api/strings/InternalByteArray.d.ts'
 import type { MutableTruffleString } from '../../../../../com/oracle/truffle/api/strings/MutableTruffleString.d.ts'
-import type { TStringInternalNodes$GetCodePointLengthNode } from '../../../../../com/oracle/truffle/api/strings/TStringInternalNodes$GetCodePointLengthNode.d.ts'
 import type { TranscodingErrorHandler } from '../../../../../com/oracle/truffle/api/strings/TranscodingErrorHandler.d.ts'
 import type { TranscodingErrorHandler$ReplacementString } from '../../../../../com/oracle/truffle/api/strings/TranscodingErrorHandler$ReplacementString.d.ts'
 import type { TruffleString } from '../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
@@ -28,16 +28,9 @@ export class AbstractTruffleString extends Object {
     asManagedTruffleStringUncached(expectedEncoding: TruffleString$Encoding, cacheResult: boolean): TruffleString;
     asMutableTruffleStringUncached(expectedEncoding: TruffleString$Encoding): MutableTruffleString;
     asTruffleStringUncached(expectedEncoding: TruffleString$Encoding): TruffleString;
-    boundsCheck(node: Node, arrayA: number[], offsetA: number, index: number, expectedEncoding: TruffleString$Encoding, codePointLengthNode: TStringInternalNodes$GetCodePointLengthNode): void;
-    boundsCheck(node: Node, arrayA: number[], offsetA: number, fromIndex: number, toIndex: number, expectedEncoding: TruffleString$Encoding, codePointLengthNode: TStringInternalNodes$GetCodePointLengthNode): void;
-    boundsCheckByteIndexS0(byteIndex: number): void;
-    boundsCheckByteIndexUTF16(byteIndex: number): void;
-    boundsCheckByteIndexUTF32(byteIndex: number): void;
-    boundsCheckRaw(index: number): void;
-    boundsCheckRaw(fromIndex: number, toIndex: number): void;
-    boundsCheckRawLength(index: number): void;
-    boundsCheckRegion(node: Node, arrayA: number[], offsetA: number, fromIndex: number, regionLength: number, expectedEncoding: TruffleString$Encoding, codePointLengthNode: TStringInternalNodes$GetCodePointLengthNode): void;
-    boundsCheckRegionRaw(fromIndex: number, regionLength: number): void;
+    boundsCheck(node: Node, arrayA: number[], offsetA: number, index: number, expectedEncoding: TruffleString$Encoding, calcCodePointLengthProfile: InlinedConditionProfile): void;
+    boundsCheck(node: Node, arrayA: number[], offsetA: number, fromIndex: number, toIndex: number, expectedEncoding: TruffleString$Encoding, calcCodePointLengthProfile: InlinedConditionProfile): void;
+    boundsCheckRegion(node: Node, arrayA: number[], offsetA: number, fromIndex: number, regionLength: number, expectedEncoding: TruffleString$Encoding, calcCodePointLengthProfile: InlinedConditionProfile): void;
     byteArrayOffset(): number;
     byteIndexOfAnyByteUncached(fromByteIndex: number, maxByteIndex: number, values: number[], expectedEncoding: TruffleString$Encoding): number;
     byteIndexOfCodePointUncached(cp: number, fromIndex: number, toIndex: number, expectedEncoding: TruffleString$Encoding): number;
@@ -100,7 +93,6 @@ export class AbstractTruffleString extends Object {
     isEmpty(): boolean;
     isHashCodeCalculated(): boolean;
     isImmutable(): boolean;
-    isJavaString(): boolean;
     isLazyConcat(): boolean;
     isLazyLong(): boolean;
     isLooselyCompatibleTo(expectedEncoding: TruffleString$Encoding): boolean;
@@ -118,7 +110,9 @@ export class AbstractTruffleString extends Object {
     length(): number;
     looseCheckEncoding(expectedEncoding: TruffleString$Encoding, codeRangeA: number): void;
     materializeLazy(node: Node, thisData: Object): number[];
+    materializeSubstringUncached(expectedEncoding: TruffleString$Encoding): TruffleString;
     materializeUncached(a: AbstractTruffleString, expectedEncoding: TruffleString$Encoding): void;
+    materializeUncached(expectedEncoding: TruffleString$Encoding): void;
     offset(): number;
     parseDoubleUncached(): number;
     parseIntUncached(): number;

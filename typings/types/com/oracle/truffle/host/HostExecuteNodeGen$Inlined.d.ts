@@ -21,13 +21,8 @@ export class HostExecuteNodeGen$Inlined extends HostExecuteNode implements Unado
     // private cache: InlineSupport$ReferenceField<GuestToHostCodeCache>;
     // private errorBranch: InlinedBranchProfile;
     // private fixed_cache: InlineSupport$ReferenceField<HostExecuteNodeGen$FixedData>;
-    // private fixed_errorBranch_: InlinedBranchProfile;
-    // private fixed_seenScope_: InlinedBranchProfile;
     // private hostMethodProfile: HostExecuteNode$HostMethodProfileNode;
     // private overloadedCached_cache: InlineSupport$ReferenceField<HostExecuteNodeGen$OverloadedCachedData>;
-    // private overloadedcached_errorBranch_: InlinedBranchProfile;
-    // private overloadedcached_seenScope_: InlinedBranchProfile;
-    // private overloadedcached_seenVarArgs_: InlinedBranchProfile;
     // private seenScope: InlinedBranchProfile;
     // private state_0_: InlineSupport$StateField;
     // private toGuest: HostContext$ToGuestValueNode;
@@ -36,9 +31,6 @@ export class HostExecuteNodeGen$Inlined extends HostExecuteNode implements Unado
     // private toHost_field1_: InlineSupport$ReferenceField<Node>;
     // private varArgsProfile: InlinedConditionProfile;
     // private varArgs_cache: InlineSupport$ReferenceField<HostExecuteNodeGen$VarArgsData>;
-    // private varargs_errorBranch_: InlinedBranchProfile;
-    // private varargs_seenScope_: InlinedBranchProfile;
-    // private varargs_seenVarArgs_: InlinedBranchProfile;
     // private checkForPolymorphicSpecialize(arg0Value: Node, oldState_0: number, oldCacheCount: number): void;
     // private countCaches(arg0Value: Node): number;
     execute(arg0Value: Node, arg1Value: HostMethodDesc, arg2Value: Object, arg3Value: Object[], arg4Value: HostContext): Object;

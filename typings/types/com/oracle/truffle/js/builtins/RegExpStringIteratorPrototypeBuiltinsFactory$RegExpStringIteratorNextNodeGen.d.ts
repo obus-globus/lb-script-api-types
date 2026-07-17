@@ -1,6 +1,7 @@
 import type { VirtualFrame } from '../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
+import type { TruffleString$ReadCharUTF16Node } from '../../../../../com/oracle/truffle/api/strings/TruffleString$ReadCharUTF16Node.d.ts'
 import type { RegExpStringIteratorPrototypeBuiltins$RegExpStringIteratorNextNode } from '../../../../../com/oracle/truffle/js/builtins/RegExpStringIteratorPrototypeBuiltins$RegExpStringIteratorNextNode.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
@@ -22,7 +23,7 @@ export class RegExpStringIteratorPrototypeBuiltinsFactory$RegExpStringIteratorNe
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     private constructor(context: JSContext, builtin: JSBuiltin, arguments: JavaScriptNode[])
     // private arguments0_: JavaScriptNode;
-    // private regExpStringIterator_advanceStringIndex__field1_: Node;
+    // private regExpStringIterator_advanceStringIndex__field1_: TruffleString$ReadCharUTF16Node;
     // private regExpStringIterator_noMatchProfile__field0_: number;
     // private regExpStringIterator_noMatchProfile__field1_: number;
     // private state_0_: number;

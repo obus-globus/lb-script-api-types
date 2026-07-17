@@ -13,7 +13,7 @@ import type { ClientboundPlayerPositionPacket } from '../../../../../../../../..
  * @testedOn localhost
  * @note ONLY WORKS ON 1.13+ SERVERS
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286.kt:46}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286.kt:46}
  */
 export class FlyVulcan286 extends Mode {
     static Companion: Tagged$Companion;

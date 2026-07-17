@@ -19,6 +19,7 @@ export class TraceSplittingListener extends Object implements OptimizedTruffleRu
     private constructor()
     // private splitCount: number;
     onCompilationDeoptimized(target: OptimizedCallTarget, frame: Frame): void;
+    onCompilationDeoptimized(target: OptimizedCallTarget, frame: Frame, reason: string): void;
     onCompilationDequeued(target: OptimizedCallTarget, source: Object, reason: CharSequence, tier: number): void;
     onCompilationFailed(target: OptimizedCallTarget, reason: string, bailout: boolean, permanentBailout: boolean): void;
     onCompilationFailed(target: OptimizedCallTarget, reason: string, bailout: boolean, permanentBailout: boolean, tier: number): void;
@@ -37,5 +38,6 @@ export class TraceSplittingListener extends Object implements OptimizedTruffleRu
     onCompilationTruffleTierFinished(target: OptimizedCallTarget, task: AbstractCompilationTask, graph: TruffleCompilerListener$GraphInfo): void;
     onCompilationTruffleTierFinished(target: OptimizedCallTarget, inliningDecision: TruffleInlining, graph: TruffleCompilerListener$GraphInfo): void;
     onEngineClosed(runtimeData: EngineData): void;
+    onProfileReset(target: OptimizedCallTarget): void;
     onShutdown(): void;
 }

@@ -5,6 +5,7 @@ export class ByteBufferDataInput extends Object implements DataInput {
     constructor(buffer: ByteBuffer)
     // private buffer: ByteBuffer;
     // private lineBuffer: string[];
+    position(): number;
     readBoolean(): boolean;
     readByte(): number;
     readChar(): string;

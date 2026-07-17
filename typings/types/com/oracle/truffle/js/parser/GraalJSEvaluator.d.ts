@@ -45,6 +45,7 @@ export class GraalJSEvaluator extends Object implements JSParser {
     loadRequestedModules(realm: JSRealm, moduleRecord: CyclicModuleRecord, hostDefined: Object): JSPromiseObject;
     moduleEvaluation(realm: JSRealm, moduleRecord: CyclicModuleRecord): JSPromiseObject;
     moduleLinking(realm: JSRealm, moduleRecord: CyclicModuleRecord): void;
+    parseBytesModule(realm: JSRealm, source: Source): AbstractModuleRecord;
     parseDate(realm: JSRealm, date: string, extraLenient: boolean): number[];
     parseDirectEval(context: JSContext, lastNode: Node, source: Source, evalEnv: Object): ScriptNode;
     parseEval(context: JSContext, lastNode: Node, source: Source, activeScriptOrModule: ScriptOrModule): ScriptNode;
@@ -59,6 +60,7 @@ export class GraalJSEvaluator extends Object implements JSParser {
     parseScript(context: JSContext, source: Source, prolog: string, epilog: string, isStrict: boolean): ScriptNode;
     parseScript(context: JSContext, source: Source, prolog: string, epilog: string, isStrict: boolean, argumentNames: string[]): ScriptNode;
     parseScript(context: JSContext, sourceCode: string): ScriptNode;
+    parseTextModule(realm: JSRealm, source: Source): AbstractModuleRecord;
     parseToJSON(context: JSContext, code: string, name: string, includeLoc: boolean): string;
     parseWasmModuleSource(realm: JSRealm, source: Source): AbstractModuleRecord;
 }

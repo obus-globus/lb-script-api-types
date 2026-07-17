@@ -9,12 +9,15 @@ import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class ArrayBufferPrototypeBuiltins$ArrayBufferPrototype extends Enum<ArrayBufferPrototypeBuiltins$ArrayBufferPrototype> implements BuiltinEnum<ArrayBufferPrototypeBuiltins$ArrayBufferPrototype> {
     static byteLength: ArrayBufferPrototypeBuiltins$ArrayBufferPrototype;
     static detached: ArrayBufferPrototypeBuiltins$ArrayBufferPrototype;
+    static immutable: ArrayBufferPrototypeBuiltins$ArrayBufferPrototype;
     static maxByteLength: ArrayBufferPrototypeBuiltins$ArrayBufferPrototype;
     static resizable: ArrayBufferPrototypeBuiltins$ArrayBufferPrototype;
     static resize: ArrayBufferPrototypeBuiltins$ArrayBufferPrototype;
     static slice: ArrayBufferPrototypeBuiltins$ArrayBufferPrototype;
+    static sliceToImmutable: ArrayBufferPrototypeBuiltins$ArrayBufferPrototype;
     static transfer: ArrayBufferPrototypeBuiltins$ArrayBufferPrototype;
     static transferToFixedLength: ArrayBufferPrototypeBuiltins$ArrayBufferPrototype;
+    static transferToImmutable: ArrayBufferPrototypeBuiltins$ArrayBufferPrototype;
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): ArrayBufferPrototypeBuiltins$ArrayBufferPrototype;
@@ -40,5 +43,5 @@ export class ArrayBufferPrototypeBuiltins$ArrayBufferPrototype extends Enum<Arra
     isSetter(): boolean;
     isWritable(): boolean;
     prependAccessorPrefix(name: TruffleString): TruffleString;
-    name(): "byteLength" | "slice" | "detached" | "transfer" | "transferToFixedLength" | "maxByteLength" | "resizable" | "resize";
+    name(): "byteLength" | "slice" | "detached" | "transfer" | "transferToFixedLength" | "maxByteLength" | "resizable" | "resize" | "immutable" | "transferToImmutable" | "sliceToImmutable";
 }

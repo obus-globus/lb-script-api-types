@@ -4,4 +4,5 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface Introspection$Provider extends Object{
     getIntrospectionData(): Introspection;
     getIntrospectionData(inlinedParent: Node): Introspection;
+    getIntrospectionData(bytecodeNode: Node, bytecodeIndex: number): Introspection;
 }

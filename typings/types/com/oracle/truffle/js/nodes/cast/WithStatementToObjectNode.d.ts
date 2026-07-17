@@ -1,4 +1,5 @@
 import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
+import type { InteropLibrary } from '../../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { JSToObjectNode } from '../../../../../../com/oracle/truffle/js/nodes/cast/JSToObjectNode.d.ts'
@@ -18,5 +19,5 @@ export abstract class WithStatementToObjectNode extends JSUnaryNode {
     constructor(operand: JavaScriptNode)
     copyUninitialized(materializedTags: Class<Tag>[]): JavaScriptNode;
     // private createTypeErrorNotObjectCoercible(value: Object): JSException;
-    doDefault(value: Object, toObjectNode: JSToObjectNode): Object;
+    doDefault(value: Object, toObjectNode: JSToObjectNode, interop: InteropLibrary): Object;
 }

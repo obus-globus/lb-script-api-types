@@ -9,8 +9,8 @@ export class ScriptEnvironment$Builder extends Object {
     // private constAsVar: boolean;
     // private ecmaScriptVersion: number;
     // private emptyStatements: boolean;
+    // private explicitResourceManagement: boolean;
     // private functionStatementBehavior: ScriptEnvironment$FunctionStatementBehavior;
-    // private importAssertions: boolean;
     // private importAttributes: boolean;
     // private privateFieldsIn: boolean;
     // private scripting: boolean;
@@ -27,8 +27,8 @@ export class ScriptEnvironment$Builder extends Object {
     constAsVar(constAsVar: boolean): ScriptEnvironment$Builder;
     ecmaScriptVersion(ecmaScriptVersion: number): ScriptEnvironment$Builder;
     emptyStatements(emptyStatements: boolean): ScriptEnvironment$Builder;
+    explicitResourceManagement(explicitResourceManagement: boolean): ScriptEnvironment$Builder;
     functionStatementBehavior(functionStatementBehavior: ScriptEnvironment$FunctionStatementBehavior): ScriptEnvironment$Builder;
-    importAssertions(importAssertions: boolean): ScriptEnvironment$Builder;
     importAttributes(importAttributes: boolean): ScriptEnvironment$Builder;
     privateFieldsIn(privateFieldsIn: boolean): ScriptEnvironment$Builder;
     scripting(scripting: boolean): ScriptEnvironment$Builder;

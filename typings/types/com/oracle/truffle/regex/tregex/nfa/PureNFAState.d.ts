@@ -11,6 +11,14 @@ export class PureNFAState extends BasicState<PureNFAState, PureNFATransition> {
     static KIND_EMPTY_MATCH: number;
     static KIND_INITIAL_OR_FINAL_STATE: number;
     static KIND_SUB_MATCHER: number;
+    static isAnchoredFinalState(paramflags: number): boolean;
+    static isDeterministic(paramflags: number): boolean;
+    static isIgnoreCaseReference(paramflags: number): boolean;
+    static isIgnoreCaseReferenceAlternativeMode(paramflags: number): boolean;
+    static isLookAround(paramflags: number): boolean;
+    static isRecursiveReference(paramflags: number): boolean;
+    static isSubMatcherNegated(paramflags: number): boolean;
+    static isUnAnchoredFinalState(paramflags: number): boolean;
     constructor(id: number, t: Term)
     // private astNodeId: number;
     readonly charSet: (Object | null)[];

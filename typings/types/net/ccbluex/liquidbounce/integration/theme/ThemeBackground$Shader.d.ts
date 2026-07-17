@@ -15,7 +15,7 @@ import type { Identifier } from '../../../../../net/minecraft/resources/Identifi
  *
  * @param pipeline the shader render pipeline
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/ThemeBackground.kt#L108 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/ThemeBackground.kt:108}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/ThemeBackground.kt#L108 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/ThemeBackground.kt:108}
  */
 export class ThemeBackground$Shader extends Object implements ThemeBackground {
     static Companion: ThemeBackground$Shader$Companion;

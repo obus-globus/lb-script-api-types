@@ -6,7 +6,6 @@ import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
 import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
-import type { JSRelativeTimeFormatObject } from '../../../../../com/oracle/truffle/js/runtime/builtins/intl/JSRelativeTimeFormatObject.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ConstructorBuiltinsFactory$ConstructRelativeTimeFormatNodeGen extends ConstructorBuiltins$ConstructRelativeTimeFormatNode {
@@ -24,8 +23,6 @@ export class ConstructorBuiltinsFactory$ConstructRelativeTimeFormatNodeGen exten
     // private arguments0_: JavaScriptNode;
     // private arguments1_: JavaScriptNode;
     // private arguments2_: JavaScriptNode;
-    // private state_0_: number;
     execute(frameValue: VirtualFrame): Object;
-    // private executeAndSpecialize(arguments0Value: Object, arguments1Value: Object, arguments2Value: Object): JSRelativeTimeFormatObject;
     getArguments(): JavaScriptNode[];
 }

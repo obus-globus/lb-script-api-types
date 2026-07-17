@@ -14,6 +14,7 @@ import type { Feature$DuringAnalysisAccess } from '../../../../org/graalvm/nativ
 import type { Feature$DuringSetupAccess } from '../../../../org/graalvm/nativeimage/hosted/Feature$DuringSetupAccess.d.ts'
 import type { Feature$IsInConfigurationAccess } from '../../../../org/graalvm/nativeimage/hosted/Feature$IsInConfigurationAccess.d.ts'
 import type { Feature$OnAnalysisExitAccess } from '../../../../org/graalvm/nativeimage/hosted/Feature$OnAnalysisExitAccess.d.ts'
+import type { Feature$OnRegistrationAccess } from '../../../../org/graalvm/nativeimage/hosted/Feature$OnRegistrationAccess.d.ts'
 export interface Feature extends Object{
     afterAnalysis(access: Feature$AfterAnalysisAccess): void;
     afterCompilation(access: Feature$AfterCompilationAccess): void;
@@ -33,4 +34,5 @@ export interface Feature extends Object{
     getURL(): string;
     isInConfiguration(access: Feature$IsInConfigurationAccess): boolean;
     onAnalysisExit(access: Feature$OnAnalysisExitAccess): void;
+    onRegistration(access: Feature$OnRegistrationAccess): void;
 }

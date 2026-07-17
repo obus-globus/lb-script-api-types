@@ -17,8 +17,8 @@ export class JSOrNodeGen extends JSOrNode {
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     private constructor(left: JavaScriptNode, right: JavaScriptNode)
-    // private generic_toBoolean__field1_: Node;
     // private state_0_: number;
+    // private toBoolean_field1_: Node;
     execute(frameValue: VirtualFrame): Object;
     // private executeAndSpecialize(frameValue: VirtualFrame, leftNodeValue: Object): Object;
     executeEvaluated(frameValue: VirtualFrame, leftNodeValue: Object): Object;

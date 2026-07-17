@@ -2,5 +2,4 @@ import type { ExtLocations$ValueLocation } from '../../../../../com/oracle/truff
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ExtLocations$ConstantLocation extends ExtLocations$ValueLocation {
     constructor(value: Object)
-    isConstant(): boolean;
 }

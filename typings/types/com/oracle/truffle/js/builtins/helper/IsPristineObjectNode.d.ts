@@ -9,7 +9,8 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class IsPristineObjectNode extends JavaScriptBaseNode {
     static create(paramjsClass: JSClass, paraminitialPrototypeShape: Shape, ...parampropertyKeys: Object[]): IsPristineObjectNode;
-    static createRegExpExecAndMatch(paramcontext: JSContext): IsPristineObjectNode;
+    static createRegExpExec(paramcontext: JSContext): IsPristineObjectNode;
+    static createRegExpExecAndFlagGetter(paramcontext: JSContext, ...paramextraPropertyKeys: Object[]): IsPristineObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(jsClass: JSClass, initialPrototypeShape: Shape, ...propertyKeys: Object[])
     // private getPrototypeNode: GetPrototypeNode;

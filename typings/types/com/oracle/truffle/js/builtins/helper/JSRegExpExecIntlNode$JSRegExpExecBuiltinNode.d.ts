@@ -1,5 +1,6 @@
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { DynamicObjectLibrary } from '../../../../../../com/oracle/truffle/api/object/DynamicObjectLibrary.d.ts'
+import type { DynamicObject$PutConstantNode } from '../../../../../../com/oracle/truffle/api/object/DynamicObject$PutConstantNode.d.ts'
+import type { DynamicObject$PutNode } from '../../../../../../com/oracle/truffle/api/object/DynamicObject$PutNode.d.ts'
 import type { InlinedConditionProfile } from '../../../../../../com/oracle/truffle/api/profiles/InlinedConditionProfile.d.ts'
 import type { InlinedCountingConditionProfile } from '../../../../../../com/oracle/truffle/api/profiles/InlinedCountingConditionProfile.d.ts'
 import type { TruffleString } from '../../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
@@ -27,12 +28,12 @@ export abstract class JSRegExpExecIntlNode$JSRegExpExecBuiltinNode extends JavaS
     // private ecmaScriptVersion: number;
     // private getLastIndexNode: PropertyGetNode;
     // private groupsBuilder: JSRegExpExecIntlNode$BuildGroupsObjectNode;
-    // private setGroupsNode: DynamicObjectLibrary;
-    // private setIndexNode: DynamicObjectLibrary;
-    // private setIndicesGroupsNode: DynamicObjectLibrary;
-    // private setIndicesNode: DynamicObjectLibrary;
-    // private setIndicesRegexResultNode: DynamicObjectLibrary;
-    // private setInputNode: DynamicObjectLibrary;
+    // private setGroupsNode: DynamicObject$PutNode;
+    // private setIndexNode: DynamicObject$PutConstantNode;
+    // private setIndicesGroupsNode: DynamicObject$PutNode;
+    // private setIndicesNode: DynamicObject$PutNode;
+    // private setIndicesRegexResultNode: DynamicObject$PutNode;
+    // private setInputNode: DynamicObject$PutNode;
     // private setLastIndexNode: PropertySetNode;
     // private setRegexOriginalInputNode: PropertySetNode;
     // private setRegexResultNode: PropertySetNode;

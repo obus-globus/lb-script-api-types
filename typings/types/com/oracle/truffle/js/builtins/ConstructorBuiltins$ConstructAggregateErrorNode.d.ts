@@ -1,6 +1,6 @@
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { DynamicObjectLibrary } from '../../../../../com/oracle/truffle/api/object/DynamicObjectLibrary.d.ts'
+import type { DynamicObject$PutNode } from '../../../../../com/oracle/truffle/api/object/DynamicObject$PutNode.d.ts'
 import type { ConstructorBuiltins$ConstructWithNewTargetNode } from '../../../../../com/oracle/truffle/js/builtins/ConstructorBuiltins$ConstructWithNewTargetNode.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { ErrorStackTraceLimitNode } from '../../../../../com/oracle/truffle/js/nodes/access/ErrorStackTraceLimitNode.d.ts'
@@ -30,7 +30,7 @@ export abstract class ConstructorBuiltins$ConstructAggregateErrorNode extends Co
     constructor(context: JSContext, builtin: JSBuiltin, isNewTargetCase: boolean)
     // private initErrorObjectNode: InitErrorObjectNode;
     // private installErrorCauseNode: InstallErrorCauseNode;
-    // private setMessage: DynamicObjectLibrary;
+    // private setMessage: DynamicObject$PutNode;
     // private stackTraceLimitNode: ErrorStackTraceLimitNode;
     constructError(newTarget: JSDynamicObject, errorsObj: Object, messageObj: Object, options: Object, toStringNode: JSToStringNode, getIteratorNode: GetIteratorNode, iterableToListNode: IterableToListNode): JSDynamicObject;
     countsTowardsStackTraceLimit(): boolean;

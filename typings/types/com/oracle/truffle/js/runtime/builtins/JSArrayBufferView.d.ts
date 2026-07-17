@@ -54,8 +54,11 @@ export class JSArrayBufferView extends JSNonProxy {
     static typedArrayGetName(paramthisObj: JSDynamicObject): TruffleString;
     private constructor()
     defineOwnProperty(thisObj: JSDynamicObject, key: Object, descriptor: PropertyDescriptor, doThrow: boolean): boolean;
+    // private defineOwnPropertyIndex(thisObj: JSDynamicObject, numericIndex: Number, desc: PropertyDescriptor): boolean;
     delete(thisObj: JSDynamicObject, key: Object, isStrict: boolean): boolean;
+    delete(thisObj: JSDynamicObject, key: Object, isStrict: boolean, resultWhenNotPresent: boolean): boolean;
     delete(thisObj: JSDynamicObject, index: number, isStrict: boolean): boolean;
+    delete(thisObj: JSDynamicObject, index: number, isStrict: boolean, resultWhenNotPresent: boolean): boolean;
     getHelper(store: JSDynamicObject, receiver: Object, key: Object, encapsulatingNode: Node): Object;
     getHelper(store: JSDynamicObject, receiver: Object, index: number, encapsulatingNode: Node): Object;
     getOwnHelper(store: JSDynamicObject, receiver: Object, key: Object, encapsulatingNode: Node): Object;

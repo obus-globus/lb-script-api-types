@@ -1,7 +1,5 @@
-import type { TruffleLanguage } from '../../../../../com/oracle/truffle/api/TruffleLanguage.d.ts'
 import type { TruffleObject } from '../../../../../com/oracle/truffle/api/interop/TruffleObject.d.ts'
 import type { TruffleString } from '../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
-import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { BigInteger } from '../../../../../java/math/BigInteger.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../../java/lang/Comparable.d.ts'
@@ -10,6 +8,7 @@ export class BigInt extends Object implements TruffleObject, Comparable<BigInt> 
     static MIN_INT: BigInt;
     static NEGATIVE_ONE: BigInt;
     static ONE: BigInt;
+    static TWO: BigInt;
     static ZERO: BigInt;
     static doubleValueOf(paramvalue: BigInteger): number;
     static fromBigInteger(paramvalue: BigInteger): BigInt;
@@ -46,9 +45,9 @@ export class BigInt extends Object implements TruffleObject, Comparable<BigInt> 
     fitsInInt(): boolean;
     fitsInLong(): boolean;
     fitsInShort(): boolean;
-    getLanguage(): Class<TruffleLanguage<Object>>;
+    getLanguageId(): string;
     getMetaObject(): Object;
-    hasLanguage(): boolean;
+    hasLanguageId(): boolean;
     hasMetaObject(): boolean;
     hashCode(): number;
     intValue(): number;

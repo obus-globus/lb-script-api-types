@@ -1,6 +1,7 @@
 import type { ParsePosition } from '../../../../../../../java/text/ParsePosition.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { Cloneable } from '../../../../../../../java/lang/Cloneable.d.ts'
 import type { LocalizedNumberFormatter } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/number/LocalizedNumberFormatter.d.ts'
 import type { MeasureFormat } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/MeasureFormat.d.ts'
 import type { MeasureFormat$FormatWidth } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/MeasureFormat$FormatWidth.d.ts'
@@ -9,7 +10,7 @@ import type { PluralRules } from '../../../../../../../org/graalvm/shadowed/com/
 import type { TimeUnit } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/TimeUnit.d.ts'
 import type { TimeUnitAmount } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/TimeUnitAmount.d.ts'
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
-export class TimeUnitFormat extends MeasureFormat {
+export class TimeUnitFormat extends MeasureFormat implements Cloneable {
     static ABBREVIATED_NAME: number;
     static FULL_NAME: number;
     static getCurrencyFormat(): MeasureFormat;
@@ -31,7 +32,7 @@ export class TimeUnitFormat extends MeasureFormat {
     // private pluralRules: PluralRules;
     // private style: number;
     // private timeUnitToCountToPatterns: Map<TimeUnit, { [key: string]: Object[] }>;
-    clone(): Object;
+    clone(): TimeUnitFormat;
     getNumberFormat(): NumberFormat;
     getNumberFormatInternal(): NumberFormat;
     getNumberFormatter(): LocalizedNumberFormatter;

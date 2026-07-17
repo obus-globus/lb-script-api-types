@@ -1,5 +1,6 @@
 import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
+import type { InteropLibrary } from '../../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { TruffleString } from '../../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
 import type { TextDecoderBuiltins$DecodeBufferSlice } from '../../../../../../com/oracle/truffle/js/builtins/web/TextDecoderBuiltins$DecodeBufferSlice.d.ts'
@@ -26,12 +27,12 @@ export class TextDecoderBuiltinsFactory$DecodeNodeGen extends TextDecoderBuiltin
     // private arguments0_: JavaScriptNode;
     // private arguments1_: JavaScriptNode;
     // private arguments2_: JavaScriptNode;
-    // private arrayBuffer_arrayBufferByteLengthNode__field1_: Node;
+    // private arrayBuffer_arrayBufferByteLengthNode__field1_: InteropLibrary;
     // private dataView_getViewByteLengthNode_: GetViewByteLengthNode;
     // private decodeBufferSlice: TextDecoderBuiltins$DecodeBufferSlice;
     // private state_0_: number;
     // private typedArray_getTypedArrayByteLengthNode__field1_: Object;
-    // private typedArray_getTypedArrayByteLengthNode__field2_: Node;
+    // private typedArray_getTypedArrayByteLengthNode__field2_: InteropLibrary;
     execute(frameValue: VirtualFrame): Object;
     // private executeAndSpecialize(arguments0Value: Object, arguments1Value: Object, arguments2Value: Object): TruffleString;
     // private fallbackGuard_(state_0: number, arguments0Value: Object, arguments1Value: Object, arguments2Value: Object): boolean;

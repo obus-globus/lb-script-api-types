@@ -25,8 +25,8 @@ export class PreCalcResultVisitor extends DepthFirstTraversalRegexASTVisitor {
     readonly mask: AbstractStringBuffer;
     // private result: PreCalculatedResultFactory;
     // private unrollGroups: boolean;
-    getLiteral(): number[];
-    getMask(): number[];
+    getLiteral(): AbstractStringBuffer;
+    getMask(): AbstractStringBuffer;
     getResultFactory(): PreCalculatedResultFactory;
     isBooleanMatch(): boolean;
     leave(atomicGroup: AtomicGroup): void;

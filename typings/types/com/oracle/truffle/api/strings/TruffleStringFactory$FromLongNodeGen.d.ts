@@ -5,7 +5,5 @@ export class TruffleStringFactory$FromLongNodeGen extends TruffleString$FromLong
     static create(): TruffleString$FromLongNode;
     static getUncached(): TruffleString$FromLongNode;
     private constructor()
-    // private state_0_: number;
     execute(arg0Value: number, arg1Value: TruffleString$Encoding, arg2Value: boolean): TruffleString;
-    // private executeAndSpecialize(arg0Value: number, arg1Value: TruffleString$Encoding, arg2Value: boolean): TruffleString;
 }

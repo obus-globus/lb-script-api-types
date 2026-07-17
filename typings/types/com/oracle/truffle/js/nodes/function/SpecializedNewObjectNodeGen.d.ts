@@ -1,6 +1,6 @@
 import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { DynamicObjectLibrary } from '../../../../../../com/oracle/truffle/api/object/DynamicObjectLibrary.d.ts'
+import type { DynamicObject$PutNode } from '../../../../../../com/oracle/truffle/api/object/DynamicObject$PutNode.d.ts'
 import type { Shape } from '../../../../../../com/oracle/truffle/api/object/Shape.d.ts'
 import type { SpecializedNewObjectNode } from '../../../../../../com/oracle/truffle/js/nodes/function/SpecializedNewObjectNode.d.ts'
 import type { SpecializedNewObjectNodeGen$CachedProtoData } from '../../../../../../com/oracle/truffle/js/nodes/function/SpecializedNewObjectNodeGen$CachedProtoData.d.ts'
@@ -19,7 +19,7 @@ export class SpecializedNewObjectNodeGen extends SpecializedNewObjectNode {
     // private cachedProto_cache: SpecializedNewObjectNodeGen$CachedProtoData;
     // private cachedShape: Shape;
     // private createWithProtoCachedClass_cache: SpecializedNewObjectNodeGen$CreateWithProtoCachedClassData;
-    // private setProtoNode: DynamicObjectLibrary;
+    // private setProtoNode: DynamicObject$PutNode;
     // private state_0_: number;
     // private checkForPolymorphicSpecialize(oldState_0: number): void;
     execute(frame: VirtualFrame, newTarget: JSDynamicObject): JSDynamicObject;

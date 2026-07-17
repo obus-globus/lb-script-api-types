@@ -9,7 +9,7 @@ import type { GameTickEvent } from '../../../../../../../../../net/ccbluex/liqui
  * @tested eu.loyisa.cn
  * @note May cause occasional step flags if player is in a 1x1 water hole.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/liquidwalk/modes/LiquidWalkVulcan291.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/liquidwalk/modes/LiquidWalkVulcan291.kt:35}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/liquidwalk/modes/LiquidWalkVulcan291.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/liquidwalk/modes/LiquidWalkVulcan291.kt:35}
  */
 export class LiquidWalkVulcan291 extends Mode {
     static Companion: Tagged$Companion;

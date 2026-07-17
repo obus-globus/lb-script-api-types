@@ -9,5 +9,5 @@ export abstract class TruffleString$FromCodePointNode extends AbstractPublicNode
     constructor()
     execute(codepoint: number, encoding: TruffleString$Encoding): TruffleString;
     execute(codepoint: number, encoding: TruffleString$Encoding, allowUTF16Surrogates: boolean): TruffleString;
-    fromCodePoint(c: number, enc: TruffleString$Encoding, allowUTF16Surrogates: boolean, bytesProfile: InlinedConditionProfile, utf8Profile: InlinedConditionProfile, utf16Profile: InlinedConditionProfile, utf16FEProfile: InlinedConditionProfile, utf32Profile: InlinedConditionProfile, utf32FEProfile: InlinedConditionProfile, exoticProfile: InlinedConditionProfile, bmpProfile: InlinedConditionProfile, invalidCodePoint: InlinedBranchProfile): TruffleString;
+    fromCodePoint(c: number, enc: TruffleString$Encoding, allowUTF16Surrogates: boolean, bmpProfile: InlinedConditionProfile, invalidCodePoint: InlinedBranchProfile): TruffleString;
 }

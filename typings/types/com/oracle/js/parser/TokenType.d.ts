@@ -9,7 +9,6 @@ export class TokenType extends Enum<TokenType> {
     static ARRAY: TokenType;
     static ARROW: TokenType;
     static AS: TokenType;
-    static ASSERT: TokenType;
     static ASSIGN: TokenType;
     static ASSIGN_ADD: TokenType;
     static ASSIGN_AND: TokenType;
@@ -142,6 +141,7 @@ export class TokenType extends Enum<TokenType> {
     static TRUE: TokenType;
     static TRY: TokenType;
     static TYPEOF: TokenType;
+    static USING: TokenType;
     static VAR: TokenType;
     static VOID: TokenType;
     static WHILE: TokenType;
@@ -169,6 +169,7 @@ export class TokenType extends Enum<TokenType> {
     getNext(): TokenType;
     getPrecedence(): number;
     isAssignment(): boolean;
+    isAssignmentOperator(): boolean;
     isContextualKeyword(): boolean;
     isFutureStrict(): boolean;
     isLeftAssociative(): boolean;
@@ -177,5 +178,5 @@ export class TokenType extends Enum<TokenType> {
     setNext(next: TokenType): void;
     startsWith(c: string): boolean;
     toString(): string;
-    name(): "ERROR" | "EOF" | "EOL" | "COMMENT" | "DIRECTIVE_COMMENT" | "NOT" | "NE" | "NE_STRICT" | "MOD" | "ASSIGN_MOD" | "BIT_AND" | "AND" | "ASSIGN_BIT_AND" | "ASSIGN_AND" | "LPAREN" | "RPAREN" | "MUL" | "ASSIGN_MUL" | "EXP" | "ASSIGN_EXP" | "ADD" | "INCPREFIX" | "ASSIGN_ADD" | "COMMARIGHT" | "SUB" | "DECPREFIX" | "ASSIGN_SUB" | "PERIOD" | "DIV" | "ASSIGN_DIV" | "COLON" | "SEMICOLON" | "LT" | "SHL" | "ASSIGN_SHL" | "LE" | "ASSIGN" | "EQ" | "EQ_STRICT" | "ARROW" | "GT" | "GE" | "SAR" | "ASSIGN_SAR" | "SHR" | "ASSIGN_SHR" | "TERNARY" | "LBRACKET" | "RBRACKET" | "BIT_XOR" | "ASSIGN_BIT_XOR" | "LBRACE" | "BIT_OR" | "ASSIGN_BIT_OR" | "OR" | "ASSIGN_OR" | "RBRACE" | "BIT_NOT" | "ELLIPSIS" | "NULLISHCOALESC" | "ASSIGN_NULLCOAL" | "OPTIONAL_CHAIN" | "AT" | "ACCESSOR" | "AS" | "ASSERT" | "ASYNC" | "AWAIT" | "BREAK" | "CASE" | "CATCH" | "CLASS" | "CONST" | "CONTINUE" | "DEBUGGER" | "DEFAULT" | "DELETE" | "DO" | "ELSE" | "ENUM" | "EXPORT" | "EXTENDS" | "FALSE" | "FINALLY" | "FOR" | "FROM" | "FUNCTION" | "GET" | "IF" | "IMPLEMENTS" | "IMPORT" | "IN" | "INSTANCEOF" | "INTERFACE" | "LET" | "NEW" | "NULL" | "OF" | "PACKAGE" | "PRIVATE" | "PROTECTED" | "PUBLIC" | "RETURN" | "SET" | "STATIC" | "SUPER" | "SWITCH" | "THIS" | "THROW" | "TRUE" | "TRY" | "TYPEOF" | "VAR" | "VOID" | "WHILE" | "WITH" | "YIELD" | "DECIMAL" | "NON_OCTAL_DECIMAL" | "HEXADECIMAL" | "OCTAL_LEGACY" | "OCTAL" | "BINARY_NUMBER" | "BIGINT" | "FLOATING" | "STRING" | "ESCSTRING" | "IDENT" | "REGEX" | "OBJECT" | "ARRAY" | "TEMPLATE" | "TEMPLATE_HEAD" | "TEMPLATE_MIDDLE" | "TEMPLATE_TAIL" | "PRIVATE_IDENT" | "COMMALEFT" | "DECPOSTFIX" | "INCPOSTFIX" | "SPREAD_ARGUMENT" | "SPREAD_ARRAY" | "SPREAD_OBJECT" | "YIELD_STAR" | "ASSIGN_INIT" | "NAMEDEVALUATION";
+    name(): "ERROR" | "EOF" | "EOL" | "COMMENT" | "DIRECTIVE_COMMENT" | "NOT" | "NE" | "NE_STRICT" | "MOD" | "ASSIGN_MOD" | "BIT_AND" | "AND" | "ASSIGN_BIT_AND" | "ASSIGN_AND" | "LPAREN" | "RPAREN" | "MUL" | "ASSIGN_MUL" | "EXP" | "ASSIGN_EXP" | "ADD" | "INCPREFIX" | "ASSIGN_ADD" | "COMMARIGHT" | "SUB" | "DECPREFIX" | "ASSIGN_SUB" | "PERIOD" | "DIV" | "ASSIGN_DIV" | "COLON" | "SEMICOLON" | "LT" | "SHL" | "ASSIGN_SHL" | "LE" | "ASSIGN" | "EQ" | "EQ_STRICT" | "ARROW" | "GT" | "GE" | "SAR" | "ASSIGN_SAR" | "SHR" | "ASSIGN_SHR" | "TERNARY" | "LBRACKET" | "RBRACKET" | "BIT_XOR" | "ASSIGN_BIT_XOR" | "LBRACE" | "BIT_OR" | "ASSIGN_BIT_OR" | "OR" | "ASSIGN_OR" | "RBRACE" | "BIT_NOT" | "ELLIPSIS" | "NULLISHCOALESC" | "ASSIGN_NULLCOAL" | "OPTIONAL_CHAIN" | "AT" | "ACCESSOR" | "AS" | "ASYNC" | "AWAIT" | "BREAK" | "CASE" | "CATCH" | "CLASS" | "CONST" | "CONTINUE" | "DEBUGGER" | "DEFAULT" | "DELETE" | "DO" | "ELSE" | "ENUM" | "EXPORT" | "EXTENDS" | "FALSE" | "FINALLY" | "FOR" | "FROM" | "FUNCTION" | "GET" | "IF" | "IMPLEMENTS" | "IMPORT" | "IN" | "INSTANCEOF" | "INTERFACE" | "LET" | "NEW" | "NULL" | "OF" | "PACKAGE" | "PRIVATE" | "PROTECTED" | "PUBLIC" | "RETURN" | "SET" | "STATIC" | "SUPER" | "SWITCH" | "THIS" | "THROW" | "TRUE" | "TRY" | "TYPEOF" | "USING" | "VAR" | "VOID" | "WHILE" | "WITH" | "YIELD" | "DECIMAL" | "NON_OCTAL_DECIMAL" | "HEXADECIMAL" | "OCTAL_LEGACY" | "OCTAL" | "BINARY_NUMBER" | "BIGINT" | "FLOATING" | "STRING" | "ESCSTRING" | "IDENT" | "REGEX" | "OBJECT" | "ARRAY" | "TEMPLATE" | "TEMPLATE_HEAD" | "TEMPLATE_MIDDLE" | "TEMPLATE_TAIL" | "PRIVATE_IDENT" | "COMMALEFT" | "DECPOSTFIX" | "INCPOSTFIX" | "SPREAD_ARGUMENT" | "SPREAD_ARRAY" | "SPREAD_OBJECT" | "YIELD_STAR" | "ASSIGN_INIT" | "NAMEDEVALUATION";
 }

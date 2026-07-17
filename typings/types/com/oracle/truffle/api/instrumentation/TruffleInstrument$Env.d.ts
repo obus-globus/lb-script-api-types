@@ -40,6 +40,7 @@ export class TruffleInstrument$Env extends Object {
     createSystemThread(runnable: () => void, threadGroup: ThreadGroup): Thread;
     err(): OutputStream;
     getEnteredContext(): TruffleContext;
+    getHostLanguage(): LanguageInfo;
     getInstrumenter(): Instrumenter;
     getInstruments(): { [key: string]: InstrumentInfo };
     getInternalResource(resource: Class<InternalResource>): TruffleFile;

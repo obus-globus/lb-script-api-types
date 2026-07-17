@@ -1,8 +1,8 @@
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
-import type { InteropLibrary } from '../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { InlinedBranchProfile } from '../../../../../com/oracle/truffle/api/profiles/InlinedBranchProfile.d.ts'
 import type { InlinedConditionProfile } from '../../../../../com/oracle/truffle/api/profiles/InlinedConditionProfile.d.ts'
+import type { NumberPrototypeBuiltins$ForeignGetDoubleValueNode } from '../../../../../com/oracle/truffle/js/builtins/NumberPrototypeBuiltins$ForeignGetDoubleValueNode.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { IsNumberNode } from '../../../../../com/oracle/truffle/js/nodes/cast/IsNumberNode.d.ts'
 import type { JSDoubleToStringNode } from '../../../../../com/oracle/truffle/js/nodes/cast/JSDoubleToStringNode.d.ts'
@@ -25,7 +25,7 @@ export abstract class NumberPrototypeBuiltins$JSNumberToFixedNode extends JSBuil
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
     toFixed(thisNumber: JSNumberObject, fractionDigits: Object, toIntegerNode: JSToIntegerAsIntNode, doubleToString: JSDoubleToStringNode, digitsErrorBranch: InlinedBranchProfile, nanBranch: InlinedBranchProfile, dtoaOrString: InlinedConditionProfile): Object;
-    toFixedForeignObject(thisNumber: Object, fractionDigits: Object, node: Node, toIntegerNode: JSToIntegerAsIntNode, doubleToString: JSDoubleToStringNode, digitsErrorBranch: InlinedBranchProfile, nanBranch: InlinedBranchProfile, dtoaOrString: InlinedConditionProfile, interop: InteropLibrary): Object;
+    toFixedForeignObject(thisNumber: Object, fractionDigits: Object, node: Node, toIntegerNode: JSToIntegerAsIntNode, doubleToString: JSDoubleToStringNode, digitsErrorBranch: InlinedBranchProfile, nanBranch: InlinedBranchProfile, dtoaOrString: InlinedConditionProfile, getDoubleValue: NumberPrototypeBuiltins$ForeignGetDoubleValueNode): Object;
     toFixedGeneric(thisNumber: Object, fractionDigits: Object): Object;
     // private toFixedIntl(value: number, digits: number, node: Node, doubleToString: JSDoubleToStringNode, digitsErrorBranch: InlinedBranchProfile, nanBranch: InlinedBranchProfile, dtoaOrString: InlinedConditionProfile): Object;
     toFixedJava(thisNumber: Object, fractionDigits: Object, isNumber: IsNumberNode, toIntegerNode: JSToIntegerAsIntNode, doubleToString: JSDoubleToStringNode, digitsErrorBranch: InlinedBranchProfile, nanBranch: InlinedBranchProfile, dtoaOrString: InlinedConditionProfile): Object;

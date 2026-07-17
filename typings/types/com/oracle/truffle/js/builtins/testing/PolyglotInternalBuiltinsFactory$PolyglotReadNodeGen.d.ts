@@ -2,6 +2,7 @@ import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/fram
 import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { InteropLibrary } from '../../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
+import type { TruffleString$ToJavaStringNode } from '../../../../../../com/oracle/truffle/api/strings/TruffleString$ToJavaStringNode.d.ts'
 import type { PolyglotInternalBuiltins$PolyglotReadNode } from '../../../../../../com/oracle/truffle/js/builtins/testing/PolyglotInternalBuiltins$PolyglotReadNode.d.ts'
 import type { PolyglotInternalBuiltinsFactory$PolyglotReadNodeGen$UnsupportedKeyData } from '../../../../../../com/oracle/truffle/js/builtins/testing/PolyglotInternalBuiltinsFactory$PolyglotReadNodeGen$UnsupportedKeyData.d.ts'
 import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
@@ -28,6 +29,7 @@ export class PolyglotInternalBuiltinsFactory$PolyglotReadNodeGen extends Polyglo
     // private foreignConvert: ImportValueNode;
     // private interop: InteropLibrary;
     // private state_0_: number;
+    // private toJavaString: TruffleString$ToJavaStringNode;
     // private unsupportedKey_cache: PolyglotInternalBuiltinsFactory$PolyglotReadNodeGen$UnsupportedKeyData;
     execute(frameValue: VirtualFrame): Object;
     // private executeAndSpecialize(arguments0Value: Object, arguments1Value: Object): Object;

@@ -16,6 +16,7 @@ export class VersionInfo extends Object implements Comparable<VersionInfo> {
     static UNICODE_15_0: VersionInfo;
     static UNICODE_15_1: VersionInfo;
     static UNICODE_16_0: VersionInfo;
+    static UNICODE_17_0: VersionInfo;
     static UNICODE_1_0: VersionInfo;
     static UNICODE_1_0_1: VersionInfo;
     static UNICODE_1_1_0: VersionInfo;

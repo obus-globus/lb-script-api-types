@@ -5,11 +5,11 @@ import type { WriteElementNode$AbstractTypedArrayWriteElementCacheNode } from '.
 import type { JSToBigIntNode } from '../../../../../../com/oracle/truffle/js/nodes/cast/JSToBigIntNode.d.ts'
 import type { TypedArray } from '../../../../../../com/oracle/truffle/js/runtime/array/TypedArray.d.ts'
 import type { TypedArray$TypedBigIntArray } from '../../../../../../com/oracle/truffle/js/runtime/array/TypedArray$TypedBigIntArray.d.ts'
-import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
+import type { JSTypedArrayObject } from '../../../../../../com/oracle/truffle/js/runtime/builtins/JSTypedArrayObject.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class WriteElementNode$TypedBigIntArrayWriteElementCacheNode extends WriteElementNode$AbstractTypedArrayWriteElementCacheNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(arrayType: TypedArray)
     // private toBigIntNode: JSToBigIntNode;
-    doBigIntArray(target: JSDynamicObject, typedArray: TypedArray$TypedBigIntArray, index: number, value: Object, root: WriteElementNode, inBoundsIf: InlinedConditionProfile): boolean;
+    doBigIntArray(target: JSTypedArrayObject, typedArray: TypedArray$TypedBigIntArray, index: number, value: Object, root: WriteElementNode, immutableIf: InlinedConditionProfile, inBoundsIf: InlinedConditionProfile): boolean;
 }

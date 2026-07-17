@@ -15,6 +15,7 @@ export abstract class InitializePluralRulesNode extends JavaScriptBaseNode {
     // private coerceOptionsToObjectNode: CoerceOptionsToObjectNode;
     // private context: JSContext;
     // private errorBranch: BranchProfile;
+    // private getCompactDisplayOption: GetStringOptionNode;
     // private getLocaleMatcherOption: GetStringOptionNode;
     // private getNotationOption: GetStringOptionNode;
     // private getTypeOption: GetStringOptionNode;

@@ -4,7 +4,7 @@ import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts
 import type { AtomicsBuiltins$AtomicsNotifyNode } from '../../../../../com/oracle/truffle/js/builtins/AtomicsBuiltins$AtomicsNotifyNode.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { JSToIndexNode } from '../../../../../com/oracle/truffle/js/nodes/cast/JSToIndexNode.d.ts'
-import type { JSToInt32Node } from '../../../../../com/oracle/truffle/js/nodes/cast/JSToInt32Node.d.ts'
+import type { JSToIntegerAsIntNode } from '../../../../../com/oracle/truffle/js/nodes/cast/JSToIntegerAsIntNode.d.ts'
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
 import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
@@ -39,7 +39,7 @@ export class AtomicsBuiltinsFactory$AtomicsNotifyNodeGen extends AtomicsBuiltins
     // private arguments2_: JavaScriptNode;
     // private state_0_: number;
     // private toIndexNode_: JSToIndexNode;
-    // private toInt32Node_: JSToInt32Node;
+    // private toIntNode_: JSToIntegerAsIntNode;
     execute(frameValue: VirtualFrame): Object;
     // private executeAndSpecialize(arguments0Value: Object, arguments1Value: Object, arguments2Value: Object): Object;
     getArguments(): JavaScriptNode[];

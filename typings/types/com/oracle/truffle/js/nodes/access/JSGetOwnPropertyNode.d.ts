@@ -32,7 +32,7 @@ export abstract class JSGetOwnPropertyNode extends JavaScriptBaseNode {
     // private seenNonArrayIndex: boolean;
     array(thisObj: JSArrayObject, propertyKey: Object, node: Node, toArrayIndexNode: ToArrayIndexNode, arrayGetOwnProperty: JSArrayGetOwnPropertyNode, noSuchElementBranch: InlinedBranchProfile): PropertyDescriptor;
     cachedOrdinary(thisObj: JSDynamicObject, propertyKey: Object, cachedShape: Shape, cachedPropertyKey: Object, cachedProperty: Property, equalsNode: TruffleString$EqualNode): PropertyDescriptor;
-    execute(object: JSDynamicObject, key: Object): PropertyDescriptor;
+    execute(object: Object, key: Object): PropertyDescriptor;
     // private getDataPropertyValue(thisObj: JSDynamicObject, prop: Property): Object;
     getOwnPropertyString(thisObj: JSStringObject, key: Object, stringCaseProfile: InlinedConditionProfile): PropertyDescriptor;
     // private getPropertyProxyValue(obj: JSDynamicObject, propertyProxy: Object): Object;

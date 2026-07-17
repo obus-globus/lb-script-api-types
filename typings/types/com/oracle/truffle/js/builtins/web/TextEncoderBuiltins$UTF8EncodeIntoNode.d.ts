@@ -18,7 +18,7 @@ export abstract class TextEncoderBuiltins$UTF8EncodeIntoNode extends JavaScriptB
     // private switchEncodingNode: TruffleString$SwitchEncodingNode;
     doDirectBuffer(string: TruffleString, destination: JSTypedArrayObject, destOffset: number, maxLength: number, getTypedArrayByteLengthNode: ArrayBufferViewGetByteLengthNode): number;
     doHeapBuffer(string: TruffleString, destination: JSTypedArrayObject, destOffset: number, maxLength: number, getTypedArrayByteLengthNode: ArrayBufferViewGetByteLengthNode): number;
-    doInteropBuffer(string: TruffleString, destination: JSTypedArrayObject, destOffset: number, maxLength: number, getTypedArrayByteLengthNode: ArrayBufferViewGetByteLengthNode, asByteBufferInterop: InteropLibrary, bufferInterop: InteropLibrary): number;
+    doInteropBuffer(string: TruffleString, destination: JSTypedArrayObject, destOffset: number, maxLength: number, getTypedArrayByteLengthNode: ArrayBufferViewGetByteLengthNode, asByteBufferInterop: InteropLibrary, hostInterop: InteropLibrary, bufferInterop: InteropLibrary): number;
     encodeInto(string: TruffleString, destination: JSTypedArrayObject, viewOffset: number, maxLength: number, rawBuffer: ByteBuffer, getTypedArrayByteLengthNode: ArrayBufferViewGetByteLengthNode, interop: InteropLibrary): number;
     execute(string: TruffleString, destination: JSTypedArrayObject): number;
     execute(string: TruffleString, destination: JSTypedArrayObject, destOffset: number, maxLength: number): number;

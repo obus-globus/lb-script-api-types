@@ -25,7 +25,7 @@ export class BytecodeOSRMetadata extends Object {
     // private osrThreshold: number;
     // private secondaryOsrThreshold: number;
     // private stage: number;
-    // private createOSRTarget(target: number, interpreterState: Object, frameDescriptor: FrameDescriptor): OptimizedCallTarget;
+    // private createOSRTarget(target: number, interpreterState: Object, frameDescriptor: FrameDescriptor, useParentFrame: boolean): OptimizedCallTarget;
     forceDisable(): void;
     getBackEdgeCount(): number;
     // private getCurrentlyCompiling(): OptimizedCallTarget;

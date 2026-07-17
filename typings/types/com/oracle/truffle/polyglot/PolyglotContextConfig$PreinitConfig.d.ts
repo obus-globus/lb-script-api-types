@@ -4,6 +4,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class PolyglotContextConfig$PreinitConfig extends Object {
     constructor(config: PolyglotContextConfig)
     constructor(prev: PolyglotContextConfig$PreinitConfig, config: PolyglotContextConfig)
+    // private allowExperimentalOptions: boolean;
     // private allowValueSharing: boolean;
     // private createProcessAllowed: boolean;
     // private createThreadAllowed: boolean;

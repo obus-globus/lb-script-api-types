@@ -8,5 +8,4 @@ export class DeadRegexExecNode extends RegexExecNode {
     constructor(language: RegexLanguage, source: RegexSource)
     execute(frame: VirtualFrame): RegexResult;
     execute(frame: VirtualFrame, input: TruffleString, fromIndex: number, toIndex: number, regionFrom: number, regionTo: number): RegexResult;
-    getEngineLabel(): string;
 }

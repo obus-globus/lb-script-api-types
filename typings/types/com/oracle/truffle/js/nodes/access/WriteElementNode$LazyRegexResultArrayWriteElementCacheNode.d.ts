@@ -1,5 +1,5 @@
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { DynamicObjectLibrary } from '../../../../../../com/oracle/truffle/api/object/DynamicObjectLibrary.d.ts'
+import type { DynamicObject$GetNode } from '../../../../../../com/oracle/truffle/api/object/DynamicObject$GetNode.d.ts'
 import type { InlinedConditionProfile } from '../../../../../../com/oracle/truffle/api/profiles/InlinedConditionProfile.d.ts'
 import type { TruffleString$SubstringByteIndexNode } from '../../../../../../com/oracle/truffle/api/strings/TruffleString$SubstringByteIndexNode.d.ts'
 import type { WriteElementNode } from '../../../../../../com/oracle/truffle/js/nodes/access/WriteElementNode.d.ts'
@@ -13,8 +13,8 @@ export abstract class WriteElementNode$LazyRegexResultArrayWriteElementCacheNode
     constructor()
     // private getEndNode: TRegexUtil$InvokeGetGroupBoundariesMethodNode;
     // private getStartNode: TRegexUtil$InvokeGetGroupBoundariesMethodNode;
-    // private lazyRegexResultNode: DynamicObjectLibrary;
-    // private lazyRegexResultOriginalInputNode: DynamicObjectLibrary;
+    // private lazyRegexResultNode: DynamicObject$GetNode;
+    // private lazyRegexResultOriginalInputNode: DynamicObject$GetNode;
     // private substringNode: TruffleString$SubstringByteIndexNode;
     doLazyRegexResultArray(target: JSDynamicObject, lazyRegexResultArray: LazyRegexResultArray, index: number, value: Object, root: WriteElementNode, inBoundsIf: InlinedConditionProfile): boolean;
 }

@@ -16,6 +16,7 @@ export class TruffleSplittingStrategy$SplitStatisticsReporter extends Object imp
     static isPermanentFailure(parambailout: boolean, parampermanentBailout: boolean): boolean;
     constructor()
     onCompilationDeoptimized(target: OptimizedCallTarget, frame: Frame): void;
+    onCompilationDeoptimized(target: OptimizedCallTarget, frame: Frame, reason: string): void;
     onCompilationDequeued(target: OptimizedCallTarget, source: Object, reason: CharSequence, tier: number): void;
     onCompilationFailed(target: OptimizedCallTarget, reason: string, bailout: boolean, permanentBailout: boolean): void;
     onCompilationFailed(target: OptimizedCallTarget, reason: string, bailout: boolean, permanentBailout: boolean, tier: number): void;
@@ -35,5 +36,6 @@ export class TruffleSplittingStrategy$SplitStatisticsReporter extends Object imp
     onCompilationTruffleTierFinished(target: OptimizedCallTarget, inliningDecision: TruffleInlining, graph: TruffleCompilerListener$GraphInfo): void;
     onEngineClosed(runtimeData: EngineData): void;
     onEngineClosed(engineData: EngineData): void;
+    onProfileReset(target: OptimizedCallTarget): void;
     onShutdown(): void;
 }

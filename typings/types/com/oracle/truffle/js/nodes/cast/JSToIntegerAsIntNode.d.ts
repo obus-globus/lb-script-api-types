@@ -12,8 +12,8 @@ export abstract class JSToIntegerAsIntNode extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     doBigInt(value: BigInt): number;
-    doJSObject(value: JSObject, toNumberNode: JSToNumberNode): number;
-    doJSOrForeignObject(value: Object, toNumberNode: JSToNumberNode): number;
+    doJSObject(value: JSObject, nestedToIntegerNode: JSToIntegerAsIntNode, toNumberNode: JSToNumberNode): number;
+    doJSOrForeignObject(value: Object, nestedToIntegerNode: JSToIntegerAsIntNode, toNumberNode: JSToNumberNode): number;
     doString(value: TruffleString, nestedToIntegerNode: JSToIntegerAsIntNode, stringToNumberNode: JSStringToNumberNode): number;
     doSymbol(value: Symbol): number;
     executeInt(operand: Object): number;

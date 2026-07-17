@@ -1,6 +1,5 @@
 import type { InteropLibrary } from '../../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
-import type { TypedArray$ElementType } from '../../../../../../com/oracle/truffle/js/runtime/array/TypedArray$ElementType.d.ts'
 import type { TypedArray$InteropTwoByteIntArray } from '../../../../../../com/oracle/truffle/js/runtime/array/TypedArray$InteropTwoByteIntArray.d.ts'
 import type { TypedArrayFactory } from '../../../../../../com/oracle/truffle/js/runtime/array/TypedArrayFactory.d.ts'
 import type { AbstractConstantArray } from '../../../../../../com/oracle/truffle/js/runtime/array/dyn/AbstractConstantArray.d.ts'
@@ -22,6 +21,5 @@ export class TypedArray$InteropUint16Array extends TypedArray$InteropTwoByteIntA
     static valueIsByte(paramvalue: number): boolean;
     constructor(factory: TypedArrayFactory, offset: boolean, fixedLength: boolean)
     getBufferElementIntImpl(buffer: JSArrayBufferObject, index: number, littleEndian: boolean, interop: InteropLibrary): number;
-    getElementType(): TypedArray$ElementType;
     getIntImpl(buffer: JSArrayBufferObject, offset: number, index: number, interop: InteropLibrary): number;
 }

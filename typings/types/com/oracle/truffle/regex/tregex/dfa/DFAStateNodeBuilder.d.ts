@@ -11,6 +11,8 @@ import type { JsonConvertible } from '../../../../../../com/oracle/truffle/regex
 import type { JsonValue } from '../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonValue.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class DFAStateNodeBuilder extends BasicState<DFAStateNodeBuilder, DFAStateTransitionBuilder> implements JsonConvertible {
+    static isAnchoredFinalState(paramflags: number): boolean;
+    static isUnAnchoredFinalState(paramflags: number): boolean;
     constructor(id: number, nfaStateSet: TransitionSet<NFA, NFAState, NFAStateTransition>, isBackwardPrefixState: boolean, isInitialState: boolean, forward: boolean, prioritySensitive: boolean)
     readonly anchoredFinalConstraints: number[][];
     readonly anchoredFinalStateTransition: NFAStateTransition;

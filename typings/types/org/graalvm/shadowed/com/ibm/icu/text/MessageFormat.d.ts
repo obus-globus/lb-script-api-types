@@ -7,6 +7,7 @@ import type { Format } from '../../../../../../../java/text/Format.d.ts'
 import type { ParsePosition } from '../../../../../../../java/text/ParsePosition.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { Cloneable } from '../../../../../../../java/lang/Cloneable.d.ts'
 import type { DateFormat } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/DateFormat.d.ts'
 import type { MessageFormat$AppendableWrapper } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/MessageFormat$AppendableWrapper.d.ts'
 import type { MessageFormat$PluralSelectorContext } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/MessageFormat$PluralSelectorContext.d.ts'
@@ -17,7 +18,7 @@ import type { NumberFormat } from '../../../../../../../org/graalvm/shadowed/com
 import type { UFormat } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/UFormat.d.ts'
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
 import type { ULocale$Type } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale$Type.d.ts'
-export class MessageFormat extends UFormat {
+export class MessageFormat extends UFormat implements Cloneable {
     static autoQuoteApostrophe(parampattern: string): string;
     static format(parampattern: string, ...paramarguments: Object[]): string;
     static format(parampattern: string, paramarguments: { [key: string]: Object }): string;
@@ -36,7 +37,7 @@ export class MessageFormat extends UFormat {
     applyPattern(pattern: string, aposMode: MessagePattern$ApostropheMode): void;
     // private argNameMatches(partIndex: number, argName: string, argNumber: number): boolean;
     // private cacheExplicitFormats(): void;
-    clone(): Object;
+    clone(): MessageFormat;
     // private createAppropriateFormat(type: string, style: string): Format;
     dateTimeFormatForPatternOrSkeleton(style: string): Format;
     equals(obj: Object | null): boolean;

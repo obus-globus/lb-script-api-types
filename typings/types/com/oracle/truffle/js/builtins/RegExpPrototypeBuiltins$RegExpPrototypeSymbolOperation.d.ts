@@ -2,7 +2,6 @@ import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { InlinedBranchProfile } from '../../../../../com/oracle/truffle/api/profiles/InlinedBranchProfile.d.ts'
 import type { TruffleString } from '../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
-import type { ArrayPrototypeBuiltins$ArraySpeciesConstructorNode } from '../../../../../com/oracle/truffle/js/builtins/ArrayPrototypeBuiltins$ArraySpeciesConstructorNode.d.ts'
 import type { RegExpPrototypeBuiltins$AdvanceStringIndexNode } from '../../../../../com/oracle/truffle/js/builtins/RegExpPrototypeBuiltins$AdvanceStringIndexNode.d.ts'
 import type { JSRegExpExecIntlNode } from '../../../../../com/oracle/truffle/js/builtins/helper/JSRegExpExecIntlNode.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
@@ -27,14 +26,12 @@ export abstract class RegExpPrototypeBuiltins$RegExpPrototypeSymbolOperation ext
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
-    // private arraySpeciesCreateNode: ArrayPrototypeBuiltins$ArraySpeciesConstructorNode;
     // private getLastIndexNode: PropertyGetNode;
     // private readNode: ReadElementNode;
     // private regexExecIntlNode: JSRegExpExecIntlNode;
     // private setLastIndexNode: PropertySetNode;
     // private writeNode: WriteElementNode;
     advanceLastIndexAfterEmptyMatch(regex: Object, string: TruffleString, fullUnicode: boolean, node: Node, toLengthNode: JSToLengthNode, advanceStringIndex: RegExpPrototypeBuiltins$AdvanceStringIndexNode, lastIndexNotIntBranch: InlinedBranchProfile): void;
-    getArraySpeciesConstructorNode(): ArrayPrototypeBuiltins$ArraySpeciesConstructorNode;
     getLastIndex(obj: Object): Object;
     // private initLastIndexNode(): void;
     read(target: Object, index: number): Object;

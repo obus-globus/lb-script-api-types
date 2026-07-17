@@ -67,6 +67,7 @@ export abstract class AbstractPolyglotImpl$AbstractValueDispatch extends Abstrac
     getMetaQualifiedName(context: Object, receiver: Object): string;
     getMetaSimpleName(context: Object, receiver: Object): string;
     getSourceLocation(context: Object, receiver: Object): Object;
+    getStaticScope(context: Object, receiver: Object): Object;
     hasArrayElements(context: Object, receiver: Object): boolean;
     hasBufferElements(context: Object, receiver: Object): boolean;
     hasHashEntries(context: Object, receiver: Object): boolean;
@@ -76,6 +77,7 @@ export abstract class AbstractPolyglotImpl$AbstractValueDispatch extends Abstrac
     hasMember(context: Object, receiver: Object, key: string): boolean;
     hasMembers(context: Object, receiver: Object): boolean;
     hasMetaParents(context: Object, receiver: Object): boolean;
+    hasStaticScope(context: Object, receiver: Object): boolean;
     hashCodeImpl(context: Object, receiver: Object): number;
     invoke(context: Object, receiver: Object, identifier: string): Object;
     invoke(context: Object, receiver: Object, identifier: string, arguments: Object[]): Object;

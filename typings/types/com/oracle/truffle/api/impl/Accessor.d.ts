@@ -1,3 +1,4 @@
+import type { Accessor$BytecodeSupport } from '../../../../../com/oracle/truffle/api/impl/Accessor$BytecodeSupport.d.ts'
 import type { Accessor$EngineSupport } from '../../../../../com/oracle/truffle/api/impl/Accessor$EngineSupport.d.ts'
 import type { Accessor$ExceptionSupport } from '../../../../../com/oracle/truffle/api/impl/Accessor$ExceptionSupport.d.ts'
 import type { Accessor$FrameSupport } from '../../../../../com/oracle/truffle/api/impl/Accessor$FrameSupport.d.ts'
@@ -10,7 +11,9 @@ import type { Accessor$LanguageProviderSupport } from '../../../../../com/oracle
 import type { Accessor$LanguageSupport } from '../../../../../com/oracle/truffle/api/impl/Accessor$LanguageSupport.d.ts'
 import type { Accessor$MemorySupport } from '../../../../../com/oracle/truffle/api/impl/Accessor$MemorySupport.d.ts'
 import type { Accessor$NodeSupport } from '../../../../../com/oracle/truffle/api/impl/Accessor$NodeSupport.d.ts'
+import type { Accessor$PolyglotIsolateSupport } from '../../../../../com/oracle/truffle/api/impl/Accessor$PolyglotIsolateSupport.d.ts'
 import type { Accessor$RuntimeSupport } from '../../../../../com/oracle/truffle/api/impl/Accessor$RuntimeSupport.d.ts'
+import type { Accessor$SandboxSupport } from '../../../../../com/oracle/truffle/api/impl/Accessor$SandboxSupport.d.ts'
 import type { Accessor$SourceSupport } from '../../../../../com/oracle/truffle/api/impl/Accessor$SourceSupport.d.ts'
 import type { Accessor$StringsSupport } from '../../../../../com/oracle/truffle/api/impl/Accessor$StringsSupport.d.ts'
 import type { FrameWithoutBoxing } from '../../../../../com/oracle/truffle/api/impl/FrameWithoutBoxing.d.ts'
@@ -18,6 +21,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class Accessor extends Object {
     static main(...paramargs: string[]): void;
     constructor()
+    bytecodeSupport(): Accessor$BytecodeSupport;
     engineSupport(): Accessor$EngineSupport;
     exceptionSupport(): Accessor$ExceptionSupport;
     framesSupport(): Accessor$FrameSupport;
@@ -31,7 +35,9 @@ export abstract class Accessor extends Object {
     languageSupport(): Accessor$LanguageSupport;
     memorySupport(): Accessor$MemorySupport;
     nodeSupport(): Accessor$NodeSupport;
+    polyglotIsolateSupport(): Accessor$PolyglotIsolateSupport;
     runtimeSupport(): Accessor$RuntimeSupport;
+    sandboxSupport(): Accessor$SandboxSupport;
     sourceSupport(): Accessor$SourceSupport;
     startOSRFrameTransfer(target: FrameWithoutBoxing): void;
     stringsSupport(): Accessor$StringsSupport;

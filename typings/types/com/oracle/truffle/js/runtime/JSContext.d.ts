@@ -48,6 +48,7 @@ import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class JSContext extends Object {
     static createContext(paramevaluator: Evaluator, paramlanguage: JavaScriptLanguage, paramenv: TruffleLanguage$Env): JSContext;
+    static get(paramnode: Node): JSContext;
     constructor(evaluator: Evaluator, lang: JavaScriptLanguage, languageOptions: JSLanguageOptions, env: TruffleLanguage$Env)
     readonly allocationReporter: AllocationReporter;
     readonly arrayBufferFactory: JSObjectFactory;
@@ -57,6 +58,7 @@ export class JSContext extends Object {
     readonly arrayPrototypeNoElementsAssumption: Assumption;
     readonly asyncContextSnapshotFactory: JSObjectFactory;
     readonly asyncContextVariableFactory: JSObjectFactory;
+    readonly asyncDisposableStackFactory: JSObjectFactory;
     readonly asyncFromSyncIteratorFactory: JSObjectFactory;
     // private asyncFunctionFactory: JSFunctionFactory;
     // private asyncGeneratorFunctionFactory: JSFunctionFactory;
@@ -79,6 +81,7 @@ export class JSContext extends Object {
     readonly dictionaryObjectFactory: JSObjectFactory;
     readonly directArrayBufferFactory: JSObjectFactory;
     readonly displayNamesFactory: JSObjectFactory;
+    readonly disposableStackFactory: JSObjectFactory;
     readonly durationFormatFactory: JSObjectFactory;
     readonly embedderData: Object;
     readonly emptyFunctionCallTarget: CallTarget;
@@ -154,8 +157,8 @@ export class JSContext extends Object {
     readonly regExpFactory: JSObjectFactory;
     readonly regExpGroupsEmptyShape: Shape;
     readonly regExpStaticResultUnusedAssumption: Assumption;
-    readonly regexOptions: string;
-    readonly regexValidateOptions: string;
+    readonly regexOptions: { [key: string]: string };
+    readonly regexValidateOptions: { [key: string]: string };
     readonly relativeTimeFormatFactory: JSObjectFactory;
     readonly segmentIteratorFactory: JSObjectFactory;
     readonly segmenterFactory: JSObjectFactory;
@@ -200,11 +203,14 @@ export class JSContext extends Object {
     readonly weakRefFactory: JSObjectFactory;
     readonly weakSetFactory: JSObjectFactory;
     readonly webAssemblyCache: JSWebAssemblyInstance$Cache;
+    readonly webAssemblyExceptionFactory: JSObjectFactory;
+    readonly webAssemblyExportedGCObjectFactory: JSObjectFactory;
     readonly webAssemblyGlobalFactory: JSObjectFactory;
     readonly webAssemblyInstanceFactory: JSObjectFactory;
     readonly webAssemblyMemoryFactory: JSObjectFactory;
     readonly webAssemblyModuleFactory: JSObjectFactory;
     readonly webAssemblyTableFactory: JSObjectFactory;
+    readonly webAssemblyTagFactory: JSObjectFactory;
     readonly workerFactory: JSObjectFactory;
     readonly wrapForAsyncIteratorFactory: JSObjectFactory;
     readonly wrapForIteratorFactory: JSObjectFactory;
@@ -230,6 +236,7 @@ export class JSContext extends Object {
     getArrayPrototypeNoElementsAssumption(): Assumption;
     getAsyncContextSnapshotFactory(): JSObjectFactory;
     getAsyncContextVariableFactory(): JSObjectFactory;
+    getAsyncDisposableStackFactory(): JSObjectFactory;
     getAsyncFromSyncIteratorFactory(): JSObjectFactory;
     getAsyncGeneratorObjectFactory(): JSObjectFactory;
     getAsyncGeneratorObjectPrototypeFactory(): JSObjectFactory;
@@ -248,6 +255,7 @@ export class JSContext extends Object {
     getDictionaryObjectFactory(): JSObjectFactory;
     getDirectArrayBufferFactory(): JSObjectFactory;
     getDisplayNamesFactory(): JSObjectFactory;
+    getDisposableStackFactory(): JSObjectFactory;
     getDurationFormatFactory(): JSObjectFactory;
     getEcmaScriptVersion(): number;
     getEmbedderData(): Object;
@@ -311,8 +319,8 @@ export class JSContext extends Object {
     getRegExpFactory(): JSObjectFactory;
     getRegExpGroupsEmptyShape(): Shape;
     getRegExpStaticResultUnusedAssumption(): Assumption;
-    getRegexOptions(): string;
-    getRegexValidateOptions(): string;
+    getRegexOptions(): { [key: string]: string };
+    getRegexValidateOptions(): { [key: string]: string };
     getRelativeTimeFormatFactory(): JSObjectFactory;
     getSegmentIteratorFactory(): JSObjectFactory;
     getSegmenterFactory(): JSObjectFactory;
@@ -352,11 +360,14 @@ export class JSContext extends Object {
     getWeakRefFactory(): JSObjectFactory;
     getWeakSetFactory(): JSObjectFactory;
     getWebAssemblyCache(): JSWebAssemblyInstance$Cache;
+    getWebAssemblyExceptionFactory(): JSObjectFactory;
+    getWebAssemblyExportedGCObjectFactory(): JSObjectFactory;
     getWebAssemblyGlobalFactory(): JSObjectFactory;
     getWebAssemblyInstanceFactory(): JSObjectFactory;
     getWebAssemblyMemoryFactory(): JSObjectFactory;
     getWebAssemblyModuleFactory(): JSObjectFactory;
     getWebAssemblyTableFactory(): JSObjectFactory;
+    getWebAssemblyTagFactory(): JSObjectFactory;
     getWorkerFactory(): JSObjectFactory;
     getWrapForAsyncIteratorFactory(): JSObjectFactory;
     getWrapForIteratorFactory(): JSObjectFactory;
@@ -374,6 +385,8 @@ export class JSContext extends Object {
     isOptionAsyncStackTraces(): boolean;
     isOptionDirectByteBuffer(): boolean;
     isOptionDisableWith(): boolean;
+    isOptionErrorStackAccessor(): boolean;
+    isOptionExplicitResourceManagement(): boolean;
     isOptionForeignObjectPrototype(): boolean;
     isOptionIntl402(): boolean;
     isOptionMleBuiltin(): boolean;

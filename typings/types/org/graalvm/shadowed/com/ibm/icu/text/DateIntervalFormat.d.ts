@@ -6,6 +6,7 @@ import type { ParsePosition } from '../../../../../../../java/text/ParsePosition
 import type { Temporal } from '../../../../../../../java/time/temporal/Temporal.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { Cloneable } from '../../../../../../../java/lang/Cloneable.d.ts'
 import type { ICUCache } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/ICUCache.d.ts'
 import type { DateFormat } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/DateFormat.d.ts'
 import type { DateIntervalFormat$FormatOutput } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/DateIntervalFormat$FormatOutput.d.ts'
@@ -23,7 +24,7 @@ import type { DateInterval } from '../../../../../../../org/graalvm/shadowed/com
 import type { Output } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/Output.d.ts'
 import type { TimeZone } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/TimeZone.d.ts'
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
-export class DateIntervalFormat extends UFormat {
+export class DateIntervalFormat extends UFormat implements Cloneable {
     static getInstance(paramskeleton: string): DateIntervalFormat;
     static getInstance(paramskeleton: string, paramlocale: Locale): DateIntervalFormat;
     static getInstance(paramskeleton: string, paramlocale: Locale, paramdtitvinf: DateIntervalInfo): DateIntervalFormat;
@@ -42,7 +43,7 @@ export class DateIntervalFormat extends UFormat {
     // private fTimePattern: string;
     // private fToCalendar: Calendar;
     // private isDateIntervalInfoDefault: boolean;
-    clone(): Object;
+    clone(): DateIntervalFormat;
     // private concatSingleDate2TimeInterval(dtfmt: string, datePattern: string, field: number, intervalPatterns: { [key: string]: DateIntervalInfo$PatternInfo }): void;
     // private fallbackFormat(fromCalendar: Calendar, toCalendar: Calendar, fromToOnSameDay: boolean, appendTo: StringBuffer, pos: FieldPosition, output: DateIntervalFormat$FormatOutput, attributes: FieldPosition[]): StringBuffer;
     // private fallbackFormat(fromCalendar: Calendar, toCalendar: Calendar, fromToOnSameDay: boolean, appendTo: StringBuffer, pos: FieldPosition, output: DateIntervalFormat$FormatOutput, attributes: FieldPosition[], fullPattern: string): StringBuffer;

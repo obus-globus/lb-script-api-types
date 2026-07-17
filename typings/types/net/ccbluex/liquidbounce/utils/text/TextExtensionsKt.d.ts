@@ -18,7 +18,7 @@ export class TextExtensionsKt extends Object {
     /**
      * Returns an immutable {@link Component} from the receiver.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt:60}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt:60}
      */
     static asPlainText(self: string): Component;
     static asPlainText(self: string, formatting: ChatFormatting): Component;
@@ -27,7 +27,7 @@ export class TextExtensionsKt extends Object {
      * Returns a {@link MutableComponent} from the receiver.
      * If you just need a {@link Component}, use {@link asPlainText} instead.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt:55}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt:55}
      */
     static asText(self: Component[]): Component;
     static asText(self: string): MutableComponent;
@@ -40,14 +40,14 @@ export class TextExtensionsKt extends Object {
     /**
      * Converts milliseconds to seconds, minutes, hours and days when present.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt#L253 | src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt:253}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt#L253 | src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt:253}
      */
     static formatAsTime(self: number): string;
     static hideSensitiveAddress(self: string): string;
     /**
      * Joins a list of {@link Component} into a single {@link Component} with the given {@link separator}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt#L126 | src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt:126}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt#L126 | src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt:126}
      */
     static joinToText<T extends unknown>(self: T[], separator: Component, prefix: Component | null, postfix: Component | null, transform: (param0: T) => Component): Component;
     static joinToText(self: Component[], separator: Component): Component;
@@ -68,14 +68,14 @@ export class TextExtensionsKt extends Object {
      *   "example.com." -> "example.com"
      *   "127.0.0.1" -> "127.0.0.1"
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt#L228 | src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt:228}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt#L228 | src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt:228}
      */
     static rootDomain(self: string): string;
     static stripMinecraftColorCodes(self: string): string;
     /**
      * Generates a progress bar based on the {@link percent}age (range 0 to 100).
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt#L306 | src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt:306}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt#L306 | src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt:306}
      */
     static textLoadingBar(percent: number, progress: ColoredChar, remaining: ColoredChar, length: number): Component;
     static textOf(...parts: Component[]): Component;
@@ -85,7 +85,7 @@ export class TextExtensionsKt extends Object {
     /**
      * Translate alt color codes to minecraft color codes
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt#L193 | src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt:193}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt#L193 | src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt:193}
      */
     static translateColorCodes(self: string): string;
     static translated(self: Component): Component;

@@ -2,6 +2,7 @@ import type { ObjectInputStream } from '../../../../../../../java/io/ObjectInput
 import type { Date } from '../../../../../../../java/util/Date.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { Cloneable } from '../../../../../../../java/lang/Cloneable.d.ts'
 import type { BasicTimeZone } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/BasicTimeZone.d.ts'
 import type { BasicTimeZone$LocalOption } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/BasicTimeZone$LocalOption.d.ts'
 import type { InitialTimeZoneRule } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/InitialTimeZoneRule.d.ts'
@@ -13,7 +14,7 @@ import type { TimeZoneRule } from '../../../../../../../org/graalvm/shadowed/com
 import type { TimeZoneTransition } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/TimeZoneTransition.d.ts'
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
 import type { UResourceBundle } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/UResourceBundle.d.ts'
-export class OlsonTimeZone extends BasicTimeZone {
+export class OlsonTimeZone extends BasicTimeZone implements Cloneable {
     static GENERIC_LOCATION: number;
     static GMT_ZONE: TimeZone;
     static LONG: number;
@@ -70,8 +71,8 @@ export class OlsonTimeZone extends BasicTimeZone {
     // private typeCount: number;
     // private typeMapData: number[];
     // private typeOffsets: number[];
-    clone(): Object;
-    cloneAsThawed(): TimeZone;
+    clone(): OlsonTimeZone;
+    cloneAsThawed(): OlsonTimeZone;
     // private construct(top: UResourceBundle, res: UResourceBundle, id: string): void;
     // private constructEmpty(): void;
     // private dstOffsetAt(transIdx: number): number;

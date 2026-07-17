@@ -1,7 +1,7 @@
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
-import type { InteropLibrary } from '../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { InlinedBranchProfile } from '../../../../../com/oracle/truffle/api/profiles/InlinedBranchProfile.d.ts'
+import type { NumberPrototypeBuiltins$ForeignGetDoubleValueNode } from '../../../../../com/oracle/truffle/js/builtins/NumberPrototypeBuiltins$ForeignGetDoubleValueNode.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { IsNumberNode } from '../../../../../com/oracle/truffle/js/nodes/cast/IsNumberNode.d.ts'
 import type { JSToNumberNode } from '../../../../../com/oracle/truffle/js/nodes/cast/JSToNumberNode.d.ts'
@@ -25,8 +25,8 @@ export abstract class NumberPrototypeBuiltins$JSNumberToPrecisionNode extends JS
     constructor(context: JSContext, builtin: JSBuiltin)
     // private checkPrecision(precision: number, node: Node, errorBranch: InlinedBranchProfile): void;
     toPrecision(thisNumber: JSNumberObject, precision: Object, toNumberNode: JSToNumberNode, errorBranch: InlinedBranchProfile): Object;
-    toPrecisionForeignObject(thisNumber: Object, precision: Object, node: Node, toNumberNode: JSToNumberNode, errorBranch: InlinedBranchProfile, interop: InteropLibrary): Object;
-    toPrecisionForeignObjectUndefined(thisNumber: Object, precision: Object, toStringNode: JSToStringNode, interop: InteropLibrary): Object;
+    toPrecisionForeignObject(thisNumber: Object, precision: Object, node: Node, toNumberNode: JSToNumberNode, errorBranch: InlinedBranchProfile, getDoubleValue: NumberPrototypeBuiltins$ForeignGetDoubleValueNode): Object;
+    toPrecisionForeignObjectUndefined(thisNumber: Object, precision: Object, toStringNode: JSToStringNode, getDoubleValue: NumberPrototypeBuiltins$ForeignGetDoubleValueNode): Object;
     // private toPrecisionIntl(thisNumberVal: number, lPrecision: number, node: Node, errorBranch: InlinedBranchProfile): Object;
     toPrecisionOther(thisNumber: Object, precision: Object): Object;
     toPrecisionPrimitive(thisNumber: Object, precision: Object, isNumber: IsNumberNode, toNumberNode: JSToNumberNode, errorBranch: InlinedBranchProfile): Object;

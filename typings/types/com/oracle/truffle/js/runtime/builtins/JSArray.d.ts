@@ -1,5 +1,5 @@
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { DynamicObjectLibrary } from '../../../../../../com/oracle/truffle/api/object/DynamicObjectLibrary.d.ts'
+import type { DynamicObject$GetNode } from '../../../../../../com/oracle/truffle/api/object/DynamicObject$GetNode.d.ts'
 import type { HiddenKey } from '../../../../../../com/oracle/truffle/api/object/HiddenKey.d.ts'
 import type { Property } from '../../../../../../com/oracle/truffle/api/object/Property.d.ts'
 import type { Shape } from '../../../../../../com/oracle/truffle/api/object/Shape.d.ts'
@@ -40,8 +40,8 @@ export class JSArray extends JSAbstractArray implements JSConstructorFactory$Wit
     static arrayGetHoleCount(paramthisObj: JSDynamicObject): number;
     static arrayGetIndexOffset(paramthisObj: JSDynamicObject): number;
     static arrayGetLength(paramthisObj: JSDynamicObject): number;
-    static arrayGetRegexResult(paramthisObj: JSDynamicObject, paramlazyRegexResult: DynamicObjectLibrary): Object;
-    static arrayGetRegexResultOriginalInput(paramthisObj: JSDynamicObject, paramlazyRegexResultOriginalInput: DynamicObjectLibrary): TruffleString;
+    static arrayGetRegexResult(paramthisObj: JSDynamicObject, paramgetLazyRegexResult: DynamicObject$GetNode): Object;
+    static arrayGetRegexResultOriginalInput(paramthisObj: JSDynamicObject, paramgetLazyRegexResultOriginalInput: DynamicObject$GetNode): TruffleString;
     static arrayGetUsedLength(paramthisObj: JSDynamicObject): number;
     static arraySetArray(paramthisObj: JSDynamicObject, paramarray: Object): void;
     static arraySetArrayOffset(paramthisObj: JSDynamicObject, paramarrayOffset: number): void;

@@ -3,7 +3,7 @@ import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { AtomicsBuiltins$AtomicsIsLockFreeNode } from '../../../../../com/oracle/truffle/js/builtins/AtomicsBuiltins$AtomicsIsLockFreeNode.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
-import type { JSToInt32Node } from '../../../../../com/oracle/truffle/js/nodes/cast/JSToInt32Node.d.ts'
+import type { JSToIntegerAsIntNode } from '../../../../../com/oracle/truffle/js/nodes/cast/JSToIntegerAsIntNode.d.ts'
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
 import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
@@ -34,7 +34,7 @@ export class AtomicsBuiltinsFactory$AtomicsIsLockFreeNodeGen extends AtomicsBuil
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     private constructor(context: JSContext, builtin: JSBuiltin, arguments: JavaScriptNode[])
     // private arguments0_: JavaScriptNode;
-    // private generic_toInt32Node_: JSToInt32Node;
+    // private generic_toIntNode_: JSToIntegerAsIntNode;
     // private state_0_: number;
     execute(frameValue: VirtualFrame): Object;
     // private executeAndSpecialize(arguments0Value: Object): boolean;

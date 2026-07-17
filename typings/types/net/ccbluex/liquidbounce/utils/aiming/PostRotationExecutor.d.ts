@@ -11,7 +11,7 @@ import type { Component } from '../../../../../net/minecraft/network/chat/Compon
 /**
  * Executes code right after the client sent the normal movement packet or at the start of the next tick.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/PostRotationExecutor.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/PostRotationExecutor.kt:34}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/PostRotationExecutor.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/PostRotationExecutor.kt:34}
  */
 export class PostRotationExecutor extends Object implements EventListener {
     static INSTANCE: PostRotationExecutor;

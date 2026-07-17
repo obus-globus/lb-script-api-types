@@ -8,7 +8,6 @@ export class TruffleLogger$LoggerCache extends Object {
     constructor(loggerCacheSpi: Object)
     // private activeContexts: TruffleLogger$LoggerCache$ContextWeakReference[];
     // private effectiveLevels: { [key: string]: Level };
-    // private knownIds: string[];
     // private loggerCache: Object;
     // private loggers: { [key: string]: TruffleLogger$LoggerCache$NamedLoggerRef };
     // private polyglotRootLogger: TruffleLogger;
@@ -20,7 +19,6 @@ export class TruffleLogger$LoggerCache extends Object {
     // private createParents(loggerName: string): void;
     // private findLoggerNode(loggerName: string): TruffleLogger$LoggerCache$LoggerNode;
     // private getEffectiveLevel(loggerName: string): Level;
-    // private getKnownIds(): string[];
     // private getLogger(loggerName: string): TruffleLogger;
     // private getOrCreateLogger(loggerName: string): TruffleLogger;
     // private getOrCreateLogger(id: string, loggerName: string): TruffleLogger;

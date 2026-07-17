@@ -1,6 +1,6 @@
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { DynamicObjectLibrary } from '../../../../../com/oracle/truffle/api/object/DynamicObjectLibrary.d.ts'
+import type { DynamicObject$GetNode } from '../../../../../com/oracle/truffle/api/object/DynamicObject$GetNode.d.ts'
 import type { InlinedConditionProfile } from '../../../../../com/oracle/truffle/api/profiles/InlinedConditionProfile.d.ts'
 import type { CanBeHeldWeaklyNode } from '../../../../../com/oracle/truffle/js/builtins/helper/CanBeHeldWeaklyNode.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
@@ -22,6 +22,6 @@ export abstract class WeakMapPrototypeBuiltins$JSWeakMapDeleteNode extends JSBui
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
-    deleteJSObject(thisObj: JSWeakMapObject, key: JSObject, invertedGetter: DynamicObjectLibrary, hasInvertedProfile: InlinedConditionProfile): boolean;
+    deleteJSObject(thisObj: JSWeakMapObject, key: JSObject, invertedGetter: DynamicObject$GetNode, hasInvertedProfile: InlinedConditionProfile): boolean;
     deleteSymbol(thisObj: JSWeakMapObject, key: Symbol, canBeHeldWeakly: CanBeHeldWeaklyNode, hasInvertedProfile: InlinedConditionProfile): boolean;
 }

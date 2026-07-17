@@ -1,4 +1,5 @@
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
+import type { IntStream } from '../../../../../../../java/util/stream/IntStream.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../../../java/lang/CharSequence.d.ts'
 import type { UCharacter$IdentifierType } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/lang/UCharacter$IdentifierType.d.ts'
@@ -108,6 +109,10 @@ export class UCharacter extends Object implements UCharacterEnums$ECharacterCate
     static UNASSIGNED: number;
     static UPPERCASE_LETTER: number;
     static WHITE_SPACE_NEUTRAL: number;
+    static allCodePoints(): number[];
+    static allCodePointsStream(): IntStream;
+    static allScalarValues(): number[];
+    static allScalarValuesStream(): IntStream;
     static charCount(paramcp: number): number;
     static codePointAt(paramtext: string[], paramindex: number): number;
     static codePointAt(paramtext: string[], paramindex: number, paramlimit: number): number;
@@ -182,7 +187,9 @@ export class UCharacter extends Object implements UCharacterEnums$ECharacterCate
     static isLowSurrogate(paramcodePoint: number): boolean;
     static isLowerCase(paramch: number): boolean;
     static isMirrored(paramch: number): boolean;
+    static isNoncharacter(paramcp: number): boolean;
     static isPrintable(paramch: number): boolean;
+    static isScalarValue(paramcp: number): boolean;
     static isSpace(paramch: number): boolean;
     static isSpaceChar(paramch: number): boolean;
     static isSupplementary(paramch: number): boolean;

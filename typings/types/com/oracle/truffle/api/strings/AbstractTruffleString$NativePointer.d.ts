@@ -7,7 +7,7 @@ export class AbstractTruffleString$NativePointer extends Object {
     // private pointer: number;
     // private pointerObject: Object;
     copy(): AbstractTruffleString$NativePointer;
-    getPointerObject(): Object;
+    getPointerObjectOrRawPointer(): Object;
     invalidateCachedByteArray(): void;
     materializeByteArray(a: AbstractTruffleString): number[];
     materializeByteArray(byteOffset: number, byteLength: number): number[];

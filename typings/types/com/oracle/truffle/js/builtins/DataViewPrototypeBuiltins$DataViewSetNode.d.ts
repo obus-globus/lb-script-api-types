@@ -14,6 +14,7 @@ import type { JSToInt32Node } from '../../../../../com/oracle/truffle/js/nodes/c
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
 import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
+import type { TypedArrayFactory } from '../../../../../com/oracle/truffle/js/runtime/array/TypedArrayFactory.d.ts'
 import type { JSDataViewObject } from '../../../../../com/oracle/truffle/js/runtime/builtins/JSDataViewObject.d.ts'
 import type { JSDynamicObject } from '../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
@@ -28,7 +29,7 @@ export abstract class DataViewPrototypeBuiltins$DataViewSetNode extends DataView
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
-    constructor(context: JSContext, builtin: JSBuiltin)
+    constructor(context: JSContext, builtin: JSBuiltin, typedArrayFactory: TypedArrayFactory)
     // private toBigIntNode: JSToBigIntNode;
     // private toDoubleNode: JSToDoubleNode;
     // private toInt32Node: JSToInt32Node;

@@ -8,6 +8,7 @@ import type { JSBuiltinNode } from '../../../../../../com/oracle/truffle/js/node
 import type { ToWebAssemblyValueNode } from '../../../../../../com/oracle/truffle/js/nodes/wasm/ToWebAssemblyValueNode.d.ts'
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
 import type { JSWebAssemblyGlobalObject } from '../../../../../../com/oracle/truffle/js/runtime/builtins/wasm/JSWebAssemblyGlobalObject.d.ts'
+import type { WebAssemblyType } from '../../../../../../com/oracle/truffle/js/runtime/builtins/wasm/WebAssemblyType.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class WebAssemblyGlobalPrototypeBuiltins$WebAssemblyGlobalSetValueNode extends JSBuiltinNode {
@@ -23,4 +24,5 @@ export abstract class WebAssemblyGlobalPrototypeBuiltins$WebAssemblyGlobalSetVal
     constructor(context: JSContext, builtin: JSBuiltin)
     doIncompatibleReceiver(thisObj: Object, args: Object): Object;
     setValue(global: JSWebAssemblyGlobalObject, args: Object[], errorBranch: InlinedBranchProfile, toWebAssemblyValueNode: ToWebAssemblyValueNode, globalWriteLib: InteropLibrary): Object;
+    // private valueTypeError(type: WebAssemblyType): void;
 }

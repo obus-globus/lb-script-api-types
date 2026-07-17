@@ -8,7 +8,7 @@ import type { Vec3 } from '../../../../../../../../net/minecraft/world/phys/Vec3
  * @param resistance proportional to the time it will take until the actual target is reached
  * @param blockerCount number of blocks that need to be broken for the path
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt#L516 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt:516}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt#L516 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt:516}
  */
 export class ModuleFucker$SurroundingInfo extends Object implements Comparable<ModuleFucker$SurroundingInfo> {
     constructor(actualTargetPos: BlockPos, targetPoint: Vec3, resistance: number, blockerCount: number, firstBlockDistanceToTarget: number, firstBlockDistanceToEyes: number)

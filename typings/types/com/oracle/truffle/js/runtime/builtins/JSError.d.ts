@@ -52,9 +52,11 @@ export class JSError extends JSNonProxy {
     static createForeignErrorPrototype(paramrealm: JSRealm): JSObject;
     static createFromJSException(paramexception: JSException, paramrealm: JSRealm, parammessage: string): JSErrorObject;
     static filterOwnPropertyKeys(paramownPropertyKeys: Object[], paramstrings: boolean, paramsymbols: boolean): Object[];
+    static formatStackTrace(paramstackTrace: GraalJSException$JSStackTraceElement[], paramerrObj: JSDynamicObject, paramrealm: JSRealm): TruffleString;
     static getAnonymousFunctionNameStackTrace(paramcontext: JSContext): TruffleString;
     static getException(paramerrorObj: JSErrorObject): GraalJSException;
     static getException(paramerrorObj: JSObject): GraalJSException;
+    static getFormattedStack(paramstore: JSDynamicObject): Object;
     static isInstance(paramobject: JSDynamicObject, paramjsclass: JSClass): boolean;
     static isInstance(paramobject: Object, paramjsclass: JSClass): boolean;
     static isJSError(paramobj: Object): boolean;
@@ -68,6 +70,7 @@ export class JSError extends JSNonProxy {
     static prepareStackNoCallback(paramrealm: JSRealm, paramerrorObj: JSDynamicObject, paramjsStackTrace: GraalJSException$JSStackTraceElement[]): Object;
     static setColumnNumber(paramcontext: JSContext, paramerrorObj: JSDynamicObject, paramcolumnNumber: Object): void;
     static setException(paramrealm: JSRealm, paramerrorObj: JSErrorObject, paramexception: GraalJSException, paramdefaultColumnNumber: boolean): JSDynamicObject;
+    static setFormattedStack(paramstore: JSDynamicObject, paramvalue: Object): void;
     static setIntegrityLevelFast(paramthisObj: JSDynamicObject, paramfreeze: boolean): boolean;
     static setLineNumber(paramcontext: JSContext, paramerrorObj: JSDynamicObject, paramlineNumber: Object): void;
     static setMessage(paramobj: JSDynamicObject, parammessage: TruffleString): void;

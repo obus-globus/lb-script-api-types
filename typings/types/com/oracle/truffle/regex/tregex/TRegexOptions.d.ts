@@ -5,6 +5,7 @@ export class TRegexOptions extends Object {
     static TRegexGenerateDFAThresholdCalls: number;
     static TRegexGenerateDFAThresholdCharacters: number;
     static TRegexMaxBackTrackerMergeExplodeSize: number;
+    static TRegexMaxBacktrackingStackSize: number;
     static TRegexMaxCounterTrackerMemoryConsumptionInForceLinearExecutionMode: number;
     static TRegexMaxDFACGPartialTransitions: number;
     static TRegexMaxDFASize: number;
@@ -19,6 +20,7 @@ export class TRegexOptions extends Object {
     static TRegexMaxPureNFASize: number;
     static TRegexMaxPureNFATransitions: number;
     static TRegexMaxTransitionsInTrivialExecutor: number;
+    static TRegexParserTreeMaxNestingLevel: number;
     static TRegexParserTreeMaxNumberOfSequencesInGroup: number;
     static TRegexParserTreeMaxNumberOfTermsInSequence: number;
     static TRegexParserTreeMaxSize: number;

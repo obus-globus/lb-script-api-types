@@ -12,6 +12,7 @@ export class JDKSupport$IsolatedImpl extends Accessor$ModulesAccessor {
     // private addExportsToAllUnnamed: MethodHandle;
     // private addOpens: MethodHandle;
     // private addOpensToAllUnnamed: MethodHandle;
+    // private createTerminatingThreadLocal: MethodHandle;
     // private currentCarrierThread: MethodHandle;
     readonly targetModule: Module;
     addEnableNativeAccess(module: Module): void;

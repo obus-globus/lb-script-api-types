@@ -6,7 +6,6 @@ export class TruffleStringFactory$ForceEncodingNodeGen extends TruffleString$For
     static create(): TruffleString$ForceEncodingNode;
     static getUncached(): TruffleString$ForceEncodingNode;
     private constructor()
-    // private reinterpret_fromBufferWithStringCompactionNode__field1_: number;
     // private state_0_: number;
     // private state_1_: number;
     execute(arg0Value: AbstractTruffleString, arg1Value: TruffleString$Encoding, arg2Value: TruffleString$Encoding): TruffleString;

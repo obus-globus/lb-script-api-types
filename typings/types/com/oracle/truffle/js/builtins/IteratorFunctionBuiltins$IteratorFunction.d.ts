@@ -9,6 +9,8 @@ import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class IteratorFunctionBuiltins$IteratorFunction extends Enum<IteratorFunctionBuiltins$IteratorFunction> implements BuiltinEnum<IteratorFunctionBuiltins$IteratorFunction> {
     static concat: IteratorFunctionBuiltins$IteratorFunction;
     static from: IteratorFunctionBuiltins$IteratorFunction;
+    static zip: IteratorFunctionBuiltins$IteratorFunction;
+    static zipKeyed: IteratorFunctionBuiltins$IteratorFunction;
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): IteratorFunctionBuiltins$IteratorFunction;
@@ -34,5 +36,5 @@ export class IteratorFunctionBuiltins$IteratorFunction extends Enum<IteratorFunc
     isSetter(): boolean;
     isWritable(): boolean;
     prependAccessorPrefix(name: TruffleString): TruffleString;
-    name(): "from" | "concat";
+    name(): "from" | "concat" | "zip" | "zipKeyed";
 }

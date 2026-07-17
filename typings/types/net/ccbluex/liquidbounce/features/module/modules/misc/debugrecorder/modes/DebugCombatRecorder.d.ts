@@ -11,7 +11,7 @@ import type { TargetTracker } from '../../../../../../../../../net/ccbluex/liqui
 /**
  * Records combat behavior
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/debugrecorder/modes/DebugCombatRecorder.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/debugrecorder/modes/DebugCombatRecorder.kt:60}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/debugrecorder/modes/DebugCombatRecorder.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/debugrecorder/modes/DebugCombatRecorder.kt:60}
  */
 export class DebugCombatRecorder extends ModuleDebugRecorder$DebugRecorderMode<CombatSample> {
     static Companion: Tagged$Companion;

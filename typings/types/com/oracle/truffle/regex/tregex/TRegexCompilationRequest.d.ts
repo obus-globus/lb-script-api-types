@@ -11,7 +11,7 @@ import type { PureNFA } from '../../../../../com/oracle/truffle/regex/tregex/nfa
 import type { TRegexExecNode$LazyCaptureGroupRegexSearchNode } from '../../../../../com/oracle/truffle/regex/tregex/nodes/TRegexExecNode$LazyCaptureGroupRegexSearchNode.d.ts'
 import type { TRegexDFAExecutorNode } from '../../../../../com/oracle/truffle/regex/tregex/nodes/dfa/TRegexDFAExecutorNode.d.ts'
 import type { TRegexDFAExecutorProperties } from '../../../../../com/oracle/truffle/regex/tregex/nodes/dfa/TRegexDFAExecutorProperties.d.ts'
-import type { TRegexBacktrackingNFAExecutorNode } from '../../../../../com/oracle/truffle/regex/tregex/nodes/nfa/TRegexBacktrackingNFAExecutorNode.d.ts'
+import type { TRegexBacktrackerSubExecutorNode } from '../../../../../com/oracle/truffle/regex/tregex/nodes/nfa/TRegexBacktrackerSubExecutorNode.d.ts'
 import type { RegexAST } from '../../../../../com/oracle/truffle/regex/tregex/parser/ast/RegexAST.d.ts'
 import type { DebugUtil$Timer } from '../../../../../com/oracle/truffle/regex/tregex/util/DebugUtil$Timer.d.ts'
 import type { JsonObject$JsonObjectProperty } from '../../../../../com/oracle/truffle/regex/tregex/util/json/JsonObject$JsonObjectProperty.d.ts'
@@ -32,10 +32,11 @@ export class TRegexCompilationRequest extends Object {
     // private timer: DebugUtil$Timer;
     // private traceFinderNFA: NFA;
     compile(): RegexExecNode;
-    compileBacktrackingExecutor(): TRegexBacktrackingNFAExecutorNode;
+    compileBacktrackingExecutor(): TRegexBacktrackerSubExecutorNode;
     compileEagerDFAExecutor(): TRegexDFAExecutorNode;
     // private compileInternal(): RegexExecNode;
     compileLazyDFAExecutor(profile: RegexProfile, allowSimpleCG: boolean): TRegexExecNode$LazyCaptureGroupRegexSearchNode;
+    compileLazyDFAExecutorFromSource(profile: RegexProfile, allowSimpleCG: boolean): TRegexExecNode$LazyCaptureGroupRegexSearchNode;
     // private createAST(): void;
     createDFAExecutor(nfaArg: NFA, props: TRegexDFAExecutorProperties, debugDumpName: string): TRegexDFAExecutorNode;
     // private createDFAExecutor(nfaArg: NFA, forward: boolean, searching: boolean, genericCG: boolean, allowSimpleCG: boolean, trackLastGroup: boolean): TRegexDFAExecutorNode;

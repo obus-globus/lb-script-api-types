@@ -16,6 +16,7 @@ import type { Engine } from '../../../org/graalvm/polyglot/Engine.d.ts'
 import type { HostAccess$MutableTargetMapping } from '../../../org/graalvm/polyglot/HostAccess$MutableTargetMapping.d.ts'
 import type { Instrument } from '../../../org/graalvm/polyglot/Instrument.d.ts'
 import type { Language } from '../../../org/graalvm/polyglot/Language.d.ts'
+import type { PolyglotException } from '../../../org/graalvm/polyglot/PolyglotException.d.ts'
 import type { PolyglotException$StackFrame } from '../../../org/graalvm/polyglot/PolyglotException$StackFrame.d.ts'
 import type { Source } from '../../../org/graalvm/polyglot/Source.d.ts'
 import type { Value } from '../../../org/graalvm/polyglot/Value.d.ts'
@@ -109,20 +110,6 @@ export class Engine$APIAccessImpl extends AbstractPolyglotImpl$APIAccess {
     getPolyglotExceptionAPIEngine(polyglotException: RuntimeException): Engine;
     getPolyglotExceptionClass(): Class<Object>;
     getPolyglotExceptionReceiver(polyglot: RuntimeException): Object;
-    getProxyArrayClass(): Class<Object>;
-    getProxyClass(): Class<Object>;
-    getProxyDateClass(): Class<Object>;
-    getProxyDurationClass(): Class<Object>;
-    getProxyExecutableClass(): Class<Object>;
-    getProxyHashMapClass(): Class<Object>;
-    getProxyInstantClass(): Class<Object>;
-    getProxyInstantiableClass(): Class<Object>;
-    getProxyIterableClass(): Class<Object>;
-    getProxyIteratorClass(): Class<Object>;
-    getProxyNativeObjectClass(): Class<Object>;
-    getProxyObjectClass(): Class<Object>;
-    getProxyTimeClass(): Class<Object>;
-    getProxyTimeZoneClass(): Class<Object>;
     getResourceLimitsReceiver(value: Object): Object;
     getSourceDispatch(source: Object): AbstractPolyglotImpl$AbstractSourceDispatch;
     getSourceReceiver(source: Object): Object;
@@ -151,20 +138,6 @@ export class Engine$APIAccessImpl extends AbstractPolyglotImpl$APIAccess {
     isMethodScoped(access: Object, e: Executable): boolean;
     isMethodScopingEnabled(access: Object): boolean;
     isPolyglotException(exception: Object): boolean;
-    isProxy(proxy: Object): boolean;
-    isProxyArray(proxy: Object): boolean;
-    isProxyDate(proxy: Object): boolean;
-    isProxyDuration(proxy: Object): boolean;
-    isProxyExecutable(proxy: Object): boolean;
-    isProxyHashMap(proxy: Object): boolean;
-    isProxyInstant(proxy: Object): boolean;
-    isProxyInstantiable(proxy: Object): boolean;
-    isProxyIterable(proxy: Object): boolean;
-    isProxyIterator(proxy: Object): boolean;
-    isProxyNativeObject(proxy: Object): boolean;
-    isProxyObject(proxy: Object): boolean;
-    isProxyTime(proxy: Object): boolean;
-    isProxyTimeZone(proxy: Object): boolean;
     isSource(value: Object): boolean;
     isSourceSection(value: Object): boolean;
     isValue(value: Object): boolean;
@@ -173,7 +146,7 @@ export class Engine$APIAccessImpl extends AbstractPolyglotImpl$APIAccess {
     newInnerContext(dispatch: AbstractPolyglotImpl$AbstractContextDispatch, receiver: Object, parentContext: Context, engine: Engine): Context;
     newInstrument(dispatch: AbstractPolyglotImpl$AbstractInstrumentDispatch, receiver: Object, engine: Engine): Instrument;
     newLanguage(dispatch: AbstractPolyglotImpl$AbstractLanguageDispatch, receiver: Object, engine: Engine): Language;
-    newLanguageException(message: string, dispatch: AbstractPolyglotImpl$AbstractExceptionDispatch, receiver: Object, anchor: Object): RuntimeException;
+    newLanguageException(message: string, dispatch: AbstractPolyglotImpl$AbstractExceptionDispatch, receiver: Object, anchor: Object): PolyglotException;
     newPolyglotStackTraceElement(dispatch: AbstractPolyglotImpl$AbstractStackFrameImpl, receiver: RuntimeException): PolyglotException$StackFrame;
     newResourceLimitsEvent(context: Object): Object;
     newSource(dispatch: AbstractPolyglotImpl$AbstractSourceDispatch, receiver: Object): Source;

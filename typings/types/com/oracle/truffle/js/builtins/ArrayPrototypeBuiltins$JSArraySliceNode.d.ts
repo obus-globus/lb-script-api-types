@@ -1,5 +1,4 @@
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
-import type { InteropLibrary } from '../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { InlinedConditionProfile } from '../../../../../com/oracle/truffle/api/profiles/InlinedConditionProfile.d.ts'
 import type { ArrayPrototypeBuiltins$ArrayForEachIndexCallOperation } from '../../../../../com/oracle/truffle/js/builtins/ArrayPrototypeBuiltins$ArrayForEachIndexCallOperation.d.ts'
@@ -10,7 +9,6 @@ import type { JSToIntegerAsLongNode } from '../../../../../com/oracle/truffle/js
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
 import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
-import type { TypedArray } from '../../../../../com/oracle/truffle/js/runtime/array/TypedArray.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class ArrayPrototypeBuiltins$JSArraySliceNode extends ArrayPrototypeBuiltins$ArrayForEachIndexCallOperation {
@@ -23,10 +21,8 @@ export abstract class ArrayPrototypeBuiltins$JSArraySliceNode extends ArrayProto
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
-    constructor(context: JSContext, builtin: JSBuiltin, isTypedArrayImplementation: boolean)
-    // private interopLibrary: InteropLibrary;
-    // private getInterop(arrayType: TypedArray): InteropLibrary;
+    constructor(context: JSContext, builtin: JSBuiltin)
     makeCallbackNode(): ForEachIndexCallNode$CallbackNode;
     makeMaybeResultNode(): ForEachIndexCallNode$MaybeResultNode;
-    sliceGeneric(thisObj: Object, begin: Object, end: Object, toIntegerAsLong: JSToIntegerAsLongNode, sizeIsZero: InlinedConditionProfile, offsetProfile1: InlinedConditionProfile, offsetProfile2: InlinedConditionProfile, sameElementTypeProfile: InlinedConditionProfile): Object;
+    sliceGeneric(thisObj: Object, begin: Object, end: Object, toIntegerAsLong: JSToIntegerAsLongNode, sizeIsZero: InlinedConditionProfile, offsetProfile1: InlinedConditionProfile, offsetProfile2: InlinedConditionProfile): Object;
 }

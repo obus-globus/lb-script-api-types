@@ -15,6 +15,7 @@ import type { JSDynamicObject } from '../../../../../../../com/oracle/truffle/js
 import type { JSObject } from '../../../../../../../com/oracle/truffle/js/runtime/objects/JSObject.d.ts'
 import type { PropertyDescriptor } from '../../../../../../../com/oracle/truffle/js/runtime/objects/PropertyDescriptor.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { Number } from '../../../../../../../java/lang/Number.d.ts'
 import type { LocalizedNumberFormatter } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/number/LocalizedNumberFormatter.d.ts'
 import type { PluralRules } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/PluralRules.d.ts'
 export class JSPluralRules extends JSNonProxy implements JSConstructorFactory$WithFunctions, PrototypeSupplier {
@@ -38,8 +39,8 @@ export class JSPluralRules extends JSNonProxy implements JSConstructorFactory$Wi
     static ordinaryOwnPropertyKeys(paramthisObj: JSDynamicObject): Object[];
     static ordinaryPreventExtensions(paramthisObj: JSDynamicObject, paramextraFlags: number): boolean;
     static resolvedOptions(paramcontext: JSContext, paramrealm: JSRealm, parampluralRulesObj: JSPluralRulesObject): JSObject;
-    static select(parampluralRulesObj: JSPluralRulesObject, paramnumber: number): TruffleString;
-    static selectRange(parampluralRulesObj: JSPluralRulesObject, paramx: number, paramy: number): TruffleString;
+    static select(parampluralRulesObj: JSPluralRulesObject, paramnumber: Number): TruffleString;
+    static selectRange(parampluralRulesObj: JSPluralRulesObject, paramx: Number, paramy: Number): TruffleString;
     static setIntegrityLevelFast(paramthisObj: JSDynamicObject, paramfreeze: boolean): boolean;
     static testIntegrityLevelFast(paramobj: JSDynamicObject, paramfrozen: boolean): boolean;
     private constructor()

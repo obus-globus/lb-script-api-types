@@ -8,7 +8,8 @@ import type { JsonObject } from '../../../../../../com/oracle/truffle/regex/treg
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { EconomicMap } from '../../../../../../org/graalvm/collections/EconomicMap.d.ts'
 export class NFAState extends BasicState<NFAState, NFAStateTransition> implements JsonConvertible {
-    constructor(original: NFAState)
+    static isAnchoredFinalState(paramflags: number): boolean;
+    static isUnAnchoredFinalState(paramflags: number): boolean;
     constructor(id: number, stateSet: RegexASTNode[], finishedLookBehinds: LookBehindAssertion[], hasPrefixStates: boolean, mustAdvance: boolean)
     constructor(id: number, stateSet: RegexASTNode[], finishedLookBehinds: LookBehindAssertion[], hasPrefixStates: boolean, mustAdvance: boolean, matchedConditionGroupsMap: EconomicMap<number, number[]>)
     readonly finishedLookBehinds: LookBehindAssertion[];

@@ -43,6 +43,6 @@ export abstract class ArrayFunctionBuiltins$JSArrayFromNode extends ArrayFunctio
     callMapFn(target: Object, function_: Object, ...userArguments: Object[]): Object;
     getIteratorValue(iteratorResult: Object): Object;
     getSourceLength(thisObject: Object): number;
-    iteratorCloseAbrupt(iterator: Object): void;
+    iteratorCloseAbrupt(iterator: IteratorRecord): void;
     iteratorStep(iteratorRecord: IteratorRecord): Object;
 }

@@ -35,7 +35,7 @@ export abstract class GlobalBuiltins$JSLoadOperation extends GlobalBuiltins$JSFi
     // private loadNode: JSLoadNode;
     loadStringImpl(name: TruffleString, script: TruffleString): ScriptNode;
     runImpl(realm: JSRealm, source: Source): Object;
-    sourceFromPath(path: string, realm: JSRealm): Source;
+    sourceFromPathOrURI(path: string, realm: JSRealm): Source;
     // private sourceFromResourceURL(resource: string, realm: JSRealm): Source;
     // private sourceFromURI(resource: string, realm: JSRealm): Source;
     sourceFromURL(url: URL, realm: JSRealm): Source;

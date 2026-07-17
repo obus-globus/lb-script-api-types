@@ -16,7 +16,5 @@ export class JSONStringifyStringNodeGen extends JSONStringifyStringNode {
     static jsonQuote(paramstringBuilderProfile: StringBuilderProfile, paramsb: TruffleStringBuilderUTF16, paramvalueStr: TruffleString, paramreadCharNode: TruffleString$ReadCharUTF16Node, paramappendCharNode: TruffleStringBuilder$AppendCharUTF16Node, paramappendStringNode: TruffleStringBuilder$AppendStringNode, paramappendSubstringNode: TruffleStringBuilder$AppendSubstringByteIndexNode): TruffleStringBuilder;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
-    // private state_0_: number;
     execute(arg0Value: Object, arg1Value: Object, arg2Value: JSObject): Object;
-    // private executeAndSpecialize(arg0Value: Object, arg1Value: Object, arg2Value: JSObject): Object;
 }

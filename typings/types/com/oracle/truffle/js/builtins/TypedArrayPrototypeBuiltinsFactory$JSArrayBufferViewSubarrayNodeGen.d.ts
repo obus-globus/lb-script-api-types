@@ -1,5 +1,6 @@
 import type { VirtualFrame } from '../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
+import type { InteropLibrary } from '../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { TypedArrayPrototypeBuiltins$JSArrayBufferViewSubarrayNode } from '../../../../../com/oracle/truffle/js/builtins/TypedArrayPrototypeBuiltins$JSArrayBufferViewSubarrayNode.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
@@ -25,6 +26,7 @@ export class TypedArrayPrototypeBuiltinsFactory$JSArrayBufferViewSubarrayNodeGen
     // private arguments1_: JavaScriptNode;
     // private arguments2_: JavaScriptNode;
     // private state_0_: number;
+    // private subarray_typedArrayLength__field1_: InteropLibrary;
     execute(frameValue: VirtualFrame): Object;
     // private executeAndSpecialize(arguments0Value: Object, arguments1Value: Object, arguments2Value: Object): JSTypedArrayObject;
     getArguments(): JavaScriptNode[];

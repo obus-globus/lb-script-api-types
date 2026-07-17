@@ -1,7 +1,7 @@
 import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { DynamicObjectLibrary } from '../../../../../../com/oracle/truffle/api/object/DynamicObjectLibrary.d.ts'
+import type { DynamicObject$ContainsKeyNode } from '../../../../../../com/oracle/truffle/api/object/DynamicObject$ContainsKeyNode.d.ts'
 import type { HiddenKey } from '../../../../../../com/oracle/truffle/api/object/HiddenKey.d.ts'
 import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { JSTargetableNode } from '../../../../../../com/oracle/truffle/js/nodes/access/JSTargetableNode.d.ts'
@@ -24,7 +24,7 @@ export abstract class PrivateBrandCheckNode extends JSTargetableNode {
     // private targetNode: JavaScriptNode;
     copyUninitialized(materializedTags: Class<Tag>[]): JavaScriptNode;
     denied(target: Object, brand: Object): Object;
-    doInstance(target: JSObject, brandKey: HiddenKey, access: DynamicObjectLibrary): Object;
+    doInstance(target: JSObject, brandKey: HiddenKey, containsKey: DynamicObject$ContainsKeyNode): Object;
     doStatic(target: JSObject, brand: JSDynamicObject): Object;
     getTarget(): JavaScriptNode;
 }

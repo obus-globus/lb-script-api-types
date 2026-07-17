@@ -10,6 +10,7 @@ import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/funct
 import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
 import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
 import type { JSRealm } from '../../../../../com/oracle/truffle/js/runtime/JSRealm.d.ts'
+import type { JSArrayBufferObject } from '../../../../../com/oracle/truffle/js/runtime/builtins/JSArrayBufferObject.d.ts'
 import type { JSDynamicObject } from '../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -26,6 +27,7 @@ export abstract class ConstructorBuiltins$ConstructArrayBufferNode extends Const
     constructor(context: JSContext, builtin: JSBuiltin, useShared: boolean, isNewTargetCase: boolean)
     // private useShared: boolean;
     constructFromInteropBuffer(newTarget: JSDynamicObject, buffer: Object, options: Object, errorBranch: InlinedBranchProfile, bufferInterop: InteropLibrary): JSDynamicObject;
+    constructFromJSArrayBuffer(newTarget: JSDynamicObject, length: JSArrayBufferObject, options: Object, toIndexNode: JSToIndexNode, getMaxByteLengthOption: ConstructorBuiltins$GetArrayBufferMaxByteLengthOption, errorBranch: InlinedBranchProfile): JSDynamicObject;
     constructFromLength(newTarget: JSDynamicObject, length: Object, options: Object, toIndexNode: JSToIndexNode, getMaxByteLengthOption: ConstructorBuiltins$GetArrayBufferMaxByteLengthOption, errorBranch: InlinedBranchProfile, bufferInterop: InteropLibrary): JSDynamicObject;
     getIntrinsicDefaultProto(realm: JSRealm): JSDynamicObject;
 }

@@ -67,6 +67,7 @@ export abstract class DebugValue extends Object {
     getScope(): DebugScope;
     getSession(): DebuggerSession;
     getSourceLocation(): SourceSection;
+    getStaticScope(): DebugValue;
     hasHashEntries(): boolean;
     hasIterator(): boolean;
     hasIteratorNextElement(): boolean;

@@ -4,7 +4,7 @@ import type { Tagged$Companion } from '../../../../../../net/ccbluex/liquidbounc
 /**
  * Empty mode without any functionality. Use as a disable mode.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.kt#L150 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.kt:150}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.kt#L150 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.kt:150}
  */
 export class NoneMode extends Mode {
     static Companion: Tagged$Companion;

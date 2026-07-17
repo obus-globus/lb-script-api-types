@@ -10,8 +10,6 @@ export class MutableTruffleStringFactory$SwitchEncodingNodeGen$TranscodeAndCopyD
     // private transcodeAndCopy_state_3_: number;
     // private transcodeAndCopy_state_4_: number;
     // private transcodeAndCopy_state_5_: number;
-    // private transcodeAndCopy_state_6_: number;
-    // private transcodeAndCopy_state_7_: number;
-    // private transcodeAndCopy_switchEncodingNode__field8_: number;
-    // private transcodeAndCopy_switchEncodingNode__field9_: number;
+    // private transcodeAndCopy_switchEncodingNode__field6_: number;
+    // private transcodeAndCopy_switchEncodingNode__field7_: number;
 }

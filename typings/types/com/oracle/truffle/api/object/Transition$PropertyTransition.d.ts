@@ -11,6 +11,6 @@ export abstract class Transition$PropertyTransition extends Transition {
     getProperty(): Property;
     getPropertyFlags(): number;
     getPropertyKey(): Object;
-    hasConstantLocation(): boolean;
     hashCode(): number;
+    isWeak(): boolean;
 }

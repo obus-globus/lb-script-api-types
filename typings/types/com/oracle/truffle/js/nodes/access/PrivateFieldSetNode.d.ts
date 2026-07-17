@@ -1,7 +1,7 @@
 import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { DynamicObjectLibrary } from '../../../../../../com/oracle/truffle/api/object/DynamicObjectLibrary.d.ts'
+import type { DynamicObject$PutNode } from '../../../../../../com/oracle/truffle/api/object/DynamicObject$PutNode.d.ts'
 import type { HiddenKey } from '../../../../../../com/oracle/truffle/api/object/HiddenKey.d.ts'
 import type { InlinedBranchProfile } from '../../../../../../com/oracle/truffle/api/profiles/InlinedBranchProfile.d.ts'
 import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
@@ -29,7 +29,7 @@ export abstract class PrivateFieldSetNode extends JSTargetableNode {
     // private valueNode: JavaScriptNode;
     copyUninitialized(materializedTags: Class<Tag>[]): JavaScriptNode;
     doAccessor(target: JSObject, accessor: Accessor, value: Object, callNode: JSFunctionCallNode, errorBranch: InlinedBranchProfile): Object;
-    doField(target: JSObject, key: HiddenKey, value: Object, node: Node, access: DynamicObjectLibrary, errorBranch: InlinedBranchProfile): Object;
+    doField(target: JSObject, key: HiddenKey, value: Object, node: Node, putField: DynamicObject$PutNode, errorBranch: InlinedBranchProfile): Object;
     getTarget(): JavaScriptNode;
     // private keyAsString(): Object;
     missing(target: Object, key: Object, value: Object): Object;

@@ -11,6 +11,7 @@ import type { JSDynamicObject } from '../../../../../../../com/oracle/truffle/js
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class ContiguousDoubleArray extends AbstractContiguousDoubleArray {
     static EMPTY_OBJECT_ARRAY: Object[];
+    static canonicalizeNaN(paramvalue: number): number;
     static createConstantArray(paramelements: Object[]): AbstractConstantArray;
     static createConstantEmptyArray(): AbstractConstantArray;
     static isSupportedZeroBased(paramobject: JSDynamicObject, paramindex: number): boolean;

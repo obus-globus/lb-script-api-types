@@ -9,6 +9,7 @@ export class JFRListener$Statistics extends Object implements Runnable {
     // private invalidations: AtomicLong;
     // private peakTime: number;
     // private totalTime: number;
-    finishCompilation(time: number, bailout: boolean, codeSize: number): void;
+    // private totalTimeNanosRemainder: number;
+    finishCompilation(timeNanos: number, bailout: boolean, codeSize: number): void;
     run(): void;
 }

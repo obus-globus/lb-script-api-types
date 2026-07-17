@@ -10,6 +10,7 @@ import type { ParsePosition } from '../../../../../../../java/text/ParsePosition
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../../../java/lang/CharSequence.d.ts'
+import type { Cloneable } from '../../../../../../../java/lang/Cloneable.d.ts'
 import type { Number } from '../../../../../../../java/lang/Number.d.ts'
 import type { DecimalFormatProperties } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/number/DecimalFormatProperties.d.ts'
 import type { DecimalFormatProperties$ParseMode } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/number/DecimalFormatProperties$ParseMode.d.ts'
@@ -27,7 +28,7 @@ import type { Currency } from '../../../../../../../org/graalvm/shadowed/com/ibm
 import type { Currency$CurrencyUsage } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/Currency$CurrencyUsage.d.ts'
 import type { CurrencyAmount } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/CurrencyAmount.d.ts'
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
-export class DecimalFormat extends NumberFormat {
+export class DecimalFormat extends NumberFormat implements Cloneable {
     static ACCOUNTINGCURRENCYSTYLE: number;
     static CASHCURRENCYSTYLE: number;
     static CURRENCYSTYLE: number;
@@ -89,7 +90,7 @@ export class DecimalFormat extends NumberFormat {
     applyLocalizedPattern(localizedPattern: string): void;
     applyPattern(pattern: string): void;
     areSignificantDigitsUsed(): boolean;
-    clone(): Object;
+    clone(): DecimalFormat;
     equals(obj: Object | null): boolean;
     format(number: BigDecimal): string;
     format(number: BigDecimal, result: StringBuffer, fieldPosition: FieldPosition): StringBuffer;

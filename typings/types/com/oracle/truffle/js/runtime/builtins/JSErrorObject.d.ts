@@ -40,9 +40,11 @@ export class JSErrorObject extends JSNonProxyObject implements JSCopyableObject 
     static defineOwnProperty(paramobj: JSDynamicObject, paramkey: Object, paramdesc: PropertyDescriptor, paramdoThrow: boolean): boolean;
     static delete(paramobj: JSDynamicObject, paramkey: Object): boolean;
     static delete(paramobj: JSDynamicObject, paramkey: Object, paramisStrict: boolean): boolean;
+    static delete(paramobj: JSDynamicObject, paramkey: Object, paramisStrict: boolean, paramresultWhenNotPresent: boolean): boolean;
     static delete(paramobj: JSDynamicObject, paramkey: Object, paramisStrict: boolean, paramclassProfile: JSClassProfile): boolean;
     static delete(paramobj: JSDynamicObject, paramindex: number): boolean;
     static delete(paramobj: JSDynamicObject, paramindex: number, paramisStrict: boolean): boolean;
+    static delete(paramobj: JSDynamicObject, paramindex: number, paramisStrict: boolean, paramresultWhenNotPresent: boolean): boolean;
     static delete(paramobj: JSDynamicObject, paramindex: number, paramisStrict: boolean, paramclassProfile: JSClassProfile): boolean;
     static ensureInitialized(): void;
     static enumerableOwnNames(paramthisObj: JSDynamicObject): TruffleString[];
@@ -68,7 +70,7 @@ export class JSErrorObject extends JSNonProxyObject implements JSCopyableObject 
     static getOwnProperty(paramobj: JSDynamicObject, paramkey: Object): PropertyDescriptor;
     static getOwnProperty(paramobj: JSDynamicObject, paramkey: Object, paramclassProfile: JSClassProfile): PropertyDescriptor;
     static getPropertyArray(paramobj: JSDynamicObject): Property[];
-    static getPropertyFlags(paramobj: JSDynamicObject, paramkey: Object): number;
+    static getPropertyFlags(paramobj: JSDynamicObject, paramkey: Object, paramdefaultValue: number): number;
     static getPrototype(paramobj: JSDynamicObject): JSDynamicObject;
     static getPrototype(paramobj: JSDynamicObject, paramjsclassProfile: JSClassProfile): JSDynamicObject;
     static getUncachedRead(): ReadElementNode;

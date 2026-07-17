@@ -15,6 +15,7 @@ import type { OptionValues } from '../../../../../org/graalvm/options/OptionValu
 import type { Context } from '../../../../../org/graalvm/polyglot/Context.d.ts'
 export class JavaScriptLanguage extends TruffleLanguage<JSRealm> {
     static APPLICATION_MIME_TYPE: string;
+    static BYTES_MIME_TYPE: string;
     static ID: string;
     static IMPLEMENTATION_NAME: string;
     static INTERNAL_SOURCE_URL_PREFIX: string;

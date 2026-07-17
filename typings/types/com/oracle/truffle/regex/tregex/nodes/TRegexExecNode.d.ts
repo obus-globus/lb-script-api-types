@@ -4,6 +4,7 @@ import type { RegexExecNode } from '../../../../../../com/oracle/truffle/regex/R
 import type { RegexLanguage } from '../../../../../../com/oracle/truffle/regex/RegexLanguage.d.ts'
 import type { RegexProfile } from '../../../../../../com/oracle/truffle/regex/RegexProfile.d.ts'
 import type { RegexProfile$TracksRegexProfile } from '../../../../../../com/oracle/truffle/regex/RegexProfile$TracksRegexProfile.d.ts'
+import type { RegexSource } from '../../../../../../com/oracle/truffle/regex/RegexSource.d.ts'
 import type { RegexResult } from '../../../../../../com/oracle/truffle/regex/result/RegexResult.d.ts'
 import type { NFA } from '../../../../../../com/oracle/truffle/regex/tregex/nfa/NFA.d.ts'
 import type { TRegexExecNode$NFARegexSearchNode } from '../../../../../../com/oracle/truffle/regex/tregex/nodes/TRegexExecNode$NFARegexSearchNode.d.ts'
@@ -16,7 +17,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class TRegexExecNode extends RegexExecNode implements RegexProfile$TracksRegexProfile {
     static create(paramast: RegexAST, paramnfa: NFA, paramrunnerNodeArg: TRegexExecNode$RunRegexSearchNode): TRegexExecNode;
     static createEntryNode(paramlanguage: RegexLanguage, paramexecutor: TRegexExecutorNode): TRegexExecutorEntryNode;
-    private constructor(ast: RegexAST, backtrackingMode: boolean, runnerNode: TRegexExecNode$RunRegexSearchNode)
+    private constructor(ast: RegexAST, nfa: NFA, backtrackingMode: boolean, runnerNode: TRegexExecNode$RunRegexSearchNode)
     // private backtrackingMode: boolean;
     // private eagerDFABailedOut: boolean;
     // private lazyDFABailedOut: boolean;
@@ -27,12 +28,11 @@ export class TRegexExecNode extends RegexExecNode implements RegexProfile$Tracks
     // private sticky: boolean;
     execute(frame: VirtualFrame): RegexResult;
     execute(frame: VirtualFrame, input: TruffleString, fromIndex: number, maxIndex: number, regionFrom: number, regionTo: number): RegexResult;
-    getEngineLabel(): string;
     getNumberOfCaptureGroups(): number;
     getRegexProfile(): RegexProfile;
     isBacktracking(): boolean;
     isNFA(): boolean;
-    // private switchToEagerDFA(profile: RegexProfile): void;
-    // private switchToLazyDFA(nfaNode: TRegexExecNode$NFARegexSearchNode): void;
+    // private switchToEagerDFA(language: RegexLanguage, source: RegexSource, profile: RegexProfile): void;
+    // private switchToLazyDFA(language: RegexLanguage, source: RegexSource, nfaNode: TRegexExecNode$NFARegexSearchNode, nfa: NFA): void;
     // private validResult(input: Object, fromIndex: number, maxIndex: number, regionFrom: number, regionTo: number, result: RegexResult): boolean;
 }

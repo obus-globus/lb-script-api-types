@@ -15,6 +15,5 @@ export abstract class LiteralRegexExecNode extends RegexExecNode implements Json
     doTString(input: TruffleString, fromIndex: number, toIndex: number, regionFrom: number, regionTo: number): RegexResult;
     execute(frame: VirtualFrame): RegexResult;
     execute(frame: VirtualFrame, input: TruffleString, fromIndex: number, toIndex: number, regionFrom: number, regionTo: number): RegexResult;
-    getEngineLabel(): string;
     toJson(): JsonValue;
 }

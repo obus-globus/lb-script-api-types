@@ -21,20 +21,24 @@ export class JSException extends GraalJSException {
     static create(paramtype: JSErrorType, parammessage: string, paramcause: Throwable, paramsourceLocation: SourceSection, paramisIncompleteSource: boolean): JSException;
     static createCapture(paramtype: JSErrorType, parammessage: string, paramexceptionObj: JSObject, paramrealm: JSRealm): JSException;
     static createCapture(paramtype: JSErrorType, parammessage: string, paramexceptionObj: JSObject, paramrealm: JSRealm, paramstackTraceLimit: number, paramskipFramesUpTo: JSDynamicObject, paramcustomSkip: boolean): JSException;
+    static createWasmUncatchableError(paramtype: JSErrorType, parammessage: string, paramcause: Throwable, paramoriginatingNode: Node, paramrealm: JSRealm): JSException;
     static ensureInitialized(): void;
     static getJSStackTrace(paramoriginatingNode: Node): GraalJSException$JSStackTraceElement[];
     static getJSStackTrace(paramoriginatingNode: Node, paramstackTraceLimit: number): GraalJSException$JSStackTraceElement[];
     static getStackTraceLimit(paramrealm: JSRealm): number;
     static printJSStackTrace(paramoriginatingNode: Node): void;
-    private constructor(type: JSErrorType, message: string, originatingNode: Node, exceptionObj: JSObject, realm: JSRealm, stackTraceLimit: number)
+    private constructor(type: JSErrorType, message: string, originatingNode: Node, exceptionObj: JSObject, realm: JSRealm, stackTraceLimit: number, wasmUncatchableError: boolean)
     private constructor(type: JSErrorType, message: string, sourceLocation: SourceSection, realm: JSRealm, stackTraceLimit: number, isIncompleteSource: boolean)
-    private constructor(type: JSErrorType, message: string, cause: Throwable, originatingNode: Node, realm: JSRealm, stackTraceLimit: number)
+    private constructor(type: JSErrorType, message: string, cause: Throwable, originatingNode: Node, realm: JSRealm, stackTraceLimit: number, wasmUncatchableError: boolean)
+    private constructor(type: JSErrorType, message: string, cause: Throwable, originatingNode: Node, exceptionObj: JSObject, realm: JSRealm, stackTraceLimit: number, isIncompleteSource: boolean, wasmUncatchableError: boolean)
     private constructor(type: JSErrorType, message: string, cause: Throwable, sourceLocation: SourceSection, realm: JSRealm, stackTraceLimit: number, isIncompleteSource: boolean)
     // private exceptionObj: JSObject;
     // private isIncompleteSource: boolean;
     readonly message: string | null;
     readonly realm: JSRealm;
     // private type: JSErrorType;
+    readonly wasmUncatchableError: boolean;
+    copyForErrorObject(errorObj: JSObject): JSException;
     getErrorObject(): Object;
     getErrorObjectLazy(): JSObject;
     getErrorType(): JSErrorType;
@@ -54,6 +58,7 @@ export class JSException extends GraalJSException {
     isMemberModifiable(key: string, delegateLib: InteropLibrary): boolean;
     isMemberReadable(key: string, delegateLib: InteropLibrary): boolean;
     isMemberRemovable(key: string, delegateLib: InteropLibrary): boolean;
+    isWasmUncatchableError(): boolean;
     readMember(key: string, delegateLib: InteropLibrary): Object;
     removeMember(key: string, delegateLib: InteropLibrary): void;
     setErrorObject(exceptionObj: JSObject): void;

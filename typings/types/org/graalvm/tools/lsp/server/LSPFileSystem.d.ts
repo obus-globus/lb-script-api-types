@@ -16,6 +16,7 @@ import type { FileSystem$Selector } from '../../../../../org/graalvm/polyglot/io
 import type { VirtualLanguageServerFileProvider } from '../../../../../org/graalvm/tools/lsp/server/VirtualLanguageServerFileProvider.d.ts'
 export class LSPFileSystem extends Object implements FileSystem_2 {
     static allowInternalResourceAccess(paramfileSystem: FileSystem_2): FileSystem_2;
+    static allowInternalResources(paramfileSystem: FileSystem_2): FileSystem_2;
     static allowLanguageHomeAccess(paramfileSystem: FileSystem_2): FileSystem_2;
     static newCompositeFileSystem(paramfallbackFileSystem: FileSystem_2, ...paramdelegates: FileSystem$Selector[]): FileSystem_2;
     static newDefaultFileSystem(): FileSystem_2;

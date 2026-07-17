@@ -8,6 +8,7 @@ import type { LocalizedNumberRangeFormatter } from '../../../../../../../org/gra
 import type { PluralRules } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/PluralRules.d.ts'
 export class JSPluralRules$InternalState extends JSNumberFormat$BasicInternalState {
     constructor()
+    readonly compactDisplay: string;
     readonly notation: string;
     readonly numberFormatter: LocalizedNumberFormatter;
     readonly numberRangeFormatter: LocalizedNumberRangeFormatter;
@@ -20,6 +21,7 @@ export class JSPluralRules$InternalState extends JSNumberFormat$BasicInternalSta
     getPluralRules(): PluralRules;
     initializeNumberFormatter(): void;
     initializePluralRules(): void;
+    setCompactDisplay(compactDisplay: string): void;
     setNotation(notation: string): void;
     setType(type: string): void;
 }

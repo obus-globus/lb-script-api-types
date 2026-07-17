@@ -24,10 +24,10 @@ export class StringPrototypeBuiltinsFactory$JSStringSplitNodeGen extends StringP
     // private arguments0_: JavaScriptNode;
     // private arguments1_: JavaScriptNode;
     // private arguments2_: JavaScriptNode;
-    // private splitES5_readGroupCount__field1_: Node;
-    // private splitES5_readGroupCount__field2_: Node;
-    // private splitES5_regexpSplitter__field1_: number;
-    // private splitES5_regexpSplitter__field2_: number;
+    // private readGroupCount_field1_: Node;
+    // private readGroupCount_field2_: Node;
+    // private regexpSplitter_field1_: number;
+    // private regexpSplitter_field2_: number;
     // private splitES6Generic_isObject_: IsObjectNode;
     // private state_0_: number;
     // private stringSplitter_field1_: number;

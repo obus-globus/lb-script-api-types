@@ -7,5 +7,6 @@ export class Transition$ObjectTypeTransition extends Transition {
     getObjectType(): Object;
     hashCode(): number;
     isDirect(): boolean;
+    isWeak(): boolean;
     toString(): string;
 }

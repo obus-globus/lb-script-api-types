@@ -1,8 +1,8 @@
 import type { VirtualFrame } from '../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
+import type { NumberPrototypeBuiltins$ForeignGetDoubleValueNode } from '../../../../../com/oracle/truffle/js/builtins/NumberPrototypeBuiltins$ForeignGetDoubleValueNode.d.ts'
 import type { NumberPrototypeBuiltins$JSNumberToFixedNode } from '../../../../../com/oracle/truffle/js/builtins/NumberPrototypeBuiltins$JSNumberToFixedNode.d.ts'
-import type { NumberPrototypeBuiltinsFactory$JSNumberToFixedNodeGen$ToFixedForeignObject0Data } from '../../../../../com/oracle/truffle/js/builtins/NumberPrototypeBuiltinsFactory$JSNumberToFixedNodeGen$ToFixedForeignObject0Data.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { JSDoubleToStringNode } from '../../../../../com/oracle/truffle/js/nodes/cast/JSDoubleToStringNode.d.ts'
 import type { JSToIntegerAsIntNode } from '../../../../../com/oracle/truffle/js/nodes/cast/JSToIntegerAsIntNode.d.ts'
@@ -28,11 +28,10 @@ export class NumberPrototypeBuiltinsFactory$JSNumberToFixedNodeGen extends Numbe
     // private doubleToString: JSDoubleToStringNode;
     // private state_0_: number;
     // private state_1_: number;
-    // private toFixedForeignObject0_cache: NumberPrototypeBuiltinsFactory$JSNumberToFixedNodeGen$ToFixedForeignObject0Data;
+    // private toFixedForeignObject_getDoubleValue_: NumberPrototypeBuiltins$ForeignGetDoubleValueNode;
     // private toIntegerNode: JSToIntegerAsIntNode;
     execute(frameValue: VirtualFrame): Object;
     // private executeAndSpecialize(arguments0Value: Object, arguments1Value: Object): Object;
     // private fallbackGuard_(state_0: number, arguments0Value: Object, arguments1Value: Object): boolean;
     getArguments(): JavaScriptNode[];
-    // private toFixedForeignObject1Boundary(state_0: number, arguments0Value_: Object, arguments1Value_: Object, toIntegerNode_2: JSToIntegerAsIntNode, doubleToString_2: JSDoubleToStringNode): Object;
 }

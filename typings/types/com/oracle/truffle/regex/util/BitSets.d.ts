@@ -11,6 +11,7 @@ export class BitSets extends Object {
     static createInverse(parambs: number[]): number[];
     static equals(parambs1: number[], parambs2: number[]): boolean;
     static get(parambs: number[], paramindex: number): boolean;
+    static get(parambs: number[], paramwordOffset: number, paramindex: number): boolean;
     static getRange(paramlo: number, paramhi: number): number;
     static getRangeChunk(paramchunkIndex: number, paramlo: number, paramhi: number): number;
     static hashCode(parambs: number[]): number;

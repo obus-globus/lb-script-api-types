@@ -2,11 +2,12 @@ import type { CharacterIterator } from '../../../../../../../java/text/Character
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../../../java/lang/CharSequence.d.ts'
+import type { Cloneable } from '../../../../../../../java/lang/Cloneable.d.ts'
 import type { BreakIterator } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/BreakIterator.d.ts'
 import type { UCharacterIterator } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/UCharacterIterator.d.ts'
 import type { CharsTrie$Entry } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/CharsTrie$Entry.d.ts'
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
-export class SimpleFilteredSentenceBreakIterator extends BreakIterator {
+export class SimpleFilteredSentenceBreakIterator extends BreakIterator implements Cloneable {
     static DONE: number;
     static KIND_CHARACTER: number;
     static KIND_LINE: number;
@@ -50,7 +51,7 @@ export class SimpleFilteredSentenceBreakIterator extends BreakIterator {
     // private forwardsPartialTrie: CharsTrie$Entry[];
     readonly text: UCharacterIterator;
     // private breakExceptionAt(n: number): boolean;
-    clone(): Object;
+    clone(): SimpleFilteredSentenceBreakIterator;
     current(): number;
     equals(obj: Object | null): boolean;
     first(): number;

@@ -1,4 +1,4 @@
-import type { DynamicObjectLibrary } from '../../../../../../com/oracle/truffle/api/object/DynamicObjectLibrary.d.ts'
+import type { DynamicObject$PutNode } from '../../../../../../com/oracle/truffle/api/object/DynamicObject$PutNode.d.ts'
 import type { Shape } from '../../../../../../com/oracle/truffle/api/object/Shape.d.ts'
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
 import type { JSRealm } from '../../../../../../com/oracle/truffle/js/runtime/JSRealm.d.ts'
@@ -14,7 +14,7 @@ export abstract class JSObjectFactory extends Object {
     constructor(context: JSContext, inObjectProto: boolean)
     // private context: JSContext;
     // private inObjectProto: boolean;
-    // private setProto: DynamicObjectLibrary;
+    // private setProto: DynamicObject$PutNode;
     getPrototype(realm: JSRealm): JSDynamicObject;
     getShape(realm: JSRealm): Shape;
     getShape(realm: JSRealm, prototype: JSDynamicObject): Shape;

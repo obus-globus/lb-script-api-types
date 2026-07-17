@@ -5,12 +5,13 @@ import type { TruffleString$Encoding } from '../../../../../com/oracle/truffle/a
 import type { TruffleString$ErrorHandling } from '../../../../../com/oracle/truffle/api/strings/TruffleString$ErrorHandling.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class TruffleStringIterator extends Object {
-    constructor(a: AbstractTruffleString, arrayA: number[], offsetA: number, codeRangeA: number, encoding: TruffleString$Encoding, errorHandling: TruffleString$ErrorHandling, rawIndex: number)
+    constructor(a: AbstractTruffleString, arrayA: number[], offsetA: number, lengthA: number, strideA: number, codeRangeA: number, encoding: TruffleString$Encoding, errorHandling: TruffleString$ErrorHandling, rawIndex: number)
     // private a: AbstractTruffleString;
     // private arrayA: number[];
     // private codeRangeA: number;
     // private encoding: TruffleString$Encoding;
     // private errorHandling: TruffleString$ErrorHandling;
+    // private lengthA: number;
     // private offsetA: number;
     // private rawIndex: number;
     // private strideA: number;

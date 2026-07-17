@@ -28,7 +28,6 @@ export abstract class ArrayPrototypeBuiltins$JSArrayToStringNode extends ArrayPr
     // private callJoinNode: JSFunctionCallNode;
     // private callToStringNode: JSFunctionCallNode;
     // private foreignObjectPrototypeNode: ForeignObjectPrototypeNode;
-    // private hostLanguageClass: Class<Object>;
     // private importValueNode: ImportValueNode;
     // private interopLibrary: InteropLibrary;
     // private joinPropertyNode: PropertyNode;
@@ -36,7 +35,6 @@ export abstract class ArrayPrototypeBuiltins$JSArrayToStringNode extends ArrayPr
     // private callJoin(target: Object, function_: Object): Object;
     // private callToString(target: Object, function_: Object): Object;
     // private getForeignObjectPrototype(truffleObject: Object): JSDynamicObject;
-    // private getHostLanguageClass(): Class<Object>;
     // private getInterop(): InteropLibrary;
     // private getJoinProperty(target: Object, receiver: Object): Object;
     // private getToStringProperty(target: Object): Object;

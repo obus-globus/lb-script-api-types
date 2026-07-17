@@ -1,4 +1,3 @@
-import type { TruffleLanguage } from '../../../../../../com/oracle/truffle/api/TruffleLanguage.d.ts'
 import type { InteropLibrary } from '../../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { HiddenKey } from '../../../../../../com/oracle/truffle/api/object/HiddenKey.d.ts'
@@ -22,7 +21,6 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { JSSharedData } from '../../../../../../com/oracle/truffle/js/runtime/objects/JSSharedData.d.ts'
 import type { PropertyDescriptor } from '../../../../../../com/oracle/truffle/js/runtime/objects/PropertyDescriptor.d.ts'
 import type { JSClassProfile } from '../../../../../../com/oracle/truffle/js/runtime/util/JSClassProfile.d.ts'
-import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { IntUnaryOperator } from '../../../../../../java/util/function/IntUnaryOperator.d.ts'
 import type { Predicate } from '../../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -40,9 +38,11 @@ export abstract class JSObject extends JSDynamicObject {
     static defineOwnProperty(paramobj: JSDynamicObject, paramkey: Object, paramdesc: PropertyDescriptor, paramdoThrow: boolean): boolean;
     static delete(paramobj: JSDynamicObject, paramkey: Object): boolean;
     static delete(paramobj: JSDynamicObject, paramkey: Object, paramisStrict: boolean): boolean;
+    static delete(paramobj: JSDynamicObject, paramkey: Object, paramisStrict: boolean, paramresultWhenNotPresent: boolean): boolean;
     static delete(paramobj: JSDynamicObject, paramkey: Object, paramisStrict: boolean, paramclassProfile: JSClassProfile): boolean;
     static delete(paramobj: JSDynamicObject, paramindex: number): boolean;
     static delete(paramobj: JSDynamicObject, paramindex: number, paramisStrict: boolean): boolean;
+    static delete(paramobj: JSDynamicObject, paramindex: number, paramisStrict: boolean, paramresultWhenNotPresent: boolean): boolean;
     static delete(paramobj: JSDynamicObject, paramindex: number, paramisStrict: boolean, paramclassProfile: JSClassProfile): boolean;
     static enumerableOwnNames(paramthisObj: JSDynamicObject): TruffleString[];
     static get(paramobj: JSDynamicObject, paramkey: Object): Object;
@@ -67,7 +67,7 @@ export abstract class JSObject extends JSDynamicObject {
     static getOwnProperty(paramobj: JSDynamicObject, paramkey: Object): PropertyDescriptor;
     static getOwnProperty(paramobj: JSDynamicObject, paramkey: Object, paramclassProfile: JSClassProfile): PropertyDescriptor;
     static getPropertyArray(paramobj: JSDynamicObject): Property[];
-    static getPropertyFlags(paramobj: JSDynamicObject, paramkey: Object): number;
+    static getPropertyFlags(paramobj: JSDynamicObject, paramkey: Object, paramdefaultValue: number): number;
     static getPrototype(paramobj: JSDynamicObject): JSDynamicObject;
     static getPrototype(paramobj: JSDynamicObject, paramjsclassProfile: JSClassProfile): JSDynamicObject;
     static getUncachedRead(): ReadElementNode;
@@ -110,10 +110,10 @@ export abstract class JSObject extends JSDynamicObject {
     copyWithoutProperties(shape: Shape): JSObject;
     getBuiltinToStringTag(): TruffleString;
     getIterator(self: InteropLibrary, getIteratorNode: JSInteropGetIteratorNode): Object;
-    getLanguage(): Class<TruffleLanguage<Object>>;
+    getLanguageId(): string;
     getMembers(internal: boolean): Object;
     hasIterator(self: InteropLibrary, getIteratorNode: JSInteropGetIteratorNode): boolean;
-    hasLanguage(): boolean;
+    hasLanguageId(): boolean;
     hasMemberReadSideEffects(key: string, keyInfo: KeyInfoNode): boolean;
     hasMemberWriteSideEffects(key: string, keyInfo: KeyInfoNode): boolean;
     hasMembers(): boolean;

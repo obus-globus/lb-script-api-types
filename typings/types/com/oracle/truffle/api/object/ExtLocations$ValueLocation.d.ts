@@ -1,13 +1,14 @@
 import type { DynamicObject } from '../../../../../com/oracle/truffle/api/object/DynamicObject.d.ts'
-import type { ExtLocation } from '../../../../../com/oracle/truffle/api/object/ExtLocation.d.ts'
-import type { LocationImpl$LocationVisitor } from '../../../../../com/oracle/truffle/api/object/LocationImpl$LocationVisitor.d.ts'
+import type { Location } from '../../../../../com/oracle/truffle/api/object/Location.d.ts'
+import type { Location$LocationVisitor } from '../../../../../com/oracle/truffle/api/object/Location$LocationVisitor.d.ts'
 import type { Shape } from '../../../../../com/oracle/truffle/api/object/Shape.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class ExtLocations$ValueLocation extends ExtLocation {
+export class ExtLocations$ValueLocation extends Location {
     constructor(value: Object)
     readonly value: Object;
-    accept(locationVisitor: LocationImpl$LocationVisitor): void;
+    accept(locationVisitor: Location$LocationVisitor): void;
     canStore(val: Object): boolean;
+    clear(store: DynamicObject): void;
     equals(obj: Object | null): boolean;
     get(store: DynamicObject): Object;
     get(store: DynamicObject, shape: Shape): Object;

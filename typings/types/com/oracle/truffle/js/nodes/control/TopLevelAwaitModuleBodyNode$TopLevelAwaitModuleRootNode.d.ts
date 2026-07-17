@@ -31,7 +31,6 @@ export class TopLevelAwaitModuleBodyNode$TopLevelAwaitModuleRootNode extends Abs
     constructor(context: JSContext, body: JavaScriptNode, asyncResult: JSWriteFrameSlotNode, functionSourceSection: SourceSection, activeScriptOrModule: ScriptOrModule)
     // private callRejectNode: JSFunctionCallNode;
     // private callResolveNode: JSFunctionCallNode;
-    // private context: JSContext;
     // private functionBody: JavaScriptNode;
     // private getErrorObjectNode: TryCatchNode$GetErrorObjectNode;
     // private writeAsyncResult: JSWriteFrameSlotNode;

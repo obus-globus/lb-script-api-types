@@ -43,7 +43,7 @@ export abstract class Accessor$LanguageSupport extends Accessor$Support {
     createEnvContext(localEnv: TruffleLanguage$Env, servicesCollector: Object[]): Object;
     createFileSystemContext(engineObject: Object, fileSystem: FileSystem): Object;
     createInstrument(polyglotInstrument: Object, id: string, name: string, version: string): InstrumentInfo;
-    createInternalResourceEnv(resource: InternalResource, contextPreinitializationCheck: () => boolean): InternalResource$Env;
+    createInternalResourceEnv(resource: InternalResource, contextPreinitializationCheck: () => boolean, forNativeImageBuild: boolean): InternalResource$Env;
     createOptionDescriptorsUnion(...descriptors: OptionDescriptor[][]): OptionDescriptor[];
     createTruffleContext(impl: Object, parentContext: TruffleContext): TruffleContext;
     describeOptions(language: TruffleLanguage<Object>, requiredGroup: string): OptionDescriptor[];
@@ -86,6 +86,7 @@ export abstract class Accessor$LanguageSupport extends Accessor$Support {
     invokeContextLocalFactory(factory: Object, contextImpl: Object): Object;
     invokeContextThreadLocalFactory(factory: Object, contextImpl: Object, thread: Thread): Object;
     isContextInitialized(env: TruffleLanguage$Env): boolean;
+    isEmptyStackTrace(t: Throwable): boolean;
     isRecurringTLAction(action: ThreadLocalAction): boolean;
     isSideEffectingTLAction(action: ThreadLocalAction): boolean;
     isSocketIOAllowed(fileSystemContext: Object): boolean;

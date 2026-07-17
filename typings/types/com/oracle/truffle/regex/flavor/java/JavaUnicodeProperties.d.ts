@@ -35,6 +35,4 @@ export class JavaUnicodeProperties extends Object {
     getProperty(name: string, caseIns: boolean): (Object | null)[];
     getScript(name: string): (Object | null)[];
     // private getUnicodePredicate(name: string, caseIns: boolean): (Object | null)[];
-    // private unionOfProperties(initial: (Object | null)[], ...properties: string[]): (Object | null)[];
-    // private unionOfProperties(...properties: string[]): (Object | null)[];
 }

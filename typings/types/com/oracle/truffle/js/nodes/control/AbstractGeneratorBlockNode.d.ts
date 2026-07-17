@@ -17,7 +17,6 @@ export abstract class AbstractGeneratorBlockNode extends AbstractBlockNode {
     constructor(statements: JavaScriptNode[], stateSlot: number)
     // private stateSlot: number;
     execute(frame: VirtualFrame): Object;
-    executeGeneric(frame: VirtualFrame, node: JavaScriptNode, index: number, startIndex: number): Object;
     executeVoid(frame: VirtualFrame): void;
     executeVoid(frame: VirtualFrame, node: JavaScriptNode, index: number, startIndex: number): void;
     getStateAndReset(frame: VirtualFrame): number;

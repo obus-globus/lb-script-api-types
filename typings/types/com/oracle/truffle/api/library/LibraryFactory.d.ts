@@ -13,6 +13,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class LibraryFactory<T extends Library> extends Object {
     static resolve<T extends Library>(paramlibrary: Class<T>): LibraryFactory<T>;
     constructor(libraryClass: Class<T>, messages: Message[])
+    constructor(libraryClass: Class<T>, messages: Message[], dynamicDispatchEnabled: boolean)
     // private afterBuiltinDefaultExports: DefaultExportProvider[];
     // private aot: LibraryFactory$CachedAOTExports;
     // private beforeBuiltinDefaultExports: DefaultExportProvider[];
@@ -21,7 +22,7 @@ export abstract class LibraryFactory<T extends Library> extends Object {
     // private exportCache: Map<Class<Object>, LibraryExport<T>>;
     // private libraryClass: Class<T>;
     readonly messages: Message[];
-    // private nameToMessages: { [key: string]: Message };
+    // private nameToMessages: { [key: string]: Message[] };
     // private proxyExports: LibraryFactory$ProxyExports;
     // private uncachedCache: Map<Class<Object>, T>;
     // private uncachedDispatch: T;

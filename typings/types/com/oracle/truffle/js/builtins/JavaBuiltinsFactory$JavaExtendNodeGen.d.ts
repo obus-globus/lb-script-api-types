@@ -23,6 +23,5 @@ export class JavaBuiltinsFactory$JavaExtendNodeGen extends JavaBuiltins$JavaExte
     // private arguments0_: JavaScriptNode;
     // private state_0_: number;
     execute(frameValue: VirtualFrame): Object;
-    // private executeAndSpecialize(arguments0Value: Object): Object;
     getArguments(): JavaScriptNode[];
 }

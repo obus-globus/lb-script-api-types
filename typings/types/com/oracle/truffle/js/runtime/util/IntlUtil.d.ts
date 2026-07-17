@@ -11,16 +11,24 @@ import type { Calendar } from '../../../../../../org/graalvm/shadowed/com/ibm/ic
 import type { TimeZone } from '../../../../../../org/graalvm/shadowed/com/ibm/icu/util/TimeZone.d.ts'
 import type { ULocale } from '../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
 export class IntlUtil extends Object {
+    static AA: TruffleString;
     static ACCENT: string;
     static ACCOUNTING: string;
     static AD: TruffleString;
+    static AH: TruffleString;
     static ALWAYS: string;
+    static AM: TruffleString;
+    static AP: TruffleString;
     static AUTO: string;
     static BASE: string;
     static BASIC: string;
     static BC: TruffleString;
     static BCE: TruffleString;
+    static BE: TruffleString;
+    static BEFORE_ROC: TruffleString;
     static BEST_FIT: string;
+    static BH: TruffleString;
+    static BROC: TruffleString;
     static CALENDAR: string;
     static CARDINAL: string;
     static CASE: string;
@@ -66,8 +74,6 @@ export class IntlUtil extends Object {
     static FULL: string;
     static GRANULARITY: string;
     static GRAPHEME: string;
-    static GREGORY: TruffleString;
-    static GREGORY_INVERSE: TruffleString;
     static H11: string;
     static H12: string;
     static H23: string;
@@ -84,13 +90,12 @@ export class IntlUtil extends Object {
     static HOURS_DISPLAY: string;
     static HOUR_CYCLE: string;
     static IGNORE_PUNCTUATION: string;
+    static INCAR: TruffleString;
     static INDEX: string;
     static INFINITY: string;
     static INPUT: string;
     static INTEGER: string;
     static IS_WORD_LIKE: string;
-    static JAPANESE: TruffleString;
-    static JAPANESE_INVERSE: TruffleString;
     static KEY_CALENDAR: TruffleString;
     static KEY_CASE_FIRST: TruffleString;
     static KEY_COLLATION: TruffleString;
@@ -132,7 +137,6 @@ export class IntlUtil extends Object {
     static KEY_MICROSECONDS_DISPLAY: TruffleString;
     static KEY_MILLISECONDS: TruffleString;
     static KEY_MILLISECONDS_DISPLAY: TruffleString;
-    static KEY_MINIMAL_DAYS: TruffleString;
     static KEY_MINIMUM_FRACTION_DIGITS: TruffleString;
     static KEY_MINIMUM_INTEGER_DIGITS: TruffleString;
     static KEY_MINIMUM_SIGNIFICANT_DIGITS: TruffleString;
@@ -201,7 +205,8 @@ export class IntlUtil extends Object {
     static MILLISECONDS: string;
     static MILLISECONDS_DISPLAY: string;
     static MIN2: string;
-    static MINIMAL_DAYS: string;
+    static MINGUO: TruffleString;
+    static MINGUO_QIAN: TruffleString;
     static MINIMUM_FRACTION_DIGITS: string;
     static MINIMUM_INTEGER_DIGITS: string;
     static MINIMUM_SIGNIFICANT_DIGITS: string;
@@ -213,6 +218,7 @@ export class IntlUtil extends Object {
     static MONTHS: string;
     static MONTHS_DISPLAY: string;
     static MORE_PRECISION: string;
+    static MUNDI: TruffleString;
     static NAME: string;
     static NANOSECONDS: string;
     static NANOSECONDS_DISPLAY: string;
@@ -233,6 +239,7 @@ export class IntlUtil extends Object {
     static QUARTER: string;
     static REGION: string;
     static REIWA: TruffleString;
+    static ROC: TruffleString;
     static ROUNDING_INCREMENT: string;
     static ROUNDING_MODE: string;
     static ROUNDING_PRIORITY: string;
@@ -246,6 +253,7 @@ export class IntlUtil extends Object {
     static SEGMENT: string;
     static SENSITIVITY: string;
     static SENTENCE: string;
+    static SHAKA: TruffleString;
     static SHARED: string;
     static SHORT: string;
     static SHORT_GENERIC: string;
@@ -300,6 +308,7 @@ export class IntlUtil extends Object {
     static calendarSupportsEra(paramcalendarID: TruffleString): boolean;
     static calendarSupportsEra(paramcal: Calendar): boolean;
     static canonicalizeCalendar(paramid: string): string;
+    static canonicalizeCalendar(paramid: string, paramthrowForUnsupported: boolean): string;
     static canonicalizeEraInCalendar(paramcal: Calendar, paramera: TruffleString): number;
     static canonicalizeLanguageTag(paramlanguageTag: string): string;
     static defaultNumberingSystemName(paramcontext: JSContext, paramlocale: Locale): string;
@@ -315,8 +324,10 @@ export class IntlUtil extends Object {
     static getCalendar(paramcalendarID: TruffleString, paramyear: number, parammonth: number, paramday: number): Calendar;
     static getCalendarField(paramcal: Calendar, paramfield: number): number;
     static getCalendarFieldMax(paramcal: Calendar, paramfield: number): number;
+    static getDayOfWeek(paramcal: Calendar): number;
     static getEra(paramcal: Calendar): Object;
     static getEraYear(paramcal: Calendar): Object;
+    static getExtendedYear(paramcal: Calendar): number;
     static getICUTimeZone(paramtzId: string, paramcontext: JSContext): TimeZone;
     static getICUTimeZone(paramzoneId: ZoneId, paramcontext: JSContext): TimeZone;
     static getICUTimeZoneForOffset(paramtzOffset: string): TimeZone;
@@ -331,10 +342,13 @@ export class IntlUtil extends Object {
     static makePart(paramcontext: JSContext, paramrealm: JSRealm, paramtype: string, paramvalue: string, paramunit: string, paramsource: string): JSObject;
     static maybeAppendMissingLanguageSubTag(paramtag: string): string;
     static normalizeCAType(paramtype: string): string;
+    static normalizeCAType(paramtype: string, paramfallbackForIslamic: boolean): string;
     static normalizeCollation(paramcollation: string): string;
     static normalizeUnicodeLocaleIdentifierType(paramtype: string): string;
     static selectedLocale(paramctx: JSContext, paramlocales: string[]): Locale;
     static selectedLocaleStripped(paramctx: JSContext, paramlocales: string[]): Locale;
+    static setExtendedYear(paramcal: Calendar, paramyear: number): void;
+    static setOrdinalMonth(paramcal: Calendar, parammonth: number): void;
     static sourceString(paramstart: number, paramlimit: number, paramstartRangeStart: number, paramstartRangeLimit: number, paramendRangeStart: number, paramendRangeLimit: number): string;
     static supportedLocales(paramctx: JSContext, paramrequestedLocales: string[], parammatcher: string): Object[];
     static toJSHourCycle(paramhourCycle: DateFormat$HourCycle): string;

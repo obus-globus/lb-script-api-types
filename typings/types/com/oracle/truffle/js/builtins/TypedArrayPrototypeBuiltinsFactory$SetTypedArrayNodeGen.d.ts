@@ -1,4 +1,6 @@
+import type { InteropLibrary } from '../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
+import type { TypedArrayPrototypeBuiltins$CopyTypedArrayElementsNode } from '../../../../../com/oracle/truffle/js/builtins/TypedArrayPrototypeBuiltins$CopyTypedArrayElementsNode.d.ts'
 import type { TypedArrayPrototypeBuiltins$SetTypedArrayNode } from '../../../../../com/oracle/truffle/js/builtins/TypedArrayPrototypeBuiltins$SetTypedArrayNode.d.ts'
 import type { ReadElementNode } from '../../../../../com/oracle/truffle/js/nodes/access/ReadElementNode.d.ts'
 import type { JSGetLengthNode } from '../../../../../com/oracle/truffle/js/nodes/array/JSGetLengthNode.d.ts'
@@ -14,11 +16,9 @@ export class TypedArrayPrototypeBuiltinsFactory$SetTypedArrayNodeGen extends Typ
     // private fallback_toObjectNode_: JSToObjectNode;
     // private readElementNode: ReadElementNode;
     // private setBufferElementNode_field1_: Node;
-    // private setTypedArrayFromTypedArray_copyTypedArrayElementsNode__field1_: Node;
-    // private setTypedArrayFromTypedArray_copyTypedArrayElementsNode__field2_: Node;
-    // private setTypedArrayFromTypedArray_copyTypedArrayElementsNode__field3_: Node;
+    // private setTypedArrayFromTypedArray_copyTypedArrayElementsNode_: TypedArrayPrototypeBuiltins$CopyTypedArrayElementsNode;
     // private state_0_: number;
-    // private typedArrayLengthNode_field1_: Node;
+    // private typedArrayLengthNode_field1_: InteropLibrary;
     execute(arg0Value: JSTypedArrayObject, arg1Value: Object, arg2Value: number, arg3Value: JSContext): void;
     // private executeAndSpecialize(arg0Value: JSTypedArrayObject, arg1Value: Object, arg2Value: number, arg3Value: JSContext): void;
     // private fallbackGuard_(state_0: number, arg0Value: JSTypedArrayObject, arg1Value: Object, arg2Value: number, arg3Value: JSContext): boolean;

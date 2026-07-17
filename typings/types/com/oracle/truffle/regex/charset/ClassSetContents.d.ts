@@ -4,6 +4,7 @@ import type { JsonConvertible } from '../../../../../com/oracle/truffle/regex/tr
 import type { JsonValue } from '../../../../../com/oracle/truffle/regex/tregex/util/json/JsonValue.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ClassSetContents extends Object implements JsonConvertible {
+    static createBrokenRange(paramlo: number, paramhi: number): ClassSetContents;
     static createCharacter(paramcodePoint: number): ClassSetContents;
     static createCharacterClass(paramcodePointSet: (Object | null)[]): ClassSetContents;
     static createClass(paramcodePointSet: (Object | null)[], paramstrings: string[], parammayContainStrings: boolean): ClassSetContents;
@@ -22,8 +23,11 @@ export class ClassSetContents extends Object implements JsonConvertible {
     caseFold(tmp: Range[]): ClassSetContents;
     getCodePoint(): number;
     getCodePointSet(): (Object | null)[];
+    getRangeHi(): number;
+    getRangeLo(): number;
     getStrings(): string[];
     isAllowedInRange(): boolean;
+    isBrokenRange(): boolean;
     isCharacter(): boolean;
     isCharacterClass(): boolean;
     isCodePointSetOnly(): boolean;
@@ -31,6 +35,7 @@ export class ClassSetContents extends Object implements JsonConvertible {
     isPosixCollationElement(): boolean;
     isPosixCollationEquivalenceClass(): boolean;
     isRange(): boolean;
+    isRangeOrBrokenRange(): boolean;
     mayContainStrings(): boolean;
     toJson(): JsonValue;
     unionUnicodePropertyOfStrings(other: ClassSetContents): ClassSetContents;

@@ -12,6 +12,7 @@ export class HolesDoubleArray extends AbstractContiguousDoubleArray {
     static EMPTY_OBJECT_ARRAY: Object[];
     static HOLE_VALUE: number;
     static HOLE_VALUE_DOUBLE: number;
+    static canonicalizeNaN(paramvalue: number): number;
     static createConstantArray(paramelements: Object[]): AbstractConstantArray;
     static createConstantEmptyArray(): AbstractConstantArray;
     static isHoleValue(paramvalue: number): boolean;

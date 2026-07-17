@@ -1,4 +1,6 @@
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
+import type { DynamicObject$GetNode } from '../../../../../../com/oracle/truffle/api/object/DynamicObject$GetNode.d.ts'
+import type { DynamicObject$GetPropertyFlagsNode } from '../../../../../../com/oracle/truffle/api/object/DynamicObject$GetPropertyFlagsNode.d.ts'
 import type { TruffleString$FromJavaStringNode } from '../../../../../../com/oracle/truffle/api/strings/TruffleString$FromJavaStringNode.d.ts'
 import type { GetPrototypeNode } from '../../../../../../com/oracle/truffle/js/nodes/access/GetPrototypeNode.d.ts'
 import type { IsExtensibleNode } from '../../../../../../com/oracle/truffle/js/nodes/access/IsExtensibleNode.d.ts'
@@ -21,7 +23,9 @@ export class KeyInfoNodeGen extends KeyInfoNode {
     private constructor()
     // private cachedOwnProperty_cache: KeyInfoNodeGen$CachedOwnPropertyData;
     // private fromJavaStringNode: TruffleString$FromJavaStringNode;
+    // private getFlags: DynamicObject$GetPropertyFlagsNode;
     // private getPrototype: GetPrototypeNode;
+    // private getValue: DynamicObject$GetNode;
     // private isCallable: IsCallableNode;
     // private isExtensible: IsExtensibleNode;
     // private state_0_: number;

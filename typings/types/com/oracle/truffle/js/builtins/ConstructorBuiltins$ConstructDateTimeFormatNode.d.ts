@@ -2,13 +2,14 @@ import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { ConstructorBuiltins$ConstructWithNewTargetNode } from '../../../../../com/oracle/truffle/js/builtins/ConstructorBuiltins$ConstructWithNewTargetNode.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
+import type { InstanceofNode$OrdinaryHasInstanceNode } from '../../../../../com/oracle/truffle/js/nodes/binary/InstanceofNode$OrdinaryHasInstanceNode.d.ts'
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
 import type { InitializeDateTimeFormatNode } from '../../../../../com/oracle/truffle/js/nodes/intl/InitializeDateTimeFormatNode.d.ts'
 import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
 import type { JSRealm } from '../../../../../com/oracle/truffle/js/runtime/JSRealm.d.ts'
-import type { JSDateTimeFormatObject } from '../../../../../com/oracle/truffle/js/runtime/builtins/intl/JSDateTimeFormatObject.d.ts'
 import type { JSDynamicObject } from '../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
+import type { JSObject } from '../../../../../com/oracle/truffle/js/runtime/objects/JSObject.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class ConstructorBuiltins$ConstructDateTimeFormatNode extends ConstructorBuiltins$ConstructWithNewTargetNode {
@@ -21,8 +22,10 @@ export abstract class ConstructorBuiltins$ConstructDateTimeFormatNode extends Co
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
-    constructor(context: JSContext, builtin: JSBuiltin, newTargetCase: boolean)
+    constructor(context: JSContext, builtin: JSBuiltin, constructorCall: boolean, newTargetCase: boolean)
+    // private constructorCall: boolean;
     // private initializeDateTimeFormatNode: InitializeDateTimeFormatNode;
-    constructDateTimeFormat(newTarget: JSDynamicObject, locales: Object, options: Object): JSDateTimeFormatObject;
+    // private ordinaryHasInstanceNode: InstanceofNode$OrdinaryHasInstanceNode;
+    constructDateTimeFormat(thisObj: Object, newTarget: JSDynamicObject, locales: Object, options: Object): JSObject;
     getIntrinsicDefaultProto(realm: JSRealm): JSDynamicObject;
 }

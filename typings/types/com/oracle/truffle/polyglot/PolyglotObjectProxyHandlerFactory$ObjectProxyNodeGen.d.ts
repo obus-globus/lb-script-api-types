@@ -13,8 +13,8 @@ export class PolyglotObjectProxyHandlerFactory$ObjectProxyNodeGen extends Polygl
     private constructor(languageInstance: PolyglotLanguageInstance, receiverType: Class<Object>, interfaceType: Class<Object>, genericType: Type)
     // private proxyInvoke_: PolyglotObjectProxyHandler$ProxyInvokeNode;
     // private state_0_: number;
-    // private toGuests__field1_: Node;
-    // private toGuests__field2_: Object;
+    // private toGuests__field1_: Object;
+    // private toGuests__field2_: Node;
     // private executeAndSpecialize(arg0Value: PolyglotLanguageContext, arg1Value: Object, arg2Value: Object[]): Object;
     executeImpl(arg0Value: PolyglotLanguageContext, arg1Value: Object, arg2Value: Object[]): Object;
 }

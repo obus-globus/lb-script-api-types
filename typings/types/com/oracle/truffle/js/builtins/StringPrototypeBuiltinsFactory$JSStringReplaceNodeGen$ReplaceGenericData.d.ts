@@ -7,7 +7,6 @@ export class StringPrototypeBuiltinsFactory$JSStringReplaceNodeGen$ReplaceGeneri
     constructor()
     // private isCallableNode_: IsCallableNode;
     // private isObject_: IsObjectNode;
-    // private replaceGeneric_state_0_: number;
     // private toString2Node_: JSToStringNode;
     // private toString3Node_: JSToStringNode;
 }

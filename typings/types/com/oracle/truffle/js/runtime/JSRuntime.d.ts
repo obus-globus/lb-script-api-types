@@ -226,9 +226,10 @@ export class JSRuntime extends Object {
     static toPropertyKey(paramarg: Object): Object;
     static toString(paramvalue: JSDynamicObject): TruffleString;
     static toString(paramvalue: Object): TruffleString;
+    static toUInt16(paramnumber: number): number;
     static toUInt16(paramnumber: Number): number;
     static toUInt16(paramvalue: Object): number;
-    static toUInt16(paramnumber: number): number;
+    static toUInt16NoTruncate(paramnumber: number): number;
     static toUInt32(paramvalue: number): number;
     static toUInt32(paramnumber: Number): number;
     static toUInt32(paramvalue: Object): number;

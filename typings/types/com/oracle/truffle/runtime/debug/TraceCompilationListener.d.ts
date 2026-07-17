@@ -23,6 +23,7 @@ export class TraceCompilationListener extends AbstractGraalTruffleRuntimeListene
     // private inlinedAndDispatched(target: OptimizedCallTarget, task: AbstractCompilationTask): number[];
     // private log(target: OptimizedCallTarget, message: string): void;
     onCompilationDeoptimized(target: OptimizedCallTarget, frame: Frame): void;
+    onCompilationDeoptimized(target: OptimizedCallTarget, frame: Frame, reason: string): void;
     onCompilationDequeued(target: OptimizedCallTarget, source: Object, reason: CharSequence, tier: number): void;
     onCompilationFailed(target: OptimizedCallTarget, reason: string, bailout: boolean, permanentBailout: boolean): void;
     onCompilationFailed(target: OptimizedCallTarget, reason: string, bailout: boolean, permanentBailout: boolean, tier: number): void;
@@ -37,6 +38,7 @@ export class TraceCompilationListener extends AbstractGraalTruffleRuntimeListene
     onCompilationSuccess(target: OptimizedCallTarget, inliningDecision: TruffleInlining, graph: TruffleCompilerListener$GraphInfo, result: TruffleCompilerListener$CompilationResultInfo, tier: number): void;
     onCompilationTruffleTierFinished(target: OptimizedCallTarget, task: AbstractCompilationTask, graph: TruffleCompilerListener$GraphInfo): void;
     onCompilationTruffleTierFinished(target: OptimizedCallTarget, inliningDecision: TruffleInlining, graph: TruffleCompilerListener$GraphInfo): void;
+    onProfileReset(target: OptimizedCallTarget): void;
     // private safeSourceSection(target: OptimizedCallTarget): SourceSection;
     // private safeTargetName(target: OptimizedCallTarget): string;
 }

@@ -1,11 +1,15 @@
 import type { VirtualFrame } from '../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
+import type { InteropLibrary } from '../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { SetPrototypeBuiltins$JSSetDifferenceNode } from '../../../../../com/oracle/truffle/js/builtins/SetPrototypeBuiltins$JSSetDifferenceNode.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { GetSetRecordNode } from '../../../../../com/oracle/truffle/js/nodes/access/GetSetRecordNode.d.ts'
+import type { PropertyGetNode } from '../../../../../com/oracle/truffle/js/nodes/access/PropertyGetNode.d.ts'
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
+import type { JSFunctionCallNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSFunctionCallNode.d.ts'
+import type { IsCallableNode } from '../../../../../com/oracle/truffle/js/nodes/unary/IsCallableNode.d.ts'
 import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
 import type { JSDynamicObject } from '../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
@@ -24,10 +28,10 @@ export class SetPrototypeBuiltinsFactory$JSSetDifferenceNodeGen extends SetProto
     private constructor(context: JSContext, builtin: JSBuiltin, arguments: JavaScriptNode[])
     // private arguments0_: JavaScriptNode;
     // private arguments1_: JavaScriptNode;
-    // private difference_getIteratorFromMethodNode__field1_: Node;
-    // private difference_getIteratorFromMethodNode__field2_: Node;
-    // private difference_getIteratorFromMethodNode__field3_: Node;
-    // private difference_getIteratorFromMethodNode__field4_: Node;
+    // private difference_getIteratorFromMethodNode__field1_: IsCallableNode;
+    // private difference_getIteratorFromMethodNode__field2_: JSFunctionCallNode;
+    // private difference_getIteratorFromMethodNode__field3_: PropertyGetNode;
+    // private difference_getIteratorFromMethodNode__field4_: InteropLibrary;
     // private difference_getSetRecordNode_: GetSetRecordNode;
     // private difference_toBooleanNode__field1_: Node;
     // private state_0_: number;

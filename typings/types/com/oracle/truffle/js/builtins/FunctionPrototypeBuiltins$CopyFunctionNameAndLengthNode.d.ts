@@ -1,5 +1,5 @@
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { DynamicObjectLibrary } from '../../../../../com/oracle/truffle/api/object/DynamicObjectLibrary.d.ts'
+import type { DynamicObject$GetPropertyFlagsNode } from '../../../../../com/oracle/truffle/api/object/DynamicObject$GetPropertyFlagsNode.d.ts'
 import type { ConditionProfile } from '../../../../../com/oracle/truffle/api/profiles/ConditionProfile.d.ts'
 import type { TruffleString } from '../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
 import type { JavaScriptBaseNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptBaseNode.d.ts'
@@ -12,8 +12,8 @@ export class FunctionPrototypeBuiltins$CopyFunctionNameAndLengthNode extends Jav
     static create(paramcontext: JSContext): FunctionPrototypeBuiltins$CopyFunctionNameAndLengthNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(context: JSContext)
-    // private functionLengthLib: DynamicObjectLibrary;
-    // private functionNameLib: DynamicObjectLibrary;
+    // private functionLengthGetPropertyFlags: DynamicObject$GetPropertyFlagsNode;
+    // private functionNameGetPropertyFlags: DynamicObject$GetPropertyFlagsNode;
     // private getFunctionLengthNode: PropertyGetNode;
     // private getFunctionNameNode: PropertyGetNode;
     // private hasFunctionLengthNode: HasPropertyCacheNode;

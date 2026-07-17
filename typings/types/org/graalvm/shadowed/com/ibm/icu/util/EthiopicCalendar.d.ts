@@ -98,9 +98,11 @@ export class EthiopicCalendar extends CECalendar {
     constructor(zone: TimeZone, locale: ULocale)
     constructor(locale: ULocale)
     // private eraType: number;
+    extendedYearToEra(eyear: number): number;
+    extendedYearToYear(eyear: number): number;
     getJDEpochOffset(): number;
+    getRelatedYearDifference(): number;
     getType(): string;
-    handleComputeFields(julianDay: number): void;
     handleGetExtendedYear(): number;
     handleGetLimit(field: number, limitType: number): number;
     isAmeteAlemEra(): boolean;

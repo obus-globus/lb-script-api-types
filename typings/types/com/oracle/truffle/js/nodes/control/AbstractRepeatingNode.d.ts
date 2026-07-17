@@ -25,6 +25,7 @@ export abstract class AbstractRepeatingNode extends JavaScriptNode implements Re
     // private checkThreadInterrupted(): void;
     execute(frame: VirtualFrame): Object;
     executeBody(frame: VirtualFrame): void;
+    executeBoolean(frame: VirtualFrame): boolean;
     executeCondition(frame: VirtualFrame): boolean;
     executeRepeating(frame: VirtualFrame): boolean;
     executeRepeatingWithValue(frame: VirtualFrame): Object;

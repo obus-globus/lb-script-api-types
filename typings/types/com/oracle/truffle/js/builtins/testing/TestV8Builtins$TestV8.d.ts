@@ -19,6 +19,7 @@ export class TestV8Builtins$TestV8 extends Enum<TestV8Builtins$TestV8> implement
     static doubleLo: TestV8Builtins$TestV8;
     static enqueueJob: TestV8Builtins$TestV8;
     static gc: TestV8Builtins$TestV8;
+    static getWasmExceptionValues: TestV8Builtins$TestV8;
     static referenceEqual: TestV8Builtins$TestV8;
     static runMicrotasks: TestV8Builtins$TestV8;
     static setAllowAtomicsWait: TestV8Builtins$TestV8;
@@ -58,5 +59,5 @@ export class TestV8Builtins$TestV8 extends Enum<TestV8Builtins$TestV8> implement
     isSetter(): boolean;
     isWritable(): boolean;
     prependAccessorPrefix(name: TruffleString): TruffleString;
-    name(): "class_" | "className" | "createAsyncFromSyncIterator" | "runMicrotasks" | "enqueueJob" | "setTimeout" | "stringCompare" | "typedArrayDetachBuffer" | "constructDouble" | "doubleHi" | "doubleLo" | "deoptimize" | "gc" | "referenceEqual" | "toLength" | "toStringConv" | "toName" | "toNumber" | "toPrimitive" | "toPrimitiveString" | "toPrimitiveNumber" | "atomicsNumWaitersForTesting" | "atomicsNumUnresolvedAsyncPromisesForTesting" | "setAllowAtomicsWait" | "createPrivateSymbol" | "symbolIsPrivate";
+    name(): "class_" | "className" | "createAsyncFromSyncIterator" | "runMicrotasks" | "enqueueJob" | "setTimeout" | "stringCompare" | "typedArrayDetachBuffer" | "constructDouble" | "doubleHi" | "doubleLo" | "deoptimize" | "gc" | "referenceEqual" | "toLength" | "toStringConv" | "toName" | "toNumber" | "toPrimitive" | "toPrimitiveString" | "toPrimitiveNumber" | "atomicsNumWaitersForTesting" | "atomicsNumUnresolvedAsyncPromisesForTesting" | "setAllowAtomicsWait" | "createPrivateSymbol" | "symbolIsPrivate" | "getWasmExceptionValues";
 }

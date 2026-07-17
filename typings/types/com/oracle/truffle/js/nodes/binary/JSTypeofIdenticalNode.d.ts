@@ -46,7 +46,7 @@ export abstract class JSTypeofIdenticalNode extends JSUnaryNode {
     // private getLanguageSafe(): JavaScriptLanguage;
     hasTag(tag: Class<Tag>): boolean;
     // private isFunction(value: Object, interop: InteropLibrary): boolean;
-    // private isHostSymbolInNashornCompatMode(value: Object): boolean;
+    // private isHostSymbolInNashornCompatMode(value: Object, interop: InteropLibrary): boolean;
     isResultAlwaysOfType(clazz: Class<Object>): boolean;
     materializeInstrumentableNodes(materializedTags: Class<Tag>[]): InstrumentableNode;
     // private parseMaterializationInfo(): Object[];

@@ -2,13 +2,13 @@ import type { StringBuffer } from '../../../../../../../java/lang/StringBuffer.d
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { UCharacterName$AlgorithmName } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/UCharacterName$AlgorithmName.d.ts'
 export class UCharacterName extends Object {
-    static INSTANCE: UCharacterName;
     static LINES_PER_GROUP_: number;
     static getCodepointMSB(paramcodepoint: number): number;
     static getGroupLimit(parammsb: number): number;
     static getGroupMin(parammsb: number): number;
     static getGroupMinFromCodepoint(paramcodepoint: number): number;
     static getGroupOffset(paramcodepoint: number): number;
+    static getInstance(): UCharacterName;
     private constructor()
     // private m_ISOCommentSet_: number[];
     // private m_algorithm_: UCharacterName$AlgorithmName[];

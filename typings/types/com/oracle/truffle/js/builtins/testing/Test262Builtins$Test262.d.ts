@@ -18,6 +18,7 @@ export class Test262Builtins$Test262 extends Enum<Test262Builtins$Test262> imple
     static detachArrayBuffer: Test262Builtins$Test262;
     static evalScript: Test262Builtins$Test262;
     static gc: Test262Builtins$Test262;
+    static monotonicNow: Test262Builtins$Test262;
     static stripName(paramname: TruffleString): TruffleString;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): Test262Builtins$Test262;
@@ -43,5 +44,5 @@ export class Test262Builtins$Test262 extends Enum<Test262Builtins$Test262> imple
     isSetter(): boolean;
     isWritable(): boolean;
     prependAccessorPrefix(name: TruffleString): TruffleString;
-    name(): "createRealm" | "evalScript" | "detachArrayBuffer" | "gc" | "agentStart" | "agentBroadcast" | "agentGetReport" | "agentSleep" | "agentReceiveBroadcast" | "agentReport" | "agentLeaving";
+    name(): "createRealm" | "evalScript" | "detachArrayBuffer" | "gc" | "agentStart" | "agentBroadcast" | "agentGetReport" | "agentSleep" | "agentReceiveBroadcast" | "agentReport" | "agentLeaving" | "monotonicNow";
 }

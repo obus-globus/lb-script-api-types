@@ -18,6 +18,7 @@ export abstract class AbstractGraalTruffleRuntimeListener extends Object impleme
     constructor(runtime: OptimizedTruffleRuntime)
     // private runtime: OptimizedTruffleRuntime;
     onCompilationDeoptimized(target: OptimizedCallTarget, frame: Frame): void;
+    onCompilationDeoptimized(target: OptimizedCallTarget, frame: Frame, reason: string): void;
     onCompilationDequeued(target: OptimizedCallTarget, source: Object, reason: CharSequence, tier: number): void;
     onCompilationFailed(target: OptimizedCallTarget, reason: string, bailout: boolean, permanentBailout: boolean): void;
     onCompilationFailed(target: OptimizedCallTarget, reason: string, bailout: boolean, permanentBailout: boolean, tier: number): void;
@@ -36,5 +37,6 @@ export abstract class AbstractGraalTruffleRuntimeListener extends Object impleme
     onCompilationTruffleTierFinished(target: OptimizedCallTarget, task: AbstractCompilationTask, graph: TruffleCompilerListener$GraphInfo): void;
     onCompilationTruffleTierFinished(target: OptimizedCallTarget, inliningDecision: TruffleInlining, graph: TruffleCompilerListener$GraphInfo): void;
     onEngineClosed(runtimeData: EngineData): void;
+    onProfileReset(target: OptimizedCallTarget): void;
     onShutdown(): void;
 }

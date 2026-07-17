@@ -1,6 +1,6 @@
 import type { Source } from '../../../../com/oracle/truffle/api/source/Source.d.ts'
 import type { RegexOptions } from '../../../../com/oracle/truffle/regex/RegexOptions.d.ts'
-import type { Encodings$Encoding } from '../../../../com/oracle/truffle/regex/tregex/string/Encodings$Encoding.d.ts'
+import type { Encoding } from '../../../../com/oracle/truffle/regex/tregex/string/Encoding.d.ts'
 import type { JsonConvertible } from '../../../../com/oracle/truffle/regex/tregex/util/json/JsonConvertible.d.ts'
 import type { JsonValue } from '../../../../com/oracle/truffle/regex/tregex/util/json/JsonValue.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -13,7 +13,7 @@ export class RegexSource extends Object implements JsonConvertible {
     readonly pattern: string;
     readonly source: Source;
     equals(obj: Object | null): boolean;
-    getEncoding(): Encodings$Encoding;
+    getEncoding(): Encoding;
     getFlags(): string;
     getOptions(): RegexOptions;
     getPattern(): string;
@@ -21,6 +21,7 @@ export class RegexSource extends Object implements JsonConvertible {
     hashCode(): number;
     toFileName(): string;
     toJson(): JsonValue;
+    toNodeName(): string;
     toString(): string;
     toStringEscaped(): string;
     withBooleanMatch(): RegexSource;

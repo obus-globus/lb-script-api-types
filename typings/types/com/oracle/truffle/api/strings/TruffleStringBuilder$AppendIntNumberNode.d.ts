@@ -15,4 +15,7 @@ export abstract class TruffleStringBuilder$AppendIntNumberNode extends AbstractP
     doAppend(sb: TruffleStringBuilderUTF32, value: number, stride0Profile: InlinedConditionProfile, stride1Profile: InlinedConditionProfile, bufferGrowProfile: InlinedBranchProfile, errorProfile: InlinedBranchProfile): void;
     doAppend(sb: TruffleStringBuilderUTF8, value: number, bufferGrowProfile: InlinedBranchProfile, errorProfile: InlinedBranchProfile): void;
     execute(sb: TruffleStringBuilder, value: number): void;
+    execute(sb: TruffleStringBuilderUTF16, value: number): void;
+    execute(sb: TruffleStringBuilderUTF32, value: number): void;
+    execute(sb: TruffleStringBuilderUTF8, value: number): void;
 }

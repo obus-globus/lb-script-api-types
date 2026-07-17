@@ -11,7 +11,7 @@ import type { JSToPrimitiveNode$Hint } from '../../../../../../../com/oracle/tru
 import type { JSContext } from '../../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
 import type { ScriptArray } from '../../../../../../../com/oracle/truffle/js/runtime/array/ScriptArray.d.ts'
 import type { JSClass } from '../../../../../../../com/oracle/truffle/js/runtime/builtins/JSClass.d.ts'
-import type { WebAssemblyValueType } from '../../../../../../../com/oracle/truffle/js/runtime/builtins/wasm/WebAssemblyValueType.d.ts'
+import type { WebAssemblyType } from '../../../../../../../com/oracle/truffle/js/runtime/builtins/wasm/WebAssemblyType.d.ts'
 import type { JSDynamicObject } from '../../../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
 import type { JSNonProxyObject } from '../../../../../../../com/oracle/truffle/js/runtime/objects/JSNonProxyObject.d.ts'
 import type { JSSharedData } from '../../../../../../../com/oracle/truffle/js/runtime/objects/JSSharedData.d.ts'
@@ -34,9 +34,11 @@ export class JSWebAssemblyTableObject extends JSNonProxyObject {
     static defineOwnProperty(paramobj: JSDynamicObject, paramkey: Object, paramdesc: PropertyDescriptor, paramdoThrow: boolean): boolean;
     static delete(paramobj: JSDynamicObject, paramkey: Object): boolean;
     static delete(paramobj: JSDynamicObject, paramkey: Object, paramisStrict: boolean): boolean;
+    static delete(paramobj: JSDynamicObject, paramkey: Object, paramisStrict: boolean, paramresultWhenNotPresent: boolean): boolean;
     static delete(paramobj: JSDynamicObject, paramkey: Object, paramisStrict: boolean, paramclassProfile: JSClassProfile): boolean;
     static delete(paramobj: JSDynamicObject, paramindex: number): boolean;
     static delete(paramobj: JSDynamicObject, paramindex: number, paramisStrict: boolean): boolean;
+    static delete(paramobj: JSDynamicObject, paramindex: number, paramisStrict: boolean, paramresultWhenNotPresent: boolean): boolean;
     static delete(paramobj: JSDynamicObject, paramindex: number, paramisStrict: boolean, paramclassProfile: JSClassProfile): boolean;
     static enumerableOwnNames(paramthisObj: JSDynamicObject): TruffleString[];
     static get(paramobj: JSDynamicObject, paramkey: Object): Object;
@@ -61,7 +63,7 @@ export class JSWebAssemblyTableObject extends JSNonProxyObject {
     static getOwnProperty(paramobj: JSDynamicObject, paramkey: Object): PropertyDescriptor;
     static getOwnProperty(paramobj: JSDynamicObject, paramkey: Object, paramclassProfile: JSClassProfile): PropertyDescriptor;
     static getPropertyArray(paramobj: JSDynamicObject): Property[];
-    static getPropertyFlags(paramobj: JSDynamicObject, paramkey: Object): number;
+    static getPropertyFlags(paramobj: JSDynamicObject, paramkey: Object, paramdefaultValue: number): number;
     static getPrototype(paramobj: JSDynamicObject): JSDynamicObject;
     static getPrototype(paramobj: JSDynamicObject, paramjsclassProfile: JSClassProfile): JSDynamicObject;
     static getUncachedRead(): ReadElementNode;
@@ -100,10 +102,10 @@ export class JSWebAssemblyTableObject extends JSNonProxyObject {
     static toPrimitive(paramobj: JSDynamicObject): Object;
     static toPrimitive(paramobj: JSDynamicObject, paramhint: JSToPrimitiveNode$Hint): Object;
     static updatePropertyFlags(paramobj: JSDynamicObject, paramkey: Object, paramupdateFunction: (param0: number) => number): boolean;
-    constructor(shape: Shape, proto: JSDynamicObject, wasmTable: Object, elementKind: WebAssemblyValueType)
-    readonly elementKind: WebAssemblyValueType;
+    constructor(shape: Shape, proto: JSDynamicObject, wasmTable: Object, elementKind: WebAssemblyType)
+    readonly elementKind: WebAssemblyType;
     // private wasmTable: Object;
     getClassName(): TruffleString;
-    getElementKind(): WebAssemblyValueType;
+    getElementKind(): WebAssemblyType;
     getWASMTable(): Object;
 }

@@ -13,15 +13,22 @@ export abstract class FrameExtensions extends Object {
     expectLong(frame: Frame, slot: number): number;
     expectObject(frame: Frame, slot: number): Object;
     getObject(frame: Frame, slot: number): Object;
+    getTag(frame: Frame, slot: number): number;
     getValue(frame: Frame, slot: number): Object;
     requireObject(frame: Frame, slot: number): Object;
     resetFrame(frame: Frame): void;
     setBoolean(frame: Frame, slot: number, value: boolean): void;
+    setBooleanOrObject(frame: Frame, slot: number, value: Object): void;
     setByte(frame: Frame, slot: number, value: number): void;
+    setByteOrObject(frame: Frame, slot: number, value: Object): void;
     setDouble(frame: Frame, slot: number, value: number): void;
+    setDoubleOrObject(frame: Frame, slot: number, value: Object): void;
     setFloat(frame: Frame, slot: number, value: number): void;
+    setFloatOrObject(frame: Frame, slot: number, value: Object): void;
     setInt(frame: Frame, slot: number, value: number): void;
+    setIntOrObject(frame: Frame, slot: number, value: Object): void;
     setLong(frame: Frame, slot: number, value: number): void;
+    setLongOrObject(frame: Frame, slot: number, value: Object): void;
     setObject(frame: Frame, slot: number, value: Object): void;
     uncheckedGetObject(frame: Frame, slot: number): Object;
 }

@@ -15,6 +15,7 @@ import type { Feature$DuringAnalysisAccess } from '../../../org/graalvm/nativeim
 import type { Feature$DuringSetupAccess } from '../../../org/graalvm/nativeimage/hosted/Feature$DuringSetupAccess.d.ts'
 import type { Feature$IsInConfigurationAccess } from '../../../org/graalvm/nativeimage/hosted/Feature$IsInConfigurationAccess.d.ts'
 import type { Feature$OnAnalysisExitAccess } from '../../../org/graalvm/nativeimage/hosted/Feature$OnAnalysisExitAccess.d.ts'
+import type { Feature$OnRegistrationAccess } from '../../../org/graalvm/nativeimage/hosted/Feature$OnRegistrationAccess.d.ts'
 export class OkHttpFeature extends Object implements Feature {
     constructor()
     afterAnalysis(access: Feature$AfterAnalysisAccess): void;
@@ -36,4 +37,5 @@ export class OkHttpFeature extends Object implements Feature {
     getURL(): string;
     isInConfiguration(access: Feature$IsInConfigurationAccess): boolean;
     onAnalysisExit(access: Feature$OnAnalysisExitAccess): void;
+    onRegistration(access: Feature$OnRegistrationAccess): void;
 }

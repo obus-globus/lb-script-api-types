@@ -7,7 +7,7 @@ import type { SandboxPolicy } from '../../../../../org/graalvm/polyglot/SandboxP
 export class JSLanguageOptions extends Record {
     static fromContextOptions(paramoptions: JSContextOptions): JSLanguageOptions;
     static fromOptionValues(paramsandboxPolicy: SandboxPolicy, paramoptionValues: OptionValues): JSLanguageOptions;
-    constructor(ecmaScriptVersion: number, strict: boolean, annexB: boolean, intl402: boolean, regexpMatchIndices: boolean, regexpUnicodeSets: boolean, sharedArrayBuffer: boolean, v8RealmBuiltin: boolean, nashornCompatibilityMode: boolean, stackTraceLimit: number, parseOnly: boolean, zoneRulesBasedTimeZones: boolean, agentCanBlock: boolean, printNoNewline: boolean, commonJSRequire: boolean, awaitOptimization: boolean, allowEval: boolean, disableWith: boolean, regexDumpAutomata: boolean, regexStepExecution: boolean, regexAlwaysEager: boolean, scriptEngineGlobalScopeImport: boolean, hasForeignObjectPrototype: boolean, hasForeignHashProperties: boolean, functionArgumentsLimit: number, test262Mode: boolean, testV8Mode: boolean, validateRegExpLiterals: boolean, functionConstructorCacheSize: number, regexCacheSize: number, stringLengthLimit: number, stringLazySubstrings: boolean, bindMemberFunctions: boolean, regexRegressionTestMode: boolean, testCloneUninitialized: boolean, lazyTranslation: boolean, maxTypedArrayLength: number, maxApplyArgumentLength: number, maxPrototypeChainLength: number, asyncStackTraces: boolean, propertyCacheLimit: number, functionCacheLimit: number, frequencyBasedPropertyCacheLimit: number, topLevelAwait: boolean, useUTCForLegacyDates: boolean, webAssembly: boolean, newSetMethods: boolean, temporal: boolean, iteratorHelpers: boolean, asyncIteratorHelpers: boolean, shadowRealm: boolean, asyncContext: boolean, v8Intrinsics: boolean, unhandledRejectionsMode: JSContextOptions$UnhandledRejectionsTrackingMode, operatorOverloading: boolean, errorCause: boolean, importAttributes: boolean, importAssertions: boolean, jsonModules: boolean, sourcePhaseImports: boolean, wasmBigInt: boolean, esmEvalReturnsExports: boolean, isMLEMode: boolean, privateFieldsIn: boolean, esmBareSpecifierRelativeLookup: boolean, scopeOptimization: boolean, bigInt: boolean, classFields: boolean, shebang: boolean, syntaxExtensions: boolean, scripting: boolean, functionStatementError: boolean, constAsVar: boolean, profileTime: boolean, arrayElementsAmongMembers: boolean, stackTraceAPI: boolean, worker: boolean, locale: string)
+    constructor(ecmaScriptVersion: number, strict: boolean, annexB: boolean, intl402: boolean, regexpMatchIndices: boolean, regexpUnicodeSets: boolean, sharedArrayBuffer: boolean, v8RealmBuiltin: boolean, nashornCompatibilityMode: boolean, stackTraceLimit: number, parseOnly: boolean, zoneRulesBasedTimeZones: boolean, agentCanBlock: boolean, printNoNewline: boolean, commonJSRequire: boolean, awaitOptimization: boolean, allowEval: boolean, disableWith: boolean, regexDumpAutomata: boolean, regexStepExecution: boolean, regexAlwaysEager: boolean, scriptEngineGlobalScopeImport: boolean, hasForeignObjectPrototype: boolean, hasForeignHashProperties: boolean, functionArgumentsLimit: number, test262Mode: boolean, testV8Mode: boolean, validateRegExpLiterals: boolean, functionConstructorCacheSize: number, regexCacheSize: number, stringLengthLimit: number, stringLazySubstrings: boolean, bindMemberFunctions: boolean, regexRegressionTestMode: boolean, testCloneUninitialized: boolean, lazyTranslation: boolean, maxTypedArrayLength: number, maxApplyArgumentLength: number, maxPrototypeChainLength: number, asyncStackTraces: boolean, propertyCacheLimit: number, functionCacheLimit: number, frequencyBasedPropertyCacheLimit: number, topLevelAwait: boolean, useUTCForLegacyDates: boolean, webAssembly: boolean, newSetMethods: boolean, temporal: boolean, iteratorHelpers: boolean, asyncIteratorHelpers: boolean, shadowRealm: boolean, asyncContext: boolean, explicitResourceManagement: boolean, v8Intrinsics: boolean, unhandledRejectionsMode: JSContextOptions$UnhandledRejectionsTrackingMode, operatorOverloading: boolean, errorCause: boolean, importAttributes: boolean, jsonModules: boolean, sourcePhaseImports: boolean, wasmBigInt: boolean, esmEvalReturnsExports: boolean, isMLEMode: boolean, privateFieldsIn: boolean, esmBareSpecifierRelativeLookup: boolean, scopeOptimization: boolean, bigInt: boolean, classFields: boolean, shebang: boolean, syntaxExtensions: boolean, scripting: boolean, functionStatementError: boolean, constAsVar: boolean, profileTime: boolean, arrayElementsAmongMembers: boolean, errorStackAccessor: boolean, stackTraceAPI: boolean, worker: boolean, locale: string)
     // private agentCanBlock: boolean;
     // private allowEval: boolean;
     // private annexB: boolean;
@@ -24,8 +24,10 @@ export class JSLanguageOptions extends Record {
     // private disableWith: boolean;
     // private ecmaScriptVersion: number;
     // private errorCause: boolean;
+    // private errorStackAccessor: boolean;
     // private esmBareSpecifierRelativeLookup: boolean;
     // private esmEvalReturnsExports: boolean;
+    // private explicitResourceManagement: boolean;
     // private frequencyBasedPropertyCacheLimit: number;
     // private functionArgumentsLimit: number;
     // private functionCacheLimit: number;
@@ -33,7 +35,6 @@ export class JSLanguageOptions extends Record {
     // private functionStatementError: boolean;
     // private hasForeignHashProperties: boolean;
     // private hasForeignObjectPrototype: boolean;
-    // private importAssertions: boolean;
     // private importAttributes: boolean;
     // private intl402: boolean;
     // private isMLEMode: boolean;
@@ -103,8 +104,10 @@ export class JSLanguageOptions extends Record {
     ecmaScriptVersion(): number;
     equals(o: Object | null): boolean;
     errorCause(): boolean;
+    errorStackAccessor(): boolean;
     esmBareSpecifierRelativeLookup(): boolean;
     esmEvalReturnsExports(): boolean;
+    explicitResourceManagement(): boolean;
     frequencyBasedPropertyCacheLimit(): number;
     functionArgumentsLimit(): number;
     functionCacheLimit(): number;
@@ -113,7 +116,6 @@ export class JSLanguageOptions extends Record {
     hasForeignHashProperties(): boolean;
     hasForeignObjectPrototype(): boolean;
     hashCode(): number;
-    importAssertions(): boolean;
     importAttributes(): boolean;
     intl402(): boolean;
     isMLEMode(): boolean;

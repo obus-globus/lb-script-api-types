@@ -10,10 +10,12 @@ import type { TranslatorNodeVisitor } from '../../../../../com/oracle/js/parser/
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ForNode extends LoopNode {
+    static IS_AWAIT_USING_DECLARATION: number;
     static IS_FOR_AWAIT_OF: number;
     static IS_FOR_EACH: number;
     static IS_FOR_IN: number;
     static IS_FOR_OF: number;
+    static IS_USING_DECLARATION: number;
     static PER_ITERATION_SCOPE: number;
     constructor(lineNumber: number, token: number, finish: number, body: Block, flags: number, init: Expression, test: JoinPredecessorExpression, modify: JoinPredecessorExpression)
     // private flags: number;
@@ -30,11 +32,13 @@ export class ForNode extends LoopNode {
     getModify(): JoinPredecessorExpression;
     hasGoto(): boolean;
     hasPerIterationScope(): boolean;
+    isAwaitUsingDeclaration(): boolean;
     isForAwaitOf(): boolean;
     isForEach(): boolean;
     isForIn(): boolean;
     isForInOrOf(): boolean;
     isForOf(): boolean;
+    isUsingDeclaration(): boolean;
     mustEnter(): boolean;
     setBody(lc: LexicalContext, body: Block): ForNode;
     setControlFlowEscapes(lc: LexicalContext, controlFlowEscapes: boolean): ForNode;

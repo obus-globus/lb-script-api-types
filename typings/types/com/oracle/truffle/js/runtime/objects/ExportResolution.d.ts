@@ -9,6 +9,8 @@ export abstract class ExportResolution extends Object {
     getBindingName(): TruffleString;
     getModule(): AbstractModuleRecord;
     isAmbiguous(): boolean;
+    isDeferredNamespace(): boolean;
     isNamespace(): boolean;
     isNull(): boolean;
+    isSource(): boolean;
 }

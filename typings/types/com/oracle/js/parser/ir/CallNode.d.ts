@@ -11,7 +11,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class CallNode extends OptionalExpression {
     static forCall(paramlineNumber: number, paramtoken: number, paramstart: number, paramfinish: number, paramfunction: Expression, paramargs: Expression[]): Expression;
     static forCall(paramlineNumber: number, paramtoken: number, paramstart: number, paramfinish: number, paramfunction: Expression, paramargs: Expression[], paramoptional: boolean, paramoptionalChain: boolean): Expression;
-    static forCall(paramlineNumber: number, paramtoken: number, paramstart: number, paramfinish: number, paramfunction: Expression, paramargs: Expression[], paramoptional: boolean, paramoptionalChain: boolean, paramisEval: boolean, paramisApplyArguments: boolean, paramisDefaultDerivedConstructorSuperCall: boolean): Expression;
+    static forCall(paramlineNumber: number, paramtoken: number, paramstart: number, paramfinish: number, paramfunction: Expression, paramargs: Expression[], paramoptional: boolean, paramoptionalChain: boolean, paramisEval: boolean, paramisApplyArguments: boolean, paramisDefaultDerivedConstructorSuperCall: boolean, paramisWebCompatAssignmentType: boolean): Expression;
     static forImport(paramlineNumber: number, paramtoken: number, paramstart: number, paramfinish: number, paramimportIdent: IdentNode, paramargs: Expression[], paramphase: Module$ImportPhase): Expression;
     static forNew(paramlineNumber: number, paramtoken: number, paramstart: number, paramfinish: number, paramfunction: Expression, paramargs: Expression[]): Expression;
     static forTaggedTemplateLiteral(paramlineNumber: number, paramtoken: number, paramstart: number, paramfinish: number, paramfunction: Expression, paramargs: Expression[]): Expression;
@@ -36,6 +36,7 @@ export class CallNode extends OptionalExpression {
     isOptional(): boolean;
     isOptionalChain(): boolean;
     isTaggedTemplateLiteral(): boolean;
+    isWebCompatAssignmentTargetType(): boolean;
     setArgs(args: Expression[]): CallNode;
     setFunction(function_: Expression): CallNode;
     toString(): string;

@@ -7,7 +7,6 @@ export class ObjectSizeCalculator$ObjectClassInfo extends Object implements Obje
     constructor(clazz: Class<Object>)
     // private clazz: Class<Object>;
     // private fieldOffsets: number[];
-    // private isReference: boolean;
     // private objectSize: number;
     increaseByBaseSize(calculationState: ObjectSizeCalculator$CalculationState, obj: Object): void;
     visit(calculationState: ObjectSizeCalculator$CalculationState, obj: Object): ObjectSizeCalculator$ForcedStop;

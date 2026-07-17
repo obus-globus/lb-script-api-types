@@ -2,7 +2,7 @@ import type { Reader } from '../../../../../../../java/io/Reader.d.ts'
 import type { Writer } from '../../../../../../../java/io/Writer.d.ts'
 import type { Date } from '../../../../../../../java/util/Date.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { Cloneable } from '../../../../../../../java/lang/Cloneable.d.ts'
 import type { BasicTimeZone } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/BasicTimeZone.d.ts'
 import type { BasicTimeZone$LocalOption } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/BasicTimeZone$LocalOption.d.ts'
 import type { TimeZone } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/TimeZone.d.ts'
@@ -10,7 +10,7 @@ import type { TimeZone$SystemTimeZoneType } from '../../../../../../../org/graal
 import type { TimeZoneRule } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/TimeZoneRule.d.ts'
 import type { TimeZoneTransition } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/TimeZoneTransition.d.ts'
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
-export class VTimeZone extends BasicTimeZone {
+export class VTimeZone extends BasicTimeZone implements Cloneable {
     static GENERIC_LOCATION: number;
     static GMT_ZONE: TimeZone;
     static LONG: number;
@@ -57,8 +57,8 @@ export class VTimeZone extends BasicTimeZone {
     // private tz: BasicTimeZone;
     // private tzurl: string;
     // private vtzlines: string[];
-    clone(): Object;
-    cloneAsThawed(): TimeZone;
+    clone(): VTimeZone;
+    cloneAsThawed(): VTimeZone;
     freeze(): TimeZone;
     getLastModified(): Date;
     getNextTransition(base: number, inclusive: boolean): TimeZoneTransition;

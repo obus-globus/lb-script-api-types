@@ -54,6 +54,8 @@ export class UCharacter$UnicodeBlock extends Character$Subset {
     static BATAK_ID: number;
     static BENGALI: UCharacter$UnicodeBlock;
     static BENGALI_ID: number;
+    static BERIA_ERFE: UCharacter$UnicodeBlock;
+    static BERIA_ERFE_ID: number;
     static BHAIKSUKI: UCharacter$UnicodeBlock;
     static BHAIKSUKI_ID: number;
     static BLOCK_ELEMENTS: UCharacter$UnicodeBlock;
@@ -123,6 +125,8 @@ export class UCharacter$UnicodeBlock extends Character$Subset {
     static CJK_UNIFIED_IDEOGRAPHS_EXTENSION_H_ID: number;
     static CJK_UNIFIED_IDEOGRAPHS_EXTENSION_I: UCharacter$UnicodeBlock;
     static CJK_UNIFIED_IDEOGRAPHS_EXTENSION_I_ID: number;
+    static CJK_UNIFIED_IDEOGRAPHS_EXTENSION_J: UCharacter$UnicodeBlock;
+    static CJK_UNIFIED_IDEOGRAPHS_EXTENSION_J_ID: number;
     static CJK_UNIFIED_IDEOGRAPHS_ID: number;
     static COMBINING_DIACRITICAL_MARKS: UCharacter$UnicodeBlock;
     static COMBINING_DIACRITICAL_MARKS_EXTENDED: UCharacter$UnicodeBlock;
@@ -423,6 +427,8 @@ export class UCharacter$UnicodeBlock extends Character$Subset {
     static MISCELLANEOUS_SYMBOLS_AND_PICTOGRAPHS: UCharacter$UnicodeBlock;
     static MISCELLANEOUS_SYMBOLS_AND_PICTOGRAPHS_ID: number;
     static MISCELLANEOUS_SYMBOLS_ID: number;
+    static MISCELLANEOUS_SYMBOLS_SUPPLEMENT: UCharacter$UnicodeBlock;
+    static MISCELLANEOUS_SYMBOLS_SUPPLEMENT_ID: number;
     static MISCELLANEOUS_TECHNICAL: UCharacter$UnicodeBlock;
     static MISCELLANEOUS_TECHNICAL_ID: number;
     static MODI: UCharacter$UnicodeBlock;
@@ -538,12 +544,16 @@ export class UCharacter$UnicodeBlock extends Character$Subset {
     static SAURASHTRA_ID: number;
     static SHARADA: UCharacter$UnicodeBlock;
     static SHARADA_ID: number;
+    static SHARADA_SUPPLEMENT: UCharacter$UnicodeBlock;
+    static SHARADA_SUPPLEMENT_ID: number;
     static SHAVIAN: UCharacter$UnicodeBlock;
     static SHAVIAN_ID: number;
     static SHORTHAND_FORMAT_CONTROLS: UCharacter$UnicodeBlock;
     static SHORTHAND_FORMAT_CONTROLS_ID: number;
     static SIDDHAM: UCharacter$UnicodeBlock;
     static SIDDHAM_ID: number;
+    static SIDETIC: UCharacter$UnicodeBlock;
+    static SIDETIC_ID: number;
     static SINHALA: UCharacter$UnicodeBlock;
     static SINHALA_ARCHAIC_NUMBERS: UCharacter$UnicodeBlock;
     static SINHALA_ARCHAIC_NUMBERS_ID: number;
@@ -614,6 +624,8 @@ export class UCharacter$UnicodeBlock extends Character$Subset {
     static TAI_VIET_ID: number;
     static TAI_XUAN_JING_SYMBOLS: UCharacter$UnicodeBlock;
     static TAI_XUAN_JING_SYMBOLS_ID: number;
+    static TAI_YO: UCharacter$UnicodeBlock;
+    static TAI_YO_ID: number;
     static TAKRI: UCharacter$UnicodeBlock;
     static TAKRI_ID: number;
     static TAMIL: UCharacter$UnicodeBlock;
@@ -625,6 +637,8 @@ export class UCharacter$UnicodeBlock extends Character$Subset {
     static TANGUT: UCharacter$UnicodeBlock;
     static TANGUT_COMPONENTS: UCharacter$UnicodeBlock;
     static TANGUT_COMPONENTS_ID: number;
+    static TANGUT_COMPONENTS_SUPPLEMENT: UCharacter$UnicodeBlock;
+    static TANGUT_COMPONENTS_SUPPLEMENT_ID: number;
     static TANGUT_ID: number;
     static TANGUT_SUPPLEMENT: UCharacter$UnicodeBlock;
     static TANGUT_SUPPLEMENT_ID: number;
@@ -642,6 +656,8 @@ export class UCharacter$UnicodeBlock extends Character$Subset {
     static TIRHUTA_ID: number;
     static TODHRI: UCharacter$UnicodeBlock;
     static TODHRI_ID: number;
+    static TOLONG_SIKI: UCharacter$UnicodeBlock;
+    static TOLONG_SIKI_ID: number;
     static TOTO: UCharacter$UnicodeBlock;
     static TOTO_ID: number;
     static TRANSPORT_AND_MAP_SYMBOLS: UCharacter$UnicodeBlock;

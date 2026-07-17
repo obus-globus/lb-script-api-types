@@ -1,5 +1,4 @@
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
-import type { TypedArray$ElementType } from '../../../../../../com/oracle/truffle/js/runtime/array/TypedArray$ElementType.d.ts'
 import type { TypedArray$InteropOneByteIntArray } from '../../../../../../com/oracle/truffle/js/runtime/array/TypedArray$InteropOneByteIntArray.d.ts'
 import type { TypedArrayFactory } from '../../../../../../com/oracle/truffle/js/runtime/array/TypedArrayFactory.d.ts'
 import type { AbstractConstantArray } from '../../../../../../com/oracle/truffle/js/runtime/array/dyn/AbstractConstantArray.d.ts'
@@ -20,5 +19,4 @@ export class TypedArray$InteropInt8Array extends TypedArray$InteropOneByteIntArr
     static makeRangeList(paramrangeStart: number, paramrangeEnd: number): Object[];
     static valueIsByte(paramvalue: number): boolean;
     constructor(factory: TypedArrayFactory, offset: boolean, fixedLength: boolean)
-    getElementType(): TypedArray$ElementType;
 }

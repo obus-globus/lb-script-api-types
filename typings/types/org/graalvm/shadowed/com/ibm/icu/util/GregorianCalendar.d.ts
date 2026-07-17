@@ -1,10 +1,11 @@
 import type { Date } from '../../../../../../../java/util/Date.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
+import type { Cloneable } from '../../../../../../../java/lang/Cloneable.d.ts'
 import type { Calendar } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/Calendar.d.ts'
 import type { Calendar$WeekData } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/Calendar$WeekData.d.ts'
 import type { TimeZone } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/TimeZone.d.ts'
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
-export class GregorianCalendar extends Calendar {
+export class GregorianCalendar extends Calendar implements Cloneable {
     static AD: number;
     static AM: number;
     static AM_PM: number;
@@ -87,6 +88,7 @@ export class GregorianCalendar extends Calendar {
     // private gregorianCutoverYear: number;
     // private invertGregorian: boolean;
     // private isGregorian: boolean;
+    clone(): GregorianCalendar;
     getActualMaximum(field: number): number;
     getActualMinimum(field: number): number;
     getGregorianChange(): Date;

@@ -3,4 +3,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface GenerateLibrary$Abstract extends Annotation, Object{
     /*not mapped: */ ifExported(): string[];
     /*not mapped: */ ifExportedAsWarning(): string[];
+    /*not mapped: */ replacementMethod(): string;
+    /*not mapped: */ replacementOf(): string;
 }

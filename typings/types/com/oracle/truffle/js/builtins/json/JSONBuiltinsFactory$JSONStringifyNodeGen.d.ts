@@ -1,10 +1,16 @@
 import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
+import type { TruffleString$FromByteArrayNode } from '../../../../../../com/oracle/truffle/api/strings/TruffleString$FromByteArrayNode.d.ts'
+import type { TruffleString$SubstringByteIndexNode } from '../../../../../../com/oracle/truffle/api/strings/TruffleString$SubstringByteIndexNode.d.ts'
+import type { TruffleString$SwitchEncodingNode } from '../../../../../../com/oracle/truffle/api/strings/TruffleString$SwitchEncodingNode.d.ts'
 import type { JSONBuiltins$JSONStringifyNode } from '../../../../../../com/oracle/truffle/js/builtins/json/JSONBuiltins$JSONStringifyNode.d.ts'
 import type { JSONBuiltinsFactory$JSONStringifyNodeGen$StringifyAStringNoReplacerData } from '../../../../../../com/oracle/truffle/js/builtins/json/JSONBuiltinsFactory$JSONStringifyNodeGen$StringifyAStringNoReplacerData.d.ts'
 import type { JSONBuiltinsFactory$JSONStringifyNodeGen$StringifyWithReplacerData } from '../../../../../../com/oracle/truffle/js/builtins/json/JSONBuiltinsFactory$JSONStringifyNodeGen$StringifyWithReplacerData.d.ts'
 import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
+import type { JSToIntegerAsIntNode } from '../../../../../../com/oracle/truffle/js/nodes/cast/JSToIntegerAsIntNode.d.ts'
+import type { JSToNumberNode } from '../../../../../../com/oracle/truffle/js/nodes/cast/JSToNumberNode.d.ts'
+import type { JSToStringNode } from '../../../../../../com/oracle/truffle/js/nodes/cast/JSToStringNode.d.ts'
 import type { JSBuiltin } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
@@ -27,12 +33,12 @@ export class JSONBuiltinsFactory$JSONStringifyNodeGen extends JSONBuiltins$JSONS
     // private arguments2_: JavaScriptNode;
     // private state_0_: number;
     // private stringifyAStringNoReplacer_cache: JSONBuiltinsFactory$JSONStringifyNodeGen$StringifyAStringNoReplacerData;
-    // private stringifyNoReplacer_getGapNode__field1_: Node;
-    // private stringifyNoReplacer_getGapNode__field2_: Node;
-    // private stringifyNoReplacer_getGapNode__field3_: Node;
-    // private stringifyNoReplacer_getGapNode__field4_: Node;
-    // private stringifyNoReplacer_getGapNode__field5_: Node;
-    // private stringifyNoReplacer_getGapNode__field6_: Node;
+    // private stringifyNoReplacer_getGapNode__field1_: JSToIntegerAsIntNode;
+    // private stringifyNoReplacer_getGapNode__field2_: TruffleString$FromByteArrayNode;
+    // private stringifyNoReplacer_getGapNode__field3_: TruffleString$SwitchEncodingNode;
+    // private stringifyNoReplacer_getGapNode__field4_: TruffleString$SubstringByteIndexNode;
+    // private stringifyNoReplacer_getGapNode__field5_: JSToNumberNode;
+    // private stringifyNoReplacer_getGapNode__field6_: JSToStringNode;
     // private stringifyWithReplacer_cache: JSONBuiltinsFactory$JSONStringifyNodeGen$StringifyWithReplacerData;
     execute(frameValue: VirtualFrame): Object;
     // private executeAndSpecialize(arguments0Value: Object, arguments1Value: Object, arguments2Value: Object): Object;

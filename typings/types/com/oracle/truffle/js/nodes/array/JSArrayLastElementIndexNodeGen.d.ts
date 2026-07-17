@@ -11,11 +11,11 @@ export class JSArrayLastElementIndexNodeGen extends JSArrayLastElementIndexNode 
     static create(paramcontext: JSContext): JSArrayLastElementIndexNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
+    // private arrayTypeProfile_field1_: Class<Object>;
     // private hasPropertyNode: JSHasPropertyNode;
     // private previousElementIndexNode: JSArrayPreviousElementIndexNode;
     // private state_0_: number;
     // private withHolesCached_cache: JSArrayLastElementIndexNodeGen$WithHolesCachedData;
-    // private withHolesUncached_arrayTypeProfile__field1_: Class<Object>;
     // private withoutHolesCached_cache: JSArrayLastElementIndexNodeGen$WithoutHolesCachedData;
     // private executeAndSpecialize(arg0Value: Object, arg1Value: number, arg2Value: boolean): number;
     executeLong(object: Object, length: number): number;

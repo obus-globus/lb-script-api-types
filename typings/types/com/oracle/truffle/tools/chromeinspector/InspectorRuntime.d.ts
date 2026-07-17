@@ -25,6 +25,8 @@ export class InspectorRuntime extends RuntimeDomain {
     // private slh: ScriptsHandler;
     callFunctionOn(objectId: string, functionDeclaration: string, arguments: Object[], silent: boolean, returnByValue: boolean, generatePreview: boolean, awaitPromise: boolean, executionContextId: number, objectGroup: string): Params;
     compileScript(expression: string, sourceURL: string, persistScript: boolean, executionContextId: number): Params;
+    // private createGetStringyPropsCustomResult(value: DebugValue, arguments: Object[], maxLength: number): JSONObject;
+    // private createGetStringyPropsResult(value: DebugValue, maxLength: number): JSONObject;
     // private createMapEntryElement(name: string, v: DebugValue, generatePreview: boolean, objectGroup: string): JSONObject;
     // private createPropertyJSON(v: DebugValue, generatePreview: boolean, objectGroup: string): JSONObject;
     // private createPropertyJSON(v: DebugValue, defaultName: string, generatePreview: boolean, readEagerly: boolean, enumerable: boolean, objectGroup: string, forceInternal: boolean, typeMark: RemoteObject$TypeMark): JSONObject;
@@ -39,6 +41,7 @@ export class InspectorRuntime extends RuntimeDomain {
     getProperties(objectId: string, ownProperties: boolean, accessorPropertiesOnly: boolean, generatePreview: boolean): Params;
     notifyClosing(): void;
     notifyConsoleAPICalled(type: string, text: Object): void;
+    // private putArraySlots(json: JSONObject, value: DebugValue, indexRange: RemoteObject$IndexRange, generatePreview: boolean, objectGroup: string): void;
     // private putMapEntries(json: JSONObject, value: DebugValue, indexRange: RemoteObject$IndexRange, generatePreview: boolean, objectGroup: string): void;
     // private putMapEntry(json: JSONObject, entry: DebugValue, generatePreview: boolean, objectGroup: string): void;
     // private putResultProperties(json: JSONObject, value: DebugValue, properties: DebugValue[], arrayElements: DebugValue[], generatePreview: boolean, objectGroup: string): void;

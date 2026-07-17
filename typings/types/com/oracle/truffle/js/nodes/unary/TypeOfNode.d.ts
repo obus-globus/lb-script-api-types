@@ -37,6 +37,6 @@ export abstract class TypeOfNode extends JSUnaryNode {
     executeString(operand: Object): TruffleString;
     getNodeObject(): Object;
     hasTag(tag: Class<Tag>): boolean;
-    // private isHostSymbolInNashornCompatMode(value: Object): boolean;
+    // private isHostSymbolInNashornCompatMode(value: Object, interop: InteropLibrary): boolean;
     isResultAlwaysOfType(clazz: Class<Object>): boolean;
 }

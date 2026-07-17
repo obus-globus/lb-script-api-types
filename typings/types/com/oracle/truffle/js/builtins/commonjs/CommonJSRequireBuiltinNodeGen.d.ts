@@ -1,6 +1,7 @@
 import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
+import type { HiddenKey } from '../../../../../../com/oracle/truffle/api/object/HiddenKey.d.ts'
 import type { CommonJSRequireBuiltin } from '../../../../../../com/oracle/truffle/js/builtins/commonjs/CommonJSRequireBuiltin.d.ts'
 import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { JSBuiltin } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
@@ -10,6 +11,7 @@ import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class CommonJSRequireBuiltinNodeGen extends CommonJSRequireBuiltin {
     static ARGUMENTS: string;
+    static MODULE_SOURCE_KEY: HiddenKey;
     static UNSUPPORTED_NODE_FILE: string;
     static cloneUninitialized<T extends JavaScriptNode>(paramnode: T, parammaterializedTags: Class<Tag>[]): T;
     static cloneUninitialized<T extends JavaScriptNode>(paramnodeArray: T[], parammaterializedTags: Class<Tag>[]): T[];

@@ -1,14 +1,19 @@
 import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
+import type { InteropLibrary } from '../../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { SumPreciseNode } from '../../../../../../com/oracle/truffle/js/builtins/math/SumPreciseNode.d.ts'
 import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
+import type { GetMethodNode } from '../../../../../../com/oracle/truffle/js/nodes/access/GetMethodNode.d.ts'
 import type { IteratorCloseNode } from '../../../../../../com/oracle/truffle/js/nodes/access/IteratorCloseNode.d.ts'
 import type { IteratorStepNode } from '../../../../../../com/oracle/truffle/js/nodes/access/IteratorStepNode.d.ts'
 import type { IteratorValueNode } from '../../../../../../com/oracle/truffle/js/nodes/access/IteratorValueNode.d.ts'
+import type { PropertyGetNode } from '../../../../../../com/oracle/truffle/js/nodes/access/PropertyGetNode.d.ts'
 import type { RequireObjectCoercibleNode } from '../../../../../../com/oracle/truffle/js/nodes/access/RequireObjectCoercibleNode.d.ts'
 import type { JSBuiltin } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
+import type { JSFunctionCallNode } from '../../../../../../com/oracle/truffle/js/nodes/function/JSFunctionCallNode.d.ts'
+import type { IsCallableNode } from '../../../../../../com/oracle/truffle/js/nodes/unary/IsCallableNode.d.ts'
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -25,11 +30,11 @@ export class SumPreciseNodeGen extends SumPreciseNode {
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     private constructor(context: JSContext, builtin: JSBuiltin, arguments: JavaScriptNode[])
     // private arguments0_: JavaScriptNode;
-    // private getIteratorNode__field1_: Node;
-    // private getIteratorNode__field2_: Node;
-    // private getIteratorNode__field3_: Node;
-    // private getIteratorNode__field4_: Node;
-    // private getIteratorNode__field5_: Node;
+    // private getIteratorNode__field1_: GetMethodNode;
+    // private getIteratorNode__field2_: IsCallableNode;
+    // private getIteratorNode__field3_: JSFunctionCallNode;
+    // private getIteratorNode__field4_: PropertyGetNode;
+    // private getIteratorNode__field5_: InteropLibrary;
     // private iteratorCloseNode_: IteratorCloseNode;
     // private iteratorStepNode_: IteratorStepNode;
     // private iteratorValueNode_: IteratorValueNode;

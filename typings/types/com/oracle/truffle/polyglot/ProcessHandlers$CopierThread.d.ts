@@ -1,3 +1,4 @@
+import type { PolyglotImpl } from '../../../../com/oracle/truffle/polyglot/PolyglotImpl.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../../java/io/OutputStream.d.ts'
 import type { Runnable } from '../../../../java/lang/Runnable.d.ts'
@@ -9,7 +10,6 @@ import type { Thread$UncaughtExceptionHandler } from '../../../../java/lang/Thre
 import type { Duration } from '../../../../java/time/Duration.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
-import type { AbstractPolyglotImpl } from '../../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl.d.ts'
 export class ProcessHandlers$CopierThread extends Thread {
     static MAX_PRIORITY: number;
     static MIN_PRIORITY: number;
@@ -31,10 +31,10 @@ export class ProcessHandlers$CopierThread extends Thread {
     static sleep(paramarg0: number, paramarg1: number): void;
     static startVirtualThread(paramarg0: () => void): Thread;
     static yield(): void;
-    constructor(polyglot: AbstractPolyglotImpl, name: string, in_: InputStream, out: OutputStream)
+    constructor(polyglot: PolyglotImpl, name: string, in_: InputStream, out: OutputStream)
     // private buffer: number[];
     // private in: InputStream;
     // private out: OutputStream;
-    // private polyglot: AbstractPolyglotImpl;
+    // private polyglot: PolyglotImpl;
     run(): void;
 }

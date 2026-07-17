@@ -1,7 +1,7 @@
 import type { VirtualFrame } from '../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { DynamicObjectLibrary } from '../../../../../com/oracle/truffle/api/object/DynamicObjectLibrary.d.ts'
+import type { DynamicObject$GetNode } from '../../../../../com/oracle/truffle/api/object/DynamicObject$GetNode.d.ts'
 import type { WeakMapPrototypeBuiltins$JSWeakMapHasNode } from '../../../../../com/oracle/truffle/js/builtins/WeakMapPrototypeBuiltins$JSWeakMapHasNode.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
@@ -23,7 +23,7 @@ export class WeakMapPrototypeBuiltinsFactory$JSWeakMapHasNodeGen extends WeakMap
     private constructor(context: JSContext, builtin: JSBuiltin, arguments: JavaScriptNode[])
     // private arguments0_: JavaScriptNode;
     // private arguments1_: JavaScriptNode;
-    // private hasJSObject_invertedGetter_: DynamicObjectLibrary;
+    // private hasJSObject_invertedGetter_: DynamicObject$GetNode;
     // private state_0_: number;
     // private state_1_: number;
     execute(frameValue: VirtualFrame): Object;

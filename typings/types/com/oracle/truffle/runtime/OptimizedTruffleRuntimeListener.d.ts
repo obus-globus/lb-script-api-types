@@ -12,6 +12,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 export interface OptimizedTruffleRuntimeListener extends Object {
     onCompilationDeoptimized(target: OptimizedCallTarget, frame: Frame): void;
+    onCompilationDeoptimized(target: OptimizedCallTarget, frame: Frame, reason: string): void;
     onCompilationDequeued(target: OptimizedCallTarget, source: Object, reason: CharSequence, tier: number): void;
     onCompilationFailed(target: OptimizedCallTarget, reason: string, bailout: boolean, permanentBailout: boolean): void;
     onCompilationFailed(target: OptimizedCallTarget, reason: string, bailout: boolean, permanentBailout: boolean, tier: number): void;
@@ -30,5 +31,6 @@ export interface OptimizedTruffleRuntimeListener extends Object {
     onCompilationTruffleTierFinished(target: OptimizedCallTarget, task: AbstractCompilationTask, graph: TruffleCompilerListener$GraphInfo): void;
     onCompilationTruffleTierFinished(target: OptimizedCallTarget, inliningDecision: TruffleInlining, graph: TruffleCompilerListener$GraphInfo): void;
     onEngineClosed(runtimeData: EngineData): void;
+    onProfileReset(target: OptimizedCallTarget): void;
     onShutdown(): void;
 }

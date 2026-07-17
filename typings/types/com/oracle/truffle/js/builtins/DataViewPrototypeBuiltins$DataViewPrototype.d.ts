@@ -2,6 +2,7 @@ import type { TruffleString } from '../../../../../com/oracle/truffle/api/string
 import type { BuiltinArgumentBuilder } from '../../../../../com/oracle/truffle/js/nodes/function/BuiltinArgumentBuilder.d.ts'
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
+import type { TypedArrayFactory } from '../../../../../com/oracle/truffle/js/runtime/array/TypedArrayFactory.d.ts'
 import type { BuiltinEnum } from '../../../../../com/oracle/truffle/js/runtime/builtins/BuiltinEnum.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -45,6 +46,7 @@ export class DataViewPrototypeBuiltins$DataViewPrototype extends Enum<DataViewPr
     getKey(): Object;
     getLength(): number;
     getName(): TruffleString;
+    getTypedArrayFactory(): TypedArrayFactory;
     isAOTSupported(): boolean;
     isAnnexB(): boolean;
     isConfigurable(): boolean;

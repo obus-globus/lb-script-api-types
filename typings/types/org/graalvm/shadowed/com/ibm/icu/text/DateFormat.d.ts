@@ -162,7 +162,7 @@ export abstract class DateFormat extends UFormat {
     // private capitalizationSetting: DisplayContext;
     numberFormat: NumberFormat;
     // private serialVersionOnStream: number;
-    clone(): Object;
+    clone(): DateFormat;
     equals(obj: Object | null): boolean;
     format(date: Temporal): string;
     format(date: Temporal, toAppendTo: StringBuffer, fieldPosition: FieldPosition): StringBuffer;

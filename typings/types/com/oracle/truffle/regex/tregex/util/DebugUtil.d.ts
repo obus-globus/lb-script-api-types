@@ -8,7 +8,7 @@ export class DebugUtil extends Object {
     static isValidCharForFileName(paramc: number): boolean;
     static javaStringEscape(paramstring: string): string;
     static jsStringEscape(paramstr: string): string;
-    static nodeID(paramid: number): string;
+    static pruneToSize(params: string, parammaxLength: number): string;
     static randomJsStringFromRanges(paramranges: SortedListOfRanges, paramlength: number): string;
     static regexSourceEscape(parampattern: string, paramflags: string): string;
     constructor()

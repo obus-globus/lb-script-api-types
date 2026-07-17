@@ -8,7 +8,7 @@ export class RegexCompilerInterface extends Object {
     static compile(parampattern: TruffleString, paramflags: TruffleString, paramcontext: JSContext, paramrealm: JSRealm): Object;
     static compile(parampattern: string, paramflags: string, paramcontext: JSContext, paramrealm: JSRealm): Object;
     static compile(parampattern: string, paramflags: string, paramcontext: JSContext, paramrealm: JSRealm, paramisCompiledRegexNull: InteropLibrary): Object;
-    static createRegexSource(parampattern: string, paramflags: string, paramoptions: string): Source;
+    static createRegexSource(parampattern: string, paramflags: string, paramoptions: { [key: string]: string }): Source;
     static validate(paramcontext: JSContext, parampattern: string, paramflags: string, paramecmaScriptVersion: number): void;
     static validateFlags(paramflags: string, paramecmaScriptVersion: number, paramnashornCompat: boolean, paramallowHasIndices: boolean, paramallowUnicodeSets: boolean): void;
     private constructor()

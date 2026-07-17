@@ -1,5 +1,6 @@
 import type { VirtualFrame } from '../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
+import type { InteropLibrary } from '../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { TypedArrayPrototypeBuiltins$GetTypedArrayLengthOrOffsetNode } from '../../../../../com/oracle/truffle/js/builtins/TypedArrayPrototypeBuiltins$GetTypedArrayLengthOrOffsetNode.d.ts'
 import type { TypedArrayPrototypeBuiltins$TypedArrayPrototype } from '../../../../../com/oracle/truffle/js/builtins/TypedArrayPrototypeBuiltins$TypedArrayPrototype.d.ts'
@@ -23,7 +24,7 @@ export class TypedArrayPrototypeBuiltinsFactory$GetTypedArrayLengthOrOffsetNodeG
     private constructor(context: JSContext, builtin: JSBuiltin, getter: TypedArrayPrototypeBuiltins$TypedArrayPrototype, arguments: JavaScriptNode[])
     // private arguments0_: JavaScriptNode;
     // private state_0_: number;
-    // private typedArray_typedArrayLengthNode__field1_: Node;
+    // private typedArray_typedArrayLengthNode__field1_: InteropLibrary;
     execute(frameValue: VirtualFrame): Object;
     // private executeAndSpecialize(arguments0Value: Object): number;
     getArguments(): JavaScriptNode[];

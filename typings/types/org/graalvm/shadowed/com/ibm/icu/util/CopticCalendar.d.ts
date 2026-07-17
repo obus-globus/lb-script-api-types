@@ -97,9 +97,11 @@ export class CopticCalendar extends CECalendar {
     constructor(zone: TimeZone, aLocale: Locale)
     constructor(zone: TimeZone, locale: ULocale)
     constructor(locale: ULocale)
+    extendedYearToEra(eyear: number): number;
+    extendedYearToYear(eyear: number): number;
     getJDEpochOffset(): number;
+    getRelatedYearDifference(): number;
     getType(): string;
-    handleComputeFields(julianDay: number): void;
     handleGetExtendedYear(): number;
     isEra0CountingBackward(): boolean;
 }

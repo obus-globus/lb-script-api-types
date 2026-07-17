@@ -5,5 +5,6 @@ export class TruffleStringFactory$ReadCharUTF16NodeGen extends TruffleString$Rea
     static getUncached(): TruffleString$ReadCharUTF16Node;
     private constructor()
     // private state_0_: number;
-    execute(arg0Value: AbstractTruffleString, arg1Value: number): string;
+    execute(a: AbstractTruffleString, charIndex: number): string;
+    execute(arg0Value: AbstractTruffleString, arg1Value: number, arg2Value: boolean): string;
 }

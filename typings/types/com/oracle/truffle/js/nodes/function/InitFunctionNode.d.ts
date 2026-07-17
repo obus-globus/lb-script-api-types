@@ -1,5 +1,6 @@
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { DynamicObjectLibrary } from '../../../../../../com/oracle/truffle/api/object/DynamicObjectLibrary.d.ts'
+import type { DynamicObject$PutConstantNode } from '../../../../../../com/oracle/truffle/api/object/DynamicObject$PutConstantNode.d.ts'
+import type { DynamicObject$PutNode } from '../../../../../../com/oracle/truffle/api/object/DynamicObject$PutNode.d.ts'
 import type { TruffleString } from '../../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
 import type { JavaScriptBaseNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptBaseNode.d.ts'
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
@@ -17,11 +18,13 @@ export class InitFunctionNode extends JavaScriptBaseNode {
     // private lengthFlags: number;
     // private nameFlags: number;
     // private prototypeFlags: number;
-    // private setArgumentsNode: DynamicObjectLibrary;
-    // private setCallerNode: DynamicObjectLibrary;
-    // private setLengthNode: DynamicObjectLibrary;
-    // private setNameNode: DynamicObjectLibrary;
-    // private setPrototypeNode: DynamicObjectLibrary;
+    // private setArgumentsAccessorNode: DynamicObject$PutNode;
+    // private setArgumentsNode: DynamicObject$PutConstantNode;
+    // private setCallerAccessorNode: DynamicObject$PutNode;
+    // private setCallerNode: DynamicObject$PutConstantNode;
+    // private setLengthNode: DynamicObject$PutConstantNode;
+    // private setNameNode: DynamicObject$PutConstantNode;
+    // private setPrototypeNode: DynamicObject$PutConstantNode;
     // private strictProperties: boolean;
     execute(function_: JSFunctionObject): JSFunctionObject;
     execute(function_: JSFunctionObject, functionData: JSFunctionData): JSFunctionObject;

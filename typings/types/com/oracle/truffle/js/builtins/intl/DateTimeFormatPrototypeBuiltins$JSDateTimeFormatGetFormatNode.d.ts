@@ -1,15 +1,15 @@
 import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { InlinedBranchProfile } from '../../../../../../com/oracle/truffle/api/profiles/InlinedBranchProfile.d.ts'
+import type { DateTimeFormatPrototypeBuiltins$UnwrapDateTimeFormatNode } from '../../../../../../com/oracle/truffle/js/builtins/intl/DateTimeFormatPrototypeBuiltins$UnwrapDateTimeFormatNode.d.ts'
 import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { PropertySetNode } from '../../../../../../com/oracle/truffle/js/nodes/access/PropertySetNode.d.ts'
 import type { JSBuiltin } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
-import type { JSDateTimeFormatObject } from '../../../../../../com/oracle/truffle/js/runtime/builtins/intl/JSDateTimeFormatObject.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export abstract class DateTimeFormatPrototypeBuiltins$JSDateTimeFormatGetFormatNode extends JSBuiltinNode {
+export abstract class DateTimeFormatPrototypeBuiltins$JSDateTimeFormatGetFormatNode extends DateTimeFormatPrototypeBuiltins$UnwrapDateTimeFormatNode {
     static ARGUMENTS: string;
     static cloneUninitialized<T extends JavaScriptNode>(paramnode: T, parammaterializedTags: Class<Tag>[]): T;
     static cloneUninitialized<T extends JavaScriptNode>(paramnodeArray: T[], parammaterializedTags: Class<Tag>[]): T[];
@@ -21,6 +21,5 @@ export abstract class DateTimeFormatPrototypeBuiltins$JSDateTimeFormatGetFormatN
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
     // private setBoundObjectNode: PropertySetNode;
-    doDateTimeFormat(dateTimeFormatObj: JSDateTimeFormatObject, errorBranch: InlinedBranchProfile): Object;
-    doIncompatibleReceiver(bummer: Object): Object;
+    doDateTimeFormat(dateTimeFormat: Object, errorBranch: InlinedBranchProfile): Object;
 }

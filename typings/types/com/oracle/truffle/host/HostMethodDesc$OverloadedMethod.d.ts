@@ -8,6 +8,7 @@ export class HostMethodDesc$OverloadedMethod extends HostMethodDesc {
     getOverloads(): HostMethodDesc$SingleMethod[];
     isConstructor(): boolean;
     isInternal(): boolean;
+    isInvocable(): boolean;
     isMethod(): boolean;
     toString(): string;
 }

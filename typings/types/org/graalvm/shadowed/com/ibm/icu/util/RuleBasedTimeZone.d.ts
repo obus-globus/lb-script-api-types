@@ -1,6 +1,6 @@
 import type { Date } from '../../../../../../../java/util/Date.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { Cloneable } from '../../../../../../../java/lang/Cloneable.d.ts'
 import type { AnnualTimeZoneRule } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/AnnualTimeZoneRule.d.ts'
 import type { BasicTimeZone } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/BasicTimeZone.d.ts'
 import type { BasicTimeZone$LocalOption } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/BasicTimeZone$LocalOption.d.ts'
@@ -10,7 +10,7 @@ import type { TimeZone$SystemTimeZoneType } from '../../../../../../../org/graal
 import type { TimeZoneRule } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/TimeZoneRule.d.ts'
 import type { TimeZoneTransition } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/TimeZoneTransition.d.ts'
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
-export class RuleBasedTimeZone extends BasicTimeZone {
+export class RuleBasedTimeZone extends BasicTimeZone implements Cloneable {
     static GENERIC_LOCATION: number;
     static GMT_ZONE: TimeZone;
     static LONG: number;
@@ -55,8 +55,8 @@ export class RuleBasedTimeZone extends BasicTimeZone {
     // private isFrozen: boolean;
     // private upToDate: boolean;
     addTransitionRule(rule: TimeZoneRule): void;
-    clone(): Object;
-    cloneAsThawed(): TimeZone;
+    clone(): RuleBasedTimeZone;
+    cloneAsThawed(): RuleBasedTimeZone;
     // private complete(): void;
     // private findRuleInFinal(time: number, local: boolean, NonExistingTimeOpt: number, DuplicatedTimeOpt: number): TimeZoneRule;
     freeze(): TimeZone;

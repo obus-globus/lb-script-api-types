@@ -3,15 +3,15 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class JSParserOptions extends Record {
     static fromLanguageOptions(paramoptions: JSLanguageOptions): JSParserOptions;
-    constructor(strict: boolean, scripting: boolean, shebang: boolean, ecmaScriptVersion: number, syntaxExtensions: boolean, constAsVar: boolean, functionStatementError: boolean, emptyStatements: boolean, annexB: boolean, allowBigInt: boolean, classFields: boolean, importAttributes: boolean, importAssertions: boolean, sourcePhaseImports: boolean, privateFieldsIn: boolean, topLevelAwait: boolean, v8Intrinsics: boolean)
+    constructor(strict: boolean, scripting: boolean, shebang: boolean, ecmaScriptVersion: number, syntaxExtensions: boolean, constAsVar: boolean, functionStatementError: boolean, emptyStatements: boolean, annexB: boolean, allowBigInt: boolean, classFields: boolean, importAttributes: boolean, sourcePhaseImports: boolean, privateFieldsIn: boolean, topLevelAwait: boolean, explicitResourceManagement: boolean, v8Intrinsics: boolean)
     // private allowBigInt: boolean;
     // private annexB: boolean;
     // private classFields: boolean;
     // private constAsVar: boolean;
     // private ecmaScriptVersion: number;
     // private emptyStatements: boolean;
+    // private explicitResourceManagement: boolean;
     // private functionStatementError: boolean;
-    // private importAssertions: boolean;
     // private importAttributes: boolean;
     // private privateFieldsIn: boolean;
     // private scripting: boolean;
@@ -28,9 +28,9 @@ export class JSParserOptions extends Record {
     ecmaScriptVersion(): number;
     emptyStatements(): boolean;
     equals(o: Object | null): boolean;
+    explicitResourceManagement(): boolean;
     functionStatementError(): boolean;
     hashCode(): number;
-    importAssertions(): boolean;
     importAttributes(): boolean;
     privateFieldsIn(): boolean;
     scripting(): boolean;

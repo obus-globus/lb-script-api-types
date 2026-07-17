@@ -7,6 +7,7 @@ export class NearestNodesCollector$Position extends Object {
     // private offset: number;
     equals(obj: Object | null): boolean;
     hashCode(): number;
+    isAvailable(): boolean;
     isGreaterThan(other: NearestNodesCollector$Position): boolean;
     isGreaterThanOrEqual(other: NearestNodesCollector$Position): boolean;
     isIn(section: SourceSection): boolean;

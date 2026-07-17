@@ -18,6 +18,7 @@ import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
 import type { StackTraceElement } from '../../../../../java/lang/StackTraceElement.d.ts'
 import type { ThreadLocal } from '../../../../../java/lang/ThreadLocal.d.ts'
+import type { ByteBuffer } from '../../../../../java/nio/ByteBuffer.d.ts'
 import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
@@ -26,6 +27,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../java/lang/CharSequence.d.ts'
 import type { OptionDescriptor } from '../../../../../org/graalvm/options/OptionDescriptor.d.ts'
 import type { OptionValues } from '../../../../../org/graalvm/options/OptionValues.d.ts'
+import type { Engine$CancellationCallback } from '../../../../../org/graalvm/polyglot/Engine$CancellationCallback.d.ts'
 import type { SandboxPolicy } from '../../../../../org/graalvm/polyglot/SandboxPolicy.d.ts'
 export abstract class Accessor$RuntimeSupport extends Object {
     constructor(permission: Object)
@@ -48,9 +50,10 @@ export abstract class Accessor$RuntimeSupport extends Object {
     getFrameExtensionsUnsafe(): FrameExtensions;
     getObjectAlignment(): number;
     getRuntimeOptionDescriptors(): OptionDescriptor[];
+    getStackOverflowLimit(): number;
     getThreadLocalHandshake(): ThreadLocalHandshake;
+    initializeInterpreterCallStackHeadRoom(engineData: Object, interpreterCallStackHeadRoom: number): void;
     initializeProfile(target: CallTarget, argumentTypes: Class<Object>[]): void;
-    invalidateCallTarget(target: CallTarget, reason: string): void;
     isGuestCallStackFrame(e: StackTraceElement): boolean;
     isLegacyCompilerOption(key: string): boolean;
     isLoaded(callTarget: CallTarget): boolean;
@@ -62,14 +65,17 @@ export abstract class Accessor$RuntimeSupport extends Object {
     onEngineClosing(runtimeData: Object): boolean;
     onEngineCreate(engine: Object, runtimeData: Object): void;
     onEnginePatch(runtimeData: Object, runtimeOptions: OptionValues, logSupplier: (param0: string) => TruffleLogger, sandboxPolicy: SandboxPolicy): void;
+    onEnginePatchSuccess(runtimeData: Object): void;
     onLoopCount(source: Node, iterations: number): void;
     onOSRNodeReplaced(osrNode: BytecodeOSRNode, oldNode: Node, newNode: Node, reason: CharSequence): void;
     onStoreCache(runtimeData: Object, targetPath: Path, cancelledWord: number): boolean;
+    persistCache(runtimeData: Object, callback: () => boolean): ByteBuffer;
     pollBytecodeOSRBackEdge(osrNode: BytecodeOSRNode): boolean;
     pollBytecodeOSRBackEdge(osrNode: BytecodeOSRNode, count: number): boolean;
     reportPolymorphicSpecialize(source: Node): void;
     restoreOSRFrame(osrNode: BytecodeOSRNode, source: Frame, target: Frame): void;
     shutdownCompilationForEngine(engineData: Object): void;
+    supportsHeapMemoryLimits(): boolean;
     transferOSRFrame(osrNode: BytecodeOSRNode, source: Frame, target: Frame, bytecodeTarget: number, targetMetadata: Object): void;
     tryBytecodeOSR(osrNode: BytecodeOSRNode, target: number, interpreterState: Object, beforeTransfer: () => void, parentFrame: VirtualFrame): Object;
     tryLoadCachedEngine(runtimeData: OptionValues, logger: (param0: string) => TruffleLogger): Object;

@@ -19,6 +19,7 @@ export class IteratorPrototypeBuiltins$IteratorPrototype extends Enum<IteratorPr
     static set_constructor: IteratorPrototypeBuiltins$IteratorPrototype;
     static set_symbolToStringTag: IteratorPrototypeBuiltins$IteratorPrototype;
     static some: IteratorPrototypeBuiltins$IteratorPrototype;
+    static symbolDispose: IteratorPrototypeBuiltins$IteratorPrototype;
     static symbolToStringTag: IteratorPrototypeBuiltins$IteratorPrototype;
     static take: IteratorPrototypeBuiltins$IteratorPrototype;
     static toArray: IteratorPrototypeBuiltins$IteratorPrototype;
@@ -47,5 +48,5 @@ export class IteratorPrototypeBuiltins$IteratorPrototype extends Enum<IteratorPr
     isSetter(): boolean;
     isWritable(): boolean;
     prependAccessorPrefix(name: TruffleString): TruffleString;
-    name(): "toArray" | "forEach" | "some" | "every" | "find" | "reduce" | "map" | "filter" | "take" | "drop" | "flatMap" | "constructor" | "set_constructor" | "symbolToStringTag" | "set_symbolToStringTag";
+    name(): "toArray" | "forEach" | "some" | "every" | "find" | "reduce" | "map" | "filter" | "take" | "drop" | "flatMap" | "symbolDispose" | "constructor" | "set_constructor" | "symbolToStringTag" | "set_symbolToStringTag";
 }

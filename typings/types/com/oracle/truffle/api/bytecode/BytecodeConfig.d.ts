@@ -5,6 +5,7 @@ export class BytecodeConfig extends Object {
     static COMPLETE: BytecodeConfig;
     static DEFAULT: BytecodeConfig;
     static WITH_SOURCE: BytecodeConfig;
+    static WITH_SOURCE_CONTENT: BytecodeConfig;
     static newBuilder(paramencoder: BytecodeConfigEncoder): BytecodeConfig$Builder;
     constructor(encoder: BytecodeConfigEncoder, encoding: number)
     // private encoder: BytecodeConfigEncoder;

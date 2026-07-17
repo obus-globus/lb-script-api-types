@@ -1,6 +1,5 @@
 import type { TruffleString } from '../../../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
 import type { IntRingBuffer } from '../../../../../../../com/oracle/truffle/regex/tregex/buffer/IntRingBuffer.d.ts'
-import type { PureNFATransition } from '../../../../../../../com/oracle/truffle/regex/tregex/nfa/PureNFATransition.d.ts'
 import type { TRegexExecutorLocals } from '../../../../../../../com/oracle/truffle/regex/tregex/nodes/TRegexExecutorLocals.d.ts'
 import type { TRegexBacktrackingNFAExecutorLocals$Stack } from '../../../../../../../com/oracle/truffle/regex/tregex/nodes/nfa/TRegexBacktrackingNFAExecutorLocals$Stack.d.ts'
 export class TRegexBacktrackingNFAExecutorLocals extends TRegexExecutorLocals {
@@ -27,7 +26,7 @@ export class TRegexBacktrackingNFAExecutorLocals extends TRegexExecutorLocals {
     readonly transitionBitSet: number[];
     // private zeroWidthQuantifierCGOffsets: number[];
     // private zeroWidthTermEnclosedCGLow: number[];
-    apply(t: PureNFATransition, index: number): void;
+    apply(groupBoundaries: number[], groupBoundaryRecord: number, index: number): void;
     canPop(): boolean;
     canPopResult(): boolean;
     // private clearCaptureGroups(): void;
@@ -35,8 +34,8 @@ export class TRegexBacktrackingNFAExecutorLocals extends TRegexExecutorLocals {
     clearMatchEndAssertionTraversed(): void;
     // private clearQuantifierCounts(): void;
     // private clearRecursiveCaptureGroups(): void;
-    createSubNFALocals(t: PureNFATransition, newDontOverwriteLastGroup: boolean): TRegexBacktrackingNFAExecutorLocals;
     createSubNFALocals(newDontOverwriteLastGroup: boolean): TRegexBacktrackingNFAExecutorLocals;
+    createSubNFALocals(groupBoundaries: number[], groupBoundaryRecord: number, newDontOverwriteLastGroup: boolean): TRegexBacktrackingNFAExecutorLocals;
     dupFrame(): void;
     dupFrame(n: number): void;
     // private ensureSize(minSize: number): void;
@@ -77,7 +76,7 @@ export class TRegexBacktrackingNFAExecutorLocals extends TRegexExecutorLocals {
     push(): void;
     pushFrame(frame: number[]): void;
     pushResult(): void;
-    pushResult(t: PureNFATransition, index: number): void;
+    pushResult(groupBoundaries: number[], groupBoundaryRecord: number, index: number): void;
     readFrame(to: number[]): void;
     resetToInitialState(): void;
     restoreIndex(): void;

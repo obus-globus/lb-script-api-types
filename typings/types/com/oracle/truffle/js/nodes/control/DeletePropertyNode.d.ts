@@ -3,7 +3,8 @@ import type { InstrumentableNode } from '../../../../../../com/oracle/truffle/ap
 import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { InteropLibrary } from '../../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { DynamicObjectLibrary } from '../../../../../../com/oracle/truffle/api/object/DynamicObjectLibrary.d.ts'
+import type { DynamicObject$GetPropertyFlagsNode } from '../../../../../../com/oracle/truffle/api/object/DynamicObject$GetPropertyFlagsNode.d.ts'
+import type { DynamicObject$RemoveKeyNode } from '../../../../../../com/oracle/truffle/api/object/DynamicObject$RemoveKeyNode.d.ts'
 import type { InlinedConditionProfile } from '../../../../../../com/oracle/truffle/api/profiles/InlinedConditionProfile.d.ts'
 import type { TruffleString } from '../../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
 import type { TruffleString$EqualNode } from '../../../../../../com/oracle/truffle/api/strings/TruffleString$EqualNode.d.ts'
@@ -35,9 +36,9 @@ export abstract class DeletePropertyNode extends JSTargetableNode {
     // private targetNode: JavaScriptNode;
     arrayElementInt(target: Object, index: number, interop: InteropLibrary): boolean;
     copyUninitialized(materializedTags: Class<Tag>[]): JavaScriptNode;
-    doJSGlobalObject(targetObject: JSGlobalObject, key: Object, toPropertyKeyNode: JSToPropertyKeyNode, dynamicObjectLib: DynamicObjectLibrary): boolean;
+    doJSGlobalObject(targetObject: JSGlobalObject, key: Object, toPropertyKeyNode: JSToPropertyKeyNode, getPropertyFlags: DynamicObject$GetPropertyFlagsNode, removeKey: DynamicObject$RemoveKeyNode): boolean;
     doJSObject(targetObject: JSDynamicObject, key: Object, node: Node, isArrayNode: IsArrayNode, arrayProfile: InlinedConditionProfile, toArrayIndexNode: ToArrayIndexNode, arrayIndexProfile: InlinedConditionProfile, deleteArrayIndexNode: JSArrayDeleteIndexNode, jsclassProfile: JSClassProfile, toPropertyKeyNode: JSToPropertyKeyNode): boolean;
-    doJSOrdinaryObject(targetObject: JSDynamicObject, key: Object, toPropertyKeyNode: JSToPropertyKeyNode, dynamicObjectLib: DynamicObjectLibrary): boolean;
+    doJSOrdinaryObject(targetObject: JSDynamicObject, key: Object, toPropertyKeyNode: JSToPropertyKeyNode, getPropertyFlags: DynamicObject$GetPropertyFlagsNode, removeKey: DynamicObject$RemoveKeyNode): boolean;
     doOther(target: Object, property: Object, toPropertyKeyNode: JSToPropertyKeyNode): boolean;
     doString(target: TruffleString, property: Object, toArrayIndexNode: ToArrayIndexNode, equalsNode: TruffleString$EqualNode): boolean;
     evaluateTarget(frame: VirtualFrame): Object;

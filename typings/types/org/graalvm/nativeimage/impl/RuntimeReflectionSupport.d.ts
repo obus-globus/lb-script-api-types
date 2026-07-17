@@ -1,22 +1,18 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
+import type { Executable } from '../../../../java/lang/reflect/Executable.d.ts'
+import type { Field } from '../../../../java/lang/reflect/Field.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
-import type { ConfigurationCondition } from '../../../../org/graalvm/nativeimage/impl/ConfigurationCondition.d.ts'
+import type { AccessCondition } from '../../../../org/graalvm/nativeimage/dynamicaccess/AccessCondition.d.ts'
 import type { ReflectionRegistry } from '../../../../org/graalvm/nativeimage/impl/ReflectionRegistry.d.ts'
 export interface RuntimeReflectionSupport extends Object, ReflectionRegistry{
-    register(condition: ConfigurationCondition, ...classes: Class<Object>[]): void;
-    registerAllClassesQuery(condition: ConfigurationCondition, clazz: Class<Object>): void;
-    registerAllConstructorsQuery(condition: ConfigurationCondition, queriedOnly: boolean, clazz: Class<Object>): void;
-    registerAllDeclaredClassesQuery(condition: ConfigurationCondition, clazz: Class<Object>): void;
-    registerAllDeclaredConstructorsQuery(condition: ConfigurationCondition, queriedOnly: boolean, clazz: Class<Object>): void;
-    registerAllDeclaredFields(condition: ConfigurationCondition, clazz: Class<Object>): void;
-    registerAllDeclaredMethodsQuery(condition: ConfigurationCondition, queriedOnly: boolean, clazz: Class<Object>): void;
-    registerAllFields(condition: ConfigurationCondition, clazz: Class<Object>): void;
-    registerAllMethodsQuery(condition: ConfigurationCondition, queriedOnly: boolean, clazz: Class<Object>): void;
-    registerAllNestMembersQuery(condition: ConfigurationCondition, clazz: Class<Object>): void;
-    registerAllPermittedSubclassesQuery(condition: ConfigurationCondition, clazz: Class<Object>): void;
-    registerAllRecordComponentsQuery(condition: ConfigurationCondition, clazz: Class<Object>): void;
-    registerAllSignersQuery(condition: ConfigurationCondition, clazz: Class<Object>): void;
-    registerClassLookup(condition: ConfigurationCondition, typeName: string): void;
-    registerClassLookupException(condition: ConfigurationCondition, typeName: string, t: Throwable): void;
+    register(condition: AccessCondition, ...classes: Class<Object>[]): void;
+    register(condition: AccessCondition, preserved: boolean, ...methods: Executable[]): void;
+    register(condition: AccessCondition, finalIsWritable: boolean, preserved: boolean, ...fields: Field[]): void;
+    registerAllDeclaredFields(condition: AccessCondition, preserved: boolean, clazz: Class<Object>): void;
+    registerAllFields(condition: AccessCondition, preserved: boolean, clazz: Class<Object>): void;
+    registerClassLookup(condition: AccessCondition, preserved: boolean, typeName: string): void;
+    registerClassLookupException(condition: AccessCondition, typeName: string, t: Throwable): void;
+    registerUnsafeAllocation(condition: AccessCondition, preserved: boolean, clazz: Class<Object>): void;
+    registerUnsafeAllocation(condition: AccessCondition, preserved: boolean, ...classes: Class<Object>[]): void;
 }

@@ -1,6 +1,5 @@
 import type { InteropLibrary } from '../../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
-import type { TypedArray$ElementType } from '../../../../../../com/oracle/truffle/js/runtime/array/TypedArray$ElementType.d.ts'
 import type { TypedArray$TypedFloatArray } from '../../../../../../com/oracle/truffle/js/runtime/array/TypedArray$TypedFloatArray.d.ts'
 import type { TypedArrayFactory } from '../../../../../../com/oracle/truffle/js/runtime/array/TypedArrayFactory.d.ts'
 import type { AbstractConstantArray } from '../../../../../../com/oracle/truffle/js/runtime/array/dyn/AbstractConstantArray.d.ts'
@@ -24,7 +23,6 @@ export class TypedArray$DirectFloat64Array extends TypedArray$TypedFloatArray {
     constructor(factory: TypedArrayFactory, shared: boolean, offset: boolean, fixedLength: boolean)
     getBufferElement(buffer: JSArrayBufferObject, index: number, littleEndian: boolean, interop: InteropLibrary): Number;
     getDoubleImpl(buffer: JSArrayBufferObject, offset: number, index: number, interop: InteropLibrary): number;
-    getElementType(): TypedArray$ElementType;
     setBufferElement(buffer: JSArrayBufferObject, index: number, littleEndian: boolean, value: Object, interop: InteropLibrary): void;
     setDoubleImpl(buffer: JSArrayBufferObject, offset: number, index: number, value: number, interop: InteropLibrary): void;
 }

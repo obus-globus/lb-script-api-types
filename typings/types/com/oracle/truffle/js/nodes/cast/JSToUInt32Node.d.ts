@@ -21,8 +21,7 @@ export abstract class JSToUInt32Node extends JavaScriptBaseNode {
     doBigInt(value: BigInt): number;
     doBoolean(value: boolean): number;
     doDouble(value: number): number;
-    doDoubleFitsInt32Negative(value: number): number;
-    doDoubleRepresentableAsLong(value: number): number;
+    doDoubleAsLong(value: number): number;
     doInteger(value: number): number;
     doIntegerNegative(value: number): SafeInteger;
     doJSObject(value: JSObject, toNumberNode: JSToNumberNode): number;

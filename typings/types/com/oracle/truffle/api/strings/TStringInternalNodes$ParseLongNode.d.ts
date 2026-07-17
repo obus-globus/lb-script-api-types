@@ -4,5 +4,5 @@ import type { AbstractTruffleString } from '../../../../../com/oracle/truffle/ap
 import type { TruffleString$Encoding } from '../../../../../com/oracle/truffle/api/strings/TruffleString$Encoding.d.ts'
 export abstract class TStringInternalNodes$ParseLongNode extends AbstractInternalNode {
     constructor()
-    execute(node: Node, a: AbstractTruffleString, arrayA: number[], offsetA: number, codeRangeA: number, encoding: TruffleString$Encoding, radix: number): number;
+    execute(node: Node, a: AbstractTruffleString, arrayA: number[], offsetA: number, lengthA: number, strideA: number, codeRangeA: number, encoding: TruffleString$Encoding, radix: number): number;
 }

@@ -1,7 +1,7 @@
 import type { VirtualFrame } from '../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { DynamicObjectLibrary } from '../../../../../com/oracle/truffle/api/object/DynamicObjectLibrary.d.ts'
+import type { DynamicObject$PutNode } from '../../../../../com/oracle/truffle/api/object/DynamicObject$PutNode.d.ts'
 import type { ObjectFunctionBuiltins$ObjectGetOwnPropertyDescriptorsNode } from '../../../../../com/oracle/truffle/js/builtins/ObjectFunctionBuiltins$ObjectGetOwnPropertyDescriptorsNode.d.ts'
 import type { ObjectFunctionBuiltinsFactory$ObjectGetOwnPropertyDescriptorsNodeGen$GetForeignObject0Data } from '../../../../../com/oracle/truffle/js/builtins/ObjectFunctionBuiltinsFactory$ObjectGetOwnPropertyDescriptorsNodeGen$GetForeignObject0Data.d.ts'
 import type { ObjectFunctionBuiltinsFactory$ObjectGetOwnPropertyDescriptorsNodeGen$GetForeignObject1Data } from '../../../../../com/oracle/truffle/js/builtins/ObjectFunctionBuiltinsFactory$ObjectGetOwnPropertyDescriptorsNodeGen$GetForeignObject1Data.d.ts'
@@ -38,12 +38,12 @@ export class ObjectFunctionBuiltinsFactory$ObjectGetOwnPropertyDescriptorsNodeGe
     // private getJSObject_getOwnPropertyNode_: JSGetOwnPropertyNode;
     // private getJSObject_listGet_: ListGetNode;
     // private getJSObject_listSize_: ListSizeNode;
-    // private putPropDescNode: DynamicObjectLibrary;
+    // private putPropDescNode: DynamicObject$PutNode;
     // private state_0_: number;
     execute(frameValue: VirtualFrame): Object;
     // private executeAndSpecialize(arguments0Value: Object): JSDynamicObject;
     executeEvaluated(arguments0Value: Object): JSDynamicObject;
     getArguments(): JavaScriptNode[];
-    // private getForeignObject1Boundary(state_0: number, s2_: ObjectFunctionBuiltinsFactory$ObjectGetOwnPropertyDescriptorsNodeGen$GetForeignObject1Data, arguments0Value: Object, fromPropertyDescriptorNode_1: FromPropertyDescriptorNode, putPropDescNode_1: DynamicObjectLibrary): JSDynamicObject;
-    // private getForeignObject1Boundary0(state_0: number, s2_: ObjectFunctionBuiltinsFactory$ObjectGetOwnPropertyDescriptorsNodeGen$GetForeignObject1Data, arguments0Value_: Object, fromPropertyDescriptorNode_1: FromPropertyDescriptorNode, putPropDescNode_1: DynamicObjectLibrary): Object;
+    // private getForeignObject1Boundary(state_0: number, s2_: ObjectFunctionBuiltinsFactory$ObjectGetOwnPropertyDescriptorsNodeGen$GetForeignObject1Data, arguments0Value: Object, fromPropertyDescriptorNode_1: FromPropertyDescriptorNode, putPropDescNode_1: DynamicObject$PutNode): JSDynamicObject;
+    // private getForeignObject1Boundary0(state_0: number, s2_: ObjectFunctionBuiltinsFactory$ObjectGetOwnPropertyDescriptorsNodeGen$GetForeignObject1Data, arguments0Value_: Object, fromPropertyDescriptorNode_1: FromPropertyDescriptorNode, putPropDescNode_1: DynamicObject$PutNode): Object;
 }

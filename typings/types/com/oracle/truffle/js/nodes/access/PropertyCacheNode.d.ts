@@ -16,6 +16,7 @@ export abstract class PropertyCacheNode<T extends PropertyCacheNode$CacheNode<T>
     readonly context: JSContext;
     // private invalidationAssumption: Assumption;
     readonly key: Object;
+    alwaysUseStore(store: JSDynamicObject): boolean;
     canCombineShapeCheck(parentShape: Shape, cacheShape: Shape, thisObj: Object, depth: number, value: Object, property: Property): boolean;
     checkForUnstableAssumption(head: T, thisObj: Object): void;
     createCachedPropertyNode(entry: Property, thisObj: Object, proto: JSDynamicObject, depth: number, value: Object, currentHead: T): T;

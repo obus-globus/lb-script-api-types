@@ -2,7 +2,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 /**
  * Represents information about an IP address
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/IpInfoApi.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/IpInfoApi.kt:58}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/IpInfoApi.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/IpInfoApi.kt:58}
  */
 export class IpInfoApi$IpData extends Object {
     constructor(ip: string | null, hostname: string | null, city: string | null, region: string | null, country: string | null, loc: string | null, org: string | null, postal: string | null, timezone: string | null)

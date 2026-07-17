@@ -7,6 +7,5 @@ export class JSProxyHasPropertyNodeGen extends JSProxyHasPropertyNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
     // private state_0_: number;
-    // private executeAndSpecialize(arg0Value: Object, arg1Value: Object): boolean;
     executeWithTargetAndKeyBoolean(arg0Value: Object, arg1Value: Object): boolean;
 }

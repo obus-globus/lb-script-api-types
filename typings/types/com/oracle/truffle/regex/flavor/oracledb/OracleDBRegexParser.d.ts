@@ -1,3 +1,4 @@
+import type { SourceSection } from '../../../../../../com/oracle/truffle/api/source/SourceSection.d.ts'
 import type { AbstractRegexObject } from '../../../../../../com/oracle/truffle/regex/AbstractRegexObject.d.ts'
 import type { RegexLanguage } from '../../../../../../com/oracle/truffle/regex/RegexLanguage.d.ts'
 import type { RegexSource } from '../../../../../../com/oracle/truffle/regex/RegexSource.d.ts'
@@ -30,11 +31,12 @@ export class OracleDBRegexParser extends Object implements RegexParser {
     // private addCCAtomIgnoreCase(contents: ClassSetContents): void;
     // private addCCAtomMultiCharExpansion(contents: ClassSetContents, algorithm: CaseFoldData$CaseFoldAlgorithm): void;
     // private addCharClass(ccEnd: Token): void;
-    // private addLiteralString(literalStringBuffer: number[]): void;
+    // private addLiteralString(literalStringBuffer: number[], sourceSections: SourceSection[]): void;
     // private caseClosure(algorithm: CaseFoldData$CaseFoldAlgorithm, codePointSet: (Object | null)[]): void;
-    // private ccAtomRangeIgnoreCase(parsedRange: (Object | null)[]): (Object | null)[];
+    // private ccAtomRangeIgnoreCase(lo: number, hi: number): (Object | null)[];
     getFlags(): OracleDBFlags;
     getNamedCaptureGroups(): AbstractRegexObject;
     parse(): RegexAST;
     // private syntaxError(msg: string, errorCode: RegexSyntaxException$ErrorCode): RegexSyntaxException;
+    // private utf16RangeQuirkTransform(contents: ClassSetContents): (Object | null)[];
 }

@@ -1,4 +1,3 @@
-import type { MaterializedFrame } from '../../../../../../com/oracle/truffle/api/frame/MaterializedFrame.d.ts'
 import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { TruffleString$SwitchEncodingNode } from '../../../../../../com/oracle/truffle/api/strings/TruffleString$SwitchEncodingNode.d.ts'
@@ -14,7 +13,6 @@ export class EvalNodeGen$DirectEvalNodeGen extends EvalNode$DirectEvalNode {
     // private directEvalForeignObject0_cache: EvalNodeGen$DirectEvalNodeGen$DirectEvalForeignObject0Data;
     // private directEvalForeignObject1_switchEncoding_: TruffleString$SwitchEncodingNode;
     // private state_0_: number;
-    // private directEvalForeignObject1Boundary(state_0: number, frameValue: MaterializedFrame, arg0Value: Object, switchEncoding__: TruffleString$SwitchEncodingNode): Object;
     // private executeAndSpecialize(frameValue: VirtualFrame, arg0Value: Object): Object;
     executeWithSource(frameValue: VirtualFrame, arg0Value: Object): Object;
 }

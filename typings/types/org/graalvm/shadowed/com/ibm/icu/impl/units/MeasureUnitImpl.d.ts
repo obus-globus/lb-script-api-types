@@ -9,6 +9,7 @@ export class MeasureUnitImpl extends Object {
     constructor()
     constructor(singleUnit: SingleUnitImpl)
     readonly complexity: MeasureUnit$Complexity;
+    readonly constantDenominator: number;
     readonly identifier: string;
     readonly singleUnits: SingleUnitImpl[];
     appendSingleUnit(singleUnit: SingleUnitImpl): boolean;
@@ -16,13 +17,17 @@ export class MeasureUnitImpl extends Object {
     build(): MeasureUnit;
     copy(): MeasureUnitImpl;
     copyAndSimplify(): MeasureUnitImpl;
+    // private countCharacter(str: string, ch: string): number;
     extractIndividualUnitsWithIndices(): MeasureUnitImpl$MeasureUnitImplWithIndex[];
     getComplexity(): MeasureUnit$Complexity;
+    getConstantDenominator(): number;
+    // private getConstantsString(constantDenominator: number): string;
     getIdentifier(): string;
     getSingleUnitImpl(): SingleUnitImpl;
     getSingleUnits(): SingleUnitImpl[];
     serialize(): void;
     setComplexity(complexity: MeasureUnit$Complexity): void;
+    setConstantDenominator(constantDenominator: number): void;
     takeReciprocal(): void;
     toString(): string;
 }

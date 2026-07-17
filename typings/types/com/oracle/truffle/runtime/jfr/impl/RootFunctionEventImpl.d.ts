@@ -3,12 +3,14 @@ import type { RootFunctionEvent } from '../../../../../../com/oracle/truffle/run
 import type { Event } from '../../../../../../jdk/jfr/Event.d.ts'
 export abstract class RootFunctionEventImpl extends Event implements RootFunctionEvent {
     constructor()
-    constructor(engineId: number, id: number, source: string, language: string, rootFunction: string)
+    constructor(engineId: number, id: number, source: string, sourceHash: string, language: string, rootFunction: string, astSize: number)
+    astSize: number;
     engineId: number;
     id: number;
     language: string;
     rootFunction: string;
     source: string;
+    sourceHash: string;
     publish(): void;
     setRootFunction(target: OptimizedCallTarget): void;
 }

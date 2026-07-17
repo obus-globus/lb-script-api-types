@@ -6,6 +6,7 @@ export class Parser$ForVariableDeclarationListResult extends Object {
     // private firstBinding: Expression;
     // private missingAssignment: Expression;
     // private secondBinding: Expression;
+    // private usingDeclaration: boolean;
     addBinding(binding: Expression): void;
     recordDeclarationWithInitializer(token: number): void;
     recordMissingAssignment(binding: Expression): void;

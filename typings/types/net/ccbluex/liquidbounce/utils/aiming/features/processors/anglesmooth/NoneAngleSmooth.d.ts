@@ -9,7 +9,7 @@ import type { AngleSmooth } from '../../../../../../../../net/ccbluex/liquidboun
  *
  * It essentially does nothing.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/anglesmooth/NoneAngleSmooth.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/anglesmooth/NoneAngleSmooth.kt:31}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/anglesmooth/NoneAngleSmooth.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/anglesmooth/NoneAngleSmooth.kt:31}
  */
 export class NoneAngleSmooth extends AngleSmooth {
     static Companion: Tagged$Companion;

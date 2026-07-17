@@ -75,6 +75,7 @@ export class NodeFactory extends Object {
     createArgumentsObjectNode(context: JSContext, unmapped: boolean, leadingArgumentCount: number): JavaScriptNode;
     createArrayLiteral(context: JSContext, elements: JavaScriptNode[]): JavaScriptNode;
     createArrayLiteralWithSpread(context: JSContext, elements: JavaScriptNode[]): JavaScriptNode;
+    createAsyncDisposeResources(context: JSContext, stateSlot: JSFrameSlot, capabilityNode: JavaScriptNode, errorNode: JavaScriptNode, asyncContextNode: JSReadFrameSlotNode, asyncResultNode: JSReadFrameSlotNode): JavaScriptNode;
     createAsyncFunctionBody(context: JSContext, body: JavaScriptNode, writeAsyncContext: JSWriteFrameSlotNode, readAsyncContext: JSReadFrameSlotNode, writeAsyncResult: JSWriteFrameSlotNode, functionSourceSection: SourceSection, functionName: TruffleString, activeScriptOrModule: ScriptOrModule): JavaScriptNode;
     createAsyncGeneratorBody(context: JSContext, body: JavaScriptNode, writeYieldValue: JSWriteFrameSlotNode, readYieldResult: JSReadFrameSlotNode, writeAsyncContext: JSWriteFrameSlotNode, readAsyncContext: JSReadFrameSlotNode, functionSourceSection: SourceSection, functionName: TruffleString, activeScriptOrModule: ScriptOrModule): JavaScriptNode;
     createAsyncGeneratorYield(context: JSContext, stateSlot: JSFrameSlot, expression: JavaScriptNode, asyncContextNode: JSReadFrameSlotNode, asyncResultNode: JSReadFrameSlotNode, returnNode: ReturnNode): JavaScriptNode;
@@ -125,6 +126,8 @@ export class NodeFactory extends Object {
     createDesugaredForIn(loopNode: LoopNode): JavaScriptNode;
     createDesugaredForOf(loopNode: LoopNode): JavaScriptNode;
     createDirectBreakTarget(block: JavaScriptNode): DirectBreakTargetNode;
+    createDisposeCapability(): JavaScriptNode;
+    createDisposeResources(capabilityNode: JavaScriptNode, errorNode: JavaScriptNode): JavaScriptNode;
     createDoWhile(loopNode: LoopNode): JavaScriptNode;
     createDoWhileRepeatingNode(condition: JavaScriptNode, body: JavaScriptNode): RepeatingNode;
     createDropNewTarget(context: JSContext, callTarget: CallTarget): JavaScriptRootNode;
@@ -133,7 +136,7 @@ export class NodeFactory extends Object {
     createEnumerate(context: JSContext, iteratedObject: JavaScriptNode, values: boolean): JavaScriptNode;
     createExprBlock(...statements: JavaScriptNode[]): JavaScriptNode;
     createFor(loopNode: LoopNode): StatementNode;
-    createForOfRepeatingNode(nextResultNode: JavaScriptNode, body: JavaScriptNode, writeNextValueNode: JSWriteFrameSlotNode): RepeatingNode;
+    createForOfRepeatingNode(iteratorNode: JavaScriptNode, nextResultNode: JavaScriptNode, body: JavaScriptNode, writeNextValueNode: JSWriteFrameSlotNode): RepeatingNode;
     createForRepeatingNode(condition: JavaScriptNode, body: JavaScriptNode, modify: JavaScriptNode, frameDescriptor: FrameDescriptor, isFirstNode: JavaScriptNode, setNotFirstNode: JavaScriptNode, blockScopeSlot: JSFrameSlot): RepeatingNode;
     createFrameReturn(expression: JavaScriptNode): ReturnNode;
     createFrameReturnTarget(body: JavaScriptNode, returnValue: JavaScriptNode): ReturnTargetNode;
@@ -214,6 +217,7 @@ export class NodeFactory extends Object {
     createReadProperty(context: JSContext, base: JavaScriptNode, propertyName: TruffleString): JSTargetableNode;
     createReadProperty(context: JSContext, base: JavaScriptNode, propertyName: TruffleString, method: boolean): JSTargetableNode;
     createRegExpLiteral(context: JSContext, pattern: TruffleString, flags: TruffleString): JavaScriptNode;
+    createRegisterDisposableResource(context: JSContext, capabilityNode: JavaScriptNode, valueNode: JavaScriptNode, asyncDispose: boolean): JavaScriptNode;
     createRequireObjectCoercible(argument: JavaScriptNode): JavaScriptNode;
     createResolveNamedImport(context: JSContext, moduleNode: JavaScriptNode, moduleRequest: Module$ModuleRequest, importName: TruffleString, writeLocalNode: JSWriteFrameSlotNode): JavaScriptNode;
     createResolveSourceImport(context: JSContext, moduleNode: JavaScriptNode, moduleRequest: Module$ModuleRequest, writeLocalNode: JSWriteFrameSlotNode): JavaScriptNode;

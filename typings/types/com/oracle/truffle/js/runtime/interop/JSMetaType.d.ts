@@ -1,8 +1,6 @@
-import type { TruffleLanguage } from '../../../../../../com/oracle/truffle/api/TruffleLanguage.d.ts'
 import type { InteropLibrary } from '../../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { TruffleObject } from '../../../../../../com/oracle/truffle/api/interop/TruffleObject.d.ts'
 import type { JSMetaType$TypeCheck } from '../../../../../../com/oracle/truffle/js/runtime/interop/JSMetaType$TypeCheck.d.ts'
-import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSMetaType extends Object implements TruffleObject {
     static ARRAY: JSMetaType;
@@ -21,9 +19,9 @@ export class JSMetaType extends Object implements TruffleObject {
     constructor(typeName: string, isInstance: (param0: InteropLibrary, param1: Object) => boolean)
     // private isInstance: (param0: InteropLibrary, param1: Object) => boolean;
     readonly typeName: string;
-    getLanguage(): Class<TruffleLanguage<Object>>;
+    getLanguageId(): string;
     getTypeName(): string;
-    hasLanguage(): boolean;
+    hasLanguageId(): boolean;
     isInstance(instance: Object, interop: InteropLibrary): boolean;
     isMetaObject(): boolean;
     toDisplayString(allowSideEffects: boolean): Object;

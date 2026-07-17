@@ -8,9 +8,9 @@ import type { JSTemporalBuiltinOperation } from '../../../../../../com/oracle/tr
 import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { JSBuiltin } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
-import type { DifferencePlainDateTimeWithRoundingNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/DifferencePlainDateTimeWithRoundingNode.d.ts'
-import type { DifferenceZonedDateTimeWithRoundingNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/DifferenceZonedDateTimeWithRoundingNode.d.ts'
-import type { GetTemporalUnitNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/GetTemporalUnitNode.d.ts'
+import type { DifferencePlainDateTimeWithTotalNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/DifferencePlainDateTimeWithTotalNode.d.ts'
+import type { DifferenceZonedDateTimeWithTotalNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/DifferenceZonedDateTimeWithTotalNode.d.ts'
+import type { GetTemporalUnitValuedOptionNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/GetTemporalUnitValuedOptionNode.d.ts'
 import type { TemporalAddDateNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/TemporalAddDateNode.d.ts'
 import type { TemporalAddZonedDateTimeNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/TemporalAddZonedDateTimeNode.d.ts'
 import type { TemporalGetOptionNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/TemporalGetOptionNode.d.ts'
@@ -33,5 +33,5 @@ export abstract class TemporalDurationPrototypeBuiltins$JSTemporalDurationTotal 
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
-    total(duration: JSTemporalDurationObject, totalOfParam: Object, node: Node, toRelativeTemporalObjectNode: ToRelativeTemporalObjectNode, getTemporalUnit: GetTemporalUnitNode, addDate: TemporalAddDateNode, differencePlainDateTimeWithRounding: DifferencePlainDateTimeWithRoundingNode, differenceZonedDateTimeWithRounding: DifferenceZonedDateTimeWithRoundingNode, addZonedDateTimeNode: TemporalAddZonedDateTimeNode, errorBranch: InlinedBranchProfile, optionUndefined: InlinedConditionProfile): number;
+    total(duration: JSTemporalDurationObject, totalOfParam: Object, node: Node, toRelativeTemporalObjectNode: ToRelativeTemporalObjectNode, getTemporalUnit: GetTemporalUnitValuedOptionNode, addDate: TemporalAddDateNode, differencePlainDateTimeWithTotal: DifferencePlainDateTimeWithTotalNode, differenceZonedDateTimeWithTotal: DifferenceZonedDateTimeWithTotalNode, addZonedDateTimeNode: TemporalAddZonedDateTimeNode, errorBranch: InlinedBranchProfile, optionUndefined: InlinedConditionProfile): number;
 }

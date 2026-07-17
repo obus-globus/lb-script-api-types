@@ -19,7 +19,7 @@ export abstract class DataViewPrototypeBuiltins$DataViewAccessNode extends JSBui
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
-    constructor(context: JSContext, builtin: JSBuiltin)
+    constructor(context: JSContext, builtin: JSBuiltin, typedArrayFactory: TypedArrayFactory)
     // private factory: TypedArrayFactory;
     getBufferIndex(dataView: JSDataViewObject, getIndex: number, errorBranch: InlinedBranchProfile, getViewByteLengthNode: GetViewByteLengthNode): number;
 }

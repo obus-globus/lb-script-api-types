@@ -10,7 +10,6 @@ import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { FileAttribute } from '../../../../java/nio/file/attribute/FileAttribute.d.ts'
 import type { FileSystemProvider } from '../../../../java/nio/file/spi/FileSystemProvider.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { AbstractPolyglotImpl } from '../../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl.d.ts'
 export class FileSystems$DeniedIOFileSystem extends Object implements FileSystems$PolyglotFileSystem {
     constructor()
     // private defaultFileSystemProvider: FileSystemProvider;
@@ -20,6 +19,7 @@ export class FileSystems$DeniedIOFileSystem extends Object implements FileSystem
     createLink(link: Path, existing: Path): void;
     createSymbolicLink(link: Path, target: Path, ...attrs: FileAttribute<Object>[]): void;
     delete(path: Path): void;
+    // private getDefaultFileSystemProvider(): FileSystemProvider;
     getFileStoreBlockSize(path: Path): number;
     getFileStoreTotalSpace(path: Path): number;
     getFileStoreUnallocatedSpace(path: Path): number;
@@ -28,7 +28,7 @@ export class FileSystems$DeniedIOFileSystem extends Object implements FileSystem
     hasNoAccess(): boolean;
     isFileStoreReadOnly(path: Path): boolean;
     isHost(): boolean;
-    isInternal(polyglot: AbstractPolyglotImpl): boolean;
+    isInternal(): boolean;
     isSameFile(path1: Path, path2: Path, ...options: LinkOption[]): boolean;
     move(source: Path, target: Path, ...options: CopyOption[]): void;
     newByteChannel(inPath: Path, options: OpenOption[], ...attrs: FileAttribute<Object>[]): SeekableByteChannel;

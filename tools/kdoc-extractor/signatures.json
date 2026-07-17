@@ -42,7 +42,7 @@
         "returns": "CompletableFuture<Void>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-          "line": 515
+          "line": 516
         }
       }
     ],
@@ -79,7 +79,7 @@
             "vararg": false
           }
         ],
-        "returns": "CompletableFuture<Unit>",
+        "returns": "CompletableFuture<Void?>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
           "line": 196
@@ -92,7 +92,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-          "line": 295
+          "line": 296
         }
       }
     ],
@@ -115,7 +115,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-          "line": 247
+          "line": 248
         },
         "suspend": true
       }
@@ -133,7 +133,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-          "line": 311
+          "line": 312
         },
         "suspend": true
       }
@@ -151,7 +151,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-          "line": 372
+          "line": 373
         },
         "suspend": true
       }
@@ -196,7 +196,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-          "line": 432
+          "line": 433
         }
       }
     ],
@@ -21190,6 +21190,49 @@
         }
       }
     ],
+    "net.ccbluex.liquidbounce.features.module.modules.combat.ModuleSpearKill.createAttackMovement": [
+      {
+        "params": [
+          {
+            "name": "target",
+            "type": "LivingEntity",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "distance",
+            "type": "Double",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleSpearKill.kt",
+          "line": 108
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.combat.ModuleSpearKill.findTarget": [
+      {
+        "params": [],
+        "returns": "Pair<LivingEntity, Double>?",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleSpearKill.kt",
+          "line": 79
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.combat.ModuleSpearKill.resetAttack": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleSpearKill.kt",
+          "line": 73
+        }
+      }
+    ],
     "net.ccbluex.liquidbounce.features.module.modules.combat.ModuleSuperKnockback.Conditions.constructor": [
       {
         "params": [
@@ -32453,7 +32496,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleVehicleControl.kt",
-          "line": 70
+          "line": 71
         }
       }
     ],
@@ -57312,7 +57355,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt",
-          "line": 270
+          "line": 274
         }
       }
     ],
@@ -57322,7 +57365,7 @@
         "returns": "List<JsonObject>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt",
-          "line": 236
+          "line": 240
         },
         "suspend": true
       }
@@ -57333,7 +57376,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt",
-          "line": 329
+          "line": 333
         }
       }
     ],
@@ -57350,7 +57393,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt",
-          "line": 288
+          "line": 292
         }
       }
     ],
@@ -57360,7 +57403,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt",
-          "line": 276
+          "line": 280
         }
       }
     ],
@@ -57380,7 +57423,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt",
-          "line": 224
+          "line": 228
         }
       }
     ],
@@ -57908,7 +57951,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt",
-          "line": 354
+          "line": 358
         },
         "isExtension": true,
         "receiver": "ServerList"
@@ -58004,7 +58047,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt",
-          "line": 356
+          "line": 360
         },
         "isExtension": true,
         "receiver": "Routing"
@@ -62135,7 +62178,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-          "line": 380
+          "line": 378
         }
       }
     ],
@@ -62145,7 +62188,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-          "line": 350
+          "line": 348
         },
         "isExtension": true,
         "receiver": "RenderPipeline.Builder"
@@ -62164,7 +62207,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-          "line": 401
+          "line": 399
         }
       }
     ],
@@ -62174,7 +62217,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-          "line": 383
+          "line": 381
         },
         "isExtension": true,
         "receiver": "RenderPipeline.Builder"
@@ -62216,7 +62259,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-          "line": 330
+          "line": 328
         }
       }
     ],
@@ -62245,7 +62288,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-          "line": 481
+          "line": 479
         }
       }
     ],
@@ -62334,7 +62377,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-          "line": 368
+          "line": 366
         }
       }
     ],
@@ -62344,7 +62387,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-          "line": 341
+          "line": 339
         },
         "isExtension": true,
         "receiver": "RenderPipeline.Builder"
@@ -74430,7 +74473,59 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
-          "line": 240
+          "line": 286
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.utils.aiming.RotationManager.applyChangeLookRotation": [
+      {
+        "params": [
+          {
+            "name": "partialTicks",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
+          "line": 250
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.utils.aiming.RotationManager.clientboundRotation": [
+      {
+        "params": [
+          {
+            "name": "yaw",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "pitch",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "relativeYaw",
+            "type": "Boolean",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "relativePitch",
+            "type": "Boolean",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
+          "line": 152
         }
       }
     ],
@@ -74447,7 +74542,17 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
-          "line": 145
+          "line": 195
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.utils.aiming.RotationManager.reset": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
+          "line": 123
         }
       }
     ],
@@ -74457,7 +74562,30 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
-          "line": 242
+          "line": 288
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.utils.aiming.RotationManager.serverboundRotation": [
+      {
+        "params": [
+          {
+            "name": "yaw",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "pitch",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
+          "line": 140
         }
       }
     ],
@@ -74504,7 +74632,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
-          "line": 113
+          "line": 163
         }
       },
       {
@@ -74531,7 +74659,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
-          "line": 127
+          "line": 177
         }
       }
     ],
@@ -74541,7 +74669,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
-          "line": 162
+          "line": 212
         }
       }
     ],
@@ -74808,7 +74936,7 @@
         "returns": "Rotation",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt",
-          "line": 154
+          "line": 159
         }
       }
     ],
@@ -74825,7 +74953,7 @@
         "returns": "Float",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt",
-          "line": 109
+          "line": 110
         }
       }
     ],
@@ -74848,7 +74976,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt",
-          "line": 149
+          "line": 154
         }
       }
     ],
@@ -74877,7 +75005,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt",
-          "line": 38
+          "line": 39
         }
       }
     ],
@@ -74894,7 +75022,7 @@
         "returns": "Rotation",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt",
-          "line": 53
+          "line": 54
         }
       },
       {
@@ -74921,7 +75049,7 @@
         "returns": "Rotation",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt",
-          "line": 57
+          "line": 58
         }
       }
     ],
@@ -74944,7 +75072,7 @@
         "returns": "Rotation",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt",
-          "line": 144
+          "line": 149
         }
       }
     ],
@@ -74967,7 +75095,7 @@
         "returns": "Rotation",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt",
-          "line": 48
+          "line": 49
         }
       }
     ],
@@ -74977,7 +75105,7 @@
         "returns": "Rotation",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt",
-          "line": 81
+          "line": 82
         }
       }
     ],
@@ -74994,7 +75122,7 @@
         "returns": "RotationDelta",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt",
-          "line": 118
+          "line": 123
         }
       }
     ],
@@ -75011,7 +75139,7 @@
         "returns": "Quaternionf",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt",
-          "line": 72
+          "line": 73
         }
       }
     ],
@@ -75040,7 +75168,7 @@
         "returns": "Rotation",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt",
-          "line": 129
+          "line": 134
         }
       }
     ],
@@ -85162,7 +85290,17 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RequestHandler.kt",
-          "line": 66
+          "line": 71
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.utils.client.RequestHandler.clear": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RequestHandler.kt",
+          "line": 36
         }
       }
     ],
@@ -85172,7 +85310,7 @@
         "returns": "T?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RequestHandler.kt",
-          "line": 43
+          "line": 48
         }
       }
     ],
@@ -85189,7 +85327,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RequestHandler.kt",
-          "line": 36
+          "line": 41
         }
       }
     ],
@@ -85322,7 +85460,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/SilentHotbar.kt",
-          "line": 74
+          "line": 86
         }
       }
     ],
@@ -85339,7 +85477,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/SilentHotbar.kt",
-          "line": 79
+          "line": 91
         }
       }
     ],
@@ -85356,7 +85494,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/SilentHotbar.kt",
-          "line": 68
+          "line": 80
         }
       }
     ],
@@ -85382,10 +85520,10 @@
             "vararg": false
           }
         ],
-        "returns": null,
+        "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/SilentHotbar.kt",
-          "line": 52
+          "line": 57
         }
       },
       {
@@ -85398,7 +85536,7 @@
           },
           {
             "name": "slot",
-            "type": "Int",
+            "type": "@Range(from = 0, to = Inventory.SELECTION_SIZE - 1L) Int",
             "nullable": false,
             "vararg": false
           },
@@ -85409,10 +85547,10 @@
             "vararg": false
           }
         ],
-        "returns": null,
+        "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/SilentHotbar.kt",
-          "line": 58
+          "line": 63
         }
       }
     ],
@@ -85447,7 +85585,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/SilentHotbar.kt",
-          "line": 94
+          "line": 112
         }
       }
     ],

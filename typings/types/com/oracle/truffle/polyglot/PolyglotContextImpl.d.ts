@@ -258,7 +258,6 @@ export class PolyglotContextImpl extends Object implements PolyglotImpl$VMObject
     // private shouldCacheThreadInfo(): boolean;
     shouldThrowException(mustSucceed: boolean, t: Throwable, operationDescription: string): boolean;
     // private submitCancellationThreadLocalAction(futures: Future<void>[]): void;
-    toGuestValue(node: Node, hostValue: Object, asValue: boolean): Object;
     toString(): string;
     // private transitionToMultiThreaded(mustSucceed: boolean): void;
     // private unsetInterrupting(): void;

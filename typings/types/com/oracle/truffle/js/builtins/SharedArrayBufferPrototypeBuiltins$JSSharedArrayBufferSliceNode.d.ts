@@ -21,7 +21,7 @@ export abstract class SharedArrayBufferPrototypeBuiltins$JSSharedArrayBufferSlic
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
-    // private constructNewSharedArrayBuffer(thisObj: JSDynamicObject, newLen: number, errorBranch: InlinedBranchProfile): JSArrayBufferObject$Shared;
+    // private constructNewSharedArrayBuffer(thisObj: JSArrayBufferObject$Shared, newLen: number, errorBranch: InlinedBranchProfile): JSArrayBufferObject$Shared;
     sliceShared(thisObj: JSArrayBufferObject$Shared, begin0: Object, end0: Object, errorBranch: InlinedBranchProfile): JSDynamicObject;
     sliceSharedIntInt(thisObj: JSArrayBufferObject$Shared, begin: number, end: number, errorBranch: InlinedBranchProfile): JSDynamicObject;
 }

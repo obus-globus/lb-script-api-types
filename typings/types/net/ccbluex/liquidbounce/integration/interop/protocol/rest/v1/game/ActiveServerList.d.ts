@@ -37,7 +37,7 @@ export class ActiveServerList extends Object implements EventListener {
      * Mirrors vanilla's updateNetworkServers pattern: takeDirtyServers returns full list → full replacement.
      * Uses negative IDs (sorted by address) to avoid collision with regular server IDs.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt#L236 | src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt:236}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt#L240 | src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt:240}
      */
     getLanServers(): JsonObject[];
     // private maybeRePingLanServers(): void;

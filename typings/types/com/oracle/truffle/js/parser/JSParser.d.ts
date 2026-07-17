@@ -26,6 +26,7 @@ export interface JSParser extends Evaluator, Object{
     loadRequestedModules(realm: JSRealm, moduleRecord: CyclicModuleRecord, hostDefined: Object): JSPromiseObject;
     moduleEvaluation(realm: JSRealm, moduleRecord: CyclicModuleRecord): JSPromiseObject;
     moduleLinking(realm: JSRealm, moduleRecord: CyclicModuleRecord): void;
+    parseBytesModule(realm: JSRealm, source: Source): AbstractModuleRecord;
     parseDirectEval(context: JSContext, lastNode: Node, source: Source, currEnv: Object): ScriptNode;
     parseEval(context: JSContext, lastNode: Node, code: Source, activeScriptOrModule: ScriptOrModule): ScriptNode;
     parseExpression(context: JSContext, sourceString: string): Expression;
@@ -37,6 +38,7 @@ export interface JSParser extends Evaluator, Object{
     parseScript(context: JSContext, source: Source, snapshotProvider: SnapshotProvider): ScriptNode;
     parseScript(context: JSContext, source: Source, binary: ByteBuffer): ScriptNode;
     parseScript(context: JSContext, source: Source, prolog: string, epilog: string, isStrict: boolean): ScriptNode;
+    parseTextModule(realm: JSRealm, source: Source): AbstractModuleRecord;
     parseToJSON(context: JSContext, code: string, name: string, includeLoc: boolean): string;
     parseWasmModuleSource(realm: JSRealm, source: Source): AbstractModuleRecord;
 }

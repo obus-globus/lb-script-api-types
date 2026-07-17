@@ -26,7 +26,7 @@ import type { SequentialMatchers$Builder } from '../../../../../../com/oracle/tr
 import type { TRegexDFAExecutorNode } from '../../../../../../com/oracle/truffle/regex/tregex/nodes/dfa/TRegexDFAExecutorNode.d.ts'
 import type { TRegexDFAExecutorProperties } from '../../../../../../com/oracle/truffle/regex/tregex/nodes/dfa/TRegexDFAExecutorProperties.d.ts'
 import type { Counter } from '../../../../../../com/oracle/truffle/regex/tregex/parser/Counter.d.ts'
-import type { Encodings$Encoding } from '../../../../../../com/oracle/truffle/regex/tregex/string/Encodings$Encoding.d.ts'
+import type { Encoding } from '../../../../../../com/oracle/truffle/regex/tregex/string/Encoding.d.ts'
 import type { JsonConvertible } from '../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonConvertible.d.ts'
 import type { JsonValue } from '../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonValue.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -98,7 +98,7 @@ export class DFAGenerator extends Object implements JsonConvertible {
     getCompilationBuffer(): CompilationBuffer;
     getDebugDumpName(): string;
     getDebugDumpName(name: string): string;
-    // private getEncoding(): Encodings$Encoding;
+    // private getEncoding(): Encoding;
     getEntryStates(): DFAStateNodeBuilder[];
     // private getLazyTransitionBuilder(precedingTransitions: DFAStateTransitionBuilder): DFACaptureGroupLazyTransitionBuilder;
     // private getMaxOffsetAnchoredInitialState(): DFAStateNodeBuilder;

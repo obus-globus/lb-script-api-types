@@ -64,7 +64,7 @@ export class DecimalFormatSymbols extends Object implements Serializable, Clonea
     // private ulocale: ULocale;
     // private validLocale: ULocale;
     readonly zeroDigit: string;
-    clone(): Object;
+    clone(): DecimalFormatSymbols;
     equals(obj: Object | null): boolean;
     getApproximatelySignString(): string;
     getCodePointZero(): number;

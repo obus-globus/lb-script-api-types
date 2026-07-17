@@ -28,9 +28,9 @@ export class ConstructorBuiltinsFactory$ConstructArrayBufferNodeGen extends Cons
     // private arguments1_: JavaScriptNode;
     // private arguments2_: JavaScriptNode;
     // private bufferInterop: InteropLibrary;
-    // private constructFromLength_getMaxByteLengthOption_: ConstructorBuiltins$GetArrayBufferMaxByteLengthOption;
-    // private constructFromLength_toIndexNode_: JSToIndexNode;
+    // private getMaxByteLengthOption: ConstructorBuiltins$GetArrayBufferMaxByteLengthOption;
     // private state_0_: number;
+    // private toIndexNode: JSToIndexNode;
     execute(frameValue: VirtualFrame): Object;
     // private executeAndSpecialize(arguments0Value: Object, arguments1Value: Object, arguments2Value: Object): JSDynamicObject;
     getArguments(): JavaScriptNode[];

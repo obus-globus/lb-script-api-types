@@ -1,7 +1,7 @@
 import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { DynamicObjectLibrary } from '../../../../../../com/oracle/truffle/api/object/DynamicObjectLibrary.d.ts'
+import type { DynamicObject$PutNode } from '../../../../../../com/oracle/truffle/api/object/DynamicObject$PutNode.d.ts'
 import type { ObjectLiteralNode$ClassElementNode } from '../../../../../../com/oracle/truffle/js/nodes/access/ObjectLiteralNode$ClassElementNode.d.ts'
 import type { ObjectLiteralNode$ObjectLiteralMemberNode } from '../../../../../../com/oracle/truffle/js/nodes/access/ObjectLiteralNode$ObjectLiteralMemberNode.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
@@ -11,8 +11,8 @@ export abstract class ObjectLiteralNode$CachingObjectLiteralMemberNode extends O
     static cloneUninitialized(parammembers: ObjectLiteralNode$ObjectLiteralMemberNode[], parammaterializedTags: Class<Tag>[]): ObjectLiteralNode$ObjectLiteralMemberNode[];
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(name: Object, isStatic: boolean, attributes: number, isFieldOrStaticBlock: boolean)
-    // private dynamicObjectLibrary: DynamicObjectLibrary;
     // private name: Object;
-    dynamicObjectLibrary(): DynamicObjectLibrary;
+    // private putNode: DynamicObject$PutNode;
     evaluateKey(frame: VirtualFrame): Object;
+    putNode(): DynamicObject$PutNode;
 }

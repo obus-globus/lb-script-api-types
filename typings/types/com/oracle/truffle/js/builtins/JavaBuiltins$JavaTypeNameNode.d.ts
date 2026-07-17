@@ -19,7 +19,6 @@ export abstract class JavaBuiltins$JavaTypeNameNode extends JSBuiltinNode {
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
-    isJavaInteropClass(obj: Object, typeInterop: InteropLibrary): boolean;
     nonType(value: Object): Object;
     typeNameJavaInteropClass(type: Object, typeInterop: InteropLibrary, importValue: ImportValueNode): Object;
 }

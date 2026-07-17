@@ -8,7 +8,7 @@ import type { CompilationBuffer } from '../../../../../../com/oracle/truffle/reg
 import type { RegexLexer$ClassSetOperator } from '../../../../../../com/oracle/truffle/regex/tregex/parser/RegexLexer$ClassSetOperator.d.ts'
 import type { RegexLexer$ParseGroupNameResult } from '../../../../../../com/oracle/truffle/regex/tregex/parser/RegexLexer$ParseGroupNameResult.d.ts'
 import type { Token } from '../../../../../../com/oracle/truffle/regex/tregex/parser/Token.d.ts'
-import type { Encodings$Encoding } from '../../../../../../com/oracle/truffle/regex/tregex/string/Encodings$Encoding.d.ts'
+import type { Encoding } from '../../../../../../com/oracle/truffle/regex/tregex/string/Encoding.d.ts'
 import type { Runnable } from '../../../../../../java/lang/Runnable.d.ts'
 import type { IntPredicate } from '../../../../../../java/util/function/IntPredicate.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -20,12 +20,13 @@ export abstract class RegexLexer extends Object {
     constructor(source: RegexSource, compilationBuffer: CompilationBuffer)
     // private charClassCurAtomStartIndex: number;
     // private charClassEmitInvalidRangeAtoms: number;
+    // private classSetNesting: number;
     readonly compilationBuffer: CompilationBuffer;
     // private curCharClass: Range[];
     readonly curCharClassInverted: boolean;
     // private curCharClassStartIndex: number;
     // private curStartIndex: number;
-    // private encoding: Encodings$Encoding;
+    readonly encoding: Encoding;
     // private identifiedAllGroups: boolean;
     // private nGroups: number;
     namedCaptureGroups: { [key: string]: number[] };
@@ -75,6 +76,7 @@ export abstract class RegexLexer extends Object {
     finishSurrogatePair(c: string): number;
     getCompilationBuffer(): CompilationBuffer;
     getDotCodePointSet(): (Object | null)[];
+    getEncoding(): Encoding;
     getIdContinue(): (Object | null)[];
     getIdStart(): (Object | null)[];
     getLastAtomPosition(): number;
@@ -94,7 +96,7 @@ export abstract class RegexLexer extends Object {
     handleBoundedQuantifierOutOfOrder(): RegexSyntaxException;
     handleBoundedQuantifierOverflow(min: number, max: number): Token;
     handleBoundedQuantifierOverflowMin(min: number, max: number): Token;
-    handleCCRangeOutOfOrder(startPos: number): RegexSyntaxException;
+    handleCCRangeOutOfOrder(startPos: number, lo: number, hi: number): ClassSetContents;
     handleCCRangeWithPredefCharClass(startPos: number, firstAtom: ClassSetContents, secondAtom: ClassSetContents): void;
     handleComplementOfStringSet(): RegexSyntaxException;
     handleGroupRedefinition(name: string, newId: number, oldId: number): void;
@@ -118,7 +120,7 @@ export abstract class RegexLexer extends Object {
     // private identifyCaptureGroups(): void;
     inCharacterClass(): boolean;
     isCurCharClassInverted(): boolean;
-    // private isEscapeCharClass(c: string): boolean;
+    isEscapeCharClass(c: string): boolean;
     isPredefCharClass(c: string): boolean;
     // private isQuantifierOutOfOrder(parsedMin: number, parsedMax: number, startMin: number, lengthMin: number, lengthMax: number): boolean;
     literalChar(codePoint: number): Token;

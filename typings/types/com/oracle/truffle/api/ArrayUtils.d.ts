@@ -1,5 +1,6 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ArrayUtils extends Object {
+    static arraycopy(paramsource: number[], paramsourceIndex: number, paramdestination: number[], paramdestinationIndex: number, paramlength: number): void;
     static indexOf(paramarray: number[], paramfromIndex: number, parammaxIndex: number, ...paramvalues: number[]): number;
     static indexOf(paramarray: string[], paramfromIndex: number, parammaxIndex: number, ...paramvalues: string[]): number;
     static indexOf(paramstring: string, paramfromIndex: number, parammaxIndex: number, ...paramvalues: string[]): number;

@@ -22,6 +22,7 @@ export class OracleDBRegexLexer extends RegexLexer {
     caseFoldUnfold(charClass: Range[]): void;
     checkClassSetCharacter(codePoint: number): void;
     complementClassSet(codePointSet: (Object | null)[]): (Object | null)[];
+    emulateUTF16RangeQuirk(): boolean;
     featureEnabledAZPositionAssertions(): boolean;
     featureEnabledBoundedQuantifierEmptyMin(): boolean;
     featureEnabledCCRangeWithPredefCharClass(): boolean;
@@ -52,7 +53,7 @@ export class OracleDBRegexLexer extends RegexLexer {
     handleBoundedQuantifierOutOfOrder(): RegexSyntaxException;
     handleBoundedQuantifierOverflow(min: number, max: number): Token;
     handleBoundedQuantifierOverflowMin(min: number, max: number): Token;
-    handleCCRangeOutOfOrder(startPos: number): RegexSyntaxException;
+    handleCCRangeOutOfOrder(startPos: number, lo: number, hi: number): ClassSetContents;
     handleCCRangeWithPredefCharClass(startPos: number, firstAtom: ClassSetContents, secondAtom: ClassSetContents): void;
     handleComplementOfStringSet(): RegexSyntaxException;
     handleGroupRedefinition(name: string, newId: number, oldId: number): void;

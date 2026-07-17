@@ -23,6 +23,7 @@ export class RubyRegexParser extends Object implements RegexParser, RegexValidat
     private constructor(source: RegexSource, astBuilder: RegexASTBuilder)
     // private astBuilder: RegexASTBuilder;
     // private canHaveQuantifier: boolean;
+    // private charClassNesting: number;
     // private charClassPool: Range[][];
     // private charClassTmp: Range[];
     // private codepointsBuffer: number[];
@@ -39,6 +40,7 @@ export class RubyRegexParser extends Object implements RegexParser, RegexValidat
     // private lookbehindDepth: number;
     readonly namedCaptureGroups: { [key: string]: number[] };
     // private numberOfCaptureGroups: number;
+    // private parseDepth: number;
     // private position: number;
     // private silent: boolean;
     // private startsWithBeginningAnchor: boolean;
@@ -76,6 +78,7 @@ export class RubyRegexParser extends Object implements RegexParser, RegexValidat
     // private characterEscape(): Optional<number>;
     // private classEscape(): Optional<number>;
     // private collectCharClass(): void;
+    // private collectCharClassBody(): void;
     // private collectPosixCharClass(): RubyRegexParser$PosixClassParseResult;
     // private comment(): void;
     // private conditionalBackReference(): void;

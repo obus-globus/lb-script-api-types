@@ -7,6 +7,7 @@ import type { TemporalPlainDatePrototypeBuiltins$JSTemporalPlainDateToLocaleStri
 import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { JSBuiltin } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
+import type { InitializeDateTimeFormatNode } from '../../../../../../com/oracle/truffle/js/nodes/intl/InitializeDateTimeFormatNode.d.ts'
 import type { TemporalGetOptionNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/TemporalGetOptionNode.d.ts'
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
 import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
@@ -27,8 +28,11 @@ export class TemporalPlainDatePrototypeBuiltinsFactory$JSTemporalPlainDateToLoca
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     private constructor(context: JSContext, builtin: JSBuiltin, arguments: JavaScriptNode[])
     // private arguments0_: JavaScriptNode;
+    // private arguments1_: JavaScriptNode;
+    // private arguments2_: JavaScriptNode;
     // private state_0_: number;
+    // private toLocaleString_initDateTimeFormatNode_: InitializeDateTimeFormatNode;
     execute(frameValue: VirtualFrame): Object;
-    // private executeAndSpecialize(arguments0Value: Object): TruffleString;
+    // private executeAndSpecialize(arguments0Value: Object, arguments1Value: Object, arguments2Value: Object): TruffleString;
     getArguments(): JavaScriptNode[];
 }

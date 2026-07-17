@@ -18,6 +18,7 @@ export class JavaScriptTranslator extends GraalJSTranslator {
     static FILE__: string;
     static IMPORT: string;
     static IMPORT_META: string;
+    static INVALID_LHS: TruffleString;
     static LINE__: string;
     static SUPER_CALLED_TWICE: TruffleString;
     static UNSUPPORTED_REFERENCE_TO_SUPER: TruffleString;
