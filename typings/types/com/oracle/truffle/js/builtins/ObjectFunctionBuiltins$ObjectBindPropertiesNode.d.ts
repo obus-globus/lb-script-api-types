@@ -1,7 +1,6 @@
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { InteropLibrary } from '../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { TruffleString } from '../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
 import type { ObjectPrototypeBuiltins$ObjectOperation } from '../../../../../com/oracle/truffle/js/builtins/ObjectPrototypeBuiltins$ObjectOperation.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { EnumerableOwnPropertyNamesNode } from '../../../../../com/oracle/truffle/js/nodes/access/EnumerableOwnPropertyNamesNode.d.ts'
@@ -27,8 +26,6 @@ export abstract class ObjectFunctionBuiltins$ObjectBindPropertiesNode extends Ob
     // private enumerableOwnPropertyNamesNode: EnumerableOwnPropertyNamesNode;
     // private sourceProfile: JSClassProfile;
     // private targetProfile: JSClassProfile;
-    // private bindForeignBeanProperty(target: JSObject, source: Object, stringKey: string, interop: InteropLibrary): void;
-    // private bindForeignProperty(target: JSObject, source: Object, stringKey: string, tStringKey: TruffleString, extensible: boolean): void;
     bindPropertiesFromForeign(target: JSObject, source: Object, interop: InteropLibrary, members: InteropLibrary): JSDynamicObject;
     bindPropertiesFromJSDynamicObject(target: JSObject, source: JSDynamicObject): JSDynamicObject;
     bindPropertiesFromOther(target: JSObject, source: Object): JSDynamicObject;

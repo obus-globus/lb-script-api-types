@@ -1,15 +1,17 @@
+import type { TruffleLanguage } from '../../../../../../com/oracle/truffle/api/TruffleLanguage.d.ts'
 import type { InteropLibrary } from '../../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { TruffleObject } from '../../../../../../com/oracle/truffle/api/interop/TruffleObject.d.ts'
+import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class TopScopeObject extends Object implements TruffleObject {
     static empty(): TopScopeObject;
     constructor(objects: Object[])
     // private objects: Object[];
     // private scopeIndex: number;
-    getLanguageId(): string;
+    getLanguage(): Class<TruffleLanguage<Object>>;
     getMembers(includeInternal: boolean, interop: InteropLibrary): Object;
     getScopeParent(): Object;
-    hasLanguageId(): boolean;
+    hasLanguage(): boolean;
     hasMemberReadSideEffects(member: string, interop: InteropLibrary): boolean;
     hasMemberWriteSideEffects(member: string, interop: InteropLibrary): boolean;
     hasMembers(): boolean;

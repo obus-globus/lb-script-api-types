@@ -1,16 +1,11 @@
 import type { VirtualFrame } from '../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
-import type { InteropLibrary } from '../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { PromiseFunctionBuiltins$PromiseCombinatorNode } from '../../../../../com/oracle/truffle/js/builtins/PromiseFunctionBuiltins$PromiseCombinatorNode.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
-import type { GetMethodNode } from '../../../../../com/oracle/truffle/js/nodes/access/GetMethodNode.d.ts'
-import type { PropertyGetNode } from '../../../../../com/oracle/truffle/js/nodes/access/PropertyGetNode.d.ts'
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
-import type { JSFunctionCallNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSFunctionCallNode.d.ts'
 import type { PerformPromiseCombinatorNode } from '../../../../../com/oracle/truffle/js/nodes/promise/PerformPromiseCombinatorNode.d.ts'
-import type { IsCallableNode } from '../../../../../com/oracle/truffle/js/nodes/unary/IsCallableNode.d.ts'
 import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -28,11 +23,11 @@ export class PromiseFunctionBuiltinsFactory$PromiseCombinatorNodeGen extends Pro
     private constructor(context: JSContext, builtin: JSBuiltin, performPromiseOp: PerformPromiseCombinatorNode, arguments: JavaScriptNode[])
     // private arguments0_: JavaScriptNode;
     // private arguments1_: JavaScriptNode;
-    // private object_getIteratorNode__field1_: GetMethodNode;
-    // private object_getIteratorNode__field2_: IsCallableNode;
-    // private object_getIteratorNode__field3_: JSFunctionCallNode;
-    // private object_getIteratorNode__field4_: PropertyGetNode;
-    // private object_getIteratorNode__field5_: InteropLibrary;
+    // private object_getIteratorNode__field1_: Node;
+    // private object_getIteratorNode__field2_: Node;
+    // private object_getIteratorNode__field3_: Node;
+    // private object_getIteratorNode__field4_: Node;
+    // private object_getIteratorNode__field5_: Node;
     // private state_0_: number;
     execute(frameValue: VirtualFrame): Object;
     // private executeAndSpecialize(arguments0Value: Object, arguments1Value: Object): Object;

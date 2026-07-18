@@ -19,7 +19,6 @@ export class PolyglotValueDispatch$InteropValue extends PolyglotValueDispatch {
     // private asClassLiteral: CallTarget;
     // private asDate: CallTarget;
     // private asDuration: CallTarget;
-    // private asHostObject: CallTarget;
     // private asInstant: CallTarget;
     // private asNativePointer: CallTarget;
     // private asTime: CallTarget;
@@ -48,7 +47,6 @@ export class PolyglotValueDispatch$InteropValue extends PolyglotValueDispatch {
     // private getMetaParents: CallTarget;
     // private getMetaQualifiedName: CallTarget;
     // private getMetaSimpleName: CallTarget;
-    // private getStaticScope: CallTarget;
     // private hasArrayElements: CallTarget;
     // private hasBufferElements: CallTarget;
     // private hasHashEntries: CallTarget;
@@ -58,14 +56,12 @@ export class PolyglotValueDispatch$InteropValue extends PolyglotValueDispatch {
     // private hasMember: CallTarget;
     // private hasMembers: CallTarget;
     // private hasMetaParents: CallTarget;
-    // private hasStaticScope: CallTarget;
     // private invoke: CallTarget;
     // private invokeNoArgs: CallTarget;
     // private isBufferWritable: CallTarget;
     // private isDate: CallTarget;
     // private isDuration: CallTarget;
     // private isException: CallTarget;
-    // private isHostObject: CallTarget;
     // private isIterator: CallTarget;
     // private isMetaInstance: CallTarget;
     // private isMetaObject: CallTarget;
@@ -146,7 +142,6 @@ export class PolyglotValueDispatch$InteropValue extends PolyglotValueDispatch {
     getMetaParents(languageContext: Object, receiver: Object): Object;
     getMetaQualifiedName(languageContext: Object, receiver: Object): string;
     getMetaSimpleName(languageContext: Object, receiver: Object): string;
-    getStaticScope(languageContext: Object, receiver: Object): Object;
     hasArrayElements(languageContext: Object, receiver: Object): boolean;
     hasBufferElements(languageContext: Object, receiver: Object): boolean;
     hasHashEntries(languageContext: Object, receiver: Object): boolean;
@@ -156,7 +151,6 @@ export class PolyglotValueDispatch$InteropValue extends PolyglotValueDispatch {
     hasMember(languageContext: Object, receiver: Object, key: string): boolean;
     hasMembers(languageContext: Object, receiver: Object): boolean;
     hasMetaParents(languageContext: Object, receiver: Object): boolean;
-    hasStaticScope(languageContext: Object, receiver: Object): boolean;
     invoke(languageContext: Object, receiver: Object, identifier: string): Object;
     invoke(languageContext: Object, receiver: Object, identifier: string, arguments: Object[]): Object;
     isBoolean(languageContext: Object, receiver: Object): boolean;

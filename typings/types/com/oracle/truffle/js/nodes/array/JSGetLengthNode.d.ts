@@ -1,6 +1,5 @@
 import type { InteropLibrary } from '../../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { TruffleString$ToJavaStringNode } from '../../../../../../com/oracle/truffle/api/strings/TruffleString$ToJavaStringNode.d.ts'
 import type { JavaScriptBaseNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptBaseNode.d.ts'
 import type { PropertyGetNode } from '../../../../../../com/oracle/truffle/js/nodes/access/PropertyGetNode.d.ts'
 import type { ArrayLengthNode$ArrayLengthReadNode } from '../../../../../../com/oracle/truffle/js/nodes/array/ArrayLengthNode$ArrayLengthReadNode.d.ts'
@@ -24,7 +23,7 @@ export abstract class JSGetLengthNode extends JavaScriptBaseNode {
     executeLong(value: Object): number;
     getArrayLength(target: JSArrayObject, arrayLengthReadNode: ArrayLengthNode$ArrayLengthReadNode): number;
     getArrayLengthInt(target: JSArrayObject, arrayLengthReadNode: ArrayLengthNode$ArrayLengthReadNode): number;
-    getLengthForeign(target: Object, interop: InteropLibrary, importValueNode: ImportValueNode, toJavaStringNode: TruffleString$ToJavaStringNode): number;
+    getLengthForeign(target: Object, interop: InteropLibrary, importValueNode: ImportValueNode): number;
     getNonArrayLength(target: JSDynamicObject, getLengthPropertyNode: PropertyGetNode): number;
     // private getToLengthNode(): JSToLengthNode;
     // private getUInt32Node(): JSToUInt32Node;

@@ -11,7 +11,6 @@ import type { PolyglotLanguageInstance } from '../../../../com/oracle/truffle/po
 import type { PolyglotSharingLayer$Shared } from '../../../../com/oracle/truffle/polyglot/PolyglotSharingLayer$Shared.d.ts'
 import type { PolyglotSourceCache } from '../../../../com/oracle/truffle/polyglot/PolyglotSourceCache.d.ts'
 import type { AssertionError } from '../../../../java/lang/AssertionError.d.ts'
-import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class PolyglotSharingLayer extends Object {
@@ -23,19 +22,16 @@ export class PolyglotSharingLayer extends Object {
     allocateHostLanguage(language: PolyglotLanguage): PolyglotLanguageInstance;
     allocateInstance(context: PolyglotContextImpl, language: PolyglotLanguage): PolyglotLanguageInstance;
     claimLayerForContext(sharableLayer: PolyglotSharingLayer, context: PolyglotContextImpl, requestingLanguages: PolyglotLanguage[]): boolean;
-    close(): void;
     // private collectLanguageOptions(config: PolyglotContextConfig, forcedLanguages: PolyglotLanguage[]): JavaMap<PolyglotLanguage, OptionValuesImpl>;
     equals(obj: Object | null): boolean;
     freeSharingLayer(context: PolyglotContextImpl): void;
     getContextPolicy(): TruffleLanguage$ContextPolicy;
     getFastThreadLocals(): Object[];
     getInstance(language: PolyglotLanguage): PolyglotLanguageInstance;
-    getOrCreateBytecodeData<T extends unknown>(create: (param0: Object) => T): T;
     getSingleConstantContext(): PolyglotContextImpl;
     getSingleConstantLanguageContext(language: PolyglotLanguage): PolyglotLanguageContext;
     getSourceCache(): PolyglotSourceCache;
     hashCode(): number;
-    initializeInstructionTracers(s: PolyglotSharingLayer$Shared): void;
     isClaimed(): boolean;
     isSingleContext(): boolean;
     listCachedSources(sources: Object[]): void;

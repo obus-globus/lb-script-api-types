@@ -42,7 +42,6 @@ import type { RuntimeException } from '../../../../java/lang/RuntimeException.d.
 import type { Thread } from '../../../../java/lang/Thread.d.ts'
 import type { Reference } from '../../../../java/lang/ref/Reference.d.ts'
 import type { ReferenceQueue } from '../../../../java/lang/ref/ReferenceQueue.d.ts'
-import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
 import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { ZoneId } from '../../../../java/time/ZoneId.d.ts'
 import type { AtomicBoolean } from '../../../../java/util/concurrent/atomic/AtomicBoolean.d.ts'
@@ -57,8 +56,6 @@ import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 import type { OptionDescriptor } from '../../../../org/graalvm/options/OptionDescriptor.d.ts'
 import type { Context } from '../../../../org/graalvm/polyglot/Context.d.ts'
 import type { Engine } from '../../../../org/graalvm/polyglot/Engine.d.ts'
-import type { Engine$CancellationCallback } from '../../../../org/graalvm/polyglot/Engine$CancellationCallback.d.ts'
-import type { PolyglotException } from '../../../../org/graalvm/polyglot/PolyglotException.d.ts'
 import type { SandboxPolicy } from '../../../../org/graalvm/polyglot/SandboxPolicy.d.ts'
 import type { AbstractPolyglotImpl$APIAccess } from '../../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl$APIAccess.d.ts'
 import type { AbstractPolyglotImpl$AbstractHostLanguageService } from '../../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl$AbstractHostLanguageService.d.ts'
@@ -68,7 +65,7 @@ import type { MessageTransport } from '../../../../org/graalvm/polyglot/io/Messa
 import type { ProcessHandler } from '../../../../org/graalvm/polyglot/io/ProcessHandler.d.ts'
 export class PolyglotEngineImpl extends Object implements PolyglotImpl$VMObject {
     constructor(prototype: PolyglotEngineImpl)
-    constructor(impl: PolyglotImpl, sandboxPolicy: SandboxPolicy, permittedLanguages: string[], out: DispatchOutputStream, err: DispatchOutputStream, in_: InputStream, engineOptions: OptionValuesImpl, logLevels: JavaMap<string, Level>, engineLoggerSupplier: PolyglotLoggers$EngineLoggerProvider, options: JavaMap<string, string>, systemPropertiesOptions: JavaMap<string, string>, useSystemProperties: boolean, allowExperimentalOptions: boolean, boundEngine: boolean, preInitialization: boolean, messageTransport: MessageTransport, logHandler: AbstractPolyglotImpl$LogHandler, hostImpl: TruffleLanguage<Object>, hostLanguageOnly: boolean, usesPolyglotIsolate: boolean, polyglotHostService: AbstractPolyglotImpl$AbstractPolyglotHostService, exceptionHandler: (param0: PolyglotException) => void)
+    constructor(impl: PolyglotImpl, sandboxPolicy: SandboxPolicy, permittedLanguages: string[], out: DispatchOutputStream, err: DispatchOutputStream, in_: InputStream, engineOptions: OptionValuesImpl, logLevels: JavaMap<string, Level>, engineLoggerSupplier: PolyglotLoggers$EngineLoggerProvider, options: JavaMap<string, string>, allowExperimentalOptions: boolean, boundEngine: boolean, preInitialization: boolean, messageTransport: MessageTransport, logHandler: AbstractPolyglotImpl$LogHandler, hostImpl: TruffleLanguage<Object>, hostLanguageOnly: boolean, polyglotHostService: AbstractPolyglotImpl$AbstractPolyglotHostService)
     // private activeSystemThreads: SystemThread$InstrumentSystemThread[];
     // private allOptions: OptionDescriptor[];
     // private allSourceOptions: OptionDescriptor[];
@@ -92,7 +89,6 @@ export class PolyglotEngineImpl extends Object implements PolyglotImpl$VMObject 
     // private engineLoggers: Object;
     // private engineOptionValues: OptionValuesImpl;
     // private err: DispatchOutputStream;
-    // private exceptionHandler: (param0: PolyglotException) => void;
     // private fileTypeDetectorsSupplier: () => JavaMap<string, TruffleFile$FileTypeDetector[]>;
     // private host: AbstractPolyglotImpl$AbstractHostLanguageService;
     // private hostLanguage: PolyglotLanguage;
@@ -130,7 +126,6 @@ export class PolyglotEngineImpl extends Object implements PolyglotImpl$VMObject 
     // private sourceCacheStatisticsListener: SourceCacheStatisticsListener;
     // private specializationStatistics: SpecializationStatistics;
     // private storeEngine: boolean;
-    // private usesPolyglotIsolate: boolean;
     // private warnedVirtualThreadSupport: AtomicBoolean;
     // private weakAPI: Reference<Engine>;
     addContext(context: PolyglotContextImpl): void;
@@ -140,7 +135,7 @@ export class PolyglotEngineImpl extends Object implements PolyglotImpl$VMObject 
     checkState(): void;
     claimSharingLayer(layer: PolyglotSharingLayer, context: PolyglotContextImpl, requestingLanguage: PolyglotLanguage): void;
     collectAliveContexts(): PolyglotContextImpl[];
-    createContext(engineAPI: Engine, contextSandboxPolicy: SandboxPolicy, configOut: OutputStream, configErr: OutputStream, configIn: InputStream, allowHostLookup: boolean, hostAccess: Object, polyglotAccess: Object, allowNativeAccess: boolean, allowCreateThread: boolean, threadAccessDeniedHandler: (param0: string) => void, allowHostClassLoading: boolean, allowContextOptions: boolean, allowExperimentalOptions: boolean, classFilter: (param0: string) => boolean, options: JavaMap<string, string>, arguments: JavaMap<string, string[]>, onlyLanguagesArray: string[], ioAccess: Object, handler: Object, allowCreateProcess: boolean, processHandler: ProcessHandler, environmentAccess: Object, environment: JavaMap<string, string>, zone: ZoneId, limitsImpl: Object, currentWorkingDirectory: string, tmpDir: string, hostClassLoader: ClassLoader, allowValueSharing: boolean, useSystemExit: boolean, registerInActiveContexts: boolean, exceptionHandler: (param0: PolyglotException) => void): Context;
+    createContext(engineAPI: Engine, contextSandboxPolicy: SandboxPolicy, configOut: OutputStream, configErr: OutputStream, configIn: InputStream, allowHostLookup: boolean, hostAccess: Object, polyglotAccess: Object, allowNativeAccess: boolean, allowCreateThread: boolean, threadAccessDeniedHandler: (param0: string) => void, allowHostClassLoading: boolean, allowContextOptions: boolean, allowExperimentalOptions: boolean, classFilter: (param0: string) => boolean, options: JavaMap<string, string>, arguments: JavaMap<string, string[]>, onlyLanguagesArray: string[], ioAccess: Object, handler: Object, allowCreateProcess: boolean, processHandler: ProcessHandler, environmentAccess: Object, environment: JavaMap<string, string>, zone: ZoneId, limitsImpl: Object, currentWorkingDirectory: string, tmpDir: string, hostClassLoader: ClassLoader, allowValueSharing: boolean, useSystemExit: boolean, registerInActiveContexts: boolean): Context;
     // private createInstruments(instrumentsOptions: JavaMap<PolyglotInstrument, JavaMap<string, string>>, deprecatedDescriptors: OptionDescriptor[]): void;
     // private createLanguage(cache: LanguageCache, index: number, initError: RuntimeException): PolyglotLanguage;
     // private createLanguageStaticIndex(): PolyglotLanguage[];
@@ -173,11 +168,11 @@ export class PolyglotEngineImpl extends Object implements PolyglotImpl$VMObject 
     getImpl(): PolyglotImpl;
     getInstruments(): JavaMap<string, PolyglotInstrument>;
     getLanguage<T extends TruffleLanguage<Object>>(languageClass: Class<T>, fail: boolean): PolyglotLanguage;
-    getLanguage(languageId: string, fail: boolean): PolyglotLanguage;
     getOptions(): OptionDescriptor[];
     getOrCreateEngineLoggers(): Object;
     getPreInitializedContext(): PolyglotContextImpl;
     getPublicLanguages(): JavaMap<string, PolyglotLanguage>;
+    getVersion(): string;
     // private initializeEngineLogger(supplier: (param0: string) => TruffleLogger, levels: JavaMap<string, Level>): TruffleLogger;
     // private initializeInstruments(infos: JavaMap<string, InstrumentInfo>): JavaMap<string, PolyglotInstrument>;
     // private initializeLanguages(infos: JavaMap<string, LanguageInfo>): JavaMap<string, PolyglotLanguage>;
@@ -196,11 +191,9 @@ export class PolyglotEngineImpl extends Object implements PolyglotImpl$VMObject 
     notifyCreated(): void;
     onEngineCollected(): void;
     onVMShutdown(): void;
-    // private parseAllOptions(targetOptions: OptionValuesImpl, unparsedOptions: JavaMap<string, string>, allowExperimental: boolean, deprecatedDescriptors: OptionDescriptor[]): void;
-    // private parseOptions(options: JavaMap<string, string>, systemPropertiesOptions: JavaMap<string, string>, useSystemProperties: boolean, languagesOptions: JavaMap<PolyglotLanguage, JavaMap<string, string>>, instrumentsOptions: JavaMap<PolyglotInstrument, JavaMap<string, string>>): void;
-    // private parseOptionsInto(options: JavaMap<string, string>, languagesOptions: JavaMap<PolyglotLanguage, JavaMap<string, string>>, instrumentsOptions: JavaMap<PolyglotInstrument, JavaMap<string, string>>, constantOptionsOnly: boolean): void;
-    patch(newSandboxPolicy: SandboxPolicy, newOut: DispatchOutputStream, newErr: DispatchOutputStream, newIn: InputStream, engineOptions: OptionValuesImpl, newLogConfig: PolyglotEngineImpl$LogConfig, logSupplier: PolyglotLoggers$EngineLoggerProvider, newOptions: JavaMap<string, string>, newSystemPropertiesOptions: JavaMap<string, string>, newUseSystemProperties: boolean, newAllowExperimentalOptions: boolean, newBoundEngine: boolean, newLogHandler: AbstractPolyglotImpl$LogHandler, newHostLanguage: TruffleLanguage<Object>, newUsesPolyglotIsolate: boolean, newPolyglotHostService: AbstractPolyglotImpl$AbstractPolyglotHostService, localExceptionHandler: (param0: PolyglotException) => void): boolean;
-    persistCache(callback: () => boolean): ByteBuffer;
+    // private parseAllOptions(targetOptions: OptionValuesImpl, unparsedOptions: JavaMap<string, string>, deprecatedDescriptors: OptionDescriptor[]): void;
+    // private parseOptions(options: JavaMap<string, string>, languagesOptions: JavaMap<PolyglotLanguage, JavaMap<string, string>>, instrumentsOptions: JavaMap<PolyglotInstrument, JavaMap<string, string>>): void;
+    patch(newSandboxPolicy: SandboxPolicy, newOut: DispatchOutputStream, newErr: DispatchOutputStream, newIn: InputStream, engineOptions: OptionValuesImpl, newLogConfig: PolyglotEngineImpl$LogConfig, logSupplier: PolyglotLoggers$EngineLoggerProvider, newOptions: JavaMap<string, string>, newAllowExperimentalOptions: boolean, newBoundEngine: boolean, newLogHandler: AbstractPolyglotImpl$LogHandler, newHostLanguage: TruffleLanguage<Object>, newPolyglotHostService: AbstractPolyglotImpl$AbstractPolyglotHostService): boolean;
     preInitialize(): void;
     printDeprecatedOptionsWarning(descriptors: OptionDescriptor[]): void;
     removeContext(context: PolyglotContextImpl): void;
@@ -215,7 +208,6 @@ export class PolyglotEngineImpl extends Object implements PolyglotImpl$VMObject 
     storeCache(targetPath: Path, cancelledWord: number): boolean;
     // private throwNotInstalled(id: string, allLanguages: string[]): RuntimeException;
     // private validateSandbox(): void;
-    // private validateStoreCacheState(): void;
     validateVirtualThreadCreation(): void;
     // private visitLanguage(initErrors: JavaMap<string, RuntimeException>, cachedLanguages: JavaMap<string, LanguageCache>, serializedLanguages: LanguageCache[], language: LanguageCache): void;
     // private visitLanguageImpl(visitedIds: string[], initErrors: JavaMap<string, RuntimeException>, cachedLanguages: JavaMap<string, LanguageCache>, serializedLanguages: LanguageCache[], language: LanguageCache): void;

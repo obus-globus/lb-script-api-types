@@ -5,6 +5,7 @@ import type { LinkOption } from '../../../../java/nio/file/LinkOption.d.ts'
 import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { FileAttribute } from '../../../../java/nio/file/attribute/FileAttribute.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { AbstractPolyglotImpl } from '../../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl.d.ts'
 import type { FileSystem } from '../../../../org/graalvm/polyglot/io/FileSystem.d.ts'
 export interface FileSystems$PolyglotFileSystem extends Object, FileSystem{
     copy(source: Path, target: Path, ...options: CopyOption[]): void;
@@ -23,7 +24,7 @@ export interface FileSystems$PolyglotFileSystem extends Object, FileSystem{
     hasNoAccess(): boolean;
     isFileStoreReadOnly(path: Path): boolean;
     isHost(): boolean;
-    isInternal(): boolean;
+    isInternal(polyglot: AbstractPolyglotImpl): boolean;
     isSameFile(path1: Path, path2: Path, ...options: LinkOption[]): boolean;
     move(source: Path, target: Path, ...options: CopyOption[]): void;
     parsePath(uri: URI): Path;

@@ -4,6 +4,7 @@ import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class TemporalUtil$Unit extends Enum<TemporalUtil$Unit> {
     static AUTO: TemporalUtil$Unit;
     static DAY: TemporalUtil$Unit;
+    static EMPTY: TemporalUtil$Unit;
     static HOUR: TemporalUtil$Unit;
     static MICROSECOND: TemporalUtil$Unit;
     static MILLISECOND: TemporalUtil$Unit;
@@ -12,7 +13,6 @@ export class TemporalUtil$Unit extends Enum<TemporalUtil$Unit> {
     static NANOSECOND: TemporalUtil$Unit;
     static REQUIRED: TemporalUtil$Unit;
     static SECOND: TemporalUtil$Unit;
-    static UNSET: TemporalUtil$Unit;
     static VALUES: TemporalUtil$Unit[];
     static WEEK: TemporalUtil$Unit;
     static YEAR: TemporalUtil$Unit;
@@ -23,9 +23,8 @@ export class TemporalUtil$Unit extends Enum<TemporalUtil$Unit> {
     // private name: TruffleString;
     getLengthInNanoseconds(): number;
     isCalendarUnit(): boolean;
-    isDateTimeUnit(): boolean;
     isDateUnit(): boolean;
     isTimeUnit(): boolean;
     toTruffleString(): TruffleString;
-    name(): "UNSET" | "AUTO" | "YEAR" | "MONTH" | "WEEK" | "DAY" | "HOUR" | "MINUTE" | "SECOND" | "MILLISECOND" | "MICROSECOND" | "NANOSECOND";
+    name(): "EMPTY" | "AUTO" | "YEAR" | "MONTH" | "WEEK" | "DAY" | "HOUR" | "MINUTE" | "SECOND" | "MILLISECOND" | "MICROSECOND" | "NANOSECOND";
 }

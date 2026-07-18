@@ -8,7 +8,7 @@ export interface MeshDraw$VertexUploader extends Object{
      *
      * The returned slice's byte offset must be aligned to {@link VertexFormat.vertexSize} for {@link format}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt#L84 | src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt:84}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt#L84 | src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt:84}
      */
     upload(format: VertexFormat, data: ByteBuffer): GpuBufferSlice;
 }

@@ -5,6 +5,7 @@ export class TruffleStringFactory$FromByteArrayNodeGen extends TruffleString$Fro
     static create(): TruffleString$FromByteArrayNode;
     static getUncached(): TruffleString$FromByteArrayNode;
     private constructor()
+    // private fromBufferWithStringCompactionNode__field1_: number;
     // private state_0_: number;
     execute(value: number[], encoding: TruffleString$Encoding): TruffleString;
     execute(value: number[], encoding: TruffleString$Encoding, copy: boolean): TruffleString;

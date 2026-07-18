@@ -19,7 +19,6 @@ export class JSGuards extends Object {
     static isCallable(paramreviver: Object): boolean;
     static isCallableProxy(paramproxy: JSDynamicObject): boolean;
     static isDoubleInInt32Range(paramvalue: number): boolean;
-    static isDoubleInLongCastRange(paramvalue: number): boolean;
     static isDoubleLargerThan2e32(paramd: number): boolean;
     static isDoubleRepresentableAsLong(paramd: number): boolean;
     static isDoubleSafeInteger(paramd: number): boolean;

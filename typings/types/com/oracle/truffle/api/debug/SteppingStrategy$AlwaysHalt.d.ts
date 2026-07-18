@@ -5,7 +5,6 @@ import type { EventContext } from '../../../../../com/oracle/truffle/api/instrum
 export class SteppingStrategy$AlwaysHalt extends SteppingStrategy {
     private constructor()
     isActive(context: EventContext, suspendAnchor: SuspendAnchor): boolean;
-    isAlwaysHalt(): boolean;
     step(steppingSession: DebuggerSession, context: EventContext, suspendAnchor: SuspendAnchor): boolean;
     toString(): string;
 }

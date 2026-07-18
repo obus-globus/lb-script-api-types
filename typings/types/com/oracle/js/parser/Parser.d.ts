@@ -152,7 +152,6 @@ export class Parser extends AbstractParser {
     // private isAsync(): boolean;
     // private isAwait(): boolean;
     // private isBindingIdentifier(): boolean;
-    // private isBindingIdentifierToken(tokenType: TokenType): boolean;
     // private isClassDecorators(): boolean;
     // private isClassFieldDefinition(nameTokenType: TokenType): boolean;
     // private isClassFields(): boolean;
@@ -162,7 +161,6 @@ export class Parser extends AbstractParser {
     // private isES2021(): boolean;
     // private isES2022(): boolean;
     // private isES6(): boolean;
-    // private isExplicitResourceManagement(): boolean;
     // private isIdentifier(): boolean;
     // private isImportDefer(): boolean;
     // private isImportExpression(): boolean;
@@ -171,7 +169,6 @@ export class Parser extends AbstractParser {
     // private isStartOfAssignmentPattern(): boolean;
     // private isTopLevelAwait(): boolean;
     // private isUseStrictDirective(stmt: Node): boolean;
-    // private isUsingDeclarationDisallowedHere(singleStatement: boolean): boolean;
     // private isV8Intrinsics(): boolean;
     // private joinPredecessorExpression(yield_: boolean, await_: boolean): JoinPredecessorExpression;
     // private labelIdentifier(yield_: boolean, await_: boolean): IdentNode;
@@ -183,15 +180,12 @@ export class Parser extends AbstractParser {
     // private lookaheadIsAsyncArrowParameterListStart(): boolean;
     // private lookaheadIsAsyncFunction(): boolean;
     // private lookaheadIsAsyncMethod(allowPrivate: boolean): boolean;
-    // private lookaheadIsAwaitUsingDeclaration(forHeader: boolean): boolean;
     // private lookaheadIsIdentAndLParen(): boolean;
     // private lookaheadIsImportCall(): boolean;
     // private lookaheadIsLetDeclaration(): boolean;
     // private lookaheadIsOf(): boolean;
-    // private lookaheadIsUsingDeclaration(forHeader: boolean): boolean;
     // private lookaheadNoLineTerminator(): TokenType;
     // private lookaheadOfLetDeclaration(): TokenType;
-    // private lookaheadOfUsingDeclaration(startIndex: number, awaitUsing: boolean, forHeader: boolean): boolean;
     // private lookbehindIsTrailingCommaInArrowParameters(): boolean;
     // private lookbehindNoLineTerminatorAfterAsync(): boolean;
     // private lookbehindNoLineTerminatorBeforeArrow(): boolean;
@@ -214,8 +208,6 @@ export class Parser extends AbstractParser {
     // private newBlock(scope: Scope): ParserContextBlockNode;
     // private newBlockScope(): Scope;
     // private newExpression(yield_: boolean, await_: boolean): Expression;
-    // private nextTokenIndexNoLineTerminator(index: number): number;
-    // private nextTokenType(index: number): TokenType;
     // private objectLiteral(yield_: boolean, await_: boolean, coverExpression: CoverExpressionError): ObjectNode;
     // private parenthesizedExpressionAndArrowParameterList(yield_: boolean, await_: boolean): Expression;
     parse(): FunctionNode;
@@ -273,8 +265,6 @@ export class Parser extends AbstractParser {
     // private tryStatement(yield_: boolean, await_: boolean): void;
     // private unaryExpression(yield_: boolean, await_: boolean, coverExpression: CoverExpressionError): Expression;
     // private useBlockScope(): boolean;
-    // private usingDeclarationList(awaitUsing: boolean, isStatement: boolean, yield_: boolean, await_: boolean, sourceOrder: number): Parser$ForVariableDeclarationListResult;
-    // private usingStatement(awaitUsing: boolean, yield_: boolean, await_: boolean): void;
     // private variableDeclarationList(varType: TokenType, isStatement: boolean, yield_: boolean, await_: boolean, sourceOrder: number): Parser$ForVariableDeclarationListResult;
     // private variableStatement(varType: TokenType, yield_: boolean, await_: boolean): void;
     // private verifyAllowedMethodName(key: Expression, isStatic: boolean, computed: boolean, generator: boolean, accessor: boolean, async: boolean): void;

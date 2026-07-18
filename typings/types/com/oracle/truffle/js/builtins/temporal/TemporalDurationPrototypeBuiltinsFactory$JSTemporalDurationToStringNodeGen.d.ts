@@ -8,7 +8,7 @@ import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nod
 import type { JSNumberToBigIntNode } from '../../../../../../com/oracle/truffle/js/nodes/cast/JSNumberToBigIntNode.d.ts'
 import type { JSBuiltin } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
-import type { GetTemporalUnitValuedOptionNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/GetTemporalUnitValuedOptionNode.d.ts'
+import type { GetTemporalUnitNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/GetTemporalUnitNode.d.ts'
 import type { TemporalGetOptionNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/TemporalGetOptionNode.d.ts'
 import type { ToFractionalSecondDigitsNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/ToFractionalSecondDigitsNode.d.ts'
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
@@ -34,7 +34,7 @@ export class TemporalDurationPrototypeBuiltinsFactory$JSTemporalDurationToString
     // private state_0_: number;
     // private toString_equalNode_: TruffleString$EqualNode;
     // private toString_getOptionNode_: TemporalGetOptionNode;
-    // private toString_getSmallestUnit_: GetTemporalUnitValuedOptionNode;
+    // private toString_getSmallestUnit_: GetTemporalUnitNode;
     // private toString_toBigIntNode_: JSNumberToBigIntNode;
     // private toString_toFractionalSecondDigitsNode_: ToFractionalSecondDigitsNode;
     execute(frameValue: VirtualFrame): Object;

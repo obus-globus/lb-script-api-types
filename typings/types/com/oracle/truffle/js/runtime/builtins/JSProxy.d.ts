@@ -55,9 +55,7 @@ export class JSProxy extends AbstractJSClass implements PrototypeSupplier {
     private constructor()
     defineOwnProperty(thisObj: JSDynamicObject, key: Object, desc: PropertyDescriptor, doThrow: boolean): boolean;
     delete(thisObj: JSDynamicObject, key: Object, isStrict: boolean): boolean;
-    delete(thisObj: JSDynamicObject, key: Object, isStrict: boolean, resultWhenNotPresent: boolean): boolean;
     delete(thisObj: JSDynamicObject, index: number, isStrict: boolean): boolean;
-    delete(thisObj: JSDynamicObject, index: number, isStrict: boolean, resultWhenNotPresent: boolean): boolean;
     getIntrinsicDefaultProto(realm: JSRealm): JSDynamicObject;
     getOwnHelper(store: JSDynamicObject, receiver: Object, key: Object, encapsulatingNode: Node): Object;
     getOwnHelper(store: JSDynamicObject, receiver: Object, index: number, encapsulatingNode: Node): Object;

@@ -7,6 +7,5 @@ export abstract class HostMethodDesc extends Object {
     getOverloads(): HostMethodDesc$SingleMethod[];
     isConstructor(): boolean;
     isInternal(): boolean;
-    isInvocable(): boolean;
     isMethod(): boolean;
 }

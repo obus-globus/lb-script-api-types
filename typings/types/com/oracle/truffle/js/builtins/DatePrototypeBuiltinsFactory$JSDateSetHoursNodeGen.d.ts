@@ -22,6 +22,8 @@ export class DatePrototypeBuiltinsFactory$JSDateSetHoursNodeGen extends DateProt
     private constructor(context: JSContext, builtin: JSBuiltin, isUTC: boolean, arguments: JavaScriptNode[])
     // private arguments0_: JavaScriptNode;
     // private arguments1_: JavaScriptNode;
+    // private state_0_: number;
     execute(frameValue: VirtualFrame): Object;
+    // private executeAndSpecialize(arguments0Value: Object, arguments1Value: Object): number;
     getArguments(): JavaScriptNode[];
 }

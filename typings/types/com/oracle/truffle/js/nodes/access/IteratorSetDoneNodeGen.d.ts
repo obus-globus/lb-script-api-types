@@ -15,7 +15,9 @@ export class IteratorSetDoneNodeGen extends IteratorSetDoneNode {
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     private constructor(iteratorNode: JavaScriptNode, isDoneNode: JavaScriptNode)
+    // private state_0_: number;
     execute(frameValue: VirtualFrame): Object;
+    // private executeAndSpecialize(iteratorNodeValue: Object, isDoneNodeValue: Object): boolean;
     executeBoolean(frameValue: VirtualFrame): boolean;
     executeVoid(frameValue: VirtualFrame): void;
 }

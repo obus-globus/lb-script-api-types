@@ -1,5 +1,5 @@
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { DynamicObject$PutNode } from '../../../../../../com/oracle/truffle/api/object/DynamicObject$PutNode.d.ts'
+import type { DynamicObjectLibrary } from '../../../../../../com/oracle/truffle/api/object/DynamicObjectLibrary.d.ts'
 import type { CreateObjectNode } from '../../../../../../com/oracle/truffle/js/nodes/access/CreateObjectNode.d.ts'
 import type { CreateObjectNode$CreateObjectWithPrototypeNode } from '../../../../../../com/oracle/truffle/js/nodes/access/CreateObjectNode$CreateObjectWithPrototypeNode.d.ts'
 import type { CreateObjectNodeFactory$CreateObjectWithPrototypeNodeGen$CachedPrototypeData } from '../../../../../../com/oracle/truffle/js/nodes/access/CreateObjectNodeFactory$CreateObjectWithPrototypeNodeGen$CachedPrototypeData.d.ts'
@@ -16,7 +16,7 @@ export class CreateObjectNodeFactory$CreateObjectWithPrototypeNodeGen extends Cr
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, jsclass: JSClass)
     // private cachedPrototype_cache: CreateObjectNodeFactory$CreateObjectWithPrototypeNodeGen$CachedPrototypeData;
-    // private setProtoNode: DynamicObject$PutNode;
+    // private setProtoNode: DynamicObjectLibrary;
     // private state_0_: number;
     execute(realm: JSRealm): JSObject;
     execute(arg0Value: Object): JSObject;

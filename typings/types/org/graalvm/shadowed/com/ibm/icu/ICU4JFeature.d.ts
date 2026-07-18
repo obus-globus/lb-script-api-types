@@ -18,7 +18,6 @@ import type { Feature$DuringAnalysisAccess } from '../../../../../../org/graalvm
 import type { Feature$DuringSetupAccess } from '../../../../../../org/graalvm/nativeimage/hosted/Feature$DuringSetupAccess.d.ts'
 import type { Feature$IsInConfigurationAccess } from '../../../../../../org/graalvm/nativeimage/hosted/Feature$IsInConfigurationAccess.d.ts'
 import type { Feature$OnAnalysisExitAccess } from '../../../../../../org/graalvm/nativeimage/hosted/Feature$OnAnalysisExitAccess.d.ts'
-import type { Feature$OnRegistrationAccess } from '../../../../../../org/graalvm/nativeimage/hosted/Feature$OnRegistrationAccess.d.ts'
 import type { ICU4JFeature$ThrowingFunction } from '../../../../../../org/graalvm/shadowed/com/ibm/icu/ICU4JFeature$ThrowingFunction.d.ts'
 export class ICU4JFeature extends Object implements Feature {
     constructor()
@@ -42,5 +41,4 @@ export class ICU4JFeature extends Object implements Feature {
     getURL(): string;
     isInConfiguration(access: Feature$IsInConfigurationAccess): boolean;
     onAnalysisExit(access: Feature$OnAnalysisExitAccess): void;
-    onRegistration(access: Feature$OnRegistrationAccess): void;
 }

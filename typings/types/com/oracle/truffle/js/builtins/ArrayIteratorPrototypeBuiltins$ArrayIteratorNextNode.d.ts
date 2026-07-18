@@ -1,8 +1,7 @@
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { InlinedConditionProfile } from '../../../../../com/oracle/truffle/api/profiles/InlinedConditionProfile.d.ts'
 import type { InlinedIntValueProfile } from '../../../../../com/oracle/truffle/api/profiles/InlinedIntValueProfile.d.ts'
-import type { ArrayIteratorPrototypeBuiltins$ArrayIteratorGetLengthNode } from '../../../../../com/oracle/truffle/js/builtins/ArrayIteratorPrototypeBuiltins$ArrayIteratorGetLengthNode.d.ts'
+import type { ArrayIteratorGetLengthNode } from '../../../../../com/oracle/truffle/js/builtins/ArrayIteratorGetLengthNode.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { CreateIterResultObjectNode } from '../../../../../com/oracle/truffle/js/nodes/access/CreateIterResultObjectNode.d.ts'
 import type { ReadElementNode } from '../../../../../com/oracle/truffle/js/nodes/access/ReadElementNode.d.ts'
@@ -25,8 +24,5 @@ export abstract class ArrayIteratorPrototypeBuiltins$ArrayIteratorNextNode exten
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
-    // private createIterResultObjectNode: CreateIterResultObjectNode;
-    createIteratorResultObject(value: Object, done: boolean): JSObject;
-    doArrayIterator(iterator: JSArrayIteratorObject, array: Object, readElementNode: ReadElementNode, getLengthNode: ArrayIteratorPrototypeBuiltins$ArrayIteratorGetLengthNode, toJSIndex: LongToIntOrDoubleNode, iterationKindProfile: InlinedIntValueProfile, skipLengthCheckBranch: InlinedConditionProfile): JSObject;
-    doArrayIteratorDetached(iterator: JSArrayIteratorObject): JSObject;
+    doArrayIterator(iterator: JSArrayIteratorObject, array: Object, createIterResultObjectNode: CreateIterResultObjectNode, readElementNode: ReadElementNode, getLengthNode: ArrayIteratorGetLengthNode, toJSIndex: LongToIntOrDoubleNode, iterationKindProfile: InlinedIntValueProfile): JSObject;
 }

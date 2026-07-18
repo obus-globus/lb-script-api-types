@@ -6,14 +6,11 @@ import type { JSTemporalBuiltinOperation } from '../../../../../../com/oracle/tr
 import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { JSBuiltin } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
-import type { InitializeDateTimeFormatNode } from '../../../../../../com/oracle/truffle/js/nodes/intl/InitializeDateTimeFormatNode.d.ts'
 import type { TemporalGetOptionNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/TemporalGetOptionNode.d.ts'
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
-import type { JSTemporalPlainTimeObject } from '../../../../../../com/oracle/truffle/js/runtime/builtins/temporal/JSTemporalPlainTimeObject.d.ts'
 import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
 import type { TemporalUtil$RoundingMode } from '../../../../../../com/oracle/truffle/js/runtime/util/TemporalUtil$RoundingMode.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class TemporalPlainTimePrototypeBuiltins$JSTemporalPlainTimeToLocaleString extends JSTemporalBuiltinOperation {
     static ARGUMENTS: string;
     static cloneUninitialized<T extends JavaScriptNode>(paramnode: T, parammaterializedTags: Class<Tag>[]): T;
@@ -26,5 +23,4 @@ export abstract class TemporalPlainTimePrototypeBuiltins$JSTemporalPlainTimeToLo
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
-    toLocaleString(thisTime: JSTemporalPlainTimeObject, locales: Object, options: Object, initDateTimeFormatNode: InitializeDateTimeFormatNode): TruffleString;
 }

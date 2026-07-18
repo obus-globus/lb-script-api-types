@@ -4,7 +4,6 @@ import type { OutputStream } from '../../../../java/io/OutputStream.d.ts'
 import type { ClassLoader } from '../../../../java/lang/ClassLoader.d.ts'
 import type { RuntimeException } from '../../../../java/lang/RuntimeException.d.ts'
 import type { Reference } from '../../../../java/lang/ref/Reference.d.ts'
-import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
 import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { ZoneId } from '../../../../java/time/ZoneId.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
@@ -14,8 +13,6 @@ import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 import type { OptionDescriptor } from '../../../../org/graalvm/options/OptionDescriptor.d.ts'
 import type { Context } from '../../../../org/graalvm/polyglot/Context.d.ts'
 import type { Engine } from '../../../../org/graalvm/polyglot/Engine.d.ts'
-import type { Engine$CancellationCallback } from '../../../../org/graalvm/polyglot/Engine$CancellationCallback.d.ts'
-import type { PolyglotException } from '../../../../org/graalvm/polyglot/PolyglotException.d.ts'
 import type { SandboxPolicy } from '../../../../org/graalvm/polyglot/SandboxPolicy.d.ts'
 import type { AbstractPolyglotImpl } from '../../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl.d.ts'
 import type { AbstractPolyglotImpl$AbstractDispatchClass } from '../../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl$AbstractDispatchClass.d.ts'
@@ -25,7 +22,7 @@ export abstract class AbstractPolyglotImpl$AbstractEngineDispatch extends Abstra
     constructor(impl: AbstractPolyglotImpl)
     attachExecutionListener(engine: Object, onEnter: (param0: Object) => void, onReturn: (param0: Object) => void, expressions: boolean, statements: boolean, roots: boolean, sourceFilter: (param0: Object) => boolean, rootFilter: (param0: string) => boolean, collectInputValues: boolean, collectReturnValues: boolean, collectExceptions: boolean): Object;
     close(receiver: Object, apiObject: Object, cancelIfExecuting: boolean): void;
-    createContext(receiver: Object, engineApi: Engine, sandboxPolicy: SandboxPolicy, out: OutputStream, err: OutputStream, in_: InputStream, allowHostLookup: boolean, hostAccess: Object, polyglotAccess: Object, allowNativeAccess: boolean, allowCreateThread: boolean, allowHostClassLoading: boolean, allowInnerContextOptions: boolean, allowExperimentalOptions: boolean, classFilter: (param0: string) => boolean, options: JavaMap<string, string>, arguments: JavaMap<string, string[]>, onlyLanguages: string[], ioAccess: Object, logHandler: Object, allowCreateProcess: boolean, processHandler: ProcessHandler, exceptionHandler: (param0: PolyglotException) => void, environmentAccess: Object, environment: JavaMap<string, string>, zone: ZoneId, limitsImpl: Object, currentWorkingDirectory: string, tmpDir: string, hostClassLoader: ClassLoader, allowValueSharing: boolean, useSystemExit: boolean, registerInActiveContexts: boolean): Context;
+    createContext(receiver: Object, engineApi: Engine, sandboxPolicy: SandboxPolicy, out: OutputStream, err: OutputStream, in_: InputStream, allowHostLookup: boolean, hostAccess: Object, polyglotAccess: Object, allowNativeAccess: boolean, allowCreateThread: boolean, allowHostClassLoading: boolean, allowInnerContextOptions: boolean, allowExperimentalOptions: boolean, classFilter: (param0: string) => boolean, options: JavaMap<string, string>, arguments: JavaMap<string, string[]>, onlyLanguages: string[], ioAccess: Object, logHandler: Object, allowCreateProcess: boolean, processHandler: ProcessHandler, environmentAccess: Object, environment: JavaMap<string, string>, zone: ZoneId, limitsImpl: Object, currentWorkingDirectory: string, tmpDir: string, hostClassLoader: ClassLoader, allowValueSharing: boolean, useSystemExit: boolean, registerInActiveContexts: boolean): Context;
     getCachedSources(receiver: Object): Object[];
     getImplementationName(receiver: Object): string;
     getInstruments(receiver: Object): JavaMap<string, Object>;
@@ -35,7 +32,6 @@ export abstract class AbstractPolyglotImpl$AbstractEngineDispatch extends Abstra
     getVersion(receiver: Object): string;
     hostToGuestException(engineReceiver: Object, throwable: Throwable): RuntimeException;
     onEngineCollected(engineReceiver: Object): void;
-    persistCache(engineReceiver: Object, callback: () => boolean): ByteBuffer;
     requirePublicInstrument(receiver: Object, id: string): Object;
     requirePublicLanguage(receiver: Object, id: string): Object;
     setEngineAPIReference(receiver: Object, key: Reference<Engine>): void;

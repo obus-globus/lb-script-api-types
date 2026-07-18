@@ -9,7 +9,7 @@ import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nod
 import type { PropertyGetNode } from '../../../../../../com/oracle/truffle/js/nodes/access/PropertyGetNode.d.ts'
 import type { JSBuiltin } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
-import type { GetTemporalUnitValuedOptionNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/GetTemporalUnitValuedOptionNode.d.ts'
+import type { GetTemporalUnitNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/GetTemporalUnitNode.d.ts'
 import type { TemporalGetOptionNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/TemporalGetOptionNode.d.ts'
 import type { ToFractionalSecondDigitsNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/ToFractionalSecondDigitsNode.d.ts'
 import type { ToTemporalTimeZoneIdentifierNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/ToTemporalTimeZoneIdentifierNode.d.ts'
@@ -32,5 +32,5 @@ export abstract class TemporalInstantPrototypeBuiltins$JSTemporalInstantToString
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
     toString(): string;
-    toString(instant: JSTemporalInstantObject, optionsParam: Object, toFractionalSecondDigits: ToFractionalSecondDigitsNode, toTimeZoneIdentifier: ToTemporalTimeZoneIdentifierNode, equalNode: TruffleString$EqualNode, getOptionNode: TemporalGetOptionNode, getSmallestUnit: GetTemporalUnitValuedOptionNode, getTimeZone: PropertyGetNode, errorBranch: InlinedBranchProfile, optionUndefined: InlinedConditionProfile): TruffleString;
+    toString(instant: JSTemporalInstantObject, optionsParam: Object, toFractionalSecondDigits: ToFractionalSecondDigitsNode, toTimeZoneIdentifier: ToTemporalTimeZoneIdentifierNode, equalNode: TruffleString$EqualNode, getOptionNode: TemporalGetOptionNode, getSmallestUnit: GetTemporalUnitNode, getTimeZone: PropertyGetNode, errorBranch: InlinedBranchProfile, optionUndefined: InlinedConditionProfile): TruffleString;
 }

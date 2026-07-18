@@ -25,5 +25,6 @@ export class ArrayPrototypeBuiltinsFactory$JSArrayReduceNodeGen extends ArrayPro
     // private arguments2_: JavaScriptNode;
     // private state_0_: number;
     execute(frameValue: VirtualFrame): Object;
+    // private executeAndSpecialize(arguments0Value: Object, arguments1Value: Object, arguments2Value: Object): Object;
     getArguments(): JavaScriptNode[];
 }

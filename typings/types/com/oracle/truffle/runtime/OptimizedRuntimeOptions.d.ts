@@ -14,10 +14,8 @@ export class OptimizedRuntimeOptions extends Object {
     static CompileImmediately: OptionKey<boolean>;
     static CompileOnly: OptionKey<string>;
     static CompilerIdleDelay: OptionKey<number>;
-    static CompilerThreadStackSize: OptionKey<number>;
     static CompilerThreads: OptionKey<number>;
     static DynamicCompilationThresholds: OptionKey<boolean>;
-    static DynamicCompilationThresholdsHighLoadSlope: OptionKey<number>;
     static DynamicCompilationThresholdsMaxNormalLoad: OptionKey<number>;
     static DynamicCompilationThresholdsMinNormalLoad: OptionKey<number>;
     static DynamicCompilationThresholdsMinScale: OptionKey<number>;
@@ -66,8 +64,6 @@ export class OptimizedRuntimeOptions extends Object {
     static TraversingQueueFirstTierPriority: OptionKey<boolean>;
     static TraversingQueueInvalidatedBonus: OptionKey<number>;
     static TraversingQueueOSRBonus: OptionKey<number>;
-    static TraversingQueueRateHalfLife: OptionKey<number>;
-    static TraversingQueueStaleTaskDelay: OptionKey<number>;
     static TraversingQueueWeightingBothTiers: OptionKey<boolean>;
     static getDescriptors(): OptionDescriptor[];
     constructor()

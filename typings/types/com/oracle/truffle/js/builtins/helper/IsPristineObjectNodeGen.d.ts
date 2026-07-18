@@ -9,8 +9,7 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class IsPristineObjectNodeGen extends IsPristineObjectNode {
     static create(paramjsClass: JSClass, paraminitialPrototypeShape: Shape, ...parampropertyKeys: Object[]): IsPristineObjectNode;
-    static createRegExpExec(paramcontext: JSContext): IsPristineObjectNode;
-    static createRegExpExecAndFlagGetter(paramcontext: JSContext, ...paramextraPropertyKeys: Object[]): IsPristineObjectNode;
+    static createRegExpExecAndMatch(paramcontext: JSContext): IsPristineObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(jsClass: JSClass, initialPrototypeShape: Shape, ...propertyKeys: Object[])
     // private cached_cache: IsPristineObjectNodeGen$CachedData;

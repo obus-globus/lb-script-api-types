@@ -1,7 +1,7 @@
+import type { ApplicationCall } from '../../../../../../../../../io/ktor/server/application/ApplicationCall.d.ts'
 import type { Record } from '../../../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { Continuation } from '../../../../../../../../../kotlin/coroutines/Continuation.d.ts'
-import type { ApplicationCall } from '../../../../../../../../../net/ccbluex/netty/http/application/ApplicationCall.d.ts'
 export class ModuleRequest extends Record {
     constructor(name: string)
     // private name: string;

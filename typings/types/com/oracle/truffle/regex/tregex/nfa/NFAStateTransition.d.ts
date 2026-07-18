@@ -5,6 +5,7 @@ import type { JsonConvertible } from '../../../../../../com/oracle/truffle/regex
 import type { JsonValue } from '../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonValue.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class NFAStateTransition extends Object implements AbstractTransition<NFAState, NFAStateTransition>, JsonConvertible {
+    constructor(original: NFAStateTransition)
     constructor(id: number, source: NFAState, target: NFAState, codePointSet: (Object | null)[], groupBoundaries: GroupBoundaries, constraints: number[], operations: number[])
     readonly codePointSet: (Object | null)[];
     readonly constraints: number[];

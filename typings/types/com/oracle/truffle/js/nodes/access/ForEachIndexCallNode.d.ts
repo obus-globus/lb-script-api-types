@@ -2,7 +2,6 @@ import type { InteropLibrary } from '../../../../../../com/oracle/truffle/api/in
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { BranchProfile } from '../../../../../../com/oracle/truffle/api/profiles/BranchProfile.d.ts'
 import type { LoopConditionProfile } from '../../../../../../com/oracle/truffle/api/profiles/LoopConditionProfile.d.ts'
-import type { TruffleString$ToJavaStringNode } from '../../../../../../com/oracle/truffle/api/strings/TruffleString$ToJavaStringNode.d.ts'
 import type { JavaScriptBaseNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptBaseNode.d.ts'
 import type { ForEachIndexCallNode$CallbackNode } from '../../../../../../com/oracle/truffle/js/nodes/access/ForEachIndexCallNode$CallbackNode.d.ts'
 import type { ForEachIndexCallNode$MaybeResultNode } from '../../../../../../com/oracle/truffle/js/nodes/access/ForEachIndexCallNode$MaybeResultNode.d.ts'
@@ -34,7 +33,6 @@ export abstract class ForEachIndexCallNode extends JavaScriptBaseNode {
     // private readElementNode: ReadElementNode$ReadElementArrayDispatchNode;
     // private targetClassProfile: JSClassProfile;
     // private toJSTypeNode: ImportValueNode;
-    // private toJavaStringNode: TruffleString$ToJavaStringNode;
     callback(index: number, value: Object, target: Object, callback: Object, callbackThisArg: Object, currentResult: Object): Object;
     executeForEachIndex(target: Object, callback: Object, callbackThisArg: Object, fromIndex: number, length: number, initialResult: Object): Object;
     executeForEachIndexFast(target: JSDynamicObject, callback: Object, callbackThisArg: Object, fromIndex: number, length: number, initialResult: Object): Object;

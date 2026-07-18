@@ -1,7 +1,6 @@
 import type { Serializable } from '../../../../../../../java/io/Serializable.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Cloneable } from '../../../../../../../java/lang/Cloneable.d.ts'
 import type { Comparable } from '../../../../../../../java/lang/Comparable.d.ts'
 import type { Iterator } from '../../../../../../../java/util/Iterator.d.ts'
 import type { BaseLocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/locale/BaseLocale.d.ts'
@@ -10,7 +9,7 @@ import type { ULocale$AvailableType } from '../../../../../../../org/graalvm/sha
 import type { ULocale$Category } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale$Category.d.ts'
 import type { ULocale$Minimize } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale$Minimize.d.ts'
 import type { ULocale$Type } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale$Type.d.ts'
-export class ULocale extends Object implements Serializable, Cloneable, Comparable<ULocale> {
+export class ULocale extends Object implements Serializable, Comparable<ULocale> {
     static ACTUAL_LOCALE: ULocale$Type;
     static CANADA: ULocale;
     static CANADA_FRENCH: ULocale;
@@ -103,7 +102,7 @@ export class ULocale extends Object implements Serializable, Cloneable, Comparab
     // private locale: Locale;
     // private localeID: string;
     // private base(): BaseLocale;
-    clone(): ULocale;
+    clone(): Object;
     compareTo(other: ULocale): number;
     equals(obj: Object | null): boolean;
     // private extensions(): LocaleExtensions;

@@ -20,7 +20,6 @@ export class RemoteObject extends Object {
     constructor(debugValue: DebugValue, generatePreview: boolean, context: InspectorExecutionContext)
     constructor(debugValue: DebugValue, readEagerly: boolean, generatePreview: boolean, context: InspectorExecutionContext)
     constructor(debugValue: DebugValue, readEagerly: boolean, generatePreview: boolean, context: InspectorExecutionContext, indexRange: RemoteObject$IndexRange)
-    constructor(debugValue: DebugValue, readEagerly: boolean, generatePreview: boolean, context: InspectorExecutionContext, indexRange: RemoteObject$IndexRange, typeMark: RemoteObject$TypeMark)
     constructor(debugValue: DebugValue, readEagerly: boolean, generatePreview: boolean, context: InspectorExecutionContext, typeMark: RemoteObject$TypeMark)
     // private context: InspectorExecutionContext;
     // private customPreview: JSONObject;

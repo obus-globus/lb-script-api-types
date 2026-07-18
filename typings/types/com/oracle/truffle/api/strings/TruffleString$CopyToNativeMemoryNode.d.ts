@@ -8,6 +8,6 @@ export abstract class TruffleString$CopyToNativeMemoryNode extends AbstractPubli
     static create(): TruffleString$CopyToNativeMemoryNode;
     static getUncached(): TruffleString$CopyToNativeMemoryNode;
     constructor()
-    doCopy(a: AbstractTruffleString, byteFromIndexA: number, pointerObject: Object, byteFromIndexB: number, byteLength: number, expectedEncoding: TruffleString$Encoding, interopLibrary: Node, rawPointerProfile: InlinedConditionProfile, managedProfileA: InlinedConditionProfile, nativeProfileA: InlinedConditionProfile, utf16Profile: InlinedConditionProfile, utf16S0Profile: InlinedConditionProfile, utf32Profile: InlinedConditionProfile, utf32S0Profile: InlinedConditionProfile, utf32S1Profile: InlinedConditionProfile): void;
+    doCopy(a: AbstractTruffleString, byteFromIndexA: number, pointerObject: Object, byteFromIndexB: number, byteLength: number, expectedEncoding: TruffleString$Encoding, interopLibrary: Node, managedProfileA: InlinedConditionProfile, nativeProfileA: InlinedConditionProfile, utf16Profile: InlinedConditionProfile, utf16S0Profile: InlinedConditionProfile, utf32Profile: InlinedConditionProfile, utf32S0Profile: InlinedConditionProfile, utf32S1Profile: InlinedConditionProfile): void;
     execute(a: AbstractTruffleString, byteFromIndexA: number, pointerObject: Object, byteFromIndexDst: number, byteLength: number, expectedEncoding: TruffleString$Encoding): void;
 }

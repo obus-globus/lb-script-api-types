@@ -1,5 +1,5 @@
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { DynamicObject$PutNode } from '../../../../../com/oracle/truffle/api/object/DynamicObject$PutNode.d.ts'
+import type { DynamicObjectLibrary } from '../../../../../com/oracle/truffle/api/object/DynamicObjectLibrary.d.ts'
 import type { Shape } from '../../../../../com/oracle/truffle/api/object/Shape.d.ts'
 import type { JavaScriptBaseNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptBaseNode.d.ts'
 import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
@@ -14,7 +14,7 @@ export abstract class OperatorsBuiltins$CreateOverloadedOperatorsObjectNode exte
     constructor(context: JSContext)
     // private context: JSContext;
     createDefaultProto(prototype: Object, operatorSet: OperatorSet, cachedShape: Shape): JSOverloadedOperatorsObject;
-    createWithProto(prototype: JSObject, operatorSet: OperatorSet, setProtoNode: DynamicObject$PutNode, cachedShape: Shape): JSOverloadedOperatorsObject;
+    createWithProto(prototype: JSObject, operatorSet: OperatorSet, setProtoNode: DynamicObjectLibrary, cachedShape: Shape): JSOverloadedOperatorsObject;
     doCachedProto(prototype: Object, operatorSet: OperatorSet, cachedPrototype: Object, cachedShape: Shape): JSOverloadedOperatorsObject;
     execute(prototype: Object, operatorSet: OperatorSet): JSOverloadedOperatorsObject;
     getContext(): JSContext;

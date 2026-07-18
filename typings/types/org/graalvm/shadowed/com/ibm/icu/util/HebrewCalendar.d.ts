@@ -95,7 +95,6 @@ export class HebrewCalendar extends Calendar {
     constructor(zone: TimeZone, locale: ULocale)
     constructor(locale: ULocale)
     add(field: number, amount: number): void;
-    getRelatedYearDifference(): number;
     getTemporalMonthCode(): string;
     getType(): string;
     handleComputeFields(julianDay: number): void;

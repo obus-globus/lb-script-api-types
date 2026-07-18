@@ -1,6 +1,5 @@
 import type { VirtualFrame } from '../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
-import type { InteropLibrary } from '../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { JavaBuiltins$JavaIsJavaObject } from '../../../../../com/oracle/truffle/js/builtins/JavaBuiltins$JavaIsJavaObject.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
@@ -22,9 +21,6 @@ export class JavaBuiltinsFactory$JavaIsJavaObjectNodeGen extends JavaBuiltins$Ja
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     private constructor(context: JSContext, builtin: JSBuiltin, arguments: JavaScriptNode[])
     // private arguments0_: JavaScriptNode;
-    // private interop_: InteropLibrary;
-    // private state_0_: number;
     execute(frameValue: VirtualFrame): Object;
-    // private executeAndSpecialize(arguments0Value: Object): boolean;
     getArguments(): JavaScriptNode[];
 }

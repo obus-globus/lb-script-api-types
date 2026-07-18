@@ -27,7 +27,7 @@ export class MessagePattern extends Object implements Cloneable, Freezable<Messa
     autoQuoteApostropheDeep(): string;
     clear(): void;
     clearPatternAndSetApostropheMode(mode: MessagePattern$ApostropheMode): void;
-    clone(): MessagePattern;
+    clone(): Object;
     cloneAsThawed(): MessagePattern;
     countParts(): number;
     equals(other: Object | null): boolean;

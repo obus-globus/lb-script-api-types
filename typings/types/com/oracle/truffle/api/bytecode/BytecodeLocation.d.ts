@@ -16,7 +16,6 @@ export class BytecodeLocation extends Object {
     // private bytecodes: BytecodeNode;
     dump(): string;
     ensureSourceInformation(): BytecodeLocation;
-    ensureSourceInformationWithContent(): BytecodeLocation;
     equals(obj: Object | null): boolean;
     getBytecodeIndex(): number;
     getBytecodeNode(): BytecodeNode;

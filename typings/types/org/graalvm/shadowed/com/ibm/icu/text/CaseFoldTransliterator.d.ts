@@ -1,8 +1,10 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
+import type { StringBuilder } from '../../../../../../../java/lang/StringBuilder.d.ts'
 import type { Enumeration } from '../../../../../../../java/util/Enumeration.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { UCaseProps } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/UCaseProps.d.ts'
 import type { Replaceable } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/Replaceable.d.ts'
+import type { ReplaceableContextIterator } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/ReplaceableContextIterator.d.ts'
 import type { Transliterator } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/Transliterator.d.ts'
 import type { Transliterator$Factory } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/Transliterator$Factory.d.ts'
 import type { Transliterator$Position } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/Transliterator$Position.d.ts'
@@ -28,6 +30,8 @@ export class CaseFoldTransliterator extends Transliterator {
     static unregister(paramID: string): void;
     constructor()
     // private csp: UCaseProps;
+    // private iter: ReplaceableContextIterator;
+    // private result: StringBuilder;
     addSourceTargetSet(inputFilter: string[], sourceSet: string[], targetSet: string[]): void;
     handleTransliterate(text: Replaceable, offsets: Transliterator$Position, isIncremental: boolean): void;
 }

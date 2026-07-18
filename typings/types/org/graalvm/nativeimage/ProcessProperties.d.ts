@@ -17,6 +17,7 @@ export class ProcessProperties extends Object {
     static getProcessID(paramprocess: Process): number;
     static isAlive(paramprocessID: number): boolean;
     static setArgumentVectorProgramName(paramname: string): boolean;
+    static setLocale(paramcategory: string, paramlocale: string): string;
     static waitForProcessExit(paramprocessID: number): number;
     private constructor()
 }

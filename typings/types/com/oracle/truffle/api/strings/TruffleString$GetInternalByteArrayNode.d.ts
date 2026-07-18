@@ -9,5 +9,5 @@ export abstract class TruffleString$GetInternalByteArrayNode extends AbstractPub
     constructor()
     execute(a: AbstractTruffleString, expectedEncoding: TruffleString$Encoding): InternalByteArray;
     getInternalByteArray(a: AbstractTruffleString, expectedEncoding: TruffleString$Encoding, managedProfileA: InlinedConditionProfile, nativeProfileA: InlinedConditionProfile, utf16Profile: InlinedConditionProfile, utf16S0Profile: InlinedConditionProfile, utf32Profile: InlinedConditionProfile, utf32S0Profile: InlinedConditionProfile, utf32S1Profile: InlinedConditionProfile, isByteArrayProfile: InlinedConditionProfile): InternalByteArray;
-    // private inflate(dataA: number[], offsetA: number, lengthA: number, strideA: number, strideB: number): InternalByteArray;
+    // private inflate(a: AbstractTruffleString, dataA: number[], offsetA: number, strideA: number, strideB: number): InternalByteArray;
 }

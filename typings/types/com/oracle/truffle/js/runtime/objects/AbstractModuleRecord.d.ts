@@ -13,7 +13,6 @@ import type { JSModuleRecord } from '../../../../../../com/oracle/truffle/js/run
 import type { ScriptOrModule } from '../../../../../../com/oracle/truffle/js/runtime/objects/ScriptOrModule.d.ts'
 import type { Pair } from '../../../../../../com/oracle/truffle/js/runtime/util/Pair.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-import type { Throwable } from '../../../../../../java/lang/Throwable.d.ts'
 export abstract class AbstractModuleRecord extends ScriptOrModule {
     constructor(context: JSContext, source: Source, hostDefined: Object, frameDescriptor: FrameDescriptor)
     // private deferredNamespace: JSModuleNamespaceObject;
@@ -27,7 +26,6 @@ export abstract class AbstractModuleRecord extends ScriptOrModule {
     gatherAsynchronousTransitiveDependencies(): AbstractModuleRecord[];
     // private gatherAsynchronousTransitiveDependencies(result: AbstractModuleRecord[], seen: AbstractModuleRecord[]): AbstractModuleRecord[];
     getEnvironment(): MaterializedFrame;
-    getEvaluationError(): Throwable;
     getExportedNames(): TruffleString[];
     getExportedNames(exportStarSet: JSModuleRecord[]): TruffleString[];
     getFrameDescriptor(): FrameDescriptor;

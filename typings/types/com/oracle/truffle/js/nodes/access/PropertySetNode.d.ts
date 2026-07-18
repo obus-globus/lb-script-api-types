@@ -34,7 +34,6 @@ export class PropertySetNode extends PropertyCacheNode<PropertySetNode$SetCacheN
     // private createDefineNewPropertyNode(shapeCheck: PropertyCacheNode$ReceiverCheckNode): PropertySetNode$SetCacheNode;
     createGenericPropertyNode(): PropertySetNode$SetCacheNode;
     createJavaPropertyNodeMaybe(thisObj: Object, proto: JSDynamicObject, depth: number): PropertySetNode$SetCacheNode;
-    // private createReadOnlyPropertySetNode(thisObj: JSDynamicObject, receiverCheck: PropertyCacheNode$ReceiverCheckNode, strict: boolean, property: Property): PropertySetNode$SetCacheNode;
     createTruffleObjectPropertyNode(): PropertySetNode$SetCacheNode;
     createUndefinedPropertyNode(thisObj: Object, store: Object, proto: JSDynamicObject, depth: number, value: Object): PropertySetNode$SetCacheNode;
     getAttributeFlags(): number;

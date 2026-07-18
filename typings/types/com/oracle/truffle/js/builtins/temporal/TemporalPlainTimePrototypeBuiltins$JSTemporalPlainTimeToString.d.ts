@@ -8,7 +8,7 @@ import type { JSTemporalBuiltinOperation } from '../../../../../../com/oracle/tr
 import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { JSBuiltin } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
-import type { GetTemporalUnitValuedOptionNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/GetTemporalUnitValuedOptionNode.d.ts'
+import type { GetTemporalUnitNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/GetTemporalUnitNode.d.ts'
 import type { TemporalGetOptionNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/TemporalGetOptionNode.d.ts'
 import type { ToFractionalSecondDigitsNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/ToFractionalSecondDigitsNode.d.ts'
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
@@ -30,5 +30,5 @@ export abstract class TemporalPlainTimePrototypeBuiltins$JSTemporalPlainTimeToSt
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
     toString(): string;
-    toString(temporalTime: JSTemporalPlainTimeObject, optionsParam: Object, toFractionalSecondDigitsNode: ToFractionalSecondDigitsNode, equalNode: TruffleString$EqualNode, getOptionNode: TemporalGetOptionNode, getSmallestUnit: GetTemporalUnitValuedOptionNode, errorBranch: InlinedBranchProfile, optionUndefined: InlinedConditionProfile): TruffleString;
+    toString(temporalTime: JSTemporalPlainTimeObject, optionsParam: Object, toFractionalSecondDigitsNode: ToFractionalSecondDigitsNode, equalNode: TruffleString$EqualNode, getOptionNode: TemporalGetOptionNode, getSmallestUnit: GetTemporalUnitNode, errorBranch: InlinedBranchProfile, optionUndefined: InlinedConditionProfile): TruffleString;
 }

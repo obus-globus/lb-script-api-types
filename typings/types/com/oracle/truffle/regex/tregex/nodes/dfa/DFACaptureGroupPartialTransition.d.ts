@@ -24,7 +24,7 @@ export class DFACaptureGroupPartialTransition extends Object implements JsonConv
     readonly reorderSwaps: number[];
     apply(executor: TRegexDFAExecutorNode, d: DFACaptureGroupTrackingData, currentIndex: number): void;
     apply(executor: TRegexDFAExecutorNode, d: DFACaptureGroupTrackingData, currentIndex: number, preFinal: boolean, export_: boolean): void;
-    // private applyArrayCopy(d: DFACaptureGroupTrackingData): void;
+    // private applyArrayCopy(results: number[], currentResultOrder: number[], length: number): void;
     applyFinalStateTransition(executor: TRegexDFAExecutorNode, d: DFACaptureGroupTrackingData, currentIndex: number): void;
     // private applyLastGroupUpdate(results: number[], currentResultOrder: number[], length: number): void;
     // private applyPreFinalStateTransition(executor: TRegexDFAExecutorNode, d: DFACaptureGroupTrackingData, currentIndex: number, export_: boolean): void;

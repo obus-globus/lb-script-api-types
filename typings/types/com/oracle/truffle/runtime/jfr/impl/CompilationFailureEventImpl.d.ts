@@ -1,6 +1,6 @@
 import type { RootFunctionEventImpl } from '../../../../../../com/oracle/truffle/runtime/jfr/impl/RootFunctionEventImpl.d.ts'
 export class CompilationFailureEventImpl extends RootFunctionEventImpl {
-    constructor(engineId: number, id: number, source: string, sourceHash: string, language: string, rootFunction: string, astSize: number)
+    constructor(engineId: number, id: number, source: string, language: string, rootFunction: string)
     failureReason: string;
     permanentFailure: boolean;
     stackTrace: string;

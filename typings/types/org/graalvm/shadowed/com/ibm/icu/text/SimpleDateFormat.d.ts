@@ -9,7 +9,6 @@ import type { Temporal } from '../../../../../../../java/time/temporal/Temporal.
 import type { Date } from '../../../../../../../java/util/Date.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Cloneable } from '../../../../../../../java/lang/Cloneable.d.ts'
 import type { Number } from '../../../../../../../java/lang/Number.d.ts'
 import type { DayPeriodRules$DayPeriod } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/DayPeriodRules$DayPeriod.d.ts'
 import type { BreakIterator } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/BreakIterator.d.ts'
@@ -26,7 +25,7 @@ import type { Calendar$FormatConfiguration } from '../../../../../../../org/graa
 import type { Output } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/Output.d.ts'
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
 import type { ULocale$Type } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale$Type.d.ts'
-export class SimpleDateFormat extends DateFormat implements Cloneable {
+export class SimpleDateFormat extends DateFormat {
     static ABBR_GENERIC_TZ: string;
     static ABBR_MONTH: string;
     static ABBR_MONTH_DAY: string;
@@ -200,7 +199,7 @@ export class SimpleDateFormat extends DateFormat implements Cloneable {
     // private allowNumericFallback(patternCharIndex: number): boolean;
     applyLocalizedPattern(pat: string): void;
     applyPattern(pat: string): void;
-    clone(): SimpleDateFormat;
+    clone(): Object;
     // private diffCalFieldValue(fromCalendar: Calendar, toCalendar: Calendar, items: Object[], i: number): boolean;
     equals(obj: Object | null): boolean;
     // private fastZeroPaddingNumber(buf: StringBuffer, value: number, minDigits: number, maxDigits: number): void;

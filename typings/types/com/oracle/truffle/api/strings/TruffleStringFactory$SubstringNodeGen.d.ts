@@ -7,5 +7,6 @@ export class TruffleStringFactory$SubstringNodeGen extends TruffleString$Substri
     static getUncached(): TruffleString$SubstringNode;
     private constructor()
     // private state_0_: number;
+    // private state_1_: number;
     execute(arg0Value: AbstractTruffleString, arg1Value: number, arg2Value: number, arg3Value: TruffleString$Encoding, arg4Value: boolean): TruffleString;
 }

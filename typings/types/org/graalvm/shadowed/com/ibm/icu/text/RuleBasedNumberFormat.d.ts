@@ -9,7 +9,6 @@ import type { FieldPosition } from '../../../../../../../java/text/FieldPosition
 import type { ParsePosition } from '../../../../../../../java/text/ParsePosition.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Cloneable } from '../../../../../../../java/lang/Cloneable.d.ts'
 import type { Number } from '../../../../../../../java/lang/Number.d.ts'
 import type { BigDecimal as BigDecimal_2 } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/math/BigDecimal.d.ts'
 import type { BreakIterator } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/BreakIterator.d.ts'
@@ -27,7 +26,7 @@ import type { RbnfLenientScanner } from '../../../../../../../org/graalvm/shadow
 import type { RbnfLenientScannerProvider } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/RbnfLenientScannerProvider.d.ts'
 import type { CurrencyAmount } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/CurrencyAmount.d.ts'
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
-export class RuleBasedNumberFormat extends NumberFormat implements Cloneable {
+export class RuleBasedNumberFormat extends NumberFormat {
     static ACCOUNTINGCURRENCYSTYLE: number;
     static CASHCURRENCYSTYLE: number;
     static CURRENCYSTYLE: number;
@@ -101,9 +100,10 @@ export class RuleBasedNumberFormat extends NumberFormat implements Cloneable {
     // private ruleSetsMap: JavaMap<string, NFRuleSet>;
     // private scannerProvider: RbnfLenientScannerProvider;
     // private adjustForContext(result: string): string;
-    clone(): RuleBasedNumberFormat;
+    clone(): Object;
     createPluralFormat(pluralType: PluralRules$PluralType, pattern: string): PluralFormat;
     equals(that: Object | null): boolean;
+    // private extractSpecial(description: StringBuilder, specialName: string): string;
     findRuleSet(name: string): NFRuleSet;
     format(number: BigDecimal): string;
     format(number: BigDecimal, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;

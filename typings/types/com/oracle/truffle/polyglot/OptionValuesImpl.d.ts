@@ -7,10 +7,11 @@ import type { OptionKey } from '../../../../org/graalvm/options/OptionKey.d.ts'
 import type { OptionValues } from '../../../../org/graalvm/options/OptionValues.d.ts'
 import type { SandboxPolicy } from '../../../../org/graalvm/polyglot/SandboxPolicy.d.ts'
 export class OptionValuesImpl extends Object implements OptionValues {
-    constructor(descriptors: OptionDescriptor[], sandboxPolicy: SandboxPolicy, trackDeprecatedOptions: boolean)
+    constructor(descriptors: OptionDescriptor[], sandboxPolicy: SandboxPolicy, preserveUnparsedValues: boolean, trackDeprecatedOptions: boolean)
     readonly descriptors: OptionDescriptor[];
     // private sandboxPolicy: SandboxPolicy;
     // private trackDeprecatedOptions: boolean;
+    // private unparsedValues: JavaMap<OptionKey<Object>, string>;
     // private usedDeprecatedDescriptors: OptionDescriptor[];
     // private validAssertKeys: OptionKey<Object>[];
     // private values: JavaMap<OptionKey<Object>, Object>;
@@ -22,6 +23,7 @@ export class OptionValuesImpl extends Object implements OptionValues {
     // private findDescriptor(key: string, allowExperimentalOptions: boolean, allOptionsSupplier: () => OptionDescriptor[]): OptionDescriptor;
     get<T extends unknown>(optionKey: OptionKey<T>): T;
     getDescriptors(): OptionDescriptor[];
+    getUnparsedOptionValue(key: OptionKey<Object>): string;
     getUsedDeprecatedDescriptors(): OptionDescriptor[];
     hasBeenSet(optionKey: OptionKey<Object>): boolean;
     hasSetOptions(): boolean;

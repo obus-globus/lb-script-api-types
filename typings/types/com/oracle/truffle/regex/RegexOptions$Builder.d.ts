@@ -3,7 +3,7 @@ import type { RegexOptions } from '../../../../com/oracle/truffle/regex/RegexOpt
 import type { RegexSyntaxException } from '../../../../com/oracle/truffle/regex/RegexSyntaxException.d.ts'
 import type { MatchingMode } from '../../../../com/oracle/truffle/regex/tregex/parser/MatchingMode.d.ts'
 import type { RegexFlavor } from '../../../../com/oracle/truffle/regex/tregex/parser/RegexFlavor.d.ts'
-import type { Encoding } from '../../../../com/oracle/truffle/regex/tregex/string/Encoding.d.ts'
+import type { Encodings$Encoding } from '../../../../com/oracle/truffle/regex/tregex/string/Encodings$Encoding.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { OptionKey } from '../../../../org/graalvm/options/OptionKey.d.ts'
 import type { OptionValues } from '../../../../org/graalvm/options/OptionValues.d.ts'
@@ -15,7 +15,6 @@ export class RegexOptions$Builder extends Object {
     // private matchingMode: MatchingMode;
     // private maxBackTrackerCompileSize: number;
     // private maxDFASize: number;
-    // private maxParserTreeSize: number;
     // private optionValues: OptionValues;
     // private pythonLocale: string;
     // private quantifierUnrollThresholdGroup: number;
@@ -23,13 +22,13 @@ export class RegexOptions$Builder extends Object {
     // private source: Source;
     // private src: string;
     build(): RegexOptions;
-    encoding(encoding: Encoding): RegexOptions$Builder;
-    // private expectEncodingValue(enc: Encoding): Encoding;
+    encoding(encoding: Encodings$Encoding): RegexOptions$Builder;
+    // private expectEncodingValue(enc: Encodings$Encoding): Encodings$Encoding;
     // private expectOptionName(key: string): void;
     // private expectValue<T extends unknown>(returnValue: T, value: string, ...expected: string[]): T;
     // private findValueEndPos(errorMsg: string): number;
     flavor(flavor: RegexFlavor): RegexOptions$Builder;
-    getEncoding(): Encoding;
+    getEncoding(): Encodings$Encoding;
     getFlavor(): RegexFlavor;
     // private isBitSet(bit: number): boolean;
     isUtf16ExplodeAstralSymbols(): boolean;
@@ -40,9 +39,8 @@ export class RegexOptions$Builder extends Object {
     // private optionsSyntaxErrorUnexpectedValueMsg(msg: string): RegexSyntaxException;
     // private parseBooleanOption(key: string, flag: number): void;
     // private parseBooleanSrcOption(key: OptionKey<boolean>, flag: number): void;
-    // private parseEncoding(): Encoding;
+    // private parseEncoding(): Encodings$Encoding;
     // private parseFlavor(): RegexFlavor;
-    // private parseIntSrcOption(optionName: string, key: OptionKey<number>, min: number): number;
     // private parseMatchingMode(optionName: string): MatchingMode;
     parseOptions(): number;
     // private parseShortOption(key: string): number;

@@ -5,7 +5,6 @@ import type { CalendarCache } from '../../../../../../../org/graalvm/shadowed/co
 import type { DateFormat } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/DateFormat.d.ts'
 import type { Calendar } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/Calendar.d.ts'
 import type { Calendar$WeekData } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/Calendar$WeekData.d.ts'
-import type { ChineseCalendar$MonthInfo } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ChineseCalendar$MonthInfo.d.ts'
 import type { TimeZone } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/TimeZone.d.ts'
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
 export class ChineseCalendar extends Calendar {
@@ -85,22 +84,21 @@ export class ChineseCalendar extends Calendar {
     constructor(zone: TimeZone)
     constructor(zone: TimeZone, aLocale: Locale)
     constructor(zone: TimeZone, locale: ULocale)
-    constructor(zone: TimeZone, locale: ULocale, zoneAstroCalc: TimeZone)
+    constructor(zone: TimeZone, locale: ULocale, epochYear: number, zoneAstroCalc: TimeZone)
     constructor(locale: ULocale)
+    // private epochYear: number;
     // private hasLeapMonthBetweenWinterSolstices: boolean;
     // private newYearCache: CalendarCache;
     // private winterSolsticeCache: CalendarCache;
     // private zoneAstro: TimeZone;
     add(field: number, amount: number): void;
-    // private computeMonthInfo(days: number, gyear: number): ChineseCalendar$MonthInfo;
+    // private computeChineseFields(days: number, gyear: number, gmonth: number, setAllFields: boolean): void;
     // private daysToMillis(days: number): number;
-    getActualMaximum(field: number): number;
     getFieldResolutionTable(): number[][][];
     getTemporalMonthCode(): string;
     getType(): string;
     handleComputeFields(julianDay: number): void;
     handleComputeMonthStart(eyear: number, month: number, useMonth: boolean): number;
-    // private handleComputeMonthStartWithLeap(eyear: number, month: number, isLeapMonth: number): number;
     handleGetDateFormat(pattern: string, locale: Locale): DateFormat;
     handleGetDateFormat(pattern: string, override: string, locale: Locale): DateFormat;
     handleGetDateFormat(pattern: string, override: string, locale: ULocale): DateFormat;
@@ -108,7 +106,6 @@ export class ChineseCalendar extends Calendar {
     handleGetExtendedYear(): number;
     handleGetLimit(field: number, limitType: number): number;
     handleGetMonthLength(extendedYear: number, month: number): number;
-    // private handleGetMonthLengthWithLeap(extendedYear: number, month: number, isLeap: number): number;
     // private hasNoMajorSolarTerm(newMoon: number): boolean;
     haveDefaultCentury(): boolean;
     inTemporalLeapYear(): boolean;

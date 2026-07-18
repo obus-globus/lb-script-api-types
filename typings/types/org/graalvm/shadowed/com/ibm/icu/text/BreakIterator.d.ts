@@ -46,7 +46,7 @@ export abstract class BreakIterator extends Object implements Cloneable {
     constructor()
     // private actualLocale: ULocale;
     // private validLocale: ULocale;
-    clone(): BreakIterator;
+    clone(): Object;
     current(): number;
     first(): number;
     following(offset: number): number;

@@ -1,18 +1,15 @@
 import type { VirtualFrame } from '../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
-import type { InteropLibrary } from '../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { ArrayFunctionBuiltins$JSArrayFromAsyncNode } from '../../../../../com/oracle/truffle/js/builtins/ArrayFunctionBuiltins$JSArrayFromAsyncNode.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { GetMethodNode } from '../../../../../com/oracle/truffle/js/nodes/access/GetMethodNode.d.ts'
-import type { PropertyGetNode } from '../../../../../com/oracle/truffle/js/nodes/access/PropertyGetNode.d.ts'
 import type { JSGetLengthNode } from '../../../../../com/oracle/truffle/js/nodes/array/JSGetLengthNode.d.ts'
 import type { InternalCallNode } from '../../../../../com/oracle/truffle/js/nodes/function/InternalCallNode.d.ts'
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
 import type { JSFunctionCallNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSFunctionCallNode.d.ts'
 import type { NewPromiseCapabilityNode } from '../../../../../com/oracle/truffle/js/nodes/promise/NewPromiseCapabilityNode.d.ts'
-import type { IsCallableNode } from '../../../../../com/oracle/truffle/js/nodes/unary/IsCallableNode.d.ts'
 import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -33,12 +30,12 @@ export class ArrayFunctionBuiltinsFactory$JSArrayFromAsyncNodeGen extends ArrayF
     // private arguments2_: JavaScriptNode;
     // private arguments3_: JavaScriptNode;
     // private callRejectNode_: JSFunctionCallNode;
-    // private createAsyncFromSyncIterator__field1_: PropertyGetNode;
+    // private createAsyncFromSyncIterator__field1_: Node;
     // private getAsyncIteratorMethodNode_: GetMethodNode;
-    // private getIteratorFromMethodNode__field1_: IsCallableNode;
-    // private getIteratorFromMethodNode__field2_: JSFunctionCallNode;
-    // private getIteratorFromMethodNode__field3_: PropertyGetNode;
-    // private getIteratorFromMethodNode__field4_: InteropLibrary;
+    // private getIteratorFromMethodNode__field1_: Node;
+    // private getIteratorFromMethodNode__field2_: Node;
+    // private getIteratorFromMethodNode__field3_: Node;
+    // private getIteratorFromMethodNode__field4_: Node;
     // private getIteratorMethodNode_: GetMethodNode;
     // private getLengthNode_: JSGetLengthNode;
     // private internalCallNode_: InternalCallNode;

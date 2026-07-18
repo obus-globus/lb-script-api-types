@@ -8,8 +8,6 @@ export class Null$NullClass extends AbstractJSClass {
     static isInstance(paramobject: Object, paramjsclass: JSClass): boolean;
     private constructor()
     delete(thisObj: JSDynamicObject, key: Object, isStrict: boolean): boolean;
-    delete(thisObj: JSDynamicObject, key: Object, isStrict: boolean, resultWhenNotPresent: boolean): boolean;
     delete(thisObj: JSDynamicObject, index: number, isStrict: boolean): boolean;
-    delete(thisObj: JSDynamicObject, index: number, isStrict: boolean, resultWhenNotPresent: boolean): boolean;
     toString(): string;
 }

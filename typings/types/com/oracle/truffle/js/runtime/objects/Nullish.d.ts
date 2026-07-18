@@ -1,3 +1,4 @@
+import type { TruffleLanguage } from '../../../../../../com/oracle/truffle/api/TruffleLanguage.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { Property } from '../../../../../../com/oracle/truffle/api/object/Property.d.ts'
 import type { TruffleString } from '../../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
@@ -6,6 +7,7 @@ import type { JSClass } from '../../../../../../com/oracle/truffle/js/runtime/bu
 import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
 import type { JSSharedData } from '../../../../../../com/oracle/truffle/js/runtime/objects/JSSharedData.d.ts'
 import type { PropertyDescriptor } from '../../../../../../com/oracle/truffle/js/runtime/objects/PropertyDescriptor.d.ts'
+import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { IntUnaryOperator } from '../../../../../../java/util/function/IntUnaryOperator.d.ts'
 import type { Predicate } from '../../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -16,7 +18,8 @@ export class Nullish extends JSDynamicObject {
     static getOrDefault(paramobj: JSDynamicObject, paramkey: Object, paramdefaultValue: Object): Object;
     static getOrNull(paramobj: JSDynamicObject, paramkey: Object): Object;
     static getPropertyArray(paramobj: JSDynamicObject): Property[];
-    static getPropertyFlags(paramobj: JSDynamicObject, paramkey: Object, paramdefaultValue: number): number;
+    static getPropertyFlags(paramobj: JSDynamicObject, paramkey: Object): number;
+    static hasProperty(paramobj: JSDynamicObject, paramkey: Object): boolean;
     static isJSDynamicObject(paramobject: Object): boolean;
     static setJSClass(paramobj: JSDynamicObject, paramjsclass: JSClass): void;
     static setObjectFlags(paramobj: JSDynamicObject, paramflags: number): void;
@@ -32,7 +35,7 @@ export class Nullish extends JSDynamicObject {
     getClassName(): TruffleString;
     getHelper(thisObj: Object, name: Object, encapsulatingNode: Node): Object;
     getHelper(thisObj: Object, index: number, encapsulatingNode: Node): Object;
-    getLanguageId(): string;
+    getLanguage(): Class<TruffleLanguage<Object>>;
     getMetaObject(): Object;
     getMethodHelper(thisObj: Object, name: Object, encapsulatingNode: Node): Object;
     getOwnHelper(thisObj: Object, name: Object, encapsulatingNode: Node): Object;
@@ -40,7 +43,7 @@ export class Nullish extends JSDynamicObject {
     getOwnProperty(propertyKey: Object): PropertyDescriptor;
     getOwnPropertyKeys(string: boolean, symbols: boolean): Object[];
     getPrototypeOf(): JSDynamicObject;
-    hasLanguageId(): boolean;
+    hasLanguage(): boolean;
     hasMetaObject(): boolean;
     hasOnlyShapeProperties(): boolean;
     hasOwnProperty(propName: Object): boolean;

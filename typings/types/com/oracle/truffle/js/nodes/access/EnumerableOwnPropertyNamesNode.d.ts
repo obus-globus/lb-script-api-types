@@ -2,7 +2,6 @@ import type { InteropLibrary } from '../../../../../../com/oracle/truffle/api/in
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { ConditionProfile } from '../../../../../../com/oracle/truffle/api/profiles/ConditionProfile.d.ts'
 import type { InlinedBranchProfile } from '../../../../../../com/oracle/truffle/api/profiles/InlinedBranchProfile.d.ts'
-import type { TruffleString$FromLongNode } from '../../../../../../com/oracle/truffle/api/strings/TruffleString$FromLongNode.d.ts'
 import type { TruffleString$SwitchEncodingNode } from '../../../../../../com/oracle/truffle/api/strings/TruffleString$SwitchEncodingNode.d.ts'
 import type { TruffleString$ToJavaStringNode } from '../../../../../../com/oracle/truffle/api/strings/TruffleString$ToJavaStringNode.d.ts'
 import type { ListGetNode } from '../../../../../../com/oracle/truffle/js/builtins/helper/ListGetNode.d.ts'
@@ -29,7 +28,7 @@ export abstract class EnumerableOwnPropertyNamesNode extends JavaScriptBaseNode 
     // private values: boolean;
     // private createKeyValuePair(key: Object, value: Object): Object;
     enumerableOwnPropertyNames(thisObj: JSDynamicObject, jsclassProfile: JSClassProfile, listSize: ListSizeNode, listGet: ListGetNode, hasOnlyShapeProperties: HasOnlyShapePropertiesNode, growProfile: InlinedBranchProfile): (Object | null)[];
-    enumerableOwnPropertyNamesForeign(obj: Object, node: Node, interop: InteropLibrary, members: InteropLibrary, asString: InteropLibrary, importValue: ImportValueNode, errorBranch: InlinedBranchProfile, switchEncodingNode: TruffleString$SwitchEncodingNode, toJavaStringNode: TruffleString$ToJavaStringNode, fromLongNode: TruffleString$FromLongNode): (Object | null)[];
+    enumerableOwnPropertyNamesForeign(obj: Object, node: Node, interop: InteropLibrary, members: InteropLibrary, asString: InteropLibrary, importValue: ImportValueNode, errorBranch: InlinedBranchProfile, switchEncodingNode: TruffleString$SwitchEncodingNode, toJavaStringNode: TruffleString$ToJavaStringNode): (Object | null)[];
     execute(obj: Object): (Object | null)[];
     getOwnProperty(thisObj: JSDynamicObject, key: Object): PropertyDescriptor;
 }

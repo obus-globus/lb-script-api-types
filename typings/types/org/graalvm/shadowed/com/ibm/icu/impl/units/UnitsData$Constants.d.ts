@@ -5,7 +5,6 @@ export class UnitsData$Constants extends Object {
     static DEFAULT_REGION: string;
     static DEFAULT_USAGE: string;
     static UNIT_PREFERENCE_TABLE_NAME: string;
-    static kAliasOffset: number;
     static kCompoundPartOffset: number;
     static kInitialCompoundPartOffset: number;
     static kPowerPartOffset: number;

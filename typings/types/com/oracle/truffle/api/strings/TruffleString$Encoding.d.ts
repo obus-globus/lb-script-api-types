@@ -121,7 +121,6 @@ export class TruffleString$Encoding extends Enum<TruffleString$Encoding> {
     is7BitCompatible(): boolean;
     is8BitCompatible(): boolean;
     isFixedWidth(): boolean;
-    isForeignEndian(): boolean;
     isSingleByte(): boolean;
     isSupported(): boolean;
     isUnsupported(): boolean;

@@ -11,7 +11,6 @@ import type { JSToIndexNode } from '../../../../../com/oracle/truffle/js/nodes/c
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
 import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
-import type { TypedArrayFactory } from '../../../../../com/oracle/truffle/js/runtime/array/TypedArrayFactory.d.ts'
 import type { JSDataViewObject } from '../../../../../com/oracle/truffle/js/runtime/builtins/JSDataViewObject.d.ts'
 import type { JSDynamicObject } from '../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
@@ -26,7 +25,7 @@ export abstract class DataViewPrototypeBuiltins$DataViewGetNode extends DataView
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
-    constructor(context: JSContext, builtin: JSBuiltin, typedArrayFactory: TypedArrayFactory)
+    constructor(context: JSContext, builtin: JSBuiltin)
     doDataView(dataView: JSDataViewObject, byteOffset: Object, littleEndian: Object, toIndexNode: JSToIndexNode, toBooleanNode: JSToBooleanNode, errorBranch: InlinedBranchProfile, bufferTypeProfile: InlinedExactClassProfile, getViewByteLengthNode: GetViewByteLengthNode, getBufferElement: DataViewPrototypeBuiltins$DataViewGetNode$GetBufferElementNode): Object;
     doIncompatibleReceiver(thisObj: Object, byteOffset: Object, littleEndian: Object): JSDynamicObject;
 }

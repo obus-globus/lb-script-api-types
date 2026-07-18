@@ -10,9 +10,8 @@ export class RegexRootNode extends RootNode {
     static SHARED_EMPTY_FRAMEDESCRIPTOR: FrameDescriptor;
     static checkThreadInterrupted(): void;
     static createConstantNode(paramconstant: Object): RootNode;
-    constructor(language: RegexLanguage, source: RegexSource, body: RegexBodyNode)
+    constructor(language: RegexLanguage, body: RegexBodyNode)
     // private body: RegexBodyNode;
-    readonly source: RegexSource;
     execute(frame: VirtualFrame): Object;
     getBodyUnwrapped(): RegexBodyNode;
     getSource(): RegexSource;

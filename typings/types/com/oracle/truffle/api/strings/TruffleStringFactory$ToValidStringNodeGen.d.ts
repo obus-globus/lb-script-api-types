@@ -7,5 +7,6 @@ export class TruffleStringFactory$ToValidStringNodeGen extends TruffleString$ToV
     static getUncached(): TruffleString$ToValidStringNode;
     private constructor()
     // private state_0_: number;
+    // private state_1_: number;
     execute(arg0Value: AbstractTruffleString, arg1Value: TruffleString$Encoding): TruffleString;
 }

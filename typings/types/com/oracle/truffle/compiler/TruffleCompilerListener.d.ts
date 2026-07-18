@@ -6,6 +6,7 @@ import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export interface TruffleCompilerListener extends Object {
     onCompilationRetry(compilable: TruffleCompilable, task: TruffleCompilationTask): void;
+    onFailure(compilable: TruffleCompilable, reason: string, bailout: boolean, permanentBailout: boolean, tier: number): void;
     onFailure(compilable: TruffleCompilable, reason: string, bailout: boolean, permanentBailout: boolean, tier: number, lazyStackTrace: () => string): void;
     onGraalTierFinished(compilable: TruffleCompilable, graph: TruffleCompilerListener$GraphInfo): void;
     onSuccess(compilable: TruffleCompilable, task: TruffleCompilationTask, graph: TruffleCompilerListener$GraphInfo, compilationResultInfo: TruffleCompilerListener$CompilationResultInfo, tier: number): void;

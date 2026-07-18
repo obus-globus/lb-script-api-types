@@ -3,7 +3,6 @@ import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d
 import type { InlinedBranchProfile } from '../../../../../../com/oracle/truffle/api/profiles/InlinedBranchProfile.d.ts'
 import type { InlinedExactClassProfile } from '../../../../../../com/oracle/truffle/api/profiles/InlinedExactClassProfile.d.ts'
 import type { TruffleString } from '../../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
-import type { TruffleString$ToJavaStringNode } from '../../../../../../com/oracle/truffle/api/strings/TruffleString$ToJavaStringNode.d.ts'
 import type { CachedGetPropertyNode } from '../../../../../../com/oracle/truffle/js/nodes/access/CachedGetPropertyNode.d.ts'
 import type { ReadElementNode } from '../../../../../../com/oracle/truffle/js/nodes/access/ReadElementNode.d.ts'
 import type { ReadElementNode$GuardedReadElementTypeCacheNode } from '../../../../../../com/oracle/truffle/js/nodes/access/ReadElementNode$GuardedReadElementTypeCacheNode.d.ts'
@@ -23,7 +22,6 @@ export abstract class ReadElementNode$ForeignObjectReadElementTypeCacheNode exte
     // private optimistic: boolean;
     // private readFromPrototypeNode: CachedGetPropertyNode;
     // private toArrayIndexNode: ToArrayIndexNode;
-    // private toJavaStringNode: TruffleString$ToJavaStringNode;
     // private toPropertyKeyNode: JSToPropertyKeyNode;
     doForeignObject(target: Object, index: Object, receiver: Object, defaultValue: Object, root: ReadElementNode, classProfile: InlinedExactClassProfile, errorBranch: InlinedBranchProfile): Object;
     executeWithTargetAndIndexUnchecked(target: Object, index: number, receiver: Object, defaultValue: Object, root: ReadElementNode): Object;
@@ -32,7 +30,6 @@ export abstract class ReadElementNode$ForeignObjectReadElementTypeCacheNode exte
     guard(target: Object): boolean;
     // private maybeReadFromPrototype(truffleObject: Object, key: Object, receiver: Object, context: JSContext): Object;
     // private toArrayIndex(maybeIndex: Object): Object;
-    // private toJavaString(tString: TruffleString): string;
     // private toPropertyKey(index: Object): Object;
     // private tryGetters(thisObj: Object, key: TruffleString, context: JSContext): Object;
     // private tryInvokeGetter(thisObj: Object, prefix: TruffleString, key: TruffleString): Object;

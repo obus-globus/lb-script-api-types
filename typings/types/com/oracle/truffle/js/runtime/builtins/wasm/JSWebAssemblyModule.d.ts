@@ -28,7 +28,6 @@ export class JSWebAssemblyModule extends JSNonProxy implements JSConstructorFact
     static isInstance(paramobject: JSDynamicObject, paramjsclass: JSClass): boolean;
     static isInstance(paramobject: Object, paramjsclass: JSClass): boolean;
     static isJSWebAssemblyModule(paramobject: Object): boolean;
-    static moduleDecode(paramrealm: JSRealm, paramwasmSource: Source): Object;
     static ordinaryGetOwnProperty(paramthisObj: JSDynamicObject, paramkey: Object): PropertyDescriptor;
     static ordinaryGetOwnPropertyIntl(paramthisObj: JSDynamicObject, paramkey: Object, paramprop: Property): PropertyDescriptor;
     static ordinaryIsExtensible(paramthisObj: JSDynamicObject): boolean;

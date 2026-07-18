@@ -1,6 +1,8 @@
+import type { EmbeddedServer } from '../../../../../../io/ktor/server/engine/EmbeddedServer.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Continuation } from '../../../../../../kotlin/coroutines/Continuation.d.ts'
+import type { CompletableDeferred } from '../../../../../../kotlinx/coroutines/CompletableDeferred.d.ts'
 import type { ClientAccount } from '../../../../../../net/ccbluex/liquidbounce/api/models/auth/ClientAccount.d.ts'
 import type { OAuthSession } from '../../../../../../net/ccbluex/liquidbounce/api/models/auth/OAuthSession.d.ts'
 import type { EventListener } from '../../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
@@ -8,14 +10,15 @@ import type { Component } from '../../../../../../net/minecraft/network/chat/Com
 /**
  * OAuth client for handling the authentication flow
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt:54}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt:45}
  */
 export class OAuthClient extends Object implements EventListener {
     static INSTANCE: OAuthClient;
     // private SUCCESS_HTML: string;
-    // private authCodeContinuation: Continuation<string> | null;
+    // private authCodeDeferred: CompletableDeferred<string> | null;
     readonly debugDisplayName: Component;
     readonly running: boolean;
+    // private server: EmbeddedServer<any, any> | null;
     // private serverPort: number | null;
     // private buildAuthUrl(codeChallenge: string, state: string, redirectUri: string): string;
     children(): EventListener[];
@@ -25,7 +28,7 @@ export class OAuthClient extends Object implements EventListener {
     /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
     startAuth(onUrl: (param0: string) => void, $completion: Continuation<ClientAccount>): any;
     /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
-    // private startNettyServer($completion: Continuation<number>): any;
+    // private startKtorServer($completion: Continuation<number>): any;
     unregister(): void;
     /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
     // private waitForAuthCode($completion: Continuation<string>): any;

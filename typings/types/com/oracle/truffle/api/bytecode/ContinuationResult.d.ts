@@ -5,7 +5,6 @@ import type { MaterializedFrame } from '../../../../../com/oracle/truffle/api/fr
 import type { TruffleObject } from '../../../../../com/oracle/truffle/api/interop/TruffleObject.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ContinuationResult extends Object implements TruffleObject {
-    static create(paramrootNode: ContinuationRootNode, paramframe: MaterializedFrame, paramresult: Object): ContinuationResult;
     constructor(rootNode: ContinuationRootNode, frame: MaterializedFrame, result: Object)
     readonly frame: MaterializedFrame;
     readonly result: Object;

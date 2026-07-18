@@ -12,7 +12,6 @@ export abstract class TagTreeNode extends Node implements TagTree {
     getBytecodeNode(): BytecodeNode;
     getEnterBytecodeIndex(): number;
     getLanguage(): Class<TruffleLanguage<Object>>;
-    getLanguageId(): string;
     getReturnBytecodeIndex(): number;
     getTagsString(): string;
     toString(): string;

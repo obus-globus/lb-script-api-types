@@ -1,6 +1,7 @@
 import type { InteropLibrary } from '../../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { BigInt } from '../../../../../../com/oracle/truffle/js/runtime/BigInt.d.ts'
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
+import type { TypedArray$ElementType } from '../../../../../../com/oracle/truffle/js/runtime/array/TypedArray$ElementType.d.ts'
 import type { TypedArray$TypedBigIntArray } from '../../../../../../com/oracle/truffle/js/runtime/array/TypedArray$TypedBigIntArray.d.ts'
 import type { TypedArrayFactory } from '../../../../../../com/oracle/truffle/js/runtime/array/TypedArrayFactory.d.ts'
 import type { AbstractConstantArray } from '../../../../../../com/oracle/truffle/js/runtime/array/dyn/AbstractConstantArray.d.ts'
@@ -27,6 +28,7 @@ export class TypedArray$DirectBigUint64Array extends TypedArray$TypedBigIntArray
     getBigIntImpl(buffer: JSArrayBufferObject, offset: number, index: number, interop: InteropLibrary): BigInt;
     getBufferElement(buffer: JSArrayBufferObject, index: number, littleEndian: boolean, interop: InteropLibrary): Object;
     getBufferElementLongImpl(buffer: JSArrayBufferObject, index: number, littleEndian: boolean, interop: InteropLibrary): number;
+    getElementType(): TypedArray$ElementType;
     getLongImpl(buffer: JSArrayBufferObject, offset: number, index: number, interop: InteropLibrary): number;
     setBufferElementLongImpl(buffer: JSArrayBufferObject, index: number, littleEndian: boolean, value: number, interop: InteropLibrary): void;
     setLongImpl(buffer: JSArrayBufferObject, offset: number, index: number, value: number, interop: InteropLibrary): void;

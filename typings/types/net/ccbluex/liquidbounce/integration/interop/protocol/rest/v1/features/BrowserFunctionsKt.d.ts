@@ -1,5 +1,5 @@
+import type { Route } from '../../../../../../../../../io/ktor/server/routing/Route.d.ts'
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
-import type { Node } from '../../../../../../../../../net/ccbluex/netty/http/rest/Node.d.ts'
 export class BrowserFunctionsKt extends Object {
-    static browserRoutes(self: Node): Node;
+    static browserRoutes(self: Route): Route;
 }

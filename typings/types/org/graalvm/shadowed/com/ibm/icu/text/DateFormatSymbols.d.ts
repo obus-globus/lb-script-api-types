@@ -43,7 +43,6 @@ export class DateFormatSymbols extends Object implements Serializable, Cloneable
     // private actualLocale: ULocale;
     // private ampms: string[];
     // private ampmsNarrow: string[];
-    // private ampmsWide: string[];
     // private capitalization: JavaMap<DateFormatSymbols$CapitalizationContextUsage, boolean[]>;
     eraNames: string[];
     eras: string[];
@@ -81,12 +80,11 @@ export class DateFormatSymbols extends Object implements Serializable, Cloneable
     weekdays: string[];
     // private wideDayPeriods: string[];
     readonly zoneStrings: string[][];
-    clone(): DateFormatSymbols;
+    clone(): Object;
     // private duplicate(srcArray: string[][]): string[][];
     // private duplicate(srcArray: string[]): string[];
     equals(obj: Object | null): boolean;
     getAmPmStrings(): string[];
-    getAmPmStrings(context: number, width: number): string[];
     getEraNames(): string[];
     getEras(): string[];
     getLeapMonthPattern(context: number, width: number): string;
@@ -105,14 +103,12 @@ export class DateFormatSymbols extends Object implements Serializable, Cloneable
     getZodiacNames(context: number, width: number): string[];
     getZoneStrings(): string[][];
     hashCode(): number;
-    initEras(erasKey: string, maps: JavaMap<string, JavaMap<string, string>>, calBundle: ICUResourceBundle, maxEra: number): string[];
     initializeData(dfs: DateFormatSymbols): void;
     initializeData(desiredLocale: ULocale, type: string): void;
     initializeData(desiredLocale: ULocale, b: ICUResourceBundle, calendarType: string): void;
     // private loadDayPeriodStrings(resourceMap: JavaMap<string, string>, copyFrom: string[]): string[];
     // private readObject(stream: ObjectInputStream): void;
     setAmPmStrings(newAmpms: string[]): void;
-    setAmPmStrings(newAmpms: string[], context: number, width: number): void;
     setEraNames(newEraNames: string[]): void;
     setEras(newEras: string[]): void;
     setLeapMonthPattern(leapMonthPattern: string, context: number, width: number): void;

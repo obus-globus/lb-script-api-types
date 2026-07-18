@@ -14,7 +14,6 @@ import type { EnvironmentAccess } from '../../../org/graalvm/polyglot/Environmen
 import type { HostAccess } from '../../../org/graalvm/polyglot/HostAccess.d.ts'
 import type { HostAccess$Builder } from '../../../org/graalvm/polyglot/HostAccess$Builder.d.ts'
 import type { PolyglotAccess } from '../../../org/graalvm/polyglot/PolyglotAccess.d.ts'
-import type { PolyglotException } from '../../../org/graalvm/polyglot/PolyglotException.d.ts'
 import type { ResourceLimits } from '../../../org/graalvm/polyglot/ResourceLimits.d.ts'
 import type { SandboxPolicy } from '../../../org/graalvm/polyglot/SandboxPolicy.d.ts'
 import type { FileSystem } from '../../../org/graalvm/polyglot/io/FileSystem.d.ts'
@@ -41,7 +40,6 @@ export class Context$Builder extends Object {
     // private environment: JavaMap<string, string>;
     // private environmentAccess: EnvironmentAccess;
     // private err: OutputStream;
-    // private exceptionHandler: (param0: PolyglotException) => void;
     // private hostAccess: HostAccess;
     // private hostClassFilter: (param0: string) => boolean;
     // private hostClassLoader: ClassLoader;
@@ -56,7 +54,6 @@ export class Context$Builder extends Object {
     // private resourceLimits: ResourceLimits;
     // private sandboxPolicy: SandboxPolicy;
     // private sharedEngine: Engine;
-    // private spawnIsolate: boolean;
     // private useSystemExit: boolean;
     // private zone: ZoneId;
     allowAllAccess(enabled: boolean): Context$Builder;
@@ -82,7 +79,6 @@ export class Context$Builder extends Object {
     environment(name: string, value: string): Context$Builder;
     environment(env: JavaMap<string, string>): Context$Builder;
     err(err: OutputStream): Context$Builder;
-    exceptionHandler(handler: (param0: PolyglotException) => void): Context$Builder;
     extendHostAccess(defaultInitialValue: HostAccess, setup: (param0: HostAccess$Builder) => void): Context$Builder;
     extendIO(defaultInitialValue: IOAccess, setup: (param0: IOAccess$Builder) => void): Context$Builder;
     fileSystem(fileSystem: FileSystem): Context$Builder;
@@ -100,7 +96,6 @@ export class Context$Builder extends Object {
     resourceLimits(limits: ResourceLimits): Context$Builder;
     sandbox(policy: SandboxPolicy): Context$Builder;
     serverTransport(serverTransport: MessageTransport): Context$Builder;
-    spawnIsolate(value: boolean): Context$Builder;
     timeZone(zone: ZoneId): Context$Builder;
     useSystemExit(enabled: boolean): Context$Builder;
     // private validateSandbox(useSandboxPolicy: SandboxPolicy): void;

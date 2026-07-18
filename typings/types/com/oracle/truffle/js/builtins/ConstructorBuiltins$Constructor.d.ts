@@ -11,7 +11,6 @@ export class ConstructorBuiltins$Constructor extends Enum<ConstructorBuiltins$Co
     static AggregateError: ConstructorBuiltins$Constructor;
     static Array: ConstructorBuiltins$Constructor;
     static ArrayBuffer: ConstructorBuiltins$Constructor;
-    static AsyncDisposableStack: ConstructorBuiltins$Constructor;
     static AsyncFunction: ConstructorBuiltins$Constructor;
     static AsyncGeneratorFunction: ConstructorBuiltins$Constructor;
     static AsyncIterator: ConstructorBuiltins$Constructor;
@@ -25,12 +24,10 @@ export class ConstructorBuiltins$Constructor extends Enum<ConstructorBuiltins$Co
     static Date: ConstructorBuiltins$Constructor;
     static DateTimeFormat: ConstructorBuiltins$Constructor;
     static DisplayNames: ConstructorBuiltins$Constructor;
-    static DisposableStack: ConstructorBuiltins$Constructor;
     static Duration: ConstructorBuiltins$Constructor;
     static DurationFormat: ConstructorBuiltins$Constructor;
     static Error: ConstructorBuiltins$Constructor;
     static EvalError: ConstructorBuiltins$Constructor;
-    static Exception: ConstructorBuiltins$Constructor;
     static FinalizationRegistry: ConstructorBuiltins$Constructor;
     static Float16Array: ConstructorBuiltins$Constructor;
     static Float32Array: ConstructorBuiltins$Constructor;
@@ -73,11 +70,9 @@ export class ConstructorBuiltins$Constructor extends Enum<ConstructorBuiltins$Co
     static ShadowRealm: ConstructorBuiltins$Constructor;
     static SharedArrayBuffer: ConstructorBuiltins$Constructor;
     static String: ConstructorBuiltins$Constructor;
-    static SuppressedError: ConstructorBuiltins$Constructor;
     static Symbol: ConstructorBuiltins$Constructor;
     static SyntaxError: ConstructorBuiltins$Constructor;
     static Table: ConstructorBuiltins$Constructor;
-    static Tag: ConstructorBuiltins$Constructor;
     static TypeError: ConstructorBuiltins$Constructor;
     static TypedArray: ConstructorBuiltins$Constructor;
     static URIError: ConstructorBuiltins$Constructor;
@@ -114,5 +109,5 @@ export class ConstructorBuiltins$Constructor extends Enum<ConstructorBuiltins$Co
     isSetter(): boolean;
     isWritable(): boolean;
     prependAccessorPrefix(name: TruffleString): TruffleString;
-    name(): "Array" | "Boolean" | "Date" | "RegExp" | "String" | "Object" | "Number" | "BigInt" | "Function" | "ArrayBuffer" | "Collator" | "NumberFormat" | "ListFormat" | "PluralRules" | "DateTimeFormat" | "RelativeTimeFormat" | "Segmenter" | "DisplayNames" | "Locale" | "DurationFormat" | "Error" | "RangeError" | "TypeError" | "ReferenceError" | "SyntaxError" | "EvalError" | "URIError" | "AggregateError" | "SuppressedError" | "CompileError" | "LinkError" | "RuntimeError" | "Int8Array" | "Uint8Array" | "Uint8ClampedArray" | "Int16Array" | "Uint16Array" | "Int32Array" | "Uint32Array" | "Float16Array" | "Float32Array" | "Float64Array" | "BigInt64Array" | "BigUint64Array" | "DataView" | "Map" | "Set" | "WeakRef" | "FinalizationRegistry" | "DisposableStack" | "AsyncDisposableStack" | "WeakMap" | "WeakSet" | "Iterator" | "AsyncIterator" | "GeneratorFunction" | "Proxy" | "Promise" | "AsyncFunction" | "SharedArrayBuffer" | "AsyncGeneratorFunction" | "Global" | "Instance" | "Memory" | "Module" | "Table" | "Tag" | "Exception" | "ShadowRealm" | "Worker" | "PlainTime" | "PlainDate" | "PlainDateTime" | "Duration" | "PlainYearMonth" | "PlainMonthDay" | "Instant" | "ZonedDateTime" | "TypedArray" | "Symbol" | "AbstractModuleSource" | "JSAdapter" | "JavaImporter";
+    name(): "Array" | "Boolean" | "Date" | "RegExp" | "String" | "Object" | "Number" | "BigInt" | "Function" | "ArrayBuffer" | "Collator" | "NumberFormat" | "ListFormat" | "PluralRules" | "DateTimeFormat" | "RelativeTimeFormat" | "Segmenter" | "DisplayNames" | "Locale" | "DurationFormat" | "Error" | "RangeError" | "TypeError" | "ReferenceError" | "SyntaxError" | "EvalError" | "URIError" | "AggregateError" | "CompileError" | "LinkError" | "RuntimeError" | "Int8Array" | "Uint8Array" | "Uint8ClampedArray" | "Int16Array" | "Uint16Array" | "Int32Array" | "Uint32Array" | "Float16Array" | "Float32Array" | "Float64Array" | "BigInt64Array" | "BigUint64Array" | "DataView" | "Map" | "Set" | "WeakRef" | "FinalizationRegistry" | "WeakMap" | "WeakSet" | "Iterator" | "AsyncIterator" | "GeneratorFunction" | "Proxy" | "Promise" | "AsyncFunction" | "SharedArrayBuffer" | "AsyncGeneratorFunction" | "Global" | "Instance" | "Memory" | "Module" | "Table" | "ShadowRealm" | "Worker" | "PlainTime" | "PlainDate" | "PlainDateTime" | "Duration" | "PlainYearMonth" | "PlainMonthDay" | "Instant" | "ZonedDateTime" | "TypedArray" | "Symbol" | "AbstractModuleSource" | "JSAdapter" | "JavaImporter";
 }

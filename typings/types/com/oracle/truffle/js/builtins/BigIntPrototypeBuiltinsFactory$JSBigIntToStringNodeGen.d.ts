@@ -2,10 +2,8 @@ import type { VirtualFrame } from '../../../../../com/oracle/truffle/api/frame/V
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { TruffleString } from '../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
-import type { TruffleString$FromJavaStringNode } from '../../../../../com/oracle/truffle/api/strings/TruffleString$FromJavaStringNode.d.ts'
 import type { BigIntPrototypeBuiltins$JSBigIntToStringNode } from '../../../../../com/oracle/truffle/js/builtins/BigIntPrototypeBuiltins$JSBigIntToStringNode.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
-import type { JSToIntegerAsIntNode } from '../../../../../com/oracle/truffle/js/nodes/cast/JSToIntegerAsIntNode.d.ts'
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
 import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
@@ -25,9 +23,7 @@ export class BigIntPrototypeBuiltinsFactory$JSBigIntToStringNodeGen extends BigI
     private constructor(context: JSContext, builtin: JSBuiltin, arguments: JavaScriptNode[])
     // private arguments0_: JavaScriptNode;
     // private arguments1_: JavaScriptNode;
-    // private fromJavaString: TruffleString$FromJavaStringNode;
     // private state_0_: number;
-    // private toInteger: JSToIntegerAsIntNode;
     execute(frameValue: VirtualFrame): Object;
     // private executeAndSpecialize(arguments0Value: Object, arguments1Value: Object): TruffleString;
     // private fallbackGuard_(state_0: number, arguments0Value: Object, arguments1Value: Object): boolean;

@@ -1,7 +1,6 @@
 import type { CharacterIterator } from '../../../../../../../java/text/CharacterIterator.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Cloneable } from '../../../../../../../java/lang/Cloneable.d.ts'
-export class StringCharacterIterator extends Object implements CharacterIterator, Cloneable {
+export class StringCharacterIterator extends Object implements CharacterIterator {
     static DONE: string;
     constructor(text: string)
     constructor(text: string, pos: number)
@@ -10,7 +9,7 @@ export class StringCharacterIterator extends Object implements CharacterIterator
     // private end: number;
     // private pos: number;
     readonly text: string;
-    clone(): StringCharacterIterator;
+    clone(): Object;
     current(): string;
     equals(obj: Object | null): boolean;
     first(): string;

@@ -12,6 +12,7 @@ import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { FileAttribute } from '../../../../java/nio/file/attribute/FileAttribute.d.ts'
 import type { FileSystemProvider } from '../../../../java/nio/file/spi/FileSystemProvider.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { AbstractPolyglotImpl } from '../../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl.d.ts'
 export class FileSystems$NIOFileSystem extends Object implements FileSystems$PolyglotFileSystem {
     constructor(fileSystem: FileSystem, hostTmpDirPath: string, isDefault: boolean)
     // private fileSystem: FileSystem;
@@ -34,7 +35,7 @@ export class FileSystems$NIOFileSystem extends Object implements FileSystems$Pol
     hasNoAccess(): boolean;
     isFileStoreReadOnly(path: Path): boolean;
     isHost(): boolean;
-    isInternal(): boolean;
+    isInternal(polyglot: AbstractPolyglotImpl): boolean;
     isSameFile(path1: Path, path2: Path, ...options: LinkOption[]): boolean;
     move(source: Path, target: Path, ...options: CopyOption[]): void;
     newByteChannel(path: Path, options: OpenOption[], ...attrs: FileAttribute<Object>[]): SeekableByteChannel;

@@ -7,6 +7,8 @@ export class TruffleStringFactory$FromNativePointerNodeGen extends TruffleString
     static create(): TruffleString$FromNativePointerNode;
     static getUncached(): TruffleString$FromNativePointerNode;
     private constructor()
+    // private fromBufferWithStringCompactionNode__field1_: number;
+    // private fromNativePointerNode__field1_: number;
     // private interopLibrary_: Node;
     // private state_0_: number;
     execute(arg0Value: Object, arg1Value: number, arg2Value: number, arg3Value: TruffleString$Encoding, arg4Value: boolean): TruffleString;

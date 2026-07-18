@@ -1,3 +1,4 @@
+import type { TruffleLanguage } from '../../../../com/oracle/truffle/api/TruffleLanguage.d.ts'
 import type { ExceptionType } from '../../../../com/oracle/truffle/api/interop/ExceptionType.d.ts'
 import type { InteropLibrary } from '../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { TruffleObject } from '../../../../com/oracle/truffle/api/interop/TruffleObject.d.ts'
@@ -11,7 +12,6 @@ import type { HostObject$LookupFieldNode } from '../../../../com/oracle/truffle/
 import type { HostObject$LookupFunctionalMethodNode } from '../../../../com/oracle/truffle/host/HostObject$LookupFunctionalMethodNode.d.ts'
 import type { HostObject$LookupInnerClassNode } from '../../../../com/oracle/truffle/host/HostObject$LookupInnerClassNode.d.ts'
 import type { HostObject$LookupMethodNode } from '../../../../com/oracle/truffle/host/HostObject$LookupMethodNode.d.ts'
-import type { HostObject$LookupThisFieldNode } from '../../../../com/oracle/truffle/host/HostObject$LookupThisFieldNode.d.ts'
 import type { HostObject$ReadFieldNode } from '../../../../com/oracle/truffle/host/HostObject$ReadFieldNode.d.ts'
 import type { HostObject$WriteFieldNode } from '../../../../com/oracle/truffle/host/HostObject$WriteFieldNode.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
@@ -31,7 +31,6 @@ export class HostObject extends Object implements TruffleObject {
     asClass(): Class<Object>;
     asDate(): LocalDate;
     asDuration(): Duration;
-    asHostObject(): Object;
     asInstant(): Instant;
     asStaticClass(): Class<Object>;
     asString(node: Node, thisLibrary: InteropLibrary, strings: InteropLibrary, error: InlinedBranchProfile): string;
@@ -50,14 +49,14 @@ export class HostObject extends Object implements TruffleObject {
     bigIntegerFitsInLong(): boolean;
     bigIntegerFitsInShort(): boolean;
     equals(o: Object | null): boolean;
-    execute(args: Object[], node: Node, hostExecute: HostExecuteNode, lookupMethod: HostObject$LookupFunctionalMethodNode, error: InlinedBranchProfile): Object;
+    execute(args: Object[], node: Node, doExecute: HostExecuteNode, lookupMethod: HostObject$LookupFunctionalMethodNode, error: InlinedBranchProfile): Object;
     getExceptionCause(): Object;
     getExceptionExitStatus(node: Node, error: InlinedBranchProfile): number;
     getExceptionMessage(node: Node, error: InlinedBranchProfile): Object;
     getExceptionStackTrace(): Object;
     getExceptionType(node: Node, error: InlinedBranchProfile): ExceptionType;
     getHostClassCache(): HostClassCache;
-    getLanguageId(): string;
+    getLanguage(): Class<TruffleLanguage<Object>>;
     getLookupClass(): Class<Object>;
     getMembers(includeInternal: boolean): Object;
     getMetaObject(): Object;
@@ -65,17 +64,15 @@ export class HostObject extends Object implements TruffleObject {
     getMetaQualifiedName(): Object;
     getMetaSimpleName(): Object;
     getObjectClass(): Class<Object>;
-    getStaticScope(node: Node, error: InlinedBranchProfile): Object;
     hasExceptionCause(): boolean;
     hasExceptionMessage(): boolean;
     hasExceptionStackTrace(): boolean;
-    hasLanguageId(): boolean;
+    hasLanguage(): boolean;
     hasMembers(): boolean;
     hasMetaObject(): boolean;
     hasMetaParents(): boolean;
-    hasStaticScope(): boolean;
     hashCode(): number;
-    invokeMember(name: string, args: Object[], node: Node, lookupMethod: HostObject$LookupMethodNode, hostExecute: HostExecuteNode, lookupField: HostObject$LookupFieldNode, readField: HostObject$ReadFieldNode, fieldValues: InteropLibrary, error: InlinedBranchProfile): Object;
+    invokeMember(name: string, args: Object[], node: Node, lookupMethod: HostObject$LookupMethodNode, executeMethod: HostExecuteNode, lookupField: HostObject$LookupFieldNode, readField: HostObject$ReadFieldNode, fieldValues: InteropLibrary, error: InlinedBranchProfile): Object;
     isArray(hostClassCache: HostClassCache): boolean;
     isArrayClass(): boolean;
     isBigInteger(): boolean;
@@ -89,26 +86,22 @@ export class HostObject extends Object implements TruffleObject {
     isException(): boolean;
     isExceptionIncompleteSource(node: Node, error: InlinedBranchProfile): boolean;
     isExecutable(node: Node, lookupMethod: HostObject$LookupFunctionalMethodNode): boolean;
-    isHostObject(): boolean;
     isIterable(hostClassCache: HostClassCache): boolean;
     isIteratorLocal(hostClassCache: HostClassCache): boolean;
     isList(hostClassCache: HostClassCache): boolean;
     isMap(hostClassCache: HostClassCache): boolean;
     isMapEntry(hostClassCache: HostClassCache): boolean;
-    isMemberInsertable(member: string, node: Node, lookupThisField: HostObject$LookupThisFieldNode, readField: HostObject$ReadFieldNode, interop: InteropLibrary): boolean;
-    isMemberRemovable(member: string, node: Node, lookupThisField: HostObject$LookupThisFieldNode, readField: HostObject$ReadFieldNode, interop: InteropLibrary): boolean;
-    isMetaInstance(other: Object, node: Node, error: InlinedBranchProfile): boolean;
+    isMemberInsertable(member: string): boolean;
+    isMetaInstance(other: Object, node: Node, library: InteropLibrary, error: InlinedBranchProfile): boolean;
     isMetaObject(): boolean;
     isNull(): boolean;
-    isScope(): boolean;
     isStaticClass(): boolean;
     isString(node: Node, classProfile: InlinedExactClassProfile): boolean;
     isTime(): boolean;
     isTimeZone(): boolean;
-    readMember(name: string, node: Node, lookupField: HostObject$LookupFieldNode, readField: HostObject$ReadFieldNode, lookupMethod: HostObject$LookupMethodNode, lookupInnerClass: HostObject$LookupInnerClassNode, lookupThisField: HostObject$LookupThisFieldNode, interop: InteropLibrary, error: InlinedBranchProfile): Object;
-    removeMember(member: string, node: Node, lookupThisField: HostObject$LookupThisFieldNode, readField: HostObject$ReadFieldNode, interop: InteropLibrary, error: InlinedBranchProfile): void;
+    readMember(name: string, node: Node, lookupField: HostObject$LookupFieldNode, readField: HostObject$ReadFieldNode, lookupMethod: HostObject$LookupMethodNode, lookupInnerClass: HostObject$LookupInnerClassNode, error: InlinedBranchProfile): Object;
     throwException(node: Node, error: InlinedBranchProfile): RuntimeException;
     toDisplayString(allowSideEffects: boolean): string;
     toString(): string;
-    writeMember(member: string, value: Object, node: Node, lookupField: HostObject$LookupFieldNode, lookupThisField: HostObject$LookupThisFieldNode, readField: HostObject$ReadFieldNode, writeField: HostObject$WriteFieldNode, interop: InteropLibrary, error: InlinedBranchProfile): void;
+    writeMember(member: string, value: Object, node: Node, lookupField: HostObject$LookupFieldNode, writeField: HostObject$WriteFieldNode, error: InlinedBranchProfile): void;
 }

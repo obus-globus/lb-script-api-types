@@ -10,7 +10,6 @@ import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/f
 import type { JSFunctionCallNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSFunctionCallNode.d.ts'
 import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
 import type { JSAsyncFromSyncIteratorObject } from '../../../../../com/oracle/truffle/js/runtime/builtins/JSAsyncFromSyncIteratorObject.d.ts'
-import type { IteratorRecord } from '../../../../../com/oracle/truffle/js/runtime/objects/IteratorRecord.d.ts'
 import type { PromiseCapabilityRecord } from '../../../../../com/oracle/truffle/js/runtime/objects/PromiseCapabilityRecord.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -29,5 +28,5 @@ export abstract class AsyncFromSyncIteratorPrototypeBuiltins$AsyncFromSyncMethod
     // private executeReturnMethod: JSFunctionCallNode;
     doMethod(frame: VirtualFrame, thisObj: JSAsyncFromSyncIteratorObject, value: Object, valuePresenceProfile: InlinedConditionProfile): Object;
     getMethod(): GetMethodNode;
-    processUndefinedMethod(promiseCapability: PromiseCapabilityRecord, value: Object, syncIterator: IteratorRecord): Object;
+    processUndefinedMethod(promiseCapability: PromiseCapabilityRecord, value: Object, syncIterator: Object): Object;
 }

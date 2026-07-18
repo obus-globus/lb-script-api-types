@@ -1,15 +1,10 @@
-import type { ZoneOffsetTransition } from '../../../../../../java/time/zone/ZoneOffsetTransition.d.ts'
 import type { ZoneRules } from '../../../../../../java/time/zone/ZoneRules.d.ts'
 import type { Date } from '../../../../../../java/util/Date.d.ts'
 import type { Locale } from '../../../../../../java/util/Locale.d.ts'
-import type { BasicTimeZone } from '../../../../../../org/graalvm/shadowed/com/ibm/icu/util/BasicTimeZone.d.ts'
-import type { BasicTimeZone$LocalOption } from '../../../../../../org/graalvm/shadowed/com/ibm/icu/util/BasicTimeZone$LocalOption.d.ts'
 import type { TimeZone } from '../../../../../../org/graalvm/shadowed/com/ibm/icu/util/TimeZone.d.ts'
 import type { TimeZone$SystemTimeZoneType } from '../../../../../../org/graalvm/shadowed/com/ibm/icu/util/TimeZone$SystemTimeZoneType.d.ts'
-import type { TimeZoneRule } from '../../../../../../org/graalvm/shadowed/com/ibm/icu/util/TimeZoneRule.d.ts'
-import type { TimeZoneTransition } from '../../../../../../org/graalvm/shadowed/com/ibm/icu/util/TimeZoneTransition.d.ts'
 import type { ULocale } from '../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
-export class ZoneRulesBasedTimeZone extends BasicTimeZone {
+export class ZoneRulesBasedTimeZone extends TimeZone {
     static GENERIC_LOCATION: number;
     static GMT_ZONE: TimeZone;
     static LONG: number;
@@ -48,17 +43,11 @@ export class ZoneRulesBasedTimeZone extends BasicTimeZone {
     static setICUDefault(paramtz: TimeZone): void;
     constructor(id: string, rules: ZoneRules)
     // private rules: ZoneRules;
-    getNextTransition(base: number, inclusive: boolean): TimeZoneTransition;
     getOffset(era: number, year: number, month: number, day: number, dayOfWeek: number, milliseconds: number): number;
     getOffset(date: number): number;
     getOffset(date: number, local: boolean, offsets: number[]): void;
-    getOffsetFromLocal(date: number, nonExistingTimeOpt: BasicTimeZone$LocalOption, duplicatedTimeOpt: BasicTimeZone$LocalOption, offsets: number[]): void;
-    getPreviousTransition(base: number, inclusive: boolean): TimeZoneTransition;
     getRawOffset(): number;
-    getTimeZoneRules(): TimeZoneRule[];
-    getTimeZoneRules(start: number): TimeZoneRule[];
     inDaylightTime(date: Date): boolean;
     setRawOffset(offsetMillis: number): void;
-    // private toTimeZoneTransition(transition: ZoneOffsetTransition): TimeZoneTransition;
     useDaylightTime(): boolean;
 }

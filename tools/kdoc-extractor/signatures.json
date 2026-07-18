@@ -2120,46 +2120,6 @@
         "suspend": true
       }
     ],
-    "net.ccbluex.liquidbounce.api.services.auth.OAuthClient.NettyAuthHandler.channelRead0": [
-      {
-        "params": [
-          {
-            "name": "ctx",
-            "type": "ChannelHandlerContext",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "msg",
-            "type": "FullHttpRequest",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt",
-          "line": 121
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.api.services.auth.OAuthClient.NettyChannelInitializer.initChannel": [
-      {
-        "params": [
-          {
-            "name": "ch",
-            "type": "SocketChannel",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt",
-          "line": 115
-        }
-      }
-    ],
     "net.ccbluex.liquidbounce.api.services.auth.OAuthClient.buildAuthUrl": [
       {
         "params": [
@@ -2185,7 +2145,7 @@
         "returns": "String",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt",
-          "line": 154
+          "line": 126
         }
       }
     ],
@@ -2202,7 +2162,7 @@
         "returns": "OAuthSession",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt",
-          "line": 91
+          "line": 86
         },
         "suspend": true
       }
@@ -2220,18 +2180,18 @@
         "returns": "ClientAccount",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt",
-          "line": 67
+          "line": 62
         },
         "suspend": true
       }
     ],
-    "net.ccbluex.liquidbounce.api.services.auth.OAuthClient.startNettyServer": [
+    "net.ccbluex.liquidbounce.api.services.auth.OAuthClient.startKtorServer": [
       {
         "params": [],
         "returns": "Int",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt",
-          "line": 96
+          "line": 91
         },
         "suspend": true
       }
@@ -2242,7 +2202,7 @@
         "returns": "String",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt",
-          "line": 160
+          "line": 131
         },
         "suspend": true
       }
@@ -14387,7 +14347,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-          "line": 373
+          "line": 372
         }
       }
     ],
@@ -14404,7 +14364,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-          "line": 383
+          "line": 382
         }
       }
     ],
@@ -14427,7 +14387,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-          "line": 415
+          "line": 414
         }
       }
     ],
@@ -14444,7 +14404,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-          "line": 354
+          "line": 353
         }
       }
     ],
@@ -14467,7 +14427,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-          "line": 393
+          "line": 392
         }
       }
     ],
@@ -14484,7 +14444,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-          "line": 363
+          "line": 362
         }
       }
     ],
@@ -14501,7 +14461,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-          "line": 229
+          "line": 228
         },
         "suspend": true
       }
@@ -14512,7 +14472,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-          "line": 128
+          "line": 127
         },
         "suspend": true
       }
@@ -14523,7 +14483,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-          "line": 195
+          "line": 194
         }
       }
     ],
@@ -14540,7 +14500,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-          "line": 265
+          "line": 264
         }
       }
     ],
@@ -14557,7 +14517,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-          "line": 349
+          "line": 348
         }
       }
     ],
@@ -14574,7 +14534,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-          "line": 253
+          "line": 252
         }
       }
     ],
@@ -14584,7 +14544,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-          "line": 204
+          "line": 203
         },
         "suspend": true
       }
@@ -14595,7 +14555,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-          "line": 213
+          "line": 212
         }
       }
     ],
@@ -14612,7 +14572,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-          "line": 218
+          "line": 217
         }
       }
     ],
@@ -14629,7 +14589,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-          "line": 261
+          "line": 260
         }
       }
     ],
@@ -14652,7 +14612,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-          "line": 223
+          "line": 222
         }
       }
     ],
@@ -14669,7 +14629,7 @@
         "returns": "String",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-          "line": 239
+          "line": 238
         },
         "suspend": true
       }
@@ -14687,7 +14647,7 @@
         "returns": "String",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-          "line": 322
+          "line": 321
         }
       }
     ],
@@ -14704,7 +14664,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-          "line": 234
+          "line": 233
         },
         "suspend": true
       }
@@ -55552,21 +55512,47 @@
         }
       }
     ],
-    "net.ccbluex.liquidbounce.integration.interop.ClientInteropServer.getRootResponse": [
+    "net.ccbluex.liquidbounce.integration.interop.ApplicationExtensionsKt.installCors": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/ApplicationExtensions.kt",
+          "line": 36
+        },
+        "isExtension": true,
+        "receiver": "Application"
+      }
+    ],
+    "net.ccbluex.liquidbounce.integration.interop.ApplicationExtensionsKt.installGson": [
       {
         "params": [
           {
-            "name": "requestObject",
-            "type": "RequestObject",
+            "name": "gson",
+            "type": "Gson",
             "nullable": false,
             "vararg": false
           }
         ],
         "returns": null,
         "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/ApplicationExtensions.kt",
+          "line": 31
+        },
+        "isExtension": true,
+        "receiver": "Application"
+      }
+    ],
+    "net.ccbluex.liquidbounce.integration.interop.ClientInteropServer.rootResponse": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/ClientInteropServer.kt",
-          "line": 118
-        }
+          "line": 172
+        },
+        "isExtension": true,
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.ClientInteropServer.start": [
@@ -55575,7 +55561,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/ClientInteropServer.kt",
-          "line": 58
+          "line": 74
         },
         "suspend": true
       }
@@ -55588,12 +55574,18 @@
             "type": "Int",
             "nullable": false,
             "vararg": false
+          },
+          {
+            "name": "authCode",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
           }
         ],
         "returns": "Int",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/ClientInteropServer.kt",
-          "line": 96
+          "line": 95
         },
         "suspend": true
       }
@@ -55604,84 +55596,203 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/ClientInteropServer.kt",
-          "line": 90
+          "line": 88
         },
         "suspend": true
       }
     ],
-    "net.ccbluex.liquidbounce.integration.interop.middleware.AuthMiddleware.invoke": [
+    "net.ccbluex.liquidbounce.integration.interop.HttpStatusException.constructor": [
       {
         "params": [
           {
-            "name": "context",
-            "type": "RequestContext",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "FullHttpResponse?",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/middleware/AuthMiddleware.kt",
-          "line": 58
-        }
-      },
-      {
-        "params": [
-          {
-            "name": "context",
-            "type": "RequestContext",
+            "name": "status",
+            "type": "HttpStatusCode",
             "nullable": false,
             "vararg": false
           },
           {
-            "name": "response",
-            "type": "FullHttpResponse",
+            "name": "body",
+            "type": "Map<String, String>",
             "nullable": false,
             "vararg": false
           }
         ],
-        "returns": "FullHttpResponse",
+        "returns": null,
         "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/middleware/AuthMiddleware.kt",
-          "line": 75
-        }
-      },
-      {
-        "params": [
-          {
-            "name": "ctx",
-            "type": "ChannelHandlerContext",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "request",
-            "type": "HttpRequest",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "FullHttpResponse?",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/middleware/AuthMiddleware.kt",
-          "line": 101
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/HttpStatusException.kt",
+          "line": 25
         }
       }
     ],
-    "net.ccbluex.liquidbounce.integration.interop.middleware.AuthMiddleware.isAuthenticated": [
+    "net.ccbluex.liquidbounce.integration.interop.HttpStatusExceptionKt.badRequest": [
       {
         "params": [
           {
-            "name": "headers",
-            "type": "HttpHeaders",
+            "name": "reason",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Nothing",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/HttpStatusException.kt",
+          "line": 30
+        },
+        "suspend": true,
+        "isExtension": true,
+        "receiver": "ApplicationCall"
+      }
+    ],
+    "net.ccbluex.liquidbounce.integration.interop.HttpStatusExceptionKt.forbidden": [
+      {
+        "params": [
+          {
+            "name": "reason",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Nothing",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/HttpStatusException.kt",
+          "line": 33
+        },
+        "suspend": true,
+        "isExtension": true,
+        "receiver": "ApplicationCall"
+      }
+    ],
+    "net.ccbluex.liquidbounce.integration.interop.HttpStatusExceptionKt.internalServerError": [
+      {
+        "params": [
+          {
+            "name": "reason",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Nothing",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/HttpStatusException.kt",
+          "line": 45
+        },
+        "suspend": true,
+        "isExtension": true,
+        "receiver": "ApplicationCall"
+      }
+    ],
+    "net.ccbluex.liquidbounce.integration.interop.HttpStatusExceptionKt.notFound": [
+      {
+        "params": [
+          {
+            "name": "path",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "reason",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Nothing",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/HttpStatusException.kt",
+          "line": 39
+        },
+        "suspend": true,
+        "isExtension": true,
+        "receiver": "ApplicationCall"
+      }
+    ],
+    "net.ccbluex.liquidbounce.integration.interop.HttpStatusExceptionKt.serviceUnavailable": [
+      {
+        "params": [
+          {
+            "name": "reason",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Nothing",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/HttpStatusException.kt",
+          "line": 42
+        },
+        "suspend": true,
+        "isExtension": true,
+        "receiver": "ApplicationCall"
+      }
+    ],
+    "net.ccbluex.liquidbounce.integration.interop.HttpStatusExceptionKt.unauthorized": [
+      {
+        "params": [
+          {
+            "name": "reason",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Nothing",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/HttpStatusException.kt",
+          "line": 36
+        },
+        "suspend": true,
+        "isExtension": true,
+        "receiver": "ApplicationCall"
+      }
+    ],
+    "net.ccbluex.liquidbounce.integration.interop.middleware.AuthPluginKt.isAuthenticated": [
+      {
+        "params": [
+          {
+            "name": "call",
+            "type": "ApplicationCall",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "authCode",
+            "type": "String",
             "nullable": false,
             "vararg": false
           }
         ],
         "returns": "Boolean",
         "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/middleware/AuthMiddleware.kt",
-          "line": 45
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/middleware/AuthPlugin.kt",
+          "line": 65
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.integration.interop.middleware.AuthPluginKt.isWebSocketAuthenticated": [
+      {
+        "params": [
+          {
+            "name": "session",
+            "type": "WebSocketServerSession",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "authCode",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Boolean",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/middleware/AuthPlugin.kt",
+          "line": 69
         }
       }
     ],
@@ -55742,7 +55853,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/event/SocketEventListener.kt",
-          "line": 52
+          "line": 51
         }
       }
     ],
@@ -55752,7 +55863,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/event/SocketEventListener.kt",
-          "line": 48
+          "line": 47
         }
       }
     ],
@@ -55769,7 +55880,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/event/SocketEventListener.kt",
-          "line": 86
+          "line": 85
         }
       }
     ],
@@ -55786,7 +55897,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/event/SocketEventListener.kt",
-          "line": 69
+          "line": 68
         }
       }
     ],
@@ -55803,22 +55914,148 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/event/SocketEventListener.kt",
-          "line": 78
+          "line": 77
         }
       }
     ],
-    "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.HttpHelperKt.respondInputStream": [
+    "net.ccbluex.liquidbounce.integration.interop.protocol.event.SseSessionManager.add": [
       {
         "params": [
           {
-            "name": "inputStream",
-            "type": "InputStream",
+            "name": "session",
+            "type": "ServerSSESession",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/event/SseSessionManager.kt",
+          "line": 32
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.integration.interop.protocol.event.SseSessionManager.broadcast": [
+      {
+        "params": [
+          {
+            "name": "eventName",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "eventJson",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "onError",
+            "type": "(ServerSSESession, Throwable) -> Unit",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/event/SseSessionManager.kt",
+          "line": 40
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.integration.interop.protocol.event.SseSessionManager.remove": [
+      {
+        "params": [
+          {
+            "name": "session",
+            "type": "ServerSSESession",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/event/SseSessionManager.kt",
+          "line": 36
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.integration.interop.protocol.event.WebSocketSessionManager.add": [
+      {
+        "params": [
+          {
+            "name": "session",
+            "type": "WebSocketSession",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/event/WebSocketSessionManager.kt",
+          "line": 32
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.integration.interop.protocol.event.WebSocketSessionManager.broadcast": [
+      {
+        "params": [
+          {
+            "name": "message",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "onError",
+            "type": "(WebSocketSession, Throwable) -> Unit",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/event/WebSocketSessionManager.kt",
+          "line": 40
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.integration.interop.protocol.event.WebSocketSessionManager.remove": [
+      {
+        "params": [
+          {
+            "name": "session",
+            "type": "WebSocketSession",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/event/WebSocketSessionManager.kt",
+          "line": 36
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.HttpHelperKt.respondImage": [
+      {
+        "params": [
+          {
+            "name": "image",
+            "type": "NativeImage",
             "nullable": false,
             "vararg": false
           },
           {
             "name": "contentType",
-            "type": "String?",
+            "type": "ContentType?",
+            "nullable": true,
+            "vararg": false
+          },
+          {
+            "name": "status",
+            "type": "HttpStatusCode?",
             "nullable": true,
             "vararg": false
           }
@@ -55826,7 +56063,101 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/HttpHelper.kt",
-          "line": 28
+          "line": 44
+        },
+        "suspend": true,
+        "isExtension": true,
+        "receiver": "ApplicationCall"
+      },
+      {
+        "params": [
+          {
+            "name": "image",
+            "type": "BufferedImage",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "contentType",
+            "type": "ContentType?",
+            "nullable": true,
+            "vararg": false
+          },
+          {
+            "name": "status",
+            "type": "HttpStatusCode?",
+            "nullable": true,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/HttpHelper.kt",
+          "line": 52
+        },
+        "suspend": true,
+        "isExtension": true,
+        "receiver": "ApplicationCall"
+      }
+    ],
+    "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.HttpHelperKt.respondJsonWriter": [
+      {
+        "params": [
+          {
+            "name": "contentType",
+            "type": "ContentType?",
+            "nullable": true,
+            "vararg": false
+          },
+          {
+            "name": "status",
+            "type": "HttpStatusCode?",
+            "nullable": true,
+            "vararg": false
+          },
+          {
+            "name": "block",
+            "type": "suspend JsonWriter.() -> Unit",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/HttpHelper.kt",
+          "line": 60
+        },
+        "suspend": true,
+        "isExtension": true,
+        "receiver": "ApplicationCall"
+      }
+    ],
+    "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.HttpHelperKt.respondResource": [
+      {
+        "params": [
+          {
+            "name": "resource",
+            "type": "Resource",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "contentType",
+            "type": "ContentType?",
+            "nullable": true,
+            "vararg": false
+          },
+          {
+            "name": "status",
+            "type": "HttpStatusCode?",
+            "nullable": true,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/HttpHelper.kt",
+          "line": 34
         },
         "suspend": true,
         "isExtension": true,
@@ -55839,10 +56170,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/InteropFunctionRegistry.kt",
-          "line": 46
+          "line": 47
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.AccountFunctionsKt.accountRoutes": [
@@ -55851,10 +56182,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/AccountFunctions.kt",
-          "line": 217
+          "line": 224
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.AccountFunctionsKt.deleteAccount": [
@@ -55863,10 +56194,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/AccountFunctions.kt",
-          "line": 192
+          "line": 199
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.AccountFunctionsKt.deleteFavoriteAccount": [
@@ -55875,10 +56206,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/AccountFunctions.kt",
-          "line": 182
+          "line": 189
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.AccountFunctionsKt.generateName": [
@@ -55887,10 +56218,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/AccountFunctions.kt",
-          "line": 211
+          "line": 218
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.AccountFunctionsKt.getAccounts": [
@@ -55899,10 +56230,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/AccountFunctions.kt",
-          "line": 38
+          "line": 45
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.AccountFunctionsKt.postClipboardMicrosoftAccount": [
@@ -55911,10 +56242,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/AccountFunctions.kt",
-          "line": 66
+          "line": 73
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.AccountFunctionsKt.postGenerateAlteningAccount": [
@@ -55923,10 +56254,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/AccountFunctions.kt",
-          "line": 106
+          "line": 113
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.AccountFunctionsKt.postLoginAccount": [
@@ -55935,10 +56266,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/AccountFunctions.kt",
-          "line": 136
+          "line": 143
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.AccountFunctionsKt.postLoginCrackedAccount": [
@@ -55947,10 +56278,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/AccountFunctions.kt",
-          "line": 146
+          "line": 153
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.AccountFunctionsKt.postLoginSessionAccount": [
@@ -55959,10 +56290,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/AccountFunctions.kt",
-          "line": 156
+          "line": 163
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.AccountFunctionsKt.postNewAlteningAccount": [
@@ -55971,10 +56302,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/AccountFunctions.kt",
-          "line": 97
+          "line": 104
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.AccountFunctionsKt.postNewCrackedAccount": [
@@ -55983,10 +56314,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/AccountFunctions.kt",
-          "line": 77
+          "line": 84
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.AccountFunctionsKt.postNewMicrosoftAccount": [
@@ -55995,10 +56326,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/AccountFunctions.kt",
-          "line": 57
+          "line": 64
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.AccountFunctionsKt.postNewSessionAccount": [
@@ -56007,10 +56338,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/AccountFunctions.kt",
-          "line": 87
+          "line": 94
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.AccountFunctionsKt.postOrderAccounts": [
@@ -56019,10 +56350,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/AccountFunctions.kt",
-          "line": 126
+          "line": 133
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.AccountFunctionsKt.postRestoreInitial": [
@@ -56031,10 +56362,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/AccountFunctions.kt",
-          "line": 166
+          "line": 173
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.AccountFunctionsKt.postSwapAccounts": [
@@ -56043,10 +56374,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/AccountFunctions.kt",
-          "line": 116
+          "line": 123
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.AccountFunctionsKt.putFavoriteAccount": [
@@ -56055,10 +56386,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/AccountFunctions.kt",
-          "line": 172
+          "line": 179
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ClientFunctionsKt.clientRoutes": [
@@ -56067,10 +56398,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ClientFunctions.kt",
-          "line": 169
+          "line": 177
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ClientFunctionsKt.getClientInfo": [
@@ -56079,10 +56410,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ClientFunctions.kt",
-          "line": 40
+          "line": 48
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ClientFunctionsKt.getUpdateInfo": [
@@ -56091,10 +56422,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ClientFunctions.kt",
-          "line": 58
+          "line": 66
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ClientFunctionsKt.getWindowInfo": [
@@ -56103,10 +56434,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ClientFunctions.kt",
-          "line": 98
+          "line": 106
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ClientFunctionsKt.postBrowse": [
@@ -56115,10 +56446,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ClientFunctions.kt",
-          "line": 110
+          "line": 118
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ClientFunctionsKt.postBrowsePath": [
@@ -56127,10 +56458,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ClientFunctions.kt",
-          "line": 122
+          "line": 130
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ClientFunctionsKt.postExit": [
@@ -56139,10 +56470,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ClientFunctions.kt",
-          "line": 81
+          "line": 89
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ClientFunctionsKt.postFileDialog": [
@@ -56151,10 +56482,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ClientFunctions.kt",
-          "line": 146
+          "line": 154
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ClientFunctionsKt.putHudEditorState": [
@@ -56163,10 +56494,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ClientFunctions.kt",
-          "line": 87
+          "line": 95
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ComponentFunctionsKt.componentRoutes": [
@@ -56175,10 +56506,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ComponentFunctions.kt",
-          "line": 134
+          "line": 139
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ComponentFunctionsKt.getComponentCatalog": [
@@ -56187,10 +56518,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ComponentFunctions.kt",
-          "line": 52
+          "line": 58
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ComponentFunctionsKt.getComponentSettings": [
@@ -56199,10 +56530,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ComponentFunctions.kt",
-          "line": 109
+          "line": 114
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ComponentFunctionsKt.getComponents": [
@@ -56211,10 +56542,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ComponentFunctions.kt",
-          "line": 44
+          "line": 51
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ComponentFunctionsKt.getNativeComponents": [
@@ -56223,10 +56554,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ComponentFunctions.kt",
-          "line": 36
+          "line": 44
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ComponentFunctionsKt.postComponent": [
@@ -56235,10 +56566,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ComponentFunctions.kt",
-          "line": 60
+          "line": 65
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ComponentFunctionsKt.postComponentAlignment": [
@@ -56247,10 +56578,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ComponentFunctions.kt",
-          "line": 91
+          "line": 96
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ComponentFunctionsKt.postComponentZIndex": [
@@ -56259,10 +56590,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ComponentFunctions.kt",
-          "line": 74
+          "line": 79
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ComponentFunctionsKt.putComponentSettings": [
@@ -56271,10 +56602,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ComponentFunctions.kt",
-          "line": 118
+          "line": 123
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.GlobalFunctionsKt.getGlobalConfig": [
@@ -56283,10 +56614,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/GlobalFunctions.kt",
-          "line": 27
+          "line": 32
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.GlobalFunctionsKt.globalRoutes": [
@@ -56295,10 +56626,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/GlobalFunctions.kt",
-          "line": 37
+          "line": 42
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.GlobalFunctionsKt.putGlobalConfig": [
@@ -56307,10 +56638,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/GlobalFunctions.kt",
-          "line": 31
+          "line": 36
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.LocalStorageData.Item.constructor": [
@@ -56332,7 +56663,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/LocalStorageFunctions.kt",
-          "line": 39
+          "line": 45
         }
       }
     ],
@@ -56349,7 +56680,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/LocalStorageFunctions.kt",
-          "line": 38
+          "line": 44
         }
       }
     ],
@@ -56359,10 +56690,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/LocalStorageFunctions.kt",
-          "line": 63
+          "line": 69
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.LocalStorageFunctionsKt.getAllLocalStorage": [
@@ -56371,10 +56702,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/LocalStorageFunctions.kt",
-          "line": 70
+          "line": 76
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.LocalStorageFunctionsKt.getLocalStorage": [
@@ -56383,10 +56714,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/LocalStorageFunctions.kt",
-          "line": 43
+          "line": 49
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.LocalStorageFunctionsKt.localStorageRoutes": [
@@ -56395,10 +56726,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/LocalStorageFunctions.kt",
-          "line": 86
+          "line": 92
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.LocalStorageFunctionsKt.putAllLocalStorage": [
@@ -56407,10 +56738,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/LocalStorageFunctions.kt",
-          "line": 75
+          "line": 81
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.LocalStorageFunctionsKt.putLocalStorage": [
@@ -56419,10 +56750,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/LocalStorageFunctions.kt",
-          "line": 53
+          "line": 59
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.MarketplaceFunctionsKt.getMarketplaceItem": [
@@ -56431,10 +56762,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/MarketplaceFunctions.kt",
-          "line": 73
+          "line": 79
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.MarketplaceFunctionsKt.getMarketplaceItemReviews": [
@@ -56443,10 +56774,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/MarketplaceFunctions.kt",
-          "line": 159
+          "line": 165
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.MarketplaceFunctionsKt.getMarketplaceItemRevision": [
@@ -56455,10 +56786,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/MarketplaceFunctions.kt",
-          "line": 99
+          "line": 105
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.MarketplaceFunctionsKt.getMarketplaceItemRevisions": [
@@ -56467,10 +56798,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/MarketplaceFunctions.kt",
-          "line": 87
+          "line": 93
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.MarketplaceFunctionsKt.getMarketplaceItems": [
@@ -56479,10 +56810,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/MarketplaceFunctions.kt",
-          "line": 47
+          "line": 53
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.MarketplaceFunctionsKt.marketplaceRoutes": [
@@ -56491,10 +56822,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/MarketplaceFunctions.kt",
-          "line": 190
+          "line": 195
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.MarketplaceFunctionsKt.postMarketplaceItemReview": [
@@ -56503,10 +56834,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/MarketplaceFunctions.kt",
-          "line": 171
+          "line": 177
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.MarketplaceFunctionsKt.requireId": [
@@ -56522,7 +56853,7 @@
         "returns": "Int",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/MarketplaceFunctions.kt",
-          "line": 38
+          "line": 44
         },
         "suspend": true,
         "isExtension": true,
@@ -56535,10 +56866,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/MarketplaceFunctions.kt",
-          "line": 110
+          "line": 116
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.MarketplaceFunctionsKt.unsubscribeMarketplaceItem": [
@@ -56547,10 +56878,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/MarketplaceFunctions.kt",
-          "line": 140
+          "line": 146
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ModuleFunctionsKt.getModule": [
@@ -56559,10 +56890,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ModuleFunctions.kt",
-          "line": 60
+          "line": 71
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ModuleFunctionsKt.getModules": [
@@ -56571,10 +56902,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ModuleFunctions.kt",
-          "line": 51
+          "line": 62
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ModuleFunctionsKt.getSettings": [
@@ -56583,10 +56914,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ModuleFunctions.kt",
-          "line": 83
+          "line": 94
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ModuleFunctionsKt.moduleRoutes": [
@@ -56595,10 +56926,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ModuleFunctions.kt",
-          "line": 142
+          "line": 154
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ModuleFunctionsKt.postPanic": [
@@ -56607,10 +56938,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ModuleFunctions.kt",
-          "line": 102
+          "line": 113
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ModuleFunctionsKt.putSettings": [
@@ -56619,10 +56950,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ModuleFunctions.kt",
-          "line": 90
+          "line": 101
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ModuleFunctionsKt.toJsonObject": [
@@ -56631,7 +56962,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ModuleFunctions.kt",
-          "line": 39
+          "line": 50
         },
         "isExtension": true,
         "receiver": "ClientModule"
@@ -56643,10 +56974,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ModuleFunctions.kt",
-          "line": 78
+          "line": 89
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ModuleFunctionsKt.toggleModulePost": [
@@ -56655,10 +56986,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ModuleFunctions.kt",
-          "line": 68
+          "line": 79
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ModuleFunctionsKt.toggleModulePut": [
@@ -56667,10 +56998,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ModuleFunctions.kt",
-          "line": 73
+          "line": 84
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ModuleRequest.constructor": [
@@ -56686,7 +57017,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ModuleFunctions.kt",
-          "line": 123
+          "line": 134
         }
       }
     ],
@@ -56703,7 +57034,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ModuleFunctions.kt",
-          "line": 124
+          "line": 135
         },
         "suspend": true
       }
@@ -56714,10 +57045,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ProxyFunctions.kt",
-          "line": 207
+          "line": 215
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ProxyFunctionsKt.deleteProxy": [
@@ -56726,10 +57057,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ProxyFunctions.kt",
-          "line": 64
+          "line": 72
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ProxyFunctionsKt.deleteRemoveProxy": [
@@ -56738,10 +57069,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ProxyFunctions.kt",
-          "line": 176
+          "line": 184
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ProxyFunctionsKt.getProxies": [
@@ -56750,10 +57081,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ProxyFunctions.kt",
-          "line": 70
+          "line": 78
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ProxyFunctionsKt.getProxyInfo": [
@@ -56762,10 +57093,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ProxyFunctions.kt",
-          "line": 41
+          "line": 49
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ProxyFunctionsKt.postAddProxy": [
@@ -56774,10 +57105,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ProxyFunctions.kt",
-          "line": 83
+          "line": 91
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ProxyFunctionsKt.postCheckProxy": [
@@ -56786,10 +57117,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ProxyFunctions.kt",
-          "line": 162
+          "line": 170
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ProxyFunctionsKt.postClipboardProxy": [
@@ -56798,10 +57129,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ProxyFunctions.kt",
-          "line": 107
+          "line": 115
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ProxyFunctionsKt.postEditProxy": [
@@ -56810,10 +57141,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ProxyFunctions.kt",
-          "line": 136
+          "line": 144
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ProxyFunctionsKt.postProxy": [
@@ -56822,10 +57153,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ProxyFunctions.kt",
-          "line": 50
+          "line": 58
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ProxyFunctionsKt.proxyRoutes": [
@@ -56834,10 +57165,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ProxyFunctions.kt",
-          "line": 221
+          "line": 229
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ProxyFunctionsKt.putFavoriteProxy": [
@@ -56846,10 +57177,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ProxyFunctions.kt",
-          "line": 192
+          "line": 200
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ScreenFunctionsKt.deleteScreen": [
@@ -56858,10 +57189,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ScreenFunctions.kt",
-          "line": 83
+          "line": 91
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ScreenFunctionsKt.getScreenInfo": [
@@ -56870,10 +57201,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ScreenFunctions.kt",
-          "line": 55
+          "line": 63
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ScreenFunctionsKt.getScreenSize": [
@@ -56882,10 +57213,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ScreenFunctions.kt",
-          "line": 65
+          "line": 73
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ScreenFunctionsKt.getVirtualScreenInfo": [
@@ -56894,10 +57225,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ScreenFunctions.kt",
-          "line": 33
+          "line": 41
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ScreenFunctionsKt.postVirtualScreen": [
@@ -56906,10 +57237,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ScreenFunctions.kt",
-          "line": 41
+          "line": 49
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ScreenFunctionsKt.putScreen": [
@@ -56918,10 +57249,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ScreenFunctions.kt",
-          "line": 73
+          "line": 81
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ScreenFunctionsKt.screenRoutes": [
@@ -56930,10 +57261,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ScreenFunctions.kt",
-          "line": 106
+          "line": 114
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.SessionFunctionsKt.getLocationInfo": [
@@ -56942,10 +57273,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/SessionFunctions.kt",
-          "line": 31
+          "line": 34
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.SessionFunctionsKt.getSessionInfo": [
@@ -56954,10 +57285,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/SessionFunctions.kt",
-          "line": 28
+          "line": 31
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.SessionFunctionsKt.sessionRoutes": [
@@ -56966,10 +57297,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/SessionFunctions.kt",
-          "line": 36
+          "line": 39
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.SpooferFunctionsKt.getSpooferConfig": [
@@ -56978,10 +57309,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/SpooferFunctions.kt",
-          "line": 27
+          "line": 32
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.SpooferFunctionsKt.putSpooferConfig": [
@@ -56990,10 +57321,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/SpooferFunctions.kt",
-          "line": 32
+          "line": 37
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.SpooferFunctionsKt.spooferRoutes": [
@@ -57002,10 +57333,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/SpooferFunctions.kt",
-          "line": 38
+          "line": 43
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ThemeFunctionsKt.getCurrentTheme": [
@@ -57014,10 +57345,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ThemeFunctions.kt",
-          "line": 30
+          "line": 38
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ThemeFunctionsKt.getFont": [
@@ -57026,10 +57357,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ThemeFunctions.kt",
-          "line": 61
+          "line": 69
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ThemeFunctionsKt.getFonts": [
@@ -57038,10 +57369,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ThemeFunctions.kt",
-          "line": 58
+          "line": 66
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ThemeFunctionsKt.getTheme": [
@@ -57050,10 +57381,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ThemeFunctions.kt",
-          "line": 35
+          "line": 43
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ThemeFunctionsKt.getToggleShaderInfo": [
@@ -57062,10 +57393,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ThemeFunctions.kt",
-          "line": 43
+          "line": 51
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ThemeFunctionsKt.postToggleShader": [
@@ -57074,10 +57405,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ThemeFunctions.kt",
-          "line": 50
+          "line": 58
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ThemeFunctionsKt.themeRoutes": [
@@ -57086,10 +57417,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ThemeFunctions.kt",
-          "line": 72
+          "line": 80
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.UserFunctionsKt.getUser": [
@@ -57098,10 +57429,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/UserFunctions.kt",
-          "line": 35
+          "line": 41
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.UserFunctionsKt.loginUser": [
@@ -57110,10 +57441,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/UserFunctions.kt",
-          "line": 50
+          "line": 56
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.UserFunctionsKt.logoutUser": [
@@ -57122,10 +57453,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/UserFunctions.kt",
-          "line": 67
+          "line": 73
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.UserFunctionsKt.userRoutes": [
@@ -57134,10 +57465,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/UserFunctions.kt",
-          "line": 79
+          "line": 85
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.features.BrowserFunctionsKt.browserRoutes": [
@@ -57146,10 +57477,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/features/BrowserFunctions.kt",
-          "line": 121
+          "line": 127
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.features.BrowserFunctionsKt.getBrowserInfo": [
@@ -57158,10 +57489,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/features/BrowserFunctions.kt",
-          "line": 31
+          "line": 37
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.features.BrowserFunctionsKt.postBrowserBack": [
@@ -57170,10 +57501,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/features/BrowserFunctions.kt",
-          "line": 98
+          "line": 104
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.features.BrowserFunctionsKt.postBrowserClose": [
@@ -57182,10 +57513,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/features/BrowserFunctions.kt",
-          "line": 55
+          "line": 61
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.features.BrowserFunctionsKt.postBrowserCloseTab": [
@@ -57194,10 +57525,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/features/BrowserFunctions.kt",
-          "line": 109
+          "line": 115
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.features.BrowserFunctionsKt.postBrowserForceReload": [
@@ -57206,10 +57537,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/features/BrowserFunctions.kt",
-          "line": 76
+          "line": 82
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.features.BrowserFunctionsKt.postBrowserForward": [
@@ -57218,10 +57549,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/features/BrowserFunctions.kt",
-          "line": 87
+          "line": 93
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.features.BrowserFunctionsKt.postBrowserNavigate": [
@@ -57230,10 +57561,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/features/BrowserFunctions.kt",
-          "line": 41
+          "line": 47
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.features.BrowserFunctionsKt.postBrowserReload": [
@@ -57242,10 +57573,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/features/BrowserFunctions.kt",
-          "line": 65
+          "line": 71
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.features.Navigate.constructor": [
@@ -57261,7 +57592,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/features/BrowserFunctions.kt",
-          "line": 52
+          "line": 58
         }
       }
     ],
@@ -57271,10 +57602,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/features/ProtocolFunctions.kt",
-          "line": 46
+          "line": 51
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.features.ProtocolFunctionsKt.getProtocol": [
@@ -57283,10 +57614,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/features/ProtocolFunctions.kt",
-          "line": 33
+          "line": 38
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.features.ProtocolFunctionsKt.getProtocols": [
@@ -57295,10 +57626,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/features/ProtocolFunctions.kt",
-          "line": 30
+          "line": 35
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.features.ProtocolFunctionsKt.protocolRoutes": [
@@ -57307,10 +57638,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/features/ProtocolFunctions.kt",
-          "line": 51
+          "line": 56
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.features.ProtocolFunctionsKt.putProtocol": [
@@ -57319,10 +57650,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/features/ProtocolFunctions.kt",
-          "line": 36
+          "line": 41
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.features.ReconnectFunctionsKt.postReconnect": [
@@ -57331,10 +57662,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/features/ReconnectFunctions.kt",
-          "line": 25
+          "line": 27
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.features.ReconnectFunctionsKt.reconnectRoutes": [
@@ -57343,10 +57674,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/features/ReconnectFunctions.kt",
-          "line": 30
+          "line": 32
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.ActiveServerList.cancelTasks": [
@@ -57355,7 +57686,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt",
-          "line": 274
+          "line": 283
         }
       }
     ],
@@ -57365,7 +57696,7 @@
         "returns": "List<JsonObject>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt",
-          "line": 240
+          "line": 249
         },
         "suspend": true
       }
@@ -57376,7 +57707,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt",
-          "line": 333
+          "line": 342
         }
       }
     ],
@@ -57393,7 +57724,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt",
-          "line": 292
+          "line": 301
         }
       }
     ],
@@ -57403,7 +57734,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt",
-          "line": 280
+          "line": 289
         }
       }
     ],
@@ -57413,7 +57744,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt",
-          "line": 220
+          "line": 229
         }
       }
     ],
@@ -57423,7 +57754,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt",
-          "line": 228
+          "line": 237
         }
       }
     ],
@@ -57433,10 +57764,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/InputFunctions.kt",
-          "line": 29
+          "line": 34
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.InputFunctionsKt.getIsTyping": [
@@ -57445,10 +57776,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/InputFunctions.kt",
-          "line": 73
+          "line": 78
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.InputFunctionsKt.getKeybinds": [
@@ -57457,10 +57788,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/InputFunctions.kt",
-          "line": 40
+          "line": 45
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.InputFunctionsKt.inputRoutes": [
@@ -57469,10 +57800,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/InputFunctions.kt",
-          "line": 77
+          "line": 82
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.InputFunctionsKt.isTyping": [
@@ -57481,10 +57812,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/InputFunctions.kt",
-          "line": 65
+          "line": 70
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.LevelRequest.constructor": [
@@ -57500,7 +57831,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/WorldListFunctions.kt",
-          "line": 159
+          "line": 165
         }
       }
     ],
@@ -57673,7 +58004,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/PlayerFunctions.kt",
-          "line": 84
+          "line": 86
         }
       }
     ],
@@ -57690,7 +58021,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/PlayerFunctions.kt",
-          "line": 116
+          "line": 118
         }
       }
     ],
@@ -57700,7 +58031,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/PlayerFunctions.kt",
-          "line": 226
+          "line": 228
         },
         "isExtension": true,
         "receiver": "Float"
@@ -57712,10 +58043,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/PlayerFunctions.kt",
-          "line": 74
+          "line": 76
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.PlayerFunctionsKt.getPlayerData": [
@@ -57724,10 +58055,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/PlayerFunctions.kt",
-          "line": 54
+          "line": 56
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.PlayerFunctionsKt.getPlayerInventory": [
@@ -57736,10 +58067,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/PlayerFunctions.kt",
-          "line": 64
+          "line": 66
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.PlayerFunctionsKt.playerRoutes": [
@@ -57748,10 +58079,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/PlayerFunctions.kt",
-          "line": 228
+          "line": 230
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.PlayerInventoryData.constructor": [
@@ -57785,7 +58116,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/PlayerFunctions.kt",
-          "line": 153
+          "line": 155
         }
       }
     ],
@@ -57802,7 +58133,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/PlayerFunctions.kt",
-          "line": 161
+          "line": 163
         }
       }
     ],
@@ -57819,7 +58150,7 @@
         "returns": "TagKey<Block>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/RegistryFunctions.kt",
-          "line": 56
+          "line": 59
         }
       }
     ],
@@ -57842,7 +58173,7 @@
         "returns": "Map<Identifier, Identifier>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/RegistryFunctions.kt",
-          "line": 159
+          "line": 162
         }
       }
     ],
@@ -57859,7 +58190,7 @@
         "returns": "TagKey<Item>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/RegistryFunctions.kt",
-          "line": 53
+          "line": 56
         }
       }
     ],
@@ -57882,7 +58213,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/PlayerFunctions.kt",
-          "line": 177
+          "line": 179
         }
       }
     ],
@@ -57905,7 +58236,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/PlayerFunctions.kt",
-          "line": 174
+          "line": 176
         }
       }
     ],
@@ -57922,7 +58253,7 @@
         "returns": "ScoreboardData?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/PlayerFunctions.kt",
-          "line": 189
+          "line": 191
         }
       }
     ],
@@ -57932,10 +58263,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt",
-          "line": 121
+          "line": 130
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.ServerListFunctionsKt.getByAddress": [
@@ -57951,7 +58282,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt",
-          "line": 358
+          "line": 367
         },
         "isExtension": true,
         "receiver": "ServerList"
@@ -57963,10 +58294,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt",
-          "line": 182
+          "line": 191
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.ServerListFunctionsKt.getServers": [
@@ -57975,10 +58306,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt",
-          "line": 60
+          "line": 69
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.ServerListFunctionsKt.postConnect": [
@@ -57987,10 +58318,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt",
-          "line": 84
+          "line": 93
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.ServerListFunctionsKt.postOrderServers": [
@@ -57999,10 +58330,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt",
-          "line": 167
+          "line": 176
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.ServerListFunctionsKt.postSwapServers": [
@@ -58011,10 +58342,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt",
-          "line": 156
+          "line": 165
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.ServerListFunctionsKt.putAddServer": [
@@ -58023,10 +58354,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt",
-          "line": 100
+          "line": 109
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.ServerListFunctionsKt.putEditServer": [
@@ -58035,10 +58366,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt",
-          "line": 134
+          "line": 143
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.ServerListFunctionsKt.serverListRoutes": [
@@ -58047,10 +58378,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt",
-          "line": 360
+          "line": 369
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.TextureFunctionsKt.getEffectTexture": [
@@ -58059,10 +58390,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/TextureFunctions.kt",
-          "line": 73
+          "line": 75
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.TextureFunctionsKt.getItemTexture": [
@@ -58071,10 +58402,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/TextureFunctions.kt",
-          "line": 50
+          "line": 54
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.TextureFunctionsKt.getResource": [
@@ -58083,10 +58414,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/TextureFunctions.kt",
-          "line": 39
+          "line": 43
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.TextureFunctionsKt.getSkin": [
@@ -58095,10 +58426,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/TextureFunctions.kt",
-          "line": 88
+          "line": 90
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.TextureFunctionsKt.textureRoutes": [
@@ -58110,7 +58441,7 @@
           "line": 109
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.TypingState.constructor": [
@@ -58126,7 +58457,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/InputFunctions.kt",
-          "line": 62
+          "line": 67
         }
       }
     ],
@@ -58136,10 +58467,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/WorldListFunctions.kt",
-          "line": 41
+          "line": 47
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.WorldListFunctionsKt.postDeleteWorld": [
@@ -58148,10 +58479,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/WorldListFunctions.kt",
-          "line": 145
+          "line": 151
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.WorldListFunctionsKt.postEditWorld": [
@@ -58160,10 +58491,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/WorldListFunctions.kt",
-          "line": 101
+          "line": 107
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.WorldListFunctionsKt.postJoinWorld": [
@@ -58172,10 +58503,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/WorldListFunctions.kt",
-          "line": 84
+          "line": 90
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.WorldListFunctionsKt.worldListRoutes": [
@@ -58184,10 +58515,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/WorldListFunctions.kt",
-          "line": 161
+          "line": 167
         },
         "isExtension": true,
-        "receiver": "Routing"
+        "receiver": "Route"
       }
     ],
     "net.ccbluex.liquidbounce.integration.screen.CustomScreen.constructor": [
@@ -92211,23 +92542,33 @@
         "receiver": "RandomAccessFile"
       }
     ],
-    "net.ccbluex.liquidbounce.utils.io.NettyExtensionsKt.clientChannelAndGroup": [
+    "net.ccbluex.liquidbounce.utils.io.PathExtKt.readAsBase64": [
       {
         "params": [
           {
-            "name": "useEpoll",
-            "type": "Boolean",
+            "name": "output",
+            "type": "OutputStream",
             "nullable": false,
             "vararg": false
           }
         ],
-        "returns": "B",
+        "returns": null,
         "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/io/NettyExtensions.kt",
-          "line": 29
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/io/PathExt.kt",
+          "line": 28
         },
         "isExtension": true,
-        "receiver": "AbstractBootstrap<B, Channel>"
+        "receiver": "Path"
+      },
+      {
+        "params": [],
+        "returns": "String",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/io/PathExt.kt",
+          "line": 37
+        },
+        "isExtension": true,
+        "receiver": "Path"
       }
     ],
     "net.ccbluex.liquidbounce.utils.io.ResourceExtensionsKt.resource": [
@@ -99607,6 +99948,131 @@
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/navigation/NavigationBaseValueGroup.kt",
           "line": 70
         }
+      }
+    ],
+    "net.ccbluex.liquidbounce.utils.netty.FutureContListener.constructor": [
+      {
+        "params": [
+          {
+            "name": "cont",
+            "type": "CancellableContinuation<F>",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/netty/NettyCoroutineBridge.kt",
+          "line": 60
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.utils.netty.FutureContListener.operationComplete": [
+      {
+        "params": [
+          {
+            "name": "future",
+            "type": "F",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/netty/NettyCoroutineBridge.kt",
+          "line": 63
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.utils.netty.FutureResultContListener.constructor": [
+      {
+        "params": [
+          {
+            "name": "cont",
+            "type": "CancellableContinuation<F>",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/netty/NettyCoroutineBridge.kt",
+          "line": 70
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.utils.netty.FutureResultContListener.operationComplete": [
+      {
+        "params": [
+          {
+            "name": "future",
+            "type": "F",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/netty/NettyCoroutineBridge.kt",
+          "line": 73
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.utils.netty.NettyCoroutineBridgeKt.awaitSuspend": [
+      {
+        "params": [],
+        "returns": "F",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/netty/NettyCoroutineBridge.kt",
+          "line": 48
+        },
+        "suspend": true,
+        "isExtension": true,
+        "receiver": "F"
+      }
+    ],
+    "net.ccbluex.liquidbounce.utils.netty.NettyCoroutineBridgeKt.syncSuspend": [
+      {
+        "params": [],
+        "returns": "F",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/netty/NettyCoroutineBridge.kt",
+          "line": 33
+        },
+        "suspend": true,
+        "isExtension": true,
+        "receiver": "F"
+      }
+    ],
+    "net.ccbluex.liquidbounce.utils.netty.NettyCoroutineBridgeKt.unwrapDone": [
+      {
+        "params": [],
+        "returns": "Result<F>",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/netty/NettyCoroutineBridge.kt",
+          "line": 80
+        },
+        "isExtension": true,
+        "receiver": "F"
+      }
+    ],
+    "net.ccbluex.liquidbounce.utils.netty.NettyExtensionsKt.clientChannelAndGroup": [
+      {
+        "params": [
+          {
+            "name": "useEpoll",
+            "type": "Boolean",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "B",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/netty/NettyExtensions.kt",
+          "line": 29
+        },
+        "isExtension": true,
+        "receiver": "AbstractBootstrap<B, Channel>"
       }
     ],
     "net.ccbluex.liquidbounce.utils.network.LegacyPacket.write": [

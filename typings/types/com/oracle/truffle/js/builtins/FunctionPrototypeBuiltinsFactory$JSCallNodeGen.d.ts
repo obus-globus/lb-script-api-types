@@ -23,6 +23,8 @@ export class FunctionPrototypeBuiltinsFactory$JSCallNodeGen extends FunctionProt
     // private arguments0_: JavaScriptNode;
     // private arguments1_: JavaScriptNode;
     // private arguments2_: JavaScriptNode;
+    // private state_0_: number;
     execute(frameValue: VirtualFrame): Object;
+    // private executeAndSpecialize(arguments0Value: Object, arguments1Value: Object, arguments2Value: Object): Object;
     getArguments(): JavaScriptNode[];
 }

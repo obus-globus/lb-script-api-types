@@ -30,9 +30,9 @@ export class ArrayPrototypeBuiltinsFactory$JSArrayShiftNodeGen extends ArrayProt
     // private hasHolesNode: TestArrayNode;
     // private isSealedNode: TestArrayNode;
     // private shiftForeign_arrays_: InteropLibrary;
-    // private shiftJSArrayNode_field1_: Object;
     // private shiftSparse_firstElementIndexNode_: JSArrayFirstElementIndexNode;
     // private shiftSparse_lastElementIndexNode_: JSArrayLastElementIndexNode;
+    // private shiftWithoutHoles_arrayTypeProfile__field1_: Class<Object>;
     // private state_0_: number;
     execute(frameValue: VirtualFrame): Object;
     // private executeAndSpecialize(arguments0Value: Object): Object;

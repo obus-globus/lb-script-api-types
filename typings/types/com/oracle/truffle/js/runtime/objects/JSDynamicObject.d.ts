@@ -19,7 +19,8 @@ export class JSDynamicObject extends DynamicObject implements TruffleObject {
     static getOrDefault(paramobj: JSDynamicObject, paramkey: Object, paramdefaultValue: Object): Object;
     static getOrNull(paramobj: JSDynamicObject, paramkey: Object): Object;
     static getPropertyArray(paramobj: JSDynamicObject): Property[];
-    static getPropertyFlags(paramobj: JSDynamicObject, paramkey: Object, paramdefaultValue: number): number;
+    static getPropertyFlags(paramobj: JSDynamicObject, paramkey: Object): number;
+    static hasProperty(paramobj: JSDynamicObject, paramkey: Object): boolean;
     static isJSDynamicObject(paramobject: Object): boolean;
     static setJSClass(paramobj: JSDynamicObject, paramjsclass: JSClass): void;
     static setObjectFlags(paramobj: JSDynamicObject, paramflags: number): void;

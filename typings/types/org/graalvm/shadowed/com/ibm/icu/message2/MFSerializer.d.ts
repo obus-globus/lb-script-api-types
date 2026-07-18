@@ -1,11 +1,11 @@
 import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { StringBuilder } from '../../../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { MFDataModel$Annotation } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/message2/MFDataModel$Annotation.d.ts'
 import type { MFDataModel$Attribute } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/message2/MFDataModel$Attribute.d.ts'
 import type { MFDataModel$Declaration } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/message2/MFDataModel$Declaration.d.ts'
 import type { MFDataModel$Expression } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/message2/MFDataModel$Expression.d.ts'
 import type { MFDataModel$FunctionExpression } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/message2/MFDataModel$FunctionExpression.d.ts'
-import type { MFDataModel$FunctionRef } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/message2/MFDataModel$FunctionRef.d.ts'
 import type { MFDataModel$InputDeclaration } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/message2/MFDataModel$InputDeclaration.d.ts'
 import type { MFDataModel$Literal } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/message2/MFDataModel$Literal.d.ts'
 import type { MFDataModel$LiteralExpression } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/message2/MFDataModel$LiteralExpression.d.ts'
@@ -27,6 +27,7 @@ export class MFSerializer extends Object {
     // private result: StringBuilder;
     // private shouldDoubleQuotePattern: boolean;
     // private addSpaceIfNeeded(): void;
+    // private annotationToString(annotation: MFDataModel$Annotation): void;
     // private attributesToString(attributes: MFDataModel$Attribute[]): void;
     // private declarationsToString(declarations: MFDataModel$Declaration[]): void;
     // private error(text: string): void;
@@ -34,7 +35,6 @@ export class MFSerializer extends Object {
     // private errorType(expectedType: string, obj: Object): void;
     // private expressionToString(expression: MFDataModel$Expression): void;
     // private functionExpressionToString(fe: MFDataModel$FunctionExpression): void;
-    // private functionToString(function_: MFDataModel$FunctionRef): void;
     // private inputDeclarationToString(declaration: MFDataModel$InputDeclaration): void;
     // private literalExpressionToString(le: MFDataModel$LiteralExpression): void;
     // private literalOrVariableRefToString(literalOrVarRef: MFDataModel$LiteralOrVariableRef): void;

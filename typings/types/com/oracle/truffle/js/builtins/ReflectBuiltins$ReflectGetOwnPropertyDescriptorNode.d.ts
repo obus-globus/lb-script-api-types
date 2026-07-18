@@ -1,9 +1,8 @@
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { InlinedBranchProfile } from '../../../../../com/oracle/truffle/api/profiles/InlinedBranchProfile.d.ts'
+import type { ReflectBuiltins$ReflectOperation } from '../../../../../com/oracle/truffle/js/builtins/ReflectBuiltins$ReflectOperation.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { FromPropertyDescriptorNode } from '../../../../../com/oracle/truffle/js/nodes/access/FromPropertyDescriptorNode.d.ts'
-import type { IsObjectNode } from '../../../../../com/oracle/truffle/js/nodes/access/IsObjectNode.d.ts'
 import type { JSGetOwnPropertyNode } from '../../../../../com/oracle/truffle/js/nodes/access/JSGetOwnPropertyNode.d.ts'
 import type { JSToPropertyKeyNode } from '../../../../../com/oracle/truffle/js/nodes/cast/JSToPropertyKeyNode.d.ts'
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
@@ -12,7 +11,7 @@ import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSC
 import type { JSDynamicObject } from '../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class ReflectBuiltins$ReflectGetOwnPropertyDescriptorNode extends JSBuiltinNode {
+export abstract class ReflectBuiltins$ReflectGetOwnPropertyDescriptorNode extends ReflectBuiltins$ReflectOperation {
     static ARGUMENTS: string;
     static cloneUninitialized<T extends JavaScriptNode>(paramnode: T, parammaterializedTags: Class<Tag>[]): T;
     static cloneUninitialized<T extends JavaScriptNode>(paramnodeArray: T[], parammaterializedTags: Class<Tag>[]): T[];
@@ -23,5 +22,5 @@ export abstract class ReflectBuiltins$ReflectGetOwnPropertyDescriptorNode extend
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
-    reflectGetOwnPropertyDescriptor(target: Object, key: Object, isObjectNode: IsObjectNode, toPropertyKeyNode: JSToPropertyKeyNode, getOwnPropertyNode: JSGetOwnPropertyNode, fromPropertyDescriptorNode: FromPropertyDescriptorNode, errorBranch: InlinedBranchProfile): JSDynamicObject;
+    reflectGetOwnPropertyDescriptor(target: Object, key: Object, toPropertyKeyNode: JSToPropertyKeyNode, getOwnPropertyNode: JSGetOwnPropertyNode, fromPropertyDescriptorNode: FromPropertyDescriptorNode): JSDynamicObject;
 }

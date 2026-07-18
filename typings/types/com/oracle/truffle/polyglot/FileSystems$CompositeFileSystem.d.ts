@@ -12,16 +12,17 @@ import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { FileAttribute } from '../../../../java/nio/file/attribute/FileAttribute.d.ts'
 import type { ReadWriteLock } from '../../../../java/util/concurrent/locks/ReadWriteLock.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { AbstractPolyglotImpl } from '../../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl.d.ts'
 import type { FileSystem } from '../../../../org/graalvm/polyglot/io/FileSystem.d.ts'
 import type { FileSystem$Selector } from '../../../../org/graalvm/polyglot/io/FileSystem$Selector.d.ts'
 export class FileSystems$CompositeFileSystem extends Object implements FileSystems$PolyglotFileSystem {
-    constructor(fallBackFileSystem: FileSystem, ...delegates: FileSystem$Selector[])
+    constructor(polyglot: AbstractPolyglotImpl, fallBackFileSystem: FileSystem, ...delegates: FileSystem$Selector[])
     // private changeDirLock: ReadWriteLock;
     readonly currentWorkingDirectory: Path;
     // private delegates: FileSystem$Selector[];
     // private fallBackFileSystem: FileSystem;
     readonly host: boolean;
-    readonly internal: boolean;
+    // private internal: boolean;
     // private noAccess: boolean;
     // private parentDirectory: Path;
     // private thisDirectory: Path;
@@ -42,7 +43,7 @@ export class FileSystems$CompositeFileSystem extends Object implements FileSyste
     hasNoAccess(): boolean;
     isFileStoreReadOnly(path: Path): boolean;
     isHost(): boolean;
-    isInternal(): boolean;
+    isInternal(polyglot: AbstractPolyglotImpl): boolean;
     // private isNormalized(path: Path): boolean;
     isSameFile(path1: Path, path2: Path, ...options: LinkOption[]): boolean;
     newByteChannel(path: Path, options: OpenOption[], ...attrs: FileAttribute<Object>[]): SeekableByteChannel;

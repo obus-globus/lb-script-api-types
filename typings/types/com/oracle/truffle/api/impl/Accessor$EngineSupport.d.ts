@@ -32,7 +32,6 @@ import type { OutputStream } from '../../../../../java/io/OutputStream.d.ts'
 import type { AssertionError } from '../../../../../java/lang/AssertionError.d.ts'
 import type { AutoCloseable } from '../../../../../java/lang/AutoCloseable.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { IllegalArgumentException } from '../../../../../java/lang/IllegalArgumentException.d.ts'
 import type { Process } from '../../../../../java/lang/Process.d.ts'
 import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
 import type { RuntimeException } from '../../../../../java/lang/RuntimeException.d.ts'
@@ -50,30 +49,26 @@ import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Level } from '../../../../../java/util/logging/Level.d.ts'
 import type { LogRecord } from '../../../../../java/util/logging/LogRecord.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
+import type { Iterator } from '../../../../../java/util/Iterator.d.ts'
 import type { Pair } from '../../../../../org/graalvm/collections/Pair.d.ts'
 import type { OptionKey } from '../../../../../org/graalvm/options/OptionKey.d.ts'
-import type { OptionMap } from '../../../../../org/graalvm/options/OptionMap.d.ts'
 import type { OptionValues } from '../../../../../org/graalvm/options/OptionValues.d.ts'
 import type { Context } from '../../../../../org/graalvm/polyglot/Context.d.ts'
 import type { SandboxPolicy } from '../../../../../org/graalvm/polyglot/SandboxPolicy.d.ts'
-import type { Source as Source_2 } from '../../../../../org/graalvm/polyglot/Source.d.ts'
 import type { AbstractPolyglotImpl } from '../../../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl.d.ts'
 import type { AbstractPolyglotImpl$AbstractHostLanguageService } from '../../../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl$AbstractHostLanguageService.d.ts'
-import type { AbstractPolyglotImpl$AbstractValueDispatch } from '../../../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl$AbstractValueDispatch.d.ts'
 import type { AbstractPolyglotImpl$LogHandler } from '../../../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl$LogHandler.d.ts'
 import type { FileSystem } from '../../../../../org/graalvm/polyglot/io/FileSystem.d.ts'
 import type { MessageEndpoint } from '../../../../../org/graalvm/polyglot/io/MessageEndpoint.d.ts'
-import type { ProcessHandler } from '../../../../../org/graalvm/polyglot/io/ProcessHandler.d.ts'
 import type { ProcessHandler$Redirect } from '../../../../../org/graalvm/polyglot/io/ProcessHandler$Redirect.d.ts'
 export abstract class Accessor$EngineSupport extends Accessor$Support {
     constructor()
     addToHostClassPath(polyglotLanguageContext: Object, entries: TruffleFile): void;
     areStaticObjectSafetyChecksRelaxed(polyglotLanguageInstance: Object): boolean;
     asBoxedGuestValue(guestObject: Object, polyglotLanguageContext: Object): Object;
-    asHostException(exception: Throwable): Throwable;
-    asHostObject(value: Object): Object;
+    asHostException(polyglotLanguageContext: Object, exception: Throwable): Throwable;
+    asHostObject(languageContext: Object, value: Object): Object;
     asHostSymbol(polyglotLanguageContext: Object, symbolClass: Class<Object>): Object;
     asValue(polyglotContextImpl: Object, guestValue: Object): Object;
     assertReturnParityEnter(probe: Node, polyglotEngine: Object): void;
@@ -84,7 +79,6 @@ export abstract class Accessor$EngineSupport extends Accessor$Support {
     closeContext(polyglotContext: Object, force: boolean, closeLocation: Node, resourceExhaused: boolean, resourceExhausedReason: string): void;
     closeContext(polyglotContext: Object, force: boolean, resourceExhaused: boolean, resourceExhausedReason: string): void;
     closeEngine(polyglotEngine: Object, force: boolean): void;
-    collectNativeImagePresetOptions(): void;
     createCancelExecution(sourceSection: SourceSection, message: string, resourceLimit: boolean): ThreadDeath;
     createContextReference<C extends unknown, T extends TruffleLanguage<C>>(languageClass: Class<T>): TruffleLanguage$ContextReference<C>;
     createDefaultLoggerCache(): Object;
@@ -118,18 +112,12 @@ export abstract class Accessor$EngineSupport extends Accessor$Support {
     evalInternalContext(node: Node, polyglotContext: Object, source: Source, allowInternal: boolean): Object;
     exitContext(polyglotContext: Object, exitLocation: Node, exitCode: number): void;
     exportSymbol(polyglotLanguageContext: Object, symbolName: string, value: Object): void;
-    filterHostOptions(polyglotEngineImpl: Object, polyglotOptions: JavaMap<string, string>): JavaMap<string, string>;
     finalizeStore(polyglotEngine: Object): Object;
     findCallTargets(polyglotEngine: Object): CallTarget[];
-    findGuestToHostFrame(polyglotEngineImpl: Object, firstElement: StackTraceElement, hostStack: StackTraceElement[], nextElementIndex: number): number;
-    findHostToGuestFrame(polyglotEngineImpl: Object, firstElement: StackTraceElement, hostStack: StackTraceElement[], nextElementIndex: number): number;
     findMetaObjectForLanguage(polyglotLanguageContext: Object, value: Object): Object;
-    findPolyglot(): AbstractPolyglotImpl;
-    forEachLoadedRootNode(sharingLayer: Object, rootNodeUpdater: (param0: RootNode) => void): void;
     getAsynchronousStackDepth(polylgotLanguageInstance: Object): number;
     getCancelExecutionSourceLocation(cancelExecution: Throwable): SourceSection;
     getContext(polyglotLanguageContext: Object): Object;
-    getContextAPI(polyglotContextImpl: Object): Context;
     getContextLogHandler(polyglotContextImpl: Object): AbstractPolyglotImpl$LogHandler;
     getContextLoggerCache(polyglotLanguageContext: Object): Object;
     getContextSandboxPolicy(polyglotLanguageContext: Object): SandboxPolicy;
@@ -140,14 +128,14 @@ export abstract class Accessor$EngineSupport extends Accessor$Support {
     getCurrentLanguage<T extends TruffleLanguage<Object>>(languageClass: Class<T>): T;
     getCurrentPolyglotEngine(): Object;
     getCurrentSharingLayer(): Object;
-    getDefaultLanguageView(polyglotLanguageContext: Object, value: Object): Object;
+    getDefaultLanguageView(truffleLanguage: TruffleLanguage<Object>, value: Object): Object;
     getEncapsulatingNodeReference(invalidateOnNull: boolean): EncapsulatingNodeReference;
+    getEngineData(polyglotEngine: Object): Object;
     getEngineErr(engine: Object): DispatchOutputStream;
     getEngineFileTypeDetectors(engineFileSystemContext: Object): JavaMap<string, TruffleFile$FileTypeDetector[]>;
     getEngineFromPolyglotObject(polyglotObject: Object): Object;
     getEngineId(polyglotEngine: Object): number;
     getEngineIn(engine: Object): InputStream;
-    getEngineInternalResources(): JavaMap<string, InternalResource>;
     getEngineLock(polyglotEngine: Object): Object;
     getEngineLogHandler(polyglotEngineImpl: Object): AbstractPolyglotImpl$LogHandler;
     getEngineOptionValues(polyglotEngine: Object): OptionValues;
@@ -163,35 +151,30 @@ export abstract class Accessor$EngineSupport extends Accessor$Support {
     getGeneratorCache(polyglotLanguageInstance: Object): JavaMap<Pair<Class<Object>, Class<Object>>, Object>;
     getGuestToHostCodeCache(polyglotContextImpl: Object): Object;
     getHostContext(valueContext: Object): Object;
-    getHostLanguage(vmObject: Object): LanguageInfo;
-    getHostLanguageContext(internalContext: Object): Object;
+    getHostLanguage(polyglotLanguageContext: Object): LanguageInfo;
     getHostNull(): Object;
     getHostService(polyglotEngineImpl: Object): AbstractPolyglotImpl$AbstractHostLanguageService;
     getInstrumentContextOptions(polyglotInstrument: Object, polyglotContext: Object): OptionValues;
     getInstrumentEngine(polyglotInstrument: Object): Object;
+    getInstrumentIds(): string[];
     getInstrumentSourceOptions(polyglotInstrument: Object, source: Source): OptionValues;
     getInstrumentationHandler(rootNode: RootNode): Object;
     getInstrumentationHandler(polyglotObject: Object): Object;
     getInstruments(polyglotObject: Object): JavaMap<string, InstrumentInfo>;
     getInternalFileSystemContext(polyglotContextImpl: Object): Object;
+    getInternalIds(): string[];
     getInternalLanguages(polyglotObject: Object): JavaMap<string, LanguageInfo>;
     getInternalResource(owner: Object, resourceType: Class<InternalResource>): TruffleFile;
     getInternalResource(owner: Object, resourceId: string): TruffleFile;
-    getIsolateOptionOption(): OptionKey<OptionMap<string>>;
-    getKnownLoggerIds(loggerCache: Object): string[];
-    getLanguageClass(anchor: Node, languageId: string): Class<TruffleLanguage<Object>>;
     getLanguageHome(languageInfo: LanguageInfo): string;
-    getLanguageId(anchor: Node, languageClass: Class<TruffleLanguage<Object>>): string;
+    getLanguageIds(): string[];
     getLanguageInfo(vmObject: Object, languageClass: Class<TruffleLanguage<Object>>): LanguageInfo;
     getLanguageView(viewLanguage: LanguageInfo, value: Object): Object;
     getLogLevels(loggerCache: Object): JavaMap<string, Level>;
     getLogger(polyglotInstrument: Object, name: string): TruffleLogger;
     getLoggerOwner(loggerCache: Object): Object;
-    getMaxIsolateMemoryOption(): OptionKey<number>;
-    getModuleAccessorInitializationError(): string;
     getModulesAccessor(): Accessor$ModulesAccessor;
     getNeedsAllEncodings(): boolean;
-    getOrCreateBytecodeData<T extends unknown>(languageInstance: Object, create: (param0: Object) => T): T;
     getOrCreateRuntimeData<T extends unknown>(polyglotEngine: Object): T;
     getOuterContext(polyglotContext: Object): Object;
     getPolyglotBindingsForLanguage(polyglotLanguageContext: Object): Object;
@@ -209,8 +192,6 @@ export abstract class Accessor$EngineSupport extends Accessor$Support {
     getRelativePathInResourceRoot(truffleFile: TruffleFile): string;
     getResourceIds(componentId: string): string[];
     getScope(polyglotLanguageContext: Object, languageInfo: LanguageInfo, internal: boolean): Object;
-    getSharingLayer(languageInstance: Object): Object;
-    getSourceReceiver(source: Source_2): Source;
     getStaticObjectClassLoaders(polyglotLanguageInstance: Object, referenceClass: Class<Object>): Object;
     getStaticObjectStorageStrategy(polyglotLanguageInstance: Object): string;
     getTimeZone(polyglotLanguageContext: Object): ZoneId;
@@ -218,7 +199,7 @@ export abstract class Accessor$EngineSupport extends Accessor$Support {
     getTruffleFile(truffleContext: TruffleContext, uri: URI): TruffleFile;
     getTruffleFile(truffleContext: TruffleContext, path: string): TruffleFile;
     getUncachedLocation(polyglotContext: Object): Node;
-    getUntrustedCodeMitigationOption(): OptionKey<Enum<any>>;
+    getUnparsedOptionValue(optionValues: OptionValues, optionKey: OptionKey<Object>): string;
     getValidMimeTypes(engineObject: Object, language: string): string[];
     hasCurrentContext(): boolean;
     hasDefaultProcessHandler(polyglotLanguageContext: Object): boolean;
@@ -247,28 +228,23 @@ export abstract class Accessor$EngineSupport extends Accessor$Support {
     isCreateThreadAllowed(polyglotLanguageContext: Object): boolean;
     isCurrentNativeAccessAllowed(node: Node): boolean;
     isCurrentThreadPolyglotThread(): boolean;
-    isDefaultProcessHandler(handler: ProcessHandler): boolean;
     isDisposed(polyglotLanguageContext: Object): boolean;
     isEvalRoot(target: RootNode): boolean;
     isExitException(throwable: Throwable): boolean;
     isHostAccessAllowed(polyglotLanguageContext: Object, env: TruffleLanguage$Env): boolean;
-    isHostException(exception: Throwable): boolean;
-    isHostFunction(value: Object): boolean;
-    isHostObject(value: Object): boolean;
-    isHostSymbol(guestObject: Object): boolean;
+    isHostException(polyglotLanguageContext: Object, exception: Throwable): boolean;
+    isHostFunction(languageContext: Object, value: Object): boolean;
+    isHostObject(languageContext: Object, value: Object): boolean;
+    isHostSymbol(languageContext: Object, guestObject: Object): boolean;
     isHostToGuestRootNode(root: RootNode): boolean;
     isIOAllowed(polyglotLanguageContext: Object, env: TruffleLanguage$Env): boolean;
     isIOSupported(): boolean;
-    isInCurrentEngineHostCallback(polyglotEngine: Object): boolean;
     isInnerContextOptionsAllowed(polyglotLanguageContext: Object, env: TruffleLanguage$Env): boolean;
     isInstrumentExceptionsAreThrown(polyglotInstrument: Object): boolean;
     isInstrumentReadyForContextEvents(polyglotInstrument: Object): boolean;
     isInternal(file: TruffleFile): boolean;
-    isInternal(fs: FileSystem): boolean;
-    isInternalFileSystem(fileSystem: FileSystem): boolean;
+    isInternal(engineObject: Object, fs: FileSystem): boolean;
     isInterruptExecution(throwable: Throwable): boolean;
-    isIsolateMemoryProtection(optionValues: OptionValues): boolean;
-    isKnownLoggerId(loggerCache: Object, id: string): boolean;
     isLogRecordCallerClassSet(logRecord: LogRecord): boolean;
     isLogRecordCallerMethodSet(logRecord: LogRecord): boolean;
     isMimeTypeSupported(polyglotLanguageContext: Object, mimeType: string): boolean;
@@ -280,7 +256,6 @@ export abstract class Accessor$EngineSupport extends Accessor$Support {
     isPolyglotSecret(polyglotObject: Object): boolean;
     isResourceLimitCancelExecution(cancelExecution: Throwable): boolean;
     isSocketIOAllowed(engineFileSystemContext: Object): boolean;
-    isUntrustedCodeMitigationPolicySoftware(policy: Enum<any>): boolean;
     leaveAndEnter<R extends unknown, T extends unknown>(polyglotContext: Object, interrupter: TruffleSafepoint$Interrupter, runWhileOutsideContext: (param0: T) => R, object: T): R;
     leaveContextAsPolyglotThread(polyglotContext: Object, prev: Object[]): void;
     leaveIfNeeded(polyglotContext: Object, prev: Object): void;
@@ -293,9 +268,7 @@ export abstract class Accessor$EngineSupport extends Accessor$Support {
     lookup<S extends unknown>(language: LanguageInfo, type: Class<S>): S;
     lookupHostSymbol(polyglotLanguageContext: Object, env: TruffleLanguage$Env, symbolName: string): Object;
     lookupService<S extends unknown>(polyglotLanguageContext: Object, language: LanguageInfo, accessingLanguage: LanguageInfo, type: Class<S>): S;
-    lookupValueCache(polyglotContextImpl: Object, value: Object): AbstractPolyglotImpl$AbstractValueDispatch;
-    materializePolyglotException(exception: RuntimeException): void;
-    newDefaultProcessHandler(): ProcessHandler;
+    mergeHostGuestFrames<T extends unknown, G extends unknown>(polyglotEngine: Object, hostStack: StackTraceElement[], guestFrames: Iterator<G>, inHostLanguage: boolean, includeHostFrames: boolean, hostFrameConvertor: (param0: StackTraceElement) => T, guestFrameConvertor: (param0: G) => T): Iterator<T>;
     onSourceCreated(source: Source): void;
     parseForLanguage(sourceLanguageContext: Object, source: Source, argumentNames: string[], allowInternal: boolean): CallTarget;
     parseInlineForLanguage(languageContext: Object, source: Source, node: Node, frame: MaterializedFrame): ExecutableNode;
@@ -309,13 +282,13 @@ export abstract class Accessor$EngineSupport extends Accessor$Support {
     requireLanguageWithAllEncodings(encoding: Object): boolean;
     restoreStore(polyglotEngine: Object, finalizationResult: Object): void;
     resume(polyglotContext: Object, pauseFuture: Future<void>): void;
-    sandboxPolicyException(sandboxPolicy: SandboxPolicy, reason: string, fix: string): IllegalArgumentException;
     setAsynchronousStackDepth(polyglotInstrument: Object, depth: number): void;
+    setIsolatePolyglot(instance: AbstractPolyglotImpl): void;
     setStaticObjectClassLoaders(polyglotLanguageInstance: Object, referenceClass: Class<Object>, value: Object): void;
     skipEngineValidation(rootNode: RootNode): boolean;
     startEngineServer(engine: Object, uri: URI, server: MessageEndpoint): MessageEndpoint;
     submitThreadLocal(polyglotLanguageContext: Object, sourcePolyglotObject: Object, threads: Thread[], action: ThreadLocalAction, needsEnter: boolean): Future<void>;
-    toGuestValue(node: Node, obj: Object): Object;
+    toGuestValue(node: Node, obj: Object, languageContext: Object): Object;
     wrapGuestException(polyglotObject: Object, e: Throwable): RuntimeException;
     wrapGuestException(languageId: string, exception: Throwable): RuntimeException;
     wrapHostException(callNode: Node, languageContext: Object, exception: Throwable): RuntimeException;

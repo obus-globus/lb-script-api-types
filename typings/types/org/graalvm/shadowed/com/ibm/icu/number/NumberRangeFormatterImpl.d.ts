@@ -21,7 +21,7 @@ export class NumberRangeFormatterImpl extends Object {
     // private formatterImpl1: NumberFormatterImpl;
     // private formatterImpl2: NumberFormatterImpl;
     format(quantity1: DecimalQuantity, quantity2: DecimalQuantity, equalBeforeRounding: boolean): FormattedNumberRange;
-    // private formatApproximately(quantityBackup: DecimalQuantity, quantity1: DecimalQuantity, quantity2: DecimalQuantity, string: FormattedStringBuilder, micros1: MicroProps, micros2: MicroProps): void;
+    // private formatApproximately(quantity1: DecimalQuantity, quantity2: DecimalQuantity, string: FormattedStringBuilder, micros1: MicroProps, micros2: MicroProps): void;
     // private formatRange(quantity1: DecimalQuantity, quantity2: DecimalQuantity, string: FormattedStringBuilder, micros1: MicroProps, micros2: MicroProps): void;
     // private formatSingleValue(quantity1: DecimalQuantity, quantity2: DecimalQuantity, string: FormattedStringBuilder, micros1: MicroProps, micros2: MicroProps): void;
     identity2d(a: NumberRangeFormatter$RangeIdentityFallback, b: NumberRangeFormatter$RangeIdentityResult): number;

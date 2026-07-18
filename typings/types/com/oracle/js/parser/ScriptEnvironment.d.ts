@@ -12,19 +12,17 @@ export class ScriptEnvironment extends Object {
     static ES_2022: number;
     static ES_2023: number;
     static ES_2024: number;
-    static ES_2025: number;
-    static ES_2026: number;
     static ES_STAGING: number;
     static builder(): ScriptEnvironment$Builder;
-    constructor(strict: boolean, ecmaScriptVersion: number, emptyStatements: boolean, syntaxExtensions: boolean, scripting: boolean, shebang: boolean, constAsVar: boolean, allowBigInt: boolean, annexB: boolean, classFields: boolean, importAttributes: boolean, sourcePhaseImports: boolean, privateFieldsIn: boolean, topLevelAwait: boolean, explicitResourceManagement: boolean, v8Intrinsics: boolean, functionStatementBehavior: ScriptEnvironment$FunctionStatementBehavior)
+    constructor(strict: boolean, ecmaScriptVersion: number, emptyStatements: boolean, syntaxExtensions: boolean, scripting: boolean, shebang: boolean, constAsVar: boolean, allowBigInt: boolean, annexB: boolean, classFields: boolean, importAttributes: boolean, importAssertions: boolean, sourcePhaseImports: boolean, privateFieldsIn: boolean, topLevelAwait: boolean, v8Intrinsics: boolean, functionStatementBehavior: ScriptEnvironment$FunctionStatementBehavior)
     // private allowBigInt: boolean;
     // private annexB: boolean;
     // private classFields: boolean;
     // private constAsVar: boolean;
     // private ecmaScriptVersion: number;
     // private emptyStatements: boolean;
-    // private explicitResourceManagement: boolean;
     // private functionStatement: ScriptEnvironment$FunctionStatementBehavior;
+    // private importAssertions: boolean;
     // private importAttributes: boolean;
     // private privateFieldsIn: boolean;
     // private scripting: boolean;

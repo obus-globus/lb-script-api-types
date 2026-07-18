@@ -1,11 +1,11 @@
 import type { JavaMap } from '../../../../../JavaMap.d.ts'
+import type { TruffleLanguage } from '../../../../../com/oracle/truffle/api/TruffleLanguage.d.ts'
 import type { TruffleObject } from '../../../../../com/oracle/truffle/api/interop/TruffleObject.d.ts'
 import type { TruffleString } from '../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
+import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Symbol extends Object implements TruffleObject {
-    static SYMBOL_ASYNC_DISPOSE: Symbol;
     static SYMBOL_ASYNC_ITERATOR: Symbol;
-    static SYMBOL_DISPOSE: Symbol;
     static SYMBOL_HAS_INSTANCE: Symbol;
     static SYMBOL_IS_CONCAT_SPREADABLE: Symbol;
     static SYMBOL_ITERATOR: Symbol;
@@ -31,10 +31,10 @@ export class Symbol extends Object implements TruffleObject {
     equals(obj: Object | null): boolean;
     getDescription(): Object;
     getInvertedMap(): JavaMap<JavaMap<any, any>, Object>;
-    getLanguageId(): string;
+    getLanguage(): Class<TruffleLanguage<Object>>;
     getMetaObject(): Object;
     getName(): TruffleString;
-    hasLanguageId(): boolean;
+    hasLanguage(): boolean;
     hasMetaObject(): boolean;
     hashCode(): number;
     identityHashCode(): number;

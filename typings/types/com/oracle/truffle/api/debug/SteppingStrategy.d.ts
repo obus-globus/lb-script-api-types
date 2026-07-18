@@ -11,15 +11,12 @@ export abstract class SteppingStrategy extends Object {
     // private next: SteppingStrategy;
     add(nextStrategy: SteppingStrategy): void;
     consume(): void;
-    getNestedStrategies(): SteppingStrategy[];
     initialize(context: SuspendedContext, suspendAnchor: SuspendAnchor): void;
     isActive(context: EventContext, suspendAnchor: SuspendAnchor): boolean;
     isActiveOnStepTo(context: EventContext, suspendAnchor: SuspendAnchor): boolean;
-    isAlwaysHalt(): boolean;
     isCollectingInputValues(): boolean;
     isComposable(): boolean;
     isConsumed(): boolean;
-    isContinue(): boolean;
     isDone(): boolean;
     isKill(): boolean;
     isSingleStep(): boolean;

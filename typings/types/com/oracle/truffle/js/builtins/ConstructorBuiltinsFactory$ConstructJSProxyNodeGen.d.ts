@@ -7,6 +7,7 @@ import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/funct
 import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
 import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
 import type { JSDynamicObject } from '../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
+import type { JSObject } from '../../../../../com/oracle/truffle/js/runtime/objects/JSObject.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ConstructorBuiltinsFactory$ConstructJSProxyNodeGen extends ConstructorBuiltins$ConstructJSProxyNode {
@@ -27,5 +28,6 @@ export class ConstructorBuiltinsFactory$ConstructJSProxyNodeGen extends Construc
     // private state_0_: number;
     execute(frameValue: VirtualFrame): Object;
     execute(arguments0Value: JSDynamicObject, arguments1Value: Object, arguments2Value: Object): JSDynamicObject;
+    // private executeAndSpecialize(arguments0Value: Object, arguments1Value: Object, arguments2Value: Object): JSObject;
     getArguments(): JavaScriptNode[];
 }

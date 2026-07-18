@@ -1,11 +1,14 @@
-import type { InputStream } from '../../../../../../../../java/io/InputStream.d.ts'
+import type { JsonWriter } from '../../../../../../../../com/google/gson/stream/JsonWriter.d.ts'
+import type { NativeImage } from '../../../../../../../../com/mojang/blaze3d/platform/NativeImage.d.ts'
+import type { ContentType } from '../../../../../../../../io/ktor/http/ContentType.d.ts'
+import type { HttpStatusCode } from '../../../../../../../../io/ktor/http/HttpStatusCode.d.ts'
+import type { ApplicationCall } from '../../../../../../../../io/ktor/server/application/ApplicationCall.d.ts'
+import type { BufferedImage } from '../../../../../../../../java/awt/image/BufferedImage.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
-import type { ApplicationCall } from '../../../../../../../../net/ccbluex/netty/http/application/ApplicationCall.d.ts'
+import type { Resource } from '../../../../../../../../net/minecraft/server/packs/resources/Resource.d.ts'
 export class HttpHelperKt extends Object {
-    /**
-     * Write all data from {@link inputStream} and close it
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/HttpHelper.kt#L28 | src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/HttpHelper.kt:28}
-     */
-    static respondInputStream(self: ApplicationCall, inputStream: InputStream, contentType: string | null): void;
+    static respondImage(self: ApplicationCall, image: NativeImage, contentType: ContentType | null, status: HttpStatusCode | null): void;
+    static respondImage(self: ApplicationCall, image: BufferedImage, contentType: ContentType | null, status: HttpStatusCode | null): void;
+    static respondJsonWriter(self: ApplicationCall, contentType: ContentType | null, status: HttpStatusCode | null, block: (param0: JsonWriter) => void): void;
+    static respondResource(self: ApplicationCall, resource: Resource, contentType: ContentType | null, status: HttpStatusCode | null): void;
 }

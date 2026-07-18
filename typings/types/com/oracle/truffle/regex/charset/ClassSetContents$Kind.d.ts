@@ -1,7 +1,6 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class ClassSetContents$Kind extends Enum<ClassSetContents$Kind> {
-    static BrokenRange: ClassSetContents$Kind;
     static Character: ClassSetContents$Kind;
     static Class: ClassSetContents$Kind;
     static POSIXCollationElement: ClassSetContents$Kind;
@@ -12,5 +11,5 @@ export class ClassSetContents$Kind extends Enum<ClassSetContents$Kind> {
     static valueOf(paramname: string): ClassSetContents$Kind;
     static values(): ClassSetContents$Kind[];
     private constructor()
-    name(): "Character" | "Class" | "Strings" | "Range" | "BrokenRange" | "POSIXCollationElement" | "POSIXCollationEquivalenceClass";
+    name(): "Character" | "Class" | "Strings" | "Range" | "POSIXCollationElement" | "POSIXCollationEquivalenceClass";
 }

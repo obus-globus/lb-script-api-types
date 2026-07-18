@@ -4,7 +4,7 @@ import type { InlinedBranchProfile } from '../../../../../com/oracle/truffle/api
 import type { AtomicsBuiltins$AtomicsOperationNode } from '../../../../../com/oracle/truffle/js/builtins/AtomicsBuiltins$AtomicsOperationNode.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { JSToIndexNode } from '../../../../../com/oracle/truffle/js/nodes/cast/JSToIndexNode.d.ts'
-import type { JSToIntegerAsIntNode } from '../../../../../com/oracle/truffle/js/nodes/cast/JSToIntegerAsIntNode.d.ts'
+import type { JSToInt32Node } from '../../../../../com/oracle/truffle/js/nodes/cast/JSToInt32Node.d.ts'
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
 import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
@@ -33,5 +33,5 @@ export abstract class AtomicsBuiltins$AtomicsNotifyNode extends AtomicsBuiltins$
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
-    doNotify(maybeTarget: Object, index: Object, count: Object, toIndexNode: JSToIndexNode, toIntNode: JSToIntegerAsIntNode, notSharedArrayBuffer: InlinedBranchProfile): Object;
+    doNotify(maybeTarget: Object, index: Object, count: Object, toIndexNode: JSToIndexNode, toInt32Node: JSToInt32Node, notSharedArrayBuffer: InlinedBranchProfile): Object;
 }

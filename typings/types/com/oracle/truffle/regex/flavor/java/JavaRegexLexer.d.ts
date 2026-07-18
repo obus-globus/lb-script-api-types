@@ -20,7 +20,6 @@ export class JavaRegexLexer extends RegexLexer {
     static isHexDigit(paramc: number): boolean;
     static isOctalDigit(paramc: number): boolean;
     constructor(source: RegexSource, flags: JavaFlags, compilationBuffer: CompilationBuffer)
-    // private charClassNesting: number;
     // private curCharClass: Range[];
     readonly currentFlags: JavaFlags;
     // private flagsStack: JavaFlags[];
@@ -62,7 +61,7 @@ export class JavaRegexLexer extends RegexLexer {
     handleBoundedQuantifierOutOfOrder(): RegexSyntaxException;
     handleBoundedQuantifierOverflow(min: number, max: number): Token;
     handleBoundedQuantifierOverflowMin(min: number, max: number): Token;
-    handleCCRangeOutOfOrder(startPos: number, lo: number, hi: number): ClassSetContents;
+    handleCCRangeOutOfOrder(startPos: number): RegexSyntaxException;
     handleCCRangeWithPredefCharClass(startPos: number, firstAtom: ClassSetContents, secondAtom: ClassSetContents): void;
     handleComplementOfStringSet(): RegexSyntaxException;
     handleGroupRedefinition(name: string, newId: number, oldId: number): void;
@@ -85,7 +84,6 @@ export class JavaRegexLexer extends RegexLexer {
     // private javaParseGroupName(): string;
     literalChar(codePoint: number): Token;
     // private parseCharClassInternal(consume: boolean): (Object | null)[];
-    // private parseCharClassInternalBody(consume: boolean): (Object | null)[];
     parseClassSetExpression(): ClassSetContents;
     parseCodePointInGroupName(): number;
     parseCustomEscape(c: string): Token;

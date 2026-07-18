@@ -16,14 +16,12 @@ import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSC
 import type { JSContext$BuiltinFunctionKey } from '../../../../../com/oracle/truffle/js/runtime/JSContext$BuiltinFunctionKey.d.ts'
 import type { JSContextOptions } from '../../../../../com/oracle/truffle/js/runtime/JSContextOptions.d.ts'
 import type { JSErrorType } from '../../../../../com/oracle/truffle/js/runtime/JSErrorType.d.ts'
-import type { Symbol } from '../../../../../com/oracle/truffle/js/runtime/Symbol.d.ts'
 import type { TypedArrayFactory } from '../../../../../com/oracle/truffle/js/runtime/array/TypedArrayFactory.d.ts'
 import type { JSArrayObject } from '../../../../../com/oracle/truffle/js/runtime/builtins/JSArrayObject.d.ts'
 import type { JSConstructor } from '../../../../../com/oracle/truffle/js/runtime/builtins/JSConstructor.d.ts'
 import type { JSFunctionObject } from '../../../../../com/oracle/truffle/js/runtime/builtins/JSFunctionObject.d.ts'
 import type { JSObjectFactory$RealmData } from '../../../../../com/oracle/truffle/js/runtime/builtins/JSObjectFactory$RealmData.d.ts'
 import type { JSObjectPrototypeObject } from '../../../../../com/oracle/truffle/js/runtime/builtins/JSObjectPrototypeObject.d.ts'
-import type { JSWebAssemblyTagObject } from '../../../../../com/oracle/truffle/js/runtime/builtins/wasm/JSWebAssemblyTagObject.d.ts'
 import type { TopScopeObject } from '../../../../../com/oracle/truffle/js/runtime/interop/TopScopeObject.d.ts'
 import type { Accessor } from '../../../../../com/oracle/truffle/js/runtime/objects/Accessor.d.ts'
 import type { JSDynamicObject } from '../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
@@ -35,9 +33,7 @@ import type { TRegexUtil$InvokeExecMethodNode } from '../../../../../com/oracle/
 import type { OutputStream } from '../../../../../java/io/OutputStream.d.ts'
 import type { PrintWriter } from '../../../../../java/io/PrintWriter.d.ts'
 import type { Charset } from '../../../../../java/nio/charset/Charset.d.ts'
-import type { SecureRandom } from '../../../../../java/security/SecureRandom.d.ts'
 import type { ZoneId } from '../../../../../java/time/ZoneId.d.ts'
-import type { Random } from '../../../../../java/util/Random.d.ts'
 import type { SplittableRandom } from '../../../../../java/util/SplittableRandom.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { OptionValues } from '../../../../../org/graalvm/options/OptionValues.d.ts'
@@ -48,12 +44,12 @@ export class JSRealm extends Object {
     static ATOMICS_CLASS_NAME: TruffleString;
     static CONSOLE_CLASS_NAME: TruffleString;
     static DEBUG_CLASS_NAME: TruffleString;
-    static INTL_LEGACY_CONSTRUCTED_SYMBOL: TruffleString;
     static JAVA_CLASS_NAME: TruffleString;
     static JAVA_CLASS_NAME_NASHORN_COMPAT: TruffleString;
     static MLE_CLASS_NAME: TruffleString;
     static NANOSECONDS_PER_MILLISECOND: number;
     static NANOSECONDS_PER_SECOND: number;
+    static PERFORMANCE_CLASS_NAME: TruffleString;
     static POLYGLOT_CLASS_NAME: TruffleString;
     static REALM_BUILTIN_CLASS_NAME: TruffleString;
     static REFLECT_CLASS_NAME: TruffleString;
@@ -69,7 +65,6 @@ export class JSRealm extends Object {
     readonly arrayBufferConstructor: JSFunctionObject;
     readonly arrayBufferPrototype: JSDynamicObject;
     readonly arrayConstructor: JSFunctionObject;
-    readonly arrayIteratorNextMethod: JSFunctionObject;
     readonly arrayIteratorPrototype: JSDynamicObject;
     readonly arrayProtoValuesIterator: JSDynamicObject;
     readonly arrayPrototype: JSArrayObject;
@@ -77,15 +72,13 @@ export class JSRealm extends Object {
     readonly asyncContextSnapshotPrototype: JSDynamicObject;
     // private asyncContextVariableConstructor: JSFunctionObject;
     readonly asyncContextVariablePrototype: JSDynamicObject;
-    readonly asyncDisposableStackConstructor: JSFunctionObject;
-    readonly asyncDisposableStackPrototype: JSDynamicObject;
     readonly asyncFromSyncIteratorPrototype: JSDynamicObject;
     readonly asyncFunctionConstructor: JSFunctionObject;
     readonly asyncFunctionPrototype: JSDynamicObject;
     readonly asyncGeneratorFunctionConstructor: JSFunctionObject;
     readonly asyncGeneratorFunctionPrototype: JSDynamicObject;
     readonly asyncGeneratorObjectPrototype: JSDynamicObject;
-    readonly asyncIteratorConstructor: JSFunctionObject;
+    // private asyncIteratorContructor: JSFunctionObject;
     readonly asyncIteratorHelperPrototype: JSDynamicObject;
     readonly asyncIteratorPrototype: JSDynamicObject;
     readonly bigIntConstructor: JSFunctionObject;
@@ -99,13 +92,12 @@ export class JSRealm extends Object {
     readonly charset: Charset;
     readonly collatorConstructor: JSFunctionObject;
     readonly collatorPrototype: JSDynamicObject;
-    readonly commonJSRequireCache: JavaMap<TruffleFile, JSObject>;
+    readonly commonJSRequireCache: JavaMap<TruffleFile, JSDynamicObject>;
     readonly commonJSRequireFunctionObject: Object;
     // private compiledRegexCache: JavaMap<Source, Object>;
     readonly consoleUtil: JSConsoleUtil;
     readonly context: JSContext;
     readonly contextOptions: JSContextOptions;
-    // private cryptoObject: JSObject;
     // private currentRealm: JSRealm;
     // private customEsmPathMappingCallback: Object;
     readonly dataViewConstructor: JSFunctionObject;
@@ -117,15 +109,12 @@ export class JSRealm extends Object {
     readonly dedentMap: JavaMap<Object, JSArrayObject>;
     readonly displayNamesConstructor: JSFunctionObject;
     readonly displayNamesPrototype: JSDynamicObject;
-    readonly disposableStackConstructor: JSFunctionObject;
-    readonly disposableStackPrototype: JSDynamicObject;
     readonly durationFormatConstructor: JSFunctionObject;
     readonly durationFormatPrototype: JSDynamicObject;
     readonly embedderData: Object;
     readonly enumerateIteratorPrototype: JSDynamicObject;
     // private errorConstructors: JSFunctionObject[];
     // private errorPrototypes: JSDynamicObject[];
-    readonly errorToStringFunctionObject: Object;
     readonly errorWriter: PrintWriterWrapper;
     readonly evalFunctionObject: Object;
     readonly finalizationRegistryConstructor: JSFunctionObject;
@@ -150,7 +139,6 @@ export class JSRealm extends Object {
     readonly globalObject: JSDynamicObject;
     readonly globalScope: JSDynamicObject;
     readonly initialRegExpPrototypeShape: Shape;
-    readonly intlFallbackSymbol: Symbol;
     readonly iteratorConstructor: JSFunctionObject;
     readonly iteratorHelperPrototype: JSDynamicObject;
     readonly iteratorPrototype: JSDynamicObject;
@@ -171,6 +159,7 @@ export class JSRealm extends Object {
     // private jsShortTimeLocalFormat: DateFormat;
     readonly jsonParseFunctionObject: Object;
     // private lastAsyncEvaluationOrder: number;
+    // private lastFuzzyTime: number;
     readonly listFormatConstructor: JSFunctionObject;
     readonly listFormatPrototype: JSDynamicObject;
     readonly localTimeZone: TimeZone;
@@ -182,7 +171,6 @@ export class JSRealm extends Object {
     readonly mapPrototype: JSDynamicObject;
     // private mathObject: JSDynamicObject;
     readonly moduleLoader: JSModuleLoader;
-    // private nanoTimeOrigin: number;
     // private nanoToZeroTimeOffset: number;
     readonly numberConstructor: JSFunctionObject;
     readonly numberFormatConstructor: JSFunctionObject;
@@ -191,20 +179,16 @@ export class JSRealm extends Object {
     readonly objectConstructor: JSFunctionObject;
     readonly objectFactories: JSObjectFactory$RealmData;
     readonly objectPrototype: JSObjectPrototypeObject;
-    readonly objectToStringFunctionObject: Object;
     readonly operatorCounter: number;
     readonly ordinaryHasInstanceFunction: JSDynamicObject;
     readonly outputWriter: PrintWriterWrapper;
     // private parentPromise: JSDynamicObject;
     // private parentRealm: JSRealm;
-    readonly performanceObject: JSObject;
     readonly pluralRulesConstructor: JSFunctionObject;
     readonly pluralRulesPrototype: JSDynamicObject;
     // private preinitConsoleBuiltinObject: JSDynamicObject;
-    // private preinitCryptoFunctionObject: JSFunctionObject;
-    // private preinitCryptoObject: JSObject;
     // private preinitIntlObject: JSDynamicObject;
-    // private preinitPerformanceObject: JSObject;
+    // private preinitPerformanceObject: JSDynamicObject;
     readonly preparingStackTrace: boolean;
     readonly promiseAllFunctionObject: JSFunctionObject;
     readonly promiseConstructor: JSFunctionObject;
@@ -212,6 +196,7 @@ export class JSRealm extends Object {
     readonly promiseResolveFunctionObject: JSFunctionObject;
     readonly proxyConstructor: JSFunctionObject;
     readonly proxyPrototype: JSDynamicObject;
+    readonly random: SplittableRandom;
     readonly realmBuiltinObject: JSDynamicObject;
     // private realmList: JSRealm[];
     readonly reflectApplyFunctionObject: Object;
@@ -222,7 +207,6 @@ export class JSRealm extends Object {
     readonly relativeTimeFormatConstructor: JSFunctionObject;
     readonly relativeTimeFormatPrototype: JSDynamicObject;
     readonly scriptEngineImportScope: JSDynamicObject;
-    readonly secureRandom: Random;
     readonly segmentIteratorPrototype: JSDynamicObject;
     readonly segmenterConstructor: JSFunctionObject;
     readonly segmenterPrototype: JSDynamicObject;
@@ -234,7 +218,6 @@ export class JSRealm extends Object {
     readonly shadowRealmPrototype: JSDynamicObject;
     readonly sharedArrayBufferConstructor: JSFunctionObject;
     readonly sharedArrayBufferPrototype: JSDynamicObject;
-    readonly splittableRandom: SplittableRandom;
     // private staticRegexResult: Object;
     readonly staticRegexResultCompiledRegex: Object;
     // private staticRegexResultFromIndex: number;
@@ -281,17 +264,12 @@ export class JSRealm extends Object {
     // private wasmCustomSections: Object;
     // private wasmEmbedderDataGet: Object;
     // private wasmEmbedderDataSet: Object;
-    // private wasmExnAlloc: Object;
-    // private wasmExnTag: Object;
     // private wasmFuncType: Object;
     // private wasmGlobalAlloc: Object;
     // private wasmGlobalRead: Object;
     // private wasmGlobalWrite: Object;
     // private wasmInstanceExport: Object;
-    // private wasmIsArray: Object;
     // private wasmIsFunc: Object;
-    // private wasmIsStruct: Object;
-    // private wasmJSTag: JSWebAssemblyTagObject;
     // private wasmMemAlloc: Object;
     // private wasmMemAsByteBuffer: Object;
     // private wasmMemGrow: Object;
@@ -304,16 +282,12 @@ export class JSRealm extends Object {
     // private wasmTableLength: Object;
     // private wasmTableRead: Object;
     // private wasmTableWrite: Object;
-    // private wasmTagAlloc: Object;
-    // private wasmTagType: Object;
     readonly weakMapConstructor: JSFunctionObject;
     readonly weakMapPrototype: JSDynamicObject;
     readonly weakRefConstructor: JSFunctionObject;
     readonly weakRefPrototype: JSDynamicObject;
     readonly weakSetConstructor: JSFunctionObject;
     readonly weakSetPrototype: JSDynamicObject;
-    // private webAssemblyExceptionConstructor: JSFunctionObject;
-    readonly webAssemblyExceptionPrototype: JSDynamicObject;
     // private webAssemblyGlobalConstructor: JSFunctionObject;
     readonly webAssemblyGlobalPrototype: JSDynamicObject;
     // private webAssemblyInstanceConstructor: JSFunctionObject;
@@ -325,8 +299,6 @@ export class JSRealm extends Object {
     // private webAssemblyObject: JSDynamicObject;
     // private webAssemblyTableConstructor: JSFunctionObject;
     readonly webAssemblyTablePrototype: JSDynamicObject;
-    // private webAssemblyTagConstructor: JSFunctionObject;
-    readonly webAssemblyTagPrototype: JSDynamicObject;
     readonly workerConstructor: JSFunctionObject;
     readonly workerPrototype: JSDynamicObject;
     readonly wrapForAsyncIteratorPrototype: JSDynamicObject;
@@ -334,7 +306,6 @@ export class JSRealm extends Object {
     // private addArgumentsFromEnv(newEnv: TruffleLanguage$Env): void;
     // private addCommonJSGlobals(): void;
     // private addConsoleGlobals(): void;
-    // private addCryptoGlobal(): void;
     // private addGlobalGlobal(): void;
     // private addIntlGlobal(): void;
     // private addLoadGlobals(): void;
@@ -363,13 +334,13 @@ export class JSRealm extends Object {
     // private createIteratorPrototype(): JSDynamicObject;
     // private createMleObject(): JSObject;
     // private createModuleLoader(): void;
+    // private createPerformanceObject(): JSDynamicObject;
     // private createRealmBuiltinObject(): JSObject;
     // private createReflect(): JSDynamicObject;
     // private createRegExpStringIteratorPrototype(): JSDynamicObject;
     // private createTemplateRegistry(): void;
     // private createThrowTypeErrorFunction(restrictedProperty: boolean): JSFunctionObject;
     // private createTopScope(): TopScopeObject;
-    // private createWasmJSTag(): JSWebAssemblyTagObject;
     currentTimeMillis(): number;
     dispose(): void;
     // private ensureWasmLanguageAvailable(): LanguageInfo;
@@ -385,7 +356,6 @@ export class JSRealm extends Object {
     getArrayBufferViewConstructor(factory: TypedArrayFactory): JSFunctionObject;
     getArrayBufferViewPrototype(factory: TypedArrayFactory): JSDynamicObject;
     getArrayConstructor(): JSFunctionObject;
-    getArrayIteratorNextMethod(): JSFunctionObject;
     getArrayIteratorPrototype(): JSDynamicObject;
     getArrayProtoValuesIterator(): JSDynamicObject;
     getArrayPrototype(): JSDynamicObject;
@@ -393,8 +363,6 @@ export class JSRealm extends Object {
     getAsyncContextSnapshotConstructor(): JSFunctionObject;
     getAsyncContextSnapshotPrototype(): JSDynamicObject;
     getAsyncContextVariablePrototype(): JSDynamicObject;
-    getAsyncDisposableStackConstructor(): JSFunctionObject;
-    getAsyncDisposableStackPrototype(): JSDynamicObject;
     getAsyncFromSyncIteratorPrototype(): JSDynamicObject;
     getAsyncFunctionConstructor(): JSFunctionObject;
     getAsyncFunctionPrototype(): JSDynamicObject;
@@ -417,7 +385,7 @@ export class JSRealm extends Object {
     // private getCharsetImpl(): Charset;
     getCollatorConstructor(): JSFunctionObject;
     getCollatorPrototype(): JSDynamicObject;
-    getCommonJSRequireCache(): JavaMap<TruffleFile, JSObject>;
+    getCommonJSRequireCache(): JavaMap<TruffleFile, JSDynamicObject>;
     getCommonJSRequireFunctionObject(): Object;
     getConsoleUtil(): JSConsoleUtil;
     getContext(): JSContext;
@@ -434,8 +402,6 @@ export class JSRealm extends Object {
     getDedentMap(): JavaMap<Object, JSArrayObject>;
     getDisplayNamesConstructor(): JSFunctionObject;
     getDisplayNamesPrototype(): JSDynamicObject;
-    getDisposableStackConstructor(): JSFunctionObject;
-    getDisposableStackPrototype(): JSDynamicObject;
     getDurationFormatConstructor(): JSFunctionObject;
     getDurationFormatPrototype(): JSDynamicObject;
     getEmbedderData(): Object;
@@ -443,7 +409,6 @@ export class JSRealm extends Object {
     getEnv(): TruffleLanguage$Env;
     getErrorConstructor(type: JSErrorType): JSFunctionObject;
     getErrorPrototype(type: JSErrorType): JSDynamicObject;
-    getErrorToStringFunctionObject(): Object;
     getErrorWriter(): PrintWriter;
     getEvalFunctionObject(): Object;
     getFinalizationRegistryConstructor(): JSFunctionObject;
@@ -471,7 +436,6 @@ export class JSRealm extends Object {
     // private getICUTimeZoneFromEnv(): TimeZone;
     getIndexFromRealmList(rlm: JSRealm): number;
     getInitialRegExpPrototypeShape(): Shape;
-    getIntlFallbackSymbol(): Symbol;
     getIteratorConstructor(): JSFunctionObject;
     getIteratorHelperPrototype(): JSDynamicObject;
     getIteratorPrototype(): JSDynamicObject;
@@ -483,8 +447,6 @@ export class JSRealm extends Object {
     getJSShortDateLocalFormat(): DateFormat;
     getJSShortTimeFormat(): DateFormat;
     getJSShortTimeLocalFormat(): DateFormat;
-    getJSTagAddr(): Object;
-    getJSTagObj(): JSWebAssemblyTagObject;
     getJavaImporterConstructor(): JSFunctionObject;
     getJavaImporterPrototype(): JSDynamicObject;
     getJavaPackageToPrimitiveFunction(): JSDynamicObject;
@@ -506,13 +468,11 @@ export class JSRealm extends Object {
     getObjectConstructor(): JSFunctionObject;
     getObjectFactories(): JSObjectFactory$RealmData;
     getObjectPrototype(): JSDynamicObject;
-    getObjectToStringFunctionObject(): Object;
     getOperatorCounter(): number;
     getOptions(): OptionValues;
     getOrdinaryHasInstanceFunction(): JSDynamicObject;
     getOutputWriter(): PrintWriter;
     getParent(): JSRealm;
-    getPerformanceObject(): Object;
     getPluralRulesConstructor(): JSFunctionObject;
     getPluralRulesPrototype(): JSDynamicObject;
     getPromiseAllFunctionObject(): JSFunctionObject;
@@ -521,6 +481,7 @@ export class JSRealm extends Object {
     getPromiseResolveFunctionObject(): JSFunctionObject;
     getProxyConstructor(): JSFunctionObject;
     getProxyPrototype(): JSDynamicObject;
+    getRandom(): SplittableRandom;
     getRealmBuiltinObject(): JSDynamicObject;
     getReflectApplyFunctionObject(): Object;
     getReflectConstructFunctionObject(): Object;
@@ -530,7 +491,6 @@ export class JSRealm extends Object {
     getRelativeTimeFormatConstructor(): JSFunctionObject;
     getRelativeTimeFormatPrototype(): JSDynamicObject;
     getScriptEngineImportScope(): JSDynamicObject;
-    getSecureRandom(): SecureRandom;
     getSegmentIteratorPrototype(): JSDynamicObject;
     getSegmenterConstructor(): JSFunctionObject;
     getSegmenterPrototype(): JSDynamicObject;
@@ -542,7 +502,6 @@ export class JSRealm extends Object {
     getShadowRealmPrototype(): JSDynamicObject;
     getSharedArrayBufferConstructor(): JSFunctionObject;
     getSharedArrayBufferPrototype(): JSDynamicObject;
-    getSplittableRandom(): SplittableRandom;
     getStaticRegexResult(ctx: JSContext, node: Node, invokeExec: TRegexUtil$InvokeExecMethodNode): Object;
     getStaticRegexResultCompiledRegex(): Object;
     getStaticRegexResultInputString(): TruffleString;
@@ -582,16 +541,12 @@ export class JSRealm extends Object {
     getWASMCustomSections(): Object;
     getWASMEmbedderDataGet(): Object;
     getWASMEmbedderDataSet(): Object;
-    getWASMExnAlloc(): Object;
-    getWASMExnTag(): Object;
     getWASMFuncType(): Object;
     getWASMGlobalAlloc(): Object;
     getWASMGlobalRead(): Object;
     getWASMGlobalWrite(): Object;
     getWASMInstanceExport(): Object;
-    getWASMIsArray(): Object;
     getWASMIsFunc(): Object;
-    getWASMIsStruct(): Object;
     getWASMMemAlloc(): Object;
     getWASMMemAsByteBuffer(): Object;
     getWASMMemGrow(): Object;
@@ -603,8 +558,6 @@ export class JSRealm extends Object {
     getWASMTableLength(): Object;
     getWASMTableRead(): Object;
     getWASMTableWrite(): Object;
-    getWASMTagAlloc(): Object;
-    getWASMTagType(): Object;
     getWasmRefNull(): Object;
     getWeakMapConstructor(): JSFunctionObject;
     getWeakMapPrototype(): JSDynamicObject;
@@ -612,14 +565,12 @@ export class JSRealm extends Object {
     getWeakRefPrototype(): JSDynamicObject;
     getWeakSetConstructor(): JSFunctionObject;
     getWeakSetPrototype(): JSDynamicObject;
-    getWebAssemblyExceptionPrototype(): JSDynamicObject;
     getWebAssemblyGlobalPrototype(): JSDynamicObject;
     getWebAssemblyInstancePrototype(): JSDynamicObject;
     getWebAssemblyMemoryPrototype(): JSDynamicObject;
     getWebAssemblyModuleConstructor(): JSFunctionObject;
     getWebAssemblyModulePrototype(): JSDynamicObject;
     getWebAssemblyTablePrototype(): JSDynamicObject;
-    getWebAssemblyTagPrototype(): JSDynamicObject;
     getWorkerConstructor(): JSFunctionObject;
     getWorkerPrototype(): JSDynamicObject;
     getWrapForAsyncIteratorPrototype(): JSDynamicObject;
@@ -633,7 +584,6 @@ export class JSRealm extends Object {
     // private initializeErrorConstructors(): void;
     // private initializeTypedArrayConstructors(): void;
     invalidateStaticRegexResult(): void;
-    isCryptoObject(object: Object): boolean;
     isJavaInteropEnabled(): boolean;
     isMainRealm(): boolean;
     isPreparingStackTrace(): boolean;
@@ -645,7 +595,6 @@ export class JSRealm extends Object {
     lookupFunction(container: JSBuiltinsContainer, key: Object): JSFunctionObject;
     lookupFunctionWithPrototype(container: JSBuiltinsContainer, key: Object, prototype: JSDynamicObject): JSFunctionObject;
     nanoTime(): number;
-    nanoTimeOrigin(): number;
     nanoTimeWallClock(): number;
     nextAsyncEvaluationOrder(): number;
     patchContext(newEnv: TruffleLanguage$Env): boolean;
@@ -677,7 +626,6 @@ export class JSRealm extends Object {
     setupGlobals(): void;
     // private setupJavaInterop(): void;
     // private setupPolyglot(): void;
-    // private setupPredefinedSymbols(symbolFunction: JSDynamicObject): void;
     storeParentPromise(promise: JSDynamicObject): void;
     // private updateResolution(nanos: number): number;
 }

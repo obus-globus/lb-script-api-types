@@ -2,12 +2,10 @@ import type { AbstractState } from '../../../../../../com/oracle/truffle/regex/t
 import type { AbstractTransition } from '../../../../../../com/oracle/truffle/regex/tregex/automaton/AbstractTransition.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class BasicState<S extends BasicState<S, T>, T extends AbstractTransition<S, T>> extends Object implements AbstractState<S, T> {
-    static isAnchoredFinalState(paramflags: number): boolean;
-    static isUnAnchoredFinalState(paramflags: number): boolean;
     constructor(original: BasicState<S, T>)
     constructor(id: number, emptyTransitions: T[])
     constructor(id: number, flags: number, emptyTransitions: T[])
-    readonly flags: number;
+    // private flags: number;
     readonly id: number;
     // private nPredecessors: number;
     readonly predecessors: T[];

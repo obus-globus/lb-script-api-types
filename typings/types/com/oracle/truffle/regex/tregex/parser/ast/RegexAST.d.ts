@@ -27,7 +27,7 @@ import type { RegexASTRootNode } from '../../../../../../../com/oracle/truffle/r
 import type { RegexASTSubtreeRootNode } from '../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/RegexASTSubtreeRootNode.d.ts'
 import type { Sequence } from '../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/Sequence.d.ts'
 import type { SubexpressionCall } from '../../../../../../../com/oracle/truffle/regex/tregex/parser/ast/SubexpressionCall.d.ts'
-import type { Encoding } from '../../../../../../../com/oracle/truffle/regex/tregex/string/Encoding.d.ts'
+import type { Encodings$Encoding } from '../../../../../../../com/oracle/truffle/regex/tregex/string/Encodings$Encoding.d.ts'
 import type { JsonArray } from '../../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonArray.d.ts'
 import type { JsonConvertible } from '../../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonConvertible.d.ts'
 import type { JsonValue } from '../../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonValue.d.ts'
@@ -89,7 +89,7 @@ export class RegexAST extends Object implements StateIndex<RegexASTNode>, JsonCo
     extractInnerLiteral(): InnerLiteral;
     getAllQuantifierBounds(): number[];
     getConditionGroups(): number[];
-    getEncoding(): Encoding;
+    getEncoding(): Encodings$Encoding;
     getEntryAfterPrefix(): RegexASTNode;
     getFlags(): RegexFlags;
     getFlavor(): RegexFlavor;

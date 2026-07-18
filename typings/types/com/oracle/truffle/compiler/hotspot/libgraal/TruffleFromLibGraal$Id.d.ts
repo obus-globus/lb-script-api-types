@@ -6,7 +6,6 @@ export class TruffleFromLibGraal$Id extends Enum<TruffleFromLibGraal$Id> impleme
     static AddInlinedTarget: TruffleFromLibGraal$Id;
     static AddTargetToDequeue: TruffleFromLibGraal$Id;
     static AsJavaConstant: TruffleFromLibGraal$Id;
-    static CanBeInlined: TruffleFromLibGraal$Id;
     static CancelCompilation: TruffleFromLibGraal$Id;
     static CompilableToString: TruffleFromLibGraal$Id;
     static ConsumeOptimizedAssumptionDependency: TruffleFromLibGraal$Id;
@@ -16,6 +15,7 @@ export class TruffleFromLibGraal$Id extends Enum<TruffleFromLibGraal$Id> impleme
     static GetCompilableCallCount: TruffleFromLibGraal$Id;
     static GetCompilableName: TruffleFromLibGraal$Id;
     static GetCompilerOptions: TruffleFromLibGraal$Id;
+    static GetConstantFieldInfo: TruffleFromLibGraal$Id;
     static GetDebugProperties: TruffleFromLibGraal$Id;
     static GetDescription: TruffleFromLibGraal$Id;
     static GetFailedSpeculationsAddress: TruffleFromLibGraal$Id;
@@ -27,8 +27,8 @@ export class TruffleFromLibGraal$Id extends Enum<TruffleFromLibGraal$Id> impleme
     static GetNonTrivialNodeCount: TruffleFromLibGraal$Id;
     static GetOffsetEnd: TruffleFromLibGraal$Id;
     static GetOffsetStart: TruffleFromLibGraal$Id;
+    static GetPartialEvaluationMethodInfo: TruffleFromLibGraal$Id;
     static GetPosition: TruffleFromLibGraal$Id;
-    static GetSuccessfulCompilationCount: TruffleFromLibGraal$Id;
     static GetSuppliedString: TruffleFromLibGraal$Id;
     static GetURI: TruffleFromLibGraal$Id;
     static HasNextTier: TruffleFromLibGraal$Id;
@@ -37,11 +37,11 @@ export class TruffleFromLibGraal$Id extends Enum<TruffleFromLibGraal$Id> impleme
     static IsSameOrSplit: TruffleFromLibGraal$Id;
     static IsSuppressedFailure: TruffleFromLibGraal$Id;
     static IsTrivial: TruffleFromLibGraal$Id;
+    static IsValueType: TruffleFromLibGraal$Id;
     static Log: TruffleFromLibGraal$Id;
     static OnCodeInstallation: TruffleFromLibGraal$Id;
     static OnCompilationFailed: TruffleFromLibGraal$Id;
     static OnCompilationRetry: TruffleFromLibGraal$Id;
-    static OnCompilationSuccess: TruffleFromLibGraal$Id;
     static OnFailure: TruffleFromLibGraal$Id;
     static OnGraalTierFinished: TruffleFromLibGraal$Id;
     static OnIsolateShutdown: TruffleFromLibGraal$Id;
@@ -64,5 +64,5 @@ export class TruffleFromLibGraal$Id extends Enum<TruffleFromLibGraal$Id> impleme
     getReturnType(): Class<Object>;
     getSignature(): string;
     toString(): string;
-    name(): "AddInlinedTarget" | "AddTargetToDequeue" | "AsJavaConstant" | "CanBeInlined" | "CancelCompilation" | "CompilableToString" | "ConsumeOptimizedAssumptionDependency" | "CountDirectCallNodes" | "CreateStringSupplier" | "EngineId" | "GetCompilableCallCount" | "GetCompilableName" | "GetCompilerOptions" | "GetDebugProperties" | "GetDescription" | "GetFailedSpeculationsAddress" | "GetKnownCallSiteCount" | "GetLanguage" | "GetLineNumber" | "GetNodeClassName" | "GetNodeId" | "GetNonTrivialNodeCount" | "GetOffsetEnd" | "GetOffsetStart" | "GetPosition" | "GetSuccessfulCompilationCount" | "GetSuppliedString" | "GetURI" | "HasNextTier" | "IsCancelled" | "IsLastTier" | "IsSameOrSplit" | "IsSuppressedFailure" | "IsTrivial" | "Log" | "OnCodeInstallation" | "OnCompilationFailed" | "OnCompilationRetry" | "OnCompilationSuccess" | "OnFailure" | "OnGraalTierFinished" | "OnIsolateShutdown" | "OnSuccess" | "OnTruffleTierFinished" | "PrepareForCompilation" | "RegisterOptimizedAssumptionDependency" | "SetCallCounts";
+    name(): "AddTargetToDequeue" | "AddInlinedTarget" | "AsJavaConstant" | "CancelCompilation" | "CompilableToString" | "ConsumeOptimizedAssumptionDependency" | "CreateStringSupplier" | "CountDirectCallNodes" | "EngineId" | "GetCompilableCallCount" | "GetCompilableName" | "GetCompilerOptions" | "GetConstantFieldInfo" | "GetDescription" | "GetFailedSpeculationsAddress" | "GetKnownCallSiteCount" | "GetLanguage" | "GetLineNumber" | "PrepareForCompilation" | "GetNodeId" | "GetNodeClassName" | "GetDebugProperties" | "GetNonTrivialNodeCount" | "GetOffsetEnd" | "GetOffsetStart" | "GetPosition" | "GetSuppliedString" | "GetURI" | "IsCancelled" | "IsLastTier" | "HasNextTier" | "IsSameOrSplit" | "IsSuppressedFailure" | "IsTrivial" | "IsValueType" | "Log" | "OnCodeInstallation" | "OnCompilationFailed" | "OnCompilationRetry" | "OnFailure" | "OnGraalTierFinished" | "OnSuccess" | "OnTruffleTierFinished" | "GetPartialEvaluationMethodInfo" | "RegisterOptimizedAssumptionDependency" | "SetCallCounts" | "OnIsolateShutdown";
 }

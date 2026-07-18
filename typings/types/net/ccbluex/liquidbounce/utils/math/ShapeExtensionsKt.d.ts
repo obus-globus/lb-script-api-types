@@ -12,7 +12,7 @@ export class ShapeExtensionsKt extends Object {
     /**
      * @returns null if shape is empty
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/ShapeExtensions.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/ShapeExtensions.kt:54}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/ShapeExtensions.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/ShapeExtensions.kt:54}
      */
     static boundsOrNull(self: VoxelShape): AABB | null;
     static clipAllBoxes(self: VoxelShape, base: BlockPos, from: Vec3, to: Vec3): Vec3[];
@@ -25,14 +25,14 @@ export class ShapeExtensionsKt extends Object {
     /**
      * Shrinks a {@link VoxelShape} by the specified amounts on selected axes.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/ShapeExtensions.kt#L164 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/ShapeExtensions.kt:164}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/ShapeExtensions.kt#L164 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/ShapeExtensions.kt:164}
      */
     static shrink(self: VoxelShape, x: number, y: number, z: number): VoxelShape;
     static toAabbs(self: VoxelShape, destination: AABB[]): void;
     /**
      * Order: bigger first
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/ShapeExtensions.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/ShapeExtensions.kt:78}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/ShapeExtensions.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/ShapeExtensions.kt:78}
      */
     static toSortedAabbs(self: VoxelShape): AABB[];
 }

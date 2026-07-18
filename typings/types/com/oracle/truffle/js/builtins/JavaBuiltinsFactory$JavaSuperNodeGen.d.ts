@@ -2,7 +2,6 @@ import type { VirtualFrame } from '../../../../../com/oracle/truffle/api/frame/V
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { InteropLibrary } from '../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { TruffleString$ToJavaStringNode } from '../../../../../com/oracle/truffle/api/strings/TruffleString$ToJavaStringNode.d.ts'
 import type { JavaBuiltins$JavaSuperNode } from '../../../../../com/oracle/truffle/js/builtins/JavaBuiltins$JavaSuperNode.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
@@ -27,7 +26,6 @@ export class JavaBuiltinsFactory$JavaSuperNodeGen extends JavaBuiltins$JavaSuper
     // private interop_: InteropLibrary;
     // private state_0_: number;
     // private toJSType_: ImportValueNode;
-    // private toJavaString_: TruffleString$ToJavaStringNode;
     execute(frameValue: VirtualFrame): Object;
     // private executeAndSpecialize(arguments0Value: Object): Object;
     getArguments(): JavaScriptNode[];

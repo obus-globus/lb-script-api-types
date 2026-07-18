@@ -10,7 +10,7 @@ import type { TruffleString$CodeRange } from '../../../../../../com/oracle/truff
 import type { RegexSource } from '../../../../../../com/oracle/truffle/regex/RegexSource.d.ts'
 import type { TRegexExecutorLocals } from '../../../../../../com/oracle/truffle/regex/tregex/nodes/TRegexExecutorLocals.d.ts'
 import type { TRegexExecutorNode } from '../../../../../../com/oracle/truffle/regex/tregex/nodes/TRegexExecutorNode.d.ts'
-import type { Encoding } from '../../../../../../com/oracle/truffle/regex/tregex/string/Encoding.d.ts'
+import type { Encodings$Encoding } from '../../../../../../com/oracle/truffle/regex/tregex/string/Encodings$Encoding.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class TRegexExecutorBaseNode extends Node implements InstrumentableNode {
@@ -22,7 +22,7 @@ export abstract class TRegexExecutorBaseNode extends Node implements Instrumenta
     findNearestNodeAt(line: number, column: number, tags: Class<Tag>[]): Node;
     findNearestNodeAt(sourceCharIndex: number, tags: Class<Tag>[]): Node;
     findProbe(): ProbeNode;
-    getEncoding(): Encoding;
+    getEncoding(): Encodings$Encoding;
     getName(): string;
     getNodeObject(): Object;
     getNumberOfStates(): number;

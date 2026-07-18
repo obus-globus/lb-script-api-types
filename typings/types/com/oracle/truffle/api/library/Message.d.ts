@@ -5,20 +5,21 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class Message extends Object {
     static resolve(paramlibraryClass: Class<Library>, parammessageName: string): Message;
     static resolve(paramlibraryClass: Class<Library>, parammessageName: string, paramfail: boolean): Message;
-    static resolveExact(paramlibraryClass: Class<Library>, parammessageName: string, paramfail: boolean, ...paramargumentTypes: Class<Object>[]): Message;
-    static resolveExact(paramlibraryClass: Class<Library>, parammessageName: string, ...paramargumentTypes: Class<Object>[]): Message;
     constructor(libraryClass: Class<Library>, messageName: string, id: number, returnType: Class<Object>, ...parameterTypes: Class<Object>[])
     constructor(libraryClass: Class<Library>, messageName: string, id: number, deprecated: boolean, returnType: Class<Object>, ...parameterTypes: Class<Object>[])
     readonly deprecated: boolean;
+    // private hash: number;
     readonly id: number;
     // private library: LibraryFactory<Library>;
     readonly libraryClass: Class<Library>;
     readonly parameterCount: number;
+    readonly parameterTypes: Class<Object>[];
     // private parameterTypesArray: Class<Object>[];
     readonly qualifiedName: string;
     readonly returnType: Class<Object>;
     readonly simpleName: string;
     clone(): Object;
+    equals(obj: Object | null): boolean;
     getFactory(): LibraryFactory<any>;
     getId(): number;
     getLibraryClass(): Class<Library>;
@@ -30,6 +31,7 @@ export abstract class Message extends Object {
     getReceiverType(): Class<Object>;
     getReturnType(): Class<Object>;
     getSimpleName(): string;
+    hashCode(): number;
     isDeprecated(): boolean;
     toString(): string;
 }

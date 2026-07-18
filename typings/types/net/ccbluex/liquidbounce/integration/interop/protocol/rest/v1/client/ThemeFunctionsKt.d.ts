@@ -1,5 +1,5 @@
+import type { Route } from '../../../../../../../../../io/ktor/server/routing/Route.d.ts'
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
-import type { Node } from '../../../../../../../../../net/ccbluex/netty/http/rest/Node.d.ts'
 export class ThemeFunctionsKt extends Object {
-    static themeRoutes(self: Node): void;
+    static themeRoutes(self: Route): void;
 }

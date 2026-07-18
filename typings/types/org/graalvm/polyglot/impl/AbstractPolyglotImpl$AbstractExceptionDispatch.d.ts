@@ -10,7 +10,6 @@ export abstract class AbstractPolyglotImpl$AbstractExceptionDispatch extends Abs
     constructor()
     constructor(engineImpl: AbstractPolyglotImpl)
     asHostException(receiver: Object): Throwable;
-    getCauseImpl(receiver: Object): Object;
     getExitStatus(receiver: Object): number;
     getGuestObject(receiver: Object): Object;
     getMessage(receiver: Object): string;

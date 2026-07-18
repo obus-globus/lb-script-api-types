@@ -81,7 +81,6 @@ export class NodeFactoryProxyGen extends NodeFactory {
     createArgumentsObjectNode(arg0: JSContext, arg1: boolean, arg2: number): JavaScriptNode;
     createArrayLiteral(arg0: JSContext, arg1: JavaScriptNode[]): JavaScriptNode;
     createArrayLiteralWithSpread(arg0: JSContext, arg1: JavaScriptNode[]): JavaScriptNode;
-    createAsyncDisposeResources(arg0: JSContext, arg1: JSFrameSlot, arg2: JavaScriptNode, arg3: JavaScriptNode, arg4: JSReadFrameSlotNode, arg5: JSReadFrameSlotNode): JavaScriptNode;
     createAsyncFunctionBody(arg0: JSContext, arg1: JavaScriptNode, arg2: JSWriteFrameSlotNode, arg3: JSReadFrameSlotNode, arg4: JSWriteFrameSlotNode, arg5: SourceSection, arg6: TruffleString, arg7: ScriptOrModule): JavaScriptNode;
     createAsyncGeneratorBody(arg0: JSContext, arg1: JavaScriptNode, arg2: JSWriteFrameSlotNode, arg3: JSReadFrameSlotNode, arg4: JSWriteFrameSlotNode, arg5: JSReadFrameSlotNode, arg6: SourceSection, arg7: TruffleString, arg8: ScriptOrModule): JavaScriptNode;
     createAsyncGeneratorYield(arg0: JSContext, arg1: JSFrameSlot, arg2: JavaScriptNode, arg3: JSReadFrameSlotNode, arg4: JSReadFrameSlotNode, arg5: ReturnNode): JavaScriptNode;
@@ -132,8 +131,6 @@ export class NodeFactoryProxyGen extends NodeFactory {
     createDesugaredForIn(arg0: LoopNode): JavaScriptNode;
     createDesugaredForOf(arg0: LoopNode): JavaScriptNode;
     createDirectBreakTarget(arg0: JavaScriptNode): DirectBreakTargetNode;
-    createDisposeCapability(): JavaScriptNode;
-    createDisposeResources(arg0: JavaScriptNode, arg1: JavaScriptNode): JavaScriptNode;
     createDoWhile(arg0: LoopNode): JavaScriptNode;
     createDoWhileRepeatingNode(arg0: JavaScriptNode, arg1: JavaScriptNode): RepeatingNode;
     createDropNewTarget(arg0: JSContext, arg1: CallTarget): JavaScriptRootNode;
@@ -142,7 +139,7 @@ export class NodeFactoryProxyGen extends NodeFactory {
     createEnumerate(arg0: JSContext, arg1: JavaScriptNode, arg2: boolean): JavaScriptNode;
     createExprBlock(...arg0: JavaScriptNode[]): JavaScriptNode;
     createFor(arg0: LoopNode): StatementNode;
-    createForOfRepeatingNode(arg0: JavaScriptNode, arg1: JavaScriptNode, arg2: JavaScriptNode, arg3: JSWriteFrameSlotNode): RepeatingNode;
+    createForOfRepeatingNode(arg0: JavaScriptNode, arg1: JavaScriptNode, arg2: JSWriteFrameSlotNode): RepeatingNode;
     createForRepeatingNode(arg0: JavaScriptNode, arg1: JavaScriptNode, arg2: JavaScriptNode, arg3: FrameDescriptor, arg4: JavaScriptNode, arg5: JavaScriptNode, arg6: JSFrameSlot): RepeatingNode;
     createFrameReturn(arg0: JavaScriptNode): ReturnNode;
     createFrameReturnTarget(arg0: JavaScriptNode, arg1: JavaScriptNode): ReturnTargetNode;
@@ -223,7 +220,6 @@ export class NodeFactoryProxyGen extends NodeFactory {
     createReadProperty(arg0: JSContext, arg1: JavaScriptNode, arg2: TruffleString): JSTargetableNode;
     createReadProperty(arg0: JSContext, arg1: JavaScriptNode, arg2: TruffleString, arg3: boolean): JSTargetableNode;
     createRegExpLiteral(arg0: JSContext, arg1: TruffleString, arg2: TruffleString): JavaScriptNode;
-    createRegisterDisposableResource(arg0: JSContext, arg1: JavaScriptNode, arg2: JavaScriptNode, arg3: boolean): JavaScriptNode;
     createRequireObjectCoercible(arg0: JavaScriptNode): JavaScriptNode;
     createResolveNamedImport(arg0: JSContext, arg1: JavaScriptNode, arg2: Module$ModuleRequest, arg3: TruffleString, arg4: JSWriteFrameSlotNode): JavaScriptNode;
     createResolveSourceImport(arg0: JSContext, arg1: JavaScriptNode, arg2: Module$ModuleRequest, arg3: JSWriteFrameSlotNode): JavaScriptNode;

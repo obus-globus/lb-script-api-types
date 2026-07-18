@@ -6,14 +6,13 @@ import type { CharacterIterator } from '../../../../../../../java/text/Character
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../../../java/lang/CharSequence.d.ts'
-import type { Cloneable } from '../../../../../../../java/lang/Cloneable.d.ts'
 import type { RBBIDataWrapper } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/RBBIDataWrapper.d.ts'
 import type { LanguageBreakEngine } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/breakiter/LanguageBreakEngine.d.ts'
 import type { BreakIterator } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/BreakIterator.d.ts'
 import type { RuleBasedBreakIterator$BreakCache } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/RuleBasedBreakIterator$BreakCache.d.ts'
 import type { RuleBasedBreakIterator$DictionaryCache } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/RuleBasedBreakIterator$DictionaryCache.d.ts'
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
-export class RuleBasedBreakIterator extends BreakIterator implements Cloneable {
+export class RuleBasedBreakIterator extends BreakIterator {
     static DONE: number;
     static KIND_CHARACTER: number;
     static KIND_LINE: number;
@@ -66,7 +65,7 @@ export class RuleBasedBreakIterator extends BreakIterator implements Cloneable {
     fRData: RBBIDataWrapper;
     // private fRuleStatusIndex: number;
     // private fText: CharacterIterator;
-    clone(): RuleBasedBreakIterator;
+    clone(): Object;
     current(): number;
     dump(out: PrintStream): void;
     equals(that: Object | null): boolean;

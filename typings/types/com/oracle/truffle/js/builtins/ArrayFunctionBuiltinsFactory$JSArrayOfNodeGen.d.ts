@@ -22,6 +22,8 @@ export class ArrayFunctionBuiltinsFactory$JSArrayOfNodeGen extends ArrayFunction
     private constructor(context: JSContext, builtin: JSBuiltin, isTypedArray: boolean, arguments: JavaScriptNode[])
     // private arguments0_: JavaScriptNode;
     // private arguments1_: JavaScriptNode;
+    // private state_0_: number;
     execute(frameValue: VirtualFrame): Object;
+    // private executeAndSpecialize(arguments0Value: Object, arguments1Value: Object): Object;
     getArguments(): JavaScriptNode[];
 }

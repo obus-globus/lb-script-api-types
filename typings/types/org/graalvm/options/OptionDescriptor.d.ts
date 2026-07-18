@@ -5,9 +5,8 @@ import type { OptionKey } from '../../../org/graalvm/options/OptionKey.d.ts'
 import type { OptionStability } from '../../../org/graalvm/options/OptionStability.d.ts'
 export class OptionDescriptor extends Object {
     static newBuilder<T extends unknown>(paramkey: OptionKey<T>, paramname: string): OptionDescriptor$Builder;
-    constructor(key: OptionKey<Object>, name: string, help: string, category: OptionCategory, stability: OptionStability, deprecated: boolean, deprecationMessage: string, usageSyntax: string, constant: boolean)
+    constructor(key: OptionKey<Object>, name: string, help: string, category: OptionCategory, stability: OptionStability, deprecated: boolean, deprecationMessage: string, usageSyntax: string)
     readonly category: OptionCategory;
-    readonly constant: boolean;
     readonly deprecated: boolean;
     readonly deprecationMessage: string;
     readonly help: string;
@@ -24,7 +23,6 @@ export class OptionDescriptor extends Object {
     getStability(): OptionStability;
     getUsageSyntax(): string;
     hashCode(): number;
-    isConstant(): boolean;
     isDeprecated(): boolean;
     isOptionMap(): boolean;
     toString(): string;

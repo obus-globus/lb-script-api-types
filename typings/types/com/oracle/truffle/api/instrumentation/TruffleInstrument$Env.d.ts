@@ -41,7 +41,6 @@ export class TruffleInstrument$Env extends Object {
     createSystemThread(runnable: () => void, threadGroup: ThreadGroup): Thread;
     err(): OutputStream;
     getEnteredContext(): TruffleContext;
-    getHostLanguage(): LanguageInfo;
     getInstrumenter(): Instrumenter;
     getInstruments(): JavaMap<string, InstrumentInfo>;
     getInternalResource(resource: Class<InternalResource>): TruffleFile;

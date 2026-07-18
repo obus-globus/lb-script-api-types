@@ -18,7 +18,9 @@ export class IteratorGetNextValueNodeGen extends IteratorGetNextValueNode {
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     private constructor(context: JSContext, iteratorNode: JavaScriptNode, doneNode: JavaScriptNode, setDone: boolean, readValue: boolean)
+    // private state_0_: number;
     execute(frameValue: VirtualFrame): Object;
     execute(frameValue: VirtualFrame, iteratorNodeValue: IteratorRecord): Object;
+    // private executeAndSpecialize(frameValue: VirtualFrame, iteratorNodeValue: Object): Object;
     executeVoid(frameValue: VirtualFrame): void;
 }

@@ -2,8 +2,8 @@ import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/
 import type { InteropLibrary } from '../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { InlinedConditionProfile } from '../../../../../com/oracle/truffle/api/profiles/InlinedConditionProfile.d.ts'
+import type { InlinedExactClassProfile } from '../../../../../com/oracle/truffle/api/profiles/InlinedExactClassProfile.d.ts'
 import type { ArrayPrototypeBuiltins$JSArrayOperation } from '../../../../../com/oracle/truffle/js/builtins/ArrayPrototypeBuiltins$JSArrayOperation.d.ts'
-import type { ArrayPrototypeBuiltins$JSArrayShiftNode$ShiftJSArrayNode } from '../../../../../com/oracle/truffle/js/builtins/ArrayPrototypeBuiltins$JSArrayShiftNode$ShiftJSArrayNode.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { JSArrayFirstElementIndexNode } from '../../../../../com/oracle/truffle/js/nodes/array/JSArrayFirstElementIndexNode.d.ts'
 import type { JSArrayLastElementIndexNode } from '../../../../../com/oracle/truffle/js/nodes/array/JSArrayLastElementIndexNode.d.ts'
@@ -30,5 +30,5 @@ export abstract class ArrayPrototypeBuiltins$JSArrayShiftNode extends ArrayProto
     shiftGeneric(thisObj: Object, deletePropertyNode: DeletePropertyNode, lengthIsZero: InlinedConditionProfile): Object;
     shiftSparse(thisObj: JSArrayObject, deletePropertyNode: DeletePropertyNode, lengthIsZero: InlinedConditionProfile, firstElementIndexNode: JSArrayFirstElementIndexNode, lastElementIndexNode: JSArrayLastElementIndexNode): Object;
     shiftWithHoles(thisObj: JSArrayObject, hasHolesNode: TestArrayNode, isSealedNode: TestArrayNode, deletePropertyNode: DeletePropertyNode, lengthIsZero: InlinedConditionProfile): Object;
-    shiftWithoutHoles(thisObj: JSArrayObject, hasHolesNode: TestArrayNode, isSealedNode: TestArrayNode, shiftJSArrayNode: ArrayPrototypeBuiltins$JSArrayShiftNode$ShiftJSArrayNode, lengthIsZero: InlinedConditionProfile, lengthLargerOne: InlinedConditionProfile): Object;
+    shiftWithoutHoles(thisObj: JSArrayObject, hasHolesNode: TestArrayNode, isSealedNode: TestArrayNode, arrayTypeProfile: InlinedExactClassProfile, lengthIsZero: InlinedConditionProfile, lengthLargerOne: InlinedConditionProfile): Object;
 }

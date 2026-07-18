@@ -15,11 +15,12 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class RegexObject extends AbstractConstantKeysObject {
     static createNamedCaptureGroupMapInt(paramnamedCaptureGroups: JavaMap<string, number[]>): AbstractRegexObject;
     static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: JavaMap<string, number[]>): AbstractRegexObject;
-    constructor(language: RegexLanguage, source: RegexSource, execNode: RegexExecNode, flags: AbstractRegexObject, numberOfCaptureGroups: number, namedCaptureGroups: AbstractRegexObject)
+    constructor(execNode: RegexExecNode, source: RegexSource, flags: AbstractRegexObject, numberOfCaptureGroups: number, namedCaptureGroups: AbstractRegexObject)
     readonly backtracking: boolean;
     // private execBooleanRootCallTarget: RootCallTarget;
     // private execRootCallTarget: RootCallTarget;
     readonly flags: AbstractRegexObject;
+    readonly language: RegexLanguage;
     readonly namedCaptureGroups: AbstractRegexObject;
     readonly numberOfCaptureGroups: number;
     readonly source: RegexSource;

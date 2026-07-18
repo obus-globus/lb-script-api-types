@@ -8,14 +8,16 @@ export class TruffleStringFactory$SwitchEncodingNodeGen extends TruffleString$Sw
     static create(): TruffleString$SwitchEncodingNode;
     static getUncached(): TruffleString$SwitchEncodingNode;
     private constructor()
-    // private internalNode__field6_: number;
-    // private internalNode__field7_: number;
+    // private internalNode__field8_: number;
+    // private internalNode__field9_: number;
     // private state_0_: number;
     // private state_1_: number;
     // private state_2_: number;
     // private state_3_: number;
     // private state_4_: number;
     // private state_5_: number;
+    // private state_6_: number;
+    // private state_7_: number;
     execute(a: AbstractTruffleString, encoding: TruffleString$Encoding): TruffleString;
     execute(arg0Value: AbstractTruffleString, arg1Value: TruffleString$Encoding, arg2Value: (param0: AbstractTruffleString, param1: number, param2: number, param3: TruffleString$Encoding, param4: TruffleString$Encoding) => TranscodingErrorHandler$ReplacementString): TruffleString;
 }

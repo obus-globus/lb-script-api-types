@@ -34,13 +34,13 @@ export class BlockExtensionsKt extends Object {
     /**
      * Check if box intersects with bounding box of specified blocks
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L432 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:432}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L432 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:432}
      */
     static collideBlockIntersects(self: AABB, checkCollisionShape: boolean, isCorrectBlock: (param0: Block) => boolean): boolean;
     /**
      * Breaks the block
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L587 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:587}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L587 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:587}
      */
     static doBreak(rayTraceResult: BlockHitResult, immediate: boolean, swingMode: SwingMode): void;
     /**
@@ -52,7 +52,7 @@ export class BlockExtensionsKt extends Object {
      *
      * @see net.minecraft.client.Minecraft.startUseItem
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L518 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:518}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L518 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:518}
      */
     static doPlacement(hitResult: BlockHitResult, hand: InteractionHand, onPlacementSuccess: () => boolean, onItemUseSuccess: () => boolean, swingMode: SwingMode): void;
     static fallDamageMultiplier(self: BlockPos | null, entity: Entity): number;
@@ -65,13 +65,13 @@ export class BlockExtensionsKt extends Object {
     /**
      * Converts this {@link BlockPos} to an immutable one if needed.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L157 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:157}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L157 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:157}
      */
     static getImmutable(paramarg0: BlockPos): BlockPos;
     /**
      * Some blocks like slabs or stairs must be placed on upper side in order to be placed correctly.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L192 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:192}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L192 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:192}
      */
     static getMustBePlacedOnUpperSide(paramarg0: Block): boolean;
     static getOutlineBox(paramarg0: BlockPos): AABB;
@@ -79,7 +79,7 @@ export class BlockExtensionsKt extends Object {
     /**
      * Returns the second bed block position that might not exist (normally beds are two blocks long tho).
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L659 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:659}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L659 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:659}
      */
     static getPotentialSecondBedBlock(self: BedBlock, state: BlockState, pos: BlockPos): BlockPos;
     static getSortedSphere(self: BlockPos, radius: number): BlockPos[];
@@ -94,14 +94,14 @@ export class BlockExtensionsKt extends Object {
     /**
      * Check if box is reaching of specified blocks
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L410 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:410}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L410 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:410}
      */
     static isBlockAtPosition(self: AABB, isCorrectBlock: (param0: Block | null) => boolean): boolean;
     static isBlockedByEntities(self: BlockPos, except: Entity | null, box: AABB, predicate: (param0: Entity) => boolean): boolean;
     /**
      * Like {@link isBlockedByEntities} but it returns a blocking end crystal if present.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L730 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:730}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L730 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:730}
      */
     static isBlockedByEntitiesReturnCrystal(self: BlockPos, except: Entity | null, box: AABB, excludeIds: number[] | null): BooleanObjectPair<EndCrystal>;
     static isBreakable(self: BlockState, pos: BlockPos): boolean;
@@ -115,7 +115,7 @@ export class BlockExtensionsKt extends Object {
      *
      * This data has been collected by looking at the implementations of {@link BlockBehaviour.useWithoutItem}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L673 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:673}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L673 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:673}
      */
     static isInteractable(self: Block | null, blockState: BlockState | null): boolean;
     static isInteractable(blockState: BlockState): boolean;
@@ -126,25 +126,25 @@ export class BlockExtensionsKt extends Object {
      *
      * Returns {@link FULL_BOX} when block is air or does not exist.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L165 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:165}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L165 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:165}
      */
     static outlineBox(self: BlockState, blockPos: BlockPos): AABB;
     /**
      * Basically {@link BlockGetter.raycast} but this method allows us to exclude blocks using {@link exclude}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L314 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:314}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L314 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:314}
      */
     static raycast(self: BlockGetter, context: ClipContext, exclude: BlockPos[] | null, include: BlockPos | null, maxBlastResistance: number | null): BlockHitResult;
     /**
      * Scan blocks outwards from a bed
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L247 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:247}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L247 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:247}
      */
     static searchBedLayer(self: BlockPos, state: BlockState, layers: number): Sequence<IntLongPair>;
     /**
      * Scan blocks around the position in a cuboid with filtering.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L210 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:210}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L210 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:210}
      */
     static searchBlocksInCuboid(self: Vec3, radius: number): BlockPos[];
     static searchBlocksInCuboid(self: Vec3, radius: number, filter: (param0: BlockPos, param1: BlockState) => boolean): Sequence<Pair<BlockPos, BlockState>>;
@@ -155,7 +155,7 @@ export class BlockExtensionsKt extends Object {
      *
      * @returns pairs of {@link BlockPos} and its {@link BlockState}, sorted by distance to the center
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L231 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:231}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L231 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:231}
      */
     static searchBlocksInRangeSorted(self: Vec3, range: number, shapeGetter: ClipContext$ShapeGetter, collisionContext: CollisionContext, filter: (param0: BlockPos, param1: BlockState) => boolean): Pair<BlockPos, BlockState>[];
     /**
@@ -163,7 +163,7 @@ export class BlockExtensionsKt extends Object {
      *
      * @returns The layer to the BlockPos (long value)
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L273 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:273}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt#L273 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt:273}
      */
     static searchLayer(self: BlockPos, layers: number, ...directions: Direction[]): Sequence<IntLongPair>;
     static toBlockPos(self: Vec3i): BlockPos;

@@ -1,9 +1,9 @@
 import type { StringBuffer } from '../../../../../../../java/lang/StringBuffer.d.ts'
 import type { CharacterIterator } from '../../../../../../../java/text/CharacterIterator.d.ts'
-import type { Cloneable } from '../../../../../../../java/lang/Cloneable.d.ts'
+import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Replaceable } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/Replaceable.d.ts'
 import type { UCharacterIterator } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/UCharacterIterator.d.ts'
-export class UCharArrayIterator extends UCharacterIterator implements Cloneable {
+export class UCharArrayIterator extends UCharacterIterator {
     static DONE: number;
     static getInstance(paramsource: string[]): UCharacterIterator;
     static getInstance(paramsource: string[], paramstart: number, paramlimit: number): UCharacterIterator;
@@ -16,7 +16,7 @@ export class UCharArrayIterator extends UCharacterIterator implements Cloneable 
     // private pos: number;
     // private start: number;
     readonly text: string[];
-    clone(): UCharArrayIterator;
+    clone(): Object;
     current(): number;
     getIndex(): number;
     getLength(): number;

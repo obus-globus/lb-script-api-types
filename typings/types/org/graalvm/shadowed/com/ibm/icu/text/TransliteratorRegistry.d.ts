@@ -1,8 +1,7 @@
 import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { StringBuilder } from '../../../../../../../java/lang/StringBuilder.d.ts'
+import type { StringBuffer } from '../../../../../../../java/lang/StringBuffer.d.ts'
 import type { Enumeration } from '../../../../../../../java/util/Enumeration.d.ts'
-import type { Supplier } from '../../../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Transliterator } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/Transliterator.d.ts'
 import type { Transliterator$Factory } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/Transliterator$Factory.d.ts'
@@ -18,14 +17,13 @@ export class TransliteratorRegistry extends Object {
     // private findInBundle(specToOpen: TransliteratorRegistry$Spec, specToFind: TransliteratorRegistry$Spec, variant: string, direction: number): Object[];
     // private findInDynamicStore(src: TransliteratorRegistry$Spec, trg: TransliteratorRegistry$Spec, variant: string): Object[];
     // private findInStaticStore(src: TransliteratorRegistry$Spec, trg: TransliteratorRegistry$Spec, variant: string): Object[];
-    get(ID: string, aliasReturn: StringBuilder): Transliterator;
+    get(ID: string, aliasReturn: StringBuffer): Transliterator;
     getAvailableIDs(): Enumeration<string>;
     getAvailableSources(): Enumeration<string>;
     getAvailableTargets(source: string): Enumeration<string>;
     getAvailableVariants(source: string, target: string): Enumeration<string>;
-    // private instantiateEntry(ID: string, entryWrapper: Object[], aliasReturn: StringBuilder): Transliterator;
+    // private instantiateEntry(ID: string, entryWrapper: Object[], aliasReturn: StringBuffer): Transliterator;
     put(ID: string, transliteratorSubclass: Class<Transliterator>, visible: boolean): void;
-    put(ID: string, resourceSupplier: () => string, dir: number, visible: boolean): void;
     put(ID: string, alias: string, visible: boolean): void;
     put(ID: string, resourceName: string, dir: number, visible: boolean): void;
     put(ID: string, trans: Transliterator, visible: boolean): void;

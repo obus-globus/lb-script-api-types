@@ -4,6 +4,7 @@ import type { TruffleString } from '../../../../../../com/oracle/truffle/api/str
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
 import type { ScriptArray } from '../../../../../../com/oracle/truffle/js/runtime/array/ScriptArray.d.ts'
 import type { ScriptArray$SetLengthProfileAccess } from '../../../../../../com/oracle/truffle/js/runtime/array/ScriptArray$SetLengthProfileAccess.d.ts'
+import type { TypedArray$ElementType } from '../../../../../../com/oracle/truffle/js/runtime/array/TypedArray$ElementType.d.ts'
 import type { TypedArrayFactory } from '../../../../../../com/oracle/truffle/js/runtime/array/TypedArrayFactory.d.ts'
 import type { AbstractConstantArray } from '../../../../../../com/oracle/truffle/js/runtime/array/dyn/AbstractConstantArray.d.ts'
 import type { JSArrayBufferObject } from '../../../../../../com/oracle/truffle/js/runtime/builtins/JSArrayBufferObject.d.ts'
@@ -38,6 +39,7 @@ export abstract class TypedArray extends ScriptArray {
     freeze(): ScriptArray;
     getBufferElement(buffer: JSArrayBufferObject, index: number, littleEndian: boolean, interop: InteropLibrary): Object;
     getBufferType(): number;
+    getElementType(): TypedArray$ElementType;
     getFactory(): TypedArrayFactory;
     getName(): TruffleString;
     getOffset(object: JSDynamicObject): number;

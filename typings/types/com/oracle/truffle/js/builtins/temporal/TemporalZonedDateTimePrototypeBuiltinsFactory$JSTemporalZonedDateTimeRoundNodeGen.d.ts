@@ -8,7 +8,7 @@ import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nod
 import type { JSBuiltin } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
 import type { GetRoundingIncrementOptionNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/GetRoundingIncrementOptionNode.d.ts'
-import type { GetTemporalUnitValuedOptionNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/GetTemporalUnitValuedOptionNode.d.ts'
+import type { GetTemporalUnitNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/GetTemporalUnitNode.d.ts'
 import type { TemporalGetOptionNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/TemporalGetOptionNode.d.ts'
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
 import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
@@ -33,7 +33,7 @@ export class TemporalZonedDateTimePrototypeBuiltinsFactory$JSTemporalZonedDateTi
     // private round_equalNode_: TruffleString$EqualNode;
     // private round_getOptionNode_: TemporalGetOptionNode;
     // private round_getRoundingIncrementOption_: GetRoundingIncrementOptionNode;
-    // private round_getSmallestUnit_: GetTemporalUnitValuedOptionNode;
+    // private round_getSmallestUnit_: GetTemporalUnitNode;
     // private state_0_: number;
     execute(frameValue: VirtualFrame): Object;
     // private executeAndSpecialize(arguments0Value: Object, arguments1Value: Object): Object;

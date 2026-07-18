@@ -8,7 +8,6 @@ import type { JSBuiltinNode } from '../../../../../../com/oracle/truffle/js/node
 import type { ToJSValueNode } from '../../../../../../com/oracle/truffle/js/nodes/wasm/ToJSValueNode.d.ts'
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
 import type { JSWebAssemblyGlobalObject } from '../../../../../../com/oracle/truffle/js/runtime/builtins/wasm/JSWebAssemblyGlobalObject.d.ts'
-import type { WebAssemblyType } from '../../../../../../com/oracle/truffle/js/runtime/builtins/wasm/WebAssemblyType.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class WebAssemblyGlobalPrototypeBuiltins$WebAssemblyGlobalGetValueNode extends JSBuiltinNode {
@@ -24,5 +23,5 @@ export abstract class WebAssemblyGlobalPrototypeBuiltins$WebAssemblyGlobalGetVal
     constructor(context: JSContext, builtin: JSBuiltin)
     doIncompatibleReceiver(thisObj: Object): Object;
     getValue(object: JSWebAssemblyGlobalObject, errorBranch: InlinedBranchProfile, toJSValueNode: ToJSValueNode, globalReadLib: InteropLibrary): Object;
-    // private valueTypeError(type: WebAssemblyType): void;
+    // private v128TypeError(): void;
 }

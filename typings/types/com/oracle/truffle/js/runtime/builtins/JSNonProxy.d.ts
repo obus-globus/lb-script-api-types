@@ -21,9 +21,7 @@ export abstract class JSNonProxy extends JSClass {
     constructor()
     defineOwnProperty(thisObj: JSDynamicObject, key: Object, desc: PropertyDescriptor, doThrow: boolean): boolean;
     delete(thisObj: JSDynamicObject, key: Object, isStrict: boolean): boolean;
-    delete(thisObj: JSDynamicObject, key: Object, isStrict: boolean, resultWhenNotPresent: boolean): boolean;
     delete(thisObj: JSDynamicObject, index: number, isStrict: boolean): boolean;
-    delete(thisObj: JSDynamicObject, index: number, isStrict: boolean, resultWhenNotPresent: boolean): boolean;
     getHelper(store: JSDynamicObject, thisObj: Object, key: Object, encapsulatingNode: Node): Object;
     getHelper(store: JSDynamicObject, thisObj: Object, index: number, encapsulatingNode: Node): Object;
     getMethodHelper(store: JSDynamicObject, thisObj: Object, name: Object, encapsulatingNode: Node): Object;

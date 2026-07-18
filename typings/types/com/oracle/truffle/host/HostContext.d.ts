@@ -15,11 +15,8 @@ import type { RuntimeException } from '../../../../java/lang/RuntimeException.d.
 import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
-import type { Context } from '../../../../org/graalvm/polyglot/Context.d.ts'
 import type { HostAccess$MutableTargetMapping } from '../../../../org/graalvm/polyglot/HostAccess$MutableTargetMapping.d.ts'
-import type { Value } from '../../../../org/graalvm/polyglot/Value.d.ts'
 import type { AbstractPolyglotImpl$AbstractHostAccess } from '../../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl$AbstractHostAccess.d.ts'
-import type { AbstractPolyglotImpl$AbstractValueDispatch } from '../../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl$AbstractValueDispatch.d.ts'
 export class HostContext extends Object {
     constructor(hostLanguage: HostLanguage, env: TruffleLanguage$Env)
     // private access: AbstractPolyglotImpl$AbstractHostAccess;
@@ -32,20 +29,18 @@ export class HostContext extends Object {
     // private hostClassLoadingAllowed: boolean;
     // private hostLookupAllowed: boolean;
     // private internalContext: Object;
-    // private internalLanguageContext: Object;
     // private language: HostLanguage;
     // private mutableTargetMappings: HostAccess$MutableTargetMapping[];
     // private stackoverflowError: HostException;
     // private topScope: Object;
     // private accessClass(clazz: Class<Object>): Class<Object>;
     addToHostClasspath(classpathEntry: TruffleFile): void;
-    asValue(node: Node, value: Object): Value;
+    asValue(node: Node, value: Object): Object;
     // private checkHostAccessAllowed(): void;
     disposeClassLoader(): void;
     findClass(className: string): Class<Object>;
     // private findClassImpl(className: string): Class<Object>;
     getClassloader(): HostClassLoader;
-    getContextAPI(): Context;
     getGuestToHostCache(): GuestToHostCodeCache;
     getHostClassCache(): HostClassCache;
     getMutableTargetMappings(): HostAccess$MutableTargetMapping[];
@@ -53,6 +48,7 @@ export class HostContext extends Object {
     hostToGuestException<T extends Throwable>(e: T, location: Node): RuntimeException;
     initialize(internalContext: Object, cl: ClassLoader, clFilter: (param0: string) => boolean, hostCLAllowed: boolean, hostLookupAllowed: boolean, ...mutableTargetMappings: HostAccess$MutableTargetMapping[]): void;
     // private loadClassViaClassLoader(className: string): Class<Object>;
-    lookupValueCache(value: Object): AbstractPolyglotImpl$AbstractValueDispatch;
+    toGuestValue(node: Node, hostValue: Object): Object;
+    toGuestValue(receiver: Class<Object>): Object;
     validateClass(className: string): void;
 }

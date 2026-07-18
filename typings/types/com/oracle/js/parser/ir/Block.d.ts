@@ -12,8 +12,6 @@ import type { TranslatorNodeVisitor } from '../../../../../com/oracle/js/parser/
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Block extends Node implements BreakableNode, Flags<Block>, LexicalContextScope, Terminal {
-    static HAS_DIRECT_AWAIT_USING_DECLARATIONS: number;
-    static HAS_DIRECT_USING_DECLARATIONS: number;
     static IS_BODY: number;
     static IS_EXPRESSION_BLOCK: number;
     static IS_GLOBAL_SCOPE: number;
@@ -42,8 +40,6 @@ export class Block extends Node implements BreakableNode, Flags<Block>, LexicalC
     getStatements(): Statement[];
     getSymbolCount(): number;
     getSymbols(): Symbol[];
-    hasDirectAwaitUsingDeclarations(): boolean;
-    hasDirectUsingDeclarations(): boolean;
     hasSymbol(name: string): boolean;
     isBreakableWithoutLabel(): boolean;
     isCatchBlock(): boolean;

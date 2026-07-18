@@ -13,14 +13,14 @@ export class ArrayBufferPrototypeBuiltinsFactory$JSArrayBufferTransferNodeGen ex
     static ARGUMENTS: string;
     static cloneUninitialized<T extends JavaScriptNode>(paramnode: T, parammaterializedTags: Class<Tag>[]): T;
     static cloneUninitialized<T extends JavaScriptNode>(paramnodeArray: T[], parammaterializedTags: Class<Tag>[]): T[];
-    static create(paramcontext: JSContext, parambuiltin: JSBuiltin, parampreserveResizability: number, paramarguments: JavaScriptNode[]): ArrayBufferPrototypeBuiltins$JSArrayBufferTransferNode;
+    static create(paramcontext: JSContext, parambuiltin: JSBuiltin, parampreserveResizability: boolean, paramarguments: JavaScriptNode[]): ArrayBufferPrototypeBuiltins$JSArrayBufferTransferNode;
     static createBuiltin(paramctx: JSContext, parambuiltin: JSBuiltin, paramconstruct: boolean, paramnewTarget: boolean): JSBuiltinNode;
     static findBlockScopeNode(paramnode: Node): Node;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
-    private constructor(context: JSContext, builtin: JSBuiltin, preserveResizability: number, arguments: JavaScriptNode[])
+    private constructor(context: JSContext, builtin: JSBuiltin, preserveResizability: boolean, arguments: JavaScriptNode[])
     // private arguments0_: JavaScriptNode;
     // private arguments1_: JavaScriptNode;
     // private state_0_: number;

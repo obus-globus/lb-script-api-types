@@ -1,9 +1,8 @@
 import type { VirtualFrame } from '../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { TruffleString$FromLongNode } from '../../../../../com/oracle/truffle/api/strings/TruffleString$FromLongNode.d.ts'
-import type { NumberPrototypeBuiltins$ForeignGetDoubleValueNode } from '../../../../../com/oracle/truffle/js/builtins/NumberPrototypeBuiltins$ForeignGetDoubleValueNode.d.ts'
 import type { NumberPrototypeBuiltins$JSNumberToLocaleStringNode } from '../../../../../com/oracle/truffle/js/builtins/NumberPrototypeBuiltins$JSNumberToLocaleStringNode.d.ts'
+import type { NumberPrototypeBuiltinsFactory$JSNumberToLocaleStringNodeGen$Foreign0Data } from '../../../../../com/oracle/truffle/js/builtins/NumberPrototypeBuiltinsFactory$JSNumberToLocaleStringNodeGen$Foreign0Data.d.ts'
 import type { NumberPrototypeBuiltinsFactory$JSNumberToLocaleStringNodeGen$NumberData } from '../../../../../com/oracle/truffle/js/builtins/NumberPrototypeBuiltinsFactory$JSNumberToLocaleStringNodeGen$NumberData.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
@@ -24,8 +23,7 @@ export class NumberPrototypeBuiltinsFactory$JSNumberToLocaleStringNodeGen extend
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     private constructor(context: JSContext, builtin: JSBuiltin, arguments: JavaScriptNode[])
     // private arguments0_: JavaScriptNode;
-    // private foreign_getDoubleValue_: NumberPrototypeBuiltins$ForeignGetDoubleValueNode;
-    // private int_fromLong_: TruffleString$FromLongNode;
+    // private foreign0_cache: NumberPrototypeBuiltinsFactory$JSNumberToLocaleStringNodeGen$Foreign0Data;
     // private number_cache: NumberPrototypeBuiltinsFactory$JSNumberToLocaleStringNodeGen$NumberData;
     // private state_0_: number;
     execute(frameValue: VirtualFrame): Object;
@@ -33,5 +31,6 @@ export class NumberPrototypeBuiltinsFactory$JSNumberToLocaleStringNodeGen extend
     // private execute_generic1(state_0__: number, frameValue: VirtualFrame): Object;
     // private execute_int0(state_0__: number, frameValue: VirtualFrame): Object;
     // private fallbackGuard_(state_0: number, arguments0Value: Object): boolean;
+    // private foreign1Boundary(state_0: number, arguments0Value_: Object): Object;
     getArguments(): JavaScriptNode[];
 }

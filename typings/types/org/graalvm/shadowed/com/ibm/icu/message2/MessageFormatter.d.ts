@@ -5,13 +5,11 @@ import type { FormattedMessage } from '../../../../../../../org/graalvm/shadowed
 import type { MFDataModel$Message } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/message2/MFDataModel$Message.d.ts'
 import type { MFDataModelFormatter } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/message2/MFDataModelFormatter.d.ts'
 import type { MFFunctionRegistry } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/message2/MFFunctionRegistry.d.ts'
-import type { MessageFormatter$BidiIsolation } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/message2/MessageFormatter$BidiIsolation.d.ts'
 import type { MessageFormatter$Builder } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/message2/MessageFormatter$Builder.d.ts'
 import type { MessageFormatter$ErrorHandlingBehavior } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/message2/MessageFormatter$ErrorHandlingBehavior.d.ts'
 export class MessageFormatter extends Object {
     static builder(): MessageFormatter$Builder;
     private constructor(builder: MessageFormatter$Builder)
-    readonly bidiIsolation: MessageFormatter$BidiIsolation;
     readonly dataModel: MFDataModel$Message;
     readonly errorHandlingBehavior: MessageFormatter$ErrorHandlingBehavior;
     // private functionRegistry: MFFunctionRegistry;
@@ -20,7 +18,6 @@ export class MessageFormatter extends Object {
     readonly pattern: string;
     format(arguments: JavaMap<string, Object>): FormattedMessage;
     formatToString(arguments: JavaMap<string, Object>): string;
-    getBidiIsolation(): MessageFormatter$BidiIsolation;
     getDataModel(): MFDataModel$Message;
     getErrorHandlingBehavior(): MessageFormatter$ErrorHandlingBehavior;
     getLocale(): Locale;

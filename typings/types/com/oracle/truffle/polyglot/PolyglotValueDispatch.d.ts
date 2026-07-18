@@ -56,7 +56,6 @@ export abstract class PolyglotValueDispatch extends AbstractPolyglotImpl$Abstrac
     getMetaQualifiedName(languageContext: Object, receiver: Object): string;
     getMetaSimpleName(languageContext: Object, receiver: Object): string;
     getSourceLocation(languageContext: Object, receiver: Object): Object;
-    getStaticScope(languageContext: Object, receiver: Object): Object;
     hasIteratorNextElement(languageContext: Object, receiver: Object): boolean;
     hasMetaParents(languageContext: Object, receiver: Object): boolean;
     hashCodeImpl(languageContext: Object, receiver: Object): number;

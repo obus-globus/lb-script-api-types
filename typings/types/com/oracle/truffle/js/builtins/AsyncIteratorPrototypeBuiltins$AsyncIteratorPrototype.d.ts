@@ -16,7 +16,6 @@ export class AsyncIteratorPrototypeBuiltins$AsyncIteratorPrototype extends Enum<
     static map: AsyncIteratorPrototypeBuiltins$AsyncIteratorPrototype;
     static reduce: AsyncIteratorPrototypeBuiltins$AsyncIteratorPrototype;
     static some: AsyncIteratorPrototypeBuiltins$AsyncIteratorPrototype;
-    static symbolAsyncDispose: AsyncIteratorPrototypeBuiltins$AsyncIteratorPrototype;
     static take: AsyncIteratorPrototypeBuiltins$AsyncIteratorPrototype;
     static toArray: AsyncIteratorPrototypeBuiltins$AsyncIteratorPrototype;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
@@ -43,5 +42,5 @@ export class AsyncIteratorPrototypeBuiltins$AsyncIteratorPrototype extends Enum<
     isSetter(): boolean;
     isWritable(): boolean;
     prependAccessorPrefix(name: TruffleString): TruffleString;
-    name(): "map" | "filter" | "take" | "drop" | "flatMap" | "reduce" | "toArray" | "forEach" | "some" | "every" | "find" | "symbolAsyncDispose";
+    name(): "map" | "filter" | "take" | "drop" | "flatMap" | "reduce" | "toArray" | "forEach" | "some" | "every" | "find";
 }

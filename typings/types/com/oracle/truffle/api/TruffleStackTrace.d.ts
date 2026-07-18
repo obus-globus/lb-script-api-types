@@ -12,9 +12,8 @@ export class TruffleStackTrace extends Exception {
     // private frames: TruffleStackTraceElement[];
     // private lazyFrames: number;
     // private materializedHostException: Throwable;
-    // private originatedInHostLanguage: boolean;
     fillInStackTrace(): Throwable;
     getInternalStackTrace(): StackTraceElement[];
-    // private materializeHostException(throwable: Throwable): void;
+    // private materializeHostException(): void;
     toString(): string;
 }

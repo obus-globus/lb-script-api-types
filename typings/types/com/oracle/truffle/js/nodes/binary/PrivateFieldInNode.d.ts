@@ -1,6 +1,6 @@
 import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { DynamicObject$ContainsKeyNode } from '../../../../../../com/oracle/truffle/api/object/DynamicObject$ContainsKeyNode.d.ts'
+import type { DynamicObjectLibrary } from '../../../../../../com/oracle/truffle/api/object/DynamicObjectLibrary.d.ts'
 import type { HiddenKey } from '../../../../../../com/oracle/truffle/api/object/HiddenKey.d.ts'
 import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { IsObjectNode } from '../../../../../../com/oracle/truffle/js/nodes/access/IsObjectNode.d.ts'
@@ -21,6 +21,6 @@ export abstract class PrivateFieldInNode extends JSBinaryNode {
     constructor(left: JavaScriptNode, right: JavaScriptNode)
     copyUninitialized(materializedTags: Class<Tag>[]): JavaScriptNode;
     doFallback(needle: Object, haystack: Object, isObjectNode: IsObjectNode): boolean;
-    doInstance(needle: HiddenKey, haystack: JSObject, containsKey: DynamicObject$ContainsKeyNode): boolean;
+    doInstance(needle: HiddenKey, haystack: JSObject, access: DynamicObjectLibrary): boolean;
     doStatic(needle: JSDynamicObject, haystack: JSObject): boolean;
 }

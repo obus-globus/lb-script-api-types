@@ -24,7 +24,7 @@ import type { RegexASTSubtreeRootNode } from '../../../../../../com/oracle/truff
 import type { Sequence } from '../../../../../../com/oracle/truffle/regex/tregex/parser/ast/Sequence.d.ts'
 import type { Term } from '../../../../../../com/oracle/truffle/regex/tregex/parser/ast/Term.d.ts'
 import type { NodeCountVisitor } from '../../../../../../com/oracle/truffle/regex/tregex/parser/ast/visitors/NodeCountVisitor.d.ts'
-import type { Encoding } from '../../../../../../com/oracle/truffle/regex/tregex/string/Encoding.d.ts'
+import type { Encodings$Encoding } from '../../../../../../com/oracle/truffle/regex/tregex/string/Encodings$Encoding.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { EconomicMap } from '../../../../../../org/graalvm/collections/EconomicMap.d.ts'
 export class RegexASTBuilder extends Object {
@@ -36,7 +36,7 @@ export class RegexASTBuilder extends Object {
     readonly curGroup: Group;
     readonly curSequence: Sequence;
     readonly curTerm: Term;
-    // private encoding: Encoding;
+    // private encoding: Encodings$Encoding;
     // private groupCount: Counter$ThresholdCounter;
     // private groupStartPositions: EconomicMap<Group, number>;
     // private options: RegexOptions;

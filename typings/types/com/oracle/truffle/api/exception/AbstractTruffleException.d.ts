@@ -2,7 +2,6 @@ import type { TruffleObject } from '../../../../../com/oracle/truffle/api/intero
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { SourceSection } from '../../../../../com/oracle/truffle/api/source/SourceSection.d.ts'
 import type { RuntimeException } from '../../../../../java/lang/RuntimeException.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 export abstract class AbstractTruffleException extends RuntimeException implements TruffleObject {
     static UNLIMITED_STACK_TRACE: number;
@@ -17,7 +16,6 @@ export abstract class AbstractTruffleException extends RuntimeException implemen
     // private lazyStackTrace: Throwable;
     readonly location: Node;
     readonly stackTraceElementLimit: number;
-    createGuestStackTrace(throwable: Throwable): Object;
     fillInStackTrace(): Throwable;
     getEncapsulatingSourceSection(): SourceSection;
     getLazyStackTrace(): Throwable;

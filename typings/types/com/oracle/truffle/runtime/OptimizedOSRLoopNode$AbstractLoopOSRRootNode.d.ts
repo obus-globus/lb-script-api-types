@@ -11,7 +11,6 @@ export abstract class OptimizedOSRLoopNode$AbstractLoopOSRRootNode extends BaseO
     constructor(loop: OptimizedOSRLoopNode, frameDescriptor: FrameDescriptor, clazz: Class<VirtualFrame>)
     // private clazz: Class<VirtualFrame>;
     executeOSR(frame: VirtualFrame): Object;
-    getFrame(frame: VirtualFrame): VirtualFrame;
     getLoopNode(): OptimizedOSRLoopNode;
     getSourceSection(): SourceSection;
     isCloningAllowed(): boolean;

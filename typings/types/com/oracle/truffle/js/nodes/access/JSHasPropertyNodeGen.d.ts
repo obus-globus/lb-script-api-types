@@ -1,4 +1,3 @@
-import type { InteropLibrary } from '../../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { TruffleString$EqualNode } from '../../../../../../com/oracle/truffle/api/strings/TruffleString$EqualNode.d.ts'
 import type { JSHasPropertyNode } from '../../../../../../com/oracle/truffle/js/nodes/access/JSHasPropertyNode.d.ts'
@@ -22,7 +21,7 @@ export class JSHasPropertyNodeGen extends JSHasPropertyNode {
     // private objectObject_toPropertyKeyNode_: JSToPropertyKeyNode;
     // private objectStringCached_cache: JSHasPropertyNodeGen$ObjectStringCachedData;
     // private state_0_: number;
-    // private typedArray_typedArrayLengthNode__field1_: InteropLibrary;
+    // private typedArray_typedArrayLengthNode__field1_: Node;
     // private checkForPolymorphicSpecialize(oldState_0: number): void;
     // private executeAndSpecialize(arg0Value: Object, arg1Value: Object): boolean;
     executeBoolean(arg0Value: Object, arg1Value: Object): boolean;

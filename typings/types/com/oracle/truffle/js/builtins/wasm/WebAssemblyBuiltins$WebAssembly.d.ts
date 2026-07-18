@@ -7,7 +7,6 @@ import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class WebAssemblyBuiltins$WebAssembly extends Enum<WebAssemblyBuiltins$WebAssembly> implements BuiltinEnum<WebAssemblyBuiltins$WebAssembly> {
-    static JSTag: WebAssemblyBuiltins$WebAssembly;
     static compile: WebAssemblyBuiltins$WebAssembly;
     static instantiate: WebAssemblyBuiltins$WebAssembly;
     static validate: WebAssemblyBuiltins$WebAssembly;
@@ -35,5 +34,5 @@ export class WebAssemblyBuiltins$WebAssembly extends Enum<WebAssemblyBuiltins$We
     isSetter(): boolean;
     isWritable(): boolean;
     prependAccessorPrefix(name: TruffleString): TruffleString;
-    name(): "compile" | "instantiate" | "validate" | "JSTag";
+    name(): "compile" | "instantiate" | "validate";
 }

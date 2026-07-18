@@ -1,4 +1,3 @@
-import type { InteropLibrary } from '../../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { GetViewByteLengthNode } from '../../../../../../com/oracle/truffle/js/nodes/array/GetViewByteLengthNode.d.ts'
 import type { ExportByteSourceNode } from '../../../../../../com/oracle/truffle/js/nodes/wasm/ExportByteSourceNode.d.ts'
@@ -10,8 +9,8 @@ export class ExportByteSourceNodeGen extends ExportByteSourceNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext, nonByteSourceMessage: string, emptyByteSourceMessage: string)
     // private exportDataView_getByteLengthNode_: GetViewByteLengthNode;
-    // private getByteLengthNode_field1_: Object;
-    // private getByteLengthNode_field2_: InteropLibrary;
+    // private exportTypedArray_getByteLengthNode__field1_: Object;
+    // private exportTypedArray_getByteLengthNode__field2_: Node;
     // private state_0_: number;
     execute(arg0Value: Object): ByteSequence;
     // private executeAndSpecialize(arg0Value: Object): ByteSequence;

@@ -1,4 +1,3 @@
-import type { AbstractTruffleException } from '../../../../../../com/oracle/truffle/api/exception/AbstractTruffleException.d.ts'
 import type { Source } from '../../../../../../com/oracle/truffle/api/source/Source.d.ts'
 import type { TruffleString } from '../../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
@@ -15,13 +14,11 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class SyntheticModuleRecord extends AbstractModuleRecord {
     constructor(context: JSContext, source: Source, hostDefined: Object, shared: SyntheticModuleRecord$SharedData, evaluationSteps: (param0: SyntheticModuleRecord) => void)
     constructor(context: JSContext, source: Source, hostDefined: Object, exportedNames: TruffleString[], evaluationSteps: (param0: SyntheticModuleRecord) => void)
-    readonly evaluationError: AbstractTruffleException;
     // private evaluationSteps: (param0: SyntheticModuleRecord) => void;
     readonly exportedNames: TruffleString[];
     readonly status: CyclicModuleRecord$Status;
     evaluate(realm: JSRealm): JSPromiseObject;
     evaluateSync(realm: JSRealm): void;
-    getEvaluationError(): AbstractTruffleException;
     getExportedNames(): TruffleString[];
     getExportedNames(exportStarSet: JSModuleRecord[]): TruffleString[];
     getModuleSource(): Object;

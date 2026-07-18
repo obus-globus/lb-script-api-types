@@ -3,7 +3,6 @@ import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class InternalResource$OS extends Enum<InternalResource$OS> {
     static DARWIN: InternalResource$OS;
     static LINUX: InternalResource$OS;
-    static UNSUPPORTED: InternalResource$OS;
     static WINDOWS: InternalResource$OS;
     static getCurrent(): InternalResource$OS;
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
@@ -12,5 +11,5 @@ export class InternalResource$OS extends Enum<InternalResource$OS> {
     private constructor(id: string)
     // private id: string;
     toString(): string;
-    name(): "DARWIN" | "LINUX" | "WINDOWS" | "UNSUPPORTED";
+    name(): "DARWIN" | "LINUX" | "WINDOWS";
 }

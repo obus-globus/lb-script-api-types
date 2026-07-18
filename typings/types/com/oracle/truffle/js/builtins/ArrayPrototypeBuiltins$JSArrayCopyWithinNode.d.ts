@@ -19,7 +19,7 @@ export abstract class ArrayPrototypeBuiltins$JSArrayCopyWithinNode extends Array
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
-    constructor(context: JSContext, builtin: JSBuiltin)
+    constructor(context: JSContext, builtin: JSBuiltin, isTypedArrayImplementation: boolean)
     // private deletePropertyNode: DeletePropertyNode;
     copyWithin(thisObj: Object, target: Object, start: Object, end: Object, offsetProfile1: InlinedConditionProfile, offsetProfile2: InlinedConditionProfile, offsetProfile3: InlinedConditionProfile): Object;
 }

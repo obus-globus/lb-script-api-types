@@ -6,7 +6,7 @@ import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStac
 /**
  * Represents an inventory slot (e.g. Hotbar Slot 0, OffHand, Chestslot 5, etc.)
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt:41}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt:41}
  */
 export interface ItemSlot extends Object, ItemStackHolder{
     readonly itemStack: ItemStack;
@@ -15,7 +15,7 @@ export interface ItemSlot extends Object, ItemStackHolder{
     /**
      * Used for example for slot click packets
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt:48}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt:48}
      */
     getIdForServer(screen: AbstractContainerScreen<any> | null): number | null;
     getIdForServerWithCurrentScreen(): number | null;

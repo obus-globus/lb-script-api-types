@@ -20,6 +20,6 @@ export abstract class RoundNode extends MathOperation {
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
-    roundDouble(value: number, largeValueBranch: InlinedConditionProfile, minusZeroBranch: InlinedConditionProfile, shiftProfile: InlinedConditionProfile, negativeLongBitsProfile: InlinedBranchProfile): number;
+    roundDouble(value: number, profileA: InlinedConditionProfile, profileB: InlinedConditionProfile, shiftProfile: InlinedConditionProfile, negativeLongBitsProfile: InlinedBranchProfile): number;
     roundDoubleInt(value: number, shiftProfile: InlinedConditionProfile, negativeLongBitsProfile: InlinedBranchProfile): number;
 }

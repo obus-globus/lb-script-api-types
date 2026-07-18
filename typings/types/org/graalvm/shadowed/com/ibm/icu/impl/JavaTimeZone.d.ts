@@ -3,11 +3,11 @@ import type { Calendar } from '../../../../../../../java/util/Calendar.d.ts'
 import type { Date } from '../../../../../../../java/util/Date.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { TimeZone } from '../../../../../../../java/util/TimeZone.d.ts'
-import type { Cloneable } from '../../../../../../../java/lang/Cloneable.d.ts'
+import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { TimeZone as TimeZone_2 } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/TimeZone.d.ts'
 import type { TimeZone$SystemTimeZoneType } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/TimeZone$SystemTimeZoneType.d.ts'
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
-export class JavaTimeZone extends TimeZone_2 implements Cloneable {
+export class JavaTimeZone extends TimeZone_2 {
     static GENERIC_LOCATION: number;
     static GMT_ZONE: TimeZone_2;
     static LONG: number;
@@ -50,8 +50,8 @@ export class JavaTimeZone extends TimeZone_2 implements Cloneable {
     // private isFrozen: boolean;
     // private javacal: Calendar;
     // private javatz: TimeZone;
-    clone(): JavaTimeZone;
-    cloneAsThawed(): JavaTimeZone;
+    clone(): Object;
+    cloneAsThawed(): TimeZone_2;
     freeze(): TimeZone_2;
     getDSTSavings(): number;
     getOffset(era: number, year: number, month: number, day: number, dayOfWeek: number, milliseconds: number): number;

@@ -13,7 +13,5 @@ export class ExportResolution$Resolved extends ExportResolution {
     getBindingName(): TruffleString;
     getModule(): AbstractModuleRecord;
     hashCode(): number;
-    isDeferredNamespace(): boolean;
     isNamespace(): boolean;
-    isSource(): boolean;
 }

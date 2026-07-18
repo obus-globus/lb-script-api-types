@@ -32,7 +32,6 @@ export class InteropLibrary$Asserts extends InteropLibrary {
     asDouble(receiver: Object): number;
     asDuration(receiver: Object): Duration;
     asFloat(receiver: Object): number;
-    asHostObject(receiver: Object): Object;
     asInstant(receiver: Object): Instant;
     asInt(receiver: Object): number;
     asLong(receiver: Object): number;
@@ -42,15 +41,10 @@ export class InteropLibrary$Asserts extends InteropLibrary {
     asTime(receiver: Object): LocalTime;
     asTimeZone(receiver: Object): ZoneId;
     asTruffleString(receiver: Object): TruffleString;
-    // private assertHasHostObject(receiver: Object): boolean;
     // private assertHasMetaObject(receiver: Object, result: boolean): boolean;
-    // private assertHasNoHostObject(receiver: Object): boolean;
     // private assertHasNoLanguage(receiver: Object): boolean;
-    // private assertHasNoLanguageId(receiver: Object): boolean;
     // private assertHasNoMetaObject(receiver: Object): boolean;
     // private assertHasNoSourceSection(receiver: Object): boolean;
-    // private assertHasNoStaticScope(receiver: Object): boolean;
-    // private assertHasStaticScope(receiver: Object): boolean;
     // private assertMetaObject(receiver: Object): boolean;
     // private assertNoMetaObject(receiver: Object): boolean;
     execute(receiver: Object, ...arguments: Object[]): Object;
@@ -63,7 +57,6 @@ export class InteropLibrary$Asserts extends InteropLibrary {
     fitsInShort(receiver: Object): boolean;
     getArraySize(receiver: Object): number;
     getBufferSize(receiver: Object): number;
-    getBytecodeIndex(receiver: Object): number;
     getDeclaringMetaObject(receiver: Object): Object;
     getExceptionCause(receiver: Object): Object;
     getExceptionExitStatus(receiver: Object): number;
@@ -78,7 +71,6 @@ export class InteropLibrary$Asserts extends InteropLibrary {
     getIterator(receiver: Object): Object;
     getIteratorNextElement(receiver: Object): Object;
     getLanguage(receiver: Object): Class<TruffleLanguage<Object>>;
-    getLanguageId(receiver: Object): string;
     getMembers(receiver: Object): Object;
     getMembers(receiver: Object, internal: boolean): Object;
     getMetaObject(receiver: Object): Object;
@@ -87,10 +79,8 @@ export class InteropLibrary$Asserts extends InteropLibrary {
     getMetaSimpleName(receiver: Object): Object;
     getScopeParent(receiver: Object): Object;
     getSourceLocation(receiver: Object): SourceSection;
-    getStaticScope(receiver: Object): Object;
     hasArrayElements(receiver: Object): boolean;
     hasBufferElements(receiver: Object): boolean;
-    hasBytecodeIndex(receiver: Object): boolean;
     hasDeclaringMetaObject(receiver: Object): boolean;
     hasExceptionCause(receiver: Object): boolean;
     hasExceptionMessage(receiver: Object): boolean;
@@ -101,7 +91,6 @@ export class InteropLibrary$Asserts extends InteropLibrary {
     hasIterator(receiver: Object): boolean;
     hasIteratorNextElement(receiver: Object): boolean;
     hasLanguage(receiver: Object): boolean;
-    hasLanguageId(receiver: Object): boolean;
     hasMemberReadSideEffects(receiver: Object, identifier: string): boolean;
     hasMemberWriteSideEffects(receiver: Object, identifier: string): boolean;
     hasMembers(receiver: Object): boolean;
@@ -109,7 +98,6 @@ export class InteropLibrary$Asserts extends InteropLibrary {
     hasMetaParents(receiver: Object): boolean;
     hasScopeParent(receiver: Object): boolean;
     hasSourceLocation(receiver: Object): boolean;
-    hasStaticScope(receiver: Object): boolean;
     identityHashCode(receiver: Object): number;
     instantiate(receiver: Object, ...arguments: Object[]): Object;
     invokeMember(receiver: Object, identifier: string, ...arguments: Object[]): Object;
@@ -130,11 +118,9 @@ export class InteropLibrary$Asserts extends InteropLibrary {
     isHashEntryReadable(receiver: Object, key: Object): boolean;
     isHashEntryRemovable(receiver: Object, key: Object): boolean;
     isHashEntryWritable(receiver: Object, key: Object): boolean;
-    isHostObject(receiver: Object): boolean;
     isIdentical(receiver: Object, other: Object, otherInterop: InteropLibrary): boolean;
     isIdenticalOrUndefined(receiver: Object, other: Object): TriState;
     isInstantiable(receiver: Object): boolean;
-    isInternal(receiver: Object): boolean;
     isIterator(receiver: Object): boolean;
     isMemberInsertable(receiver: Object, identifier: string): boolean;
     isMemberInternal(receiver: Object, identifier: string): boolean;

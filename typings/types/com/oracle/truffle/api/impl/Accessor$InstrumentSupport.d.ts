@@ -25,7 +25,6 @@ export abstract class Accessor$InstrumentSupport extends Accessor$Support {
     createPolyglotSourceSection(instrumentEnv: Object, polyglotSource: Object, ss: SourceSection): Object;
     describeContextOptions(instrumentationHandler: Object, key: Object, requiredGroup: string): OptionDescriptor[];
     describeEngineOptions(instrumentationHandler: Object, key: Object, requiredGroup: string): OptionDescriptor[];
-    describeOptions(truffleInstrument: Object, requiredGroup: string): OptionDescriptor[];
     describeSourceOptions(instrumentationHandler: Object, key: Object, requiredGroup: string): OptionDescriptor[];
     disposeInstrument(instrumentationHandler: Object, polyglotInstrument: Object, cleanupRequired: boolean): void;
     finalizeInstrument(instrumentationHandler: Object, polyglotInstrument: Object): void;

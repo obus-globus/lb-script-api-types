@@ -1,5 +1,6 @@
 import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
+import type { InlinedBranchProfile } from '../../../../../../com/oracle/truffle/api/profiles/InlinedBranchProfile.d.ts'
 import type { InlinedConditionProfile } from '../../../../../../com/oracle/truffle/api/profiles/InlinedConditionProfile.d.ts'
 import type { TruffleString$EqualNode } from '../../../../../../com/oracle/truffle/api/strings/TruffleString$EqualNode.d.ts'
 import type { TemporalZonedDateTimePrototypeBuiltins$TemporalZonedDateTimePrototype } from '../../../../../../com/oracle/truffle/js/builtins/temporal/TemporalZonedDateTimePrototypeBuiltins$TemporalZonedDateTimePrototype.d.ts'
@@ -23,8 +24,7 @@ export abstract class TemporalZonedDateTimePrototypeBuiltins$JSTemporalZonedDate
     constructor(context: JSContext, builtin: JSBuiltin, property: TemporalZonedDateTimePrototypeBuiltins$TemporalZonedDateTimePrototype)
     // private property: TemporalZonedDateTimePrototypeBuiltins$TemporalZonedDateTimePrototype;
     // private getterCalendarDetails(zdt: JSTemporalZonedDateTimeObject, equalNode: TruffleString$EqualNode, isoCalendarProfile: InlinedConditionProfile): Object;
-    // private getterHoursInDay(zdt: JSTemporalZonedDateTimeObject): Object;
+    // private getterHoursInDay(zdt: JSTemporalZonedDateTimeObject, errorBranch: InlinedBranchProfile): Object;
     // private getterOffset(zdt: JSTemporalZonedDateTimeObject): Object;
-    // private getterOffsetNanoseconds(zdt: JSTemporalZonedDateTimeObject): number;
-    zonedDateTimeGetter(zdt: JSTemporalZonedDateTimeObject, equalNode: TruffleString$EqualNode, isoCalendarProfile: InlinedConditionProfile): Object;
+    zonedDateTimeGetter(zdt: JSTemporalZonedDateTimeObject, equalNode: TruffleString$EqualNode, isoCalendarProfile: InlinedConditionProfile, errorBranch: InlinedBranchProfile): Object;
 }

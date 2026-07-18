@@ -21,11 +21,11 @@ export class RegExpBuiltinsFactory$JSRegExpStaticResultMultilineNodeGen extends 
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     private constructor(context: JSContext, builtin: JSBuiltin, arguments: JavaScriptNode[])
+    // private getMultilineEager_getResultNode__field1_: Node;
     // private getMultilineFlag_field1_: Node;
     // private getMultilineFlag_field2_: Node;
     // private getMultilineFlag_field3_: Node;
     // private getMultilineLazy_assumption0_: Assumption;
-    // private getResultNode_field1_: Node;
     // private readIsMatch_field1_: Node;
     // private readIsMatch_field2_: Node;
     // private state_0_: number;

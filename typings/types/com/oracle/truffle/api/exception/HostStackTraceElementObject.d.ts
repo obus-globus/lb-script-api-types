@@ -5,13 +5,10 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class HostStackTraceElementObject extends Object implements TruffleObject {
     constructor(stackTraceElement: StackTraceElement)
     // private stackTraceElement: StackTraceElement;
-    asHostObject(): Object;
     getDeclaringMetaObject(): Object;
     getExecutableName(): Object;
     getSourceLocation(): SourceSection;
     hasDeclaringMetaObject(): boolean;
     hasExecutableName(): boolean;
     hasSourceLocation(): boolean;
-    isHostObject(): boolean;
-    toString(): string;
 }

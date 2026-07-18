@@ -4,7 +4,7 @@ import type { RegexOptions$Builder } from '../../../../com/oracle/truffle/regex/
 import type { RegexOptions$FlavorOption } from '../../../../com/oracle/truffle/regex/RegexOptions$FlavorOption.d.ts'
 import type { MatchingMode } from '../../../../com/oracle/truffle/regex/tregex/parser/MatchingMode.d.ts'
 import type { RegexFlavor } from '../../../../com/oracle/truffle/regex/tregex/parser/RegexFlavor.d.ts'
-import type { Encoding } from '../../../../com/oracle/truffle/regex/tregex/string/Encoding.d.ts'
+import type { Encodings$Encoding } from '../../../../com/oracle/truffle/regex/tregex/string/Encodings$Encoding.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { OptionDescriptor } from '../../../../org/graalvm/options/OptionDescriptor.d.ts'
 import type { OptionKey } from '../../../../org/graalvm/options/OptionKey.d.ts'
@@ -19,7 +19,7 @@ export class RegexOptions extends Object {
     static DumpAutomata: OptionKey<boolean>;
     static DumpAutomataExecution: OptionKey<boolean>;
     static ENCODING_NAME: string;
-    static EncodingOption: OptionKey<Encoding>;
+    static Encoding: OptionKey<Encodings$Encoding>;
     static FLAVOR_ECMASCRIPT: string;
     static FLAVOR_JAVA: string;
     static FLAVOR_NAME: string;
@@ -43,12 +43,10 @@ export class RegexOptions extends Object {
     static MATCHING_MODE_SEARCH: string;
     static MAX_BACK_TRACKER_SIZE_NAME: string;
     static MAX_DFA_SIZE_NAME: string;
-    static MAX_PARSER_TREE_SIZE_NAME: string;
     static MUST_ADVANCE_NAME: string;
     static MatchingMode: OptionKey<MatchingMode>;
     static MaxBackTrackerJITSize: OptionKey<number>;
     static MaxDFASize: OptionKey<number>;
-    static MaxParserTreeSize: OptionKey<number>;
     static MustAdvance: OptionKey<boolean>;
     static PYTHON_LOCALE_NAME: string;
     static PYTHON_METHOD_NAME: string;
@@ -66,26 +64,24 @@ export class RegexOptions extends Object {
     static builder(paramparsingRequest: TruffleLanguage$ParsingRequest): RegexOptions$Builder;
     static builder(paramsource: Source, paramoptionValues: OptionValues): RegexOptions$Builder;
     static getDescriptors(): OptionDescriptor[];
-    private constructor(options: number, maxDFASize: number, maxBackTrackerCompileSize: number, flavor: RegexFlavor, encoding: Encoding, matchingMode: MatchingMode, pythonLocale: string, javaJDKVersion: number, maxParserTreeSize: number, quantifierUnrollLimitSingleCC: number, quantifierUnrollLimitGroup: number)
-    readonly encoding: Encoding;
+    private constructor(options: number, maxDFASize: number, maxBackTrackerCompileSize: number, flavor: RegexFlavor, encoding: Encodings$Encoding, matchingMode: MatchingMode, pythonLocale: string, javaJDKVersion: number, quantifierUnrollLimitSingleCC: number, quantifierUnrollLimitGroup: number)
+    readonly encoding: Encodings$Encoding;
     readonly flavor: RegexFlavor;
     readonly javaJDKVersion: number;
     readonly matchingMode: MatchingMode;
     readonly maxBackTrackerCompileSize: number;
     readonly maxDFASize: number;
-    readonly maxParserTreeSize: number;
     // private options: number;
     readonly pythonLocale: string;
     quantifierUnrollLimitGroup: number;
     quantifierUnrollLimitSingleCC: number;
     equals(obj: Object | null): boolean;
-    getEncoding(): Encoding;
+    getEncoding(): Encodings$Encoding;
     getFlavor(): RegexFlavor;
     getJavaJDKVersion(): number;
     getMatchingMode(): MatchingMode;
     getMaxBackTrackerCompileSize(): number;
     getMaxDFASize(): number;
-    getMaxParserTreeSize(): number;
     getPythonLocale(): string;
     hashCode(): number;
     isAlwaysEager(): boolean;

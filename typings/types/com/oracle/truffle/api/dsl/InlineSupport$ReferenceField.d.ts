@@ -8,6 +8,7 @@ export class InlineSupport$ReferenceField<T extends unknown> extends InlineSuppo
     constructor(receiverClass: Class<Object>, lookupFieldClass: Class<Object>, declaringLookup: MethodHandles$Lookup, fieldName: string, valueClass: Class<T>)
     // private valueClass: Class<Object>;
     compareAndSet(node: Node, expect: T, update: T): boolean;
+    createParentAccessor(parentClass: Class<Node>): InlineSupport$ReferenceField<T>;
     get(node: Node): T;
     getVolatile(node: Node): T;
     set(node: Node, value: T): void;

@@ -20,8 +20,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DefaultTruffleRuntime extends Object implements TruffleRuntime {
     constructor()
     constructor(fallbackReason: string)
-    constructor(fallbackReason: string, explicitlyRequested: boolean)
-    readonly explicitlyRequested: boolean;
     readonly fallbackReason: string;
     // private stackTraces: ThreadLocal<DefaultTruffleRuntime$DefaultFrameInstance>;
     // private testTvmci: TVMCI$Test<Closeable, CallTarget>;
@@ -39,7 +37,6 @@ export class DefaultTruffleRuntime extends Object implements TruffleRuntime {
     getName(): string;
     // private getThreadLocalStackTrace(): DefaultTruffleRuntime$DefaultFrameInstance;
     getTvmci(): DefaultTVMCI;
-    isExplicitlyRequested(): boolean;
     isProfilingEnabled(): boolean;
     iterateFrames<T extends unknown>(visitor: FrameInstanceVisitor<T>): T;
     iterateFrames<T extends unknown>(visitor: FrameInstanceVisitor<T>, skipFrames: number): T;

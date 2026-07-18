@@ -1,8 +1,6 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { Enumeration } from '../../../../../../../java/util/Enumeration.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Cloneable } from '../../../../../../../java/lang/Cloneable.d.ts'
 import type { BreakIterator } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/BreakIterator.d.ts'
 import type { Replaceable } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/Replaceable.d.ts'
 import type { Transliterator } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/Transliterator.d.ts'
@@ -10,7 +8,7 @@ import type { Transliterator$Factory } from '../../../../../../../org/graalvm/sh
 import type { Transliterator$Position } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/Transliterator$Position.d.ts'
 import type { UnicodeFilter } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/UnicodeFilter.d.ts'
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
-export class BreakTransliterator extends Transliterator implements Cloneable {
+export class BreakTransliterator extends Transliterator {
     static FORWARD: number;
     static REVERSE: number;
     static createFromRules(paramID: string, paramrules: string, paramdir: number): Transliterator;
@@ -32,9 +30,10 @@ export class BreakTransliterator extends Transliterator implements Cloneable {
     constructor(ID: string, filter: UnicodeFilter)
     constructor(ID: string, filter: UnicodeFilter, bi: BreakIterator, insertion: string)
     // private bi: BreakIterator;
+    // private boundaries: number[];
+    // private boundaryCount: number;
     readonly insertion: string;
     addSourceTargetSet(inputFilter: string[], sourceSet: string[], targetSet: string[]): void;
-    protected clone(): Object;
     getBreakIterator(): BreakIterator;
     getInsertion(): string;
     handleTransliterate(text: Replaceable, pos: Transliterator$Position, incremental: boolean): void;

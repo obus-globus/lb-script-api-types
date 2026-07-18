@@ -18,6 +18,9 @@ export class GeneratorExprBlockNode extends AbstractGeneratorBlockNode {
     constructor(statements: JavaScriptNode[], stateSlot: number)
     copyUninitialized(materializedTags: Class<Tag>[]): JavaScriptNode;
     executeBoolean(frame: VirtualFrame): boolean;
+    executeBoolean(frame: VirtualFrame, node: JavaScriptNode, index: number, argument: number): boolean;
     executeDouble(frame: VirtualFrame): number;
+    executeDouble(frame: VirtualFrame, node: JavaScriptNode, index: number, argument: number): number;
     executeInt(frame: VirtualFrame): number;
+    executeInt(frame: VirtualFrame, node: JavaScriptNode, index: number, argument: number): number;
 }

@@ -3,7 +3,6 @@ import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { Lock } from '../../../../../../../java/util/concurrent/locks/Lock.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../../../java/lang/CharSequence.d.ts'
-import type { Cloneable } from '../../../../../../../java/lang/Cloneable.d.ts'
 import type { CollationData } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/coll/CollationData.d.ts'
 import type { CollationSettings } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/coll/CollationSettings.d.ts'
 import type { CollationTailoring } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/coll/CollationTailoring.d.ts'
@@ -19,7 +18,7 @@ import type { UCharacterIterator } from '../../../../../../../org/graalvm/shadow
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
 import type { ULocale$Type } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale$Type.d.ts'
 import type { VersionInfo } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/VersionInfo.d.ts'
-export class RuleBasedCollator extends Collator implements Cloneable {
+export class RuleBasedCollator extends Collator {
     static CANONICAL_DECOMPOSITION: number;
     static FULL_DECOMPOSITION: number;
     static IDENTICAL: number;
@@ -57,7 +56,7 @@ export class RuleBasedCollator extends Collator implements Cloneable {
     // private validLocale: ULocale;
     // private adoptTailoring(t: CollationTailoring): void;
     // private checkNotFrozen(): void;
-    clone(): RuleBasedCollator;
+    clone(): Object;
     cloneAsThawed(): RuleBasedCollator;
     compare(source: Object, target: Object): number;
     compare(source: string, target: string): number;

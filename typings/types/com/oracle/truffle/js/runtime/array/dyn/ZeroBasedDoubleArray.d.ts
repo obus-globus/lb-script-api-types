@@ -12,7 +12,6 @@ import type { JSDynamicObject } from '../../../../../../../com/oracle/truffle/js
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class ZeroBasedDoubleArray extends AbstractDoubleArray {
     static EMPTY_OBJECT_ARRAY: Object[];
-    static canonicalizeNaN(paramvalue: number): number;
     static createConstantArray(paramelements: Object[]): AbstractConstantArray;
     static createConstantEmptyArray(): AbstractConstantArray;
     static createZeroBasedDoubleArray(): ZeroBasedDoubleArray;

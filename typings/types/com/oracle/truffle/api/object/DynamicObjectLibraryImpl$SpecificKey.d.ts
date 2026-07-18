@@ -4,6 +4,7 @@ import type { DynamicObjectLibraryImpl$KeyCacheNode } from '../../../../../com/o
 import type { DynamicObjectLibraryImpl$MutateCacheData } from '../../../../../com/oracle/truffle/api/object/DynamicObjectLibraryImpl$MutateCacheData.d.ts'
 import type { Property } from '../../../../../com/oracle/truffle/api/object/Property.d.ts'
 import type { Shape } from '../../../../../com/oracle/truffle/api/object/Shape.d.ts'
+import type { ShapeImpl } from '../../../../../com/oracle/truffle/api/object/ShapeImpl.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class DynamicObjectLibraryImpl$SpecificKey extends DynamicObjectLibraryImpl$KeyCacheEntry {
     constructor(key: Object, next: DynamicObjectLibraryImpl$KeyCacheEntry)
@@ -12,7 +13,7 @@ export abstract class DynamicObjectLibraryImpl$SpecificKey extends DynamicObject
     acceptsKey(key: Object): boolean;
     assertCachedKeyAndShapeForRead(object: DynamicObject, cachedShape: Shape, key: Object): boolean;
     assertCachedKeyAndShapeForWrite(object: DynamicObject, cachedShape: Shape, key: Object): boolean;
-    // private getNewShape(object: DynamicObject, value: Object, newPropertyFlags: number, putFlags: number, property: Property, oldShape: Shape): Shape;
+    // private getNewShape(object: DynamicObject, value: Object, newPropertyFlags: number, putFlags: number, property: Property, oldShape: ShapeImpl): ShapeImpl;
     insertIntoPutCache(object: DynamicObject, cachedShape: Shape, value: Object, propertyFlags: number, putFlags: number, property: Property): DynamicObjectLibraryImpl$KeyCacheNode;
     insertIntoRemoveKeyCache(cachedShape: Shape, cachedProperty: Property): DynamicObjectLibraryImpl$KeyCacheNode;
     insertIntoSetPropertyFlagsCache(cachedShape: Shape, propertyFlags: number, cachedProperty: Property): DynamicObjectLibraryImpl$KeyCacheNode;

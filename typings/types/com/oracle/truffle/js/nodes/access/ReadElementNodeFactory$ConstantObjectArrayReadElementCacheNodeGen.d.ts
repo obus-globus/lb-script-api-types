@@ -9,5 +9,6 @@ export class ReadElementNodeFactory$ConstantObjectArrayReadElementCacheNodeGen e
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor()
     // private state_0_: number;
+    // private executeAndSpecialize(arg0Value: JSDynamicObject, arg1Value: ScriptArray, arg2Value: number, arg3Value: Object, arg4Value: Object, arg5Value: JSContext): Object;
     executeArrayGet(arg0Value: JSDynamicObject, arg1Value: ScriptArray, arg2Value: number, arg3Value: Object, arg4Value: Object, arg5Value: JSContext): Object;
 }

@@ -4,7 +4,6 @@ import type { InstrumentableNode } from '../../../../../../com/oracle/truffle/ap
 import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { InteropLibrary } from '../../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { InlinedBranchProfile } from '../../../../../../com/oracle/truffle/api/profiles/InlinedBranchProfile.d.ts'
 import type { InlinedConditionProfile } from '../../../../../../com/oracle/truffle/api/profiles/InlinedConditionProfile.d.ts'
 import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { AbstractFunctionArgumentsNode } from '../../../../../../com/oracle/truffle/js/nodes/function/AbstractFunctionArgumentsNode.d.ts'
@@ -32,7 +31,7 @@ export abstract class JSNewNode extends JavaScriptNode {
     createClassNotFoundError(frame: VirtualFrame, target: JSDynamicObject): Object;
     createFunctionTypeError(frame: VirtualFrame, target: Object): Object;
     doJSAdapter(frame: VirtualFrame, target: JSDynamicObject): Object;
-    doNewForeignObject(frame: VirtualFrame, target: Object, node: Node, interop: InteropLibrary, convert: ExportValueNode, toJSType: ImportValueNode, hostClassBranch: InlinedBranchProfile, isAbstractProf: InlinedConditionProfile): Object;
+    doNewForeignObject(frame: VirtualFrame, target: Object, node: Node, interop: InteropLibrary, convert: ExportValueNode, toJSType: ImportValueNode, isHostClassProf: InlinedConditionProfile, isAbstractProf: InlinedConditionProfile): Object;
     doNewJSProxy(frame: VirtualFrame, proxy: JSDynamicObject, callNew: JSFunctionCallNode): Object;
     doNewReturnThis(frame: VirtualFrame, target: JSDynamicObject, callNew: JSFunctionCallNode): Object;
     // private extend(type: Class<Object>, env: TruffleLanguage$Env): Object;

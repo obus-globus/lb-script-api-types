@@ -9,6 +9,7 @@ import type { ULocale } from '../../../../../../../../org/graalvm/shadowed/com/i
 export class LocaleDistance extends Object {
     static DISTANCE_SKIP_SCRIPT: number;
     static END_OF_SUBTAG: number;
+    static INSTANCE: LocaleDistance;
     static IX_DEF_LANG_DISTANCE: number;
     static IX_DEF_REGION_DISTANCE: number;
     static IX_DEF_SCRIPT_DISTANCE: number;
@@ -17,7 +18,6 @@ export class LocaleDistance extends Object {
     static getDistanceDouble(paramindexAndDistance: number): number;
     static getDistanceFloor(paramindexAndDistance: number): number;
     static getIndex(paramindexAndDistance: number): number;
-    static getInstance(): LocaleDistance;
     static getShiftedDistance(paramindexAndDistance: number): number;
     static shiftDistance(paramdistance: number): number;
     private constructor(data: LocaleDistance$Data)

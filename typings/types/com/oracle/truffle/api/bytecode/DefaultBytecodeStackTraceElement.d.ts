@@ -5,18 +5,12 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DefaultBytecodeStackTraceElement extends Object implements TruffleObject {
     constructor(stackTraceElement: TruffleStackTraceElement)
     // private stackTrace: TruffleStackTraceElement;
-    getBytecodeIndex(): number;
     getDeclaringMetaObject(): Object;
     getExecutableName(): Object;
     // private getExecutableNameImpl(): string;
-    getLanguageId(): string;
     getSourceLocation(): SourceSection;
     // private getSourceSectionImpl(): SourceSection;
-    hasBytecodeIndex(): boolean;
     hasDeclaringMetaObject(): boolean;
     hasExecutableName(): boolean;
-    hasLanguageId(): boolean;
     hasSourceLocation(): boolean;
-    isInternal(): boolean;
-    toDisplayString(allowSideEffects: boolean): Object;
 }

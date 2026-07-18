@@ -1,5 +1,4 @@
 import type { JavaMap } from '../../../../../../JavaMap.d.ts'
-import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { TruffleString } from '../../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
 import type { JSException } from '../../../../../../com/oracle/truffle/js/runtime/JSException.d.ts'
 import type { TemporalUtil$Unit } from '../../../../../../com/oracle/truffle/js/runtime/util/TemporalUtil$Unit.d.ts'
@@ -9,18 +8,13 @@ export class TemporalErrors extends Object {
     static createRangeErrorCalendarUnknown(): JSException;
     static createRangeErrorDateOutsideRange(): JSException;
     static createRangeErrorDateTimeOutsideRange(): JSException;
-    static createRangeErrorDisallowedUnit(paramoriginatingNode: Node, paramunit: TemporalUtil$Unit): JSException;
     static createRangeErrorIdenticalCalendarExpected(): JSException;
     static createRangeErrorIdenticalTimeZoneExpected(): JSException;
-    static createRangeErrorInvalidMonthCode(parammonthCode: Object): JSException;
     static createRangeErrorInvalidNanoseconds(): JSException;
     static createRangeErrorInvalidPlainDateTime(): JSException;
     static createRangeErrorInvalidRelativeToString(): JSException;
     static createRangeErrorInvalidTimeZoneString(): JSException;
     static createRangeErrorMonthDayOutsideRange(): JSException;
-    static createRangeErrorNotADateTimeUnit(paramoriginatingNode: Node, paramunit: TemporalUtil$Unit): JSException;
-    static createRangeErrorNotADateUnit(paramoriginatingNode: Node, paramunit: TemporalUtil$Unit): JSException;
-    static createRangeErrorNotATimeUnit(paramoriginatingNode: Node, paramunit: TemporalUtil$Unit): JSException;
     static createRangeErrorNumberIsNaN(): JSException;
     static createRangeErrorOptionsNotContained(paramvalues: Object[], paramvalue: Object): JSException;
     static createRangeErrorRelativeToNotUndefined(): JSException;

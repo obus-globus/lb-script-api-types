@@ -7,7 +7,7 @@ export abstract class Transition$AbstractReplacePropertyTransition extends Trans
     equals(obj: Object | null): boolean;
     getPropertyAfter(): Property;
     getPropertyBefore(): Property;
+    hasConstantLocation(): boolean;
     hashCode(): number;
-    isWeak(): boolean;
     toString(): string;
 }

@@ -22,8 +22,8 @@ export abstract class ArrayBufferPrototypeBuiltins$JSArrayBufferTransferNode ext
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
-    constructor(context: JSContext, builtin: JSBuiltin, preserveResizability: number)
-    // private preserveResizability: number;
+    constructor(context: JSContext, builtin: JSBuiltin, preserveResizability: boolean)
+    // private preserveResizability: boolean;
     arrayBufferDirect(thisObj: JSArrayBufferObject$Direct, newLength: Object, toIndexNode: JSToIndexNode, errorBranch: InlinedBranchProfile): Object;
     arrayBufferHeap(thisObj: JSArrayBufferObject$Heap, newLength: Object, toIndexNode: JSToIndexNode, errorBranch: InlinedBranchProfile): Object;
     arrayBufferInterop(thisObj: JSArrayBufferObject$Interop, newLength: Object, toIndexNode: JSToIndexNode, errorBranch: InlinedBranchProfile): Object;

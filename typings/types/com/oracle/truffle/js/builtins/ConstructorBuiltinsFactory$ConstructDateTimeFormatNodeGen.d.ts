@@ -6,24 +6,26 @@ import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
 import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
+import type { JSDateTimeFormatObject } from '../../../../../com/oracle/truffle/js/runtime/builtins/intl/JSDateTimeFormatObject.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ConstructorBuiltinsFactory$ConstructDateTimeFormatNodeGen extends ConstructorBuiltins$ConstructDateTimeFormatNode {
     static ARGUMENTS: string;
     static cloneUninitialized<T extends JavaScriptNode>(paramnode: T, parammaterializedTags: Class<Tag>[]): T;
     static cloneUninitialized<T extends JavaScriptNode>(paramnodeArray: T[], parammaterializedTags: Class<Tag>[]): T[];
-    static create(paramcontext: JSContext, parambuiltin: JSBuiltin, paramconstructorCall: boolean, paramnewTargetCase: boolean, paramarguments: JavaScriptNode[]): ConstructorBuiltins$ConstructDateTimeFormatNode;
+    static create(paramcontext: JSContext, parambuiltin: JSBuiltin, paramnewTargetCase: boolean, paramarguments: JavaScriptNode[]): ConstructorBuiltins$ConstructDateTimeFormatNode;
     static createBuiltin(paramctx: JSContext, parambuiltin: JSBuiltin, paramconstruct: boolean, paramnewTarget: boolean): JSBuiltinNode;
     static findBlockScopeNode(paramnode: Node): Node;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
-    private constructor(context: JSContext, builtin: JSBuiltin, constructorCall: boolean, newTargetCase: boolean, arguments: JavaScriptNode[])
+    private constructor(context: JSContext, builtin: JSBuiltin, newTargetCase: boolean, arguments: JavaScriptNode[])
     // private arguments0_: JavaScriptNode;
     // private arguments1_: JavaScriptNode;
     // private arguments2_: JavaScriptNode;
-    // private arguments3_: JavaScriptNode;
+    // private state_0_: number;
     execute(frameValue: VirtualFrame): Object;
+    // private executeAndSpecialize(arguments0Value: Object, arguments1Value: Object, arguments2Value: Object): JSDateTimeFormatObject;
     getArguments(): JavaScriptNode[];
 }

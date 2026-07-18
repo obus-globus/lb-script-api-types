@@ -29,7 +29,6 @@ export class CompilerDirectives extends Object {
     static isExact(paramobject: Object, paramclazz: Class<Object>): boolean;
     static isPartialEvaluationConstant(paramvalue: Object): boolean;
     static materialize(paramobj: Object): void;
-    static preserveFrameStateHere(): void;
     static shouldNotReachHere(): RuntimeException;
     static shouldNotReachHere(parammessage: string): RuntimeException;
     static shouldNotReachHere(parammessage: string, paramcause: Throwable): RuntimeException;

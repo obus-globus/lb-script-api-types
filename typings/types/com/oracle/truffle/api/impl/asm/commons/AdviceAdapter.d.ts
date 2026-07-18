@@ -267,7 +267,6 @@ export abstract class AdviceAdapter extends GeneratorAdapter implements Opcodes 
     static V22: number;
     static V23: number;
     static V24: number;
-    static V25: number;
     static V9: number;
     static V_PREVIEW: number;
     static XOR: number;

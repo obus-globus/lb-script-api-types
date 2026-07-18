@@ -1,5 +1,5 @@
 import type { RangesBuffer } from '../../../../../com/oracle/truffle/regex/charset/RangesBuffer.d.ts'
-import type { Encoding } from '../../../../../com/oracle/truffle/regex/tregex/string/Encoding.d.ts'
+import type { Encodings$Encoding } from '../../../../../com/oracle/truffle/regex/tregex/string/Encodings$Encoding.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface SortedListOfRanges extends Object{
     addRangeTo(buffer: RangesBuffer, i: number): void;
@@ -30,17 +30,17 @@ export interface SortedListOfRanges extends Object{
     intersects(o: SortedListOfRanges): boolean;
     intersects(ia: number, o: SortedListOfRanges, ib: number): boolean;
     intersects(ia: number, bLo: number, bHi: number): boolean;
-    inverseGetMax(encoding: Encoding): number;
-    inverseGetMin(encoding: Encoding): number;
-    inverseRangesToString(encoding: Encoding): string;
-    inverseValueCount(encoding: Encoding): number;
+    inverseGetMax(encoding: Encodings$Encoding): number;
+    inverseGetMin(encoding: Encodings$Encoding): number;
+    inverseRangesToString(encoding: Encodings$Encoding): string;
+    inverseValueCount(encoding: Encodings$Encoding): number;
     isEmpty(): boolean;
     isSingle(i: number): boolean;
     leftOf(ia: number, o: SortedListOfRanges, ib: number): boolean;
     leftOf(ia: number, bLo: number, bHi: number): boolean;
     matches2CharsWith1BitDifference(): boolean;
-    matchesEverything(encoding: Encoding): boolean;
-    matchesMinAndMax(encoding: Encoding): boolean;
+    matchesEverything(encoding: Encodings$Encoding): boolean;
+    matchesMinAndMax(encoding: Encodings$Encoding): boolean;
     matchesNothing(): boolean;
     matchesSingleAscii(): boolean;
     matchesSingleChar(): boolean;
@@ -52,7 +52,7 @@ export interface SortedListOfRanges extends Object{
     rightOf(ia: number, bLo: number, bHi: number): boolean;
     size(): number;
     size(i: number): number;
-    sizeOfInverse(encoding: Encoding): number;
+    sizeOfInverse(encoding: Encodings$Encoding): number;
     valueCount(): number;
     valueCountEquals(cmp: number): boolean;
     valueCountMax(cmp: number): boolean;

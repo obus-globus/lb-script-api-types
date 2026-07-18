@@ -16,6 +16,8 @@ import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 export class Errors extends Object {
     static createAggregateError(paramerrors: Object, paramoriginatingNode: Node): JSException;
     static createAggregateError(paramerrors: Object, parammessage: string, paramoriginatingNode: Node): JSException;
+    static createCompileError(parammessage: string, paramoriginatingNode: Node): JSException;
+    static createCompileError(paramcause: Throwable, paramoriginatingNode: Node): JSException;
     static createError(parammessage: string): JSException;
     static createError(parammessage: string, parame: Throwable): JSException;
     static createErrorCannotConvertToBigInt(paramtype: JSErrorType, paramvalue: Object, paramoriginatingNode: Node): JSException;
@@ -23,6 +25,9 @@ export class Errors extends Object {
     static createEvalDisabled(): JSException;
     static createEvalError(parammessage: string): JSException;
     static createICU4JDataError(parame: Exception): JSException;
+    static createLinkError(parammessage: string): JSException;
+    static createLinkError(parammessage: string, paramoriginatingNode: Node): JSException;
+    static createLinkError(paramcause: Throwable, paramoriginatingNode: Node): JSException;
     static createNotAFileError(parampath: string): JSException;
     static createRangeError(parammessage: string): JSException;
     static createRangeError(parammessage: string, paramoriginatingNode: Node): JSException;
@@ -62,6 +67,8 @@ export class Errors extends Object {
     static createReferenceError(parammessage: string, paramcause: Throwable, paramoriginatingNode: Node): JSException;
     static createReferenceErrorDerivedConstructorThisNotInitialized(paramoriginatingNode: Node): JSException;
     static createReferenceErrorNotDefined(paramkey: Object, paramoriginatingNode: Node): JSException;
+    static createRuntimeError(parammessage: string, paramrealm: JSRealm): JSException;
+    static createRuntimeError(paramcause: Throwable, paramoriginatingNode: Node): JSException;
     static createSyntaxError(paramcause: ParserException, paramcontext: JSContext): JSException;
     static createSyntaxError(parammessage: string): JSException;
     static createSyntaxError(parammessage: string, paramoriginatingNode: Node): JSException;
@@ -111,7 +118,6 @@ export class Errors extends Object {
     static createTypeErrorFormat(parammessage: string, ...paramargs: Object[]): JSException;
     static createTypeErrorGeneratorObjectExpected(): JSException;
     static createTypeErrorGlobalObjectNotExtensible(paramoriginatingNode: Node): JSException;
-    static createTypeErrorImmutableBuffer(): JSException;
     static createTypeErrorIncompatibleReceiver(parammethodName: TruffleString, paramreceiver: Object): JSException;
     static createTypeErrorIncompatibleReceiver(paramwhat: Object): JSException;
     static createTypeErrorIncompatibleReceiver(parammethodName: string, paramreceiver: Object): JSException;
@@ -121,7 +127,6 @@ export class Errors extends Object {
     static createTypeErrorInvalidDetachKey(): JSException;
     static createTypeErrorInvalidIdentifier(paramidentifier: Object): JSException;
     static createTypeErrorInvalidInstanceofTarget(paramtarget: Object, paramoriginatingNode: Node): JSException;
-    static createTypeErrorInvalidPropertyDescriptor(paramdescriptor: Object, paramoriginatingNode: Node): JSException;
     static createTypeErrorInvalidPrototype(paramvalue: Object): JSException;
     static createTypeErrorInvalidTimeValue(): JSException;
     static createTypeErrorIterResultNotAnObject(paramvalue: Object, paramoriginatingNode: Node): JSException;
@@ -157,7 +162,6 @@ export class Errors extends Object {
     static createTypeErrorPrivateSymbolInProxy(): JSException;
     static createTypeErrorPrivateSymbolInProxy(paramoriginatingNode: Node): JSException;
     static createTypeErrorPropertyDescriptorNotAnObject(paramvalue: Object, paramoriginatingNode: Node): JSException;
-    static createTypeErrorPropertyNotFunction(paramvalue: Object, parampropertyKey: Object, paramobject: Object, paramoriginatingNode: Node): JSException;
     static createTypeErrorProxyGetInvariantViolated(parampropertyKey: Object, paramexpectedValue: Object, paramactualValue: Object): JSException;
     static createTypeErrorProxyRevoked(): JSException;
     static createTypeErrorProxyRevoked(paramtrap: TruffleString, paramoriginatingNode: Node): JSException;
@@ -169,7 +173,6 @@ export class Errors extends Object {
     static createTypeErrorSetExpected(): JSException;
     static createTypeErrorSetNonObjectReceiver(paramreceiver: Object, paramkey: Object): JSException;
     static createTypeErrorSharedArrayBufferExpected(): JSException;
-    static createTypeErrorStrictDeleteProperty(paramkey: Object, paramobject: Object): JSException;
     static createTypeErrorTrapReturnedFalsish(paramtrap: Object, parampropertyKey: Object): JSException;
     static createTypeErrorTypeXExpected(paramtype: Object): JSException;
     static createTypeErrorUint8ArrayExpected(): JSException;
@@ -178,12 +181,6 @@ export class Errors extends Object {
     static createTypeErrorWrongDecoratorReturn(paramoriginatingNode: Node): JSException;
     static createTypeErrorYieldStarThrowMethodMissing(paramoriginatingNode: Node): JSException;
     static createURIError(parammessage: string): JSException;
-    static createWasmCompileError(parammessage: string, paramoriginatingNode: Node): JSException;
-    static createWasmCompileError(paramcause: Throwable, paramoriginatingNode: Node): JSException;
-    static createWasmLinkError(parammessage: string): JSException;
-    static createWasmLinkError(paramcause: Throwable, paramoriginatingNode: Node): JSException;
-    static createWasmRuntimeError(parammessage: string, paramrealm: JSRealm): JSException;
-    static createWasmRuntimeError(paramcause: Throwable, paramoriginatingNode: Node, paramrealm: JSRealm): JSException;
     static notImplemented(parammessage: string): RuntimeException;
     static outOfMemoryError(): OutOfMemoryError;
     static shouldNotReachHere(): RuntimeException;

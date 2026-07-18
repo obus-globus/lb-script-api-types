@@ -5,6 +5,5 @@ import type { KClass } from '../../../../../kotlin/reflect/KClass.d.ts'
 export interface Operation extends Annotation, Object{
     /*not mapped: */ forceCached(): boolean;
     /*not mapped: */ javadoc(): string;
-    /*not mapped: */ storeBytecodeIndex(): boolean;
     /*not mapped: */ tags(): KClass<Tag>[];
 }

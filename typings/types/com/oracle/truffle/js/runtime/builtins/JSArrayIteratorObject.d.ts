@@ -33,11 +33,9 @@ export class JSArrayIteratorObject extends JSNonProxyObject {
     static defineOwnProperty(paramobj: JSDynamicObject, paramkey: Object, paramdesc: PropertyDescriptor, paramdoThrow: boolean): boolean;
     static delete(paramobj: JSDynamicObject, paramkey: Object): boolean;
     static delete(paramobj: JSDynamicObject, paramkey: Object, paramisStrict: boolean): boolean;
-    static delete(paramobj: JSDynamicObject, paramkey: Object, paramisStrict: boolean, paramresultWhenNotPresent: boolean): boolean;
     static delete(paramobj: JSDynamicObject, paramkey: Object, paramisStrict: boolean, paramclassProfile: JSClassProfile): boolean;
     static delete(paramobj: JSDynamicObject, paramindex: number): boolean;
     static delete(paramobj: JSDynamicObject, paramindex: number, paramisStrict: boolean): boolean;
-    static delete(paramobj: JSDynamicObject, paramindex: number, paramisStrict: boolean, paramresultWhenNotPresent: boolean): boolean;
     static delete(paramobj: JSDynamicObject, paramindex: number, paramisStrict: boolean, paramclassProfile: JSClassProfile): boolean;
     static enumerableOwnNames(paramthisObj: JSDynamicObject): TruffleString[];
     static get(paramobj: JSDynamicObject, paramkey: Object): Object;
@@ -62,7 +60,7 @@ export class JSArrayIteratorObject extends JSNonProxyObject {
     static getOwnProperty(paramobj: JSDynamicObject, paramkey: Object): PropertyDescriptor;
     static getOwnProperty(paramobj: JSDynamicObject, paramkey: Object, paramclassProfile: JSClassProfile): PropertyDescriptor;
     static getPropertyArray(paramobj: JSDynamicObject): Property[];
-    static getPropertyFlags(paramobj: JSDynamicObject, paramkey: Object, paramdefaultValue: number): number;
+    static getPropertyFlags(paramobj: JSDynamicObject, paramkey: Object): number;
     static getPrototype(paramobj: JSDynamicObject): JSDynamicObject;
     static getPrototype(paramobj: JSDynamicObject, paramjsclassProfile: JSClassProfile): JSDynamicObject;
     static getUncachedRead(): ReadElementNode;
@@ -105,13 +103,10 @@ export class JSArrayIteratorObject extends JSNonProxyObject {
     readonly iteratedObject: Object;
     readonly iterationKind: number;
     readonly nextIndex: number;
-    readonly skipGetLength: boolean;
     getClassName(): TruffleString;
     getIteratedObject(): Object;
     getIterationKind(): number;
     getNextIndex(): number;
-    isSkipGetLength(): boolean;
     setIteratedObject(iteratedObject: Object): void;
     setNextIndex(nextIndex: number): void;
-    setSkipGetLength(skip: boolean): void;
 }

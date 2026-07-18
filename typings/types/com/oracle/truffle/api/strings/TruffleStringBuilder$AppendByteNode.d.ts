@@ -11,5 +11,4 @@ export abstract class TruffleStringBuilder$AppendByteNode extends AbstractPublic
     append(sb: TruffleStringBuilderUTF8, value: number, bufferGrowProfile: InlinedBranchProfile, errorProfile: InlinedBranchProfile): void;
     // private appendByte(sb: TruffleStringBuilder, value: number, bufferGrowProfile: InlinedBranchProfile, errorProfile: InlinedBranchProfile, nonAsciiCodeRange: number): void;
     execute(sb: TruffleStringBuilder, value: number): void;
-    execute(sb: TruffleStringBuilderUTF8, value: number): void;
 }

@@ -29,7 +29,9 @@ export abstract class JSToInt32Node$JSToInt32UnaryNode extends JSUnaryNode {
     doBigInt(value: BigInt): number;
     doBoolean(value: boolean): number;
     doDouble(value: number): number;
-    doDoubleAsLong(value: number): number;
+    doDoubleFitsInt(value: number): number;
+    doDoubleRepresentableAsLong(value: number): number;
+    doDoubleRepresentableAsSafeInteger(value: number): number;
     doInteger(value: number): number;
     doJSObject(value: JSObject, toDoubleNode: JSToDoubleNode): number;
     doNull(value: Object): number;

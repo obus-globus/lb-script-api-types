@@ -14,7 +14,6 @@ import type { DebuggerExecutionLifecycle } from '../../../../../com/oracle/truff
 import type { DebuggerNode } from '../../../../../com/oracle/truffle/api/debug/DebuggerNode.d.ts'
 import type { DebuggerNode$InputValuesProvider } from '../../../../../com/oracle/truffle/api/debug/DebuggerNode$InputValuesProvider.d.ts'
 import type { DebuggerSession$Caller } from '../../../../../com/oracle/truffle/api/debug/DebuggerSession$Caller.d.ts'
-import type { DebuggerSession$NewThreadStrategyProvider } from '../../../../../com/oracle/truffle/api/debug/DebuggerSession$NewThreadStrategyProvider.d.ts'
 import type { DebuggerSession$StableBoolean } from '../../../../../com/oracle/truffle/api/debug/DebuggerSession$StableBoolean.d.ts'
 import type { DebuggerSession$ThreadSuspension } from '../../../../../com/oracle/truffle/api/debug/DebuggerSession$ThreadSuspension.d.ts'
 import type { InsertableNode } from '../../../../../com/oracle/truffle/api/debug/InsertableNode.d.ts'
@@ -60,7 +59,6 @@ export class DebuggerSession extends Object implements Closeable {
     // private includeAvailableSourceSectionsOnly: boolean;
     // private includeInternal: boolean;
     // private locationBreakpointsActive: DebuggerSession$StableBoolean;
-    // private newThreadStrategy: DebuggerSession$NewThreadStrategyProvider;
     // private sessionId: number;
     readonly showHostStackFrames: boolean;
     // private sourceElements: SourceElement[];
@@ -83,9 +81,8 @@ export class DebuggerSession extends Object implements Closeable {
     // private createBinding(includeInternalCode: boolean, sFilter: (param0: Source) => boolean, factory: ExecutionEventNodeFactory, onInput: boolean, ...tags: Class<Object>[]): EventBinding<ExecutionEventNodeFactory>;
     createPrimitiveValue(primitiveValue: Object, language: LanguageInfo): DebugValue;
     disposeBreakpoint(breakpoint: Breakpoint): void;
-    disposeStepping(t: Thread): void;
-    // private doSuspend(context: SuspendedContext, suspendAnchor: SuspendAnchor, frame: MaterializedFrame, insertableNode: InsertableNode, inputValuesProvider: DebuggerNode$InputValuesProvider, returnValue: Object, exception: DebugException, breaks: Breakpoint[], conditionFailures: JavaMap<Breakpoint, Throwable>, currentStrategy: SteppingStrategy, singleStepCompleted: boolean, isUnwind: boolean): Object;
-    // private doSuspend(context: SuspendedContext, suspendAnchor: SuspendAnchor, frame: MaterializedFrame, insertableNode: InsertableNode, isUnwind: boolean): void;
+    // private doSuspend(context: SuspendedContext, suspendAnchor: SuspendAnchor, frame: MaterializedFrame, insertableNode: InsertableNode, inputValuesProvider: DebuggerNode$InputValuesProvider, returnValue: Object, exception: DebugException, breaks: Breakpoint[], conditionFailures: JavaMap<Breakpoint, Throwable>, singleStepCompleted: boolean, isUnwind: boolean): Object;
+    // private doSuspend(context: SuspendedContext, suspendAnchor: SuspendAnchor, frame: MaterializedFrame, insertableNode: InsertableNode, singleStepCompleted: boolean, isUnwind: boolean): void;
     getBreakpoints(): Breakpoint[];
     getDebugger(): Debugger;
     getExportedSymbols(): JavaMap<string, DebugValue>;
@@ -107,7 +104,7 @@ export class DebuggerSession extends Object implements Closeable {
     // private notifyNewThread(currentThread: Thread): SteppingStrategy;
     // private notifyUnwindCallback(frame: MaterializedFrame, insertableNode: InsertableNode): void;
     // private performKill(location: Node): void;
-    // private processBreakpointsAndStep(context: EventContext, nodes: DebuggerNode[], s: SteppingStrategy, source: DebuggerNode, frame: MaterializedFrame, suspendAnchor: SuspendAnchor, atCaller: boolean, inputValuesProvider: DebuggerNode$InputValuesProvider, returnValue: Object, exception: DebugException, breakpointFailures: JavaMap<Breakpoint, Throwable>, contextSupplier: () => SuspendedContext): Object;
+    // private processBreakpointsAndStep(context: EventContext, nodes: DebuggerNode[], s: SteppingStrategy, source: DebuggerNode, frame: MaterializedFrame, suspendAnchor: SuspendAnchor, inputValuesProvider: DebuggerNode$InputValuesProvider, returnValue: Object, exception: DebugException, breakpointFailures: JavaMap<Breakpoint, Throwable>, contextSupplier: () => SuspendedContext): Object;
     // private removeBindings(): void;
     resolveSection(node: Node): SourceSection;
     resolveSection(section: SourceSection): SourceSection;
@@ -122,6 +119,7 @@ export class DebuggerSession extends Object implements Closeable {
     setShowHostStackFrames(showHostStackFrames: boolean): void;
     setSourcePath(uris: URI[]): void;
     setSteppingFilter(steppingFilter: SuspensionFilter): void;
+    // private setSteppingStrategy(thread: Thread, strategy: SteppingStrategy, updateStepping: boolean): void;
     setThreadSuspendEnabled(enabled: boolean): void;
     setThreadsListener(listener: DebugThreadsListener, includeInitializedThreads: boolean): void;
     suspend(t: Thread): void;

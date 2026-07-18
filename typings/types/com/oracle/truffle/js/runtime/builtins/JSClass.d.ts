@@ -12,9 +12,7 @@ export abstract class JSClass extends Object {
     constructor()
     defineOwnProperty(thisObj: JSDynamicObject, key: Object, value: PropertyDescriptor, doThrow: boolean): boolean;
     delete(thisObj: JSDynamicObject, key: Object, isStrict: boolean): boolean;
-    delete(thisObj: JSDynamicObject, key: Object, isStrict: boolean, resultWhenNotPresent: boolean): boolean;
     delete(thisObj: JSDynamicObject, index: number, isStrict: boolean): boolean;
-    delete(thisObj: JSDynamicObject, index: number, isStrict: boolean, resultWhenNotPresent: boolean): boolean;
     get(thisObj: JSDynamicObject, key: Object): Object;
     get(thisObj: JSDynamicObject, index: number): Object;
     getHelper(store: JSDynamicObject, thisObj: Object, key: Object, encapsulatingNode: Node): Object;

@@ -1,5 +1,6 @@
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
+import type { InlinedBranchProfile } from '../../../../../com/oracle/truffle/api/profiles/InlinedBranchProfile.d.ts'
 import type { TruffleString } from '../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
 import type { RegExpPrototypeBuiltins$JSRegExpSplitNode$SplitAccordingToSpecNode } from '../../../../../com/oracle/truffle/js/builtins/RegExpPrototypeBuiltins$JSRegExpSplitNode$SplitAccordingToSpecNode.d.ts'
 import type { RegExpPrototypeBuiltins$JSRegExpSplitNode$SplitInternalNode } from '../../../../../com/oracle/truffle/js/builtins/RegExpPrototypeBuiltins$JSRegExpSplitNode$SplitInternalNode.d.ts'
@@ -7,7 +8,6 @@ import type { RegExpPrototypeBuiltins$RegExpPrototypeSymbolOperation } from '../
 import type { IsPristineObjectNode } from '../../../../../com/oracle/truffle/js/builtins/helper/IsPristineObjectNode.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { IsJSObjectNode } from '../../../../../com/oracle/truffle/js/nodes/access/IsJSObjectNode.d.ts'
-import type { SpeciesConstructorNode } from '../../../../../com/oracle/truffle/js/nodes/array/SpeciesConstructorNode.d.ts'
 import type { JSToStringNode } from '../../../../../com/oracle/truffle/js/nodes/cast/JSToStringNode.d.ts'
 import type { JSToUInt32Node } from '../../../../../com/oracle/truffle/js/nodes/cast/JSToUInt32Node.d.ts'
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
@@ -30,16 +30,15 @@ export abstract class RegExpPrototypeBuiltins$JSRegExpSplitNode extends RegExpPr
     constructor(context: JSContext, builtin: JSBuiltin)
     // private isObjectNode: IsJSObjectNode;
     // private isPristineObjectNode: IsPristineObjectNode;
-    // private speciesConstructorNode: SpeciesConstructorNode;
     // private toString1Node: JSToStringNode;
     // private checkObject(rx: JSDynamicObject): void;
-    // private doSplit(rx: JSDynamicObject, input: Object, limit: number, splitInternal: RegExpPrototypeBuiltins$JSRegExpSplitNode$SplitInternalNode, splitAccordingToSpec: RegExpPrototypeBuiltins$JSRegExpSplitNode$SplitAccordingToSpecNode): JSArrayObject;
+    // private doSplit(rx: JSDynamicObject, input: Object, limit: number, node: Node, limitZeroBranch: InlinedBranchProfile, splitInternal: RegExpPrototypeBuiltins$JSRegExpSplitNode$SplitInternalNode, splitAccordingToSpec: RegExpPrototypeBuiltins$JSRegExpSplitNode$SplitAccordingToSpecNode): JSArrayObject;
     // private getSpeciesConstructor(rx: JSDynamicObject): Object;
     // private isJSObject(rx: JSDynamicObject): boolean;
     // private isPristine(rx: JSDynamicObject): boolean;
-    splitIntLimit(rx: JSDynamicObject, input: Object, limit: number, toUInt32: JSToUInt32Node, splitInternal: RegExpPrototypeBuiltins$JSRegExpSplitNode$SplitInternalNode, splitAccordingToSpec: RegExpPrototypeBuiltins$JSRegExpSplitNode$SplitAccordingToSpecNode): JSArrayObject;
-    splitLongLimit(rx: JSDynamicObject, input: Object, limit: number, toUInt32: JSToUInt32Node, splitInternal: RegExpPrototypeBuiltins$JSRegExpSplitNode$SplitInternalNode, splitAccordingToSpec: RegExpPrototypeBuiltins$JSRegExpSplitNode$SplitAccordingToSpecNode): JSArrayObject;
+    splitIntLimit(rx: JSDynamicObject, input: Object, limit: number, toUInt32: JSToUInt32Node, limitZeroBranch: InlinedBranchProfile, splitInternal: RegExpPrototypeBuiltins$JSRegExpSplitNode$SplitInternalNode, splitAccordingToSpec: RegExpPrototypeBuiltins$JSRegExpSplitNode$SplitAccordingToSpecNode): JSArrayObject;
+    splitLongLimit(rx: JSDynamicObject, input: Object, limit: number, toUInt32: JSToUInt32Node, limitZeroBranch: InlinedBranchProfile, splitInternal: RegExpPrototypeBuiltins$JSRegExpSplitNode$SplitInternalNode, splitAccordingToSpec: RegExpPrototypeBuiltins$JSRegExpSplitNode$SplitAccordingToSpecNode): JSArrayObject;
     splitObjectLimit(rx: JSDynamicObject, input: Object, limit: Object, splitAccordingToSpec: RegExpPrototypeBuiltins$JSRegExpSplitNode$SplitAccordingToSpecNode): JSArrayObject;
-    splitUndefinedLimit(rx: JSDynamicObject, input: Object, limit: Object, splitInternal: RegExpPrototypeBuiltins$JSRegExpSplitNode$SplitInternalNode, splitAccordingToSpec: RegExpPrototypeBuiltins$JSRegExpSplitNode$SplitAccordingToSpecNode): JSArrayObject;
+    splitUndefinedLimit(rx: JSDynamicObject, input: Object, limit: Object, limitZeroBranch: InlinedBranchProfile, splitInternal: RegExpPrototypeBuiltins$JSRegExpSplitNode$SplitInternalNode, splitAccordingToSpec: RegExpPrototypeBuiltins$JSRegExpSplitNode$SplitAccordingToSpecNode): JSArrayObject;
     // private toString1(obj: Object): TruffleString;
 }

@@ -9,7 +9,6 @@ import type { AbstractPolyglotImpl$AbstractExceptionDispatch } from '../../../..
 export class PolyglotExceptionDispatch extends AbstractPolyglotImpl$AbstractExceptionDispatch {
     constructor(engineImpl: AbstractPolyglotImpl)
     asHostException(receiver: Object): Throwable;
-    getCauseImpl(receiver: Object): Object;
     getExitStatus(receiver: Object): number;
     getGuestObject(receiver: Object): Object;
     getMessage(receiver: Object): string;

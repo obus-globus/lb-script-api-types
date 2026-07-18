@@ -1,9 +1,9 @@
 import type { VirtualFrame } from '../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { NumberPrototypeBuiltins$ForeignGetDoubleValueNode } from '../../../../../com/oracle/truffle/js/builtins/NumberPrototypeBuiltins$ForeignGetDoubleValueNode.d.ts'
 import type { NumberPrototypeBuiltins$JSNumberToLocaleStringIntlNode } from '../../../../../com/oracle/truffle/js/builtins/NumberPrototypeBuiltins$JSNumberToLocaleStringIntlNode.d.ts'
 import type { NumberPrototypeBuiltinsFactory$JSNumberToLocaleStringIntlNodeGen$JavaNumberToLocaleStringData } from '../../../../../com/oracle/truffle/js/builtins/NumberPrototypeBuiltinsFactory$JSNumberToLocaleStringIntlNodeGen$JavaNumberToLocaleStringData.d.ts'
+import type { NumberPrototypeBuiltinsFactory$JSNumberToLocaleStringIntlNodeGen$ToLocaleStringForeignObject0Data } from '../../../../../com/oracle/truffle/js/builtins/NumberPrototypeBuiltinsFactory$JSNumberToLocaleStringIntlNodeGen$ToLocaleStringForeignObject0Data.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
@@ -27,9 +27,10 @@ export class NumberPrototypeBuiltinsFactory$JSNumberToLocaleStringIntlNodeGen ex
     // private arguments2_: JavaScriptNode;
     // private javaNumberToLocaleString_cache: NumberPrototypeBuiltinsFactory$JSNumberToLocaleStringIntlNodeGen$JavaNumberToLocaleStringData;
     // private state_0_: number;
-    // private toLocaleStringForeignObject_getDoubleValue_: NumberPrototypeBuiltins$ForeignGetDoubleValueNode;
+    // private toLocaleStringForeignObject0_cache: NumberPrototypeBuiltinsFactory$JSNumberToLocaleStringIntlNodeGen$ToLocaleStringForeignObject0Data;
     execute(frameValue: VirtualFrame): Object;
     // private executeAndSpecialize(arguments0Value: Object, arguments1Value: Object, arguments2Value: Object): Object;
     // private fallbackGuard_(state_0: number, arguments0Value: Object, arguments1Value: Object, arguments2Value: Object): boolean;
     getArguments(): JavaScriptNode[];
+    // private toLocaleStringForeignObject1Boundary(state_0: number, arguments0Value_: Object, arguments1Value_: Object, arguments2Value_: Object): Object;
 }

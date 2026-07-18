@@ -25,9 +25,8 @@ export abstract class HostMethodDesc$SingleMethod extends HostMethodDesc {
     getScopedParameters(): number[];
     hasScopedParameters(): boolean;
     invoke(receiver: Object, arguments: Object[]): Object;
-    invokeGuestToHost(context: HostContext, cache: GuestToHostCodeCache, receiver: Object, arguments: Object[], node: Node): Object;
+    invokeGuestToHost(receiver: Object, arguments: Object[], cache: GuestToHostCodeCache, context: HostContext, node: Node): Object;
     isConstructor(): boolean;
-    isInvocable(): boolean;
     isMethod(): boolean;
     isOnlyVisibleFromJniName(): boolean;
     isVarArgs(): boolean;

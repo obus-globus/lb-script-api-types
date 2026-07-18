@@ -1,7 +1,6 @@
 import type { BackgroundCompileQueue$Priority } from '../../../../com/oracle/truffle/runtime/BackgroundCompileQueue$Priority.d.ts'
 import type { BackgroundCompileQueue$TruffleThreadPoolExecutor } from '../../../../com/oracle/truffle/runtime/BackgroundCompileQueue$TruffleThreadPoolExecutor.d.ts'
 import type { CompilationTask } from '../../../../com/oracle/truffle/runtime/CompilationTask.d.ts'
-import type { CompilationTask$SubmissionReason } from '../../../../com/oracle/truffle/runtime/CompilationTask$SubmissionReason.d.ts'
 import type { EngineData } from '../../../../com/oracle/truffle/runtime/EngineData.d.ts'
 import type { OptimizedCallTarget } from '../../../../com/oracle/truffle/runtime/OptimizedCallTarget.d.ts'
 import type { OptimizedTruffleRuntime } from '../../../../com/oracle/truffle/runtime/OptimizedTruffleRuntime.d.ts'
@@ -23,12 +22,12 @@ export class BackgroundCompileQueue extends Object {
     // private getExecutorService(callTarget: OptimizedCallTarget): ExecutorService;
     getQueueSize(): number;
     getQueuedTargets(engine: EngineData): OptimizedCallTarget[];
-    newThreadFactory(threadNamePrefix: string, callTarget: OptimizedCallTarget, compilerThreadStackSize: number): ThreadFactory;
+    newThreadFactory(threadNamePrefix: string, callTarget: OptimizedCallTarget): ThreadFactory;
     // private nextId(): number;
     notifyIdleCompilerThread(): void;
     shutdownAndAwaitTermination(timeout: number): void;
     // private shutdownNow(): void;
-    submitCompilation(priority: BackgroundCompileQueue$Priority, target: OptimizedCallTarget, submissionReason: CompilationTask$SubmissionReason): CompilationTask;
+    submitCompilation(priority: BackgroundCompileQueue$Priority, target: OptimizedCallTarget): CompilationTask;
     submitInitialization(target: OptimizedCallTarget, action: (param0: CompilationTask) => void): CompilationTask;
     // private submitTask(compilationTask: CompilationTask, target: OptimizedCallTarget): CompilationTask;
 }

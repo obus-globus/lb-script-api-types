@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
-import type { ApproximatelySignMatcher } from '../../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/number/parse/ApproximatelySignMatcher.d.ts'
 import type { CombinedCurrencyMatcher } from '../../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/number/parse/CombinedCurrencyMatcher.d.ts'
 import type { IgnorablesMatcher } from '../../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/number/parse/IgnorablesMatcher.d.ts'
 import type { MinusSignMatcher } from '../../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/number/parse/MinusSignMatcher.d.ts'
@@ -16,7 +15,6 @@ export class AffixTokenMatcherFactory extends Object {
     locale: ULocale;
     parseFlags: number;
     symbols: DecimalFormatSymbols;
-    approximatelySign(): ApproximatelySignMatcher;
     minusSign(): MinusSignMatcher;
     percent(): PercentMatcher;
     permille(): PermilleMatcher;

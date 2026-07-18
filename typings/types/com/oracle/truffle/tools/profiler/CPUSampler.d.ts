@@ -3,7 +3,6 @@ import type { TruffleContext } from '../../../../../com/oracle/truffle/api/Truff
 import type { SourceSectionFilter } from '../../../../../com/oracle/truffle/api/instrumentation/SourceSectionFilter.d.ts'
 import type { TruffleInstrument$Env } from '../../../../../com/oracle/truffle/api/instrumentation/TruffleInstrument$Env.d.ts'
 import type { CPUSampler$MutableSamplerData } from '../../../../../com/oracle/truffle/tools/profiler/CPUSampler$MutableSamplerData.d.ts'
-import type { CPUSampler$ProcessSampleListener } from '../../../../../com/oracle/truffle/tools/profiler/CPUSampler$ProcessSampleListener.d.ts'
 import type { CPUSampler$ResultProcessingRunnable } from '../../../../../com/oracle/truffle/tools/profiler/CPUSampler$ResultProcessingRunnable.d.ts'
 import type { CPUSampler$SamplingResult } from '../../../../../com/oracle/truffle/tools/profiler/CPUSampler$SamplingResult.d.ts'
 import type { CPUSamplerData } from '../../../../../com/oracle/truffle/tools/profiler/CPUSamplerData.d.ts'
@@ -28,7 +27,6 @@ export class CPUSampler extends Object implements Closeable {
     readonly gatherSelfHitTimes: boolean;
     // private nextContextIndex: number;
     readonly period: number;
-    // private processSampleListeners: (param0: TruffleContext) => void[];
     // private processingExecutionService: ExecutorService;
     // private processingThreadFuture: Future<Object>;
     // private processingThreadRunnable: CPUSampler$ResultProcessingRunnable;
@@ -38,7 +36,6 @@ export class CPUSampler extends Object implements Closeable {
     // private samplerData: CPUSampler$MutableSamplerData[];
     // private samplerExecutionService: ScheduledExecutorService;
     // private samplerFuture: Future<Object>;
-    addProcessSampleListener(listener: (param0: TruffleContext) => void): void;
     // private cleanup(): void;
     clearData(): void;
     close(): void;
@@ -46,7 +43,6 @@ export class CPUSampler extends Object implements Closeable {
     // private enterChangeConfig(): void;
     getData(): JavaMap<TruffleContext, CPUSamplerData>;
     getDataList(): CPUSamplerData[];
-    getDelay(): number;
     getFilter(): SourceSectionFilter;
     getPeriod(): number;
     getStackLimit(): number;

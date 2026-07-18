@@ -6,14 +6,13 @@ import type { FieldPosition } from '../../../../../../../java/text/FieldPosition
 import type { ParsePosition } from '../../../../../../../java/text/ParsePosition.d.ts'
 import type { Locale } from '../../../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Cloneable } from '../../../../../../../java/lang/Cloneable.d.ts'
 import type { Number } from '../../../../../../../java/lang/Number.d.ts'
 import type { BigDecimal as BigDecimal_2 } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/math/BigDecimal.d.ts'
 import type { NumberFormat } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/NumberFormat.d.ts'
 import type { NumberFormat$NumberFormatFactory } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/NumberFormat$NumberFormatFactory.d.ts'
 import type { CurrencyAmount } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/CurrencyAmount.d.ts'
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
-export class DateNumberFormat extends NumberFormat implements Cloneable {
+export class DateNumberFormat extends NumberFormat {
     static ACCOUNTINGCURRENCYSTYLE: number;
     static CASHCURRENCYSTYLE: number;
     static CURRENCYSTYLE: number;
@@ -62,7 +61,7 @@ export class DateNumberFormat extends NumberFormat implements Cloneable {
     // private minusSign: string;
     // private positiveOnly: boolean;
     readonly zeroDigit: string;
-    clone(): DateNumberFormat;
+    clone(): Object;
     equals(obj: Object | null): boolean;
     format(number: BigDecimal): string;
     format(number: BigDecimal, toAppendTo: StringBuffer, pos: FieldPosition): StringBuffer;

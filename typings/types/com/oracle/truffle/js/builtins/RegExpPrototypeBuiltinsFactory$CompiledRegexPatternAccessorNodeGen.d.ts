@@ -1,8 +1,6 @@
 import type { VirtualFrame } from '../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { TruffleString$FromJavaStringNode } from '../../../../../com/oracle/truffle/api/strings/TruffleString$FromJavaStringNode.d.ts'
-import type { TruffleString$SwitchEncodingNode } from '../../../../../com/oracle/truffle/api/strings/TruffleString$SwitchEncodingNode.d.ts'
 import type { RegExpPrototypeBuiltins$CompiledRegexPatternAccessor } from '../../../../../com/oracle/truffle/js/builtins/RegExpPrototypeBuiltins$CompiledRegexPatternAccessor.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
@@ -24,8 +22,8 @@ export class RegExpPrototypeBuiltinsFactory$CompiledRegexPatternAccessorNodeGen 
     private constructor(context: JSContext, builtin: JSBuiltin, arguments: JavaScriptNode[])
     // private arguments0_: JavaScriptNode;
     // private regExp_readPatternNode__field1_: Node;
-    // private regExp_readPatternNode__field2_: TruffleString$SwitchEncodingNode;
-    // private regExp_readPatternNode__field3_: TruffleString$FromJavaStringNode;
+    // private regExp_readPatternNode__field2_: Node;
+    // private regExp_readPatternNode__field3_: Node;
     // private regExp_readPatternNode__field4_: Node;
     // private state_0_: number;
     execute(frameValue: VirtualFrame): Object;

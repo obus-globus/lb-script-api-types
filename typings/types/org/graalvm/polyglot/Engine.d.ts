@@ -1,12 +1,10 @@
 import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { AutoCloseable } from '../../../java/lang/AutoCloseable.d.ts'
-import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
 import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { WordPointer } from '../../../org/graalvm/nativeimage/c/type/WordPointer.d.ts'
 import type { OptionDescriptor } from '../../../org/graalvm/options/OptionDescriptor.d.ts'
 import type { Engine$Builder } from '../../../org/graalvm/polyglot/Engine$Builder.d.ts'
-import type { Engine$CancellationCallback } from '../../../org/graalvm/polyglot/Engine$CancellationCallback.d.ts'
 import type { Instrument } from '../../../org/graalvm/polyglot/Instrument.d.ts'
 import type { Language } from '../../../org/graalvm/polyglot/Language.d.ts'
 import type { Source } from '../../../org/graalvm/polyglot/Source.d.ts'
@@ -18,7 +16,6 @@ export class Engine extends Object implements AutoCloseable {
     static findHome(): Path;
     static newBuilder(): Engine$Builder;
     static newBuilder(...parampermittedLanguages: string[]): Engine$Builder;
-    static supportsCompilation(): boolean;
     constructor(dispatch: AbstractPolyglotImpl$AbstractEngineDispatch, receiver: Object)
     // private creatorEngine: Engine;
     // private currentAPI: Engine;
@@ -32,7 +29,6 @@ export class Engine extends Object implements AutoCloseable {
     getLanguages(): JavaMap<string, Language>;
     getOptions(): OptionDescriptor[];
     getVersion(): string;
-    persistCache(callback: () => boolean): ByteBuffer;
     storeCache(targetFile: Path): boolean;
     storeCache(targetFile: Path, cancelledWord: WordPointer): boolean;
 }

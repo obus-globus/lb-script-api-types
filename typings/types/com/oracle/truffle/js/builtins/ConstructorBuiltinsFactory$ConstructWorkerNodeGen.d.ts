@@ -6,6 +6,7 @@ import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
 import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
+import type { JSObject } from '../../../../../com/oracle/truffle/js/runtime/objects/JSObject.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ConstructorBuiltinsFactory$ConstructWorkerNodeGen extends ConstructorBuiltins$ConstructWorkerNode {
@@ -23,6 +24,8 @@ export class ConstructorBuiltinsFactory$ConstructWorkerNodeGen extends Construct
     // private arguments0_: JavaScriptNode;
     // private arguments1_: JavaScriptNode;
     // private arguments2_: JavaScriptNode;
+    // private state_0_: number;
     execute(frameValue: VirtualFrame): Object;
+    // private executeAndSpecialize(arguments0Value: Object, arguments1Value: Object, arguments2Value: Object): JSObject;
     getArguments(): JavaScriptNode[];
 }

@@ -1,5 +1,6 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { ClassLoader } from '../../../../java/lang/ClassLoader.d.ts'
+import type { Error } from '../../../../java/lang/Error.d.ts'
 import type { RuntimeException } from '../../../../java/lang/RuntimeException.d.ts'
 import type { StackTraceElement } from '../../../../java/lang/StackTraceElement.d.ts'
 import type { Type } from '../../../../java/lang/reflect/Type.d.ts'
@@ -17,19 +18,26 @@ export abstract class AbstractPolyglotImpl$AbstractHostLanguageService extends A
     createHostAdapter(hostContextObject: Object, types: Object[], classOverrides: Object): Object;
     findDynamicClass(context: Object, classValue: string): Object;
     findNextGuestToHostStackTraceElement(firstElement: StackTraceElement, hostStack: StackTraceElement[], nextElementIndex: number): number;
-    findNextHostToGuestStackTraceElement(firstElement: StackTraceElement, hostStack: StackTraceElement[], nextElementIndex: number): number;
     findStaticClass(context: Object, classValue: string): Object;
     hostExit(exitCode: number): void;
     initializeHostContext(internalContext: Object, context: Object, hostAccess: Object, cl: ClassLoader, clFilter: (param0: string) => boolean, hostCLAllowed: boolean, hostLookupAllowed: boolean): void;
+    isHostException(exception: Object): boolean;
+    isHostFunction(obj: Object): boolean;
+    isHostObject(obj: Object): boolean;
     isHostProxy(value: Object): boolean;
     isHostStackTraceVisibleToGuest(): boolean;
+    isHostSymbol(obj: Object): boolean;
+    isHostValue(value: Object): boolean;
     migrateValue(hostContext: Object, value: Object, valueContext: Object): Object;
     pin(receiver: Object): void;
     release(): void;
     throwHostLanguageException(message: string): void;
-    toGuestValue(node: Object, hostValue: Object, asValue: boolean): Object;
+    toGuestValue(context: Object, hostValue: Object, asValue: boolean): Object;
     toHostException(hostContext: Object, exception: Throwable): RuntimeException;
     toHostObject(context: Object, value: Object): Object;
+    toHostResourceError(hostException: Throwable): Error;
     toHostType<T extends unknown>(hostNode: Object, targetNode: Object, hostContext: Object, value: Object, targetType: Class<T>, genericType: Type): T;
+    unboxHostException(hostValue: Throwable): Throwable;
+    unboxHostObject(hostValue: Object): Object;
     unboxProxyObject(hostValue: Object): Object;
 }

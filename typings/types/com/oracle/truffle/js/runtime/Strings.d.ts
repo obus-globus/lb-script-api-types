@@ -36,6 +36,7 @@ import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSC
 import type { BigInteger } from '../../../../../java/math/BigInteger.d.ts'
 import type { Locale } from '../../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Number } from '../../../../../java/lang/Number.d.ts'
 export class Strings extends Object {
     static $_ARG: TruffleString;
     static $_ERR: TruffleString;
@@ -67,7 +68,6 @@ export class Strings extends Object {
     static ARGUMENTS: TruffleString;
     static ARRAY_PAREN_OPEN: TruffleString;
     static ASYNC: TruffleString;
-    static ASYNC_DISPOSE: TruffleString;
     static ASYNC_ITERATOR: TruffleString;
     static ASYNC_PROMISE_ALL_BEGIN: TruffleString;
     static ASYNC_SPC: TruffleString;
@@ -99,7 +99,6 @@ export class Strings extends Object {
     static BRACKET_OPEN_2: TruffleString;
     static BRACKET_SYMBOL_DOT: TruffleString;
     static BROADCAST: TruffleString;
-    static BYTES: TruffleString;
     static CALENDAR: TruffleString;
     static CALL: TruffleString;
     static CALLEE: TruffleString;
@@ -135,7 +134,6 @@ export class Strings extends Object {
     static DELETE: TruffleString;
     static DETACH_ARRAY_BUFFER: TruffleString;
     static DIRNAME_VAR_NAME: TruffleString;
-    static DISPOSE: TruffleString;
     static DOLLAR_ENV: TruffleString;
     static DONE: TruffleString;
     static DOT: TruffleString;
@@ -159,7 +157,6 @@ export class Strings extends Object {
     static ENV_PROPERTY_NAME: TruffleString;
     static EQUALS_DOUBLE_QUOTE: TruffleString;
     static ERA: TruffleString;
-    static ERROR: TruffleString;
     static EVAL: TruffleString;
     static EVAL_FILE: TruffleString;
     static EVAL_OBJ_FILE_NAME: TruffleString;
@@ -212,7 +209,6 @@ export class Strings extends Object {
     static HTML_QUOT: TruffleString;
     static I: TruffleString;
     static ID_PROPERTY_NAME: TruffleString;
-    static IMPORTS_PROPERTY_NAME: TruffleString;
     static IMPORT_SCRIPT_ENGINE_GLOBAL_BINDINGS: TruffleString;
     static INCLUDES: TruffleString;
     static INDEX: TruffleString;
@@ -251,14 +247,12 @@ export class Strings extends Object {
     static LOAD_WITH_NEW_GLOBAL: TruffleString;
     static LOG_10_E: TruffleString;
     static LOG_2_E: TruffleString;
-    static LONGEST: TruffleString;
     static MATCH: TruffleString;
     static MATCH_ALL: TruffleString;
     static MAXIMUM: TruffleString;
     static MEMORY: TruffleString;
     static MESSAGE: TruffleString;
     static MINUTE: TruffleString;
-    static MODE: TruffleString;
     static MODULE: TruffleString;
     static MODULE_PROPERTY_NAME: TruffleString;
     static MONOTONIC_NOW: TruffleString;
@@ -288,8 +282,6 @@ export class Strings extends Object {
     static ORG: TruffleString;
     static PACKAGE_JSON_MAIN_PROPERTY_NAME: TruffleString;
     static PACKAGE_JSON_TYPE_PROPERTY_NAME: TruffleString;
-    static PADDING: TruffleString;
-    static PARAMETERS: TruffleString;
     static PARENS_THIS: TruffleString;
     static PAREN_CLOSE: TruffleString;
     static PAREN_OPEN: TruffleString;
@@ -341,7 +333,6 @@ export class Strings extends Object {
     static SET_SPC: TruffleString;
     static SET_UNHANDLED_PROMISE_REJECTION_HANDLER: TruffleString;
     static SHARED: TruffleString;
-    static SHORTEST: TruffleString;
     static SINGLE_QUOTE: TruffleString;
     static SIZE: TruffleString;
     static SLASH: TruffleString;
@@ -358,14 +349,12 @@ export class Strings extends Object {
     static START: TruffleString;
     static STATIC: TruffleString;
     static STATUS: TruffleString;
-    static STRICT: TruffleString;
     static STRIKE: TruffleString;
     static STRING: TruffleString;
     static STRING_MAX_LENGTH: TruffleString;
     static SUB: TruffleString;
     static SUP: TruffleString;
     static SUPER: TruffleString;
-    static SUPPRESSED: TruffleString;
     static SWITCH: TruffleString;
     static SYMBOL: TruffleString;
     static SYMBOL_AMPERSAND: TruffleString;
@@ -382,9 +371,7 @@ export class Strings extends Object {
     static SYMBOL_STAR_STAR: TruffleString;
     static SYMBOL_TILDE: TruffleString;
     static TABLE: TruffleString;
-    static TAG: TruffleString;
     static TEST: TruffleString;
-    static TEXT: TruffleString;
     static THEN: TruffleString;
     static THIS: TruffleString;
     static THROW: TruffleString;
@@ -410,7 +397,6 @@ export class Strings extends Object {
     static TO_STRING_VALUE_UNDEFINED: TruffleString;
     static TO_TEMPORAL_INSTANT: TruffleString;
     static TO_UTC_STRING: TruffleString;
-    static TRACE_STACK: TruffleString;
     static TRUE: TruffleString;
     static TT: TruffleString;
     static TYPE: TruffleString;
@@ -472,6 +458,7 @@ export class Strings extends Object {
     static builderCreate(): TruffleStringBuilderUTF16;
     static builderCreate(paramcapacity: number): TruffleStringBuilderUTF16;
     static builderLength(paramsb: TruffleStringBuilderUTF16): number;
+    static builderToJavaString(paramsb: TruffleStringBuilderUTF16): string;
     static builderToString(paramnode: TruffleStringBuilder$ToStringNode, paramsb: TruffleStringBuilderUTF16): TruffleString;
     static builderToString(paramsb: TruffleStringBuilderUTF16): TruffleString;
     static charAt(paramreadRawNode: TruffleString$ReadCharUTF16Node, params: TruffleString, parami: number): string;
@@ -481,29 +468,31 @@ export class Strings extends Object {
     static compareTo(parama: TruffleString, paramb: TruffleString): number;
     static concat(paramnode: TruffleString$ConcatNode, params1: TruffleString, params2: TruffleString): TruffleString;
     static concat(params1: TruffleString, params2: TruffleString): TruffleString;
-    static concatAll(parama: TruffleString, paramb: TruffleString, paramc: TruffleString): TruffleString;
     static concatAll(params: TruffleString, ...paramconcat: TruffleString[]): TruffleString;
     static constant(params: string): TruffleString;
     static contains(params: TruffleString, paramc: string): boolean;
+    static convertJavaStringArray(paramarray: string[]): TruffleString[];
     static endsWith(paramregionEqualsNode: TruffleString$RegionEqualByteIndexNode, params1: TruffleString, params2: TruffleString): boolean;
     static endsWith(params1: TruffleString, params2: TruffleString): boolean;
     static equals(paramnode: TruffleString$EqualNode, params1: TruffleString, params2: TruffleString): boolean;
     static equals(params1: TruffleString, params2: TruffleString): boolean;
     static flatten(parammaterializeNode: TruffleString$MaterializeNode, paramvalue: TruffleString): TruffleString;
     static format(paramformatString: string, ...paramargs: Object[]): TruffleString;
-    static fromBigInt(paramfromJavaStringNode: TruffleString$FromJavaStringNode, parambi: BigInt): TruffleString;
-    static fromBigInt(paramfromJavaStringNode: TruffleString$FromJavaStringNode, parambi: BigInt, paramradix: number): TruffleString;
     static fromBigInt(parambi: BigInt): TruffleString;
+    static fromBigInt(parambi: BigInt, paramradix: number): TruffleString;
     static fromBoolean(paramb: boolean): TruffleString;
+    static fromCharArray(paramchars: string[], paramfromIndex: number, paramlength: number): TruffleString;
     static fromCharArray(paramnode: TruffleString$FromCharArrayUTF16Node, paramchars: string[]): TruffleString;
     static fromCharArray(paramnode: TruffleString$FromCharArrayUTF16Node, paramchars: string[], paramfromIndex: number, paramlength: number): TruffleString;
     static fromCodePoint(paramnode: TruffleString$FromCodePointNode, paramc: number): TruffleString;
+    static fromDouble(paramd: number): TruffleString;
     static fromInt(paramintValue: number): TruffleString;
     static fromJavaString(paramnode: TruffleString$FromJavaStringNode, paramstr: string): TruffleString;
     static fromJavaString(paramstr: string): TruffleString;
-    static fromJavaStringArray(paramstrings: string[]): TruffleString[];
+    static fromJavaStringArray(...paramstrings: string[]): TruffleString[];
     static fromLong(paramnode: TruffleString$FromLongNode, paramlongValue: number): TruffleString;
     static fromLong(paramlongValue: number): TruffleString;
+    static fromNumber(paramnumber: Number): TruffleString;
     static fromObject(paramo: Object): TruffleString;
     static indexOf(paramnode: TruffleString$ByteIndexOfCodePointNode, params: TruffleString, paramcodepoint: number): number;
     static indexOf(paramnode: TruffleString$ByteIndexOfCodePointNode, params: TruffleString, paramcodepoint: number, paramfromIndex: number): number;
@@ -534,7 +523,6 @@ export class Strings extends Object {
     static lazyTrim(params: TruffleString): TruffleString;
     static length(params: TruffleString): number;
     static lengthOfCodePointAt(paramnode: TruffleString$ByteLengthOfCodePointNode, params: TruffleString, parami: number): number;
-    static parseBigInt(paramtoJavaString: TruffleString$ToJavaStringNode, params: TruffleString): BigInt;
     static parseBigInt(params: TruffleString): BigInt;
     static parseBigInteger(params: TruffleString, paramradix: number): BigInteger;
     static parseDouble(paramnode: TruffleString$ParseDoubleNode, params: TruffleString): number;

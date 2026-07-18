@@ -1,6 +1,5 @@
 import type { VirtualFrame } from '../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
-import type { InteropLibrary } from '../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { DataViewPrototypeBuiltins$DataViewGetNode } from '../../../../../com/oracle/truffle/js/builtins/DataViewPrototypeBuiltins$DataViewGetNode.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
@@ -9,26 +8,25 @@ import type { JSToIndexNode } from '../../../../../com/oracle/truffle/js/nodes/c
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
 import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
-import type { TypedArrayFactory } from '../../../../../com/oracle/truffle/js/runtime/array/TypedArrayFactory.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DataViewPrototypeBuiltinsFactory$DataViewGetNodeGen extends DataViewPrototypeBuiltins$DataViewGetNode {
     static ARGUMENTS: string;
     static cloneUninitialized<T extends JavaScriptNode>(paramnode: T, parammaterializedTags: Class<Tag>[]): T;
     static cloneUninitialized<T extends JavaScriptNode>(paramnodeArray: T[], parammaterializedTags: Class<Tag>[]): T[];
-    static create(paramcontext: JSContext, parambuiltin: JSBuiltin, paramtypedArrayFactory: TypedArrayFactory, paramarguments: JavaScriptNode[]): DataViewPrototypeBuiltins$DataViewGetNode;
+    static create(paramcontext: JSContext, parambuiltin: JSBuiltin, paramarguments: JavaScriptNode[]): DataViewPrototypeBuiltins$DataViewGetNode;
     static createBuiltin(paramctx: JSContext, parambuiltin: JSBuiltin, paramconstruct: boolean, paramnewTarget: boolean): JSBuiltinNode;
     static findBlockScopeNode(paramnode: Node): Node;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
-    private constructor(context: JSContext, builtin: JSBuiltin, typedArrayFactory: TypedArrayFactory, arguments: JavaScriptNode[])
+    private constructor(context: JSContext, builtin: JSBuiltin, arguments: JavaScriptNode[])
     // private arguments0_: JavaScriptNode;
     // private arguments1_: JavaScriptNode;
     // private arguments2_: JavaScriptNode;
     // private dataView_bufferTypeProfile__field1_: Class<Object>;
-    // private dataView_getBufferElement__field1_: InteropLibrary;
+    // private dataView_getBufferElement__field1_: Node;
     // private dataView_getViewByteLengthNode_: GetViewByteLengthNode;
     // private dataView_toBooleanNode__field1_: Node;
     // private dataView_toIndexNode_: JSToIndexNode;

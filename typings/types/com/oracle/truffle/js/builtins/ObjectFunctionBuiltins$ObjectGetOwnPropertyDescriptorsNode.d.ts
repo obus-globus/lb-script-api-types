@@ -1,10 +1,9 @@
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { InteropLibrary } from '../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { DynamicObject$PutNode } from '../../../../../com/oracle/truffle/api/object/DynamicObject$PutNode.d.ts'
+import type { DynamicObjectLibrary } from '../../../../../com/oracle/truffle/api/object/DynamicObjectLibrary.d.ts'
 import type { InlinedBranchProfile } from '../../../../../com/oracle/truffle/api/profiles/InlinedBranchProfile.d.ts'
 import type { TruffleString$FromJavaStringNode } from '../../../../../com/oracle/truffle/api/strings/TruffleString$FromJavaStringNode.d.ts'
-import type { TruffleString$FromLongNode } from '../../../../../com/oracle/truffle/api/strings/TruffleString$FromLongNode.d.ts'
 import type { ObjectPrototypeBuiltins$ObjectOperation } from '../../../../../com/oracle/truffle/js/builtins/ObjectPrototypeBuiltins$ObjectOperation.d.ts'
 import type { ListGetNode } from '../../../../../com/oracle/truffle/js/builtins/helper/ListGetNode.d.ts'
 import type { ListSizeNode } from '../../../../../com/oracle/truffle/js/builtins/helper/ListSizeNode.d.ts'
@@ -34,6 +33,6 @@ export abstract class ObjectFunctionBuiltins$ObjectGetOwnPropertyDescriptorsNode
     createRecursive(): ObjectFunctionBuiltins$ObjectGetOwnPropertyDescriptorsNode;
     executeEvaluated(obj: Object): JSDynamicObject;
     getDefault(thisObj: Object, recursive: ObjectFunctionBuiltins$ObjectGetOwnPropertyDescriptorsNode): JSDynamicObject;
-    getForeignObject(thisObj: Object, node: Node, fromPropertyDescriptorNode: FromPropertyDescriptorNode, putPropDescNode: DynamicObject$PutNode, interop: InteropLibrary, members: InteropLibrary, toJSType: ImportValueNode, fromJavaString: TruffleString$FromJavaStringNode, fromLong: TruffleString$FromLongNode, errorBranch: InlinedBranchProfile): JSDynamicObject;
-    getJSObject(thisObj: JSObject, fromPropertyDescriptorNode: FromPropertyDescriptorNode, putPropDescNode: DynamicObject$PutNode, getOwnPropertyNode: JSGetOwnPropertyNode, listSize: ListSizeNode, listGet: ListGetNode, classProfile: JSClassProfile): JSDynamicObject;
+    getForeignObject(thisObj: Object, node: Node, fromPropertyDescriptorNode: FromPropertyDescriptorNode, putPropDescNode: DynamicObjectLibrary, interop: InteropLibrary, members: InteropLibrary, toJSType: ImportValueNode, fromJavaString: TruffleString$FromJavaStringNode, errorBranch: InlinedBranchProfile): JSDynamicObject;
+    getJSObject(thisObj: JSObject, fromPropertyDescriptorNode: FromPropertyDescriptorNode, putPropDescNode: DynamicObjectLibrary, getOwnPropertyNode: JSGetOwnPropertyNode, listSize: ListSizeNode, listGet: ListGetNode, classProfile: JSClassProfile): JSDynamicObject;
 }

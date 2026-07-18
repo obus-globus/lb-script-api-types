@@ -7,8 +7,8 @@ import type { BytesTrie$Entry } from '../../../../../../../../org/graalvm/shadow
 import type { ULocale } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
 import type { ULocale$Minimize } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale$Minimize.d.ts'
 export class LikelySubtags extends Object {
+    static INSTANCE: LikelySubtags;
     static SKIP_SCRIPT: number;
-    static getInstance(): LikelySubtags;
     private constructor(data: LikelySubtags$Data)
     // private defaultLsrIndex: number;
     // private languageAliases: JavaMap<string, string>;

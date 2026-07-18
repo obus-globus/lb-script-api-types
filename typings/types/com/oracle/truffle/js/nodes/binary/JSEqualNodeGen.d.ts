@@ -42,12 +42,12 @@ export class JSEqualNodeGen extends JSEqualNode {
     // private executeBoolean_boolean10(state_0__: number, state_1: number, frameValue: VirtualFrame): boolean;
     // private executeBoolean_boolean8(state_0__: number, state_1: number, frameValue: VirtualFrame): boolean;
     // private executeBoolean_boolean_boolean4(state_0__: number, state_1: number, frameValue: VirtualFrame): boolean;
-    // private executeBoolean_boolean_double6(state_0__: number, state_1__: number, frameValue: VirtualFrame): boolean;
+    // private executeBoolean_boolean_double6(state_0__: number, state_1: number, frameValue: VirtualFrame): boolean;
     // private executeBoolean_boolean_int5(state_0__: number, state_1: number, frameValue: VirtualFrame): boolean;
     // private executeBoolean_double7(state_0__: number, state_1__: number, frameValue: VirtualFrame): boolean;
-    // private executeBoolean_double9(state_0__: number, state_1__: number, frameValue: VirtualFrame): boolean;
-    // private executeBoolean_double_boolean3(state_0__: number, state_1__: number, frameValue: VirtualFrame): boolean;
-    // private executeBoolean_double_double2(state_0__: number, state_1__: number, frameValue: VirtualFrame): boolean;
+    // private executeBoolean_double9(state_0__: number, state_1: number, frameValue: VirtualFrame): boolean;
+    // private executeBoolean_double_boolean3(state_0__: number, state_1: number, frameValue: VirtualFrame): boolean;
+    // private executeBoolean_double_double2(state_0__: number, state_1: number, frameValue: VirtualFrame): boolean;
     // private executeBoolean_generic13(state_0__: number, state_1__: number, frameValue: VirtualFrame): boolean;
     // private executeBoolean_int11(state_0__: number, state_1: number, frameValue: VirtualFrame): boolean;
     // private executeBoolean_int12(state_0__: number, state_1: number, frameValue: VirtualFrame): boolean;

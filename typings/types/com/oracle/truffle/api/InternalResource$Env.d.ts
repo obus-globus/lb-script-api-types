@@ -13,15 +13,14 @@ import type { BooleanSupplier } from '../../../../java/util/function/BooleanSupp
 import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class InternalResource$Env extends Object {
-    constructor(resource: InternalResource, contextPreinitializationCheck: () => boolean, forNativeImageBuild: boolean)
+    constructor(resource: InternalResource, contextPreinitializationCheck: () => boolean)
     // private contextPreinitializationCheck: () => boolean;
-    // private forNativeImageBuild: boolean;
     // private owner: Module;
     // private resourceClass: Class<InternalResource>;
     // private copyResource(source: Path, target: Path, attrs: PosixFilePermission[]): void;
     getCPUArchitecture(): InternalResource$CPUArchitecture;
     getOS(): InternalResource$OS;
-    // private getResourceStream(resourcePath: Path): InputStream;
+    // private getResourceStream(resourceName: string): InputStream;
     inContextPreinitialization(): boolean;
     inNativeImageBuild(): boolean;
     // private loadFileList(source: Path): JavaMap<any, any>;

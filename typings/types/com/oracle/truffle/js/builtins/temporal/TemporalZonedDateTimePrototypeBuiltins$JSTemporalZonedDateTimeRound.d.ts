@@ -9,7 +9,7 @@ import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nod
 import type { JSBuiltin } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
 import type { GetRoundingIncrementOptionNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/GetRoundingIncrementOptionNode.d.ts'
-import type { GetTemporalUnitValuedOptionNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/GetTemporalUnitValuedOptionNode.d.ts'
+import type { GetTemporalUnitNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/GetTemporalUnitNode.d.ts'
 import type { TemporalGetOptionNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/TemporalGetOptionNode.d.ts'
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
 import type { JSTemporalZonedDateTimeObject } from '../../../../../../com/oracle/truffle/js/runtime/builtins/temporal/JSTemporalZonedDateTimeObject.d.ts'
@@ -29,5 +29,5 @@ export abstract class TemporalZonedDateTimePrototypeBuiltins$JSTemporalZonedDate
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
-    round(zonedDateTime: JSTemporalZonedDateTimeObject, roundToParam: Object, equalNode: TruffleString$EqualNode, getOptionNode: TemporalGetOptionNode, getSmallestUnit: GetTemporalUnitValuedOptionNode, getRoundingIncrementOption: GetRoundingIncrementOptionNode, errorBranch: InlinedBranchProfile, optionUndefined: InlinedConditionProfile): JSDynamicObject;
+    round(zonedDateTime: JSTemporalZonedDateTimeObject, roundToParam: Object, equalNode: TruffleString$EqualNode, getOptionNode: TemporalGetOptionNode, getSmallestUnit: GetTemporalUnitNode, getRoundingIncrementOption: GetRoundingIncrementOptionNode, errorBranch: InlinedBranchProfile, optionUndefined: InlinedConditionProfile): JSDynamicObject;
 }

@@ -23,5 +23,7 @@ export class DateTimeFormatPrototypeBuiltinsFactory$JSDateTimeFormatResolvedOpti
     // private arguments0_: JavaScriptNode;
     // private state_0_: number;
     execute(frameValue: VirtualFrame): Object;
+    // private executeAndSpecialize(arguments0Value: Object): Object;
+    // private fallbackGuard_(state_0: number, arguments0Value: Object): boolean;
     getArguments(): JavaScriptNode[];
 }

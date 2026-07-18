@@ -23,10 +23,8 @@ import type { Thread$UncaughtExceptionHandler } from '../../../../java/lang/Thre
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
-import type { Value } from '../../../../org/graalvm/polyglot/Value.d.ts'
 import type { AbstractPolyglotImpl$APIAccess } from '../../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl$APIAccess.d.ts'
 export class PolyglotLanguageContext extends Object implements PolyglotImpl$VMObject {
-    static toGuestValue(paramnode: Node, paramreceiver: Object): Object;
     constructor(context: PolyglotContextImpl, language: PolyglotLanguage)
     // private context: PolyglotContextImpl;
     // private created: boolean;
@@ -42,7 +40,7 @@ export class PolyglotLanguageContext extends Object implements PolyglotImpl$VMOb
     // private language: PolyglotLanguage;
     // private languageServices: Object[];
     // private lazy: PolyglotLanguageContext$Lazy;
-    asValue(guestValue: Object): Value;
+    asValue(guestValue: Object): Object;
     checkAccess(accessingLanguage: PolyglotLanguage): void;
     // private checkThreadAccess(localEnv: TruffleLanguage$Env): void;
     close(): void;
@@ -81,6 +79,7 @@ export class PolyglotLanguageContext extends Object implements PolyglotImpl$VMOb
     patch(newConfig: PolyglotContextConfig): boolean;
     patchInstance(hostInstance: PolyglotLanguageInstance): void;
     requireEnv(): TruffleLanguage$Env;
+    toGuestValue(node: Node, receiver: Object): Object;
     toHostValues(values: Object[]): Object[];
     toHostValues(values: Object[], startIndex: number): Object[];
     toString(): string;

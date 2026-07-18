@@ -29,7 +29,6 @@ export abstract class InteropLibrary extends Library {
     asDouble(receiver: Object): number;
     asDuration(receiver: Object): Duration;
     asFloat(receiver: Object): number;
-    asHostObject(receiver: Object): Object;
     asInstant(receiver: Object): Instant;
     asInt(receiver: Object): number;
     asLong(receiver: Object): number;
@@ -50,7 +49,6 @@ export abstract class InteropLibrary extends Library {
     fitsInShort(receiver: Object): boolean;
     getArraySize(receiver: Object): number;
     getBufferSize(receiver: Object): number;
-    getBytecodeIndex(receiver: Object): number;
     getDeclaringMetaObject(receiver: Object): Object;
     getExceptionCause(receiver: Object): Object;
     getExceptionExitStatus(receiver: Object): number;
@@ -65,8 +63,6 @@ export abstract class InteropLibrary extends Library {
     getIterator(receiver: Object): Object;
     getIteratorNextElement(receiver: Object): Object;
     getLanguage(receiver: Object): Class<TruffleLanguage<Object>>;
-    getLanguageId(receiver: Object): string;
-    getLanguageLegacy(receiver: Object): Class<TruffleLanguage<Object>>;
     getMembers(receiver: Object): Object;
     getMembers(receiver: Object, includeInternal: boolean): Object;
     getMetaObject(receiver: Object): Object;
@@ -75,10 +71,8 @@ export abstract class InteropLibrary extends Library {
     getMetaSimpleName(metaObject: Object): Object;
     getScopeParent(receiver: Object): Object;
     getSourceLocation(receiver: Object): SourceSection;
-    getStaticScope(receiver: Object): Object;
     hasArrayElements(receiver: Object): boolean;
     hasBufferElements(receiver: Object): boolean;
-    hasBytecodeIndex(receiver: Object): boolean;
     hasDeclaringMetaObject(receiver: Object): boolean;
     hasExceptionCause(receiver: Object): boolean;
     hasExceptionMessage(receiver: Object): boolean;
@@ -89,8 +83,6 @@ export abstract class InteropLibrary extends Library {
     hasIterator(receiver: Object): boolean;
     hasIteratorNextElement(receiver: Object): boolean;
     hasLanguage(receiver: Object): boolean;
-    hasLanguageId(receiver: Object): boolean;
-    hasLanguageLegacy(receiver: Object): boolean;
     hasMemberReadSideEffects(receiver: Object, member: string): boolean;
     hasMemberWriteSideEffects(receiver: Object, member: string): boolean;
     hasMembers(receiver: Object): boolean;
@@ -98,7 +90,6 @@ export abstract class InteropLibrary extends Library {
     hasMetaParents(receiver: Object): boolean;
     hasScopeParent(receiver: Object): boolean;
     hasSourceLocation(receiver: Object): boolean;
-    hasStaticScope(receiver: Object): boolean;
     identityHashCode(receiver: Object): number;
     instantiate(receiver: Object, ...arguments: Object[]): Object;
     invokeMember(receiver: Object, member: string, ...arguments: Object[]): Object;
@@ -121,12 +112,10 @@ export abstract class InteropLibrary extends Library {
     isHashEntryReadable(receiver: Object, key: Object): boolean;
     isHashEntryRemovable(receiver: Object, key: Object): boolean;
     isHashEntryWritable(receiver: Object, key: Object): boolean;
-    isHostObject(receiver: Object): boolean;
     isIdentical(receiver: Object, other: Object, otherInterop: InteropLibrary): boolean;
     isIdenticalOrUndefined(receiver: Object, other: Object): TriState;
     isInstant(receiver: Object): boolean;
     isInstantiable(receiver: Object): boolean;
-    isInternal(receiver: Object): boolean;
     isIterator(receiver: Object): boolean;
     isMemberExisting(receiver: Object, member: string): boolean;
     isMemberInsertable(receiver: Object, member: string): boolean;

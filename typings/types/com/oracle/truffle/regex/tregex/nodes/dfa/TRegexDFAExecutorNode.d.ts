@@ -26,20 +26,20 @@ export class TRegexDFAExecutorNode extends TRegexExecutorNode {
     static LATIN1_PROBABILITY: number;
     static NO_MATCH: number;
     static inputIncRaw(paramindex: number, paramoffset: number, paramforward: boolean): number;
-    constructor(source: RegexSource, props: TRegexDFAExecutorProperties, numberOfCaptureGroups: number, maxNumberOfNFAStates: number, indexOfParameters: TruffleString$CodePointSet[], states: DFAAbstractNode[], encodedMatchers: number[], debugRecorder: TRegexDFAExecutorDebugRecorder, innerLiteralPrefixMatcher: TRegexDFAExecutorNode, counterDataBuilder: CounterTrackerData$Builder, counterTrackers: CounterTracker[])
+    constructor(source: RegexSource, props: TRegexDFAExecutorProperties, numberOfCaptureGroups: number, maxNumberOfNFAStates: number, indexOfParameters: TruffleString$CodePointSet[], states: DFAAbstractNode[], debugRecorder: TRegexDFAExecutorDebugRecorder, innerLiteralPrefixMatcher: TRegexDFAExecutorNode, counterDataBuilder: CounterTrackerData$Builder, counterTrackers: CounterTracker[], numberOfNFAStates: number, regressionTestMode: boolean)
+    constructor(source: RegexSource, props: TRegexDFAExecutorProperties, numberOfCaptureGroups: number, numberOfTransitions: number, maxNumberOfNFAStates: number, indexOfParameters: TruffleString$CodePointSet[], states: DFAAbstractNode[], cgResultOrder: number[], debugRecorder: TRegexDFAExecutorDebugRecorder, innerLiteralPrefixMatcher: TRegexDFAExecutorNode, counterDataBuilder: CounterTrackerData$Builder, counterTrackers: CounterTracker[], numberOfNFAStates: number, regressionTestMode: boolean)
     // private cgResultOrder: number[];
-    // private counterFixedDataSize: number;
-    // private counterIntArrayCount: number;
+    // private counterDataBuilder: CounterTrackerData$Builder;
     readonly counterTrackers: CounterTracker[];
     readonly debugRecorder: TRegexDFAExecutorDebugRecorder;
-    // private encodedMatchers: number[];
-    // private flags: number;
     // private indexOfNodes: TruffleString$ByteIndexOfCodePointSetNode[];
     // private indexOfParameters: TruffleString$CodePointSet[];
     // private indexOfStringNode: TruffleString$ByteIndexOfStringNode;
     // private innerLiteralPrefixMatcher: TRegexExecutorBaseNode;
     readonly maxNumberOfNFAStates: number;
-    // private minResultLength: number;
+    // private numberOfNFAStates: number;
+    // private props: TRegexDFAExecutorProperties;
+    // private regressionTestMode: boolean;
     // private states: DFAAbstractNode[];
     canFindStart(): boolean;
     // private createCGData(): DFACaptureGroupTrackingData;
@@ -57,6 +57,7 @@ export class TRegexDFAExecutorNode extends TRegexExecutorNode {
     getNodes(): DFAAbstractNode[];
     getNumberOfStates(): number;
     getPrefixLength(): number;
+    getProperties(): TRegexDFAExecutorProperties;
     // private initNextIndex(locals: TRegexDFAExecutorLocals): void;
     // private initialStateSuccessor(locals: TRegexDFAExecutorLocals, curState: DFAAbstractStateNode, successors: number[], i: number): number;
     isAnchored(): boolean;
@@ -65,12 +66,9 @@ export class TRegexDFAExecutorNode extends TRegexExecutorNode {
     isGenericCG(): boolean;
     isSearching(): boolean;
     isSimpleCG(): boolean;
-    isSimpleCGMustCopy(): boolean;
     isTrivial(): boolean;
     recordExecution(): boolean;
     // private resultLength(): number;
-    setSimpleCGMustCopy(simpleCGMustCopy: boolean): void;
     shallowCopy(): TRegexDFAExecutorNode;
-    tracksLastGroup(): boolean;
     writesCaptureGroups(): boolean;
 }

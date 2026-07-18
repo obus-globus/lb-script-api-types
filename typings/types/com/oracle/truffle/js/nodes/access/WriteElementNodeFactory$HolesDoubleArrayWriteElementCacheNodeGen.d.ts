@@ -10,5 +10,6 @@ export class WriteElementNodeFactory$HolesDoubleArrayWriteElementCacheNodeGen ex
     private constructor()
     // private state_0_: number;
     // private state_1_: number;
+    // private executeAndSpecialize(arg0Value: JSDynamicObject, arg1Value: ScriptArray, arg2Value: number, arg3Value: Object, arg4Value: WriteElementNode): boolean;
     executeSetArray(arg0Value: JSDynamicObject, arg1Value: ScriptArray, arg2Value: number, arg3Value: Object, arg4Value: WriteElementNode): boolean;
 }

@@ -8,7 +8,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Module extends Object {
     static DEFAULT_EXPORT_BINDING_NAME: TruffleString;
     static DEFAULT_NAME: TruffleString;
-    static DEFERRED_NAMESPACE_EXPORT_BINDING_NAME: TruffleString;
     static NAMESPACE_EXPORT_BINDING_NAME: TruffleString;
     static SOURCE_IMPORT_NAME: TruffleString;
     static STAR_NAME: TruffleString;

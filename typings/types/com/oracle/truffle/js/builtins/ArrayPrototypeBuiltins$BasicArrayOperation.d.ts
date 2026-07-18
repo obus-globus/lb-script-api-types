@@ -40,6 +40,5 @@ export abstract class ArrayPrototypeBuiltins$BasicArrayOperation extends JSBuilt
     reportLoopCount(count: number): void;
     toObject(target: Object): Object;
     toObjectOrValidateTypedArray(thisObj: Object): Object;
-    toObjectOrValidateTypedArray(thisObj: Object, writeAccess: boolean): Object;
-    validateTypedArray(obj: Object, writeAccess: boolean): JSTypedArrayObject;
+    validateTypedArray(obj: Object): JSTypedArrayObject;
 }

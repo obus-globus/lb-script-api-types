@@ -1,7 +1,7 @@
 import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { DynamicObject$PutNode } from '../../../../../../com/oracle/truffle/api/object/DynamicObject$PutNode.d.ts'
+import type { DynamicObjectLibrary } from '../../../../../../com/oracle/truffle/api/object/DynamicObjectLibrary.d.ts'
 import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { ObjectLiteralNode$ClassElementNode } from '../../../../../../com/oracle/truffle/js/nodes/access/ObjectLiteralNode$ClassElementNode.d.ts'
 import type { ObjectLiteralNode$ObjectLiteralMemberNode } from '../../../../../../com/oracle/truffle/js/nodes/access/ObjectLiteralNode$ObjectLiteralMemberNode.d.ts'
@@ -24,7 +24,7 @@ export abstract class ObjectLiteralNode$ComputedObjectLiteralDataMemberNode exte
     copyUninitialized(materializedTags: Class<Tag>[]): ObjectLiteralNode$ObjectLiteralMemberNode;
     defineClassElement(frame: VirtualFrame, homeObject: JSObject, classElement: ClassElementDefinitionRecord): void;
     doGeneric(frame: VirtualFrame, receiver: JSObject, homeObject: JSObject, realm: JSRealm): void;
-    doNoFieldNoFunctionDef(frame: VirtualFrame, receiver: JSObject, homeObject: JSObject, realm: JSRealm, putMember: DynamicObject$PutNode): void;
+    doNoFieldNoFunctionDef(frame: VirtualFrame, receiver: JSObject, homeObject: JSObject, realm: JSRealm, dynamicObject: DynamicObjectLibrary): void;
     evaluateClassElementDefinition(frame: VirtualFrame, homeObject: JSObject, realm: JSRealm, decorators: Object[]): ClassElementDefinitionRecord;
     // private evaluateKey(frame: VirtualFrame): Object;
     // private evaluateValue(frame: VirtualFrame, homeObject: JSObject, key: Object, realm: JSRealm): Object;

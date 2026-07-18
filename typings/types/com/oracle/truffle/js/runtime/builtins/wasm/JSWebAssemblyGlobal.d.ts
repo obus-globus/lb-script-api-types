@@ -10,7 +10,7 @@ import type { JSFunctionObject } from '../../../../../../../com/oracle/truffle/j
 import type { JSNonProxy } from '../../../../../../../com/oracle/truffle/js/runtime/builtins/JSNonProxy.d.ts'
 import type { PrototypeSupplier } from '../../../../../../../com/oracle/truffle/js/runtime/builtins/PrototypeSupplier.d.ts'
 import type { JSWebAssemblyGlobalObject } from '../../../../../../../com/oracle/truffle/js/runtime/builtins/wasm/JSWebAssemblyGlobalObject.d.ts'
-import type { WebAssemblyType } from '../../../../../../../com/oracle/truffle/js/runtime/builtins/wasm/WebAssemblyType.d.ts'
+import type { WebAssemblyValueType } from '../../../../../../../com/oracle/truffle/js/runtime/builtins/wasm/WebAssemblyValueType.d.ts'
 import type { JSDynamicObject } from '../../../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
 import type { PropertyDescriptor } from '../../../../../../../com/oracle/truffle/js/runtime/objects/PropertyDescriptor.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
@@ -21,8 +21,8 @@ export class JSWebAssemblyGlobal extends JSNonProxy implements JSConstructorFact
     static PROTOTYPE_NAME: TruffleString;
     static WEB_ASSEMBLY_GLOBAL: TruffleString;
     static checkProtoCycle(paramthisObj: JSDynamicObject, paramnewPrototype: JSDynamicObject): boolean;
-    static create(paramcontext: JSContext, paramrealm: JSRealm, paramproto: JSDynamicObject, paramwasmGlobal: Object, paramvalueType: WebAssemblyType, parammutable: boolean): JSWebAssemblyGlobalObject;
-    static create(paramcontext: JSContext, paramrealm: JSRealm, paramwasmGlobal: Object, paramvalueType: WebAssemblyType, parammutable: boolean): JSWebAssemblyGlobalObject;
+    static create(paramcontext: JSContext, paramrealm: JSRealm, paramproto: JSDynamicObject, paramwasmGlobal: Object, paramvalueType: WebAssemblyValueType, parammutable: boolean): JSWebAssemblyGlobalObject;
+    static create(paramcontext: JSContext, paramrealm: JSRealm, paramwasmGlobal: Object, paramvalueType: WebAssemblyValueType, parammutable: boolean): JSWebAssemblyGlobalObject;
     static createConstructor(paramrealm: JSRealm): JSConstructor;
     static filterOwnPropertyKeys(paramownPropertyKeys: Object[], paramstrings: boolean, paramsymbols: boolean): Object[];
     static isInstance(paramobject: JSDynamicObject, paramjsclass: JSClass): boolean;

@@ -21,6 +21,7 @@ export abstract class LocalePrototypeBuiltins$JSLocaleGetWeekInfoNode extends JS
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
     // private createFirstDayNode: CreateDataPropertyNode;
+    // private createMinimalDaysNode: CreateDataPropertyNode;
     // private createWeekendNode: CreateDataPropertyNode;
     doLocale(localeObject: JSLocaleObject, growProfile: InlinedBranchProfile): Object;
     doOther(bummer: Object): Object;

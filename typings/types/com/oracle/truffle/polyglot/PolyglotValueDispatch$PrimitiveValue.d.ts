@@ -9,7 +9,7 @@ import type { Type } from '../../../../java/lang/reflect/Type.d.ts'
 import type { BigInteger } from '../../../../java/math/BigInteger.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class PolyglotValueDispatch$PrimitiveValue extends PolyglotValueDispatch {
-    private constructor(impl: PolyglotImpl, instance: PolyglotLanguageInstance)
+    private constructor(impl: PolyglotImpl, instance: PolyglotLanguageInstance, primitiveValue: Object)
     // private interop: InteropLibrary;
     // private language: PolyglotLanguage;
     asBigInteger(languageContext: Object, receiver: Object): BigInteger;
@@ -31,7 +31,6 @@ export class PolyglotValueDispatch$PrimitiveValue extends PolyglotValueDispatch 
     fitsInInt(languageContext: Object, receiver: Object): boolean;
     fitsInLong(languageContext: Object, receiver: Object): boolean;
     fitsInShort(languageContext: Object, receiver: Object): boolean;
-    // private getInterop(receiver: Object): InteropLibrary;
     // private getLanguageView(languageContext: Object, receiver: Object): Object;
     getMetaObjectImpl(languageContext: PolyglotLanguageContext, receiver: Object): Object;
     isBoolean(languageContext: Object, receiver: Object): boolean;

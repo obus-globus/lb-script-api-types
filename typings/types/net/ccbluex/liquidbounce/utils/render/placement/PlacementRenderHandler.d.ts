@@ -13,7 +13,7 @@ import type { AABB } from '../../../../../../net/minecraft/world/phys/AABB.d.ts'
  *
  * This class is not thread-safe. You can use it on the render thread. (the most recommended way)
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt:44}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt:44}
  */
 export class PlacementRenderHandler extends Object implements BlockCuller$Owner {
     constructor(placementRenderer: PlacementRenderer, id: number)
@@ -31,26 +31,26 @@ export class PlacementRenderHandler extends Object implements BlockCuller$Owner 
      *
      * @param pos The position, can be {@link BlockPos.MutableBlockPos}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt#L195 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt:195}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt#L195 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt:195}
      */
     addBlock(pos: BlockPos, update: boolean, box: AABB): void;
     /**
      * Removes all stored positions.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt#L291 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt:291}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt#L291 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt:291}
      */
     clear(): void;
     /**
      * Puts all currently rendered positions in the out-animation state and keeps it being rendered until
      * all animations have been finished even though the module might be already disabled.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt#L271 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt:271}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt#L271 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt:271}
      */
     clearSilently(): void;
     /**
      * Checks whether the position (in long value) is rendered.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt#L185 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt:185}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt#L185 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt:185}
      */
     contains(pos: number): boolean;
     // private getBox(expand: number, box: AABB): AABB;
@@ -60,7 +60,7 @@ export class PlacementRenderHandler extends Object implements BlockCuller$Owner 
      *
      * @param pos The position, can be {@link BlockPos.MutableBlockPos}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt#L212 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt:212}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt#L212 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt:212}
      */
     removeBlock(pos: BlockPos): void;
     render(event: WorldRenderEvent, time: number): void;
@@ -70,7 +70,7 @@ export class PlacementRenderHandler extends Object implements BlockCuller$Owner 
      * This can be useful to reduce overhead when adding a bunch of positions,
      * so that positions don't get updated multiple times.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt#L236 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt:236}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt#L236 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt:236}
      */
     updateAll(): void;
     /**
@@ -78,7 +78,7 @@ export class PlacementRenderHandler extends Object implements BlockCuller$Owner 
      *
      * This method won't affect positions that are in the state of fading out.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/567a259aa7f4250a1b2911700de4282fe934a3d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt#L255 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt:255}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt#L255 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt:255}
      */
     updateBox(pos: BlockPos, box: AABB): void;
     // private updateNeighbors(pos: BlockPos): void;

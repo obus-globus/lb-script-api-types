@@ -1,12 +1,10 @@
 import type { BiFunction } from '../../../java/util/function/BiFunction.d.ts'
-import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Equivalence } from '../../../org/graalvm/collections/Equivalence.d.ts'
 import type { MapCursor } from '../../../org/graalvm/collections/MapCursor.d.ts'
 import type { UnmodifiableEconomicMap } from '../../../org/graalvm/collections/UnmodifiableEconomicMap.d.ts'
 export interface EconomicMap<K extends unknown, V extends unknown> extends Object, UnmodifiableEconomicMap<K, V> {
     clear(): void;
-    computeIfAbsent(key: K, mappingFunction: (param0: K) => V): V;
     get(key: K, defaultValue: V): V;
     getEntries(): MapCursor<K, V>;
     getEquivalenceStrategy(): Equivalence;

@@ -14,41 +14,23 @@ export class TRegexNFAExecutorNode extends TRegexExecutorNode {
     static LATIN1_PROBABILITY: number;
     static create(paramnfa: NFA): TRegexNFAExecutorNode;
     static inputIncRaw(paramindex: number, paramoffset: number, paramforward: boolean): number;
-    private constructor(nfa: NFA, compactNFA: number[], entryLength: number, numberOfStates: number, matchers: number[], groupBoundaries: number[], initialLoopBackTarget: number, numberOfTransitions: number)
+    private constructor(nfa: NFA, numberOfTransitions: number)
     private constructor(copy: TRegexNFAExecutorNode)
     // private dfaGeneratorBailedOut: boolean;
-    // private entryLength: number;
-    // private groupBoundaries: number[];
-    // private initialLoopBackTarget: number;
-    // private matchers: number[];
-    // private nfa: number[];
-    readonly numberOfStates: number;
+    // private nfa: NFA;
     // private searching: boolean;
     // private trackLastGroup: boolean;
-    applyGroupBoundaries(transitionRecord: number, array: number[], cgOffset: number, lgOffset: number, index: number, trackLastGroupArg: boolean): void;
     createLocals(input: TruffleString, fromIndex: number, maxIndex: number, regionFrom: number, regionTo: number, index: number): TRegexExecutorLocals;
     execute(frame: VirtualFrame, abstractLocals: TRegexExecutorLocals, codeRange: TruffleString$CodeRange): Object;
-    // private expandState(locals: TRegexNFAExecutorLocals, stateRecord: number, c: number, isLoopBack: boolean): void;
-    // private expandStateAtEnd(locals: TRegexNFAExecutorLocals, stateRecord: number, isLoopBack: boolean): void;
+    // private expandState(locals: TRegexNFAExecutorLocals, stateId: number, c: number, isLoopBack: boolean): void;
     // private findNextStates(locals: TRegexNFAExecutorLocals, codeRange: TruffleString$CodeRange): void;
     // private findNextStatesAtEnd(locals: TRegexNFAExecutorLocals): void;
-    // private getAnchoredEntry(offset: number): number;
+    getNFA(): NFA;
     getName(): string;
     getNumberOfStates(): number;
-    // private getStateFirstTransitionToFinal(stateRecord: number): number;
-    // private getStateFlags(stateRecord: number): number;
-    // private getStateMarkId(stateRecord: number): number;
-    // private getStateTransitionCount(stateRecord: number): number;
-    // private getTransitionGroupBoundaries(transitionRecord: number): number;
-    getTransitionTargetStateRecord(transitionRecord: number): number;
-    // private getUnAnchoredEntry(offset: number): number;
-    // private hasTransitionToUnAnchoredFinalState(stateRecord: number): boolean;
-    // private isAnchoredFinalState(stateRecord: number): boolean;
     isForward(): boolean;
     isTrivial(): boolean;
-    // private isUnAnchoredFinalState(stateRecord: number): boolean;
     notifyDfaGeneratorBailedOut(): void;
     shallowCopy(): TRegexNFAExecutorNode;
-    // private transitionMatches(transitionRecord: number, c: number): boolean;
     writesCaptureGroups(): boolean;
 }

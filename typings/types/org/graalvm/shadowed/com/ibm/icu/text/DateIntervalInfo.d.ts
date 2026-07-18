@@ -17,9 +17,9 @@ export class DateIntervalInfo extends Object implements Serializable, Cloneable,
     // private fIntervalPatterns: JavaMap<string, JavaMap<string, DateIntervalInfo$PatternInfo>>;
     // private fIntervalPatternsReadOnly: boolean;
     readonly frozen: boolean;
-    clone(): DateIntervalInfo;
+    clone(): Object;
     cloneAsThawed(): DateIntervalInfo;
-    // private cloneUnfrozenDII(): DateIntervalInfo;
+    // private cloneUnfrozenDII(): Object;
     equals(a: Object | null): boolean;
     freeze(): DateIntervalInfo;
     getBestSkeleton(inputSkeleton: string): DateIntervalFormat$BestMatchInfo;

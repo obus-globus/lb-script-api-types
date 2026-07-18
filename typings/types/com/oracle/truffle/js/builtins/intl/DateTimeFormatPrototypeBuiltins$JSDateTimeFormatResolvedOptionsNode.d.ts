@@ -1,14 +1,13 @@
 import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { InlinedBranchProfile } from '../../../../../../com/oracle/truffle/api/profiles/InlinedBranchProfile.d.ts'
-import type { DateTimeFormatPrototypeBuiltins$UnwrapDateTimeFormatNode } from '../../../../../../com/oracle/truffle/js/builtins/intl/DateTimeFormatPrototypeBuiltins$UnwrapDateTimeFormatNode.d.ts'
 import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { JSBuiltin } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
+import type { JSDateTimeFormatObject } from '../../../../../../com/oracle/truffle/js/runtime/builtins/intl/JSDateTimeFormatObject.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export abstract class DateTimeFormatPrototypeBuiltins$JSDateTimeFormatResolvedOptionsNode extends DateTimeFormatPrototypeBuiltins$UnwrapDateTimeFormatNode {
+export abstract class DateTimeFormatPrototypeBuiltins$JSDateTimeFormatResolvedOptionsNode extends JSBuiltinNode {
     static ARGUMENTS: string;
     static cloneUninitialized<T extends JavaScriptNode>(paramnode: T, parammaterializedTags: Class<Tag>[]): T;
     static cloneUninitialized<T extends JavaScriptNode>(paramnodeArray: T[], parammaterializedTags: Class<Tag>[]): T[];
@@ -19,5 +18,6 @@ export abstract class DateTimeFormatPrototypeBuiltins$JSDateTimeFormatResolvedOp
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(context: JSContext, builtin: JSBuiltin)
-    doResolvedOptions(dateTimeFormat: Object, errorBranch: InlinedBranchProfile): Object;
+    doResolvedOptions(dateTimeFormat: JSDateTimeFormatObject): Object;
+    throwTypeError(bummer: Object): Object;
 }

@@ -10,13 +10,11 @@ import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class VarNode extends Statement implements Assignment<IdentNode> {
     static IS_ANNEXB_BLOCK_TO_FUNCTION_TRANSFER: number;
-    static IS_AWAIT_USING: number;
     static IS_CONST: number;
     static IS_DESTRUCTURING: number;
     static IS_EXPORT: number;
     static IS_LAST_FUNCTION_DECLARATION: number;
     static IS_LET: number;
-    static IS_USING: number;
     constructor(lineNumber: number, token: number, finish: number, name: IdentNode, init: Expression)
     constructor(lineNumber: number, token: number, finish: number, name: IdentNode, init: Expression, flags: number)
     constructor(lineNumber: number, token: number, sourceOrder: number, finish: number, name: IdentNode, init: Expression, flags: number)
@@ -36,7 +34,6 @@ export class VarNode extends Statement implements Assignment<IdentNode> {
     getSymbolFlags(): number;
     hasInit(): boolean;
     isAssignment(): boolean;
-    isAwaitUsing(): boolean;
     isBlockScoped(): boolean;
     isClassDeclaration(): boolean;
     isConst(): boolean;
@@ -45,7 +42,6 @@ export class VarNode extends Statement implements Assignment<IdentNode> {
     isFunctionDeclaration(): boolean;
     isHoistableDeclaration(): boolean;
     isLet(): boolean;
-    isUsing(): boolean;
     setFlag(flag: number): VarNode;
     // private setFlags(flags: number): VarNode;
     toString(): string;

@@ -58,7 +58,6 @@ import type { ContinueTarget } from '../../../../../com/oracle/truffle/js/nodes/
 import type { ReturnNode as ReturnNode_2 } from '../../../../../com/oracle/truffle/js/nodes/control/ReturnNode.d.ts'
 import type { FunctionRootNode } from '../../../../../com/oracle/truffle/js/nodes/function/FunctionRootNode.d.ts'
 import type { GraalJSTranslator$EnvironmentCloseable } from '../../../../../com/oracle/truffle/js/parser/GraalJSTranslator$EnvironmentCloseable.d.ts'
-import type { GraalJSTranslator$UsingScopeInfo } from '../../../../../com/oracle/truffle/js/parser/GraalJSTranslator$UsingScopeInfo.d.ts'
 import type { Environment } from '../../../../../com/oracle/truffle/js/parser/env/Environment.d.ts'
 import type { Environment$VarRef } from '../../../../../com/oracle/truffle/js/parser/env/Environment$VarRef.d.ts'
 import type { FunctionEnvironment } from '../../../../../com/oracle/truffle/js/parser/env/FunctionEnvironment.d.ts'
@@ -76,7 +75,6 @@ export abstract class GraalJSTranslator extends TranslatorNodeVisitor<LexicalCon
     static FILE__: string;
     static IMPORT: string;
     static IMPORT_META: string;
-    static INVALID_LHS: TruffleString;
     static LINE__: string;
     static SUPER_CALLED_TWICE: TruffleString;
     static UNSUPPORTED_REFERENCE_TO_SUPER: TruffleString;
@@ -90,7 +88,6 @@ export abstract class GraalJSTranslator extends TranslatorNodeVisitor<LexicalCon
     // private prologLength: number;
     // private source: Source;
     // private sourceLength: number;
-    // private usingScopes: GraalJSTranslator$UsingScopeInfo[];
     // private addFunctionFrameSlots(env: Environment, function_: FunctionNode): void;
     addGeneratorStateSlot(functionFrameDescriptor: JSFrameDescriptor, slotKind: FrameSlotKind): JSFrameSlot;
     // private allowScopeOptimization(): boolean;
@@ -269,5 +266,4 @@ export abstract class GraalJSTranslator extends TranslatorNodeVisitor<LexicalCon
     // private wrapSaveAndRestoreCompletionValue(statement: JavaScriptNode): JavaScriptNode;
     // private wrapSetCompletionValue(statement: JavaScriptNode): JavaScriptNode;
     // private wrapTemporalDeadZoneInit(scope: Scope, blockBody: JavaScriptNode): JavaScriptNode;
-    // private wrapUsingScope(blockBody: JavaScriptNode, async: boolean, capabilityVar: Environment$VarRef, errorVar: Environment$VarRef): JavaScriptNode;
 }

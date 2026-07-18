@@ -7,7 +7,7 @@ import type { OptimizedRuntimeOptions$ExceptionAction } from '../../../../com/or
 import type { TruffleSplittingStrategy$SplitStatisticsData } from '../../../../com/oracle/truffle/runtime/TruffleSplittingStrategy$SplitStatisticsData.d.ts'
 import type { StatisticsListener } from '../../../../com/oracle/truffle/runtime/debug/StatisticsListener.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
+import type { IllegalArgumentException } from '../../../../java/lang/IllegalArgumentException.d.ts'
 import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { AtomicBoolean } from '../../../../java/util/concurrent/atomic/AtomicBoolean.d.ts'
 import type { BooleanSupplier } from '../../../../java/util/function/BooleanSupplier.d.ts'
@@ -15,9 +15,9 @@ import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Pair } from '../../../../org/graalvm/collections/Pair.d.ts'
 import type { OptionValues } from '../../../../org/graalvm/options/OptionValues.d.ts'
-import type { Engine$CancellationCallback } from '../../../../org/graalvm/polyglot/Engine$CancellationCallback.d.ts'
 import type { SandboxPolicy } from '../../../../org/graalvm/polyglot/SandboxPolicy.d.ts'
 export class EngineData extends Object {
+    static sandboxPolicyException(paramsandboxPolicy: SandboxPolicy, paramreason: string, paramfix: string): IllegalArgumentException;
     constructor(polyglotEngine: Object, runtimeOptions: OptionValues, loggerFactory: (param0: string) => TruffleLogger, sandboxPolicy: SandboxPolicy)
     argumentTypeSpeculation: boolean;
     backgroundCompilation: boolean;
@@ -45,7 +45,6 @@ export class EngineData extends Object {
     maximumCompilations: number;
     multiTier: boolean;
     // private parsedCompileOnly: Pair<string[], string[]>;
-    // private patchEpochNanos: number;
     readonly polyglotEngine: Object;
     priorityQueue: boolean;
     profilingEnabled: boolean;
@@ -74,8 +73,6 @@ export class EngineData extends Object {
     traversingFirstTierPriority: boolean;
     traversingInvalidatedBonus: number;
     traversingOSRBonus: number;
-    traversingRateHalfLifeNs: number;
-    traversingStaleTaskMaxNoActivityNs: number;
     weightingBothTiers: boolean;
     acceptForCompilation(target: OptimizedCallTarget): boolean;
     clearEngineLocal(symbol: Class<Object>): void;
@@ -106,9 +103,7 @@ export class EngineData extends Object {
     onEngineClosing(): boolean;
     onEngineCreated(engine: Object): void;
     onEnginePatch(newRuntimeOptions: OptionValues, newLoggerFactory: (param0: string) => TruffleLogger, sandboxPolicy: SandboxPolicy): void;
-    onEnginePatchSuccess(): void;
     onStoreCache(targetPath: Path, cancelledWord: number): boolean;
-    persistCache(callback: () => boolean): ByteBuffer;
     preinitializeContext(): void;
     putEngineLocal<T extends unknown>(symbol: Class<T>, value: T): void;
     restoreStore(finalizationResult: Object): void;

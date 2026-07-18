@@ -7,9 +7,9 @@ import type { TemporalDurationPrototypeBuiltins$JSTemporalDurationTotal } from '
 import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { JSBuiltin } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
-import type { DifferencePlainDateTimeWithTotalNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/DifferencePlainDateTimeWithTotalNode.d.ts'
-import type { DifferenceZonedDateTimeWithTotalNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/DifferenceZonedDateTimeWithTotalNode.d.ts'
-import type { GetTemporalUnitValuedOptionNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/GetTemporalUnitValuedOptionNode.d.ts'
+import type { DifferencePlainDateTimeWithRoundingNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/DifferencePlainDateTimeWithRoundingNode.d.ts'
+import type { DifferenceZonedDateTimeWithRoundingNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/DifferenceZonedDateTimeWithRoundingNode.d.ts'
+import type { GetTemporalUnitNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/GetTemporalUnitNode.d.ts'
 import type { TemporalAddDateNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/TemporalAddDateNode.d.ts'
 import type { TemporalAddZonedDateTimeNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/TemporalAddZonedDateTimeNode.d.ts'
 import type { TemporalGetOptionNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/TemporalGetOptionNode.d.ts'
@@ -37,9 +37,9 @@ export class TemporalDurationPrototypeBuiltinsFactory$JSTemporalDurationTotalNod
     // private state_0_: number;
     // private total_addDate_: TemporalAddDateNode;
     // private total_addZonedDateTimeNode_: TemporalAddZonedDateTimeNode;
-    // private total_differencePlainDateTimeWithTotal_: DifferencePlainDateTimeWithTotalNode;
-    // private total_differenceZonedDateTimeWithTotal_: DifferenceZonedDateTimeWithTotalNode;
-    // private total_getTemporalUnit_: GetTemporalUnitValuedOptionNode;
+    // private total_differencePlainDateTimeWithRounding_: DifferencePlainDateTimeWithRoundingNode;
+    // private total_differenceZonedDateTimeWithRounding_: DifferenceZonedDateTimeWithRoundingNode;
+    // private total_getTemporalUnit_: GetTemporalUnitNode;
     // private total_toRelativeTemporalObjectNode_: ToRelativeTemporalObjectNode;
     execute(frameValue: VirtualFrame): Object;
     // private executeAndSpecialize(arguments0Value: Object, arguments1Value: Object): Object;

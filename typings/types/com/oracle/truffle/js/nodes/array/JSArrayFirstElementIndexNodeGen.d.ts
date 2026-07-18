@@ -11,11 +11,11 @@ export class JSArrayFirstElementIndexNodeGen extends JSArrayFirstElementIndexNod
     static create(paramcontext: JSContext): JSArrayFirstElementIndexNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     private constructor(context: JSContext)
-    // private arrayTypeProfile_field1_: Class<Object>;
     // private hasPropertyNode: JSHasPropertyNode;
     // private nextElementIndexNode: JSArrayNextElementIndexNode;
     // private state_0_: number;
     // private withHolesCached_cache: JSArrayFirstElementIndexNodeGen$WithHolesCachedData;
+    // private withHolesUncached_arrayTypeProfile__field1_: Class<Object>;
     // private withoutHolesCached_cache: JSArrayFirstElementIndexNodeGen$WithoutHolesCachedData;
     // private executeAndSpecialize(arg0Value: Object, arg1Value: number, arg2Value: boolean): number;
     executeLong(object: Object, length: number): number;

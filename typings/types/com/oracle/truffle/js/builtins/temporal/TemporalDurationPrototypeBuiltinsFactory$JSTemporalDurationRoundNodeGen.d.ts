@@ -10,7 +10,7 @@ import type { JSBuiltinNode } from '../../../../../../com/oracle/truffle/js/node
 import type { DifferencePlainDateTimeWithRoundingNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/DifferencePlainDateTimeWithRoundingNode.d.ts'
 import type { DifferenceZonedDateTimeWithRoundingNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/DifferenceZonedDateTimeWithRoundingNode.d.ts'
 import type { GetRoundingIncrementOptionNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/GetRoundingIncrementOptionNode.d.ts'
-import type { GetTemporalUnitValuedOptionNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/GetTemporalUnitValuedOptionNode.d.ts'
+import type { GetTemporalUnitNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/GetTemporalUnitNode.d.ts'
 import type { TemporalAddDateNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/TemporalAddDateNode.d.ts'
 import type { TemporalAddZonedDateTimeNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/TemporalAddZonedDateTimeNode.d.ts'
 import type { TemporalGetOptionNode } from '../../../../../../com/oracle/truffle/js/nodes/temporal/TemporalGetOptionNode.d.ts'
@@ -40,10 +40,10 @@ export class TemporalDurationPrototypeBuiltinsFactory$JSTemporalDurationRoundNod
     // private round_differencePlainDateTimeWithRounding_: DifferencePlainDateTimeWithRoundingNode;
     // private round_differenceZonedDateTimeWithRounding_: DifferenceZonedDateTimeWithRoundingNode;
     // private round_equalNode_: TruffleString$EqualNode;
-    // private round_getLargestUnit_: GetTemporalUnitValuedOptionNode;
+    // private round_getLargestUnit_: GetTemporalUnitNode;
     // private round_getOptionNode_: TemporalGetOptionNode;
     // private round_getRoundingIncrementOption_: GetRoundingIncrementOptionNode;
-    // private round_getSmallestUnit_: GetTemporalUnitValuedOptionNode;
+    // private round_getSmallestUnit_: GetTemporalUnitNode;
     // private round_toRelativeTemporalObjectNode_: ToRelativeTemporalObjectNode;
     // private state_0_: number;
     execute(frameValue: VirtualFrame): Object;

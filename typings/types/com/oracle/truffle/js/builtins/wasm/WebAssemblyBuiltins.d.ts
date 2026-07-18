@@ -5,6 +5,7 @@ import type { JSBuiltinsContainer$SwitchEnum } from '../../../../../../com/oracl
 import type { WebAssemblyBuiltins$WebAssembly } from '../../../../../../com/oracle/truffle/js/builtins/wasm/WebAssemblyBuiltins$WebAssembly.d.ts'
 import type { JSBuiltin } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
+import type { JSRealm } from '../../../../../../com/oracle/truffle/js/runtime/JSRealm.d.ts'
 import type { BuiltinEnum } from '../../../../../../com/oracle/truffle/js/runtime/builtins/BuiltinEnum.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -14,6 +15,7 @@ export class WebAssemblyBuiltins extends JSBuiltinsContainer$SwitchEnum<WebAssem
     static BUILTINS: JSBuiltinsContainer;
     static buildSource(parambyteSource: ByteSequence): Source;
     static fromEnum<E extends Enum<E> & BuiltinEnum<E>>(paramname: TruffleString, parambuiltinEnum: Class<E>): JSBuiltinsContainer;
+    static moduleDecode(paramrealm: JSRealm, paramwasmSource: Source): Object;
     constructor()
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean, builtinEnum: WebAssemblyBuiltins$WebAssembly): Object;
 }

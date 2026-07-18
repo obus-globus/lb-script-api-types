@@ -21,7 +21,6 @@ export class JSArrayBuffer extends JSAbstractBuffer implements JSConstructorFact
     static FIXED_LENGTH: number;
     static GET_SYMBOL_SPECIES_NAME: TruffleString;
     static HEAP_INSTANCE: JSArrayBuffer;
-    static IMMUTABLE_BUFFER: number;
     static INTEROP_INSTANCE: JSArrayBuffer;
     static PROTOTYPE_NAME: TruffleString;
     static checkProtoCycle(paramthisObj: JSDynamicObject, paramnewPrototype: JSDynamicObject): boolean;

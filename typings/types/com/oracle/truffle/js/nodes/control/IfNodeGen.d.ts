@@ -18,8 +18,8 @@ export class IfNodeGen extends IfNode {
     private constructor(condition: JavaScriptNode, thenPart: JavaScriptNode, elsePart: JavaScriptNode)
     // private conditionProfile_field0_: number;
     // private conditionProfile_field1_: number;
+    // private object_toBooleanNode__field1_: Node;
     // private state_0_: number;
-    // private toBooleanNode_field1_: Node;
     execute(frameValue: VirtualFrame): Object;
     // private executeAndSpecialize(frameValue: VirtualFrame, conditionValue: Object): Object;
     executeVoid(frameValue: VirtualFrame): void;

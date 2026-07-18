@@ -5,10 +5,8 @@ import type { PropertySetNode } from '../../../../../../com/oracle/truffle/js/no
 import type { JSFunctionCallNode } from '../../../../../../com/oracle/truffle/js/nodes/function/JSFunctionCallNode.d.ts'
 import type { PerformPromiseCombinatorNode } from '../../../../../../com/oracle/truffle/js/nodes/promise/PerformPromiseCombinatorNode.d.ts'
 import type { PerformPromiseCombinatorNode$BoxedInt } from '../../../../../../com/oracle/truffle/js/nodes/promise/PerformPromiseCombinatorNode$BoxedInt.d.ts'
-import type { PerformPromiseThenNode } from '../../../../../../com/oracle/truffle/js/nodes/promise/PerformPromiseThenNode.d.ts'
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
 import type { JSFunctionObject } from '../../../../../../com/oracle/truffle/js/runtime/builtins/JSFunctionObject.d.ts'
-import type { JSPromiseObject } from '../../../../../../com/oracle/truffle/js/runtime/builtins/JSPromiseObject.d.ts'
 import type { IteratorRecord } from '../../../../../../com/oracle/truffle/js/runtime/objects/IteratorRecord.d.ts'
 import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
 import type { PromiseCapabilityRecord } from '../../../../../../com/oracle/truffle/js/runtime/objects/PromiseCapabilityRecord.d.ts'
@@ -21,11 +19,8 @@ export abstract class PerformPromiseAllNode extends PerformPromiseCombinatorNode
     // private callResolve: JSFunctionCallNode;
     // private callThen: JSFunctionCallNode;
     // private getThen: PropertyGetNode;
-    // private performPromiseThenNode: PerformPromiseThenNode;
     // private setArgs: PropertySetNode;
     createRejectElementFunction(index: number, values: SimpleArrayList<Object>, resultCapability: PromiseCapabilityRecord, remainingElementsCount: PerformPromiseCombinatorNode$BoxedInt): Object;
     createResolveElementFunction(index: number, values: SimpleArrayList<Object>, resultCapability: PromiseCapabilityRecord, remainingElementsCount: PerformPromiseCombinatorNode$BoxedInt): JSFunctionObject;
-    executeSafe(promises: JSPromiseObject[], resultCapability: PromiseCapabilityRecord): JSPromiseObject;
-    // private getPerformPromiseThenNode(): PerformPromiseThenNode;
     promiseAll(iteratorRecord: IteratorRecord, constructor: JSDynamicObject, resultCapability: PromiseCapabilityRecord, promiseResolve: Object, growProfile: InlinedBranchProfile): JSDynamicObject;
 }

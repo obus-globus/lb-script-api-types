@@ -1,5 +1,4 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Pair } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/Pair.d.ts'
 export class Grego extends Object {
     static MAX_MILLIS: number;
     static MILLIS_PER_DAY: number;
@@ -9,7 +8,6 @@ export class Grego extends Object {
     static MIN_MILLIS: number;
     static dayOfWeek(paramday: number): number;
     static dayToFields(paramday: number, paramfields: number[]): number[];
-    static dayToYear(paramday: number): Pair<number, number>;
     static fieldsToDay(paramyear: number, parammonth: number, paramdom: number): number;
     static floorDivide(paramnumerator: number, paramdenominator: number): number;
     static getDayOfWeekInMonth(paramyear: number, parammonth: number, paramdayOfMonth: number): number;
@@ -18,6 +16,5 @@ export class Grego extends Object {
     static previousMonthLength(paramyear: number, parammonth: number): number;
     static timeToFields(paramtime: number, paramfields: number[]): number[];
     static timeToString(paramtime: number): string;
-    static timeToYear(paramtime: number): number;
     constructor()
 }

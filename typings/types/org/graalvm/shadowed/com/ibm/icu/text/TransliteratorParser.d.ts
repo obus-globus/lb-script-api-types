@@ -1,5 +1,5 @@
 import type { JavaMap } from '../../../../../../../JavaMap.d.ts'
-import type { StringBuilder } from '../../../../../../../java/lang/StringBuilder.d.ts'
+import type { StringBuffer } from '../../../../../../../java/lang/StringBuffer.d.ts'
 import type { ParsePosition } from '../../../../../../../java/text/ParsePosition.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Normalizer$Mode } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/Normalizer$Mode.d.ts'
@@ -17,13 +17,13 @@ export class TransliteratorParser extends Object {
     idBlockVector: string[];
     // private parseData: TransliteratorParser$ParseData;
     // private segmentObjects: StringMatcher[];
-    // private segmentStandins: StringBuilder;
+    // private segmentStandins: StringBuffer;
     // private undefinedVariableName: string;
     // private variableLimit: string;
     // private variableNames: JavaMap<string, string[]>;
     // private variableNext: string;
     // private variablesVector: Object[];
-    // private appendVariableDef(name: string, buf: StringBuilder): void;
+    // private appendVariableDef(name: string, buf: StringBuffer): void;
     // private checkVariableRange(ch: number, rule: string, start: number): void;
     generateStandInFor(obj: Object): string;
     getDotStandIn(): string;

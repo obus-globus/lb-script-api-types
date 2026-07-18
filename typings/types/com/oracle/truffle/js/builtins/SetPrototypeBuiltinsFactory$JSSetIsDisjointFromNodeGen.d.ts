@@ -1,15 +1,11 @@
 import type { VirtualFrame } from '../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
-import type { InteropLibrary } from '../../../../../com/oracle/truffle/api/interop/InteropLibrary.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { SetPrototypeBuiltins$JSSetIsDisjointFromNode } from '../../../../../com/oracle/truffle/js/builtins/SetPrototypeBuiltins$JSSetIsDisjointFromNode.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { GetSetRecordNode } from '../../../../../com/oracle/truffle/js/nodes/access/GetSetRecordNode.d.ts'
-import type { PropertyGetNode } from '../../../../../com/oracle/truffle/js/nodes/access/PropertyGetNode.d.ts'
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
-import type { JSFunctionCallNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSFunctionCallNode.d.ts'
-import type { IsCallableNode } from '../../../../../com/oracle/truffle/js/nodes/unary/IsCallableNode.d.ts'
 import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -27,10 +23,10 @@ export class SetPrototypeBuiltinsFactory$JSSetIsDisjointFromNodeGen extends SetP
     private constructor(context: JSContext, builtin: JSBuiltin, arguments: JavaScriptNode[])
     // private arguments0_: JavaScriptNode;
     // private arguments1_: JavaScriptNode;
-    // private isDisjointFrom_getIteratorFromMethodNode__field1_: IsCallableNode;
-    // private isDisjointFrom_getIteratorFromMethodNode__field2_: JSFunctionCallNode;
-    // private isDisjointFrom_getIteratorFromMethodNode__field3_: PropertyGetNode;
-    // private isDisjointFrom_getIteratorFromMethodNode__field4_: InteropLibrary;
+    // private isDisjointFrom_getIteratorFromMethodNode__field1_: Node;
+    // private isDisjointFrom_getIteratorFromMethodNode__field2_: Node;
+    // private isDisjointFrom_getIteratorFromMethodNode__field3_: Node;
+    // private isDisjointFrom_getIteratorFromMethodNode__field4_: Node;
     // private isDisjointFrom_getSetRecordNode_: GetSetRecordNode;
     // private isDisjointFrom_toBooleanNode__field1_: Node;
     // private state_0_: number;

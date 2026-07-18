@@ -1,11 +1,9 @@
 import type { VirtualFrame } from '../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { TruffleString$EqualNode } from '../../../../../com/oracle/truffle/api/strings/TruffleString$EqualNode.d.ts'
 import type { DatePrototypeBuiltins$JSDateToPrimitiveNode } from '../../../../../com/oracle/truffle/js/builtins/DatePrototypeBuiltins$JSDateToPrimitiveNode.d.ts'
 import type { JavaScriptNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
 import type { IsObjectNode } from '../../../../../com/oracle/truffle/js/nodes/access/IsObjectNode.d.ts'
-import type { OrdinaryToPrimitiveNode } from '../../../../../com/oracle/truffle/js/nodes/cast/OrdinaryToPrimitiveNode.d.ts'
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
 import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
@@ -25,8 +23,8 @@ export class DatePrototypeBuiltinsFactory$JSDateToPrimitiveNodeGen extends DateP
     private constructor(context: JSContext, builtin: JSBuiltin, arguments: JavaScriptNode[])
     // private arguments0_: JavaScriptNode;
     // private arguments1_: JavaScriptNode;
-    // private dateToPrimitiveHelper__field1_: TruffleString$EqualNode;
-    // private dateToPrimitiveHelper__field2_: OrdinaryToPrimitiveNode;
+    // private dateToPrimitiveHelper__field1_: Node;
+    // private dateToPrimitiveHelper__field2_: Node;
     // private isObjectNode_: IsObjectNode;
     // private state_0_: number;
     execute(frameValue: VirtualFrame): Object;

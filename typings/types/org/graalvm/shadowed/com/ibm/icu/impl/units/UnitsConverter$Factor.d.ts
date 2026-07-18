@@ -25,7 +25,6 @@ export class UnitsConverter$Factor extends Object {
     // private addPoweredEntity(poweredEntity: string): void;
     applyPrefix(unitPrefix: MeasureUnit$MeasurePrefix): UnitsConverter$Factor;
     copy(): UnitsConverter$Factor;
-    divide(value: BigDecimal): UnitsConverter$Factor;
     divide(other: UnitsConverter$Factor): UnitsConverter$Factor;
     getConversionRate(): BigDecimal;
     // private multiply(value: BigDecimal, power: number): void;

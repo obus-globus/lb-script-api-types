@@ -24,5 +24,6 @@ export class StringFunctionBuiltinsFactory$StringRawNodeGen extends StringFuncti
     // private arguments1_: JavaScriptNode;
     // private state_0_: number;
     execute(frameValue: VirtualFrame): Object;
+    // private executeAndSpecialize(arguments0Value: Object, arguments1Value: Object): Object;
     getArguments(): JavaScriptNode[];
 }

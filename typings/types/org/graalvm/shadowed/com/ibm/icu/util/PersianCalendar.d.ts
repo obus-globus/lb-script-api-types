@@ -80,7 +80,6 @@ export class PersianCalendar extends Calendar {
     constructor(zone: TimeZone, aLocale: Locale)
     constructor(zone: TimeZone, locale: ULocale)
     constructor(locale: ULocale)
-    getRelatedYearDifference(): number;
     getType(): string;
     handleComputeFields(julianDay: number): void;
     handleComputeMonthStart(eyear: number, month: number, useMonth: boolean): number;

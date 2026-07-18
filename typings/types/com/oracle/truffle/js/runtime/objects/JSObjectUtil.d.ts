@@ -1,4 +1,5 @@
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
+import type { DynamicObjectLibrary } from '../../../../../../com/oracle/truffle/api/object/DynamicObjectLibrary.d.ts'
 import type { Shape } from '../../../../../../com/oracle/truffle/api/object/Shape.d.ts'
 import type { InlinedBranchProfile } from '../../../../../../com/oracle/truffle/api/profiles/InlinedBranchProfile.d.ts'
 import type { TruffleString } from '../../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
@@ -16,6 +17,9 @@ export class JSObjectUtil extends Object {
     static changePropertyFlags(paramthisObj: JSDynamicObject, paramkey: Object, paramflags: number): void;
     static checkForNoSuchPropertyOrMethod<T extends unknown>(paramcontext: JSContext, paramkey: T): T;
     static copyProperties<T extends JSDynamicObject>(paramtarget: T, paramsource: JSDynamicObject): T;
+    static createCached(paramkey: Object, paramobj: JSDynamicObject): DynamicObjectLibrary;
+    static createDispatched(paramkey: Object): DynamicObjectLibrary;
+    static createDispatched(paramkey: Object, paramlimit: number): DynamicObjectLibrary;
     static createOrdinaryPrototypeObject(paramrealm: JSRealm): JSObject;
     static createOrdinaryPrototypeObject(paramrealm: JSRealm, paramprototype: JSDynamicObject): JSObject;
     static defineAccessorProperty(paramcontext: JSContext, paramthisObj: JSDynamicObject, paramkey: Object, paramaccessor: Accessor, paramflags: number): void;

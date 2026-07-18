@@ -12,7 +12,6 @@ export class JSErrorType extends Enum<JSErrorType> implements PrototypeSupplier 
     static RangeError: JSErrorType;
     static ReferenceError: JSErrorType;
     static RuntimeError: JSErrorType;
-    static SuppressedError: JSErrorType;
     static SyntaxError: JSErrorType;
     static TypeError: JSErrorType;
     static URIError: JSErrorType;
@@ -22,5 +21,5 @@ export class JSErrorType extends Enum<JSErrorType> implements PrototypeSupplier 
     static values(): JSErrorType[];
     private constructor()
     getIntrinsicDefaultProto(realm: JSRealm): JSDynamicObject;
-    name(): "Error" | "EvalError" | "RangeError" | "ReferenceError" | "SyntaxError" | "TypeError" | "URIError" | "AggregateError" | "SuppressedError" | "CompileError" | "LinkError" | "RuntimeError";
+    name(): "Error" | "EvalError" | "RangeError" | "ReferenceError" | "SyntaxError" | "TypeError" | "URIError" | "AggregateError" | "CompileError" | "LinkError" | "RuntimeError";
 }

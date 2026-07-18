@@ -20,7 +20,7 @@ export class WhileNode extends StatementNode {
     static createDesugaredForOf(paramloopNode: LoopNode): JavaScriptNode;
     static createDoWhile(paramloopNode: LoopNode): JavaScriptNode;
     static createDoWhileRepeatingNode(paramcondition: JavaScriptNode, parambody: JavaScriptNode): RepeatingNode;
-    static createForOfRepeatingNode(paramiteratorNode: JavaScriptNode, paramnextResultNode: JavaScriptNode, parambody: JavaScriptNode, paramwriteNextValueNode: JSWriteFrameSlotNode): RepeatingNode;
+    static createForOfRepeatingNode(paramnextResultNode: JavaScriptNode, parambody: JavaScriptNode, paramwriteNextValueNode: JSWriteFrameSlotNode): RepeatingNode;
     static createWhileDo(paramloopNode: LoopNode): JavaScriptNode;
     static createWhileDoRepeatingNode(paramcondition: JavaScriptNode, parambody: JavaScriptNode): RepeatingNode;
     static findBlockScopeNode(paramnode: Node): Node;

@@ -94,7 +94,6 @@ export class IndianCalendar extends Calendar {
     constructor(zone: TimeZone, locale: ULocale)
     constructor(locale: ULocale)
     // private IndianToJD(year: number, month: number, date: number): number;
-    getRelatedYearDifference(): number;
     getType(): string;
     // private gregorianToJD(year: number, month: number, date: number): number;
     handleComputeFields(julianDay: number): void;

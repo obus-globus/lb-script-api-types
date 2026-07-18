@@ -9,5 +9,10 @@ export class JSConstructTypedArrayNodeGen$ObjectData extends Node implements DSL
     // private getIteratorMethodNode_: GetMethodNode;
     // private getLengthNode_: JSGetLengthNode;
     // private iterableToListNode_: IterableToListNode;
+    // private object_getIteratorFromMethodNode__field1_: Node;
+    // private object_getIteratorFromMethodNode__field2_: Node;
+    // private object_getIteratorFromMethodNode__field3_: Node;
+    // private object_getIteratorFromMethodNode__field4_: Node;
+    // private object_state_0_: number;
     // private readNode_: ReadElementNode;
 }

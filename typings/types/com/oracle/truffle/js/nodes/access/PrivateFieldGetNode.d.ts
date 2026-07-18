@@ -2,7 +2,7 @@ import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/fram
 import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { TruffleObject } from '../../../../../../com/oracle/truffle/api/interop/TruffleObject.d.ts'
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
-import type { DynamicObject$GetNode } from '../../../../../../com/oracle/truffle/api/object/DynamicObject$GetNode.d.ts'
+import type { DynamicObjectLibrary } from '../../../../../../com/oracle/truffle/api/object/DynamicObjectLibrary.d.ts'
 import type { HiddenKey } from '../../../../../../com/oracle/truffle/api/object/HiddenKey.d.ts'
 import type { InlinedBranchProfile } from '../../../../../../com/oracle/truffle/api/profiles/InlinedBranchProfile.d.ts'
 import type { TruffleString } from '../../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
@@ -32,7 +32,7 @@ export abstract class PrivateFieldGetNode extends JSTargetableNode implements Re
     // private targetNode: JavaScriptNode;
     copyUninitialized(materializedTags: Class<Tag>[]): JavaScriptNode;
     doAccessor(target: JSObject, accessor: Accessor, callNode: JSFunctionCallNode, errorBranch: InlinedBranchProfile): Object;
-    doField(target: JSObject, key: HiddenKey, node: Node, getField: DynamicObject$GetNode, errorBranch: InlinedBranchProfile): Object;
+    doField(target: JSObject, key: HiddenKey, node: Node, access: DynamicObjectLibrary, errorBranch: InlinedBranchProfile): Object;
     doMethodGeneric(target: JSObject, method: TruffleObject): Object;
     doMethodJSFunction(target: JSObject, method: JSFunctionObject): Object;
     expressionToString(): string;

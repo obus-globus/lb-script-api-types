@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSProperty extends Object {
     static ACCESSOR: number;
     static CONST: number;
-    static MISSING: number;
     static MODULE_NAMESPACE_EXPORT: number;
     static PROXY: number;
     static getConstantProxy(paramproxyProperty: Property): PropertyProxy;

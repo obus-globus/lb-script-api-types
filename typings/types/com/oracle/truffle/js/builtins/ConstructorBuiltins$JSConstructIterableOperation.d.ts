@@ -34,6 +34,6 @@ export abstract class ConstructorBuiltins$JSConstructIterableOperation extends C
     call(target: Object, function_: Object, ...userArguments: Object[]): Object;
     getAdderFn(obj: JSDynamicObject, name: TruffleString): Object;
     getIteratorValue(iteratorResult: Object): Object;
-    iteratorCloseAbrupt(iterator: IteratorRecord): void;
+    iteratorCloseAbrupt(iterator: Object): void;
     iteratorStep(iterator: IteratorRecord): Object;
 }

@@ -5,7 +5,6 @@ import type { OptionStability } from '../../../../org/graalvm/options/OptionStab
 import type { SandboxPolicy } from '../../../../org/graalvm/polyglot/SandboxPolicy.d.ts'
 export interface Option extends Annotation, Object{
     /*not mapped: */ category(): OptionCategory;
-    /*not mapped: */ constant(): boolean;
     /*not mapped: */ deprecated(): boolean;
     /*not mapped: */ deprecationMessage(): string;
     /*not mapped: */ help(): string;

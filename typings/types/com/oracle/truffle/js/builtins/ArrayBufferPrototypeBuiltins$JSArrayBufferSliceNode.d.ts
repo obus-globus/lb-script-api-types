@@ -23,17 +23,14 @@ export abstract class ArrayBufferPrototypeBuiltins$JSArrayBufferSliceNode extend
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
-    constructor(context: JSContext, builtin: JSBuiltin, toImmutable: boolean)
-    // private toImmutable: boolean;
+    constructor(context: JSContext, builtin: JSBuiltin)
     // private checkDetachedBuffer(arrayBuffer: JSArrayBufferObject, errorBranch: InlinedBranchProfile): void;
-    // private constructNewArrayBuffer(thisObj: JSArrayBufferObject, newLen: number, end: number, direct: boolean, errorBranch: InlinedBranchProfile): JSArrayBufferObject;
+    // private constructNewArrayBuffer(thisObj: JSArrayBufferObject, newLen: number, direct: boolean, errorBranch: InlinedBranchProfile): JSArrayBufferObject;
     // private copyInteropBufferElements(srcBuffer: Object, dstBuffer: Object, srcBufferOffset: number, len: number, errorBranch: InlinedBranchProfile, srcBufferLib: InteropLibrary, dstBufferLib: InteropLibrary): void;
     slice(thisObj: JSArrayBufferObject$Heap, begin0: Object, end0: Object, errorBranch: InlinedBranchProfile): JSArrayBufferObject;
     sliceDirect(thisObj: JSArrayBufferObject$Direct, begin0: Object, end0: Object, errorBranch: InlinedBranchProfile): JSArrayBufferObject;
     sliceDirectIntInt(thisObj: JSArrayBufferObject$Direct, begin: number, end: number, errorBranch: InlinedBranchProfile): JSArrayBufferObject;
-    sliceDirectIntIntImpl(thisObj: JSArrayBufferObject$Direct, begin: number, end: number, errorBranch: InlinedBranchProfile): JSArrayBufferObject;
     sliceIntInt(thisObj: JSArrayBufferObject$Heap, begin: number, end: number, errorBranch: InlinedBranchProfile): JSArrayBufferObject;
-    // private sliceIntIntImpl(thisObj: JSArrayBufferObject$Heap, begin: number, end: number, errorBranch: InlinedBranchProfile): JSArrayBufferObject;
     sliceInterop(thisObj: JSArrayBufferObject$Interop, begin0: Object, end0: Object, errorBranch: InlinedBranchProfile, srcBufferLib: InteropLibrary, dstBufferLib: InteropLibrary): JSArrayBufferObject;
     sliceTruffleBuffer(thisObj: Object, begin0: Object, end0: Object, errorBranch: InlinedBranchProfile, srcBufferLib: InteropLibrary, dstBufferLib: InteropLibrary): JSArrayBufferObject;
 }

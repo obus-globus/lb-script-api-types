@@ -1,6 +1,7 @@
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { AbstractInternalNode } from '../../../../../com/oracle/truffle/api/strings/AbstractInternalNode.d.ts'
+import type { AbstractTruffleString } from '../../../../../com/oracle/truffle/api/strings/AbstractTruffleString.d.ts'
 export abstract class TStringOpsNodes$RawLastIndexOfCodePointNode extends AbstractInternalNode {
     constructor()
-    execute(node: Node, arrayA: number[], offsetA: number, strideA: number, codepoint: number, fromIndex: number, toIndex: number): number;
+    execute(node: Node, a: AbstractTruffleString, arrayA: number[], offsetA: number, codepoint: number, fromIndex: number, toIndex: number): number;
 }

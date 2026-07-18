@@ -30,7 +30,6 @@ export class InteropLibraryGen$CachedToUncachedDispatch extends InteropLibrary {
     asDouble(receiver_: Object): number;
     asDuration(receiver_: Object): Duration;
     asFloat(receiver_: Object): number;
-    asHostObject(receiver_: Object): Object;
     asInstant(receiver_: Object): Instant;
     asInt(receiver_: Object): number;
     asLong(receiver_: Object): number;
@@ -50,7 +49,6 @@ export class InteropLibraryGen$CachedToUncachedDispatch extends InteropLibrary {
     fitsInShort(receiver_: Object): boolean;
     getArraySize(receiver_: Object): number;
     getBufferSize(receiver_: Object): number;
-    getBytecodeIndex(receiver_: Object): number;
     getDeclaringMetaObject(receiver_: Object): Object;
     getExceptionCause(receiver_: Object): Object;
     getExceptionExitStatus(receiver_: Object): number;
@@ -65,7 +63,6 @@ export class InteropLibraryGen$CachedToUncachedDispatch extends InteropLibrary {
     getIterator(receiver_: Object): Object;
     getIteratorNextElement(receiver_: Object): Object;
     getLanguage(receiver_: Object): Class<TruffleLanguage<Object>>;
-    getLanguageId(receiver_: Object): string;
     getMembers(receiver: Object): Object;
     getMembers(receiver_: Object, includeInternal: boolean): Object;
     getMetaObject(receiver_: Object): Object;
@@ -74,10 +71,8 @@ export class InteropLibraryGen$CachedToUncachedDispatch extends InteropLibrary {
     getMetaSimpleName(receiver_: Object): Object;
     getScopeParent(receiver_: Object): Object;
     getSourceLocation(receiver_: Object): SourceSection;
-    getStaticScope(receiver_: Object): Object;
     hasArrayElements(receiver_: Object): boolean;
     hasBufferElements(receiver_: Object): boolean;
-    hasBytecodeIndex(receiver_: Object): boolean;
     hasDeclaringMetaObject(receiver_: Object): boolean;
     hasExceptionCause(receiver_: Object): boolean;
     hasExceptionMessage(receiver_: Object): boolean;
@@ -87,7 +82,6 @@ export class InteropLibraryGen$CachedToUncachedDispatch extends InteropLibrary {
     hasIterator(receiver_: Object): boolean;
     hasIteratorNextElement(receiver_: Object): boolean;
     hasLanguage(receiver_: Object): boolean;
-    hasLanguageId(receiver_: Object): boolean;
     hasMemberReadSideEffects(receiver_: Object, member: string): boolean;
     hasMemberWriteSideEffects(receiver_: Object, member: string): boolean;
     hasMembers(receiver_: Object): boolean;
@@ -95,7 +89,6 @@ export class InteropLibraryGen$CachedToUncachedDispatch extends InteropLibrary {
     hasMetaParents(receiver_: Object): boolean;
     hasScopeParent(receiver_: Object): boolean;
     hasSourceLocation(receiver_: Object): boolean;
-    hasStaticScope(receiver_: Object): boolean;
     identityHashCode(receiver_: Object): number;
     instantiate(receiver_: Object, ...arguments: Object[]): Object;
     invokeMember(receiver_: Object, member: string, ...arguments: Object[]): Object;
@@ -116,11 +109,9 @@ export class InteropLibraryGen$CachedToUncachedDispatch extends InteropLibrary {
     isHashEntryReadable(receiver_: Object, key: Object): boolean;
     isHashEntryRemovable(receiver_: Object, key: Object): boolean;
     isHashEntryWritable(receiver_: Object, key: Object): boolean;
-    isHostObject(receiver_: Object): boolean;
     isIdentical(receiver_: Object, other: Object, otherInterop: InteropLibrary): boolean;
     isIdenticalOrUndefined(receiver_: Object, other: Object): TriState;
     isInstantiable(receiver_: Object): boolean;
-    isInternal(receiver_: Object): boolean;
     isIterator(receiver_: Object): boolean;
     isMemberInsertable(receiver_: Object, member: string): boolean;
     isMemberInternal(receiver_: Object, member: string): boolean;

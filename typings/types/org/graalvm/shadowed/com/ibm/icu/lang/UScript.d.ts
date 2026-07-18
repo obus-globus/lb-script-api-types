@@ -17,7 +17,6 @@ export class UScript extends Object {
     static BASSA_VAH: number;
     static BATAK: number;
     static BENGALI: number;
-    static BERIA_ERFE: number;
     static BHAIKSUKI: number;
     static BLISSYMBOLS: number;
     static BOOK_PAHLAVI: number;
@@ -175,7 +174,6 @@ export class UScript extends Object {
     static SHARADA: number;
     static SHAVIAN: number;
     static SIDDHAM: number;
-    static SIDETIC: number;
     static SIGN_WRITING: number;
     static SIMPLIFIED_HAN: number;
     static SINDHI: number;
@@ -193,7 +191,6 @@ export class UScript extends Object {
     static TAGBANWA: number;
     static TAI_LE: number;
     static TAI_VIET: number;
-    static TAI_YO: number;
     static TAKRI: number;
     static TAMIL: number;
     static TANGSA: number;
@@ -206,10 +203,8 @@ export class UScript extends Object {
     static TIFINAGH: number;
     static TIRHUTA: number;
     static TODHRI: number;
-    static TOLONG_SIKI: number;
     static TOTO: number;
     static TRADITIONAL_HAN: number;
-    static TRADITIONAL_HAN_WITH_LATIN: number;
     static TULU_TIGALARI: number;
     static UCAS: number;
     static UGARITIC: number;

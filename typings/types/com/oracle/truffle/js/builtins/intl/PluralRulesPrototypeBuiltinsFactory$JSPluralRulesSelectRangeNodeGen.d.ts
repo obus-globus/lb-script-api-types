@@ -3,9 +3,9 @@ import type { Tag } from '../../../../../../com/oracle/truffle/api/instrumentati
 import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
 import type { PluralRulesPrototypeBuiltins$JSPluralRulesSelectRangeNode } from '../../../../../../com/oracle/truffle/js/builtins/intl/PluralRulesPrototypeBuiltins$JSPluralRulesSelectRangeNode.d.ts'
 import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
+import type { JSToDoubleNode } from '../../../../../../com/oracle/truffle/js/nodes/cast/JSToDoubleNode.d.ts'
 import type { JSBuiltin } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSBuiltinNode } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltinNode.d.ts'
-import type { ToIntlMathematicalValue } from '../../../../../../com/oracle/truffle/js/nodes/intl/ToIntlMathematicalValue.d.ts'
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -24,8 +24,8 @@ export class PluralRulesPrototypeBuiltinsFactory$JSPluralRulesSelectRangeNodeGen
     // private arguments0_: JavaScriptNode;
     // private arguments1_: JavaScriptNode;
     // private arguments2_: JavaScriptNode;
-    // private selectRange_endToIntlMVNode_: ToIntlMathematicalValue;
-    // private selectRange_startToIntlMVNode_: ToIntlMathematicalValue;
+    // private selectRange_endToDouble_: JSToDoubleNode;
+    // private selectRange_startToDouble_: JSToDoubleNode;
     // private state_0_: number;
     execute(frameValue: VirtualFrame): Object;
     // private executeAndSpecialize(arguments0Value: Object, arguments1Value: Object, arguments2Value: Object): Object;

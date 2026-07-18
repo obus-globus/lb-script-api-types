@@ -6,7 +6,6 @@ import type { OptionStability } from '../../../org/graalvm/options/OptionStabili
 export class OptionDescriptor$Builder extends Object {
     constructor(null_: OptionDescriptor, key: OptionKey<Object>, name: string)
     // private category: OptionCategory;
-    // private constant: boolean;
     // private deprecated: boolean;
     // private deprecationMessage: string;
     // private help: string;
@@ -16,7 +15,6 @@ export class OptionDescriptor$Builder extends Object {
     // private usageSyntax: string;
     build(): OptionDescriptor;
     category(category: OptionCategory): OptionDescriptor$Builder;
-    constant(value: boolean): OptionDescriptor$Builder;
     deprecated(deprecated: boolean): OptionDescriptor$Builder;
     deprecationMessage(deprecationMessage: string): OptionDescriptor$Builder;
     help(help: string): OptionDescriptor$Builder;

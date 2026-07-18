@@ -74,7 +74,6 @@ export class Value extends AbstractValue {
     getMetaQualifiedName(): string;
     getMetaSimpleName(): string;
     getSourceLocation(): SourceSection;
-    getStaticScope(): Value;
     hasArrayElements(): boolean;
     hasBufferElements(): boolean;
     hasHashEntries(): boolean;
@@ -84,7 +83,6 @@ export class Value extends AbstractValue {
     hasMember(identifier: string): boolean;
     hasMembers(): boolean;
     hasMetaParents(): boolean;
-    hasStaticScope(): boolean;
     hashCode(): number;
     invokeMember(identifier: string, ...arguments: Object[]): Value;
     isBoolean(): boolean;
