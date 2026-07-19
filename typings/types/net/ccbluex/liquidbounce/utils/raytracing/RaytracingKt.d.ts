@@ -15,10 +15,10 @@ export class RaytracingKt extends Object {
      *
      * @see net.minecraft.world.entity.LivingEntity.hasLineOfSight
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/raytracing/Raytracing.kt#L95 | src/main/kotlin/net/ccbluex/liquidbounce/utils/raytracing/Raytracing.kt:95}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5fb8050f7806fb9d37e33d22e5a85de863329bac/src/main/kotlin/net/ccbluex/liquidbounce/utils/raytracing/Raytracing.kt#L95 | src/main/kotlin/net/ccbluex/liquidbounce/utils/raytracing/Raytracing.kt:95}
      */
     static hasLineOfSight(paramarg0: Vec3, paramarg1: Vec3): boolean;
     static hasLineOfSight(eyes: Vec3, vec3: Vec3, entity: Entity): boolean;
-    static traceFromPlayer(rotation: Rotation, range: number, block: ClipContext$Block, includeFluids: boolean, tickDelta: number): BlockHitResult;
-    static traceFromPoint(range: number, block: ClipContext$Block, includeFluids: boolean, start: Vec3, direction: Vec3, entity: Entity): BlockHitResult;
+    static traceFromPlayer(rotation: Rotation, range: number, block: ClipContext$Block, fluid: ClipContext$Fluid, tickDelta: number): BlockHitResult;
+    static traceFromPoint(range: number, block: ClipContext$Block, fluid: ClipContext$Fluid, start: Vec3, direction: Vec3, entity: Entity): BlockHitResult;
 }

@@ -9,7 +9,7 @@ import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 /**
  * Uses the best available implementation of {@link ProjectileAngleCalculator}
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/projectiles/SituationalProjectileAngleCalculator.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/projectiles/SituationalProjectileAngleCalculator.kt:36}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5fb8050f7806fb9d37e33d22e5a85de863329bac/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/projectiles/SituationalProjectileAngleCalculator.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/projectiles/SituationalProjectileAngleCalculator.kt:36}
  */
 export class SituationalProjectileAngleCalculator extends Object implements ProjectileAngleCalculator {
     static INSTANCE: SituationalProjectileAngleCalculator;

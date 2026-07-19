@@ -9,6 +9,7 @@ import type { GlyphPage$Companion$CharacterGenerationInfo } from '../../../../..
 import type { GlyphRenderInfo } from '../../../../../../net/ccbluex/liquidbounce/render/engine/font/GlyphRenderInfo.d.ts'
 export class GlyphPage$Companion extends Object {
     // private DEFAULT_PADDING: number;
+    fontRasterizationLock: Object;
     // private fontRendererContext: FontRenderContext;
     // private /*not mapped: */ getFontRendererContext(): FontRenderContext;
     // private maxTextureSize: Lazy<number>;
@@ -19,7 +20,7 @@ export class GlyphPage$Companion extends Object {
     /**
      * Initializes the static values for glyph pages. Has to be called from a thread with an OpenGL context.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt#L138 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt:138}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5fb8050f7806fb9d37e33d22e5a85de863329bac/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt#L141 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt:141}
      */
     init(): void;
     // private renderGlyphOnAtlas(characterInfo: GlyphPage$Companion$CharacterGenerationInfo, atlasGraphics: Graphics2D): void;

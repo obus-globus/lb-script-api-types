@@ -7,6 +7,7 @@ export class ClientShaders$Fragment extends ClientShaders {
     static Blit: Identifier;
     static Companion: ClientShaders$Companion;
     static EntityOutline: Identifier;
+    static FontMask: Identifier;
     static Glow: Identifier;
     static GradientCircle: Identifier;
     static GuiBlurH: Identifier;
@@ -21,6 +22,7 @@ export class ClientShaders$Fragment extends ClientShaders {
     Blend: Identifier;
     Blit: Identifier;
     EntityOutline: Identifier;
+    FontMask: Identifier;
     Glow: Identifier;
     GradientCircle: Identifier;
     GuiBlurH: Identifier;

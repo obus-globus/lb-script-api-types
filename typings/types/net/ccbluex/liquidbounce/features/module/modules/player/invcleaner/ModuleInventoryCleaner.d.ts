@@ -8,12 +8,13 @@ import type { ItemSortChoice } from '../../../../../../../../net/ccbluex/liquidb
 import type { HotbarItemSlot } from '../../../../../../../../net/ccbluex/liquidbounce/utils/inventory/HotbarItemSlot.d.ts'
 import type { ItemSlot } from '../../../../../../../../net/ccbluex/liquidbounce/utils/inventory/ItemSlot.d.ts'
 import type { PlayerInventoryConstraints } from '../../../../../../../../net/ccbluex/liquidbounce/utils/inventory/PlayerInventoryConstraints.d.ts'
+import type { Item } from '../../../../../../../../net/minecraft/world/item/Item.d.ts'
 /**
  * InventoryCleaner module
  *
  * Automatically throws away useless items and sorts them.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ModuleInventoryCleaner.kt#L47 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ModuleInventoryCleaner.kt:47}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5fb8050f7806fb9d37e33d22e5a85de863329bac/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ModuleInventoryCleaner.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ModuleInventoryCleaner.kt:48}
  */
 export class ModuleInventoryCleaner extends ClientModule {
     static INSTANCE: ModuleInventoryCleaner;
@@ -22,14 +23,22 @@ export class ModuleInventoryCleaner extends ClientModule {
     // private inventoryConstraints: PlayerInventoryConstraints;
     // private isGreedy: boolean;
     // private /*not mapped: */ isGreedy(): boolean;
+    // private itemsBlackList: Item[];
+    // private /*not mapped: */ getItemsBlackList(): Item[];
     // private maxArrows: number;
     // private /*not mapped: */ getMaxArrows(): number;
     // private maxBlocks: number;
     // private /*not mapped: */ getMaxBlocks(): number;
     // private maxFoods: number;
     // private /*not mapped: */ getMaxFoods(): number;
+    // private maxLavaBuckets: number;
+    // private /*not mapped: */ getMaxLavaBuckets(): number;
+    // private maxMilkBuckets: number;
+    // private /*not mapped: */ getMaxMilkBuckets(): number;
     // private maxThrowables: number;
     // private /*not mapped: */ getMaxThrowables(): number;
+    // private maxWaterBuckets: number;
+    // private /*not mapped: */ getMaxWaterBuckets(): number;
     // private offHandItem: ItemSortChoice;
     // private /*not mapped: */ getOffHandItem(): ItemSortChoice;
     // private slotItem1: ItemSortChoice;

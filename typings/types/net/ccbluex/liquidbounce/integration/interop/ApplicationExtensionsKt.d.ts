@@ -5,4 +5,5 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ApplicationExtensionsKt extends Object {
     static installCors(self: Application): PluginInstance;
     static installGson(self: Application, gson: Gson): PluginInstance;
+    static isLocalOrigin(origin: string): boolean;
 }

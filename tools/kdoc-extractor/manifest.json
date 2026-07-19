@@ -4250,7 +4250,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraFightBot.kt",
-      "line": 44
+      "line": 45
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.killaura.features.KillAuraAutoBlock.assumeShield": {
@@ -4365,7 +4365,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraFightBot.kt",
-      "line": 62
+      "line": 63
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.killaura.features.KillAuraFightBot.LeaderFollower": {
@@ -4373,7 +4373,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraFightBot.kt",
-      "line": 77
+      "line": 78
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.killaura.features.KillAuraFightBot.calculateGoalPosition": {
@@ -4382,7 +4382,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraFightBot.kt",
-      "line": 134
+      "line": 135
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.killaura.features.KillAuraFightBot.createNavigationContext": {
@@ -4390,7 +4390,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraFightBot.kt",
-      "line": 108
+      "line": 109
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.killaura.features.KillAuraFightBot.getMovementRotation": {
@@ -4399,7 +4399,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraFightBot.kt",
-      "line": 175
+      "line": 176
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.killaura.features.KillAuraFightBot.handleMovementAssist": {
@@ -4410,7 +4410,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraFightBot.kt",
-      "line": 157
+      "line": 158
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.killaura.features.KillAuraRange": {
@@ -6640,7 +6640,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noweb/modes/NoWebPlaceWater.kt",
-      "line": 62
+      "line": 63
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.noweb.modes.NoWebStrafe": {
@@ -7669,7 +7669,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/CleanupPlanGenerator.kt",
-      "line": 40
+      "line": 45
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.CleanupPlanPlacementTemplate.isGreedy": {
@@ -7677,7 +7677,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/CleanupPlanGenerator.kt",
-      "line": 167
+      "line": 173
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.CleanupPlanPlacementTemplate.itemAmountConstraintProvider": {
@@ -7685,7 +7685,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/CleanupPlanGenerator.kt",
-      "line": 163
+      "line": 168
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.CleanupPlanPlacementTemplate.slotContentMap": {
@@ -7693,7 +7693,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/CleanupPlanGenerator.kt",
-      "line": 158
+      "line": 163
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.InventoryCleanupPlan.findSlotsToMerge": {
@@ -7728,7 +7728,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt",
-      "line": 175
+      "line": 180
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.ItemCategorization.diamondArmorPieces": {
@@ -7736,7 +7736,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt",
-      "line": 187
+      "line": 192
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.ItemCategorization.futureArmorToKeep": {
@@ -7744,7 +7744,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt",
-      "line": 204
+      "line": 209
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.ItemCategorization.getItemFacets": {
@@ -7752,7 +7752,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt",
-      "line": 227
+      "line": 232
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.ItemNumberConstraintGroup": {
@@ -7826,7 +7826,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt",
-      "line": 141
+      "line": 146
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.ItemType.allocationPriority": {
@@ -7834,7 +7834,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt",
-      "line": 97
+      "line": 102
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.ItemType.providedFunction": {
@@ -7842,7 +7842,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt",
-      "line": 103
+      "line": 108
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.ModuleInventoryCleaner": {
@@ -7850,7 +7850,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ModuleInventoryCleaner.kt",
-      "line": 47
+      "line": 48
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.ModuleInventoryCleaner.processHotbarSwaps": {
@@ -7859,16 +7859,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ModuleInventoryCleaner.kt",
-      "line": 152
-    }
-  },
-  "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.ModuleInventoryCleaner.processItemDisposal": {
-    "doc": "Handles disposal of unwanted items",
-    "returns": "true if an item was scheduled for disposal, false otherwise",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ModuleInventoryCleaner.kt",
-      "line": 188
+      "line": 164
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.ModuleInventoryCleaner.processStackMerging": {
@@ -7877,7 +7868,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ModuleInventoryCleaner.kt",
-      "line": 171
+      "line": 183
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.items.ArmorItemFacet": {
@@ -7889,6 +7880,14 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/items/ArmorItemFacet.kt",
       "line": 30
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.items.GodAxeFacet": {
+    "doc": "Axe with sharpness level >= 100",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/items/GodAxeFacet.kt",
+      "line": 27
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.items.MaceItemFacet": {
@@ -7953,6 +7952,14 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/items/PotionItemFacet.kt",
       "line": 75
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.items.SharpAxeFacet": {
+    "doc": "Axe with sharpness level >= 5",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/items/SharpAxeFacet.kt",
+      "line": 27
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.items.SpearItemFacet": {
@@ -11062,7 +11069,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-      "line": 221
+      "line": 227
     }
   },
   "net.ccbluex.liquidbounce.render.ClientRenderPipelines.Outline": {
@@ -11074,7 +11081,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-      "line": 407
+      "line": 422
     }
   },
   "net.ccbluex.liquidbounce.render.ClientRenderPipelines.OutlineQuads": {
@@ -11086,7 +11093,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-      "line": 307
+      "line": 313
     }
   },
   "net.ccbluex.liquidbounce.render.ClientRenderPipelines.precompile": {
@@ -11094,7 +11101,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-      "line": 479
+      "line": 494
     }
   },
   "net.ccbluex.liquidbounce.render.ClientVertexFormats.GRADIENT_CIRCLE": {
@@ -11143,7 +11150,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/FontFace.kt",
-      "line": 37
+      "line": 38
     }
   },
   "net.ccbluex.liquidbounce.render.FontFace.fillStyle": {
@@ -11151,7 +11158,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/FontFace.kt",
-      "line": 84
+      "line": 85
     }
   },
   "net.ccbluex.liquidbounce.render.FontFace.hashCode": {
@@ -11162,7 +11169,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/FontFace.kt",
-      "line": 129
+      "line": 132
     }
   },
   "net.ccbluex.liquidbounce.render.FontFace.styles": {
@@ -11170,7 +11177,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/FontFace.kt",
-      "line": 50
+      "line": 51
     }
   },
   "net.ccbluex.liquidbounce.render.FontManager.CJK_FONT": {
@@ -11194,7 +11201,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/FontManager.kt",
-      "line": 106
+      "line": 109
     }
   },
   "net.ccbluex.liquidbounce.render.FontManager.FONT_RENDERER": {
@@ -11210,7 +11217,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/FontManager.kt",
-      "line": 118
+      "line": 121
     }
   },
   "net.ccbluex.liquidbounce.render.FontManager.fontFaces": {
@@ -11226,7 +11233,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/FontManager.kt",
-      "line": 112
+      "line": 115
     }
   },
   "net.ccbluex.liquidbounce.render.GenericColorMode.isParamSensitive": {
@@ -11673,6 +11680,14 @@
       "line": 31
     }
   },
+  "net.ccbluex.liquidbounce.render.engine.font.FontCharacterSet.commonHanCodepoints": {
+    "doc": "First-level characters from the 2013 Table of General Standard Chinese Characters.\n\nSource data: https://github.com/jaywcjlove/table-of-general-standard-chinese-characters",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/FontCharacterSet.kt",
+      "line": 58
+    }
+  },
   "net.ccbluex.liquidbounce.render.engine.font.FontRenderer.font": {
     "doc": "Glyph pages for the style of the font. If an element is null, fall back to `[0]`\n\n[Font.PLAIN] -> 0 (Must not be null)\n\n[Font.BOLD] -> 1 (Can be null)\n\n[Font.ITALIC] -> 2 (Can be null)\n\n[Font.BOLD] | [Font.ITALIC] -> 3 (Can be null)",
     "kind": "property",
@@ -11686,7 +11701,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-      "line": 110
+      "line": 113
     }
   },
   "net.ccbluex.liquidbounce.render.engine.font.GlyphPage.CharacterGenerationInfo.atlasDimension": {
@@ -11694,7 +11709,15 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-      "line": 128
+      "line": 131
+    }
+  },
+  "net.ccbluex.liquidbounce.render.engine.font.GlyphPage.fontRasterizationLock": {
+    "doc": "Java2D's native font scaler is shared by static and dynamic atlas generation.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
+      "line": 105
     }
   },
   "net.ccbluex.liquidbounce.render.engine.font.GlyphPage.init": {
@@ -11702,7 +11725,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-      "line": 138
+      "line": 141
     }
   },
   "net.ccbluex.liquidbounce.render.engine.font.GlyphPage.maxTextureSize": {
@@ -11710,7 +11733,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-      "line": 95
+      "line": 94
     }
   },
   "net.ccbluex.liquidbounce.render.engine.font.GlyphRenderInfo": {
@@ -11718,7 +11741,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-      "line": 45
+      "line": 44
     }
   },
   "net.ccbluex.liquidbounce.render.engine.font.GlyphRenderInfo.atlasLocation": {
@@ -11726,7 +11749,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-      "line": 54
+      "line": 53
     }
   },
   "net.ccbluex.liquidbounce.render.engine.font.GlyphRenderInfo.codepoint": {
@@ -11734,7 +11757,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-      "line": 50
+      "line": 49
     }
   },
   "net.ccbluex.liquidbounce.render.engine.font.GlyphRenderInfo.glyphBounds": {
@@ -11742,7 +11765,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-      "line": 58
+      "line": 57
     }
   },
   "net.ccbluex.liquidbounce.render.engine.font.HorizontalAnchor.anchorToDrawX": {
@@ -11764,7 +11787,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/StaticGlyphPage.kt",
-      "line": 38
+      "line": 35
     }
   },
   "net.ccbluex.liquidbounce.render.engine.font.StaticGlyphPage.createGlyphPageWithFittingCharacters": {
@@ -11784,7 +11807,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/StaticGlyphPage.kt",
-      "line": 159
+      "line": 161
     }
   },
   "net.ccbluex.liquidbounce.render.engine.font.StaticGlyphPage.tryCharacterPlacement": {
@@ -11793,7 +11816,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/StaticGlyphPage.kt",
-      "line": 124
+      "line": 126
     }
   },
   "net.ccbluex.liquidbounce.render.engine.font.StaticGlyphPage.tryCharacterPlacementWithShrinking": {
@@ -11801,7 +11824,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/StaticGlyphPage.kt",
-      "line": 81
+      "line": 88
     }
   },
   "net.ccbluex.liquidbounce.render.engine.font.VerticalAnchor.anchorToDrawY": {
@@ -11823,7 +11846,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicFontCacheManager.kt",
-      "line": 262
+      "line": 261
     }
   },
   "net.ccbluex.liquidbounce.render.engine.font.dynamic.DynamicFontCacheManager.tryAllocations": {
@@ -11831,7 +11854,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicFontCacheManager.kt",
-      "line": 204
+      "line": 203
     }
   },
   "net.ccbluex.liquidbounce.render.engine.font.dynamic.DynamicGlyphPage.optimizeAtlas": {
@@ -11840,7 +11863,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.kt",
-      "line": 111
+      "line": 115
     }
   },
   "net.ccbluex.liquidbounce.render.engine.font.dynamic.DynamicGlyphPage.tryAdd": {
@@ -11849,7 +11872,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.kt",
-      "line": 58
+      "line": 62
     }
   },
   "net.ccbluex.liquidbounce.render.engine.font.processor.ProcessedText.strikeThroughs": {
@@ -13087,13 +13110,13 @@
       "line": 94
     }
   },
-  "net.ccbluex.liquidbounce.utils.aiming.data.Rotation.angleTo": {
-    "doc": "Calculates the angle between this and the other rotation.",
-    "returns": "angle in degrees",
+  "net.ccbluex.liquidbounce.utils.aiming.data.Rotation.directionAngleTo": {
+    "doc": "Calculates the great-circle angle between the two view directions.\n\nThis intentionally ignores differences that do not change the forward vector, such as yaw\nat a vertical pitch. Use [rotationDeltaLengthTo] for mouse movement, smoothing and rotation\nstate comparisons.",
+    "returns": "direction angle in degrees",
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt",
-      "line": 110
+      "line": 113
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.data.Rotation.interpolateTo": {
@@ -13101,7 +13124,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt",
-      "line": 149
+      "line": 162
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.data.Rotation.normalize": {
@@ -13110,7 +13133,15 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt",
-      "line": 82
+      "line": 81
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.aiming.data.Rotation.rotationDeltaLengthTo": {
+    "doc": "Calculates the Euclidean length of the wrapped yaw/pitch control delta.\n\nUnlike [directionAngleTo], this preserves yaw differences at vertical pitches and therefore\nmatches Minecraft's independent mouse, packet and movement rotation axes.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt",
+      "line": 141
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.data.Rotation.rotationDeltaTo": {
@@ -13118,7 +13149,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt",
-      "line": 123
+      "line": 128
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.data.Rotation.towardsLinear": {
@@ -13126,7 +13157,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt",
-      "line": 134
+      "line": 147
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.features.MovementCorrection": {
@@ -14903,20 +14934,68 @@
       "line": 778
     }
   },
-  "net.ccbluex.liquidbounce.utils.entity.FallingPlayer.calculateElytraTick": {
-    "doc": "Simulates one tick of elytra flight physics,\nmatching vanilla {@code LivingEntity.travel()} elytra branch.",
-    "kind": "function",
+  "net.ccbluex.liquidbounce.utils.entity.FallingPlayer.CollisionResult": {
+    "doc": "[positionBeforeMovement] matches the position from which Minecraft 26.2 performs item use\nbefore the movement step represented by [tick].",
+    "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
-      "line": 108
+      "line": 330
     }
   },
-  "net.ccbluex.liquidbounce.utils.entity.FallingPlayer.calculateFreeFallTick": {
-    "doc": "Simulates one tick of non-elytra free-fall physics,\nmatching vanilla {@code LivingEntity.travel()} air movement.",
+  "net.ccbluex.liquidbounce.utils.entity.FallingPlayer.applyAirInput": {
+    "doc": "Applies the player's air input before movement, matching vanilla's\n{@code LivingEntity.handleRelativeFrictionAndCalculateMovement()}.",
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
-      "line": 81
+      "line": 88
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.entity.FallingPlayer.applyCollisionResponse": {
+    "doc": "Matches the zero-restitution player path in Minecraft 26.2\n{@code Entity.restituteMovementAfterCollisions()}.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
+      "line": 320
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.entity.FallingPlayer.applyFreeFallForces": {
+    "doc": "Applies gravity and drag after movement, matching vanilla's\n{@code LivingEntity.travelInAir()} ordering.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
+      "line": 104
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.entity.FallingPlayer.calculateElytraTick": {
+    "doc": "Simulates one tick of elytra flight physics,\nmatching Minecraft 26.2 {@code LivingEntity.updateFallFlyingMovement()}.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
+      "line": 115
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.entity.FallingPlayer.collidePlayer": {
+    "doc": "Mirrors Minecraft 26.2's private {@code Entity.collide(Vec3)} step-up path.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
+      "line": 257
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.entity.FallingPlayer.effectiveGravity": {
+    "doc": "Mirrors Minecraft 26.2 {@code LivingEntity.getEffectiveGravity()}.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
+      "line": 153
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.entity.FallingPlayer.findSupportingBlock": {
+    "doc": "Mirrors Minecraft 26.2 {@code Entity.checkSupportingBlock()} including its moved-back fallback.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
+      "line": 297
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.FallingPlayer.playerMovementInput": {
@@ -14927,7 +15006,15 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
-      "line": 167
+      "line": 171
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.entity.FallingPlayer.willStartTickInBlockBeforeCollision": {
+    "doc": "Checks whether a future movement tick starts with the player's feet in [targetPos] before landing.\nThis matches the block-position lookup in Minecraft 26.2 {@code LivingEntity.onClimbable()}.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
+      "line": 198
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.LinearPositionExtrapolation": {
@@ -15288,6 +15375,14 @@
       "line": 58
     }
   },
+  "net.ccbluex.liquidbounce.utils.entity.collideWithShapes": {
+    "doc": "Mirrors Minecraft 26.2 {@code Entity.collideWithShapes()}.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
+      "line": 381
+    }
+  },
   "net.ccbluex.liquidbounce.utils.entity.hasCooldown": {
     "doc": "Check if the attack speed is below 1 tick. If so, we have a cooldown.",
     "kind": "property",
@@ -15358,6 +15453,22 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
       "line": 251
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.entity.resolveStepUpMovement": {
+    "doc": "Follows Minecraft 26.2 {@code Entity.collectCandidateStepUpHeights()} and\n{@code Entity.collideWithShapes()} when selecting a step-up movement.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
+      "line": 341
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.entity.selectSupportingBlock": {
+    "doc": "Mirrors Minecraft 26.2 {@code CollisionGetter.findSupportingBlock()}: nearest first,\nthen the greater {@code BlockPos.compareTo()} position on an exact distance tie.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
+      "line": 401
     }
   },
   "net.ccbluex.liquidbounce.utils.input.HumanInputDeserializer.StringDeserializer.deserializeThrowing": {

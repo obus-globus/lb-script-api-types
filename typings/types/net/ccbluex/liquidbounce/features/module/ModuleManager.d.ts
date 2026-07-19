@@ -15,7 +15,7 @@ import type { Component } from '../../../../../net/minecraft/network/chat/Compon
 /**
  * A fairly simple module manager
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f8feafa08d369aac1d83c7e0e334da0690fd875/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt#L281 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt:281}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5fb8050f7806fb9d37e33d22e5a85de863329bac/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt#L281 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt:281}
  */
 export class ModuleManager extends Object implements EventListener {
     static INSTANCE: ModuleManager;
