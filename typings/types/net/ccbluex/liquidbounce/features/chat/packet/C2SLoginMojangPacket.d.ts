@@ -10,7 +10,7 @@ import type { AxochatPacket$C2S } from '../../../../../../net/ccbluex/liquidboun
  * @param uuid uuid is not guaranteed to be hyphenated.
  * @param allowMessages If allow_messages is true, other clients may send private messages to this client.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5fb8050f7806fb9d37e33d22e5a85de863329bac/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ServerPackets.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ServerPackets.kt:48}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/44f9e1b21249da9b34607f109f31011678e0f7ca/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ServerPackets.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ServerPackets.kt:48}
  */
 export class C2SLoginMojangPacket extends Object implements AxochatPacket$C2S {
     constructor(name: string, uuid: UUID, allowMessages: boolean)

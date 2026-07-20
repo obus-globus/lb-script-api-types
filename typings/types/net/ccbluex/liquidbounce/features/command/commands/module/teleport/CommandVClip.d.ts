@@ -12,7 +12,7 @@ import type { VoxelShape } from '../../../../../../../../net/minecraft/world/phy
  *
  * Module: {@link ModuleTeleport}
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5fb8050f7806fb9d37e33d22e5a85de863329bac/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/module/teleport/CommandVClip.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/module/teleport/CommandVClip.kt:46}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/44f9e1b21249da9b34607f109f31011678e0f7ca/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/module/teleport/CommandVClip.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/module/teleport/CommandVClip.kt:46}
  */
 export class CommandVClip extends Object implements Command$Factory {
     static INSTANCE: CommandVClip;

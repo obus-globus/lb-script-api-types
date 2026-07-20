@@ -7,7 +7,7 @@ import type { VelocityMode } from '../../../../../../../../../net/ccbluex/liquid
  * A velocity mode that reverses your velocity after a set amount of ticks.
  * Default values bypass Vulcan (3/9/25) ~ anticheat-test.com
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5fb8050f7806fb9d37e33d22e5a85de863329bac/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityReversal.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityReversal.kt:32}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/44f9e1b21249da9b34607f109f31011678e0f7ca/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityReversal.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityReversal.kt:32}
  */
 export class VelocityReversal extends VelocityMode {
     static Companion: Tagged$Companion;

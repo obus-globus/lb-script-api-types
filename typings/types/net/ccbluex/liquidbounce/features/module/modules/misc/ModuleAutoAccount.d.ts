@@ -10,7 +10,7 @@ import type { ModuleAutoAccount$MessageSource } from '../../../../../../../net/c
  *
  * Command: {@link CommandAutoAccount}
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5fb8050f7806fb9d37e33d22e5a85de863329bac/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleAutoAccount.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleAutoAccount.kt:42}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/44f9e1b21249da9b34607f109f31011678e0f7ca/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleAutoAccount.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleAutoAccount.kt:42}
  */
 export class ModuleAutoAccount extends ClientModule {
     static INSTANCE: ModuleAutoAccount;
@@ -28,6 +28,8 @@ export class ModuleAutoAccount extends ClientModule {
     // private /*not mapped: */ getRegisterCommand(): string;
     // private registerRegex: Regex;
     // private /*not mapped: */ getRegisterRegex(): Regex;
+    // private repeatPasswordOnRegister: boolean;
+    // private /*not mapped: */ getRepeatPasswordOnRegister(): boolean;
     readonly running: boolean;
     // private sending: boolean;
     /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */

@@ -28453,7 +28453,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleAutoAccount.kt",
-          "line": 61
+          "line": 63
         }
       }
     ],
@@ -28470,7 +28470,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleAutoAccount.kt",
-          "line": 78
+          "line": 80
         },
         "suspend": true
       }
@@ -28494,7 +28494,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleAutoAccount.kt",
-          "line": 96
+          "line": 100
         }
       }
     ],
@@ -28504,7 +28504,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleAutoAccount.kt",
-          "line": 86
+          "line": 88
         }
       }
     ],
@@ -28514,7 +28514,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleAutoAccount.kt",
-          "line": 74
+          "line": 76
         }
       }
     ],
@@ -28524,7 +28524,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleAutoAccount.kt",
-          "line": 91
+          "line": 93
         }
       }
     ],
