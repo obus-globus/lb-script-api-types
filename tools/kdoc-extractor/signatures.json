@@ -41378,7 +41378,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockESP.kt",
-          "line": 311
+          "line": 313
         }
       }
     ],
@@ -41401,7 +41401,7 @@
         "returns": "TrackedState?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockESP.kt",
-          "line": 316
+          "line": 318
         }
       }
     ],
@@ -41411,7 +41411,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockESP.kt",
-          "line": 324
+          "line": 326
         }
       }
     ],
@@ -41421,7 +41421,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockESP.kt",
-          "line": 133
+          "line": 135
         }
       }
     ],
@@ -41431,7 +41431,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockESP.kt",
-          "line": 215
+          "line": 217
         }
       }
     ],
@@ -41448,7 +41448,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockESP.kt",
-          "line": 93
+          "line": 95
         }
       }
     ],
@@ -41458,7 +41458,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockESP.kt",
-          "line": 105
+          "line": 107
         }
       }
     ],
@@ -41481,7 +41481,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockESP.kt",
-          "line": 110
+          "line": 112
         }
       }
     ],
@@ -41491,7 +41491,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockESP.kt",
-          "line": 99
+          "line": 101
         }
       }
     ],
@@ -41514,7 +41514,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockESP.kt",
-          "line": 313
+          "line": 315
         }
       }
     ],
@@ -41537,7 +41537,7 @@
         "returns": "List<PositionedVoxelShape<BlockMergeKey>>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockESP.kt",
-          "line": 291
+          "line": 293
         }
       }
     ],
@@ -41554,7 +41554,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockESP.kt",
-          "line": 281
+          "line": 283
         }
       }
     ],
@@ -41564,7 +41564,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockESP.kt",
-          "line": 277
+          "line": 279
         }
       }
     ],
@@ -41574,7 +41574,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockESP.kt",
-          "line": 272
+          "line": 274
         }
       }
     ],
@@ -41584,7 +41584,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockESP.kt",
-          "line": 268
+          "line": 270
         }
       }
     ],
