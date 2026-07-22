@@ -18,13 +18,14 @@ import type { Component } from '../../../../../../../net/minecraft/network/chat/
  *
  * @author Izuna <izuna.seikatsu@ccbluex.net>
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/external/ExternalSystemBrowserBackend.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/external/ExternalSystemBrowserBackend.kt:40}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/external/ExternalSystemBrowserBackend.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/external/ExternalSystemBrowserBackend.kt:40}
  */
 export class ExternalSystemBrowserBackend extends Object implements EventListener, BrowserBackend {
     constructor()
     accelerationFlags: BrowserAccelerationFlags;
     browsers: ExternalSystemBrowser[];
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     // private isInitialized: boolean;
     /*not mapped: */ isInitialized(): boolean;
     readonly running: boolean;

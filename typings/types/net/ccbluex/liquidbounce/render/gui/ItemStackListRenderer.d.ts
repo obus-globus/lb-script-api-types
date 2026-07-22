@@ -18,6 +18,7 @@ export class ItemStackListRenderer extends Object implements EventListener {
     static createItemStackForRendering(self: Block, count: number): ItemStack;
     // private block2Item: JavaMap<Block, Item>;
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     // private overlapRearranger: GuiOverlapRearranger;
     // private overlayRenderHandler: EventHook<OverlayRenderEvent>;
     // private planned: ItemStackListRenderState[];

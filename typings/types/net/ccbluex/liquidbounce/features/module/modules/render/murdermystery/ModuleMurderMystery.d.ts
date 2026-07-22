@@ -13,6 +13,7 @@ export class ModuleMurderMystery extends ClientModule {
     static INSTANCE: ModuleMurderMystery;
     // private /*not mapped: */ getCurrentMode(): MurderMysteryMode;
     readonly modes: ModeValueGroup<MurderMysteryMode>;
+    getModes(): ModeValueGroup<MurderMysteryMode>;
     readonly packetHandler: EventHook<PacketEvent>;
     playBow: boolean;
     playHurt: boolean;

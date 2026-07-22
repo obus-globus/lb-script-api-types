@@ -10,6 +10,7 @@ export class InteractionTracker extends Object implements EventListener {
     readonly blockingHand: InteractionHand | null;
     readonly currentInteraction: InteractionTracker$Interaction | null;
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     // private doNotHandle: boolean;
     /*not mapped: */ isBlocking(): boolean;
     /*not mapped: */ isMainHand(): boolean;

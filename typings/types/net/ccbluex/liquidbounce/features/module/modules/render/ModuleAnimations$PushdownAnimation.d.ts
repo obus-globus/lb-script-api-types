@@ -8,7 +8,7 @@ import type { HumanoidArm } from '../../../../../../../net/minecraft/world/entit
  *
  * This animation is not the same as the original, but it is similar.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAnimations.kt#L163 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAnimations.kt:163}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAnimations.kt#L163 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAnimations.kt:163}
  */
 export class ModuleAnimations$PushdownAnimation extends ModuleAnimations$AnimationMode {
     static Companion: Tagged$Companion;

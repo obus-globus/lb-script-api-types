@@ -4,6 +4,7 @@ export class IntIntValuePair extends Object {
 // (invalid TS: name contains '-')     static component1-impl(): number;
 // (invalid TS: name contains '-')     static component2-impl(): number;
 // (invalid TS: name contains '-')     static constructor-impl(paramarg0: number, paramarg1: number): number;
+// (invalid TS: name contains '-')     static constructor-impl(paramarg0: number): number;
 // (invalid TS: name contains '-')     static equals-impl(other: Object | null): boolean;
 // (invalid TS: name contains '-')     static equals-impl0(paramarg0: number, paramarg1: number): boolean;
 // (invalid TS: name contains '-')     static getLeft-impl(paramarg0: number): number;
@@ -11,7 +12,8 @@ export class IntIntValuePair extends Object {
 // (invalid TS: name contains '-')     static hashCode-impl(): number;
 // (invalid TS: name contains '-')     static toString-impl(): string;
     constructor(left: number, right: number)
-    // private bits: number;
+    constructor(bits: number)
+    bits: number;
 // (invalid TS: name contains '-')     /*not mapped: */ getLeft-impl(): number;
 // (invalid TS: name contains '-')     /*not mapped: */ getRight-impl(): number;
     component1(): number;

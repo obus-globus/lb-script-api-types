@@ -8,7 +8,7 @@ import type { MovePacketType } from '../../../../../../../../../net/ccbluex/liqu
 /**
  * Packet criticals mode
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/criticals/modes/CriticalsPacket.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/criticals/modes/CriticalsPacket.kt:36}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/criticals/modes/CriticalsPacket.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/criticals/modes/CriticalsPacket.kt:36}
  */
 export class CriticalsPacket extends Mode {
     static Companion: Tagged$Companion;

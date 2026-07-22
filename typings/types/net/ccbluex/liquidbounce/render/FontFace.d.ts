@@ -11,7 +11,7 @@ export class FontFace extends Object {
     /**
      * The file of the font. If the font is a system font, this will be null.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/render/FontFace.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/render/FontFace.kt:38}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/render/FontFace.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/render/FontFace.kt:38}
      */
     readonly file: File | null;
     readonly filledStyles: FontId[];
@@ -28,7 +28,7 @@ export class FontFace extends Object {
     /**
      * @see java.lang.String.hashCode
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/render/FontFace.kt#L132 | src/main/kotlin/net/ccbluex/liquidbounce/render/FontFace.kt:132}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/render/FontFace.kt#L132 | src/main/kotlin/net/ccbluex/liquidbounce/render/FontFace.kt:132}
      */
     hashCode(): number;
     style(style: number): FontId | null;

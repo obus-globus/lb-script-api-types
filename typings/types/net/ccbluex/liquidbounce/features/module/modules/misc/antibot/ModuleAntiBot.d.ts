@@ -13,6 +13,7 @@ export class ModuleAntiBot extends ClientModule {
     // private literalNPC: boolean;
     // private /*not mapped: */ getLiteralNPC(): boolean;
     readonly modes: ModeValueGroup<AntiBotMode>;
+    getModes(): ModeValueGroup<AntiBotMode>;
     // private notInTabList: boolean;
     // private /*not mapped: */ getNotInTabList(): boolean;
     // private tagHandler: EventHook<TagEntityEvent>;
@@ -20,7 +21,7 @@ export class ModuleAntiBot extends ClientModule {
     /**
      * Check if player might be a bot
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/ModuleAntiBot.kt#L86 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/ModuleAntiBot.kt:86}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/ModuleAntiBot.kt#L86 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/ModuleAntiBot.kt:86}
      */
     isBot(player: Entity): boolean;
     /**
@@ -28,7 +29,7 @@ export class ModuleAntiBot extends ClientModule {
      *
      * Used to prevent false positives when a player is on a minigame such as Practice and joins a duel
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/ModuleAntiBot.kt#L79 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/ModuleAntiBot.kt:79}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/ModuleAntiBot.kt#L79 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/ModuleAntiBot.kt:79}
      */
     isGameProfileUnique(profile: GameProfile): boolean;
     // private isMissingFromTabList(player: Player): boolean;

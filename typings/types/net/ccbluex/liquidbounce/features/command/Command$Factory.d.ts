@@ -3,13 +3,13 @@ import type { Command } from '../../../../../net/ccbluex/liquidbounce/features/c
 /**
  * Provides a {@link Command} to the {@link CommandManager}.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L275 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:275}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L278 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:278}
  */
 export interface Command$Factory extends Object{
     /**
      * Creates the {@link Command} and is run only once by the {@link CommandManager}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L280 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:280}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L283 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:283}
      */
     createCommand(): Command;
 }

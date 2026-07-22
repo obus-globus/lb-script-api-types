@@ -20,6 +20,7 @@ export class ActiveServerList extends Object implements EventListener {
     // private cannotConnectText: MutableComponent;
     // private cannotResolveText: MutableComponent;
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     // private lanDetector: LanServerDetection$LanServerDetector | null;
     // private lanServerList: LanServerDetection$LanServerList;
     // private lanServers: JavaMap<string, ServerData>;

@@ -19,6 +19,7 @@ export class BlurEffectRenderer extends Object implements EventListener, Minecra
     // private blurBlendUniform: CachedUniform<BlurEffectRenderer$BlurBlendUniform>;
     // private blurKernelUniform: CachedUniform<BlurEffectRenderer$BlurKernelUniform>;
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     readonly gpuDevice: GpuDevice;
     readonly interaction: MultiPlayerGameMode;
     // private intermediateTarget: LazyRenderTargetHolder;

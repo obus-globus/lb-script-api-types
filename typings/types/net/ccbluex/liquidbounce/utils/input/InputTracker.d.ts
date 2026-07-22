@@ -9,11 +9,12 @@ import type { Component } from '../../../../../net/minecraft/network/chat/Compon
  * It listens for mouse button events and provides utility functions to check if
  * a key or mouse button is currently pressed or was recently pressed.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt:35}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt:35}
  */
 export class InputTracker extends Object implements EventListener {
     static INSTANCE: InputTracker;
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     // private handleMouseAction: EventHook<MouseButtonEvent>;
     // private keyLastPressed: JavaMap<any, any>;
     // private mouseLastPressed: number[];
@@ -26,7 +27,7 @@ export class InputTracker extends Object implements EventListener {
      * @param keyCode The GLFW key code.
      * @returns Milliseconds since last press, or Long.MAX_VALUE if never pressed.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt#L178 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt:178}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt#L178 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt:178}
      */
     getTimeSinceKeyPress(keyCode: number): number;
     /**
@@ -35,7 +36,7 @@ export class InputTracker extends Object implements EventListener {
      * @param button The GLFW code of the mouse button.
      * @returns Milliseconds since last press, or Long.MAX_VALUE if never pressed.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt#L150 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt:150}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt#L150 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt:150}
      */
     getTimeSinceMousePress(button: number): number;
     /**
@@ -44,7 +45,7 @@ export class InputTracker extends Object implements EventListener {
      * @param button The GLFW code of the mouse button.
      * @returns True if the mouse button is pressed, false otherwise.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt#L130 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt:130}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt#L130 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt:130}
      */
     isMouseButtonPressed(button: number): boolean;
     parent(): EventListener | null;
@@ -57,7 +58,7 @@ export class InputTracker extends Object implements EventListener {
      * @param withinMs The time window in milliseconds to check within.
      * @returns True if the key was pressed within the specified time, false otherwise.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt#L167 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt:167}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt#L167 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt:167}
      */
     wasKeyPressedRecently(keyCode: number, withinMs: number): boolean;
     /**
@@ -67,7 +68,7 @@ export class InputTracker extends Object implements EventListener {
      * @param withinMs The time window in milliseconds to check within.
      * @returns True if the mouse button was pressed within the specified time, false otherwise.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt#L139 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt:139}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt#L139 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt:139}
      */
     wasMouseButtonPressedRecently(button: number, withinMs: number): boolean;
 }

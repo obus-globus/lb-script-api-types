@@ -15,12 +15,13 @@ import type { Component } from '../../../../../net/minecraft/network/chat/Compon
 /**
  * A fairly simple module manager
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt#L281 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt:281}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt#L281 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt:281}
  */
 export class ModuleManager extends Object implements EventListener {
     static INSTANCE: ModuleManager;
     // private SMART_MOUSE_HOLD_THRESHOLD_MS: number;
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     // private handleDisconnect: EventHook<DisconnectEvent>;
     // private handleWorldChange: EventHook<WorldChangeEvent>;
     // private keyboardKeyHandler: EventHook<KeyboardKeyEvent>;

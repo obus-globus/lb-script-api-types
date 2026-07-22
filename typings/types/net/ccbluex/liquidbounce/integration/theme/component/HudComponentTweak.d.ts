@@ -5,7 +5,7 @@ import type { Tagged$Companion } from '../../../../../../net/ccbluex/liquidbounc
 /**
  * A set of tweaks that can be applied to the Original HUD by the component
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponentTweak.kt#L27 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponentTweak.kt:27}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponentTweak.kt#L27 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponentTweak.kt:27}
  */
 export class HudComponentTweak extends Enum<HudComponentTweak> implements Tagged {
     static Companion: Tagged$Companion;

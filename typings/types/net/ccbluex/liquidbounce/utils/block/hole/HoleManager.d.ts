@@ -18,6 +18,7 @@ export class HoleManager extends Object implements EventListener, MinecraftShort
     static INSTANCE: HoleManager;
     // private activeModules: HoleManagerSubscriber[];
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     readonly gpuDevice: GpuDevice;
     readonly interaction: MultiPlayerGameMode;
     readonly mc: Minecraft;

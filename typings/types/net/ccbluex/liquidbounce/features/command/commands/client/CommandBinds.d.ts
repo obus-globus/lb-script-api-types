@@ -8,7 +8,7 @@ import type { ClientModule } from '../../../../../../../net/ccbluex/liquidbounce
  * Allows you to manage the bindings of modules to keys.
  * It provides subcommands to add, remove, list and clear bindings.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandBinds.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandBinds.kt:61}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandBinds.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandBinds.kt:61}
  */
 export class CommandBinds extends Object implements Command$Factory {
     static INSTANCE: CommandBinds;

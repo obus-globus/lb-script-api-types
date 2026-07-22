@@ -5,6 +5,7 @@ import type { Vec2 } from '../../../../../../../../../../net/minecraft/world/phy
 export class NoSlowBlock extends NoSlowUseActionHandler {
     static INSTANCE: NoSlowBlock;
     readonly modes: ModeValueGroup<Mode>;
+    getModes(): ModeValueGroup<Mode>;
     // private onlySlowOnServerSide: boolean;
     // private /*not mapped: */ getOnlySlowOnServerSide(): boolean;
     readonly running: boolean;

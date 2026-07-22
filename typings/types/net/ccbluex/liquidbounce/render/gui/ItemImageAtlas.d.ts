@@ -11,6 +11,7 @@ export class ItemImageAtlas extends Object implements EventListener {
     static INSTANCE: ItemImageAtlas;
     // private atlas: Atlas | null;
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     /*not mapped: */ isAtlasAvailable(): boolean;
     // private resourceReloadHandler: EventHook<ResourceReloadEvent>;
     readonly running: boolean;

@@ -22,6 +22,7 @@ export class ScreenManager extends Object implements EventListener {
     static isClientScreen(screen: Screen | null): boolean;
     readonly browserSettings: IntegrationBrowserSettings;
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     // private effectUpdateHandler: EventHook<GameTickEvent>;
     // private fpsLimitHandler: EventHook<FpsLimitEvent>;
     // private handleBrowserReady: EventHook<BrowserReadyEvent>;

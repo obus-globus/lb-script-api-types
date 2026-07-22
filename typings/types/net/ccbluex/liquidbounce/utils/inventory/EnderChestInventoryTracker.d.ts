@@ -18,6 +18,7 @@ export class EnderChestInventoryTracker extends Object implements EventListener,
     static INSTANCE: EnderChestInventoryTracker;
     // private DEFAULT: ItemStack[];
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     // private disconnectHandler: EventHook<DisconnectEvent>;
     // private flow: MutableStateFlow<ItemStack[]>;
     readonly gpuDevice: GpuDevice;

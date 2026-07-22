@@ -6,6 +6,7 @@ export class RenderingDebug extends Object implements DebuggedOwner {
     static flipFrame(): void;
     static increaseRenderPassCount(): void;
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     readonly renderPassCount: number;
     flipFrame(): void;
     increaseRenderPassCount(): void;

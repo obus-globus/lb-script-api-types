@@ -27,6 +27,7 @@ export class ChunkScanner extends Object implements EventListener, MinecraftShor
     static INSTANCE: ChunkScanner;
     // private chunkLoadHandler: EventHook<ChunkLoadEvent>;
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     // private dispatcher: CoroutineDispatcher;
     readonly gpuDevice: GpuDevice;
     readonly interaction: MultiPlayerGameMode;
@@ -45,7 +46,7 @@ export class ChunkScanner extends Object implements EventListener, MinecraftShor
     /**
      * Cancel all existing enqueue(emit) jobs and scanner jobs
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt#L158 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt:158}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt#L158 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt:158}
      */
     cancelCurrentJobs(): void;
     children(): EventListener[];

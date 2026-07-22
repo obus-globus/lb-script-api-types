@@ -4,4 +4,5 @@ import type { CrosshairMode } from '../../../../../../../../net/ccbluex/liquidbo
 export class ModuleCrosshair extends ClientModule {
     static INSTANCE: ModuleCrosshair;
     readonly modes: ModeValueGroup<CrosshairMode>;
+    getModes(): ModeValueGroup<CrosshairMode>;
 }

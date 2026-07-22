@@ -11,7 +11,7 @@ import type { PlayerJumpEvent } from '../../../../../../../../../net/ccbluex/liq
  * @testedOn pika.host
  * @anticheat Polar
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/spider/modes/SpiderPolar29thMarch2025.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/spider/modes/SpiderPolar29thMarch2025.kt:36}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/spider/modes/SpiderPolar29thMarch2025.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/spider/modes/SpiderPolar29thMarch2025.kt:36}
  */
 export class SpiderPolar29thMarch2025 extends Mode {
     static Companion: Tagged$Companion;

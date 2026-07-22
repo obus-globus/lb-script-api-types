@@ -5,12 +5,13 @@ import type { Component } from '../../../../../../../../../net/minecraft/network
 /**
  * Options Define when the CA should run. Only tick is the most legit.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/trigger/Trigger.kt#L28 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/trigger/Trigger.kt:28}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/trigger/Trigger.kt#L28 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/trigger/Trigger.kt:28}
  */
 export abstract class Trigger extends Object implements EventListener {
     constructor(name: string, default_: boolean)
     readonly allowsCaching: boolean;
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     readonly default: boolean;
     readonly enabled: boolean;
     readonly name: string;

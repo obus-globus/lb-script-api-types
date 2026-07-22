@@ -10,6 +10,7 @@ import type { StringBuilderWriter } from '../../../../../../../org/apache/common
 export class SocketEventListener extends Object implements EventListener {
     static INSTANCE: SocketEventListener;
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     // private events: JavaMap<string, Class<Event>>;
     // private registeredEvents: JavaMap<Class<Event>, EventHook<Event>>;
     readonly running: boolean;

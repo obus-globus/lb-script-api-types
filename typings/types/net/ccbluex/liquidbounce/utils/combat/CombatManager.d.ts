@@ -7,7 +7,7 @@ import type { Component } from '../../../../../net/minecraft/network/chat/Compon
 /**
  * A rotation manager
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatManager.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatManager.kt:35}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatManager.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatManager.kt:35}
  */
 export class CombatManager extends Object implements EventListener {
     static INSTANCE: CombatManager;
@@ -15,6 +15,7 @@ export class CombatManager extends Object implements EventListener {
     PAUSE_COMBAT: number;
     readonly attackHandler: EventHook<AttackEntityEvent>;
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     duringCombat: number;
     /*not mapped: */ isInCombat(): boolean;
     // private pauseBlocking: number;
@@ -34,7 +35,7 @@ export class CombatManager extends Object implements EventListener {
     /**
      * Update current rotation to new rotation step
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatManager.kt#L76 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatManager.kt:76}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatManager.kt#L76 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatManager.kt:76}
      */
     update(): void;
     // private updateDuringCombat(): void;

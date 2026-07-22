@@ -7,6 +7,7 @@ import type { GameTickEvent } from '../../../../../../net/ccbluex/liquidbounce/e
 import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
 export class ScriptAsyncUtil$TickScheduler extends Object implements EventListener {
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     // private pendingList: () => boolean[];
     readonly running: boolean;
     // private runningList: () => boolean[];

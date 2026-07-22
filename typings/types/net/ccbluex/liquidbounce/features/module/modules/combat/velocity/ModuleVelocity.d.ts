@@ -9,13 +9,14 @@ import type { VelocityMode } from '../../../../../../../../net/ccbluex/liquidbou
  *
  * Modifies the amount of velocity you take.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/ModuleVelocity.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/ModuleVelocity.kt:55}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/ModuleVelocity.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/ModuleVelocity.kt:55}
  */
 export class ModuleVelocity extends ClientModule {
     static INSTANCE: ModuleVelocity;
     // private delay: { start: number; endInclusive: number; step: number };
     // private /*not mapped: */ getDelay(): { start: number; endInclusive: number; step: number };
     readonly modes: ModeValueGroup<VelocityMode>;
+    getModes(): ModeValueGroup<VelocityMode>;
     // private packetHandler: EventHook<PacketEvent>;
     // private pause: number;
     /*not mapped: */ getPause$net_ccbluex_liquidbounce(): number;

@@ -7,7 +7,7 @@ import type { ClientModule } from '../../../../../../../net/ccbluex/liquidbounce
  *
  * Automatically speeds up when you are near an enemy.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleTimerRange.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleTimerRange.kt:40}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleTimerRange.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleTimerRange.kt:40}
  */
 export class ModuleTimerRange extends ClientModule {
     static INSTANCE: ModuleTimerRange;

@@ -11,6 +11,7 @@ export class FriendManager extends Config implements EventListener {
     // private cancelAttack: boolean;
     // private /*not mapped: */ getCancelAttack(): boolean;
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     readonly friends: FriendManager$Friend[];
     // private onAttack: EventHook<AttackEntityEvent>;
     readonly running: boolean;

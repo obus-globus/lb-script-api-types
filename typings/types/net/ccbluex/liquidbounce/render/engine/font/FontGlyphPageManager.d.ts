@@ -21,6 +21,7 @@ export class FontGlyphPageManager extends Object implements AutoCloseable, Event
     // private closed: AtomicBoolean;
     // private commonHanWarmupJob: Job | null;
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     // private dynamicFontManager: DynamicFontCacheManager;
     // private dynamicPage: DynamicGlyphPage;
     // private dynamicallyLoadedGlyphs: JavaMap<GlyphIdentifier, GlyphDescriptor>;

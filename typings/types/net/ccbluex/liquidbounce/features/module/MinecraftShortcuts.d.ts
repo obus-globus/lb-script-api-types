@@ -13,7 +13,7 @@ import type { LocalPlayer } from '../../../../../net/minecraft/client/player/Loc
  * we are sure that the client is in-game, if not
  * fiddling with the handler code.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/features/module/MinecraftShortcuts.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/MinecraftShortcuts.kt:37}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/module/MinecraftShortcuts.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/MinecraftShortcuts.kt:37}
  */
 export interface MinecraftShortcuts extends Object{
     readonly gpuDevice: GpuDevice;

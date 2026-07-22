@@ -6,10 +6,11 @@ import type { ClientModule } from '../../../../../../../net/ccbluex/liquidbounce
  *
  * Changes the speed of the entire game.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleTimer.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleTimer.kt:44}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleTimer.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleTimer.kt:44}
  */
 export class ModuleTimer extends ClientModule {
     static INSTANCE: ModuleTimer;
     readonly modes: ModeValueGroup<Mode>;
+    getModes(): ModeValueGroup<Mode>;
     onDisabled(): void;
 }

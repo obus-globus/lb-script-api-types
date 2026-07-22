@@ -30,6 +30,7 @@ export class RoundedRectGuiElementRenderState extends Record implements PoseReus
     pipeline(): RenderPipeline;
     pose(): Matrix3x2f;
     radius(): number;
+    recycle(): void;
     scissorArea(): ScreenRectangle;
     textureSetup(): TextureSetup;
     toString(): string;

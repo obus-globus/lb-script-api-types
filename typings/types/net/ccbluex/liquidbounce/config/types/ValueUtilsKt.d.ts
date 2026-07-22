@@ -5,10 +5,11 @@ import type { Value } from '../../../../../net/ccbluex/liquidbounce/config/types
 import type { EventListener } from '../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
 import type { DynamicTexture } from '../../../../../net/minecraft/client/renderer/texture/DynamicTexture.d.ts'
 export class ValueUtilsKt extends Object {
+    static mapReadOnly<R extends unknown, T extends unknown>(self: Value<T>, transform: (param0: T) => R): ReadOnlyProperty<Object, R>;
     /**
      * Convert the {@link FileValue} to a {@link ReadOnlyProperty} of {@link DynamicTexture}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/config/types/ValueUtils.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/ValueUtils.kt:46}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/config/types/ValueUtils.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/ValueUtils.kt:60}
      */
     static toTextureProperty<V extends EventListener & Value<Object>>(self: FileValue, owner: V, printErrorToChat: boolean): ReadOnlyProperty<Object, DynamicTexture>;
 }

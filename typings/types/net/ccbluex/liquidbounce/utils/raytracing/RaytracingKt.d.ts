@@ -15,7 +15,7 @@ export class RaytracingKt extends Object {
      *
      * @see net.minecraft.world.entity.LivingEntity.hasLineOfSight
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/utils/raytracing/Raytracing.kt#L95 | src/main/kotlin/net/ccbluex/liquidbounce/utils/raytracing/Raytracing.kt:95}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/utils/raytracing/Raytracing.kt#L95 | src/main/kotlin/net/ccbluex/liquidbounce/utils/raytracing/Raytracing.kt:95}
      */
     static hasLineOfSight(paramarg0: Vec3, paramarg1: Vec3): boolean;
     static hasLineOfSight(eyes: Vec3, vec3: Vec3, entity: Entity): boolean;

@@ -12,7 +12,7 @@ import type { LivingEntity } from '../../../../../../../../net/minecraft/world/e
  *
  * @author sqlerrorthing
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/elytratarget/ModuleElytraTarget.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/elytratarget/ModuleElytraTarget.kt:38}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/elytratarget/ModuleElytraTarget.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/elytratarget/ModuleElytraTarget.kt:38}
  */
 export class ModuleElytraTarget extends ClientModule {
     static INSTANCE: ModuleElytraTarget;

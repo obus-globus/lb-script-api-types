@@ -9,14 +9,14 @@ export class FallingPlayerKt extends Object {
      * Follows Minecraft 26.2 {@code Entity.collectCandidateStepUpHeights()} and
      * {@code Entity.collideWithShapes()} when selecting a step-up movement.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt#L341 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt:341}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt#L341 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt:341}
      */
     static resolveStepUpMovement(movement: Vec3, directMovement: Vec3, boundingBox: AABB, groundedBox: AABB, maxUpStep: number, colliders: VoxelShape[]): Vec3;
     /**
      * Mirrors Minecraft 26.2 {@code CollisionGetter.findSupportingBlock()}: nearest first,
      * then the greater {@code BlockPos.compareTo()} position on an exact distance tie.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt#L401 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt:401}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt#L403 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt:403}
      */
     static selectSupportingBlock(candidates: Iterator<BlockPos>, position: Vec3): BlockPos | null;
 }

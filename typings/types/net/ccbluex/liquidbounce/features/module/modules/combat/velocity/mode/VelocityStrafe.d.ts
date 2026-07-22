@@ -7,7 +7,7 @@ import type { VelocityMode } from '../../../../../../../../../net/ccbluex/liquid
 /**
  * Strafe velocity
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityStrafe.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityStrafe.kt:39}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityStrafe.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityStrafe.kt:39}
  */
 export class VelocityStrafe extends VelocityMode {
     static Companion: Tagged$Companion;

@@ -9,11 +9,12 @@ export class GlobalBrowserSettings extends ValueGroup implements EventListener {
     /**
      * Uses GPU acceleration for rendering the browser.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserSettings.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserSettings.kt:52}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserSettings.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserSettings.kt:52}
      */
     readonly accelerated: Value<boolean> | null;
     // private browserReadyHandler: EventHook<BrowserReadyEvent>;
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     /**
      * Quality setting that controls the rendering resolution.
      * 1.0 = full resolution, 0.5 = half-resolution (better performance), etc.
@@ -21,7 +22,7 @@ export class GlobalBrowserSettings extends ValueGroup implements EventListener {
      * Unfortunately, this is a global setting that applies to all browsers,
      * as CEF is not letting us set a custom zoom level per browser.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserSettings.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserSettings.kt:45}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserSettings.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserSettings.kt:45}
      */
     readonly quality: number;
     readonly running: boolean;

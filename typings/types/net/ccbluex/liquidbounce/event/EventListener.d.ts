@@ -3,6 +3,7 @@ import type { DebuggedOwner } from '../../../../net/ccbluex/liquidbounce/feature
 import type { Component } from '../../../../net/minecraft/network/chat/Component.d.ts'
 export interface EventListener extends Object, DebuggedOwner{
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     /**
      * Returns whether the listenable is running or not, this is based on the parent listenable
      * and if no parent is present, it will return the opposite of {@link isDestructed}.
@@ -12,26 +13,26 @@ export interface EventListener extends Object, DebuggedOwner{
      *
      * This can be ignored by handlers when {@link ignoreNotRunning} is set to true on the {@link EventHook}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt:50}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt:50}
      */
     readonly running: boolean;
     /**
      * Children {@link EventListener}
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt:61}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt:61}
      */
     children(): EventListener[];
     /**
      * Parent {@link EventListener}
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt:56}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt:56}
      */
     parent(): EventListener | null;
     /**
      * Unregisters the event handler from the manager. This decision is FINAL!
      * After the class was unregistered we cannot restore the handlers.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt#L67 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt:67}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt#L67 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt:67}
      */
     unregister(): void;
 }

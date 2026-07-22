@@ -13,6 +13,7 @@ export class AccountManager extends Config implements EventListener {
     readonly accounts: MinecraftAccount[];
     // private activeUrl: string | null;
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     // private initialSession: SessionBundle;
     // private loggingIn: AtomicBoolean;
     readonly running: boolean;
@@ -27,13 +28,13 @@ export class AccountManager extends Config implements EventListener {
     /**
      * Cracked account. This can only be used to join cracked servers and not premium servers.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt#L119 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt:119}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt#L119 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt:119}
      */
     newCrackedAccount(username: string, online: boolean): void;
     /**
      * Create a new Microsoft Account using the OAuth2 flow which opens a browser window to authenticate the user
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt#L217 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt:217}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt#L217 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt:217}
      */
     newMicrosoftAccount(url: (param0: string) => void): void;
     // private newMicrosoftAccount(url: (param0: string) => void, success: (param0: MicrosoftAccount) => void, error: (param0: string) => void): void;

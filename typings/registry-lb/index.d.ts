@@ -240,6 +240,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.config.types.FileDialogMode$Companion": typeof import("../types/net/ccbluex/liquidbounce/config/types/FileDialogMode$Companion").FileDialogMode$Companion;
     "net.ccbluex.liquidbounce.config.types.FileValue": typeof import("../types/net/ccbluex/liquidbounce/config/types/FileValue").FileValue;
     "net.ccbluex.liquidbounce.config.types.FileValue$Companion": typeof import("../types/net/ccbluex/liquidbounce/config/types/FileValue$Companion").FileValue$Companion;
+    "net.ccbluex.liquidbounce.config.types.MutableProperty": typeof import("../types/net/ccbluex/liquidbounce/config/types/MutableProperty").MutableProperty;
     "net.ccbluex.liquidbounce.config.types.RangedValue": typeof import("../types/net/ccbluex/liquidbounce/config/types/RangedValue").RangedValue;
     "net.ccbluex.liquidbounce.config.types.RangedValue$Companion": typeof import("../types/net/ccbluex/liquidbounce/config/types/RangedValue$Companion").RangedValue$Companion;
     "net.ccbluex.liquidbounce.config.types.Value": typeof import("../types/net/ccbluex/liquidbounce/config/types/Value").Value;
@@ -247,6 +248,8 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.config.types.ValueType": typeof import("../types/net/ccbluex/liquidbounce/config/types/ValueType").ValueType;
     "net.ccbluex.liquidbounce.config.types.ValueUtilsKt": typeof import("../types/net/ccbluex/liquidbounce/config/types/ValueUtilsKt").ValueUtilsKt;
     "net.ccbluex.liquidbounce.config.types.Vec3Value": typeof import("../types/net/ccbluex/liquidbounce/config/types/Vec3Value").Vec3Value;
+    "net.ccbluex.liquidbounce.config.types.group.JsonValueFactoryKt": typeof import("../types/net/ccbluex/liquidbounce/config/types/group/JsonValueFactoryKt").JsonValueFactoryKt;
+    "net.ccbluex.liquidbounce.config.types.group.JsonValueFactoryKt$WhenMappings": typeof import("../types/net/ccbluex/liquidbounce/config/types/group/JsonValueFactoryKt$WhenMappings").JsonValueFactoryKt$WhenMappings;
     "net.ccbluex.liquidbounce.config.types.group.Mode": typeof import("../types/net/ccbluex/liquidbounce/config/types/group/Mode").Mode;
     "net.ccbluex.liquidbounce.config.types.group.ModeValueGroup": typeof import("../types/net/ccbluex/liquidbounce/config/types/group/ModeValueGroup").ModeValueGroup;
     "net.ccbluex.liquidbounce.config.types.group.NoneMode": typeof import("../types/net/ccbluex/liquidbounce/config/types/group/NoneMode").NoneMode;
@@ -2534,6 +2537,9 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.utils.kotlin.CollectionExtensionsKt": typeof import("../types/net/ccbluex/liquidbounce/utils/kotlin/CollectionExtensionsKt").CollectionExtensionsKt;
     "net.ccbluex.liquidbounce.utils.kotlin.ConcurrentExtensionsKt": typeof import("../types/net/ccbluex/liquidbounce/utils/kotlin/ConcurrentExtensionsKt").ConcurrentExtensionsKt;
     "net.ccbluex.liquidbounce.utils.kotlin.EventPriorityConvention": typeof import("../types/net/ccbluex/liquidbounce/utils/kotlin/EventPriorityConvention").EventPriorityConvention;
+    "net.ccbluex.liquidbounce.utils.kotlin.FloatFloatValuePair": typeof import("../types/net/ccbluex/liquidbounce/utils/kotlin/FloatFloatValuePair").FloatFloatValuePair;
+    "net.ccbluex.liquidbounce.utils.kotlin.FloatIntValuePair": typeof import("../types/net/ccbluex/liquidbounce/utils/kotlin/FloatIntValuePair").FloatIntValuePair;
+    "net.ccbluex.liquidbounce.utils.kotlin.IntFloatValuePair": typeof import("../types/net/ccbluex/liquidbounce/utils/kotlin/IntFloatValuePair").IntFloatValuePair;
     "net.ccbluex.liquidbounce.utils.kotlin.IntIntValuePair": typeof import("../types/net/ccbluex/liquidbounce/utils/kotlin/IntIntValuePair").IntIntValuePair;
     "net.ccbluex.liquidbounce.utils.kotlin.MapExtensionsKt": typeof import("../types/net/ccbluex/liquidbounce/utils/kotlin/MapExtensionsKt").MapExtensionsKt;
     "net.ccbluex.liquidbounce.utils.kotlin.OptionalExtensionsKt": typeof import("../types/net/ccbluex/liquidbounce/utils/kotlin/OptionalExtensionsKt").OptionalExtensionsKt;

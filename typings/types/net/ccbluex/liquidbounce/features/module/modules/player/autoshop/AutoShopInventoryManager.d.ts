@@ -10,6 +10,7 @@ export class AutoShopInventoryManager extends Object implements EventListener {
     static INSTANCE: AutoShopInventoryManager;
     // private currentInventoryItems: JavaMap<any, any>;
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     readonly inventoryItems: ItemStack[];
     // private onTick: EventHook<GameTickEvent>;
     // private pendingItems: JavaMap<any, any>;

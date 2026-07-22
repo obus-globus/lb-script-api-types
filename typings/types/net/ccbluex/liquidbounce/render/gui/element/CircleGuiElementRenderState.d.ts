@@ -27,6 +27,7 @@ export class CircleGuiElementRenderState extends Record implements PoseReusableG
     pipeline(): RenderPipeline;
     pose(): Matrix3x2f;
     radius(): number;
+    recycle(): void;
     scissorArea(): ScreenRectangle;
     textureSetup(): TextureSetup;
     toString(): string;

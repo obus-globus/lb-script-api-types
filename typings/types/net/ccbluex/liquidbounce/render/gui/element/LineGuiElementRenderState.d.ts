@@ -24,6 +24,7 @@ export class LineGuiElementRenderState extends Record implements PoseReusableGui
     pipeline(): RenderPipeline;
     points(): number[];
     pose(): Matrix3x2f;
+    recycle(): void;
     scissorArea(): ScreenRectangle;
     textureSetup(): TextureSetup;
     toString(): string;

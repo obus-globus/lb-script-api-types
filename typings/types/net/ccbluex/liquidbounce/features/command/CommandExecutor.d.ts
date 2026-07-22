@@ -11,7 +11,7 @@ import type { Component } from '../../../../../net/minecraft/network/chat/Compon
 /**
  * Links minecraft with the command engine
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandExecutor.kt#L63 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandExecutor.kt:63}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandExecutor.kt#L63 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandExecutor.kt:63}
  */
 export class CommandExecutor extends Object implements EventListener {
     static INSTANCE: CommandExecutor;
@@ -20,6 +20,7 @@ export class CommandExecutor extends Object implements EventListener {
     // private commandHistoryFile: File;
     // private coroutineExceptionHandler: CoroutineExceptionHandler;
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     // private isShuttingDown: boolean;
     readonly running: boolean;
     // private shutdownHandler: EventHook<ClientShutdownEvent>;

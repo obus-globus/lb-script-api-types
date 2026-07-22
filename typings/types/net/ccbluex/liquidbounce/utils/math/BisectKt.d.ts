@@ -5,7 +5,7 @@ export class BisectKt extends Object {
     /**
      * Finds the minimum between min and max.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/Bisect.kt#L27 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/Bisect.kt:27}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/Bisect.kt#L27 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/Bisect.kt:27}
      */
     static findFunctionMinimumByBisect(from: number, to: number, minDelta: number, function_: (param0: number) => number): DoubleDoublePair;
 }

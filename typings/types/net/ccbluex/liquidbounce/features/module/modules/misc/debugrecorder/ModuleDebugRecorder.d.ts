@@ -5,4 +5,5 @@ import type { ModuleDebugRecorder$DebugRecorderMode } from '../../../../../../..
 export class ModuleDebugRecorder extends ClientModule {
     static INSTANCE: ModuleDebugRecorder;
     readonly modes: ModeValueGroup<ModuleDebugRecorder$DebugRecorderMode<Object>>;
+    getModes(): ModeValueGroup<ModuleDebugRecorder$DebugRecorderMode<Object>>;
 }

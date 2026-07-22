@@ -15,7 +15,7 @@ import type { VoxelShape } from '../../../../../../../net/minecraft/world/phys/s
  *
  * Prevents you walking into blocks that might be malicious for you.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleAvoidHazards.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleAvoidHazards.kt:58}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleAvoidHazards.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleAvoidHazards.kt:58}
  */
 export class ModuleAvoidHazards extends ClientModule {
     static INSTANCE: ModuleAvoidHazards;

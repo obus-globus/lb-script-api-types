@@ -12,11 +12,12 @@ import type { Component } from '../../../../../net/minecraft/network/chat/Compon
  *
  * using 2x CRTL + SHIFT to hide and unhide the client
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/features/misc/HideAppearance.kt#L57 | src/main/kotlin/net/ccbluex/liquidbounce/features/misc/HideAppearance.kt:57}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/misc/HideAppearance.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/features/misc/HideAppearance.kt:58}
  */
 export class HideAppearance extends Object implements EventListener {
     static INSTANCE: HideAppearance;
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     // private isDestructed: boolean;
     /*not mapped: */ isDestructed(): boolean;
     // private isHidingNow: boolean;
@@ -29,7 +30,7 @@ export class HideAppearance extends Object implements EventListener {
     /**
      * Attempt to destruct the client
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/features/misc/HideAppearance.kt#L131 | src/main/kotlin/net/ccbluex/liquidbounce/features/misc/HideAppearance.kt:131}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/misc/HideAppearance.kt#L132 | src/main/kotlin/net/ccbluex/liquidbounce/features/misc/HideAppearance.kt:132}
      */
     destructClient(): void;
     parent(): EventListener | null;

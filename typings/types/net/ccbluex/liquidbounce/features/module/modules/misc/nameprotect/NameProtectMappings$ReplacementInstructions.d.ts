@@ -5,7 +5,7 @@ import type { Trie } from '../../../../../../../../org/ahocorasick/trie/Trie.d.t
 /**
  * It is important for synchronization purposes that this is a class with immutable fields
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/nameprotect/NameProtectMappings.kt#L127 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/nameprotect/NameProtectMappings.kt:127}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/nameprotect/NameProtectMappings.kt#L127 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/nameprotect/NameProtectMappings.kt:127}
  */
 export class NameProtectMappings$ReplacementInstructions extends Object {
     constructor(matcher: Trie, replacements: JavaMap<string, NameProtectMappings$MappingData>)

@@ -10,6 +10,7 @@ export class EntityTaggingManager extends Object implements EventListener {
     static INSTANCE: EntityTaggingManager;
     // private cache: JavaMap<Entity, EntityTag>;
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     readonly running: boolean;
     readonly tickHandler: EventHook<GameTickEvent>;
     children(): EventListener[];

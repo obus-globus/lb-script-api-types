@@ -7,6 +7,7 @@ export class NoSlowBow extends NoSlowUseActionHandler {
     static INSTANCE: NoSlowBow;
     // private animations: ItemUseAnimation[];
     readonly modes: ModeValueGroup<Mode>;
+    getModes(): ModeValueGroup<Mode>;
     // private noBlockInteract: NoSlowNoBlockInteract;
     readonly running: boolean;
 }

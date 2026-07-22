@@ -27,11 +27,12 @@ import type { Component } from '../../../../../../../net/minecraft/network/chat/
  *
  * The command supports active detection modes for more thorough analysis.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandServerInfo.kt#L64 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandServerInfo.kt:64}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandServerInfo.kt#L64 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandServerInfo.kt:64}
  */
 export class CommandServerInfo extends Object implements EventListener, Command$Factory {
     static INSTANCE: CommandServerInfo;
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     readonly running: boolean;
     children(): EventListener[];
     createCommand(): Command;

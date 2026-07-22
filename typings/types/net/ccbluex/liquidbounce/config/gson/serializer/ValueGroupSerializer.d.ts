@@ -11,19 +11,19 @@ export class ValueGroupSerializer extends Object implements JsonSerializer<Value
     /**
      * This serializer is used to serialize {@link ValueGroup}s to JSON
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/serializer/ValueGroupSerializer.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/serializer/ValueGroupSerializer.kt:43}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/serializer/ValueGroupSerializer.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/serializer/ValueGroupSerializer.kt:44}
      */
     static FILE_SERIALIZER: ValueGroupSerializer;
     /**
      * This serializer is used to serialize {@link ValueGroup}s to JSON for interop communication
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/serializer/ValueGroupSerializer.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/serializer/ValueGroupSerializer.kt:51}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/serializer/ValueGroupSerializer.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/serializer/ValueGroupSerializer.kt:52}
      */
     static INTEROP_SERIALIZER: ValueGroupSerializer;
     /**
      * This serializer is used to serialize {@link ValueGroup}s to JSON for public config
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/serializer/ValueGroupSerializer.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/serializer/ValueGroupSerializer.kt:59}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/serializer/ValueGroupSerializer.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/serializer/ValueGroupSerializer.kt:60}
      */
     static PUBLIC_SERIALIZER: ValueGroupSerializer;
     /**
@@ -32,7 +32,7 @@ export class ValueGroupSerializer extends Object implements JsonSerializer<Value
      * Used for interop communication by {@link ReadOnlyComponentSerializer}
      * and {@link ReadOnlyThemeSerializer}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/serializer/ValueGroupSerializer.kt#L70 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/serializer/ValueGroupSerializer.kt:70}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/serializer/ValueGroupSerializer.kt#L71 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/serializer/ValueGroupSerializer.kt:71}
      */
     static serializeReadOnly(valueGroup: ValueGroup, context: JsonSerializationContext): JsonObject;
     constructor(withValueType: boolean, includePrivate: boolean, includeNotAnOption: boolean)

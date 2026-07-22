@@ -11,7 +11,7 @@ import type { RemotePlayer } from '../../../../../../../net/minecraft/client/pla
  *
  * Suspends packets before they are sent to/received from the server.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleBlink.kt#L53 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleBlink.kt:53}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleBlink.kt#L53 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleBlink.kt:53}
  */
 export class ModuleBlink extends ClientModule {
     static INSTANCE: ModuleBlink;

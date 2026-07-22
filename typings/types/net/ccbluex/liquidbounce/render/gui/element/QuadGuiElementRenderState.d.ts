@@ -23,6 +23,7 @@ export class QuadGuiElementRenderState extends Record implements PoseReusableGui
     hashCode(): number;
     pipeline(): RenderPipeline;
     pose(): Matrix3x2f;
+    recycle(): void;
     scissorArea(): ScreenRectangle;
     textureSetup(): TextureSetup;
     toString(): string;

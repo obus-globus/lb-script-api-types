@@ -11,11 +11,12 @@ import type { Component } from '../../../../../../../net/minecraft/network/chat/
  *
  * Centers you at your current position.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandCenter.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandCenter.kt:37}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandCenter.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandCenter.kt:37}
  */
 export class CommandCenter extends Object implements EventListener, Command$Factory {
     static INSTANCE: CommandCenter;
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     // private moveHandler: EventHook<PlayerNetworkMovementTickEvent>;
     readonly running: boolean;
     state: CommandCenter$CenterHandlerState;

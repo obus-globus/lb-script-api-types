@@ -12,6 +12,7 @@ export class PlayerSimulationCache extends Object implements EventListener {
     static INSTANCE: PlayerSimulationCache;
     // private criticalMovementHandler: EventHook<MovementInputEvent>;
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     // private gameTickHandler: EventHook<GameTickEvent>;
     // private localPlayerCache: SimulatedPlayerCache | null;
     // private modalMovementHandler: EventHook<MovementInputEvent>;

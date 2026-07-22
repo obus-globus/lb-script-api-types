@@ -7,13 +7,14 @@ import type { ModuleSpeed$NotCondition } from '../../../../../../../../net/ccblu
  *
  * Allows you to move faster.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e56f181853dc858654c9fc909afec417d274473d/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/ModuleSpeed.kt#L64 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/ModuleSpeed.kt:64}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/ModuleSpeed.kt#L64 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/ModuleSpeed.kt:64}
  */
 export class ModuleSpeed extends ClientModule {
     static INSTANCE: ModuleSpeed;
     // private avoidEdgeBump: boolean;
     // private /*not mapped: */ getAvoidEdgeBump(): boolean;
     readonly modes: ModeValueGroup<Mode>;
+    getModes(): ModeValueGroup<Mode>;
     // private notCondition: ModuleSpeed$NotCondition[];
     // private /*not mapped: */ getNotCondition(): ModuleSpeed$NotCondition[];
     readonly running: boolean;

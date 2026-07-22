@@ -10,6 +10,7 @@ import type { Component } from '../../../../../net/minecraft/network/chat/Compon
 export class GlobalSettingsAutoTranslate extends ValueGroup implements TranslatorApi, EventListener {
     static INSTANCE: GlobalSettingsAutoTranslate;
     readonly debugDisplayName: Component;
+    readonly debugOwnerId: string;
     // private providers: ModeValueGroup<GoogleTranslateApi>;
     readonly running: boolean;
     children(): EventListener[];
