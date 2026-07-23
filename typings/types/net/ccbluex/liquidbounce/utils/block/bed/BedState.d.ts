@@ -7,7 +7,7 @@ import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 /**
  * Represents a bed state.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/bed/BedState.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/bed/BedState.kt:31}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/bed/BedState.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/bed/BedState.kt:31}
  */
 export class BedState extends Record {
     constructor(block: BedBlock, trackedBlockPos: BlockPos, pos: Vec3, surroundingBlocks: SurroundingBlock[], compactSurroundingBlocks: SurroundingBlock[])

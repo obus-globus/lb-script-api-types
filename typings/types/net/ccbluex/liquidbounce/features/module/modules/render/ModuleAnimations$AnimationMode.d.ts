@@ -6,7 +6,7 @@ import type { HumanoidArm } from '../../../../../../../net/minecraft/world/entit
 /**
  * A choice that aims to transform the held item transformation during the swing progress.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAnimations.kt#L119 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAnimations.kt:119}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAnimations.kt#L119 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAnimations.kt:119}
  */
 export abstract class ModuleAnimations$AnimationMode extends Mode {
     static Companion: Tagged$Companion;

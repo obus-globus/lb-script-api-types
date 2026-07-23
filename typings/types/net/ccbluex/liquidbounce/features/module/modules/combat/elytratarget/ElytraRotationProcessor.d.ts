@@ -42,7 +42,7 @@ export class ElytraRotationProcessor extends ValueGroup implements EventListener
      * Please do not use this ANYWHERE ELSE
      * This is only for {@link ModuleElytraTarget}
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/elytratarget/ElytraRotationProcessor.kt#L89 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/elytratarget/ElytraRotationProcessor.kt:89}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/elytratarget/ElytraRotationProcessor.kt#L89 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/elytratarget/ElytraRotationProcessor.kt:89}
      */
     process(rotationTarget: RotationTarget, currentRotation: Rotation, targetRotation: Rotation): Rotation;
     unregister(): void;

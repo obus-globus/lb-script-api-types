@@ -12,7 +12,7 @@ import type { TranslationResult } from '../../../../../../net/ccbluex/liquidboun
  *
  * The API ensures that the provided text is not empty before attempting to perform the translation.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorApi.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorApi.kt:34}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorApi.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorApi.kt:34}
  */
 export interface TranslatorApi extends Object{
     /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */

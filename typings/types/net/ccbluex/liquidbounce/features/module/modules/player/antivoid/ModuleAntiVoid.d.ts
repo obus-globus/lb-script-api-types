@@ -8,7 +8,7 @@ import type { Vec3 } from '../../../../../../../../net/minecraft/world/phys/Vec3
  * AntiVoid module protects the player from falling into the void by simulating
  * future movements and taking action if necessary.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/antivoid/ModuleAntiVoid.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/antivoid/ModuleAntiVoid.kt:42}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/antivoid/ModuleAntiVoid.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/antivoid/ModuleAntiVoid.kt:42}
  */
 export class ModuleAntiVoid extends ClientModule {
     static INSTANCE: ModuleAntiVoid;

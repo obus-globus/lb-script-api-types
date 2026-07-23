@@ -12,14 +12,14 @@ export class ItemCooldown extends ValueGroup {
      *
      * @see Player.getAttackStrengthScale
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/ItemCooldown.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/ItemCooldown.kt:44}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/ItemCooldown.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/ItemCooldown.kt:44}
      */
     cooldownProgress(baseTime: number): number;
     isCooldownPassed(ticks: number): boolean;
     /**
      * Generates a new cooldown based on the range that was set by the user.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/ItemCooldown.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/ItemCooldown.kt:50}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/ItemCooldown.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/ItemCooldown.kt:50}
      */
     newCooldown(): void;
 }

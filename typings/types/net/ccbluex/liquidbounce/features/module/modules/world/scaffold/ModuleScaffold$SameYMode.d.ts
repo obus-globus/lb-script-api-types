@@ -7,6 +7,7 @@ export class ModuleScaffold$SameYMode extends Enum<ModuleScaffold$SameYMode> imp
     static Companion: Tagged$Companion;
     static FALLING: ModuleScaffold$SameYMode;
     static HYPIXEL: ModuleScaffold$SameYMode;
+    static JUMP_KEY: ModuleScaffold$SameYMode;
     static OFF: ModuleScaffold$SameYMode;
     static ON: ModuleScaffold$SameYMode;
     static getEntries(): ModuleScaffold$SameYMode[];
@@ -16,5 +17,5 @@ export class ModuleScaffold$SameYMode extends Enum<ModuleScaffold$SameYMode> imp
     private constructor(tag: string, getTargetedBlockPos: (param0: BlockPos) => BlockPos | null)
     readonly getTargetedBlockPos: (param0: BlockPos) => BlockPos | null;
     readonly tag: string;
-    name(): "OFF" | "ON" | "FALLING" | "HYPIXEL";
+    name(): "OFF" | "ON" | "JUMP_KEY" | "FALLING" | "HYPIXEL";
 }

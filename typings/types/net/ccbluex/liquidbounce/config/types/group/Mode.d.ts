@@ -28,7 +28,7 @@ export abstract class Mode extends ValueGroup implements Tagged, EventListener, 
      * We check if the parent is active and if the mode is active, if so
      * we handle the events.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.kt#L132 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.kt:132}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.kt#L132 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.kt:132}
      */
     readonly running: boolean;
     readonly tag: string;

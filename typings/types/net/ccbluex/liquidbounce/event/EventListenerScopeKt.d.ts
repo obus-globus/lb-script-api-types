@@ -8,7 +8,7 @@ export class EventListenerScopeKt extends Object {
      *
      * All tasks will check {@link EventListener.running} on suspend.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt:50}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt:50}
      */
     static getEventListenerScope(paramarg0: EventListener): CoroutineScope;
     /**
@@ -16,7 +16,7 @@ export class EventListenerScopeKt extends Object {
      *
      * Remember to do this!
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt#L74 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt:74}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt#L74 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt:74}
      */
     static removeEventListenerScope(self: EventListener): void;
     /**
@@ -24,7 +24,7 @@ export class EventListenerScopeKt extends Object {
      * the listener's running state at suspension
      * to determine whether to resume the continuation.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt#L83 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt:83}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt#L83 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt:83}
      */
     static wrapContinuationInterceptor(self: EventListener, original: ContinuationInterceptor | null): ContinuationInterceptor;
 }

@@ -9724,7 +9724,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/ModuleScaffold.kt",
-      "line": 303
+      "line": 312
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.scaffold.ModuleScaffold.autoSpeed": {
@@ -9732,7 +9732,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/ModuleScaffold.kt",
-      "line": 261
+      "line": 270
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.scaffold.ModuleScaffold.towerMode": {
@@ -9740,7 +9740,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/ModuleScaffold.kt",
-      "line": 181
+      "line": 190
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.scaffold.ScaffoldBlockItemSelection.disallowedBlocksToPlace": {

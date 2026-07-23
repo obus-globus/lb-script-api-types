@@ -51697,7 +51697,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/ModuleScaffold.kt",
-          "line": 216
+          "line": 225
         }
       }
     ],
@@ -51707,7 +51707,7 @@
         "returns": "Int?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/ModuleScaffold.kt",
-          "line": 636
+          "line": 647
         }
       }
     ],
@@ -51717,7 +51717,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/ModuleScaffold.kt",
-          "line": 626
+          "line": 637
         }
       }
     ],
@@ -51734,7 +51734,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/ModuleScaffold.kt",
-          "line": 666
+          "line": 677
         }
       }
     ],
@@ -51757,7 +51757,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/ModuleScaffold.kt",
-          "line": 717
+          "line": 729
         }
       }
     ],
@@ -51774,7 +51774,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/ModuleScaffold.kt",
-          "line": 649
+          "line": 660
         }
       }
     ],
@@ -51784,7 +51784,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/ModuleScaffold.kt",
-          "line": 336
+          "line": 345
         }
       }
     ],
@@ -51794,7 +51794,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/ModuleScaffold.kt",
-          "line": 325
+          "line": 334
         }
       }
     ],
@@ -51804,7 +51804,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/ModuleScaffold.kt",
-          "line": 340
+          "line": 349
         }
       }
     ],
@@ -51827,7 +51827,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/ModuleScaffold.kt",
-          "line": 678
+          "line": 689
         }
       }
     ],
@@ -51844,7 +51844,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/ModuleScaffold.kt",
-          "line": 357
+          "line": 366
         }
       }
     ],

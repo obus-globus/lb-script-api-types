@@ -23,7 +23,7 @@ import type { Logger } from '../../../../../org/apache/logging/log4j/Logger.d.ts
  * shown immediately when account switches, but we can reduce the stress
  * on the API and the connection of the user.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt:49}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt:49}
  */
 export class CosmeticService extends ValueGroup implements EventListener {
     static INSTANCE: CosmeticService;
@@ -50,7 +50,7 @@ export class CosmeticService extends ValueGroup implements EventListener {
      * and then call out {@link done}.
      * It will only refresh when the REFRESH_DELAY has passed or when {@link force} is true.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt#L71 | src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt:71}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt#L71 | src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt:71}
      */
     refreshCarriers(force: boolean, done: () => void): void;
     /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */

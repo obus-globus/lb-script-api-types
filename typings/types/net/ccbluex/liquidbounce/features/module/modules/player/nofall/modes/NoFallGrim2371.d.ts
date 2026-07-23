@@ -8,7 +8,7 @@ import type { NoFallMode } from '../../../../../../../../../net/ccbluex/liquidbo
  *
  * @author XeContrast
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallGrim2371.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallGrim2371.kt:36}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallGrim2371.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallGrim2371.kt:36}
  */
 export class NoFallGrim2371 extends NoFallMode {
     static Companion: Tagged$Companion;

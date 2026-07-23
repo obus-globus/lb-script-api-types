@@ -21,7 +21,7 @@ export class GsonExtensionsKt extends Object {
     /**
      * Read JSON content
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt:43}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt:43}
      */
     static readJson<T extends unknown>(self: File, charset: Charset): T;
     static readJson<T extends unknown>(self: InputStream, charset: Charset): T;

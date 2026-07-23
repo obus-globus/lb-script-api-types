@@ -6,7 +6,7 @@ import type { RangedValueProvider } from '../../../../../net/ccbluex/liquidbounc
 /**
  * {@link ValueGroup.float} registered to the submodule directly.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RangedValueProvider.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RangedValueProvider.kt:60}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RangedValueProvider.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RangedValueProvider.kt:60}
  */
 export class FloatValueProvider extends Object implements RangedValueProvider {
     constructor(name: string, default_: number, range: ClosedFloatingPointRange<number>, suffix: string)

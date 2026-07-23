@@ -9,7 +9,7 @@ import type { PlayerMoveEvent } from '../../../../../../../../../../net/ccbluex/
  * @testedOn minecraft.vagdedes.com
  * @note spartan flags less if your motion is stable, that's why we use PlayerMoveEvent
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/spartan/FlySpartan524.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/spartan/FlySpartan524.kt:37}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/spartan/FlySpartan524.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/spartan/FlySpartan524.kt:37}
  */
 export class FlySpartan524 extends Mode {
     static Companion: Tagged$Companion;

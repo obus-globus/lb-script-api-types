@@ -9,7 +9,7 @@ import type { Component } from '../../../../../../../net/minecraft/network/chat/
  * such as loading configuration from an external source or an API
  * and listing available configurations.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandConfig.kt#L68 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandConfig.kt:68}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandConfig.kt#L68 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandConfig.kt:68}
  */
 export class CommandConfig extends Object implements Command$Factory {
     static INSTANCE: CommandConfig;

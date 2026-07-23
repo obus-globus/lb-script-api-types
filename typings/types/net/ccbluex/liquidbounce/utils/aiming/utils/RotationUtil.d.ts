@@ -10,7 +10,7 @@ export class RotationUtil extends Object {
     /**
      * Calculate difference between two angle points
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationUtil.kt#L128 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationUtil.kt:128}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationUtil.kt#L128 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationUtil.kt:128}
      */
     angleDifference(a: number, b: number): number;
     applyMouseTurnDelta(rotation: Rotation, cursorDeltaX: number, cursorDeltaY: number): Rotation;
@@ -19,7 +19,7 @@ export class RotationUtil extends Object {
      *
      * Useful for deciding if the player is looking at something or not.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationUtil.kt#L116 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationUtil.kt:116}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationUtil.kt#L116 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationUtil.kt:116}
      */
     crosshairAngleToEntity(entity: Entity): number;
     // private mouseSensitivityFactor(): number;
@@ -30,7 +30,7 @@ export class RotationUtil extends Object {
      *
      * @see net.minecraft.world.entity.Entity.turn
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationUtil.kt#L87 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationUtil.kt:87}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationUtil.kt#L87 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationUtil.kt:87}
      */
     mouseTurnDelta(cursorDeltaX: number, cursorDeltaY: number): RotationDelta;
 }

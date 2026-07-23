@@ -7,7 +7,7 @@ import type { Entity } from '../../../../../../../../net/minecraft/world/entity/
 /**
  * The Criticals selection mode
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8e0e9ae29646a28b89fab862af8179223121e5bd/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/criticals/ModuleCriticals.kt#L160 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/criticals/ModuleCriticals.kt:160}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/criticals/ModuleCriticals.kt#L160 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/criticals/ModuleCriticals.kt:160}
  */
 export class ModuleCriticals$CriticalsSelectionMode extends Enum<ModuleCriticals$CriticalsSelectionMode> implements Tagged {
     static ALWAYS: ModuleCriticals$CriticalsSelectionMode;
