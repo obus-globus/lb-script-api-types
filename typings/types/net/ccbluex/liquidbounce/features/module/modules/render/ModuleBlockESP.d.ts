@@ -15,7 +15,7 @@ import type { VoxelShape } from '../../../../../../../net/minecraft/world/phys/s
  *
  * Allows you to see selected blocks through walls.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockESP.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockESP.kt:61}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockESP.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockESP.kt:61}
  */
 export class ModuleBlockESP extends ClientModule {
     static INSTANCE: ModuleBlockESP;

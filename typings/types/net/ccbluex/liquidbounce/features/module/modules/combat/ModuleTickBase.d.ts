@@ -15,7 +15,7 @@ import type { Color4b } from '../../../../../../../net/ccbluex/liquidbounce/rend
  *
  * Calls tick function to speed up, when needed
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleTickBase.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleTickBase.kt:50}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleTickBase.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleTickBase.kt:50}
  */
 export class ModuleTickBase extends ClientModule {
     static INSTANCE: ModuleTickBase;

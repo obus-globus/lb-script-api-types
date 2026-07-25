@@ -5,7 +5,7 @@ import type { AxochatPacket$S2C } from '../../../../../../net/ccbluex/liquidboun
  *
  * @param reason of success packet
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ClientPackets.kt#L105 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ClientPackets.kt:105}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ClientPackets.kt#L105 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ClientPackets.kt:105}
  */
 export class S2CSuccessPacket extends Object implements AxochatPacket$S2C {
     constructor(reason: string)

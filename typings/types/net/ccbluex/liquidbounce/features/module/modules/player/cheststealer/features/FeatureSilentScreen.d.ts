@@ -7,7 +7,7 @@ import type { BlockPos } from '../../../../../../../../../net/minecraft/core/Blo
  * @see net.ccbluex.liquidbounce.injection.mixins.minecraft.client.MixinMinecraft
  * @see net.ccbluex.liquidbounce.injection.mixins.minecraft.gui.MixinAbstractContainerScreen
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/features/FeatureSilentScreen.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/features/FeatureSilentScreen.kt:48}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/features/FeatureSilentScreen.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/features/FeatureSilentScreen.kt:48}
  */
 export class FeatureSilentScreen extends ToggleableValueGroup {
     static INSTANCE: FeatureSilentScreen;

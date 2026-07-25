@@ -7,7 +7,7 @@ import type { LegacyPacket } from '../../../../../net/ccbluex/liquidbounce/utils
 /**
  * https://github.com/ViaVersion/ViaFabricPlus/blob/1957a175e4a4bff50860c0b3359d5219624fe434/src/main/java/com/viaversion/viafabricplus/features/world/item_picking/ItemPick1_21_3.java#L123
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PickFromInventoryPacket.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PickFromInventoryPacket.kt:29}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PickFromInventoryPacket.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PickFromInventoryPacket.kt:29}
  */
 export class PickFromInventoryPacket extends Object implements LegacyPacket {
     constructor(slot: number)

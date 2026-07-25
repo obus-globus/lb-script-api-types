@@ -4,7 +4,7 @@ import type { ModuleCustomAmbience$CustomLightmap$EditorMode } from '../../../..
 /**
  * @see net.ccbluex.liquidbounce.injection.mixins.minecraft.render.MixinLightmap
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCustomAmbience.kt#L95 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCustomAmbience.kt:95}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCustomAmbience.kt#L95 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCustomAmbience.kt:95}
  */
 export class ModuleCustomAmbience$CustomLightmap extends ToggleableValueGroup {
     static INSTANCE: ModuleCustomAmbience$CustomLightmap;

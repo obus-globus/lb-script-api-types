@@ -31,7 +31,7 @@ export class ParameterBuilder<T extends unknown> extends Object {
      * meaning that typing the beginning like `diam` (without the prefix `minecraft:`)
      * will be enough to match strings such as `minecraft:diamond`, `minecraft:diamond_axe`, etc.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/ParameterBuilder.kt#L153 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/ParameterBuilder.kt:153}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/ParameterBuilder.kt#L153 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/ParameterBuilder.kt:153}
      */
     autocompletedFrom(ignoreCase: boolean, minecraftPlaceholders: boolean, placeholdersProvider: () => string[] | null): ParameterBuilder<T>;
     autocompletedWith(autocompletionHandler: AutoCompletionProvider): ParameterBuilder<T>;
@@ -45,7 +45,7 @@ export class ParameterBuilder<T extends unknown> extends Object {
      *
      * Only allowed at the end.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/ParameterBuilder.kt#L134 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/ParameterBuilder.kt:134}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/ParameterBuilder.kt#L134 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/ParameterBuilder.kt:134}
      */
     vararg(): ParameterBuilder<T>;
     verifiedBy(verifier: Parameter$Verificator<T>): ParameterBuilder<T>;

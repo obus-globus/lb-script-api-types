@@ -4,7 +4,7 @@ import type { InventoryRequirements } from '../../../../../net/ccbluex/liquidbou
  * Additional constraints for the player inventory. This should be used when interacting with the player inventory
  * instead of a generic container.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryValueGroups.kt#L87 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryValueGroups.kt:87}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryValueGroups.kt#L87 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryValueGroups.kt:87}
  */
 export class PlayerInventoryConstraints extends InventoryConstraints {
     constructor()

@@ -12,7 +12,7 @@ export class LegacyPacketKt extends Object {
      * @param onSuccess Gets executed when sending succeeds.
      * @param onFailure Gets executed when sending fails.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/LegacyPacket.kt#L65 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/LegacyPacket.kt:65}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/LegacyPacket.kt#L65 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/LegacyPacket.kt:65}
      */
     static sendPacket(self: ClientCommonPacketListenerImpl, packet: LegacyPacket, onSuccess: () => void, onFailure: () => void): void;
 }

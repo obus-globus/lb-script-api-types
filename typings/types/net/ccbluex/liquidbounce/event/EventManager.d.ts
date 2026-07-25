@@ -10,7 +10,7 @@ import type { EventListener } from '../../../../net/ccbluex/liquidbounce/event/E
 /**
  * A modern and fast event handler using lambda handlers
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt#L283 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt:283}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt#L283 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt:283}
  */
 export class EventManager extends Object {
     static INSTANCE: EventManager;
@@ -21,7 +21,7 @@ export class EventManager extends Object {
      *
      * @param event to call
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt#L335 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt:335}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt#L335 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt:335}
      */
     callEvent<T extends Event>(event: T): T;
     /**
@@ -29,13 +29,13 @@ export class EventManager extends Object {
      * The flow receives the event instances after all {@link EventHook}s are executed.
      * So the {@link Event.isCompleted} will be true when the event is emitted.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt#L381 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt:381}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt#L381 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt:381}
      */
     eventFlow<T extends Event>(eventClass: Class<T>): SharedFlow<T>;
     /**
      * Used by handler methods
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt#L298 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt:298}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt#L298 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt:298}
      */
     registerEventHook<T extends Event>(eventClass: Class<Event>, eventHook: EventHook<T>): EventHook<T>;
     unregisterAll(): void;
@@ -43,7 +43,7 @@ export class EventManager extends Object {
     /**
      * Unregisters a handler.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt#L313 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt:313}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt#L313 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt:313}
      */
     unregisterEventHook<T extends Event>(eventClass: Class<Event>, eventHook: EventHook<T>): void;
 }

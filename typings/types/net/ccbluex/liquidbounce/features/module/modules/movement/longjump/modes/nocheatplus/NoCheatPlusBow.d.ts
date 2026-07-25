@@ -12,7 +12,7 @@ import type { RotationsValueGroup } from '../../../../../../../../../../net/ccbl
  * @anticheatVersion 3.16.1-SNAPSHOT-sMD5NET-b115s
  * @testedOn eu.loyisa.cn
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/longjump/modes/nocheatplus/NoCheatPlusBow.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/longjump/modes/nocheatplus/NoCheatPlusBow.kt:45}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/longjump/modes/nocheatplus/NoCheatPlusBow.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/longjump/modes/nocheatplus/NoCheatPlusBow.kt:45}
  */
 export class NoCheatPlusBow extends Mode {
     static Companion: Tagged$Companion;

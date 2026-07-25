@@ -14,7 +14,7 @@ export class TrapPlayerSimulation extends Object {
      *
      * @returns position for the trap. `null` if the trap should not be placed.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/traps/TrapPlayerSimulation.kt#L91 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/traps/TrapPlayerSimulation.kt:91}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/traps/TrapPlayerSimulation.kt#L91 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/traps/TrapPlayerSimulation.kt:91}
      */
     findPosForTrap(target: LivingEntity, isTargetLocked: boolean): Vec3 | null;
     runSimulations(enemies: LivingEntity[]): void;

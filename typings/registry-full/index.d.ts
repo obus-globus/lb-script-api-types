@@ -30420,6 +30420,8 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.config.types.list.RegistryMutableListValue": typeof import("../types/net/ccbluex/liquidbounce/config/types/list/RegistryMutableListValue").RegistryMutableListValue;
     "net.ccbluex.liquidbounce.config.types.list.Tagged$Companion": typeof import("../types/net/ccbluex/liquidbounce/config/types/list/Tagged$Companion").Tagged$Companion;
     "net.ccbluex.liquidbounce.config.utils.AutoCompletionProvider$Default": typeof import("../types/net/ccbluex/liquidbounce/config/utils/AutoCompletionProvider$Default").AutoCompletionProvider$Default;
+    "net.ccbluex.liquidbounce.config.utils.PercentageChance": typeof import("../types/net/ccbluex/liquidbounce/config/utils/PercentageChance").PercentageChance;
+    "net.ccbluex.liquidbounce.config.utils.PercentageChanceKt": typeof import("../types/net/ccbluex/liquidbounce/config/utils/PercentageChanceKt").PercentageChanceKt;
     "net.ccbluex.liquidbounce.config.utils.RefreshableRangeValueKt": typeof import("../types/net/ccbluex/liquidbounce/config/utils/RefreshableRangeValueKt").RefreshableRangeValueKt;
     "net.ccbluex.liquidbounce.config.utils.TextureMode": typeof import("../types/net/ccbluex/liquidbounce/config/utils/TextureMode").TextureMode;
     "net.ccbluex.liquidbounce.config.utils.TextureMode$Builtin": typeof import("../types/net/ccbluex/liquidbounce/config/utils/TextureMode$Builtin").TextureMode$Builtin;

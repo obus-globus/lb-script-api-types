@@ -1,4 +1,5 @@
 import type { Tagged$Companion } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
+import type { PercentageChance } from '../../../../../../../../../net/ccbluex/liquidbounce/config/utils/PercentageChance.d.ts'
 import type { EventHook } from '../../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { MovementInputEvent } from '../../../../../../../../../net/ccbluex/liquidbounce/event/events/MovementInputEvent.d.ts'
 import type { PacketEvent } from '../../../../../../../../../net/ccbluex/liquidbounce/event/events/PacketEvent.d.ts'
@@ -6,13 +7,12 @@ import type { VelocityMode } from '../../../../../../../../../net/ccbluex/liquid
 /**
  * Jump Reset mode. A technique most players use to minimize the amount of knockback they get.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityJumpReset.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityJumpReset.kt:32}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityJumpReset.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityJumpReset.kt:32}
  */
 export class VelocityJumpReset extends VelocityMode {
     static Companion: Tagged$Companion;
     static INSTANCE: VelocityJumpReset;
-    // private chance: number;
-    // private /*not mapped: */ getChance(): number;
+    // private chance: PercentageChance<number>;
     // private hitsUntilJump: number;
     // private isFallDamage: boolean;
     // private limitUntilJump: number;

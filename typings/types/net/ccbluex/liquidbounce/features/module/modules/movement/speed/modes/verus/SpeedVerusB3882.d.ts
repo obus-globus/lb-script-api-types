@@ -10,7 +10,7 @@ import type { SpeedBHopBase } from '../../../../../../../../../../net/ccbluex/li
  * @anticheatVersion b3882
  * @testedOn eu.anticheat-test.com
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/verus/SpeedVerusB3882.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/verus/SpeedVerusB3882.kt:41}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/verus/SpeedVerusB3882.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/verus/SpeedVerusB3882.kt:41}
  */
 export class SpeedVerusB3882 extends SpeedBHopBase {
     static Companion: Tagged$Companion;

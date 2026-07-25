@@ -7,7 +7,7 @@ import type { PlayerNetworkMovementTickEvent } from '../../../../../../../../../
  * @anticheat Grim
  * @anticheatVersion 2.3.64
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noslow/modes/shared/NoSlowSharedGrim2364MC18.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noslow/modes/shared/NoSlowSharedGrim2364MC18.kt:33}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noslow/modes/shared/NoSlowSharedGrim2364MC18.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noslow/modes/shared/NoSlowSharedGrim2364MC18.kt:33}
  */
 export class NoSlowSharedGrim2364MC18 extends Mode {
     static Companion: Tagged$Companion;

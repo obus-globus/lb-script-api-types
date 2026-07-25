@@ -21,13 +21,13 @@ export class TargetSelector extends ValueGroup {
     /**
      * Counts available targets.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt#L120 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt:120}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt#L120 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt:120}
      */
     countTargets(): number;
     /**
      * Update should be called to always pick the best target out of the current world context
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt#L127 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt:127}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt#L127 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt:127}
      */
     targets(): LivingEntity[];
     validate(entity: LivingEntity): boolean;

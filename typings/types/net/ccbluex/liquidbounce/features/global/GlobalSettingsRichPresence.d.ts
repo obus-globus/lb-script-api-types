@@ -15,7 +15,7 @@ import type { GlobalSettingsRichPresence$SmallImageConfig } from '../../../../..
  * todo: use ordered multi choose (https://github.com/CCBlueX/LiquidBounce/pull/7350), which allows
  *   custom ordering of parts.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/global/GlobalSettingsRichPresence.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/features/global/GlobalSettingsRichPresence.kt:54}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/features/global/GlobalSettingsRichPresence.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/features/global/GlobalSettingsRichPresence.kt:54}
  */
 export class GlobalSettingsRichPresence extends ToggleableValueGroup {
     static INSTANCE: GlobalSettingsRichPresence;
@@ -31,7 +31,7 @@ export class GlobalSettingsRichPresence extends ToggleableValueGroup {
     /**
      * Always running after initialized
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/global/GlobalSettingsRichPresence.kt#L242 | src/main/kotlin/net/ccbluex/liquidbounce/features/global/GlobalSettingsRichPresence.kt:242}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/features/global/GlobalSettingsRichPresence.kt#L242 | src/main/kotlin/net/ccbluex/liquidbounce/features/global/GlobalSettingsRichPresence.kt:242}
      */
     readonly running: boolean;
     // private separatorText: string;

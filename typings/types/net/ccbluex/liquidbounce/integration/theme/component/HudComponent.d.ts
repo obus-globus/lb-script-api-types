@@ -6,7 +6,7 @@ import type { Alignment } from '../../../../../../net/ccbluex/liquidbounce/utils
 /**
  * Represents a HUD component
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponent.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponent.kt:32}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponent.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponent.kt:32}
  */
 export abstract class HudComponent extends ToggleableValueGroup {
     constructor(name: string, enabled: boolean, alignment: Alignment, tweaks: HudComponentTweak[], componentDescription: string)

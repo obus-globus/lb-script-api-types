@@ -8,7 +8,7 @@ import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStac
 /**
  * @param id the id this slot is identified by. Two virtual slots that have the same id are considered equal.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt#L97 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt:97}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt#L97 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt:97}
  */
 export class VirtualItemSlot extends Object implements ItemSlot {
     static Companion: ItemSlot$Companion;

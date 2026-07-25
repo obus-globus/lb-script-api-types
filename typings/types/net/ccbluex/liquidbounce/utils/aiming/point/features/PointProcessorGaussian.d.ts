@@ -1,5 +1,6 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { ClosedFloatingPointRange } from '../../../../../../../kotlin/ranges/ClosedFloatingPointRange.d.ts'
+import type { PercentageChance } from '../../../../../../../net/ccbluex/liquidbounce/config/utils/PercentageChance.d.ts'
 import type { EventListener } from '../../../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
 import type { PointInsideBox } from '../../../../../../../net/ccbluex/liquidbounce/utils/aiming/point/PointInsideBox.d.ts'
 import type { PointProcessor } from '../../../../../../../net/ccbluex/liquidbounce/utils/aiming/point/features/PointProcessor.d.ts'
@@ -9,8 +10,7 @@ import type { Vec3 } from '../../../../../../../net/minecraft/world/phys/Vec3.d.
 export class PointProcessorGaussian extends PointProcessor {
     static Companion: PointProcessorGaussian$Companion;
     constructor(parent: EventListener)
-    // private chance: number;
-    // private /*not mapped: */ getChance(): number;
+    // private chance: PercentageChance<number>;
     // private currentOffset: Vec3;
     // private dynamic: PointProcessorGaussian$Dynamic;
     // private pitchFactor: ClosedFloatingPointRange<number>;

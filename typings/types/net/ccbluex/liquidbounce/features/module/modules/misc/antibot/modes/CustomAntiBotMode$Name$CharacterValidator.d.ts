@@ -6,7 +6,7 @@ import type { Tagged$Companion } from '../../../../../../../../../net/ccbluex/li
 /**
  * https://en.wikipedia.org/wiki/Unicode_block
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt#L187 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt:187}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt#L187 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt:187}
  */
 export class CustomAntiBotMode$Name$CharacterValidator extends Enum<CustomAntiBotMode$Name$CharacterValidator> implements IntPredicate, Tagged {
     static CJK_UNIFIED_IDEOGRAPHS: CustomAntiBotMode$Name$CharacterValidator;

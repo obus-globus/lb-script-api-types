@@ -6,7 +6,7 @@ import type { PlayerNetworkMovementTickEvent } from '../../../../../../../../../
 /**
  * based off of intave consume noslow, might work on some other ac
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noslow/modes/consume/NoSlowConsumeRelease.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noslow/modes/consume/NoSlowConsumeRelease.kt:34}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noslow/modes/consume/NoSlowConsumeRelease.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noslow/modes/consume/NoSlowConsumeRelease.kt:34}
  */
 export class NoSlowConsumeRelease extends Mode {
     static Companion: Tagged$Companion;

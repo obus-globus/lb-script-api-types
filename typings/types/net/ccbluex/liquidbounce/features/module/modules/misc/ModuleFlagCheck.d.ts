@@ -9,7 +9,7 @@ import type { ModuleFlagCheck$AlertReason } from '../../../../../../../net/ccblu
  *
  * Alerts you about set backs.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleFlagCheck.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleFlagCheck.kt:50}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleFlagCheck.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleFlagCheck.kt:50}
  */
 export class ModuleFlagCheck extends ClientModule {
     static INSTANCE: ModuleFlagCheck;

@@ -1,5 +1,6 @@
 import type { ClosedFloatingPointRange } from '../../../../../../../../kotlin/ranges/ClosedFloatingPointRange.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
+import type { PercentageChance } from '../../../../../../../../net/ccbluex/liquidbounce/config/utils/PercentageChance.d.ts'
 import type { EventHook } from '../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { AttackEntityEvent } from '../../../../../../../../net/ccbluex/liquidbounce/event/events/AttackEntityEvent.d.ts'
 import type { BlinkPacketEvent } from '../../../../../../../../net/ccbluex/liquidbounce/event/events/BlinkPacketEvent.d.ts'
@@ -18,10 +19,9 @@ export class ModuleBacktrack extends ClientModule {
     static INSTANCE: ModuleBacktrack;
     // private attackChronometer: Chronometer;
     // private attackHandler: EventHook<AttackEntityEvent>;
-    // private chance: number;
-    // private /*not mapped: */ getChance(): number;
+    // private chance: PercentageChance<number>;
+    // private chancePassed: boolean;
     // private chronometer: Chronometer;
-    // private currentChance: number;
     currentDelay: number;
     readonly delay: { start: number; endInclusive: number; step: number };
     // private espMode: ModeValueGroup<BlinkEspMode>;

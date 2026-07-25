@@ -10,7 +10,7 @@ import type { BoundingBox } from '../../../../../../net/minecraft/world/level/le
  * ? x ?
  * ```
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/hole/Hole.kt#L63 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/hole/Hole.kt:63}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/hole/Hole.kt#L63 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/hole/Hole.kt:63}
  */
 export class Hole$OneByOne extends Object implements Hole {
     constructor(pos: BlockPos, bedrockOnly: boolean)

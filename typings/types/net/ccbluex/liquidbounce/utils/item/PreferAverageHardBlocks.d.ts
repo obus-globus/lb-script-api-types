@@ -13,7 +13,7 @@ import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStac
  *
  * @param neutralRange if enabled, there is a range of hardness values which are accepted as *good*. If disabled we prefer the closest to the *ideal* hardness value.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemStackComparators.kt#L100 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemStackComparators.kt:100}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemStackComparators.kt#L100 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemStackComparators.kt:100}
  */
 export class PreferAverageHardBlocks extends Object implements Comparator<ItemStack> {
     static Companion: PreferAverageHardBlocks$Companion;

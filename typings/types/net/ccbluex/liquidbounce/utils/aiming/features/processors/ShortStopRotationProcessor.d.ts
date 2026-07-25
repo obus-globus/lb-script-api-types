@@ -1,4 +1,5 @@
 import type { ToggleableValueGroup } from '../../../../../../../net/ccbluex/liquidbounce/config/types/group/ToggleableValueGroup.d.ts'
+import type { PercentageChance } from '../../../../../../../net/ccbluex/liquidbounce/config/utils/PercentageChance.d.ts'
 import type { EventListener } from '../../../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
 import type { RotationTarget } from '../../../../../../../net/ccbluex/liquidbounce/utils/aiming/RotationTarget.d.ts'
 import type { Rotation } from '../../../../../../../net/ccbluex/liquidbounce/utils/aiming/data/Rotation.d.ts'
@@ -6,13 +7,12 @@ import type { RotationProcessor } from '../../../../../../../net/ccbluex/liquidb
 /**
  * Short stop temporarily halts aiming at the target based on a specified rate.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/ShortStopRotationProcessor.kt#L30 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/ShortStopRotationProcessor.kt:30}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/ShortStopRotationProcessor.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/ShortStopRotationProcessor.kt:31}
  */
 export class ShortStopRotationProcessor extends ToggleableValueGroup implements RotationProcessor {
     constructor(owner?: EventListener | null)
     // private currentTransitionInDuration: number;
-    // private rate: number;
-    // private /*not mapped: */ getRate(): number;
+    // private rate: PercentageChance<number>;
     // private stopDuration: { start: number; endInclusive: number; step: number };
     // private /*not mapped: */ getStopDuration(): { start: number; endInclusive: number; step: number };
     // private ticksElapsed: number;

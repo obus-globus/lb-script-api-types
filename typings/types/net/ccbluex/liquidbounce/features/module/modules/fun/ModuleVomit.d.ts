@@ -9,7 +9,7 @@ import type { RandomSource } from '../../../../../../../net/minecraft/util/Rando
  * Drops items from the inventory in a random order to make it look like the player is vomiting.
  * If the player is in creative mode, the player will drop random block items.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/fun/ModuleVomit.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/fun/ModuleVomit.kt:41}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/fun/ModuleVomit.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/fun/ModuleVomit.kt:41}
  */
 export class ModuleVomit extends ClientModule {
     static INSTANCE: ModuleVomit;

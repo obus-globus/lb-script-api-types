@@ -13,7 +13,7 @@ import type { PreparableReloadListener$SharedState } from '../../../net/minecraf
  * @see net.fabricmc.fabric.api.resource.v1.reloader.SimpleReloadListener
  * @see PreparableReloadListener
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt#L515 | src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt:515}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt#L515 | src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt:515}
  */
 export class LiquidBounce$ClientResourceReloader extends Object implements PreparableReloadListener {
     static INSTANCE: LiquidBounce$ClientResourceReloader;

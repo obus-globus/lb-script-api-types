@@ -15,7 +15,7 @@ import type { Block } from '../../../../../../../net/minecraft/world/level/block
  *
  * Builds blocks to cover yourself.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleBlockIn.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleBlockIn.kt:49}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleBlockIn.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleBlockIn.kt:49}
  */
 export class ModuleBlockIn extends ClientModule {
     static INSTANCE: ModuleBlockIn;

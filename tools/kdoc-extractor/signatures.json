@@ -9532,6 +9532,134 @@
         }
       }
     ],
+    "net.ccbluex.liquidbounce.config.utils.PercentageChance.constructor": [
+      {
+        "params": [
+          {
+            "name": "value",
+            "type": "Value<T>",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "randomGetter",
+            "type": "Supplier<out RandomGenerator>",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/utils/PercentageChance.kt",
+          "line": 31
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.config.utils.PercentageChance.getAsBoolean": [
+      {
+        "params": [],
+        "returns": "Boolean",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/utils/PercentageChance.kt",
+          "line": 41
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.config.utils.PercentageChance.getValue": [
+      {
+        "params": [
+          {
+            "name": "thisRef",
+            "type": "Any?",
+            "nullable": true,
+            "vararg": false
+          },
+          {
+            "name": "property",
+            "type": "KProperty<*>",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Boolean",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/utils/PercentageChance.kt",
+          "line": 47
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.config.utils.PercentageChanceKt.percentageChance": [
+      {
+        "params": [
+          {
+            "name": "name",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "default",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "range",
+            "type": "IntRange",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "randomGetter",
+            "type": "Supplier<out RandomGenerator>",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "PercentageChance<Int>",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/utils/PercentageChance.kt",
+          "line": 53
+        },
+        "isExtension": true,
+        "receiver": "ValueGroup"
+      },
+      {
+        "params": [
+          {
+            "name": "name",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "default",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "range",
+            "type": "ClosedFloatingPointRange<Float>",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "randomGetter",
+            "type": "Supplier<out RandomGenerator>",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "PercentageChance<Float>",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/utils/PercentageChance.kt",
+          "line": 61
+        },
+        "isExtension": true,
+        "receiver": "ValueGroup"
+      }
+    ],
     "net.ccbluex.liquidbounce.config.utils.RefreshableFloatState.refresh": [
       {
         "params": [],
@@ -21351,7 +21479,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleSuperKnockback.kt",
-          "line": 63
+          "line": 64
         }
       }
     ],
@@ -21361,7 +21489,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleSuperKnockback.kt",
-          "line": 157
+          "line": 158
         }
       }
     ],
@@ -21371,7 +21499,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleSuperKnockback.kt",
-          "line": 208
+          "line": 209
         }
       }
     ],
@@ -21388,7 +21516,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleSuperKnockback.kt",
-          "line": 227
+          "line": 228
         }
       }
     ],
@@ -21405,7 +21533,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleSuperKnockback.kt",
-          "line": 216
+          "line": 217
         }
       }
     ],
@@ -22066,7 +22194,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/backtrack/ModuleBacktrack.kt",
-          "line": 78
+          "line": 79
         }
       }
     ],
@@ -22095,7 +22223,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/backtrack/ModuleBacktrack.kt",
-          "line": 273
+          "line": 274
         }
       }
     ],
@@ -22105,7 +22233,7 @@
         "returns": "BlinkEspData?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/backtrack/ModuleBacktrack.kt",
-          "line": 176
+          "line": 177
         }
       }
     ],
@@ -22115,7 +22243,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/backtrack/ModuleBacktrack.kt",
-          "line": 312
+          "line": 313
         }
       }
     ],
@@ -22125,7 +22253,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/backtrack/ModuleBacktrack.kt",
-          "line": 305
+          "line": 306
         }
       }
     ],
@@ -22135,7 +22263,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/backtrack/ModuleBacktrack.kt",
-          "line": 269
+          "line": 270
         }
       }
     ],
@@ -22145,7 +22273,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/backtrack/ModuleBacktrack.kt",
-          "line": 265
+          "line": 266
         }
       }
     ],
@@ -22162,7 +22290,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/backtrack/ModuleBacktrack.kt",
-          "line": 247
+          "line": 248
         }
       }
     ],
@@ -22179,7 +22307,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/backtrack/ModuleBacktrack.kt",
-          "line": 288
+          "line": 289
         }
       }
     ],
@@ -22189,7 +22317,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/backtrack/ModuleBacktrack.kt",
-          "line": 309
+          "line": 310
         }
       }
     ],
@@ -22199,7 +22327,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/backtrack/ModuleBacktrack.kt",
-          "line": 307
+          "line": 308
         }
       }
     ],
@@ -76563,7 +76691,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/ShortStopRotationProcessor.kt",
-          "line": 30
+          "line": 31
         }
       }
     ],
@@ -76592,7 +76720,7 @@
         "returns": "Rotation",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/ShortStopRotationProcessor.kt",
-          "line": 40
+          "line": 41
         }
       }
     ],
@@ -94838,7 +94966,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/item/armor/ArmorPiece.kt",
-          "line": 32
+          "line": 33
         }
       }
     ],

@@ -1,3 +1,4 @@
+import type { PercentageChance } from '../../../../../../../net/ccbluex/liquidbounce/config/utils/PercentageChance.d.ts'
 import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { GameTickEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts'
 import type { PacketEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/PacketEvent.d.ts'
@@ -7,7 +8,7 @@ import type { ClientModule } from '../../../../../../../net/ccbluex/liquidbounce
  *
  * Automatically speeds up when you are near an enemy.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleTimerRange.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleTimerRange.kt:40}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleTimerRange.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleTimerRange.kt:40}
  */
 export class ModuleTimerRange extends ClientModule {
     static INSTANCE: ModuleTimerRange;
@@ -18,8 +19,7 @@ export class ModuleTimerRange extends ClientModule {
     // private balanceTimer: number;
     // private boostSpeed: number;
     // private /*not mapped: */ getBoostSpeed(): number;
-    // private chance: number;
-    // private /*not mapped: */ getChance(): number;
+    // private chance: PercentageChance<number>;
     // private distanceToPause: number;
     // private /*not mapped: */ getDistanceToPause(): number;
     // private distanceToSpeedUp: number;

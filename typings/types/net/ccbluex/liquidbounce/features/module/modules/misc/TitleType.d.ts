@@ -16,7 +16,7 @@ export class TitleType extends Enum<TitleType> implements Tagged {
      * Doesn't use {@link Gui.setTitle} and {@link Gui.setSubtitle} because
      * this will cause reset of the stayIn timer
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleBetterTitle.kt#L105 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleBetterTitle.kt:105}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleBetterTitle.kt#L105 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleBetterTitle.kt:105}
      */
     readonly setText: (param0: Component) => void;
     readonly tag: string;

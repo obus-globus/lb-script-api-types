@@ -1,4 +1,5 @@
 import type { Tagged$Companion } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
+import type { PercentageChance } from '../../../../../../../../../net/ccbluex/liquidbounce/config/utils/PercentageChance.d.ts'
 import type { EventHook } from '../../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { PacketEvent } from '../../../../../../../../../net/ccbluex/liquidbounce/event/events/PacketEvent.d.ts'
 import type { VelocityMode } from '../../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityMode.d.ts'
@@ -6,8 +7,7 @@ import type { VelocityModify$VelocityTriggerFilter } from '../../../../../../../
 export class VelocityModify extends VelocityMode {
     static Companion: Tagged$Companion;
     static INSTANCE: VelocityModify;
-    // private chance: number;
-    // private /*not mapped: */ getChance(): number;
+    // private chance: PercentageChance<number>;
     // private considerExplosion: boolean;
     // private /*not mapped: */ getConsiderExplosion(): boolean;
     // private filter: VelocityModify$VelocityTriggerFilter;

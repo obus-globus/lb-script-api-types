@@ -9,7 +9,7 @@ import type { RequestBody } from '../../../../../okhttp3/RequestBody.d.ts'
  *
  * @param baseUrl The base URL of the API
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/api/core/BaseApi.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/BaseApi.kt:41}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/api/core/BaseApi.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/BaseApi.kt:41}
  */
 export abstract class BaseApi extends Object {
     constructor(baseUrl: string, defaultHeaders: Pair<string, string>[])

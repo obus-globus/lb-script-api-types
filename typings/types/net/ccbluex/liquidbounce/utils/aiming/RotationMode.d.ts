@@ -22,7 +22,7 @@ export class RotationMode extends Mode implements MinecraftShortcuts {
      *
      * PostMove might be irrelevant if this is enabled.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationModes.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationModes.kt:51}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationModes.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationModes.kt:51}
      */
     readonly instant: boolean;
     readonly interaction: MultiPlayerGameMode;
@@ -39,7 +39,7 @@ export class RotationMode extends Mode implements MinecraftShortcuts {
      *
      * The downside is that it is not legit and will flag post-rotation checks on some anti-cheats.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationModes.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationModes.kt:43}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationModes.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationModes.kt:43}
      */
     readonly postMove: boolean;
     readonly world: ClientLevel;

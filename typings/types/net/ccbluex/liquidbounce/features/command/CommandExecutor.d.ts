@@ -11,7 +11,7 @@ import type { Component } from '../../../../../net/minecraft/network/chat/Compon
 /**
  * Links minecraft with the command engine
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandExecutor.kt#L63 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandExecutor.kt:63}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandExecutor.kt#L63 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandExecutor.kt:63}
  */
 export class CommandExecutor extends Object implements EventListener {
     static INSTANCE: CommandExecutor;

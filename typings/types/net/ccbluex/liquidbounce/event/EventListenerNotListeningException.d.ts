@@ -3,7 +3,7 @@ import type { EventListener } from '../../../../net/ccbluex/liquidbounce/event/E
 /**
  * Occurs when the running {@link Job} is canceled because {@link EventListener.running} is false
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6f54ba6705b9d98f759a29be39e5aa97e877cc92/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt#L91 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt:91}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt#L91 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt:91}
  */
 export class EventListenerNotListeningException extends CancellationException {
     constructor(eventListener: EventListener)

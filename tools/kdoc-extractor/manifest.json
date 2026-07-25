@@ -3321,7 +3321,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleSuperKnockback.kt",
-      "line": 54
+      "line": 55
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.ModuleSwordBlock": {
@@ -13197,7 +13197,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/ShortStopRotationProcessor.kt",
-      "line": 30
+      "line": 31
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.features.processors.anglesmooth.AngleSmooth": {
@@ -16330,7 +16330,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/item/armor/ArmorPiece.kt",
-      "line": 31
+      "line": 32
     }
   },
   "net.ccbluex.liquidbounce.utils.item.blocksAttacksComponent": {
