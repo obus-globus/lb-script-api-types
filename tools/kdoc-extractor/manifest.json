@@ -4253,23 +4253,31 @@
       "line": 45
     }
   },
+  "net.ccbluex.liquidbounce.features.module.modules.combat.killaura.features.KillAuraAutoBlock.OnlyWhenInDanger": {
+    "doc": "Check if we are in danger by going through all possible targets and checking if they are looking at us.",
+    "kind": "object",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraAutoBlock.kt",
+      "line": 112
+    }
+  },
   "net.ccbluex.liquidbounce.features.module.modules.combat.killaura.features.KillAuraAutoBlock.assumeShield": {
     "doc": "For 1.9~1.21.4 protocol on 1.8 server, server will send a shield to your offhand on using item",
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraAutoBlock.kt",
-      "line": 106
+      "line": 141
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.killaura.features.KillAuraAutoBlock.blockVisual": {
     "doc": "Visual blocking shows a blocking state, while not actually blocking.\nThis is useful to make the blocking animation become much smoother.",
     "see": [
-      "ItemInHandRenderer.renderArmWithItem"
+      "ItemInHandRenderer.renderPlayerArm"
     ],
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraAutoBlock.kt",
-      "line": 134
+      "line": 169
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.killaura.features.KillAuraAutoBlock.enforcedBlockingHand": {
@@ -4280,7 +4288,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraAutoBlock.kt",
-      "line": 116
+      "line": 151
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.killaura.features.KillAuraAutoBlock.findBlockableHand": {
@@ -4289,7 +4297,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraAutoBlock.kt",
-      "line": 426
+      "line": 452
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.killaura.features.KillAuraAutoBlock.genericUseItem": {
@@ -4297,7 +4305,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraAutoBlock.kt",
-      "line": 414
+      "line": 440
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.killaura.features.KillAuraAutoBlock.interactWithFacing": {
@@ -4309,7 +4317,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraAutoBlock.kt",
-      "line": 375
+      "line": 401
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.killaura.features.KillAuraAutoBlock.isPrioritizingBlocking": {
@@ -4317,7 +4325,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraAutoBlock.kt",
-      "line": 151
+      "line": 186
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.killaura.features.KillAuraAutoBlock.makeSeemBlock": {
@@ -4325,7 +4333,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraAutoBlock.kt",
-      "line": 177
+      "line": 212
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.killaura.features.KillAuraAutoBlock.simulateVanillaUse": {
@@ -4333,7 +4341,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraAutoBlock.kt",
-      "line": 81
+      "line": 86
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.killaura.features.KillAuraAutoBlock.startBlocking": {
@@ -4341,7 +4349,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraAutoBlock.kt",
-      "line": 188
+      "line": 223
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.killaura.features.KillAuraFailSwing.additionalRange": {

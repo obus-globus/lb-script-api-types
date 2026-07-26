@@ -13,7 +13,7 @@ export class FontCharacterSet extends Object {
      *
      * Source data: https://github.com/jaywcjlove/table-of-general-standard-chinese-characters
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/FontCharacterSet.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/FontCharacterSet.kt:58}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/21564b1e592881f9ec5cd94857232312a84039b2/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/FontCharacterSet.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/FontCharacterSet.kt:58}
      */
     readonly commonHanCodepoints: number[];
     readonly eagerCodepoints: number[];

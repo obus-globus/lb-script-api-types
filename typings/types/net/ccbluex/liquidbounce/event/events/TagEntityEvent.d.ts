@@ -17,13 +17,13 @@ export class TagEntityEvent extends Event {
     /**
      * Don't start combat this target
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/event/events/EntityEvents.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/event/events/EntityEvents.kt:51}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/21564b1e592881f9ec5cd94857232312a84039b2/src/main/kotlin/net/ccbluex/liquidbounce/event/events/EntityEvents.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/event/events/EntityEvents.kt:51}
      */
     dontTarget(): void;
     /**
      * Fully ignore that target
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cf742eb17a33041e582f6f30822aab3e8450edf8/src/main/kotlin/net/ccbluex/liquidbounce/event/events/EntityEvents.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/event/events/EntityEvents.kt:60}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/21564b1e592881f9ec5cd94857232312a84039b2/src/main/kotlin/net/ccbluex/liquidbounce/event/events/EntityEvents.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/event/events/EntityEvents.kt:60}
      */
     ignore(): void;
 }

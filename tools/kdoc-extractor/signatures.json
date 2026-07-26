@@ -25568,7 +25568,17 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraAutoBlock.kt",
-          "line": 438
+          "line": 464
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.combat.killaura.features.KillAuraAutoBlock.OnlyWhenInDanger.isInDanger": [
+      {
+        "params": [],
+        "returns": "Boolean",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraAutoBlock.kt",
+          "line": 116
         }
       }
     ],
@@ -25585,7 +25595,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraAutoBlock.kt",
-          "line": 444
+          "line": 470
         }
       }
     ],
@@ -25595,7 +25605,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraAutoBlock.kt",
-          "line": 426
+          "line": 452
         }
       }
     ],
@@ -25618,7 +25628,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraAutoBlock.kt",
-          "line": 414
+          "line": 440
         }
       }
     ],
@@ -25641,7 +25651,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraAutoBlock.kt",
-          "line": 375
+          "line": 401
         }
       }
     ],
@@ -25651,7 +25661,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraAutoBlock.kt",
-          "line": 177
+          "line": 212
         }
       }
     ],
@@ -25661,7 +25671,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraAutoBlock.kt",
-          "line": 167
+          "line": 202
         }
       }
     ],
@@ -25671,7 +25681,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraAutoBlock.kt",
-          "line": 188
+          "line": 223
         }
       }
     ],
@@ -25688,7 +25698,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraAutoBlock.kt",
-          "line": 298
+          "line": 324
         }
       }
     ],
