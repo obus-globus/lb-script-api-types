@@ -8,7 +8,7 @@ export interface MeshDraw$IndexUploader extends Object{
      *
      * The returned slice's byte offset must be aligned to {@link IndexType.bytes} for {@link type}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/21564b1e592881f9ec5cd94857232312a84039b2/src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt#L93 | src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt:93}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt#L93 | src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt:93}
      */
     upload(type: IndexType, data: ByteBuffer): GpuBufferSlice;
 }

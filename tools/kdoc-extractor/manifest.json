@@ -3145,7 +3145,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleAutoRod.kt",
-      "line": 72
+      "line": 75
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.ModuleAutoShoot": {
@@ -7213,7 +7213,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleFastExp.kt",
-      "line": 54
+      "line": 57
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.ModuleFastExp.EXPERIENCE_PER_BOTTLE": {
@@ -7224,7 +7224,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleFastExp.kt",
-      "line": 73
+      "line": 76
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.ModuleFastExp.NoWaste.maxDurabilityToContinueRepair": {
@@ -7232,7 +7232,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleFastExp.kt",
-      "line": 97
+      "line": 100
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.ModuleFastExp.NoWaste.minDurabilityToStartRepair": {
@@ -7240,7 +7240,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleFastExp.kt",
-      "line": 84
+      "line": 87
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.ModuleFastExp.REPAIR_RATE": {
@@ -7251,7 +7251,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleFastExp.kt",
-      "line": 66
+      "line": 69
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.ModuleFastExp.getRequiredExperienceBottleCount": {
@@ -7259,7 +7259,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleFastExp.kt",
-      "line": 247
+      "line": 250
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.ModuleFastUse": {
@@ -7451,7 +7451,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autobuff/features/Pot.kt",
-      "line": 177
+      "line": 179
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.autobuff.features.Pot.isStandingInsideLingering": {
@@ -7459,7 +7459,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autobuff/features/Pot.kt",
-      "line": 164
+      "line": 167
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.autoqueue.trigger.AutoQueueTriggerItem": {
@@ -8673,7 +8673,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleItemTags.kt",
-      "line": 63
+      "line": 66
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleLogoffSpot": {
@@ -8809,7 +8809,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleTNTTimer.kt",
-      "line": 47
+      "line": 49
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleTNTTimer.getTntColor": {
@@ -8817,7 +8817,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleTNTTimer.kt",
-      "line": 103
+      "line": 105
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleTracers": {
@@ -17624,7 +17624,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt",
-      "line": 99
+      "line": 104
     }
   },
   "net.ccbluex.liquidbounce.utils.world.LevelChunk.forEachSectionBlock": {
@@ -17635,7 +17635,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt",
-      "line": 64
+      "line": 69
     }
   },
   "net.ccbluex.liquidbounce.utils.world.LevelChunkSection.forEachBlock": {
@@ -17646,7 +17646,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt",
-      "line": 83
+      "line": 88
     }
   },
   "net.ccbluex.liquidbounce.utils.world.filledSections": {
@@ -17654,7 +17654,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt",
-      "line": 54
+      "line": 59
     }
   },
   "net.ccbluex.liquidbounce.utils.world.waterEvaporates": {
@@ -17663,7 +17663,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt",
-      "line": 42
+      "line": 47
     }
   }
 }

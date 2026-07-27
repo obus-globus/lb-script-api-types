@@ -73,26 +73,26 @@ export class PolyglotScript extends Object implements AutoCloseable {
     /**
      * Called when the client unloads the script.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/21564b1e592881f9ec5cd94857232312a84039b2/src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt#L334 | src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt:334}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt#L334 | src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt:334}
      */
     close(): void;
     /**
      * Called when the client disables the script. Handles unregistering all modules and commands
      * created with this script.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/21564b1e592881f9ec5cd94857232312a84039b2/src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt#L314 | src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt:314}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt#L314 | src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt:314}
      */
     disable(): void;
     /**
      * Called when the client enables the script.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/21564b1e592881f9ec5cd94857232312a84039b2/src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt#L293 | src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt:293}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt#L293 | src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt:293}
      */
     enable(): void;
     /**
      * Initialization of scripts
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/21564b1e592881f9ec5cd94857232312a84039b2/src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt#L164 | src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt:164}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt#L164 | src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt:164}
      */
     initScript(): void;
     /**
@@ -133,7 +133,7 @@ export class PolyglotScript extends Object implements AutoCloseable {
      * @see ScriptMode
      * @see ModeValueGroup
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/21564b1e592881f9ec5cd94857232312a84039b2/src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt#L270 | src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt:270}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt#L270 | src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt:270}
      * @deprecated Use registerMode instead Use `registerMode(modeValueGroup, modeObject, callback)`.
      */
     registerChoice(modeValueGroup: ModeValueGroup<Mode>, modeObject: { [key: string]: unknown }, callback: (mode: ScriptMode) => void): void;
@@ -142,7 +142,7 @@ export class PolyglotScript extends Object implements AutoCloseable {
      *
      * @param commandObject From the command builder.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/21564b1e592881f9ec5cd94857232312a84039b2/src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt#L230 | src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt:230}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt#L230 | src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt:230}
      */
     registerCommand(commandObject: ScriptCommandObject): void;
     /**
@@ -155,7 +155,7 @@ export class PolyglotScript extends Object implements AutoCloseable {
      * @see ScriptMode
      * @see ModeValueGroup
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/21564b1e592881f9ec5cd94857232312a84039b2/src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt#L247 | src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt:247}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt#L247 | src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt:247}
      */
     registerMode(modeValueGroup: ModeValueGroup<Mode>, modeObject: { [key: string]: unknown }, callback: (mode: ScriptMode) => void): void;
     /**

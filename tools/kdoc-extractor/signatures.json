@@ -21002,7 +21002,7 @@
         "returns": "Rotation?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleAutoRod.kt",
-          "line": 227
+          "line": 230
         }
       }
     ],
@@ -21019,7 +21019,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleAutoRod.kt",
-          "line": 223
+          "line": 226
         }
       }
     ],
@@ -21036,7 +21036,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleAutoRod.kt",
-          "line": 242
+          "line": 245
         }
       }
     ],
@@ -21046,7 +21046,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleAutoRod.kt",
-          "line": 247
+          "line": 250
         }
       }
     ],
@@ -21056,7 +21056,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleAutoRod.kt",
-          "line": 213
+          "line": 216
         }
       }
     ],
@@ -22074,7 +22074,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/aimbot/autobow/AutoBowAutoShootFeature.kt",
-          "line": 232
+          "line": 231
         }
       }
     ],
@@ -33644,7 +33644,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/elytrafly/modes/ElytraFlyModeFirework.kt",
-          "line": 49
+          "line": 51
         }
       }
     ],
@@ -36461,7 +36461,7 @@
         "returns": "Float",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleFastExp.kt",
-          "line": 125
+          "line": 128
         }
       }
     ],
@@ -36471,7 +36471,7 @@
         "returns": "Float",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleFastExp.kt",
-          "line": 120
+          "line": 123
         }
       }
     ],
@@ -36488,7 +36488,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleFastExp.kt",
-          "line": 111
+          "line": 114
         }
       }
     ],
@@ -36498,7 +36498,7 @@
         "returns": "Float",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleFastExp.kt",
-          "line": 115
+          "line": 118
         }
       }
     ],
@@ -36515,7 +36515,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleFastExp.kt",
-          "line": 209
+          "line": 212
         },
         "suspend": true
       }
@@ -36526,7 +36526,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleFastExp.kt",
-          "line": 192
+          "line": 195
         }
       }
     ],
@@ -36543,7 +36543,7 @@
         "returns": "Int",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleFastExp.kt",
-          "line": 247
+          "line": 250
         }
       }
     ],
@@ -36553,7 +36553,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleFastExp.kt",
-          "line": 136
+          "line": 139
         }
       }
     ],
@@ -36563,7 +36563,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleFastExp.kt",
-          "line": 198
+          "line": 201
         },
         "suspend": true
       }
@@ -37444,7 +37444,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autobuff/features/Pot.kt",
-          "line": 85
+          "line": 88
         },
         "suspend": true
       }
@@ -37462,7 +37462,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autobuff/features/Pot.kt",
-          "line": 145
+          "line": 148
         }
       }
     ],
@@ -37472,7 +37472,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autobuff/features/Pot.kt",
-          "line": 177
+          "line": 179
         }
       }
     ],
@@ -37482,7 +37482,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autobuff/features/Pot.kt",
-          "line": 164
+          "line": 167
         }
       }
     ],
@@ -37499,7 +37499,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autobuff/features/Pot.kt",
-          "line": 142
+          "line": 145
         }
       }
     ],
@@ -37644,7 +37644,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autoqueue/presets/AutoQueueGommeDuels.kt",
-          "line": 125
+          "line": 126
         }
       }
     ],
@@ -37654,7 +37654,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autoqueue/presets/AutoQueueGommeDuels.kt",
-          "line": 57
+          "line": 58
         }
       }
     ],
@@ -37664,7 +37664,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autoqueue/presets/AutoQueueGommeDuels.kt",
-          "line": 155
+          "line": 156
         },
         "suspend": true
       }
@@ -37675,7 +37675,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autoqueue/presets/AutoQueueGommeDuels.kt",
-          "line": 132
+          "line": 133
         },
         "suspend": true
       }
@@ -43409,7 +43409,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleItemTags.kt",
-          "line": 231
+          "line": 234
         }
       }
     ],
@@ -43426,7 +43426,7 @@
         "returns": "Vec3",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleItemTags.kt",
-          "line": 236
+          "line": 239
         }
       }
     ],
@@ -43449,7 +43449,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleItemTags.kt",
-          "line": 100
+          "line": 103
         }
       }
     ],
@@ -43459,7 +43459,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleItemTags.kt",
-          "line": 187
+          "line": 190
         }
       }
     ],
@@ -43794,7 +43794,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleProphuntESP.kt",
-          "line": 53
+          "line": 55
         }
       }
     ],
@@ -44604,7 +44604,7 @@
         "returns": "Color4b",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleTNTTimer.kt",
-          "line": 103
+          "line": 105
         }
       }
     ],
@@ -44614,7 +44614,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleTNTTimer.kt",
-          "line": 114
+          "line": 116
         }
       }
     ],
@@ -45137,7 +45137,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleProphuntESP.kt",
-          "line": 43
+          "line": 45
         }
       }
     ],
@@ -48967,6 +48967,23 @@
         }
       }
     ],
+    "net.ccbluex.liquidbounce.features.module.modules.world.autofarm.AutoFarmAutoWalk.ToItems.shouldPickUp": [
+      {
+        "params": [
+          {
+            "name": "itemEntity",
+            "type": "ItemEntity",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Boolean",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autofarm/AutoFarmAutoWalk.kt",
+          "line": 55
+        }
+      }
+    ],
     "net.ccbluex.liquidbounce.features.module.modules.world.autofarm.AutoFarmAutoWalk.calculateGoalPosition": [
       {
         "params": [
@@ -48980,7 +48997,7 @@
         "returns": "Vec3?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autofarm/AutoFarmAutoWalk.kt",
-          "line": 134
+          "line": 137
         }
       }
     ],
@@ -48990,7 +49007,7 @@
         "returns": "Set<AutoFarmTrackedState>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autofarm/AutoFarmAutoWalk.kt",
-          "line": 69
+          "line": 72
         }
       }
     ],
@@ -49000,7 +49017,7 @@
         "returns": "Vec3?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autofarm/AutoFarmAutoWalk.kt",
-          "line": 123
+          "line": 126
         }
       }
     ],
@@ -49017,7 +49034,7 @@
         "returns": "Vec3?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autofarm/AutoFarmAutoWalk.kt",
-          "line": 101
+          "line": 104
         }
       }
     ],
@@ -49027,7 +49044,7 @@
         "returns": "Vec3?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autofarm/AutoFarmAutoWalk.kt",
-          "line": 89
+          "line": 92
         }
       }
     ],
@@ -49037,7 +49054,7 @@
         "returns": "Vec3?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autofarm/AutoFarmAutoWalk.kt",
-          "line": 117
+          "line": 120
         }
       }
     ],
@@ -107064,6 +107081,137 @@
         }
       }
     ],
+    "net.ccbluex.liquidbounce.utils.world.WorldExtensionsKt.any": [
+      {
+        "params": [
+          {
+            "name": "type",
+            "type": "EntityTypeTest<B, T>",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "predicate",
+            "type": "Predicate<T>",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Boolean",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt",
+          "line": 172
+        },
+        "isExtension": true,
+        "receiver": "LevelEntityGetter<B>"
+      }
+    ],
+    "net.ccbluex.liquidbounce.utils.world.WorldExtensionsKt.filter": [
+      {
+        "params": [
+          {
+            "name": "type",
+            "type": "EntityTypeTest<B, T>",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "predicate",
+            "type": "Predicate<T>",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "List<T>",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt",
+          "line": 146
+        },
+        "isExtension": true,
+        "receiver": "LevelEntityGetter<B>"
+      }
+    ],
+    "net.ccbluex.liquidbounce.utils.world.WorldExtensionsKt.filterTo": [
+      {
+        "params": [
+          {
+            "name": "destination",
+            "type": "C",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "type",
+            "type": "EntityTypeTest<B, T>",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "predicate",
+            "type": "Predicate<T>",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "C",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt",
+          "line": 137
+        },
+        "isExtension": true,
+        "receiver": "LevelEntityGetter<B>"
+      }
+    ],
+    "net.ccbluex.liquidbounce.utils.world.WorldExtensionsKt.firstOrNull": [
+      {
+        "params": [
+          {
+            "name": "type",
+            "type": "EntityTypeTest<B, T>",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "predicate",
+            "type": "Predicate<T>",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "T?",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt",
+          "line": 151
+        },
+        "isExtension": true,
+        "receiver": "LevelEntityGetter<B>"
+      }
+    ],
+    "net.ccbluex.liquidbounce.utils.world.WorldExtensionsKt.forEach": [
+      {
+        "params": [
+          {
+            "name": "type",
+            "type": "EntityTypeTest<B, T>",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "consumer",
+            "type": "Consumer<T>",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt",
+          "line": 132
+        },
+        "isExtension": true,
+        "receiver": "LevelEntityGetter<B>"
+      }
+    ],
     "net.ccbluex.liquidbounce.utils.world.WorldExtensionsKt.forEachBlock": [
       {
         "params": [
@@ -107077,7 +107225,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt",
-          "line": 83
+          "line": 88
         },
         "isExtension": true,
         "receiver": "LevelChunkSection"
@@ -107108,7 +107256,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt",
-          "line": 64
+          "line": 69
         },
         "isExtension": true,
         "receiver": "LevelChunk"
@@ -107139,7 +107287,7 @@
         "returns": "MutableList<T>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt",
-          "line": 101
+          "line": 106
         },
         "isExtension": true,
         "receiver": "EntityGetter"
@@ -107174,10 +107322,35 @@
         "returns": "MutableList<Entity>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt",
-          "line": 113
+          "line": 118
         },
         "isExtension": true,
         "receiver": "EntityGetter"
+      }
+    ],
+    "net.ccbluex.liquidbounce.utils.world.WorldExtensionsKt.none": [
+      {
+        "params": [
+          {
+            "name": "type",
+            "type": "EntityTypeTest<B, T>",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "predicate",
+            "type": "Predicate<T>",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Boolean",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt",
+          "line": 167
+        },
+        "isExtension": true,
+        "receiver": "LevelEntityGetter<B>"
       }
     ],
     "net.ccbluex.liquidbounce.utils.world.WorldExtensionsKt.sectionBottomY": [
@@ -107193,7 +107366,7 @@
         "returns": "Int",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt",
-          "line": 99
+          "line": 104
         },
         "isExtension": true,
         "receiver": "ChunkAccess"
