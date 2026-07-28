@@ -9,7 +9,7 @@ import type { PacketEvent } from '../../../../../../../../../net/ccbluex/liquidb
  * Takes any kind of damage, preferably explosion damage.
  * Might bypass some anti-cheats.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/FlyGeneric.kt#L194 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/FlyGeneric.kt:194}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/FlyGeneric.kt#L189 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/FlyGeneric.kt:189}
  */
 export class FlyExplosion extends Mode {
     static Companion: Tagged$Companion;

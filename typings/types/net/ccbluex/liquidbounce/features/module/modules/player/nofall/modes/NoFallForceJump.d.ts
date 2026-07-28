@@ -7,7 +7,7 @@ import type { NoFallMode } from '../../../../../../../../../net/ccbluex/liquidbo
  * This mode forces the player to jump just when his about to land,
  * preventing fall damage.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallForceJump.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallForceJump.kt:33}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallForceJump.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallForceJump.kt:33}
  */
 export class NoFallForceJump extends NoFallMode {
     static Companion: Tagged$Companion;
@@ -24,7 +24,7 @@ export class NoFallForceJump extends NoFallMode {
      * This is done by checking if the player's fall distance is higher than the specific (fallDistance)
      * and if the player is above a nonair block by the specific block distance.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallForceJump.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallForceJump.kt:46}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallForceJump.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallForceJump.kt:46}
      */
     readonly packetHandler: EventHook<PacketEvent>;
     // private collidesBottomVertical(): boolean;

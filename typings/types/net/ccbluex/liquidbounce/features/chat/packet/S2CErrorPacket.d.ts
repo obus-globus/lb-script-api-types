@@ -5,7 +5,7 @@ import type { AxochatPacket$S2C } from '../../../../../../net/ccbluex/liquidboun
  *
  * @param message Error message
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ClientPackets.kt#L117 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ClientPackets.kt:117}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ClientPackets.kt#L117 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ClientPackets.kt:117}
  */
 export class S2CErrorPacket extends Object implements AxochatPacket$S2C {
     constructor(message: string)

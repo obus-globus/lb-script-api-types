@@ -1,5 +1,6 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { DirectionalInput$Companion } from '../../../../../net/ccbluex/liquidbounce/utils/movement/DirectionalInput$Companion.d.ts'
+import type { Options } from '../../../../../net/minecraft/client/Options.d.ts'
 import type { ClientInput } from '../../../../../net/minecraft/client/player/ClientInput.d.ts'
 import type { Input } from '../../../../../net/minecraft/world/entity/player/Input.d.ts'
 export class DirectionalInput extends Object {
@@ -15,6 +16,7 @@ export class DirectionalInput extends Object {
     static RIGHT: DirectionalInput;
     constructor(forwards: boolean, backwards: boolean, left: boolean, right: boolean)
     constructor(movementForward: number, movementSideways: number)
+    constructor(options: Options)
     constructor(input: ClientInput)
     constructor(input: Input)
     readonly backwards: boolean;

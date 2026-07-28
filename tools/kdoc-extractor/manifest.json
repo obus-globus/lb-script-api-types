@@ -4585,11 +4585,11 @@
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.exploit.ModuleClip": {
-    "doc": "Clip module\n\nAllows you to clip through blocks by jumping or snekaing.",
+    "doc": "Clip module\n\nAllows you to clip through blocks by jumping or sneaking.",
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/exploit/ModuleClip.kt",
-      "line": 48
+      "line": 53
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.exploit.ModuleDamage": {
@@ -6209,7 +6209,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/ModuleFly.kt",
-      "line": 61
+      "line": 62
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.fly.modes.FlyExplosion": {
@@ -6217,7 +6217,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/FlyGeneric.kt",
-      "line": 194
+      "line": 189
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.fly.modes.fireball.techniques.FlyFireballLegitTechnique.invertYaw": {
@@ -8555,7 +8555,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt",
-      "line": 71
+      "line": 73
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleFreeCam.CameraInteract": {
@@ -8563,7 +8563,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt",
-      "line": 79
+      "line": 81
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleFreeCam.CancelOn": {
@@ -8571,7 +8571,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt",
-      "line": 91
+      "line": 93
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleFreeCam.Navigation": {
@@ -8579,7 +8579,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt",
-      "line": 128
+      "line": 130
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleFreeCam.Navigation.calculateGoalPosition": {
@@ -8588,7 +8588,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt",
-      "line": 147
+      "line": 149
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleFreeCam.Navigation.createNavigationContext": {
@@ -8596,15 +8596,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt",
-      "line": 138
-    }
-  },
-  "net.ccbluex.liquidbounce.features.module.modules.render.ModuleFreeCam.modifyRaycast": {
-    "doc": "Modify the raycast position",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt",
-      "line": 298
+      "line": 140
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleFullBright": {

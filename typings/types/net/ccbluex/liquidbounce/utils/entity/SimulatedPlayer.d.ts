@@ -76,7 +76,7 @@ export class SimulatedPlayer extends Object implements PlayerSimulation {
     /**
      * @see net.minecraft.world.entity.LivingEntity.jumpFromGround()
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/SimulatedPlayer.kt#L565 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/SimulatedPlayer.kt:565}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/SimulatedPlayer.kt#L565 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/SimulatedPlayer.kt:565}
      */
     jumpFromGround(): void;
     // private maybeBackOffFromEdge(movement: Vec3): Vec3;

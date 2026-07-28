@@ -12,7 +12,7 @@ import type { Vec3 } from '../../../../../../../../net/minecraft/world/phys/Vec3
  *
  * Automatically farms stuff for you.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autofarm/ModuleAutoFarm.kt#L73 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autofarm/ModuleAutoFarm.kt:73}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autofarm/ModuleAutoFarm.kt#L73 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autofarm/ModuleAutoFarm.kt:73}
  */
 export class ModuleAutoFarm extends ClientModule {
     static INSTANCE: ModuleAutoFarm;

@@ -20,6 +20,5 @@ export class FlyCreative extends Mode {
     // private speed: number;
     // private /*not mapped: */ getSpeed(): number;
     disable(): void;
-    enable(): void;
     // private shouldFlyDown(): boolean;
 }

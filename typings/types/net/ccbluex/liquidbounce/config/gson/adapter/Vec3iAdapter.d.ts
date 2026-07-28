@@ -5,7 +5,7 @@ import type { Vec3i } from '../../../../../../net/minecraft/core/Vec3i.d.ts'
 /**
  * Please use {@link Vec3i} instead of {@link BlockPos} for serialization.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/adapter/VectorAdapter.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/adapter/VectorAdapter.kt:35}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/adapter/VectorAdapter.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/adapter/VectorAdapter.kt:35}
  */
 export class Vec3iAdapter extends TypeAdapter<Vec3i> {
     static INSTANCE: Vec3iAdapter;

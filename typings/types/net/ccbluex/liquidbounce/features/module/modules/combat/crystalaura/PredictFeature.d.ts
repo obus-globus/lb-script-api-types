@@ -10,7 +10,7 @@ import type { Vec3 } from '../../../../../../../../net/minecraft/world/phys/Vec3
 /**
  * Tries to run calculations with simulated player positions.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/PredictFeature.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/PredictFeature.kt:39}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/PredictFeature.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/PredictFeature.kt:39}
  */
 export abstract class PredictFeature extends ToggleableValueGroup {
     static Companion: PredictFeature$Companion;
@@ -18,13 +18,13 @@ export abstract class PredictFeature extends ToggleableValueGroup {
     /**
      * Should be higher than the place ticks. Normally about one to two tick.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/PredictFeature.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/PredictFeature.kt:54}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/PredictFeature.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/PredictFeature.kt:54}
      */
     readonly basePlaceTicks: number;
     /**
      * How the predicted data will be used. For damage prediction only.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/PredictFeature.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/PredictFeature.kt:59}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/PredictFeature.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/PredictFeature.kt:59}
      */
     readonly calculationMode: ModeValueGroup<PredictFeature$CalculationMode>;
     // private checkIntersect: boolean;
@@ -32,13 +32,13 @@ export abstract class PredictFeature extends ToggleableValueGroup {
     /**
      * Should normally be lower than the place ticks (except when using ID-Predict).
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/PredictFeature.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/PredictFeature.kt:49}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/PredictFeature.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/PredictFeature.kt:49}
      */
     readonly destroyTicks: number;
     /**
      * The ticks should be equal to `20 / cps` to get the approximate time it would take to place a crystal.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/PredictFeature.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/PredictFeature.kt:44}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/PredictFeature.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/PredictFeature.kt:44}
      */
     readonly placeTicks: number;
     getDamage(player: Player, ticks: number, crystal: Vec3, maxBlastResistance: number | null, include: BlockPos | null): DamageProvider;

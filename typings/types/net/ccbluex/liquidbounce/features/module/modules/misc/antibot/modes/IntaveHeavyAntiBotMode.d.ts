@@ -14,7 +14,7 @@ import type { Player } from '../../../../../../../../../net/minecraft/world/enti
  *
  * Tested on: gamster.org and a private server with latest Intave as of 7/28/2022.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/IntaveHeavyAntiBotMode.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/IntaveHeavyAntiBotMode.kt:35}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/IntaveHeavyAntiBotMode.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/IntaveHeavyAntiBotMode.kt:35}
  */
 export class IntaveHeavyAntiBotMode extends AntiBotMode {
     static Companion: Tagged$Companion;
@@ -30,7 +30,7 @@ export class IntaveHeavyAntiBotMode extends AntiBotMode {
      * {@link ClientboundPlayerInfoUpdatePacket.Action.UPDATE_LATENCY} to make up for the ping issue.
      * Unfortunately, that leads to even more problems.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/IntaveHeavyAntiBotMode.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/IntaveHeavyAntiBotMode.kt:49}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/IntaveHeavyAntiBotMode.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/IntaveHeavyAntiBotMode.kt:49}
      */
     readonly packetHandler: EventHook<PacketEvent>;
     // private suspectList: JavaMap<UUID, IntaveHeavyAntiBotMode$SuspectInfo>;

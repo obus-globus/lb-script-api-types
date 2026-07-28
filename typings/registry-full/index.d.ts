@@ -30954,6 +30954,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.features.module.modules.exploit.ModuleAntiReducedDebugInfo": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/exploit/ModuleAntiReducedDebugInfo").ModuleAntiReducedDebugInfo;
     "net.ccbluex.liquidbounce.features.module.modules.exploit.ModuleClickTp": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/exploit/ModuleClickTp").ModuleClickTp;
     "net.ccbluex.liquidbounce.features.module.modules.exploit.ModuleClip": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/exploit/ModuleClip").ModuleClip;
+    "net.ccbluex.liquidbounce.features.module.modules.exploit.ModuleClip$AllowedLiquids": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/exploit/ModuleClip$AllowedLiquids").ModuleClip$AllowedLiquids;
     "net.ccbluex.liquidbounce.features.module.modules.exploit.ModuleClip$Fancy": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/exploit/ModuleClip$Fancy").ModuleClip$Fancy;
     "net.ccbluex.liquidbounce.features.module.modules.exploit.ModuleClip$Old": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/exploit/ModuleClip$Old").ModuleClip$Old;
     "net.ccbluex.liquidbounce.features.module.modules.exploit.ModuleDamage": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/exploit/ModuleDamage").ModuleDamage;

@@ -24,7 +24,7 @@ import type { ResourceManagerReloadListener } from '../../../../../net/minecraft
  *
  * Can be local from {@link ClientInteropServer} or remote from the internet.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/Theme.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/Theme.kt:59}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/Theme.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/Theme.kt:59}
  */
 export class Theme extends BaseApi implements Closeable, ResourceManagerReloadListener {
     static Companion: Theme$Companion;
@@ -54,7 +54,7 @@ export class Theme extends BaseApi implements Closeable, ResourceManagerReloadLi
     /**
      * Get the URL to the given page name in the theme.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/Theme.kt#L315 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/Theme.kt:315}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/Theme.kt#L315 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/Theme.kt:315}
      */
     getUrl(name: string | null, markAsStatic: boolean): string;
     isOverlaySupported(name: string | null): boolean;

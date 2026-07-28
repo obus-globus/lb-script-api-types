@@ -1,6 +1,7 @@
 import type { Predicate } from '../../../../../../../java/util/function/Predicate.d.ts'
 import type { Event } from '../../../../../../../net/ccbluex/liquidbounce/event/Event.d.ts'
 import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
+import type { GameTickEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts'
 import type { MouseButtonEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/MouseButtonEvent.d.ts'
 import type { MovementInputEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/MovementInputEvent.d.ts'
 import type { PerspectiveEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/PerspectiveEvent.d.ts'
@@ -11,17 +12,17 @@ import type { ModuleFreeCam$CancelOn } from '../../../../../../../net/ccbluex/li
 import type { ModuleFreeCam$CancelTrigger } from '../../../../../../../net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam$CancelTrigger.d.ts'
 import type { RotationsValueGroup } from '../../../../../../../net/ccbluex/liquidbounce/utils/aiming/RotationsValueGroup.d.ts'
 import type { Entity } from '../../../../../../../net/minecraft/world/entity/Entity.d.ts'
-import type { LivingEntity } from '../../../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 import type { Vec3 } from '../../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 /**
  * FreeCam module
  *
  * Allows you to move out of your body.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt#L71 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt:71}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt#L73 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt:73}
  */
 export class ModuleFreeCam extends ClientModule {
     static INSTANCE: ModuleFreeCam;
+    static shouldCameraInteractActive(): boolean;
     // private alwaysCancelOnHandler: EventHook<WorldChangeEvent>;
     // private cancelOn: ModuleFreeCam$CancelOn[];
     // private /*not mapped: */ getCancelOn(): ModuleFreeCam$CancelOn[];
@@ -37,17 +38,12 @@ export class ModuleFreeCam extends ClientModule {
     // private rotations: RotationsValueGroup;
     // private speed: number;
     // private /*not mapped: */ getSpeed(): number;
+    // private tickHandler: EventHook<GameTickEvent>;
     applyCameraPosition(entity: Entity | null, partialTicks: number): void;
     // private cancelTrigger<E extends Event>(predicate: (param0: E) => boolean): ModuleFreeCam$CancelTrigger<E>;
     // private getCameraLookingAt(): Vec3 | null;
-    /**
-     * Modify the raycast position
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt#L298 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt:298}
-     */
-    modifyRaycast(original: Vec3, entity: Entity, tickDelta: number): Vec3;
     onDisabled(): void;
     onEnabled(): void;
-    renderPlayerFromAllPerspectives(entity: LivingEntity): boolean;
+    shouldCameraInteractActive(): boolean;
     shouldDisableCameraInteract(): boolean;
 }

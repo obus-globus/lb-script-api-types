@@ -23,7 +23,7 @@ import type { Component } from '../../../../../net/minecraft/network/chat/Compon
 We are simulating this behaviour by calculating how many times we could have been clicked in the meantime of a tick.
 This allows us to predict future actions and behave accordingly.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/Clicker.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/Clicker.kt:59}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/Clicker.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/Clicker.kt:59}
  */
 export class Clicker<T extends EventListener> extends ValueGroup implements EventListener {
     static Companion: Clicker$Companion;
@@ -50,7 +50,7 @@ export class Clicker<T extends EventListener> extends ValueGroup implements Even
      * Returns true when a click attempt can be executed right now.
      * This uses the same gating logic as {@link click} before invoking {@link block}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/Clicker.kt#L204 | src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/Clicker.kt:204}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/Clicker.kt#L204 | src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/Clicker.kt:204}
      */
     canExecuteClickNow(): boolean;
     children(): EventListener[];
@@ -58,7 +58,7 @@ export class Clicker<T extends EventListener> extends ValueGroup implements Even
      * Clicks {@link cps} times per call (tick). If the cooldown is not passed, it will not click.
      * {@link block} should return true if the click was successful. Otherwise, it will not count as a click.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/Clicker.kt#L173 | src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/Clicker.kt:173}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/Clicker.kt#L173 | src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/Clicker.kt:173}
      */
     click(block: () => boolean): void;
     // private fill(): void;

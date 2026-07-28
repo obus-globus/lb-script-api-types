@@ -11,7 +11,7 @@ export class BuildPagedQueryCommandKt extends Object {
      * @param items provides all items. This function should be light-weighted.
      * @param eachRow @author MukjepScarlet
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/c86714198f6c981b97c9965ca188b8b8598816e4/src/main/kotlin/net/ccbluex/liquidbounce/features/command/preset/BuildPagedQueryCommand.kt#L129 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/preset/BuildPagedQueryCommand.kt:129}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/features/command/preset/BuildPagedQueryCommand.kt#L129 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/preset/BuildPagedQueryCommand.kt:129}
      */
     static pagedQuery<T extends unknown>(self: CommandBuilder, pageSize: number, header: (param0: Command) => Component, items: () => T[], eachRow: (param0: Command, param1: number, param2: T) => Component): Command;
 }
