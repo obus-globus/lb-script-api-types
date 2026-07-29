@@ -10,7 +10,7 @@ import type { SprintEvent } from '../../../../../../../../../../net/ccbluex/liqu
  * extensive blocksmc speed
  * @author liquidsquid1
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/blocksmc/SpeedBlocksMC.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/blocksmc/SpeedBlocksMC.kt:45}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f48456b711a70c664e76abb64e3e2ccc9cc2c34/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/blocksmc/SpeedBlocksMC.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/blocksmc/SpeedBlocksMC.kt:45}
  */
 export class SpeedBlocksMC extends Mode {
     static Companion: Tagged$Companion;

@@ -25,7 +25,7 @@ export class WorldExtensionsKt extends Object {
      *
      * @see LevelChunk.getBlockState
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L88 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:88}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f48456b711a70c664e76abb64e3e2ccc9cc2c34/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L88 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:88}
      */
     static forEachBlock(self: LevelChunkSection, action: (param0: number, param1: number, param2: number, param3: BlockState) => void): void;
     /**
@@ -35,7 +35,7 @@ export class WorldExtensionsKt extends Object {
      *
      * @see LevelChunk.getBlockState
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L69 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:69}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f48456b711a70c664e76abb64e3e2ccc9cc2c34/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L69 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:69}
      */
     static forEachSectionBlock(self: LevelChunk, sectionIndex: number, mutable: BlockPos$MutableBlockPos, action: (param0: BlockPos, param1: BlockState) => void): void;
     static getBedRule(paramarg0: Level): BedRule;
@@ -45,14 +45,14 @@ export class WorldExtensionsKt extends Object {
     /**
      * Returns the loaded section slice from section 0 through {@link ChunkAccess.highestFilledSectionIndex}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:59}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f48456b711a70c664e76abb64e3e2ccc9cc2c34/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:59}
      */
     static getFilledSections(paramarg0: ChunkAccess): LevelChunkSection[];
     static getRespawnAnchorWorks(paramarg0: Level): boolean;
     /**
      * @returns if water and ice evaporates in this world (e.g. nether)
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L47 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:47}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f48456b711a70c664e76abb64e3e2ccc9cc2c34/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L47 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:47}
      */
     static getWaterEvaporates(paramarg0: Level): boolean;
     static none<B extends Entity, T extends B>(self: LevelEntityGetter<B>, type: EntityTypeTest<B, T>, predicate: (param0: T) => boolean): boolean;
@@ -61,7 +61,7 @@ export class WorldExtensionsKt extends Object {
      *
      * `index == (y >> 4) - (bottomY >> 4)`
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L104 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:104}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f48456b711a70c664e76abb64e3e2ccc9cc2c34/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L104 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:104}
      */
     static sectionBottomY(self: ChunkAccess, index: number): number;
 }

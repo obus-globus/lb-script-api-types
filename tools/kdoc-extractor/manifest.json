@@ -2869,7 +2869,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/global/GlobalSettingsRichPresence.kt",
-      "line": 54
+      "line": 53
     }
   },
   "net.ccbluex.liquidbounce.features.global.GlobalSettingsRichPresence.running": {
@@ -2877,7 +2877,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/global/GlobalSettingsRichPresence.kt",
-      "line": 242
+      "line": 231
     }
   },
   "net.ccbluex.liquidbounce.features.marketplace.MarketplaceManager": {
@@ -7355,7 +7355,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/antivoid/ModuleAntiVoid.kt",
-      "line": 42
+      "line": 43
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.antivoid.ModuleAntiVoid.isPredictingFall": {
@@ -7363,7 +7363,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/antivoid/ModuleAntiVoid.kt",
-      "line": 118
+      "line": 120
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.antivoid.ModuleAntiVoid.voidHandler": {
@@ -7371,7 +7371,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/antivoid/ModuleAntiVoid.kt",
-      "line": 71
+      "line": 73
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.antivoid.mode.AntiVoidBlinkMode.rescue": {
@@ -7396,6 +7396,14 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/antivoid/mode/AntiVoidMode.kt",
       "line": 46
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.player.antivoid.mode.AntiVoidUseItemMode": {
+    "doc": "AntiVoid UseItem mode.\n\nWhen the player is falling into the void with no way to recover, a configured item\nfrom the hotbar is used. This is useful on servers with power-ups where using\nspecific items can prevent void death.\n\nThe trigger conditions are:\n1. the player is likely falling.\n2. the player's y motion is fast enough to be below [yMotionThreshold].\n3. the simulation predicts the player will not reach solid ground within 40 ticks.",
+    "kind": "object",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/antivoid/mode/AntiVoidUseItemMode.kt",
+      "line": 43
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.autobuff.Buff.runIfPossible": {

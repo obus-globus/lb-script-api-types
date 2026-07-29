@@ -10,6 +10,30 @@
 // small (~1s).
 declare global {
 interface JavaTypeRegistry {
+    "net.ccbluex.discordipc.DiscordActivity": typeof import("../types/net/ccbluex/discordipc/DiscordActivity").DiscordActivity;
+    "net.ccbluex.discordipc.DiscordActivity$Button": typeof import("../types/net/ccbluex/discordipc/DiscordActivity$Button").DiscordActivity$Button;
+    "net.ccbluex.discordipc.DiscordActivity$Companion": typeof import("../types/net/ccbluex/discordipc/DiscordActivity$Companion").DiscordActivity$Companion;
+    "net.ccbluex.discordipc.DiscordActivity$Image": typeof import("../types/net/ccbluex/discordipc/DiscordActivity$Image").DiscordActivity$Image;
+    "net.ccbluex.discordipc.DiscordActivity$StatusDisplayType": typeof import("../types/net/ccbluex/discordipc/DiscordActivity$StatusDisplayType").DiscordActivity$StatusDisplayType;
+    "net.ccbluex.discordipc.DiscordActivity$Type": typeof import("../types/net/ccbluex/discordipc/DiscordActivity$Type").DiscordActivity$Type;
+    "net.ccbluex.discordipc.DiscordIpcClient": typeof import("../types/net/ccbluex/discordipc/DiscordIpcClient").DiscordIpcClient;
+    "net.ccbluex.discordipc.DiscordIpcClient$Companion": typeof import("../types/net/ccbluex/discordipc/DiscordIpcClient$Companion").DiscordIpcClient$Companion;
+    "net.ccbluex.discordipc.DiscordIpcClient$State": typeof import("../types/net/ccbluex/discordipc/DiscordIpcClient$State").DiscordIpcClient$State;
+    "net.ccbluex.discordipc.DiscordIpcClientKt": typeof import("../types/net/ccbluex/discordipc/DiscordIpcClientKt").DiscordIpcClientKt;
+    "net.ccbluex.discordipc.DiscordIpcClientKt$WhenMappings": typeof import("../types/net/ccbluex/discordipc/DiscordIpcClientKt$WhenMappings").DiscordIpcClientKt$WhenMappings;
+    "net.ccbluex.discordipc.DiscordIpcFrame": typeof import("../types/net/ccbluex/discordipc/DiscordIpcFrame").DiscordIpcFrame;
+    "net.ccbluex.discordipc.DiscordIpcFrame$Companion": typeof import("../types/net/ccbluex/discordipc/DiscordIpcFrame$Companion").DiscordIpcFrame$Companion;
+    "net.ccbluex.discordipc.DiscordIpcFrame$Header": typeof import("../types/net/ccbluex/discordipc/DiscordIpcFrame$Header").DiscordIpcFrame$Header;
+    "net.ccbluex.discordipc.DiscordIpcFrame$Opcode": typeof import("../types/net/ccbluex/discordipc/DiscordIpcFrame$Opcode").DiscordIpcFrame$Opcode;
+    "net.ccbluex.discordipc.DiscordIpcFrame$Opcode$Companion": typeof import("../types/net/ccbluex/discordipc/DiscordIpcFrame$Opcode$Companion").DiscordIpcFrame$Opcode$Companion;
+    "net.ccbluex.discordipc.DiscordIpcPipeLocator": typeof import("../types/net/ccbluex/discordipc/DiscordIpcPipeLocator").DiscordIpcPipeLocator;
+    "net.ccbluex.discordipc.DiscordIpcPlatform": typeof import("../types/net/ccbluex/discordipc/DiscordIpcPlatform").DiscordIpcPlatform;
+    "net.ccbluex.discordipc.DiscordIpcPlatform$Companion": typeof import("../types/net/ccbluex/discordipc/DiscordIpcPlatform$Companion").DiscordIpcPlatform$Companion;
+    "net.ccbluex.discordipc.DiscordIpcTransportKt": typeof import("../types/net/ccbluex/discordipc/DiscordIpcTransportKt").DiscordIpcTransportKt;
+    "net.ccbluex.discordipc.NoDiscordClientException": typeof import("../types/net/ccbluex/discordipc/NoDiscordClientException").NoDiscordClientException;
+    "net.ccbluex.discordipc.UnixDiscordIpcTransport": typeof import("../types/net/ccbluex/discordipc/UnixDiscordIpcTransport").UnixDiscordIpcTransport;
+    "net.ccbluex.discordipc.WindowsDiscordIpcTransport": typeof import("../types/net/ccbluex/discordipc/WindowsDiscordIpcTransport").WindowsDiscordIpcTransport;
+    "net.ccbluex.discordipc.WindowsDiscordIpcTransport$Companion": typeof import("../types/net/ccbluex/discordipc/WindowsDiscordIpcTransport$Companion").WindowsDiscordIpcTransport$Companion;
     "net.ccbluex.fastutil.LfuCache": typeof import("../types/net/ccbluex/fastutil/LfuCache").LfuCache;
     "net.ccbluex.fastutil.LfuCache$Companion": typeof import("../types/net/ccbluex/fastutil/LfuCache$Companion").LfuCache$Companion;
     "net.ccbluex.fastutil.Pool$Companion": typeof import("../types/net/ccbluex/fastutil/Pool$Companion").Pool$Companion;
@@ -593,6 +617,8 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.features.global.GlobalSettingsRichPresence$PresenceStatusDisplayType": typeof import("../types/net/ccbluex/liquidbounce/features/global/GlobalSettingsRichPresence$PresenceStatusDisplayType").GlobalSettingsRichPresence$PresenceStatusDisplayType;
     "net.ccbluex.liquidbounce.features.global.GlobalSettingsRichPresence$RichPresencePart": typeof import("../types/net/ccbluex/liquidbounce/features/global/GlobalSettingsRichPresence$RichPresencePart").GlobalSettingsRichPresence$RichPresencePart;
     "net.ccbluex.liquidbounce.features.global.GlobalSettingsRichPresence$SmallImageConfig": typeof import("../types/net/ccbluex/liquidbounce/features/global/GlobalSettingsRichPresence$SmallImageConfig").GlobalSettingsRichPresence$SmallImageConfig;
+    "net.ccbluex.liquidbounce.features.global.GlobalSettingsRichPresenceKt": typeof import("../types/net/ccbluex/liquidbounce/features/global/GlobalSettingsRichPresenceKt").GlobalSettingsRichPresenceKt;
+    "net.ccbluex.liquidbounce.features.global.GlobalSettingsRichPresenceKt$WhenMappings": typeof import("../types/net/ccbluex/liquidbounce/features/global/GlobalSettingsRichPresenceKt$WhenMappings").GlobalSettingsRichPresenceKt$WhenMappings;
     "net.ccbluex.liquidbounce.features.global.GlobalSettingsTarget": typeof import("../types/net/ccbluex/liquidbounce/features/global/GlobalSettingsTarget").GlobalSettingsTarget;
     "net.ccbluex.liquidbounce.features.marketplace.MarketplaceManager": typeof import("../types/net/ccbluex/liquidbounce/features/marketplace/MarketplaceManager").MarketplaceManager;
     "net.ccbluex.liquidbounce.features.marketplace.SubscribedItem": typeof import("../types/net/ccbluex/liquidbounce/features/marketplace/SubscribedItem").SubscribedItem;
@@ -1344,6 +1370,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.features.module.modules.player.antivoid.mode.AntiVoidFlagMode": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/antivoid/mode/AntiVoidFlagMode").AntiVoidFlagMode;
     "net.ccbluex.liquidbounce.features.module.modules.player.antivoid.mode.AntiVoidGhostBlockMode": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/antivoid/mode/AntiVoidGhostBlockMode").AntiVoidGhostBlockMode;
     "net.ccbluex.liquidbounce.features.module.modules.player.antivoid.mode.AntiVoidMode": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/antivoid/mode/AntiVoidMode").AntiVoidMode;
+    "net.ccbluex.liquidbounce.features.module.modules.player.antivoid.mode.AntiVoidUseItemMode": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/antivoid/mode/AntiVoidUseItemMode").AntiVoidUseItemMode;
     "net.ccbluex.liquidbounce.features.module.modules.player.autobuff.Buff": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/autobuff/Buff").Buff;
     "net.ccbluex.liquidbounce.features.module.modules.player.autobuff.HealthBasedBuff": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/autobuff/HealthBasedBuff").HealthBasedBuff;
     "net.ccbluex.liquidbounce.features.module.modules.player.autobuff.ModuleAutoBuff": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/autobuff/ModuleAutoBuff").ModuleAutoBuff;

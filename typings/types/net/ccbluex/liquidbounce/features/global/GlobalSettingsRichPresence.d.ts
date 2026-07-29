@@ -1,5 +1,6 @@
-import type { JsonElement } from '../../../../../com/google/gson/JsonElement.d.ts'
-import type { IPCClient } from '../../../../../com/jagrosh/discordipc/IPCClient.d.ts'
+import type { Instant } from '../../../../../java/time/Instant.d.ts'
+import type { DiscordActivity$Button } from '../../../../../net/ccbluex/discordipc/DiscordActivity$Button.d.ts'
+import type { DiscordIpcClient } from '../../../../../net/ccbluex/discordipc/DiscordIpcClient.d.ts'
 import type { ToggleableValueGroup } from '../../../../../net/ccbluex/liquidbounce/config/types/group/ToggleableValueGroup.d.ts'
 import type { EventHook } from '../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { ClientShutdownEvent } from '../../../../../net/ccbluex/liquidbounce/event/events/ClientShutdownEvent.d.ts'
@@ -15,23 +16,23 @@ import type { GlobalSettingsRichPresence$SmallImageConfig } from '../../../../..
  * todo: use ordered multi choose (https://github.com/CCBlueX/LiquidBounce/pull/7350), which allows
  *   custom ordering of parts.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/features/global/GlobalSettingsRichPresence.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/features/global/GlobalSettingsRichPresence.kt:54}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f48456b711a70c664e76abb64e3e2ccc9cc2c34/src/main/kotlin/net/ccbluex/liquidbounce/features/global/GlobalSettingsRichPresence.kt#L53 | src/main/kotlin/net/ccbluex/liquidbounce/features/global/GlobalSettingsRichPresence.kt:53}
  */
 export class GlobalSettingsRichPresence extends ToggleableValueGroup {
     static INSTANCE: GlobalSettingsRichPresence;
     // private IPC_APP_ID: number;
     // private activityType: GlobalSettingsRichPresence$PresenceActivityType;
     // private /*not mapped: */ getActivityType(): GlobalSettingsRichPresence$PresenceActivityType;
-    // private buttons: JsonElement[];
+    // private buttons: DiscordActivity$Button[];
     // private detailsParts: GlobalSettingsRichPresence$RichPresencePart[];
     // private /*not mapped: */ getDetailsParts(): GlobalSettingsRichPresence$RichPresencePart[];
     // private doNotTryToConnect: boolean;
-    // private ipcClient: IPCClient | null;
+    // private ipcClient: DiscordIpcClient | null;
     // private largeImage: GlobalSettingsRichPresence$LargeImageConfig;
     /**
      * Always running after initialized
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/features/global/GlobalSettingsRichPresence.kt#L242 | src/main/kotlin/net/ccbluex/liquidbounce/features/global/GlobalSettingsRichPresence.kt:242}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f48456b711a70c664e76abb64e3e2ccc9cc2c34/src/main/kotlin/net/ccbluex/liquidbounce/features/global/GlobalSettingsRichPresence.kt#L231 | src/main/kotlin/net/ccbluex/liquidbounce/features/global/GlobalSettingsRichPresence.kt:231}
      */
     readonly running: boolean;
     // private separatorText: string;
@@ -42,7 +43,7 @@ export class GlobalSettingsRichPresence extends ToggleableValueGroup {
     // private /*not mapped: */ getStateParts(): GlobalSettingsRichPresence$RichPresencePart[];
     // private statusDisplayType: GlobalSettingsRichPresence$PresenceStatusDisplayType;
     // private /*not mapped: */ getStatusDisplayType(): GlobalSettingsRichPresence$PresenceStatusDisplayType;
-    // private timestamp: number;
+    // private timestamp: Instant;
     // private updateCycle: EventHook<GameTickEvent>;
     // private buildText(parts: GlobalSettingsRichPresence$RichPresencePart[]): string;
     // private connectIpc(): void;

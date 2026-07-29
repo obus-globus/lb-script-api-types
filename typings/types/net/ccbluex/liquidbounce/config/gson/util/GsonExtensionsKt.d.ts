@@ -17,11 +17,12 @@ export class GsonExtensionsKt extends Object {
     static jsonArray(initialCapacity: number, builderAction: (param0: JsonArrayBuilder) => void): JsonElement[];
     static jsonArrayOf(...elements: JsonElement[]): JsonElement[];
     static jsonObject(builderAction: (param0: JsonObjectBuilder) => void): JsonObject;
+    static mapToJsonArray<T extends unknown>(self: T[], transform: (param0: T) => JsonElement | null): JsonElement[];
     static parseTree(self: JsonReader): JsonElement;
     /**
      * Read JSON content
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a847f7e000c4d4be9b75e414d34b2481d6f08e17/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt:43}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f48456b711a70c664e76abb64e3e2ccc9cc2c34/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt:43}
      */
     static readJson<T extends unknown>(self: File, charset: Charset): T;
     static readJson<T extends unknown>(self: InputStream, charset: Charset): T;
