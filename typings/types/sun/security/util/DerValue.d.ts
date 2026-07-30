@@ -74,6 +74,7 @@ export class DerValue extends Object {
     getNull(): void;
     getOID(): ObjectIdentifier;
     getOctetString(): number[];
+    // private getOctetString(arg0: number): number[];
     getPositiveBigInteger(): BigInteger;
     getPrintableString(): string;
     getT61String(): string;

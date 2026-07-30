@@ -8418,7 +8418,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
-      "line": 144
+      "line": 165
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.compositeIfNeeded": {
@@ -8426,7 +8426,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
-      "line": 153
+      "line": 174
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.isHeldItemSubmit": {
@@ -8434,7 +8434,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
-      "line": 124
+      "line": 145
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.markHeldItemSubmitIfActive": {
@@ -8442,7 +8442,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
-      "line": 115
+      "line": 136
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.remapCurrentHeldItemRenderTypeIfNeeded": {
@@ -8450,7 +8450,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
-      "line": 138
+      "line": 159
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.remapHeldItemRenderTypeIfNeeded": {
@@ -8458,7 +8458,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
-      "line": 128
+      "line": 149
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.remapIfNeeded": {
@@ -8466,7 +8466,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
-      "line": 96
+      "line": 117
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.withHeldItemContext": {
@@ -8474,7 +8474,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
-      "line": 106
+      "line": 127
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleClickGui": {
@@ -11109,7 +11109,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-      "line": 494
+      "line": 509
     }
   },
   "net.ccbluex.liquidbounce.render.ClientVertexFormats.GRADIENT_CIRCLE": {
@@ -12248,7 +12248,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/BatchCollector.kt",
-      "line": 171
+      "line": 173
     }
   },
   "net.ccbluex.liquidbounce.render.process": [
@@ -16169,7 +16169,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/io/FileUtils.kt",
-      "line": 39
+      "line": 40
     }
   },
   "net.ccbluex.liquidbounce.utils.io.extractZip": [

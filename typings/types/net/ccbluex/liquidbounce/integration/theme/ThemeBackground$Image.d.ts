@@ -10,7 +10,7 @@ import type { DynamicTexture } from '../../../../../net/minecraft/client/rendere
  *
  * @param texture The image texture
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f48456b711a70c664e76abb64e3e2ccc9cc2c34/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/ThemeBackground.kt#L74 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/ThemeBackground.kt:74}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/ThemeBackground.kt#L74 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/ThemeBackground.kt:74}
  */
 export class ThemeBackground$Image extends Object implements ThemeBackground {
     constructor(metadata: ThemeMetadata, image: NativeImage)

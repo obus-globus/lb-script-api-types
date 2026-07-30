@@ -4,7 +4,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
  * Marks a class, function or property as part of the LiquidBounce Script API.
  * It might not serve a purpose other than documentation.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f48456b711a70c664e76abb64e3e2ccc9cc2c34/src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptApiRequired.kt#L25 | src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptApiRequired.kt:25}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptApiRequired.kt#L25 | src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptApiRequired.kt:25}
  */
 export interface ScriptApiRequired extends Annotation, Object{
 }

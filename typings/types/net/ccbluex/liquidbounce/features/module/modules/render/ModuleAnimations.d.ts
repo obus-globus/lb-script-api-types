@@ -12,7 +12,7 @@ import type { ModuleAnimations$AnimationMode } from '../../../../../../../net/cc
  * Please credit from where you got the animation from and make sure they are willing to contribute.
  * If they are not willing to contribute, please do not add the animation to this module.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f48456b711a70c664e76abb64e3e2ccc9cc2c34/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAnimations.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAnimations.kt:44}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAnimations.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAnimations.kt:44}
  */
 export class ModuleAnimations extends ClientModule {
     static INSTANCE: ModuleAnimations;
@@ -23,7 +23,7 @@ export class ModuleAnimations extends ClientModule {
      * of a sword.
      * This choice is only used when the {@link ModuleSwordBlock} module is enabled.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f48456b711a70c664e76abb64e3e2ccc9cc2c34/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAnimations.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAnimations.kt:78}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAnimations.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAnimations.kt:78}
      */
     readonly blockAnimationChoice: ModeValueGroup<ModuleAnimations$AnimationMode>;
     readonly strideHandler: EventHook<PlayerStrideEvent>;

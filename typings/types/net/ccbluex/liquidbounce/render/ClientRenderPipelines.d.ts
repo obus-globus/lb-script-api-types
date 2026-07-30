@@ -6,6 +6,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
 export class ClientRenderPipelines extends Object {
     static Blend: RenderPipeline;
+    static ChamsImage: RenderPipeline;
     static FontMaskQuads: RenderPipeline;
     static GuiBlurH: RenderPipeline;
     static GuiBlurV: RenderPipeline;
@@ -16,14 +17,14 @@ export class ClientRenderPipelines extends Object {
     /**
      * @see RenderPipelines.LINES_TRANSLUCENT
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f48456b711a70c664e76abb64e3e2ccc9cc2c34/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L227 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:227}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L227 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:227}
      */
     static LinesWithWidth: RenderPipeline;
     /**
      * @see RenderPipelines.ENTITY_OUTLINE_BLIT
      * @see RenderPipelines.OUTLINE_SNIPPET
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f48456b711a70c664e76abb64e3e2ccc9cc2c34/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L422 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:422}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L422 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:422}
      */
     static Outline: RenderPipeline;
     static Quads: RenderPipeline;
@@ -34,6 +35,7 @@ export class ClientRenderPipelines extends Object {
     static relativeQuads(useColor: boolean): RenderPipeline;
     static triangleStrip(noDepthTest: boolean): RenderPipeline;
     Blend: RenderPipeline;
+    ChamsImage: RenderPipeline;
     FontMaskQuads: RenderPipeline;
     // private GradientCircle: RenderPipeline;
     // private GradientCircleNoDepthTest: RenderPipeline;
@@ -68,7 +70,7 @@ export class ClientRenderPipelines extends Object {
     /**
      * Precompile
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f48456b711a70c664e76abb64e3e2ccc9cc2c34/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L494 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:494}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L509 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:509}
      */
     precompile(): void;
     relativeLines(useColor: boolean): RenderPipeline;

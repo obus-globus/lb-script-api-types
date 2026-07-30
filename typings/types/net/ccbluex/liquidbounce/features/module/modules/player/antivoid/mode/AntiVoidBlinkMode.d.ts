@@ -18,7 +18,7 @@ export class AntiVoidBlinkMode extends AntiVoidMode {
      * TODO: This does not seem to be consistent enough,
      *   so we rather rely on the base {@link discoverRescuePosition} method.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f48456b711a70c664e76abb64e3e2ccc9cc2c34/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/antivoid/mode/AntiVoidBlinkMode.kt#L62 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/antivoid/mode/AntiVoidBlinkMode.kt:62}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/antivoid/mode/AntiVoidBlinkMode.kt#L62 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/antivoid/mode/AntiVoidBlinkMode.kt:62}
      */
     rescue(): boolean;
 }

@@ -27,19 +27,19 @@ export class NetherPortal extends Object implements MinecraftShortcuts {
     /**
      * Scores the potential portal about how favourable it would be, to find the best place position.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f48456b711a70c664e76abb64e3e2ccc9cc2c34/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autobuild/NetherPortal.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autobuild/NetherPortal.kt:58}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autobuild/NetherPortal.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autobuild/NetherPortal.kt:58}
      */
     calculateScore(): void;
     /**
      * Returns a list with all the positions that should be obsidian but aren't.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f48456b711a70c664e76abb64e3e2ccc9cc2c34/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autobuild/NetherPortal.kt#L115 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autobuild/NetherPortal.kt:115}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autobuild/NetherPortal.kt#L115 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autobuild/NetherPortal.kt:115}
      */
     confirmPlacements(): BlockPos[];
     /**
      * Whether the score is `-1`, meaning we can't build this portal without additional actions such as breaking.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f48456b711a70c664e76abb64e3e2ccc9cc2c34/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autobuild/NetherPortal.kt#L125 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autobuild/NetherPortal.kt:125}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autobuild/NetherPortal.kt#L125 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autobuild/NetherPortal.kt:125}
      */
     isValid(): boolean;
 }

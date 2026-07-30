@@ -12,6 +12,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { FeetBlockCachingEntity } from '../../../../net/caffeinemc/mods/lithium/common/entity/pushable/FeetBlockCachingEntity.d.ts'
 import type { MaybeInLevelObject } from '../../../../net/caffeinemc/mods/lithium/common/world/in_world_tracking/MaybeInLevelObject.d.ts'
 import type { EntityAccessor } from '../../../../net/caffeinemc/mods/lithium/mixin/block/hopper/EntityAccessor.d.ts'
+import type { MixinEntityAccessor } from '../../../../net/ccbluex/liquidbounce/injection/mixins/minecraft/entity/MixinEntityAccessor.d.ts'
 import type { AttachmentTarget } from '../../../../net/fabricmc/fabric/api/attachment/v1/AttachmentTarget.d.ts'
 import type { AttachmentTarget$OnAttachedSet } from '../../../../net/fabricmc/fabric/api/attachment/v1/AttachmentTarget$OnAttachedSet.d.ts'
 import type { AttachmentType } from '../../../../net/fabricmc/fabric/api/attachment/v1/AttachmentType.d.ts'
@@ -128,7 +129,7 @@ import type { VoxelShape } from '../../../../net/minecraft/world/phys/shapes/Vox
 import type { PlayerTeam } from '../../../../net/minecraft/world/scores/PlayerTeam.d.ts'
 import type { ScoreHolder } from '../../../../net/minecraft/world/scores/ScoreHolder.d.ts'
 import type { Team } from '../../../../net/minecraft/world/scores/Team.d.ts'
-export abstract class Entity extends Object implements IEntity, FeetBlockCachingEntity, MaybeInLevelObject, EntityAccessor, AttachmentTarget, EntityLoadData, PermissionContextOwner, AttachmentTargetImpl, EntityLoadDataSetter, EntityAccessor_2, TypedInstance<EntityType<any>>, DataComponentGetter, SyncedDataHolder, DebugValueSource, Nameable, ItemOwner, SlotProvider, EntityAccess, ScoreHolder {
+export abstract class Entity extends Object implements IEntity, FeetBlockCachingEntity, MaybeInLevelObject, EntityAccessor, MixinEntityAccessor, AttachmentTarget, EntityLoadData, PermissionContextOwner, AttachmentTargetImpl, EntityLoadDataSetter, EntityAccessor_2, TypedInstance<EntityType<any>>, DataComponentGetter, SyncedDataHolder, DebugValueSource, Nameable, ItemOwner, SlotProvider, EntityAccess, ScoreHolder {
     static BASE_SAFE_FALL_DISTANCE: number;
     static BASE_TICKS_REQUIRED_TO_FREEZE: number;
     static BOARDING_COOLDOWN: number;
@@ -681,6 +682,7 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     playStepSound(pos: BlockPos, blockState: BlockState): void;
     playSwimSound(volume: number): void;
     playerTouch(player: Player): void;
+    position(arg0: Vec3): void;
     position(): Vec3;
     positionRider(passenger: Entity): void;
     positionRider(passenger: Entity, moveFunction: (param0: Entity, param1: number, param2: number, param3: number) => void): void;
@@ -820,4 +822,6 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     // private vibrationAndSoundEffectsFromBlock(pos: BlockPos, blockState: BlockState, shouldSound: boolean, shouldVibrate: boolean, clippedMovement: Vec3): boolean;
     // private walkingStepSound(onPos: BlockPos, onState: BlockState): void;
     waterSwimSound(): void;
+    xRot(arg0: number): void;
+    yRot(arg0: number): void;
 }

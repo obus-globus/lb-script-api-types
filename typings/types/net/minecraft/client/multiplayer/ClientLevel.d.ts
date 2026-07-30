@@ -9,6 +9,7 @@ import type { ClientWorldAccessor } from '../../../../net/caffeinemc/mods/lithiu
 import type { ChunkTracker } from '../../../../net/caffeinemc/mods/sodium/client/render/chunk/map/ChunkTracker.d.ts'
 import type { ChunkTrackerHolder } from '../../../../net/caffeinemc/mods/sodium/client/render/chunk/map/ChunkTrackerHolder.d.ts'
 import type { BiomeSeedProvider } from '../../../../net/caffeinemc/mods/sodium/client/world/BiomeSeedProvider.d.ts'
+import type { MixinClientLevelAccessor } from '../../../../net/ccbluex/liquidbounce/injection/mixins/minecraft/client/MixinClientLevelAccessor.d.ts'
 import type { GlobalAttachments } from '../../../../net/fabricmc/fabric/api/attachment/v1/GlobalAttachments.d.ts'
 import type { CrashReport } from '../../../../net/minecraft/CrashReport.d.ts'
 import type { CrashReportCategory } from '../../../../net/minecraft/CrashReportCategory.d.ts'
@@ -84,7 +85,7 @@ import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
 import type { VoxelShape } from '../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 import type { Scoreboard } from '../../../../net/minecraft/world/scores/Scoreboard.d.ts'
 import type { LevelTickAccess } from '../../../../net/minecraft/world/ticks/LevelTickAccess.d.ts'
-export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrackerHolder, BiomeSeedProvider, CacheSlot$Cleaner<ClientLevel>, BlockAndTintGetter {
+export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrackerHolder, BiomeSeedProvider, MixinClientLevelAccessor, CacheSlot$Cleaner<ClientLevel>, BlockAndTintGetter {
     static ACROSS_THE_WHOLE_WORLD: number;
     static DEFAULT_QUIT_MESSAGE: Component;
     static DIRECTIONS: Direction[];
@@ -103,7 +104,7 @@ export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrac
     static isInSpawnableBounds(parampos: BlockPos): boolean;
     constructor(connection: ClientPacketListener, levelData: ClientLevel$ClientLevelData, dimension: ResourceKey<Level>, dimensionType: Holder<DimensionType>, serverChunkRadius: number, serverSimulationDistance: number, levelExtractor: LevelExtractor, isDebug: boolean, biomeZoomSeed: number, seaLevel: number)
     // private biomeZoomSeed: number;
-    // private blockStatePredictionHandler: BlockStatePredictionHandler;
+    readonly blockStatePredictionHandler: BlockStatePredictionHandler;
     readonly chunkSource: ClientChunkCache;
     // private chunkTracker: ChunkTracker;
     // private clientLevelData: ClientLevel$ClientLevelData;

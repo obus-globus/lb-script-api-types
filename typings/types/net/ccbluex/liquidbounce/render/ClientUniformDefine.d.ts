@@ -8,6 +8,7 @@ import type { Enum } from '../../../../java/lang/Enum.d.ts'
 import type { MappableRingBuffer } from '../../../../net/minecraft/client/renderer/MappableRingBuffer.d.ts'
 export class ClientUniformDefine extends Enum<ClientUniformDefine> {
     static BLEND: ClientUniformDefine;
+    static CHAMS: ClientUniformDefine;
     static DISTANCE_FADE: ClientUniformDefine;
     static GUI_BLUR: ClientUniformDefine;
     static GUI_BLUR_KERNEL: ClientUniformDefine;
@@ -28,5 +29,5 @@ export class ClientUniformDefine extends Enum<ClientUniformDefine> {
     createSingleBuffer(labelGetter?: () => string): GpuBufferSlice;
     label(): string;
     setTo(renderPass: RenderPass, slice: GpuBufferSlice): void;
-    name(): "DISTANCE_FADE" | "MESH_BASE_BLOCK_POS" | "ROUNDED_RECT" | "HAND_ITEM_LIGHTMAP" | "GUI_BLUR" | "GUI_BLUR_KERNEL" | "BLEND" | "THEME_BACKGROUND";
+    name(): "DISTANCE_FADE" | "MESH_BASE_BLOCK_POS" | "ROUNDED_RECT" | "HAND_ITEM_LIGHTMAP" | "CHAMS" | "GUI_BLUR" | "GUI_BLUR_KERNEL" | "BLEND" | "THEME_BACKGROUND";
 }

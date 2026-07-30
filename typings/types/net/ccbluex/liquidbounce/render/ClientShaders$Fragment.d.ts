@@ -5,6 +5,7 @@ export class ClientShaders$Fragment extends ClientShaders {
     static BgraPosTex: Identifier;
     static Blend: Identifier;
     static Blit: Identifier;
+    static Chams: Identifier;
     static Companion: ClientShaders$Companion;
     static EntityOutline: Identifier;
     static FontMask: Identifier;
@@ -21,6 +22,7 @@ export class ClientShaders$Fragment extends ClientShaders {
     BgraPosTex: Identifier;
     Blend: Identifier;
     Blit: Identifier;
+    Chams: Identifier;
     EntityOutline: Identifier;
     FontMask: Identifier;
     Glow: Identifier;

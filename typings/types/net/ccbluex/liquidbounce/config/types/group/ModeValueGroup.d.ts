@@ -5,7 +5,7 @@ import type { EventListener } from '../../../../../../net/ccbluex/liquidbounce/e
 /**
  * Allows configuring and manage modes
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f48456b711a70c664e76abb64e3e2ccc9cc2c34/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.kt:35}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.kt:35}
  */
 export class ModeValueGroup<T extends Mode> extends ValueGroup {
     constructor(eventListener: EventListener | null, name: string, activeModeIndexCallback: (param0: T[]) => number, modesCallback: (param0: ModeValueGroup<T>) => T[])

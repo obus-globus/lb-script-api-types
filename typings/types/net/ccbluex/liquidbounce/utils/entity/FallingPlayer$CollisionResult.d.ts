@@ -5,7 +5,7 @@ import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
  * {@link positionBeforeMovement} matches the position from which Minecraft 26.2 performs item use
  * before the movement step represented by {@link tick}.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f48456b711a70c664e76abb64e3e2ccc9cc2c34/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt#L330 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt:330}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt#L330 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt:330}
  */
 export class FallingPlayer$CollisionResult extends Object {
     constructor(pos: BlockPos | null, tick: number, positionBeforeMovement: Vec3)

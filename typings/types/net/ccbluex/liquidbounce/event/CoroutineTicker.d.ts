@@ -14,14 +14,14 @@ export class CoroutineTicker extends Object {
      *
      * @param task The callback to be run from next tick. It will be removed once returns true.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f48456b711a70c664e76abb64e3e2ccc9cc2c34/src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt#L65 | src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt:65}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt#L65 | src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt:65}
      */
     register(task: () => boolean): void;
     /**
      * We want it to run before everything else, this is because we want to tick the existing tasks before
      * new ones are added and might be ticked in the same tick
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f48456b711a70c664e76abb64e3e2ccc9cc2c34/src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt#L73 | src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt:73}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt#L73 | src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt:73}
      */
     tick(): void;
 }

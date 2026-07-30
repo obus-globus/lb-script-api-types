@@ -51,7 +51,7 @@ export class Command extends Object implements DebuggedOwner, MinecraftShortcuts
      * @param formatting Function to apply formatting to the text (default: regular)
      * @param hover Optional hover event (defaults to "Click to copy" tooltip)
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f48456b711a70c664e76abb64e3e2ccc9cc2c34/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L147 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:147}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L147 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:147}
      */
     printStyledComponent(key: string, textComponent: Component | null, copyContent: string | null, formatting: (param0: MutableComponent) => MutableComponent, hover: HoverEvent | null): void;
     /**
@@ -63,7 +63,7 @@ export class Command extends Object implements DebuggedOwner, MinecraftShortcuts
      * @param hover Optional hover event (defaults to "Click to copy" tooltip)
      * @param click Optional click action type (defaults to {@link ClickEvent.CopyToClipboard})
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f48456b711a70c664e76abb64e3e2ccc9cc2c34/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L125 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:125}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L125 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:125}
      */
     printStyledText(key: string, data: string | null, formatting: (param0: MutableComponent) => MutableComponent, hover: HoverEvent | null, click: ClickEvent | null): void;
     result(key: string, ...args: Object[]): MutableComponent;
@@ -76,7 +76,7 @@ export class Command extends Object implements DebuggedOwner, MinecraftShortcuts
      * command_name subcommand_name <required_arg> [[<optional_vararg>]...
      * ```
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f48456b711a70c664e76abb64e3e2ccc9cc2c34/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L182 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:182}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L182 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:182}
      */
     usage(): Component[];
 }

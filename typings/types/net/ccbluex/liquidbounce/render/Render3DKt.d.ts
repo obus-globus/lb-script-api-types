@@ -7,7 +7,7 @@ export class Render3DKt extends Object {
      * @see net.ccbluex.liquidbounce.features.module.modules.render.ModuleBlockESP
      * @see net.ccbluex.liquidbounce.features.module.modules.render.ModuleStorageESP
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f48456b711a70c664e76abb64e3e2ccc9cc2c34/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L69 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:69}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L69 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:69}
      */
     static translate(self: PoseStack, x: number, y: number, z: number): void;
     static translate(self: PoseStack, blockPos: number, origin: BlockPos): void;

@@ -16,7 +16,7 @@ export class Proxy$Companion extends Object {
      * - `username:password:hostname:port`
      * - `username:password@hostname:port`
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1f48456b711a70c664e76abb64e3e2ccc9cc2c34/src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/Proxy.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/Proxy.kt:78}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/Proxy.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/Proxy.kt:78}
      */
     parse(text: string): Proxy;
 }
