@@ -7,7 +7,7 @@ export class TextProcessor$Companion extends Object {
     /**
      * @param obfuscationRng The random for the obfuscation.      If null, obfuscated characters will be replaced with `_`
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/processor/TextProcessor.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/processor/TextProcessor.kt:41}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/processor/TextProcessor.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/processor/TextProcessor.kt:41}
      */
     protected generateObfuscatedChar(obfuscationRng: Random | null): number;
 }

@@ -25,7 +25,7 @@ export class WorldExtensionsKt extends Object {
      *
      * @see LevelChunk.getBlockState
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L88 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:88}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L90 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:90}
      */
     static forEachBlock(self: LevelChunkSection, action: (param0: number, param1: number, param2: number, param3: BlockState) => void): void;
     /**
@@ -35,7 +35,7 @@ export class WorldExtensionsKt extends Object {
      *
      * @see LevelChunk.getBlockState
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L69 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:69}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L71 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:71}
      */
     static forEachSectionBlock(self: LevelChunk, sectionIndex: number, mutable: BlockPos$MutableBlockPos, action: (param0: BlockPos, param1: BlockState) => void): void;
     static getBedRule(paramarg0: Level): BedRule;
@@ -45,23 +45,33 @@ export class WorldExtensionsKt extends Object {
     /**
      * Returns the loaded section slice from section 0 through {@link ChunkAccess.highestFilledSectionIndex}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:59}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:61}
      */
     static getFilledSections(paramarg0: ChunkAccess): LevelChunkSection[];
     static getRespawnAnchorWorks(paramarg0: Level): boolean;
     /**
      * @returns if water and ice evaporates in this world (e.g. nether)
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L47 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:47}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:49}
      */
     static getWaterEvaporates(paramarg0: Level): boolean;
+    /**
+     * Allocates a unique negative entity ID for a locally spawned entity.
+     *
+     * Server entity IDs are always positive, and {@link Level.getNextEntityId} returns 0 on the client,
+     * which {@link net.minecraft.client.multiplayer.ClientLevel.addEntity} rejects by throwing
+     * `Tried to access entity ID before ID assignment`.
+     *
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L188 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:188}
+     */
+    static nextLocalEntityId(self: Level): number;
     static none<B extends Entity, T extends B>(self: LevelEntityGetter<B>, type: EntityTypeTest<B, T>, predicate: (param0: T) => boolean): boolean;
     /**
      * Converts a section index to the section base world Y (multiple of 16).
      *
      * `index == (y >> 4) - (bottomY >> 4)`
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L104 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:104}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L106 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:106}
      */
     static sectionBottomY(self: ChunkAccess, index: number): number;
 }

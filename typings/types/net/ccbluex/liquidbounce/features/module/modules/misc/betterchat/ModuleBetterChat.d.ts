@@ -10,14 +10,14 @@ import type { GuiMessage$Line } from '../../../../../../../../net/minecraft/clie
  *
  * Quality of life improvements to the in-game chat.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/betterchat/ModuleBetterChat.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/betterchat/ModuleBetterChat.kt:49}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/betterchat/ModuleBetterChat.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/betterchat/ModuleBetterChat.kt:49}
  */
 export class ModuleBetterChat extends ClientModule {
     static INSTANCE: ModuleBetterChat;
     /**
      * Resolves the contiguous wrapped-line range for the message at {@link index}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/betterchat/ModuleBetterChat.kt#L221 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/betterchat/ModuleBetterChat.kt:221}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/betterchat/ModuleBetterChat.kt#L221 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/betterchat/ModuleBetterChat.kt:221}
      */
     static resolveMessageBounds(visibleMessages: GuiMessage$Line[], index: number): { start: number; endInclusive: number; step: number };
     antiChatClearPaused: boolean;

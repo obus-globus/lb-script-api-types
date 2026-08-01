@@ -19,7 +19,7 @@ export class VerticalAnchor extends Enum<VerticalAnchor> implements Tagged {
      * @param scale Render scale
      * @returns Draw (top-left) Y position
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/VerticalAnchor.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/VerticalAnchor.kt:44}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/VerticalAnchor.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/VerticalAnchor.kt:44}
      */
     anchorToDrawY(y: number, height: number, scale: number): number;
     name(): "TOP" | "MIDDLE" | "BOTTOM";

@@ -37,7 +37,7 @@ export class CriticalsJump extends Mode {
      * will try to attack the enemy anyway. To maximise damage, this function is used to determine
      * whether it is worth to wait for the fall.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/criticals/modes/CriticalsJump.kt#L115 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/criticals/modes/CriticalsJump.kt:115}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/criticals/modes/CriticalsJump.kt#L115 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/criticals/modes/CriticalsJump.kt:115}
      */
     shouldWaitForCrit(target: Entity, ignoreState: boolean): boolean;
     shouldWaitForJump(initialMotion: number): boolean;

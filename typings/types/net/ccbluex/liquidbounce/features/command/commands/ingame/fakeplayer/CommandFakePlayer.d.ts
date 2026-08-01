@@ -15,7 +15,7 @@ import type { LivingEntity } from '../../../../../../../../net/minecraft/world/e
  *
  * Allows you to spawn a client side player for testing purposes.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/CommandFakePlayer.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/CommandFakePlayer.kt:60}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/CommandFakePlayer.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/CommandFakePlayer.kt:61}
  */
 export class CommandFakePlayer extends Object implements EventListener, Command$Factory {
     static INSTANCE: CommandFakePlayer;
@@ -23,7 +23,6 @@ export class CommandFakePlayer extends Object implements EventListener, Command$
     readonly debugDisplayName: Component;
     readonly debugOwnerId: string;
     readonly explosionHandler: EventHook<PacketEvent>;
-    // private fakePlayerId: number;
     // private fakePlayers: FakePlayer[];
     // private recording: boolean;
     readonly running: boolean;
@@ -31,7 +30,7 @@ export class CommandFakePlayer extends Object implements EventListener, Command$
     /**
      * Recordings are made in the tick event handler.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/CommandFakePlayer.kt#L350 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/CommandFakePlayer.kt:350}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/CommandFakePlayer.kt#L347 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/CommandFakePlayer.kt:347}
      */
     readonly tickHandler: EventHook<GameTickEvent>;
     // private calculateAttackDamage(fakePlayer: LivingEntity): number;

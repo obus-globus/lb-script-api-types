@@ -46,7 +46,7 @@ export class ServerObserver extends Object implements EventListener {
      * Reference: https://github.com/CCBlueX/LiquidBounce/blob/legacy/src/main/java/net/ccbluex/liquidbounce/features/module/modules/misc/AnticheatDetector.kt
      * @author RtxOP
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ServerObserver.kt#L305 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ServerObserver.kt:305}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ServerObserver.kt#L305 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ServerObserver.kt:305}
      */
     guessAntiCheat(address: string | null): string | null;
     parent(): EventListener | null;
@@ -54,7 +54,7 @@ export class ServerObserver extends Object implements EventListener {
      * Reconnects to the last server. This is safe to call from every thread since it records a render call and
      * therefore runs in the Minecraft thread
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ServerObserver.kt#L126 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ServerObserver.kt:126}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ServerObserver.kt#L126 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ServerObserver.kt:126}
      */
     reconnect(): void;
     /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */

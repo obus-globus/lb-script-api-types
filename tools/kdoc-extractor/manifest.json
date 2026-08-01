@@ -24,7 +24,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 515
+      "line": 517
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.IN_DEVELOPMENT": {
@@ -118,7 +118,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 433
+      "line": 435
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.shutdownHandler": {
@@ -126,7 +126,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 539
+      "line": 541
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.startHandler": {
@@ -134,7 +134,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 460
+      "line": 462
     }
   },
   "net.ccbluex.liquidbounce.additions.GuiGraphicsExtractorAddition": {
@@ -1093,7 +1093,15 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/DeepLearningEngine.kt",
-      "line": 78
+      "line": 80
+    }
+  },
+  "net.ccbluex.liquidbounce.deeplearn.ModelManager.allCombatModels": {
+    "doc": "Bundled models merged with user models from the models folder.\nUser models take precedence over bundled models with the same name,\nso that improved copies of bundled models are used instead of the originals.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt",
+      "line": 68
     }
   },
   "net.ccbluex.liquidbounce.deeplearn.ModelManager.availableCombatModels": {
@@ -1101,15 +1109,15 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt",
-      "line": 50
+      "line": 60
     }
   },
-  "net.ccbluex.liquidbounce.deeplearn.ModelManager.combatModels": {
-    "doc": "Base models that are always available\nand are included in the LiquidBounce JAR.\n\nThe name can contain uppercase characters,\nbut the file should always be lowercase.",
+  "net.ccbluex.liquidbounce.deeplearn.ModelManager.builtInCombatModels": {
+    "doc": "Base models that are always available\nand are included in the LiquidBounce JAR.\n\nThe name can contain uppercase characters,\nbut the file should always be lowercase.\n\nA user model from the models folder with the same name\noverrides the bundled model of the same name.",
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt",
-      "line": 42
+      "line": 52
     }
   },
   "net.ccbluex.liquidbounce.deeplearn.ModelManager.load": {
@@ -1117,7 +1125,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt",
-      "line": 71
+      "line": 91
     }
   },
   "net.ccbluex.liquidbounce.deeplearn.ModelManager.reload": {
@@ -1125,15 +1133,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt",
-      "line": 105
-    }
-  },
-  "net.ccbluex.liquidbounce.deeplearn.ModelManager.unload": {
-    "doc": "Unload all models.",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt",
-      "line": 97
+      "line": 148
     }
   },
   "net.ccbluex.liquidbounce.deeplearn.data.CombatSample.age": {
@@ -1160,6 +1160,46 @@
       "line": 69
     }
   },
+  "net.ccbluex.liquidbounce.deeplearn.data.TrainingSample": {
+    "doc": "A training sample that can write its values directly into flat arrays.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/TrainingSample.kt",
+      "line": 23
+    }
+  },
+  "net.ccbluex.liquidbounce.deeplearn.data.TrainingSample.fillAsInput": {
+    "doc": "Writes input values at [fromIndex] and returns the exclusive end index.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/TrainingSample.kt",
+      "line": 42
+    }
+  },
+  "net.ccbluex.liquidbounce.deeplearn.data.TrainingSample.fillAsOutput": {
+    "doc": "Writes output values at [fromIndex] and returns the exclusive end index.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/TrainingSample.kt",
+      "line": 45
+    }
+  },
+  "net.ccbluex.liquidbounce.deeplearn.data.TrainingSample.inputSize": {
+    "doc": "Number of input values in this sample.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/TrainingSample.kt",
+      "line": 31
+    }
+  },
+  "net.ccbluex.liquidbounce.deeplearn.data.TrainingSample.outputSize": {
+    "doc": "Number of output values in this sample.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/TrainingSample.kt",
+      "line": 39
+    }
+  },
   "net.ccbluex.liquidbounce.deeplearn.listener.OverlayTrainingListener": {
     "doc": "Displays training overlay in Minecraft\n\nTraining Epoch 1/10 - Batch 45%\n[███████████░░░░░░░░░░░░░░]",
     "kind": "class",
@@ -1173,7 +1213,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/models/ModelWrapper.kt",
-      "line": 146
+      "line": 192
     }
   },
   "net.ccbluex.liquidbounce.event.ALL_EVENT_CLASSES": {
@@ -2018,7 +2058,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt",
-      "line": 278
+      "line": 283
     }
   },
   "net.ccbluex.liquidbounce.features.command.Command.Factory.createCommand": {
@@ -2026,7 +2066,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt",
-      "line": 283
+      "line": 288
     }
   },
   "net.ccbluex.liquidbounce.features.command.Command.printStyledComponent": {
@@ -2041,7 +2081,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt",
-      "line": 147
+      "line": 150
     }
   },
   "net.ccbluex.liquidbounce.features.command.Command.printStyledText": {
@@ -2056,7 +2096,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt",
-      "line": 125
+      "line": 128
     }
   },
   "net.ccbluex.liquidbounce.features.command.Command.subcommandMap": {
@@ -2064,7 +2104,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt",
-      "line": 79
+      "line": 82
     }
   },
   "net.ccbluex.liquidbounce.features.command.Command.usage": {
@@ -2072,7 +2112,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt",
-      "line": 182
+      "line": 185
     }
   },
   "net.ccbluex.liquidbounce.features.command.CommandExecutor": {
@@ -2572,7 +2612,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/CommandFakePlayer.kt",
-      "line": 60
+      "line": 61
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.fakeplayer.CommandFakePlayer.checkInGame": {
@@ -2580,7 +2620,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/CommandFakePlayer.kt",
-      "line": 290
+      "line": 287
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.fakeplayer.CommandFakePlayer.fakePlayers": {
@@ -2588,7 +2628,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/CommandFakePlayer.kt",
-      "line": 65
+      "line": 66
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.fakeplayer.CommandFakePlayer.spawn": {
@@ -2599,7 +2639,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/CommandFakePlayer.kt",
-      "line": 240
+      "line": 238
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.fakeplayer.CommandFakePlayer.stopRecording": {
@@ -2607,7 +2647,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/CommandFakePlayer.kt",
-      "line": 377
+      "line": 374
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.fakeplayer.CommandFakePlayer.tickHandler": {
@@ -2615,7 +2655,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/CommandFakePlayer.kt",
-      "line": 350
+      "line": 347
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.fakeplayer.FakePlayer": {
@@ -5661,7 +5701,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/debugrecorder/modes/DebugCombatTrainerRecorder.kt",
-      "line": 49
+      "line": 50
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.misc.debugrecorder.modes.DebugCombatTrainerRecorder.spawn": {
@@ -5669,7 +5709,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/debugrecorder/modes/DebugCombatTrainerRecorder.kt",
-      "line": 129
+      "line": 130
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.misc.nameprotect.Component.sanitizeForeignInput": {
@@ -7189,7 +7229,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleBlink.kt",
-      "line": 53
+      "line": 54
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.ModuleChestCleaner": {
@@ -8681,7 +8721,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleLogoffSpot.kt",
-      "line": 47
+      "line": 48
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleMobOwners": {
@@ -13242,7 +13282,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/anglesmooth/impl/AiAngleSmooth.kt",
-      "line": 51
+      "line": 53
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.features.processors.anglesmooth.impl.InterpolationAngleSmooth.calculateFactors": {
@@ -17624,7 +17664,15 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt",
-      "line": 104
+      "line": 106
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.world.Level.nextLocalEntityId": {
+    "doc": "Allocates a unique negative entity ID for a locally spawned entity.\n\nServer entity IDs are always positive, and [Level.getNextEntityId] returns 0 on the client,\nwhich [net.minecraft.client.multiplayer.ClientLevel.addEntity] rejects by throwing\n`Tried to access entity ID before ID assignment`.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt",
+      "line": 188
     }
   },
   "net.ccbluex.liquidbounce.utils.world.LevelChunk.forEachSectionBlock": {
@@ -17635,7 +17683,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt",
-      "line": 69
+      "line": 71
     }
   },
   "net.ccbluex.liquidbounce.utils.world.LevelChunkSection.forEachBlock": {
@@ -17646,7 +17694,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt",
-      "line": 88
+      "line": 90
     }
   },
   "net.ccbluex.liquidbounce.utils.world.filledSections": {
@@ -17654,7 +17702,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt",
-      "line": 59
+      "line": 61
     }
   },
   "net.ccbluex.liquidbounce.utils.world.waterEvaporates": {
@@ -17663,7 +17711,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt",
-      "line": 47
+      "line": 49
     }
   }
 }

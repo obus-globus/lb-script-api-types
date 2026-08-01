@@ -10,7 +10,7 @@ export class BlockRaytracingKt extends Object {
     /**
      * Allows you to check if a point is behind a wall
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/utils/raytracing/BlockRaytracing.kt#L76 | src/main/kotlin/net/ccbluex/liquidbounce/utils/raytracing/BlockRaytracing.kt:76}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/utils/raytracing/BlockRaytracing.kt#L76 | src/main/kotlin/net/ccbluex/liquidbounce/utils/raytracing/BlockRaytracing.kt:76}
      */
     static isFacingBlock(self: Entity, eyes: Vec3, targetPoint: Vec3, blockPos: BlockPos, expectedSide: Direction | null, expectedMaxRange: number | null): boolean;
     static rayTraceCollidingBlocks(start: Vec3, end: Vec3): BlockHitResult | null;

@@ -2,7 +2,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 /**
  * Provides autocompletion for one specific parameter
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt:31}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt:31}
  */
 export interface AutoCompletionProvider extends Object{
     /**
@@ -16,7 +16,7 @@ export interface AutoCompletionProvider extends Object{
      * @param args all current arguments of the command
      * @returns suggestions for the full parameter name
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt:44}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt:44}
      */
     autocomplete(begin: string, args: string[]): string[];
 }

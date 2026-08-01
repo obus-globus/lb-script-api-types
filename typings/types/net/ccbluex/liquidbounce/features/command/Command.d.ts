@@ -16,6 +16,7 @@ import type { ClickEvent } from '../../../../../net/minecraft/network/chat/Click
 import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { HoverEvent } from '../../../../../net/minecraft/network/chat/HoverEvent.d.ts'
 import type { MutableComponent } from '../../../../../net/minecraft/network/chat/MutableComponent.d.ts'
+import type { Logger } from '../../../../../org/apache/logging/log4j/Logger.d.ts'
 export class Command extends Object implements DebuggedOwner, MinecraftShortcuts {
     constructor(name: string, aliases: string[], parameters: Parameter<Object>[], subcommands: Command[], executable: boolean, handler: Command$Handler | null, requiresIngame: boolean)
     readonly aliases: string[];
@@ -27,6 +28,7 @@ export class Command extends Object implements DebuggedOwner, MinecraftShortcuts
     readonly handler: Command$Handler | null;
     index: number;
     readonly interaction: MultiPlayerGameMode;
+    readonly logger: Logger;
     readonly mc: Minecraft;
     readonly name: string;
     readonly network: ClientPacketListener;
@@ -51,7 +53,7 @@ export class Command extends Object implements DebuggedOwner, MinecraftShortcuts
      * @param formatting Function to apply formatting to the text (default: regular)
      * @param hover Optional hover event (defaults to "Click to copy" tooltip)
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L147 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:147}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L150 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:150}
      */
     printStyledComponent(key: string, textComponent: Component | null, copyContent: string | null, formatting: (param0: MutableComponent) => MutableComponent, hover: HoverEvent | null): void;
     /**
@@ -63,7 +65,7 @@ export class Command extends Object implements DebuggedOwner, MinecraftShortcuts
      * @param hover Optional hover event (defaults to "Click to copy" tooltip)
      * @param click Optional click action type (defaults to {@link ClickEvent.CopyToClipboard})
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L125 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:125}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L128 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:128}
      */
     printStyledText(key: string, data: string | null, formatting: (param0: MutableComponent) => MutableComponent, hover: HoverEvent | null, click: ClickEvent | null): void;
     result(key: string, ...args: Object[]): MutableComponent;
@@ -76,7 +78,7 @@ export class Command extends Object implements DebuggedOwner, MinecraftShortcuts
      * command_name subcommand_name <required_arg> [[<optional_vararg>]...
      * ```
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L182 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:182}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L185 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:185}
      */
     usage(): Component[];
 }

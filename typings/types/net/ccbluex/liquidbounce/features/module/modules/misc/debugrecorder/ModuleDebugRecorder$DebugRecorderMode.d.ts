@@ -6,12 +6,14 @@ import type { Tagged$Companion } from '../../../../../../../../net/ccbluex/liqui
 export abstract class ModuleDebugRecorder$DebugRecorderMode<T extends unknown> extends Mode {
     static Companion: Tagged$Companion;
     constructor(name: string)
+    // private /*not mapped: */ getFileExtension(): string;
     readonly folder: File;
     // private packets: T[];
-    /*not mapped: */ getPackets$net_ccbluex_liquidbounce(): T[];
+    // private /*not mapped: */ getPackets(): T[];
     readonly parent: ModeValueGroup<any>;
     getParent(): ModeValueGroup<any>;
     disable(): void;
     enable(): void;
     protected recordPacket(packet: T): void;
+    protected writePackets(file: File): void;
 }

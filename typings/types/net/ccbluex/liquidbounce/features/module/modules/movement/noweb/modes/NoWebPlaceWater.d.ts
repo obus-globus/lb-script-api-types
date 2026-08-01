@@ -15,7 +15,7 @@ import type { Vec3 } from '../../../../../../../../../net/minecraft/world/phys/V
 /**
  * TODO: fix water fluid not spread to break the cobweb
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noweb/modes/NoWebPlaceWater.kt#L63 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noweb/modes/NoWebPlaceWater.kt:63}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noweb/modes/NoWebPlaceWater.kt#L63 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noweb/modes/NoWebPlaceWater.kt:63}
  */
 export class NoWebPlaceWater extends NoWebMode {
     static Companion: Tagged$Companion;

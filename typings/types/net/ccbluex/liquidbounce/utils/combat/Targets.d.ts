@@ -5,7 +5,7 @@ import type { Tagged$Companion } from '../../../../../net/ccbluex/liquidbounce/c
 /**
  * Configurable to configure which entities and their state (like being dead) should be considered as a target
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt#L91 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt:91}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt#L91 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt:91}
  */
 export class Targets extends Enum<Targets> implements Tagged {
     static ANGERABLE: Targets;

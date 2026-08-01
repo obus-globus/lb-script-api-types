@@ -26,7 +26,7 @@ import type { BlockState } from '../../../../../../../../net/minecraft/world/lev
  *
  * @author ccetl
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt#L68 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt:68}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt#L68 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt:68}
  */
 export class ModulePacketMine extends ClientModule {
     static INSTANCE: ModulePacketMine;
@@ -35,7 +35,7 @@ export class ModulePacketMine extends ClientModule {
      *
      * Should never be accessed directly by other modules!
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt#L132 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt:132}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt#L132 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt:132}
      */
     _target: MineTarget | null;
     readonly abortAlwaysDown: boolean;

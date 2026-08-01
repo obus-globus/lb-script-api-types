@@ -18,4 +18,6 @@ export class DeepLearningEngine extends Object {
     /*not mapped: */ getTask(): Task | null;
     /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
     init(task: Task, $completion: Continuation<void>): any;
+    markInitialized(): void;
+    markUnavailable(): void;
 }

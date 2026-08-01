@@ -7,7 +7,7 @@ import type { AxochatPacket$C2S } from '../../../../../../net/ccbluex/liquidboun
  *
  * This packet does not have a body.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ServerPackets.kt#L137 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ServerPackets.kt:137}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ServerPackets.kt#L137 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ServerPackets.kt:137}
  */
 export class C2SRequestJWTPacket extends Object implements AxochatPacket$C2S {
     constructor()

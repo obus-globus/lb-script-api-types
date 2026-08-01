@@ -9,7 +9,7 @@ import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
  * Always targets the point with the nearest rotation angle to the current rotation angle.
  * If you have questions, you have to ask @superblaubeere27 because I am too stupid to explain this without a picture.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/FaceTargetPositionFactory.kt#L161 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/FaceTargetPositionFactory.kt:161}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/FaceTargetPositionFactory.kt#L161 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/FaceTargetPositionFactory.kt:161}
  */
 export class StabilizedRotationTargetPositionFactory extends FaceTargetPositionFactory {
     constructor(config: PositionFactoryConfiguration, optimalLine: Line | null)

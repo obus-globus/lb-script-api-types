@@ -1,3 +1,5 @@
+import type { Continuation } from '../../../../kotlin/coroutines/Continuation.d.ts'
+import type { Mutex } from '../../../../kotlinx/coroutines/sync/Mutex.d.ts'
 import type { ModeValueGroup } from '../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { ValueGroup } from '../../../../net/ccbluex/liquidbounce/config/types/group/ValueGroup.d.ts'
 import type { TwoDimensionalRegressionModel } from '../../../../net/ccbluex/liquidbounce/deeplearn/models/TwoDimensionalRegressionModel.d.ts'
@@ -8,42 +10,19 @@ export class ModelManager extends ValueGroup implements EventListener {
     static INSTANCE: ModelManager;
     // private /*not mapped: */ getAllCombatModels(): string[];
     // private /*not mapped: */ getAvailableCombatModels(): string[];
-    /**
-     * Base models that are always available
-     * and are included in the LiquidBounce JAR.
-     *
-     * The name can contain uppercase characters,
-     * but the file should always be lowercase.
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt:42}
-     */
-    readonly combatModels: string[];
+    // private builtInCombatModels: string[];
     readonly debugDisplayName: Component;
     readonly debugOwnerId: string;
+    // private lifecycleMutex: Mutex;
     // private logger: Logger;
     readonly models: ModeValueGroup<TwoDimensionalRegressionModel>;
     readonly running: boolean;
     children(): EventListener[];
-    /**
-     * Load models from the models folder. This only has to be triggered
-     * when reloading the models. Otherwise, the models are loaded on startup
-     * through the choice initialization.
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt#L71 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt:71}
-     */
-    load(): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    load($completion: Continuation<void>): any;
+    // private loadModels(): TwoDimensionalRegressionModel[];
     parent(): EventListener | null;
-    /**
-     * Clear out all models and load-in the models again.
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt#L105 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt:105}
-     */
-    reload(): void;
-    /**
-     * Unload all models.
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt#L97 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt:97}
-     */
-    unload(): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    reload($completion: Continuation<void>): any;
     unregister(): void;
 }

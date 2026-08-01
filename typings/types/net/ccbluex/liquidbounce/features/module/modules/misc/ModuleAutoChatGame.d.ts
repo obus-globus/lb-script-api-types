@@ -6,7 +6,7 @@ import type { Chronometer } from '../../../../../../../net/ccbluex/liquidbounce/
 /**
  * Automatically solves chat game riddles.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleAutoChatGame.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleAutoChatGame.kt:39}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleAutoChatGame.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleAutoChatGame.kt:39}
  */
 export class ModuleAutoChatGame extends ClientModule {
     static INSTANCE: ModuleAutoChatGame;

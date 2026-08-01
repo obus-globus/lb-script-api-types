@@ -7,7 +7,7 @@ import type { LivingEntity } from '../../../../../../../../../net/minecraft/worl
  * Renders a circle around the player indicating the KillAura attack range.
  * Synced with KillAura settings for Range, WallRange, and IgnoreOpenInventory.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraRangeIndicator.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraRangeIndicator.kt:44}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraRangeIndicator.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraRangeIndicator.kt:44}
  */
 export class KillAuraRangeIndicator extends ToggleableValueGroup {
     static INSTANCE: KillAuraRangeIndicator;

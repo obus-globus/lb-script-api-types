@@ -7,7 +7,7 @@ import type { TextureSetup } from '../../../../../net/minecraft/client/gui/rende
  * @property row Row index in the LUT texture.
  * @property textureSetup Texture binding that should be passed to GUI render state.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/render/gui/GuiCircleLutAtlas.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/render/gui/GuiCircleLutAtlas.kt:60}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/render/gui/GuiCircleLutAtlas.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/render/gui/GuiCircleLutAtlas.kt:60}
  */
 export class GuiCircleLutAtlas$Allocation extends Record {
     constructor(row: number, textureSetup: TextureSetup)

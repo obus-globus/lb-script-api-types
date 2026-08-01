@@ -9,7 +9,7 @@ import type { Component } from '../../../../../net/minecraft/network/chat/Compon
 /**
  * Global minecraft timer
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/Timer.kt#L30 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/Timer.kt:30}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/Timer.kt#L30 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/Timer.kt:30}
  */
 export class Timer extends Object implements EventListener {
     static INSTANCE: Timer;
@@ -21,7 +21,7 @@ export class Timer extends Object implements EventListener {
     /**
      * You cannot set this manually. Use {@link requestTimerSpeed} instead.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/Timer.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/Timer.kt:36}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/Timer.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/Timer.kt:36}
      */
     readonly timerSpeed: number;
     children(): EventListener[];
@@ -30,7 +30,7 @@ export class Timer extends Object implements EventListener {
      * Requests a timer speed change. If another module requests with a higher priority,
      * the other module is prioritized.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/Timer.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/Timer.kt:48}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/Timer.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/Timer.kt:48}
      */
     requestTimerSpeed(timerSpeed: number, priority: Priority, provider: ClientModule, resetAfterTicks: number): void;
     unregister(): void;

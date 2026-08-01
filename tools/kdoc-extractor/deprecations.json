@@ -14,7 +14,7 @@
       "kind": "property",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/ClientEvents.kt",
-        "line": 171
+        "line": 173
       }
     },
     "net.ccbluex.liquidbounce.event.events.WorldRenderEvent.matrixStack": {

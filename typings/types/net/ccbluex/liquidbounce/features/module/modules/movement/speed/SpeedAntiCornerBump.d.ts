@@ -14,7 +14,7 @@ import type { Vec3 } from '../../../../../../../../net/minecraft/world/phys/Vec3
 /**
  * Prevents you from bumping into corners when chasing.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/SpeedAntiCornerBump.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/SpeedAntiCornerBump.kt:35}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/SpeedAntiCornerBump.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/SpeedAntiCornerBump.kt:35}
  */
 export class SpeedAntiCornerBump extends Object implements MinecraftShortcuts {
     static INSTANCE: SpeedAntiCornerBump;
@@ -27,7 +27,7 @@ export class SpeedAntiCornerBump extends Object implements MinecraftShortcuts {
     /**
      * @param lastGroundPos the last position where the player was on ground
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/SpeedAntiCornerBump.kt#L111 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/SpeedAntiCornerBump.kt:111}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/SpeedAntiCornerBump.kt#L111 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/SpeedAntiCornerBump.kt:111}
      */
     canJumpOnBlock(collidingPos: Vec3, lastGroundPos: Vec3): boolean;
     /**
@@ -37,14 +37,14 @@ export class SpeedAntiCornerBump extends Object implements MinecraftShortcuts {
      * @param playerBox the player box. it's minY should be the top of the block we want to jump on.
      * @param tolerateLowBoundingBoxes if true, bounding boxes whose height is 0.2 or lower are ignored. This should be set if this block is directly above the block the player currently tries to jump on. Since in that case the player can also jump on that block (because of the jump height), regardless if there is a block two blocks above (because `1.8 (player height) + 0.2 = 2.0`).
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/SpeedAntiCornerBump.kt#L210 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/SpeedAntiCornerBump.kt:210}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/SpeedAntiCornerBump.kt#L210 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/SpeedAntiCornerBump.kt:210}
      */
     canPlayerEnterBlockPos(pos: BlockPos, blockState: BlockState, playerBox: AABB, tolerateLowBoundingBoxes: boolean): boolean;
     // private getSuggestedJumpDelay(simulatedPlayer: SimulatedPlayer, n: number): number | null;
     /**
      * Called when the speed mode might jump. Decides if the jump should be delayed.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/SpeedAntiCornerBump.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/SpeedAntiCornerBump.kt:39}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/SpeedAntiCornerBump.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/SpeedAntiCornerBump.kt:39}
      */
     shouldDelayJump(): boolean;
     /**
@@ -52,7 +52,7 @@ export class SpeedAntiCornerBump extends Object implements MinecraftShortcuts {
      *
      * @param playerBox the player box at the moment he collides with the given block
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/SpeedAntiCornerBump.kt#L178 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/SpeedAntiCornerBump.kt:178}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/SpeedAntiCornerBump.kt#L178 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/SpeedAntiCornerBump.kt:178}
      */
     shouldJumpOnBlock(pos: BlockPos, blockState: BlockState, playerBox: AABB): boolean;
 }

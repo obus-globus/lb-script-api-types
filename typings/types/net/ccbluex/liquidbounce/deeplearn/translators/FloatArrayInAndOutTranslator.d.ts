@@ -4,7 +4,7 @@ import type { TranslatorContext } from '../../../../../ai/djl/translate/Translat
 import type { TranslatorOptions } from '../../../../../ai/djl/translate/TranslatorOptions.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class FloatArrayInAndOutTranslator extends Object implements Translator<number[], number[]> {
-    constructor()
+    static INSTANCE: FloatArrayInAndOutTranslator;
     batchProcessInput(arg0: TranslatorContext, arg1: number[][]): (Object | null)[];
     batchProcessOutput(arg0: TranslatorContext, arg1: (Object | null)[]): number[][];
     getBatchifier(): Batchifier;

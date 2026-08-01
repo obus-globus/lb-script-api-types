@@ -16,7 +16,7 @@ import type { EventListener } from '../../../../net/ccbluex/liquidbounce/event/E
  *
  * @param original @author MukjepScarlet
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt#L106 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt:106}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt#L106 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt:106}
  */
 export class EventListenerRunningContinuationInterceptor extends AbstractCoroutineContextElement implements ContinuationInterceptor {
     static Key: ContinuationInterceptor$Key;

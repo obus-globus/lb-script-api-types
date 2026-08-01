@@ -6,7 +6,7 @@ import type { AxochatPacket$S2C } from '../../../../../../net/ccbluex/liquidboun
  *
  * @param token JWT token
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4ff494f7403bf0237d6e1392e6856c89deb3d311/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ClientPackets.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ClientPackets.kt:51}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ClientPackets.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ClientPackets.kt:51}
  */
 export class S2CNewJWTPacket extends Object implements AxochatPacket$S2C {
     constructor(token: string)
