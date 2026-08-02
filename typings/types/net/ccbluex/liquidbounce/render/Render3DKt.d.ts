@@ -1,13 +1,24 @@
 import type { PoseStack } from '../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Font$DisplayMode } from '../../../../net/minecraft/client/gui/Font$DisplayMode.d.ts'
+import type { SubmitNodeStorage } from '../../../../net/minecraft/client/renderer/SubmitNodeStorage.d.ts'
 import type { BlockPos } from '../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Vec3i } from '../../../../net/minecraft/core/Vec3i.d.ts'
+import type { Style } from '../../../../net/minecraft/network/chat/Style.d.ts'
+import type { FormattedCharSequence } from '../../../../net/minecraft/util/FormattedCharSequence.d.ts'
+import type { FormattedCharSink } from '../../../../net/minecraft/util/FormattedCharSink.d.ts'
 export class Render3DKt extends Object {
+    /**
+     * @see SubmitNodeStorage.submitText
+     *
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/ee595b88333a1dc2ff3055eb6be0860bbedcbdb3/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L153 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:153}
+     */
+    static submitTextAlwaysOnTop(self: SubmitNodeStorage, poseStack: PoseStack, x: number, y: number, string: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean, dropShadow: boolean, displayMode: Font$DisplayMode, lightCoords: number, color: number, backgroundColor: number, outlineColor: number): void;
     /**
      * @see net.ccbluex.liquidbounce.features.module.modules.render.ModuleBlockESP
      * @see net.ccbluex.liquidbounce.features.module.modules.render.ModuleStorageESP
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L69 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:69}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/ee595b88333a1dc2ff3055eb6be0860bbedcbdb3/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L74 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:74}
      */
     static translate(self: PoseStack, x: number, y: number, z: number): void;
     static translate(self: PoseStack, blockPos: number, origin: BlockPos): void;

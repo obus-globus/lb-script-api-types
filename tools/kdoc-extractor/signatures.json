@@ -11026,7 +11026,7 @@
         "returns": "T",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-          "line": 335
+          "line": 337
         }
       }
     ],
@@ -11043,7 +11043,7 @@
         "returns": "SharedFlow<T>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-          "line": 381
+          "line": 383
         }
       }
     ],
@@ -11066,7 +11066,7 @@
         "returns": "EventHook<T>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-          "line": 298
+          "line": 300
         }
       }
     ],
@@ -11076,7 +11076,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-          "line": 324
+          "line": 326
         }
       }
     ],
@@ -11093,7 +11093,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-          "line": 318
+          "line": 320
         }
       }
     ],
@@ -11116,7 +11116,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-          "line": 313
+          "line": 315
         }
       }
     ],
@@ -11126,7 +11126,7 @@
         "returns": "SharedFlow<E>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-          "line": 277
+          "line": 279
         }
       }
     ],
@@ -12410,7 +12410,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt",
-          "line": 71
+          "line": 83
         }
       }
     ],
@@ -12420,7 +12420,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt",
-          "line": 82
+          "line": 94
         }
       }
     ],
@@ -13026,7 +13026,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt",
-          "line": 88
+          "line": 100
         }
       }
     ],
@@ -13586,7 +13586,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt",
-          "line": 36
+          "line": 38
         }
       }
     ],
@@ -14073,13 +14073,42 @@
         }
       }
     ],
+    "net.ccbluex.liquidbounce.event.events.WorldFeatureSubmitEvent.constructor": [
+      {
+        "params": [
+          {
+            "name": "camera",
+            "type": "Camera",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "submitNodeStorage",
+            "type": "SubmitNodeStorage",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "modelViewMatrix",
+            "type": "Matrix4fc",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt",
+          "line": 70
+        }
+      }
+    ],
     "net.ccbluex.liquidbounce.event.events.WorldRenderEvent.close": [
       {
         "params": [],
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt",
-          "line": 58
+          "line": 60
         }
       }
     ],
@@ -14114,7 +14143,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt",
-          "line": 39
+          "line": 41
         }
       }
     ],
@@ -50713,7 +50742,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt",
-          "line": 533
+          "line": 555
         }
       }
     ],
@@ -50730,7 +50759,7 @@
         "returns": "Int",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt",
-          "line": 478
+          "line": 500
         }
       }
     ],
@@ -50765,7 +50794,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt",
-          "line": 472
+          "line": 494
         }
       }
     ],
@@ -50782,7 +50811,7 @@
         "returns": "Int",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt",
-          "line": 524
+          "line": 546
         }
       }
     ],
@@ -50829,7 +50858,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt",
-          "line": 516
+          "line": 538
         }
       }
     ],
@@ -50846,7 +50875,7 @@
         "returns": "Int",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt",
-          "line": 507
+          "line": 529
         }
       }
     ],
@@ -50875,7 +50904,17 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt",
-          "line": 502
+          "line": 524
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.world.fucker.ModuleFucker.breakingProgress": [
+      {
+        "params": [],
+        "returns": "BreakingProgress?",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt",
+          "line": 150
         }
       }
     ],
@@ -50885,7 +50924,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt",
-          "line": 262
+          "line": 284
         }
       }
     ],
@@ -50920,7 +50959,7 @@
         "returns": "Boolean?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt",
-          "line": 309
+          "line": 331
         }
       }
     ],
@@ -50943,7 +50982,7 @@
         "returns": "SurroundingPath?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt",
-          "line": 376
+          "line": 398
         }
       }
     ],
@@ -50966,7 +51005,7 @@
         "returns": "Double",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt",
-          "line": 133
+          "line": 142
         }
       }
     ],
@@ -50976,7 +51015,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt",
-          "line": 145
+          "line": 167
         }
       }
     ],
@@ -50986,7 +51025,7 @@
         "returns": "List<BlockPos>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt",
-          "line": 271
+          "line": 293
         }
       }
     ],
@@ -51015,7 +51054,7 @@
         "returns": "List<BlockPos>?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt",
-          "line": 433
+          "line": 455
         }
       }
     ],
@@ -51025,7 +51064,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt",
-          "line": 230
+          "line": 252
         }
       }
     ],
@@ -51042,7 +51081,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt",
-          "line": 351
+          "line": 373
         }
       }
     ],
@@ -51059,7 +51098,17 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt",
-          "line": 281
+          "line": 303
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.world.nuker.ModuleNuker.breakingProgress": [
+      {
+        "params": [],
+        "returns": "BreakingProgress?",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/nuker/ModuleNuker.kt",
+          "line": 63
         }
       }
     ],
@@ -51076,7 +51125,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/nuker/ModuleNuker.kt",
-          "line": 67
+          "line": 78
         }
       }
     ],
@@ -51086,7 +51135,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/nuker/ModuleNuker.kt",
-          "line": 71
+          "line": 82
         }
       }
     ],
@@ -51211,13 +51260,23 @@
         }
       }
     ],
+    "net.ccbluex.liquidbounce.features.module.modules.world.nuker.mode.LegitNukerMode.breakingProgress": [
+      {
+        "params": [],
+        "returns": "BreakingProgress?",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/nuker/mode/LegitNukerMode.kt",
+          "line": 65
+        }
+      }
+    ],
     "net.ccbluex.liquidbounce.features.module.modules.world.nuker.mode.LegitNukerMode.lookupTarget": [
       {
         "params": [],
         "returns": "BlockPos?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/nuker/mode/LegitNukerMode.kt",
-          "line": 127
+          "line": 141
         }
       }
     ],
@@ -51429,7 +51488,17 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt",
-          "line": 427
+          "line": 442
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.world.packetmine.ModulePacketMine.breakingProgress": [
+      {
+        "params": [],
+        "returns": "BreakingProgress?",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt",
+          "line": 328
         }
       }
     ],
@@ -51446,7 +51515,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt",
-          "line": 216
+          "line": 219
         }
       }
     ],
@@ -51456,7 +51525,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt",
-          "line": 162
+          "line": 165
         }
       }
     ],
@@ -51466,7 +51535,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt",
-          "line": 157
+          "line": 160
         }
       }
     ],
@@ -51483,7 +51552,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt",
-          "line": 188
+          "line": 191
         }
       }
     ],
@@ -51500,7 +51569,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt",
-          "line": 410
+          "line": 425
         }
       }
     ],
@@ -51517,7 +51586,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt",
-          "line": 144
+          "line": 147
         }
       }
     ],
@@ -51540,7 +51609,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt",
-          "line": 281
+          "line": 284
         }
       }
     ],
@@ -51563,7 +51632,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt",
-          "line": 325
+          "line": 340
         }
       }
     ],
@@ -51586,7 +51655,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt",
-          "line": 292
+          "line": 295
         }
       }
     ],
@@ -51609,7 +51678,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt",
-          "line": 399
+          "line": 414
         }
       }
     ],
@@ -65373,6 +65442,79 @@
         "receiver": "GuiGraphicsExtractor.ScissorStack"
       }
     ],
+    "net.ccbluex.liquidbounce.render.Render3DKt.submitTextAlwaysOnTop": [
+      {
+        "params": [
+          {
+            "name": "poseStack",
+            "type": "PoseStack",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "x",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "y",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "string",
+            "type": "FormattedCharSequence",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "dropShadow",
+            "type": "Boolean",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "displayMode",
+            "type": "Font.DisplayMode",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "lightCoords",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "color",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "backgroundColor",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "outlineColor",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
+          "line": 153
+        },
+        "isExtension": true,
+        "receiver": "SubmitNodeStorage"
+      }
+    ],
     "net.ccbluex.liquidbounce.render.Render3DKt.translate": [
       {
         "params": [
@@ -65398,7 +65540,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 59
+          "line": 64
         },
         "isExtension": true,
         "receiver": "PoseStack"
@@ -65415,7 +65557,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 62
+          "line": 67
         },
         "isExtension": true,
         "receiver": "PoseStack"
@@ -65438,7 +65580,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 69
+          "line": 74
         },
         "isExtension": true,
         "receiver": "PoseStack"
@@ -65457,7 +65599,7 @@
         "returns": "T",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 41
+          "line": 46
         }
       }
     ],
@@ -65474,7 +65616,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 50
+          "line": 55
         },
         "isExtension": true,
         "receiver": "PoseStack"
@@ -67459,7 +67601,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 82
+          "line": 87
         }
       }
     ],
@@ -67476,7 +67618,7 @@
         "returns": "Vec3",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 91
+          "line": 96
         }
       },
       {
@@ -67491,7 +67633,7 @@
         "returns": "Vec3",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 100
+          "line": 105
         }
       },
       {
@@ -67506,7 +67648,7 @@
         "returns": "Vec3",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 109
+          "line": 114
         }
       },
       {
@@ -67521,7 +67663,7 @@
         "returns": "Vec3",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 118
+          "line": 123
         }
       }
     ],
@@ -67550,7 +67692,7 @@
         "returns": "MeshBuildScope",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 131
+          "line": 136
         }
       }
     ],
@@ -103174,6 +103316,95 @@
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/Alignment.kt",
           "line": 54
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.utils.render.BreakingProgress.Provider.breakingProgress": [
+      {
+        "params": [],
+        "returns": "BreakingProgress?",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/BreakingProgressRenderer.kt",
+          "line": 45
+        }
+      },
+      {
+        "params": [],
+        "returns": "BreakingProgress?",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/BreakingProgressRenderer.kt",
+          "line": 48
+        }
+      },
+      {
+        "params": [
+          {
+            "name": "pos",
+            "type": "BlockPos",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "BreakingProgress?",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/BreakingProgressRenderer.kt",
+          "line": 61
+        }
+      },
+      {
+        "params": [],
+        "returns": "BreakingProgress",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/BreakingProgressRenderer.kt",
+          "line": 68
+        },
+        "isExtension": true,
+        "receiver": "MultiPlayerGameMode"
+      }
+    ],
+    "net.ccbluex.liquidbounce.utils.render.BreakingProgress.constructor": [
+      {
+        "params": [
+          {
+            "name": "pos",
+            "type": "BlockPos",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "value",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/BreakingProgressRenderer.kt",
+          "line": 43
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.utils.render.BreakingProgressRenderer.constructor": [
+      {
+        "params": [
+          {
+            "name": "parent",
+            "type": "EventListener",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "progressProvider",
+            "type": "BreakingProgress.Provider",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/BreakingProgressRenderer.kt",
+          "line": 76
         }
       }
     ],

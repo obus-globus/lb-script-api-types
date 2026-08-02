@@ -14,7 +14,7 @@ import type { AABB } from '../../../../../../../net/minecraft/world/phys/AABB.d.
  *
  * @see MixinLevelRenderer.cancelBlockOutline
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockOutline.kt#L53 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockOutline.kt:53}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/ee595b88333a1dc2ff3055eb6be0860bbedcbdb3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockOutline.kt#L53 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockOutline.kt:53}
  */
 export class ModuleBlockOutline extends ClientModule {
     static INSTANCE: ModuleBlockOutline;

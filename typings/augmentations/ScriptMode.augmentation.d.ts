@@ -124,6 +124,7 @@ import type { VirtualScreenEvent } from '../types/net/ccbluex/liquidbounce/event
 import type { WindowResizeEvent } from '../types/net/ccbluex/liquidbounce/event/events/WindowResizeEvent.d.ts'
 import type { WorldChangeEvent } from '../types/net/ccbluex/liquidbounce/event/events/WorldChangeEvent.d.ts'
 import type { WorldEntityRemoveEvent } from '../types/net/ccbluex/liquidbounce/event/events/WorldEntityRemoveEvent.d.ts'
+import type { WorldFeatureSubmitEvent } from '../types/net/ccbluex/liquidbounce/event/events/WorldFeatureSubmitEvent.d.ts'
 import type { WorldRenderEvent } from '../types/net/ccbluex/liquidbounce/event/events/WorldRenderEvent.d.ts'
 
 
@@ -258,6 +259,7 @@ on(eventName: "virtualScreen", handler: (virtualScreenEvent: VirtualScreenEvent)
 on(eventName: "windowResize", handler: (windowResizeEvent: WindowResizeEvent) => void): void;
 on(eventName: "worldChange", handler: (worldChangeEvent: WorldChangeEvent) => void): void;
 on(eventName: "worldEntityRemove", handler: (worldEntityRemoveEvent: WorldEntityRemoveEvent) => void): void;
+on(eventName: "worldFeatureSubmit", handler: (worldFeatureSubmitEvent: WorldFeatureSubmitEvent) => void): void;
 on(eventName: "worldRender", handler: (worldRenderEvent: WorldRenderEvent) => void): void;
 
 

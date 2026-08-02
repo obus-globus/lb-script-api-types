@@ -6,7 +6,7 @@ import type { QuickFix } from '../../../../../../net/ccbluex/liquidbounce/utils/
 /**
  * The ErrorHandler class is responsible for handling and reporting errors encountered by the application.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/error/ErrorHandler.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/error/ErrorHandler.kt:44}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/ee595b88333a1dc2ff3055eb6be0860bbedcbdb3/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/error/ErrorHandler.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/error/ErrorHandler.kt:44}
  */
 export class ErrorHandler extends Object {
     static Companion: ErrorHandler$Companion;

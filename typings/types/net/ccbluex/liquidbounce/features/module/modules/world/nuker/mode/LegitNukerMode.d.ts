@@ -6,6 +6,7 @@ import type { CancelBlockBreakingEvent } from '../../../../../../../../../net/cc
 import type { GameTickEvent } from '../../../../../../../../../net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts'
 import type { RotationUpdateEvent } from '../../../../../../../../../net/ccbluex/liquidbounce/event/events/RotationUpdateEvent.d.ts'
 import type { RotationsValueGroup } from '../../../../../../../../../net/ccbluex/liquidbounce/utils/aiming/RotationsValueGroup.d.ts'
+import type { BreakingProgress } from '../../../../../../../../../net/ccbluex/liquidbounce/utils/render/BreakingProgress.d.ts'
 import type { BlockPos } from '../../../../../../../../../net/minecraft/core/BlockPos.d.ts'
 export class LegitNukerMode extends Mode {
     static Companion: Tagged$Companion;
@@ -13,7 +14,7 @@ export class LegitNukerMode extends Mode {
     // private cancelBlockBreakingHandler: EventHook<CancelBlockBreakingEvent>;
     // private currentTarget: BlockPos | null;
     // private forceImmediateBreak: boolean;
-    // private /*not mapped: */ getForceImmediateBreak(): boolean;
+    /*not mapped: */ getForceImmediateBreak$net_ccbluex_liquidbounce(): boolean;
     readonly parent: ModeValueGroup<Mode>;
     getParent(): ModeValueGroup<Mode>;
     // private range: number;
@@ -25,5 +26,6 @@ export class LegitNukerMode extends Mode {
     // private tickHandler: EventHook<GameTickEvent>;
     // private wallRange: number;
     // private /*not mapped: */ getWallRange(): number;
+    breakingProgress(): BreakingProgress | null;
     // private lookupTarget(): BlockPos | null;
 }

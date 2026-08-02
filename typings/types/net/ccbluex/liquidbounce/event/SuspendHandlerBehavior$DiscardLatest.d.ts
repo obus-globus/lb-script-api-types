@@ -6,7 +6,7 @@ import type { SuspendHandlerBehavior$DiscardLatest$Companion } from '../../../..
 /**
  * Discards the new event if a job is active.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlerBehavior.kt#L121 | src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlerBehavior.kt:121}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/ee595b88333a1dc2ff3055eb6be0860bbedcbdb3/src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlerBehavior.kt#L121 | src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlerBehavior.kt:121}
  */
 export class SuspendHandlerBehavior$DiscardLatest extends Record implements SuspendHandlerBehavior {
     static Companion: SuspendHandlerBehavior$DiscardLatest$Companion;

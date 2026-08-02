@@ -22,7 +22,7 @@
       "kind": "property",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt",
-        "line": 46
+        "line": 48
       }
     },
     "net.ccbluex.liquidbounce.features.module.ModuleCategory.readableName": {

@@ -16,6 +16,10 @@ import type { Rotation } from '../../../../../../../../net/ccbluex/liquidbounce/
 import type { SwingMode } from '../../../../../../../../net/ccbluex/liquidbounce/utils/block/SwingMode.d.ts'
 import type { Chronometer } from '../../../../../../../../net/ccbluex/liquidbounce/utils/client/Chronometer.d.ts'
 import type { HotbarItemSlot } from '../../../../../../../../net/ccbluex/liquidbounce/utils/inventory/HotbarItemSlot.d.ts'
+import type { BreakingProgress } from '../../../../../../../../net/ccbluex/liquidbounce/utils/render/BreakingProgress.d.ts'
+import type { BreakingProgress$Provider } from '../../../../../../../../net/ccbluex/liquidbounce/utils/render/BreakingProgress$Provider.d.ts'
+import type { BreakingProgress$Provider$Default } from '../../../../../../../../net/ccbluex/liquidbounce/utils/render/BreakingProgress$Provider$Default.d.ts'
+import type { BreakingProgressRenderer } from '../../../../../../../../net/ccbluex/liquidbounce/utils/render/BreakingProgressRenderer.d.ts'
 import type { PlacementRenderer } from '../../../../../../../../net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.d.ts'
 import type { BlockPos } from '../../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { BlockState } from '../../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
@@ -26,16 +30,17 @@ import type { BlockState } from '../../../../../../../../net/minecraft/world/lev
  *
  * @author ccetl
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt#L68 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt:68}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/ee595b88333a1dc2ff3055eb6be0860bbedcbdb3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt#L70 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt:70}
  */
-export class ModulePacketMine extends ClientModule {
+export class ModulePacketMine extends ClientModule implements BreakingProgress$Provider {
+    static Default: BreakingProgress$Provider$Default;
     static INSTANCE: ModulePacketMine;
     /**
      * The current target of the module.
      *
      * Should never be accessed directly by other modules!
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt#L132 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt:132}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/ee595b88333a1dc2ff3055eb6be0860bbedcbdb3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt#L135 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt:135}
      */
     _target: MineTarget | null;
     readonly abortAlwaysDown: boolean;
@@ -51,6 +56,7 @@ export class ModulePacketMine extends ClientModule {
     // private nextAllowedStartTick: number;
     // private postBreakDelay: number;
     // private /*not mapped: */ getPostBreakDelay(): number;
+    // private progressRenderer: BreakingProgressRenderer;
     // private range: number;
     // private /*not mapped: */ getRange(): number;
     // private repeatable: EventHook<GameTickEvent>;
@@ -69,6 +75,7 @@ export class ModulePacketMine extends ClientModule {
     // private /*not mapped: */ getWallsRange(): number;
     // private worldChangeHandler: EventHook<WorldChangeEvent>;
     _resetTarget(): void;
+    breakingProgress(): BreakingProgress | null;
     // private handleBreaking(mineTarget: MineTarget): void;
     onDisabled(): void;
     onEnabled(): void;

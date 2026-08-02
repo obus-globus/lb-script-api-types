@@ -1221,7 +1221,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-      "line": 151
+      "line": 152
     }
   },
   "net.ccbluex.liquidbounce.event.CancellableEvent": {
@@ -1427,7 +1427,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-      "line": 283
+      "line": 285
     }
   },
   "net.ccbluex.liquidbounce.event.EventManager.callEvent": {
@@ -1438,7 +1438,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-      "line": 335
+      "line": 337
     }
   },
   "net.ccbluex.liquidbounce.event.EventManager.eventFlow": {
@@ -1446,7 +1446,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-      "line": 381
+      "line": 383
     }
   },
   "net.ccbluex.liquidbounce.event.EventManager.registerEventHook": {
@@ -1454,7 +1454,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-      "line": 298
+      "line": 300
     }
   },
   "net.ccbluex.liquidbounce.event.EventManager.unregisterEventHook": {
@@ -1462,7 +1462,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-      "line": 313
+      "line": 315
     }
   },
   "net.ccbluex.liquidbounce.event.EventState": {
@@ -1542,7 +1542,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt",
-      "line": 70
+      "line": 82
     }
   },
   "net.ccbluex.liquidbounce.event.events.DrawOutlinesEvent.markDirty": {
@@ -1550,7 +1550,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt",
-      "line": 82
+      "line": 94
     }
   },
   "net.ccbluex.liquidbounce.event.events.GameRenderTaskQueueEvent": {
@@ -1591,6 +1591,14 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/EntityEvents.kt",
       "line": 60
+    }
+  },
+  "net.ccbluex.liquidbounce.event.events.WorldFeatureSubmitEvent": {
+    "doc": "Fired before vanilla collects level features into its [SubmitNodeStorage].",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt",
+      "line": 69
     }
   },
   "net.ccbluex.liquidbounce.event.tickConditional": {
@@ -9599,7 +9607,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt",
-      "line": 83
+      "line": 85
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.fucker.ModuleFucker.FuckerEntrance": {
@@ -9607,7 +9615,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt",
-      "line": 97
+      "line": 103
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.fucker.ModuleFucker.FuckerEntrance.breakFree": {
@@ -9615,7 +9623,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt",
-      "line": 101
+      "line": 107
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.fucker.ModuleFucker.SurroundingInfo": {
@@ -9629,7 +9637,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt",
-      "line": 516
+      "line": 538
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.fucker.ModuleFucker.SurroundingPath": {
@@ -9642,7 +9650,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt",
-      "line": 502
+      "line": 524
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.fucker.ModuleFucker.considerAsTarget": {
@@ -9651,7 +9659,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt",
-      "line": 309
+      "line": 331
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.nuker.ModuleNuker": {
@@ -9659,7 +9667,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/nuker/ModuleNuker.kt",
-      "line": 39
+      "line": 41
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.nuker.ModuleNuker.wasTarget": {
@@ -9667,7 +9675,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/nuker/ModuleNuker.kt",
-      "line": 61
+      "line": 72
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.nuker.mode.LegitNukerMode.lookupTarget": {
@@ -9675,7 +9683,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/nuker/mode/LegitNukerMode.kt",
-      "line": 127
+      "line": 141
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.packetmine.FailProcedure": {
@@ -9707,7 +9715,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt",
-      "line": 68
+      "line": 70
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.packetmine.ModulePacketMine._target": {
@@ -9715,7 +9723,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt",
-      "line": 132
+      "line": 135
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.packetmine.ModulePacketMine.postBreakDelay": {
@@ -9726,7 +9734,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt",
-      "line": 110
+      "line": 112
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.packetmine.tool.MineToolMode": {
@@ -11364,7 +11372,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-      "line": 69
+      "line": 74
     }
   },
   "net.ccbluex.liquidbounce.render.RenderPass.bindAndDraw": {
@@ -11375,6 +11383,17 @@
       "line": 94
     }
   },
+  "net.ccbluex.liquidbounce.render.SubmitNodeStorage.submitTextAlwaysOnTop": {
+    "doc": "",
+    "see": [
+      "SubmitNodeStorage.submitText"
+    ],
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
+      "line": 153
+    }
+  },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment": {
     "doc": "Context representing the rendering environment.",
     "params": {
@@ -11383,7 +11402,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-      "line": 82
+      "line": 87
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawBox": {
@@ -11504,7 +11523,7 @@
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-        "line": 91
+        "line": 96
       }
     },
     {
@@ -11512,7 +11531,7 @@
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-        "line": 100
+        "line": 105
       }
     },
     {
@@ -11520,7 +11539,7 @@
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-        "line": 109
+        "line": 114
       }
     },
     {
@@ -11528,7 +11547,7 @@
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-        "line": 118
+        "line": 123
       }
     }
   ],
@@ -11537,7 +11556,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-      "line": 131
+      "line": 136
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.withPositionRelativeToCamera": [
@@ -17167,6 +17186,14 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/Alignment.kt",
       "line": 64
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.render.BreakingProgress.Provider.breakingProgress": {
+    "doc": "Reads progress for a module-owned target. Vanilla can keep updating `destroyProgress`\nwithout restoring `isDestroying` when continuing a previously stopped target.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/BreakingProgressRenderer.kt",
+      "line": 61
     }
   },
   "net.ccbluex.liquidbounce.utils.render.BufferedSource.readNativeImage": {

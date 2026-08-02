@@ -124,6 +124,7 @@ import type { VirtualScreenEvent } from '../types/net/ccbluex/liquidbounce/event
 import type { WindowResizeEvent } from '../types/net/ccbluex/liquidbounce/event/events/WindowResizeEvent.d.ts'
 import type { WorldChangeEvent } from '../types/net/ccbluex/liquidbounce/event/events/WorldChangeEvent.d.ts'
 import type { WorldEntityRemoveEvent } from '../types/net/ccbluex/liquidbounce/event/events/WorldEntityRemoveEvent.d.ts'
+import type { WorldFeatureSubmitEvent } from '../types/net/ccbluex/liquidbounce/event/events/WorldFeatureSubmitEvent.d.ts'
 import type { WorldRenderEvent } from '../types/net/ccbluex/liquidbounce/event/events/WorldRenderEvent.d.ts'
 
 
@@ -737,6 +738,11 @@ on(eventName: "worldChange", handler: (worldChangeEvent: WorldChangeEvent) => vo
  * @see {@link WorldEntityRemoveEvent}
  */
 on(eventName: "worldEntityRemove", handler: (worldEntityRemoveEvent: WorldEntityRemoveEvent) => void): void;
+/**
+ * Fired before vanilla collects level features into its [SubmitNodeStorage].
+ * @see {@link WorldFeatureSubmitEvent}
+ */
+on(eventName: "worldFeatureSubmit", handler: (worldFeatureSubmitEvent: WorldFeatureSubmitEvent) => void): void;
 /**
  * Fires while the world is rendered, exposing the pose stack, camera and partial-tick fraction - for depth-correct 3D rendering.
  * @see {@link WorldRenderEvent}

@@ -13,6 +13,10 @@ import type { ModuleFucker$SurroundingPath } from '../../../../../../../../net/c
 import type { RotationsValueGroup } from '../../../../../../../../net/ccbluex/liquidbounce/utils/aiming/RotationsValueGroup.d.ts'
 import type { IsSelfBedMode } from '../../../../../../../../net/ccbluex/liquidbounce/utils/block/bed/IsSelfBedMode.d.ts'
 import type { ItemSlot } from '../../../../../../../../net/ccbluex/liquidbounce/utils/inventory/ItemSlot.d.ts'
+import type { BreakingProgress } from '../../../../../../../../net/ccbluex/liquidbounce/utils/render/BreakingProgress.d.ts'
+import type { BreakingProgress$Provider } from '../../../../../../../../net/ccbluex/liquidbounce/utils/render/BreakingProgress$Provider.d.ts'
+import type { BreakingProgress$Provider$Default } from '../../../../../../../../net/ccbluex/liquidbounce/utils/render/BreakingProgress$Provider$Default.d.ts'
+import type { BreakingProgressRenderer } from '../../../../../../../../net/ccbluex/liquidbounce/utils/render/BreakingProgressRenderer.d.ts'
 import type { PlacementRenderer } from '../../../../../../../../net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.d.ts'
 import type { BlockPos } from '../../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Block } from '../../../../../../../../net/minecraft/world/level/block/Block.d.ts'
@@ -23,9 +27,10 @@ import type { Vec3 } from '../../../../../../../../net/minecraft/world/phys/Vec3
  *
  * Destroys/Uses selected blocks around you.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt#L83 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt:83}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/ee595b88333a1dc2ff3055eb6be0860bbedcbdb3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt#L85 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt:85}
  */
-export class ModuleFucker extends ClientModule {
+export class ModuleFucker extends ClientModule implements BreakingProgress$Provider {
+    static Default: BreakingProgress$Provider$Default;
     static INSTANCE: ModuleFucker;
     // private MAX_SURROUNDING_PATH_BLOCKS: number;
     // private RAYCAST_TARGET_EPSILON: number;
@@ -51,6 +56,7 @@ export class ModuleFucker extends ClientModule {
     // private oldTarget: ModuleFucker$DestroyerTarget | null;
     // private prioritizeOverKillAura: boolean;
     // private /*not mapped: */ getPrioritizeOverKillAura(): boolean;
+    // private progressRenderer: BreakingProgressRenderer;
     // private range: number;
     // private /*not mapped: */ getRange(): number;
     // private rotations: RotationsValueGroup;
@@ -63,6 +69,7 @@ export class ModuleFucker extends ClientModule {
     // private /*not mapped: */ getTargets(): Block[];
     // private wallRange: number;
     // private /*not mapped: */ getWallRange(): number;
+    breakingProgress(): BreakingProgress | null;
     // private clearCurrentTarget(): void;
     // private considerAsTarget(target: ModuleFucker$DestroyerTarget, range: number, throughWallsRange: number, isCurrentTarget: boolean): boolean | null;
     // private findBestSurroundingPath(target: BlockPos, eyePos: Vec3): ModuleFucker$SurroundingPath | null;

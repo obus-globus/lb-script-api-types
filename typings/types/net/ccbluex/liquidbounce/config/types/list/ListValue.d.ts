@@ -11,13 +11,13 @@ export class ListValue<T extends E[], E extends unknown> extends Value<T> {
      * TODO: Might replace {@link innerType} with a {@link Class} variable
      *   from the inner value type in the future.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/ListValue.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/ListValue.kt:55}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/ee595b88333a1dc2ff3055eb6be0860bbedcbdb3/src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/ListValue.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/ListValue.kt:55}
      */
     readonly innerType: Class<E>;
     /**
      * Used to determine the type of the inner value.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/ListValue.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/ListValue.kt:48}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/ee595b88333a1dc2ff3055eb6be0860bbedcbdb3/src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/ListValue.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/ListValue.kt:48}
      */
     readonly innerValueType: ValueType;
     deserializeFrom(gson: Gson, element: JsonElement): void;

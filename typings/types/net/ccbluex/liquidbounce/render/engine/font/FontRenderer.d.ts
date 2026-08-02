@@ -25,7 +25,7 @@ export class FontRenderer extends AbstractFontRenderer<MinecraftTextProcessor$Re
      *
      * {@link Font.BOLD} | {@link Font.ITALIC} -> 3 (Can be null)
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a459e42039d5ec52f278233774c8880408bcf2a6/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/FontRenderer.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/FontRenderer.kt:54}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/ee595b88333a1dc2ff3055eb6be0860bbedcbdb3/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/FontRenderer.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/FontRenderer.kt:54}
      */
     readonly font: FontFace;
     readonly glyphManager: FontGlyphPageManager;

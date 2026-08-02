@@ -464,6 +464,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.event.events.WindowResizeEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/WindowResizeEvent").WindowResizeEvent;
     "net.ccbluex.liquidbounce.event.events.WorldChangeEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/WorldChangeEvent").WorldChangeEvent;
     "net.ccbluex.liquidbounce.event.events.WorldEntityRemoveEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/WorldEntityRemoveEvent").WorldEntityRemoveEvent;
+    "net.ccbluex.liquidbounce.event.events.WorldFeatureSubmitEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/WorldFeatureSubmitEvent").WorldFeatureSubmitEvent;
     "net.ccbluex.liquidbounce.event.events.WorldRenderEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/WorldRenderEvent").WorldRenderEvent;
     "net.ccbluex.liquidbounce.features.account.AccountManager": typeof import("../types/net/ccbluex/liquidbounce/features/account/AccountManager").AccountManager;
     "net.ccbluex.liquidbounce.features.account.AccountService": typeof import("../types/net/ccbluex/liquidbounce/features/account/AccountService").AccountService;
@@ -2653,6 +2654,9 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.utils.render.Alignment$Companion": typeof import("../types/net/ccbluex/liquidbounce/utils/render/Alignment$Companion").Alignment$Companion;
     "net.ccbluex.liquidbounce.utils.render.Alignment$ScreenAxisX": typeof import("../types/net/ccbluex/liquidbounce/utils/render/Alignment$ScreenAxisX").Alignment$ScreenAxisX;
     "net.ccbluex.liquidbounce.utils.render.Alignment$ScreenAxisY": typeof import("../types/net/ccbluex/liquidbounce/utils/render/Alignment$ScreenAxisY").Alignment$ScreenAxisY;
+    "net.ccbluex.liquidbounce.utils.render.BreakingProgress": typeof import("../types/net/ccbluex/liquidbounce/utils/render/BreakingProgress").BreakingProgress;
+    "net.ccbluex.liquidbounce.utils.render.BreakingProgress$Provider$Default": typeof import("../types/net/ccbluex/liquidbounce/utils/render/BreakingProgress$Provider$Default").BreakingProgress$Provider$Default;
+    "net.ccbluex.liquidbounce.utils.render.BreakingProgressRenderer": typeof import("../types/net/ccbluex/liquidbounce/utils/render/BreakingProgressRenderer").BreakingProgressRenderer;
     "net.ccbluex.liquidbounce.utils.render.FirstPersonShieldTint": typeof import("../types/net/ccbluex/liquidbounce/utils/render/FirstPersonShieldTint").FirstPersonShieldTint;
     "net.ccbluex.liquidbounce.utils.render.HeightMode": typeof import("../types/net/ccbluex/liquidbounce/utils/render/HeightMode").HeightMode;
     "net.ccbluex.liquidbounce.utils.render.HeightMode$Animated": typeof import("../types/net/ccbluex/liquidbounce/utils/render/HeightMode$Animated").HeightMode$Animated;
