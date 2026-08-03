@@ -10,7 +10,7 @@ import type { ItemSlot } from '../../../../../../../../net/ccbluex/liquidbounce/
  *
  * Items that were deemed useful can be found in {@link usefulItems}.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/ee595b88333a1dc2ff3055eb6be0860bbedcbdb3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemPacker.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemPacker.kt:34}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemPacker.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemPacker.kt:34}
  */
 export class ItemPacker extends Object {
     constructor()
@@ -18,7 +18,7 @@ export class ItemPacker extends Object {
     /**
      * If an item is used by a move, it will be in this list.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/ee595b88333a1dc2ff3055eb6be0860bbedcbdb3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemPacker.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemPacker.kt:44}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemPacker.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemPacker.kt:44}
      */
     readonly usefulItems: ItemSlot[];
     // private fillItemIntoSlot(filledInItemSlot: ItemSlot, leftTargetSlotsToFill: Iterator<ItemSlot>): ItemSlot | null;
@@ -28,7 +28,7 @@ export class ItemPacker extends Object {
      *
      * @returns returns the item moves (aka "swaps") that should be executed.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/ee595b88333a1dc2ff3055eb6be0860bbedcbdb3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemPacker.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemPacker.kt:52}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemPacker.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemPacker.kt:52}
      */
     packItems(itemsToFillIn: ItemFacet[], hotbarSlotsToFill: ItemSlot[] | null, forbiddenSlots: ItemSlot[], forbiddenSlotsToFill: ItemSlot[], constraintProvider: ItemPacker$ItemAmountConstraintProvider): InventorySwap[];
 }

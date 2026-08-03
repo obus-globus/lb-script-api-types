@@ -16,7 +16,7 @@ export class Filter extends Enum<Filter> implements Tagged {
     /**
      * @returns true if the {@link item} should be included according to the filter.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/ee595b88333a1dc2ff3055eb6be0860bbedcbdb3/src/main/kotlin/net/ccbluex/liquidbounce/utils/collection/Filter.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/utils/collection/Filter.kt:39}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/utils/collection/Filter.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/utils/collection/Filter.kt:39}
      */
     invoke<T extends unknown>(item: T, collection: T[]): boolean;
     name(): "WHITELIST" | "BLACKLIST";

@@ -3,7 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 /**
  * @param maxSize Maximum size of the cache. The best values are 2 to the power of {@link Int} like 64, 128, 256...
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/ee595b88333a1dc2ff3055eb6be0860bbedcbdb3/src/main/kotlin/net/ccbluex/liquidbounce/utils/collection/LruCache.kt#L25 | src/main/kotlin/net/ccbluex/liquidbounce/utils/collection/LruCache.kt:25}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/utils/collection/LruCache.kt#L25 | src/main/kotlin/net/ccbluex/liquidbounce/utils/collection/LruCache.kt:25}
  */
 export class LruCache<K extends unknown, V extends unknown> {
     // A14 statics-only surface: instances of this collection-backed type

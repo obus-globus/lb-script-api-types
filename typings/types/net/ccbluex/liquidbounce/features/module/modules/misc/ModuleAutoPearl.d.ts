@@ -17,7 +17,7 @@ import type { Vec3 } from '../../../../../../../net/minecraft/world/phys/Vec3.d.
  *
  * @author sqlerrorthing
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/ee595b88333a1dc2ff3055eb6be0860bbedcbdb3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleAutoPearl.kt#L64 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleAutoPearl.kt:64}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleAutoPearl.kt#L64 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleAutoPearl.kt:64}
  */
 export class ModuleAutoPearl extends ClientModule {
     static INSTANCE: ModuleAutoPearl;

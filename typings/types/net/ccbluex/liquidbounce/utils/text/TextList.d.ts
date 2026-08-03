@@ -16,9 +16,9 @@ export class TextList extends Object implements Component {
     static of(paramarg0: Component[]): TextList;
     static of(...paramarg0: Component[]): TextList;
     constructor(arg0: Component[])
-    // private language: Language;
-    // private ordered: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
+    // private decomposedWith: Language;
     readonly siblings: Component[];
+    readonly visualOrderText: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     contains(other: Component): boolean;
     copy(): MutableComponent;
     getContents(): ComponentContents;

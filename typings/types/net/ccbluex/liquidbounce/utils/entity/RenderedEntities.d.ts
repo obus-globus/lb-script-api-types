@@ -15,7 +15,7 @@ import type { LivingEntity } from '../../../../../net/minecraft/world/entity/Liv
  * This collection will be auto updated on {@link GameTickEvent},
  * and be cleared on {@link WorldChangeEvent} or at the unsubscription of last {@link EventListener}.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/ee595b88333a1dc2ff3055eb6be0860bbedcbdb3/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/RenderedEntities.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/RenderedEntities.kt:45}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/RenderedEntities.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/RenderedEntities.kt:45}
  */
 export class RenderedEntities extends Object implements EventListener {
     static INSTANCE: RenderedEntities;

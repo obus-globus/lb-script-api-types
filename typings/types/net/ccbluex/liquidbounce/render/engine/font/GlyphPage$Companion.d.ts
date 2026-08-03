@@ -20,7 +20,7 @@ export class GlyphPage$Companion extends Object {
     /**
      * Initializes the static values for glyph pages. Has to be called from a thread with an OpenGL context.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/ee595b88333a1dc2ff3055eb6be0860bbedcbdb3/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt#L141 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt:141}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt#L141 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt:141}
      */
     init(): void;
     // private renderGlyphOnAtlas(characterInfo: GlyphPage$Companion$CharacterGenerationInfo, atlasGraphics: Graphics2D): void;

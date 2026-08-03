@@ -11,7 +11,7 @@ import type { SpeedBHopBase } from '../../../../../../../../../../net/ccbluex/li
  * @testedOn anticheat-test.com, eu.loyisa.cn
  * @note flags on specific blocks such as fences
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/ee595b88333a1dc2ff3055eb6be0860bbedcbdb3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/vulcan/SpeedVulcanGround286.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/vulcan/SpeedVulcanGround286.kt:40}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/vulcan/SpeedVulcanGround286.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/vulcan/SpeedVulcanGround286.kt:40}
  */
 export class SpeedVulcanGround286 extends SpeedBHopBase {
     static Companion: Tagged$Companion;

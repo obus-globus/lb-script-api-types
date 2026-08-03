@@ -19,7 +19,7 @@ export class InventoryUtilsKt extends Object {
      * The result depends on current player context (e.g. creative state and durability filtering),
      * then ranks candidates by destroy speed and nearby-slot preference.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/ee595b88333a1dc2ff3055eb6be0860bbedcbdb3/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt#L107 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt:107}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt#L107 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt:107}
      */
     static findBestToolToMineBlock<T extends ItemSlot>(self: T[], blockState: BlockState, ignoreDurability: boolean, predicate: (param0: ItemStack, param1: BlockState) => boolean): T | null;
     static findBlocksEndingWith(...targets: string[]): Block[];

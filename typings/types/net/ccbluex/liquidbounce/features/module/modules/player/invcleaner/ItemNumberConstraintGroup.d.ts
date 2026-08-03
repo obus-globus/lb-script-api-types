@@ -11,7 +11,7 @@ import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
  * - If the BLOCKS constraint was processed first, the TNT would be kept since the BLOCKS constraint is not yet
  * satisfied.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/ee595b88333a1dc2ff3055eb6be0860bbedcbdb3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemNumberConstraints.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemNumberConstraints.kt:34}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemNumberConstraints.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemNumberConstraints.kt:34}
  */
 export abstract class ItemNumberConstraintGroup extends Object {
     constructor(acceptableRange: { start: number; endInclusive: number; step: number }, priority: number)
@@ -20,14 +20,14 @@ export abstract class ItemNumberConstraintGroup extends Object {
      * - The lower limit defines the desired amount of items (=> any more items *might* be thrown out)
      * - The upper limit defines the maximum amount of items (=> any more items *will* be thrown out)
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/ee595b88333a1dc2ff3055eb6be0860bbedcbdb3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemNumberConstraints.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemNumberConstraints.kt:40}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemNumberConstraints.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemNumberConstraints.kt:40}
      */
     readonly acceptableRange: { start: number; endInclusive: number; step: number };
     /**
      * The priority of this constraint group. Lower values are processed first.
      * It Affects the order in which items are processed.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/ee595b88333a1dc2ff3055eb6be0860bbedcbdb3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemNumberConstraints.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemNumberConstraints.kt:45}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemNumberConstraints.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemNumberConstraints.kt:45}
      */
     readonly priority: number;
     equals(other: Object | null): boolean;

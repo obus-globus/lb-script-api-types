@@ -10,7 +10,7 @@ export class CombatExtensionsKt extends Object {
     /**
      * @see net.minecraft.client.Minecraft.startAttack
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/ee595b88333a1dc2ff3055eb6be0860bbedcbdb3/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt#L243 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt:243}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt#L243 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt:243}
      */
     static attackEntity(entity: Entity, swing: SwingMode, keepSprint: boolean): void;
     static findEnemies(paramarg0: ClientLevel, paramarg1: number, paramarg2: number): ObjectDoublePair<Entity>[];
@@ -18,7 +18,7 @@ export class CombatExtensionsKt extends Object {
     /**
      * Find the best enemy in the current world in a specific range.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/ee595b88333a1dc2ff3055eb6be0860bbedcbdb3/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt#L189 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt:189}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt#L189 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt:189}
      */
     static findEnemy(clientLevel: ClientLevel, range: number, enemyConf: number): Entity;
     static findEnemy(self: ClientLevel, minRange: number, maxRange: number, enemyConf: Targets[]): Entity | null;

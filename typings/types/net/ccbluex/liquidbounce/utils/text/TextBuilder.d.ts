@@ -5,6 +5,7 @@ export class TextBuilder extends Object {
     constructor(arg0: Component)
     // private inner: Object;
     // private size: number;
-    append(arg0: Component): TextBuilder;
+    add(arg0: Component): TextBuilder;
     build(): Component;
+    plusAssign(arg0: Component): void;
 }

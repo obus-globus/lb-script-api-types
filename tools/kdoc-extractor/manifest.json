@@ -2316,7 +2316,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandHelp.kt",
-      "line": 43
+      "line": 44
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.client.CommandHide": {
@@ -5486,7 +5486,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModulePacketLogger.kt",
-      "line": 67
+      "line": 68
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.misc.ModuleSpammer": {
@@ -8458,7 +8458,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBreadcrumbs.kt",
-      "line": 101
+      "line": 105
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.beginFrameIfNeeded": {
@@ -9318,7 +9318,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleStrongholdFinder.kt",
-      "line": 81
+      "line": 80
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.ModuleSurround": {
@@ -11137,7 +11137,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-      "line": 422
+      "line": 443
     }
   },
   "net.ccbluex.liquidbounce.render.ClientRenderPipelines.OutlineQuads": {
@@ -11149,7 +11149,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-      "line": 313
+      "line": 334
     }
   },
   "net.ccbluex.liquidbounce.render.ClientRenderPipelines.precompile": {
@@ -11157,7 +11157,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-      "line": 509
+      "line": 530
     }
   },
   "net.ccbluex.liquidbounce.render.ClientVertexFormats.GRADIENT_CIRCLE": {
@@ -11372,7 +11372,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-      "line": 74
+      "line": 70
     }
   },
   "net.ccbluex.liquidbounce.render.RenderPass.bindAndDraw": {
@@ -11391,7 +11391,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-      "line": 153
+      "line": 113
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment": {
@@ -11402,7 +11402,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-      "line": 87
+      "line": 83
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawBox": {
@@ -11410,7 +11410,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 323
+      "line": 333
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawBoxSide": {
@@ -11418,7 +11418,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 384
+      "line": 395
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawBoxSides": {
@@ -11426,7 +11426,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 400
+      "line": 411
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawCircleOutline": {
@@ -11438,7 +11438,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 572
+      "line": 583
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawCustomMesh": {
@@ -11468,17 +11468,27 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 458
+      "line": 469
     }
   },
-  "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawLine": {
-    "doc": "Draws a line with endpoint [p1] and [p2] and color [argb].",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 170
+  "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawLine": [
+    {
+      "doc": "Draws a line with endpoint [p1] and [p2] and color [argb].",
+      "kind": "function",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
+        "line": 170
+      }
+    },
+    {
+      "doc": "Draws a line with endpoint [p1] and [p2] and color [argb].",
+      "kind": "function",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
+        "line": 179
+      }
     }
-  },
+  ],
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawLineStrip": {
     "doc": "Function to draw a line strip using the specified [positions] vectors.",
     "params": {
@@ -11487,7 +11497,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 258
+      "line": 267
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawLines": {
@@ -11498,7 +11508,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 231
+      "line": 240
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawLinesWithWidth": {
@@ -11506,7 +11516,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 180
+      "line": 189
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawPlane": {
@@ -11514,54 +11524,20 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 416
+      "line": 427
     }
   },
-  "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.relativeToCamera": [
-    {
-      "doc": "Converts a world-space position to the camera-relative coordinate system.",
-      "kind": "function",
-      "source": {
-        "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-        "line": 96
-      }
-    },
-    {
-      "doc": "Converts a world-space position to the camera-relative coordinate system.",
-      "kind": "function",
-      "source": {
-        "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-        "line": 105
-      }
-    },
-    {
-      "doc": "Converts a world-space position to the camera-relative coordinate system.",
-      "kind": "function",
-      "source": {
-        "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-        "line": 114
-      }
-    },
-    {
-      "doc": "Converts a world-space position to the camera-relative coordinate system.",
-      "kind": "function",
-      "source": {
-        "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-        "line": 123
-      }
-    }
-  ],
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.start": {
     "doc": "Low-level draw entrypoint.\n\nThe returned scope must be closed after writing vertices.\n\nPrefer [net.ccbluex.liquidbounce.render.drawCustomMesh] for regular use.",
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-      "line": 136
+      "line": 96
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.withPositionRelativeToCamera": [
     {
-      "doc": "Shorthand for `withPosition(relativeToCamera(pos))`",
+      "doc": "Positions the render origin at the camera-relative coordinates of [pos] before drawing.",
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
@@ -14828,6 +14804,14 @@
       "line": 39
     }
   },
+  "net.ccbluex.liquidbounce.utils.collection.JoinedList": {
+    "doc": "Read-only list **view** that interleaves [separator] between the elements of [source],\ni.e. iterating yields `source[0], separator, source[1], separator, source[2], ...`.\n\nChanges to the original list are reflected in this view.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/collection/JoinedList.kt",
+      "line": 29
+    }
+  },
   "net.ccbluex.liquidbounce.utils.collection.LruCache": {
     "doc": "",
     "params": {
@@ -17609,7 +17593,15 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt",
-      "line": 126
+      "line": 133
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.text.Collection<String>.joinToText": {
+    "doc": "Joins a list of [String] into a single [Component] with the given [separator].",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt",
+      "line": 127
     }
   },
   "net.ccbluex.liquidbounce.utils.text.Int.formatAsTime": {
@@ -17617,7 +17609,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt",
-      "line": 253
+      "line": 260
     }
   },
   "net.ccbluex.liquidbounce.utils.text.String.asPlainText": [
@@ -17659,7 +17651,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt",
-      "line": 228
+      "line": 235
     }
   },
   "net.ccbluex.liquidbounce.utils.text.String.translateColorCodes": {
@@ -17667,7 +17659,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt",
-      "line": 193
+      "line": 200
     }
   },
   "net.ccbluex.liquidbounce.utils.text.StringMatchMode": {
@@ -17683,7 +17675,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt",
-      "line": 306
+      "line": 313
     }
   },
   "net.ccbluex.liquidbounce.utils.world.ChunkAccess.sectionBottomY": {

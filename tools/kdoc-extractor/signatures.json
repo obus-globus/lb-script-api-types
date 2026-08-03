@@ -17218,7 +17218,7 @@
         "returns": "Component",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandHelp.kt",
-          "line": 75
+          "line": 76
         }
       }
     ],
@@ -17228,7 +17228,7 @@
         "returns": "Command",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandHelp.kt",
-          "line": 45
+          "line": 46
         }
       }
     ],
@@ -26366,7 +26366,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/tpaura/modes/ImmediateMode.kt",
-          "line": 95
+          "line": 97
         }
       }
     ],
@@ -29806,7 +29806,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModulePacketLogger.kt",
-          "line": 130
+          "line": 131
         }
       }
     ],
@@ -29841,7 +29841,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModulePacketLogger.kt",
-          "line": 205
+          "line": 206
         }
       }
     ],
@@ -29870,7 +29870,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModulePacketLogger.kt",
-          "line": 209
+          "line": 210
         }
       }
     ],
@@ -29893,7 +29893,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModulePacketLogger.kt",
-          "line": 241
+          "line": 242
         },
         "isExtension": true,
         "receiver": "MutableComponent"
@@ -29918,7 +29918,7 @@
         "returns": "List<PacketField>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModulePacketLogger.kt",
-          "line": 211
+          "line": 212
         }
       }
     ],
@@ -29928,7 +29928,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModulePacketLogger.kt",
-          "line": 92
+          "line": 93
         }
       }
     ],
@@ -29938,7 +29938,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModulePacketLogger.kt",
-          "line": 104
+          "line": 105
         }
       }
     ],
@@ -29948,7 +29948,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModulePacketLogger.kt",
-          "line": 99
+          "line": 100
         }
       }
     ],
@@ -29977,7 +29977,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModulePacketLogger.kt",
-          "line": 115
+          "line": 116
         }
       }
     ],
@@ -42214,7 +42214,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBreadcrumbs.kt",
-          "line": 141
+          "line": 145
         }
       }
     ],
@@ -42237,7 +42237,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBreadcrumbs.kt",
-          "line": 199
+          "line": 203
         }
       }
     ],
@@ -42260,7 +42260,7 @@
         "returns": "Vector3f",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBreadcrumbs.kt",
-          "line": 191
+          "line": 195
         }
       }
     ],
@@ -42295,7 +42295,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBreadcrumbs.kt",
-          "line": 152
+          "line": 156
         }
       }
     ],
@@ -42318,7 +42318,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBreadcrumbs.kt",
-          "line": 139
+          "line": 143
         }
       }
     ],
@@ -42328,7 +42328,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBreadcrumbs.kt",
-          "line": 133
+          "line": 137
         }
       }
     ],
@@ -42361,7 +42361,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBreadcrumbs.kt",
-          "line": 118
+          "line": 122
         }
       }
     ],
@@ -47686,7 +47686,7 @@
         "returns": "Component?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/nametags/NametagTextFormatter.kt",
-          "line": 161
+          "line": 160
         }
       }
     ],
@@ -47703,7 +47703,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/nametags/NametagTextFormatter.kt",
-          "line": 66
+          "line": 65
         }
       }
     ],
@@ -47720,7 +47720,7 @@
         "returns": "Component",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/nametags/NametagTextFormatter.kt",
-          "line": 164
+          "line": 163
         }
       }
     ],
@@ -47730,7 +47730,7 @@
         "returns": "TextColor",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/nametags/NametagTextFormatter.kt",
-          "line": 180
+          "line": 179
         },
         "isExtension": true,
         "receiver": "ChatFormatting"
@@ -49050,7 +49050,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleStrongholdFinder.kt",
-          "line": 124
+          "line": 123
         }
       }
     ],
@@ -49788,7 +49788,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autofarm/AutoFarmVisualizer.kt",
-          "line": 74
+          "line": 76
         }
       }
     ],
@@ -63485,7 +63485,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-          "line": 393
+          "line": 414
         }
       }
     ],
@@ -63495,7 +63495,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-          "line": 363
+          "line": 384
         },
         "isExtension": true,
         "receiver": "RenderPipeline.Builder"
@@ -63514,7 +63514,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-          "line": 414
+          "line": 435
         }
       }
     ],
@@ -63524,10 +63524,27 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-          "line": 396
+          "line": 417
         },
         "isExtension": true,
         "receiver": "RenderPipeline.Builder"
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.ClientRenderPipelines.lines": [
+      {
+        "params": [
+          {
+            "name": "noDepthTest",
+            "type": "Boolean",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
+          "line": 244
+        }
       }
     ],
     "net.ccbluex.liquidbounce.render.ClientRenderPipelines.newPipeline": [
@@ -63566,7 +63583,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-          "line": 334
+          "line": 355
         }
       }
     ],
@@ -63595,7 +63612,24 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-          "line": 509
+          "line": 530
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.ClientRenderPipelines.quads": [
+      {
+        "params": [
+          {
+            "name": "noDepthTest",
+            "type": "Boolean",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
+          "line": 308
         }
       }
     ],
@@ -63612,7 +63646,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-          "line": 256
+          "line": 263
         }
       }
     ],
@@ -63667,7 +63701,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-          "line": 306
+          "line": 327
         }
       }
     ],
@@ -63684,7 +63718,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-          "line": 381
+          "line": 402
         }
       }
     ],
@@ -63694,7 +63728,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-          "line": 354
+          "line": 375
         },
         "isExtension": true,
         "receiver": "RenderPipeline.Builder"
@@ -63725,7 +63759,24 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-          "line": 281
+          "line": 295
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.ClientRenderPipelines.triangles": [
+      {
+        "params": [
+          {
+            "name": "noDepthTest",
+            "type": "Boolean",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
+          "line": 282
         }
       }
     ],
@@ -65509,7 +65560,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 153
+          "line": 113
         },
         "isExtension": true,
         "receiver": "SubmitNodeStorage"
@@ -65540,7 +65591,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 64
+          "line": 60
         },
         "isExtension": true,
         "receiver": "PoseStack"
@@ -65557,7 +65608,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 67
+          "line": 63
         },
         "isExtension": true,
         "receiver": "PoseStack"
@@ -65580,7 +65631,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 74
+          "line": 70
         },
         "isExtension": true,
         "receiver": "PoseStack"
@@ -65599,7 +65650,7 @@
         "returns": "T",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 46
+          "line": 42
         }
       }
     ],
@@ -65616,7 +65667,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 55
+          "line": 51
         },
         "isExtension": true,
         "receiver": "PoseStack"
@@ -66006,12 +66057,18 @@
             "type": "Int",
             "nullable": false,
             "vararg": false
+          },
+          {
+            "name": "noDepthTest",
+            "type": "Boolean",
+            "nullable": false,
+            "vararg": false
           }
         ],
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 323
+          "line": 333
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -66048,7 +66105,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 384
+          "line": 395
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -66085,7 +66142,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 400
+          "line": 411
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -66110,7 +66167,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 549
+          "line": 560
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -66141,7 +66198,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 572
+          "line": 583
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -66301,7 +66358,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 458
+          "line": 469
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -66344,7 +66401,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 490
+          "line": 501
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -66381,7 +66438,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 586
+          "line": 597
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -66416,6 +66473,35 @@
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
+      },
+      {
+        "params": [
+          {
+            "name": "p1",
+            "type": "Vec3",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "p2",
+            "type": "Vec3",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "argb",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
+          "line": 179
+        },
+        "isExtension": true,
+        "receiver": "WorldRenderEnvironment"
       }
     ],
     "net.ccbluex.liquidbounce.render.RenderShortcutsKt.drawLineStrip": [
@@ -66437,7 +66523,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 258
+          "line": 267
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -66460,7 +66546,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 268
+          "line": 277
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -66485,7 +66571,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 231
+          "line": 240
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -66508,7 +66594,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 242
+          "line": 251
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -66539,7 +66625,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 180
+          "line": 189
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -66568,7 +66654,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 201
+          "line": 210
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -66605,7 +66691,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 416
+          "line": 427
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -66642,7 +66728,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 532
+          "line": 543
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -66673,7 +66759,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 343
+          "line": 354
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -66716,7 +66802,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 361
+          "line": 372
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -66747,7 +66833,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 290
+          "line": 299
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -66772,7 +66858,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 278
+          "line": 287
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -66804,12 +66890,18 @@
             "type": "Int",
             "nullable": false,
             "vararg": false
+          },
+          {
+            "name": "noDepthTest",
+            "type": "Boolean",
+            "nullable": false,
+            "vararg": false
           }
         ],
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 312
+          "line": 321
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -67601,69 +67693,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 87
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.relativeToCamera": [
-      {
-        "params": [
-          {
-            "name": "pos",
-            "type": "Vec3f",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "Vec3",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 96
-        }
-      },
-      {
-        "params": [
-          {
-            "name": "pos",
-            "type": "Position",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "Vec3",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 105
-        }
-      },
-      {
-        "params": [
-          {
-            "name": "pos",
-            "type": "Vec3i",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "Vec3",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 114
-        }
-      },
-      {
-        "params": [
-          {
-            "name": "pos",
-            "type": "Vector3fc",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "Vec3",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 123
+          "line": 83
         }
       }
     ],
@@ -67692,7 +67722,7 @@
         "returns": "MeshBuildScope",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 136
+          "line": 96
         }
       }
     ],
@@ -88028,6 +88058,46 @@
         "receiver": "Filter"
       }
     ],
+    "net.ccbluex.liquidbounce.utils.collection.JoinedList.constructor": [
+      {
+        "params": [
+          {
+            "name": "source",
+            "type": "List<T>",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "separator",
+            "type": "T",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/collection/JoinedList.kt",
+          "line": 29
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.utils.collection.JoinedList.get": [
+      {
+        "params": [
+          {
+            "name": "index",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "T",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/collection/JoinedList.kt",
+          "line": 37
+        }
+      }
+    ],
     "net.ccbluex.liquidbounce.utils.collection.LruCache.constructor": [
       {
         "params": [
@@ -107211,7 +107281,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt",
-          "line": 297
+          "line": 304
         }
       }
     ],
@@ -107381,7 +107451,7 @@
         "returns": "String",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt",
-          "line": 205
+          "line": 212
         },
         "isExtension": true,
         "receiver": "String"
@@ -107400,7 +107470,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt",
-          "line": 299
+          "line": 306
         },
         "isExtension": true,
         "receiver": "Char"
@@ -107412,7 +107482,7 @@
         "returns": "String",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt",
-          "line": 211
+          "line": 218
         },
         "isExtension": true,
         "receiver": "String"
@@ -107424,7 +107494,7 @@
         "returns": "String",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt",
-          "line": 267
+          "line": 274
         },
         "isExtension": true,
         "receiver": "Long"
@@ -107436,7 +107506,7 @@
         "returns": "String",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt",
-          "line": 253
+          "line": 260
         },
         "isExtension": true,
         "receiver": "Int"
@@ -107448,7 +107518,7 @@
         "returns": "String",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt",
-          "line": 282
+          "line": 289
         },
         "isExtension": true,
         "receiver": "String"
@@ -107477,7 +107547,7 @@
           },
           {
             "name": "transform",
-            "type": "Function<T, Component>",
+            "type": "Function<in T, out Component>",
             "nullable": false,
             "vararg": false
           }
@@ -107502,7 +107572,24 @@
         "returns": "Component",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt",
-          "line": 126
+          "line": 127
+        },
+        "isExtension": true,
+        "receiver": "Collection<String>"
+      },
+      {
+        "params": [
+          {
+            "name": "separator",
+            "type": "Component",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Component",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt",
+          "line": 133
         },
         "isExtension": true,
         "receiver": "Collection<Component>"
@@ -107608,7 +107695,7 @@
         "returns": "String",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt",
-          "line": 301
+          "line": 308
         },
         "isExtension": true,
         "receiver": "Char"
@@ -107620,7 +107707,7 @@
         "returns": "String",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt",
-          "line": 228
+          "line": 235
         },
         "isExtension": true,
         "receiver": "String"
@@ -107669,7 +107756,7 @@
         "returns": "Component",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt",
-          "line": 306
+          "line": 313
         }
       }
     ],
@@ -107696,7 +107783,7 @@
         "returns": "String",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt",
-          "line": 209
+          "line": 216
         },
         "isExtension": true,
         "receiver": "String"
@@ -107708,7 +107795,7 @@
         "returns": "Component",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt",
-          "line": 129
+          "line": 136
         },
         "isExtension": true,
         "receiver": "FormattedCharSequence"
@@ -107720,7 +107807,7 @@
         "returns": "String",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt",
-          "line": 180
+          "line": 187
         },
         "isExtension": true,
         "receiver": "TranslatableContents"
@@ -107732,7 +107819,7 @@
         "returns": "String",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt",
-          "line": 193
+          "line": 200
         },
         "isExtension": true,
         "receiver": "String"
@@ -107744,7 +107831,7 @@
         "returns": "Component",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt",
-          "line": 162
+          "line": 169
         },
         "isExtension": true,
         "receiver": "Component"
@@ -107754,7 +107841,7 @@
         "returns": "ComponentContents",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/text/TextExtensions.kt",
-          "line": 177
+          "line": 184
         },
         "isExtension": true,
         "receiver": "ComponentContents"

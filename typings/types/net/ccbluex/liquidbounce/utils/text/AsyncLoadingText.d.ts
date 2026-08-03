@@ -17,7 +17,7 @@ import type { FormattedCharSequence } from '../../../../../net/minecraft/util/Fo
 import type { FormattedCharSink } from '../../../../../net/minecraft/util/FormattedCharSink.d.ts'
 import type { Unit } from '../../../../../net/minecraft/util/Unit.d.ts'
 export class AsyncLoadingText extends Record implements DelegatedComponent {
-    static DEFAULT_ON_EXCEPTION: (param0: Throwable) => Component;
+    static DEFAULT_ON_EXCEPTION: (param0: Object) => Component;
     static DEFAULT_ON_LOADING: () => Component;
     static EMPTY: FormattedText;
     static STOP_ITERATION: Optional<Unit>;

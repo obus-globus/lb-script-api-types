@@ -4,21 +4,16 @@ import type { RenderPipeline } from '../../../../com/mojang/blaze3d/pipeline/Ren
 import type { RenderTarget } from '../../../../com/mojang/blaze3d/pipeline/RenderTarget.d.ts'
 import type { PoseStack } from '../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { Vec3f } from '../../../../net/ccbluex/liquidbounce/render/engine/type/Vec3f.d.ts'
 import type { BatchCollector } from '../../../../net/ccbluex/liquidbounce/render/mesh/BatchCollector.d.ts'
 import type { MeshBuildScope } from '../../../../net/ccbluex/liquidbounce/render/mesh/MeshBuildScope.d.ts'
 import type { Camera } from '../../../../net/minecraft/client/Camera.d.ts'
 import type { AbstractTexture } from '../../../../net/minecraft/client/renderer/texture/AbstractTexture.d.ts'
-import type { Position } from '../../../../net/minecraft/core/Position.d.ts'
-import type { Vec3i } from '../../../../net/minecraft/core/Vec3i.d.ts'
-import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
-import type { Vector3fc } from '../../../../org/joml/Vector3fc.d.ts'
 /**
  * Context representing the rendering environment.
  *
  * @param renderTarget The render target framebuffer.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/ee595b88333a1dc2ff3055eb6be0860bbedcbdb3/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L87 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:87}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L83 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:83}
  */
 export class WorldRenderEnvironment extends Object {
     constructor(renderTarget: RenderTarget, poseStack: PoseStack, camera: Camera, batchCollector: BatchCollector)
@@ -27,22 +22,13 @@ export class WorldRenderEnvironment extends Object {
     readonly poseStack: PoseStack;
     readonly renderTarget: RenderTarget;
     /**
-     * Converts a world-space position to the camera-relative coordinate system.
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/ee595b88333a1dc2ff3055eb6be0860bbedcbdb3/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L96 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:96}
-     */
-    relativeToCamera(pos: Vec3f): Vec3;
-    relativeToCamera(pos: Position): Vec3;
-    relativeToCamera(pos: Vec3i): Vec3;
-    relativeToCamera(pos: Vector3fc): Vec3;
-    /**
      * Low-level draw entrypoint.
      *
      * The returned scope must be closed after writing vertices.
      *
      * Prefer {@link net.ccbluex.liquidbounce.render.drawCustomMesh} for regular use.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/ee595b88333a1dc2ff3055eb6be0860bbedcbdb3/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L136 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:136}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L96 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:96}
      */
     start(pipeline: RenderPipeline, textures: JavaMap<string, AbstractTexture>, uniforms: JavaMap<string, GpuBufferSlice>): MeshBuildScope;
 }
