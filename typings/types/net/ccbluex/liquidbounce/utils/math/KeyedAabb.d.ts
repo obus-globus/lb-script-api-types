@@ -5,7 +5,7 @@ import type { AABB } from '../../../../../net/minecraft/world/phys/AABB.d.ts'
  * A world-space AABB tagged with a merge key.
  * Only boxes with equal keys are allowed to be merged.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/AabbMergeUtil.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/AabbMergeUtil.kt:32}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/AabbMergeUtil.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/AabbMergeUtil.kt:32}
  */
 export class KeyedAabb<K extends unknown> extends Record {
     constructor(box: AABB, key: K)

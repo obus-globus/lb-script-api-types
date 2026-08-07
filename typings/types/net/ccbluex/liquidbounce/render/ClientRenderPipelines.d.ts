@@ -16,14 +16,14 @@ export class ClientRenderPipelines extends Object {
     /**
      * @see RenderPipelines.LINES_TRANSLUCENT
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L227 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:227}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L227 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:227}
      */
     static LinesWithWidth: RenderPipeline;
     /**
      * @see RenderPipelines.ENTITY_OUTLINE_BLIT
      * @see RenderPipelines.OUTLINE_SNIPPET
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L443 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:443}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L443 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:443}
      */
     static Outline: RenderPipeline;
     static TexQuads: RenderPipeline;
@@ -74,7 +74,7 @@ export class ClientRenderPipelines extends Object {
     /**
      * Precompile
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L530 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:530}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L530 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:530}
      */
     precompile(): void;
     quads(noDepthTest: boolean): RenderPipeline;

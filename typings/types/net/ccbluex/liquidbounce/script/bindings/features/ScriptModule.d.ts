@@ -22,7 +22,7 @@ export class ScriptModule extends ClientModule {
     /**
      * Allows the user to access values by typing module.settings.<valuename>
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptModule.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptModule.kt:59}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptModule.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptModule.kt:59}
      */
     readonly settings: JavaMap<string, Value<Object>>;
     tag: string | null;
@@ -34,7 +34,7 @@ export class ScriptModule extends ClientModule {
      * @param eventName Name of the event.
      * @param handler JavaScript function used to handle the event.   1. `() => void` (enable/disable)   2. `(Event) => void` (handler<T>)   3. `async (Event) => void` (sequenceHandler<T>)
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptModule.kt#L87 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptModule.kt:87}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptModule.kt#L87 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptModule.kt:87}
      */
     // T-10: base on() removed; see augmentations/ScriptModule.augmentation.d.ts
     onDisabled(): void;

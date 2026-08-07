@@ -18,7 +18,7 @@ export class AutoConfig extends Object {
     /**
      * Deserialize module configurable from a reader
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig.kt#L109 | src/main/kotlin/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig.kt:109}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig.kt#L109 | src/main/kotlin/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig.kt:109}
      */
     loadAutoConfig(jsonObject: JsonObject, modules: ValueGroup[]): void;
     loadAutoConfig(reader: Reader, modules: ValueGroup[]): void;
@@ -30,7 +30,7 @@ export class AutoConfig extends Object {
     /**
      * Created an auto config, which stores the moduleConfigur
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig.kt#L257 | src/main/kotlin/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig.kt:257}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig.kt#L257 | src/main/kotlin/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig.kt:257}
      */
     serializeAutoConfig(writer: Writer, includeConfiguration: IncludeConfiguration, autoSettingsType: AutoSettingsType, statusType: AutoSettingsStatusType): void;
     withLoading(block: () => void): void;

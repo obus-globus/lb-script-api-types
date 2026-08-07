@@ -5,7 +5,7 @@ import type { AxochatPacket$C2S } from '../../../../../../net/ccbluex/liquidboun
  *
  * @param user user is an ID.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ServerPackets.kt#L123 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ServerPackets.kt:123}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ServerPackets.kt#L123 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ServerPackets.kt:123}
  */
 export class C2SUnbanUserPacket extends Object implements AxochatPacket$C2S {
     constructor(user: string)

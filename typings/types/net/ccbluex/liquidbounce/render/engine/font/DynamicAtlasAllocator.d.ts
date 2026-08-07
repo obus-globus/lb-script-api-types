@@ -9,13 +9,13 @@ export class DynamicAtlasAllocator extends Object {
     /**
      * The minimal dimension of a slice. If a cut would be smaller than this, it will be made available.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/DynamicAtlasAllocator.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/DynamicAtlasAllocator.kt:35}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/DynamicAtlasAllocator.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/DynamicAtlasAllocator.kt:35}
      */
     readonly minDimension: Dimension;
     /**
      * In order to reduce the fragmentation the allocator will cut the texture into slices.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/DynamicAtlasAllocator.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/DynamicAtlasAllocator.kt:31}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/DynamicAtlasAllocator.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/DynamicAtlasAllocator.kt:31}
      */
     readonly verticalCutSize: number;
     allocate(dimension: Dimension): AtlasSliceHandle | null;

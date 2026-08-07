@@ -15,7 +15,7 @@ export class AxochatClient$ChannelHandler extends SimpleChannelInboundHandler<Ob
      *
      * Subclasses may override this method to change behavior.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L372 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:372}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L372 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:372}
      */
     channelActive(ctx: ChannelHandlerContext): void;
     /**
@@ -24,7 +24,7 @@ export class AxochatClient$ChannelHandler extends SimpleChannelInboundHandler<Ob
      *
      * Subclasses may override this method to change behavior.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L382 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:382}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L382 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:382}
      */
     channelInactive(ctx: ChannelHandlerContext): void;
     /**
@@ -36,7 +36,7 @@ export class AxochatClient$ChannelHandler extends SimpleChannelInboundHandler<Ob
      * @param ctx the {@link ChannelHandlerContext} which this {@link SimpleChannelInboundHandler} belongs to
      * @param msg @throws Exception    is thrown if an error occurred
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L414 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:414}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L414 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:414}
      */
     protected channelRead0(ctx: ChannelHandlerContext, msg: Object): void;
     /**
@@ -45,13 +45,13 @@ export class AxochatClient$ChannelHandler extends SimpleChannelInboundHandler<Ob
      *
      * Subclasses may override this method to change behavior.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L392 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:392}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L392 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:392}
      */
     exceptionCaught(ctx: ChannelHandlerContext, cause: Throwable): void;
     /**
      * Do nothing by default, subclasses may override this method.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L362 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:362}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L362 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:362}
      */
     handlerAdded(ctx: ChannelHandlerContext): void;
 }

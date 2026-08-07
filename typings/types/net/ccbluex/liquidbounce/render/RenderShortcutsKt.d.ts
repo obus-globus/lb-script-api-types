@@ -32,25 +32,25 @@ export class RenderShortcutsKt extends Object {
      * This has to be removed or limited to old driver versions when AMD actually fixes the bug in their drivers.
      * But as of now, 01.02.2025, they haven't.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:59}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:59}
      */
     static HAS_AMD_VEGA_APU: boolean;
     /**
      * Function to draw a colored {@link box}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L333 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:333}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L333 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:333}
      */
     static drawBox(self: WorldRenderEnvironment, box: AABB, faceColor: Color4b | null, outlineColor: Color4b | null, faceVertices: number, outlineVertices: number, noDepthTest: boolean): void;
     /**
      * Function to draw a colored {@link box} with specified {@link side}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L395 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:395}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L395 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:395}
      */
     static drawBoxSide(self: WorldRenderEnvironment, box: AABB, side: Direction, faceColor: Color4b | null, outlineColor: Color4b | null): void;
     /**
      * Function to draw a colored {@link box} with specified {@link sides}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L411 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:411}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L411 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:411}
      */
     static drawBoxSides(self: WorldRenderEnvironment, box: AABB, sides: Direction[], faceColor: Color4b | null, outlineColor: Color4b | null): void;
     static drawCircle(self: WorldRenderEnvironment, radius: number, color: Color4b): void;
@@ -60,20 +60,20 @@ export class RenderShortcutsKt extends Object {
      * @param radius The radius
      * @param color The color
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L583 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:583}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L583 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:583}
      */
     static drawCircleOutline(paramarg0: WorldRenderEnvironment, paramarg1: number, paramarg2: Color4b): void;
     static drawCircleOutline(self: WorldRenderEnvironment, radius: number, color: Color4b, noDepthTest: boolean): void;
     /**
      * Preferred mesh draw helper for world rendering code.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L152 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:152}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L152 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:152}
      */
     static drawCustomMesh(self: WorldRenderEnvironment, pipeline: RenderPipeline, textures: JavaMap<string, AbstractTexture>, uniforms: JavaMap<string, GpuBufferSlice>, drawer: (param0: VertexConsumer, param1: PoseStack$Pose) => void): void;
     /**
      * Variant of {@link drawCustomMesh} that binds {@link sampler0} as `Sampler0`.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L137 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:137}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L137 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:137}
      */
     static drawCustomMeshTextured(self: WorldRenderEnvironment, sampler0: AbstractTexture, pipeline: RenderPipeline, uniforms: JavaMap<string, GpuBufferSlice>, drawer: (param0: VertexConsumer, param1: PoseStack$Pose) => void): void;
     static drawGenericBlockESP(self: RenderTarget, renderState: CachedMeshStorage, pipeline: RenderPipeline, distanceFade: DistanceFadeUniformValueGroup, dynamicTransforms: () => GpuBufferSlice): boolean;
@@ -85,14 +85,14 @@ export class RenderShortcutsKt extends Object {
      * @param outerColor The color of the outer edges
      * @param innerColor The color of the inner edges
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L469 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:469}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L469 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:469}
      */
     static drawGradientCircle(self: WorldRenderEnvironment, outerRadius: number, innerRadius: number, outerColor: Color4b, innerColor: Color4b, innerOffset: Vector3fc, noDepthTest: boolean): void;
     static drawGradientSides(self: WorldRenderEnvironment, height: number, baseColor: Color4b, topColor: Color4b, box: AABB): void;
     /**
      * Draws a line with endpoint {@link p1} and {@link p2} and color {@link argb}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L170 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:170}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L170 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:170}
      */
     static drawLine(self: WorldRenderEnvironment, p1: Vec3f, p2: Vec3f, argb: number): void;
     static drawLine(self: WorldRenderEnvironment, p1: Vec3, p2: Vec3, argb: number): void;
@@ -101,7 +101,7 @@ export class RenderShortcutsKt extends Object {
      *
      * @param positions The vectors representing the line strip.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L267 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:267}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L267 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:267}
      */
     static drawLineStrip(self: WorldRenderEnvironment, argb: number, ...positions: Vec3f[]): void;
     static drawLineStrip(self: WorldRenderEnvironment, argb: number, positions: VertexList): void;
@@ -110,7 +110,7 @@ export class RenderShortcutsKt extends Object {
      *
      * @param positions The vectors representing the lines.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L240 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:240}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L240 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:240}
      */
     static drawLines(self: WorldRenderEnvironment, argb: number, ...positions: Vec3f[]): void;
     static drawLines(self: WorldRenderEnvironment, argb: number, positions: VertexList): void;
@@ -118,14 +118,14 @@ export class RenderShortcutsKt extends Object {
      * Draws lines with {@link width}.
      * Modern GL doesn't support `glLineWidth` well, so draw with shader simulation.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L189 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:189}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L189 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:189}
      */
     static drawLinesWithWidth(self: WorldRenderEnvironment, argb: number, width: number, ...positions: Vec3f[]): void;
     static drawLinesWithWidth(self: WorldRenderEnvironment, argb: number, width: number, positions: VertexList): void;
     /**
      * Function to draw a flat plane on the XZ axis with an optional outline.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L427 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:427}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L427 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:427}
      */
     static drawPlane(self: WorldRenderEnvironment, sizeX: number, sizeZ: number, fillColor: Color4b | null, outlineColor: Color4b | null): void;
     static drawShape(self: WorldRenderEnvironment, shape: VoxelShape, faceColor: Color4b | null, outlineColor: Color4b | null): void;
@@ -138,7 +138,7 @@ export class RenderShortcutsKt extends Object {
     /**
      * Positions the render origin at the camera-relative coordinates of {@link pos} before drawing.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L102 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:102}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt#L102 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt:102}
      */
     static withPositionRelativeToCamera(self: WorldRenderEnvironment, x: number, y: number, z: number, draw: (param0: WorldRenderEnvironment) => void): void;
     static withPositionRelativeToCamera(self: WorldRenderEnvironment, draw: (param0: WorldRenderEnvironment) => void): void;

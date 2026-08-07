@@ -3,7 +3,7 @@ import type { SuspendHandlerBehavior } from '../../../../net/ccbluex/liquidbounc
 /**
  * Cancels the previous job if it's active.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlerBehavior.kt#L102 | src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlerBehavior.kt:102}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlerBehavior.kt#L102 | src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlerBehavior.kt:102}
  */
 export class SuspendHandlerBehavior$CancelPrevious extends Object implements SuspendHandlerBehavior {
     static INSTANCE: SuspendHandlerBehavior$CancelPrevious;

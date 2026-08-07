@@ -5,25 +5,25 @@ export class GsonInstanceKt extends Object {
      * This GSON instance is used for serializing objects as accessible JSON which means it is READ-ONLY (!)
      * and often comes with an easier syntax to use in other programming languages like JavaScript.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/GsonInstance.kt#L127 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/GsonInstance.kt:127}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/GsonInstance.kt#L127 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/GsonInstance.kt:127}
      */
     static getAccessibleInteropGson(): Gson;
     /**
      * A GSON instance which is used for local files.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/GsonInstance.kt#L95 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/GsonInstance.kt:95}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/GsonInstance.kt#L95 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/GsonInstance.kt:95}
      */
     static getFileGson(): Gson;
     /**
      * This GSON instance is used for interop communication.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/GsonInstance.kt#L116 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/GsonInstance.kt:116}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/GsonInstance.kt#L116 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/GsonInstance.kt:116}
      */
     static getInteropGson(): Gson;
     /**
      * A GSON instance which is used for JSON that is distributed to other players.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/GsonInstance.kt#L105 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/GsonInstance.kt:105}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/GsonInstance.kt#L105 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/GsonInstance.kt:105}
      */
     static getPublicGson(): Gson;
 }

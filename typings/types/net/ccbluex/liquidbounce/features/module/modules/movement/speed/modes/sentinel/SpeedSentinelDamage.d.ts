@@ -10,7 +10,7 @@ import type { PlayerMoveEvent } from '../../../../../../../../../../net/ccbluex/
  * @anticheatVersion 30.06.2024
  * @testedOn cubecraft.net
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/sentinel/SpeedSentinelDamage.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/sentinel/SpeedSentinelDamage.kt:44}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/sentinel/SpeedSentinelDamage.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/sentinel/SpeedSentinelDamage.kt:44}
  */
 export class SpeedSentinelDamage extends Mode {
     static Companion: Tagged$Companion;

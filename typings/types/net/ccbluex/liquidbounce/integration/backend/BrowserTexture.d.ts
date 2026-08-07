@@ -9,7 +9,7 @@ import type { TextureSetup } from '../../../../../net/minecraft/client/gui/rende
  * @param height The height of the texture.
  * @param bgra Whether the texture is in BGRA format (true) or RGBA format (false).
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserTexture.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserTexture.kt:31}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserTexture.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserTexture.kt:31}
  */
 export class BrowserTexture extends Record {
     constructor(textureSetup: TextureSetup, width: number, height: number, bgra: boolean)

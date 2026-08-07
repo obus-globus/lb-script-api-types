@@ -6,7 +6,7 @@ import type { Continuation } from '../../../../../kotlin/coroutines/Continuation
  *
  * Allows the browser to communicate with the client. (e.g. for UIs)
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/ClientInteropServer.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/ClientInteropServer.kt:60}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/ClientInteropServer.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/ClientInteropServer.kt:60}
  */
 export class ClientInteropServer extends Object {
     static INSTANCE: ClientInteropServer;

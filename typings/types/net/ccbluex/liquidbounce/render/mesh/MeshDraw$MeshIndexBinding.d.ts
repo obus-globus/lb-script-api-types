@@ -6,7 +6,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
  * vanilla's shared sequential buffers and must resolve the current buffer
  * lazily at draw time.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt:56}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt:56}
  */
 export interface MeshDraw$MeshIndexBinding extends Object{
 }

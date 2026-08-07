@@ -10,7 +10,7 @@ import type { PacketEvent } from '../../../../../../../../../../net/ccbluex/liqu
  * @testedOn hypixel.net
  * @author @liquidsquid1
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/hypixel/FlyHypixelFlat.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/hypixel/FlyHypixelFlat.kt:43}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/hypixel/FlyHypixelFlat.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/hypixel/FlyHypixelFlat.kt:43}
  */
 export class FlyHypixelFlat extends Mode {
     static Companion: Tagged$Companion;

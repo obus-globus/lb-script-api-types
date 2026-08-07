@@ -21,7 +21,7 @@ import type { Item } from '../../../../../net/minecraft/world/item/Item.d.ts'
 /**
  * @see net.minecraft.client.gui.render.GuiItemAtlas
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt#L116 | src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt:116}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt#L116 | src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt:116}
  */
 export class ItemTextureRenderer extends Object implements MinecraftShortcuts {
     constructor(items: Item[], count: number, scale: number)
@@ -48,7 +48,7 @@ export class ItemTextureRenderer extends Object implements MinecraftShortcuts {
      * @see net.minecraft.client.gui.render.GuiRenderer.prepareItemElements
 From 1.21.5 DrawContext code
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a0e57b28307a88c68b5bf7b52a54201b8a15cec8/src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt#L157 | src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt:157}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt#L157 | src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt:157}
      */
     render(): CompletableFuture<Atlas>;
     // private renderItemToAtlas(state: TrackingItemStackRenderState, matrices: PoseStack, scaledX: number, scaledY: number, itemPixelSize: number): void;
