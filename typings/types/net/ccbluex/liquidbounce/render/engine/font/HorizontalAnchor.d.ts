@@ -19,7 +19,7 @@ export class HorizontalAnchor extends Enum<HorizontalAnchor> implements Tagged {
      * @param scale Render scale
      * @returns Draw (top-left) X position
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/HorizontalAnchor.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/HorizontalAnchor.kt:44}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/HorizontalAnchor.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/HorizontalAnchor.kt:44}
      */
     anchorToDrawX(x: number, width: number, scale: number): number;
     name(): "START" | "CENTER" | "END";

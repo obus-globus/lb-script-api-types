@@ -3,4 +3,5 @@ export class DebugPhaseNamesKt extends Object {
     static PHASE_ON_CALL: string;
     static PHASE_ON_CALL_RECEIVE: string;
     static PHASE_ON_CALL_RESPOND: string;
+    static PHASE_ON_CALL_VALIDATORS: string;
 }

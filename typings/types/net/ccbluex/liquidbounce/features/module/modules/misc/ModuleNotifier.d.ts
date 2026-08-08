@@ -18,7 +18,7 @@ import type { GameType } from '../../../../../../../net/minecraft/world/level/Ga
  *
  * Notifies you about all kinds of events.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleNotifier.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleNotifier.kt:58}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleNotifier.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleNotifier.kt:58}
  */
 export class ModuleNotifier extends ClientModule {
     static INSTANCE: ModuleNotifier;

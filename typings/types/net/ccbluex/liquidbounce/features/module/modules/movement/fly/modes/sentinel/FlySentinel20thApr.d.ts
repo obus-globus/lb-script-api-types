@@ -13,7 +13,7 @@ import type { PlayerMoveEvent } from '../../../../../../../../../../net/ccbluex/
  *
  * Thanks to the_bi11iona1re for making me aware that Sentinal folds to Verus Damage exploit.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/sentinel/FlySentinel20thApr.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/sentinel/FlySentinel20thApr.kt:49}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/sentinel/FlySentinel20thApr.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/sentinel/FlySentinel20thApr.kt:49}
  */
 export class FlySentinel20thApr extends Mode {
     static Companion: Tagged$Companion;

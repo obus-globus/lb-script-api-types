@@ -41,4 +41,5 @@ export class HttpToHttp2ConnectionHandlerBuilder extends AbstractHttp2Connection
     initialSettings(arg0: JavaMap<any, any>): HttpToHttp2ConnectionHandlerBuilder;
     server(arg0: boolean): HttpToHttp2ConnectionHandlerBuilder;
     validateHeaders(arg0: boolean): HttpToHttp2ConnectionHandlerBuilder;
+    validateRequiredPseudoHeaders(arg0: boolean): HttpToHttp2ConnectionHandlerBuilder;
 }

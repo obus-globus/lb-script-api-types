@@ -35,6 +35,7 @@ export abstract class AbstractHttp2ConnectionHandlerBuilder<T extends Http2Conne
     // private maxSmallContinuationFrames: number;
     // private promisedRequestVerifier: Http2PromisedRequestVerifier;
     // private validateHeaders: boolean;
+    // private validateRequiredPseudoHeaders: boolean;
     autoAckPingFrame(arg0: boolean): B;
     autoAckSettingsFrame(arg0: boolean): B;
     build(): T;
@@ -77,6 +78,7 @@ export abstract class AbstractHttp2ConnectionHandlerBuilder<T extends Http2Conne
     isAutoAckSettingsFrame(): boolean;
     isServer(): boolean;
     isValidateHeaders(): boolean;
+    isValidateRequiredPseudoHeaders(): boolean;
     maxReservedStreams(): number;
     maxReservedStreams(arg0: number): B;
     promisedRequestVerifier(): Http2PromisedRequestVerifier;
@@ -84,4 +86,5 @@ export abstract class AbstractHttp2ConnectionHandlerBuilder<T extends Http2Conne
     self(): B;
     server(arg0: boolean): B;
     validateHeaders(arg0: boolean): B;
+    validateRequiredPseudoHeaders(arg0: boolean): B;
 }

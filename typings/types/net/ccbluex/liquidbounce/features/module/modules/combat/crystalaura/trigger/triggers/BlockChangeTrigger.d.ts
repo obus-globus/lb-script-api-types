@@ -7,7 +7,7 @@ import type { Vec3 } from '../../../../../../../../../../net/minecraft/world/phy
  * Runs placing right when a block was broken in the area where the aura operates.
  * This can help to block the surround of enemies with immediate placements.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/trigger/triggers/BlockChangeTrigger.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/trigger/triggers/BlockChangeTrigger.kt:37}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/trigger/triggers/BlockChangeTrigger.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/trigger/triggers/BlockChangeTrigger.kt:37}
  */
 export class BlockChangeTrigger extends PostPacketTrigger<ClientboundBlockUpdatePacket> {
     static INSTANCE: BlockChangeTrigger;

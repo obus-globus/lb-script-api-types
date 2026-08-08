@@ -18,6 +18,8 @@ export class NettyHttp1Handler extends ChannelInboundHandlerAdapter {
     // private activeCalls: NettyHttp1ApplicationCall[];
     // private applicationProvider: () => Application;
     // private callEventGroup: (Object | null)[][];
+    // private channelApplication: Application | null;
+    // private channelCoroutineContext: CoroutineContext;
     // private engineContext: CoroutineContext;
     // private enginePipeline: EnginePipeline;
     // private environment: ApplicationEnvironment;

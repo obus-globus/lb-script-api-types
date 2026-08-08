@@ -40,4 +40,5 @@ export class Http2ConnectionHandlerBuilder extends AbstractHttp2ConnectionHandle
     maxReservedStreams(arg0: number): Http2ConnectionHandlerBuilder;
     server(arg0: boolean): Http2ConnectionHandlerBuilder;
     validateHeaders(arg0: boolean): Http2ConnectionHandlerBuilder;
+    validateRequiredPseudoHeaders(arg0: boolean): Http2ConnectionHandlerBuilder;
 }

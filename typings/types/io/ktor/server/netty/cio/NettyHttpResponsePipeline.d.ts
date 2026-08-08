@@ -11,10 +11,11 @@ import type { Continuation } from '../../../../../kotlin/coroutines/Continuation
 import type { CoroutineContext } from '../../../../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { CoroutineScope } from '../../../../../kotlinx/coroutines/CoroutineScope.d.ts'
 export class NettyHttpResponsePipeline extends Object implements CoroutineScope {
-    constructor(context: ChannelHandlerContext, httpHandlerState: NettyHttpHandlerState, coroutineContext: CoroutineContext)
+    constructor(context: ChannelHandlerContext, httpHandlerState: NettyHttpHandlerState, coroutineContext: CoroutineContext, onFailure: (() => void) | null)
     // private context: ChannelHandlerContext;
     readonly coroutineContext: CoroutineContext;
     // private httpHandlerState: NettyHttpHandlerState;
+    // private onFailure: (() => void) | null;
     // private previousCallHandled: ChannelPromise;
     close(lastFuture: ChannelFuture): void;
     flushIfNeeded(): void;

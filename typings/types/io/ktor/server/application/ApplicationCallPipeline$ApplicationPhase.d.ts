@@ -13,4 +13,6 @@ export class ApplicationCallPipeline$ApplicationPhase extends Object {
     /*not mapped: */ getPlugins(): PipelinePhase;
     // private Setup: PipelinePhase;
     /*not mapped: */ getSetup(): PipelinePhase;
+    // private Validators: PipelinePhase;
+    /*not mapped: */ getValidators$ktor_server_core(): PipelinePhase;
 }

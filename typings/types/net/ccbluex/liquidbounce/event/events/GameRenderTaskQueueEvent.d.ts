@@ -4,7 +4,7 @@ import type { Event } from '../../../../../net/ccbluex/liquidbounce/event/Event.
  * executed in the same frame. This is useful for more responsive task execution
  * and allows to also schedule tasks off-schedule.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/event/events/GameEvents.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/event/events/GameEvents.kt:54}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/event/events/GameEvents.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/event/events/GameEvents.kt:54}
  */
 export class GameRenderTaskQueueEvent extends Event {
     static INSTANCE: GameRenderTaskQueueEvent;

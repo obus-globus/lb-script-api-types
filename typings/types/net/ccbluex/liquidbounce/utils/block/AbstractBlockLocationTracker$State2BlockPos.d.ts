@@ -16,7 +16,7 @@ import type { ChunkPos } from '../../../../../net/minecraft/world/level/ChunkPos
  * @see BlockPos2State
  * @see AbstractBlockLocationTracker
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/AbstractBlockLocationTracker.kt#L112 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/AbstractBlockLocationTracker.kt:112}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/AbstractBlockLocationTracker.kt#L112 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/AbstractBlockLocationTracker.kt:112}
  */
 export abstract class AbstractBlockLocationTracker$State2BlockPos<T extends unknown> extends AbstractBlockLocationTracker<T> {
     constructor()

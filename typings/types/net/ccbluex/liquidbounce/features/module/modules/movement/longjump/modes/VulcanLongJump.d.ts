@@ -9,7 +9,7 @@ import type { PacketEvent } from '../../../../../../../../../net/ccbluex/liquidb
  * @anticheatVersion 2.8.9
  * @testedOn anticheat-test.com, eu.loyisa.cn
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/longjump/modes/VulcanLongJump.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/longjump/modes/VulcanLongJump.kt:38}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/longjump/modes/VulcanLongJump.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/longjump/modes/VulcanLongJump.kt:38}
  */
 export class VulcanLongJump extends Mode {
     static Companion: Tagged$Companion;

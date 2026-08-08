@@ -46,4 +46,5 @@ export class Http2FrameCodecBuilder extends AbstractHttp2ConnectionHandlerBuilde
     maxReservedStreams(): number;
     maxReservedStreams(arg0: number): Http2FrameCodecBuilder;
     validateHeaders(arg0: boolean): Http2FrameCodecBuilder;
+    validateRequiredPseudoHeaders(arg0: boolean): Http2FrameCodecBuilder;
 }

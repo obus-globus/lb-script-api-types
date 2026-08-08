@@ -17,7 +17,7 @@ import type { AbstractContainerScreen } from '../../../../../../../../net/minecr
  *
  * Automatically steals all items from a chest.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/ModuleChestStealer.kt#L62 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/ModuleChestStealer.kt:62}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/ModuleChestStealer.kt#L62 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/ModuleChestStealer.kt:62}
  */
 export class ModuleChestStealer extends ClientModule {
     static INSTANCE: ModuleChestStealer;

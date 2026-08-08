@@ -11,15 +11,19 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 import type { CoroutineContext } from '../../../../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { CompletableJob } from '../../../../../kotlinx/coroutines/CompletableJob.d.ts'
+import type { Job } from '../../../../../kotlinx/coroutines/Job.d.ts'
 export class NettyHttp2Handler extends ChannelInboundHandlerAdapter {
     static Companion: NettyHttp2Handler$Companion;
     constructor(enginePipeline: EnginePipeline, application: Application, callEventGroup: (Object | null)[][], userCoroutineContext: CoroutineContext, runningLimit: number)
     // private application: Application;
+    // private callEngineContext: CoroutineContext;
     // private callEventGroup: (Object | null)[][];
     // private enginePipeline: EnginePipeline;
     // private handlerJob: CompletableJob;
+    // private parentJob: Job | null;
     // private responseWriter: NettyHttpResponsePipeline;
     // private state: NettyHttpHandlerState;
+    // private staticCallContext: CoroutineContext;
     // private streamKeyField: Field | null;
     // private /*not mapped: */ getStreamKeyField(): Field | null;
     // private userCoroutineContext: CoroutineContext;

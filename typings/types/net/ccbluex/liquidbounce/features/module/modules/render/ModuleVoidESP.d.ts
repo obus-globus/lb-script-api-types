@@ -9,7 +9,7 @@ import type { BlockPos$MutableBlockPos } from '../../../../../../../net/minecraf
  *
  * Highlight all surrounding positions that may be void.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleVoidESP.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleVoidESP.kt:42}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleVoidESP.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleVoidESP.kt:42}
  */
 export class ModuleVoidESP extends ClientModule {
     static INSTANCE: ModuleVoidESP;

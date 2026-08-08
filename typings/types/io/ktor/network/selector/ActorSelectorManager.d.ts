@@ -10,6 +10,7 @@ import type { AtomicLong } from '../../../../java/util/concurrent/atomic/AtomicL
 import type { Continuation } from '../../../../kotlin/coroutines/Continuation.d.ts'
 import type { CoroutineContext } from '../../../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { CoroutineScope } from '../../../../kotlinx/coroutines/CoroutineScope.d.ts'
+import type { DisposableHandle } from '../../../../kotlinx/coroutines/DisposableHandle.d.ts'
 export class ActorSelectorManager extends SelectorManagerSupport implements Closeable, CoroutineScope {
     static Companion: SelectorManager$Companion;
     constructor(context: CoroutineContext)
@@ -17,6 +18,7 @@ export class ActorSelectorManager extends SelectorManagerSupport implements Clos
     // private continuation: ActorSelectorManager$ContinuationHolder<void, Continuation<void>>;
     readonly coroutineContext: CoroutineContext;
     // private inSelect: boolean;
+    // private parentCancellationHandler: DisposableHandle | null;
     // private selectionQueue: LockFreeMPSCQueue<Selectable>;
     // private selectorRef: Selector | null;
     // private wakeup: AtomicLong;

@@ -1,4 +1,4 @@
-import type { ToggleableValueGroup } from '../../../../../../../net/ccbluex/liquidbounce/config/types/group/ToggleableValueGroup.d.ts'
+import type { ToggleableValueGroup } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ToggleableValueGroup.d.ts'
 export class ModuleAnimations$MainHand extends ToggleableValueGroup {
     static INSTANCE: ModuleAnimations$MainHand;
     readonly mainHandItemScale: number;

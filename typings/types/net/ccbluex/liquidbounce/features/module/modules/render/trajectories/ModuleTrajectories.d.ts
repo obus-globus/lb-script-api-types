@@ -11,7 +11,7 @@ import type { TrajectoryType } from '../../../../../../../../net/ccbluex/liquidb
  *
  * Allows you to see where projectile items will land.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/ModuleTrajectories.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/ModuleTrajectories.kt:52}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/ModuleTrajectories.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/ModuleTrajectories.kt:52}
  */
 export class ModuleTrajectories extends ClientModule {
     static INSTANCE: ModuleTrajectories;

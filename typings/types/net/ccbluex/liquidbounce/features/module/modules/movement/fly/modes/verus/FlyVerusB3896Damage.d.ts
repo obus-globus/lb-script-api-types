@@ -9,7 +9,7 @@ import type { GameTickEvent } from '../../../../../../../../../../net/ccbluex/li
  * @testedOn eu.loyisa.cn
  * @note it gives you ~2 flags for damage
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/verus/FlyVerusB3896Damage.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/verus/FlyVerusB3896Damage.kt:41}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/verus/FlyVerusB3896Damage.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/verus/FlyVerusB3896Damage.kt:41}
  */
 export class FlyVerusB3896Damage extends Mode {
     static Companion: Tagged$Companion;

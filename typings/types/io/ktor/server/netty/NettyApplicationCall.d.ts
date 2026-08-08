@@ -6,7 +6,6 @@ import type { ByteBuf } from '../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { ChannelHandlerContext } from '../../../../io/netty/channel/ChannelHandlerContext.d.ts'
 import type { ChannelPromise } from '../../../../io/netty/channel/ChannelPromise.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { Continuation } from '../../../../kotlin/coroutines/Continuation.d.ts'
 import type { Job } from '../../../../kotlinx/coroutines/Job.d.ts'
 export abstract class NettyApplicationCall extends BaseApplicationCall {
     constructor(application: Application, context: ChannelHandlerContext, requestMessage: Object)
@@ -24,12 +23,10 @@ export abstract class NettyApplicationCall extends BaseApplicationCall {
     readonly response: NettyApplicationResponse;
     readonly responseWriteJob: Job;
     dispose(): void;
-    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
-    finish($completion: Continuation<void>): any;
-    // private finishComplete(): void;
-    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
-    // private finishSuspend($completion: Continuation<void>): any;
+    finish(): void;
+    initResponseWriteJob(): void;
     isContextCloseRequired(): boolean;
+    // private onResponseWriteCompleted(): void;
     prepareEndOfStreamMessage(lastTransformed: boolean): Object | null;
     prepareMessage(buf: ByteBuf, isLastContent: boolean): Object;
     // private releaseRequestMessage(): void;

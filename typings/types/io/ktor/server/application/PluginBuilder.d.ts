@@ -41,6 +41,7 @@ export abstract class PluginBuilder<PluginConfig extends unknown> extends Object
     onCallReceive(block: (param0: OnCallReceiveContext<PluginConfig>, param1: PipelineCall, param2: Object) => void): void;
     onCallRespond(block: (param0: OnCallRespondContext<PluginConfig>, param1: PipelineCall) => void): void;
     onCallRespond(block: (param0: OnCallRespondContext<PluginConfig>, param1: PipelineCall, param2: Object) => void): void;
+    onCallValidators(block: (param0: OnCallContext<PluginConfig>, param1: PipelineCall) => void): void;
     // private onDefaultPhase<T extends unknown, ContextT extends CallContext<PluginConfig>>(interceptions: Interception<T>[], phase: PipelinePhase, handlerName: string, contextInit: (param0: PluginConfig, param1: PipelineContext<T, PipelineCall>) => ContextT, block: (param0: ContextT, param1: PipelineCall, param2: T) => void): void;
     // private onDefaultPhaseWithMessage<T extends unknown, ContextT extends CallContext<PluginConfig>>(interceptions: Interception<T>[], phase: PipelinePhase, handlerName: string, contextInit: (param0: PluginConfig, param1: PipelineContext<T, PipelineCall>) => ContextT, block: (param0: ContextT, param1: PipelineCall, param2: T) => void): void;
 }

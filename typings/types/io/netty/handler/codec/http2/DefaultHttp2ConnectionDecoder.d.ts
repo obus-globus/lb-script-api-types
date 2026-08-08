@@ -19,6 +19,7 @@ export class DefaultHttp2ConnectionDecoder extends Object implements Http2Connec
     constructor(arg0: Http2Connection, arg1: Http2ConnectionEncoder, arg2: Http2FrameReader, arg3: Http2PromisedRequestVerifier, arg4: boolean)
     constructor(arg0: Http2Connection, arg1: Http2ConnectionEncoder, arg2: Http2FrameReader, arg3: Http2PromisedRequestVerifier, arg4: boolean, arg5: boolean)
     constructor(arg0: Http2Connection, arg1: Http2ConnectionEncoder, arg2: Http2FrameReader, arg3: Http2PromisedRequestVerifier, arg4: boolean, arg5: boolean, arg6: boolean)
+    constructor(arg0: Http2Connection, arg1: Http2ConnectionEncoder, arg2: Http2FrameReader, arg3: Http2PromisedRequestVerifier, arg4: boolean, arg5: boolean, arg6: boolean, arg7: boolean)
     // private autoAckPing: boolean;
     // private connection: Http2Connection;
     // private contentLengthKey: Http2Connection$PropertyKey;
@@ -30,6 +31,7 @@ export class DefaultHttp2ConnectionDecoder extends Object implements Http2Connec
     // private requestVerifier: Http2PromisedRequestVerifier;
     // private settingsReceivedConsumer: Http2SettingsReceivedConsumer;
     // private validateHeaders: boolean;
+    // private validateRequiredPseudoHeaders: boolean;
     calculateMaxHeaderListSizeGoAway(arg0: number): number;
     close(): void;
     connection(): Http2Connection;

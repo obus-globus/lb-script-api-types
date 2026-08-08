@@ -3145,7 +3145,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt",
-      "line": 281
+      "line": 282
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.ModuleAimbot": {
@@ -8331,54 +8331,6 @@
       "line": 52
     }
   },
-  "net.ccbluex.liquidbounce.features.module.modules.render.ModuleAnimations": {
-    "doc": "Animations module\n\nThis module affects item animations. It allows the user to customize the animation.\nIf you are looking forward to contribute to this module, please name your animation with a reasonable name.\nDo not name them after clients or yourself.\nPlease credit from where you got the animation from and make sure they are willing to contribute.\nIf they are not willing to contribute, please do not add the animation to this module.",
-    "kind": "object",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAnimations.kt",
-      "line": 44
-    }
-  },
-  "net.ccbluex.liquidbounce.features.module.modules.render.ModuleAnimations.AnimationMode": {
-    "doc": "A choice that aims to transform the held item transformation during the swing progress.",
-    "kind": "class",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAnimations.kt",
-      "line": 119
-    }
-  },
-  "net.ccbluex.liquidbounce.features.module.modules.render.ModuleAnimations.OneSevenAnimation": {
-    "doc": "This animation is based on the 1.7 animation. It is the closest to the original animation\nif not altered by the user.\n\nThis animation is used in the ViaFabricPlus project.\nhttps://github.com/ViaVersion/ViaFabricPlus/blob/9eb2adf6265cf0ac9d2a17921791642f2b0cdd2c/src/main/java/de/florianmichael/viafabricplus/injection/mixin/fixes/minecraft/item/MixinHeldItemRenderer.java#L50-L60",
-    "kind": "object",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAnimations.kt",
-      "line": 145
-    }
-  },
-  "net.ccbluex.liquidbounce.features.module.modules.render.ModuleAnimations.PushdownAnimation": {
-    "doc": "Based on the [applySwingOffset] but with a different transformation\nduring swing progress to make it look like the [PushdownAnimation] from LiquidBounce Legacy.\n\nThis animation is not the same as the original, but it is similar.",
-    "kind": "object",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAnimations.kt",
-      "line": 163
-    }
-  },
-  "net.ccbluex.liquidbounce.features.module.modules.render.ModuleAnimations.airWalker": {
-    "doc": "if true, the walk animation will also be applied in the air.",
-    "kind": "property",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAnimations.kt",
-      "line": 107
-    }
-  },
-  "net.ccbluex.liquidbounce.features.module.modules.render.ModuleAnimations.blockAnimationChoice": {
-    "doc": "A choice that allows the user to choose the animation that will be used during the blocking\nof a sword.\nThis choice is only used when the [ModuleSwordBlock] module is enabled.",
-    "kind": "property",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAnimations.kt",
-      "line": 78
-    }
-  },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleAntiBlind": {
     "doc": "AntiBlind module\n\nProtects you from potentially annoying screen effects that block your view.",
     "kind": "object",
@@ -8942,6 +8894,54 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleZoom.kt",
       "line": 41
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.render.animations.ModuleAnimations": {
+    "doc": "Animations module\n\nThis module affects item animations. It allows the user to customize the animation.\nIf you are looking forward to contribute to this module, please name your animation with a reasonable name.\nDo not name them after clients or yourself.\nPlease credit from where you got the animation from and make sure they are willing to contribute.\nIf they are not willing to contribute, please do not add the animation to this module.",
+    "kind": "object",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/animations/ModuleAnimations.kt",
+      "line": 46
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.render.animations.ModuleAnimations.AnimationMode": {
+    "doc": "A choice that aims to transform the held item transformation during the swing progress.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/animations/ModuleAnimations.kt",
+      "line": 130
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.render.animations.ModuleAnimations.OneSevenAnimation": {
+    "doc": "This animation is based on the 1.7 animation. It is the closest to the original animation\nif not altered by the user.\n\nThis animation is used in the ViaFabricPlus project.\nhttps://github.com/ViaVersion/ViaFabricPlus/blob/9eb2adf6265cf0ac9d2a17921791642f2b0cdd2c/src/main/java/de/florianmichael/viafabricplus/injection/mixin/fixes/minecraft/item/MixinHeldItemRenderer.java#L50-L60",
+    "kind": "object",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/animations/ModuleAnimations.kt",
+      "line": 156
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.render.animations.ModuleAnimations.PushdownAnimation": {
+    "doc": "Based on the [applySwingOffset] but with a different transformation\nduring swing progress to make it look like the [PushdownAnimation] from LiquidBounce Legacy.\n\nThis animation is not the same as the original, but it is similar.",
+    "kind": "object",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/animations/ModuleAnimations.kt",
+      "line": 174
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.render.animations.ModuleAnimations.airWalker": {
+    "doc": "if true, the walk animation will also be applied in the air.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/animations/ModuleAnimations.kt",
+      "line": 116
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.render.animations.ModuleAnimations.swingAnimation": {
+    "doc": "A choice that allows the user to choose the animation that will be used during the blocking\nof a sword.\nThis choice is only used when the [ModuleSwordBlock] module is enabled.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/animations/ModuleAnimations.kt",
+      "line": 82
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.cameraclip.ModuleCameraClip": {
@@ -11438,7 +11438,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 583
+      "line": 584
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawCustomMesh": {
@@ -11468,7 +11468,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 469
+      "line": 470
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawLine": [

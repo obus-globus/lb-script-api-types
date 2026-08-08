@@ -14,7 +14,7 @@ import type { LocalPlayer } from '../../../../../net/minecraft/client/player/Loc
 /**
  * @param blitPipeline should use `core/screenquad` for drawing
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/dde6d7a0018da1394636c7c45dd551020f020f23/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/OverlayShaderRenderer.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/OverlayShaderRenderer.kt:34}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/OverlayShaderRenderer.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/OverlayShaderRenderer.kt:34}
  */
 export abstract class OverlayShaderRenderer extends Object implements MinecraftShortcuts {
     constructor(name: string, blitPipeline: RenderPipeline, useDepth: boolean, needDefaultUniforms: boolean)

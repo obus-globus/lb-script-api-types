@@ -48,5 +48,6 @@ export class Http2MultiplexCodecBuilder extends AbstractHttp2ConnectionHandlerBu
     maxReservedStreams(): number;
     maxReservedStreams(arg0: number): Http2MultiplexCodecBuilder;
     validateHeaders(arg0: boolean): Http2MultiplexCodecBuilder;
+    validateRequiredPseudoHeaders(arg0: boolean): Http2MultiplexCodecBuilder;
     withUpgradeStreamHandler(arg0: ChannelHandler): Http2MultiplexCodecBuilder;
 }

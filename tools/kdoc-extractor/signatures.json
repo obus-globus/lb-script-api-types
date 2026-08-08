@@ -41323,174 +41323,6 @@
         }
       }
     ],
-    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleAnimations.AnimationMode.applySwingOffset": [
-      {
-        "params": [
-          {
-            "name": "matrices",
-            "type": "PoseStack",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "arm",
-            "type": "HumanoidArm",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "swingProgress",
-            "type": "Float",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAnimations.kt",
-          "line": 124
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleAnimations.AnimationMode.constructor": [
-      {
-        "params": [
-          {
-            "name": "name",
-            "type": "String",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAnimations.kt",
-          "line": 119
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleAnimations.AnimationMode.transform": [
-      {
-        "params": [
-          {
-            "name": "matrices",
-            "type": "PoseStack",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "arm",
-            "type": "HumanoidArm",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "equipProgress",
-            "type": "Float",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "swingProgress",
-            "type": "Float",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAnimations.kt",
-          "line": 134
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleAnimations.EquipOffset.Ignores.constructor": [
-      {
-        "params": [
-          {
-            "name": "tag",
-            "type": "String",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAnimations.kt",
-          "line": 95
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleAnimations.OneSevenAnimation.transform": [
-      {
-        "params": [
-          {
-            "name": "matrices",
-            "type": "PoseStack",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "arm",
-            "type": "HumanoidArm",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "equipProgress",
-            "type": "Float",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "swingProgress",
-            "type": "Float",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAnimations.kt",
-          "line": 150
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleAnimations.PushdownAnimation.transform": [
-      {
-        "params": [
-          {
-            "name": "matrices",
-            "type": "PoseStack",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "arm",
-            "type": "HumanoidArm",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "equipProgress",
-            "type": "Float",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "swingProgress",
-            "type": "Float",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAnimations.kt",
-          "line": 165
-        }
-      }
-    ],
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleAntiBlind.canRender": [
       {
         "params": [
@@ -45694,6 +45526,458 @@
         }
       }
     ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.animations.ModuleAnimations.AnimationMode.applySwingOffset": [
+      {
+        "params": [
+          {
+            "name": "matrices",
+            "type": "PoseStack",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "arm",
+            "type": "HumanoidArm",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "swingProgress",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/animations/ModuleAnimations.kt",
+          "line": 135
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.animations.ModuleAnimations.AnimationMode.constructor": [
+      {
+        "params": [
+          {
+            "name": "name",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/animations/ModuleAnimations.kt",
+          "line": 130
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.animations.ModuleAnimations.AnimationMode.transform": [
+      {
+        "params": [
+          {
+            "name": "matrices",
+            "type": "PoseStack",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "arm",
+            "type": "HumanoidArm",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "equipProgress",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "swingProgress",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/animations/ModuleAnimations.kt",
+          "line": 145
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.animations.ModuleAnimations.AvatarAnimation.transform": [
+      {
+        "params": [
+          {
+            "name": "matrices",
+            "type": "PoseStack",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "arm",
+            "type": "HumanoidArm",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "equipProgress",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "swingProgress",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/animations/ModuleAnimations.kt",
+          "line": 255
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.animations.ModuleAnimations.DortwareAnimation.transform": [
+      {
+        "params": [
+          {
+            "name": "matrices",
+            "type": "PoseStack",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "arm",
+            "type": "HumanoidArm",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "equipProgress",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "swingProgress",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/animations/ModuleAnimations.kt",
+          "line": 288
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.animations.ModuleAnimations.EquipOffset.Ignores.constructor": [
+      {
+        "params": [
+          {
+            "name": "tag",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/animations/ModuleAnimations.kt",
+          "line": 104
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.animations.ModuleAnimations.ExhibitionAnimation.transform": [
+      {
+        "params": [
+          {
+            "name": "matrices",
+            "type": "PoseStack",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "arm",
+            "type": "HumanoidArm",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "equipProgress",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "swingProgress",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/animations/ModuleAnimations.kt",
+          "line": 221
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.animations.ModuleAnimations.OneSevenAnimation.transform": [
+      {
+        "params": [
+          {
+            "name": "matrices",
+            "type": "PoseStack",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "arm",
+            "type": "HumanoidArm",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "equipProgress",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "swingProgress",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/animations/ModuleAnimations.kt",
+          "line": 161
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.animations.ModuleAnimations.PushdownAnimation.transform": [
+      {
+        "params": [
+          {
+            "name": "matrices",
+            "type": "PoseStack",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "arm",
+            "type": "HumanoidArm",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "equipProgress",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "swingProgress",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/animations/ModuleAnimations.kt",
+          "line": 176
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.animations.ModuleAnimations.SigmaAnimation.transform": [
+      {
+        "params": [
+          {
+            "name": "matrices",
+            "type": "PoseStack",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "arm",
+            "type": "HumanoidArm",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "equipProgress",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "swingProgress",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/animations/ModuleAnimations.kt",
+          "line": 194
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.animations.SwingAnimations.Mode.constructor": [
+      {
+        "params": [
+          {
+            "name": "tag",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/animations/SwingAnimations.kt",
+          "line": 35
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.animations.SwingAnimations.applySwing": [
+      {
+        "params": [
+          {
+            "name": "poseStack",
+            "type": "PoseStack",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "swing",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "arm",
+            "type": "HumanoidArm",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/animations/SwingAnimations.kt",
+          "line": 56
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.animations.SwingAnimations.applySwingOffset": [
+      {
+        "params": [
+          {
+            "name": "poseStack",
+            "type": "PoseStack",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "arm",
+            "type": "HumanoidArm",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "swing",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/animations/SwingAnimations.kt",
+          "line": 145
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.animations.SwingAnimations.fSin": [
+      {
+        "params": [
+          {
+            "name": "v",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/animations/SwingAnimations.kt",
+          "line": 41
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.animations.SwingAnimations.fSqrt": [
+      {
+        "params": [
+          {
+            "name": "v",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/animations/SwingAnimations.kt",
+          "line": 42
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.animations.SwingAnimations.onRenderItem": [
+      {
+        "params": [
+          {
+            "name": "player",
+            "type": "AbstractClientPlayer",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "hand",
+            "type": "InteractionHand",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "swingProgress",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "poseStack",
+            "type": "PoseStack",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/animations/SwingAnimations.kt",
+          "line": 45
+        }
+      }
+    ],
     "net.ccbluex.liquidbounce.features.module.modules.render.cameraclip.ModuleCameraClip.ScrollAdjust.canPerformScroll": [
       {
         "params": [],
@@ -46715,7 +46999,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hitfx/HitFXRegistry.kt",
-          "line": 69
+          "line": 79
         }
       }
     ],
@@ -46732,7 +47016,7 @@
         "returns": "Array<SoundEvent>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hitfx/HitFXRegistry.kt",
-          "line": 83
+          "line": 93
         }
       }
     ],
@@ -47838,6 +48122,85 @@
         },
         "isExtension": true,
         "receiver": "Vec3"
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.wings.WingsMode.constructor": [
+      {
+        "params": [
+          {
+            "name": "name",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/wings/WingsMode.kt",
+          "line": 39
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.wings.WingsMode.drawWings": [
+      {
+        "params": [
+          {
+            "name": "isHurt",
+            "type": "Boolean",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "bodyRot",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "shifting",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/wings/WingsMode.kt",
+          "line": 51
+        },
+        "isExtension": true,
+        "receiver": "WorldRenderEnvironment"
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.wings.modes.WingsLines.drawWings": [
+      {
+        "params": [
+          {
+            "name": "isHurt",
+            "type": "Boolean",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "bodyRot",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "shifting",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/wings/modes/WingsLines.kt",
+          "line": 53
+        },
+        "isExtension": true,
+        "receiver": "WorldRenderEnvironment"
       }
     ],
     "net.ccbluex.liquidbounce.features.module.modules.world.ModuleAirPlace.canPlayerPlaceAt": [
@@ -66167,7 +66530,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 560
+          "line": 561
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -66198,7 +66561,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 583
+          "line": 584
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -66358,7 +66721,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 469
+          "line": 470
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -66401,7 +66764,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 501
+          "line": 502
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -66438,7 +66801,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 597
+          "line": 598
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -66686,6 +67049,12 @@
             "type": "Color4b?",
             "nullable": true,
             "vararg": false
+          },
+          {
+            "name": "noDepthTest",
+            "type": "Boolean",
+            "nullable": false,
+            "vararg": false
           }
         ],
         "returns": null,
@@ -66728,7 +67097,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 543
+          "line": 544
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
