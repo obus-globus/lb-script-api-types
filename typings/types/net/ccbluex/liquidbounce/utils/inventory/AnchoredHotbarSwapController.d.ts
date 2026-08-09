@@ -14,7 +14,7 @@ import type { Component } from '../../../../../net/minecraft/network/chat/Compon
  * - swap selected inventory items into one fixed hotbar slot
  * - restore anchor after no active switching for {@link swapDelayProvider} ticks
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/AnchoredHotbarSwapController.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/AnchoredHotbarSwapController.kt:33}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/AnchoredHotbarSwapController.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/AnchoredHotbarSwapController.kt:33}
  */
 export class AnchoredHotbarSwapController extends Object implements EventListener {
     constructor(owner: EventListener, inventoryConstraints: InventoryConstraints, swapDelayProvider: () => number, anchorHotbarSlotResolver: () => HotbarItemSlot)
@@ -39,7 +39,7 @@ export class AnchoredHotbarSwapController extends Object implements EventListene
     /**
      * Clear a pending swap request when no inventory swap is needed this tick.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/AnchoredHotbarSwapController.kt#L65 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/AnchoredHotbarSwapController.kt:65}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/AnchoredHotbarSwapController.kt#L65 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/AnchoredHotbarSwapController.kt:65}
      */
     clearRequestedSwap(): void;
     parent(): EventListener | null;
@@ -48,7 +48,7 @@ export class AnchoredHotbarSwapController extends Object implements EventListene
      *
      * Call this whenever the desired item is currently in inventory (not hotbar).
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/AnchoredHotbarSwapController.kt#L57 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/AnchoredHotbarSwapController.kt:57}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/AnchoredHotbarSwapController.kt#L57 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/AnchoredHotbarSwapController.kt:57}
      */
     requestSwapFromInventory(sourceSlot: ItemSlot): void;
     /**
@@ -56,7 +56,7 @@ export class AnchoredHotbarSwapController extends Object implements EventListene
      *
      * Intended for module/feature disable paths.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/AnchoredHotbarSwapController.kt#L85 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/AnchoredHotbarSwapController.kt:85}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/AnchoredHotbarSwapController.kt#L85 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/AnchoredHotbarSwapController.kt:85}
      */
     reset(): void;
     /**
@@ -64,7 +64,7 @@ export class AnchoredHotbarSwapController extends Object implements EventListene
      *
      * Call this while your module is actively using the temporarily swapped item.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/AnchoredHotbarSwapController.kt#L74 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/AnchoredHotbarSwapController.kt:74}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/AnchoredHotbarSwapController.kt#L74 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/AnchoredHotbarSwapController.kt:74}
      */
     touchActiveSwitching(): void;
     unregister(): void;

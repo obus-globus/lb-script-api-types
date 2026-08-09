@@ -16,22 +16,22 @@ export class ClientRenderPipelines extends Object {
     /**
      * @see RenderPipelines.LINES_TRANSLUCENT
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L227 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:227}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L226 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:226}
      */
     static LinesWithWidth: RenderPipeline;
     /**
      * @see RenderPipelines.ENTITY_OUTLINE_BLIT
      * @see RenderPipelines.OUTLINE_SNIPPET
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L443 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:443}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L451 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:451}
      */
     static Outline: RenderPipeline;
-    static TexQuads: RenderPipeline;
     static lines(noDepthTest: boolean): RenderPipeline;
     static outlineQuads(useColor: boolean): RenderPipeline;
     static quads(noDepthTest: boolean): RenderPipeline;
     static relativeLines(useColor: boolean): RenderPipeline;
     static relativeQuads(useColor: boolean): RenderPipeline;
+    static texQuads(noDepthTest: boolean): RenderPipeline;
     static triangleStrip(noDepthTest: boolean): RenderPipeline;
     static triangles(noDepthTest: boolean): RenderPipeline;
     Blend: RenderPipeline;
@@ -60,7 +60,8 @@ export class ClientRenderPipelines extends Object {
     // private QuadsRelativeToCameraNoColor: RenderPipeline;
     // private RoundedRect: RenderPipeline;
     // private RoundedRectNoDepthTest: RenderPipeline;
-    TexQuads: RenderPipeline;
+    // private TexQuads: RenderPipeline;
+    // private TexQuadsDepthTested: RenderPipeline;
     // private TriangleStrip: RenderPipeline;
     // private TriangleStripNoDepthTest: RenderPipeline;
     // private Triangles: RenderPipeline;
@@ -74,13 +75,14 @@ export class ClientRenderPipelines extends Object {
     /**
      * Precompile
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L530 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:530}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L538 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:538}
      */
     precompile(): void;
     quads(noDepthTest: boolean): RenderPipeline;
     relativeLines(useColor: boolean): RenderPipeline;
     relativeQuads(useColor: boolean): RenderPipeline;
     roundedRect(noDepthTest: boolean): RenderPipeline;
+    texQuads(noDepthTest: boolean): RenderPipeline;
     triangleStrip(noDepthTest: boolean): RenderPipeline;
     triangles(noDepthTest: boolean): RenderPipeline;
 }

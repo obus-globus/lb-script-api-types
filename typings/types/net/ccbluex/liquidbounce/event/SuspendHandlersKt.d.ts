@@ -15,7 +15,7 @@ export class SuspendHandlersKt extends Object {
     /**
      * Registers an event hook for events of type {@link T} and launches a sequence
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt:42}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt:42}
      */
     static sequenceHandler<T extends Event>(self: EventListener, priority: number, dispatcher: CoroutineDispatcher | null, onCancellation: (() => void) | null, eventHandler: (param0: CoroutineScope, param1: T) => void): EventHook<T>;
     /**
@@ -27,13 +27,13 @@ export class SuspendHandlersKt extends Object {
      * @param priority the priority of the event hook, defaults to 0.
      * @param behavior the behavior of the event handler, defaults to {@link SuspendHandlerBehavior.Parallel}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt:78}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt:78}
      */
     static suspendHandler<T extends Event>(self: EventListener, context: CoroutineContext, priority: number, behavior: SuspendHandlerBehavior, handler: (param0: CoroutineScope, param1: T) => void): EventHook<T>;
     /**
      * Registers a repeatable sequence which repeats the execution of code on {@link GameTickEvent}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt:58}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt:58}
      */
     static tickHandler(self: EventListener, dispatcher: CoroutineDispatcher | null, onCancellation: (() => void) | null, eventHandler: (param0: CoroutineScope) => void): EventHook<GameTickEvent>;
     /**
@@ -46,7 +46,7 @@ export class SuspendHandlersKt extends Object {
      * @param priority The priority of the event hook.
      * @param predicate The predicate to match the event. If it throws a {@link Throwable}, the continuation will be resumed with {@link Result.failure}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt#L136 | src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt:136}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt#L136 | src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt:136}
      */
     static waitMatches<T extends Event>(self: EventListener, eventClass: Class<T>, priority: number, predicate: (param0: T) => boolean): T;
     static waitMatches<T extends Event>(self: EventListener, priority: number, predicate: (param0: T) => boolean): T;

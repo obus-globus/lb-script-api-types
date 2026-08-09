@@ -11106,7 +11106,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-      "line": 141
+      "line": 140
     }
   },
   "net.ccbluex.liquidbounce.render.ClientRenderPipelines.JCEF_COMPATIBLE_BLEND": {
@@ -11114,7 +11114,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-      "line": 49
+      "line": 48
     }
   },
   "net.ccbluex.liquidbounce.render.ClientRenderPipelines.LinesWithWidth": {
@@ -11125,7 +11125,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-      "line": 227
+      "line": 226
     }
   },
   "net.ccbluex.liquidbounce.render.ClientRenderPipelines.Outline": {
@@ -11137,7 +11137,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-      "line": 443
+      "line": 451
     }
   },
   "net.ccbluex.liquidbounce.render.ClientRenderPipelines.OutlineQuads": {
@@ -11149,7 +11149,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-      "line": 334
+      "line": 332
     }
   },
   "net.ccbluex.liquidbounce.render.ClientRenderPipelines.precompile": {
@@ -11157,7 +11157,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-      "line": 530
+      "line": 538
     }
   },
   "net.ccbluex.liquidbounce.render.ClientVertexFormats.GRADIENT_CIRCLE": {
@@ -11410,7 +11410,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 333
+      "line": 407
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawBoxSide": {
@@ -11418,7 +11418,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 395
+      "line": 469
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawBoxSides": {
@@ -11426,7 +11426,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 411
+      "line": 485
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawCircleOutline": {
@@ -11438,7 +11438,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 584
+      "line": 658
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawCustomMesh": {
@@ -11468,7 +11468,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 470
+      "line": 544
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawLine": [
@@ -11524,7 +11524,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 427
+      "line": 501
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.start": {
@@ -12069,7 +12069,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt",
-      "line": 74
+      "line": 78
     }
   },
   "net.ccbluex.liquidbounce.render.gui.GuiCircleLutAtlas": {
@@ -12145,7 +12145,15 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt",
-      "line": 116
+      "line": 109
+    }
+  },
+  "net.ccbluex.liquidbounce.render.gui.ItemTextureRenderer.findItemIdForBlock": {
+    "doc": "Resolve a block id to the item used for its icon. Most blocks expose this\ndirectly through [net.minecraft.world.level.block.Block.asItem]. Wall variants do not have their own\nBlockItem, so their item id is the corresponding non-wall variant.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt",
+      "line": 384
     }
   },
   "net.ccbluex.liquidbounce.render.gui.ItemTextureRenderer.render": {
@@ -12156,7 +12164,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt",
-      "line": 157
+      "line": 156
     }
   },
   "net.ccbluex.liquidbounce.render.gui.ItemTextureRenderer.renderItemToAtlas": {
@@ -12167,7 +12175,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt",
-      "line": 212
+      "line": 337
     }
   },
   "net.ccbluex.liquidbounce.render.mesh.MeshBuildScope": {
@@ -14005,7 +14013,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt",
-      "line": 410
+      "line": 415
     }
   },
   "net.ccbluex.liquidbounce.utils.block.placer.BlockPlacer.blocks": {
@@ -14013,7 +14021,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt",
-      "line": 143
+      "line": 142
     }
   },
   "net.ccbluex.liquidbounce.utils.block.placer.BlockPlacer.clear": {
@@ -14021,23 +14029,23 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt",
-      "line": 430
+      "line": 435
     }
   },
   "net.ccbluex.liquidbounce.utils.block.placer.BlockPlacer.constructFailResult": {
-    "doc": "Construct a center hit result when the raytrace result is invalid.\nThis can make the module rotations wrong as well as place a bit outside the range,\nbut it makes the placements a lot more reliable and works on most servers.",
+    "doc": "Construct a hit result at the point selected by target finding when the raytrace result is invalid.\nThis can make the module rotations wrong as well as place a bit outside the range,\nbut it makes the placements a lot more reliable and works on most servers.",
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt",
-      "line": 90
+      "line": 89
     }
   },
   "net.ccbluex.liquidbounce.utils.block.placer.BlockPlacer.disable": {
-    "doc": "THis should be called when the module using this placer is disabled.",
+    "doc": "This should be called when the module using this placer is disabled.",
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt",
-      "line": 438
+      "line": 443
     }
   },
   "net.ccbluex.liquidbounce.utils.block.placer.BlockPlacer.placedRenderer": {
@@ -14045,7 +14053,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt",
-      "line": 130
+      "line": 129
     }
   },
   "net.ccbluex.liquidbounce.utils.block.placer.BlockPlacer.removeFromQueue": {
@@ -14056,7 +14064,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt",
-      "line": 422
+      "line": 427
     }
   },
   "net.ccbluex.liquidbounce.utils.block.placer.BlockPlacer.sneak": {
@@ -14064,7 +14072,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt",
-      "line": 96
+      "line": 95
     }
   },
   "net.ccbluex.liquidbounce.utils.block.placer.BlockPlacer.targetRenderer": {
@@ -14072,7 +14080,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt",
-      "line": 125
+      "line": 124
     }
   },
   "net.ccbluex.liquidbounce.utils.block.placer.BlockPlacer.update": {
@@ -14080,7 +14088,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt",
-      "line": 387
+      "line": 392
     }
   },
   "net.ccbluex.liquidbounce.utils.block.placer.CrystalDestroyFeature.onDisable": {
@@ -14156,7 +14164,15 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/TargetFinding.kt",
-      "line": 361
+      "line": 363
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.block.targetfinding.BlockPlacementTarget.interactionPoint": {
+    "doc": "Exact point on [interactedBlockPos] selected by target finding.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/TargetFinding.kt",
+      "line": 372
     }
   },
   "net.ccbluex.liquidbounce.utils.block.targetfinding.BlockPlacementTarget.minPlacementY": {
@@ -14164,7 +14180,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/TargetFinding.kt",
-      "line": 371
+      "line": 377
     }
   },
   "net.ccbluex.liquidbounce.utils.block.targetfinding.BlockPlacementTarget.placedBlock": {
@@ -14172,7 +14188,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/TargetFinding.kt",
-      "line": 365
+      "line": 367
     }
   },
   "net.ccbluex.liquidbounce.utils.block.targetfinding.BlockPlacementTargetFindingOptions": {
@@ -17185,7 +17201,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-      "line": 432
+      "line": 454
     }
   },
   "net.ccbluex.liquidbounce.utils.render.File.readNativeImage": {
@@ -17193,7 +17209,16 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-      "line": 438
+      "line": 460
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.render.GpuBuffer.read": {
+    "doc": "@receiver Should have flag [GpuBuffer.USAGE_MAP_READ]",
+    "returns": "A [ByteBuffer] allocated with [MemoryUtil]",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
+      "line": 134
     }
   },
   "net.ccbluex.liquidbounce.utils.render.GpuTexture.toNativeImage": {
@@ -17204,7 +17229,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-      "line": 243
+      "line": 265
     }
   },
   "net.ccbluex.liquidbounce.utils.render.InputStream.readNativeImage": {
@@ -17212,7 +17237,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-      "line": 427
+      "line": 449
     }
   },
   "net.ccbluex.liquidbounce.utils.render.NativeImage.registerTexture": {
@@ -17220,7 +17245,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-      "line": 418
+      "line": 440
     }
   },
   "net.ccbluex.liquidbounce.utils.render.TargetRenderer": {
@@ -17228,7 +17253,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/TargetRenderer.kt",
-      "line": 84
+      "line": 85
     }
   },
   "net.ccbluex.liquidbounce.utils.render.VerticesSetupHandler": {

@@ -20,7 +20,6 @@ import type { Priority } from '../../../../../../net/ccbluex/liquidbounce/utils/
 import type { PlacementRenderer } from '../../../../../../net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { BlockPos$MutableBlockPos } from '../../../../../../net/minecraft/core/BlockPos$MutableBlockPos.d.ts'
-import type { Direction } from '../../../../../../net/minecraft/core/Direction.d.ts'
 import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { BlockHitResult } from '../../../../../../net/minecraft/world/phys/BlockHitResult.d.ts'
@@ -31,16 +30,16 @@ export class BlockPlacer extends ValueGroup implements EventListener {
      * Stores all block positions where blocks should be placed paired with a boolean that is `true`
      * if the position was added by {@link support}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt#L143 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt:143}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt#L142 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt:142}
      */
     readonly blocks: JavaMap<any, any>;
     getBlocks(): JavaMap<any, any>;
     /**
-     * Construct a center hit result when the raytrace result is invalid.
+     * Construct a hit result at the point selected by target finding when the raytrace result is invalid.
      * This can make the module rotations wrong as well as place a bit outside the range,
      * but it makes the placements a lot more reliable and works on most servers.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt#L90 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt:90}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt#L89 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt:89}
      */
     readonly constructFailResult: boolean;
     readonly cooldown: { start: number; endInclusive: number; step: number };
@@ -57,7 +56,7 @@ export class BlockPlacer extends ValueGroup implements EventListener {
     /**
      * Renders all placements.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt#L130 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt:130}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt#L129 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt:129}
      */
     readonly placedRenderer: PlacementRenderer;
     readonly priority: Priority;
@@ -75,7 +74,7 @@ export class BlockPlacer extends ValueGroup implements EventListener {
     /**
      * Renders all tracked positions that are queued to be placed.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt#L125 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt:125}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt#L124 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt:124}
      */
     readonly targetRenderer: PlacementRenderer;
     // private targetUpdater: EventHook<RotationUpdateEvent>;
@@ -88,7 +87,7 @@ export class BlockPlacer extends ValueGroup implements EventListener {
      * @param pos The position, can be {@link BlockPos.MutableBlockPos}.
      * @param update Whether the renderer should update the culling.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt#L410 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt:410}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt#L415 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt:415}
      */
     addToQueue(pos: BlockPos, update: boolean, isSupport: boolean): void;
     canReach(pos: BlockPos, rotation: Rotation): boolean;
@@ -96,13 +95,13 @@ export class BlockPlacer extends ValueGroup implements EventListener {
     /**
      * Discards all blocks.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt#L430 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt:430}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt#L435 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt:435}
      */
     clear(): void;
     /**
-     * THis should be called when the module using this placer is disabled.
+     * This should be called when the module using this placer is disabled.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt#L438 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt:438}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt#L443 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt:443}
      */
     disable(): void;
     doPlacement(isSupport: boolean, pos: BlockPos, placementTarget: BlockPlacementTarget): void;
@@ -110,13 +109,13 @@ export class BlockPlacer extends ValueGroup implements EventListener {
     // private isBlocked(posAsLong: number): boolean;
     isDone(): boolean;
     parent(): EventListener | null;
-    // private raytraceTarget(pos: BlockPos, providedRotation: Rotation, direction: Direction): BlockHitResult | null;
+    // private raytraceTarget(placementTarget: BlockPlacementTarget, providedRotation: Rotation): BlockHitResult | null;
     /**
      * Removes a block from the queue.
      *
      * @param pos The position, can be {@link BlockPos.MutableBlockPos}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt#L422 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt:422}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt#L427 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt:427}
      */
     removeFromQueue(pos: BlockPos): void;
     // private reset(): void;
@@ -125,7 +124,7 @@ export class BlockPlacer extends ValueGroup implements EventListener {
     /**
      * Removes all positions that are not in {@link positions} and adds all that are not in the queue.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt#L387 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt:387}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt#L392 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt:392}
      */
     update(positions: BlockPos[]): void;
 }

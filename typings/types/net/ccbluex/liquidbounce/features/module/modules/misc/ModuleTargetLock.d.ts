@@ -10,7 +10,7 @@ import type { AbstractClientPlayer } from '../../../../../../../net/minecraft/cl
  * Locks on to a target and prevents targeting other entities,
  * either {@link Temporary}ly on attack or by {@link Filter}ing by username.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleTargetLock.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleTargetLock.kt:42}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleTargetLock.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleTargetLock.kt:42}
  */
 export class ModuleTargetLock extends ClientModule {
     static INSTANCE: ModuleTargetLock;

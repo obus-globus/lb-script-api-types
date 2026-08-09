@@ -12,7 +12,7 @@ import type { ItemStack } from '../../../../../../../../net/minecraft/world/item
  * Represents the "id" of {@link ItemStack}.
  * {@link ItemStack}s with same {@link Item} and {@link DataComponentPatch} can be merged.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/177e1582d6f271ebe95911c43b6987f81dca51f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/CleanupPlan.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/CleanupPlan.kt:41}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/CleanupPlan.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/CleanupPlan.kt:41}
  */
 export class ItemAndComponents extends Record implements TypedInstance<Item> {
     constructor(item: Item, componentsPatch?: DataComponentPatch)

@@ -1636,7 +1636,6 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleItemTags$ClusteredEntitiesRenderState": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleItemTags$ClusteredEntitiesRenderState").ModuleItemTags$ClusteredEntitiesRenderState;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleItemTags$MergeMode": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleItemTags$MergeMode").ModuleItemTags$MergeMode;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleItemTags$Shulker": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleItemTags$Shulker").ModuleItemTags$Shulker;
-    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleJumpEffect": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleJumpEffect").ModuleJumpEffect;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleLogoffSpot": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleLogoffSpot").ModuleLogoffSpot;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleLogoffSpot$LoggedOffPlayer": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleLogoffSpot$LoggedOffPlayer").ModuleLogoffSpot$LoggedOffPlayer;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleMobOwners": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleMobOwners").ModuleMobOwners;
@@ -1747,6 +1746,12 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.features.module.modules.render.hitfx.HitFXRegistry$Companion": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/hitfx/HitFXRegistry$Companion").HitFXRegistry$Companion;
     "net.ccbluex.liquidbounce.features.module.modules.render.hitfx.ModuleHitFX": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/hitfx/ModuleHitFX").ModuleHitFX;
     "net.ccbluex.liquidbounce.features.module.modules.render.hitfx.ModuleHitFX$Particle": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/hitfx/ModuleHitFX$Particle").ModuleHitFX$Particle;
+    "net.ccbluex.liquidbounce.features.module.modules.render.jumpeffect.JumpEffectColorSettings": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/jumpeffect/JumpEffectColorSettings").JumpEffectColorSettings;
+    "net.ccbluex.liquidbounce.features.module.modules.render.jumpeffect.JumpEffectMode": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/jumpeffect/JumpEffectMode").JumpEffectMode;
+    "net.ccbluex.liquidbounce.features.module.modules.render.jumpeffect.ModuleJumpEffect": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/jumpeffect/ModuleJumpEffect").ModuleJumpEffect;
+    "net.ccbluex.liquidbounce.features.module.modules.render.jumpeffect.modes.JumpEffectImage": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/jumpeffect/modes/JumpEffectImage").JumpEffectImage;
+    "net.ccbluex.liquidbounce.features.module.modules.render.jumpeffect.modes.JumpEffectImage$PresetTexture": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/jumpeffect/modes/JumpEffectImage$PresetTexture").JumpEffectImage$PresetTexture;
+    "net.ccbluex.liquidbounce.features.module.modules.render.jumpeffect.modes.JumpEffectSimple": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/jumpeffect/modes/JumpEffectSimple").JumpEffectSimple;
     "net.ccbluex.liquidbounce.features.module.modules.render.murdermystery.ModuleMurderMystery": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/murdermystery/ModuleMurderMystery").ModuleMurderMystery;
     "net.ccbluex.liquidbounce.features.module.modules.render.murdermystery.MurderMysteryAssassinationMode": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/murdermystery/MurderMysteryAssassinationMode").MurderMysteryAssassinationMode;
     "net.ccbluex.liquidbounce.features.module.modules.render.murdermystery.MurderMysteryClassicMode": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/murdermystery/MurderMysteryClassicMode").MurderMysteryClassicMode;
@@ -2122,6 +2127,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.mcef.utils.MultiPartDownloader$RetryablePartDownloadException": typeof import("../types/net/ccbluex/liquidbounce/mcef/utils/MultiPartDownloader$RetryablePartDownloadException").MultiPartDownloader$RetryablePartDownloadException;
     "net.ccbluex.liquidbounce.render.AbstractFontRenderer": typeof import("../types/net/ccbluex/liquidbounce/render/AbstractFontRenderer").AbstractFontRenderer;
     "net.ccbluex.liquidbounce.render.AbstractFontRenderer$DrawParameters": typeof import("../types/net/ccbluex/liquidbounce/render/AbstractFontRenderer$DrawParameters").AbstractFontRenderer$DrawParameters;
+    "net.ccbluex.liquidbounce.render.AnchorPoint": typeof import("../types/net/ccbluex/liquidbounce/render/AnchorPoint").AnchorPoint;
     "net.ccbluex.liquidbounce.render.BoxVertexIterator": typeof import("../types/net/ccbluex/liquidbounce/render/BoxVertexIterator").BoxVertexIterator;
     "net.ccbluex.liquidbounce.render.BoxVertexIteratorKt": typeof import("../types/net/ccbluex/liquidbounce/render/BoxVertexIteratorKt").BoxVertexIteratorKt;
     "net.ccbluex.liquidbounce.render.CachedMeshStorage": typeof import("../types/net/ccbluex/liquidbounce/render/CachedMeshStorage").CachedMeshStorage;
@@ -2214,6 +2220,9 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.render.engine.type.Vec3f": typeof import("../types/net/ccbluex/liquidbounce/render/engine/type/Vec3f").Vec3f;
     "net.ccbluex.liquidbounce.render.engine.type.Vec3f$Companion": typeof import("../types/net/ccbluex/liquidbounce/render/engine/type/Vec3f$Companion").Vec3f$Companion;
     "net.ccbluex.liquidbounce.render.gui.Atlas": typeof import("../types/net/ccbluex/liquidbounce/render/gui/Atlas").Atlas;
+    "net.ccbluex.liquidbounce.render.gui.AtlasLookup$Found": typeof import("../types/net/ccbluex/liquidbounce/render/gui/AtlasLookup$Found").AtlasLookup$Found;
+    "net.ccbluex.liquidbounce.render.gui.AtlasLookup$Missing": typeof import("../types/net/ccbluex/liquidbounce/render/gui/AtlasLookup$Missing").AtlasLookup$Missing;
+    "net.ccbluex.liquidbounce.render.gui.AtlasLookup$NotReady": typeof import("../types/net/ccbluex/liquidbounce/render/gui/AtlasLookup$NotReady").AtlasLookup$NotReady;
     "net.ccbluex.liquidbounce.render.gui.GuiCircleLutAtlas": typeof import("../types/net/ccbluex/liquidbounce/render/gui/GuiCircleLutAtlas").GuiCircleLutAtlas;
     "net.ccbluex.liquidbounce.render.gui.GuiCircleLutAtlas$Allocation": typeof import("../types/net/ccbluex/liquidbounce/render/gui/GuiCircleLutAtlas$Allocation").GuiCircleLutAtlas$Allocation;
     "net.ccbluex.liquidbounce.render.gui.GuiOverlapRearranger": typeof import("../types/net/ccbluex/liquidbounce/render/gui/GuiOverlapRearranger").GuiOverlapRearranger;
