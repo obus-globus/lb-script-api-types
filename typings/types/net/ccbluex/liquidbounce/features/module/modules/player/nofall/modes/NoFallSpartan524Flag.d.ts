@@ -8,7 +8,7 @@ import type { NoFallMode } from '../../../../../../../../../net/ccbluex/liquidbo
  * @testedOn minecraft.vagdedes.com
  * @note it gives you 6 flags for 50 blocks, which isn't enough to get kicked
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallSpartan524Flag.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallSpartan524Flag.kt:31}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallSpartan524Flag.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallSpartan524Flag.kt:31}
  */
 export class NoFallSpartan524Flag extends NoFallMode {
     static Companion: Tagged$Companion;

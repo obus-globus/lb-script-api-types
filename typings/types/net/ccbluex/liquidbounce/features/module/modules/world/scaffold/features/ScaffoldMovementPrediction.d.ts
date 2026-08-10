@@ -19,7 +19,7 @@ export class ScaffoldMovementPrediction extends ToggleableValueGroup {
      *
      * @returns the predicted pos or `null` if the prediction failed
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/features/ScaffoldMovementPrediction.kt#L96 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/features/ScaffoldMovementPrediction.kt:96}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/features/ScaffoldMovementPrediction.kt#L96 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/features/ScaffoldMovementPrediction.kt:96}
      */
     getPredictedPlacementPos(optimalLine: Line | null): Vec3 | null;
     // private getWarmupBlendFactor(): number;

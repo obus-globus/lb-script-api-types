@@ -29,7 +29,7 @@ export class CustomStandaloneMinecraftScreen extends Screen implements AutoClose
     /**
      * Disable {@link Screen.extractBlurredBackground}
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/impl/CustomStandaloneMinecraftScreen.kt#L73 | src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/impl/CustomStandaloneMinecraftScreen.kt:73}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/impl/CustomStandaloneMinecraftScreen.kt#L73 | src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/impl/CustomStandaloneMinecraftScreen.kt:73}
      */
     isInGameUi(): boolean;
     isPauseScreen(): boolean;

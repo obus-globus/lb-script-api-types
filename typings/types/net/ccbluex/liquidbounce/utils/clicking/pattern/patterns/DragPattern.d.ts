@@ -13,7 +13,7 @@ import type { ClickPattern } from '../../../../../../../net/ccbluex/liquidbounce
  * This is very hard to implement as I am not able to do this method myself,
  * so I will simply guess how it works.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/pattern/patterns/DragPattern.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/pattern/patterns/DragPattern.kt:36}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/pattern/patterns/DragPattern.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/pattern/patterns/DragPattern.kt:36}
  */
 export class DragPattern extends Object implements ClickPattern {
     static INSTANCE: DragPattern;

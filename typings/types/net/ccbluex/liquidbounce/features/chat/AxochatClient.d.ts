@@ -30,13 +30,13 @@ export class AxochatClient extends Object {
     /**
      * Handle incoming message of websocket
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L348 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:348}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L348 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:348}
      */
     handlePlainMessage(message: string): void;
     /**
      * Login to web socket via JWT
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L252 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:252}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L252 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:252}
      */
     loginViaJwt(token: string): void;
     /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
@@ -44,25 +44,25 @@ export class AxochatClient extends Object {
     /**
      * Request Mojang authentication details for login
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L212 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:212}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L212 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:212}
      */
     requestMojangLogin(): void;
     /**
      * Send chat message to server
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L217 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:217}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L217 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:217}
      */
     sendMessage(message: string): void;
     /**
      * Send packet to server
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L260 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:260}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L260 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:260}
      */
     sendPacket(packet: AxochatPacket$C2S): void;
     /**
      * Send private chat message to server
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L222 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:222}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L222 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:222}
      */
     sendPrivateMessage(receiver: string, message: string): void;
     /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */

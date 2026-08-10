@@ -5422,7 +5422,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleGUICloser.kt",
-      "line": 39
+      "line": 38
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.misc.ModuleInventoryTracker": {
@@ -9326,7 +9326,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleSurround.kt",
-      "line": 66
+      "line": 67
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.ModuleSurround.DEFAULT_BLOCKS": {
@@ -9334,7 +9334,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleSurround.kt",
-      "line": 71
+      "line": 72
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.ModuleSurround.Protect": {
@@ -9342,7 +9342,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleSurround.kt",
-      "line": 97
+      "line": 98
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.ModuleSurround.Protect.ExtraLayer": {
@@ -9350,7 +9350,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleSurround.kt",
-      "line": 118
+      "line": 119
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.ModuleSurround.Protect.ExtraLayer.corners": {
@@ -9358,7 +9358,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleSurround.kt",
-      "line": 133
+      "line": 134
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.ModuleSurround.Protect.minDestroyProgress": {
@@ -9366,7 +9366,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleSurround.kt",
-      "line": 102
+      "line": 103
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.ModuleSurround.Protect.tickHandler": {
@@ -9374,7 +9374,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleSurround.kt",
-      "line": 146
+      "line": 147
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.ModuleSurround.addExtraLayer": {
@@ -9382,7 +9382,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleSurround.kt",
-      "line": 205
+      "line": 206
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.ModuleSurround.disableOn": {
@@ -9390,7 +9390,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleSurround.kt",
-      "line": 83
+      "line": 84
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.ModuleSurround.instant": {
@@ -9398,7 +9398,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleSurround.kt",
-      "line": 90
+      "line": 91
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.ModuleTimer": {
@@ -9715,7 +9715,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt",
-      "line": 70
+      "line": 71
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.packetmine.ModulePacketMine._target": {
@@ -9723,7 +9723,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt",
-      "line": 135
+      "line": 136
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.packetmine.ModulePacketMine.postBreakDelay": {
@@ -9734,7 +9734,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/ModulePacketMine.kt",
-      "line": 112
+      "line": 113
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.packetmine.tool.MineToolMode": {
@@ -13570,7 +13570,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 433
+      "line": 434
     }
   },
   "net.ccbluex.liquidbounce.utils.block.AABB.isBlockAtPosition": {
@@ -13578,7 +13578,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 411
+      "line": 412
     }
   },
   "net.ccbluex.liquidbounce.utils.block.AbstractBlockLocationTracker": {
@@ -13674,7 +13674,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 660
+      "line": 661
     }
   },
   "net.ccbluex.liquidbounce.utils.block.BlockGetter.raycast": {
@@ -13682,7 +13682,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 315
+      "line": 316
     }
   },
   "net.ccbluex.liquidbounce.utils.block.BlockPos.isBlockedByEntitiesReturnCrystal": {
@@ -13690,7 +13690,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 731
+      "line": 732
     }
   },
   "net.ccbluex.liquidbounce.utils.block.BlockPos.searchBedLayer": {
@@ -13698,7 +13698,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 248
+      "line": 249
     }
   },
   "net.ccbluex.liquidbounce.utils.block.BlockPos.searchLayer": {
@@ -13707,7 +13707,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 274
+      "line": 275
     }
   },
   "net.ccbluex.liquidbounce.utils.block.CachedBlockPosSpheres.rangeLong": {
@@ -13829,7 +13829,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 211
+      "line": 212
     }
   },
   "net.ccbluex.liquidbounce.utils.block.Vec3.searchBlocksInRangeSorted": {
@@ -13838,7 +13838,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 232
+      "line": 233
     }
   },
   "net.ccbluex.liquidbounce.utils.block.aStarShortestPath": {
@@ -13870,7 +13870,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 588
+      "line": 589
     }
   },
   "net.ccbluex.liquidbounce.utils.block.doPlacement": {
@@ -13881,7 +13881,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 519
+      "line": 520
     }
   },
   "net.ccbluex.liquidbounce.utils.block.handleActionsOnAccept": {
@@ -13893,7 +13893,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 565
+      "line": 566
     }
   },
   "net.ccbluex.liquidbounce.utils.block.hole.Hole.OneByOne": {
@@ -13933,7 +13933,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 158
+      "line": 159
     }
   },
   "net.ccbluex.liquidbounce.utils.block.isInteractable": {
@@ -13941,7 +13941,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 674
+      "line": 675
     }
   },
   "net.ccbluex.liquidbounce.utils.block.liquid.TimedPickupTracker": {
@@ -13993,7 +13993,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 193
+      "line": 194
     }
   },
   "net.ccbluex.liquidbounce.utils.block.outlineBox": {
@@ -14001,7 +14001,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 166
+      "line": 167
     }
   },
   "net.ccbluex.liquidbounce.utils.block.placer.BlockPlacer.addToQueue": {
@@ -14966,7 +14966,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
-      "line": 847
+      "line": 845
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.CachedPlayerSimulation": {
@@ -14982,7 +14982,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
-      "line": 398
+      "line": 396
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.Entity.doesCollideAt": {
@@ -14990,7 +14990,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
-      "line": 771
+      "line": 769
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.Entity.doesNotCollideBelow": {
@@ -14998,7 +14998,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
-      "line": 759
+      "line": 757
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.Entity.wouldFallIntoVoid": {
@@ -15006,7 +15006,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
-      "line": 778
+      "line": 776
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.FallingPlayer.CollisionResult": {
@@ -15108,7 +15108,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
-      "line": 133
+      "line": 134
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.LivingEntity.getActualHealth": {
@@ -15116,7 +15116,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
-      "line": 720
+      "line": 718
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.LivingEntity.getBlockedDamage": {
@@ -15127,7 +15127,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
-      "line": 142
+      "line": 143
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.LivingEntity.getDamageFromExplosion": {
@@ -15139,7 +15139,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
-      "line": 582
+      "line": 580
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.LivingEntity.getEffectiveDamage": {
@@ -15154,7 +15154,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
-      "line": 452
+      "line": 450
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.LivingEntity.getExplosionDamageFromEntity": {
@@ -15168,7 +15168,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
-      "line": 535
+      "line": 533
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.LivingEntity.getExposureToExplosion": {
@@ -15179,7 +15179,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
-      "line": 633
+      "line": 631
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.LocalPlayer.canStep": {
@@ -15187,7 +15187,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
-      "line": 309
+      "line": 307
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.MinecartTNT.getMaximumPotentialExplosionPower": {
@@ -15198,7 +15198,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
-      "line": 708
+      "line": 706
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.PlayerSimulationCache.updatePlayerCache": {
@@ -15463,7 +15463,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
-      "line": 212
+      "line": 210
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.immuneToMagmaBlocks": {
@@ -15474,7 +15474,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
-      "line": 837
+      "line": 835
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.interactBlock": {
@@ -15527,7 +15527,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
-      "line": 251
+      "line": 249
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.resolveStepUpMovement": {
@@ -16359,7 +16359,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/item/armor/ArmorComparator.kt",
-      "line": 101
+      "line": 100
     }
   },
   "net.ccbluex.liquidbounce.utils.item.armor.ArmorComparator.getDamageFactor": {
@@ -16370,7 +16370,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/item/armor/ArmorComparator.kt",
-      "line": 156
+      "line": 155
     }
   },
   "net.ccbluex.liquidbounce.utils.item.armor.ArmorEvaluation.EXPECTED_DAMAGE": {
@@ -16386,7 +16386,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/item/armor/ArmorComparator.kt",
-      "line": 56
+      "line": 55
     }
   },
   "net.ccbluex.liquidbounce.utils.item.armor.ArmorPiece": {

@@ -15,7 +15,7 @@ export class ItemCategorizationsKt extends Object {
     /**
      * @see Items.SHIELD
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemCategorizations.kt#L118 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemCategorizations.kt:118}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemCategorizations.kt#L118 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemCategorizations.kt:118}
      */
     static getBlocksAttacksComponent(paramarg0: DataComponentGetter): BlocksAttacks;
     static getEquipmentSlot(paramarg0: DataComponentGetter): EquipmentSlot;
@@ -35,7 +35,7 @@ export class ItemCategorizationsKt extends Object {
     /**
      * Replacement of 1.21.4 `MiningToolItem`
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemCategorizations.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemCategorizations.kt:78}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemCategorizations.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemCategorizations.kt:78}
      */
     static isMiningTool(paramarg0: TypedInstance<Item>): boolean;
     static isPickaxe(paramarg0: TypedInstance<Item>): boolean;

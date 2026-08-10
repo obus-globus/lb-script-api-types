@@ -9,7 +9,7 @@ import type { PacketEvent } from '../../../../../../../../../net/ccbluex/liquidb
  * @anticheatVersion 7.14.5
  * @testedOn mc.loyisa.cn
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/longjump/modes/Matrix7145FlagLongJump.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/longjump/modes/Matrix7145FlagLongJump.kt:40}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/longjump/modes/Matrix7145FlagLongJump.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/longjump/modes/Matrix7145FlagLongJump.kt:40}
  */
 export class Matrix7145FlagLongJump extends Mode {
     static Companion: Tagged$Companion;

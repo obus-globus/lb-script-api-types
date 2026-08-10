@@ -39,7 +39,7 @@ export class FallingPlayer extends Object {
      * Checks whether a future movement tick starts with the player's feet in {@link targetPos} before landing.
      * This matches the block-position lookup in Minecraft 26.2 {@code LivingEntity.onClimbable()}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt#L198 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt:198}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt#L198 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt:198}
      */
     willStartTickInBlockBeforeCollision(targetPos: BlockPos, ticks: number, forceDescending: boolean): boolean;
 }

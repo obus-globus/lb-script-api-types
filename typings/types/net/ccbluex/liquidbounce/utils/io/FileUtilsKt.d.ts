@@ -14,7 +14,7 @@ export class FileUtilsKt extends Object {
      *
      * @returns The number of bytes skipped.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/utils/io/FileUtils.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/utils/io/FileUtils.kt:40}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/utils/io/FileUtils.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/utils/io/FileUtils.kt:40}
      */
     static skipLine(self: RandomAccessFile): number;
 }

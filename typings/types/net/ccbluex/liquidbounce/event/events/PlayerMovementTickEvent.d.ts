@@ -1,7 +1,7 @@
-import type { Event } from '../../../../../net/ccbluex/liquidbounce/event/Event.d.ts'
+import type { CancellableEvent } from '../../../../../net/ccbluex/liquidbounce/event/CancellableEvent.d.ts'
 /**
  * Fires during the player's movement-tick phase, as movement is applied.
  */
-export class PlayerMovementTickEvent extends Event {
-    static INSTANCE: PlayerMovementTickEvent;
+export class PlayerMovementTickEvent extends CancellableEvent {
+    constructor()
 }

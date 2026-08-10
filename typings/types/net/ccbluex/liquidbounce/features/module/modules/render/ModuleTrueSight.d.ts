@@ -7,7 +7,7 @@ import type { LivingEntityRenderState } from '../../../../../../../net/minecraft
  *
  * Allows you to see invisible objects and entities.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleTrueSight.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleTrueSight.kt:35}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleTrueSight.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleTrueSight.kt:35}
  */
 export class ModuleTrueSight extends ClientModule {
     static INSTANCE: ModuleTrueSight;

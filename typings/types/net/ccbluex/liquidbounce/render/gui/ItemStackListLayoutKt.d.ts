@@ -4,7 +4,7 @@ export class ItemStackListLayoutKt extends Object {
     /**
      * @see StatsScreen.ItemStatisticsList.SLOT_BG_SIZE
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemStackListLayout.kt#L30 | src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemStackListLayout.kt:30}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemStackListLayout.kt#L30 | src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemStackListLayout.kt:30}
      */
     static ITEM_STACK_SLOT_SIZE: number;
 }

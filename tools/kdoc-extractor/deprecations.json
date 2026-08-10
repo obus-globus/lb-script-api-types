@@ -19,6 +19,7 @@
     },
     "net.ccbluex.liquidbounce.event.events.WorldRenderEvent.matrixStack": {
       "message": "For scripts only",
+      "replaceWith": "poseStack",
       "kind": "property",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt",

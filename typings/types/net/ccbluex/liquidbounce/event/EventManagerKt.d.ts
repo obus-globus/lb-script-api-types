@@ -6,7 +6,7 @@ export class EventManagerKt extends Object {
     /**
      * Contains all classes of events. Used to create lookup tables ahead of time
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt#L152 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt:152}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt#L152 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt:152}
      */
     static ALL_EVENT_CLASSES: Class<Event>[];
     static eventFlow<E extends Event>(): SharedFlow<E>;

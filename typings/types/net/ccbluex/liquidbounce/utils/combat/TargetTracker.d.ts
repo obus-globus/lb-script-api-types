@@ -8,7 +8,7 @@ import type { LivingEntity } from '../../../../../net/minecraft/world/entity/Liv
 /**
  * A target tracker to choose the best enemy to attack
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt:49}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/TargetTracker.kt:49}
  */
 export class TargetTracker extends TargetSelector {
     constructor(defaultPriority: TargetPriority, range: RangedValue<Object>)

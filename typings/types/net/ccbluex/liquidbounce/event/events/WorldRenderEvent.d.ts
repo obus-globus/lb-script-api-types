@@ -14,7 +14,7 @@ export class WorldRenderEvent extends Event implements AutoCloseable {
     readonly camera: Camera;
     readonly environment: WorldRenderEnvironment;
     /**
-     * @deprecated For scripts only
+     * @deprecated For scripts only Use `poseStack`.
      */
     readonly matrixStack: PoseStack;
     readonly partialTicks: number;

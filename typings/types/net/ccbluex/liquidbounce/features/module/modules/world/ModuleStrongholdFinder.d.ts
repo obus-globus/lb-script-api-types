@@ -24,7 +24,7 @@ import type { Block } from '../../../../../../../net/minecraft/world/level/block
  *
  * {@link Article}(https://github.com/Ninjabrain1/Ninjabrain-Bot/blob/main/triangulation.pdf)
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleStrongholdFinder.kt#L80 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleStrongholdFinder.kt:80}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleStrongholdFinder.kt#L80 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleStrongholdFinder.kt:80}
  */
 export class ModuleStrongholdFinder extends ClientModule {
     static INSTANCE: ModuleStrongholdFinder;
@@ -37,6 +37,8 @@ export class ModuleStrongholdFinder extends ClientModule {
     // private /*not mapped: */ getHypothesisCount(): number;
     // private interactedItemHandler: EventHook<PlayerInteractedItemEvent>;
     // private lastAnnouncedCandidate: ChunkPos | null;
+    // private maxEyeSpawnDistance: number;
+    // private /*not mapped: */ getMaxEyeSpawnDistance(): number;
     // private maxSampleAgeTicks: number;
     // private /*not mapped: */ getMaxSampleAgeTicks(): number;
     // private measurements: EyeMeasurement[];

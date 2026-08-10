@@ -13,7 +13,7 @@ import type { ScaffoldTellyFeature$Mode } from '../../../../../../../../../../ne
  *
  * @see ModuleScaffold
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/techniques/normal/ScaffoldTellyFeature.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/techniques/normal/ScaffoldTellyFeature.kt:42}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/techniques/normal/ScaffoldTellyFeature.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/techniques/normal/ScaffoldTellyFeature.kt:42}
  */
 export class ScaffoldTellyFeature extends ToggleableValueGroup {
     static INSTANCE: ScaffoldTellyFeature;
@@ -25,7 +25,7 @@ export class ScaffoldTellyFeature extends ToggleableValueGroup {
     /**
      * New val to determine if the player is telly bridging
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/techniques/normal/ScaffoldTellyFeature.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/techniques/normal/ScaffoldTellyFeature.kt:50}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/techniques/normal/ScaffoldTellyFeature.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/techniques/normal/ScaffoldTellyFeature.kt:50}
      */
     /*not mapped: */ isTellyBridging(): boolean;
     // private jumpTicks: number;

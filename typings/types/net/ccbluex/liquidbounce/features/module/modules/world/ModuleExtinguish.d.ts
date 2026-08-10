@@ -13,7 +13,7 @@ import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.
  *
  * Automatically extinguishes yourself when you're burning.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleExtinguish.kt#L53 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleExtinguish.kt:53}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleExtinguish.kt#L53 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleExtinguish.kt:53}
  */
 export class ModuleExtinguish extends ClientModule {
     static INSTANCE: ModuleExtinguish;

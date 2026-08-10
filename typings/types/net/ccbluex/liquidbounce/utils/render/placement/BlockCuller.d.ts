@@ -22,7 +22,7 @@ export class BlockCuller extends Object {
      *
      * @param pos The position of the block, in long value.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/BlockCuller.kt#L74 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/BlockCuller.kt:74}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/BlockCuller.kt#L74 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/BlockCuller.kt:74}
      */
     getCullData(pos: number): number;
     hashCode(): number;

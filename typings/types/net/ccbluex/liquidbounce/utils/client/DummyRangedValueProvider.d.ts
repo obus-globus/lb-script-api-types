@@ -5,7 +5,7 @@ import type { RangedValueProvider } from '../../../../../net/ccbluex/liquidbounc
 /**
  * Just returns the {@link value}; expects the value to be already registered elsewhere.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RangedValueProvider.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RangedValueProvider.kt:42}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RangedValueProvider.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RangedValueProvider.kt:42}
  */
 export class DummyRangedValueProvider extends Object implements RangedValueProvider {
     constructor(value: RangedValue<Object>)

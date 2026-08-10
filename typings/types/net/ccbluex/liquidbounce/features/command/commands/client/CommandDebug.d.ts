@@ -12,7 +12,7 @@ import type { Command$Factory } from '../../../../../../../net/ccbluex/liquidbou
  * This command will create a JSON file with all the information
  * and send it to the CCBlueX Paste API.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandDebug.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandDebug.kt:61}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandDebug.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandDebug.kt:61}
  */
 export class CommandDebug extends Object implements Command$Factory {
     static INSTANCE: CommandDebug;

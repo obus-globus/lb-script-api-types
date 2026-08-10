@@ -5,7 +5,7 @@ import type { BrowserAccelerationFlags$Companion } from '../../../../../net/ccbl
  * Is In Beta is a flag to prevent it from being used by default on a supported
  * but not tested system.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserAccelerationFlags.kt#L27 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserAccelerationFlags.kt:27}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserAccelerationFlags.kt#L27 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserAccelerationFlags.kt:27}
  */
 export class BrowserAccelerationFlags extends Object {
     static Companion: BrowserAccelerationFlags$Companion;

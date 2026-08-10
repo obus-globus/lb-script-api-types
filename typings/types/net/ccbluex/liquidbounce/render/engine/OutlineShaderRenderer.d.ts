@@ -4,7 +4,7 @@ import type { OverlayShaderRenderer } from '../../../../../net/ccbluex/liquidbou
  *
  * @see net.ccbluex.liquidbounce.event.events.DrawOutlinesEvent
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/8fc1f12b34c50f483c3b3446c45e8bc1de58e20c/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/OutlineShaderRenderer.kt#L30 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/OutlineShaderRenderer.kt:30}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/OutlineShaderRenderer.kt#L30 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/OutlineShaderRenderer.kt:30}
  * @deprecated Disabled this feature
  */
 export class OutlineShaderRenderer extends OverlayShaderRenderer {
