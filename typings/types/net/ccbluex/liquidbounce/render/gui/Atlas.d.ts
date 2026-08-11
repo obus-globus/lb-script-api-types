@@ -7,7 +7,7 @@ export class Atlas extends Object {
      * Contains aliases. For example `minecraft:blue_wall_banner` -> `minecraft:wall_banner` which is necessary since
      * `minecraft:blue_wall_banner` has no texture.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt:78}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt:78}
      */
     readonly aliasMap: JavaMap<Identifier, Identifier>;
     readonly images: JavaMap<Identifier, number[]>;

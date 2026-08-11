@@ -621,6 +621,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.features.global.GlobalSettingsRichPresenceKt": typeof import("../types/net/ccbluex/liquidbounce/features/global/GlobalSettingsRichPresenceKt").GlobalSettingsRichPresenceKt;
     "net.ccbluex.liquidbounce.features.global.GlobalSettingsRichPresenceKt$WhenMappings": typeof import("../types/net/ccbluex/liquidbounce/features/global/GlobalSettingsRichPresenceKt$WhenMappings").GlobalSettingsRichPresenceKt$WhenMappings;
     "net.ccbluex.liquidbounce.features.global.GlobalSettingsTarget": typeof import("../types/net/ccbluex/liquidbounce/features/global/GlobalSettingsTarget").GlobalSettingsTarget;
+    "net.ccbluex.liquidbounce.features.global.TranslationCacheKey": typeof import("../types/net/ccbluex/liquidbounce/features/global/TranslationCacheKey").TranslationCacheKey;
     "net.ccbluex.liquidbounce.features.marketplace.MarketplaceManager": typeof import("../types/net/ccbluex/liquidbounce/features/marketplace/MarketplaceManager").MarketplaceManager;
     "net.ccbluex.liquidbounce.features.marketplace.SubscribedItem": typeof import("../types/net/ccbluex/liquidbounce/features/marketplace/SubscribedItem").SubscribedItem;
     "net.ccbluex.liquidbounce.features.misc.FriendManager": typeof import("../types/net/ccbluex/liquidbounce/features/misc/FriendManager").FriendManager;

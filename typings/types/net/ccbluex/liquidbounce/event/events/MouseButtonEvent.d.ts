@@ -10,6 +10,14 @@ export class MouseButtonEvent extends Event implements WebSocketEvent {
     constructor(key: InputConstants$Key, button: number, action: number, mods: number, screen: Screen | null)
     readonly action: number;
     readonly button: number;
+    /*not mapped: */ isLeftButton(): boolean;
+    /*not mapped: */ isLeftClick(): boolean;
+    /*not mapped: */ isMiddleButton(): boolean;
+    /*not mapped: */ isMiddleClick(): boolean;
+    /*not mapped: */ isPressed(): boolean;
+    /*not mapped: */ isReleased(): boolean;
+    /*not mapped: */ isRightButton(): boolean;
+    /*not mapped: */ isRightClick(): boolean;
     readonly key: InputConstants$Key;
     readonly mods: number;
     readonly screen: Screen | null;

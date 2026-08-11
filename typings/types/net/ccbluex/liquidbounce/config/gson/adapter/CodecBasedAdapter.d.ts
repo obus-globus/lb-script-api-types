@@ -13,7 +13,7 @@ import type { RegistryOps } from '../../../../../../net/minecraft/resources/Regi
 /**
  * [Fabric Documentation](https://docs.fabricmc.net/1.21/develop/codecs)
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/adapter/CodecBasedAdapter.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/adapter/CodecBasedAdapter.kt:43}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/adapter/CodecBasedAdapter.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/adapter/CodecBasedAdapter.kt:43}
  */
 export class CodecBasedAdapter<T extends unknown> extends Object implements JsonDeserializer<T>, JsonSerializer<T> {
     static COMPONENT: CodecBasedAdapter<Component>;
@@ -21,7 +21,7 @@ export class CodecBasedAdapter<T extends unknown> extends Object implements Json
     /**
      * For ItemStack
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/adapter/CodecBasedAdapter.kt#L74 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/adapter/CodecBasedAdapter.kt:74}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/adapter/CodecBasedAdapter.kt#L74 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/adapter/CodecBasedAdapter.kt:74}
      */
     static DATA_COMPONENT_PATCH: CodecBasedAdapter<DataComponentPatch>;
     static TRANSLATED_COMPONENT: JsonSerializer<Component>;

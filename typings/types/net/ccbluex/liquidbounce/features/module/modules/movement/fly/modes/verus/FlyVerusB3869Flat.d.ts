@@ -13,7 +13,7 @@ import type { PlayerJumpEvent } from '../../../../../../../../../../net/ccbluex/
  * @testedOn anticheat-test
  * @note it can rarely flag once | needs 1.9x or above
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/verus/FlyVerusB3869Flat.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/verus/FlyVerusB3869Flat.kt:46}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/verus/FlyVerusB3869Flat.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/verus/FlyVerusB3869Flat.kt:46}
  */
 export class FlyVerusB3869Flat extends Mode {
     static Companion: Tagged$Companion;

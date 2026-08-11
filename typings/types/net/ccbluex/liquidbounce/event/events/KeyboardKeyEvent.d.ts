@@ -9,6 +9,9 @@ import type { Screen } from '../../../../../net/minecraft/client/gui/screens/Scr
 export class KeyboardKeyEvent extends Event implements WebSocketEvent {
     constructor(key: InputConstants$Key, keyCode: number, scanCode: number, action: number, mods: number, screen: Screen | null)
     readonly action: number;
+    /*not mapped: */ isPressed(): boolean;
+    /*not mapped: */ isReleased(): boolean;
+    /*not mapped: */ isRepeat(): boolean;
     readonly key: InputConstants$Key;
     readonly keyCode: number;
     readonly mods: number;

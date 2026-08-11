@@ -954,7 +954,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-      "line": 113
+      "line": 112
     }
   },
   "net.ccbluex.liquidbounce.config.types.group.ValueGroup.baseKey": {
@@ -962,7 +962,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-      "line": 120
+      "line": 119
     }
   },
   "net.ccbluex.liquidbounce.config.types.group.ValueGroup.constructBaseKey": {
@@ -970,7 +970,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-      "line": 159
+      "line": 158
     }
   },
   "net.ccbluex.liquidbounce.config.types.group.ValueGroup.json": {
@@ -989,7 +989,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-      "line": 107
+      "line": 106
     }
   },
   "net.ccbluex.liquidbounce.config.types.group.ValueGroup.restore": {
@@ -997,7 +997,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-      "line": 294
+      "line": 293
     }
   },
   "net.ccbluex.liquidbounce.config.types.group.ValueGroup.updateChildState": {
@@ -1013,7 +1013,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-      "line": 132
+      "line": 131
     }
   },
   "net.ccbluex.liquidbounce.config.types.list.ListValue.innerType": {
@@ -2580,7 +2580,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandUsername.kt",
-      "line": 38
+      "line": 37
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.creative.CommandItemEnchant": {
@@ -2755,7 +2755,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/module/teleport/CommandPlayerTeleport.kt",
-      "line": 37
+      "line": 36
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.module.teleport.CommandTeleport": {
@@ -3145,7 +3145,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt",
-      "line": 282
+      "line": 281
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.ModuleAimbot": {
@@ -5693,7 +5693,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/betterchat/ModuleBetterChat.kt",
-      "line": 221
+      "line": 216
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.misc.debugrecorder.modes.DebugCombatRecorder": {
@@ -6018,7 +6018,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleSnapTap.kt",
-      "line": 38
+      "line": 37
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleSneak": {
@@ -6457,7 +6457,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/ModuleInventoryMove.kt",
-      "line": 61
+      "line": 60
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.inventorymove.ModuleInventoryMove.allowsMovementOverride": {
@@ -6465,7 +6465,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/ModuleInventoryMove.kt",
-      "line": 70
+      "line": 69
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.inventorymove.ModuleInventoryMove.doNotAllowClicking": {
@@ -6473,7 +6473,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/ModuleInventoryMove.kt",
-      "line": 96
+      "line": 95
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.inventorymove.ModuleInventoryMove.isInCreativeSearchField": {
@@ -6481,7 +6481,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/ModuleInventoryMove.kt",
-      "line": 179
+      "line": 178
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.inventorymove.features.InventoryMoveBlinkFeature.maximumTime": {
@@ -8563,7 +8563,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt",
-      "line": 73
+      "line": 72
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleFreeCam.CameraInteract": {
@@ -8571,7 +8571,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt",
-      "line": 81
+      "line": 80
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleFreeCam.CancelOn": {
@@ -8579,7 +8579,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt",
-      "line": 93
+      "line": 92
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleFreeCam.Navigation": {
@@ -8587,7 +8587,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt",
-      "line": 130
+      "line": 129
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleFreeCam.Navigation.calculateGoalPosition": {
@@ -8596,7 +8596,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt",
-      "line": 149
+      "line": 148
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleFreeCam.Navigation.createNavigationContext": {
@@ -8604,7 +8604,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt",
-      "line": 140
+      "line": 139
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleFullBright": {
@@ -8949,7 +8949,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/cameraclip/ModuleCameraClip.kt",
-      "line": 44
+      "line": 43
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.cameraclip.ScrollAdjustOptions": {
@@ -8957,7 +8957,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/cameraclip/ScrollAdjustValueGroup.kt",
-      "line": 34
+      "line": 33
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.esp.ModuleESP": {
@@ -10471,7 +10471,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/input/InputListener.kt",
-      "line": 42
+      "line": 41
     }
   },
   "net.ccbluex.liquidbounce.integration.interop.ClientInteropServer": {
@@ -10567,7 +10567,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/ProxyFunctions.kt",
-      "line": 49
+      "line": 48
     }
   },
   "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.Route.postMarketplaceItemReview": {
@@ -10675,7 +10675,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/ScreenManager.kt",
-      "line": 72
+      "line": 73
     }
   },
   "net.ccbluex.liquidbounce.integration.screen.screenAcknowledgement": {
@@ -10683,7 +10683,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/ScreenManager.kt",
-      "line": 88
+      "line": 89
     }
   },
   "net.ccbluex.liquidbounce.integration.task.MCEFProgressForwarder.onComplete": {
@@ -15563,7 +15563,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 51
+      "line": 50
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputBind.<init>": [
@@ -15577,7 +15577,7 @@
       "kind": "constructor",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-        "line": 65
+        "line": 64
       }
     },
     {
@@ -15588,7 +15588,7 @@
       "kind": "constructor",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-        "line": 73
+        "line": 72
       }
     }
   ],
@@ -15600,7 +15600,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 205
+      "line": 203
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputBind.Modifier.isActive": {
@@ -15608,7 +15608,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 242
+      "line": 240
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputBind.Modifier.isAnyPressed": {
@@ -15616,7 +15616,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 247
+      "line": 245
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputBind.Modifier.platformRenderName": {
@@ -15624,7 +15624,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 252
+      "line": 250
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputBind.getNewState": {
@@ -15637,7 +15637,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 181
+      "line": 180
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputBind.isUnbound": {
@@ -15646,7 +15646,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 96
+      "line": 95
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputBind.keyName": {
@@ -15655,20 +15655,20 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 81
+      "line": 80
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputBind.matchesKey": {
     "doc": "Determines if the specified key matches the bound key.",
     "params": {
-      "keyCode": "The GLFW key code to check.",
+      "keyCode": "The InputConstants key code to check.",
       "scanCode": "The scan code to check."
     },
     "returns": "True if the key code or scan code matches the bound key, false otherwise.",
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 106
+      "line": 105
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputBind.matchesKeyPress": {
@@ -15676,7 +15676,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 137
+      "line": 136
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputBind.matchesKeyRelease": {
@@ -15684,7 +15684,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 146
+      "line": 145
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputBind.matchesModifiers": {
@@ -15693,12 +15693,12 @@
       "mods": "The bits of modifiers."
     },
     "see": [
-      "org.lwjgl.glfw.GLFW"
+      "InputConstants"
     ],
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 130
+      "line": 129
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputBind.matchesMouse": {
@@ -15710,7 +15710,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 120
+      "line": 119
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputBind.matchesMousePress": {
@@ -15718,7 +15718,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 157
+      "line": 156
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputBind.matchesMouseRelease": {
@@ -15726,7 +15726,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 166
+      "line": 165
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputConstants.Key.toModifierOrNull": {
@@ -15743,31 +15743,31 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt",
-      "line": 35
+      "line": 34
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputTracker.getTimeSinceKeyPress": {
     "doc": "Gets the time elapsed since the specified keyboard key was last pressed.",
     "params": {
-      "keyCode": "The GLFW key code."
+      "keyCode": "The InputConstants key code."
     },
     "returns": "Milliseconds since last press, or Long.MAX_VALUE if never pressed.",
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt",
-      "line": 178
+      "line": 177
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputTracker.getTimeSinceMousePress": {
     "doc": "Gets the time elapsed since the specified mouse button was last pressed.",
     "params": {
-      "button": "The GLFW code of the mouse button."
+      "button": "The InputConstants code of the mouse button."
     },
     "returns": "Milliseconds since last press, or Long.MAX_VALUE if never pressed.",
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt",
-      "line": 150
+      "line": 149
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputTracker.handleMouseAction": {
@@ -15775,19 +15775,19 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt",
-      "line": 114
+      "line": 113
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputTracker.isMouseButtonPressed": {
     "doc": "Checks if the specified mouse button is currently pressed.",
     "params": {
-      "button": "The GLFW code of the mouse button."
+      "button": "The InputConstants code of the mouse button."
     },
     "returns": "True if the mouse button is pressed, false otherwise.",
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt",
-      "line": 130
+      "line": 129
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputTracker.isPressedOnAny": {
@@ -15796,34 +15796,34 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt",
-      "line": 62
+      "line": 61
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputTracker.keyLastPressed": {
-    "doc": "Tracks the last time each keyboard key was pressed.\nMap key is the GLFW key code, value is the timestamp.",
+    "doc": "Tracks the last time each keyboard key was pressed.\nMap key is the InputConstants key code, value is the timestamp.",
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt",
-      "line": 55
+      "line": 54
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputTracker.mouseLastPressed": {
-    "doc": "Tracks the last time each mouse button was pressed.\nArray indices correspond to GLFW mouse button codes.",
+    "doc": "Tracks the last time each mouse button was pressed.\nArray indices correspond to InputConstants mouse button codes.",
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt",
-      "line": 49
+      "line": 48
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputTracker.mouseStates": {
-    "doc": "Tracks the state of each mouse button.\n\n[GLFW.GLFW_RELEASE], [GLFW.GLFW_PRESS] or [GLFW.GLFW_REPEAT]",
+    "doc": "Tracks the state of each mouse button.\n\n[InputConstants.RELEASE], [InputConstants.PRESS] or [InputConstants.REPEAT]",
     "see": [
-      "GLFW"
+      "InputConstants"
     ],
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt",
-      "line": 43
+      "line": 42
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputTracker.pressedOnKeyboard": {
@@ -15832,7 +15832,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt",
-      "line": 70
+      "line": 69
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputTracker.pressedOnMouse": {
@@ -15841,7 +15841,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt",
-      "line": 79
+      "line": 78
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputTracker.timeSinceLastPress": {
@@ -15850,33 +15850,33 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt",
-      "line": 101
+      "line": 100
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputTracker.wasKeyPressedRecently": {
     "doc": "Checks if the specified keyboard key was pressed recently.\nNote: This requires manual tracking via updateKeyPress() since we don't have a keyboard event handler.",
     "params": {
-      "keyCode": "The GLFW key code.",
+      "keyCode": "The InputConstants key code.",
       "withinMs": "The time window in milliseconds to check within."
     },
     "returns": "True if the key was pressed within the specified time, false otherwise.",
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt",
-      "line": 167
+      "line": 166
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputTracker.wasMouseButtonPressedRecently": {
     "doc": "Checks if the specified mouse button was pressed recently.",
     "params": {
-      "button": "The GLFW code of the mouse button.",
+      "button": "The InputConstants code of the mouse button.",
       "withinMs": "The time window in milliseconds to check within."
     },
     "returns": "True if the mouse button was pressed within the specified time, false otherwise.",
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt",
-      "line": 139
+      "line": 138
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputTracker.wasPressedRecently": {
@@ -15888,7 +15888,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputTracker.kt",
-      "line": 88
+      "line": 87
     }
   },
   "net.ccbluex.liquidbounce.utils.input.Value<InputBind>.bind": [
@@ -15897,7 +15897,7 @@
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-        "line": 307
+        "line": 305
       }
     },
     {
@@ -15905,7 +15905,7 @@
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-        "line": 312
+        "line": 310
       }
     }
   ],
@@ -15914,7 +15914,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 318
+      "line": 316
     }
   },
   "net.ccbluex.liquidbounce.utils.input.availableKeyboardKeys": {
@@ -15936,7 +15936,7 @@
     }
   },
   "net.ccbluex.liquidbounce.utils.input.inputByName": {
-    "doc": "Translates a key name to an InputUtil.Key using GLFW key codes.\nIf the name is unrecognized, defaults to NONE.\n\nThe input can be provided in the following formats:\n- Full key name: \"key.mouse.left\", \"key.keyboard.a\", \"key.keyboard.keypad.decimal\"\n- Abbreviated: \"a\" -> \"key.keyboard.a\", \"lshift\" -> \"key.keyboard.left_shift\"",
+    "doc": "Translates a key name to an InputUtil.Key using InputConstants key codes.\nIf the name is unrecognized, defaults to NONE.\n\nThe input can be provided in the following formats:\n- Full key name: \"key.mouse.left\", \"key.keyboard.a\", \"key.keyboard.keypad.decimal\"\n- Abbreviated: \"a\" -> \"key.keyboard.a\", \"lshift\" -> \"key.keyboard.left_shift\"",
     "params": {
       "name": "The key name as a string."
     },

@@ -20,21 +20,21 @@ export class InputBind$Modifier extends Enum<InputBind$Modifier> implements Tagg
     /**
      * Check if any one modifier key is pressed.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L247 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:247}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L245 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:245}
      */
     /*not mapped: */ isAnyPressed(): boolean;
     readonly keyCodes: number[];
     /**
      * Performs the platform (OS) specified render name of a modifier.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L252 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:252}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L250 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:250}
      */
     readonly platformRenderName: string;
     readonly tag: string;
     /**
      * Check if self is active in {@link modifiers} value.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L242 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:242}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L240 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:240}
      */
     isActive(modifiers: number): boolean;
     name(): "SHIFT" | "CONTROL" | "ALT" | "SUPER";

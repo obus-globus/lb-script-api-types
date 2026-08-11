@@ -14,7 +14,7 @@ export class CombatSample extends Record implements TrainingSample {
      * Age in this case is the Entity Age, however, we will use it later to determine
      * the time we have been tracking this entity.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/CombatSample.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/CombatSample.kt:54}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/CombatSample.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/CombatSample.kt:54}
      */
     /*not mapped: */ age(): number;
     /*not mapped: */ currentRotation(): Rotation;
@@ -35,7 +35,7 @@ export class CombatSample extends Record implements TrainingSample {
      * Velocity delta should be in a positive direction,
      * going from the previous rotation to the current rotation.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/CombatSample.kt#L76 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/CombatSample.kt:76}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/CombatSample.kt#L76 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/CombatSample.kt:76}
      */
     /*not mapped: */ previousVelocityDelta(): RotationDelta;
     // private targetDiff: Vec3;
@@ -47,7 +47,7 @@ export class CombatSample extends Record implements TrainingSample {
      * Total delta should be in a positive direction,
      * going from the current rotation to the target rotation.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/CombatSample.kt#L69 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/CombatSample.kt:69}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/CombatSample.kt#L69 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/CombatSample.kt:69}
      */
     /*not mapped: */ totalDelta(): RotationDelta;
     // private velocityDelta: Vec2;

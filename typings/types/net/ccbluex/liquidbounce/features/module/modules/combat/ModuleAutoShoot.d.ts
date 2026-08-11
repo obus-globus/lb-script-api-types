@@ -23,7 +23,7 @@ import type { LivingEntity } from '../../../../../../../net/minecraft/world/enti
  *
  * @author 1zuna
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/4deffb5fa5035b9f495cc60720959e5e40d21400/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleAutoShoot.kt#L68 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleAutoShoot.kt:68}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleAutoShoot.kt#L68 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleAutoShoot.kt:68}
  */
 export class ModuleAutoShoot extends ClientModule {
     static INSTANCE: ModuleAutoShoot;
