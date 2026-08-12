@@ -16,7 +16,7 @@ import type { Vec3 } from '../../../../../../../net/minecraft/world/phys/Vec3.d.
  *
  * Show health changes of entities
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleDamageParticles.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleDamageParticles.kt:46}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleDamageParticles.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleDamageParticles.kt:46}
  */
 export class ModuleDamageParticles extends ClientModule {
     static INSTANCE: ModuleDamageParticles;

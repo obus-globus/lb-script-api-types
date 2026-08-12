@@ -10,7 +10,7 @@ import type { Entity } from '../../../../../../../net/minecraft/world/entity/Ent
  *
  * Shows you from which player a tamable entity or projectile belongs to.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleMobOwners.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleMobOwners.kt:43}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleMobOwners.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleMobOwners.kt:43}
  */
 export class ModuleMobOwners extends ClientModule {
     static INSTANCE: ModuleMobOwners;

@@ -28,7 +28,7 @@ export class GlobalSettingsClientChat extends ToggleableValueGroup {
     /**
      * Overwrites the condition requirement for being in-game
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/features/global/GlobalSettingsClientChat.kt#L287 | src/main/kotlin/net/ccbluex/liquidbounce/features/global/GlobalSettingsClientChat.kt:287}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/features/global/GlobalSettingsClientChat.kt#L287 | src/main/kotlin/net/ccbluex/liquidbounce/features/global/GlobalSettingsClientChat.kt:287}
      */
     readonly running: boolean;
     // private sessionChange: EventHook<SessionEvent>;

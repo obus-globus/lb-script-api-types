@@ -2112,8 +2112,8 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.mcef.cef.MCEFRenderer": typeof import("../types/net/ccbluex/liquidbounce/mcef/cef/MCEFRenderer").MCEFRenderer;
     "net.ccbluex.liquidbounce.mcef.cef.MacAcceleratedPaintBackend": typeof import("../types/net/ccbluex/liquidbounce/mcef/cef/MacAcceleratedPaintBackend").MacAcceleratedPaintBackend;
     "net.ccbluex.liquidbounce.mcef.cef.WindowsAcceleratedPaintBackend": typeof import("../types/net/ccbluex/liquidbounce/mcef/cef/WindowsAcceleratedPaintBackend").WindowsAcceleratedPaintBackend;
+    "net.ccbluex.liquidbounce.mcef.cursor.MCEFCursorHelper": typeof import("../types/net/ccbluex/liquidbounce/mcef/cursor/MCEFCursorHelper").MCEFCursorHelper;
     "net.ccbluex.liquidbounce.mcef.download.MCEFProvidedResourceManager": typeof import("../types/net/ccbluex/liquidbounce/mcef/download/MCEFProvidedResourceManager").MCEFProvidedResourceManager;
-    "net.ccbluex.liquidbounce.mcef.glfw.MCEFGlfwCursorHelper": typeof import("../types/net/ccbluex/liquidbounce/mcef/glfw/MCEFGlfwCursorHelper").MCEFGlfwCursorHelper;
     "net.ccbluex.liquidbounce.mcef.listeners.OkHttpProgressInterceptor": typeof import("../types/net/ccbluex/liquidbounce/mcef/listeners/OkHttpProgressInterceptor").OkHttpProgressInterceptor;
     "net.ccbluex.liquidbounce.mcef.listeners.OkHttpProgressInterceptor$ProgressResponseBody": typeof import("../types/net/ccbluex/liquidbounce/mcef/listeners/OkHttpProgressInterceptor$ProgressResponseBody").OkHttpProgressInterceptor$ProgressResponseBody;
     "net.ccbluex.liquidbounce.mcef.utils.EglUtils": typeof import("../types/net/ccbluex/liquidbounce/mcef/utils/EglUtils").EglUtils;

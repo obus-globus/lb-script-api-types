@@ -10,7 +10,7 @@ import type { Component } from '../../../../../../net/minecraft/network/chat/Com
 /**
  * OAuth client for handling the authentication flow
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt:45}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt:45}
  */
 export class OAuthClient extends Object implements EventListener {
     static INSTANCE: OAuthClient;

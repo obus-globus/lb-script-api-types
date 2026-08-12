@@ -13,7 +13,7 @@ import type { AbstractTexture } from '../../../../net/minecraft/client/renderer/
  *
  * @param renderTarget The render target framebuffer.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L83 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:83}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L83 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:83}
  */
 export class WorldRenderEnvironment extends Object {
     constructor(renderTarget: RenderTarget, poseStack: PoseStack, camera: Camera, batchCollector: BatchCollector)
@@ -28,7 +28,7 @@ export class WorldRenderEnvironment extends Object {
      *
      * Prefer {@link net.ccbluex.liquidbounce.render.drawCustomMesh} for regular use.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L96 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:96}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L96 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:96}
      */
     start(pipeline: RenderPipeline, textures: JavaMap<string, AbstractTexture>, uniforms: JavaMap<string, GpuBufferSlice>): MeshBuildScope;
 }

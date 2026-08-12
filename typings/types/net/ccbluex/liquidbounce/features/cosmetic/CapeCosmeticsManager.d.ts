@@ -12,7 +12,7 @@ import type { Logger } from '../../../../../org/apache/logging/log4j/Logger.d.ts
 /**
  * A cape cosmetic manager
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CapeCosmeticsManager.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CapeCosmeticsManager.kt:41}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CapeCosmeticsManager.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CapeCosmeticsManager.kt:41}
  */
 export class CapeCosmeticsManager extends Object implements EventListener {
     static INSTANCE: CapeCosmeticsManager;
@@ -30,7 +30,7 @@ export class CapeCosmeticsManager extends Object implements EventListener {
      * @param player The player to load the cape for
      * @param callback The callback to call with the cape texture identifier
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CapeCosmeticsManager.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CapeCosmeticsManager.kt:61}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CapeCosmeticsManager.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CapeCosmeticsManager.kt:61}
      */
     loadPlayerCape(player: GameProfile, callback: (param0: Identifier) => void): void;
     parent(): EventListener | null;

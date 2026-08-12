@@ -9,7 +9,7 @@ export class InputBindKt extends Object {
     /**
      * Binds to the given input name.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L305 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:305}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L305 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:305}
      */
     static bind(self: Value<InputBind>, key: InputConstants$Key, action: InputBind$BindAction, modifiers: InputBind$Modifier[]): void;
     static bind(self: Value<InputBind>, name: string): void;
@@ -17,7 +17,7 @@ export class InputBindKt extends Object {
     /**
      * Unbinds the key by setting it to UNKNOWN_KEY.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L316 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:316}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L316 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:316}
      */
     static unbind(self: Value<InputBind>): void;
 }

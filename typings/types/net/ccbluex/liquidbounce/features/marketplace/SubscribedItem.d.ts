@@ -29,7 +29,7 @@ export class SubscribedItem extends Object {
      *
      * This ensures instead of e.g., /marketplace/items/265/1713, it returns /marketplace/items/265/1713/dist
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/SubscribedItem.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/SubscribedItem.kt:55}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/SubscribedItem.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/SubscribedItem.kt:55}
      */
     getInstallationFolder(): File | null;
     /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */

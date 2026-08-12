@@ -6,7 +6,7 @@ import type { PointProcessor } from '../../../../../../../net/ccbluex/liquidboun
  * Lazy Point allows you to set a threshold when the point is going to be updated.
  * If the new point is below this threshold, we return the current point instead
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/point/features/PointProcessorLazy.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/point/features/PointProcessorLazy.kt:32}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/point/features/PointProcessorLazy.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/point/features/PointProcessorLazy.kt:32}
  */
 export class PointProcessorLazy extends PointProcessor {
     constructor(parent: EventListener)

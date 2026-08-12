@@ -9,7 +9,7 @@ import type { BlockPos } from '../../../../../../../../../../net/minecraft/core/
  *
  * If we know it's above the target, why calculate everything for the position?
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/place/conditions/ValidHeightCondition.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/place/conditions/ValidHeightCondition.kt:32}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/place/conditions/ValidHeightCondition.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/place/conditions/ValidHeightCondition.kt:32}
  */
 export class ValidHeightCondition extends Object implements PlacementCondition {
     static INSTANCE: ValidHeightCondition;

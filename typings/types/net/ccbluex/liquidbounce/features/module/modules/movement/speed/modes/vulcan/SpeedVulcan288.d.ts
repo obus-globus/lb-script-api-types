@@ -9,7 +9,7 @@ import type { SpeedBHopBase } from '../../../../../../../../../../net/ccbluex/li
  * BHop Speed for Vulcan 288
  * Tested on both anticheat-test.com and loyisa.cn
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/vulcan/SpeedVulcan288.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/vulcan/SpeedVulcan288.kt:40}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/vulcan/SpeedVulcan288.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/vulcan/SpeedVulcan288.kt:40}
  */
 export class SpeedVulcan288 extends SpeedBHopBase {
     static Companion: Tagged$Companion;

@@ -6,7 +6,7 @@ export class AabbMergeUtilKt extends Object {
      *
      * Intersection uses vanilla {@link AABB.intersects} semantics (strict overlap, no touching-only merge).
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/AabbMergeUtil.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/AabbMergeUtil.kt:43}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/AabbMergeUtil.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/AabbMergeUtil.kt:43}
      */
     static mergeIntersectingAabbsSweep<K extends unknown>(items: KeyedAabb<K>[]): KeyedAabb<K>[];
 }

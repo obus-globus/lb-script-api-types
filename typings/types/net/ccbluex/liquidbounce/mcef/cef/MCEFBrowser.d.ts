@@ -38,6 +38,7 @@ export class MCEFBrowser extends CefBrowserOsr {
     getDragContext(): MCEFDragContext;
     getRenderer(): MCEFRenderer;
     getTextureLocation(): Identifier;
+    // private isControlOrCommand(arg0: number): boolean;
     isTextureReady(): boolean;
     onAcceleratedPaint(arg0: CefBrowser, arg1: boolean, arg2: Rectangle[], arg3: CefAcceleratedPaintInfo): void;
     onCursorChange(arg0: CefBrowser, arg1: number): boolean;

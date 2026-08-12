@@ -12,7 +12,7 @@ export class InventoryAction$Click extends Record implements InventoryAction {
     /**
      * pickup -> pickup all -> pickup to handle remaining items
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryAction.kt#L110 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryAction.kt:110}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryAction.kt#L110 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryAction.kt:110}
      */
     static performMergeStack(screen: AbstractContainerScreen<any> | null, slot: ItemSlot): InventoryAction$Click[];
     static performPickup(screen: AbstractContainerScreen<any> | null, slot: ItemSlot): InventoryAction$Click;

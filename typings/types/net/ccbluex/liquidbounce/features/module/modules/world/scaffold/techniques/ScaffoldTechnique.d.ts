@@ -21,7 +21,7 @@ export class ScaffoldTechnique extends Mode {
     /**
      * Prioritize the block that is closest to the line, if there was no line found, prioritize the nearest block.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/techniques/ScaffoldTechnique.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/techniques/ScaffoldTechnique.kt:54}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/techniques/ScaffoldTechnique.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/techniques/ScaffoldTechnique.kt:54}
      */
     protected priorityComparator(predictedPos: Vec3, optimalLine: Line | null): (param0: BlockPos, param1: BlockPos) => number;
 }

@@ -17,7 +17,7 @@ import type { Component } from '../../../../../../net/minecraft/network/chat/Com
  *
  * This {@link EventListener} needs to be unregistered when the browser is closed.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserRenderer.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserRenderer.kt:44}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserRenderer.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserRenderer.kt:44}
  */
 export class BrowserRenderer extends Object implements AutoCloseable, EventListener {
     constructor(browser: Browser)

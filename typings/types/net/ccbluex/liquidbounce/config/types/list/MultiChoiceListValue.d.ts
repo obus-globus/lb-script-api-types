@@ -8,21 +8,21 @@ export class MultiChoiceListValue<T extends Tagged> extends Value<T[]> {
     /**
      * Can deselect all values or enable at least one
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/MultiChoiceListValue.kt#L47 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/MultiChoiceListValue.kt:47}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/MultiChoiceListValue.kt#L47 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/MultiChoiceListValue.kt:47}
      */
     readonly canBeNone: boolean;
     // private choiceByName: JavaMap<string, T>;
     /**
      * All selectable choices. A readonly and ordered {@link Set}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/MultiChoiceListValue.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/MultiChoiceListValue.kt:42}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/MultiChoiceListValue.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/MultiChoiceListValue.kt:42}
      */
     readonly choices: T[];
     // private isOrderSensitive: boolean;
     /**
      * Determines whether the order of enabled values matters.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/MultiChoiceListValue.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/MultiChoiceListValue.kt:52}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/MultiChoiceListValue.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/MultiChoiceListValue.kt:52}
      */
     /*not mapped: */ isOrderSensitive(): boolean;
     contains(choice: T): boolean;

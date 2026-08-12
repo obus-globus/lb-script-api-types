@@ -18,7 +18,7 @@ export class NetworkUtilsKt extends Object {
     /**
      * Sends an open inventory packet with the help of ViaFabricPlus. This is only for older versions. (<= 1.11.2)
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/NetworkUtils.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/NetworkUtils.kt:78}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/NetworkUtils.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/NetworkUtils.kt:78}
      */
     static send1_11_1OpenInventory(self: ClientCommonPacketListenerImpl): void;
     static send1_21_5StartSneaking(self: ClientCommonPacketListenerImpl): void;
@@ -37,7 +37,7 @@ export class NetworkUtilsKt extends Object {
      * {@link net.minecraft.world.item.Item.getPlayerPOVHitResult}, which reads the player's current rotation.
      * Keep that local prediction aligned with the rotation carried by {@link ServerboundUseItemPacket}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b7cc679e71b1bc95d19a1e1535f79a1c2164149e/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/NetworkUtils.kt#L194 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/NetworkUtils.kt:194}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/NetworkUtils.kt#L194 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/NetworkUtils.kt:194}
      */
     static useItem(self: MultiPlayerGameMode, player: Player, hand: InteractionHand, yRot: number, xRot: number): InteractionResult;
 }
