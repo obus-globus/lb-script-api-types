@@ -34,7 +34,7 @@ export class Rotation extends Record {
      *
      * @returns direction angle in degrees
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt#L113 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt:113}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt#L113 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt:113}
      */
     directionAngleTo(other: Rotation): number;
     equals(other: Object | null): boolean;
@@ -42,7 +42,7 @@ export class Rotation extends Record {
     /**
      * Interpolates this rotation towards {@link other} using the given {@link factor}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt#L162 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt:162}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt#L162 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt:162}
      */
     interpolateTo(other: Rotation, factor: number): Rotation;
     isDirectionCloseTo(other: Rotation, tolerance?: number): boolean;
@@ -52,7 +52,7 @@ export class Rotation extends Record {
      *
      * @returns {@link Rotation} with fixed yaw and pitch
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt#L81 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt:81}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt#L81 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt:81}
      */
     normalize(): Rotation;
     /**
@@ -61,7 +61,7 @@ export class Rotation extends Record {
      * Unlike {@link directionAngleTo}, this preserves yaw differences at vertical pitches and therefore
      * matches Minecraft's independent mouse, packet and movement rotation axes.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt#L141 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt:141}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt#L141 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt:141}
      */
     rotationDeltaLengthTo(other: Rotation): number;
     /**
@@ -69,7 +69,7 @@ export class Rotation extends Record {
      *
      * Wrapped 360°
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt#L128 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt:128}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt#L128 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt:128}
      */
     rotationDeltaTo(other: Rotation): RotationDelta;
     toQuaternion(dest?: Quaternionf): Quaternionf;
@@ -78,7 +78,7 @@ export class Rotation extends Record {
      * Calculates a new rotation that is closer to the {@link other} rotation by a limiting factor of
      * {@link horizontalFactor} and {@link verticalFactor}, which should be between 0 and 180 degrees.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt#L147 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt:147}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt#L147 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/data/Rotation.kt:147}
      */
     towardsLinear(other: Rotation, horizontalFactor: number, verticalFactor: number): Rotation;
 }

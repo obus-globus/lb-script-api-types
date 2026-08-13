@@ -7,7 +7,7 @@ import type { BoundingBox2f } from '../../../../../../net/ccbluex/liquidbounce/r
  * Contains information about the placement of characters in a bitmap
  * and how they are rendered
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt:44}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt:44}
  */
 export class GlyphRenderInfo extends Record {
     constructor(codepoint: number, atlasLocation: GlyphAtlasLocation | null, glyphBounds: BoundingBox2f, layoutInfo: GlyphLayoutInfo)
@@ -15,21 +15,21 @@ export class GlyphRenderInfo extends Record {
     /**
      * The location of the Glyph on the sprite, may be null if the glyph is a whitespace
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt#L53 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt:53}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt#L53 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt:53}
      */
     /*not mapped: */ atlasLocation(): GlyphAtlasLocation | null;
     // private codepoint: number;
     /**
      * Which Unicode codepoint does this glyph represent?
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt:49}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt:49}
      */
     /*not mapped: */ codepoint(): number;
     // private glyphBounds: BoundingBox2f;
     /**
      * The bounds of the rendered glyph. Used for rendering.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt#L57 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt:57}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt#L57 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt:57}
      */
     /*not mapped: */ glyphBounds(): BoundingBox2f;
     // private layoutInfo: GlyphLayoutInfo;

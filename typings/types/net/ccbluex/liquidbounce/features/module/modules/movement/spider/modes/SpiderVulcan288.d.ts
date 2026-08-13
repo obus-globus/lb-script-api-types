@@ -16,7 +16,7 @@ import type { GameTickEvent } from '../../../../../../../../../net/ccbluex/liqui
 TODO: Detection for how many blocks you've gone up. Anything over 40ish seems to flag for Invalid (C)
   Proper implementation if there's something above you needs to be added.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7a4298b687df27a16a801d477a542b03917e7306/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/spider/modes/SpiderVulcan288.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/spider/modes/SpiderVulcan288.kt:39}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/spider/modes/SpiderVulcan288.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/spider/modes/SpiderVulcan288.kt:39}
  */
 export class SpiderVulcan288 extends Mode {
     static Companion: Tagged$Companion;

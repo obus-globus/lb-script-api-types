@@ -41321,7 +41321,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAntiBlind.kt",
-          "line": 77
+          "line": 78
         }
       }
     ],
@@ -41348,7 +41348,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAntiBlind.kt",
-          "line": 66
+          "line": 67
         }
       }
     ],
