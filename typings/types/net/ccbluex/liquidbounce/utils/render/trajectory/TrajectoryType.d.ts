@@ -10,7 +10,7 @@ import type { TrajectoryType$InitialTickBehavior } from '../../../../../../net/c
  * @see net.minecraft.world.entity.projectile.FireworkRocketEntity.tick
  * @see net.minecraft.world.entity.projectile.FishingHook.tick
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryType.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryType.kt:31}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/affa27f4374c5dc750675ca894a074284c5832d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryType.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryType.kt:31}
  */
 export class TrajectoryType extends Enum<TrajectoryType> implements Tagged {
     static Arrow: TrajectoryType;

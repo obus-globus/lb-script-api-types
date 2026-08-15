@@ -15,7 +15,7 @@ import type { LocalPlayer } from '../../../../../../../../net/minecraft/client/p
  *
  * Module: {@link ModuleTeleport}
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/module/teleport/CommandPlayerTeleport.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/module/teleport/CommandPlayerTeleport.kt:36}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/affa27f4374c5dc750675ca894a074284c5832d9/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/module/teleport/CommandPlayerTeleport.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/module/teleport/CommandPlayerTeleport.kt:36}
  */
 export class CommandPlayerTeleport extends Object implements Command$Factory, MinecraftShortcuts {
     static INSTANCE: CommandPlayerTeleport;

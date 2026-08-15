@@ -11,14 +11,14 @@ export class Render3DKt extends Object {
     /**
      * @see SubmitNodeStorage.submitText
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L113 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:113}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/affa27f4374c5dc750675ca894a074284c5832d9/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L113 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:113}
      */
     static submitTextAlwaysOnTop(self: SubmitNodeStorage, poseStack: PoseStack, x: number, y: number, string: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean, dropShadow: boolean, displayMode: Font$DisplayMode, lightCoords: number, color: number, backgroundColor: number, outlineColor: number): void;
     /**
      * @see net.ccbluex.liquidbounce.features.module.modules.render.ModuleBlockESP
      * @see net.ccbluex.liquidbounce.features.module.modules.render.ModuleStorageESP
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L70 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:70}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/affa27f4374c5dc750675ca894a074284c5832d9/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L70 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:70}
      */
     static translate(self: PoseStack, x: number, y: number, z: number): void;
     static translate(self: PoseStack, blockPos: number, origin: BlockPos): void;

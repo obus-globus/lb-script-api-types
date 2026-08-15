@@ -9,7 +9,7 @@ import type { AxochatPacket$S2C } from '../../../../../../net/ccbluex/liquidboun
  * @param user author_info is optional and described in detail in UserInfo.
  * @param content content is any message fitting the validation scheme of the server.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ClientPackets.kt#L66 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ClientPackets.kt:66}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/affa27f4374c5dc750675ca894a074284c5832d9/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ClientPackets.kt#L66 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ClientPackets.kt:66}
  */
 export class S2CMessagePacket extends Object implements AxochatPacket$S2C {
     constructor(id: string, user: AxoUser, content: string)

@@ -31628,6 +31628,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.items.WeaponItemFacet$Companion": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/items/WeaponItemFacet$Companion").WeaponItemFacet$Companion;
     "net.ccbluex.liquidbounce.features.module.modules.player.nofall.ModuleNoFall": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/nofall/ModuleNoFall").ModuleNoFall;
     "net.ccbluex.liquidbounce.features.module.modules.player.nofall.ModuleNoFall$NotCondition": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/nofall/ModuleNoFall$NotCondition").ModuleNoFall$NotCondition;
+    "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.MlgPlacementActionType": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/MlgPlacementActionType").MlgPlacementActionType;
     "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.NoFallBlink": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallBlink").NoFallBlink;
     "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.NoFallBlocksMC": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallBlocksMC").NoFallBlocksMC;
     "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.NoFallCancel": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallCancel").NoFallCancel;
@@ -31640,6 +31641,9 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.NoFallHypixelPacket": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallHypixelPacket").NoFallHypixelPacket;
     "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.NoFallMLG": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG").NoFallMLG;
     "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.NoFallMLG$PickupWater": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG$PickupWater").NoFallMLG$PickupWater;
+    "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.NoFallMLG$PlacementAction": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG$PlacementAction").NoFallMLG$PlacementAction;
+    "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.NoFallMLGKt": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLGKt").NoFallMLGKt;
+    "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.NoFallMLGKt$WhenMappings": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLGKt$WhenMappings").NoFallMLGKt$WhenMappings;
     "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.NoFallMode": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMode").NoFallMode;
     "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.NoFallMount": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMount").NoFallMount;
     "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.NoFallMount$AutoDismount": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMount$AutoDismount").NoFallMount$AutoDismount;
@@ -32426,6 +32430,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.utils.aiming.PostRotationExecutor": typeof import("../types/net/ccbluex/liquidbounce/utils/aiming/PostRotationExecutor").PostRotationExecutor;
     "net.ccbluex.liquidbounce.utils.aiming.PostRotationExecutor$ModuleAction": typeof import("../types/net/ccbluex/liquidbounce/utils/aiming/PostRotationExecutor$ModuleAction").PostRotationExecutor$ModuleAction;
     "net.ccbluex.liquidbounce.utils.aiming.RotationManager": typeof import("../types/net/ccbluex/liquidbounce/utils/aiming/RotationManager").RotationManager;
+    "net.ccbluex.liquidbounce.utils.aiming.RotationManagerKt": typeof import("../types/net/ccbluex/liquidbounce/utils/aiming/RotationManagerKt").RotationManagerKt;
     "net.ccbluex.liquidbounce.utils.aiming.RotationMode": typeof import("../types/net/ccbluex/liquidbounce/utils/aiming/RotationMode").RotationMode;
     "net.ccbluex.liquidbounce.utils.aiming.RotationTarget": typeof import("../types/net/ccbluex/liquidbounce/utils/aiming/RotationTarget").RotationTarget;
     "net.ccbluex.liquidbounce.utils.aiming.RotationsValueGroup": typeof import("../types/net/ccbluex/liquidbounce/utils/aiming/RotationsValueGroup").RotationsValueGroup;
@@ -32516,6 +32521,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.utils.block.hole.HoleManager": typeof import("../types/net/ccbluex/liquidbounce/utils/block/hole/HoleManager").HoleManager;
     "net.ccbluex.liquidbounce.utils.block.hole.HoleTracker": typeof import("../types/net/ccbluex/liquidbounce/utils/block/hole/HoleTracker").HoleTracker;
     "net.ccbluex.liquidbounce.utils.block.hole.HoleTrackerKt": typeof import("../types/net/ccbluex/liquidbounce/utils/block/hole/HoleTrackerKt").HoleTrackerKt;
+    "net.ccbluex.liquidbounce.utils.block.liquid.BucketUtilsKt": typeof import("../types/net/ccbluex/liquidbounce/utils/block/liquid/BucketUtilsKt").BucketUtilsKt;
     "net.ccbluex.liquidbounce.utils.block.liquid.LiquidPlacementHelperKt": typeof import("../types/net/ccbluex/liquidbounce/utils/block/liquid/LiquidPlacementHelperKt").LiquidPlacementHelperKt;
     "net.ccbluex.liquidbounce.utils.block.liquid.TimedPickupTracker": typeof import("../types/net/ccbluex/liquidbounce/utils/block/liquid/TimedPickupTracker").TimedPickupTracker;
     "net.ccbluex.liquidbounce.utils.block.liquid.TimedPickupTracker$PickupFilter": typeof import("../types/net/ccbluex/liquidbounce/utils/block/liquid/TimedPickupTracker$PickupFilter").TimedPickupTracker$PickupFilter;
@@ -32802,6 +32808,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.utils.network.PacketRegistryKt": typeof import("../types/net/ccbluex/liquidbounce/utils/network/PacketRegistryKt").PacketRegistryKt;
     "net.ccbluex.liquidbounce.utils.network.PickFromInventoryPacket": typeof import("../types/net/ccbluex/liquidbounce/utils/network/PickFromInventoryPacket").PickFromInventoryPacket;
     "net.ccbluex.liquidbounce.utils.network.PlayerSneakPacket": typeof import("../types/net/ccbluex/liquidbounce/utils/network/PlayerSneakPacket").PlayerSneakPacket;
+    "net.ccbluex.liquidbounce.utils.network.UseItemPacketRotation": typeof import("../types/net/ccbluex/liquidbounce/utils/network/UseItemPacketRotation").UseItemPacketRotation;
     "net.ccbluex.liquidbounce.utils.range.RangeValueGroup": typeof import("../types/net/ccbluex/liquidbounce/utils/range/RangeValueGroup").RangeValueGroup;
     "net.ccbluex.liquidbounce.utils.raytracing.BlockRaytracingKt": typeof import("../types/net/ccbluex/liquidbounce/utils/raytracing/BlockRaytracingKt").BlockRaytracingKt;
     "net.ccbluex.liquidbounce.utils.raytracing.EntityRaytracingKt": typeof import("../types/net/ccbluex/liquidbounce/utils/raytracing/EntityRaytracingKt").EntityRaytracingKt;

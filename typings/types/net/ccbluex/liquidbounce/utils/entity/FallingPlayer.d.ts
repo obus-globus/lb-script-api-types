@@ -9,7 +9,8 @@ import type { AABB } from '../../../../../net/minecraft/world/phys/AABB.d.ts'
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class FallingPlayer extends Object {
     static Companion: FallingPlayer$Companion;
-    static fromPlayer(player: LocalPlayer): FallingPlayer;
+    static fromPlayer(paramarg0: LocalPlayer): FallingPlayer;
+    static fromPlayer(player: LocalPlayer, movementYaw: number): FallingPlayer;
     constructor(player: LocalPlayer, x: number, y: number, z: number, motionX: number, motionY: number, motionZ: number, yRot: number)
     // private boundingBox: AABB;
     // private lastResolvedMovement: Vec3;
@@ -39,7 +40,7 @@ export class FallingPlayer extends Object {
      * Checks whether a future movement tick starts with the player's feet in {@link targetPos} before landing.
      * This matches the block-position lookup in Minecraft 26.2 {@code LivingEntity.onClimbable()}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt#L198 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt:198}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/affa27f4374c5dc750675ca894a074284c5832d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt#L199 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt:199}
      */
     willStartTickInBlockBeforeCollision(targetPos: BlockPos, ticks: number, forceDescending: boolean): boolean;
 }

@@ -8,7 +8,7 @@ import type { MovePacketType } from '../../../../../../../../../net/ccbluex/liqu
  *
  * TODO: Add version specific options
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/aimbot/autobow/AutoBowFastChargeFeature.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/aimbot/autobow/AutoBowFastChargeFeature.kt:38}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/affa27f4374c5dc750675ca894a074284c5832d9/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/aimbot/autobow/AutoBowFastChargeFeature.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/aimbot/autobow/AutoBowFastChargeFeature.kt:38}
  */
 export class AutoBowFastChargeFeature extends ToggleableValueGroup {
     static INSTANCE: AutoBowFastChargeFeature;

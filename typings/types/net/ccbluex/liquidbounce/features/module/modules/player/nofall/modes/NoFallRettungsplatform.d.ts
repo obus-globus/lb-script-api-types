@@ -12,7 +12,7 @@ import type { HotbarItemSlot } from '../../../../../../../../../net/ccbluex/liqu
  * As such module is mostly used by German players, the name of the module is in German.
  * That is unusual for LiquidBounce, but it is the best name for this module.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallRettungsplatform.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallRettungsplatform.kt:42}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/affa27f4374c5dc750675ca894a074284c5832d9/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallRettungsplatform.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallRettungsplatform.kt:42}
  */
 export class NoFallRettungsplatform extends NoFallMode {
     static Companion: Tagged$Companion;

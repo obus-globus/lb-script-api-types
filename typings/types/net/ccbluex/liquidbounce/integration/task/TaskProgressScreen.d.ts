@@ -12,7 +12,7 @@ import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStac
 /**
  * Screen that displays TaskManager progress
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskProgressScreen.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskProgressScreen.kt:42}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/affa27f4374c5dc750675ca894a074284c5832d9/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskProgressScreen.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskProgressScreen.kt:42}
  */
 export class TaskProgressScreen extends Screen {
     static FOOTER_SEPARATOR: Identifier;

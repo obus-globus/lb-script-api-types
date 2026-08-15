@@ -11,14 +11,14 @@ import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.
  * @param rotation The rotation we want to aim at.
  * @param angleSmooth The mode of the smoother.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationTarget.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationTarget.kt:37}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/affa27f4374c5dc750675ca894a074284c5832d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationTarget.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationTarget.kt:37}
  */
 export class RotationTarget extends Object {
     constructor(rotation: Rotation, entity: Entity | null, processors: RotationProcessor[], ticksUntilReset: number, resetThreshold: number, considerInventory: boolean, movementCorrection: MovementCorrection, whenReached: RestrictedSingleUseAction | null)
     /**
      * Consider if the inventory is open or not. If the inventory is open, we might not want to continue updating.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationTarget.kt#L62 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationTarget.kt:62}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/affa27f4374c5dc750675ca894a074284c5832d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationTarget.kt#L62 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationTarget.kt:62}
      */
     readonly considerInventory: boolean;
     entity: Entity | null;
@@ -28,7 +28,7 @@ export class RotationTarget extends Object {
      * This list should start with {@link net.ccbluex.liquidbounce.utils.aiming.features.processors.anglesmooth.AngleSmooth}
      * and then continue with other processors like {@link ShortStopRotationProcessor} and {@link FailFocus}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationTarget.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationTarget.kt:46}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/affa27f4374c5dc750675ca894a074284c5832d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationTarget.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationTarget.kt:46}
      */
     readonly processors: RotationProcessor[];
     /**
@@ -38,20 +38,20 @@ export class RotationTarget extends Object {
      * TODO: Replace this with a fixed check that checks if our current mouse movement
      *   outperforms the threshold.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationTarget.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationTarget.kt:58}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/affa27f4374c5dc750675ca894a074284c5832d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationTarget.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationTarget.kt:58}
      */
     readonly resetThreshold: number;
     readonly rotation: Rotation;
     /**
      * The ticks until reset defines the amount of ticks until we are rotating back.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationTarget.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationTarget.kt:50}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/affa27f4374c5dc750675ca894a074284c5832d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationTarget.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationTarget.kt:50}
      */
     readonly ticksUntilReset: number;
     /**
      * What should be done if the target rotation has been reached. Can be `null`.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationTarget.kt#L67 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationTarget.kt:67}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/affa27f4374c5dc750675ca894a074284c5832d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationTarget.kt#L67 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationTarget.kt:67}
      */
     readonly whenReached: RestrictedSingleUseAction | null;
     // private process(currentRotation: Rotation, targetRotation: Rotation): Rotation;
@@ -62,7 +62,7 @@ export class RotationTarget extends Object {
      *
      * We might even return null if we do not want to aim at anything yet.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationTarget.kt#L77 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationTarget.kt:77}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/affa27f4374c5dc750675ca894a074284c5832d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationTarget.kt#L77 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationTarget.kt:77}
      */
     towards(currentRotation: Rotation, isResetting: boolean): Rotation;
 }

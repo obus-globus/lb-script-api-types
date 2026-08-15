@@ -11,7 +11,7 @@ import type { EventListener } from '../../../../net/ccbluex/liquidbounce/event/E
  *
  * Equality of {@link EventHook}s is defined by reference equality.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/event/EventHookRegistry.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventHookRegistry.kt:33}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/affa27f4374c5dc750675ca894a074284c5832d9/src/main/kotlin/net/ccbluex/liquidbounce/event/EventHookRegistry.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventHookRegistry.kt:33}
  */
 export class EventHookRegistry<E extends Event> extends Object {
     static Companion: EventHookRegistry$Companion;

@@ -10,7 +10,7 @@ import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.t
  * Normal rotations.
  * Only one placement per tick is possible, possible less because rotating takes some time.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacerRotationModes.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacerRotationModes.kt:60}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/affa27f4374c5dc750675ca894a074284c5832d9/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacerRotationModes.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacerRotationModes.kt:60}
  */
 export class NormalRotationMode extends BlockPlacerRotationMode {
     static Companion: Tagged$Companion;

@@ -3,7 +3,7 @@ import type { ToggleableValueGroup } from '../../../../../../../net/ccbluex/liqu
  * This is useful to prevent false triggers when the sound is played
  * from a different position than our fishing hook.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f52f78665697bbb9fc5260ebedd8725061837d27/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleAutoFish.kt#L75 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleAutoFish.kt:75}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/affa27f4374c5dc750675ca894a074284c5832d9/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleAutoFish.kt#L75 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleAutoFish.kt:75}
  */
 export class ModuleAutoFish$PullTriggerSoundDistance extends ToggleableValueGroup {
     static INSTANCE: ModuleAutoFish$PullTriggerSoundDistance;

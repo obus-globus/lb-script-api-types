@@ -6,11 +6,12 @@ export class ModuleTrueSight$Sight extends Enum<ModuleTrueSight$Sight> implement
     static BARRIERS: ModuleTrueSight$Sight;
     static Companion: Tagged$Companion;
     static ENTITIES: ModuleTrueSight$Sight;
+    static LIGHTS: ModuleTrueSight$Sight;
     static getEntries(): ModuleTrueSight$Sight[];
     static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(value: string): ModuleTrueSight$Sight;
     static values(): ModuleTrueSight$Sight[];
     private constructor(tag: string)
     readonly tag: string;
-    name(): "BARRIERS" | "ENTITIES";
+    name(): "BARRIERS" | "LIGHTS" | "ENTITIES";
 }
