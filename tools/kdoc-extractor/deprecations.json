@@ -32,7 +32,7 @@
       "kind": "property",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleCategory.kt",
-        "line": 25
+        "line": 29
       }
     },
     "net.ccbluex.liquidbounce.features.module.modules.exploit.servercrasher.exploits.EssentialsPayStarExploit": {

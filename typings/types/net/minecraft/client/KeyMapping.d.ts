@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { InputConstants$Key } from '../../../com/mojang/blaze3d/platform/InputConstants$Key.d.ts'
 import type { InputConstants$Type } from '../../../com/mojang/blaze3d/platform/InputConstants$Type.d.ts'
 import type { Supplier } from '../../../java/util/function/Supplier.d.ts'
@@ -10,6 +11,8 @@ import type { KeyEvent } from '../../../net/minecraft/client/input/KeyEvent.d.ts
 import type { MouseButtonEvent } from '../../../net/minecraft/client/input/MouseButtonEvent.d.ts'
 import type { Component } from '../../../net/minecraft/network/chat/Component.d.ts'
 export class KeyMapping extends Object implements Comparable<KeyMapping>, KeyMappingAccessor, KeyMappingAccessor_2 {
+    static ALL: JavaMap<string, KeyMapping>;
+    static MAP: JavaMap<InputConstants$Key, KeyMapping[]>;
     static click(paramkey: InputConstants$Key): void;
     static createNameSupplier(paramkey: string): () => Component;
     static get(paramname: string): KeyMapping;

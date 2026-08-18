@@ -30340,6 +30340,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.common.TweakedMethods": typeof import("../types/net/ccbluex/liquidbounce/common/TweakedMethods").TweakedMethods;
     "net.ccbluex.liquidbounce.common.XRayBlockRenderContext": typeof import("../types/net/ccbluex/liquidbounce/common/XRayBlockRenderContext").XRayBlockRenderContext;
     "net.ccbluex.liquidbounce.config.ConfigSystem": typeof import("../types/net/ccbluex/liquidbounce/config/ConfigSystem").ConfigSystem;
+    "net.ccbluex.liquidbounce.config.OptionalInclusion": typeof import("../types/net/ccbluex/liquidbounce/config/OptionalInclusion").OptionalInclusion;
     "net.ccbluex.liquidbounce.config.autoconfig.AutoConfig": typeof import("../types/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig").AutoConfig;
     "net.ccbluex.liquidbounce.config.autoconfig.AutoConfigMetadata": typeof import("../types/net/ccbluex/liquidbounce/config/autoconfig/AutoConfigMetadata").AutoConfigMetadata;
     "net.ccbluex.liquidbounce.config.autoconfig.IncludeConfiguration": typeof import("../types/net/ccbluex/liquidbounce/config/autoconfig/IncludeConfiguration").IncludeConfiguration;
@@ -30993,6 +30994,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.features.module.modules.exploit.disabler.ModuleDisabler": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/exploit/disabler/ModuleDisabler").ModuleDisabler;
     "net.ccbluex.liquidbounce.features.module.modules.exploit.disabler.disablers.DisablerAdvancedAntiCheat1910": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/exploit/disabler/disablers/DisablerAdvancedAntiCheat1910").DisablerAdvancedAntiCheat1910;
     "net.ccbluex.liquidbounce.features.module.modules.exploit.disabler.disablers.DisablerCubeCraft": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/exploit/disabler/disablers/DisablerCubeCraft").DisablerCubeCraft;
+    "net.ccbluex.liquidbounce.features.module.modules.exploit.disabler.disablers.DisablerCubeCraftGuiMove": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/exploit/disabler/disablers/DisablerCubeCraftGuiMove").DisablerCubeCraftGuiMove;
     "net.ccbluex.liquidbounce.features.module.modules.exploit.disabler.disablers.DisablerGrimSpectate": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/exploit/disabler/disablers/DisablerGrimSpectate").DisablerGrimSpectate;
     "net.ccbluex.liquidbounce.features.module.modules.exploit.disabler.disablers.DisablerHypixel": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/exploit/disabler/disablers/DisablerHypixel").DisablerHypixel;
     "net.ccbluex.liquidbounce.features.module.modules.exploit.disabler.disablers.DisablerHypixelScaffold": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/exploit/disabler/disablers/DisablerHypixelScaffold").DisablerHypixelScaffold;

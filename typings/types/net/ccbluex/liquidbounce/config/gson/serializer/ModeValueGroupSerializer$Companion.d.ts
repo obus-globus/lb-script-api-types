@@ -3,4 +3,5 @@ import type { ModeValueGroupSerializer } from '../../../../../../net/ccbluex/liq
 export class ModeValueGroupSerializer$Companion extends Object {
     FILE_SERIALIZER: ModeValueGroupSerializer;
     INTEROP_SERIALIZER: ModeValueGroupSerializer;
+    PUBLIC_CONFIG_SERIALIZER: ModeValueGroupSerializer;
 }

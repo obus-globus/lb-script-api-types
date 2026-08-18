@@ -10,7 +10,10 @@ export class ModeValueGroupSerializer extends Object implements JsonSerializer<M
     static Companion: ModeValueGroupSerializer$Companion;
     static FILE_SERIALIZER: ModeValueGroupSerializer;
     static INTEROP_SERIALIZER: ModeValueGroupSerializer;
-    private constructor(withValueType: boolean)
+    static PUBLIC_CONFIG_SERIALIZER: ModeValueGroupSerializer;
+    private constructor(withValueType: boolean, includePrivate: boolean, includeNotAnOption: boolean)
+    // private includeNotAnOption: boolean;
+    // private includePrivate: boolean;
     // private withValueType: boolean;
     serialize(src: ModeValueGroup<Mode>, typeOfSrc: Type, context: JsonSerializationContext): JsonElement;
 }

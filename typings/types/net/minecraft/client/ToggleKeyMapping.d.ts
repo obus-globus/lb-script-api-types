@@ -1,3 +1,4 @@
+import type { JavaMap } from '../../../JavaMap.d.ts'
 import type { InputConstants$Key } from '../../../com/mojang/blaze3d/platform/InputConstants$Key.d.ts'
 import type { InputConstants$Type } from '../../../com/mojang/blaze3d/platform/InputConstants$Type.d.ts'
 import type { BooleanSupplier } from '../../../java/util/function/BooleanSupplier.d.ts'
@@ -6,6 +7,8 @@ import type { KeyMapping } from '../../../net/minecraft/client/KeyMapping.d.ts'
 import type { KeyMapping$Category } from '../../../net/minecraft/client/KeyMapping$Category.d.ts'
 import type { Component } from '../../../net/minecraft/network/chat/Component.d.ts'
 export class ToggleKeyMapping extends KeyMapping {
+    static ALL: JavaMap<string, KeyMapping>;
+    static MAP: JavaMap<InputConstants$Key, KeyMapping[]>;
     static click(paramkey: InputConstants$Key): void;
     static createNameSupplier(paramkey: string): () => Component;
     static get(paramname: string): KeyMapping;

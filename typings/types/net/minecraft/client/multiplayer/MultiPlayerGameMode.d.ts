@@ -1,6 +1,7 @@
 import type { ClientPlayerInteractionManager1_18_2 } from '../../../../com/viaversion/viafabricplus/features/interaction/r1_18_2_block_ack_emulation/ClientPlayerInteractionManager1_18_2.d.ts'
 import type { IMultiPlayerGameMode } from '../../../../com/viaversion/viafabricplus/injection/access/interaction/r1_18_2_block_ack_emulation/IMultiPlayerGameMode.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { MixinMultiPlayerGameModeAccessor } from '../../../../net/ccbluex/liquidbounce/injection/mixins/minecraft/network/MixinMultiPlayerGameModeAccessor.d.ts'
 import type { ClientRecipeBook } from '../../../../net/minecraft/client/ClientRecipeBook.d.ts'
 import type { Minecraft } from '../../../../net/minecraft/client/Minecraft.d.ts'
 import type { ClientLevel } from '../../../../net/minecraft/client/multiplayer/ClientLevel.d.ts'
@@ -28,7 +29,7 @@ import type { BlockHitResult } from '../../../../net/minecraft/world/phys/BlockH
 import type { EntityHitResult } from '../../../../net/minecraft/world/phys/EntityHitResult.d.ts'
 import type { MutableObject } from '../../../../org/apache/commons/lang3/mutable/MutableObject.d.ts'
 import type { CallbackInfoReturnable } from '../../../../org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable.d.ts'
-export class MultiPlayerGameMode extends Object implements IMultiPlayerGameMode {
+export class MultiPlayerGameMode extends Object implements IMultiPlayerGameMode, MixinMultiPlayerGameModeAccessor {
     constructor(minecraft: Minecraft, connection: ClientPacketListener)
     // private carriedIndex: number;
     // private connection: ClientPacketListener;
@@ -71,6 +72,7 @@ export class MultiPlayerGameMode extends Object implements IMultiPlayerGameMode 
     isServerControlledInventory(): boolean;
     isSpectator(): boolean;
     // private lambda$useItemOn$0(arg0: MutableObject<Object>, arg1: LocalPlayer, arg2: InteractionHand, arg3: BlockHitResult, arg4: number): Packet<PacketListener>;
+    liquid_bounce$getDestroyBlockPos(): BlockPos;
     // private performUseItemOn(player: LocalPlayer, hand: InteractionHand, blockHit: BlockHitResult): InteractionResult;
     piercingAttack(weapon: PiercingWeapon): void;
     releaseUsingItem(player: Player): void;

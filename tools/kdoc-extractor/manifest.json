@@ -567,6 +567,14 @@
       "line": 200
     }
   },
+  "net.ccbluex.liquidbounce.config.OptionalInclusion": {
+    "doc": "Groups of settings that can be optionally included or excluded during configuration saving.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/OptionalInclusion.kt",
+      "line": 25
+    }
+  },
   "net.ccbluex.liquidbounce.config.autoconfig.AutoConfig.deserializeModuleValueGroup": {
     "doc": "Deserialize module configurable from a JSON object",
     "kind": "function",
@@ -716,14 +724,6 @@
       "line": 60
     }
   },
-  "net.ccbluex.liquidbounce.config.gson.serializer.ValueGroupSerializer.checkIfInclude": {
-    "doc": "Checks if value should be included in public config",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/gson/serializer/ValueGroupSerializer.kt",
-      "line": 118
-    }
-  },
   "net.ccbluex.liquidbounce.config.gson.serializer.ValueGroupSerializer.serializeReadOnly": {
     "doc": "Serialize a [ValueGroup] to a read-only [JsonObject]\n\nUsed for interop communication by [ReadOnlyComponentSerializer]\nand [ReadOnlyThemeSerializer].",
     "kind": "function",
@@ -823,7 +823,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt",
-      "line": 57
+      "line": 59
     }
   },
   "net.ccbluex.liquidbounce.config.types.Value": {
@@ -831,7 +831,15 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt",
-      "line": 63
+      "line": 65
+    }
+  },
+  "net.ccbluex.liquidbounce.config.types.Value.checkIfInclude": {
+    "doc": "Checks if this value should be included in the public configuration based on\nits [doNotInclude] condition and [inclusionGroup].",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt",
+      "line": 136
     }
   },
   "net.ccbluex.liquidbounce.config.types.Value.deserializeFrom": {
@@ -839,18 +847,15 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt",
-      "line": 292
+      "line": 321
     }
   },
   "net.ccbluex.liquidbounce.config.types.Value.doNotInclude": {
-    "doc": "If true, value will not be included in generated public config",
-    "see": [
-      ""
-    ],
+    "doc": "If true, value will not be included in generated public config.\nCan be set using [doNotIncludeWhen] or [doNotIncludeAlways].",
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt",
-      "line": 101
+      "line": 102
     }
   },
   "net.ccbluex.liquidbounce.config.types.Value.getValue": {
@@ -858,7 +863,15 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt",
-      "line": 157
+      "line": 182
+    }
+  },
+  "net.ccbluex.liquidbounce.config.types.Value.inclusionGroup": {
+    "doc": "Group for optional inclusion during configuration saving.\nManaged by [AutoConfig].",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt",
+      "line": 111
     }
   },
   "net.ccbluex.liquidbounce.config.types.Value.independentDescription": {
@@ -866,23 +879,23 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt",
-      "line": 73
+      "line": 75
     }
   },
   "net.ccbluex.liquidbounce.config.types.Value.isImmutable": {
-    "doc": "If true, value will always keep [inner] equals [defaultValue]",
+    "doc": "If true, value will always keep [inner] equals [defaultValue].",
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt",
-      "line": 117
+      "line": 127
     }
   },
   "net.ccbluex.liquidbounce.config.types.Value.notAnOption": {
-    "doc": "If true, value will not be included in generated RestAPI config",
+    "doc": "If true, value will not be included in generated RestAPI config.",
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt",
-      "line": 109
+      "line": 119
     }
   },
   "net.ccbluex.liquidbounce.config.types.Value.restore": {
@@ -890,7 +903,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt",
-      "line": 255
+      "line": 280
     }
   },
   "net.ccbluex.liquidbounce.config.types.Vec3Value.useLocateButton": {
@@ -906,7 +919,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.kt",
-      "line": 125
+      "line": 134
     }
   },
   "net.ccbluex.liquidbounce.config.types.group.Mode.running": {
@@ -914,7 +927,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.kt",
-      "line": 132
+      "line": 141
     }
   },
   "net.ccbluex.liquidbounce.config.types.group.ModeValueGroup": {
@@ -922,7 +935,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.kt",
-      "line": 35
+      "line": 36
     }
   },
   "net.ccbluex.liquidbounce.config.types.group.NoneMode": {
@@ -930,7 +943,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.kt",
-      "line": 150
+      "line": 159
     }
   },
   "net.ccbluex.liquidbounce.config.types.group.ToggleableValueGroup": {
@@ -954,7 +967,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-      "line": 112
+      "line": 113
     }
   },
   "net.ccbluex.liquidbounce.config.types.group.ValueGroup.baseKey": {
@@ -962,7 +975,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-      "line": 119
+      "line": 120
     }
   },
   "net.ccbluex.liquidbounce.config.types.group.ValueGroup.constructBaseKey": {
@@ -970,7 +983,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-      "line": 158
+      "line": 159
     }
   },
   "net.ccbluex.liquidbounce.config.types.group.ValueGroup.json": {
@@ -989,7 +1002,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-      "line": 106
+      "line": 107
     }
   },
   "net.ccbluex.liquidbounce.config.types.group.ValueGroup.restore": {
@@ -997,7 +1010,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-      "line": 293
+      "line": 294
     }
   },
   "net.ccbluex.liquidbounce.config.types.group.ValueGroup.updateChildState": {
@@ -1013,7 +1026,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-      "line": 131
+      "line": 132
     }
   },
   "net.ccbluex.liquidbounce.config.types.list.ListValue.innerType": {
@@ -2332,7 +2345,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandLocalConfig.kt",
-      "line": 69
+      "line": 71
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.client.CommandPanic": {
@@ -3089,7 +3102,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt",
-      "line": 126
+      "line": 132
     }
   },
   "net.ccbluex.liquidbounce.features.module.ClientModule.enabledEffect": {
@@ -3097,7 +3110,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt",
-      "line": 152
+      "line": 158
     }
   },
   "net.ccbluex.liquidbounce.features.module.ClientModule.onRegistration": {
@@ -3105,7 +3118,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt",
-      "line": 131
+      "line": 137
     }
   },
   "net.ccbluex.liquidbounce.features.module.ClientModule.running": {
@@ -3113,7 +3126,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt",
-      "line": 83
+      "line": 89
     }
   },
   "net.ccbluex.liquidbounce.features.module.ClientModule.settings": {
@@ -3121,7 +3134,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt",
-      "line": 118
+      "line": 124
     }
   },
   "net.ccbluex.liquidbounce.features.module.ClientModule.verifyFallbackDescription": {
@@ -3129,7 +3142,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt",
-      "line": 198
+      "line": 204
     }
   },
   "net.ccbluex.liquidbounce.features.module.MinecraftShortcuts": {
@@ -4812,7 +4825,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/exploit/disabler/ModuleDisabler.kt",
-      "line": 48
+      "line": 49
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.exploit.disabler.disablers.DisablerAdvancedAntiCheat1910": {
@@ -4829,6 +4842,14 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/exploit/disabler/disablers/DisablerCubeCraft.kt",
       "line": 42
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.exploit.disabler.disablers.DisablerCubeCraftGuiMove": {
+    "doc": "CubeCraft Gui Move Disabler\nWorking as of June 18, 2026\n@author guimc233, F1sunia",
+    "kind": "object",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/exploit/disabler/disablers/DisablerCubeCraftGuiMove.kt",
+      "line": 39
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.exploit.disabler.disablers.DisablerGrimSpectate": {
@@ -6018,7 +6039,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleSnapTap.kt",
-      "line": 37
+      "line": 36
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleSneak": {
@@ -6460,28 +6481,12 @@
       "line": 60
     }
   },
-  "net.ccbluex.liquidbounce.features.module.modules.movement.inventorymove.ModuleInventoryMove.allowsMovementOverride": {
-    "doc": "Whether SnapTap (and similar movement modules) should allow their input\noverrides when a screen is open. True only when InventoryMove is enabled\nand in NORMAL mode (free movement in inventory).",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/ModuleInventoryMove.kt",
-      "line": 69
-    }
-  },
   "net.ccbluex.liquidbounce.features.module.modules.movement.inventorymove.ModuleInventoryMove.doNotAllowClicking": {
-    "doc": "Restricts user from clicking while moving in inventory.",
+    "doc": "Restricts user from clicking while moving or sprinting in inventory.",
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/ModuleInventoryMove.kt",
-      "line": 95
-    }
-  },
-  "net.ccbluex.liquidbounce.features.module.modules.movement.inventorymove.ModuleInventoryMove.isInCreativeSearchField": {
-    "doc": "Checks if the player is in the creative search field",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/ModuleInventoryMove.kt",
-      "line": 178
+      "line": 96
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.inventorymove.features.InventoryMoveBlinkFeature.maximumTime": {
@@ -8555,7 +8560,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt",
-      "line": 72
+      "line": 70
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleFreeCam.CameraInteract": {
@@ -8563,7 +8568,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt",
-      "line": 80
+      "line": 78
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleFreeCam.CancelOn": {
@@ -8571,7 +8576,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt",
-      "line": 92
+      "line": 90
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleFreeCam.Navigation": {
@@ -8579,7 +8584,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt",
-      "line": 129
+      "line": 127
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleFreeCam.Navigation.calculateGoalPosition": {
@@ -8588,7 +8593,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt",
-      "line": 148
+      "line": 146
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleFreeCam.Navigation.createNavigationContext": {
@@ -8596,7 +8601,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt",
-      "line": 139
+      "line": 137
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleFullBright": {
