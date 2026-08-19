@@ -17179,7 +17179,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandDebug.kt",
-          "line": 91
+          "line": 94
         }
       }
     ],
@@ -17196,7 +17196,7 @@
         "returns": "String",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandDebug.kt",
-          "line": 171
+          "line": 174
         },
         "suspend": true
       }
@@ -18809,7 +18809,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/FakePlayer.kt",
-          "line": 39
+          "line": 40
         }
       }
     ],
@@ -18856,7 +18856,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/FakePlayer.kt",
-          "line": 114
+          "line": 115
         }
       }
     ],
@@ -18873,7 +18873,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/FakePlayer.kt",
-          "line": 48
+          "line": 49
         }
       }
     ],
@@ -18890,7 +18890,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/FakePlayer.kt",
-          "line": 119
+          "line": 120
         }
       }
     ],
@@ -18907,7 +18907,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/FakePlayer.kt",
-          "line": 77
+          "line": 78
         }
       }
     ],
@@ -18917,7 +18917,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/FakePlayer.kt",
-          "line": 98
+          "line": 99
         }
       }
     ],
@@ -46755,73 +46755,6 @@
         }
       }
     ],
-    "net.ccbluex.liquidbounce.features.module.modules.render.hats.HatsMode.addTorusQuad": [
-      {
-        "params": [
-          {
-            "name": "pose",
-            "type": "PoseStack.Pose",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "innerSegments",
-            "type": "Int",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "outerCurAngle",
-            "type": "Float",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "outerNextAngle",
-            "type": "Float",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "outerCurRadius",
-            "type": "Float",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "outerNextRadius",
-            "type": "Float",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "innerRadius",
-            "type": "Float",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "innerI",
-            "type": "Int",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "color",
-            "type": "Color4b",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hats/HatsMode.kt",
-          "line": 118
-        },
-        "isExtension": true,
-        "receiver": "VertexConsumer"
-      }
-    ],
     "net.ccbluex.liquidbounce.features.module.modules.render.hats.HatsMode.constructor": [
       {
         "params": [
@@ -46835,7 +46768,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hats/HatsMode.kt",
-          "line": 51
+          "line": 42
         }
       }
     ],
@@ -46852,56 +46785,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hats/HatsMode.kt",
-          "line": 76
+          "line": 67
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.render.hats.HatsMode.getAngle": [
-      {
-        "params": [
-          {
-            "name": "i",
-            "type": "Int",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "segments",
-            "type": "Int",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hats/HatsMode.kt",
-          "line": 181
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.render.hats.HatsMode.getNextAngle": [
-      {
-        "params": [
-          {
-            "name": "i",
-            "type": "Int",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "segments",
-            "type": "Int",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hats/HatsMode.kt",
-          "line": 182
-        }
       }
     ],
     "net.ccbluex.liquidbounce.features.module.modules.render.hats.HatsMode.getRotationAngle": [
@@ -46917,7 +46804,7 @@
         "returns": "Float",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hats/HatsMode.kt",
-          "line": 184
+          "line": 119
         }
       }
     ],
@@ -46940,7 +46827,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hats/HatsMode.kt",
-          "line": 169
+          "line": 109
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -46959,7 +46846,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hats/modes/HatsCone.kt",
-          "line": 54
+          "line": 55
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -46978,7 +46865,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hats/modes/HatsFlower.kt",
-          "line": 52
+          "line": 54
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -47015,7 +46902,7 @@
         "returns": "Float",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hats/modes/HatsFlower.kt",
-          "line": 105
+          "line": 107
         }
       }
     ],
@@ -47032,7 +46919,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hats/modes/HatsHalo.kt",
-          "line": 47
+          "line": 49
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -47070,7 +46957,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hats/modes/HatsOrbs.kt",
-          "line": 61
+          "line": 62
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -47095,7 +46982,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hats/modes/HatsOrbs.kt",
-          "line": 127
+          "line": 128
         }
       }
     ],
@@ -47118,7 +47005,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hats/modes/HatsOrbs.kt",
-          "line": 128
+          "line": 129
         }
       }
     ],
@@ -47135,7 +47022,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hats/modes/HatsStar.kt",
-          "line": 53
+          "line": 55
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -47178,7 +47065,7 @@
         "returns": "Float",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hats/modes/HatsStar.kt",
-          "line": 105
+          "line": 107
         }
       }
     ],
@@ -48384,6 +48271,236 @@
         },
         "isExtension": true,
         "receiver": "ChatFormatting"
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.totemeffect.ModuleTotemEffect.TotemPopSnapshot.constructor": [
+      {
+        "params": [
+          {
+            "name": "pos",
+            "type": "Vec3",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "xRot",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "yRot",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "bbHeight",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/totemeffect/ModuleTotemEffect.kt",
+          "line": 60
+        }
+      },
+      {
+        "params": [
+          {
+            "name": "entity",
+            "type": "Entity",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/totemeffect/ModuleTotemEffect.kt",
+          "line": 66
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.totemeffect.ModuleTotemEffect.onDisabled": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/totemeffect/ModuleTotemEffect.kt",
+          "line": 45
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.totemeffect.TotemEffectMode.constructor": [
+      {
+        "params": [
+          {
+            "name": "name",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/totemeffect/TotemEffectMode.kt",
+          "line": 33
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.totemeffect.TotemEffectMode.drawTotemEffect": [
+      {
+        "params": [
+          {
+            "name": "progress",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "age",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "entity",
+            "type": "TotemPopSnapshot",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "fade",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/totemeffect/TotemEffectMode.kt",
+          "line": 42
+        },
+        "isExtension": true,
+        "receiver": "WorldRenderEnvironment"
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.totemeffect.modes.TotemEffectShockwave.drawTotemEffect": [
+      {
+        "params": [
+          {
+            "name": "progress",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "age",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "entity",
+            "type": "TotemPopSnapshot",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "fade",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/totemeffect/modes/TotemEffectShockwave.kt",
+          "line": 38
+        },
+        "isExtension": true,
+        "receiver": "WorldRenderEnvironment"
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.totemeffect.modes.TotemEffectSoul.AnimBy.constructor": [
+      {
+        "params": [
+          {
+            "name": "tag",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/totemeffect/modes/TotemEffectSoul.kt",
+          "line": 108
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.totemeffect.modes.TotemEffectSoul.drawHalo": [
+      {
+        "params": [
+          {
+            "name": "targetPos",
+            "type": "Vec3",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "color",
+            "type": "Color4b",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/totemeffect/modes/TotemEffectSoul.kt",
+          "line": 80
+        },
+        "isExtension": true,
+        "receiver": "WorldRenderEnvironment"
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.totemeffect.modes.TotemEffectSoul.drawTotemEffect": [
+      {
+        "params": [
+          {
+            "name": "progress",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "age",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "entity",
+            "type": "TotemPopSnapshot",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "fade",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/totemeffect/modes/TotemEffectSoul.kt",
+          "line": 53
+        },
+        "isExtension": true,
+        "receiver": "WorldRenderEnvironment"
       }
     ],
     "net.ccbluex.liquidbounce.features.module.modules.render.trajectories.ModuleTrajectories.Show.constructor": [
@@ -67924,7 +68041,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt",
-          "line": 88
+          "line": 91
         },
         "isExtension": true,
         "receiver": "VertexConsumer"
@@ -67961,7 +68078,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt",
-          "line": 70
+          "line": 73
         },
         "isExtension": true,
         "receiver": "VertexConsumer"
@@ -68004,7 +68121,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt",
-          "line": 214
+          "line": 217
         },
         "isExtension": true,
         "receiver": "VertexConsumer"
@@ -68071,7 +68188,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt",
-          "line": 158
+          "line": 161
         },
         "isExtension": true,
         "receiver": "VertexConsumer"
@@ -68102,7 +68219,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt",
-          "line": 106
+          "line": 109
         },
         "isExtension": true,
         "receiver": "VertexConsumer"
@@ -68133,7 +68250,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt",
-          "line": 116
+          "line": 119
         },
         "isExtension": true,
         "receiver": "VertexConsumer"
@@ -68176,7 +68293,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt",
-          "line": 130
+          "line": 133
         },
         "isExtension": true,
         "receiver": "VertexConsumer"
@@ -68219,7 +68336,74 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt",
-          "line": 142
+          "line": 145
+        },
+        "isExtension": true,
+        "receiver": "VertexConsumer"
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.VertexBuilderKt.addTorusQuad": [
+      {
+        "params": [
+          {
+            "name": "pose",
+            "type": "PoseStack.Pose",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "innerSegments",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "outerCurAngle",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "outerNextAngle",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "outerCurRadius",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "outerNextRadius",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "innerRadius",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "innerI",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "color",
+            "type": "Color4b",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt",
+          "line": 232
         },
         "isExtension": true,
         "receiver": "VertexConsumer"
@@ -68256,7 +68440,7 @@
         "returns": "VertexConsumer",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt",
-          "line": 41
+          "line": 44
         },
         "isExtension": true,
         "receiver": "VertexConsumer"
@@ -68291,29 +68475,6 @@
         "returns": "VertexConsumer",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt",
-          "line": 44
-        },
-        "isExtension": true,
-        "receiver": "VertexConsumer"
-      },
-      {
-        "params": [
-          {
-            "name": "pose",
-            "type": "Matrix4fc",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "pos",
-            "type": "Vec3",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "VertexConsumer",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt",
           "line": 47
         },
         "isExtension": true,
@@ -68323,7 +68484,7 @@
         "params": [
           {
             "name": "pose",
-            "type": "PoseStack.Pose",
+            "type": "Matrix4fc",
             "nullable": false,
             "vararg": false
           },
@@ -68346,13 +68507,13 @@
         "params": [
           {
             "name": "pose",
-            "type": "Matrix4fc",
+            "type": "PoseStack.Pose",
             "nullable": false,
             "vararg": false
           },
           {
             "name": "pos",
-            "type": "Vec3f",
+            "type": "Vec3",
             "nullable": false,
             "vararg": false
           }
@@ -68369,7 +68530,7 @@
         "params": [
           {
             "name": "pose",
-            "type": "PoseStack.Pose",
+            "type": "Matrix4fc",
             "nullable": false,
             "vararg": false
           },
@@ -68392,6 +68553,29 @@
         "params": [
           {
             "name": "pose",
+            "type": "PoseStack.Pose",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "pos",
+            "type": "Vec3f",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "VertexConsumer",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt",
+          "line": 59
+        },
+        "isExtension": true,
+        "receiver": "VertexConsumer"
+      },
+      {
+        "params": [
+          {
+            "name": "pose",
             "type": "Matrix4fc",
             "nullable": false,
             "vararg": false
@@ -68406,7 +68590,7 @@
         "returns": "VertexConsumer",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt",
-          "line": 59
+          "line": 62
         },
         "isExtension": true,
         "receiver": "VertexConsumer"
@@ -68429,7 +68613,7 @@
         "returns": "VertexConsumer",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt",
-          "line": 62
+          "line": 65
         },
         "isExtension": true,
         "receiver": "VertexConsumer"
@@ -68460,10 +68644,33 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt",
-          "line": 233
+          "line": 287
         },
         "isExtension": true,
         "receiver": "CachedMeshStorage"
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.VertexBuilderKt.segmentAngle": [
+      {
+        "params": [
+          {
+            "name": "i",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "segments",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt",
+          "line": 230
+        }
       }
     ],
     "net.ccbluex.liquidbounce.render.VertexBuilderKt.setColor": [
@@ -68479,7 +68686,7 @@
         "returns": "VertexConsumer",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt",
-          "line": 68
+          "line": 71
         },
         "isExtension": true,
         "receiver": "VertexConsumer"
@@ -68504,7 +68711,7 @@
         "returns": "VertexConsumer",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt",
-          "line": 65
+          "line": 68
         },
         "isExtension": true,
         "receiver": "VertexConsumer"
@@ -68571,6 +68778,462 @@
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
           "line": 96
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.atlas.AbstractAtlasRenderer.buildAtlas": [
+      {
+        "params": [
+          {
+            "name": "images",
+            "type": "Map<Identifier, ByteArray>",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "A",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/AbstractAtlasRenderer.kt",
+          "line": 103
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.atlas.AbstractAtlasRenderer.close": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/AbstractAtlasRenderer.kt",
+          "line": 264
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.atlas.AbstractAtlasRenderer.closeReadbackResources": [
+      {
+        "params": [
+          {
+            "name": "readbackBuffer",
+            "type": "GpuBuffer",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Throwable?",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/AbstractAtlasRenderer.kt",
+          "line": 248
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.atlas.AbstractAtlasRenderer.constructor": [
+      {
+        "params": [
+          {
+            "name": "label",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/AbstractAtlasRenderer.kt",
+          "line": 52
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.atlas.AbstractAtlasRenderer.encodeAsync": [
+      {
+        "params": [
+          {
+            "name": "atlasPixels",
+            "type": "ByteBuffer",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "tileRects",
+            "type": "Map<Identifier, Rect2i>",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "result",
+            "type": "CompletableFuture<A>",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/AbstractAtlasRenderer.kt",
+          "line": 214
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.atlas.AbstractAtlasRenderer.processReadback": [
+      {
+        "params": [
+          {
+            "name": "readbackBuffer",
+            "type": "GpuBuffer",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "tileRects",
+            "type": "Map<Identifier, Rect2i>",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "result",
+            "type": "CompletableFuture<A>",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/AbstractAtlasRenderer.kt",
+          "line": 184
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.atlas.AbstractAtlasRenderer.readbackAsync": [
+      {
+        "params": [
+          {
+            "name": "tileRects",
+            "type": "Map<Identifier, Rect2i>",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "CompletableFuture<A>",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/AbstractAtlasRenderer.kt",
+          "line": 161
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.atlas.AbstractAtlasRenderer.render": [
+      {
+        "params": [],
+        "returns": "CompletableFuture<A>",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/AbstractAtlasRenderer.kt",
+          "line": 105
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.atlas.AbstractAtlasRenderer.renderTiles": [
+      {
+        "params": [],
+        "returns": "Map<Identifier, Rect2i>",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/AbstractAtlasRenderer.kt",
+          "line": 100
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.atlas.AbstractAtlasRenderer.tileRect": [
+      {
+        "params": [
+          {
+            "name": "index",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/AbstractAtlasRenderer.kt",
+          "line": 135
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.atlas.AbstractAtlasRenderer.withTile": [
+      {
+        "params": [
+          {
+            "name": "rect",
+            "type": "Rect2i",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "block",
+            "type": "PoseStack.() -> Unit",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/AbstractAtlasRenderer.kt",
+          "line": 142
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.atlas.AbstractAtlasRendererKt.completeExceptionally": [
+      {
+        "params": [
+          {
+            "name": "label",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "throwable",
+            "type": "Throwable",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/AbstractAtlasRenderer.kt",
+          "line": 306
+        },
+        "isExtension": true,
+        "receiver": "CompletableFuture<*>"
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.atlas.AbstractAtlasRendererKt.copyRectTo": [
+      {
+        "params": [
+          {
+            "name": "target",
+            "type": "NativeImage",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "rect",
+            "type": "Rect2i",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "atlasSize",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/AbstractAtlasRenderer.kt",
+          "line": 316
+        },
+        "isExtension": true,
+        "receiver": "ByteBuffer"
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.atlas.AbstractAtlasRendererKt.encodePngTiles": [
+      {
+        "params": [
+          {
+            "name": "label",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "tileSize",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "textureSize",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "atlasPixels",
+            "type": "ByteBuffer",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "tileRects",
+            "type": "Map<Identifier, Rect2i>",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "result",
+            "type": "CompletableFuture<*>",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Map<Identifier, ByteArray>",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/AbstractAtlasRenderer.kt",
+          "line": 284
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.atlas.Atlas.constructor": [
+      {
+        "params": [
+          {
+            "name": "images",
+            "type": "Map<Identifier, ByteArray>",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "aliasMap",
+            "type": "Map<Identifier, Identifier>",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/ItemImageAtlas.kt",
+          "line": 43
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.atlas.AtlasLookup.Found.constructor": [
+      {
+        "params": [
+          {
+            "name": "bytes",
+            "type": "ByteArray",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/AtlasLookup.kt",
+          "line": 25
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.atlas.ItemImageAtlas.getItemImage": [
+      {
+        "params": [
+          {
+            "name": "name",
+            "type": "Identifier",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "AtlasLookup",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/ItemImageAtlas.kt",
+          "line": 68
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.atlas.ItemTextureRenderer.buildAtlas": [
+      {
+        "params": [
+          {
+            "name": "images",
+            "type": "Map<Identifier, ByteArray>",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/ItemImageAtlas.kt",
+          "line": 86
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.atlas.ItemTextureRenderer.constructor": [
+      {
+        "params": [
+          {
+            "name": "scale",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/ItemImageAtlas.kt",
+          "line": 79
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.atlas.ItemTextureRenderer.findBlockToItemAliases": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/ItemImageAtlas.kt",
+          "line": 134
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.atlas.ItemTextureRenderer.findItemIdForBlock": [
+      {
+        "params": [
+          {
+            "name": "blockId",
+            "type": "Identifier",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "blockItem",
+            "type": "Item",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Identifier?",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/ItemImageAtlas.kt",
+          "line": 152
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.atlas.ItemTextureRenderer.renderItemToAtlas": [
+      {
+        "params": [
+          {
+            "name": "state",
+            "type": "TrackingItemStackRenderState",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "rect",
+            "type": "Rect2i",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/ItemImageAtlas.kt",
+          "line": 114
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.atlas.ItemTextureRenderer.renderTiles": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/ItemImageAtlas.kt",
+          "line": 92
         }
       }
     ],
@@ -72551,46 +73214,6 @@
         }
       }
     ],
-    "net.ccbluex.liquidbounce.render.gui.Atlas.constructor": [
-      {
-        "params": [
-          {
-            "name": "images",
-            "type": "Map<Identifier, ByteArray>",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "aliasMap",
-            "type": "Map<Identifier, Identifier>",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt",
-          "line": 72
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.gui.AtlasLookup.Found.constructor": [
-      {
-        "params": [
-          {
-            "name": "bytes",
-            "type": "ByteArray",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/AtlasLookup.kt",
-          "line": 25
-        }
-      }
-    ],
     "net.ccbluex.liquidbounce.render.gui.GuiCircleLutAtlas.Allocation.constructor": [
       {
         "params": [
@@ -72689,23 +73312,6 @@
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/GuiOverlapRearranger.kt",
           "line": 31
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.gui.ItemImageAtlas.getItemImage": [
-      {
-        "params": [
-          {
-            "name": "name",
-            "type": "Identifier",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "AtlasLookup",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt",
-          "line": 98
         }
       }
     ],
@@ -73379,297 +73985,6 @@
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemStackListRenderer.kt",
           "line": 86
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.gui.ItemTextureRenderer.close": [
-      {
-        "params": [],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt",
-          "line": 141
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.gui.ItemTextureRenderer.completeExceptionally": [
-      {
-        "params": [
-          {
-            "name": "result",
-            "type": "CompletableFuture<*>",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "throwable",
-            "type": "Throwable",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt",
-          "line": 290
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.gui.ItemTextureRenderer.constructor": [
-      {
-        "params": [
-          {
-            "name": "items",
-            "type": "Registry<Item>",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "scale",
-            "type": "Int",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt",
-          "line": 110
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.gui.ItemTextureRenderer.copyRectTo": [
-      {
-        "params": [
-          {
-            "name": "target",
-            "type": "NativeImage",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "rect",
-            "type": "Rect2i",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt",
-          "line": 317
-        },
-        "isExtension": true,
-        "receiver": "ByteBuffer"
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.gui.ItemTextureRenderer.encodeAsync": [
-      {
-        "params": [
-          {
-            "name": "atlasPixels",
-            "type": "ByteBuffer",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "itemMap",
-            "type": "Map<Identifier, Rect2i>",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "aliasMap",
-            "type": "Map<Identifier, Identifier>",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "result",
-            "type": "CompletableFuture<Atlas>",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt",
-          "line": 258
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.gui.ItemTextureRenderer.encodeItemImages": [
-      {
-        "params": [
-          {
-            "name": "atlasPixels",
-            "type": "ByteBuffer",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "itemMap",
-            "type": "Map<Identifier, Rect2i>",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "result",
-            "type": "CompletableFuture<Atlas>",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt",
-          "line": 297
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.gui.ItemTextureRenderer.findBlockToItemAliases": [
-      {
-        "params": [],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt",
-          "line": 366
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.gui.ItemTextureRenderer.findItemIdForBlock": [
-      {
-        "params": [
-          {
-            "name": "blockId",
-            "type": "Identifier",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "blockItem",
-            "type": "Item",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "Identifier?",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt",
-          "line": 384
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.gui.ItemTextureRenderer.processReadback": [
-      {
-        "params": [
-          {
-            "name": "readbackBuffer",
-            "type": "GpuBuffer",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "itemMap",
-            "type": "Map<Identifier, Rect2i>",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "aliasMap",
-            "type": "Map<Identifier, Identifier>",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "result",
-            "type": "CompletableFuture<Atlas>",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt",
-          "line": 235
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.gui.ItemTextureRenderer.render": [
-      {
-        "params": [],
-        "returns": "CompletableFuture<Atlas>",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt",
-          "line": 156
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.gui.ItemTextureRenderer.renderItemToAtlas": [
-      {
-        "params": [
-          {
-            "name": "state",
-            "type": "TrackingItemStackRenderState",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "scaledX",
-            "type": "Int",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "scaledY",
-            "type": "Int",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "itemPixelSize",
-            "type": "Int",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt",
-          "line": 337
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.gui.ItemTextureRenderer.renderItems": [
-      {
-        "params": [],
-        "returns": "Map<Identifier, Rect2i>",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt",
-          "line": 165
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.gui.ItemTextureRenderer.submitReadback": [
-      {
-        "params": [
-          {
-            "name": "itemMap",
-            "type": "Map<Identifier, Rect2i>",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "aliasMap",
-            "type": "Map<Identifier, Identifier>",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "CompletableFuture<Atlas>",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt",
-          "line": 210
         }
       }
     ],
@@ -103792,7 +104107,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PacketExtensions.kt",
-          "line": 41
+          "line": 42
         }
       }
     ],
@@ -103802,7 +104117,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PacketExtensions.kt",
-          "line": 48
+          "line": 49
         }
       }
     ],
@@ -103819,7 +104134,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PacketExtensions.kt",
-          "line": 52
+          "line": 53
         }
       }
     ],
@@ -103829,7 +104144,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PacketExtensions.kt",
-          "line": 64
+          "line": 65
         },
         "isExtension": true,
         "receiver": "ClientboundSetEntityMotionPacket"
@@ -106921,24 +107236,12 @@
         "receiver": "VertexConsumer"
       }
     ],
-    "net.ccbluex.liquidbounce.utils.render.WireframePlayer.render": [
+    "net.ccbluex.liquidbounce.utils.render.WireframePlayer.constructor": [
       {
         "params": [
           {
-            "name": "event",
-            "type": "WorldRenderEvent",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "color",
-            "type": "Color4b",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "outlineColor",
-            "type": "Color4b",
+            "name": "env",
+            "type": "WorldRenderEnvironment",
             "nullable": false,
             "vararg": false
           }
@@ -106946,11 +107249,11 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/WireframePlayer.kt",
-          "line": 77
+          "line": 83
         }
       }
     ],
-    "net.ccbluex.liquidbounce.utils.render.WireframePlayer.renderCrouching": [
+    "net.ccbluex.liquidbounce.utils.render.WireframePlayerKt.render": [
       {
         "params": [
           {
@@ -106964,18 +107267,53 @@
             "type": "Color4b",
             "nullable": false,
             "vararg": false
+          },
+          {
+            "name": "noDepthTest",
+            "type": "Boolean",
+            "nullable": false,
+            "vararg": false
           }
         ],
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/WireframePlayer.kt",
-          "line": 124
+          "line": 84
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.utils.render.WireframePlayerKt.renderCrouching": [
+      {
+        "params": [
+          {
+            "name": "color",
+            "type": "Color4b",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "outlineColor",
+            "type": "Color4b",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "noDepthTest",
+            "type": "Boolean",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/WireframePlayer.kt",
+          "line": 131
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
       }
     ],
-    "net.ccbluex.liquidbounce.utils.render.WireframePlayer.renderPart": [
+    "net.ccbluex.liquidbounce.utils.render.WireframePlayerKt.renderPart": [
       {
         "params": [
           {
@@ -107019,18 +107357,24 @@
             "type": "Float",
             "nullable": false,
             "vararg": false
+          },
+          {
+            "name": "noDepthTest",
+            "type": "Boolean",
+            "nullable": false,
+            "vararg": false
           }
         ],
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/WireframePlayer.kt",
-          "line": 211
+          "line": 229
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
       }
     ],
-    "net.ccbluex.liquidbounce.utils.render.WireframePlayer.renderStanding": [
+    "net.ccbluex.liquidbounce.utils.render.WireframePlayerKt.renderStanding": [
       {
         "params": [
           {
@@ -107044,18 +107388,24 @@
             "type": "Color4b",
             "nullable": false,
             "vararg": false
+          },
+          {
+            "name": "noDepthTest",
+            "type": "Boolean",
+            "nullable": false,
+            "vararg": false
           }
         ],
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/WireframePlayer.kt",
-          "line": 106
+          "line": 111
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
       }
     ],
-    "net.ccbluex.liquidbounce.utils.render.WireframePlayer.renderSwimming": [
+    "net.ccbluex.liquidbounce.utils.render.WireframePlayerKt.renderSwimming": [
       {
         "params": [
           {
@@ -107069,18 +107419,24 @@
             "type": "Color4b",
             "nullable": false,
             "vararg": false
+          },
+          {
+            "name": "noDepthTest",
+            "type": "Boolean",
+            "nullable": false,
+            "vararg": false
           }
         ],
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/WireframePlayer.kt",
-          "line": 160
+          "line": 172
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
       }
     ],
-    "net.ccbluex.liquidbounce.utils.render.WireframePlayer.setPosRot": [
+    "net.ccbluex.liquidbounce.utils.render.WireframePlayerKt.setPosRot": [
       {
         "params": [
           {
@@ -107117,11 +107473,11 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/WireframePlayer.kt",
-          "line": 100
+          "line": 105
         }
       }
     ],
-    "net.ccbluex.liquidbounce.utils.render.WireframePlayer.setRotation": [
+    "net.ccbluex.liquidbounce.utils.render.WireframePlayerKt.setRotation": [
       {
         "params": [
           {
@@ -107134,7 +107490,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/WireframePlayer.kt",
-          "line": 95
+          "line": 100
         }
       }
     ],

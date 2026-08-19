@@ -20,6 +20,7 @@ export class VertexBuilderKt extends Object {
     static addShapeOutlines(self: VertexConsumer, pose: Matrix4fc, shape: VoxelShape, color: Color4b | null): void;
     static addShapeSideFaces(self: VertexConsumer, pose: Matrix4fc, shape: VoxelShape, side: Direction, hitPos: Vec3, color: Color4b | null): void;
     static addShapeSideOutlines(self: VertexConsumer, pose: Matrix4fc, shape: VoxelShape, side: Direction, hitPos: Vec3, color: Color4b | null): void;
+    static addTorusQuad(self: VertexConsumer, pose: PoseStack$Pose, innerSegments: number, outerCurAngle: number, outerNextAngle: number, outerCurRadius: number, outerNextRadius: number, innerRadius: number, innerI: number, color: Color4b): void;
     static addVertex(self: VertexConsumer, pose: PoseStack$Pose, x: number, y: number, z: number): VertexConsumer;
     static addVertex(self: VertexConsumer, pose: PoseStack$Pose, pos: Vec3f): VertexConsumer;
     static addVertex(self: VertexConsumer, pose: PoseStack$Pose, pos: Vec3): VertexConsumer;
@@ -33,9 +34,10 @@ export class VertexBuilderKt extends Object {
      *
      * @param origin a preferred origin; the lambda receives the resolved origin that must be used for relative vertex positions.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7419c75563c98eff050759c8dc8d8c35ed59d950/src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt#L233 | src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt:233}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt#L287 | src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt:287}
      */
     static buildMesh(self: CachedMeshStorage, pipeline: RenderPipeline, origin: BlockPos, block: (param0: VertexConsumer, param1: PoseStack, param2: BlockPos) => void): void;
+    static segmentAngle(i: number, segments: number): number;
     static setColor(self: VertexConsumer, color: Color4b): VertexConsumer;
     static setNormal(self: VertexConsumer, pose: PoseStack$Pose, normalVector: Vec3f): VertexConsumer;
 }

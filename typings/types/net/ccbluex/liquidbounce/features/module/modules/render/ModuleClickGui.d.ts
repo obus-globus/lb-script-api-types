@@ -10,7 +10,7 @@ import type { CustomStandaloneMinecraftScreen } from '../../../../../../../net/c
  *
  * Shows you an easy-to-use menu to toggle and configure modules.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7419c75563c98eff050759c8dc8d8c35ed59d950/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleClickGui.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleClickGui.kt:51}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleClickGui.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleClickGui.kt:51}
  */
 export class ModuleClickGui extends ClientModule {
     static INSTANCE: ModuleClickGui;

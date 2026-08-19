@@ -3,7 +3,7 @@ import type { ToggleableValueGroup } from '../../../../../../../../../net/ccblue
 /**
  * Check if we are in danger by going through all possible targets and checking if they are looking at us.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7419c75563c98eff050759c8dc8d8c35ed59d950/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraAutoBlock.kt#L112 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraAutoBlock.kt:112}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraAutoBlock.kt#L112 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraAutoBlock.kt:112}
  */
 export class KillAuraAutoBlock$OnlyWhenInDanger extends ToggleableValueGroup {
     static INSTANCE: KillAuraAutoBlock$OnlyWhenInDanger;

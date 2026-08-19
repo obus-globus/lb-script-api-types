@@ -2313,7 +2313,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandDebug.kt",
-      "line": 171
+      "line": 174
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.client.CommandFriend": {
@@ -2684,7 +2684,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/FakePlayer.kt",
-      "line": 39
+      "line": 40
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.fakeplayer.FakePlayer.knockback": {
@@ -2692,7 +2692,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/FakePlayer.kt",
-      "line": 114
+      "line": 115
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.fakeplayer.FakePlayer.loadAttributes": {
@@ -2700,7 +2700,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/FakePlayer.kt",
-      "line": 48
+      "line": 49
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.fakeplayer.FakePlayer.setHealth": {
@@ -2712,7 +2712,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/FakePlayer.kt",
-      "line": 77
+      "line": 78
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.fakeplayer.FakePlayer.tick": {
@@ -2720,7 +2720,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/FakePlayer.kt",
-      "line": 98
+      "line": 99
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.fakeplayer.MovingFakePlayer": {
@@ -3158,7 +3158,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt",
-      "line": 281
+      "line": 282
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.ModuleAimbot": {
@@ -8973,14 +8973,6 @@
       "line": 102
     }
   },
-  "net.ccbluex.liquidbounce.features.module.modules.render.hats.HatsMode": {
-    "doc": "@author minecrrrr",
-    "kind": "class",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hats/HatsMode.kt",
-      "line": 51
-    }
-  },
   "net.ccbluex.liquidbounce.features.module.modules.render.hats.ModuleHats": {
     "doc": "@author minecrrrr",
     "kind": "object",
@@ -8994,7 +8986,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hats/modes/HatsCone.kt",
-      "line": 36
+      "line": 37
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.hats.modes.HatsFlower": {
@@ -9002,7 +8994,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hats/modes/HatsFlower.kt",
-      "line": 35
+      "line": 37
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.hats.modes.HatsHalo": {
@@ -9010,7 +9002,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hats/modes/HatsHalo.kt",
-      "line": 33
+      "line": 35
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.hats.modes.HatsOrbs": {
@@ -9018,7 +9010,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hats/modes/HatsOrbs.kt",
-      "line": 38
+      "line": 39
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.hats.modes.HatsStar": {
@@ -9026,7 +9018,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hats/modes/HatsStar.kt",
-      "line": 36
+      "line": 38
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.murdermystery.UuidBasedMurderMysteryMode.currentPlayerType": {
@@ -11092,7 +11084,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt",
-      "line": 233
+      "line": 287
     }
   },
   "net.ccbluex.liquidbounce.render.ClientRenderPipelines.JCEF.Blit": {
@@ -11550,6 +11542,63 @@
       }
     }
   ],
+  "net.ccbluex.liquidbounce.render.atlas.AbstractAtlasRenderer.buildAtlas": {
+    "doc": "Called on [Util.backgroundExecutor].",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/AbstractAtlasRenderer.kt",
+      "line": 103
+    }
+  },
+  "net.ccbluex.liquidbounce.render.atlas.Atlas.aliasMap": {
+    "doc": "Contains aliases. For example `minecraft:blue_wall_banner` -> `minecraft:wall_banner` which is necessary since\n`minecraft:blue_wall_banner` has no texture.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/ItemImageAtlas.kt",
+      "line": 49
+    }
+  },
+  "net.ccbluex.liquidbounce.render.atlas.ItemTextureRenderer": {
+    "doc": "",
+    "see": [
+      "net.minecraft.client.gui.render.GuiItemAtlas"
+    ],
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/ItemImageAtlas.kt",
+      "line": 79
+    }
+  },
+  "net.ccbluex.liquidbounce.render.atlas.ItemTextureRenderer.findItemIdForBlock": {
+    "doc": "Resolve a block id to the item used for its icon. Most blocks expose this\ndirectly through [net.minecraft.world.level.block.Block.asItem]. Wall variants do not have their own\nBlockItem, so their item id is the corresponding non-wall variant.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/ItemImageAtlas.kt",
+      "line": 152
+    }
+  },
+  "net.ccbluex.liquidbounce.render.atlas.ItemTextureRenderer.renderItemToAtlas": {
+    "doc": "",
+    "see": [
+      "net.minecraft.client.gui.render.GuiItemAtlas.drawToSlot"
+    ],
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/ItemImageAtlas.kt",
+      "line": 114
+    }
+  },
+  "net.ccbluex.liquidbounce.render.atlas.ItemTextureRenderer.renderTiles": {
+    "doc": "",
+    "see": [
+      "GuiRenderer.prepareItemElements\nFrom 1.21.5 DrawContext code"
+    ],
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/ItemImageAtlas.kt",
+      "line": 92
+    }
+  },
   "net.ccbluex.liquidbounce.render.buffers.CachedUniform": {
     "doc": "Retains the last uniform slice across frames and uploads a new one only when [T] changes.\n\nThe backing ring buffer prevents an update from overwriting data still consumed by the GPU.",
     "kind": "class",
@@ -12061,14 +12110,6 @@
       "line": 100
     }
   },
-  "net.ccbluex.liquidbounce.render.gui.Atlas.aliasMap": {
-    "doc": "Contains aliases. For example `minecraft:blue_wall_banner` -> `minecraft:wall_banner` which is necessary since\n`minecraft:blue_wall_banner` has no texture.",
-    "kind": "property",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt",
-      "line": 78
-    }
-  },
   "net.ccbluex.liquidbounce.render.gui.GuiCircleLutAtlas": {
     "doc": "Shared LUT atlas used by GUI circle shader rendering.\n\nEach requested circle writes one row of angle->color values into a [DynamicTexture].\nThe shader then samples that row by index to reproduce the caller-provided [Float2IntFunction].",
     "kind": "object",
@@ -12132,47 +12173,6 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemStackListRenderState.kt",
       "line": 74
-    }
-  },
-  "net.ccbluex.liquidbounce.render.gui.ItemTextureRenderer": {
-    "doc": "",
-    "see": [
-      "net.minecraft.client.gui.render.GuiItemAtlas"
-    ],
-    "kind": "class",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt",
-      "line": 109
-    }
-  },
-  "net.ccbluex.liquidbounce.render.gui.ItemTextureRenderer.findItemIdForBlock": {
-    "doc": "Resolve a block id to the item used for its icon. Most blocks expose this\ndirectly through [net.minecraft.world.level.block.Block.asItem]. Wall variants do not have their own\nBlockItem, so their item id is the corresponding non-wall variant.",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt",
-      "line": 384
-    }
-  },
-  "net.ccbluex.liquidbounce.render.gui.ItemTextureRenderer.render": {
-    "doc": "",
-    "see": [
-      "net.minecraft.client.gui.render.GuiRenderer.prepareItemElements\nFrom 1.21.5 DrawContext code"
-    ],
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt",
-      "line": 156
-    }
-  },
-  "net.ccbluex.liquidbounce.render.gui.ItemTextureRenderer.renderItemToAtlas": {
-    "doc": "",
-    "see": [
-      "net.minecraft.client.gui.render.GuiItemAtlas.drawToSlot"
-    ],
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt",
-      "line": 337
     }
   },
   "net.ccbluex.liquidbounce.render.mesh.MeshBuildScope": {
@@ -17097,7 +17097,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PacketExtensions.kt",
-      "line": 75
+      "line": 76
     }
   },
   "net.ccbluex.liquidbounce.utils.network.isDeathProtection": {
@@ -17108,7 +17108,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PacketExtensions.kt",
-      "line": 86
+      "line": 87
     }
   },
   "net.ccbluex.liquidbounce.utils.network.packetRegistry": {

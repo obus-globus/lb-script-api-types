@@ -6,7 +6,7 @@ import type { InventoryRequirements } from '../../../../../net/ccbluex/liquidbou
  * This can be used to ensure that the player is not moving or rotating while interacting with the inventory.
  * It Also allows setting delays for opening, clicking and closing the inventory.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7419c75563c98eff050759c8dc8d8c35ed59d950/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryValueGroups.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryValueGroups.kt:59}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryValueGroups.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryValueGroups.kt:59}
  */
 export class InventoryConstraints extends ValueGroup {
     constructor()
@@ -23,7 +23,7 @@ export class InventoryConstraints extends ValueGroup {
     /**
      * Whether the constraints are met, this will be checked before any inventory actions are performed.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7419c75563c98eff050759c8dc8d8c35ed59d950/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryValueGroups.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryValueGroups.kt:78}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryValueGroups.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryValueGroups.kt:78}
      */
     passesRequirements(action: InventoryAction): boolean;
     protected requirementChoices(): InventoryRequirements[];

@@ -5,11 +5,6 @@ import type { EventHook } from '../../../../../../../../net/ccbluex/liquidbounce
 import type { WorldRenderEvent } from '../../../../../../../../net/ccbluex/liquidbounce/event/events/WorldRenderEvent.d.ts'
 import type { HatsMode$EquipOffset } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/render/hats/HatsMode$EquipOffset.d.ts'
 import type { HatsMode$FriendsOptions } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/render/hats/HatsMode$FriendsOptions.d.ts'
-/**
- * @author minecrrrr
- *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7419c75563c98eff050759c8dc8d8c35ed59d950/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hats/HatsMode.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hats/HatsMode.kt:51}
- */
 export abstract class HatsMode extends Mode {
     static Companion: Tagged$Companion;
     constructor(name: string)
@@ -24,7 +19,5 @@ export abstract class HatsMode extends Mode {
     // private renderHandler: EventHook<WorldRenderEvent>;
     // private showInFirstPerson: boolean;
     // private /*not mapped: */ getShowInFirstPerson(): boolean;
-    protected getAngle(i: number, segments: number): number;
-    protected getNextAngle(i: number, segments: number): number;
     protected getRotationAngle(speed: number): number;
 }

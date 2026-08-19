@@ -14,7 +14,7 @@ import type { Item } from '../../../../../../../../../net/minecraft/world/item/I
  * 2. the player's y motion is fast enough to be below {@link yMotionThreshold}.
  * 3. the simulation predicts the player will not reach solid ground within 40 ticks.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/7419c75563c98eff050759c8dc8d8c35ed59d950/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/antivoid/mode/AntiVoidUseItemMode.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/antivoid/mode/AntiVoidUseItemMode.kt:43}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/antivoid/mode/AntiVoidUseItemMode.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/antivoid/mode/AntiVoidUseItemMode.kt:43}
  */
 export class AntiVoidUseItemMode extends AntiVoidMode {
     static Companion: Tagged$Companion;
