@@ -3,7 +3,9 @@ import type { ToggleableValueGroup } from '../../../../../../../../net/ccbluex/l
 import type { EnchantmentInfo } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/render/nametags/EnchantmentInfo.d.ts'
 import type { NametagEnchantmentRenderer$EnchantCell } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/render/nametags/NametagEnchantmentRenderer$EnchantCell.d.ts'
 import type { Color4b } from '../../../../../../../../net/ccbluex/liquidbounce/render/engine/type/Color4b.d.ts'
+import type { Filter } from '../../../../../../../../net/ccbluex/liquidbounce/utils/collection/Filter.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
+import type { Identifier } from '../../../../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { ItemStack } from '../../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class NametagEnchantmentRenderer extends ToggleableValueGroup {
     static INSTANCE: NametagEnchantmentRenderer;
@@ -18,6 +20,10 @@ export class NametagEnchantmentRenderer extends ToggleableValueGroup {
     // private backgroundRadius: number;
     // private /*not mapped: */ getBackgroundRadius(): number;
     // private enchantmentInfoComparator: (param0: EnchantmentInfo, param1: EnchantmentInfo) => number;
+    // private enchantments: Identifier[];
+    // private /*not mapped: */ getEnchantments(): Identifier[];
+    // private filter: Filter;
+    // private /*not mapped: */ getFilter(): Filter;
     // private /*not mapped: */ getLabelBackgroundRadius(): number;
     // private /*not mapped: */ getLabelTextScale(): number;
     // private maxCountPerItem: number;

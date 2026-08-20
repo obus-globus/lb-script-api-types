@@ -49,7 +49,7 @@ export class ValueGroup extends Value<Value<Object>[]> {
      * Stores the {@link ValueGroup} in which
      * the {@link ValueGroup} is included, can be null.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt#L113 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt:113}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt#L104 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt:104}
      */
     base: ValueGroup | null;
     /**
@@ -57,7 +57,7 @@ export class ValueGroup extends Value<Value<Object>[]> {
      * otherwise the {@link baseKey} from {@link base}
      * is used when its base is null and so on.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt#L120 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt:120}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt#L111 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt:111}
      */
     readonly baseKey: string;
     readonly containedValues: Value<Object>[];
@@ -101,6 +101,7 @@ export class ValueGroup extends Value<Value<Object>[]> {
     curve(name: string, default_: Vector2f[], xAxis: CurveValue$Axis, yAxis: CurveValue$Axis, tension: number): CurveValue;
     drop<T extends ValueGroup>(valueGroup: T): T;
     easing(name: string, default_: Easing): ChoiceListValue<Easing>;
+    enchantments<C extends Identifier[]>(name: string, default_: C): RegistryListValue<C, Identifier>;
     entityTypes<C extends EntityType<any>[]>(name: string, default_: C): RegistryListValue<C, EntityType<any>>;
     enumChoice<T extends Enum<T> & Tagged>(name: string, default_: T, aliases: string[]): ChoiceListValue<T>;
     enumChoice<T extends Tagged>(name: string, default_: T, choices: T[], aliases: string[]): ChoiceListValue<T>;
@@ -126,7 +127,7 @@ export class ValueGroup extends Value<Value<Object>[]> {
     /**
      * Allows dynamic groups to create their children before stored values are applied.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt#L107 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt:107}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt#L98 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt:98}
      */
     prepareDeserialize(jsonObject: JsonObject): void;
     // private rangedValue<T extends unknown>(name: string, defaultValue: T, range: ClosedRange<any>, suffix: string, valueType: ValueType, aliases: string[]): RangedValue<T>;
@@ -137,7 +138,7 @@ export class ValueGroup extends Value<Value<Object>[]> {
     /**
      * Restore all values to their default values
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt#L294 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt:294}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt#L285 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt:285}
      */
     restore(): void;
     s2cPackets<C extends Identifier[]>(name: string, default_: C): RegistryListValue<C, Identifier>;
@@ -156,7 +157,7 @@ export class ValueGroup extends Value<Value<Object>[]> {
     /**
      * Walks the path of the {@link ValueGroup} and its children
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt#L132 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt:132}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt#L123 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt:123}
      */
     walkKeyPath(previousBaseKey: string | null): void;
 }

@@ -6,11 +6,6 @@ import type { Tagged$Companion } from '../../../../../../../../../net/ccbluex/li
 import type { TagKey } from '../../../../../../../../../net/minecraft/tags/TagKey.d.ts'
 import type { Item } from '../../../../../../../../../net/minecraft/world/item/Item.d.ts'
 import type { ItemStack } from '../../../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
-/**
- * @see ArmorMaterials
- *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt#L83 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt:83}
- */
 export class CustomAntiBotMode$Armor$ArmorPredicate extends Enum<CustomAntiBotMode$Armor$ArmorPredicate> implements Tagged {
     static CHAIN: CustomAntiBotMode$Armor$ArmorPredicate;
     static Companion: Tagged$Companion;

@@ -4,7 +4,7 @@ import type { Player } from '../../../../../net/minecraft/world/entity/player/Pl
 /**
  * Warning: UseHotbarSlotOrOffHand won't stimulate this event
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/event/events/PlayerEvents.kt#L81 | src/main/kotlin/net/ccbluex/liquidbounce/event/events/PlayerEvents.kt:81}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/event/events/PlayerEvents.kt#L81 | src/main/kotlin/net/ccbluex/liquidbounce/event/events/PlayerEvents.kt:81}
  */
 export class PlayerInteractItemEvent extends CancellableEvent {
     constructor(player: Player, hand: InteractionHand)

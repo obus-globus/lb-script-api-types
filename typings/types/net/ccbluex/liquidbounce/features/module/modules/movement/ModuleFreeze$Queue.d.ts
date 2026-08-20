@@ -7,14 +7,14 @@ import type { TransferOrigin } from '../../../../../../../net/ccbluex/liquidboun
 /**
  * Queue network communication - acts as network lag
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleFreeze.kt#L168 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleFreeze.kt:168}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleFreeze.kt#L164 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleFreeze.kt:164}
  */
 export class ModuleFreeze$Queue extends Mode {
     static Companion: Tagged$Companion;
     static INSTANCE: ModuleFreeze$Queue;
     // private fakeLagHandler: EventHook<BlinkPacketEvent>;
-    // private origin: TransferOrigin[];
-    // private /*not mapped: */ getOrigin(): TransferOrigin[];
+    // private origins: TransferOrigin[];
+    // private /*not mapped: */ getOrigins(): TransferOrigin[];
     readonly parent: ModeValueGroup<Mode>;
     getParent(): ModeValueGroup<Mode>;
 }

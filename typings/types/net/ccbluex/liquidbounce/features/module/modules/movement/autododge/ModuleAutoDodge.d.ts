@@ -18,7 +18,7 @@ export class ModuleAutoDodge extends ClientModule {
     /**
      * Returns the index of the first position packet that avoids all arrows in the next X seconds
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/autododge/ModuleAutoDodge.kt#L164 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/autododge/ModuleAutoDodge.kt:164}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/autododge/ModuleAutoDodge.kt#L164 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/autododge/ModuleAutoDodge.kt:164}
      */
     findAvoidingArrowPosition(): ModuleAutoDodge$EvadingPacket | null;
     getInflictedHit(pos: Vec3): ModuleAutoDodge$HitInfo | null;

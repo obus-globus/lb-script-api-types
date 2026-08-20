@@ -6,7 +6,7 @@ import type { Vector2ic } from '../../../../../../org/joml/Vector2ic.d.ts'
 /**
  * Represents a browser viewport with position, dimensions and rendering quality utilities
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserViewport.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserViewport.kt:32}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserViewport.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserViewport.kt:32}
  */
 export class BrowserViewport extends Record {
     static Companion: BrowserViewport$Companion;
@@ -33,13 +33,13 @@ export class BrowserViewport extends Record {
      *
      * @returns Pair of (scaledWidth, scaledHeight)
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserViewport.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserViewport.kt:52}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserViewport.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserViewport.kt:52}
      */
     getScaledDimensions(quality: number): Vector2ic;
     /**
      * Calculate zoom level based on quality factor
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserViewport.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserViewport.kt:61}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserViewport.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserViewport.kt:61}
      */
     getZoomLevel(quality: number): number;
     hashCode(): number;
@@ -49,7 +49,7 @@ export class BrowserViewport extends Record {
      *
      * @returns Pair of (transformedX, transformedY) coordinates
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserViewport.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserViewport.kt:45}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserViewport.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserViewport.kt:45}
      */
     transform(globalX: number, globalY: number): Vector2dc;
     /**
@@ -57,7 +57,7 @@ export class BrowserViewport extends Record {
      *
      * @returns Pair of (scaledX, scaledY) coordinates
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserViewport.kt#L67 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserViewport.kt:67}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserViewport.kt#L67 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserViewport.kt:67}
      */
     transformMouse(mouseX: number, mouseY: number, quality: number): Vector2ic;
 }

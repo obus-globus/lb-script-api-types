@@ -13,14 +13,14 @@ import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
  * This is currently used as the flagship implementation. When the distance between the source and target pos is low,
  * this implementation often malfunctions. Use a backup calculator for low distances instead.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/projectiles/CydhranianProjectileAngleCalculator.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/projectiles/CydhranianProjectileAngleCalculator.kt:46}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/projectiles/CydhranianProjectileAngleCalculator.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/projectiles/CydhranianProjectileAngleCalculator.kt:46}
  */
 export class CydhranianProjectileAngleCalculator extends Object implements ProjectileAngleCalculator {
     static INSTANCE: CydhranianProjectileAngleCalculator;
     /**
      * @param sourcePos the position the projectile originates from (usually the player's eyePos)
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/projectiles/CydhranianProjectileAngleCalculator.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/projectiles/CydhranianProjectileAngleCalculator.kt:50}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/projectiles/CydhranianProjectileAngleCalculator.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/projectiles/CydhranianProjectileAngleCalculator.kt:50}
      */
     calculateAngleFor(projectileInfo: TrajectoryInfo, sourcePos: Vec3, targetPosFunction: PositionExtrapolation, targetShape: EntityDimensions): Rotation | null;
     calculateAngleForEntity(projectileInfo: TrajectoryInfo, entity: LivingEntity): Rotation | null;

@@ -9,6 +9,7 @@ export class CollectionExtensionsKt extends Object {
     static contains<T extends unknown>(self: ColorCollection<T>, e: T): boolean;
     static contains<T extends unknown>(self: WeatheringCopperCollection$ByState<T>, e: T): boolean;
     static contains<T extends unknown>(self: WeatheringCopperCollection<T>, e: T): boolean;
+    static getOrSet<T extends unknown>(self: (T | null)[], index: number, defaultValue: () => T): T;
     static matchesAll<T extends unknown>(self: (param0: T) => boolean[], t: T): boolean;
     static matchesAny<T extends unknown>(self: (param0: T) => boolean[], t: T): boolean;
     static toOrderedSet<E extends unknown>(self: E[]): E[];

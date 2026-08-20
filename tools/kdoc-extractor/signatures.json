@@ -7381,7 +7381,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 578
+          "line": 572
         },
         "isExtension": true,
         "receiver": "ValueGroup"
@@ -7406,7 +7406,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 432
+          "line": 423
         }
       },
       {
@@ -7427,7 +7427,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 437
+          "line": 428
         }
       }
     ],
@@ -7450,7 +7450,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 458
+          "line": 449
         }
       }
     ],
@@ -7473,7 +7473,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 478
+          "line": 469
         }
       }
     ],
@@ -7502,7 +7502,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 394
+          "line": 385
         }
       }
     ],
@@ -7525,7 +7525,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 495
+          "line": 489
         }
       }
     ],
@@ -7535,7 +7535,7 @@
         "returns": "Array<ValueGroup>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 210
+          "line": 201
         }
       },
       {
@@ -7550,7 +7550,7 @@
         "returns": "Sequence<ValueGroup>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 258
+          "line": 249
         }
       }
     ],
@@ -7567,7 +7567,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 218
+          "line": 209
         }
       }
     ],
@@ -7577,7 +7577,7 @@
         "returns": "Array<Value<*>>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 179
+          "line": 170
         }
       },
       {
@@ -7592,7 +7592,7 @@
         "returns": "Sequence<Value<*>>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 231
+          "line": 222
         }
       }
     ],
@@ -7609,7 +7609,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 187
+          "line": 178
         }
       }
     ],
@@ -7632,7 +7632,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 456
+          "line": 447
         }
       }
     ],
@@ -7642,7 +7642,7 @@
         "returns": "String",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 159
+          "line": 150
         }
       }
     ],
@@ -7683,7 +7683,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 78
+          "line": 69
         }
       }
     ],
@@ -7724,7 +7724,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 504
+          "line": 498
         }
       },
       {
@@ -7745,7 +7745,7 @@
         "returns": "CurveValue",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 513
+          "line": 507
         }
       }
     ],
@@ -7762,7 +7762,7 @@
         "returns": "T",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 326
+          "line": 317
         }
       }
     ],
@@ -7785,7 +7785,30 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 454
+          "line": 445
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.config.types.group.ValueGroup.enchantments": [
+      {
+        "params": [
+          {
+            "name": "name",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "default",
+            "type": "C",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
+          "line": 486
         }
       }
     ],
@@ -7808,7 +7831,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 501
+          "line": 495
         }
       }
     ],
@@ -7837,7 +7860,7 @@
         "returns": "ChoiceListValue<T>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 564
+          "line": 558
         }
       },
       {
@@ -7870,7 +7893,7 @@
         "returns": "ChoiceListValue<T>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 570
+          "line": 564
         }
       }
     ],
@@ -7905,7 +7928,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 519
+          "line": 513
         }
       }
     ],
@@ -7946,7 +7969,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 400
+          "line": 391
         }
       }
     ],
@@ -7987,7 +8010,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 408
+          "line": 399
         }
       }
     ],
@@ -8004,7 +8027,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 298
+          "line": 289
         }
       }
     ],
@@ -8045,7 +8068,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 416
+          "line": 407
         }
       }
     ],
@@ -8086,7 +8109,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 424
+          "line": 415
         }
       }
     ],
@@ -8109,7 +8132,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 481
+          "line": 472
         }
       }
     ],
@@ -8144,7 +8167,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 355
+          "line": 346
         }
       },
       {
@@ -8165,7 +8188,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 486
+          "line": 477
         }
       }
     ],
@@ -8188,7 +8211,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 483
+          "line": 474
         }
       }
     ],
@@ -8211,7 +8234,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 439
+          "line": 430
         }
       },
       {
@@ -8232,7 +8255,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 441
+          "line": 432
         }
       }
     ],
@@ -8261,7 +8284,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 343
+          "line": 334
         }
       }
     ],
@@ -8284,7 +8307,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 492
+          "line": 483
         }
       }
     ],
@@ -8319,7 +8342,7 @@
         "returns": "ModeValueGroup<T>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 581
+          "line": 575
         }
       },
       {
@@ -8352,7 +8375,7 @@
         "returns": "ModeValueGroup<T>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 599
+          "line": 593
         }
       },
       {
@@ -8385,7 +8408,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 610
+          "line": 604
         }
       }
     ],
@@ -8414,7 +8437,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 526
+          "line": 520
         }
       },
       {
@@ -8441,7 +8464,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 533
+          "line": 527
         }
       },
       {
@@ -8474,7 +8497,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 540
+          "line": 534
         }
       },
       {
@@ -8507,7 +8530,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 548
+          "line": 542
         }
       },
       {
@@ -8546,7 +8569,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 556
+          "line": 550
         }
       }
     ],
@@ -8575,7 +8598,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 349
+          "line": 340
         }
       }
     ],
@@ -8592,7 +8615,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 107
+          "line": 98
         }
       }
     ],
@@ -8639,7 +8662,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 374
+          "line": 365
         }
       }
     ],
@@ -8662,7 +8685,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 446
+          "line": 437
         }
       }
     ],
@@ -8685,7 +8708,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 451
+          "line": 442
         }
       }
     ],
@@ -8714,7 +8737,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 362
+          "line": 353
         }
       }
     ],
@@ -8743,7 +8766,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 368
+          "line": 359
         }
       }
     ],
@@ -8753,7 +8776,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 294
+          "line": 285
         }
       }
     ],
@@ -8776,7 +8799,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 498
+          "line": 492
         }
       }
     ],
@@ -8799,7 +8822,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 281
+          "line": 272
         }
       }
     ],
@@ -8822,7 +8845,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 489
+          "line": 480
         }
       }
     ],
@@ -8845,7 +8868,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 444
+          "line": 435
         }
       }
     ],
@@ -8868,7 +8891,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 448
+          "line": 439
         }
       }
     ],
@@ -8885,7 +8908,7 @@
         "returns": "T",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 308
+          "line": 299
         }
       }
     ],
@@ -8902,7 +8925,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 322
+          "line": 313
         }
       }
     ],
@@ -8937,7 +8960,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 336
+          "line": 327
         }
       },
       {
@@ -8952,7 +8975,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 617
+          "line": 611
         }
       }
     ],
@@ -8975,7 +8998,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 460
+          "line": 451
         }
       }
     ],
@@ -9010,7 +9033,7 @@
         "returns": "Value<Vec3>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 470
+          "line": 461
         }
       }
     ],
@@ -9045,7 +9068,7 @@
         "returns": "Value<Vec3i>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 462
+          "line": 453
         }
       }
     ],
@@ -9055,7 +9078,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 123
+          "line": 114
         }
       }
     ],
@@ -9072,7 +9095,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 132
+          "line": 123
         }
       }
     ],
@@ -30769,6 +30792,23 @@
         }
       }
     ],
+    "net.ccbluex.liquidbounce.features.module.modules.misc.antibot.modes.Age.isBot": [
+      {
+        "params": [
+          {
+            "name": "entity",
+            "type": "Player",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Boolean",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt",
+          "line": 75
+        }
+      }
+    ],
     "net.ccbluex.liquidbounce.features.module.modules.misc.antibot.modes.AntiBotMode.constructor": [
       {
         "params": [
@@ -30813,24 +30853,7 @@
         }
       }
     ],
-    "net.ccbluex.liquidbounce.features.module.modules.misc.antibot.modes.CustomAntiBotMode.Age.isBot": [
-      {
-        "params": [
-          {
-            "name": "entity",
-            "type": "Player",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "Boolean",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt",
-          "line": 75
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.misc.antibot.modes.CustomAntiBotMode.Armor.ArmorPredicate.constructor": [
+    "net.ccbluex.liquidbounce.features.module.modules.misc.antibot.modes.Armor.ArmorPredicate.constructor": [
       {
         "params": [
           {
@@ -30916,7 +30939,7 @@
         }
       }
     ],
-    "net.ccbluex.liquidbounce.features.module.modules.misc.antibot.modes.CustomAntiBotMode.Armor.isValid": [
+    "net.ccbluex.liquidbounce.features.module.modules.misc.antibot.modes.Armor.isValid": [
       {
         "params": [
           {
@@ -30930,124 +30953,6 @@
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt",
           "line": 168
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.misc.antibot.modes.CustomAntiBotMode.CustomConditions.constructor": [
-      {
-        "params": [
-          {
-            "name": "tag",
-            "type": "String",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "isBot",
-            "type": "AntiBotPredicate",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt",
-          "line": 345
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.misc.antibot.modes.CustomAntiBotMode.Name.CharacterValidator.constructor": [
-      {
-        "params": [
-          {
-            "name": "tag",
-            "type": "String",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt",
-          "line": 187
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.misc.antibot.modes.CustomAntiBotMode.Name.CharacterValidator.test": [
-      {
-        "params": [
-          {
-            "name": "string",
-            "type": "String",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "Boolean",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt",
-          "line": 210
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.misc.antibot.modes.CustomAntiBotMode.Name.isBot": [
-      {
-        "params": [
-          {
-            "name": "entity",
-            "type": "Player",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "Boolean",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt",
-          "line": 215
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.misc.antibot.modes.CustomAntiBotMode.hasInvalidGround": [
-      {
-        "params": [
-          {
-            "name": "player",
-            "type": "Player",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "Boolean",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt",
-          "line": 318
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.misc.antibot.modes.CustomAntiBotMode.isBot": [
-      {
-        "params": [
-          {
-            "name": "entity",
-            "type": "Player",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "Boolean",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt",
-          "line": 322
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.misc.antibot.modes.CustomAntiBotMode.reset": [
-      {
-        "params": [],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt",
-          "line": 334
         }
       }
     ],
@@ -31260,6 +31165,57 @@
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/MatrixAntiBotMode.kt",
           "line": 105
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.misc.antibot.modes.Name.CharacterValidator.constructor": [
+      {
+        "params": [
+          {
+            "name": "tag",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt",
+          "line": 187
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.misc.antibot.modes.Name.CharacterValidator.test": [
+      {
+        "params": [
+          {
+            "name": "string",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Boolean",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt",
+          "line": 210
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.misc.antibot.modes.Name.isBot": [
+      {
+        "params": [
+          {
+            "name": "entity",
+            "type": "Player",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Boolean",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt",
+          "line": 215
         }
       }
     ],
@@ -32360,7 +32316,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleFreeze.kt",
-          "line": 224
+          "line": 220
         }
       }
     ],
@@ -32370,7 +32326,27 @@
         "returns": "Float",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleFreeze.kt",
-          "line": 225
+          "line": 221
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleFreeze.TickMovement.disable": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleFreeze.kt",
+          "line": 307
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleFreeze.TickMovement.enable": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleFreeze.kt",
+          "line": 303
         }
       }
     ],
@@ -32380,7 +32356,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleFreeze.kt",
-          "line": 80
+          "line": 81
         }
       }
     ],
@@ -32390,7 +32366,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleFreeze.kt",
-          "line": 75
+          "line": 76
         }
       }
     ],
@@ -39581,7 +39557,7 @@
         "returns": "ArmorPiece",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt",
-          "line": 184
+          "line": 183
         }
       }
     ],
@@ -39598,7 +39574,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt",
-          "line": 180
+          "line": 179
         }
       }
     ],
@@ -39615,7 +39591,7 @@
         "returns": "List<ItemFacet>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt",
-          "line": 232
+          "line": 231
         }
       }
     ],
@@ -39638,7 +39614,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt",
-          "line": 86
+          "line": 85
         }
       }
     ],
@@ -39648,7 +39624,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt",
-          "line": 87
+          "line": 86
         }
       }
     ],
@@ -39960,7 +39936,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt",
-          "line": 138
+          "line": 137
         }
       }
     ],
@@ -39989,7 +39965,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt",
-          "line": 90
+          "line": 89
         }
       }
     ],
@@ -40884,12 +40860,18 @@
             "type": "Boolean",
             "nullable": false,
             "vararg": false
+          },
+          {
+            "name": "collisionTick",
+            "type": "Int?",
+            "nullable": true,
+            "vararg": false
           }
         ],
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-          "line": 375
+          "line": 377
         }
       }
     ],
@@ -40899,7 +40881,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-          "line": 247
+          "line": 253
         }
       }
     ],
@@ -40909,7 +40891,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-          "line": 348
+          "line": 350
         },
         "isExtension": true,
         "receiver": "PlacementPlan"
@@ -40921,7 +40903,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-          "line": 366
+          "line": 368
         },
         "isExtension": true,
         "receiver": "PlacementPlan"
@@ -40940,7 +40922,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-          "line": 314
+          "line": 316
         }
       }
     ],
@@ -40960,7 +40942,7 @@
         "returns": "PlacementAction?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-          "line": 212
+          "line": 218
         }
       }
     ],
@@ -40970,7 +40952,7 @@
         "returns": "PlacementAction?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-          "line": 254
+          "line": 260
         }
       }
     ],
@@ -40980,7 +40962,7 @@
         "returns": "PlacementAction?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-          "line": 227
+          "line": 233
         }
       }
     ],
@@ -40990,7 +40972,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-          "line": 326
+          "line": 328
         }
       }
     ],
@@ -41017,10 +40999,45 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-          "line": 371
+          "line": 373
         },
         "isExtension": true,
         "receiver": "PlacementAction"
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.NoFallMLGKt.shouldPrepareMlgAction": [
+      {
+        "params": [
+          {
+            "name": "collisionTick",
+            "type": "Int?",
+            "nullable": true,
+            "vararg": false
+          },
+          {
+            "name": "rotationTicks",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "requiresSneak",
+            "type": "Boolean",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "isSneaking",
+            "type": "Boolean",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Boolean",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
+          "line": 396
+        }
       }
     ],
     "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.NoFallMLGKt.wasMlgPlacementApplied": [
@@ -41054,7 +41071,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-          "line": 389
+          "line": 410
         }
       }
     ],
@@ -43097,177 +43114,6 @@
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCombineMobs.kt",
           "line": 94
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleCustomAmbience.CustomLightmap.EditorMode.Custom.edit": [
-      {
-        "params": [
-          {
-            "name": "texture",
-            "type": "GpuTexture",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "lightmapRenderState",
-            "type": "LightmapRenderState",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "Boolean",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCustomAmbience.kt",
-          "line": 121
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleCustomAmbience.CustomLightmap.EditorMode.SingleColor.edit": [
-      {
-        "params": [
-          {
-            "name": "texture",
-            "type": "GpuTexture",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "lightmapRenderState",
-            "type": "LightmapRenderState",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "Boolean",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCustomAmbience.kt",
-          "line": 109
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleCustomAmbience.CustomLightmap.EditorMode.constructor": [
-      {
-        "params": [
-          {
-            "name": "name",
-            "type": "String",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCustomAmbience.kt",
-          "line": 100
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleCustomAmbience.CustomLightmap.EditorMode.edit": [
-      {
-        "params": [
-          {
-            "name": "texture",
-            "type": "GpuTexture",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "lightmapRenderState",
-            "type": "LightmapRenderState",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "Boolean",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCustomAmbience.kt",
-          "line": 104
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleCustomAmbience.FogValueGroup.modifyClearColor": [
-      {
-        "params": [
-          {
-            "name": "original",
-            "type": "Vector4fc",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "Vector4fc",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCustomAmbience.kt",
-          "line": 83
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleCustomAmbience.FogValueGroup.modifyFogData": [
-      {
-        "params": [
-          {
-            "name": "fogData",
-            "type": "FogData",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCustomAmbience.kt",
-          "line": 70
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleCustomAmbience.TimeType.constructor": [
-      {
-        "params": [
-          {
-            "name": "tag",
-            "type": "String",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCustomAmbience.kt",
-          "line": 179
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleCustomAmbience.WeatherType.constructor": [
-      {
-        "params": [
-          {
-            "name": "tag",
-            "type": "String",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCustomAmbience.kt",
-          "line": 171
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleCustomAmbience.getWorldClockTime": [
-      {
-        "params": [
-          {
-            "name": "original",
-            "type": "Long",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "Long",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCustomAmbience.kt",
-          "line": 153
         }
       }
     ],
@@ -46473,6 +46319,305 @@
         "receiver": "OverlayRenderEvent"
       }
     ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.customambience.ModuleCustomAmbience.CustomLightmap.EditorMode.Custom.edit": [
+      {
+        "params": [
+          {
+            "name": "texture",
+            "type": "GpuTexture",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "lightmapRenderState",
+            "type": "LightmapRenderState",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Boolean",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/customambience/ModuleCustomAmbience.kt",
+          "line": 122
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.customambience.ModuleCustomAmbience.CustomLightmap.EditorMode.SingleColor.edit": [
+      {
+        "params": [
+          {
+            "name": "texture",
+            "type": "GpuTexture",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "lightmapRenderState",
+            "type": "LightmapRenderState",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Boolean",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/customambience/ModuleCustomAmbience.kt",
+          "line": 110
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.customambience.ModuleCustomAmbience.CustomLightmap.EditorMode.constructor": [
+      {
+        "params": [
+          {
+            "name": "name",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/customambience/ModuleCustomAmbience.kt",
+          "line": 101
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.customambience.ModuleCustomAmbience.CustomLightmap.EditorMode.edit": [
+      {
+        "params": [
+          {
+            "name": "texture",
+            "type": "GpuTexture",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "lightmapRenderState",
+            "type": "LightmapRenderState",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Boolean",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/customambience/ModuleCustomAmbience.kt",
+          "line": 105
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.customambience.ModuleCustomAmbience.FogValueGroup.modifyClearColor": [
+      {
+        "params": [
+          {
+            "name": "original",
+            "type": "Vector4fc",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Vector4fc",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/customambience/ModuleCustomAmbience.kt",
+          "line": 84
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.customambience.ModuleCustomAmbience.FogValueGroup.modifyFogData": [
+      {
+        "params": [
+          {
+            "name": "fogData",
+            "type": "FogData",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/customambience/ModuleCustomAmbience.kt",
+          "line": 71
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.customambience.ModuleCustomAmbience.TimeType.constructor": [
+      {
+        "params": [
+          {
+            "name": "tag",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/customambience/ModuleCustomAmbience.kt",
+          "line": 181
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.customambience.ModuleCustomAmbience.WeatherType.constructor": [
+      {
+        "params": [
+          {
+            "name": "tag",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/customambience/ModuleCustomAmbience.kt",
+          "line": 173
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.customambience.ModuleCustomAmbience.getWorldClockTime": [
+      {
+        "params": [
+          {
+            "name": "original",
+            "type": "Long",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Long",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/customambience/ModuleCustomAmbience.kt",
+          "line": 155
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.customambience.worldeffects.WorldParticles.onDisabled": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/customambience/worldeffects/WorldParticles.kt",
+          "line": 39
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.customambience.worldeffects.WorldParticlesMode.AnimBy.constructor": [
+      {
+        "params": [
+          {
+            "name": "tag",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/customambience/worldeffects/WorldParticlesMode.kt",
+          "line": 100
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.customambience.worldeffects.WorldParticlesMode.constructor": [
+      {
+        "params": [
+          {
+            "name": "name",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/customambience/worldeffects/WorldParticlesMode.kt",
+          "line": 35
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.customambience.worldeffects.WorldParticlesMode.createParticleCoord": [
+      {
+        "params": [
+          {
+            "name": "currentTime",
+            "type": "Long",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/customambience/worldeffects/WorldParticlesMode.kt",
+          "line": 62
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.customambience.worldeffects.WorldParticlesMode.drawWorldParticle": [
+      {
+        "params": [
+          {
+            "name": "progress",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "age",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/customambience/worldeffects/WorldParticlesMode.kt",
+          "line": 61
+        },
+        "isExtension": true,
+        "receiver": "WorldRenderEnvironment"
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.customambience.worldeffects.modes.WorldParticlesSimple.createParticleCoord": [
+      {
+        "params": [
+          {
+            "name": "currentTime",
+            "type": "Long",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/customambience/worldeffects/modes/WorldParticlesSimple.kt",
+          "line": 47
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.customambience.worldeffects.modes.WorldParticlesSimple.drawWorldParticle": [
+      {
+        "params": [
+          {
+            "name": "progress",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "age",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/customambience/worldeffects/modes/WorldParticlesSimple.kt",
+          "line": 64
+        },
+        "isExtension": true,
+        "receiver": "WorldRenderEnvironment"
+      }
+    ],
     "net.ccbluex.liquidbounce.features.module.modules.render.esp.ModuleESP.getColor": [
       {
         "params": [
@@ -47878,7 +48023,7 @@
         "returns": "String",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/nametags/NametagEnchantmentRenderer.kt",
-          "line": 95
+          "line": 97
         }
       }
     ],
@@ -47895,7 +48040,7 @@
         "returns": "String",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/nametags/NametagEnchantmentRenderer.kt",
-          "line": 62
+          "line": 64
         }
       }
     ],
@@ -47918,7 +48063,7 @@
         "returns": "EnchantmentInfo",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/nametags/NametagEnchantmentRenderer.kt",
-          "line": 45
+          "line": 47
         }
       }
     ],
@@ -47935,7 +48080,7 @@
         "returns": "String",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/nametags/NametagEnchantmentRenderer.kt",
-          "line": 56
+          "line": 58
         }
       }
     ],
@@ -47952,7 +48097,7 @@
         "returns": "String",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/nametags/NametagEnchantmentRenderer.kt",
-          "line": 59
+          "line": 61
         }
       }
     ],
@@ -47969,7 +48114,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/nametags/NametagEnchantmentRenderer.kt",
-          "line": 105
+          "line": 107
         }
       }
     ],
@@ -47986,7 +48131,7 @@
         "returns": "String",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/nametags/NametagEnchantmentRenderer.kt",
-          "line": 73
+          "line": 75
         }
       }
     ],
@@ -48003,7 +48148,7 @@
         "returns": "String",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/nametags/NametagEnchantmentRenderer.kt",
-          "line": 81
+          "line": 83
         }
       }
     ],
@@ -48032,7 +48177,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/nametags/NametagEnchantmentRenderer.kt",
-          "line": 109
+          "line": 111
         }
       }
     ],
@@ -57873,37 +58018,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/HttpHelper.kt",
-          "line": 44
-        },
-        "suspend": true,
-        "isExtension": true,
-        "receiver": "ApplicationCall"
-      },
-      {
-        "params": [
-          {
-            "name": "image",
-            "type": "BufferedImage",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "contentType",
-            "type": "ContentType?",
-            "nullable": true,
-            "vararg": false
-          },
-          {
-            "name": "status",
-            "type": "HttpStatusCode?",
-            "nullable": true,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/HttpHelper.kt",
-          "line": 52
+          "line": 42
         },
         "suspend": true,
         "isExtension": true,
@@ -57935,7 +58050,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/HttpHelper.kt",
-          "line": 60
+          "line": 50
         },
         "suspend": true,
         "isExtension": true,
@@ -57967,7 +58082,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/HttpHelper.kt",
-          "line": 34
+          "line": 32
         },
         "suspend": true,
         "isExtension": true,
@@ -64105,7 +64220,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 706
+          "line": 707
         }
       }
     ],
@@ -64235,6 +64350,29 @@
         },
         "isExtension": true,
         "receiver": "AABB"
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.BuiltinParticle.constructor": [
+      {
+        "params": [
+          {
+            "name": "tag",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "fileName",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderConfigurables.kt",
+          "line": 131
+        }
       }
     ],
     "net.ccbluex.liquidbounce.render.ClientRenderPipelines.GUI.circleLut": [
@@ -65228,7 +65366,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderConfigurables.kt",
-          "line": 35
+          "line": 39
         }
       }
     ],
@@ -65245,7 +65383,7 @@
         "returns": "Color4b",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderConfigurables.kt",
-          "line": 42
+          "line": 46
         }
       }
     ],
@@ -65274,7 +65412,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderConfigurables.kt",
-          "line": 92
+          "line": 96
         }
       }
     ],
@@ -65297,7 +65435,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderConfigurables.kt",
-          "line": 117
+          "line": 121
         }
       }
     ],
@@ -65314,7 +65452,7 @@
         "returns": "Color4b",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderConfigurables.kt",
-          "line": 106
+          "line": 110
         }
       }
     ],
@@ -65331,7 +65469,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderConfigurables.kt",
-          "line": 74
+          "line": 78
         }
       }
     ],
@@ -65348,7 +65486,7 @@
         "returns": "Color4b",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderConfigurables.kt",
-          "line": 79
+          "line": 83
         }
       }
     ],
@@ -65371,7 +65509,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderConfigurables.kt",
-          "line": 54
+          "line": 58
         }
       }
     ],
@@ -65388,7 +65526,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderConfigurables.kt",
-          "line": 59
+          "line": 63
         }
       }
     ],
@@ -65411,7 +65549,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderConfigurables.kt",
-          "line": 45
+          "line": 49
         }
       }
     ],
@@ -65428,7 +65566,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderConfigurables.kt",
-          "line": 51
+          "line": 55
         }
       }
     ],
@@ -65451,7 +65589,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderConfigurables.kt",
-          "line": 62
+          "line": 66
         }
       }
     ],
@@ -65468,7 +65606,7 @@
         "returns": "Color4b",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderConfigurables.kt",
-          "line": 66
+          "line": 70
         }
       }
     ],
@@ -66954,7 +67092,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 407
+          "line": 408
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -66991,7 +67129,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 469
+          "line": 470
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -67028,7 +67166,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 485
+          "line": 486
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -67053,7 +67191,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 635
+          "line": 636
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -67084,7 +67222,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 658
+          "line": 659
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -67244,7 +67382,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 544
+          "line": 545
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -67287,7 +67425,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 576
+          "line": 577
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -67324,7 +67462,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 672
+          "line": 673
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -67583,7 +67721,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 501
+          "line": 502
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -67620,7 +67758,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 618
+          "line": 619
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -67651,7 +67789,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 428
+          "line": 429
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -67694,7 +67832,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 446
+          "line": 447
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -67724,6 +67862,12 @@
           {
             "name": "anchor",
             "type": "AnchorPoint",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "noDepthTest",
+            "type": "Boolean",
             "nullable": false,
             "vararg": false
           }
@@ -67798,7 +67942,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 329
+          "line": 330
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -67866,7 +68010,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 395
+          "line": 396
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -70238,7 +70382,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-          "line": 262
+          "line": 275
         }
       }
     ],
@@ -70790,7 +70934,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-          "line": 61
+          "line": 62
         }
       }
     ],
@@ -71231,7 +71375,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-          "line": 83
+          "line": 84
         }
       }
     ],
@@ -71260,7 +71404,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-          "line": 113
+          "line": 114
         }
       }
     ],
@@ -71277,7 +71421,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-          "line": 145
+          "line": 146
         }
       }
     ],
@@ -71294,7 +71438,7 @@
         "returns": "CharacterGenerationInfo?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-          "line": 241
+          "line": 254
         }
       }
     ],
@@ -71317,7 +71461,7 @@
         "returns": "GlyphRenderInfo",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-          "line": 203
+          "line": 216
         }
       }
     ],
@@ -71327,7 +71471,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-          "line": 141
+          "line": 142
         }
       }
     ],
@@ -71350,7 +71494,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-          "line": 176
+          "line": 177
         }
       }
     ],
@@ -71373,7 +71517,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-          "line": 149
+          "line": 150
         }
       }
     ],
@@ -71408,7 +71552,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-          "line": 45
+          "line": 46
         }
       }
     ],
@@ -71998,7 +72142,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/processor/MinecraftTextProcessor.kt",
-          "line": 44
+          "line": 42
         }
       }
     ],
@@ -72021,7 +72165,7 @@
         "returns": "RecyclingProcessedText",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/processor/MinecraftTextProcessor.kt",
-          "line": 50
+          "line": 48
         }
       }
     ],
@@ -72056,7 +72200,7 @@
         "returns": "Optional<Nothing>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/processor/MinecraftTextProcessor.kt",
-          "line": 62
+          "line": 60
         }
       }
     ],
@@ -97214,25 +97358,6 @@
         "receiver": "IntRange"
       }
     ],
-    "net.ccbluex.liquidbounce.utils.kotlin.ArrayExtensionsKt.forEachWithSelf": [
-      {
-        "params": [
-          {
-            "name": "action",
-            "type": "(T, index: Int, self: C) -> Unit",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt",
-          "line": 115
-        },
-        "isExtension": true,
-        "receiver": "C"
-      }
-    ],
     "net.ccbluex.liquidbounce.utils.kotlin.ArrayExtensionsKt.mapString": [
       {
         "params": [
@@ -97246,7 +97371,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt",
-          "line": 135
+          "line": 122
         },
         "isExtension": true,
         "receiver": "String"
@@ -97263,7 +97388,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt",
-          "line": 142
+          "line": 129
         },
         "isExtension": true,
         "receiver": "Collection<T>"
@@ -97405,31 +97530,6 @@
         }
       }
     ],
-    "net.ccbluex.liquidbounce.utils.kotlin.ArrayExtensionsKt.removeRange": [
-      {
-        "params": [
-          {
-            "name": "fromInclusive",
-            "type": "Int",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "endExclusive",
-            "type": "Int",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt",
-          "line": 108
-        },
-        "isExtension": true,
-        "receiver": "MutableList<T>"
-      }
-    ],
     "net.ccbluex.liquidbounce.utils.kotlin.ArrayExtensionsKt.sortedInsert": [
       {
         "params": [
@@ -97449,7 +97549,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt",
-          "line": 124
+          "line": 111
         },
         "isExtension": true,
         "receiver": "MutableList<T>"
@@ -97492,7 +97592,7 @@
         "returns": "Array<T>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt",
-          "line": 148
+          "line": 135
         },
         "isExtension": true,
         "receiver": "Stream<T>"
@@ -97542,7 +97642,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/CollectionExtensions.kt",
-          "line": 73
+          "line": 81
         },
         "isExtension": true,
         "receiver": "MutableCollection<T>"
@@ -97559,7 +97659,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/CollectionExtensions.kt",
-          "line": 82
+          "line": 90
         },
         "isExtension": true,
         "receiver": "MutableCollection<T>"
@@ -97578,7 +97678,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/CollectionExtensions.kt",
-          "line": 55
+          "line": 63
         },
         "isExtension": true,
         "receiver": "ColorCollection<T>"
@@ -97595,7 +97695,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/CollectionExtensions.kt",
-          "line": 76
+          "line": 84
         },
         "isExtension": true,
         "receiver": "WeatheringCopperCollection<T>"
@@ -97612,10 +97712,35 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/CollectionExtensions.kt",
-          "line": 79
+          "line": 87
         },
         "isExtension": true,
         "receiver": "WeatheringCopperCollection.ByState<T>"
+      }
+    ],
+    "net.ccbluex.liquidbounce.utils.kotlin.CollectionExtensionsKt.getOrSet": [
+      {
+        "params": [
+          {
+            "name": "index",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "defaultValue",
+            "type": "() -> T",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "T",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/CollectionExtensions.kt",
+          "line": 55
+        },
+        "isExtension": true,
+        "receiver": "Array<T?>"
       }
     ],
     "net.ccbluex.liquidbounce.utils.kotlin.CollectionExtensionsKt.matchesAll": [

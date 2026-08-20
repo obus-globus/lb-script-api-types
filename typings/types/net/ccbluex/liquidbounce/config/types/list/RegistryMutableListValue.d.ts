@@ -7,7 +7,7 @@ export class RegistryMutableListValue<T extends E[], E extends unknown> extends 
     /**
      * This is used to determine the registry endpoint for the API.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/ListValue.kt#L194 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/ListValue.kt:194}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/ListValue.kt#L194 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/ListValue.kt:194}
      */
     readonly registry: string;
 }

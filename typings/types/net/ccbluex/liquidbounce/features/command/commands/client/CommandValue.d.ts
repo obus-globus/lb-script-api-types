@@ -6,7 +6,7 @@ import type { Command$Factory } from '../../../../../../../net/ccbluex/liquidbou
  *
  * Allows you to change values by key path.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandValue.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandValue.kt:40}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandValue.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandValue.kt:40}
  */
 export class CommandValue extends Object implements Command$Factory {
     static INSTANCE: CommandValue;

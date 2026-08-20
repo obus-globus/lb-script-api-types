@@ -1,11 +1,11 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { ModuleParticles$BuiltinParticle } from '../../../../../../../net/ccbluex/liquidbounce/features/module/modules/render/ModuleParticles$BuiltinParticle.d.ts'
+import type { BuiltinParticle } from '../../../../../../../net/ccbluex/liquidbounce/render/BuiltinParticle.d.ts'
 import type { WorldRenderEnvironment } from '../../../../../../../net/ccbluex/liquidbounce/render/WorldRenderEnvironment.d.ts'
 import type { Vec3 } from '../../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class ModuleParticles$Particle extends Object {
-    constructor(pos: Vec3, builtinParticle: ModuleParticles$BuiltinParticle)
+    constructor(pos: Vec3, builtinParticle: BuiltinParticle)
     alpha: number;
-    readonly builtinParticle: ModuleParticles$BuiltinParticle;
+    readonly builtinParticle: BuiltinParticle;
     // private collisionTime: number;
     pos: Vec3;
     // private prevPos: Vec3;

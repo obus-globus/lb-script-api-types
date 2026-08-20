@@ -967,7 +967,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-      "line": 113
+      "line": 104
     }
   },
   "net.ccbluex.liquidbounce.config.types.group.ValueGroup.baseKey": {
@@ -975,7 +975,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-      "line": 120
+      "line": 111
     }
   },
   "net.ccbluex.liquidbounce.config.types.group.ValueGroup.constructBaseKey": {
@@ -983,7 +983,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-      "line": 159
+      "line": 150
     }
   },
   "net.ccbluex.liquidbounce.config.types.group.ValueGroup.json": {
@@ -1002,7 +1002,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-      "line": 107
+      "line": 98
     }
   },
   "net.ccbluex.liquidbounce.config.types.group.ValueGroup.restore": {
@@ -1010,7 +1010,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-      "line": 294
+      "line": 285
     }
   },
   "net.ccbluex.liquidbounce.config.types.group.ValueGroup.updateChildState": {
@@ -1026,7 +1026,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-      "line": 132
+      "line": 123
     }
   },
   "net.ccbluex.liquidbounce.config.types.list.ListValue.innerType": {
@@ -5626,7 +5626,7 @@
       "line": 110
     }
   },
-  "net.ccbluex.liquidbounce.features.module.modules.misc.antibot.modes.CustomAntiBotMode.Armor.ArmorPredicate": {
+  "net.ccbluex.liquidbounce.features.module.modules.misc.antibot.modes.Armor.ArmorPredicate": {
     "doc": "",
     "see": [
       "ArmorMaterials"
@@ -5635,14 +5635,6 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt",
       "line": 83
-    }
-  },
-  "net.ccbluex.liquidbounce.features.module.modules.misc.antibot.modes.CustomAntiBotMode.Name.CharacterValidator": {
-    "doc": "https://en.wikipedia.org/wiki/Unicode_block",
-    "kind": "class",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt",
-      "line": 187
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.misc.antibot.modes.IntaveHeavyAntiBotMode": {
@@ -5683,6 +5675,14 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/MatrixAntiBotMode.kt",
       "line": 105
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.misc.antibot.modes.Name.CharacterValidator": {
+    "doc": "https://en.wikipedia.org/wiki/Unicode_block",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt",
+      "line": 187
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.misc.betterchat.ModuleBetterChat": {
@@ -5906,7 +5906,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleFreeze.kt",
-      "line": 63
+      "line": 64
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleFreeze.Cancel": {
@@ -5914,7 +5914,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleFreeze.kt",
-      "line": 189
+      "line": 185
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleFreeze.Queue": {
@@ -5922,7 +5922,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleFreeze.kt",
-      "line": 168
+      "line": 164
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleFreeze.Stationary": {
@@ -5930,7 +5930,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleFreeze.kt",
-      "line": 208
+      "line": 204
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleFreeze.Stationary.FloatOffsetGenerator": {
@@ -5938,7 +5938,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleFreeze.kt",
-      "line": 222
+      "line": 218
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleFreeze.Stationary.cancelC0B": {
@@ -5946,7 +5946,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleFreeze.kt",
-      "line": 212
+      "line": 208
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleFreeze.moveHandler": {
@@ -5954,7 +5954,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleFreeze.kt",
-      "line": 98
+      "line": 99
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleNoClip": {
@@ -7797,7 +7797,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt",
-      "line": 180
+      "line": 179
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.ItemCategorization.diamondArmorPieces": {
@@ -7805,7 +7805,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt",
-      "line": 192
+      "line": 191
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.ItemCategorization.futureArmorToKeep": {
@@ -7813,7 +7813,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt",
-      "line": 209
+      "line": 208
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.ItemCategorization.getItemFacets": {
@@ -7821,7 +7821,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt",
-      "line": 232
+      "line": 231
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.ItemNumberConstraintGroup": {
@@ -7895,7 +7895,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt",
-      "line": 146
+      "line": 145
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.ItemType.allocationPriority": {
@@ -7903,7 +7903,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt",
-      "line": 102
+      "line": 101
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.ItemType.providedFunction": {
@@ -7911,7 +7911,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt",
-      "line": 108
+      "line": 107
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.ModuleInventoryCleaner": {
@@ -8124,7 +8124,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-      "line": 212
+      "line": 218
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.NoFallMLG.getCurrentMLGPlacementPlan": {
@@ -8132,7 +8132,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-      "line": 254
+      "line": 260
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.NoFallMLG.getCurrentPickupTarget": {
@@ -8140,7 +8140,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-      "line": 227
+      "line": 233
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.NoFallMount": {
@@ -8221,6 +8221,14 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallVulcanTP.kt",
       "line": 32
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.shouldPrepareMlgAction": {
+    "doc": "[FallingPlayer.findCollision] reports zero when the next movement tick lands.\nReserve one tick for interaction, plus one for sneak input when it has not reached the player yet.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
+      "line": 396
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.offhand.ModuleOffhand": {
@@ -8496,47 +8504,6 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCrystalView.kt",
       "line": 35
-    }
-  },
-  "net.ccbluex.liquidbounce.features.module.modules.render.ModuleCustomAmbience": {
-    "doc": "CustomAmbience module\n\nOverride the ambience of the game",
-    "kind": "object",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCustomAmbience.kt",
-      "line": 39
-    }
-  },
-  "net.ccbluex.liquidbounce.features.module.modules.render.ModuleCustomAmbience.CustomLightmap": {
-    "doc": "",
-    "see": [
-      "net.ccbluex.liquidbounce.injection.mixins.minecraft.render.MixinLightmap"
-    ],
-    "kind": "object",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCustomAmbience.kt",
-      "line": 95
-    }
-  },
-  "net.ccbluex.liquidbounce.features.module.modules.render.ModuleCustomAmbience.FogValueGroup": {
-    "doc": "",
-    "see": [
-      "FogData"
-    ],
-    "kind": "object",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCustomAmbience.kt",
-      "line": 52
-    }
-  },
-  "net.ccbluex.liquidbounce.features.module.modules.render.ModuleCustomAmbience.FogValueGroup.modifyFogData": {
-    "doc": "",
-    "see": [
-      "net.ccbluex.liquidbounce.injection.mixins.minecraft.render.fog.MixinFogRenderer"
-    ],
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCustomAmbience.kt",
-      "line": 70
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleDamageParticles": {
@@ -8957,6 +8924,47 @@
       "line": 33
     }
   },
+  "net.ccbluex.liquidbounce.features.module.modules.render.customambience.ModuleCustomAmbience": {
+    "doc": "CustomAmbience module\n\nOverride the ambience of the game",
+    "kind": "object",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/customambience/ModuleCustomAmbience.kt",
+      "line": 40
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.render.customambience.ModuleCustomAmbience.CustomLightmap": {
+    "doc": "",
+    "see": [
+      "net.ccbluex.liquidbounce.injection.mixins.minecraft.render.MixinLightmap"
+    ],
+    "kind": "object",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/customambience/ModuleCustomAmbience.kt",
+      "line": 96
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.render.customambience.ModuleCustomAmbience.FogValueGroup": {
+    "doc": "",
+    "see": [
+      "FogData"
+    ],
+    "kind": "object",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/customambience/ModuleCustomAmbience.kt",
+      "line": 53
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.render.customambience.ModuleCustomAmbience.FogValueGroup.modifyFogData": {
+    "doc": "",
+    "see": [
+      "net.ccbluex.liquidbounce.injection.mixins.minecraft.render.fog.MixinFogRenderer"
+    ],
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/customambience/ModuleCustomAmbience.kt",
+      "line": 71
+    }
+  },
   "net.ccbluex.liquidbounce.features.module.modules.render.esp.ModuleESP": {
     "doc": "ESP module\n\nAllows you to see targets through walls.",
     "kind": "object",
@@ -9037,7 +9045,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/nametags/NametagEnchantmentRenderer.kt",
-      "line": 56
+      "line": 58
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.nametags.EnchantmentDisplayHelper.isCurse": {
@@ -9048,7 +9056,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/nametags/NametagEnchantmentRenderer.kt",
-      "line": 105
+      "line": 107
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.nametags.ModuleNametags": {
@@ -11287,7 +11295,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderConfigurables.kt",
-      "line": 40
+      "line": 44
     }
   },
   "net.ccbluex.liquidbounce.render.GpuTextureView.createRenderPass": {
@@ -11399,7 +11407,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 407
+      "line": 408
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawBoxSide": {
@@ -11407,7 +11415,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 469
+      "line": 470
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawBoxSides": {
@@ -11415,7 +11423,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 485
+      "line": 486
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawCircleOutline": {
@@ -11427,7 +11435,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 658
+      "line": 659
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawCustomMesh": {
@@ -11457,7 +11465,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 544
+      "line": 545
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawLine": [
@@ -11513,7 +11521,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 501
+      "line": 502
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.start": {
@@ -11790,7 +11798,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-      "line": 113
+      "line": 114
     }
   },
   "net.ccbluex.liquidbounce.render.engine.font.GlyphPage.CharacterGenerationInfo.atlasDimension": {
@@ -11798,7 +11806,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-      "line": 131
+      "line": 132
     }
   },
   "net.ccbluex.liquidbounce.render.engine.font.GlyphPage.fontRasterizationLock": {
@@ -11806,7 +11814,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-      "line": 105
+      "line": 106
     }
   },
   "net.ccbluex.liquidbounce.render.engine.font.GlyphPage.init": {
@@ -11814,7 +11822,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-      "line": 141
+      "line": 142
     }
   },
   "net.ccbluex.liquidbounce.render.engine.font.GlyphPage.maxTextureSize": {
@@ -11822,7 +11830,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-      "line": 94
+      "line": 95
     }
   },
   "net.ccbluex.liquidbounce.render.engine.font.GlyphRenderInfo": {
@@ -11830,7 +11838,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-      "line": 44
+      "line": 45
     }
   },
   "net.ccbluex.liquidbounce.render.engine.font.GlyphRenderInfo.atlasLocation": {
@@ -11838,7 +11846,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-      "line": 53
+      "line": 54
     }
   },
   "net.ccbluex.liquidbounce.render.engine.font.GlyphRenderInfo.codepoint": {
@@ -11846,7 +11854,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-      "line": 49
+      "line": 50
     }
   },
   "net.ccbluex.liquidbounce.render.engine.font.GlyphRenderInfo.glyphBounds": {
@@ -11854,7 +11862,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-      "line": 57
+      "line": 58
     }
   },
   "net.ccbluex.liquidbounce.render.engine.font.HorizontalAnchor.anchorToDrawX": {
@@ -16451,20 +16459,12 @@
       "line": 78
     }
   },
-  "net.ccbluex.liquidbounce.utils.kotlin.C.forEachWithSelf": {
-    "doc": "A JavaScript-styled forEach",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt",
-      "line": 115
-    }
-  },
   "net.ccbluex.liquidbounce.utils.kotlin.Collection<T>.mapString": {
     "doc": "Transform a Collection to a String with by given [transform]",
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt",
-      "line": 142
+      "line": 129
     }
   },
   "net.ccbluex.liquidbounce.utils.kotlin.EventPriorityConvention.CRITICAL_MODIFICATION": {
@@ -16528,7 +16528,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt",
-      "line": 124
+      "line": 111
     }
   },
   "net.ccbluex.liquidbounce.utils.kotlin.Object2IntOpenHashMap<K>.sumValues": {
@@ -16552,7 +16552,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt",
-      "line": 135
+      "line": 122
     }
   },
   "net.ccbluex.liquidbounce.utils.kotlin.UUID.toByteArray": {

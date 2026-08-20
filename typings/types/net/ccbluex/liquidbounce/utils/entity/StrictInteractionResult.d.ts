@@ -7,7 +7,7 @@ import type { InteractionResult } from '../../../../../net/minecraft/world/Inter
  * *Strict* means to 1:1 simulate {@link net.minecraft.client.Minecraft.startUseItem} logic:
  * Try `interact`/`useItemOn` then `useItem` with each hand (main hand -> offhand).
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt#L68 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt:68}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt#L68 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt:68}
  */
 export class StrictInteractionResult extends Record {
     constructor(hand: InteractionHand, source: StrictInteractionSource, result: InteractionResult)

@@ -3,7 +3,8 @@ import type { MlgPlacementActionType } from '../../../../../../../../../net/ccbl
 import type { PlacementPlan } from '../../../../../../../../../net/ccbluex/liquidbounce/utils/block/targetfinding/PlacementPlan.d.ts'
 import type { Item } from '../../../../../../../../../net/minecraft/world/item/Item.d.ts'
 export class NoFallMLG$PlacementAction extends Object {
-    constructor(plan: PlacementPlan, type: MlgPlacementActionType, item: Item, requiresSneak: boolean)
+    constructor(plan: PlacementPlan, type: MlgPlacementActionType, item: Item, requiresSneak: boolean, collisionTick: number | null)
+    readonly collisionTick: number | null;
     readonly item: Item;
     readonly plan: PlacementPlan;
     readonly requiresSneak: boolean;
@@ -12,7 +13,8 @@ export class NoFallMLG$PlacementAction extends Object {
     component2(): MlgPlacementActionType;
     component3(): Item;
     component4(): boolean;
-    copy(plan: PlacementPlan, type: MlgPlacementActionType, item: Item, requiresSneak: boolean): NoFallMLG$PlacementAction;
+    component5(): number | null;
+    copy(plan: PlacementPlan, type: MlgPlacementActionType, item: Item, requiresSneak: boolean, collisionTick: number | null): NoFallMLG$PlacementAction;
     equals(other: Object | null): boolean;
     hashCode(): number;
     toString(): string;

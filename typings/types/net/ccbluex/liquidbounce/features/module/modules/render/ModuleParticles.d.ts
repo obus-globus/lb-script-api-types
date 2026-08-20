@@ -4,16 +4,16 @@ import type { GameTickEvent } from '../../../../../../../net/ccbluex/liquidbounc
 import type { WorldChangeEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/WorldChangeEvent.d.ts'
 import type { WorldRenderEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/WorldRenderEvent.d.ts'
 import type { ClientModule } from '../../../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
-import type { ModuleParticles$BuiltinParticle } from '../../../../../../../net/ccbluex/liquidbounce/features/module/modules/render/ModuleParticles$BuiltinParticle.d.ts'
 import type { ModuleParticles$Particle } from '../../../../../../../net/ccbluex/liquidbounce/features/module/modules/render/ModuleParticles$Particle.d.ts'
 import type { ModuleParticles$Physical } from '../../../../../../../net/ccbluex/liquidbounce/features/module/modules/render/ModuleParticles$Physical.d.ts'
+import type { BuiltinParticle } from '../../../../../../../net/ccbluex/liquidbounce/render/BuiltinParticle.d.ts'
 import type { Color4b } from '../../../../../../../net/ccbluex/liquidbounce/render/engine/type/Color4b.d.ts'
 import type { Chronometer } from '../../../../../../../net/ccbluex/liquidbounce/utils/client/Chronometer.d.ts'
 export class ModuleParticles extends ClientModule {
     static INSTANCE: ModuleParticles;
     // private attackEvent: EventHook<AttackEntityEvent>;
-    // private builtinParticles: ModuleParticles$BuiltinParticle[];
-    // private /*not mapped: */ getBuiltinParticles(): ModuleParticles$BuiltinParticle[];
+    // private builtinParticles: BuiltinParticle[];
+    // private /*not mapped: */ getBuiltinParticles(): BuiltinParticle[];
     // private chronometer: Chronometer;
     // private color: Color4b;
     // private /*not mapped: */ getColor(): Color4b;

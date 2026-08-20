@@ -20,7 +20,7 @@ import type { Logger } from '../../../../../org/apache/logging/log4j/Logger.d.ts
 /**
  * A module also called 'hack' can be enabled and handle events
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt:55}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt:55}
  */
 export class ClientModule extends ToggleableValueGroup implements EventListener, MinecraftShortcuts {
     constructor(name: string, category: ModuleCategory, bind: number, bindAction: InputBind$BindAction, state: boolean, notActivatable: boolean, disableActivation: boolean, disableOnQuit: boolean, aliases: string[], hide: boolean)
@@ -51,13 +51,13 @@ export class ClientModule extends ToggleableValueGroup implements EventListener,
      *
      * Note: This overwrites {@link ToggleableValueGroup} declaration of {@link running}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt#L89 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt:89}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt#L89 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt:89}
      */
     readonly running: boolean;
     /**
      * Allows the user to access values by typing module.settings.<valuename>
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt#L124 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt:124}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt#L124 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt:124}
      */
     readonly settings: JavaMap<string, Value<Object>>;
     readonly tag: string | null;
@@ -71,7 +71,7 @@ export class ClientModule extends ToggleableValueGroup implements EventListener,
     /**
      * Called when the module is registered in the module manager.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt#L137 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt:137}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt#L137 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt:137}
      */
     onRegistration(): void;
     onToggled(state: boolean): boolean;
@@ -85,7 +85,7 @@ export class ClientModule extends ToggleableValueGroup implements EventListener,
      *
      * Requires that {@link ValueGroup.walkKeyPath} has previously been run.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt#L204 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt:204}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt#L204 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt:204}
      */
     verifyFallbackDescription(): void;
 }

@@ -16,14 +16,14 @@ export class ClientRenderPipelines extends Object {
     /**
      * @see RenderPipelines.LINES_TRANSLUCENT
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L226 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:226}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L226 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:226}
      */
     static LinesWithWidth: RenderPipeline;
     /**
      * @see RenderPipelines.ENTITY_OUTLINE_BLIT
      * @see RenderPipelines.OUTLINE_SNIPPET
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L451 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:451}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L451 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:451}
      */
     static Outline: RenderPipeline;
     static lines(noDepthTest: boolean): RenderPipeline;
@@ -75,7 +75,7 @@ export class ClientRenderPipelines extends Object {
     /**
      * Precompile
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L538 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:538}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L538 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:538}
      */
     precompile(): void;
     quads(noDepthTest: boolean): RenderPipeline;

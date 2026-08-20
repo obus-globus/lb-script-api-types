@@ -16,7 +16,7 @@ export class Alignment extends ValueGroup {
     /**
      * @returns Scaled bounds follows {@link com.mojang.blaze3d.platform.Window.guiScale}
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/Alignment.kt#L64 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/Alignment.kt:64}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/Alignment.kt#L64 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/Alignment.kt:64}
      */
     getBounds(width: number, height: number): BoundingBox2f;
     setFrom(other: Alignment): void;

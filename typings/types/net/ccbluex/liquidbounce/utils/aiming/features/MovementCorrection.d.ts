@@ -5,7 +5,7 @@ import type { Tagged$Companion } from '../../../../../../net/ccbluex/liquidbounc
 /**
  * Corrects movement when aiming away from client-side view direction.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/MovementCorrection.kt#L26 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/MovementCorrection.kt:26}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/MovementCorrection.kt#L26 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/MovementCorrection.kt:26}
  */
 export class MovementCorrection extends Enum<MovementCorrection> implements Tagged {
     static CHANGE_LOOK: MovementCorrection;

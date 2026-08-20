@@ -5,15 +5,9 @@ import type { ClosedFloatingPointRange } from '../../../../../kotlin/ranges/Clos
 export class ArrayExtensionsKt extends Object {
     static contains(self: { start: number; endInclusive: number; step: number }, range: { start: number; endInclusive: number; step: number }): boolean;
     /**
-     * A JavaScript-styled forEach
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt#L115 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt:115}
-     */
-    static forEachWithSelf<C extends T[], T extends unknown>(self: C, action: (param0: T, param1: number, param2: C) => void): void;
-    /**
      * Transform a Collection to a String with by given {@link transform}
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt#L142 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt:142}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt#L129 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt:129}
      */
     static mapString<T extends unknown>(self: T[], transform: (param0: T) => string): string;
     static mapString(self: string, transform: (param0: string) => string): string;
@@ -22,11 +16,10 @@ export class ArrayExtensionsKt extends Object {
     static range(iterable1: number[], iterable2: number[], iterable3: number[], operation: (param0: number, param1: number, param2: number) => void): void;
     static range(iterable1: number[], iterable2: number[], operation: (param0: number, param1: number) => void): void;
     static range(iterable1: { first: number; last: number; step: number }, iterable2: { first: number; last: number; step: number }, iterable3: { first: number; last: number; step: number }, operation: (param0: number, param1: number, param2: number) => void): void;
-    static removeRange<T extends unknown>(self: T[], fromInclusive: number, endExclusive: number): void;
     /**
      * Inserts a new element into a sorted list while maintaining the order.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt#L124 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt:124}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt#L111 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt:111}
      */
     static sortedInsert<T extends unknown, K extends Comparable<K>>(self: T[], item: T, selector: (param0: T) => K | null): void;
     static subList<T extends unknown>(self: T[], fromIndex: number): T[];

@@ -14,7 +14,7 @@ import type { VelocityMode } from '../../../../../../../../../net/ccbluex/liquid
  *
  * https://github.com/GrimAnticheat/Grim/issues/1133
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityGrim2344.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityGrim2344.kt:41}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityGrim2344.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityGrim2344.kt:41}
  */
 export class VelocityGrim2344 extends VelocityMode {
     static Companion: Tagged$Companion;

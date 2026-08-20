@@ -9,7 +9,7 @@ import type { Item } from '../../../../../../../net/minecraft/world/item/Item.d.
  *
  * Automatically crafts items using the Recipe Book.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/22738df37d7103789b42b7477782868b55185597/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleAutoCrafter.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleAutoCrafter.kt:46}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleAutoCrafter.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleAutoCrafter.kt:46}
  */
 export class ModuleAutoCrafter extends ClientModule {
     static INSTANCE: ModuleAutoCrafter;
