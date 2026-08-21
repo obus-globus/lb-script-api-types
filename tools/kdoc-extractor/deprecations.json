@@ -6,7 +6,7 @@
       "kind": "property",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt",
-        "line": 96
+        "line": 95
       }
     },
     "net.ccbluex.liquidbounce.event.events.VirtualScreenEvent.screenName": {

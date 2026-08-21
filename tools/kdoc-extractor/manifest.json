@@ -4,7 +4,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 106
+      "line": 105
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.CLIENT_NAME": {
@@ -12,7 +12,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 113
+      "line": 112
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.ClientResourceReloader": {
@@ -24,7 +24,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 517
+      "line": 516
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.IN_DEVELOPMENT": {
@@ -32,7 +32,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 149
+      "line": 148
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.identifier": {
@@ -40,7 +40,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 166
+      "line": 165
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.initializeClient": {
@@ -48,7 +48,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 196
+      "line": 195
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.initializeFeatures": {
@@ -56,7 +56,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 296
+      "line": 295
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.initializeManagers": {
@@ -64,7 +64,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 248
+      "line": 247
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.initializeResources": {
@@ -72,7 +72,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 312
+      "line": 311
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.logger": {
@@ -80,7 +80,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 154
+      "line": 153
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.prepareGuiStage": {
@@ -88,7 +88,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 373
+      "line": 372
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.resource": {
@@ -99,7 +99,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 175
+      "line": 174
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.resourceToString": {
@@ -110,7 +110,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 186
+      "line": 185
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.shutdownClient": {
@@ -118,7 +118,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 435
+      "line": 434
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.shutdownHandler": {
@@ -126,7 +126,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 541
+      "line": 540
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.startHandler": {
@@ -134,7 +134,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 462
+      "line": 461
     }
   },
   "net.ccbluex.liquidbounce.additions.GuiGraphicsExtractorAddition": {
@@ -210,7 +210,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt",
-      "line": 273
+      "line": 271
     }
   },
   "net.ccbluex.liquidbounce.api.core.CoroutineScope.retrying": {
@@ -234,7 +234,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt",
-      "line": 96
+      "line": 95
     }
   },
   "net.ccbluex.liquidbounce.api.core.HttpClient.client": {
@@ -242,7 +242,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt",
-      "line": 176
+      "line": 174
     }
   },
   "net.ccbluex.liquidbounce.api.core.HttpClient.clientHttpApiInterceptor": {
@@ -250,7 +250,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt",
-      "line": 152
+      "line": 150
     }
   },
   "net.ccbluex.liquidbounce.api.core.Response.parse": {
@@ -258,7 +258,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt",
-      "line": 256
+      "line": 254
     }
   },
   "net.ccbluex.liquidbounce.api.core.Response.toFile": {
@@ -266,7 +266,23 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt",
-      "line": 289
+      "line": 287
+    }
+  },
+  "net.ccbluex.liquidbounce.api.core.requestBodyGson": {
+    "doc": "Deliberately plain: request bodies must not be pretty-printed and must not run through the client's\nserialization exclusion strategies, so none of the instances in [net.ccbluex.liquidbounce.config.gson]\nare appropriate here.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/core/RequestBodyExtensions.kt",
+      "line": 34
+    }
+  },
+  "net.ccbluex.liquidbounce.api.interceptors.TokenInterceptor": {
+    "doc": "Injects `Authorization: Bearer <token>`. The provider is evaluated per request, so the token can change\nwithout recreating the client.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/interceptors/TokenInterceptor.kt",
+      "line": 29
     }
   },
   "net.ccbluex.liquidbounce.api.models.auth.ClientAccount": {
@@ -395,6 +411,94 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/OpenAiApi.kt",
       "line": 47
+    }
+  },
+  "net.ccbluex.liquidbounce.api.thirdparty.mojang.MojangApiClient": {
+    "doc": "The Microsoft/Xbox Live/XSTS token chain is not part of this client - MinecraftAuth implements it,\nsee [net.ccbluex.liquidbounce.features.account.MicrosoftAccount].\n\n```kotlin\nval client = MojangApiClient.Builder().httpClient(HttpClient.defaultClient).build()\n```",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/mojang/MojangApiClient.kt",
+      "line": 42
+    }
+  },
+  "net.ccbluex.liquidbounce.api.thirdparty.mojang.service.MinecraftServicesApi": {
+    "doc": "Endpoints on [api.minecraftservices.com](https://api.minecraftservices.com). Most of them require an\n`Authorization: Bearer <token>` header.\n\nThe authentication endpoints of this host (`login_with_xbox`, `entitlements/license`,\n`player/certificates`) are deliberately absent - MinecraftAuth already implements them as\n`MinecraftLauncherLoginRequest`, `MinecraftEntitlementsRequest` and\n`MinecraftPlayerCertificatesRequest`, driven by `JavaAuthManager`.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/mojang/service/MinecraftServicesApi.kt",
+      "line": 58
+    }
+  },
+  "net.ccbluex.liquidbounce.api.thirdparty.mojang.service.MojangApi": {
+    "doc": "Endpoints on [api.mojang.com](https://api.mojang.com).",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/mojang/service/MojangApi.kt",
+      "line": 31
+    }
+  },
+  "net.ccbluex.liquidbounce.api.thirdparty.mojang.service.MojangApi.fetchProfiles": {
+    "doc": "Max 10 names. Missing ones are omitted from the response.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/mojang/service/MojangApi.kt",
+      "line": 41
+    }
+  },
+  "net.ccbluex.liquidbounce.api.thirdparty.mojang.service.MojangApi.fetchUuidByUsername": {
+    "doc": "Returns 404 if no player exists.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/mojang/service/MojangApi.kt",
+      "line": 34
+    }
+  },
+  "net.ccbluex.liquidbounce.api.thirdparty.mojang.service.SessionServerApi": {
+    "doc": "Endpoints on [sessionserver.mojang.com](https://sessionserver.mojang.com).",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/mojang/service/SessionServerApi.kt",
+      "line": 30
+    }
+  },
+  "net.ccbluex.liquidbounce.api.thirdparty.mojang.service.SessionServerApi.fetchProfile": {
+    "doc": "Returns 204 if the UUID has no player.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/mojang/service/SessionServerApi.kt",
+      "line": 33
+    }
+  },
+  "net.ccbluex.liquidbounce.api.thirdparty.mojang.service.SessionServerApi.fetchProfileSigned": {
+    "doc": "As above, with signature verification.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/mojang/service/SessionServerApi.kt",
+      "line": 37
+    }
+  },
+  "net.ccbluex.liquidbounce.api.thirdparty.mojang.service.SessionServerApi.getBlockedServers": {
+    "doc": "SHA-1 hashes, one per line.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/mojang/service/SessionServerApi.kt",
+      "line": 56
+    }
+  },
+  "net.ccbluex.liquidbounce.api.thirdparty.mojang.service.SessionServerApi.hasJoined": {
+    "doc": "Returns the profile on success, 204/empty on failure.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/mojang/service/SessionServerApi.kt",
+      "line": 48
+    }
+  },
+  "net.ccbluex.liquidbounce.api.thirdparty.mojang.service.SessionServerApi.joinServer": {
+    "doc": "Returns 204 on success.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/mojang/service/SessionServerApi.kt",
+      "line": 44
     }
   },
   "net.ccbluex.liquidbounce.api.thirdparty.translator.TranslateLanguage": {
@@ -756,6 +860,14 @@
       "line": 55
     }
   },
+  "net.ccbluex.liquidbounce.config.gson.util.JsonObject.string": {
+    "doc": "Unlike [JsonObject.get] followed by `asString` and friends, these return `null` for an absent key\ninstead of throwing.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt",
+      "line": 151
+    }
+  },
   "net.ccbluex.liquidbounce.config.gson.util.JsonObjectBuilder.invoke": {
     "doc": "Fallback",
     "kind": "function",
@@ -1010,7 +1122,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-      "line": 285
+      "line": 228
     }
   },
   "net.ccbluex.liquidbounce.config.types.group.ValueGroup.updateChildState": {
@@ -1555,7 +1667,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt",
-      "line": 82
+      "line": 83
     }
   },
   "net.ccbluex.liquidbounce.event.events.DrawOutlinesEvent.markDirty": {
@@ -1563,7 +1675,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt",
-      "line": 94
+      "line": 95
     }
   },
   "net.ccbluex.liquidbounce.event.events.GameRenderTaskQueueEvent": {
@@ -1651,28 +1763,239 @@
       "line": 152
     }
   },
-  "net.ccbluex.liquidbounce.features.account.AccountManager.activeUrl": {
-    "doc": "Cache microsoft login server",
+  "net.ccbluex.liquidbounce.features.account.AccountManager.activeDeviceCodeUrl": {
+    "doc": "Re-triggering the device code flow while one is running re-shows this URL instead of asking\nMicrosoft for a new code.",
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt",
-      "line": 175
+      "line": 167
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.AccountManager.invalidateRealms": {
+    "doc": "Realms builds its client from the session that was active at the time, keeps it in a static field\nand never compares it against the current one, and it never retries an availability check that\nfailed with an authentication error. Both caches have to be dropped by hand.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt",
+      "line": 372
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.AccountManager.microsoftLoginInProgress": {
+    "doc": "Guards the WebView and credentials flows only - the device code flow uses [activeDeviceCodeUrl].",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt",
+      "line": 172
     }
   },
   "net.ccbluex.liquidbounce.features.account.AccountManager.newCrackedAccount": {
-    "doc": "Cracked account. This can only be used to join cracked servers and not premium servers.",
+    "doc": "Cannot join premium servers.",
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt",
-      "line": 119
+      "line": 113
     }
   },
-  "net.ccbluex.liquidbounce.features.account.AccountManager.newMicrosoftAccount": {
-    "doc": "Create a new Microsoft Account using the OAuth2 flow which opens a browser window to authenticate the user",
+  "net.ccbluex.liquidbounce.features.account.AccountManager.newMicrosoftAccountViaCredentials": {
+    "doc": "Does not support accounts with two-factor authentication enabled. Runs asynchronously; the result is\nsurfaced via [AccountManagerAdditionResultEvent].",
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt",
-      "line": 217
+      "line": 259
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.AccountManager.newMicrosoftAccountViaDeviceCode": {
+    "doc": "Blocks only until the verification URL is known and hands it to [url]; the account itself is created\nonce the user signs in elsewhere, surfaced via [AccountManagerAdditionResultEvent].",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt",
+      "line": 178
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.AccountManager.newMicrosoftAccountViaWebView": {
+    "doc": "Runs asynchronously; the result is surfaced via [AccountManagerAdditionResultEvent].",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt",
+      "line": 213
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.AccountService.serialName": {
+    "doc": "The simple class name the [MinecraftAccount] subclass used to have, kept so that configs written\nby older versions keep loading.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountService.kt",
+      "line": 31
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.AlteningAccount": {
+    "doc": "An account from the TheAltening account generator.\n\nTheAltening still speaks the legacy Yggdrasil protocol, so the [accountToken] is exchanged for an\naccess token through [YggdrasilUserAuthentication] rather than through Microsoft.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/AlteningAccount.kt",
+      "line": 47
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.AlteningAccount.<init>": {
+    "doc": "Used for JSON deserialize.",
+    "kind": "constructor",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/AlteningAccount.kt",
+      "line": 52
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.Ban": {
+    "doc": "",
+    "params": {
+      "bannedUntil": "epoch milliseconds the ban expires at, or `-1` if it never does."
+    },
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/Ban.kt",
+      "line": 29
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.CrackedAccount": {
+    "doc": "A cracked account - has no credentials and cannot join premium servers.\n\nWith [online] set, the real UUID of the name is looked up so that skins resolve; otherwise the\noffline UUID Minecraft derives from the name is used.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/CrackedAccount.kt",
+      "line": 35
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.CrackedAccount.<init>": {
+    "doc": "Used for JSON deserialize.",
+    "kind": "constructor",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/CrackedAccount.kt",
+      "line": 45
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.MicrosoftAccount": {
+    "doc": "A premium account authenticated through a Microsoft account.\n\nAuthentication is delegated to [MinecraftAuth](https://github.com/CCBlueX/minecraft-auth-java),\nwhich implements the full Microsoft -> Xbox Live -> XSTS -> Minecraft token exchange. Every\n`buildFrom*` blocks the calling thread until the sign-in completes, so none of them may be called\non the render thread.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt",
+      "line": 43
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.MicrosoftAccount.<init>": {
+    "doc": "Used for JSON deserialize.",
+    "kind": "constructor",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt",
+      "line": 50
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.MicrosoftAccount.JAVA_APPLICATION_CONFIG": {
+    "doc": "The official Minecraft (Java Edition) launcher application.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt",
+      "line": 92
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.MicrosoftAccount.buildFromCredentials": {
+    "doc": "Does not support accounts with two-factor authentication enabled; use [buildFromWebView] or\n[buildFromDeviceCode] for those.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt",
+      "line": 135
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.MicrosoftAccount.buildFromDeviceCode": {
+    "doc": "[onDeviceCode] is invoked once with the code the user has to enter at the returned verification\nURL; this blocks until the user completes the sign-in, the code expires, or [timeoutMs] elapses.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt",
+      "line": 120
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.MicrosoftAccount.buildFromRefreshToken": {
+    "doc": "[applicationConfig] must match the one the refresh token was originally issued for.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt",
+      "line": 149
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.MicrosoftAccount.buildFromWebView": {
+    "doc": "Signs in through a browser the caller supplies. Preferred over the other flows, as it supports\n2FA, passkeys and everything else Microsoft offers.\n\n[onOpen] has to display [ExternalBrowserMsaAuthService.getAuthenticationUrl] and report the\nURLs it navigates to back to the service; [onClose] runs once the sign-in has finished, failed\nor timed out.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt",
+      "line": 105
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.MicrosoftAccount.toRawJson": {
+    "doc": "The full [JavaAuthManager] state (MSA refresh token and all cached Xbox/Minecraft tokens) is\nembedded so that the session can be restored without signing in again.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt",
+      "line": 72
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.MinecraftAccount": {
+    "doc": "An account the client can log into.\n\nSubclasses own their credentials and how those are refreshed. Everything shared between them - the\nresolved profile, the favourite flag, ban tracking and JSON persistence - lives here.\n\nThis was previously the `mc-authlib` library. The Microsoft/Xbox Live/XSTS/Minecraft token chain\nbehind [MicrosoftAccount] is implemented by\n[MinecraftAuth](https://github.com/CCBlueX/minecraft-auth-java).",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/MinecraftAccount.kt",
+      "line": 59
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.MinecraftAccount.fromJson": {
+    "doc": "@throws IllegalArgumentException if [json] is not a valid account",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/MinecraftAccount.kt",
+      "line": 152
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.MinecraftAccount.login": {
+    "doc": "Authenticates the account and returns the session to hand to the game, along with the\nauthentication service that resolves other players' profiles while it is active.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/MinecraftAccount.kt",
+      "line": 90
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.MinecraftAccount.readProfile": {
+    "doc": "Accounts saved before their first successful refresh have no UUID, in which case [profile] stays\n`null` until the next [refresh].",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/MinecraftAccount.kt",
+      "line": 124
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.MinecraftAccount.trackBan": {
+    "doc": "Tracking bans is up to the caller - this only stores and expires them.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/MinecraftAccount.kt",
+      "line": 132
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.MinecraftAccount.username": {
+    "doc": "Known as soon as the account exists, unlike [profile], which is only resolved once [refresh] has\nsucceeded at least once.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/MinecraftAccount.kt",
+      "line": 65
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.SessionAccount": {
+    "doc": "A premium account represented by nothing but a Minecraft access token.\n\nThe token cannot be refreshed - it is used as-is until it expires, at which point the account has\nto be re-added.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/SessionAccount.kt",
+      "line": 34
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.SessionAccount.<init>": {
+    "doc": "Used for JSON deserialize.",
+    "kind": "constructor",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/SessionAccount.kt",
+      "line": 39
     }
   },
   "net.ccbluex.liquidbounce.features.account.User.couldBeOnline": {
@@ -1681,6 +2004,54 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/SessionWithService.kt",
       "line": 49
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.YggdrasilUserAuthentication": {
+    "doc": "A Yggdrasil `/authenticate` client, used for alt services such as TheAltening. Mojang itself is not\nauthenticated against through here - MinecraftAuth does that.\n\nDocumentation: https://wiki.vg/Authentication",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/YggdrasilUserAuthentication.kt",
+      "line": 39
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.YggdrasilUserAuthentication.AuthenticationResponse.selectedProfile": {
+    "doc": "Absent for a valid account without a Minecraft license - the authentication still succeeds.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/YggdrasilUserAuthentication.kt",
+      "line": 64
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.YggdrasilUserAuthentication.GSON": {
+    "doc": "Plain Gson: these are protocol types with no client-side adapters.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/YggdrasilUserAuthentication.kt",
+      "line": 100
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.clientIdentifier": {
+    "doc": "Client token of every session we create. Randomised per launch, which is what the protocol expects\nfrom a client that does not persist one.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/MinecraftAccount.kt",
+      "line": 38
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.minecraftAuthHttpClient": {
+    "doc": "MinecraftAuth builds its requests on its own HTTP stack rather than OkHttp, so it cannot share\n[HttpClient.defaultClient]. It does take the user agent, which is passed through here so that\naccount requests are identifiable the same way the rest of the client's traffic is.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/MinecraftAuthClient.kt",
+      "line": 31
+    }
+  },
+  "net.ccbluex.liquidbounce.features.account.mojangAuthentication": {
+    "doc": "Constructing this fetches the environment's `/publickeys`, so it is shared by every account that\nauthenticates against Mojang rather than built per login.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/account/MinecraftAccount.kt",
+      "line": 44
     }
   },
   "net.ccbluex.liquidbounce.features.blink.BlinkManager": {
@@ -8773,7 +9144,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleTNTTimer.kt",
-      "line": 49
+      "line": 48
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleTNTTimer.getTntColor": {
@@ -8781,7 +9152,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleTNTTimer.kt",
-      "line": 105
+      "line": 131
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleTracers": {
@@ -10105,12 +10476,23 @@
       "line": 33
     }
   },
+  "net.ccbluex.liquidbounce.integration.backend.BrowserBackend.createBrowser": {
+    "doc": "",
+    "params": {
+      "incognito": "Whether the browser gets cookies and storage of its own that are kept in memory\n                 only, instead of sharing the ones the client persists. Not every backend can\n                 honour this - check [Browser.isIncognito] when it matters."
+    },
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserBackend.kt",
+      "line": 67
+    }
+  },
   "net.ccbluex.liquidbounce.integration.backend.BrowserBackend.start": {
     "doc": "Starts the browser backend and initializes it.",
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserBackend.kt",
-      "line": 44
+      "line": 50
     }
   },
   "net.ccbluex.liquidbounce.integration.backend.BrowserBackend.stop": {
@@ -10118,7 +10500,15 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserBackend.kt",
-      "line": 49
+      "line": 55
+    }
+  },
+  "net.ccbluex.liquidbounce.integration.backend.BrowserBackend.supportsIncognito": {
+    "doc": "Whether this backend can give a browser cookies and storage of its own. Backends that hand the\npage to something they do not control cannot.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserBackend.kt",
+      "line": 43
     }
   },
   "net.ccbluex.liquidbounce.integration.backend.BrowserBackend.update": {
@@ -10126,7 +10516,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserBackend.kt",
-      "line": 54
+      "line": 60
     }
   },
   "net.ccbluex.liquidbounce.integration.backend.BrowserBackendManager.forceUpdate": {
@@ -10183,6 +10573,14 @@
       "line": 51
     }
   },
+  "net.ccbluex.liquidbounce.integration.backend.backends.cef.CefBrowser.requestContext": {
+    "doc": "Request context of an incognito browser, disposed along with it.\n\nA context created this way has no cache path, so CEF keeps its cookies, local storage and cache\nin memory and throws all of it away with the context. The global context, which every other\nbrowser shares, persists them to disk instead.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/cef/CefBrowser.kt",
+      "line": 64
+    }
+  },
   "net.ccbluex.liquidbounce.integration.backend.backends.cef.CefBrowserBackend": {
     "doc": "Uses a modified fork of the JCEF library browser backend made for Minecraft.\nThis browser backend is based on Chromium and is the most advanced browser backend.\nJCEF is available through the MCEF library, which provides a Minecraft compatible version of JCEF.",
     "see": [
@@ -10202,6 +10600,14 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/cef/CefBrowserBackend.kt",
       "line": 129
+    }
+  },
+  "net.ccbluex.liquidbounce.integration.backend.backends.external.ExternalSystemBrowser.isIncognito": {
+    "doc": "Always false - the page is handed to the system browser, whose profile we have no say over.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/external/ExternalSystemBrowser.kt",
+      "line": 43
     }
   },
   "net.ccbluex.liquidbounce.integration.backend.backends.external.ExternalSystemBrowserBackend": {
@@ -10225,7 +10631,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt",
-      "line": 47
+      "line": 53
     }
   },
   "net.ccbluex.liquidbounce.integration.backend.browser.Browser.goBack": {
@@ -10233,7 +10639,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt",
-      "line": 62
+      "line": 68
     }
   },
   "net.ccbluex.liquidbounce.integration.backend.browser.Browser.goForward": {
@@ -10241,7 +10647,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt",
-      "line": 57
+      "line": 63
     }
   },
   "net.ccbluex.liquidbounce.integration.backend.browser.Browser.invalidate": {
@@ -10249,7 +10655,15 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt",
-      "line": 72
+      "line": 78
+    }
+  },
+  "net.ccbluex.liquidbounce.integration.backend.browser.Browser.isIncognito": {
+    "doc": "Whether this browser keeps its cookies and storage to itself, in memory.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt",
+      "line": 33
     }
   },
   "net.ccbluex.liquidbounce.integration.backend.browser.Browser.reload": {
@@ -10257,7 +10671,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt",
-      "line": 52
+      "line": 58
     }
   },
   "net.ccbluex.liquidbounce.integration.backend.browser.Browser.texture": {
@@ -10265,7 +10679,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt",
-      "line": 42
+      "line": 48
     }
   },
   "net.ccbluex.liquidbounce.integration.backend.browser.Browser.toString": {
@@ -10273,7 +10687,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt",
-      "line": 77
+      "line": 83
     }
   },
   "net.ccbluex.liquidbounce.integration.backend.browser.Browser.update": {
@@ -10281,7 +10695,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt",
-      "line": 67
+      "line": 73
     }
   },
   "net.ccbluex.liquidbounce.integration.backend.browser.Browser.url": {
@@ -10289,7 +10703,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt",
-      "line": 37
+      "line": 43
     }
   },
   "net.ccbluex.liquidbounce.integration.backend.browser.BrowserRenderer": {
@@ -10659,6 +11073,22 @@
       "line": 73
     }
   },
+  "net.ccbluex.liquidbounce.integration.screen.impl.MicrosoftLoginScreen": {
+    "doc": "Hosts the Microsoft login page in a CEF browser.\n\nMinecraftAuth ships a JavaFX web view for this, but we do not ship JavaFX, so\n[ExternalBrowserMsaAuthService] lets the login run in the browser the client already has. The screen\nreports every URL the page navigates to, and the service picks the auth code out of the redirect.\n\nThe browser is incognito, so the Microsoft session never reaches the client's cookie store. Without\nthat, signing in would leave the account logged in for anyone who opens a browser afterwards, and\nadding a second account would silently reuse the first one's session instead of asking who to sign\nin as.\n\nThe screen does not close itself on success - the service's close callback does, once the auth code has\nbeen exchanged for a token.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/impl/MicrosoftLoginScreen.kt",
+      "line": 46
+    }
+  },
+  "net.ccbluex.liquidbounce.integration.screen.impl.MicrosoftLoginScreen.removed": {
+    "doc": "Cleanup lives here rather than in [onClose] because the screen is also dismissed programmatically\nonce the sign-in finishes, and that path only goes through [removed].",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/impl/MicrosoftLoginScreen.kt",
+      "line": 98
+    }
+  },
   "net.ccbluex.liquidbounce.integration.screen.isLunar": {
     "doc": "Checks for Lunar client screens\n\nTODO: Do not simply replace any Lunar Screen with the title screen, if not in a world",
     "kind": "property",
@@ -10672,7 +11102,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/ScreenManager.kt",
-      "line": 73
+      "line": 74
     }
   },
   "net.ccbluex.liquidbounce.integration.screen.screenAcknowledgement": {
@@ -10680,7 +11110,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/ScreenManager.kt",
-      "line": 89
+      "line": 90
     }
   },
   "net.ccbluex.liquidbounce.integration.task.MCEFProgressForwarder.onComplete": {
@@ -10864,7 +11294,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/Theme.kt",
-      "line": 315
+      "line": 319
     }
   },
   "net.ccbluex.liquidbounce.integration.theme.ThemeBackground.Image": {
@@ -14045,7 +14475,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt",
-      "line": 416
+      "line": 422
     }
   },
   "net.ccbluex.liquidbounce.utils.block.placer.BlockPlacer.blocks": {
@@ -14061,7 +14491,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt",
-      "line": 436
+      "line": 442
     }
   },
   "net.ccbluex.liquidbounce.utils.block.placer.BlockPlacer.constructFailResult": {
@@ -14077,7 +14507,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt",
-      "line": 444
+      "line": 450
     }
   },
   "net.ccbluex.liquidbounce.utils.block.placer.BlockPlacer.placedRenderer": {
@@ -14096,7 +14526,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt",
-      "line": 428
+      "line": 434
     }
   },
   "net.ccbluex.liquidbounce.utils.block.placer.BlockPlacer.sneak": {
@@ -14120,7 +14550,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt",
-      "line": 393
+      "line": 399
     }
   },
   "net.ccbluex.liquidbounce.utils.block.placer.CrystalDestroyFeature.onDisable": {
@@ -17217,7 +17647,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/BreakingProgressRenderer.kt",
-      "line": 61
+      "line": 60
     }
   },
   "net.ccbluex.liquidbounce.utils.render.BufferedSource.readNativeImage": {
