@@ -25,8 +25,9 @@ import type { WorldTemplatePaginatedList } from '../../../../com/mojang/realmscl
 import type { UUID } from '../../../../java/util/UUID.d.ts'
 import type { CompletableFuture } from '../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { MixinRealmsClientAccessor } from '../../../../net/ccbluex/liquidbounce/injection/mixins/realms/MixinRealmsClientAccessor.d.ts'
 import type { Minecraft } from '../../../../net/minecraft/client/Minecraft.d.ts'
-export class RealmsClient extends Object {
+export class RealmsClient extends Object implements MixinRealmsClientAccessor {
     static ENVIRONMENT: RealmsClient$Environment;
     static getOrCreate(): RealmsClient;
     static getOrCreate(paramminecraft: Minecraft): RealmsClient;

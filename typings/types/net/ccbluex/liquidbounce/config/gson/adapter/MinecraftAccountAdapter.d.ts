@@ -6,7 +6,7 @@ import type { JsonSerializationContext } from '../../../../../../com/google/gson
 import type { JsonSerializer } from '../../../../../../com/google/gson/JsonSerializer.d.ts'
 import type { Type } from '../../../../../../java/lang/reflect/Type.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-import type { MinecraftAccount } from '../../../../../../net/ccbluex/liquidbounce/authlib/account/MinecraftAccount.d.ts'
+import type { MinecraftAccount } from '../../../../../../net/ccbluex/liquidbounce/features/account/MinecraftAccount.d.ts'
 export class MinecraftAccountAdapter extends Object implements JsonDeserializer<MinecraftAccount>, JsonSerializer<MinecraftAccount> {
     static INSTANCE: MinecraftAccountAdapter;
     deserialize(json: JsonElement, typeOfT: Type, context: JsonDeserializationContext | null): MinecraftAccount;

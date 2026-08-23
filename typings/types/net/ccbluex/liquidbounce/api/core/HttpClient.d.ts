@@ -4,7 +4,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Pair } from '../../../../../kotlin/Pair.d.ts'
 import type { Continuation } from '../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { HttpMethod } from '../../../../../net/ccbluex/liquidbounce/api/core/HttpMethod.d.ts'
-import type { MojangApiClient } from '../../../../../net/ccbluex/liquidbounce/authlib/mojangapi/MojangApiClient.d.ts'
+import type { MojangApiClient } from '../../../../../net/ccbluex/liquidbounce/api/thirdparty/mojang/MojangApiClient.d.ts'
 import type { OkHttpProgressInterceptor$ProgressListener } from '../../../../../net/ccbluex/liquidbounce/mcef/listeners/OkHttpProgressInterceptor$ProgressListener.d.ts'
 import type { Call } from '../../../../../okhttp3/Call.d.ts'
 import type { Headers$Builder } from '../../../../../okhttp3/Headers$Builder.d.ts'
@@ -17,7 +17,7 @@ export class HttpClient extends Object {
     /**
      * Unfortunately, Lunar Client uses OkHttp 4.12.0 which does not have {@link Headers.EMPTY}
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt#L96 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt:96}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2727616ee96ec8c4ceda97bebdd601f050a6856e/src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt#L95 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt:95}
      * @deprecated Use Headers.EMPTY instead when Lunar Client updates OkHttp to 5.10 or newer.
      */
     static EMPTY_HEADERS: Pair<string, string>[];
@@ -25,7 +25,7 @@ export class HttpClient extends Object {
     /**
      * API client
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a9cf2b145901ecd37d3f2a815c20cf0955e76853/src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt#L176 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt:176}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2727616ee96ec8c4ceda97bebdd601f050a6856e/src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt#L174 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt:174}
      */
     static getClient(): OkHttpClient;
     static getMojangApiClient(): MojangApiClient;

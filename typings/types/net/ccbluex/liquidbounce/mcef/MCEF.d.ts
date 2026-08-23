@@ -7,6 +7,7 @@ import type { MCEFBrowser } from '../../../../net/ccbluex/liquidbounce/mcef/cef/
 import type { MCEFBrowserSettings } from '../../../../net/ccbluex/liquidbounce/mcef/cef/MCEFBrowserSettings.d.ts'
 import type { MCEFClient } from '../../../../net/ccbluex/liquidbounce/mcef/cef/MCEFClient.d.ts'
 import type { Minecraft } from '../../../../net/minecraft/client/Minecraft.d.ts'
+import type { CefRequestContext } from '../../../../org/cef/browser/CefRequestContext.d.ts'
 import type { Logger } from '../../../../org/slf4j/Logger.d.ts'
 export class MCEF extends Enum<MCEF> {
     static INSTANCE: MCEF;
@@ -22,7 +23,9 @@ export class MCEF extends Enum<MCEF> {
     readonly settings: MCEFSettings;
     // private assertInitialized(): void;
     createBrowser(arg0: string, arg1: boolean, arg2: number, arg3: number, arg4: MCEFBrowserSettings): MCEFBrowser;
+    createBrowser(arg0: string, arg1: boolean, arg2: number, arg3: number, arg4: MCEFBrowserSettings, arg5: CefRequestContext): MCEFBrowser;
     createBrowser(arg0: string, arg1: boolean, arg2: MCEFBrowserSettings): MCEFBrowser;
+    createBrowser(arg0: string, arg1: boolean, arg2: MCEFBrowserSettings, arg3: CefRequestContext): MCEFBrowser;
     getApp(): MCEFApp;
     getClient(): MCEFClient;
     getJavaCefCommit(): string;

@@ -18,14 +18,17 @@ import type { ClientPacketListener } from '../../../../../../../net/minecraft/cl
 import type { MultiPlayerGameMode } from '../../../../../../../net/minecraft/client/multiplayer/MultiPlayerGameMode.d.ts'
 import type { LocalPlayer } from '../../../../../../../net/minecraft/client/player/LocalPlayer.d.ts'
 import type { Logger } from '../../../../../../../org/apache/logging/log4j/Logger.d.ts'
+import type { CefRequestContext } from '../../../../../../../org/cef/browser/CefRequestContext.d.ts'
 export class CefBrowser extends Object implements MinecraftShortcuts, Browser, InputHandler {
-    constructor(backend: CefBrowserBackend, url: string, viewport: BrowserViewport, settings: BrowserSettings, priority: number, inputAcceptor: InputAcceptor | null)
+    constructor(backend: CefBrowserBackend, url: string, viewport: BrowserViewport, settings: BrowserSettings, priority: number, isIncognito: boolean, inputAcceptor: InputAcceptor | null)
     // private backend: CefBrowserBackend;
     // private browserApi: MCEFBrowser;
     /*not mapped: */ getBrowserApi$net_ccbluex_liquidbounce(): MCEFBrowser;
     readonly gpuDevice: GpuDevice;
     // private inputListener: InputListener | null;
     readonly interaction: MultiPlayerGameMode;
+    // private isIncognito: boolean;
+    /*not mapped: */ isIncognito(): boolean;
     // private isInitialized: boolean;
     /*not mapped: */ isInitialized(): boolean;
     // private logger: Logger;
@@ -34,6 +37,7 @@ export class CefBrowser extends Object implements MinecraftShortcuts, Browser, I
     readonly player: LocalPlayer;
     priority: number;
     // private renderer: BrowserRenderer;
+    // private requestContext: CefRequestContext | null;
     readonly settings: BrowserSettings;
     state: BrowserState;
     readonly texture: BrowserTexture | null;

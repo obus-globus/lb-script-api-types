@@ -1,6 +1,6 @@
 import type { Continuation } from '../../../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { Duration } from '../../../../../../../kotlin/time/Duration.d.ts'
-import type { MinecraftServicesApi } from '../../../../../../../net/ccbluex/liquidbounce/authlib/mojangapi/service/MinecraftServicesApi.d.ts'
+import type { MinecraftServicesApi } from '../../../../../../../net/ccbluex/liquidbounce/api/thirdparty/mojang/service/MinecraftServicesApi.d.ts'
 import type { ClientModule } from '../../../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
 export class ModuleSkinChanger extends ClientModule {
     static INSTANCE: ModuleSkinChanger;

@@ -17,6 +17,13 @@ export class ExternalSystemBrowser extends Object implements MinecraftShortcuts,
     // private backend: ExternalSystemBrowserBackend;
     readonly gpuDevice: GpuDevice;
     readonly interaction: MultiPlayerGameMode;
+    // private isIncognito: boolean;
+    /**
+     * Always false - the page is handed to the system browser, whose profile we have no say over.
+     *
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2727616ee96ec8c4ceda97bebdd601f050a6856e/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/external/ExternalSystemBrowser.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/external/ExternalSystemBrowser.kt:43}
+     */
+    /*not mapped: */ isIncognito(): boolean;
     // private isInitialized: boolean;
     /*not mapped: */ isInitialized(): boolean;
     readonly mc: Minecraft;

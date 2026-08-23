@@ -8,11 +8,13 @@ import type { MCEFCursorChangeListener } from '../../../../../net/ccbluex/liquid
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { CefBrowser } from '../../../../../org/cef/browser/CefBrowser.d.ts'
 import type { CefBrowserOsr } from '../../../../../org/cef/browser/CefBrowserOsr.d.ts'
+import type { CefRequestContext } from '../../../../../org/cef/browser/CefRequestContext.d.ts'
 import type { CefDragData } from '../../../../../org/cef/callback/CefDragData.d.ts'
 import type { CefAcceleratedPaintInfo } from '../../../../../org/cef/handler/CefAcceleratedPaintInfo.d.ts'
 import type { CefCursorType } from '../../../../../org/cef/misc/CefCursorType.d.ts'
 export class MCEFBrowser extends CefBrowserOsr {
     constructor(arg0: MCEFClient, arg1: string, arg2: boolean, arg3: MCEFBrowserSettings)
+    constructor(arg0: MCEFClient, arg1: string, arg2: boolean, arg3: MCEFBrowserSettings, arg4: CefRequestContext)
     // private btnMask: number;
     // private clicks: number;
     readonly cursorChangeListener: (param0: number) => void;

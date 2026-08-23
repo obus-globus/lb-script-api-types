@@ -12,9 +12,9 @@ import type { ClientPacketListener } from '../../../../../../net/minecraft/clien
 import type { MultiPlayerGameMode } from '../../../../../../net/minecraft/client/multiplayer/MultiPlayerGameMode.d.ts'
 import type { LocalPlayer } from '../../../../../../net/minecraft/client/player/LocalPlayer.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
-export abstract class BlockPlacerRotationMode extends Mode implements MinecraftShortcuts {
+export class BlockPlacerRotationMode extends Mode implements MinecraftShortcuts {
     static Companion: Tagged$Companion;
-    constructor(name: string, modeValueGroup: ModeValueGroup<BlockPlacerRotationMode>, placer: BlockPlacer)
+    protected constructor(name: string, modeValueGroup: ModeValueGroup<BlockPlacerRotationMode>, placer: BlockPlacer)
     readonly gpuDevice: GpuDevice;
     readonly interaction: MultiPlayerGameMode;
     readonly mc: Minecraft;
