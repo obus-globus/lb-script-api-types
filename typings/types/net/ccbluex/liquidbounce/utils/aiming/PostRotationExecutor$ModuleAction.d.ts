@@ -3,7 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ClientModule } from '../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
 export class PostRotationExecutor$ModuleAction extends Object {
     constructor(module: ClientModule, action: () => void)
-    readonly action: () => void;
-    readonly module: ClientModule;
+    // private action: () => void;
+    // private module: ClientModule;
     executeIfRunning(): void;
 }

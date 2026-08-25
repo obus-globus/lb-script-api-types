@@ -13,6 +13,7 @@ export class VfpCompatibility extends Enum<VfpCompatibility> {
     isNewerThanOrEqual1_21_5(): boolean;
     isNewerThanOrEqual1_21_6(): boolean;
     isNewerThanOrEqual1_21_9(): boolean;
+    isOlderThan1_21(): boolean;
     isOlderThan1_21_2(): boolean;
     isOlderThanOrEqual1_11_1(): boolean;
     isOlderThanOrEqual1_12_2(): boolean;

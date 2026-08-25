@@ -34,6 +34,7 @@ export class NoFallMLG extends NoFallMode {
     // private canPickUpWaterSafely(): boolean;
     // private canUseScaffoldingAt(targetPos: BlockPos): boolean;
     disable(): void;
+    // private executePlacement(action: NoFallMLG$PlacementAction): void;
     // private getCurrentGoal(): NoFallMLG$PlacementAction | null;
     // private getCurrentMLGPlacementPlan(): NoFallMLG$PlacementAction | null;
     // private getCurrentPickupTarget(): NoFallMLG$PlacementAction | null;

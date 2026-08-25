@@ -3529,7 +3529,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt",
-      "line": 282
+      "line": 283
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.ModuleAimbot": {
@@ -6485,6 +6485,14 @@
       "line": 50
     }
   },
+  "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleTridentBoost": {
+    "doc": "TridentBoost module\n\nStrengthens the riptide dash of a trident and allows it to be used on dry land.",
+    "kind": "object",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleTridentBoost.kt",
+      "line": 30
+    }
+  },
   "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleVehicleBoost": {
     "doc": "Vehicle Boost module\n\nBoosts you when leaving a vehicle.",
     "kind": "object",
@@ -8487,7 +8495,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-      "line": 71
+      "line": 73
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.NoFallMLG.getCurrentGoal": {
@@ -8495,7 +8503,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-      "line": 218
+      "line": 233
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.NoFallMLG.getCurrentMLGPlacementPlan": {
@@ -8503,7 +8511,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-      "line": 260
+      "line": 275
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.NoFallMLG.getCurrentPickupTarget": {
@@ -8511,7 +8519,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-      "line": 233
+      "line": 248
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.NoFallMount": {
@@ -8599,7 +8607,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-      "line": 396
+      "line": 411
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.offhand.ModuleOffhand": {
@@ -15214,7 +15222,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt",
-      "line": 151
+      "line": 162
     }
   },
   "net.ccbluex.liquidbounce.utils.client.isNewerThanOrEquals1_21_5": {
@@ -15222,7 +15230,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt",
-      "line": 162
+      "line": 173
     }
   },
   "net.ccbluex.liquidbounce.utils.client.isNewerThanOrEquals1_21_6": {
@@ -15230,7 +15238,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt",
-      "line": 173
+      "line": 184
     }
   },
   "net.ccbluex.liquidbounce.utils.client.isNewerThanOrEquals1_21_9": {
@@ -15238,7 +15246,15 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt",
-      "line": 185
+      "line": 196
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.client.isOlderThan1_21": {
+    "doc": "1.21 added rotation fields to [net.minecraft.network.protocol.game.ServerboundUseItemPacket].\nOlder protocols need the movement rotation packet to be sent before a use-item interaction.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt",
+      "line": 138
     }
   },
   "net.ccbluex.liquidbounce.utils.client.isOlderThan1_21_2": {
@@ -15246,7 +15262,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt",
-      "line": 138
+      "line": 149
     }
   },
   "net.ccbluex.liquidbounce.utils.client.isOlderThanOrEqual1_15_2": {
@@ -15262,7 +15278,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt",
-      "line": 197
+      "line": 208
     }
   },
   "net.ccbluex.liquidbounce.utils.client.randomUsername": {
@@ -15476,7 +15492,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
-      "line": 331
+      "line": 334
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.FallingPlayer.applyAirInput": {
@@ -15492,7 +15508,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
-      "line": 321
+      "line": 324
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.FallingPlayer.applyFreeFallForces": {
@@ -15516,7 +15532,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
-      "line": 258
+      "line": 261
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.FallingPlayer.effectiveGravity": {
@@ -15524,7 +15540,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
-      "line": 154
+      "line": 157
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.FallingPlayer.findSupportingBlock": {
@@ -15532,7 +15548,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
-      "line": 298
+      "line": 301
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.FallingPlayer.playerMovementInput": {
@@ -15543,7 +15559,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
-      "line": 172
+      "line": 175
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.FallingPlayer.willStartTickInBlockBeforeCollision": {
@@ -15551,7 +15567,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
-      "line": 199
+      "line": 202
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.LinearPositionExtrapolation": {
@@ -15917,7 +15933,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
-      "line": 384
+      "line": 387
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.hasCooldown": {
@@ -15997,7 +16013,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
-      "line": 342
+      "line": 345
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.selectSupportingBlock": {
@@ -16005,7 +16021,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
-      "line": 404
+      "line": 407
     }
   },
   "net.ccbluex.liquidbounce.utils.input.HumanInputDeserializer.StringDeserializer.deserializeThrowing": {

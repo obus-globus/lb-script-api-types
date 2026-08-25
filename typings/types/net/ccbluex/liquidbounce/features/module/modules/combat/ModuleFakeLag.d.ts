@@ -11,7 +11,7 @@ import type { Chronometer } from '../../../../../../../net/ccbluex/liquidbounce/
  *
  * Holds back packets to prevent you from being hit by an enemy.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2727616ee96ec8c4ceda97bebdd601f050a6856e/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleFakeLag.kt#L62 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleFakeLag.kt:62}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleFakeLag.kt#L62 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleFakeLag.kt:62}
  */
 export class ModuleFakeLag extends ClientModule {
     static INSTANCE: ModuleFakeLag;

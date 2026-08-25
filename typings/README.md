@@ -3,8 +3,8 @@
 <!-- lb-badges:start -->
 [![npm](https://img.shields.io/npm/v/@wunk/lb-script-api-types?label=npm&color=cb3837)](https://www.npmjs.com/package/@wunk/lb-script-api-types)
 [![Minecraft](https://img.shields.io/badge/Minecraft-26.2-2ea44f)](https://www.npmjs.com/package/@wunk/lb-script-api-types)
-[![LiquidBounce](https://img.shields.io/badge/LiquidBounce-0.40.1-5865f2)](https://github.com/CCBlueX/LiquidBounce/commit/2727616ee96ec8c4ceda97bebdd601f050a6856e)
-[![LB build](https://img.shields.io/badge/LB_build-v0.40.0--2--g2727616ee-555)](https://github.com/CCBlueX/LiquidBounce/commit/2727616ee96ec8c4ceda97bebdd601f050a6856e)
+[![LiquidBounce](https://img.shields.io/badge/LiquidBounce-0.40.1-5865f2)](https://github.com/CCBlueX/LiquidBounce/commit/1dd09d11a76f588ec66d4eb9c06f470b5294257e)
+[![LB build](https://img.shields.io/badge/LB_build-v0.40.0--4--g1dd09d11a-555)](https://github.com/CCBlueX/LiquidBounce/commit/1dd09d11a76f588ec66d4eb9c06f470b5294257e)
 <!-- lb-badges:end -->
 
 The badges track the build these types were generated from: the Minecraft

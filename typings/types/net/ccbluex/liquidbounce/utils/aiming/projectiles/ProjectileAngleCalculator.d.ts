@@ -8,7 +8,7 @@ import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 /**
  * Calculates the shooting angle which hits the supplied target
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2727616ee96ec8c4ceda97bebdd601f050a6856e/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/projectiles/ProjectileAngleCalculator.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/projectiles/ProjectileAngleCalculator.kt:33}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/projectiles/ProjectileAngleCalculator.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/projectiles/ProjectileAngleCalculator.kt:33}
  */
 export interface ProjectileAngleCalculator extends Object{
     calculateAngleFor(projectileInfo: TrajectoryInfo, sourcePos: Vec3, targetPosFunction: PositionExtrapolation, targetShape: EntityDimensions): Rotation | null;

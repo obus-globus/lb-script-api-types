@@ -4,7 +4,7 @@ import type { Ban$Companion } from '../../../../../net/ccbluex/liquidbounce/feat
 /**
  * @param bannedUntil epoch milliseconds the ban expires at, or `-1` if it never does.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2727616ee96ec8c4ceda97bebdd601f050a6856e/src/main/kotlin/net/ccbluex/liquidbounce/features/account/Ban.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/Ban.kt:29}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/features/account/Ban.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/Ban.kt:29}
  */
 export class Ban extends Object {
     static Companion: Ban$Companion;

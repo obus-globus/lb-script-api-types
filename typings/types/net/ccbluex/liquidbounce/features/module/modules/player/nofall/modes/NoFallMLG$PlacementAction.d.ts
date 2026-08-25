@@ -2,6 +2,7 @@ import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { MlgPlacementActionType } from '../../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/MlgPlacementActionType.d.ts'
 import type { PlacementPlan } from '../../../../../../../../../net/ccbluex/liquidbounce/utils/block/targetfinding/PlacementPlan.d.ts'
 import type { Item } from '../../../../../../../../../net/minecraft/world/item/Item.d.ts'
+import type { BlockState } from '../../../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class NoFallMLG$PlacementAction extends Object {
     constructor(plan: PlacementPlan, type: MlgPlacementActionType, item: Item, requiresSneak: boolean, collisionTick: number | null)
     readonly collisionTick: number | null;
@@ -18,4 +19,5 @@ export class NoFallMLG$PlacementAction extends Object {
     equals(other: Object | null): boolean;
     hashCode(): number;
     toString(): string;
+    wasApplied(targetStateBefore: BlockState | null): boolean;
 }

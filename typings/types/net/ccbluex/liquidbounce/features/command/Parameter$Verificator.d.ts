@@ -10,7 +10,7 @@ export interface Parameter$Verificator<T extends unknown> extends Object{
      * @returns the text is not valid, this function returns {@link Result.Error}, otherwise
 {@link Result.Ok} with the parsed content is returned.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2727616ee96ec8c4ceda97bebdd601f050a6856e/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt#L96 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt:96}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt#L96 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt:96}
      */
     verifyAndParse(sourceText: string): Parameter$Verificator$Result<T>;
 }

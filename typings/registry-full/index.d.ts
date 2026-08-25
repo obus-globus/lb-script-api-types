@@ -31218,6 +31218,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleTargetStrafe$Visuals": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleTargetStrafe$Visuals").ModuleTargetStrafe$Visuals;
     "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleTeleport": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleTeleport").ModuleTeleport;
     "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleTeleport$GroundMode": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleTeleport$GroundMode").ModuleTeleport$GroundMode;
+    "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleTridentBoost": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleTridentBoost").ModuleTridentBoost;
     "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleVehicleBoost": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleVehicleBoost").ModuleVehicleBoost;
     "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleVehicleControl": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleVehicleControl").ModuleVehicleControl;
     "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleVehicleControl$BaseSpeed": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleVehicleControl$BaseSpeed").ModuleVehicleControl$BaseSpeed;

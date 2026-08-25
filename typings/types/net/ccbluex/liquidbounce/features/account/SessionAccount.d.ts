@@ -7,7 +7,7 @@ import type { SessionAccount$Companion } from '../../../../../net/ccbluex/liquid
  * The token cannot be refreshed - it is used as-is until it expires, at which point the account has
  * to be re-added.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2727616ee96ec8c4ceda97bebdd601f050a6856e/src/main/kotlin/net/ccbluex/liquidbounce/features/account/SessionAccount.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/SessionAccount.kt:34}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/features/account/SessionAccount.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/SessionAccount.kt:34}
  */
 export class SessionAccount extends MinecraftAccount {
     static Companion: SessionAccount$Companion;
@@ -15,7 +15,7 @@ export class SessionAccount extends MinecraftAccount {
     /**
      * Used for JSON deserialize.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2727616ee96ec8c4ceda97bebdd601f050a6856e/src/main/kotlin/net/ccbluex/liquidbounce/features/account/SessionAccount.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/SessionAccount.kt:39}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/features/account/SessionAccount.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/SessionAccount.kt:39}
      */
     constructor()
     constructor(session: string)

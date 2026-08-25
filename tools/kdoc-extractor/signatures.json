@@ -35752,6 +35752,50 @@
         }
       }
     ],
+    "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleTridentBoost.ignoresWaterRequirement": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleTridentBoost.kt",
+          "line": 42
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleTridentBoost.scaleHorizontal": [
+      {
+        "params": [
+          {
+            "name": "original",
+            "type": "Double",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleTridentBoost.kt",
+          "line": 36
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleTridentBoost.scaleVertical": [
+      {
+        "params": [
+          {
+            "name": "original",
+            "type": "Double",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleTridentBoost.kt",
+          "line": 39
+        }
+      }
+    ],
     "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleVehicleControl.onEnabled": [
       {
         "params": [],
@@ -43640,7 +43684,24 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-          "line": 377
+          "line": 388
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.NoFallMLG.PlacementAction.wasApplied": [
+      {
+        "params": [
+          {
+            "name": "targetStateBefore",
+            "type": "BlockState?",
+            "nullable": true,
+            "vararg": false
+          }
+        ],
+        "returns": "Boolean",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
+          "line": 395
         }
       }
     ],
@@ -43650,7 +43711,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-          "line": 253
+          "line": 268
         }
       }
     ],
@@ -43660,7 +43721,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-          "line": 350
+          "line": 365
         },
         "isExtension": true,
         "receiver": "PlacementPlan"
@@ -43672,7 +43733,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-          "line": 368
+          "line": 383
         },
         "isExtension": true,
         "receiver": "PlacementPlan"
@@ -43691,7 +43752,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-          "line": 316
+          "line": 331
         }
       }
     ],
@@ -43701,7 +43762,24 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-          "line": 106
+          "line": 108
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.NoFallMLG.executePlacement": [
+      {
+        "params": [
+          {
+            "name": "action",
+            "type": "PlacementAction",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
+          "line": 180
         }
       }
     ],
@@ -43711,7 +43789,7 @@
         "returns": "PlacementAction?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-          "line": 218
+          "line": 233
         }
       }
     ],
@@ -43721,7 +43799,7 @@
         "returns": "PlacementAction?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-          "line": 260
+          "line": 275
         }
       }
     ],
@@ -43731,7 +43809,7 @@
         "returns": "PlacementAction?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-          "line": 233
+          "line": 248
         }
       }
     ],
@@ -43741,7 +43819,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-          "line": 328
+          "line": 343
         }
       }
     ],
@@ -43751,27 +43829,8 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-          "line": 111
+          "line": 113
         }
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.NoFallMLG.wasApplied": [
-      {
-        "params": [
-          {
-            "name": "targetStateBefore",
-            "type": "BlockState?",
-            "nullable": true,
-            "vararg": false
-          }
-        ],
-        "returns": "Boolean",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-          "line": 373
-        },
-        "isExtension": true,
-        "receiver": "PlacementAction"
       }
     ],
     "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.NoFallMLGKt.shouldPrepareMlgAction": [
@@ -43805,7 +43864,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-          "line": 396
+          "line": 411
         }
       }
     ],
@@ -43840,7 +43899,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-          "line": 410
+          "line": 425
         }
       }
     ],
@@ -91765,7 +91824,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt",
-          "line": 222
+          "line": 233
         }
       }
     ],
@@ -91782,7 +91841,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt",
-          "line": 213
+          "line": 224
         }
       }
     ],
@@ -91817,7 +91876,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt",
-          "line": 241
+          "line": 252
         }
       }
     ],
@@ -91840,7 +91899,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt",
-          "line": 233
+          "line": 244
         }
       }
     ],
@@ -94239,7 +94298,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
-          "line": 331
+          "line": 334
         }
       }
     ],
@@ -94262,7 +94321,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
-          "line": 219
+          "line": 222
         }
       }
     ],
@@ -94295,7 +94354,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
-          "line": 321
+          "line": 324
         }
       }
     ],
@@ -94356,7 +94415,7 @@
         "returns": "Vec3",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
-          "line": 258
+          "line": 261
         }
       }
     ],
@@ -94425,7 +94484,7 @@
         "returns": "Double",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
-          "line": 154
+          "line": 157
         }
       }
     ],
@@ -94442,7 +94501,7 @@
         "returns": "CollisionResult?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
-          "line": 179
+          "line": 182
         }
       }
     ],
@@ -94465,7 +94524,7 @@
         "returns": "BlockPos?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
-          "line": 298
+          "line": 301
         }
       },
       {
@@ -94480,7 +94539,7 @@
         "returns": "BlockPos?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
-          "line": 312
+          "line": 315
         }
       }
     ],
@@ -94520,7 +94579,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
-          "line": 163
+          "line": 166
         }
       }
     ],
@@ -94530,7 +94589,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
-          "line": 172
+          "line": 175
         }
       }
     ],
@@ -94559,7 +94618,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
-          "line": 199
+          "line": 202
         }
       }
     ],
@@ -94588,7 +94647,7 @@
         "returns": "Vec3",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
-          "line": 384
+          "line": 387
         }
       }
     ],
@@ -94635,7 +94694,7 @@
         "returns": "Vec3",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
-          "line": 342
+          "line": 345
         }
       }
     ],
@@ -94658,7 +94717,7 @@
         "returns": "BlockPos?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
-          "line": 404
+          "line": 407
         }
       }
     ],
