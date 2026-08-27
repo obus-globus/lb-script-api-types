@@ -1,5 +1,6 @@
 import type { InputStream } from '../java/io/InputStream.d.ts'
 import type { OutputStream } from '../java/io/OutputStream.d.ts'
+import type { Appendable } from '../java/lang/Appendable.d.ts'
 import type { ByteBuffer } from '../java/nio/ByteBuffer.d.ts'
 import type { ByteChannel } from '../java/nio/channels/ByteChannel.d.ts'
 import type { Charset } from '../java/nio/charset/Charset.d.ts'
@@ -102,6 +103,7 @@ export class Buffer extends Object implements ByteChannel, Cloneable, BufferedSi
     snapshot(byteCount: number): ByteString;
     timeout(): Timeout;
     toString(): string;
+    utf8Appendable(): Appendable;
     writableSegment(minimumCapacity: number): Segment;
     write(source: ByteBuffer): number;
     write(source: number[]): Buffer;

@@ -7,7 +7,6 @@ export class HttpMethod extends Object {
     invalidatesCache(method: string): boolean;
     isCacheable(requestMethod: string): boolean;
     permitsRequestBody(method: string): boolean;
-    redirectsToGet(method: string): boolean;
-    redirectsWithBody(method: string): boolean;
+    redirectsToGet(method: string, responseCode: number): boolean;
     requiresRequestBody(method: string): boolean;
 }

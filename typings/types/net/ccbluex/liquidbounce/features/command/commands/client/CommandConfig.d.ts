@@ -1,6 +1,8 @@
+import type { CommandDispatcher } from '../../../../../../../com/mojang/brigadier/CommandDispatcher.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Command } from '../../../../../../../net/ccbluex/liquidbounce/features/command/Command.d.ts'
-import type { Command$Factory } from '../../../../../../../net/ccbluex/liquidbounce/features/command/Command$Factory.d.ts'
+import type { Continuation } from '../../../../../../../kotlin/coroutines/Continuation.d.ts'
+import type { CommandRegistrar } from '../../../../../../../net/ccbluex/liquidbounce/features/command/CommandRegistrar.d.ts'
+import type { ClientCommandSource } from '../../../../../../../net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.d.ts'
 import type { Component } from '../../../../../../../net/minecraft/network/chat/Component.d.ts'
 /**
  * Config Command
@@ -9,15 +11,13 @@ import type { Component } from '../../../../../../../net/minecraft/network/chat/
  * such as loading configuration from an external source or an API
  * and listing available configurations.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandConfig.kt#L68 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandConfig.kt:68}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandConfig.kt#L73 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandConfig.kt:73}
  */
-export class CommandConfig extends Object implements Command$Factory {
+export class CommandConfig extends Object implements CommandRegistrar {
     static INSTANCE: CommandConfig;
     // private CONFIGS_URL: string;
-    // private browseSubcommand(): Command;
-    createCommand(): Command;
     // private hoverText(settingName: string): Component;
-    // private listSubcommand(): Command;
-    // private loadSubcommand(): Command;
-    // private reloadSubcommand(): Command;
+    register(dispatcher: CommandDispatcher<ClientCommandSource>): void;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private reloadConfigs($completion: Continuation<void>): any;
 }

@@ -6,6 +6,7 @@ import type { X509TrustManager } from '../../../javax/net/ssl/X509TrustManager.d
 import type { Protocol } from '../../../okhttp3/Protocol.d.ts'
 import type { OpenJSSEPlatform$Companion } from '../../../okhttp3/internal/platform/OpenJSSEPlatform$Companion.d.ts'
 import type { Platform } from '../../../okhttp3/internal/platform/Platform.d.ts'
+import type { ByteString } from '../../../okio/ByteString.d.ts'
 export class OpenJSSEPlatform extends Platform {
     static Companion: OpenJSSEPlatform$Companion;
     static INFO: number;
@@ -13,7 +14,7 @@ export class OpenJSSEPlatform extends Platform {
     static get(): Platform;
     private constructor()
     // private provider: JavaMap<any, any>;
-    configureTlsExtensions(sslSocket: SSLSocket, hostname: string | null, protocols: Protocol[]): void;
+    configureTlsExtensions(sslSocket: SSLSocket, hostname: string | null, protocols: Protocol[], echConfigList: ByteString | null): void;
     getSelectedProtocol(sslSocket: SSLSocket): string | null;
     newSSLContext(): SSLContext;
     platformTrustManager(): X509TrustManager;

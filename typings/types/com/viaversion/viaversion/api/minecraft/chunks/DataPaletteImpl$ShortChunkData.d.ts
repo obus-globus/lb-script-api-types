@@ -4,6 +4,7 @@ export class DataPaletteImpl$ShortChunkData extends Object implements DataPalett
     constructor(arg0: number[])
     // private data: number[];
     get(arg0: number): number;
+    packInto(arg0: number[], arg1: number): void;
     set(arg0: number, arg1: number): void;
     size(): number;
 }

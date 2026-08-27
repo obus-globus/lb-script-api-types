@@ -17,8 +17,8 @@ export class RegistryType extends Enum<RegistryType> implements RegistryKey {
     static valueOf(paramarg0: string): RegistryType;
     static values(): RegistryType[];
     private constructor(arg2: string)
-    // private identifier: string;
+    // private key: Key;
     identifier(): string;
-    key(): Key;
+    registry(): Key;
     name(): "BLOCK" | "ITEM" | "FLUID" | "ENTITY" | "GAME_EVENT" | "ENCHANTMENT" | "DAMAGE_TYPE" | "BANNER_PATTERN";
 }

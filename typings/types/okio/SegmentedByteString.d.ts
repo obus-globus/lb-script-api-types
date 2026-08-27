@@ -11,6 +11,7 @@ export class SegmentedByteString extends ByteString {
     static EMPTY: ByteString;
     static decodeBase64(self: string): ByteString | null;
     static decodeHex(self: string): ByteString;
+    static decodeHex(self: string, ignoreWhitespace: boolean): ByteString;
     static encodeString(self: string, charset: Charset): ByteString;
     static encodeUtf8(self: string): ByteString;
     static of(...data: number[]): ByteString;
@@ -23,11 +24,12 @@ export class SegmentedByteString extends ByteString {
     // private segments: number[][];
     /*not mapped: */ getSegments$okio(): number[][];
     asByteBuffer(): ByteBuffer;
-    base64(): string;
-    base64Url(): string;
+    base64(includePadding?: boolean): string;
+    base64Url(includePadding?: boolean): string;
     copyInto(offset: number, target: number[], targetOffset: number, byteCount: number): void;
     digest(algorithm: string): ByteString;
     equals(other: Object | null): boolean;
+    equals(other: ByteString, constantTime: boolean): boolean;
     getSize(): number;
     hashCode(): number;
     hex(): string;

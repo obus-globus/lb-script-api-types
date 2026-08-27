@@ -2,5 +2,5 @@ import type { Type } from '../../../../../../../com/viaversion/viaversion/api/ty
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class Typesb1_7_0_3 extends Object {
     static STRING: Type<string>;
-    constructor()
+    private constructor()
 }

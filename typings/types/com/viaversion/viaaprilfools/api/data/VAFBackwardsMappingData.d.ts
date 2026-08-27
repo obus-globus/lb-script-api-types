@@ -6,6 +6,7 @@ import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Logger } from '../../../../../java/util/logging/Logger.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class VAFBackwardsMappingData extends BackwardsMappingData {
+    static nameFromIdentifier(paramarg0: string): string;
     constructor(arg0: string, arg1: string, arg2: Class<Protocol<any, any, any, any>>)
     getLogger(): Logger;
     loadMappings(arg0: Map$Entry<string, Tag>[], arg1: string): Mappings;

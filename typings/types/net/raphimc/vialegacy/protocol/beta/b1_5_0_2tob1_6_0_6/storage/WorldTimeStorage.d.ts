@@ -2,6 +2,8 @@ import type { StorableObject } from '../../../../../../../com/viaversion/viavers
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class WorldTimeStorage extends Object implements StorableObject {
     constructor()
-    time: number;
+    readonly time: number;
+    getTime(): number;
     onRemove(): void;
+    setTime(arg0: number): void;
 }

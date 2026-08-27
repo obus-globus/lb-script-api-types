@@ -1,10 +1,9 @@
+import type { CommandDispatcher } from '../../../../../../../com/mojang/brigadier/CommandDispatcher.d.ts'
 import type { ValueGroup } from '../../../../../../../net/ccbluex/liquidbounce/config/types/group/ValueGroup.d.ts'
-import type { Command } from '../../../../../../../net/ccbluex/liquidbounce/features/command/Command.d.ts'
-import type { Command$Factory } from '../../../../../../../net/ccbluex/liquidbounce/features/command/Command$Factory.d.ts'
-export class CommandAutoTranslate extends ValueGroup implements Command$Factory {
+import type { CommandRegistrar } from '../../../../../../../net/ccbluex/liquidbounce/features/command/CommandRegistrar.d.ts'
+import type { ClientCommandSource } from '../../../../../../../net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.d.ts'
+export class CommandAutoTranslate extends ValueGroup implements CommandRegistrar {
     static INSTANCE: CommandAutoTranslate;
     readonly languageCode: string;
-    createCommand(): Command;
-    // private languageCommand(): Command;
-    // private setLanguageCommand(): Command;
+    register(dispatcher: CommandDispatcher<ClientCommandSource>): void;
 }

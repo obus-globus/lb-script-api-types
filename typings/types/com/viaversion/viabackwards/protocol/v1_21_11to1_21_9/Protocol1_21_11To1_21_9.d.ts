@@ -5,6 +5,7 @@ import type { BackwardsRegistryRewriter } from '../../../../../com/viaversion/vi
 import type { NBTComponentRewriter } from '../../../../../com/viaversion/viabackwards/api/rewriters/text/NBTComponentRewriter.d.ts'
 import type { BlockItemPacketRewriter1_21_11 } from '../../../../../com/viaversion/viabackwards/protocol/v1_21_11to1_21_9/rewriter/BlockItemPacketRewriter1_21_11.d.ts'
 import type { EntityPacketRewriter1_21_11 } from '../../../../../com/viaversion/viabackwards/protocol/v1_21_11to1_21_9/rewriter/EntityPacketRewriter1_21_11.d.ts'
+import type { ProtocolStorables1_21_11 } from '../../../../../com/viaversion/viabackwards/protocol/v1_21_11to1_21_9/storage/ProtocolStorables1_21_11.d.ts'
 import type { UserConnection } from '../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { PacketTypesProvider } from '../../../../../com/viaversion/viaversion/api/protocol/packet/provider/PacketTypesProvider.d.ts'
 import type { VersionedTypesHolder } from '../../../../../com/viaversion/viaversion/api/type/types/version/VersionedTypesHolder.d.ts'
@@ -29,6 +30,7 @@ export class Protocol1_21_11To1_21_9 extends BackwardsProtocol<ClientboundPacket
     readonly tagRewriter: TagRewriter<ClientboundPacket1_21_11>;
     // private translatableRewriter: NBTComponentRewriter<ClientboundPacket1_21_11>;
     createPacketTypesProvider(): PacketTypesProvider<ClientboundPacket1_21_11, ClientboundPacket1_21_9, ServerboundPacket1_21_9, ServerboundPacket1_21_9>;
+    createStorables(): ProtocolStorables1_21_11;
     // private floatsToARGB(arg0: number, arg1: number, arg2: number): number;
     getBlockRewriter(): BlockRewriter<ClientboundPacket1_21_11>;
     getComponentRewriter(): NBTComponentRewriter<ClientboundPacket1_21_11>;

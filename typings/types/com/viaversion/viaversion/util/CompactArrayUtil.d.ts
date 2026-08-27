@@ -7,5 +7,7 @@ export class CompactArrayUtil extends Object {
     static createCompactArrayWithPadding(paramarg0: number, paramarg1: number, paramarg2: (param0: number) => number): number[];
     static iterateCompactArray(paramarg0: number, paramarg1: number, paramarg2: number[], paramarg3: (param0: number, param1: number) => void): void;
     static iterateCompactArrayWithPadding(paramarg0: number, paramarg1: number, paramarg2: number[], paramarg3: (param0: number, param1: number) => void): void;
+    static packWithPadding(paramarg0: number[], paramarg1: number[], paramarg2: number): void;
+    static unpackWithPadding(paramarg0: number[], paramarg1: number[], paramarg2: number): void;
     private constructor()
 }

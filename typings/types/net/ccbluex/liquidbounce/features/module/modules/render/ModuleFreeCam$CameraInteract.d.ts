@@ -3,7 +3,7 @@ import type { ToggleableValueGroup } from '../../../../../../../net/ccbluex/liqu
  * Allows to interact from the camera perspective. This is very useful to interact with blocks that
  * are behind the player or walls. Similar functionality to the GhostBlock module.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt:78}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt:78}
  */
 export class ModuleFreeCam$CameraInteract extends ToggleableValueGroup {
     static INSTANCE: ModuleFreeCam$CameraInteract;

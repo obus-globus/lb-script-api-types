@@ -19,5 +19,5 @@ export class ExtendedClassicBlocks extends Object {
     static SNOW: number;
     static STONE_BRICK: number;
     static TURQUOISE_WOOL: number;
-    constructor()
+    private constructor()
 }

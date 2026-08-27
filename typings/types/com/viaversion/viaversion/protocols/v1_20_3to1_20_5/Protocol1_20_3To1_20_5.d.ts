@@ -2,6 +2,7 @@ import type { UserConnection } from '../../../../../com/viaversion/viaversion/ap
 import type { AbstractProtocol } from '../../../../../com/viaversion/viaversion/api/protocol/AbstractProtocol.d.ts'
 import type { PacketWrapper } from '../../../../../com/viaversion/viaversion/api/protocol/packet/PacketWrapper.d.ts'
 import type { PacketTypesProvider } from '../../../../../com/viaversion/viaversion/api/protocol/packet/provider/PacketTypesProvider.d.ts'
+import type { ProtocolStorablesBase } from '../../../../../com/viaversion/viaversion/connection/ProtocolStorablesBase.d.ts'
 import type { ClientboundPacket1_20_3 } from '../../../../../com/viaversion/viaversion/protocols/v1_20_2to1_20_3/packet/ClientboundPacket1_20_3.d.ts'
 import type { ServerboundPacket1_20_3 } from '../../../../../com/viaversion/viaversion/protocols/v1_20_2to1_20_3/packet/ServerboundPacket1_20_3.d.ts'
 import type { MappingData1_20_5 } from '../../../../../com/viaversion/viaversion/protocols/v1_20_3to1_20_5/data/MappingData1_20_5.d.ts'
@@ -28,6 +29,7 @@ export class Protocol1_20_3To1_20_5 extends AbstractProtocol<ClientboundPacket1_
     readonly particleRewriter: ParticleRewriter1_20_5;
     readonly tagRewriter: TagRewriter<ClientboundPacket1_20_3>;
     createPacketTypesProvider(): PacketTypesProvider<ClientboundPacket1_20_3, ClientboundPacket1_20_5, ServerboundPacket1_20_3, ServerboundPacket1_20_5>;
+    createStorables(): ProtocolStorablesBase;
     // private fixChatAck(arg0: PacketWrapper, arg1: AcknowledgedMessagesStorage): void;
     getBlockRewriter(): BlockRewriter<ClientboundPacket1_20_3>;
     getComponentRewriter(): JsonNBTComponentRewriter<ClientboundPacket1_20_3>;

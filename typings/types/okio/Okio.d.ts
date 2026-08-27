@@ -34,6 +34,8 @@ export class Okio extends Object {
     static hashingSource(self: Source, digest: MessageDigest): HashingSource;
     static hashingSource(self: Source, mac: Mac): HashingSource;
     static inMemorySocketPair(maxBufferSize: number): Socket_2[];
+    static limit(paramarg0: Source, paramarg1: number): Source;
+    static limit(self: Source, byteCount: number, throwIfSourceIsLonger: boolean): Source;
     static openZip(self: FileSystem, zipPath: Path_2): FileSystem;
     static sink(paramarg0: File): Sink;
     static sink(self: File, append: boolean): Sink;

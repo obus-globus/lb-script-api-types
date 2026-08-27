@@ -1,4 +1,3 @@
-import type { InetSocketAddress } from '../../../java/net/InetSocketAddress.d.ts'
 import type { Proxy } from '../../../java/net/Proxy.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Address } from '../../../okhttp3/Address.d.ts'
@@ -14,15 +13,15 @@ export class RouteSelector extends Object {
     // private address: Address;
     // private call: RealCall;
     // private fastFallback: boolean;
-    // private inetSocketAddresses: InetSocketAddress[];
     // private nextProxyIndex: number;
     // private postponedRoutes: Route[];
     // private proxies: Proxy[];
     // private routeDatabase: RouteDatabase;
+    // private dnsLookup(proxy: Proxy, socketHost: string, socketPort: number): Route[];
     hasNext(): boolean;
     // private hasNextProxy(): boolean;
     next(): RouteSelector$Selection;
-    // private nextProxy(): Proxy;
-    // private resetNextInetSocketAddress(proxy: Proxy): void;
+    // private nextProxy(): Route[];
+    // private nextRoutes(proxy: Proxy): Route[];
     // private resetNextProxy(url: HttpUrl, proxy: Proxy | null): void;
 }

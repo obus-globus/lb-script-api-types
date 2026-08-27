@@ -1,5 +1,6 @@
 import type { IOException } from '../../../java/io/IOException.d.ts'
 import type { Socket } from '../../../java/net/Socket.d.ts'
+import type { SSLException } from '../../../javax/net/ssl/SSLException.d.ts'
 import type { SSLSocket } from '../../../javax/net/ssl/SSLSocket.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { ConnectionSpec } from '../../../okhttp3/ConnectionSpec.d.ts'
@@ -16,10 +17,11 @@ import type { RealConnectionPool } from '../../../okhttp3/internal/connection/Re
 import type { RealRoutePlanner } from '../../../okhttp3/internal/connection/RealRoutePlanner.d.ts'
 import type { RoutePlanner$ConnectResult } from '../../../okhttp3/internal/connection/RoutePlanner$ConnectResult.d.ts'
 import type { RoutePlanner$Plan } from '../../../okhttp3/internal/connection/RoutePlanner$Plan.d.ts'
+import type { EchRetryPlan } from '../../../okhttp3/internal/ech/EchRetryPlan.d.ts'
 import type { ExchangeCodec$Carrier } from '../../../okhttp3/internal/http/ExchangeCodec$Carrier.d.ts'
 export class ConnectPlan extends Object implements RoutePlanner$Plan, ExchangeCodec$Carrier {
     static Companion: ConnectPlan$Companion;
-    constructor(taskRunner: TaskRunner, connectionPool: RealConnectionPool, readTimeoutMillis: number, writeTimeoutMillis: number, socketConnectTimeoutMillis: number, socketReadTimeoutMillis: number, pingIntervalMillis: number, retryOnConnectionFailure: boolean, call: RealCall, routePlanner: RealRoutePlanner, route: Route, routes: Route[] | null, attempt: number, tunnelRequest: Request | null, connectionSpecIndex: number, isTlsFallback: boolean)
+    constructor(taskRunner: TaskRunner, connectionPool: RealConnectionPool, readTimeoutMillis: number, writeTimeoutMillis: number, socketConnectTimeoutMillis: number, socketReadTimeoutMillis: number, pingIntervalMillis: number, retryOnConnectionFailure: boolean, call: RealCall, routePlanner: RealRoutePlanner, route: Route, routes: Route[] | null, attempt: number, tunnelRequest: Request | null, connectionSpecIndex: number, isTlsFallback: boolean, echRetryPlan: EchRetryPlan | null)
     // private attempt: number;
     // private call: RealCall;
     // private canceled: boolean;
@@ -27,6 +29,7 @@ export class ConnectPlan extends Object implements RoutePlanner$Plan, ExchangeCo
     // private connectionPool: RealConnectionPool;
     // private connectionSpecIndex: number;
     /*not mapped: */ getConnectionSpecIndex$okhttp(): number;
+    // private echRetryPlan: EchRetryPlan | null;
     // private handshake: Handshake | null;
     /*not mapped: */ isReady(): boolean;
     // private isTlsFallback: boolean;
@@ -55,10 +58,11 @@ export class ConnectPlan extends Object implements RoutePlanner$Plan, ExchangeCo
     // private connectTls(sslSocket: SSLSocket, connectionSpec: ConnectionSpec): void;
     connectTlsEtc(): RoutePlanner$ConnectResult;
     connectTunnel(): RoutePlanner$ConnectResult;
-    // private copy(attempt: number, tunnelRequest: Request | null, connectionSpecIndex: number, isTlsFallback: boolean): ConnectPlan;
+    // private copy(route: Route, attempt: number, tunnelRequest: Request | null, connectionSpecIndex: number, isTlsFallback: boolean, echRetryPlan: EchRetryPlan | null): ConnectPlan;
     // private createTunnel(): Request | null;
     handleSuccess(): RealConnection;
-    nextConnectionSpec(connectionSpecs: ConnectionSpec[], sslSocket: SSLSocket): ConnectPlan | null;
+    // private nextCompatibleConnectionSpec(connectionSpecs: ConnectionSpec[], sslSocket: SSLSocket): ConnectPlan | null;
+    nextConnectionSpec(connectionSpecs: ConnectionSpec[], sslSocket: SSLSocket, sslException: SSLException): ConnectPlan | null;
     noNewExchanges(): void;
     planWithCurrentOrInitialConnectionSpec(connectionSpecs: ConnectionSpec[], sslSocket: SSLSocket): ConnectPlan;
     retry(): RoutePlanner$Plan;

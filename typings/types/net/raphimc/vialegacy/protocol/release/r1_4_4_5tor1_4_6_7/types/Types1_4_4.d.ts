@@ -3,5 +3,5 @@ import type { Type } from '../../../../../../../com/viaversion/viaversion/api/ty
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class Types1_4_4 extends Object {
     static CHUNK_BULK: Type<Chunk[]>;
-    constructor()
+    private constructor()
 }

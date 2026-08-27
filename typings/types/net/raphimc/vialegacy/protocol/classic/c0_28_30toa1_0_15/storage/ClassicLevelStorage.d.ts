@@ -6,17 +6,17 @@ import type { ChunkCoord } from '../../../../../../../net/raphimc/vialegacy/api/
 import type { ClassicLevel } from '../../../../../../../net/raphimc/vialegacy/protocol/classic/c0_28_30toa1_0_15/model/ClassicLevel.d.ts'
 export class ClassicLevelStorage extends StoredObject {
     constructor(arg0: UserConnection)
-    // private chunkXCount: number;
-    // private chunkZCount: number;
+    // private chunkCountX: number;
+    // private chunkCountZ: number;
     readonly classicLevel: ClassicLevel;
     // private eventLoopPing: number;
     // private loadedChunks: ChunkCoord[];
     // private netBuffer: ByteArrayOutputStream;
     // private sectionBitmask: number;
-    // private sectionYCount: number;
-    // private subChunkXLength: number;
-    // private subChunkYLength: number;
-    // private subChunkZLength: number;
+    // private sectionCountY: number;
+    // private subChunkLengthX: number;
+    // private subChunkLengthY: number;
+    // private subChunkLengthZ: number;
     addDataPart(arg0: number[], arg1: number): void;
     finish(arg0: number, arg1: number, arg2: number): void;
     getClassicLevel(): ClassicLevel;

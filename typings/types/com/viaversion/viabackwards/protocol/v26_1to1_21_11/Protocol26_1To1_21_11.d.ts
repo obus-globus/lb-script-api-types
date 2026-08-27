@@ -5,6 +5,7 @@ import type { BackwardsRegistryRewriter } from '../../../../../com/viaversion/vi
 import type { NBTComponentRewriter } from '../../../../../com/viaversion/viabackwards/api/rewriters/text/NBTComponentRewriter.d.ts'
 import type { BlockItemPacketRewriter26_1 } from '../../../../../com/viaversion/viabackwards/protocol/v26_1to1_21_11/rewriter/BlockItemPacketRewriter26_1.d.ts'
 import type { EntityPacketRewriter26_1 } from '../../../../../com/viaversion/viabackwards/protocol/v26_1to1_21_11/rewriter/EntityPacketRewriter26_1.d.ts'
+import type { ProtocolStorables26_1 } from '../../../../../com/viaversion/viabackwards/protocol/v26_1to1_21_11/storage/ProtocolStorables26_1.d.ts'
 import type { UserConnection } from '../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { StructuredDataKeys1_21_11 } from '../../../../../com/viaversion/viaversion/api/minecraft/data/version/StructuredDataKeys1_21_11.d.ts'
 import type { EntityDataTypes1_21_11 } from '../../../../../com/viaversion/viaversion/api/minecraft/entitydata/types/EntityDataTypes1_21_11.d.ts'
@@ -33,6 +34,7 @@ export class Protocol26_1To1_21_11 extends BackwardsProtocol<ClientboundPacket26
     readonly tagRewriter: TagRewriter<ClientboundPacket26_1>;
     // private translatableRewriter: NBTComponentRewriter<ClientboundPacket26_1>;
     createPacketTypesProvider(): PacketTypesProvider<ClientboundPacket26_1, ClientboundPacket1_21_11, ServerboundPacket26_1, ServerboundPacket1_21_9>;
+    createStorables(): ProtocolStorables26_1;
     getBlockRewriter(): BlockRewriter<ClientboundPacket26_1>;
     getComponentRewriter(): NBTComponentRewriter<ClientboundPacket26_1>;
     getEntityRewriter(): EntityPacketRewriter26_1;

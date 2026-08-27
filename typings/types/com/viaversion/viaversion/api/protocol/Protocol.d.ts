@@ -1,3 +1,4 @@
+import type { ProtocolStorables } from '../../../../../com/viaversion/viaversion/api/connection/ProtocolStorables.d.ts'
 import type { UserConnection } from '../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { MappingData } from '../../../../../com/viaversion/viaversion/api/data/MappingData.d.ts'
 import type { ViaProviders } from '../../../../../com/viaversion/viaversion/api/platform/providers/ViaProviders.d.ts'
@@ -25,6 +26,7 @@ export interface Protocol<CU extends ClientboundPacketType, CM extends Clientbou
     cancelClientbound(arg0: State, arg1: number): void;
     cancelServerbound(arg0: SU): void;
     cancelServerbound(arg0: State, arg1: number): void;
+    createStorables(): ProtocolStorables;
     dependsOn(): Class<Protocol<any, any, any, any>>;
     get<T extends unknown>(arg0: Class<T>): T;
     getComponentRewriter(): ComponentRewriter;
@@ -41,6 +43,7 @@ export interface Protocol<CU extends ClientboundPacketType, CM extends Clientbou
     hasRegisteredClientbound(arg0: State, arg1: number): boolean;
     hasRegisteredServerbound(arg0: SU): boolean;
     hasRegisteredServerbound(arg0: State, arg1: number): boolean;
+    index(): number;
     init(arg0: UserConnection): void;
     initialize(): void;
     isBaseProtocol(): boolean;

@@ -12,6 +12,7 @@ import type { ClientboundPacket1_21_9 } from '../../../../../com/viaversion/viav
 import type { ServerboundPacket1_21_9 } from '../../../../../com/viaversion/viaversion/protocols/v1_21_7to1_21_9/packet/ServerboundPacket1_21_9.d.ts'
 import type { BlockItemPacketRewriter1_21_9 } from '../../../../../com/viaversion/viaversion/protocols/v1_21_7to1_21_9/rewriter/BlockItemPacketRewriter1_21_9.d.ts'
 import type { EntityPacketRewriter1_21_9 } from '../../../../../com/viaversion/viaversion/protocols/v1_21_7to1_21_9/rewriter/EntityPacketRewriter1_21_9.d.ts'
+import type { ProtocolStorables1_21_9 } from '../../../../../com/viaversion/viaversion/protocols/v1_21_7to1_21_9/storage/ProtocolStorables1_21_9.d.ts'
 import type { BlockRewriter } from '../../../../../com/viaversion/viaversion/rewriter/BlockRewriter.d.ts'
 import type { ParticleRewriter } from '../../../../../com/viaversion/viaversion/rewriter/ParticleRewriter.d.ts'
 import type { RecipeDisplayRewriter } from '../../../../../com/viaversion/viaversion/rewriter/RecipeDisplayRewriter.d.ts'
@@ -30,6 +31,7 @@ export class Protocol1_21_7To1_21_9 extends AbstractProtocol<ClientboundPacket1_
     readonly registryDataRewriter: RegistryDataRewriter;
     readonly tagRewriter: TagRewriter<ClientboundPacket1_21_6>;
     createPacketTypesProvider(): PacketTypesProvider<ClientboundPacket1_21_6, ClientboundPacket1_21_9, ServerboundPacket1_21_6, ServerboundPacket1_21_9>;
+    createStorables(): ProtocolStorables1_21_9;
     getBlockRewriter(): BlockRewriter<ClientboundPacket1_21_6>;
     getComponentRewriter(): NBTComponentRewriter<ClientboundPacket1_21_6>;
     getEntityRewriter(): EntityPacketRewriter1_21_9;

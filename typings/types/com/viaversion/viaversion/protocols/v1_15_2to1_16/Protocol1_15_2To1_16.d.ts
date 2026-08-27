@@ -9,6 +9,7 @@ import type { ServerboundPackets1_16 } from '../../../../../com/viaversion/viave
 import type { ComponentRewriter1_16 } from '../../../../../com/viaversion/viaversion/protocols/v1_15_2to1_16/rewriter/ComponentRewriter1_16.d.ts'
 import type { EntityPacketRewriter1_16 } from '../../../../../com/viaversion/viaversion/protocols/v1_15_2to1_16/rewriter/EntityPacketRewriter1_16.d.ts'
 import type { ItemPacketRewriter1_16 } from '../../../../../com/viaversion/viaversion/protocols/v1_15_2to1_16/rewriter/ItemPacketRewriter1_16.d.ts'
+import type { ProtocolStorables1_16 } from '../../../../../com/viaversion/viaversion/protocols/v1_15_2to1_16/storage/ProtocolStorables1_16.d.ts'
 import type { BlockRewriter } from '../../../../../com/viaversion/viaversion/rewriter/BlockRewriter.d.ts'
 import type { ParticleRewriter } from '../../../../../com/viaversion/viaversion/rewriter/ParticleRewriter.d.ts'
 import type { TagRewriter } from '../../../../../com/viaversion/viaversion/rewriter/TagRewriter.d.ts'
@@ -21,6 +22,7 @@ export class Protocol1_15_2To1_16 extends AbstractProtocol<ClientboundPackets1_1
     readonly itemRewriter: ItemPacketRewriter1_16;
     readonly particleRewriter: ParticleRewriter<ClientboundPackets1_15>;
     readonly tagRewriter: TagRewriter<ClientboundPackets1_15>;
+    createStorables(): ProtocolStorables1_16;
     getBlockRewriter(): BlockRewriter<ClientboundPackets1_15>;
     getComponentRewriter(): ComponentRewriter1_16;
     getEntityRewriter(): EntityPacketRewriter1_16;

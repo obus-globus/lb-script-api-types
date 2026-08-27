@@ -1,5 +1,6 @@
 import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { UserConnection } from '../../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
+import type { TrackedEntity } from '../../../../../../com/viaversion/viaversion/api/data/entity/TrackedEntity.d.ts'
 import type { EntityTrackerBase } from '../../../../../../com/viaversion/viaversion/data/entity/EntityTrackerBase.d.ts'
 export class EntityTracker1_14 extends EntityTrackerBase {
     constructor(arg0: UserConnection)
@@ -18,7 +19,7 @@ export class EntityTracker1_14 extends EntityTrackerBase {
     isForceSendCenterChunk(): boolean;
     isRiptide(arg0: number): boolean;
     isSleeping(arg0: number): boolean;
-    removeEntity(arg0: number): void;
+    removeEntity(arg0: number): TrackedEntity;
     setChunkCenterX(arg0: number): void;
     setChunkCenterZ(arg0: number): void;
     setEntityFlags(arg0: number, arg1: number): void;

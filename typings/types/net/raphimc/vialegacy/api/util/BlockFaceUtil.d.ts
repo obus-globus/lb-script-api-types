@@ -2,5 +2,5 @@ import type { BlockFace } from '../../../../../com/viaversion/viaversion/api/min
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BlockFaceUtil extends Object {
     static getFace(paramarg0: number): BlockFace;
-    constructor()
+    private constructor()
 }

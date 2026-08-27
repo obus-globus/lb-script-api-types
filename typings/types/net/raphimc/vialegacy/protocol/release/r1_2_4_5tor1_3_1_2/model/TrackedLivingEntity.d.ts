@@ -6,12 +6,15 @@ import type { ConfiguredSound } from '../../../../../../../net/raphimc/vialegacy
 import type { EntityTracker } from '../../../../../../../net/raphimc/vialegacy/protocol/release/r1_2_4_5tor1_3_1_2/storage/EntityTracker.d.ts'
 export class TrackedLivingEntity extends AbstractTrackedEntity {
     constructor(arg0: number, arg1: Location, arg2: EntityTypes1_8$EntityType)
-    growingAge: number;
-    isTamed: boolean;
+    // private growingAge: number;
+    // private isTamed: boolean;
     // private soundTime: number;
-    wolfHealth: number;
-    wolfIsAngry: boolean;
+    readonly wolfHealth: number;
+    readonly wolfIsAngry: boolean;
     applyPitch(arg0: EntityTracker, arg1: ConfiguredSound): void;
+    getWolfHealth(): number;
+    isTamed(): boolean;
+    isWolfIsAngry(): boolean;
     tick(arg0: EntityTracker): void;
     updateEntityData(arg0: EntityData[]): void;
 }

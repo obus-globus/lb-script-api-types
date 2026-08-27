@@ -1,12 +1,9 @@
-import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { Tag } from '../../../../../../com/viaversion/nbt/tag/Tag.d.ts'
 import type { BackwardsBlockEntityProvider$BackwardsBlockEntityHandler } from '../../../../../../com/viaversion/viabackwards/protocol/v1_13to1_12_2/provider/BackwardsBlockEntityProvider$BackwardsBlockEntityHandler.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class PistonHandler extends Object implements BackwardsBlockEntityProvider$BackwardsBlockEntityHandler {
     constructor()
-    // private pistonIds: JavaMap<any, any>;
-    // private addEntries(arg0: string, arg1: number): void;
     // private getDataFromTag(arg0: Map$Entry<string, Tag>[]): string;
     transform(arg0: number, arg1: Map$Entry<string, Tag>[]): Map$Entry<string, Tag>[];
 }

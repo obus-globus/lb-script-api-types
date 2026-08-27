@@ -2,7 +2,6 @@ import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { UserConnection } from '../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { MappingData } from '../../../../../com/viaversion/viaversion/api/data/MappingData.d.ts'
 import type { EntityTracker } from '../../../../../com/viaversion/viaversion/api/data/entity/EntityTracker.d.ts'
-import type { ItemHasher } from '../../../../../com/viaversion/viaversion/api/data/item/ItemHasher.d.ts'
 import type { ViaProviders } from '../../../../../com/viaversion/viaversion/api/platform/providers/ViaProviders.d.ts'
 import type { Protocol } from '../../../../../com/viaversion/viaversion/api/protocol/Protocol.d.ts'
 import type { ClientboundPacketType } from '../../../../../com/viaversion/viaversion/api/protocol/packet/ClientboundPacketType.d.ts'
@@ -25,6 +24,7 @@ import type { RegistryDataRewriter } from '../../../../../com/viaversion/viavers
 import type { Rewriter } from '../../../../../com/viaversion/viaversion/api/rewriter/Rewriter.d.ts'
 import type { TagRewriter } from '../../../../../com/viaversion/viaversion/api/rewriter/TagRewriter.d.ts'
 import type { VersionedTypesHolder } from '../../../../../com/viaversion/viaversion/api/type/types/version/VersionedTypesHolder.d.ts'
+import type { ProtocolStorablesBase } from '../../../../../com/viaversion/viaversion/connection/ProtocolStorablesBase.d.ts'
 import type { InformativeException } from '../../../../../com/viaversion/viaversion/exception/InformativeException.d.ts'
 import type { BlockRewriter } from '../../../../../com/viaversion/viaversion/rewriter/BlockRewriter.d.ts'
 import type { RecipeDisplayRewriter } from '../../../../../com/viaversion/viaversion/rewriter/RecipeDisplayRewriter.d.ts'
@@ -38,6 +38,7 @@ export abstract class AbstractProtocol<CU extends ClientboundPacketType, CM exte
     constructor(arg0: Class<CU>, arg1: Class<CM>, arg2: Class<SM>, arg3: Class<SU>)
     readonly clientVersion: ProtocolVersion;
     // private clientboundMappings: PacketMappings;
+    // private index: number;
     // private initialized: boolean;
     readonly logger: ProtocolLogger;
     // private mappedClientboundPacketType: Class<CM>;
@@ -51,7 +52,6 @@ export abstract class AbstractProtocol<CU extends ClientboundPacketType, CM exte
     addEntityTracker(arg0: UserConnection): void;
     addEntityTracker(arg0: UserConnection, arg1: EntityTracker): void;
     addItemHasher(arg0: UserConnection): void;
-    addItemHasher(arg0: UserConnection, arg1: ItemHasher): void;
     appendClientbound(arg0: CU, arg1: (param0: PacketWrapper) => void): void;
     appendServerbound(arg0: SU, arg1: (param0: PacketWrapper) => void): void;
     applySharedRegistrations(): void;
@@ -65,6 +65,7 @@ export abstract class AbstractProtocol<CU extends ClientboundPacketType, CM exte
     createLogger(): ProtocolLogger;
     createPacketTypesProvider(): PacketTypesProvider<CU, CM, SM, SU>;
     createServerboundPacketMappings(): PacketMappings;
+    createStorables(): ProtocolStorablesBase;
     dependsOn(): Class<Protocol<any, any, any, any>>;
     get<T extends unknown>(arg0: Class<T>): T;
     getBlockRewriter(): BlockRewriter<CU>;
@@ -85,6 +86,7 @@ export abstract class AbstractProtocol<CU extends ClientboundPacketType, CM exte
     hasRegisteredClientbound(arg0: State, arg1: number): boolean;
     hasRegisteredServerbound(arg0: SU): boolean;
     hasRegisteredServerbound(arg0: State, arg1: number): boolean;
+    index(): number;
     init(arg0: UserConnection): void;
     initialize(): void;
     isBaseProtocol(): boolean;

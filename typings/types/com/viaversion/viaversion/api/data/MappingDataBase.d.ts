@@ -20,6 +20,7 @@ export class MappingDataBase extends Object implements MappingData {
     blockMappings: BiMappings;
     blockStateMappings: Mappings;
     // private changedBlocks: (Object | null)[];
+    // private changedEnvironmentAttributes: string[];
     enchantmentMappings: Mappings;
     entityMappings: FullMappings;
     // private itemDataSerializerMappings: FullMappings;
@@ -35,7 +36,9 @@ export class MappingDataBase extends Object implements MappingData {
     // private tags: JavaMap<RegistryType, TagData[]>;
     // private unmappedVersion: string;
     changedBlocks(): (Object | null)[];
+    changedEnvironmentAttributes(): string[];
     checkValidity(arg0: number, arg1: number, arg2: string): number;
+    createFullMappings(arg0: MappingDataLoader$IdentifiersPair, arg1: Mappings): FullMappings;
     getArgumentTypeMappings(): FullMappings;
     getAttributeMappings(): FullMappings;
     getBlockEntityMappings(): FullMappings;

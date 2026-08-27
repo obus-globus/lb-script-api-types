@@ -8,14 +8,27 @@ export class InventoryStorage extends Object implements StorableObject {
     static FURNACE_WID: number;
     static WORKBENCH_WID: number;
     constructor()
-    armorInventory: Item[];
-    containers: JavaMap<BlockPosition, Item[]>;
-    craftingInventory: Item[];
-    handItem: Item;
-    mainInventory: Item[];
-    openContainerPos: BlockPosition;
-    selectedHotbarSlot: number;
+    readonly armorInventory: Item[];
+    readonly containers: JavaMap<BlockPosition, Item[]>;
+    readonly craftingInventory: Item[];
+    readonly handItem: Item;
+    readonly mainInventory: Item[];
+    readonly openContainerPos: BlockPosition;
+    readonly selectedHotbarSlot: number;
+    getArmorInventory(): Item[];
+    getContainers(): JavaMap<BlockPosition, Item[]>;
+    getCraftingInventory(): Item[];
+    getHandItem(): Item;
+    getMainInventory(): Item[];
+    getOpenContainerPos(): BlockPosition;
+    getSelectedHotbarSlot(): number;
     onRemove(): void;
     resetPlayerInventory(): void;
+    setArmorInventory(arg0: Item[]): void;
+    setCraftingInventory(arg0: Item[]): void;
+    setHandItem(arg0: Item): void;
+    setMainInventory(arg0: Item[]): void;
+    setOpenContainerPos(arg0: BlockPosition): void;
+    setSelectedHotbarSlot(arg0: number): void;
     unload(arg0: number, arg1: number): void;
 }

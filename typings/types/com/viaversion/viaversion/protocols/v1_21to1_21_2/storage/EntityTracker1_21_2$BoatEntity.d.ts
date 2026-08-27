@@ -1,7 +1,8 @@
+import type { StorableObject } from '../../../../../../com/viaversion/viaversion/api/connection/StorableObject.d.ts'
 import type { EntityData } from '../../../../../../com/viaversion/viaversion/api/minecraft/entitydata/EntityData.d.ts'
 import type { UUID } from '../../../../../../java/util/UUID.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class EntityTracker1_21_2$BoatEntity extends Object {
+export class EntityTracker1_21_2$BoatEntity extends Object implements StorableObject {
     constructor(arg0: UUID, arg1: number)
     // private data: number;
     // private entityData: EntityData[];
@@ -13,6 +14,7 @@ export class EntityTracker1_21_2$BoatEntity extends Object {
     // private z: number;
     data(): number;
     entityData(): EntityData[];
+    onRemove(): void;
     passengers(): number[];
     pitch(): number;
     setPassengers(arg0: number[]): void;

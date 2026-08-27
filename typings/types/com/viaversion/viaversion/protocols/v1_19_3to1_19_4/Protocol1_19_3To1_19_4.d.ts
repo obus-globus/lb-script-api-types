@@ -7,6 +7,7 @@ import type { ClientboundPackets1_19_4 } from '../../../../../com/viaversion/via
 import type { ServerboundPackets1_19_4 } from '../../../../../com/viaversion/viaversion/protocols/v1_19_3to1_19_4/packet/ServerboundPackets1_19_4.d.ts'
 import type { EntityPacketRewriter1_19_4 } from '../../../../../com/viaversion/viaversion/protocols/v1_19_3to1_19_4/rewriter/EntityPacketRewriter1_19_4.d.ts'
 import type { ItemPacketRewriter1_19_4 } from '../../../../../com/viaversion/viaversion/protocols/v1_19_3to1_19_4/rewriter/ItemPacketRewriter1_19_4.d.ts'
+import type { ProtocolStorables1_19_4 } from '../../../../../com/viaversion/viaversion/protocols/v1_19_3to1_19_4/storage/ProtocolStorables1_19_4.d.ts'
 import type { BlockRewriter } from '../../../../../com/viaversion/viaversion/rewriter/BlockRewriter.d.ts'
 import type { ParticleRewriter } from '../../../../../com/viaversion/viaversion/rewriter/ParticleRewriter.d.ts'
 import type { TagRewriter } from '../../../../../com/viaversion/viaversion/rewriter/TagRewriter.d.ts'
@@ -18,6 +19,7 @@ export class Protocol1_19_3To1_19_4 extends AbstractProtocol<ClientboundPackets1
     readonly itemRewriter: ItemPacketRewriter1_19_4;
     readonly particleRewriter: ParticleRewriter<ClientboundPackets1_19_3>;
     readonly tagRewriter: TagRewriter<ClientboundPackets1_19_3>;
+    createStorables(): ProtocolStorables1_19_4;
     getBlockRewriter(): BlockRewriter<ClientboundPackets1_19_3>;
     getEntityRewriter(): EntityPacketRewriter1_19_4;
     getItemRewriter(): ItemPacketRewriter1_19_4;

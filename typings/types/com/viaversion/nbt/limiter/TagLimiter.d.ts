@@ -9,7 +9,10 @@ export interface TagLimiter extends Object{
     countInt(): void;
     countLong(): void;
     countShort(): void;
+    countTag(): void;
     maxBytes(): number;
     maxLevels(): number;
+    maxTags(): number;
     reset(): void;
+    tags(): number;
 }

@@ -7,6 +7,7 @@ export class ConnectionManagerImpl extends Object implements ConnectionManager {
     constructor()
     readonly clientConnections: JavaMap<UUID, UserConnection>;
     readonly connections: UserConnection[];
+    // private connectionsView: UserConnection[];
     readonly serverConnections: JavaMap<UUID, UserConnection>;
     getClientConnection(arg0: UUID): UserConnection;
     getClientConnections(): JavaMap<UUID, UserConnection>;

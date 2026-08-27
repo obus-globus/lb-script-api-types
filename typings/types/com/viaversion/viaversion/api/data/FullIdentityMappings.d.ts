@@ -1,24 +1,15 @@
-import type { JavaMap } from '../../../../../JavaMap.d.ts'
 import type { FullMappings } from '../../../../../com/viaversion/viaversion/api/data/FullMappings.d.ts'
+import type { FullMappingsBase } from '../../../../../com/viaversion/viaversion/api/data/FullMappingsBase.d.ts'
 import type { MappingDataLoader$IdentifiersPair } from '../../../../../com/viaversion/viaversion/api/data/MappingDataLoader$IdentifiersPair.d.ts'
 import type { Mappings } from '../../../../../com/viaversion/viaversion/api/data/Mappings.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class FullIdentityMappings extends Object implements FullMappings {
+import type { Key } from '../../../../../com/viaversion/viaversion/util/Key.d.ts'
+export class FullIdentityMappings extends FullMappingsBase {
+    static of(paramarg0: MappingDataLoader$IdentifiersPair, paramarg1: Mappings): FullMappings;
     constructor(arg0: MappingDataLoader$IdentifiersPair, arg1: Mappings)
-    // private idToString: string[];
-    // private mappings: Mappings;
-    // private stringToId: JavaMap<any, any>;
-    getNewId(arg0: number): number;
-    id(arg0: string): number;
     identifier(arg0: number): string;
     identifier(arg0: string): string;
-    inverse(): FullMappings;
+    inverse(): FullIdentityMappings;
     isIdentity(): boolean;
     isIntIdIdentity(): boolean;
-    mappedId(arg0: string): number;
-    mappedIdentifier(arg0: number): string;
-    mappedIdentifier(arg0: string): string;
-    mappedSize(): number;
-    setNewId(arg0: number, arg1: number): void;
-    size(): number;
+    keyFromMappedKey(arg0: string): Key;
 }

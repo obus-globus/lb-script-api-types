@@ -4,5 +4,5 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class Typesb1_4 extends Object {
     static ENTITY_DATA: Type<EntityData>;
     static ENTITY_DATA_LIST: Type<EntityData[]>;
-    constructor()
+    private constructor()
 }

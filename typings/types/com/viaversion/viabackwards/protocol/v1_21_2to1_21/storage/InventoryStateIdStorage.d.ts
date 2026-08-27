@@ -1,8 +1,8 @@
-import type { StorableObject } from '../../../../../../com/viaversion/viaversion/api/connection/StorableObject.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class InventoryStateIdStorage extends Object implements StorableObject {
+export class InventoryStateIdStorage extends Object {
     constructor()
-    onRemove(): void;
+    nextClearedSlot(): number;
+    setNextClearedSlot(arg0: number): void;
     setSmithingTableOpen(arg0: boolean): void;
     setStateId(arg0: number): void;
     smithingTableOpen(): boolean;

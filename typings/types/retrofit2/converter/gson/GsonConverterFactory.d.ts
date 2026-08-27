@@ -10,8 +10,10 @@ import type { Retrofit } from '../../../retrofit2/Retrofit.d.ts'
 export class GsonConverterFactory extends Converter$Factory {
     static create(): GsonConverterFactory;
     static create(paramarg0: Gson): GsonConverterFactory;
-    private constructor(arg0: Gson)
+    private constructor(arg0: Gson, arg1: boolean)
     // private gson: Gson;
+    // private streaming: boolean;
     requestBodyConverter(arg0: Type, arg1: Annotation[], arg2: Annotation[], arg3: Retrofit): Converter<Object, RequestBody>;
     responseBodyConverter(arg0: Type, arg1: Annotation[], arg2: Retrofit): Converter<ResponseBody, Object>;
+    withStreaming(): GsonConverterFactory;
 }

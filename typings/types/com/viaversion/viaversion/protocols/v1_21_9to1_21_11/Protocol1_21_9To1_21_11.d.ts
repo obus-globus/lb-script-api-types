@@ -14,6 +14,7 @@ import type { MappingData1_21_11 } from '../../../../../com/viaversion/viaversio
 import type { ClientboundPacket1_21_11 } from '../../../../../com/viaversion/viaversion/protocols/v1_21_9to1_21_11/packet/ClientboundPacket1_21_11.d.ts'
 import type { BlockItemPacketRewriter1_21_11 } from '../../../../../com/viaversion/viaversion/protocols/v1_21_9to1_21_11/rewriter/BlockItemPacketRewriter1_21_11.d.ts'
 import type { EntityPacketRewriter1_21_11 } from '../../../../../com/viaversion/viaversion/protocols/v1_21_9to1_21_11/rewriter/EntityPacketRewriter1_21_11.d.ts'
+import type { ProtocolStorables1_21_11 } from '../../../../../com/viaversion/viaversion/protocols/v1_21_9to1_21_11/storage/ProtocolStorables1_21_11.d.ts'
 import type { BlockRewriter } from '../../../../../com/viaversion/viaversion/rewriter/BlockRewriter.d.ts'
 import type { ParticleRewriter } from '../../../../../com/viaversion/viaversion/rewriter/ParticleRewriter.d.ts'
 import type { RecipeDisplayRewriter } from '../../../../../com/viaversion/viaversion/rewriter/RecipeDisplayRewriter.d.ts'
@@ -36,6 +37,7 @@ export class Protocol1_21_9To1_21_11 extends AbstractProtocol<ClientboundPacket1
     // private addAmbientCaveSound(arg0: Map$Entry<string, Tag>[]): void;
     // private backgroundMusicEntry(arg0: string, arg1: boolean, arg2: number): Map$Entry<string, Tag>[];
     createPacketTypesProvider(): PacketTypesProvider<ClientboundPacket1_21_9, ClientboundPacket1_21_11, ServerboundPacket1_21_9, ServerboundPacket1_21_9>;
+    createStorables(): ProtocolStorables1_21_11;
     getBlockRewriter(): BlockRewriter<ClientboundPacket1_21_9>;
     getComponentRewriter(): NBTComponentRewriter<ClientboundPacket1_21_9>;
     getEntityRewriter(): EntityPacketRewriter1_21_11;

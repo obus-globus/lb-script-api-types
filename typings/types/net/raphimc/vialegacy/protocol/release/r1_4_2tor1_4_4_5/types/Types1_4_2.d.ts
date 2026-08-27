@@ -8,5 +8,5 @@ export class Types1_4_2 extends Object {
     static NBTLESS_ITEM: Type<Item>;
     static NBTLESS_ITEM_ARRAY: Type<Item[]>;
     static UNSIGNED_BYTE_BYTE_ARRAY: Type<number[]>;
-    constructor()
+    private constructor()
 }

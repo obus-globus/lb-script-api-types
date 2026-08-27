@@ -2,6 +2,7 @@ import type { UserConnection } from '../../../../../com/viaversion/viaversion/ap
 import type { AbstractProtocol } from '../../../../../com/viaversion/viaversion/api/protocol/AbstractProtocol.d.ts'
 import type { PacketTypesProvider } from '../../../../../com/viaversion/viaversion/api/protocol/packet/provider/PacketTypesProvider.d.ts'
 import type { VersionedTypesHolder } from '../../../../../com/viaversion/viaversion/api/type/types/version/VersionedTypesHolder.d.ts'
+import type { ProtocolStorablesBase } from '../../../../../com/viaversion/viaversion/connection/ProtocolStorablesBase.d.ts'
 import type { ClientboundPacket1_20_5 } from '../../../../../com/viaversion/viaversion/protocols/v1_20_3to1_20_5/packet/ClientboundPacket1_20_5.d.ts'
 import type { ServerboundPacket1_20_5 } from '../../../../../com/viaversion/viaversion/protocols/v1_20_3to1_20_5/packet/ServerboundPacket1_20_5.d.ts'
 import type { MappingData1_21 } from '../../../../../com/viaversion/viaversion/protocols/v1_20_5to1_21/data/MappingData1_21.d.ts'
@@ -25,6 +26,7 @@ export class Protocol1_20_5To1_21 extends AbstractProtocol<ClientboundPacket1_20
     readonly particleRewriter: ParticleRewriter<ClientboundPacket1_20_5>;
     readonly tagRewriter: TagRewriter<ClientboundPacket1_20_5>;
     createPacketTypesProvider(): PacketTypesProvider<ClientboundPacket1_20_5, ClientboundPacket1_21, ServerboundPacket1_20_5, ServerboundPacket1_20_5>;
+    createStorables(): ProtocolStorablesBase;
     getBlockRewriter(): BlockRewriter<ClientboundPacket1_20_5>;
     getComponentRewriter(): JsonNBTComponentRewriter<ClientboundPacket1_20_5>;
     getEntityRewriter(): EntityPacketRewriter1_21;

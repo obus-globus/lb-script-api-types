@@ -4,7 +4,8 @@ import type { UserConnection } from '../../../../../../../com/viaversion/viavers
 import type { TabListEntry } from '../../../../../../../net/raphimc/vialegacy/protocol/release/r1_7_6_10tor1_8/model/TabListEntry.d.ts'
 export class TablistStorage extends StoredObject {
     constructor(arg0: UserConnection)
-    tablist: JavaMap<string, TabListEntry>;
+    readonly tablist: JavaMap<string, TabListEntry>;
+    getTablist(): JavaMap<string, TabListEntry>;
     sendAddEntry(arg0: TabListEntry): void;
     sendRemoveEntry(arg0: TabListEntry): void;
     sendTempEntry(arg0: TabListEntry): void;

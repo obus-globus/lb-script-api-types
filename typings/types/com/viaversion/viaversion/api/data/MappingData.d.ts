@@ -8,6 +8,7 @@ import type { TagData } from '../../../../../com/viaversion/viaversion/api/minec
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface MappingData extends Object{
     changedBlocks(): (Object | null)[];
+    changedEnvironmentAttributes(): string[];
     getArgumentTypeMappings(): FullMappings;
     getAttributeMappings(): FullMappings;
     getBlockEntityMappings(): FullMappings;

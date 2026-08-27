@@ -5,5 +5,5 @@ export class Types1_6_4 extends Object {
     static ENTITY_DATA: Type<EntityData>;
     static ENTITY_DATA_LIST: Type<EntityData[]>;
     static STRING: Type<string>;
-    constructor()
+    private constructor()
 }

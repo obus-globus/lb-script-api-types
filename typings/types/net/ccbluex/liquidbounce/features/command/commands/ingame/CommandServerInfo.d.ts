@@ -1,9 +1,8 @@
+import type { CommandDispatcher } from '../../../../../../../com/mojang/brigadier/CommandDispatcher.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Continuation } from '../../../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { EventListener } from '../../../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
-import type { Command } from '../../../../../../../net/ccbluex/liquidbounce/features/command/Command.d.ts'
-import type { Command$Factory } from '../../../../../../../net/ccbluex/liquidbounce/features/command/Command$Factory.d.ts'
-import type { CommandServerInfo$DetectionType } from '../../../../../../../net/ccbluex/liquidbounce/features/command/commands/ingame/CommandServerInfo$DetectionType.d.ts'
+import type { CommandRegistrar } from '../../../../../../../net/ccbluex/liquidbounce/features/command/CommandRegistrar.d.ts'
+import type { ClientCommandSource } from '../../../../../../../net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.d.ts'
 import type { Component } from '../../../../../../../net/minecraft/network/chat/Component.d.ts'
 /**
  * ServerInfo Command
@@ -27,20 +26,15 @@ import type { Component } from '../../../../../../../net/minecraft/network/chat/
  *
  * The command supports active detection modes for more thorough analysis.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandServerInfo.kt#L64 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandServerInfo.kt:64}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandServerInfo.kt#L73 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandServerInfo.kt:73}
  */
-export class CommandServerInfo extends Object implements EventListener, Command$Factory {
+export class CommandServerInfo extends Object implements EventListener, CommandRegistrar {
     static INSTANCE: CommandServerInfo;
     readonly debugDisplayName: Component;
     readonly debugOwnerId: string;
     readonly running: boolean;
     children(): EventListener[];
-    createCommand(): Command;
     parent(): EventListener | null;
-    // private printHostingInformation(command: Command): void;
-    // private printInformation(command: Command, detections: CommandServerInfo$DetectionType[]): void;
-    // private printPluginInformation(command: Command): void;
-    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
-    // private runActiveDetection(command: Command, detectionTypes: CommandServerInfo$DetectionType[], $completion: Continuation<void>): any;
+    register(dispatcher: CommandDispatcher<ClientCommandSource>): void;
     unregister(): void;
 }

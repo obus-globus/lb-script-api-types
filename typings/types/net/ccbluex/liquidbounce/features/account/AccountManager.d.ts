@@ -31,27 +31,27 @@ export class AccountManager extends Config implements EventListener {
     /**
      * Cannot join premium servers.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt#L113 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt:113}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt#L113 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt:113}
      */
     newCrackedAccount(username: string, online: boolean): void;
     /**
      * Does not support accounts with two-factor authentication enabled. Runs asynchronously; the result is
      * surfaced via {@link AccountManagerAdditionResultEvent}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt#L259 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt:259}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt#L259 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt:259}
      */
     newMicrosoftAccountViaCredentials(email: string, password: string): void;
     /**
      * Blocks only until the verification URL is known and hands it to {@link url}; the account itself is created
      * once the user signs in elsewhere, surfaced via {@link AccountManagerAdditionResultEvent}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt#L178 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt:178}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt#L178 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt:178}
      */
     newMicrosoftAccountViaDeviceCode(url: (param0: string) => void): void;
     /**
      * Runs asynchronously; the result is surfaced via {@link AccountManagerAdditionResultEvent}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt#L213 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt:213}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt#L213 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt:213}
      */
     newMicrosoftAccountViaWebView(): void;
     newSessionAccount(token: string): void;

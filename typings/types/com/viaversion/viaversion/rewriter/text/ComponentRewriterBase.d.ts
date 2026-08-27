@@ -1,6 +1,7 @@
 import type { StringTag } from '../../../../../com/viaversion/nbt/tag/StringTag.d.ts'
 import type { Tag } from '../../../../../com/viaversion/nbt/tag/Tag.d.ts'
 import type { UserConnection } from '../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
+import type { FullMappings } from '../../../../../com/viaversion/viaversion/api/data/FullMappings.d.ts'
 import type { StructuredDataKey } from '../../../../../com/viaversion/viaversion/api/minecraft/data/StructuredDataKey.d.ts'
 import type { Protocol } from '../../../../../com/viaversion/viaversion/api/protocol/Protocol.d.ts'
 import type { ClientboundPacketType } from '../../../../../com/viaversion/viaversion/api/protocol/packet/ClientboundPacketType.d.ts'
@@ -22,10 +23,14 @@ export abstract class ComponentRewriterBase<C extends ClientboundPacketType> ext
     handleItemArrayContents(arg0: UserConnection, arg1: Map$Entry<string, Tag>[], arg2: string): void;
     handleLore(arg0: UserConnection, arg1: Map$Entry<string, Tag>[]): void;
     handleNestedComponent(arg0: UserConnection, arg1: Tag): void;
+    handleNestedIdentifiers(arg0: Map$Entry<string, Tag>[]): void;
+    // private handleNestedItem(arg0: UserConnection, arg1: Map$Entry<string, Tag>[], arg2: string): void;
     handleShowItem(arg0: UserConnection, arg1: Map$Entry<string, Tag>[]): void;
     handleShowItem(arg0: UserConnection, arg1: Map$Entry<string, Tag>[], arg2: Map$Entry<string, Tag>[]): void;
+    // private handleSoundEventTag(arg0: Tag, arg1: FullMappings): void;
     handleTranslate(arg0: UserConnection, arg1: Map$Entry<string, Tag>[], arg2: StringTag): void;
     handleTranslate(arg0: JsonObject, arg1: string): void;
+    // private handleTypedEntityData(arg0: Map$Entry<string, Tag>[], arg1: string, arg2: FullMappings): void;
     handleWrittenBookContents(arg0: UserConnection, arg1: Map$Entry<string, Tag>[]): void;
     hoverEventKey(): string;
     passthroughAndProcess(arg0: PacketWrapper): void;

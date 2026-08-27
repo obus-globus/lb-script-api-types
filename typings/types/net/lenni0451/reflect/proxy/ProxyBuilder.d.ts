@@ -17,6 +17,7 @@ export class ProxyBuilder extends Object {
     readonly invocationHandler: InvocationHandler;
     readonly methodFilter: (param0: Method) => boolean;
     readonly methodMapper: (param0: Method) => Method;
+    readonly packageName: string;
     // private proxyClass: Class<Object>;
     readonly superClass: Class<Object>;
     // private addConstructors(arg0: ClassBuilder): void;
@@ -32,6 +33,7 @@ export class ProxyBuilder extends Object {
     getInvocationHandler(): InvocationHandler;
     getMethodFilter(): (param0: Method) => boolean;
     getMethodMapper(): (param0: Method) => Method;
+    getPackageName(): string;
     getSuperClass(): Class<Object>;
     // private reset(): void;
     setClassDefiner(arg0: ProxyClassDefiner): ProxyBuilder;
@@ -39,5 +41,6 @@ export class ProxyBuilder extends Object {
     setInvocationHandler(arg0: InvocationHandler): ProxyBuilder;
     setMethodFilter(arg0: (param0: Method) => boolean): ProxyBuilder;
     setMethodMapper(arg0: (param0: Method) => Method): ProxyBuilder;
+    setPackageName(arg0: string): ProxyBuilder;
     setSuperClass(arg0: Class<Object>): ProxyBuilder;
 }

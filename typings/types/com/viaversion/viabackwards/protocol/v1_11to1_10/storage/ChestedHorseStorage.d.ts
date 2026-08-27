@@ -1,5 +1,6 @@
+import type { StorableObject } from '../../../../../../com/viaversion/viaversion/api/connection/StorableObject.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class ChestedHorseStorage extends Object {
+export class ChestedHorseStorage extends Object implements StorableObject {
     constructor()
     readonly chested: boolean;
     readonly liamaCarpetColor: number;
@@ -9,6 +10,7 @@ export class ChestedHorseStorage extends Object {
     getLiamaStrength(): number;
     getLiamaVariant(): number;
     isChested(): boolean;
+    onRemove(): void;
     setChested(arg0: boolean): void;
     setLiamaCarpetColor(arg0: number): void;
     setLiamaStrength(arg0: number): void;

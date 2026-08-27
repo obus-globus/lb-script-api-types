@@ -1,8 +1,7 @@
-import type { StorableObject } from '../../../../../../com/viaversion/viaversion/api/connection/StorableObject.d.ts'
 import type { UserConnection } from '../../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { PlayerPositionStorage$PlayerPosition } from '../../../../../../com/viaversion/viaversion/protocols/v1_21to1_21_2/storage/PlayerPositionStorage$PlayerPosition.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class PlayerPositionStorage extends Object implements StorableObject {
+export class PlayerPositionStorage extends Object {
     constructor()
     // private captureNextPlayerPositionPacket: boolean;
     // private pendingPongs: (Object | null)[];
@@ -10,7 +9,6 @@ export class PlayerPositionStorage extends Object implements StorableObject {
     checkCaptureNextPlayerPositionPacket(): boolean;
     checkHasPlayerPosition(): boolean;
     checkPong(arg0: number): boolean;
-    onRemove(): void;
     reset(): void;
     sendMovePlayerPosRot(arg0: UserConnection): void;
     sendPing(arg0: UserConnection, arg1: number): void;

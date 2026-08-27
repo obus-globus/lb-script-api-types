@@ -8,5 +8,7 @@ export class Okio__OkioKt extends Object {
     static blackhole(): Sink;
     static buffer(paramarg0: Sink): BufferedSink;
     static buffer(paramarg0: Source): BufferedSource;
+    static limit(paramarg0: Source, paramarg1: number): Source;
+    static limit(paramarg0: Source, paramarg1: number, paramarg2: boolean): Source;
     static use<T extends Closeable, R extends unknown>(paramarg0: T, paramarg1: (param0: Object) => R): R;
 }

@@ -49,7 +49,7 @@ export class ValueGroup extends Value<Value<Object>[]> {
      * Stores the {@link ValueGroup} in which
      * the {@link ValueGroup} is included, can be null.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt#L104 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt:104}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt#L104 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt:104}
      */
     base: ValueGroup | null;
     /**
@@ -57,7 +57,7 @@ export class ValueGroup extends Value<Value<Object>[]> {
      * otherwise the {@link baseKey} from {@link base}
      * is used when its base is null and so on.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt#L111 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt:111}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt#L111 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt:111}
      */
     readonly baseKey: string;
     readonly containedValues: Value<Object>[];
@@ -123,7 +123,7 @@ export class ValueGroup extends Value<Value<Object>[]> {
     /**
      * Allows dynamic groups to create their children before stored values are applied.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt#L98 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt:98}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt#L98 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt:98}
      */
     prepareDeserialize(jsonObject: JsonObject): void;
     // private rangedValue<T extends unknown>(name: string, defaultValue: T, range: ClosedRange<any>, suffix: string, valueType: ValueType, aliases: string[]): RangedValue<T>;
@@ -134,7 +134,7 @@ export class ValueGroup extends Value<Value<Object>[]> {
     /**
      * Restore all values to their default values
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt#L228 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt:228}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt#L228 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt:228}
      */
     restore(): void;
     s2cPackets<C extends Identifier[]>(name: string, default_: C): RegistryListValue<C, Identifier>;
@@ -153,7 +153,7 @@ export class ValueGroup extends Value<Value<Object>[]> {
     /**
      * Walks the path of the {@link ValueGroup} and its children
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt#L123 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt:123}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt#L123 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt:123}
      */
     walkKeyPath(previousBaseKey: string | null): void;
 }

@@ -8,11 +8,11 @@ import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Logger } from '../../../../../java/util/logging/Logger.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class BackwardsMappingData extends MappingDataBase {
+    static nameFromIdentifier(paramarg0: string): string;
     constructor(arg0: string, arg1: string)
     constructor(arg0: string, arg1: string, arg2: Class<Protocol<any, any, any, any>>)
     backwardsItemMappings: JavaMap<any, any>;
     // private enchantmentNames: JavaMap<any, any>;
-    // private entityNames: JavaMap<string, string>;
     // private vvProtocolClass: Class<Protocol<any, any, any, any>>;
     getBackwardsItemMappings(): JavaMap<any, any>;
     getLogger(): Logger;
@@ -23,11 +23,10 @@ export class BackwardsMappingData extends MappingDataBase {
     getNewItemId(arg0: number): number;
     getOldItemId(arg0: number): number;
     getViaVersionProtocolClass(): Class<Protocol<any, any, any, any>>;
+    loadBackwardsItemMappings(arg0: Map$Entry<string, Tag>[]): void;
     loadBiMappings(arg0: Map$Entry<string, Tag>[], arg1: string): BiMappings;
     loadExtras(arg0: Map$Entry<string, Tag>[]): void;
     // private loadNameByIdMappings(arg0: Map$Entry<string, Tag>[], arg1: string): JavaMap<any, any>;
-    // private loadNameByStringMappings(arg0: Map$Entry<string, Tag>[], arg1: string): JavaMap<string, string>;
     mappedEnchantmentName(arg0: number): string;
-    mappedEntityName(arg0: string): string;
     readMappingsFile(arg0: string): Map$Entry<string, Tag>[];
 }

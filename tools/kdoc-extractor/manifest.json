@@ -2424,95 +2424,12 @@
       "line": 105
     }
   },
-  "net.ccbluex.liquidbounce.features.command.AutoCompletionProvider": {
-    "doc": "Provides autocompletion for one specific parameter",
-    "kind": "class",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt",
-      "line": 31
-    }
-  },
-  "net.ccbluex.liquidbounce.features.command.AutoCompletionProvider.autocomplete": {
-    "doc": "Autocompletion for a parameter\n\nFor example for `.value Scaffold Mode G`, this function would be called with\n- `begin = \"G\"`\n- `args = [\"Scaffold\", \"Mode\", \"G\"]`",
-    "params": {
-      "begin": "the current text of the autocompleted parameter",
-      "args": "all current arguments of the command"
-    },
-    "returns": "suggestions for the full parameter name",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt",
-      "line": 44
-    }
-  },
-  "net.ccbluex.liquidbounce.features.command.Command.Factory": {
-    "doc": "Provides a [Command] to the [CommandManager].",
-    "kind": "class",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt",
-      "line": 283
-    }
-  },
-  "net.ccbluex.liquidbounce.features.command.Command.Factory.createCommand": {
-    "doc": "Creates the [Command] and is run only once by the [CommandManager].",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt",
-      "line": 288
-    }
-  },
-  "net.ccbluex.liquidbounce.features.command.Command.printStyledComponent": {
-    "doc": "Sends a styled command result with copyable content and custom text component",
-    "params": {
-      "key": "Translation key (will be prefixed with command's translation base)",
-      "textComponent": "Text component to display",
-      "copyContent": "Optional content to copy when clicked (defaults to text component's string representation)",
-      "formatting": "Function to apply formatting to the text (default: regular)",
-      "hover": "Optional hover event (defaults to \"Click to copy\" tooltip)"
-    },
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt",
-      "line": 150
-    }
-  },
-  "net.ccbluex.liquidbounce.features.command.Command.printStyledText": {
-    "doc": "Sends a styled command result with copyable content",
-    "params": {
-      "key": "Translation key (will be prefixed with command's translation base)",
-      "data": "Optional data to be displayed and copied",
-      "formatting": "Function to apply formatting to the text (default: regular)",
-      "hover": "Optional hover event (defaults to \"Click to copy\" tooltip)",
-      "click": "Optional click action type (defaults to [ClickEvent.CopyToClipboard])"
-    },
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt",
-      "line": 128
-    }
-  },
-  "net.ccbluex.liquidbounce.features.command.Command.subcommandMap": {
-    "doc": "For navigation purposes.\nKey: name or alias\nValue: corresponding subcommand",
-    "kind": "property",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt",
-      "line": 82
-    }
-  },
-  "net.ccbluex.liquidbounce.features.command.Command.usage": {
-    "doc": "Returns the formatted usage information of this command\n\ne.g.\n```\ncommand_name subcommand_name <required_arg> [[<optional_vararg>]...\n```",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt",
-      "line": 185
-    }
-  },
   "net.ccbluex.liquidbounce.features.command.CommandExecutor": {
     "doc": "Links minecraft with the command engine",
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandExecutor.kt",
-      "line": 63
+      "line": 57
     }
   },
   "net.ccbluex.liquidbounce.features.command.CommandExecutor.chatEventHandler": {
@@ -2520,7 +2437,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandExecutor.kt",
-      "line": 199
+      "line": 143
     }
   },
   "net.ccbluex.liquidbounce.features.command.CommandExecutor.commandCoroutineScope": {
@@ -2528,7 +2445,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandExecutor.kt",
-      "line": 146
+      "line": 90
     }
   },
   "net.ccbluex.liquidbounce.features.command.CommandExecutor.coroutineExceptionHandler": {
@@ -2536,115 +2453,889 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandExecutor.kt",
-      "line": 135
+      "line": 79
     }
   },
-  "net.ccbluex.liquidbounce.features.command.CommandExecutor.suspendHandler": {
-    "doc": "Add a wrapped suspend handler to [net.ccbluex.liquidbounce.features.command.builder.CommandBuilder]\nif you don't want to block the render thread.",
+  "net.ccbluex.liquidbounce.features.command.CommandExecutor.wrapSuspend": {
+    "doc": "Wraps a suspend handler into a Brigadier [Command], keeping the scheduling,\nre-entrance guard and progress-message behavior of the previous meta-model\n`suspendHandler`.",
     "params": {
-      "allowParallel": "@author MukjepScarlet"
+      "allowParallel": "allow or prevent duplicated executions"
     },
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandExecutor.kt",
-      "line": 77
+      "line": 71
     }
   },
   "net.ccbluex.liquidbounce.features.command.CommandManager": {
-    "doc": "Contains routines for handling commands\nand the command registry\n\n@author superblaubeere27 (@team CCBlueX)",
+    "doc": "Contains routines for handling commands\nand the command registry\n\nAll commands are registered directly against a Brigadier [CommandDispatcher] (see the\n`brigadier` package DSL); the legacy meta-model has been removed.\n\n@author superblaubeere27 (@team CCBlueX)",
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt",
-      "line": 99
+      "line": 101
     }
   },
-  "net.ccbluex.liquidbounce.features.command.Parameter.Verificator.verifyAndParse": {
-    "doc": "Verifies and parses parameter.\n\nThis function must not have any side effects since this function may be called\nwhile the command is still being written!",
-    "returns": "the text is not valid, this function returns [Result.Error], otherwise\n[Result.Ok] with the parsed content is returned.",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt",
-      "line": 96
-    }
-  },
-  "net.ccbluex.liquidbounce.features.command.Parameter.default": {
-    "doc": "Default value if optional.",
-    "kind": "property",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt",
-      "line": 53
-    }
-  },
-  "net.ccbluex.liquidbounce.features.command.Parameter.name": {
-    "doc": "Name of the parameter.",
-    "kind": "property",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt",
-      "line": 49
-    }
-  },
-  "net.ccbluex.liquidbounce.features.command.Parameter.required": {
-    "doc": "Whether the parameter is required.",
-    "kind": "property",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt",
-      "line": 51
-    }
-  },
-  "net.ccbluex.liquidbounce.features.command.Parameter.vararg": {
-    "doc": "Whether the parameter is a vararg. Parsed result will be an Array if true.",
-    "kind": "property",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt",
-      "line": 55
-    }
-  },
-  "net.ccbluex.liquidbounce.features.command.builder.CommandBuilder.hub": {
-    "doc": "If a command is marked as a hub command, it is impossible to execute it.\n\nFor example, <code>.friend</code>\n\nThe command _friend_ would not be executable since it just acts as a\nhub for its subcommands",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/CommandBuilder.kt",
-      "line": 78
-    }
-  },
-  "net.ccbluex.liquidbounce.features.command.builder.CommandBuilder.requiresIngame": {
-    "doc": "Doesn't allow the command do be executed if either the world or the player are `null`.",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/CommandBuilder.kt",
-      "line": 66
-    }
-  },
-  "net.ccbluex.liquidbounce.features.command.builder.ParameterBuilder.autocompletedFrom": {
-    "doc": "Filter from given strings provided by [placeholdersProvider].\n\nIf [minecraftPlaceholders] is `true`, the prefix `minecraft:` will be ignored,\nmeaning that typing the beginning like `diam` (without the prefix `minecraft:`)\nwill be enough to match strings such as `minecraft:diamond`, `minecraft:diamond_axe`, etc.",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/ParameterBuilder.kt",
-      "line": 153
-    }
-  },
-  "net.ccbluex.liquidbounce.features.command.builder.ParameterBuilder.vararg": {
-    "doc": "Marks this parameter as a vararg.\n\nThe values are stored in an array\n\nOnly allowed at the end.",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/ParameterBuilder.kt",
-      "line": 134
-    }
-  },
-  "net.ccbluex.liquidbounce.features.command.commandSet": {
-    "doc": "Command set. Sorted with name.",
+  "net.ccbluex.liquidbounce.features.command.CommandManager.GlobalSettings.hintCount": {
+    "doc": "How many hints should we give for unknown commands?",
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt",
-      "line": 91
+      "line": 120
     }
   },
+  "net.ccbluex.liquidbounce.features.command.CommandManager.GlobalSettings.prefix": {
+    "doc": "The prefix of the commands.\n\n```\n.friend add \"Senk Ju\"\n^\n------\nprefix (.)\n```",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt",
+      "line": 115
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.CommandManager.brigadierDispatcher": {
+    "doc": "Lazily built Brigadier command tree. Rebuilt whenever a command is registered or\nunregistered (see [register] / [registerScriptCommands] / [unregisterScriptCommands]).",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt",
+      "line": 183
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.CommandManager.buildUsage": {
+    "doc": "Builds the usage lines for a command context, based on the Brigadier tree\n([CommandDispatcher.getSmartUsage]).",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt",
+      "line": 395
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.CommandManager.directCommandRegistrars": {
+    "doc": "Registration functions of commands written directly against the Brigadier tree\n(see the [CommandRegistrar] interface); replayed whenever the dispatcher is rebuilt.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt",
+      "line": 190
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.CommandManager.execute": {
+    "doc": "Executes a command.",
+    "params": {
+      "cmd": "The command. If there is no command in it (it is empty or only whitespaces), this method is a no op"
+    },
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt",
+      "line": 313
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.CommandManager.getDispatcher": {
+    "doc": "Returns the lazily built [CommandDispatcher], rebuilding it whenever the command\nregistry changed (see [register] / [registerScriptCommands] / [unregisterScriptCommands]).",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt",
+      "line": 274
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.CommandManager.invalidate": {
+    "doc": "Drops the cached dispatcher so it is rebuilt with fresh argument state on next use.\n\nCalled on world join/leave ([net.ccbluex.liquidbounce.event.events.WorldChangeEvent]):\nargument types capture the registry access / feature flags at construction time\n(e.g. `itemArgument()`, `resourceArgument()`), so a world change invalidates them.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt",
+      "line": 252
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.CommandManager.mainCommandNodes": {
+    "doc": "Root literals that are real commands (not redirecting aliases), sorted by name.\nUsed by `.help` and unknown-command hints.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt",
+      "line": 267
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.CommandManager.register": {
+    "doc": "Registers a command written directly against the Brigadier tree.\n\nThe registrar is recorded so it is replayed whenever the dispatcher is rebuilt\n(see [getDispatcher]). If a dispatcher is already cached, the registrar is applied\nto it once; if the cache is empty, the next [getDispatcher] rebuild includes it.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt",
+      "line": 206
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.CommandManager.registerScriptCommands": {
+    "doc": "Registers script-provided command nodes\n(see [net.ccbluex.liquidbounce.script.bindings.features.ScriptCommandBuilder]).\n\nAll nodes are replayed whenever the dispatcher is rebuilt. Any node name already\ntaken on the dispatcher root - by a built-in command or another script - fails\nthe whole registration, mirroring the previous `addCommand` duplicate-name check.\nWithout this, Brigadier would silently merge the node onto the existing root child,\noverriding its command or grafting grandchildren into it.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt",
+      "line": 221
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.CommandManager.resolvePathTokenCount": {
+    "doc": "Counts how many leading tokens of [tokens] form the command path (root command name\nplus subcommand names), by walking the literal children of the current node\ncase-insensitively. The first token that does not match any literal child starts\nthe argument part.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt",
+      "line": 292
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.CommandManager.rootCommandNodes": {
+    "doc": "The literal nodes registered on the root of the current dispatcher, exposing the\ncommand names (and aliases as redirecting literals) to consumers such as the help command.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt",
+      "line": 260
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.CommandManager.scriptCommandNodes": {
+    "doc": "Script-provided command nodes (main nodes plus alias redirects), keyed by node name.\nReplayed whenever the dispatcher is rebuilt; see [registerScriptCommands].",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt",
+      "line": 196
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.CommandManager.shiftSuggestionRanges": {
+    "doc": "Translates suggestion ranges from the command body (without prefix) back into\nthe full input string (with prefix), which is what the Minecraft GUI expects.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt",
+      "line": 501
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.CommandManager.tokenizeCommand": {
+    "doc": "Tokenizes the [line].\n\nFor example: `.friend add \"Senk Ju\"` -> [[`.friend`, `add`, `Senk Ju`]]",
+    "returns": "A pair of the tokenized command and the starting indices of the tokens",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt",
+      "line": 411
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.CommandManager.unknownCommandHints": {
+    "doc": "Builds the list of \"did you mean\" hints for unknown commands, sorted by\nLevenshtein distance to the typed command name.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt",
+      "line": 359
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.CommandManager.unregisterScriptCommands": {
+    "doc": "Unregisters script-provided command nodes by name, rebuilding the dispatcher.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt",
+      "line": 240
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.CommandManager.worldChangeHandler": {
+    "doc": "Rebuilds the command tree on world join/leave: argument types capture the\nregistry access / feature flags at construction time (see [invalidate]).",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt",
+      "line": 131
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.CommandRegistrar": {
+    "doc": "A command that registers itself onto a Brigadier [CommandDispatcher].\n\nEvery inbuilt command is an `object` implementing this interface; the [CommandManager]\nregisters them through [CommandManager.register]. Scripts register their command nodes\nthrough [CommandManager.registerScriptCommands] instead.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandRegistrar.kt",
+      "line": 32
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.CommandRegistrar.register": {
+    "doc": "Registers this command onto the [dispatcher].",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandRegistrar.kt",
+      "line": 37
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.BooleanArgumentType": {
+    "doc": "Boolean argument mirroring the legacy `boolean` parameter preset: accepts\n`yes`/`on`/`true` and `no`/`off`/`false` (case-insensitive).",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt",
+      "line": 222
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.ClientStringArgumentType": {
+    "doc": "Client-command string arguments. Prefer these over Brigadier\n[com.mojang.brigadier.arguments.StringArgumentType.word] / `string()` so unquoted\ntokens are not limited to the ASCII identifier whitelist.\n\n`greedyString()` is unchanged: it already consumes the remainder of the line as-is.",
+    "kind": "object",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ClientStringArgumentType.kt",
+      "line": 65
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.ClientStringArgumentType.string": {
+    "doc": "One token: a quoted string (quotes stripped, escapes honored) or an unquoted\n[readUnquotedToken].",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ClientStringArgumentType.kt",
+      "line": 77
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.ClientStringArgumentType.word": {
+    "doc": "One unquoted token. Quotes are literal characters, not grouping.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ClientStringArgumentType.kt",
+      "line": 70
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.CommandErrors": {
+    "doc": "Typed parse-error factories for the client argument types, mirroring the vanilla\npattern of one `DynamicCommandExceptionType` per failure mode (see e.g.\n`Vec3Argument.ERROR_NOT_COMPLETE`). Unlike vanilla's `Component.literal` messages,\nthe factories produce translatable components so the whole error sentence renders\nin the user's language.",
+    "kind": "object",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/CommandErrors.kt",
+      "line": 31
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.CommandErrors.EMPTY_MULTI_SELECT": {
+    "doc": "`%s` = parameter name.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/CommandErrors.kt",
+      "line": 55
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.CommandErrors.INVALID_BOOLEAN": {
+    "doc": "First `%s` = rejected value, second `%s` = parameter name.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/CommandErrors.kt",
+      "line": 41
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.CommandErrors.INVALID_CHOICE": {
+    "doc": "First `%s` = rejected value, second `%s` = parameter name.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/CommandErrors.kt",
+      "line": 34
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.CommandErrors.INVALID_ENCHANT_LEVEL": {
+    "doc": "First `%s` = rejected value, second `%s` = the `max` keyword.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/CommandErrors.kt",
+      "line": 79
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.CommandErrors.INVALID_MULTI_SELECT": {
+    "doc": "First `%s` = rejected value, second `%s` = type name.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/CommandErrors.kt",
+      "line": 48
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.CommandErrors.NOT_A_FRIEND": {
+    "doc": "`%s` = rejected friend name.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/CommandErrors.kt",
+      "line": 73
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.CommandErrors.NO_SUCH_MODULE": {
+    "doc": "`%s` = rejected module name.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/CommandErrors.kt",
+      "line": 61
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.CommandErrors.NO_SUCH_PLAYER": {
+    "doc": "`%s` = rejected player name.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/CommandErrors.kt",
+      "line": 67
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.EnchantLevel": {
+    "doc": "A parsed enchantment level: either an explicit positive [Explicit.level] or the `max`\nkeyword ([Max]), which resolves to the enchantment's highest level.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/EnchantLevelArgumentType.kt",
+      "line": 32
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.EnchantLevel.Explicit": {
+    "doc": "An explicit positive level, used as-is (may exceed the enchantment's max).",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/EnchantLevelArgumentType.kt",
+      "line": 37
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.EnchantLevel.Max": {
+    "doc": "The enchantment's highest level; always resolves through the holder at use time.",
+    "kind": "object",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/EnchantLevelArgumentType.kt",
+      "line": 34
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.EnchantLevel.render": {
+    "doc": "Renders this parsed level for the command result message: `max` stays the keyword,\nan explicit level prints as its number.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/EnchantLevelArgumentType.kt",
+      "line": 95
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.EnchantLevel.resolve": {
+    "doc": "Resolves this parsed level against an enchantment holder: [EnchantLevel.Max] becomes\nthe enchantment's own maximum, an explicit level passes through unchanged.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/EnchantLevelArgumentType.kt",
+      "line": 86
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.EnchantLevelArgumentType": {
+    "doc": "Positive enchantment level or the keyword `max` (the enchantment's highest level),\nmirroring the legacy string-based level parameter of the `.enchant` command.",
+    "kind": "object",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/EnchantLevelArgumentType.kt",
+      "line": 45
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.FriendArgumentType": {
+    "doc": "Resolves a friend by name at parse time: unknown names fail during parse instead of\ninside the handler (mirrors [PlayerInfoArgumentType]), and every consumer receives the\nsame [FriendManager.Friend] instead of re-implementing the lookup.\n\nSuggestions are the names on the friend list.",
+    "kind": "object",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/FriendArgumentType.kt",
+      "line": 35
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.ModuleArgumentType": {
+    "doc": "Single-choice module argument, mirroring the legacy `module()` parameter preset:\nthe module name is matched case-insensitively.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt",
+      "line": 141
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.MultiSelectArgumentType": {
+    "doc": "Comma-separated multi-select argument, parsing to a [Set] of validated values.\n\nMirrors the legacy `values`/`enumChoices` parameter presets (e.g. `.hide hide killaura,scaffold`):\nthe whole comma-separated token is validated and every name is matched case-insensitively.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt",
+      "line": 38
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.MultiTaggedArgumentType": {
+    "doc": "Greedy multi-value argument that parses every remaining token as a tagged value,\nmirroring the legacy `enumChoice(...).vararg()` parameter (one token per value).",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt",
+      "line": 188
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.PlayerInfoArgumentType": {
+    "doc": "Resolves a tab-list player by name at parse time: invalid names fail during parse instead of inside the handler,\nand every consumer receives the same [PlayerInfo] instead of re-implementing the lookup.\n\nSuggestions are the online player names from the command source.",
+    "kind": "object",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/PlayerInfoArgumentType.kt",
+      "line": 38
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.StringReader.readClientString": {
+    "doc": "Quoted string (same rules as [StringReader.readString]) or, if unquoted, an\n[readUnquotedToken] that accepts any non-space character.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ClientStringArgumentType.kt",
+      "line": 44
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.StringReader.readUnquotedToken": {
+    "doc": "Reads the next unquoted token: every character up to the next space (or end of input).\n\nBrigadier's [StringReader.readUnquotedString] only accepts `[0-9A-Za-z_.+-]`, which\ntruncates non-ASCII input such as Chinese module or player names. Client commands\nhistorically split on spaces only, so this restores that contract.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ClientStringArgumentType.kt",
+      "line": 32
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.SuggestionsBuilder.suggestMatching": {
+    "doc": "Fills this builder with the [nameOf] names of [values] that pass [include] and whose name\nmatches the typed prefix through [match], then completes the suggestion future.\n\nThis is the shared skeleton of the suggestion providers of the argument factories in this\nfile (enum choices, modules, tagged values and registry entries), which all follow the\n\"filter candidates by case-insensitive prefix and suggest their name\" pattern.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt",
+      "line": 89
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.TaggedArgumentType": {
+    "doc": "Single-choice argument over an enum-like set of tagged values: the tag is matched case-insensitively.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt",
+      "line": 104
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.Vec3ArgumentType": {
+    "doc": "Client shell over the vanilla coordinate parsing ([WorldCoordinates.parseDouble] /\n[LocalCoordinates.parse]). Only position resolution differs from vanilla: the vanilla\ngetters require a server-side [net.minecraft.commands.CommandSourceStack], so\n[getPosition] resolves against the local player instead.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ClientArguments.kt",
+      "line": 77
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.Vec3ArgumentType.getPosition": {
+    "doc": "Reads the resolved position for the parsed [name] argument. Relative (`~`)\ncoordinates resolve against the player, local (`^`) against the look direction.\n\nDefaults to the vanilla `Vec3Argument.vec3()` behavior (`centerCorrect = true`),\nwhich centers integer block positions on x/z.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ClientArguments.kt",
+      "line": 122
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.clientCommandBuildContext": {
+    "doc": "The build context shared by the registry-backed argument factories ([itemArgument],\n[resourceArgument]): the joined world's registry access plus the connection's feature\nflags, falling back to static vanilla values when no server connection exists (main\nmenu, unit tests). Rebuilt on every command-tree rebuild, which [CommandManager]\ntriggers on world changes.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ClientArguments.kt",
+      "line": 51
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.itemArgument": {
+    "doc": "Creates the vanilla [ItemArgument] bound to the current world's registry access,\naccepting exactly what `/give` does (`id`, `minecraft:id`, `[id|components]`).\n\nFalls back to the static vanilla registry lookup and default feature flags when no\nworld is loaded.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ClientArguments.kt",
+      "line": 61
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.readGreedyTokens": {
+    "doc": "Reads every remaining whitespace-separated token of [reader], translating each one\nthrough [parseToken]. The callback validates the token and throws a\n[com.mojang.brigadier.exceptions.CommandSyntaxException] on invalid input.\n\nThis is the shared parsing skeleton of the greedy multi-value argument types\n([MultiTaggedArgumentType] and the script multi-value validator), which all consume\none token per value and report errors per token.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt",
+      "line": 173
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.arguments.resourceArgument": {
+    "doc": "Creates the vanilla [ResourceArgument] for the registry identified by [key],\nparsing to a type-safe [Holder.Reference] with vanilla errors and suggestions.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ClientArguments.kt",
+      "line": 67
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.ChainElement": {
+    "doc": "An element of one argument chain: an argument or the executable leaf.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDslRuntime.kt",
+      "line": 138
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.ClientCommandSource": {
+    "doc": "Lightweight command source for LiquidBounce client commands, mirroring the role of\nMinecraft's `CommandSourceStack` on the server side.\n\nThe client only executes commands in the local game context, so the source is a\nsingleton that exposes the current game state. `requires` predicates and handlers can\nuse [playerOrNull]/[levelOrNull]/[isIngame] to gate execution, while the inherited\n[MinecraftShortcuts] properties stay non-null for use after the ingame check passed.\n\nImplements vanilla [SharedSuggestionProvider] (like the client's own\n`ClientSuggestionProvider`) so argument types such as `Vec3ArgumentType`,\n`ResourceArgument` and `ItemArgument` resolve their suggestions through the source,\ninstead of each provider hardcoding its candidates. Every delegate falls back to an\nempty/static value when no server connection exists (main menu, unit tests).",
+    "kind": "object",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt",
+      "line": 58
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.ClientCommandSource.commandBuildContext": {
+    "doc": "Registry access shared by command argument factories ([net.ccbluex.liquidbounce.features.command.arguments.itemArgument],\n[net.ccbluex.liquidbounce.features.command.arguments.resourceArgument]):\nthe joined world's registries when available, otherwise the\nstatic vanilla lookup so parse/suggestions keep working outside a world.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt",
+      "line": 75
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.ClientCommandSource.customSuggestion": {
+    "doc": "Server-driven custom tab completions require a request/response round-trip with a\npending-suggestions id owned by the vanilla `ClientSuggestionProvider`; our client\ncommands never reach the server, so there is nothing to query - empty by design.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt",
+      "line": 111
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.ClientCommandSource.enabledFeatures": {
+    "doc": "Feature flags announced by the current server connection; the vanilla defaults\nwhen no server is joined (main menu, unit tests).\n\nThe `mc.connection` access is wrapped for the same reason as [commandBuildContext].",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt",
+      "line": 85
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.ClientCommandSource.registryAccess": {
+    "doc": "Synced world registries when a level is loaded; otherwise the static builtin\n[RegistryAccess] (not [VanillaRegistries.createLookup], which is only a\n[HolderLookup.Provider] and is not a [RegistryAccess]).",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt",
+      "line": 122
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.ClientCommandSource.suggestRegistryElements": {
+    "doc": "Registry element suggestions for argument types such as `ResourceArgument`.\n\nReplicated from vanilla `ClientSuggestionProvider.suggestRegistryElements`, which\nserves the request from the registries synced with the current server connection;\nwe resolve the same key against [registryAccess] instead.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt",
+      "line": 133
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CmdArg": {
+    "doc": "Typed handle passed into an `argument` or `optional` continuation.\n\nThe handle carries everything needed to attach and read one argument: its Brigadier\n[type], its name and the fallback for omitted optional branches. Handlers retrieve the\nparsed value through [get] without repeating name or type at the call site.",
+    "params": {
+      "T": "the resolved value type; nullable for optional arguments whose default is `null`"
+    },
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt",
+      "line": 42
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CmdArg.resolve": {
+    "doc": "Reads this argument's parsed value from [ctx], falling back to [default] when the\nargument was omitted on an optional branch of the tree.\n\nThe lookup passes [Any] as the raw class so Brigadier skips its assignability check\n(which compares against the ArgumentType implementation class, not the value class)\nand returns the parsed value verbatim; the cast to [T] is safe because the handle\nis created next to its matching [ArgumentType].",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt",
+      "line": 56
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CmdArgChain": {
+    "doc": "An argument chain attached to a command literal: a linear sequence of arguments ending\nin exactly one executor declared through [CmdChainScope.exec]/[CmdChainScope.execSuspend].\n\nCompiles to nested Brigadier argument builders; every node whose remaining tail is\noptional receives the shared executor, so omitted trailing values resolve to defaults.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDslRuntime.kt",
+      "line": 58
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CmdArgChain.canExecuteAtParent": {
+    "doc": "True when the literal itself may execute this chain's leaf, which is only possible\nwhen every argument in the chain is optional.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDslRuntime.kt",
+      "line": 75
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CmdArgChain.leafExecutor": {
+    "doc": "The executor declared as the chain's validated leaf.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDslRuntime.kt",
+      "line": 79
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CmdArgElement": {
+    "doc": "One argument inside a [CmdArgChain]: its handle (name + type + default), whether a\nvalue must be provided and an optional suggestion provider.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDslRuntime.kt",
+      "line": 45
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CmdChainScope": {
+    "doc": "Scope used to append the continuation of one argument chain.\nNested scopes share the same backing element list.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt",
+      "line": 258
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CmdChainScope.argument": {
+    "doc": "Appends a required argument and passes its typed handle into the continuation.\n\nSee the greedy-argument caveat on [CmdLiteralScope.argument]: it applies here too.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt",
+      "line": 269
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CmdChainScope.exec": {
+    "doc": "Declares the executable leaf of this chain.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt",
+      "line": 307
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CmdChainScope.execSuspend": {
+    "doc": "Declares a suspending executable leaf of this chain.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt",
+      "line": 312
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CmdChainScope.optional": [
+    {
+      "doc": "Appends an optional argument. Omitted values are resolved from the declared default;\nall following arguments must also be optional.",
+      "kind": "function",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt",
+        "line": 283
+      }
+    },
+    {
+      "doc": "Appends an optional argument with a non-null default.",
+      "kind": "function",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt",
+        "line": 295
+      }
+    }
+  ],
+  "net.ccbluex.liquidbounce.features.command.brigadier.CmdExecutorSpec": {
+    "doc": "A command executor declared by either [CmdLiteralScope.exec] or\n[CmdChainScope.exec].",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDslRuntime.kt",
+      "line": 168
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CmdI18n": {
+    "doc": "Shared i18n for [CmdLiteralScope] and [CmdChainScope]; helpers take this as receiver.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt",
+      "line": 84
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CmdI18n.t": {
+    "doc": "Resolves [key] under the root command's namespace: only the first segment of [path]\nis used, so [key] must carry the subcommand path itself (e.g. `\"clear.noFriends\"`\nfor `.friend clear` -> `liquidbounce.command.friend.clear.noFriends`).",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt",
+      "line": 92
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CmdLiteralNode": {
+    "doc": "A nested literal compiled as one Brigadier literal builder, plus redirecting aliases.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDslRuntime.kt",
+      "line": 141
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CmdLiteralScope": {
+    "doc": "Root scope of a command declaration; receives the top-level nodes declared in the\nblock of `literal(...)`.\n\nArgument chains are declared inline with [argument]/[optional]; each call opens a\nnested scope whose block declares the continuation, ending in exactly one executor\n(`exec`/`execSuspend`) per chain.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt",
+      "line": 104
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CmdLiteralScope.argument": {
+    "doc": "Declares a required argument and passes its typed handle into the continuation.\n\nIf [type] consumes the reader's entire remaining input (greedy, e.g.\n[com.mojang.brigadier.arguments.StringArgumentType.greedyString]),\nit must be the last argument of the chain. The DSL only detects greediness for known types\n([com.mojang.brigadier.arguments.StringArgumentType] and\n[net.ccbluex.liquidbounce.features.command.arguments.MultiTaggedArgumentType]);\ncustom greedy argument types are not verified and silently produce an\nunmatchable tree when placed before other arguments.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt",
+      "line": 152
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CmdLiteralScope.buildLiteral": {
+    "doc": "Compiles this declaration into a Brigadier literal builder.\n\nA chain whose arguments are all optional is also executable directly on the literal\n(input may end before any argument), so the literal inherits that chain's leaf\nexecutor. A direct executor and an all-optional chain cannot be declared together.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt",
+      "line": 228
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CmdLiteralScope.children": {
+    "doc": "Nested literals and argument chains declared under this literal.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt",
+      "line": 116
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CmdLiteralScope.exec": {
+    "doc": "Declares an executor directly on the literal: the handler runs when the input ends\nhere. Use [execSuspend] for suspending handlers instead.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt",
+      "line": 127
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CmdLiteralScope.execSuspend": {
+    "doc": "Declares a suspending executor directly on the literal, scheduled like\n`CommandExecutor.executesSuspend` (progress message and re-entrance guard included).",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt",
+      "line": 136
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CmdLiteralScope.executor": {
+    "doc": "Direct executor of the literal itself (e.g. `.binds` listing all binds).",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt",
+      "line": 113
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CmdLiteralScope.literal": {
+    "doc": "Declares a nested command literal. [aliases] are extra names registered as\nredirecting siblings under the same parent (e.g. `.localconfig create` for `save`).",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt",
+      "line": 190
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CmdLiteralScope.optional": [
+    {
+      "doc": "Declares a nullable optional argument and passes its typed handle into the continuation.",
+      "kind": "function",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt",
+        "line": 163
+      }
+    },
+    {
+      "doc": "Declares an optional argument with a non-null default and typed handle.",
+      "kind": "function",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt",
+        "line": 175
+      }
+    }
+  ],
+  "net.ccbluex.liquidbounce.features.command.brigadier.CmdLiteralScope.requires": {
+    "doc": "Gates execution of this command behind [predicate].",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt",
+      "line": 119
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CmdNode": {
+    "doc": "Internal command-tree node compiled into a Brigadier builder.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDslRuntime.kt",
+      "line": 31
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CommandContext<ClientCommandSource>.arg": {
+    "doc": "Type-safe argument access, mirroring `ctx.getArgument(name, clazz)` as used by the\ntyped getters in vanilla commands (e.g. `ItemArgument.getItem(ctx, \"item\")`).",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Dsl.kt",
+      "line": 48
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CommandContext<ClientCommandSource>.get": {
+    "doc": "Reads a typed DSL argument directly from a Brigadier context.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt",
+      "line": 72
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CommandContext<S>.deepestExecutableContext": {
+    "doc": "The context whose [CommandContext.command] should run for this parse.\n\nA redirecting alias copies the target's command onto the alias node so a bare alias\nstill executes. Brigadier then hangs that command on the **outer** context and puts\nany remaining parse (arguments, subcommands) on a **child**. [CommandContext.getArgument]\ndoes not look at children, so stopping at the first `command != null` would run the\nalias layer with empty arguments — or the parent handler instead of a subcommand.\n\nThe deepest context that actually has a command matches the consumed input. A bare\nalias has no child and lands on the copied command.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Dsl.kt",
+      "line": 63
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CommandDispatcher<ClientCommandSource>.register": {
+    "doc": "Builds a literal directly as a Brigadier builder using the typed command DSL (shortcut)\nRegister the returned builder through [com.mojang.brigadier.CommandDispatcher.register].",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDslEntry.kt",
+      "line": 38
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CommandDispatcher<ClientCommandSource>.registerAliases": {
+    "doc": "Registers [aliases] as redirecting literal nodes that share the subtree of [mainNode].\n\nThis mirrors the alias handling of the legacy meta-model (an alias executes the exact\nsame command tree) while keeping a single copy of the tree in memory. The main node's\n`requires` predicate is copied onto each alias so gating (e.g. `requiresIngame`) is not\nbypassed through a redirect.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Dsl.kt",
+      "line": 83
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.CommandDsl": {
+    "doc": "Marker annotation preventing nested DSL scopes from calling members of outer scopes\n(e.g. attaching arguments to a parent literal from inside a handler block).",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt",
+      "line": 78
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.isGreedy": {
+    "doc": "Heuristic greediness check for the chain-tail validation: only known greedy types are\nrecognized. A custom [ArgumentType] that consumes the whole remaining input is NOT\ndetected here - such types must be declared as the last argument of their chain\nmanually (documented on [CmdLiteralScope.argument]).",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDslRuntime.kt",
+      "line": 183
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.literal": [
+    {
+      "doc": "Builds a literal directly as a Brigadier builder using the typed command DSL.\nRegister the returned builder through [com.mojang.brigadier.CommandDispatcher.register].",
+      "kind": "function",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDslEntry.kt",
+        "line": 28
+      }
+    },
+    {
+      "doc": "Thin aliases that fix the source type of the Brigadier builders to [ClientCommandSource],\nmirroring the convenience factories of Minecraft's `Commands` class\n(`Commands.literal` / `Commands.argument`).",
+      "kind": "function",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Dsl.kt",
+        "line": 38
+      }
+    }
+  ],
+  "net.ccbluex.liquidbounce.features.command.brigadier.onlinePlayers": {
+    "doc": "Suggests the names of the players currently online (tab list), vanilla-filtered.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Suggestions.kt",
+      "line": 30
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.redirectingAlias": {
+    "doc": "A sibling literal that redirects to [mainNode], copying `requires` and a no-argument\n`command` so gating is not bypassed and a bare alias still executes.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Dsl.kt",
+      "line": 94
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.brigadier.suggestions": [
+    {
+      "doc": "Appends all elements from [strings] as suggestion, filtered by the vanilla\n[SharedSuggestionProvider] matching (case-insensitive prefix / substring).",
+      "kind": "function",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Suggestions.kt",
+        "line": 36
+      }
+    },
+    {
+      "doc": "Appends all elements from [strings] as suggestion, filtered by the vanilla\n[SharedSuggestionProvider] matching (case-insensitive prefix / substring).",
+      "kind": "function",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Suggestions.kt",
+        "line": 44
+      }
+    },
+    {
+      "doc": "Appends all elements from [strings] as suggestion, filtered by the vanilla\n[SharedSuggestionProvider] matching (case-insensitive prefix / substring).",
+      "kind": "function",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Suggestions.kt",
+        "line": 52
+      }
+    },
+    {
+      "doc": "Appends all elements from [strings] as suggestion.\nThe supplier function is invoked on [executor]; the resulting future completes on the\nMinecraft main thread, mirroring vanilla where every suggestion future.",
+      "kind": "function",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Suggestions.kt",
+        "line": 61
+      }
+    }
+  ],
   "net.ccbluex.liquidbounce.features.command.commands.client.CommandBind": {
     "doc": "Bind Command\n\nAllows you to bind a key to a module, which means that the module will be activated when the key is pressed.",
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandBind.kt",
-      "line": 49
+      "line": 50
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.client.CommandBinds": {
@@ -2652,7 +3343,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandBinds.kt",
-      "line": 61
+      "line": 66
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.client.CommandClear": {
@@ -2660,7 +3351,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandClear.kt",
-      "line": 31
+      "line": 33
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.client.CommandConfig": {
@@ -2668,7 +3359,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandConfig.kt",
-      "line": 68
+      "line": 73
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.client.CommandDebug": {
@@ -2684,7 +3375,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandDebug.kt",
-      "line": 174
+      "line": 176
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.client.CommandFriend": {
@@ -2692,7 +3383,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandFriend.kt",
-      "line": 52
+      "line": 56
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.client.CommandHelp": {
@@ -2700,7 +3391,15 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandHelp.kt",
-      "line": 44
+      "line": 47
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.commands.client.CommandHelp.buildAliasesText": {
+    "doc": "Alias nodes are registered as redirecting literals that share the main node's subtree.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandHelp.kt",
+      "line": 85
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.client.CommandHide": {
@@ -2708,7 +3407,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandHide.kt",
-      "line": 45
+      "line": 47
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.client.CommandLocalConfig": {
@@ -2716,7 +3415,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandLocalConfig.kt",
-      "line": 71
+      "line": 78
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.client.CommandPanic": {
@@ -2724,7 +3423,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandPanic.kt",
-      "line": 38
+      "line": 42
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.client.CommandTargets": {
@@ -2732,7 +3431,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandTargets.kt",
-      "line": 38
+      "line": 42
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.client.CommandToggle": {
@@ -2740,7 +3439,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandToggle.kt",
-      "line": 36
+      "line": 38
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.client.CommandValue": {
@@ -2748,7 +3447,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandValue.kt",
-      "line": 40
+      "line": 43
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.client.client.CommandClient": {
@@ -2756,15 +3455,15 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/client/CommandClient.kt",
-      "line": 30
+      "line": 32
     }
   },
-  "net.ccbluex.liquidbounce.features.command.commands.client.client.CommandClient.createCommand": {
-    "doc": "Creates client command with a variety of subcommands.",
+  "net.ccbluex.liquidbounce.features.command.commands.client.client.CommandClient.register": {
+    "doc": "Registers the client command with a variety of subcommands.",
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/client/CommandClient.kt",
-      "line": 35
+      "line": 37
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.client.client.CommandClientConfigSubcommand": {
@@ -2772,7 +3471,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/client/CommandClientConfigSubcommand.kt",
-      "line": 43
+      "line": 46
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.client.marketplace.CommandMarketplace": {
@@ -2780,7 +3479,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/marketplace/CommandMarketplace.kt",
-      "line": 31
+      "line": 32
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.client.marketplace.MarketplaceItemCommand": {
@@ -2788,7 +3487,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/marketplace/MarketplaceItemCommand.kt",
-      "line": 30
+      "line": 29
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.client.marketplace.MarketplaceSearchCommand": {
@@ -2796,7 +3495,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/marketplace/MarketplaceSearchCommand.kt",
-      "line": 38
+      "line": 40
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.client.marketplace.MarketplaceSubscribeCommand": {
@@ -2804,7 +3503,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/marketplace/MarketplaceSubscribeCommand.kt",
-      "line": 38
+      "line": 36
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.client.marketplace.MarketplaceUnsubscribeCommand": {
@@ -2820,36 +3519,36 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/marketplace/MarketplaceUpdateCommand.kt",
-      "line": 35
+      "line": 40
     }
   },
-  "net.ccbluex.liquidbounce.features.command.commands.client.marketplace.item.marketplaceCreateItemCommand": {
+  "net.ccbluex.liquidbounce.features.command.commands.client.marketplace.item.MarketplaceCreateItemCommand": {
     "doc": "Create marketplace item",
-    "kind": "function",
+    "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/marketplace/item/MarketplaceCreateItemCommand.kt",
-      "line": 39
+      "line": 37
     }
   },
-  "net.ccbluex.liquidbounce.features.command.commands.client.marketplace.item.marketplaceDeleteItemCommand": {
+  "net.ccbluex.liquidbounce.features.command.commands.client.marketplace.item.MarketplaceDeleteItemCommand": {
     "doc": "Delete marketplace item",
-    "kind": "function",
+    "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/marketplace/item/MarketplaceDeleteItemCommand.kt",
-      "line": 36
+      "line": 34
     }
   },
-  "net.ccbluex.liquidbounce.features.command.commands.client.marketplace.item.marketplaceEditItemCommand": {
+  "net.ccbluex.liquidbounce.features.command.commands.client.marketplace.item.MarketplaceEditItemCommand": {
     "doc": "Edit marketplace item",
-    "kind": "function",
+    "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/marketplace/item/MarketplaceEditItemCommand.kt",
-      "line": 39
+      "line": 38
     }
   },
-  "net.ccbluex.liquidbounce.features.command.commands.client.marketplace.item.marketplaceListCommand": {
+  "net.ccbluex.liquidbounce.features.command.commands.client.marketplace.item.MarketplaceListCommand": {
     "doc": "List marketplace items",
-    "kind": "function",
+    "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/marketplace/item/MarketplaceListCommand.kt",
       "line": 41
@@ -2860,7 +3559,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/marketplace/revisions/MarketplaceListRevisionsCommand.kt",
-      "line": 34
+      "line": 33
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.client.marketplace.revisions.MarketplaceRevisionsCommand": {
@@ -2868,7 +3567,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/marketplace/revisions/MarketplaceRevisionsCommand.kt",
-      "line": 27
+      "line": 26
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.client.marketplace.revisions.MarketplaceUploadRevisionCommand": {
@@ -2884,7 +3583,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandCenter.kt",
-      "line": 37
+      "line": 39
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.CommandCoordinates": {
@@ -2892,7 +3591,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandCoordinates.kt",
-      "line": 39
+      "line": 43
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.CommandPing": {
@@ -2900,7 +3599,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandPing.kt",
-      "line": 33
+      "line": 35
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.CommandRemoteView": {
@@ -2908,7 +3607,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandRemoteView.kt",
-      "line": 36
+      "line": 40
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.CommandServerInfo": {
@@ -2916,7 +3615,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandServerInfo.kt",
-      "line": 64
+      "line": 73
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.CommandServerInfo.DetectionType": {
@@ -2924,31 +3623,59 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandServerInfo.kt",
-      "line": 204
+      "line": 251
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.CommandServerInfo.printInformation": {
     "doc": "Print all server information to chat",
     "params": {
-      "command": "The command instance",
       "detections": "Optional list of active detections that were run"
     },
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandServerInfo.kt",
-      "line": 117
+      "line": 120
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.commands.ingame.CommandServerInfo.printStyledComponent": {
+    "doc": "Sends a styled command result with copyable content and custom text component.",
+    "params": {
+      "key": "Translation key suffix (resolved through [CmdI18n.t], e.g. \"channels\")",
+      "textComponent": "Text component to display",
+      "copyContent": "Optional content to copy when clicked (defaults to text component's string representation)",
+      "formatting": "Function to apply formatting to the text (default: regular)",
+      "hover": "Optional hover event (defaults to \"Click to copy\" tooltip)"
+    },
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandServerInfo.kt",
+      "line": 235
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.commands.ingame.CommandServerInfo.printStyledText": {
+    "doc": "Sends a styled command result with copyable content.",
+    "params": {
+      "key": "Translation key suffix (resolved through [CmdI18n.t], e.g. \"address\")",
+      "data": "Optional data to be displayed and copied",
+      "formatting": "Function to apply formatting to the text (default: regular)",
+      "hover": "Optional hover event (defaults to \"Click to copy\" tooltip)",
+      "click": "Optional click action type (defaults to [ClickEvent.CopyToClipboard])"
+    },
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandServerInfo.kt",
+      "line": 213
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.CommandServerInfo.runActiveDetection": {
     "doc": "Runs active detection for specified detection types",
     "params": {
-      "command": "The command instance",
       "detectionTypes": "Collection of detection types to run"
     },
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandServerInfo.kt",
-      "line": 93
+      "line": 97
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.CommandTps": {
@@ -2956,7 +3683,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandTps.kt",
-      "line": 39
+      "line": 42
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.CommandUsername": {
@@ -2964,7 +3691,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandUsername.kt",
-      "line": 37
+      "line": 40
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.creative.CommandItemEnchant": {
@@ -2972,7 +3699,15 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/creative/CommandItemEnchant.kt",
-      "line": 47
+      "line": 52
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.commands.ingame.creative.CommandItemEnchant.enchantAll": {
+    "doc": "Enchants every enchantment: [level] is the resolved explicit level, or `null` to\nuse each enchantment's own maximum (the legacy behavior of the `max` keyword).",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/creative/CommandItemEnchant.kt",
+      "line": 196
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.creative.CommandItemGive": {
@@ -2980,7 +3715,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/creative/CommandItemGive.kt",
-      "line": 42
+      "line": 45
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.creative.CommandItemRename": {
@@ -2988,7 +3723,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/creative/CommandItemRename.kt",
-      "line": 40
+      "line": 45
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.creative.CommandItemSkull": {
@@ -2996,7 +3731,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/creative/CommandItemSkull.kt",
-      "line": 42
+      "line": 45
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.fakeplayer.CommandFakePlayer": {
@@ -3004,7 +3739,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/CommandFakePlayer.kt",
-      "line": 61
+      "line": 66
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.fakeplayer.CommandFakePlayer.checkInGame": {
@@ -3012,7 +3747,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/CommandFakePlayer.kt",
-      "line": 287
+      "line": 269
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.fakeplayer.CommandFakePlayer.fakePlayers": {
@@ -3020,7 +3755,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/CommandFakePlayer.kt",
-      "line": 66
+      "line": 71
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.fakeplayer.CommandFakePlayer.spawn": {
@@ -3031,7 +3766,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/CommandFakePlayer.kt",
-      "line": 238
+      "line": 222
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.fakeplayer.CommandFakePlayer.stopRecording": {
@@ -3039,7 +3774,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/CommandFakePlayer.kt",
-      "line": 374
+      "line": 356
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.fakeplayer.CommandFakePlayer.tickHandler": {
@@ -3047,7 +3782,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/CommandFakePlayer.kt",
-      "line": 347
+      "line": 329
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.ingame.fakeplayer.FakePlayer": {
@@ -3107,7 +3842,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/module/CommandAutoAccount.kt",
-      "line": 33
+      "line": 34
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.module.CommandAutoDisable": {
@@ -3115,15 +3850,15 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/module/CommandAutoDisable.kt",
-      "line": 47
+      "line": 51
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.module.CommandInvsee": {
-    "doc": "Command Invsee\n\n???\n\nModule: [ModuleInventoryTracker]",
+    "doc": "Command Invsee\n\nLets you view another player's inventory.\n\nModule: [ModuleInventoryTracker]",
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/module/CommandInvsee.kt",
-      "line": 40
+      "line": 41
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.module.CommandXRay": {
@@ -3131,7 +3866,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/module/CommandXRay.kt",
-      "line": 46
+      "line": 48
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.module.teleport.CommandPlayerTeleport": {
@@ -3139,15 +3874,15 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/module/teleport/CommandPlayerTeleport.kt",
-      "line": 36
+      "line": 41
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.module.teleport.CommandTeleport": {
-    "doc": "Teleport Command\n\nAllows you to teleport.\n\nModule: [ModuleTeleport]",
+    "doc": "Teleport Command\n\nAllows you to teleport.\n\nAccepts vanilla coordinate semantics: absolute (`100 64 -200`), relative to the\nplayer (`~ ~ ~`, `~5 ~-2 ~`) and local to the look direction (`^ ^ ^5`). An optional\ntrailing boolean (`true`/`yes`/`on`) replaces Y with the module's HighTP amount.\n\nModule: [ModuleTeleport]",
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/module/teleport/CommandTeleport.kt",
-      "line": 34
+      "line": 41
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.module.teleport.CommandVClip": {
@@ -3155,7 +3890,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/module/teleport/CommandVClip.kt",
-      "line": 46
+      "line": 51
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.translate.languageCodes": {
@@ -3166,26 +3901,44 @@
       "line": 31
     }
   },
-  "net.ccbluex.liquidbounce.features.command.preset.CommandBuilder.pagedQuery": {
-    "doc": "Builds a general paged query command with one optional integer parameter.",
-    "params": {
-      "pageSize": "the size of a single page. should be greater than 0.",
-      "header": "the generator function for page header before all items.",
-      "items": "provides all items. This function should be light-weighted.",
-      "eachRow": "@author MukjepScarlet"
-    },
+  "net.ccbluex.liquidbounce.features.command.lowercaseCommandPath": {
+    "doc": "Lower-cases only the leading [tokenCount] space-separated tokens of [cmd] (the command\npath: root command name and subcommand names), leaving all argument values untouched.\n\nThis preserves the previous case-insensitive behaviour of command paths while keeping\nparameter values (e.g. `.rename MyItem`) intact.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt",
+      "line": 529
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.mapParseFailure": {
+    "doc": "Maps leftover parse input to a [CommandException], mirroring vanilla\n[CommandDispatcher.execute]: a single parse exception is surfaced, an empty\ncontext range is an unknown command, and leftover tokens after a matched\ncommand are invalid usage.\n\nBuilt-in Brigadier argument failures keep their raw message (a translatable\ncomponent is preserved as-is, so vanilla errors localize through the client\nlanguage system). When the failing exception carries cursor information (from `createWithContext`),\nthe Brigadier context string (`...input<--[HERE]`) is appended as a dim line,\nmirroring vanilla's error rendering. Usage is attached here because argument\ntypes do not see the command tree at parse time.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt",
+      "line": 618
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.normalizeCommandSpaces": {
+    "doc": "Collapses runs of whitespace outside of quoted strings into a single space, mirroring\nthe previous tokenizer behaviour that ignored repeated spaces (`.cmd a   b` was parsed\nas two tokens). Content inside quotes is preserved verbatim.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt",
+      "line": 564
+    }
+  },
+  "net.ccbluex.liquidbounce.features.command.preset.CmdLiteralScope.pagedList": {
+    "doc": "Adds a `list [page]` subcommand with the same paging UI as [pagedQuery].",
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/preset/BuildPagedQueryCommand.kt",
-      "line": 129
+      "line": 170
     }
   },
-  "net.ccbluex.liquidbounce.features.command.rootCommandMap": {
-    "doc": "Key: Command name or alias\nValue: Command",
-    "kind": "property",
+  "net.ccbluex.liquidbounce.features.command.preset.CmdLiteralScope.pagedQuery": {
+    "doc": "Adds the optional page argument and executor to this literal (e.g. `.help [page]`).\nFor a listing that lives under `list`, use [pagedList].",
+    "kind": "function",
     "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt",
-      "line": 86
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/preset/BuildPagedQueryCommand.kt",
+      "line": 122
     }
   },
   "net.ccbluex.liquidbounce.features.cosmetic.CapeCosmeticsManager": {
@@ -3317,7 +4070,23 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/MarketplaceManager.kt",
-      "line": 40
+      "line": 49
+    }
+  },
+  "net.ccbluex.liquidbounce.features.marketplace.MarketplaceManager.update": {
+    "doc": "Checks and installs the newest revision of [item], returning what happened.\n\n@throws Exception when checking or installing fails; callers decide how to surface it.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/MarketplaceManager.kt",
+      "line": 87
+    }
+  },
+  "net.ccbluex.liquidbounce.features.marketplace.MarketplaceManager.updateAll": {
+    "doc": "Updates every subscribed item; one failing item does not abort the batch. Every\nitem yields exactly one [UpdateResult] (including [UpdateResult.Failed]), so the\ncaller can report successes and failures separately.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/MarketplaceManager.kt",
+      "line": 70
     }
   },
   "net.ccbluex.liquidbounce.features.marketplace.SubscribedItem.getInstallationFolder": {
@@ -3334,6 +4103,38 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/SubscribedItem.kt",
       "line": 91
+    }
+  },
+  "net.ccbluex.liquidbounce.features.marketplace.UpdateResult": {
+    "doc": "Outcome of a single [MarketplaceManager.update] call.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/MarketplaceManager.kt",
+      "line": 35
+    }
+  },
+  "net.ccbluex.liquidbounce.features.marketplace.UpdateResult.Failed": {
+    "doc": "The update failed with [error]; the item was left untouched on its old revision.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/MarketplaceManager.kt",
+      "line": 43
+    }
+  },
+  "net.ccbluex.liquidbounce.features.marketplace.UpdateResult.NoUpdate": {
+    "doc": "The item is already on its newest revision.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/MarketplaceManager.kt",
+      "line": 40
+    }
+  },
+  "net.ccbluex.liquidbounce.features.marketplace.UpdateResult.Updated": {
+    "doc": "The item was (re-)installed to revision [revisionId].",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/MarketplaceManager.kt",
+      "line": 37
     }
   },
   "net.ccbluex.liquidbounce.features.misc.HideAppearance": {
@@ -6277,7 +7078,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleFreeze.kt",
-      "line": 64
+      "line": 69
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleFreeze.Cancel": {
@@ -6285,7 +7086,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleFreeze.kt",
-      "line": 185
+      "line": 214
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleFreeze.Queue": {
@@ -6293,7 +7094,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleFreeze.kt",
-      "line": 164
+      "line": 193
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleFreeze.Stationary": {
@@ -6301,7 +7102,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleFreeze.kt",
-      "line": 204
+      "line": 233
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleFreeze.Stationary.FloatOffsetGenerator": {
@@ -6309,7 +7110,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleFreeze.kt",
-      "line": 218
+      "line": 247
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleFreeze.Stationary.cancelC0B": {
@@ -6317,7 +7118,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleFreeze.kt",
-      "line": 208
+      "line": 237
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleFreeze.moveHandler": {
@@ -6325,7 +7126,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleFreeze.kt",
-      "line": 99
+      "line": 135
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleNoClip": {
@@ -11503,7 +12304,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/lang/Language.kt",
-      "line": 153
+      "line": 155
     }
   },
   "net.ccbluex.liquidbounce.render.BoxVertexIterator.forEachVertex": {
@@ -12770,7 +13571,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt",
-      "line": 194
+      "line": 195
     }
   },
   "net.ccbluex.liquidbounce.script.PolyglotScript.callGlobalEvent": {
@@ -12813,7 +13614,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt",
-      "line": 164
+      "line": 165
     }
   },
   "net.ccbluex.liquidbounce.script.PolyglotScript.on": {
@@ -12853,7 +13654,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt",
-      "line": 230
+      "line": 231
     }
   },
   "net.ccbluex.liquidbounce.script.PolyglotScript.registerMode": {
@@ -12885,7 +13686,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt",
-      "line": 218
+      "line": 219
     }
   },
   "net.ccbluex.liquidbounce.script.PolyglotScript.registeredModules": {
@@ -12893,7 +13694,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt",
-      "line": 157
+      "line": 158
     }
   },
   "net.ccbluex.liquidbounce.script.PolyglotScript.scriptEnabled": {
@@ -12901,7 +13702,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt",
-      "line": 150
+      "line": 151
     }
   },
   "net.ccbluex.liquidbounce.script.ScriptApiRequired": {
@@ -13183,6 +13984,14 @@
       }
     }
   ],
+  "net.ccbluex.liquidbounce.script.bindings.api.ScriptParameterValidator": {
+    "doc": "Validation helpers exposed to scripts as `ParameterValidator`.\n\nEach function returns a `{ accept: boolean, value?: any, error?: string }` object,\nmirroring the contract expected by the `validate` field of script command parameters\n(see [net.ccbluex.liquidbounce.script.bindings.features.ScriptCommandBuilder]).",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptParameterValidator.kt",
+      "line": 32
+    }
+  },
   "net.ccbluex.liquidbounce.script.bindings.api.ScriptPrimitives": {
     "doc": "Because the languages used in scripts usually\nhave very broad requirements for numeric types.\nFor example, all numbers in JS are [Double],\nwhich can cause problems on interoperations.\n\nThe functions provided by this util can explicitly\nconvert script numbers or strings into primitives of the JVM.",
     "kind": "object",
@@ -13287,6 +14096,62 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptRotationUtil.kt",
       "line": 77
+    }
+  },
+  "net.ccbluex.liquidbounce.script.bindings.features.SCRIPT_VALIDATION_FAILED": {
+    "doc": "A script-provided validator rejected the input; `%s` is the error detail returned by\nthe script, kept as a dynamic passthrough (script messages are not translatable).",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptCommandBuilder.kt",
+      "line": 45
+    }
+  },
+  "net.ccbluex.liquidbounce.script.bindings.features.ScriptCommandBuilder": {
+    "doc": "Builds a Brigadier command tree from a JavaScript command object.\n\nThe object still uses `name`, `aliases`, `subcommands`, `parameters`, and `onExecute`.\n`hub` is unused: a command without `onExecute` is only a parent for subcommands.\nA parameter whose `required` is missing, `undefined`, or `null` is optional, matching\nthe previous script contract (`if (parameter.required)`).\nParameter chains follow the same optional-tail rules as the in-tree DSL\n([net.ccbluex.liquidbounce.features.command.brigadier.CmdArgChain]): omitting a\ntrailing optional still runs `onExecute`. Nested `aliases` are redirecting sibling\nliterals of that subcommand, not extra root commands.\n\n- A `vararg` without a custom `validate` is a single greedy string and reaches\n  `onExecute` as one `String`. A `vararg` with `validate` keeps per-token parsing\n  and arrives as an `Array`.\n- `getCompletions` is adapted into a Brigadier [com.mojang.brigadier.suggestion.SuggestionProvider].",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptCommandBuilder.kt",
+      "line": 66
+    }
+  },
+  "net.ccbluex.liquidbounce.script.bindings.features.ScriptCommandBuilder.ScriptValidatedArgumentType": {
+    "doc": "Validates a single token through the script-provided `validate` function.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptCommandBuilder.kt",
+      "line": 287
+    }
+  },
+  "net.ccbluex.liquidbounce.script.bindings.features.ScriptCommandBuilder.ScriptValidatedMultiValueArgumentType": {
+    "doc": "Greedily consumes all remaining tokens, validating each one through the\nscript-provided `validate` function. The result is an [Array] of parsed values.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptCommandBuilder.kt",
+      "line": 311
+    }
+  },
+  "net.ccbluex.liquidbounce.script.bindings.features.ScriptCommandBuilder.attachParameterChain": {
+    "doc": "Builds the argument chain, one nested argument node per parameter.\n\nA node is executable when the remainder of the chain is optional, matching\n[net.ccbluex.liquidbounce.features.command.brigadier.CmdArgChain].",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptCommandBuilder.kt",
+      "line": 140
+    }
+  },
+  "net.ccbluex.liquidbounce.script.bindings.features.ScriptCommandBuilder.build": {
+    "doc": "Returns the main command node plus one redirecting literal per alias; all of them\nmust be registered (and later unregistered by name) on the [net.ccbluex.liquidbounce.features.command.CommandManager].",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptCommandBuilder.kt",
+      "line": 72
+    }
+  },
+  "net.ccbluex.liquidbounce.script.bindings.features.ScriptCommandBuilder.collectArgument": {
+    "doc": "Reads a parsed argument value from the context; returns null when the (optional)\nparameter was omitted.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptCommandBuilder.kt",
+      "line": 265
     }
   },
   "net.ccbluex.liquidbounce.script.bindings.features.ScriptMode.callEvent": {
@@ -14971,7 +15836,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientChat.kt",
-      "line": 185
+      "line": 184
     }
   },
   "net.ccbluex.liquidbounce.utils.client.Minecraft.openChat": {
@@ -14979,7 +15844,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientChat.kt",
-      "line": 168
+      "line": 167
     }
   },
   "net.ccbluex.liquidbounce.utils.client.MutableComponent.copyable": {
@@ -14992,7 +15857,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientChat.kt",
-      "line": 145
+      "line": 144
     }
   },
   "net.ccbluex.liquidbounce.utils.client.NoneRangedValueProvider": {
@@ -15152,7 +16017,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientChat.kt",
-      "line": 221
+      "line": 217
     }
   },
   "net.ccbluex.liquidbounce.utils.client.clientIdentifier": {
@@ -15214,7 +16079,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientChat.kt",
-      "line": 126
+      "line": 125
     }
   },
   "net.ccbluex.liquidbounce.utils.client.isEqual1_21_4": {

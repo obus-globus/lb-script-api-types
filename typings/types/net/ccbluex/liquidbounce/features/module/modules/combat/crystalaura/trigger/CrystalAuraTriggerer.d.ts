@@ -20,7 +20,7 @@ import type { Component } from '../../../../../../../../../net/minecraft/network
  *
  * Mixins: {@link MixinClientPacketListener}, {@link MixinMultiPlayerGameMode}
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/trigger/CrystalAuraTriggerer.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/trigger/CrystalAuraTriggerer.kt:49}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/trigger/CrystalAuraTriggerer.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/trigger/CrystalAuraTriggerer.kt:49}
  */
 export class CrystalAuraTriggerer extends ValueGroup implements EventListener, MinecraftShortcuts {
     static INSTANCE: CrystalAuraTriggerer;
@@ -38,7 +38,7 @@ export class CrystalAuraTriggerer extends ValueGroup implements EventListener, M
     /**
      * Runs the calculations on a separate thread avoiding overhead on the render thread.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/trigger/CrystalAuraTriggerer.kt#L57 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/trigger/CrystalAuraTriggerer.kt:57}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/trigger/CrystalAuraTriggerer.kt#L57 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/trigger/CrystalAuraTriggerer.kt:57}
      */
     readonly offThread: boolean;
     readonly player: LocalPlayer;
@@ -46,7 +46,7 @@ export class CrystalAuraTriggerer extends ValueGroup implements EventListener, M
      * Also pauses when the combat manager tells combat modules to pause or option
      * (e.g. {@link notWhileUsingItem}) require it.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/trigger/CrystalAuraTriggerer.kt#L152 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/trigger/CrystalAuraTriggerer.kt:152}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/trigger/CrystalAuraTriggerer.kt#L152 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/trigger/CrystalAuraTriggerer.kt:152}
      */
     readonly running: boolean;
     // private service: ExecutorService;
@@ -61,7 +61,7 @@ export class CrystalAuraTriggerer extends ValueGroup implements EventListener, M
      * Event triggers don't normally allow caching either because between clearing and the next execution could be
      * almost a whole tick leading to wrong data when, for example, entities moved.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/trigger/CrystalAuraTriggerer.kt#L146 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/trigger/CrystalAuraTriggerer.kt:146}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/trigger/CrystalAuraTriggerer.kt#L146 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/trigger/CrystalAuraTriggerer.kt:146}
      */
     canCache(): boolean;
     children(): EventListener[];

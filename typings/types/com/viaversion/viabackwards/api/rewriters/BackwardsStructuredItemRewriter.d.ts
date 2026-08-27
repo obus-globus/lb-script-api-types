@@ -22,7 +22,7 @@ export class BackwardsStructuredItemRewriter<C extends ClientboundPacketType, S 
     static MARKER_KEY: string;
     constructor(arg0: T)
     // private nbtTagName: string;
-    // private addCustomModelData(arg0: Item, arg1: boolean, arg2: MappedItem, arg3: Map$Entry<string, Tag>[]): void;
+    // private addCustomModelData(arg0: Item, arg1: MappedItem, arg2: Map$Entry<string, Tag>[]): void;
     backupInconvertibleData(arg0: UserConnection, arg1: Item, arg2: StructuredDataContainer, arg3: Map$Entry<string, Tag>[]): void;
     eitherHolderToTag<V extends unknown>(arg0: EitherHolder<V>, arg1: (param0: V, param1: Map$Entry<string, Tag>[]) => void): Tag;
     holderSetToTag(arg0: HolderSet): Tag;

@@ -10,6 +10,7 @@ import type { ServerboundPackets1_13 } from '../../../../../com/viaversion/viave
 import type { ComponentRewriter1_13 } from '../../../../../com/viaversion/viaversion/protocols/v1_12_2to1_13/rewriter/ComponentRewriter1_13.d.ts'
 import type { EntityPacketRewriter1_13 } from '../../../../../com/viaversion/viaversion/protocols/v1_12_2to1_13/rewriter/EntityPacketRewriter1_13.d.ts'
 import type { ItemPacketRewriter1_13 } from '../../../../../com/viaversion/viaversion/protocols/v1_12_2to1_13/rewriter/ItemPacketRewriter1_13.d.ts'
+import type { ProtocolStorables1_13 } from '../../../../../com/viaversion/viaversion/protocols/v1_12_2to1_13/storage/ProtocolStorables1_13.d.ts'
 import type { ClientboundPackets1_12_1 } from '../../../../../com/viaversion/viaversion/protocols/v1_12to1_12_1/packet/ClientboundPackets1_12_1.d.ts'
 import type { ServerboundPackets1_12_1 } from '../../../../../com/viaversion/viaversion/protocols/v1_12to1_12_1/packet/ServerboundPackets1_12_1.d.ts'
 import type { ProtocolLogger } from '../../../../../com/viaversion/viaversion/util/ProtocolLogger.d.ts'
@@ -22,6 +23,7 @@ export class Protocol1_12_2To1_13 extends AbstractProtocol<ClientboundPackets1_1
     readonly componentRewriter: ComponentRewriter1_13<ClientboundPackets1_12_1>;
     readonly entityRewriter: EntityPacketRewriter1_13;
     readonly itemRewriter: ItemPacketRewriter1_13;
+    createStorables(): ProtocolStorables1_13;
     getComponentRewriter(): ComponentRewriter1_13<ClientboundPacketType>;
     getEntityRewriter(): EntityPacketRewriter1_13;
     getItemRewriter(): ItemPacketRewriter1_13;

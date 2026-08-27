@@ -1,11 +1,13 @@
 import type { CodecContext } from '../../../../../../../com/viaversion/viaversion/api/minecraft/codec/CodecContext.d.ts'
 import type { Ops } from '../../../../../../../com/viaversion/viaversion/api/minecraft/codec/Ops.d.ts'
+import type { Type } from '../../../../../../../com/viaversion/viaversion/api/type/Type.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../../../java/lang/CharSequence.d.ts'
 export interface Hasher extends Ops, Object{
     context(): CodecContext;
     hash(): number;
     reset(): void;
+    write<V extends unknown>(arg0: Type<V>, arg1: V): void;
     writeBoolean(arg0: boolean): void;
     writeByte(arg0: number): void;
     writeDouble(arg0: number): void;

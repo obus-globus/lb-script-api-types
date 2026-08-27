@@ -3,5 +3,5 @@ import type { EntityData } from '../../../../../../../com/viaversion/viaversion/
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class EntityDataRewriter extends Object {
     static transform(paramarg0: EntityTypes1_8$EntityType, paramarg1: EntityData[]): void;
-    constructor()
+    private constructor()
 }

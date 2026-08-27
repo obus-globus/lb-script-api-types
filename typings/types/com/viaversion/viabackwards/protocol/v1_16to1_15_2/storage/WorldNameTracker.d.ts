@@ -1,9 +1,7 @@
-import type { StorableObject } from '../../../../../../com/viaversion/viaversion/api/connection/StorableObject.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class WorldNameTracker extends Object implements StorableObject {
+export class WorldNameTracker extends Object {
     constructor()
     readonly worldName: string;
     getWorldName(): string;
-    onRemove(): void;
     setWorldName(arg0: string): void;
 }

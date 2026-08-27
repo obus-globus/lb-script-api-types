@@ -4,7 +4,12 @@ import type { UserConnection } from '../../../../../../com/viaversion/viaversion
 export class LinkedEntityStorage extends EntityPositionStorage implements StorableObject {
     constructor()
     entities(): number[];
+    isVehicle(arg0: number): boolean;
     onRemove(): void;
+    passengers(): number[];
     remove(arg0: UserConnection): void;
     setEntities(...arg0: number[]): void;
+    setPassengers(...arg0: number[]): void;
+    setVehicleId(arg0: number): void;
+    vehicleId(): number;
 }

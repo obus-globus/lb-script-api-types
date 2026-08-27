@@ -1,30 +1,16 @@
-import type { GpuDevice } from '../../../../../../../com/mojang/blaze3d/systems/GpuDevice.d.ts'
+import type { CommandDispatcher } from '../../../../../../../com/mojang/brigadier/CommandDispatcher.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Command } from '../../../../../../../net/ccbluex/liquidbounce/features/command/Command.d.ts'
-import type { Command$Factory } from '../../../../../../../net/ccbluex/liquidbounce/features/command/Command$Factory.d.ts'
-import type { MinecraftShortcuts } from '../../../../../../../net/ccbluex/liquidbounce/features/module/MinecraftShortcuts.d.ts'
-import type { Minecraft } from '../../../../../../../net/minecraft/client/Minecraft.d.ts'
-import type { ClientLevel } from '../../../../../../../net/minecraft/client/multiplayer/ClientLevel.d.ts'
-import type { ClientPacketListener } from '../../../../../../../net/minecraft/client/multiplayer/ClientPacketListener.d.ts'
-import type { MultiPlayerGameMode } from '../../../../../../../net/minecraft/client/multiplayer/MultiPlayerGameMode.d.ts'
-import type { LocalPlayer } from '../../../../../../../net/minecraft/client/player/LocalPlayer.d.ts'
+import type { CommandRegistrar } from '../../../../../../../net/ccbluex/liquidbounce/features/command/CommandRegistrar.d.ts'
+import type { ClientCommandSource } from '../../../../../../../net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.d.ts'
 /**
  * RemoteView Command
  *
  * Allows you to view from the perspective of another player in the game.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandRemoteView.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandRemoteView.kt:36}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandRemoteView.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandRemoteView.kt:40}
  */
-export class CommandRemoteView extends Object implements Command$Factory, MinecraftShortcuts {
+export class CommandRemoteView extends Object implements CommandRegistrar {
     static INSTANCE: CommandRemoteView;
-    readonly gpuDevice: GpuDevice;
-    readonly interaction: MultiPlayerGameMode;
-    readonly mc: Minecraft;
-    readonly network: ClientPacketListener;
     // private pName: string | null;
-    readonly player: LocalPlayer;
-    readonly world: ClientLevel;
-    createCommand(): Command;
-    // private offSubcommand(): Command;
-    // private viewSubcommand(): Command;
+    register(dispatcher: CommandDispatcher<ClientCommandSource>): void;
 }

@@ -1,17 +1,18 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-import type { Command } from '../../../../../../net/ccbluex/liquidbounce/features/command/Command.d.ts'
-import type { CommandBuilder } from '../../../../../../net/ccbluex/liquidbounce/features/command/builder/CommandBuilder.d.ts'
+import type { CmdLiteralScope } from '../../../../../../net/ccbluex/liquidbounce/features/command/brigadier/CmdLiteralScope.d.ts'
 import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
 export class BuildPagedQueryCommandKt extends Object {
     /**
-     * Builds a general paged query command with one optional integer parameter.
+     * Adds a `list {@link page}` subcommand with the same paging UI as {@link pagedQuery}.
      *
-     * @param pageSize the size of a single page. should be greater than 0.
-     * @param header the generator function for page header before all items.
-     * @param items provides all items. This function should be light-weighted.
-     * @param eachRow @author MukjepScarlet
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/features/command/preset/BuildPagedQueryCommand.kt#L129 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/preset/BuildPagedQueryCommand.kt:129}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/command/preset/BuildPagedQueryCommand.kt#L170 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/preset/BuildPagedQueryCommand.kt:170}
      */
-    static pagedQuery<T extends unknown>(self: CommandBuilder, pageSize: number, header: (param0: Command) => Component, items: () => T[], eachRow: (param0: Command, param1: number, param2: T) => Component): Command;
+    static pagedList<T extends unknown>(self: CmdLiteralScope, pageSize: number, header: () => Component, items: () => T[], eachRow: (param0: number, param1: T) => Component): void;
+    /**
+     * Adds the optional page argument and executor to this literal (e.g. `.help {@link page}`).
+     * For a listing that lives under `list`, use {@link pagedList}.
+     *
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/command/preset/BuildPagedQueryCommand.kt#L122 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/preset/BuildPagedQueryCommand.kt:122}
+     */
+    static pagedQuery<T extends unknown>(self: CmdLiteralScope, pageSize: number, header: () => Component, items: () => T[], eachRow: (param0: number, param1: T) => Component): void;
 }

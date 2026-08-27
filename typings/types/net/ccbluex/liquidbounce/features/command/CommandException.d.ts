@@ -4,6 +4,7 @@ import type { Component } from '../../../../../net/minecraft/network/chat/Compon
 import type { MutableComponent } from '../../../../../net/minecraft/network/chat/MutableComponent.d.ts'
 export class CommandException extends Exception {
     constructor(text: MutableComponent, cause: Throwable | null, usageInfo: Component[])
+    readonly message: string;
     readonly text: MutableComponent;
     readonly usageInfo: Component[];
 }

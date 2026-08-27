@@ -5,5 +5,6 @@ export class BlockDigStorage extends StoredObject {
     constructor(arg0: UserConnection, arg1: BlockPosition, arg2: number)
     // private facing: number;
     // private position: BlockPosition;
-    tick: number;
+    // private tick: number;
+    tick(): void;
 }

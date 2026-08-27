@@ -24,5 +24,5 @@ export class Types1_7_6 extends Object {
     static ITEM_ARRAY: Type<Item[]>;
     static NBT: Type<Map$Entry<string, Tag>[]>;
     static getChunk(paramarg0: Environment): Type<Chunk>;
-    constructor()
+    private constructor()
 }

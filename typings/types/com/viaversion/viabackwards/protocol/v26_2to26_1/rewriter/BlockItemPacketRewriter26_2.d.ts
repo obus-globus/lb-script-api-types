@@ -13,6 +13,7 @@ export class BlockItemPacketRewriter26_2 extends BackwardsStructuredItemRewriter
     backupInconvertibleData(arg0: UserConnection, arg1: Item, arg2: StructuredDataContainer, arg3: Map$Entry<string, Tag>[]): void;
     handleItemDataComponentsToClient(arg0: UserConnection, arg1: Item, arg2: StructuredDataContainer): void;
     handleItemDataComponentsToServer(arg0: UserConnection, arg1: Item, arg2: StructuredDataContainer): void;
+    registerPackets(): void;
     restoreBackupData(arg0: Item): void;
     restoreBackupData(arg0: Item, arg1: StructuredDataContainer, arg2: Map$Entry<string, Tag>[]): void;
 }

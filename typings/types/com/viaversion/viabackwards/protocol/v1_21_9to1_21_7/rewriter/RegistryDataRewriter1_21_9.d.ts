@@ -4,5 +4,6 @@ import type { UserConnection } from '../../../../../../com/viaversion/viaversion
 import type { RegistryEntry } from '../../../../../../com/viaversion/viaversion/api/minecraft/RegistryEntry.d.ts'
 export class RegistryDataRewriter1_21_9 extends BackwardsRegistryRewriter {
     constructor(arg0: BackwardsProtocol<any, any, any, any>)
+    // private backwardsProtocol: BackwardsProtocol<any, any, any, any>;
     trackDimensionAndBiomes(arg0: UserConnection, arg1: string, arg2: RegistryEntry[]): void;
 }

@@ -9,10 +9,12 @@ export class EntityReplacement extends Object {
     constructor(arg0: BackwardsProtocol<any, any, any, any>, arg1: string, arg2: number, arg3: number)
     // private componentType: EntityReplacement$ComponentType;
     // private defaultData: (param0: WrappedEntityData) => void;
+    // private fallbackName: string;
     // private id: number;
     // private key: string;
     // private protocol: BackwardsProtocol<any, any, any, any>;
     // private replacementId: number;
+    // private translateKey: string;
     defaultData(): (param0: WrappedEntityData) => void;
     entityName(): Object;
     hasBaseData(): boolean;

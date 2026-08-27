@@ -1,5 +1,5 @@
-import type { InetAddress } from '../../../java/net/InetAddress.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
+import type { Route } from '../../../okhttp3/Route.d.ts'
 export class InetAddressOrderKt extends Object {
-    static reorderForHappyEyeballs(addresses: InetAddress[]): InetAddress[];
+    static reorderForHappyEyeballs(addresses: Route[]): Route[];
 }

@@ -1,4 +1,5 @@
 import type { OutputStream } from '../java/io/OutputStream.d.ts'
+import type { Appendable } from '../java/lang/Appendable.d.ts'
 import type { ByteBuffer } from '../java/nio/ByteBuffer.d.ts'
 import type { Charset } from '../java/nio/charset/Charset.d.ts'
 import type { Object } from '../java/lang/Object.d.ts'
@@ -23,6 +24,7 @@ export class RealBufferedSink extends Object implements BufferedSink {
     outputStream(): OutputStream;
     timeout(): Timeout;
     toString(): string;
+    utf8Appendable(): Appendable;
     write(source: ByteBuffer): number;
     write(source: number[]): BufferedSink;
     write(source: number[], offset: number, byteCount: number): BufferedSink;

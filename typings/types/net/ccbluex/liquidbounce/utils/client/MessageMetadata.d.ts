@@ -1,6 +1,5 @@
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Command } from '../../../../../net/ccbluex/liquidbounce/features/command/Command.d.ts'
 import type { ClientModule } from '../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
 import type { MessageMetadata$Companion } from '../../../../../net/ccbluex/liquidbounce/utils/client/MessageMetadata$Companion.d.ts'
 /**
@@ -13,11 +12,10 @@ import type { MessageMetadata$Companion } from '../../../../../net/ccbluex/liqui
  * from a command named `SomeCommand` with should have the
  * id `SomeCommand#notIngame`.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientChat.kt#L185 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientChat.kt:185}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientChat.kt#L184 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientChat.kt:184}
  */
 export class MessageMetadata extends Record {
     static Companion: MessageMetadata$Companion;
-    static byCommand(command: Command): MessageMetadata;
     static byModule(module: ClientModule): MessageMetadata;
     constructor(prefix: boolean, id: string | null, remove: boolean, count: number)
     // private count: number;

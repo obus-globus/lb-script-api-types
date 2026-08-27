@@ -53,5 +53,7 @@ export class ClassicBlocks extends Object {
     static WHITE_WOOL: number;
     static WOOD: number;
     static YELLOW_WOOL: number;
-    constructor()
+    static getMapping(): JavaMap<any, any>;
+    static getReverseMapping(): JavaMap<any, any>;
+    private constructor()
 }

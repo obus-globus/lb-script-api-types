@@ -43,6 +43,7 @@ export class AbstractViaConfig extends Config implements ViaVersionConfig {
     // private logTextComponentConversionErrors: boolean;
     // private map1_16WorldNames: WorldIdentifiers;
     // private maxErrorLength: number;
+    readonly multiReddustColorFix: boolean;
     readonly noDelayShieldBlocking: boolean;
     readonly packetSizeTrackerConfig: RateLimitConfig;
     readonly packetTrackerConfig: RateLimitConfig;
@@ -112,6 +113,7 @@ export class AbstractViaConfig extends Config implements ViaVersionConfig {
     isInfestedBlocksFix(): boolean;
     isItemCache(): boolean;
     isLeftHandedHandling(): boolean;
+    isMultiReddustColorFix(): boolean;
     isNMSPlayerTicking(): boolean;
     isNewEffectIndicator(): boolean;
     isNoDelayShieldBlocking(): boolean;

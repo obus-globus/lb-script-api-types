@@ -4,6 +4,7 @@ import type { ByteBuf } from '../../../../../../io/netty/buffer/ByteBuf.d.ts'
 export class StringType extends Type<string> {
     constructor()
     constructor(arg0: number)
+    // private maxByteLength: number;
     // private maxLength: number;
     read(arg0: ByteBuf): string;
     write(arg0: Ops, arg1: string): void;

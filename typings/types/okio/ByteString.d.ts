@@ -14,6 +14,7 @@ export class ByteString extends Object implements Serializable, Comparable<ByteS
     static EMPTY: ByteString;
     static decodeBase64(self: string): ByteString | null;
     static decodeHex(self: string): ByteString;
+    static decodeHex(self: string, ignoreWhitespace: boolean): ByteString;
     static encodeString(self: string, charset: Charset): ByteString;
     static encodeUtf8(self: string): ByteString;
     static of(...data: number[]): ByteString;
@@ -29,14 +30,15 @@ export class ByteString extends Object implements Serializable, Comparable<ByteS
     // private utf8: string | null;
     /*not mapped: */ getUtf8$okio(): string | null;
     asByteBuffer(): ByteBuffer;
-    base64(): string;
-    base64Url(): string;
+    base64(includePadding?: boolean): string;
+    base64Url(includePadding?: boolean): string;
     compareTo(other: ByteString): number;
     copyInto(offset: number, target: number[], targetOffset: number, byteCount: number): void;
     digest(algorithm: string): ByteString;
     endsWith(suffix: number[]): boolean;
     endsWith(suffix: ByteString): boolean;
     equals(other: Object | null): boolean;
+    equals(other: ByteString, constantTime: boolean): boolean;
     get(index: number): number;
     getByte(index: number): number;
     getSize(): number;

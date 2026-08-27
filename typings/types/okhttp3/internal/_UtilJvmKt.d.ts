@@ -6,6 +6,7 @@ import type { Charset } from '../../java/nio/charset/Charset.d.ts'
 import type { TimeZone } from '../../java/util/TimeZone.d.ts'
 import type { ThreadFactory } from '../../java/util/concurrent/ThreadFactory.d.ts'
 import type { TimeUnit } from '../../java/util/concurrent/TimeUnit.d.ts'
+import type { AtomicReference } from '../../java/util/concurrent/atomic/AtomicReference.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Pair } from '../../kotlin/Pair.d.ts'
 import type { Duration } from '../../kotlin/time/Duration.d.ts'
@@ -37,6 +38,7 @@ export class _UtilJvmKt extends Object {
     static readFieldOrNull<T extends unknown>(instance: Object, fieldType: Class<T>, fieldName: string): T | null;
     static skipAll(self: Source, duration: number, timeUnit: TimeUnit): boolean;
     static skipAll(self: BufferedSource): void;
+    static testAndSet<T extends unknown>(self: AtomicReference<T>, newValue: T, condition: (param0: T) => boolean): T;
     static threadFactory(name: string, daemon: boolean): ThreadFactory;
     static threadName(name: string, block: () => void): void;
     static toHeaderList(self: Pair<string, string>[]): Header[];

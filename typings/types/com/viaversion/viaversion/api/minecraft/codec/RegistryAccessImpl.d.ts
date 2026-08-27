@@ -22,7 +22,7 @@ export class RegistryAccessImpl extends Object implements CodecContext$RegistryA
     item(arg0: number): Key;
     // private key(arg0: FullMappings, arg1: number): Key;
     key(arg0: MappingData$MappingType, arg1: number): Key;
-    // private key(arg0: string, arg1: number): Key;
+    // private keyOrUnknown(arg0: Key, arg1: number): Key;
     registryKey(arg0: string, arg1: number): Key;
     sound(arg0: number): Key;
     withMapped(arg0: boolean): CodecContext$RegistryAccess;

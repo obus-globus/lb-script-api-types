@@ -3,7 +3,8 @@ import type { StorableObject } from '../../../../../../../com/viaversion/viavers
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class WindowTracker extends Object implements StorableObject {
     constructor()
-    types: JavaMap<number, number>;
+    readonly types: JavaMap<number, number>;
     get(arg0: number): number;
+    getTypes(): JavaMap<number, number>;
     onRemove(): void;
 }

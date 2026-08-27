@@ -5,6 +5,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Protocol } from '../../../okhttp3/Protocol.d.ts'
 import type { Jdk8WithJettyBootPlatform$Companion } from '../../../okhttp3/internal/platform/Jdk8WithJettyBootPlatform$Companion.d.ts'
 import type { Platform } from '../../../okhttp3/internal/platform/Platform.d.ts'
+import type { ByteString } from '../../../okio/ByteString.d.ts'
 export class Jdk8WithJettyBootPlatform extends Platform {
     static Companion: Jdk8WithJettyBootPlatform$Companion;
     static INFO: number;
@@ -17,6 +18,6 @@ export class Jdk8WithJettyBootPlatform extends Platform {
     // private removeMethod: Method;
     // private serverProviderClass: Class<Object>;
     afterHandshake(sslSocket: SSLSocket): void;
-    configureTlsExtensions(sslSocket: SSLSocket, hostname: string | null, protocols: Protocol[]): void;
+    configureTlsExtensions(sslSocket: SSLSocket, hostname: string | null, protocols: Protocol[], echConfigList: ByteString | null): void;
     getSelectedProtocol(sslSocket: SSLSocket): string | null;
 }

@@ -5,10 +5,10 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class EntityTracker extends Object implements StorableObject {
     constructor()
     // private entityMap: JavaMap<number, EntityTypes1_8$EntityType>;
-    readonly playerID: number;
-    getPlayerID(): number;
+    readonly playerId: number;
+    getPlayerId(): number;
     getTrackedEntities(): JavaMap<number, EntityTypes1_8$EntityType>;
     onRemove(): void;
     removeEntity(arg0: number): void;
-    setPlayerID(arg0: number): void;
+    setPlayerId(arg0: number): void;
 }

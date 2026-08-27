@@ -15,6 +15,6 @@ export class PreNettyTypes extends Object {
     static readString(paramarg0: ByteBuf): void;
     static readString64(paramarg0: ByteBuf): void;
     static readTag(paramarg0: ByteBuf): void;
-    static readUTF(paramarg0: ByteBuf): void;
-    constructor()
+    static readUtf(paramarg0: ByteBuf): void;
+    private constructor()
 }

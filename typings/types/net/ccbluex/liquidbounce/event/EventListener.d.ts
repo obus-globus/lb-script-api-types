@@ -13,26 +13,26 @@ export interface EventListener extends Object, DebuggedOwner{
      *
      * This can be ignored by handlers when {@link ignoreNotRunning} is set to true on the {@link EventHook}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt:50}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt:50}
      */
     readonly running: boolean;
     /**
      * Children {@link EventListener}
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt:61}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt:61}
      */
     children(): EventListener[];
     /**
      * Parent {@link EventListener}
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt:56}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt:56}
      */
     parent(): EventListener | null;
     /**
      * Unregisters the event handler from the manager. This decision is FINAL!
      * After the class was unregistered we cannot restore the handlers.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt#L67 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt:67}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt#L67 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt:67}
      */
     unregister(): void;
 }

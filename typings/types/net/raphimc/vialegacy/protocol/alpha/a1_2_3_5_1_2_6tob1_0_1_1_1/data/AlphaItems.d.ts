@@ -6,5 +6,5 @@ export class AlphaItems extends Object {
     static doPlace(paramarg0: Item, paramarg1: number, paramarg2: IdAndData): void;
     static getMaxStackSize(paramarg0: number): number;
     static isValid(paramarg0: number): boolean;
-    constructor()
+    private constructor()
 }

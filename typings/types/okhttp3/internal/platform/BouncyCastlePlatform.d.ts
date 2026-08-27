@@ -6,6 +6,7 @@ import type { X509TrustManager } from '../../../javax/net/ssl/X509TrustManager.d
 import type { Protocol } from '../../../okhttp3/Protocol.d.ts'
 import type { BouncyCastlePlatform$Companion } from '../../../okhttp3/internal/platform/BouncyCastlePlatform$Companion.d.ts'
 import type { Platform } from '../../../okhttp3/internal/platform/Platform.d.ts'
+import type { ByteString } from '../../../okio/ByteString.d.ts'
 export class BouncyCastlePlatform extends Platform {
     static Companion: BouncyCastlePlatform$Companion;
     static INFO: number;
@@ -13,7 +14,7 @@ export class BouncyCastlePlatform extends Platform {
     static get(): Platform;
     private constructor()
     // private provider: JavaMap<any, any>;
-    configureTlsExtensions(sslSocket: SSLSocket, hostname: string | null, protocols: Protocol[]): void;
+    configureTlsExtensions(sslSocket: SSLSocket, hostname: string | null, protocols: Protocol[], echConfigList: ByteString | null): void;
     getSelectedProtocol(sslSocket: SSLSocket): string | null;
     newSSLContext(): SSLContext;
     platformTrustManager(): X509TrustManager;

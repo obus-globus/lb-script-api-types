@@ -21,7 +21,7 @@ export class ExternalSystemBrowser extends Object implements MinecraftShortcuts,
     /**
      * Always false - the page is handed to the system browser, whose profile we have no say over.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/external/ExternalSystemBrowser.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/external/ExternalSystemBrowser.kt:43}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/external/ExternalSystemBrowser.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/external/ExternalSystemBrowser.kt:43}
      */
     /*not mapped: */ isIncognito(): boolean;
     // private isInitialized: boolean;

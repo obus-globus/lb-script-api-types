@@ -11,18 +11,18 @@ import type { SoundType } from '../../../../../../../net/raphimc/vialegacy/proto
 import type { AbstractTrackedEntity } from '../../../../../../../net/raphimc/vialegacy/protocol/release/r1_2_4_5tor1_3_1_2/model/AbstractTrackedEntity.d.ts'
 import type { ConfiguredSound } from '../../../../../../../net/raphimc/vialegacy/protocol/release/r1_2_4_5tor1_3_1_2/model/ConfiguredSound.d.ts'
 export class EntityTracker extends StoredObject {
-    static constrainToRange(paramarg0: number, paramarg1: number, paramarg2: number): number;
     constructor(arg0: UserConnection)
-    RND: Random;
     // private entityMap: JavaMap<number, AbstractTrackedEntity>;
-    readonly playerID: number;
+    readonly playerId: number;
+    readonly rnd: Random;
     getNearestEntity(arg0: Location, arg1: number, arg2: (param0: AbstractTrackedEntity) => boolean): Optional<AbstractTrackedEntity>;
-    getPlayerID(): number;
+    getPlayerId(): number;
+    getRnd(): Random;
     getTrackedEntities(): JavaMap<number, AbstractTrackedEntity>;
     playSound(arg0: number, arg1: SoundType): void;
     // private playSoundAt(arg0: Location, arg1: Location, arg2: ConfiguredSound): void;
     playSoundAt(arg0: Location, arg1: Sound, arg2: number, arg3: number): void;
-    setPlayerID(arg0: number): void;
+    setPlayerId(arg0: number): void;
     tick(): void;
     updateEntityDataList(arg0: number, arg1: EntityData[]): void;
     updateEntityLocation(arg0: number, arg1: number, arg2: number, arg3: number, arg4: boolean): void;

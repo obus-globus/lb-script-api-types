@@ -5,6 +5,7 @@ import type { JsonNBTComponentRewriter } from '../../../../../com/viaversion/via
 import type { BlockItemPacketRewriter1_21_2 } from '../../../../../com/viaversion/viabackwards/protocol/v1_21_2to1_21/rewriter/BlockItemPacketRewriter1_21_2.d.ts'
 import type { EntityPacketRewriter1_21_2 } from '../../../../../com/viaversion/viabackwards/protocol/v1_21_2to1_21/rewriter/EntityPacketRewriter1_21_2.d.ts'
 import type { ParticleRewriter1_21_2 } from '../../../../../com/viaversion/viabackwards/protocol/v1_21_2to1_21/rewriter/ParticleRewriter1_21_2.d.ts'
+import type { BackwardsStorables1_21_2 } from '../../../../../com/viaversion/viabackwards/protocol/v1_21_2to1_21/storage/BackwardsStorables1_21_2.d.ts'
 import type { UserConnection } from '../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { PacketWrapper } from '../../../../../com/viaversion/viaversion/api/protocol/packet/PacketWrapper.d.ts'
 import type { PacketTypesProvider } from '../../../../../com/viaversion/viaversion/api/protocol/packet/provider/PacketTypesProvider.d.ts'
@@ -27,6 +28,7 @@ export class Protocol1_21_2To1_21 extends BackwardsProtocol<ClientboundPacket1_2
     // private translatableRewriter: JsonNBTComponentRewriter<ClientboundPacket1_21_2>;
     // private clientInformation(arg0: PacketWrapper): void;
     createPacketTypesProvider(): PacketTypesProvider<ClientboundPacket1_21_2, ClientboundPacket1_21, ServerboundPacket1_21_2, ServerboundPacket1_20_5>;
+    createStorables(): BackwardsStorables1_21_2;
     getBlockRewriter(): BlockRewriter<ClientboundPacket1_21_2>;
     getComponentRewriter(): JsonNBTComponentRewriter<ClientboundPacket1_21_2>;
     getEntityRewriter(): EntityPacketRewriter1_21_2;

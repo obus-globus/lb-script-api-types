@@ -5,8 +5,9 @@ export class TabListEntry extends Object {
     constructor(arg0: GameProfile)
     constructor(arg0: string, arg1: UUID)
     constructor(arg0: string, arg1: number)
-    gameMode: number;
-    gameProfile: GameProfile;
-    ping: number;
-    resolved: boolean;
+    readonly gameProfile: GameProfile;
+    readonly ping: number;
+    getGameProfile(): GameProfile;
+    getPing(): number;
+    setPing(arg0: number): void;
 }

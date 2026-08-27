@@ -1,5 +1,6 @@
 import type { JavaMap } from '../../../../../../JavaMap.d.ts'
 import type { UserConnection } from '../../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
+import type { TrackedEntity } from '../../../../../../com/viaversion/viaversion/api/data/entity/TrackedEntity.d.ts'
 import type { BlockPosition } from '../../../../../../com/viaversion/viaversion/api/minecraft/BlockPosition.d.ts'
 import type { GameMode } from '../../../../../../com/viaversion/viaversion/api/minecraft/GameMode.d.ts'
 import type { EntityData } from '../../../../../../com/viaversion/viaversion/api/minecraft/entitydata/EntityData.d.ts'
@@ -45,7 +46,7 @@ export class EntityTracker1_9 extends EntityTrackerBase {
     isAutoTeam(): boolean;
     isBlocking(): boolean;
     isTeamExists(): boolean;
-    removeEntity(arg0: number): void;
+    removeEntity(arg0: number): TrackedEntity;
     sendTeamPacket(arg0: boolean, arg1: boolean): void;
     setAutoTeam(arg0: boolean): void;
     setBlocking(arg0: boolean): void;

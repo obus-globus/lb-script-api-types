@@ -3,5 +3,5 @@ import type { Type } from '../../../../../../../com/viaversion/viaversion/api/ty
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class Typesb1_8_0_1 extends Object {
     static CREATIVE_ITEM: Type<Item>;
-    constructor()
+    private constructor()
 }

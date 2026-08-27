@@ -20,6 +20,7 @@ export class TextComponentCodec extends Object {
     static V1_21_6: TextComponentCodec;
     static V1_21_9: TextComponentCodec;
     static V26_1: TextComponentCodec;
+    static V26_2: TextComponentCodec;
     constructor(arg0: () => SNbt<Map$Entry<string, Tag>[]>, arg1: () => Codec<TextComponent>, arg2: () => Codec<Style>, arg3: DataConverter<JsonElement>, arg4: DataConverter<Tag>)
     readonly jsonConverter: DataConverter<JsonElement>;
     readonly nbtConverter: DataConverter<Tag>;

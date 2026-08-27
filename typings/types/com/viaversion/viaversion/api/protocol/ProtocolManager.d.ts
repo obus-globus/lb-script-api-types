@@ -42,6 +42,7 @@ export interface ProtocolManager extends Object {
     registerBaseProtocol(arg0: Direction, arg1: Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>, arg2: Range<ProtocolVersion>): void;
     registerProtocol(arg0: Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>, arg1: ProtocolVersion, arg2: ProtocolVersion): void;
     registerProtocol(arg0: Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>, arg1: ProtocolVersion[], arg2: ProtocolVersion): void;
+    registeredProtocolCount(): number;
     setMaxPathDeltaIncrease(arg0: number): void;
     setMaxProtocolPathSize(arg0: number): void;
 }

@@ -5,7 +5,7 @@ import type { BlockEntityProvider$BlockEntityHandler } from '../../../../../../.
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../../java/util/Map$Entry.d.ts'
 export class CommandBlockHandler extends Object implements BlockEntityProvider$BlockEntityHandler {
-    constructor()
+    constructor(arg0: Protocol1_12_2To1_13)
     // private protocol: Protocol1_12_2To1_13;
     transform(arg0: UserConnection, arg1: Map$Entry<string, Tag>[]): number;
 }

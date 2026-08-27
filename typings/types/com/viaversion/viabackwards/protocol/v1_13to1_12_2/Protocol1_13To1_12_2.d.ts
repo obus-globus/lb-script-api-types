@@ -3,6 +3,7 @@ import type { JsonNBTComponentRewriter } from '../../../../../com/viaversion/via
 import type { BackwardsMappingData1_13 } from '../../../../../com/viaversion/viabackwards/protocol/v1_13to1_12_2/data/BackwardsMappingData1_13.d.ts'
 import type { BlockItemPacketRewriter1_13 } from '../../../../../com/viaversion/viabackwards/protocol/v1_13to1_12_2/rewriter/BlockItemPacketRewriter1_13.d.ts'
 import type { EntityPacketRewriter1_13 } from '../../../../../com/viaversion/viabackwards/protocol/v1_13to1_12_2/rewriter/EntityPacketRewriter1_13.d.ts'
+import type { ProtocolStorables1_13 } from '../../../../../com/viaversion/viabackwards/protocol/v1_13to1_12_2/storage/ProtocolStorables1_13.d.ts'
 import type { UserConnection } from '../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { JsonElement } from '../../../../../com/viaversion/viaversion/libs/gson/JsonElement.d.ts'
 import type { ClientboundPackets1_13 } from '../../../../../com/viaversion/viaversion/protocols/v1_12_2to1_13/packet/ClientboundPackets1_13.d.ts'
@@ -18,6 +19,7 @@ export class Protocol1_13To1_12_2 extends BackwardsProtocol<ClientboundPackets1_
     readonly entityRewriter: EntityPacketRewriter1_13;
     // private translatableRewriter: JsonNBTComponentRewriter<ClientboundPackets1_13>;
     // private translatableToLegacyRewriter: JsonNBTComponentRewriter<ClientboundPackets1_13>;
+    createStorables(): ProtocolStorables1_13;
     getEntityRewriter(): EntityPacketRewriter1_13;
     getItemRewriter(): BlockItemPacketRewriter1_13;
     getLogger(): ProtocolLogger;

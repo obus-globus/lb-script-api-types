@@ -1,15 +1,16 @@
+import type { CommandDispatcher } from '../../../../../../../com/mojang/brigadier/CommandDispatcher.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Command } from '../../../../../../../net/ccbluex/liquidbounce/features/command/Command.d.ts'
-import type { Command$Factory } from '../../../../../../../net/ccbluex/liquidbounce/features/command/Command$Factory.d.ts'
+import type { CommandRegistrar } from '../../../../../../../net/ccbluex/liquidbounce/features/command/CommandRegistrar.d.ts'
+import type { ClientCommandSource } from '../../../../../../../net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.d.ts'
 /**
  * Coordinates Command
  *
  * Copies your coordinates to your clipboard.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandCoordinates.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandCoordinates.kt:39}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandCoordinates.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandCoordinates.kt:43}
  */
-export class CommandCoordinates extends Object implements Command$Factory {
+export class CommandCoordinates extends Object implements CommandRegistrar {
     static INSTANCE: CommandCoordinates;
-    createCommand(): Command;
     // private getCoordinates(fancy: boolean): string;
+    register(dispatcher: CommandDispatcher<ClientCommandSource>): void;
 }

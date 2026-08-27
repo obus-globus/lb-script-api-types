@@ -1,9 +1,7 @@
-import type { StorableObject } from '../../../../../../com/viaversion/viaversion/api/connection/StorableObject.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class BundleStateTracker extends Object implements StorableObject {
+export class BundleStateTracker extends Object {
     constructor()
     readonly bundling: boolean;
     isBundling(): boolean;
-    onRemove(): void;
     toggleBundling(): void;
 }

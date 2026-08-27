@@ -13,7 +13,6 @@ export class EntityPositionHandler extends Object {
     // private entityRewriter: EntityRewriterBase<any, any>;
     // private storageClass: Class<EntityPositionStorage>;
     // private storageSupplier: () => EntityPositionStorage;
-    // private warnedForMissingEntity: boolean;
     cacheEntityPosition(arg0: PacketWrapper, arg1: boolean, arg2: boolean): void;
     cacheEntityPosition(arg0: PacketWrapper, arg1: number, arg2: number, arg3: number, arg4: boolean, arg5: boolean): void;
     cacheEntityPosition(arg0: PacketWrapper, arg1: number, arg2: number, arg3: number, arg4: number, arg5: boolean, arg6: boolean): void;

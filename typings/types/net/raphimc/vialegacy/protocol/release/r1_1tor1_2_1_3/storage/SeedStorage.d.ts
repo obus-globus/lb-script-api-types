@@ -3,7 +3,11 @@ import type { StorableObject } from '../../../../../../../com/viaversion/viavers
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class SeedStorage extends Object implements StorableObject {
     constructor()
-    biomeSource: BiomeSource;
-    seed: number;
+    readonly biomeSource: BiomeSource;
+    readonly seed: number;
+    getBiomeSource(): BiomeSource;
+    getSeed(): number;
     onRemove(): void;
+    setBiomeSource(arg0: BiomeSource): void;
+    setSeed(arg0: number): void;
 }

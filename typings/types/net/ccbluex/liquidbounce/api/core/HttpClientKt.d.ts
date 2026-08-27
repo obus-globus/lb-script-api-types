@@ -16,13 +16,13 @@ export class HttpClientKt extends Object {
      * If {@link T} is one of following types, it should be closed after using:
      * {@link InputStream} / {@link BufferedSource} / {@link Reader}
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt#L254 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt:254}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt#L254 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt:254}
      */
     static parse<T extends unknown>(self: Response): T;
     /**
      * Save response body to file.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt#L287 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt:287}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt#L287 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt:287}
      */
     static toFile(self: Response, file: File): number;
     /**
@@ -30,7 +30,7 @@ export class HttpClientKt extends Object {
      *
      * When there are no more lines to read, the source is closed automatically.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt#L271 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt:271}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt#L271 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt:271}
      */
     static utf8Lines(self: BufferedSource): Iterator<string>;
     static withScope(block: (param0: CoroutineScope) => void): Job;

@@ -256,7 +256,7 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     callJumpOutOfFluid(arg0: number): void;
     canAttack(target: LivingEntity): boolean;
     canBeAffected(newEffect: MobEffectInstance): boolean;
-    // private canBeAffected$mixinextras$wrapped$509(arg0: MobEffectInstance): boolean;
+    // private canBeAffected$mixinextras$wrapped$512(arg0: MobEffectInstance): boolean;
     canBeSeenAsEnemy(): boolean;
     canBeSeenByAnyone(): boolean;
     canBreatheUnderwater(): boolean;
@@ -521,7 +521,7 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     remove(reason: Entity$RemovalReason): void;
     removeAllEffects(): boolean;
     removeEffect(effect: Holder<MobEffect>): boolean;
-    // private removeEffect$mixinextras$wrapped$511(arg0: Holder<Object>): boolean;
+    // private removeEffect$mixinextras$wrapped$514(arg0: Holder<Object>): boolean;
     removeEffectNoUpdate(effect: Holder<MobEffect>): MobEffectInstance;
     removeEffectParticles(): void;
     removeFrost(): void;

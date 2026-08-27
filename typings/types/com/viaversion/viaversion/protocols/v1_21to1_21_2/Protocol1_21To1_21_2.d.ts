@@ -12,6 +12,7 @@ import type { BlockItemPacketRewriter1_21_2 } from '../../../../../com/viaversio
 import type { ComponentRewriter1_21_2 } from '../../../../../com/viaversion/viaversion/protocols/v1_21to1_21_2/rewriter/ComponentRewriter1_21_2.d.ts'
 import type { EntityPacketRewriter1_21_2 } from '../../../../../com/viaversion/viaversion/protocols/v1_21to1_21_2/rewriter/EntityPacketRewriter1_21_2.d.ts'
 import type { ParticleRewriter1_21_2 } from '../../../../../com/viaversion/viaversion/protocols/v1_21to1_21_2/rewriter/ParticleRewriter1_21_2.d.ts'
+import type { ProtocolStorables1_21_2 } from '../../../../../com/viaversion/viaversion/protocols/v1_21to1_21_2/storage/ProtocolStorables1_21_2.d.ts'
 import type { BlockRewriter } from '../../../../../com/viaversion/viaversion/rewriter/BlockRewriter.d.ts'
 import type { RegistryDataRewriter } from '../../../../../com/viaversion/viaversion/rewriter/RegistryDataRewriter.d.ts'
 import type { SoundRewriter } from '../../../../../com/viaversion/viaversion/rewriter/SoundRewriter.d.ts'
@@ -29,6 +30,7 @@ export class Protocol1_21To1_21_2 extends AbstractProtocol<ClientboundPacket1_21
     readonly tagRewriter: TagRewriter<ClientboundPacket1_21>;
     // private clientInformation(arg0: PacketWrapper): void;
     createPacketTypesProvider(): PacketTypesProvider<ClientboundPacket1_21, ClientboundPacket1_21_2, ServerboundPacket1_20_5, ServerboundPacket1_21_2>;
+    createStorables(): ProtocolStorables1_21_2;
     getBlockRewriter(): BlockRewriter<ClientboundPacket1_21>;
     getComponentRewriter(): ComponentRewriter1_21_2;
     getEntityRewriter(): EntityPacketRewriter1_21_2;

@@ -48,6 +48,7 @@ export interface ViaVersionConfig extends Config, Object{
     isInfestedBlocksFix(): boolean;
     isItemCache(): boolean;
     isLeftHandedHandling(): boolean;
+    isMultiReddustColorFix(): boolean;
     isNMSPlayerTicking(): boolean;
     isNewEffectIndicator(): boolean;
     isNoDelayShieldBlocking(): boolean;

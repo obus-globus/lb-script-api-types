@@ -3,7 +3,6 @@ import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { NotificationEvent } from '../../../../../net/ccbluex/liquidbounce/event/events/NotificationEvent.d.ts'
 import type { NotificationEvent$Severity } from '../../../../../net/ccbluex/liquidbounce/event/events/NotificationEvent$Severity.d.ts'
-import type { Command } from '../../../../../net/ccbluex/liquidbounce/features/command/Command.d.ts'
 import type { ClientModule } from '../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
 import type { Color4b } from '../../../../../net/ccbluex/liquidbounce/render/engine/type/Color4b.d.ts'
 import type { MessageMetadata } from '../../../../../net/ccbluex/liquidbounce/utils/client/MessageMetadata.d.ts'
@@ -18,9 +17,7 @@ export class ClientChat extends Object {
     static bold(self: MutableComponent, value: boolean | null): MutableComponent;
     static bypassNameProtection(self: MutableComponent): MutableComponent;
     static chat(text: string): void;
-    static chat(text: string, command: Command): void;
     static chat(text: string, module: ClientModule): void;
-    static chat(text: Component, command: Command): void;
     static chat(text: Component, module: ClientModule): void;
     static chat(text: Component, metadata: MessageMetadata): void;
     static chat(texts: Component[], metadata: MessageMetadata): void;

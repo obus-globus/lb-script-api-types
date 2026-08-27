@@ -2,6 +2,7 @@ import type { Tag } from '../../../../com/viaversion/nbt/tag/Tag.d.ts'
 import type { UserConnection } from '../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { Mappings } from '../../../../com/viaversion/viaversion/api/data/Mappings.d.ts'
 import type { EntityTracker } from '../../../../com/viaversion/viaversion/api/data/entity/EntityTracker.d.ts'
+import type { TrackedEntity } from '../../../../com/viaversion/viaversion/api/data/entity/TrackedEntity.d.ts'
 import type { EntityType } from '../../../../com/viaversion/viaversion/api/minecraft/entities/EntityType.d.ts'
 import type { EntityData } from '../../../../com/viaversion/viaversion/api/minecraft/entitydata/EntityData.d.ts'
 import type { EntityDataType } from '../../../../com/viaversion/viaversion/api/minecraft/entitydata/EntityDataType.d.ts'
@@ -21,6 +22,7 @@ export abstract class EntityRewriter<C extends ClientboundPacketType, T extends 
     constructor(arg0: T)
     constructor(arg0: T, arg1: boolean)
     // private entityDataFilters: EntityDataFilter[];
+    // private fallingBlockType: EntityType;
     // private trackMappedType: boolean;
     // private typeMappings: Mappings;
     biomeSizeTracker(): (param0: PacketWrapper) => void;
@@ -29,7 +31,9 @@ export abstract class EntityRewriter<C extends ClientboundPacketType, T extends 
     configurationDimensionDataHandler(): (param0: PacketWrapper) => void;
     dataTypeMapper(): EntityDataFilter$DataTypeMapper;
     dimensionDataHandler(): (param0: PacketWrapper) => void;
+    fallingBlockType(): EntityType;
     filter(): EntityDataFilter$Builder;
+    handleAddEntity(arg0: PacketWrapper, arg1: boolean): TrackedEntity;
     handleEntityData(arg0: number, arg1: EntityData[], arg2: UserConnection): void;
     // private logException(arg0: Exception, arg1: EntityType, arg2: EntityData[], arg3: EntityData): void;
     mapEntityType(arg0: EntityType, arg1: EntityType): void;
@@ -56,11 +60,10 @@ export abstract class EntityRewriter<C extends ClientboundPacketType, T extends 
     registerSetEntityData(arg0: C, arg1: Type<EntityData[]>, arg2: Type<EntityData[]>): void;
     registerTracker(arg0: C): void;
     registerTracker(arg0: C, arg1: EntityType): void;
-    registerTracker(arg0: C, arg1: EntityType, arg2: Type<number>): void;
     registerTrackerWithData(arg0: C): void;
     registerTrackerWithData1_19(arg0: C): void;
     registerTrackerWithData1_21_9(arg0: C): void;
-    trackAndRewrite(arg0: PacketWrapper, arg1: number, arg2: number): EntityType;
+    trackAndRewrite(arg0: PacketWrapper, arg1: number, arg2: number): TrackedEntity;
     trackBiomeSize(arg0: UserConnection, arg1: Map$Entry<string, Tag>[]): void;
     trackPlayer(arg0: UserConnection, arg1: number): void;
     trackWorld(arg0: UserConnection, arg1: string): void;

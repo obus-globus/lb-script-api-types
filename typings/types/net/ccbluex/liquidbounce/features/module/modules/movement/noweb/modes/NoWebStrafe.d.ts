@@ -9,7 +9,7 @@ import type { BlockPos } from '../../../../../../../../../net/minecraft/core/Blo
  *
  * @author XeContrast
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noweb/modes/NoWebStrafe.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noweb/modes/NoWebStrafe.kt:36}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noweb/modes/NoWebStrafe.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noweb/modes/NoWebStrafe.kt:36}
  */
 export class NoWebStrafe extends NoWebMode {
     static Companion: Tagged$Companion;

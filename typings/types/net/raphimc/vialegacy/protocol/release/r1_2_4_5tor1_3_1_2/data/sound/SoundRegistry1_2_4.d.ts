@@ -5,5 +5,5 @@ import type { ConfiguredSound } from '../../../../../../../../net/raphimc/vialeg
 export class SoundRegistry1_2_4 extends Object {
     static getEntitySound(paramarg0: EntityTypes1_8$EntityType, paramarg1: SoundType): ConfiguredSound;
     static getSoundDelayTime(paramarg0: EntityTypes1_8$EntityType): number;
-    constructor()
+    private constructor()
 }

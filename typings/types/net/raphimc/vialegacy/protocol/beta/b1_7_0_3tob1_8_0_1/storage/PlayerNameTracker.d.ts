@@ -3,6 +3,7 @@ import type { StorableObject } from '../../../../../../../com/viaversion/viavers
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class PlayerNameTracker extends Object implements StorableObject {
     constructor()
-    names: JavaMap<any, any>;
+    readonly names: JavaMap<any, any>;
+    getNames(): JavaMap<any, any>;
     onRemove(): void;
 }

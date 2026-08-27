@@ -5,5 +5,5 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class Types1_1 extends Object {
     static BLOCK_CHANGE_RECORD_ARRAY: Type<BlockChangeRecord[]>;
     static CHUNK: Type<Chunk>;
-    constructor()
+    private constructor()
 }

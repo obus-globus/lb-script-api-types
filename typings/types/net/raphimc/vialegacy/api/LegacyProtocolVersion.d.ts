@@ -39,5 +39,5 @@ export class LegacyProtocolVersion extends Object {
     static r1_6_1: ProtocolVersion;
     static r1_6_2: ProtocolVersion;
     static r1_6_4: ProtocolVersion;
-    constructor()
+    private constructor()
 }

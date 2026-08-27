@@ -1,9 +1,11 @@
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
-import type { Command } from '../../../../../../../../net/ccbluex/liquidbounce/features/command/Command.d.ts'
+import type { Continuation } from '../../../../../../../../kotlin/coroutines/Continuation.d.ts'
 export class CommandClientAccountSubcommand extends Object {
     static INSTANCE: CommandClientAccountSubcommand;
-    accountCommand(): Command;
-    // private infoSubcommand(): Command;
-    // private loginSubcommand(): Command;
-    // private logoutSubcommand(): Command;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private info($completion: Continuation<void>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private login($completion: Continuation<void>): any;
+    /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */
+    // private logout($completion: Continuation<void>): any;
 }

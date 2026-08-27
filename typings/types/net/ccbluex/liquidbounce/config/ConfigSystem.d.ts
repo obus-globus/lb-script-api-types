@@ -13,7 +13,7 @@ import type { Logger } from '../../../../org/apache/logging/log4j/Logger.d.ts'
 /**
  * A hierarchy config system
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt:43}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt:43}
  */
 export class ConfigSystem extends Object {
     static INSTANCE: ConfigSystem;
@@ -30,19 +30,19 @@ export class ConfigSystem extends Object {
     /**
      * Create a ZIP file backup of configs
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt#L142 | src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt:142}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt#L142 | src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt:142}
      */
     backup(fileName: string, groups: Config[]): void;
     /**
      * Deserialize a value from a json object
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt#L298 | src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt:298}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt#L298 | src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt:298}
      */
     deserializeValue(value: Value<Object>, jsonObject: JsonObject): void;
     /**
      * Deserialize a config from a reader, and close it
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt#L251 | src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt:251}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt#L251 | src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt:251}
      */
     deserializeValueGroup(valueGroup: ValueGroup, jsonElement: JsonElement): void;
     deserializeValueGroup(valueGroup: ValueGroup, reader: Reader, gson: Gson): void;
@@ -53,27 +53,27 @@ export class ConfigSystem extends Object {
     /**
      * Loads all registered configs.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt#L169 | src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt:169}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt#L169 | src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt:169}
      */
     loadAll(): void;
     // private normalizeKeyInput(key: string): string;
     /**
      * Restore a backup from a ZIP file to the configs
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt#L155 | src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt:155}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt#L155 | src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt:155}
      */
     restore(fileName: string): void;
     /**
      * Create an config based on an existing tree
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt#L125 | src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt:125}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt#L125 | src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt:125}
      */
     root(name: string, tree: ValueGroup[]): Config;
     root(config: Config): Config;
     /**
      * Serialize a config to a writer and close it
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt#L236 | src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt:236}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt#L236 | src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt:236}
      */
     serializeValueGroup(valueGroup: ValueGroup, gson: Gson): JsonObject;
     // private serializeValueGroup(valueGroup: ValueGroup, writer: Writer, gson: Gson): void;
@@ -82,7 +82,7 @@ export class ConfigSystem extends Object {
      *
      * The config should be known to the config system.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt#L209 | src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt:209}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt#L209 | src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt:209}
      */
     store(config: Config): void;
     /**
@@ -91,7 +91,7 @@ export class ConfigSystem extends Object {
      *
      * These configs are root configs, which always create a new file with their name.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt#L200 | src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt:200}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt#L200 | src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt:200}
      */
     storeAll(): void;
     valueGroupsKeySequence(prefix: string): Sequence<string>;

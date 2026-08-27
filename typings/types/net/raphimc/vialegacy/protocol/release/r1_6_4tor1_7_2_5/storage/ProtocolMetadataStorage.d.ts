@@ -2,7 +2,11 @@ import type { StorableObject } from '../../../../../../../com/viaversion/viavers
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class ProtocolMetadataStorage extends Object implements StorableObject {
     constructor()
-    authenticate: boolean;
-    skipEncryption: boolean;
+    readonly authenticate: boolean;
+    readonly skipEncryption: boolean;
+    isAuthenticate(): boolean;
+    isSkipEncryption(): boolean;
     onRemove(): void;
+    setAuthenticate(arg0: boolean): void;
+    setSkipEncryption(arg0: boolean): void;
 }

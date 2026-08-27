@@ -13,16 +13,19 @@ import type { ServerboundPacketType } from '../../../../com/viaversion/viaversio
 import type { VersionedPacketTransformer } from '../../../../com/viaversion/viaversion/api/protocol/packet/VersionedPacketTransformer.d.ts'
 import type { ProtocolVersion } from '../../../../com/viaversion/viaversion/api/protocol/version/ProtocolVersion.d.ts'
 import type { ServerProtocolVersion } from '../../../../com/viaversion/viaversion/api/protocol/version/ServerProtocolVersion.d.ts'
+import type { ProtocolManagerImpl$PathNode } from '../../../../com/viaversion/viaversion/protocol/ProtocolManagerImpl$PathNode.d.ts'
 import type { Pair } from '../../../../com/viaversion/viaversion/util/Pair.d.ts'
 import type { ByteBuf } from '../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Runnable } from '../../../../java/lang/Runnable.d.ts'
 import type { CompletableFuture } from '../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { ExecutorService } from '../../../../java/util/concurrent/ExecutorService.d.ts'
+import type { AtomicInteger } from '../../../../java/util/concurrent/atomic/AtomicInteger.d.ts'
 import type { ReadWriteLock } from '../../../../java/util/concurrent/locks/ReadWriteLock.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 export class ProtocolManagerImpl extends Object implements ProtocolManager {
+    static PROTOCOL_INDEX: AtomicInteger;
     constructor()
     // private clientboundBaseProtocols: Pair<Range<ProtocolVersion>, Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>[];
     // private mappingLoaderExecutor: ExecutorService;
@@ -39,6 +42,7 @@ export class ProtocolManagerImpl extends Object implements ProtocolManager {
     readonly supportedVersions: ProtocolVersion[];
     addMappingLoaderFuture(arg0: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, arg1: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, arg2: () => void): void;
     addMappingLoaderFuture(arg0: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, arg1: () => void): void;
+    // private calculateProtocolPath(arg0: ProtocolVersion, arg1: ProtocolVersion): ProtocolPathEntry[];
     checkForMappingCompletion(): boolean;
     checkForMappingCompletion(arg0: boolean): boolean;
     completeMappingDataLoading(arg0: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>): void;
@@ -54,7 +58,6 @@ export class ProtocolManagerImpl extends Object implements ProtocolManager {
     getProtocol<T extends Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>(arg0: Class<T>): T;
     getProtocolPath(arg0: number, arg1: number): ProtocolPathEntry[];
     getProtocolPath(arg0: ProtocolVersion, arg1: ProtocolVersion): ProtocolPathEntry[];
-    // private getProtocolPath(arg0: JavaMap<ProtocolVersion, Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, arg1: ProtocolVersion, arg2: ProtocolVersion): JavaMap<ProtocolVersion, Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>;
     getProtocols(): Protocol<any, any, any, any>[];
     getServerProtocolVersion(): ServerProtocolVersion;
     getSupportedVersions(): ProtocolVersion[];
@@ -62,11 +65,13 @@ export class ProtocolManagerImpl extends Object implements ProtocolManager {
     isBaseProtocol(arg0: Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>): boolean;
     isWorkingPipe(): boolean;
     // private logIfErrored(arg0: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, arg1: Throwable): void;
+    // private reconstructPath(arg0: ProtocolManagerImpl$PathNode): ProtocolPathEntry[];
     refreshVersions(): void;
     registerBaseProtocol(arg0: Direction, arg1: Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>, arg2: Range<ProtocolVersion>): void;
     registerProtocol(arg0: Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>, arg1: ProtocolVersion, arg2: ProtocolVersion): void;
     registerProtocol(arg0: Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>, arg1: ProtocolVersion[], arg2: ProtocolVersion): void;
     registerProtocols(): void;
+    registeredProtocolCount(): number;
     setMaxPathDeltaIncrease(arg0: number): void;
     setMaxProtocolPathSize(arg0: number): void;
     setServerProtocol(arg0: ServerProtocolVersion): void;

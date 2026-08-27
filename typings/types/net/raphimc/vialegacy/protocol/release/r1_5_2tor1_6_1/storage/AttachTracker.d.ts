@@ -2,7 +2,11 @@ import type { StorableObject } from '../../../../../../../com/viaversion/viavers
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class AttachTracker extends Object implements StorableObject {
     constructor()
-    lastSneakState: boolean;
-    vehicleEntityId: number;
+    readonly lastSneakState: boolean;
+    readonly vehicleEntityId: number;
+    getVehicleEntityId(): number;
+    isLastSneakState(): boolean;
     onRemove(): void;
+    setLastSneakState(arg0: boolean): void;
+    setVehicleEntityId(arg0: number): void;
 }

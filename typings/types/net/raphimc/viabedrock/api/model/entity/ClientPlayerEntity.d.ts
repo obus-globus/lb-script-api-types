@@ -25,12 +25,14 @@ export class ClientPlayerEntity extends PlayerEntity {
     // private authInputData: PlayerAuthInputPacket_InputData[];
     // private cancelNextSwingPacket: boolean;
     // private gameSession: GameSessionStorage;
+    readonly gliding: boolean;
     readonly initiallySpawned: boolean;
     // private javaGameMode: GameMode;
     // private pendingTeleportId: number;
     // private prevInputFlags: InputFlag[];
     // private prevOnGround: boolean;
     // private prevPosition: Position3f;
+    readonly requestedDismount: boolean;
     // private serverSideTeleportConfirmed: boolean;
     readonly sneaking: boolean;
     readonly sprinting: boolean;
@@ -49,6 +51,7 @@ export class ClientPlayerEntity extends PlayerEntity {
     gameType(): GameType;
     horizontalCollision(): boolean;
     inputFlags(): InputFlag[];
+    isGliding(): boolean;
     isInitiallySpawned(): boolean;
     isSneaking(): boolean;
     isSprinting(): boolean;
@@ -68,11 +71,13 @@ export class ClientPlayerEntity extends PlayerEntity {
     setBlockBreakingInfo(arg0: ClientPlayerEntity$BlockBreakingInfo): void;
     setDimensionChangeInfo(arg0: ClientPlayerEntity$DimensionChangeInfo): void;
     setGameType(arg0: GameType): void;
+    setGliding(arg0: boolean): void;
     setHorizontalCollision(arg0: boolean): void;
     setInitiallySpawned(): void;
     setInputFlags(arg0: InputFlag[]): void;
     setOnGround(arg0: boolean): void;
     setPosition(arg0: Position3f): void;
+    setRequestedDismount(arg0: boolean): void;
     setSneaking(arg0: boolean): void;
     setSprinting(arg0: boolean): void;
     tick(): void;

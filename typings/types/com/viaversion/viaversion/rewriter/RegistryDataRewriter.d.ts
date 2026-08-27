@@ -14,6 +14,7 @@ import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class RegistryDataRewriter extends Object implements RegistryDataRewriter_2 {
     constructor(arg0: Protocol<any, any, any, any>)
     // private enchantmentEffectHandlers: JavaMap<string, (param0: Map$Entry<string, Tag>[]) => void>;
+    // private enchantmentEffectsToRemove: string[];
     // private protocol: Protocol<any, any, any, any>;
     // private registryEntryHandlers: JavaMap<string, (param0: string, param1: Map$Entry<string, Tag>[]) => void>;
     // private toAdd: JavaMap<string, RegistryEntry[]>;
@@ -27,6 +28,7 @@ export class RegistryDataRewriter extends Object implements RegistryDataRewriter
     handleParticleData(arg0: Map$Entry<string, Tag>[]): void;
     hasRegistriesToRemove(): boolean;
     remove(arg0: string): void;
+    removeEnchantmentEffects(...arg0: string[]): void;
     // private runEffectRewriters(arg0: Map$Entry<string, Tag>[]): void;
     sendMissingRegistries(arg0: UserConnection): void;
     // private setMappedOrDummyId(arg0: FullMappings, arg1: StringTag): void;
@@ -38,8 +40,10 @@ export class RegistryDataRewriter extends Object implements RegistryDataRewriter
     updateDialogAction(arg0: UserConnection, arg1: Map$Entry<string, Tag>[]): void;
     updateDialogBody(arg0: UserConnection, arg1: Map$Entry<string, Tag>[]): void;
     updateDialogs(arg0: UserConnection, arg1: RegistryEntry[]): void;
+    updateDimensionTypes(arg0: RegistryEntry[]): void;
     updateEnchantmentTerm(arg0: Map$Entry<string, Tag>[]): void;
     updateEnchantments(arg0: UserConnection, arg1: RegistryEntry[]): void;
+    updateEnvironmentAttributes(arg0: Map$Entry<string, Tag>[]): void;
     // private updateItem(arg0: StringTag): void;
     // private updateItemList(arg0: StringTag[]): void;
     updateJukeboxSongs(arg0: RegistryEntry[]): void;

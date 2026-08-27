@@ -4,5 +4,5 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class GameProfileUtil extends Object {
     static getOfflinePlayerUuid(paramarg0: string): UUID;
     static isOfflineGameProfile(paramarg0: GameProfile): boolean;
-    constructor()
+    private constructor()
 }

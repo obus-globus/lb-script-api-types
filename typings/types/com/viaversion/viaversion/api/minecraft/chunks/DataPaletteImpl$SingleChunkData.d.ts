@@ -5,6 +5,7 @@ export class DataPaletteImpl$SingleChunkData extends Object implements DataPalet
     constructor(null_: DataPaletteImpl, arg1: number)
     // private size: number;
     get(arg0: number): number;
+    packInto(arg0: number[], arg1: number): void;
     set(arg0: number, arg1: number): void;
     size(): number;
 }

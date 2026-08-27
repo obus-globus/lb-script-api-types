@@ -9,6 +9,7 @@ import type { AbstractProtocol } from '../../../../../com/viaversion/viaversion/
 import type { PacketWrapper } from '../../../../../com/viaversion/viaversion/api/protocol/packet/PacketWrapper.d.ts'
 import type { PacketTypesProvider } from '../../../../../com/viaversion/viaversion/api/protocol/packet/provider/PacketTypesProvider.d.ts'
 import type { Types1_20_5 } from '../../../../../com/viaversion/viaversion/api/type/types/version/Types1_20_5.d.ts'
+import type { ProtocolStorablesBase } from '../../../../../com/viaversion/viaversion/connection/ProtocolStorablesBase.d.ts'
 import type { MappingData26_1 } from '../../../../../com/viaversion/viaversion/protocols/v1_21_11to26_1/data/MappingData26_1.d.ts'
 import type { ClientboundPacket26_1 } from '../../../../../com/viaversion/viaversion/protocols/v1_21_11to26_1/packet/ClientboundPacket26_1.d.ts'
 import type { ServerboundPacket26_1 } from '../../../../../com/viaversion/viaversion/protocols/v1_21_11to26_1/packet/ServerboundPacket26_1.d.ts'
@@ -40,7 +41,9 @@ export class Protocol1_21_11To26_1 extends AbstractProtocol<ClientboundPacket1_2
     // private addJukeboxPlayables(...arg0: string[]): void;
     // private addRequiredRegistryEntries(): void;
     // private addTrimMaterials(...arg0: string[]): void;
+    // private ambientLightColor(arg0: number): number;
     createPacketTypesProvider(): PacketTypesProvider<ClientboundPacket1_21_11, ClientboundPacket26_1, ServerboundPacket1_21_9, ServerboundPacket26_1>;
+    createStorables(): ProtocolStorablesBase;
     getBlockRewriter(): BlockRewriter<ClientboundPacket1_21_11>;
     getComponentRewriter(): NBTComponentRewriter<ClientboundPacket1_21_11>;
     getEntityRewriter(): EntityPacketRewriter26_1;

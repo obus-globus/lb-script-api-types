@@ -2,5 +2,5 @@ import type { PacketWrapper } from '../../../../../com/viaversion/viaversion/api
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class PacketUtil extends Object {
     static calculateLength(paramarg0: PacketWrapper): number;
-    constructor()
+    private constructor()
 }

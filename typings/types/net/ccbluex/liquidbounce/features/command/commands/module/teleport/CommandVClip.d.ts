@@ -1,8 +1,8 @@
+import type { CommandDispatcher } from '../../../../../../../../com/mojang/brigadier/CommandDispatcher.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
-import type { Command } from '../../../../../../../../net/ccbluex/liquidbounce/features/command/Command.d.ts'
-import type { Command$Factory } from '../../../../../../../../net/ccbluex/liquidbounce/features/command/Command$Factory.d.ts'
+import type { CommandRegistrar } from '../../../../../../../../net/ccbluex/liquidbounce/features/command/CommandRegistrar.d.ts'
+import type { ClientCommandSource } from '../../../../../../../../net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.d.ts'
 import type { BlockPos } from '../../../../../../../../net/minecraft/core/BlockPos.d.ts'
-import type { Direction } from '../../../../../../../../net/minecraft/core/Direction.d.ts'
 import type { AABB } from '../../../../../../../../net/minecraft/world/phys/AABB.d.ts'
 import type { VoxelShape } from '../../../../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 /**
@@ -12,16 +12,14 @@ import type { VoxelShape } from '../../../../../../../../net/minecraft/world/phy
  *
  * Module: {@link ModuleTeleport}
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/module/teleport/CommandVClip.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/module/teleport/CommandVClip.kt:46}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/module/teleport/CommandVClip.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/module/teleport/CommandVClip.kt:51}
  */
-export class CommandVClip extends Object implements Command$Factory {
+export class CommandVClip extends Object implements CommandRegistrar {
     static INSTANCE: CommandVClip;
-    // private buildAutomaticCommand(direction: Direction, name: string): Command;
     // private canTpOn(pos: BlockPos, posCollisionShape: VoxelShape): boolean;
-    createCommand(): Command;
     // private getX(): number;
     // private getY(): number;
     // private getZ(): number;
     // private isNotEnoughSpaceAboveBlock(pos: BlockPos, boundingBox: AABB, posCollisionShape: VoxelShape): boolean;
-    // private performAutomaticClip(args: Object[], command: Command, direction: Direction): void;
+    register(dispatcher: CommandDispatcher<ClientCommandSource>): void;
 }

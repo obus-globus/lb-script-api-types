@@ -1,7 +1,8 @@
+import type { CommandDispatcher } from '../../../../../../../com/mojang/brigadier/CommandDispatcher.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { Command } from '../../../../../../../net/ccbluex/liquidbounce/features/command/Command.d.ts'
-import type { Command$Factory } from '../../../../../../../net/ccbluex/liquidbounce/features/command/Command$Factory.d.ts'
-export class CommandTranslate extends Object implements Command$Factory {
+import type { CommandRegistrar } from '../../../../../../../net/ccbluex/liquidbounce/features/command/CommandRegistrar.d.ts'
+import type { ClientCommandSource } from '../../../../../../../net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.d.ts'
+export class CommandTranslate extends Object implements CommandRegistrar {
     static INSTANCE: CommandTranslate;
-    createCommand(): Command;
+    register(dispatcher: CommandDispatcher<ClientCommandSource>): void;
 }

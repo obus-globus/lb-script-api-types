@@ -1,5 +1,6 @@
 import type { JavaMap } from '../../../../JavaMap.d.ts'
 import type { ProtocolInfo } from '../../../../com/viaversion/viaversion/api/connection/ProtocolInfo.d.ts'
+import type { ProtocolStorables } from '../../../../com/viaversion/viaversion/api/connection/ProtocolStorables.d.ts'
 import type { StorableObject } from '../../../../com/viaversion/viaversion/api/connection/StorableObject.d.ts'
 import type { UserConnection } from '../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { EntityTracker } from '../../../../com/viaversion/viaversion/api/data/entity/EntityTracker.d.ts'
@@ -17,7 +18,7 @@ import type { ChannelFuture } from '../../../../io/netty/channel/ChannelFuture.d
 import type { ChannelHandlerContext } from '../../../../io/netty/channel/ChannelHandlerContext.d.ts'
 import type { CodecException } from '../../../../io/netty/handler/codec/CodecException.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { UUID } from '../../../../java/util/UUID.d.ts'
+import type { SplittableRandom } from '../../../../java/util/SplittableRandom.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
@@ -27,14 +28,13 @@ export class UserConnectionImpl extends Object implements UserConnection {
     readonly active: boolean;
     readonly channel: Channel;
     readonly clientSide: boolean;
-    // private clientWorlds: JavaMap<Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, ClientWorld>;
-    readonly entityTrackers: JavaMap<Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, EntityTracker>;
     readonly id: number;
-    // private itemHashers: JavaMap<Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, ItemHasher>;
     readonly packetTracker: PacketTracker;
-    // private passthroughTokens: UUID[];
+    // private passthroughTokens: (Object | null)[];
     readonly pendingDisconnect: boolean;
     readonly protocolInfo: ProtocolInfo;
+    // private protocolStorables: ProtocolStorables[];
+    // private random: SplittableRandom;
     readonly storedObjects: JavaMap<Class<Object>, StorableObject>;
     addClientWorld(arg0: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, arg1: ClientWorld): void;
     addEntityTracker(arg0: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>, arg1: EntityTracker): void;
@@ -49,13 +49,15 @@ export class UserConnectionImpl extends Object implements UserConnection {
     disconnect(arg0: string): void;
     equals(arg0: Object | null): boolean;
     // private fireChannelRead(arg0: ChannelHandlerContext, arg1: ByteBuf): void;
-    generatePassthroughToken(): UUID;
+    generatePassthroughToken(): number;
     get<T extends StorableObject>(arg0: Class<T>): T;
     getChannel(): Channel;
     getClientWorld<T extends ClientWorld>(arg0: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>): T;
+    getEntityTracker<T extends EntityTracker>(arg0: Protocol<any, any, any, any>): T;
     getEntityTracker<T extends EntityTracker>(arg0: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>): T;
     getEntityTrackers(): EntityTracker[];
     getId(): number;
+    getItemHasher<T extends ItemHasher>(arg0: Protocol<any, any, any, any>): T;
     getItemHasher<T extends ItemHasher>(arg0: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>): T;
     getPacketTracker(): PacketTracker;
     getProtocolInfo(): ProtocolInfo;
@@ -68,6 +70,7 @@ export class UserConnectionImpl extends Object implements UserConnection {
     isServerSide(): boolean;
     put(arg0: StorableObject): void;
     remove<T extends StorableObject>(arg0: Class<T>): T;
+    // private removePassthroughToken(arg0: number): boolean;
     scheduleSendRawPacket(arg0: ByteBuf): void;
     scheduleSendRawPacketToServer(arg0: ByteBuf): void;
     sendRawPacket(arg0: ByteBuf): void;
@@ -81,6 +84,10 @@ export class UserConnectionImpl extends Object implements UserConnection {
     setPendingDisconnect(arg0: boolean): void;
     shouldApplyBlockProtocol(): boolean;
     shouldTransformPacket(): boolean;
+    storables<T extends ProtocolStorables>(arg0: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>): T;
+    storables<T extends ProtocolStorables>(arg0: Protocol<any, any, any, any>): T;
+    // private storablesByClassIfPresent(arg0: Class<Protocol<ClientboundPacketType, ClientboundPacketType, ServerboundPacketType, ServerboundPacketType>>): ProtocolStorables;
+    storablesIfPresent<T extends ProtocolStorables>(arg0: Protocol<any, any, any, any>): T;
     // private transform(arg0: ByteBuf, arg1: Direction, arg2: (param0: Throwable) => CodecException): void;
     transformClientbound(arg0: ByteBuf, arg1: (param0: Throwable) => CodecException): void;
     transformIncoming(arg0: ByteBuf, arg1: (param0: Throwable) => CodecException): void;

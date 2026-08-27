@@ -1,4 +1,5 @@
 import type { OutputStream } from '../java/io/OutputStream.d.ts'
+import type { Appendable } from '../java/lang/Appendable.d.ts'
 import type { WritableByteChannel } from '../java/nio/channels/WritableByteChannel.d.ts'
 import type { Charset } from '../java/nio/charset/Charset.d.ts'
 import type { Object } from '../java/lang/Object.d.ts'
@@ -17,6 +18,7 @@ export interface BufferedSink extends WritableByteChannel, Object, Sink{
     isOpen(): boolean;
     outputStream(): OutputStream;
     timeout(): Timeout;
+    utf8Appendable(): Appendable;
     write(source: number[]): BufferedSink;
     write(source: number[], offset: number, byteCount: number): BufferedSink;
     write(byteString: ByteString): BufferedSink;

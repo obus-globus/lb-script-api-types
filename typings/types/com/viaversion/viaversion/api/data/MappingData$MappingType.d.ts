@@ -11,6 +11,7 @@ export class MappingData$MappingType extends Enum<MappingData$MappingType> imple
     static valueOf(paramarg0: string): MappingData$MappingType;
     static values(): MappingData$MappingType[];
     private constructor()
-    key(): Key;
+    // private key: Key;
+    registry(): Key;
     name(): "ITEM" | "BLOCK" | "SOUND" | "ENTITY_TYPE";
 }

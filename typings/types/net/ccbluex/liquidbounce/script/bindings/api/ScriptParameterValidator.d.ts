@@ -1,8 +1,14 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-import type { Parameter$Verificator } from '../../../../../../net/ccbluex/liquidbounce/features/command/Parameter$Verificator.d.ts'
+import type { Pair } from '../../../../../../kotlin/Pair.d.ts'
 import type { Value } from '../../../../../../org/graalvm/polyglot/Value.d.ts'
 /**
- * Validates and parses command-parameter strings, returning an object with either an accepted value or an error (the `ParameterValidator` global).
+ * Validation helpers exposed to scripts as `ParameterValidator`.
+ *
+ * Each function returns a `{ accept: boolean, value?: any, error?: string }` object,
+ * mirroring the contract expected by the `validate` field of script command parameters
+ * (see {@link net.ccbluex.liquidbounce.script.bindings.features.ScriptCommandBuilder}).
+ *
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptParameterValidator.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptParameterValidator.kt:32}
  */
 export class ScriptParameterValidator extends Object {
     constructor(bindings: Value)
@@ -13,7 +19,7 @@ export class ScriptParameterValidator extends Object {
      * @param param the raw parameter string
      */
     integer(param: string): Value;
-    // private map(param: string, validator: Parameter$Verificator<Object>): Value;
+    // private map(param: string, parse: (param0: string) => Pair<Object, string>): Value;
     /**
      * Validates the parameter as an existing module name.
      *

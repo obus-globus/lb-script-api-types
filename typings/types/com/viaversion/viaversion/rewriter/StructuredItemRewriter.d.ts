@@ -32,7 +32,7 @@ export class StructuredItemRewriter<C extends ClientboundPacketType, S extends S
     handleRewritablesToClient(arg0: UserConnection, arg1: StructuredDataContainer, arg2: ItemHasher): void;
     handleRewritablesToServer(arg0: UserConnection, arg1: StructuredDataContainer): void;
     hashItemIfNeeded(arg0: UserConnection, arg1: Item, arg2: ItemHasherBase): HashedItem;
-    // private isFirstServerbound(arg0: UserConnection): boolean;
+    isFirstServerbound(arg0: UserConnection): boolean;
     // private normalizeHashedItemToServer(arg0: HashedItem): void;
     passthroughLengthPrefixedItem(arg0: PacketWrapper): void;
     registerSetCreativeModeSlot1_21_5(arg0: S): void;
@@ -45,7 +45,8 @@ export class StructuredItemRewriter<C extends ClientboundPacketType, S extends S
     restoreBackupData(arg0: Item, arg1: StructuredDataContainer, arg2: Map$Entry<string, Tag>[]): void;
     saveTag(arg0: Map$Entry<string, Tag>[], arg1: Tag, arg2: string): void;
     // private setDataUnchecked<V extends unknown>(arg0: StructuredData<V>, arg1: Object): void;
-    storeOriginalHashedItem(arg0: UserConnection, arg1: Item, arg2: ItemHasherBase, arg3: HashedItem): void;
+    storeOriginalHashedItemIfNeeded(arg0: UserConnection, arg1: Item, arg2: ItemHasherBase, arg3: HashedItem): void;
+    storeOriginalHashedItemInTag(arg0: UserConnection, arg1: Item, arg2: ItemHasherBase, arg3: HashedItem): void;
     // private updateHolderUnchecked<V extends unknown>(arg0: Holder<V>, arg1: UserConnection, arg2: boolean): Holder<V>;
     updateItemDataComponentTypeIds(arg0: StructuredDataContainer, arg1: boolean): void;
     updateTextComponent(arg0: UserConnection, arg1: Item, arg2: StructuredDataKey<Tag>, arg3: string): void;

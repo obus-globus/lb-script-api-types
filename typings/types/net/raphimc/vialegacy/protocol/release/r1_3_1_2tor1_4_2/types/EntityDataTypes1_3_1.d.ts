@@ -17,7 +17,7 @@ export class EntityDataTypes1_3_1 extends Enum<EntityDataTypes1_3_1> implements 
     static values(): EntityDataTypes1_3_1[];
     private constructor(arg2: number, arg3: Type<Object>)
     // private type: Type<Object>;
-    // private typeID: number;
+    // private typeId: number;
     type(): Type<Object>;
     typeId(): number;
     name(): "BYTE" | "SHORT" | "INT" | "FLOAT" | "STRING" | "ITEM" | "BLOCK_POSITION";

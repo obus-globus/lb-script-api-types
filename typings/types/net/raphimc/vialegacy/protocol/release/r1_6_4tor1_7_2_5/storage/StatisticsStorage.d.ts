@@ -3,6 +3,7 @@ import type { StorableObject } from '../../../../../../../com/viaversion/viavers
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class StatisticsStorage extends Object implements StorableObject {
     constructor()
-    values: JavaMap<any, any>;
+    readonly values: JavaMap<any, any>;
+    getValues(): JavaMap<any, any>;
     onRemove(): void;
 }

@@ -17,6 +17,7 @@ export class PacketFactory extends Object {
     static sendBedrockContainerClose(paramarg0: UserConnection, paramarg1: number, paramarg2: ContainerType): void;
     static sendBedrockLoadingScreen(paramarg0: UserConnection, paramarg1: ServerboundLoadingScreenPacketType, paramarg2: number): void;
     static sendJavaBlockChangedAck(paramarg0: UserConnection, paramarg1: number): void;
+    static sendJavaBlockDestroyProgress(paramarg0: UserConnection, paramarg1: number, paramarg2: BlockPosition, paramarg3: number): void;
     static sendJavaBlockEntityData(paramarg0: UserConnection, paramarg1: BlockPosition, paramarg2: BlockEntity): void;
     static sendJavaBlockUpdate(paramarg0: UserConnection, paramarg1: BlockPosition, paramarg2: number): void;
     static sendJavaContainerClose(paramarg0: UserConnection, paramarg1: number): void;

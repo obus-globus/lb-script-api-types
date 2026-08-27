@@ -1,8 +1,8 @@
 import type { GpuDevice } from '../../../../../../../../com/mojang/blaze3d/systems/GpuDevice.d.ts'
+import type { CommandDispatcher } from '../../../../../../../../com/mojang/brigadier/CommandDispatcher.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
-import type { Command } from '../../../../../../../../net/ccbluex/liquidbounce/features/command/Command.d.ts'
-import type { Command$Factory } from '../../../../../../../../net/ccbluex/liquidbounce/features/command/Command$Factory.d.ts'
-import type { ParameterBuilder } from '../../../../../../../../net/ccbluex/liquidbounce/features/command/builder/ParameterBuilder.d.ts'
+import type { CommandRegistrar } from '../../../../../../../../net/ccbluex/liquidbounce/features/command/CommandRegistrar.d.ts'
+import type { ClientCommandSource } from '../../../../../../../../net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.d.ts'
 import type { MinecraftShortcuts } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/MinecraftShortcuts.d.ts'
 import type { Minecraft } from '../../../../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { ClientLevel } from '../../../../../../../../net/minecraft/client/multiplayer/ClientLevel.d.ts'
@@ -17,23 +17,18 @@ import type { Enchantment } from '../../../../../../../../net/minecraft/world/it
  *
  * Allows you to add, remove, clear, and enchant all possible enchantments on an item.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/1dd09d11a76f588ec66d4eb9c06f470b5294257e/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/creative/CommandItemEnchant.kt#L47 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/creative/CommandItemEnchant.kt:47}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/creative/CommandItemEnchant.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/creative/CommandItemEnchant.kt:52}
  */
-export class CommandItemEnchant extends Object implements Command$Factory, MinecraftShortcuts {
+export class CommandItemEnchant extends Object implements CommandRegistrar, MinecraftShortcuts {
     static INSTANCE: CommandItemEnchant;
     readonly gpuDevice: GpuDevice;
     readonly interaction: MultiPlayerGameMode;
-    // private levelParameter: ParameterBuilder<string>;
     readonly mc: Minecraft;
     readonly network: ClientPacketListener;
     readonly player: LocalPlayer;
     readonly world: ClientLevel;
-    createCommand(): Command;
-    // private creativeOrThrow(command: Command): void;
     // private enchantAll(item: ItemStack, onlyAcceptable: boolean, level: number | null): void;
-    // private enchantAnyLevel(item: ItemStack, enchantment: Holder<Enchantment>, level: number | null): void;
-    // private enchantmentByName(enchantmentName: string, command: Command): Holder<Enchantment>;
-    // private getItemOrThrow(command: Command): ItemStack;
-    // private getLevel(arg: string): number | null;
+    // private enchantAnyLevel(item: ItemStack, enchantment: Holder<Enchantment>, level: number): void;
+    register(dispatcher: CommandDispatcher<ClientCommandSource>): void;
     // private sendItemPacket(itemStack: ItemStack): void;
 }
