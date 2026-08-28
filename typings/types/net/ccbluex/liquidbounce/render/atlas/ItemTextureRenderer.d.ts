@@ -8,7 +8,7 @@ import type { Item } from '../../../../../net/minecraft/world/item/Item.d.ts'
 /**
  * @see net.minecraft.client.gui.render.GuiItemAtlas
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/ItemImageAtlas.kt#L79 | src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/ItemImageAtlas.kt:79}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/ItemImageAtlas.kt#L79 | src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/ItemImageAtlas.kt:79}
  */
 export class ItemTextureRenderer extends AbstractAtlasRenderer<Atlas> {
     constructor(scale: number)
@@ -24,7 +24,7 @@ export class ItemTextureRenderer extends AbstractAtlasRenderer<Atlas> {
      * @see GuiRenderer.prepareItemElements
 From 1.21.5 DrawContext code
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/ItemImageAtlas.kt#L92 | src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/ItemImageAtlas.kt:92}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/ItemImageAtlas.kt#L92 | src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/ItemImageAtlas.kt:92}
      */
     protected renderTiles(): JavaMap<Identifier, Rect2i>;
 }

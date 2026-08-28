@@ -13,7 +13,7 @@ import type { Vec3 } from '../../../../../../../../../../net/minecraft/world/phy
  * @note ONLY WORKS ON 1.8 SERVERS
  * @author Nullable
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286MC18.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286MC18.kt:46}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286MC18.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286MC18.kt:46}
  */
 export class FlyVulcan286MC18 extends Mode {
     static Companion: Tagged$Companion;
@@ -41,7 +41,7 @@ export class FlyVulcan286MC18 extends Mode {
      * are walking on air after walking off of a ledge.
      * This check can be triggered while desynced...
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286MC18.kt#L93 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286MC18.kt:93}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286MC18.kt#L93 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286MC18.kt:93}
      */
     readonly packetHandler: EventHook<PacketEvent>;
     readonly parent: ModeValueGroup<any>;

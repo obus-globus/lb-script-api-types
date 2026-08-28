@@ -15,7 +15,7 @@ import type { Component } from '../../../../../net/minecraft/network/chat/Compon
 /**
  * Links minecraft with the command engine
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandExecutor.kt#L57 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandExecutor.kt:57}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandExecutor.kt#L57 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandExecutor.kt:57}
  */
 export class CommandExecutor extends Object implements EventListener {
     static INSTANCE: CommandExecutor;
@@ -39,7 +39,7 @@ export class CommandExecutor extends Object implements EventListener {
      *
      * @param allowParallel allow or prevent duplicated executions
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandExecutor.kt#L71 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandExecutor.kt:71}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandExecutor.kt#L71 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandExecutor.kt:71}
      */
     wrapSuspend(allowParallel: boolean, handler: KAsyncCommand$Handler<ClientCommandSource>): (param0: CommandContext<ClientCommandSource>) => number;
 }

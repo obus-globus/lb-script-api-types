@@ -5,7 +5,7 @@ import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 /**
  * Yes, this name sucks as {@link SimulatedPlayerCache} already exists, but I don't know a better name :/
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/PlayerSimulationCache.kt#L204 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/PlayerSimulationCache.kt:204}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/PlayerSimulationCache.kt#L204 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/PlayerSimulationCache.kt:204}
  */
 export class CachedPlayerSimulation extends Object implements PlayerSimulation {
     constructor(simulatedPlayer: SimulatedPlayerCache)

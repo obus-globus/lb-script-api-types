@@ -12,7 +12,7 @@ export class DslKt extends Object {
      * Type-safe argument access, mirroring `ctx.getArgument(name, clazz)` as used by the
      * typed getters in vanilla commands (e.g. `ItemArgument.getItem(ctx, "item")`).
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Dsl.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Dsl.kt:48}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Dsl.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Dsl.kt:48}
      */
     static arg<T extends unknown>(self: CommandContext<ClientCommandSource>, name: string): T;
     static argument<T extends unknown>(name: string, type: ArgumentType<T>): RequiredArgumentBuilder<ClientCommandSource, T>;
@@ -28,7 +28,7 @@ export class DslKt extends Object {
      * The deepest context that actually has a command matches the consumed input. A bare
      * alias has no child and lands on the copied command.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Dsl.kt#L63 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Dsl.kt:63}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Dsl.kt#L63 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Dsl.kt:63}
      */
     static deepestExecutableContext<S extends unknown>(self: CommandContext<S>): CommandContext<S> | null;
     /**
@@ -36,7 +36,7 @@ export class DslKt extends Object {
      * mirroring the convenience factories of Minecraft's `Commands` class
      * (`Commands.literal` / `Commands.argument`).
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Dsl.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Dsl.kt:38}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Dsl.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Dsl.kt:38}
      */
     static literal(name: string): LiteralArgumentBuilder<ClientCommandSource>;
     static offset(self: StringRange, offset: number): StringRange;
@@ -44,7 +44,7 @@ export class DslKt extends Object {
      * A sibling literal that redirects to {@link mainNode}, copying `requires` and a no-argument
      * `command` so gating is not bypassed and a bare alias still executes.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Dsl.kt#L94 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Dsl.kt:94}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Dsl.kt#L94 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Dsl.kt:94}
      */
     static redirectingAlias(mainNode: LiteralCommandNode<ClientCommandSource>, alias: string): LiteralCommandNode<ClientCommandSource>;
     /**
@@ -55,7 +55,7 @@ export class DslKt extends Object {
      * `requires` predicate is copied onto each alias so gating (e.g. `requiresIngame`) is not
      * bypassed through a redirect.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Dsl.kt#L83 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Dsl.kt:83}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Dsl.kt#L83 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Dsl.kt:83}
      */
     static registerAliases(self: CommandDispatcher<ClientCommandSource>, mainNode: LiteralCommandNode<ClientCommandSource>, aliases: string[]): void;
 }

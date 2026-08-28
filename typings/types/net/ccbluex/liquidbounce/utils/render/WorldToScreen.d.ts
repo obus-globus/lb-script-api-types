@@ -12,7 +12,7 @@ import type { Vector4f } from '../../../../../org/joml/Vector4f.d.ts'
 /**
  * This util should only be called from main thread
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/WorldToScreen.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/WorldToScreen.kt:42}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/WorldToScreen.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/WorldToScreen.kt:42}
  */
 export class WorldToScreen extends Object {
     static INSTANCE: WorldToScreen;
@@ -21,7 +21,7 @@ export class WorldToScreen extends Object {
     /**
      * @see GameRenderer.projectPointToScreen
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/WorldToScreen.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/WorldToScreen.kt:60}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/WorldToScreen.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/WorldToScreen.kt:60}
      */
     static calculateScreenPos(paramarg0: Vec3): Vec3f;
     static calculateScreenPos(pos: Vec3, cameraPos: Vec3): Vec3f | null;

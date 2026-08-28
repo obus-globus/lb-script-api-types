@@ -4330,7 +4330,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt",
-      "line": 283
+      "line": 284
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.ModuleAimbot": {
@@ -4754,7 +4754,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/criticals/modes/CriticalsJump.kt",
-      "line": 184
+      "line": 212
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.criticals.modes.CriticalsJump.shouldWaitForCrit": {

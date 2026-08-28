@@ -5,7 +5,7 @@ import type { UpdateResult } from '../../../../../net/ccbluex/liquidbounce/featu
 /**
  * The update failed with {@link error}; the item was left untouched on its old revision.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/MarketplaceManager.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/MarketplaceManager.kt:43}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/MarketplaceManager.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/MarketplaceManager.kt:43}
  */
 export class UpdateResult$Failed extends Object implements UpdateResult {
     constructor(item: SubscribedItem, error: Throwable)

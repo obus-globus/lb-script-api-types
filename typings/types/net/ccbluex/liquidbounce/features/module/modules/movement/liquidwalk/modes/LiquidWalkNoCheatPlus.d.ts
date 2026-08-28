@@ -11,7 +11,7 @@ import type { PlayerJumpEvent } from '../../../../../../../../../net/ccbluex/liq
  * @anticheatVersion 3.16.1-SNAPSHOT-sMD5NET-b115s
  * @testedOn eu.loyisa.cn and poke.sexy
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/liquidwalk/modes/LiquidWalkNoCheatPlus.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/liquidwalk/modes/LiquidWalkNoCheatPlus.kt:44}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/liquidwalk/modes/LiquidWalkNoCheatPlus.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/liquidwalk/modes/LiquidWalkNoCheatPlus.kt:44}
  */
 export class LiquidWalkNoCheatPlus extends Mode {
     static Companion: Tagged$Companion;

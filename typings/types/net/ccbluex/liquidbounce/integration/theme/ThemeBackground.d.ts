@@ -14,13 +14,13 @@ export interface ThemeBackground extends Closeable, Object{
      * @param delta Time delta for animations
      * @returns true if background was drawn, false to use default Minecraft background
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/ThemeBackground.kt#L240 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/ThemeBackground.kt:240}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/ThemeBackground.kt#L240 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/ThemeBackground.kt:240}
      */
     draw(context: GuiGraphicsExtractor, width: number, height: number, mouseX: number, mouseY: number, delta: number): boolean;
     /**
      * Called when resources are reloaded.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/ThemeBackground.kt#L253 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/ThemeBackground.kt:253}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/ThemeBackground.kt#L253 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/ThemeBackground.kt:253}
      */
     onResourceReload(): void;
 }

@@ -13,7 +13,7 @@ export class LadderClimbStateKt extends Object {
      * @see net.minecraft.world.level.block.LadderBlock
      * @see net.minecraft.world.level.block.TrapDoorBlock
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/avoidhazards/LadderClimbState.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/avoidhazards/LadderClimbState.kt:37}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/avoidhazards/LadderClimbState.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/avoidhazards/LadderClimbState.kt:37}
      */
     static isLadderClimbState(isLadderBlock: boolean, isTrapDoorBlock: boolean, trapDoorOpen: boolean, trapDoorFacing: Direction | null, lowerIsLadderBlock: boolean, lowerLadderFacing: Direction | null): boolean;
     static isLadderClimbState(currentState: BlockState, belowState: BlockState | null): boolean;

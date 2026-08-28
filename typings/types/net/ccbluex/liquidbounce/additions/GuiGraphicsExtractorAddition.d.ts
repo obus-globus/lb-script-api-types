@@ -4,7 +4,7 @@ import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d
 /**
  * Addition to {@link net.minecraft.client.gui.GuiGraphicsExtractor}.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/additions/GuiGraphicsExtractorAddition.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/additions/GuiGraphicsExtractorAddition.kt:31}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/additions/GuiGraphicsExtractorAddition.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/additions/GuiGraphicsExtractorAddition.kt:31}
  */
 export interface GuiGraphicsExtractorAddition extends Object{
     liquidbounce$drawCooldownProgress(stack: ItemStack, x: number, y: number): void;

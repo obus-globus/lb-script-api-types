@@ -10,7 +10,7 @@ import type { FileDialogMode$Companion } from '../../../../../net/ccbluex/liquid
  * - {@link SAVE_FILE}: Opens a dialog to choose a file path for saving.
  * - {@link OPEN_DIRECTORY}: Opens a dialog to select an existing directory. File extension filters are ignored in this mode.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/config/types/FileValue.kt#L91 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/FileValue.kt:91}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/config/types/FileValue.kt#L91 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/FileValue.kt:91}
  */
 export class FileDialogMode extends Enum<FileDialogMode> {
     static Companion: FileDialogMode$Companion;

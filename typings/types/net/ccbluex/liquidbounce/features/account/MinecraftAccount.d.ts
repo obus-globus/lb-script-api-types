@@ -18,14 +18,14 @@ import type { SessionWithService } from '../../../../../net/ccbluex/liquidbounce
  * behind {@link MicrosoftAccount} is implemented by
  * {@link MinecraftAuth}(https://github.com/CCBlueX/minecraft-auth-java).
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/account/MinecraftAccount.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/MinecraftAccount.kt:59}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/features/account/MinecraftAccount.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/MinecraftAccount.kt:59}
  */
 export class MinecraftAccount extends Object {
     static Companion: MinecraftAccount$Companion;
     /**
      * @throws IllegalArgumentException if {@link json} is not a valid account
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/account/MinecraftAccount.kt#L152 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/MinecraftAccount.kt:152}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/features/account/MinecraftAccount.kt#L152 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/MinecraftAccount.kt:152}
      */
     static fromJson(json: JsonObject): MinecraftAccount;
     protected constructor(service: AccountService)
@@ -38,7 +38,7 @@ export class MinecraftAccount extends Object {
      * Known as soon as the account exists, unlike {@link profile}, which is only resolved once {@link refresh} has
      * succeeded at least once.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/account/MinecraftAccount.kt#L65 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/MinecraftAccount.kt:65}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/features/account/MinecraftAccount.kt#L65 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/MinecraftAccount.kt:65}
      */
     readonly username: string;
     protected acquireAccessToken(): string;
@@ -49,7 +49,7 @@ export class MinecraftAccount extends Object {
      * Authenticates the account and returns the session to hand to the game, along with the
      * authentication service that resolves other players' profiles while it is active.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/account/MinecraftAccount.kt#L90 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/MinecraftAccount.kt:90}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/features/account/MinecraftAccount.kt#L90 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/MinecraftAccount.kt:90}
      */
     login(): Pair<SessionWithService, YggdrasilAuthenticationService>;
     refresh(): void;
@@ -58,7 +58,7 @@ export class MinecraftAccount extends Object {
     /**
      * Tracking bans is up to the caller - this only stores and expires them.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/account/MinecraftAccount.kt#L132 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/MinecraftAccount.kt:132}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/features/account/MinecraftAccount.kt#L132 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/MinecraftAccount.kt:132}
      */
     trackBan(ban: Ban): void;
     untrackBan(serverName: string): void;

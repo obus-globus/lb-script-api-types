@@ -29,7 +29,6 @@ export class CriticalsJump extends Mode {
     // private range: number;
     // private /*not mapped: */ getRange(): number;
     // private calculateTicksUntilNextCrit(): number;
-    // private getCooldownDamageFactor(player: Player, tickDelta: number): number;
     // private isActive(): boolean;
     // private predictPlayerPos(target: Player, ticks: number): Pair<Vec3, Vec3>;
     /**
@@ -37,7 +36,7 @@ export class CriticalsJump extends Mode {
      * will try to attack the enemy anyway. To maximise damage, this function is used to determine
      * whether it is worth to wait for the fall.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/criticals/modes/CriticalsJump.kt#L115 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/criticals/modes/CriticalsJump.kt:115}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/criticals/modes/CriticalsJump.kt#L115 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/criticals/modes/CriticalsJump.kt:115}
      */
     shouldWaitForCrit(target: Entity, ignoreState: boolean): boolean;
     shouldWaitForJump(initialMotion: number): boolean;

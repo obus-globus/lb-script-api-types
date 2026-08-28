@@ -3,7 +3,7 @@ import type { SuspendHandlerBehavior } from '../../../../net/ccbluex/liquidbounc
 /**
  * Suspends the new event if a job is active. Thus, all events will be handled one by one.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlerBehavior.kt#L69 | src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlerBehavior.kt:69}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlerBehavior.kt#L69 | src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlerBehavior.kt:69}
  */
 export class SuspendHandlerBehavior$Suspend extends Object implements SuspendHandlerBehavior {
     static INSTANCE: SuspendHandlerBehavior$Suspend;

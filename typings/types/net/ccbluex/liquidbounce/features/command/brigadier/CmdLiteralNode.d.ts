@@ -6,7 +6,7 @@ import type { CmdNode } from '../../../../../../net/ccbluex/liquidbounce/feature
 /**
  * A nested literal compiled as one Brigadier literal builder, plus redirecting aliases.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDslRuntime.kt#L141 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDslRuntime.kt:141}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDslRuntime.kt#L141 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDslRuntime.kt:141}
  */
 export class CmdLiteralNode extends Object implements CmdNode {
     constructor(name: string, path: string, aliases: string[], block: (param0: CmdLiteralScope) => void)

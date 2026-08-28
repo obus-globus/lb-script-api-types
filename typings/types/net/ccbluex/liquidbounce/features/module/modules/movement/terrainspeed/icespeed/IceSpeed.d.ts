@@ -5,7 +5,7 @@ import type { Block } from '../../../../../../../../../net/minecraft/world/level
 /**
  * Ice Speed allows you to manipulate slipperiness speed
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/terrainspeed/icespeed/IceSpeed.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/terrainspeed/icespeed/IceSpeed.kt:33}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/terrainspeed/icespeed/IceSpeed.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/terrainspeed/icespeed/IceSpeed.kt:33}
  */
 export class IceSpeed extends ToggleableValueGroup {
     static INSTANCE: IceSpeed;

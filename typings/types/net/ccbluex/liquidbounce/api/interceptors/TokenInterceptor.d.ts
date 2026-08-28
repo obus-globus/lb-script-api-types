@@ -7,7 +7,7 @@ import type { Response } from '../../../../../okhttp3/Response.d.ts'
  * Injects `Authorization: Bearer <token>`. The provider is evaluated per request, so the token can change
  * without recreating the client.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/api/interceptors/TokenInterceptor.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/api/interceptors/TokenInterceptor.kt:29}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/api/interceptors/TokenInterceptor.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/api/interceptors/TokenInterceptor.kt:29}
  */
 export class TokenInterceptor extends Object implements Interceptor {
     static Companion: Interceptor$Companion;

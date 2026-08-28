@@ -10,7 +10,7 @@ import type { Block } from '../../../../../../../../net/minecraft/world/level/bl
  *
  * Allows you to step down blocks faster.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/step/ModuleReverseStep.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/step/ModuleReverseStep.kt:43}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/step/ModuleReverseStep.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/step/ModuleReverseStep.kt:43}
  */
 export class ModuleReverseStep extends ClientModule {
     static INSTANCE: ModuleReverseStep;

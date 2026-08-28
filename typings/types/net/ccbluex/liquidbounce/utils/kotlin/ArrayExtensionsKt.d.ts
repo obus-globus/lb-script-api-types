@@ -7,7 +7,7 @@ export class ArrayExtensionsKt extends Object {
     /**
      * Transform a Collection to a String with by given {@link transform}
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt#L129 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt:129}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt#L129 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt:129}
      */
     static mapString<T extends unknown>(self: T[], transform: (param0: T) => string): string;
     static mapString(self: string, transform: (param0: string) => string): string;
@@ -19,7 +19,7 @@ export class ArrayExtensionsKt extends Object {
     /**
      * Inserts a new element into a sorted list while maintaining the order.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt#L111 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt:111}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt#L111 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt:111}
      */
     static sortedInsert<T extends unknown, K extends Comparable<K>>(self: T[], item: T, selector: (param0: T) => K | null): void;
     static subList<T extends unknown>(self: T[], fromIndex: number): T[];

@@ -19,7 +19,7 @@ import type { Identifier } from '../../../../../../../net/minecraft/resources/Id
  *
  * @author ccetl
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModulePacketLogger.kt#L68 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModulePacketLogger.kt:68}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModulePacketLogger.kt#L68 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModulePacketLogger.kt:68}
  */
 export class ModulePacketLogger extends ClientModule {
     static INSTANCE: ModulePacketLogger;

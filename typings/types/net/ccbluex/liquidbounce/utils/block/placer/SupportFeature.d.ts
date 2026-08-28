@@ -7,7 +7,7 @@ import type { Block } from '../../../../../../net/minecraft/world/level/block/Bl
 /**
  * Places blocks to support placements.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/SupportFeature.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/SupportFeature.kt:42}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/SupportFeature.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/SupportFeature.kt:42}
  */
 export class SupportFeature extends ToggleableValueGroup {
     constructor(placer: BlockPlacer)
@@ -24,7 +24,7 @@ export class SupportFeature extends ToggleableValueGroup {
     /**
      * Finds the shortest support path to make {@link targetPos} placeable via Dijkstra search.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/SupportFeature.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/SupportFeature.kt:60}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/SupportFeature.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/SupportFeature.kt:60}
      */
     findSupport(targetPos: BlockPos): BlockPos[] | null;
 }

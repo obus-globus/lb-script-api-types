@@ -27687,30 +27687,7 @@
         "returns": "Float",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/criticals/modes/CriticalsJump.kt",
-          "line": 167
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.combat.criticals.modes.CriticalsJump.getCooldownDamageFactor": [
-      {
-        "params": [
-          {
-            "name": "player",
-            "type": "Player",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "tickDelta",
-            "type": "Float",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "Float",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/criticals/modes/CriticalsJump.kt",
-          "line": 174
+          "line": 201
         }
       }
     ],
@@ -27720,7 +27697,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/criticals/modes/CriticalsJump.kt",
-          "line": 239
+          "line": 267
         }
       }
     ],
@@ -27743,7 +27720,7 @@
         "returns": "Pair<Vec3, Vec3>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/criticals/modes/CriticalsJump.kt",
-          "line": 184
+          "line": 212
         }
       }
     ],
@@ -27783,7 +27760,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/criticals/modes/CriticalsJump.kt",
-          "line": 209
+          "line": 237
         }
       }
     ],
@@ -52386,7 +52363,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/jumpeffect/modes/JumpEffectImage.kt",
-          "line": 72
+          "line": 73
         }
       }
     ],
@@ -53404,6 +53381,105 @@
         },
         "isExtension": true,
         "receiver": "ChatFormatting"
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.potionfx.ModulePotionFX.PresetTexture.constructor": [
+      {
+        "params": [
+          {
+            "name": "tag",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "path",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/potionfx/ModulePotionFX.kt",
+          "line": 44
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.potionfx.ModulePotionFX.SecondaryPresetTexture.constructor": [
+      {
+        "params": [
+          {
+            "name": "tag",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "path",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/potionfx/ModulePotionFX.kt",
+          "line": 57
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.potionfx.modes.PotionFXLingering.onDisabled": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/potionfx/modes/PotionFXLingering.kt",
+          "line": 160
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.potionfx.modes.PotionFXPlayers.onDisabled": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/potionfx/modes/PotionFXPlayers.kt",
+          "line": 129
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.potionfx.modes.PotionFXSplash.SplashData.constructor": [
+      {
+        "params": [
+          {
+            "name": "color",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "pos",
+            "type": "Vec3",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/potionfx/modes/PotionFXSplash.kt",
+          "line": 204
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.potionfx.modes.PotionFXSplash.onDisabled": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/potionfx/modes/PotionFXSplash.kt",
+          "line": 106
+        }
       }
     ],
     "net.ccbluex.liquidbounce.features.module.modules.render.totemeffect.ModuleTotemEffect.TotemPopSnapshot.constructor": [

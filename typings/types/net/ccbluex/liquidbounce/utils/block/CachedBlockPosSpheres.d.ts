@@ -13,7 +13,7 @@ export class CachedBlockPosSpheres extends Object {
      * @param toRadius the maximum radius (inclusive, {@link fromRadius} to {@link RADIUS})
      * @returns @throws IndexOutOfBoundsException if {@link fromRadius} or {@link toRadius} is out of range.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/CachedBlockPosSpheres.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/CachedBlockPosSpheres.kt:78}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/CachedBlockPosSpheres.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/CachedBlockPosSpheres.kt:78}
      */
     rangeLong(fromRadius: number, toRadius: number): (Object | null)[];
 }

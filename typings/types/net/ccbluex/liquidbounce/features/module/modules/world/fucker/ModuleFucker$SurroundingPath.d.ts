@@ -9,7 +9,7 @@ import type { BlockPos } from '../../../../../../../../net/minecraft/core/BlockP
  * @param blocks all blocks that need to be broken for the path
  * @param info scoring and target metadata for this path
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt#L524 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt:524}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt#L524 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/fucker/ModuleFucker.kt:524}
  */
 export class ModuleFucker$SurroundingPath extends Object implements Comparable<ModuleFucker$SurroundingPath> {
     constructor(firstBlock: BlockPos, blocks: BlockPos[], info: ModuleFucker$SurroundingInfo)

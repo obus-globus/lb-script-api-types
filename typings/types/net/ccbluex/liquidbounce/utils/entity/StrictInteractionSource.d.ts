@@ -16,7 +16,7 @@ import type { Enum } from '../../../../../java/lang/Enum.d.ts'
  *
  * If the effective hand (item) is offhand, the packets are doubled (main hand -> offhand).
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/04647c31fac71244593009964391c5075a4675ba/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt:58}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt:58}
  */
 export class StrictInteractionSource extends Enum<StrictInteractionSource> {
     static INTERACT: StrictInteractionSource;
