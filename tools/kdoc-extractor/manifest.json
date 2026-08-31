@@ -1346,7 +1346,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-      "line": 152
+      "line": 153
     }
   },
   "net.ccbluex.liquidbounce.event.CancellableEvent": {
@@ -1552,7 +1552,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-      "line": 285
+      "line": 287
     }
   },
   "net.ccbluex.liquidbounce.event.EventManager.callEvent": {
@@ -1563,7 +1563,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-      "line": 337
+      "line": 339
     }
   },
   "net.ccbluex.liquidbounce.event.EventManager.eventFlow": {
@@ -1571,7 +1571,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-      "line": 383
+      "line": 385
     }
   },
   "net.ccbluex.liquidbounce.event.EventManager.registerEventHook": {
@@ -1579,7 +1579,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-      "line": 300
+      "line": 302
     }
   },
   "net.ccbluex.liquidbounce.event.EventManager.unregisterEventHook": {
@@ -1587,7 +1587,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-      "line": 315
+      "line": 317
     }
   },
   "net.ccbluex.liquidbounce.event.EventState": {
@@ -1691,7 +1691,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/PlayerEvents.kt",
-      "line": 81
+      "line": 82
     }
   },
   "net.ccbluex.liquidbounce.event.events.SessionEvent": {
@@ -7658,15 +7658,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/ModuleInventoryMove.kt",
-      "line": 60
-    }
-  },
-  "net.ccbluex.liquidbounce.features.module.modules.movement.inventorymove.ModuleInventoryMove.doNotAllowClicking": {
-    "doc": "Restricts user from clicking while moving or sprinting in inventory.",
-    "kind": "property",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/ModuleInventoryMove.kt",
-      "line": 96
+      "line": 61
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.inventorymove.features.InventoryMoveBlinkFeature.maximumTime": {

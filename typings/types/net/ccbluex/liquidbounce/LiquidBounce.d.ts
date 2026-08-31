@@ -19,7 +19,7 @@ import type { Logger } from '../../../org/apache/logging/log4j/Logger.d.ts'
  *
  * @author kawaiinekololis (@team CCBlueX)
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt#L105 | src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt:105}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt#L105 | src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt:105}
  */
 export class LiquidBounce extends Object implements EventListener {
     static CLIENT_AUTHOR: string;
@@ -28,7 +28,7 @@ export class LiquidBounce extends Object implements EventListener {
      *
      * WARNING: Please read the GNU General Public License
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt#L112 | src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt:112}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt#L112 | src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt:112}
      */
     static CLIENT_NAME: string;
     static INSTANCE: LiquidBounce;
@@ -38,7 +38,7 @@ export class LiquidBounce extends Object implements EventListener {
      *
      * TODO: Replace this approach with full semantic versioning.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt#L148 | src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt:148}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt#L148 | src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt:148}
      */
     static IN_DEVELOPMENT: boolean;
     /**
@@ -46,7 +46,7 @@ export class LiquidBounce extends Object implements EventListener {
      *
      * Warning: Use {@link clientIdentifier} to prevent silent `<clinit>` invocation
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt#L165 | src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt:165}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt#L165 | src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt:165}
      */
     static identifier(path: string): Identifier;
     /**
@@ -54,7 +54,7 @@ export class LiquidBounce extends Object implements EventListener {
      *
      * @param path @throws IllegalArgumentException if the resource is not found
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt#L174 | src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt:174}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt#L174 | src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt:174}
      */
     static resource(path: string): InputStream;
     /**
@@ -62,7 +62,7 @@ export class LiquidBounce extends Object implements EventListener {
      *
      * @param path @throws IllegalArgumentException if the resource is not found
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt#L185 | src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt:185}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt#L185 | src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt:185}
      */
     static resourceToString(path: string): string;
     CLIENT_AUTHOR: string;
@@ -78,7 +78,7 @@ export class LiquidBounce extends Object implements EventListener {
     /**
      * Client logger to print out console messages
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt#L153 | src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt:153}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt#L153 | src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt:153}
      */
     readonly logger: Logger;
     readonly running: boolean;

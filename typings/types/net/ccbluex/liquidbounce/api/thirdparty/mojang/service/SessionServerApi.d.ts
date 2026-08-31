@@ -6,7 +6,7 @@ import type { Response } from '../../../../../../../retrofit2/Response.d.ts'
 /**
  * Endpoints on {@link sessionserver.mojang.com}(https://sessionserver.mojang.com).
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/mojang/service/SessionServerApi.kt#L30 | src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/mojang/service/SessionServerApi.kt:30}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/mojang/service/SessionServerApi.kt#L30 | src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/mojang/service/SessionServerApi.kt:30}
  */
 export interface SessionServerApi extends Object{
     /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */

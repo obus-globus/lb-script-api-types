@@ -77,6 +77,7 @@ import type { PacketEvent } from '../types/net/ccbluex/liquidbounce/event/events
 import type { PerspectiveEvent } from '../types/net/ccbluex/liquidbounce/event/events/PerspectiveEvent.d.ts'
 import type { PipelineEvent } from '../types/net/ccbluex/liquidbounce/event/events/PipelineEvent.d.ts'
 import type { PlayerAfterJumpEvent } from '../types/net/ccbluex/liquidbounce/event/events/PlayerAfterJumpEvent.d.ts'
+import type { PlayerContainerInputEvent } from '../types/net/ccbluex/liquidbounce/event/events/PlayerContainerInputEvent.d.ts'
 import type { PlayerFluidCollisionCheckEvent } from '../types/net/ccbluex/liquidbounce/event/events/PlayerFluidCollisionCheckEvent.d.ts'
 import type { PlayerInteractedItemEvent } from '../types/net/ccbluex/liquidbounce/event/events/PlayerInteractedItemEvent.d.ts'
 import type { PlayerInteractItemEvent } from '../types/net/ccbluex/liquidbounce/event/events/PlayerInteractItemEvent.d.ts'
@@ -506,6 +507,10 @@ on(eventName: "pipeline", handler: (pipelineEvent: PipelineEvent) => void): void
  * @see {@link PlayerAfterJumpEvent}
  */
 on(eventName: "playerAfterJump", handler: (playerAfterJumpEvent: PlayerAfterJumpEvent) => void): void;
+/**
+ * @see {@link PlayerContainerInputEvent}
+ */
+on(eventName: "playerContainerInput", handler: (playerContainerInputEvent: PlayerContainerInputEvent) => void): void;
 /**
  * Fires during a player fluid-collision check, exposing the fluid tag. Cancellable.
  * @see {@link PlayerFluidCollisionCheckEvent}

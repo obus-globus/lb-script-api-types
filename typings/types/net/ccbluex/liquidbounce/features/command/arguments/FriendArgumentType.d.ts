@@ -13,7 +13,7 @@ import type { FriendManager$Friend } from '../../../../../../net/ccbluex/liquidb
  *
  * Suggestions are the names on the friend list.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/FriendArgumentType.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/FriendArgumentType.kt:35}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/FriendArgumentType.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/FriendArgumentType.kt:35}
  */
 export class FriendArgumentType extends Object implements ArgumentType<FriendManager$Friend> {
     static INSTANCE: FriendArgumentType;

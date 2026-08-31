@@ -77,6 +77,7 @@ import type { PacketEvent } from '../types/net/ccbluex/liquidbounce/event/events
 import type { PerspectiveEvent } from '../types/net/ccbluex/liquidbounce/event/events/PerspectiveEvent.d.ts'
 import type { PipelineEvent } from '../types/net/ccbluex/liquidbounce/event/events/PipelineEvent.d.ts'
 import type { PlayerAfterJumpEvent } from '../types/net/ccbluex/liquidbounce/event/events/PlayerAfterJumpEvent.d.ts'
+import type { PlayerContainerInputEvent } from '../types/net/ccbluex/liquidbounce/event/events/PlayerContainerInputEvent.d.ts'
 import type { PlayerFluidCollisionCheckEvent } from '../types/net/ccbluex/liquidbounce/event/events/PlayerFluidCollisionCheckEvent.d.ts'
 import type { PlayerInteractedItemEvent } from '../types/net/ccbluex/liquidbounce/event/events/PlayerInteractedItemEvent.d.ts'
 import type { PlayerInteractItemEvent } from '../types/net/ccbluex/liquidbounce/event/events/PlayerInteractItemEvent.d.ts'
@@ -212,6 +213,7 @@ on(eventName: "packet", handler: (packetEvent: PacketEvent) => void): void;
 on(eventName: "perspective", handler: (perspectiveEvent: PerspectiveEvent) => void): void;
 on(eventName: "pipeline", handler: (pipelineEvent: PipelineEvent) => void): void;
 on(eventName: "playerAfterJump", handler: (playerAfterJumpEvent: PlayerAfterJumpEvent) => void): void;
+on(eventName: "playerContainerInput", handler: (playerContainerInputEvent: PlayerContainerInputEvent) => void): void;
 on(eventName: "playerFluidCollisionCheck", handler: (playerFluidCollisionCheckEvent: PlayerFluidCollisionCheckEvent) => void): void;
 on(eventName: "playerInteractedItem", handler: (playerInteractedItemEvent: PlayerInteractedItemEvent) => void): void;
 on(eventName: "playerInteractItem", handler: (playerInteractItemEvent: PlayerInteractItemEvent) => void): void;

@@ -12873,7 +12873,7 @@
         "returns": "T",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-          "line": 337
+          "line": 339
         }
       }
     ],
@@ -12890,7 +12890,7 @@
         "returns": "SharedFlow<T>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-          "line": 383
+          "line": 385
         }
       }
     ],
@@ -12913,7 +12913,7 @@
         "returns": "EventHook<T>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-          "line": 300
+          "line": 302
         }
       }
     ],
@@ -12923,7 +12923,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-          "line": 326
+          "line": 328
         }
       }
     ],
@@ -12940,7 +12940,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-          "line": 320
+          "line": 322
         }
       }
     ],
@@ -12963,7 +12963,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-          "line": 315
+          "line": 317
         }
       }
     ],
@@ -12973,7 +12973,7 @@
         "returns": "SharedFlow<E>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-          "line": 279
+          "line": 281
         }
       }
     ],
@@ -14463,7 +14463,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/PlayerEvents.kt",
-          "line": 37
+          "line": 38
         }
       }
     ],
@@ -14952,6 +14952,41 @@
         }
       }
     ],
+    "net.ccbluex.liquidbounce.event.events.PlayerContainerInputEvent.constructor": [
+      {
+        "params": [
+          {
+            "name": "containerId",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "slot",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "button",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "input",
+            "type": "ContainerInput",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/PlayerEvents.kt",
+          "line": 111
+        }
+      }
+    ],
     "net.ccbluex.liquidbounce.event.events.PlayerFluidCollisionCheckEvent.constructor": [
       {
         "params": [
@@ -14965,7 +15000,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/PlayerEvents.kt",
-          "line": 107
+          "line": 108
         }
       }
     ],
@@ -14988,7 +15023,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/PlayerEvents.kt",
-          "line": 82
+          "line": 83
         }
       }
     ],
@@ -15017,7 +15052,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/PlayerEvents.kt",
-          "line": 85
+          "line": 86
         }
       }
     ],
@@ -15040,7 +15075,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/PlayerEvents.kt",
-          "line": 67
+          "line": 68
         }
       }
     ],
@@ -15063,7 +15098,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/PlayerEvents.kt",
-          "line": 64
+          "line": 65
         }
       }
     ],
@@ -15104,7 +15139,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/PlayerEvents.kt",
-          "line": 52
+          "line": 53
         }
       }
     ],
@@ -15121,7 +15156,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/PlayerEvents.kt",
-          "line": 98
+          "line": 99
         }
       }
     ],
@@ -15138,7 +15173,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/PlayerEvents.kt",
-          "line": 76
+          "line": 77
         }
       }
     ],
@@ -15155,7 +15190,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/PlayerEvents.kt",
-          "line": 101
+          "line": 102
         }
       }
     ],
@@ -15178,7 +15213,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/PlayerEvents.kt",
-          "line": 104
+          "line": 105
         }
       }
     ],
@@ -15195,7 +15230,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/PlayerEvents.kt",
-          "line": 95
+          "line": 96
         }
       }
     ],
@@ -15218,7 +15253,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/PlayerEvents.kt",
-          "line": 73
+          "line": 74
         }
       }
     ],
@@ -15253,7 +15288,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/PlayerEvents.kt",
-          "line": 92
+          "line": 93
         }
       }
     ],
@@ -39287,7 +39322,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/ModuleInventoryMove.kt",
-          "line": 65
+          "line": 66
         }
       }
     ],
@@ -39297,7 +39332,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/ModuleInventoryMove.kt",
-          "line": 75
+          "line": 76
         },
         "isExtension": true,
         "receiver": "Screen"
@@ -39309,7 +39344,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/ModuleInventoryMove.kt",
-          "line": 145
+          "line": 138
         }
       }
     ],
@@ -39332,7 +39367,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/ModuleInventoryMove.kt",
-          "line": 108
+          "line": 101
         }
       },
       {
@@ -39347,7 +39382,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/ModuleInventoryMove.kt",
-          "line": 124
+          "line": 117
         }
       }
     ],

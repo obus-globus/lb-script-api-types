@@ -5,7 +5,7 @@ export class ProtocolUtilKt extends Object {
     /**
      * Both 1.20.3 and 1.20.4 use protocol 765, so we can use this as a default
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt:46}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt:46}
      */
     static getDefaultProtocolVersion(): ClientProtocolVersion;
     static getProtocolVersion(): ClientProtocolVersion;
@@ -17,7 +17,7 @@ export class ProtocolUtilKt extends Object {
      * but the {@link net.minecraft.world.item.ItemStack} has no
      * {@link net.minecraft.core.component.DataComponents.BLOCKS_ATTACKS}
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt#L162 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt:162}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt#L162 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt:162}
      */
     static isEqual1_21_4(): boolean;
     static isEqual1_8(): boolean;
@@ -25,34 +25,34 @@ export class ProtocolUtilKt extends Object {
     /**
      * Since 1.21.5 anything can be used to blocking
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt#L173 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt:173}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt#L173 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt:173}
      */
     static isNewerThanOrEquals1_21_5(): boolean;
     /**
      * Since 1.21.6 the {@link ServerboundPlayerCommandPacket.Action} removed 2 entries for sneaking
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt#L184 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt:184}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt#L184 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt:184}
      */
     static isNewerThanOrEquals1_21_6(): boolean;
     /**
      * Since 1.21.9 the byte format of {@link net.minecraft.world.phys.Vec3} have been rewritten
      * with {@link net.minecraft.network.LpVec3}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt#L196 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt:196}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt#L196 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt:196}
      */
     static isNewerThanOrEquals1_21_9(): boolean;
     /**
      * 1.21 added rotation fields to {@link net.minecraft.network.protocol.game.ServerboundUseItemPacket}.
      * Older protocols need the movement rotation packet to be sent before a use-item interaction.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt#L138 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt:138}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt#L138 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt:138}
      */
     static isOlderThan1_21(): boolean;
     /**
      * Since 1.21.2 falling on slime block while sneaking won't cause damage.
      * (Yes this is a bug, not feature)
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt#L149 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt:149}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt#L149 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt:149}
      */
     static isOlderThan1_21_2(): boolean;
     static isOlderThanOrEqual1_11_1(): boolean;
@@ -62,7 +62,7 @@ export class ProtocolUtilKt extends Object {
      *
      * https://github.com/ViaVersion/ViaFabricPlus/blame/b03638ee999f658856e8284f135bcbf55fc596a8/src/main/java/com/viaversion/viafabricplus/injection/mixin/features/interaction/container_clicking/MixinMultiPlayerGameMode.java#L101
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt#L118 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt:118}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt#L118 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt:118}
      */
     static isOlderThanOrEqual1_15_2(): boolean;
     static isOlderThanOrEqual1_8(): boolean;
@@ -70,7 +70,7 @@ export class ProtocolUtilKt extends Object {
      * Since 26.1 {@link net.minecraft.network.protocol.game.ServerboundInteractPacket} has only one mode
      * with entity and relative position (previous `INTERACT_AT`).
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cc3ab309a7c1e7125c4a36b872e8efed54294ecc/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt#L208 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt:208}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt#L208 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt:208}
      */
     static isOlderThanOrEquals1_21_11(): boolean;
     static isOlderThanOrEquals1_7_10(): boolean;

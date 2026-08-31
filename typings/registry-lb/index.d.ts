@@ -366,6 +366,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.event.events.PerspectiveEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/PerspectiveEvent").PerspectiveEvent;
     "net.ccbluex.liquidbounce.event.events.PipelineEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/PipelineEvent").PipelineEvent;
     "net.ccbluex.liquidbounce.event.events.PlayerAfterJumpEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/PlayerAfterJumpEvent").PlayerAfterJumpEvent;
+    "net.ccbluex.liquidbounce.event.events.PlayerContainerInputEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/PlayerContainerInputEvent").PlayerContainerInputEvent;
     "net.ccbluex.liquidbounce.event.events.PlayerFluidCollisionCheckEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/PlayerFluidCollisionCheckEvent").PlayerFluidCollisionCheckEvent;
     "net.ccbluex.liquidbounce.event.events.PlayerInteractItemEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/PlayerInteractItemEvent").PlayerInteractItemEvent;
     "net.ccbluex.liquidbounce.event.events.PlayerInteractedItemEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/PlayerInteractedItemEvent").PlayerInteractedItemEvent;
