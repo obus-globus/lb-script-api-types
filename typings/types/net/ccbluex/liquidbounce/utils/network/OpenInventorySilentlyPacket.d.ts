@@ -7,7 +7,7 @@ import type { LegacyPacket } from '../../../../../net/ccbluex/liquidbounce/utils
 /**
  * https://github.com/ViaVersion/ViaFabricPlus/blob/ecd5d188187f2ebaaad8ded0ffe53538911f7898/src/main/java/de/florianmichael/viafabricplus/injection/mixin/fixes/minecraft/MixinMinecraftClient.java#L124-L130
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/OpenInventorySilentlyPacket.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/OpenInventorySilentlyPacket.kt:29}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/OpenInventorySilentlyPacket.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/OpenInventorySilentlyPacket.kt:29}
  */
 export class OpenInventorySilentlyPacket extends Object implements LegacyPacket {
     static INSTANCE: OpenInventorySilentlyPacket;

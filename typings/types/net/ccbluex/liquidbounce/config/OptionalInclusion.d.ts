@@ -3,7 +3,7 @@ import type { Enum } from '../../../../java/lang/Enum.d.ts'
 /**
  * Groups of settings that can be optionally included or excluded during configuration saving.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/config/OptionalInclusion.kt#L25 | src/main/kotlin/net/ccbluex/liquidbounce/config/OptionalInclusion.kt:25}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/config/OptionalInclusion.kt#L25 | src/main/kotlin/net/ccbluex/liquidbounce/config/OptionalInclusion.kt:25}
  */
 export class OptionalInclusion extends Enum<OptionalInclusion> {
     static FUN: OptionalInclusion;

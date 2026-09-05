@@ -12,7 +12,7 @@ import type { Block } from '../../../../../../../net/minecraft/world/level/block
  *
  * Automatically chooses the best tool in your inventory to mine a block.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleAutoTool.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleAutoTool.kt:56}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleAutoTool.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleAutoTool.kt:56}
  */
 export class ModuleAutoTool extends ClientModule {
     static INSTANCE: ModuleAutoTool;

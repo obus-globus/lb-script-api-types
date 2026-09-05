@@ -24,7 +24,7 @@ export class JsonValueFactoryKt extends Object {
      *
      * @param valueObject JsonObject
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/JsonValueFactory.kt#L96 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/JsonValueFactory.kt:96}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/JsonValueFactory.kt#L96 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/JsonValueFactory.kt:96}
      */
     static json(self: ValueGroup, valueObject: JsonObject): void;
 }

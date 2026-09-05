@@ -9,7 +9,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
  * Boolean argument mirroring the legacy `boolean` parameter preset: accepts
  * `yes`/`on`/`true` and `no`/`off`/`false` (case-insensitive).
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt#L222 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt:222}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt#L222 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt:222}
  */
 export class BooleanArgumentType extends Object implements ArgumentType<boolean> {
     constructor(parameterName: string)

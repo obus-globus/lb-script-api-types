@@ -4,19 +4,19 @@ export class ClientUtilsKt extends Object {
     /**
      * Open uri in browser
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientUtils.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientUtils.kt:43}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientUtils.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientUtils.kt:43}
      */
     static browseUrl(url: string): void;
     /**
      * Get a {@link Logger} with client name prefix
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientUtils.kt#L30 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientUtils.kt:30}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientUtils.kt#L30 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientUtils.kt:30}
      */
     static clientLogger(name: string): Logger;
     /**
      * Get environment variable or system property.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientUtils.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientUtils.kt:48}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientUtils.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientUtils.kt:48}
      */
     static env(name: string, property: string): string | null;
     static getClientStartDurationMs(): number;

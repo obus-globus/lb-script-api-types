@@ -11,7 +11,7 @@ export class Vec3ArgumentType$Companion extends Object {
      * Defaults to the vanilla `Vec3Argument.vec3()` behavior (`centerCorrect = true`),
      * which centers integer block positions on x/z.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ClientArguments.kt#L122 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ClientArguments.kt:122}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ClientArguments.kt#L122 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ClientArguments.kt:122}
      */
     getPosition(context: CommandContext<ClientCommandSource>, name: string): Vec3;
 }

@@ -11,7 +11,7 @@ export class MicrosoftAccount$Companion extends Object {
     /**
      * The official Minecraft (Java Edition) launcher application.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt#L92 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt:92}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt#L92 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt:92}
      */
     readonly JAVA_APPLICATION_CONFIG: MsaApplicationConfig;
     // private build(applicationConfig: MsaApplicationConfig, login: (param0: JavaAuthManager$Builder) => JavaAuthManager): MicrosoftAccount;
@@ -19,20 +19,20 @@ export class MicrosoftAccount$Companion extends Object {
      * Does not support accounts with two-factor authentication enabled; use {@link buildFromWebView} or
      * {@link buildFromDeviceCode} for those.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt#L135 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt:135}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt#L135 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt:135}
      */
     buildFromCredentials(email: string, password: string, applicationConfig: MsaApplicationConfig): MicrosoftAccount;
     /**
      * {@link onDeviceCode} is invoked once with the code the user has to enter at the returned verification
      * URL; this blocks until the user completes the sign-in, the code expires, or {@link timeoutMs} elapses.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt#L120 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt:120}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt#L120 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt:120}
      */
     buildFromDeviceCode(onDeviceCode: (param0: MsaDeviceCode) => void, applicationConfig: MsaApplicationConfig, timeoutMs: number): MicrosoftAccount;
     /**
      * {@link applicationConfig} must match the one the refresh token was originally issued for.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt#L149 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt:149}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt#L149 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt:149}
      */
     buildFromRefreshToken(refreshToken: string, applicationConfig: MsaApplicationConfig): MicrosoftAccount;
     /**
@@ -43,7 +43,7 @@ export class MicrosoftAccount$Companion extends Object {
      * URLs it navigates to back to the service; {@link onClose} runs once the sign-in has finished, failed
      * or timed out.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt#L105 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt:105}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt#L105 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt:105}
      */
     buildFromWebView(onOpen: (param0: ExternalBrowserMsaAuthService) => void, onClose: (param0: ExternalBrowserMsaAuthService) => void, applicationConfig: MsaApplicationConfig, timeoutMs: number): MicrosoftAccount;
 }

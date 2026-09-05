@@ -9,7 +9,7 @@ import type { MappableRingBuffer } from '../../../../../net/minecraft/client/ren
  *
  * The backing ring buffer prevents an update from overwriting data still consumed by the GPU.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/render/buffers/CachedUniform.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/render/buffers/CachedUniform.kt:32}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/render/buffers/CachedUniform.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/render/buffers/CachedUniform.kt:32}
  */
 export class CachedUniform<T extends unknown> extends Object implements AutoCloseable {
     constructor(define: ClientUniformDefine, writer: (param0: Std140Builder, param1: T) => void)

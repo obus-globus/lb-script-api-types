@@ -9,7 +9,7 @@ import type { EventListener } from '../../../../../net/ccbluex/liquidbounce/even
  * @param priority higher = higher priority
  * @param provider module which requested value
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RequestHandler.kt#L71 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RequestHandler.kt:71}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RequestHandler.kt#L71 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RequestHandler.kt:71}
  */
 export class RequestHandler$Request<T extends unknown> extends Object {
     constructor(expiresIn: number, priority: number, provider: EventListener, value: T)

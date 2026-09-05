@@ -9,14 +9,14 @@ export class CommandDslEntryKt extends Object {
      * Builds a literal directly as a Brigadier builder using the typed command DSL.
      * Register the returned builder through {@link com.mojang.brigadier.CommandDispatcher.register}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDslEntry.kt#L28 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDslEntry.kt:28}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDslEntry.kt#L28 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDslEntry.kt:28}
      */
     static literal(name: string, block: (param0: CmdLiteralScope) => void): LiteralArgumentBuilder<ClientCommandSource>;
     /**
      * Builds a literal directly as a Brigadier builder using the typed command DSL (shortcut)
      * Register the returned builder through {@link com.mojang.brigadier.CommandDispatcher.register}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDslEntry.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDslEntry.kt:38}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDslEntry.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDslEntry.kt:38}
      */
     static register(self: CommandDispatcher<ClientCommandSource>, name: string, aliases: string[], block: (param0: CmdLiteralScope) => void): LiteralCommandNode<ClientCommandSource>;
 }

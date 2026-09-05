@@ -26043,7 +26043,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleAimbot.kt",
-          "line": 203
+          "line": 221
         }
       }
     ],
@@ -26060,7 +26060,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleAimbot.kt",
-          "line": 196
+          "line": 214
         }
       }
     ],
@@ -26070,7 +26070,7 @@
         "returns": "Pair<Entity, RotationWithVector>?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleAimbot.kt",
-          "line": 171
+          "line": 173
         }
       }
     ],
@@ -26087,7 +26087,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleAimbot.kt",
-          "line": 157
+          "line": 159
         }
       }
     ],
@@ -26097,7 +26097,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleAimbot.kt",
-          "line": 119
+          "line": 121
         }
       }
     ],
@@ -30471,7 +30471,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/KillAuraRotationsValueGroup.kt",
-          "line": 29
+          "line": 34
         }
       }
     ],
@@ -30522,7 +30522,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/ModuleKillAura.kt",
-          "line": 453
+          "line": 470
         }
       }
     ],
@@ -30568,7 +30568,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/ModuleKillAura.kt",
-          "line": 431
+          "line": 448
         }
       }
     ],

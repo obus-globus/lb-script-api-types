@@ -22,7 +22,7 @@ import type { Component } from '../../../../../net/minecraft/network/chat/Compon
  *
  * @author superblaubeere27 (@team CCBlueX)
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L101 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:101}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L101 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:101}
  */
 export class CommandManager extends Object implements EventListener {
     static INSTANCE: CommandManager;
@@ -43,7 +43,7 @@ export class CommandManager extends Object implements EventListener {
      *
      * @param cmd The command. If there is no command in it (it is empty or only whitespaces), this method is a no op
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L313 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:313}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L313 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:313}
      */
     execute(cmd: string): void;
     // private getDispatcher(): CommandDispatcher<ClientCommandSource>;
@@ -54,7 +54,7 @@ export class CommandManager extends Object implements EventListener {
      * argument types capture the registry access / feature flags at construction time
      * (e.g. `itemArgument()`, `resourceArgument()`), so a world change invalidates them.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L252 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:252}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L252 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:252}
      */
     invalidate(): void;
     parent(): EventListener | null;
@@ -65,7 +65,7 @@ export class CommandManager extends Object implements EventListener {
      * (see {@link getDispatcher}). If a dispatcher is already cached, the registrar is applied
      * to it once; if the cache is empty, the next {@link getDispatcher} rebuild includes it.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L206 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:206}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L206 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:206}
      */
     register(registrar: CommandRegistrar): void;
     registerInbuilt(): void;
@@ -79,7 +79,7 @@ export class CommandManager extends Object implements EventListener {
      * Without this, Brigadier would silently merge the node onto the existing root child,
      * overriding its command or grafting grandchildren into it.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L221 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:221}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L221 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:221}
      */
     registerScriptCommands(nodes: LiteralCommandNode<ClientCommandSource>[]): void;
     // private resolvePathTokenCount(tokens: string[]): number;
@@ -92,7 +92,7 @@ export class CommandManager extends Object implements EventListener {
      *
      * @returns A pair of the tokenized command and the starting indices of the tokens
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L411 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:411}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L411 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:411}
      */
     tokenizeCommand(line: string): CommandManager$TokenizationResult;
     // private unknownCommandHints(argument: string): Component[];
@@ -100,7 +100,7 @@ export class CommandManager extends Object implements EventListener {
     /**
      * Unregisters script-provided command nodes by name, rebuilding the dispatcher.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L240 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:240}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L240 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:240}
      */
     unregisterScriptCommands(names: string[]): void;
 }

@@ -10,7 +10,7 @@ import type { EnchantLevel } from '../../../../../../net/ccbluex/liquidbounce/fe
  * Positive enchantment level or the keyword `max` (the enchantment's highest level),
  * mirroring the legacy string-based level parameter of the `.enchant` command.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/EnchantLevelArgumentType.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/EnchantLevelArgumentType.kt:45}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/EnchantLevelArgumentType.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/EnchantLevelArgumentType.kt:45}
  */
 export class EnchantLevelArgumentType extends Object implements ArgumentType<EnchantLevel> {
     static INSTANCE: EnchantLevelArgumentType;

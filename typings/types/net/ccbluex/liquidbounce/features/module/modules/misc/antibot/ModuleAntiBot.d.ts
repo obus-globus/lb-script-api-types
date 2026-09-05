@@ -21,7 +21,7 @@ export class ModuleAntiBot extends ClientModule {
     /**
      * Check if player might be a bot
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/ModuleAntiBot.kt#L86 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/ModuleAntiBot.kt:86}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/ModuleAntiBot.kt#L86 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/ModuleAntiBot.kt:86}
      */
     isBot(player: Entity): boolean;
     /**
@@ -29,7 +29,7 @@ export class ModuleAntiBot extends ClientModule {
      *
      * Used to prevent false positives when a player is on a minigame such as Practice and joins a duel
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/ModuleAntiBot.kt#L79 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/ModuleAntiBot.kt:79}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/ModuleAntiBot.kt#L79 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/ModuleAntiBot.kt:79}
      */
     isGameProfileUnique(profile: GameProfile): boolean;
     // private isMissingFromTabList(player: Player): boolean;

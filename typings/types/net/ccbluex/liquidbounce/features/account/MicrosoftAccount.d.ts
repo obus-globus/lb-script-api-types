@@ -10,7 +10,7 @@ import type { JavaAuthManager } from '../../../../../net/raphimc/minecraftauth/j
  * `buildFrom*` blocks the calling thread until the sign-in completes, so none of them may be called
  * on the render thread.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt:43}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt:43}
  */
 export class MicrosoftAccount extends MinecraftAccount {
     static Companion: MicrosoftAccount$Companion;
@@ -18,7 +18,7 @@ export class MicrosoftAccount extends MinecraftAccount {
     /**
      * Used for JSON deserialize.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt:50}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt:50}
      */
     constructor()
     constructor(authManager: JavaAuthManager | null)
@@ -31,7 +31,7 @@ export class MicrosoftAccount extends MinecraftAccount {
      * The full {@link JavaAuthManager} state (MSA refresh token and all cached Xbox/Minecraft tokens) is
      * embedded so that the session can be restored without signing in again.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt#L72 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt:72}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt#L72 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/MicrosoftAccount.kt:72}
      */
     protected toRawJson(json: JsonObject): void;
 }

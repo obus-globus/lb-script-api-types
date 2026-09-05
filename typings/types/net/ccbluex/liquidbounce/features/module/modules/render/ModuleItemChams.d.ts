@@ -8,7 +8,7 @@ import type { ClientModule } from '../../../../../../../net/ccbluex/liquidbounce
  * @see net.minecraft.client.renderer.Lightmap
  * @see @author ccetl
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleItemChams.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleItemChams.kt:51}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleItemChams.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleItemChams.kt:51}
  */
 export class ModuleItemChams extends ClientModule {
     static INSTANCE: ModuleItemChams;

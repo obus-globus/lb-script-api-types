@@ -17,7 +17,7 @@ export interface Hole extends Object, Comparable<Hole>{
      * A block can invalidate the hole if its position falls within the hole's
      * area, extended upward by 2 blocks to account for the player's height.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/hole/Hole.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/hole/Hole.kt:49}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/hole/Hole.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/hole/Hole.kt:49}
      */
     isInvalidatedByFilling(pos: Vec3i): boolean;
 }

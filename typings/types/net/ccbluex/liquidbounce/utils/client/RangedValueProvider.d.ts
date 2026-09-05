@@ -5,7 +5,7 @@ import type { ValueGroup } from '../../../../../net/ccbluex/liquidbounce/config/
  * Provides a ranged value to a submodule.
  * This has the advantage that the value can be either registered in the module or in the submodule.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RangedValueProvider.kt#L28 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RangedValueProvider.kt:28}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RangedValueProvider.kt#L28 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RangedValueProvider.kt:28}
  */
 export interface RangedValueProvider extends Object{
     /**
@@ -13,7 +13,7 @@ export interface RangedValueProvider extends Object{
      *
      * @returns The ranged value.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RangedValueProvider.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RangedValueProvider.kt:35}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RangedValueProvider.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RangedValueProvider.kt:35}
      */
     register(offeredValueGroup: ValueGroup): RangedValue<Object> | null;
 }

@@ -17,7 +17,7 @@ import type { Enchantment } from '../../../../../../../../net/minecraft/world/it
  *
  * Allows you to add, remove, clear, and enchant all possible enchantments on an item.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/creative/CommandItemEnchant.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/creative/CommandItemEnchant.kt:52}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/creative/CommandItemEnchant.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/creative/CommandItemEnchant.kt:52}
  */
 export class CommandItemEnchant extends Object implements CommandRegistrar, MinecraftShortcuts {
     static INSTANCE: CommandItemEnchant;

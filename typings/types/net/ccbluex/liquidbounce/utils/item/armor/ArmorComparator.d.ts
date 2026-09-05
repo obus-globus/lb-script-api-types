@@ -23,7 +23,7 @@ import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemS
  * the piece is not prioritized anymore, and it can be replaced with another piece
  * so that this piece can be preserved.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/armor/ArmorComparator.kt#L100 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/armor/ArmorComparator.kt:100}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/armor/ArmorComparator.kt#L100 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/armor/ArmorComparator.kt:100}
  */
 export class ArmorComparator extends Object implements Comparator<ArmorPiece> {
     static Companion: ArmorComparator$Companion;
@@ -40,7 +40,7 @@ export class ArmorComparator extends Object implements Comparator<ArmorPiece> {
      *
      * @param damage the expected damage (the damage reduction depends on the dealt damage)
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/armor/ArmorComparator.kt#L155 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/armor/ArmorComparator.kt:155}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/armor/ArmorComparator.kt#L155 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/armor/ArmorComparator.kt:155}
      */
     getDamageFactor(damage: number, defensePoints: number, toughness: number): number;
     // private getEnchantmentThreshold(itemStack: ItemStack): number;

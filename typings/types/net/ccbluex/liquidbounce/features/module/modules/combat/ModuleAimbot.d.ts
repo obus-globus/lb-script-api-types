@@ -20,7 +20,7 @@ import type { Entity } from '../../../../../../../net/minecraft/world/entity/Ent
  *
  * Automatically faces selected entities around you.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleAimbot.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleAimbot.kt:58}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleAimbot.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleAimbot.kt:59}
  */
 export class ModuleAimbot extends ClientModule {
     static INSTANCE: ModuleAimbot;
@@ -29,6 +29,8 @@ export class ModuleAimbot extends ClientModule {
     // private /*not mapped: */ getAxis(): ModuleAimbot$Axis[];
     // private ignores: ModuleAimbot$IgnoreOpened[];
     // private /*not mapped: */ getIgnores(): ModuleAimbot$IgnoreOpened[];
+    // private lazyRotation: boolean;
+    // private /*not mapped: */ getLazyRotation(): boolean;
     // private mouseMovement: EventHook<MouseRotationEvent>;
     // private playerRotation: Rotation | null;
     // private pointTracker: PointTracker;

@@ -4338,7 +4338,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleAimbot.kt",
-      "line": 58
+      "line": 59
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.ModuleAimbot.lookAt": {
@@ -4346,7 +4346,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleAimbot.kt",
-      "line": 157
+      "line": 159
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.ModuleAutoClicker": {
@@ -5425,6 +5425,14 @@
       "line": 115
     }
   },
+  "net.ccbluex.liquidbounce.features.module.modules.combat.killaura.KillAuraRotationsValueGroup.lazyRotation": {
+    "doc": "When enabled, if current rotation can still raytrace the target, skip rotating.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/KillAuraRotationsValueGroup.kt",
+      "line": 32
+    }
+  },
   "net.ccbluex.liquidbounce.features.module.modules.combat.killaura.KillAuraTargetTracker.ignoreShield": {
     "doc": "Allows to ignore when the target is holding a shield,\nwhich would normally block attacks.",
     "kind": "property",
@@ -5454,7 +5462,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/ModuleKillAura.kt",
-      "line": 431
+      "line": 448
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.killaura.ModuleKillAura.findRotation": {

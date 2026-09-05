@@ -20,7 +20,7 @@ import type { CefBrowser as CefBrowser_2 } from '../../../../../../../org/cef/br
  * @see <a href="https://github.com/CCBlueX/mcef/">MCEF</a>
  * @see @author Izuna <izuna.seikatsu@ccbluex.net>
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/cef/CefBrowserBackend.kt#L64 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/cef/CefBrowserBackend.kt:64}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/cef/CefBrowserBackend.kt#L64 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/cef/CefBrowserBackend.kt:64}
  */
 export class CefBrowserBackend extends Object implements EventListener, BrowserBackend {
     constructor()
@@ -43,7 +43,7 @@ export class CefBrowserBackend extends Object implements EventListener, BrowserB
      *   process attached to the JCEF PID is still running or not. If not, we could kill the JCEF process
      *   and clean up the cache directory.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/cef/CefBrowserBackend.kt#L129 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/cef/CefBrowserBackend.kt:129}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/cef/CefBrowserBackend.kt#L129 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/cef/CefBrowserBackend.kt:129}
      */
     cleanup(): void;
     createBrowser(url: string, position: BrowserViewport, settings: BrowserSettings, priority: number, incognito: boolean, inputAcceptor: InputAcceptor | null): CefBrowser;

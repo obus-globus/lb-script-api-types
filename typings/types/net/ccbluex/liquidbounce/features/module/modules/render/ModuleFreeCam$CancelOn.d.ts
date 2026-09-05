@@ -8,7 +8,7 @@ import type { ModuleFreeCam$CancelTrigger } from '../../../../../../../net/ccblu
  * This is useful for cancelling FreeCam on certain events.
  * For example, when the player takes damage.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt#L90 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt:90}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt#L90 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleFreeCam.kt:90}
  */
 export class ModuleFreeCam$CancelOn extends Enum<ModuleFreeCam$CancelOn> implements Tagged {
     static Companion: Tagged$Companion;

@@ -7,7 +7,7 @@ import type { AxochatPacket$C2S } from '../../../../../../net/ccbluex/liquidboun
  * @param token can be retrieved by sending RequestJWT on an already authenticated connection.
  * @param allowMessages If allow_messages is true, other clients may send private messages to this client.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ServerPackets.kt#L68 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ServerPackets.kt:68}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ServerPackets.kt#L68 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ServerPackets.kt:68}
  */
 export class C2SLoginJWTPacket extends Object implements AxochatPacket$C2S {
     constructor(token: string, allowMessages: boolean)

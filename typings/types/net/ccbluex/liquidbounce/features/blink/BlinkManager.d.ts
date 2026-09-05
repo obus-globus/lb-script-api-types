@@ -23,7 +23,7 @@ import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
  * Fires {@link BlinkPacketEvent} to determine whether a packet should be queued or not. They can be
  * from origin {@link TransferOrigin.INCOMING} or {@link TransferOrigin.OUTGOING}, but will be handled separately.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e67fdf9b70131f478c5894cf9de1f2d4aa7a95ce/src/main/kotlin/net/ccbluex/liquidbounce/features/blink/BlinkManager.kt#L77 | src/main/kotlin/net/ccbluex/liquidbounce/features/blink/BlinkManager.kt:77}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/blink/BlinkManager.kt#L77 | src/main/kotlin/net/ccbluex/liquidbounce/features/blink/BlinkManager.kt:77}
  */
 export class BlinkManager extends ValueGroup implements EventListener {
     static INSTANCE: BlinkManager;
