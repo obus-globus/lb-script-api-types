@@ -1,7 +1,6 @@
 import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { ScheduleInventoryActionEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/ScheduleInventoryActionEvent.d.ts'
 import type { ClientModule } from '../../../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
-import type { ArmorItemSlot } from '../../../../../../../net/ccbluex/liquidbounce/utils/inventory/ArmorItemSlot.d.ts'
 import type { ItemSlot } from '../../../../../../../net/ccbluex/liquidbounce/utils/inventory/ItemSlot.d.ts'
 import type { PlayerInventoryConstraints } from '../../../../../../../net/ccbluex/liquidbounce/utils/inventory/PlayerInventoryConstraints.d.ts'
 /**
@@ -13,11 +12,10 @@ import type { PlayerInventoryConstraints } from '../../../../../../../net/ccblue
  *
  * @since 2/13/2025
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleElytraSwap.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleElytraSwap.kt:44}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleElytraSwap.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleElytraSwap.kt:43}
  */
 export class ModuleElytraSwap extends ClientModule {
     static INSTANCE: ModuleElytraSwap;
-    // private /*not mapped: */ getChestplateSlot(): ArmorItemSlot;
     // private constraints: PlayerInventoryConstraints;
     // private scheduleInventoryActionHandler: EventHook<ScheduleInventoryActionEvent>;
     // private slotsToSearch: ItemSlot[];

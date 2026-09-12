@@ -10,7 +10,7 @@ import type { ClientModule } from '../../../../../../net/ccbluex/liquidbounce/fe
  * Single-choice module argument, mirroring the legacy `module()` parameter preset:
  * the module name is matched case-insensitively.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt#L141 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt:141}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt#L141 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt:141}
  */
 export class ModuleArgumentType extends Object implements ArgumentType<ClientModule> {
     constructor(parameterName: string, predicate: (param0: ClientModule) => boolean)

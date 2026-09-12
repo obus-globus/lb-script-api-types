@@ -12,7 +12,7 @@ import type { PlayerInfo } from '../../../../../../net/minecraft/client/multipla
  *
  * Suggestions are the online player names from the command source.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/PlayerInfoArgumentType.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/PlayerInfoArgumentType.kt:38}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/PlayerInfoArgumentType.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/PlayerInfoArgumentType.kt:38}
  */
 export class PlayerInfoArgumentType extends Object implements ArgumentType<PlayerInfo> {
     static INSTANCE: PlayerInfoArgumentType;

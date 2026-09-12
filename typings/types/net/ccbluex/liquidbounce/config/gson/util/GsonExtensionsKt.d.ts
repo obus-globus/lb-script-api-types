@@ -22,8 +22,7 @@ export class GsonExtensionsKt extends Object {
     static getOrNull(self: JsonElement[], index: number): JsonElement | null;
     static int(self: JsonElement[], index: number): number | null;
     static int(self: JsonObject, key: string): number | null;
-    static jsonArray(initialCapacity: number, builderAction: (param0: JsonArrayBuilder) => void): JsonElement[];
-    static jsonArrayOf(...elements: JsonElement[]): JsonElement[];
+    static jsonArray(builderAction: (param0: JsonArrayBuilder) => void): JsonElement[];
     static jsonObject(builderAction: (param0: JsonObjectBuilder) => void): JsonObject;
     static long(self: JsonElement[], index: number): number | null;
     static long(self: JsonObject, key: string): number | null;
@@ -34,7 +33,7 @@ export class GsonExtensionsKt extends Object {
     /**
      * Read JSON content
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt:43}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt:43}
      */
     static readJson<T extends unknown>(self: File, charset: Charset): T;
     static readJson<T extends unknown>(self: InputStream, charset: Charset): T;
@@ -44,7 +43,7 @@ export class GsonExtensionsKt extends Object {
      * Unlike {@link JsonObject.get} followed by `asString` and friends, these return `null` for an absent key
      * instead of throwing.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt#L151 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt:151}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt#L162 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt:162}
      */
     static string(self: JsonElement[], index: number): string | null;
     static string(self: JsonObject, key: string): string | null;

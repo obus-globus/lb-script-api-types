@@ -7,7 +7,7 @@ import type { ClientCommandSource } from '../../../../../../../net/ccbluex/liqui
  *
  * Allows you to bind a key to a module, which means that the module will be activated when the key is pressed.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandBind.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandBind.kt:50}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandBind.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandBind.kt:50}
  */
 export class CommandBind extends Object implements CommandRegistrar {
     static INSTANCE: CommandBind;

@@ -14,7 +14,7 @@ import type { BlockState } from '../../../../../../../net/minecraft/world/level/
  *
  * Places blocks inside of liquid source blocks within range of you.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleLiquidFiller.kt#L57 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleLiquidFiller.kt:57}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleLiquidFiller.kt#L57 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleLiquidFiller.kt:57}
  */
 export class ModuleLiquidFiller extends ClientModule {
     static INSTANCE: ModuleLiquidFiller;
@@ -34,7 +34,6 @@ export class ModuleLiquidFiller extends ClientModule {
     // private findFillTargets(): BlockPos[];
     // private findSlotForTarget(pos: BlockPos | null): HotbarItemSlot | null;
     // private findSpongePlacement(waterPos: BlockPos, scanRange: number): BlockPos | null;
-    // private isWaterTarget(pos: BlockPos): boolean;
     onDisabled(): void;
     // private shouldFill(state: BlockState, hasNormalFiller: boolean, hasSponge: boolean): boolean;
     // private spongeSlot(): HotbarItemSlot | null;

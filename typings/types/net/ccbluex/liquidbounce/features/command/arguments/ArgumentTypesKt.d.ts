@@ -10,7 +10,7 @@ export class ArgumentTypesKt extends Object {
      * ({@link MultiTaggedArgumentType} and the script multi-value validator), which all consume
      * one token per value and report errors per token.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt#L173 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt:173}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt#L173 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt:173}
      */
     static readGreedyTokens<T extends unknown>(reader: StringReader, parseToken: (param0: string) => T): T[];
 }

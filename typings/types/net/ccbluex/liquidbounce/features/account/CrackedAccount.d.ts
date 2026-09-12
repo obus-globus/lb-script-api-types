@@ -7,7 +7,7 @@ import type { MinecraftAccount$Companion } from '../../../../../net/ccbluex/liqu
  * With {@link online} set, the real UUID of the name is looked up so that skins resolve; otherwise the
  * offline UUID Minecraft derives from the name is used.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/account/CrackedAccount.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/CrackedAccount.kt:35}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/features/account/CrackedAccount.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/CrackedAccount.kt:35}
  */
 export class CrackedAccount extends MinecraftAccount {
     static Companion: MinecraftAccount$Companion;
@@ -15,7 +15,7 @@ export class CrackedAccount extends MinecraftAccount {
     /**
      * Used for JSON deserialize.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/account/CrackedAccount.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/CrackedAccount.kt:45}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/features/account/CrackedAccount.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/CrackedAccount.kt:45}
      */
     constructor()
     constructor(username: string, online: boolean)

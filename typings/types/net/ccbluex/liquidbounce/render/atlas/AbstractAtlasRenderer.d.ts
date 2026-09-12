@@ -48,7 +48,7 @@ export class AbstractAtlasRenderer<A extends unknown> extends Object implements 
     /**
      * Called on {@link Util.backgroundExecutor}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/AbstractAtlasRenderer.kt#L103 | src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/AbstractAtlasRenderer.kt:103}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/AbstractAtlasRenderer.kt#L103 | src/main/kotlin/net/ccbluex/liquidbounce/render/atlas/AbstractAtlasRenderer.kt:103}
      */
     protected buildAtlas(images: JavaMap<Identifier, number[]>): A;
     // private close(): void;

@@ -8,7 +8,7 @@ export class YggdrasilUserAuthentication$AuthenticationResponse extends Object {
     /**
      * Absent for a valid account without a Minecraft license - the authentication still succeeds.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/account/YggdrasilUserAuthentication.kt#L64 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/YggdrasilUserAuthentication.kt:64}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/features/account/YggdrasilUserAuthentication.kt#L64 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/YggdrasilUserAuthentication.kt:64}
      */
     readonly selectedProfile: YggdrasilUserAuthentication$AuthenticationResponse$Profile | null;
 }

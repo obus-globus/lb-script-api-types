@@ -15,7 +15,7 @@ import type { CommandValue$KeySegmentQuery } from '../../../../../../../net/ccbl
  *
  * Allows you to change values by key path.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandValue.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandValue.kt:43}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandValue.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandValue.kt:43}
  */
 export class CommandValue extends Object implements CommandRegistrar {
     static INSTANCE: CommandValue;

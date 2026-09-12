@@ -6,7 +6,7 @@ export abstract class GlyphPage extends Object {
     /**
      * Java2D's native font scaler is shared by static and dynamic atlas generation.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/64f9c02ca90d2728f0d1fffd459b622eb8239747/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt#L106 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt:106}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt#L106 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt:106}
      */
     static fontRasterizationLock: Object;
     constructor()
