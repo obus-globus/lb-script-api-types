@@ -2,20 +2,13 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { AlignedFace } from '../../../../../../net/ccbluex/liquidbounce/utils/math/geometry/AlignedFace.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
-export class FaceTargetPositionFactory extends Object {
-    protected constructor()
+export interface FaceTargetPositionFactory extends Object{
     /**
      * Samples a position (relative to {@link targetPos}).
      *
      * @param face is relative to origin.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/FaceTargetPositionFactory.kt#L64 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/FaceTargetPositionFactory.kt:64}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/FaceTargetPositionFactory.kt#L90 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/FaceTargetPositionFactory.kt:90}
      */
     producePositionOnFace(face: AlignedFace, targetPos: BlockPos): Vec3 | null;
-    /**
-     * Trims a face to be only as wide as the config allows it to be
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/FaceTargetPositionFactory.kt#L69 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/FaceTargetPositionFactory.kt:69}
-     */
-    protected trimFace(face: AlignedFace): AlignedFace;
 }

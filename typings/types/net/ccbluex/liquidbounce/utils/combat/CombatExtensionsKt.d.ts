@@ -8,17 +8,18 @@ import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class CombatExtensionsKt extends Object {
     /**
+     * @returns attacked or pierced
      * @see net.minecraft.client.Minecraft.startAttack
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt#L243 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt:243}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt#L245 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt:245}
      */
-    static attackEntity(entity: Entity, swing: SwingMode, keepSprint: boolean): void;
+    static attackEntity(entity: Entity, swing: SwingMode, keepSprint: boolean): boolean;
     static findEnemies(paramarg0: ClientLevel, paramarg1: number, paramarg2: number): ObjectDoublePair<Entity>[];
     static findEnemies(self: ClientLevel, minRange: number, maxRange: number, enemyConf: Targets[]): ObjectDoublePair<Entity>[];
     /**
      * Find the best enemy in the current world in a specific range.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt#L189 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt:189}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt#L190 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt:190}
      */
     static findEnemy(clientLevel: ClientLevel, range: number, enemyConf: number): Entity;
     static findEnemy(self: ClientLevel, minRange: number, maxRange: number, enemyConf: Targets[]): Entity | null;

@@ -10,7 +10,7 @@ import type { Value } from '../../../../../../org/graalvm/polyglot/Value.d.ts'
 /**
  * Validates a single token through the script-provided `validate` function.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptCommandBuilder.kt#L287 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptCommandBuilder.kt:287}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptCommandBuilder.kt#L287 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptCommandBuilder.kt:287}
  */
 export class ScriptCommandBuilder$ScriptValidatedArgumentType extends Object implements ArgumentType<Object> {
     constructor(null_: ScriptCommandBuilder, parameterName: string, validator: Value)

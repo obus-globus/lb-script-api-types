@@ -1,3 +1,4 @@
+import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Predicate } from '../../../../../java/util/function/Predicate.d.ts'
 import type { ToDoubleFunction } from '../../../../../java/util/function/ToDoubleFunction.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -9,7 +10,7 @@ export class GraphSearchKt extends Object {
      *
      * Set {@link heuristic} to zero to get Dijkstra behavior.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/GraphSearch.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/GraphSearch.kt:51}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/GraphSearch.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/GraphSearch.kt:52}
      */
     static aStarShortestPath<T extends unknown>(start: T, isGoal: (param0: T) => boolean, neighbors: (param0: T) => WeightedEdge<T>[], heuristic: (param0: T) => number, maxIterations: number, maxCost: number): ShortestPath<T> | null;
 }

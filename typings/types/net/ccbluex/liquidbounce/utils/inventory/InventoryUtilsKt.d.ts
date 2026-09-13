@@ -19,7 +19,7 @@ export class InventoryUtilsKt extends Object {
      * The result depends on current player context (e.g. creative state and durability filtering),
      * then ranks candidates by destroy speed and nearby-slot preference.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt#L106 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt:106}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt#L112 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt:112}
      */
     static findBestToolToMineBlock<T extends ItemSlot>(self: T[], blockState: BlockState, ignoreDurability: boolean, predicate: (param0: ItemStack, param1: BlockState) => boolean): T | null;
     static findBlocksEndingWith(...targets: string[]): Block[];
@@ -30,6 +30,14 @@ export class InventoryUtilsKt extends Object {
     static getSlotsInContainer(self: AbstractContainerScreen<any>): ContainerItemSlot[];
     static getTypeOrNull(paramarg0: AbstractContainerMenu): MenuType<any>;
     static hasInventorySpace(): boolean;
+    /**
+     * Exact total capacity of this iterable to store {@link itemStack} (empty slots count as {@link ItemStack.maxStackSize}, mergeable
+     * slots as their remaining space). Contract: the slot currently holding {@link itemStack} must NOT be part of this iterable,
+     * otherwise its own remaining capacity would be double-counted and the result overestimated.
+     *
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt#L63 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt:63}
+     */
+    static mergeableCapacityFor(paramarg0: ItemSlot[], paramarg1: ItemStack): number;
     static mergeableCapacityFor(self: ItemSlot[], itemStack: ItemStack, blacklist: ItemSlot[] | null): number;
     static useHotbarSlotOrOffhand(paramarg0: EventListener, paramarg1: HotbarItemSlot): InteractionResult;
     static useHotbarSlotOrOffhand(paramarg0: EventListener, paramarg1: HotbarItemSlot, paramarg2: number): InteractionResult;

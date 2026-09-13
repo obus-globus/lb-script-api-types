@@ -5,5 +5,5 @@ export class Refill extends ToggleableValueGroup {
     static INSTANCE: Refill;
     // private inventoryConstraints: PlayerInventoryConstraints;
     execute(event: ScheduleInventoryActionEvent): void;
-    // private findEmptyHotbarSlot(): boolean;
+    // private findEmptyHotbarOrOffhandSlot(): boolean;
 }

@@ -10,14 +10,14 @@ export class SuggestionsKt extends Object {
     /**
      * Suggests the names of the players currently online (tab list), vanilla-filtered.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Suggestions.kt#L30 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Suggestions.kt:30}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Suggestions.kt#L30 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Suggestions.kt:30}
      */
     static onlinePlayers<S extends unknown>(): (param0: CommandContext<S>, param1: SuggestionsBuilder) => CompletableFuture<Suggestions>;
     /**
      * Appends all elements from {@link strings} as suggestion, filtered by the vanilla
      * {@link SharedSuggestionProvider} matching (case-insensitive prefix / substring).
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Suggestions.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Suggestions.kt:36}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Suggestions.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/Suggestions.kt:36}
      */
     static suggestions<S extends unknown>(strings: string[]): (param0: CommandContext<S>, param1: SuggestionsBuilder) => CompletableFuture<Suggestions>;
     static suggestions<S extends unknown>(...strings: string[]): (param0: CommandContext<S>, param1: SuggestionsBuilder) => CompletableFuture<Suggestions>;

@@ -1,3 +1,4 @@
+import type { IntLongPair } from '../../../../../../../it/unimi/dsi/fastutil/ints/IntLongPair.d.ts'
 import type { Comparator } from '../../../../../../../java/util/Comparator.d.ts'
 import type { ModeValueGroup } from '../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
@@ -14,6 +15,7 @@ export class ModuleBedDefender extends ClientModule {
     // private isSelfBedMode: ModeValueGroup<IsSelfBedMode>;
     // private maxLayers: number;
     // private /*not mapped: */ getMaxLayers(): number;
+    // private placementTargetComparator: (param0: IntLongPair, param1: IntLongPair) => number;
     // private placer: BlockPlacer;
     // private requiresSneak: boolean;
     // private /*not mapped: */ getRequiresSneak(): boolean;

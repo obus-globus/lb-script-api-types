@@ -11,7 +11,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
  * Mirrors the legacy `values`/`enumChoices` parameter presets (e.g. `.hide hide killaura,scaffold`):
  * the whole comma-separated token is validated and every name is matched case-insensitively.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt:38}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt:38}
  */
 export class MultiSelectArgumentType<T extends unknown> extends Object implements ArgumentType<T[]> {
     constructor(typeName: string, all: T[], predicate: (param0: T) => boolean, nameOf: (param0: T) => string)

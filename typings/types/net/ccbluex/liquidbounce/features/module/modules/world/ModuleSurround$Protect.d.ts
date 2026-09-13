@@ -7,7 +7,7 @@ import type { GameTickEvent } from '../../../../../../../net/ccbluex/liquidbounc
  *
  * Destroying requires the crystal destroyer in the placer to be active.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleSurround.kt#L98 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleSurround.kt:98}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleSurround.kt#L98 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleSurround.kt:98}
  */
 export class ModuleSurround$Protect extends ToggleableValueGroup {
     static INSTANCE: ModuleSurround$Protect;

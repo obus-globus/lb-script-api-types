@@ -7,4 +7,11 @@ export class PointOnFace extends Object {
     readonly face: AlignedFace;
     readonly point: Vec3;
     readonly side: Direction;
+    component1(): AlignedFace;
+    component2(): Direction;
+    component3(): Vec3;
+    copy(face: AlignedFace, side: Direction, point: Vec3): PointOnFace;
+    equals(other: Object | null): boolean;
+    hashCode(): number;
+    toString(): string;
 }

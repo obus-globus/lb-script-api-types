@@ -23,7 +23,7 @@ import type { ScoreHolder } from '../../../../../../../../net/minecraft/world/sc
  * A special {@link FakePlayer} that moves following a recorded path
  * of {@link PosPoseSnapshot}.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/MovingFakePlayer.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/MovingFakePlayer.kt:29}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/MovingFakePlayer.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/MovingFakePlayer.kt:29}
  */
 export class MovingFakePlayer extends FakePlayer {
     static ARMOR_SLOT_OFFSET: number;

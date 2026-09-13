@@ -9,7 +9,7 @@ import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 /**
  * A face. Axis aligned
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/geometry/AlignedFace.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/geometry/AlignedFace.kt:36}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/geometry/AlignedFace.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/geometry/AlignedFace.kt:37}
  */
 export class AlignedFace extends Object {
     constructor(from: Vec3, to: Vec3)
@@ -18,6 +18,7 @@ export class AlignedFace extends Object {
     readonly dimensions: Vec3;
     readonly from: Vec3;
     readonly to: Vec3;
+    asBox(): AABB;
     clamp(box: AABB): AlignedFace;
     coerceInFace(line: LinearGeometry3): LineSegment | null;
     // private getDirectionVectors(): Pair<Vec3, Vec3>;
@@ -27,6 +28,15 @@ export class AlignedFace extends Object {
     offset(vec: Vec3): AlignedFace;
     randomPointOnFace(): Vec3;
     requireNonEmpty(): AlignedFace | null;
+    /**
+     * Samples a point on the face by spreading {@link a} and {@link b} over its two variable axes.
+     *
+     * The first variable axis (in x, y, z order) is scaled by {@link a}, the second by {@link b}.
+     * Constant (zero width) axes stay pinned to their `from` coordinate.
+     *
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/geometry/AlignedFace.kt#L98 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/geometry/AlignedFace.kt:98}
+     */
+    samplePointOnFace(a: number, b: number): Vec3;
     toPlane(): NormalizedPlane;
     truncateY(minY: number): AlignedFace;
 }

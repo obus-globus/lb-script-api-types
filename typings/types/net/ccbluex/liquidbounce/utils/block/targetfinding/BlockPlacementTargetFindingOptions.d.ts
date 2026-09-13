@@ -11,7 +11,7 @@ import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 /**
  * Parameters used when generating a targeting plan for a block placement.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/TargetFinding.kt#L67 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/TargetFinding.kt:67}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/TargetFinding.kt#L67 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/TargetFinding.kt:67}
  */
 export class BlockPlacementTargetFindingOptions extends Object {
     static Companion: BlockPlacementTargetFindingOptions$Companion;
@@ -22,4 +22,12 @@ export class BlockPlacementTargetFindingOptions extends Object {
     readonly offsetOptions: BlockOffsetOptions;
     readonly playerLocationOnPlacement: PlayerLocationOnPlacement;
     readonly stackToPlaceWith: ItemStack;
+    component1(): BlockOffsetOptions;
+    component2(): FaceHandlingOptions;
+    component3(): ItemStack;
+    component4(): PlayerLocationOnPlacement;
+    copy(offsetOptions: BlockOffsetOptions, faceHandlingOptions: FaceHandlingOptions, stackToPlaceWith: ItemStack, playerLocationOnPlacement: PlayerLocationOnPlacement): BlockPlacementTargetFindingOptions;
+    equals(other: Object | null): boolean;
+    hashCode(): number;
+    toString(): string;
 }

@@ -26,7 +26,7 @@ import type { Response } from '../../../../../../../retrofit2/Response.d.ts'
  * `MinecraftLauncherLoginRequest`, `MinecraftEntitlementsRequest` and
  * `MinecraftPlayerCertificatesRequest`, driven by `JavaAuthManager`.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/mojang/service/MinecraftServicesApi.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/mojang/service/MinecraftServicesApi.kt:58}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/mojang/service/MinecraftServicesApi.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/mojang/service/MinecraftServicesApi.kt:58}
  */
 export interface MinecraftServicesApi extends Object{
     /** Kotlin `suspend` function: pass a Continuation ({ context, resumeWith }) as the final argument; returns the result or COROUTINE_SUSPENDED. */

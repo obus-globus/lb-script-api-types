@@ -21,8 +21,8 @@ export class CrystalAuraPlaceTargetFactory extends Object implements MinecraftSh
     previousTarget: BlockPos | null;
     // private sphere: BlockPos[];
     readonly world: ClientLevel;
-    // private evaluateCandidatePositions(basePlace: boolean, excludeIds: number[] | null, positions: PlacementPositionCandidate[]): boolean;
+    // private evaluateCandidatePositions(basePlace: boolean, excludeIds: (Object | null)[] | null, positions: PlacementPositionCandidate[]): boolean;
     // private selectOptimalCandidate(finalPositions: PlacementPositionCandidate[], currentBasePlaceTarget: PlacementPositionCandidate | null): PlacementPositionCandidate | null;
     updateSphere(): void;
-    updateTarget(excludeIds: number[] | null): void;
+    updateTarget(excludeIds: (Object | null)[] | null): void;
 }

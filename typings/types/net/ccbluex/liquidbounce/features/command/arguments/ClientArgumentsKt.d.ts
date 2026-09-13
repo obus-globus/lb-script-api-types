@@ -10,14 +10,14 @@ export class ClientArgumentsKt extends Object {
      * Falls back to the static vanilla registry lookup and default feature flags when no
      * world is loaded.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ClientArguments.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ClientArguments.kt:61}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ClientArguments.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ClientArguments.kt:61}
      */
     static itemArgument(): ItemArgument;
     /**
      * Creates the vanilla {@link ResourceArgument} for the registry identified by {@link key},
      * parsing to a type-safe {@link Holder.Reference} with vanilla errors and suggestions.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ClientArguments.kt#L67 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ClientArguments.kt:67}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ClientArguments.kt#L67 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ClientArguments.kt:67}
      */
     static resourceArgument<T extends unknown>(key: ResourceKey<T[]>): ResourceArgument<T>;
 }

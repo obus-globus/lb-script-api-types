@@ -4,7 +4,7 @@ import type { UpdateResult } from '../../../../../net/ccbluex/liquidbounce/featu
 /**
  * The item was (re-)installed to revision {@link revisionId}.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/MarketplaceManager.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/MarketplaceManager.kt:37}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/MarketplaceManager.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/MarketplaceManager.kt:37}
  */
 export class UpdateResult$Updated extends Object implements UpdateResult {
     constructor(item: SubscribedItem, revisionId: number)

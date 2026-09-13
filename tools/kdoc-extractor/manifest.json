@@ -3327,7 +3327,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/CommandBind.kt",
-      "line": 50
+      "line": 51
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.client.CommandBinds": {
@@ -4554,7 +4554,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleSpearKill.kt",
-      "line": 49
+      "line": 50
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.ModuleSuperKnockback": {
@@ -5074,7 +5074,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/destroy/CrystalAuraDestroyTargetFactory.kt",
-      "line": 41
+      "line": 43
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.crystalaura.destroy.CrystalAuraDestroyTargetFactory.validateAndUpdateTarget": {
@@ -5082,7 +5082,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/destroy/CrystalAuraDestroyTargetFactory.kt",
-      "line": 61
+      "line": 59
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.crystalaura.place.CrystalAuraPlaceTargetFactory.conditionChain": {
@@ -5090,7 +5090,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/place/CrystalAuraPlaceTargetFactory.kt",
-      "line": 45
+      "line": 46
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.crystalaura.place.PlacementPositionCandidate.calculate": {
@@ -5130,7 +5130,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/place/SubmoduleCrystalPlacer.kt",
-      "line": 66
+      "line": 67
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.crystalaura.place.conditions.AirAboveCondition": {
@@ -8658,12 +8658,20 @@
       "line": 43
     }
   },
+  "net.ccbluex.liquidbounce.features.module.modules.player.autobuff.Buff.holdUse": {
+    "doc": "Holds the use key until the buff is no longer required or the item is no longer a valid target,\nso the loop cannot hang forever when neither condition changes (e.g. after a potion is consumed).",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autobuff/Buff.kt",
+      "line": 56
+    }
+  },
   "net.ccbluex.liquidbounce.features.module.modules.player.autobuff.Buff.runIfPossible": {
     "doc": "Try to run feature if possible, otherwise return false",
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autobuff/Buff.kt",
-      "line": 43
+      "line": 73
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.autobuff.ModuleAutoBuff.AutoSwap": {
@@ -8706,12 +8714,28 @@
       "line": 48
     }
   },
+  "net.ccbluex.liquidbounce.features.module.modules.player.autobuff.Player.isHealthRequirementMet": {
+    "doc": "Shared health-threshold check used by [HealthBasedBuff] and the health potions in [StatusEffectBasedBuff].",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autobuff/HealthBasedBuff.kt",
+      "line": 27
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.player.autobuff.features.Pot.calculateSplashRotation": {
+    "doc": "Calculates a rotation that lands the splash potion near the player's predicted position.\n\nThe potion inherits the player's velocity, so while moving the landing point drifts. We simulate the\nexact potion trajectory and iteratively adjust the yaw towards the predicted landing spot.\n\nponytail: pitch stays near vertical and relies on the splash's large radius to cover the player;\n  precise landing control / throwing against walls (see #2051) is deferred.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autobuff/features/Pot.kt",
+      "line": 163
+    }
+  },
   "net.ccbluex.liquidbounce.features.module.modules.player.autobuff.features.Pot.isSplashNearby": {
     "doc": "Check if splash potion is nearby to prevent throwing a potion that is not needed",
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autobuff/features/Pot.kt",
-      "line": 179
+      "line": 230
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.autobuff.features.Pot.isStandingInsideLingering": {
@@ -8719,7 +8743,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autobuff/features/Pot.kt",
-      "line": 167
+      "line": 218
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.autoqueue.trigger.AutoQueueTriggerItem": {
@@ -10351,7 +10375,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleBlockIn.kt",
-      "line": 49
+      "line": 55
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.ModuleBlockTrap": {
@@ -10498,7 +10522,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleProjectilePuncher.kt",
-      "line": 50
+      "line": 51
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.ModuleProjectilePuncher.repeatable": {
@@ -10506,7 +10530,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleProjectilePuncher.kt",
-      "line": 83
+      "line": 84
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.ModuleStrongholdFinder": {
@@ -10669,7 +10693,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autofarm/ModuleAutoFarm.kt",
-      "line": 367
+      "line": 366
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.autofarm.ModuleAutoFarm.updateTargetToHarvest": {
@@ -10677,7 +10701,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autofarm/ModuleAutoFarm.kt",
-      "line": 261
+      "line": 260
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.autofarm.harvestAction": {
@@ -14905,7 +14929,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 421
+      "line": 422
     }
   },
   "net.ccbluex.liquidbounce.utils.block.AABB.isBlockAtPosition": {
@@ -14913,7 +14937,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 399
+      "line": 400
     }
   },
   "net.ccbluex.liquidbounce.utils.block.AbstractBlockLocationTracker": {
@@ -15009,7 +15033,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 624
+      "line": 625
     }
   },
   "net.ccbluex.liquidbounce.utils.block.BlockGetter.raycast": {
@@ -15017,15 +15041,30 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 303
+      "line": 304
     }
   },
   "net.ccbluex.liquidbounce.utils.block.BlockPos.isBlockedByEntitiesReturnCrystal": {
-    "doc": "Like [isBlockedByEntities] but it returns a blocking end crystal if present.",
+    "doc": "Checks whether the position is blocked for placing a block and returns a blocking end crystal if present.",
+    "params": {
+      "buildingOnly": "when `true` (default) only entities that block building (`Entity.blocksBuilding`)\n  count, matching vanilla block placement; when `false` every entity counts, matching vanilla\n  end crystal placement."
+    },
+    "returns": "`[blocked, crystal?]`",
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 695
+      "line": 711
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.block.BlockPos.isUnobstructed": {
+    "doc": "Checks whether the position is unobstructed for placing a block.",
+    "see": [
+      "net.minecraft.world.level.EntityGetter.isUnobstructed"
+    ],
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
+      "line": 684
     }
   },
   "net.ccbluex.liquidbounce.utils.block.BlockPos.searchBedLayer": {
@@ -15033,7 +15072,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 236
+      "line": 237
     }
   },
   "net.ccbluex.liquidbounce.utils.block.BlockPos.searchLayer": {
@@ -15042,7 +15081,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 262
+      "line": 263
     }
   },
   "net.ccbluex.liquidbounce.utils.block.CachedBlockPosSpheres.rangeLong": {
@@ -15164,7 +15203,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 199
+      "line": 200
     }
   },
   "net.ccbluex.liquidbounce.utils.block.Vec3.searchBlocksInRangeSorted": {
@@ -15173,7 +15212,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 220
+      "line": 221
     }
   },
   "net.ccbluex.liquidbounce.utils.block.aStarShortestPath": {
@@ -15181,7 +15220,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/GraphSearch.kt",
-      "line": 51
+      "line": 52
     }
   },
   "net.ccbluex.liquidbounce.utils.block.bed.BedState": {
@@ -15197,7 +15236,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/Dijkstra.kt",
-      "line": 29
+      "line": 30
     }
   },
   "net.ccbluex.liquidbounce.utils.block.doBreak": {
@@ -15205,7 +15244,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 555
+      "line": 556
     }
   },
   "net.ccbluex.liquidbounce.utils.block.doPlacement": {
@@ -15219,7 +15258,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 485
+      "line": 486
     }
   },
   "net.ccbluex.liquidbounce.utils.block.handleActionsOnAccept": {
@@ -15231,7 +15270,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 532
+      "line": 533
     }
   },
   "net.ccbluex.liquidbounce.utils.block.hole.Hole.OneByOne": {
@@ -15271,7 +15310,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 155
+      "line": 156
     }
   },
   "net.ccbluex.liquidbounce.utils.block.isInteractable": {
@@ -15279,7 +15318,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 638
+      "line": 639
     }
   },
   "net.ccbluex.liquidbounce.utils.block.liquid.BlockState.canPlaceStandaloneFluid": {
@@ -15347,7 +15386,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 163
+      "line": 164
     }
   },
   "net.ccbluex.liquidbounce.utils.block.placer.BlockPlacer.addToQueue": {
@@ -15359,7 +15398,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt",
-      "line": 422
+      "line": 471
     }
   },
   "net.ccbluex.liquidbounce.utils.block.placer.BlockPlacer.blocks": {
@@ -15367,7 +15406,15 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt",
-      "line": 142
+      "line": 145
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.block.placer.BlockPlacer.canClickPlace": {
+    "doc": "Checks whether the player can currently click-place a block at [pos] from their position.\n\nThis mirrors the exact placement check done in [scheduleCurrentPlacements] (same search options,\nincluding face-away handling), so a support path never ends at a position the actual placement\nwould reject. On top of that it requires the chosen click point to be unobstructed from the\nplayer's current view — if it is not visible (e.g. the target face is occluded by the block\nitself), the position is rejected and the support search keeps going past it.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt",
+      "line": 425
     }
   },
   "net.ccbluex.liquidbounce.utils.block.placer.BlockPlacer.clear": {
@@ -15375,7 +15422,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt",
-      "line": 442
+      "line": 491
     }
   },
   "net.ccbluex.liquidbounce.utils.block.placer.BlockPlacer.constructFailResult": {
@@ -15383,7 +15430,15 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt",
-      "line": 89
+      "line": 92
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.block.placer.BlockPlacer.createSearchOptions": {
+    "doc": "Builds the target-finding options used for block placements, shared by the actual placement\n([scheduleCurrentPlacements]) and the support path reachability check ([canClickPlace]).",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt",
+      "line": 387
     }
   },
   "net.ccbluex.liquidbounce.utils.block.placer.BlockPlacer.disable": {
@@ -15391,7 +15446,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt",
-      "line": 450
+      "line": 499
     }
   },
   "net.ccbluex.liquidbounce.utils.block.placer.BlockPlacer.placedRenderer": {
@@ -15399,7 +15454,15 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt",
-      "line": 129
+      "line": 132
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.block.placer.BlockPlacer.raycastHitResult": {
+    "doc": "Traces from the player's eyes along [rotation] and returns the hit result if it hits [pos].",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt",
+      "line": 398
     }
   },
   "net.ccbluex.liquidbounce.utils.block.placer.BlockPlacer.removeFromQueue": {
@@ -15410,7 +15473,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt",
-      "line": 434
+      "line": 483
     }
   },
   "net.ccbluex.liquidbounce.utils.block.placer.BlockPlacer.sneak": {
@@ -15418,7 +15481,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt",
-      "line": 95
+      "line": 98
     }
   },
   "net.ccbluex.liquidbounce.utils.block.placer.BlockPlacer.targetRenderer": {
@@ -15426,7 +15489,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt",
-      "line": 124
+      "line": 127
     }
   },
   "net.ccbluex.liquidbounce.utils.block.placer.BlockPlacer.update": {
@@ -15434,7 +15497,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt",
-      "line": 399
+      "line": 448
     }
   },
   "net.ccbluex.liquidbounce.utils.block.placer.CrystalDestroyFeature.onDisable": {
@@ -15482,7 +15545,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/SupportFeature.kt",
-      "line": 42
+      "line": 43
     }
   },
   "net.ccbluex.liquidbounce.utils.block.placer.SupportFeature.findSupport": {
@@ -15490,7 +15553,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/SupportFeature.kt",
-      "line": 60
+      "line": 61
     }
   },
   "net.ccbluex.liquidbounce.utils.block.targetfinding.BlockOffsetOptions": {
@@ -15573,6 +15636,14 @@
       "line": 171
     }
   },
+  "net.ccbluex.liquidbounce.utils.block.targetfinding.ClickableCenterTargetPositionFactory": {
+    "doc": "Like [CenterTargetPositionFactory], but prefers an unobstructed point on the face.\n\nThe face center can be occluded by the block itself when only a small part of the face is visible\nfrom the player's eyes. In that case the click point (and therefore the rotation / reach checks)\nwould be wrong, so fall back to sampling the face for the first visible point. If nothing is\nvisible, the center is kept so wall-range placements keep working.",
+    "kind": "object",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/FaceTargetPositionFactory.kt",
+      "line": 218
+    }
+  },
   "net.ccbluex.liquidbounce.utils.block.targetfinding.FaceHandlingOptions": {
     "doc": "Decides how scaffold processes the faces of the considered target blocks.",
     "params": {
@@ -15593,15 +15664,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/FaceTargetPositionFactory.kt",
-      "line": 64
-    }
-  },
-  "net.ccbluex.liquidbounce.utils.block.targetfinding.FaceTargetPositionFactory.trimFace": {
-    "doc": "Trims a face to be only as wide as the config allows it to be",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/FaceTargetPositionFactory.kt",
-      "line": 69
+      "line": 90
     }
   },
   "net.ccbluex.liquidbounce.utils.block.targetfinding.NearestRotationTargetPositionFactory": {
@@ -15609,7 +15672,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/FaceTargetPositionFactory.kt",
-      "line": 107
+      "line": 97
     }
   },
   "net.ccbluex.liquidbounce.utils.block.targetfinding.PlayerLocationOnPlacement": {
@@ -15629,7 +15692,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/FaceTargetPositionFactory.kt",
-      "line": 52
+      "line": 53
     }
   },
   "net.ccbluex.liquidbounce.utils.block.targetfinding.StabilizedRotationTargetPositionFactory": {
@@ -15637,7 +15700,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/FaceTargetPositionFactory.kt",
-      "line": 161
+      "line": 147
     }
   },
   "net.ccbluex.liquidbounce.utils.block.targetfinding.getTargetPlanForPositionAndDirection": {
@@ -15647,6 +15710,17 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/TargetFinding.kt",
       "line": 225
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.block.targetfinding.trimFace": {
+    "doc": "Trims a face to be only as wide as the config allows it to be",
+    "params": {
+      "scale": "fraction of the face's width removed on each side"
+    },
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/targetfinding/FaceTargetPositionFactory.kt",
+      "line": 63
     }
   },
   "net.ccbluex.liquidbounce.utils.clicking.Clicker": {
@@ -16217,7 +16291,7 @@
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt",
-        "line": 189
+        "line": 190
       }
     },
     {
@@ -16225,7 +16299,7 @@
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt",
-        "line": 198
+        "line": 199
       }
     }
   ],
@@ -16253,7 +16327,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt",
-      "line": 180
+      "line": 181
     }
   },
   "net.ccbluex.liquidbounce.utils.combat.EntityTargetingInfo": {
@@ -16261,7 +16335,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt",
-      "line": 75
+      "line": 76
     }
   },
   "net.ccbluex.liquidbounce.utils.combat.Set<Targets>.isInteresting": {
@@ -16269,7 +16343,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt",
-      "line": 136
+      "line": 137
     }
   },
   "net.ccbluex.liquidbounce.utils.combat.TargetSelector.countTargets": {
@@ -16301,18 +16375,19 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt",
-      "line": 91
+      "line": 92
     }
   },
   "net.ccbluex.liquidbounce.utils.combat.attackEntity": {
     "doc": "",
+    "returns": "attacked or pierced",
     "see": [
       "net.minecraft.client.Minecraft.startAttack"
     ],
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt",
-      "line": 243
+      "line": 245
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.AABB.isOnMagmaBlock": {
@@ -16320,7 +16395,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
-      "line": 845
+      "line": 855
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.CachedPlayerSimulation": {
@@ -16336,7 +16411,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
-      "line": 396
+      "line": 406
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.Entity.doesCollideAt": {
@@ -16344,7 +16419,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
-      "line": 769
+      "line": 779
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.Entity.doesNotCollideBelow": {
@@ -16352,7 +16427,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
-      "line": 757
+      "line": 767
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.Entity.wouldFallIntoVoid": {
@@ -16360,7 +16435,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
-      "line": 776
+      "line": 786
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.FallingPlayer.CollisionResult": {
@@ -16470,7 +16545,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
-      "line": 718
+      "line": 728
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.LivingEntity.getBlockedDamage": {
@@ -16493,7 +16568,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
-      "line": 580
+      "line": 590
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.LivingEntity.getEffectiveDamage": {
@@ -16508,7 +16583,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
-      "line": 450
+      "line": 460
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.LivingEntity.getExplosionDamageFromEntity": {
@@ -16522,7 +16597,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
-      "line": 533
+      "line": 543
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.LivingEntity.getExposureToExplosion": {
@@ -16533,7 +16608,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
-      "line": 631
+      "line": 641
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.LocalPlayer.canStep": {
@@ -16552,7 +16627,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
-      "line": 706
+      "line": 716
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.PlayerSimulationCache.updatePlayerCache": {
@@ -16828,7 +16903,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
-      "line": 835
+      "line": 845
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.interactBlock": {
@@ -16882,6 +16957,17 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
       "line": 249
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.entity.isWithinWorldBorder": {
+    "doc": "Check if the entity is inside the world border.\n\nMirrors the server-side attack/interact border check.",
+    "see": [
+      "net.minecraft.server.network.ServerGamePacketListenerImpl.handleAttack"
+    ],
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
+      "line": 389
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.resolveStepUpMovement": {
@@ -16954,7 +17040,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 203
+      "line": 188
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputBind.Modifier.isActive": {
@@ -16962,7 +17048,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 240
+      "line": 225
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputBind.Modifier.isAnyPressed": {
@@ -16970,7 +17056,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 245
+      "line": 230
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputBind.Modifier.platformRenderName": {
@@ -16978,7 +17064,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 250
+      "line": 235
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputBind.getNewState": {
@@ -16991,21 +17077,12 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 180
+      "line": 165
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputBind.isUnbound": {
     "doc": "Checks if the key is unbound (i.e., set to UNKNOWN_KEY).",
     "returns": "True if the key is unbound, false otherwise.",
-    "kind": "property",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 95
-    }
-  },
-  "net.ccbluex.liquidbounce.utils.input.InputBind.keyName": {
-    "doc": "Retrieves the name of the key in uppercase format, excluding the category prefixes.",
-    "returns": "A formatted string representing the bound key's name, or \"None\" if unbound.",
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
@@ -17022,7 +17099,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 105
+      "line": 90
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputBind.matchesKeyPress": {
@@ -17030,7 +17107,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 136
+      "line": 121
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputBind.matchesKeyRelease": {
@@ -17038,7 +17115,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 145
+      "line": 130
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputBind.matchesModifiers": {
@@ -17052,7 +17129,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 129
+      "line": 114
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputBind.matchesMouse": {
@@ -17064,7 +17141,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 119
+      "line": 104
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputBind.matchesMousePress": {
@@ -17072,7 +17149,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 156
+      "line": 141
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputBind.matchesMouseRelease": {
@@ -17080,7 +17157,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 165
+      "line": 150
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputConstants.Key.toModifierOrNull": {
@@ -17089,7 +17166,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt",
-      "line": 105
+      "line": 112
     }
   },
   "net.ccbluex.liquidbounce.utils.input.InputTracker": {
@@ -17251,7 +17328,7 @@
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-        "line": 305
+        "line": 290
       }
     },
     {
@@ -17259,7 +17336,7 @@
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-        "line": 310
+        "line": 295
       }
     }
   ],
@@ -17268,29 +17345,29 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt",
-      "line": 316
+      "line": 301
     }
   },
   "net.ccbluex.liquidbounce.utils.input.availableKeyboardKeys": {
-    "doc": "Retrieves a set of reduced mouse input names available in InputUtil.",
-    "returns": "A set of simplified mouse input names.",
-    "kind": "property",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt",
-      "line": 83
-    }
-  },
-  "net.ccbluex.liquidbounce.utils.input.availableMouseKeys": {
     "doc": "Retrieves a set of reduced keyboard input names available in InputUtil.",
     "returns": "A set of simplified keyboard input names.",
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt",
-      "line": 93
+      "line": 90
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.input.availableMouseKeys": {
+    "doc": "Retrieves a set of reduced mouse input names available in InputUtil.",
+    "returns": "A set of simplified mouse input names.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt",
+      "line": 100
     }
   },
   "net.ccbluex.liquidbounce.utils.input.inputByName": {
-    "doc": "Translates a key name to an InputUtil.Key using InputConstants key codes.\nIf the name is unrecognized, defaults to NONE.\n\nThe input can be provided in the following formats:\n- Full key name: \"key.mouse.left\", \"key.keyboard.a\", \"key.keyboard.keypad.decimal\"\n- Abbreviated: \"a\" -> \"key.keyboard.a\", \"lshift\" -> \"key.keyboard.left_shift\"",
+    "doc": "Translates a key name to an InputUtil.Key using InputConstants key codes.\nIf the name is unrecognized, defaults to NONE.\n\nThe input can be provided in the following formats:\n- Full key name: \"key.mouse.left\", \"key.keyboard.a\", \"key.keyboard.keypad.decimal\"\n- Abbreviated: \"a\" -> \"key.keyboard.a\", \"left_shift\" -> \"key.keyboard.left.shift\"",
     "params": {
       "name": "The key name as a string."
     },
@@ -17307,7 +17384,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt",
-      "line": 63
+      "line": 70
     }
   },
   "net.ccbluex.liquidbounce.utils.input.reduceInputName": {
@@ -17319,7 +17396,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt",
-      "line": 73
+      "line": 80
     }
   },
   "net.ccbluex.liquidbounce.utils.inventory.AnchoredHotbarSwapController": {
@@ -17533,12 +17610,20 @@
       "line": 48
     }
   },
+  "net.ccbluex.liquidbounce.utils.inventory.Iterable<ItemSlot>.mergeableCapacityFor": {
+    "doc": "Exact total capacity of this iterable to store [itemStack] (empty slots count as [ItemStack.maxStackSize], mergeable\nslots as their remaining space). Contract: the slot currently holding [itemStack] must NOT be part of this iterable,\notherwise its own remaining capacity would be double-counted and the result overestimated.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt",
+      "line": 63
+    }
+  },
   "net.ccbluex.liquidbounce.utils.inventory.Iterable<T>.findBestToolToMineBlock": {
     "doc": "Finds the best slot in this iterable for mining [blockState] using `mc.player` as baseline.\n\nThe result depends on current player context (e.g. creative state and durability filtering),\nthen ranks candidates by destroy speed and nearby-slot preference.",
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt",
-      "line": 106
+      "line": 112
     }
   },
   "net.ccbluex.liquidbounce.utils.inventory.PlayerInventoryConstraints": {
@@ -18091,7 +18176,15 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/geometry/AlignedFace.kt",
-      "line": 36
+      "line": 37
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.math.geometry.AlignedFace.samplePointOnFace": {
+    "doc": "Samples a point on the face by spreading [a] and [b] over its two variable axes.\n\nThe first variable axis (in x, y, z order) is scaled by [a], the second by [b].\nConstant (zero width) axes stay pinned to their `from` coordinate.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/geometry/AlignedFace.kt",
+      "line": 98
     }
   },
   "net.ccbluex.liquidbounce.utils.math.geometry.LinearGeometry3": {

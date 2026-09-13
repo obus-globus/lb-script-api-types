@@ -33,6 +33,7 @@ export class ClientChat extends Object {
     static notification(title: string, message: string, severity: NotificationEvent$Severity): NotificationEvent;
     static notification(title: string, message: Component, severity: NotificationEvent$Severity): NotificationEvent;
     static notification(title: Component, message: string, severity: NotificationEvent$Severity): NotificationEvent;
+    static notification(title: Component, message: Component, severity: NotificationEvent$Severity): NotificationEvent;
     static obfuscated(self: MutableComponent, value: boolean | null): MutableComponent;
     static onClick(self: MutableComponent, event: ClickEvent | null): MutableComponent;
     static onClickRun(self: MutableComponent, callback: () => void): MutableComponent;

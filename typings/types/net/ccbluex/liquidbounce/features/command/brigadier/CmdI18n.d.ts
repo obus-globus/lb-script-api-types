@@ -3,7 +3,7 @@ import type { MutableComponent } from '../../../../../../net/minecraft/network/c
 /**
  * Shared i18n for {@link CmdLiteralScope} and {@link CmdChainScope}; helpers take this as receiver.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt#L84 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt:84}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt#L84 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt:84}
  */
 export interface CmdI18n extends Object{
     readonly path: string;
@@ -12,7 +12,7 @@ export interface CmdI18n extends Object{
      * is used, so {@link key} must carry the subcommand path itself (e.g. `"clear.noFriends"`
      * for `.friend clear` -> `liquidbounce.command.friend.clear.noFriends`).
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt#L92 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt:92}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt#L92 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDsl.kt:92}
      */
     t(key: string, ...args: (Object | null)[]): MutableComponent;
 }

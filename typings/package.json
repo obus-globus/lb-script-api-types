@@ -1,6 +1,6 @@
 {
   "name": "@wunk/lb-script-api-types",
-  "version": "0.40.1006",
+  "version": "0.40.1007",
   "description": "TypeScript types for the LiquidBounce (nextgen, MC 1.21+) GraalJS script API - a heavily-refined fork of CCBlueX's @ccbluex/liquidbounce-script-api with typed per-event on() overloads, KDoc->TSDoc docs, binding fixes, and ambient globals.",
   "license": "GPL-3.0-or-later",
   "author": "obus-globus",
@@ -62,7 +62,7 @@
   "liquidbounce": {
     "version": "0.40.1",
     "minecraft": "26.2",
-    "commit": "f0d427e933b0c39374cea4bd371582db202074f3",
-    "ref": "v0.40.0-20-gf0d427e93"
+    "commit": "6442c02e147c8fd9657f94f1554f63e786c2a3c0",
+    "ref": "v0.40.0-29-g6442c02e1"
   }
 }

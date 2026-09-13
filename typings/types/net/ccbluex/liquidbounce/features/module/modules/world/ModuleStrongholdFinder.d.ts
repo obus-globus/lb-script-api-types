@@ -24,7 +24,7 @@ import type { Block } from '../../../../../../../net/minecraft/world/level/block
  *
  * {@link Article}(https://github.com/Ninjabrain1/Ninjabrain-Bot/blob/main/triangulation.pdf)
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleStrongholdFinder.kt#L80 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleStrongholdFinder.kt:80}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleStrongholdFinder.kt#L80 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleStrongholdFinder.kt:80}
  */
 export class ModuleStrongholdFinder extends ClientModule {
     static INSTANCE: ModuleStrongholdFinder;

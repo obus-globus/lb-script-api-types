@@ -1381,6 +1381,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.features.module.modules.player.antivoid.mode.AntiVoidUseItemMode": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/antivoid/mode/AntiVoidUseItemMode").AntiVoidUseItemMode;
     "net.ccbluex.liquidbounce.features.module.modules.player.autobuff.Buff": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/autobuff/Buff").Buff;
     "net.ccbluex.liquidbounce.features.module.modules.player.autobuff.HealthBasedBuff": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/autobuff/HealthBasedBuff").HealthBasedBuff;
+    "net.ccbluex.liquidbounce.features.module.modules.player.autobuff.HealthBasedBuffKt": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/autobuff/HealthBasedBuffKt").HealthBasedBuffKt;
     "net.ccbluex.liquidbounce.features.module.modules.player.autobuff.ModuleAutoBuff": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/autobuff/ModuleAutoBuff").ModuleAutoBuff;
     "net.ccbluex.liquidbounce.features.module.modules.player.autobuff.ModuleAutoBuff$AutoSwap": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/autobuff/ModuleAutoBuff$AutoSwap").ModuleAutoBuff$AutoSwap;
     "net.ccbluex.liquidbounce.features.module.modules.player.autobuff.ModuleAutoBuff$Rotations": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/autobuff/ModuleAutoBuff$Rotations").ModuleAutoBuff$Rotations;
@@ -1835,6 +1836,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.features.module.modules.world.ModuleAutoTool$ToolSelectorMode": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/world/ModuleAutoTool$ToolSelectorMode").ModuleAutoTool$ToolSelectorMode;
     "net.ccbluex.liquidbounce.features.module.modules.world.ModuleBedDefender": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/world/ModuleBedDefender").ModuleBedDefender;
     "net.ccbluex.liquidbounce.features.module.modules.world.ModuleBlockIn": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/world/ModuleBlockIn").ModuleBlockIn;
+    "net.ccbluex.liquidbounce.features.module.modules.world.ModuleBlockIn$DisableOn": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/world/ModuleBlockIn$DisableOn").ModuleBlockIn$DisableOn;
     "net.ccbluex.liquidbounce.features.module.modules.world.ModuleBlockIn$Order": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/world/ModuleBlockIn$Order").ModuleBlockIn$Order;
     "net.ccbluex.liquidbounce.features.module.modules.world.ModuleBlockTrap": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/world/ModuleBlockTrap").ModuleBlockTrap;
     "net.ccbluex.liquidbounce.features.module.modules.world.ModuleBlockTrap$DoublePlace": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/world/ModuleBlockTrap$DoublePlace").ModuleBlockTrap$DoublePlace;
@@ -2454,10 +2456,11 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.utils.block.targetfinding.BlockTargetPlan": typeof import("../types/net/ccbluex/liquidbounce/utils/block/targetfinding/BlockTargetPlan").BlockTargetPlan;
     "net.ccbluex.liquidbounce.utils.block.targetfinding.BlockTargetingMode": typeof import("../types/net/ccbluex/liquidbounce/utils/block/targetfinding/BlockTargetingMode").BlockTargetingMode;
     "net.ccbluex.liquidbounce.utils.block.targetfinding.CenterTargetPositionFactory": typeof import("../types/net/ccbluex/liquidbounce/utils/block/targetfinding/CenterTargetPositionFactory").CenterTargetPositionFactory;
+    "net.ccbluex.liquidbounce.utils.block.targetfinding.ClickableCenterTargetPositionFactory": typeof import("../types/net/ccbluex/liquidbounce/utils/block/targetfinding/ClickableCenterTargetPositionFactory").ClickableCenterTargetPositionFactory;
     "net.ccbluex.liquidbounce.utils.block.targetfinding.DiagonalYawTargetPositionFactory": typeof import("../types/net/ccbluex/liquidbounce/utils/block/targetfinding/DiagonalYawTargetPositionFactory").DiagonalYawTargetPositionFactory;
     "net.ccbluex.liquidbounce.utils.block.targetfinding.EdgePointTargetPositionFactory": typeof import("../types/net/ccbluex/liquidbounce/utils/block/targetfinding/EdgePointTargetPositionFactory").EdgePointTargetPositionFactory;
     "net.ccbluex.liquidbounce.utils.block.targetfinding.FaceHandlingOptions": typeof import("../types/net/ccbluex/liquidbounce/utils/block/targetfinding/FaceHandlingOptions").FaceHandlingOptions;
-    "net.ccbluex.liquidbounce.utils.block.targetfinding.FaceTargetPositionFactory": typeof import("../types/net/ccbluex/liquidbounce/utils/block/targetfinding/FaceTargetPositionFactory").FaceTargetPositionFactory;
+    "net.ccbluex.liquidbounce.utils.block.targetfinding.FaceTargetPositionFactoryKt": typeof import("../types/net/ccbluex/liquidbounce/utils/block/targetfinding/FaceTargetPositionFactoryKt").FaceTargetPositionFactoryKt;
     "net.ccbluex.liquidbounce.utils.block.targetfinding.NearestRotationTargetPositionFactory": typeof import("../types/net/ccbluex/liquidbounce/utils/block/targetfinding/NearestRotationTargetPositionFactory").NearestRotationTargetPositionFactory;
     "net.ccbluex.liquidbounce.utils.block.targetfinding.PlacementPlan": typeof import("../types/net/ccbluex/liquidbounce/utils/block/targetfinding/PlacementPlan").PlacementPlan;
     "net.ccbluex.liquidbounce.utils.block.targetfinding.PlayerLocationOnPlacement": typeof import("../types/net/ccbluex/liquidbounce/utils/block/targetfinding/PlayerLocationOnPlacement").PlayerLocationOnPlacement;

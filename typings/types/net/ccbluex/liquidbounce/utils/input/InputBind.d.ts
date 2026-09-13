@@ -14,7 +14,7 @@ import type { InputBind$Modifier } from '../../../../../net/ccbluex/liquidbounce
  * @param boundKey The key that is bound to an action.
  * @param action The action triggered by the bound key (e.g., TOGGLE, HOLD).
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:50}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:50}
  */
 export class InputBind extends Record {
     static Companion: InputBind$Companion;
@@ -26,7 +26,7 @@ export class InputBind extends Record {
      * @param code The key or button code.
      * @param action The action to bind to this key.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L64 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:64}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L64 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:64}
      */
     constructor(boundKey: InputConstants$Key, action: InputBind$BindAction, modifiers: InputBind$Modifier[])
     constructor(type: InputConstants$Type, code: number, action: InputBind$BindAction)
@@ -40,17 +40,9 @@ export class InputBind extends Record {
      *
      * @returns True if the key is unbound, false otherwise.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L95 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:95}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L80 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:80}
      */
     /*not mapped: */ isUnbound(): boolean;
-    /**
-     * Retrieves the name of the key in uppercase format, excluding the category prefixes.
-     *
-     * @returns A formatted string representing the bound key's name, or "None" if unbound.
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L80 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:80}
-     */
-    /*not mapped: */ keyName(): string;
     // private modifiers: InputBind$Modifier[];
     /*not mapped: */ modifiers(): InputBind$Modifier[];
     component1(): InputConstants$Key;
@@ -65,7 +57,7 @@ export class InputBind extends Record {
      * @param currentState The current state.
      * @returns The new state.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L180 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:180}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L165 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:165}
      */
     getNewState(event: KeyboardKeyEvent, currentState: boolean): boolean;
     hashCode(): number;
@@ -76,19 +68,19 @@ export class InputBind extends Record {
      * @param scanCode The scan code to check.
      * @returns True if the key code or scan code matches the bound key, false otherwise.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L105 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:105}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L90 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:90}
      */
     matchesKey(keyCode: number, scanCode: number): boolean;
     /**
      * Determines if a keyboard press event matches this bind key and required modifiers.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L136 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:136}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L121 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:121}
      */
     matchesKeyPress(event: KeyboardKeyEvent): boolean;
     /**
      * Determines if a keyboard release affects this bind key or one of its required modifiers.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L145 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:145}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L130 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:130}
      */
     matchesKeyRelease(event: KeyboardKeyEvent): boolean;
     /**
@@ -97,7 +89,7 @@ export class InputBind extends Record {
      * @param mods The bits of modifiers.
      * @see InputConstants
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L129 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:129}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L114 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:114}
      */
     matchesModifiers(mods: number): boolean;
     /**
@@ -106,19 +98,19 @@ export class InputBind extends Record {
      * @param code The mouse button code to check.
      * @returns True if the mouse button matches the bound key, false otherwise.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L119 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:119}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L104 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:104}
      */
     matchesMouse(code: number): boolean;
     /**
      * Determines if a mouse press event matches this bind button and required modifiers.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L156 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:156}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L141 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:141}
      */
     matchesMousePress(event: MouseButtonEvent): boolean;
     /**
      * Determines if a mouse release affects this bind button or one of its required modifiers.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L165 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:165}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L150 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:150}
      */
     matchesMouseRelease(event: MouseButtonEvent): boolean;
     toString(): string;

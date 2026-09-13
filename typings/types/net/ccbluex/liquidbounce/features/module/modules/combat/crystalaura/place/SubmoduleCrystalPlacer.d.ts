@@ -1,3 +1,4 @@
+import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { Pair } from '../../../../../../../../../kotlin/Pair.d.ts'
 import type { ToggleableValueGroup } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ToggleableValueGroup.d.ts'
 import type { SwitchMode } from '../../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/SwitchMode.d.ts'
@@ -25,7 +26,7 @@ export class SubmoduleCrystalPlacer extends ToggleableValueGroup {
      * Outdated setting.
      * Using this is normally not recommended.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/f0d427e933b0c39374cea4bd371582db202074f3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/place/SubmoduleCrystalPlacer.kt#L66 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/place/SubmoduleCrystalPlacer.kt:66}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/place/SubmoduleCrystalPlacer.kt#L67 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/place/SubmoduleCrystalPlacer.kt:67}
      */
     readonly onlyAbove: boolean;
     readonly placementRenderer: PlacementRenderer;
@@ -43,6 +44,6 @@ export class SubmoduleCrystalPlacer extends ToggleableValueGroup {
     // private getSlot(): number | null;
     // private queuePlacing(rotation: RotationWithVector, targetPos: BlockPos, side: Direction): void;
     // private removeFromRenderer(): void | null;
-    tick(excludeIds: number[] | null): void;
+    tick(excludeIds: (Object | null)[] | null): void;
     // private updatePrevious(rotation: RotationWithVector): void;
 }
