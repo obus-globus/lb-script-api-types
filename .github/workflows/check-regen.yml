@@ -356,8 +356,11 @@ jobs:
           git push origin HEAD:main "v$VER"
           LB_BLOCK="$(node -p "JSON.stringify(require('./typings/package.json').liquidbounce, null, 2)")"
           gh release create "v$VER" --title "v$VER" --notes "$(printf 'Automated types build %s (LiquidBounce %s / MC %s).\n\nProvenance:\n```json\n%s\n```' "$VER" "$LB_VER" "$LB_MC" "$LB_BLOCK")"
-          # Publish via the single trusted-publisher workflow (OIDC, no token).
-          gh workflow run npm-publish.yml --ref main -f dry_run=false
+          # Publish via the single trusted-publisher workflow (OIDC, no token). Dispatched on
+          # the tag, not main: github resolves the ref when the dispatch is handled, which has
+          # come back as the commit before the push above and published nothing. expect_version
+          # makes that mismatch fail the run instead of passing quietly.
+          gh workflow run npm-publish.yml --ref "v$VER" -f dry_run=false -f expect_version="$VER"
           echo "Auto-released **v$VER** on main; dispatched npm-publish.yml to publish." >> "$GITHUB_STEP_SUMMARY"
 
       # 6b. Not clean / not enabled -> push a per-build branch for human review.
