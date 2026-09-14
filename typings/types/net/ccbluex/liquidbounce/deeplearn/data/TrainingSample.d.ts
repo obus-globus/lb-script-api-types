@@ -2,7 +2,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 /**
  * A training sample that can write its values directly into flat arrays.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/TrainingSample.kt#L23 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/TrainingSample.kt:23}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/TrainingSample.kt#L23 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/TrainingSample.kt:23}
  */
 export interface TrainingSample extends Object{
     readonly asInput: number[];
@@ -10,25 +10,25 @@ export interface TrainingSample extends Object{
     /**
      * Number of input values in this sample.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/TrainingSample.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/TrainingSample.kt:31}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/TrainingSample.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/TrainingSample.kt:31}
      */
     readonly inputSize: number;
     /**
      * Number of output values in this sample.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/TrainingSample.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/TrainingSample.kt:39}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/TrainingSample.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/TrainingSample.kt:39}
      */
     readonly outputSize: number;
     /**
      * Writes input values at {@link fromIndex} and returns the exclusive end index.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/TrainingSample.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/TrainingSample.kt:42}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/TrainingSample.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/TrainingSample.kt:42}
      */
     fillAsInput(dest: number[], fromIndex: number): number;
     /**
      * Writes output values at {@link fromIndex} and returns the exclusive end index.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/TrainingSample.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/TrainingSample.kt:45}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/TrainingSample.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/data/TrainingSample.kt:45}
      */
     fillAsOutput(dest: number[], fromIndex: number): number;
 }

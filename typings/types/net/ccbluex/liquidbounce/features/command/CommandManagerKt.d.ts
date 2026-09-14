@@ -11,7 +11,7 @@ export class CommandManagerKt extends Object {
      * This preserves the previous case-insensitive behaviour of command paths while keeping
      * parameter values (e.g. `.rename MyItem`) intact.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L529 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:529}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L529 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:529}
      */
     static lowercaseCommandPath(cmd: string, tokenCount: number): string;
     /**
@@ -27,7 +27,7 @@ export class CommandManagerKt extends Object {
      * mirroring vanilla's error rendering. Usage is attached here because argument
      * types do not see the command tree at parse time.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L618 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:618}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L618 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:618}
      */
     static mapParseFailure(parse: ParseResults<ClientCommandSource>, commandName: string, usage: Component[], unknownHints: Component[]): CommandException;
     /**
@@ -35,7 +35,7 @@ export class CommandManagerKt extends Object {
      * the previous tokenizer behaviour that ignored repeated spaces (`.cmd a   b` was parsed
      * as two tokens). Content inside quotes is preserved verbatim.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L564 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:564}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L564 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:564}
      */
     static normalizeCommandSpaces(input: string): string;
 }

@@ -4,7 +4,7 @@ export class CommandManager$GlobalSettings extends ValueGroup {
     /**
      * How many hints should we give for unknown commands?
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L120 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:120}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L120 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:120}
      */
     readonly hintCount: number;
     /**
@@ -17,7 +17,7 @@ export class CommandManager$GlobalSettings extends ValueGroup {
      * prefix (.)
      * ```
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L115 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:115}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L115 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:115}
      */
     prefix: string;
 }

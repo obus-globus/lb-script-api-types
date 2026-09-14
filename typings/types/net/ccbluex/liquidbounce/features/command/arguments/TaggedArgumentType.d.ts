@@ -10,7 +10,7 @@ import type { TaggedArgumentType$Companion } from '../../../../../../net/ccbluex
 /**
  * Single-choice argument over an enum-like set of tagged values: the tag is matched case-insensitively.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt#L104 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt:104}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt#L104 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt:104}
  */
 export class TaggedArgumentType<T extends Tagged> extends Object implements ArgumentType<T> {
     static Companion: TaggedArgumentType$Companion;

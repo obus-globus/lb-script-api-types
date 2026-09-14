@@ -8,7 +8,7 @@ import type { ClientCommandSource } from '../../../../../../net/ccbluex/liquidbo
  * A command executor declared by either {@link CmdLiteralScope.exec} or
  * {@link CmdChainScope.exec}.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDslRuntime.kt#L168 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDslRuntime.kt:168}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDslRuntime.kt#L168 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/CommandDslRuntime.kt:168}
  */
 export class CmdExecutorSpec extends Object implements ChainElement {
     constructor(command: (param0: CommandContext<ClientCommandSource>) => number)

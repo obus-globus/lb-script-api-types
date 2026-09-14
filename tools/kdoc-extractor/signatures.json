@@ -19950,7 +19950,7 @@
         "returns": "CompletableFuture<Suggestions>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt",
-          "line": 133
+          "line": 135
         }
       }
     ],
@@ -114070,6 +114070,35 @@
         }
       }
     ],
+    "net.ccbluex.liquidbounce.utils.render.trajectory.HeldItemTrajectoryResolver.bowUsageDuration": [
+      {
+        "params": [
+          {
+            "name": "alwaysShowBow",
+            "type": "Boolean",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "drawing",
+            "type": "Boolean",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "ticksUsingItem",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Int?",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/HeldItemTrajectoryResolver.kt",
+          "line": 130
+        }
+      }
+    ],
     "net.ccbluex.liquidbounce.utils.render.trajectory.HeldItemTrajectoryResolver.getShotYawOffsets": [
       {
         "params": [
@@ -114078,12 +114107,18 @@
             "type": "Int",
             "nullable": false,
             "vararg": false
+          },
+          {
+            "name": "multishotLevel",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
           }
         ],
         "returns": "FloatArray",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/HeldItemTrajectoryResolver.kt",
-          "line": 145
+          "line": 148
         }
       }
     ],
@@ -114100,7 +114135,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/HeldItemTrajectoryResolver.kt",
-          "line": 127
+          "line": 126
         }
       }
     ],
@@ -114129,7 +114164,7 @@
         "returns": "TrajectoryDescriptor?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/HeldItemTrajectoryResolver.kt",
-          "line": 116
+          "line": 115
         }
       }
     ],
@@ -114164,7 +114199,7 @@
         "returns": "List<TrajectoryShotDescriptor>?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/HeldItemTrajectoryResolver.kt",
-          "line": 43
+          "line": 45
         }
       }
     ],
@@ -114193,7 +114228,7 @@
         "returns": "List<TrajectoryShotDescriptor>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/HeldItemTrajectoryResolver.kt",
-          "line": 131
+          "line": 136
         }
       }
     ],

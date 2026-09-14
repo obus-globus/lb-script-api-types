@@ -13,7 +13,7 @@ import type { Coordinates } from '../../../../../../net/minecraft/commands/argum
  * getters require a server-side {@link net.minecraft.commands.CommandSourceStack}, so
  * {@link getPosition} resolves against the local player instead.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ClientArguments.kt#L77 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ClientArguments.kt:77}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ClientArguments.kt#L77 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ClientArguments.kt:77}
  */
 export class Vec3ArgumentType extends Object implements ArgumentType<Coordinates> {
     static Companion: Vec3ArgumentType$Companion;

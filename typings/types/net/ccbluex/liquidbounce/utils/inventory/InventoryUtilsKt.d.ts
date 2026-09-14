@@ -19,7 +19,7 @@ export class InventoryUtilsKt extends Object {
      * The result depends on current player context (e.g. creative state and durability filtering),
      * then ranks candidates by destroy speed and nearby-slot preference.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt#L112 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt:112}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt#L112 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt:112}
      */
     static findBestToolToMineBlock<T extends ItemSlot>(self: T[], blockState: BlockState, ignoreDurability: boolean, predicate: (param0: ItemStack, param1: BlockState) => boolean): T | null;
     static findBlocksEndingWith(...targets: string[]): Block[];
@@ -35,7 +35,7 @@ export class InventoryUtilsKt extends Object {
      * slots as their remaining space). Contract: the slot currently holding {@link itemStack} must NOT be part of this iterable,
      * otherwise its own remaining capacity would be double-counted and the result overestimated.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt#L63 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt:63}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt#L63 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt:63}
      */
     static mergeableCapacityFor(paramarg0: ItemSlot[], paramarg1: ItemStack): number;
     static mergeableCapacityFor(self: ItemSlot[], itemStack: ItemStack, blacklist: ItemSlot[] | null): number;

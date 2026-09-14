@@ -9,7 +9,7 @@ export class ClientVertexFormats extends Object {
      * - InnerColor: Packed inner ring RG/BA channels in UV2.x/UV2.y.
      * - InnerRatio: Inner radius ratio in [0,1] (innerRadius / outerRadius).
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientVertexFormats.kt#L79 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientVertexFormats.kt:79}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientVertexFormats.kt#L79 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientVertexFormats.kt:79}
      */
     static GRADIENT_CIRCLE: VertexFormat;
     /**
@@ -19,7 +19,7 @@ export class ClientVertexFormats extends Object {
      * - UV2.x: LUT row index in {@link net.ccbluex.liquidbounce.render.gui.GuiCircleLutAtlas}.
      * - UV2.y: Encoded inner radius ratio (0..32767 => 0..1).
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientVertexFormats.kt#L64 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientVertexFormats.kt:64}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientVertexFormats.kt#L64 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientVertexFormats.kt:64}
      */
     static GUI_CIRCLE_LUT: VertexFormat;
     /**
@@ -31,7 +31,7 @@ export class ClientVertexFormats extends Object {
      * - Parameters: Corner radius encoded in UV2.x. UV2.y is reserved for future flags.
      * - StrokeWidth: Outline width in rect-local GUI units. 0 means fill.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientVertexFormats.kt#L47 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientVertexFormats.kt:47}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientVertexFormats.kt#L47 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientVertexFormats.kt:47}
      */
     static GUI_ROUNDED_RECT: VertexFormat;
     static INSTANCE: ClientVertexFormats;

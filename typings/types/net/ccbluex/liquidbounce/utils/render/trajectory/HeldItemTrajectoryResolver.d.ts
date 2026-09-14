@@ -8,7 +8,9 @@ export class HeldItemTrajectoryResolver extends Object {
     static INSTANCE: HeldItemTrajectoryResolver;
     static resolveHeldItemPrimaryShot(player: Player, stack: ItemStack, alwaysShowBow: boolean): TrajectoryDescriptor | null;
     static resolveHeldItemShots(player: Player, stack: ItemStack, alwaysShowBow: boolean, includeMultiShot: boolean): TrajectoryShotDescriptor[] | null;
-    // private getShotYawOffsets(shotCount: number): number[];
+    // private MAX_PREVIEWED_SHOTS: number;
+    // private bowUsageDuration(alwaysShowBow: boolean, drawing: boolean, ticksUsingItem: number): number | null;
+    // private getShotYawOffsets(shotCount: number, multishotLevel: number): number[];
     // private isCrossbowFirework(chargedProjectiles: ChargedProjectiles | null): boolean;
     resolveHeldItemPrimaryShot(player: Player, stack: ItemStack, alwaysShowBow: boolean): TrajectoryDescriptor | null;
     resolveHeldItemShots(player: Player, stack: ItemStack, alwaysShowBow: boolean, includeMultiShot: boolean): TrajectoryShotDescriptor[] | null;

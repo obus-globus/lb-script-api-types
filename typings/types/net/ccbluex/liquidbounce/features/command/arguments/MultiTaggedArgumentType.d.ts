@@ -9,7 +9,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
  * Greedy multi-value argument that parses every remaining token as a tagged value,
  * mirroring the legacy `enumChoice(...).vararg()` parameter (one token per value).
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt#L188 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt:188}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt#L188 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/arguments/ArgumentTypes.kt:188}
  */
 export class MultiTaggedArgumentType<T extends unknown> extends Object implements ArgumentType<T[]> {
     constructor(parameterName: string, values: T[], tagOf: (param0: T) => string)

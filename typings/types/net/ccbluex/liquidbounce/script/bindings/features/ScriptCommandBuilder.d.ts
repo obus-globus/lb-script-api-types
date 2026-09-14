@@ -23,7 +23,7 @@ import type { Value } from '../../../../../../org/graalvm/polyglot/Value.d.ts'
  *   and arrives as an `Array`.
  * - `getCompletions` is adapted into a Brigadier {@link com.mojang.brigadier.suggestion.SuggestionProvider}.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptCommandBuilder.kt#L66 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptCommandBuilder.kt:66}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptCommandBuilder.kt#L66 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptCommandBuilder.kt:66}
  */
 export class ScriptCommandBuilder extends Object {
     constructor(commandObject: Value)
@@ -33,7 +33,7 @@ export class ScriptCommandBuilder extends Object {
      * Returns the main command node plus one redirecting literal per alias; all of them
      * must be registered (and later unregistered by name) on the {@link net.ccbluex.liquidbounce.features.command.CommandManager}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptCommandBuilder.kt#L72 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptCommandBuilder.kt:72}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptCommandBuilder.kt#L72 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptCommandBuilder.kt:72}
      */
     build(): LiteralCommandNode<ClientCommandSource>[];
     // private collectArgument(param: Value, ctx: CommandContext<ClientCommandSource>): Object | null;

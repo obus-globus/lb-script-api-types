@@ -23,7 +23,7 @@ import type { ExternalBrowserMsaAuthService } from '../../../../../../net/raphim
  * The screen does not close itself on success - the service's close callback does, once the auth code has
  * been exchanged for a token.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/impl/MicrosoftLoginScreen.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/impl/MicrosoftLoginScreen.kt:46}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/impl/MicrosoftLoginScreen.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/impl/MicrosoftLoginScreen.kt:46}
  */
 export class MicrosoftLoginScreen extends Screen {
     static FOOTER_SEPARATOR: Identifier;
@@ -48,7 +48,7 @@ export class MicrosoftLoginScreen extends Screen {
      * Cleanup lives here rather than in {@link onClose} because the screen is also dismissed programmatically
      * once the sign-in finishes, and that path only goes through {@link removed}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/impl/MicrosoftLoginScreen.kt#L98 | src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/impl/MicrosoftLoginScreen.kt:98}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/impl/MicrosoftLoginScreen.kt#L98 | src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/impl/MicrosoftLoginScreen.kt:98}
      */
     removed(): void;
     shouldCloseOnEsc(): boolean;

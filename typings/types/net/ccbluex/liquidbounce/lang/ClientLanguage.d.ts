@@ -22,7 +22,7 @@ export class ClientLanguage extends Language {
      * Be careful when using this method that it will not cause a stack overflow.
      * Use {@link getTranslation} instead.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/lang/Language.kt#L155 | src/main/kotlin/net/ccbluex/liquidbounce/lang/Language.kt:155}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/lang/Language.kt#L155 | src/main/kotlin/net/ccbluex/liquidbounce/lang/Language.kt:155}
      */
     getOrDefault(elementId: string): string;
     getOrDefault(key: string, fallback: string): string;

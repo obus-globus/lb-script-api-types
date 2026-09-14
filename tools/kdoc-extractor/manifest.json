@@ -2960,11 +2960,11 @@
     }
   },
   "net.ccbluex.liquidbounce.features.command.brigadier.ClientCommandSource.suggestRegistryElements": {
-    "doc": "Registry element suggestions for argument types such as `ResourceArgument`.\n\nReplicated from vanilla `ClientSuggestionProvider.suggestRegistryElements`, which\nserves the request from the registries synced with the current server connection;\nwe resolve the same key against [registryAccess] instead.",
+    "doc": "Registry element suggestions for argument types such as `ResourceArgument`.\n\nReplicated from vanilla `ClientSuggestionProvider.suggestRegistryElements`, which\nserves the request from the registries synced with the current server connection;\nwe resolve the same key against [registryAccess] instead. Client commands never\nreach the server, so a missing key falls back to the static vanilla lookup instead\nof issuing a [customSuggestion] request.",
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt",
-      "line": 133
+      "line": 135
     }
   },
   "net.ccbluex.liquidbounce.features.command.brigadier.CmdArg": {
@@ -18944,14 +18944,14 @@
     }
   },
   "net.ccbluex.liquidbounce.utils.render.trajectory.HeldItemTrajectoryResolver.getShotYawOffsets": {
-    "doc": "Yaw offset model for multi-shot trajectory preview.\n\nThe `[-10, 0, +10]` branch mirrors vanilla triple-shot spread behavior.",
+    "doc": "Mirrors vanilla spread generation in [net.minecraft.world.item.ProjectileWeaponItem.shoot].",
     "see": [
-      "net.minecraft.world.item.ProjectileWeaponItem.shoot"
+      "net.minecraft.world.item.enchantment.EnchantmentHelper.processProjectileSpread"
     ],
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/HeldItemTrajectoryResolver.kt",
-      "line": 145
+      "line": 148
     }
   },
   "net.ccbluex.liquidbounce.utils.render.trajectory.TrajectoryDisplayResolver.POTION_ARROW_COLOR_NONE": {

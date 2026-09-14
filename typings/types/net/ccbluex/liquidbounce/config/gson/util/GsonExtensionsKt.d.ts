@@ -33,7 +33,7 @@ export class GsonExtensionsKt extends Object {
     /**
      * Read JSON content
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt:43}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt:43}
      */
     static readJson<T extends unknown>(self: File, charset: Charset): T;
     static readJson<T extends unknown>(self: InputStream, charset: Charset): T;
@@ -43,7 +43,7 @@ export class GsonExtensionsKt extends Object {
      * Unlike {@link JsonObject.get} followed by `asString` and friends, these return `null` for an absent key
      * instead of throwing.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt#L162 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt:162}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt#L162 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt:162}
      */
     static string(self: JsonElement[], index: number): string | null;
     static string(self: JsonObject, key: string): string | null;

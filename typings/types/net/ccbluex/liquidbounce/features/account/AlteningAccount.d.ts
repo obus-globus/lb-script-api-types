@@ -8,7 +8,7 @@ import type { MinecraftAccount } from '../../../../../net/ccbluex/liquidbounce/f
  * TheAltening still speaks the legacy Yggdrasil protocol, so the {@link accountToken} is exchanged for an
  * access token through {@link YggdrasilUserAuthentication} rather than through Microsoft.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/features/account/AlteningAccount.kt#L47 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/AlteningAccount.kt:47}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/features/account/AlteningAccount.kt#L47 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/AlteningAccount.kt:47}
  */
 export class AlteningAccount extends MinecraftAccount {
     static Companion: AlteningAccount$Companion;
@@ -16,7 +16,7 @@ export class AlteningAccount extends MinecraftAccount {
     /**
      * Used for JSON deserialize.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/features/account/AlteningAccount.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/AlteningAccount.kt:52}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/features/account/AlteningAccount.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/AlteningAccount.kt:52}
      */
     constructor()
     constructor(accountToken: string)

@@ -33,7 +33,7 @@ import type { Level } from '../../../../../../net/minecraft/world/level/Level.d.
  * instead of each provider hardcoding its candidates. Every delegate falls back to an
  * empty/static value when no server connection exists (main menu, unit tests).
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt:58}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt:58}
  */
 export class ClientCommandSource extends Object implements SharedSuggestionProvider {
     static INSTANCE: ClientCommandSource;
@@ -47,7 +47,7 @@ export class ClientCommandSource extends Object implements SharedSuggestionProvi
      * the joined world's registries when available, otherwise the
      * static vanilla lookup so parse/suggestions keep working outside a world.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt#L75 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt:75}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt#L75 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt:75}
      */
     commandBuildContext(): HolderLookup$Provider;
     /**
@@ -55,7 +55,7 @@ export class ClientCommandSource extends Object implements SharedSuggestionProvi
      * pending-suggestions id owned by the vanilla `ClientSuggestionProvider`; our client
      * commands never reach the server, so there is nothing to query - empty by design.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt#L111 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt:111}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt#L111 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt:111}
      */
     customSuggestion(context: CommandContext<Object>): CompletableFuture<Suggestions>;
     /**
@@ -64,7 +64,7 @@ export class ClientCommandSource extends Object implements SharedSuggestionProvi
      *
      * The `mc.connection` access is wrapped for the same reason as {@link commandBuildContext}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt#L85 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt:85}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt#L85 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt:85}
      */
     enabledFeatures(): FeatureFlagSet;
     getAbsoluteCoordinates(): SharedSuggestionProvider$TextCoordinates[];
@@ -81,7 +81,7 @@ export class ClientCommandSource extends Object implements SharedSuggestionProvi
      * {@link RegistryAccess} (not {@link VanillaRegistries.createLookup}, which is only a
      * {@link HolderLookup.Provider} and is not a {@link RegistryAccess}).
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt#L122 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt:122}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt#L122 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt:122}
      */
     registryAccess(): RegistryAccess;
     /**
@@ -89,9 +89,11 @@ export class ClientCommandSource extends Object implements SharedSuggestionProvi
      *
      * Replicated from vanilla `ClientSuggestionProvider.suggestRegistryElements`, which
      * serves the request from the registries synced with the current server connection;
-     * we resolve the same key against {@link registryAccess} instead.
+     * we resolve the same key against {@link registryAccess} instead. Client commands never
+     * reach the server, so a missing key falls back to the static vanilla lookup instead
+     * of issuing a {@link customSuggestion} request.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt#L133 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt:133}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt#L135 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/brigadier/ClientCommandSource.kt:135}
      */
     suggestRegistryElements(registry: HolderLookup<Object>, elements: SharedSuggestionProvider$ElementSuggestionType, builder: SuggestionsBuilder): void;
     suggestRegistryElements(key: ResourceKey<(Object | null)[]>, elements: SharedSuggestionProvider$ElementSuggestionType, builder: SuggestionsBuilder, context: CommandContext<Object>): CompletableFuture<Suggestions>;

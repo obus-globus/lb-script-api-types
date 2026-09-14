@@ -7,7 +7,7 @@ export class ClientRenderPipelines$JCEF extends Object {
     /**
      * @see RenderPipelines.ENTITY_OUTLINE_BLIT
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/6442c02e147c8fd9657f94f1554f63e786c2a3c0/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L140 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:140}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L140 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:140}
      */
     static Blit: RenderPipeline;
     static INSTANCE: ClientRenderPipelines$JCEF;
