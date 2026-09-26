@@ -30,7 +30,7 @@ cd "$REPO_ROOT"
 # "feat: 26.2 Minecraft support" (#8502) + new modules/events; keeps the GraalVM
 # caller-sensitive fix (#8437, b759cac57) which is an ancestor, so ts-defgen.js still
 # loads the generator via stock URLClassLoader (no Fabric-mod wrapper).
-PINNED_SHA="e1d0801ab2d0c9362f03f42cbfac7b36a2a05b6a"
+PINNED_SHA="d0f4c1d4d8f5ad011a713944f0b48e40e7c277b5"
 
 LB_DIR="$REPO_ROOT/references/liquidbounce"
 TS_GEN_DIR="$REPO_ROOT/generator"
