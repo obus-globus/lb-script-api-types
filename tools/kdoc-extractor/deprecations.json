@@ -6,7 +6,7 @@
       "kind": "property",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt",
-        "line": 95
+        "line": 94
       }
     },
     "net.ccbluex.liquidbounce.event.events.VirtualScreenEvent.screenName": {
@@ -14,7 +14,7 @@
       "kind": "property",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/ClientEvents.kt",
-        "line": 173
+        "line": 182
       }
     },
     "net.ccbluex.liquidbounce.event.events.WorldRenderEvent.matrixStack": {
@@ -23,7 +23,7 @@
       "kind": "property",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt",
-        "line": 48
+        "line": 50
       }
     },
     "net.ccbluex.liquidbounce.features.module.ModuleCategory.readableName": {
@@ -32,7 +32,7 @@
       "kind": "property",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleCategory.kt",
-        "line": 29
+        "line": 40
       }
     },
     "net.ccbluex.liquidbounce.features.module.modules.exploit.servercrasher.exploits.EssentialsPayStarExploit": {
@@ -73,16 +73,7 @@
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt",
-        "line": 163
-      }
-    },
-    "net.ccbluex.liquidbounce.script.PolyglotScript.registerChoice": {
-      "message": "Use registerMode instead",
-      "replaceWith": "registerMode(modeValueGroup, modeObject, callback)",
-      "kind": "function",
-      "source": {
-        "file": "src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt",
-        "line": 270
+        "line": 167
       }
     },
     "net.ccbluex.liquidbounce.utils.aiming.features.processors.anglesmooth.impl.SigmoidAngleSmooth": {
