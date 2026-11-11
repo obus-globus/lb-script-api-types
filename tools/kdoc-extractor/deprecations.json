@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "deprecations": {
-    "net.ccbluex.liquidbounce.api.core.HttpClient.EMPTY_HEADERS": {
-      "message": "Use Headers.EMPTY instead when Lunar Client updates OkHttp to 5.10 or newer.",
+    "net.ccbluex.liquidbounce.config.types.Config.jsonTmpFile": {
+      "message": "Use different temp file for each write",
       "kind": "property",
       "source": {
-        "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt",
-        "line": 95
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/Config.kt",
+        "line": 48
       }
     },
     "net.ccbluex.liquidbounce.event.events.VirtualScreenEvent.screenName": {
@@ -14,7 +14,7 @@
       "kind": "property",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/ClientEvents.kt",
-        "line": 173
+        "line": 188
       }
     },
     "net.ccbluex.liquidbounce.event.events.WorldRenderEvent.matrixStack": {
@@ -23,7 +23,7 @@
       "kind": "property",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt",
-        "line": 48
+        "line": 50
       }
     },
     "net.ccbluex.liquidbounce.features.module.ModuleCategory.readableName": {
@@ -32,7 +32,95 @@
       "kind": "property",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleCategory.kt",
-        "line": 29
+        "line": 40
+      }
+    },
+    "net.ccbluex.liquidbounce.features.module.modules.combat.velocity.mode.VelocityBlocksMC20241123": {
+      "message": "Will be removed with the release of 0.43.0 and ported to LiquidBounce Legacy Add-on",
+      "kind": "object",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityBlocksMC20241123.kt",
+        "line": 31
+      }
+    },
+    "net.ccbluex.liquidbounce.features.module.modules.combat.velocity.mode.VelocityDexland20241001": {
+      "message": "Will be removed with the release of 0.43.0 and ported to LiquidBounce Legacy Add-on",
+      "kind": "object",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityDexland20241001.kt",
+        "line": 25
+      }
+    },
+    "net.ccbluex.liquidbounce.features.module.modules.combat.velocity.mode.VelocityHylex20241117": {
+      "message": "Will be removed with the release of 0.43.0 and ported to LiquidBounce Legacy Add-on",
+      "kind": "object",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityHylex20241117.kt",
+        "line": 32
+      }
+    },
+    "net.ccbluex.liquidbounce.features.module.modules.combat.velocity.mode.VelocityHypixel20250127": {
+      "message": "Will be removed with the release of 0.43.0 and ported to LiquidBounce Legacy Add-on",
+      "kind": "object",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityHypixel20250127.kt",
+        "line": 27
+      }
+    },
+    "net.ccbluex.liquidbounce.features.module.modules.exploit.ModuleResetVL": {
+      "message": "Will be removed with the release of 0.43.0 and ported to LiquidBounce Legacy Add-on",
+      "kind": "object",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/exploit/ModuleResetVL.kt",
+        "line": 36
+      }
+    },
+    "net.ccbluex.liquidbounce.features.module.modules.exploit.disabler.disablers.DisablerHypixel20240829": {
+      "message": "Will be removed with the release of 0.43.0 and ported to LiquidBounce Legacy Add-on",
+      "kind": "object",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/exploit/disabler/disablers/DisablerHypixel20240829.kt",
+        "line": 39
+      }
+    },
+    "net.ccbluex.liquidbounce.features.module.modules.exploit.disabler.disablers.DisablerHypixel20250127Scaffold": {
+      "message": "Will be removed with the release of 0.43.0 and ported to LiquidBounce Legacy Add-on",
+      "kind": "object",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/exploit/disabler/disablers/DisablerHypixel20250127Scaffold.kt",
+        "line": 30
+      }
+    },
+    "net.ccbluex.liquidbounce.features.module.modules.exploit.disabler.disablers.DisablerLiveOverflow20240417": {
+      "message": "Will be removed with the release of 0.43.0 and ported to LiquidBounce Legacy Add-on",
+      "kind": "object",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/exploit/disabler/disablers/DisablerLiveOverflow20240417.kt",
+        "line": 33
+      }
+    },
+    "net.ccbluex.liquidbounce.features.module.modules.exploit.disabler.disablers.DisablerMineland20250317": {
+      "message": "Will be removed with the release of 0.43.0 and ported to LiquidBounce Legacy Add-on",
+      "kind": "object",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/exploit/disabler/disablers/DisablerMineland20250317.kt",
+        "line": 31
+      }
+    },
+    "net.ccbluex.liquidbounce.features.module.modules.exploit.disabler.disablers.DisablerMiniblox20250428": {
+      "message": "Will be removed with the release of 0.43.0 and ported to LiquidBounce Legacy Add-on",
+      "kind": "object",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/exploit/disabler/disablers/DisablerMiniblox20250428.kt",
+        "line": 34
+      }
+    },
+    "net.ccbluex.liquidbounce.features.module.modules.exploit.phase.modes.PhaseBlocksMC20250714": {
+      "message": "Will be removed with the release of 0.43.0 and ported to LiquidBounce Legacy Add-on",
+      "kind": "object",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/exploit/phase/modes/PhaseBlocksMC20250714.kt",
+        "line": 37
       }
     },
     "net.ccbluex.liquidbounce.features.module.modules.exploit.servercrasher.exploits.EssentialsPayStarExploit": {
@@ -59,6 +147,118 @@
         "line": 29
       }
     },
+    "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleTargetStrafe.MotionMode.hypixel": {
+      "message": "Will be removed with the release of 0.43.0 and ported to LiquidBounce Legacy Add-on",
+      "kind": "property",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleTargetStrafe.kt",
+        "line": 259
+      }
+    },
+    "net.ccbluex.liquidbounce.features.module.modules.movement.fly.modes.hypixel.FlyHypixel20250121": {
+      "message": "Will be removed with the release of 0.43.0 and ported to LiquidBounce Legacy Add-on",
+      "kind": "object",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/hypixel/FlyHypixel20250121.kt",
+        "line": 43
+      }
+    },
+    "net.ccbluex.liquidbounce.features.module.modules.movement.fly.modes.hypixel.FlyHypixel20250121Flat": {
+      "message": "Will be removed with the release of 0.43.0 and ported to LiquidBounce Legacy Add-on",
+      "kind": "object",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/hypixel/FlyHypixel20250121Flat.kt",
+        "line": 43
+      }
+    },
+    "net.ccbluex.liquidbounce.features.module.modules.movement.fly.modes.specific.FlyBlocksMC20240309": {
+      "message": "Will be removed with the release of 0.43.0 and ported to LiquidBounce Legacy Add-on",
+      "kind": "object",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/specific/FlyBlocksMC20240309.kt",
+        "line": 54
+      }
+    },
+    "net.ccbluex.liquidbounce.features.module.modules.movement.noslow.modes.shared.NoSlowHypixel20240525": {
+      "message": "Will be removed with the release of 0.43.0 and ported to LiquidBounce Legacy Add-on",
+      "kind": "class",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noslow/modes/shared/NoSlowHypixel20240525.kt",
+        "line": 37
+      }
+    },
+    "net.ccbluex.liquidbounce.features.module.modules.movement.speed.modes.blocksmc.SpeedBlocksMC20241123": {
+      "message": "Will be removed with the release of 0.43.0 and ported to LiquidBounce Legacy Add-on",
+      "kind": "class",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/blocksmc/SpeedBlocksMC20241123.kt",
+        "line": 45
+      }
+    },
+    "net.ccbluex.liquidbounce.features.module.modules.movement.speed.modes.hylex.SpeedHylex20241117": {
+      "message": "Will be removed with the release of 0.43.0 and ported to LiquidBounce Legacy Add-on",
+      "kind": "class",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/hylex/SpeedHylex20241117.kt",
+        "line": 36
+      }
+    },
+    "net.ccbluex.liquidbounce.features.module.modules.movement.speed.modes.hylex.SpeedHylex20241117Ground": {
+      "message": "Will be removed with the release of 0.43.0 and ported to LiquidBounce Legacy Add-on",
+      "kind": "class",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/hylex/SpeedHylex20241117Ground.kt",
+        "line": 33
+      }
+    },
+    "net.ccbluex.liquidbounce.features.module.modules.movement.speed.modes.watchdog.SpeedHypixel20231212": {
+      "message": "Will be removed with the release of 0.43.0 and ported to LiquidBounce Legacy Add-on",
+      "kind": "class",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/watchdog/SpeedHypixel20231212.kt",
+        "line": 42
+      }
+    },
+    "net.ccbluex.liquidbounce.features.module.modules.movement.speed.modes.watchdog.SpeedHypixel20250125": {
+      "message": "Will be removed with the release of 0.43.0 and ported to LiquidBounce Legacy Add-on",
+      "kind": "class",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/watchdog/SpeedHypixel20250125.kt",
+        "line": 37
+      }
+    },
+    "net.ccbluex.liquidbounce.features.module.modules.movement.step.ModuleStep.BlocksMC": {
+      "message": "Will be removed with the release of 0.43.0 and ported to LiquidBounce Legacy Add-on",
+      "kind": "object",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/step/ModuleStep.kt",
+        "line": 228
+      }
+    },
+    "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.NoFallBlocksMC20250719": {
+      "message": "Will be removed with the release of 0.43.0 and ported to LiquidBounce Legacy Add-on",
+      "kind": "object",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallBlocksMC20250719.kt",
+        "line": 27
+      }
+    },
+    "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.NoFallHypixel20240713": {
+      "message": "Will be removed with the release of 0.43.0 and ported to LiquidBounce Legacy Add-on",
+      "kind": "object",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallHypixel20240713.kt",
+        "line": 25
+      }
+    },
+    "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.NoFallHypixel20240806": {
+      "message": "Will be removed with the release of 0.43.0 and ported to LiquidBounce Legacy Add-on",
+      "kind": "object",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallHypixel20240806.kt",
+        "line": 29
+      }
+    },
     "net.ccbluex.liquidbounce.render.engine.OutlineShaderRenderer": {
       "message": "Disabled this feature",
       "kind": "object",
@@ -67,22 +267,22 @@
         "line": 30
       }
     },
+    "net.ccbluex.liquidbounce.render.engine.type.Color4b.interpolateTo": {
+      "message": "Use float overload",
+      "replaceWith": "interpolateTo(other, tR.toFloat(), tG.toFloat(), tB.toFloat(), tA.toFloat())",
+      "kind": "function",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt",
+        "line": 227
+      }
+    },
     "net.ccbluex.liquidbounce.render.engine.type.Color4b.toARGB": {
       "message": "Replaced with Color4b.argb",
       "replaceWith": "this.argb",
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/type/Color4b.kt",
-        "line": 163
-      }
-    },
-    "net.ccbluex.liquidbounce.script.PolyglotScript.registerChoice": {
-      "message": "Use registerMode instead",
-      "replaceWith": "registerMode(modeValueGroup, modeObject, callback)",
-      "kind": "function",
-      "source": {
-        "file": "src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt",
-        "line": 270
+        "line": 167
       }
     },
     "net.ccbluex.liquidbounce.utils.aiming.features.processors.anglesmooth.impl.SigmoidAngleSmooth": {
@@ -94,31 +294,22 @@
         "line": 30
       }
     },
+    "net.ccbluex.liquidbounce.utils.block.SwingMode.swing": {
+      "message": "You can only do attack swing with main hand",
+      "replaceWith": "this.attackSwing()",
+      "kind": "function",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/SwingMode.kt",
+        "line": 48
+      }
+    },
     "net.ccbluex.liquidbounce.utils.math.Vec3.toVec3i": {
       "message": "use this.toBlockPos instead",
       "replaceWith": "this.toBlockPos",
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-        "line": 243
-      }
-    },
-    "net.ccbluex.liquidbounce.utils.sorting.compareByCondition": {
-      "message": "Use standard compareBy instead",
-      "replaceWith": "compareBy(cond)",
-      "kind": "function",
-      "source": {
-        "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/sorting/ComparatorChain.kt",
-        "line": 51
-      }
-    },
-    "net.ccbluex.liquidbounce.utils.sorting.compareValueByCondition": {
-      "message": "Use standard compareValuesBy instead",
-      "replaceWith": "compareValuesBy(a, b, cond)",
-      "kind": "function",
-      "source": {
-        "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/sorting/ComparatorChain.kt",
-        "line": 40
+        "line": 260
       }
     }
   }
